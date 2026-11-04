@@ -73,7 +73,7 @@
 <tr><td>S2&ndash;S4</td><td colspan="5" class="muted">withheld</td></tr>
 </table>
 
-<p>The published material is Schmeh&rsquo;s article, Nick Pelling&rsquo;s Cipher Mysteries posts of 2014 to 2018, the Cipher Foundation page, and the zodiackillerciphers.com thread &ldquo;Scorpion = Zodiac?&rdquo;, which carries the numeric S5. The S1 transcription in <code>s1.txt</code> uses descriptive symbol names and flags four identifications as uncertain: <code>circL</code>, <code>sqnotchBR</code>, <code>sqbarT</code> and <code>flag</code>. Its count of 70 symbols and 53 distinct matches the published figures. The letter writes S5 at 15 symbols per row; the forum poster re-wrapped the same row-major sequence at 16, for the reason given next.</p>
+<p>The published material is Schmeh&rsquo;s article, Nick Pelling&rsquo;s Cipher Mysteries posts of 2014 to 2018, the Cipher Foundation page, and the zodiackillerciphers.com thread &ldquo;Scorpion = Zodiac?&rdquo;, which carries the numeric S5. The S1 transcription in <code translate="no">s1.txt</code> uses descriptive symbol names and flags four identifications as uncertain: <code translate="no">circL</code>, <code translate="no">sqnotchBR</code>, <code translate="no">sqbarT</code> and <code translate="no">flag</code>. Its count of 70 symbols and 53 distinct matches the published figures. The letter writes S5 at 15 symbols per row; the forum poster re-wrapped the same row-major sequence at 16, for the reason given next.</p>
 
 <h2 id="structure"><span class="num">02</span> The structure measured here</h2>
 
@@ -86,7 +86,7 @@
 <tr><td>pairs</td><td class="n">9</td><td class="n">5</td><td class="n">6</td><td class="n">4</td><td class="n">5</td><td class="n">3</td><td class="n">2</td><td class="n">6</td><td class="n">2</td><td class="n">1</td></tr>
 </table>
 
-<p>Written in 16 columns, no symbol ever appears in two columns. Each column holds 11 or 12 symbols, of which 6 to 11 are distinct. That is the behaviour of 16 substitution alphabets used in strict rotation, which is what Pelling and the forum poster &ldquo;Teddy&rdquo; concluded between 2007 and 2014. The per-column counts, computed from <code>s5.txt</code>:</p>
+<p>Written in 16 columns, no symbol ever appears in two columns. Each column holds 11 or 12 symbols, of which 6 to 11 are distinct. That is the behaviour of 16 substitution alphabets used in strict rotation, which is what Pelling and the forum poster &ldquo;Teddy&rdquo; concluded between 2007 and 2014. The per-column counts, computed from <code translate="no">s5.txt</code>:</p>
 
 <table>
 <tr><th>column</th><th class="n">1</th><th class="n">2</th><th class="n">3</th><th class="n">4</th><th class="n">5</th><th class="n">6</th><th class="n">7</th><th class="n">8</th><th class="n">9</th><th class="n">10</th><th class="n">11</th><th class="n">12</th><th class="n">13</th><th class="n">14</th><th class="n">15</th><th class="n">16</th></tr>
@@ -123,12 +123,12 @@
 
 <h3>Matched control</h3>
 
-<p><code>unicity.py</code> enciphers random English passages of 70 and 180 letters with random homophonic keys of exactly 53 and 145 symbols, then attacks them with the same 5-gram English solver (simulated annealing) used elsewhere on this site, eight restarts of 15,000 steps. The per-letter figures divide the script&rsquo;s totals by the text length.</p>
+<p><code translate="no">unicity.py</code> enciphers random English passages of 70 and 180 letters with random homophonic keys of exactly 53 and 145 symbols, then attacks them with the same 5-gram English solver (simulated annealing) used elsewhere on this site, eight restarts of 15,000 steps. The per-letter figures divide the script&rsquo;s totals by the text length.</p>
 
 <table>
 <tr><th>control</th><th class="n">letter accuracy of best solution</th><th>score of found text</th><th>score of true text</th></tr>
 <tr><td>S1-sized, trial 1</td><td class="n">0.13</td><td>&minus;112 (&minus;1.60 per letter)</td><td>&minus;107 (&minus;1.53)</td></tr>
-<tr><td>S1-sized, trial 2</td><td class="n">0.13</td><td colspan="2">found: <code>snotconcetorasestayalongdispointent&hellip;</code></td></tr>
+<tr><td>S1-sized, trial 2</td><td class="n">0.13</td><td colspan="2">found: <code translate="no">snotconcetorasestayalongdispointent&hellip;</code></td></tr>
 <tr><td>S5-sized, trial 1</td><td class="n">0.03</td><td>&minus;330 (&minus;1.83 per letter)</td><td>&minus;326 (&minus;1.81)</td></tr>
 <tr><td>S5-sized, trial 2</td><td class="n">0.12</td><td>&minus;334 (&minus;1.86 per letter)</td><td>&minus;301 (&minus;1.67)</td></tr>
 </table>
@@ -142,11 +142,11 @@
 <blockquote><b>S1.</b> &ldquo;A picture in collection of people: Bagel Bob&rsquo;s Old Dairy Frothy Late Cofee. Pour action.&rdquo;<br>
 <b>S5.</b> &ldquo;I am sending other picture of people for the collection of recent hybrid genders with edge, kept from artistic fee, if person of age has to purchase pick of university uglies. Espresso NYP cofee forces a cold enema review.&rdquo;</blockquote>
 
-<p>A homophonic key maps each symbol to one letter, so the one hard test is that every repeated symbol decodes to the same letter wherever it occurs. <code>claimed.py</code> lays each plaintext over the transcription and checks this; <code>results_claimed.txt</code> holds the output.</p>
+<p>A homophonic key maps each symbol to one letter, so the one hard test is that every repeated symbol decodes to the same letter wherever it occurs. <code translate="no">claimed.py</code> lays each plaintext over the transcription and checks this; <code translate="no">results_claimed.txt</code> holds the output.</p>
 
 <table>
 <tr><th>cipher</th><th class="n">repeated symbols</th><th class="n">consistent</th><th>conflicts</th></tr>
-<tr><td>S1</td><td class="n">13</td><td class="n">10</td><td><code>crosshair</code>: N in COLLECTION, L in OLD. <code>sqnotchBR</code>: T, D, O. <code>circL</code>: I, L, E. The last two are flagged uncertain in the transcription.</td></tr>
+<tr><td>S1</td><td class="n">13</td><td class="n">10</td><td><code translate="no">crosshair</code>: N in COLLECTION, L in OLD. <code translate="no">sqnotchBR</code>: T, D, O. <code translate="no">circL</code>: I, L, E. The last two are flagged uncertain in the transcription.</td></tr>
 <tr><td>S5</td><td class="n">27</td><td class="n">26</td><td>symbol 41: C in COLLECTION, G in AGE, C in COFEE</td></tr>
 </table>
 
@@ -167,7 +167,7 @@
 
 <p>Genuine English sits near &minus;1.6 on this model, and so do the solver&rsquo;s false solutions, because that score is what the solver maximises. The claimed texts sit 1.0 to 1.2 nats per letter lower, which means the model finds each letter roughly three times less likely than in ordinary English. Proper names and the spelling &ldquo;cofee&rdquo; cost part of that; word choice costs the rest. Dictionary coverage does not separate the three texts. So the claimed solution is less English-like than what a blind search produces on a control, and it fails the equality test once in each cipher on a securely identified symbol. Neither fact says what the plaintext is. The unicity arithmetic says that nothing in the ciphertext can.</p>
 
-<p>A further test: <code>alternatives.py</code> fills S1 with real English words under exactly the same-symbol-same-letter rule
+<p>A further test: <code translate="no">alternatives.py</code> fills S1 with real English words under exactly the same-symbol-same-letter rule
 (a search that keeps the best partial fillings at each step, over a Gutenberg vocabulary, with word-frequency scoring). The first alternatives it returns, and their scores under the
 same 5-gram letter model used above:</p>
 <table>
@@ -178,7 +178,7 @@ same 5-gram letter model used above:</p>
 </table>
 <p>They are nonsense, they are English, and they fit the ciphertext at least as well as the claim. The corpus bias (Moby Dick) is
 visible and does not matter: any English word list yields such fillings. The S5 run was still in progress when this page was
-built; its output goes to <code>targets/scorpion/results_alternatives.txt</code>.</p>
+built; its output goes to <code translate="no">targets/scorpion/results_alternatives.txt</code>.</p>
 
 <h2 id="status"><span class="num">05</span> Status, and what would change it</h2>
 
@@ -197,11 +197,11 @@ built; its output goes to <code>targets/scorpion/results_alternatives.txt</code>
 
 <table>
 <tr><th>file</th><th>contents</th></tr>
-<tr><td><code>targets/scorpion/s1.txt</code></td><td>S1, 70 descriptive symbol names in 7 rows of 10, uncertain identifications marked in the notes</td></tr>
-<tr><td><code>targets/scorpion/s5.txt</code></td><td>S5, the forum numeric sequence, symbols 1&ndash;145, wrapped at 16</td></tr>
-<tr><td><code>targets/scorpion/unicity.py</code></td><td>the unicity table and the matched controls; needs the English model built by <code>targets/copenhagen/solve.py</code></td></tr>
-<tr><td><code>targets/scorpion/claimed.py</code></td><td>the consistency test and 5-gram scores of the 2018 reading; output in <code>results_claimed.txt</code></td></tr>
-<tr><td><code>targets/scorpion/alternatives.py</code></td><td data-term-ok>beam search filling each cipher with dictionary words under the same-symbol-same-letter rule, scored with the same model</td></tr>
+<tr><td><code translate="no">targets/scorpion/s1.txt</code></td><td>S1, 70 descriptive symbol names in 7 rows of 10, uncertain identifications marked in the notes</td></tr>
+<tr><td><code translate="no">targets/scorpion/s5.txt</code></td><td>S5, the forum numeric sequence, symbols 1&ndash;145, wrapped at 16</td></tr>
+<tr><td><code translate="no">targets/scorpion/unicity.py</code></td><td>the unicity table and the matched controls; needs the English model built by <code translate="no">targets/copenhagen/solve.py</code></td></tr>
+<tr><td><code translate="no">targets/scorpion/claimed.py</code></td><td>the consistency test and 5-gram scores of the 2018 reading; output in <code translate="no">results_claimed.txt</code></td></tr>
+<tr><td><code translate="no">targets/scorpion/alternatives.py</code></td><td data-term-ok>beam search filling each cipher with dictionary words under the same-symbol-same-letter rule, scored with the same model</td></tr>
 </table>
 
 <!-- replay:start -->

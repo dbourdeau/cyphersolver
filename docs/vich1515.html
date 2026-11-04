@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">videlicet iterum &middot; sin 151&times; &middot; sud 97&times; &middot; no 93&times; &middot; zre 89&times;<br>en Pedrezuela a xxvj de otubre de dxv</div>
+  <div class="cipherstrip" translate="no">videlicet iterum &middot; sin 151&times; &middot; sud 97&times; &middot; no 93&times; &middot; zre 89&times;<br>en Pedrezuela a xxvj de otubre de dxv</div>
   <p class="kicker">Pedrezuela &rarr; Rome · code groups and signs, unidentified system · 26 October 1515</p>
   <h1>Ferdinand the Catholic to Jer&oacute;nimo de Vich, Pedrezuela, 1515</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_ferdinand-the-catholic.jpg" alt="Ferdinand the Catholic" title="Ferdinand the Catholic: Portrait by Michel Sittow, c. 1500. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Ferdinand the Catholic</figcaption></figure></div><!-- /parties -->
@@ -75,7 +75,7 @@
 <figure data-credit="Archivo Hist&oacute;rico Nacional, Estado 8715 N.73, first image, via PARES (12751418)"><img src="vich1515_lead.jpg" alt="The head of the letter: the docket a 26 de octubre 1515, the opening videlicet iterum, then lines of code groups and signs" loading="lazy"><figcaption>The docket and the opening <em>videlicet iterum</em>, then the cipher: lower-case code groups such as <em>tok</em> (<em>ha</em>), <em>sud</em> (<em>de</em>), <em>xed</em> (<em>la</em>), <em>rak</em> (<em>con</em>) among the signs. <span class="credit">Image: Archivo Hist&oacute;rico Nacional, Estado 8715 N.73, first image, via PARES (12751418).</span></figcaption></figure>
 
 <h2 id="cipher"><span class="num">02</span> The cipher</h2>
-<p>The transcription (<code>n73_transcription.txt</code>) has 124 lines and 3,177 tokens of 197 kinds. 1,326 are lower-case code groups as written, the commonest <em>sin</em> (151 times), <em>sud</em> (97), <em>no</em> (93), <em>zre</em> (89) and <em>xed</em> (68). 1,851 are signs, the commonest labelled X (171), TH (170), PHI (163) and RH (151). None of the 1511&ndash;12 values carries over, and N.74 of 1519, the nearest in date, is a third system.</p>
+<p>The transcription (<code translate="no">n73_transcription.txt</code>) has 124 lines and 3,177 tokens of 197 kinds. 1,326 are lower-case code groups as written, the commonest <em>sin</em> (151 times), <em>sud</em> (97), <em>no</em> (93), <em>zre</em> (89) and <em>xed</em> (68). 1,851 are signs, the commonest labelled X (171), TH (170), PHI (163) and RH (151). None of the 1511&ndash;12 values carries over, and N.74 of 1519, the nearest in date, is a third system.</p>
 <p>Brackx&rsquo;s solution shows how it works. The signs are a homophonic alphabet of 37 kinds, a few of them letter pairs: PHI is <em>s</em>, RH <em>e</em>, TH <em>o</em>, both O and Z <em>a</em>. The code groups stand for common words (<em>zre</em> <em>que</em>, <em>sud</em> <em>de</em>, <em>yob</em> <em>por</em>, <em>yem</em> <em>papa</em>, <em>teb</em> <em>Italia</em>, <em>xif</em> <em>liga</em>), but also for syllables and letters in the middle of words spelled with signs: <em>tok</em> is <em>ha</em> in <em>haueros</em>, <em>gso</em> is <em>l</em>, <em>no</em> is <em>t</em>. The September 2026 attempt here annealed the groups either as letters or as whole words, never as both, which is why it failed.</p>
 
 <h2 id="key"><span class="num">03</span> How the key was recovered</h2>
@@ -85,13 +85,13 @@
 <h2 id="checks"><span class="num">04</span> Checks</h2>
 <ul>
 <li><strong>Matched control.</strong> <em>Lazarillo de Tormes</em>, held out of the model, enciphered the same way at the same size (3,282 tokens, 38 sign kinds, 158 group kinds). The same first step gets every sign token right and 35&ndash;44% of the group tokens: the alphabet comes out reliably, the groups only in part, as here.</li>
-<li><strong>Statistical validation</strong> (<code>docs/_validate.py</code>, firm values only, tokens as transcribed): after the crib the reading scores &minus;2.03 per letter, random keys of the same shape &minus;3.54, and a key annealed onto the shuffled ciphertext &minus;2.52 (z 27.8). Verdict: pass, as it was before the crib.</li>
+<li><strong>Statistical validation</strong> (<code translate="no">docs/_validate.py</code>, firm values only, tokens as transcribed): after the crib the reading scores &minus;2.03 per letter, random keys of the same shape &minus;3.54, and a key annealed onto the shuffled ciphertext &minus;2.52 (z 27.8). Verdict: pass, as it was before the crib.</li>
 <li><strong>A printed text.</strong> Terrateig (1963, vol. I, pp. 631&ndash;634) quotes the letter at length from its minute in Simancas (AGS Estado leg. 847 fol. 125), which Doussinague printed in full in 1944. Brackx aligned each of the fifteen quoted passages with the cipher against random <em>Quijote</em> passages: the long quotation, 1,069 letters, fits lines 9&ndash;31 at 0.29 cost per letter against 0.98 for the best control, and 714 of its letters fall on values already firm and agree with them except at eight places, each checked on the image. It then served as a crib: 27 more groups, 11 tentative values confirmed, a few corrected.</li>
 <li><strong>How much reads.</strong> Measured on Brackx&rsquo;s reading of all 124 lines, with every tentative value counted as a hole: 0.824 of words read as sense (0.636 before the crib), 0.949 on the quoted lines 9&ndash;31. Readings that rest on look-alike signs are 3.09% of the letters, five letters over the project&rsquo;s 3% limit, and the whole is under the 95% bar, so the letter is decoded, not read.</li>
 </ul>
 
 <h2 id="says"><span class="num">05</span> What it says, as far as it reads</h2>
-<p>Ferdinand writes that he cannot help being <em>muy malcontento</em> that, through the <em>soberuia y locura de suycos</em>, who would not wait for his army, and the slowness of <em>mi uisorrey y capitan general</em>, <em>todas las cosas de Italia</em> are in danger. Worse is <em>la flaqueza del papa</em>, set on <em>concertarse con franceses</em> against the league&rsquo;s capitulation that no confederate may make peace or truce without the others. Vich is to strengthen the Pope <em>de mi parte</em>. The reading and Brackx&rsquo;s English, with every hole marked, are in <code>brackx2026/n73_reading.md</code> and <code>n73_en.md</code>.</p>
+<p>Ferdinand writes that he cannot help being <em>muy malcontento</em> that, through the <em>soberuia y locura de suycos</em>, who would not wait for his army, and the slowness of <em>mi uisorrey y capitan general</em>, <em>todas las cosas de Italia</em> are in danger. Worse is <em>la flaqueza del papa</em>, set on <em>concertarse con franceses</em> against the league&rsquo;s capitulation that no confederate may make peace or truce without the others. Vich is to strengthen the Pope <em>de mi parte</em>. The reading and Brackx&rsquo;s English, with every hole marked, are in <code translate="no">brackx2026/n73_reading.md</code> and <code translate="no">n73_en.md</code>.</p>
 
 <h2 id="open"><span class="num">06</span> What remains open</h2>
 <ul>
@@ -106,7 +106,7 @@
 <h3>N.73, 26 Oct 1515 <span class="st stuck">decoded, not read</span></h3>
 <p>Ferdinand to Vich at Rome, 26 Oct 1515: he is displeased that through the Swiss&#x27;s pride and folly in not waiting for his army, and the slowness of his viceroy and captain general, all of Italy is in danger, and still more at the weakness of the Pope, who is set on coming to terms with the French against the league&#x27;s capitulation that no confederate may make peace or truce without the others; he does not believe the Pope will keep anything else, and Vich is to strengthen him on his behalf.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vich1515/n73_transcription.txt">n73_transcription.txt</a></p><pre># AHN Estado 8715 N.73 - Ferdinand to Jeronimo de Vich (Rome), Pedrezuela, 26 Oct 1515
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vich1515/n73_transcription.txt">n73_transcription.txt</a></p><pre translate="no"># AHN Estado 8715 N.73 - Ferdinand to Jeronimo de Vich (Rome), Pedrezuela, 26 Oct 1515
 # Pass-1 transcription from lines/s73p*_*.png (3 manuscript lines per strip). Different system from N.57.
 # Lowercase tokens = code-group words as written (long-s written &#x27;s&#x27;). &#x27;?&#x27; = illegible token.
 # &#x27;gso&#x27; is written as a word (g + long-s + raised o) and kept as a lowercase group.
@@ -275,7 +275,7 @@ L411: OT KH RH X FH
 # clear (p4): el rey ; secretarial endorsement at left partly illegible
 # NOTE: strips s73p4_04..07 are show-through / address panel, no cipher lines.</pre></details>
 <p class="ftext">Decryption: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vich1515/brackx2026/n73_decryption.md">n73_decryption.md</a></p>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vich1515/brackx2026/n73_reading.md">n73_reading.md</a></p><pre># vich1515: reading in the writer&#x27;s spelling, line by line
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vich1515/brackx2026/n73_reading.md">n73_reading.md</a></p><pre translate="no"># vich1515: reading in the writer&#x27;s spelling, line by line
 
 AHN Estado 8715 N.73, Ferdinand the Catholic to Jerónimo de Vich, Pedrezuela, 26 October 1515. The cipher text only;
 the clear docket (*a 26 de octubre 1515*), opening (*videlicet iterum*) and close (*en Pedrezuela a xxvj de otubre de
@@ -458,7 +458,7 @@ values and 38 look-alike tokens there; outside that stretch the reading is as be
 and those read in the four rounds after the crib (`notes/solve_notes.md`).
 Stretches build sentences (ll. 7–31, 33–34, 37–38, 57–61, 69–71, 73–75, 77–80, 89–94, 101–104, 106–110). A sharper
 image of the `sin`/`sim` and `X` tokens, or the minute in Simancas (AGS Estado leg. 847), is what would move it further.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vich1515/brackx2026/n73_en.md">n73_en.md</a></p><pre># vich1515: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vich1515/brackx2026/n73_en.md">n73_en.md</a></p><pre translate="no"># vich1515: English translation
 
 Translation of `reading_original.md`, line for line, with the same marks: `[?…]` sized unread runs and doubtful words,
 `{?…}` tentative values (`{?}` where the English has no word for a tentative Spanish word), `[word]` supplied. The
@@ -605,7 +605,7 @@ reading, not of the letter. `scripts/holecheck2.py` checks that each line carrie
 <li>Michael Brackx, <a href="https://github.com/dbourdeau/cyphersolver/issues/94" rel="noopener">issue #94</a> and its files (23 October 2026).</li>
 </ul>
 
-<p class="muted">The transcription, Brackx&rsquo;s reading, English, token table, key and scripts (<code>brackx2026/</code>), the validation pairs and the notes are in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/vich1515"><code>targets/vich1515/</code></a>. The PARES images are not committed; <code>targets/vich1511/pares.py</code> re-fetches them.</p>
+<p class="muted">The transcription, Brackx&rsquo;s reading, English, token table, key and scripts (<code translate="no">brackx2026/</code>), the validation pairs and the notes are in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/vich1515"><code translate="no">targets/vich1515/</code></a>. The PARES images are not committed; <code translate="no">targets/vich1511/pares.py</code> re-fetches them.</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Manuscript images: Archivo Hist&oacute;rico Nacional (PARES)</span>

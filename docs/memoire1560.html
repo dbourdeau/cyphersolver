@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-  <div class="cipherstrip">lzDm+xm &middot; fed &middot; +rppxrQ &middot; ppDpzoW3 &middot; pp:zosis &middot; Wxnn<br>disans &middot; qu&rsquo;ils &middot; aiment &middot; mieulx &middot; mourir &middot; les &nbsp;&laquo;&nbsp;disans qu&rsquo;ils aiment mieulx mourir les armes en main&nbsp;&raquo;</div>
+  <div class="cipherstrip" translate="no">lzDm+xm &middot; fed &middot; +rppxrQ &middot; ppDpzoW3 &middot; pp:zosis &middot; Wxnn<br>disans &middot; qu&rsquo;ils &middot; aiment &middot; mieulx &middot; mourir &middot; les &nbsp;&laquo;&nbsp;disans qu&rsquo;ils aiment mieulx mourir les armes en main&nbsp;&raquo;</div>
   <p class="kicker">Agenais &rarr; the conn&eacute;table de Montmorency &middot; homophonic substitution with word codes &middot; 12 December 1560</p>
   <h1>A m&eacute;moire in cipher from the Agenais, 12 December 1560</h1>
 <div class="parties"><figure class="party recipient"><img src="portrait_anne-de-montmorency.jpg" alt="Anne de Montmorency" title="Anne de Montmorency: Portrait by Jean Clouet, c. 1530. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Anne de Montmorency</figcaption></figure></div><!-- /parties -->
@@ -82,7 +82,7 @@
 <li><b>Polyphonic signs.</b> <i>&delta;</i> is u/v, b and g (&ldquo;gouvernement&rdquo;, &ldquo;bien&rdquo;, &ldquo;langaiges&rdquo;); &Dagger; is i and sometimes a.</li>
 <li><b>Four word codes.</b> <i>Z</i> pour (also the syllable, &ldquo;y pourvoient&rdquo;), <i>4</i> roy, <i>c+</i>, <i>i+</i> and <i>e+</i> et, <i>F</i> and <i>g</i> sieur. Every name and place is spelt out.</li>
 </ul>
-<p>The key is in <code>targets/memoire1560/key.txt</code>, and <code>decrypt.py</code> applies it line by line.</p>
+<p>The key is in <code translate="no">targets/memoire1560/key.txt</code>, and <code translate="no">decrypt.py</code> applies it line by line.</p>
 
 <figure data-credit="Biblioth&egrave;que nationale de France, fr. 3157 f. 155r, via Gallica btv1b90598645 view 156"><img src="memoire1560_f155r.jpg" alt="Seven lines of cipher on f. 155r with word-dividing strokes" loading="lazy"><figcaption>f. 155r, the middle of the page: &ldquo;&hellip;Qui se font assemblees touts les jours de rebelles, de la pluspart desquelles le cappitaine La Caze est le conducteur et chief. Si le roy n&rsquo;envoie quelcun pardeça pour les chastier&hellip;&rdquo;. The lone crossed <i>4</i> is &ldquo;roy&rdquo;. <span class="credit">Image: Biblioth&egrave;que nationale de France, fr. 3157 f. 155r, via Gallica btv1b90598645 view 156.</span></figcaption></figure>
 
@@ -114,11 +114,11 @@
 
 <h2 id="method"><span class="num">05</span> Method</h2>
 <ol>
-<li><b>Access and transcription.</b> The ten pages were fetched at full resolution from Gallica and cut into half-width bands. Model subagents transcribed each sign into an ASCII code (<code>SIGNS.md</code>).</li>
+<li><b>Access and transcription.</b> The ten pages were fetched at full resolution from Gallica and cut into half-width bands. Model subagents transcribed each sign into an ASCII code (<code translate="no">SIGNS.md</code>).</li>
 <li><b>A simple-substitution solver fails.</b> Simulated annealing with one letter per sign, keeping the word divisions and scoring with a 16th-century French 5-gram model, gave nonsense.</li>
 <li><b>The first units.</b> <i>z</i> is followed by <i>o</i> in 262 of 283 cases, so <i>zo</i> is one sign. The commonest four-sign word, <i>Tzox</i> (23 times in the first pass), fitted &ldquo;que&rdquo;, and <i>Wx</i>, <i>Wxm</i> and <i>hx</i> fitted le, les and de. Started from these, the solver produced &ldquo;les derniers advertissemens&rdquo; and &ldquo;les affaires de pardeça&rdquo;.</li>
 <li><b>Alignment.</b> Decrypted words were matched to the French they had to be, and each match fixed further units: <i>xrQxrhio</i> = entendu (r = n, io = u), <i>3shDx+is3xppxrQ</i> = ordinairement (s3 = r), <i>nn:WW:iQ</i> = souloit (nn = s), <i>lzDm+xm</i> = disans (lz = d). Short groups standing alone were identified from context as word codes.</li>
-<li><b>Correction against the images.</b> With the key in hand, every line was checked against the images, and a sign was changed only where the image supports the change. This produced about 300 <i>x</i>&rarr;<i>r</i> fixes and restored dropped signs. Where the image matches the transcription and the key does not fit, the sign was left as written and logged as a possible slip (<code>transcription/corrections_*.tsv</code>).</li>
+<li><b>Correction against the images.</b> With the key in hand, every line was checked against the images, and a sign was changed only where the image supports the change. This produced about 300 <i>x</i>&rarr;<i>r</i> fixes and restored dropped signs. Where the image matches the transcription and the key does not fit, the sign was left as written and logged as a possible slip (<code translate="no">transcription/corrections_*.tsv</code>).</li>
 </ol>
 
 <h2 id="what-remains"><span class="num">06</span> What remains</h2>
@@ -135,7 +135,7 @@
 <h3>Mémoire en chiffre, 12 Dec 1560, ff. 152r-156v <span class="st partial">read in part</span></h3>
 <p>An anonymous report to the connétable de Montmorency from a Catholic gentleman of the Agenais, a neighbour of the sieur de Fumel, dated 12 December 1560, a week after the death of François II. It reports Protestant preaching and the rebel assembly at Clairac, the conduct of the king of Navarre (&#x27;le chief&#x27;) at Nérac, Biron and the rebel captains, and the writer&#x27;s fear for his life.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (94% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/transcription/152r.txt">152r.txt</a></p><pre># f.152r, heading &quot;Du xiie decembre 1560&quot; skipped. 29 lines.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/transcription/152r.txt">152r.txt</a></p><pre translate="no"># f.152r, heading &quot;Du xiie decembre 1560&quot; skipped. 29 lines.
 # New code &quot;.&quot; = a single dot; the manuscript often writes &quot;:&quot; followed by a third dot (&quot;:·&quot;), transcribed &quot;:.&quot;.
 # New code &quot;e&quot; = a c-/e-shape with a loop (in the recurring word &quot;fed&quot;: tall crossed f, e-loop, reversed d).
 # New code &quot;Z&quot; = a large Z-like sign, underlined with a long stroke, standing alone as a word (lines 20, 22, 26, 27).
@@ -174,7 +174,7 @@ fxWW+ Tzox Z mx on 3xsQ3 +zodpfxrQxs Wxzosm
 Qs:.zoHHxm c+ S+idrxs QxppHm Z +zois mxf:.zosm
 hx TzoxWTzoxm xmQs4rdyxsm fed hD nnxrQ mx Q3xris
 Dmmxios3xm</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/transcription/152v.txt">152v.txt</a></p><pre># f.152v, 31 lines. Codes as in 152r.txt (incl. new &quot;e&quot;, &quot;.&quot;, &quot;Z&quot;).
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/transcription/152v.txt">152v.txt</a></p><pre translate="no"># f.152v, 31 lines. Codes as in 152r.txt (incl. new &quot;e&quot;, &quot;.&quot;, &quot;Z&quot;).
 # &quot;s+&quot; = long s with a small 4-/+-shaped flag on top; &quot;s3&quot; = long s with a z-shaped top.
 # Line-end filler dashes are not transcribed; an underlined Z-/e-shape standing as its own word is &quot;Z&quot;.
 # Line 7 and 18: heavy diagonal stroke across &quot;ppd&quot; (as on 152r &quot;on&quot;): cancel/overline stroke, not a sign.
@@ -212,7 +212,7 @@ hxTzo:e +e fyhxio+rQ +HxzoxsQi zo:mQs3x
 ds+rhxzos
 Wx Dzodx hxnn Qxss3xnn hiohifQ nnxidrxios hx
 f+zoWpp:.rQ r:.ppppx s3xfWzonn xnnQ H+sQx Z</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/transcription/153r.txt">153r.txt</a></p><pre># f.153r, 32 lines. Codes as in 152r.txt (incl. new &quot;e&quot;, &quot;.&quot;, &quot;Z&quot;).
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/transcription/153r.txt">153r.txt</a></p><pre translate="no"># f.153r, 32 lines. Codes as in 152r.txt (incl. new &quot;e&quot;, &quot;.&quot;, &quot;Z&quot;).
 # &quot;e&quot; here also covers the c-/epsilon-shaped sign in the recurring word &quot;H+em&quot; / &quot;h+dxrr:.em&quot;.
 # Line 11: a sign under a heavy ink blot before the final Z-word (given as ?).
 # Line 15: interlinear &quot;#o&quot; written above the start of &quot;Tzo:W&quot; (an H-with-two-bars sign plus a small o); given in the comment only.
@@ -252,7 +252,7 @@ zo:.mQs3x ds+rhxios DhioDmmxs+ mDW mxs+ d:.r
 hx Wx mzosHs3xrhs3x mzos Wx 7+ifQ HxrhxrQ
 TzoiW mxs+ H+shxW+ 3+ Wzoxedn sxrhs3x s+Dm:.g
 hio hxiois TzoiW + 7+ifQ xr m+ Hs:.zoDrfx zo:.mQs3x</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/transcription/153v.txt">153v.txt</a></p><pre># f.153v, 29 lines (a blank gap between lines 15 and 16). Codes as in 152r.txt/153r.txt (incl. &quot;.&quot;, &quot;:.&quot;, &quot;e&quot;, &quot;Z&quot;, &quot;s3&quot;, &quot;c+&quot;).
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/transcription/153v.txt">153v.txt</a></p><pre translate="no"># f.153v, 29 lines (a blank gap between lines 15 and 16). Codes as in 152r.txt/153r.txt (incl. &quot;.&quot;, &quot;:.&quot;, &quot;e&quot;, &quot;Z&quot;, &quot;s3&quot;, &quot;c+&quot;).
 # &quot;e&quot; here is also used for the small r-like sign with a large loop hanging below it (lines 1, 9, 11, 13, 15, 19, 21, 24, 27, 28).
 # Several d&#x27;s carry a heavy bar/stroke over them (lines 9, 12, 14, 16, 17, 18, 21, 22, 25, 26), as noted on 153r; not transcribed.
 # Line 2: first word struck through (signs after &quot;f:.rn&quot; uncertain). &quot;[Wxr]&quot; struck, with &quot;Wxmi&quot; written above it (interlinear replacement).
@@ -296,7 +296,7 @@ Hs4rfiH+zoW3 g+diQ+rm hriolhifQ ds3d3s+f bcx
 ffr sxrio:y+ WxnnhifQ3 m:.WhiQ3 c+ nnxr s3
 sxQ:.zosr+ xr nn+ pp+ynn:.r nn+rm on czoWQsx
 dx3xfzoQi:.r fg:.mx sr rx h:.rrx + Hsxmizoppxs</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/transcription/154r.txt">154r.txt</a></p><pre># f.154r, 29 lines (blank gaps after lines 11 and 16). Codes as in 152r.txt/153r.txt (incl. &quot;.&quot;, &quot;:.&quot;, &quot;e&quot;, &quot;Z&quot;, &quot;s3&quot;, &quot;c+&quot;).
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/transcription/154r.txt">154r.txt</a></p><pre translate="no"># f.154r, 29 lines (blank gaps after lines 11 and 16). Codes as in 152r.txt/153r.txt (incl. &quot;.&quot;, &quot;:.&quot;, &quot;e&quot;, &quot;Z&quot;, &quot;s3&quot;, &quot;c+&quot;).
 # &quot;e&quot; also covers the small r-like sign with a large loop hanging below it (as on 153v).
 # Barred d: lines 1, 7, 14, 21, 22, 23 (?), 28 have a d with a heavy bar/stroke over it; bar not transcribed.
 # Line 1 word 4: large underlined Z-sign.
@@ -343,7 +343,7 @@ c+ mx xnnQ 7+ifQ f:.rhioys3x ?h+rnn zorx
 WxfQixs3x Hzoym gzo.fQ 4:.zosnn
 m4 zo:.mQs3x S+rhxzos Qs:.zoio:.Q d:.r f HxrhxrQ
 Tzox Wx fgix7 xmQ H+shxW+ c+ TzoiW nnx zoxzoWQ his3x</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/transcription/154v.txt">154v.txt</a></p><pre># f.154v  (27 lines; blank space between lines 17 and 18; cipher body ends on line 27, rest of page blank)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/transcription/154v.txt">154v.txt</a></p><pre translate="no"># f.154v  (27 lines; blank space between lines 17 and 18; cipher body ends on line 27, rest of page blank)
 # Checked against the image with the known key, 22 Sept 2026: x/r (e/n) and other sign corrections listed in corrections_154v.tsv
 # Harmonised with 152r-153r: the epsilon-like sign is &#x27;e&#x27; (not &#x27;c&#x27;), the underlined z-sweep word is &#x27;Z&#x27; (not &#x27;L&#x27;); comments below may still say c/L.
 # New codes used on this page (not in SIGNS.md):
@@ -386,7 +386,7 @@ WxhifQ hx Wixzo3 HxrhxrQ TzoiW xmQ:iQ
 H+Shxf+ + 7+ifQ hx dS+rh3 ppxr+nnmixm D
 # line 16: the gap between &quot;f:xQSx&quot; and &quot;m+&quot; has no slash, so they are joined
 # line 23: a crossed pair of strokes before &quot;7ixSx3&quot; is read as a separator, not a sign</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/transcription/155r.txt">155r.txt</a></p><pre># f.155r  (29 lines, in four paragraphs: 1-4 | 5-12 | 13-19 | 20-29; blank space between paragraphs; rest of page blank)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/transcription/155r.txt">155r.txt</a></p><pre translate="no"># f.155r  (29 lines, in four paragraphs: 1-4 | 5-12 | 13-19 | 20-29; blank space between paragraphs; rest of page blank)
 # Checked against the image with the known key, 22 Sept 2026: x/r (e/n) and other sign corrections listed in corrections_155r.tsv
 # Harmonised with 152r-153r: the epsilon-like sign is &#x27;e&#x27; (not &#x27;c&#x27;), the underlined z-sweep word is &#x27;Z&#x27; (not &#x27;L&#x27;); comments below may still say c/L.
 # Left margin: the faint writing there is show-through of f.154v (mirrored; e.g. &quot;7ixSx3 //&quot; of 154v line 23 reads
@@ -431,7 +431,7 @@ x+i+ [Wxxxo]S Z f:rQirzoxS WxzoSm 7+fQi?m
 # line 19: in &quot;[+W+]J&quot; the strike-through line ends in the δ loop, so it may be a single barred-δ J written over &quot;+W+&quot;
 # line 24: &quot;Ddxixm&quot; - a diagonal stroke crosses the descending stem before δ (read as D); the next two words are struck through
 # line 29: &quot;[Wxxxo]&quot; is struck by a horizontal line; &quot;i?m&quot;: the sign after i is blotted (x or g with a descending loop)</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/transcription/155v.txt">155v.txt</a></p><pre># f.155v  (28 lines: 1-13 | blank gap | 14-23 | blank gap | 24-28; rest of page blank)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/transcription/155v.txt">155v.txt</a></p><pre translate="no"># f.155v  (28 lines: 1-13 | blank gap | 14-23 | blank gap | 24-28; rest of page blank)
 # Checked against the image with the known key, 22 Sept 2026: x/r (e/n) and other sign corrections listed in corrections_155v.tsv
 # Harmonised with 152r-153r: the epsilon-like sign is &#x27;e&#x27; (not &#x27;c&#x27;), the underlined z-sweep word is &#x27;Z&#x27; (not &#x27;L&#x27;); comments below may still say c/L.
 # No marginal additions on this page.
@@ -481,7 +481,7 @@ zo:nnQSx dS+rhxzoS HxzoWQ HSxrhSx 7
 # line 22: &quot;S[m]&quot; - a horizontal stroke cancels the minims after the ſ
 # lines 2, 3, 26, 28: horizontal line-filler strokes at the ends are not transcribed
 # lines 1/19/28 and 2/7/19/28 repeat the words &quot;zo:nnQSx&quot; and &quot;dS+xhxzoS&quot;</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/transcription/156r.txt">156r.txt</a></p><pre># f.156r  (30 lines: 1-27 continuous; blank gap (library stamp &quot;Bibliotheque Royale&quot; in it) between 27 and 28; 28-30; rest of page blank)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/transcription/156r.txt">156r.txt</a></p><pre translate="no"># f.156r  (30 lines: 1-27 continuous; blank gap (library stamp &quot;Bibliotheque Royale&quot; in it) between 27 and 28; 28-30; rest of page blank)
 # Checked against the image with the known key, 22 Sept 2026: x/r (e/n) and other sign corrections listed in corrections_156r.tsv
 # Harmonised with 152r-153r: the epsilon-like sign is &#x27;e&#x27; (not &#x27;c&#x27;), the underlined z-sweep word is &#x27;Z&#x27; (not &#x27;L&#x27;); comments below may still say c/L.
 # &quot;156&quot; at the top right is the folio number, not transcribed. Faint writing in the left margin (lines 21-22) is
@@ -535,7 +535,7 @@ hx D:zosm e+ Hzoxm m+hifQx zoxrzox DW zomx
 # line 17: &quot;[hzxiox]&quot; struck through with a horizontal line, rewritten as &quot;hzxio3&quot;
 # line 20: &quot;[?]&quot; = a C/⊂-shaped sign with an F inside, cancelled with a heavy horizontal bar
 # lines 1-26: S is used for ſ with a loop/δ/β head, s for plain ſ; the distinction is not certain on every ſ</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/transcription/156v.txt">156v.txt</a></p><pre># f.156v  (20 lines: 1-12 | blank gap with library stamp | 13-20; the cipher ends at line 20; the rest of the page is blank
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/transcription/156v.txt">156v.txt</a></p><pre translate="no"># f.156v  (20 lines: 1-12 | blank gap with library stamp | 13-20; the cipher ends at line 20; the rest of the page is blank
 # Checked against the image with the known key, 22 Sept 2026: x/r (e/n) and other sign corrections listed in corrections_156v.tsv
 # Harmonised with 152r-153r: the epsilon-like sign is &#x27;e&#x27; (not &#x27;c&#x27;), the underlined z-sweep word is &#x27;Z&#x27; (not &#x27;L&#x27;); comments below may still say c/L.
 #   apart from show-through of 156r, which reads upside-down/mirrored and is not transcribed)
@@ -576,7 +576,7 @@ xm Hs:zoDrfxm hx H+Shxf+
 # line 13: &quot;D+c&quot; - the + is small and set high (a 4-like hook)
 # lines 4, 17-19: horizontal line-filler strokes at the ends are not transcribed
 # lines 1, 5, 9, 17: &quot;dS+xh(xzoS)&quot; recurs, as on 155v/156r</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/reading_152r-154r.txt">reading_152r-154r.txt</a></p><pre># Reading, ff. 152r-154r. Conventions as in reading_154v-156v.txt.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/reading_152r-154r.txt">reading_152r-154r.txt</a></p><pre translate="no"># Reading, ff. 152r-154r. Conventions as in reading_154v-156v.txt.
 152r.01	Despuis les derniers advertissemens
 152r.02	que envoia[y] a vostre grandeur, les
 152r.03	affaires de pardeça [on]t [couru] de mal
@@ -729,7 +729,7 @@ xm Hs:zoDrfxm hx H+Shxf+
 154r.28	Si vostre grandeur trouvoit bon, cependant
 154r.29	que le chief est pardela et qu&#x27;il se veult dire
 157v.01	[dorse, one cipher word] Advertissemens</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/reading_154v-156v.txt">reading_154v-156v.txt</a></p><pre># Reading, ff. 154v-156v. One line per manuscript line: fol.line&lt;TAB&gt;reading.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/reading_154v-156v.txt">reading_154v-156v.txt</a></p><pre translate="no"># Reading, ff. 154v-156v. One line per manuscript line: fol.line&lt;TAB&gt;reading.
 # Spelling follows the decrypt (1560 French, u/v and i/j as the key gives them); modern accents not added.
 # [word] = emended where the mechanical decrypt differs (scribe slip, transcription doubt or polyphonic sign);
 # [..] = not read. Code words (pour, roy, et, sieur) are written in plain.
@@ -867,7 +867,7 @@ xm Hs:zoDrfxm hx H+Shxf+
 156v.18	desordres que se commectent
 156v.19	journellement par les rebelles
 156v.20	es provinces de pardeça.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/reading_152r-154r.txt">reading_152r-154r.txt</a></p><pre># Reading, ff. 152r-154r. Conventions as in reading_154v-156v.txt.
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/reading_152r-154r.txt">reading_152r-154r.txt</a></p><pre translate="no"># Reading, ff. 152r-154r. Conventions as in reading_154v-156v.txt.
 152r.01	Despuis les derniers advertissemens
 152r.02	que envoia[y] a vostre grandeur, les
 152r.03	affaires de pardeça [on]t [couru] de mal
@@ -1020,7 +1020,7 @@ xm Hs:zoDrfxm hx H+Shxf+
 154r.28	Si vostre grandeur trouvoit bon, cependant
 154r.29	que le chief est pardela et qu&#x27;il se veult dire
 157v.01	[dorse, one cipher word] Advertissemens</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/reading_154v-156v.txt">reading_154v-156v.txt</a></p><pre># Reading, ff. 154v-156v. One line per manuscript line: fol.line&lt;TAB&gt;reading.
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/reading_154v-156v.txt">reading_154v-156v.txt</a></p><pre translate="no"># Reading, ff. 154v-156v. One line per manuscript line: fol.line&lt;TAB&gt;reading.
 # Spelling follows the decrypt (1560 French, u/v and i/j as the key gives them); modern accents not added.
 # [word] = emended where the mechanical decrypt differs (scribe slip, transcription doubt or polyphonic sign);
 # [..] = not read. Code words (pour, roy, et, sieur) are written in plain.
@@ -1158,7 +1158,7 @@ xm Hs:zoDrfxm hx H+Shxf+
 156v.18	desordres que se commectent
 156v.19	journellement par les rebelles
 156v.20	es provinces de pardeça.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/reading_en.md">reading_en.md</a></p><pre># Mémoire en chiffre to the connétable de Montmorency, 12 December 1560 (BnF fr. 3157, ff. 152r-156v): English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/memoire1560/reading_en.md">reading_en.md</a></p><pre translate="no"># Mémoire en chiffre to the connétable de Montmorency, 12 December 1560 (BnF fr. 3157, ff. 152r-156v): English translation
 
 Translation (Claude Opus 5.5, 23 Oct 2026) of the reading in `reading_152r-154r.txt` and `reading_154v-156v.txt` (the
 whole mémoire is in cipher; key broken here from the ciphertext), as running text by folio. Same holes: `[word]` a
@@ -1290,7 +1290,7 @@ will be able to learn of the disorders committed daily by the rebels in the prov
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Biblioth&egrave;que nationale de France / Gallica</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="percy1559.html" rel="prev">&larr; Percy to Cecil 1559 1559</a><a href="throckmorton.html" rel="next">Throckmorton 1560&ndash;63 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

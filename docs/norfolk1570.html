@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">X ρ 8 a X Π · □ 6 · Π a H X ω a X<br>ε · ♁ · L · V · IV · Rp &middot; L = Murray</div>
+  <div class="cipherstrip" translate="no">X ρ 8 a X Π · □ 6 · Π a H X ω a X<br>ε · ♁ · L · V · IV · Rp &middot; L = Murray</div>
   <p class="kicker">Tutbury &rarr; the Tower · simple substitution with word signs and name signs · February or March 1570</p>
   <h1>Mary Queen of Scots to the Duke of Norfolk, &ldquo;the 20th&rdquo;, 1570</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_mary-queen-of-scots.jpg" alt="Mary Queen of Scots" title="Mary Queen of Scots: Portrait, Unidentified painter. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Mary Queen of Scots</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_duke-of-norfolk.jpg" alt="Duke of Norfolk" title="Duke of Norfolk: Portrait, Hans Eworth. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Duke of Norfolk</figcaption></figure></div><!-- /parties -->
@@ -92,10 +92,10 @@ adds the decipherment as continuous text. The letters are divided into words and
 <em>Northfolke</em>).</p>
 
 <h2 id="images"><span class="num">02</span> The images</h2>
-<p>The British Library&rsquo;s new viewer publishes the volume as a IIIF manifest (<code>bl.digirati.io/iiif/ark:/81055/vdc_100162985756.0x000001</code>, reached from the Search
+<p>The British Library&rsquo;s new viewer publishes the volume as a IIIF manifest (<code translate="no">bl.digirati.io/iiif/ark:/81055/vdc_100162985756.0x000001</code>, reached from the Search
 Archives record for Caligula C II). The image service claims IIIF level 2 but will not return an image more than about 1,024 pixels on a side. The full leaf is 7,144 &times; 10,328 pixels,
-so <code>fetch.py</code> and <code>region.py</code> ask for 1,024-pixel tiles and paste them back together. The text block of f. 74r is the region from x&nbsp;1000 to 6500 and y&nbsp;4900 to
-9800, at full resolution. <code>strips.py</code> finds the centre of each line in five vertical bands from the ink profile and cuts 23 strips that follow the slope of each line, so a line can be
+so <code translate="no">fetch.py</code> and <code translate="no">region.py</code> ask for 1,024-pixel tiles and paste them back together. The text block of f. 74r is the region from x&nbsp;1000 to 6500 and y&nbsp;4900 to
+9800, at full resolution. <code translate="no">strips.py</code> finds the centre of each line in five vertical bands from the ink profile and cuts 23 strips that follow the slope of each line, so a line can be
 examined at magnification from end to end.</p>
 <figure data-credit="British Library, Cotton MS Caligula C II f. 74r, via the BL IIIF service (stitched from tiles)"><img src="norfolk1570_f74r_lines.jpg" alt="BL Cotton MS Caligula C II f. 74r, the left half of the first five cipher lines" loading="lazy">
 <figcaption>F. 74r, left half of lines 1&ndash;5: <em>I have, my oun good lord, &hellip;</em> / <em>I will never take anithing in hand &hellip;</em> / <em>-ept I var sur it var to your veil &hellip;</em>.
@@ -124,7 +124,7 @@ A б with a bar through it is <em>friend</em>, besides the ♁ form. There are n
 (<em>vreit</em>, <em>veil</em>, <em>vel or vo</em>), which is Scots spelling, not a gap in the cipher.</p>
 
 <h2 id="reading"><span class="num">04</span> The decipherment</h2>
-<p class="legend">The re-reading of 23 October 2026, sign by sign on the BL images (<code>texts/f74r_reading.md</code>), as running text; the writer&rsquo;s spelling kept, punctuation added. [?word] partly carried by its signs; [word] supplied; [&hellip;] unread; {sign} a nomenclator sign with no value in the key, transcribed by its shape. <strong>Decoded, not read:</strong> the opening sentence, the <em>experiance</em> sentence, lines 10&ndash;11 and line 15 do not build, so this is a partial reading.</p>
+<p class="legend">The re-reading of 23 October 2026, sign by sign on the BL images (<code translate="no">texts/f74r_reading.md</code>), as running text; the writer&rsquo;s spelling kept, punctuation added. [?word] partly carried by its signs; [word] supplied; [&hellip;] unread; {sign} a nomenclator sign with no value in the key, transcribed by its shape. <strong>Decoded, not read:</strong> the opening sentence, the <em>experiance</em> sentence, lines 10&ndash;11 and line 15 do not build, so this is a partial reading.</p>
 <blockquote>
 <p>I have, my oun good lord, {3̲2} your friendli {ꝗ} {ʃ̊} no [?lentle] satisfaction, and fore I will never tak anithing in hand {⊕} some ver good mey come of it to me, anithing except I var sur it var to your veil as for myn; and if I mocht be so to us both, I would be sur al schould not be in denger.</p>
 <p>For I have experiance {⊔} that [?favour] that me oune f[…]s […] but no[t], my oun lord, that your {a—} and myn [?friends] would not belive so to [?ues] a vey kan in nothing content the Queen of England.</p>
@@ -144,7 +144,7 @@ A б with a bar through it is <em>friend</em>, besides the ♁ form. There are n
 <figcaption>F. 74r, lines 21&ndash;23: <em>&hellip; and send us mor confort; an[d]</em> / <em>[?yet] vi have had in this meantym in vel or vo, I schal ever remen yours feithful</em> / <em>til death. {Mary}. The tventi of
 this instant.</em> The folio number 74 is in a later hand. <span class="credit">Image: British Library, Cotton MS Caligula C II f. 74r, via the BL IIIF service.</span></figcaption></figure>
 <h3>English</h3>
-<p>The English of the same partial reading (<code>texts/f74r_en.md</code>), with the same marks.</p>
+<p>The English of the same partial reading (<code translate="no">texts/f74r_en.md</code>), with the same marks.</p>
 <blockquote>
 <p>I have, my own good lord, {3̲2} your friendly {ꝗ} {ʃ̊} no [?gentle] satisfaction; and therefore I will never take anything in hand {⊕} some very good may come of it to me, anything except I were sure it were for your weal as for mine; and if I might be so for us both, I would be sure all should not be in danger.</p>
 <p>For I have experience {⊔} that [?favour] that my own f[…]s […] but not, my own lord, that your {a—} and my [?friends] would not believe so to [?use] a way can in nothing content the Queen of England.</p>
@@ -184,7 +184,7 @@ written the next day that says nothing of Pembroke would be odd. So would one wr
 <h2 id="residuals"><span class="num">06</span> What remains uncertain</h2>
 <ul>
 <li><strong>Thirteen unkeyed signs, each once.</strong> ⊕ (l. 2), ⊔ (l. 4), ∨ (l. 6), ⊘ and o° (l. 8), rʒ (l. 9), ø (l. 13), ⊗ (l. 17), ∂ after <em>Lord Talbot</em> (l. 16), three in line 1, and a family of letter signs with a long tail-dash ({a&mdash;} l. 5, {o&mdash;} l. 11, {Ш&mdash;} l. 15) that looks like a class of word signs. <em>Our {o&mdash;} Murray</em> would fit <em>enemy</em> by sense only; no value was adopted. Folios 66, 69 and 75, in the same cipher, have not yet been searched for them.</li>
-<li><strong>Open spots.</strong> The opening sentence, the <em>experiance</em> sentence (l. 4, under a stain), lines 10&ndash;11 and line 15 do not build. Legible runs in lines 11 (after <em>spokn</em>), 15 (after <em>ve</em>), 17 and 20 are transcribed but not resolved (<code>texts/f74r_signs.tsv</code>). <em>Demen</em> in line 7 is what the signs carry, but its sense is not secure.</li>
+<li><strong>Open spots.</strong> The opening sentence, the <em>experiance</em> sentence (l. 4, under a stain), lines 10&ndash;11 and line 15 do not build. Legible runs in lines 11 (after <em>spokn</em>), 15 (after <em>ve</em>), 17 and 20 are transcribed but not resolved (<code translate="no">texts/f74r_signs.tsv</code>). <em>Demen</em> in line 7 is what the signs carry, but its sense is not secure.</li>
 <li><strong>Print.</strong> The Calendar of State Papers, Scotland, vol. iii (Boyd, 1903) was searched on 23 October 2026: it calendars the sibling letters but not f. 74.</li>
 <li><strong>Word division and sense.</strong> The signs run on without spaces and nulls stand inside words, so the division into words is an editorial choice. In lines 5&ndash;6 and 9&ndash;10 the sentences
 are construed as closely as the words allow, and the paraphrase is one interpretation of them.</li>
@@ -199,7 +199,7 @@ comparing it with her secretary Raulet&rsquo;s. That was not attempted here.</li
 <h3>Mary Queen of Scots to Norfolk, &#x27;the 20th&#x27; [Feb or Mar 1570], BL Cotton MS Caligula C II f. 74r <span class="st stuck">decoded, not read</span></h3>
 <p>Written after Moray&#x27;s murder at Linlithgow (23 Jan 1570): Mary tells Norfolk she will undertake nothing unless it is safe for them both, urges him to write and to act through his sister Scrope or others, says Elizabeth gives her the blame (&#x27;veyt&#x27;) for Moray&#x27;s death, reports rumours of Morton and Lord Talbot, and begs him not to risk writing in his own hand. Signs transcribed line by line on 23 Oct 2026 (texts/f74r_signs.tsv); partial running text in texts/f74r_reading.md.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/norfolk1570/texts/f74r_signs.tsv">f74r_signs.tsv</a></p><pre>line	tokens	decode	reading
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/norfolk1570/texts/f74r_signs.tsv">f74r_signs.tsv</a></p><pre translate="no">line	tokens	decode	reading
 1	{faint ω} Ɉ(null) 9o ρ(?null) o(have) m(null) + 7 s(null) □ ρ a , A ɓ(null) □ m s □ ε(?null) s □ ∠(blotted) , 4 ǂ(null) □ ⊏ ∠ s {3̲2} ∂ ǂб(friend) 4 Π m(null) {ꝗ 9-with-long-tail} {ʃ with superscript hook} a □ m(null) 4 8 a ŋ(null?) X 4 8 m(null) H ω s(null) X ɓ(null) Π H б ε(?) ω Ш X Π □ a ǂ ⊞ 8 ῶ(null)	I have my oun goo(o)d lord {3̲2} your friend li {ꝗ} {ʃ} no lentle satisfaction and for e	I have, my oun good lord, {3̲2} your friendli {ꝗ} {ʃ} no [?lentle] satisfaction, and fore
 2	9o 4̶(will) a 8 ρ 8 ⊏ m(null) X ω ǂ ω a Π m(null) X 3 Π a A ④(in) 3 ω a ∠ {⊕ looped cross} H □ + 8 ρ 8 ⊏ A □ □ ∠ + 8 7 Ш □ + 8 □ б Π X Z(to) εʃ(me) ω a Π X 3 Π a A 8 Φ	I will never tak anithing in hand {⊕} some ver good mey come of it to me anithing ex	I will never tak anithing in hand {⊕} some ver good mey come of it to me, anithing ex-
 3	Ш 8 2 X 9o ρ ω ⊏ H ρ ⊏ Π X ρ ω ⊏ Z(to) ∂(your) ρ 8 Π 4 ω H ⊞(for) ħ(my) a ǂ(and) Π б 9o + □ Ш 3 X φ 8 H □ Z(to) ρ H φ □ X 3 9o ƀ(would) φ 8 H ρ ⊏	cept I var sur it var to your veil as for myn and if I mocht be so to us both I would be sur	-cept I var sur it var to your veil as for myn; and if I mocht be so to us both, I would be sur
@@ -223,7 +223,7 @@ comparing it with her secretary Raulet&rsquo;s. That was not attempted here.</li
 21	2 ⊏ 8 7 3 Π + Z(to) 2 ⊏ 8 H 8 ⊏ ρ 8 ʃ(you) б ⊏ □ + б 8 7 a Π X б̶(friend) H ǂ(and) H 8 a ∠ ρ H + □ ⊏ Ш □ a б □ ⊏ X ω a	prey him to preserve you from feynit friends and send us mor confort an	prey him to preserve you from feynit friends, and send us mor confort; an-
 22	{ſ with crossbar, f/y?} 8 X ρ Π o(have) 3 ω ∠ ④(in) ▽(this) + 8 ω a X 7 + ④(in) ρ 8 4 □ ⊏ ρ □ 9o(I) H Ш 3 ω 4 8 ρ 8 ⊏ ⊏ 8 + 8 a ∂(your) H б 8 Π X 3 б ρ 4	{ſ̶}et vi have had in this meantym in vel or vo I schal ever remen yours feithful	-[d] [?yet] vi have had in this meantym in vel or vo, I schal ever remen yours feithful
 23	X Π 4 m(null) ∠ 8 ω X 3 X(?) 8 3 ⩓(Mary) m(null) 9(null) X ρ 8 a X Π □ б ▽(this) Π a H X ω a m(null) s(null) X	til death {Mary} the tventi of this instant	til death. {Mary}. The tventi of this instant.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/norfolk1570/texts/f74r_decryption.md">f74r_decryption.md</a></p><pre># Copied verbatim from NOTES.md (22 Oct 2026), section &#x27;Reading&#x27; and &#x27;Open points&#x27;: the reading of f. 74r line by line, made on the image strips with Tomokiyo&#x27;s key.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/norfolk1570/texts/f74r_decryption.md">f74r_decryption.md</a></p><pre translate="no"># Copied verbatim from NOTES.md (22 Oct 2026), section &#x27;Reading&#x27; and &#x27;Open points&#x27;: the reading of f. 74r line by line, made on the image strips with Tomokiyo&#x27;s key.
 ### Reading (Mary&#x27;s spelling kept; [..] = supplied/uncertain; {sign} = nomenclator sign not in the key)
 
 1  I have, my oun good lord, [..] your friendl[y] [..] no [g]entle satisfaction, and fore
@@ -257,7 +257,7 @@ the wyte of Murray death&quot;); Morton rumoured on the move; Lord Talbot at han
 - Unkeyed signs: ⊕ (l.2), ⊘ with inner b (l.8, a person), ø (l.13), ⊗ (l.17), {a—}/{o—} dash signs (ll.5, 11).
 - l.1 &quot;[..] your friendl[y] [b][ʃ&#x27;]&quot; and the &quot;∠ s 3 ɹ&quot; group after &quot;lord&quot; unread; l.4 end under a stain.
 - ǂ standing alone = &quot;and&quot; (also k inside words: kan, spok, lyk, York); εʃ = &quot;me&quot;; б-with-bar = friend.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/norfolk1570/texts/f74r_signs.tsv">f74r_signs.tsv</a></p><pre>line	tokens	decode	reading
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/norfolk1570/texts/f74r_signs.tsv">f74r_signs.tsv</a></p><pre translate="no">line	tokens	decode	reading
 1	{faint ω} Ɉ(null) 9o ρ(?null) o(have) m(null) + 7 s(null) □ ρ a , A ɓ(null) □ m s □ ε(?null) s □ ∠(blotted) , 4 ǂ(null) □ ⊏ ∠ s {3̲2} ∂ ǂб(friend) 4 Π m(null) {ꝗ 9-with-long-tail} {ʃ with superscript hook} a □ m(null) 4 8 a ŋ(null?) X 4 8 m(null) H ω s(null) X ɓ(null) Π H б ε(?) ω Ш X Π □ a ǂ ⊞ 8 ῶ(null)	I have my oun goo(o)d lord {3̲2} your friend li {ꝗ} {ʃ} no lentle satisfaction and for e	I have, my oun good lord, {3̲2} your friendli {ꝗ} {ʃ} no [?lentle] satisfaction, and fore
 2	9o 4̶(will) a 8 ρ 8 ⊏ m(null) X ω ǂ ω a Π m(null) X 3 Π a A ④(in) 3 ω a ∠ {⊕ looped cross} H □ + 8 ρ 8 ⊏ A □ □ ∠ + 8 7 Ш □ + 8 □ б Π X Z(to) εʃ(me) ω a Π X 3 Π a A 8 Φ	I will never tak anithing in hand {⊕} some ver good mey come of it to me anithing ex	I will never tak anithing in hand {⊕} some ver good mey come of it to me, anithing ex-
 3	Ш 8 2 X 9o ρ ω ⊏ H ρ ⊏ Π X ρ ω ⊏ Z(to) ∂(your) ρ 8 Π 4 ω H ⊞(for) ħ(my) a ǂ(and) Π б 9o + □ Ш 3 X φ 8 H □ Z(to) ρ H φ □ X 3 9o ƀ(would) φ 8 H ρ ⊏	cept I var sur it var to your veil as for myn and if I mocht be so to us both I would be sur	-cept I var sur it var to your veil as for myn; and if I mocht be so to us both, I would be sur
@@ -281,7 +281,7 @@ the wyte of Murray death&quot;); Morton rumoured on the move; Lord Talbot at han
 21	2 ⊏ 8 7 3 Π + Z(to) 2 ⊏ 8 H 8 ⊏ ρ 8 ʃ(you) б ⊏ □ + б 8 7 a Π X б̶(friend) H ǂ(and) H 8 a ∠ ρ H + □ ⊏ Ш □ a б □ ⊏ X ω a	prey him to preserve you from feynit friends and send us mor confort an	prey him to preserve you from feynit friends, and send us mor confort; an-
 22	{ſ with crossbar, f/y?} 8 X ρ Π o(have) 3 ω ∠ ④(in) ▽(this) + 8 ω a X 7 + ④(in) ρ 8 4 □ ⊏ ρ □ 9o(I) H Ш 3 ω 4 8 ρ 8 ⊏ ⊏ 8 + 8 a ∂(your) H б 8 Π X 3 б ρ 4	{ſ̶}et vi have had in this meantym in vel or vo I schal ever remen yours feithful	-[d] [?yet] vi have had in this meantym in vel or vo, I schal ever remen yours feithful
 23	X Π 4 m(null) ∠ 8 ω X 3 X(?) 8 3 ⩓(Mary) m(null) 9(null) X ρ 8 a X Π □ б ▽(this) Π a H X ω a m(null) s(null) X	til death {Mary} the tventi of this instant	til death. {Mary}. The tventi of this instant.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/norfolk1570/texts/f74r_reading.md">f74r_reading.md</a></p><pre># Mary Queen of Scots to the Duke of Norfolk, &quot;the tventi of this instant&quot; [Feb or Mar 1570] — BL Cotton MS Caligula C II f. 74r
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/norfolk1570/texts/f74r_reading.md">f74r_reading.md</a></p><pre translate="no"># Mary Queen of Scots to the Duke of Norfolk, &quot;the tventi of this instant&quot; [Feb or Mar 1570] — BL Cotton MS Caligula C II f. 74r
 
 Rests on: Tomokiyo&#x27;s key for the Mary–Norfolk cipher (`img/mary_Norfolk.png`, corrected 16 July 2023), applied sign by
 sign to the BL IIIF images of f. 74r (`img/f74r_text.jpg`, slope-following line strips). Re-read 23 Oct 2026 by
@@ -361,7 +361,7 @@ l.10 the double-barred ǂ read as the will sign, l.22 the crossed ſ read as y. 
 <!-- replay:end -->
 <h2 id="sources"><span class="num">07</span> Sources</h2>
 <ul>
-<li>British Library, Cotton MS Caligula C II, ff. 66r, 69r, 74r&ndash;v, 75r: IIIF manifest <code>https://bl.digirati.io/iiif/ark:/81055/vdc_100162985756.0x000001</code>, from the Search Archives record
+<li>British Library, Cotton MS Caligula C II, ff. 66r, 69r, 74r&ndash;v, 75r: IIIF manifest <code translate="no">https://bl.digirati.io/iiif/ark:/81055/vdc_100162985756.0x000001</code>, from the Search Archives record
 040-001102379.</li>
 <li>S. Tomokiyo, &ldquo;Mary Queen of Scots&rsquo; ciphers&rdquo;, Cotton MS Caligula C II section (<a href="https://cryptiana.web.fc2.com/code/mary.htm" rel="noopener">cryptiana</a>): the key
 (&ldquo;Mary-Norfolk Cipher (1570)&rdquo;, corrected 16 July 2023), the listing of ff. 66&ndash;75, and the overlay decode of f. 74.</li>
@@ -370,8 +370,8 @@ of 1570. F. 74 is not among them.</li>
 <li><em>Calendar of State Papers, Scotland</em>, vol. 3 (1903), no. 520: Cecil&rsquo;s &ldquo;Extract out of the lettres in ciphre 1570, 1571&rdquo; with the letters of 15 January, the last of January
 and 18 April appended. It calendars no letter of the 20th.</li>
 </ul>
-<p class="muted">The notes with the key and the decipherment (<code>NOTES.md</code>), the IIIF manifest, and the tile-stitching and line-strip scripts (<code>fetch.py</code>, <code>region.py</code>,
-<code>strips.py</code>) are in the repository (<code>targets/norfolk1570/</code>). The images are not committed and can be fetched again with the scripts.</p>
+<p class="muted">The notes with the key and the decipherment (<code translate="no">NOTES.md</code>), the IIIF manifest, and the tile-stitching and line-strip scripts (<code translate="no">fetch.py</code>, <code translate="no">region.py</code>,
+<code translate="no">strips.py</code>) are in the repository (<code translate="no">targets/norfolk1570/</code>). The images are not committed and can be fetched again with the scripts.</p>
 
 </main>
 <footer><div class="in">

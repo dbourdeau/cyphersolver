@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-<div class="cipherstrip"><span>OLDDL VOOSC TNROD TVOTO SAMAD</span></div>
+<div class="cipherstrip" translate="no"><span>OLDDL VOOSC TNROD TVOTO SAMAD</span></div>
 <p class="kicker">Moscow &rarr; Berlin &middot; columnar transposition, 24 columns &middot; 1 June 1921 &middot; key recovered from the ciphertext</p>
 <h1>Voikov to Stomoniakov: nails, rakes and saws</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_pyotr-voikov.jpg" alt="Pyotr Voikov" title="Pyotr Voikov: Photograph. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Pyotr Voikov</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_boris-stomoniakov.jpg" alt="Boris Stomoniakov" title="Boris Stomoniakov: Photograph. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Boris Stomoniakov</figcaption></figure></div><!-- /parties -->
@@ -67,28 +67,28 @@
 <h2 id="the-telegram"><span class="num">01</span> The telegram</h2>
 <figure data-credit="NARA RG 59, 861.00, M316 roll 42, frame 1273, via the National Archives Catalog"><img src="voikov1921_cipher.jpg" alt="Typed five-letter groups headed Polpred Lutovinov Berlin Delsovpra Stomoniakov, with the discriminant Raion" loading="lazy"><figcaption>The start of the telegram as the Constantinople operator typed it, with its number pair and the word RAION. <span class="credit">Image: NARA RG 59, 861.00, M316 roll 42, frame 1273, via the National Archives Catalog.</span></figcaption></figure>
 <p>The heading is in clear: <em>Polpred Lutovinov Berlin Delsovpra Stomoniakov</em>, then the numbers 01135&ndash;26205 and the word RAION. The same numbers close the text, followed by the date, the serial and the signature. We read the signature as P. L. Voikov and the addressee as B. S. Stomoniakov of the Berlin trade delegation; the frame gives surnames only.</p>
-<p>The letters are Russian with nothing substituted: across the traffic to Stomoniakov O runs at 11.3%, I at 10.0%, E at 8.8%. So only the order is hidden. <code>Q</code> stands for the soft or hard sign, and punctuation is spelled out: <code>zpt</code> for a comma, <code>dvoetochie</code> for a colon.</p>
+<p>The letters are Russian with nothing substituted: across the traffic to Stomoniakov O runs at 11.3%, I at 10.0%, E at 8.8%. So only the order is hidden. <code translate="no">Q</code> stands for the soft or hard sign, and punctuation is spelled out: <code translate="no">zpt</code> for a comma, <code translate="no">dvoetochie</code> for a colon.</p>
 
 <h2 id="how-the-key-came-out"><span class="num">02</span> How the key came out</h2>
 <p>The solver tries a column order, reads the rows and scores them against a Russian model. On this model, held-out Russian scores &minus;2.14 per letter and shuffled letters &minus;4.96.</p>
 <ul>
 <li>At widths 22 to 26, with 120,000 steps, only width 24 stood apart: &minus;4.87 to &minus;5.01 on four restarts, with controls at &minus;5.22 and &minus;5.24.</li>
 <li>Longer runs at width 24 produced readable Russian (&minus;3.73), and independent restarts gave the same stretches of text in different rotations.</li>
-<li>After setting <code>Q</code> to the soft sign and moving columns within the row, the score reached &minus;3.21.</li>
+<li>After setting <code translate="no">Q</code> to the soft sign and moving columns within the row, the score reached &minus;3.21.</li>
 </ul>
 <p>Read-out order of the columns, 0&ndash;23: 5 17 0 23 9 1 16 13 7 18 19 8 12 20 10 6 11 3 21 4 22 2 15 14. A different telegram of the same day carries the same first number, 01135, but this key does not decipher it, so that number does not name the key on its own. The key's source is unknown: its pattern matches nothing in 14 MB of general English or two George Wither texts, the poet Tiltman found behind another Soviet system.</p>
 
 <h2 id="what-it-says"><span class="num">03</span> What it says</h2>
 <blockquote>For the goods-exchange fund with the countryside it is necessary to buy immediately hardware, colon: tyre iron, horseshoe iron; wire nails from two and a half to seven inches; horseshoe nails of middle sizes; shovels for earthwork, square, nine [or ten] by eleven and three-quarter inches, pointed, ten by eleven and a half inches; rakes; forks for hay and manure; carpenters' axes weighing two and a half to three pounds; cross-cut saws, three and a half, four [&hellip;] by six inches; joiners' pincers of eight and ten inches; for sharpening saws; mortise chisels up to three-quarters of an inch; flat paring chisels from a half to one and a quarter inches; half-round from a half to one inch. Continuation follows.</blockquote>
-<p>The Politburo approved "Comrade Kopp's proposal" on 16 April 1921; notes to Lenin's collected works tie it to goods exchange and to Stomoniakov. We have not seen the decision itself, so the link to this order rests on subject matter. The closing <code>prodslid</code> is <em>prod. sled.</em>, the "continuation follows" formula Tiltman quotes from the system he broke on another link.</p>
+<p>The Politburo approved "Comrade Kopp's proposal" on 16 April 1921; notes to Lenin's collected works tie it to goods exchange and to Stomoniakov. We have not seen the decision itself, so the link to this order rests on subject matter. The closing <code translate="no">prodslid</code> is <em>prod. sled.</em>, the "continuation follows" formula Tiltman quotes from the system he broke on another link.</p>
 
 <h2 id="what-remains-uncertain"><span class="num">04</span> What remains uncertain</h2>
 <ul>
-<li><code>chetyre shjima</code>: not deciphered; probably a size or unit for the saws.</li>
-<li><code>ce</code> before the shovel size: unexplained. <code>de?iatg</code> has a lost letter, so девять or десять.</li>
-<li><code>kieszi</code> as клещи (pincers) comes from context, and "for sharpening saws" may be its own item.</li>
-<li>The opening <code>derevnei</code> could also be деревне и, "for the countryside, and".</li>
-<li>Slips such as <code>tkwaroobcennogo</code> for <em>tovaroobmennogo</em> look like radio errors; they are bracketed in the reading. So is the missing "s" before each <code>polovinoi</code>.</li>
+<li><code translate="no">chetyre shjima</code>: not deciphered; probably a size or unit for the saws.</li>
+<li><code translate="no">ce</code> before the shovel size: unexplained. <code translate="no">de?iatg</code> has a lost letter, so девять or десять.</li>
+<li><code translate="no">kieszi</code> as клещи (pincers) comes from context, and "for sharpening saws" may be its own item.</li>
+<li>The opening <code translate="no">derevnei</code> could also be деревне и, "for the countryside, and".</li>
+<li>Slips such as <code translate="no">tkwaroobcennogo</code> for <em>tovaroobmennogo</em> look like radio errors; they are bracketed in the reading. So is the missing "s" before each <code translate="no">polovinoi</code>.</li>
 </ul>
 <p>The continuation has <a href="lejava1921.html">its own kind of neighbour</a>: another message in this system, with its own key and its own page. The continuation itself is decoded but does not yet form sentences, so it has no page. The figure traffic in the same file, <a href="kopp1921.html">a different cipher</a>, is not solved.</p>
 
@@ -97,7 +97,7 @@
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>Nr 1883/1188/S, 1 June 1921</h3>
 <p>A buying order to Stomoniakov in Berlin: hardware for the goods-exchange fund with the countryside, listed with sizes (iron, nails, shovels, rakes, forks, axes, saws, chisels). It ends &quot;continuation follows&quot;. The goods-exchange subject fits the Politburo decision on Kopp&#x27;s proposal of 16 April 1921, by subject only.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/voikov1921/msgA.txt">msgA.txt</a></p><pre>KNZOK NISL? TFPPO PLIUV IEADL UGMIZ ZVPRK AMNUR HREMZ APEST
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/voikov1921/msgA.txt">msgA.txt</a></p><pre translate="no">KNZOK NISL? TFPPO PLIUV IEADL UGMIZ ZVPRK AMNUR HREMZ APEST
 OLDDL VOOSC TNROD TVOTO SAMAD OIOAD ONVOO ATTRA PASNL EIITI PUNOE
 PCCVO NWGTE VTYVP TVMCE MOUZL EEAEL EHJCI KZGOM OVTRO DIIMG OIBEO
 OIETN IQIIC TYISI ZHORP SEHSJ EPONA DDIIY TICSK DPRIT ERAIK TVEIE
@@ -109,7 +109,7 @@ OSHLT AENDO CIOED HNTAA VPNDY DLIOP DNMII RIOOR TSEVA VFPSO ILROD
 OTVOV DHDEM EEEQB TAIOI ELBMU OIDET NODVP AQTNZ NEUOH LUOTT IDIRN
 RPOMN ZECOA RZDVI QNVOU DAOND OLVLD MONUT DLION JESLE LETDN OKEGO
 ZOBII AUDND DHILE IIPVO</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/voikov1921/decryption.txt">decryption.txt</a></p><pre>dliatkwaroobcennogofonda
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/voikov1921/decryption.txt">decryption.txt</a></p><pre translate="no">dliatkwaroobcennogofonda
 derevneineobqhodimonemed
 lennozakupiteskobianoito
 vardvoetochi?jelezoshinn
@@ -135,7 +135,7 @@ diuimastameskiiloskieotp
 oidoudnogochetpertziudiu
 imapolukruglyevtpoldoodn
 ogodiuinwzptprodslid</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/voikov1921/reading.txt">reading.txt</a></p><pre>для т[о]в[а]рооб[м]енного фонда деревней необходимо немедленно закупите скобяной товар двоеточие
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/voikov1921/reading.txt">reading.txt</a></p><pre translate="no">для т[о]в[а]рооб[м]енного фонда деревней необходимо немедленно закупите скобяной товар двоеточие
 железо шинное подковочное
 гвозди проволочные [от] двух [с] половиной до семи дюймов
 гвозди подковочные средних номеров
@@ -150,7 +150,7 @@ ogodiuinwzptprodslid</pre></details>
 стамески плоские от по[л] до одного [и] четверти дюйма
 полукруглые от пол до одного дюйма зпт
 прод след</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/voikov1921/translation.md">translation.md</a></p><pre>For the goods-exchange fund with the countryside it is necessary to buy immediately hardware, colon:
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/voikov1921/translation.md">translation.md</a></p><pre translate="no">For the goods-exchange fund with the countryside it is necessary to buy immediately hardware, colon:
 tyre iron, horseshoe iron;
 wire nails from two and a half to seven inches;
 horseshoe nails of middle sizes;
@@ -177,7 +177,7 @@ Continuation follows.</pre></details>
 <li>John H. Tiltman, <a href="https://nsarchive.gwu.edu/sites/default/files/documents/4895707/Brigadier-John-H-Tiltman-Experiences-1920-1939.pdf">&ldquo;Experiences 1920&ndash;1939&rdquo;</a>, NSA Doc ID 6618711.</li>
 <li>Lenin, Collected Works vol. 53, <a href="https://leninism.su/works/39-tom-53/253-primechanie-53.html">notes</a>.</li>
 </ul>
-<p class="muted">Transcription, key and reading: <code>targets/voikov1921/</code>; solver: <code>targets/stomoniakov1921/</code>.</p>
+<p class="muted">Transcription, key and reading: <code translate="no">targets/voikov1921/</code>; solver: <code translate="no">targets/stomoniakov1921/</code>.</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; National Archives and Records Administration, RG 59, M316</span>

@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">618 919 62 1016 1383 58 1283 13 892 217 894 954 173 637<br>venir passer le Tage au pont de l&rsquo;Arzobispo<br>1383 = le Tage &middot; 1300 = Lord Wellington &middot; 1211 = l&rsquo;arm&eacute;e du Centre &middot; 10 = full stop</div>
+  <div class="cipherstrip" translate="no">618 919 62 1016 1383 58 1283 13 892 217 894 954 173 637<br>venir passer le Tage au pont de l&rsquo;Arzobispo<br>1383 = le Tage &middot; 1300 = Lord Wellington &middot; 1211 = l&rsquo;arm&eacute;e du Centre &middot; 10 = full stop</div>
   <p class="kicker">Madrid &rarr; Soult in Andalusia; Salamanca &rarr; Madrid &middot; Grand Chiffre of 1812 &middot; 28 May and 1 June 1812 &middot; known key applied</p>
   <h1>Jourdan to Soult, Madrid, 28 May 1812, and Marmont to Jourdan, 1 June 1812</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_jean-baptiste-jourdan.jpg" alt="Jean-Baptiste Jourdan" title="Jean-Baptiste Jourdan: Portrait by Eugène Charpentier after Joseph-Marie Vien, mid-19th century (Palace of Versailles). Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Jean-Baptiste Jourdan</figcaption></figure></div><!-- /parties -->
@@ -81,7 +81,7 @@
 
 <h2 id="cipher"><span class="num">02</span> The cipher and its table</h2>
 <p>The Grand Chiffre of 1812, which the British called the Great Paris Cipher, is a repertory of 1,200 numbers for letters, syllables and words, extended to 1,400 with additions for Spain: <span class="c">1211</span> l&rsquo;arm&eacute;e du Centre, <span class="c">1214</span> l&rsquo;arm&eacute;e anglaise, <span class="c">1300</span> Lord Wellington, <span class="c">1383</span> le Tage. Frequent words have several numbers. The groups are written with points between them, and words are spelled out of syllables where the table has no entry: <span class="c">909 168 424 946</span> is <em>Mi-ra-ve-te</em>, <span class="c">217 894 954 173 637</span> <em>Ar-zo-bi-s-po</em>.</p>
-<p>The French deciphering table survives at the Service historique de la D&eacute;fense (&ldquo;B n&deg; 30&rdquo;), and Jean-Fran&ccedil;ois Bouchaudy has published photographs of it. Brice Dudout had already read 226 of its entries to decipher a letter of King Joseph of December 1812 (<a href="https://bdudout.github.io/joseph-napoleon/">his edition</a>); for these letters he read the cells they needed. The entries used are in <code>targets/marmont1812/key_1812_entries.tsv</code>, each with the source of its reading; the photographs are not reproduced.</p>
+<p>The French deciphering table survives at the Service historique de la D&eacute;fense (&ldquo;B n&deg; 30&rdquo;), and Jean-Fran&ccedil;ois Bouchaudy has published photographs of it. Brice Dudout had already read 226 of its entries to decipher a letter of King Joseph of December 1812 (<a href="https://bdudout.github.io/joseph-napoleon/">his edition</a>); for these letters he read the cells they needed. The entries used are in <code translate="no">targets/marmont1812/key_1812_entries.tsv</code>, each with the source of its reading; the photographs are not reproduced.</p>
 
 <h2 id="method"><span class="num">03</span> How it was deciphered</h2>
 <p><strong>No cryptanalysis.</strong> The numbers 2&ndash;1400 of Army of Portugal traffic in 1812 pointed to the Grand Chiffre, and the first line of Marmont&rsquo;s letter, decoded with the 226 entries already read, gave French. The rest is applying the table of the time unchanged.</p>
@@ -92,14 +92,14 @@
 <figure class="creveal" data-src="reveal/marmont1812.json"></figure>
 <p class="legend">Brice Dudout&rsquo;s text of the three cipher passages; the clear parts of the letter, which the Spanish copy gives in translation, are summarised. {x} probable reading; [x] restored from the sense.</p>
 <p>The letter opens in clear: the King has received a letter of the 26th from Marmont (the Duke of Ragusa), who reports that Wellington is north of the Tagus with his whole army except Hill&rsquo;s division, that the English army will have moved against him by about the 8th, and that two divisions have already crossed the Douro. Then the first cipher passage:</p>
-<blockquote lang="fr">
+<blockquote lang="fr" translate="no">
 le duc de Raguse a rappel&eacute; &agrave; lui la division {Foy}, de mani&egrave;re qu&rsquo;il ne va plus rester dans la vall&eacute;e du Tage que trois bataillons et environ huit cents chevaux de l&rsquo;arm&eacute;e du Centre, sous les ordres du g&eacute;n&eacute;ral Treillar[d].
 </blockquote>
 <blockquote>
 The Duke of Ragusa has recalled Foy&rsquo;s division to him, so that there will remain in the Tagus valley only three battalions and about eight hundred horse of the Army of the Centre, under the orders of General Treillard.
 </blockquote>
 <p>A clear paragraph follows: the King believes Marmont all the more because it is Hill&rsquo;s division that has made the expedition against the bridge of Almaraz, well supported by other troops. Then the orders, in cipher:</p>
-<blockquote lang="fr">
+<blockquote lang="fr" translate="no">
 Vous sentez, monsieur le mar&eacute;chal, que dans cette circonstance vous deve[z] renf[or]cer le corps du comte d&rsquo;Er{lon} autant que cela vous sera possible, afin de le me{tt}re en &eacute;tat de [ba]{tt}re le corps du g&eacute;n&eacute;ral Hill s&rsquo;il reste sur la Guadiana. Si [au] contraire lord Wellington rappelle &agrave; lui le g&eacute;n&eacute;ral Hill, alors le comte d&rsquo;Er{lon} doit se porter sur Miravete et venir pas[ser] le Tage au pont de l&rsquo;Arzobispo, pour co[u]vrir Madrid ou pour se porter sur le flan[c] droi{t} de l&rsquo;arm&eacute;e anglaise, suivant les circonstances. Le passage du pont de l&rsquo;Arzobispo <i>es dif&iacute;cil</i> pour l&rsquo;artillerie, mais il n&rsquo;est pas impraticable. Le g&eacute;n&eacute;ral d&rsquo;Er{lon} devroit me[ner] avec lui le moins <i>el equipaje posible. Es muy importante que este general se ponga en correspondencia</i> avec le g&eacute;n&eacute;ral Treillar[d], qui va commander dans la vall&eacute;e du Tage.
 </blockquote>
 <blockquote>
@@ -109,13 +109,13 @@ You will feel, Monsieur le Mar&eacute;chal, that in this situation you must rein
 
 <h2 id="marmont"><span class="num">05</span> Marmont to Jourdan</h2>
 <p>Marmont&rsquo;s letter of 1 June, from Salamanca, is in the same cipher, but the copy is poor: the Spanish copyist confused the forms of 1, wrote 3 for 9 and the reverse, and transposed figures. About 150 of its 176 numbers give a value (about 85%), and some 26 do not. The passages that build sentences, as Brice Dudout gives them, with a few words restored from the sense:</p>
-<blockquote lang="fr">
+<blockquote lang="fr" translate="no">
 &ldquo;C&rsquo;est qu&rsquo;il n&rsquo;y a qu&rsquo;une certitude absolue et des op&eacute;rations capitales commenc&eacute;es dans le Midi qui puissent l&rsquo;emporter sur les probabilit&eacute;s d&rsquo;une op&eacute;ration dans le Nord&rdquo;; &ldquo;J&rsquo;&eacute;cris it&eacute;rativement au g&eacute;n&eacute;ral Caffarelli&rdquo;; &ldquo;Il serait bien d&eacute;sirable que le g&eacute;n&eacute;ral Drouet suiv&icirc;t les mouvements du g&eacute;n&eacute;ral Hill&rdquo;; &ldquo;en pr&eacute;parant un mat&eacute;riel d&rsquo;artillerie &agrave; Talavera&rdquo;.
 </blockquote>
 <blockquote>
 &ldquo;It is that only an absolute certainty and capital operations begun in the South could outweigh the probabilities of an operation in the North&rdquo;; &ldquo;I write repeatedly to General Caffarelli&rdquo;; &ldquo;It would be most desirable that General Drouet should follow the movements of General Hill&rdquo;; &ldquo;by preparing artillery material at Talavera&rdquo;.
 </blockquote>
-<p>Wellington had this letter too. On 7 June 1812 he wrote that he had &ldquo;one intercepted letter from Marmont to Jourdan; which I am endeavoring to decipher&rdquo; (Gurwood, <em>Dispatches</em> IX). It is no. 28 of George Scovell&rsquo;s file of ciphers; his manuscript decipherment of it has never been printed, and Oman gives only a one-line summary. The line-by-line decoding of what this copy gives is under Full texts below; Brice Dudout&rsquo;s working notes on it are in <code>reading_N73_partial.md</code>.</p>
+<p>Wellington had this letter too. On 7 June 1812 he wrote that he had &ldquo;one intercepted letter from Marmont to Jourdan; which I am endeavoring to decipher&rdquo; (Gurwood, <em>Dispatches</em> IX). It is no. 28 of George Scovell&rsquo;s file of ciphers; his manuscript decipherment of it has never been printed, and Oman gives only a one-line summary. The line-by-line decoding of what this copy gives is under Full texts below; Brice Dudout&rsquo;s working notes on it are in <code translate="no">reading_N73_partial.md</code>.</p>
 
 <h2 id="history"><span class="num">06</span> The people and places</h2>
 <ul>
@@ -136,7 +136,7 @@ You will feel, Monsieur le Mar&eacute;chal, that in this situation you must rein
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>Jourdan to Soult, Madrid, 28 May 1812 (AHN DIVERSOS-COLECCIONES,134,N.34)</h3>
 <p>Eight weeks before the battle of Salamanca, Marshal Jourdan, King Joseph’s chief of staff, orders Soult to reinforce Count d’Erlon’s corps against General Hill, or to send it across the Tagus at the bridge of the Arzobispo if Wellington calls Hill back to him. The letter was intercepted: a contemporary Spanish translation survives in the Archivo Histórico Nacional, with the enciphered passages left as numbers, undeciphered. They read with the table of the 1812 Grand Chiffre.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marmont1812/transcription_N34.txt">transcription_N34.txt</a></p><pre># AHN, DIVERSOS-COLECCIONES,134,N.34 (PARES 3156392), images 2-3: Spanish translation of Jourdan to Soult, Madrid, 28 May 1812,
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marmont1812/transcription_N34.txt">transcription_N34.txt</a></p><pre translate="no"># AHN, DIVERSOS-COLECCIONES,134,N.34 (PARES 3156392), images 2-3: Spanish translation of Jourdan to Soult, Madrid, 28 May 1812,
 # the enciphered passages left as numbers. One row per manuscript line of numbers (labels C/D/E = the three cipher passages).
 # a|b = doubtful digit, first reading preferred. Transcription frozen (SHA-256 fab99409...) before the table cells were read.
 C1	186 112|122 866 13 168 1197 670 2 734
@@ -159,7 +159,7 @@ D12	1210 838 631 198 1120 306 564 159 20 354 809 1016 246
 D13	1178 398 525 989 132 71 741 981 372 339 361 186 920 531
 E1	339 186 246 303 711 521 752 238 188
 E2	773 390 238 530 752 773 663 90 112 1383</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marmont1812/decryption_N34.txt">decryption_N34.txt</a></p><pre># AHN, DIVERSOS-COLECCIONES,134,N.34 (PARES 3156392), images 2-3: Spanish translation of Jourdan to Soult, Madrid, 28 May 1812,
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marmont1812/decryption_N34.txt">decryption_N34.txt</a></p><pre translate="no"># AHN, DIVERSOS-COLECCIONES,134,N.34 (PARES 3156392), images 2-3: Spanish translation of Jourdan to Soult, Madrid, 28 May 1812,
 # the enciphered passages left as numbers. One row per manuscript line of numbers (labels C/D/E = the three cipher passages).
 # a|b = doubtful digit, first reading preferred. Transcription frozen (SHA-256 fab99409...) before the table cells were read.
 C1	186 112|122 866 13 168 1197 670 2 734
@@ -202,7 +202,7 @@ E1	339 186 246 303 711 521 752 238 188
 	avec · le · général · tre · J · L · la · R · qui
 E2	773 390 238 530 752 773 663 90 112 1383
 	va · commande · R · dans · la · va · le · E · du · le Tage</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marmont1812/reading.md">reading.md</a></p><pre># Jourdan to Soult, Madrid, 28 May 1812: established text (Spanish copy + French decipherment)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marmont1812/reading.md">reading.md</a></p><pre translate="no"># Jourdan to Soult, Madrid, 28 May 1812: established text (Spanish copy + French decipherment)
 
 Conventions: {x} = probable reading; [x] = restored from the sense; *italics* = plain text of the copy (contemporary Spanish translation); the deciphered passages are in French, the language of the original.
 
@@ -213,7 +213,7 @@ Conventions: {x} = probable reading; [x] = restored from the sense; *italics* = 
 Vous sentez, monsieur le maréchal, que dans cette circonstance vous deve[z] renf[or]cer le corps du comte d’Er{lon} autant que cela vous sera possible, afin de le me{tt}re en état de [ba]{tt}re le corps du général Hill s’il reste sur la Guadiana. Si [au] contraire lord Wellington rappelle à lui le général Hill, alors le comte d’Er{lon} doit se porter sur Miravete et venir pas[ser] le Tage au pont de l’Arzobispo, pour co[u]vrir Madrid ou pour se porter sur le flan[c] droi{t} de l’armée anglaise, suivant les circonstances. Le passage du pont de l’Arzobispo *es difícil* pour l’artillerie, mais il n’est pas impraticable. Le général d’Er{lon} devroit me[ner] avec lui le moins *el equipaje posible. Es muy importante que este general se ponga en correspondencia* avec le général Treillar[d], qui va commander dans la vallée du Tage.
 
 *Yo os pido recibáis con agrado mi consideración a vuestra persona. El Mariscal del Imperio, Jefe del E. M. de S. M. C. = Jourdan.* *[paraphe : Monsalud]*</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marmont1812/translation.md">translation.md</a></p><pre># English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marmont1812/translation.md">translation.md</a></p><pre translate="no"># English translation
 
 [Madrid, 28 May 1812. To Marshal the Duke of Dalmatia. Monsieur le Maréchal, the King has just received a letter from Marshal the Duke of Ragusa dated the 26th. This marshal states positively that Lord Wellington is north of the Tagus with his whole army, except Hill’s division. He takes it as certain that around the 8th the whole English army will have moved against him. Two divisions have already crossed the Douro, etc. He is continuing towards Zamora in order to support the army of Galicia, which was preparing to advance.] The Duke of Ragusa has recalled Foy’s division to him, so that there will remain in the Tagus valley only three battalions and about eight hundred horse of the Army of the Centre, under the orders of General Treillard.
 
@@ -224,7 +224,7 @@ You will feel, Monsieur le Maréchal, that in this situation you must reinforce 
 [I beg you to accept the assurance of my consideration. The Marshal of the Empire, chief of staff of His Catholic Majesty, Jourdan.]</pre></details>
 <h3>Marmont to Jourdan, Salamanca, 1 June 1812 (AHN DIVERSOS-COLECCIONES,134,N.73) <span class="st partial">read in part</span></h3>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense; the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marmont1812/transcription_N73.txt">transcription_N73.txt</a></p><pre># AHN, DIVERSOS-COLECCIONES,134,N.73 (PARES 3109832), images 2-3: copy of Marmont to Jourdan, Salamanca, 1 June 1812, with
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marmont1812/transcription_N73.txt">transcription_N73.txt</a></p><pre translate="no"># AHN, DIVERSOS-COLECCIONES,134,N.73 (PARES 3109832), images 2-3: copy of Marmont to Jourdan, Salamanca, 1 June 1812, with
 # enciphered passages (labels A/B). a|b = doubtful digit. Transcription frozen (SHA-256 ffb8b5a5...). Read only in part (about 85%).
 A1	866 229 839 718|748 507 2 513|113 372 20 235 13 1157 210 318|338 1064 314|334|354 1195 289 413 52 314 530 1036 909 98 188 432 397 521 827 674 398 285 349 891 598 934 343 895 249 1196 90 1064 530 212 142
 A2	821 289 44 874 226 761 20 972 1085 365 398 402 874 1015 1112 447 1186 971 192 344 502 770 110 249 264 4
@@ -235,7 +235,7 @@ B3	112 246 421 770 892 971
 B4	139 191 320 522 1054 361 1111
 B5	906|306 370 810 1127 320 1196 722 843 1322|1522 24 1178 1210 504 1279 142 1070
 B6	339 852 441 164 409 1345 436 258 810 1006 116 398 467 1134 162 495 843 498 1279 971 769 972 617 132 195 505 10 820</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marmont1812/decryption_N73.txt">decryption_N73.txt</a></p><pre># AHN, DIVERSOS-COLECCIONES,134,N.73 (PARES 3109832), images 2-3: copy of Marmont to Jourdan, Salamanca, 1 June 1812, with
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marmont1812/decryption_N73.txt">decryption_N73.txt</a></p><pre translate="no"># AHN, DIVERSOS-COLECCIONES,134,N.73 (PARES 3109832), images 2-3: copy of Marmont to Jourdan, Salamanca, 1 June 1812, with
 # enciphered passages (labels A/B). a|b = doubtful digit. Transcription frozen (SHA-256 ffb8b5a5...). Read only in part (about 85%).
 A1	866 229 839 718|748 507 2 513|113 372 20 235 13 1157 210 318|338 1064 314|334|354 1195 289 413 52 314 530 1036 909 98 188 432 397 521 827 674 398 285 349 891 598 934 343 895 249 1196 90 1064 530 212 142
 	C · est · haut · n/fro · y · a · qu&#x27;un/jusque · cer · ti · tu · de · absolu · et · des/parle · opère · es/réciproque/ca · poste · ta · les · commence · es · dans · avis · mis · di · qui · puis · sent · L · em · port · er · sur · le · pro · en · ju · Corsaire · tes · D · un · E · opère · dans · Nord · ;
@@ -255,7 +255,7 @@ B5	906|306 370 810 1127 320 1196 722 843 1322|1522 24 1178 1210 504 1279 142 107
 	en/pas · près · par · ans · T · un · ma · te · ∅/‹1522› · il · D · Artillerie · a · Talavera · ; · car
 B6	339 852 441 164 409 1345 436 258 810 1006 116 398 467 1134 162 495 843 498 1279 971 769 972 617 132 195 505 10 820
 	avec · sont · Infant · et · ses · Chevaux · mande · Artillerie · par · Slo · pu · er · to · sau · vis · car · te · a · Talavera · et · ainsi · C · ou · vr · ir · Madrid · . · ¶</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marmont1812/reading_N73_partial.md">reading_N73_partial.md</a></p><pre># n° 751 — lecture de travail C01 (Grand Chiffre de 1812, table SHD « B n° 30 », photos Bouchaudy)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marmont1812/reading_N73_partial.md">reading_N73_partial.md</a></p><pre translate="no"># n° 751 — lecture de travail C01 (Grand Chiffre de 1812, table SHD « B n° 30 », photos Bouchaudy)
 Transcription t751_v1.txt (SHA ffb8b5a5…), entrées lues entrees_751.tsv (+ 226 entrées de joseph-napoleon-site). {x} probable, ‹x› irrésolu, [x] par le sens (souvent : chiffre mal copié par le copiste espagnol).
 
 Contexte en clair : « La règle dont je ne me départirai pas est celle-ci. »
@@ -279,7 +279,7 @@ B6 : avec {son}(852) infanterie et ses chevaux ‹436› artillerie par [le]{100
 
 Bilan : ≈ 179 groupes ; ≈ 150 lus (≈ 83 %, dont ≈ 8 corrections par le sens d&#x27;erreurs de copie probables), ≈ 26 irrésolus.
 Facteurs limitants : (1) copie espagnole fautive (formes du 1 en ſ / ɤ, 3/9, chiffres transposés) ; (2) lecture des entrées sur les photos (pliures). Pas ≥ 95 %.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marmont1812/translation_N73_draft.md">translation_N73_draft.md</a></p><pre># Marmont to Jourdan, Salamanca, 1 June 1812 (AHN DIVERSOS-COLECCIONES,134,N.73): English translation of the working reading
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marmont1812/translation_N73_draft.md">translation_N73_draft.md</a></p><pre translate="no"># Marmont to Jourdan, Salamanca, 1 June 1812 (AHN DIVERSOS-COLECCIONES,134,N.73): English translation of the working reading
 
 DRAFT made at write-up (27 Oct 2026) from Brice Dudout&#x27;s French working notes `reading_N73_partial.md`; not part of the
 contributed text. Only the cipher passages and the clear phrases quoted around them in the notes are translated.
@@ -343,7 +343,7 @@ B6: with {his} infantry and his horses ‹…› artillery by [the] Puerto ‹�
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Manuscript images: Archivo Hist&oacute;rico Nacional (PARES); text and translation: Brice Dudout, CC BY 4.0</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="roell1809.html" rel="prev">&larr; Roell to Van Dedem 1809 1809</a><a href="jqa.html" rel="next">Adams at St Petersburg 1812 1812 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

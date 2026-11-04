@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-<div class="cipherstrip">X3252 60155 36660 044X1 45X45 X8806<br>84110 03862 12212 43127 30803 00290<br>key group 22244 &middot; 7 and X exchanged &middot; 109-figure cycle subtracted without carrying</div>
+<div class="cipherstrip" translate="no">X3252 60155 36660 044X1 45X45 X8806<br>84110 03862 12212 43127 30803 00290<br>key group 22244 &middot; 7 and X exchanged &middot; 109-figure cycle subtracted without carrying</div>
 <p class="kicker">Moscow broadcasts &rarr; intercepted in Japan &middot; additive weather ciphers &middot; 1938&ndash;1940 &middot; read from the Japanese decipherment</p>
 <h1>Soviet weather ciphers read in Tokyo, 1938&ndash;1940</h1>
 <p class="sub">Japanese Army reports show how the Soviet Union&rsquo;s enciphered weather broadcasts were read, generation after generation; the key tables of 1940 are transcribed here and check against the reports&rsquo; own examples.</p>
@@ -66,7 +66,7 @@
 </div>
 
 <h2 id="documents"><span class="num">01</span> The reports</h2>
-<p>The plain text under every cipher is the international synoptic report: groups of five figures for station, cloud, weather, wind, pressure and temperature. Every system subtracts or adds a key figure by figure without carrying. <code>key.tsv</code> holds every key of the reports.</p>
+<p>The plain text under every cipher is the international synoptic report: groups of five figures for station, cloud, weather, wind, pressure and temperature. Every system subtracts or adds a key figure by figure without carrying. <code translate="no">key.tsv</code> holds every key of the reports.</p>
 <ol>
 <li><b>August 1938, Far East.</b> Groups 1&harr;3 and 2&harr;5 exchanged, +3 on every figure (+4 on the station index). Read the same day, ten hours after it came into service. From September 1938 one additive group per broadcast group, changed every two to four weeks.</li>
 <li><b>February 1940, Far East.</b> Eleven symbols (0&ndash;9 and X); group 1 substituted and then used as running key for the line.</li>
@@ -75,7 +75,7 @@
 </ol>
 
 <h2 id="tables"><span class="num">02</span> The tables</h2>
-<p>Brice Dudout transcribed the four June&ndash;July 1940 tables cell by cell from the photographs (4 tables &times; 11 rows &times; 109 figures = 4,796 figures) and the two October grids, and froze them before any check. He then found the structure the Japanese had exploited: the eleven rows of each table are the same 109-figure cycle, shifted (<code>cycles_109.tsv</code>). Every station enciphered with another key yields another overlapping fragment, which is how the tables could be rebuilt from a few days of traffic. The October grids are the same thing condensed, one figure per key, the struck-out cell being the one duplicate of 110 keys for 109 positions.</p>
+<p>Brice Dudout transcribed the four June&ndash;July 1940 tables cell by cell from the photographs (4 tables &times; 11 rows &times; 109 figures = 4,796 figures) and the two October grids, and froze them before any check. He then found the structure the Japanese had exploited: the eleven rows of each table are the same 109-figure cycle, shifted (<code translate="no">cycles_109.tsv</code>). Every station enciphered with another key yields another overlapping fragment, which is how the tables could be rebuilt from a few days of traffic. The October grids are the same thing condensed, one figure per key, the struck-out cell being the one duplicate of 110 keys for 109 positions.</p>
 
 <h2 id="example"><span class="num">03</span> The worked example</h2>
 <figure class="creveal" data-src="reveal/moscowmeteo1940.json"></figure>
@@ -98,14 +98,14 @@
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>Moscow broadcast, two stations received 6 July 1940 04:00 JST (worked example) <span class="st found">not prose</span></h3>
 <p>Two Soviet synoptic weather observations (stations 841 and 933), deciphered with key 22244 and table 3 of the reconstructed Moscow tables; identical to the Japanese decipherment printed in the report.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/moscowmeteo1940/transcription.txt">transcription.txt</a></p><pre># Enciphered weather groups copied in the Japanese reports (the only Soviet cipher text in the file).
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/moscowmeteo1940/transcription.txt">transcription.txt</a></p><pre translate="no"># Enciphered weather groups copied in the Japanese reports (the only Soviet cipher text in the file).
 # JACAR C01004832600 image 4 (folio 1104): Moscow broadcast received 6 July 1940 04:00 Japan time, key group 22244.
 # Groups as printed: III CLCM | WWVhNL | DDFWN | BBBTT | UCHabb | RRjjj  (X = the cipher&#x27;s eleventh symbol)
 # station 1
 X3252 60155 36660 044X1 45X45 X8806
 # station 2
 298XX 82636 26413 4X8XX 91019 22664</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/moscowmeteo1940/decryption.txt">decryption.txt</a></p><pre># Decipherment of the groups in transcription.txt, recomputed with decode.py from the transcribed tables.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/moscowmeteo1940/decryption.txt">decryption.txt</a></p><pre translate="no"># Decipherment of the groups in transcription.txt, recomputed with decode.py from the transcribed tables.
 # Line 1 = cipher, line 2 = key figures (subtracted without carrying, after exchanging 7 and X), line 3 = clear.
 # 6 July 1940 04:00 JST = 5 July in Moscow (odd day) -&gt; table 3; key group 22244 -&gt; row 222, column 44.
 # station 1
@@ -116,7 +116,7 @@ X3252 60155 36660 044X1 45X45 X8806
 298XX 82636 26413 4X8XX 91019 22664
 36577 82946 28213 34659 51719 22364
 93300 00790 08200 13228 40300 00300</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/moscowmeteo1940/reading.md">reading.md</a></p><pre># Reading of the worked example of 6 July 1940 (JACAR C01004832600, image 4)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/moscowmeteo1940/reading.md">reading.md</a></p><pre translate="no"># Reading of the worked example of 6 July 1940 (JACAR C01004832600, image 4)
 
 The clear text is a weather report in the international synoptic code of the period
 (IIICLCM wwVhNh DDFWN PPPTT UCHapp RRjjj, as in Audric 2000 and in the Japanese 1938 annex). It is figures, not prose,
@@ -136,7 +136,7 @@ Station 2: 93300 00790 08200 13228 40300 00300
   PPP = 132 (1013.2 mb), TT = 28; U = 4, CH = 0, a = 3, pp = 00; RRjjj = 00300
 
 60 of 60 figures deciphered, all certain (the key figures drawn from the transcribed table equal those printed in the report).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/moscowmeteo1940/translation.md">translation.md</a></p><pre># Translation (sense of the worked example of 6 July 1940)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/moscowmeteo1940/translation.md">translation.md</a></p><pre translate="no"># Translation (sense of the worked example of 6 July 1940)
 
 Two Soviet weather observations broadcast from Moscow, received in Japan on 6 July 1940 at 04:00 (5 July in Moscow).
 
@@ -151,14 +151,14 @@ Code meanings follow the international synoptic code of 1929/1935 as summarised 
 of 1940 was not checked, and the station indexes are not identified (no Soviet station list of 1940 found online).</pre></details>
 <h3>Moscow type 17040, example of February 1940 <span class="st found">not prose</span></h3>
 <p>One Soviet synoptic observation (station 959), deciphered with the substitution and subtractors of type 17040; identical to the Japanese decipherment.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/moscowmeteo1940/transcription_17040.txt">transcription_17040.txt</a></p><pre># JACAR C01004816500 image 2: Moscow &quot;type 17040&quot;, February 1940 (example in the report, five groups).
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/moscowmeteo1940/transcription_17040.txt">transcription_17040.txt</a></p><pre translate="no"># JACAR C01004816500 image 2: Moscow &quot;type 17040&quot;, February 1940 (example in the report, five groups).
 40455 56145 12425 29112 30365</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/moscowmeteo1940/decryption_17040.txt">decryption_17040.txt</a></p><pre># JACAR C01004816500 image 2, Moscow type 17040 (Feb 1940): line 1 = cipher, line 2 = clear (recomputed with decode.py; the report prints 95900 01690 20203 3355[6] 85810, last figure blurred).
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/moscowmeteo1940/decryption_17040.txt">decryption_17040.txt</a></p><pre translate="no"># JACAR C01004816500 image 2, Moscow type 17040 (Feb 1940): line 1 = cipher, line 2 = clear (recomputed with decode.py; the report prints 95900 01690 20203 3355[6] 85810, last figure blurred).
 # type 17040 (Feb 1940): substitute the 5th figure of group 1 and the 1st figure of each later group, then subtract
 # from the other four figures the subtractor that goes with the cipher figure (table in key.tsv).
 40455 56145 12425 29112 30365
 95900 01690 20203 33556 85810</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/moscowmeteo1940/reading_17040.md">reading_17040.md</a></p><pre># Reading of the type 17040 example (JACAR C01004816500, image 2)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/moscowmeteo1940/reading_17040.md">reading_17040.md</a></p><pre translate="no"># Reading of the type 17040 example (JACAR C01004816500, image 2)
 
 95900 01690 20203 33556 85810, read with the international synoptic code (IIICLCM wwVhNh DDFWN PPPTT UCHapp):
 station 959, CL = 0, CM = 0; ww = 01, V = 6, h = 9, Nh = 0; DD = 20, F = 2, W = 0, N = 3;
@@ -166,7 +166,7 @@ PPP = 335 (1033.5 mb), TT = 56 (-6 degrees with the convention of adding 50 to n
 U = 8, CH = 5, a = 8, pp = 10.
 
 25 of 25 figures, all certain (the blurred last figure of group 4 is fixed by the decipherment as 6).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/moscowmeteo1940/translation_17040.md">translation_17040.md</a></p><pre># Translation (type 17040 example)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/moscowmeteo1940/translation_17040.md">translation_17040.md</a></p><pre translate="no"># Translation (type 17040 example)
 
 A Soviet weather observation from station 959, February 1940: no low or middle cloud, present weather code 01, wind direction
 code 20 force 2, total cloud code 3, pressure 1033.5 mb, temperature probably -6 degrees. Station not identified.</pre></details>
@@ -184,13 +184,13 @@ code 20 force 2, total cloud code 3, pressure 1033.5 mb, temperature probably -6
 <li>Brice Dudout, <a href="https://bdudout.github.io/europe-chiffree/en/meteo-urss-1940.html">his write-up</a> (site currently offline).</li>
 </ul>
 
-<p class="muted">Folder: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/moscowmeteo1940">targets/moscowmeteo1940/</a> (notes, the reports&rsquo; method passages with translations, the keys, the transcribed tables, the worked examples and <code>decode.py</code>, as contributed by Brice Dudout).</p>
+<p class="muted">Folder: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/moscowmeteo1940">targets/moscowmeteo1940/</a> (notes, the reports&rsquo; method passages with translations, the keys, the transcribed tables, the worked examples and <code translate="no">decode.py</code>, as contributed by Brice Dudout).</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; JACAR images not reproduced (all rights reserved); transcriptions and tests: Brice Dudout, CC BY 4.0</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="roosevelt.html" rel="prev">&larr; Roosevelt 1935</a><a href="orpo1942.html" rel="next">Police radiograms, Feb 1942 1942 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>
 </body>

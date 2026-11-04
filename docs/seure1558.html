@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip"><span class="ct">R &middot; 96 &middot; H# &middot; x2 &middot; q &middot; plus_b &middot; mtail &middot; hash_i &middot; hash_s</span><span class="pt">de portugal a permis</span><span class="kv">96 = portugal &middot; R = de &middot; 100, 12, 14 = nulls</span></div>
+  <div class="cipherstrip" translate="no"><span class="ct">R &middot; 96 &middot; H# &middot; x2 &middot; q &middot; plus_b &middot; mtail &middot; hash_i &middot; hash_s</span><span class="pt">de portugal a permis</span><span class="kv">96 = portugal &middot; R = de &middot; 100, 12, 14 = nulls</span></div>
   <p class="kicker">Lisbon &rarr; de Fresne and Henri II &middot; homophonic cipher with syllable and word signs &middot; December 1558 &middot; key recovered by Angus Robinson</p>
   <h1>Seure&rsquo;s letters from Lisbon, December 1558</h1>
 <div class="parties"><figure class="party recipient"><img src="portrait_henry-ii-2.jpg" alt="Henry II" title="Henry II: Portrait, Workshop of François Clouet. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Henry II</figcaption></figure></div><!-- /parties -->
@@ -82,19 +82,19 @@
 <figure data-credit="Biblioth&egrave;que nationale de France, fr. 3151 no. 44, Gallica btv1b9059865k view 87"><img src="seure1558_view87.jpg" alt="A page of Seure's letter: clear French at the top, then lines of invented symbols and numerals such as 12, 23 and 100" loading="lazy"><figcaption>No. 44, Gallica view 87: the clear text (&laquo;&nbsp;La flotte qui la portera pardela partira de Calis a ceste fin de Janvier&nbsp;&raquo;), then a cipher block. The numerals 12, 23, 14, 40 and 100 among the signs are nulls. <span class="credit">Image: Biblioth&egrave;que nationale de France, fr. 3151 no. 44, Gallica btv1b9059865k view 87.</span></figcaption></figure>
 
 <h2 id="cipher"><span class="num">02</span> The cipher</h2>
-<p>Robinson&rsquo;s key has 118 sign types. Many are letters of the secretary hand, Roman or Greek, used as cipher signs, which hid the system at first. His transcription labels name the shapes (<code>H#</code>, <code>3bar</code>, <code>Tarrow</code>, <code>beta</code>&hellip;); <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/KEY.svg">KEY.svg</a> draws each one.</p>
+<p>Robinson&rsquo;s key has 118 sign types. Many are letters of the secretary hand, Roman or Greek, used as cipher signs, which hid the system at first. His transcription labels name the shapes (<code translate="no">H#</code>, <code translate="no">3bar</code>, <code translate="no">Tarrow</code>, <code translate="no">beta</code>&hellip;); <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/KEY.svg">KEY.svg</a> draws each one.</p>
 <ul>
-<li><b>Letters:</b> 55 signs. Most letters have two or three homophones: <i>a</i> is <code>H#</code>, <code>o</code> or <code>ss</code>, and <i>e</i> is <code>3bar</code>, <code>ff</code> or <code>q</code>.</li>
+<li><b>Letters:</b> 55 signs. Most letters have two or three homophones: <i>a</i> is <code translate="no">H#</code>, <code translate="no">o</code> or <code translate="no">ss</code>, and <i>e</i> is <code translate="no">3bar</code>, <code translate="no">ff</code> or <code translate="no">q</code>.</li>
 <li><b>Syllables:</b> 18 signs for 16 values: au, ce, co, con/com, de, est, et (three signs), il, le, luy, moy, on, par/per, que, qui, si.</li>
-<li><b>Words:</b> 22 signs: argent, arme, castille, dict, dire, escuz, espaigne, faict, faire, la royne Marye, l&rsquo;empereur, mais, navires, nous, Perou, Portugal, pour, roy de Portugal, roy d&rsquo;Espaigne, sire, vostre, vous. A 23rd sign, <code>N10_4</code>, has no value.</li>
+<li><b>Words:</b> 22 signs: argent, arme, castille, dict, dire, escuz, espaigne, faict, faire, la royne Marye, l&rsquo;empereur, mais, navires, nous, Perou, Portugal, pour, roy de Portugal, roy d&rsquo;Espaigne, sire, vostre, vous. A 23rd sign, <code translate="no">N10_4</code>, has no value.</li>
 <li><b>Nulls:</b> 21 signs, among them the numerals 7, 12, 13, 14, 23, 30, 40 and 100. The survey of 21 September had taken these numerals for code groups. Nulls make up 499 of the 9,405 positions.</li>
-<li><b>Cancellation:</b> the sign <code>tri</code> voids the sign before it (49 positions).</li>
+<li><b>Cancellation:</b> the sign <code translate="no">tri</code> voids the sign before it (49 positions).</li>
 </ul>
 
 <h2 id="no39"><span class="num">03</span> No. 39, to de Fresne</h2>
 <figure class="creveal" data-src="reveal/seure1558.json"></figure>
 <figure data-credit="Biblioth&egrave;que nationale de France, fr. 3151 no. 39, Gallica btv1b9059865k view 72"><img src="seure1558_no39.jpg" alt="Nine lines of Seure's cipher signs, among them the numerals 14, 13, 30, 12 and 100" loading="lazy"><figcaption>No. 39, Gallica view 72: the end of the clear text, &laquo;&nbsp;a estimer selon la facon&nbsp;&raquo;, then the first nine rows of the cipher. The numerals are nulls. <span class="credit">Image: Biblioth&egrave;que nationale de France, fr. 3151 no. 39, Gallica btv1b9059865k view 72.</span></figcaption></figure>
-<p>The cipher passage of the letter to de Fresne is twenty rows. It opens on rumours of a withdrawal and asks for news of the outcome, &laquo;&nbsp;car nous commenceons a aprocher du temps&nbsp;&raquo;: Seure&rsquo;s two-year posting was nearly over. The rest asks de Fresne to help recover his unpaid allowances and to speak for him to the Cardinal. Seure says he is in debt and wants to leave. Only one of the 366 signifying positions is unread: the word sign <code>N10_4</code> in row 10, which Robinson proposes is <i>vostre</i>.</p>
+<p>The cipher passage of the letter to de Fresne is twenty rows. It opens on rumours of a withdrawal and asks for news of the outcome, &laquo;&nbsp;car nous commenceons a aprocher du temps&nbsp;&raquo;: Seure&rsquo;s two-year posting was nearly over. The rest asks de Fresne to help recover his unpaid allowances and to speak for him to the Cardinal. Seure says he is in debt and wants to leave. Only one of the 366 signifying positions is unread: the word sign <code translate="no">N10_4</code> in row 10, which Robinson proposes is <i>vostre</i>.</p>
 
 <h2 id="king"><span class="num">04</span> The letters to the king</h2>
 <p><b>12 December (nos. 41, 43, 44).</b> The Peru fleet has reached Seville with silver; Robinson&rsquo;s reading values it at about two million in gold and silver. More treasure was unloaded in the Azores, and the queen of Portugal has ordered it handed over to Philip&rsquo;s officers. She has also lent Philip money from the young king&rsquo;s treasury. Seure reports two French ships taken at Havana, the death of Don Diego de Azevedo and the naming of a new viceroy, and a spice fleet due to sail for Flanders. The money owed at the Medina fairs comes up as well: &laquo;&nbsp;ilz devoient huict cens mille escuz aux foires de Medina&nbsp;&raquo;. Of the three copies, no. 43 is the longest and the worst preserved. Its opening passage names a Portuguese, Anthoine Galean, and the death of Queen Mary (&laquo;&nbsp;le decez de la royne Marye&nbsp;&raquo;).</p>
@@ -113,17 +113,17 @@
 
 <h2 id="checks"><span class="num">06</span> Checks here</h2>
 <ul>
-<li><b>Counts.</b> The sign and output rows of <code>KEY_AND_DECRYPTION.txt</code> give 9,405 positions in 397 rows, as Robinson states. Of the 8,857 signifying positions, 8,819 carry a key value (99.6%). The other 38 are 28 unread signs and 10 read only from context.</li>
+<li><b>Counts.</b> The sign and output rows of <code translate="no">KEY_AND_DECRYPTION.txt</code> give 9,405 positions in 397 rows, as Robinson states. Of the 8,857 signifying positions, 8,819 carry a key value (99.6%). The other 38 are 28 unread signs and 10 read only from context.</li>
 <li><b>Language.</b> The project&rsquo;s language models put the decipherment of every letter first as sixteenth-century French (&minus;1.99 to &minus;2.13 per letter, ahead of modern French).</li>
 <li><b>Statistical test.</b> The test uses 9,367 read tokens and 121 types, scored with the 1530s French despatches model. The key&rsquo;s reading scores &minus;2.269 per letter. Random keys of the same shape score &minus;5.41 (z 13.0), and the best key annealed onto shuffled ciphertext scores &minus;3.65 (z 56). Verdict: pass.</li>
-<li><b>Images.</b> Rows 1&ndash;9 of no. 39 were compared with view 72. The nulls 14, 13, 30, 12 and 100 and the syllable sign <code>55</code> fall where his rows put them.</li>
+<li><b>Images.</b> Rows 1&ndash;9 of no. 39 were compared with view 72. The nulls 14, 13, 30, 12 and 100 and the syllable sign <code translate="no">55</code> fall where his rows put them.</li>
 <li><b>Three copies.</b> The three copies of the 12 December letter were enciphered separately, and they decipher to the same text under one key.</li>
 </ul>
 
 <h2 id="open"><span class="num">07</span> What remains open</h2>
 <ul>
-<li><code>N10_4</code>, once, no. 39 row 10: no value. Robinson proposes <i>vostre</i>, with Seure referring to himself (grade C).</li>
-<li><code>longs_x</code> = <i>escuz</i>: conjectural, one occurrence (grade C).</li>
+<li><code translate="no">N10_4</code>, once, no. 39 row 10: no value. Robinson proposes <i>vostre</i>, with Seure referring to himself (grade C).</li>
+<li><code translate="no">longs_x</code> = <i>escuz</i>: conjectural, one occurrence (grade C).</li>
 <li>27 damaged or unidentified signs, most of them in no. 43 on views 82&ndash;83, are left unread. Ten more are given values from context only, for example <i>[france]</i> and <i>[par]</i> (grade M).</li>
 <li>Robinson estimates that the clerk made at least 18 errors in the 9,405 positions; for example, a <i>p</i> sign is written for <i>g</i> five times.</li>
 <li>Printed sources for Seure&rsquo;s embassy have not been searched for these letters.</li>
@@ -135,7 +135,7 @@
 <h3>No. 39, Lisbon, 12 Dec 1558, to Florimond Robertet, sieur de Fresne <span class="st partial">read in part</span></h3>
 <p>Michel de Seure, Henri II&#x27;s ambassador in Portugal, to de Fresne (the address panel names the duc de Guise): one cipher passage of 20 rows. Key and decipherment by Angus Robinson (PR #40); continuous French and translation on his site.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (91% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no39_transcription.txt">no39_transcription.txt</a></p><pre># No. 39: rows copied from KEY_AND_DECRYPTION.txt (Angus Robinson, PR #40), split per letter on 22 Oct 2026. Sign labels as in his KEY section and KEY.svg; | separates signs.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no39_transcription.txt">no39_transcription.txt</a></p><pre translate="no"># No. 39: rows copied from KEY_AND_DECRYPTION.txt (Angus Robinson, PR #40), split per letter on 22 Oct 2026. Sign labels as in his KEY section and KEY.svg; | separates signs.
 ## 39 — No. 39
 
 https://angusrobinson.github.io/historical-decipherment/seure/decryption.html#39
@@ -163,7 +163,7 @@ https://gallica.bnf.fr/ark:/12148/btv1b9059865k/f72
 39--18	R|ii|z_3|plaintext_x|o|f|hash_s|cc|ff|z_y|Tarrow|hash_i|hash_s|3bar|eq|fvert|mm|q|s|vb|longs|inf3
 39--19	ff|4|o|sleigh|q|Tarrow|12|dA|ne|14|slashd|2stem|13|x2|lambda|ff|l_arrow|cc|f|R|7
 39--20	2stem|3bar|z_y|100|plus_a|z_J|Zbar|R|tri|z_J|12|ff|12|c3|o4|bolt|N|tri|e_mirror</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no39_decryption.txt">no39_decryption.txt</a></p><pre># No. 39: rows copied from KEY_AND_DECRYPTION.txt (Angus Robinson, PR #40), split per letter on 22 Oct 2026. His output line for each row joined, ∅ (no output) dropped; no spaces supplied, [...] unread, [text] contextual readings, as in his file. Continuous French with translation: https://angusrobinson.github.io/historical-decipherment/seure
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no39_decryption.txt">no39_decryption.txt</a></p><pre translate="no"># No. 39: rows copied from KEY_AND_DECRYPTION.txt (Angus Robinson, PR #40), split per letter on 22 Oct 2026. His output line for each row joined, ∅ (no output) dropped; no spaces supplied, [...] unread, [text] contextual readings, as in his file. Continuous French with translation: https://angusrobinson.github.io/historical-decipherment/seure
 ## 39 — No. 39
 
 https://angusrobinson.github.io/historical-decipherment/seure/decryption.html#39
@@ -191,7 +191,7 @@ https://gallica.bnf.fr/ark:/12148/btv1b9059865k/f72
 39--18	deuxansiesuisennecesit
 39--19	eetayeutoutpleinde
 39--20	tescest⌫este⌫</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no39_reading.md">no39_reading.md</a></p><pre># Seure no. 39, Lisbon 1558 (BnF fr. 3151): the reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no39_reading.md">no39_reading.md</a></p><pre translate="no"># Seure no. 39, Lisbon 1558 (BnF fr. 3151): the reading
 
 Written 23 Oct 2026 (verification 3): Angus Robinson&#x27;s French reading of the whole letter, copied from his edition
 &lt;https://angusrobinson.github.io/historical-decipherment/seure/readings.html&gt; (letter 39); he contributed the key and
@@ -246,7 +246,7 @@ serviteur et certain amy, Le chevalier de Seure.
 
 Monseigneur, Monseigneur le duc de Guise, Pair et Grand Chambellan de France. […] le Mareschal de Brissac, du
 [xxvj]me novembre 1558.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no39_en.md">no39_en.md</a></p><pre># Seure no. 39, Lisbon 1558: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no39_en.md">no39_en.md</a></p><pre translate="no"># Seure no. 39, Lisbon 1558: English translation
 
 Angus Robinson&#x27;s English, copied 23 Oct 2026 from his edition (letter 39); `&gt;` = enciphered in the manuscript.
 
@@ -297,7 +297,7 @@ faithful friend, the Chevalier de Seure.
 My lord, the Duke of Guise, Peer and Grand Chamberlain of France. […] the Maréchal de Brissac, [26] November 1558.</pre></details>
 <h3>No. 40, Lisbon, 27 Dec 1558, to Henri II</h3>
 <p>Seure to Henri II: opening, continuation and postscript in cipher, a different text from the 12 Dec letter; its enciphered passages have surviving clear copies (Robinson). The letters&#x27; themes are Spanish treasure from Peru and the Indies fleet, the money held at the Medina fairs, Queen Mary&#x27;s death and Philip II, the Portuguese court and Seure&#x27;s own debts.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no40_transcription.txt">no40_transcription.txt</a></p><pre># No. 40: rows copied from KEY_AND_DECRYPTION.txt (Angus Robinson, PR #40), split per letter on 22 Oct 2026. Sign labels as in his KEY section and KEY.svg; | separates signs.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no40_transcription.txt">no40_transcription.txt</a></p><pre translate="no"># No. 40: rows copied from KEY_AND_DECRYPTION.txt (Angus Robinson, PR #40), split per letter on 22 Oct 2026. Sign labels as in his KEY section and KEY.svg; | separates signs.
 ## 40O — No. 40, opening
 
 https://angusrobinson.github.io/historical-decipherment/seure/decryption.html#40O
@@ -377,7 +377,7 @@ https://gallica.bnf.fr/ark:/12148/btv1b9059865k/f75
 40R--10	E|ff|R|ttt|ss|plus_b|p|8_h|H#|mm|6_d|longs|vb|q|A|o|c_h|eqx|h|mw|perou_code|ee|ss|P|eqx|brace|dA|cc|ttx
 40R--11	H#|M|o|lambda|14|ss|hstem|ii|hash_i|eq|13|R|bolt|c_p|ff|100|cherries|Tarrow|23|ttx|longs|c3|q|plus_b|bow|bolt|P|tri|12
 40R--12	V|tri|12|ii|e_mirror|100</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no40_decryption.txt">no40_decryption.txt</a></p><pre># No. 40: rows copied from KEY_AND_DECRYPTION.txt (Angus Robinson, PR #40), split per letter on 22 Oct 2026. His output line for each row joined, ∅ (no output) dropped; no spaces supplied, [...] unread, [text] contextual readings, as in his file. Continuous French with translation: https://angusrobinson.github.io/historical-decipherment/seure
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no40_decryption.txt">no40_decryption.txt</a></p><pre translate="no"># No. 40: rows copied from KEY_AND_DECRYPTION.txt (Angus Robinson, PR #40), split per letter on 22 Oct 2026. His output line for each row joined, ∅ (no output) dropped; no spaces supplied, [...] unread, [text] contextual readings, as in his file. Continuous French with translation: https://angusrobinson.github.io/historical-decipherment/seure
 ## 40O — No. 40, opening
 
 https://angusrobinson.github.io/historical-decipherment/seure/decryption.html#40O
@@ -457,7 +457,7 @@ https://gallica.bnf.fr/ark:/12148/btv1b9059865k/f75
 40R--10	gedemarchandisepourallerauperoulaquelepartir
 40R--11	aalafindefeburier⌫
 40R--12	⌫</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no40_reading.md">no40_reading.md</a></p><pre># Seure no. 40, Lisbon 1558 (BnF fr. 3151): the reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no40_reading.md">no40_reading.md</a></p><pre translate="no"># Seure no. 40, Lisbon 1558 (BnF fr. 3151): the reading
 
 Written 23 Oct 2026 (verification 3): Angus Robinson&#x27;s French reading of the whole letter, copied from his edition
 &lt;https://angusrobinson.github.io/historical-decipherment/seure/readings.html&gt; (letter 40); he contributed the key and
@@ -546,7 +546,7 @@ chargee de marchandise[s] pour aller au Perou laquelle partira à la fin de febv
 
 Monsieur, Monsieur du Fresne conseiller du Roy et secretaire de ses finances. Chevalier de Seure, du xxvijme
 decembre 1558.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no40_en.md">no40_en.md</a></p><pre># Seure no. 40, Lisbon 1558: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no40_en.md">no40_en.md</a></p><pre translate="no"># Seure no. 40, Lisbon 1558: English translation
 
 Angus Robinson&#x27;s English, copied 23 Oct 2026 from his edition (letter 40); `&gt;` = enciphered in the manuscript.
 
@@ -632,7 +632,7 @@ Sir, Monsieur du Fresne, Councillor to the king and secretary of his finances. C
 1558.</pre></details>
 <h3>No. 41, Lisbon, 12 Dec 1558, to Henri II</h3>
 <p>Seure to Henri II, one of three copies (nos. 41, 43, 44) of the same letter of 12 Dec 1558: its three passages carry the same text as no. 44&#x27;s A, B and C (Spanish treasure, the Medina fairs, &#x27;huict cens mille escuz&#x27;, Queen Mary&#x27;s death and Philip II).</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no41_transcription.txt">no41_transcription.txt</a></p><pre># No. 41: rows copied from KEY_AND_DECRYPTION.txt (Angus Robinson, PR #40), split per letter on 22 Oct 2026. Sign labels as in his KEY section and KEY.svg; | separates signs.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no41_transcription.txt">no41_transcription.txt</a></p><pre translate="no"># No. 41: rows copied from KEY_AND_DECRYPTION.txt (Angus Robinson, PR #40), split per letter on 22 Oct 2026. Sign labels as in his KEY section and KEY.svg; | separates signs.
 ## 41a — No. 41, main cipher
 
 https://angusrobinson.github.io/historical-decipherment/seure/decryption.html#41a
@@ -738,7 +738,7 @@ https://gallica.bnf.fr/ark:/12148/btv1b9059865k/f78
 41d-41-78R-28	N|z_J|Hp|cc|q|f|2stem|brace|z_y|ne|eq|h|8_o|inf2|tri|sleigh|mw|mtail|3bar|ff_curl|H#|ee|o|c_p|hash_i|mm|longs|ff|qtail|ss|inf2|beta
 41d-41-78R-29	cherries|cc|q|f|plus_b|3bar|plus_c|ne|eq|vb|dA|ttx|ff|eqx|2stem|ne|h|inf3|P|H#|Tarrow|ne|hash_i|dA|hash_s|8_o|f|y|eq|o|z_3|longs
 41d-41-78R-30	h|q|P|100|c_h|eqx|M|eqx|z_y|o|e_mirror|R|7|lambda|ss|l_arrow|cc|o4|vb|23|3bar|N|tri|n|40|fvert|14|12|Zbar</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no41_decryption.txt">no41_decryption.txt</a></p><pre># No. 41: rows copied from KEY_AND_DECRYPTION.txt (Angus Robinson, PR #40), split per letter on 22 Oct 2026. His output line for each row joined, ∅ (no output) dropped; no spaces supplied, [...] unread, [text] contextual readings, as in his file. Continuous French with translation: https://angusrobinson.github.io/historical-decipherment/seure
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no41_decryption.txt">no41_decryption.txt</a></p><pre translate="no"># No. 41: rows copied from KEY_AND_DECRYPTION.txt (Angus Robinson, PR #40), split per letter on 22 Oct 2026. His output line for each row joined, ∅ (no output) dropped; no spaces supplied, [...] unread, [text] contextual readings, as in his file. Continuous French with translation: https://angusrobinson.github.io/historical-decipherment/seure
 ## 41a — No. 41, main cipher
 
 https://angusrobinson.github.io/historical-decipherment/seure/decryption.html#41a
@@ -844,7 +844,7 @@ https://gallica.bnf.fr/ark:/12148/btv1b9059865k/f78
 41d-41-78R-28	quiestoientparsonro⌫yaumemaisalafinieluyaysi
 41d-41-78R-29	bienremonstreletortqueauoitsondictnaui
 41d-41-78R-30	requellelesadelaise⌫z</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no41_reading.md">no41_reading.md</a></p><pre># Seure no. 41, Lisbon 1558 (BnF fr. 3151): the reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no41_reading.md">no41_reading.md</a></p><pre translate="no"># Seure no. 41, Lisbon 1558 (BnF fr. 3151): the reading
 
 Written 23 Oct 2026 (verification 3): Angus Robinson&#x27;s French reading of the whole letter, copied from his edition
 &lt;https://angusrobinson.github.io/historical-decipherment/seure/readings.html&gt; (letter 41); he contributed the key and
@@ -928,7 +928,7 @@ en parfaicte santé tresheureuse et treslongue vye. De Lisbonne le xijme jour de
 Vostre treshumble et tresobeissant subiect et serviteur, Le chevalier de Seure.
 
 Au Roy, Mon souverain Seigneur. Chevalier de Seure, du [xxvij]me decembre 1558. [R…] […].</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no41_en.md">no41_en.md</a></p><pre># Seure no. 41, Lisbon 1558: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no41_en.md">no41_en.md</a></p><pre translate="no"># Seure no. 41, Lisbon 1558: English translation
 
 Angus Robinson&#x27;s English, copied 23 Oct 2026 from his edition (letter 41); `&gt;` = enciphered in the manuscript.
 
@@ -1010,7 +1010,7 @@ To the king, my sovereign lord. Chevalier de Seure, [27] December 1558. […].</
 <h3>No. 43, Lisbon, 12 Dec 1558, to Henri II</h3>
 <p>The second copy of the 12 Dec letter: opening, a long continuation and a postscript that repeat no. 44&#x27;s text; most of the 27 damaged or unidentified signs of the set are on its views 82-83.</p>
 <p class="ftext">Transcription: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no43_transcription.txt">no43_transcription.txt</a></p>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no43_decryption.txt">no43_decryption.txt</a></p><pre># No. 43: rows copied from KEY_AND_DECRYPTION.txt (Angus Robinson, PR #40), split per letter on 22 Oct 2026. His output line for each row joined, ∅ (no output) dropped; no spaces supplied, [...] unread, [text] contextual readings, as in his file. Continuous French with translation: https://angusrobinson.github.io/historical-decipherment/seure
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no43_decryption.txt">no43_decryption.txt</a></p><pre translate="no"># No. 43: rows copied from KEY_AND_DECRYPTION.txt (Angus Robinson, PR #40), split per letter on 22 Oct 2026. His output line for each row joined, ∅ (no output) dropped; no spaces supplied, [...] unread, [text] contextual readings, as in his file. Continuous French with translation: https://angusrobinson.github.io/historical-decipherment/seure
 ## 43open — No. 43, opening
 
 https://angusrobinson.github.io/historical-decipherment/seure/decryption.html#43open
@@ -1205,7 +1205,7 @@ https://gallica.bnf.fr/ark:/12148/btv1b9059865k/f83
 43ps-43ps-16	queauoitsondictnauirequelle
 43ps-43ps-17	lesadel⌫ais⌫e
 43ps-43ps-18	⌫z⌫</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no43_reading.md">no43_reading.md</a></p><pre># Seure no. 43, Lisbon 1558 (BnF fr. 3151): the reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no43_reading.md">no43_reading.md</a></p><pre translate="no"># Seure no. 43, Lisbon 1558 (BnF fr. 3151): the reading
 
 Written 23 Oct 2026 (verification 3): Angus Robinson&#x27;s French reading of the whole letter, copied from his edition
 &lt;https://angusrobinson.github.io/historical-decipherment/seure/readings.html&gt; (letter 43); he contributed the key and
@@ -1294,7 +1294,7 @@ tresobeissant serviteur et subiect, Le chevalier de Seure.
 Fin.
 
 Au Roy.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no43_en.md">no43_en.md</a></p><pre># Seure no. 43, Lisbon 1558: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no43_en.md">no43_en.md</a></p><pre translate="no"># Seure no. 43, Lisbon 1558: English translation
 
 Angus Robinson&#x27;s English, copied 23 Oct 2026 from his edition (letter 43); `&gt;` = enciphered in the manuscript.
 
@@ -1379,7 +1379,7 @@ End.
 To the king.</pre></details>
 <h3>No. 44, Lisbon, 12 Dec 1558, to Henri II (&#x27;Dupplicata&#x27;)</h3>
 <p>The duplicate of the 12 Dec letter, sections A, B and C; a leaf inserted in the volume with three short deciphered paragraphs A-C overlapping these sections was Robinson&#x27;s crib.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no44_transcription.txt">no44_transcription.txt</a></p><pre># No. 44: rows copied from KEY_AND_DECRYPTION.txt (Angus Robinson, PR #40), split per letter on 22 Oct 2026. Sign labels as in his KEY section and KEY.svg; | separates signs.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no44_transcription.txt">no44_transcription.txt</a></p><pre translate="no"># No. 44: rows copied from KEY_AND_DECRYPTION.txt (Angus Robinson, PR #40), split per letter on 22 Oct 2026. Sign labels as in his KEY section and KEY.svg; | separates signs.
 ## 44A — No. 44, A
 
 https://angusrobinson.github.io/historical-decipherment/seure/decryption.html#44A
@@ -1487,7 +1487,7 @@ https://gallica.bnf.fr/ark:/12148/btv1b9059865k/f87
 44C-44C-11	dA|brace|hash_s|ne|mm|h|ne|sleigh|14|mw|plus_c|q|ff_curl|o|ee|H#|c_p|cc|f|hash_i|ff|qtail|ss|inf2|beta|a|longs|3bar|mm|7
 44C-44C-12	ttx|ff|mtail|8_o|f|z_y|inf3|plus_b|q|eqx|dA|Hp|ttx|2stem|P|o|Tarrow|7|ne|cc|inf3|vb|Hp|eq|y|f|H#|fvert|z_3
 44C-44C-13	longs|plus_b|3bar|P|c_h|eqx|M|eqx|hash_s|H#|R|e_mirror|ee|100|o|o4|hash_i|bow|z_y|l_arrow|q|40|n|R|tri|ii|13|30|12</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no44_decryption.txt">no44_decryption.txt</a></p><pre># No. 44: rows copied from KEY_AND_DECRYPTION.txt (Angus Robinson, PR #40), split per letter on 22 Oct 2026. His output line for each row joined, ∅ (no output) dropped; no spaces supplied, [...] unread, [text] contextual readings, as in his file. Continuous French with translation: https://angusrobinson.github.io/historical-decipherment/seure
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no44_decryption.txt">no44_decryption.txt</a></p><pre translate="no"># No. 44: rows copied from KEY_AND_DECRYPTION.txt (Angus Robinson, PR #40), split per letter on 22 Oct 2026. His output line for each row joined, ∅ (no output) dropped; no spaces supplied, [...] unread, [text] contextual readings, as in his file. Continuous French with translation: https://angusrobinson.github.io/historical-decipherment/seure
 ## 44A — No. 44, A
 
 https://angusrobinson.github.io/historical-decipherment/seure/decryption.html#44A
@@ -1595,7 +1595,7 @@ https://gallica.bnf.fr/ark:/12148/btv1b9059865k/f87
 44C-44C-11	tparsonroyaumemaisalafinieluyaysibien
 44C-44C-12	remonstreletortqueauoitsondictnau
 44C-44C-13	irequellelesadelaisez⌫</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no44_reading.md">no44_reading.md</a></p><pre># Seure no. 44, Lisbon 1558 (BnF fr. 3151): the reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no44_reading.md">no44_reading.md</a></p><pre translate="no"># Seure no. 44, Lisbon 1558 (BnF fr. 3151): the reading
 
 Written 23 Oct 2026 (verification 3): Angus Robinson&#x27;s French reading of the whole letter, copied from his edition
 &lt;https://angusrobinson.github.io/historical-decipherment/seure/readings.html&gt; (letter 44); he contributed the key and
@@ -1715,7 +1715,7 @@ estoient par son Royaume. Mais à la fin je luy ay si bien remonstré le tort qu
 relaschez.
 
 Au Roy, Mon souverain Seigneur. Chevalier de Seure, du xijme de decembre 1558. Dupplicata.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no44_en.md">no44_en.md</a></p><pre># Seure no. 44, Lisbon 1558: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/texts/no44_en.md">no44_en.md</a></p><pre translate="no"># Seure no. 44, Lisbon 1558: English translation
 
 Angus Robinson&#x27;s English, copied 23 Oct 2026 from his edition (letter 44); `&gt;` = enciphered in the manuscript.
 
@@ -1838,13 +1838,13 @@ To the king, my sovereign lord. Chevalier de Seure, 12 December 1558. Duplicate.
 <li>Angus Robinson, key and decipherment, <a href="https://github.com/dbourdeau/cyphersolver/pull/40">pull request #40</a> (16 October 2026): <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/SOLUTION.txt">SOLUTION.txt</a>, <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/KEY.svg">KEY.svg</a>, <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/seure1558/KEY_AND_DECRYPTION.txt">KEY_AND_DECRYPTION.txt</a>.</li>
 <li>Angus Robinson, <a href="https://angusrobinson.github.io/historical-decipherment/seure">De Seure, Lisbon, 1558</a>: walkthrough, readings and translations.</li>
 </ul>
-<p class="muted">Notes: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/seure1558">targets/seure1558/</a>. The survey was done in the joint entry, <code>targets/guiche1551/</code>, on 21 September 2026.</p>
+<p class="muted">Notes: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/seure1558">targets/seure1558/</a>. The survey was done in the joint entry, <code translate="no">targets/guiche1551/</code>, on 21 September 2026.</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Biblioth&egrave;que nationale de France / Gallica</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="noailles1558.html" rel="prev">&larr; Noailles 1558 1558</a><a href="throck1559.html" rel="next">Throckmorton 1559 1559 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

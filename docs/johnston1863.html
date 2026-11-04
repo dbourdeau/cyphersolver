@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">UNIEK &middot; CXNKVNED &middot; JJTRRK &middot; ISLX &middot; KFYHJEER<br>invade &middot; Kentucky &middot; extend &middot; East &middot; Tennessee<br>key MANCHE STERBLUF FMANCH ESTE RBLUFFMAN</div>
+  <div class="cipherstrip" translate="no">UNIEK &middot; CXNKVNED &middot; JJTRRK &middot; ISLX &middot; KFYHJEER<br>invade &middot; Kentucky &middot; extend &middot; East &middot; Tennessee<br>key MANCHE STERBLUF FMANCH ESTE RBLUFFMAN</div>
   <p class="kicker">Jackson, Mississippi &rarr; Richmond &middot; Vigen&egrave;re, key MANCHESTERBLUFF &middot; 16 June 1863 &middot; decipherment of 1863 filed with it</p>
   <h1>Johnston to Seddon, Jackson, 16 June 1863: five words in the Confederate Vigen&egrave;re</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_joseph-e-johnston.jpg" alt="Joseph E. Johnston" title="Joseph E. Johnston: Photograph, c. 1861-65, National Archives. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Joseph E. Johnston</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_james-a-seddon.jpg" alt="James A. Seddon" title="James A. Seddon: Photograph, c. 1861-65, National Archives 111-BA-1224. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>James A. Seddon</figcaption></figure></div><!-- /parties -->
@@ -95,7 +95,7 @@
 </tbody>
 </table>
 <p>The key was not assumed. Subtracting the 1863 words from the cipher letter by letter gives the key stream MANEH | STARBLUF | FMANEH | ESTE | RBLUFMAN, which is MANCHESTERBLUFF read straight through with the slips. Both places where the key letter is C were enciphered with E, so the clerk&rsquo;s copy of the key, or his reading of it, had E for C: one systematic slip, not two.</p>
-<p>Controls (<code>check.py</code>): COMPLETEVICTORY matches 1 position of 33 and COMERETRIBUTION 3; 20,000 random 15-letter keys average 1.2, best 11; the fourteen wrong starting points of the right key give 0&ndash;4. Every other decryption is gibberish.</p>
+<p>Controls (<code translate="no">check.py</code>): COMPLETEVICTORY matches 1 position of 33 and COMERETRIBUTION 3; 20,000 random 15-letter keys average 1.2, best 11; the fourteen wrong starting points of the right key give 0&ndash;4. Every other decryption is gibberish.</p>
 
 <h2 id="reading"><span class="num">04</span> What it says</h2>
 <blockquote><p>General Bragg informs me that a telegram from Louisville of the 10th says that part of the 9th, 23d Corps have been sent to reinforce Grant. Will not this enable us to INVADE KENTUCKY? For this General Bragg &amp; should EXTEND over EAST TENNESSEE. J. E. Johnston, General.</p></blockquote>
@@ -113,7 +113,7 @@
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>Johnston to Seddon, Jackson, 16 Jun 1863</h3>
 <p>During the siege of Vicksburg, Johnston passes on Bragg&#x27;s news that part of the Union 9th and 23d Corps has been sent to reinforce Grant (a telegram from Louisville), and asks Seddon whether this does not allow an invasion of Kentucky, for which Bragg&#x27;s command should extend over East Tennessee. The words &#x27;invade Kentucky&#x27;, &#x27;extend&#x27; and &#x27;East Tennessee&#x27; were enciphered.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/johnston1863/transcription.txt">transcription.txt</a></p><pre># Johnston to Seddon, Jackson, 16 June 1863: the telegram as written (NARA naId 3854726, image 1)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/johnston1863/transcription.txt">transcription.txt</a></p><pre translate="no"># Johnston to Seddon, Jackson, 16 June 1863: the telegram as written (NARA naId 3854726, image 1)
 # https://catalog.archives.gov/id/3854726  (images 1-3; image 3 is the &quot;Translation of Cypher&quot;)
 # Clear text as written, line by line. The five cipher words are in capitals, as on the leaf.
 # [?] = uncertain reading. The cipher letters were read on the native page image of the NARA PDF (2510 x 2400 px).
@@ -143,7 +143,7 @@ UNIEK CXNKVNED JJTRRK ISLX KFYHJEER
 # ISLX     third letter is a script capital L (bottom loop, top stroke to the right), not D: the catalogue&#x27;s &quot;ISDX&quot; is a misreading.
 # KFYHJEER second letter is a crossed &quot;7&quot; form, a script F; a script T is possible but less likely (T fails under the key).
 # UNIEK    fourth letter is E-like with a top hook; a hasty C cannot be excluded [?] (C would match the key).</pre></details>
-<details class="ftext"><summary>Decipherment of the time</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/johnston1863/contemporary_leaf3.txt">contemporary_leaf3.txt</a></p><pre># &quot;Translation of Cypher&quot;: the decipherment of the time, NARA naId 3854726, image 3 (Confederate War Department, 1863)
+<details class="ftext"><summary>Decipherment of the time</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/johnston1863/contemporary_leaf3.txt">contemporary_leaf3.txt</a></p><pre translate="no"># &quot;Translation of Cypher&quot;: the decipherment of the time, NARA naId 3854726, image 3 (Confederate War Department, 1863)
 # https://catalog.archives.gov/id/3854726  (object 18859_2008_003_a.jpg)
 # Transcribed line by line. Underlined words (the five cipher words) are in capitals here.
 
@@ -155,7 +155,7 @@ EXTEND over EAST TENNESSEE
 
 x words underscored }
   in Cypher         }</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/johnston1863/decryption.txt">decryption.txt</a></p><pre># Johnston to Seddon, 16 June 1863: decryption line by line against transcription.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/johnston1863/decryption.txt">decryption.txt</a></p><pre translate="no"># Johnston to Seddon, 16 June 1863: decryption line by line against transcription.txt
 # Key MANCHESTERBLUFF, Vigenere (tabula recta), running across the cipher words only, advancing by plaintext length.
 # Columns: cipher word as written | key letters | written deciphered | plaintext (image 3) | what differs
 # python check.py reproduces every column (check_output.txt).
@@ -181,7 +181,7 @@ The telegram with the cipher words in place (cipher words in capitals):
   Genl Bragg[s?] informs me that a Telegram from Louisville of the 10th says that Part of the 9th 23d Corps&#x27; have
   been sent to reinforce Grant. will not this enable us to INVADE KENTUCKY. for this Genl Bragg &amp; should EXTEND
   Over EAST TENNESSEE. J E Johnston Genl</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/johnston1863/reading.md">reading.md</a></p><pre># Johnston to Seddon, Jackson, 16 June 1863: the telegram as sentences
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/johnston1863/reading.md">reading.md</a></p><pre translate="no"># Johnston to Seddon, Jackson, 16 June 1863: the telegram as sentences
 
 Words that were in cipher are in capitals. The telegram is in English, so no translation is given. Notes on &quot;9th, 23d&quot;
 and on the sign after &quot;Bragg&quot; are in NOTES.md.
@@ -204,13 +204,13 @@ J. E. Johnston, General.</pre></details>
 <li><em>Correspondence between the President and General Joseph E. Johnston, together with that of the Secretary of War and the Adjutant and Inspector General, during the months of May, June and July, 1863</em> (Richmond: R. M. Smith, 1864), <a href="https://archive.org/details/correspondencebe00conf" rel="noopener">archive.org</a>.</li>
 <li><em>The War of the Rebellion: Official Records of the Union and Confederate Armies</em>, Series I, vol. 24, part 1 (1889), p. 196 (letter to Bragg, 17 June 1863) and p. 227 (the telegram), <a href="https://archive.org/details/warofrebellion241unit" rel="noopener">archive.org</a>.</li>
 </ul>
-<p class="muted">Files: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/johnston1863">targets/johnston1863/</a> (notes, transcription, the 1863 leaf, key, <code>check.py</code> with its output). Contributed by WAINUT in pull request #100; reviewed for the site on 27 October 2026.</p>
+<p class="muted">Files: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/johnston1863">targets/johnston1863/</a> (notes, transcription, the 1863 leaf, key, <code translate="no">check.py</code> with its output). Contributed by WAINUT in pull request #100; reviewed for the site on 27 October 2026.</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; National Archives (NARA), RG 109, War Department Collection of Confederate Records, via the National Archives Catalog</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="milroy.html" rel="prev">&larr; Milroy telegrams 1861&ndash;62 1861&ndash;62</a><a href="augur1874.html" rel="next">Augur&rsquo;s Texas cipher telegrams 1874 1874 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

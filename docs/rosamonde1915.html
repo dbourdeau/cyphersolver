@@ -32,7 +32,7 @@
     <div class="shint"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> move</span><span><kbd>&crarr;</kbd> open</span><span><kbd>Esc</kbd> close</span><span class="sn" id="sn"></span></div>
   </div>
 </div>
-<section class="hero"><div class="cipherstrip">heaitolloi &middot; coohavbhea &middot; tenocrszqu<br>you&hellip; &middot; seeyungyou &middot; lovesick&hellip;<br>hea = you &middot; teno = love &middot; a&harr;u &middot; e&harr;o &middot; d, p unchanged</div><p class="kicker">Tokyo &harr; Shanghai &middot; reciprocal letter substitution &middot; 1915&ndash;1916 &middot; contributed</p><h1>The Rosamonde telegrams</h1>
+<section class="hero"><div class="cipherstrip" translate="no">heaitolloi &middot; coohavbhea &middot; tenocrszqu<br>you&hellip; &middot; seeyungyou &middot; lovesick&hellip;<br>hea = you &middot; teno = love &middot; a&harr;u &middot; e&harr;o &middot; d, p unchanged</div><p class="kicker">Tokyo &harr; Shanghai &middot; reciprocal letter substitution &middot; 1915&ndash;1916 &middot; contributed</p><h1>The Rosamonde telegrams</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_sun-yat-sen.jpg" alt="Sun Yat-sen" title="Sun Yat-sen: Photograph, Shanghai, 1922. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Sun Yat-sen</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_soong-ching-ling.jpg" alt="Soong Ching-ling" title="Soong Ching-ling: Photograph, Shanghai, 1920. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Soong Ching-ling</figcaption></figure></div><!-- /parties --><p class="sub">Twenty-two telegrams in enciphered English between Sun Yat-sen and Soong Ching-ling, copied by Japanese officials in 1915&ndash;16 and left untranslated, now deciphered by Brice Dudout from the cipher alone.</p><p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-20">20 October 2026</time> &middot; updated <time datetime="2026-10-27">27 October 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#ct">key recovered from ciphertext-only</a> &middot; Extent: partial</p><!-- /outcome -->
 <p class="credits">Contributed by <a href="contributors.html#dudout">Brice Dudout</a> (new cipher with solution, transcription)</p><!-- /credits --></section><main>
@@ -58,7 +58,7 @@
 <p style="font-family:ui-monospace,monospace;overflow-wrap:anywhere">a&harr;u &nbsp;b&harr;g &nbsp;c&harr;s &nbsp;e&harr;o &nbsp;f&harr;j &nbsp;h&harr;y &nbsp;i&harr;r &nbsp;k&harr;z &nbsp;l&harr;t &nbsp;m&harr;w &nbsp;n&harr;v &nbsp;q&harr;x &nbsp;&middot; d and p unchanged</p>
 <p><em>You</em> becomes <em>hea</em> and <em>love</em> becomes <em>teno</em>; several clear telegrams of March 1915 to Rosamonde are simply signed &ldquo;teno&rdquo;. Names, sums and reply addresses stay in clear, and so do a few words (<em>happy</em>, <em>Inuzuka</em>, <em>iron</em>, <em>trunk</em>). The last word stops at ten letters, which cuts <em>husba[nd]</em> twice in May 1916. On 6 March 1915 the form twice has <em>qq</em> where <em>pp</em> is expected; Brice renders it [pp] and leaves the table as it is.</p>
 <p><strong>How the key was recovered.</strong> On Brice&rsquo;s account the letter index of coincidence is 0.062, a natural language and not a code; <em>f</em> and <em>q</em> never occur and <em>hea</em> comes ten times. Simulated annealing over all substitutions, then over reciprocal ones only, scored with an English quadgram model, gave the key; the same search recovers an English control text enciphered with a random key. No crib or outside plaintext was used. The key taken from the 1915 telegrams alone then scores the 1916 forms, transcribed blind before the key was found, far above 2,000 random reciprocal tables (z = 7.5), and Brice&rsquo;s own blind re-transcription of 1915 likewise (z = 10.9). A telegram in another system stays at chance (z = 0.6). The forms were transcribed twice and independently, by Claude and then by Brice without seeing Claude&rsquo;s transcription; 89% of the letters agreed.</p>
-<p><strong>Checked here.</strong> The cipher words of three forms whose scans are in Brice&rsquo;s repository (20 and 26 February, 7 July 1915: 20 words, 200 letters) were transcribed again from the images and deciphered with the table unchanged. The result agrees with his edition letter for letter, including the letters he corrects and the unreadable <em>xa ins</em> of 7 July; the statistical test in <code>docs/_validate.py</code> passes on these 200 letters. Two small points: the scan gives <em>abon</em> (g, not p) in &ldquo;[u]pon&rdquo;, a second slip that his brackets leave out, and the cipher has &ldquo;for our soul are mingled&rdquo; where his edition prints &ldquo;souls&rdquo;.</p>
+<p><strong>Checked here.</strong> The cipher words of three forms whose scans are in Brice&rsquo;s repository (20 and 26 February, 7 July 1915: 20 words, 200 letters) were transcribed again from the images and deciphered with the table unchanged. The result agrees with his edition letter for letter, including the letters he corrects and the unreadable <em>xa ins</em> of 7 July; the statistical test in <code translate="no">docs/_validate.py</code> passes on these 200 letters. Two small points: the scan gives <em>abon</em> (g, not p) in &ldquo;[u]pon&rdquo;, a second slip that his brackets leave out, and the cipher has &ldquo;for our soul are mingled&rdquo; where his edition prints &ldquo;souls&rdquo;.</p>
 
 <h2 id="readings"><span class="num">03</span> The readings</h2>
 <p>The texts below are Brice Dudout&rsquo;s, quoted from his edition as he wrote them, telegraphic abbreviations included (<em>ye</em> for you, <em>Yoko</em> for Yokohama). <strong>Square brackets</strong> mark a letter the form gives differently or leaves out; he checked each against the images, and most are the clerk&rsquo;s cursive confusions (n for v, i for r, y for h, g for p), not errors of the key. <strong>&hellip;</strong> marks a passage that does not decipher. Unless noted, the sender is Sun Yat-sen and the recipient Soong Ching-ling.</p>
@@ -109,7 +109,7 @@
 <li>Unidentified: who stood behind the address &ldquo;Laisaosang&rdquo;, and Yung&rsquo;s Chinese name.</li>
 <li>Brice found the telegrams neither in the work on the 1916 intercepts nor in the studies of the marriage he checked (below); other works remain to be searched.</li>
 <li>This project checked three of the twenty-two forms against the scans; the other nineteen rest on his transcription.</li>
-<li>May 1916: Brice Dudout&rsquo;s blind transcriptions of the seven forms (made on 15 October 2026, before the key was known), the decryption word by word and the table of every emendation are in the repository folder (<code>dudout/</code>). The emendations fall into a few cursive pairs: <em>n/v</em> 23 times, <em>i/r</em> 18, <em>r/i</em> 7, <em>y/h</em> 6. That makes them copying confusions rather than guesses, but they are still 109 of 627 letters, so the telegrams stay decoded, not read, under the rule that a reading may rest on at most 3% of look-alike letters.</li>
+<li>May 1916: Brice Dudout&rsquo;s blind transcriptions of the seven forms (made on 15 October 2026, before the key was known), the decryption word by word and the table of every emendation are in the repository folder (<code translate="no">dudout/</code>). The emendations fall into a few cursive pairs: <em>n/v</em> 23 times, <em>i/r</em> 18, <em>r/i</em> 7, <em>y/h</em> 6. That makes them copying confusions rather than guesses, but they are still 109 of 627 letters, so the telegrams stay decoded, not read, under the rule that a reading may rest on at most 3% of look-alike letters.</li>
 </ul>
 
 <!-- texts:start -->
@@ -117,7 +117,7 @@
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>JACAR B03050087600, eleven telegrams, 17 Feb - 11 Mar 1915</h3>
 <p>Sun Yat-sen in Tokyo to Soong Ching-ling (&#x27;Laisaosang&#x27; / &#x27;Rosamonde&#x27;) in Shanghai, Japanese Communications Bureau copies: love telegrams, Yung the rival suitor, &#x27;Reply by cipher ... they can get our secrets by guessing&#x27;. Readings are Brice Dudout&#x27;s (contributed); only the 20 and 26 Feb forms were transcribed and re-deciphered here, his transcriptions of the others are not published.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rosamonde1915/ciphertext_checked.txt">ciphertext_checked.txt</a></p><pre># Cipher groups transcribed here from the three JACAR scans in Brice Dudout&#x27;s wenmi repository
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rosamonde1915/ciphertext_checked.txt">ciphertext_checked.txt</a></p><pre translate="no"># Cipher groups transcribed here from the three JACAR scans in Brice Dudout&#x27;s wenmi repository
 # (assets/img/rosamonde/). One telegram per block; cipher words only (addresses and clear signatures left out).
 # 20 Feb 1915, Tokyo -&gt; Rosamonde 628 E. Yuhang Road, JACAR B03050087600 image 45
 wacluvcmoi sugtolesya chocloiduh
@@ -125,7 +125,7 @@ wacluvcmoi sugtolesya chocloiduh
 myovonoiho coohavbhea rvjtrsller laiougevwo uvdlyoqurv mrttcaioth iouslevhea weiorvlovc jeieaiceat uiowrvbtod roleevohea suvlocsugo
 # 7 Jul 1915, Shanghai -&gt; Rosamonde Tokio, JACAR B03050087700 image 50
 tenocrszqu rvcleilaio gowoisrjat sewoeijioo wojeionoip</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rosamonde1915/texts/readings_dudout.md">readings_dudout.md</a></p><pre># The Rosamonde telegrams: Brice Dudout&#x27;s readings
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rosamonde1915/texts/readings_dudout.md">readings_dudout.md</a></p><pre translate="no"># The Rosamonde telegrams: Brice Dudout&#x27;s readings
 
 Copied 22 Oct 2026 verbatim from NOTES.md (&quot;The telegrams&quot;), which quotes his edition at &lt;https://bdudout.github.io/wenmi/en/rosamonde.html&gt; (CC BY 4.0). His cipher transcriptions of the forms are not published; the three checked here are in `ciphertext_checked.txt` and `texts/check_decryption.txt`.
 
@@ -161,7 +161,7 @@ deciphered.
 | 13 May 1916 | Tokyo → &quot;Junzaburo&quot;, Shanghai, form signed 中山 (Ching-ling → Sun, probable) | [Pl]ease tell [T]ai h[i]s w[i]fe com[in]g also. Rosamonde. Porthos. |
 
 Unless marked, 1915 Tokyo telegrams are Sun → Ching-ling and 1916 Shanghai/Nagasaki telegrams are Sun → Ching-ling.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rosamonde1915/texts/check_decryption.txt">check_decryption.txt</a></p><pre># Output of `python decipher.py` (ciphertext_checked.txt, the key unchanged), saved 22 Oct 2026: the three telegrams re-deciphered here from the scans.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rosamonde1915/texts/check_decryption.txt">check_decryption.txt</a></p><pre translate="no"># Output of `python decipher.py` (ciphertext_checked.txt, the key unchanged), saved 22 Oct 2026: the three telegrams re-deciphered here from the scans.
 # Cipher groups transcribed here from the three JACAR scans in Brice Dudout&#x27;s wenmi repository
 # (assets/img/rosamonde/). One telegram per block; cipher words only (addresses and clear signatures left out).
 # 20 Feb 1915, Tokyo -&gt; Rosamonde 628 E. Yuhang Road, JACAR B03050087600 image 45
@@ -172,7 +172,7 @@ wheneverye seeyungyou inflicttoi tureabonme andthexain willsurely reactonyou mor
 lovesickxa instorture bemerciful comeorfree meforeverp</pre></details>
 <h3>JACAR B03050087700, four telegrams, 12 Mar - 7 Jul 1915</h3>
 <p>Sun to Ching-ling about her return by the steamer Korea (12 and 15 Mar), &#x27;Are you forgot me?&#x27; (10 Jun), and Ching-ling&#x27;s &#x27;Lovesick ... in torture. Be merciful. Come or free me forever&#x27; (7 Jul). Brice Dudout&#x27;s readings; only the 7 Jul form was transcribed and re-deciphered here.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rosamonde1915/ciphertext_checked.txt">ciphertext_checked.txt</a></p><pre># Cipher groups transcribed here from the three JACAR scans in Brice Dudout&#x27;s wenmi repository
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rosamonde1915/ciphertext_checked.txt">ciphertext_checked.txt</a></p><pre translate="no"># Cipher groups transcribed here from the three JACAR scans in Brice Dudout&#x27;s wenmi repository
 # (assets/img/rosamonde/). One telegram per block; cipher words only (addresses and clear signatures left out).
 # 20 Feb 1915, Tokyo -&gt; Rosamonde 628 E. Yuhang Road, JACAR B03050087600 image 45
 wacluvcmoi sugtolesya chocloiduh
@@ -180,7 +180,7 @@ wacluvcmoi sugtolesya chocloiduh
 myovonoiho coohavbhea rvjtrsller laiougevwo uvdlyoqurv mrttcaioth iouslevhea weiorvlovc jeieaiceat uiowrvbtod roleevohea suvlocsugo
 # 7 Jul 1915, Shanghai -&gt; Rosamonde Tokio, JACAR B03050087700 image 50
 tenocrszqu rvcleilaio gowoisrjat sewoeijioo wojeionoip</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rosamonde1915/texts/readings_dudout.md">readings_dudout.md</a></p><pre># The Rosamonde telegrams: Brice Dudout&#x27;s readings
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rosamonde1915/texts/readings_dudout.md">readings_dudout.md</a></p><pre translate="no"># The Rosamonde telegrams: Brice Dudout&#x27;s readings
 
 Copied 22 Oct 2026 verbatim from NOTES.md (&quot;The telegrams&quot;), which quotes his edition at &lt;https://bdudout.github.io/wenmi/en/rosamonde.html&gt; (CC BY 4.0). His cipher transcriptions of the forms are not published; the three checked here are in `ciphertext_checked.txt` and `texts/check_decryption.txt`.
 
@@ -216,7 +216,7 @@ deciphered.
 | 13 May 1916 | Tokyo → &quot;Junzaburo&quot;, Shanghai, form signed 中山 (Ching-ling → Sun, probable) | [Pl]ease tell [T]ai h[i]s w[i]fe com[in]g also. Rosamonde. Porthos. |
 
 Unless marked, 1915 Tokyo telegrams are Sun → Ching-ling and 1916 Shanghai/Nagasaki telegrams are Sun → Ching-ling.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rosamonde1915/texts/check_decryption.txt">check_decryption.txt</a></p><pre># Output of `python decipher.py` (ciphertext_checked.txt, the key unchanged), saved 22 Oct 2026: the three telegrams re-deciphered here from the scans.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rosamonde1915/texts/check_decryption.txt">check_decryption.txt</a></p><pre translate="no"># Output of `python decipher.py` (ciphertext_checked.txt, the key unchanged), saved 22 Oct 2026: the three telegrams re-deciphered here from the scans.
 # Cipher groups transcribed here from the three JACAR scans in Brice Dudout&#x27;s wenmi repository
 # (assets/img/rosamonde/). One telegram per block; cipher words only (addresses and clear signatures left out).
 # 20 Feb 1915, Tokyo -&gt; Rosamonde 628 E. Yuhang Road, JACAR B03050087600 image 45
@@ -228,7 +228,7 @@ lovesickxa instorture bemerciful comeorfree meforeverp</pre></details>
 <h3>JACAR B03050089000, seven telegrams, 1 - 13 May 1916 <span class="st stuck">decoded, not read</span></h3>
 <p>Between Shanghai and &#x27;Rosamonde Tokio&#x27; after Sun&#x27;s return to China, May 1916: his safe landing in the French concession, Canton, and repeated orders to leave the iron trunk in Mr Inuzuka&#x27;s care. Brice Dudout&#x27;s readings; no cipher transcription of these forms is in the repository.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rosamonde1915/dudout/transcription.txt">transcription.txt</a></p><pre># Rosamonde telegrams of May 1916 (JACAR B03050089000): our transcriptions
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rosamonde1915/dudout/transcription.txt">transcription.txt</a></p><pre translate="no"># Rosamonde telegrams of May 1916 (JACAR B03050089000): our transcriptions
 # B1 = blind transcription by Brice Dudout from the forms, before the key was known (15 Oct 2026); R18 = his non-blind confirmation the same day
 
 ## ros01 | Nagasaki → Rosamonde, 1ᵉʳ mai
@@ -251,7 +251,7 @@ syungzirol ainlezieic velliaodid harasornol mejeiwoisu blocuczhea lesewogusz und
 
 ## ros08 | Tokyo → Junzaburo, 13 mai
 hloucolot turyicmijo sewinbutce rosamonde porthos</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rosamonde1915/dudout/decryption.txt">decryption.txt</a></p><pre># word by word: cipher word -&gt; the key (the involution a-u b-g c-s e-o f-j h-y i-r k-z l-t m-w n-v q-x, d and p fixed)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rosamonde1915/dudout/decryption.txt">decryption.txt</a></p><pre translate="no"># word by word: cipher word -&gt; the key (the involution a-u b-g c-s e-o f-j h-y i-r k-z l-t m-w n-v q-x, d and p fixed)
 
 ## ros01 | Nagasaki → Rosamonde, 1ᵉʳ mai
 inloncs -&gt; rvtevsc
@@ -332,7 +332,7 @@ turyicmijo -&gt; laihrswrfe
 sewinbutce -&gt; comrvgalso
 rosamonde -&gt; iecuwevdo
 porthos -&gt; peilyec</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rosamonde1915/texts/readings_dudout.md">readings_dudout.md</a></p><pre># The Rosamonde telegrams: Brice Dudout&#x27;s readings
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rosamonde1915/texts/readings_dudout.md">readings_dudout.md</a></p><pre translate="no"># The Rosamonde telegrams: Brice Dudout&#x27;s readings
 
 Copied 22 Oct 2026 verbatim from NOTES.md (&quot;The telegrams&quot;), which quotes his edition at &lt;https://bdudout.github.io/wenmi/en/rosamonde.html&gt; (CC BY 4.0). His cipher transcriptions of the forms are not published; the three checked here are in `ciphertext_checked.txt` and `texts/check_decryption.txt`.
 
@@ -368,7 +368,7 @@ deciphered.
 | 13 May 1916 | Tokyo → &quot;Junzaburo&quot;, Shanghai, form signed 中山 (Ching-ling → Sun, probable) | [Pl]ease tell [T]ai h[i]s w[i]fe com[in]g also. Rosamonde. Porthos. |
 
 Unless marked, 1915 Tokyo telegrams are Sun → Ching-ling and 1916 Shanghai/Nagasaki telegrams are Sun → Ching-ling.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rosamonde1915/dudout/reading.md">reading.md</a></p><pre># Rosamonde, May 1916: established text
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rosamonde1915/dudout/reading.md">reading.md</a></p><pre translate="no"># Rosamonde, May 1916: established text
 
 [x] = letter supplied where the key gives another letter (look-alike on the copy); see emendations.tsv.
 
@@ -419,7 +419,7 @@ Cha[ng] K[i] [r]etur[n] Tok[i]o [i]s not true. D[i]d y[o]u [re]ceive two former 
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Telegram images: JACAR, Diplomatic Archives of the Ministry of Foreign Affairs of Japan; readings &copy; Brice Dudout, CC BY 4.0</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="rubio1913.html" rel="prev">&larr; Rubio Navarrete 1913&ndash;14 1913&ndash;14</a><a href="sunyatsen.html" rel="next">Sun Yat-sen 1916 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

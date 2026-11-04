@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">ARTTN | FMXBW OIYSU OGILL YVHPO<br>An Strasse BOBRUISK&ndash;MOGILEW, Partisanenkampf &hellip;<br>Mogilev to Berlin, 16 June 1942</div>
+  <div class="cipherstrip" translate="no">ARTTN | FMXBW OIYSU OGILL YVHPO<br>An Strasse BOBRUISK&ndash;MOGILEW, Partisanenkampf &hellip;<br>Mogilev to Berlin, 16 June 1942</div>
   <p class="kicker">Mogilev &rarr; Berlin &middot; Doppelkastenschl&uuml;ssel, two boxes, two passes &middot; 16 June 1942 &middot; read from existing decipherment</p>
   <h1>The police radiogram of 16 June 1942: Bletchley&rsquo;s decrypt of the Borki report</h1>
   <p class="sub">An Order Police message from Mogilev whose plaintext survives as Bletchley&rsquo;s decrypt, the report of the destruction of Borki; the decrypt could not be matched letter by letter to the ciphertext, so the day&rsquo;s key was not recovered.</p>
@@ -86,7 +86,7 @@
 <p>The message is 228 letters in both intercepts and in the German preamble. Without the discriminator that leaves 223, but the cipher works on pairs and every enciphered text has an even length. The German clerk therefore added or dropped a letter, or a letter was lost in transmission. Where it went can be measured. A double-box cipher is deterministic on pairs, so a repeated plaintext pair in the same position of the layout gives a repeated cipher pair, and the pairs only show their repeats when they are counted from the right starting point. Counted from the end, A115 has 25 repeated digraphs of 19 types. Counted from the start it has 8, which is chance level. So the stray letter lies among the first nine or so, and the rest of the text pairs up normally.</p>
 
 <h2 id="align"><span class="num">04</span> Matching the decrypt to the cipher</h2>
-<p>A known-plaintext solver built for the February messages (<code>kpsolve.cs</code>) recovers the two boxes from about 80 plaintext&ndash;ciphertext pairs on synthetic controls (111 of 111 pairs consistent from random starts, 68 of 80 at 80 pairs). The decrypt of A115 should supply more than that, if the enciphered words can be placed under the cipher letters. Two aligners (<code>align115c.py</code>, <code>align115h.py</code>) tried to place them without any key: repeated cipher pairs must fall on repeated plaintext pairs, and the search backtracks exactly over spellings, X separators, numbers written out, address and signature placement, Borki / Mohilew / Bobruiisk variants, 222 or 224 letters, and line lengths 1&ndash;24.</p>
+<p>A known-plaintext solver built for the February messages (<code translate="no">kpsolve.cs</code>) recovers the two boxes from about 80 plaintext&ndash;ciphertext pairs on synthetic controls (111 of 111 pairs consistent from random starts, 68 of 80 at 80 pairs). The decrypt of A115 should supply more than that, if the enciphered words can be placed under the cipher letters. Two aligners (<code translate="no">align115c.py</code>, <code translate="no">align115h.py</code>) tried to place them without any key: repeated cipher pairs must fall on repeated plaintext pairs, and the search backtracks exactly over spellings, X separators, numbers written out, address and signature placement, Borki / Mohilew / Bobruiisk variants, 222 or 224 letters, and line lengths 1&ndash;24.</p>
 <p>No combination gives a consistent alignment. The same search recovers a synthetic text spelled in one of the ways it tries in 35 seconds, and A115&rsquo;s repeated cipher pairs are real (section 03). So either the words enciphered differ from Bletchley&rsquo;s typed text, through abbreviation, order or extra matter such as a longer address, or the police layout differs from both manuals. The reading of the message therefore rests on the decrypt alone; it is not confirmed letter by letter here, and the key of 16 June was not recovered.</p>
 
 <h2 id="open"><span class="num">05</span> What remains open</h2>
@@ -100,9 +100,9 @@
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>A115, SQF Mogilev to ALQ via DQH Berlin, 16 June 1942 (Bletchley Park&#x27;s decrypt)</h3>
 <p>An Ordnungspolizei radiogram of the Higher SS and Police Leader Russia Centre to Himmler and the Chief of the Order Police: in partisan fighting on the Bobruisk-Mogilev road 16 men of Police Battalion 51 fell; the village of Borki, where arms and ammunition were found, was razed and its inhabitants &#x27;liquidated&#x27;. Borki (Kirovsk district, Mogilev region) was destroyed with six neighbouring settlements on 15 June 1942.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/orpo1942jun/a115.txt">a115.txt</a></p><pre># A115, 16 Jun 1942, SQF Mogilev -&gt; ALQ via DQH; discriminator ARTTN removed (from ../orpo1942/msgs.txt, Weierud 2020)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/orpo1942jun/a115.txt">a115.txt</a></p><pre translate="no"># A115, 16 Jun 1942, SQF Mogilev -&gt; ALQ via DQH; discriminator ARTTN removed (from ../orpo1942/msgs.txt, Weierud 2020)
 FMXBW OIYSU OGILL YVHPO HKALE XSALS SFITT EDSPG HGCGP VHTVL LMCIA LWTIF FMRSG HFDAT VTDRV SPTVR VSYSE FYABL SCKQU ECCZR EQUOT TGTOA VWYAB NOMMY AXBTI TUVHQ BIDKO HVQWU ZVXVQ RORAE XQETV GIEOX KCDDA DRCLL NTZHN BEVRU XEDGA EFYVV PDBZA VXRPV QXSLW BCWYK NZKVV HNUOL PLI</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/orpo1942jun/texts/A115_decryption.md">A115_decryption.md</a></p><pre># A115, 16 June 1942: Bletchley Park&#x27;s decrypt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/orpo1942jun/texts/A115_decryption.md">A115_decryption.md</a></p><pre translate="no"># A115, 16 June 1942: Bletchley Park&#x27;s decrypt
 
 Copied verbatim from NOTES.md, 22 Oct 2026. The decrypt itself is the typed sheet hsspf_decrypt_1.png (NARA RG 457, reproduced by Hanyok 2005).
 
@@ -110,7 +110,7 @@ Bletchley&#x27;s decrypt, entry 21 of the day&#x27;s German police decrypts, typ
 reproduced in Hanyok, *Eavesdropping on Hell*, NSA 2005): &quot;An Rf SS und Chef Orpo. An Strasse BOBRUISK-MOGILEW,
 Partisanenkampf: 16 Mann von Pol. Batl. 51 gefallen. Das Dorf BORKI, in dem Waffen und Munition gefunden wurden,
 wurde dem Erdboden gleichgemacht. Die Einwohnerschaft liquidiert. Von Höheren SS und Pol.führer Russland Mitte.&quot;</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/orpo1942jun/texts/A115_en.md">A115_en.md</a></p><pre># A115, 16 June 1942: Bletchley Park&#x27;s decrypt: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/orpo1942jun/texts/A115_en.md">A115_en.md</a></p><pre translate="no"># A115, 16 June 1942: Bletchley Park&#x27;s decrypt: English translation
 
 Translation (Claude Opus 5.5, 23 Oct 2026) of the German text of Bletchley Park&#x27;s decrypt quoted in
 `texts/A115_decryption.md` (entry 21 of the day&#x27;s German police decrypts). No holes. &quot;Rf SS&quot; is Reichsführer-SS
@@ -132,7 +132,7 @@ inhabitants liquidated. From the Higher SS and Police Leader Russia Centre.</pre
 <li>Klaus Schmeh, &ldquo;Can you solve these double-box messages from WW2?&rdquo;, Cipherbrain, 30 August 2020.</li>
 <li>On Borki: <a href="https://military.wikireading.ru/62640">Zhukov, <em>Okhotniki za partizanami. Brigada Dirlevangera</em></a>; the Mogilev regional executive committee; partizany.by.</li>
 </ul>
-<p class="muted">The A115 ciphertext (<code>a115.txt</code>), the aligners and the decrypt image are in the repository folder <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/orpo1942jun"><code>targets/orpo1942jun/</code></a>; the shared tools (<code>dk.py</code>, <code>kpsolve.cs</code>, <code>msgs.txt</code>) are in <code>targets/orpo1942/</code>.</p>
+<p class="muted">The A115 ciphertext (<code translate="no">a115.txt</code>), the aligners and the decrypt image are in the repository folder <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/orpo1942jun"><code translate="no">targets/orpo1942jun/</code></a>; the shared tools (<code translate="no">dk.py</code>, <code translate="no">kpsolve.cs</code>, <code translate="no">msgs.txt</code>) are in <code translate="no">targets/orpo1942/</code>.</p>
 
 </main>
 <footer><div class="in">

@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">43 ne ri 4 so il lo m 42 e 34 e ma ro<br>no desist&aacute;is por ning&uacute;n caso<br>ne = de &middot; ri = si &middot; so = ta &middot; lo = po &middot; ma = ca &middot; 42 = ni</div>
+  <div class="cipherstrip" translate="no">43 ne ri 4 so il lo m 42 e 34 e ma ro<br>no desist&aacute;is por ning&uacute;n caso<br>ne = de &middot; ri = si &middot; so = ta &middot; lo = po &middot; ma = ca &middot; 42 = ni</div>
   <p class="kicker">Madrid &rarr; Cardinal Albornoz in Rome &middot; syllabic cipher with numbered series &middot; 24 July 1648 &middot; key from external plaintext</p>
   <h1>Philip IV to Cardinal Albornoz, Madrid, 24 July 1648</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_philip-iv.jpg" alt="Philip IV" title="Philip IV: Portrait by Diego Velázquez, Fraga, 1644 (Frick Collection, New York). Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Philip IV</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_cardinal-gil-de-albornoz.jpg" alt="Cardinal Gil de Albornoz" title="Cardinal Gil de Albornoz: Print dated to his creation as cardinal, 30 August 1627, unknown artist. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Cardinal Gil de Albornoz</figcaption></figure></div><!-- /parties -->
@@ -85,7 +85,7 @@
 <tr><td>single letters</td><td>letters and small numbers</td><td>2 = n, e = n, n = s, m = r, r = a, 23 = o, 6 = t, 12 = d, 18 = l, x = e, g = y (also p), 4 = s or a comma</td></tr>
 <tr><td>words</td><td>signs</td><td>a cross &#10007; = <em>que</em>, <em>sal</em> = <em>Su Santidad</em>; in the 1649 chapter also <em>gus</em> = <em>guerra</em>, <em>ile</em> = <em>Armada</em></td></tr>
 </table>
-<p class="legend">From Brice Dudout&rsquo;s key K2 and its additions (<code>targets/albornoz1648/key_K2.tsv</code>, <code>key_K2b_additions.tsv</code>).</p>
+<p class="legend">From Brice Dudout&rsquo;s key K2 and its additions (<code translate="no">targets/albornoz1648/key_K2.tsv</code>, <code translate="no">key_K2b_additions.tsv</code>).</p>
 <p>So <span class="c">ne ri 4 so il</span> is <em>de si s ta is</em>, &ldquo;desist&aacute;is&rdquo;, and <span class="c">lo m 42 e 34 e ma ro</span> is <em>po r ni n gu n ca so</em>, &ldquo;por ning&uacute;n caso&rdquo;. The royal letters of 1644&ndash;45 in the same fonds use a cipher of the same kind with other values: numbered syllables in series of five (30&ndash;34 = ma me mi mo mu), letters for letters (a = c, c = n, f = r) and syllables written vowel first (ac = la, ap = sa). The 1648 letter is not in it.</p>
 
 <h2 id="method"><span class="num">03</span> How the key was found</h2>
@@ -93,24 +93,24 @@
 <p><strong>A key that does not fit.</strong> D.16 keeps its cipher original (images 2&ndash;4) and a plain copy made at the time (images 6&ndash;8). Aligning them gave K1, the royal cipher of 1644&ndash;45, which was frozen and tested on D.20, transcribed before its plain copy was opened: K1 recovered 0.638 of D.20&rsquo;s letters, against a median of 0.467 and a 99th percentile of 0.550 for 200 control keys with the values permuted. Applied to the 1648 letter, K1 gives nothing: the letter is made of syllable groups (<span class="c">ne</span>, <span class="c">mo</span>, <span class="c">ma</span>, <span class="c">so</span>, <span class="c">ri</span>) and numbers from 2 to 61 that K1 does not have.</p>
 <p><strong>The key from the 1649 chapter.</strong> CT.11,D.1 holds a chapter of a letter of Luis de Haro to the Count of Pe&ntilde;aranda, Madrid, 25 September 1649, on the army of Catalonia, enciphered &ldquo;to send to Cardinal Albornoz&rdquo; (image 3), with its plain copy (image 1). It is in the cipher of the 1648 letter. The words <em>dentro de Catalu&ntilde;a y</em>, enciphered twice in the same way, <span class="c">2 &#8467;48 ne ma so 39 40 g</span>, opened the alignment. The key K2 was learnt on lines 1&ndash;12 only and frozen. Lines 13&ndash;23, decoded mechanically with the frozen key, recover 0.859 of the letters of the plain copy, against a median of 0.419 and a 99th percentile of 0.476 for 200 control keys with the values permuted. The protocol had named a word-level score; the test used a letter-level one (the longest common subsequence of normalised letters), because a mechanical syllabic decoding does not divide words reliably. Both tests clear their controls by a wide margin.</p>
 <p><strong>The letter.</strong> Both copies of the 1648 letter were transcribed and decoded with K2. K2 left some single letters and series numbers without a value; 29 values were added on the letter (K2b), each attested at least twice, fitting its series of five, or confirmed by the other copy: <span class="c">e</span> = n, <span class="c">r</span> = a, <span class="c">23</span> = o, the cross = <em>que</em>, <span class="c">25</span> = fa, <span class="c">54</span> = tu. Copy B, the cleaner, was then checked group by group against copy A, and copy A was followed where B departs from the key.</p>
-<p><strong>The statistical check here.</strong> The project&rsquo;s validator (<code>docs/_validate.py</code>) scores the reading of 636 groups (84 types) with a four-gram model of Golden Age Spanish, as mean log-probability per letter. The reading scores &minus;2.038; random keys of the same shape &minus;3.743 on average; a key annealed onto the shuffled ciphertext &minus;2.535 at best; and the same annealer, started from random keys on the real text, reaches &minus;2.246. Verdict: pass.</p>
+<p><strong>The statistical check here.</strong> The project&rsquo;s validator (<code translate="no">docs/_validate.py</code>) scores the reading of 636 groups (84 types) with a four-gram model of Golden Age Spanish, as mean log-probability per letter. The reading scores &minus;2.038; random keys of the same shape &minus;3.743 on average; a key annealed onto the shuffled ciphertext &minus;2.535 at best; and the same annealer, started from random keys on the real text, reaches &minus;2.246. Verdict: pass.</p>
 
 <h2 id="reading"><span class="num">04</span> The decipherment</h2>
 <figure class="creveal" data-src="reveal/albornoz1648.json"></figure>
 <p class="legend">Brice Dudout&rsquo;s text: spelling of the letter kept, punctuation and accents added. {x} probable reading; &lsaquo;&hellip;&rsaquo; unresolved group; [x] restored from the sense. The opening and the closing, in clear in the letter, are left out.</p>
-<blockquote lang="es">
+<blockquote lang="es" translate="no">
 [&hellip;] so{b}re la continuaci&oacute;n del arçobispo de Tarso, aunque se provean las otras nunciaturas. Ve{o} &lsaquo;74&rsaquo; [que] pasastis los oficios con Su Santidad, y lo que &lsaquo;el&rsaquo; respondi&oacute; mostrando los &lsaquo;A&rsaquo;s que en &lsaquo;124&rsaquo; considera;
 </blockquote>
 <blockquote>
 [&hellip;] about the continuance of the Archbishop of Tarsus, even if the other nunciatures are filled. I see &lsaquo;&hellip;&rsaquo; [that] you made representations to His Holiness, and what he answered, showing the &lsaquo;&hellip;&rsaquo; that he considers in &lsaquo;&hellip;&rsaquo;;
 </blockquote>
-<blockquote lang="es">
+<blockquote lang="es" translate="no">
 pero todav&iacute;a, siendo este sujeto muy digno de favor por la atenci&oacute;n con que acude a su ministerio y a la representaci&oacute;n en que est&aacute;, y que para las conveniencias del servicio [de] su pr&iacute;ncipe y m&iacute;o no puede haver instrumento m&aacute;s a prop&oacute;sito, buelvo a encargaros continu&eacute;is y esforc&eacute;is con Su {Be}atitud las instancias para su detenci&oacute;n &lsaquo;&#10007;11&rsaquo; en conformidad de las primeras &oacute;rdenes, y que no desist&aacute;is por ning&uacute;n caso, como en negocio que incluye en s&iacute; conveniencias del servicio de Su Santidad y m&iacute;o;
 </blockquote>
 <blockquote>
 but nevertheless, this person being most worthy of favour for the care with which he attends to his ministry and to the representation he holds, and since for the interests of the service of his prince and mine there can be no instrument more suitable, I again charge you to continue and redouble with His Beatitude the requests for his retention &lsaquo;&hellip;&rsaquo;, in accordance with the first orders, and not to desist in any case, as in a business that contains interests of the service of His Holiness and mine;
 </blockquote>
-<blockquote lang="es">
+<blockquote lang="es" translate="no">
 y dar&eacute;isme quenta de lo que resultare y se fuere ofreciendo en &lsaquo;124&rsaquo;.
 </blockquote>
 <blockquote>
@@ -136,7 +136,7 @@ and you will report to me what results and whatever may arise in &lsaquo;&hellip
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>Philip IV to Cardinal Albornoz, Madrid, 24 July 1648 (AHNOB OSUNA,CT.2,D.32)</h3>
 <p>In 1648 Innocent X was renewing his nuncios. Philip IV wanted to keep his own: Giulio Rospigliosi, Archbishop of Tarsus, nuncio at Madrid since 1644 – the future Pope Clement IX. He wrote so to his ambassador to the Pope, Cardinal Gil de Albornoz, in a cipher nobody had read: “there can be no instrument more suitable” for the service of both courts, so the ambassador must not desist “in any case”. The letter survives in two ciphered copies with no decipherment; the key came from another paper in the same family archive, a chapter of a letter by Luis de Haro enciphered for Albornoz in 1649, whose plain-text copy was kept.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/albornoz1648/transcription.txt">transcription.txt</a></p><pre># AHNOB, OSUNA,CT.2,D.32(1-2): Philip IV to Cardinal Albornoz, Madrid, 24 July 1648. Two cipher copies of the same letter.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/albornoz1648/transcription.txt">transcription.txt</a></p><pre translate="no"># AHNOB, OSUNA,CT.2,D.32(1-2): Philip IV to Cardinal Albornoz, Madrid, 24 July 1648. Two cipher copies of the same letter.
 # Tokens separated by spaces, one manuscript line per row. ✗ = cross sign (code, = que); A̲ = underlined A; ✗11 = cross with 11.
 # The opening (&quot;En carta de 24 de março ... de 10 de enero&quot;) and the closing formulas are in plain text and are not transcribed.
 
@@ -180,7 +180,7 @@ A15	ne 35 n g 47 te 45 n 23 m ne 41 n g ✗ 43
 A16	ne ri 4 so il lo m 42 e 34 e ma ro mo to er 41
 A17	33 mi 23 ✗ ir t 39 pe er ri mo d de 42 er mi al
 A18	ne 18 re m di mi f ne m ra e 52 na 12 g ti 23 g</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/albornoz1648/decryption.txt">decryption.txt</a></p><pre># Decryption of OSUNA,CT.2,D.32, line by line, with key K2 + K2b (key_K2.tsv, key_K2b_additions.tsv).
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/albornoz1648/decryption.txt">decryption.txt</a></p><pre translate="no"># Decryption of OSUNA,CT.2,D.32, line by line, with key K2 + K2b (key_K2.tsv, key_K2b_additions.tsv).
 # For each line: the tokens; the value of each token in turn (‹x› = token without a value); for copy B, the established
 # text of that line ({x} probable, ‹x› unresolved, [x] restored from the sense, *x* plain text in the original).
 
@@ -273,7 +273,7 @@ A17	33 mi 23 ✗ ir t 39 pe er ri mo d de 42 er mi al
 	go ci o que in c lu ye en si co n ve ni en ci as
 A18	ne 18 re m di mi f ne m ra e 52 na 12 g ti 23 g
 	de l se r vi ci o de r sa n ti da d y mi o y</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/albornoz1648/reading.md">reading.md</a></p><pre># Philip IV to Cardinal Albornoz, Madrid, 24 July 1648: established text (Spanish)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/albornoz1648/reading.md">reading.md</a></p><pre translate="no"># Philip IV to Cardinal Albornoz, Madrid, 24 July 1648: established text (Spanish)
 
 Conventions: {x} = probable reading; ‹…› = unresolved group; [x] = restored from the sense; *italics* = written in plain text in the original (opening and closing formulas). Spelling of the letter kept; punctuation and accents added.
 
@@ -282,7 +282,7 @@ Conventions: {x} = probable reading; ‹…› = unresolved group; [x] = restore
 pero todavía, siendo este sujeto muy digno de favor por la atención con que acude a su ministerio y a la representación en que está, y que para las conveniencias del servicio [de] su príncipe y mío no puede haver instrumento más a propósito, buelvo a encargaros continuéis y esforcéis con Su {Be}atitud las instancias para su detención ‹✗11› en conformidad de las primeras órdenes, y que no desistáis por ningún caso, como en negocio que incluye en sí conveniencias del servicio de Su Santidad y mío ;
 
 y daréisme quenta de lo que resultare y se fuere ofreciendo en ‹124›. *Y sea muy reverendo en Christo padre cardenal Albornoz, mi muy charo y muy amado amigo, Nuestro Señor en vuestra continua guarda. De Madrid a 24 de julio de 1648.* *Yo el Rey.* *Pedro Coloma.*</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/albornoz1648/translation.md">translation.md</a></p><pre># English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/albornoz1648/translation.md">translation.md</a></p><pre translate="no"># English translation
 
 [In your letter of 24 March you acknowledge receipt of the one written to you on 10 January] about the continuance of the Archbishop of Tarsus, even if the other nunciatures are filled. I see ‹…› [that] you made representations to His Holiness, and what he answered, showing the ‹…› that he considers in ‹…›;
 
@@ -291,7 +291,7 @@ but nevertheless, this person being most worthy of favour for the care with whic
 and you will report to me what results and whatever may arise in ‹…›. [Closing formulas in plain text:] Most reverend father in Christ, Cardinal Albornoz, my most dear and beloved friend, may Our Lord keep you. Madrid, 24 July 1648. I the King. Pedro Coloma.</pre></details>
 <h3>OSUNA,CT.11,D.1: Haro to Peñaranda, 25 Sept 1649, enciphered for Albornoz, with its plain copy of the time (key document for K2) <span class="st found">not prose</span></h3>
 <p>Key document: the cipher chapter and its plain copy of the time, used to rebuild K2 (lines 1-12) and to test it (lines 13-23); no reading of its own.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/albornoz1648/keydocs/CT11_cipher.txt">CT11_cipher.txt</a></p><pre># OSUNA,CT.11,D.1 image 3: chapter of Luis de Haro, 25 Sept 1649, enciphered for Cardinal Albornoz. Lines 1-12 = learning text
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/albornoz1648/keydocs/CT11_cipher.txt">CT11_cipher.txt</a></p><pre translate="no"># OSUNA,CT.11,D.1 image 3: chapter of Luis de Haro, 25 Sept 1649, enciphered for Cardinal Albornoz. Lines 1-12 = learning text
 # for K2 (aligned on the plain copy, image 1); lines 13-23 held out. ° = small circle above; ✗ = cross (code); ⊕ = large looped 3; ℓ = large L.
 L01	pa✗ no 2 61 ar ne 30 45 g re xa 18° 35 mo 2 et✗
 L02	re 2 ℓ48 ne ma so 39 40 g 35 ile g 30 36 45 n
@@ -316,11 +316,11 @@ L20	re f 0 45 g mo to re x f x mu so re lu x ne
 L21	xa me m lo mo 29 2 na te 2 53 ro 0 46 53 na
 L22	55 2 53 re re n mu 46 55 re lu x ne g ne de ⊕
 L23	48 da 0 36 te 2 51 x f x mu so m pa✗</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/albornoz1648/keydocs/CT11_plain_13-23.txt">CT11_plain_13-23.txt</a></p><pre># OSUNA,CT.11,D.1 image 1: contemporary plain text of the passage enciphered in lines 13-23 (held-out validation of K2).
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/albornoz1648/keydocs/CT11_plain_13-23.txt">CT11_plain_13-23.txt</a></p><pre translate="no"># OSUNA,CT.11,D.1 image 1: contemporary plain text of the passage enciphered in lines 13-23 (held-out validation of K2).
 la guerra fuera de los Reynos de Aragon y Valencia y tomando y fortificando los puestos que se quedieren mas adelantados dandose la mano con Tarragona se considera que quedarian totalmente cortadas las plaças de Tortosa y Lerida pero hasta ver lo que se obra y como se executa se queda la expedicion con poco fundamento sobre todo quanto se discurre que se puede y deue probablemente executar</pre></details>
 <h3>OSUNA,CT.2,D.16: Philip IV to Albornoz, 12 Dec 1644, cipher aligned on its plain copy (key document for K1) <span class="st found">not prose</span></h3>
 <p>Key document: cipher original aligned on the plain copy of the time, used to rebuild K1, which does not read the 1648 letter.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/albornoz1648/keydocs/D16_alignment.txt">D16_alignment.txt</a></p><pre># OSUNA,CT.2,D.16 (12 Dec 1644): learning text for K1. Cipher original (images 2-4) aligned token=value on the contemporary
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/albornoz1648/keydocs/D16_alignment.txt">D16_alignment.txt</a></p><pre translate="no"># OSUNA,CT.2,D.16 (12 Dec 1644): learning text for K1. Cipher original (images 2-4) aligned token=value on the contemporary
 # plain copy (images 6-8). ✗ = start/end mark (*); ↗ above = cancelled token (!); § above digits = number value or number syllable (§).
 # image 2, lines 5-8
 ✗=* 28=de oc=lo 25=que 264=[su Santidad] 17=o t=s 56=re 47=fi 57=ri 17=o x=e c=n 203=[orden] 15=a e=l 15=a 4=g 55=ra 28=de a=c 3=i 32=mi x=e c=n 38=to a=c 17=o c=n 25=que ep=se θ=h 15=a ē=ll 15=a ha=ba 28=de 32=mi m=y oc=lo 25=que ec=le 56=re t=s ox=po c=n 28+=di t=s 36=ti R=s 28=de 25=que 26=que 28÷=do 15=a tt=d he=u f=r 37=ti 28÷=do
@@ -342,7 +342,7 @@ la guerra fuera de los Reynos de Aragon y Valencia y tomando y fortificando los 
 36=te 57=ri 15=a 28‡=da 3=y t=s 236=[quenta] 28=de bon=los? 88=[Cardenal] x=e t=s 15=a 25+=quien x=e c=n 28=de he=ue 4=g 55=ra 37=ti 47=fi a=c 15=a f=r ep=se a=c 17=o c=n a=c 15=a f=r 35=ta t=s m=y 9=p? 56=re 32=mi 17=o t=s 28=de 25=que 56=re 32=mi 37=ti t=s 31=me 33=mo 57=ri 15=a 15=a e=l 100=[Conde de Siruela] ep=se San+=auisa? 38=to 28÷=do oc=lo 56=re up=su x=e e=l 38=to x=e c=n 203=[orden] 15=a x=e t=s 38=to m=y tif=asi? 31=me 56=re 32=mi 38=to 15=a oc=lo 25=que 28=de E=l? x=e c=n 36=te c=n 28=de 56=re 3=y R=s ~=* ✗=*
 # image 4, lines 1-13
 ✗=* 3̲=[como] x=e e=l 100=[Conde de Siruela] 25+=qui ep=so ex=pe 28+=di f=r uc=lu x=e 4=g 17=o 15=a 264=[su Santidad] felt=[alguna] 4=g 55=ra 52=ci 15=a 28=de ban=[las] 25=que x=e c=n 17=o E58=tro 297=[tiempo] 43=no ep=se θ=h 15=a hi=ui 15=a c=n 15=a e=l a=c 15=a c=n 50=za 28÷=do ✗=* 25=que 15=a 308=[vos] 17=o t=s ax=pa 56=re a=c 3=i 17=o ep=se up=su t=s ex=pe c=n 28+=di x=e ep=se ox=po f=r 43=no ax=pa 56=re 51=ce f=r a=c 17=o 28+=di 52=ci 17=o ep=so m=y 25=que ep=se 31=me 9=p 56=ro? ux=pu ip=si x=e ep=se 15=a 32=mi x=e e=l x=e t=s a=c 17=o ef=ge f=r ac=la 25=que 30=ma t=s 49=fue 56=re ep=se f=r hi=ui 28÷=do up=pu x=e t=s x=e e=l ax=pa ax=pa x=e t=s 35=ta c=n 15=a 46=fe a=c 38=to ✗=* m=y 3̲=[como] 15=a he=ue 3=y t=s x=e c=n 36=te c=n 28+=di 28÷=do x=e t=s 35=ta 30=ma 36=te 57=ri 15=a 37=ti x=e 41=ne 17=o E58=tro x=e t=s 35=ta 28÷=do up=pu x=e t=s 264=[su Santidad] ep=se 4=g m=u c=n ban=[las] m=u e=l 37=ti 30=ma t=s a=c 15=a f=r 35=ta t=s θ=h 15=a x=e n=m ex=pe p=z 15=a 28=do? 15=a a=c 17=o c=n 2!=! 51=ce 28=de f=r 31=me felt=[alguna] t=s m=y 15=a ip=si ep=se 55=ra hi=bi x=e c=n 25=que x=e t=s 38=to ep=se 28=de el=xe a=c 17=o 96=rre f=r a=c 17=o u=n 48=fo f=r ?=me 15=a ox=lo? 25=que 15=a θ=h 3=i ax=pa 56=re 52=ci x=e 56=re 15=a 32=mi t=s ?=mi ?=ni ?=s 28=de 25=que 294=[tambien] ep=se 15=a hi=ui ap=sa 15=a e=l 100=[Conde de Siruela]</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/albornoz1648/keydocs/D16_alignment.txt">D16_alignment.txt</a></p><pre># OSUNA,CT.2,D.16 (12 Dec 1644): learning text for K1. Cipher original (images 2-4) aligned token=value on the contemporary
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/albornoz1648/keydocs/D16_alignment.txt">D16_alignment.txt</a></p><pre translate="no"># OSUNA,CT.2,D.16 (12 Dec 1644): learning text for K1. Cipher original (images 2-4) aligned token=value on the contemporary
 # plain copy (images 6-8). ✗ = start/end mark (*); ↗ above = cancelled token (!); § above digits = number value or number syllable (§).
 # image 2, lines 5-8
 ✗=* 28=de oc=lo 25=que 264=[su Santidad] 17=o t=s 56=re 47=fi 57=ri 17=o x=e c=n 203=[orden] 15=a e=l 15=a 4=g 55=ra 28=de a=c 3=i 32=mi x=e c=n 38=to a=c 17=o c=n 25=que ep=se θ=h 15=a ē=ll 15=a ha=ba 28=de 32=mi m=y oc=lo 25=que ec=le 56=re t=s ox=po c=n 28+=di t=s 36=ti R=s 28=de 25=que 26=que 28÷=do 15=a tt=d he=u f=r 37=ti 28÷=do
@@ -366,7 +366,7 @@ la guerra fuera de los Reynos de Aragon y Valencia y tomando y fortificando los 
 ✗=* 3̲=[como] x=e e=l 100=[Conde de Siruela] 25+=qui ep=so ex=pe 28+=di f=r uc=lu x=e 4=g 17=o 15=a 264=[su Santidad] felt=[alguna] 4=g 55=ra 52=ci 15=a 28=de ban=[las] 25=que x=e c=n 17=o E58=tro 297=[tiempo] 43=no ep=se θ=h 15=a hi=ui 15=a c=n 15=a e=l a=c 15=a c=n 50=za 28÷=do ✗=* 25=que 15=a 308=[vos] 17=o t=s ax=pa 56=re a=c 3=i 17=o ep=se up=su t=s ex=pe c=n 28+=di x=e ep=se ox=po f=r 43=no ax=pa 56=re 51=ce f=r a=c 17=o 28+=di 52=ci 17=o ep=so m=y 25=que ep=se 31=me 9=p 56=ro? ux=pu ip=si x=e ep=se 15=a 32=mi x=e e=l x=e t=s a=c 17=o ef=ge f=r ac=la 25=que 30=ma t=s 49=fue 56=re ep=se f=r hi=ui 28÷=do up=pu x=e t=s x=e e=l ax=pa ax=pa x=e t=s 35=ta c=n 15=a 46=fe a=c 38=to ✗=* m=y 3̲=[como] 15=a he=ue 3=y t=s x=e c=n 36=te c=n 28+=di 28÷=do x=e t=s 35=ta 30=ma 36=te 57=ri 15=a 37=ti x=e 41=ne 17=o E58=tro x=e t=s 35=ta 28÷=do up=pu x=e t=s 264=[su Santidad] ep=se 4=g m=u c=n ban=[las] m=u e=l 37=ti 30=ma t=s a=c 15=a f=r 35=ta t=s θ=h 15=a x=e n=m ex=pe p=z 15=a 28=do? 15=a a=c 17=o c=n 2!=! 51=ce 28=de f=r 31=me felt=[alguna] t=s m=y 15=a ip=si ep=se 55=ra hi=bi x=e c=n 25=que x=e t=s 38=to ep=se 28=de el=xe a=c 17=o 96=rre f=r a=c 17=o u=n 48=fo f=r ?=me 15=a ox=lo? 25=que 15=a θ=h 3=i ax=pa 56=re 52=ci x=e 56=re 15=a 32=mi t=s ?=mi ?=ni ?=s 28=de 25=que 294=[tambien] ep=se 15=a hi=ui ap=sa 15=a e=l 100=[Conde de Siruela]</pre></details>
 <h3>OSUNA,CT.2,D.20: Philip IV to Albornoz, 26 Jan 1645, cipher and plain copy (test of K1) <span class="st found">not prose</span></h3>
 <p>Key document: transcribed before its plain copy was opened, used to test K1 (0.638 of characters recovered against a 99th percentile of 0.550 for permuted keys).</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/albornoz1648/keydocs/D20_cipher.txt">D20_cipher.txt</a></p><pre># OSUNA,CT.2,D.20 (26 Jan 1645), image 2: held-out text for K1, transcribed before its plain copy was opened (K1 frozen 08fd8533...)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/albornoz1648/keydocs/D20_cipher.txt">D20_cipher.txt</a></p><pre translate="no"># OSUNA,CT.2,D.20 (26 Jan 1645), image 2: held-out text for K1, transcribed before its plain copy was opened (K1 frozen 08fd8533...)
 ✗ x 20 26 9 58 ox 41
 t R 26 10 17 20 y e 41 ox 36 29 np ap 20 37 29+ tt ep
 ox tt 57 15 θ 15 51 8 15 c A m 40 29 33 1 E 55 10 t 21 20
@@ -380,7 +380,7 @@ y 20 36 20 29+ 29÷ 26 y 20 oc 25 9 58 ox 41 t R x 20
 ap 20 37 29+ tt ep θ 15 y 10 a 57 38 15 e 10 17 20 29 28 ip 59
 y ac oc 26 θ 15 ax 56 51 29÷ 10 17 13 he 42 y 20 36 10 17 33
 oc θ 15 E 56 t R ap hi 29÷ at ✗</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/albornoz1648/keydocs/D20_plain.txt">D20_plain.txt</a></p><pre># OSUNA,CT.2,D.20: contemporary plain copy (image 4) of the enciphered passage, used only to score K1.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/albornoz1648/keydocs/D20_plain.txt">D20_plain.txt</a></p><pre translate="no"># OSUNA,CT.2,D.20: contemporary plain copy (image 4) of the enciphered passage, used only to score K1.
 en que proponeys que con el Nepote de su Santidad se podria hacer alguna demostracion señalandole hasta diez mill ducados de pension sobre el Arzedianato de Toledo y lo demas que a este proposito dezis tratando de la Baltolina quedo aduertido de todo y es bien tengays entendido que en lo que proponeys en orden a hacer merced al sobrino de su Santidad se ha escrito al Conde de Siruela lo que ha parecido conbeniente como lo sabreys sauido ya</pre></details>
 <p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/albornoz1648/key_K2.tsv">key_K2.tsv</a></p>
 <!-- texts:end -->
@@ -402,7 +402,7 @@ en que proponeys que con el Nepote de su Santidad se podria hacer alguna demostr
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Manuscript images: Archivo Hist&oacute;rico de la Nobleza (PARES); text and translation: Brice Dudout, CC BY 4.0</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="mercy1648.html" rel="prev">&larr; Mercy 1648 1648</a><a href="laigue1649.html" rel="next">Conti to Laigue 1649 1649 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-  <div class="cipherstrip">1. 27. 479. 119. 343. 174. 402. 350. 408. 4 &hellip;<br>over it, in clear: on a voulu tenter un evenement, dans l&rsquo;esperance &hellip;</div>
+  <div class="cipherstrip" translate="no">1. 27. 479. 119. 343. 174. 402. 350. 408. 4 &hellip;<br>over it, in clear: on a voulu tenter un evenement, dans l&rsquo;esperance &hellip;</div>
   <p class="kicker">Marly &rarr; unnamed correspondent &middot; numerical code &middot; 4 June 1710</p>
   <h1>Desmarets to an unnamed correspondent, Marly, 4 June 1710</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_nicolas-desmarets.jpg" alt="Nicolas Desmarets" title="Nicolas Desmarets: Portrait of Nicolas Desmaretz, engraving by Claude Randon, 1678. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Nicolas Desmarets</figcaption></figure></div><!-- /parties -->
@@ -74,8 +74,8 @@
 
 <h2 id="the-reading"><span class="num">02</span> The reading</h2>
 <figure class="creveal" data-src="reveal/desmarets1710.json"></figure>
-<p>Tomokiyo&rsquo;s table (Cryptiana, <a href="https://cryptiana.web.fc2.com/code/louisxiv.htm">Cipher Used in Louis XIV&rsquo;s Reign</a>, 11B) is an image. I transcribed it into <code>targets/desmarets1710/tomokiyo_decode.py</code> and decoded the transcription of the 471 groups as one run, without line breaks. The result, with the words divided by hand (<code>reading.txt</code>):</p>
-<blockquote lang="fr"><p>On a voulu tenter un evenement dans [l&rsquo;esper]ance qu&rsquo;il pourroit estre heureux, qu&rsquo;il feroit changer la face des affaires presentes. Soit prudence soit impossibilite, on n&rsquo;a rien fait, mais il y a grande apparence que ce qu&rsquo;on n&rsquo;a pas tente volontairement deviendra force &hellip; Peu de semaines feront connoistre ce qui en arrivera. C&rsquo;est cependant la raison qui a fait differer de renvoyer vostre courier. &hellip;</p>
+<p>Tomokiyo&rsquo;s table (Cryptiana, <a href="https://cryptiana.web.fc2.com/code/louisxiv.htm">Cipher Used in Louis XIV&rsquo;s Reign</a>, 11B) is an image. I transcribed it into <code translate="no">targets/desmarets1710/tomokiyo_decode.py</code> and decoded the transcription of the 471 groups as one run, without line breaks. The result, with the words divided by hand (<code translate="no">reading.txt</code>):</p>
+<blockquote lang="fr" translate="no"><p>On a voulu tenter un evenement dans [l&rsquo;esper]ance qu&rsquo;il pourroit estre heureux, qu&rsquo;il feroit changer la face des affaires presentes. Soit prudence soit impossibilite, on n&rsquo;a rien fait, mais il y a grande apparence que ce qu&rsquo;on n&rsquo;a pas tente volontairement deviendra force &hellip; Peu de semaines feront connoistre ce qui en arrivera. C&rsquo;est cependant la raison qui a fait differer de renvoyer vostre courier. &hellip;</p>
 <p>Le pouvoir qu&rsquo;on vous envoie est assez estendu et on ne s&rsquo;y tiendra pas absolument. Si vous pouvez venir a bout d&rsquo;avoir des suretes et des eclaircissements sur les demandes ulterieures: on veut la paix, on la veut sure, mais on veut encores menager l&rsquo;honneur du gouvernement. Enfin pourvu que les demandes ulterieures n&rsquo;aillent pas a des demembrements entiers et qu&rsquo;on les borne a peu de chose au dela des preliminaires, on s&rsquo;y portera. &hellip; Il ne se [con]clura pas sans bien des explications et des conferences, mais voila au moins un relachement qui peut produire la paix, ce qui n&rsquo;aur[oit] pas este selon toutes les apparences si l&rsquo;on estoit demeure fermes dans les premieres resolutions.</p></blockquote>
 <p>The first part is the text already written between the figure lines; the last 22 lines of figures decipher to the second part, which has no French over it on the sheet. Tomokiyo notes the same: the secretary deciphered on a separate sheet and wrote the clean text on the original out of step with the figures, and the letter was printed in <em>L&rsquo;interm&eacute;diaire des curieux</em> 50 (1904), which remarked that the last lines carry no plaintext. The sense is the French position at Geertruidenberg: the King wants peace, a safe peace, but means to keep &ldquo;l&rsquo;honneur du gouvernement&rdquo;, and will agree if the Allies&rsquo; further demands stop short of &ldquo;demembrements entiers&rdquo;.</p>
 <p>What is not clean. The decoded stream has local misfits that come from the table or from the transcription of it: for example &ldquo;heureux&rdquo; comes out with V and X for the last two letters, &ldquo;presentes&rdquo; as <em>pre</em> followed by letters that do not spell it, and &ldquo;le p&hellip;n qu&rsquo;on vous&hellip; envoie&rdquo; has an unread word. A few cells are queried in Tomokiyo&rsquo;s own table (463 &ldquo;temps?&rdquo;, 25 &ldquo;S?&rdquo;), and the 590-pixel images leave some digits doubtful. Twelve group types are not in the table at all: 94 (&ldquo;ce&rdquo;, three places), 539 (&ldquo;l&rsquo;esper&rdquo;) and 565 (&ldquo;oit&rdquo;) are fixed by the context; 179+534 (in &ldquo;differer&rdquo;), 133 (&ldquo;aplanir&rdquo;), 65 and 147 (&ldquo;renvoyer vostre courier&rdquo;), 189, 229, 23 and 559 are plausible readings only, and 559 may be a null.</p>
@@ -97,7 +97,7 @@
 <h3>R10198, Marly 4 June 1710 <span class="st partial">read in part</span></h3>
 <p>Nicolas Desmarets, Controller General of Finances, writes from Marly on 4 June 1710 to an unnamed &quot;Monsieur&quot;: the King wants peace, a safe peace, but means to protect &quot;l&#x27;honneur du gouvernement&quot;; further demands must not reach &quot;demembrements entiers&quot;; the powers sent are wide enough, and the relaxation &quot;peut produire la paix&quot;.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (94% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/desmarets1710/transcription.txt">transcription.txt</a></p><pre># DECODE R10198, Desmarets, Marly 4 June 1710. Transcribed from the DECODE page images (590 px), 21 Sept 2026.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/desmarets1710/transcription.txt">transcription.txt</a></p><pre translate="no"># DECODE R10198, Desmarets, Marly 4 June 1710. Transcribed from the DECODE page images (590 px), 21 Sept 2026.
 # Glossed lines: &quot;G |&quot; = contemporary interlinear decipherment (above), &quot;C |&quot; = figures below it.
 # Unglossed lines: &quot;U |&quot; figures only. [?] = uncertain reading.
 # page 1
@@ -190,7 +190,7 @@ U | 437 256 111 118 186 27 362 183
 U | 512 437 563 258 56 3 119 83
 U | 415 78 3 526 118 411 459 250
 U | 424 57 62 111 | Je suis tres parfaitement Monsieur Votre tres humble et tres obeissant serviteur [signed] Desmaretz</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/desmarets1710/reading.txt">reading.txt</a></p><pre># DECODE R10198, Desmarets, Marly 4 June 1710. Reading of the 471 code groups as one continuous stream,
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/desmarets1710/reading.txt">reading.txt</a></p><pre translate="no"># DECODE R10198, Desmarets, Marly 4 June 1710. Reading of the 471 code groups as one continuous stream,
 # with the table Tomokiyo reconstructed from this letter (tomokiyo_decode.py holds the table as transcribed here).
 # Word division and modern punctuation added by hand. [..] = group not in Tomokiyo&#x27;s table (value inferred
 # from the context; ? = doubtful). &quot;Glossed&quot; = the 34 lines that have French above them; &quot;tail&quot; = the last
@@ -211,7 +211,7 @@ vous [559 ?] envoie est un chemin pour [con]duire a un traite. Il ne se [con]clu
 des conferences, mais voila au moins un relachement qui peut produire la paix, ce qui n&#x27;aur[oit: 565] pas este selon
 toutes les apparences si l&#x27;on estoit demeure fermes dans les premieres resolutions.
 [Je suis tres parfaitement Monsieur Votre tres humble et tres obeissant serviteur, Desmaretz: clear, not coded]</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/desmarets1710/texts/R10198_reading.md">R10198_reading.md</a></p><pre>&lt;!-- Reading of DECODE R10198 (Claude Opus 5.5, 23 Oct 2026): reading.txt (the 471 code groups read with Tomokiyo&#x27;s table reconstructed from this letter, word division and punctuation by hand) with its markup simplified: a group read &quot;[94=ce]&quot; is given as its value (ce); a group not in the table with no value is [nnn]; a value inferred and marked &quot;?&quot; is [?value]; letters supplied around a group are kept in [ ] ([l&#x27;esper]ance, [con]duire). Spelling as decoded. The closing is in clear. --&gt;
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/desmarets1710/texts/R10198_reading.md">R10198_reading.md</a></p><pre translate="no">&lt;!-- Reading of DECODE R10198 (Claude Opus 5.5, 23 Oct 2026): reading.txt (the 471 code groups read with Tomokiyo&#x27;s table reconstructed from this letter, word division and punctuation by hand) with its markup simplified: a group read &quot;[94=ce]&quot; is given as its value (ce); a group not in the table with no value is [nnn]; a value inferred and marked &quot;?&quot; is [?value]; letters supplied around a group are kept in [ ] ([l&#x27;esper]ance, [con]duire). Spelling as decoded. The closing is in clear. --&gt;
 
 # DECODE R10198: Desmarets, Marly, 4 June 1710
 
@@ -232,7 +232,7 @@ qui peut produire la paix, ce qui n&#x27;aur[oit] pas este selon toutes les appa
 premieres resolutions.
 
 ⟨Je suis tres parfaitement, Monsieur, votre tres humble et tres obeissant serviteur, Desmaretz.⟩</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/desmarets1710/texts/R10198_en.md">R10198_en.md</a></p><pre>&lt;!-- English translation of texts/R10198_reading.md (Claude Opus 5.5, 23 Oct 2026), with the same holes; [559] (twice before &quot;envoie&quot;) is probably a null or &quot;now&quot;, left as is. --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/desmarets1710/texts/R10198_en.md">R10198_en.md</a></p><pre translate="no">&lt;!-- English translation of texts/R10198_reading.md (Claude Opus 5.5, 23 Oct 2026), with the same holes; [559] (twice before &quot;envoie&quot;) is probably a null or &quot;now&quot;, left as is. --&gt;
 
 # DECODE R10198: Desmarets, Marly, 4 June 1710: English translation
 
@@ -260,7 +260,7 @@ not have happened if one had remained firm in the first resolutions.
 <li>S. Tomokiyo, <a href="https://cryptiana.web.fc2.com/code/louisxiv.htm">Cryptiana, Cipher Used in Louis XIV&rsquo;s Reign</a>, section 11B, &ldquo;Code at the time of Peace Talk at Geertruidenberg (1710)&rdquo;, from the analysis by Alexandre Pillon.</li>
 <li>Issue #28, <a href="https://github.com/dbourdeau/cyphersolver/issues/28">&ldquo;Desmarets R10198 is readable with Tomokiyo&rsquo;s published 1710 table&rdquo;</a>, by <a href="https://github.com/yuanyi-350">yuanyi-350</a>, 9 October 2026.</li>
 <li><em>L&rsquo;interm&eacute;diaire des curieux</em> 50 (1904), the printed text, as cited by Tomokiyo.</li>
-<li>Transcription, table and decoder, reading and notes: <code>targets/desmarets1710/</code>.</li>
+<li>Transcription, table and decoder, reading and notes: <code translate="no">targets/desmarets1710/</code>.</li>
 </ul>
 <p class="muted">Files: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/desmarets1710">targets/desmarets1710/</a> in the repository.</p>
 </main>
@@ -268,7 +268,7 @@ not have happened if one had remained firm in the first resolutions.
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Via DECODE R10198; not in the public domain</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="turculet1709.html" rel="prev">&larr; News from Bender 1709 1709</a><a href="papai1710.html" rel="next">P&aacute;pai, Belgrade 1710 1710 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">124 32 50 52 46 23 49 103 47 18 89 126 38 52<br>re i s t r e s ma r c he ro n t<br>162 = le Roy de Navarre &middot; 61 62 = et</div>
+  <div class="cipherstrip" translate="no">124 32 50 52 46 23 49 103 47 18 89 126 38 52<br>re i s t r e s ma r c he ro n t<br>162 = le Roy de Navarre &middot; 61 62 = et</div>
   <p class="kicker">La Rochelle &rarr; Ségur in Germany &middot; numerical cipher: homophonic alphabet and syllable table in alphabetical order (Tomokiyo&rsquo;s f. 321 key) &middot; 10 July 1586</p>
   <h1>Henry of Navarre&rsquo;s news-sheet to Ségur, La Rochelle, 10 July 1586</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_henri-iv.jpg" alt="Henry of Navarre" title="Henry of Navarre: Portrait by Frans Pourbus the Younger, 1610. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Henry of Navarre</figcaption></figure></div><!-- /parties -->
@@ -92,7 +92,7 @@ the encipherer, or homophones the pattern does not predict.</p>
 <li>A free annealer on f. 333 alone (the method that recovered key A from 461 figures) does not converge: the best of twelve seeds has 35 of 58 letter figures right, and a matched control of the
 same size fails the same way. An annealer that builds in the chancery&rsquo;s design (homophones in alphabetical order) re-derives the letter key blind, every seed agreeing, with 54 of 58 letter
 figures (93&nbsp;%) as in Tomokiyo&rsquo;s table, and 90&nbsp;% on a matched control; the syllable rows are the weak part at this size. The reading itself rests on Tomokiyo&rsquo;s key.</li>
-<li>f. 321 cannot be transcribed independently: the decipherer&rsquo;s stroke runs through the middle of every figure, and removing it removes the digits. One clean segment, <code>61 130 33 78 54 52</code>
+<li>f. 321 cannot be transcribed independently: the decipherer&rsquo;s stroke runs through the middle of every figure, and removing it removes the digits. One clean segment, <code translate="no">61 130 33 78 54 52</code>
 = <em>et si l fa u t</em>, matches the interlinear <em>et s&rsquo;il fault</em>.</li>
 </ul>
 <h2 id="residuals"><span class="num">04</span> What remains uncertain</h2>
@@ -106,7 +106,7 @@ figures (93&nbsp;%) as in Tomokiyo&rsquo;s table, and 90&nbsp;% on a matched con
 <h3>La Rochelle, 10 July 1586 (BnF 500 de Colbert 401 f. 333) <span class="st partial">read in part</span></h3>
 <p>A news-sheet in the third person signed Henry at La Rochelle, 10 July 1586, sent to Ségur: the King of Navarre wants news and advice on the road he should take, and will mount as soon as the reiters march; the levy must be hastened and set marching as soon as possible. The clear parts report Mayenne&#x27;s army, the plot at Montauban, Drake&#x27;s raids, and Vesin de la Marsillière&#x27;s mission to Berne.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (95% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/navarre1586/ct_333.txt">ct_333.txt</a></p><pre># BnF 500 Colbert 401 f.333 — Henry of Navarre, La Rochelle, 10 July 1586 (Gallica canvas 369). Secretary hand, countersigned.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/navarre1586/ct_333.txt">ct_333.txt</a></p><pre translate="no"># BnF 500 Colbert 401 f.333 — Henry of Navarre, La Rochelle, 10 July 1586 (Gallica canvas 369). Secretary hand, countersigned.
 # Transcribed 2026-09-16 from the full-resolution IIIF image at 2x; clear text in [brackets]; INS = superscript insertion.
 [L&#x27;armee du duc de Mayenne doit ... assieger Castillon ... Montauban a failly d&#x27;estre surprise par la trahison et conspiration du Sr de Claux ... Drak a faict ravage en Espagnols. Il a ruiné et rasé l&#x27;isle de St Dominique. Il est allé a Cartagene et fait terreur a tous les Espagnols.] 162 [desire fort d&#x27;avoir des nouvelles de] 204 74 189 190 61 120 31 126
 62 99 54 46 12 19 140 55 132 47 99 17 89 105 38 108 34 76 31 52 134 110 47
@@ -115,7 +115,7 @@ figures (93&nbsp;%) as in Tomokiyo&rsquo;s table, and 90&nbsp;% on a matched con
 134 123 14 19 89 138 31 166 62 131 37 24 124 46 23 131 38 51 74 66 38 109 141
 101 37 134 32 34 88 55 52 13 138 38 69 47 98 99 139 22 61 98 78 31 124 103
 47 20 89 46 [le plustost qu&#x27;on pourra. Le Roy de Navarre a envoyé comme vous savez le Sr de Vesin de la Marsilliere a Berne avec les ambassadeurs des quatre Cantons de Suisse]</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/navarre1586/texts/f333_decryption.md">f333_decryption.md</a></p><pre># Output of targets/segur/decode.py, run 22 Oct 2026 with key_321.json on ct_333.txt (BLOCK0=63 NBLK=16). Clear text in capitals, cipher decoded in lower case, {n} = no value (name codes; 162 = Le Roy de Navarre in Tomokiyo&#x27;s table). Verbatim script output, not edited.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/navarre1586/texts/f333_decryption.md">f333_decryption.md</a></p><pre translate="no"># Output of targets/segur/decode.py, run 22 Oct 2026 with key_321.json on ct_333.txt (BLOCK0=63 NBLK=16). Clear text in capitals, cipher decoded in lower case, {n} = no value (name codes; 162 = Le Roy de Navarre in Tomokiyo&#x27;s table). Verbatim script output, not edited.
  L&#x27;ARMEE DU DUC DE MAYENNE DOIT ... ASSIEGER CASTILLON ... MONTAUBAN A FAILLY D&#x27;ESTRE SURPRISE PAR LA TRAHISON ET CONSPIRATION DU SR DE CLAUX ... DRAK A FAICT RAVAGE EN ESPAGNOLS. IL A RUINÉ ET RASÉ L&#x27;ISLE DE ST DOMINIQUE. IL EST ALLÉ A CARTAGENE ET FAIT TERREUR A TOUS LES ESPAGNOLS. {162} DESIRE FORT D&#x27;AVOIR DES NOUVELLES DE {204}de{189}{190}etqiiro
 etleuradviusurlecheminnaldoittenir
 etcomment IL ATTEND EN BONNE DEVOTION CE QUI LUY SERA MANDÉ POUR L&#x27;EFFECTUER 
@@ -123,7 +123,7 @@ etcomment IL ATTEND EN BONNE DEVOTION CE QUI LUY SERA MANDÉ POUR L&#x27;EFFECTU
 teraadhevai{166}etsonfreresontdebonnevo
 lonteilhautavancerlaleveeetlafairema
 reher LE PLUSTOST QU&#x27;ON POURRA. LE ROY DE NAVARRE A ENVOYÉ COMME VOUS SAVEZ LE SR DE VESIN DE LA MARSILLIERE A BERNE AVEC LES AMBASSADEURS DES QUATRE CANTONS DE SUISSE</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/navarre1586/texts/f333_reading.md">f333_reading.md</a></p><pre># Henry of Navarre, La Rochelle, 10 July 1586: news-sheet to Ségur (BnF 500 de Colbert 401 f. 333): reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/navarre1586/texts/f333_reading.md">f333_reading.md</a></p><pre translate="no"># Henry of Navarre, La Rochelle, 10 July 1586: news-sheet to Ségur (BnF 500 de Colbert 401 f. 333): reading
 
 Running text of the decoder output `texts/f333_decryption.md` (Tomokiyo&#x27;s f. 321 key), written out 23 Oct 2026
 (translation wave v7) as NOTES.md normalises it (&quot;f. 333&quot;): the clear text, in capitals in the decryption, is set in
@@ -143,7 +143,7 @@ qui luy sera mandé pour l&#x27;effectuer. [167] assurer qu&#x27;aussi tost que 
 [166] et son frere sont de bonne volonte; il fault avancer la levee et la faire marcher⟩ le plustost qu&#x27;on pourra. Le
 Roy de Navarre a envoyé, comme vous savez, le Sr de Vesin de la Marsilliere a Berne avec les ambassadeurs des quatre
 cantons de Suisse.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/navarre1586/texts/f333_en.md">f333_en.md</a></p><pre># Henry of Navarre, La Rochelle, 10 July 1586: news-sheet to Ségur (BnF 500 de Colbert 401 f. 333): English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/navarre1586/texts/f333_en.md">f333_en.md</a></p><pre translate="no"># Henry of Navarre, La Rochelle, 10 July 1586: news-sheet to Ségur (BnF 500 de Colbert 401 f. 333): English translation
 
 Translation (Claude Opus 5.5, 23 Oct 2026) of `texts/f333_reading.md` (clear text with the cipher in ⟨ ⟩). Same
 holes: `[166]`, `[167]`, `[189]`, `[190]`, `[204]` name codes with no value, `[…]` a run that makes no word, `…` clear
@@ -170,13 +170,13 @@ ambassadors of the four cantons of Switzerland.</pre></details>
 <a href="https://gallica.bnf.fr/ark:/12148/btv1b10035574w">Gallica</a> (views 359 and 369).</li>
 <li data-term-ok>S. Tomokiyo, &ldquo;Henry III&rsquo;s Figure Ciphers&rdquo; in <a href="https://cryptiana.web.fc2.com/code/henryiii.htm">French Ciphers during the Reign of Henry III</a> (cryptiana).</li>
 </ul>
-<p class="muted">The transcription, the extended key and the controls are in the repository (<code>targets/navarre1586/</code>); the scripts are in <code>targets/segur/</code>. Manuscript rights: Bibliothèque nationale de France.</p>
+<p class="muted">The transcription, the extended key and the controls are in the repository (<code translate="no">targets/navarre1586/</code>); the scripts are in <code translate="no">targets/segur/</code>. Manuscript rights: Bibliothèque nationale de France.</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Manuscript rights: Biblioth&egrave;que nationale de France</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="mercoeur1586.html" rel="prev">&larr; &ldquo;MR&rdquo; to Merc&oelig;ur 1586 [1586]</a><a href="matignon1586c3.html" rel="next">Matignon&rsquo;s Cipher-3 1586 1586 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

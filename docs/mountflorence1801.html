@@ -38,7 +38,7 @@
   </div>
 </div>
 <section class="hero">
-<div class="cipherstrip">475.723.529.377.723.460.475.475.377 = L U N E V I L L E &middot; 640.207.660.500.207 = P A R M A &middot; 679 Spain &middot; 434 France</div>
+<div class="cipherstrip" translate="no">475.723.529.377.723.460.475.475.377 = L U N E V I L L E &middot; 640.207.660.500.207 = P A R M A &middot; 679 Spain &middot; 434 France</div>
 <p class="kicker">Paris &rarr; Secretary of State &middot; one-part numerical code &middot; 18 March 1801 &middot; key recovered from the ciphertext</p>
 <h1>Mountflorence to the Secretary of State, Paris, 18 March 1801</h1>
 <div class="parties"><figure class="party recipient"><img src="portrait_james-madison.jpg" alt="James Madison" title="James Madison: Portrait by John Vanderlyn, 1816. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>James Madison</figcaption></figure></div><!-- /parties -->
@@ -70,7 +70,7 @@
 <h2 id="the-reading"><span class="num">02</span> The decrypted text</h2>
 <figure class="creveal" data-src="reveal/mountflorence1801.json"></figure>
 <p>Code groups are given with the text; spelled names in capitals; [?] marks a word fixed only by its place in the alphabet and the sense.</p>
-<pre>I have it from very good Authority, 357.723.640.544.529.684 DUPONT,
+<pre translate="no">I have it from very good Authority, 357.723.640.544.529.684 DUPONT,
 that 679 Spain has ceded 719 to, 434 France, not 432 Florida, 249 but[?], 688 the[?], 521 Mississippi[?],
 with all its Dependencies.
 This was done by some of the 666 secret Articles 228 at[?],
@@ -107,7 +107,7 @@ given 250 by, 434 France, 719 to, 640.207.660.500.207 PARMA.</pre>
 <li>The fifteen letter values rise with the alphabet (A 207 &hellip; Y 756), so the code is one-part. Each word group must then lie between the letters around it: 679 between S 664 and T 684 is Spain (&ldquo;679 has ceded&rdquo;), 434 between E and I is France, 666 between S and Spain is secret, 432 just before France is Florida. 521 between M and N is Mississippi, 688 and 719 between T and U are the and to, and 228, 249 and 250 between A and C are at, but and by.</li>
 <li>The decipherment was first made from the Founders text, where 250 had to be both C (in TUSCANY) and &ldquo;by&rdquo;. That predicted a slip: the C ought to be 251. The National Archives microfilm, located at frame 0097 of roll T1-1, shows 251. The other 38 groups agree with Founders.</li>
 </ol>
-<p>No plaintext of the letter and no existing key were used. The probable words came from the history of the 1800&ndash;1801 treaties. The statistical check (<code>docs/_validate.py</code>) returns &ldquo;too short&rdquo; at 39 groups. What holds the reading is the alphabetical order of all 25 values, the cross-checks between the four names and the confirmed prediction.</p>
+<p>No plaintext of the letter and no existing key were used. The probable words came from the history of the 1800&ndash;1801 treaties. The statistical check (<code translate="no">docs/_validate.py</code>) returns &ldquo;too short&rdquo; at 39 groups. What holds the reading is the alphabetical order of all 25 values, the cross-checks between the four names and the confirmed prediction.</p>
 
 <h2 id="what-remains-uncertain"><span class="num">05</span> What remains uncertain</h2>
 <ul>
@@ -122,7 +122,7 @@ given 250 by, 434 France, 719 to, 640.207.660.500.207 PARMA.</pre>
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>Decipherment of the two coded sentences</h3>
 <p>Mountflorence reports, on Dupont&#x27;s authority, that Spain has ceded to France not Florida but the Mississippi (Louisiana) with its dependencies, by secret articles at Luneville, in compensation for Tuscany given by France to Parma.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mountflorence1801/ciphertext.txt">ciphertext.txt</a></p><pre># Mountflorence to Madison (addressed to Marshall), Paris, 18 March 1801
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mountflorence1801/ciphertext.txt">ciphertext.txt</a></p><pre translate="no"># Mountflorence to Madison (addressed to Marshall), Paris, 18 March 1801
 # NARA RG 59, Despatches from US Consuls in Paris (T1), roll 1, frame 0097 (catalog NAID 211302912;
 # https://catalog.archives.gov/medialz/dc-metro/rg-059/302031/T1/T1-01/T1-01-0097.jpg), 1 p.
 # Transcribed from the microfilm frame, 26 Oct 2026, and checked against Founders Online Madison/02-91-02-0009.
@@ -132,8 +132,8 @@ given 250 by, 434 France, 719 to, 640.207.660.500.207 PARMA.</pre>
 # l.3 &quot;Dependencies ... 475.723.529.&quot; / l.4 &quot;377.723.460 ... 756,&quot; / l.5 &quot;given ... 207.&quot;
 [I have it from very good Authority,] 357. 723. 640. 544. 529. 684, [that] 679 [has ceded] 719, 434, [not] 432, 249, 688, 521, [with all its Dependencies.]
 [This was done by some of the] 666 [Articles] 228, 475. 723. 529. 377. 723. 460. 475. 475. 377., [as Compensation for] 684. 723. 664. 251. 207. 529. 756, [given] 250, 434, 719, 640. 207. 660. 500. 207.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mountflorence1801/decryption.txt">decryption.txt</a></p><pre>I have it from very good Authority, Dupont, that Spain has ceded to France, not Florida, but[?] the[?] Mississippi[?], with all its Dependencies. This was done by some of the secret Articles at[?] Luneville, as Compensation for Tuscany, given by France to Parma.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mountflorence1801/reading.txt">reading.txt</a></p><pre># Mountflorence to Madison (addressed to Marshall), Paris, 18 March 1801: the coded sentences, group by group.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mountflorence1801/decryption.txt">decryption.txt</a></p><pre translate="no">I have it from very good Authority, Dupont, that Spain has ceded to France, not Florida, but[?] the[?] Mississippi[?], with all its Dependencies. This was done by some of the secret Articles at[?] Luneville, as Compensation for Tuscany, given by France to Parma.</pre></details>
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mountflorence1801/reading.txt">reading.txt</a></p><pre translate="no"># Mountflorence to Madison (addressed to Marshall), Paris, 18 March 1801: the coded sentences, group by group.
 # Key: key.tsv (rebuilt here from the ciphertext; grades in NOTES.md). Code groups decoded: 39 of 39.
 # Spelled names in capitals; words read from their alphabetical slot and the context marked [?] where only the slot fixes them.
 
@@ -170,7 +170,7 @@ given by France to PARMA.</pre></details>
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; National Archives (NARA), RG 59, microfilm T1</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="r1944.html" rel="prev">&larr; Bourdeaux 1801 1801</a><a href="murray1801.html" rel="next">Murray to Madison 1801 1801 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

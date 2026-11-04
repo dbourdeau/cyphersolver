@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-<div class="cipherstrip">27 39 13 95 N F D 44 89 N &middot; das ich auch noch nit weiss &middot; 16 33 48 49 61 79 84 = e &middot; N = ch &middot; Z = st</div>
+<div class="cipherstrip" translate="no">27 39 13 95 N F D 44 89 N &middot; das ich auch noch nit weiss &middot; 16 33 48 49 61 79 84 = e &middot; N = ch &middot; Z = st</div>
 <p class="kicker">Westphalia &rarr; Kassel &middot; homophonic two-digit cipher with digraph signs and a small code &middot; January&ndash;March 1637</p>
 <h1>Otto von der Malsburg&rsquo;s cipher letters to Landgrave Wilhelm V, 1637</h1>
 <div class="parties"><figure class="party recipient"><img src="portrait_landgrave-wilhelm-v-of-hesse-kassel.jpg" alt="Landgrave Wilhelm V of Hesse-Kassel" title="Landgrave Wilhelm V of Hesse-Kassel: Portrait from an ancestral series, 17th century (Museumslandschaft Hessen Kassel). Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Landgrave Wilhelm V of Hesse-Kassel</figcaption></figure></div><!-- /parties -->
@@ -88,7 +88,7 @@
 
 <h2 id="the-reading"><span class="num">02</span> The decipherment</h2>
 <figure class="creveal" data-src="reveal/malsburg1637.json"></figure>
-<p>The quotations are from the readings of 22&ndash;23 October 2026 (<code>HCP496_reading.md</code> and the others, with English), in the writer&rsquo;s spelling as the figures give it (a normalisation of the 22 October pass was undone on the 23rd). &lang;&rang; encloses clear text, a bracketed number is an open three-digit code, &lt;&gt; an open sign, [?word] a doubtful word, [&hellip;] unread.</p>
+<p>The quotations are from the readings of 22&ndash;23 October 2026 (<code translate="no">HCP496_reading.md</code> and the others, with English), in the writer&rsquo;s spelling as the figures give it (a normalisation of the 22 October pass was undone on the 23rd). &lang;&rang; encloses clear text, a bracketed number is an open three-digit code, &lt;&gt; an open sign, [?word] a doubtful word, [&hellip;] unread.</p>
 <h3>5/15 January 1637 (f. 3)</h3>
 <blockquote>⟨… gemachet,⟩ das ich auch noch nit weis, wo hervor unsre Garnisonen hirnechst der Unterhalt her, so in Frucht ⟨und⟩ [201] bestehet, genommen werden soll; ⟨das⟩ die Contributiones vom platten Lande sowol alhir als in [239] ein Ende haben. &hellip; Es ist noch Zeit, das man sich beim König von Ungern angebe wegen der Fridenstractaten ⟨und⟩ salvum conductum vor &lt;H#&gt; Gesanten nach {Cöln} sollicitire.</blockquote>
 <p>He does not know where the garrisons&rsquo; keep is to come from now that the contributions from the open country have ended, both here and in &lt;239&gt;. The rations are now reckoned monthly in Kassel <i>Viertel</i> of grain, because the non-commissioned officers draw double bread. It is still time to press the King of Hungary (Ferdinand III) for the peace talks and for safe-conducts for the Hessian envoys to Cologne.</p>
@@ -122,13 +122,13 @@
 <p><strong>The alphabetic key is recovered; the reading remains critical.</strong> Larry Beck and ChatGPT continued from Bourdeau&rsquo;s transcription and recovered a period-five shift cipher. The original normalized transcription has 523 alphabetic positions; a selected reading from the authentic 2834 &times; 4284-pixel source image has 510. Both inputs and both literal outputs are preserved. The earlier figure of 531 also counted the four characters of the two LL labels and the four letters of the blot annotation; these are not ordinary cipher letters. This contribution concerns the separate ten-line block, not the surrounding numerical cipher.</p>
 
 <h3>The mechanism and its checks</h3>
-<p>Index <code>abcdefghiklmnopqrstuwxyz</code> from 0 to 23. To decrypt, subtract repeating shifts <code>4,5,3,6,2</code> modulo 24. The first ordinary letter uses shift 4, and phase continues across all ten lines. Normalization maps <i>ü</i> to <i>u</i>, <i>ÿ</i> to <i>y</i>, and the provisional <i>j</i> reading to <i>i</i>. Treat 43, 45, the angular LL pair, punctuation and the blot marker outside the ordinary alphabetic stream.</p>
+<p>Index <code translate="no">abcdefghiklmnopqrstuwxyz</code> from 0 to 23. To decrypt, subtract repeating shifts <code translate="no">4,5,3,6,2</code> modulo 24. The first ordinary letter uses shift 4, and phase continues across all ten lines. Normalization maps <i>ü</i> to <i>u</i>, <i>ÿ</i> to <i>y</i>, and the provisional <i>j</i> reading to <i>i</i>. Treat 43, 45, the angular LL pair, punctuation and the blot marker outside the ordinary alphabetic stream.</p>
 <p>The zero-advancement convention for 43, 45 and LL was preferred among 125 consistent modulo-five treatments. It does not identify a group, establish its expansion length or prove the amount of text beneath the blot. Re-encryption checks arithmetic and transcription consistency, not the truth of the reading.</p>
 <p>The earlier evidence package records an exhaustive check of all 7,962,624 five-position keys against the unchanged first 112 letters with a frozen German four-letter model; the same key and top ten results were reproduced. The public verifier below is a separate, smaller replay of the published inputs, alignment and alternatives. It does not repeat that exhaustive language-model search or independently authenticate manuscript readings.</p>
 
 <h3>German working reading</h3>
 <p>Word division, capitalization and punctuation are editorial. Square brackets preserve an unresolved code, gap or alternative; daggers mark an unresolved literal form. The colon after <i>schreiben</i> is an interpretation of the sentence&rsquo;s scope, not deciphered punctuation.</p>
-<blockquote lang="de">Der [43] stehet itzo aufm Sprunge. Wollen [45] seiner gern los sein und ihn entbehren konnen, so ist es nun Zeit, das [LL] schreiben: weil sie sehen, das er mit den Schwedischen Generalen des Commendo halber sich nicht uergleichen †wurden†, [45] Estat aber erforderte, dat sie ihre †tqouppen† [Trouppen?] bey die Schweden und die Schweden wider bey sie stossen musten, auch [LL] actiones ihme nit mer gefielen, und uber das ihme solche absolute Gewalt, wie er begerte, nit geben konten, so stelleten sie es dahin, wa[BLOT]s ihme zu thun [gefellig/gefellng]; wolten ihn auch wider seine Gelegenheit nit aufhalten, sondern ihn nach [ihrem/khrem] †itzigdn† [itzigen?] Estat und Moglichkeit contentire[n?] lassen.</blockquote>
+<blockquote lang="de" translate="no">Der [43] stehet itzo aufm Sprunge. Wollen [45] seiner gern los sein und ihn entbehren konnen, so ist es nun Zeit, das [LL] schreiben: weil sie sehen, das er mit den Schwedischen Generalen des Commendo halber sich nicht uergleichen †wurden†, [45] Estat aber erforderte, dat sie ihre †tqouppen† [Trouppen?] bey die Schweden und die Schweden wider bey sie stossen musten, auch [LL] actiones ihme nit mer gefielen, und uber das ihme solche absolute Gewalt, wie er begerte, nit geben konten, so stelleten sie es dahin, wa[BLOT]s ihme zu thun [gefellig/gefellng]; wolten ihn auch wider seine Gelegenheit nit aufhalten, sondern ihn nach [ihrem/khrem] †itzigdn† [itzigen?] Estat und Moglichkeit contentire[n?] lassen.</blockquote>
 
 <h3>English, retaining the possible proposed-letter scope</h3>
 <blockquote>[43] is now on the point of making a move [perhaps departing]. If [45] wish to be rid of him and can do without him, now is the time for [LL] to write [perhaps to the following effect]: since they see that he would not reach agreement with the Swedish generals over command [the German has singular <i>er</i> with plural <i>wurden</i>], while the situation of [45] required the joining of their [troops?] to the Swedes and, reciprocally, of the Swedes to them; and the actions associated with [LL] no longer pleased him; and moreover [they] could not give him the absolute authority he demanded, they would leave the matter to what [blot in the German] he found [pleasing?] to do. They would also not detain him against his convenience or circumstances, but would have him given satisfaction according to [their?] [present?] circumstances and ability [the final <i>n</i> in <i>contentiren</i> is source-uncertain].</blockquote>
@@ -139,87 +139,87 @@
 <!-- alphabetic:edition -->
 <details class="fold" id="alphabetic-line-1">
 <summary>Line 01 - 53 positions, start phase 0</summary>
-<p><strong>Selected normalized source</strong></p><pre data-line="1" data-layer="source" style="white-space:pre-wrap;overflow-wrap:anywhere"><code>hku.43.zwinhalyergxkrwwtzsklysqolp.45.xkmtgwmhypptwzgnsytfnnq</code></pre>
-<p><strong>Unchanged literal decryption</strong></p><pre data-line="1" data-layer="literal" style="white-space:pre-wrap;overflow-wrap:anywhere"><code>der.[43].stehetitzoaufmsprungewollen.[45].seinergernlosseinundihn</code></pre>
-<p lang="de"><strong>German working reading:</strong> Der [43] stehet itzo aufm Sprunge. Wollen [45] seiner gern los sein und ihn</p>
+<p><strong>Selected normalized source</strong></p><pre data-line="1" data-layer="source" style="white-space:pre-wrap;overflow-wrap:anywhere" translate="no"><code translate="no">hku.43.zwinhalyergxkrwwtzsklysqolp.45.xkmtgwmhypptwzgnsytfnnq</code></pre>
+<p><strong>Unchanged literal decryption</strong></p><pre data-line="1" data-layer="literal" style="white-space:pre-wrap;overflow-wrap:anywhere" translate="no"><code translate="no">der.[43].stehetitzoaufmsprungewollen.[45].seinergernlosseinundihn</code></pre>
+<p lang="de" translate="no"><strong>German working reading:</strong> Der [43] stehet itzo aufm Sprunge. Wollen [45] seiner gern los sein und ihn</p>
 <p lang="en"><strong>English interpretation:</strong> [43] is now on the point of making a move [perhaps departing]. If [45] wish to be rid of him and</p>
 <p class="muted"><strong>Apparatus:</strong> A second image-only comparison now strongly favors 43 against the two clear 45 groups and the 3 in the year 1637. This improves the graphic reading only; no code value is identified.</p>
 </details>
 <details class="fold" id="alphabetic-line-2">
 <summary>Line 02 - 59 positions, start phase 3</summary>
-<p><strong>Selected normalized source</strong></p><pre data-line="2" data-layer="source" style="white-space:pre-wrap;overflow-wrap:anywhere"><code>lpyghotisnuprkqzqnyxluraqfgnzggu.LLxhlygnghtyioozliyhogridzgwr</code></pre>
-<p><strong>Unchanged literal decryption</strong></p><pre data-line="2" data-layer="literal" style="white-space:pre-wrap;overflow-wrap:anywhere"><code>entbehrenkonnensoistesnunzeitdas.[LL]schreibenweilsiesehendaserm</code></pre>
-<p lang="de"><strong>German working reading:</strong> entbehren konnen, so ist es nun Zeit, das [LL] schreiben: weil sie sehen, das er m-</p>
+<p><strong>Selected normalized source</strong></p><pre data-line="2" data-layer="source" style="white-space:pre-wrap;overflow-wrap:anywhere" translate="no"><code translate="no">lpyghotisnuprkqzqnyxluraqfgnzggu.LLxhlygnghtyioozliyhogridzgwr</code></pre>
+<p><strong>Unchanged literal decryption</strong></p><pre data-line="2" data-layer="literal" style="white-space:pre-wrap;overflow-wrap:anywhere" translate="no"><code translate="no">entbehrenkonnensoistesnunzeitdas.[LL]schreibenweilsiesehendaserm</code></pre>
+<p lang="de" translate="no"><strong>German working reading:</strong> entbehren konnen, so ist es nun Zeit, das [LL] schreiben: weil sie sehen, das er m-</p>
 <p lang="en"><strong>English interpretation:</strong> can do without him, now is the time for [LL] to write [perhaps to the following effect]: since they see that he ...</p>
 <p class="muted"><strong>Apparatus:</strong> L2:27 source q→g has direct image support and gives Zeit. The colon after schreiben is editorial and expresses one scope interpretation, not decoded punctuation.</p>
 </details>
 <details class="fold" id="alphabetic-line-3">
 <summary>Line 03 - 63 positions, start phase 2</summary>
-<p><strong>Selected normalized source</strong></p><pre data-line="3" data-layer="source" style="white-space:pre-wrap;overflow-wrap:anywhere"><code>mafiswikakgpugnhtiishycpkqkgxhrsoisgukeqeltxofopnhlaxixkrgnhllp</code></pre>
-<p><strong>Unchanged literal decryption</strong></p><pre data-line="3" data-layer="literal" style="white-space:pre-wrap;overflow-wrap:anywhere"><code>itdenschwedischengeneralendescommendohalbersichnichtuergleichen</code></pre>
-<p lang="de"><strong>German working reading:</strong> it den Schwedischen Generalen des Commendo halber sich nicht uergleichen</p>
+<p><strong>Selected normalized source</strong></p><pre data-line="3" data-layer="source" style="white-space:pre-wrap;overflow-wrap:anywhere" translate="no"><code translate="no">mafiswikakgpugnhtiishycpkqkgxhrsoisgukeqeltxofopnhlaxixkrgnhllp</code></pre>
+<p><strong>Unchanged literal decryption</strong></p><pre data-line="3" data-layer="literal" style="white-space:pre-wrap;overflow-wrap:anywhere" translate="no"><code translate="no">itdenschwedischengeneralendescommendohalbersichnichtuergleichen</code></pre>
+<p lang="de" translate="no"><strong>German working reading:</strong> it den Schwedischen Generalen des Commendo halber sich nicht uergleichen</p>
 <p lang="en"><strong>English interpretation:</strong> ... would not reach agreement with the Swedish generals over command ...</p>
 <p class="muted"><strong>Apparatus:</strong> GENERALEN and the command phrase survive all 64 combined source alternatives. L3 h/u still changes nicht/nipht. uergleichen is literal; v is not in the cipher alphabet.</p>
 </details>
 <details class="fold" id="alphabetic-line-4">
 <summary>Line 04 - 53 positions, start phase 0</summary>
-<p><strong>Selected normalized source</strong></p><pre data-line="4" data-layer="source" style="white-space:pre-wrap;overflow-wrap:anywhere"><code>aaukgr.45.kwacyfeltixiuthkuaghfxzliolygywrbrtkqhgcimlugnz</code></pre>
-<p><strong>Unchanged literal decryption</strong></p><pre data-line="4" data-layer="literal" style="white-space:pre-wrap;overflow-wrap:anywhere"><code>wurden.[45].estatabererfordertedatsieihretqouppenbeydieschw</code></pre>
-<p lang="de"><strong>German working reading:</strong> †wurden†, [45] Estat aber erforderte, dat sie ihre †tqouppen† [Trouppen?] bey die Schw-</p>
+<p><strong>Selected normalized source</strong></p><pre data-line="4" data-layer="source" style="white-space:pre-wrap;overflow-wrap:anywhere" translate="no"><code translate="no">aaukgr.45.kwacyfeltixiuthkuaghfxzliolygywrbrtkqhgcimlugnz</code></pre>
+<p><strong>Unchanged literal decryption</strong></p><pre data-line="4" data-layer="literal" style="white-space:pre-wrap;overflow-wrap:anywhere" translate="no"><code translate="no">wurden.[45].estatabererfordertedatsieihretqouppenbeydieschw</code></pre>
+<p lang="de" translate="no"><strong>German working reading:</strong> †wurden†, [45] Estat aber erforderte, dat sie ihre †tqouppen† [Trouppen?] bey die Schw-</p>
 <p lang="en"><strong>English interpretation:</strong> ... [German has plural wurden], while the situation of [45] required a junction of their [troops?] with the Swedes ...</p>
 <p class="muted"><strong>Apparatus:</strong> wurden is retained with its singular er / plural verb difficulty. Source L4:37 w gives q in tqouppen; x would give r but is not the image reading. dat remains literal, without a dialect claim.</p>
 </details>
 <details class="fold" id="alphabetic-line-5">
 <summary>Line 05 - 50 positions, start phase 3</summary>
-<p><strong>Selected normalized source</strong></p><pre data-line="5" data-layer="source" style="white-space:pre-wrap;overflow-wrap:anywhere"><code>lfisytfhohzembhkgrbmkgwgheunkwaqxyht,ozyxlpeafo.LLcgzm</code></pre>
-<p><strong>Unchanged literal decryption</strong></p><pre data-line="5" data-layer="literal" style="white-space:pre-wrap;overflow-wrap:anywhere"><code>edenunddieschwedenwiderbeysiestossen,mustenauch.[LL]acti</code></pre>
-<p lang="de"><strong>German working reading:</strong> eden und die Schweden wider bey sie stossen musten, auch [LL] acti-</p>
+<p><strong>Selected normalized source</strong></p><pre data-line="5" data-layer="source" style="white-space:pre-wrap;overflow-wrap:anywhere" translate="no"><code translate="no">lfisytfhohzembhkgrbmkgwgheunkwaqxyht,ozyxlpeafo.LLcgzm</code></pre>
+<p><strong>Unchanged literal decryption</strong></p><pre data-line="5" data-layer="literal" style="white-space:pre-wrap;overflow-wrap:anywhere" translate="no"><code translate="no">edenunddieschwedenwiderbeysiestossen,mustenauch.[LL]acti</code></pre>
+<p lang="de" translate="no"><strong>German working reading:</strong> eden und die Schweden wider bey sie stossen musten, auch [LL] acti-</p>
 <p lang="en"><strong>English interpretation:</strong> ... and reciprocally of the Swedes with them; and [LL]’s actions ...</p>
 <p class="muted"><strong>Apparatus:</strong> This is a requirement for reciprocal joining, not evidence that movement occurred. LL is an alias for two angular signs, not a proven pair of Latin letters or a personal name.</p>
 </details>
 <details class="fold" id="alphabetic-line-6">
 <summary>Line 06 - 52 positions, start phase 3</summary>
-<p><strong>Selected normalized source</strong></p><pre data-line="6" data-layer="source" style="white-space:pre-wrap;overflow-wrap:anywhere"><code>upiymooismaoixklhnkolpzsgbdixggunnplusqfogegwunzzhng</code></pre>
-<p><strong>Unchanged literal decryption</strong></p><pre data-line="6" data-layer="literal" style="white-space:pre-wrap;overflow-wrap:anywhere"><code>onesihmenitmergefielenunduberdasihmesolcheabsolutege</code></pre>
-<p lang="de"><strong>German working reading:</strong> ones ihme nit mer gefielen, und uber das ihme solche absolute Ge-</p>
+<p><strong>Selected normalized source</strong></p><pre data-line="6" data-layer="source" style="white-space:pre-wrap;overflow-wrap:anywhere" translate="no"><code translate="no">upiymooismaoixklhnkolpzsgbdixggunnplusqfogegwunzzhng</code></pre>
+<p><strong>Unchanged literal decryption</strong></p><pre data-line="6" data-layer="literal" style="white-space:pre-wrap;overflow-wrap:anywhere" translate="no"><code translate="no">onesihmenitmergefielenunduberdasihmesolcheabsolutege</code></pre>
+<p lang="de" translate="no"><strong>German working reading:</strong> ones ihme nit mer gefielen, und uber das ihme solche absolute Ge-</p>
 <p lang="en"><strong>English interpretation:</strong> ... no longer pleased him, and moreover such absolute authority ...</p>
 <p class="muted"><strong>Apparatus:</strong> Source g/q gives solche/solcho. Source word divisions and modern umlauts are not supplied in the literal layer. Actions associated with LL is a grammatical reading.</p>
 </details>
 <details class="fold" id="alphabetic-line-7">
 <summary>Line 07 - 51 positions, start phase 0</summary>
-<p><strong>Selected normalized source</strong></p><pre data-line="7" data-layer="source" style="white-space:pre-wrap;overflow-wrap:anywhere"><code>afoaynkhydimhywismaiightmssxlpxtwagpqhagrymlgxidolr</code></pre>
-<p><strong>Unchanged literal decryption</strong></p><pre data-line="7" data-layer="literal" style="white-space:pre-wrap;overflow-wrap:anywhere"><code>waltwieerbegertenitgebenkontensostelletensieesdahin</code></pre>
-<p lang="de"><strong>German working reading:</strong> walt, wie er begerte, nit geben konten, so stelleten sie es dahin,</p>
+<p><strong>Selected normalized source</strong></p><pre data-line="7" data-layer="source" style="white-space:pre-wrap;overflow-wrap:anywhere" translate="no"><code translate="no">afoaynkhydimhywismaiightmssxlpxtwagpqhagrymlgxidolr</code></pre>
+<p><strong>Unchanged literal decryption</strong></p><pre data-line="7" data-layer="literal" style="white-space:pre-wrap;overflow-wrap:anywhere" translate="no"><code translate="no">waltwieerbegertenitgebenkontensostelletensieesdahin</code></pre>
+<p lang="de" translate="no"><strong>German working reading:</strong> walt, wie er begerte, nit geben konten, so stelleten sie es dahin,</p>
 <p lang="en"><strong>English interpretation:</strong> ... as he demanded, [they] could not give him, they would leave the matter to ...</p>
 <p class="muted"><strong>Apparatus:</strong> L7 overlap counted zero is selected; a one-sign alternative is supplied. The h/? reading also remains provisional. English [they] before could not give is syntactically supplied.</p>
 </details>
 <details class="fold" id="alphabetic-line-8">
 <summary>Line 08 - 50 positions, start phase 1</summary>
-<p><strong>Selected normalized source</strong></p><pre data-line="8" data-layer="source" style="white-space:pre-wrap;overflow-wrap:anywhere"><code>bd[BLOT]zlmrhfxynytiilhrnnmzunykqpkrfyikaogltxkmtglkolii</code></pre>
-<p><strong>Unchanged literal decryption</strong></p><pre data-line="8" data-layer="literal" style="white-space:pre-wrap;overflow-wrap:anywhere"><code>wa[BLOT]sihmezuthungefelligwoltenihnauchwiderseinegelege</code></pre>
-<p lang="de"><strong>German working reading:</strong> wa[BLOT]s ihme zu thun [gefellig/gefellng]; wolten ihn auch wider seine Gelege-</p>
+<p><strong>Selected normalized source</strong></p><pre data-line="8" data-layer="source" style="white-space:pre-wrap;overflow-wrap:anywhere" translate="no"><code translate="no">bd[BLOT]zlmrhfxynytiilhrnnmzunykqpkrfyikaogltxkmtglkolii</code></pre>
+<p><strong>Unchanged literal decryption</strong></p><pre data-line="8" data-layer="literal" style="white-space:pre-wrap;overflow-wrap:anywhere" translate="no"><code translate="no">wa[BLOT]sihmezuthungefelligwoltenihnauchwiderseinegelege</code></pre>
+<p lang="de" translate="no"><strong>German working reading:</strong> wa[BLOT]s ihme zu thun [gefellig/gefellng]; wolten ihn auch wider seine Gelege-</p>
 <p lang="en"><strong>English interpretation:</strong> ... what [blot in the German] he found [pleasing?] to do. They would also not detain him against his convenience ...</p>
 <p class="muted"><strong>Apparatus:</strong> The blot remains visible as a gap marker; its deleted extent is unknown. Zero advancement constrains no expansion length. Source ÿ/iÿ is a count uncertainty; n/r gives gefellig/gefellng.</p>
 </details>
 <details class="fold" id="alphabetic-line-9">
 <summary>Line 09 - 52 positions, start phase 1</summary>
-<p><strong>Selected normalized source</strong></p><pre data-line="9" data-layer="source" style="white-space:pre-wrap;overflow-wrap:anywhere"><code>slllysmaczllgnykqzqrihypnnqtcgnmotirmabnmgtgxzdaxrip</code></pre>
-<p><strong>Unchanged literal decryption</strong></p><pre data-line="9" data-layer="literal" style="white-space:pre-wrap;overflow-wrap:anywhere"><code>nheitnitaufhaltensondernihnnachihremitzigdnestatundm</code></pre>
-<p lang="de"><strong>German working reading:</strong> nheit nit aufhalten, sondern ihn nach [ihrem/khrem] †itzigdn† [itzigen?] Estat und M-</p>
+<p><strong>Selected normalized source</strong></p><pre data-line="9" data-layer="source" style="white-space:pre-wrap;overflow-wrap:anywhere" translate="no"><code translate="no">slllysmaczllgnykqzqrihypnnqtcgnmotirmabnmgtgxzdaxrip</code></pre>
+<p><strong>Unchanged literal decryption</strong></p><pre data-line="9" data-layer="literal" style="white-space:pre-wrap;overflow-wrap:anywhere" translate="no"><code translate="no">nheitnitaufhaltensondernihnnachihremitzigdnestatundm</code></pre>
+<p lang="de" translate="no"><strong>German working reading:</strong> nheit nit aufhalten, sondern ihn nach [ihrem/khrem] †itzigdn† [itzigen?] Estat und M-</p>
 <p lang="en"><strong>English interpretation:</strong> ... but would have him given satisfaction according to [their?] [present?] circumstances and ...</p>
 <p class="muted"><strong>Apparatus:</strong> Source m/n gives ihrem/khrem. L9:38 a is image-supported. Source L9:42 g gives d in itzigdn; h would give e but is not the image reading. itzigen is editorial conjecture.</p>
 </details>
 <details class="fold" id="alphabetic-line-10">
 <summary>Line 10 - 27 positions, start phase 3</summary>
-<p><strong>Selected normalized source</strong></p><pre data-line="10" data-layer="source" style="white-space:pre-wrap;overflow-wrap:anywhere"><code>uipofomioxiqrzhtwnxhtneywlp</code></pre>
-<p><strong>Unchanged literal decryption</strong></p><pre data-line="10" data-layer="literal" style="white-space:pre-wrap;overflow-wrap:anywhere"><code>oglichkeitcontentirenlassen</code></pre>
-<p lang="de"><strong>German working reading:</strong> oglichkeit contentire[n?] lassen.</p>
+<p><strong>Selected normalized source</strong></p><pre data-line="10" data-layer="source" style="white-space:pre-wrap;overflow-wrap:anywhere" translate="no"><code translate="no">uipofomioxiqrzhtwnxhtneywlp</code></pre>
+<p><strong>Unchanged literal decryption</strong></p><pre data-line="10" data-layer="literal" style="white-space:pre-wrap;overflow-wrap:anywhere" translate="no"><code translate="no">oglichkeitcontentirenlassen</code></pre>
+<p lang="de" translate="no"><strong>German working reading:</strong> oglichkeit contentire[n?] lassen.</p>
 <p lang="en"><strong>English interpretation:</strong> ... ability [contentiren: final n source-uncertain].</p>
 <p class="muted"><strong>Apparatus:</strong> Source q at 12 and ÿ at 24 have independent visual support. Source t at 21 remains uncertain, hence final n in contentiren is marked. No payment, arrears or sum is stated.</p>
 </details>
 <!-- /alphabetic:edition -->
 <p>The <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/malsburg1637/alphabetic">alphabetic evidence folder</a> supplies the <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/alphabetic/alphabetic_selected_alignment.csv">sign-by-sign selected alignment</a>, <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/alphabetic/alphabetic_edit_ledger.csv">edit ledger</a>, <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/alphabetic/alphabetic_alternatives.json">defined alternatives</a> and <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/alphabetic/alphabetic_provenance.json">provenance</a>. Reproduce the published arithmetic and branch checks with:</p>
-<pre><code>python targets/malsburg1637/alphabetic/alphabetic_verify.py</code></pre>
+<pre translate="no"><code translate="no">python targets/malsburg1637/alphabetic/alphabetic_verify.py</code></pre>
 
 <h3>What the source choices change</h3>
 <p>Separate AI readings were made without supplying the proposed plaintext, followed by targeted rereading. Selection between ambiguous branches also used linguistic coherence; the selected 510-position stream is not therefore independent confirmation of every word. The difference ledger has 33 runs: 15 single-letter deletions, one insertion, one length-increasing <i>u</i>-to-<i>ii</i> replacement and 16 substitutions, for a net reduction of 13 positions. That accounting is not a unique reconstruction of scribal errors.</p>
@@ -258,7 +258,7 @@
 <h3>ff. 3-4, 5/15 Jan 1637 <span class="st partial">read in part</span></h3>
 <p>Malsburg reports that he does not know where the garrisons&#x27; upkeep is to come from now that the contributions from the open country have ended, and urges that a safe-conduct for the envoys to the peace talks at &lt;128 Cöln&gt; be solicited from the King of Hungary. Block &#x27;work/f003.txt&#x27; of reading_segmented.txt; f. 4 (address leaf) only in work/reading_auto.txt.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (89% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/ct/hcp496.txt">hcp496.txt</a></p><pre>27 39 13 95 N F D 44 89 N 83 11 41 37 G 68 18 35 82 48 97 71 73 30 88 44 P 13? 30 61 29 70 25 83 95 13 35 63
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/ct/hcp496.txt">hcp496.txt</a></p><pre translate="no">27 39 13 95 N F D 44 89 N 83 11 41 37 G 68 18 35 82 48 97 71 73 30 88 44 P 13? 30 61 29 70 25 83 95 13 35 63
 79 31 72 36&#x27; 25 83 16 D Z 46 84 97 58 44 41 84 97 21 39 15 96 82 48 65 13 89 36&#x27; 83 23 25 71 N 60 201 91 49 O 6?
 82 84 94 43 79 63 73 R 48 31 18 48 30 27 84 44 77 73 H 46 66 84 80 73 44 60 25 69 76 24 60 69 45 63 16 74 71
 35 42 81 15 39 L 61 63 15 55 83 27 84 13 35 18 93 99 28 15 82 11 25 39 99 68 36 83 239 G 63 79 63 46 16 82 70 10 16 22
@@ -274,7 +274,7 @@
 39 31 50 70 22 54 16 22 90 71 94? 30 55 19 26 11 30 79 31 S 23 32 36 74 79 56 36 26
 40 11 54 84 57 52 71 54 O 48 7? 61 26 29 55 30 91 36 16 15 32 79 30 73 18 49 43 61 63
 10 84 L 70 29 16 21 73 N 83 7? 26 36 43 77 Y 83</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f003.txt">f003.txt</a></p><pre># f. 3 (HCPortal 496), Malsburg to the Kassel councillors, 5/15 Jan 1637. One cipher line per scan line.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f003.txt">f003.txt</a></p><pre translate="no"># f. 3 (HCPortal 496), Malsburg to the Kassel councillors, 5/15 Jan 1637. One cipher line per scan line.
 # Groups separated by spaces; capital letters are letter signs; clear words in {braces}; &#x27; = dot above the group;
 # ? = doubtful reading; / marks a line break inside the scan.
 {gemachet,} 27 39 13 95 N F D 44 89 N 83 11 41 37 G 68 18 35 82 48 97 71 73 30 88 44 P 13? 30 61 29 70 25 83 95 13 35 63
@@ -294,7 +294,7 @@
 39 31 50 70 22 54 16 22 90 71 94? 30 55 19 26 11 30 79 31 S 23 32 36 74 79 56 36 26
 40 11 54 84 57 52 71 54 O 48 7? 61 26 29 55 30 91 36 16 15 32 79 30 73 18 49 43 61 63
 10 84 L 70 29 16 21 73 N 83 7? 26 36 43 77 Y 83</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f004.txt">f004.txt</a></p><pre># f. 4 (scan hstam_4_h_1411_0004_Cryp.jpg): outer/address side of the f. 3 letter, with two seals.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f004.txt">f004.txt</a></p><pre translate="no"># f. 4 (scan hstam_4_h_1411_0004_Cryp.jpg): outer/address side of the f. 3 letter, with two seals.
 # Address (dark ink, bottom centre): &quot;Denen Edlen gestrengen und Ehrenvesten auch Edlen Ehrnvesten und
 # hochgelahrten F. hess. geheimbten ... Cassell&quot;; clear docket at left edge.
 # NO CIPHER written on this side. All the figures on the page are show-through of f. 3 seen through the paper
@@ -304,7 +304,7 @@
 # 0 new groups. (The show-through is too faint to use as an independent check on f003&#x27;s doubtful groups.)</pre></details>
 <p class="ftext">Decryption: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/reading_segmented.txt">reading_segmented.txt</a></p>
 <p class="ftext">Decryption: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/work/reading_auto.txt">reading_auto.txt</a></p>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP496_reading.md">HCP496_reading.md</a></p><pre># HCPortal 496 (HStAM 4 h Nr. 1411, f. 3), Malsburg to the councillors at Kassel, 5/15 Jan 1637 — reading of the cipher
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP496_reading.md">HCP496_reading.md</a></p><pre translate="no"># HCPortal 496 (HStAM 4 h Nr. 1411, f. 3), Malsburg to the councillors at Kassel, 5/15 Jan 1637 — reading of the cipher
 
 Rests on: `f003.txt` (Bourdeau&#x27;s hand transcription of f. 3, one cipher line per scan line) decoded with `key.txt`
 unchanged (`research/reading_audit/b08_dec.py`), the breaks checked on the HCPortal original scan
@@ -340,7 +340,7 @@ Es ist noch Zeit, das man sich beim König von Ungern angebe wegen der Fridenstr
   blot. &quot;nötig&quot;: `83 7? 26 36 43` = n 7 t i g; the same 7 stands where ö is needed. One sign cannot be both h and ö, so
   both words are marked partly carried.
 - &quot;biel&quot; = viel (b for v, as elsewhere in these letters).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP496_en.md">HCP496_en.md</a></p><pre># HCPortal 496 (f. 3), Malsburg to the councillors at Kassel, 5/15 Jan 1637 — English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP496_en.md">HCP496_en.md</a></p><pre translate="no"># HCPortal 496 (f. 3), Malsburg to the councillors at Kassel, 5/15 Jan 1637 — English
 
 Translation of `HCP496_reading.md` (22 Oct 2026, batch b08), with the same holes: `[201]` an unvalued code, `&lt;+&gt;` an
 unvalued sign, `[?word]` partly carried, `[…]` unread; {Cologne} = code 128 valued from context. ⟨...⟩ = clear words.
@@ -359,7 +359,7 @@ It is still time for one to present oneself to the King of Hungary about the pea
 <h3>ff. 12-13, Wesel, 7/17 Jan 1637 <span class="st partial">read in part</span></h3>
 <p>From Wesel: he does not know whether to go to &lt;148&gt; or to the army; the recruits and Dalwig&#x27;s Verehrungsgelder, Eberstein&#x27;s regiment, and the impossibility of travelling through Friesland with wagons and horses; word that it was decided at Regensburg to give the envoys to &lt;128 Cöln&gt; no safe-conduct, and of talks apart at &lt;130 Hamburg&gt; or Lübeck. Block &#x27;work/f012.txt&#x27; of reading_segmented.txt.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (91% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/ct/hcp497.txt">hcp497.txt</a></p><pre>95 N 37 Y 74 31 71 22 83 11 D 26 18 36 79 95 D
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/ct/hcp497.txt">hcp497.txt</a></p><pre translate="no">95 N 37 Y 74 31 71 22 83 11 D 26 18 36 79 95 D
 16 63 98 84 54 70 31 O 48 H 49 22 74 35 N 93 91 H# 83 89 N 69 44 148 35 27 61 25 76 Y 46 79? 97 55 97 42 16 84 68 G 83 37 48
 G 83 49 30 Y P 61 63 93 D 58 35 97 13 95 N 29 49 72 48 63 13 73 99 94 79 XX 42 G 63 16 55 76 50 84 65 94 95 43 58 83 5?
 259 73 27 49 97 258 j 95 80 51 48 31 92 35 22 41 61 83 93 67 61 25 98 93 15 60 16 63 18 58 97 46 49 24 66 H 84 40 Y 96 29 49 18
@@ -382,7 +382,7 @@ Y 10 34 71 39 97 27 84 42 11 H? 22 84 57 61 44 51 55 83 71 83 27 94 70 42 7?
 21 28 99 41 61 63 13 35 99 60 84 83 42 66 H? 46 49 97 140 98 58 65 67 49 42 39 63 27 71 97
 D 137 39 81 70 30 26 52 58 130 45 46 48? 65 99 88 76 49 19 92 60 30 70 80 60 66 63 49 83
 99 55 W 79 63</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f012.txt">f012.txt</a></p><pre># f. 12, Malsburg to the Landgrave, 7/17 January 1637 (&quot;Datum Wesel den 7/17 Januarij Ao 1637&quot;). One cipher line per scan line.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f012.txt">f012.txt</a></p><pre translate="no"># f. 12, Malsburg to the Landgrave, 7/17 January 1637 (&quot;Datum Wesel den 7/17 Januarij Ao 1637&quot;). One cipher line per scan line.
 # Groups separated by spaces; capital letters are letter signs; clear words in {braces}; &#x27; = dot above the group;
 # ? = doubtful reading; # = crossed sign; _ = underlined sign.
 # j = a hooked i/j-shaped sign standing alone as a group (distinct from 1); Q = a Q-shaped capital sign.
@@ -427,7 +427,7 @@ alfoaÿnkhÿdimhÿwismaiilghzmssxlpxtwagpqhagrÿmlgxidolr
 bd[blot]zlmrhfxÿnÿtiilhrnnmzünÿkqpkrfÿiklaoglltxkmtglkolii
 slllÿsmaczllgnÿkgzgrihÿpnngtlcgnmotirmabnmgtgxzdaxrip
 üipofomioxigrzhtwnxhtnejwlp</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f013.txt">f013.txt</a></p><pre># f. 13 (scan hstam_4_h_1411_0013_Cryp.jpg): outer/address side of a letter, with two seals and silk ties.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f013.txt">f013.txt</a></p><pre translate="no"># f. 13 (scan hstam_4_h_1411_0013_Cryp.jpg): outer/address side of a letter, with two seals and silk ties.
 # Address: &quot;Dem durchlauchtigen hochgebornen Fürsten und Herrn, H. Wilhelmen Landtgraffen zu Hessen ... meinem
 # gnädigen Fürsten und Herrn&quot; -- &quot;Cassell&quot;; receipt docket at the foot of the address &quot;Pr. 13. Januarij [or Februarij?] 1637&quot;;
 # a second short docket to the right of the address (clear, not transcribed).
@@ -436,7 +436,7 @@ slllÿsmaczllgnÿkgzgrihÿpnngtlcgnmotirmabnmgtgxzdaxrip
 # 0 groups.</pre></details>
 <p class="ftext">Decryption: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/reading_segmented.txt">reading_segmented.txt</a></p>
 <p class="ftext">Decryption: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/work/reading_auto.txt">reading_auto.txt</a></p>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP497_reading.md">HCP497_reading.md</a></p><pre># HCPortal 497 (HStAM 4 h Nr. 1411, ff. 12-13), Malsburg to Landgrave Wilhelm V, Wesel, 7/17 Jan 1637 — reading of the numerical cipher
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP497_reading.md">HCP497_reading.md</a></p><pre translate="no"># HCPortal 497 (HStAM 4 h Nr. 1411, ff. 12-13), Malsburg to Landgrave Wilhelm V, Wesel, 7/17 Jan 1637 — reading of the numerical cipher
 
 Rests on: `f012.txt` (Bourdeau&#x27;s transcription of scan 0012, one cipher line per scan line; f. 13 is the address side,
 no cipher) decoded with `key.txt` unchanged (`research/reading_audit/b08_dec.py`), the breaks checked on the HCPortal
@@ -482,7 +482,7 @@ Es ist von guter Hant avisiret, dass man zu Regenspurg geschlossen, &lt;H#&gt; G
 - &quot;tracti[r]en&quot;: `… 80 60 66 63 49 83` = c t i n e n; the scan (block 3, last line) shows 63 (n) where an r-group is
   needed, so the r is bracketed.
 - &quot;Mitt der [140]&quot;: `42 66 H 46 49 97` = m i &lt;H&gt; d e r; the scan shows the crossed H, read tt here.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP497_en.md">HCP497_en.md</a></p><pre># HCPortal 497 (f. 12), Malsburg to Landgrave Wilhelm V, Wesel, 7/17 Jan 1637 — English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP497_en.md">HCP497_en.md</a></p><pre translate="no"># HCPortal 497 (f. 12), Malsburg to Landgrave Wilhelm V, Wesel, 7/17 Jan 1637 — English
 
 Translation of `HCP497_reading.md` (23 Oct 2026, batch r2b), with the same holes: `[148]` an unvalued code, `&lt;XX&gt;` an
 unvalued sign, `[?word]` partly carried, `[…]` unread; {Cologne} = 128, {Hamburg} = 130, {regiment} = 253, {the
@@ -509,7 +509,7 @@ is …⟩</pre></details>
 <h3>f. 12 foot, the alphabetic block of 7/17 Jan 1637 (Larry Beck with ChatGPT) <span class="st partial">read in part</span></h3>
 <p>A separate ten-line block in a letter cipher with repeating shifts 4, 5, 3, 6, 2, deciphered by Larry Beck with ChatGPT; the selected reading discusses command, the Swedish generals, the reciprocal joining of forces and the authority requested. A working edition: the code labels 43, 45 and LL are unidentified.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (91% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/ct/hcp497_letters.txt">hcp497_letters.txt</a></p><pre>hkü.43.zwinhalÿergxkrwwtzsklÿsgolp.45.xkmtgwmhÿpptwzgnsÿtfnng
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/ct/hcp497_letters.txt">hcp497_letters.txt</a></p><pre translate="no">hkü.43.zwinhalÿergxkrwwtzsklÿsgolp.45.xkmtgwmhÿpptwzgnsÿtfnng
 lpÿghotisnüprkgzgnÿxlüragfgnzggü.LL.xhlÿgnghtÿioozliÿhogridzgwr
 mafiswikalkgplügnhtüshÿclpkgkgxhrsoisgükegeltxofopnhlaxixkrgnhll
 aaükgr.45.kwacÿfeltixiütlhklüaghfxzliolÿgÿwrbrtlkghgcimlügnzl
@@ -519,10 +519,10 @@ alfoaÿnkhÿdimhÿwismaiilghzmssxlpxtwagpqhagrÿmlgxidolr
 bd[blot]zlmrhfxÿnÿtiilhrnnmzünÿkqpkrfÿiklaoglltxkmtglkolii
 slllÿsmaczllgnÿkgzgrihÿpnngtlcgnmotirmabnmgtgxzdaxrip
 üipofomioxigrzhtwnxhtnejwlp</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/alphabetic/alphabetic_selected_letters.txt">alphabetic_selected_letters.txt</a></p><pre>hkuzwinhalyergxkrwwtzsklysqolpxkmtgwmhypptwzgnsytfnnqlpyghotisnuprkqzqnyxluraqfgnzgguxhlygnghtyioozliyhogridzgwrmafiswikakgpugnhtiishycpkqkgxhrsoisgukeqeltxofopnhlaxixkrgnhllpaaukgrkwacyfeltixiuthkuaghfxzliolygywrbrtkqhgcimlugnzlfisytfhohzembhkgrbmkgwgheunkwaqxyhtozyxlpeafocgzmupiymooismaoixklhnkolpzsgbdixggunnplusqfogegwunzzhngafoaynkhydimhywismaiightmssxlpxtwagpqhagrymlgxidolrbdzlmrhfxynytiilhrnnmzunykqpkrfyikaogltxkmtglkoliislllysmaczllgnykqzqrihypnnqtcgnmotirmabnmgtgxzdaxripuipofomioxiqrzhtwnxhtneywlp</pre></details>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/alphabetic/alphabetic_selected_letters.txt">alphabetic_selected_letters.txt</a></p><pre translate="no">hkuzwinhalyergxkrwwtzsklysqolpxkmtgwmhypptwzgnsytfnnqlpyghotisnuprkqzqnyxluraqfgnzgguxhlygnghtyioozliyhogridzgwrmafiswikakgpugnhtiishycpkqkgxhrsoisgukeqeltxofopnhlaxixkrgnhllpaaukgrkwacyfeltixiuthkuaghfxzliolygywrbrtkqhgcimlugnzlfisytfhohzembhkgrbmkgwgheunkwaqxyhtozyxlpeafocgzmupiymooismaoixklhnkolpzsgbdixggunnplusqfogegwunzzhngafoaynkhydimhywismaiightmssxlpxtwagpqhagrymlgxidolrbdzlmrhfxynytiilhrnnmzunykqpkrfyikaogltxkmtglkoliislllysmaczllgnykqzqrihypnnqtcgnmotirmabnmgtgxzdaxripuipofomioxiqrzhtwnxhtneywlp</pre></details>
 <p class="ftext">Decryption: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/alphabetic/alphabetic_reading.md">alphabetic_reading.md</a></p>
 <p class="ftext">Decryption: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/alphabetic/alphabetic_edition.csv">alphabetic_edition.csv</a></p>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/alphabetic/alphabetic_block_reading.md">alphabetic_block_reading.md</a></p><pre># Malsburg, Wesel, 7/17 January 1637 (HCPortal 497, image 0012): the alphabetic block, reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/alphabetic/alphabetic_block_reading.md">alphabetic_block_reading.md</a></p><pre translate="no"># Malsburg, Wesel, 7/17 January 1637 (HCPortal 497, image 0012): the alphabetic block, reading
 
 The &quot;Editorial German&quot; of `alphabetic/alphabetic_reading.md` (Larry Beck with ChatGPT, 2 Oct 2026; repeating
 additive key 4 5 3 6 2, selected 510-position branch), copied here alone so that it is scored and translated without
@@ -534,7 +534,7 @@ literal output. German.
 ## Reading
 
 Der [43] stehet itzo aufm Sprunge. Wollen [45] seiner gern los sein und ihn entbehren konnen, so ist es nun Zeit, das [LL] schreiben: weil sie sehen, das er mit den Schwedischen Generalen des Commendo halber sich nicht uergleichen †wurden†, [45] Estat aber erforderte, dat sie ihre †tqouppen† [Trouppen?] bey die Schweden und die Schweden wider bey sie stossen musten, auch [LL] actiones ihme nit mer gefielen, und uber das ihme solche absolute Gewalt, wie er begerte, nit geben konten, so stelleten sie es dahin, wa[BLOT]s ihme zu thun [gefellig/gefellng]; wolten ihn auch wider seine Gelegenheit nit aufhalten, sondern ihn nach [ihrem/khrem] †itzigdn† [itzigen?] Estat und Moglichkeit contentire[n?] lassen.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/alphabetic/alphabetic_block_en.md">alphabetic_block_en.md</a></p><pre># Malsburg, Wesel, 7/17 January 1637 (HCPortal 497, image 0012): the alphabetic block, English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/alphabetic/alphabetic_block_en.md">alphabetic_block_en.md</a></p><pre translate="no"># Malsburg, Wesel, 7/17 January 1637 (HCPortal 497, image 0012): the alphabetic block, English translation
 
 Translation (Claude Opus 5.5, 23 Oct 2026) of `alphabetic/alphabetic_block_reading.md`, the contributors&#x27; editorial
 German of the ten-line block. Same marks: `[43]`, `[45]`, `[LL]` unidentified code labels; `[?word]` an uncertain
@@ -552,7 +552,7 @@ have him satisfied according to [?their] †present† [?present] state and abil
 <h3>f. 14, Jan 1637 <span class="st stuck">decoded, not read</span></h3>
 <p>The provisioning of Hermannstein (Ehrenbreitstein); Obrist Hoffman&#x27;s troops; marches by Marburg, Corbach and Brilon on the road from &lt;128 Cöln&gt;; Jan de Werth at Cologne. Block &#x27;work/f014.txt&#x27; of reading_segmented.txt.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/ct/hcp502.txt">hcp502.txt</a></p><pre>72 73
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/ct/hcp502.txt">hcp502.txt</a></p><pre translate="no">72 73
 70 76 79 65 27 35 N 83 93 D 39 56 84 22 27 49 46 95 13 49 68 42 89 44 55 26 77 37 45 86 61 97 63 42 11 30 67 28 68 37 16 A 79 6?
 67 84 65 37 48 29 145 31 49 18 61 37 79 97 10 88 22 29 16 44 95 31 235 46 87 97 62 31 83 95 94 47 84 97 82 66 63 46 ?
 97 99 66 N 13 Y 63 42 69 D 62 63 76 48 O 36 42 60 49 56 93 97 L_ 44 16 10 16 22 XX 82 89 T Z 39 60 G_ 83 9?
@@ -578,7 +578,7 @@ S 50 32 11 16 71 22 51 35 Z 61 44 83 70 N 21 84 30 56 55 31 C Y ?
 43 84 72 48 63
 18 11 16 61 13 46 79 83 84 22 F 86 27 84 97
 48 44 55 D 72 49 30 42 70 63 O G_ 83 29 61 21 84 60</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f014.txt">f014.txt</a></p><pre># f. 14 (scan hstam_4_h_1411_14_Cryp.jpg, foliated &quot;9&quot; top right), Malsburg to the Landgrave, &quot;Datum Wesel den 16/26 Januarij Ao 1637&quot;.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f014.txt">f014.txt</a></p><pre translate="no"># f. 14 (scan hstam_4_h_1411_14_Cryp.jpg, foliated &quot;9&quot; top right), Malsburg to the Landgrave, &quot;Datum Wesel den 16/26 Januarij Ao 1637&quot;.
 # One cipher line per scan line. Groups separated by spaces; capital letters are letter signs; clear words in {braces};
 # &#x27; = dot above the group; ? = doubtful reading; # = crossed sign; _ = underlined sign; a trailing &quot;?&quot; alone at the end of
 # a line = group cut by the torn/folded right edge of the sheet. The right edge is damaged: the last group of many lines
@@ -614,7 +614,7 @@ SS 82 70 94 56 11 26 Y 29 16 22 82 55 63 46 61 44 28 31 77 G_ 83 16 30 29 79 21 
 {sten ... berichten, sobald ich herfahre} 18 11 16 61 13 46 79 83 84 22 F 86 27 84 97
 48 44 55 D 72 49 30 42 70 63 O G_ 83 29 61 21 84 60 {will ich ... überschreiben;}</pre></details>
 <p class="ftext">Decryption: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/reading_segmented.txt">reading_segmented.txt</a></p>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP502_reading.md">HCP502_reading.md</a></p><pre># HCPortal 502 (HStAM 4 h Nr. 1411, f. 14), Malsburg to Landgrave Wilhelm V, Wesel, 16/26 Jan 1637 — reading of the cipher
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP502_reading.md">HCP502_reading.md</a></p><pre translate="no"># HCPortal 502 (HStAM 4 h Nr. 1411, f. 14), Malsburg to Landgrave Wilhelm V, Wesel, 16/26 Jan 1637 — reading of the cipher
 
 Rests on: `f014.txt` (transcription agent, checked by Bourdeau) decoded with `key.txt` unchanged
 (`research/reading_audit/b08_dec.py`), the breaks checked on the HCPortal original scan (hstam_4_h_1411_14, 2854 x
@@ -658,7 +658,7 @@ Punctuation added. ⟨...⟩ = clear words written in the letter around the ciph
 - &quot;Bruder&quot;: `21 48 65 10 46 24 46 61 25` = her b d u d e r; &quot;Herr Bruder&quot; with d for r once; partly carried.
 - &quot;Hermanstein&quot; in block 4: `82 84 25 42 39 63 M Y ?` = herman + mm-sign + ei + cut group; the mm-sign stands where st
   is needed.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP502_en.md">HCP502_en.md</a></p><pre># HCPortal 502 (f. 14), Malsburg to Landgrave Wilhelm V, Wesel, 16/26 Jan 1637 — English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP502_en.md">HCP502_en.md</a></p><pre translate="no"># HCPortal 502 (f. 14), Malsburg to Landgrave Wilhelm V, Wesel, 16/26 Jan 1637 — English
 
 Translation of `HCP502_reading.md` (22 Oct 2026, batch b08), with the same holes: `[145]` an unvalued code, `&lt;+&gt;` an
 unvalued sign, `[?word]` partly carried, `[…]` unread; {Cologne} = 128, {regiment} = 253 valued from context.
@@ -682,7 +682,7 @@ unvalued sign, `[?word]` partly carried, `[…]` unread; {Cologne} = 128, {regim
 <h3>ff. 15-17, Jan 1637 <span class="st stuck">decoded, not read</span></h3>
 <p>No audience yet; notice of the end of the Stillstand; companies and dragoons, with recruiting patents already issued; the ambassador of &lt;188 die Staaten&gt;; money and horses. Blocks &#x27;work/f015.txt&#x27; and &#x27;work/f016.txt&#x27; of reading_segmented.txt; f. 17 only in work/reading_auto.txt.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/ct/hcp503.txt">hcp503.txt</a></p><pre>76 Y 57 122 58 4# 76 25 79 13
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/ct/hcp503.txt">hcp503.txt</a></p><pre translate="no">76 Y 57 122 58 4# 76 25 79 13
 73 15 60 11 93 44 S 86 129 j 30 G_ 10 16 83 62 22 29 84 21 55 99 41 49 63 48 77 36 O 39
 76 61 65 46 84 97 13 84 78 76 84 36 26 52 42 95 94 120 18 84 54 79 31 46 16 74 24 49 30
 99 58 Z 24 35 65 21 49 25 57 39 22 Z Y 83 36 63 27 16 30 37 70 10 61 97 71 44 48 72 55
@@ -721,7 +721,7 @@ N 84 13 46 70 44 46 84 42 92 73 83 11 29 43 79 56 Y 83 84 63 18 16 77 84 83 42 4
 67 16 42 49 37 66 97 94 48 25 58 10 16 30 e 81 86 84 25 27 84 83 45 L_ 18 16 22 27 11 43
 42 11 L_ 91 30 11 22 29 84 83 42 71 W 84 44 84 30 77 11 72 16 60 28 76 84 65 36 41 90 35 92
 G 83 61 29 16 99 48 54 49 44 82 Y 26 90 71 129 52 24 51 73 E 84 63</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f015.txt">f015.txt</a></p><pre># f. 15 (scan hstam_4_h_1411_0015_Cryp.jpg), marked &quot;Triplicat&quot; in the left margin (docket &quot;... 1637&quot;); Malsburg to
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f015.txt">f015.txt</a></p><pre translate="no"># f. 15 (scan hstam_4_h_1411_0015_Cryp.jpg), marked &quot;Triplicat&quot; in the left margin (docket &quot;... 1637&quot;); Malsburg to
 # the Landgrave. One cipher line per scan line. Groups separated by spaces; capital letters are letter signs;
 # clear words in {braces}; &#x27; = dot above; ? = doubtful; # = crossed sign; _ = underlined sign; j = hooked i/j sign
 # standing alone as a group. In this hand 4 is written like a &quot;t&quot; (41, 44, 48, 49 look like &quot;ti&quot;, &quot;tt&quot;, &quot;t8&quot;, &quot;tg&quot;).
@@ -732,7 +732,7 @@ G 83 61 29 16 99 48 54 49 44 82 Y 26 90 71 129 52 24 51 73 E 84 63</pre></detail
 99 58 Z 24 35 65 21 49 25 57 39 22 Z Y 83 36 63 27 16 30 37 70 10 61 97 71 44 48 72 55
 L 27 66 84 43 48 46 55 44 38 92 61 63 31 36 A# 39 H# 61 91 G_ Y 83 55 63 46 61 30 {seint ...}
 {Ich aber doch bald ... erklären, ... meinen fleis ... solle es nicht mangeln}</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f016.txt">f016.txt</a></p><pre># f. 16 (scan hstam_4_h_1411_0016_Cryp.jpg, an opened double leaf: left = the letter, right = an enclosure list of
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f016.txt">f016.txt</a></p><pre translate="no"># f. 16 (scan hstam_4_h_1411_0016_Cryp.jpg, an opened double leaf: left = the letter, right = an enclosure list of
 # officers killed/captured, clear text). Malsburg to the Landgrave, &quot;Datum Wesel den 30 Januarij [/9 Februarij?] Ao 1637&quot;,
 # signed &quot;Otto von der Malsburg&quot;. One cipher line per scan line. Groups separated by spaces; capital letters are letter
 # signs; clear words in {braces}; &#x27; = dot above; ? = doubtful; # = crossed sign; _ = underlined sign; j = hooked i/j sign
@@ -778,14 +778,14 @@ G 83 61 29 16 99 48 54 49 44 82 Y 26 90 71 129 52 24 51 73 E 84 63 {EfGl. hiemit
 # &quot;65 36&quot; in l.9 has a stroke drawn above it (overline over both groups); &quot;E&quot; (l.10) = a capital E-sign with a bar.
 # &quot;{triangle sign}&quot; in the clear lead-in = a large drawn triangle after &quot;58 73 83 77&quot;, possibly a cipher sign.
 # block 1 l.9: &quot;4H#? o? D&quot; = a crossed &#x27;4H&#x27;-shaped sign, a small circle, and D -- uncertain.</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f017.txt">f017.txt</a></p><pre># f. 17 (scan hstam_4_h_1411_0017_Cryp.jpg): address wrapper of the f. 16 letter, one seal.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f017.txt">f017.txt</a></p><pre translate="no"># f. 17 (scan hstam_4_h_1411_0017_Cryp.jpg): address wrapper of the f. 16 letter, one seal.
 # Address: &quot;Dem durchleuchtigen hochgebornen Fürsten und Herrn, Herrn Wilhelmen Landgraffen zu Hessen,
 # Graffen zu Catzenelnbogen, Dietz, Ziegenhain und Nidda, meinem gnädigen Fürsten und Herrn&quot; -- &quot;Cassell&quot;.
 # NO CIPHER on this side; the faint writing elsewhere is show-through from the other side (clear text of the
 # enclosure list). 0 groups.</pre></details>
 <p class="ftext">Decryption: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/reading_segmented.txt">reading_segmented.txt</a></p>
 <p class="ftext">Decryption: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/work/reading_auto.txt">reading_auto.txt</a></p>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP503_reading.md">HCP503_reading.md</a></p><pre># HCPortal 503 (HStAM 4 h Nr. 1411, ff. 15-16), Malsburg to Landgrave Wilhelm V, Wesel, Jan 1637 — reading of the cipher
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP503_reading.md">HCP503_reading.md</a></p><pre translate="no"># HCPortal 503 (HStAM 4 h Nr. 1411, ff. 15-16), Malsburg to Landgrave Wilhelm V, Wesel, Jan 1637 — reading of the cipher
 
 Rests on: `f015.txt` (the &quot;Triplicat&quot;, one faint block) and `f016.txt` (the letter of 30 Jan [/9 Feb] 1637, two blocks),
 transcription agents checked by Bourdeau, decoded with `key.txt` unchanged (`research/reading_audit/b08_dec.py`), the
@@ -828,7 +828,7 @@ Zu deme [?hette] Hoff [?berichtet], das ihm were [?angedeutet] worden, wie das d
 - &quot;Golder&quot;: a payment term (&quot;auf die Golder, vil weniger auf die abgeredete Termine&quot;); partly understood.
 - &quot;würde&quot; in &quot;Schaden bringen [würde]&quot; is supplied: the run ends at &quot;bringen&quot;.
 - f. 15 &quot;in der […]&quot;: `27 16 30 37 70 10 61 97 71 44 48 72 55 / L` = der waberuneha tt; no word comes out.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP503_en.md">HCP503_en.md</a></p><pre># HCPortal 503 (ff. 15-16), Malsburg to Landgrave Wilhelm V, Wesel, Jan 1637 — English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP503_en.md">HCP503_en.md</a></p><pre translate="no"># HCPortal 503 (ff. 15-16), Malsburg to Landgrave Wilhelm V, Wesel, Jan 1637 — English
 
 Translation of `HCP503_reading.md` (22 Oct 2026, batch b08), with the same holes: `[120]` an unvalued code, `&lt;H#&gt;` an
 unvalued sign, `[?word]` partly carried, `[word]` supplied, `[…]` unread; {companies} = 273, {the States} = 188
@@ -851,7 +851,7 @@ Moreover Hoff [?reported] that he had been [?told] how the ambassador already ha
 <h3>f. 18, 14/24 Feb 1637 <span class="st stuck">decoded, not read</span></h3>
 <p>Some of the &lt;212&gt; are so frozen that several have become cripples; the obligation over the loss before Hermannstein; the new recruiters. Block &#x27;work/f018.txt&#x27; of reading_segmented.txt.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/ct/hcp504.txt">hcp504.txt</a></p><pre>79 74 77 Y 31 60
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/ct/hcp504.txt">hcp504.txt</a></p><pre translate="no">79 74 77 Y 31 60
 70 76 16 97 27 36 84 212? G 31 Z Y 78 68 74 73 79 97 23 25 93 97 84 83 46 39 13 S N 48 26 99 36 D 49 40 58 51 97 35 81?
 12 61 78 31 18 35 97 27 16 22 61 94 99 66 N 79 29 15 95 32 27 84 25 21 39 76 48 83 57 58 W 16 22 55 10 99 35 13 16
 44 78 28 P 61 63 74 73 13 G_ 22 26 F N 58 11 61 15 72 79 25 31 39 N 29 49 O 45 97 10 48 44 L?
@@ -872,7 +872,7 @@ Moreover Hoff [?reported] that he had been [?told] how the ambassador already ha
 11 L 76 25 11 44 54 79 31 95 N 74 73 30 29 16 H 72 55 10 16 22 74 36 D 27 61 77 V? 70 22 10
 16 37 88 Z 16 56 73 25 26 83 11 60 90 24 88 84? 97 74 11 N 61 30 44_? 46 70 22 16 25 77 36 N 1? 18 15
 30 99 66 Z? 37 11 30 60 Y 22 X 99 11 16 W 61 83 99 28 P 49 31</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f018.txt">f018.txt</a></p><pre># scan 0018 (folio number &quot;13&quot; at top right), letter to the Landgrave (&quot;Durchleuchtiger Hochgeborner Gnädiger
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f018.txt">f018.txt</a></p><pre translate="no"># scan 0018 (folio number &quot;13&quot; at top right), letter to the Landgrave (&quot;Durchleuchtiger Hochgeborner Gnädiger
 # Fürst und Herr&quot;); marginal date &quot;Febr. 1637&quot;; dated at the foot &quot;Datum ... den 14/24 Februarij Ao 1637&quot;;
 # subscribed only &quot;E. F. G. Dr:&quot; (no name written; the hand is Malsburg&#x27;s).
 # Groups separated by spaces; capital letters are letter signs; clear words in {braces}; &#x27; = dot above the group;
@@ -903,7 +903,7 @@ Moreover Hoff [?reported] that he had been [?told] how the ambassador already ha
 # note: &quot;84? 97&quot; = 84 apparently overwritten by 97; &quot;V?&quot; = a triangle-like sign (open V with a top bar);
 # &quot;1?&quot; = a lone single stroke after N.</pre></details>
 <p class="ftext">Decryption: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/reading_segmented.txt">reading_segmented.txt</a></p>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP504_reading.md">HCP504_reading.md</a></p><pre># HCPortal 504 (HStAM 4 h Nr. 1411, f. 18), Malsburg to Landgrave Wilhelm V, 14/24 Feb 1637 — reading of the cipher
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP504_reading.md">HCP504_reading.md</a></p><pre translate="no"># HCPortal 504 (HStAM 4 h Nr. 1411, f. 18), Malsburg to Landgrave Wilhelm V, 14/24 Feb 1637 — reading of the cipher
 
 Rests on: `f018.txt` (Bourdeau&#x27;s transcription of scan 0018, one cipher line per scan line) decoded with `key.txt`
 unchanged (`research/reading_audit/b08_dec.py`), the breaks checked on the HCPortal original scan hstam_4_h_1411_0018
@@ -940,7 +940,7 @@ marked.
   certain reading; &quot;an Golt&quot; is carried.
 - &quot;Ich sorge, &lt;H&gt; haben&quot;: the H stands alone, no word; &quot;an bewustem Ort&quot; = `70 22 10 | 16 37 88 Z 16 56 73 25 26` = a n b | e w u st e m o r t.
 - &quot;dan er sich [?…]&quot;: `1? 18 15 | 30 99 66 Z?` = a lone stroke, w l r l i st: no word.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP504_en.md">HCP504_en.md</a></p><pre># HCPortal 504 (f. 18), Malsburg to Landgrave Wilhelm V, 14/24 Feb 1637 — English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP504_en.md">HCP504_en.md</a></p><pre translate="no"># HCPortal 504 (f. 18), Malsburg to Landgrave Wilhelm V, 14/24 Feb 1637 — English
 
 Translation of `HCP504_reading.md` (23 Oct 2026, batch r2b), with the same holes: `[212]` an unvalued code, `&lt;V&gt;` an
 unvalued sign, `[?word]` partly carried, `[…]` unread; {companies} = 273 valued from context. ⟨...⟩ = clear words.
@@ -963,7 +963,7 @@ in [?…]. ⟨Commend Your Princely Grace herewith to God&#x27;s grace …⟩</p
 <h3>ff. 23-24, 7/17 Feb 1637 <span class="st stuck">decoded, not read</span></h3>
 <p>The dispute over whether Hermannstein was effectively provisioned; ransom and gifts for the commanders; the finding that &#x27;we have dealt with a Frenchman&#x27;; peace talks in Picardy with nobody sent to &lt;128&gt;; a separate peace with the imperial commissioners; the garrisons ruined. Blocks &#x27;work/f023.txt&#x27; and &#x27;work/f024.txt&#x27; of reading_segmented.txt.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/ct/hcp505.txt">hcp505.txt</a></p><pre>98 79 78 N 16 84 25 39 10 48 30 31 58 22 56 61 97 S 13 27 49 42 23 58 83 27 70 57 16 44 60 27 55 77
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/ct/hcp505.txt">hcp505.txt</a></p><pre translate="no">98 79 78 N 16 84 25 39 10 48 30 31 58 22 56 61 97 S 13 27 49 42 23 58 83 27 70 57 16 44 60 27 55 77
 72 84 97 42 28 83 O Y 31 83 11 94 48 B 49 80 94 95 71 84 42 61 63 41 81 30 35 88 11 70 22 46? 66 97 16 94 13 G_ 27 66 74 81 64 96 11
 30 61 60 44 36 D 26 13 79 48 O 61 21 49 63 18 95 99 98 11 25 55 10 61 30 47 84 97 42 Y 44 49 22 27 55 W 46 70 77 18 73
 97 L 79 T 16 19 96 66 71 84 42 61 22 60 83 58 97 27 66 16 24 79_ 97 43 16 15 60 24 83 43 48 47 89 97 27 36 49 10 84 50
@@ -1022,7 +1022,7 @@ G_ 31 80 73 E 11 W 66 73 63 F_ 23 56 70 30 29 54 97 28 T_ 13 11 43 42 47 44 41 4
 63 77 93 78 N 61 30 29 49 7 55 99 60 92 35 44 26 48 56 39 83 S D 27 69 49 48 217? 83 70 N 27 16 30 269
 18 16 83 77 11 61 S 23 22 84 98 48 22 10 71 30 43 27 58 97 N 27 28 68 231 18 84 29 49 44 27 49 97
 99 Y 63 48 39 H 79 65 44 69 26 92 35 R 61 83 92 35 83 94 84 22 76 97 11 63 29 49 83 J?</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f023.txt">f023.txt</a></p><pre># scan 0023 (folio number &quot;16&quot; at top right), letter to the Landgrave (&quot;Durchleuchtiger Hochgeborner Gnädiger
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f023.txt">f023.txt</a></p><pre translate="no"># scan 0023 (folio number &quot;16&quot; at top right), letter to the Landgrave (&quot;Durchleuchtiger Hochgeborner Gnädiger
 # Fürst und Herr&quot;); marginal date &quot;Febr. 1637&quot;.
 # Groups separated by spaces; capital letters are letter signs; clear words in {braces}; &#x27; = dot above the group;
 # ? = doubtful reading; # = crossed sign; _ = underlined. The ordinary H sign has a crossbar and is given as H.
@@ -1070,7 +1070,7 @@ G_ 31 {Und} 80 73 E 11 W 66 73 63 F_ 23 56 70 30 29 54 97 28 T_ 13 11 43 42 47 4
 # notes: &quot;n?&quot; (line H O 39 ...) is a small lower-case n-like sign; &quot;E&quot; is a capital E-like sign with a stroke;
 # &quot;{60?}&quot; at the end of the R 16 22 ... line is a faint 60/6o written after the line; &quot;L_ G_ T_ F_&quot; have a bar/underline.
 # &quot;{struck: ...}&quot; = groups crossed out by the writer (not counted as text).</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f024.txt">f024.txt</a></p><pre># scan 0024 (verso, continuation of the letter on scan 0023): to the Landgrave; dated at the foot
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f024.txt">f024.txt</a></p><pre translate="no"># scan 0024 (verso, continuation of the letter on scan 0023): to the Landgrave; dated at the foot
 # &quot;Datum ... 7/17 Februarij Ao 1637&quot; (7 with 17 written beneath: old/new style), signed &quot;Unterthäniger gehorsamer
 # Diener Otto von der Malsburgk&quot;; clear postscript at lower left (&quot;... gesinde ist gantz abgerissen ...&quot;, asks for orders).
 # Groups separated by spaces; capital letters are letter signs; clear words in {braces}; &#x27; = dot above the group;
@@ -1104,7 +1104,7 @@ G_ 31 {Und} 80 73 E 11 W 66 73 63 F_ 23 56 70 30 29 54 97 28 T_ 13 11 43 42 47 4
 # Kaspar line) is a single figure 8 written larger; &quot;J?&quot; = a long j-like sign (as in f. 23); &quot;V?&quot; = a V/W-like sign;
 # &quot;217?&quot; read from &quot;z17&quot;; &quot;231&quot; from &quot;z31&quot;; &quot;269&quot; from &quot;z69&quot;; 200/202 on the top block read from &quot;zoo&quot;/&quot;zo2&quot;.</pre></details>
 <p class="ftext">Decryption: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/reading_segmented.txt">reading_segmented.txt</a></p>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP505_reading.md">HCP505_reading.md</a></p><pre># HCPortal 505 (HStAM 4 h Nr. 1411, ff. 23-24), Malsburg to Landgrave Wilhelm V, 7/17 Feb 1637 — reading of the cipher
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP505_reading.md">HCP505_reading.md</a></p><pre translate="no"># HCPortal 505 (HStAM 4 h Nr. 1411, ff. 23-24), Malsburg to Landgrave Wilhelm V, 7/17 Feb 1637 — reading of the cipher
 
 Rests on: `f023.txt` and `f024.txt` (Bourdeau&#x27;s transcription of scans 0023 and 0024, one cipher line per scan line)
 decoded with `key.txt` unchanged (`research/reading_audit/b08_dec.py`), the breaks checked on the HCPortal original
@@ -1166,7 +1166,7 @@ the plain Z; 7 = st (gestalt), as in f. 28. &quot;1 t. Reichst.&quot; = 1 thousa
 - &quot;einzuschi&lt;8&gt;en&quot;: a large 8 where ff is needed (sense &quot;einzuschiffen&quot;), left as the sign.
 - &quot;la&lt;V&gt;en&quot;: the triangle sign stands where ss is needed.
 - &quot;bringen [?…]&quot;: the cipher ends with an sch-sign before the clear text.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP505_en.md">HCP505_en.md</a></p><pre># HCPortal 505 (ff. 23-24), Malsburg to Landgrave Wilhelm V, 7/17 Feb 1637 — English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP505_en.md">HCP505_en.md</a></p><pre translate="no"># HCPortal 505 (ff. 23-24), Malsburg to Landgrave Wilhelm V, 7/17 Feb 1637 — English
 
 Translation of `HCP505_reading.md` (23 Oct 2026, batch r2b), with the same holes: `[120]` an unvalued code, `&lt;f&gt;` an
 unvalued sign, `[?word]` partly carried, `[…]` unread; {Cologne} = 128, {the States} = 188 valued from context.
@@ -1210,7 +1210,7 @@ through the [231] because of the Leine ⟨and⟩ everything [?…] ⟨While writ
 <h3>f. 25, 5 Mar / 23 Feb 1637 <span class="st partial">read in part</span></h3>
 <p>&lt;120&gt; has resolved to content the Reuter; ransom for prisoners; letters of exchange. Block &#x27;work/f025.txt&#x27; of reading_segmented.txt.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (93% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/ct/hcp506.txt">hcp506.txt</a></p><pre>120 82 39 A 77 66 N 31 71
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/ct/hcp506.txt">hcp506.txt</a></p><pre translate="no">120 82 39 A 77 66 N 31 71
 22 56 79 25 97 16 74 35 99 58 11 65 84 94 46 95 48 23 58 97 78 Y 94 49 90 47 80 35 44 26 61 44 41 36
 30 79 83 18 39 13 62 91 16 65 46 70 74 50 58 25 15 73 72 63 28? 22 38 11 73 22 58 89 25 32 11 16
 43 61 86 87 31 54 84? 31 79 55 44 27 49 30 49 71 31 51 73 Z 16 22 70 44 29 48 21 16 60 46 55 30
@@ -1231,7 +1231,7 @@ G_ 83 90 Y 41 78 62 44 43 74 36 N 11 22 36 44 72 84 W 48 63 S 23 21 55 99 60 16 
 M 79 25 X 36 16 22 61 44 84 83 26 16 30
 56 11 63 84 22 18 66 H 128 22 73 D 92 Y 63 16 37 48 N 74 61 78 76 30 11 16 T 16 76 16 51 35
 R 84 83 21 55 76 79 31</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f025.txt">f025.txt</a></p><pre># scan 0025 (folio number &quot;17&quot; at top right), letter to the Landgrave (&quot;Durchleuchtiger Hochgeborner Gnädiger
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f025.txt">f025.txt</a></p><pre translate="no"># scan 0025 (folio number &quot;17&quot; at top right), letter to the Landgrave (&quot;Durchleuchtiger Hochgeborner Gnädiger
 # Fürst und Herr&quot;); marginal date &quot;23 Feb. 1637&quot;; dated at the foot &quot;Datum ... den 5 Martij / 23 Februarij Ao 1637&quot;
 # (both styles), subscribed &quot;E. F. G.&quot; and signed &quot;Unterthäniger gehorsamer Diener Otto von der Malsburgk&quot;.
 # Groups separated by spaces; capital letters are letter signs; clear words in {braces}; &#x27; = dot above the group;
@@ -1264,7 +1264,7 @@ R 84 83 21 55 76 79 31 {Thue E. F. G. hiermit in gottes gnädige ...}
 # 128 read from &quot;iz8&quot; (twice); 143/148/188 read as written; 120 = &quot;izo&quot;; &quot;L? 1?&quot; (line 40 84 99 ...) = a looped
 # L/l-like sign followed by a dotted stroke; &quot;4#0?&quot; = a crossed 4 fused with 0 (possibly 40 struck through).</pre></details>
 <p class="ftext">Decryption: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/reading_segmented.txt">reading_segmented.txt</a></p>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP506_reading.md">HCP506_reading.md</a></p><pre># HCPortal 506 (HStAM 4 h Nr. 1411, f. 25), Malsburg to Landgrave Wilhelm V, 5 Mar / 23 Feb 1637 — reading of the cipher
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP506_reading.md">HCP506_reading.md</a></p><pre translate="no"># HCPortal 506 (HStAM 4 h Nr. 1411, f. 25), Malsburg to Landgrave Wilhelm V, 5 Mar / 23 Feb 1637 — reading of the cipher
 
 Rests on: `f025.txt` (Bourdeau&#x27;s transcription of scan 0025, one cipher line per scan line) decoded with `key.txt`
 unchanged (`research/reading_audit/b08_dec.py`), the breaks checked on the HCPortal original scan hstam_4_h_1411_0025
@@ -1301,7 +1301,7 @@ key); nouns capitalised and punctuation added. ⟨...⟩ = clear words. &quot;9 
 - &quot;&lt;XX&gt;&quot;: the doubled sch-sign, as in f. 3 and f. 12, a name sign.
 - &quot;&lt;M&gt; erschienenen Terminen&quot;: `M 79 25 X 36 16 22 61 44 84 83 26 16 30 | 56 11 63 84 22`; the mm-sign before
   &quot;erschienenen&quot; gives no word (&quot;im&quot; would need an i).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP506_en.md">HCP506_en.md</a></p><pre># HCPortal 506 (f. 25), Malsburg to Landgrave Wilhelm V, 5 Mar / 23 Feb 1637 — English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP506_en.md">HCP506_en.md</a></p><pre translate="no"># HCPortal 506 (f. 25), Malsburg to Landgrave Wilhelm V, 5 Mar / 23 Feb 1637 — English
 
 Translation of `HCP506_reading.md` (23 Oct 2026, batch r2b), with the same holes: `[120]` an unvalued code, `&lt;V&gt;` an
 unvalued sign, `[?word]` partly carried, `[…]` unread; {Cologne} = 128, {the States} = 188 valued from context.
@@ -1321,7 +1321,7 @@ Grace herewith to God&#x27;s gracious …⟩</pre></details>
 <h3>ff. 28-29, 28 Mar 1637 (old style) <span class="st partial">read in part</span></h3>
 <p>The journey by the Watten; twelve-pound cannon and constables; Jan de Werth between Ruhr and &lt;268&gt;; the States&#x27; alliance and a muster place in Cleves; the conjunction at Cloppenburg, Quakenbrück, Minden, Vechta, Wildeshausen and Diepholz. Blocks &#x27;work/f028.txt&#x27; and &#x27;work/f029.txt&#x27; of reading_segmented.txt.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (92% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/ct/hcp507.txt">hcp507.txt</a></p><pre>18 73 78 41 79 56 66 D 44 88 22 90 37 70 30 98 35 21 99 74 93 76 55 15 60 42 11 A H# 26 30 Q 31 58 35 83 82 66 16 25 S 86 42 39 N 61 65 40 24 99 55
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/ct/hcp507.txt">hcp507.txt</a></p><pre translate="no">18 73 78 41 79 56 66 D 44 88 22 90 37 70 30 98 35 21 99 74 93 76 55 15 60 42 11 A H# 26 30 Q 31 58 35 83 82 66 16 25 S 86 42 39 N 61 65 40 24 99 55
 22 60 98 Y H#? 27 71 22 51 79 30 38 51 84 25 71 73 30 48 60 15 36 N 60 70 43 84 44 F 23 46 49 22 37 70 L_ 61 44 39 M 35 D 43 16 99 61 29 84 63 67 88 30
 N 235 28 31 10 48 7 36 56 26 16 31? 73 30 26 56 11 41 54 73 A 16 77 72 71 99 B 49 55 44 15 70 22 43 79 63 98 Y 78 36 N 70 10 16 30 193 212 O 88
 38 51 197 42 36 L 76 30 11 22 16 31 13 73 V 27 16 25 86 G_ 60 55 10 16 97 37 16 99 N 61 30 31 73 D 52 37 11 X 61 44 149 65 71 72 30 39 44 32 11
@@ -1400,7 +1400,7 @@ V 13 66 D J? 99 Y 44 66 29 67 88 30 N G_ 22 16 44 40 84 44 55 22 32 16 30 22 37 
 99 70 22 26 71 73 C 72 70 27 16 99 61 22 77 73 13 70 D 74 48 22 78 S 84 83 10 71 97 43 90 71 O 16 22
 46 11 29 36 O G_ 83 40 71 22 16 42 84 31 46 70 13 16 15 76 Z 85 58 28 30 60 11 16 25 90 88 77 71 N
 16 22 66 Z S D 22 62 N 56 123 40 88 25 70 27 60 90 73 43 16 52 73 29 16 22</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f028.txt">f028.txt</a></p><pre># scan 0028 (folio number &quot;19&quot; at top right), letter to the Landgrave (&quot;Durchleuchtiger Hochgeborner Gnädiger
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f028.txt">f028.txt</a></p><pre translate="no"># scan 0028 (folio number &quot;19&quot; at top right), letter to the Landgrave (&quot;Durchleuchtiger Hochgeborner Gnädiger
 # Fürst und Herr&quot;); later pencil date at top left &quot;28 März 1637&quot;. Almost the whole page is cipher.
 # Opening clear: &quot;Ich bin gestern abent [in] Stadt Lobalstein? wieder glücklich angelangt Und habe E. F. G. gnädiges
 # schreiben vom 1. [sign] Und 5. [sign] huius vet. [...] das erste den 10. [sign] in duplo, das ander aber den 24.
@@ -1465,7 +1465,7 @@ O 61 72 16 44 37 73 J? 79 63 {; Aber das alles so muss zu fordern? Und sonderlic
 # notes: &quot;e n&quot; (line 84 6 273 ...) = two small lower-case signs; &quot;Π?&quot; = a gate/pi-like sign; &quot;K&quot; = a K-like sign;
 # &quot;88?&quot; at a line start is blotted (the duplicate f. 30 has 88); &quot;0?&quot; = a small circle at line start; &quot;2? 3? 4?&quot; = lone single figures;
 # 3-digit groups as written: 126_ 128 129 149 153 168 174 181 188 193 194 197 200 208 212 213 214 215? 220 235 253 260 273.</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f029.txt">f029.txt</a></p><pre># scan 0029 (verso), letter to the Landgrave; dated &quot;... den 28. Martij vet. 1637&quot; at the end of the text,
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f029.txt">f029.txt</a></p><pre translate="no"># scan 0029 (verso), letter to the Landgrave; dated &quot;... den 28. Martij vet. 1637&quot; at the end of the text,
 # subscribed &quot;E. F. G.&quot; and signed &quot;Unterthäniger gehorsamer Diener Otto von der Malsburgk&quot;; a clear postscript at
 # lower left (the 12000? Rthlr sent to Bremen for recruit money ... 3500 ducats ... bill of exchange on Ludwig ...).
 # The page continues the cipher of scan 0028 (begins mid-text).
@@ -1507,7 +1507,7 @@ V 13 66 D J? 99 Y 44 66 29 67 88 30 N G_ 22 16 44 {oder} 40 84 44 55 22 32 16 30
 # &quot;4H?&quot; = a sign like 4 joined to H;
 # &quot;E&quot; = the E-like sign with a stroke; &quot;[line-filler]&quot; = a long flourish ending the line.</pre></details>
 <p class="ftext">Decryption: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/reading_segmented.txt">reading_segmented.txt</a></p>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP507_reading.md">HCP507_reading.md</a></p><pre># HCPortal 507 (HStAM 4 h Nr. 1411, ff. 28-29), Malsburg to Landgrave Wilhelm V, 28 Mar 1637 (old style) — reading of the cipher
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP507_reading.md">HCP507_reading.md</a></p><pre translate="no"># HCPortal 507 (HStAM 4 h Nr. 1411, ff. 28-29), Malsburg to Landgrave Wilhelm V, 28 Mar 1637 (old style) — reading of the cipher
 
 Rests on: `f028.txt` and `f029.txt` (transcription agents, checked by Bourdeau) decoded with `key.txt` unchanged
 (`research/reading_audit/b08_dec.py`), read against the writer&#x27;s own &quot;Duplicat&quot; of the letter, ff. 30-31 (HCPortal
@@ -1561,7 +1561,7 @@ Dan die Coniuction ⟨…⟩ nirgent eher ⟨und⟩ füglicher als bei Cloppenbu
 - &quot;Hohendorf&quot;, &quot;Rest&quot;, &quot;Forstenau aber&quot; follow f. 31/f. 30 where f. 29 has `hohtndorf`, `rz st`, `AU waeer`.
 - Place names: Lehrort (Lerort, the Rhine-Lippe ford by Wesel), Quakenbrück, Verden, Osnabrück, Cloppenburg, Vechta,
   Wildeshausen, Diepholz, Fürstenau, the Hase, the Reiderland, Stickhausen, Vegesack, Hadeln (Saxe-Lauenburg).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP507_en.md">HCP507_en.md</a></p><pre># HCPortal 507 (ff. 28-29, with the duplicate 508, ff. 30-31), Malsburg to Landgrave Wilhelm V, 28 Mar 1637 (old style) — English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP507_en.md">HCP507_en.md</a></p><pre translate="no"># HCPortal 507 (ff. 28-29, with the duplicate 508, ff. 30-31), Malsburg to Landgrave Wilhelm V, 28 Mar 1637 (old style) — English
 
 Translation of `HCP507_reading.md` (22 Oct 2026, batch b08), with the same holes: `[193]` an unvalued code, `&lt;V&gt;` an
 unvalued sign, `[?word]` partly carried, `[…]` unread; {companies} = 273, {regiment} = 253, {the States} = 188 valued
@@ -1589,7 +1589,7 @@ For the conjunction ⟨…⟩ could happen nowhere sooner ⟨and⟩ more conveni
 <h3>ff. 30-31, &#x27;Duplicat&#x27; of ff. 28-29 <span class="st stuck">decoded, not read</span></h3>
 <p>The duplicate of the 28 March letter, re-copied with different line breaks; used only as a check copy and not deciphered or counted separately, so its text is that of HCPortal 507 (blocks &#x27;work/f028.txt&#x27; and &#x27;work/f029.txt&#x27;).</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/ct/hcp508.txt">hcp508.txt</a></p><pre>18 73 78 41 79 56
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/ct/hcp508.txt">hcp508.txt</a></p><pre translate="no">18 73 78 41 79 56
 66 D 44 88 22 90 37 70 30 98 35 21 99 74 93 76 55 15 60 42 11 A H# 26 30 Q 31 58 35 83 82 66 16 25 S 86 42 39 N 61 65 40 24 99 55 22
 60 98 Y H# 27 71 22 51 79 30 38 51 84 25 71 73 30 48 60 15 36 N 60 70 43 84 44 F 23 46 49 22 37 70 L 61 44 39 M 35 D 43 16 99 61 29 84
 63 67 88 30 N 235 25 31 10 48 7 36 56 26 16 31 73 30 26 56 11 41 54 73 A 16 77 72 71 99 B 49 55 44 15 70 22 43 79 63 98 Y 78 36 N 70 10 16 30
@@ -1669,7 +1669,7 @@ N G_ 22 16 44 40 84 31 55 22 32 16 30 22 37 49 43 52_ 88 129 90 71 16 30 72 16 1
 77 73 13 70 D 74 48 22 78 S 84 83 10 71 97 43 90 71 O 16 22 46 11 29 36 O G 83 40 71 22 16 42 84 31
 46 70 13 16 15 76 Z 85 58 28 30 60 11 16 25 90 88 77 71 N 16 22 66 Z S D 22 62 N 56 123 40 88 25 70 22 60 90
 73 43 16 52 73 29 16 22</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f030.txt">f030.txt</a></p><pre># scan 0030 (folio number &quot;20&quot; at top right), headed &quot;Duplicat&quot; at top left (later pencil date &quot;28 März 1637&quot;):
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f030.txt">f030.txt</a></p><pre translate="no"># scan 0030 (folio number &quot;20&quot; at top right), headed &quot;Duplicat&quot; at top left (later pencil date &quot;28 März 1637&quot;):
 # the DUPLICATE of the letter on scans 0028-0029 (Malsburg to the Landgrave, 28 March 1637 old style), re-copied
 # with different line breaks. Same opening clear text (&quot;Ich bin gestern abent [in] Stadt ... wieder glücklich
 # angelangt ...&quot;, &quot;... in duplo, das ander aber den 24. [sign] huius vet. in simplo ankommen, dort mich funden,&quot;).
@@ -1735,7 +1735,7 @@ N 60 61 43 61 J? 79 72 16 83 67 55 44 77 11 16 48? 72 84 65 24 73 44 42 11 22 32
 # f.28 &quot;73 J? 79 63&quot; vs f.30 &quot;73 U? 79 63&quot;); each copy is transcribed as it stands.
 # notes: &quot;oo&quot; = the long looped sign; &quot;o&quot;, &quot;s&quot;, &quot;e&quot;, &quot;n&quot; = small lower-case signs; &quot;K&quot; = K-like sign; &quot;4H?&quot; = a sign like
 # 4 joined to H (f. 28 has &quot;M? 4#?&quot; at the same place); &quot;U?&quot; = a u/J-like hooked sign.</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f031.txt">f031.txt</a></p><pre># scan 0031: continuation of the DUPLICATE (scan 0030) of the letter of 28 March 1637 (old style), Malsburg to the
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f031.txt">f031.txt</a></p><pre translate="no"># scan 0031: continuation of the DUPLICATE (scan 0030) of the letter of 28 March 1637 (old style), Malsburg to the
 # Landgrave; it re-copies the cipher of scan 0029 from &quot;86 216 98 73 ...&quot; onward, with different line breaks.
 # Groups separated by spaces; capital letters are letter signs; clear words in {braces}; &#x27; = dot above the group;
 # ? = doubtful reading; # = crossed sign; _ = underlined. The ordinary H sign has a crossbar and is given as H.
@@ -1775,7 +1775,7 @@ N G_ 22 16 44 {oder} 40 84 31 55 22 32 16 30 22 37 49 43 52_ 88 129 90 71 16 30 
 <h3>ff. 32-33, 3 Apr 1637 and Mar 1637 <span class="st stuck">decoded, not read</span></h3>
 <p>A French letter signed &#x27;232&#x27; of 3 Apr 1637, citing a letter of the ambassador extraordinary in London, and German news extracts from London of 16/26 Mar in a second hand, in the same key; paired large capitals are name signs. Blocks &#x27;work/f032.txt&#x27; and &#x27;work/f033.txt&#x27; of reading_segmented.txt.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/ct/hcp509.txt">hcp509.txt</a></p><pre>46 79 31 97 16 39 42 76 39 W 28 46 97 48 20 60 65 87 35 30 67 11 63 C? 97 49 34 71 66 48 Z 39 99 31 46 25 16 68
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/ct/hcp509.txt">hcp509.txt</a></p><pre translate="no">46 79 31 97 16 39 42 76 39 W 28 46 97 48 20 60 65 87 35 30 67 11 63 C? 97 49 34 71 66 48 Z 39 99 31 46 25 16 68
 67 79 15 62 17 88 84 76 79 58 93 38 80 14 99 70 19 93 81 36 79
 39 42 73 31 68 77 84 83 29 49 99 55 15 73 22 32 30 84 13
 39 R 91 55 W 62 27 Y 30 78 49 27 36 38 26 68 61 22 43 16 H
@@ -1799,7 +1799,7 @@ V F_? 13 123
 24 63 51 79 15 77 61 15 90 70 57 48 46 11 83 29 16 24 42 10 LL
 11 O 28 H 16 13 24 57 77 89 31 Z
 21 73 B 24 35 156</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f032.txt">f032.txt</a></p><pre># scan 0032 (folio number &quot;21&quot; at top right): a DIFFERENT letter, in French, &quot;Hault et Puissant Seigneur /
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f032.txt">f032.txt</a></p><pre translate="no"># scan 0032 (folio number &quot;21&quot; at top right): a DIFFERENT letter, in French, &quot;Hault et Puissant Seigneur /
 # Monseigneur&quot;, dated at the foot &quot;Zinca? 3e d&#x27;Avril 1637&quot; (place name uncertain), subscribed &quot;de V.re Alt.ze /
 # Treshumble, Tresobeissant et tres fidel serviteur&quot; and signed only with the code number &quot;232&quot; (sender not named).
 # Opening: &quot;Monseigneur, combien que la retraicte de Gallas de France, comme aussy l&#x27;accord porté par le Roy
@@ -1832,7 +1832,7 @@ V F_? 13 123
 # (cf. XX in f. 3), and &quot;[square]&quot; is a drawn square sign. &quot;N&#x27;&quot; = N with two dots above; &quot;Y?&quot; = a dotted y-like sign;
 # &quot;N? G&quot; = an N-like sign followed by G. The French letter&#x27;s lines are the scan lines; the Extract is in a second hand.
 # 28 Sept: paired large letter signs (&quot;O O&quot;, &quot;A A&quot; ...) joined into one code token each (OO, AA ...), per the note above.</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f033.txt">f033.txt</a></p><pre># scan 0033 (upper half of a leaf, torn/cut; lower half blank with show-through): news extracts in German (with a
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/f033.txt">f033.txt</a></p><pre translate="no"># scan 0033 (upper half of a leaf, torn/cut; lower half blank with show-through): news extracts in German (with a
 # Dutch phrase: &quot;Metter tijt compt Herman met wambas en de broeck, Staet te hopen dat metter tijt ock sal volgen&quot;),
 # in the hand of the Extract on f. 32. Three short pieces, each closed by a line of cipher signs + a date, which stand
 # where a sender would be named:
@@ -1857,7 +1857,7 @@ V F_? 13 123 {5 April / 26 Mart. 1637}
 # the 24 at the start of the piece-2 second line has a long 4-crossbar (recheck: not a strike; reads &quot;dunkel&quot;); paired large signs &quot;G G&quot;, &quot;A A&quot;, &quot;K K&quot;, &quot;L L&quot;
 # as on f. 32. The lower half of the leaf has only faint show-through from the verso (not transcribed).</pre></details>
 <p class="ftext">Decryption: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/reading_segmented.txt">reading_segmented.txt</a></p>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP509_reading.md">HCP509_reading.md</a></p><pre># HCPortal 509 (HStAM 4 h Nr. 1411, ff. 32-33): the French letter of &quot;232&quot;, 3 Apr 1637, and German news extracts — partial reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP509_reading.md">HCP509_reading.md</a></p><pre translate="no"># HCPortal 509 (HStAM 4 h Nr. 1411, ff. 32-33): the French letter of &quot;232&quot;, 3 Apr 1637, and German news extracts — partial reading
 
 Rests on: `f032.txt`, `f033.txt` (transcription agents, checked by Bourdeau) decoded with `key.txt` unchanged
 (`research/reading_audit/b08_dec.py`); the clear French letter on f. 32 transcribed here from the HCPortal original scan
@@ -1905,7 +1905,7 @@ Zu Paris hat man mit abfertigung Hertzog Bernhards von Sachsen Und la Valette so
   uncertain ([?word]) or unread ([?]); the decoded cipher runs (italics) are unchanged from b08. Spelling as written; the
   Dutch proverb on f. 33 kept as written. &#x27;Saindetta&#x27; is probably Sabbioneta, &#x27;Congnesten&#x27; conquests, &#x27;Roß&#x27; Colonel
   Rosen; &#x27;Andorff&#x27; Antwerp. &#x27;secKrs&#x27; = secours (K sign), &#x27;Palz&#x27; = Pfalz as the figures give it.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP509_en.md">HCP509_en.md</a></p><pre># HCPortal 509 (ff. 32-33): the French letter of &quot;232&quot;, 3 Apr 1637, and German news extracts — English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/malsburg1637/HCP509_en.md">HCP509_en.md</a></p><pre translate="no"># HCPortal 509 (ff. 32-33): the French letter of &quot;232&quot;, 3 Apr 1637, and German news extracts — English
 
 Translation of `HCP509_reading.md` (22 Oct 2026, batch b08; German extracts re-transcribed 23 Oct 2026, batch r2k), with the same holes: `[129]` an unvalued code, `&lt;GG&gt;` an
 unvalued sign, `[?word]` partly carried, `[word]` supplied, `[…]` unread or not transcribed; cipher in *italics*;
@@ -1947,7 +1947,7 @@ In Paris they have so much to do with the dispatch of Duke Bernhard of Saxony an
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Hessisches Staatsarchiv Marburg, HStAM 4 h Nr. 1411, via HCPortal</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="rohan1636.html" rel="prev">&larr; Savoy and Canisy to Rohan 1636 1636</a><a href="heusner1637.html" rel="next">Heusner 1637 1637 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

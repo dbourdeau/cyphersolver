@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-  <div class="cipherstrip">PXSXH IHVGD OLIXA DYZZT<br>RFBLQ XPLPN MSLSB ZZSFP<br>&hellip; Rovno to Berlin, 27 February 1942</div>
+  <div class="cipherstrip" translate="no">PXSXH IHVGD OLIXA DYZZT<br>RFBLQ XPLPN MSLSB ZZSFP<br>&hellip; Rovno to Berlin, 27 February 1942</div>
   <p class="kicker">Mogilev, Rovno, Proskurov &rarr; Berlin &middot; Doppelkastenschl&uuml;ssel, two boxes, two passes &middot; 27 February 1942</p>
   <h1>German police double-box radiograms of 27 February 1942</h1>
   <p class="sub">Six radio messages of the Ordnungspolizei on the Eastern Front, intercepted at Beaumanor, kept in NSA&rsquo;s Historic Cryptographic Collection at NARA, and published by Frode Weierud (CryptoCellar, 5 August 2020); Klaus Schmeh posted them as a challenge on 30 August 2020. This page is the five messages of 27 February 1942, in one daily key; the sixth, of 16 June, is in another key and has its own page.</p>
@@ -84,7 +84,7 @@
 <tr><td>C43</td><td>dated 28 Feb 1943</td><td>SRS Kiev &rarr; SRS1</td><td class="n">138</td><td><span class="c">SRXOS</span></td></tr>
 </table>
 
-<p>The second part of C43 was lost to interference (&ldquo;2TL SWAMPED QRM&rdquo;). Two groups of E72 part 2 are partly illegible. Weierud warns that O and Q are hard to tell apart on the copies. In D67 the second group of line 2 is taken as <span class="c">ZAVGO</span>, following the operator&rsquo;s own check line (&ldquo;CTN 2/6 ZAVGO&rdquo;). The transcriptions used are in <code>msgs.txt</code>.</p>
+<p>The second part of C43 was lost to interference (&ldquo;2TL SWAMPED QRM&rdquo;). Two groups of E72 part 2 are partly illegible. Weierud warns that O and Q are hard to tell apart on the copies. In D67 the second group of line 2 is taken as <span class="c">ZAVGO</span>, following the operator&rsquo;s own check line (&ldquo;CTN 2/6 ZAVGO&rdquo;). The transcriptions used are in <code translate="no">msgs.txt</code>.</p>
 
 <h2 id="a115"><span class="num">02</span> A115, a different key</h2>
 
@@ -106,7 +106,7 @@
 
 <h2 id="system"><span class="num">04</span> The system</h2>
 
-<p>Two manuals survive and both were consulted here: the OKH draft <em>Schl&uuml;sselanleitung zum Doppelkastenschl&uuml;ssel</em> of 2 December 1940 and the OKW issue of December 1941. They agree. There are two 5&times;5 boxes. The plaintext is written in double lines of <b>17</b> letters, and the pairs are the letters that stand one under the other; a remainder too short for a double line is split in half. Each pair is enciphered <b>twice</b> with the same boxes. When the two letters of a pair fall in the same row, each cipher letter is taken from the right. The spelling rules are CH &rarr; Q, &szlig; &rarr; SZ, and the hyphen written STRIQ. The reference implementation, <code>dk.py</code>, enciphers both manuals&rsquo; worked examples letter for letter (the 1941 manual prints <span class="c">tylhu</span> on p. 5 for the <span class="c">tvlhu</span> it has correctly on p. 6).</p>
+<p>Two manuals survive and both were consulted here: the OKH draft <em>Schl&uuml;sselanleitung zum Doppelkastenschl&uuml;ssel</em> of 2 December 1940 and the OKW issue of December 1941. They agree. There are two 5&times;5 boxes. The plaintext is written in double lines of <b>17</b> letters, and the pairs are the letters that stand one under the other; a remainder too short for a double line is split in half. Each pair is enciphered <b>twice</b> with the same boxes. When the two letters of a pair fall in the same row, each cipher letter is taken from the right. The spelling rules are CH &rarr; Q, &szlig; &rarr; SZ, and the hyphen written STRIQ. The reference implementation, <code translate="no">dk.py</code>, enciphers both manuals&rsquo; worked examples letter for letter (the 1941 manual prints <span class="c">tylhu</span> on p. 5 for the <span class="c">tvlhu</span> it has correctly on p. 6).</p>
 
 <p>The Army&rsquo;s &ldquo;NI&rdquo; field cipher, as NSA&rsquo;s <em>Cryptologic Quarterly</em> describes it, is the same scheme with <b>21</b>-letter lines and the <b>left</b> neighbour for same-row pairs; its worked examples (EU &rarr; VR &rarr; QZ, en &rarr; FL &rarr; NC, ea &rarr; HK &rarr; TT) also reproduce exactly. Which variant the police used is not documented, so every attack here was run under both. That February 1942 is the double-box period at all rests on Hanyok: the police changed from double transposition to double Playfair between September and early November 1941, and Bletchley found the new system easier to decrypt.</p>
 
@@ -114,28 +114,28 @@
 
 <p>The double pass is what matters. After the first pass the first letter of a pair has been taken from box B, but the second pass looks it up in box A. So each letter is used by its position in both boxes. Write each letter as four coordinates: its row and column in A and its row and column in B. Deciphering a cipher pair (c1, c2) in the cross-row case gives the intermediate pair</p>
 
-<pre>v1 = A[ B-row of c1 ][ A-col of c2 ]      v2 = B[ A-row of c2 ][ B-col of c1 ]</pre>
+<pre translate="no">v1 = A[ B-row of c1 ][ A-col of c2 ]      v2 = B[ A-row of c2 ][ B-col of c1 ]</pre>
 
 <p>and the plaintext pair</p>
 
-<pre>p1 = A[ B-row of v1 ][ A-col of v2 ]      p2 = B[ A-row of v2 ][ B-col of v1 ]</pre>
+<pre translate="no">p1 = A[ B-row of v1 ][ A-col of v2 ]      p2 = B[ A-row of v2 ][ B-col of v1 ]</pre>
 
 <p>Every step mixes an A-coordinate with a B-coordinate. Between the two passes sits the map from each letter&rsquo;s cell in box A to its cell in box B, a random permutation of the 25 cells. Section 06 shows that this permutation stops the attacks; the size of the key does not.</p>
 
 <h2 id="tried"><span class="num">05</span> What was tried</h2>
 
-<p>A failed search proves nothing without a control, so each attack on the double encipherment was first run on synthetic text: 970 letters of German text enciphered twice with random boxes by <code>mksyn.py</code> and <code>dk.py</code>, in parts of the same lengths as the real ones. Scores are quadgram log-probabilities per letter from 25-letter German tables (<code>build_lm.py</code>); German text scores about &minus;3.9 and random letters about &minus;6.</p>
+<p>A failed search proves nothing without a control, so each attack on the double encipherment was first run on synthetic text: 970 letters of German text enciphered twice with random boxes by <code translate="no">mksyn.py</code> and <code translate="no">dk.py</code>, in parts of the same lengths as the real ones. Scores are quadgram log-probabilities per letter from 25-letter German tables (<code translate="no">build_lm.py</code>); German text scores about &minus;3.9 and random letters about &minus;6.</p>
 
 <table>
 <tr><th>hypothesis or method</th><th>result</th><th>verdict</th></tr>
 <tr><td>Single encipherment, all seven parts pooled, line length 1&ndash;30, pairs in written and reversed order</td><td>best &minus;5.91 per letter against about &minus;3.9 for German</td><td><span class="st stuck">excluded</span></td></tr>
 <tr><td>Single encipherment per part and per discriminator group, line lengths 1, 17 and 21, both pair orders</td><td>&minus;5.0 to &minus;5.6, the level at which short texts overfit noise</td><td><span class="st stuck">excluded</span></td></tr>
-<tr><td>Double encipherment, simulated annealing on quadgrams (<code>dksolve2.cs</code>)</td><td>on the synthetic 970-letter text it never leaves noise (&minus;6.0); started four swaps from the true key, it does not climb back</td><td><span class="st stuck">fails on its control</span></td></tr>
-<tr><td>Staged unigram &rarr; bigram &rarr; quadgram scoring; steepest-ascent iterated local search; parallel tempering; relabelling moves; a row/column product score; Sinkhorn relaxation on GPU (<code>relax.py</code>); hard EM with the plaintext as a variable (<code>emsolve.cs</code>)</td><td>all fail on the synthetic text. Random starts stall at unigram score &minus;1.39 to &minus;1.42, where the true key scores &minus;1.221</td><td><span class="st stuck">fails on its control</span></td></tr>
+<tr><td>Double encipherment, simulated annealing on quadgrams (<code translate="no">dksolve2.cs</code>)</td><td>on the synthetic 970-letter text it never leaves noise (&minus;6.0); started four swaps from the true key, it does not climb back</td><td><span class="st stuck">fails on its control</span></td></tr>
+<tr><td>Staged unigram &rarr; bigram &rarr; quadgram scoring; steepest-ascent iterated local search; parallel tempering; relabelling moves; a row/column product score; Sinkhorn relaxation on GPU (<code translate="no">relax.py</code>); hard EM with the plaintext as a variable (<code translate="no">emsolve.cs</code>)</td><td>all fail on the synthetic text. Random starts stall at unigram score &minus;1.39 to &minus;1.42, where the true key scores &minus;1.221</td><td><span class="st stuck">fails on its control</span></td></tr>
 <tr><td>The same, with the true A-cell &rarr; B-cell permutation given and only the letter labelling searched</td><td>still stalls at &minus;1.42</td><td><span class="st stuck">fails on its control</span></td></tr>
 <tr><td>SAT solving (z3) with 20 to 37 known pairs</td><td>no answer within 15 minutes for any case</td><td><span class="st stuck">inconclusive</span></td></tr>
-<tr><td>Known plaintext, meet-in-the-middle score (<code>kpsolve.cs</code>): encipher the plaintext pair once, decipher the cipher pair once, and score row-by-row and column-by-column agreement of the two intermediates</td><td>from random starts, recovers the boxes from 111 synthetic pairs in about a minute (111 of 111 consistent); 80 pairs nearly (68 of 80); fails at 60 or fewer, or with 10% of the pairs wrong</td><td><span class="st solved">works on its control</span></td></tr>
-<tr><td>Key-free alignment of Bletchley&rsquo;s A115 text to its ciphertext (<code>align115c.py</code>, <code>align115h.py</code>): repeated cipher pairs must match repeated plaintext pairs; exact backtracking over spellings, X separators, numbers written out, address and signature placement, Borki / Mohilew / Bobruiisk variants, 222 or 224 letters, line lengths 1&ndash;24</td><td>no consistent alignment. The same search recovers a synthetic spelling in 35 seconds</td><td><span class="st stuck">no alignment</span></td></tr>
+<tr><td>Known plaintext, meet-in-the-middle score (<code translate="no">kpsolve.cs</code>): encipher the plaintext pair once, decipher the cipher pair once, and score row-by-row and column-by-column agreement of the two intermediates</td><td>from random starts, recovers the boxes from 111 synthetic pairs in about a minute (111 of 111 consistent); 80 pairs nearly (68 of 80); fails at 60 or fewer, or with 10% of the pairs wrong</td><td><span class="st solved">works on its control</span></td></tr>
+<tr><td>Key-free alignment of Bletchley&rsquo;s A115 text to its ciphertext (<code translate="no">align115c.py</code>, <code translate="no">align115h.py</code>): repeated cipher pairs must match repeated plaintext pairs; exact backtracking over spellings, X separators, numbers written out, address and signature placement, Borki / Mohilew / Bobruiisk variants, 222 or 224 letters, line lengths 1&ndash;24</td><td>no consistent alignment. The same search recovers a synthetic spelling in 35 seconds</td><td><span class="st stuck">no alignment</span></td></tr>
 </table>
 
 <p>The single-encipherment results exclude that hypothesis: the pooled text is 970 letters, far more than a single-pass double box needs, and the best key found is nowhere near German. The double-encipherment results exclude nothing about the plaintext, because the same methods fail on text where the answer is known. They measure the attacks only.</p>
@@ -152,7 +152,7 @@
 <li><b>Size is not the problem.</b> Giving the solver the true permutation of cells between box A and box B, which leaves only the labelling of the letters to find, does not help: it still stalls at &minus;1.42. The difficulty is the conjugation through a random cell permutation (section 04). The likely mechanism: a key that is partly right gives intermediate letters that are wrong, and the second pass sends those to unrelated cells, so partial correctness earns no score.</li>
 </ul>
 
-<p>Known plaintext changes this, because it removes the second pass from the scoring. <code>kpsolve.cs</code> enciphers each known plaintext pair once forward, deciphers its cipher pair once backward, and asks the two intermediates to agree row by row and column by column. Each half is a single pass, which gives the local search a gradient; on the synthetic controls about 80 pairs are enough.</p>
+<p>Known plaintext changes this, because it removes the second pass from the scoring. <code translate="no">kpsolve.cs</code> enciphers each known plaintext pair once forward, deciphers its cipher pair once backward, and asks the two intermediates to agree row by row and column by column. Each half is a single pass, which gives the local search a gradient; on the synthetic controls about 80 pairs are enough.</p>
 
 <h2 id="finish"><span class="num">07</span> What would finish it</h2>
 
@@ -160,7 +160,7 @@
 
 <table>
 <tr><th>what</th><th>why it would work</th></tr>
-<tr><td>About 80 plaintext&ndash;ciphertext pairs for one key</td><td><code>kpsolve.exe</code> then recovers the boxes, and the key reads all seven parts of 27 February. The source would be Bletchley&rsquo;s own decrypts of that day&rsquo;s traffic, which should be in TNA HW 16/17 (verbatim German police decrypts; HW 16/18 is May&ndash;June 1942), not online; or a long stereotyped preamble or address common to the messages. For A115 the pairs need the exact German wording that was enciphered.</td></tr>
+<tr><td>About 80 plaintext&ndash;ciphertext pairs for one key</td><td><code translate="no">kpsolve.exe</code> then recovers the boxes, and the key reads all seven parts of 27 February. The source would be Bletchley&rsquo;s own decrypts of that day&rsquo;s traffic, which should be in TNA HW 16/17 (verbatim German police decrypts; HW 16/18 is May&ndash;June 1942), not online; or a long stereotyped preamble or address common to the messages. For A115 the pairs need the exact German wording that was enciphered.</td></tr>
 <tr><td>A115 aligned</td><td>It would also settle the police layout, lines of 17 or 21 and the left or right neighbour, and show whether police boxes were random or built from a keyword. Keyword-built boxes would open a keyword search on 27 February.</td></tr>
 <tr><td>A new ciphertext-only idea for a second pass through the same boxes</td><td>Nothing tried here provides one, and nothing published does.</td></tr>
 </table>
@@ -178,7 +178,7 @@
 <li>&ldquo;WWII German Army Field Cipher&rdquo;, NSA <em>Cryptologic Quarterly</em>, via the Wayback Machine: the Army NI variant and its worked examples.</li>
 <li><em>Modern Cryptanalysis of the Truppenschl&uuml;ssel</em> (22 October 2021): the Army&rsquo;s simplified one-pass relative, and the two manuals&rsquo; provenance.</li>
 </ul>
-<p class="muted">Everything is in <code>targets/orpo1942/</code> in the project repository: <code>msgs.txt</code> (the ciphertexts, discriminators removed), <code>dk.py</code> (reference implementation, verified on both manuals), <code>build_lm.py</code> (25-letter German n-gram tables), <code>mksyn.py</code> (synthetic test sets), <code>dksolve2.cs</code> (annealing, iterated local search and tempering with staged scoring), <code>kpsolve.cs</code> (the known-plaintext solver), <code>emsolve.cs</code> and <code>relax.py</code> (failed attacks, kept for the record), the A115 aligners (now in <code>targets/orpo1942jun/</code>), the source PDFs, and <code>NOTES.md</code>, which holds the full record of the attempt.</p>
+<p class="muted">Everything is in <code translate="no">targets/orpo1942/</code> in the project repository: <code translate="no">msgs.txt</code> (the ciphertexts, discriminators removed), <code translate="no">dk.py</code> (reference implementation, verified on both manuals), <code translate="no">build_lm.py</code> (25-letter German n-gram tables), <code translate="no">mksyn.py</code> (synthetic test sets), <code translate="no">dksolve2.cs</code> (annealing, iterated local search and tempering with staged scoring), <code translate="no">kpsolve.cs</code> (the known-plaintext solver), <code translate="no">emsolve.cs</code> and <code translate="no">relax.py</code> (failed attacks, kept for the record), the A115 aligners (now in <code translate="no">targets/orpo1942jun/</code>), the source PDFs, and <code translate="no">NOTES.md</code>, which holds the full record of the attempt.</p>
 
 </main>
 <footer><div class="in">

@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">Ƃ 1 6 θ ÷ W 4 æ ⊡ − &middot; W V ÷ 9 ◻ &middot; W ⋕ ◻ Ⱥ 9 ⊡ x æ<br>[?] de p e s c h e r a &middot; c a s i n &middot; c o n f i r m e</div>
+  <div class="cipherstrip" translate="no">Ƃ 1 6 θ ÷ W 4 æ ⊡ − &middot; W V ÷ 9 ◻ &middot; W ⋕ ◻ Ⱥ 9 ⊡ x æ<br>[?] de p e s c h e r a &middot; c a s i n &middot; c o n f i r m e</div>
   <p class="kicker">Rome &rarr; the League council in Paris &middot; homophonic cipher of graphic signs inside a clear letter &middot; 23 August 1589</p>
   <h1>A letter from Rome to the abb&eacute; d&rsquo;Orbais, 23 August 1589</h1>
   <p class="sub">BnF fr. 3413 no. 62 &middot; a secretary of Cardinal Pellev&eacute; writes to Jean de Piles, of the League&rsquo;s council in Paris, as the news of Henri&nbsp;III&rsquo;s murder reaches Rome &middot; catalogued with three cipher keys bound in the same volume</p>
@@ -108,7 +108,7 @@ The same cipher is used in <strong>BnF fr. 4715 f.&nbsp;2</strong> (<a href="htt
 <tr><td>ou nous ferons; et a mon avis</td><td>&hellip; a θ m ce ◻ ÷ &middot; n &minus; ∇ ce ◻ v 9 ÷</td><td><strong>a f</strong>, <strong>n et</strong></td></tr>
 <tr><td>de, qui</td><td>1 &middot; ε</td><td>word signs, as in Tomokiyo&rsquo;s table</td></tr>
 </table>
-<p>A key was assembled from these values, Tomokiyo&rsquo;s table and cribs from the clear context of no.&nbsp;62, with the source of each value recorded (<code>targets/orbais/decode62.py</code>). A run counts as decrypted only when it gives French sense; letter values that give no sense are counted as open.</p>
+<p>A key was assembled from these values, Tomokiyo&rsquo;s table and cribs from the clear context of no.&nbsp;62, with the source of each value recorded (<code translate="no">targets/orbais/decode62.py</code>). A run counts as decrypted only when it gives French sense; letter values that give no sense are counted as open.</p>
 
 <h2 id="reading"><span class="num">04</span> What the ciphered words say</h2>
 <figure class="creveal" data-src="reveal/orbais.json"></figure>
@@ -154,7 +154,7 @@ A &ldquo;S<sup>r</sup> Baron&rdquo; writes in the same League dossier of 1593 as
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>Letter to the abbé d&#x27;Orbais, Rome, 23 Aug [1589], BnF fr. 3413 no. 62</h3>
 <p>A secretary of Cardinal Pellevé, signing Baron, writes from Rome to Jean de Piles, abbé d&#x27;Orbais, the League&#x27;s envoy, with the news of Henri III&#x27;s death: couriers from Spain, Genoa and Tuscany, and the Duke of Lorraine&#x27;s letter from his agent Bardin in Paris, 8 August (&#x27;le Roy a esté tué, et c&#x27;est le Roy de Navarre qui l&#x27;a faict faire&#x27;; the Cardinal de Bourbon proclaimed King in Paris). In cipher: &#x27;[Ƃ] depeschera [ʃ] dedans deux jours le doien&#x27;, &#x27;la protection que vous sçavez&#x27;, Mons. Cassin (his senior, ill with fever), &#x27;Mr le [τ] mon maistre&#x27;, &#x27;j&#x27;ay veu ung advis qui confirme&#x27;, the signature Baron.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/orbais/no62_cipher.txt">no62_cipher.txt</a></p><pre># BnF fr. 3413 no. 62 (Rome, 23 Aug [1589]) - the cipher groups, one per line, in letter order.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/orbais/no62_cipher.txt">no62_cipher.txt</a></p><pre translate="no"># BnF fr. 3413 no. 62 (Rome, 23 Aug [1589]) - the cipher groups, one per line, in letter order.
 # First field = group label; then one token per cipher sign (labels as in NOTES.md / decode62.py).
 # Measure with: python docs/_check_profile.py --measure targets/orbais/no62_cipher.txt --drop-first
 # 5 Oct 2026 re-check at native resolution: V2 fifth sign has an inner mark like V1&#x27;s ⊡ (not the clean ◻ of Cassin) -&gt; ⊡;
@@ -174,7 +174,7 @@ G2   ÷ ooo ⊡ θ
 H    ʃ ɔ θ φ ɔ ◻ η − 7 b ɸ q
 I    W ⋕ ◻ Ⱥ 9 ⊡ x æ
 Sig  2 V ⊡ m Ħ</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/orbais/texts/no62_decryption.md">no62_decryption.md</a></p><pre># Output of decode62.py, run 22 Oct 2026: per cipher group, the LM score, the signs, the letter-value decode and the reading; [x] = code sign without a value, &#x27;(no sense)&#x27; = group not read. The clear text of the letter is not transcribed in this folder. Verbatim script output.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/orbais/texts/no62_decryption.md">no62_decryption.md</a></p><pre translate="no"># Output of decode62.py, run 22 Oct 2026: per cipher group, the LM score, the signs, the letter-value decode and the reading; [x] = code sign without a value, &#x27;(no sense)&#x27; = group not read. The clear text of the letter is not transcribed in this folder. Verbatim script output.
 LM  -3.25 sense  S1a  Ƃ 1 6 θ ÷                    -&gt; ?depes                 | [Ƃ] de-pes             C  4/5
 LM  -3.25 sense  S1b  W 4 æ ⊡ − ʃ                  -&gt; chera?                 | chera [ʃ]              C  5/6
 LM  -2.79 sense  S2   Ƒ 3 tt ħ θ ◻                 -&gt; ledoien                | le doien               C  6/6
@@ -191,7 +191,7 @@ LM  -0.59 sense  I    W ⋕ ◻ Ⱥ 9 ⊡ x æ              -&gt; confirme       
 LM  -0.03 sense  Sig  2 V ⊡ m Ħ                    -&gt; baron                  | Baron                  H  5/5
 
 cipher tokens 91, read as sense 75, fraction 0.824</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/orbais/texts/no62_reading.md">no62_reading.md</a></p><pre># BnF fr. 3413 no. 62 (ff. 126r-127r): a secretary of Cardinal Pellevé (&quot;Baron&quot;) to the abbé d&#x27;Orbais, Rome, 23 August [1589], reading
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/orbais/texts/no62_reading.md">no62_reading.md</a></p><pre translate="no"># BnF fr. 3413 no. 62 (ff. 126r-127r): a secretary of Cardinal Pellevé (&quot;Baron&quot;) to the abbé d&#x27;Orbais, Rome, 23 August [1589], reading
 
 Re-read 23 Oct 2026 (Claude Opus 5.5, REREAD_BRIEF batch b31); log in `no62_reread_log.md`. The letter is in clear
 except fourteen short cipher runs. **The clear text is transcribed here for the first time** from the Gallica images
@@ -247,7 +247,7 @@ plus particulierement que nul aultre. [?P.] A bien viene touts.
   explained.
 - *Me recommandant* (f. 126v l. 17) runs into the dating line; nothing follows it.
 - *[?desirer]* (f. 126v l. 13, written *d?s?rir*) and *[?lassé]* (f. 126r, *laissé* in the hand) are read with doubt.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/orbais/texts/no62_reading.md">no62_reading.md</a></p><pre># BnF fr. 3413 no. 62 (ff. 126r-127r): a secretary of Cardinal Pellevé (&quot;Baron&quot;) to the abbé d&#x27;Orbais, Rome, 23 August [1589], reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/orbais/texts/no62_reading.md">no62_reading.md</a></p><pre translate="no"># BnF fr. 3413 no. 62 (ff. 126r-127r): a secretary of Cardinal Pellevé (&quot;Baron&quot;) to the abbé d&#x27;Orbais, Rome, 23 August [1589], reading
 
 Re-read 23 Oct 2026 (Claude Opus 5.5, REREAD_BRIEF batch b31); log in `no62_reread_log.md`. The letter is in clear
 except fourteen short cipher runs. **The clear text is transcribed here for the first time** from the Gallica images
@@ -303,7 +303,7 @@ plus particulierement que nul aultre. [?P.] A bien viene touts.
   explained.
 - *Me recommandant* (f. 126v l. 17) runs into the dating line; nothing follows it.
 - *[?desirer]* (f. 126v l. 13, written *d?s?rir*) and *[?lassé]* (f. 126r, *laissé* in the hand) are read with doubt.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/orbais/texts/no62_en.md">no62_en.md</a></p><pre># BnF fr. 3413 no. 62: &quot;Baron&quot; to the abbé d&#x27;Orbais, Rome, 23 August [1589], English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/orbais/texts/no62_en.md">no62_en.md</a></p><pre translate="no"># BnF fr. 3413 no. 62: &quot;Baron&quot; to the abbé d&#x27;Orbais, Rome, 23 August [1589], English
 
 Translation of `no62_reading.md` (23 Oct 2026, Claude Opus 5.5, batch b31). Same holes.
 
@@ -346,18 +346,18 @@ come. Since Monsieur the [τ] my master withdrew, I have seen a report that conf
 <h2 id="sources"><span class="num">06</span> Sources</h2>
 <ul>
 <li>BnF, fr. 3413, nos. 53, 61, 62, 69: <a href="https://gallica.bnf.fr/ark:/12148/btv1b52510705j" rel="noopener">Gallica btv1b52510705j</a>, views 227, 257, 259&ndash;262 and 281&ndash;284. Contents from the BnF notice <a href="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc49884s" rel="noopener">cc49884s</a>.</li>
-<li>BnF, fr. 4715, f.&nbsp;2: <a href="https://gallica.bnf.fr/ark:/12148/btv1b52509819x" rel="noopener">Gallica btv1b52509819x</a>, view 17. The aligned words are in <code>targets/orbais/fr4715_f2_aligned.txt</code>.</li>
+<li>BnF, fr. 4715, f.&nbsp;2: <a href="https://gallica.bnf.fr/ark:/12148/btv1b52509819x" rel="noopener">Gallica btv1b52509819x</a>, view 17. The aligned words are in <code translate="no">targets/orbais/fr4715_f2_aligned.txt</code>.</li>
 <li>S. Tomokiyo, <a href="https://cryptiana.web.fc2.com/code/nevers.htm" rel="noopener">&ldquo;Catalogue of Ciphers (Mainly Related to Duke of Nevers)&rdquo;</a>, cryptiana. See the sections on BnF fr. 3413, fr. 3612 (the Nevers&ndash;Piles table) and fr. 4715.</li>
 <li>BnF, fr. 3612: notice <a href="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc50062c" rel="noopener">cc50062c</a>, not digitised.</li>
 </ul>
-<p class="muted">The notes, the transcription of the cipher runs (<code>no62_cipher.txt</code>), the decoder that measures the decryption (<code>decode62.py</code>), the pattern-search and annealing scripts and the fetcher are in the repository (<code>targets/orbais/</code>). Page images are not committed.</p>
+<p class="muted">The notes, the transcription of the cipher runs (<code translate="no">no62_cipher.txt</code>), the decoder that measures the decryption (<code translate="no">decode62.py</code>), the pattern-search and annealing scripts and the fetcher are in the repository (<code translate="no">targets/orbais/</code>). Page images are not committed.</p>
 
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Manuscript images: Biblioth&egrave;que nationale de France</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="r2276.html" rel="prev">&larr; Reims 1589 1589</a><a href="nevers1589.html" rel="next">Nevers intercepts 1589 1589 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

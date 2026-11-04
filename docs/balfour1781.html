@@ -37,7 +37,7 @@
   </div>
 </div>
 <section class="hero">
-  <div class="cipherstrip">33 &middot; 19 &middot; 37 &middot; 45 &middot; 31 &mdash; 24 &middot; 50 &middot; 8 &middot; 69 &middot; 16 &mdash; 3 &middot; 11 &middot; 14 &middot; 73 &middot; 18 &middot; 17 &middot; 14 &middot; 3 &middot; 19 &middot; 26<br>[A&nbsp;=&nbsp;19] &middot; t &middot; &ndash; &middot; h &middot; &ndash; &middot; e &middot; p &middot; r &middot; i &middot; &ndash; &middot; n &middot; c &middot; i &middot; p &middot; a &middot; l<br>ring 5 24 29 1 25 23 22 6 19 9 17 13 16 7 12 8 14 15 26 4 18 21 3 2 11 &middot; 30 and over = fillers</div>
+  <div class="cipherstrip" translate="no">33 &middot; 19 &middot; 37 &middot; 45 &middot; 31 &mdash; 24 &middot; 50 &middot; 8 &middot; 69 &middot; 16 &mdash; 3 &middot; 11 &middot; 14 &middot; 73 &middot; 18 &middot; 17 &middot; 14 &middot; 3 &middot; 19 &middot; 26<br>[A&nbsp;=&nbsp;19] &middot; t &middot; &ndash; &middot; h &middot; &ndash; &middot; e &middot; p &middot; r &middot; i &middot; &ndash; &middot; n &middot; c &middot; i &middot; p &middot; a &middot; l<br>ring 5 24 29 1 25 23 22 6 19 9 17 13 16 7 12 8 14 15 26 4 18 21 3 2 11 &middot; 30 and over = fillers</div>
   <p class="kicker">Charleston &rarr; Lord Cornwallis &middot; ring cipher with moving setting &middot; March and August 1781 &middot; read from the contemporary decipherment</p>
   <h1>Nisbet Balfour&rsquo;s intercepted cipher dispatches, 1781 (Papers of the Continental Congress, item 51)</h1>
 <div class="parties"><figure class="party recipient"><img src="portrait_lord-cornwallis.jpg" alt="Lord Cornwallis" title="Lord Cornwallis: Portrait by Thomas Gainsborough, 1783. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Lord Cornwallis</figcaption></figure></div><!-- /parties -->
@@ -77,7 +77,7 @@
 <h2 id="the-cipher"><span class="num">02</span> The cipher</h2>
 <p>Ian Saberton described this cipher in 2019 from letters in the Cornwallis Papers: an inner ring of numbers turned against an alphabet, the number standing for A given first, and numbers of 30 and over as fillers. The letters here fit that description exactly, and the transcription gives the whole ring:</p>
 <ul>
-<li><b>The ring.</b> 25 numbers in a fixed cyclic order, <code>5 24 29 1 25 23 22 6 19 9 17 13 16 7 12 8 14 15 26 4 18 21 3 2 11</code> (1&ndash;29 without 10, 20, 27 and 28), against a 25-letter alphabet with i and j as one letter. With A set to 19 the table is a19 b9 c17 d13 e16 f7 g12 h8 i14 k15 l26 m4 n18 o21 p3 q2 r11 s5 t24 u29 v1 w25 x23 y22 z6.</li>
+<li><b>The ring.</b> 25 numbers in a fixed cyclic order, <code translate="no">5 24 29 1 25 23 22 6 19 9 17 13 16 7 12 8 14 15 26 4 18 21 3 2 11</code> (1&ndash;29 without 10, 20, 27 and 28), against a 25-letter alphabet with i and j as one letter. With A set to 19 the table is a19 b9 c17 d13 e16 f7 g12 h8 i14 k15 l26 m4 n18 o21 p3 q2 r11 s5 t24 u29 v1 w25 x23 y22 z6.</li>
 <li><b>Fillers.</b> Numbers of 30 and over mean nothing and are scattered through the words (24 50 8 69 16 = &ldquo;the&rdquo;).</li>
 <li><b>The setting moves.</b> A group of fillers holding one real number resets A to that number. The decipherer marked each such group with a brace. No. 1 has 13 of them, No. 2 has 15, No. 3 has 3 and B has 4. Nos. 2 and 3 start without one and carry on with the previous sheet&rsquo;s last setting.</li>
 <li><b>Numerals in clear.</b> A number standing alone between dashes is a numeral: the 82nd, 84th, 71st and 64th regiments, dates (29 January, 28 February, 26), a French 64-gun ship, 18 men and 40 horses.</li>
@@ -114,8 +114,8 @@
 
 <h2 id="method"><span class="num">06</span> Method</h2>
 <p>The two volumes of Intercepted Letters (848 images) were listed through the National Archives Catalog&rsquo;s records API. The pages were fetched as JPEG 2000 and cut into strips, and three transcription agents copied every number, the interlinear letters and the decipherer&rsquo;s marks: 6,349 cipher tokens on 17 pages.</p>
-<p>A single number-to-letter table per sheet, aligned against the interlinear, agreed only 20&ndash;27%: the table changes inside a sheet. Saberton&rsquo;s ring, given a setting for each word, read in long runs. A 25-letter alphabet fixed the remaining i/j and h/i slips, and then one ring order fitted every page. The braced groups proved to be the setting indicators. From then on the decoder (<code>decode.py</code>) works from the numbers alone: it reads an indicator&rsquo;s number as A, skips fillers and prints lone numbers as numerals. Where an indicator has only two fillers and could also be the word &ldquo;a&rdquo; padded with fillers, the next 40 letters are scored both ways with the project&rsquo;s English model. The only outside correction is the decipherer&rsquo;s &ldquo;should be 13&rdquo;. Two fillers cut off at the page edge on p. 722 were restored as &ldquo;4x&rdquo; from the visible first digit, which completed two indicators.</p>
-<p>Measured on the decoder&rsquo;s output, a letter counts as read when a 24-letter window containing it scores at least &minus;3.3 per letter on the <code>en-modern</code> model. No. 1: 1,213 of 1,213; No. 2: 1,292 of 1,292; No. 3: 237 of 237; B: 1,530 of 1,539; Stewart: 850 of 850. The same measure on the same numbers deciphered with a corrupted ring gives 0&ndash;2%. The project&rsquo;s validation test (<code>docs/_validate.py</code>) scores the reading at &minus;2.24 per letter, against &minus;7.26 for random keys of the same shape and &minus;4.16 for a key refitted to shuffled ciphertext: pass.</p>
+<p>A single number-to-letter table per sheet, aligned against the interlinear, agreed only 20&ndash;27%: the table changes inside a sheet. Saberton&rsquo;s ring, given a setting for each word, read in long runs. A 25-letter alphabet fixed the remaining i/j and h/i slips, and then one ring order fitted every page. The braced groups proved to be the setting indicators. From then on the decoder (<code translate="no">decode.py</code>) works from the numbers alone: it reads an indicator&rsquo;s number as A, skips fillers and prints lone numbers as numerals. Where an indicator has only two fillers and could also be the word &ldquo;a&rdquo; padded with fillers, the next 40 letters are scored both ways with the project&rsquo;s English model. The only outside correction is the decipherer&rsquo;s &ldquo;should be 13&rdquo;. Two fillers cut off at the page edge on p. 722 were restored as &ldquo;4x&rdquo; from the visible first digit, which completed two indicators.</p>
+<p>Measured on the decoder&rsquo;s output, a letter counts as read when a 24-letter window containing it scores at least &minus;3.3 per letter on the <code translate="no">en-modern</code> model. No. 1: 1,213 of 1,213; No. 2: 1,292 of 1,292; No. 3: 237 of 237; B: 1,530 of 1,539; Stewart: 850 of 850. The same measure on the same numbers deciphered with a corrupted ring gives 0&ndash;2%. The project&rsquo;s validation test (<code translate="no">docs/_validate.py</code>) scores the reading at &minus;2.24 per letter, against &minus;7.26 for random keys of the same shape and &minus;4.16 for a key refitted to shuffled ciphertext: pass.</p>
 <p>Against the interlinear as transcribed, the decoder agrees on 62&ndash;82% of letters where the interlinear is legible. The differences checked are faint or misread interlinear letters. The one real disagreement is in No. 3, where the cipher has the numeral 18 for the men lost and the decipherer wrote &ldquo;fifteen&rdquo;.</p>
 
 <h2 id="what-remains-uncertain"><span class="num">07</span> What remains uncertain</h2>
@@ -133,7 +133,7 @@
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>A. Balfour to Cornwallis, Nos. 1-3, March 1781 (pp. 717-725)</h3>
 <p>Charleston news for Cornwallis after he left: the Chatham convoy with Governor Bull and Sir Egerton Leigh, the raid of Marion and Lee on Monk&#x27;s Corner, Craig&#x27;s seizure of Wilmington, Georgetown attacked, a fleet from Ireland, Arnold&#x27;s express from the Chesapeake, Captain Barclay refusing to sail against the French, and Sumter beaten off at the Congarees and pursued by Rawdon and Watson.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p717.txt">p717.txt</a></p><pre>H | No. 1 ; page number 717 (top right)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p717.txt">p717.txt</a></p><pre translate="no">H | No. 1 ; page number 717 (top right)
 L01 | 33 19 37 45 31 - 24 50 8 69 16 - 3 11 14 73 18 17 14 3 19 26 - 21 17 61 92 17 29 11
 I01 | the principal occu
 N01 | brace &quot;}&quot; written at the start of the interlinear, over 37/45. &quot;14 3&quot;: the comma after 14 is a long slanted stroke; the next number reads 3 (could be taken as 13, but no second 1 is visible)
@@ -180,7 +180,7 @@ I18 | the d February kill
 L19 | 25 1 - 26 7 51 21 5 16 60 1 87 - 13 5 1 80 25 - 15 7 91 13 25 93 -
 I19 | ed two and made ?? me
 N19 | 7 and 21 are underlined; ink blot after 93 at the right edge (final dash under the blot); blot also near 87</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p718.txt">p718.txt</a></p><pre>H | 718 (page number, top left)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p718.txt">p718.txt</a></p><pre translate="no">H | 718 (page number, top left)
 L01 | 12 14 70 19 15 7 16 83 25 14 15 - 80 21 6 19 52 29 6 - 21 19 26 6 - 24
 I01 | prisoners which with
 L02 | 4 93 14 16 80 19 16 50 22 - 89 26 6 14 25 70 25 52 - 21 5 22 89 7
@@ -231,7 +231,7 @@ N17 | last number cut at the edge, looks like 16
 L18 | 8 93 21 - 71 - 29 8 15 4 61 3 8 89 2 25 - 29 13 4 1 80 4 2 12?
 I18 | el st Regiment Rals in?
 N18 | &quot;st&quot; written over 71; capital &quot;R&quot; in darker ink over 29; last number cut at the edge, a long-tailed figure, perhaps 12</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p719.txt">p719.txt</a></p><pre>H | 719 (page number, top right)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p719.txt">p719.txt</a></p><pre translate="no">H | 719 (page number, top right)
 L01 | 13 2 12 - 50 4 67 2 14 11 29 6 13 29 12 2 70 8 1 - 32 40 25 39 41 38 -
 I01 | and i nforwardnes s
 N01 | brace &quot;}&quot; at the right end of the line, after 38 and the closing dash
@@ -282,7 +282,7 @@ I18 | aken which is now in a st
 L19 | 25 62 3 19 80 - 15 9 74 6 19 9 83 19 14 22 19 - 14 15 3 71 3 15
 I19 | ate of defence not to
 N19 | blot at the right edge after the last 15</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p720.txt">p720.txt</a></p><pre>H | 720 (page number, top left)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p720.txt">p720.txt</a></p><pre translate="no">H | 720 (page number, top left)
 L01 | 84 62 23 19 - 9 15 18 22 19 6 - 23 2 3 89 23 29 54 25 - 12 25 18
 I01 | be forced but by a la
 N01 | a large loop/circle is drawn in the left margin around the start of the line (84 62 23 19)
@@ -337,7 +337,7 @@ N18 | first number faint, read 70; an arc is drawn over &quot;ed&quot; in the in
 L19 | 29 14 7 15 5 - 2 77 3 24 61 29 - 21 7 9 97 5 - 14 7 5 3 62 91 21 24
 I19 | their post near Hero n?
 N19 | &quot;H&quot; of &quot;Hero&quot; written in darker ink, as a correction</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p721.txt">p721.txt</a></p><pre>H | No. 2 ; page number 721 (top right)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p721.txt">p721.txt</a></p><pre translate="no">H | No. 2 ; page number 721 (top right)
 L01 | 17 5 15 16 8 7 - 39 26 40 37 - 24 2 73 60 14 22 16 - 25 3 26 71 23
 I01 | } If you mea
 N01 | brace &quot;}&quot; over 37 and the following dash; &quot;If&quot; written in darker ink beside the &quot;No. 2&quot; heading
@@ -391,7 +391,7 @@ N18 | the &quot;g&quot; descender runs across 3 (after 86)
 L19 | 50 4 - 21 6 25 29 70 9 2 53 18 1 26 18 89 - 14 99 1 54 4 - 11 25 1?
 I19 | d from thence and jo
 N19 | last number at the right edge partly cut, 1 then an unclear figure (11 or 17?); a flourish line drawn below the start of the line</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p722.txt">p722.txt</a></p><pre>H | &quot;3&quot; at top right (page number); &quot;722&quot; in left margin beside line 2 (folio stamp)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p722.txt">p722.txt</a></p><pre translate="no">H | &quot;3&quot; at top right (page number); &quot;722&quot; in left margin beside line 2 (folio stamp)
 L01 | 1 60 18 77 4 - 62 16 14 9 19 25 1 19 - 26 93 25 6 23 19 - 30 16 33 4x
 I01 | ned watsons corps
 N01 | last number &quot;4&quot; at the right edge; a trace may follow it in the binding margin
@@ -443,7 +443,7 @@ N18 | &quot;for&quot; has its last letters written over/corrected; a faint &quot
 L19 | - 17 26 16 14 22 26 9 - 29 12 11 7 22 19 70 19 4 5 26 11 2 - 4 60
 I19 | england with ac counts o
 N19 | rest of the page blank below line 19</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p723.txt">p723.txt</a></p><pre>H | &quot;723&quot; at top right (folio stamp)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p723.txt">p723.txt</a></p><pre translate="no">H | &quot;723&quot; at top right (folio stamp)
 L01 | 13 25 4 5 79 2 - 6 17 12 26 16 22 94 11 - 2 22 63 14 17 15 - 22
 I01 | f your being at sa le m a
 N01 | the stroke through 25 and 16 is the descender of interlinear letters; &quot;m&quot; over 17 written heavily
@@ -494,7 +494,7 @@ I18 | chatham with her con
 L19 | 3 8 64? 5 - 4 29 17 16 22 23 - 26 - 6 70 8 91 26 - 12 22 2 5 8 86
 I19 | o o y failed ?? for newpo
 N19 | &quot;64?&quot; written &quot;6&quot; followed by a cramped/overwritten &quot;4&quot;; over 26 the decipherer wrote a crossed &quot;tt&quot;/&quot;th&quot; sign; rest of page blank, a small caret mark below the text block</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p724.txt">p724.txt</a></p><pre>H | &quot;724&quot; at top left (folio stamp), written above line 1 next to the interlinear &quot;rk&quot;
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p724.txt">p724.txt</a></p><pre translate="no">H | &quot;724&quot; at top left (folio stamp), written above line 1 next to the interlinear &quot;rk&quot;
 N00 | On this page the interlinear is very faint and confused by show-through; many I-letters are uncertain. The photo also cuts the right edge: numbers at line ends marked &quot;?&quot; may be incomplete or followed by lost numbers.
 L01 | 26 13 - 40 5 30 40 39 - 15 4 13 12 26 25 14 - 6 97 5 18 19 16 ?
 I01 | rk sumpter havin
@@ -556,7 +556,7 @@ N19 | interlinear very faint: &quot;s h i s&quot; over 51-57, rest illegible; la
 L20 | - 37 40 14 35 36 - 15 12? 29 11 19 26 25 1 4 17 26 9 - 11 1
 I20 | by mis??????
 N20 | brace &quot;}&quot; over the dash after 36; nothing over 37 40 14 35 36; the 12 after 15 is struck through (or overwritten); both 26 written heavily; rest of interlinear faint; bottom of page reached, no blank area</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p725.txt">p725.txt</a></p><pre>H | &quot;No 3&quot; (centred, underlined) at the top, above line 1; &quot;725&quot; at top right (folio stamp)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p725.txt">p725.txt</a></p><pre translate="no">H | &quot;No 3&quot; (centred, underlined) at the top, above line 1; &quot;725&quot; at top right (folio stamp)
 L01 | - 19 25 29 18 - 25 21 80 9 63 2 51 18 - 4 18 9 14 26 2 29 18
 I01 | some of the detachme
 N01 | at the left margin before 19 a short double stroke with a mark under it (like &quot;=&quot; over &quot;s&quot;); not certain it is a cipher dash. The &quot;t&quot; of &quot;the&quot; is written under the &quot;No 3&quot; underline
@@ -602,7 +602,7 @@ L16 | 13? 76 2 59 3 65 52 90 2 97 50 83 2 -
 I16 | ned ? e ? e
 N16 | first number faint (13?); interlinear faint: &quot;n e d&quot; at the start, &quot;e&quot; over 52, &quot;e&quot; over 50; line ends with a long dash; rest of page blank (no signature; one ink spot in the lower left margin)</pre></details>
 <p class="ftext">Decipherment of the time: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/decoded.txt">decoded.txt</a></p>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/decryption_A.txt">decryption_A.txt</a></p><pre># A: decode.py output, line by line (| = setting indicator, &lt;n&gt; = numeral in clear, [n] = number with no value, ? = illegible)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/decryption_A.txt">decryption_A.txt</a></p><pre translate="no"># A: decode.py output, line by line (| = setting indicator, &lt;n&gt; = numeral in clear, [n] = number with no value, ? = illegible)
 p717 L01  | the principal occur
 p717 L02  rences since you left u
 p717 L03  s arethe arrival ofth
@@ -772,7 +772,7 @@ p725 L13  hitown and fa
 p725 L14  n?ing?s | lord rawd
 p725 L15  on isalso towards
 p725 L16  s?edee</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/reading_A.md">reading_A.md</a></p><pre># A. Balfour to Cornwallis, Charleston, early March 1781, Nos. 1-3 (pp. 717-725)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/reading_A.md">reading_A.md</a></p><pre translate="no"># A. Balfour to Cornwallis, Charleston, early March 1781, Nos. 1-3 (pp. 717-725)
 
 **No. 1.** The principal occurrences since you left us are the arrival of the Chatham with convoy from
 Europe, Governor Bull and Sir Egerton Leigh passengers, both of which are now at the Board of Police. Fifty
@@ -817,7 +817,7 @@ cipher has the numeral 18 for the men lost; the decipherer wrote &quot;fifteen&q
 &quot;[Hightown?]&quot; is &quot;hitown&quot;; &quot;[Pedee?]&quot; is &quot;s?edee&quot; at the foot of the sheet, where the letter breaks off.</pre></details>
 <h3>B. Balfour to Cornwallis, about March 1781 (pp. 729-732)</h3>
 <p>Arnold&#x27;s plan to raid the Albemarle Sound and Newbern; Balfour has sent Arnold the cipher by Evans; Savannah short of provisions, the frontier under pressure; what to do with the troops from England and the Wilmington post; Rodney&#x27;s capture of St Eustatius and a Dutch war certain.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p729.txt">p729.txt</a></p><pre>H | large &quot;3&quot; at top left (letter number?) ; page number 729 (top right). Most cipher lines begin with an inverted-comma mark (&quot;), as if quoting
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p729.txt">p729.txt</a></p><pre translate="no">H | large &quot;3&quot; at top left (letter number?) ; page number 729 (top right). Most cipher lines begin with an inverted-comma mark (&quot;), as if quoting
 L01 | 80 76 23 54 - 7 65 15 - 13 9 15 - 23 21 15 26 8 19 3 - 8 9 2 9 21 -
 I01 | In gen arnolds leter
 N01 | the large &quot;3&quot; and the &quot;I&quot; of &quot;In&quot; stand over 80 76 23 54; &quot;In&quot; over 7 65 15 is not clear, the interlinear starts &quot;3 I n gen&quot;
@@ -878,7 +878,7 @@ N19 | the &quot;-&quot; after 19 is written as an &amp;-like sign; no dash betwe
 L20 | 26 4 9 21 23 2 7 26 15 3 - 23 21 66 9 - 14 9 15 2 7 26 15 9 19 - 7 15 23
 I20 | operations are mentioned in a
 N20 | the 9 after 66 is struck through with a stroke and a bracket mark below it</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p730.txt">p730.txt</a></p><pre>H | page number 730 (top left); a &quot;{&quot; mark at top centre. The right-hand ends of the lines run into the page edge/gutter and are partly lost
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p730.txt">p730.txt</a></p><pre translate="no">H | page number 730 (top left); a &quot;{&quot; mark at top centre. The right-hand ends of the lines run into the page edge/gutter and are partly lost
 L01 | 15 9 24 3 4 23 4 9 21 - 93 65 39 18 50 - 21 26 7 29 11 - 21 11 18 13 11 13
 I01 | newspaper (circled) ... I by the bearer
 N01 | &quot;newspaper&quot; and its numbers are enclosed in a loop; no interlinear over 93 65 39 18 50; the &quot;-&quot; before 21 is a stroke with a vertical (a &quot;⊥&quot;-like mark, perhaps the &quot;I&quot; of the interlinear); no dash between &quot;by&quot; (21 26) and &quot;the&quot; (7 29 11)
@@ -936,7 +936,7 @@ N18 | &quot;22?&quot; could be 23; no dash between &quot;that&quot; and &quot;po
 L19 | 22 18 25 11 16 12 3 29 - 16 11 13 1 19 12 16 - 1 6 13 19 18 2 16 -
 I19 | make such serious inroads
 N19 | no dash between &quot;make&quot; and &quot;such&quot;</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p731.txt">p731.txt</a></p><pre>H | page number 731 (top right)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p731.txt">p731.txt</a></p><pre translate="no">H | page number 731 (top right)
 L01 | 13 18 1 16 11 16 12 3 29 - 5 19 13 3 11 - 7 29 18 7 - 1 5 11 18 13 - 14 1 7 29 19
 I01 | raise such force that i fear with o
 N01 | a cross/&amp;-like sign before 13 in the margin (not transcribed); the 16 in &quot;1 16 11&quot; is blotted; no dash between &quot;raise&quot; and &quot;such&quot;
@@ -994,7 +994,7 @@ N18 | &quot;=&quot; mark in the left margin; a &quot;}&quot; brace before the in
 L19 | 6 5 15 26 5 9 25 16 - 12 7 15 25? 15 19 7 16 - 7 13 - 15 26 -
 I19 | has taken posession of st
 N19 | &quot;25?&quot; could be 95 or 45; no dash between &quot;has&quot; and &quot;taken&quot;</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p732.txt">p732.txt</a></p><pre>H | page number 732 (top left). Below the text, a docket written vertically on the lower half of the page (low-res reading: &quot;Balfour to Cornwallis ... about March 1781&quot;, doubtful)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p732.txt">p732.txt</a></p><pre translate="no">H | page number 732 (top left). Below the text, a docket written vertically on the lower half of the page (low-res reading: &quot;Balfour to Cornwallis ... about March 1781&quot;, doubtful)
 L01 | 25 4 15 26 5 26 19 5 - 6 5 15 25 16 22 5 22 25 1 - 5 -
 I01 | eustatia has engaged a
 N01 | continues &quot;of st&quot; at the foot of p. 731; no dash between &quot;has&quot; and &quot;engaged&quot;; after &quot;5&quot; a group of about five figures is struck through with a heavy line (looks like &quot;19 26 ? ? 6&quot;), not transcribed; the &quot;-&quot; after 5 stands for that struck group&#x27;s separator (doubtful)
@@ -1017,7 +1017,7 @@ L07 | 1 4 26 29 6 - 13 4 15 26 - 26 5 9 25 12 17 5 29 25 -
 I07 | dutch must take place
 N07 | no dash between &quot;take&quot; and &quot;place&quot; (space only); the line ends with a long dash and a point</pre></details>
 <p class="ftext">Decipherment of the time: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/decoded.txt">decoded.txt</a></p>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/decryption_B.txt">decryption_B.txt</a></p><pre># B: decode.py output, line by line (| = setting indicator, &lt;n&gt; = numeral in clear, [n] = number with no value, ? = illegible)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/decryption_B.txt">decryption_B.txt</a></p><pre translate="no"># B: decode.py output, line by line (| = setting indicator, &lt;n&gt; = numeral in clear, [n] = number with no value, ? = illegible)
 p729 L01  | in gen arnolds leter
 p729 L02  isthe folowing maragraph if
 p729 L03  the cooperation wilbe ofservice
@@ -1083,7 +1083,7 @@ p732 L04  antmen underconvoy for hol
 p732 L05  nd sothat ithink thereis no
 p732 L06  ind ofdoubt awar withthe
 p732 L07  dutch must takeplace</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/reading_B.md">reading_B.md</a></p><pre># B. Balfour to Cornwallis, Charleston, about March 1781 (pp. 729-732)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/reading_B.md">reading_B.md</a></p><pre translate="no"># B. Balfour to Cornwallis, Charleston, about March 1781 (pp. 729-732)
 
 In Gen. Arnold&#x27;s letter is the following paragraph: &quot;If the cooperation will be of service, I intend to send
 some boats with four or five hundred men through Currituck Inlet to sweep the Albemarle Sound as high as
@@ -1112,7 +1112,7 @@ place is uncertain. The &quot;&amp;&quot; before &quot;Marian&quot; and in &quot
 (the decipherer wrote &quot;&amp;&quot; over it on p. 731).</pre></details>
 <h3>C. Balfour to Lt Col. Alexander Stewart, 12 Aug 1781 (pp. 733-736), cipher runs</h3>
 <p>Arrangements for an escort and supplies to Stewart&#x27;s army: no dragoons at Charleston, the depot near Monk&#x27;s Corner put in defence, Caldwell not to act with the cavalry, and a request to cover the escort at Manigault&#x27;s or Murray&#x27;s ferries with a move towards Nelson&#x27;s.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p733.txt">p733.txt</a></p><pre>H | &quot;Charles Town August 12th 1781&quot; (top), page number 733 top right (partly hidden by a flourish). Mirror-image numbers behind &quot;Sir,&quot; and the first lines are show-through from the other side, not text. The interlinear decipherment is very faint and mixed with show-through; only legible parts are given
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p733.txt">p733.txt</a></p><pre translate="no">H | &quot;Charles Town August 12th 1781&quot; (top), page number 733 top right (partly hidden by a flourish). Mirror-image numbers behind &quot;Sir,&quot; and the first lines are show-through from the other side, not text. The interlinear decipherment is very faint and mixed with show-through; only legible parts are given
 C01 | Sir,
 C02 | I am just favoured with yours; Lord Rawdon embarks
 L03 | 91 45 31 60 37 14 13? 72? 13 27 22 16 17 37 75 38 24 15 95 15 63
@@ -1185,7 +1185,7 @@ N22 | colons after 60, 13, 90, 13
 L23 | 87 13 25 26 15 16 29 13 32 73 37 16 74 37 14 13 69 27 16
 C23 | [before] =fully
 I23 | employed ? (rest illegible)</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p734.txt">p734.txt</a></p><pre>H | page number 734, written small at the left margin between lines 1 and 2. Continues the letter of 12 Aug 1781 (p. 733). Show-through (mirror-image figures) between the lines is not text. The interlinear decipherment is faint and only partly legible; the right ends of several lines run to the page edge
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p734.txt">p734.txt</a></p><pre translate="no">H | page number 734, written small at the left margin between lines 1 and 2. Continues the letter of 12 Aug 1781 (p. 733). Show-through (mirror-image figures) between the lines is not text. The interlinear decipherment is faint and only partly legible; the right ends of several lines run to the page edge
 L01 | 18 37 14 38 31 17 32 64 33 13 37 24 35 33 60 26 17 16 28 24 27 24
 I01 | ukward geting provisi
 N01 | first number written &quot;1ϴ&quot;, read 18; a comma after 33; 26 heavy
@@ -1260,7 +1260,7 @@ L22 | 37 16 79 33 13 37 61 26 16 27 93 27
 C22 | [before] — If it was possible
 I22 | ? get ? o ? s
 N22 | a hyphen-like stroke between 61 and 26</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p735.txt">p735.txt</a></p><pre>H | page number 735 (top right, written over the end of the first interlinear line). Continues the letter of 12 Aug 1781
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p735.txt">p735.txt</a></p><pre translate="no">H | page number 735 (top right, written over the end of the first interlinear line). Continues the letter of 12 Aug 1781
 L01 | 13 27 27 24 16 35 69 16 23 75 57 14 13 69 12 16 37 37 27 74 18
 I01 | ession of the boats
 N01 | first 13 heavy; &quot;57&quot; has a flat-topped first figure (5; could be 3); 16 after 12 heavy
@@ -1319,7 +1319,7 @@ N20 | &quot;86?&quot; heavy (86 or 06)
 L21 | 16 17 26 27 73 37 16 38 31 17 32 27 71 35 13 - 24 15 27 16
 I21 | orps towards neceso
 N21 | first 16 heavy, followed by a short stroke; &quot;-&quot; between 13 and 24 is a short hyphen</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p736.txt">p736.txt</a></p><pre>H | page number 736, written small at the left margin between lines 1 and 2. End of the letter of 12 Aug 1781 (Balfour to Lt. Col. Stewart). The lower half is full of mirror-image figures and words: show-through from the other side of the leaf, not text. A short docket written vertically at the right edge of the lower half (low-res reading: &quot;... Balfour ... Aug. 12 ...&quot;, doubtful)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/transcription/p736.txt">p736.txt</a></p><pre translate="no">H | page number 736, written small at the left margin between lines 1 and 2. End of the letter of 12 Aug 1781 (Balfour to Lt. Col. Stewart). The lower half is full of mirror-image figures and words: show-through from the other side of the leaf, not text. A short docket written vertically at the right edge of the lower half (low-res reading: &quot;... Balfour ... Aug. 12 ...&quot;, doubtful)
 L01 | 35 27 60 38 16 18 15 32 71 13 23 23 13 22 37 18 31 18 29?
 I01 | ns would effectual
 N01 | 38 heavy; last number at the page edge, underlined with a curl (29?)
@@ -1341,7 +1341,7 @@ C11 | N Balfour
 C12 | Lt. Col. Stewart
 C13 | &amp;c &amp;c &amp;c</pre></details>
 <p class="ftext">Decipherment of the time: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/decoded.txt">decoded.txt</a></p>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/decryption_C.txt">decryption_C.txt</a></p><pre># C: decode.py output, line by line (| = setting indicator, &lt;n&gt; = numeral in clear, [n] = number with no value, ? = illegible)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/decryption_C.txt">decryption_C.txt</a></p><pre translate="no"># C: decode.py output, line by line (| = setting indicator, &lt;n&gt; = numeral in clear, [n] = number with no value, ? = illegible)
 p733 L03  athe?escortwill
 p733 L04  n?otbeatmartinstiltuet?
 p733 L05  daynoticeissent
@@ -1406,7 +1406,7 @@ p735 L21  orpstowardsne ilso
 p736 L01  nswouldeffectuauy?
 p736 L02  coverthemif[2]?
 p736 L03  onvenient</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/reading_C.md">reading_C.md</a></p><pre># C. Balfour to Lt Col. Alexander Stewart, Charleston, 12 August 1781 (pp. 733-736), cipher runs
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/balfour1781/reading_C.md">reading_C.md</a></p><pre translate="no"># C. Balfour to Lt Col. Alexander Stewart, Charleston, 12 August 1781 (pp. 733-736), cipher runs
 
 The letter is in clear with runs of cipher; only the cipher runs are given here, in order. They join the
 clear text recorded on the C lines of `transcription/p733.txt`-`p736.txt`.
@@ -1435,13 +1435,13 @@ convenient.</pre></details>
 <li>Ian Saberton (ed.), The Cornwallis Papers (2010), vols. 2&ndash;4: not consulted; duplicates of A and B may be printed there.</li>
 <li>Washington to Lovell, 6 October 1781, <a href="https://founders.archives.gov/documents/Washington/99-01-02-07106">Founders Online</a>; National Security Agency, <a href="https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/crypto-almanac-50th/the-american-revolution.pdf">The American Revolution</a> (Lovell&rsquo;s breaking of the British ciphers).</li>
 </ul>
-<p class="muted">Files: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/balfour1781">targets/balfour1781/</a> (transcription per page, ciphertext files, <code>decode.py</code>, <code>decoded.txt</code> line by line, <code>reading.md</code>, NOTES).</p>
+<p class="muted">Files: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/balfour1781">targets/balfour1781/</a> (transcription per page, ciphertext files, <code translate="no">decode.py</code>, <code translate="no">decoded.txt</code> line by line, <code translate="no">reading.md</code>, NOTES).</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; National Archives, RG 360, Papers of the Continental Congress, via the National Archives Catalog</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="martinique1778.html" rel="prev">&larr; Bouill&eacute; to the Navy 1780-82 1780&ndash;82</a><a href="livingston1781.html" rel="next">Livingston to Jay 1781 1781 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

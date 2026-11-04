@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-  <div class="cipherstrip">&hellip; per la mandata dil duca Lorezo in Franza &nbsp;m/n L/m [f] m/m s/7 d/7 l/n c/n [&amp;] &hellip;<br>the clear text breaks into the two-tier signs and stays in them for two pages</div>
+  <div class="cipherstrip" translate="no">&hellip; per la mandata dil duca Lorezo in Franza &nbsp;m/n L/m [f] m/m s/7 d/7 l/n c/n [&amp;] &hellip;<br>the clear text breaks into the two-tier signs and stays in them for two pages</div>
   <p class="kicker">Buda and Eger &rarr; the Este court &middot; two-tier cipher of graphic signs (syllabic family) &middot; 1517&ndash;1518</p>
   <h1>Benedetto Fantini, Buda and Eger, 1517&ndash;1518</h1>
   <p class="sub">Archivio di Stato di Modena, Ambasciatori, Ungheria b. 4, &ldquo;Benedetto Fantini&rdquo; nos. 5 and 6 (Vestigia 1849, 1851; DECODE R1126, R1127, where the writer appears as &ldquo;Benedetto Jantini&rdquo;). Two letters of a Ferrarese in Cardinal Ippolito d&rsquo;Este&rsquo;s household in Hungary, one with two full pages of cipher.</p>
@@ -75,14 +75,14 @@
 <p>The letters are addressed to a lord styled &ldquo;Vostra Signoria Illustrissima&rdquo; and &ldquo;Vostra Eccellenza&rdquo;, most likely Duke Alfonso I. The clear opening of no. 5 asks for news of the restitution of Modena and Reggio and of Lorenzo de&rsquo; Medici&rsquo;s journey to France. The clear pages 3&ndash;6 report the Hungarian diet and the governors appointed around the young Louis II. They continue the letter; they are not a decipherment. Fantini&rsquo;s other letters (nos. 1&ndash;4 and 7, 1515&ndash;1518) are in clear.</p>
 
 <h2 id="cipher"><span class="num">02</span> The cipher</h2>
-<p>Each unit is a base stroke written on the line (shapes like 7, m, n, g, y, 4, t, a) with a small sign written above it (o, 2, 1, b, &amp;, c, L, s, d, 9 &hellip;), or an L-shaped bracket enclosing a small sign. The transcription (<code>t1126.txt</code>) counts 1,370 columns: 167 distinct forms, 299 of them brackets (22%) with 22 different inner signs. The commonest columns are 2/7 (77), -/7 (63), o/7 (60), -/y (47), -/g (46) and &amp;/m (44).</p>
+<p>Each unit is a base stroke written on the line (shapes like 7, m, n, g, y, 4, t, a) with a small sign written above it (o, 2, 1, b, &amp;, c, L, s, d, 9 &hellip;), or an L-shaped bracket enclosing a small sign. The transcription (<code translate="no">t1126.txt</code>) counts 1,370 columns: 167 distinct forms, 299 of them brackets (22%) with 22 different inner signs. The commonest columns are 2/7 (77), -/7 (63), o/7 (60), -/y (47), -/g (46) and &amp;/m (44).</p>
 <p>Caprile&rsquo;s letters of 1519 use the same kind of script. His letter of 1 May 1519 (DECODE R1130) mixes clear sentences with short cipher runs, and the 1882 archivist&rsquo;s decipherment (Vestigia 1860, &ldquo;4c&rdquo;) covers them. Aligned by hand, the runs decrypt as syllables. <em>intertenere</em> is seven columns, y/7 9/7 [y] c/7 [y] z/m [m]: i, n, te, r, te, ne, re. The same opening recurs in <em>intertenerlo</em> and <em>in che termine</em>. <em>oratore</em> is o [ra] [to] [re], twice. In that key base 7 carries no vowel, m gives e and n gives o. Tested on stretches not used to build it, the values placed 16 of 18 letters in the true text, against 8.1 on average for shuffled text.</p>
 
 <h2 id="tried"><span class="num">03</span> What was tried</h2>
 <ul>
 <li><b>Siblings, clear pages, print.</b> All seven Fantini letters on Vestigia. Bonzagni&rsquo;s letters of 1512&ndash;14, the other Este&ndash;Hungary cipher, use a different, simple alphabet. DECODE has no key record from Modena for 1490&ndash;1540, and nothing turned up in print.</li>
 <li><b>Caprile&rsquo;s key.</b> Three pairings with the 1882 decipherments. R1131 is water-stained, and its alignment was no better than shuffled controls. R1134&rsquo;s supposed interlinear decipherment is a second letter in clear with cipher insertions. R1130 gave the syllabic structure and about twenty values.</li>
-<li><b>A syllabary annealer</b> (<code>syl_anneal.py</code>: consonant for each upper sign, vowel for each base, a syllable for each bracket, scored with a sixteenth-century Italian 5-gram model). On a control of 2,200 letters from sixteenth-century Italian, enciphered in the same structure with two homophones per consonant, it recovers the text almost word for word once three base values are fixed. It still does so with 10% of the signs corrupted.</li>
+<li><b>A syllabary annealer</b> (<code translate="no">syl_anneal.py</code>: consonant for each upper sign, vowel for each base, a syllable for each bracket, scored with a sixteenth-century Italian 5-gram model). On a control of 2,200 letters from sixteenth-century Italian, enciphered in the same structure with two homophones per consonant, it recovers the text almost word for word once three base values are fixed. It still does so with 10% of the signs corrupted.</li>
 <li><b>On Fantini</b>, eight restarts of 150,000 moves each, on the raw transcription and with the frequent pairs -/7 -/y and -/7 -/g merged as ligatures. The result is Italian-looking syllable salad that differs from restart to restart, scoring &minus;2.37 per letter against &minus;1.77 for the control&rsquo;s true key. Seeding Caprile&rsquo;s values drops the score from about &minus;140 to &minus;1,250.</li>
 </ul>
 <p>The solver recovers the syllabic control at this length and noise, so the search itself is sound. A later check read Fantini&rsquo;s roughly 290 brackets as word codes, as they are in Caprile&rsquo;s letter R1133. A control of that shape recovers only 7% of its text, so a ciphertext-only attack cannot decipher this letter at any transcription quality. Fantini&rsquo;s key is not Caprile&rsquo;s.</p>
@@ -99,7 +99,7 @@
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>R1126 pp. 1-2, ciphered passage (Buda, 1518), Brice Dudout</h3>
 <p>The Hungarian diet of 1518: eight lords appointed to govern for the young King, the Cardinal of Esztergom and the palatine keeping power, a one-ducat hearth tax refused by the counties, and Fantini opposing raids against the Turks.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jantini1517/dudout/R1126_transcription_v2.txt">R1126_transcription_v2.txt</a></p><pre># R1126 pp. 1-2, transcription v2 (28 Oct 2026) = Daniel Bourdeau&#x27;s adjudicated transcription (t1126_p1c + t1126_p2final, commit 017d0e461)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jantini1517/dudout/R1126_transcription_v2.txt">R1126_transcription_v2.txt</a></p><pre translate="no"># R1126 pp. 1-2, transcription v2 (28 Oct 2026) = Daniel Bourdeau&#x27;s adjudicated transcription (t1126_p1c + t1126_p2final, commit 017d0e461)
 # with four shape corrections checked on Vestigia 1849 images 1-2: P2 L01 col 4 and P1 L16 col 1 bracket with a reversed c -&gt; [ɔ] (distinct from the round o of the 9 other [o]);
 # P1 L15 col 1 and P2 L07 col 1 bracket with a 9 under a looped ascender -&gt; [b9] (distinct from the q/9 of the 5 other [9]). Targeted check only ([o], [9], [t]).
 R1126 P1 L01: m/n L/m -/[f] m/m s/7 d/7 l/n c/n -/[&amp;] 9/7 o/7 d/7 o/7 9/7 L/7 m/7 y/7 s/7 L/9 m/7 2/7 o/n s/7 -/[a] L/4 o/7 -/[&amp;] y/7 z/7 f/x?
@@ -145,7 +145,7 @@ R1126 P2 L22: -/7 -/9 b/m ^/m c/n &amp;/m o/7 -/n -/9 -/[m] d/7 1/n k/4 s/7 -/[n
 R1126 P2 L23: s/m h/n -/n d/a 1/t c/n d/7? -/[2] o/7 2/7 s/a r/m 2/7? -/[2] &amp;/m 2/7? 1/7 -/[t] 2/7? o/n L/m -/n -/9 b/4 h/n o/7 &amp;/m -/[r] a/m L/n -/[#]?
 R1126 P2 L24: b/n c/7 s/n c/7 t/m -/7 -/9 b/m n/m -/[2] c/7 -/7 -/9 c/m -/n -/9 -/[l] o/4 zf/7 -/[t] 2/7 -/7 -/9 b/m d/7 t/n c/7 o/t m/n -/n -/y 2/7? -/[y] -/[b] c/7 m/n
 R1126 P2 L25: -/[r] -/=? 1/7 b/t 2/m -/[l] &amp;/m o/7 m/m u/e? 2/7? -/[2] 8/7? -/[m] -/7 -/y 2/7? -/[y] &amp;/7 -/[d] -/7 -/9 b/m n/m &amp;/m n/a -/[s] -/[l] o/4 z/7?</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jantini1517/dudout/R1126_decryption.txt">R1126_decryption.txt</a></p><pre># R1126 pp. 1-2 decrypted with key_K3v2_reading.json, line by line (merged signs: &#x27;-/X -/9&#x27; -&gt; X+9, &#x27;-/X -/y&#x27; -&gt; X+y, &#x27;-/7 -/9&#x27; -&gt; 9/7; ∅ = null; ‹x› = no value; … = illegible).
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jantini1517/dudout/R1126_decryption.txt">R1126_decryption.txt</a></p><pre translate="no"># R1126 pp. 1-2 decrypted with key_K3v2_reading.json, line by line (merged signs: &#x27;-/X -/9&#x27; -&gt; X+9, &#x27;-/X -/y&#x27; -&gt; X+y, &#x27;-/7 -/9&#x27; -&gt; 9/7; ∅ = null; ‹x› = no value; … = illegible).
 P1 L01 de la qua ∅ e s du bi to c a s a c a e i e ss e n do e pa ss a to i l ∅
 P1 L02 te r a a mi ne et no n ne pa n te n s do e co sa a n cu na s e qua io no n ho co sa
 P1 L03 a l cu na c he si g ni ∅ ca re a ues se no n c he que s to re g no co ‹l/7› ti ni a
@@ -189,7 +189,7 @@ P2 L22 c he a bi no a a re s co r e ri e i l c he a so n o so n do tro ui no de
 P2 L23 mi ci de ost ‹1/t› bi s ti a n tri me n ti no n et so n do la a cc ci a no se ha da …
 P2 L24 ci r ∅ r mo c he li ti r c hi a ra n o so n c he s fo r uo de e n te pe r de
 P2 L25 se ∅ et ue ni ra no a ∅ ‹u/e› n ti s re i n te m po c he li no stri si ra n l</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jantini1517/dudout/R1126_reading.md">R1126_reading.md</a></p><pre># R1126 (Benedetto Fantini, Buda, [1518]), ciphered passage of pp. 1-2: reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jantini1517/dudout/R1126_reading.md">R1126_reading.md</a></p><pre translate="no"># R1126 (Benedetto Fantini, Buda, [1518]), ciphered passage of pp. 1-2: reading
 
 Reading by Brice Dudout, 28 Oct 2026, one reader. Plain word = sure (the key gives the word, period spelling allowed);
 {x} = probable (one sign wrong or a rare cell; the word is certain from its form and from the period clear copy);
@@ -302,7 +302,7 @@ reason for each line (what the key gives, which cell is rare) is below (cipher s
 - P2 L23: inimhere: &#x27;mhere&#x27; (start in L22); sprovisti: &#x27;ost‹1/t›bisti&#x27;; &#x27;altrimenti&#x27;: cipher word (clear copy &#x27;al manco&#x27;); quando: [t]; fariano: &#x27;acciano&#x27;
 - P2 L24: temere per: &#x27;cir∅r&#x27; not read; certo: &#x27;mo&#x27;; Turchi: &#x27;tirchi&#x27;; faranno: n+9; qualche: [t]; sforzo: &#x27;sforuo&#x27;; gente: n+y; deffendersi: &#x27;de&#x27; + &#x27;se&#x27; (L25)
 - P2 L25: le: ∅; frontiere: u/e has no value; end: &#x27;ra n l&#x27; not read</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jantini1517/dudout/R1126_translation.md">R1126_translation.md</a></p><pre># R1126 (Benedetto Fantini, Buda, [spring-summer 1518]), ciphered passage of pp. 1-2: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jantini1517/dudout/R1126_translation.md">R1126_translation.md</a></p><pre translate="no"># R1126 (Benedetto Fantini, Buda, [spring-summer 1518]), ciphered passage of pp. 1-2: English translation
 
 Translation of the reading in `R1126_reading.md` (Brice Dudout, 28 Oct 2026). Words in [ ] are restored from the period clear
 copy on pp. 3-4; (?) marks a doubtful phrase; … an unread stretch.

@@ -38,7 +38,7 @@
   </div>
 </div>
 <section class="hero">
-<div class="cipherstrip">FF 67 85 33 XX st LL 113 WW &rarr; disgustirt &middot; 55 76 tt 63 38 22 &rarr; Gott geb &middot; key 255: A = 20 30 40 50 60</div>
+<div class="cipherstrip" translate="no">FF 67 85 33 XX st LL 113 WW &rarr; disgustirt &middot; 55 76 tt 63 38 22 &rarr; Gott geb &middot; key 255: A = 20 30 40 50 60</div>
 <p class="kicker">Hamburg &rarr; the Hessian chancellor, Kassel &middot; homophonic letter table and code numbers &middot; 4/14 May 1672 &middot; deciphered with a key matched from another Marburg file, partial</p>
 <h1>A Hamburg despatch to the Hessian chancellor, 1672</h1>
 <p class="sub">A German report on Denmark, Brandenburg and Brunswick, whose two short cipher passages were deciphered with the letter table of a Hessian key of 1666 found in another file; one word stays without sense.</p>
@@ -93,7 +93,7 @@
 <p>The letter&rsquo;s chief news in clear: the French&ndash;Swedish treaty, concluded without Denmark, &ldquo;gibt Verdruss&rdquo;, and 625 is to go to Berlin in a few weeks to bring Brandenburg into the Danish&ndash;Brunswick alliance.</p>
 
 <h2 id="method"><span class="num">05</span> Method</h2>
-<p>The HCPortal record and its three images were fetched through the HCPortal API. The cipher parts were transcribed from full-resolution crops. The margin gloss of the first passage was tried against its signs first, with the doubled capitals as nulls and as letters; neither fitted. All 319 key records on HCPortal were then fetched, and the first pages of the 106 Marburg keys from collections 4 d and 4 f were screened in contact sheets. Key 255 was the one whose letter table gave the second passage&rsquo;s glossed letters without change. A short script applies it (<code>decrypt.py</code>). The five open signs were re-cropped at three times the scan&rsquo;s size and searched four ways (see below) with the project&rsquo;s German language model for 1600&ndash;1670 and a corpus of period German, without a convincing word. The alliance the letter prepares was concluded at Braunschweig on 12/22 September 1672 between the Emperor, Denmark, Brandenburg, Brunswick and Hessen-Kassel.</p>
+<p>The HCPortal record and its three images were fetched through the HCPortal API. The cipher parts were transcribed from full-resolution crops. The margin gloss of the first passage was tried against its signs first, with the doubled capitals as nulls and as letters; neither fitted. All 319 key records on HCPortal were then fetched, and the first pages of the 106 Marburg keys from collections 4 d and 4 f were screened in contact sheets. Key 255 was the one whose letter table gave the second passage&rsquo;s glossed letters without change. A short script applies it (<code translate="no">decrypt.py</code>). The five open signs were re-cropped at three times the scan&rsquo;s size and searched four ways (see below) with the project&rsquo;s German language model for 1600&ndash;1670 and a corpus of period German, without a convincing word. The alliance the letter prepares was concluded at Braunschweig on 12/22 September 1672 between the Emperor, Denmark, Brandenburg, Brunswick and Hessen-Kassel.</p>
 <p>Extent: 64 cipher tokens (38 letter-cipher signs and 26 code numbers). All have a value; 59 read as sense, 92.2%. That is below the project&rsquo;s 95% bar, so the extent is partial.</p>
 
 <h2 id="what-remains-uncertain"><span class="num">06</span> What remains uncertain</h2>
@@ -109,14 +109,14 @@
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>Hamburg, 4/14 May 1672, HStAM 4 f Dänemark Nr. 125, ff. 2-4</h3>
 <p>A despatch from Hamburg to the Hessian chancellor at Kassel on the writer&#x27;s reception at the Danish court, Blumenthal&#x27;s mission and Brandenburg-Danish ceremonial quarrels, the French-Swedish treaty that passed Denmark by, the plan to draw Brandenburg into the Danish-Brunswick alliance, and the Holstein Landtag&#x27;s refusal of contributions.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hesse1672/ct.txt">ct.txt</a></p><pre># HStAM 4 f Dänemark Nr. 125, ff. 2-4 (HCPortal 494). Letter-cipher passages, f. 4r.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hesse1672/ct.txt">ct.txt</a></p><pre translate="no"># HStAM 4 f Dänemark Nr. 125, ff. 2-4 (HCPortal 494). Letter-cipher passages, f. 4r.
 # Signs: numbers; doubled capitals (FF, XX, LL, WW, YY, NN; &#x27;BB&#x27; written with looped b-shapes);
 # [st] and [tt] are the key&#x27;s syllable signs; [I] the key&#x27;s ll sign (a looped stem, like the key&#x27;s ♀); [768] etc. are nomenclator codes.
 # Passage 1 (f. 4r, lines 14-16), after clear &quot;Totaliter&quot;:
 FF 67 85 33 XX [st] LL 113 WW 119 74 26 28 83 117 20 BB 37 104 [634]
 # Passage 2 (f. 4r, lines 18-19), after clear &quot;insidiosus hostis&quot;:
 [768] 55 76 [tt] 63 38 22 FF 20 75 20 [I] YY 96 NN 50 32 110 8 XX</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hesse1672/codes.txt">codes.txt</a></p><pre># Nomenclator code numbers in the letter, in order, with the interlinear/marginal gloss of the
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hesse1672/codes.txt">codes.txt</a></p><pre translate="no"># Nomenclator code numbers in the letter, in order, with the interlinear/marginal gloss of the
 # contemporary decipherer (black ink, Latin script) and the grade of the reading here.
 # page  code  gloss on the leaf                         reading                         grade
 f2r   630   Blumenthal                                  Blumenthal                      H (gloss)
@@ -145,7 +145,7 @@ f4r   303   alliance                                    alliance                
 f4r   447   (gloss &quot;Haus Braunschweig&quot; struck, &quot;Kayser&quot;) Duke                           C (same code as above)
 f4r   602   (same struck gloss)                         Braunschweig                    I (struck gloss + &#x27;Foedus Dano-Brunsvicense&#x27; in clear)
 f4r   834   Rey Danae                                   Rex Daniae, King of Denmark     H (gloss)</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hesse1672/reading.txt">reading.txt</a></p><pre>HStAM 4 f Dänemark Nr. 125, ff. 2-4 (HCPortal 494). Hamburg, 4/14 May 1672, to the Hessian chancellor.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hesse1672/reading.txt">reading.txt</a></p><pre translate="no">HStAM 4 f Dänemark Nr. 125, ff. 2-4 (HCPortal 494). Hamburg, 4/14 May 1672, to the Hessian chancellor.
 Cipher parts only; clear context in plain type, decipherment in [brackets], codes in &lt;angle brackets&gt;.
 Grades: H gloss/key, C context-confirmed, M uncertain, I inferred.  ?? = unread.
 
@@ -171,7 +171,7 @@ Passage 2:  si olim non erat ... insidiosus hostis &lt;768 Sueco&gt;: [Gott geb 
 Count: 38 letter-cipher signs (ct.txt) + 26 code numbers (codes.txt) = 64 cipher tokens.
   Given a value: 64 of 64.  Read as sense: 59 of 64 (92.2%); the five signs 28 83 117 20 BB decipher as
   e r t a z and make no word (BB = z; the glosser got the same letters).</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hesse1672/HCP494_reading.md">HCP494_reading.md</a></p><pre># HStAM 4 f Dänemark Nr. 125, ff. 2-4 (HCPortal 494), Hamburg 4/14 May 1672: the cipher items in their clauses, reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hesse1672/HCP494_reading.md">HCP494_reading.md</a></p><pre translate="no"># HStAM 4 f Dänemark Nr. 125, ff. 2-4 (HCPortal 494), Hamburg 4/14 May 1672: the cipher items in their clauses, reading
 
 Rests on: `reading.txt` (codes from the key, `codes.txt`; letter-cipher passages `ct.txt`, with the contemporary
 glosses). Written out for the v3 verification (23 Oct 2026) without the bracket notation of reading.txt, which the
@@ -196,7 +196,7 @@ plainten combiniret.
 
 Si olim non erat ... insidiosus hostis {Sueco}: Gott geb das all wol ablauff. War auch zu Hamburg und hat selbiger
 eine estroite {alliance} zwischen {Herzog} [?Braunschweig] und {Rex Daniae} ...</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hesse1672/HCP494_en.md">HCP494_en.md</a></p><pre># HStAM 4 f Dänemark Nr. 125, ff. 2-4 (HCPortal 494), Hamburg 4/14 May 1672: English translation of the cipher items in their clauses
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hesse1672/HCP494_en.md">HCP494_en.md</a></p><pre translate="no"># HStAM 4 f Dänemark Nr. 125, ff. 2-4 (HCPortal 494), Hamburg 4/14 May 1672: English translation of the cipher items in their clauses
 
 Translation (Claude Opus 5.5, 23 Oct 2026) of `HCP494_reading.md`, **an excerpt**: the ciphered items with the clauses
 round them; the clear German letter round them is not transcribed in the repository (&quot;...&quot; marks it). Resolved codes
@@ -235,7 +235,7 @@ Hamburg, and the same has [made] a close {alliance} between {Duke} [?of Brunswic
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Hessisches Staatsarchiv Marburg, via HCPortal</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="portugal1667.html" rel="prev">&larr; King of Portugal 1667</a><a href="hernannunez1674.html" rel="next">Hern&aacute;n N&uacute;&ntilde;ez 1674 1674 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

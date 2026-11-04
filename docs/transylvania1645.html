@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">pmwxwh oncckdzwnw xyhyiq xyzznq<br>czasar dipplomaia serent semmit<br>c = p &middot; p = c &middot; g = u &middot; q = t</div>
+  <div class="cipherstrip" translate="no">pmwxwh oncckdzwnw xyhyiq xyzznq<br>czasar dipplomaia serent semmit<br>c = p &middot; p = c &middot; g = u &middot; q = t</div>
   <p class="kicker">Transylvania &rarr; Ferenc Bethlen of Keresd &middot; Hungarian letter substitution, two alphabets &middot; 1645&ndash;1648 &middot; key recovered from the ciphertext alone, partial</p>
   <h1>Keresdi Bethlen cipher letters, 1645&ndash;1648</h1>
   <p class="sub">Hungarian cipher letters to the Rákóczi envoy Ferenc Bethlen, with no decryption on DECODE, deciphered from the ciphertext alone in two separate alphabets; four give sentences and one more decodes in fragments.</p>
@@ -65,7 +65,7 @@
 </dl>
 </div>
 
-<figure data-credit="Romanian National Archives, Cluj, Keresdi Bethlen 15 (1646), via DECODE R4937"><img src="transylvania1645_lead.jpg" alt="The top of a page of continuous lowercase cipher letters with a few clear Latin and Hungarian words, such as 'Cum satisfactione Evangelicorum'" loading="lazy"><figcaption>R4937, 1646: the cipher runs on without word breaks; the writer left some words in clear, among them <i lang="la">Cum satisfactione Evangelicorum</i> in line 2. <span class="credit">Image: Romanian National Archives, Cluj, Keresdi Bethlen 15 (1646), via DECODE R4937.</span></figcaption></figure>
+<figure data-credit="Romanian National Archives, Cluj, Keresdi Bethlen 15 (1646), via DECODE R4937"><img src="transylvania1645_lead.jpg" alt="The top of a page of continuous lowercase cipher letters with a few clear Latin and Hungarian words, such as 'Cum satisfactione Evangelicorum'" loading="lazy"><figcaption>R4937, 1646: the cipher runs on without word breaks; the writer left some words in clear, among them <i lang="la" translate="no">Cum satisfactione Evangelicorum</i> in line 2. <span class="credit">Image: Romanian National Archives, Cluj, Keresdi Bethlen 15 (1646), via DECODE R4937.</span></figcaption></figure>
 
 <h2 id="the-records"><span class="num">01</span> The records</h2>
 <p>DECODE holds ten cipher records from two Transylvanian collections in Cluj under R4933&ndash;R4942. They were first grouped by number and split by cipher on 14 Oct 2026: R4941 is a different substitution (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/r4941">r4941</a>) and R4933&ndash;R4935 are the Kemény collection of 1628 (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/kemeny1628">kemeny1628</a>). This page covers the six from Keresdi Bethlen 14&ndash;15:</p>
@@ -80,28 +80,28 @@
 <p>No decipherment of any of them was found in print: Lukinich's edition of Bethlen's correspondence (1907) and his biography (1908), Szilágyi's documents on the peace of Linz (1885) and <i>Erdély és az északkeleti háború</i> I were searched; the last prints the envoys' reports of October 1648, not these letters.</p>
 
 <h2 id="the-cipher"><span class="num">02</span> The family alphabet</h2>
-<p>The writers spell Hungarian letter by letter in a substitution whose letters are swapped in pairs, so that the same table enciphers and deciphers: c and p, g and u, q and t, among others (<code>shared-key-hypothesis.json</code> in the folder). A first statistical key on R4936 had c&nbsp;=&nbsp;u, g&nbsp;=&nbsp;t and q&nbsp;=&nbsp;p; the error was in the hand transcription, which had confused those letter shapes, and once the transcription was corrected the pairs fell into place. The opening of R4937 shows it: <code>pmwxwh oncckdzwnw</code> is <i lang="hu">czasar dipplomaia</i>, &ldquo;the Emperor's diploma&rdquo;.</p>
+<p>The writers spell Hungarian letter by letter in a substitution whose letters are swapped in pairs, so that the same table enciphers and deciphers: c and p, g and u, q and t, among others (<code translate="no">shared-key-hypothesis.json</code> in the folder). A first statistical key on R4936 had c&nbsp;=&nbsp;u, g&nbsp;=&nbsp;t and q&nbsp;=&nbsp;p; the error was in the hand transcription, which had confused those letter shapes, and once the transcription was corrected the pairs fell into place. The opening of R4937 shows it: <code translate="no">pmwxwh oncckdzwnw</code> is <i lang="hu" translate="no">czasar dipplomaia</i>, &ldquo;the Emperor's diploma&rdquo;.</p>
 <p>The alphabet was recovered on 23 Sept 2026 by simulated annealing against the shared Hungarian quadgram model, with no crib, on R4936. On 23 Oct 2026 R4936 was re-transcribed from the images (215 label changes) and R4937 and R4942 were transcribed in full; all three were decoded with the alphabet unchanged and aligned letter by letter with the figures. In R4937, 839 of 847 letters of the reading stand on the cipher letter's own value.</p>
 
 <h2 id="r4937"><span class="num">03</span> The letters that give sentences</h2>
 <figure class="creveal" data-src="reveal/transylvania1645.json"></figure>
 <h3>R4937, 1646, to the Hofmeister</h3>
-<p>The letter opens in cipher and keeps clear words between the runs (in italics in the reading). From <code>R4937_reading.md</code>:</p>
-<blockquote lang="hu">czasar dipplomaia serent semmit nem sem akar efectualni <i>Cum satisfactione Evangelicorum</i>; ... az clerus elbirta czasart ...</blockquote>
-<p>&ldquo;According to the Emperor's diploma he wants to effect nothing at all <i lang="la">cum satisfactione Evangelicorum</i> ... The clergy has prevailed over the Emperor.&rdquo; The writer urges Bethlen to keep the plan from the King of Poland and, if the Emperor's armies move, to hire four thousand good foot with their officers and dragoons, or at the least a thousand foot and five hundred dragoons. A run after <i lang="hu">megsegni</i> in line 3 and the end of line 13 decode to letter strings that are not words.</p>
+<p>The letter opens in cipher and keeps clear words between the runs (in italics in the reading). From <code translate="no">R4937_reading.md</code>:</p>
+<blockquote lang="hu" translate="no">czasar dipplomaia serent semmit nem sem akar efectualni <i>Cum satisfactione Evangelicorum</i>; ... az clerus elbirta czasart ...</blockquote>
+<p>&ldquo;According to the Emperor's diploma he wants to effect nothing at all <i lang="la" translate="no">cum satisfactione Evangelicorum</i> ... The clergy has prevailed over the Emperor.&rdquo; The writer urges Bethlen to keep the plan from the King of Poland and, if the Emperor's armies move, to hire four thousand good foot with their officers and dragoons, or at the least a thousand foot and five hundred dragoons. A run after <i lang="hu" translate="no">megsegni</i> in line 3 and the end of line 13 decode to letter strings that are not words.</p>
 <h3>R4940 and R4942, Zsigmond Rákóczi, 1648</h3>
-<p>R4940 is a clear letter from Munkács of 2 August 1648 with two cipher spans: <i lang="hu">votumiok</i> and <i lang="hu">niert dolog volna</i>, &ldquo;if their votes were as Your Grace writes, it would be a won matter&rdquo;. R4942's cipher block speaks of using the intermediaries and of the plenipotentiary power his brother has given him; its clear slip on image 3 carries the same text and confirms the decipherment.</p>
+<p>R4940 is a clear letter from Munkács of 2 August 1648 with two cipher spans: <i lang="hu" translate="no">votumiok</i> and <i lang="hu" translate="no">niert dolog volna</i>, &ldquo;if their votes were as Your Grace writes, it would be a won matter&rdquo;. R4942's cipher block speaks of using the intermediaries and of the plenipotentiary power his brother has given him; its clear slip on image 3 carries the same text and confirms the decipherment.</p>
 
 <h2 id="r4939"><span class="num">04</span> R4939, a second cipher</h2>
 <figure data-credit="Romanian National Archives, Cluj, Keresdi Bethlen 15 (1648), via DECODE R4939"><img src="transylvania1645_r4939.jpg" alt="Opening lines of a cipher letter in a different, more angular hand, with a pencilled modern note above the first line" loading="lazy"><figcaption>R4939, p. 1: another hand and another alphabet. The family key gives nothing here. <span class="credit">Image: Romanian National Archives, Cluj, Keresdi Bethlen 15 (1648), via DECODE R4939.</span></figcaption></figure>
-<p>R4939 is in a different simple substitution: 23 cipher letters, each standing for one plain letter, with ten reciprocal pairs (a&ndash;m, b&ndash;i, c&ndash;p, d&ndash;u, e&ndash;g, f&ndash;v, h&ndash;l, o&ndash;y, r&ndash;z, s&ndash;t). It was transcribed (1,631 letters) and broken from its own ciphertext by annealing on 23 Oct 2026; 50 look-alike labels were then corrected on 3&times; crops (<code>R4939_key.md</code>, <code>R4939_corrections.tsv</code>). An independent second reader transcribed six randomly drawn lines blind: 200 of 213 letters agree (93.9%), and three words of 36 are not carried by the blind decode. Under the project's one-key rule it should be a target of its own; it is described here until it is split.</p>
-<p>The brothers write to Bethlen and Klobusiczky that their father is dying (<i lang="hu">az doctor itileti szerent is eletehez ... semmi ... ninc</i>, &ldquo;by the doctor's judgement there is no [hope] for his life&rdquo;), that he did not want the Polish crown for himself, that seeking the principality for Zsigmond now would put the country in danger, and they bind the envoys to further <i lang="hu">oeczem uram promotioiat</i>, &ldquo;my younger brother's promotion&rdquo;, with money to be spent on it. Lines 3&ndash;9 keep about twelve words that decode to non-words with every look-alike pair tried.</p>
+<p>R4939 is in a different simple substitution: 23 cipher letters, each standing for one plain letter, with ten reciprocal pairs (a&ndash;m, b&ndash;i, c&ndash;p, d&ndash;u, e&ndash;g, f&ndash;v, h&ndash;l, o&ndash;y, r&ndash;z, s&ndash;t). It was transcribed (1,631 letters) and broken from its own ciphertext by annealing on 23 Oct 2026; 50 look-alike labels were then corrected on 3&times; crops (<code translate="no">R4939_key.md</code>, <code translate="no">R4939_corrections.tsv</code>). An independent second reader transcribed six randomly drawn lines blind: 200 of 213 letters agree (93.9%), and three words of 36 are not carried by the blind decode. Under the project's one-key rule it should be a target of its own; it is described here until it is split.</p>
+<p>The brothers write to Bethlen and Klobusiczky that their father is dying (<i lang="hu" translate="no">az doctor itileti szerent is eletehez ... semmi ... ninc</i>, &ldquo;by the doctor's judgement there is no [hope] for his life&rdquo;), that he did not want the Polish crown for himself, that seeking the principality for Zsigmond now would put the country in danger, and they bind the envoys to further <i lang="hu" translate="no">oeczem uram promotioiat</i>, &ldquo;my younger brother's promotion&rdquo;, with money to be spent on it. Lines 3&ndash;9 keep about twelve words that decode to non-words with every look-alike pair tried.</p>
 
 <h2 id="open"><span class="num">05</span> What remains open</h2>
 <ul>
 <li><b>R4936</b> (1645, 1,956 letters). It decodes into numbered points on the Warsaw mission (three thousand musketeers and a thousand dragoons to be hired, money at Danzig, Bregy and Croissy), but 130 letters of the reading (6.7%) sit on the other member of a look-alike pair, mostly t written on g-shaped letters; at the scan's 1,704-pixel width the hand's g and q do not separate, and no contemporary or printed text settles the choice. Counted as decoded, not read; blocker: illegible (a sharper image of Keresdi Bethlen 14 would settle it).</li>
 <li><b>R4937</b>: a run on line 3 and the end of line 13 (illegible at 2.2&times;).</li>
-<li><b>R4938</b>: three spans of 54 letters decoded with the family key (<i lang="hu">az Rakoczi Sigmon</i>, <i lang="hu">az nekunk [...] volna</i>, <i lang="hu">mi [?nevunkre] forogion</i>); one word, <i lang="hu">ailunkker</i>, occurs once and is too short to settle. The clear letter around them is not transcribed.</li>
+<li><b>R4938</b>: three spans of 54 letters decoded with the family key (<i lang="hu" translate="no">az Rakoczi Sigmon</i>, <i lang="hu" translate="no">az nekunk [...] volna</i>, <i lang="hu" translate="no">mi [?nevunkre] forogion</i>); one word, <i lang="hu" translate="no">ailunkker</i>, occurs once and is too short to settle. The clear letter around them is not transcribed.</li>
 <li><b>R4939</b>: about twelve words in lines 3&ndash;9 (illegible on the scan).</li>
 <li>The family alphabet's statistical validation on R4940 alone is &ldquo;too short&rdquo; (23 letters); the checks that carry it are the R4942 clear slip, the alignments and the sense of the longer letters.</li>
 </ul>
@@ -113,7 +113,7 @@
 <h3>R4936, 1645 (provisional) <span class="st stuck">decoded, not read</span></h3>
 <p>Numbered instructions in the prince&#x27;s &#x27;we&#x27; to Ferenc Bethlen at Warsaw, 1645, with clear Hungarian links: the King must be persuaded and the Respublica should not disgrace itself or bow to the Turk; the King is asked to hire 3,000 musketeers and 1,000 dragoons (at least 2,000 and 1,000) for Transylvania; money at Danzig; recruits to Munkacs and Makovica; news of Bregy and Croissy.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4936-transcription-b15.txt">R4936-transcription-b15.txt</a></p><pre># R4936 cipher, re-transcribed line by line from the DECODE images IMG_R4936_I28640_P1/P2 (main checkout
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4936-transcription-b15.txt">R4936-transcription-b15.txt</a></p><pre translate="no"># R4936 cipher, re-transcribed line by line from the DECODE images IMG_R4936_I28640_P1/P2 (main checkout
 # transylvania1645/), 2.4-3x crops, 22-23 Oct 2026 (reading audit, batch b15). Braces mark clear text.
 # Changes against R4936-transcription.txt are listed in R4936_corrections.tsv. Labels kept as the glyph looks:
 # the hand&#x27;s g/q, c/e, h/r(long r) and i/n/m minims are not always distinct, so these labels can stand for either
@@ -166,7 +166,7 @@ vxxypghvkivivlvhhdknxrduervoyhylvxvfxyungxyuyllnaviqvgiylyx
 zyuiyzbduevgldmivilfyiiyl
 {Kegmd} pmvlzyuzdiorvggevvmrdknkkyiodyrvznilygoyxyhvkivlyxyk
 kyixyuyliyllykkyiigilavkvznnodyfynzvudlhvayxxyiyl</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4936-transcription.txt">R4936-transcription.txt</a></p><pre># Provisional diplomatic ciphertext, line order retained. Braces mark clear text.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4936-transcription.txt">R4936-transcription.txt</a></p><pre translate="no"># Provisional diplomatic ciphertext, line order retained. Braces mark clear text.
 # q/c, g/q, u/v and i/n uncertain; not a final checked transcription.
 # PAGE 1
 cyhxavoyvkinlykk yuyvvmlehvkeivlrdkgnqavkduevkv mivggevhvi
@@ -216,7 +216,7 @@ vxxypqhvkivivlvhh dknxxd uexvoyh ykbxvfy unqxyuyllnav iqvqiyl yx
 zyuiyz bduuevqldmivuifyiiyl
 {Kegmd} pmvlzyuqdioxvgyevvmrdknkkyiodyxvznilygoyxyhv kivlvxyk
 kyixyuyliyllyk kyi iqilavkvz niodyfymzvudl hvvyxxviyl</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4936_reading_lines.txt">R4936_reading_lines.txt</a></p><pre># R4936 reading, line by line against R4936-transcription-b15.txt (same line order; clear text in braces as there).
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4936_reading_lines.txt">R4936_reading_lines.txt</a></p><pre translate="no"># R4936 reading, line by line against R4936-transcription-b15.txt (same line order; clear text in braces as there).
 # Scribe&#x27;s spelling, no accents (the cipher has none). [?word] partly carried, [word] supplied, [...] unread.
 # PAGE 1
 persvadealni kellene az kyralynak holtig valo gyalazattyara n-
@@ -266,7 +266,7 @@ assecuralnanak arrol is, hogy ha derekasab segitsegek kivantatnek, es
 meg nem fogyatkoznank bennek.
 {Kegmd} czak megmondhattya az hol illendoe, ha minket deseralnak, es el-
 lensegeknek kel lennunk valami idoeben, magokra vessenek.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4936-mechanical.txt">R4936-mechanical.txt</a></p><pre># Provisional diplomatic ciphertext, line order retained. Braces mark clear text.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4936-mechanical.txt">R4936-mechanical.txt</a></p><pre translate="no"># Provisional diplomatic ciphertext, line order retained. Braces mark clear text.
 # q/c, g/q, u/v and i/n uncertain; not a final checked transcription.
 # PAGE 1
 uersvadealnikell egeaazkyralynakholtipvalogyala znattyaran
@@ -316,7 +316,7 @@ assecpralnanakarr olisso gysader elfsabe gipsegekkiva npapnek es
 megnem foggyapkoznagnbennek
 {Kegmd} czakmegpondsateyaazholillendoesaminketdesera lnakasel
 lensegeknekkel len npnkvalam indoebezmagok raaessanek</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4936_reading.md">R4936_reading.md</a></p><pre># R4936 reading (Keresdi_Bethlen_14, 1645): numbered points to Ferenc Bethlen at Warsaw, in the prince&#x27;s &quot;we&quot; (probably György I Rákóczi; no signature in the images)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4936_reading.md">R4936_reading.md</a></p><pre translate="no"># R4936 reading (Keresdi_Bethlen_14, 1645): numbered points to Ferenc Bethlen at Warsaw, in the prince&#x27;s &quot;we&quot; (probably György I Rákóczi; no signature in the images)
 
 # Rests on: our re-transcription of the cipher from the two DECODE images (R4936-transcription-b15.txt), decoded with
 # the family&#x27;s reciprocal letter key (a-v b-f c-p d-o e-y g-u h-r i-n k-l m-z q-t s-x; shared-key-hypothesis.json),
@@ -352,7 +352,7 @@ persvadealni kellene az kyralynak holtig valo gyalazattyara nezven e[s] succumba
 *Az kiket* fogadhatnanak, azokat egyenessen kit Munkaczra, kit Makoviczara kel kyhozni; *az* Rakocze Gyorgy ket szaz [?dragont] igert; *az* herczeg is talam adhat ket szaz muskaterost. Bregivel ha szemben leszen, *kglmd mit* erthet tule Croissy es egyebek feloel, hova hamareb tudosiczon [?feloele]. assecuralnanak arrol is, hogy ha derekasab segitsegek kivantatnek, es meg nem fogyatkoznank bennek.
 
 *Kegmd* czak megmondhattya az hol illendoe, ha minket deseralnak, es ellensegeknek kel lennunk valami idoeben, magokra vessenek.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4936_en.md">R4936_en.md</a></p><pre># R4936 in English (translation of R4936_reading.md; same holes)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4936_en.md">R4936_en.md</a></p><pre translate="no"># R4936 in English (translation of R4936_reading.md; same holes)
 
 # Numbered points sent to Ferenc Bethlen during his Warsaw mission of 1645, in the prince&#x27;s &quot;we&quot; (probably György I
 # Rákóczi). Words in italics are in clear in the letter. [?word] partly carried, [...] unread.
@@ -375,7 +375,7 @@ persvadealni kellene az kyralynak holtig valo gyalazattyara nezven e[s] succumba
 <h3>R4937, 1646 (partial extract) <span class="st partial">read in part</span></h3>
 <p>1646, to &#x27;edes Hokmester&#x27; (Bethlen): the Emperor will effect nothing of the diploma for the Evangelicals; the clergy rules him; keep secret from the King why Transylvania would not join a war on the Turk; hire 4,000 foot with officers, or 2,000 armed men, or at least 1,000 foot and 500 dragoons.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (93% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4937-transcription.txt">R4937-transcription.txt</a></p><pre># R4937 cipher, transcribed in full from the DECODE image IMG_R4937_I28643_P (main checkout transylvania1645/), 2-2.2x crops,
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4937-transcription.txt">R4937-transcription.txt</a></p><pre translate="no"># R4937 cipher, transcribed in full from the DECODE image IMG_R4937_I28643_P (main checkout transylvania1645/), 2-2.2x crops,
 # 23 Oct 2026 (reading audit, batch b15). Braces mark clear text; line 23 starts with a struck-out run (not transcribed).
 # Replaces the partial R4937-extract.txt (25 of 34 lines, solver output only).
 pmwxwhoncckdzwnwxyhyiqxyzznqiyzxyzwl
@@ -412,7 +412,7 @@ qqxwmohwudiq {anagy} byugyhyxqrdmmdiyk
 fyizylwmryhpyndwlwhwqqnwqnxxyu
 nqxyuyquxlngwiinw {kgd} rnxyzgunxzniyl
 nlxdkuwkgilndgyiodfyiinx {azokkalis}</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4937_reading_lines.txt">R4937_reading_lines.txt</a></p><pre># R4937 reading, line by line against R4937-transcription.txt. [?word] partly carried, [...] unread, [word] supplied.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4937_reading_lines.txt">R4937_reading_lines.txt</a></p><pre translate="no"># R4937 reading, line by line against R4937-transcription.txt. [?word] partly carried, [...] unread, [word] supplied.
 czasar dipplomaia serent semmit nem sem ak-
 ar efectualni {Cum satisfactione Evangelicorum}; hitetl-
 enul {akariak} [?megsegni] [...] [...] [?van] {dolgok, s-}
@@ -447,7 +447,7 @@ ttsaz dragont {anagy} feguerest hozzon el.
 [?benmek] az herce[g] io akarattiat is seg-
 itseget [?is] kivannia {kgd}; hisem ugis mi nek-
 ik solgalunk iovendoben is {azokkalis}.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4937_reading.md">R4937_reading.md</a></p><pre># R4937 reading (Keresdi_Bethlen_15, 1646): a letter to &quot;edes Hokmester&quot; (the Bethlen addressee), sender not named on the page
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4937_reading.md">R4937_reading.md</a></p><pre translate="no"># R4937 reading (Keresdi_Bethlen_15, 1646): a letter to &quot;edes Hokmester&quot; (the Bethlen addressee), sender not named on the page
 
 # Rests on: our full transcription of the one-page DECODE image (R4937-transcription.txt, 34 lines; the earlier extract
 # had 25 lines and only solver output), decoded with the family&#x27;s reciprocal letter key unchanged, aligned letter by
@@ -459,7 +459,7 @@ ik solgalunk iovendoben is {azokkalis}.</pre></details>
 ## Reading
 
 czasar dipplomaia serent semmit nem sem akar efectualni *Cum satisfactione Evangelicorum*; hitetlenul *akariak* [?megsegni] [...] [...] [?van] *dolgok, s-* *allapattiok* [?sinluan] adgak ertenunk *sem* allandosagahoz *ez* bekesegnek sem az diploma *Szerent valo* [?satisfactiohoz] ne bizzunk, *mind* *Szandekok akarattiok magok kiselese* mind hamissag *mind* istenunk tisteletit [?sabadsagunk] kat labok ala *akariak* tapodni. az clerus elbirta czasart; *mm mi ellenunk czelekedni*. kire nezve edes *Hokmester* ezt czak titokban tartuan [?hasinte] az kiral *ugian* hadako*min kezdeneis* az torokkel [...] *lekedgink*. *kegmd* ne legiunk oly obligatusok az kiralhoz, *mollymat el kellene* vonattatnunk istenunk hazank solgalatti az *mellol is*. *kell ez* az kiral tul titkolni *mi* vegre kel azt celekednunk, *ha szemben mog* zdulna is o felsege az torok ellen s nekunk *az* [?hamis] hituk ellen *illyen* kellene is mennunk; ugis solgalhatnank mi o felsegenek. isten bisonsagunk meg keserettunk *ez* hamissagokon, ha elkezdenek bocatani az hadakat hozzank valo husegere kenserittiuk. *kegmd az kiben nem kesl-* *kednink legien azon totis viribus* fogadhasson nieg ezer gialogot iot mind officirestul, dragont, *anagy ha az* nem lehetne feguerest ket ezeret iot es [?hasinte] hadakoznek is az kirali; *ugyis bar* czak ezer gialogot ottsaz dragont *anagy* feguerest hozzon el. [?benmek] az herce[g] io akarattiat is segitseget [?is] kivannia *kgd*; hisem ugis mi nekik solgalunk iovendoben is *azokkalis*.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4937_en.md">R4937_en.md</a></p><pre># R4937 in English (translation of R4937_reading.md; same holes)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4937_en.md">R4937_en.md</a></p><pre translate="no"># R4937 in English (translation of R4937_reading.md; same holes)
 
 # Letter of 1646 to &quot;dear Hofmeister&quot; (Ferenc Bethlen), sender not named on the page. Words in italics are in clear.
 
@@ -467,9 +467,9 @@ According to the Emperor&#x27;s diploma he wants to effect nothing at all *cum s
 <h3>R4940, Rákóczi Zsigmond to Ferenc Bethlen, Munkács, 2 Aug 1648 <span class="st partial">read in part</span></h3>
 <p>A clear letter with two short cipher spans, read &#x27;votumiok&#x27; (their votes) and &#x27;niert dolog volna&#x27; (it would be a won matter) with the shared alphabet family.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (89% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4940-cipher.txt">R4940-cipher.txt</a></p><pre>adqgzndl
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4940-cipher.txt">R4940-cipher.txt</a></p><pre translate="no">adqgzndl
 inyhqodkduadkiv</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4940-reading.md">R4940-reading.md</a></p><pre># R4940: two enciphered expressions
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4940-reading.md">R4940-reading.md</a></p><pre translate="no"># R4940: two enciphered expressions
 
 Working reading, 23 September 2026. The complete letter has two short cipher spans on page 1; page 2 is the address and seal. Both images inspected.
 
@@ -485,7 +485,7 @@ The first expression follows “Ha ...”; the second follows the clear address 
 Used key assignments: a=v, d=o, g=u, h=r, i=n, k=l, l=k, n=i, o=d, q=t, u=g, v=a, y=e, z=m.
 
 The cancelled word before the first cipher span is not transcribed. It is a deletion, not counted as surviving ciphertext. The main goal remains in progress; this letter is not yet written up or assigned a final novelty claim.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4940_reading.md">R4940_reading.md</a></p><pre># R4940, Zsigmond Rákóczi to Ferenc Bethlen, Munkács, 2 Aug 1648: reading of the whole letter
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4940_reading.md">R4940_reading.md</a></p><pre translate="no"># R4940, Zsigmond Rákóczi to Ferenc Bethlen, Munkács, 2 Aug 1648: reading of the whole letter
 
 Written 23 Oct 2026 (Claude Opus 5.5, translation wave v9). Until now the repository had only the two cipher spans
 (`R4940-reading.md`); the clear letter around them was not transcribed. It is transcribed here from the DECODE image
@@ -507,7 +507,7 @@ volna*. Kegyelmed az szolgamtul most küld[?jen] az […]. Engedgyen Isten minde
 kegyelmed felöl. Munkacson, 2. Aug. 1648.
 
 Kegyelmednek szeretettel szolgal Rakoczy Sigmond.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4940_en.md">R4940_en.md</a></p><pre># R4940, Zsigmond Rákóczi to Ferenc Bethlen, Munkács, 2 Aug 1648: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4940_en.md">R4940_en.md</a></p><pre translate="no"># R4940, Zsigmond Rákóczi to Ferenc Bethlen, Munkács, 2 Aug 1648: English translation
 
 Translated from `R4940_reading.md` (Claude Opus 5.5, 23 Oct 2026): the clear letter, transcribed from the DECODE
 image, with its two cipher spans (in *italics*) deciphered with the family alphabet. Holes as in the reading:
@@ -527,7 +527,7 @@ joyful news […] of Your Grace. At Munkács, 2 Aug. 1648.
 Serving Your Grace with affection, Zsigmond Rákóczi.</pre></details>
 <h3>R4942, Zsigmond Rakoczi to Ferenc Bethlen, 1648 (cipher block of p. 2 and two words)</h3>
 <p>Zsigmond Rakoczi, 1648: Bethlen&#x27;s goodwill has reassured him though there is almost no hope for the present affair; the intermediaries must be used; his brother is so disposed with the plenipotentiary power that he can promise more. The p. 3 slip gives the same text in clear.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4942-transcription.txt">R4942-transcription.txt</a></p><pre># R4942 cipher, all of it, transcribed from the DECODE images IMG_R4942_I28661_P1-P4 (main checkout transylvania1645/), 1.9x
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4942-transcription.txt">R4942-transcription.txt</a></p><pre translate="no"># R4942 cipher, all of it, transcribed from the DECODE images IMG_R4942_I28661_P1-P4 (main checkout transylvania1645/), 1.9x
 # crops, 23 Oct 2026 (batch b15). p. 1 and the rest of p. 2 are clear; p. 3 is a clear slip with the same text (see
 # R4942_slip.txt); p. 4 is the address. Lines 1-7 = the block at the head of p. 2; lines 8-9 = two words lower on p. 2.
 # &#x27;_&#x27; = ink blot. Replaces the partial R4942-extract.txt.
@@ -540,7 +540,7 @@ avkrvvmxmqlxyulna_iivqdffyqnxnunhryq
 nkkyiodlyccyi {kglh}
 {valasz az} fryhpmuggk {az ki abban nem le-}
 {fi.r} nipdz_nqnnx {masszor leven distractioja}</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4942_slip.txt">R4942_slip.txt</a></p><pre># R4942 p. 3 (IMG_R4942_I28661_P3): a clear slip in a different hand from the cipher, with the cipher block&#x27;s text,
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4942_slip.txt">R4942_slip.txt</a></p><pre translate="no"># R4942 p. 3 (IMG_R4942_I28661_P3): a clear slip in a different hand from the cipher, with the cipher block&#x27;s text,
 # followed by signatures/notes. Transcribed 23 Oct 2026 (batch b15) from 1.25x crops; doubtful readings in [?].
 Az kgld io akarattiaban [?zelliessegel] meg niugottam, noha az mostani dologhoz [?maid] semmi
 remenseg ninczen mind ez altal [?Istentol] meglehet az mediumokkal elni [?kel] batiam uram
@@ -548,7 +548,7 @@ ugy indulattal vagion hozzam az plenipotentiaval ha az szuksegh kivannia, tobbet
 illendeo keppen tenni.            herczegul    incomitiis          Sigis Rakoczi
 bizoni bizoni nem ... [?Isten] akarattia, masok ... [...]
 Fiat voluntas Dei.        Bethlen F. [...]</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4942_reading_lines.txt">R4942_reading_lines.txt</a></p><pre># R4942 reading, line by line against R4942-transcription.txt. mind, ugy, kivannia (blot), herczegul, incomitiis (blot)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4942_reading_lines.txt">R4942_reading_lines.txt</a></p><pre translate="no"># R4942 reading, line by line against R4942-transcription.txt. mind, ugy, kivannia (blot), herczegul, incomitiis (blot)
 # are carried by the clear slip on p. 3 (R4942_slip.txt) where the figures differ or are blotted.
 {Az kgld} io akarattiaban [?teliessegel] meg niu-
 gottam, noha az mostani dologhoz maid semmi
@@ -559,7 +559,7 @@ val, ha az szukseg kivannia, tobbet is igirhet
 illendo keppen. {kglh}
 {valasz az} herczegul {az ki abban nem le-}
 {fi.r} incomitiis, {masszor leven distractioja}</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4942_reading.md">R4942_reading.md</a></p><pre># R4942 reading (Keresdi_Bethlen_15, 1648): Zsigmond Rákóczi to Ferenc Bethlen, the cipher passages
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4942_reading.md">R4942_reading.md</a></p><pre translate="no"># R4942 reading (Keresdi_Bethlen_15, 1648): Zsigmond Rákóczi to Ferenc Bethlen, the cipher passages
 
 # Rests on: our transcription of every cipher passage on the four DECODE images (R4942-transcription.txt: the 7-line
 # block at the head of p. 2 and two words lower on p. 2; p. 1, the rest of p. 2 and the address on p. 4 are clear),
@@ -572,7 +572,7 @@ illendo keppen. {kglh}
 ## Reading
 
 *Az kgld* io akarattiaban [?teliessegel] meg niugottam, noha az mostani dologhoz maid semmi remenseg ninczen, mind az altal Istentol meglehet; az mediumokkal elni kel; battyam uram ugy indulattal vageon hozzam az plenipotentiaval, ha az szukseg kivannia, tobbet is igirhet illendo keppen. *kglh* *valasz az* herczegul *az ki abban nem le-* *fi.r* incomitiis, *masszor leven distractioja*</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4942_en.md">R4942_en.md</a></p><pre># R4942 in English (cipher passages; translation of R4942_reading.md)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4942_en.md">R4942_en.md</a></p><pre translate="no"># R4942 in English (cipher passages; translation of R4942_reading.md)
 
 *Your Grace&#x27;s* goodwill has [?fully] reassured me, although for the present affair there is almost no hope; all the same, through God it may be. One must make use of the intermediaries. My brother is so disposed towards me with the plenipotentiary power that, if need requires, he can also promise more, in a fitting manner. *Your Grace&#x27;s [servant].*
 
@@ -580,7 +580,7 @@ illendo keppen. {kglh}
 <h3>R4939, the Rákóczi brothers to Ferenc Bethlen and András Klobusiczky at the Polish election diet, Alba, [?9 Oct] 1648 <span class="st partial">read in part</span></h3>
 <p>György I Rákóczi is dying; he had not sought the Polish crown for himself; the sons will not risk Transylvania by seeking the principality for Zsigmond now and bind the envoys to promote Zsigmond&#x27;s candidacy for the Polish crown, spending money on it; letters will follow at the father&#x27;s death. A different simple substitution from the family key, recovered ciphertext-only.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (90% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4939-transcription.txt">R4939-transcription.txt</a></p><pre># R4939 (Keresdi_Bethlen_15-03), György Rákóczi to Ferenc Bethlen and András Klobusiczky, 1648: cipher text of
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4939-transcription.txt">R4939-transcription.txt</a></p><pre translate="no"># R4939 (Keresdi_Bethlen_15-03), György Rákóczi to Ferenc Bethlen and András Klobusiczky, 1648: cipher text of
 # image P1 (and P2 below), transcribed 23 Oct 2026 (r2h) from the DECODE images (1,704 px) at 2x.
 # One ASCII letter per cipher letter as it looks: x = large crossed x, r = small hooked r, t = small cross (+),
 # g = g with closed lower loop, q = q with straight descender, s = long s, z = z/2-shape, Y = y with diaeresis,
@@ -635,7 +635,7 @@ illendo keppen. {kglh}
 44 t mr xbxqgx bhhbx mulmttm agel xgeohasgx
 45 gt mr Yg xgeohag Ygprgp dzmaqmx uYh
 46 ems bYi aYumh czYaYfgmhlmttm</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4939_reading.md">R4939_reading.md</a></p><pre># R4939 (Keresdi_Bethlen_15-03), 1648: reading (23 Oct 2026, r2h)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4939_reading.md">R4939_reading.md</a></p><pre translate="no"># R4939 (Keresdi_Bethlen_15-03), 1648: reading (23 Oct 2026, r2h)
 
 Rests on: `R4939-transcription.txt` (the cipher of images P1-P2 transcribed letter by letter, 23 Oct 2026, at 2-3x on
 the DECODE scans of 1,704 px; labels corrected on the crops, `R4939_corrections.tsv`) decoded with a key recovered
@@ -697,7 +697,7 @@ cz, -unc/-nac for -unk/-nak, kegylme- abbreviations kept); line numbers are the 
 44 s az kiknek illik adhassa megh kegylmtek
 45 es az oe kegylme oeczec uramnak dol-
 46 gat iob modal promovealhassa</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4939_reading.md">R4939_reading.md</a></p><pre># R4939 (Keresdi_Bethlen_15-03), 1648: reading (23 Oct 2026, r2h)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4939_reading.md">R4939_reading.md</a></p><pre translate="no"># R4939 (Keresdi_Bethlen_15-03), 1648: reading (23 Oct 2026, r2h)
 
 Rests on: `R4939-transcription.txt` (the cipher of images P1-P2 transcribed letter by letter, 23 Oct 2026, at 2-3x on
 the DECODE scans of 1,704 px; labels corrected on the crops, `R4939_corrections.tsv`) decoded with a key recovered
@@ -759,7 +759,7 @@ cz, -unc/-nac for -unk/-nak, kegylme- abbreviations kept); line numbers are the 
 44 s az kiknek illik adhassa megh kegylmtek
 45 es az oe kegylme oeczec uramnak dol-
 46 gat iob modal promovealhassa</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4939_en.md">R4939_en.md</a></p><pre># R4939, 1648: English (23 Oct 2026, r2h)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4939_en.md">R4939_en.md</a></p><pre translate="no"># R4939, 1648: English (23 Oct 2026, r2h)
 
 Translation of `R4939_reading.md`, same holes. &quot;His Highness&quot; = György I Rákóczi, the writers&#x27; father; &quot;my younger
 brother&quot; = Zsigmond Rákóczi.
@@ -783,7 +783,7 @@ whom it concerns, and further the business of my younger brother in the best way
 <h3>R4938, G. Rákóczi to Ferenc Bethlen, 24 Apr 1647 (three cipher spans in a clear letter) <span class="st stuck">decoded, not read</span></h3>
 <p>Three short cipher spans (54 letters) in a clear letter, decoded with the family key unchanged: &#x27;az Rakoczi Sigmon&#x27;, &#x27;az nekunk [...] volna&#x27;, &#x27;mi [?nevunkre] forogion&#x27;; a later pencil gloss agrees.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4938-transcription.txt">R4938-transcription.txt</a></p><pre># R4938 (Keresdi_Bethlen_15-02), Rákóczi to Bethlen, 24 Apr 1647 (clear date and signature on image P4): the cipher
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4938-transcription.txt">R4938-transcription.txt</a></p><pre translate="no"># R4938 (Keresdi_Bethlen_15-02), Rákóczi to Bethlen, 24 Apr 1647 (clear date and signature on image P4): the cipher
 # insertions, all on image P2 (the clear letter runs over P1-P4). Transcribed 23 Oct 2026 (r2h) at 3x on the DECODE scan
 # (1,704 px). Letters as they look; the family hand of R4936/R4940 (see shared-key-hypothesis.json). A later pencil
 # gloss (not contemporary) stands over the spans: given after &quot;#g&quot;.
@@ -794,7 +794,7 @@ S2 wm iylgil vnkgillyh gdkiw
 #g a z ne kunk  ..i..r unnel  volna
 S3 zniygailiy bdkdundi
 #g minev.nne  forogion</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4938_reading.md">R4938_reading.md</a></p><pre># R4938 (Keresdi_Bethlen_15-02), Rákóczi to Ferenc Bethlen, 24 April 1647: the cipher insertions (23 Oct 2026, r2h)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/transylvania1645/R4938_reading.md">R4938_reading.md</a></p><pre translate="no"># R4938 (Keresdi_Bethlen_15-02), Rákóczi to Ferenc Bethlen, 24 April 1647: the cipher insertions (23 Oct 2026, r2h)
 
 Rests on: `R4938-transcription.txt` (three short spans on image P2, 45 cipher letters) decoded with the family key
 (`shared-key-hypothesis.json`) unchanged; a later pencil gloss over the spans (not contemporary) agrees where legible
@@ -823,7 +823,7 @@ English: &quot;Zsigmond Rákóczi&quot; ... &quot;that would be [...] for us&quo
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Romanian National Archives, Cluj, Keresdi Bethlen 14&ndash;15, via DECODE R4936&ndash;R4942</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="sp106r929.html" rel="prev">&larr; Paris to &ldquo;Sir&rdquo;, 26 Jan 1646 1646</a><a href="mercy1648.html" rel="next">Mercy 1648 1648 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

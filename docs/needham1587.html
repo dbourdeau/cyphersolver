@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-  <div class="cipherstrip">⌟: ⌝ □ ⌝̣ &nbsp; ⌟: ⌝ □ ⌝̣ □ &nbsp; ⌞: ⌟ ⊐̣ &hellip;<br>ther there was any bridge or not<br>⌟ = a &middot; ⌟̣ = k &middot; ⌟: = t &middot; □ = e &middot; □̣ = o &middot; □: = y</div>
+  <div class="cipherstrip" translate="no">⌟: ⌝ □ ⌝̣ &nbsp; ⌟: ⌝ □ ⌝̣ □ &nbsp; ⌞: ⌟ ⊐̣ &hellip;<br>ther there was any bridge or not<br>⌟ = a &middot; ⌟̣ = k &middot; ⌟: = t &middot; □ = e &middot; □̣ = o &middot; □: = y</div>
   <p class="kicker">Before Sluys &rarr; Walsingham &middot; three-grid pigpen inside clear English &middot; 28 July 1587</p>
   <h1>Francis Needham to Walsingham before Sluys, 28 July 1587</h1>
 <div class="parties"><figure class="party recipient"><img src="portrait_francis-walsingham.jpg" alt="Francis Walsingham" title="Francis Walsingham: Portrait, Attributed to John de Critz. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Francis Walsingham</figcaption></figure></div><!-- /parties -->
@@ -99,7 +99,7 @@
 <p>This is the &ldquo;bridge&rdquo; of the calendared despatch: Parma had closed the haven of Sluys with a boom of boats chained together, and the English and Dutch could neither see it nor learn what it was. The rest of f. 39v, in clear, covers Sir Roger Williams&rsquo;s sallies, the storm, the state of the town, Count Maurice, Colonel Morgan and Sir William Russell; the three words glossed near its foot (&ldquo;Mr Burley&rdquo;, &ldquo;the Spaniard&rdquo;, &ldquo;were removed hence&rdquo;) were deciphered at the time.</p>
 
 <h2 id="method"><span class="num">04</span> Method</h2>
-<p>The four images were fetched from DECODE. The glossed words gave letters by alignment: <em>advise</em> = ⌟ ⊏ ⊔: ⊐ ⊐̣ □, <em>enemyes</em> = □ ⊏̣ □ ⌞̣ □: □ ⊐̣, <em>the towne</em> = ⌟: ⌝ □ ⌟: □̣ ⌞: ⊏̣ □, and <em>Burgrave</em> on f. 40r began ⊔ ⊔̣ ⌝̣ ⊓. The first bare line then gave <em>want of intelligence</em>, and once a, b, c, d, e, h, i and k&ndash;s, t&ndash;z were in hand the order was plainly alphabetical, which fixed f, g, p and q and corrected the mistranscribed dots. A solver (simulated annealing on quadgram statistics) was prepared in case the key could not be completed, and was not needed. The transcription is in <code>targets/needham1587/cipher.txt</code> and the key in <code>decode.py</code>.</p>
+<p>The four images were fetched from DECODE. The glossed words gave letters by alignment: <em>advise</em> = ⌟ ⊏ ⊔: ⊐ ⊐̣ □, <em>enemyes</em> = □ ⊏̣ □ ⌞̣ □: □ ⊐̣, <em>the towne</em> = ⌟: ⌝ □ ⌟: □̣ ⌞: ⊏̣ □, and <em>Burgrave</em> on f. 40r began ⊔ ⊔̣ ⌝̣ ⊓. The first bare line then gave <em>want of intelligence</em>, and once a, b, c, d, e, h, i and k&ndash;s, t&ndash;z were in hand the order was plainly alphabetical, which fixed f, g, p and q and corrected the mistranscribed dots. A solver (simulated annealing on quadgram statistics) was prepared in case the key could not be completed, and was not needed. The transcription is in <code translate="no">targets/needham1587/cipher.txt</code> and the key in <code translate="no">decode.py</code>.</p>
 
 <h2 id="what-remains-uncertain"><span class="num">05</span> What remains uncertain</h2>
 <ul>
@@ -114,7 +114,7 @@
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>Needham to Walsingham, 28 July 1587, f. 39v cipher runs</h3>
 <p>Francis Needham, Walsingham&#x27;s servant with Leicester at the relief of Sluys, reports that they had no intelligence out of the enemy&#x27;s camp or the town for five days, did not know whether there was any bridge or anything at the channel, and that the channel was closed with hoys and flyboats fastened with chains and strengthened behind with flat boats. The f. 39r and f. 40r cipher words were glossed at the time; the clear text of the letter is not transcribed here.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/needham1587/cipher.txt">cipher.txt</a></p><pre># Needham to Walsingham, 28 July 1587, BL Harley MS 287 f. 39v (DECODE R8479, image 4)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/needham1587/cipher.txt">cipher.txt</a></p><pre translate="no"># Needham to Walsingham, 28 July 1587, BL Harley MS 287 f. 39v (DECODE R8479, image 4)
 # Sign-level transcription. Shape = which sides of the box are drawn:
 #   J = right+bottom (top-left cell), U = open top, L = left+bottom, C = open right, O = full box,
 #   F = left+top, N = open bottom, 7 = top+right, D = open left.
@@ -130,7 +130,7 @@ F  J C. C | J: 7 J J: | J: 7 O
 advise   J C U: D D. O
 enemyes  O C. O L. O: O D.
 campe nor the towne   L J L. F. O | C. O. 7. | J: 7 O | J: O. L: C. O</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/needham1587/texts/f39v_decryption.md">f39v_decryption.md</a></p><pre># Output of decode.py on cipher.txt, run 22 Oct 2026 (three-grid pigpen key). One line per cipher run of f. 39v (lines A-H) plus the three glossed words; ? = sign without a value (line G, word 3, open). Verbatim script output.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/needham1587/texts/f39v_decryption.md">f39v_decryption.md</a></p><pre translate="no"># Output of decode.py on cipher.txt, run 22 Oct 2026 (three-grid pigpen key). One line per cipher run of f. 39v (lines A-H) plus the three glossed words; ? = sign without a value (line G, word 3, open). Verbatim script output.
 A          wanteofintellegence
 C          knewe not whe
 D          ther there was any bridge or not or whether there were any at the chanel
@@ -140,7 +140,7 @@ F          and that the
 advise     aduise
 enemyes    enemyes
 campe nor the towne campe nor the towne</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/needham1587/texts/f39v_reading.md">f39v_reading.md</a></p><pre># Copied verbatim from NOTES.md, section &#x27;Reading of f. 39v&#x27; (22 Oct 2026): the cipher runs in their clear context.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/needham1587/texts/f39v_reading.md">f39v_reading.md</a></p><pre translate="no"># Copied verbatim from NOTES.md, section &#x27;Reading of f. 39v&#x27; (22 Oct 2026): the cipher runs in their clear context.
 ## Reading of f. 39v (cipher in italics; clear text paraphrased where not transcribed)
 
 - **A**: &quot;... we had *want of intelligence* these five days last past ...&quot; — the gloss &quot;advise&quot; above the next
@@ -166,13 +166,13 @@ up to &quot;the bridge&quot; across the haven: Parma had closed the channel with
 <li>British Library, Harley MS 287 ff. 39&ndash;40: <a href="https://de-crypt.org/decrypt-web/RecordsView/8479">DECODE R8479</a>, images 1&ndash;4 (4 = f. 39v).</li>
 <li><em>Calendar of State Papers Foreign, Elizabeth</em>, vol. 21 pt 3, April&ndash;December 1587, ed. S. C. Lomas and A. B. Hinds (1929): Needham to Walsingham, 28 July 1587, pp. 206&ndash;8; the Wilkes cipher, p. 35 n. 4 and p. 237 n.; <a href="https://www.british-history.ac.uk/cal-state-papers/foreign/vol21/no3/pp197-217">British History Online</a>.</li>
 </ul>
-<p class="muted">Transcription, key and notes: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/needham1587"><code>targets/needham1587/</code></a> in the repository.</p>
+<p class="muted">Transcription, key and notes: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/needham1587"><code translate="no">targets/needham1587/</code></a> in the repository.</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Manuscript images: British Library, via DECODE</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="guise1587.html" rel="prev">&larr; Guise to Merc&oelig;ur, May&ndash;June 1587 1587</a><a href="vieuville1587.html" rel="next">Nevers to La Vieuville 1587 1587 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

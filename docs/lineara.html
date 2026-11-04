@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-  <div class="cipherstrip">KI-RO &middot; KU-PA<sub>3</sub>-PA<sub>3</sub> 1 &middot; KA-JU 1 &middot; KU-PA<sub>3</sub>-NU 1 &middot; PA-JA-RE 1 &middot; SA-MA-RO 1 &middot; DA-TA-RE 1 &middot; KU-RO 6<br>deficit: six names, one man each &middot; total 6<br>KU-RO = total &middot; KI-RO = deficit &middot; PA-I-TO = Phaistos &middot; J = &frac12;</div>
+  <div class="cipherstrip" translate="no">KI-RO &middot; KU-PA<sub>3</sub>-PA<sub>3</sub> 1 &middot; KA-JU 1 &middot; KU-PA<sub>3</sub>-NU 1 &middot; PA-JA-RE 1 &middot; SA-MA-RO 1 &middot; DA-TA-RE 1 &middot; KU-RO 6<br>deficit: six names, one man each &middot; total 6<br>KU-RO = total &middot; KI-RO = deficit &middot; PA-I-TO = Phaistos &middot; J = &frac12;</div>
   <p class="kicker" data-term-ok>Minoan Crete &middot; undeciphered syllabic script with logograms and fractions, not a cipher &middot; c. 1800&ndash;1450 BC &middot; the accounts transcribed and checked; the language not solved</p>
   <h1>Linear A: how far the tablets can be read without knowing the language</h1>
   <p class="sub">The numbers, commodities, totals and three place names of the Minoan tablets can be read and checked; the words cannot, because the language is unknown and no bilingual text exists.</p>
@@ -106,7 +106,7 @@
 
 <h2 id="accounts"><span class="num">03</span> Reading the accounts</h2>
 <figure class="creveal" data-src="reveal/lineara.json"></figure>
-<p>A script (<code>targets/lineara/reading/build_reading.py</code>) gives each of the 5,339 tokens in the corpus one class, not counting dividers and damage marks. Glosses are kept to those with a stated basis:</p>
+<p>A script (<code translate="no">targets/lineara/reading/build_reading.py</code>) gives each of the 5,339 tokens in the corpus one class, not counting dividers and damage marks. Glosses are kept to those with a stated basis:</p>
 <ul>
 <li><strong>Commodity pictograms:</strong> the GORILA labels (grain, wine, oil, olives, figs, men, goats, cyperus), which rest on the same signs&rsquo; meaning in Linear B.</li>
 <li><strong>Fraction values:</strong> Corazza et al. 2021, except the two that section 04 disputes.</li>
@@ -127,7 +127,7 @@
 <li><strong>SA-RA<sub>2</sub>:</strong> a transaction term used only at Haghia Triada, with grain and cyperus, in 20 records.</li>
 <li><strong>A-DU and KA-PA:</strong> heading terms.</li>
 </ul>
-<p>The full reading of every record (<code>reading/edition.txt</code>, built by <code>targets/lineara/reading/build_reading.py</code>) is not in the public repository, because the digital texts it is built from carry no licence. It is available on request.</p>
+<p>The full reading of every record (<code translate="no">reading/edition.txt</code>, built by <code translate="no">targets/lineara/reading/build_reading.py</code>) is not in the public repository, because the digital texts it is built from carry no licence. It is available on request.</p>
 <p><strong>The totals.</strong> All 35 KU-RO and PO-TO-KU-RO totals were rechecked with exact fractions. For each, the entries were summed over several windows: from the start of the tablet, from the last rule, after a KI-RO heading, over both faces of the object, and by commodity.</p>
 <ul>
 <li><strong>Ten balance.</strong> HT 123a&rsquo;s olive total balances only when its olive entries are summed apart from the other commodities on the tablet, 31 + 31&frac12; + 16 + 15 = 93&frac12;. The figure below replays that tablet.</li>
@@ -154,7 +154,7 @@
 <li><strong>A second, weaker tension.</strong> Younger reads HT 34&rsquo;s last lines as settling earlier items, with PU F settling the item written A. On that reading F (&#8539;) is at most A, but A is 1/24.</li>
 </ul>
 <p>The authors themselves say optimality did not fix H and A, and chose those two values on structural grounds. HT 34 is a counterexample to those two values, not an alternative system: with 29 order pairs, the evidence is too thin for one. None of the 18 works citing the 2021 paper revises the values. The team&rsquo;s own later account, Corazza&rsquo;s <em data-term-ok>Computational methods for undeciphered scripts</em> (2024), repeats &ldquo;A = 1/24?, H = 1/16?&rdquo;, still marked tentative, and does not discuss HT 34. As far as the sources reachable online show, the conflict has not been raised before. Salgarella&rsquo;s 2025 book is closed access and was not checked. It is the one item left before the point can be called new with confidence. Tagging each fraction pair with its commodity does not rescue the published values either: the three exceptions fall under three different commodities, and HT 34&rsquo;s is the only pair in the corpus with both H and K.</p>
-<p>New evidence is on its way. The ivory handle KN Zg 58, found at Knossos in 2024, carries six different fraction signs in a row. Its excavators say the sequence orders the values differently from every published proposal (Kanta, Nakassis, Palaima and Perna 2025), but they reserve it for the final edition. That sequence, and a good photograph of HT 34 line 3 (Heraklion Museum, HM 22), would settle the question. A two-page note setting out the HT 34 argument is drafted in <code>targets/lineara/note_HT34/</code>.</p>
+<p>New evidence is on its way. The ivory handle KN Zg 58, found at Knossos in 2024, carries six different fraction signs in a row. Its excavators say the sequence orders the values differently from every published proposal (Kanta, Nakassis, Palaima and Perna 2025), but they reserve it for the final edition. That sequence, and a good photograph of HT 34 line 3 (Heraklion Museum, HM 22), would settle the question. A two-page note setting out the HT 34 argument is drafted in <code translate="no">targets/lineara/note_HT34/</code>.</p>
 
 <h2 id="formula"><span class="num">05</span> The libation formula</h2>
 <p>Offering vessels from peak sanctuaries across Crete carry a recurring sequence of words. Across 14 inscriptions from 7 sites, the order of its slots holds in 77 of 78 pairs:</p>
@@ -171,7 +171,7 @@
 <div class="callout"><p>Everything else on this page is measured. This section is interpretation. It sets out the most likely picture that the measured results support, and says what each part rests on. No word is translated here; what is guessed is what the entries were for.</p></div>
 <p><strong>What the archive was.</strong> Most tablets come from Haghia Triada and survive because the building burned, around 1450 BC, and baked clay that was never meant to be fired. Unfired tablets were working records, kept for the current accounting period and then smoothed over or thrown away. They probably cover the last months before the fire: current business, not history. The amounts are small, from single units to a few hundred. Each site has its own names (only 10 entry words occur at two sites, against 33 expected by chance), and each measures grain and wine at its own scale. The likeliest setting is a regional centre running its own district, not one Crete-wide bureau.</p>
 <p><strong>Goods coming in and going out.</strong> The goods are the staples of a Bronze Age Aegean economy: grain in the largest amounts, then wine, oil in several kinds marked by the syllables attached to the oil sign, olives and figs. There is also cyperus, an aromatic plant that Linear B records use for perfumed oil. Most entries pair a word, probably a person or a work-group leader, with an amount. Some are likely allocations to dependants and workers. Others are likely contributions due from local households. No word on the tablets that has been glossed marks which way the goods moved, so the direction is inferred from the few terms whose job is clear.</p>
-<p><strong>Debts and deliveries.</strong> The clearest terms are about obligations. KU-RO is the total and KI-RO the shortfall still owed. PA<sub>3</sub> probably marks the part actually delivered: on HT 34, 100 was due, 70 came in and 30 is owed. KI-RO probably worked like Linear B&rsquo;s <i lang="gmy">o-pe-ro</i> at Pylos, &ldquo;owed, lacking&rdquo;, and was used both for goods not delivered and for people who did not turn up. Every name in a KI-RO section carries exactly 1, whatever the same name carries elsewhere. That fits a list of absent individuals better than a list of small debts.</p>
+<p><strong>Debts and deliveries.</strong> The clearest terms are about obligations. KU-RO is the total and KI-RO the shortfall still owed. PA<sub>3</sub> probably marks the part actually delivered: on HT 34, 100 was due, 70 came in and 30 is owed. KI-RO probably worked like Linear B&rsquo;s <i lang="gmy" translate="no">o-pe-ro</i> at Pylos, &ldquo;owed, lacking&rdquo;, and was used both for goods not delivered and for people who did not turn up. Every name in a KI-RO section carries exactly 1, whatever the same name carries elsewhere. That fits a list of absent individuals better than a list of small debts.</p>
 <p><strong>Two tablets retold in plain words.</strong> These are paraphrases. The numbers and the terms KU-RO, KI-RO and PA<sub>3</sub> are as the tablets give them; the roles of the people are the guess.</p>
 <blockquote><strong>HT 88.</strong> Account A-DU: men, twenty. With RE-ZA six, with KI-KI-NA seven. Short: KU-PA<sub>3</sub>-PA<sub>3</sub>, KA-JU, KU-PA<sub>3</sub>-NU, PA-JA-RE, SA-MA-RO, DA-TA-RE, one each. Total short: six.<br>
 <em>Probably a labour roster: a levy of twenty men, part supplied through two team leaders, with six named men missing or still owed.</em></blockquote>
@@ -220,7 +220,7 @@
 <li><strong>A calibrated test of the language proposals.</strong> Semitic, Luwian, Hurrian and the rest do no better than Hawaiian or Yoruba, and neither Eteocretan nor the Pre-Greek substrate shows a reliable link. The positive control shows that look-alike matching cannot identify a language at this scale (section 07).</li>
 <li><strong>Minoan names at Knossos.</strong> The Linear A words that survive into Linear B are names, significantly more than chance, and all of them Knossian, among them TA-NA-TI, KI-DA-RO, DA-I-PI-TA and I-TA-JA. Beyond these, the Knossos personal names as a whole are Minoan in shape, while the Pylos names are not (section 02).</li>
 <li><strong>Accounting functions across tablets.</strong> A-KA-RU and A-DU are categories over the same persons. PA<sub>3</sub> marks a delivered part, and KI-RO lists count persons one each (section 03).</li>
-<li><strong>Corrections to the digital texts:</strong> HT 34&rsquo;s KI-RO is 30, not 37. A field in a third-party SigLA decoder was mislabelled; it holds sign position and word index, not boundary states. A word-by-word comparison of the two digital editions lists 44 disagreements for their editors (<code>targets/lineara/ERRATA.md</code>). Among them are a systematic JA/PA<sub>3</sub> confusion and three readings that affect results here: SU-KI-RA-TA, PA-RI-NE and DA-ZA in SigLA.</li>
+<li><strong>Corrections to the digital texts:</strong> HT 34&rsquo;s KI-RO is 30, not 37. A field in a third-party SigLA decoder was mislabelled; it holds sign position and word index, not boundary states. A word-by-word comparison of the two digital editions lists 44 disagreements for their editors (<code translate="no">targets/lineara/ERRATA.md</code>). Among them are a systematic JA/PA<sub>3</sub> confusion and three readings that affect results here: SU-KI-RA-TA, PA-RI-NE and DA-ZA in SigLA.</li>
 <li><strong>Replication, now measured over the whole corpus:</strong> the Linear B carry-over (argued before by Packard, and by Steele and Meissner); KU-RO, KI-RO and PO-TO-KU-RO; the place names; the name lists; the formula order. The share of the corpus that can be read without the language (41.8% of tokens) is measured here; no earlier measure of it was found. It contains no new reading.</li>
 <li><strong>Nothing on the language itself.</strong> No word is given a new meaning, and no language family is supported.</li>
 </ul>
@@ -230,7 +230,7 @@
 <li><strong>The meanings of the 2,164 tokens read only as sound</strong> (names, transaction terms, formula words). Blocked: the language is unidentified and no bilingual exists.</li>
 <li><strong>632 unidentified signs and ligatures</strong> (*301, *304, *308, QA<sub>2</sub>+&hellip;, MI+JA+&hellip;). They have no Linear B counterpart and no context fixes them.</li>
 <li><strong>The fraction signs H and A, and the rare L, W, X, Y and DD.</strong> Too few attestations.</li>
-<li><strong>Damaged entries and totals.</strong> Restorations are proposed in <code>targets/lineara/reading/restorations.json</code>.</li>
+<li><strong>Damaged entries and totals.</strong> Restorations are proposed in <code translate="no">targets/lineara/reading/restorations.json</code>.</li>
 <li><strong>631 single-sign marks on sealings.</strong> One sign per object, no syntax.</li>
 <li><strong>Five totals that no window reconciles:</strong> HT 13, HT 25b, HT 102, HT 122b and PH(?) 31a. Only examining the tablets can say whether the scribe or the transcription erred.</li>
 <li><strong>A fuller Etruscan test.</strong> It waits on a larger open lexicon.</li>
@@ -259,13 +259,13 @@
 <li>H. C. Melchert, <em>Cuneiform Luvian Lexicon</em> (1993). Akkadian, Ugaritic, Etruscan, Ancient Greek and control lexicons from Wiktionary via <a href="https://kaikki.org/">Kaikki</a>.</li>
 </ul>
 
-<p class="muted">Scripts, results and notes are in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/lineara"><code>targets/lineara/</code></a>. The reading script is <code>targets/lineara/reading/build_reading.py</code>, and <code>targets/lineara/FRACTIONS_REPORT.md</code> gives the full fraction analysis, and <code>targets/lineara/LEADS_REPORT.md</code> the language and names tests.</p>
+<p class="muted">Scripts, results and notes are in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/lineara"><code translate="no">targets/lineara/</code></a>. The reading script is <code translate="no">targets/lineara/reading/build_reading.py</code>, and <code translate="no">targets/lineara/FRACTIONS_REPORT.md</code> gives the full fraction analysis, and <code translate="no">targets/lineara/LEADS_REPORT.md</code> the language and names tests.</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Photograph: ShlomoKatzav, CC0, via Wikimedia Commons; texts after GORILA via lineara.xyz and SigLA</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="indus.html" rel="prev">&larr; Indus script c. 2600&ndash;1900 BCE</a><a href="vico1398.html" rel="next">Vico to Carbonell 1398 1398 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>
 </body>

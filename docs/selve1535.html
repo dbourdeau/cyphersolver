@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-<div class="cipherstrip">S &omega; &#9661; 7 &#42831; &Dagger; o+ &#8765; &#42831; z &#9661; &#8467;<br>&middot; e n t r e s g r a n d<br>&Dagger; o &omega; = e &middot; o+ = s &middot; &#42831; = r &middot; S = null</div>
+<div class="cipherstrip" translate="no">S &omega; &#9661; 7 &#42831; &Dagger; o+ &#8765; &#42831; z &#9661; &#8467;<br>&middot; e n t r e s g r a n d<br>&Dagger; o &omega; = e &middot; o+ = s &middot; &#42831; = r &middot; S = null</div>
 <p class="kicker">Venice &rarr; Francis I &middot; substitution cipher of invented signs, with homophones and nulls &middot; 14 September 1535 and 5 July 1536</p>
 <h1>Georges de Selve&rsquo;s ciphered despatches from Venice, 1535&ndash;1536</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_georges-de-selve-2.jpg" alt="Georges de Selve" title="Georges de Selve: Detail of The Ambassadors, Hans Holbein the Younger, 1533. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Georges de Selve</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_francis-i.jpg" alt="Francis I" title="Francis I: Portrait by Jean Clouet, c. 1530. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Francis I</figcaption></figure></div><!-- /parties -->
@@ -99,11 +99,11 @@
 <figure data-credit="Biblioth&egrave;que nationale de France, fr. 3091 f. 25r, via Gallica (btv1b9060253s, view 27)"><img src="selve1535_f25r.jpg" alt="Seven cipher lines of the 1535 letter" loading="lazy"><figcaption>f. 25r, the first block: &ldquo;passe par le chemin des Suis&middot;ses, car l&rsquo;aultre ne luy seroit pas seur, a cause que l&rsquo;ambas&middot;sadeur qui est &hellip; pour l&rsquo;Empe&middot;reur &hellip;&rdquo;, with a null between the doubled letters. Film scan, contrast raised. <span class="credit">Image: Biblioth&egrave;que nationale de France, fr. 3091 f. 25r, via Gallica (btv1b9060253s, view 27).</span></figcaption></figure>
 
 <h2 id="method"><span class="num">04</span> Method</h2>
-<p>The cipher runs were located on the Gallica images and cut into strips of three to five lines. Each page went to a separate transcription pass, which transcribed every sign, applied the table and wrote out the French. Doubtful spots were then checked again on the native files at full resolution: an eleven-sign &ldquo;verb&rdquo; on f. 48r is <em>ceste annee</em> with a null in the middle, and a four-sign word on f. 45r is <em>guerre</em>. Wherever the King&rsquo;s decipherer left a gloss, it was compared letter by letter. On the 1535 letter the glosses also served as cribs, lining the known plaintext up against the struck signs; that is how <em>au marchant</em>, <em>ung sansacque cy prochain</em> and <em>amiablement pour la charge qu&rsquo;il a de Vesprim</em> were confirmed. Counts are measured on per-sign files, with one character per sign and undecrypted signs marked: 2,248 of 2,481 non-null signs decrypted (90.6%). R4232 is 1,417 of 1,430 plus the glossed name code; R3697 is 831 of 1,051, and 709 of 747 outside the struck runs. A stricter count (<code>sense.py</code>, 5 October 2026) credits only signs inside French words of the period vocabulary: R4232 1,408 of 1,430 (98.5%), R3697 822 of 1,051 (78.2%), both <strong>2,230 of 2,481 (89.9%)</strong>.</p>
+<p>The cipher runs were located on the Gallica images and cut into strips of three to five lines. Each page went to a separate transcription pass, which transcribed every sign, applied the table and wrote out the French. Doubtful spots were then checked again on the native files at full resolution: an eleven-sign &ldquo;verb&rdquo; on f. 48r is <em>ceste annee</em> with a null in the middle, and a four-sign word on f. 45r is <em>guerre</em>. Wherever the King&rsquo;s decipherer left a gloss, it was compared letter by letter. On the 1535 letter the glosses also served as cribs, lining the known plaintext up against the struck signs; that is how <em>au marchant</em>, <em>ung sansacque cy prochain</em> and <em>amiablement pour la charge qu&rsquo;il a de Vesprim</em> were confirmed. Counts are measured on per-sign files, with one character per sign and undecrypted signs marked: 2,248 of 2,481 non-null signs decrypted (90.6%). R4232 is 1,417 of 1,430 plus the glossed name code; R3697 is 831 of 1,051, and 709 of 747 outside the struck runs. A stricter count (<code translate="no">sense.py</code>, 5 October 2026) credits only signs inside French words of the period vocabulary: R4232 1,408 of 1,430 (98.5%), R3697 822 of 1,051 (78.2%), both <strong>2,230 of 2,481 (89.9%)</strong>.</p>
 
 <h2 id="what-remains"><span class="num">05</span> What remains</h2>
 <ul>
-<li><b>Reading audit, 22 October 2026.</b> The 1536 letter and the unstruck cipher of the 1535 letter read as French sentences; the decipherer&rsquo;s struck runs of 1535 (304 signs) give only fragments and are decoded, not read. Signs in text that reads: 2,177 of 2,481 (87.7%). A re-reading the same day took the King&rsquo;s decipherer&rsquo;s glosses as the decipherment of the struck runs they cover (<code>READING_R3697_struck.md</code>): four runs, 169 signs, now carry French clauses word for word from the glosses, checked against the signs where they separate from the strike (&ldquo;au marchant&rdquo;, &ldquo;ung sansacque cy prochain&rdquo;, &ldquo;Il a consum&eacute; ses facultez et la plus part de ses amys&rdquo;, &ldquo;amiablement pour la charge qu&rsquo;il a de Vesprim de la guerre&rdquo;). As text they are still fragments (one clause in four clean), so they stay decoded, not read with the other 135 struck signs, which have no legible gloss and need a colour image or the original. Counted word by word on 24 October 2026, the written-out reading of the 1535 letter (R3697) builds coherent sentences but reads at 91.1% of its words, under the 95% a complete reading needs.</li>
+<li><b>Reading audit, 22 October 2026.</b> The 1536 letter and the unstruck cipher of the 1535 letter read as French sentences; the decipherer&rsquo;s struck runs of 1535 (304 signs) give only fragments and are decoded, not read. Signs in text that reads: 2,177 of 2,481 (87.7%). A re-reading the same day took the King&rsquo;s decipherer&rsquo;s glosses as the decipherment of the struck runs they cover (<code translate="no">READING_R3697_struck.md</code>): four runs, 169 signs, now carry French clauses word for word from the glosses, checked against the signs where they separate from the strike (&ldquo;au marchant&rdquo;, &ldquo;ung sansacque cy prochain&rdquo;, &ldquo;Il a consum&eacute; ses facultez et la plus part de ses amys&rdquo;, &ldquo;amiablement pour la charge qu&rsquo;il a de Vesprim de la guerre&rdquo;). As text they are still fragments (one clause in four clean), so they stay decoded, not read with the other 135 struck signs, which have no legible gloss and need a colour image or the original. Counted word by word on 24 October 2026, the written-out reading of the 1535 letter (R3697) builds coherent sentences but reads at 91.1% of its words, under the 95% a complete reading needs.</li>
 <li><b>Re-measured 5 October 2026.</b> Both letters 2,230 of 2,481 signs inside French words (89.9%). The struck runs of the 1535 letter were tried again on 5 October: Gallica has only the film scan of fr. 3091; the native views were re-fetched and f.&nbsp;25v and f.&nbsp;25r re-transcribed at 1.6&ndash;2&times;; removing the strike by a fitted line erases the sign bodies with it; gloss-led candidates (<i>de ses maistres</i>, <i>grand credit</i>, <i>du Turc</i>) do not fit the signs. Nothing moved. 95% would need about 127 more signs and the unstruck gaps hold about 50, so it cannot be reached on these images.</li>
 <li><strong>1536 letter</strong>: 13 single signs, all blots, corrections under the ruling or one slip; none affects the sense. The day in &ldquo;du [N]<sup>e</sup> de may&rdquo; is a figure that the decipherer copied without resolving. The crossed sign before &ldquo;de la Forest&rdquo; is taken as an abbreviation for <em>sieur</em> (M). The name code is known only through its gloss (C).</li>
 <li><strong>1535 letter, struck runs</strong> (182 signs): the decipherer&rsquo;s ruling runs through the middle of every sign, and the film scan cannot separate the two. The glosses give most of the plaintext. The strike ink is lighter than the cipher ink, so a colour image of the leaf would very likely make them legible.</li>
@@ -118,7 +118,7 @@
 <h3>R3697, BnF fr. 3091 f. 25r-v, Venice, 14 Sept 1535: unstruck cipher (f. 25r r03-r16, f. 25v L1-L5) <span class="st partial">read in part</span></h3>
 <p>Georges de Selve, ambassador at Venice, to Francis I: a merchant must go to France by the Swiss road because the Imperial ambassador at Venice suspects him and has had the other road watched; that ambassador had urged him to go to the French court under colour of trade; on the verso a Hungarian matter (Hieronymus, Veszprém) and informants reporting to the Turk. The runs struck through by the King&#x27;s decipherer are read only in part.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (91% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/R3697_signs.txt">R3697_signs.txt</a></p><pre># R3697 = BnF fr. 3091 f. 25r-v, Selve to Francis I, Venice, 14 Sept 1535. Cipher passages only.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/R3697_signs.txt">R3697_signs.txt</a></p><pre translate="no"># R3697 = BnF fr. 3091 f. 25r-v, Selve to Francis I, Venice, 14 Sept 1535. Cipher passages only.
 # One character per cipher sign: a-z = value as read; . = null; ? = not read (unread, or under the decipherer&#x27;s strike
 # and not separable on the film scan). Struck runs (sA, sB, sC1-3, T1-T3) carry contemporary glosses; only signs
 # whose shape agrees with the key are counted as read. Sources: work/f25r_pass2.md, f25r_pass3.md, f25v_pass2.md,
@@ -150,7 +150,7 @@ L2   oc.cur.rancesdecasansespecifieraultremententendre
 L3   etlesadvisquilzdonnentautu.rcetquilzluyfontdonner
 L4   parlemarchantsusdict?quandenontquelquefois
 L5   tenuproposcommedeuxdeusscaure.s???????</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/READING_R3697.md">READING_R3697.md</a></p><pre># R3697 — Georges de Selve to Francis I, Venice, 14 Sept 1535 (BnF fr. 3091 f. 25r–v, no. 14)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/READING_R3697.md">READING_R3697.md</a></p><pre translate="no"># R3697 — Georges de Selve to Francis I, Venice, 14 Sept 1535 (BnF fr. 3091 f. 25r–v, no. 14)
 
 The BnF catalogue dates it &quot;IIIIe de septembre 1535&quot;; DECODE has 14 Sept. Gallica btv1b9060253s views 27 (right
 half = f. 25r) and 28 (left half = f. 25v); the only images are a soft black-and-white film scan.
@@ -209,7 +209,7 @@ from here without saying more, and what advice they give the Turk, and have the 
 - f. 25r r8–r9, 17 signs around &quot;a pr… Anthon[e] de Le…&quot;: legible in part, not secured; r11 four signs before
   &quot;ambassa[deur]&quot;; r5 two signs; r7 one sign with no key value; r16 five signs erased by the writer; r9 one blot.
 - f. 25v L5: the last group before the clear text, and &quot;d&#x27;eux deux&quot; vs &quot;d&#x27;eux vous&quot;.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/R3697_reading.md">R3697_reading.md</a></p><pre>&lt;!-- Reading of R3697, the unstruck cipher only (BnF fr. 3091 f. 25r r03-r16, f. 25v L1-L5), Claude Opus 5.5, 23 Oct 2026 (verify pass v8). Running text taken from READING_R3697.md (Tomokiyo&#x27;s Selve key as extended in KEY.md; per-sign file R3697_signs.txt), with its clear-text brackets, the decipherer&#x27;s glosses and the struck runs (READING_R3697_struck.md, a separate entry, decoded, not read) cut. Holes: [?] an unread sign or group; [?word] a doubtful word (READING_R3697.md&#x27;s &quot;(?)&quot;); letters supplied inside a word in [ ]. Spelling as the signs give it; punctuation added. --&gt;
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/R3697_reading.md">R3697_reading.md</a></p><pre translate="no">&lt;!-- Reading of R3697, the unstruck cipher only (BnF fr. 3091 f. 25r r03-r16, f. 25v L1-L5), Claude Opus 5.5, 23 Oct 2026 (verify pass v8). Running text taken from READING_R3697.md (Tomokiyo&#x27;s Selve key as extended in KEY.md; per-sign file R3697_signs.txt), with its clear-text brackets, the decipherer&#x27;s glosses and the struck runs (READING_R3697_struck.md, a separate entry, decoded, not read) cut. Holes: [?] an unread sign or group; [?word] a doubtful word (READING_R3697.md&#x27;s &quot;(?)&quot;); letters supplied inside a word in [ ]. Spelling as the signs give it; punctuation added. --&gt;
 
 # R3697, Georges de Selve to Francis I, Venice, 14 Sept 1535: reading of the unstruck cipher
 
@@ -226,7 +226,7 @@ ne failloient pas d&#x27;adviser et faire adviser par d&#x27;aultres des occurra
 `research/reading_audit/v2_score.py R3697_reading.md fr`: plain 0.667 (10/15), explicit holes 0.733 (11/15), hole rate
 0.089, 179 words (23 Oct 2026). With the clear-text leads of READING_R3697.md kept as running text: 0.562 plain,
 0.688 explicit holes.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/R3697_en.md">R3697_en.md</a></p><pre># R3697, Georges de Selve to Francis I, Venice, 14 Sept 1535: English translation of the unstruck cipher
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/R3697_en.md">R3697_en.md</a></p><pre translate="no"># R3697, Georges de Selve to Francis I, Venice, 14 Sept 1535: English translation of the unstruck cipher
 
 Translated from `R3697_reading.md` (Claude Opus 5.5, 23 Oct 2026): the unstruck cipher of BnF fr. 3091 f. 25r-v,
 deciphered with Tomokiyo&#x27;s Selve key as extended in `KEY.md`. The clear text of the letter, the decipherer&#x27;s glosses
@@ -250,7 +250,7 @@ to learn, and the reports they give to the Turk, and that they have given to him
 when they have sometimes talked of it as from themselves [?two], [you] [?will know] [?].</pre></details>
 <h3>R3697, BnF fr. 3091 f. 25r-v: the struck runs with no legible gloss (C2 after &quot;et gran[d]&quot;, C3, T1, T3; 135 signs) <span class="st stuck">decoded, not read</span></h3>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/R3697_signs.txt">R3697_signs.txt</a></p><pre># R3697 = BnF fr. 3091 f. 25r-v, Selve to Francis I, Venice, 14 Sept 1535. Cipher passages only.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/R3697_signs.txt">R3697_signs.txt</a></p><pre translate="no"># R3697 = BnF fr. 3091 f. 25r-v, Selve to Francis I, Venice, 14 Sept 1535. Cipher passages only.
 # One character per cipher sign: a-z = value as read; . = null; ? = not read (unread, or under the decipherer&#x27;s strike
 # and not separable on the film scan). Struck runs (sA, sB, sC1-3, T1-T3) carry contemporary glosses; only signs
 # whose shape agrees with the key are counted as read. Sources: work/f25r_pass2.md, f25r_pass3.md, f25v_pass2.md,
@@ -282,7 +282,7 @@ L2   oc.cur.rancesdecasansespecifieraultremententendre
 L3   etlesadvisquilzdonnentautu.rcetquilzluyfontdonner
 L4   parlemarchantsusdict?quandenontquelquefois
 L5   tenuproposcommedeuxdeusscaure.s???????</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/READING_R3697_struck.md">READING_R3697_struck.md</a></p><pre>&lt;!-- R3697 (BnF fr. 3091 f. 25r-v, Selve to Francis I, Venice, 14 Sept 1535): the runs the King&#x27;s decipherer struck
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/READING_R3697_struck.md">READING_R3697_struck.md</a></p><pre translate="no">&lt;!-- R3697 (BnF fr. 3091 f. 25r-v, Selve to Francis I, Venice, 14 Sept 1535): the runs the King&#x27;s decipherer struck
 through and glossed. Built 22 Oct 2026 by Claude Opus 5.5 (re-read, batch mix1) from the decipherer&#x27;s own interlinear
 and marginal glosses, read on the native Gallica film scan (img/native_f27.jpg, native_f28.jpg; work/f25r_pass3.md,
 work/f25v_pass3.md), and checked against the struck signs wherever they separate from the strike (R3697_signs.txt).
@@ -328,7 +328,7 @@ means and most of his friends […] and great [man] of the Turk&quot;. T2: &quot
 charge he holds of Veszprém, of the war, in him …&quot;.</pre></details>
 <h3>R4232, BnF fr. 3045 ff. 42-49, Venice, 5 July 1536</h3>
 <p>Selve to Francis I on the Emperor&#x27;s plan against Marseille (key to the kingdom; master of Provence, a land road Italy-Spain, the Mediterranean; the French galleys trapped in the port under the guns of La Garde), de Vaulx&#x27;s advice to send the fleet towards Naples, La Forest&#x27;s news from the Porte of an open breach with the Emperor, and the Pope&#x27;s refusal of tenths to Charles. Four runs glossed by the King&#x27;s decipherer agree with the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/R4232_signs.txt">R4232_signs.txt</a></p><pre># R4232 = BnF fr. 3045 ff. 42-49, Selve to Francis I, Venice, 5 July 1536. Cipher passages only.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/R4232_signs.txt">R4232_signs.txt</a></p><pre translate="no"># R4232 = BnF fr. 3045 ff. 42-49, Selve to Francis I, Venice, 5 July 1536. Cipher passages only.
 # One character per cipher sign: a-z = the sign&#x27;s value as read; . = null; ? = sign not read;
 # N = the day numeral (a figure, not a cipher sign); 6 signs of the name code are written ###### (read from the
 # interlinear gloss &quot;mons^r de Rang..&quot;). Doubtful choices between two values are resolved to the one the French needs.
@@ -391,7 +391,7 @@ v94l07 mpereurnauroitaucunesdecimes
 v94l08 deluypourceste.anneequelque.
 v94l09 descenteetarmeequebarbarousse
 v94l10 face</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/READING_R4232.md">READING_R4232.md</a></p><pre># R4232 — Georges de Selve to Francis I, Venice, 5 July 1536 (BnF fr. 3045 ff. 42–49, no. 31)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/READING_R4232.md">READING_R4232.md</a></p><pre translate="no"># R4232 — Georges de Selve to Francis I, Venice, 5 July 1536 (BnF fr. 3045 ff. 42–49, no. 31)
 
 Reading of the cipher passages, in the flow of the letter. Clear text in [brackets], cipher in plain type.
 Per-sign file: `R4232_signs.txt` (1,448 signs; 99.1% of non-null signs read). Line-by-line work: `work/v84.md` …
@@ -462,7 +462,7 @@ may bring.
 13 single signs (blots, corrections under the ruling, a slip Ƶ, a struck sign) — none alters the sense; the name
 code &quot;/ X ʒ X / X&quot; (6 signs) is read only through the gloss; the day numeral of La Forest&#x27;s letter is copied by the
 glossator unresolved; one crossed sign before &quot;de la Forest&quot; is taken as an abbreviation for &quot;sieur&quot; (probable).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/READING_R4232_en.md">READING_R4232_en.md</a></p><pre>&lt;!-- English translation of READING_R4232.md (Claude Opus 5.5, 23 Oct 2026): the cipher passages of Georges de Selve&#x27;s letter of 5 July 1536 in the flow of the letter, cipher in plain type and the clear text around it in [brackets], as there; […] = clear text not transcribed or unread; (?) doubtful. The contemporary marginal decipherments agree with the reading as noted there. --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/READING_R4232_en.md">READING_R4232_en.md</a></p><pre translate="no">&lt;!-- English translation of READING_R4232.md (Claude Opus 5.5, 23 Oct 2026): the cipher passages of Georges de Selve&#x27;s letter of 5 July 1536 in the flow of the letter, cipher in plain type and the clear text around it in [brackets], as there; […] = clear text not transcribed or unread; (?) doubtful. The contemporary marginal decipherments agree with the reading as noted there. --&gt;
 
 # R4232, Georges de Selve to Francis I, Venice, 5 July 1536 (BnF fr. 3045 ff. 42-49): English translation of the cipher passages
 
@@ -504,7 +504,7 @@ Barbarossa may make.</pre></details>
 <h3>R3697, BnF fr. 3091 f. 25r-v: the struck runs glossed by the King’s decipherer (f. 25r A, B, C1 with the head of C2; f. 25v T2) <span class="st stuck">decoded, not read</span></h3>
 <p>Read from the decipherer’s interlinear and marginal glosses, checked against the struck signs where they separate from the strike: &quot;au marchant&quot;; &quot;ung sansacque cy prochain&quot;; &quot;Il a consumé ses facultez et la plus part de ses amys [...] et grand du T[urc]&quot;; &quot;amiablement pour la charge qu’il a de Vesprim de la guerre en luy&quot;.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/R3697_signs.txt">R3697_signs.txt</a></p><pre># R3697 = BnF fr. 3091 f. 25r-v, Selve to Francis I, Venice, 14 Sept 1535. Cipher passages only.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/R3697_signs.txt">R3697_signs.txt</a></p><pre translate="no"># R3697 = BnF fr. 3091 f. 25r-v, Selve to Francis I, Venice, 14 Sept 1535. Cipher passages only.
 # One character per cipher sign: a-z = value as read; . = null; ? = not read (unread, or under the decipherer&#x27;s strike
 # and not separable on the film scan). Struck runs (sA, sB, sC1-3, T1-T3) carry contemporary glosses; only signs
 # whose shape agrees with the key are counted as read. Sources: work/f25r_pass2.md, f25r_pass3.md, f25v_pass2.md,
@@ -536,7 +536,7 @@ L2   oc.cur.rancesdecasansespecifieraultremententendre
 L3   etlesadvisquilzdonnentautu.rcetquilzluyfontdonner
 L4   parlemarchantsusdict?quandenontquelquefois
 L5   tenuproposcommedeuxdeusscaure.s???????</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/READING_R3697_struck.md">READING_R3697_struck.md</a></p><pre>&lt;!-- R3697 (BnF fr. 3091 f. 25r-v, Selve to Francis I, Venice, 14 Sept 1535): the runs the King&#x27;s decipherer struck
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/READING_R3697_struck.md">READING_R3697_struck.md</a></p><pre translate="no">&lt;!-- R3697 (BnF fr. 3091 f. 25r-v, Selve to Francis I, Venice, 14 Sept 1535): the runs the King&#x27;s decipherer struck
 through and glossed. Built 22 Oct 2026 by Claude Opus 5.5 (re-read, batch mix1) from the decipherer&#x27;s own interlinear
 and marginal glosses, read on the native Gallica film scan (img/native_f27.jpg, native_f28.jpg; work/f25r_pass3.md,
 work/f25v_pass3.md), and checked against the struck signs wherever they separate from the strike (R3697_signs.txt).
@@ -580,7 +580,7 @@ and the g of guerre are lost under the strike or a blot. &quot;l&#x27;entretienn
 Run A: &quot;… to the merchant, of whom I have written to you …&quot;. Run B: &quot;a sanjak-bey near here&quot;. C: &quot;He has consumed his
 means and most of his friends […] and great [man] of the Turk&quot;. T2: &quot;[they treat him] amicably on account of the
 charge he holds of Veszprém, of the war, in him …&quot;.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/READING_R3697_struck.md">READING_R3697_struck.md</a></p><pre>&lt;!-- R3697 (BnF fr. 3091 f. 25r-v, Selve to Francis I, Venice, 14 Sept 1535): the runs the King&#x27;s decipherer struck
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/READING_R3697_struck.md">READING_R3697_struck.md</a></p><pre translate="no">&lt;!-- R3697 (BnF fr. 3091 f. 25r-v, Selve to Francis I, Venice, 14 Sept 1535): the runs the King&#x27;s decipherer struck
 through and glossed. Built 22 Oct 2026 by Claude Opus 5.5 (re-read, batch mix1) from the decipherer&#x27;s own interlinear
 and marginal glosses, read on the native Gallica film scan (img/native_f27.jpg, native_f28.jpg; work/f25r_pass3.md,
 work/f25v_pass3.md), and checked against the struck signs wherever they separate from the strike (R3697_signs.txt).
@@ -624,7 +624,7 @@ and the g of guerre are lost under the strike or a blot. &quot;l&#x27;entretienn
 Run A: &quot;… to the merchant, of whom I have written to you …&quot;. Run B: &quot;a sanjak-bey near here&quot;. C: &quot;He has consumed his
 means and most of his friends […] and great [man] of the Turk&quot;. T2: &quot;[they treat him] amicably on account of the
 charge he holds of Veszprém, of the war, in him …&quot;.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/R3697_struck_en.md">R3697_struck_en.md</a></p><pre>&lt;!-- English of the glossed struck runs of R3697 (READING_R3697_struck.md), 22 Oct 2026, Claude Opus 5.5; same holes. --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/R3697_struck_en.md">R3697_struck_en.md</a></p><pre translate="no">&lt;!-- English of the glossed struck runs of R3697 (READING_R3697_struck.md), 22 Oct 2026, Claude Opus 5.5; same holes. --&gt;
 
 # R3697, struck runs read from the glosses: English
 
@@ -648,13 +648,13 @@ charge he holds of Veszprém, of the war, in him …&quot;.</pre></details>
 <li>Sibling: BnF fr. 3019 f. 97r (<a href="https://gallica.bnf.fr/ark:/12148/btv1b9059994n/f151.item">Gallica btv1b9059994n, view 151</a>).</li>
 <li>E. Charri&egrave;re, <em>N&eacute;gociations de la France dans le Levant</em>, vol. I (Paris, 1848), pp. 265&ndash;320 (<a href="https://gallica.bnf.fr/ark:/12148/bpt6k1145214">Gallica bpt6k1145214</a>): other Selve letters of 1535&ndash;36, not these.</li>
 </ul>
-<p class="muted">Per-sign files, the key as used, the three passes and the notes: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/selve1535"><code>targets/selve1535/</code></a> in the repository.</p>
+<p class="muted">Per-sign files, the key as used, the three passes and the notes: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/selve1535"><code translate="no">targets/selve1535/</code></a> in the repository.</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Manuscript rights: Biblioth&egrave;que nationale de France; images via Gallica</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="r9367.html" rel="prev">&larr; A son to his father 1535 1535</a><a href="r4248.html" rel="next">The f. 85 cipher 1536 1536 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">290 312 343 429 288 291 150 337 429 312 405 337<br>la n ou ve l le c on ve n ti on<br>alphabetical table &middot; a 100 &middot; de 180 &middot; la 290 &middot; pr 357 &middot; t 398 &middot; z 442</div>
+  <div class="cipherstrip" translate="no">290 312 343 429 288 291 150 337 429 312 405 337<br>la n ou ve l le c on ve n ti on<br>alphabetical table &middot; a 100 &middot; de 180 &middot; la 290 &middot; pr 357 &middot; t 398 &middot; z 442</div>
   <p class="kicker">Bonn &rarr; Brussels &middot; numerical syllabary &middot; January&ndash;February 1759 &middot; key recovered from ciphertext-only</p>
   <h1>Gottfried van Swieten to Count Cobenzl, Bonn 1759</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_gottfried-van-swieten.jpg" alt="Gottfried van Swieten" title="Gottfried van Swieten: Portrait by C. Clavereau, 18th century. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Gottfried van Swieten</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_count-cobenzl.jpg" alt="Count Cobenzl" title="Count Cobenzl: Portrait by an unknown artist, 18th century. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Count Cobenzl</figcaption></figure></div><!-- /parties -->
@@ -76,13 +76,13 @@
 <p>In 1759 the digits run on with no separators. They divide into threes, which the lengths of the runs confirm. Four DECODE transcriptions had dropped or doubled digits; those runs were transcribed again from the scans.</p>
 
 <h2 id="method"><span class="num">02</span> Rebuilding the 1759 table</h2>
-<p>The 1759 numbers do not fit the 1757 values of the <a href="swieten1757.html">earlier letter</a>, but if the new table was built the same way, it has a strong constraint: a higher number never stands for an alphabetically earlier syllable. The solver (<code>msolve.py</code>) keeps one inventory index per observed number, sorted, and allows at most two numbers per syllable. It anneals the boundaries against a French character model (<code>fr-1750-nospace</code>, added to the shared <code>lang/</code> registry), with a small bonus per decoded letter. As a control, a 274-group French passage encoded with a random alphabetical table was recovered verbatim. On the real 491 clean groups, one start in eight gave &ldquo;la nouvelle convention on laisse le revenu&hellip; en r&eacute;servant la souverainet&eacute;&hellip; l&rsquo;imp&eacute;ratrice&rdquo;, and the other seven did not.</p>
+<p>The 1759 numbers do not fit the 1757 values of the <a href="swieten1757.html">earlier letter</a>, but if the new table was built the same way, it has a strong constraint: a higher number never stands for an alphabetically earlier syllable. The solver (<code translate="no">msolve.py</code>) keeps one inventory index per observed number, sorted, and allows at most two numbers per syllable. It anneals the boundaries against a French character model (<code translate="no">fr-1750-nospace</code>, added to the shared <code translate="no">lang/</code> registry), with a small bonus per decoded letter. As a control, a 274-group French passage encoded with a random alphabetical table was recovered verbatim. On the real 491 clean groups, one start in eight gave &ldquo;la nouvelle convention on laisse le revenu&hellip; en r&eacute;servant la souverainet&eacute;&hellip; l&rsquo;imp&eacute;ratrice&rdquo;, and the other seven did not.</p>
 <p>The key was then corrected by hand, run by run, against the French sentence each run sits in. For example, &ldquo;avant que les campagnes soient garnies, <em>on ne songe pas &agrave; faire des magazins</em>, si ce n&rsquo;est <em>aux d&eacute;pens des &Eacute;tats de l&rsquo;Empire qui</em> sont enti&egrave;rement &eacute;puis&eacute;s&rdquo;. The end of the table falls into place: x 438/439, y 441, z 442. So do word entries filed in their alphabetical slot: nous, pour, qui, roi, comte.</p>
 <figure data-credit="Archives g&eacute;n&eacute;rales du Royaume, Brussels, Secr&eacute;tairerie d&rsquo;&Eacute;tat et de Guerre inv. 1236 f. 344, via DECODE R956"><img src="swieten1759_r956.jpg" alt="Handwritten French lines with long runs of digits between the words" loading="lazy"><figcaption>R956, f.&nbsp;344: runs of unseparated digits inside the clear text (&ldquo;le grand principe paro&icirc;t &ecirc;tre de faire 392 135 133 389 385 403&hellip;&rdquo; = <em>subsister l&rsquo;arm&eacute;e du roi y sans qu&rsquo;il en co&ucirc;te un sou</em>). <span class="credit">Image: Archives g&eacute;n&eacute;rales du Royaume, Brussels, Secr&eacute;tairerie d&rsquo;&Eacute;tat et de Guerre inv. 1236 f. 344, via DECODE R956.</span></figcaption></figure>
 
 <h2 id="r957"><span class="num">03</span> Bonn, 14 January 1759</h2>
 <figure class="creveal" data-src="reveal/swieten1759.json"></figure>
-<p>The fourth DECODE image of R957, never opened before, is a <strong>contemporary decipherment of this passage</strong> on a separate leaf in another hand; the decipherer wrote <em>232</em> above <em>France</em>. Aligned group by group with the figures (23 October 2026), it agrees word for word once seven values of the table rebuilt here are corrected, each at every occurrence: 232 <em>France</em>, 327 <em>oc</em>, 131 <em>ay</em>, 170 <em>cr</em>, 323 <em>o</em>, 440 <em>y</em>, 316 <em>ni</em>; 327 and 440 close two of the table&rsquo;s order breaks. One group is the encipherer&rsquo;s slip (357 <em>pr</em> for <em>-on</em> in <em>supposition</em>). The table was rebuilt from the ciphertext before the decipherment was seen; the decipherment now confirms it. The passage (<code>R957_reading.md</code>, English <code>R957_en.md</code>):</p>
+<p>The fourth DECODE image of R957, never opened before, is a <strong>contemporary decipherment of this passage</strong> on a separate leaf in another hand; the decipherer wrote <em>232</em> above <em>France</em>. Aligned group by group with the figures (23 October 2026), it agrees word for word once seven values of the table rebuilt here are corrected, each at every occurrence: 232 <em>France</em>, 327 <em>oc</em>, 131 <em>ay</em>, 170 <em>cr</em>, 323 <em>o</em>, 440 <em>y</em>, 316 <em>ni</em>; 327 and 440 close two of the table&rsquo;s order breaks. One group is the encipherer&rsquo;s slip (357 <em>pr</em> for <em>-on</em> in <em>supposition</em>). The table was rebuilt from the ciphertext before the decipherment was seen; the decipherment now confirms it. The passage (<code translate="no">R957_reading.md</code>, English <code translate="no">R957_en.md</code>):</p>
 <blockquote><p>&hellip; de l&rsquo;administration; la nouvelle Convention laisse les Revenus à la France en reservant la Souveraineté à l&rsquo;Imperatrice. On procede toujours de la part des français dans cette Supposition, sans que nous ayons aucun ordre de la Cour a ce sujet; cela cause beaucoups de mesintelligences. On vient de la part de la france de mettre en possession de la principauté de Moeurs le Prince de Croÿ, qui y forme des pretensions, sans prevenir seulement l&rsquo;Imperatrice, qui en est souveraine.</p></blockquote>
 <p>The September decode had &ldquo;On promet de toujours&rdquo;, &ldquo;la [G&hellip;]&rdquo; and &ldquo;le prince de Con[&hellip;] [&hellip;] qui vous formez&rdquo; at these places.</p>
 <p>The Prussian lands on the Lower Rhine (Gueldre, Moers) were in French and Austrian hands from 1757. The passage records a convention that left their revenues to one party and the sovereignty to Maria Theresa. It also reports that the French have put the Prince of Cro&yuml; in possession of Moers, which he claimed, without informing her. The corrected values also give two names in the letter of 4 February: <em>Crillon</em> and <em>Dumenil</em>.</p>
@@ -105,9 +105,9 @@
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>R957, ff. 327-328, Bonn, 14 Jan 1759</h3>
 <p>Gottfried van Swieten at Bonn to Count Cobenzl at Brussels: the new convention leaves the revenues to France while reserving sovereignty to the Empress; the French act on it without any order from the court, causing much ill feeling; on France&#x27;s behalf the Prince de Croÿ, who has claims to it, has been put in possession of the principality of Moers without the Empress, its sovereign, being told.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/swieten1759/cipher/R957.txt">R957.txt</a></p><pre>290 312 343 429 288 291 150 337 429 312 405 337 290 281 388 292 376 429 313 424 103 290 232 205 376 388 373 428 313 399 290 383 343 429 375 275 193 403 102 287 273 352 375 408 267 194
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/swieten1759/cipher/R957.txt">R957.txt</a></p><pre translate="no">290 312 343 429 288 291 150 337 429 312 405 337 290 281 388 292 376 429 313 424 103 290 232 205 376 388 373 428 313 399 290 383 343 429 375 275 193 403 102 287 273 352 375 408 267 194
 337 357 327 192 180 398 343 263 343 374 383 180 290 348 120 400 181 231 116 152 281 178 312 383 150 212 403 384 423 355 389 405 357 386 313 384 368 317 424 131 337 385 127 150 422 339 185 193 180 290 164 414 373 103 157 392 263 212 157 290 152 424 193 140 127 164 423 180 304 275 400 202 293 241 313 159 337 430 205 399 180 290 348 120 399 180 290 232 180 303 398 399 376 205 355 384 388 385 389 337 180 290 357 275 162 348 127 403 180 307 213 373 384 291 357 275 157 180 170 323 441 370 440 228 373 303 181 357 212 205 389 337 384 386 313 383 357 193 429 316 373 384 213 291 303 312 399 289 273 352 375 398 378 157 370 205 211 399 385 343 429 375 265 315</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/swieten1759/R957_reading.md">R957_reading.md</a></p><pre># R957: van Swieten to Cobenzl, Bonn, 14 January 1759 (ARA Brussels, SEG inv.nr. 1236, ff. 327-328), reading of the cipher passage
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/swieten1759/R957_reading.md">R957_reading.md</a></p><pre translate="no"># R957: van Swieten to Cobenzl, Bonn, 14 January 1759 (ARA Brussels, SEG inv.nr. 1236, ff. 327-328), reading of the cipher passage
 
 Re-read 23 Oct 2026 (Claude Opus 5.5, REREAD_BRIEF batch b36); log `R957_reread_log.md`. **The cipher passage rests on
 its contemporary decipherment**, a separate leaf in another hand filed with the letter (DECODE R957, fourth image,
@@ -138,7 +138,7 @@ en est souveraine.
   *Sa*, struck it, and wrote *supposition sans*. The reading follows the decipherment; the figure is an encipherer&#x27;s
   slip.
 - Look-alike letters: 0 (the reading follows the decipherer&#x27;s hand, checked against the figures).</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/swieten1759/R957_decipherment.txt">R957_decipherment.txt</a></p><pre># R957 (ARA Brussels, SEG inv.nr. 1236, ff. 327-328), van Swieten to Cobenzl, Bonn, 14 Jan 1759: the contemporary
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/swieten1759/R957_decipherment.txt">R957_decipherment.txt</a></p><pre translate="no"># R957 (ARA Brussels, SEG inv.nr. 1236, ff. 327-328), van Swieten to Cobenzl, Bonn, 14 Jan 1759: the contemporary
 # decipherment of the cipher passage, a separate leaf in another hand, DECODE image IMG_R957_I4985_P4 (fourth image of
 # the record; not opened before 23 Oct 2026). Transcribed 23 Oct 2026 by Claude Opus 5.5 (REREAD_BRIEF b36), line by
 # line as written; [struck: ...] = struck through by the decipherer; ^232^ = the number written above the word.
@@ -151,7 +151,7 @@ coups de mesintelligences, on [struck: vin] vient de la part de la france
 de mettre en possession de la [struck: princi] principauté de Moeurs
 Le Prince de Croÿ qui y forme des pretensions sans prevenir
 seulement L&#x27;Imperatrice, qui en est souveraine.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/swieten1759/READING.md">READING.md</a></p><pre># Van Swieten to Cobenzl, 1759: readings
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/swieten1759/READING.md">READING.md</a></p><pre translate="no"># Van Swieten to Cobenzl, 1759: readings
 
 Cipher in brackets «…»; clear text of the letter around it in roman. Doubtful words marked (?), unread groups [n].
 
@@ -191,7 +191,7 @@ général des lo-g-is de Vaut. 300 lies between 299 ma and 303 me (mar… or a w
 after 293 li (lo); 238 before 239 g (a second g; &quot;ge&quot; would stand ahead of g and of 240 ga, 241 ge). Each number
 occurs once.
 The officer is probably François-Eugène de Vault (1717-1790); his post in 1759 is not verified.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/swieten1759/R957_reading.md">R957_reading.md</a></p><pre># R957: van Swieten to Cobenzl, Bonn, 14 January 1759 (ARA Brussels, SEG inv.nr. 1236, ff. 327-328), reading of the cipher passage
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/swieten1759/R957_reading.md">R957_reading.md</a></p><pre translate="no"># R957: van Swieten to Cobenzl, Bonn, 14 January 1759 (ARA Brussels, SEG inv.nr. 1236, ff. 327-328), reading of the cipher passage
 
 Re-read 23 Oct 2026 (Claude Opus 5.5, REREAD_BRIEF batch b36); log `R957_reread_log.md`. **The cipher passage rests on
 its contemporary decipherment**, a separate leaf in another hand filed with the letter (DECODE R957, fourth image,
@@ -222,7 +222,7 @@ en est souveraine.
   *Sa*, struck it, and wrote *supposition sans*. The reading follows the decipherment; the figure is an encipherer&#x27;s
   slip.
 - Look-alike letters: 0 (the reading follows the decipherer&#x27;s hand, checked against the figures).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/swieten1759/R957_en.md">R957_en.md</a></p><pre># R957: van Swieten to Cobenzl, Bonn, 14 January 1759, cipher passage, English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/swieten1759/R957_en.md">R957_en.md</a></p><pre translate="no"># R957: van Swieten to Cobenzl, Bonn, 14 January 1759, cipher passage, English
 
 Translation of `R957_reading.md` (23 Oct 2026, Claude Opus 5.5, batch b36).
 
@@ -234,7 +234,7 @@ causes a great deal of ill feeling. On France&#x27;s behalf the Prince de Croÿ,
 possession of the principality of Moers, without so much as informing the Empress, who is its sovereign.</pre></details>
 <h3>R956, ff. 344-345, Bonn, 4 Feb 1759</h3>
 <p>On Soubise&#x27;s army: no magazines are being made except at the expense of the exhausted Estates of the Empire, the principle being to keep the King&#x27;s army without its costing a sou; the contributions of Guelders paid for his army and money was sent to Contades&#x27; army for winter quarters.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/swieten1759/cipher/R956.txt">R956.txt</a></p><pre>337 315 384 337 241 348 123 102 220 111 376 181 299 240 442 275 385
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/swieten1759/cipher/R956.txt">R956.txt</a></p><pre translate="no">337 315 384 337 241 348 123 102 220 111 376 181 299 240 442 275 385
 127 439 180 348 205 283 181 212 124 385 180 289 203 354 376 370
 392 135 133 389 385 403 373 288 120 303 194 188 379 441 386 313 384 366 271 205 151 343 403 422 384 343
 291 348 378 312 157 147 100 126 148
@@ -253,7 +253,7 @@ possession of the principality of Moers, without so much as informing the Empres
 348 289 111 313 400 403 384 228 313 180 211 181 212 124 385
 292 339 176 376 385 180 290 151 343 373
 291 166 180 349 210 241 313</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/swieten1759/READING.md">READING.md</a></p><pre># Van Swieten to Cobenzl, 1759: readings
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/swieten1759/READING.md">READING.md</a></p><pre translate="no"># Van Swieten to Cobenzl, 1759: readings
 
 Cipher in brackets «…»; clear text of the letter around it in roman. Doubtful words marked (?), unread groups [n].
 
@@ -293,7 +293,7 @@ général des lo-g-is de Vaut. 300 lies between 299 ma and 303 me (mar… or a w
 after 293 li (lo); 238 before 239 g (a second g; &quot;ge&quot; would stand ahead of g and of 240 ga, 241 ge). Each number
 occurs once.
 The officer is probably François-Eugène de Vault (1717-1790); his post in 1759 is not verified.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/swieten1759/R956_en.md">R956_en.md</a></p><pre>&lt;!-- English translation of the R956 section of READING.md (Claude Opus 5.5, 23 Oct 2026): the cipher runs of R956 (in « ») in full, the clear text around them in extract (… = clear text not transcribed). Same holes: [147 100 126 148] and [290 313 316 313 373] = number groups not read; (I) = inferred, (?) doubtful. An excerpt. --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/swieten1759/R956_en.md">R956_en.md</a></p><pre translate="no">&lt;!-- English translation of the R956 section of READING.md (Claude Opus 5.5, 23 Oct 2026): the cipher runs of R956 (in « ») in full, the clear text around them in extract (… = clear text not transcribed). Same holes: [147 100 126 148] and [290 313 316 313 373] = number groups not read; (I) = inferred, (?) doubtful. An excerpt. --&gt;
 
 # R956, Gottfried van Swieten to Count Cobenzl, Bonn, 4 February 1759 (ff. 344-345): English translation
 
@@ -329,7 +329,7 @@ acting in accordance with the interests of the common cause …</pre></details>
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Archives g&eacute;n&eacute;rales du Royaume, Brussels, via DECODE</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="acciaiuoli1757.html" rel="prev">&larr; Acciaiuoli 1758 1758&ndash;60</a><a href="mercier1761.html" rel="next">La Touche and La Rivi&egrave;re 1761 1761 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-  <div class="cipherstrip">&Phi; | &#8866;&#937;&#775;&#937;&#547;&#8760;&#8867; | 231 | &#42903; | &#247;&#8978;&#775; | &hellip;<br>il signor [231] m&rsquo;ha mandato a domandare &hellip; il patiarchato per s&eacute;<br>read &middot; six name codes open</div>
+  <div class="cipherstrip" translate="no">&Phi; | &#8866;&#937;&#775;&#937;&#547;&#8760;&#8867; | 231 | &#42903; | &#247;&#8978;&#775; | &hellip;<br>il signor [231] m&rsquo;ha mandato a domandare &hellip; il patiarchato per s&eacute;<br>read &middot; six name codes open</div>
   <p class="kicker">Prinkipo &rarr; Constantinople &middot; homophonic symbol cipher &middot; 8 October 1637</p>
   <h1>Fra Guglielmo Vizani to the Comte de C&eacute;sy, 1637</h1>
   <p class="sub">BnF Fran&ccedil;ais 16158, ff. 292&ndash;294. A letter from Prinkipo, off Constantinople, to the French ambassador, with eight cipher lines. The project listed it as having no transcription. On 1 October 2026 Satoru sent a transcription, a key and a reading, made with Claude; this page checks them against the image and against shuffled keys.</p>
@@ -95,7 +95,7 @@
 <p><b>How.</b> Satoru cut the eight cipher lines from the Gallica image (8674&times;6462 px), transcribed them sign by sign, and had Claude recover the key from the ciphertext alone by simulated annealing scored against Italian four-grams with word boundaries (a model built from <i>I promessi sposi</i>) and a word list. Five of eight random seeds converged on the same reading. No existing key or decipherment was used.</p>
 <p><b>Checks here</b>, none of which repeats his search:</p>
 <ul>
-<li><b>Re-decoding.</b> His key applied to his 54 transcribed words (<code>dec.py</code>) gives the plain he lists for 46 of 48 words. The other two, both <i>monsignor</i>, lose an s and an n in his glyph strings (an abbreviation, or a slip in the transcription); the rest are name codes.</li>
+<li><b>Re-decoding.</b> His key applied to his 54 transcribed words (<code translate="no">dec.py</code>) gives the plain he lists for 46 of 48 words. The other two, both <i>monsignor</i>, lose an s and an n in his glyph strings (an abbreviation, or a slip in the transcription); the rest are name codes.</li>
 <li><b>A control.</b> The decode scores &minus;1.78 per letter under a model of sixteenth-century Italian, against &minus;4.30 for the best of 200 keys of the same shape with the letters shuffled among the sign classes (mean &minus;5.30). Under a modern Italian model the figures are &minus;1.99 against &minus;6.66.</li>
 <li><b>The image.</b> The first nine words of line 1 (<i>il signor [231] m&rsquo;ha mandato &hellip;</i>) agree with the Gallica image sign by sign, and the code 64 before the second <i>Monsignor Beria</i> is two digits, as he has it. The rest was not compared by eye.</li>
 <li><b>His own controls</b>, taken from his page and not re-run: 16 synthetic ciphers of the same size were solved in 15 cases (97&ndash;100% of letters); 24 shuffles of the text scored &minus;1294 to &minus;1236 against &minus;1073.7 for the real one.</li>
@@ -115,7 +115,7 @@
 <h3>BnF fr. 16158 f. 292, Vizani to the Comte de Césy, Prinkipo, 8 Oct 1637 <span class="st partial">read in part</span></h3>
 <p>Fra Guglielmo Vizani writes from Prinkipo to the French ambassador at Constantinople: a person in code asks whether 4,000 scudi were promised by the ambassador&#x27;s order, and &#x27;Monsignor Beria&#x27; (by Satoru&#x27;s identification Cyril Kontaris of Veroia) is close to obtaining the Patriarchate and hopes for a change within two months; Kontaris replaced Lucaris in June 1638.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (93% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vizani1637/cipher_words.tsv">cipher_words.tsv</a></p><pre># Vizani to the Comte de Cesy, Prinkipo 8 Oct 1637, BnF fr. 16158 f. 292 (Gallica btv1b9061541x, view 295): the 53 cipher words, glyph by glyph.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vizani1637/cipher_words.tsv">cipher_words.tsv</a></p><pre translate="no"># Vizani to the Comte de Cesy, Prinkipo 8 Oct 1637, BnF fr. 16158 f. 292 (Gallica btv1b9061541x, view 295): the 53 cipher words, glyph by glyph.
 # Source: Satoru, https://satoru.net/crypt/vizani/ (published 1 Oct 2026), transcribed with Claude from the Gallica image; glyph shapes are approximated with look-alike characters.
 # columns: cipher word (signs run together; digits = name codes) &lt;TAB&gt; plain as read on that page &lt;TAB&gt; flag (n = name code, q = uncertain)
 Φ	il	
@@ -172,7 +172,7 @@ hυ⌒̇ꝏ⊣	quattr(o)
 227	[227]	n
 ẻ	è	
 8ȼ+ʂ⊣π8ƵΩ̇ꝗ∸	incertissimo</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vizani1637/texts/f292_decryption.md">f292_decryption.md</a></p><pre># Vizani to Césy, Prinkipo 8 Oct 1637, BnF fr. 16158 f. 292: decipherment
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vizani1637/texts/f292_decryption.md">f292_decryption.md</a></p><pre translate="no"># Vizani to Césy, Prinkipo 8 Oct 1637, BnF fr. 16158 f. 292: decipherment
 
 Transcription, key and reading by Satoru (https://satoru.net/crypt/vizani/, 1 Oct 2026); checked here.
 
@@ -194,7 +194,7 @@ il signor [231] m ha mandato a domandare se ? quattr mila scuti ? a [31] di moni
 
 Bracketed numbers are name codes with no key material.</pre></details>
 <p class="ftext">Decryption: <a href="https://satoru.net/crypt/vizani/">vizani</a></p>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vizani1637/texts/f292_decryption.md">f292_decryption.md</a></p><pre># Vizani to Césy, Prinkipo 8 Oct 1637, BnF fr. 16158 f. 292: decipherment
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vizani1637/texts/f292_decryption.md">f292_decryption.md</a></p><pre translate="no"># Vizani to Césy, Prinkipo 8 Oct 1637, BnF fr. 16158 f. 292: decipherment
 
 Transcription, key and reading by Satoru (https://satoru.net/crypt/vizani/, 1 Oct 2026); checked here.
 
@@ -215,7 +215,7 @@ il signor [231] m ha mandato a domandare se ? quattr mila scuti ? a [31] di moni
 ```
 
 Bracketed numbers are name codes with no key material.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vizani1637/texts/f292_en.md">f292_en.md</a></p><pre>&lt;!-- English translation of the reading in texts/f292_decryption.md (Claude Opus 5.5, 23 Oct 2026): Satoru&#x27;s reading of the cipher of BnF fr. 16158 f. 292 with the clear words around it, checked here with key.json. An excerpt (… = text left out there). Same holes: [231], [31], [36], [198], [227] name codes with no key material, [64?] doubtful, [?] unread. --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vizani1637/texts/f292_en.md">f292_en.md</a></p><pre translate="no">&lt;!-- English translation of the reading in texts/f292_decryption.md (Claude Opus 5.5, 23 Oct 2026): Satoru&#x27;s reading of the cipher of BnF fr. 16158 f. 292 with the clear words around it, checked here with key.json. An excerpt (… = text left out there). Same holes: [231], [31], [36], [198], [227] name codes with no key material, [64?] doubtful, [?] unread. --&gt;
 
 # Vizani to the Comte de Césy, Prinkipo, 8 October 1637 (BnF fr. 16158 f. 292): English translation
 
@@ -241,7 +241,7 @@ nothing can be said by letter while the plague lasts.</pre></details>
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Images: Biblioth&egrave;que nationale de France, via Gallica</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="heusner1637.html" rel="prev">&larr; Heusner 1637 1637</a><a href="genes1638.html" rel="next">Siruela to Philip IV 1638 1638 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

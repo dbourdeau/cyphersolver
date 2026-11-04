@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">d Pg SsnOs oNd ogP og&part;ZgZg<br>y la gente muy mal mandada<br>g = a &middot; S = g &middot; T = z &middot; O = t &middot; s = e</div>
+  <div class="cipherstrip" translate="no">d Pg SsnOs oNd ogP og&part;ZgZg<br>y la gente muy mal mandada<br>g = a &middot; S = g &middot; T = z &middot; O = t &middot; s = e</div>
   <p class="kicker">Tordesillas &rarr; Charles V at Worms &middot; homophonic letter substitution with dotted sigla &middot; 10 December 1520 &middot; contributed</p>
   <h1>Lope Hurtado de Mendoza to Charles V, Tordesillas, 10 December 1520</h1>
 <div class="parties"><figure class="party recipient"><img src="portrait_charles-v.jpg" alt="Charles V" title="Charles V: Seated portrait formerly attributed to Titian, 1548. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Charles V</figcaption></figure></div><!-- /parties -->
@@ -76,7 +76,7 @@
 <h2 id="cipher"><span class="num">02</span> The cipher</h2>
 <p>A substitution of single letters by about 37 signs: Latin letters, figures and invented shapes, among them a barred o for <em>t</em>, a cross for <em>s</em>, a 9 for <em>a</em>, a long &#383; for <em>g</em> and a &#8868; for <em>z</em>. The words are kept apart, as in the clear hand. Vowels and a few consonants have more than one sign; the encipherer used them unevenly. Some signs stand for two or three letters: one gives <em>a</em>, <em>l</em> or <em>h</em>, one <em>i</em>, <em>j</em> or <em>y</em>, another <em>e</em>, <em>h</em> or <em>p</em>, so the reading of those signs is settled by the word.</p>
 <p>Persons are written as dotted sigla, <span class="c">&middot;fre&middot;</span>, <span class="c">&middot;lis&middot;</span>, <span class="c">&middot;los&middot;</span>, <span class="c">&middot;lus&middot;</span>, <span class="c">&middot;ym&middot;</span>, short groups between points whose meaning is not in the letter. The last lines of the verso mix cipher with words in ordinary letters (&ldquo;fynes&rdquo;, &ldquo;lo primero&rdquo;, &ldquo;vra altza&rdquo;, &ldquo;el bien del rreyno&rdquo;, &ldquo;creo q no&rdquo;), and cipher and clear read on as one text.</p>
-<p>The transcription names each sign by a single character of a working notation (<code>targets/lopehurtado1520/key_K4.tsv</code>); the names are labels for shapes, not values. In that notation the key is:</p>
+<p>The transcription names each sign by a single character of a working notation (<code translate="no">targets/lopehurtado1520/key_K4.tsv</code>); the names are labels for shapes, not values. In that notation the key is:</p>
 <table>
 <tr><th>letter</th><th>signs (labels)</th><th>letter</th><th>signs (labels)</th></tr>
 <tr><td>a</td><td>g, F*</td><td>n</td><td>n, &phi;, &part;*</td></tr>
@@ -99,34 +99,34 @@
 <p><strong>Breaking in.</strong> The signs were transcribed from the PARES images in the working notation. The repeated groups that had to be <em>vuestra magestad</em> opened a homophonic letter substitution. A first key, K1, was built from lines 1&ndash;16 of the recto only and frozen, with a SHA-256 hash recorded.</p>
 <p><strong>Held-out lines.</strong> Two stretches of the verso were kept out of the work. Lines 1&ndash;11, transcribed after K1 was frozen, gave 0.747 of their words in a Spanish lexicon under K1, against 0.326 at the 99th percentile of 200 control keys with the values permuted. Lines 11&ndash;17 were transcribed and frozen before any decoding and used to fix no value; the later keys K2 and K4 both read 0.827 of their words, against a median of 0.288, a 99th percentile of 0.519 and a maximum of 0.596 for the controls.</p>
 <p><strong>The full reading.</strong> The rest was deciphered word by word, deciding between near-identical signs against a Spanish lexicon (the <em>Quijote</em> and Danvila&rsquo;s documents). K3 became K4 when one value, &#383; as <em>s</em>, was withdrawn after Dudout&rsquo;s own look at twelve doubtful signs on a sheet of sign shapes, made without any reading offered; that look also settled <em>holgado</em>, <em>cardenal</em>, <em>necesidad</em> and <em>oficio</em>.</p>
-<p><strong>The statistical check here.</strong> The project&rsquo;s validator (<code>docs/_validate.py</code>) scores the reading of 3,432 signs (35 sign types) with a four-gram model of Golden Age Spanish, as mean log-probability per letter: the reading gives &minus;2.139, random keys of the same shape &minus;5.439 on average, and a key annealed onto the shuffled ciphertext at best &minus;3.118. Verdict: pass.</p>
+<p><strong>The statistical check here.</strong> The project&rsquo;s validator (<code translate="no">docs/_validate.py</code>) scores the reading of 3,432 signs (35 sign types) with a four-gram model of Golden Age Spanish, as mean log-probability per letter: the reading gives &minus;2.139, random keys of the same shape &minus;5.439 on average, and a key annealed onto the shuffled ciphertext at best &minus;3.118. Verdict: pass.</p>
 
 <h2 id="reading"><span class="num">04</span> The decipherment</h2>
 <figure class="creveal" data-src="reveal/lopehurtado1520.json"></figure>
 <p class="legend">Brice Dudout&rsquo;s text, spelling of the letter kept, punctuation and accents added. {x} probable reading; &lsaquo;&hellip;&rsaquo; unresolved; [x] restored from the sense; &middot;x&middot; a dotted siglum, not identified.</p>
 <h3>The ·fre· and the Queen</h3>
-<blockquote lang="es">
+<blockquote lang="es" translate="no">
 El ·fre· est&aacute; ganoso de asiento con los de la Junta como quiera que fuese; dize que lo haze por el mal aparejo que {ay} de sostener la gente que aqu&iacute; est&aacute;. Hizo a la reina que, delante del ·y· de muchos cavalleros, dixiese que mandava que toda la gente de la Junta se derramase, e mand&oacute;lo tomar por testimonio para enviar a requerir con &eacute;l a don Pedro Gir&oacute;n ·y· a las ciudades. [&hellip;] E aun estando as&iacute;, dixo que a la reina ten&iacute;a por cuerda.
 </blockquote>
 <blockquote>
 The ·fre· wants a settlement with the men of the Junta at any price; he says he does so because of the poor means {there are} of maintaining the troops here. He had the Queen say, before the ·y· and many knights, that she ordered all the Junta&rsquo;s troops to disperse, and had this recorded as testimony to summon don Pedro Gir&oacute;n ·y· the cities with it. [&hellip;] And even so, he said that he held the Queen to be of sound mind.
 </blockquote>
 <h3>The Marquis of Denia</h3>
-<blockquote lang="es">
+<blockquote lang="es" translate="no">
 El marqu&eacute;s de Denia viene aqu&iacute; con m&aacute;s pasi&oacute;n de la que era menester [&hellip;]; est&aacute; muy mal quisto a muchos: les ha pesado tanto de su venida como de averlo saqueado. [&hellip;] Dizen que trae determinaci&oacute;n de revolver todo.
 </blockquote>
 <blockquote>
 The Marquis of Denia comes here with more passion than was needed; he is much disliked by many: his coming has grieved them as much as having sacked the town. [&hellip;] They say he comes resolved to overturn everything.
 </blockquote>
 <h3>The vacant sees</h3>
-<blockquote lang="es">
+<blockquote lang="es" translate="no">
 El obispado de Ja&eacute;n e otra qualquier vacante que oviere deve vuestra alteza detener [&hellip;], porque ac&aacute; an muchos que esperan que vuestra magestad les har&aacute; merced, y esta esperan&ccedil;a los obliga a servir; quando se d&eacute; a uno, se estragar&aacute; la voluntad de los otros. El Rey Cat&oacute;lico, quando estuvo en N&aacute;poles, tuvo muchos obispados y encomiendas y tenencias sin proveer hasta su venida.
 </blockquote>
 <blockquote>
 The see of Ja&eacute;n, and any other vacancy that may occur, Your Highness should hold back [&hellip;], for there are many here who hope Your Majesty will grant them favour, and this hope binds them to serve; when it is given to one, the goodwill of the others will be spoiled. The Catholic King, when he was in Naples, kept many sees, commanderies and keeperships unfilled until his return.
 </blockquote>
 <h3>The army</h3>
-<blockquote lang="es">
+<blockquote lang="es" translate="no">
 Como ay aqu&iacute; muchos se&ntilde;ores, son mal de concertar para lo que es menester, especial ·fre· e el conde de Benavente [&hellip;]; e deste e{x}&eacute;rcito y la gente muy mal mandada, como es de muchos, que es el mayor temor que tenemos.
 </blockquote>
 <blockquote>
@@ -160,7 +160,7 @@ Since there are many lords here, they agree badly on what must be done, especial
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>Lope Hurtado de Mendoza to Charles V, Tordesillas, 10 December 1520 (AGS PTR,LEG,2,36,8)</h3>
 <p>Five days after Tordesillas was retaken from the Comuneros, Lope Hurtado de Mendoza, Charles V’s confidant with the governors of Castile, wrote two letters on the same day. One, in plain text, tells of the sack of the town and the capture of the Junta’s procurators; Danvila printed it in the late nineteenth century. The other, entirely in cipher, says what could not be written openly: the Admiral hesitates to govern, the Marquis of Denia is hated, the army is “very badly commanded”, and the see of Jaén and every vacancy should be held back to keep loyalties. An archivist’s slip in the bundle said the key was to be found in a letter of 23 September; it was not. We rebuilt it from the letter itself.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lopehurtado1520/transcription.txt">transcription.txt</a></p><pre># AGS PTR,LEG,2,36,8, f. 1r-1v: one line per manuscript line (r = recto, v = verso).
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lopehurtado1520/transcription.txt">transcription.txt</a></p><pre translate="no"># AGS PTR,LEG,2,36,8, f. 1r-1v: one line per manuscript line (r = recto, v = verso).
 # One character = one sign (labels in key_K4.tsv); &lt;xx&gt; = clear text in ordinary letters; ·xx· = dotted code group;
 # ? after a sign = doubtful shape; Y = 8-shaped sign not settled (d/i); X = ȸ/ƀ shape not settled; W = illegible word end.
 r01	·sP ·fre· stOg Sgnwtw Zsgt8snOw 7wn Pwt ZsPg dNnOg
@@ -249,7 +249,7 @@ v38	VtOwt Srg∂Zst td gqs∂‹…› · Odsnsn Orst &lt;fynes&gt; · &lt;lo pr
 v39	Pst 7NoBPs · d · ZstBNst BwZsr · &lt;vra altza&gt; / PNsSw &lt;el bien de rreyno&gt; /
 v40	td &lt;ellos quedasen&gt; tdn · ∂s7stdZgZ · &lt;creo q no&gt; Pst Bstgrdg &lt;de q vra&gt;
 v41	&lt;magestad&gt; Pst ONqdsts /</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lopehurtado1520/decryption.txt">decryption.txt</a></p><pre># line	transcription
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lopehurtado1520/decryption.txt">decryption.txt</a></p><pre translate="no"># line	transcription
 #	reading of the line (key K4; {x} probable, ‹x› unresolved, [x] restored by sense; spelling kept)
 r01	·sP ·fre· stOg Sgnwtw Zsgt8snOw 7wn Pwt ZsPg dNnOg
 	el ·fre· esta ganoso de asiento con los de la junta
@@ -423,7 +423,7 @@ v40	td &lt;ellos quedasen&gt; tdn · ∂s7stdZgZ · &lt;creo q no&gt; Pst Bstgrd
 	si &lt;ellos quedasen&gt; sin necesidad. &lt;Creo q no&gt; les pesaria &lt;de q vra&gt;
 v41	&lt;magestad&gt; Pst ONqdsts /
 	&lt;magestad&gt; les tuviese.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lopehurtado1520/reading.md">reading.md</a></p><pre># Lope Hurtado de Mendoza to Charles V, 10 December 1520: established text (Spanish)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lopehurtado1520/reading.md">reading.md</a></p><pre translate="no"># Lope Hurtado de Mendoza to Charles V, 10 December 1520: established text (Spanish)
 
 {x} probable; ‹…› unresolved; [x] restored by sense; ·x· code group.
 
@@ -444,7 +444,7 @@ El conde de Haro haze el oficio de capitán, como las otras cosas. Como ay aquí
 a unos parece que {e} sería bien que el cardenal y algunos del Consejo y contadores viniesen aquí, y que de aquí se usase de justicia e de hazienda ; y que el condestable [e]stuviese [en] lo de Burgos con aquellas montañas, e a otros que este lugar ‹…› proveído, y con la gente que era menester para guardarle ; y que los governadores y Consejo e contadores se junten en Burgos. Para esto ay un gran inconveniente : estar el marqués de Denia, tan mal quisto aquí de los criados de ·lis· y de todo el {pueblo} ; e si {se da a otro}, agraviar sería. Vuestra alteza lo mande mirar todo e mandar proveerlo, que es más a su ‹…› servicio.
 
 Estos grandes, si a r‹…›, tienen tres fynes: lo primero, lo q[ue] les cumple ; y después, poder [con] vra altza ; luego, el bien del rreyno, si ellos quedasen sin necesidad. Creo q no les pesaría de q vra magestad les tuviese.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lopehurtado1520/translation.md">translation.md</a></p><pre># English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lopehurtado1520/translation.md">translation.md</a></p><pre translate="no"># English translation
 
 The ·fre· wants a settlement with the men of the Junta at any price; he says he does so because of the poor means {there are} of maintaining the troops here. He had the Queen say, before the ·y· and many knights, that she ordered all the Junta’s troops to disperse, and had this recorded as testimony to summon don Pedro Girón ·y· the cities with it. The Count of Benavente, the Marquis of Astorga, the Count of Miranda and the Grand Commander were not there; on learning it, ·ym· at once set about remedying it. So they went to the ·fre·, and the testimony was torn up ‹…›, not by his vote: he stood in between. And even so, he said that he held the Queen to be of sound mind, and ‹…› a thousand times a day, so that {I fear} he may one day do something about the agreements that would be very harmful.
 
@@ -481,7 +481,7 @@ These grandees, if they ‹…›, have three aims: first, what suits them; then
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Manuscript images: Archivo General de Simancas (PARES); text and translation: Brice Dudout, CC BY 4.0</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="adrian1520.html" rel="prev">&larr; Adrian of Utrecht to Charles V 1520 1520</a><a href="adrian1521.html" rel="next">Adrian 1521 1521 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

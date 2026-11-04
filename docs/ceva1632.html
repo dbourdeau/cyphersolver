@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">17 19 10 31 30 03 10 45 59 45 &middot; 495 &middot; 03 35 19 &middot; 04 45 59 35 10 31 57 31 03 19 &middot; 19 57 57 19 &middot; 830<br>i a c o n o s c e r e &middot; quanto &middot; s i a &middot; p e r i c o l o s a &middot; a l l a &middot; francia<br>6 = word break &middot; 2x = null &middot; 19|38|47 = a &middot; 44 = che &middot; 474 = mente &middot; 830 = Francia</div>
+  <div class="cipherstrip" translate="no">17 19 10 31 30 03 10 45 59 45 &middot; 495 &middot; 03 35 19 &middot; 04 45 59 35 10 31 57 31 03 19 &middot; 19 57 57 19 &middot; 830<br>i a c o n o s c e r e &middot; quanto &middot; s i a &middot; p e r i c o l o s a &middot; a l l a &middot; francia<br>6 = word break &middot; 2x = null &middot; 19|38|47 = a &middot; 44 = che &middot; 474 = mente &middot; 830 = Francia</div>
   <p class="kicker">Rome &rarr; Paris &middot; homophonic and syllabic cipher in two-digit figures, with a nomenclator &middot; September and December 1632</p>
   <h1>Francesco Barberini to Nuncio Ceva: the two letters of Francia 346 without a published decipherment</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_francesco-barberini.jpg" alt="Francesco Barberini" title="Francesco Barberini: Portrait, 1624. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Francesco Barberini</figcaption></figure></div><!-- /parties -->
@@ -71,7 +71,7 @@
 
 <h2 id="catalogued"><span class="num">01</span> What was catalogued, and what was there</h2>
 <p>Busta 346 of the Francia series of the Segreteria di Stato holds the originals and ciphers sent from Rome to Ceva during his extraordinary nunciature, 1632 to 1634. DECODE catalogued eleven ciphertexts from it, R74 to R84. The catalogue entry here named five (R75, R77, R78, R82, R84) and scored them by rule from the metadata, unviewed.</p>
-<p>Opening the records changed the problem. Every one of the eleven carries, as an attachment, a key marked <code>#KEY: reconstructed</code>, <code>#TRANSCRIBER NAME: George Lasry</code>, <code>#DATE OF TRANSCRIPTION: October 24, 2020</code>. Every one also carries the same 29,050-byte file of aligned decipherments, covering four letters. So the state of the dossier before this session was:</p>
+<p>Opening the records changed the problem. Every one of the eleven carries, as an attachment, a key marked <code translate="no">#KEY: reconstructed</code>, <code translate="no">#TRANSCRIBER NAME: George Lasry</code>, <code translate="no">#DATE OF TRANSCRIPTION: October 24, 2020</code>. Every one also carries the same 29,050-byte file of aligned decipherments, covering four letters. So the state of the dossier before this session was:</p>
 <table>
 <tr><th>DECODE</th><th>Item</th><th>Date</th><th>Pages</th><th>Before</th></tr>
 <tr><td>R74</td><td>346-1</td><td>7 Sept 1632</td><td>1</td><td>read by Lasry</td></tr>
@@ -83,38 +83,38 @@
 <tr><td>R82</td><td>346-9</td><td>27 [Oct] 1632</td><td>1</td><td>read by Lasry</td></tr>
 <tr><td><b>R84</b></td><td><b>346-11</b></td><td><b>18 Dec 1632</b></td><td><b>2</b></td><td><b>not read</b></td></tr>
 </table>
-<p>Three of the five ciphertexts the catalogue named were therefore already deciphered by Lasry, and two were not. R75 and R84 carry a raw ciphertext transcription and nothing else. Lasry, for his part, left every one of the ninety-five nomenclator elements he met printed as <code>&lt;xxx&gt;</code>; none was given a value.</p>
+<p>Three of the five ciphertexts the catalogue named were therefore already deciphered by Lasry, and two were not. R75 and R84 carry a raw ciphertext transcription and nothing else. Lasry, for his part, left every one of the ninety-five nomenclator elements he met printed as <code translate="no">&lt;xxx&gt;</code>; none was given a value.</p>
 
 <h2 id="system"><span class="num">02</span> The system</h2>
 <p>The key is Lasry&rsquo;s. It was re-derived here from his four aligned decipherments, parsed into 104 line pairs and 179 distinct tokens, which confirms it and settles three points the key note leaves open.</p>
 <table>
 <tr><th>Token</th><th>Value</th></tr>
-<tr><td><code>6</code></td><td>word separator</td></tr>
-<tr><td><code>2x</code></td><td>null &mdash; no pair beginning 2 ever carries plaintext</td></tr>
-<tr><td><code>XY</code></td><td>letter or syllable, 61 codes: three homophones for each vowel, two for most consonants, and groups for <i>al, che, chi, con, da, de, di, et, il, in, io, la, ma, mi, no, per, qu, quel, se, si, st</i></td></tr>
-<tr><td><code>pXY</code></td><td>nomenclator element: one prefix digit followed by an ordinary two-digit code</td></tr>
+<tr><td><code translate="no">6</code></td><td>word separator</td></tr>
+<tr><td><code translate="no">2x</code></td><td>null &mdash; no pair beginning 2 ever carries plaintext</td></tr>
+<tr><td><code translate="no">XY</code></td><td>letter or syllable, 61 codes: three homophones for each vowel, two for most consonants, and groups for <i>al, che, chi, con, da, de, di, et, il, in, io, la, ma, mi, no, per, qu, quel, se, si, st</i></td></tr>
+<tr><td><code translate="no">pXY</code></td><td>nomenclator element: one prefix digit followed by an ordinary two-digit code</td></tr>
 </table>
 <p>First, <b>the figure 6 occurs inside no code</b>, neither in a key pair nor in any of the ninety-five nomenclator elements. Word boundaries in this cipher are therefore certain, which is unusual and is what makes the rest tractable.</p>
 <p>Second, the DECODE key note says the nomenclator elements &ldquo;have 4 digits starting with prefix 4&rdquo;. They have <b>three</b>. Concatenating Lasry&rsquo;s own token stream for 346:1 and diffing it against the original transcription of the same leaf gives a 99.7% match with no dropped prefix; the elements are three digits as they stand. The prefix is 4 in twenty-seven of the ninety-five, but it is also 0, 1, 3, 5, 7, 8 or 9.</p>
-<p>Third, in ninety-one of the ninety-five the two digits after the prefix are themselves a valid key code. The element is a prefix plus an ordinary code, which is exactly why the parse is ambiguous: at most positions a two-digit and a three-digit reading are both legal. Twenty-nine of the hundred pairs are dead (<code>02 05 06 12 16 32 33 36 42 46 52 56 60&ndash;69 72 76 82 86 92 96 99</code>), and meeting one forces the three-digit reading, but that is not enough on its own.</p>
+<p>Third, in ninety-one of the ninety-five the two digits after the prefix are themselves a valid key code. The element is a prefix plus an ordinary code, which is exactly why the parse is ambiguous: at most positions a two-digit and a three-digit reading are both legal. Twenty-nine of the hundred pairs are dead (<code translate="no">02 05 06 12 16 32 33 36 42 46 52 56 60&ndash;69 72 76 82 86 92 96 99</code>), and meeting one forces the three-digit reading, but that is not enough on its own.</p>
 
 <h2 id="method"><span class="num">03</span> Dividing and decrypting the digit stream</h2>
-<p>The decoder works along the digit stream and keeps the several hundred most probable partial decryptions at each position. Every <code>6</code> is taken as a separator; elsewhere the decoder chooses between a two-digit code, a two-digit null and a three-digit element, scored by a character model. Scoring is incremental: the shared <code>lang</code> package&rsquo;s dense model is a flat table of log P(c | previous four characters), so each emitted character costs one array lookup and several hundred candidates are cheap to keep.</p>
-<p>The model matters more than the search. <code>it-cinquecento</code> is Renaissance diplomatic Italian but stops around 1620 and knows nothing of this clerk&rsquo;s hand: one sign for u and v, doubled letters dropped, word division his own. It was interpolated with a model built on 7,693 characters from the dossier itself: the passages the clerk wrote in clear, plus Lasry&rsquo;s plaintext of whichever letters were not under test.</p>
+<p>The decoder works along the digit stream and keeps the several hundred most probable partial decryptions at each position. Every <code translate="no">6</code> is taken as a separator; elsewhere the decoder chooses between a two-digit code, a two-digit null and a three-digit element, scored by a character model. Scoring is incremental: the shared <code translate="no">lang</code> package&rsquo;s dense model is a flat table of log P(c | previous four characters), so each emitted character costs one array lookup and several hundred candidates are cheap to keep.</p>
+<p>The model matters more than the search. <code translate="no">it-cinquecento</code> is Renaissance diplomatic Italian but stops around 1620 and knows nothing of this clerk&rsquo;s hand: one sign for u and v, doubled letters dropped, word division his own. It was interpolated with a model built on 7,693 characters from the dossier itself: the passages the clerk wrote in clear, plus Lasry&rsquo;s plaintext of whichever letters were not under test.</p>
 <p>Calibration is leave-one-document-out against Lasry&rsquo;s four letters: the nomenclator inventory offered for a document is built from the other three only, which is the situation of R75 and R84. Agreement with his own segmentation:</p>
 <table>
 <tr><th>Model</th><th>Tokens</th><th>Nomenclator recall</th><th>Precision</th></tr>
-<tr><td><code>it-cinquecento</code> alone</td><td>0.945</td><td>0.52</td><td>0.70</td></tr>
+<tr><td><code translate="no">it-cinquecento</code> alone</td><td>0.945</td><td>0.52</td><td>0.70</td></tr>
 <tr><td>interpolated, w = 0.6</td><td><b>0.958</b></td><td><b>0.70</b></td><td><b>0.79</b></td></tr>
 </table>
 <p>Per letter, interpolated: 346:1 0.871, 346/4 0.928, 346/5 0.905, 346/9 0.951. The figure to keep in view is the nomenclator recall. Three elements in ten are still missed, and a missed element comes out as two or three plausible Italian letters, with no gap to mark it. Errors in the decipherments below are concentrated there.</p>
-<p>The one independent check is R75&rsquo;s own leaf. A decipherer in 1632 wrote his decipherment between the cipher lines, and the DECODE transcriber copied what was legible of it. It was used for nothing else: neither for the key, the model nor the decoder. On the twenty-four lines where enough survives, <b>1,105 letters, 77.5% agreement</b>, ignoring word division; the last line agrees at 100%. The residue is shared between errors in this decryption and the witness&rsquo;s own illegibility, since the transcriber flagged much of the faded interlinear with <code>?</code> and <code>*</code>.</p>
+<p>The one independent check is R75&rsquo;s own leaf. A decipherer in 1632 wrote his decipherment between the cipher lines, and the DECODE transcriber copied what was legible of it. It was used for nothing else: neither for the key, the model nor the decoder. On the twenty-four lines where enough survives, <b>1,105 letters, 77.5% agreement</b>, ignoring word division; the last line agrees at 100%. The residue is shared between errors in this decryption and the witness&rsquo;s own illegibility, since the transcriber flagged much of the faded interlinear with <code translate="no">?</code> and <code translate="no">*</code>.</p>
 <figure data-credit="Archivio Apostolico Vaticano, Segreteria di Stato, Francia 346 f. 81r, via DECODE R75"><img src="ceva1632_r75_interlinear.jpg" alt="Lines of small digits with a contemporary Italian decipherment written in larger letters between them" loading="lazy"><figcaption>R75 (25 September 1632), f. 81r, left half of four lines in the lower part of the page: the 1632 decipherer&rsquo;s interlinear, <em>&hellip; di guerra saranno sempre in pericolo &hellip; a conoscere quanto sia pericolosa alla Francia &hellip; cominciano hormai a pensar a &hellip;</em>, the witness this decryption was checked against. <span class="credit">Image: Archivio Apostolico Vaticano, Segreteria di Stato, Francia 346 f. 81r, via DECODE R75.</span></figcaption></figure>
 
 <h2 id="r75"><span class="num">04</span> R75: &ldquo;Di Roma li 25 di Settembre 1632&rdquo;</h2>
 <figure class="creveal" data-src="reveal/ceva1632.json"></figure>
-<p>Two pages, 1,446 code groups. The reading follows the figures, decoded with Lasry&rsquo;s key and the adopted values, against the contemporary decipherment on f. 82r (DECODE attachment &ldquo;082r.jpg [cleartext]&rdquo;) and the 1632 interlinear; where the decipherer and the figures differ, the figures are followed (fifteen places, listed in <code>R75_reading.md</code>). Code words such as <i>Schombergh</i>, <i>Cardinale Richelieu</i> and <i>Religione Catolica</i> are carried by the decipherment alone. Spelling as the figures give it, the clerk writing doubled letters once; [&hellip;] marks the three short runs left open.</p>
-<blockquote lang="it">
+<p>Two pages, 1,446 code groups. The reading follows the figures, decoded with Lasry&rsquo;s key and the adopted values, against the contemporary decipherment on f. 82r (DECODE attachment &ldquo;082r.jpg [cleartext]&rdquo;) and the 1632 interlinear; where the decipherer and the figures differ, the figures are followed (fifteen places, listed in <code translate="no">R75_reading.md</code>). Code words such as <i>Schombergh</i>, <i>Cardinale Richelieu</i> and <i>Religione Catolica</i> are carried by the decipherment alone. Spelling as the figures give it, the clerk writing doubled letters once; [&hellip;] marks the three short runs left open.</p>
+<blockquote lang="it" translate="no">
 <p>Le vitorie di Schombergh e della forza renderano per aventura più facile a V.S. il negotio del acomodamento di
 Monsieur, ma più dificile asai quello del unione. Però è necessario ch'ella si sbraci a trovar motivi di persuadere
 che ancora a detto compla per gli interessi di Francia l'unione. Io ne acennerò alcuni, et ella se ne serva secondo
@@ -131,7 +131,7 @@ vitoria del Sueco è altretanto formidabile alla Francia quanto alla Germania.</
 
 <h2 id="r84"><span class="num">05</span> R84: &ldquo;Roma li 18 di Xbre 1632&rdquo;</h2>
 <p>Two pages, 954 code groups, written a month after L&uuml;tzen (16 November 1632). The first folio is largely in clear: Barberini acknowledges Ceva&rsquo;s despatch of the 8th, says he has nothing further to answer, and refers him to Mons. Bichi at court. The cipher was deciphered on the figures and compared with the contemporary decipherment on f. 136r; the figures are followed where they differ (<i>Vega</i>, <i>gelosie</i>, <i>vol</i>, <i>tengano</i>).</p>
-<blockquote lang="it"><p>… ricordando a V.S. che si vaglia della vitoria contro Gostavo, però con la sua consueta prudenza, ad indur S.M.tà a
+<blockquote lang="it" translate="no"><p>… ricordando a V.S. che si vaglia della vitoria contro Gostavo, però con la sua consueta prudenza, ad indur S.M.tà a
 facilitar il trattato. E sappi lei che gli affari che bolivano in Francia dopo la mia partenza, pure de pensieri
 torbidi di Monsieur, furono cagione che li Francesi concludesero la pace di Valtellina. … Si avisa da per tutto la fuga di Monsieur. Non so quanto sia stato a proposito con insoliti
 rigori nella Francia meter in disperatione quel Prencipe, potendo da questo nascere consegvenze che tengano disunita
@@ -142,20 +142,20 @@ per un pezzo la Francia e sotoposta alle esterne violenze, o almeno impotente a 
 <p>Lasry gave no value to any of the ninety-five elements he met. Deciphering R75 puts a placeholder at each element; aligning that decryption against the 1632 interlinear shows which word of the contemporary decipherment stands at the placeholder. Twenty-two elements caught a witness fragment, and six survive checking against Lasry&rsquo;s four letters, where they were not fitted:</p>
 <table>
 <tr><th>Code</th><th>Reading</th><th>Evidence</th></tr>
-<tr><td><code>474</code></td><td><i>mente</i></td><td>piena~, principal~, non sola~ per il solo proprio, malacomoda~; witness fragment <i>met</i></td></tr>
-<tr><td><code>495</code></td><td><i>quanto</i></td><td>&ldquo;e ~ al proporre arbitrare&rdquo;; pairs with 498</td></tr>
-<tr><td><code>498</code></td><td><i>tanto</i></td><td>&ldquo;che ~ in &lt;347&gt; quanto in &lt;857&gt; si sappia la cagione&rdquo;</td></tr>
-<tr><td><code>830</code></td><td><i>Francia</i></td><td>four times out of four in Lasry&rsquo;s letters, always after a feminine article: &ldquo;render la ~ pi&ugrave; poderosa&rdquo;, &ldquo;valere a danno quella ~&rdquo;, &ldquo;hoggi la ~ in a di dar legge&rdquo;</td></tr>
-<tr><td><code>854</code></td><td><i>guerra</i></td><td>R75 interlinear, twice</td></tr>
-<tr><td><code>149</code></td><td><i>piazza</i></td><td>R75 interlinear, &ldquo;acquisto d&rsquo;una ~&rdquo;</td></tr>
+<tr><td><code translate="no">474</code></td><td><i>mente</i></td><td>piena~, principal~, non sola~ per il solo proprio, malacomoda~; witness fragment <i>met</i></td></tr>
+<tr><td><code translate="no">495</code></td><td><i>quanto</i></td><td>&ldquo;e ~ al proporre arbitrare&rdquo;; pairs with 498</td></tr>
+<tr><td><code translate="no">498</code></td><td><i>tanto</i></td><td>&ldquo;che ~ in &lt;347&gt; quanto in &lt;857&gt; si sappia la cagione&rdquo;</td></tr>
+<tr><td><code translate="no">830</code></td><td><i>Francia</i></td><td>four times out of four in Lasry&rsquo;s letters, always after a feminine article: &ldquo;render la ~ pi&ugrave; poderosa&rdquo;, &ldquo;valere a danno quella ~&rdquo;, &ldquo;hoggi la ~ in a di dar legge&rdquo;</td></tr>
+<tr><td><code translate="no">854</code></td><td><i>guerra</i></td><td>R75 interlinear, twice</td></tr>
+<tr><td><code translate="no">149</code></td><td><i>piazza</i></td><td>R75 interlinear, &ldquo;acquisto d&rsquo;una ~&rdquo;</td></tr>
 </table>
-<p>Adding the six raised the control agreement on R75 from 0.737 to 0.775. That test is partly circular for <code>854</code> and <code>149</code>, which came from the witness itself; the independent evidence for <code>474</code>, <code>495</code>, <code>498</code> and <code>830</code> is that they fit the four letters Lasry read, which the witness never touched. The pairing of <code>498</code> and <code>495</code> as <i>tanto&hellip;quanto</i> around two undecoded place codes is the best supported of them.</p>
-<p>One element was rejected at the time. <code>491</code> drew the fragment <i>goto</i>, but it does not fit its four contexts in Lasry&rsquo;s letters. The complete decipherments of October 2026 settle it as <i>quell-</i>, and add seven more values that hold at every occurrence: 88 <i>del</i> (keyed <i>quel</i>), 33 <i>gli</i>, 541 <i>armi</i>, 171 <i>Regno</i>, 473 <i>mentre</i>, 497 <i>tutt-</i>, 104 <i>Olandesi</i> (not <i>Svedesi</i>).</p>
+<p>Adding the six raised the control agreement on R75 from 0.737 to 0.775. That test is partly circular for <code translate="no">854</code> and <code translate="no">149</code>, which came from the witness itself; the independent evidence for <code translate="no">474</code>, <code translate="no">495</code>, <code translate="no">498</code> and <code translate="no">830</code> is that they fit the four letters Lasry read, which the witness never touched. The pairing of <code translate="no">498</code> and <code translate="no">495</code> as <i>tanto&hellip;quanto</i> around two undecoded place codes is the best supported of them.</p>
+<p>One element was rejected at the time. <code translate="no">491</code> drew the fragment <i>goto</i>, but it does not fit its four contexts in Lasry&rsquo;s letters. The complete decipherments of October 2026 settle it as <i>quell-</i>, and add seven more values that hold at every occurrence: 88 <i>del</i> (keyed <i>quel</i>), 33 <i>gli</i>, 541 <i>armi</i>, 171 <i>Regno</i>, 473 <i>mentre</i>, 497 <i>tutt-</i>, 104 <i>Olandesi</i> (not <i>Svedesi</i>).</p>
 
 <h2 id="open"><span class="num">07</span> What remains open</h2>
 <ul>
 <li><b>R75</b>: three short runs: &ldquo;se ne serva 494 li stimi v4&rdquo; (one word after <i>stimi</i>; the decipherer paraphrases &ldquo;se ne servirà secondo che giudicherà necessario&rdquo;), &ldquo;diolavse 1&rdquo; at the head of line 21, and &ldquo;la e8 loro&rdquo;. No value of the key gives a word.</li>
-<li><b>R84</b>: &ldquo;da [?N.S.re]&rdquo; (figures <code>c 5</code>): the abbreviation in the decipherer&rsquo;s hand on f. 136r is cramped and the figures give no word.</li>
+<li><b>R84</b>: &ldquo;da [?N.S.re]&rdquo; (figures <code translate="no">c 5</code>): the abbreviation in the decipherer&rsquo;s hand on f. 136r is cramped and the figures give no word.</li>
 <li><b>Values carried by one decipherment only</b> (357 Schomberg, 581 Cardinale Richelieu, 197 Religione Cattolica, 844 Gostavo, 930/957 Mons.r Nuntio and others): there is no nomenclator for the dossier on DECODE, and confirming them across the dossier needs the Vatican key.</li>
 <li><b>The other six letters.</b> R74 was deciphered by Lasry; R76, R79, R80, R81 and R83 are marked decrypted on DECODE. None of them is touched here.</li>
 </ul>
@@ -165,7 +165,7 @@ per un pezzo la Francia e sotoposta alle esterne violenze, o almeno impotente a 
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>R75, 346-2, 25 Sept 1632</h3>
 <p>Barberini to Ceva after Schomberg&#x27;s victory at Castelnaudary: the victories make the accommodation of Monsieur easier and the union harder; arguments for Richelieu (glory with the Catholic arms, the danger of the Dutch and of the Swede, Monsieur&#x27;s restlessness, war against the infidel as the glory he lacks). The 1632 decipherment on f. 82r (DECODE attachment DOC_R75_D1145) and the decode with Lasry&#x27;s key read together.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/decode/DOC_R75_D2532_2532.txt">DOC_R75_D2532_2532.txt</a></p><pre>#CIPHERTEXT
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/decode/DOC_R75_D2532_2532.txt">DOC_R75_D2532_2532.txt</a></p><pre translate="no">#CIPHERTEXT
 #CATALOGUE NAME: ASV_i1025_SdS_France_346-2
 #IMAGE NAME: 589.jpeg-590.jpeg
 #TRANSCRIBER NAME: IB
@@ -261,7 +261,7 @@ per un pezzo la Francia e sotoposta alle esterne violenze, o almeno impotente a 
 &lt;no, e questi essisa?d?o ignot?o à noi, non possiamo cooperar à raccov?l?i, Hò solam.t?i &lt;ABBR necessariamente?&gt; accennato quest&gt;
 &lt;CLEARTEXT IT che mi è parso, non perchè ella debba necessariam.ti &lt;ABBR necessariamente?&gt; valersene?, mà perchè solo l?&#x27;h?abbi in&gt;
 &lt;CLEARTEXT IT considerazione -----------------------------------&gt;</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/r75.retrans.txt">r75.retrans.txt</a></p><pre>5745698354031704137298463572318688832480155950476593730094570198115251338753781854959476043575275119715337
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/r75.retrans.txt">r75.retrans.txt</a></p><pre translate="no">5745698354031704137298463572318688832480155950476593730094570198115251338753781854959476043575275119715337
 284764112953698825886197115013174234746842593869320043598684801771534528470338176491228869881543037
 64812745698423446189083219560308593810412547685703149475924003185357517238461303981909377045294
 46439224709188531610397804832113633283440455937039568424830657643054813729546303723387145813
@@ -296,7 +296,7 @@ per un pezzo la Francia e sotoposta alle esterne violenze, o almeno impotente a 
 956573728009141983084757037280459379481853768739813127583598600857038593518277383687
 751924989688259881543037254986043549290937751864112858378103197024476703559703175477025
 594791548141644288361387981974813125</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/R75_transcription_corrected.txt">R75_transcription_corrected.txt</a></p><pre>5745698354031704137298463572318688832480155950476593730094570198115251338753781854959476043575275119715337
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/R75_transcription_corrected.txt">R75_transcription_corrected.txt</a></p><pre translate="no">5745698354031704137298463572318688832480155950476593730094570198115251338753781854959476043575275119715337
 284764112953698825886197115013174234746842593869320043598684801771534528470338176491228869881543037
 64812745698423446189083219560308593810412547685703149475924013185357517238461303981909377045294
 46439224709188531610397804832113633283440455937039568424830657643054813729546303723387145813
@@ -331,10 +331,10 @@ per un pezzo la Francia e sotoposta alle esterne violenze, o almeno impotente a 
 956573728009141983084757037280459379481853768739813127583598600857038593518277383687
 751924989688259881543037254986043549290937751864112858378103197024476703559703175477025
 594791548141644288361387981974813125</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/R75_corrections.tsv">R75_corrections.tsv</a></p><pre>line	was	now	word	evidence
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/R75_corrections.tsv">R75_corrections.tsv</a></p><pre translate="no">line	was	now	word	evidence
 3	59 24 00 31 85 35 75 17	59 24 01 31 85 35 75 17	motivi (was &#x27;con otivi&#x27;)	IMG_R75_I589 native crop: 0 1 (m), not 0 0; f. 82r &#x27;motivi&#x27;
 21	71 31 97 27 00	71 31 94 27 00	cose (was &#x27;co et&#x27;)	IMG_R75_I589 native crop: 9 4 (se) under the interlinear &#x27;le cose&#x27;; f. 82r &#x27;le cose&#x27;; the next figures (27 00) uncertain at the blot</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/R75_decifrato_f82r.txt">R75_decifrato_f82r.txt</a></p><pre># R75 (ASV SdS Francia 346, no. 2, 25 Sept 1632): the contemporary decipherment, f. 82r
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/R75_decifrato_f82r.txt">R75_decifrato_f82r.txt</a></p><pre translate="no"># R75 (ASV SdS Francia 346, no. 2, 25 Sept 1632): the contemporary decipherment, f. 82r
 # DECODE R75 attachment DOC_R75_D1145_1145.png, labelled &quot;082r.jpg [cleartext]&quot; (never opened before 22 Oct 2026).
 # Transcribed 22-23 Oct 2026 (b18) from the native-resolution png. Line breaks as on the leaf; abbreviations
 # expanded in [ ]; [?word] uncertain reading of the decipherer&#x27;s hand. Spelling as written.
@@ -370,7 +370,7 @@ di pace, et se pur vuol seguitar ne gli affari militari indrizzi le cose per int
 guerra con gl&#x27;infedeli che q[ue]sta sola parte manca alla gloria di S.E. In somma quanto
 le congiunture pre[se]nti sono più contrarie alla sua negotiatione dell&#x27;unione tanto più deve
 [V.S.] pensar a trovar ragioni che la persuadano.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/r75.read3.txt">r75.read3.txt</a></p><pre>le vitoriedi i&lt;723&gt;e dellaforza renderanoperaventvra pivfacile
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/r75.read3.txt">r75.read3.txt</a></p><pre translate="no">le vitoriedi i&lt;723&gt;e dellaforza renderanoperaventvra pivfacile
 a V.S.il NEGOTIOdel acomodaMENTE diMONSIEUR mapiv dificileasai QUELLOdel vnione
  PEROe v&lt;423&gt;che ellasi sbracia trovarconotividi persvadereche
  ANCORAadeto complaper gliinteressi diFRANCIA l st&lt;054&gt;neio neacene
@@ -405,7 +405,7 @@ deliche QUESTAsola partemanca allafloria diS.E.insommaQUANTO
  lecongivndivrepresente sonopiv contrariealla s
 vav{9} delvnioneTANTO pivdeve V.S.pensara rirrovar
 ragioni chela persvadano</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/r75.interlinear.txt">r75.interlinear.txt</a></p><pre>12	di guerra / parano sempre / in pericolo . è tempo che S.E. cominc
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/r75.interlinear.txt">r75.interlinear.txt</a></p><pre translate="no">12	di guerra / parano sempre / in pericolo . è tempo che S.E. cominc
 13	i a conoscere [quanto?] sia pericolosa alla Francia la potenza d&#x27; Spagn.li [Spagnuoli] che
 14	cominciano hor mai a pensar / a cose grandi et ad indrizzar la
 15	sp.la [spada?] loro a gli [imperii?] consideri quanto sia oportuno / all i vastissimi p
@@ -429,7 +429,7 @@ ragioni chela persvadano</pre></details>
 33	quanto le congiunture presente sono piu contrarie alla
 34	sua [...] che di unione tanto piu deve [...] pensar a ritrovar
 35	ragioni che la persuadano</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/R75_reading.md">R75_reading.md</a></p><pre># R75 — Cardinal Francesco Barberini to the nuncio Ceva, cipher of Rome, 25 September 1632 (ASV SdS Francia 346, no. 2)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/R75_reading.md">R75_reading.md</a></p><pre translate="no"># R75 — Cardinal Francesco Barberini to the nuncio Ceva, cipher of Rome, 25 September 1632 (ASV SdS Francia 346, no. 2)
 
 Rests on: the figures (`r75.retrans.txt`, re-transcribed from the images on 5 Oct 2026; one label corrected here,
 `R75_corrections.tsv`) decoded with Lasry&#x27;s key and the values adopted on 22-23 Oct 2026 (`b18_ceva_redecode.py` →
@@ -492,7 +492,7 @@ deve V.S. pensar a ritrovar ragioni che la persuadano.
   &quot;cose&quot; is `71 31 94` (94 = se), not `97`.
 - f. 82r is a working decipherment, not a copy of the figures: it improves the wording in places (&quot;servirà secondo che
   giudicherà necessario&quot;, &quot;che si cominci&quot;) and names Gustavus where the figures say only &quot;quella natione&quot;.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/R75_en.md">R75_en.md</a></p><pre># R75 — Cardinal Francesco Barberini to the nuncio Ceva, Rome, 25 September 1632 (cipher): English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/R75_en.md">R75_en.md</a></p><pre translate="no"># R75 — Cardinal Francesco Barberini to the nuncio Ceva, Rome, 25 September 1632 (cipher): English
 
 Translation of `R75_reading.md`, same holes. […] unread.
 
@@ -521,7 +521,7 @@ one part missing from His Eminence&#x27;s glory. In short, the more the present 
 of the union, the more you must think of finding reasons that will persuade him.</pre></details>
 <h3>R84, 346-11, 18 Dec 1632</h3>
 <p>Barberini to Ceva, December 1632: use the victory over Gustavus to bring His Majesty to ease the treaty; the troubles in France made the French conclude the Valtellina peace; the union lies in the hands of France; Monsieur&#x27;s flight, and the fear that rigour will keep France disunited and unable to help her allies. The 1632 decipherment on f. 136r (DECODE attachment DOC_R84_D1177) and the decode with Lasry&#x27;s key read together.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/decode/DOC_R84_D2161_2161.txt">DOC_R84_D2161_2161.txt</a></p><pre>#CIPHERTEXT
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/decode/DOC_R84_D2161_2161.txt">DOC_R84_D2161_2161.txt</a></p><pre translate="no">#CIPHERTEXT
 #CATALOG NAME: ASV_i1025_SdS_France_346-11
 #IMAGE NAME: 639.jpeg - 640.jpeg
 #TRANSCRIBER NAME: MEG
@@ -574,7 +574,7 @@ of the union, the more you must think of finding reasons that will persuade him.
 3 7 3 0 9 1 1 9 3 0 1 5  6  8 4  0 3 4 9 3 0  1 7 4 0 1 9 6 1 3 2 1 4 9 8 1 5 7 0 4 3 7 5 0 1 5 6 8 3 2 1 8 3 0  6 1 8  6 0  3 1 5 4 0  3 1 0 4 3
 9 1 5 4 3 1 9 6  7 3 1 8  2 2  3 7 4 3 1 8 7 0  3 0 1 8 6  4 9 5 4 9 0 1 8  3 0  5 0  3 7 6 1 5 2 2 7 3 7 8 1 8 3 0 1 5 6 1 7 0  1 0  4 1 5  4 0
 1 8  3 0  8 5 3 7 6 1 9 2 2  0 3 1 5 1 0 3 1 7 0 4 5 5 9 6 9  0 1 7 2 1  8  7 4 9 1 5 1 7 6 7 3 1 7 1 9 4 0  3 5</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/r84.retrans.txt">r84.retrans.txt</a></p><pre>59171031707430481523476411644952498193347208883254935401570414727
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/r84.retrans.txt">r84.retrans.txt</a></p><pre translate="no">59171031707430481523476411644952498193347208883254935401570414727
 00405915218446481220083258749472500879897192104704909188150472419096
 34489870630921476801910531740475965320380637240319581769018416443321
 476450644207915901798193031617302383021093958156836141924041970401830
@@ -605,7 +605,7 @@ of the union, the more you must think of finding reasons that will persuade him.
 373091193015684034930174019613214981570437501568321830618603154031043
 9154319673182237431870301864954901830503761522737818301561701041540
 18308537619220315103170455969017218749151767317194035</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/R84_decifrato_f136r.txt">R84_decifrato_f136r.txt</a></p><pre># R84 (ASV SdS Francia 346, no. 11, Dec 1632): the contemporary decipherment, f. 136r
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/R84_decifrato_f136r.txt">R84_decifrato_f136r.txt</a></p><pre translate="no"># R84 (ASV SdS Francia 346, no. 11, Dec 1632): the contemporary decipherment, f. 136r
 # DECODE R84 attachment DOC_R84_D1177_1177.png, labelled &quot;[cleartext]&quot; (never opened before 22 Oct 2026).
 # Transcribed 22-23 Oct 2026 (b18) from the native-resolution png. Line breaks as on the leaf; abbreviations
 # expanded in [ ]; [?word] uncertain reading of the decipherer&#x27;s hand. Spelling as written.
@@ -635,7 +635,7 @@ potendo da questo nascere conseguenze che tenghino
 disunita per un pezzo la Francia et sottoposta all&#x27;
 esterne violenze o almeno impotente a soccorrere i
 suoi aleati.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/r84.read3.txt">r84.read3.txt</a></p><pre>ricordandoa V.S. chesivagliadellavitoria
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/r84.read3.txt">r84.read3.txt</a></p><pre translate="no">ricordandoa V.S. chesivagliadellavitoria
 contro&lt;844&gt; PEROconlasvaconsvetaprvdenzaad 
 indvr &lt;309&gt;a facilitar il&lt;380&gt; esapi lei chegli
 a &lt;450&gt; chebolivano inFRANCIAdopo la miaparten
@@ -666,7 +666,7 @@ insnoliti rigori &lt;998&gt;{3} FRANCIAmeter indisperatione QUELLO
 engano disvnita pervnlpezo laFRANCIA e sotopo
 osta aleesterne violenze oalmeno impot
 ente asocorer lisvoi aliati</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/R84_reading.md">R84_reading.md</a></p><pre># R84 — Cardinal Francesco Barberini to the nuncio Ceva, cipher of Rome, December 1632 (ASV SdS Francia 346, no. 11)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/R84_reading.md">R84_reading.md</a></p><pre translate="no"># R84 — Cardinal Francesco Barberini to the nuncio Ceva, cipher of Rome, December 1632 (ASV SdS Francia 346, no. 11)
 
 Rests on: the figures (`r84.retrans.txt`, re-transcribed from the images on 5 Oct 2026) decoded with Lasry&#x27;s key and
 the values adopted on 22-23 Oct 2026 (`b18_ceva_redecode.py` → `r84.read3.txt`), read against the **contemporary
@@ -708,7 +708,7 @@ per un pezzo la Francia e sotoposta alle esterne violenze, o almeno impotente a 
   figures have a second V.S. here), Mons.r Nuntio (930, 957), sarà (`457 a`).
 - 998 + a stray 3 is &quot;nella&quot; at all three places (ll. 21, 24, 27), as the decipherer reads it.
 - The line &quot;da questo nascere&quot; is `QUESTA ndescere` in the decode (493 is questa/questo; `nd e sc` a slip for &quot;nasc&quot;).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/R84_en.md">R84_en.md</a></p><pre># R84 — Cardinal Francesco Barberini to the nuncio Ceva, Rome, December 1632 (cipher): English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ceva1632/R84_en.md">R84_en.md</a></p><pre translate="no"># R84 — Cardinal Francesco Barberini to the nuncio Ceva, Rome, December 1632 (cipher): English
 
 Translation of `R84_reading.md`, same holes. [?] partly read.
 
@@ -749,7 +749,7 @@ at least unable to help her allies.</pre></details>
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Manuscript rights: Archivio Apostolico Vaticano, via DECODE</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="sweden4306.html" rel="prev">&larr; Riksarkivet R4306 undated (pencilled 1632?)</a><a href="oxenstierna1633.html" rel="next">Letters to Oxenstierna 1633 1633 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

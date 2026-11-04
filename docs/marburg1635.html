@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-<div class="cipherstrip">6 1 2 q 5 0 9 W 6 0 &middot; damit ich &hellip; entschuldigt sein &middot; 0 = n &middot; 6 = e &middot; 12 = r &middot; T4 = ch</div>
+<div class="cipherstrip" translate="no">6 1 2 q 5 0 9 W 6 0 &middot; damit ich &hellip; entschuldigt sein &middot; 0 = n &middot; 6 = e &middot; 12 = r &middot; T4 = ch</div>
 <p class="kicker">Unknown writer &rarr; Hesse-Kassel &middot; substitution in digits and symbols, with a few homophones &middot; Thirty Years&rsquo; War (volume 1635&ndash;52)</p>
 <h1>A cipher report to Hesse-Kassel, Thirty Years&rsquo; War (HStAM 4 d Nr. 1218, no. 49)</h1>
 <p class="sub">Hessisches Staatsarchiv Marburg, HStAM 4 d Nr. 1218, no. 49 (DECODE R4500, &ldquo;partially decrypted&rdquo;). A German letter in clear text that switches to fourteen lines of digits and symbols. A contemporary hand deciphered the first four cipher lines. The key was recovered from the ciphertext alone and checked against that partial decipherment, which also fixed two values; about 97% of the symbols are deciphered.</p>
@@ -78,19 +78,19 @@
 
 <h2 id="the-reading"><span class="num">02</span> The decipherment</h2>
 <figure class="creveal" data-src="reveal/marburg1635.json"></figure>
-<p>Lines 1&ndash;7 are decoded, not read: the decode of lines 2&ndash;4 is garbled, and the contemporary gloss over lines 1&ndash;4, the only control, is faded and cramped and does not align with the signs at two places (re-read on native crops on 23 October 2026, no value changed). Their partial reading (<code>texts/R4500_l01-07_reading.md</code>; [&hellip;] unread, [?word] partly carried):</p>
+<p>Lines 1&ndash;7 are decoded, not read: the decode of lines 2&ndash;4 is garbled, and the contemporary gloss over lines 1&ndash;4, the only control, is faded and cramped and does not align with the signs at two places (re-read on native crops on 23 October 2026, no value changed). Their partial reading (<code translate="no">texts/R4500_l01-07_reading.md</code>; [&hellip;] unread, [?word] partly carried):</p>
 <blockquote>&hellip; noch nicht zu vernehmen, die Landts[…] […]. […] [?w]ir dennoch nur [?b]eit ihr endes halber […] ursach[…]
 [?be]schwerungen ich ag[…] [di]eses orts halber […] dagegen denselben etwas tentiert we[r]en solte, zumahl nicht
 unbewandt, w[?a]s und ob en gebührender manutenirung der [?Keiserm.] Mait. und [?des] Reich[s], wie auch [K. Chur…]
 bei di[…]n boni […] ungelegen.</blockquote>
-<p>Lines 8&ndash;14, the closing sentence, give German throughout (<code>texts/R4500_l08-14_reading.md</code>):</p>
+<p>Lines 8&ndash;14, the closing sentence, give German throughout (<code translate="no">texts/R4500_l08-14_reading.md</code>):</p>
 <blockquote>&hellip; dahero ich nicht unterlassen sollen, die notturft dieser Vestung so wol allerhöchst ihrer Kays. Maiestet als auch
 ihrer Churf. Durchl. in Bayern ohnlängst nochmals allerunderthenigst und underthenigst anzudeuten, damit ich aus allen
 fall entschuldigt sein und dessen, meinem gebührenden bericht an gehörigen ort, nicht ermangeln möchte.</blockquote>
 <p>In English (lines 1&ndash;7 only in part): something should be attempted against them, especially since &hellip; the maintenance of His Imperial Majesty and the Empire &hellip;; I therefore could not fail, lately and once more, to set out the needs of this fortress most humbly to His Imperial Majesty and humbly to His Electoral Highness of Bavaria, so that I may be excused in any event, and not fall short of my duty to report to the proper place.</p>
 
 <h2 id="method"><span class="num">03</span> Method</h2>
-<p>Simulated annealing without word spaces gave only frequency noise. After a second transcription that kept the word gaps and treated the joined &ldquo;12&rdquo; as one symbol, a homophonic solver scored with the <code>de-1500s</code> model produced recognisable words, and those words fixed the key. The gloss over lines 1&ndash;4 then settled the superscript symbol (w) and 8 (o). The gloss does not follow the cipher line by line; its phrases occur in cipher lines 3&ndash;5, in order. All 126 records of the volume (R4452&ndash;R4577) were downloaded to look for the key or a clear copy; none was found.</p>
+<p>Simulated annealing without word spaces gave only frequency noise. After a second transcription that kept the word gaps and treated the joined &ldquo;12&rdquo; as one symbol, a homophonic solver scored with the <code translate="no">de-1500s</code> model produced recognisable words, and those words fixed the key. The gloss over lines 1&ndash;4 then settled the superscript symbol (w) and 8 (o). The gloss does not follow the cipher line by line; its phrases occur in cipher lines 3&ndash;5, in order. All 126 records of the volume (R4452&ndash;R4577) were downloaded to look for the key or a clear copy; none was found.</p>
 
 <h2 id="uncertain"><span class="num">04</span> What remains uncertain</h2>
 <ul>
@@ -105,7 +105,7 @@ fall entschuldigt sein und dessen, meinem gebührenden bericht an gehörigen ort
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>R4500, HStAM 4 d Nr. 1218 no. 49: cipher lines 8-14</h3>
 <p>A German Thirty Years&#x27; War letter in the Hesse-Kassel files reporting troop movements in clear, with the last 14 lines in cipher. The writer, an officer or agent on the imperial side writing from a fortress, reports that he has set out the needs of this fortress to the Emperor and to the Elector of Bavaria, so that he may be held excused and not be found wanting in his report.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marburg1635/cipher_tokens.txt">cipher_tokens.txt</a></p><pre># R4500 cipher tokens, pass 2.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marburg1635/cipher_tokens.txt">cipher_tokens.txt</a></p><pre translate="no"># R4500 cipher tokens, pass 2.
 # F = d-shaped sign, T = theta, D = triangle, A = crossed triangle, W = w-sign, X = crossed t, M = superscript m/bar,
 # q = digit-4/9 with cross stroke below, j s = letter-like signs, ? = unread.
 L01: 7 7 6 A 5 0 1 W F / W 5 ? 1 7 0 4 5 6
@@ -122,7 +122,7 @@ L11: 0 8 T 4 q 5 D / F 5 / D 6 1 2 9 0 1 6 1 2 W 4 6 0 7 3 F W / 9 0 1 / 9 0 1 6
 L12: 5 0 0 9 1 6 9 W 6 0 / 1 8 q 7 W / 7 T 4 5 9 2 / 5 D 6 0 5 2 D 6 0 W F T 4 9 D 1 7 3 W / X 6 7 0
 L13: 9 0 1 6 F 5 0 / q 6 7 0 6 q 3 6 X 9 4 1 2 6 0 1 6 0 9 6 1 2 7 T 4 W 5 0 / 3 6 4 8 2 2 7 3 6 0 8 1 2 W
 L14: 6 0 0 7 T 4 W / 6 1 2 q / 5 0 3 6 D 6 0 / q 8 T 4 W 6</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marburg1635/reading_tokens.txt">reading_tokens.txt</a></p><pre># sign=value per cipher sign; ? = unread. Key as in NOTES.md. D=ll in L11: triangle with a doubling bar (30 Sept 2026).
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marburg1635/reading_tokens.txt">reading_tokens.txt</a></p><pre translate="no"># sign=value per cipher sign; ? = unread. Key as in NOTES.md. D=ll in L11: triangle with a doubling bar (30 Sept 2026).
 L01: 7=i 7=i 6=e A=a 5=a 0=n 1=d W=t F=s / W=? 5=? ?=? 1=? 7=? 0=? 4=? 5=? 6=?
 L02: 12=r 7=i 12=r / 6=e 0=n 0=n 8=o T=c / 4=h 0=n 9=u / 12=r X=b / 6=e 7=i W=t / 7=i 4=h 12=r / 6=e 0=n 1=d F=s F=s / 4=h 5=a D=l 9=u 6=e 12=r 1=d / ?=? / 9=u 12=r 5=a T=c F=s W=t
 L03: 6=e 0=n 9=u 6=e F=s T=c 4=h M=w / 6=e 12=r / 9=u 0=n 3=g 6=e 0=n 7=i T=c 4=h / A=a 3=g 9=u 1=d 7=i / 6=e F=s 6=e F=s 8=o / 12=r W=t F=s 4=h 5=a D=l 9=u 6=e 12=r 2=s 5=a / F=s W=t / 9=u 6=e 3=g
@@ -138,7 +138,7 @@ L12: 5=a 0=n 0=n 9=u 1=d 6=e 9=u W=t 6=e 0=n / 1=d 8=o q=m 7=i W=t / 7=i T=c 4=h
 L13: 9=u 0=n 1=d 6=e F=s 5=a 0=n / q=m 6=e 7=i 0=n 6=e q=m 3=g 6=e X=b 9=u 4=h 12=r 6=e 0=n 1=d 6=e 0=n 9=u 6=e 12=r 7=i T=c 4=h W=t 5=a 0=n / 3=g 6=e 4=h 8=o 2=s 2=s 7=i 3=g 6=e 0=n 8=o 12=r W=t
 L14: 6=e 0=n 0=n 7=i T=c 4=h W=t / 6=e 12=r q=m / 5=a 0=n 3=g 6=e D=l 6=e 0=n / q=m 8=o T=c 4=h W=t 6=e
 # signs 538, unread 14, read 0.974</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marburg1635/texts/R4500_decryption.md">R4500_decryption.md</a></p><pre>Copied verbatim from `NOTES.md`, &quot;## Reading (normalised; [..] = conjectural)&quot; (as corrected 30 Sept 2026). The
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marburg1635/texts/R4500_decryption.md">R4500_decryption.md</a></p><pre translate="no">Copied verbatim from `NOTES.md`, &quot;## Reading (normalised; [..] = conjectural)&quot; (as corrected 30 Sept 2026). The
 sign-by-sign decryption is `reading_tokens.txt`.
 
 ## Reading (normalised; [..] = conjectural)
@@ -149,7 +149,7 @@ sign-by-sign decryption is `reading_tokens.txt`.
 &gt; notturft dieser Vestung so wol allerhöchst ihrer Kays. Maiestet als auch ihrer Churf. Durchl. in Bayern ohnlängst
 &gt; nochmals allerunderthenigst und underthenigst anzudeuten, damit ich aus allen fall entschuldigt sein und dessen,
 &gt; meinem gebührenden bericht an gehörigen ort, nicht ermangeln möchte.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marburg1635/texts/R4500_l08-14_reading.md">R4500_l08-14_reading.md</a></p><pre># DECODE R4500 (HStAM 4 d Nr. 1218 no. 49), cipher lines 8-14: reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marburg1635/texts/R4500_l08-14_reading.md">R4500_l08-14_reading.md</a></p><pre translate="no"># DECODE R4500 (HStAM 4 d Nr. 1218 no. 49), cipher lines 8-14: reading
 
 The sentence of cipher lines 8-14 (from &quot;dahero&quot;), as normalised in `texts/R4500_decryption.md` (copied from NOTES.md,
 corrected 30 Sept 2026) from the sign-by-sign decryption `reading_tokens.txt` (L08-L14), written out alone 23 Oct 2026
@@ -161,7 +161,7 @@ Normalised as in that file (word division, capitals, punctuation, abbreviations 
 … dahero ich nicht unterlassen sollen, die notturft dieser Vestung so wol allerhöchst ihrer Kays. Maiestet als auch
 ihrer Churf. Durchl. in Bayern ohnlängst nochmals allerunderthenigst und underthenigst anzudeuten, damit ich aus allen
 fall entschuldigt sein und dessen, meinem gebührenden bericht an gehörigen ort, nicht ermangeln möchte.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marburg1635/texts/R4500_l08-14_en.md">R4500_l08-14_en.md</a></p><pre># DECODE R4500 (HStAM 4 d Nr. 1218 no. 49), cipher lines 8-14: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marburg1635/texts/R4500_l08-14_en.md">R4500_l08-14_en.md</a></p><pre translate="no"># DECODE R4500 (HStAM 4 d Nr. 1218 no. 49), cipher lines 8-14: English translation
 
 Translation (Claude Opus 5.5, 23 Oct 2026) of `texts/R4500_l08-14_reading.md`, the one sentence of cipher lines 8-14.
 No holes.
@@ -173,7 +173,7 @@ fortress both to His Most High Imperial Majesty and to His Electoral Highness in
 any event and may not be found wanting in it, [that is] in my due report to the proper place.</pre></details>
 <h3>R4500, cipher lines 1-7 (before &#x27;dahero&#x27;) <span class="st stuck">decoded, not read</span></h3>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marburg1635/cipher_tokens.txt">cipher_tokens.txt</a></p><pre># R4500 cipher tokens, pass 2.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marburg1635/cipher_tokens.txt">cipher_tokens.txt</a></p><pre translate="no"># R4500 cipher tokens, pass 2.
 # F = d-shaped sign, T = theta, D = triangle, A = crossed triangle, W = w-sign, X = crossed t, M = superscript m/bar,
 # q = digit-4/9 with cross stroke below, j s = letter-like signs, ? = unread.
 L01: 7 7 6 A 5 0 1 W F / W 5 ? 1 7 0 4 5 6
@@ -190,7 +190,7 @@ L11: 0 8 T 4 q 5 D / F 5 / D 6 1 2 9 0 1 6 1 2 W 4 6 0 7 3 F W / 9 0 1 / 9 0 1 6
 L12: 5 0 0 9 1 6 9 W 6 0 / 1 8 q 7 W / 7 T 4 5 9 2 / 5 D 6 0 5 2 D 6 0 W F T 4 9 D 1 7 3 W / X 6 7 0
 L13: 9 0 1 6 F 5 0 / q 6 7 0 6 q 3 6 X 9 4 1 2 6 0 1 6 0 9 6 1 2 7 T 4 W 5 0 / 3 6 4 8 2 2 7 3 6 0 8 1 2 W
 L14: 6 0 0 7 T 4 W / 6 1 2 q / 5 0 3 6 D 6 0 / q 8 T 4 W 6</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marburg1635/reading_tokens.txt">reading_tokens.txt</a></p><pre># sign=value per cipher sign; ? = unread. Key as in NOTES.md. D=ll in L11: triangle with a doubling bar (30 Sept 2026).
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marburg1635/reading_tokens.txt">reading_tokens.txt</a></p><pre translate="no"># sign=value per cipher sign; ? = unread. Key as in NOTES.md. D=ll in L11: triangle with a doubling bar (30 Sept 2026).
 L01: 7=i 7=i 6=e A=a 5=a 0=n 1=d W=t F=s / W=? 5=? ?=? 1=? 7=? 0=? 4=? 5=? 6=?
 L02: 12=r 7=i 12=r / 6=e 0=n 0=n 8=o T=c / 4=h 0=n 9=u / 12=r X=b / 6=e 7=i W=t / 7=i 4=h 12=r / 6=e 0=n 1=d F=s F=s / 4=h 5=a D=l 9=u 6=e 12=r 1=d / ?=? / 9=u 12=r 5=a T=c F=s W=t
 L03: 6=e 0=n 9=u 6=e F=s T=c 4=h M=w / 6=e 12=r / 9=u 0=n 3=g 6=e 0=n 7=i T=c 4=h / A=a 3=g 9=u 1=d 7=i / 6=e F=s 6=e F=s 8=o / 12=r W=t F=s 4=h 5=a D=l 9=u 6=e 12=r 2=s 5=a / F=s W=t / 9=u 6=e 3=g
@@ -206,7 +206,7 @@ L12: 5=a 0=n 0=n 9=u 1=d 6=e 9=u W=t 6=e 0=n / 1=d 8=o q=m 7=i W=t / 7=i T=c 4=h
 L13: 9=u 0=n 1=d 6=e F=s 5=a 0=n / q=m 6=e 7=i 0=n 6=e q=m 3=g 6=e X=b 9=u 4=h 12=r 6=e 0=n 1=d 6=e 0=n 9=u 6=e 12=r 7=i T=c 4=h W=t 5=a 0=n / 3=g 6=e 4=h 8=o 2=s 2=s 7=i 3=g 6=e 0=n 8=o 12=r W=t
 L14: 6=e 0=n 0=n 7=i T=c 4=h W=t / 6=e 12=r q=m / 5=a 0=n 3=g 6=e D=l 6=e 0=n / q=m 8=o T=c 4=h W=t 6=e
 # signs 538, unread 14, read 0.974</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marburg1635/texts/R4500_l01-07_reading.md">R4500_l01-07_reading.md</a></p><pre># R4500 (HStAM 4 d Nr. 1218 no. 49), cipher lines 1-7: partial reading (decoded, not read)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/marburg1635/texts/R4500_l01-07_reading.md">R4500_l01-07_reading.md</a></p><pre translate="no"># R4500 (HStAM 4 d Nr. 1218 no. 49), cipher lines 1-7: partial reading (decoded, not read)
 
 Rests on: the sign-by-sign decode `reading_tokens.txt` (key in NOTES.md, rebuilt ciphertext-only) and, for ll. 1-4,
 the contemporary interlinear gloss as far as it can be read on the only scan (DECODE `IMG_R4500_I26572_P.jpg`, main
@@ -248,7 +248,7 @@ bei di[…]n boni […] ungelegen.
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Hessisches Staatsarchiv Marburg, HStAM 4 d Nr. 1218, via DECODE</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="harley286.html" rel="prev">&larr; D&rsquo;Ewes&rsquo;s cipher log 1635 1635&ndash;36</a><a href="ferdinand3.html" rel="next">Ferdinand III and the Cardinal-Infante 1634&ndash;40 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">&#437;&middot;3&middot;31&middot;17&middot;50&middot;&Delta;&middot;31&middot;&#437;&middot;3&middot;10&middot;5&middot;&szlig;&middot;A&middot;3&middot;30&middot;22&middot;5&middot;31 &hellip;<br>despois de hontem uos &hellip;<br>3 = e &middot; 4 = a &middot; 5 / 50 = o &middot; &#437; = d &middot; &Delta; / 11 = i &middot; x = c</div>
+  <div class="cipherstrip" translate="no">&#437;&middot;3&middot;31&middot;17&middot;50&middot;&Delta;&middot;31&middot;&#437;&middot;3&middot;10&middot;5&middot;&szlig;&middot;A&middot;3&middot;30&middot;22&middot;5&middot;31 &hellip;<br>despois de hontem uos &hellip;<br>3 = e &middot; 4 = a &middot; 5 / 50 = o &middot; &#437; = d &middot; &Delta; / 11 = i &middot; x = c</div>
   <p class="kicker">Lisbon &rarr; the army of the Alentejo &middot; substitution with homophones on Portuguese &middot; 13&ndash;26 May 1663 &middot; key from the ciphertext alone</p>
   <h1>Afonso VI to the Count of Vila Flor, May 1663</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_afonso-vi-of-portugal.jpg" alt="Afonso VI of Portugal" title="Afonso VI of Portugal: Portrait, 17th century. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Afonso VI of Portugal</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_sancho-manuel-de-vilhena-count-of-vila-flor.jpg" alt="Sancho Manuel de Vilhena, Count of Vila Flor" title="Sancho Manuel de Vilhena, Count of Vila Flor: Portrait by Feliciano de Almeida, 1673-75 (Uffizi, Florence). Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Sancho Manuel de Vilhena, Count of Vila Flor</figcaption></figure></div><!-- /parties -->
@@ -102,19 +102,19 @@
 <p><strong>A test fixed in advance.</strong> The 13 May letter, transcribed without the key (636 symbols), was decoded with the frozen K1 and scored with a Portuguese language model: &minus;2.61 per character. The same letter with its symbols shuffled scored at best &minus;4.52, and keys with permuted values at best &minus;5.52 in 200 trials, while a Portuguese text enciphered with K1 with 3% of simulated errors scores &minus;2.58. K1 covers 92.8% of the 13 May symbols; the extra homophones of K2 were then set on that letter.</p>
 <p><strong>The other copies.</strong> The second copy of 26 May (image 39) and the second copy of the 15 May note (image 71) are enciphered with other homophones and other line breaks; each gives the same text, and between them they settle every doubtful symbol of the first copies. The frozen K1 decodes the note at &minus;2.25 per character, against at best &minus;4.72 for the controls. Of the long 15 May letter both copies were deciphered with K3: they agree with the established text at 98.7% and 99.0%, and with each other at 0.927, against at best 0.131 when one copy&rsquo;s symbols are shuffled (20 trials).</p>
 <p><strong>A sentence in clear.</strong> Copy 1 of the long letter writes one sentence in clear that copy 2 enciphers (image 57, lines 20&ndash;26). The key gives 164 of its 166 characters; the two differences are spelling (<em>quasi</em> and <em>quazi</em>, <em>thenente</em> and <em>tenente</em>):</p>
-<pre>K3 on copy 2: a defensa e quazi no mesmo tempo tinha enviado o tenente de mestre de campo general luis ribeiro para que tomando as noticias convenientes encaminhe dali as carruagens e outros socorros pela parte mais segura
+<pre translate="no">K3 on copy 2: a defensa e quazi no mesmo tempo tinha enviado o tenente de mestre de campo general luis ribeiro para que tomando as noticias convenientes encaminhe dali as carruagens e outros socorros pela parte mais segura
 copy 1, clear:    E quasi no mesmo tempo tinha enviado o thenente de m[estr]e de campo g[ene]r[a]l Luis R[ibeir]o, para q[ue] tomando as noticias convenientes encaminhe dali as carruagens, e outros socorros p[e]la parte mais segura.</pre>
 <p>In the cipher the slip is the encipherer&rsquo;s: <em>quazi</em> is written with F (<em>h</em>) where K (<em>z</em>) was meant.</p>
 
 <h2 id="check"><span class="num">04</span> The statistical check</h2>
-<p>The project&rsquo;s statistical check (<code>docs/_validate.py</code>) was run on the two letters deciphered with K2, 13 May and the 15 May note: 1,139 symbols of 37 kinds, scored with a Portuguese letter model. The reading scores &minus;2.36 per letter. Random keys score &minus;7.41 on average, 6.8 standard deviations lower, and a key fitted by the annealer to the same symbols in shuffled order reaches at best &minus;3.64. The annealer run on the real text from random starting keys reaches &minus;2.50, close to the reading, so the search does find this key. The verdict is <strong>pass</strong>: with about thirty occurrences per symbol, the letter statistics separate this key from any key fitted to noise.</p>
+<p>The project&rsquo;s statistical check (<code translate="no">docs/_validate.py</code>) was run on the two letters deciphered with K2, 13 May and the 15 May note: 1,139 symbols of 37 kinds, scored with a Portuguese letter model. The reading scores &minus;2.36 per letter. Random keys score &minus;7.41 on average, 6.8 standard deviations lower, and a key fitted by the annealer to the same symbols in shuffled order reaches at best &minus;3.64. The annealer run on the real text from random starting keys reaches &minus;2.50, close to the reading, so the search does find this key. The verdict is <strong>pass</strong>: with about thirty occurrences per symbol, the letter statistics separate this key from any key fitted to noise.</p>
 
 <h2 id="reading"><span class="num">05</span> The four letters</h2>
 <figure class="creveal" data-src="reveal/vilaflor1663.json"></figure>
 <p class="legend">Clear text roman, cipher in <em>italic</em>; spelling of the cipher kept; word division, punctuation, capitals, u/v, i/j, cedillas and tildes editorial, since the cipher has no symbols for them; [x] an expanded abbreviation or restored letter; {x} an encipherer&rsquo;s slip corrected; &lsaquo;x&rsaquo; unresolved</p>
 
 <h3>13 May 1663: the cavalry on its way</h3>
-<blockquote lang="pt">
+<blockquote lang="pt" translate="no">
 Conde amigo. Eu ElRey vos envio muito saudar como aquelle q[ue] amo.<br><br>
 <em>A ultima carta que se recebeo vosa foi de </em>{10}<em> do corrente, e fico com cuidado de se nam hav{e}r recebido outra, e se entende pod[e]ria t{o}mar-se o correo. Despacho {es}te para vos avizar que Manoe[l] Freire de Andrade partio d{e} Coimbra em </em>9<em> deste á tarde com </em>203<em> cavallos, e escreve q[ue] nam faria outra detença mais q[u]e em montar alguns que hião desmontados; com elle deve hir tambem tudo o que faltava do socorro da Be{i}ra; conforme a isto pod{e}reis fazer conta de quando ahi poderá {c}hegar. Das companhias de cav[a]los desta cidade pasa amanhã a de Luis Lo[bo] ‹aal› de Agalega com </em>56<em> cavalos; no dia seguinte parte a do comisario Gonçalo da Costa, e no outro Diogo Luis Ribeiro e Jorge Furtado, e cada hum leva </em>55<em> cavalos pelo menos. Nam se oferece outra couza de q[ue] vos avizar mais que estar-se esperando {c}oreio com todo o cuidado.</em><br><br>
 Escrita em L[isbo]a a 13 de Mayo de 1663. Rey.
@@ -125,7 +125,7 @@ Escrita em L[isbo]a a 13 de Mayo de 1663. Rey.
 <p>Partly in clear and partly in cipher. The cipher carries everything the enemy should not learn: the Beira reinforcements reported by Pedro Jaques de Magalh&atilde;es (1,801 foot in the <em>ter&ccedil;os</em> of Manuel Ferreira Rebelo and Paulo de Andrade, 408 horse), Manuel Freire de Andrade&rsquo;s 203 horse, three Lisbon cavalry companies embarking with 170 horse and Jorge Furtado following with 60; the King&rsquo;s plan to make Set&uacute;bal a place of arms and to come himself to Set&uacute;bal or Palmela; 44,000 <em>cruzados</em> for the pay that left on Thursday and have taken shelter somewhere still unknown, with boots and other stores, money for the French and a thousand <em>cruzados</em> for the English, &ldquo;e que tudo se tem entendido estar em Evora&rdquo;; and the mestre de campo Ant&oacute;nio Soares da Costa and an engineer sent to Montemor. In clear are the greeting, the doctrine that an army raised and paid by the kingdom exists to fight when it must, and the order to send a courier every day, &ldquo;ainda que n&atilde;o haja couza de novo&rdquo;.</p>
 
 <h3>15 May 1663: &ldquo;a todo o risco&rdquo;</h3>
-<blockquote lang="pt">
+<blockquote lang="pt" translate="no">
 Conde amigo. Eu ElRey vos envio muito saudar como aquelle que amo.<br><br>
 <em>Demais do que vos digo em outra carta desta mesma data, tornando-sse a considerar a materia principal de que nella se trata, fui servido rezolver que, em cazo que o inimigo persevere no sitio de Evora e reduza aquela cidade a termos perigozos, ajunteis todas as forças dessa provincia, e com os socorros que das outras espera{i}s a procureis socorrer a todo o risco, ainda que vos exponhais a[o] ultimo transe de huma batalha, porque assim convem á defença do reino e a meu serviço, pella importancia da praça e conse[q]uencias que se seguirão d{o} sucesso que ella tiver; o que espero executareis com a rezoluçam e valor q{ue} he necessaria.</em><br><br>
 Escrita em L[isbo]a a 15 de Mayo de 1663. Rey.
@@ -133,7 +133,7 @@ Escrita em L[isbo]a a 15 de Mayo de 1663. Rey.
 <p>A note added to the long letter the day after &Eacute;vora was invested, wholly in cipher between the greeting and the date. The main question has been considered again: if the enemy keeps up the siege and puts the city in danger, Vila Flor is to gather all the forces of the province and the help expected from the others, and relieve it at all risk, &ldquo;even exposing yourself to the last extremity of a battle&rdquo;, for the defence of the kingdom requires it.</p>
 
 <h3>26 May 1663: the final resolution</h3>
-<blockquote lang="pt">
+<blockquote lang="pt" translate="no">
 Conde Amigo. Eu ElRey vos envio muito saudar como aquelle q[ue] amo.<br><br>
 <em>Despois de hontem vos haver escrito as cartas cujo duplicado vai com esta, pareceo tornar-vos a dizer por ultima rezolução que o que convem a conservaçam de meus reinos he socorrer Evora em todo o cazo e a todo o risco, sem se duvidar desta rezoluçam; o modo e a forma haveis vós de dispor como vos parec{e}r. Esta minha carta mostrareis aos cabos desse exercito, de cujo valor e rezolução espero que todo este reino lhes deva sua conservação. Tambem me pareceo dizer-vos que logo, sem tardança, deveis logo mover esse exercito, tanto para animar essa gente como para entender o inimigo que he esta a minha rezoluçam; e dentro de dous dias partirá daqui dinheiro consideravel, que baste para paga do exercito e das carruagens; o q[u]e podeis fazer notorio a todos, [p]ara que o tenham entendido.</em><br><br>
 Escrita em Lixb[o]a a 26 de Mayo de 1663. Rey.
@@ -163,7 +163,7 @@ Escrita em Lixb[o]a a 26 de Mayo de 1663. Rey.
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>Afonso VI to the Count of Vila Flor, 13 May 1663: the cavalry sent as reinforcements</h3>
 <p>Written two days after Don John appeared before Estremoz and the day before Évora was invested, the letter first worries about the general’s silence: the courier may have been taken. Then it announces, company by company, the cavalry leaving for the Alentejo.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-13_transcription.txt">1663-05-13_transcription.txt</a></p><pre># 13 May 1663: the cavalry sent as reinforcements; ANTT, Luís de Miranda Pereira, liv. 2 (PT/TT/LMP/0002), image 87 of the DigitArq digitisation
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-13_transcription.txt">1663-05-13_transcription.txt</a></p><pre translate="no"># 13 May 1663: the cavalry sent as reinforcements; ANTT, Luís de Miranda Pereira, liv. 2 (PT/TT/LMP/0002), image 87 of the DigitArq digitisation
 # one line per manuscript line; ? = doubtful reading of the sign
 4 22 25 24 D u p 9 4 6 A p e Q g 31 3 6 g x 3 S g 50 22
 50 31 4 n 50 D Z g 10 Z 5 x 50 6 6 g B A g 3 n 11 x 50
@@ -191,7 +191,7 @@ h 3 22 4 55 x 4 22 4 h 5 31 a 3 h 5 30 3 40 5 31 40 4 30
 31 3 50 n 3 6 g x 3 5 22 24 6 4 x 50 22 K 4 Z 3 e 22 50 31
 4 22 11 K 4 6 30 4 11 31 e 22 3 g 31 24 4 6 31 3 3 31 a 3 6 4
 40 Z 50 K 5 6 3 11 5 x 5 30 A 50 Z 5 50 x 22 D Z 4 Z 50</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-13_decryption.txt">1663-05-13_decryption.txt</a></p><pre># 13 May 1663: the cavalry sent as reinforcements: token=value with key K2 (key_K2.tsv); ‹x› unresolved
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-13_decryption.txt">1663-05-13_decryption.txt</a></p><pre translate="no"># 13 May 1663: the cavalry sent as reinforcements: token=value with key K2 (key_K2.tsv); ‹x› unresolved
 L01	4=a 22=u 25=l 24=t D=i u=m p=a 9=c 4=a 6=r A=t p=a e=q Q=v g=e 31=s 3=e 6=r g=e x=c 3=e S=b g=e 50=o 22=u
 L02	50=o 31=s 4=a n=f 50=o D=i Z=d g=[10] 10=h Z=d 5=o x=c 50=o 6=r 6=r g=e B=n A=t g=e 3=e n=f 11=i x=c 50=o
 L03	x=c 50=o 30=m 9=c 22=u 11=i Z=d 4=a 53=d 50=o Z=d g=e 31=s 3=e B=n 4=a 30=m 10=h 4=a 22=u 30=m 6=r 6=r 3=e
@@ -218,7 +218,7 @@ L23	h=l 3=e 22=u 4=a 55=[55] x=c 4=a 22=u 4=a h=l 5=o 31=s a=p 3=e h=l 5=o 30=m 
 L24	31=s 3=e 50=o n=f 3=e 6=r g=e x=c 3=e 5=o 22=u 24=t 6=r 4=a x=c 50=o 22=u K=z 4=a Z=d 3=e e=q 22=u 50=o 31=s
 L25	4=a 22=u 11=i K=z 4=a 6=r 30=m 4=a 11=i 31=s e=q 22=u 3=e g=e 31=s 24=t 4=a 6=r 31=s 3=e 3=e 31=s a=p 3=e 6=r 4=a
 L26	40=n Z=d 50=o K=z 5=o 6=r 3=e 11=i 5=o x=c 5=o 30=m A=t 50=o Z=d 5=o 50=o x=c 22=u D=i Z=d 4=a Z=d 50=o</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-13_reading.md">1663-05-13_reading.md</a></p><pre># 13 May 1663: the cavalry sent as reinforcements: established text (Portuguese)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-13_reading.md">1663-05-13_reading.md</a></p><pre translate="no"># 13 May 1663: the cavalry sent as reinforcements: established text (Portuguese)
 
 Conventions: {x} probable; ‹x› clerk&#x27;s slip or unresolved; [..] editorial.
 
@@ -227,7 +227,7 @@ Conde amigo. Eu ElRey vos envio muito saudar como aquelle q[ue] amo.
 A ultima carta que se recebeo vosa foi de {10} do corrente, e fico com cuidado de se nam hav{e}r recebido outra, e se entende pod[e]ria t{o}mar-se o correo. Despacho {es}te para vos avizar que Manoe[l] Freire de Andrade partio d{e} Coimbra em 9 deste á tarde com 203 cavallos, e escreve q[ue] nam faria outra detença mais q[u]e em montar alguns que hião desmontados; com elle deve hir tambem tudo o que faltava do socorro da Be{i}ra; conforme a isto pod{e}reis fazer conta de quando ahi poderá {c}hegar. Das companhias de cav[a]los desta cidade pasa amanhã a de Luis Lo[bo] ‹aal› de Agalega com 56 cavalos; no dia seguinte parte a do comisario Gonçalo da Costa, e no outro Diogo Luis Ribeiro e Jorge Furtado, e cada hum leva 55 cavalos pelo menos. Nam se oferece outra couza de q[ue] vos avizar mais que estar-se esperando {c}oreio com todo o cuidado.
 
 Escrita em L[isbo]a a 13 de Mayo de 1663. — Rey. — [Conde de Castelo Melhor]. — [Adresse :] P[ar]a o Conde de V[ila] Flor.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-13_translation.md">1663-05-13_translation.md</a></p><pre># 13 May 1663: the cavalry sent as reinforcements: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-13_translation.md">1663-05-13_translation.md</a></p><pre translate="no"># 13 May 1663: the cavalry sent as reinforcements: English translation
 
 Count, my friend. I the King send you warm greetings, as one whom I love.
 
@@ -238,7 +238,7 @@ Of the cavalry companies of this city, that of Luís Lobo (?) […] de Agalega l
 Written in Lisbon on 13 May 1663. The King. — The Count of Castelo Melhor. — To the Count of Vila Flor.</pre></details>
 <h3>Afonso VI to the Count of Vila Flor, 15 May 1663, the other letter: reinforcements, money, and the King at Setúbal</h3>
 <p>This is the “other letter of this same date” to which the ciphered note of 15 May refers. Partly in clear and partly in cipher, it keeps for the cipher everything that would inform the enemy: the reinforcements on the way (Beira foot and horse, Lisbon companies), the King’s plan to set up a place of arms at Setúbal or Palmela, the pay money, the help sent to Montemor. Left in clear are the greeting, the doctrine (“an army is there to fight”) and the request for a courier every day.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-15a_transcription.txt">1663-05-15a_transcription.txt</a></p><pre># 15 May 1663, the other letter: reinforcements, money, and the King at Setúbal; ANTT, Luís de Miranda Pereira, liv. 2 (PT/TT/LMP/0002), two ciphered copies: images 53, 54 and 59 (copy 1); images 55, 56 and 57 (copy 2)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-15a_transcription.txt">1663-05-15a_transcription.txt</a></p><pre translate="no"># 15 May 1663, the other letter: reinforcements, money, and the King at Setúbal; ANTT, Luís de Miranda Pereira, liv. 2 (PT/TT/LMP/0002), two ciphered copies: images 53, 54 and 59 (copy 1); images 55, 56 and 57 (copy 2)
 # one line per manuscript line; ? = doubtful reading of the sign
 4 Z 3 n 3 B 31 4 3 21 22 4 F 11 40 5 30 3 31 30 5 24 3 30 17 5 24 11
 40 F 4 3 40 22 D 4 Z 50 5 24 3 40 3 B 24 3 Z 3 30 3 31 24 6 3
@@ -247,7 +247,7 @@ Z 3 x 4 30 17 50 r 3 B 3 6 4 h h 22 11 31 6 11 7 3 11 6 50 17 4 6 4
 11 3 40 24 3 31 3 B x 4 30 11 40 F 3 Z 4 h 11 4 31 x 4 6 6 22 4 r
 3 40 31 3 50 22 24 6 50 31 31 50 x 5 6 6 5 31 17 3 h 4 17 4 6 24 3 30
 4 11 31 31 3 r 22 6 4</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-15a_decryption.txt">1663-05-15a_decryption.txt</a></p><pre># 15 May 1663, the other letter: reinforcements, money, and the King at Setúbal: token=value with key K3 (key_K3.tsv); ‹x› unresolved
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-15a_decryption.txt">1663-05-15a_decryption.txt</a></p><pre translate="no"># 15 May 1663, the other letter: reinforcements, money, and the King at Setúbal: token=value with key K3 (key_K3.tsv); ‹x› unresolved
 L01	4=a Z=d 3=e n=f 3=e B=n 31=s 4=a 3=e 21=q 22=u 4=z F=h 11=i 40=n 5=o 30=m 3=e 31=s 30=m 5=o 24=t 3=e 30=m 17=p 5=o 24=t 11=i
 L02	40=n F=h 4=a 3=e 40=n 22=u D=i 4=a Z=d 50=o 5=o 24=t 3=e 40=n 3=e B=n 24=t 3=e Z=d 3=e 30=m 3=e 31=s 24=t 6=r 3=e
 L03	Z=d 3=e x=c 4=a 30=m 17=p 50=o r=g 3=e B=n 3=e 6=r 4=a h=l h=l 22=u 11=i 31=s 6=r 11=i 7=b 3=e 11=i 6=r 50=o 17=p 4=a 6=r 4=a
@@ -255,7 +255,7 @@ L04	21=q 22=u 3=e 24=t 50=o 30=m 4=a 40=n Z=d 50=o 4=a 31=s 40=n 50=o 24=t 11=i 
 L05	11=i 3=e 40=n 24=t 3=e 31=s 3=e B=n x=c 4=a 30=m 11=i 40=n F=h 3=e Z=d 4=a h=l 11=i 4=a 31=s x=c 4=a 6=r 6=r 22=u 4=a r=g
 L06	3=e 40=n 31=s 3=e 50=o 22=u 24=t 6=r 50=o 31=s 31=s 50=o x=c 5=o 6=r 6=r 5=o 31=s 17=p 3=e h=l 4=a 17=p 4=a 6=r 24=t 3=e 30=m
 L07	4=a 11=i 31=s 31=s 3=e r=g 22=u 6=r 4=a</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-15a_reading.md">1663-05-15a_reading.md</a></p><pre># 15 May 1663, the other letter: reinforcements, money, and the King at Setúbal: established text (Portuguese)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-15a_reading.md">1663-05-15a_reading.md</a></p><pre translate="no"># 15 May 1663, the other letter: reinforcements, money, and the King at Setúbal: established text (Portuguese)
 
 Conventions: {x} probable; ‹x› clerk&#x27;s slip or unresolved; [..] editorial.
 
@@ -268,7 +268,7 @@ O que daqui se vos pode dizer he, que assim para que {se a}junta exercito, e o R
 Para engrossar ao diante e conservar esse exercito, pareceo o meio mais eficaz passar eu a essa provincia; e assim ordeno se faça praça de armas na villa de Setuval, por se julgar parte mais acomodada por muitas razões, e ali mando juntar o que for possivel com toda a brevidade, e com a mesma passarei eu logo a assistir naquella villa ou na de Palmela, para socorrer como e aonde o tempo mostrar que he necessario; e no interim e sempre se vos hirá acudindo com a maior pontualidade que puder ser, particularmente com dinheiro para paga dos soldados: quarenta e quatro mil cruzados tinham partido daqui quinta feira, e se entende estão recolhidos em parte segura, mas ainda se não sabe ao certo aonde, e com elles huma partida de botas e outras couzas. Tambem mandei remeter dinheiro para os Francezes, e mil cruzados que faltarão para os Inglezes. E que tudo se tem entendido estar em Evora. Aquella cidade tenho por bastantemente prevenida, conforme o tempo deu lugar, e vos agardeço a deligencia com que o fizestes; espero em Deos que se defenderá té que chegueis a socorrê-la; e sendo ella da importancia e reputação que sabeis, não tenho para que vo-la encomendar. A Montemor me pareceo enviar o mestre de campo Antonio Soares da Costa e o engenheiro Adam Fr[ancis]co de Pontes para assistir ao que for necessario para sua defensa; e quazi no mesmo tempo tinha enviado o tenente de mestre de campo general Luis Ribeiro, para que tomando as noticias convenientes encaminhe dali as carruagens e outros socorros pela parte mais segura. Ao correio mor se ordenou mudasse as postas como apontais e as dobrasse.
 
 Encomendovos muito, que todos os dias infalivelmente me despacheis hum correyo pelo menos, com aviso do que for succedendo, ainda que não haja couza de novo, para me tirar do cuidado em que he força esteja do que passa dessa banda. Escrita em L[isbo]a a 15 de Mayo de 1663. — Rey. — [Conde de Castelo Melhor]. — P[ar]a o Conde de Villa Flor.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-15a_translation.md">1663-05-15a_translation.md</a></p><pre># 15 May 1663, the other letter: reinforcements, money, and the King at Setúbal: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-15a_translation.md">1663-05-15a_translation.md</a></p><pre translate="no"># 15 May 1663, the other letter: reinforcements, money, and the King at Setúbal: English translation
 
 Count, my friend. I the King send you warm greetings, as one whom I love. Your letters of the 12th of this month have been received, in which you report what had happened up to that time and what you had learnt of the enemy; this would have caused me much greater anxiety had I not you at the head of my arms, and with you the commanders who assist you, whose valour I see passes to all the soldiers of that army and even to the inhabitants of every place, according to what I am told of their spirit; which gives me great satisfaction.
 
@@ -281,7 +281,7 @@ To enlarge this army in future and maintain it, the most effective means seemed 
 I strongly charge you to send me without fail every day at least one courier, with word of what is happening, even if there is nothing new, to free me from the anxiety in which I must needs be about what is going on on that side. Written in Lisbon on 15 May 1663. The King. — The Count of Castelo Melhor. — To the Count of Vila Flor.</pre></details>
 <h3>Afonso VI to the Count of Vila Flor, 15 May 1663: “at the risk of a battle”</h3>
 <p>The day after Évora was invested, the King added to a long letter of the same date a note entirely in cipher apart from the greeting and the date. The main question had been “reconsidered”: if the enemy persisted and put the city in danger, Vila Flor was to gather all his forces and relieve it at all risk, “even exposing yourself to the last extremity of a battle”.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-15_transcription.txt">1663-05-15_transcription.txt</a></p><pre># 15 May 1663: “at the risk of a battle”; ANTT, Luís de Miranda Pereira, liv. 2 (PT/TT/LMP/0002), image 69 of the DigitArq digitisation; second ciphered copy image 71
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-15_transcription.txt">1663-05-15_transcription.txt</a></p><pre translate="no"># 15 May 1663: “at the risk of a battle”; ANTT, Luís de Miranda Pereira, liv. 2 (PT/TT/LMP/0002), image 69 of the DigitArq digitisation; second ciphered copy image 71
 # one line per manuscript line; ? = doubtful reading of the sign
 Z 3 30 4 11 31 Z 50 21 22 3 22 50 31 Z 11 r 50 3 30 50 22 24 6 4
 x 4 6 24 4 Z 3 31 24 4 30 3 31 30 4 Z 4 24 4 24 50 6 40 4 B Z 50
@@ -303,7 +303,7 @@ Z 5 6 3 11 40 50 3 4 30 3 22 31 3 6 22 D x 50 17 3 h h 4
 x 3 31 31 50 21 22 3 3 h h 4 24 11 22 3 6 50 21 22 3 3 31 17 3
 6 50 3 d 3 x 22 24 4 6 3 11 31 x 50 30 4 6 3 K 50 h 22 x 4
 30 3 22 4 h 50 6 21 22 50 F 3 40 3 x 3 31 31 4 6 11 4</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-15_decryption.txt">1663-05-15_decryption.txt</a></p><pre># 15 May 1663: “at the risk of a battle”: token=value with key K2 (key_K2.tsv); ‹x› unresolved
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-15_decryption.txt">1663-05-15_decryption.txt</a></p><pre translate="no"># 15 May 1663: “at the risk of a battle”: token=value with key K2 (key_K2.tsv); ‹x› unresolved
 L01	Z=d 3=e 30=m 4=a 11=i 31=s Z=d 50=o 21=q 22=u 3=e 22=u 50=o 31=s Z=d 11=i r=g 50=o 3=e 30=m 50=o 22=u 24=t 6=r 4=a
 L02	x=c 4=a 6=r 24=t 4=a Z=d 3=e 31=s 24=t 4=a 30=m 3=e 31=s 30=m 4=a Z=d 4=a 24=t 4=a 24=t 50=o 6=r 40=n 4=a B=n Z=d 50=o
 L03	31=s 31=s 3=e 4=a x=c 50=o 40=n 31=s 11=i Z=d 3=e 6=r 4=a 6=r 4=a 30=m 4=a 24=t 3=e 6=r 11=i 4=a 17=p 6=r D=i 40=n x=c 11=i
@@ -324,7 +324,7 @@ L17	22=u 3=e 40=n x=c 11=i 4=a 31=s 21=q 22=u 3=e 31=s 3=e 31=s 3=e r=g 22=u 11=
 L18	x=c 3=e 31=s 31=s 50=o 21=q 22=u 3=e 3=e h=l h=l 4=a 24=t 11=i 22=u 3=e 6=r 50=o 21=q 22=u 3=e 3=e 31=s 17=p 3=e
 L19	6=r 50=o 3=e d=x 3=e x=c 22=u 24=t 4=a 6=r 3=e 11=i 31=s x=c 50=o 30=m 4=a 6=r 3=e K=z 50=o h=l 22=u x=c 4=a
 L20	30=m 3=e 22=u 4=a h=l 50=o 6=r 21=q 22=u 50=o F=h 3=e 40=n 3=e x=c 3=e 31=s 31=s 4=a 6=r 11=i 4=a</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-15_reading.md">1663-05-15_reading.md</a></p><pre># 15 May 1663: “at the risk of a battle”: established text (Portuguese)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-15_reading.md">1663-05-15_reading.md</a></p><pre translate="no"># 15 May 1663: “at the risk of a battle”: established text (Portuguese)
 
 Conventions: {x} probable; ‹x› clerk&#x27;s slip or unresolved; [..] editorial.
 
@@ -333,7 +333,7 @@ Conde amigo. Eu ElRey vos envio muito saudar como aquelle que amo.
 Demais do que vos digo em outra carta desta mesma data, tornando-sse a considerar a materia principal de que nella se trata, fui servido rezolver que, em cazo que o inimigo persevere no sitio de Evora e reduza aquela cidade a termos perigozos, ajunteis todas as forças dessa provincia, e com os socorros que das outras espera{i}s a procureis socorrer a todo o risco, ainda que vos exponhais a[o] ultimo transe de huma batalha, porque assim convem á defença do reino e a meu serviço, pella importancia da praça e conse[q]uencias que se seguirão d{o} sucesso que ella tiver; o que espero executareis com a rezoluçam e valor q{ue} he necessaria.
 
 Escrita em L[isbo]a a 15 de Mayo de 1663. — Rey. — [Conde de Castelo Melhor]. — [Adresse :] P[ar]a o Conde de Villa Flor.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-15_translation.md">1663-05-15_translation.md</a></p><pre># 15 May 1663: “at the risk of a battle”: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-15_translation.md">1663-05-15_translation.md</a></p><pre translate="no"># 15 May 1663: “at the risk of a battle”: English translation
 
 Count, my friend. I the King send you warm greetings, as one whom I love.
 
@@ -342,7 +342,7 @@ Besides what I tell you in another letter of this same date, the main matter tre
 Written in Lisbon on 15 May 1663. The King. — The Count of Castelo Melhor. — To the Count of Vila Flor.</pre></details>
 <h3>Afonso VI to the Count of Vila Flor, 26 May 1663: &quot;my final resolution&quot;</h3>
 <p>On 22 May 1663 Évora, one of the chief cities of the kingdom, surrendered to Don John Joseph of Austria. Four days later the court in Lisbon, governed by the Count of Castelo Melhor in the name of the young Afonso VI, wrote to the general of the Alentejo army, the Count of Vila Flor. The letter opens and closes in clear; the whole order is in cipher: relieve Évora “em todo o cazo e a todo o risco”, move the army without delay, show the letter to the commanders, and count on the pay money leaving in two days. Thirteen days later Vila Flor and Schomberg defeated Don John at Ameixial.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-26_transcription.txt">1663-05-26_transcription.txt</a></p><pre># 26 May 1663: &quot;my final resolution&quot;; Arquivo Nacional Torre do Tombo, Luís de Miranda Pereira, liv. 2 (PT/TT/LMP/0002), image 37 of the DigitArq digitisation; second ciphered copy (“via”) image 39
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-26_transcription.txt">1663-05-26_transcription.txt</a></p><pre translate="no"># 26 May 1663: &quot;my final resolution&quot;; Arquivo Nacional Torre do Tombo, Luís de Miranda Pereira, liv. 2 (PT/TT/LMP/0002), image 37 of the DigitArq digitisation; second ciphered copy (“via”) image 39
 # one line per manuscript line; ? = doubtful reading of the sign
 Z 3 31? 17 50 D 31 Z 3 10 5 B A 3 30 22 5 31 F 4 22 3 6 3 31 x
 6 11 24 5 4 31 x 4 6 24 4 31 x 22 D 50 Z 22 17 25 11 x 4 Z 50 22
@@ -370,7 +370,7 @@ Z 4 40 x 4 Z 3 22 3 11 31 h 50 r 5 30 50 22 3 6 3 31 31 3
 Z 5 3 d 3 6 x 11 24 50 3 Z 4 31 x 4 6 6 22 4 r 3 40 31 5 21
 3 17 50 Z 3 11 31 n 4 K 3 6 B 50 24 5 6 11 5 4 24 5 Z 50 31 #
 4 6 4 21 22 3 50 24 3 40 F 4 30 3 40 24 3 40 Z 11 Z 5</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-26_decryption.txt">1663-05-26_decryption.txt</a></p><pre># 26 May 1663: &quot;my final resolution&quot;: token=value with key K1 (key_K1.tsv); ‹x› unresolved
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-26_decryption.txt">1663-05-26_decryption.txt</a></p><pre translate="no"># 26 May 1663: &quot;my final resolution&quot;: token=value with key K1 (key_K1.tsv); ‹x› unresolved
 L01	Z=d 3=e 31?=s 17=p 50=o D=i 31=s Z=d 3=e 10=h 5=o B=n A=t 3=e 30=m 22=u 5=o 31=s F=h 4=a 22=u 3=e 6=r 3=e 31=s x=c
 L02	6=r 11=i 24=t 5=o 4=a 31=s x=c 4=a 6=r 24=t 4=a 31=s x=c 22=u D=i 50=o Z=d 22=u 17=p 25=l 11=i x=c 4=a Z=d 50=o 22=u
 L03	4=a 11=i x=c 50=o 30=m 3=e 31=s 24=t 4=a a=p 4=a 6=r 3=e x=c 3=e 50=o 24=t 50=o 6=r 40=n 4=a 6=r 22=u 50=o 31=s
@@ -397,7 +397,7 @@ L23	40=n 31=s 11=i Z=d 3=e 6=r 4=a 22=u 3=e h=l 21=q 22=u 3=e 7=b 4=a 31=s 24=t 
 L24	Z=d 5=o 3=e d=x 3=e 6=r x=c 11=i 24=t 50=o 3=e Z=d 4=a 31=s x=c 4=a 6=r 6=r 22=u 4=a r=g 3=e 40=n 31=s 5=o 21=q
 L25	3=e 17=p 50=o Z=d 3=e 11=i 31=s n=f 4=a K=z 3=e 6=r B=n 50=o 24=t 5=o 6=r 11=i 5=o 4=a 24=t 5=o Z=d 50=o 31=s #=[p]
 L26	4=a 6=r 4=a 21=q 22=u 3=e 50=o 24=t 3=e 40=n F=h 4=a 30=m 3=e 40=n 24=t 3=e 40=n Z=d 11=i Z=d 5=o</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-26_reading.md">1663-05-26_reading.md</a></p><pre># 26 May 1663: &quot;my final resolution&quot;: established text (Portuguese)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-26_reading.md">1663-05-26_reading.md</a></p><pre translate="no"># 26 May 1663: &quot;my final resolution&quot;: established text (Portuguese)
 
 Conventions: {x} probable; ‹x› clerk&#x27;s slip or unresolved; [..] editorial.
 
@@ -406,7 +406,7 @@ Conde Amigo. Eu ElRey vos envio muito saudar como aquelle q[ue] amo.
 Despois de hontem vos haver escrito as cartas cujo duplicado vai com esta, pareceo tornar-vos a dizer por ultima rezolução que o que convem a conservaçam de meus reinos he socorrer Evora em todo o cazo e a todo o risco, sem se duvidar desta rezoluçam; o modo e a forma haveis vós de dispor como vos parec{e}r. Esta minha carta mostrareis aos cabos desse exercito, de cujo valor e rezolução espero que todo este reino lhes deva sua conservação. Tambem me pareceo dizer-vos que logo, sem tardança, deveis logo mover esse exercito, tanto para animar essa gente como para entender o inimigo que he esta a minha rezoluçam; e dentro de dous dias partirá daqui dinheiro consideravel, que baste para paga do exercito e das carruagens; o q[u]e podeis fazer notorio a todos, [p]ara que o tenham entendido.
 
 Escrita em Lixb[o]a a 26 de Mayo de 1663. — Rey. — [Conde de Castelo Melhor]. — [Adresse :] P[ar]a o Conde de V[ila] Flor.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-26_translation.md">1663-05-26_translation.md</a></p><pre># 26 May 1663: &quot;my final resolution&quot;: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vilaflor1663/texts/1663-05-26_translation.md">1663-05-26_translation.md</a></p><pre translate="no"># 26 May 1663: &quot;my final resolution&quot;: English translation
 
 Count, my friend. I the King send you warm greetings, as one whom I love.
 
@@ -426,13 +426,13 @@ Written in Lisbon on 26 May 1663. The King. — The Count of Castelo Melhor. —
 <li>Brice Dudout, <a href="https://bdudout.github.io/europe-chiffree/en/documents.html#vilaflor-1663">Europe chiffr&eacute;e: Afonso VI to the Count of Vila Flor, four ciphered letters, 13&ndash;26 May 1663</a> (27 October 2026): transcriptions, keys K1&ndash;K3, Portuguese text, translation and notes, contributed to this repository.</li>
 <li>Conde da Ericeira, <em>Historia de Portugal Restaurado</em>, part II (Lisbon, 1698), book VIII; edition of 1751.</li>
 </ul>
-<p class="muted">The transcriptions, decryptions, Portuguese texts and translations of the four letters, the three key files and the validation data are in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/vilaflor1663"><code>targets/vilaflor1663/</code></a>.</p>
+<p class="muted">The transcriptions, decryptions, Portuguese texts and translations of the four letters, the three key files and the validation data are in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/vilaflor1663"><code translate="no">targets/vilaflor1663/</code></a>.</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Manuscript rights: Arquivo Nacional Torre do Tombo, via DigitArq</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="wasowicz1662.html" rel="prev">&larr; W&#261;sowicz to Lubomirski 1662&ndash;1663 1662&ndash;1663</a><a href="wesselenyi1664.html" rel="next">Wessel&eacute;nyi c. 1663&ndash;64 c. 1663&ndash;64 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

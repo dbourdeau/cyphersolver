@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">1 0 1 0 &middot; 7 6 5 2 7 6 7 4 &middot; 0 1 0 2 &middot; 0 8 6 7 1 2 3 2 8 4 1 5 &hellip;<br>[Nostro Signore] desidera &hellip; certificato &hellip;<br>1 = u|t &middot; 2 = i|m &middot; 4 = a|l &middot; 5 = o|s &middot; 6 = e|n &middot; 7 = d|r &middot; 0 = null &middot; 1010 = Nostro Signore &middot; 2090 = che</div>
+  <div class="cipherstrip" translate="no">1 0 1 0 &middot; 7 6 5 2 7 6 7 4 &middot; 0 1 0 2 &middot; 0 8 6 7 1 2 3 2 8 4 1 5 &hellip;<br>[Nostro Signore] desidera &hellip; certificato &hellip;<br>1 = u|t &middot; 2 = i|m &middot; 4 = a|l &middot; 5 = o|s &middot; 6 = e|n &middot; 7 = d|r &middot; 0 = null &middot; 1010 = Nostro Signore &middot; 2090 = che</div>
   <p class="kicker">Rome &rarr; Madrid &middot; polyphonic cipher, two letters to a digit &middot; 1567</p>
   <h1>Cardinal Alessandrino to the nuncio in Spain, 1567</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_cardinal-alessandrino.jpg" alt="Cardinal Alessandrino" title="Cardinal Alessandrino: Portrait by Scipione Pulzone, 1586. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Cardinal Alessandrino</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_g-b-castagna.jpg" alt="G. B. Castagna" title="G. B. Castagna: Portrait as Pope Urban VII, Jacopino del Conte, 1590. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>G. B. Castagna</figcaption></figure></div><!-- /parties -->
@@ -80,7 +80,7 @@ clear: f. 163r, before R85, is about hurrying the archbishop of Toledo, Bartolom
 
 <h2 id="france"><span class="num">02</span> &ldquo;Put the Constable in a secure prison&rdquo;</h2>
 <figure class="creveal" data-src="reveal/nuncio1566.json"></figure>
-<p>R88 and R89 are two copies of one cipher, and R90 continues R89; the damaged figures of R88 (rows 10&ndash;17 of each page) are supplied from R89. From the reading of R89 (f. 314r&ndash;v, <code>texts/R89_reading.md</code>):</p>
+<p>R88 and R89 are two copies of one cipher, and R90 continues R89; the damaged figures of R88 (rows 10&ndash;17 of each page) are supplied from R89. From the reading of R89 (f. 314r&ndash;v, <code translate="no">texts/R89_reading.md</code>):</p>
 <blockquote><p>&hellip; ma [la] Regina è tanto timida et crede tanto al cancelliere, a Morviglier, a Limoges et a l&rsquo;Abaspina, suoi consiglieri, che non si sa risolvere a far cosa buona, et va sempre medicando il male col peggio. &hellip; Et per dirvi, [la] Regina a iuditio mio non è ugonotta, credo bene che sia una mala cristiana &hellip; In tanto vi dirò questo solo, che se S.M. facesse mettere in una prigione sicura il Conestabile et Memoransi suo figliolo, protestandoli che se in termine di tre giorni non facessero deponere le armi al Amiraglio et al principe di Condé li faria tagliare il capo, vedereste che si metteria fine a tanti tumulti assai presto &hellip;</p></blockquote>
 <p>[la] marks a word the code carries without the article; &hellip; marks a stretch left out here.</p>
 <p>&ldquo;The Queen is so timid, and trusts so much in the Chancellor, Morvilliers, Limoges and l&rsquo;Aubespine, her counsellors, that she cannot bring herself to do
@@ -103,12 +103,12 @@ belongs to October or early November 1567. R90 (f. 324r) carries the close: the 
 </ul>
 
 <h2 id="method"><span class="num">04</span> Method</h2>
-<p>The decoder is <code>targets/alessandrino1568/decrypt.py</code>, copied without change: a search that tries, at each digit, both of its
+<p>The decoder is <code translate="no">targets/alessandrino1568/decrypt.py</code>, copied without change: a search that tries, at each digit, both of its
 letters, the null, and any nomenclator group starting there, and keeps the best-scoring partial texts under the repository&rsquo;s shared Italian five-gram language model
 (it-cinquecento, no spaces). The six pages decode at &minus;1.7 to &minus;1.9 nats a letter, the level of the 1568 letters, and end in a few
 letters of clerk&rsquo;s padding. The two copies R88 and R89, decoded independently, give the same text wherever their transcriptions are
 clean, which is a check on both the key and the letter choices.</p>
-<p><strong>The re-reading of 22 October 2026.</strong> The character decode above gives fragments, not sentences. R87&rsquo;s contemporary decipherment on f. 251r (its top lines lost; it stops at &ldquo;resistere&rdquo;) was transcribed and aligned with the figures, and R88, R89 and R90 were compared with each other and against the clear sentence on f. 302r. These fixed the code values above, and every letter was then deciphered word by word on the figures, every word aligned with its figures (<code>research/reading_audit/b09_align.py</code>), with twelve transcription labels corrected on the images. Of the words, 169 of 190 (R85), 155 of 164 (R86), 437 of 448 (R87), 326 of 361 (R88), 336 of 349 (R89) and 45 of 48 (R90) are carried by their figures; the rest are bracketed. The readings, <code>texts/R85_reading.md</code> to <code>R90_reading.md</code>, have English beside them.</p>
+<p><strong>The re-reading of 22 October 2026.</strong> The character decode above gives fragments, not sentences. R87&rsquo;s contemporary decipherment on f. 251r (its top lines lost; it stops at &ldquo;resistere&rdquo;) was transcribed and aligned with the figures, and R88, R89 and R90 were compared with each other and against the clear sentence on f. 302r. These fixed the code values above, and every letter was then deciphered word by word on the figures, every word aligned with its figures (<code translate="no">research/reading_audit/b09_align.py</code>), with twelve transcription labels corrected on the images. Of the words, 169 of 190 (R85), 155 of 164 (R86), 437 of 448 (R87), 326 of 361 (R88), 336 of 349 (R89) and 45 of 48 (R90) are carried by their figures; the rest are bracketed. The readings, <code translate="no">texts/R85_reading.md</code> to <code translate="no">R90_reading.md</code>, have English beside them.</p>
 
 <h2 id="uncertain"><span class="num">05</span> What remains uncertain</h2>
 <ul>
@@ -123,7 +123,7 @@ clean, which is a check on both the key and the letter choices.</p>
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>R85, Spagna 1 item 1, f. 165r [1567]</h3>
 <p>Rome, 8 Jan 1567: the Pope wants to know whether the King&#x27;s journey will go ahead, because he would then meet him wherever suits him; the Queen Mother and the King of France wish Philip to invite them to a parley; the Pope distrusts &quot;words of women&quot; but urges the King to admit, even seek, the meeting, leaving it to his prudence, and offers to act as common father.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/decode/DOC_R85_D1646_1646.txt">DOC_R85_D1646_1646.txt</a></p><pre>#CATALOG NAME: Segr. Stato Spagna 1\1
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/decode/DOC_R85_D1646_1646.txt">DOC_R85_D1646_1646.txt</a></p><pre translate="no">#CATALOG NAME: Segr. Stato Spagna 1\1
 #IMAGE NAME: 165r.jpg
 #TRANSCRIBER NAME: RebAn
 #DATE OF TRANSCRIPTION: January 2, 2016
@@ -150,7 +150,7 @@ clean, which is a check on both the key and the letter choices.</p>
 7 7 6 2 8 5 2 1 6 6 0 4 5 0 3 4 8 6 5 6 0 2 0 6 0 2 4 6 8 4 7 4 0 7 2 0 3 4 7 6__ 2__ 6__ 6__ 2__ 6__ 2__ ?__ ?__ 6__ 0__ 3__ 9 4 1 
 6 4 0 9 0 4 4 1 7 4 0 8 5 5 4 0 2 0 9 0 5 2 4 0 2 6 0 5 6 7 1 2 1 5 0 7 2 0 7 2 5 0 0^ 0 7__ 2__ 5__ 0 3 0 1 0 7
 3 8 9 7 0^ 9 3 8 3 9 7</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R85_decryption.txt">R85_decryption.txt</a></p><pre># R85 decryption, copied verbatim from decode_updates/decryptions/R85.txt (22 Oct 2026); the decrypt_raw.txt decoder output (Lasry&#x27;s key DOC_R85_D3265) split into words for DECODE, no letters changed
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R85_decryption.txt">R85_decryption.txt</a></p><pre translate="no"># R85 decryption, copied verbatim from decode_updates/decryptions/R85.txt (22 Oct 2026); the decrypt_raw.txt decoder output (Lasry&#x27;s key DOC_R85_D3265) split into words for DECODE, no letters changed
 [f. 165r]
 nostro signore desiderati certificato sna andaua di re sa da si go per che fico si fise desideraria
 r maria co baro che fiin quello loco che ligion piu comodo il che farlo ap e del f che dirli ancora
@@ -163,7 +163,7 @@ prude &lt;60.&gt; l di re f pana e piu pratica il giore cognitione de le loro ma
 seno berna parlar nascoltarutti gia re non parese di uoler ricercara mai pare se benem puta i parrei
 comune lo faces e non mancara di fare in eini [...] ng p a una paltra cosa che sia inseruito di dio
 di s furgb pr pfc f pr</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/decrypt_raw.txt">decrypt_raw.txt</a></p><pre>== R85 165r.jpg (974 items, -1.88/item)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/decrypt_raw.txt">decrypt_raw.txt</a></p><pre translate="no">== R85 165r.jpg (974 items, -1.88/item)
 [NOSTRO SIGNORE]desideraticertificatosnaandauadi[RE]sadasigo[PER][CHE]ficosifisedesiderariarmariacobaro[CHE]fiin[QUELLO]loco[CHE]ligionpiucomodoil[CHE]farloapedelf[CHE]dirliancora[CHE]tuuiencertificat[SUA MAESTA]pamentecultanodesideris[CHE][RE]lidicercase[CHE]tenmondoaparlainei[QUI][RE]il[CHE]farianorimpestiebeuersip?uudice[NON]saperefzetsposafarfondamentoinparoledidonebensmplicaesorta[RE][CHE]fi[NON]sidigiri[CHE]ritalcolosponerosariusciregranfrutoallcgcatolicalia?ltrapiubandengatointendereipriuscirafrancene[PER]labf[CHE]uogliaadinterea[60.]iprocurareualabocamentosidiintesiottalaprude[60.]ldi[RE]fpanaepiupraticailgiorecognitionedeleloromaestacrederia[CHE][NON]potesenobernaparlarnascoltaruttigia[RE][NON]paresediuolerricercaramaiparesebenemputaiparreicomunelofacese[NON]mancaradifareineini??ngpaunapaltracosa[CHE]siainseruitodidiodisfurgbprpfcfpr
 
 == R86 236r.jpg (845 items, -1.84/item)
@@ -192,7 +192,7 @@ penaintantouidiro[QUEL]solo[CHE]se[SUA SANTITA]faceseintereinunaprigionesicurail
 
 == R90 324r.jpg (250 items, -1.99/item)
 instrutadeliuiodidi[QUELLO]cortedelanaturadictprincipalgesariaforsebene[CHE][RE]facesesasina[RE DI FRANCIA][CHE]nla[NON]a[QUELLO]buonipoiglierilpresodisedefpaicredepotersifidaresi[CHE]pocofidelmaisaranodp[CHE]sonoinfidel[CONCILIO]dispr[30.]pbfrpf</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R85_reading.md">R85_reading.md</a></p><pre># R85 — Cardinal Alessandrino to the nuncio Castagna, cipher of Rome, 8 January 1567 (Spagna 1, f. 165r)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R85_reading.md">R85_reading.md</a></p><pre translate="no"># R85 — Cardinal Alessandrino to the nuncio Castagna, cipher of Rome, 8 January 1567 (Spagna 1, f. 165r)
 
 Rests on: the figures, re-read on the DECODE image IMG_R85_I643_P1 at native resolution (eight labels corrected,
 `R85_transcription_corrected.txt`, `R85-R90_corrections.tsv`), with the key as the R87 decipherment (f. 251r) and the
@@ -238,7 +238,7 @@ servitio di Dio et [?di] Re.
   ticked run of 6s and 0s and 3 0 9 4 1 6 4 0 9 0, perhaps &quot;qualunque&quot;); &quot;et [?di] Re&quot; at the end (7 2 5 underlined,
   then 3010 and the closing nulls 3 8 9 7 0^ 9 3 8 3 9 7).
 - &quot;ha più pratica&quot;: 4 6 9 2 1 — one figure (6) over.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R85_en.md">R85_en.md</a></p><pre># R85 — English (Cardinal Alessandrino to the nuncio Castagna, cipher of Rome, 8 January 1567)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R85_en.md">R85_en.md</a></p><pre translate="no"># R85 — English (Cardinal Alessandrino to the nuncio Castagna, cipher of Rome, 8 January 1567)
 
 Translated from `R85_reading.md`; holes as there.
 
@@ -257,7 +257,7 @@ Holiness as common father should do it, he will not fail to do […] other thing
 the King.</pre></details>
 <h3>R86, Spagna 1 item 2, f. 236r [1567]</h3>
 <p>Rome, 25 July - 2 Aug 1567, Milan jurisdiction case: the Pope means, in confidence, to proceed with spiritual arms against the authors of the outrage, above all the Senate; the governor is to make them obey the monitories; the Holy See&#x27;s dignity requires action at least against the Capitano di giustizia, the fiscal and some senators; the King should deprive his two ministers of office.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/decode/DOC_R86_D1647_1647.txt">DOC_R86_D1647_1647.txt</a></p><pre>#CATALOG NAME: Segr. di Spagna 1\2
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/decode/DOC_R86_D1647_1647.txt">DOC_R86_D1647_1647.txt</a></p><pre translate="no">#CATALOG NAME: Segr. di Spagna 1\2
 #IMAGE NAME: 236.jpg
 #TRANSCRIBER NAME: RebAn
 #DATE OF TRANSCRIPTION: January 23, 2016
@@ -284,7 +284,7 @@ the King.</pre></details>
 2 1 4 7 6 0 2 7 1 2 0 9 7 6 3 4 1 2 0 5 1 5 2 0 2 2 6 2 5 1 7 2 0 7 6 4 0 5 3 2 1 2 5 8 4 5 7 5 0 5 0 2 
 7 4 7 6 0 4 0 1 0 1 0 6 0 9 0 5 4 1 2 5 1 4 1 2 5 6 6 0 0^. 0 7 2 0 6 0 9 0 6 6 0 7 5 1 6 7 4 0 1 0 9 0 3 4 7 6 0 2 6 5 1 
 4 6 0 4 0 9 0 7 6 5 1 7 6 0^. 4 0 5 9 5 7 1 1 6 4 2 6 6 1 6 0 3 8 0^. 7 9</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R86_decryption.txt">R86_decryption.txt</a></p><pre># R86 decryption, copied verbatim from decode_updates/decryptions/R86.txt (22 Oct 2026); the decrypt_raw.txt decoder output (Lasry&#x27;s key DOC_R85_D3265) split into words for DECODE, no letters changed
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R86_decryption.txt">R86_decryption.txt</a></p><pre translate="no"># R86 decryption, copied verbatim from decode_updates/decryptions/R86.txt (22 Oct 2026); the decrypt_raw.txt decoder output (Lasry&#x27;s key DOC_R85_D3265) split into words for DECODE, no letters changed
 [f. 236r]
 il disegno di con per dirlo ai posa lon &lt;60.&gt; a mostrarsi di sapera qui altri e riprocedere pura li
 autori dil pagato ma si in pura il senato ple sue armi spiritualismos iu sanc germania pnto prima
@@ -296,7 +296,7 @@ deli altri a bis che non siano per auentura castigati dei lor pncati pensandosi 
 potarsi tanto piu il fauore di re gpando ueria priuare i dui pregati suoi ministri d elogiums b loro
 si dare a nostro signore nzo a uistatione di quel en douerauzgare instan germania destr &lt;60.&gt;
 asportunamente f &lt;80.&gt; rz</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/decrypt_raw.txt">decrypt_raw.txt</a></p><pre>== R85 165r.jpg (974 items, -1.88/item)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/decrypt_raw.txt">decrypt_raw.txt</a></p><pre translate="no">== R85 165r.jpg (974 items, -1.88/item)
 [NOSTRO SIGNORE]desideraticertificatosnaandauadi[RE]sadasigo[PER][CHE]ficosifisedesiderariarmariacobaro[CHE]fiin[QUELLO]loco[CHE]ligionpiucomodoil[CHE]farloapedelf[CHE]dirliancora[CHE]tuuiencertificat[SUA MAESTA]pamentecultanodesideris[CHE][RE]lidicercase[CHE]tenmondoaparlainei[QUI][RE]il[CHE]farianorimpestiebeuersip?uudice[NON]saperefzetsposafarfondamentoinparoledidonebensmplicaesorta[RE][CHE]fi[NON]sidigiri[CHE]ritalcolosponerosariusciregranfrutoallcgcatolicalia?ltrapiubandengatointendereipriuscirafrancene[PER]labf[CHE]uogliaadinterea[60.]iprocurareualabocamentosidiintesiottalaprude[60.]ldi[RE]fpanaepiupraticailgiorecognitionedeleloromaestacrederia[CHE][NON]potesenobernaparlarnascoltaruttigia[RE][NON]paresediuolerricercaramaiparesebenemputaiparreicomunelofacese[NON]mancaradifareineini??ngpaunapaltracosa[CHE]siainseruitodidiodisfurgbprpfcfpr
 
 == R86 236r.jpg (845 items, -1.84/item)
@@ -325,7 +325,7 @@ penaintantouidiro[QUEL]solo[CHE]se[SUA SANTITA]faceseintereinunaprigionesicurail
 
 == R90 324r.jpg (250 items, -1.99/item)
 instrutadeliuiodidi[QUELLO]cortedelanaturadictprincipalgesariaforsebene[CHE][RE]facesesasina[RE DI FRANCIA][CHE]nla[NON]a[QUELLO]buonipoiglierilpresodisedefpaicredepotersifidaresi[CHE]pocofidelmaisaranodp[CHE]sonoinfidel[CONCILIO]dispr[30.]pbfrpf</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R86_reading.md">R86_reading.md</a></p><pre># R86 — Cardinal Alessandrino to the nuncio Castagna, cipher of Rome, 25 July - 2 August 1567 (Spagna 1, f. 236r)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R86_reading.md">R86_reading.md</a></p><pre translate="no"># R86 — Cardinal Alessandrino to the nuncio Castagna, cipher of Rome, 25 July - 2 August 1567 (Spagna 1, f. 236r)
 
 Rests on: the figures, re-read on the DECODE image IMG_R86_I650_P1 at native resolution (three labels corrected,
 `R86_transcription_corrected.txt`, `R85-R90_corrections.tsv`), with the key as the R87 decipherment (f. 251r) and the
@@ -366,7 +366,7 @@ destrezza opportunamente.
 - &quot;[?via] acquistarsi&quot;: 1 2 6 (6 for a) | 4 5 0 9 5 1 4 7 5 2 (a + 509 &quot;qui&quot; + starsi).
 - &quot;prefati&quot; 9 7 6 3 4 1 2; &quot;del offitio loro&quot;: 5 3 2 1 2 5 | 8 4 5 7 5 — one figure (8) before &quot;loro&quot; unexplained.
 - &quot;instanza&quot;: 2 6 5 1 4 6 0 4 (the z not marked); &quot;con destrezza&quot; 9 0 | 7 6 5 1 7 6 0^. 4.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R86_en.md">R86_en.md</a></p><pre># R86 — English (Cardinal Alessandrino to the nuncio Castagna, cipher of Rome, 25 July - 2 August 1567)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R86_en.md">R86_en.md</a></p><pre translate="no"># R86 — English (Cardinal Alessandrino to the nuncio Castagna, cipher of Rome, 25 July - 2 August 1567)
 
 Translated from `R86_reading.md`; holes as there.
 
@@ -383,7 +383,7 @@ the King ought to deprive his two said ministers of their office, to give His Ho
 Lordship should press for this with skill at the right time.</pre></details>
 <h3>R87, Spagna 1 item 3, ff. 249r-250r [1567]</h3>
 <p>About 2 Aug 1567: the Pope wants the King to go to Flanders soon, to restore religion there, in France and Germany; the Queen Mother of France wishes to be invited to a meeting, which the King should grant; the archbishop-elect of Cologne, unconfirmed and allied with the Duke of Cleves, is to be deprived, and the King should see that the chapter does not choose a suspect successor.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/decode/DOC_R87_D1648_1648.txt">DOC_R87_D1648_1648.txt</a></p><pre>#CATALOG NAME: Segr. di Stato Spagna 1\3
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/decode/DOC_R87_D1648_1648.txt">DOC_R87_D1648_1648.txt</a></p><pre translate="no">#CATALOG NAME: Segr. di Stato Spagna 1\3
 #IMAGE NAME: 249r.jpg-250r.jpg
 #TRANSCRIBER NAME: RebAn
 #DATE OF TRANSCRIPTION: January 23, 2016
@@ -446,7 +446,7 @@ Lordship should press for this with skill at the right time.</pre></details>
 5 1 4 7 5 0 5^. 0 2 5 0 5 2 0 7 6 5 2 7 6 7 4 0 2 0 9 0 3 0 1 0 1 5 3 4 2 ? 0 3 4 7 6 0 7 0 9 0 5 3 2 1 
 2 5 0 2 0 9 0 7 4 0 4 1 2 0 5 2 0 5 9 6 7 4 0 0^. 0 2 0 9 0 7 6 4 0 1 1 1 5 0 6 6 0 5 2 4 0 7 4 3 1 4 
 3 4 2 4 1 4 0 9 5 2 0 1 0 1 0 8 3 7 0^. 9 3 8 7 3</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R87_decryption.txt">R87_decryption.txt</a></p><pre># R87 decryption, copied verbatim from decode_updates/decryptions/R87.txt (22 Oct 2026); the decrypt_raw.txt decoder output (Lasry&#x27;s key DOC_R85_D3265) split into words for DECODE, no letters changed
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R87_decryption.txt">R87_decryption.txt</a></p><pre translate="no"># R87 decryption, copied verbatim from decode_updates/decryptions/R87.txt (22 Oct 2026); the decrypt_raw.txt decoder output (Lasry&#x27;s key DOC_R85_D3265) split into words for DECODE, no letters changed
 [f. 249r]
 nostro signore desider alleraua di re &lt;30.&gt; peto piu p c e suo inga si czpfi de &lt;60.&gt; l medio &lt;02.&gt;
 questa po tale data deci la comodare il mondo ui una riforma di tuto il cristianno mo si spensa che
@@ -475,7 +475,7 @@ i cosi dubita che mesi facies prati che ri disegnarla apersona suspetao rependen
 che non posare si sind na che u s r lo pugnare lo stato eclesias [?] i &lt;85.&gt; di quello arciuescouars
 &lt;05.&gt; is si residera che re uogli [?] fare quello ofitio che da lui si spera che re auuto ne sia d
 aguagliaua poi tucf &lt;70.&gt; p g crg</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/decrypt_raw.txt">decrypt_raw.txt</a></p><pre>== R85 165r.jpg (974 items, -1.88/item)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/decrypt_raw.txt">decrypt_raw.txt</a></p><pre translate="no">== R85 165r.jpg (974 items, -1.88/item)
 [NOSTRO SIGNORE]desideraticertificatosnaandauadi[RE]sadasigo[PER][CHE]ficosifisedesiderariarmariacobaro[CHE]fiin[QUELLO]loco[CHE]ligionpiucomodoil[CHE]farloapedelf[CHE]dirliancora[CHE]tuuiencertificat[SUA MAESTA]pamentecultanodesideris[CHE][RE]lidicercase[CHE]tenmondoaparlainei[QUI][RE]il[CHE]farianorimpestiebeuersip?uudice[NON]saperefzetsposafarfondamentoinparoledidonebensmplicaesorta[RE][CHE]fi[NON]sidigiri[CHE]ritalcolosponerosariusciregranfrutoallcgcatolicalia?ltrapiubandengatointendereipriuscirafrancene[PER]labf[CHE]uogliaadinterea[60.]iprocurareualabocamentosidiintesiottalaprude[60.]ldi[RE]fpanaepiupraticailgiorecognitionedeleloromaestacrederia[CHE][NON]potesenobernaparlarnascoltaruttigia[RE][NON]paresediuolerricercaramaiparesebenemputaiparreicomunelofacese[NON]mancaradifareineini??ngpaunapaltracosa[CHE]siainseruitodidiodisfurgbprpfcfpr
 
 == R86 236r.jpg (845 items, -1.84/item)
@@ -504,7 +504,7 @@ penaintantouidiro[QUEL]solo[CHE]se[SUA SANTITA]faceseintereinunaprigionesicurail
 
 == R90 324r.jpg (250 items, -1.99/item)
 instrutadeliuiodidi[QUELLO]cortedelanaturadictprincipalgesariaforsebene[CHE][RE]facesesasina[RE DI FRANCIA][CHE]nla[NON]a[QUELLO]buonipoiglierilpresodisedefpaicredepotersifidaresi[CHE]pocofidelmaisaranodp[CHE]sonoinfidel[CONCILIO]dispr[30.]pbfrpf</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R87_reading.md">R87_reading.md</a></p><pre># R87 — Cardinal Alessandrino to the nuncio Castagna, cipher of [Rome, about 2 August 1567] (Spagna 1, ff. 249r-250r)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R87_reading.md">R87_reading.md</a></p><pre translate="no"># R87 — Cardinal Alessandrino to the nuncio Castagna, cipher of [Rome, about 2 August 1567] (Spagna 1, ff. 249r-250r)
 
 Rests on: the contemporary decipherment on f. 251r of the same file (`R87_decifrato_f251r.txt`; DECODE &quot;cleartext&quot;
 image 251r.jpg), which covers the cipher as far as &quot;resistere&quot; (f. 250r, row 13) but has lost its top five lines to
@@ -572,7 +572,7 @@ ragguagliata [?poi] N.S.
 - Last row: &quot;ragguagliata&quot; 7 4 3 1 4 | 3 4 2 4 1 4, then 9 5 2 (read &quot;poi&quot;, partly carried), 1010 N.S., and 8 3 7 0^. 9 3 8
   7 3, the same closing run of nulls as R85 and R90. The last four rows (from &quot;a chi vorrà oppugnare&quot;) are not on the
   decipherment leaf and rest on the figures alone.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R87_en.md">R87_en.md</a></p><pre># R87 — English (Cardinal Alessandrino to the nuncio Castagna, cipher of [about 2 August 1567])
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R87_en.md">R87_en.md</a></p><pre translate="no"># R87 — English (Cardinal Alessandrino to the nuncio Castagna, cipher of [about 2 August 1567])
 
 Translated from `R87_reading.md`; holes as there.
 
@@ -610,7 +610,7 @@ ecclesiastical state of that archbishopric. So it is wished that the King will p
 and that His Holiness be [?then] informed of everything.</pre></details>
 <h3>R88, Spagna 1 item 4, f. 301r-v [autumn 1567]</h3>
 <p>Rome, 4 Nov 1567, a chapter of a letter from France passed on to the nuncio: the Queen Mother is timid, trusts the Chancellor, Morvillier, Limoges and l&#x27;Aubespine, and keeps the kingdom divided to rule; not a Huguenot but a bad Christian; if the King imprisoned the Constable and his son until Condé and the Admiral laid down arms, the troubles would end.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/decode/DOC_R88_D1649_1649.txt">DOC_R88_D1649_1649.txt</a></p><pre>#CATALOG NAME: Segr. di Stato Spagna 1\4
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/decode/DOC_R88_D1649_1649.txt">DOC_R88_D1649_1649.txt</a></p><pre translate="no">#CATALOG NAME: Segr. di Stato Spagna 1\4
 #IMAGE NAME: 301r.jpg-301v.jpg
 #TRANSCRIBER NAME: RebAn
 #DATE OF TRANSCRIPTION: January 24, 2016
@@ -657,7 +657,7 @@ and that His Holiness be [?then] informed of everything.</pre></details>
 2 4 6 5 ? ? ? 4 5 0 9 5 5 4 0 3 4 7 6 0 1 4 6 1 5 0 9 2 1 0 3 5 6 7 4 1 4 3 0 6 0 4 5 2 8 1 7 4 6 7 5 4 4 0 2 0 9 
 ? ? ? ? 2? 6 6 0? 5 8 7 2 1 4 0 7 4 0 5 0 2 5 5 6 4 0 2 5 4 ? 0 8 6 6 0 2 6 5 1 7 1 1 4 0 7 3 4 2 0 1 2 
 5? 7 2 0 7 2 7 0? 9 ? 8 5 7 1 6 0 0^. 0 7 6 4 4 0 6 4 1 1 7 4 0 7 2 0 8 0 ? 0 9 7 2 6 8 2 9 4 4 3 0 6 0 7 3 8 9</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R88_decryption.txt">R88_decryption.txt</a></p><pre># R88 decryption, copied verbatim from decode_updates/decryptions/R88.txt (22 Oct 2026); the decrypt_raw.txt decoder output (Lasry&#x27;s key DOC_R85_D3265) split into words for DECODE, no letters changed
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R88_decryption.txt">R88_decryption.txt</a></p><pre translate="no"># R88 decryption, copied verbatim from decode_updates/decryptions/R88.txt (22 Oct 2026); the decrypt_raw.txt decoder output (Lasry&#x27;s key DOC_R85_D3265) split into words for DECODE, no letters changed
 [f. 301r]
 fz et sali tumulti di francia se alcuuol far da douero finirle spresto potendo far puo che quel si
 lungo co di paglia il re di francia e tanto uiii da crede tanto al canceliere la mortiglier alii s f
@@ -681,7 +681,7 @@ parte di quel capitulo d ita uenuto di c [...] al [?] un gentiasmo in quel corte
 ferirlo p re si che parendoli di far fpa che ogium qui d piano [...] a sposa fare tanto piu
 fondauagna sicurando lamp [...] in escriua da si son li sa [?] ben instru targli uio di rid p [?]
 corte de la natura di b [?] principal gergb p</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/decrypt_raw.txt">decrypt_raw.txt</a></p><pre>== R85 165r.jpg (974 items, -1.88/item)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/decrypt_raw.txt">decrypt_raw.txt</a></p><pre translate="no">== R85 165r.jpg (974 items, -1.88/item)
 [NOSTRO SIGNORE]desideraticertificatosnaandauadi[RE]sadasigo[PER][CHE]ficosifisedesiderariarmariacobaro[CHE]fiin[QUELLO]loco[CHE]ligionpiucomodoil[CHE]farloapedelf[CHE]dirliancora[CHE]tuuiencertificat[SUA MAESTA]pamentecultanodesideris[CHE][RE]lidicercase[CHE]tenmondoaparlainei[QUI][RE]il[CHE]farianorimpestiebeuersip?uudice[NON]saperefzetsposafarfondamentoinparoledidonebensmplicaesorta[RE][CHE]fi[NON]sidigiri[CHE]ritalcolosponerosariusciregranfrutoallcgcatolicalia?ltrapiubandengatointendereipriuscirafrancene[PER]labf[CHE]uogliaadinterea[60.]iprocurareualabocamentosidiintesiottalaprude[60.]ldi[RE]fpanaepiupraticailgiorecognitionedeleloromaestacrederia[CHE][NON]potesenobernaparlarnascoltaruttigia[RE][NON]paresediuolerricercaramaiparesebenemputaiparreicomunelofacese[NON]mancaradifareineini??ngpaunapaltracosa[CHE]siainseruitodidiodisfurgbprpfcfpr
 
 == R86 236r.jpg (845 items, -1.84/item)
@@ -710,7 +710,7 @@ penaintantouidiro[QUEL]solo[CHE]se[SUA SANTITA]faceseintereinunaprigionesicurail
 
 == R90 324r.jpg (250 items, -1.99/item)
 instrutadeliuiodidi[QUELLO]cortedelanaturadictprincipalgesariaforsebene[CHE][RE]facesesasina[RE DI FRANCIA][CHE]nla[NON]a[QUELLO]buonipoiglierilpresodisedefpaicredepotersifidaresi[CHE]pocofidelmaisaranodp[CHE]sonoinfidel[CONCILIO]dispr[30.]pbfrpf</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R88_reading.md">R88_reading.md</a></p><pre># R88 — Cardinal Alessandrino to the nuncio Castagna, cipher of Rome, 4 November 1567 (Spagna 1, f. 301r-v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R88_reading.md">R88_reading.md</a></p><pre translate="no"># R88 — Cardinal Alessandrino to the nuncio Castagna, cipher of Rome, 4 November 1567 (Spagna 1, f. 301r-v)
 
 Rests on: the figures (DECODE transcription, RebAn 2016) read word by word with the key as the R87 decipherment
 (f. 251r) extended it, and, where the paper is damaged (DECODE&#x27;s &quot;?&quot; items, rows 10-17 of 301r and 11-17 of 301v), on
@@ -764,7 +764,7 @@ humori di quella corte et della natura di [la] Regina principalmente.
 - 301v row 11: 7 3 8 before &quot;o voluto&quot; (R89 has only 5, &quot;ho&quot;); the DECODE comment notes two struck figures at the start
   of row 14; left unread.
 - &quot;delli humori&quot;: 7 3 4 2 (3 for 6) 1 2 5 7 2. The page ends 7 3 8 9, the closing nulls.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R88_en.md">R88_en.md</a></p><pre># R88 — English (Cardinal Alessandrino to the nuncio Castagna, cipher of Rome, 4 November 1567)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R88_en.md">R88_en.md</a></p><pre translate="no"># R88 — English (Cardinal Alessandrino to the nuncio Castagna, cipher of Rome, 4 November 1567)
 
 Translated from `R88_reading.md`; holes as there. Same text as R89 + R90 (another copy); differences are of spelling
 and a few words (&quot;keeping the kingdom&quot; for &quot;maintaining the kingdom divided&quot;).
@@ -795,7 +795,7 @@ office with that Majesty, he may do it on firmer ground, assuring her that the s
 well informed of the humours of that court and above all of the nature of the Queen.</pre></details>
 <h3>R89, Spagna 1 item 5, f. 314r-v [autumn 1567]</h3>
 <p>Second copy of the R88 text (the chapter of a letter on the Queen Mother and the French court), ending &quot;da persona molto bene&quot;, continued in R90.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/decode/DOC_R89_D1650_1650.txt">DOC_R89_D1650_1650.txt</a></p><pre>#CATALOG NAME: Segr. di Stato Spagna 1\5
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/decode/DOC_R89_D1650_1650.txt">DOC_R89_D1650_1650.txt</a></p><pre translate="no">#CATALOG NAME: Segr. di Stato Spagna 1\5
 #IMAGE NAME: 314r.jpg-314v.jpg
 #TRANSCRIBER NAME: RebAn
 #DATE OF TRANSCRIPTION: February 1, 2016
@@ -840,7 +840,7 @@ well informed of the humours of that court and above all of the nature of the Qu
 1 6 0 9 3 6 7 2 7 4 5 0 9 0 3 0 1 0 5 0 2 2 0 9 0 9 4 7 6 6 7 5 4 2 0 7 2 0 3 4 7 0 3 0 9 4 2 0 9 0 5 3 2 
 1 2 5 0 9 0 7 0 9 0 2 4 6 5 1 4 0 4 5 0 9 5 5 4 0 3 4 7 6 0 1 4 6 1 5 0 9 2 1 0 3 5 6 7 4 1 4 3 0 6 0 4 5 2 
 8 1 7 4 6 7 5 4 4 0 2 0 9 0 7 6 1 4 0 1 0 4 0 1 2 6 6 0 5 8 7 2 1 4 0 7 4 0 5 0 2 5 5 6 4 0 2 5 4 1 5 0 8 6 6 6</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R89_decryption.txt">R89_decryption.txt</a></p><pre># R89 decryption, copied verbatim from decode_updates/decryptions/R89.txt (22 Oct 2026); the decrypt_raw.txt decoder output (Lasry&#x27;s key DOC_R85_D3265) split into words for DECODE, no letters changed
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R89_decryption.txt">R89_decryption.txt</a></p><pre translate="no"># R89 decryption, copied verbatim from decode_updates/decryptions/R89.txt (22 Oct 2026); the decrypt_raw.txt decoder output (Lasry&#x27;s key DOC_R85_D3265) split into words for DECODE, no letters changed
 [f. 314r]
 fz et sali tumulti di francia se alcuuol far da uero finirle spresto potendo far puo che quel si
 lungo co di paglia ma cueuano simi d abrede tanto al canceliere la mortiglier alii s f no l alba
@@ -862,7 +862,7 @@ pcrede per gpa che uia di dominare si troueda un giorno inganata si pentira tard
 uoluto credere li buonio uoluto farui parte di quel capitulo d ita uenuta di forll ungentiasmo in
 quel corte acio che posia uez ferirlo p re si che parendoli di far fpa che ogium qui quello maesta
 lo posa fare tanto piu fondauagna sicurandola che d eta ulti ne scriuarlo mose a molto bene</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/decrypt_raw.txt">decrypt_raw.txt</a></p><pre>== R85 165r.jpg (974 items, -1.88/item)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/decrypt_raw.txt">decrypt_raw.txt</a></p><pre translate="no">== R85 165r.jpg (974 items, -1.88/item)
 [NOSTRO SIGNORE]desideraticertificatosnaandauadi[RE]sadasigo[PER][CHE]ficosifisedesiderariarmariacobaro[CHE]fiin[QUELLO]loco[CHE]ligionpiucomodoil[CHE]farloapedelf[CHE]dirliancora[CHE]tuuiencertificat[SUA MAESTA]pamentecultanodesideris[CHE][RE]lidicercase[CHE]tenmondoaparlainei[QUI][RE]il[CHE]farianorimpestiebeuersip?uudice[NON]saperefzetsposafarfondamentoinparoledidonebensmplicaesorta[RE][CHE]fi[NON]sidigiri[CHE]ritalcolosponerosariusciregranfrutoallcgcatolicalia?ltrapiubandengatointendereipriuscirafrancene[PER]labf[CHE]uogliaadinterea[60.]iprocurareualabocamentosidiintesiottalaprude[60.]ldi[RE]fpanaepiupraticailgiorecognitionedeleloromaestacrederia[CHE][NON]potesenobernaparlarnascoltaruttigia[RE][NON]paresediuolerricercaramaiparesebenemputaiparreicomunelofacese[NON]mancaradifareineini??ngpaunapaltracosa[CHE]siainseruitodidiodisfurgbprpfcfpr
 
 == R86 236r.jpg (845 items, -1.84/item)
@@ -891,7 +891,7 @@ penaintantouidiro[QUEL]solo[CHE]se[SUA SANTITA]faceseintereinunaprigionesicurail
 
 == R90 324r.jpg (250 items, -1.99/item)
 instrutadeliuiodidi[QUELLO]cortedelanaturadictprincipalgesariaforsebene[CHE][RE]facesesasina[RE DI FRANCIA][CHE]nla[NON]a[QUELLO]buonipoiglierilpresodisedefpaicredepotersifidaresi[CHE]pocofidelmaisaranodp[CHE]sonoinfidel[CONCILIO]dispr[30.]pbfrpf</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R89_reading.md">R89_reading.md</a></p><pre># R89 — Cardinal Alessandrino to the nuncio Castagna, cipher of [Rome, 4 November 1567] (Spagna 1, f. 314r-v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R89_reading.md">R89_reading.md</a></p><pre translate="no"># R89 — Cardinal Alessandrino to the nuncio Castagna, cipher of [Rome, 4 November 1567] (Spagna 1, f. 314r-v)
 
 Rests on: the figures (DECODE transcription, RebAn 2016), read word by word with the key as the R87 decipherment
 (f. 251r) extended it, and on the two other cipher copies of the same text: R88 (f. 301r-v, the copy whose covering
@@ -945,7 +945,7 @@ Maestà, lo possa fare tanto più fondatamente, assicurandola che detta lettera 
 - &quot;impiastro&quot; 2 2 9 2 4 5 1 7 5; &quot;con S.M.&quot; 9 0 4 0 1 0; &quot;condurrà&quot; 9 7 1 7 4 (con-d-u-r-a).
 - &quot;di fora a un gentilhuomo&quot;: 7 2 | 3 5 7 4 | 4 | 1 6 | 3 6 6 1 2 4 5 2 5 (gentil-o-m-o).
 - &quot;Quanto alli tumulti di Francia&quot;: &quot;quanto&quot; 3 0 9 6 1 5 (qua-n-t-o).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R89_en.md">R89_en.md</a></p><pre># R89 — English (Cardinal Alessandrino to the nuncio Castagna, cipher of [4 November 1567])
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R89_en.md">R89_en.md</a></p><pre translate="no"># R89 — English (Cardinal Alessandrino to the nuncio Castagna, cipher of [4 November 1567])
 
 Translated from `R89_reading.md`; holes as there. The passage is the &quot;chapter of a letter from outside&quot; that the
 cardinal passes on (see the last sentence).
@@ -976,7 +976,7 @@ think fit to do some office with that Majesty, he may do it on firmer ground, as
 written by a person very well</pre></details>
 <h3>R90, Spagna 1 item 6, f. 324r [autumn 1567]</h3>
 <p>End of the same text: the writer is well informed of the French court and the Queen Mother; the King should let the Queen know that her counsellors, unfaithful to God, will be little faithful to her.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/decode/DOC_R90_D1651_1651.txt">DOC_R90_D1651_1651.txt</a></p><pre>#CATALOG NAME: Segr. di Stato Spagna 1\6
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/decode/DOC_R90_D1651_1651.txt">DOC_R90_D1651_1651.txt</a></p><pre translate="no">#CATALOG NAME: Segr. di Stato Spagna 1\6
 #IMAGE NAME: 324r.jpg
 #TRANSCRIBER NAME: RebAn
 #DATE OF TRANSCRIPTION: February 1, 2016
@@ -988,12 +988,12 @@ written by a person very well</pre></details>
 4 0 8 0 1 0 2 0 9 0 6 4 4 0 2 0 6 0 4 0 7 0 9 0 8 1 5 6 2 0 9 5 2 3 4 2 6 7 2 0 4 9 7 6 5 5 0 7 2 0 5 6 
 7 6 0 3 0 9 4 2 0 8 7 6 7 6 0 9 5 1 6 7 5 2 0 3 2 7 4 7 6 0 5 0 2 2 0 9 0 9 5 8 5 0 3 2 7 6 4 2 0 4 2 
 5 4 7 4 6 5 0 7 0 9 2 0 9 0 5 5 6 5 0 2 6 3 2 7 6 4 2 0 4 0 7 2 5 0 9 7 3 0^. 9 8 3 7 9 3</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R90_decryption.txt">R90_decryption.txt</a></p><pre># R90 decryption, copied verbatim from decode_updates/decryptions/R90.txt (22 Oct 2026); the decrypt_raw.txt decoder output (Lasry&#x27;s key DOC_R85_D3265) split into words for DECODE, no letters changed
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R90_decryption.txt">R90_decryption.txt</a></p><pre translate="no"># R90 decryption, copied verbatim from decode_updates/decryptions/R90.txt (22 Oct 2026); the decrypt_raw.txt decoder output (Lasry&#x27;s key DOC_R85_D3265) split into words for DECODE, no letters changed
 [f. 324r]
 instruta de liuio di di quello corte de la natura dict principal gesaria forse bene che re faceses
 asina re di francia che n la non a quello buoni poi glier il preso di se def pai crede potersi
 fidare si che poco fidelmai sara nod p che sono infidel concilio dispr &lt;30.&gt; p b fr pf</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/decrypt_raw.txt">decrypt_raw.txt</a></p><pre>== R85 165r.jpg (974 items, -1.88/item)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/decrypt_raw.txt">decrypt_raw.txt</a></p><pre translate="no">== R85 165r.jpg (974 items, -1.88/item)
 [NOSTRO SIGNORE]desideraticertificatosnaandauadi[RE]sadasigo[PER][CHE]ficosifisedesiderariarmariacobaro[CHE]fiin[QUELLO]loco[CHE]ligionpiucomodoil[CHE]farloapedelf[CHE]dirliancora[CHE]tuuiencertificat[SUA MAESTA]pamentecultanodesideris[CHE][RE]lidicercase[CHE]tenmondoaparlainei[QUI][RE]il[CHE]farianorimpestiebeuersip?uudice[NON]saperefzetsposafarfondamentoinparoledidonebensmplicaesorta[RE][CHE]fi[NON]sidigiri[CHE]ritalcolosponerosariusciregranfrutoallcgcatolicalia?ltrapiubandengatointendereipriuscirafrancene[PER]labf[CHE]uogliaadinterea[60.]iprocurareualabocamentosidiintesiottalaprude[60.]ldi[RE]fpanaepiupraticailgiorecognitionedeleloromaestacrederia[CHE][NON]potesenobernaparlarnascoltaruttigia[RE][NON]paresediuolerricercaramaiparesebenemputaiparreicomunelofacese[NON]mancaradifareineini??ngpaunapaltracosa[CHE]siainseruitodidiodisfurgbprpfcfpr
 
 == R86 236r.jpg (845 items, -1.84/item)
@@ -1022,7 +1022,7 @@ penaintantouidiro[QUEL]solo[CHE]se[SUA SANTITA]faceseintereinunaprigionesicurail
 
 == R90 324r.jpg (250 items, -1.99/item)
 instrutadeliuiodidi[QUELLO]cortedelanaturadictprincipalgesariaforsebene[CHE][RE]facesesasina[RE DI FRANCIA][CHE]nla[NON]a[QUELLO]buonipoiglierilpresodisedefpaicredepotersifidaresi[CHE]pocofidelmaisaranodp[CHE]sonoinfidel[CONCILIO]dispr[30.]pbfrpf</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R90_reading.md">R90_reading.md</a></p><pre># R90 — Cardinal Alessandrino to the nuncio Castagna, last part of the cipher of [Rome, 4 November 1567] (Spagna 1, f. 324r)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R90_reading.md">R90_reading.md</a></p><pre translate="no"># R90 — Cardinal Alessandrino to the nuncio Castagna, last part of the cipher of [Rome, 4 November 1567] (Spagna 1, f. 324r)
 
 Rests on: the figures (DECODE transcription, RebAn 2016) read word by word with the key as extended by the R87
 decipherment; the page carries on word for word from R89 (&quot;da persona molto bene | instrutta...&quot;), and its first
@@ -1052,7 +1052,7 @@ fideli li saranno quelli che sono infideli a Dio.
 - &quot;Re facesse sapere a [la] Regina&quot;: 3010 (Re, the Catholic King; f. 302r &quot;S. M. Cat.ca&quot;) ... 4 0 8 0 1 0 (f. 302r
   &quot;alla Regina di Francia&quot;).
 - The row ends with 9 7 3 0^. 9 8 3 7 9 3, the closing run of nulls also seen at the end of R85 and R87.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R90_en.md">R90_en.md</a></p><pre># R90 — English (Cardinal Alessandrino to the nuncio Castagna, last part of the cipher of [4 November 1567])
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nuncio1566/texts/R90_en.md">R90_en.md</a></p><pre translate="no"># R90 — English (Cardinal Alessandrino to the nuncio Castagna, last part of the cipher of [4 November 1567])
 
 Translated from `R90_reading.md`; it continues R89 (&quot;written by a person very well ...&quot;).
 
@@ -1075,13 +1075,13 @@ because those who are unfaithful to God will be little faithful to her.</pre></d
 <li>Luciano Serrano, <i>Correspondencia diplom&aacute;tica entre Espa&ntilde;a y la Santa Sede durante el pontificado de S. P&iacute;o V</i>, Madrid 1914 (not consulted).</li>
 </ul>
 
-<p class="muted">Notes, decoder and decoded pages: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/nuncio1566"><code>targets/nuncio1566/</code></a>. Page images are not reproduced.</p>
+<p class="muted">Notes, decoder and decoded pages: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/nuncio1566"><code translate="no">targets/nuncio1566/</code></a>. Page images are not reproduced.</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Archivio Apostolico Vaticano, via DECODE R85&ndash;R90</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="charlesixducroc.html" rel="prev">&larr; Charles IX to du Croc 1565&ndash;67 or 1572</a><a href="norreys1567.html" rel="next">Norreys 1567&ndash;68 1567&ndash;68 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

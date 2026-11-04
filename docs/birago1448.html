@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-  <div class="cipherstrip">6 &Delta; &Lambda; &Delta; 6 &#611; &#11367; &#611; &#305;&#324; &middot; &#1095; &#11367; &middot; &mdash;o &#305;&#324; &middot; &#1095; &#387; &#305;&#324;<br>s o n o s t a t i &middot; d a &middot; m i &middot; d u i</div>
+  <div class="cipherstrip" translate="no">6 &Delta; &Lambda; &Delta; 6 &#611; &#11367; &#611; &#305;&#324; &middot; &#1095; &#11367; &middot; &mdash;o &#305;&#324; &middot; &#1095; &#387; &#305;&#324;<br>s o n o s t a t i &middot; d a &middot; m i &middot; d u i</div>
   <p class="kicker">Pavia &rarr; Francesco Sforza &middot; simple substitution with two code signs &middot; 28 February 1448 &middot; existing decipherment</p>
   <h1>Birago to Sforza, Pavia 1448</h1>
 <div class="parties"><figure class="party recipient"><img src="portrait_francesco-sforza.jpg" alt="Francesco Sforza" title="Francesco Sforza: Portrait, School of Lombardy. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Francesco Sforza</figcaption></figure></div><!-- /parties -->
@@ -74,14 +74,14 @@
 
 <h2 id="key"><span class="num">02</span> Birago&rsquo;s key</h2>
 <p>DECODE&rsquo;s metadata knows only the sixteenth-century Lodovico Birago. The Milan archive&rsquo;s Sforza key sheets are on DECODE as the records of Carteggio Sforzesco cart. 1597, catalogued by number alone. Reading the headings of the first forty (R5301&ndash;R5340) found no. 16, R5316, dated &ldquo;1450&rdquo; on DECODE and otherwise undescribed. It is headed <em>Andreas Biragus</em>.</p>
-<p>The sheet gives one sign for each letter of the alphabet (none for <em>b</em>), a sign for <em>et</em>, and one code sign, for &ldquo;Francisco Piccinino&rdquo;. The letter uses all 22 of them, and no other sign: <em>s</em> is 6, <em>o</em> &Delta;, <em>n</em> &Lambda;, <em>l</em> +, <em>e</em> &infin;, <em>x</em> &equiv;. The scribe kept the word gaps. It is the simplest cipher in the Sforza papers of these years. The key sheet itself is the Milan archive&rsquo;s and is not reproduced; its signs are listed in <code>key_R5316.tsv</code>.</p>
+<p>The sheet gives one sign for each letter of the alphabet (none for <em>b</em>), a sign for <em>et</em>, and one code sign, for &ldquo;Francisco Piccinino&rdquo;. The letter uses all 22 of them, and no other sign: <em>s</em> is 6, <em>o</em> &Delta;, <em>n</em> &Lambda;, <em>l</em> +, <em>e</em> &infin;, <em>x</em> &equiv;. The scribe kept the word gaps. It is the simplest cipher in the Sforza papers of these years. The key sheet itself is the Milan archive&rsquo;s and is not reproduced; its signs are listed in <code translate="no">key_R5316.tsv</code>.</p>
 
 <h2 id="reading"><span class="num">03</span> The reading</h2>
 <figure class="creveal" data-src="reveal/birago1448.json"></figure>
-<p>Decoded and split at the scribe&rsquo;s gaps (<code>decode.py</code>), the cipher reads:</p>
+<p>Decoded and split at the scribe&rsquo;s gaps (<code translate="no">decode.py</code>), the cipher reads:</p>
 <blockquote>sono stati da mi dui famigli de rolando palauiciano et hamme dicto per parte sua soto letere de credenza como la excelentia uostra ha concluxo cun lui et chel lo conforta ad andare a caxa ilche lui uole fare et per andargli ma fato domandare per questi famigli gli uogla dare adiuto et faure io glo dicto de darghelo et cosi faro et holo confortato ancora mi a questo maxime che sento li milanexi uoler far a <strong>[Francesco Piccinino]</strong> tuto quelo li sa domandare et in specialita tutte le terre sue ilche seguendo el dicto rolando meglio stara a caxa sua cha a milano questo per auixo de la excelentia uostra senza carigo de la quale gli daro questo adiuto et fauore</blockquote>
 <p>Two servants of Orlando Pallavicino have come to Birago under a letter of credence. Sforza has come to terms with Orlando and urges him to go home, and Orlando means to; he asks Birago for help and an escort. Birago will give it, and has urged Orlando on. He hears that the Milanese, the Ambrosian Republic that took over Milan at the Visconti duke&rsquo;s death, mean to give Francesco Piccinino whatever he asks, &ldquo;and in particular all the lands&rdquo;, so Orlando would do better at home than at Milan. Birago writes it for Sforza&rsquo;s information, and will give the help at no charge to him.</p>
-<p>The cipher differs from f. 32 only in spelling and small forms, 35 in all (<code>texts/f33_vs_f32.md</code>):</p>
+<p>The cipher differs from f. 32 only in spelling and small forms, 35 in all (<code translate="no">texts/f33_vs_f32.md</code>):</p>
 <ul>
 <li>Lombard spellings: <em>caxa</em>, <em>concluxo</em>, <em>auixo</em>, <em>milanexi</em>;</li>
 <li>&ldquo;rolando&rdquo; for <em>orlando</em>, both times;</li>
@@ -100,7 +100,7 @@
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>Andrea da Birago to Francesco Sforza, Pavia, 28 Feb 1448 (f. 33, with its clear duplicate f. 32)</h3>
 <p>Orlando Pallavicino, reconciled with Sforza, asks Birago&#x27;s help to get home; Birago will give it on Sforza&#x27;s commission, all the more since the Milanese mean to give Francesco Piccinino whatever he asks, Orlando&#x27;s lands included.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/birago1448/texts/f33_cipher.txt">f33_cipher.txt</a></p><pre># BnF italien 1585, f. 33 -- the same letter in Birago&#x27;s cipher (key: ASMi Carteggio Sforzesco cart. 1597 no. 16, DECODE R5316).
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/birago1448/texts/f33_cipher.txt">f33_cipher.txt</a></p><pre translate="no"># BnF italien 1585, f. 33 -- the same letter in Birago&#x27;s cipher (key: ASMi Carteggio Sforzesco cart. 1597 no. 16, DECODE R5316).
 # One line per manuscript line. Each sign written as the key letter it stands for; ET = et sign, FP = Francesco Piccinino sign.
 # &quot;|&quot; = a word gap left by the scribe (gaps are often small; spacing judged from 2x crops). &quot;?&quot; after a token = shape uncertain.
 # The leaf has 11 cipher lines (the first on the salutation line), not 12.
@@ -118,7 +118,7 @@ L10: l a | e x c e l e n t i a | u o s t r a | s e n z a | c a r i g o | d e l a
 L11: a d i u t o | ET | f a u o r e
 CLEAR: papie xxviij febr. MCCCCXLviij.
 CLEAR: Servitor Andreas Biragus.</pre></details>
-<details class="ftext"><summary>Decipherment of the time</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/birago1448/texts/f32_clear.txt">f32_clear.txt</a></p><pre># BnF italien 1585, f. 32 -- Andrea da Birago to Francesco Sforza, Pavia, 28 Feb 1448. Clear text.
+<details class="ftext"><summary>Decipherment of the time</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/birago1448/texts/f32_clear.txt">f32_clear.txt</a></p><pre translate="no"># BnF italien 1585, f. 32 -- Andrea da Birago to Francesco Sforza, Pavia, 28 Feb 1448. Clear text.
 # Line by line as on the leaf. Abbreviations expanded in [brackets]; uncertain readings marked [?].
 # Read from Gallica canvas c062.jpg (crops in targets/birago1448/img/work/f32_*.jpg, z32*.jpg).
 01 Jllustris [et] ex[celse] d[omine][?]: Sonno stati da mi doy famigli de orlando palauiciano. Et hame dicto per p[ar]te
@@ -134,7 +134,7 @@ CLEAR: Servitor Andreas Biragus.</pre></details>
 # Notes: &quot;ad&quot; is written with the looped a-d ligature (looks like &quot;ao&quot;/&quot;ae&quot;). &quot;francisco piccinino&quot; is run together
 # on the leaf (francisco|piccinino). The word after &quot;Senza&quot; (l. 08) is a long-shafted cursive word read as
 # &quot;incharicho&quot; [= incarico]; the cipher (f. 33 l. 10) has &quot;carigo&quot; in that place, which confirms the sense.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/birago1448/texts/f33_decryption.txt">f33_decryption.txt</a></p><pre>CLEAR: Illustris ac Excelse domine domine honorandissime [written: Illustris ~ Ex domine domine hon[orandissi]me]
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/birago1448/texts/f33_decryption.txt">f33_decryption.txt</a></p><pre translate="no">CLEAR: Illustris ac Excelse domine domine honorandissime [written: Illustris ~ Ex domine domine hon[orandissi]me]
 L01: sonostati dami dui famigli derolando
 L02: palauiciano et hamme dicto per parte suasotoletere de credenza
 L03: como la excelentia uostra ha concluxo cun lui et chel lo conforta
@@ -148,7 +148,7 @@ L10: la excelentia uostra senza carigo dela quale gli daro questo
 L11: adiuto et fauore
 CLEAR: papie xxviij febr. MCCCCXLviij.
 CLEAR: Servitor Andreas Biragus.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/birago1448/texts/f33_en.md">f33_en.md</a></p><pre># Andrea da Birago to Francesco Sforza, Pavia, 28 February 1448 (BnF italien 1585, f. 33, deciphered; clear copy f. 32)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/birago1448/texts/f33_en.md">f33_en.md</a></p><pre translate="no"># Andrea da Birago to Francesco Sforza, Pavia, 28 February 1448 (BnF italien 1585, f. 33, deciphered; clear copy f. 32)
 
 Most illustrious and excellent lord, my most honoured lord.
 
@@ -176,15 +176,15 @@ government of the Ambrosian Republic. Francesco Piccinino was then a condottiere
 <li>Biblioth&egrave;que nationale de France, italien 1585, ff. 32&ndash;33: <a href="https://gallica.bnf.fr/ark:/12148/btv1b52525947w">Gallica btv1b52525947w</a>, view 62 (both leaves), view 64 (the address of f. 33).</li>
 <li>The key: Archivio di Stato di Milano, Carteggio Sforzesco cart. 1597 no. 16, <a href="https://de-crypt.org/decrypt-web/RecordsView/5316">DECODE R5316</a>.</li>
 <li>G. Mazzatinti, <em>Inventario dei manoscritti italiani delle biblioteche di Francia</em> II (1887), italien 1585 (<a href="https://archive.org/details/InventarioDeiManoscrittiItalianiT2">Internet Archive</a>).</li>
-<li>The leaf-by-leaf check of the series: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/venice_milan_print/ital1584_copies.md"><code>research/venice_milan_print/ital1584_copies.md</code></a>.</li>
+<li>The leaf-by-leaf check of the series: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/venice_milan_print/ital1584_copies.md"><code translate="no">research/venice_milan_print/ital1584_copies.md</code></a>.</li>
 </ul>
-<p class="muted">Transcriptions, the decoder, the comparison with f. 32, the key table and the profile are in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/birago1448"><code>targets/birago1448/</code></a>.</p>
+<p class="muted">Transcriptions, the decoder, the comparison with f. 32, the key table and the profile are in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/birago1448"><code translate="no">targets/birago1448/</code></a>.</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Images: Biblioth&egrave;que nationale de France (Gallica)</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="siena9.html" rel="prev">&larr; Siena no. 9, Castiglione 1440s&ndash;1450s?</a><a href="siena25.html" rel="next">Siena no. 25 undated &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

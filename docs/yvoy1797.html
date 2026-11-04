@@ -37,7 +37,7 @@
   </div>
 </div>
 <section class="hero">
-  <div class="cipherstrip">122 &middot; 625 &middot; 202 &middot; 703 &middot; 1158 &middot; &hellip; &middot; 1154 &middot; 15 &middot; 505 &middot; 512<br>het &middot; onder &middot; houd &middot; met &middot; H.K.H. &middot; &hellip; &middot; Tol &middot; li &middot; us<br>1056 = Berlyn &middot; 1137 = Vrankryk &middot; 1156 = Hamptoncourt &middot; 229 = achter</div>
+  <div class="cipherstrip" translate="no">122 &middot; 625 &middot; 202 &middot; 703 &middot; 1158 &middot; &hellip; &middot; 1154 &middot; 15 &middot; 505 &middot; 512<br>het &middot; onder &middot; houd &middot; met &middot; H.K.H. &middot; &hellip; &middot; Tol &middot; li &middot; us<br>1056 = Berlyn &middot; 1137 = Vrankryk &middot; 1156 = Hamptoncourt &middot; 229 = achter</div>
   <p class="kicker">London, Hampton Court, Emmerich &harr; Berlin, Sch&ouml;nhausen &middot; Dutch numerical code, two tables &middot; 1797&ndash;1799 &middot; read from the contemporary decipherment</p>
   <h1>Maximilien d&rsquo;Yvoy and the Hereditary Prince of Orange, 1797&ndash;99 (KHA A35-1450&ndash;1453)</h1>
 <div class="parties"><figure class="party recipient"><img src="portrait_hereditary-prince-william.jpg" alt="Hereditary Prince William" title="Hereditary Prince William: Portrait, Joseph Paelinck. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Hereditary Prince William</figcaption></figure></div><!-- /parties -->
@@ -65,7 +65,7 @@
 
 <h2 id="the-letters"><span class="num">01</span> The letters</h2>
 <p>Maximiliaan Louis van Hangest, baron d&rsquo;Yvoy van Mijdrecht, was one of the Orangist emigr&eacute;s who kept the Hereditary Prince informed after the flight of 1795. His letters to the Prince fill A35-1448 to 1458 in the Koninklijk Huisarchief; the four scanned volumes cover 1797 (317 scans), 1798 (175) and 1799 (220 and 317). They are written in French, with the sensitive words in numbers. The Prince&rsquo;s own letters to d&rsquo;Yvoy, numbered (No. 15, 16, 20&ndash;26 in 1797; 11&ndash;13 in 1798), are filed among them, usually three times over: a mounted original, a faint tissue copy and a photocopy.</p>
-<p>The KHA survey of 25 October flagged 28 pages from thumbnails. A second pass through all 1,029 scans found 196 pages with code numbers (<code>more_pages.tsv</code>). The 1799 letters are the heaviest, with 14 to 25 lines of numbers a page; the code nearly stops after August 1799.</p>
+<p>The KHA survey of 25 October flagged 28 pages from thumbnails. A second pass through all 1,029 scans found 196 pages with code numbers (<code translate="no">more_pages.tsv</code>). The 1799 letters are the heaviest, with 14 to 25 lines of numbers a page; the code nearly stops after August 1799.</p>
 
 <h2 id="the-codes"><span class="num">02</span> Two codes</h2>
 <p>Each run of numbers stands for Dutch words; the decipherment above it is Dutch even where the letter around it is French. Whole words and names have their own numbers; names not in the list are spelled with syllable numbers. The two tables share the form but not the values.</p>
@@ -75,7 +75,7 @@
 <tr><td>1107 Engeland, 1117 Pruissen, 1137 Vrankryk, 1167 Rusland, 1127 Oostenryk, 661 Keizer, 631 Koning</td><td>1137 Holland, 1157 Engeland, 1341 582 Zeeland, 1366 Nymegen, 1236 &rsquo;s Bosch</td></tr>
 <tr><td>1056 Berlyn, 1156 Hamptoncourt, 1226 Parys, 1124 Pitt, 1488 Malmesbury, 1283 Vreede</td><td>1038 Erfprins, 1085 1071 Tuyll, 1068 Hertog, 33 508 544 de Garnizoenen</td></tr>
 </table>
-<p>Many runs end with a short stock phrase in d&rsquo;Yvoy&rsquo;s despatches: &ldquo;hier 229 is wat&rdquo;, &ldquo;hier 229 is 43 609&rdquo;, &ldquo;op &hellip; drie is wat&rdquo;. Where it is glossed (147205, 147226, 147351, 147412) it reads &ldquo;hier achter is (wat) geschreven&rdquo;: there is writing on the back. It announces a passage in sympathetic ink, the method the Orange family used in these years (the same practice runs through the Prince&rsquo;s letters to his mother, <code>targets/wilhelmina1795/</code>).</p>
+<p>Many runs end with a short stock phrase in d&rsquo;Yvoy&rsquo;s despatches: &ldquo;hier 229 is wat&rdquo;, &ldquo;hier 229 is 43 609&rdquo;, &ldquo;op &hellip; drie is wat&rdquo;. Where it is glossed (147205, 147226, 147351, 147412) it reads &ldquo;hier achter is (wat) geschreven&rdquo;: there is writing on the back. It announces a passage in sympathetic ink, the method the Orange family used in these years (the same practice runs through the Prince&rsquo;s letters to his mother, <code translate="no">targets/wilhelmina1795/</code>).</p>
 
 <h2 id="no-22"><span class="num">03</span> No. 22, 22 September 1797</h2>
 <figure class="creveal" data-src="reveal/yvoy1797.json"></figure>
@@ -85,16 +85,16 @@
 
 <h2 id="method"><span class="num">04</span> Method</h2>
 <ul>
-<li><b>Transcription.</b> Agents transcribed every page with code numbers from the KHA images at full size, run by run: the clear words before and after, the numbers, the decipherment written over them, and a word-by-word alignment where the decipherment is placed over the numbers (<code>runs_a.txt</code> to <code>runs_e.txt</code>).</li>
-<li><b>Tables.</b> <code>tables.py</code> votes each number&rsquo;s value over all aligned runs, one table per code (the 1799 volume A35-1452&ndash;1453 against the rest). For the test each page is left out in turn: its numbers are decoded with the table built from the other pages, and a decoded word counts if it stands in the run&rsquo;s own decipherment. Table L: 966 of 1,242 words (78%) against 321 (26%) in an unrelated run; table E: 130 of 161 (81%) against 43 (27%).</li>
-<li><b>Undeciphered runs.</b> <code>decode.py</code> ran the 49 runs with no decipherment through both tables. Nearly all are the pointer phrase; its glossed instances fix 229 = achter and 43 609 / 43 669 = geschreven.</li>
+<li><b>Transcription.</b> Agents transcribed every page with code numbers from the KHA images at full size, run by run: the clear words before and after, the numbers, the decipherment written over them, and a word-by-word alignment where the decipherment is placed over the numbers (<code translate="no">runs_a.txt</code> to <code translate="no">runs_e.txt</code>).</li>
+<li><b>Tables.</b> <code translate="no">tables.py</code> votes each number&rsquo;s value over all aligned runs, one table per code (the 1799 volume A35-1452&ndash;1453 against the rest). For the test each page is left out in turn: its numbers are decoded with the table built from the other pages, and a decoded word counts if it stands in the run&rsquo;s own decipherment. Table L: 966 of 1,242 words (78%) against 321 (26%) in an unrelated run; table E: 130 of 161 (81%) against 43 (27%).</li>
+<li><b>Undeciphered runs.</b> <code translate="no">decode.py</code> ran the 49 runs with no decipherment through both tables. Nearly all are the pointer phrase; its glossed instances fix 229 = achter and 43 609 / 43 669 = geschreven.</li>
 <li><b>Print.</b> Colenbrander&rsquo;s <i>Gedenkstukken</i> II and III were searched in full text (Huygens retroboeken): d&rsquo;Yvoy&rsquo;s letters of 1795&ndash;96 and of 1799 (Nos. 676, 681, 686, 691, 705, 742, 750, 751, 781, 811) are printed; none of 1797&ndash;98, and not No. 22.</li>
 </ul>
 
 <h2 id="what-remains-uncertain"><span class="num">05</span> What remains uncertain</h2>
 <ul>
 <li>The tables hold only the numbers that occur glossed: 105 for London, 50 for 1799. The syllable numbers are the thinnest part; a number seen once keeps its single value.</li>
-<li>Some decipherments are faint pencil and were read with a <code>?</code> (No. 22 run 2, &ldquo;de Gewuote(?) Instructie&rdquo;; 1628 Inghuyzen or H.K.H. in June 1799). The readings of the code runs rest on those decipherments, grade H where they are clear, C where marked.</li>
+<li>Some decipherments are faint pencil and were read with a <code translate="no">?</code> (No. 22 run 2, &ldquo;de Gewuote(?) Instructie&rdquo;; 1628 Inghuyzen or H.K.H. in June 1799). The readings of the code runs rest on those decipherments, grade H where they are clear, C where marked.</li>
 <li>The invisible-ink passages announced by the pointer phrase are not visible on the scans.</li>
 <li>The clear French of No. 22 is given where it is legible on the scan; a few words are left as &hellip;.</li>
 </ul>
@@ -104,7 +104,7 @@
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>No. 22, the Hereditary Prince to d&#x27;Yvoy, Schonhausen 22 Sept 1797 (147106)</h3>
 <p>The Prince thanks d&#x27;Yvoy for his letters Nos. 47-48 and his handling of a conversation with His Royal Highness; Tollius is satisfied with his first conferences with Their Highnesses; the Prince cannot act until he has an answer to letters sent by Kiehl, which may bring a change in d&#x27;Yvoy&#x27;s position at Hampton Court; the effect of 18 Fructidor on the Lille and Udine negotiations. Code runs from the contemporary Dutch interlinear decipherment.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/yvoy1797/runs_e.txt">runs_e.txt</a></p><pre># page 147106 No. 22, a Mr d&#x27;Yvoy, Schonhausen 22 Sptbr 1797 (mounted original; 147107 tissue copy, 147108 photocopy) French
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/yvoy1797/runs_e.txt">runs_e.txt</a></p><pre translate="no"># page 147106 No. 22, a Mr d&#x27;Yvoy, Schonhausen 22 Sptbr 1797 (mounted original; 147107 tissue copy, 147108 photocopy) French
 # id 147106 run 1
 BEFORE: dans la premiere concernant
 CT: 122 625 202 703 1158
@@ -177,7 +177,7 @@ CT: 75 1083 249 131 121 533 556 549 1065 15
 AFTER: Il n&#x27;est pas encore connu
 PT: een verandering in myne positie
 AL: 75=een 121=in</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/yvoy1797/reading_no22.txt">reading_no22.txt</a></p><pre># No. 22, the Hereditary Prince to M.L. d&#x27;Yvoy, Schonhausen 22 September 1797 (KHA A35-1450, scan 221, id 147106)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/yvoy1797/reading_no22.txt">reading_no22.txt</a></p><pre translate="no"># No. 22, the Hereditary Prince to M.L. d&#x27;Yvoy, Schonhausen 22 September 1797 (KHA A35-1450, scan 221, id 147106)
 # Clear French as written; the code runs replaced by the contemporary Dutch decipherment written over them, in
 # {braces}. Clear passages partly illegible on the scan are marked [...]. Transcription of the runs: runs_e.txt.
 
@@ -206,7 +206,7 @@ avec plus de violence vis-à-vis du parti succombé. Il faudra attendre avec pat
 
 Je suis avec la plus parfaite considération, Monsieur, votre très humble &amp; obéissant serviteur.
 Schönhausen 22. Septbr. 1797</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/yvoy1797/reading_no22_en.md">reading_no22_en.md</a></p><pre># No. 22, the Hereditary Prince to d&#x27;Yvoy, Schönhausen, 22 September 1797: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/yvoy1797/reading_no22_en.md">reading_no22_en.md</a></p><pre translate="no"># No. 22, the Hereditary Prince to d&#x27;Yvoy, Schönhausen, 22 September 1797: English translation
 
 Sir,
 
@@ -237,7 +237,7 @@ I am, with the most perfect consideration, Sir, your very humble and obedient se
 the numbers.)</pre></details>
 <h3>The Hereditary Prince to d&#x27;Yvoy, Schonhausen 7 June 1799 (147481), run by run</h3>
 <p>Clear French with Dutch code runs on the garrisons of Holland, Zeeland, Nijmegen and &#x27;s-Hertogenbosch, Tuyll, Grenville and the Hereditary Prince, each run with its contemporary Dutch decipherment (PT lines).</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/yvoy1797/runs_b.txt">runs_b.txt</a></p><pre># NOTE (agent b): pages 147480 and 147483 are photocopies of 147481 (7 June 1799); 147482 is its blank verso (show-through only).
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/yvoy1797/runs_b.txt">runs_b.txt</a></p><pre translate="no"># NOTE (agent b): pages 147480 and 147483 are photocopies of 147481 (7 June 1799); 147482 is its blank verso (show-through only).
 # 147530, 147532, 147534 are blank versos (show-through) of 147529, 147531, 147533 (13 July 1799, pag. 1-3).
 # 147537 = photocopy of 147529, 147535 = photocopy of 147531, 147539 = photocopy of 147533, 147528 = photocopy of 147531 (top half, under a &quot;13 Juli 1799&quot; slip).
 # 147508 (28 June 1799) exists here only as a photocopy and is transcribed from it.
@@ -702,7 +702,7 @@ CT: 665 724_
 AFTER: Je vous prie de tacher de me les procurer
 PT: ondernomen
 AL: none</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/yvoy1797/reading_1799.txt">reading_1799.txt</a></p><pre># The Hereditary Prince to M.L. d&#x27;Yvoy, Schonhausen 7 June 1799 (KHA A35-1452, image 147481), run by run.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/yvoy1797/reading_1799.txt">reading_1799.txt</a></p><pre translate="no"># The Hereditary Prince to M.L. d&#x27;Yvoy, Schonhausen 7 June 1799 (KHA A35-1452, image 147481), run by run.
 # Each line: the clear French around a code run, as transcribed (about eight words either side), with the run given
 # from the contemporary Dutch decipherment written over it, in {braces}. Source: runs_b.txt. Not a continuous text:
 # the clear French between runs was not transcribed in full.
@@ -714,7 +714,7 @@ Ayez la bonté de dire à {Inghuyzen (?)} que je me propose également de lui [�
 ... qui puissent le mettre à même de pouvoir {Gepa[ste?] ... an water te doen by}. Vous conviendrez qu&#x27;il a raison en cela ...
 ... que prendre en ce moment des résolutions {die men mogelyk naderhand zoude moeten revoceeren}. Je finis par remarquer provisoirement ...
 ... lettre, où il est question de la {vervallen Correspondentie tusschen Ruyss[en] en Ho[lland?] v. Br. Bat.}, il est à désirer qu&#x27;elle puisse être continuée et que la {cortte (?)} veuille ne pas {opbrieden (?) te interrumpeeren de laatste} sur le pied que cela s&#x27;est fait jusques ici ...</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/yvoy1797/reading_1799_en.md">reading_1799_en.md</a></p><pre># The Hereditary Prince to d&#x27;Yvoy, Schönhausen, 7 June 1799 (147481): English, run by run
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/yvoy1797/reading_1799_en.md">reading_1799_en.md</a></p><pre translate="no"># The Hereditary Prince to d&#x27;Yvoy, Schönhausen, 7 June 1799 (147481): English, run by run
 
 Words in italics stand in code and are given from the contemporary Dutch decipherment. Only the clear words
 around each run were transcribed, so the passages are not continuous.
@@ -749,7 +749,7 @@ around each run were transcribed, so the passages are not continuous.
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Koninklijk Huisarchief, The Hague, via Koninklijke Verzamelingen</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="r2234.html" rel="prev">&larr; Basle to William V 1796 1796</a><a href="mellon136.html" rel="next">Silentium Dei 1798 1798 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

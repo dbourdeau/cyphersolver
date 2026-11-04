@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">
+  <div class="cipherstrip" translate="no">
     <span class="row">ʓ yy c ʓ x dd m &alpha; v Ze n &Delta; o yy t h ff m t 6 w L h 49 12 &hellip; 76</span>
     <span class="row">s&rsquo;estant laiss&eacute; entendre comme il se vouloit d&eacute;partir du roi de Navarre</span>
     <span class="row">49 = comme &middot; 76 = le roi de Navarre &middot; 59 = argent</span>
@@ -73,11 +73,11 @@
 
 <h2 id="letters"><span class="num">01</span> The despatches</h2>
 <p>In 1585&ndash;86 Charles de Lorraine, Duke of Mayenne, led a royal army against the Protestants in Guyenne, with Marshal Matignon at Bordeaux and Pierre Forget de Fresnes in his camp. Their despatches to the King and to Villeroy are bound in BnF fr. 15572 and fr. 15571. Tomokiyo (cryptiana, <em>Henry III&rsquo;s Cipher with Ambassadors</em>) sorts their ciphers into three. This entry holds the one he calls Mayenne&ndash;Forget&rsquo;s Cipher-1. <a href="mayenne1586c2.html">Cipher-2</a> and <a href="matignon1586c3.html">Matignon&rsquo;s Cipher-3</a> are different ciphers, each with its own page.</p>
-<p>&ldquo;Clean sentences&rdquo; below is the share of sentences with at most one hole in ten words (<code>docs/_check_reading.py</code>), before and after the leaf was worked on the images on 22 October 2026. Measured word by word on 24 October 2026, five leaves (fr. 15571 f. 177, ff. 110, 123v, 124v and 173) build coherent sentences but read at 94.1&ndash;94.9% of their words, just under the 95% a complete reading needs, so their extent is partial.</p>
+<p>&ldquo;Clean sentences&rdquo; below is the share of sentences with at most one hole in ten words (<code translate="no">docs/_check_reading.py</code>), before and after the leaf was worked on the images on 22 October 2026. Measured word by word on 24 October 2026, five leaves (fr. 15571 f. 177, ff. 110, 123v, 124v and 173) build coherent sentences but read at 94.1&ndash;94.9% of their words, just under the 95% a complete reading needs, so their extent is partial.</p>
 <table>
 <thead><tr><th>Leaf</th><th>Gallica canvas</th><th>Tokens</th><th>State</th><th>Clean sentences</th><th>Clear copy</th></tr></thead>
 <tbody>
-<tr><td>fr. 15571 f. 177r&ndash;v, Forget to Villeroy, 31 Dec 1585</td><td>185 right, 186 left (<code>btv1b90618802</code>)</td><td>1,164</td><td>deciphered and translated; 94.6% of words read</td><td>0.24 &rarr; 0.69</td><td>f. 176r&ndash;v, found 22 Oct 2026</td></tr>
+<tr><td>fr. 15571 f. 177r&ndash;v, Forget to Villeroy, 31 Dec 1585</td><td>185 right, 186 left (<code translate="no">btv1b90618802</code>)</td><td>1,164</td><td>deciphered and translated; 94.6% of words read</td><td>0.24 &rarr; 0.69</td><td>f. 176r&ndash;v, found 22 Oct 2026</td></tr>
 <tr><td>f. 110, Mayenne to Villeroy, Villeneuve-d&rsquo;Agenais, March 1586</td><td>116 right</td><td>2,164</td><td>deciphered and translated (three passes); 94.4% of words read</td><td>0.23 &rarr; 0.70</td><td>none</td></tr>
 <tr><td>f. 123r, Mayenne to the King, Marmande, March 1586</td><td>129 right</td><td>1,113</td><td>decoded, not read</td><td>0.05 &rarr; 0.41</td><td>none</td></tr>
 <tr><td>f. 123v, the same despatch</td><td>130 left</td><td>1,374</td><td>deciphered and translated; 94.2% of words read</td><td>0.19 &rarr; 0.66</td><td>none</td></tr>
@@ -98,11 +98,11 @@
 <p>Tomokiyo publishes partial tables for Cipher-1. The project checked and completed them in September 2026 against two letters in the same volume deciphered at the time: the postscript of f. 14v, written out in clear on f. 15r, and the long despatch of f. 18, deciphered on f. 19. The figures do not separate cleanly. Three shapes of &ldquo;6&rdquo; stand for <em>i</em>, <em>n</em> and <em>s</em>, and on the scans their correlation is above 0.9. So the key is kept as letter sets, not single letters, and a program scores the possible letters with a model of period French and keeps the likeliest.</p>
 <p>In October 2026 Michael Brackx re-transcribed every Cipher-1 leaf from full-size line crops. He used a label set that keeps apart figures the earlier transcriptions had merged, and he fitted a key to each leaf. His eleven keys differ in a few letter sets, mainly whether &theta; is <em>m</em> or <em>m/s</em> and how <em>e</em> and &epsilon; divide. Here they were merged by union: each figure keeps every letter any leaf gives it. The merged key decodes every leaf at least as well as the leaf&rsquo;s own key (9,855 against 9,609 tokens in runs of French). Agreement with the clear copies does not move by more than a point. The differences were in the reading of the hands, not in the cipher. Trimming rarely used letters from the merged key lowered the score, so it was not done.</p>
 <p>Code values come from the crib leaves, the clear copies and context: 12 <em>il</em>, 13 <em>qui</em>, 14 <em>que</em>, 15 <em>quoy</em>, 17 <em>car</em>, 24 <em>mais</em>, 25 <em>nous</em>, 26 <em>vous</em>, 27 <em>nostre</em>, 33 <em>vostre</em>, 34 <em>ainsi</em>, 35 <em>parce que</em>, 36 <em>toutesfois</em>, 40 <em>bien</em>, 43 <em>point</em>, 46 <em>rien</em>, 47 <em>tous/tout</em>, 49 <em>comme</em>, 51 <em>pas</em>, 52 <em>plustost</em>, 53 <em>affin</em>, 54 <em>aussi</em>, 61 <em>beaucoup</em>, 62 <em>peut</em>, 63 <em>apr&egrave;s</em>, 64 <em>quelque</em>, 73 the syllable <em>oi</em> on f. 18 and <em>le Roy</em> on f. 177, 76 and 78 <em>le roi de Navarre</em>, 82 <em>le gouverneur de Coul[&hellip;]</em>, 84 <em>le vicomte de Turenne</em>, 88 <em>Monsieur du Mayne</em>, 104 <em>mil</em>. 44 is a stop. 59 is <em>argent</em>, added here: on f. 154r the cipher has &ldquo;nous prester icy de l&rsquo;[59] a rendre a Paris&rdquo; where the clear copy f. 157r has &ldquo;de l&rsquo;argent&rdquo;, and the word fits its four other places.</p>
-<p>On 22 October 2026 each leaf was taken again on the full-resolution images, sentence by sentence (section 04). The merged key stays the key; what a single hand needs beyond it is kept in a small key per leaf (<code>key_cipher1_&lt;leaf&gt;.json</code>): on f. 110 a looped tilde for <em>s</em> and a large C for <em>l</em> or <em>r</em>; on f. 196v four figures not seen before (a small double cross for <em>t</em>, a barred figure for <em>r</em>/<em>rr</em>, a looped x for <em>x</em>, a looped y for <em>z</em>); on f. 177 three figures that are nulls, which the clear copy leaves out.</p>
+<p>On 22 October 2026 each leaf was taken again on the full-resolution images, sentence by sentence (section 04). The merged key stays the key; what a single hand needs beyond it is kept in a small key per leaf (<code translate="no">key_cipher1_&lt;leaf&gt;.json</code>): on f. 110 a looped tilde for <em>s</em> and a large C for <em>l</em> or <em>r</em>; on f. 196v four figures not seen before (a small double cross for <em>t</em>, a barred figure for <em>r</em>/<em>rr</em>, a looped x for <em>x</em>, a looped y for <em>z</em>); on f. 177 three figures that are nulls, which the clear copy leaves out.</p>
 
 <h2 id="reading"><span class="num">03</span> What they say</h2>
 <figure class="creveal" data-src="reveal/matignon1586.json"></figure>
-<p>Quotations are from the decipherments in <code>texts/reading_*.md</code>, in the spelling the figures give. A word in brackets with a question mark is carried only in part by its figures; [&hellip;] is a run of figures that does not form a word. Each leaf has an English translation beside it in the Full texts below.</p>
+<p>Quotations are from the decipherments in <code translate="no">texts/reading_*.md</code>, in the spelling the figures give. A word in brackets with a question mark is carried only in part by its figures; [&hellip;] is a run of figures that does not form a word. Each leaf has an English translation beside it in the Full texts below.</p>
 <p><strong>Pons and Taillebourg, 31 December 1585 (fr. 15571 f. 177).</strong> Forget tells Villeroy of a plan to besiege Pons and Taillebourg together: taking Taillebourg would deprive the enemy of the toll on the Charente, <q>oster un grand revenu qu&rsquo;ils tirent du passaige de la Charante</q>, and the country offered thirty thousand &eacute;cus for the siege. Then Matignon had word from Bordeaux that the vicomte de Turenne <q>estoit paru en campaigne avec forces et canons</q>, and the despatch was rewritten. Forget comments: <q>Voila comment noz opinions sont erantes.</q> A clear copy of the whole cipher, made at the time, is on the preceding leaf, f. 176r&ndash;v; it agrees with the decipherment and settles the few words the figures carry only in part.</p>
 <p><strong>Villeneuve-d&rsquo;Agenais, March 1586 (f. 110).</strong> Mayenne to Villeroy, wholly in cipher. The dateline, earlier transcribed &ldquo;De Bellebourg&rdquo;, reads on the image <em>De Villeneufve d&rsquo;Agenoys</em>. He asks Villeroy for advice as a friend and states his case: <q>Si le roi est ennuié de la guerre, et qu&rsquo;il la veuile finir, il ce peult faire plus [?honnestement] que par la ruine de ma reputation</q>. Left without the promised money, the army <q>périra toute entière avant qu&rsquo;il soit [?six] sepmaines</q>, and <q>Sa Maiesté en perdra plus que moi.</q> Lines 1&ndash;4, 8, 10, 14&ndash;16, 24&ndash;25 and 36 keep holes.</p>
 <p><strong>Marmande, March 1586 (ff. 123&ndash;124).</strong> Mayenne to the King, opening in clear. On f. 123v he answers those who would have him live off the province as he once did in the Dauphin&eacute;: here the enemy are <q>si meslés parmi ce qui vous reste de bons subiects que persone n&rsquo;habite la campaigne</q>, and contributions could be raised only by garrisons. He sends Forget, with the sieur de Gourgues, to borrow <q>et argent et draps</q> (f. 124v), and resolves <q>d&rsquo;aller attacquer Saincte Basille sitost qu&rsquo;il m&rsquo;aura envoié cinq canons et la pouldre et les balles</q>; Turenne has come to N&eacute;rac.</p>
@@ -118,7 +118,7 @@
 <h2 id="checks"><span class="num">04</span> How it was checked</h2>
 <ul>
 <li><strong>Sentences, not tokens.</strong> George Lasry reviewed this page on 22 October 2026: the decryptions of the leaves without a copy could not be built into coherent French sentences, and he was right (5&ndash;24% of their sentences were clean). Each leaf was then taken sentence by sentence: where a sentence would not form, the figures were cropped from the full-resolution image (openapi.bnf.fr) and looked at, the label or the key value corrected, the leaf decoded again and the sentence rebuilt. The per-leaf result is in the table above. A leaf counts only when its sentences hold (0.66&ndash;0.79 clean, with the holes marked) and it has an English translation; ff. 123r and 124r do not reach that and are not counted.</li>
-<li><strong>Label corrections.</strong> About 400 of Brackx&rsquo;s figure labels were changed where the image disagrees, each listed with its line, the old and new label and the word it gives (<code>brackx2026/corrections/*.tsv</code>): f. 110 131 in three passes, the second against a set of exemplars cut from this hand; ff. 123r&ndash;v 138; ff. 124r&ndash;v 75; ff. 196/201 46; f. 173 14; f. 177 12; f. 143v 10. Two untranscribed lines were added (f. 123r l. 37, f. 143v l. 35). The letter values a hand needs beyond the merged key are kept per leaf (<code>key_cipher1_&lt;leaf&gt;.json</code>).</li>
+<li><strong>Label corrections.</strong> About 400 of Brackx&rsquo;s figure labels were changed where the image disagrees, each listed with its line, the old and new label and the word it gives (<code translate="no">brackx2026/corrections/*.tsv</code>): f. 110 131 in three passes, the second against a set of exemplars cut from this hand; ff. 123r&ndash;v 138; ff. 124r&ndash;v 75; ff. 196/201 46; f. 173 14; f. 177 12; f. 143v 10. Two untranscribed lines were added (f. 123r l. 37, f. 143v l. 35). The letter values a hand needs beyond the merged key are kept per leaf (<code translate="no">key_cipher1_&lt;leaf&gt;.json</code>).</li>
 <li><strong>The copies.</strong> Where a copy of the time exists, the key&rsquo;s decode agrees with it on 85&ndash;93% of letters: f. 143r 0.93, f. 150r 0.85, f. 150v 0.90, f. 154r 0.89, f. 154v 0.89 and 0.93. With shuffled keys it is 0.25&ndash;0.38. Two more copies were found on 22 October 2026 and transcribed. fr. 15571 f. 176r&ndash;v is the clear copy of f. 177: compared word by word with the decipherment, it confirms 73 <em>le Roy</em>, 64 <em>quelque</em> and the null figures, and the cipher has one word (<em>dicte</em>) that the copy leaves out. The f. 143 copy does not stop at the foot of f. 155r: it runs on over seven lines of f. 155v, which agree with the decipherment of the last ten lines of f. 143v (the cipher has one word more, <em>si</em>).</li>
 <li><strong>The twin.</strong> ff. 196 and 201 carry the same figures at most positions: they are two fair copies of one enciphered draft. They were aligned figure by figure and deciphered together, and f. 201&rsquo;s clear foot lines up with the first seven lines of f. 196v and gives 63 <em>apr&egrave;s</em>.</li>
 <li><strong>Shuffled keys.</strong> With the key&rsquo;s letter sets permuted among its figures (set sizes kept, three seeds), the decode falls to 12.1% of tokens in runs of French, against 63.7% with the key. That token figure counted short corpus words strung together (&ldquo;la que le estoit&rdquo;) and is kept as evidence that the key is right, not as a measure of the decipherment.</li>
@@ -140,7 +140,7 @@
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>f. 143r</h3>
 <p>Mayenne to the King, April 1586, after the capitulation of Castets: its captain, unhappy with the King of Navarre, has agreed to leave him; a treaty of twelve thousand ecus in three months, leave to sell his property and a pardon to be registered by the Parlement. The clear copy is f. 155r.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f143r_cipher.txt">f143r_cipher.txt</a></p><pre>z yy c z x dd m ao v Ze n D o yy t h ff m t 6 w L h 49 12 dd t g 7 s he
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f143r_cipher.txt">f143r_cipher.txt</a></p><pre translate="no">z yy c z x dd m ao v Ze n D o yy t h ff m t 6 w L h 49 12 dd t g 7 s he
 H 6 Ze w h c ao L m o L oo s 76 w g 14 n ei t dd dc ao B 13 A x dd Ze m L t
 Tm D n f 7 v Ze ao 6 m x Ze ao ei D ff Ze dd 7 v z o w x L t 14 ei h n ao ei 47
 q L z 7 s B Ze t v B L c 7 s L n t Tm h o he x g e f 7 x t w h 49 ao v w
@@ -161,7 +161,7 @@ ao he g c ao yy t T A ao L o g 3 x T h S Hc s e ei ao he t T x Ze c g o q n ao
 T h R ao yy t T S 7 g L s t v 3 T o dd 3 S Hc s L 47 x z q t dd dd 7 v f B w
 h L ao Ze o q v z h Ze S Hc s e n t dd c L t Tm B t L h q S n s y 14 lam 7
 T n x q ao s Ze L t q ei t n g ei ao B g h L lam ao he t Tm h 6 m c L 7 Tm B q w h</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f143r.txt">f143r.txt</a></p><pre># fr. 15572 f. 143r, Mayenne to the King, April 1586: decryption with the merged Cipher-1 key (key_cipher1.json)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f143r.txt">f143r.txt</a></p><pre translate="no"># fr. 15572 f. 143r, Mayenne to the King, April 1586: decryption with the merged Cipher-1 key (key_cipher1.json)
 # Transcription: Michael Brackx (issues #73, #77-#79, #83), brackx2026/. Decoded here with this
 # project&#x27;s beam and period-French 6-gram (final_texts.py). Per manuscript line: the figures, then the
 # decode cut into words. UPPER CASE = inside a run of French (measure.py sense rule); |lower case| =
@@ -233,7 +233,7 @@ vérifieront pas, attendu(?) tant de charges et submissions qu&#x27;il ne s&#x27
 m&#x27;estois(?) bien garanty(?) en partie par le temps qu&#x27;il nous a espargné du siège de Castets; et l&#x27;autre(?), elle
 n&#x27;est pas aussi du tout inutile, ayant de luy ceste obligation de ne porter les armes de six mois pour son
 party, où il eust …</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f143.md">reading_f143.md</a></p><pre># ff. 143r–v, Mayenne to Henri III, April 1586: the reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f143.md">reading_f143.md</a></p><pre translate="no"># ff. 143r–v, Mayenne to Henri III, April 1586: the reading
 
 The cipher half of the Castets despatch, read from its contemporary clear copy on f. 155r (fr. 15572, canvas 162),
 as transcribed by Michael Brackx (`brackx2026/copies/f155r_f143_corr.txt`). The decode of the cipher with the
@@ -269,7 +269,7 @@ n&#x27;est pas aussi du tout inutile, ayant de luy ceste obligation de ne porter
 où il eust …
 
 [The copy continues on f. 155v (canvas 163 left), ll. 1-7, transcribed 22 Oct 2026 in `brackx2026/copies/f155v_f143_tail.txt`; the rest of f. 143v, read from the cipher on the image and checked against it, is in `reading_f143v_tail.md`.]</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f143_en.md">reading_f143_en.md</a></p><pre># ff. 143r–v, Mayenne to Henri III, April 1586: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f143_en.md">reading_f143_en.md</a></p><pre translate="no"># ff. 143r–v, Mayenne to Henri III, April 1586: English translation
 
 Translated from the reading (`reading_f143.md`), which follows the contemporary clear copy on f. 155r. `(?)` marks
 a word of the copy read with doubt; `…` where the copy breaks off.
@@ -304,7 +304,7 @@ undertaking not to bear arms for his party for six months, where he would have �
 [Continued in `reading_f143v_tail_en.md`, from the cipher on the image and the rest of the copy on f. 155v.]</pre></details>
 <h3>f. 143v</h3>
 <p>The Castets despatch continued, on the terms and the march of the army; the clear copy is f. 155r-v.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f143v_cipher.txt">f143v_cipher.txt</a></p><pre>A g ei M ao B T t c D ei t L w D v z Ze L 7 o q Tm Hc B q n ao z 7 x t w h oo 7 s
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f143v_cipher.txt">f143v_cipher.txt</a></p><pre translate="no">A g ei M ao B T t c D ei t L w D v z Ze L 7 o q Tm Hc B q n ao z 7 x t w h oo 7 s
 y t Tm 3 n x z dd g q w h n s ei M ao B L t 7 lam Ze t v o L c h pl ao B S ei 7 v w h
 z o w t c 7 z Hc o L B 7 g ei T w h z 7 v 40 Ze g ao s Hc B T c h T Tm o yy o 7 v
 w h n t s x v w L t h Ze 7 g n Ze L t w B v m pl T dd x w h e x v g t L q f
@@ -338,7 +338,7 @@ ao Tm h g w t v Ze L t T c n s q s 7 n q v Ze B x L dd x v dd t Ze L ao B dd m t
 z g L x 6 8 Tm h M t L ao z o n A g ei S n ao o z m x v Ze x v w L t z 7 v ei
 6 Ze t Hc Ze o 7 v ao ei x v Ze n t 47 h y dd x c Ze t n ao q 7 x t w 7 v Ze
 3 h Tm t z g o q x v y ao B 8 t w h Tm D c ao L 7 he t L x Tm B q z 7 g X q n</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/corrections/f143v_cipher.txt">f143v_cipher.txt</a></p><pre>A g ei M ao B T t c D ei t L w D v z Ze L 7 o q Tm Hc B q n ao z 7 x t w h oo 7 s
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/corrections/f143v_cipher.txt">f143v_cipher.txt</a></p><pre translate="no">A g ei M ao B T t c D ei t L w D v z Ze L 7 o q Tm Hc B q n ao z 7 x t w h oo 7 s
 y t Tm 3 n x z dd g q w h n s ei M ao B L t 7 lam Ze t v o L c h pl ao B S ei 7 v w h
 z o w t c 7 z Hc o L B 7 g ei T w h z 7 v 40 Ze g ao s Hc B T c h T Tm o yy o 7 v
 w h n t s x v w L t h Ze 7 g n Ze L t w B v m pl T dd x w h e x v g t L q f
@@ -373,7 +373,7 @@ z g L 15 68 Tm h M t L ao z o n A g ei S n ao o z m x v Ze x v w L t z 7 v ei
 6 Ze t Hc Ze o 7 v ao ei x v Ze n t 47 h y dd x c Ze t n ao q 7 xb t w 7 v Ze
 3 h Tm t z g o q x v y ao B 8 t w h Tm D c ao L 7 he t L x Tm B q z 7 g lam q n
 t lam 7 v c A o B z ei L w h fig o gg T</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f143v.txt">f143v.txt</a></p><pre># fr. 15572 f. 143v (same despatch): decryption with the merged Cipher-1 key (key_cipher1.json)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f143v.txt">f143v.txt</a></p><pre translate="no"># fr. 15572 f. 143v (same despatch): decryption with the merged Cipher-1 key (key_cipher1.json)
 # Transcription: Michael Brackx (issues #73, #77-#79, #83), brackx2026/. Decoded here with this
 # project&#x27;s beam and period-French 6-gram (final_texts.py). Per manuscript line: the figures, then the
 # decode cut into words. UPPER CASE = inside a run of French (measure.py sense rule); |lower case| =
@@ -447,7 +447,7 @@ t lam 7 v c A o B z ei L w h fig o gg T</pre></details>
     N TENTION AIENT LE TOUTES CESTE LA UO |ee dont|
 34  3 h Tm t z g o q x v y ao B 8 t w h Tm D c ao L 7 he t L x Tm B q z 7 g X q n
     |ie mes uiuan| SIEGE DE MA PAROLE REMIS SOU AU |l|</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f143.md">reading_f143.md</a></p><pre># ff. 143r–v, Mayenne to Henri III, April 1586: the reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f143.md">reading_f143.md</a></p><pre translate="no"># ff. 143r–v, Mayenne to Henri III, April 1586: the reading
 
 The cipher half of the Castets despatch, read from its contemporary clear copy on f. 155r (fr. 15572, canvas 162),
 as transcribed by Michael Brackx (`brackx2026/copies/f155r_f143_corr.txt`). The decode of the cipher with the
@@ -483,7 +483,7 @@ n&#x27;est pas aussi du tout inutile, ayant de luy ceste obligation de ne porter
 où il eust …
 
 [The copy continues on f. 155v (canvas 163 left), ll. 1-7, transcribed 22 Oct 2026 in `brackx2026/copies/f155v_f143_tail.txt`; the rest of f. 143v, read from the cipher on the image and checked against it, is in `reading_f143v_tail.md`.]</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f143v_tail.md">reading_f143v_tail.md</a></p><pre># f. 143v, ll. 26–35, Mayenne to Henri III, April 1586: the reading after the copy&#x27;s break
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f143v_tail.md">reading_f143v_tail.md</a></p><pre translate="no"># f. 143v, ll. 26–35, Mayenne to Henri III, April 1586: the reading after the copy&#x27;s break
 
 fr. 15572 f. 143v, Gallica canvas 151, left page. The contemporary clear copy on f. 155r (`reading_f143.md`) ends at
 the foot of that page on *où il eust …*. Those words fall in manuscript l. 26 of the cipher, at the figures
@@ -552,7 +552,7 @@ tost faict. [l. 38] J&#x27;attendz icy dans deux jours led. s.r Mar.al avec tout
 
 The page ends there. The f. 155v copy does not carry these lines: after the cipher&#x27;s last words it gives only the
 docket, *M.r du Mayne du x(?)me avril 1586*, so the despatch is from April 1586. The day is not certain: it may be *xme* (10th).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f143_en.md">reading_f143_en.md</a></p><pre># ff. 143r–v, Mayenne to Henri III, April 1586: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f143_en.md">reading_f143_en.md</a></p><pre translate="no"># ff. 143r–v, Mayenne to Henri III, April 1586: English translation
 
 Translated from the reading (`reading_f143.md`), which follows the contemporary clear copy on f. 155r. `(?)` marks
 a word of the copy read with doubt; `…` where the copy breaks off.
@@ -585,7 +585,7 @@ saved us in the siege of Castets; and the other(?) is not wholly useless either,
 undertaking not to bear arms for his party for six months, where he would have …
 
 [Continued in `reading_f143v_tail_en.md`, from the cipher on the image and the rest of the copy on f. 155v.]</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f143v_tail_en.md">reading_f143v_tail_en.md</a></p><pre># f. 143v, ll. 26–35, Mayenne to Henri III, April 1586: English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f143v_tail_en.md">reading_f143v_tail_en.md</a></p><pre translate="no"># f. 143v, ll. 26–35, Mayenne to Henri III, April 1586: English
 
 Translation of `reading_f143v_tail.md`, with the same holes. It begins inside the sentence where the f. 155r copy
 breaks off.
@@ -615,7 +615,7 @@ invested, of which the enemy are very b[…] …
 Docket of the copy (f. 155v): *M.r du Mayne*, April 1586; the day may be the 10th.</pre></details>
 <h3>f. 149v-150r</h3>
 <p>Forget to Villeroy, April 1586, on how the composition of Castets was made: &#x27;if there was a fault in the substance, there was more in the form&#x27;. The clear copy is f. 155v.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f150r_cipher.txt">f150r_cipher.txt</a></p><pre>Hc 9 12 x dd m 7 B m 40 lam t dd 7 o v y 17 ei t m L 7 Tm o ei 13 n ao g Hc
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f150r_cipher.txt">f150r_cipher.txt</a></p><pre translate="no">Hc 9 12 x dd m 7 B m 40 lam t dd 7 o v y 17 ei t m L 7 Tm o ei 13 n ao g Hc
 3 Ze L x z 7 n s A x dd 7 Tm c q dd o Ze B 7 v w h f o z Ze x n y w g v t
 M ao dd 7 v 13 v t s q Ze 51 ao Tm q v ao oo g o z x q Ze t Ze L 7 Tm yy pl 7 B t
 17 w ao v z n D 41 dd ao c 3 Ze s n ao Ze o 7 6 w h f o y Ze x n y 13 ei ao s
@@ -647,7 +647,7 @@ he o x L ao S q Ze t M 7 L m 40 T t Tm 3 q x Ze 26 S s B q o yy x g L x e 13 n y
 dd 7 v m Tm ao B v m t 6 o ff Ze ei L t z lam o x v B v z t Tm lam n t x m h q c t L t
 13 n z v h dd t q t c ao L t T 7 v Ze 43 3 v ei w h f 7 Tm S o ei y v yy o 3 w o Tm
 6 Ze o t 49 B t 26 c L 7 Ze t z m t 14 ei t v pl 6 z dd o 3 x g dd s v B L o o q</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f150r.txt">f150r.txt</a></p><pre># fr. 15572 f. 149v-150r, Forget to Villeroy, April 1586: decryption with the merged Cipher-1 key (key_cipher1.json)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f150r.txt">f150r.txt</a></p><pre translate="no"># fr. 15572 f. 149v-150r, Forget to Villeroy, April 1586: decryption with the merged Cipher-1 key (key_cipher1.json)
 # Transcription: Michael Brackx (issues #73, #77-#79, #83), brackx2026/. Decoded here with this
 # project&#x27;s beam and period-French 6-gram (final_texts.py). Per manuscript line: the figures, then the
 # decode cut into words. UPPER CASE = inside a run of French (measure.py sense rule); |lower case| =
@@ -735,7 +735,7 @@ s&#x27;en alloit à Bordeaux. Toutesfois je suis tant allé et tant venu(?) entr
 capitulations ayant esté reformées, comme je vous dis, ce qui estoit de leur part a esté fort bien retenu(?), et
 vous peux asseurer qu&#x27;ils sont maintenant très bien ensemble, et si les … qu&#x27;ils ne se séparoient pour une
 compagnie ny d&#x27;amitié(?) ; car je vous proteste que je n&#x27;y sçay aucune rais</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f150.md">reading_f150.md</a></p><pre># ff. 149v–150v, Forget to Villeroy, April 1586: the reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f150.md">reading_f150.md</a></p><pre translate="no"># ff. 149v–150v, Forget to Villeroy, April 1586: the reading
 
 Read from the contemporary clear copy on ff. 155v–156r (fr. 15572, canvases 162–163), as transcribed by Michael
 Brackx (`brackx2026/copies/f155v_f150r.txt`, `f156_f150v_corr.txt`). The decode of the cipher with the merged key
@@ -770,7 +770,7 @@ pourra faire, vous soiez bien informé de la vérité du faict, qui est, Dieu me
 y eust grande apparence du contraire. Je n&#x27;avois point pensé d&#x27;avoir encore de ruine(?) en ceste armée, mais en cecy
 j&#x27;estime aucunement avoir gaigné mes gages(?), comme peut estre ils le vous confesseront bien tous deux l&#x27;un et
 l&#x27;autre.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f150_en.md">reading_f150_en.md</a></p><pre># ff. 149v–150v, Forget to Villeroy, April 1586: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f150_en.md">reading_f150_en.md</a></p><pre translate="no"># ff. 149v–150v, Forget to Villeroy, April 1586: English translation
 
 Translated from the reading (`reading_f150.md`), which follows the contemporary clear copy on ff. 155v–156r.
 `(?)` marks a word read with doubt, `[…]` an unread word.
@@ -802,7 +802,7 @@ every sign of the contrary. I had not expected to see any more ruin(?) in this a
 somewhat earned my wages(?), as perhaps both of them will admit to you.</pre></details>
 <h3>f. 150v</h3>
 <p>The same letter continued: the two commanders listen too readily to their own people, who want no company of one another; Forget thinks he has earned his wages. The clear copy is f. 156r.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f150v_cipher.txt">f150v_cipher.txt</a></p><pre>Hc v c 7 g L 15 12 n y A t S h o yy t 6 Ze M ao B L t z o dd t v h q m 14 n g v
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f150v_cipher.txt">f150v_cipher.txt</a></p><pre translate="no">Hc v c 7 g L 15 12 n y A t S h o yy t 6 Ze M ao B L t z o dd t v h q m 14 n g v
 x m n ao s c Ze L t x z dd 7 q Ze t 6 m Ze L q S g 7 n 7 v Ze B x L q n x s T z
 y x 6 z 13 v h q 7 s n w L 7 o x v Ze n t z box v y q 43 w t dc 7 Tm c D o
 8 v yy x m n t z ao g Ze L t q 43 w h dd s c t L 3 x g T z 44 T ei t 26 x v
@@ -815,7 +815,7 @@ ao brace x L ao v dd t oo s dd 7 v Ze L x o T t B t v o g 7 o q 43 c h v z t w a
 B x z Ze o pl t z g 7 o L D g dd q v t pl 8 6 Ze y ao o 8 v t Tm t q y ao B 8
 h q 49 62 Ze x z E L t 12 n q n t 26 dd 7 v M t yy t L 7 v Ze g v B
 7 g L x m n s 6 x m A ao s n Ze L t 44 T me</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f150.txt">f150.txt</a></p><pre># fr. 15572 f. 150v (same letter): decryption with the merged Cipher-1 key (key_cipher1.json)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f150.txt">f150.txt</a></p><pre translate="no"># fr. 15572 f. 150v (same letter): decryption with the merged Cipher-1 key (key_cipher1.json)
 # Transcription: Michael Brackx (issues #73, #77-#79, #83), brackx2026/. Decoded here with this
 # project&#x27;s beam and period-French 6-gram (final_texts.py). Per manuscript line: the figures, then the
 # decode cut into words. UPPER CASE = inside a run of French (measure.py sense rule); |lower case| =
@@ -860,7 +860,7 @@ ruine(?) en ceste armée, mais en cecy j&#x27;estime aucunement avoir gaigné me
 bien tous deux l&#x27;un et l&#x27;autre.
 
 *[endorsement:]* Mr Forget de … avril 1586.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f150.md">reading_f150.md</a></p><pre># ff. 149v–150v, Forget to Villeroy, April 1586: the reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f150.md">reading_f150.md</a></p><pre translate="no"># ff. 149v–150v, Forget to Villeroy, April 1586: the reading
 
 Read from the contemporary clear copy on ff. 155v–156r (fr. 15572, canvases 162–163), as transcribed by Michael
 Brackx (`brackx2026/copies/f155v_f150r.txt`, `f156_f150v_corr.txt`). The decode of the cipher with the merged key
@@ -895,7 +895,7 @@ pourra faire, vous soiez bien informé de la vérité du faict, qui est, Dieu me
 y eust grande apparence du contraire. Je n&#x27;avois point pensé d&#x27;avoir encore de ruine(?) en ceste armée, mais en cecy
 j&#x27;estime aucunement avoir gaigné mes gages(?), comme peut estre ils le vous confesseront bien tous deux l&#x27;un et
 l&#x27;autre.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f150_en.md">reading_f150_en.md</a></p><pre># ff. 149v–150v, Forget to Villeroy, April 1586: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f150_en.md">reading_f150_en.md</a></p><pre translate="no"># ff. 149v–150v, Forget to Villeroy, April 1586: English translation
 
 Translated from the reading (`reading_f150.md`), which follows the contemporary clear copy on ff. 155v–156r.
 `(?)` marks a word read with doubt, `[…]` an unread word.
@@ -927,7 +927,7 @@ every sign of the contrary. I had not expected to see any more ruin(?) in this a
 somewhat earned my wages(?), as perhaps both of them will admit to you.</pre></details>
 <h3>f. 154r</h3>
 <p>Forget to Villeroy after Easter 1586: the pay of two musters owed, captains&#x27; complaints, and lenders who had promised money to be repaid in Paris drawing back; forty thousand ecus. The clear copy is f. 157r.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f154r_cipher.txt">f154r_cipher.txt</a></p><pre>c gg x v 14
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f154r_cipher.txt">f154r_cipher.txt</a></p><pre translate="no">c gg x v 14
 he t S h ei 6 t 25 x z Ze o 7 v q n Hc L dd c 7 g e A t R ao B x Tm h v Ze w t y w h S y
 Tm 7 v z Ze e t y 13 o g 7 o x v Ze h z m t M ao B dd m t y ao v 7 y 8 t v z w t g g t
 fe t A o 14 he t x z Ze w h g t v s B x v dd 7 L h q w h c g o q 6 c n g z 8 L ao v
@@ -956,7 +956,7 @@ h 13 n x z Ze M 7 L dd t 14 ei t z 7 o q ei dd B L t Ze B v s c 7 g L dd x z Ze 
 z 7 o q 7 lam n o 8 t c Hc g L S n g z w h w s ao L x v Ze t 104 x z dd s L x v
 Tm 7 Hc c L o g t v 7 Tm 13 z x L ao e h Tm X L 14 c 7 g e q v h z o y v ao he
 M 7 n L t 13 dd 7 v z o w t L h e x n t Ze x Tm c z 7 s 25 z 7 x t z 13 62</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f154.txt">f154.txt</a></p><pre># fr. 15572 f. 154r, Forget to Villeroy, April 1586: decryption with the merged Cipher-1 key (key_cipher1.json)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f154.txt">f154.txt</a></p><pre translate="no"># fr. 15572 f. 154r, Forget to Villeroy, April 1586: decryption with the merged Cipher-1 key (key_cipher1.json)
 # Transcription: Michael Brackx (issues #73, #77-#79, #83), brackx2026/. Decoded here with this
 # project&#x27;s beam and period-French 6-gram (final_texts.py). Per manuscript line: the figures, then the
 # decode cut into words. UPPER CASE = inside a run of French (measure.py sense rule); |lower case| =
@@ -1037,7 +1037,7 @@ je ne leur fisse promettre de bouche que les deniers leur seroient rendus à Par
 sorte qu&#x27;il est force que je sois icy retenu pour ceste occasion, dont je vois bien que je ne sortiray que je
 ne sois obligé pour plus de quarante mil escus en mon privé nom, qui sera remarqué pour une pure folie, qui
 considérera le temps où nous sommes, qu&#x27;il peut</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f154.md">reading_f154.md</a></p><pre># f. 154r–v, Forget to Villeroy, after Easter 1586: the reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f154.md">reading_f154.md</a></p><pre translate="no"># f. 154r–v, Forget to Villeroy, after Easter 1586: the reading
 
 Read from the contemporary clear copy on f. 157r (fr. 15572, canvas 164), as transcribed by Michael Brackx
 (`brackx2026/copies/f157_f154r_corr.txt`, `f157_f154v.txt`). The decode of the cipher with the merged key
@@ -1074,7 +1074,7 @@ pourveu à ceste armée, dans la fin du mois prochain il ne se trouvera pas deux
 tout haut que l&#x27;armée de Daulphiné est payée tous les mois et que celle-cy est l&#x27;armée desfavorisée, avec des propos
 si fascheux que je ne puis les vous répéter. Et vous puis dire que ceulx qui sont tenus les plus sages le sont en
 cela quasi moins que les autres.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f154_en.md">reading_f154_en.md</a></p><pre># f. 154r–v, Forget to Villeroy, after Easter 1586: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f154_en.md">reading_f154_en.md</a></p><pre translate="no"># f. 154r–v, Forget to Villeroy, after Easter 1586: English translation
 
 Translated from the reading (`reading_f154.md`), which follows the contemporary clear copy on f. 157r. `(?)` marks a
 word read with doubt.
@@ -1108,7 +1108,7 @@ that I cannot repeat it to you. And I can tell you that those held to be the wis
 than the others.</pre></details>
 <h3>f. 154v</h3>
 <p>The same letter continued in two cipher blocks: Villeroy&#x27;s advice to raise money on exchange, and the difficulty of doing it at Bordeaux. Clear copy f. 157r.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f154vA_cipher.txt">f154vA_cipher.txt</a></p><pre>X fe e O y x L Ze t n O v dd 7 6 y x ff O O v Ze 13 n tm h L g O v t e 7 O Ze w h M 7 v
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f154vA_cipher.txt">f154vA_cipher.txt</a></p><pre translate="no">X fe e O y x L Ze t n O v dd 7 6 y x ff O O v Ze 13 n tm h L g O v t e 7 O Ze w h M 7 v
 x 6 dd 7 th lam n t 24 n O brace L t f x v th B 7 v w s v O s Ze L t c n s th 8 L O v w
 O n f x y L pl O M O B dd m n t th B x v th 7 B ff th dd 7 v th B w h L O lam n t
 B x th Ze t Hc 7 v Ze L O O x v dc m w h M O B L t w B th n x tA L t qs w h dc f
@@ -1118,7 +1118,7 @@ O dd 13 dd Ze ff q 26 c 7 th O v m O dd th t y L t e 14 B t v h y yy t 51 x th Z
 y 7 n H v Ze O B e t 6 O dd t 13 x th m w ? O v q n y v t w h s 7 q w h c t th
 x q 7 s 26 25 th O v w h q 14 25 w h y 7 v q Hc f x L f x e w h c L x v w
 oo h n s q O dd f O v y t n t c n y q 14 25 5 7 y fe 7 v q</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f154vB_cipher.txt">f154vB_cipher.txt</a></p><pre>th 7 v q o t y L f x v x th m c A y q c 7 y L M
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f154vB_cipher.txt">f154vB_cipher.txt</a></p><pre translate="no">th 7 v q o t y L f x v x th m c A y q c 7 y L M
 B e t O y dd s v t c L x w o f Ze o 7 v 24 brace t v h 26 th f O y L 7 O q f x n t
 e 14 th o n v x q Ze O y Ze L t th t v m c 7 y L y x s D f h th E t O L th sz t
 w O v q n O M o v w y tm 7 o dd c L 7 dd f O o v 12 v h th o Ze L 7 ub t L O 51 w
@@ -1129,7 +1129,7 @@ S H q th o M O th dd f x y U 14 E2 t v h n t dd 26 c y B q L t c L h th x v Ze
 t e x m 26 c s B q w o L t 14 f x y U 13 th 7 v Ze m t v y U n x th c n y th
 dd O o y t q A t th 7 v Ze x v dd t f E2 qq y O th o th 7 o v q 14 n x dd O y Ze x
 dd yy ? v me</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f154v.txt">f154v.txt</a></p><pre># fr. 15572 f. 154v, two blocks (same letter): decryption with the merged Cipher-1 key (key_cipher1.json)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f154v.txt">f154v.txt</a></p><pre translate="no"># fr. 15572 f. 154v, two blocks (same letter): decryption with the merged Cipher-1 key (key_cipher1.json)
 # Transcription: Michael Brackx (issues #73, #77-#79, #83), brackx2026/. Decoded here with this
 # project&#x27;s beam and period-French 6-gram (final_texts.py). Per manuscript line: the figures, then the
 # decode cut into words. UPPER CASE = inside a run of French (measure.py sense rule); |lower case| =
@@ -1192,7 +1192,7 @@ ceste armée que dans la fin du mois prochain il ne se trouvera pas deux mil hom
 haut que l&#x27;armée de Daulphiné est payée tous les mois et que celle-cy est l&#x27;armée desfavorisée, avec des
 propos si fascheux que je ne puis les vous repeter. Et vous puis dire que ceulx qui sont tenus les plus sages le
 sont en cela quasi moins que les autres.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f154.md">reading_f154.md</a></p><pre># f. 154r–v, Forget to Villeroy, after Easter 1586: the reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f154.md">reading_f154.md</a></p><pre translate="no"># f. 154r–v, Forget to Villeroy, after Easter 1586: the reading
 
 Read from the contemporary clear copy on f. 157r (fr. 15572, canvas 164), as transcribed by Michael Brackx
 (`brackx2026/copies/f157_f154r_corr.txt`, `f157_f154v.txt`). The decode of the cipher with the merged key
@@ -1229,7 +1229,7 @@ pourveu à ceste armée, dans la fin du mois prochain il ne se trouvera pas deux
 tout haut que l&#x27;armée de Daulphiné est payée tous les mois et que celle-cy est l&#x27;armée desfavorisée, avec des propos
 si fascheux que je ne puis les vous répéter. Et vous puis dire que ceulx qui sont tenus les plus sages le sont en
 cela quasi moins que les autres.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f154_en.md">reading_f154_en.md</a></p><pre># f. 154r–v, Forget to Villeroy, after Easter 1586: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f154_en.md">reading_f154_en.md</a></p><pre translate="no"># f. 154r–v, Forget to Villeroy, after Easter 1586: English translation
 
 Translated from the reading (`reading_f154.md`), which follows the contemporary clear copy on f. 157r. `(?)` marks a
 word read with doubt.
@@ -1264,7 +1264,7 @@ than the others.</pre></details>
 <h3>f. 173 <span class="st partial">read in part</span></h3>
 <p>To the King, 1586: the credit crisis; no means to pay two musters, the town refuses to contribute on the strength of the King&#x27;s letters, no one will stand surety, and only merchants of Paris lend on the writer&#x27;s word.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (95% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f173_cipher.txt">f173_cipher.txt</a></p><pre>c v 44 w h A x y Ze L t z B v x o t oo o m h ao v n ao
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f173_cipher.txt">f173_cipher.txt</a></p><pre translate="no">c v 44 w h A x y Ze L t z B v x o t oo o m h ao v n ao
 he t 12 dd t L B Ze zu q zu t z x g 7 o ao v m M L s z Ze e t w h n ao q t v s 8
 w B Ze L 7 o z B x q z t z 7 o q 13 n ei ao c n g dd w B z o y z x c z D o v t
 13 n x q Ze o z 7 o m x q m e t c ao e n x dd dd f x z B v dd x m v ao ei D 6 m
@@ -1297,7 +1297,7 @@ q w h R ao e o q x m w h oo t f 7 e dd 13 o g 7 o x v m w h n 59
 ao L x dd 7 zu e t T o g w o dd m c ao L o q 13 7 v Ze g 7 s n q c L x
 w e t dd t z m t f 7 v M B ao v f x z q e z ao M 7 ei 14 w h z t
 dd 7 v Ze ao v m t e w h n t z B lam ao ei he t e q s e z X z o z ao n t</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/corrections/f173_cipher.txt">f173_cipher.txt</a></p><pre>c v 44 w h A x y Ze L t z B v x dd t dd dd o m h B v n ao
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/corrections/f173_cipher.txt">f173_cipher.txt</a></p><pre translate="no">c v 44 w h A x y Ze L t z B v x dd t dd dd o m h B v n ao
 he t 12 dd t L B Ze zu q zu t z x g 7 o ao v m M L s z Ze e t w h n ao q t v s 8
 w B Ze L 7 o z B x q z t z 7 o q 13 n ei ao c n g dd w B z o y z x c z D o v t
 13 n x q Ze o z 7 o m x q m e t c ao e n x dd dd f x z B v dd x m v ao ei D 6 m
@@ -1330,7 +1330,7 @@ q w h R ao e o q x m w h oo t f 7 e dd 13 o g 7 o x v m w h n 59
 ao L x dd 7 zu e t T o g w o dd m c ao L o q 13 7 v Ze g 7 s n q c L x
 w e t dd t z m t f 7 v M B ao v f x z q e z ao M 7 ei 14 w h z t
 dd 7 v Ze ao v m t e w h n t z B lam ao ei he t e q s e pl X z o pl c n t</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f173.txt">f173.txt</a></p><pre># fr. 15572 f. 173, to the King, 1586: decryption with the merged Cipher-1 key (key_cipher1.json)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f173.txt">f173.txt</a></p><pre translate="no"># fr. 15572 f. 173, to the King, 1586: decryption with the merged Cipher-1 key (key_cipher1.json)
 # Transcription: Michael Brackx (issues #73, #77-#79, #83), brackx2026/. Decoded here with this
 # project&#x27;s beam and period-French 6-gram (final_texts.py). Per manuscript line: the figures, then the
 # decode cut into words. UPPER CASE = inside a run of French (measure.py sense rule); |lower case| =
@@ -1402,7 +1402,7 @@ dd 7 v Ze ao v m t e w h n t z B lam ao ei he t e q s e pl X z o pl c n t</pre><
     |dre| CESTE CONFIANCE MOIS |i| FOI QUE DE ME
 33  dd 7 v Ze ao v m t e w h n t z B lam ao ei he t e q s e z X z o z ao n t
     CON |tinter de le me baile| IOUR SES AU A LE</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f173.md">reading_f173.md</a></p><pre># f. 173, [Forget] to Henri III, 1586: the reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f173.md">reading_f173.md</a></p><pre translate="no"># f. 173, [Forget] to Henri III, 1586: the reading
 
 fr. 15572 f. 173, Gallica canvas 180, right page. The letter opens in clear and goes on in Cipher-1 for
 thirty-three lines, on Mayenne&#x27;s want of money and the failure of credit in the town. The writer is the man Mayenne
@@ -1452,7 +1452,7 @@ le me bailler sur ma simple …
 
 Files: `brackx2026/corrections/f173.tsv` (label changes), `brackx2026/corrections/f173_cipher.txt` (corrected
 figures), `key_cipher1_f173.json` (leaf key), `reading_f173_log.md` (passes), `reading_f173_en.md` (English).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f173_en.md">reading_f173_en.md</a></p><pre># f. 173, [Forget] to Henri III, 1586: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f173_en.md">reading_f173_en.md</a></p><pre translate="no"># f. 173, [Forget] to Henri III, 1586: English translation
 
 Translated from the reading (`reading_f173.md`), with the same holes. A word in square brackets with a question mark
 translates a word the figures carry only in part; `[…]` is a run of figures that does not form a word; `[44]` the
@@ -1492,7 +1492,7 @@ mere …
 [The page ends here; the sentence runs on beyond f. 173r.]</pre></details>
 <h3>f. 196</h3>
 <p>To the King, 1586, &#x27;Depuis le partement du S.r de Bosseval&#x27;: a siege report naming Sainct-Chamarand, la Barge, Montberault and la Binault, Mayenne&#x27;s fever, Marshal Matignon pressed to come, two trenches and a battery of fifteen cannon.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f196_cipher.txt">f196_cipher.txt</a></p><pre>c v Ze w 12 o w h R y o q 13 n o x dd Ze
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f196_cipher.txt">f196_cipher.txt</a></p><pre translate="no">c v Ze w 12 o w h R y o q 13 n o x dd Ze
 D fe ei s t B o v m dd e L o box x B he B 13 n ei ao y t B y v t y v T x s
 pl h 13 n q ei X B o y dd t n o M o x y L t A o 14 he t 49 ei t dd L y
 B dd t L x y n t T o h v he o x e Hc x h 6 o ei X ff m x s o y ei 7 y L
@@ -1523,7 +1523,7 @@ w o dd m z o x g e n t z x e t z f f o n 13 A t dd e x g z m pl o
 z 7 g n o B y t e R 7 g e n t L t g B e w w g oo o dd m q o x y t 12 z ao
 w g X 6 dd t M 7 e m 36 s n o g o he t x q m y L ao v w t h m
 z x n D ei z B X ao B B ei x y t c 12 o M o he y M o B e t w h z</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/corrections/f196_201_cipher.txt">f196_201_cipher.txt</a></p><pre># ff. 196 and 201, fr. 15572: Brackx&#x27;s transcription with the label corrections of corrections/f196_201.tsv
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/corrections/f196_201_cipher.txt">f196_201_cipher.txt</a></p><pre translate="no"># ff. 196 and 201, fr. 15572: Brackx&#x27;s transcription with the label corrections of corrections/f196_201.tsv
 # Labels as in key_cipher1.json; new labels: 8e (open 8-shaped e), cr (plain cross, c/e), ps (p with curl, s),
 # ca (c with a stroke, a), tp (t with a lower loop, p); u = q. One manuscript line per line.
 
@@ -1591,7 +1591,7 @@ pl o z 7 g n ao B y t ps
 12 o M x he g M ao B w t q Ze e o v dd f B q x 6 c A s z o x s e
 q x 6 w L 7 o dd m y x m h z Ze ao 6 dd z x n y D L v o y w h c o 7 B o x e q
 A ao lam pl z 7 v y v t h 6 ao x q Ze t S e g dd e 7 v y g t c v</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f196.txt">f196.txt</a></p><pre># fr. 15572 f. 196, to the King, 1586 (first encipherment): decryption with the merged Cipher-1 key (key_cipher1.json)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f196.txt">f196.txt</a></p><pre translate="no"># fr. 15572 f. 196, to the King, 1586 (first encipherment): decryption with the merged Cipher-1 key (key_cipher1.json)
 # Transcription: Michael Brackx (issues #73, #77-#79, #83), brackx2026/. Decoded here with this
 # project&#x27;s beam and period-French 6-gram (final_texts.py). Per manuscript line: the figures, then the
 # decode cut into words. UPPER CASE = inside a run of French (measure.py sense rule); |lower case| =
@@ -1659,7 +1659,7 @@ A ao lam pl z 7 v y v t h 6 ao x q Ze t S e g dd e 7 v y g t c v</pre></details>
     DU ANCE FORT TOUTESFOIS |u liui| LE EST GRANDE ET
 31  z x n D ei z B X ao B B ei x y t c 12 o M o he y M o B e t w h z
     SE LAIS IE MES SIEGE SI LA FILS FAIRE DES</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f196_201.md">reading_f196_201.md</a></p><pre># ff. 196 and 201, Mayenne&#x27;s camp to Henri III, before Monségur, May 1586: the reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f196_201.md">reading_f196_201.md</a></p><pre translate="no"># ff. 196 and 201, Mayenne&#x27;s camp to Henri III, before Monségur, May 1586: the reading
 
 One despatch enciphered twice in the Cipher-1 key, fr. 15572 f. 196r (canvas 203 right) and f. 201r (canvas 208
 right); f. 201 has clear text before, inside and after its cipher. The despatch goes on over f. 196v, a page of
@@ -1711,7 +1711,7 @@ Toutesfois, parce que la ville est grande et [l. 31] malaisée à assiéger, il 
 *[Je] croy qu&#x27;après demain l&#x27;on commencera la batterye de quinze canons, dont il y a apparence qu&#x27;ils
 s&#x27;estonneront, n&#x27;ayans pas accoustumé à bien assiéger les places et faire avec cest équipaige. Toutesfoys jusques
 icy ils sont toutte à Monsieur …* (f. 201, clear foot)</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f196_201_en.md">reading_f196_201_en.md</a></p><pre># ff. 196 and 201, Mayenne&#x27;s camp to Henri III, before Monségur, May 1586: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f196_201_en.md">reading_f196_201_en.md</a></p><pre translate="no"># ff. 196 and 201, Mayenne&#x27;s camp to Henri III, before Monségur, May 1586: English translation
 
 Translation of `reading_f196_201.md`, with the same holes. `[?word]` = doubtful, `[…]` = not read, `[37]` = code
 group not identified; braces give f. 201&#x27;s wording where it differs; italics = clear text on the leaves. Line markers
@@ -1756,7 +1756,7 @@ they will take fright, not being used to seeing places properly besieged and han
 Nevertheless, so far they are all for Monsieur …* (f. 201, clear foot)</pre></details>
 <h3>f. 201</h3>
 <p>The same despatch as f. 196, enciphered again with different homophones and with more of it in clear; the two were aligned figure by figure.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f201_cipher.txt">f201_cipher.txt</a></p><pre>c v Hc m e g v L x s pl h 13 n g e ao dd x g q t n o M o t
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f201_cipher.txt">f201_cipher.txt</a></p><pre translate="no">c v Hc m e g v L x s pl h 13 n g e ao dd x g q t n o M o t
 box e t n o 14 he t 49 e t dd e 7 e z h L x o y n t e o h v Ze o x e dd t h v
 X e D v m h s ao g e 7 g T w f s o h q n B q x dd 7 v w ao pl t y 13 6 ao w
 o x g z he dd o x g f s Hc UNK o 7 n ao 6 f t v e z o zu x o q ao pl o w h v m
@@ -1786,7 +1786,7 @@ pl o z 7 g n ao B y t y c g g
 12 z M x he g M ao B w t q Ze e o v dd f B q x 6 c A S z o x s e
 q x 6 w L 7 o dd m y x m h z Ze ao 6 dd z x n y D L v o y w h c o 7 B o x e q
 A ao lam pl z 7 v y v t h 6 ao x q Ze t S e g dd e 7 v y g t c v</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/corrections/f196_201_cipher.txt">f196_201_cipher.txt</a></p><pre># ff. 196 and 201, fr. 15572: Brackx&#x27;s transcription with the label corrections of corrections/f196_201.tsv
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/corrections/f196_201_cipher.txt">f196_201_cipher.txt</a></p><pre translate="no"># ff. 196 and 201, fr. 15572: Brackx&#x27;s transcription with the label corrections of corrections/f196_201.tsv
 # Labels as in key_cipher1.json; new labels: 8e (open 8-shaped e), cr (plain cross, c/e), ps (p with curl, s),
 # ca (c with a stroke, a), tp (t with a lower loop, p); u = q. One manuscript line per line.
 
@@ -1854,7 +1854,7 @@ pl o z 7 g n ao B y t ps
 12 o M x he g M ao B w t q Ze e o v dd f B q x 6 c A s z o x s e
 q x 6 w L 7 o dd m y x m h z Ze ao 6 dd z x n y D L v o y w h c o 7 B o x e q
 A ao lam pl z 7 v y v t h 6 ao x q Ze t S e g dd e 7 v y g t c v</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f201.txt">f201.txt</a></p><pre># fr. 15572 f. 201, to the King, 1586 (the same despatch re-enciphered): decryption with the merged Cipher-1 key (key_cipher1.json)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f201.txt">f201.txt</a></p><pre translate="no"># fr. 15572 f. 201, to the King, 1586 (the same despatch re-enciphered): decryption with the merged Cipher-1 key (key_cipher1.json)
 # Transcription: Michael Brackx (issues #73, #77-#79, #83), brackx2026/. Decoded here with this
 # project&#x27;s beam and period-French 6-gram (final_texts.py). Per manuscript line: the figures, then the
 # decode cut into words. UPPER CASE = inside a run of French (measure.py sense rule); |lower case| =
@@ -1920,7 +1920,7 @@ A ao lam pl z 7 v y v t h 6 ao x q Ze t S e g dd e 7 v y g t c v</pre></details>
     S ENDROICTS ET ESTANS MAL |garnis de la o niers|
 30  A ao lam pl z 7 v y v t h 6 ao x q Ze t S e g dd e 7 v y g t c v
     |la bisongne| EN A ESTES IUS |iongue s n|</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f196_201.md">reading_f196_201.md</a></p><pre># ff. 196 and 201, Mayenne&#x27;s camp to Henri III, before Monségur, May 1586: the reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f196_201.md">reading_f196_201.md</a></p><pre translate="no"># ff. 196 and 201, Mayenne&#x27;s camp to Henri III, before Monségur, May 1586: the reading
 
 One despatch enciphered twice in the Cipher-1 key, fr. 15572 f. 196r (canvas 203 right) and f. 201r (canvas 208
 right); f. 201 has clear text before, inside and after its cipher. The despatch goes on over f. 196v, a page of
@@ -1972,7 +1972,7 @@ Toutesfois, parce que la ville est grande et [l. 31] malaisée à assiéger, il 
 *[Je] croy qu&#x27;après demain l&#x27;on commencera la batterye de quinze canons, dont il y a apparence qu&#x27;ils
 s&#x27;estonneront, n&#x27;ayans pas accoustumé à bien assiéger les places et faire avec cest équipaige. Toutesfoys jusques
 icy ils sont toutte à Monsieur …* (f. 201, clear foot)</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f196_201_en.md">reading_f196_201_en.md</a></p><pre># ff. 196 and 201, Mayenne&#x27;s camp to Henri III, before Monségur, May 1586: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f196_201_en.md">reading_f196_201_en.md</a></p><pre translate="no"># ff. 196 and 201, Mayenne&#x27;s camp to Henri III, before Monségur, May 1586: English translation
 
 Translation of `reading_f196_201.md`, with the same holes. `[?word]` = doubtful, `[…]` = not read, `[37]` = code
 group not identified; braces give f. 201&#x27;s wording where it differs; italics = clear text on the leaves. Line markers
@@ -2017,7 +2017,7 @@ they will take fright, not being used to seeing places properly besieged and han
 Nevertheless, so far they are all for Monsieur …* (f. 201, clear foot)</pre></details>
 <h3>f. 196v</h3>
 <p>The continuation of the ff. 196/201 despatch, dated in clear &#x27;Du camp devant Monségur ce [...] jour de May 1586&#x27;: the siege of Monségur, a battery of fifteen cannon to open the day after tomorrow, the defenders resolved to hold out after Navarre&#x27;s treatment of the commander of Sainte-Bazeille, Navarre leaving for Saintonge to meet his reiters while Turenne holds the province from Nérac, the army short of money and the third month&#x27;s pay.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/corrections/f196v_cipher.txt">f196v_cipher.txt</a></p><pre># f. 196v, fr. 15572 (Gallica canvas 204 left): the continuation of the despatch of ff. 196r/201, 36 cipher lines,
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/corrections/f196v_cipher.txt">f196v_cipher.txt</a></p><pre translate="no"># f. 196v, fr. 15572 (Gallica canvas 204 left): the continuation of the despatch of ff. 196r/201, 36 cipher lines,
 # transcribed 22 Oct 2026 figure by figure from openapi.bnf.fr IIIF full-resolution crops (deskewed 0.68 deg), in
 # Brackx&#x27;s label set as corrected for this hand in corrections/f196_201.tsv (same scribe as f. 196r).
 # One manuscript line per line. Not transcribed by Brackx; no second reader has checked these labels.
@@ -2069,7 +2069,7 @@ t x Ze 49 12 x dd Ze 48 40 v h dl t B o B e t w h M o B e t t v Ze h 6 w
 e t c e 7 pl S Ze t pl t v m 33 y 7 n q 6 Ze t dd y e n o c e 7 S q dd o Ze B 7 v
 13 26 dd t e o M o 6 dl m e S o e ps t y o n c 7 y e dl t 13 dd t w 7 o B m x 6
 Ze e t c e h v w e t X y c o e Ze o L w h dl t dd o y t v T yy w</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f196v.md">reading_f196v.md</a></p><pre># f. 196v, Mayenne&#x27;s camp to Henri III, before Monségur, May 1586: the reading
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f196v.md">reading_f196v.md</a></p><pre translate="no"># f. 196v, Mayenne&#x27;s camp to Henri III, before Monségur, May 1586: the reading
 
 The verso of fr. 15572 f. 196 (Gallica canvas 204 left): 36 lines of Cipher-1 that continue the despatch of
 ff. 196r/201 (`reading_f196_201.md`) from *il a fallu faire des*, then the clear close and dateline. Never
@@ -2133,7 +2133,7 @@ camp devant Monségur ce […] jour de May, 1586*.
 *Vostre très humble, très obeissant et très fidelle —*
 
 (The signature is not on the page.)</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f196v.md">reading_f196v.md</a></p><pre># f. 196v, Mayenne&#x27;s camp to Henri III, before Monségur, May 1586: the reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f196v.md">reading_f196v.md</a></p><pre translate="no"># f. 196v, Mayenne&#x27;s camp to Henri III, before Monségur, May 1586: the reading
 
 The verso of fr. 15572 f. 196 (Gallica canvas 204 left): 36 lines of Cipher-1 that continue the despatch of
 ff. 196r/201 (`reading_f196_201.md`) from *il a fallu faire des*, then the clear close and dateline. Never
@@ -2197,7 +2197,7 @@ camp devant Monségur ce […] jour de May, 1586*.
 *Vostre très humble, très obeissant et très fidelle —*
 
 (The signature is not on the page.)</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f196v_en.md">reading_f196v_en.md</a></p><pre># f. 196v, Mayenne&#x27;s camp to Henri III, before Monségur, May 1586: English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f196v_en.md">reading_f196v_en.md</a></p><pre translate="no"># f. 196v, Mayenne&#x27;s camp to Henri III, before Monségur, May 1586: English
 
 Translation of `reading_f196v.md`, with the same holes. `[?word]` partly supported by its figures, `[…]` not read,
 `[65]` code not identified; the clear close in italics. Line markers as in the French.
@@ -2262,7 +2262,7 @@ kind of supply beside money (provisions?).</pre></details>
 <h3>f. 123r <span class="st stuck">decoded, not read</span></h3>
 <p>Mayenne to the King from Marmande, March 1586, opening in clear (&#x27;la dernière que j&#x27;ay eu l&#x27;honneur est du huictiesme de ce moys&#x27;): no money, contributions to be had only by garrisons, the troops cannot be kept together.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f123r_cipher.txt">f123r_cipher.txt</a></p><pre>UNK n ao v h Hc U dd E2 m E2 14 B t R L h s 7 E2 Hc U q1 qs 25 s 25 e
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f123r_cipher.txt">f123r_cipher.txt</a></p><pre translate="no">UNK n ao v h Hc U dd E2 m E2 14 B t R L h s 7 E2 Hc U q1 qs 25 s 25 e
 h Ze L 7 box U fe E2 ff v th 16 qs q1 dd Ca L tm ff Cl th B e U E2 7 v
 w T Hc 3 B Ze A ao om y h he U B B E L 7 q1 t tm x 3 v Ze h ff ao v
 E B o S n qs dd y L Ca v w h 14 E2 U ff B A ao s q1 B th x S e t U v B
@@ -2298,7 +2298,7 @@ h tm t 14 n q1 v ff 6 v S h qs n m Ca y 7 E2 L 14 ao Cl s y dd q1 tm S E
 Ca v m x Ze dd o pl t h L U tm h v E 14 25 v E2 S q1 qs y 7 v Cl R
 Cl qs dd M ff s L v E2 L Ze q1 y m x dd A B tm E2 v dd q1 pi q1 oo o q1 h
 dd tm Ca fe E2 qs h v qs q1 v dd U tm pb Cl pl 16 m q1 y dd dc q1 E2 B v dd tm B w</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/corrections/f123_cipher.txt">f123_cipher.txt</a></p><pre># ff. 123r and 123v, fr. 15572: Brackx&#x27;s transcription with the label corrections of corrections/f123.tsv
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/corrections/f123_cipher.txt">f123_cipher.txt</a></p><pre translate="no"># ff. 123r and 123v, fr. 15572: Brackx&#x27;s transcription with the label corrections of corrections/f123.tsv
 # Labels as in key_cipher1.json; leaf labels in key_cipher1_f123.json: Uv (V with underbar, e/u) and Cv (C with a
 # v on its top right, s/x), the two figures Brackx merges as U; ssl (looped double s, ee/e); szl (open sharp s, ss);
 # oob (barred double o, ff); ub (d with a crossed stem, u); dc = m; VMf (Vostre Majeste, from context); qt (q with
@@ -2387,7 +2387,7 @@ L t dd 7 y L o T ao VMf x m 26 w h c t th dd f t e dd t c 7 L m t y L x U
 c L t qs c 7 y L 26 th y brace n o x L m L x th S s tm lam n t pl B v m tm h M ao 3
 L t c ao L n y E2 x v Ze t 6 w L t 33 49 o v w h pl t 6 m x m 3 v Ze t
 m o 7 v x m th o E2 w t th o L t qs t U t L y o L w h dd t qs Ze t ao L tm ssl M</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/corrections/f123r_v2_cipher.txt">f123r_v2_cipher.txt</a></p><pre># f. 123r, fr. 15572: second pass (22 Oct 2026), figure by figure against an exemplar set cut from this hand
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/corrections/f123r_v2_cipher.txt">f123r_v2_cipher.txt</a></p><pre translate="no"># f. 123r, fr. 15572: second pass (22 Oct 2026), figure by figure against an exemplar set cut from this hand
 # Base: the f. 123r part of corrections/f123_cipher.txt (pass 1); changes in corrections/f123r_v2.tsv.
 # Labels as in key_cipher1.json and key_cipher1_f123.json; new on this pass: Hl (double upright with a looped
 # foot, value unknown) and code 66 (value unknown). One manuscript line per line, ll. 1-37.
@@ -2428,7 +2428,7 @@ Ca v m x Ze dd o pl t h L U tm h v E 14 25 v E2 S q1 qs y 7 v Cv R
 Cl qs dd M ff s L v E2 L Ze q1 y m x dd A B tm E2 v dd q1 pi q1 oo o qt h
 dd tm Ca fe E2 qs h v qt t v dd U tm pb Cl t 16 m q1 y dd dc q1 E2 B v dd tm B w
 oob ao E2 he U v m oo o S q1 qs L y h q1 E2 T h m A q1 L dd 14 dd U dd Ze t</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f123r.txt">f123r.txt</a></p><pre># fr. 15572 f. 123r, Mayenne to the King, Marmande, March 1586: decryption with the merged Cipher-1 key (key_cipher1.json)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f123r.txt">f123r.txt</a></p><pre translate="no"># fr. 15572 f. 123r, Mayenne to the King, Marmande, March 1586: decryption with the merged Cipher-1 key (key_cipher1.json)
 # Transcription: Michael Brackx (issues #73, #77-#79, #83), brackx2026/. Decoded here with this
 # project&#x27;s beam and period-French 6-gram (final_texts.py). Per manuscript line: the figures, then the
 # decode cut into words. UPPER CASE = inside a run of French (measure.py sense rule); |lower case| =
@@ -2506,7 +2506,7 @@ oob ao E2 he U v m oo o S q1 qs L y h q1 E2 T h m A q1 L dd 14 dd U dd Ze t</pre
     |lus fn| UR NIR TOUTES LES |incommo d i ou|
 36  dd tm Ca fe E2 qs h v qs q1 v dd U tm pb Cl pl 16 m q1 y dd dc q1 E2 B v dd tm B w
     |s mari s en uons em b l s| [16] |tous coi en s se d|</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f123.md">reading_f123.md</a></p><pre># ff. 123r-v, Mayenne to Henri III, Marmande, March 1586: the reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f123.md">reading_f123.md</a></p><pre translate="no"># ff. 123r-v, Mayenne to Henri III, Marmande, March 1586: the reading
 
 fr. 15572 f. 123r (Gallica canvas 129, right page) and f. 123v (canvas 130, left page). The despatch opens in clear,
 then runs in Cipher-1 for 37 lines on f. 123r and 41 lines on f. 123v; it goes on over ff. 124r-v, which are read
@@ -2672,7 +2672,7 @@ Files: `brackx2026/corrections/f123.tsv` (label changes, both pages), `brackx202
 (corrected figures, f. 123r ll. 1–37 then f. 123v ll. 1–41), `brackx2026/corrections/f123r_v2.tsv` and
 `f123r_v2_cipher.txt` (second pass on f. 123r), `key_cipher1_f123.json` (leaf key),
 `reading_f123_log.md` (passes), `reading_f123_en.md` (English).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f123_en.md">reading_f123_en.md</a></p><pre># ff. 123r-v, Mayenne to Henri III, Marmande, March 1586: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f123_en.md">reading_f123_en.md</a></p><pre translate="no"># ff. 123r-v, Mayenne to Henri III, Marmande, March 1586: English translation
 
 Translated from the reading (`reading_f123.md`), with the same holes. A word in square brackets with a question mark
 translates a word the figures carry only in part; `[…]` is a run of figures that does not form a word; a number in
@@ -2760,7 +2760,7 @@ Files: see `reading_f123.md`.</pre></details>
 <h3>f. 123v <span class="st partial">read in part</span></h3>
 <p>The Marmande despatch continued: Turenne back over the Garonne, the relief of places, the army&#x27;s wants.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (94% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f123v_cipher.txt">f123v_cipher.txt</a></p><pre>Ca L tm ff w x qs q1 E2 dd m h dd E L pl S Cl qs U B tm S Cl q1 E2 ff x E
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f123v_cipher.txt">f123v_cipher.txt</a></p><pre translate="no">Ca L tm ff w x qs q1 E2 dd m h dd E L pl S Cl qs U B tm S Cl q1 E2 ff x E
 qs m E2 he h R q1 qu L 33 dd B L y E2 Hc x o h dd Ca E2 14 tm B yy
 s L dd oo h 33 dd q1 v dd h E2 Cl dd q1 v m 7 pl y R h Cl t v w Ca qu m
 L h qs 8 e ao v dd h m E2 tm S q1 L E Ca v tm ao oo2 Ca E2 L B dd 14 E2 A
@@ -2801,7 +2801,7 @@ L t dd 7 y L o T ao UNK x m 26 w h c t th dd q1 t x dd t c 7 L m t y L x
 c L t qs c 7 y L 26 th y Cl n o x L m L x th S s tm lam n t pl B v m tm h M ao h
 L t c ao L n y E2 x v Ze t 6 w L t 3 49 o v w h pl t 6 m x m 3 v Ze t
 m o 7 v x m th o E2 w t th o L t qs t U t L y o L w h dd t qs Ze t ao L tm yy</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/corrections/f123_cipher.txt">f123_cipher.txt</a></p><pre># ff. 123r and 123v, fr. 15572: Brackx&#x27;s transcription with the label corrections of corrections/f123.tsv
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/corrections/f123_cipher.txt">f123_cipher.txt</a></p><pre translate="no"># ff. 123r and 123v, fr. 15572: Brackx&#x27;s transcription with the label corrections of corrections/f123.tsv
 # Labels as in key_cipher1.json; leaf labels in key_cipher1_f123.json: Uv (V with underbar, e/u) and Cv (C with a
 # v on its top right, s/x), the two figures Brackx merges as U; ssl (looped double s, ee/e); szl (open sharp s, ss);
 # oob (barred double o, ff); ub (d with a crossed stem, u); dc = m; VMf (Vostre Majeste, from context); qt (q with
@@ -2890,7 +2890,7 @@ L t dd 7 y L o T ao VMf x m 26 w h c t th dd f t e dd t c 7 L m t y L x U
 c L t qs c 7 y L 26 th y brace n o x L m L x th S s tm lam n t pl B v m tm h M ao 3
 L t c ao L n y E2 x v Ze t 6 w L t 33 49 o v w h pl t 6 m x m 3 v Ze t
 m o 7 v x m th o E2 w t th o L t qs t U t L y o L w h dd t qs Ze t ao L tm ssl M</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f123v.txt">f123v.txt</a></p><pre># fr. 15572 f. 123v (same despatch): decryption with the merged Cipher-1 key (key_cipher1.json)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f123v.txt">f123v.txt</a></p><pre translate="no"># fr. 15572 f. 123v (same despatch): decryption with the merged Cipher-1 key (key_cipher1.json)
 # Transcription: Michael Brackx (issues #73, #77-#79, #83), brackx2026/. Decoded here with this
 # project&#x27;s beam and period-French 6-gram (final_texts.py). Per manuscript line: the figures, then the
 # decode cut into words. UPPER CASE = inside a run of French (measure.py sense rule); |lower case| =
@@ -2978,7 +2978,7 @@ m o 7 v x m th o E2 w t th o L t qs t U t L y o L w h dd t qs Ze t ao L tm ssl M
     |re| PAR LUI ENTENDRE |e comme andement| ET EN TE
 41  m o 7 v x m th o E2 w t th o L t qs t U t L y o L w h dd t qs Ze t ao L tm yy
     TION ET SA |i| DESIRE SE SERUIR DE CESTE AR MS</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f123.md">reading_f123.md</a></p><pre># ff. 123r-v, Mayenne to Henri III, Marmande, March 1586: the reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f123.md">reading_f123.md</a></p><pre translate="no"># ff. 123r-v, Mayenne to Henri III, Marmande, March 1586: the reading
 
 fr. 15572 f. 123r (Gallica canvas 129, right page) and f. 123v (canvas 130, left page). The despatch opens in clear,
 then runs in Cipher-1 for 37 lines on f. 123r and 41 lines on f. 123v; it goes on over ff. 124r-v, which are read
@@ -3144,7 +3144,7 @@ Files: `brackx2026/corrections/f123.tsv` (label changes, both pages), `brackx202
 (corrected figures, f. 123r ll. 1–37 then f. 123v ll. 1–41), `brackx2026/corrections/f123r_v2.tsv` and
 `f123r_v2_cipher.txt` (second pass on f. 123r), `key_cipher1_f123.json` (leaf key),
 `reading_f123_log.md` (passes), `reading_f123_en.md` (English).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f123_en.md">reading_f123_en.md</a></p><pre># ff. 123r-v, Mayenne to Henri III, Marmande, March 1586: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f123_en.md">reading_f123_en.md</a></p><pre translate="no"># ff. 123r-v, Mayenne to Henri III, Marmande, March 1586: English translation
 
 Translated from the reading (`reading_f123.md`), with the same holes. A word in square brackets with a question mark
 translates a word the figures carry only in part; `[…]` is a run of figures that does not form a word; a number in
@@ -3232,7 +3232,7 @@ Files: see `reading_f123.md`.</pre></details>
 <h3>f. 124r <span class="st stuck">decoded, not read</span></h3>
 <p>The Marmande despatch continued: the bearer sent to learn the King&#x27;s intention.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f124r_cipher.txt">f124r_cipher.txt</a></p><pre>tm Cl L t 14 n 14 lam 7 B t T t th 7 n y m o 7 v w t n tm th t dd 7 y L o e w 7 L t he
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f124r_cipher.txt">f124r_cipher.txt</a></p><pre translate="no">tm Cl L t 14 n 14 lam 7 B t T t th 7 n y m o 7 v w t n tm th t dd 7 y L o e w 7 L t he
 qs v ao y D 6 m c n s U dd 7 q1 t 6 m 14 he t v ao x th m t 17 n ao Ze t v ao B
 m x 6 n x U t L dd o Hc t 7 y 12 n ao M ao y n Ze tm t E E L t A 7 v 6 t
 dd oo2 L 7 o m B oo2 E2 tm x 6 m n ao L t m h v o L 14 x 6 tm 7 B 6 qs w qs v
@@ -3273,7 +3273,7 @@ E2 T B dd q1 Cl box oo x v qs q1 x L y x q1 E2 L S h Cl Cl w y S Ca L tm x v m h
 Cl B dd B qs L ao m Cl w x Cl ao ao o m x qs E he s R q1 qs L n x tm h dd q1 L
 Ze B L w h 15 M ao E2 L x Ca Cl x dd h tm S Cl t w x dd t qs Cl dd oo B m q1 q1
 qs Cl q1 qs dd t x q1 oo x th ao y q1 Cl x dd S L q1 qs E2 v dd h Cl Hc y h Cl om y t</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/corrections/f124_cipher.txt">f124_cipher.txt</a></p><pre>ba 3 L t 14 n 14 lam 7 B t T t th 7 n y m o 7 v w t n ba th t dd 7 y L o e w 7 L t
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/corrections/f124_cipher.txt">f124_cipher.txt</a></p><pre translate="no">ba 3 L t 14 n 14 lam 7 B t T t th 7 n y m o 7 v w t n ba th t dd 7 y L o e w 7 L t
 qs v ao y D 6 m c n s U dd 7 qx t 6 m 14 he t v ao x th m t 17 n ao Ze t v ao B
 m x 6 n x U t L dd o Hc t 7 y 12 n ao M ao y n Ze tm t E E L t A 7 v 6 t
 dd o y L 7 o m 60 oo2 o E2 tm x 6 m n ao L t m h v o L 14 x 6 tm 7 B 6 qs w qs v
@@ -3352,7 +3352,7 @@ tm x 3 q1 y L v h e o dd B 7 y 3 t n h w h dd o L t T 7 o qs tm o x y U 14
 ao he o x y qs 17 dd t qs t L 7 o Ze w t n x U h L dd o Hc t c 7 y L
 27 67 c x v w o v Ze 14 25 tm x L o 7 v qs 7 t y Cl x tm ao y D
 w o dd m tm o x y t yy me</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/corrections/f124r_v2_cipher.txt">f124r_v2_cipher.txt</a></p><pre>ba 3 L t 14 n 14 lam 7 B t T t th 7 n y m o 7 v w t n ba th t dd 7 y L o e w 7 L t
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/corrections/f124r_v2_cipher.txt">f124r_v2_cipher.txt</a></p><pre translate="no">ba 3 L t 14 n 14 lam 7 B t T t th 7 n y m o 7 v w t n ba th t dd 7 y L o e w 7 L t
 qs v ao y D 6 m c n s U dd 7 qx t 6 m 14 he t v ao x th m t 17 n ao Ze t v ao B
 m x 6 n x U t L dd o Hc t 7 y 12 n ao M ao y n Ze tm t E E L t A 7 v 6 t
 dd o y L 7 o m 60 sg o E2 tm x 6 m n ao L t m h v o L 14 x 6 tm 7 B 6 qs w qs v
@@ -3393,7 +3393,7 @@ E2 T B dd q1 Cl box oo x v qs q1 x L y x q1 E2 L f h B Cl ls w y S Ca L tm x v m
 Cl B dd B qs L ao m ls w x Cl ao ao o m x qs E2 he s R q1 qs L n x tm h dd q1 L
 Ze B L w h 15 M ao E2 L x Ca Cl x dd h tm S Cl t w x dd t qs Cl dd oo B m qx q1
 qs Cl q1 qs dd t x q1 oo x th ao y q1 Cl x dd S L q1 qs E2 v dd h Cl Hc y h Cl om y t</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f124r.txt">f124r.txt</a></p><pre># fr. 15572 f. 124r (same despatch): decryption with the merged Cipher-1 key (key_cipher1.json)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f124r.txt">f124r.txt</a></p><pre translate="no"># fr. 15572 f. 124r (same despatch): decryption with the merged Cipher-1 key (key_cipher1.json)
 # Transcription: Michael Brackx (issues #73, #77-#79, #83), brackx2026/. Decoded here with this
 # project&#x27;s beam and period-French 6-gram (final_texts.py). Per manuscript line: the figures, then the
 # decode cut into words. UPPER CASE = inside a run of French (measure.py sense rule); |lower case| =
@@ -3481,7 +3481,7 @@ qs Cl q1 qs dd t x q1 oo x th ao y q1 Cl x dd S L q1 qs E2 v dd h Cl Hc y h Cl o
     |ter| DE QUOY FAIRE |l les emp le de ce uls d et oo|
 41  qs Cl q1 qs dd t x q1 oo x th ao y q1 Cl x dd S L q1 qs E2 v dd h Cl Hc y h Cl om y t
     |u louse| AO DE MA UO LES PROUINCE LOUE |l que|</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f124.md">reading_f124.md</a></p><pre># ff. 124r–v, Mayenne to Henri III, Marmande, March 1586: the reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f124.md">reading_f124.md</a></p><pre translate="no"># ff. 124r–v, Mayenne to Henri III, Marmande, March 1586: the reading
 
 fr. 15572 ff. 124r–124v, Gallica canvases 130 (right page) and 131 (left page). These two pages end the despatch
 that opens in clear on f. 123r. f. 124r has 41 lines of Cipher-1 and f. 124v has 38. A clear postscript, the
@@ -3602,7 +3602,7 @@ Files: `brackx2026/corrections/f124.tsv` (label changes), `brackx2026/correction
 `f124r_v2_cipher.txt` (f. 124r, second pass), `brackx2026/corrections/f124_cipher.txt` (corrected
 figures, f. 124r then f. 124v), `key_cipher1_f124.json` (leaf key), `reading_f124_log.md` (passes),
 `reading_f124_en.md` (English).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f124_en.md">reading_f124_en.md</a></p><pre># ff. 124r–v, Mayenne to Henri III, Marmande, March 1586: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f124_en.md">reading_f124_en.md</a></p><pre translate="no"># ff. 124r–v, Mayenne to Henri III, Marmande, March 1586: English translation
 
 A translation of `reading_f124.md`, which ends the despatch that opens in clear on f. 123r. It keeps the same holes
 and the same line markers. A word marked [?] is only partly carried by its figures, and […] is a run of figures that
@@ -3681,7 +3681,7 @@ Marmande, this […] March 1586.</pre></details>
 <h3>f. 124v <span class="st partial">read in part</span></h3>
 <p>The end of the Marmande despatch.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (94% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f124v_cipher.txt">f124v_cipher.txt</a></p><pre>dd h dd q1 L dd S y E2 dd UNK qs Cl qs w q1 o y U v m L h dd t y 7 E2 e Cl U dd R L
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f124v_cipher.txt">f124v_cipher.txt</a></p><pre translate="no">dd h dd q1 L dd S y E2 dd UNK qs Cl qs w q1 o y U v m L h dd t y 7 E2 e Cl U dd R L
 h tm B Hc U M T y E2 dd Ze dd oo h Hc h U m U Ca L dc B B E dd q1 tm y E2 h v
 14 dc q1 v dd 3 h qs L M 7 L y U Ze tm h dd 7 E2 Hc m B dd o M q1 L m v h
 dd x UNK L t 36 ff B v ao E2 Ca v m 43 w h S n qs dd R L q1 S e U S 7 y L Ze e ao
@@ -3719,7 +3719,7 @@ tm x 3 q1 y L v h e o dd B 7 y 3 t n h w h dd o L t T 7 o qs tm o x y U 14
 ao he o x y qs 17 dd t qs t L 7 o Ze w t n x U h L dd o Hc t c 7 y L
 27 6 7 t x v w o v Ze 14 25 tm x L o 7 v qs 7 t y Cl x tm ao y D
 w o dd m tm o x y t yy me</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/corrections/f124_cipher.txt">f124_cipher.txt</a></p><pre>ba 3 L t 14 n 14 lam 7 B t T t th 7 n y m o 7 v w t n ba th t dd 7 y L o e w 7 L t
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/corrections/f124_cipher.txt">f124_cipher.txt</a></p><pre translate="no">ba 3 L t 14 n 14 lam 7 B t T t th 7 n y m o 7 v w t n ba th t dd 7 y L o e w 7 L t
 qs v ao y D 6 m c n s U dd 7 qx t 6 m 14 he t v ao x th m t 17 n ao Ze t v ao B
 m x 6 n x U t L dd o Hc t 7 y 12 n ao M ao y n Ze tm t E E L t A 7 v 6 t
 dd o y L 7 o m 60 oo2 o E2 tm x 6 m n ao L t m h v o L 14 x 6 tm 7 B 6 qs w qs v
@@ -3798,7 +3798,7 @@ tm x 3 q1 y L v h e o dd B 7 y 3 t n h w h dd o L t T 7 o qs tm o x y U 14
 ao he o x y qs 17 dd t qs t L 7 o Ze w t n x U h L dd o Hc t c 7 y L
 27 67 c x v w o v Ze 14 25 tm x L o 7 v qs 7 t y Cl x tm ao y D
 w o dd m tm o x y t yy me</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f124v.txt">f124v.txt</a></p><pre># fr. 15572 f. 124v (same despatch): decryption with the merged Cipher-1 key (key_cipher1.json)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f124v.txt">f124v.txt</a></p><pre translate="no"># fr. 15572 f. 124v (same despatch): decryption with the merged Cipher-1 key (key_cipher1.json)
 # Transcription: Michael Brackx (issues #73, #77-#79, #83), brackx2026/. Decoded here with this
 # project&#x27;s beam and period-French 6-gram (final_texts.py). Per manuscript line: the figures, then the
 # decode cut into words. UPPER CASE = inside a run of French (measure.py sense rule); |lower case| =
@@ -3880,7 +3880,7 @@ w o dd m tm o x y t yy me</pre></details>
     NOSTRE |noe| EN DANT QUE NOUS |serions o| ES LES AU A
 38  w o dd m tm o x y t yy me
     DICT |sieges| [me]</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f124.md">reading_f124.md</a></p><pre># ff. 124r–v, Mayenne to Henri III, Marmande, March 1586: the reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f124.md">reading_f124.md</a></p><pre translate="no"># ff. 124r–v, Mayenne to Henri III, Marmande, March 1586: the reading
 
 fr. 15572 ff. 124r–124v, Gallica canvases 130 (right page) and 131 (left page). These two pages end the despatch
 that opens in clear on f. 123r. f. 124r has 41 lines of Cipher-1 and f. 124v has 38. A clear postscript, the
@@ -4001,7 +4001,7 @@ Files: `brackx2026/corrections/f124.tsv` (label changes), `brackx2026/correction
 `f124r_v2_cipher.txt` (f. 124r, second pass), `brackx2026/corrections/f124_cipher.txt` (corrected
 figures, f. 124r then f. 124v), `key_cipher1_f124.json` (leaf key), `reading_f124_log.md` (passes),
 `reading_f124_en.md` (English).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f124_en.md">reading_f124_en.md</a></p><pre># ff. 124r–v, Mayenne to Henri III, Marmande, March 1586: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f124_en.md">reading_f124_en.md</a></p><pre translate="no"># ff. 124r–v, Mayenne to Henri III, Marmande, March 1586: English translation
 
 A translation of `reading_f124.md`, which ends the despatch that opens in clear on f. 123r. It keeps the same holes
 and the same line markers. A word marked [?] is only partly carried by its figures, and […] is a run of figures that
@@ -4080,7 +4080,7 @@ Marmande, this […] March 1586.</pre></details>
 <h3>f. 110 <span class="st partial">read in part</span></h3>
 <p>Mayenne to Villeroy from Villeneuve-d&#x27;Agenais, March 1586: on making war without money and what it does to his reputation; the leaf is wholly in cipher.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (94% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f110_cipher.txt">f110_cipher.txt</a></p><pre>q1 7 6 ub o B box e w h s E2 n x t L H o y 7 box dd s x e T B Ca S B t 6 S ao L n ao th h m Ze L B w box t y x M D y th x s T 7 E2 w qu L
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f110_cipher.txt">f110_cipher.txt</a></p><pre translate="no">q1 7 6 ub o B box e w h s E2 n x t L H o y 7 box dd s x e T B Ca S B t 6 S ao L n ao th h m Ze L B w box t y x M D y th x s T 7 E2 w qu L
 dd 3 L B Ze h 6 qu w t n w 3 h U H c o S T t n h c Cl s qu oo th S n t pl x S B v Ze w box t 3 h S box L t m th h U box s q1 box 7 s n L e
 t U h T pi t qu w h S ao e n A T Cl pi dd n o S L h ao t 6 m ao U h f w box 7 s oo Ca box h H t w pi ao s ao B m 7 pi qu o H s T M ao h H
 m pl x y D m w h 8 T ao 6 w t H 7 6 L y w h 7 f B x Ze oo h S D T m E2 H box n o pl e t ao pl B m E2 h y ao o e x H 7 6 8 ff
@@ -4118,7 +4118,7 @@ L 3 w B n Cl h pl ao 6 m ao h e box 3 w h S t e e qu 7 6 ff h w box t w h pl 7 3
 h qu m UNK e t qu 7 n box m 3 7 6 U box B U h S S e 3 B ao w 3 B box w s n pl th e box 3 6 B B S n box qu m 7 U m w s h Cl t n ao H L
 ao 6 U U 3 ao pl D 3 qu B m U box 3 n box 7 s s qu w 7 6 ff B pl 7 6 U 3 B box e w h box 3 n n B e 7 3 m 7 box m n h H 7 6 m ao 6
 m h pl t 6 m w box pl box 7 s qu w h U 3 e t qu</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/corrections/f110_v3_cipher.txt">f110_v3_cipher.txt</a></p><pre>pl 7 6 ub o B box e w h s E2 n x t L H o y 7 box dd s x e T B sw Sb B t 6 S ao L n ao A h m Ze L B w box t E2 x M D 3 th x s T 7 E2 w qu L ? ? ? ? ? ?
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/corrections/f110_v3_cipher.txt">f110_v3_cipher.txt</a></p><pre translate="no">pl 7 6 ub o B box e w h s E2 n x t L H o y 7 box dd s x e T B sw Sb B t 6 S ao L n ao A h m Ze L B w box t E2 x M D 3 th x s T 7 E2 w qu L ? ? ? ? ? ?
 dd 3 L B Ze h 6 qu w t n box 3 h U H c o S T t n h c Cl s qu oo th S n t pl x S B v Ze w box t 3 h S box L t m th h U box 3 q1 box 7 s n L e
 t U h T pi t qu w h S ao e n A T c Cl box dd n o Sb L h ao t 6 m ao U h f w box 7 s sw Ca box h H t w pi ao s ao B m 7 box qu o H s T M ao 3 H
 m t x Ze D m w h 8 T ao 6 w t H 7 6 L 3 w h 7 f B x Ze oo h S D T m E2 H box n o pl e t ao pl B m E2 h 3 ao o e x H 7 6 8 ff
@@ -4156,7 +4156,7 @@ L 3 w B n Cl h pl ao 6 m ao h e box 3 w h S t e qu 7 6 ff h w box t w h pl 7 3 w
 h pl m UNK e t qu 7 n box m 3 7 6 w box B B h S e 3 B ao w 3 B box w s n pl h e box 3 6 B S n box qu m 7 U m w s h Cl t n ao H L
 ao 6 B B 3 ao pl D 3 qu B m w box 3 n box 7 s qu w 7 6 ff B pl 7 6 U 3 B box e w h box 3 n n B e 7 3 m 7 box m n h H 7 6 m ao 6
 m h pl t 6 m w box pl box 7 s qu w B U 3 e t qu</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f110.txt">f110.txt</a></p><pre># fr. 15572 f. 110, Mayenne to Villeroy, Bellebourg, March 1586: decryption with the merged Cipher-1 key (key_cipher1.json)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f110.txt">f110.txt</a></p><pre translate="no"># fr. 15572 f. 110, Mayenne to Villeroy, Bellebourg, March 1586: decryption with the merged Cipher-1 key (key_cipher1.json)
 # Transcription: Michael Brackx (issues #73, #77-#79, #83), brackx2026/. Decoded here with this
 # project&#x27;s beam and period-French 6-gram (final_texts.py). Per manuscript line: the figures, then the
 # decode cut into words. UPPER CASE = inside a run of French (measure.py sense rule); |lower case| =
@@ -4238,7 +4238,7 @@ m h pl t 6 m w box pl box 7 s qu w B U 3 e t qu</pre></details>
     |asse| IAMAIS ET SUI |l| UOU US DONNE MONSIEUR DE UILLE RON TOUT LE CONTI |n|
 38  m h pl t 6 m w box pl box 7 s qu w h U 3 e t qu
     TEMENT QUI UOUS DESIRES</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f110.md">reading_f110.md</a></p><pre># f. 110, Mayenne to Villeroy, Villeneuve-d&#x27;Agenais, March 1586: the reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f110.md">reading_f110.md</a></p><pre translate="no"># f. 110, Mayenne to Villeroy, Villeneuve-d&#x27;Agenais, March 1586: the reading
 
 fr. 15572 f. 110, Gallica canvas 116, right page: a small slip of thirty-eight lines wholly in cipher, in a small and
 faded hand, dated at the foot in clear. Mayenne writes to Villeroy, the King&#x27;s secretary of state, about the army he
@@ -4313,7 +4313,7 @@ De Villeneufve d&#x27;Agenoys, ce […] jour de Mars 1586 [clear].
 Files: `brackx2026/corrections/f110_v3_cipher.txt` (the pass-3 transcription), `brackx2026/corrections/f110_v3.tsv`
 (pass-3 changes), `brackx2026/corrections/f110_v2.tsv` (pass 2), `brackx2026/corrections/f110.tsv` (pass 1),
 `key_cipher1_f110.json` (leaf key), `reading_f110_log.md` (passes), `reading_f110_en.md` (English).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f110_en.md">reading_f110_en.md</a></p><pre># f. 110, Mayenne to Villeroy, Villeneuve-d&#x27;Agenais, March 1586: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f110_en.md">reading_f110_en.md</a></p><pre translate="no"># f. 110, Mayenne to Villeroy, Villeneuve-d&#x27;Agenais, March 1586: English translation
 
 Translation of `reading_f110.md` (pass 3, 22 Oct 2026), with the same holes. Square brackets with a question mark: a
 word carried only in part by its figures; […]: figures that do not form a word; [45], [47]: code groups (47 =
@@ -4370,7 +4370,7 @@ From Villeneufve d&#x27;Agenoys, the […] day of March 1586 [clear].</pre></det
 <h3>fr. 15571 f. 177r-v <span class="st partial">read in part</span></h3>
 <p>Forget, 31 December 1585, on Mayenne&#x27;s design for Gascony: a plan on Pons and Taillebourg, with Taillebourg&#x27;s toll on the Charente and thirty thousand ecus to be raised from the country, given up when the vicomte de Turenne took the field with guns. The verso (11 lines) continues it.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (95% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f177r_cipher.txt">f177r_cipher.txt</a></p><pre>D yy 3 x 8 h ao n4 Ze R 7 6 qs x m de X o he t lam 7 qu L 8 14 n H v
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f177r_cipher.txt">f177r_cipher.txt</a></p><pre translate="no">D yy 3 x 8 h ao n4 Ze R 7 6 qs x m de X o he t lam 7 qu L 8 14 n H v
 oo o dd q1 E2 m 14 A 7 v S H ub q1 o Ze M ao B L B E 7 z m x 6 th h ao pb
 Ca t x E 14 E2 ff w s lam o m X pb n x n4 h 6 Ze n 7 6 Ca t U h ob R 7
 T E x e q1 3 m h E 14 Hc x B qu th m B qs de x ao y U t sz B tm oi ts
@@ -4399,7 +4399,7 @@ Hc hh o ff y B e 27 S e t th E2 x T D oo qu 3 dd 35 12 v t box h sz n E
 n X L ob sz oo t U 7 T m t 14 27 oo o dl de B w h S B th dl f t D h
 qs m t Hc 7 v y B T m 3 t h v f t he B 14 26 ao qu x U E2 f oi box 7 o n
 D 49 v E 6 7 U q1 S 3 v B H v qu th 7 6 m x fe o v Ze t qu E2 B yy</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f177v_cipher.txt">f177v_cipher.txt</a></p><pre>R h v ts 7 o qs m L q1 ub B T E2 dl B A x w o Hc Ze th 3 t qu L oo B
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f177v_cipher.txt">f177v_cipher.txt</a></p><pre translate="no">R h v ts 7 o qs m L q1 ub B T E2 dl B A x w o Hc Ze th 3 t qu L oo B
 pl ao m 7 y 6 7 n4 Ze 7 y E L t U H Cl qu oo t dd B 14 26 w h box o 7
 v qs M ao B e t 24 E2 h 26 Hc H 6 M ao B yy x 14 E2 t Cl B v D B
 qu B y 48 E2 v Hc B L Ze ao B 6 14 A x th Ca qs de T h qs 49 ao Cl
@@ -4410,7 +4410,7 @@ Ca ao L h qs c q1 6 f t oo x 27 w x S t U f hh x th E2 Ze T 7 ub h L
 D U f H 6 M 7 e ao B 24 36 dl L ao o v qs S q1 y e n h Hc f t
 pl B 6 14 88 oo 7 o lam m Ze x 6 B T 14 25 sz 3 x ao c n 7 o q1
 6 dd 61 R n qu dd w B E h ob qs 14 25 v t w B dd 7 v th</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/corrections/f177_cipher.txt">f177_cipher.txt</a></p><pre># fr. 15571 f. 177r
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/corrections/f177_cipher.txt">f177_cipher.txt</a></p><pre translate="no"># fr. 15571 f. 177r
 D yy 3 x 8 h ao n4 Ze R 7 6 qs x m de X o he t lam 7 qu L 8 14 n H v
 oo o dd q1 E2 m 14 A 7 v S H ub q1 o Ze M ao B L B E 7 z m x 6 th h ao pb
 Ca t x E 14 E2 ff w s lam o m X pb n x n4 h 6 Ze n 7 6 Ca t U h ob R 7
@@ -4452,7 +4452,7 @@ Ca ao L h qs c q1 6 f t oo x 27 w x S t U f hh x th E2 Ze T 7 ub h L
 D U f H 6 M 7 e ao B 24 36 dl L ao o v qs S q1 y e n h Hc f t
 pl B 6 14 88 oo 7 o lam m Ze x 6 B T 14 25 sz 3 x ao c n 7 o q1
 6 dd 61 R n qu dd w B E h ob qs 14 25 v t w B dd 7 v th</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/fr15571-f177.txt">fr15571-f177.txt</a></p><pre># fr. 15571 f. 177r-v, Forget, 31 Dec 1585: decryption with the merged Cipher-1 key (key_cipher1.json)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/fr15571-f177.txt">fr15571-f177.txt</a></p><pre translate="no"># fr. 15571 f. 177r-v, Forget, 31 Dec 1585: decryption with the merged Cipher-1 key (key_cipher1.json)
 # Transcription: Michael Brackx (issues #73, #77-#79, #83), brackx2026/. Decoded here with this
 # project&#x27;s beam and period-French 6-gram (final_texts.py). Per manuscript line: the figures, then the
 # decode cut into words. UPPER CASE = inside a run of French (measure.py sense rule); |lower case| =
@@ -4538,7 +4538,7 @@ pl B 6 14 88 oo 7 o lam m Ze x 6 B T 14 25 sz 3 x ao c n 7 o q1
     SES QUE MONSIEUR DU MAYNE DOIBT TENIR QUE NOUS EN EMPLOI |o|
 40  6 dd 61 R n qu dd w B E h ob qs 14 25 v t w B dd 7 v th
     |i s| BEAUCOUP PLUS DE |tems| QUE NOUS NE DE CONS</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f177.md">reading_f177.md</a></p><pre># fr. 15571 f. 177r-v, Forget to Villeroy, 31 Dec 1585: the reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f177.md">reading_f177.md</a></p><pre translate="no"># fr. 15571 f. 177r-v, Forget to Villeroy, 31 Dec 1585: the reading
 
 fr. 15571 f. 177, Gallica canvas 185 right (recto, 29 cipher lines) and canvas 186 left (verso, 11 cipher lines,
 then clear text). The archivist&#x27;s heading: *Lettre de Mr Forget a Mr de Villeroy sur les desseins d&#x27;assieger Pons ou
@@ -4626,7 +4626,7 @@ comparison in `reading_f177_vs_copy.md`) runs the whole cipher. It confirms 73 =
 the nulls, *ce pais* and *je l&#x27;en ay veu*. It gives a word for every remaining [?…]; the figures carry most of them
 only in part (one or two figures short or misread), so they stay marked here, and the copy is the reading for them.
 The cipher has *dicte* in &quot;nostre dicte depesche&quot; (r. l. 27) where the copy omits it.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/copies/f176_f177.txt">f176_f177.txt</a></p><pre># fr. 15571 f. 176r (lower part) and f. 176v: the contemporary decipherment of the cipher on f. 177r-v
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/copies/f176_f177.txt">f176_f177.txt</a></p><pre translate="no"># fr. 15571 f. 176r (lower part) and f. 176v: the contemporary decipherment of the cipher on f. 177r-v
 
 Forget to Villeroy, 31 Dec 1585. Ark `btv1b90618802`: f. 176r = canvas 184 right, ll. 1-11 below the marginal
 note *Mons. du Mayne* (the twenty lines above it are another passage and are not transcribed here); f. 176v =
@@ -4676,7 +4676,7 @@ Notes on doubtful places
 - l. 18 *autres*: the *au* is enclosed in a loop, perhaps a correction.
 - The right margin of f. 176r shows ink at the line ends of ll. 9-11 that belongs to the facing leaf, not to
   this text.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f177_en.md">reading_f177_en.md</a></p><pre># fr. 15571 f. 177r-v, Forget to Villeroy, 31 Dec 1585: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f177_en.md">reading_f177_en.md</a></p><pre translate="no"># fr. 15571 f. 177r-v, Forget to Villeroy, 31 Dec 1585: English translation
 
 Translated from the reading (`reading_f177.md`), with the same holes. A word in square brackets with a question mark
 translates a word the figures carry only in part; `[…]` is a figure that gives no letter; `[cs]` a figure left
@@ -4719,7 +4719,7 @@ much more time on it than we [?wish].</pre></details>
 <h3>f. 20r <span class="st partial">read in part</span></h3>
 <p>Mayenne to the King, January 1586 (endorsed &#x27;Mr du Mayne du vjme Januier 1586&#x27;), the end of the f. 18 despatch: the remains of four regiments and Colonel Heid&#x27;s Swiss to meet again on the 6th of next month; he will not be drawn into the Limousin and Quercy, since intercepted letters of Turenne to the King of Navarre show Tulle about to compound for four or five thousand ecus and Lamorez to withdraw to Navarre.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (86% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f20r_cipher.txt">f20r_cipher.txt</a></p><pre>x m dd t he qu o w h th dd y o yy t dd oo s f q1 A 7 B t Cl f h o n oo 25 ao s 7 v th
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/brackx2026/f20r_cipher.txt">f20r_cipher.txt</a></p><pre translate="no">x m dd t he qu o w h th dd y o yy t dd oo s f q1 A 7 B t Cl f h o n oo 25 ao s 7 v th
 S L B v qs E2 7 qu T w t 25 L h m e 7 ub B T x 6 dd t pl th A t oo D v th A t om qu o
 v U B t th th B oo box S L 7 dd ub ao 3 v D y B Hc L t th H n y m B 7 6 oo t v
 t 25 Ca fe t th Ze B e X Ca s dd pi v t h Hc Ze T h S e E2 th t dd o x he t 6 B qs
@@ -4736,7 +4736,7 @@ E2 A U x sg sg t f m s 6 L 7 v Ze v w ao s m D 6 de 52 13 Cl th dc t y t fe q1 v
 ao e L 7 Hc th x T om h th 7 L m t 14 E2 t Ze B B v qs S q1 s L th x e m ao 3 6
 14 he t th h T D f Ca X ao v w 7 B B x de 14 A X th q1 fe E2 13 B th E oo t
 w ao v th y t L h de 3 T B e X y h e dd Cl t oo o m th E2 B qs L 76</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f19v_copy.md">f19v_copy.md</a></p><pre># fr. 15572 f. 19v (end): the contemporary clear copy of f. 20r
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f19v_copy.md">f19v_copy.md</a></p><pre translate="no"># fr. 15572 f. 19v (end): the contemporary clear copy of f. 20r
 
 &gt; Transcribed by Michael Brackx from the full-resolution Gallica image (canvas 22 left), issue #87, reply of 23 Oct 2026.
 &gt; As written: the writer&#x27;s spelling and capitals, no added accents or apostrophes, abbreviations expanded in brackets,
@@ -4758,7 +4758,7 @@ lamorez qui est dedans se retirera vers led[ic]t s[ieu]r Roy de Nau[ar]re.
 
 M[onsieu]r du Mayne du [?vj]me Januier
 1586</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f19v_copy.md">f19v_copy.md</a></p><pre># fr. 15572 f. 19v (end): the contemporary clear copy of f. 20r
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/f19v_copy.md">f19v_copy.md</a></p><pre translate="no"># fr. 15572 f. 19v (end): the contemporary clear copy of f. 20r
 
 &gt; Transcribed by Michael Brackx from the full-resolution Gallica image (canvas 22 left), issue #87, reply of 23 Oct 2026.
 &gt; As written: the writer&#x27;s spelling and capitals, no added accents or apostrophes, abbreviations expanded in brackets,
@@ -4780,7 +4780,7 @@ lamorez qui est dedans se retirera vers led[ic]t s[ieu]r Roy de Nau[ar]re.
 
 M[onsieu]r du Mayne du [?vj]me Januier
 1586</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f20r_en.md">reading_f20r_en.md</a></p><pre># f. 20r, English (from the clear copy at the end of f. 19v)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/texts/reading_f20r_en.md">reading_f20r_en.md</a></p><pre translate="no"># f. 20r, English (from the clear copy at the end of f. 19v)
 
 &gt; Translation by Michael Brackx (issue #87, 23 Oct 2026), with the same holes as the copy.
 
@@ -4801,19 +4801,19 @@ Endorsed: Monsieur du Mayne, the [?6th] of January 1586.</pre></details>
 <!-- replay:end -->
 <h2 id="sources"><span class="num">06</span> Sources</h2>
 <ul>
-<li>Biblioth&egrave;que nationale de France, fr. 15572 (Gallica <code>btv1b9061879d</code>; canvases above, copies ff. 155&ndash;157 on canvases 162&ndash;164 (the end of the f. 143 copy at the head of f. 155v, canvas 163), f. 196v on canvas 204, cribs f. 14v/15r on canvases 16&ndash;17 and ff. 18&ndash;19, f. 19r on canvas 21) and fr. 15571 f. 177 (<code>btv1b90618802</code>, canvases 185&ndash;186; its clear copy f. 176r&ndash;v on canvases 184&ndash;185). Each canvas is a double page.</li>
+<li>Biblioth&egrave;que nationale de France, fr. 15572 (Gallica <code translate="no">btv1b9061879d</code>; canvases above, copies ff. 155&ndash;157 on canvases 162&ndash;164 (the end of the f. 143 copy at the head of f. 155v, canvas 163), f. 196v on canvas 204, cribs f. 14v/15r on canvases 16&ndash;17 and ff. 18&ndash;19, f. 19r on canvas 21) and fr. 15571 f. 177 (<code translate="no">btv1b90618802</code>, canvases 185&ndash;186; its clear copy f. 176r&ndash;v on canvases 184&ndash;185). Each canvas is a double page.</li>
 <li><strong>Satoshi Tomokiyo</strong>, cryptiana, <a href="https://cryptiana.web.fc2.com/code/henryiii.htm"><em>Henry III&rsquo;s Cipher with Ambassadors</em></a>: the Cipher-1 tables and the openings of ff. 143, 150 and 154.</li>
 <li><strong>Michael Brackx</strong>, issues <a href="https://github.com/dbourdeau/cyphersolver/issues/64">64</a>, <a href="https://github.com/dbourdeau/cyphersolver/issues/68">68</a>&ndash;<a href="https://github.com/dbourdeau/cyphersolver/issues/71">71</a>, <a href="https://github.com/dbourdeau/cyphersolver/issues/73">73</a>, <a href="https://github.com/dbourdeau/cyphersolver/issues/77">77</a>&ndash;<a href="https://github.com/dbourdeau/cyphersolver/issues/79">79</a> and <a href="https://github.com/dbourdeau/cyphersolver/issues/83">83</a> (October 2026): transcriptions, per-leaf keys, code values, the clear copies.</li>
 <li>Other ciphers in these papers, each with its own page: <a href="mayenne1586c2.html">Mayenne&ndash;Forget&rsquo;s Cipher-2</a>, <a href="matignon1586c3.html">Matignon&rsquo;s Cipher-3</a>, and <a href="saintluc1586.html">Saint-Luc&rsquo;s letter</a> (fr. 15572 f. 43).</li>
 </ul>
-<p class="muted">Notes, profile, the merged key (<code>key_cipher1.json</code>), Brackx&rsquo;s transcriptions and the full decryptions (<code>texts/</code>) in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/matignon1586">targets/matignon1586/</a>.</p>
+<p class="muted">Notes, profile, the merged key (<code translate="no">key_cipher1.json</code>), Brackx&rsquo;s transcriptions and the full decryptions (<code translate="no">texts/</code>) in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/matignon1586">targets/matignon1586/</a>.</p>
 </main>
 
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Manuscript rights: Biblioth&egrave;que nationale de France</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="camus1586.html" rel="prev">&larr; Camus de Pontcarr&eacute; 1586 1586</a><a href="malicorne1586.html" rel="next">Malicorne 1586 1586 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

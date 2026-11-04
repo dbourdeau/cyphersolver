@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-<div class="cipherstrip">+ꝗJ ʓꝗ εꝗ8 ʒʓg8εꝗ 18c Jꝗ ε11Γʒ &nbsp;&rarr;&nbsp; per le mie ultime di Cremona &middot; ʒ = a/u &middot; g = t &middot; ʃ = f/s</div>
+<div class="cipherstrip" translate="no">+ꝗJ ʓꝗ εꝗ8 ʒʓg8εꝗ 18c Jꝗ ε11Γʒ &nbsp;&rarr;&nbsp; per le mie ultime di Cremona &middot; ʒ = a/u &middot; g = t &middot; ʃ = f/s</div>
 <p class="kicker">Bologna &rarr; Maximilian Sforza in France &middot; letter substitution with invented signs &middot; Bologna, 4 November 1529</p>
 <h1>Ambrogio Bizozola to Maximilian Sforza, Bologna, 4 November 1529</h1>
 <div class="parties"><figure class="party recipient"><img src="portrait_maximilian-sforza.jpg" alt="Maximilian Sforza" title="Maximilian Sforza: Miniature by G. A. de Predis, Donatus Grammatica. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Maximilian Sforza</figcaption></figure></div><!-- /parties -->
@@ -78,17 +78,17 @@
 <blockquote><p>Per le mie ultime di Cremona et far[..] [ꝏ] e de qui [..] intese molte cose de le actione de misere [..] i figli[..], come sono passato li [..] con lo imperatore, et che molte volte si &egrave; misso ogni cosa in rotta. Qua ho saputo per uno omo degno di fede che per questi rumori che il consiglio del imperatore pi&ugrave; volte hanno fatti di grandi discorsi sopra il ducato [..], dicendo che [..] Francesco [..] uno altro [..] di fare molte parte dil stato: al duca [ꝏ] di Savoia, al marchese di Monferrato, al marchese di Mantua, al duca di Ferrara, et Milano al duca Alisandro; in questo ragionamento dise l&rsquo;arciepiscopo di Baro: meglio io seria darlo al duca Maximiliano, che di ragione li viene &hellip;</p>
 <p>(f. 156v, ll. 13&ndash;17) &hellip; domane sar&agrave; l&rsquo;intrata. Non di meno oggi li &egrave; andato incontra tutti li cardinali et ambassatori; quello di Venecia et de Milano hanno parlato [a] Sua Maiest&agrave; coss&igrave; a cavallo.</p>
 <p>(postscript, f. 157v) Sono molti giorni non ho vostre littere; avere il recepto di questa &hellip;</p></blockquote>
-<p>The rest of f. 156v weighs whether Duke Francesco would have to be satisfied and what his brother should have, and says that the writer has written to the Pope. f. 157r concerns &ldquo;misere Iulio&rdquo;, a negotiation together with the Venetians, waiting to see whether the duke will come, Trivulzio, and the promise of a cardinal&rsquo;s hat. f. 157v hopes that the affair of misere Iulio will pass into the Pope&rsquo;s power, mentions ten thousand scudi of income a year, and ends with the date line. The decoder output, line by line, is <code>reading_raw.txt</code> in the repository.</p>
+<p>The rest of f. 156v weighs whether Duke Francesco would have to be satisfied and what his brother should have, and says that the writer has written to the Pope. f. 157r concerns &ldquo;misere Iulio&rdquo;, a negotiation together with the Venetians, waiting to see whether the duke will come, Trivulzio, and the promise of a cardinal&rsquo;s hat. f. 157v hopes that the affair of misere Iulio will pass into the Pope&rsquo;s power, mentions ten thousand scudi of income a year, and ends with the date line. The decoder output, line by line, is <code translate="no">reading_raw.txt</code> in the repository.</p>
 <p>In English, f. 156r: &ldquo;By my last from Cremona &hellip; Here I have learned from a man worthy of faith that the Emperor&rsquo;s council has several times held great discussions about the duchy &hellip; of making many parts of the state: to the Duke of Savoy, to the Marquis of Monferrato, to the Marquis of Mantua, to the Duke of Ferrara, and Milan to the duke &hellip;; in this discussion the Archbishop of Bari said &hellip; I believe that if this were done, Duke Francesco would have to be satisfied &hellip;&rdquo;</p>
 <figure data-credit="Biblioth&egrave;que nationale de France, fr. 3034 f. 156r, lines 15&ndash;17, via Gallica (view 246)"><img src="bizozola1520_partition.jpg" alt="Three lines of f. 156r listing the beneficiaries of the partition" loading="lazy"><figcaption>f. 156r, lines 15&ndash;17: <em>marchese di Mantua al duca di Ferrara / et Milano al duca &hellip; in questo / ragionamento &hellip;</em> <span class="credit">Image: Biblioth&egrave;que nationale de France, fr. 3034 f. 156r, lines 15&ndash;17, via Gallica (view 246).</span></figcaption></figure>
 
 <h2 id="method"><span class="num">03</span> Method</h2>
-<p>A grep of Tomokiyo&rsquo;s saved page for &ldquo;3034&rdquo; turned up the section and Lasry&rsquo;s key image. The Gallica SRU query <code>dc.source adj "Fran&ccedil;ais 3034"</code> returned the volume, and a contact sheet of views 240&ndash;251 located the letter. The full-resolution natives were cut into lines by a horizontal ink projection. Each line was transcribed by eye into shape codes (<code>codes.txt</code>), and <code>decode.py</code> applied the key. The homophones listed above came from words that the plain table left one letter off.</p>
+<p>A grep of Tomokiyo&rsquo;s saved page for &ldquo;3034&rdquo; turned up the section and Lasry&rsquo;s key image. The Gallica SRU query <code translate="no">dc.source adj "Fran&ccedil;ais 3034"</code> returned the volume, and a contact sheet of views 240&ndash;251 located the letter. The full-resolution natives were cut into lines by a horizontal ink projection. Each line was transcribed by eye into shape codes (<code translate="no">codes.txt</code>), and <code translate="no">decode.py</code> applied the key. The homophones listed above came from words that the plain table left one letter off.</p>
 
 <h2 id="what-remains"><span class="num">04</span> What remains</h2>
 <ul>
 <li>The numerals in the date line (f. 157v ll. 9&ndash;10): three signs with no second occurrence.</li>
-<li>About 35 signs in four lines (listed in <code>doubtful.txt</code>) that do not resolve on the Gallica scan.</li>
+<li>About 35 signs in four lines (listed in <code translate="no">doubtful.txt</code>) that do not resolve on the Gallica scan.</li>
 <li>Confirmation: Sanuto&rsquo;s <em>Diarii</em> for November 1529 should record the partition talk and the ambassadors&rsquo; meeting with the Emperor.</li>
 </ul>
 
@@ -98,7 +98,7 @@
 <h3>BnF fr. 3034 ff. 156r-157v, Bologna, 4 November 1529 <span class="st partial">read in part</span></h3>
 <p>Ambrogio Bizozola reports to Maximilian Sforza, then in France, that the Emperor&#x27;s council has several times discussed dividing the state of Milan among the Duke of Savoy, the Marquises of Monferrato and Mantua and the Duke of Ferrara, and whether Duke Francesco would have to be satisfied. The Emperor is at the Certosa outside Bologna, with his entry the next day (Charles V entered Bologna on 5 November 1529); the letter also deals with misere Iulio, Trivulzio and Alessandro Attavante.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (93% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/bizozola1520/codes.txt">codes.txt</a></p><pre># code legend: + P, q E(ꝗ), J R, z L(ʓ), e M(ε), 8 I, 3 A(ʒ), g T(long-loop), c C(short 9), 1 D, o O(11), n N(Γ), f F(ʃ), 7 B, w ꝏ unknown, d S(ɗ), 6 H, 2 G, Q Q, t T-glyph(key), v V-glyph, 5 unclear s-like, ? illegible, X Lasry-unknown sign (ρ etc.), w ꝏ line-end filler
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/bizozola1520/codes.txt">codes.txt</a></p><pre translate="no"># code legend: + P, q E(ꝗ), J R, z L(ʓ), e M(ε), 8 I, 3 A(ʒ), g T(long-loop), c C(short 9), 1 D, o O(11), n N(Γ), f F(ʃ), 7 B, w ꝏ unknown, d S(ɗ), 6 H, 2 G, Q Q, t T-glyph(key), v V-glyph, 5 unclear s-like, ? illegible, X Lasry-unknown sign (ρ etc.), w ꝏ line-end filler
 246_01 +qJ zq q e8q 3zg8eq 18cJq eon3q g f3J73J w
 246_02 q 1q Q58 35qJqgq 8ngqdq eozgq codq 18co
 246_03 1q zq 3c8onq 1q e8dqJq 8fz8o coeo dono
@@ -163,7 +163,7 @@
 249_08 gg3 1qc3 e8z8 dc5g8 18 8ngJ3g3 z3nno
 249_09 Xq nq 3zgJo 7ozo2n3 Q3gJo 1qz
 249_10 z8ngqno15q XXX no5qe7Jq</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/bizozola1520/reading_raw.txt">reading_raw.txt</a></p><pre>246_01 per le e mie altime dicre monae t farbar -
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/bizozola1520/reading_raw.txt">reading_raw.txt</a></p><pre translate="no">246_01 per le e mie altime dicre monae t farbar -
 246_02 e de qui auerete intese molte cose dico
 246_03 de le acione de misere iflio como sono
 246_04 passato li soui nigoci con lo imperatore
@@ -227,7 +227,7 @@
 249_08 tta deca mili scuti di intrata lanno
 249_09 &lt;?&gt;e ne altro bologna qatro del
 249_10 lintenodue &lt;?&gt;&lt;?&gt;&lt;?&gt; nouembre</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/bizozola1520/texts/f156_reading.md">f156_reading.md</a></p><pre># Ambrogio Bizozola to Maximilian Sforza, Bologna, 4 November 1529 (BnF fr. 3034 ff. 156r-157v): reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/bizozola1520/texts/f156_reading.md">f156_reading.md</a></p><pre translate="no"># Ambrogio Bizozola to Maximilian Sforza, Bologna, 4 November 1529 (BnF fr. 3034 ff. 156r-157v): reading
 
 Rests on: the sign transcription `codes.txt` (all 66 lines, second pass at double scale) and Lasry&#x27;s key as extended
 here (`decode.py`, output `reading_raw.txt`). This file is the word-divided reading of that output, written for the v3
@@ -276,7 +276,7 @@ annesse a rea sire, che li prometta deca mili scuti di intrata l&#x27;anno [...]
 Bologna, quatro del [...] novembre.
 
 Postscript: Sono molti giorni non o vostre litere, avere il recepto di questa [fte].</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/bizozola1520/texts/f156_en.md">f156_en.md</a></p><pre>&lt;!-- English translation of texts/f156_reading.md (Claude Opus 5.5, 23 Oct 2026), sentence for sentence, with the same holes: [...] unread; [word] a word the figures give that does not resolve (kept untranslated); [?word] partly carried. The last paragraph but one is the least secure in the reading and the translation stays close to its words. --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/bizozola1520/texts/f156_en.md">f156_en.md</a></p><pre translate="no">&lt;!-- English translation of texts/f156_reading.md (Claude Opus 5.5, 23 Oct 2026), sentence for sentence, with the same holes: [...] unread; [word] a word the figures give that does not resolve (kept untranslated); [?word] partly carried. The last paragraph but one is the least secure in the reading and the translation stays close to its words. --&gt;
 
 # Ambrogio Bizozola to Maximilian Sforza, Bologna, 4 November 1529 (BnF fr. 3034 ff. 156r-157v): English translation
 
@@ -329,7 +329,7 @@ Postscript: For many days I have had no letters from you; [I would like to] have
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Manuscript images: Biblioth&egrave;que nationale de France / Gallica</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="gramont1529.html" rel="prev">&larr; Gramont 1529 1529</a><a href="rangone1530.html" rel="next">Rangone 1529&ndash;30 1529&ndash;1530 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

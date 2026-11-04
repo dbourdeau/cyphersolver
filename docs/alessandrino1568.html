@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">7 2 8 6 7 8 4 1 5 &middot; 5 0 9 0 &middot; 7 4 4 4 8 1 6 2 &middot; &hellip; &middot; 1 0 5 0<br>ricercato [qui] da alcuni &hellip; [Francia]<br>1 = u|t &middot; 2 = i|m &middot; 4 = a|l &middot; 6 = e|n &middot; 7 = d|r &middot; 8 = b|c &middot; 0 = null &middot; 5090 = qui &middot; 1050 = Francia</div>
+  <div class="cipherstrip" translate="no">7 2 8 6 7 8 4 1 5 &middot; 5 0 9 0 &middot; 7 4 4 4 8 1 6 2 &middot; &hellip; &middot; 1 0 5 0<br>ricercato [qui] da alcuni &hellip; [Francia]<br>1 = u|t &middot; 2 = i|m &middot; 4 = a|l &middot; 6 = e|n &middot; 7 = d|r &middot; 8 = b|c &middot; 0 = null &middot; 5090 = qui &middot; 1050 = Francia</div>
   <p class="kicker">Rome &rarr; Madrid &middot; polyphonic cipher, two letters to a digit &middot; 1568&ndash;69</p>
   <h1>Cardinal Alessandrino to the nuncio in Spain, 1568&ndash;69</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_cardinal-alessandrino.jpg" alt="Cardinal Alessandrino" title="Cardinal Alessandrino: Portrait by Scipione Pulzone, 1586. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Cardinal Alessandrino</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_g-b-castagna.jpg" alt="G. B. Castagna" title="G. B. Castagna: Portrait as Urban VII, Jacopo del Conte. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>G. B. Castagna</figcaption></figure></div><!-- /parties -->
@@ -87,7 +87,7 @@ transcriptions were made for DECODE in 2016&ndash;2020 and are used here as they
 (not Regina di Francia), 8090 <i>havere</i>, 4010 <i>Re di Francia</i> (not Sua Santit&agrave;), 2010 <i>Imperatore</i>, and 1020 <i>esser</i>, 3020 <i>quando</i>,
 3060 <i>-mente</i>, 4020 <i>come</i>, 4040 <i>Milano</i>, 4080 <i>et</i>, 5070, 6050 and 7070 <i>Imbasciatore</i>, 6060 <i>Inquisitione</i>, 7030 <i>Cardinale</i>,
 7040 <i>galere</i>, 8020 <i>avviso</i>, 8070 <i>Ugonotti</i>, 3050 and 6030 <i>Italia</i>, 9090 <i>havendo</i>, 6020 <i>causa</i>. The extended key is in
-<code>key.md</code>.</p>
+<code translate="no">key.md</code>.</p>
 
 <h2 id="marriage"><span class="num">02</span> A marriage for the King of France</h2>
 <p>The first cipher (f. 6r), as deciphered from the figures and the contemporary decipherment on f. 8:</p>
@@ -139,7 +139,7 @@ of pensions on the archdeaconry of Toledo. It builds coherent sentences but read
 
 <h2 id="method"><span class="num">04</span> Method</h2>
 <p>Each digit 1&ndash;9 gives two letters and 0 nothing, but a group X0Y0 may be a nomenclator word or two letters with their nulls.
-The decoder (<code>targets/alessandrino1568/decrypt.py</code>) works through the page keeping the best few partial decryptions at each step; at each digit it tries both letters, the null, and
+The decoder (<code translate="no">targets/alessandrino1568/decrypt.py</code>) works through the page keeping the best few partial decryptions at each step; at each digit it tries both letters, the null, and
 any nomenclator group that starts there, and scores the resulting Italian with the repository&rsquo;s shared five-gram model (it-cinquecento,
 spaces removed). The same code, with a different key table, decrypted the Morosini ciphers of 1588&ndash;89. Every page decodes at about &minus;1.75
 nats a letter, the level of ordinary text for this model, and ends in a few letters of clerk&rsquo;s padding.</p>
@@ -148,7 +148,7 @@ nats a letter, the level of ordinary text for this model, and ends in a few lett
 2026 classed the letters decoded, not read until each was checked. The records&rsquo; DECODE &ldquo;cleartext&rdquo; images were then opened one by
 one: R94 (f. 45r), R95 (f. 58r) and R100 (under the cipher, f. 280r) on 22 October, and R93 (f. 8), R96 (f. 80), R97 (f. 90r&ndash;v), R98
 (f. 139), R99 (a leaf after f. 169), R102 (f. 307) and R115 (a half-sheet with f. 641) on 23 October each hold the contemporary
-decipherment. Each was transcribed and aligned word by word with the figures (<code>reread_aless_align.py</code>); where the decipherer and
+decipherment. Each was transcribed and aligned word by word with the figures (<code translate="no">reread_aless_align.py</code>); where the decipherer and
 the figures differ, the figures decide. R101 has no decipherment; it was decoded again with the extended key and deciphered word by
 word on the figures.</p>
 
@@ -171,7 +171,7 @@ codes 4050, 2010 (where the decipherer has N.S.), 9070 and four runs in R115, wh
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>R93 <span class="muted">(ASV, Segreteria di Stato, Spagna 6/I, item 1, f. 006r (DECODE R93), unknown)</span></h3>
 <p>Friends of the French crown ask the Pope to use his offices with the Emperor for a marriage of one of the Emperor&#x27;s daughters to the King of France; the Pope will not move without knowing Philip II&#x27;s mind, and the nuncio is to sound it discreetly and report.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/decode/DOC_R93_D1664_1664.txt">DOC_R93_D1664_1664.txt</a></p><pre>#CATALOG NAME: Segr. di Stato/Spagna 6_I/1/
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/decode/DOC_R93_D1664_1664.txt">DOC_R93_D1664_1664.txt</a></p><pre translate="no">#CATALOG NAME: Segr. di Stato/Spagna 6_I/1/
 #IMAGE NAME: 006r.jpg
 #TRANSCRIBER NAME: TimB
 #DATE OF TRANSCRIPTION: January 26, 2016
@@ -188,11 +188,11 @@ codes 4050, 2010 (where the decipherer has N.S.), 9070 and four runs in R115, wh
 2 0 9 0 1 0 1 0 2 0 6 0 6 0 5 0 2 0 3 4 7 6 6 0 9 4 7 5 4 4 0 2 4 2 0 5 6 0 9 7 2 2 4 0 2? 0 6 0 5 4
 9 6 7 4 0 3 0 9 4 0 5 2 4 0 4 2 6 1 6 6 1 2 5 6 6 0 5 1 4 0 6 5 9 7 6 5 4 3 0 6 0 0^. 0 5 4 9 1 1 4 0 2 0 9
 6 5 4 0 4 4 8 2 4 0 2 2 6 6 0 7 4 7 4 0 8? 0 2 0 9 0 4 4 0 9 7 2 2 4 0 8 5 2 5 7 2 1 4 0 9 3 7 9 3</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R93_decryption.txt">R93_decryption.txt</a></p><pre># R93: copied verbatim from decrypt_raw.txt (output of `python decrypt.py`: George Lasry&#x27;s reconstructed key, DECODE DOC_*_D32xx, Oct 2020, applied by this project&#x27;s beam search with the it-cinquecento model). Unspaced; [WORD] = nomenclator, [NN.] = dotted group not in Lasry&#x27;s list; the run at the end of each page is padding.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R93_decryption.txt">R93_decryption.txt</a></p><pre translate="no"># R93: copied verbatim from decrypt_raw.txt (output of `python decrypt.py`: George Lasry&#x27;s reconstructed key, DECODE DOC_*_D32xx, Oct 2020, applied by this project&#x27;s beam search with the it-cinquecento model). Unspaced; [WORD] = nomenclator, [NN.] = dotted group not in Lasry&#x27;s list; the run at the end of each page is padding.
 
 == R93 006r.jpg (451 items, -1.80/item)
 tuedicercato[QUI]daalcuniamoreuolidelacoronadi[FRANCIA]afareoficiopiu[04.]comptentirareunarelesuefigliole[PER]moglielaua[SUA MAESTA]papratica[NOSTRO SIGNORE][NON]auolutaistere[NON]sapendolanimodifuin[QUEL]partesisuppotrascoprira[QUI][QUELLO]maniera[CHE]leparerapiusportunapunementeasecurandola[CHE]tu[NON]e[PER]farneparolamaioeprima[NON]saper[SUA MAESTA]pasialintentionestanopresagesaputampesalabilimendadac[CHE]laprimacomoditapfdzg</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R93_reading.md">R93_reading.md</a></p><pre># R93 — Cardinal Alessandrino to the nuncio Castagna, cipher (Spagna 6/I/1, f. 6r): reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R93_reading.md">R93_reading.md</a></p><pre translate="no"># R93 — Cardinal Alessandrino to the nuncio Castagna, cipher (Spagna 6/I/1, f. 6r): reading
 
 Rests on: the contemporary decipherment on the slip bound as f. 8 of the same file (`R93_decifrato_f8r.txt`, DECODE
 cleartext image DOC_R93_D1216), found 23 Oct 2026 (r2g), checked figure by figure against the key
@@ -225,7 +225,7 @@ espressamente; et saputa che […] l&#x27;habbia, mi ne darà avviso con la prim
 - &quot;che […] l&#x27;habbia&quot;: 2 0 9 | 6 5 4 0 4 4 8 2 4; the decipherer wrote &quot;che l&#x27;habbia&quot;; 6 5 4 not read.
 - &quot;avviso&quot;: 8 0 2 0 (8020, new; also in R101 and R99).
 - End: 0 9 3 7 9 3 is the clerk&#x27;s filler.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R93_en.md">R93_en.md</a></p><pre># R93 — English (Cardinal Alessandrino to the nuncio, cipher, 1568)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R93_en.md">R93_en.md</a></p><pre translate="no"># R93 — English (Cardinal Alessandrino to the nuncio, cipher, 1568)
 
 Same holes as R93_reading.md. Modern spelling; codes as names.
 
@@ -237,7 +237,7 @@ knows what his intention is, expressly; and once you have learned it […], you 
 opportunity.</pre></details>
 <h3>R94 <span class="muted">(ASV, Segreteria di Stato, Spagna 6/I, item 2, f. 042r (DECODE R94), unknown)</span></h3>
 <p>Covering letter Rome 7 Nov 1567 (&quot;Con questa un poco di cifra&quot;): the Pope does not mean to revoke the King&#x27;s ancient privileges but to remove abuses grown through his ministers; the nuncio is to say so at a suitable moment, once the King is out of the trouble of the funerals; if the King strips the Holy See of its authority, the Pope will resist with spiritual arms &quot;usque ad effusionem sanguinis&quot;.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/decode/DOC_R94_D1665_1665.txt">DOC_R94_D1665_1665.txt</a></p><pre>#CATALOG NAME: Segr. di Stato/Spagna 6_I/2
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/decode/DOC_R94_D1665_1665.txt">DOC_R94_D1665_1665.txt</a></p><pre translate="no">#CATALOG NAME: Segr. di Stato/Spagna 6_I/2
 #IMAGE NAME: 042r.jpg
 #TRANSCRIBER NAME: TimB
 #DATE OF TRANSCRIPTION: January 28, 2016
@@ -264,11 +264,11 @@ opportunity.</pre></details>
 2 4 0 9 0 7 0 9 0 2 0 9 0 7 4 4 0 5 2 3 6 7 0 7 2 5 0 4 6 0 5 5 6 0 5 1 4 1 6 0 9 8 6 5 6 0 3 4 7 4
 5 3 6 2 0 3 4 3 4 2 4 7 7 4 0 0^. 0 1 2 1 4 0 7 6 5 2 5 1 6 6 1 2 4 0 1 5 4 0 9 0 4 7 0 6 3 1 5 2 5 6 6 2
 5 4 6 3 1 2 6 2 5 0 3 8 0^. 7 8 3 8 7 0^. 3 8 3 7</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R94_decryption.txt">R94_decryption.txt</a></p><pre># R94: copied verbatim from decrypt_raw.txt (output of `python decrypt.py`: George Lasry&#x27;s reconstructed key, DECODE DOC_*_D32xx, Oct 2020, applied by this project&#x27;s beam search with the it-cinquecento model). Unspaced; [WORD] = nomenclator, [NN.] = dotted group not in Lasry&#x27;s list; the run at the end of each page is padding.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R94_decryption.txt">R94_decryption.txt</a></p><pre translate="no"># R94: copied verbatim from decrypt_raw.txt (output of `python decrypt.py`: George Lasry&#x27;s reconstructed key, DECODE DOC_*_D32xx, Oct 2020, applied by this project&#x27;s beam search with the it-cinquecento model). Unspaced; [WORD] = nomenclator, [NN.] = dotted group not in Lasry&#x27;s list; the run at the end of each page is padding.
 
 == R94 042r.jpg (889 items, -1.83/item)
 zconlocasioneinuitato[01.]braaragionamentoip[RE]faciaalcunauoltapuzoopra[QUEL]materiedigiurisditione[NOSTRO SIGNORE]uole[CHE]nallericaliberagemptumeintendediretocadeisuoipriuilegianti[CHE]masibennrianuareliabtsicresciutimenoi[PER]colpareaisuoiministrilifpaisiinternonloroparticolarepiupresto[CHE][PER]altroanocercatoriampliarliriusarliindnurimentodi[QUELLO]autorita[CHE]lpcnsallipredebesoridi[RE]legratieaipriuilegialegatidaloroi[QUESTO]poilteradadir[QUEL]oportunitaliaedic[QUI]li[RE]comincianiadellaliberlipoiafuoradeltrauagliorefuneralisogiungendoledipiu[CHE]fi[RE]siarisoluta[PER]operaresuoiministrispogliardegato[QUEL]santasededellautoritainalcunicas[CON][SUA SANTITA][SUA SANTITA][QUEL]fo[70.]ntemporalii[GERMANIA][QUELLO][CHE]dalsiferdisansonstatepcnsefaraognigagliardauitaresistentiatoaparefusionemsanguiniof[80.]rcfc[70.]fcfr</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R94_reading.md">R94_reading.md</a></p><pre># R94 — Cardinal Alessandrino to the nuncio Castagna, cipher of [Rome, 7 November 1567] (Spagna 6/I/2, f. 42r)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R94_reading.md">R94_reading.md</a></p><pre translate="no"># R94 — Cardinal Alessandrino to the nuncio Castagna, cipher of [Rome, 7 November 1567] (Spagna 6/I/2, f. 42r)
 
 Rests on: the contemporary decipherment on f. 45r of the same file (`R94_decifrato_f45r.txt`), checked figure by figure
 against the key (`python reread_aless_align.py decode/DOC_R94_D1665_1665.txt 042r.jpg texts/R94_reading.md`): 157 of
@@ -302,7 +302,7 @@ viva resistentia usque ad effusionem sanguinis.
   &quot;giovare&quot; above; neither fits the figures.
 - &quot;forze&quot;: 3 5 7 0^. 6 — the dotted zero is z (also &quot;terzo&quot;, &quot;patienza&quot;, &quot;senza&quot; in R101).
 - &quot;usque&quot;: 1 5 4 0 9 0; the Latin formula from the decipherment.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R94_en.md">R94_en.md</a></p><pre># R94 — English (Cardinal Alessandrino to the nuncio, cipher of [7 November 1567])
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R94_en.md">R94_en.md</a></p><pre translate="no"># R94 — English (Cardinal Alessandrino to the nuncio, cipher of [7 November 1567])
 
 Taking a good occasion, and invited also by the talk His Majesty sometimes has with Your Lordship on these matters of
 jurisdiction, His Holiness wishes you to tell him freely that His Holiness does not intend to revoke his ancient
@@ -315,7 +315,7 @@ of its authority in some cases, His Holiness — not with temporal forces but wi
 will put up every strong and lively resistance, even to the shedding of blood.</pre></details>
 <h3>R95 <span class="muted">(ASV, Segreteria di Stato, Spagna 6/I, item 3, f. 055r (DECODE R95), unknown)</span></h3>
 <p>The French ambassador&#x27;s claim about raising troops in the State of Milan would give the King cause to withdraw his protection; the crusade alms: the Pope acted so that Christian discipline should not slacken in Spain, not to deny the indulgence, and will grant a new concession; he grieves more for the King&#x27;s soul than for any human respect; the nuncio is to speak in this sense.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/decode/DOC_R95_D1666_1666.txt">DOC_R95_D1666_1666.txt</a></p><pre>#CATALOG NAME: Segr. di Stato/Spagna 6_I/3
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/decode/DOC_R95_D1666_1666.txt">DOC_R95_D1666_1666.txt</a></p><pre translate="no">#CATALOG NAME: Segr. di Stato/Spagna 6_I/3
 #IMAGE NAME: 055r.jpg
 #TRANSCRIBER NAME: TimB
 #DATE OF TRANSCRIPTION: January 28, 2016
@@ -341,11 +341,11 @@ will put up every strong and lively resistance, even to the shedding of blood.</
 5 0 2 0 4 4 0 9 6 7 7 2 1 4 0 2 0 9 0 3 4 7 2 4 0 3 0 1 0 7 6 4 4 0 4 6 2 2 4 0 5 1 4 0 2 0 9 0 5 0 2
 4 4 1 7 5 0 7 2 5 9 6 1 5 0 1 2 4 6 5 0 0^. 0 2 6 0 6 0 9 0 5 6 6 5 5 0 2 6 7 6 2 5 0 1 0 9 0 4 1 6 7 4 0 7 4
 9 4 7 4 4 7 6 0 5 6 2 9 7 6 0 2 0 9 0 7 2 0 8 2 5 0 6 6 0 5 6 6 1 4 0 1 6 6 6 7 0 9 7 5 9 5 5 2 1 5 0 3 7 8 3 7</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R95_decryption.txt">R95_decryption.txt</a></p><pre># R95: copied verbatim from decrypt_raw.txt (output of `python decrypt.py`: George Lasry&#x27;s reconstructed key, DECODE DOC_*_D32xx, Oct 2020, applied by this project&#x27;s beam search with the it-cinquecento model). Unspaced; [WORD] = nomenclator, [NN.] = dotted group not in Lasry&#x27;s list; the run at the end of each page is padding.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R95_decryption.txt">R95_decryption.txt</a></p><pre translate="no"># R95: copied verbatim from decrypt_raw.txt (output of `python decrypt.py`: George Lasry&#x27;s reconstructed key, DECODE DOC_*_D32xx, Oct 2020, applied by this project&#x27;s beam search with the it-cinquecento model). Unspaced; [WORD] = nomenclator, [NN.] = dotted group not in Lasry&#x27;s list; the run at the end of each page is padding.
 
 == R95 055r.jpg (922 items, -1.78/item)
 dispondendopiuparticolargelantastereainonpasatoledico[CHE]fiinfuonuero[QUELLO][CHE]rdeoderetoinmateriainmateriadipoterfargentemelostatodilaincaso[CHE]uenionsgesorigpradiagiustacatoal[RE]dilasarealprotetionestadiuenereetiamdiosdegnopesonospargendosimilifalsiuaora[03.]cala[08.]mut[NON]laretscs[04.]c[QUELLO][CHE]desersaleaniosina[NON]aueseroraguadagnadellindulgentiam[44.]clarisciplinacristiana[NON]sidellolonieioa[NON]auenutoaltroueiltuomzuentadifarglieneestapcnsionein[QUELLO]modo[CHE][PER]pocientiasuapuofare[PER]lafraldeinstantiafatalera[43.]ni[SUA MAESTA]pannelogicio[CHE]fedesopra[QUEL]materia[NON]lasciodedire[CHE][RE]sisariaalienatoda[QUEL]santasedema[CHE]gioubernonneroledila[NOSTRO SIGNORE]piu[PER]laperrita[CHE]faril[RE]dellanimasta[CHE]sialtrorispetoumanoin[QUEL]sensoinreistpateradaparlaresempre[CHE]dicionesentatenerpropositofrcfr</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R95_reading.md">R95_reading.md</a></p><pre># R95 — Cardinal Alessandrino to the nuncio Castagna, cipher of [early 1568] (Spagna 6/I/3, f. 55r)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R95_reading.md">R95_reading.md</a></p><pre translate="no"># R95 — Cardinal Alessandrino to the nuncio Castagna, cipher of [early 1568] (Spagna 6/I/3, f. 55r)
 
 Rests on: the contemporary decipherment on f. 58r of the same file (`R95_decifrato_f58r.txt`), read with the figures
 (`python reread_aless_align.py decode/DOC_R95_D1666_1666.txt 055r.jpg texts/R95_reading.md`). The decipherment is a
@@ -380,7 +380,7 @@ di ciò ne senta tener proposito.
 - &quot;come n&#x27;è avvenuto&quot;: figures 4020 2060 avvenuto (2060 is &quot;non&quot; elsewhere); the decipherer&#x27;s &quot;n&#x27;è&quot; kept.
 - &quot;fatta [an] dal […]&quot;: 4 6 7 4 4 then the dotted group 3^. and 6; a person (the decipherer&#x27;s word is unread).
 - &quot;[?fece]&quot;: figures 3 6 7 6 (f/g e/n d/r e/n: &quot;fede&quot;); the decipherer&#x27;s word is unread.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R95_en.md">R95_en.md</a></p><pre># R95 — English (Cardinal Alessandrino to the nuncio, cipher of early 1568)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R95_en.md">R95_en.md</a></p><pre translate="no"># R95 — English (Cardinal Alessandrino to the nuncio, cipher of early 1568)
 
 Answering your letters of last month more particularly, I tell you that, were what the French Ambassador has said not
 true — about being able to raise troops in the State of Milan in case it were attacked from here — it would give the
@@ -394,7 +394,7 @@ would make of his soul than for any other human consideration. And in this same 
 whenever you hear the subject raised.</pre></details>
 <h3>R96 <span class="muted">(ASV, Segreteria di Stato, Spagna 6/I, item 4, f. 081r (DECODE R96), unknown)</span></h3>
 <p>Rome, 19 May 1568: the Pope awaits the answer on the Emperor-King of France marriage (hoping for a league of the three chief princes); Scipione [?Cuttinardo], charged as a heretic by the Holy Office, aspires to be Regent of the Collateral in Naples - the King to be told at once; difficulties over the order against the Jeronimites to be reported.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/decode/DOC_R96_D1667_1667.txt">DOC_R96_D1667_1667.txt</a></p><pre>#CATALOG NAME: Segr. di Stato/Spagna 6_I/4
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/decode/DOC_R96_D1667_1667.txt">DOC_R96_D1667_1667.txt</a></p><pre translate="no">#CATALOG NAME: Segr. di Stato/Spagna 6_I/4
 #IMAGE NAME: 081r.jpg
 #TRANSCRIBER NAME: TimB
 #DATE OF TRANSCRIPTION: January 28, 2016
@@ -419,11 +419,11 @@ whenever you hear the subject raised.</pre></details>
 1 6 0 4 6 0 7 2 4 2 3 6 6? 1 2 6 0 7 6 8 2 1 6 0 2 2 0 7 5 1 6 7 4 0 8 0 2 0 7 6 4 0 1 1 1 5 0 4 8 2 5 2 0 9 0 7 2
 3 0 9 0 5 2 0 9 5 5 4 0 9 7 5 1 6 7 6 7 6 0 4 0 3 9 9? 1 5 0 5 4 7 4 0 6 6 8 6 5 4 7 2 5 0 2 6 0 6 0 9 0 2 4 1 6 7
 2 4 0 0^. 3 7 9 3 8 3 7 9 8 3 7 0^. 9 8 3</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R96_decryption.txt">R96_decryption.txt</a></p><pre># R96: copied verbatim from decrypt_raw.txt (output of `python decrypt.py`: George Lasry&#x27;s reconstructed key, DECODE DOC_*_D32xx, Oct 2020, applied by this project&#x27;s beam search with the it-cinquecento model). Unspaced; [WORD] = nomenclator, [NN.] = dotted group not in Lasry&#x27;s list; the run at the end of each page is padding.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R96_decryption.txt">R96_decryption.txt</a></p><pre translate="no"># R96: copied verbatim from decrypt_raw.txt (output of `python decrypt.py`: George Lasry&#x27;s reconstructed key, DECODE DOC_*_D32xx, Oct 2020, applied by this project&#x27;s beam search with the it-cinquecento model). Unspaced; [WORD] = nomenclator, [NN.] = dotted group not in Lasry&#x27;s list; the run at the end of each page is padding.
 
 == R96 081r.jpg (826 items, -1.96/item)
 tuaspetarintendedefpa[CHE]rispostada[VOSTRA SIGNORIA]soprailparticolaredelmatrimoniotraitaud[CON]painesbris[NON]zdipasatisi[CHE]nlaintendesesopradicioilsensodiiugiudicandoutipse[PER]sortesipcludesepotriafaciagnoperarsigpa[CHE]conlunioneslegatra[QUEL]treprincipiprincipalidelacristianitafarloapere[SUA MAESTA]ufzetoprima[CHE]in[QUEL]santosufitionieriuiatoscipionectuinario[PER]edeuicoi[SUA MAESTA]panointende[QUI][CHE]aspirariumregentecolauerale[PER]uiaocidimoltaimporta[60.]llielauere[NON]manipredirlosubitoa[RE]innomeditufzrgpfbrgsenellesecutionedi[QUELLO]ordinepuralmedemitadisanieronimoltesepurasusodificultaalcunadopo[CHE]upaterafatelediligentiedebitemidoueracireauutoacio[CHE]rifpomposaprouedereagppuosaranecesarioin[QUEL]materiagdpfcfdzbg[70.]pbf</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R96_reading.md">R96_reading.md</a></p><pre># R96 — Cardinal Alessandrino to the nuncio Castagna, cipher of [Rome, 19 May 1568] (Spagna 6/I/4, f. 81r): reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R96_reading.md">R96_reading.md</a></p><pre translate="no"># R96 — Cardinal Alessandrino to the nuncio Castagna, cipher of [Rome, 19 May 1568] (Spagna 6/I/4, f. 81r): reading
 
 Rests on: the contemporary decipherment on the slip bound as f. 80 of the same file (`R96_decifrato_f80r.txt`, DECODE
 cleartext image DOC_R96_D1255), found 23 Oct 2026 (r2g), checked figure by figure against the key
@@ -472,7 +472,7 @@ provedere a [?quanto] sarà necessario in questa materia.
 - &quot;mi doverà [dare] avviso&quot;: 2 2 0 7 5 1 6 7 4 0 8020; no figures for &quot;dare&quot;.
 - &quot;provedere a [?quanto] sarà necessario&quot;: 0 9 7 5 1 6 7 6 7 6 0 4 0 3 9 9? 1 5 0 5 4 7 4 0 6 6 8 6 5 4 7 2 5; the
   group &quot;3 9 9̂ 1 5&quot; (a mark over the second 9 on the image) is read as quanto (309 6 1 5) only by sense.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R96_en.md">R96_en.md</a></p><pre># R96 — English (Cardinal Alessandrino to the nuncio, cipher of Rome, 19 May 1568)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R96_en.md">R96_en.md</a></p><pre translate="no"># R96 — English (Cardinal Alessandrino to the nuncio, cipher of Rome, 19 May 1568)
 
 Same holes as R96_reading.md. Modern spelling; codes as names.
 
@@ -489,7 +489,7 @@ Your Lordship has made the proper inquiries you must [give] me notice of everyth
 be made for [?whatever] will be needed in this matter.</pre></details>
 <h3>R97 <span class="muted">(ASV, Segreteria di Stato, Spagna 6/I, item 5, f. 088r-089v (DECODE R97), unknown)</span></h3>
 <p>The Duke of Ferrara, displeased over the Bolognese exiles (Cavaliere Gualengo), may complain to the King through Count Ercole Tassone; the Pope&#x27;s case under the investiture. The French ambassador in Constantinople offers to join Huguenots and Protestants with the Turks; in Adrianople he urged Piali Pasha to bring the fleet against Rome; his removal is to be sought.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/decode/DOC_R97_D1668_1668.txt">DOC_R97_D1668_1668.txt</a></p><pre>#CATALOG NAME: Segr. di Stato/Spagna 6_I/5
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/decode/DOC_R97_D1668_1668.txt">DOC_R97_D1668_1668.txt</a></p><pre translate="no">#CATALOG NAME: Segr. di Stato/Spagna 6_I/5
 #IMAGE NAME: 088r.jpg-
 #TRANSCRIBER NAME: TimB
 #DATE OF TRANSCRIPTION: January 31, 2016
@@ -555,7 +555,7 @@ be made for [?whatever] will be needed in this matter.</pre></details>
 4 4 0 5 2 2 6 2 0 5 0 7 0 7 2 0 7 4 0 4 5 7 0 9 4 7 1 6 0 0^. 0 5 3 6 7 6 6 7 5 0 2 0 9 0 2 6 0 3 0 5
 3 4 8 2 4 3 0 6 0 0^. 0 9 7 6 5 1 5 0 5 2 0 2 4 6 7 6 7 2 4 6 5 0 2 6 3 2 6 2 1 2 0 8 0 7 0 4 0 8 5
 7 5 2 9 6 7 6 0 4 2 0 4 6 2 2 2 0 7 6 4 2 0 3 0 5 6 2 0 7 3 8 0^. 3 8 7 9 3?? 8 9 3 8 3 7</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R97_decryption.txt">R97_decryption.txt</a></p><pre># R97: copied verbatim from decrypt_raw.txt (output of `python decrypt.py`: George Lasry&#x27;s reconstructed key, DECODE DOC_*_D32xx, Oct 2020, applied by this project&#x27;s beam search with the it-cinquecento model). Unspaced; [WORD] = nomenclator, [NN.] = dotted group not in Lasry&#x27;s list; the run at the end of each page is padding.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R97_decryption.txt">R97_decryption.txt</a></p><pre translate="no"># R97: copied verbatim from decrypt_raw.txt (output of `python decrypt.py`: George Lasry&#x27;s reconstructed key, DECODE DOC_*_D32xx, Oct 2020, applied by this project&#x27;s beam search with the it-cinquecento model). Unspaced; [WORD] = nomenclator, [NN.] = dotted group not in Lasry&#x27;s list; the run at the end of each page is padding.
 
 == R97 088r.jpg (810 items, -1.77/item)
 o[NON]inteso[PER]cosacertampano[PER]ialasatisfatione[CHE]aciaforsesentiusdittintenegotiorefuoruscitidelptadodibolognatrauato[QUI]insuonomedalcaualierfullengoadisegnatofarnefpa[CHE]risentiment[QUI]fuuenneroacotestacorteilzunercoleuassenauerafacilgeparticolarecomisionediparlarlein[QUEL]materiam[SUA MAESTA]panofitio[NON]douediluifauoraesonopoideratalagetisenzauerna[CHE]tuleportailpocodispnto[CHE]dalapartestasiaa[QUEL]santasederea[SUA MAESTA]pannose[PER]feudatario[NON]oseruandolecapitulationidelasuainuestitud[40.]iespetietna[CHE]lobligaarenderelifuoruscitidi[QUEL]statoogniuolta[CHE]glisienodimandatiin[CHE]suoluto[CHE]upoapialbis[CHE]senesentioeragionareposaridel[RE][CHE]silzuentariseruareunasdempa[PER]tua[SUA MAESTA]panoigiustificaradi
@@ -568,7 +568,7 @@ sariadaueredesim[60.]oditu[CHE]sileuaseriaea?lzamaaddi[QUESTA]llinnomedilui[SUA 
 
 == R97 089v.jpg (529 items, -1.91/item)
 [NON]picoloalecosedelacristianita[PER]latratiaseintendesimmelfe[CHE]inandrinopolilodrauagatoppiaambasciageneraledelmaremoltimalioficiipur[SUA SANTITA]tzudamuptdaalfonsortandoloaprocuraredalsignorediuenir[QUEL]grandisimaarmatalprescuparersiattepagato[NON]sonloaidd[FRANCIA]maan[CHE]decomisionedeliprincipiprotestantiprometendo[CHE]prestosarianolaominiordiralorpartesgedendo[CHE]megofacilgeprestosimandermanoinfiniticracorsiperelianimideligoemdf[80.]fbdpgcpgcfr</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R97_reading.md">R97_reading.md</a></p><pre># R97 — Cardinal Alessandrino to the nuncio Castagna, cipher of [Rome, 1568] (Spagna 6/I/5, ff. 88r–89v): reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R97_reading.md">R97_reading.md</a></p><pre translate="no"># R97 — Cardinal Alessandrino to the nuncio Castagna, cipher of [Rome, 1568] (Spagna 6/I/5, ff. 88r–89v): reading
 
 Rests on: the contemporary decipherment on the leaf bound after the cipher (`R97_decifrato_f90.txt`, DECODE cleartext
 images DOC_R97_D1264 = f. 90r and DOC_R97_D1265 = f. 90v), found 23 Oct 2026 (r2g), and on the figures, read word by
@@ -656,7 +656,7 @@ Italiani.
 - &quot;in Italia facilmente&quot;: 2 6 0 3 0 5 3 4 8 2 4 3060 (305 = 3050).
 - &quot;si manderiano infiniti Ugonotti&quot;: 5 2 2 4 6 7 6 7 2 4 6 5 2 6 3 2 6 2 1 2 8070.
 - &quot;delli Italiani&quot;: 7 6 4 2 0 3 0 5 6 2 (305 + n i), then filler.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R97_en.md">R97_en.md</a></p><pre># R97 — English (Cardinal Alessandrino to the nuncio, cipher, Rome 1568)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R97_en.md">R97_en.md</a></p><pre translate="no"># R97 — English (Cardinal Alessandrino to the nuncio, cipher, Rome 1568)
 
 Same holes as R97_reading.md. Modern spelling; codes as names.
 
@@ -690,7 +690,7 @@ their part will soon be there […], and offering that in Italy countless Huguen
 corrupt the minds of the Italians.</pre></details>
 <h3>R98 <span class="muted">(ASV, Segreteria di Stato, Spagna 6/I, item 6, f. 136r (DECODE R98), unknown)</span></h3>
 <p>The King&#x27;s orders to his ministers in Italy against a Huguenot move into Italy are good, but ministers delay waiting for new commissions; the nuncio is to press for express orders now, so that the Pope can call on them in time for the security of Italy.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/decode/DOC_R98_D1669_1669.txt">DOC_R98_D1669_1669.txt</a></p><pre>#CATALOG NAME: Segr. di Stato/Spagna 6_I/6
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/decode/DOC_R98_D1669_1669.txt">DOC_R98_D1669_1669.txt</a></p><pre translate="no">#CATALOG NAME: Segr. di Stato/Spagna 6_I/6
 #IMAGE NAME: 136r.jpg
 #TRANSCRIBER NAME: RebAn
 #DATE OF TRANSCRIPTION: September 5, 2016
@@ -714,11 +714,11 @@ corrupt the minds of the Italians.</pre></details>
 1 5 5 4 0 1 4 4 6 7 6 0 4 0 1 6 2 9 5 0 0^. 0 4 5 8 5 0 2 6 0 8 6 6 6 3 2 1 2 5 0 9 1 8 4 2 8 
 0^. 5 0 2 0 4 4 0 5 2 8 1 7 6 0^. 4 0 7 6 0 3 0 5 0 0^. 0 7 6 4 2 0 5 1 4 1 2 0 7 2 0 3 0 1 0 9 5 
 6 5 6 4 0 9 6 1 6 3 0 6 0 7 9 8 3 7 9 8 7 8 9 0^. 7 9 8</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R98_decryption.txt">R98_decryption.txt</a></p><pre># R98: copied verbatim from decrypt_raw.txt (output of `python decrypt.py`: George Lasry&#x27;s reconstructed key, DECODE DOC_*_D32xx, Oct 2020, applied by this project&#x27;s beam search with the it-cinquecento model). Unspaced; [WORD] = nomenclator, [NN.] = dotted group not in Lasry&#x27;s list; the run at the end of each page is padding.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R98_decryption.txt">R98_decryption.txt</a></p><pre translate="no"># R98: copied verbatim from decrypt_raw.txt (output of `python decrypt.py`: George Lasry&#x27;s reconstructed key, DECODE DOC_*_D32xx, Oct 2020, applied by this project&#x27;s beam search with the it-cinquecento model). Unspaced; [WORD] = nomenclator, [NN.] = dotted group not in Lasry&#x27;s list; the run at the end of each page is padding.
 
 == R98 136r.jpg (701 items, -1.88/item)
 [1.]cipamordini[CHE][RE]scrise[QUEL]ripasati[SAUERE]mandatiinfollisuoiministri[04.]counseroprouistimentento[CHE]licrdi[FRANCIA]toanondouoltarsia[QUEL]bandefuseroconioportuni[PER]ilbisognotutauia[04.]comimaiprouisionisisoglionodiuardaremolteuoltedalimedesimiministri[PER]uolereaspetarentouncomisionidafuestiordenmaimitationdesiuieneafaredanooalmenodiferirelaimpresamentresiaspetano[QUEL]comisioniomsuzgarainstantial[RE][CHE]dilordeninspresilimitatialiministrisuoiregodipresente[04.]conuenisemaiilcaso[CHE]diobeneguardittoneetsolualedeltempolocomebenefitiopubli[80.][PER]lasicur[60.]aregodelistatidi[RE]pononapetegerzbfrpcrc[90.]dzb</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R98_reading.md">R98_reading.md</a></p><pre># R98 — Cardinal Alessandrino to the nuncio Castagna, cipher (Spagna 6/I/6, f. 136r): reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R98_reading.md">R98_reading.md</a></p><pre translate="no"># R98 — Cardinal Alessandrino to the nuncio Castagna, cipher (Spagna 6/I/6, f. 136r): reading
 
 Rests on: the contemporary decipherment on the slip bound as f. 139 of the same file (`R98_decifrato_f139r.txt`,
 DECODE cleartext image DOC_R98_D1275), found 23 Oct 2026 (r2g), checked figure by figure against the key
@@ -760,7 +760,7 @@ tempo et loco in benefitio publico [?et] per la sicurezza de Italia et delli sta
 - &quot;sicurezza de Italia et delli stati di S.M.&quot;: 5 2 8 1 7 6 0^. 4 0 7 6 0 3 0 5 0 0^.0 7 6 4 2 0 5 1 4 1 2 0 7 2 0 3010.
 - End: 9 5 6 5 6 4 0 9 6 1 6 3 0 6 0 (the decipherer &quot;conservatione&quot;; the figures do not give it), then filler
   7 9 8 3 7 9 8 7 8 9 0^. 7 9 8.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R98_en.md">R98_en.md</a></p><pre># R98 — English (Cardinal Alessandrino to the nuncio, cipher, 1568)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R98_en.md">R98_en.md</a></p><pre translate="no"># R98 — English (Cardinal Alessandrino to the nuncio, cipher, 1568)
 
 Same holes as R98_reading.md. Modern spelling; codes as names.
 
@@ -774,7 +774,7 @@ of them in time and place, for the public good [?and] for the security of Italy 
 <h3>R99 <span class="muted">(ASV, Segreteria di Stato, Spagna 6/I, item 7, f. 169r-v (DECODE R99), unknown)</span> <span class="st partial">read in part</span></h3>
 <p>The Pope&#x27;s plan for two galleys of the Order of St Lazarus (sought from Gian Andrea Doria) opposed by Don John of Austria, whom the Pope answered sharply; in Milan the Senate threatened the archbishop&#x27;s vicar over the armed household at the Corpus Domini procession, and the Pope will use spiritual arms.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (95% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/decode/DOC_R99_D1670_1670.txt">DOC_R99_D1670_1670.txt</a></p><pre>#CATALOG NAME: Segr. di Stato/Spagna 6_I/7
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/decode/DOC_R99_D1670_1670.txt">DOC_R99_D1670_1670.txt</a></p><pre translate="no">#CATALOG NAME: Segr. di Stato/Spagna 6_I/7
 #IMAGE NAME: 169r.jpg
 #TRANSCRIBER NAME: RebAn
 #DATE OF TRANSCRIPTION: August 31, 2016
@@ -814,14 +814,14 @@ of them in time and place, for the public good [?and] for the security of Italy 
 6 4 1 5 0 1 0 1 0 9 6 6 5 4 0 7 2 0 9 7 5 8 6 7 6 7 6 0 2 6 0 6 0 9 0 6 0 2 0 9 1 7 4 
 7 2 0 4 5 7 5 0 9 0 7 0 9 0 4 7 2 2 0 5 9 2 7 2 1 1 4 4 2 0 2 0 9 0 2 4 0 5 2 3 6 5 7 
 7 2 5 0 3 4 2 0 4 0 7 4 1 6 0 5 0 2 0 8 0 2 0 7 2 0 1 0 9 0</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R99_decryption.txt">R99_decryption.txt</a></p><pre># R99: copied verbatim from decrypt_raw.txt (output of `python decrypt.py`: George Lasry&#x27;s reconstructed key, DECODE DOC_*_D32xx, Oct 2020, applied by this project&#x27;s beam search with the it-cinquecento model). Unspaced; [WORD] = nomenclator, [NN.] = dotted group not in Lasry&#x27;s list; the run at the end of each page is padding.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R99_decryption.txt">R99_decryption.txt</a></p><pre translate="no"># R99: copied verbatim from decrypt_raw.txt (output of `python decrypt.py`: George Lasry&#x27;s reconstructed key, DECODE DOC_*_D32xx, Oct 2020, applied by this project&#x27;s beam search with the it-cinquecento model). Unspaced; [WORD] = nomenclator, [NN.] = dotted group not in Lasry&#x27;s list; the run at the end of each page is padding.
 
 == R99 169r.jpg (687 items, -1.82/item)
 actusirisoluermuolerfarnespedientiadi[QUEL]religionedisanaladoaunacomesolagranmastro[CHE]siprouernondiruer[GERMANIA]cpstesnotarein[QUEL]mariscorere[PER]sicur[60.]areameluifantigiasperatarmauerletrouatedalsignorgioleandreadormaiinnouatoricercodatumainteso[QUEL]dongiouaninelfatountocodirumoreputoponendosiincioaldisegnodelretogranmastroellauoluntadi[NOSTRO SIGNORE]principalfnaclacosa[NON]epasatlone[SUA MAESTA]pa[CHE]alterationesapilupi[SUA SANTITA]tasarispostoin[QUELLO]maniera[CHE]nsodongiouanimeritata[CHE]sipueniuaalloisonadiuta[SUA MAESTA]panerisolutapero[CHE]senetrouinodelealtrefirpreadoria[NON]siposaescp[04.]con[QUEL]cauali
 
 == R99 169v.jpg (581 items, -1.70/item)
 ndidiolel[40.]aro[NON]faranopoi[QUELLO][CHE]deteno[NON]aueranoilgiorninimicoditumaprimauolfarneprouar[CON][QUESTA]bene[CHE]tpoiainformata[PER]poterrisponderecaso[CHE]sentiseparlaree[02.]tauoltoestageinlatesausdipropriaautoritainpreiuditiodelaiurisditionedelarciuescou[QUI]pfluointenderealsuouicarioparoleminatodinaluigiliadelcorpusdomini[CHE][NON]doueseinearelafamigliaarmauallaprocesioneil[CHE]misigausadinstigationedelsenausutpensadiprocederein[QUEL]eipuradilor[QUI][QUELLO]armispirituali[CHE]ilsignorrmogliadate[PER]cidiup</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R99_reading.md">R99_reading.md</a></p><pre># R99 — Cardinal Alessandrino to the nuncio Castagna, cipher of [Rome, July 1568] (Spagna 6/I/7, f. 169r–v): reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R99_reading.md">R99_reading.md</a></p><pre translate="no"># R99 — Cardinal Alessandrino to the nuncio Castagna, cipher of [Rome, July 1568] (Spagna 6/I/7, f. 169r–v): reading
 
 Rests on: the contemporary decipherment on the leaf bound with it (`R99_decifrato_f170.txt`, DECODE cleartext image
 DOC_R99_D1284), found 23 Oct 2026 (r2g), checked figure by figure against the key
@@ -885,7 +885,7 @@ questa causa contra di loro con quelle armi spirituali che il signor Dio gli ha 
 - &quot;il che [2020] [?si] fatto&quot;: 2 4 0 2 0 9 0 2 0 2 5 2 0 3 4 1 5 (the decipherer &quot;il che è stato fatto&quot;).
 - &quot;questa causa contra di loro&quot;: 6090 6 0 2 0 9 1 7 4 7 2 0 4 5 7 5 — 6020 causa (new).
 - &quot;gli ha date&quot;: 3 4 2 0 4 0 7 4 1 6.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R99_en.md">R99_en.md</a></p><pre># R99 — English (Cardinal Alessandrino to the nuncio, cipher, summer 1568)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R99_en.md">R99_en.md</a></p><pre translate="no"># R99 — English (Cardinal Alessandrino to the nuncio, cipher, summer 1568)
 
 Same holes as R99_reading.md. Modern spelling; codes as names.
 
@@ -905,7 +905,7 @@ procession; which [2020] [?was] done at the instigation of the Senate. His Holin
 against them with the spiritual arms that the Lord God has given him. For Your Lordship&#x27;s information.</pre></details>
 <h3>R100 <span class="muted">(ASV, Segreteria di Stato, Spagna 6/I, item 8, f. 789 (DECODE R100), unknown)</span></h3>
 <p>The King&#x27;s ministers mean to deceive the nuncio over the Inquisition of Catalonia and keep people from coming to him for absolution; the ambassador presses for the case to be referred to the King; without waiting for another resolution the nuncio is to execute the brief when the parties ask.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/decode/DOC_R100_D2342_2342.txt">DOC_R100_D2342_2342.txt</a></p><pre>#CIPHERTEXT
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/decode/DOC_R100_D2342_2342.txt">DOC_R100_D2342_2342.txt</a></p><pre translate="no">#CIPHERTEXT
 #CATALOG NAME: ASV_i1025_SdS_Spain_6_I-8
 #IMAGE NAME: 789.jpeg
 #TRANSCRIBER NAME: MEG
@@ -929,11 +929,11 @@ against them with the spiritual arms that the Lord God has given him. For Your L
 &lt;CLEARTEXT IT norra? in Spagna? a S.M. si at? &lt;IL&gt; &lt;IL&gt; di quei&gt;
 &lt;CLEARTEXT IT &lt;IL&gt; &lt;IL&gt; la pr.? V.S. norra? in Veg.mi? il &lt;IL&gt;&gt;
 &lt;CLEARTEXT IT quando dando? parti ne siano? &lt;IL&gt;&gt;</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R100_decryption.txt">R100_decryption.txt</a></p><pre># R100: copied verbatim from decrypt_raw.txt (output of `python decrypt.py`: George Lasry&#x27;s reconstructed key, DECODE DOC_*_D32xx, Oct 2020, applied by this project&#x27;s beam search with the it-cinquecento model). Unspaced; [WORD] = nomenclator, [NN.] = dotted group not in Lasry&#x27;s list; the run at the end of each page is padding.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R100_decryption.txt">R100_decryption.txt</a></p><pre translate="no"># R100: copied verbatim from decrypt_raw.txt (output of `python decrypt.py`: George Lasry&#x27;s reconstructed key, DECODE DOC_*_D32xx, Oct 2020, applied by this project&#x27;s beam search with the it-cinquecento model). Unspaced; [WORD] = nomenclator, [NN.] = dotted group not in Lasry&#x27;s list; the run at the end of each page is padding.
 
 == R100 789.jpeg (406 items, -1.95/item)
 dalprocedere[CHE]fanoamministridi[RE]sipprende[CHE]disegnanodingaeldetpie[QUELLO]materiadellendicatalognaabimpediscono[CHE][QUELLO]genti[NON]uengonodalei[PER]lasolutione[QUI]lordgapoiinstantila[NOSTRO SIGNORE][CHE][QUEL]causasiariinolinisagtsi[CHE]senlaspetaredigpaltraresolutione[CHE]laprimaupietainesecutioneilbreuefidaanpartinesiaricercagrgbpfdbgpgcrg??????????????????</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R100_reading.md">R100_reading.md</a></p><pre># R100 — Cardinal Alessandrino to the nuncio Castagna, cipher of [spring 1569] (Spagna 6/I/8, f. 280r)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R100_reading.md">R100_reading.md</a></p><pre translate="no"># R100 — Cardinal Alessandrino to the nuncio Castagna, cipher of [spring 1569] (Spagna 6/I/8, f. 280r)
 
 Rests on: the contemporary decipherment written under the cipher on the same page (`R100_decifrato_f280r.txt`),
 checked against the figures (`python reread_aless_align.py decode/DOC_R100_D2342_2342.txt 789.jpeg
@@ -953,7 +953,7 @@ altra resolutione che la prima, V.S. metta in esecutione il breve quando dalle p
 
 - &quot;comprende&quot; is enciphered con-prende (9 9 7 6 6 7 6), &quot;absolutione&quot; without the b (4 5 5 4 1 1 2 5 6 6).
 - &quot;ricercata&quot;: the figures give ricerca, then the padding; the page ends in the two illegible groups DECODE marks ?.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R100_en.md">R100_en.md</a></p><pre># R100 — English (Cardinal Alessandrino to the nuncio, cipher of spring 1569)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R100_en.md">R100_en.md</a></p><pre translate="no"># R100 — English (Cardinal Alessandrino to the nuncio, cipher of spring 1569)
 
 From the way His Majesty&#x27;s ministers proceed one can see that they intend to deceive Your Lordship in that matter of
 the Inquisition of Catalonia, and they prevent those people from coming to you for absolution. Here the Ambassador is
@@ -961,7 +961,7 @@ now pressing His Holiness that this case be referred to His Majesty in Spain; so
 from here other than the first, Your Lordship is to put the brief into execution when the parties ask you for it.</pre></details>
 <h3>R101 <span class="muted">(ASV, Segreteria di Stato, Spagna 6/I, item 9, f. 291r-v (DECODE R101), unknown)</span></h3>
 <p>The Pope accepted the hackney and the St Peter&#x27;s day dues with the fisc&#x27;s protest, not as census but as fruits of a fief of the Holy See, and claims devolution under the investitures of Julius II and Julius III; the King&#x27;s ministers have raised a schism in Naples, imprisoning the bishops&#x27; notaries and executors (an aged doctor died in prison); God will punish who troubles His Church, and the Pope will have to take measures if the King does not remedy it.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/decode/DOC_R101_D1671_1671.txt">DOC_R101_D1671_1671.txt</a></p><pre>#CATALOG NAME: Segr. di Stato/Spagna 6_I/9
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/decode/DOC_R101_D1671_1671.txt">DOC_R101_D1671_1671.txt</a></p><pre translate="no">#CATALOG NAME: Segr. di Stato/Spagna 6_I/9
 #IMAGE NAME: 291r.jpg-291v.jpg
 #TRANSCRIBER NAME: RebAn
 #DATE OF TRANSCRIPTION: September 12, 2016
@@ -999,14 +999,14 @@ these have been left out.
 7 2 6 6 1 2 4 0 7 6 0 5 1 5 2 0 5 1 7 2 1 2 0 5 0 2 0 3 0 2 0 3 0 1 0 2 0 6 0 5 2 0 7 2 5 5 4 1 4 0 7 2
 7 2 2 6 7 2 4 7 1 2 0 9 7 6 5 1 5 0 1 0 1 0 5 4 7 4 0 6 6 8 6 5 2 1 4 1 5 0 4 0 9 2 3 4 2 4 7 1 2 0 3 0 9
 4 2 0 9 0 9 7 5 1 2 5 2 5 6 6 0 6 0 2 0 8 0 2 0 7 2 0 1 0 9 0 7 3 3 8 7 3 3 8 3 7 9 3 7 3 8 9 3</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R101_decryption.txt">R101_decryption.txt</a></p><pre># R101: copied verbatim from decrypt_raw.txt (output of `python decrypt.py`: George Lasry&#x27;s reconstructed key, DECODE DOC_*_D32xx, Oct 2020, applied by this project&#x27;s beam search with the it-cinquecento model). Unspaced; [WORD] = nomenclator, [NN.] = dotted group not in Lasry&#x27;s list; the run at the end of each page is padding.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R101_decryption.txt">R101_decryption.txt</a></p><pre translate="no"># R101: copied verbatim from decrypt_raw.txt (output of `python decrypt.py`: George Lasry&#x27;s reconstructed key, DECODE DOC_*_D32xx, Oct 2020, applied by this project&#x27;s beam search with the it-cinquecento model). Unspaced; [WORD] = nomenclator, [NN.] = dotted group not in Lasry&#x27;s list; the run at the end of each page is padding.
 
 == R101 291r.jpg (891 items, -1.79/item)
 ?????[PER]instrutioneditzsacera[CHE]ttabetstatiing?elliznellidenarisoliti[CHE]sipaganoilgiornodisanpietroi[GERMANIA]protestadelgiocola[SUA MAESTA]paettaredendocioe[CHE][NON]liaceuata[PER]ceessialifrutidi[QUELLO]degesgetrodiretodi[QUEL]santasedepretendelareuolutione[PER]molticapidellinuestituradeisamosecondodeiuliste[70.]ssaeunmemorinzp[RE]sterosuoiministridiordinestosuscitatounmannifestsobismain[QUELLO]degnos[CONCILIO]isipotraiparireognipersonaalienadapasioniaetandolaobedientiallasedeapostolicasereneliuescouienlodouicarmiposano[SAUERE]nouarmi[CHE]aiseruansenesecutori[CHE][PER]lapiupartefacendoilloroogitio[NON]sianodaliministridefiibarberati?da[QUEL]uerousrndassdadidecrepitantasilascismorireinbarbernonualeelamentedigtamaisuoiministridiconottauerapatie[60.][40.]prefarailsignordio[CHE]licedisuasanta
 
 == R101 291v.jpg (411 items, -1.88/item)
 mpesadataletribulationeilsiguardi[RE]dalgiuditioderioi[SUA MAESTA]panotolebenperintere[CHE]lastampesasiatrauagliauaiallafine[CHE]altrauaglia[NON]nesarase[60.]acastigo[CHE]edisobedienteadioalsuouicario[NON]saramerauigliaseperredalaobedientiadesuoisuditi[PER]fi[RE][NON]sirisoltadirimediaruiprestouuolraenbesitatoapigliartigza[CHE]prouisioneniciritprffbdffcfrpfdfbpf</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R101_reading.md">R101_reading.md</a></p><pre># R101 — Cardinal Alessandrino to the nuncio Castagna, cipher of [summer 1569] (Spagna 6/I/9, f. 291r–v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R101_reading.md">R101_reading.md</a></p><pre translate="no"># R101 — Cardinal Alessandrino to the nuncio Castagna, cipher of [summer 1569] (Spagna 6/I/9, f. 291r–v)
 
 Rests on: the figures only. No decipherment is on the DECODE images of this record (cipher 291r–v; clear letters
 286v–293v, none a decifrato) and no printed text was found (see the reread log). Read word by word with the key as
@@ -1045,7 +1045,7 @@ qualche provisione [6020]. Avviso di V.S.
 - &quot;[?Sora]&quot;: 5 5 7 4 (o/s o/s d/r a/l).
 - &quot;chi&quot; is written with the code for &quot;che&quot; (2 0 9): chinea, Chiesa (twice), chiarire; &quot;chi&quot; (whoever) is 2090.
 - &quot;[6020]. Avviso di V.S.&quot;: 8020 = avviso and 6020 = causa / negocio in the decipherments of R93, R96, R99, R115 (r2g); 6020 does not fit here and stays open.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R101_en.md">R101_en.md</a></p><pre># R101 — English (Cardinal Alessandrino to the nuncio, cipher of summer 1569)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R101_en.md">R101_en.md</a></p><pre translate="no"># R101 — English (Cardinal Alessandrino to the nuncio, cipher of summer 1569)
 
 For Your Lordship&#x27;s instruction, [you will know?] that His Holiness [recently?] accepted the hackney and the customary
 moneys paid on St Peter&#x27;s day, but with a protest by the fisc, to which His Holiness adheres — that is, that he has
@@ -1062,7 +1062,7 @@ vicar, it will be no wonder if he loses the obedience of his own subjects. There
 remedy it soon, His Holiness will be obliged to take some measure there [6020]. For Your Lordship&#x27;s information.</pre></details>
 <h3>R102 <span class="muted">(ASV, Segreteria di Stato, Spagna 6/I, item 10, f. 306r (DECODE R102), unknown)</span></h3>
 <p>Summer 1569: the Pope thinks Cardinal Espinosa fails in his duty towards the Holy See at Philip II&#x27;s court and has said he regrets making him cardinal; the nuncio may let him know if amendment can be hoped for.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/decode/DOC_R102_D1672_1672.txt">DOC_R102_D1672_1672.txt</a></p><pre>#CATALOG NAME: Segr. di Stato/Spagna 6_I/10
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/decode/DOC_R102_D1672_1672.txt">DOC_R102_D1672_1672.txt</a></p><pre translate="no">#CATALOG NAME: Segr. di Stato/Spagna 6_I/10
 #IMAGE NAME: 306r.jpg
 #TRANSCRIBER NAME: RebAn
 #DATE OF TRANSCRIPTION: September 12, 2016
@@ -1082,11 +1082,11 @@ remedy it soon, His Holiness will be obliged to take some measure there [6020]. 
 4 0 3 4 7 3 4 2 6 4 5 0 5 4 9 6 7 6 0 2 4 0 2 6 0 6 0 9 0 1 0 9 0 5 2 0 3 5 1 6 7 6 2 0 5 6 8 5
 6 7 5 0 2 0 9 0 4 6 0 9 4 7 6 7 4 0 8 5 6 1 6 6 2 7 5 2 0 4 4 0 1 6 2 9 5 0 0^. 0 4 4 6 0 9 6 7 5 5 6 6
 7 2 2 6 1 6 6 7 5 2 2 0 4 4 4 0 9 7 1 7 6 6 1 2 4 0 1 1 4 0 2 6 0 8 2 5 0 8 3 7 3 8 3 9 3 8 9 3</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R102_decryption.txt">R102_decryption.txt</a></p><pre># R102: copied verbatim from decrypt_raw.txt (output of `python decrypt.py`: George Lasry&#x27;s reconstructed key, DECODE DOC_*_D32xx, Oct 2020, applied by this project&#x27;s beam search with the it-cinquecento model). Unspaced; [WORD] = nomenclator, [NN.] = dotted group not in Lasry&#x27;s list; the run at the end of each page is padding.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R102_decryption.txt">R102_decryption.txt</a></p><pre translate="no"># R102: copied verbatim from decrypt_raw.txt (output of `python decrypt.py`: George Lasry&#x27;s reconstructed key, DECODE DOC_*_D32xx, Oct 2020, applied by this project&#x27;s beam search with the it-cinquecento model). Unspaced; [WORD] = nomenclator, [NN.] = dotted group not in Lasry&#x27;s list; the run at the end of each page is padding.
 
 == R102 306r.jpg (627 items, -1.83/item)
 nelauapublicaisoscriuopiumodestafedelrgdi[QUELLO][CHE]pueritaaparlatotudiatidelsinistrosuoprocederemauoglis[CHE]nalsapia[PER]informationesta[CHE]tumicomioe[CHE]iofacesisapere[SUA SANTITA][QUELLE]prfmancainmoltecosedifar[QUELLO]ofitio[CHE]deterialpreso[RE]inseruitiodi[QUEL]santasereonder[SUA SANTITA]testatoreputatoinregnodi[QUELLO]dignita[CHE]uiennaretogpaipuoauanonrompentitodiatedasgatocardinalema[CHE]sesipotesesperadeboretioneinluisariabeneafarglielosaperemaine[SUA SANTITA]poigouereisecondo[CHE]lepareraconuenirsialtempolaepersonediintendomialaprudentiattainbisbfdgbgpgcpg</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R102_reading.md">R102_reading.md</a></p><pre># R102 — Cardinal Alessandrino to the nuncio Castagna, cipher of [Rome, summer 1569] (Spagna 6/I/10, f. 306r): reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R102_reading.md">R102_reading.md</a></p><pre translate="no"># R102 — Cardinal Alessandrino to the nuncio Castagna, cipher of [Rome, summer 1569] (Spagna 6/I/10, f. 306r): reading
 
 Rests on: the contemporary decipherment on the slip bound as f. 307 of the same file (`R102_decifrato_f307r.txt`,
 DECODE cleartext image DOC_R102_D1308), found 23 Oct 2026 (r2g), checked figure by figure against the key
@@ -1123,7 +1123,7 @@ prudentia [?sua] in ciò.
 - &quot;ma in questo V.S.&quot;: 2 4 0 2 6 0 6090 1090 (the decipherer &quot;ma in ciò&quot;).
 - &quot;prudentia [?sua] in ciò&quot;: 9 7 1 7 6 6 1 2 4 0 1 1 4 0 2 6 0 8 2 5 — &quot;1 1 4&quot; gives t/u t/u a, &quot;sua&quot; needs 5 1 4.
 - End: 0 8 3 7 3 8 3 9 3 8 9 3 filler.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R102_en.md">R102_en.md</a></p><pre># R102 — English (Cardinal Alessandrino to the nuncio, cipher, summer 1569)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R102_en.md">R102_en.md</a></p><pre translate="no"># R102 — English (Cardinal Alessandrino to the nuncio, cipher, summer 1569)
 
 Same holes as R102_reading.md. Modern spelling; codes as names.
 
@@ -1136,7 +1136,7 @@ but in this Your Lordship will act as you think fits the time and the persons, l
 <h3>R115 <span class="muted">(ASV, Segreteria di Stato, Spagna 6/II, item 13, f. 641r (DECODE R115), unknown)</span> <span class="st partial">read in part</span></h3>
 <p>Two months after asking (30 November) for the royal nomination of Francisco de Reinoso, the Pope&#x27;s scalco, to the see of Monreale, with the transfer of the pensions on the archdeaconry of Toledo, the nuncio is to press Philip II for a speedy dispatch.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (88% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/decode/DOC_R115_D1685_1685.txt">DOC_R115_D1685_1685.txt</a></p><pre>#CATALOG NAME: Segr. Stato Spagna 6_II\13
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/decode/DOC_R115_D1685_1685.txt">DOC_R115_D1685_1685.txt</a></p><pre translate="no">#CATALOG NAME: Segr. Stato Spagna 6_II\13
 #IMAGE NAME: 641r.jpg
 #TRANSCRIBER NAME: Midas
 #DATE OF TRANSCRIPTION: October 17, 2016 
@@ -1157,11 +1157,11 @@ but in this Your Lordship will act as you think fits the time and the persons, l
 9 7 2 2 6 0 7 6 4 4 0 7 2 5 5 4 1 1 2 5 6 0 5 1 4 0 3^. 0 8 0 4 4 0 6 0 2 0 7 6 0 4 1 8 2 4 4 2 0 9 5 2 2 0 9 0 3 0 1 
 4 5 0 1 7 4 1 4 0 7 2 0 8 5 5 1 4 0 1 0 1 0 5 2 0 5 2 0 5 4 1 2 5 3 4 7 4 0 1^. 0 8 0 2 0 9 0 5 2 0 5 6 3 1 2 1 2 0 5 0 2 
 7 0 9 0 2 6 0^. 2 0 2 0 9 0 9 4 7 6 7 4 6 5 0 2 2 3 4 2 5 7 2 0 4 0 3 0 1 0 9 3 7 3 8 0^. 9 0^. 7 3</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R115_decryption.txt">R115_decryption.txt</a></p><pre># R115: copied verbatim from decrypt_raw.txt (output of `python decrypt.py`: George Lasry&#x27;s reconstructed key, DECODE DOC_*_D32xx, Oct 2020, applied by this project&#x27;s beam search with the it-cinquecento model). Unspaced; [WORD] = nomenclator, [NN.] = dotted group not in Lasry&#x27;s list; the run at the end of each page is padding.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R115_decryption.txt">R115_decryption.txt</a></p><pre translate="no"># R115: copied verbatim from decrypt_raw.txt (output of `python decrypt.py`: George Lasry&#x27;s reconstructed key, DECODE DOC_*_D32xx, Oct 2020, applied by this project&#x27;s beam search with the it-cinquecento model). Unspaced; [WORD] = nomenclator, [NN.] = dotted group not in Lasry&#x27;s list; the run at the end of each page is padding.
 
 == R115 641r.jpg (758 items, -1.80/item)
 scrisiaoralesandrieortlinsisonolultimodinouembre[CHE]douesedicercadel[RE]innomedittaanominationedellipesariisedelleinsisonadidonfrencescoderemessoscalcosegretor[CON]tiapones[51.]cripoteretransferirelepensioni[CHE]aueuaimpostesularipriaconatodiuolerosopralamedesimaipesaauisandoim[01.]edeluerstaloredinosdi[CHE]mezzioauutofin[QUI]dialcunattauoluto[CHE]ionedillamedesimacomisione[SUA SANTITA][QUELLE]nman[CHE]diparlare[QUEL]fu[03.]cprimapotralundenbuonaocasioneinstandoli[PER]laprestaespeditione[09.]calcosa[NON]tarlininfinitoauisariipo[CHE]leprimerelarisolutionsua[03.]caleirelucialipoi[CHE]guastratadicostattoisisatisfara[01.]c[CHE]siseguitioi[QUELLO]m[60.]i[CHE]pareranomigliodi[SUA MAESTA]uzfrf[80.][90.]dg</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R115_reading.md">R115_reading.md</a></p><pre># R115 — Cardinal Alessandrino to the nuncio Castagna, cipher of [Rome, January 1569] (Spagna 6/II/13, f. 641r): reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R115_reading.md">R115_reading.md</a></p><pre translate="no"># R115 — Cardinal Alessandrino to the nuncio Castagna, cipher of [Rome, January 1569] (Spagna 6/II/13, f. 641r): reading
 
 Rests on: the contemporary decipherment on a half-sheet bound with the cipher (`R115_decifrato_f641bis.txt`, DECODE
 cleartext image DOC_R115_D1340), found 23 Oct 2026 (r2g), and on the figures, read word by word against it
@@ -1220,7 +1220,7 @@ pareranno migliori a Re.
   4 — &quot;9 5 2 2 9 3 0 1&quot; not read; the second &quot;si&quot; (5 2) not placed.
 - &quot;ancora che si seguiti per quelli mezi che pareranno migliori a Re&quot;: 1^. 8 2090 5 2 5 6 3 1 2 1 2 5 0 2 7090 2 6 0^. 2 2090
   9 4 7 6 7 4 6 5 2 2 3 4 2 5 7 2 4 3010 (the decipherer &quot;messi&quot; for mezi).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R115_en.md">R115_en.md</a></p><pre># R115 — English (Cardinal Alessandrino to the nuncio, cipher, [January 1569])
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/alessandrino1568/texts/R115_en.md">R115_en.md</a></p><pre translate="no"># R115 — English (Cardinal Alessandrino to the nuncio, cipher, [January 1569])
 
 Same holes as R115_reading.md. Modern spelling; codes as names.
 
@@ -1247,7 +1247,7 @@ records&rsquo; DECODE cleartext images.</li>
 <li>Luciano Serrano, <i>Correspondencia diplom&aacute;tica entre Espa&ntilde;a y la Santa Sede durante el pontificado de S. P&iacute;o V</i>, Madrid 1914 (not consulted).</li>
 </ul>
 
-<p class="muted">Decoder, notes and decoded pages: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/alessandrino1568"><code>targets/alessandrino1568/</code></a>. Page images are not reproduced.</p>
+<p class="muted">Decoder, notes and decoded pages: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/alessandrino1568"><code translate="no">targets/alessandrino1568/</code></a>. Page images are not reproduced.</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Archivio Apostolico Vaticano, via DECODE R93&ndash;R102, R115</span>

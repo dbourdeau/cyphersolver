@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">&hellip; e porque agora me puede mandar lo que acerca su servicio tengo de fazer &hellip;<br>acorde de lo certificar de la gente que comigo trayo</div>
+  <div class="cipherstrip" translate="no">&hellip; e porque agora me puede mandar lo que acerca su servicio tengo de fazer &hellip;<br>acorde de lo certificar de la gente que comigo trayo</div>
   <p class="kicker">Hostalric and Zaragoza &rarr; John II of Aragon &middot; two homophonic letter substitutions set inside clear Spanish and Catalan &middot; 1473 and 1474 &middot; key recovered from adjacent plaintext</p>
   <h1>Ferdinand to John II, 1473 and 1474</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_ferdinand-the-catholic.jpg" alt="Ferdinand the Catholic" title="Ferdinand the Catholic: Portrait by Michel Sittow, c. 1500. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Ferdinand the Catholic</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_john-ii-of-aragon.jpg" alt="John II of Aragon" title="John II of Aragon: John II of Aragon. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>John II of Aragon</figcaption></figure></div><!-- /parties -->
@@ -74,19 +74,19 @@
 
 <h2 id="cipher1473"><span class="num">02</span>The 1473 cipher</h2>
 <figure class="creveal" data-src="reveal/ferdinand1473.json"></figure>
-<p>A homophonic substitution of letters, 39 kinds of sign as transcribed and about 30 with a value, set inside the clear text. The vowels and <em>c</em> have several signs each; one place sign, a long s joined to an i with a cross-bar, stands for Barcelona; there is no other nomenclator sign. Signs that looked alike were separated at 12&times; magnification: <code>3</code> is <em>h</em> and <code>3-</code> is <em>y</em>, <code>T</code> is <em>r</em> in 8 of 8 places and <code>TT</code> is <em>s</em> in 13 of 13.</p>
+<p>A homophonic substitution of letters, 39 kinds of sign as transcribed and about 30 with a value, set inside the clear text. The vowels and <em>c</em> have several signs each; one place sign, a long s joined to an i with a cross-bar, stands for Barcelona; there is no other nomenclator sign. Signs that looked alike were separated at 12&times; magnification: <code translate="no">3</code> is <em>h</em> and <code translate="no">3-</code> is <em>y</em>, <code translate="no">T</code> is <em>r</em> in 8 of 8 places and <code translate="no">TT</code> is <em>s</em> in 13 of 13.</p>
 <p>The key was rebuilt from the second hand&rsquo;s interlinear notes (<em>certificar dela gente</em>, <em>trayo</em>, <em>continos</em>, <em>de castilla</em>, <em>de aragon</em>, <em>mas de quinientos</em>, <em>de cavallo</em>, <em>comigo</em> and others, with single letters on ruled guidelines over the signs) and extended by sense. The decoder prints both values where a sign has two, and the raw decode is in the repository untouched; the reading below normalises it.</p>
 <blockquote class="reading"><p>&hellip; e porque agora me puede mandar lo que acerca su servicio tengo de fazer, acorde de lo certificar de la gente que comigo trayo, que ahora entre los [?mios] continuos e los que de Castilla c[&hellip;]o viene, e los de Arag&oacute;n, m&aacute;s de quinientos de cavallo. E los valencianos son ya; algunos dellos llegados en Barcelona, e todos los otros hi ser&aacute;n por toda esta semana que viene; en manera que todos [?juntos], estimo, fan los que comigo ir&aacute;n ochocientos de cavallo, en que havr&aacute; ciento hombres de armas. Vea V. S. la forma que devo tener &hellip;</p></blockquote>
 
 <h2 id="cipher1474"><span class="num">03</span>The 1474 cipher</h2>
-<p>A homophonic substitution of its own, not the 1473 alphabet: bar signs, dotted signs, a null (an undotted <code>A</code>) and a sign for <em>qu</em>. The sign <code>4</code> gives <em>a</em>, <em>r</em> and <em>c</em>, probably three look-alike signs. The 1473 key does not read /73 or /56.</p>
-<p>The key was recovered in two steps. A key of 19 signs read from the interlinear letters alone decoded <em>no res menos se</em>, <em>matrimoni&hellip; infanta mi hermana no se</em>, <em>mossen s&hellip;</em>, and the same words begin the clear paragraph at the foot of the recto. <code>align1474.py</code> then aligned the 310 signs with the paragraph&rsquo;s 325 letters and re-estimated the key. Because the paragraph is the plaintext, this is a key recovered from adjacent plaintext, not an independent break, and polyphony of 20% of read tokens means the validation test does not apply.</p>
+<p>A homophonic substitution of its own, not the 1473 alphabet: bar signs, dotted signs, a null (an undotted <code translate="no">A</code>) and a sign for <em>qu</em>. The sign <code translate="no">4</code> gives <em>a</em>, <em>r</em> and <em>c</em>, probably three look-alike signs. The 1473 key does not read /73 or /56.</p>
+<p>The key was recovered in two steps. A key of 19 signs read from the interlinear letters alone decoded <em>no res menos se</em>, <em>matrimoni&hellip; infanta mi hermana no se</em>, <em>mossen s&hellip;</em>, and the same words begin the clear paragraph at the foot of the recto. <code translate="no">align1474.py</code> then aligned the 310 signs with the paragraph&rsquo;s 325 letters and re-estimated the key. Because the paragraph is the plaintext, this is a key recovered from adjacent plaintext, not an independent break, and polyphony of 20% of read tokens means the validation test does not apply.</p>
 <blockquote class="reading"><p>No res menos, senyor, yo he sabido como el matrimonio de la infanta mi hermana no se es [?rompido], segunt stava praticado e concertado, de que me so admirado. Y pues assi es, supplico humilmente a vuestra alteza le remede de lo que me [?promendo], que si aya hombre alguno a Napols por estos fechos, que vaya mossen Santcliment, porque yendo ell, mis fechos se facan a bueltas de los otros, e assi se seguira grant benefficio.</p></blockquote>
 
 <h2 id="uncertain"><span class="num">04</span>What remains uncertain</h2>
 <ul>
-<li><strong>1473, line 5.</strong> Two signs (<code>H C</code>) after <em>de Castilla</em>: <code>C</code> occurs only here and the sense wants <em>con migo</em> or similar. Open.</li>
-<li><strong>1473, two look-alike signs.</strong> The sigma-like <code>6</code> is <em>a</em> in four words but <em>i/j</em> in <em>mios</em> and <em>juntos</em>, and the plain <code>p</code> stands for <em>c</em>, <em>o</em> and once <em>a</em>. Thirteen values were chosen by sense. The 1085-pixel scan does not separate the forms; a better image would.</li>
+<li><strong>1473, line 5.</strong> Two signs (<code translate="no">H C</code>) after <em>de Castilla</em>: <code translate="no">C</code> occurs only here and the sense wants <em>con migo</em> or similar. Open.</li>
+<li><strong>1473, two look-alike signs.</strong> The sigma-like <code translate="no">6</code> is <em>a</em> in four words but <em>i/j</em> in <em>mios</em> and <em>juntos</em>, and the plain <code translate="no">p</code> stands for <em>c</em>, <em>o</em> and once <em>a</em>. Thirteen values were chosen by sense. The 1085-pixel scan does not separate the forms; a better image would.</li>
 <li><strong>1474, <em>rompido</em> and <em>promendo</em>.</strong> The first cipher sign of <em>rompido</em> is <em>c</em> elsewhere, while the clear text and the interlinear letter both give <em>r</em>; <em>promendo</em> is so written in both texts and its sense is not settled. The place sign near <em>a Napols</em> and the signs met once or twice are too few to fix.</li>
 <li><strong>Reading status.</strong> The reading checker finds half the sentences of the 1473 passage and 43% of the 1474 passage clean; the 1474 shortfall is probably the Catalan-Aragonese spellings (<em>senyor</em>, <em>fechos</em>, <em>facan</em>) against a Spanish model. A reader has gone through both readings as sentences, but neither has been checked against the image by a person.</li>
 <li><strong>Other letters.</strong> Ferdinand&rsquo;s other letters to John II in the same BNE series (/57, /80, /82, /99, /105, /120, /123) have not been checked for cipher in either alphabet.</li>
@@ -98,7 +98,7 @@
 <h3>Hostalric, 5 June 1473 (MSS/20211/64) <span class="st partial">read in part</span></h3>
 <p>Ferdinand reports the troops he brings for the relief of Perpignan: his continos and the men from Castile, more than 500 horse from Aragon, the Valencians (some already at Barcelona), 800 horse in all with 100 men-at-arms.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (97% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1473/transcription/d64_transcription.md">d64_transcription.md</a></p><pre># BNE MSS/20211/64, Ferdinand to John II, Hostalric 5 June 1473: transcription of the cipher lines (pass 3: L03-L11 re-read at 8x, L07-L10 details at 12x)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1473/transcription/d64_transcription.md">d64_transcription.md</a></p><pre translate="no"># BNE MSS/20211/64, Ferdinand to John II, Hostalric 5 June 1473: transcription of the cipher lines (pass 3: L03-L11 re-read at 8x, L07-L10 details at 12x)
 
 Source: BNE Digital, bdh0000186643, image 1 (the &quot;high&quot; PDF, 1085 x 1187 px), read in the pdf.js viewer at 4x and 6x.
 Lines are numbered as on the page (L01 = &quot;Esta noche de pascua cinquagesma ...&quot;). Clear words are in quotes;
@@ -182,7 +182,7 @@ the limit of the image.
 
 Uncertain: whether `1`/`i`, `q`/`9`, `T`/`TT` and `o`/`0` are each one sign or two; the gloss placement
 over L04 right and L06 right.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1473/decryption/d64_decode.txt">d64_decode.txt</a></p><pre>L02 P A V.S. E PORQUE AGORA ME PUEDE MANDAR LO QUE ACERCA SU SERVICIO TENGO
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1473/decryption/d64_decode.txt">d64_decode.txt</a></p><pre translate="no">L02 P A V.S. E PORQUE AGORA ME PUEDE MANDAR LO QUE ACERCA SU SERVICIO TENGO
 L03 DE FAZER ACORDE DELO{c|o|a}ertifi{c|o|a}ardelagente QUE
 L04 COMIGOtrayo que horaENTRE LOSma{c|o|a}s {c|o|a}on
 L05 tinvos E LOS QUEde castill{c|o|a} cm[C]oVIENE
@@ -192,12 +192,12 @@ L08 vnos[.]DELLOS LLEGADOSen[Barcelona] E TODOS LOS OTROShiseran POR TODAesta
 L09 semana que viene EN MANERA QUEtodosauntosESTI...
 L10 MO FAN LOS QUEcomigo iran {c|o|a}chocientosdecavallo
 L11 enque havra cient{c|o|a} hombresdearmas VEA V.S. LA FOR...</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1473/decryption/d64_reading.md">d64_reading.md</a></p><pre>… e porque agora me puede mandar lo que acerca su servicio tengo de fazer, acorde de lo certificar de la gente
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1473/decryption/d64_reading.md">d64_reading.md</a></p><pre translate="no">… e porque agora me puede mandar lo que acerca su servicio tengo de fazer, acorde de lo certificar de la gente
 que comigo trayo, que ahora entre los [?mios] continuos e los que de Castilla c[...]o viene, e los de Aragón, más
 de quinientos de cavallo. E los valencianos son ya; algunos dellos llegados en Barcelona, e todos los otros hi
 serán por toda esta semana que viene; en manera que todos [?juntos], estimo, fan los que comigo irán ochocientos
 de cavallo, en que havrá ciento hombres de armas. Vea V. S. la forma que devo tener …</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1473/decryption/d64_en.md">d64_en.md</a></p><pre># BNE MSS/20211/64: English translation of the cipher passage
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1473/decryption/d64_en.md">d64_en.md</a></p><pre translate="no"># BNE MSS/20211/64: English translation of the cipher passage
 
 &gt; … and so that Your Lordship may now tell me what I am to do for your service, I resolved to inform you of the
 &gt; men I bring with me: at present, among my *continos* and those who come from Castile [...], and those of
@@ -210,7 +210,7 @@ de cavallo, en que havrá ciento hombres de armas. Vea V. S. la forma que devo t
 troops for the relief of Perpignan, where John II was besieged by the French.</pre></details>
 <h3>Zaragoza, 3 Nov 1474 (MSS/20211/73)</h3>
 <p>Ferdinand is astonished that the infanta Juana&#x27;s marriage has not been broken off as negotiated, and asks that Mossèn Santcliment be the one sent to Naples, so that his own affairs are handled with the others.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1473/transcription/d73_transcription.md">d73_transcription.md</a></p><pre># BNE MSS/20211/73, Ferdinand to John II, Zaragoza 3 Nov 1474: transcription of the cipher
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1473/transcription/d73_transcription.md">d73_transcription.md</a></p><pre translate="no"># BNE MSS/20211/73, Ferdinand to John II, Zaragoza 3 Nov 1474: transcription of the cipher
 
 Source: BNE Digital bdh0000186628 (viewer id 647a859a-254f-4fb8-b7f9-b42629fa962b), image 1 of 3, the &quot;high&quot; PDF
 (1114 x 1510 px), read in the pdf.js viewer at 4x and 5x (29 Oct 2026). The cipher runs from the end of the
@@ -326,7 +326,7 @@ ermana*).
 
 About half of the letters are not legible at 1114 px. They were used only for the seed key; the key itself comes
 from the alignment with the clear paragraph (`../key_1474.md`).</pre></details>
-<details class="ftext"><summary>Decipherment of the time</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1473/decryption/d73_clear.md">d73_clear.md</a></p><pre># BNE MSS/20211/73 (Ferdinand to John II, Zaragoza, 3 Nov 1474): the clear paragraph at the foot of the recto
+<details class="ftext"><summary>Decipherment of the time</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1473/decryption/d73_clear.md">d73_clear.md</a></p><pre translate="no"># BNE MSS/20211/73 (Ferdinand to John II, Zaragoza, 3 Nov 1474): the clear paragraph at the foot of the recto
 
 Diplomatic transcription of the paragraph after the date line, read on BNE Digital image 1 at about 7x of the
 1114-px scan. It is the plaintext of the cipher passage K00-K10 (see `d73_reading.md`). Line breaks as on the
@@ -342,7 +342,7 @@ delos otros e assi se seguira grant benefficio
 
 Doubtful: *rompido* (the cipher sign for the first letter is *c* elsewhere), *ꝓmendo* (also so in the cipher),
 *si a ye* (the cipher has *si aya*), the repeated *mis fechos* at the line break.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1473/decryption/d73_decode.txt">d73_decode.txt</a></p><pre>K00  ... YDA EN CASTILLA SEA NECESSARIA no{a|r}esmen sse
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1473/decryption/d73_decode.txt">d73_decode.txt</a></p><pre translate="no">K00  ... YDA EN CASTILLA SEA NECESSARIA no{a|r}esmen sse
 K01 [8]y[11]rmohesabidoc moem{a|r}tr{i|t}moni oeain
 K02 fant{a|r} mihe{a|r}ma[3-]a nose esc nc{u|v}yd sea[T:]s
 K03 st{a|r}{u|v}ap{a|r}a{i|t}icaoo c ncers{a|r}d oequmeso
@@ -353,11 +353,11 @@ K07 nap lsfboree{i|t} sfec{u|v} squ{u|v}ay{a|r}mossens
 K08 anctclime[L-]tep rqumenooelmisfech s
 K09 sefa{a|r}{a|r}nab{u|v}el{i|t}a[L-]de so[T]{a|r} s eamisese
 K10 [+:]{i|t}{i|t}rae[y]antbene[X]fic{i|t}o E AQUESTO SENYOR SUPPLICO POR MERCED ...</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1473/decryption/d73_reading.md">d73_reading.md</a></p><pre>No res menos, senyor, yo he sabido como el matrimonio de la infanta mi hermana no se es [?rompido], segunt stava
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1473/decryption/d73_reading.md">d73_reading.md</a></p><pre translate="no">No res menos, senyor, yo he sabido como el matrimonio de la infanta mi hermana no se es [?rompido], segunt stava
 praticado e concertado, de que me so admirado. Y pues assi es, supplico humilmente a vuestra alteza le remede de
 lo que me [?promendo], que si aya hombre alguno a Napols por estos fechos, que vaya mossen Santcliment, porque
 yendo ell, mis fechos se facan a bueltas de los otros, e assi se seguira grant benefficio.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1473/decryption/d73_en.md">d73_en.md</a></p><pre># BNE MSS/20211/73: English translation of the cipher passage
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1473/decryption/d73_en.md">d73_en.md</a></p><pre translate="no"># BNE MSS/20211/73: English translation of the cipher passage
 
 &gt; Nevertheless, my lord, I have learned that the marriage of the infanta my sister has not been [?broken off],
 &gt; as had been negotiated and agreed, at which I am astonished. And since this is so, I humbly beg Your Highness
@@ -385,7 +385,7 @@ The infanta is Juana of Aragon (1454-1517), Ferdinand&#x27;s half-sister, who ma
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Biblioteca Nacional de Espa&ntilde;a, BNE Digital (CC BY 4.0).</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="borghesi1456.html" rel="prev">&larr; Borghesi to Benvoglienti 1456 1456</a><a href="fr14765p351.html" rel="next">Not established to Not established,&hellip; 1476 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-  <div class="cipherstrip">WURVFXGJYTHEIZXSQXOBGSVRUDOOJXATBKTARVIXPYTMYABMVUFXP&hellip;<br>The behavior of liquid helium, especially below the lambda transition, is very curious.</div>
+  <div class="cipherstrip" translate="no">WURVFXGJYTHEIZXSQXOBGSVRUDOOJXATBKTARVIXPYTMYABMVUFXP&hellip;<br>The behavior of liquid helium, especially below the lambda transition, is very curious.</div>
   <p class="kicker">Feynman ciphers nos. 2 and 3 &middot; two alternating substitution alphabets &middot; 1953 &middot; known key applied</p>
   <h1>Feynman ciphers 2 and 3, 1953</h1>
   <p class="sub">Two English ciphers attributed to Feynman, one a stanza of Housman and one the opening of his helium paper, solved by David Vierra in 2023; we re-enciphered both readings and they match.</p>
@@ -57,7 +57,7 @@
 <p class="gl-top"><strong>At a glance</strong><span class="gl-res">Known key applied &middot; complete</span></p>
 <dl>
   <dt>The ciphers</dt><dd>Two short English ciphertexts from 1953, 261 letters (no. 2) and 231 letters (no. 3), with no word boundaries.</dd>
-  <dt>Where</dt><dd>The ciphertexts are the strings copied into <code>verify.py</code> in the repository folder; no image of the originals was used and their source is not recorded there.</dd>
+  <dt>Where</dt><dd>The ciphertexts are the strings copied into <code translate="no">verify.py</code> in the repository folder; no image of the originals was used and their source is not recorded there.</dd>
   <dt>The cipher</dt><dd>Two monoalphabetic substitution alphabets, used alternately word by word. Words of even length are written backwards after substitution, and the word boundaries are dropped.</dd>
   <dt>How it was read</dt><dd>David Vierra published the solution in May 2023. Here the two alphabets were applied to re-encipher his plaintexts and compared with the ciphertexts, and a word-segmenting search over the same rules recovered both texts from the ciphertexts alone.</dd>
   <dt>What it says</dt><dd>No. 2 is lines 19&ndash;32 of Housman&rsquo;s &ldquo;Terence, this is stupid stuff&rdquo;; no. 3 is the opening of Feynman&rsquo;s 1953 paper on the lambda transition in helium.</dd>
@@ -68,11 +68,11 @@
 
 <h2 id="the-ciphers"><span class="num">01</span> The two ciphers</h2>
 <p>Both ciphertexts are runs of capital letters with no spaces. Each uses only 26 distinct letters, as a substitution cipher does, and each plaintext is plain English of the period.</p>
-<p>No. 2 begins <code>XUKEXWSLZJUAXUNKIGWFSOZRAWURORKXAOSL&hellip;</code> and no. 3 begins <code>WURVFXGJYTHEIZXSQXOBGSVRUDOOJXAT&hellip;</code>. The full transcriptions are in the Full texts section below.</p>
+<p>No. 2 begins <code translate="no">XUKEXWSLZJUAXUNKIGWFSOZRAWURORKXAOSL&hellip;</code> and no. 3 begins <code translate="no">WURVFXGJYTHEIZXSQXOBGSVRUDOOJXAT&hellip;</code>. The full transcriptions are in the Full texts section below.</p>
 
 <h2 id="the-key"><span class="num">02</span> The system and its key</h2>
 <p>Vierra&rsquo;s two alphabets, written as the cipher letter for plaintext A, B, C&hellip; in order (a full stop stands for a letter not fixed by the published solution):</p>
-<pre>A1 = MANYREQUS.HVBCID.OLWGZX.K.
+<pre translate="no">A1 = MANYREQUS.HVBCID.OLWGZX.K.
 A2 = JHAZTENYXMLOCUFBQVKPSGW.D.</pre>
 <p>The first word of each line or sentence uses A1, the next A2, and so on. A word of even length is reversed after substitution. Word boundaries are then removed. A search that segments the ciphertext into words under those rules recovers both texts without the plaintext supplied.</p>
 
@@ -95,9 +95,9 @@ A2 = JHAZTENYXMLOCUFBQVKPSGW.D.</pre>
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>Feynman cipher no. 2</h3>
 <p>Feynman cipher no. 2 is lines 19-32 of A. E. Housman&#x27;s &#x27;Terence, this is stupid stuff&#x27; (A Shropshire Lad LXII), enciphered with two monoalphabetic alphabets alternating word by word, even-length words written backwards and word boundaries dropped; solved by David Vierra in May 2023 and verified here.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feynman/texts/no2_transcription.txt">no2_transcription.txt</a></p><pre># Feynman cipher 2: ciphertext copied from the string C2 in verify.py (261 letters; its source is not recorded there)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feynman/texts/no2_transcription.txt">no2_transcription.txt</a></p><pre translate="no"># Feynman cipher 2: ciphertext copied from the string C2 in verify.py (261 letters; its source is not recorded there)
 XUKEXWSLZJUAXUNKIGWFSOZRAWURORKXAOSLHROBXBTKCMUWDVPTFBLMKEFVWMUXTVTWUIDDJVZKBRMCWOIWYDXMLUFPVSHAGSVWUFWORCWUIDUJCNVTTBERTUNOJUZHVTWKORSVRZSVVFSQXOCMUWPYTRLGBMCYPOJCLRIYTVFCCMUWUFPOXCNMCIWMSKPXEDLYIQKDJWIWCJUMVRCJUMVRKXWURKPSEEIWZVXULEIOETOOFWKBIUXPXUGOWLFPWUSCH</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feynman/texts/no2_decryption.md">no2_decryption.md</a></p><pre># Feynman cipher no. 2: decryption (copied from NOTES.md, &quot;Independent decryption&quot;)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feynman/texts/no2_decryption.md">no2_decryption.md</a></p><pre translate="no"># Feynman cipher no. 2: decryption (copied from NOTES.md, &quot;Independent decryption&quot;)
 
 Copied verbatim from NOTES.md: the output of `decrypt.py` (two alternating alphabets, even-length words reversed,
 Viterbi word segmentation). Solution first published by David Vierra, May 2023. Bracketed words garble where the
@@ -110,7 +110,7 @@ THAN MILTON CAN TO JUSTIFY GODS WAYS TO MAN ALE MAN ALE IS THE STUFF TO DRINK FO
 Check (`verify.py`, re-encryption of the plaintext): first 118 characters exact; 208/261 overall. The mismatch
 regions decode directly to ENGLAND BREWS (both words under A2) and to &quot;…MAN ALE MAN ALE… THE STUFF … DRINK FOR
 FELLOWS WHOM IT HURTS TO THINK&quot; (the encoder&#x27;s wording of line 27 differs slightly from Housman&#x27;s printed text).</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feynman/texts/no2_reading.md">no2_reading.md</a></p><pre>&lt;!-- Reading of Feynman cipher no. 2 written 23 Oct 2026 (Claude Opus 5.5, verification 5) from texts/no2_decryption.md (decrypt.py output, upper case, no punctuation): lower case, line breaks and punctuation as in Housman&#x27;s poem (A Shropshire Lad LXII), which the plaintext is; the encoder&#x27;s wording kept where it differs (&quot;ale is&quot;, &quot;Man ale, man ale&quot;). [?on] [?Trent]: the decode garbles there (the encoder broke his alternation rule); &quot;brews&quot; decodes directly in the mismatch region (NOTES.md). --&gt;
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feynman/texts/no2_reading.md">no2_reading.md</a></p><pre translate="no">&lt;!-- Reading of Feynman cipher no. 2 written 23 Oct 2026 (Claude Opus 5.5, verification 5) from texts/no2_decryption.md (decrypt.py output, upper case, no punctuation): lower case, line breaks and punctuation as in Housman&#x27;s poem (A Shropshire Lad LXII), which the plaintext is; the encoder&#x27;s wording kept where it differs (&quot;ale is&quot;, &quot;Man ale, man ale&quot;). [?on] [?Trent]: the decode garbles there (the encoder broke his alternation rule); &quot;brews&quot; decodes directly in the mismatch region (NOTES.md). --&gt;
 
 # Feynman cipher no. 2
 
@@ -121,9 +121,9 @@ Burton built [?on] [?Trent]? Oh many a peer of England brews livelier liquor tha
 Milton can to justify God&#x27;s ways to man. Ale, man, ale is the stuff to drink for fellows whom it hurts to think.</pre></details>
 <h3>Feynman cipher no. 3</h3>
 <p>Feynman cipher no. 3 is the opening of Feynman&#x27;s paper &#x27;Atomic Theory of the lambda Transition in Helium&#x27; (Phys. Rev. 91, 1291, 1953), in the same two-alphabet system; solved by David Vierra in May 2023 and verified here.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feynman/texts/no3_transcription.txt">no3_transcription.txt</a></p><pre># Feynman cipher 3: ciphertext copied from the string C3 in verify.py (231 letters; its source is not recorded there)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feynman/texts/no3_transcription.txt">no3_transcription.txt</a></p><pre translate="no"># Feynman cipher 3: ciphertext copied from the string C3 in verify.py (231 letters; its source is not recorded there)
 WURVFXGJYTHEIZXSQXOBGSVRUDOOJXATBKTARVIXPYTMYABMVUFXPXKUJVPLSDVTGNGOSIGLWURPKFCVGELLRNNGLPYTFVTPXAJOSCWRODORWNWSICLFKEMOTGJYCRRAOJVNTODVMNSQIVICRBICRUDCSKXYPDMDROJUZICRVFWXIFPXIVVIEPYTDOIAVRBOOXWRAKPSSZTZKVROSWCRCFVEESOLWKTOBXAUXVB</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feynman/texts/no3_decryption.md">no3_decryption.md</a></p><pre># Feynman cipher no. 3: decryption (copied from NOTES.md, &quot;Independent decryption&quot;)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feynman/texts/no3_decryption.md">no3_decryption.md</a></p><pre translate="no"># Feynman cipher no. 3: decryption (copied from NOTES.md, &quot;Independent decryption&quot;)
 
 Copied verbatim from NOTES.md: the output of `decrypt.py` (two alternating alphabets, even-length words reversed,
 Viterbi word segmentation). Solution first published by David Vierra, May 2023. Bracketed letters garble at the two
@@ -135,7 +135,7 @@ PROBLEM WILL BE STU[DIED] ENTIRELY FROM FIRST PRINCIPLES
 
 Check (`verify.py`): 228/231 positions match; the 3 mismatches are one letter in &quot;phenomenological&quot; and a transposed
 pair in &quot;principles&quot; (encoder or transcription slips).</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feynman/texts/no3_reading.md">no3_reading.md</a></p><pre>&lt;!-- Reading of Feynman cipher no. 3 written 23 Oct 2026 (Claude Opus 5.5, verification 5) from texts/no3_decryption.md (decrypt.py output, upper case, no punctuation): lower case and punctuation added. interpret[?ation]s and stu[?died]: the letters the decode marks as garbled at the ciphertext slips. --&gt;
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feynman/texts/no3_reading.md">no3_reading.md</a></p><pre translate="no">&lt;!-- Reading of Feynman cipher no. 3 written 23 Oct 2026 (Claude Opus 5.5, verification 5) from texts/no3_decryption.md (decrypt.py output, upper case, no punctuation): lower case and punctuation added. interpret[?ation]s and stu[?died]: the letters the decode marks as garbled at the ciphertext slips. --&gt;
 
 # Feynman cipher no. 3
 
@@ -154,13 +154,13 @@ problem will be stu[?died] entirely from first principles.</pre></details>
   <li>A. E. Housman, <i>A Shropshire Lad</i>, LXII, ll. 19&ndash;32 (the plaintext of no. 2).</li>
   <li>R. P. Feynman, &ldquo;Atomic Theory of the &lambda; Transition in Helium&rdquo;, <i>Physical Review</i> 91, 1291 (1953) (the plaintext of no. 3).</li>
 </ul>
-<p class="muted">Notes, scripts and profile: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/feynman"><code>targets/feynman/</code></a>.</p>
+<p class="muted">Notes, scripts and profile: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/feynman"><code translate="no">targets/feynman/</code></a>.</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Solution: David Vierra, 2023; plaintexts: A. E. Housman and R. P. Feynman (Phys. Rev. 91, 1291)</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="orpo1942jun.html" rel="prev">&larr; Police radiogram, June 1942 1942</a><a href="copenhagen.html" rel="next">Copenhagen c.1950s &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>
 </body>

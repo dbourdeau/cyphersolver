@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">72 · 22 · 57 · 280 · 355 · 296 · 32 · 217 · 181 · 229 · 78 · 44<br>200 · 300 · 106 · 175 · 51 · 151 · 15 · 99 · 84 · 316 · 129 · 205<br>21 · 68 · 31 · 71 · 317 · 101 · 188 · 44 · 347 · 210 · 51 · 81 · 91 · 157 · 91 · 22</div>
+  <div class="cipherstrip" translate="no">72 · 22 · 57 · 280 · 355 · 296 · 32 · 217 · 181 · 229 · 78 · 44<br>200 · 300 · 106 · 175 · 51 · 151 · 15 · 99 · 84 · 316 · 129 · 205<br>21 · 68 · 31 · 71 · 317 · 101 · 188 · 44 · 347 · 210 · 51 · 81 · 91 · 157 · 91 · 22</div>
   <p class="kicker">Piedmont · two-part code (petit chiffre) · 1691</p>
   <h1>Feuquières to Catinat, Pignerol, 25 January 1691</h1>
 <div class="parties"><figure class="party recipient"><img src="portrait_catinat.jpg" alt="Catinat" title="Catinat: Portrait, early 18th century. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Catinat</figcaption></figure></div><!-- /parties -->
@@ -88,7 +88,7 @@ renderings, not word-for-word decipherments.</p>
 <h2 id="structure"><span class="num">02</span> Structure</h2>
 <ul>
 <li><strong>One code, two letters.</strong> 72 of the d&rsquo;Herleville letter&rsquo;s 91 groups occur in the Feuquières letter; both have 46&nbsp;% of their tokens on groups below
-100; twenty bigrams and the trigram <code>25 355 42</code> (<em>de Mon-de</em>[vis]) are common to both. The union is 179 groups over 601 tokens, within Bazeries&rsquo; figure of 367
+100; twenty bigrams and the trigram <code translate="no">25 355 42</code> (<em>de Mon-de</em>[vis]) are common to both. The union is 179 groups over 601 tokens, within Bazeries&rsquo; figure of 367
 for the petit chiffre of 1691.</li>
 <li><strong>Design, from the Grand Chiffre.</strong> Bazeries says the small cipher &ldquo;ne différait du grand que par son nombre de groupes&rdquo;, and so it proves: letters with two to four
 homophones each (i/j and u/v counted as one letter), consonant-vowel syllables, a stock of word stems (<em>de</em>, <em>que</em>, <em>les</em>, <em>pour</em>, <em>tout</em>,
@@ -104,7 +104,7 @@ a French 7-gram model with the Grand Chiffre inventory, on the translation&rsquo
 <p>The key was then built by hand. The last 31 groups of the d&rsquo;Herleville letter can be divided in only one way into Grand-Chiffre-style units for <em>comment aura réussi vostre entreprise sur le
 chasteau de Villefranche</em> in which every repeated group carries the same unit (91 = <em>t</em> twice, 184 = <em>au</em> twice, 135 = <em>ra</em> twice, 21 = <em>s</em> twice, 56 = <em>le</em>
 twice, 101 = <em>c</em> twice). Carried into the Feuquières letter those units gave <span class="c">heures du matin</span>, <span class="c">du vingt-quatre</span>, <span class="c">m&rsquo;escrire</span>,
-<span class="c">duplicata</span>; each word fixed further groups; the thrice-repeated <code>301 151 310</code> became <span class="c">Veillane</span>; 150 = <em>ve</em> gave
+<span class="c">duplicata</span>; each word fixed further groups; the thrice-repeated <code translate="no">301 151 310</code> became <span class="c">Veillane</span>; 150 = <em>ve</em> gave
 <span class="c">enleveront</span>, <span class="c">trouve</span>, <span class="c">doivent</span>; 243 = <em>ns</em> gave <span class="c">dragons</span>, <span class="c">chemins</span>,
 <span class="c">maisons</span>; the clause <em>faire passer à &hellip;</em> gave <span class="c">Saint-Ambroise</span>, the village between Avigliana and Rivoli. Each new value was checked in
 both letters before it was kept.</p>
@@ -115,7 +115,7 @@ both letters before it was kept.</p>
 <tr><td>words</td><td class="n">de 25 42 71 · que 99 147 · le 56 177 · la 114 151 · les 47 · des 237 · du 300 347 · au 184 · et 258 341 · si 196 · y 24 · on 100 · ou 197 · par 216 · pas 195 · pour 350 · sur 88 · tout 266 · vous 84 241 · mesme 2 · comme 80 · peu 278 · lettre 15 · honneur 31 · le roy 102 · M. de Catinat 218 · Monsieur 296 (mon 355) · vostre 149 · qu&rsquo;il 164</td></tr>
 <tr><td>nulls / points</td><td class="n">52 194, and the opening groups of the d&rsquo;Herleville letter (39 249 190 86 103 11) and the closing groups of Feuquières&rsquo; (342 103 190)</td></tr>
 </table>
-<p class="muted">Full key with occurrence counts and confidence marks: <code>targets/feuquieres/key_petit_chiffre_1690.tsv</code>; group-by-group alignment of both letters: <code>targets/feuquieres/reading.txt</code>.</p>
+<p class="muted">Full key with occurrence counts and confidence marks: <code translate="no">targets/feuquieres/key_petit_chiffre_1690.tsv</code>; group-by-group alignment of both letters: <code translate="no">targets/feuquieres/reading.txt</code>.</p>
 
 <h2 id="reading"><span class="num">04</span> The text</h2>
 <figure class="creveal" data-src="reveal/feuquieres.json"></figure>
@@ -161,7 +161,7 @@ arrive together.</p>
 <h2 id="residuals"><span class="num">05</span> What remains uncertain</h2>
 <ul>
 <li>Twelve groups have no value (9, 19, 54, 122, 132, 194, 257, 271, 292, 333, 353 and the opening and closing groups taken as nulls). All occur once or twice; nothing in either letter fixes them.</li>
-<li><em>Des Trois Couronnes</em> is the reading that fits <code>237 322 46 280 153 78 113 51 310 200</code> (des t-ro-is co-u-ro-n-ne-s) after <em>fauxbourg</em>; a faubourg or inn of that name at
+<li><em>Des Trois Couronnes</em> is the reading that fits <code translate="no">237 322 46 280 153 78 113 51 310 200</code> (des t-ro-is co-u-ro-n-ne-s) after <em>fauxbourg</em>; a faubourg or inn of that name at
 Avigliana has not been verified.</li>
 <li>241 reads <em>vous</em> in three places (<em>que je vous dis</em>, <em>l&rsquo;un vous conduit</em>) but gives <em>que vous vous demandez</em> in the fourth; <em>nous</em> is possible.</li>
 <li>Two clerk&rsquo;s slips are treated as such: <em>ordi-au-i-re</em> for <em>ordinaire</em> and <em>du-i-t</em> for <em>dudit</em> in the d&rsquo;Herleville letter.</li>
@@ -183,7 +183,7 @@ Avigliana has not been verified.</li>
 <h3>Feuquières to Catinat, Pignerol, 25 Jan 1691 <span class="st stuck">decoded, not read</span></h3>
 <p>Feuquières acknowledges Catinat&#x27;s letter of the 24th and sets out the plan for the surprise of Veillane (Avigliana): the enemy will not defend it seriously, he cannot see how to get the eighty horse to Sant&#x27;Ambrogio, and he will attack at two points and keep the dragoons from escaping. It matches Catinat&#x27;s &#x27;Mémoire pour l&#x27;entreprise de Veillane&#x27; of 19 Jan; printed in cipher in the 1819 Mémoires de Catinat, t. II pp. 283-284.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feuquieres/ciphertext.txt">ciphertext.txt</a></p><pre># Feuquieres -&gt; Catinat, Pignerol, 25 Jan 1691. Memoires et correspondance du marechal de Catinat (1819) t.II, Pieces justificatives (1), pp.283-284
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feuquieres/ciphertext.txt">ciphertext.txt</a></p><pre translate="no"># Feuquieres -&gt; Catinat, Pignerol, 25 Jan 1691. Memoires et correspondance du marechal de Catinat (1819) t.II, Pieces justificatives (1), pp.283-284
 # (MDZ bsb10720287 scans 317-318). Transcription from Tomokiyo (louisxiv.htm SEC7), collated with the page images 2026-09-15:
 # three corrections on p.284: 114 285 362 (Tomokiyo 283), 154 259 143 (Tomokiyo 250), 156 99 135 59 (Tomokiyo 133). Blank line = new paragraph in the print.
 72 22 57 280 355 296 32 217 181 229 78 44
@@ -220,7 +220,7 @@ Avigliana has not been verified.</li>
 44 51 63 135 24 279 178 60 25 99 47 63 135 145
 243 310 136 304 65 91 317 101 193 235 60 342
 103 190</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feuquieres/texts/feuquieres1691_decryption.md">feuquieres1691_decryption.md</a></p><pre># Feuquières to Catinat, Pignerol, 25 Jan 1691: decryption, copied verbatim from NOTES.md (section &#x27;The Feuquières letter, as read&#x27;). Group-by-group alignment: reading.txt.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feuquieres/texts/feuquieres1691_decryption.md">feuquieres1691_decryption.md</a></p><pre translate="no"># Feuquières to Catinat, Pignerol, 25 Jan 1691: decryption, copied verbatim from NOTES.md (section &#x27;The Feuquières letter, as read&#x27;). Group-by-group alignment: reading.txt.
 
 ## The Feuquières letter, as read (17th-century spelling kept; unread groups in brackets)
 
@@ -249,7 +249,7 @@ estangs, the Javan and Trane roads, the faubourg, the dragoons) and matches Feuq
 The last three groups (`342 103 190`) and the first eight of the d&#x27;Herleville letter (`39 249 190 86 40 103 190 11`,
 with `103 190` common to both) are almost certainly nulls or a stock closing/opening, as in the Grand Chiffre, where
 paragraphs begin and end with two to four &quot;point ou nulle&quot; groups.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feuquieres/reading.txt">reading.txt</a></p><pre>== Louvois -&gt; d&#x27;Herleville, Versailles, 6 Sept 1690 (Memoires de Catinat 1819, t. I pp. 140-141)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feuquieres/reading.txt">reading.txt</a></p><pre translate="no">== Louvois -&gt; d&#x27;Herleville, Versailles, 6 Sept 1690 (Memoires de Catinat 1819, t. I pp. 140-141)
    1      39    249    190     86     40    103    190     11     72    106     51     25
            _      _      _      _      b      _      _      _     je     ma      n     de
   13      32    218     99    102     84    235     60    316     91    126     42     71
@@ -358,7 +358,7 @@ running: _ _ _ _ b _ _ _ je ma n de a mdecatinat que leroy vous pe r me t oit de
           en      t    mes      c     ha     pe      r      _      _      _
 
 running: je re co is mon sieur a di x he u re s du ma ti n la lettre que vous me fai te s l honneur de mes c ri re du vi n g t qua t re avec le du p li ca ta vous au re z u e u . le re to u r du co u ri e r que je vous di s [54] [257] is go e xe cu te r vos o r d re s . ce [194] c y vous s ca u re s que je sui s tout p re st [333] que on ne pe ns e [9] go ri [122] les des que vous [122] u les comme n ce r . ve il la ne pe r su a de quil s en le ve ro nt le [19] au b ru i t de la t ta que de ve il la ne le peu de mon de quil y a et les moy en s d y en t re r . tout do i ve nt fai re c ro i re quil s ne vie n d ro nt pas a le de f e n d re se ri e u se ment je ne sca is du tout par ou fai re pa s se r a s i nt a m b ro i se les qua t re vi n g t s mais t re s que vous vous de ma n des les c he mi ns pour y a l le r du co st e de ia va n et t a [132] [257] l vous co u pe s _ _ en a p p ro c ha nt de ve il la ne on t ro u ve de u x c he mi ns do t l n vous co n du i t au fa u x bo u r g des t ro is co u ro n ne s [333] la u t re au x mais o ns [292] et t le lo n g de le ta n g ia t ta que ra y . [353] de u x en d ro is et sur tout mes se [271] se s p re n d ra y ga r r de que les d ra go ns ne puis s en t mes c ha pe r _ _ _</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feuquieres/texts/translation_en.md">translation_en.md</a></p><pre># English translation of both letters, copied verbatim from NOTES.md (section &#x27;English translation&#x27;).
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feuquieres/texts/translation_en.md">translation_en.md</a></p><pre translate="no"># English translation of both letters, copied verbatim from NOTES.md (section &#x27;English translation&#x27;).
 
 ## English translation
 
@@ -383,7 +383,7 @@ Piemonte, taken by d&#x27;Herleville from Pignerol on 2 September 1690.</pre></d
 <h3>Louvois to d&#x27;Herleville, Versailles, 6 Sept 1690 (control) <span class="st partial">read in part</span></h3>
 <p>Louvois tells d&#x27;Herleville, governor of Pignerol, that the King permits him to demand the contribution of the country of Mondovì and, if he sees fit, to exempt it and let the inhabitants raze the citadel, and awaits news of his enterprise on Villefranche. Printed in cipher with its contemporary &#x27;traduction&#x27; in the 1819 Mémoires de Catinat, t. I pp. 140-142; the alignment of the two gave the key.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (92% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feuquieres/herleville.txt">herleville.txt</a></p><pre># Louvois -&gt; d&#x27;Herleville, gouverneur de Pignerol, Versailles 6 Sept 1690, &quot;sur Mondovi&quot;.  Memoires et
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feuquieres/herleville.txt">herleville.txt</a></p><pre translate="no"># Louvois -&gt; d&#x27;Herleville, gouverneur de Pignerol, Versailles 6 Sept 1690, &quot;sur Mondovi&quot;.  Memoires et
 # correspondance du marechal de Catinat (1819) t. I pp. 140-141 (MDZ bsb10720286 scans 212-213, img1/).
 # Transcribed from the page images 2026-09-16.  The clear (&quot;TRADUCTION&quot;, p. 141-142) is given below.
 # In clear before the cipher: &quot;Monsieur, j&#x27;ai recu la lettre que vous avez pris la peine de m&#x27;ecrire le 20 du mois passe.&quot;
@@ -415,7 +415,7 @@ Piemonte, taken by d&#x27;Herleville from Pignerol on 2 September 1690.</pre></d
 #     la citadelle dudit Mondovi, de le faire.
 # P2: J&#x27;attendrai avec impatience l&#x27;arrivee du prochain ordinaire pour savoir comment aura reussi votre entreprise
 #     sur le chateau de Villefranche.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feuquieres/texts/herleville1690_decryption.md">herleville1690_decryption.md</a></p><pre># Louvois to d&#x27;Herleville, Versailles, 6 Sept 1690: decryption, copied verbatim from NOTES.md (section &#x27;The d&#x27;Herleville letter&#x27;). Group-by-group alignment: reading.txt.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feuquieres/texts/herleville1690_decryption.md">herleville1690_decryption.md</a></p><pre translate="no"># Louvois to d&#x27;Herleville, Versailles, 6 Sept 1690: decryption, copied verbatim from NOTES.md (section &#x27;The d&#x27;Herleville letter&#x27;). Group-by-group alignment: reading.txt.
 
 ## The d&#x27;Herleville letter (control: it matches its printed translation, with the clerk&#x27;s own wording)
 
@@ -429,7 +429,7 @@ croyez*, *Mondevis*, *razer*, *M. de Catinat* as one group (218), *le roy* as on
 were free renderings, not verbatim decipherments, is also visible on the Grand Chiffre letter of the same day to
 Catinat (t. I pp. 142-144), which decodes with Bazeries&#x27; table as *importantes nouvelles de la reussite* where the
 printed translation has *des nouvelles*. This is why every exact known-plaintext aligner failed (see Method).</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feuquieres/reading.txt">reading.txt</a></p><pre>== Louvois -&gt; d&#x27;Herleville, Versailles, 6 Sept 1690 (Memoires de Catinat 1819, t. I pp. 140-141)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feuquieres/reading.txt">reading.txt</a></p><pre translate="no">== Louvois -&gt; d&#x27;Herleville, Versailles, 6 Sept 1690 (Memoires de Catinat 1819, t. I pp. 140-141)
    1      39    249    190     86     40    103    190     11     72    106     51     25
            _      _      _      _      b      _      _      _     je     ma      n     de
   13      32    218     99    102     84    235     60    316     91    126     42     71
@@ -538,7 +538,7 @@ running: _ _ _ _ b _ _ _ je ma n de a mdecatinat que leroy vous pe r me t oit de
           en      t    mes      c     ha     pe      r      _      _      _
 
 running: je re co is mon sieur a di x he u re s du ma ti n la lettre que vous me fai te s l honneur de mes c ri re du vi n g t qua t re avec le du p li ca ta vous au re z u e u . le re to u r du co u ri e r que je vous di s [54] [257] is go e xe cu te r vos o r d re s . ce [194] c y vous s ca u re s que je sui s tout p re st [333] que on ne pe ns e [9] go ri [122] les des que vous [122] u les comme n ce r . ve il la ne pe r su a de quil s en le ve ro nt le [19] au b ru i t de la t ta que de ve il la ne le peu de mon de quil y a et les moy en s d y en t re r . tout do i ve nt fai re c ro i re quil s ne vie n d ro nt pas a le de f e n d re se ri e u se ment je ne sca is du tout par ou fai re pa s se r a s i nt a m b ro i se les qua t re vi n g t s mais t re s que vous vous de ma n des les c he mi ns pour y a l le r du co st e de ia va n et t a [132] [257] l vous co u pe s _ _ en a p p ro c ha nt de ve il la ne on t ro u ve de u x c he mi ns do t l n vous co n du i t au fa u x bo u r g des t ro is co u ro n ne s [333] la u t re au x mais o ns [292] et t le lo n g de le ta n g ia t ta que ra y . [353] de u x en d ro is et sur tout mes se [271] se s p re n d ra y ga r r de que les d ra go ns ne puis s en t mes c ha pe r _ _ _</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feuquieres/texts/herleville1690_reading.md">herleville1690_reading.md</a></p><pre>&lt;!-- Reading of the Louvois to d&#x27;Herleville, Versailles, 6 Sept 1690 letter, the body of texts/herleville1690_decryption.md (copied from NOTES.md) without its quote marks, header and commentary, so that it is scored alone (verification 5, 23 Oct 2026). 17th-century spelling kept; [n] = unread group; [word] = supplied. Group-by-group alignment: reading.txt. --&gt;
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feuquieres/texts/herleville1690_reading.md">herleville1690_reading.md</a></p><pre translate="no">&lt;!-- Reading of the Louvois to d&#x27;Herleville, Versailles, 6 Sept 1690 letter, the body of texts/herleville1690_decryption.md (copied from NOTES.md) without its quote marks, header and commentary, so that it is scored alone (verification 5, 23 Oct 2026). 17th-century spelling kept; [n] = unread group; [word] = supplied. Group-by-group alignment: reading.txt. --&gt;
 
 # Louvois to d&#x27;Herleville, Versailles, 6 Sept 1690
 
@@ -548,7 +548,7 @@ running: je re co is mon sieur a di x he u re s du ma ti n la lettre que vous me
 que si vous croyez qu&#x27;il convien[s]t au servi[ce s] le roy de les exempter, mesme de permettre aux habitans dudit
 pays de razer la citadelle du[d]it Mondevis, de le faire. — J&#x27;atendray avec impatience l&#x27;arrivée du prochain
 ordi[n]aire pour sçavoir comment aura réussi vostre entreprise sur le chasteau de Villefranche.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feuquieres/texts/translation_en.md">translation_en.md</a></p><pre># English translation of both letters, copied verbatim from NOTES.md (section &#x27;English translation&#x27;).
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/feuquieres/texts/translation_en.md">translation_en.md</a></p><pre translate="no"># English translation of both letters, copied verbatim from NOTES.md (section &#x27;English translation&#x27;).
 
 ## English translation
 
@@ -583,14 +583,14 @@ Piemonte, taken by d&#x27;Herleville from Pignerol on 2 September 1690.</pre></d
 <li>C. Rousset, <em>Histoire de Louvois</em>, t. IV (Paris, 1863), pp. 453&ndash;455, quoting Catinat to Louvois of 29 January 1691 on the &ldquo;cacade à Veillane&rdquo;.</li>
 <li>S. Tomokiyo, &ldquo;French Cipher Despatch received by General Catinat (1691)&rdquo; and &ldquo;Louis XIV&rsquo;s ciphers&rdquo; §7 (<a href="https://cryptiana.web.fc2.com/code/louisxiv.htm">cryptiana</a>).</li>
 </ul>
-<p class="muted">Transcriptions, the Grand Chiffre table, the key, the aligned readings and every failed solver are in the repository (<code>targets/feuquieres/</code>).</p>
+<p class="muted">Transcriptions, the Grand Chiffre table, the key, the aligned readings and every failed solver are in the repository (<code translate="no">targets/feuquieres/</code>).</p>
 
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Page images: Bayerische Staatsbibliothek, CC BY-NC-SA</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="szembek1689.html" rel="prev">&larr; Wallachian postscript against Dunod after 1688</a><a href="catinat1691.html" rel="next">Catinat 1691 1691 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

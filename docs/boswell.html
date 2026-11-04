@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">47 86 △ 110 33 &middot; 93 122 中 41 112 &middot; 61 116 88 □ 77 70 28<br>800 &middot; 588 &middot; 873 &middot; 291 588 45 135 52 25 20 50 81</div>
+  <div class="cipherstrip" translate="no">47 86 △ 110 33 &middot; 93 122 中 41 112 &middot; 61 116 88 □ 77 70 28<br>800 &middot; 588 &middot; 873 &middot; 291 588 45 135 52 25 20 50 81</div>
   <p class="kicker">Oxford &rarr; The Hague · homophonic numerical cipher with a small code · 1643</p>
   <h1>Charles I and Nicholas to Boswell</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_charles-i.jpg" alt="Charles I" title="Charles I: Portrait by Anthony van Dyck, 1636. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Charles I</figcaption></figure></div><!-- /parties -->
@@ -85,12 +85,12 @@ The Hague; Sir Edward Nicholas was Secretary of State at Oxford.</p>
 </table>
 
 <h2 id="key"><span class="num">02</span> The key (Pitt&rsquo;s alphabet)</h2>
-<pre>plain   a  b  c  d  e  f  g  h  i  k  l  m  n  o  p  q  r  s  t  u  w  x  y  z
+<pre translate="no">plain   a  b  c  d  e  f  g  h  i  k  l  m  n  o  p  q  r  s  t  u  w  x  y  z
 1st     20 32 21 33 22 34 23 35 24 36 25 37 26 38 27 39 28 40 29 41 30 42 31 43
 2nd     44 56 45 57 46 58 47 59 48 60 49 61 50 62 51 63 52 64 53 65 54 66 55 67
 3rd     68 80 69 81 70 82 71 83 72 84 73 85 74 86 75 87 76 88 77 89 78 90 79 91
 4th     92 104 93 105 94 106 95 107 96 108 97 109 98 110 99 111 100 112 101 113 102 114 103 115</pre>
-<p>That is <code>letter = row[(n &minus; 20) mod 24]</code> with the row <em>a c e g i l n p r t w y b d f h k m o q s u x z</em> &mdash; the odd positions of the
+<p>That is <code translate="no">letter = row[(n &minus; 20) mod 24]</code> with the row <em>a c e g i l n p r t w y b d f h k m o q s u x z</em> &mdash; the odd positions of the
 24-letter alphabet (no <em>j</em>, no <em>v</em>) and then the even ones. Each letter&rsquo;s four values are 24 apart. It is the same type as the regular Stuart keys
 Tomokiyo describes for Scudamore (1636), Cave (1638) and Ormonde&ndash;Clanricarde (1643), and as the <a href="ormonde.html">Maltravers&ndash;Ormonde</a> key.
 The supplementary block 116&ndash;159 is five alphabetical runs (<em>a d e &middot; m n o r s t y</em>, <em>a d e &middot; n o &middot; t u</em>, &hellip;), so even
@@ -115,12 +115,12 @@ the 24-apart homophones, the alphabetical supplementary blocks), and the decrypt
 occurrences come in exactly the combination the embedded ones predict.</p>
 <table>
 <tr><th>sign</th><th>embedded occurrence</th><th>stand-alone</th><th>value</th></tr>
-<tr><td>△</td><td><code>47 86 △ 110 33</code> = GO△OD</td><td>&ldquo;back to OUR △ 中 873 □&rdquo;</td><td><b>good</b></td></tr>
-<tr><td>中</td><td><code>93 122 中 41 112</code> = CO中US-in</td><td>&ldquo;Our 中 873 □ S affeccons&rdquo;, &ldquo;our said 中 873 □&rdquo;, &ldquo;our △ 中 873 □&rdquo;</td><td><b>Cousin</b></td></tr>
-<tr><td>□</td><td><code>61 116 88 □ 77 70 28</code> = MAS□TER</td><td>the same three places</td><td><b>Master</b></td></tr>
-<tr><td>+</td><td><code>158 + 150</code> = U+S (&ldquo;inuiting us&rdquo;)</td><td>&ldquo;acceptable to +&rdquo;, &ldquo;preiudiced +&rdquo;, &ldquo;to + to the port of&rdquo;, &ldquo;addres by 213 to +&rdquo;</td><td><b>us</b></td></tr>
+<tr><td>△</td><td><code translate="no">47 86 △ 110 33</code> = GO△OD</td><td>&ldquo;back to OUR △ 中 873 □&rdquo;</td><td><b>good</b></td></tr>
+<tr><td>中</td><td><code translate="no">93 122 中 41 112</code> = CO中US-in</td><td>&ldquo;Our 中 873 □ S affeccons&rdquo;, &ldquo;our said 中 873 □&rdquo;, &ldquo;our △ 中 873 □&rdquo;</td><td><b>Cousin</b></td></tr>
+<tr><td>□</td><td><code translate="no">61 116 88 □ 77 70 28</code> = MAS□TER</td><td>the same three places</td><td><b>Master</b></td></tr>
+<tr><td>+</td><td><code translate="no">158 + 150</code> = U+S (&ldquo;inuiting us&rdquo;)</td><td>&ldquo;acceptable to +&rdquo;, &ldquo;preiudiced +&rdquo;, &ldquo;to + to the port of&rdquo;, &ldquo;addres by 213 to +&rdquo;</td><td><b>us</b></td></tr>
 </table>
-<p>So <code>△ 中 873 □</code> is &ldquo;good Cousin your Master&rdquo;. The clerk wrote the sign beside the word where he spelled it out (compare
+<p>So <code translate="no">△ 中 873 □</code> is &ldquo;good Cousin your Master&rdquo;. The clerk wrote the sign beside the word where he spelled it out (compare
 &ldquo;for whom 270 thus hereafter&rdquo; in the Ormonde letter, where a code is introduced inline), and the transcription placed the sign in the middle
 of the word. This is the explanation Pitt&rsquo;s notes said was missing, and with it 873 = <em>you / your</em> fits all six occurrences.</p>
 
@@ -149,7 +149,7 @@ that they [are] understood here not to affect Monarchy. His Majesty&rsquo;s two 
 because most safe &amp; ready; you are to decifer &amp; interpret them. Monsieur F I R X S S appeares not here. &hellip;
 </blockquote>
 <p>Word codes with a value: 800 <em>to</em>, 588 <em>of</em>, 873 <em>you/your</em>, 291 <em>Duke</em> (from Simpson&rsquo;s printed cipher line
-<code>291 588 C U R L A N D</code> on the letter to the Duke), 516 <em>letter</em>, 835 <em>un-</em>, 749 <em>selves</em>, 750 <em>send</em>, 205
+<code translate="no">291 588 C U R L A N D</code> on the letter to the Duke), 516 <em>letter</em>, 835 <em>un-</em>, 749 <em>selves</em>, 750 <em>send</em>, 205
 <em>assure</em>, 223 <em>by</em>, 629 <em>pray</em>, 640 <em>port</em>, 636 <em>pro-</em>, 406 <em>gener-</em>, 484 <em>His Majesty</em>, 746 <em>secret-</em>.
 Sorted, the readable codes run alphabetically (a 170&ndash;228 &hellip; d 291 &hellip; o 588&ndash;591 &hellip; s 726&ndash;755, t 800, u 835, y 873), so the
 nomenclator was probably an alphabetical list; a second letter in the key would test that.</p>
@@ -176,10 +176,10 @@ Ambassadors, 726 = States. These two values rest on the history; the cipher alon
 
 <h2 id="method"><span class="num">07</span> Method, credit and files</h2>
 <ol>
-<li>Pitt&rsquo;s repository <code>robertpitt/charles-i-boswell-cipher</code> (MIT; commit 609ebf4, 14 September 2026) had the alphabet, the supplementary
+<li>Pitt&rsquo;s repository <code translate="no">robertpitt/charles-i-boswell-cipher</code> (MIT; commit 609ebf4, 14 September 2026) had the alphabet, the supplementary
 homophones, most nulls and four word codes before this session. Cite it for the alphabet.</li>
-<li>Band statistics and the decoder (<code>targets/boswell/key.py</code>); 4-gram model (<code>lm4.py</code>); permutation control (<code>permtest.py</code>); period scan
-(<code>periodscan.py</code>).</li>
+<li>Band statistics and the decoder (<code translate="no">targets/boswell/key.py</code>); 4-gram model (<code translate="no">lm4.py</code>); permutation control (<code translate="no">permtest.py</code>); period scan
+(<code translate="no">periodscan.py</code>).</li>
 <li>Simpson 1893 and CSPD 1641&ndash;43 from Internet Archive OCR; TNA references from the Discovery API.</li>
 </ol>
 <p class="muted">Checked: Pitt&rsquo;s inputs against the blog text; the alphabet against 20,000 permuted rows; every decryption against the tokens; Simpson&rsquo;s
@@ -191,7 +191,7 @@ identity of the envoy as Firks, the alphabetical-order hypothesis and the propos
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>Charles I, Oxford, 2 Nov 1643, TNA SP 84/157 f. 217</h3>
 <p>Not a letter to Boswell but to the Duke of Courland&#x27;s envoy at The Hague: Charles I thanks the Duke for his offers, asks for his assistance with arms, muskets, match and powder shipped to Weymouth, Dartmouth, Exeter, Falmouth or another port, and sends the envoy his re-credentials. The transcription is Tomokiyo&#x27;s provisional one (no images online).</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/boswell/charles.txt">charles.txt</a></p><pre>Sir, Wee have received 873 69 72 65 361 ill 26 102 92 97 45 86
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/boswell/charles.txt">charles.txt</a></p><pre translate="no">Sir, Wee have received 873 69 72 65 361 ill 26 102 92 97 45 86
 85 17 516 588 134 be* 6_ 132 106 8_ 32 46 100 1643. But never
 heard of any 514 516 588 Our 47 86 △ 110 33 17 93 122 中 41 112 m.y^w
 291 588 362 21 41 52 49 and 40 15 873 61 116 88 □ 77 70 28
@@ -226,7 +226,7 @@ to whom w herewith 750 79 122 135 28 70 6* 76 118 105 94
 Wee commit you to the Protection of the
 Almighty. Given at our court at Oxford the second day of Nobember
 in y^w e [N]ineteenth yeare of Our Reigne 1643.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/boswell/texts/charles_f217_decryption.md">charles_f217_decryption.md</a></p><pre>Copied verbatim from NOTES.md section 4 (&quot;Reading&quot;) on 22 Oct 2026. The mechanical output of key.py over the whole letter is decoded.txt.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/boswell/texts/charles_f217_decryption.md">charles_f217_decryption.md</a></p><pre translate="no">Copied verbatim from NOTES.md section 4 (&quot;Reading&quot;) on 22 Oct 2026. The mechanical output of key.py over the whole letter is decoded.txt.
 
 Codes in [brackets], graphic signs and clear words as read, proposed transcription corrections in {braces} (§6).
 Spelling as the cipher gives it.
@@ -248,7 +248,7 @@ Spelling as the cipher gives it.
 &gt; And soe wishing you a safe returne back to our good Cousin your Master, to whom w[e] herewith [send] your
 &gt; re-credentials, Wee commit you to the Protection of the Almighty. Given at our court at Oxford the second day of
 &gt; Nouember in the Nineteenth yeare of Our Reigne 1643.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/boswell/decoded.txt">decoded.txt</a></p><pre>Mechanical output of key.py over Tomokiyo&#x27;s transcription. Capitals = alphabet letters; {word} = word code or sign; · = null; [n] = unresolved.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/boswell/decoded.txt">decoded.txt</a></p><pre translate="no">Mechanical output of key.py over Tomokiyo&#x27;s transcription. Capitals = alphabet letters; {word} = word code or sign; · = null; [n] = unresolved.
 The clear-text tails of each letter (after &#x27;Wee commit you&#x27; / &#x27;His Ma^ys two letters&#x27;) are printed as transcribed; the digits there are dates, not cipher.
 
 ===== charles.txt
@@ -317,7 +317,7 @@ remit you to the not* for more account upon
 them, &amp; ever remains</pre></details>
 <h3>Nicholas to Boswell, 2 Nov 1643, TNA SP 84/157 f. 219</h3>
 <p>Secretary Nicholas tells Boswell to hinder secretly the coming over of [ambassadors?] from the [States?], thought not to affect monarchy, and that the King&#x27;s two letters are put into Boswell&#x27;s cipher for him to decipher and interpret for the envoy; &#x27;Monsieur F I R X S S&#x27; (probably Firks, the Duke&#x27;s agent) has not appeared.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/boswell/nicholas.txt">nicholas.txt</a></p><pre>Sir, 484 21 86 85 127 131 128 142 800
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/boswell/nicholas.txt">nicholas.txt</a></p><pre translate="no">Sir, 484 21 86 85 127 131 128 142 800
 40 24 23 n 48 44 31 2 35 24 64 pleasure 800
 873r 29 59 at 55 38 41 6 65 88 118 all
 27 0 88 112 72 56 49[b?] 70[y?] diligence &amp; industry
@@ -344,7 +344,7 @@ acknowledged the receipt of yo^rs of the 8th 22/12
 &amp; 29/19 of October with many thanks, I must
 remit you to the not* for more account upon
 them, &amp; ever remains</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/boswell/texts/nicholas_f219_decryption.md">nicholas_f219_decryption.md</a></p><pre>Copied verbatim from NOTES.md section 4 (&quot;Reading&quot;) on 22 Oct 2026. The connected reading stops at the ellipsis; the mechanical output of key.py over the whole letter, including its clear-text tail, is decoded.txt.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/boswell/texts/nicholas_f219_decryption.md">nicholas_f219_decryption.md</a></p><pre translate="no">Copied verbatim from NOTES.md section 4 (&quot;Reading&quot;) on 22 Oct 2026. The connected reading stops at the ellipsis; the mechanical output of key.py over the whole letter, including its clear-text tail, is decoded.txt.
 
 Codes in [brackets], graphic signs and clear words as read, proposed transcription corrections in {braces} (§6).
 Spelling as the cipher gives it.
@@ -357,7 +357,7 @@ Spelling as the cipher gives it.
 &gt; is here apprehended that they [will] doe more hurt then good, for that they [are] understood here not to affect
 &gt; Monarchy. His Majesty&#x27;s two letters herewith sent with flying Seales are put into your character, because most
 &gt; safe &amp; ready; you are to decifer &amp; interpret them. Monsieur F I R X S S appeares not here. …</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/boswell/decoded.txt">decoded.txt</a></p><pre>Mechanical output of key.py over Tomokiyo&#x27;s transcription. Capitals = alphabet letters; {word} = word code or sign; · = null; [n] = unresolved.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/boswell/decoded.txt">decoded.txt</a></p><pre translate="no">Mechanical output of key.py over Tomokiyo&#x27;s transcription. Capitals = alphabet letters; {word} = word code or sign; · = null; [n] = unresolved.
 The clear-text tails of each letter (after &#x27;Wee commit you&#x27; / &#x27;His Ma^ys two letters&#x27;) are printed as transcribed; the digits there are dates, not cipher.
 
 ===== charles.txt
@@ -434,17 +434,17 @@ them, &amp; ever remains</pre></details>
 <li>S. Tomokiyo, &ldquo;Charles I&ndash;Boswell Cipher (1643)&rdquo;, blog post of 17 September 2021, and <em>Unsolved Historical Ciphers</em> (<a href="https://cryptiana.web.fc2.com/code/unsolved.htm">cryptiana</a>).</li>
 <li>R. Pitt, <a href="https://github.com/robertpitt/charles-i-boswell-cipher">charles-i-boswell-cipher</a> (GitHub, September 2026).</li>
 <li>TNA Discovery, SP 84/157/96&ndash;97.</li>
-<li>H. F. Morland Simpson (ed.), &ldquo;Civil War Papers&rdquo;, <em>Miscellany of the Scottish History Society</em> I (1893), pp. 143&ndash;170 (Internet Archive <code>miscellanyofscot01scot</code>).</li>
+<li>H. F. Morland Simpson (ed.), &ldquo;Civil War Papers&rdquo;, <em>Miscellany of the Scottish History Society</em> I (1893), pp. 143&ndash;170 (Internet Archive <code translate="no">miscellanyofscot01scot</code>).</li>
 <li><em>Calendar of State Papers Domestic 1641&ndash;43</em> (1887), Nicholas to Roe, December 1643.</li>
 </ul>
-<p class="muted">Analysis scripts and the ciphertext are in the repository (<code>targets/boswell/</code>).</p>
+<p class="muted">Analysis scripts and the ciphertext are in the repository (<code translate="no">targets/boswell/</code>).</p>
 
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="joao1642.html" rel="prev">&larr; Jo&atilde;o IV to Nisa 1642&ndash;44 1642&ndash;1644</a><a href="genes1643.html" rel="next">Eraso to Philip IV 1643 1643 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

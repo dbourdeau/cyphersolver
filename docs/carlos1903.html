@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-  <div class="cipherstrip">38564 29955 58215 &middot; 18111 91518 34678 &middot; 38564 49452 58215<br>ter combinado com &middot; Ros-a e ella &middot; ter fallado com<br>the two repeats fix 38564 = ter and 58215 = com</div>
+  <div class="cipherstrip" translate="no">38564 29955 58215 &middot; 18111 91518 34678 &middot; 38564 49452 58215<br>ter combinado com &middot; Ros-a e ella &middot; ter fallado com<br>the two repeats fix 38564 = ter and 58215 = com</div>
   <p class="kicker">Lisbon &rarr; Queen Am&eacute;lie (Paris, Oran) &middot; five-figure code &middot; March&ndash;May 1903 &middot; two of three telegrams decoded at the time</p>
   <h1>King Carlos to Queen Am&eacute;lie, 1903: three code telegrams</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_carlos-i-of-portugal.jpg" alt="Carlos I of Portugal" title="Carlos I of Portugal: Photograph, anonymous, 1907. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Carlos I of Portugal</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_amelie-of-orleans.jpg" alt="Amélie of Orléans" title="Amélie of Orléans: Postcard portrait (photomechanical print), undated. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Amélie of Orléans</figcaption></figure></div><!-- /parties -->
@@ -76,7 +76,7 @@
 <tr><td>m0058 (back m0059)</td><td>undated (spring 1903?)</td><td>13 (12 groups and &ldquo;03&rdquo;)</td><td>in ink on the same form</td></tr>
 </tbody>
 </table>
-<p>The May telegram is on printed strips. Its header, <code>SS PARIS LISBOA 3428 33 12 12/40- HS</code>, follows the rule printed on the form: the first number after the place of origin is the serial number and the second the taxed words. So it left Lisbon as no. 3428, 33 words, on the 12th at 12:40, and the Paris stamp reads 12 MAI 03. The first pass had it as Paris to Lisbon, 1903/04. The March telegram is written by hand on a French form: &ldquo;Pour Tlemcen de Lisbonne No 1728 Mots 86 D&eacute;p&ocirc;t le 4/3 1903 &agrave; 8h30&rdquo;, stamped TLEMCEN 5 3 03 ORAN. Its sender is not named; it is filed with the King&rsquo;s papers. The undated telegram is written on a blank form with no office data.</p>
+<p>The May telegram is on printed strips. Its header, <code translate="no">SS PARIS LISBOA 3428 33 12 12/40- HS</code>, follows the rule printed on the form: the first number after the place of origin is the serial number and the second the taxed words. So it left Lisbon as no. 3428, 33 words, on the 12th at 12:40, and the Paris stamp reads 12 MAI 03. The first pass had it as Paris to Lisbon, 1903/04. The March telegram is written by hand on a French form: &ldquo;Pour Tlemcen de Lisbonne No 1728 Mots 86 D&eacute;p&ocirc;t le 4/3 1903 &agrave; 8h30&rdquo;, stamped TLEMCEN 5 3 03 ORAN. Its sender is not named; it is filed with the King&rsquo;s papers. The undated telegram is written on a blank form with no office data.</p>
 
 <h2 id="m0054"><span class="num">02</span> Lisbon to Paris, 12 May</h2>
 <figure data-credit="Arquivo Nacional Torre do Tombo, PT/TT/CAM/M12, image m0054, via DigitArq"><img src="carlos1903_telegram.jpg" alt="Printed telegraph strips: a header line, then French words in clear with fourteen five-figure groups among them, ending CARLOS" loading="lazy">
@@ -97,7 +97,7 @@
 
 <h2 id="m0056"><span class="num">04</span> The Tlemcen telegram</h2>
 <p>The telegram of 4 March 1903 reached the Queen on board the yacht <em>Am&eacute;lie</em> at Oran: 44 five-figure groups and three &ldquo;03&rdquo;, 86 taxed words. No decode was found in the ma&ccedil;o.</p>
-<pre>17582 92270 19652 10734 92270 43554 76138
+<pre translate="no">17582 92270 19652 10734 92270 43554 76138
 78341 76342? 93434 94057 33725 52162 55820
 03 68564 90387 59338? 91518 38965 03
 57174 43554 78341 85328 57944 14492 95268 58215
@@ -106,7 +106,7 @@
 <p>It shares 58215 and 91518 with the May telegram, and 10734, 43554 and 78341 with the undated one. Of these only 58215 (<em>com</em>) has a value. The fourth group of line 3 was taken as 19338 in one transcription and 59338 in the other.</p>
 
 <h2 id="code"><span class="num">05</span> One code, not a cipher</h2>
-<p>Two controls (<code>groups.py</code>). Random telegrams of 12 and 44 five-figure groups share two or more groups in 0 of 20,000 trials, so the shared groups show that the three telegrams use one code. In the undated telegram the decode has 60 letters and the 12 groups have 60 figures; taken letter for figure, the mapping has 37 conflicts, against 38.1 on average (minimum 32) for 1,000 shuffled orders of the figures. That is no better than chance: the 60 = 60 is a coincidence and the system is a code, not a letter cipher.</p>
+<p>Two controls (<code translate="no">groups.py</code>). Random telegrams of 12 and 44 five-figure groups share two or more groups in 0 of 20,000 trials, so the shared groups show that the three telegrams use one code. In the undated telegram the decode has 60 letters and the 12 groups have 60 figures; taken letter for figure, the mapping has 37 conflicts, against 38.1 on average (minimum 32) for 1,000 shuffled orders of the figures. That is no better than chance: the 60 = 60 is a coincidence and the system is a code, not a letter cipher.</p>
 <p>The code is not alphabetical (<em>com</em> has the higher number), unlike the code of Sabugosa&rsquo;s telegrams of the same weeks (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/sabugosa1910">targets/sabugosa1910</a>), so the four values from the May telegram predict nothing about the rest of the book.</p>
 
 <h2 id="uncertain"><span class="num">06</span> What remains uncertain</h2>
@@ -124,7 +124,7 @@
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>m0054, Lisbon -&gt; Paris, 12 May 1903</h3>
 <p>King Carlos thanks the Queen, then in Paris, for her telegram and says all is well; in code he tells her she may give [something] but only after arranging it with Rosa (probably the Portuguese minister in Paris) and after the French government has been spoken to. The children kiss her hand.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/carlos1903/m0054_transcription.txt">m0054_transcription.txt</a></p><pre># ANTT PT/TT/CAM/M12, image m0054 (cover m0055). Telegram Lisbon -&gt; Paris, 12 May 1903, King Carlos to Queen Amelie.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/carlos1903/m0054_transcription.txt">m0054_transcription.txt</a></p><pre translate="no"># ANTT PT/TT/CAM/M12, image m0054 (cover m0055). Telegram Lisbon -&gt; Paris, 12 May 1903, King Carlos to Queen Amelie.
 # Printed strips pasted on a French receiving form. Header strip: SS PARIS LISBOA 3428 33 12 12/40- HS
 # (form&#x27;s own rule: the first number after the place of origin is the serial number, the second the taxed words:
 # destination PARIS, origin LISBOA, no. 3428, 33 words, day 12, 12:40). Stamp: CENTRAL PARIS 12 MAI 03.
@@ -134,7 +134,7 @@
 = MERCI DEPECHE ICI TOUT ET TOUS TRES BIEN 28548 40710 86415 23274 38564
 29955 58215 18111 91518 34678 38564 49452 58215 82042. PETITS BAISENT
 MAIN . T EMBRASSE = CARLOS +</pre></details>
-<details class="ftext"><summary>Decipherment of the time</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/carlos1903/m0054_contemporary.txt">m0054_contemporary.txt</a></p><pre># ANTT PT/TT/CAM/M12, image m0060: a card printed &quot;Hotel Bristol / Paris&quot;, written in ink on the receiving side.
+<details class="ftext"><summary>Decipherment of the time</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/carlos1903/m0054_contemporary.txt">m0054_contemporary.txt</a></p><pre translate="no"># ANTT PT/TT/CAM/M12, image m0060: a card printed &quot;Hotel Bristol / Paris&quot;, written in ink on the receiving side.
 # It repeats the clear words of telegram m0054 and puts a Portuguese sentence where the 14 code groups stand,
 # so it is the decode of m0054 made at the time. Line breaks as on the card. The hyphens in &quot;Po-des&quot; and &quot;Ros-a&quot;
 # are the decoder&#x27;s.
@@ -143,7 +143,7 @@ bien. Po-des dar mas só depois de ter
 combinado com Ros-a e ella ter fallado
 com Governo francez. Petits baisent main
 T&#x27;embrasse. Carlos.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/carlos1903/m0054_decryption.txt">m0054_decryption.txt</a></p><pre># m0054 against the decode of the time on m0060. Clear words of the telegram as they stand; code groups with
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/carlos1903/m0054_decryption.txt">m0054_decryption.txt</a></p><pre translate="no"># m0054 against the decode of the time on m0060. Clear words of the telegram as they stand; code groups with
 # the words the decode puts in their place. The decode has 19 Portuguese words (with the decoder&#x27;s hyphens) for
 # 14 groups, so some groups stand for more than one word.
 # Fixed by the two repeats: 38564 (groups 5 and 11) and 58215 (groups 7 and 13) stand two places apart, as
@@ -161,11 +161,11 @@ MERCI DEPECHE ICI TOUT ET TOUS TRES BIEN      (clear)
 58215                     = com
 82042                     = Governo francez   [inferred]
 PETITS BAISENT MAIN . T EMBRASSE = CARLOS     (clear)</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/carlos1903/m0054_reading.md">m0054_reading.md</a></p><pre># m0054: King Carlos to Queen Amelie, Lisbon -&gt; Paris (Hotel Bristol), 12 May 1903
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/carlos1903/m0054_reading.md">m0054_reading.md</a></p><pre translate="no"># m0054: King Carlos to Queen Amelie, Lisbon -&gt; Paris (Hotel Bristol), 12 May 1903
 
 Merci dépêche. Ici tout et tous très bien. Podes dar, mas só depois de ter combinado com Rosa e ella ter fallado com
 Governo francez. Petits baisent main. T&#x27;embrasse. Carlos.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/carlos1903/m0054_en.md">m0054_en.md</a></p><pre># m0054: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/carlos1903/m0054_en.md">m0054_en.md</a></p><pre translate="no"># m0054: English translation
 
 Thanks for your telegram. Here everything and everyone very well. You may give [it], but only after having arranged it
 with Rosa and after she has spoken with the French Government. The little ones kiss your hand. I embrace you. Carlos.
@@ -176,25 +176,25 @@ decode; what is to be given is not said. &quot;ella&quot; (she) has no clear ant
 Tomás de Sousa Rosa, then Portuguese minister in Paris [our identification, not checked].</pre></details>
 <h3>m0058, undated (spring 1903?)</h3>
 <p>King Carlos tells the Queen that all are well, that he has written to her at Malta, and sends his love and the children&#x27;s greetings. Fits her Mediterranean cruise of spring 1903.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/carlos1903/m0058_transcription.txt">m0058_transcription.txt</a></p><pre># ANTT PT/TT/CAM/M12, image m0058 (back m0059). A blank French telegram form (Telegramme, No 700); no office
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/carlos1903/m0058_transcription.txt">m0058_transcription.txt</a></p><pre translate="no"># ANTT PT/TT/CAM/M12, image m0058 (back m0059). A blank French telegram form (Telegramme, No 700); no office
 # data filled in. The code groups by hand; the writer makes 5 like a long s; a receiver underlined single digits
 # in most groups (not reproduced). The decode written below them is in m0058_contemporary.txt. Undated.
 03 68692 39210 43554 93001 43294 10734 16425
 88018 78341 88717 34057 55058.</pre></details>
-<details class="ftext"><summary>Decipherment of the time</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/carlos1903/m0058_contemporary.txt">m0058_contemporary.txt</a></p><pre># ANTT PT/TT/CAM/M12, image m0058: the decode written in ink on the same form, under the code groups.
+<details class="ftext"><summary>Decipherment of the time</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/carlos1903/m0058_contemporary.txt">m0058_contemporary.txt</a></p><pre translate="no"># ANTT PT/TT/CAM/M12, image m0058: the decode written in ink on the same form, under the code groups.
 Ici tous et tout bien t&#x27;ai écrit à Malte t&#x27;embrasse
 et les petits salue tous
                                Carlos.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/carlos1903/m0058_decryption.txt">m0058_decryption.txt</a></p><pre># m0058 line by line against the decode of the time. 12 groups plus &quot;03&quot; for 15 French words and the signature;
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/carlos1903/m0058_decryption.txt">m0058_decryption.txt</a></p><pre translate="no"># m0058 line by line against the decode of the time. 12 groups plus &quot;03&quot; for 15 French words and the signature;
 # the groups do not map one to one onto the words, so the split between the lines follows the layout on the form.
 03 68692 39210 43554 93001 43294 10734 16425  = Ici tous et tout bien t&#x27;ai écrit à Malte t&#x27;embrasse
 88018 78341 88717 34057 55058.                = et les petits salue tous / Carlos</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/carlos1903/m0058_reading.md">m0058_reading.md</a></p><pre># m0058: King Carlos to Queen Amelie, undated (spring 1903?)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/carlos1903/m0058_reading.md">m0058_reading.md</a></p><pre translate="no"># m0058: King Carlos to Queen Amelie, undated (spring 1903?)
 
 From the decode of the time written on the form (French).
 
 Ici tous et tout bien. T&#x27;ai écrit à Malte. T&#x27;embrasse, et les petits salue tous. Carlos.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/carlos1903/m0058_en.md">m0058_en.md</a></p><pre># m0058: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/carlos1903/m0058_en.md">m0058_en.md</a></p><pre translate="no"># m0058: English translation
 
 Here everyone and everything well. [I] have written to you at Malta. [I] embrace you, and the little ones greet
 everyone. Carlos.
@@ -205,7 +205,7 @@ board the yacht Amelie at Oran on 5 March 1903).</pre></details>
 <h3>m0056, Lisbon -&gt; Tlemcen, 4 Mar 1903 <span class="st stuck">decoded, not read</span></h3>
 <p>Code telegram of 86 taxed words to Queen Amélie on board the yacht Amélie at Oran; no decode found.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/carlos1903/m0056_transcription.txt">m0056_transcription.txt</a></p><pre># ANTT PT/TT/CAM/M12, image m0056 (back m0057). French receiving form (Telegramme, No 700), by hand.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/carlos1903/m0056_transcription.txt">m0056_transcription.txt</a></p><pre translate="no"># ANTT PT/TT/CAM/M12, image m0056 (back m0057). French receiving form (Telegramme, No 700), by hand.
 # Pour Tlemcen de Lisbonne No 1728 Mots 86 Depot le 4/3 1903 a 8h30 m.
 # Address: Reine Amelie Portugal bord yacht Amelie Oran Tlemcen. Stamp: TLEMCEN 5 3 03 ORAN.
 # Sender not named on the form (filed with King Carlos&#x27;s papers). The writer makes 5 like a long s.
@@ -218,7 +218,7 @@ board the yacht Amelie at Oran on 5 March 1903).</pre></details>
 57174 43554 78341 85328 57944 14492 95268 58215
 46864 56994 26722 85387 39965 03 42618 23014 82927
 81037 73374 17582 84437 32937 56484 57218 93057 61742</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/carlos1903/m0056_decryption.txt">m0056_decryption.txt</a></p><pre># m0056: no decode of the time was found, and the code is not rebuilt. Not read.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/carlos1903/m0056_decryption.txt">m0056_decryption.txt</a></p><pre translate="no"># m0056: no decode of the time was found, and the code is not rebuilt. Not read.
 # Only one group has a value from the m0054 decode: 58215 = com [inferred there from a repeat].
 # Groups shared with the other two telegrams (same code): 10734, 43554, 78341 (also in m0058);
 # 58215, 91518 (also in m0054). [..] = group without a value.
@@ -237,13 +237,13 @@ board the yacht Amelie at Oran on 5 March 1903).</pre></details>
 <li>Arquivo Nacional Torre do Tombo, <em>Documentos de D. Carlos, D. Am&eacute;lia e D. Manuel II</em>, ma&ccedil;o 12, PT/TT/CAM/M12, <a href="https://digitarq.arquivos.pt/documentDetails/a58a28dda5844d2e8c9f61e2a2567e99" rel="noopener">DigitArq record</a>, 61 images: m0054 and its cover m0055 (12 May), m0056 and back m0057 (4 March), m0058 and back m0059 (undated), m0060 (the Hotel Bristol card).</li>
 <li>No printed decipherment of these telegrams was found (one web search). Related only: A. H. Norris, &ldquo;<a href="https://www.bhsportugal.org/library/articles/a-letter-from-queen-amelia-to-her-son-king-manuel-ii" rel="noopener">A letter from Queen Amelia to her son King Manuel II</a>&rdquo;, <em>BHS Portugal Report</em> 4 (1977), p. 56, on a letter in which the Queen put certain words in cipher; a different document.</li>
 </ul>
-<p class="muted">Files: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/carlos1903">targets/carlos1903/</a> (notes, transcriptions of the three telegrams, the decodes of the time, readings and translations, <code>groups.py</code> with its output). Contributed by WAINUT; reviewed for the site on 27 October 2026.</p>
+<p class="muted">Files: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/carlos1903">targets/carlos1903/</a> (notes, transcriptions of the three telegrams, the decodes of the time, readings and translations, <code translate="no">groups.py</code> with its output). Contributed by WAINUT; reviewed for the site on 27 October 2026.</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Arquivo Nacional Torre do Tombo, PT/TT/CAM/M12, via DigitArq</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="army1902.html" rel="prev">&larr; Japanese Army kana cipher 1902&ndash;04</a><a href="hintze1903.html" rel="next">Hintze Ribeiro to Queen Am&eacute;lie 1903 1903 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

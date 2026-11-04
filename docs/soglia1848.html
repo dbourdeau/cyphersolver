@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">37 34 46 8247 5 01 8734 8760 8904 8739 8413 5 64 8 5<br>41 21 16 46 11 96 44 69 70 09 26 5 12 5 43 94 70 67 76<br>42 5 92 70 36 74 46 70 70 5 42 &middot; di Lutzovv di</div>
+  <div class="cipherstrip" translate="no">37 34 46 8247 5 01 8734 8760 8904 8739 8413 5 64 8 5<br>41 21 16 46 11 96 44 69 70 09 26 5 12 5 43 94 70 67 76<br>42 5 92 70 36 74 46 70 70 5 42 &middot; di Lutzovv di</div>
   <p class="kicker">Rome &rarr; Innsbruck · numerical nomenclator: two-digit letters and syllables, four-digit alphabetical code · 15 June 1848</p>
   <h1>Cardinal Soglia to the nuncio Viale Prel&agrave;, Rome, 15 June 1848</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_cardinal-soglia.jpg" alt="Cardinal Soglia" title="Cardinal Soglia: Portrait, unknown artist, 19th century. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Cardinal Soglia</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_viale-prela.jpg" alt="Viale Prelà" title="Viale Prelà: Lithograph by Josef Kriehuber, 1853. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Viale Prelà</figcaption></figure></div><!-- /parties -->
@@ -140,7 +140,7 @@ after <em>si</em> on line 1 is unexplained.</p>
 <ol>
 <li><strong>Simple substitution fails, and the failure is informative.</strong> With 5 taken as the word break, a simple-substitution solver (simulated annealing, one letter per pair) with 5-gram
 models in Italian, French and Latin got nowhere, about &minus;3.4 nats a character in each language. The same solver was run on a synthetic control: an Italian
-text of the same length, enciphered homophonically in 68 two-digit symbols with the same word breaks (<code>synth.py</code>). It decrypted the control exactly.
+text of the same length, enciphered homophonically in 68 two-digit symbols with the same word breaks (<code translate="no">synth.py</code>). It decrypted the control exactly.
 So the solver was sound, and the pairs could not all be single letters.</li>
 <li><strong>A nomenclator solver.</strong> The next solver let each pair stand for a letter or a common syllable, one value per pair, with the 8XXX groups
 held out as unknown words. Among its outputs, runs such as <em>circostanze</em>, <em>intendendosi</em> and <em>indirizzata</em> were whole Italian words of
@@ -184,7 +184,7 @@ the present dispatch known</em> to (Mgr) Morichini, for his guidance in the nego
 <p>Ten code groups are supplied from context: <em>foglio</em>, <em>Signor</em>, <em>Colonia</em>, <em>&egrave;</em>, <em>lontan-</em>, <em>guerra</em>, <em>com-</em>,
 <em>Tuttavia</em>, <em>cotest-</em>, <em>col fine di</em>. An alphabetical code allows a check that is independent of context. A straight
 line was fitted to the nine firm anchors, code value against rank in a sorted list of the 1,500 commonest words of a 19th-century Italian corpus (slope about
-0.47 code values per word; <code>rankfit2.py</code>). The anchors themselves scatter about the line by 10 to 60 values, so that is the tolerance. Each context
+0.47 code values per word; <code translate="no">rankfit2.py</code>). The anchors themselves scatter about the line by 10 to 60 values, so that is the tolerance. Each context
 reading then gets a predicted value from its own rank:</p>
 <table>
 <tr><th>Code</th><th>Reading</th><th class="n">Predicted</th><th class="n">Off by</th></tr>
@@ -232,7 +232,7 @@ and a role for the bishop of Nisibis, which is nearer to the truth, though in th
 
 <h2 id="open"><span class="num">07</span> The eleven open groups</h2>
 <p>Eleven code groups occur once each and are not fixed by their context. The alphabetical order gives each a window: its place between the known values,
-converted to a stretch of the sorted word list (<code>windows2.py</code>, piecewise between all anchors; roughly &plusmn;15 words).</p>
+converted to a stretch of the sorted word list (<code translate="no">windows2.py</code>, piecewise between all anchors; roughly &plusmn;15 words).</p>
 <table>
 <tr><th>Code</th><th>Window</th><th>Context</th></tr>
 <tr><td class="n">8734 8760 8904 8739 8413</td><td>tr&ndash;tu / venti&ndash;vo(lgente) / beyond <em>v</em> / tu&ndash;u / n&ndash;o</td><td>the date of the earlier letter: <em>con mio foglio del &hellip;</em>, probably an early-June date such as <em>tre volgente</em> with a reference</td></tr>
@@ -275,8 +275,8 @@ are the cipher clerk&rsquo;s or the Milan compositor&rsquo;s cannot be told from
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>Cardinal Soglia to the nuncio Viale Prelà, Rome, 15 June 1848 (L&#x27;Italia del Popolo no. 40)</h3>
 <p>The papal Secretary of State&#x27;s counter-order to the nuncio at Innsbruck, where the Emperor had fled: instead of asking for his passports after Lützow&#x27;s departure from Rome, he is to remain with the Emperor wherever he goes, and show the dispatch at once to Mgr Morichini. Printed in cipher by Mazzini&#x27;s L&#x27;Italia del Popolo (30 June 1848) and posted by Klaus Schmeh as unsolved; the key was recovered here, some code words remain unread ([8xxx]).</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soglia1848/ct2.txt">ct2.txt</a></p><pre>3734468247501873487608904873984135648554121164611964469700926512543947067765402084246753171509047009521901621419221247409560863251582275425927036744670705425097733099739462409492186205521419209564561091621994350157909496750954967102140492156751909059909844667563549216667367067496450723593463424099769515466353793704964512581162682118346095012358310558120215870421541465097021994359049213970768422545873756352470467021044679490972946770246951667499046660997742155922158433166719465809381025015842952652192235496714247209512512997949709003519492104994654158319521554670702430215212056146044356354921900949645251269974097934664599460419210409523124290090654041673321490981365492123717009507235934614973909540519090499098446675351269492199040981315098429558122095247046700983405152692215706721225124249677474090656353649215427021494357067211581105090464167049094922541509494967704654550983745964649671024675634292706750249145474121579490971265096191673169205</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soglia1848/texts/plaintext.md">plaintext.md</a></p><pre># Soglia to Viale Prelà, Rome, 15 June 1848: normalised plaintext and English
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soglia1848/ct2.txt">ct2.txt</a></p><pre translate="no">3734468247501873487608904873984135648554121164611964469700926512543947067765402084246753171509047009521901621419221247409560863251582275425927036744670705425097733099739462409492186205521419209564561091621994350157909496750954967102140492156751909059909844667563549216667367067496450723593463424099769515466353793704964512581162682118346095012358310558120215870421541465097021994359049213970768422545873756352470467021044679490972946770246951667499046660997742155922158433166719465809381025015842952652192235496714247209512512997949709003519492104994654158319521554670702430215212056146044356354921900949645251269974097934664599460419210409523124290090654041673321490981365492123717009507235934614973909540519090499098446675351269492199040981315098429558122095247046700983405152692215706721225124249677474090656353649215427021494357067211581105090464167049094922541509494967704654550983745964649671024675634292706750249145474121579490971265096191673169205</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soglia1848/texts/plaintext.md">plaintext.md</a></p><pre translate="no"># Soglia to Viale Prelà, Rome, 15 June 1848: normalised plaintext and English
 
 Copied 22 Oct 2026 verbatim from NOTES.md. The literal decoder outputs are `plaintext_raw.txt` (code words not read in [8xxx]) and `plaintext_guess.txt` (with the code-word readings).
 
@@ -302,9 +302,9 @@ to Cologne, which is far from the war, [as …] you thought fit. However, becaus
 about asking for the passports is to be considered suspended. It matters […] to the Holy Father [that] this new
 instruction, which is sent to you by three different routes so as to ensure it arrives… To save time you must
 at once show this dispatch to Mgr Morichini, for his guidance in the negotiations entrusted to him.&quot;</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soglia1848/plaintext_raw.txt">plaintext_raw.txt</a></p><pre>conmio(dispaccio) del[8734][8760][8904][8739][8413] si{8} lecommetevache in segvito degli(ordin)i dati asva eccellenza il[8632], [8227] di lvtzovv di abbandonare(Roma) ella si facesse del pari a richiedere i passa(port)i per restitvirsi alla dominante, oper condvrsi in [8116]che[8211][8346]a della [8310] [8120]e [8704]e lo avesse credvto(opportuno). [8737] per nvovesopraggivnte circostanze le (parte)cipo [8093][8102] del (Padre) che ella rimanga in insprvck presso l (Imperatore) e ovvnque egli fosse per recarsi; intendendosi sospesa laindicata delibera[8136] relativa alla domanda de passa(port)i: interessa[8131] a(Padre) [8122]a nvova(istruzione), chele viene indirizzata per tre diverse vie, [8110] assicvrarne l arrivo. a(Monsignor) morichini perdilvi norma alle pratiche affidategli</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soglia1848/plaintext_guess.txt">plaintext_guess.txt</a></p><pre>conmio(foglio) del[8734][8760][8904][8739][8413] si{8} lecommetevache in segvito degli(ordin)i dati asva eccellenza il(Signor), [8227] di lvtzovv di abbandonare(Roma) ella si facesse del pari a richiedere i passa(port)i per restitvirsi alla dominante, oper condvrsi in (Colonia)che(è)(lontan)a della (guerra) (com)e [8704]e lo avesse credvto(opportuno). (Tuttavia) per nvovesopraggivnte circostanze le (parte)cipo [8093][8102] del (Padre) che ella rimanga in insprvck presso l (Imperatore) e ovvnque egli fosse per recarsi; intendendosi sospesa laindicata delibera[8136] relativa alla domanda de passa(port)i: interessa[8131] a(Padre) (cotest)a nvova(istruzione), chele viene indirizzata per tre diverse vie, (col fine di) assicvrarne l arrivo. a(Monsignor) morichini perdilvi norma alle pratiche affidategli</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soglia1848/texts/plaintext.md">plaintext.md</a></p><pre># Soglia to Viale Prelà, Rome, 15 June 1848: normalised plaintext and English
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soglia1848/plaintext_raw.txt">plaintext_raw.txt</a></p><pre translate="no">conmio(dispaccio) del[8734][8760][8904][8739][8413] si{8} lecommetevache in segvito degli(ordin)i dati asva eccellenza il[8632], [8227] di lvtzovv di abbandonare(Roma) ella si facesse del pari a richiedere i passa(port)i per restitvirsi alla dominante, oper condvrsi in [8116]che[8211][8346]a della [8310] [8120]e [8704]e lo avesse credvto(opportuno). [8737] per nvovesopraggivnte circostanze le (parte)cipo [8093][8102] del (Padre) che ella rimanga in insprvck presso l (Imperatore) e ovvnque egli fosse per recarsi; intendendosi sospesa laindicata delibera[8136] relativa alla domanda de passa(port)i: interessa[8131] a(Padre) [8122]a nvova(istruzione), chele viene indirizzata per tre diverse vie, [8110] assicvrarne l arrivo. a(Monsignor) morichini perdilvi norma alle pratiche affidategli</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soglia1848/plaintext_guess.txt">plaintext_guess.txt</a></p><pre translate="no">conmio(foglio) del[8734][8760][8904][8739][8413] si{8} lecommetevache in segvito degli(ordin)i dati asva eccellenza il(Signor), [8227] di lvtzovv di abbandonare(Roma) ella si facesse del pari a richiedere i passa(port)i per restitvirsi alla dominante, oper condvrsi in (Colonia)che(è)(lontan)a della (guerra) (com)e [8704]e lo avesse credvto(opportuno). (Tuttavia) per nvovesopraggivnte circostanze le (parte)cipo [8093][8102] del (Padre) che ella rimanga in insprvck presso l (Imperatore) e ovvnque egli fosse per recarsi; intendendosi sospesa laindicata delibera[8136] relativa alla domanda de passa(port)i: interessa[8131] a(Padre) (cotest)a nvova(istruzione), chele viene indirizzata per tre diverse vie, (col fine di) assicvrarne l arrivo. a(Monsignor) morichini perdilvi norma alle pratiche affidategli</pre></details>
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soglia1848/texts/plaintext.md">plaintext.md</a></p><pre translate="no"># Soglia to Viale Prelà, Rome, 15 June 1848: normalised plaintext and English
 
 Copied 22 Oct 2026 verbatim from NOTES.md. The literal decoder outputs are `plaintext_raw.txt` (code words not read in [8xxx]) and `plaintext_guess.txt` (with the code-word readings).
 
@@ -330,7 +330,7 @@ to Cologne, which is far from the war, [as …] you thought fit. However, becaus
 about asking for the passports is to be considered suspended. It matters […] to the Holy Father [that] this new
 instruction, which is sent to you by three different routes so as to ensure it arrives… To save time you must
 at once show this dispatch to Mgr Morichini, for his guidance in the negotiations entrusted to him.&quot;</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soglia1848/texts/plaintext_en.md">plaintext_en.md</a></p><pre>&lt;!-- English translation of the reading in texts/plaintext.md (Claude Opus 5.5, 23 Oct 2026): Cardinal Soglia&#x27;s ciphered despatch to the nuncio Viale Prelà, Rome, 15 June 1848, as deciphered here. Same holes: [8xxx] = code group not read; words that rest on code-word readings are in ( ) as in the reading. --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soglia1848/texts/plaintext_en.md">plaintext_en.md</a></p><pre translate="no">&lt;!-- English translation of the reading in texts/plaintext.md (Claude Opus 5.5, 23 Oct 2026): Cardinal Soglia&#x27;s ciphered despatch to the nuncio Viale Prelà, Rome, 15 June 1848, as deciphered here. Same holes: [8xxx] = code group not read; words that rest on code-word readings are in ( ) as in the reading. --&gt;
 
 # Soglia to Viale Prelà, Rome, 15 June 1848: English translation
 
@@ -362,9 +362,9 @@ Thomas and Armin on <em>Il Labaro</em> (nos. 12&ndash;14). No decipherment had b
 <li><em>Diario del principe Agostino Chigi Albani</em>, 1848: 6 and 9 May, 17 May, 27 May, 20 June, 6 and 8 July (<a href="https://it.wikisource.org/wiki/Diario_del_principe_Agostino_Chigi_Albani/Anno_1848" rel="noopener">Wikisource</a>).</li>
 <li>L. Sandoni, &ldquo;Viale Prel&agrave;, Michele&rdquo;, <em>Dizionario Biografico degli Italiani</em> 99 (2020) (<a href="https://www.treccani.it/enciclopedia/michele-viale-prela_(Dizionario-Biografico)/" rel="noopener">Treccani</a>).</li>
 </ul>
-<p class="muted">The corrected ciphertext (<code>ct2.txt</code>), the decoder with the table and the code (<code>decode.py</code>, <code>key.json</code>, <code>codes.json</code>),
-the synthetic control (<code>synth.py</code>), the rank fit and the windows (<code>rankfit2.py</code>, <code>windows2.py</code>), the line strips checked against
-the transcription (<code>strips/</code>) and the notes are in the repository (<code>targets/soglia1848/</code>). Run <code>python decode.py --guess</code> for the reading
+<p class="muted">The corrected ciphertext (<code translate="no">ct2.txt</code>), the decoder with the table and the code (<code translate="no">decode.py</code>, <code translate="no">key.json</code>, <code translate="no">codes.json</code>),
+the synthetic control (<code translate="no">synth.py</code>), the rank fit and the windows (<code translate="no">rankfit2.py</code>, <code translate="no">windows2.py</code>), the line strips checked against
+the transcription (<code translate="no">strips/</code>) and the notes are in the repository (<code translate="no">targets/soglia1848/</code>). Run <code translate="no">python decode.py --guess</code> for the reading
 with the context code words filled in.</p>
 
 </main>
@@ -372,7 +372,7 @@ with the context code words filled in.</p>
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Broadsheet scan: Tony Gaffney, via Klaus Schmeh, Cipherbrain</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="zeschau1841.html" rel="prev">&larr; Zeschau 1841&ndash;43 1841&ndash;1843</a><a href="eugenie1859.html" rel="next">Napoleon III / Empress Eugénie 1859 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

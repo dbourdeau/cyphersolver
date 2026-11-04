@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">3 9 &middot; is &middot; ш 5 $ φ ſ ʒ &middot; Y T &oplus; Y 3 φ Ð Y +ₓ<br>ck is hourly expec[r]ted<br>A ˣ+ &middot; E Y &middot; G 8 &middot; I 4 &middot; S &#8864; &middot; U $</div>
+  <div class="cipherstrip" translate="no">3 9 &middot; is &middot; ш 5 $ φ ſ ʒ &middot; Y T &oplus; Y 3 φ Ð Y +ₓ<br>ck is hourly expec[r]ted<br>A ˣ+ &middot; E Y &middot; G 8 &middot; I 4 &middot; S &#8864; &middot; U $</div>
   <p class="kicker">Washington &rarr; Confederate lines (presumed) &middot; symbol substitution, the Jordan&ndash;Greenhow cipher &middot; summer 1861, seized 23 August 1861 &middot; side 1 deciphered with the 1864 key</p>
   <h1>Rose Greenhow&rsquo;s letter on mourning paper, Washington 1861</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_rose-o-neal-greenhow.jpg" alt="Rose O&#x27;Neal Greenhow" title="Rose O&#x27;Neal Greenhow: Photograph, Brady studio, c. 1855-65. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Rose O'Neal Greenhow</figcaption></figure></div><!-- /parties -->
@@ -78,7 +78,7 @@
 <figure data-credit="National Archives, RG 45, M1091 Subject File of the Confederate States Navy, naId 62017285, image 0484, via the National Archives Catalog"><img src="greenhow1861_key.jpg" alt="The key sheet: a column of symbols against the letters A to Z, with digraph signs, code signs for words and figure signs to the right" loading="lazy">
 <figcaption>The key sheet: one symbol for each letter (left), digraph signs (th, ph, sh, st, oo, ie, ch, un, on, ei, ss), signs for words such as Thousand, Horses, Capitol, Lincoln, Washington and Richmond, the figures 1&ndash;9, and the rule &ldquo;Double letter: 2d letter itself inverted&rdquo;. <span class="credit">Image: National Archives, RG 45, M1091 Subject File of the Confederate States Navy, naId 62017285, image 0484, via the National Archives Catalog.</span></figcaption></figure>
 <p>On side 1 the key works as written, with a few points checked on the signs: G (a plain 8) and U (a struck 8) are distinct, as are I (a crossed 4) and R (a looped 4). N has two forms: the hooked form of the key sheet (BEING, MORNING, FIND) and a looped l with a crossbar that is not on the sheet (LELAND, PANICK, the second N of MORNING); its value comes from context, and every word that contains it is otherwise keyed. Doubled letters are written twice (ATTACK, WILL, EFFORT, FERRY); the sheet&rsquo;s inverted-second-letter rule is not used here.</p>
-<p>Controls (<code>decode.py</code>): with the key, 17 of the 27 whole cipher words are in an English word list and the mean letter-pair score is &minus;2.49; 2,000 random substitution keys average 0.5 words (best 5) and &minus;4.72; the key shifted by one letter gives 4 words; the true key with the signs shuffled inside each word gives at most 6. The word count understates the fit, because her spellings (BUISY, PANICK, BELEIVE) and the words cut by losses do not count.</p>
+<p>Controls (<code translate="no">decode.py</code>): with the key, 17 of the 27 whole cipher words are in an English word list and the mean letter-pair score is &minus;2.49; 2,000 random substitution keys average 0.5 words (best 5) and &minus;4.72; the key shifted by one letter gives 4 words; the true key with the signs shuffled inside each word gives at most 6. The word count understates the fit, because her spellings (BUISY, PANICK, BELEIVE) and the words cut by losses do not count.</p>
 
 <h2 id="reading"><span class="num">03</span> Side 1 deciphered</h2>
 <figure class="creveal" data-src="reveal/greenhow1861.json"></figure>
@@ -107,7 +107,7 @@
 <h3>Greenhow, mourning-paper letter, side 1 (naId 1634036 image 1) <span class="st partial">read in part</span></h3>
 <p>From Washington in summer 1861: McClellan is busy and the panic is great; an attack is hourly expected and they believe it will be simultaneous from [...]rds Ferry (Edwards Ferry?) and [...]timore (Baltimore?); an effort is being made to find out who gave the alarm; a troop of cavalry [...]nt from here this morning; Harper&#x27;s Ferry is named. Intelligence from the Greenhow ring before her arrest on 23 Aug 1861.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (60% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/greenhow1861/transcription_side1.txt">transcription_side1.txt</a></p><pre># Greenhow, letter in cipher on mourning paper, side 1: sign transcription
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/greenhow1861/transcription_side1.txt">transcription_side1.txt</a></p><pre translate="no"># Greenhow, letter in cipher on mourning paper, side 1: sign transcription
 # NARA RG 59, Seized Correspondence of Rose O&#x27;Neal Greenhow (entry A1-986), naId 1634036, image 1
 # https://catalog.archives.gov/id/1634036
 #
@@ -165,7 +165,7 @@
 #
 # Signs the key does not account for: the R-sign between C and T in EXPEC-R-TED (line 5); no S-sign after
 # SIMULTANEOU (line 8, the word ends in U and a dot); no O-sign in EFF|RT (lines 10-11, line end at the ruled border).</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/greenhow1861/decryption_side1.txt">decryption_side1.txt</a></p><pre># Greenhow, mourning-paper letter, side 1: decryption line by line against transcription_side1.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/greenhow1861/decryption_side1.txt">decryption_side1.txt</a></p><pre translate="no"># Greenhow, mourning-paper letter, side 1: decryption line by line against transcription_side1.txt
 # Key: 1864 Greenhow key, NARA M1091 naId 62017285 image 0484 (key_1864.md). python decode.py reproduces the decode.
 # Capitals = cipher signs with their key value; lower case in a cipher word = uncertain sign; (word) = written in clear;
 # _ = paper loss. After &quot;-&gt;&quot;: the line read as words, [x] supplied, [?x] conjecture.
@@ -192,7 +192,7 @@ hd  P 31 ?                                   -&gt; heading, not read
 N: two sign forms. The ?-form (key sheet) in BEING, MORNING (first N), FIND; a looped l with a crossbar (not on the
 key sheet, value from context) in LELAND, PANICK and the second N of MORNING. Every word with it is otherwise keyed.
 G and U are distinct (plain 8 = G; struck 8 = U); I and R are distinct (crossed 4 = I; looped 4 = R), as on the key.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/greenhow1861/reading_side1.md">reading_side1.md</a></p><pre># Greenhow, letter in cipher on mourning paper, side 1: the reading as sentences
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/greenhow1861/reading_side1.md">reading_side1.md</a></p><pre translate="no"># Greenhow, letter in cipher on mourning paper, side 1: the reading as sentences
 
 English, so no translation. Spelling as written (buisy, panick, beleive, McLeland). Words in clear on the leaf are in
 italics. Marks: [...] = lost with the paper; [x] = letters supplied where the paper is lost or a sign is missing;
@@ -206,7 +206,7 @@ Al[?l] is acti[vi]ty. McLeland (McClellan) is buisy. *Myste[...]* *a[...]* [...]
 alarm. A tro[?op o]f cavalry *u[...]* [...]nt fr[o]m here [?th]is morning. *L[...]* Harpe[?r&#x27;s F]erry [...]ont.</pre></details>
 <h3>Greenhow, mourning-paper letter, side 2 (naId 1634036 image 2) <span class="st stuck">decoded, not read</span></h3>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/greenhow1861/transcription_side2.txt">transcription_side2.txt</a></p><pre># Greenhow, letter in cipher on mourning paper, side 2 (NARA naId 1634036, image 2)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/greenhow1861/transcription_side2.txt">transcription_side2.txt</a></p><pre translate="no"># Greenhow, letter in cipher on mourning paper, side 2 (NARA naId 1634036, image 2)
 # https://catalog.archives.gov/id/1634036
 # Only two ink lines at the top; the rest of the side is show-through from side 1.
 # Read once, by the first agent only; NOT re-read independently. Signs given by their key value; [...] = loss,
@@ -214,7 +214,7 @@ alarm. A tro[?op o]f cavalry *u[...]* [...]nt fr[o]m here [?th]is morning. *L[..
 
 1  G R [...] E . T I M [...] B O [...]
 2  I [...] G A N I [Z?] [?] I N G .</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/greenhow1861/decryption_side2.txt">decryption_side2.txt</a></p><pre># Greenhow, mourning-paper letter, side 2 (two ink lines): decoded, not read
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/greenhow1861/decryption_side2.txt">decryption_side2.txt</a></p><pre translate="no"># Greenhow, mourning-paper letter, side 2 (two ink lines): decoded, not read
 # Key values as in transcription_side2.txt. Tentative; not re-read independently.
 
 1  G R [...] E . T I M [...] B O [...]       -&gt; gr[...]e. tim[...] bo[...]
@@ -232,13 +232,13 @@ alarm. A tro[?op o]f cavalry *u[...]* [...]nt fr[o]m here [?th]is morning. *L[..
 <li>Rose O&rsquo;Neal Greenhow, <em>My Imprisonment and the First Year of Abolition Rule at Washington</em> (London, 1863), <a href="https://archive.org/details/myimprisonmentfi00gree" rel="noopener">archive.org</a>; Allan Pinkerton, <em>The Spy of the Rebellion</em> (1883).</li>
 <li>The Rosenbach, &ldquo;Code Breaker&rdquo; (2011), on another Greenhow cipher note read with the same family of key.</li>
 </ul>
-<p class="muted">Files: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/greenhow1861">targets/greenhow1861/</a> (notes, shape-label transcription, key table, <code>decode.py</code> and its controls, the figure-scrap test). Contributed by WAINUT in pull request #100; reviewed for the site on 27 October 2026.</p>
+<p class="muted">Files: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/greenhow1861">targets/greenhow1861/</a> (notes, shape-label transcription, key table, <code translate="no">decode.py</code> and its controls, the figure-scrap test). Contributed by WAINUT in pull request #100; reviewed for the site on 27 October 2026.</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; National Archives (NARA), RG 59, Seized Correspondence of Rose O&rsquo;Neal Greenhow, and RG 45, M1091, via the National Archives Catalog</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="jordan1861.html" rel="prev">&larr; Jordan to &ldquo;Rachel&rdquo; 1861 1861</a><a href="milroy.html" rel="next">Milroy telegrams 1861&ndash;62 1861&ndash;62 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

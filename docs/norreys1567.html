@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-  <div class="cipherstrip">&#x2203;&#x22A3;3&#x0304; s&#x0308;&#x228F;&#x2643; &middot; 3 5: &#x2294; 7o T 2 &#x0393; &#x228F; &nbsp;&middot;&nbsp; 2 7&#x0308; &#x266D; m<br>M a s t e r &middot; S t e w a r d e &nbsp;&middot;&nbsp; r u i n</div>
+  <div class="cipherstrip" translate="no">&#x2203;&#x22A3;3&#x0304; s&#x0308;&#x228F;&#x2643; &middot; 3 5: &#x2294; 7o T 2 &#x0393; &#x228F; &nbsp;&middot;&nbsp; 2 7&#x0308; &#x266D; m<br>M a s t e r &middot; S t e w a r d e &nbsp;&middot;&nbsp; r u i n</div>
   <p class="kicker">Paris &rarr; Sir William Cecil &middot; homophonic cipher of graphic signs with name signs &middot; June 1567 &ndash; March 1568</p>
   <h1>Sir Henry Norreys to Cecil, 1567&ndash;68: the enciphered words of seven despatches</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_henry-norris.jpg" alt="Henry Norris" title="Henry Norris: English school portrait, 1585. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Henry Norris</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_william-cecil.jpg" alt="William Cecil" title="William Cecil: Portrait attributed to the workshop of Marcus Gheeraerts the Younger, late 1580s. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>William Cecil</figcaption></figure></div><!-- /parties -->
@@ -96,7 +96,7 @@
 <tr><td>9 Feb 1568 (5)&ndash;(9)</td><td>the French King, the Protestants; <strong>ruin</strong>; the Prince, the Admiral</td><td>&ldquo;peace betwixt the French King and the Protestants, otherwise Norris much doubts the ruin of the Prince of Cond&eacute; and the Admiral&rdquo;</td></tr>
 <tr><td>24 Feb 1568 (2)&ndash;(4), (6), (8)</td><td>the Protestants, the Prince, the Admiral; money; <strong>remain</strong></td><td>&ldquo;the Prince and the Admiral &hellip; that they may have money to pay the Almains, whom otherwise he much fears will not long remain with them&rdquo;</td></tr>
 </table>
-<p><strong>Control.</strong> The script <code>work/tomokiyo_apply.py</code> counts dictionary words (the, and, lord, papists, realms, Rothes, earl, stayed, reason, ruin, master, steward&hellip;) in the decrypted groups. The real table gives 8 hits. With its letter values shuffled among the same signs (1,000 seeded trials) the mean is 0.22 and the maximum 3, and no shuffle produces a whole cribbed word such as Rothes, papystes, Steuarde, Murrei or Savoia. The table is Norris&rsquo;s cipher, used from 1567 and not only in 1568.</p>
+<p><strong>Control.</strong> The script <code translate="no">work/tomokiyo_apply.py</code> counts dictionary words (the, and, lord, papists, realms, Rothes, earl, stayed, reason, ruin, master, steward&hellip;) in the decrypted groups. The real table gives 8 hits. With its letter values shuffled among the same signs (1,000 seeded trials) the mean is 0.22 and the maximum 3, and no shuffle produces a whole cribbed word such as Rothes, papystes, Steuarde, Murrei or Savoia. The table is Norris&rsquo;s cipher, used from 1567 and not only in 1568.</p>
 <p><strong>A word list, not a reading.</strong> Forbes copied only the ciphered words of the six earlier letters, so what the table gives for them is single words matched to the Calendar&rsquo;s summaries, with no sentences to build. Under the reading bar the siblings count as <em>decoded, not read</em> (check of 23 October 2026); the word list stands as a word-level decipherment. Only the originals in TNA SP 70/96&ndash;97, whose clear text would put the words back into their sentences, could turn them into a reading.</p>
 
 <h2 id="the-letter-of-9-march-1568"><span class="num">03</span>The letter of 9 March 1568</h2>
@@ -122,7 +122,7 @@
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>Norreys to Cecil, Paris, 9 March 1567/8 (Add MS 4136 f. 161, DECODE R9251) <span class="st found">not prose</span></h3>
 <p>Forbes&#x27;s copy of the three ciphered items of Norreys&#x27;s letter: the French King, an unread five-sign word, and probably the Queen of Scots. In context (CSP Foreign viii no. 2054) Norreys reports that after the treaty of Longjumeau the King sent gentlemen to the Pope, the Emperor, the King Catholic and the Swiss, and that if peace is concluded an attempt will be made into Scotland for the delivery of the Queen.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/norreys1567/transcription.txt">transcription.txt</a></p><pre># Norreys -&gt; Cecil, ciphered words as copied by Patrick Forbes, BL Add MS 4136 ff.160-161
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/norreys1567/transcription.txt">transcription.txt</a></p><pre translate="no"># Norreys -&gt; Cecil, ciphered words as copied by Patrick Forbes, BL Add MS 4136 ff.160-161
 # (DECODE R9250 p.2 = f.160; R9251 p.1 = f.161). Space-separated sign tokens; # = single name sign.
 # Token names are ad hoc: xi=ξ, oo=∞-like double circle, P=♇ (hooked e/p shape), J=♃ (4-like with hook),
 # Gam=Γ, cup=⊔, sqc=⊏, arc=⌒, dash-a=⊣, flat=♭, 3b=3 with bar over, 3u=3 underlined, s2=s with diaeresis,
@@ -189,7 +189,7 @@
 1: #vo
 2: + rc o l inf
 3: #d-loop</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/norreys1567/reading.md">reading.md</a></p><pre># Norreys to Cecil, Paris, 9 March 1567/8 — the three ciphered items (DECODE R9251, Add MS 4136 f.161)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/norreys1567/reading.md">reading.md</a></p><pre translate="no"># Norreys to Cecil, Paris, 9 March 1567/8 — the three ciphered items (DECODE R9251, Add MS 4136 f.161)
 
 Key: Cecil-Norris cipher, 1568 (Tomokiyo&#x27;s reconstruction from *Cabala*, 1663). Grades H/C/M/I.
 
@@ -206,7 +206,7 @@ Sibling readings: see NOTES.md; full decrypt of every group in work/tomokiyo_app
 <h3>Norreys&#x27;s earlier letters, 4 June 1567 to 24 Feb 1567/8 (ff. 160-161) <span class="st stuck">decoded, not read</span></h3>
 <p>The ciphered words of Norreys&#x27;s letters of 4 June, 6 July and 10 July 1567 and 6, 9 and 24 Feb 1567/8, as copied by Forbes, decrypted group by group with Tomokiyo&#x27;s 1568 Cecil-Norris table and checked against the calendared letters in CSP Foreign viii.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/norreys1567/transcription.txt">transcription.txt</a></p><pre># Norreys -&gt; Cecil, ciphered words as copied by Patrick Forbes, BL Add MS 4136 ff.160-161
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/norreys1567/transcription.txt">transcription.txt</a></p><pre translate="no"># Norreys -&gt; Cecil, ciphered words as copied by Patrick Forbes, BL Add MS 4136 ff.160-161
 # (DECODE R9250 p.2 = f.160; R9251 p.1 = f.161). Space-separated sign tokens; # = single name sign.
 # Token names are ad hoc: xi=ξ, oo=∞-like double circle, P=♇ (hooked e/p shape), J=♃ (4-like with hook),
 # Gam=Γ, cup=⊔, sqc=⊏, arc=⌒, dash-a=⊣, flat=♭, 3b=3 with bar over, 3u=3 underlined, s2=s with diaeresis,

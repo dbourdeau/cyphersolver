@@ -69,16 +69,16 @@
 
 <h2 id="ponte"><span class="num">02</span> Ponte, Escudero and a possible quarrel</h2>
 <p>Bold words were encrypted. Spaces, accents and punctuation are editorial; the surrounding clear Spanish is lightly normalized.</p>
-<blockquote lang="es">…que no quieren hazer gracia sino mera justicia, con que estaría yo contento si se guarda. <strong>A Ponte creo cierto</strong> se le deve amistad, y no sé si se conforman <strong>conforman él y Escudero</strong>, ni si ay razón de encuentro entre ellos, que si la huviesse a entrambos les costaría su dinero…</blockquote>
+<blockquote lang="es" translate="no">…que no quieren hazer gracia sino mera justicia, con que estaría yo contento si se guarda. <strong>A Ponte creo cierto</strong> se le deve amistad, y no sé si se conforman <strong>conforman él y Escudero</strong>, ni si ay razón de encuentro entre ellos, que si la huviesse a entrambos les costaría su dinero…</blockquote>
 <figure><img data-credit="Bibliothèque nationale de France, via Wikimedia Commons" src="segura1596_ponte.jpg" alt="Cipher runs among the clear Spanish on folio 196 verso" loading="lazy"><figcaption>F. 196v, view 337. The shorter passage: A Ponte/Aponte, friendship, and Escudero. BnF, via Wikimedia Commons.</figcaption></figure>
-<p>The decrypted letters run <code>apon / tecreocierto / conformanelyes / cudero</code>. “A Ponte” and “Aponte” are alternative segmentations; no first name is established. The clear <em>se conforman</em> followed by cipher <em>conforman</em> is awkward and is kept as written. In sense, Segura discusses friendship owed to Ponte/Aponte, whether he and Escudero agree, and the financial consequences of a quarrel. The clear text that follows says Segura does not want the Constable's money diminished by it and will return to Toledo to finish these matters.</p>
+<p>The decrypted letters run <code translate="no">apon / tecreocierto / conformanelyes / cudero</code>. “A Ponte” and “Aponte” are alternative segmentations; no first name is established. The clear <em>se conforman</em> followed by cipher <em>conforman</em> is awkward and is kept as written. In sense, Segura discusses friendship owed to Ponte/Aponte, whether he and Escudero agree, and the financial consequences of a quarrel. The clear text that follows says Segura does not want the Constable's money diminished by it and will return to Toledo to finish these matters.</p>
 
 <h2 id="comet"><span class="num">03</span> “El mundo se acabará o morirá el rey”</h2>
 <figure class="creveal" data-src="reveal/segura1596.json"></figure>
-<blockquote lang="es">Un consejero muy grave me ha dicho que han hecho aquí junta sobre la cometa que ha avido estos días, y <strong>dizen que el mundo se acabará o morirá el rey por setiembre. Él bien cerca dello paresce que anda. Creo en Dios.</strong></blockquote>
+<blockquote lang="es" translate="no">Un consejero muy grave me ha dicho que han hecho aquí junta sobre la cometa que ha avido estos días, y <strong>dizen que el mundo se acabará o morirá el rey por setiembre. Él bien cerca dello paresce que anda. Creo en Dios.</strong></blockquote>
 <p>“A very weighty councillor has told me that they have held a meeting here about the comet that has appeared these days, and they say the world will end or the king will die around September. He seems to be very close to it. I believe in God.”</p>
 <figure><img data-credit="Bibliothèque nationale de France, via Wikimedia Commons" src="segura1596_comet.jpg" alt="The clear introduction about a comet and the encrypted prediction on folio 197 recto" loading="lazy"><figcaption>F. 197r, view 338. The first two cipher signs, which decrypt as <em>di</em>, stand at the end of the introductory line. BnF, via Wikimedia Commons.</figcaption></figure>
-<p>The four decrypted lines are <code>dizenqueelmundoseacabara / omoriraelreyporsetiem / breelbiencercadellopa / rescequeandacreoendios</code>. The line break inside <em>setiembre</em> helps resolve an overwritten sign at the end of the second line. The final <em>creo en Dios</em> is kept; its punctuation and tone are interpretive. Segura is reporting a councillor's account. It does not establish an official council decision, and the comet has not been identified astronomically.</p>
+<p>The four decrypted lines are <code translate="no">dizenqueelmundoseacabara / omoriraelreyporsetiem / breelbiencercadellopa / rescequeandacreoendios</code>. The line break inside <em>setiembre</em> helps resolve an overwritten sign at the end of the second line. The final <em>creo en Dios</em> is kept; its punctuation and tone are interpretive. Segura is reporting a councillor's account. It does not establish an official council decision, and the comet has not been identified astronomically.</p>
 
 <h2 id="method"><span class="num">04</span> How the key was recovered</h2>
 <p>The first transcription had 114 tokens and wrongly treated several joined pairs as single signs. A Python homophonic solver failed; a guessed crib, <em>pronostico</em>, also failed and was discarded. A faster C# solver (simulated annealing) then tested three transcription variants, 250 restarts each, against the repository's Spanish Golden Age five-gram model. Only the variant that split the joined signs and temporarily merged dotted with undotted forms produced connected Spanish: <em>dizen que el mundo</em>, <em>el rey</em>, <em>paresce que anda</em> and <em>Escudero</em>.</p>
@@ -95,14 +95,14 @@
 <tr><td>X</td><td>m</td><td>B, line 2: overwritten sign in setiem-bre</td></tr>
 <tr><td>ud</td><td>ll</td><td>B, line 3: dotted singleton in dello</td></tr>
 </tbody></table>
-<p>Dotted signs are not all nulls: the values <code>ad=r</code>, <code>Yd=i</code> and the tentative <code>ud=ll</code> are kept. The reconstructed key covers only the signs that occur here. Further key material could confirm or revise the singletons, the segmentation of the proper name and the awkward wording of the shorter passage.</p>
+<p>Dotted signs are not all nulls: the values <code translate="no">ad=r</code>, <code translate="no">Yd=i</code> and the tentative <code translate="no">ud=ll</code> are kept. The reconstructed key covers only the signs that occur here. Further key material could confirm or revise the singletons, the segmentation of the proper name and the awkward wording of the shorter passage.</p>
 
 <!-- texts:start -->
 <h2 id="texts">Full texts</h2>
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>BnF espagnol 336 no. 99 ff. 196r-198r, Madrid, 8 Aug 1596</h3>
 <p>Matheo de Segura to the Constable of Castile: after a grave councillor&#x27;s report of a meeting about a recent comet, the cipher says &#x27;dizen que el mundo se acabará o morirá el rey por setiembre. Él bien cerca dello paresce que anda. Creo en Dios&#x27;; a shorter passage names A Ponte and Escudero. Key rebuilt ciphertext-only from this letter; six singleton values are graded M.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/segura1596/cipher_final.txt">cipher_final.txt</a></p><pre>[que estava yo contento si se guarda]
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/segura1596/cipher_final.txt">cipher_final.txt</a></p><pre translate="no">[que estava yo contento si se guarda]
 Hd r R z L
 Y n o rd a l z o D l a openC k
 [se le deve amistad y no se si se conforman]
@@ -116,7 +116,7 @@ k T z a D hash r l b ad l u R z a three l Y D l X
 g a n l b g D l L o l hash c s e l ud z R r
 a l three o l qshape d l r L e r o a l k l L e Yd J three
 [Tambien disen que se tratan treguas entre su magestad y Bearne]</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/segura1596/cipher_tokens.txt">cipher_tokens.txt</a></p><pre>Hd r R z L
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/segura1596/cipher_tokens.txt">cipher_tokens.txt</a></p><pre translate="no">Hd r R z L
 Y n o rd a l z o D l a openC k
 o z L E z a T r Q l b u l three
 o inf e n a k
@@ -124,7 +124,7 @@ e D bar8 n L qshape d l l b T inf L e z three l r o s g H a s
 k T z a D hash r l b ad l u R z a three l Y D l X
 g a n l b g D l L o l hash c s e l ud z R r
 a l three o l qshape d l r L e r o a l k l L e Yd J three</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/segura1596/reading.md">reading.md</a></p><pre># Matheo de Segura to the Constable of Castile, Madrid, 8 August 1596
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/segura1596/reading.md">reading.md</a></p><pre translate="no"># Matheo de Segura to the Constable of Castile, Madrid, 8 August 1596
 
 BnF espagnol 336 no. 99, ff. 196r–198r; Gallica views 336–340.
 Reading made 23 September 2026 from the images, without an external decipherment.
@@ -181,7 +181,7 @@ This reports what a councillor told Segura. It does not establish an official co
 | ud | ll | B, line 3 | M: dotted singleton in *dello* |
 
 The other 119 token readings are I, inferred from the substitution and Spanish context. None is graded H or C: no contemporary key or independent plaintext was obtained. Dotted signs are not indiscriminately erased: `ad=r`, `Yd=i` and `ud=ll` are kept. The reconstructed key covers the signs used here, not the complete historical cipher alphabet.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/segura1596/token_reading.tsv">token_reading.tsv</a></p><pre>line	position	token	plaintext	grade
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/segura1596/token_reading.tsv">token_reading.tsv</a></p><pre translate="no">line	position	token	plaintext	grade
 1	1	Hd	[null]	M
 1	2	r	a	I
 1	3	R	p	I
@@ -307,7 +307,7 @@ The other 119 token readings are I, inferred from the substitution and Spanish c
 8	20	Yd	i	I
 8	21	J	o	I
 8	22	three	s	I</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/segura1596/segura1596_en.md">segura1596_en.md</a></p><pre>&lt;!-- English translation of the two passages A and B of reading.md (Claude Opus 5.5, 23 Oct 2026): the cipher (in **bold**) with the clear sentences around it, as reading.md gives them; the rest of the five-page letter is only summarised there and is not translated. An excerpt. --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/segura1596/segura1596_en.md">segura1596_en.md</a></p><pre translate="no">&lt;!-- English translation of the two passages A and B of reading.md (Claude Opus 5.5, 23 Oct 2026): the cipher (in **bold**) with the clear sentences around it, as reading.md gives them; the rest of the five-page letter is only summarised there and is not translated. An excerpt. --&gt;
 
 # Matheo de Segura to the Constable of Castile, Madrid, 8 August 1596 (BnF espagnol 336 no. 99): English translation of the cipher passages
 
@@ -343,7 +343,7 @@ God.**</pre></details>
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Manuscript: Biblioth&egrave;que nationale de France, via Wikimedia Commons</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="nevers1595.html" rel="prev">&larr; Nevers to Villeroy 1595 1595</a><a href="blasco1597.html" rel="next">Juan Blasco de Aragon to Not&hellip; 1597 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

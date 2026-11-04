@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">Se la S.V. havesse da papa fare questa impresa<br>insieme cum lo signor Malatesta [e] conte d&rsquo;Urbino</div>
+  <div class="cipherstrip" translate="no">Se la S.V. havesse da papa fare questa impresa<br>insieme cum lo signor Malatesta [e] conte d&rsquo;Urbino</div>
   <p class="kicker">Forl&igrave; &rarr; Gianfrancesco Gonzaga, Mantua &middot; homophonic cipher of graphic signs with name codes, Italian &middot; 6 November 1428</p>
   <h1>An informant at Forl&igrave; to Gianfrancesco Gonzaga, 6 November 1428</h1>
 <div class="parties"><figure class="party recipient"><img src="portrait_gianfrancesco-i-gonzaga.jpg" alt="Gianfrancesco I Gonzaga" title="Gianfrancesco I Gonzaga: Medal by Pisanello, c. 1439 (National Gallery of Art). Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Gianfrancesco I Gonzaga</figcaption></figure></div><!-- /parties -->
@@ -75,7 +75,7 @@
 <p>The informant reports that the governor secretly favours the marquess&rsquo;s sons, and that Guidantonio da Montefeltro, count of Urbino, is in secret contact with Giovanni de Ramberto, which has aroused suspicion. Full text: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mutiliana1428/reading_p3.md">reading_p3.md</a>.</p>
 
 <h2 id="method"><span class="num">02</span> Method</h2>
-<p>One pass transcribed the gloss (<code>p3_gloss.md</code>), a second the signs (<code>p3_signs.txt</code>). The key comes from the gloss, and every run was deciphered from its signs rather than from the faint gloss, so the legible gloss checks the reading. A test against chance and overfitting with an Italian letter model (<code>docs/_validate.py</code>) passes.</p>
+<p>One pass transcribed the gloss (<code translate="no">p3_gloss.md</code>), a second the signs (<code translate="no">p3_signs.txt</code>). The key comes from the gloss, and every run was deciphered from its signs rather than from the faint gloss, so the legible gloss checks the reading. A test against chance and overfitting with an Italian letter model (<code translate="no">docs/_validate.py</code>) passes.</p>
 
 <h2 id="open"><span class="num">03</span> What remains uncertain</h2>
 <ul>
@@ -89,7 +89,7 @@
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>Forlì, 6 Nov 1428 (DECODE R1854 image 3)</h3>
 <p>A Gonzaga informant at Forlì tells Gianfrancesco Gonzaga that the papal governor of Forlì secretly favours the marquess&#x27;s sons and that the pope is said to be with them; an enterprise with the lord Malatesta and the count of Urbino would make the lord of Mantua a great lord in a short time; and the count of Urbino (Guidantonio da Montefeltro) is secretly in close contact with Giovanni de Ramberto.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mutiliana1428/p3_signs.txt">p3_signs.txt</a></p><pre># R1854 p.3 (IMG_R1854_I8413_P3), Forli 6 Nov 1428, to the lord of Mantua: CIPHER-SIGN transcription (not the gloss).
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mutiliana1428/p3_signs.txt">p3_signs.txt</a></p><pre translate="no"># R1854 p.3 (IMG_R1854_I8413_P3), Forli 6 Nov 1428, to the lord of Mantua: CIPHER-SIGN transcription (not the gloss).
 # One line per text line L01-L33 (L31-L33 are the three lines below y=737; the page slopes down to the right, ~+11 px).
 # Format: cipher signs in order; clear-text words as one {brace} token (spaces removed); {struck} = struck-through run;
 # &#x27;?&#x27; = illegible sign; &#x27;_&#x27; = separator point(s) between clear and cipher (&#x27;:&#x27; &#x27;.&#x27; &#x27;·:·&#x27;).
@@ -180,7 +180,7 @@ L30: 8b/p lo/r f/a a/t 2/i Y/c P/a Y/c 3/u w/m d3/g 2/i fo/o 5/u f/a 4/n 4/n 8/i
 L31: {ne} E + f Y S/o lo/r a/t 9/o f/a U/l Y/c 5/u + 4/n 9/o d/s 6/e 4/n A/e {presso} + hk f/a dd/d w/m pl/i lo/r P/a a/t 2/i 9/o 4/n 6/e
 L32: a d S d 8b A Y a z Yc/c 3/u w/m U/l 9/o Y/c S/o 4/n a/t A/e dd/d + 5 E/u lo/r Ub/b 2/i 4/n fo/o 8b/p A/e 4/n d/s 9/o
 L33: + d/s 6/e 4/n a/t 8/i lo/r W/e f/a d/s f/a pl/i {RacomandomesemprealaV.S.Forlivii6novembris}</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mutiliana1428/reading_p3.md">reading_p3.md</a></p><pre># R1854 image 3 — Ricc(ardo?) de Mutiliana to Gianfrancesco Gonzaga, Forlì, 6 November 1428
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mutiliana1428/reading_p3.md">reading_p3.md</a></p><pre translate="no"># R1854 image 3 — Ricc(ardo?) de Mutiliana to Gianfrancesco Gonzaga, Forlì, 6 November 1428
 
 Italian, clear text interspersed with runs of graphic signs (905 cipher signs). A contemporary letter-by-letter
 interlinear decipherment is written faintly over the signs (read at the time; the gloss is transcribed in
@@ -229,7 +229,7 @@ wonder and suspicion.
 905 cipher signs (`p3_signs.txt`; the gloss confirms most runs). Unread or doubtful: Z (2), fk (1), the one &#x27;?&#x27;
 sign, and short doubtful spans (L04 &quot;d … de Ianus ubi&quot;, L05–06 &quot;speran[ç]a o a&quot;, L10 &quot;ered&quot;, L12 &quot;de me[?]o&quot;,
 L20 &quot;dice cavad&quot;) — about 25 signs. Read as sense ≈ 880/905 = 0.972. The three name codes are read (glossed).</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mutiliana1428/p3_decoded.txt">p3_decoded.txt</a></p><pre>L01  J.2exc.d.misingme.lamico echemadictoquelchescriue
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mutiliana1428/p3_decoded.txt">p3_decoded.txt</a></p><pre translate="no">L01  J.2exc.d.misingme.lamico echemadictoquelchescriue
 L02 eelcontesalaoctodachisercili vro  servidore  et 
 L03 del [signor Malatesta] et inimico deli [fiol(i) del s. marchese] permolti respecti  struck 
 L04 elqualdice discreto  sa  struck  ch  d li [fiol(i) del s. marchese] deianusubi
@@ -262,7 +262,7 @@ L30 praticacumgiouannideramberto  etperquestochese
 L31  ne eacortoalcunosene presso admiratione
 L32 tsospectocumloconteduerbinopenso
 L33 sentireasai RacomandomesemprealaV.S.Forlivii6novembris</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mutiliana1428/reading_p3_en.md">reading_p3_en.md</a></p><pre># R1854 image 3: Ricc(ardo?) de Mutiliana to Gianfrancesco Gonzaga, Forlì, 6 November 1428: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mutiliana1428/reading_p3_en.md">reading_p3_en.md</a></p><pre translate="no"># R1854 image 3: Ricc(ardo?) de Mutiliana to Gianfrancesco Gonzaga, Forlì, 6 November 1428: English translation
 
 Translation (Claude Opus 5.5, 23 Oct 2026) of the &quot;Italian&quot; section of `reading_p3.md`: clear text with the cipher runs
 (in *italics*), re-deciphered from the signs with the key taken from the contemporary interlinear gloss. Same holes:
@@ -307,7 +307,7 @@ myself always to Your Lordship. Forlì, 6 November.</pre></details>
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Archivio di Stato di Mantova, via DECODE R1854 (images not reproduced)</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="r1854.html" rel="prev">&larr; Gonzaga agent 1428 1428</a><a href="cattanei1430.html" rel="next">Cattanei 1430 1430 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

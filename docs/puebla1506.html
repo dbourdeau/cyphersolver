@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">e Z T S + e q T + N Z 46 q &middot; U 46 s N C + T q<br>los de la se&ntilde;ora princesa<br>q = a &middot; + = e &middot; 46 = r &middot; Z = o &middot; T = s</div>
+  <div class="cipherstrip" translate="no">e Z T S + e q T + N Z 46 q &middot; U 46 s N C + T q<br>los de la se&ntilde;ora princesa<br>q = a &middot; + = e &middot; 46 = r &middot; Z = o &middot; T = s</div>
   <p class="kicker">London &rarr; Miguel P&eacute;rez de Almaz&aacute;n &middot; letter substitution with homophones (Puebla&rsquo;s First Cipher) and one Roman-numeral code word &middot; 21 April 1506 &middot; deciphered in part with Tomokiyo&rsquo;s table</p>
   <h1>De Puebla to Almaz&aacute;n, London, 21 April 1506</h1>
   <p class="sub">Ferdinand&rsquo;s ambassador in London wrote to the King&rsquo;s secretary in cipher about Katharine&rsquo;s household while Philip and Juana waited to sail; Tomokiyo&rsquo;s table deciphers four of its passages into Spanish sentences.</p>
@@ -71,15 +71,15 @@
 <p>Philip and Juana, King and Queen of Castile since Isabella&rsquo;s death, were driven ashore in England in January 1506 on their way from Flanders to Spain, and stayed until late April, when they sailed from Falmouth (<em>Falamua</em> in the Spanish of the time) to La Coru&ntilde;a. The clear opening of the letter says that Puebla had written at length to the King and to Almaz&aacute;n by way of Mart&iacute;n S&aacute;nchez de Zamudio, the Bilbao shipowner, and that the King and Queen were waiting for the weather at Falmouth. Those clear readings are uncertain at the size PARES serves and are not part of the reading files.</p>
 
 <h2 id="cipher"><span class="num">02</span> The cipher</h2>
-<p>Tomokiyo calls it Puebla&rsquo;s First Cipher and identifies it with Bergenroth&rsquo;s key no.&nbsp;6. He reconstructed the table from the letters of 1496&ndash;1507 before finding the original, and lists this letter among those that use it, without a reading. The table gives one sign for most letters and two for a, i and u/v: a is written <em>q</em> or <em>M</em>, i is <em>b</em> or a 5-like sign, u and v share a small <em>o</em> with the b of <em>b(v)</em>. Several letters are written with the shape of another letter (<em>e</em> for l, <em>g</em> for f, <em>f</em> for g, <em>a</em> for h, <em>R</em> for t), and r is the figure-like sign <em>46</em>. The transcription names each sign by a short ASCII label (<code>key_first_cipher.tsv</code>), and the decoder works on those labels.</p>
+<p>Tomokiyo calls it Puebla&rsquo;s First Cipher and identifies it with Bergenroth&rsquo;s key no.&nbsp;6. He reconstructed the table from the letters of 1496&ndash;1507 before finding the original, and lists this letter among those that use it, without a reading. The table gives one sign for most letters and two for a, i and u/v: a is written <em>q</em> or <em>M</em>, i is <em>b</em> or a 5-like sign, u and v share a small <em>o</em> with the b of <em>b(v)</em>. Several letters are written with the shape of another letter (<em>e</em> for l, <em>g</em> for f, <em>f</em> for g, <em>a</em> for h, <em>R</em> for t), and r is the figure-like sign <em>46</em>. The transcription names each sign by a short ASCII label (<code translate="no">key_first_cipher.tsv</code>), and the decoder works on those labels.</p>
 <p>Words that the Great Roman Numeral code holds were written as code words instead. Only one occurs here, three times: DCCCLXXXVIII, &ldquo;el Rey de Inglaterra&rdquo; on key image 51 of the contemporary code book (AGS Patronato Real leg.&nbsp;52 doc.&nbsp;33). The scribe writes CC and CCC as ligatures distinguished by a small mark, and the mark was not checked on this letter, so the value stays doubtful at every occurrence.</p>
 <p>The letters run on without word division. Doubled letters are written twice. One sign in l.&nbsp;13 (in <em>ra?on</em>) is not in Tomokiyo&rsquo;s table, and the table has no z: in l.&nbsp;12 a hooked form of the o-sign seems to stand for it (<em>plazer</em>).</p>
 
 <h2 id="method"><span class="num">03</span> How it was deciphered</h2>
-<p>WAINUT transcribed the cipher passages of lines 11&ndash;29 from three-times enlarged crops of the PARES image, 370 signs and three code words, and decoded them with the table unchanged (<code>decode.py</code>). A second agent then re-read lines 14&ndash;20, 24&ndash;26 and 29 on fresh crops in its own sign labels and reproduced every reading letter by letter, with three corrections: <em>abra quien</em>, not <em>abra bien</em>, in l.&nbsp;16; a single c in <em>inclusas</em>; and the words <em>va a</em> at the start of the passage in l.&nbsp;29.</p>
+<p>WAINUT transcribed the cipher passages of lines 11&ndash;29 from three-times enlarged crops of the PARES image, 370 signs and three code words, and decoded them with the table unchanged (<code translate="no">decode.py</code>). A second agent then re-read lines 14&ndash;20, 24&ndash;26 and 29 on fresh crops in its own sign labels and reproduced every reading letter by letter, with three corrections: <em>abra quien</em>, not <em>abra bien</em>, in l.&nbsp;16; a single c in <em>inclusas</em>; and the words <em>va a</em> at the start of the passage in l.&nbsp;29.</p>
 <p>The controls ask whether the table could produce Spanish from these signs by chance.</p>
 <ul>
-<li>Language model (the project&rsquo;s shared <code>es-golden-age</code> model, Spanish 1490&ndash;1650, five-letter context, no spaces): the decode of lines 14&ndash;29 scores &minus;1.69 per letter. 1,000 keys made by shuffling the table&rsquo;s values among its signs score at best &minus;4.73 (median &minus;6.12); the true key on 1,000 texts with the signs shuffled within each line scores at best &minus;4.26 (median &minus;4.77). On the word-divided reading, the language check ranks Spanish first (&minus;1.62), ahead of Catalan (&minus;1.95) and Portuguese (&minus;2.09).</li>
+<li>Language model (the project&rsquo;s shared <code translate="no">es-golden-age</code> model, Spanish 1490&ndash;1650, five-letter context, no spaces): the decode of lines 14&ndash;29 scores &minus;1.69 per letter. 1,000 keys made by shuffling the table&rsquo;s values among its signs score at best &minus;4.73 (median &minus;6.12); the true key on 1,000 texts with the signs shuffled within each line scores at best &minus;4.26 (median &minus;4.77). On the word-divided reading, the language check ranks Spanish first (&minus;1.62), ahead of Catalan (&minus;1.95) and Portuguese (&minus;2.09).</li>
 <li>Word list: a short list of common Spanish words, without the rare content words, covers 0.61 of the decoded letters; shuffled keys cover at most 0.29 and shuffled texts at most 0.26.</li>
 </ul>
 <p>The decode is therefore not an artefact of the table or of the transcription; what limits the reading is the clear text around it.</p>
@@ -116,7 +116,7 @@
 <li>Unread signs: one in l.&nbsp;13 (<em>ra?on</em>, presumably z, not in the table) and two after <em>personas</em> in l.&nbsp;25.</li>
 <li>Doubtful readings: <em>pedir</em> for the decoded <em>pedri</em> (l.&nbsp;16, C); <em>contentasen</em> across the line end (ll.&nbsp;26&ndash;27, M); the article <em>el</em> before <em>tesoro</em> (l.&nbsp;26, clear, M); <em>plazer</em> with the hooked sign (l.&nbsp;12, C).</li>
 <li>The code word DCCCLXXXVIII, &ldquo;el Rey de Inglaterra&rdquo;: its value fits each of the three places, but the ligature mark that fixes its C-count was not checked on this letter (M).</li>
-<li>A parallel reading: Brice Dudout read the same letter the same day, independently, with the same table, and published it on <a href="https://bdudout.github.io/europe-chiffree/en/documents.html#puebla-1506">Europe chiffr&eacute;e</a>; his files are in the repository folder (<code>dudout/</code>). The two decipherments agree word for word on most passages, and he adopted two readings from this one (&ldquo;a beneficio de natura&rdquo; and &ldquo;por aquella gente hazia&rdquo;). Where this page has a doubt, he reads z in <em>razón</em> (l.&nbsp;13), <em>de la</em> for <em>da la</em>, and <em>pedrique</em> (from <em>pedricar</em>) for <em>pedri</em> (l.&nbsp;16), and he does not count the two signs after <em>personas</em>. He also transcribes the clear text of ll.&nbsp;11&ndash;17. None of this is taken here yet: it needs a look at the image, which PARES refused on 27 October 2026.</li>
+<li>A parallel reading: Brice Dudout read the same letter the same day, independently, with the same table, and published it on <a href="https://bdudout.github.io/europe-chiffree/en/documents.html#puebla-1506">Europe chiffr&eacute;e</a>; his files are in the repository folder (<code translate="no">dudout/</code>). The two decipherments agree word for word on most passages, and he adopted two readings from this one (&ldquo;a beneficio de natura&rdquo; and &ldquo;por aquella gente hazia&rdquo;). Where this page has a doubt, he reads z in <em>razón</em> (l.&nbsp;13), <em>de la</em> for <em>da la</em>, and <em>pedrique</em> (from <em>pedricar</em>) for <em>pedri</em> (l.&nbsp;16), and he does not count the two signs after <em>personas</em>. He also transcribes the clear text of ll.&nbsp;11&ndash;17. None of this is taken here yet: it needs a look at the image, which PARES refused on 27 October 2026.</li>
 </ul>
 
 <!-- texts:start -->
@@ -125,7 +125,7 @@
 <h3>ll. 18-29: the passages that read <span class="st partial">read in part</span></h3>
 <p>De Puebla tells Almazán that people around the Princess of Wales, for their own interest, had her write the letters he encloses; that he sees her household finely dressed beyond expectation; and that the greed of certain persons is such that he doubts even the treasure of [?the King of England] would content them. Written as Philip and Juana were about to sail from England; Katharine&#x27;s own letter of the next day (CSP I no. 459) says her people were all but naked.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (82% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/puebla1506/transcription.txt">transcription.txt</a></p><pre># AGS, Patronato Real, leg. 54, doc. 78 (PARES description 2208120; viewer show/2208120, 4 images: 1 = text,
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/puebla1506/transcription.txt">transcription.txt</a></p><pre translate="no"># AGS, Patronato Real, leg. 54, doc. 78 (PARES description 2208120; viewer show/2208120, 4 images: 1 = text,
 # 2-3 blank, 4 = address). Watermark on the PARES image: PTR,LEG,54,78; pencil &quot;PR54-78&quot;; foliation 179.
 # De Puebla to Miguel Pérez de Almazán, London, 21 April 1506 (clear date line: &quot;de Londres a xxj de abril de ...&quot;;
 # endorsement on image 4: &quot;del doctor de la puebla ... xxj ... abril 1506&quot;).
@@ -149,7 +149,7 @@ l.25  L q T N Z U + N T + o + 46 [[/ por la]] C Z S s C b q S + q e f o N q T U 
 l.26  + T R q e [[que con el(?)]] R + T Z 46 Z S + {DCCCLXXXVIII}[?] [[dudo que]] T + C Z N R + N R q
 l.27  T + N[?] [[...]]
 l.29  [[...]] o q q p + N + g b C b Z S + N q R o 46 q C Z N + T R + [[no digo(?) ...]]</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/puebla1506/decryption.txt">decryption.txt</a></p><pre># Line-by-line decryption of transcription.txt with key_first_cipher.tsv (decode.py).
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/puebla1506/decryption.txt">decryption.txt</a></p><pre translate="no"># Line-by-line decryption of transcription.txt with key_first_cipher.tsv (decode.py).
 # T = transcription, D = decryption. Decoded letters run on without word division (see reading.txt);
 # clear text in [[ ]], code values in { }, ? = unread sign, x[?] = doubtful sign, (x) = a sign that may be a descender.
 
@@ -197,7 +197,7 @@ l.27 D  sen[?] [[...]]
 
 l.29 T  [[...]] o q q p + N + g b C b Z S + N q R o 46 q C Z N + T R + [[no digo(?) ...]]
 l.29 D  [[...]] uaabeneficiodenaturaconeste [[no digo(?) ...]]</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/puebla1506/reading.txt">reading.txt</a></p><pre># De Puebla to Almazán, London, 21 April 1506 (AGS PTR leg. 54 doc. 78): cipher passages of ll. 18-29 as sentences.
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/puebla1506/reading.txt">reading.txt</a></p><pre translate="no"># De Puebla to Almazán, London, 21 April 1506 (AGS PTR leg. 54 doc. 78): cipher passages of ll. 18-29 as sentences.
 # From decryption.txt, with word division and punctuation added. Clear words around the cipher are in plain type
 # where they were read; [...] = clear text not transcribed. Code values in { }. [?word] = doubtful word,
 # [?] = unread word. Line numbers as in transcription.txt.
@@ -213,7 +213,7 @@ ll. 25-27: Por la codicia de algunas personas [?] [?] es tal que con [?el] tesor
 [?contentasen] [...]
 
 l. 29: [...] va a beneficio de natura con este [...]</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/puebla1506/translation.txt">translation.txt</a></p><pre># English translation of reading.txt (ll. 18-29), with the same holes.
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/puebla1506/translation.txt">translation.txt</a></p><pre translate="no"># English translation of reading.txt (ll. 18-29), with the same holes.
 # l. 29: &quot;a beneficio de natura&quot; is a set phrase of the period, &quot;left to nature / to chance&quot; (Cisneros&#x27;s secretaries,
 # 1516: &quot;no se ha de dexar a beneficio de natura&quot;; CODOIN): revised 27 Oct 2026 from &quot;to the benefit of nature&quot;.
 
@@ -230,7 +230,7 @@ England?}, I doubt they would be [?content] [...]
 l. 29: [...] is going along at the mercy of chance (a beneficio de natura) with this [...]</pre></details>
 <h3>ll. 11-17: fragments <span class="st stuck">decoded, not read</span></h3>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/puebla1506/transcription.txt">transcription.txt</a></p><pre># AGS, Patronato Real, leg. 54, doc. 78 (PARES description 2208120; viewer show/2208120, 4 images: 1 = text,
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/puebla1506/transcription.txt">transcription.txt</a></p><pre translate="no"># AGS, Patronato Real, leg. 54, doc. 78 (PARES description 2208120; viewer show/2208120, 4 images: 1 = text,
 # 2-3 blank, 4 = address). Watermark on the PARES image: PTR,LEG,54,78; pencil &quot;PR54-78&quot;; foliation 179.
 # De Puebla to Miguel Pérez de Almazán, London, 21 April 1506 (clear date line: &quot;de Londres a xxj de abril de ...&quot;;
 # endorsement on image 4: &quot;del doctor de la puebla ... xxj ... abril 1506&quot;).
@@ -254,7 +254,7 @@ l.25  L q T N Z U + N T + o + 46 [[/ por la]] C Z S s C b q S + q e f o N q T U 
 l.26  + T R q e [[que con el(?)]] R + T Z 46 Z S + {DCCCLXXXVIII}[?] [[dudo que]] T + C Z N R + N R q
 l.27  T + N[?] [[...]]
 l.29  [[...]] o q q p + N + g b C b Z S + N q R o 46 q C Z N + T R + [[no digo(?) ...]]</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/puebla1506/decryption.txt">decryption.txt</a></p><pre># Line-by-line decryption of transcription.txt with key_first_cipher.tsv (decode.py).
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/puebla1506/decryption.txt">decryption.txt</a></p><pre translate="no"># Line-by-line decryption of transcription.txt with key_first_cipher.tsv (decode.py).
 # T = transcription, D = decryption. Decoded letters run on without word division (see reading.txt);
 # clear text in [[ ]], code values in { }, ? = unread sign, x[?] = doubtful sign, (x) = a sign that may be a descender.
 
@@ -302,7 +302,7 @@ l.27 D  sen[?] [[...]]
 
 l.29 T  [[...]] o q q p + N + g b C b Z S + N q R o 46 q C Z N + T R + [[no digo(?) ...]]
 l.29 D  [[...]] uaabeneficiodenaturaconeste [[no digo(?) ...]]</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/puebla1506/reading_ll11-17.txt">reading_ll11-17.txt</a></p><pre># De Puebla to Almazán, London, 21 April 1506 (AGS PTR leg. 54 doc. 78): fragments of ll. 11-17 (decoded, not read).
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/puebla1506/reading_ll11-17.txt">reading_ll11-17.txt</a></p><pre translate="no"># De Puebla to Almazán, London, 21 April 1506 (AGS PTR leg. 54 doc. 78): fragments of ll. 11-17 (decoded, not read).
 # From decryption.txt, with word division and punctuation added. Clear words around the cipher are in plain type
 # where they were read; [...] = clear text not transcribed. Code values in { }. [?word] = doubtful word,
 # [?] = unread word. Line numbers as in transcription.txt.
@@ -314,7 +314,7 @@ ll. 11-13: [...] quando quisiere. Y de la partida, [?desto] [?stares] y de todo 
 
 ll. 14-17: señora princesa [...] conviene [...] bien y acrecentamiento [...] de {el Rey de Inglaterra?} y del
 principe. [?Vno] abra quien le [?pedir] que ningun malcontentamiento [...]</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/puebla1506/translation_ll11-17.txt">translation_ll11-17.txt</a></p><pre># English translation of reading_ll11-17.txt, with the same holes.
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/puebla1506/translation_ll11-17.txt">translation_ll11-17.txt</a></p><pre translate="no"># English translation of reading_ll11-17.txt, with the same holes.
 
 ## Translation
 
@@ -326,7 +326,7 @@ prince. [?One] there will be someone who [?asks] him that no discontent [...]</p
 <h3>Puebla to Almazán, 21 April 1506: parallel reading by Brice Dudout <span class="st partial">read in part</span></h3>
 <p>An autograph letter from the Catholic Monarchs’ ambassador in England to Ferdinand the Catholic’s secretary, written on the eve of the departure of Philip the Handsome and Juana, who had been driven onto the English coast three months earlier. Sixteen cipher passages, never read until now, defend the household of Catherine of Aragon.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense; the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/puebla1506/dudout/transcription.tsv">transcription.tsv</a></p><pre># id	image line	signs (our sign labels; values in decode.py: q M=a, o p=b/u/v, C=c, d=d, + t=e, g=f, f=g, a=h, b 5=i/y, e=l, m=m, n k=n, z=o, U=p, Q=q, r=r, s=s, R=t, Z=z; | = line break; ? = illegible)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/puebla1506/dudout/transcription.tsv">transcription.tsv</a></p><pre translate="no"># id	image line	signs (our sign labels; values in decode.py: q M=a, o p=b/u/v, C=c, d=d, + t=e, g=f, f=g, a=h, b 5=i/y, e=l, m=m, n k=n, z=o, U=p, Q=q, r=r, s=s, R=t, Z=z; | = line break; ? = illegible)
 S01	L01	b d t e q U q r R b d q
 S02	L02	d + s R z s R q r + s b d + R z d z + e q r + s R z
 S03	L02	U e q Z t
@@ -343,7 +343,7 @@ S13	L14	+ s R q e
 S14	L14	R + s z ? ? z d +
 S15	L14-L15	s + C z n R + n R q | s + n
 S16	L16	o q q p + n + g b C b z d + n q R o r q C z n + s R +</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/puebla1506/dudout/decryption.txt">decryption.txt</a></p><pre># passage	line	decryption (python decode.py)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/puebla1506/dudout/decryption.txt">decryption.txt</a></p><pre translate="no"># passage	line	decryption (python decode.py)
 S01	L01	idelapartida
 S02	L02	destostaresidetodoelaresto
 S03	L02	plaze
@@ -362,7 +362,7 @@ S15	L14-L15	secontentasen
 S16	L16	uaabeneficiodenaturaconeste
 
 cipher signs: 366; illegible ?: 3; read: 0.992; through our additions (Z,k,5): 8</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/puebla1506/dudout/reading.md">reading.md</a></p><pre># Puebla to Almazán, London, 21 April 1506: established text (Spanish)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/puebla1506/dudout/reading.md">reading.md</a></p><pre translate="no"># Puebla to Almazán, London, 21 April 1506: established text (Spanish)
 
 Only the passages we are sure of are given in full; the rest is marked […]. {x} probable.
 
@@ -373,7 +373,7 @@ Por via de Martín Sánchez de Çamudio escreví largo al Rey nuestro señor y a
 […] [[los de la señora princesa veo tan bien ataviados que más no pensé ver]], por la [[codicia de algunas personas es tal]] que con el [[tes{or}o de[l] Rey de Inglaterra]] dudo que [[se contentasen]]. Afío de la prudencia de vuestra merced y del Rey nuestro señor que no dará lugar […]. Y porque […] [[va a beneficio de natura con este]]. No digo otro […] la vida y estado de vuestra merced {acreciente} y prospere como desea. De Londres a xxj de abril de dvj.
 
 Address: Al muy noble señor el señor Miguell Pérez d’Almaçán, secretario y del consejo del Rey nuestro señor. ‖ Del dotor de la P[uebla], xxj de abril de dvj.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/puebla1506/dudout/translation.md">translation.md</a></p><pre># English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/puebla1506/dudout/translation.md">translation.md</a></p><pre translate="no"># English translation
 
 By Martín Sánchez de Zamudio I wrote at length to the King our lord, and the same to Your Grace. […] Doña María de Rojas […]. What I wish to say in this one is that the King of England […] so fair a wind that […] tomorrow […] he will embark. And he also says […] Doña María de Rojas […].
 
@@ -394,13 +394,13 @@ By Martín Sánchez de Zamudio I wrote at length to the King our lord, and the s
 <li>Cartas de los secretarios del cardenal D. Fr. Francisco Jim&eacute;nez de Cisneros (1875), for <em>a beneficio de natura</em>, <a href="https://archive.org/details/cartasdelossecre00jime" rel="noopener">archive.org</a>.</li>
 <li>G. Mattingly, &ldquo;The reputation of Doctor De Puebla&rdquo;, <em>English Historical Review</em> 55 (1940), pp.&nbsp;27&ndash;46.</li>
 </ul>
-<p class="muted">Files: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/puebla1506">targets/puebla1506/</a> (notes, sign-label transcription, the key table, <code>decode.py</code> with its controls, the decryption, the reading and translation). Contributed by WAINUT in pull request #101; reviewed for the site on 27 October 2026. The sibling items in Puebla&rsquo;s Great Roman Numeral code, the despatches of 28 December 1495 and 21 June 1496, are identified in <code>targets/puebla1495/</code> and <code>targets/puebla1496/</code>; they were deciphered or summarised long ago and have no page.</p>
+<p class="muted">Files: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/puebla1506">targets/puebla1506/</a> (notes, sign-label transcription, the key table, <code translate="no">decode.py</code> with its controls, the decryption, the reading and translation). Contributed by WAINUT in pull request #101; reviewed for the site on 27 October 2026. The sibling items in Puebla&rsquo;s Great Roman Numeral code, the despatches of 28 December 1495 and 21 June 1496, are identified in <code translate="no">targets/puebla1495/</code> and <code translate="no">targets/puebla1496/</code>; they were deciphered or summarised long ago and have no page.</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Archivo General de Simancas, via PARES (Ministerio de Cultura).</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="beatrice1505.html" rel="prev">&larr; Beatrice to Ippolito 1505 1505</a><a href="vich1511.html" rel="next">Vich 1511&ndash;12 1511&ndash;12 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>
 </body>

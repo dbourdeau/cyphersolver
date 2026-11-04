@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-<div class="cipherstrip">A B C D E F G B E H G I J<br>t e n a s w i e s c i d o<br>A = &#9744;78O = t &middot; B = 15&#9744;c = e &middot; C = Z47z = n &middot; D = &oplus;di6 = a &middot; E = &#643;37H = s</div>
+<div class="cipherstrip" translate="no">A B C D E F G B E H G I J<br>t e n a s w i e s c i d o<br>A = &#9744;78O = t &middot; B = 15&#9744;c = e &middot; C = Z47z = n &middot; D = &oplus;di6 = a &middot; E = &#643;37H = s</div>
 <p class="kicker">place not stated &middot; simple substitution of composite sign groups &middot; 31 July 1662 &middot; key recovered from the ciphertext alone</p>
 <h1>An anonymous letter in the Sanguszko archive, 31 July 1662</h1>
 <p class="sub">An unsigned Polish letter written wholly in 23 composite sign groups was broken from its ciphertext alone and reads as news of Swedish war preparations and advice on guarding the sea side.</p>
@@ -72,18 +72,18 @@
 </figure>
 
 <h2 id="cipher"><span class="num">02</span> The cipher</h2>
-<p>The system is a simple substitution with a very unusual alphabet. Each plain letter is written as a composite group made of a digit pair, a letter, a square, a triangle or a loop: <span class="c">&#9744;78O</span> is <em>t</em>, <span class="c">15&#9744;c</span> is <em>e</em>, <span class="c">50lF</span> is <em>i</em>, <span class="c">83y&Delta;</span> is <em>o</em>. There are 23 shapes, one for each letter the writer needs, with no homophones, no nulls and no nomenclator. The cipher has no signs for the Polish diacritics except a crossed group for <em>&#261;</em>, so the text is given in the spelling of the cipher. The shapes are in <code>targets/asang1662/signs.md</code> and the key in <code>key.tsv</code> (key K443).</p>
+<p>The system is a simple substitution with a very unusual alphabet. Each plain letter is written as a composite group made of a digit pair, a letter, a square, a triangle or a loop: <span class="c">&#9744;78O</span> is <em>t</em>, <span class="c">15&#9744;c</span> is <em>e</em>, <span class="c">50lF</span> is <em>i</em>, <span class="c">83y&Delta;</span> is <em>o</em>. There are 23 shapes, one for each letter the writer needs, with no homophones, no nulls and no nomenclator. The cipher has no signs for the Polish diacritics except a crossed group for <em>&#261;</em>, so the text is given in the spelling of the cipher. The shapes are in <code translate="no">targets/asang1662/signs.md</code> and the key in <code translate="no">key.tsv</code> (key K443).</p>
 
 <h2 id="method"><span class="num">03</span> How the key was found</h2>
 <p><strong>The protocol.</strong> The atlas of the 23 groups was frozen before any computation, and a protocol was written and hashed. The front (21 lines, 254 groups) was kept for learning; the reverse (six lines, 66 groups) was held out and not decoded before the key was frozen.</p>
 <p><strong>The break.</strong> The substitution was solved by simulated annealing on a Polish letter model. Latin, French, German and Italian models scored clearly lower, and the Polish text read at once. Two values were corrected from the reading of the front alone (g and k).</p>
 <p><strong>The held-out reverse.</strong> One measurement was made on the reverse: 97% of its groups have a value and 86% of its letters fall in words of the Polish lexicon, with the segmentation fixed in advance. The 200 keys with permuted values reach at most 58%, and 200 shuffled texts at most 70%. The reverse is short; Brice Dudout says so. Two groups occur only there (&#42832;t33, a variant of the u group, and Mig4, f from the sense).</p>
-<p><strong>The statistical check here.</strong> The project&rsquo;s validator (<code>docs/_validate.py</code>) scores the reading of 320 groups (24 types) with a four-gram model of Polish of about 1790, as mean log-probability per letter. The reading scores &minus;2.575; random keys of the same shape &minus;5.447 on average (z 10.1); a key annealed onto the shuffled ciphertext &minus;3.785 at best; and the same annealer, started from random keys on the real text, reaches &minus;2.865. Verdict: pass.</p>
+<p><strong>The statistical check here.</strong> The project&rsquo;s validator (<code translate="no">docs/_validate.py</code>) scores the reading of 320 groups (24 types) with a four-gram model of Polish of about 1790, as mean log-probability per letter. The reading scores &minus;2.575; random keys of the same shape &minus;5.447 on average (z 10.1); a key annealed onto the shuffled ciphertext &minus;3.785 at best; and the same annealer, started from random keys on the real text, reaches &minus;2.865. Verdict: pass.</p>
 
 <h2 id="reading"><span class="num">04</span> The reading</h2>
 <figure class="creveal" data-src="reveal/asang1662.json"></figure>
 <p class="legend">Brice Dudout&rsquo;s text in the spelling of the cipher. {x} probable; [x] restored from the sense. The clear words left by the writer between &ldquo;Sam&rdquo; and &ldquo;zdrowie&rdquo; are not counted.</p>
-<blockquote lang="pl">
+<blockquote lang="pl" translate="no">
 Te nas wiesci dochodza z Rygiy y z Hamburku, ze sie Szwedzi armuią y iusz to trzeci raz zapowiedzie[i]li modlitwy y post. Co nieomylnie iest znakiem, ze woyne meditantur, y ze {kogs} zagabną.<br>
 Ia radze, zeby tey sciany ku morzu nie zostawowac ogoloconey, bo daleko z pod Lwowa bedzie do Gd. anska sie wracac.<br>
 Sam [&hellip; MM Pan] zdrowie swoie miey na pieczy y nie kozdem{u} duchowi wierz. Cur{f}irst pewnie tu ma bydz in Augusto.
@@ -109,7 +109,7 @@ You yourself, [&hellip; my Lord,] take care of your health, and do not believe e
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>Anonymous letter, 31 July 1662, front and reverse</h3>
 <p>News from Riga and Hamburg that the Swedes are arming and have ordered prayers and a fast for the third time, a sure sign of war; advice not to leave the side towards the sea bare, since it is far from Lwów to Gdańsk; the Elector will surely come in August.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/asang1662/transcription.txt">transcription.txt</a></p><pre># Kraków, Archiwum Narodowe, Archiwum Sanguszków, teka 134/8: anonymous letter, &quot;Ultima Julij A° 1662&quot; (31 July 1662).
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/asang1662/transcription.txt">transcription.txt</a></p><pre translate="no"># Kraków, Archiwum Narodowe, Archiwum Sanguszków, teka 134/8: anonymous letter, &quot;Ultima Julij A° 1662&quot; (31 July 1662).
 # DECODE R7513 (https://de-crypt.org/decrypt-web/RecordsView/7513); images not included (DECODE terms).
 # One composite sign group = one code letter A-W (see signs.md). &quot;.&quot; and &quot;,&quot; = the cipher&#x27;s own punctuation; &quot;?&quot; = group under an ink blot.
 # Front (DECODE image P2), lines 1-21 = learning text; reverse (image P1), lines V1-V6 = held-out text.
@@ -141,7 +141,7 @@ reverse V3	H K J F G F G B P L .
 reverse V4	H O P W G P E A T B F C
 reverse V5	G B A O M D N Q I L .
 reverse V6	G C D O R O E A J .</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/asang1662/decryption.txt">decryption.txt</a></p><pre># Group-by-group decryption with key K443 (frozen before the held-out measurement). O2 = u, W = f and ? = i are read from the sense.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/asang1662/decryption.txt">decryption.txt</a></p><pre translate="no"># Group-by-group decryption with key K443 (frozen before the held-out measurement). O2 = u, W = f and ? = i are read from the sense.
 
 ## front L01
 A B C D E F G B E H G I J
@@ -250,7 +250,7 @@ ietumabydz.
 ## reverse V6
 G C D O R O E A J .
 inaugusto.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/asang1662/reading.md">reading.md</a></p><pre># Established text (Polish, spelling of the cipher)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/asang1662/reading.md">reading.md</a></p><pre translate="no"># Established text (Polish, spelling of the cipher)
 
 Conventions: {x} probable; [x] restored from the sense. The cipher has no signs for the Polish diacritics except a crossed a (ą); they are not added.
 
@@ -271,7 +271,7 @@ Sam [… MM Pan] zdrowie swoje miej na pieczy i nie każdemu duchowi wierz. Kurf
 ## State of the reading
 
 First published decipherment, to our knowledge. 320 groups, 71 words. Published under Daniel Bourdeau’s rule: 95% of words read as sense, counted on the enciphered part only. Here: 71 of 71 words read as sense (100%): 67 certain (94.4%), 3 probable (4.2%), 1 restored from the sense (1.4%), 0 unresolved. Reasons in the notes.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/asang1662/translation.md">translation.md</a></p><pre># English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/asang1662/translation.md">translation.md</a></p><pre translate="no"># English translation
 
 These are the news that reach us from Riga and from Hamburg: the Swedes are arming, and this is already the third time they have ordered prayers and a fast. That is the unfailing sign that they are contemplating war and will attack someone.
 
@@ -296,7 +296,7 @@ You yourself, [… my Lord,] take care of your health, and do not believe every 
   <span>Brice Dudout, September 2026 &middot; Text released under CC BY 4.0 &middot; Archiwum Narodowe w Krakowie, Archiwum Sanguszk&oacute;w 134/8, via DECODE (restricted; detail shown with credit)</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="hyde.html" rel="prev">&larr; Hyde 1659&ndash;60</a><a href="wasowicz1662.html" rel="next">W&#261;sowicz to Lubomirski 1662&ndash;1663 1662&ndash;1663 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

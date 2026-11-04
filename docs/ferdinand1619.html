@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">30&middot;48&middot;10&middot;20&middot;50&middot;14&middot;32&middot;60&middot;20&middot;52 &nbsp; 74&middot;66&middot;44&middot;20&middot;50&middot;52&middot;54&middot;14&middot;74&middot;32<br>g&nbsp;r&nbsp;a&nbsp;f&nbsp;s&nbsp;c&nbsp;h&nbsp;a&nbsp;f&nbsp;t &nbsp; k&nbsp;o&nbsp;p&nbsp;f&nbsp;s&nbsp;t&nbsp;u&nbsp;c&nbsp;k&nbsp;h<br>a = 10, 60, 70 &middot; e = 18, 62, 72 &middot; o = 42, 66, 76 &middot; 248 = und</div>
+  <div class="cipherstrip" translate="no">30&middot;48&middot;10&middot;20&middot;50&middot;14&middot;32&middot;60&middot;20&middot;52 &nbsp; 74&middot;66&middot;44&middot;20&middot;50&middot;52&middot;54&middot;14&middot;74&middot;32<br>g&nbsp;r&nbsp;a&nbsp;f&nbsp;s&nbsp;c&nbsp;h&nbsp;a&nbsp;f&nbsp;t &nbsp; k&nbsp;o&nbsp;p&nbsp;f&nbsp;s&nbsp;t&nbsp;u&nbsp;c&nbsp;k&nbsp;h<br>a = 10, 60, 70 &middot; e = 18, 62, 72 &middot; o = 42, 66, 76 &middot; 248 = und</div>
   <p class="kicker">Bonn &rarr; Munich &middot; homophonic cipher in two-digit figures with a nomenclator &middot; 22 December 1619</p>
   <h1>Ferdinand of Bavaria to Duke Maximilian I, Bonn, 22 December 1619</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_ferdinand-of-bavaria-elector-of-cologne.jpg" alt="Ferdinand of Bavaria, Elector of Cologne" title="Ferdinand of Bavaria, Elector of Cologne: Engraving, 1645. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Ferdinand of Bavaria, Elector of Cologne</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_duke-maximilian-i-of-bavaria.jpg" alt="Duke Maximilian I of Bavaria" title="Duke Maximilian I of Bavaria: Anonymous portrait, 17th century. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Duke Maximilian I of Bavaria</figcaption></figure></div><!-- /parties -->
@@ -127,7 +127,7 @@ groups stand exactly where a name, a title or an office belongs.</p>
 
 <p>There was no key and no crib. The ten pages were transcribed line by line, with the clear passages bracketed
 and the cipher copied as written. A homophonic solver (simulated annealing) then searched for the assignment of numbers to letters that maximises
-the probability of the whole text under the repository&rsquo;s <code>de-1500s</code> model, a five-gram character model
+the probability of the whole text under the repository&rsquo;s <code translate="no">de-1500s</code> model, a five-gram character model
 built on German printed and chancery prose of 1470&ndash;1610. Six restarts over the first three pages (932 letters) were already
 producing German: <em>gelegenen</em>, <em>Landtag ausschreiben</em>, <em>Quartiermeister</em>. Ten restarts over all ten pages
 (2,482 letters) fixed the table, and the decryption gave continuous German.</p>
@@ -141,7 +141,7 @@ They are corrections of the transcription, never of the key, and a sample of the
 <p><strong>The control.</strong> The key was then applied, without changing a single value, to the neighbouring record R9425,
 a different letter of the same correspondence that this work had not touched. Its first cipher line is</p>
 
-<blockquote><code>60&middot;36&middot;12&middot;48&middot;18&middot;14&middot;32&middot;52 &nbsp; 54&middot;42&middot;40 &nbsp; 30&middot;66&middot;52&middot;52&middot;18&middot;50 &nbsp; 30&middot;40&middot;10&middot;16&middot;18&middot;40</code><br>
+<blockquote><code translate="no">60&middot;36&middot;12&middot;48&middot;18&middot;14&middot;32&middot;52 &nbsp; 54&middot;42&middot;40 &nbsp; 30&middot;66&middot;52&middot;52&middot;18&middot;50 &nbsp; 30&middot;40&middot;10&middot;16&middot;18&middot;40</code><br>
 &rarr; <strong>&ldquo;Albrecht von Gottes Gnaden&rdquo;</strong></blockquote>
 
 <p>This is Archduke Albert of Austria, sovereign of the Spanish Netherlands, whose troops are the subject of that letter.
@@ -196,7 +196,7 @@ and how much of it his own bishopric can be made to carry.</p>
 fernern nachricht und nachschreiben, den 15. 10bris Ao 1619&rdquo;, and an endorsement on f. 280v: &ldquo;Resolutio
 de&szlig; hertzogs Albrechts dem L. Morreo &hellip; ertailt&rdquo;. It was transcribed from the DECODE images on 2 October 2026
 and deciphered with the key recovered from R9426, every letter value unchanged. <strong>1,524 of its 1,567 cipher tokens give
-sense: 97.3%</strong> (<code>r9425/count_r9425.py</code>; letters 1,471 of 1,482, nomenclator 53 of 85 tokens, of which 24 are
+sense: 97.3%</strong> (<code translate="no">r9425/count_r9425.py</code>; letters 1,471 of 1,482, nomenclator 53 of 85 tokens, of which 24 are
 nulls; 97.2% with the nulls left out of the count). The language check on the decrypt puts German first.</p>
 
 <p>It opens &ldquo;Albrecht von Gottes Gnaden&rdquo; and is Albert&rsquo;s written answer to what <strong>Licentiate
@@ -238,7 +238,7 @@ words whose sense is clear are counted unread.</p>
 
 <h2 id="residuals"><span class="num">06</span> What remains uncertain</h2>
 
-<p>Measured over the enciphered text (<code>count.py</code>), <strong>2,504 of 2,614 cipher tokens give sense: 95.8%</strong>.
+<p>Measured over the enciphered text (<code translate="no">count.py</code>), <strong>2,504 of 2,614 cipher tokens give sense: 95.8%</strong>.
 The letters are nearly complete, 2,483 of 2,519. Two kinds of item are open.
 
 <p><strong>The nomenclator (31 of 32 groups, 74 tokens, 2.8% of the text).</strong> The groups that occur are 102, 122, 136, 142,
@@ -270,7 +270,7 @@ nowhere in the literature that can be searched.</p>
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>R9426, Ferdinand of Bavaria to Maximilian I, Bonn, 22 Dec 1619</h3>
 <p>Ferdinand of Bavaria, Elector of Cologne, writes to his brother Duke Maximilian I of Bavaria about quartering and paying the Catholic League&#x27;s troops in the Rhine-Westphalian circle (Horn, Montfort, Deutz, Lintelo&#x27;s and Herberstorff&#x27;s companies, a year&#x27;s respite for Paderborn), and argues that the common union is needed for the conservation of the Catholic religion. Six weeks after Frederick V&#x27;s coronation in Prague; nomenclator groups apart from 248 = und are open.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1619/transcription.txt">transcription.txt</a></p><pre># R9426 BayHStA KAA 4591 f.281-286, Ferdinand II to Maximilian I, Wien 22 Dec 1619
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1619/transcription.txt">transcription.txt</a></p><pre translate="no"># R9426 BayHStA KAA 4591 f.281-286, Ferdinand II to Maximilian I, Wien 22 Dec 1619
 # Format: one manuscript line per row, prefixed P&lt;page&gt;.&lt;line&gt;. Clear text in [ ].
 # Cipher tokens: numbers as written; separators: z = the 7-shaped sign, c = the c/tau-shaped sign; - = line-end hyphen sign (4-shaped).
 P1.01 [Durchleuchtiger Fürst, freundlicher mein hertzliebster]
@@ -489,7 +489,7 @@ P9.11 [dem] 60 40 50 18 32 62 40 36 34 14 32 18 48 c 74 42 40 34 30 -
 P9.12 [Erzig.] 248 z 36 10 40 16 18 40 c 20 42 48 52 c [und]
 P9.13 60 68 50 52 34 36 30 68 40 30 c 16 18 48 c 14 10 52 42 36 34 -
 P9.14 50 14 32 18 40 z 48 72 36 64 30 34 42 40 z 58 58 52 32 54 40 -</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1619/reading.txt">reading.txt</a></p><pre>P1.01 [Durchleuchtiger Fürst, freundlicher mein hertzliebster]
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1619/reading.txt">reading.txt</a></p><pre translate="no">P1.01 [Durchleuchtiger Fürst, freundlicher mein hertzliebster]
 P1.02 [herr Schwager, E. L. schreiben vom 10. dits ist]
 P1.03 [mir gestrigen tags woll eingeliefert. Und ob woll]
 P1.04 [ich ... hette, es dannoch] unsers hern
@@ -739,7 +739,7 @@ P8.17 64.66.40 ion -3.53
 P8.25 50.18.34 sei -5.5
 P9.02 60.54.20.74.42.38 aufkom -10.13
 P9.05 30.48.60.20.52 graft -4.15</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1619/R9426_reading.md">R9426_reading.md</a></p><pre># R9426 - Ferdinand of Bavaria to Maximilian I, Bonn, 22 Dec 1619: reading in running text
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1619/R9426_reading.md">R9426_reading.md</a></p><pre translate="no"># R9426 - Ferdinand of Bavaria to Maximilian I, Bonn, 22 Dec 1619: reading in running text
 
 Rests on: `reading.txt` (the key-rebuilt decode, one manuscript line per row, 22 Sept 2026). Joined here into running
 text for the v3 verification (23 Oct 2026): the clear text of the letter, in brackets there, is written in «...» so
@@ -751,7 +751,7 @@ figures give it.
 ## Reading
 
 «Durchleuchtiger Fürst, freundlicher mein hertzliebster herr Schwager, E. L. schreiben vom 10. dits ist mir gestrigen tags woll eingeliefert. Und ob woll ich ... hette, es dannoch» unsers hern &lt;414&gt; &lt;122&gt; &lt;30&gt; «sich ... gefallen lassen, zu Ihrem» gegarischen &lt;419&gt; «kan oder» montfart «und an ... orten vernemmen würde» grafschaft horn «das» uon erwite compagnien zuaccommodiern «Do hat doch» solches nit zulangen «wollen» wie &lt;414&gt; &lt;18&gt; &lt;419&gt; &lt;36&gt; aus beigefuegter wolermelt &lt;122&gt; &lt;36&gt; &lt;412&gt; erklerung «nitt» &lt;416&gt; [?mererm] zuuernemmen «Und erfreut mich mein ... under das hat» &lt;248&gt; agent licentiat morres «das» &lt;239&gt; «... das Herr L. ... wurde» auf den «woll» gelegenen grainzen «zu denen solchen nicht» furhabenden [?tarceen] werbungen nit sufficient «an würde, Weil ich mich das darbey erinnert, das beiderseits ...» furnehme partheien «zu besagter» grafschaft horn «also welches ich ... zu meinem» &lt;416&gt; &lt;232&gt; &lt;183&gt; «gebracht, ...» interessirt hatten «und» die &lt;238&gt; «selbst wegen contentierung etlicher doch» &lt;410&gt; unrichtiger actionen «darauf» pretendirn «Und demnach halben, wir auch sonsten wegen des» situs «ohne» zuthuen «wolbemelten» &lt;122&gt; &lt;414&gt; angreintzender orter «braucht» campagnien «mit» wol uersichert «ein mögen. So hab ich disfalls meine» uorige &lt;215&gt; &lt;414&gt; «nochwendig» uerandern «mit ihm, damit gleichwoll E. L. intention nach müglichkeit secundirt werden möchte. So hab ich heutigs tags» ermeltem erwite &lt;414&gt; «zu mir ... angefangen, dass in meinen» negst bei der stat &lt;52&gt; gelegenen dorfern &lt;248&gt; freiheit deutz «nur» seine &lt;216&gt; quartier geben «lassen, Und zu solchem end ...» quartiermaisters «dem selben» [?paroicular] ordnung «zu vertheilen,» &lt;419&gt; erwarten «wolle das hinterstand solches werde, wegen» ausgebung «der» rustungen «und anderen gelegenheiten» den fortzug «selbigen» uolcks «wann es anders des» erwite ertrostung nachberait sein wirdt «mit» wenig befardern «Weil aber ich» denen ortern daselbst «besagter» compagnien einzuquartiern «mein» thumb &lt;102&gt; &lt;248&gt; &lt;102&gt; zu &lt;47&gt; «Ihr» unaerherschaffen «und» [?territaroa] «habe, dieselbe auch» ior &lt;248&gt; nach mir einlogirung meines uolcks «mit auch etlicher massen, das kan» boninckhausen &lt;216&gt; nitwenig beschweru worden «So hab ich es mit anderen geschrieben, dass des andertheils zu» uerpflegung obbesagter &lt;216&gt; fur «nichts» iedtwedern zwei kopfstuckh «oder» zwai ort «wird» konigs dalers taglich uersprechen «zulassen. Und wolle zu E. L. ich mich freundlich getrösten, Sie werden, was dariber so ich dissfalls mit» &lt;414&gt; dem doctor leicker «abhandlen und Ihr ... werden zur ... halten. E. L. können gedenken, dass mir obligen will» mein thumb &lt;102&gt; &lt;248&gt; landtstendt «auch in» guetem willen «und» deuotion zuerhalten «Darneben will ich» eben inarbeit bin in meinemalhiesigem &lt;221&gt; «ihre» ertz &lt;232&gt; «meinen» landtag auszutchreiben &lt;248&gt; «zu erhalten. Und demnach zu beforderung des gemeinen wesens und billich daheim zu trachten, dass» meine stendt nit alienirt «werden. Ich hab sonsten die verschung gethan, dass» lintelo compagnia auch unweit «nach dem» stat &lt;57&gt; an gelegenen ortern accommodirt ich wil «auch des» uon [?dernersen] herberstorf &lt;248&gt; anderer werbungen «so E. L.» dieser ents furzunemmen «allerhand» uerordnetgern allen muglichefurschub thuen «und» daran nichts erwinden «lassen Weil aber» meinem &lt;221&gt; «ihre» ertz &lt;232&gt; &lt;248&gt; &lt;136&gt; &lt;258&gt; aich &lt;232&gt; paderderborn «wegen des mangels aber» haben iahrs frist undehalten &lt;248&gt; daselbst geworbnen kriegsuolcks «auch allbereit» gewilligt &lt;248&gt; euortsetzung «den» [?gegainer] sachen «ferners» erwartender contributione «weiters» einlegerung &lt;248&gt; muterplatz nit anzumuten «So kan ich dann E. L. wegen der ...» allen zoaderbringens keine gewise uertrostung thuen deswegen «Ich thue auch von diesem wolmeinentlich ... erinnert, bei» unsers &lt;50.14.32.78.10.30.18.48.40.213&gt; &lt;414&gt; &lt;36&gt; ansuchung zuthuen «dass in derselben» &lt;62.64.40.38.10.12.62.40.16.72.40.142&gt; «ihre» quartirn «andere E. L.» furhabende werbungen furgenammen «werden möchten. Ich will gleichwoll nit underlassen zu befürderung E. L. intention» mein eusserist anzuwenden «Und werden E. L. sich nit zu wundern sein lassen, dass es des» taglichen underhalts «wegen des» uan &lt;18.48.78.34.52.18.216&gt; gleich «erhalten und zu dem end» uerordnung herabgeschhen &lt;30&gt; «Wessen sich aber des Hertzogs ... auf die zu» meiner ertz &lt;248&gt; &lt;232&gt; uersicherung «durch meinen Doctor» &lt;248&gt; agente «abgelegte werbung erklert, was auch beineben» zwischen &lt;239&gt; &lt;248&gt; ermeltenmeinen «für discurses gehalten, solches haben E. L. beinebens mit mehrerm zuvernemmen. Wie ich mich nun darbey» gesichert hatten muge «mag die» zeit ergeren «Und werde ich mit zuvoriger» mein uolck mit ehistem forziehen «lassen. Wie ich dann meines» marschalcks «des» uon der hauelich «dann ich zu der» muterungin &lt;258&gt; «und beförderung» des fortzugs «selbigen» uolcks daselbst uerlassen «allhie mit ersten wiederumb ... und alsdann» das &lt;414&gt; uolckt «in» meinem uschen &lt;221&gt; ertz &lt;232&gt; &lt;416&gt; guch zugleich fortziehen zulassen bedacht «wegen auch» erwite «under dessen» mit [?siinen] &lt;216&gt; fertig «sein könte,» mochte er «mit dem» andern fortziehen «Wie ich das solches» &lt;47&gt; &lt;419&gt; &lt;415&gt; &lt;36&gt; «der» quartiern «halben» anfuegen «lassen. Sonsten bin ich mit E. L. gänzlich einig, dass» &lt;221&gt; &lt;248&gt; &lt;122&gt; &lt;414&gt; &lt;36&gt; «wegen» conseruation ires &lt;154&gt; &lt;248&gt; consequenter aller wolfart dis werck billich «mit mehrerm» eifer &lt;248&gt; ernst «als» andere catolische «zu» comprehendir «welches das» meinem agentemarreo «in denen ihme ertheilten Memorialibus hier und mich» wol inculcirt «Ich bin auch der meinung, dass solches so woll gegen» &lt;414&gt; &lt;160&gt; «als» &lt;165&gt; in &lt;225&gt; «und» &lt;122&gt; &lt;414&gt; &lt;36&gt; «also» zubeharrin «seine ... Was aber ferner» grundt &lt;48&gt; echt eingeseten «meinet, so» scheint es zwar «was dass» &lt;416&gt; &lt;154&gt; &lt;200&gt; reprimirt «und» ausgeuolget pleiben «und dem» gegentheiln mocht «mit» solchem ansehenlichen zuesatz gesterckt «der» cathalischen macht aber «fügungen daher salt» geringert «werden sollen, dass» den catolischen ins gemein &lt;248&gt; «ohne underschied geringer» zeit ubrig sein «wirdet,» sich «das» andern theils einfal gwalt &lt;248&gt; betrangnus «zu» entweren «Ich vermeine, das die» semeine zusamensetzung «zu» conseruat [?ion] unser &lt;248&gt; «in kurzer zeit» unser caoolischer riligion «und» seelen seligkeit «darab bei der» posteritet «bis dahin hier nötig erachtet werden, Ich vernimme gleichwoll» ous meines agenten relation «das mag» &lt;419&gt; zu &lt;33&gt; resoluiru sei das euserist anzuwenden «zu dem ...» taglichs die &lt;215&gt; «nes» aus &lt;225&gt; erwartet «Aber» wol zubesorgen man «mochte, so seien» werbungen fur «der» frueleng nun aufkom zen «Mit ... E. L. ... des» &lt;414&gt; irem &lt;146&gt; alexandro «des» dm graft «commun particulariteten deren vernemmen. Was E. L. wegen des» &lt;49&gt; schreibens ahn &lt;51&gt; «darneben, solches hab ich ebenmessig in achtung genommen, Und darinnen kein anderes beschluss machen können, Als dass» &lt;417&gt; es &lt;49&gt; theils «erben» erlangung «dem» ansehenlicher konig «Erzig.» &lt;248&gt; landen fort «und» austilgung der catolischen religion</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1619/R9426_en.md">R9426_en.md</a></p><pre>&lt;!-- English translation of R9426_reading.md (Claude Opus 5.5, 23 Oct 2026), kept close to the words because the reading is fragmentary: the clear text («» in the reading) is translated in ⟨ ⟩; open nomenclator groups &lt;nnn&gt; and group strings are kept; &quot;…&quot; gaps in the clear hand kept; [?word] the eight unresolved cipher words, kept in their German form. Where the joins between clear and cipher do not make a sentence, the translation does not supply one. --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1619/R9426_en.md">R9426_en.md</a></p><pre translate="no">&lt;!-- English translation of R9426_reading.md (Claude Opus 5.5, 23 Oct 2026), kept close to the words because the reading is fragmentary: the clear text («» in the reading) is translated in ⟨ ⟩; open nomenclator groups &lt;nnn&gt; and group strings are kept; &quot;…&quot; gaps in the clear hand kept; [?word] the eight unresolved cipher words, kept in their German form. Where the joins between clear and cipher do not make a sentence, the translation does not supply one. --&gt;
 
 # R9426: Ferdinand of Bavaria, Elector of Cologne, to Maximilian I of Bavaria, Bonn, 22 December 1619: English translation
 
@@ -816,7 +816,7 @@ have been able to make no other conclusion in it than that⟩ &lt;417&gt; it &lt
 ⟨Erzig.⟩ &lt;248&gt; lands forth ⟨and⟩ extirpation of the Catholic religion.</pre></details>
 <h3>R9425, Archduke Albert&#x27;s resolution for Licentiate Morreus, 15 Dec 1619</h3>
 <p>Archduke Albert&#x27;s written resolution for the League agent Licentiate Morreus: he agrees on the recovery of the kingdom of Bohemia, has done good offices with the Emperor and the King of Spain, will send troops on foot if needed but cannot grant the muster place, the regiment of foot and the 500 horse, and refers the 1000 cuirassiers to Ambrogio Spinola. Read with the R9426 key unchanged.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1619/r9425/transcription.txt">transcription.txt</a></p><pre># R9425 BayHStA KAA 4591 ff. 278-280, 1619 (Archduke Albert&#x27;s answer/resolution, sent on to Munich). Transcribed 2 Oct 2026
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1619/r9425/transcription.txt">transcription.txt</a></p><pre translate="no"># R9425 BayHStA KAA 4591 ff. 278-280, 1619 (Archduke Albert&#x27;s answer/resolution, sent on to Munich). Transcribed 2 Oct 2026
 # from targets/kaa4591/img/IMG_R9425_I44571_P1-P6.jpg (page order of the letter: P1 f.278r, P2 f.278v, P6 f.279r, P3 f.279v, P4 f.280r clear close, P5 endorsement).
 # Format as ../transcription.txt: one manuscript line per row, P&lt;image&gt;.&lt;line&gt;; clear text in [ ]; z / c = the two word-end signs;
 # - = line-end continuation sign. Clear text is a working reading only (&quot;...&quot; = not read); the cipher is transcribed as written.
@@ -966,7 +966,7 @@ P3.32 [... freundlichen ... wie ... ...]
 # P4 = f. 280r, clear closing line
 P4.01 [Zur fernern nachricht und nachschreiben, den 15. 10bris Ao 1619]
 # P5 = f. 280v, endorsement (clear): &quot;Resolutio | deß hertzogs albrechts dem L. Morreo (?) ... ertailt&quot; and &quot;15 Xbr 619&quot;</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1619/r9425/decoded.txt">decoded.txt</a></p><pre>P1.01 albrecht uon gottes
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1619/r9425/decoded.txt">decoded.txt</a></p><pre translate="no">P1.01 albrecht uon gottes
 P1.02 gnaden [Wir haben gelobt das Schreiben so]
 P1.03 [... mit mehrem und was ... titul:] &lt;45&gt; {und} &lt;149&gt;
 P1.04 hochermeltes hern &lt;45&gt; L.
@@ -1098,7 +1098,7 @@ P3.30 [so bey ... des] {-} hern {Chur-?} {Rath?}
 P3.31 {und} agent [Ihrem E. L. ... freundlich ...]
 P3.32 [... freundlichen ... wie ... ...]
 P4.01 [Zur fernern nachricht und nachschreiben, den 15. 10bris Ao 1619]</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1619/r9425/reading.md">reading.md</a></p><pre># R9425: Archduke Albert&#x27;s resolution for Licentiate Morreus, [Brussels], 15 December 1619
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1619/r9425/reading.md">reading.md</a></p><pre translate="no"># R9425: Archduke Albert&#x27;s resolution for Licentiate Morreus, [Brussels], 15 December 1619
 
 BayHStA, Kurbayern Äußeres Archiv 4591, ff. 278–280 (DECODE R9425). Four cipher pages (images P1 f. 278r, P2 f. 278v,
 P6 f. 279r, P3 f. 279v), a clear closing line on f. 280r (P4: &quot;Zur fernern nachricht … den 15. 10bris Ao 1619&quot;) and
@@ -1211,7 +1211,7 @@ interlinear gloss over it), 221 (&quot;und 221 Districts&quot;), 136 (&quot;zu u
 Letter tokens not read (11): P1.16 &quot;gl&quot; for &quot;L.&quot; (one token), P1.18 one illegible sign, P3.05 one unclear sign in
 &quot;Kön[ig]&quot;, P2.30–31 two to three signs lost in the gutter (&quot;ai…&quot;, &quot;ire…&quot;), and five single-token slips whose word is
 clear (devotion, laisten, hinaufschicken, Befelch, unverhoffenden), counted unread.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1619/r9425/reading.md">reading.md</a></p><pre># R9425: Archduke Albert&#x27;s resolution for Licentiate Morreus, [Brussels], 15 December 1619
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1619/r9425/reading.md">reading.md</a></p><pre translate="no"># R9425: Archduke Albert&#x27;s resolution for Licentiate Morreus, [Brussels], 15 December 1619
 
 BayHStA, Kurbayern Äußeres Archiv 4591, ff. 278–280 (DECODE R9425). Four cipher pages (images P1 f. 278r, P2 f. 278v,
 P6 f. 279r, P3 f. 279v), a clear closing line on f. 280r (P4: &quot;Zur fernern nachricht … den 15. 10bris Ao 1619&quot;) and
@@ -1324,7 +1324,7 @@ interlinear gloss over it), 221 (&quot;und 221 Districts&quot;), 136 (&quot;zu u
 Letter tokens not read (11): P1.16 &quot;gl&quot; for &quot;L.&quot; (one token), P1.18 one illegible sign, P3.05 one unclear sign in
 &quot;Kön[ig]&quot;, P2.30–31 two to three signs lost in the gutter (&quot;ai…&quot;, &quot;ire…&quot;), and five single-token slips whose word is
 clear (devotion, laisten, hinaufschicken, Befelch, unverhoffenden), counted unread.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1619/r9425/R9425_en.md">R9425_en.md</a></p><pre>&lt;!-- English translation of the reading section of r9425/reading.md (Claude Opus 5.5, 23 Oct 2026), folio by folio, with the same holes: ⟨n⟩ open code groups kept; {Mt.} = Majesty; &quot;…&quot; words not read in the clear hand; the bracketed clear passages are working readings and are translated as such. Cipher and clear text are not distinguished here (italics in the source). --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1619/r9425/R9425_en.md">R9425_en.md</a></p><pre translate="no">&lt;!-- English translation of the reading section of r9425/reading.md (Claude Opus 5.5, 23 Oct 2026), folio by folio, with the same holes: ⟨n⟩ open code groups kept; {Mt.} = Majesty; &quot;…&quot; words not read in the clear hand; the bracketed clear passages are working readings and are translated as such. Cipher and clear text are not distinguished here (italics in the source). --&gt;
 
 # R9425: Archduke Albert&#x27;s resolution for Licentiate Morreus, [Brussels], 15 December 1619: English translation
 
@@ -1380,22 +1380,22 @@ Dilection all gracious, good satisfaction on it … of the lord ⟨41⟩ ⟨218�
   <a href="https://de-crypt.org/decrypt-web/RecordsView/9426" rel="noopener">DECODE R9426</a> (login; images not in the public domain).</li>
 <li>The same, ff. 278&ndash;280: <a href="https://de-crypt.org/decrypt-web/RecordsView/9425" rel="noopener">DECODE R9425</a>,
   the sibling letter used as the control, Archduke Albert&rsquo;s resolution of 15 December 1619, deciphered here in full on
-  2 October 2026 (transcription, decrypt and measurement in <code>targets/ferdinand1619/r9425/</code>).</li>
+  2 October 2026 (transcription, decrypt and measurement in <code translate="no">targets/ferdinand1619/r9425/</code>).</li>
 <li>The volume&rsquo;s key records R9419&ndash;R9423, checked against this cipher and ruled out; the earlier ciphertexts in the
   same volume are written up at <a href="kaa4591.html">KAA 4591</a> and <a href="kaa4591b.html">KAA 4591 (three letters)</a>.</li>
 <li><em>Briefe und Akten zur Geschichte des Drei&szlig;igj&auml;hrigen Krieges</em>, Neue Folge, Teil 1 Bd. 1: Januar 1618 &ndash;
   Dezember 1620, ed. Georg Franz from Karl Mayr-Deisinger&rsquo;s papers (Munich 1966); searched, no match.</li>
-<li>Language model: this repository&rsquo;s <code>lang/de-1500s</code> (German 1470&ndash;1610, five-gram characters).</li>
+<li>Language model: this repository&rsquo;s <code translate="no">lang/de-1500s</code> (German 1470&ndash;1610, five-gram characters).</li>
 </ul>
 
 <p class="muted">Transcription, key, solver, reading and the measurement are in
-<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/ferdinand1619" rel="noopener"><code>targets/ferdinand1619/</code></a>.
+<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/ferdinand1619" rel="noopener"><code translate="no">targets/ferdinand1619/</code></a>.
 The manuscript images are not reproduced: the archive reserves them.</p>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Manuscript images: Bayerisches Hauptstaatsarchiv, Kurbayern &Auml;u&szlig;eres Archiv 4591, via DECODE R9426; not in the public domain, not reproduced.</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="r4817.html" rel="prev">&larr; Speculum cipher flyleaf 1618 volume; note undated</a><a href="haga1620.html" rel="next">Haga at the Porte 1620 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

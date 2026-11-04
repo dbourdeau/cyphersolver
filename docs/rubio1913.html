@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-  <div class="cipherstrip">2-86-74-37-147-34-46-60-149-117-119-112-66<br>u &middot; r &middot; g &middot; e &middot; so &middot; be &middot; ma &middot; ne &middot; ra &middot; el &middot; en &middot; v&iacute;a &middot; de<br>2 = u &middot; 86 = r &middot; 74 = g &middot; 37 = e &middot; 147 = so &middot; 34 = be &middot; 46 = ma</div>
+  <div class="cipherstrip" translate="no">2-86-74-37-147-34-46-60-149-117-119-112-66<br>u &middot; r &middot; g &middot; e &middot; so &middot; be &middot; ma &middot; ne &middot; ra &middot; el &middot; en &middot; v&iacute;a &middot; de<br>2 = u &middot; 86 = r &middot; 74 = g &middot; 37 = e &middot; 147 = so &middot; 34 = be &middot; 46 = ma</div>
   <p class="kicker">Lampazos and Zacatecas &rarr; Minister of War, Mexico City &middot; numerical code, Clave n&uacute;m. 109 &middot; 1913&ndash;1914 &middot; read with the key issued to him</p>
   <h1>General Rubio Navarrete's cipher telegrams to the Minister of War, 1913&ndash;1914</h1>
   <p class="sub">Three draft telegrams from Huerta's federal army, with the printed key sheet filed beside them, deciphered in full (67 of 67 cipher words): a garrison courted by the Carrancistas, and a railway to Torre&oacute;n that cannot be saved.</p>
@@ -75,7 +75,7 @@
 <p>Clave n&uacute;m. 109 is a printed grid. Letters have several numbers for the vowels (1&ndash;3 for <em>u</em>, 13&ndash;15 for <em>o</em>, 25&ndash;27 for <em>i</em>, 37&ndash;39 for <em>e</em>, 49&ndash;51 for <em>a</em>) and run on to 61 <em>d</em> up to 93 <em>z</em>; syllables (<em>pa</em>, <em>pe</em>&hellip; <em>ta</em>, <em>te</em>, <em>ti</em>) fill the upper numbers, and a few military words have a number of their own (98 <em>Gobernador</em>, 106 <em>tropa</em>, 107 <em>fuerza</em>, 112 <em>v&iacute;a</em>, 132 <em>General</em>). Rubio wrote the numbers inside the plain text of the draft, separated by dashes, and spelled out the words that were not in the table, so a name such as T&eacute;llez comes out as te-e-ll-e-z.</p>
 
 <h2 id="method"><span class="num">03</span> The key and its test</h2>
-<p>The key is the sheet itself: the printed table filed with the telegrams (DLXXIII.1.28.14-23). Every number of the three telegrams is on it, and no value was added or corrected. The transcription of the sheet is the project's <code>key.tsv</code>.</p>
+<p>The key is the sheet itself: the printed table filed with the telegrams (DLXXIII.1.28.14-23). Every number of the three telegrams is on it, and no value was added or corrected. The transcription of the sheet is the project's <code translate="no">key.tsv</code>.</p>
 <p>To test it, Brice Dudout used a telegram that survives twice: the typed telegram of 30 March 1914 (DLXXIII.2.41.18-41) and its pencil draft (DLXXIII.1.29.9-30), on which Rubio wrote the plain text above the cipher numbers, "&hellip; la ha dado guarnici&oacute;n de dicha plaza por conferencia tenida hoy. Espero fuerzas". The key and the protocol were frozen and hashed before the measurement, and the first ten groups, which had been checked by eye, were left out. On the held-out part (9 words) the key gives 1.000 of characters and 1.000 of words; 200 control keys, with the table's values permuted, give at most &minus;0.021 and 0.111. The thresholds, 0.85 and 0.75, were met. The rest of that telegram, which has no contemporary plain text, reads "para poder seguir mis trabajos al norte".</p>
 
 <h2 id="reading"><span class="num">04</span> The reading</h2>
@@ -106,7 +106,7 @@
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>Lampazos, 18 July 1913, to the Minister of War and Navy (DLXXIII.1.30.16-49, incomplete)</h3>
 <p>Laredo garrison courted by the Carrancistas; General Treviño at San Antonio in touch with revolutionaries; Téllez should stay at Laredo.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rubio1913/transcription.txt">transcription.txt</a></p><pre># CEHM-Carso, fondo DLXXIII (Gen. Guillermo Rubio Navarrete): three drafts of telegrams to the Minister of War.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rubio1913/transcription.txt">transcription.txt</a></p><pre translate="no"># CEHM-Carso, fondo DLXXIII (Gen. Guillermo Rubio Navarrete): three drafts of telegrams to the Minister of War.
 # Plain text of the telegram in &lt;&lt; &gt;&gt;; cipher groups as written (numbers of &quot;Clave núm. 109&quot;); [struck: ...] = struck out by the writer.
 ## DLXXIII.1.30.16-49 (18 Jul 1913)
 &lt;&lt; Honrame comunicar a Ud. personas de confianza me informan que &gt;&gt;
@@ -163,7 +163,7 @@
 &lt;&lt; efectivo de fuerzas &gt;&gt;
 85 3 39 157 27 88 159 82 119 115
 &lt;&lt; Respetuosamente. G Rubio &gt;&gt;</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rubio1913/decryption.txt">decryption.txt</a></p><pre># Group-by-group decryption with key.tsv (Clave núm. 109, frozen SHA-256 9adb1190...).
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rubio1913/decryption.txt">decryption.txt</a></p><pre translate="no"># Group-by-group decryption with key.tsv (Clave núm. 109, frozen SHA-256 9adb1190...).
 
 ## DLXXIII.1.30.16-49 (18 Jul 1913)
 &lt;&lt; Honrame comunicar a Ud. personas de confianza me informan que &gt;&gt;
@@ -247,7 +247,7 @@ es ca so
 85 3 39 157 27 88 159 82 119 115
 q u e ex i s te n en esta
 &lt;&lt; Respetuosamente. G Rubio &gt;&gt;</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rubio1913/reading.md">reading.md</a></p><pre># Established text (Spanish, cipher spelling kept)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rubio1913/reading.md">reading.md</a></p><pre translate="no"># Established text (Spanish, cipher spelling kept)
 
 {x} probable; &lt;x&gt; = plain text of the telegram around the cipher (not counted).
 
@@ -262,7 +262,7 @@ q u e ex i s te n en esta
 ## [Zacatecas], 18 March 1914, to the Minister of War (DLXXIII.2.41.13-41)
 
 &lt;Me es honroso participar a usted con toda atención que&gt; urge sobemanera el envia de fuerzas a esta {plza} &lt;, pues con&gt; el solo anuncio &lt;de que&gt; vengo a &lt;reparar la vía&gt; a torreon los rebeldes se estan dedicando &lt;con gran actividad a&gt; {destruirla} &lt;totalmente, lo que&gt; es imposible evitar &lt;con el&gt; escaso &lt;efectivo de fuerzas&gt; que existen en esta &lt;. Respetuosamente. G. Rubio.&gt;</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rubio1913/translation.md">translation.md</a></p><pre># English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rubio1913/translation.md">translation.md</a></p><pre translate="no"># English translation
 
 ## Lampazos, 18 July 1913, to the Minister of War and Navy (DLXXIII.1.30.16-49, incomplete)
 
@@ -277,7 +277,7 @@ I have the honour to inform you that I am only waiting for material and troops t
 I have the honour to inform you, with all respect, that it is extremely urgent to send troops to this place, for at the mere announcement that I am coming to repair the railway to Torreón, the rebels are setting about destroying it completely with great activity, which it is impossible to prevent with the small number of troops that there are in this [place]. Respectfully, G. Rubio.</pre></details>
 <h3>[Zacatecas], 13 March 1914, to the Secretary of War (DLXXIII.2.41.9-41)</h3>
 <p>Only waiting for material and troops to rebuild the railway; two months to finish.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rubio1913/transcription.txt">transcription.txt</a></p><pre># CEHM-Carso, fondo DLXXIII (Gen. Guillermo Rubio Navarrete): three drafts of telegrams to the Minister of War.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rubio1913/transcription.txt">transcription.txt</a></p><pre translate="no"># CEHM-Carso, fondo DLXXIII (Gen. Guillermo Rubio Navarrete): three drafts of telegrams to the Minister of War.
 # Plain text of the telegram in &lt;&lt; &gt;&gt;; cipher groups as written (numbers of &quot;Clave núm. 109&quot;); [struck: ...] = struck out by the writer.
 ## DLXXIII.1.30.16-49 (18 Jul 1913)
 &lt;&lt; Honrame comunicar a Ud. personas de confianza me informan que &gt;&gt;
@@ -334,7 +334,7 @@ I have the honour to inform you, with all respect, that it is extremely urgent t
 &lt;&lt; efectivo de fuerzas &gt;&gt;
 85 3 39 157 27 88 159 82 119 115
 &lt;&lt; Respetuosamente. G Rubio &gt;&gt;</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rubio1913/decryption.txt">decryption.txt</a></p><pre># Group-by-group decryption with key.tsv (Clave núm. 109, frozen SHA-256 9adb1190...).
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rubio1913/decryption.txt">decryption.txt</a></p><pre translate="no"># Group-by-group decryption with key.tsv (Clave núm. 109, frozen SHA-256 9adb1190...).
 
 ## DLXXIII.1.30.16-49 (18 Jul 1913)
 &lt;&lt; Honrame comunicar a Ud. personas de confianza me informan que &gt;&gt;
@@ -418,7 +418,7 @@ es ca so
 85 3 39 157 27 88 159 82 119 115
 q u e ex i s te n en esta
 &lt;&lt; Respetuosamente. G Rubio &gt;&gt;</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rubio1913/reading.md">reading.md</a></p><pre># Established text (Spanish, cipher spelling kept)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rubio1913/reading.md">reading.md</a></p><pre translate="no"># Established text (Spanish, cipher spelling kept)
 
 {x} probable; &lt;x&gt; = plain text of the telegram around the cipher (not counted).
 
@@ -433,7 +433,7 @@ q u e ex i s te n en esta
 ## [Zacatecas], 18 March 1914, to the Minister of War (DLXXIII.2.41.13-41)
 
 &lt;Me es honroso participar a usted con toda atención que&gt; urge sobemanera el envia de fuerzas a esta {plza} &lt;, pues con&gt; el solo anuncio &lt;de que&gt; vengo a &lt;reparar la vía&gt; a torreon los rebeldes se estan dedicando &lt;con gran actividad a&gt; {destruirla} &lt;totalmente, lo que&gt; es imposible evitar &lt;con el&gt; escaso &lt;efectivo de fuerzas&gt; que existen en esta &lt;. Respetuosamente. G. Rubio.&gt;</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rubio1913/translation.md">translation.md</a></p><pre># English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rubio1913/translation.md">translation.md</a></p><pre translate="no"># English translation
 
 ## Lampazos, 18 July 1913, to the Minister of War and Navy (DLXXIII.1.30.16-49, incomplete)
 
@@ -448,7 +448,7 @@ I have the honour to inform you that I am only waiting for material and troops t
 I have the honour to inform you, with all respect, that it is extremely urgent to send troops to this place, for at the mere announcement that I am coming to repair the railway to Torreón, the rebels are setting about destroying it completely with great activity, which it is impossible to prevent with the small number of troops that there are in this [place]. Respectfully, G. Rubio.</pre></details>
 <h3>[Zacatecas], 18 March 1914, to the Minister of War (DLXXIII.2.41.13-41)</h3>
 <p>Troops urgently needed: the rebels are destroying the railway to Torreón.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rubio1913/transcription.txt">transcription.txt</a></p><pre># CEHM-Carso, fondo DLXXIII (Gen. Guillermo Rubio Navarrete): three drafts of telegrams to the Minister of War.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rubio1913/transcription.txt">transcription.txt</a></p><pre translate="no"># CEHM-Carso, fondo DLXXIII (Gen. Guillermo Rubio Navarrete): three drafts of telegrams to the Minister of War.
 # Plain text of the telegram in &lt;&lt; &gt;&gt;; cipher groups as written (numbers of &quot;Clave núm. 109&quot;); [struck: ...] = struck out by the writer.
 ## DLXXIII.1.30.16-49 (18 Jul 1913)
 &lt;&lt; Honrame comunicar a Ud. personas de confianza me informan que &gt;&gt;
@@ -505,7 +505,7 @@ I have the honour to inform you, with all respect, that it is extremely urgent t
 &lt;&lt; efectivo de fuerzas &gt;&gt;
 85 3 39 157 27 88 159 82 119 115
 &lt;&lt; Respetuosamente. G Rubio &gt;&gt;</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rubio1913/decryption.txt">decryption.txt</a></p><pre># Group-by-group decryption with key.tsv (Clave núm. 109, frozen SHA-256 9adb1190...).
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rubio1913/decryption.txt">decryption.txt</a></p><pre translate="no"># Group-by-group decryption with key.tsv (Clave núm. 109, frozen SHA-256 9adb1190...).
 
 ## DLXXIII.1.30.16-49 (18 Jul 1913)
 &lt;&lt; Honrame comunicar a Ud. personas de confianza me informan que &gt;&gt;
@@ -589,7 +589,7 @@ es ca so
 85 3 39 157 27 88 159 82 119 115
 q u e ex i s te n en esta
 &lt;&lt; Respetuosamente. G Rubio &gt;&gt;</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rubio1913/reading.md">reading.md</a></p><pre># Established text (Spanish, cipher spelling kept)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rubio1913/reading.md">reading.md</a></p><pre translate="no"># Established text (Spanish, cipher spelling kept)
 
 {x} probable; &lt;x&gt; = plain text of the telegram around the cipher (not counted).
 
@@ -604,7 +604,7 @@ q u e ex i s te n en esta
 ## [Zacatecas], 18 March 1914, to the Minister of War (DLXXIII.2.41.13-41)
 
 &lt;Me es honroso participar a usted con toda atención que&gt; urge sobemanera el envia de fuerzas a esta {plza} &lt;, pues con&gt; el solo anuncio &lt;de que&gt; vengo a &lt;reparar la vía&gt; a torreon los rebeldes se estan dedicando &lt;con gran actividad a&gt; {destruirla} &lt;totalmente, lo que&gt; es imposible evitar &lt;con el&gt; escaso &lt;efectivo de fuerzas&gt; que existen en esta &lt;. Respetuosamente. G. Rubio.&gt;</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rubio1913/translation.md">translation.md</a></p><pre># English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rubio1913/translation.md">translation.md</a></p><pre translate="no"># English translation
 
 ## Lampazos, 18 July 1913, to the Minister of War and Navy (DLXXIII.1.30.16-49, incomplete)
 
@@ -634,7 +634,7 @@ I have the honour to inform you, with all respect, that it is extremely urgent t
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Manuscript image: CEHM-Carso (Fundaci&oacute;n Carlos Slim), public viewer; text and translation: Brice Dudout, CC BY 4.0</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="manuel1910.html" rel="prev">&larr; Manuel II to Queen Am&eacute;lie 1910 1910</a><a href="rosamonde1915.html" rel="next">Rosamonde telegrams 1915&ndash;16 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

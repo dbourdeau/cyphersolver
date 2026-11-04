@@ -91,12 +91,12 @@
 <p>The slip on c. 29 gave the first values. Tomokiyo&rsquo;s <a href="https://cryptiana.web.fc2.com/code/spanish2.htm">Cryptiana</a> then identified the system and pictures Bertomeu Masi&aacute;&rsquo;s reconstruction of the key, which shows the rule: base shape for the consonant, mark for the vowel. The key image is small and does not cover every form, so the sign table was extended from the letters themselves.</p>
 <p>The cipher was cropped into numbered panels at about seven times size, and each sign was named and given a value in a sign file, line by line. The main session did c. 60r block 1 and c. 60v. Subagents with the same brief did c. 60r block 2, c. 61r, c. 61v, c. 62r and the short passages. In all there are 3,032 signs: 2,780 with a value, 128 doubtful, 51 taken as nulls, 25 clear words and 48 unread.</p>
 <p>The text is continuous across the pages, which is one check on it: c. 60r ends &ldquo;romper la guerra contra la yglesia o&rdquo; and c. 60v goes on &ldquo;no seria &hellip; que romper la guerra con la yglesia&rdquo;; c. 60v ends &ldquo;lo qual no con&rdquo; and c. 61r begins &ldquo;vergia&rdquo;.</p>
-<p>The statistical test (<code>docs/_validate.py</code>, order-4 model of Golden Age Spanish) passes. The reading scores &minus;1.96 per letter, against &minus;3.99 for random keys (9.5 sd) and &minus;2.56 for keys annealed onto shuffled signs (45.5 sd), and an annealer on the real text reaches only &minus;2.34.</p>
+<p>The statistical test (<code translate="no">docs/_validate.py</code>, order-4 model of Golden Age Spanish) passes. The reading scores &minus;1.96 per letter, against &minus;3.99 for random keys (9.5 sd) and &minus;2.56 for keys annealed onto shuffled signs (45.5 sd), and an annealer on the real text reaches only &minus;2.34.</p>
 
 <h2 id="what-remains-uncertain"><span class="num">05</span> What remains uncertain</h2>
 <ul>
   <li><strong>Not a controlled test.</strong> Every value was chosen with the sentence in view, knowing what would make Spanish. The statistical test speaks for the key as a whole, not for any one word. Only one line of the subagents&rsquo; work (c. 61v line 15) was checked against its crop, and no person has checked any.</li>
-  <li><strong>Code words.</strong> <code>Pollo</code> is inferred to be the Pope. <code>mus</code> or <code>mms</code> fits &ldquo;para&rdquo; everywhere. <code>inta</code> and <code>em</code> stand where the Church is expected, and <code>nerp</code> where France is, both from the sense only. <code>vela/bela</code>, <code>gien</code>, <code>et ud</code> and <code>tu</code> are unexplained.</li>
+  <li><strong>Code words.</strong> <code translate="no">Pollo</code> is inferred to be the Pope. <code translate="no">mus</code> or <code translate="no">mms</code> fits &ldquo;para&rdquo; everywhere. <code translate="no">inta</code> and <code translate="no">em</code> stand where the Church is expected, and <code translate="no">nerp</code> where France is, both from the sense only. <code translate="no">vela/bela</code>, <code translate="no">gien</code>, <code translate="no">et ud</code> and <code translate="no">tu</code> are unexplained.</li>
   <li><strong>Stretches that do not form sentences.</strong> c. 60v lines 7&ndash;8 and 23&ndash;27; c. 61r lines 4&ndash;5 and 16&ndash;18; c. 61v line 18 (&ldquo;la pe gu l ro n&rdquo;).</li>
   <li><strong>Doubtful spellings left as the signs give them.</strong> &ldquo;Hallarse&rdquo; after &ldquo;verniamos&rdquo;; &ldquo;arrordio&rdquo; for acordio; &ldquo;su rr esso&rdquo; for suceso. Gamma is rr in the key but wants c here. &ldquo;Plazencia&rdquo; rests on an N-shaped sign taken as p from the words it occurs in.</li>
   <li><strong>Signs with dots below.</strong> Most drop out inside a word (&ldquo;car.gado&rdquo;, &ldquo;quisie.sse&rdquo;), but some carry their plain value (c. 60r line 12), and the end of c. 64r gives no Spanish either way.</li>
@@ -110,7 +110,7 @@
 <h3>14 Nov 1549, cc.60r-62r <span class="st partial">read in part</span></h3>
 <p>Charles V tells his governor of Milan not to make terms with Ottavio Farnese over Parma: Ottavio has no money or troops, and it would mean war with the Church, which holds Parma, and could drive the Pope to give it to Orazio Farnese. Gonzaga may act only in two cases, an Orsini stroke or Orazio&#x27;s entry, and then with dissimulation.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (94% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/14nov1549_60r_block1.tsv">14nov1549_60r_block1.tsv</a></p><pre># 14 Nov 1549, c.60r, first cipher block, by eye, no slip or margin note. line TAB sign-name TAB value. ? = unread, trailing ? = value doubtful.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/14nov1549_60r_block1.tsv">14nov1549_60r_block1.tsv</a></p><pre translate="no"># 14 Nov 1549, c.60r, first cipher block, by eye, no slip or margin note. line TAB sign-name TAB value. ? = unread, trailing ? = value doubtful.
 1	loopg	y
 1	ys-2dots	vi
 1	j-2dots	ni
@@ -254,7 +254,7 @@
 8	ap	n
 8	tri-1dot	ta
 8	v	d</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/14nov1549_60r_block2.tsv">14nov1549_60r_block2.tsv</a></p><pre># 14 Nov 1549, c.60r second cipher block, by eye with sign_table.tsv, context in view. line TAB sign-name TAB value. ? = unread, trailing ? = value doubtful.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/14nov1549_60r_block2.tsv">14nov1549_60r_block2.tsv</a></p><pre translate="no"># 14 Nov 1549, c.60r second cipher block, by eye with sign_table.tsv, context in view. line TAB sign-name TAB value. ? = unread, trailing ? = value doubtful.
 1	tri-cross	te
 1	openj-2dots	ni
 1	S	e
@@ -533,7 +533,7 @@
 12	y-2dots	si
 12	n	a
 12	aplus	o</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/14nov1549_60v.tsv">14nov1549_60v.tsv</a></p><pre># 14 Nov 1549, c.60v, by eye with sign_table.tsv, context in view. line TAB sign-name TAB value. ? = unread, trailing ? = value doubtful.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/14nov1549_60v.tsv">14nov1549_60v.tsv</a></p><pre translate="no"># 14 Nov 1549, c.60v, by eye with sign_table.tsv, context in view. line TAB sign-name TAB value. ? = unread, trailing ? = value doubtful.
 1	x-curl	no
 1	y-bar	se
 1	g-2dots	ri
@@ -1211,7 +1211,7 @@
 28	x-curl	no
 28	eight-oo	co
 28	ap	n</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/14nov1549_61r.tsv">14nov1549_61r.tsv</a></p><pre># 14 Nov 1549, c.61r, by eye with sign_table.tsv, context in view. line TAB sign-name TAB value. ? = unread, trailing ? = value doubtful.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/14nov1549_61r.tsv">14nov1549_61r.tsv</a></p><pre translate="no"># 14 Nov 1549, c.61r, by eye with sign_table.tsv, context in view. line TAB sign-name TAB value. ? = unread, trailing ? = value doubtful.
 1	ys-bar	ve
 1	d	r
 1	ring-2dots	gi
@@ -1868,7 +1868,7 @@
 29	Lambda-o	po
 29	sideloop-bare-1dot	da
 29	g-1dot	ra</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/14nov1549_61v.tsv">14nov1549_61v.tsv</a></p><pre># 14 Nov 1549, c.61v, by eye with sign_table.tsv, context in view. line TAB sign-name TAB value. ? = unread, trailing ? = value doubtful.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/14nov1549_61v.tsv">14nov1549_61v.tsv</a></p><pre translate="no"># 14 Nov 1549, c.61v, by eye with sign_table.tsv, context in view. line TAB sign-name TAB value. ? = unread, trailing ? = value doubtful.
 1	loopg	y
 1	x-stroke-o	de
 1	seven	b
@@ -2521,7 +2521,7 @@
 28	tri-1dot	ta
 28	ap	n
 28	infinity	do?</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/14nov1549_62r.tsv">14nov1549_62r.tsv</a></p><pre># 14 Nov 1549, c.62r, by eye with sign_table.tsv, context in view. line TAB sign-name TAB value. ? = unread, trailing ? = value doubtful. Lines 4-9 and the rest of 13 onward are clear text, not listed here.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/14nov1549_62r.tsv">14nov1549_62r.tsv</a></p><pre translate="no"># 14 Nov 1549, c.62r, by eye with sign_table.tsv, context in view. line TAB sign-name TAB value. ? = unread, trailing ? = value doubtful. Lines 4-9 and the rest of 13 onward are clear text, not listed here.
 1	Lambda-1dot	pa
 1	d	r
 1	L-1dot	ma
@@ -2652,7 +2652,7 @@
 13	eight-bar	ce
 13	d	r
 13	crescent	)</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/14nov1549_decryption_signs.txt">14nov1549_decryption_signs.txt</a></p><pre># 14nov1549: sign values line by line, from the sign files. [.] unread, (x?) doubtful, {x} clear in the cipher, nulls dropped.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/14nov1549_decryption_signs.txt">14nov1549_decryption_signs.txt</a></p><pre translate="no"># 14nov1549: sign values line by line, from the sign files. [.] unread, (x?) doubtful, {x} clear in the cipher, nulls dropped.
 
 ## 14nov1549_60r_block1.tsv
 1	y vi ni e n
@@ -2777,7 +2777,7 @@
 11	{mms?} lo mi s mo e n que a o ra se ha n e m (p?) le a do co n
 12	tra (d?) ri gu (i?) o {mms?} o tra co sa que e n to n ce s se po
 13	d ri a o ff re ce r )</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/14nov1549_reading.txt">14nov1549_reading.txt</a></p><pre># Charles V to Ferrante Gonzaga, 14 November 1549, Biblioteca Estense, Autografoteca Campori, Lettera K, Karl V, sfasc. IV, cc. 60-63.
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/14nov1549_reading.txt">14nov1549_reading.txt</a></p><pre translate="no"># Charles V to Ferrante Gonzaga, 14 November 1549, Biblioteca Estense, Autografoteca Campori, Lettera K, Karl V, sfasc. IV, cc. 60-63.
 # The ciphered passages, in order. Word division, accents and punctuation are editorial; the cipher has none.
 # [.] = one sign not read. (x?) = doubtful. Words in {braces} are written in clear inside the cipher and their meaning is not given by the key.
 # Read by eye, with the sense in view. No contemporary decipherment of this letter has been found.
@@ -2811,7 +2811,7 @@ Parma en manos del {Pollo} y por el o del dicho Duque no se in[.]ove ni emprenda
 
 c.62r, lines 10-13, inside a clear paragraph on the three companies of Spanish infantry from Prince Doria&#x27;s galleys
 el verano que viene o {mms} lo mismo en que aora se han empleado contra D(?)rigu i(?) o {mms} otra cosa que entonces se podria offrecer</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/14nov1549_en.md">14nov1549_en.md</a></p><pre># English of the ciphered passages, Charles V to Ferrante Gonzaga, 14 November 1549
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/14nov1549_en.md">14nov1549_en.md</a></p><pre translate="no"># English of the ciphered passages, Charles V to Ferrante Gonzaga, 14 November 1549
 
 Working translation of `14nov1549_reading.txt`. [..] marks text not read. Passages that do not form sentences in the Spanish are given as far as they go and marked. &quot;the Pollo&quot; keeps the clear word of the cipher; on the evidence below it is the Pope, Paul III, but the letter does not say so. `mus` and `mms` appear to stand for &quot;para&quot; and are translated &quot;to&quot; or &quot;for&quot;.
 
@@ -2839,7 +2839,7 @@ And likewise, in case, as is suspected, by an agreement between the Pollo and th
 <h3>20 Nov 1549, cc.64r-64v <span class="st partial">read in part</span></h3>
 <p>After Paul III&#x27;s death: five short cipher passages forbid any move on Parma during the vacancy of the see, or any war on the Church, and put off an attack on the Farnese. The clerk&#x27;s margin notes give the same sense.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (80% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/20nov1549_64r.tsv">20nov1549_64r.tsv</a></p><pre># 20 Nov 1549, c.64r last 2 lines, by eye with sign_table.tsv. line TAB sign-name TAB value. ? = unread, trailing ? = value doubtful. Line 1 = the one sign after the clear `deffender.`; line 2 = the full line below it. Does not form Spanish.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/20nov1549_64r.tsv">20nov1549_64r.tsv</a></p><pre translate="no"># 20 Nov 1549, c.64r last 2 lines, by eye with sign_table.tsv. line TAB sign-name TAB value. ? = unread, trailing ? = value doubtful. Line 1 = the one sign after the clear `deffender.`; line 2 = the full line below it. Does not form Spanish.
 1	n-dots-below-filler	null?
 2	n-dots-below	null?
 2	L-loop-dots-below	null?
@@ -2855,7 +2855,7 @@ And likewise, in case, as is suspected, by an agreement between the Pollo and th
 2	ys-dots-below	null?
 2	Z-bar-dots-below	null?
 2	dash-o-dots-below	null?</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/20nov1549_64v.tsv">20nov1549_64v.tsv</a></p><pre># 20 Nov 1549, c.64v, by eye with sign_table.tsv. line TAB sign-name TAB value. ? = unread, trailing ? = value doubtful.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/20nov1549_64v.tsv">20nov1549_64v.tsv</a></p><pre translate="no"># 20 Nov 1549, c.64v, by eye with sign_table.tsv. line TAB sign-name TAB value. ? = unread, trailing ? = value doubtful.
 # FITTED: the clerk&#x27;s margin notes were in view for every passage, so this is agreement with a contemporary summary, not a test.
 # line = passage + letter of the manuscript line: 1a = passage 1, first line of c.64v.
 1a	n	a
@@ -3010,7 +3010,7 @@ And likewise, in case, as is suspected, by an agreement between the Pollo and th
 5d	e-1dot	?
 5d	tri-cross	te
 5d	no	r?</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/20nov1549_decryption_signs.txt">20nov1549_decryption_signs.txt</a></p><pre># 20nov1549: sign values line by line, from the sign files. [.] unread, (x?) doubtful, {x} clear in the cipher, nulls dropped.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/20nov1549_decryption_signs.txt">20nov1549_decryption_signs.txt</a></p><pre translate="no"># 20nov1549: sign values line by line, from the sign files. [.] unread, (x?) doubtful, {x} clear in the cipher, nulls dropped.
 
 ## 20nov1549_64r.tsv
 2	(pa?) a (pa?) (de?)
@@ -3028,7 +3028,7 @@ And likewise, in case, as is suspected, by an agreement between the Pollo and th
 5b	pa re s (ci?) e re
 5c	o (tra?) co sa y (di?) e re (n?) o ca si o n se po (r?) (ra?) [.] (l?)
 5d	(fa?) [.] [.] te (r?)</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/20nov1549_reading.txt">20nov1549_reading.txt</a></p><pre># Charles V to Ferrante Gonzaga, 20 November 1549, cc.64r-64v, the cipher passages, each after the clear words that lead into it.
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/20nov1549_reading.txt">20nov1549_reading.txt</a></p><pre translate="no"># Charles V to Ferrante Gonzaga, 20 November 1549, cc.64r-64v, the cipher passages, each after the clear words that lead into it.
 # Fitted: the clerk&#x27;s margin notes were in view. From 20nov1549_64r.tsv and 20nov1549_64v.tsv. The last two lines of c.64r are not read.
 (c.64r, clear: quiera confirmar y deffender) [2 lines of signs, nearly all with dots below, not read]
 1. a Parma en nonbre de la yglesia (clear: attento lo que arriba se dize de nuestra intencion)
@@ -3036,7 +3036,7 @@ And likewise, in case, as is suspected, by an agreement between the Pollo and th
 3. (clear: pretender que) qui si ss e [.] mos mover guerra a la yglesia (clear: directa o indirectamente)
 4. (clear: tener de) offender y ocupar en esta ocasion el estado de la casa Farne[.]sa por la [.] vezindad que tiene con el (clear: dicho)
 5. (clear: ni se deve) tentar en tal tiempo (clear: pues quando despues de elegido pontifice) paresciere otra cosa y diere ocasion se pod(r?)a [. .] [fa . .]te [. .]r</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/20nov1549_en.md">20nov1549_en.md</a></p><pre># English, 20 November 1549, the cipher passages with the clear words around them
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/20nov1549_en.md">20nov1549_en.md</a></p><pre translate="no"># English, 20 November 1549, the cipher passages with the clear words around them
 Clear: as to what you ask, in case the College should wish to confirm and defend [2 lines of signs not read]:
 1. in Parma in the name of the Church. Clear: given what is said above of our intention.
 2. Clear: in no way let [anything] be moved in Parma on our part, nor in any other place.
@@ -3045,7 +3045,7 @@ Clear: as to what you ask, in case the College should wish to confirm and defend
 5. Clear: nor should it be attempted at such a time, since when, after the pontiff has been elected, something else should seem right and give occasion, it can easily be done.</pre></details>
 <h3>30 Sep 1549, c.50r</h3>
 <p>Someone is dealing with the Prior of Lombardy, castellan of the castle of Nice, so as to throw him out and put in Brissac. The clear margin note says the same in brief and was in view.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/30sep1549_50r.tsv">30sep1549_50r.tsv</a></p><pre># 30 Sep 1549, c.50r cipher block, by eye with sign_table.tsv, context in view; signs read on their own terms, margin note not used as input but in view. line TAB sign-name TAB value. ? = unread, trailing ? = value doubtful.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/30sep1549_50r.tsv">30sep1549_50r.tsv</a></p><pre translate="no"># 30 Sep 1549, c.50r cipher block, by eye with sign_table.tsv, context in view; signs read on their own terms, margin note not used as input but in view. line TAB sign-name TAB value. ? = unread, trailing ? = value doubtful.
 1	loopg	y
 1	n	a
 1	nine	u
@@ -3135,7 +3135,7 @@ Clear: as to what you ask, in case the College should wish to confirm and defend
 5	ring-stem	i
 5	nine	u
 5	eight	c</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/30sep1549_decryption_signs.txt">30sep1549_decryption_signs.txt</a></p><pre># 30sep1549: sign values line by line, from the sign files. [.] unread, (x?) doubtful, {x} clear in the cipher, nulls dropped.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/30sep1549_decryption_signs.txt">30sep1549_decryption_signs.txt</a></p><pre translate="no"># 30sep1549: sign values line by line, from the sign files. [.] unread, (x?) doubtful, {x} clear in the cipher, nulls dropped.
 
 ## 30sep1549_50r.tsv
 1	y a u n que y va co n fi n de tra c ta r
@@ -3143,13 +3143,13 @@ Clear: as to what you ask, in case the College should wish to confirm and defend
 3	de l ca s ti ll o de ta l ma ne ra que fu e ss e [.]
 4	ta n to co mo he c ha r le de a ll i po r (me?)
 5	te r de n tro a mo s de b ri ss i u c</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/30sep1549_reading.txt">30sep1549_reading.txt</a></p><pre># Charles V to Ferrante Gonzaga, 30 September 1549, c.50r, the cipher block (5 lines). From 30sep1549_50r.tsv. A clear note in the margin summarises it and was in view while reading.
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/30sep1549_reading.txt">30sep1549_reading.txt</a></p><pre translate="no"># Charles V to Ferrante Gonzaga, 30 September 1549, c.50r, the cipher block (5 lines). From 30sep1549_50r.tsv. A clear note in the margin summarises it and was in view while reading.
 y aunque yva con fin de tractar al prior de lombardia castellano que es del castillo de tal manera que fuesse [.] tanto como hechar le de alli por me(?)ter dentro a Mos de Brissiuc</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/30sep1549_en.md">30sep1549_en.md</a></p><pre># English, 30 September 1549, c.50r
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/30sep1549_en.md">30sep1549_en.md</a></p><pre translate="no"># English, 30 September 1549, c.50r
 And although he went with the aim of dealing with the Prior of Lombardy, who is castellan of the castle, in such a way that it would amount to throwing him out of there in order to put in Mons. de Brissac.</pre></details>
 <h3>13 May 1549, c.30r</h3>
 <p>Gonzaga is to work out where the money and materials for a work will come from, without letting the intention show. The slip c.29 is the contemporary decipherment.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/13may1549_30r.tsv">13may1549_30r.tsv</a></p><pre># 13 May 1549, c.30r cipher block, by eye with sign_table.tsv, decipherment slip c.29 in view (FITTED: agreement with the slip is not a test). line TAB sign-name TAB value. ? = unread, trailing ? = value doubtful.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/13may1549_30r.tsv">13may1549_30r.tsv</a></p><pre translate="no"># 13 May 1549, c.30r cipher block, by eye with sign_table.tsv, decipherment slip c.29 in view (FITTED: agreement with the slip is not a test). line TAB sign-name TAB value. ? = unread, trailing ? = value doubtful.
 1	loopg	y
 1	Lambda-bar	pe
 1	ap	n
@@ -3270,7 +3270,7 @@ And although he went with the aim of dealing with the Prior of Lombardy, who is 
 6	S-2dots	ci
 6	aplus	o
 6	ap	n</pre></details>
-<details class="ftext"><summary>Decipherment of the time</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/13may1549_reading.txt">13may1549_reading.txt</a></p><pre># Sign-by-sign alignment of c.30r (by eye, 2 Nov 2026): one sign per consonant+vowel unit, 6 lines
+<details class="ftext"><summary>Decipherment of the time</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/13may1549_reading.txt">13may1549_reading.txt</a></p><pre translate="no"># Sign-by-sign alignment of c.30r (by eye, 2 Nov 2026): one sign per consonant+vowel unit, 6 lines
 # format: unit = sign shape (see glyph_catalogue.md)
 L1  y=loop-g pe=L+cross n=ap se=long-7 y=loop-g s=mo e=w n=ap e=w s=mo te=crossed-triangle me=L-4hook di=ring-2dots o=ap+ de=x-o do=oo n=ap de=x-o y=loop-g
 L2  co=s-o mo=lo se=7 ha=e-dot [extra e-dot] n=ap de=x-o sa=e-dot be=6-tick r=no lo=c-curl s=mo di=ring-2dots ne=e-reversed ro=g-ring s=mo pa/ra=mm,nn-tail la=6-dot o=ap+ bra=7 y=loop-g
@@ -3278,7 +3278,7 @@ L3  y=loop-g [dotted-triangle null?] ta=triangle-dot n=ap bi=7-2dots e=w n=ap lo
 L4  ti=triangle-2dots e=w n=ap po=Lambda-o si=j-2dots n=ap que=c-slash po=Lambda-o r=no ni=ring-2dots n=ap gu=ring-p na=j-dot ma=flat-L-colon ne=e-reversed ra=g-ring-dot se=7 ha=e-dot ga=ring-dot
 L5  de mo s tra ci o n / po r do n de / se co m pre [one sign not fixed] n da
 L6  ni i [one sign not fixed] ma gi ne que se a ta l nu e s tra i n te n ci o n</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/13may1549_decryption_signs.txt">13may1549_decryption_signs.txt</a></p><pre># 13may1549: sign values line by line, from the sign files. [.] unread, (x?) doubtful, {x} clear in the cipher, nulls dropped.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/13may1549_decryption_signs.txt">13may1549_decryption_signs.txt</a></p><pre translate="no"># 13may1549: sign values line by line, from the sign files. [.] unread, (x?) doubtful, {x} clear in the cipher, nulls dropped.
 
 ## 13may1549_30r.tsv
 1	y pe n se y s e n e s te me di o de do n de y
@@ -3287,13 +3287,13 @@ L6  ni i [one sign not fixed] ma gi ne que se a ta l nu e s tra i n te n ci o n<
 4	ti e n po si n que po r ni n gu na ma ne ra se ha ga
 5	de mo s tra ci o n po r do n de se co n pre he n da
 6	ni i ma gi ne que se a ta l nu e s tra i n te n ci o n</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/13may1549_reading_signs.txt">13may1549_reading_signs.txt</a></p><pre># Charles V to Ferrante Gonzaga, 13 May 1549, c.30r, the cipher block (6 lines). From 13may1549_30r.tsv, aligned with the contemporary decipherment on the slip c.29.
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/13may1549_reading_signs.txt">13may1549_reading_signs.txt</a></p><pre translate="no"># Charles V to Ferrante Gonzaga, 13 May 1549, c.30r, the cipher block (6 lines). From 13may1549_30r.tsv, aligned with the contemporary decipherment on the slip c.29.
 y penseys en este medio de donde y como se han de haber los dineros {mus} la obra y tanbien los materiales porque se gane tienpo sin que por ninguna manera se haga demostracion por donde se conprehenda ni imagine que sea tal nuestra intencion</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/13may1549_en.md">13may1549_en.md</a></p><pre># English, 13 May 1549, c.30r
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/13may1549_en.md">13may1549_en.md</a></p><pre translate="no"># English, 13 May 1549, c.30r
 And consider in the meantime where and how the money for the work and also the materials is to be had, so as to save time, without any show being made by which it could be understood or imagined that this is our intention.</pre></details>
 <h3>23 Dec 1549, c.76r</h3>
 <p>On Nice and the Prior of Lombardy, who is sent money and told to go and live in the castle. c.77 is the contemporary decipherment.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/23dec1549_76r.tsv">23dec1549_76r.tsv</a></p><pre># 23 Dec 1549, c.76r passages, by eye with sign_table.tsv, decipherment slip c.77 in view (FITTED: agreement with the slip is not a test). line TAB sign-name TAB value. ? = unread, trailing ? = value doubtful. Line labels: a = in the clear line near y 436; b = near y 590; c1-c3 = block near y 742-834; d1-d3 = block near y 1299-1397.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/23dec1549_76r.tsv">23dec1549_76r.tsv</a></p><pre translate="no"># 23 Dec 1549, c.76r passages, by eye with sign_table.tsv, decipherment slip c.77 in view (FITTED: agreement with the slip is not a test). line TAB sign-name TAB value. ? = unread, trailing ? = value doubtful. Line labels: a = in the clear line near y 436; b = near y 590; c1-c3 = block near y 742-834; d1-d3 = block near y 1299-1397.
 a	Lambda-1dot	pa
 a	no-letters	r
 a	L-1dot	ma
@@ -3414,7 +3414,7 @@ d3	mo-letters	s
 d3	tri-2dots	ti
 d3	L-tick	ll
 d3	aplus	o</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/23dec1549_decryption_signs.txt">23dec1549_decryption_signs.txt</a></p><pre># 23dec1549: sign values line by line, from the sign files. [.] unread, (x?) doubtful, {x} clear in the cipher, nulls dropped.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/23dec1549_decryption_signs.txt">23dec1549_decryption_signs.txt</a></p><pre translate="no"># 23dec1549: sign values line by line, from the sign files. [.] unread, (x?) doubtful, {x} clear in the cipher, nulls dropped.
 
 ## 23dec1549_76r.tsv
 a	pa r ma
@@ -3425,12 +3425,12 @@ c3	s ta n do (fu?) e ra e l pri o r de lo m ba r di a
 d1	a l di c ho pri o r a cu e n ta de la di c ha pa
 d2	ga e n ca r ga n do le que a la ho ra se va y a a a ss i s
 d3	ti r y re si di r e ne l ca s ti ll o</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/23dec1549_reading.txt">23dec1549_reading.txt</a></p><pre># Charles V to Ferrante Gonzaga, 23 December 1549, c.76r, the cipher passages. From 23dec1549_76r.tsv, aligned with the contemporary decipherment on c.77.
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/23dec1549_reading.txt">23dec1549_reading.txt</a></p><pre translate="no"># Charles V to Ferrante Gonzaga, 23 December 1549, c.76r, the cipher passages. From 23dec1549_76r.tsv, aligned with the contemporary decipherment on c.77.
 a. a lo de Parma
 b. [Duque] Octavio
 c. sobre lo de Nica siendo aquella p(?)laca de la importancia que es y estando fu(?)era el prior de lombardia
 d. al dicho prior a cuenta de la dicha paga encargandole que a la hora se vaya a assistir y residir en el castillo</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/23dec1549_en.md">23dec1549_en.md</a></p><pre># English, 23 December 1549, c.76r
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/23dec1549_en.md">23dec1549_en.md</a></p><pre translate="no"># English, 23 December 1549, c.76r
 a. as to Parma. b. Duke Ottavio. c. about Nice, that place being of the importance it is and the Prior of Lombardy being away from it. d. to the said Prior on account of the said pay, charging him to go at once to attend and reside in the castle.</pre></details>
 <p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/sign_table.tsv">sign_table.tsv</a>, <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1549/sign_values.tsv">sign_values.tsv</a></p>
 <!-- texts:end -->
@@ -3445,13 +3445,13 @@ a. as to Parma. b. Duke Ottavio. c. about Nice, that place being of the importan
   <li>A. Meister, <em>Die Geheimschrift im Dienste der p&auml;pstlichen Kurie</em> (1906), p. 212, as pictured by Tomokiyo.</li>
   <li><a href="https://en.wikipedia.org/wiki/Ottavio_Farnese,_Duke_of_Parma">Ottavio Farnese</a> and <a href="https://en.wikipedia.org/wiki/War_of_Parma">War of Parma</a>, Wikipedia, for the dates of the context.</li>
 </ul>
-<p class="muted">Sign files, readings, translations and the sign table are in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/gonzaga1549"><code>targets/gonzaga1549/</code></a>.</p>
+<p class="muted">Sign files, readings, translations and the sign table are in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/gonzaga1549"><code translate="no">targets/gonzaga1549/</code></a>.</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Biblioteca Estense Universitaria, Modena, Autografoteca Campori, CC BY-NC-SA</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="burgo1527.html" rel="prev">&larr; Charles V to Prince Philip (catalogued Burgo 1527) 1543&ndash;54</a><a href="siena5.html" rel="next">Siena R4794, the artillery slip 16th century &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

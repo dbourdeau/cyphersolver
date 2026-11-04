@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">m ✕ y b ð a ʓ v ð L ɸ 25 ⸸ † m q ɵ f b v ✕ m ʌ 8 a q<br>ð w n ð b ð n ✕ q e p ʆ ð a k n r q ✕ ɸ n p b e ɵ e v m v q b s r ð q € 10 f a L o m ð 24 ⁂</div>
+  <div class="cipherstrip" translate="no">m ✕ y b ð a ʓ v ð L ɸ 25 ⸸ † m q ɵ f b v ✕ m ʌ 8 a q<br>ð w n ð b ð n ✕ q e p ʆ ð a k n r q ✕ ɸ n p b e ɵ e v m v q b s r ð q € 10 f a L o m ð 24 ⁂</div>
   <p class="kicker">Brussels → the Court · homophonic cipher, one symbol per letter · 13 July 1572, 4 Jan 1573</p>
   <h1>Mondoucet to Charles IX: the despatches of 1572 and 1573</h1>
 <div class="parties"><figure class="party recipient"><img src="portrait_charles-ix.jpg" alt="Charles IX" title="Charles IX: Portrait, François Clouet. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Charles IX</figcaption></figure></div><!-- /parties -->
@@ -95,7 +95,7 @@ and <em>q</em> into two components each, and attached dots and bars as separate 
 plaintext words above the cipher (<em>pouvez</em>, <em>leur délivrance</em>, <em>la bruslation</em>, <em>nous maintenant</em>, <em>au 30</em>), and f. 64 (“16 juillet 1572,
 déchiffré de la précédente”) gives the whole block in clear, 17 lines and 863 letters. Placing the glossed words fixes about twenty letters at once. Carried into a
 HMM alignment of the hand transcription — forward–backward and Viterbi, banded around the glossed words, with a per-glyph null rate, they give a table of homophone counts per
-glyph and a small null set <code>{ * , C , mq , j }</code>. The cipher is homophonic with a 24-letter early-modern alphabet (<em>i</em>=<em>j</em>, <em>u</em>=<em>v</em>), a few
+glyph and a small null set <code translate="no">{ * , C , mq , j }</code>. The cipher is homophonic with a 24-letter early-modern alphabet (<em>i</em>=<em>j</em>, <em>u</em>=<em>v</em>), a few
 digraph symbols (the symbol transcribed <em>23</em> = <em>qu</em>, crossed-phi = <em>ll</em>), and those four nulls. Decryption is then a decoding problem: a decoder
 (keeping the best 300 partial texts, width 300) combines, per glyph, the probability of each letter from the aligned counts with the transition probability from a 5-gram model of sixteenth-century French, and
 emits a null marker where even the best letter is improbable.</p>
@@ -161,7 +161,7 @@ accuracy and the collation of the clear bands with the other fr. 16127 letters. 
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>Amsterdam, 9 Sept 1573, ff. 135-137 (Court decipherment ff. 139-141)</h3>
 <p>Mondoucet reports to Charles IX on Alba&#x27;s siege of Alkmaar (it can be assaulted from one place only), Alba&#x27;s recall by the King of Spain, Medinaceli, the King of Poland&#x27;s passage and Danzig, and a letter from France predicting things greater than St Bartholomew&#x27;s Day. The Court&#x27;s verbatim decipherment on ff. 139-141 was typed and aligned against the cipher; the tail (f. 137v against f. 141r) was compared by length only and is not transcribed.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/f1573/ct/f135r.txt">f135r.txt</a></p><pre># f.135r (c280), 9 Sept 1573, cipher block 1 (between clear &#x27;...par troys endroictz.&#x27; and clear &#x27;Je ne vous puys dire autre chose&#x27;). Hand transcription 18 Sept 2026.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/f1573/ct/f135r.txt">f135r.txt</a></p><pre translate="no"># f.135r (c280), 9 Sept 1573, cipher block 1 (between clear &#x27;...par troys endroictz.&#x27; and clear &#x27;Je ne vous puys dire autre chose&#x27;). Hand transcription 18 Sept 2026.
 01: T y / O / d h a d k v d e m d / *
 02: w d e / f g b d v H b e d / x T a d h / O y v l S a e d / S b / x T a / m y / p H / O b d k / y / t o q k d S n / m y / J d P
 03: n k d / w n / # d S a v / H O g b / P d Q / J / 17 / S h q / w d d P / d k m a l b v / S b / d k / f b y O
@@ -174,7 +174,7 @@ accuracy and the collation of the clear bands with the other fr. 16127 letters. 
 10: d g S / H / f g S O d / m d O / d q n d b O / x T a / a / v l b d g c k v / x T d a x d S n / s l a v y / *
 11: J / 16 / d O v y / H O / f z d / G b O / x l G w S A / 17 / v d / M d / 24 / k d / f n O d / v d O
 12: q a g k m d / * / m y</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/f1573/ct/f135v.txt">f135v.txt</a></p><pre># f.135v (c281), 9 Sept 1573 cipher block 2 opening: 16 lines after clear &#x27;...Dont je me dist quil ne doubtoit point&#x27;. Hand transcription 18 Sept 2026.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/f1573/ct/f135v.txt">f135v.txt</a></p><pre translate="no"># f.135v (c281), 9 Sept 1573 cipher block 2 opening: 16 lines after clear &#x27;...Dont je me dist quil ne doubtoit point&#x27;. Hand transcription 18 Sept 2026.
 01: T y / * / O
 02: [par] / l e v / m y / x d g d H k v / O d g S / f l S w / m d / q n d b O / 16 / f n O v d / x T d y / P n / *
 03: w d / y p b q b l e / * / T 3 / k d O a / p l S a m a l b v / s b d Q / S b / T 3 / k d s g S a v / x T e / f b i x
@@ -191,7 +191,7 @@ accuracy and the collation of the clear bands with the other fr. 16127 letters. 
 14: T 3 / w g P H O v / y # l O d Q / d k / d O w g d q k d / * / l S l / p H T l b v / o b d k / g M H d y
 15: m d / a S a / d k q S a v y O / k d / q b i d O / m d / G w l q / v g k i d / m y / O / x T d O v g k O
 16: f n * / P n O / w d / m d f g / d k / p d O v g v / J 10 / P d / l b O / d p / k d / H O / # l S P l b v</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/f1573/ct/f136r.txt">f136r.txt</a></p><pre># f.136r (c282), 9 Sept 1573 cipher block 2, page 1 (31 lines). Hand transcription 18 Sept 2026.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/f1573/ct/f136r.txt">f136r.txt</a></p><pre translate="no"># f.136r (c282), 9 Sept 1573 cipher block 2, page 1 (31 lines). Hand transcription 18 Sept 2026.
 01: z H o g k m b q n Q / T / 10 / k d / * / O g a / k a k n / # d b O / d / T q d a / f n T 3 / d k O d Q H / S b O
 02: f n O v / H / w l b O O l e / T 3 / # d S a v / g T l b Q / m d O l e / # g d / O g d Q d / * / d S a / H b
 03: g d e O a / # g a / a d Q / T y / l S / S b d k / O d p H / d k / p d k v d e / m d / G n k v / m d / w d G l S y
@@ -223,7 +223,7 @@ accuracy and the collation of the clear bands with the other fr. 16127 letters. 
 29: a b Q / 24 / v a g h k x T b a b v d / S b / H / y / # b O / m y / p d O w d a H k / i d / d O v g h v / * / m y
 30: v y O o b q n / * / m d / a d a / T d l b Q / o b d k v l b O v / S b / J / H S O d a / w a S O l e / d l e
 31: q d l b v / H S a f / # y w g a H v b s A / 16 / H / # g a v d / G n k v / m S Q b a / m d / m y T</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/f1573/ct/f136v.txt">f136v.txt</a></p><pre># f.136v (c283), 9 Sept 1573 cipher block 2, page 2 (30 lines; clear &#x27;Monseigneur&#x27; in l.8). Hand transcription 18 Sept 2026.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/f1573/ct/f136v.txt">f136v.txt</a></p><pre translate="no"># f.136v (c283), 9 Sept 1573 cipher block 2, page 2 (30 lines; clear &#x27;Monseigneur&#x27; in l.8). Hand transcription 18 Sept 2026.
 01: # l f P e k q e d / T g / M l / H S / S / m d / C / y / # l b O / d p / G n / C / m d O v m y / J / n d #
 02: d b O / 3 / d l S a O / d p / H T l b v / T d S P k d / b y / d O f a b w v d / m d / s a g k d / m y
 03: w g a / m d f g / * / 17 / S h q / T 3 / v b d k v / d O v y / s l a v / d e v d y / w d / H S / S / m d / f n
@@ -254,7 +254,7 @@ accuracy and the collation of the clear bands with the other fr. 16127 letters. 
 28: t o O d / m d / a H v b l e / m d / 4 / G g d d O v d / m y / T 10 / m y / 11 / m d a H a / O d S P d / G n k v
 29: J 10 s d a A / L f n z 3 / G d O v l b v / # l a O d O a d / m y / 16 / w g T l b Q / f d / # d a
 30: O l Q H d Q d / * / f n / J 10 k d / # d S A / S b / m y / 16 / l O v d Q v d / P n O / l b l b e S b</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/f1573/ct/f137r.txt">f137r.txt</a></p><pre># f.137r (c284), 9 Sept 1573 cipher, page 3?; hand transcription 18 Sept 2026. &#x27;/&#x27; word gap, &#x27;.&#x27; dot.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/f1573/ct/f137r.txt">f137r.txt</a></p><pre translate="no"># f.137r (c284), 9 Sept 1573 cipher, page 3?; hand transcription 18 Sept 2026. &#x27;/&#x27; word gap, &#x27;.&#x27; dot.
 # alphabet: d=upright delta-d  G=reversed d  S=tall s-hook  J=double long s  l=tall stroke  b=&#x27;6&#x27;  v=root-v  a=alpha
 #  y=eta  O=barred o  o=plain o  w=omega  x=lambda  T=tau  z=zeta  3=ezh  *=crossed x  #=triple bar  +=dagger  t=t-shaped
 #  Q=q with dagger  P=p with cross  H=long-s+h  bb=barred b  D=barred d  B=double loop  X=chi  C=C  A=A  M=M  Z=&#x27;2&#x27;-shape
@@ -287,7 +287,7 @@ accuracy and the collation of the clear bands with the other fr. 16127 letters. 
 27: s d a G q * T . / # l S a T d p / C d p / J a b e / s d d S O v / g O O d S y / m d / w g h / O d f x .
 28: T S b / p l O a O / 10 / a S a / t o w v h a / p g w d S Q / h e i d / J . / a b e / d k g T l b v / y . / * . / g .
 29: S b / J k l b S Q d . / f n / G n k v . / d k g T l b v / # a b O d . / h . / f z h . / O v d a g d e / m d / 24 C d .</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/f1573/pt/f139r_a.txt">f139r_a.txt</a></p><pre># f.139r lines 1-10 (c288): Court decipherment of 9 Sept 1573 block 1 (cipher f.135r). Opening words repeat the clear text before the cipher.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/f1573/pt/f139r_a.txt">f139r_a.txt</a></p><pre translate="no"># f.139r lines 1-10 (c288): Court decipherment of 9 Sept 1573 block 1 (cipher f.135r). Opening words repeat the clear text before the cipher.
 01: mais iay entendu dun cappitaine
 02: qui en est retourne et qui la bien recogneue quelle ne se peult
 03: assaillir que par ung seul endroict et encores bien estroictement ny pouvant
@@ -298,7 +298,7 @@ accuracy and the collation of the clear bands with the other fr. 16127 letters. 
 08: avecques toute difficulte tant par eaue a cause des ennemis qui y tiennent
 09: quelque fort que pour estre les chemins rompus par terre la
 10: necessite y est grande</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/f1573/pt/f139r_b.txt">f139r_b.txt</a></p><pre># f.139r l.11 to f.140v (c288-291): Court decipherment of 9 Sept 1573 block 2 (cipher f.136r-137r). Read 18 Sept 2026, [..] uncertain.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/f1573/pt/f139r_b.txt">f139r_b.txt</a></p><pre translate="no"># f.139r l.11 to f.140v (c288-291): Court decipherment of 9 Sept 1573 block 2 (cipher f.136r-137r). Read 18 Sept 2026, [..] uncertain.
 11: dont il me dict quil ne scavoit partir mais y ayant beaucoup
 12: demeurent sur les bras pour ceste querelle de religion quil ne se
 13: vouldroit fier et quil ne fault quun coquin pour luy tirer une
@@ -366,7 +366,7 @@ accuracy and the collation of the clear bands with the other fr. 16127 letters. 
 75: au bon jugement et sage consideration de vostre majeste je
 76: vous diray seullement que je feis tout ce quil mestoit possible pour
 77: remonstrer questoit ce personnage et ce que je peus et pour oster</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/f1573/pt/f140v.txt">f140v.txt</a></p><pre># f.140v (c291), Court decipherment of the 9 Sept 1573 letter, read 18 Sept 2026; [?] unsure
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/f1573/pt/f140v.txt">f140v.txt</a></p><pre translate="no"># f.140v (c291), Court decipherment of the 9 Sept 1573 letter, read 18 Sept 2026; [?] unsure
 01: ions de lentendement dung roy dont lesquelles estant escriptes par
 02: ung tel homme enrage de passion il ne debvoit nullement
 03: croire et que jesperois que vostre majeste donneroit si bon ordre
@@ -393,7 +393,7 @@ accuracy and the collation of the clear bands with the other fr. 16127 letters. 
 24: avoit et que nouvellement on avoit prise le chasteau de</pre></details>
 <h3>Antwerp, 4 Jan 1573, ff. 126v-127v: project&#x27;s ciphertext-only decode</h3>
 <p>Mondoucet&#x27;s report from Antwerp on German captains raising men, Alba&#x27;s wartgeld with the Duke of Brunswick and Saxe-Lauenburg, a hundred thousand crowns at Hamburg, and an Irish bishop kept at Antwerp by Alba for the Ireland practice. No contemporary decipherment survives; the project decoded it ciphertext-only to about 55-60% of letters.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/f1573/ct/f126v_127_v4.txt">f126v_127_v4.txt</a></p><pre># 4 Jan 1573 (Antwerp), Mondoucet -&gt; Charles IX: cipher f.126v (c263, 4 lines after clear text), f.127r (c264, 31 lines), f.127v (c265, 4 lines).
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/f1573/ct/f126v_127_v4.txt">f126v_127_v4.txt</a></p><pre translate="no"># 4 Jan 1573 (Antwerp), Mondoucet -&gt; Charles IX: cipher f.126v (c263, 4 lines after clear text), f.127r (c264, 31 lines), f.127v (c265, 4 lines).
 # NO decipherment anywhere in the volume. Hand transcription 18 Sept 2026, same alphabet as f137r.txt. [..] clear words on the leaf.
 # f.127r interlinear glosses in the Court hand: over l.19 &#x27;?nuactynch&#x27; (unsure), over l.22 &#x27;Lan..&#x27;, between l.25/26 &#x27;hambourg&#x27;, over l.27 &#x27;?couillart&#x27;.
 # v2 21 Sept 2026: strip re-check (s263/s264/s265) of the v1 transcription; changes listed in trailing &#x27;# v2:&#x27; comments.
@@ -451,7 +451,7 @@ B2: Q l v b H v l b e / d d O w n y / d O v y / H m d S / n Q v α / m c / f d T
 B3: l g α m d / f z / J 10 / k d s g d S p m α H a / d e t o v b k d / e v / m d / 11 / 30 / d e v n l
 B4: m y / * / T / m y
 # v2: B4 + -&gt; T (x-height tau; the tall stroke through it is the page ruling; medium confidence)</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/f1573/dec_4jan_v5.txt">dec_4jan_v5.txt</a></p><pre> A1  [artgued]tesde·coutesdecolongne·francfort··
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/f1573/dec_4jan_v5.txt">dec_4jan_v5.txt</a></p><pre translate="no"> A1  [artgued]tesde·coutesdecolongne·francfort··
  A2  sp···uisuitesuoler[saua]u·sepuisesauoirdeque
  A3  lepart·icultesenco·rnelieuaisestedescoulere
  A4  sennentauiteuoiedoranterrentaueccoloreic
@@ -492,7 +492,7 @@ B4: m y / * / T / m y
  B4  ···ude</pre></details>
 <h3>Antwerp, 4 Jan 1573: clear text as printed by Didier (1891), t. 1 pp. 141-142</h3>
 <p>The same passage in clear from Mondoucet&#x27;s own letter register at Reims, as printed by L. Didier; it confirms the decode word for word where it read and fills its gaps.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/f1573/ct/f126v_127_v4.txt">f126v_127_v4.txt</a></p><pre># 4 Jan 1573 (Antwerp), Mondoucet -&gt; Charles IX: cipher f.126v (c263, 4 lines after clear text), f.127r (c264, 31 lines), f.127v (c265, 4 lines).
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/f1573/ct/f126v_127_v4.txt">f126v_127_v4.txt</a></p><pre translate="no"># 4 Jan 1573 (Antwerp), Mondoucet -&gt; Charles IX: cipher f.126v (c263, 4 lines after clear text), f.127r (c264, 31 lines), f.127v (c265, 4 lines).
 # NO decipherment anywhere in the volume. Hand transcription 18 Sept 2026, same alphabet as f137r.txt. [..] clear words on the leaf.
 # f.127r interlinear glosses in the Court hand: over l.19 &#x27;?nuactynch&#x27; (unsure), over l.22 &#x27;Lan..&#x27;, between l.25/26 &#x27;hambourg&#x27;, over l.27 &#x27;?couillart&#x27;.
 # v2 21 Sept 2026: strip re-check (s263/s264/s265) of the v1 transcription; changes listed in trailing &#x27;# v2:&#x27; comments.
@@ -550,7 +550,7 @@ B2: Q l v b H v l b e / d d O w n y / d O v y / H m d S / n Q v α / m c / f d T
 B3: l g α m d / f z / J 10 / k d s g d S p m α H a / d e t o v b k d / e v / m d / 11 / 30 / d e v n l
 B4: m y / * / T / m y
 # v2: B4 + -&gt; T (x-height tau; the tall stroke through it is the page ruling; medium confidence)</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/f1573/pt/f126v_127_didier.txt">f126v_127_didier.txt</a></p><pre># 4 Jan 1573 cipher passage (from &#x27;des costez de Collongne&#x27; to the date), clear text as printed by L. Didier, Lettres et négociations de Claude de Mondoucet, t. 1 (1891), pp. 141-142, from the Reims MS register. Raw archive.org OCR (lettresetngocia01mondgoog), uncorrected.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/f1573/pt/f126v_127_didier.txt">f126v_127_didier.txt</a></p><pre translate="no"># 4 Jan 1573 cipher passage (from &#x27;des costez de Collongne&#x27; to the date), clear text as printed by L. Didier, Lettres et négociations de Claude de Mondoucet, t. 1 (1891), pp. 141-142, from the Reims MS register. Raw archive.org OCR (lettresetngocia01mondgoog), uncorrected.
 Gostez tle Collongne, Francfort, Spire et autres villes, 
 
 sans qu&#x27;il se puisse savoir de quelle part; el aullres 
@@ -626,7 +626,7 @@ je ne faudray incontinent de vous faire entendre.
 D&#x27;Auvers, ce Hir jour de janvier, lil73.</pre></details>
 <h3>Brussels, 13 July 1572, ff. 60-61 (scattered words only)</h3>
 <p>No contemporary decipherment and not in Didier; with the 1572 key fitted on the 16 July crib only scattered words read (about 1-8% of glyphs). The decryption file is the verbatim beam output of the retry.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/hand/ct_f60_split.txt">ct_f60_split.txt</a></p><pre># split pass 21 Sept 2026: @ = open alpha (α), a = round a; see split.py
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/hand/ct_f60_split.txt">ct_f60_split.txt</a></p><pre translate="no"># split pass 21 Sept 2026: @ = open alpha (α), a = round a; see split.py
 # 13 July 1572, f. 60r (canvas 125), cipher lines; same legend as ct_f62 plus: mq = m with long descender, pc = p with cross below, X = b with cross below, 9 = q with cross below
 J1: S b mq * 11 m b n N M L g z O C A w @ V # c O N 10 11 h a d
 J2: i 9 b w V A h # @ d w @ g S V b 9 d h i e n W G @ d d a f # c e w n 10 v 9 b p z n e
@@ -650,10 +650,10 @@ J19: Q a d h g 9 G b d y O pc b 9 b 9 n c e 9 G G m d w S b a y r V S 9 e n b i 
 J20: e w d e w b e g 9 b y m pc 9 V @ f g V y e p L A r n G w V G # V v # b d e o y z
 J21: 16 f d a v c M d i v t o W n 9 G W @ 9 W d A m 9 d a v n O * m C W A G @ O d 9
 J22: L v # b c e o d O A b e m d # w d 9 pc d E t o W n a a c e G n P S i @ G A V A S</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/hand/ct_f60v_split.txt">ct_f60v_split.txt</a></p><pre># split pass 21 Sept 2026: @ = open alpha (α), a = round a; see split.py
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/hand/ct_f60v_split.txt">ct_f60v_split.txt</a></p><pre translate="no"># split pass 21 Sept 2026: @ = open alpha (α), a = round a; see split.py
 # 13 July 1572, f. 60v (canvas 126)
 K1: W m i d F G c b P c d 9 9 r d r d m # X d E z z A g @ d e v * m m G m L 9 a b k s d mq b</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/hand/ct_f61_split.txt">ct_f61_split.txt</a></p><pre># split pass 21 Sept 2026: @ = open alpha (α), a = round a; see split.py
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/hand/ct_f61_split.txt">ct_f61_split.txt</a></p><pre translate="no"># split pass 21 Sept 2026: @ = open alpha (α), a = round a; see split.py
 # 13 July 1572, f. 61r (canvas 127), top cipher block, 6 lines; same legend as ct_f60
 # below the cipher block: clear text + sign-off &quot;Sire je supplie le Createur...&quot; + date &quot;Ce Ve jour de Juillet 1572&quot; + signature &quot;de Mondoucet&quot;
 M1: F P c # @ b h i d s d g m y 8 b f d 10 S a z o t b d m c
@@ -662,7 +662,7 @@ M3: e V P T f m d y b P g k m c g a c k d O d O i g b a
 M4: # m g e d O V c b V c h V q n m d @ c h g h k O V q d m g m t O S m
 M5: t S h a d e V n s g A n P h # a b V m @ q i d w S b g
 M6: g O V c e t d f d g t i b P S w m O S O O S T n</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/hand/decode_retry.txt">decode_retry.txt</a></p><pre># 13 July 1572, retry with the a/alpha split, 21 Sept 2026 (hand/decode_retry.py, hand/score_retry.py; SM=0.3 NP=3.5 W=300,
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/gallica_sweep/mondoucet/hand/decode_retry.txt">decode_retry.txt</a></p><pre translate="no"># 13 July 1572, retry with the a/alpha split, 21 Sept 2026 (hand/decode_retry.py, hand/score_retry.py; SM=0.3 NP=3.5 W=300,
 # LM f1573/fr5.npy). Transcriptions hand/ct_f60_split.txt, ct_f60v_split.txt, ct_f61_split.txt (split.py: 42 of 76
 # round-a/@ tokens are open alpha; f. 61 &#x27;ð&#x27; normalised to O). Output is verbatim beam output, &#x27;·&#x27; = null.
 #
@@ -808,10 +808,10 @@ M6: g O V c e t d f d g t i b P S w m O S O O S T n</pre></details>
 <h2 id="sources"><span class="num">07</span> Sources</h2>
 <ul>
 <li>BnF, Département des Manuscrits, Français 16127, Gallica ark:/12148/btv1b90609766 (digitisation); catalogue notice cc46244h.</li>
-<li>Working files in <code>research/gallica_sweep/mondoucet/</code>: the volume inventory, the hand transcriptions (<code>hand/ct_f60.txt</code>, <code>ct_f60v.txt</code>,
-<code>ct_f61.txt</code>; crib <code>ct_f62.txt</code>, <code>ct_f62v.txt</code>), the key (<code>hand/key2.json</code>, <code>key_counts.json</code>, <code>key_manual.py</code>),
-the decoder (<code>hand/lm_decode.py</code>) and its output (<code>hand/decode_all.txt</code>), the verbatim 16 July reading (<code>pt_f64.txt</code>), and the full reading
-(<code>reading.md</code>); for 1573, <code>f1573/reading.md</code>, the transcriptions in <code>f1573/ct/</code>, the keys <code>key1573.json</code> and <code>key1573_split2.json</code>, the decoder <code>decode1573.py</code> and its outputs <code>dec_4jan*.txt</code>.</li>
+<li>Working files in <code translate="no">research/gallica_sweep/mondoucet/</code>: the volume inventory, the hand transcriptions (<code translate="no">hand/ct_f60.txt</code>, <code translate="no">ct_f60v.txt</code>,
+<code translate="no">ct_f61.txt</code>; crib <code translate="no">ct_f62.txt</code>, <code translate="no">ct_f62v.txt</code>), the key (<code translate="no">hand/key2.json</code>, <code translate="no">key_counts.json</code>, <code translate="no">key_manual.py</code>),
+the decoder (<code translate="no">hand/lm_decode.py</code>) and its output (<code translate="no">hand/decode_all.txt</code>), the verbatim 16 July reading (<code translate="no">pt_f64.txt</code>), and the full reading
+(<code translate="no">reading.md</code>); for 1573, <code translate="no">f1573/reading.md</code>, the transcriptions in <code translate="no">f1573/ct/</code>, the keys <code translate="no">key1573.json</code> and <code translate="no">key1573_split2.json</code>, the decoder <code translate="no">decode1573.py</code> and its outputs <code translate="no">dec_4jan*.txt</code>.</li>
 <li>L. Didier, <em>Lettres et négociations de Claude de Mondoucet, résident de France aux Pays-Bas (1571–1574)</em>, 2 vols (Paris and Reims, 1891–92), i, 141–142 (4 January 1573); <a href="https://archive.org/details/lettresetngocia01mondgoog">archive.org</a>; <a href="https://gallica.bnf.fr/ark:/12148/bpt6k378347f">Gallica</a>.</li>
 </ul>
 </main>
@@ -820,7 +820,7 @@ the decoder (<code>hand/lm_decode.py</code>) and its output (<code>hand/decode_a
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Manuscript rights: Biblioth&egrave;que nationale de France</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="r8356.html" rel="prev">&larr; Walsingham letter-book 1571 1571</a><a href="r8358.html" rel="next">Burghley to Walsingham July 1572 1572 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

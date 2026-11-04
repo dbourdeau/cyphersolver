@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">45433 &middot; 93148 &middot; 65048 &middot; 01287 &middot; 83437<br>Porto &middot; e &middot; Serpa &middot; assent- &middot; -&aacute;mos<br>06 = full stop &middot; 04 = comma &middot; 10231 01021 = Medi-na</div>
+  <div class="cipherstrip" translate="no">45433 &middot; 93148 &middot; 65048 &middot; 01287 &middot; 83437<br>Porto &middot; e &middot; Serpa &middot; assent- &middot; -&aacute;mos<br>06 = full stop &middot; 04 = comma &middot; 10231 01021 = Medi-na</div>
   <p class="kicker">Lisbon &rarr; Madrid and Paris &middot; two-part code, five figures &middot; 12 November &ndash; 2 December 1909 &middot; decodes of the time on the forms</p>
   <h1>Venceslau de Lima to King Manuel II: eight code telegrams of the 1909 state visit</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_venceslau-de-lima.jpg" alt="Venceslau de Lima" title="Venceslau de Lima: Photograph, 1901, Arquivo Histórico Parlamentar. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Venceslau de Lima</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_manuel-ii-of-portugal.jpg" alt="Manuel II of Portugal" title="Manuel II of Portugal: Photograph, November 1909. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Manuel II of Portugal</figcaption></figure></div><!-- /parties -->
@@ -101,7 +101,7 @@
 
 <h2 id="code"><span class="num">03</span> The code</h2>
 <figure class="creveal" data-src="reveal/lima1909.json"></figure>
-<p>Pairing the glosses with the groups gives 261 distinct groups for 409 code items (<code>groups.py</code>, <code>code_values.tsv</code>). They are words, phrases (&ldquo;com toda urgencia&rdquo;, &ldquo;depois de amanh&atilde;&rdquo;, &ldquo;dar ordens&rdquo;, &ldquo;resposta ao telegramma&rdquo;), and syllables or endings for words not in the book (insis- / -to, Bri- / -and, estreit- / -amento, chega- / -ria, tornar- / -&aacute;).</p>
+<p>Pairing the glosses with the groups gives 261 distinct groups for 409 code items (<code translate="no">groups.py</code>, <code translate="no">code_values.tsv</code>). They are words, phrases (&ldquo;com toda urgencia&rdquo;, &ldquo;depois de amanh&atilde;&rdquo;, &ldquo;dar ordens&rdquo;, &ldquo;resposta ao telegramma&rdquo;), and syllables or endings for words not in the book (insis- / -to, Bri- / -and, estreit- / -amento, chega- / -ria, tornar- / -&aacute;).</p>
 <p>The code is two-part. Over 227 cleanly glossed groups, the rank correlation between group number and the alphabetical order of the value is 0.068, which 30% of 2000 random shuffles reach, and every first figure carries values from almost the whole alphabet. So an open group cannot be bracketed between its neighbours. Repeated groups agree: seven recur with two forms of one word or phrase (Em/em, teve/tem, ter&aacute;/teria, comboio/comboios, rela&ccedil;&atilde;o/rela&ccedil;&otilde;es, 1 hora/uma hora). The one exception is 43243, &ldquo;da&rdquo; four times but glossed something like &ldquo;dep..&rdquo; in m0011.</p>
 <p>It is not the code of the neighbouring folders. No group is shared with King Carlos&rsquo;s code of 1903, the Count of Sabugosa&rsquo;s, Manuel II&rsquo;s of August 1910 or Hintze Ribeiro&rsquo;s of 1903. In this unit 38% of a telegram&rsquo;s groups recur in the other seven, so a telegram of 54&ndash;106 groups in the same code would share some by chance; the chance of sharing none is below 2&times;10<sup>&minus;6</sup> for each folder.</p>
 
@@ -137,14 +137,14 @@
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>m0001, Lisbon -&gt; Madrid (Palacio Real), 12 Nov 1909</h3>
 <p>At the start of the King&#x27;s state visit, Lima repeats his congratulations on the welcome in Madrid; coded: all continues without news, he is writing to Windsor.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0001_transcription.txt">m0001_transcription.txt</a></p><pre># ANTT PT/TT/CAM/M09, image m0001 (back m0002). Spanish palace telegraph form &quot;Real Palacio&quot;, by hand.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0001_transcription.txt">m0001_transcription.txt</a></p><pre translate="no"># ANTT PT/TT/CAM/M09, image m0001 (back m0002). Spanish palace telegraph form &quot;Real Palacio&quot;, by hand.
 # Despacho de Lisboa, Num. 6625; Expedido el 12 a las 2.50 t[arde]; Recibido el 12 de N[oviem]bre a las 4.20 t [?].
 # Address: Sua Magestade el Rei de Portugal - Palacio Real Madrid. The year (1909) is not on the form; it follows
 # from the content and the other telegrams of the unit.
 # The text is in clear; four code groups stand before the closing, each with a pencil gloss above it (decode of the
 # time). Accents as far as legible; &quot;amais&quot; as written.
 Reitero minhas felicitações á Vossa Magestade pelo caloroso acolhimento ahi recebido e que entre nos tem produzido os amais grata impressão 05764 21269 80054 99924 beijo as mãos a Vossa Magestade. Wenceslau de Lima.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0001_decryption.txt">m0001_decryption.txt</a></p><pre># m0001: group by group with the pencil gloss of the time (Lisbon -&gt; Madrid, 12 Nov 1909).
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0001_decryption.txt">m0001_decryption.txt</a></p><pre translate="no"># m0001: group by group with the pencil gloss of the time (Lisbon -&gt; Madrid, 12 Nov 1909).
 # Code groups with the gloss written above them; clear words of the telegram in capitals as (clear).
 # Hyphens mark our split of one glossed word over two groups. [?] = no usable gloss; ? = doubtful.
 # Notes in brackets are ours.
@@ -154,12 +154,12 @@ Reitero minhas felicitações á Vossa Magestade pelo caloroso acolhimento ahi r
 80054   Escrevo ?   [fourth figure unclear]
 99924   Windsor
 (clear) beijo as mãos a Vossa Magestade. Wenceslau de Lima.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0001_reading.md">m0001_reading.md</a></p><pre># m0001: Venceslau de Lima to King Manuel II, Lisbon -&gt; Madrid (Palacio Real), 12 Nov 1909
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0001_reading.md">m0001_reading.md</a></p><pre translate="no"># m0001: Venceslau de Lima to King Manuel II, Lisbon -&gt; Madrid (Palacio Real), 12 Nov 1909
 
 Reitero minhas felicitações a Vossa Magestade pelo caloroso acolhimento ahi recebido e que entre nós tem produzido
 a mais grata impressão. Tudo continua sem novidade. Escrevo [para] Windsor. Beijo as mãos a Vossa Magestade.
 Wenceslau de Lima.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0001_en.md">m0001_en.md</a></p><pre># m0001: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0001_en.md">m0001_en.md</a></p><pre translate="no"># m0001: English translation
 
 I again congratulate Your Majesty on the warm welcome received there, which has made the happiest impression among
 us. Everything continues without news. I am writing to Windsor. I kiss Your Majesty&#x27;s hands. Wenceslau de Lima.
@@ -169,7 +169,7 @@ was in Madrid on the first leg of his state visit of November 1909 (Madrid, Pari
 The first figure of 05764 and the fourth of 80054 are not sure; the glosses are clear.</pre></details>
 <h3>m0005, Lisbon -&gt; Paris, 30 Nov 1909</h3>
 <p>Confidential: a stop at Bussaco would be awkward, so the King should come straight by the night express; Vasconcellos Porto presses for an answer.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0005_transcription.txt">m0005_transcription.txt</a></p><pre># ANTT PT/TT/CAM/M09, image m0005 (back m0006). French receiving form; printed strips.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0005_transcription.txt">m0005_transcription.txt</a></p><pre translate="no"># ANTT PT/TT/CAM/M09, image m0005 (back m0006). French receiving form; printed strips.
 # Header strip: LISBCA 425,-48 30 12.30 M .= (origin Lisboa, no. 425, 48 taxed words, day 30, 12.30 am).
 # Stamp CENTRAL PARIS with day 30 (month and year faint). Pencil gloss above every group (decode of the time).
 # The last group of line 1 is cut at the strip edge (781..); the third figure of 94794 is overwritten.
@@ -177,7 +177,7 @@ The first figure of 05764 and the fourth of 80054 are not sure; the glosses are 
 =33453 10887 63900 40848 41024 04 10353 52854 98828 94794 57624 50808 66266 781??
 94243 36467 41966 43243 42277 06 89274 45433 01794 46523 79456 28573 99211 75137
 00327 25584 BEIJO AS MAOS DE VOSSA NAGESTADE .= WENCESLAU DE [LIMA]</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0005_decryption.txt">m0005_decryption.txt</a></p><pre># m0005: group by group with the pencil gloss of the time (Lisbon -&gt; Paris, 30 Nov 1909).
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0005_decryption.txt">m0005_decryption.txt</a></p><pre translate="no"># m0005: group by group with the pencil gloss of the time (Lisbon -&gt; Paris, 30 Nov 1909).
 # Code groups with the gloss written above them; clear words of the telegram in capitals as (clear).
 # Hyphens mark our split of one glossed word over two groups. [?] = no usable gloss; ? = doubtful.
 # Notes in brackets are ours.
@@ -212,12 +212,12 @@ The first figure of 05764 and the fourth of 80054 are not sure; the glosses are 
 00327   a
 25584   V. M.
 (clear) BEIJO AS MAOS DE VOSSA NAGESTADE .= WENCESLAU DE [LIMA]</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0005_reading.md">m0005_reading.md</a></p><pre># m0005: Venceslau de Lima to King Manuel II, Lisbon -&gt; Paris, 30 Nov 1909, 12.30 am
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0005_reading.md">m0005_reading.md</a></p><pre translate="no"># m0005: Venceslau de Lima to King Manuel II, Lisbon -&gt; Paris, 30 Nov 1909, 12.30 am
 
 Confidencial. Paragem Bussaco teve inconveniente, por isso insisto [na] vantagem [da] vinda directa, sahindo d&#x27;ahi no
 rapido da noite. Vasconcellos Porto insta pela resposta, que muito peço a Vossa Magestade Beijo as mãos de Vossa Magestade.
 Wenceslau de [Lima].</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0005_en.md">m0005_en.md</a></p><pre># m0005: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0005_en.md">m0005_en.md</a></p><pre translate="no"># m0005: English translation
 
 Confidential. A stop at Bussaco would have been awkward, so I insist on the advantage of coming straight through,
 leaving there [Paris] by the night express. Vasconcellos Porto is pressing for the answer, which I earnestly ask of Your
@@ -227,7 +227,7 @@ Notes. From the pencil decode of the time above the groups; in the reading [ ] m
 King&#x27;s return journey [our identification, not checked].</pre></details>
 <h3>m0007, Lisbon -&gt; Paris, 2 Dec 1909</h3>
 <p>The return journey settled: arrival in Lisbon at 1.15 pm, greetings at Vilar Formoso, rest as far as Pampilhosa, lunch between Santarém and Lisbon.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0007_transcription.txt">m0007_transcription.txt</a></p><pre># ANTT PT/TT/CAM/M09, image m0007 (back m0008). French receiving form; printed strips.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0007_transcription.txt">m0007_transcription.txt</a></p><pre translate="no"># ANTT PT/TT/CAM/M09, image m0007 (back m0008). French receiving form; printed strips.
 # Header strip: SSS LISBOA 43 122 2 12.55 M = EASTERN = (no. 43, 122 taxed words, day 2 [Dec], 12.55 am, via Eastern).
 # Pencil gloss above the groups (decode of the time), a lighter hand over line 3. The receiver circled 50667 and
 # wrote under the strips &quot;(? uma palavra indecifravel)&quot;. The first letter of line 5 is torn: [M]E.
@@ -240,7 +240,7 @@ FORMOSO ONDE MUITO DESEJAM PRESTAR LH OS DEPOIS NENHUNS OUTROS TERA POR SER DE
 NOITE E PARA PODER DESCANCAR ATE A PAMPILHOSA ONDE CHEGA AS 8 HORAS DA MANHA
 ALMOCO ENTRE SANTAREM E LISBOA 02183 50667 93148 87231 18507 80124 93148
 64124 82633 BEIJO AS MAOS DE VOSSA MAGESTADE = WENCESLAU DE LIMA</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0007_decryption.txt">m0007_decryption.txt</a></p><pre># m0007: group by group with the pencil gloss of the time (Lisbon -&gt; Paris, 2 Dec 1909).
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0007_decryption.txt">m0007_decryption.txt</a></p><pre translate="no"># m0007: group by group with the pencil gloss of the time (Lisbon -&gt; Paris, 2 Dec 1909).
 # Code groups with the gloss written above them; clear words of the telegram in capitals as (clear).
 # Hyphens mark our split of one glossed word over two groups. [?] = no usable gloss; ? = doubtful.
 # Notes in brackets are ours.
@@ -292,7 +292,7 @@ ALMOCO ENTRE SANTAREM E LISBOA 02183 50667 93148 87231 18507 80124 93148
 64124   um
 82633   quarto
 (clear) BEIJO AS MAOS DE VOSSA MAGESTADE = WENCESLAU DE LIMA</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0007_reading.md">m0007_reading.md</a></p><pre># m0007: Venceslau de Lima to King Manuel II, Lisbon -&gt; Paris, 2 Dec 1909, 12.55 am
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0007_reading.md">m0007_reading.md</a></p><pre translate="no"># m0007: Venceslau de Lima to King Manuel II, Lisbon -&gt; Paris, 2 Dec 1909, 12.55 am
 
 Agradeço o telegramma de Vossa Majestade e sua concordancia com os alvitres propostos. Hora [de] chegada [a] Lisbôa
 1 hora e um quarto da tarde. Mais cêdo terá inconveniente pela passagem em Pampilhosa e Coimbra cêdo de mais; mais
@@ -300,7 +300,7 @@ tarde tornaria a marcha inconvenientemente lenta. Muito agradeceria Vossa Majest
 comprimentos á entrada em Portugal em Villar Formoso, onde muito desejam prestar-lh&#x27;os. Depois nenhuns outros terá,
 por ser de noite e para poder descançar até á Pampilhosa, onde chega ás 8 horas da manhã. Almoço entre Santarem e
 Lisboa, das [?] e meia ás uma hora e um quarto. Beijo as mãos de Vossa Magestade. Wenceslau de Lima.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0007_en.md">m0007_en.md</a></p><pre># m0007: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0007_en.md">m0007_en.md</a></p><pre translate="no"># m0007: English translation
 
 I thank Your Majesty for your telegram and for agreeing to the proposals. Arrival time in Lisbon a quarter past one
 in the afternoon. Any earlier would be awkward, because the train would pass Pampilhosa and Coimbra too early; any
@@ -315,7 +315,7 @@ word), so the hole is his as well as ours. The decoder wrote &quot;tornaria&quot
 &quot;chega-ria&quot; (m0011).</pre></details>
 <h3>m0009, Lisbon -&gt; Paris, 30 Nov 1909</h3>
 <p>No answer yet to Saturday&#x27;s telegram about the return trains; the departure is the day after tomorrow and nothing is fixed; Lima asks for a decision most urgently.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0009_transcription.txt">m0009_transcription.txt</a></p><pre># ANTT PT/TT/CAM/M09, image m0009 (back m0010). French receiving form; printed strips.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0009_transcription.txt">m0009_transcription.txt</a></p><pre translate="no"># ANTT PT/TT/CAM/M09, image m0009 (back m0010). French receiving form; printed strips.
 # Header strip: SS LISBON 141 68 30 10H30 M VOIE EASTERN = (no. 141, 68 taxed words, day 30, 10.30 am, via Eastern).
 # Pencil gloss above the groups (decode of the time). The office added after the signature
 # &quot;(Correction suivra pour mot qui manque)&quot;. BEIJM for BEIJO as printed.
@@ -325,7 +325,7 @@ word), so the hole is his as well as ours. The decoder wrote &quot;tornaria&quot
 99211 75137 45853 06 89274 45433 40848 02848 18703 10586
 01021 24686 41966 24357 15771 10341 91033 DE VOSSA MAGESTADE A
 QUEM BEIJM AS MAOS .= WENCESLAU DE LIMA .=</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0009_decryption.txt">m0009_decryption.txt</a></p><pre># m0009: group by group with the pencil gloss of the time (Lisbon -&gt; Paris, 30 Nov 1909).
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0009_decryption.txt">m0009_decryption.txt</a></p><pre translate="no"># m0009: group by group with the pencil gloss of the time (Lisbon -&gt; Paris, 30 Nov 1909).
 # Code groups with the gloss written above them; clear words of the telegram in capitals as (clear).
 # Hyphens mark our split of one glossed word over two groups. [?] = no usable gloss; ? = doubtful.
 # Notes in brackets are ours.
@@ -378,13 +378,13 @@ QUEM BEIJM AS MAOS .= WENCESLAU DE LIMA .=</pre></details>
 91033   decisão
 (clear) DE VOSSA MAGESTADE A
 (clear) QUEM BEIJM AS MAOS .= WENCESLAU DE LIMA .=</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0009_reading.md">m0009_reading.md</a></p><pre># m0009: Venceslau de Lima to King Manuel II, Lisbon -&gt; Paris, 30 Nov 1909, 10.30 am
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0009_reading.md">m0009_reading.md</a></p><pre translate="no"># m0009: Venceslau de Lima to King Manuel II, Lisbon -&gt; Paris, 30 Nov 1909, 10.30 am
 
 Falta de resposta ao telegramma de sabbado relativo [a] comboios de regresso causa o maior transtorno. Lembro que
 depois de amanhã é o dia da partida de Vossa Magestade e nada está fixado por falta [d&#x27;]essa indicação, que muito peço com toda
 urgencia. Vasconcellos Porto tem telegraphado [?] [?]. Na hypothese [do] rapido Norte, mas falta decisão de Vossa
 Magestade, a quem beijo as mãos. Wenceslau de Lima.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0009_en.md">m0009_en.md</a></p><pre># m0009: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0009_en.md">m0009_en.md</a></p><pre translate="no"># m0009: English translation
 
 The lack of an answer to Saturday&#x27;s telegram about the return trains is causing the greatest trouble. I remind you
 that the day after tomorrow is the day of Your Majesty&#x27;s departure, and nothing is fixed for want of that instruction,
@@ -397,7 +397,7 @@ Notes. From the pencil decode of the time above the groups; in the reading [ ] m
 short.</pre></details>
 <h3>m0011, Lisbon -&gt; Paris, 27 Nov 1909</h3>
 <p>Lima proposes the return route: the 7.40 pm night train from Paris to Medina del Campo and a special train to Lisbon, cutting out the stop at Luso.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0011_transcription.txt">m0011_transcription.txt</a></p><pre># ANTT PT/TT/CAM/M09, images m0011 (lines 1-3) and m0012 (lines 4-9, stamp CENTRAL PARIS 27 NOV 09).
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0011_transcription.txt">m0011_transcription.txt</a></p><pre translate="no"># ANTT PT/TT/CAM/M09, images m0011 (lines 1-3) and m0012 (lines 4-9, stamp CENTRAL PARIS 27 NOV 09).
 # French receiving forms; printed strips. Header strip: S PARIS LISBOA 105 113 27 5.25 SR = (destination Paris,
 # origin Lisboa, no. 105, 113 taxed words, day 27, 5.25 pm). Pencil gloss above the groups (decode of the time);
 # the gloss of line 1 starts in the left margin (&quot;Em combina[ção]&quot;). 595191 (six figures) and 9581 (four figures)
@@ -413,7 +413,7 @@ short.</pre></details>
 06 85178 70706 52763 01748 48696 43243 95940 36347 79057 93148 64628 93148
 01748 10231 01021 45967 75098 95181 73693 67218 53243 06 19977 25584
 76777 80063 74573 93094 = W . DE LIMA ,-</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0011_decryption.txt">m0011_decryption.txt</a></p><pre># m0011: group by group with the pencil gloss of the time (Lisbon -&gt; Paris, 27 Nov 1909).
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0011_decryption.txt">m0011_decryption.txt</a></p><pre translate="no"># m0011: group by group with the pencil gloss of the time (Lisbon -&gt; Paris, 27 Nov 1909).
 # Code groups with the gloss written above them; clear words of the telegram in capitals as (clear).
 # Hyphens mark our split of one glossed word over two groups. [?] = no usable gloss; ? = doubtful.
 # Notes in brackets are ours.
@@ -519,7 +519,7 @@ short.</pre></details>
 74573   que são
 93094   urgentes
 (clear) = W . DE LIMA ,-</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0011_reading.md">m0011_reading.md</a></p><pre># m0011: Venceslau de Lima to King Manuel II, Lisbon -&gt; Paris, 27 Nov 1909, 5.25 pm
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0011_reading.md">m0011_reading.md</a></p><pre translate="no"># m0011: Venceslau de Lima to King Manuel II, Lisbon -&gt; Paris, 27 Nov 1909, 5.25 pm
 
 Em combinação [?] com o Porto e Serpa assentámos que o mais conveniente seria tomar ahi o [?] da noite, 7 horas 40
 minutos, com toda commodidade, tam bem ou melhor que [o] Sud-Express, e vir até Medina, onde teria comboio especial que
@@ -527,7 +527,7 @@ chegaria a Lisbôa ás 11 horas [da] manhã ou mais tarde, se assim convier. Sup
 caminho em Luso, incommoda e de mau effeito. Serviço pela forma que indico mais bem combinado. [?] [?] commodo em
 Hen[daya?] [?] já ás 8 horas e tanto, e em Medina para o trem especial perto [das] 7 horas da noite. Aguardando [?]
 Vossa Magestade para dar ordens, que são urgentes. W. de Lima.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0011_en.md">m0011_en.md</a></p><pre># m0011: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0011_en.md">m0011_en.md</a></p><pre translate="no"># m0011: English translation
 
 In agreement [?] with Porto and Serpa we settled that the best course would be to take there [in Paris] the [?] night
 [train] at 7.40 pm, in full comfort, as well as or better than the Sud-Express, and come as far as Medina [del Campo],
@@ -544,14 +544,14 @@ this train &quot;o rapido da noite&quot;. In line 7, 85178 and 70706 are faint (
 &quot;dep..&quot; and is left open.</pre></details>
 <h3>m0014, Lisbon -&gt; Paris, 28 Nov 1909</h3>
 <p>Since the French President has given the Grand Cross of the Legion of Honour to Bocage, the King should be friendly to Briand, with no inequality against England and Spain.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0014_transcription.txt">m0014_transcription.txt</a></p><pre># ANTT PT/TT/CAM/M09, image m0014 (back m0015). French receiving form; printed strips.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0014_transcription.txt">m0014_transcription.txt</a></p><pre translate="no"># ANTT PT/TT/CAM/M09, image m0014 (back m0015). French receiving form; printed strips.
 # Header strip: S PARIS LISBOA 25,-49-28-12./30 SR (destination Paris, origin Lisboa, no. 25, 49 taxed words,
 # day 28, 12.30 pm). Stamp CENTRAL PARIS. Pencil gloss above every group (decode of the time). VCSSA as printed.
 =04184 00327 25584 28573 76958 19073 85243 93186 00327 35530 64156 31158
 48627 86083 06930 88667 93148 29153 82291 28428 71171 14478 01748 62656
 28997 61836 96791 01748 15164 93148 14556 BEIJO AS MAOS DE VCSSA MAGESTADE
 . = WENCESLAU DE LIMA</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0014_decryption.txt">m0014_decryption.txt</a></p><pre># m0014: group by group with the pencil gloss of the time (Lisbon -&gt; Paris, 28 Nov 1909).
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0014_decryption.txt">m0014_decryption.txt</a></p><pre translate="no"># m0014: group by group with the pencil gloss of the time (Lisbon -&gt; Paris, 28 Nov 1909).
 # Code groups with the gloss written above them; clear words of the telegram in capitals as (clear).
 # Hyphens mark our split of one glossed word over two groups. [?] = no usable gloss; ? = doubtful.
 # Notes in brackets are ours.
@@ -588,12 +588,12 @@ this train &quot;o rapido da noite&quot;. In line 7, 85178 and 70706 are faint (
 14556   Hespanha
 (clear) BEIJO AS MAOS DE VCSSA MAGESTADE
 (clear) . = WENCESLAU DE LIMA</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0014_reading.md">m0014_reading.md</a></p><pre># m0014: Venceslau de Lima to King Manuel II, Lisbon -&gt; Paris, 28 Nov 1909, 12.30 pm
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0014_reading.md">m0014_reading.md</a></p><pre translate="no"># m0014: Venceslau de Lima to King Manuel II, Lisbon -&gt; Paris, 28 Nov 1909, 12.30 pm
 
 Lembro a Vossa Magestade que, tendo [o] Pres[idente da] Republica dado [a] G[rã-]C[ruz da] Legião [de Honra] a Bocage, importa
 ser amavel com Briand e não deixar má impressão, sobretudo não haver desigualdade em relação ao que se fez em
 Inglaterra e Hespanha. Beijo as mãos de Vossa Magestade. Wenceslau de Lima.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0014_en.md">m0014_en.md</a></p><pre># m0014: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0014_en.md">m0014_en.md</a></p><pre translate="no"># m0014: English translation
 
 I remind Your Majesty that, since the President of the Republic has given the Grand Cross of the Legion of Honour to
 Bocage, it matters to be friendly to Briand and leave no bad impression; above all there must be no inequality with
@@ -604,7 +604,7 @@ identifications, not checked]. The point is a Portuguese decoration for Briand i
 &quot;G.C. Legião&quot; (the first pass had &quot;a decoration, gloss unclear&quot;).</pre></details>
 <h3>m0018, Lisbon -&gt; Paris, 28 Nov 1909</h3>
 <p>Lima edits the King&#x27;s reply toast for the President&#x27;s dinner, adding friendship, thanks for the welcome in &quot;intellectual Paris&quot; and the tightening of relations.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0018_transcription.txt">m0018_transcription.txt</a></p><pre># ANTT PT/TT/CAM/M09, images m0018 (lines 1-5) and m0016 (lines 6-8 and the signature strip).
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0018_transcription.txt">m0018_transcription.txt</a></p><pre translate="no"># ANTT PT/TT/CAM/M09, images m0018 (lines 1-5) and m0016 (lines 6-8 and the signature strip).
 # French receiving forms; printed strips. Header strip: S S DE LISBOA 24,-110-28-12./25 SR (origin Lisboa, no. 24,
 # 110 taxed words, day 28, 12.25 pm). Pencil gloss above the groups (decode of the time); 62656 and 33125
 # underlined by the receiver, 33125 without a gloss.
@@ -619,7 +619,7 @@ identifications, not checked]. The point is a Portuguese decoration for Briand i
 19183 62656 87836 36467 45930 19073 14723 95583 95181 82381 01021 79456
 00327 12838 62587 33125 39998 93148 18803 BEIJO AS MAOS DE VOSSA MAJESTADE
 = WENCESLAU DE LIMA ,-</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0018_decryption.txt">m0018_decryption.txt</a></p><pre># m0018: group by group with the pencil gloss of the time (Lisbon -&gt; Paris, 28 Nov 1909).
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0018_decryption.txt">m0018_decryption.txt</a></p><pre translate="no"># m0018: group by group with the pencil gloss of the time (Lisbon -&gt; Paris, 28 Nov 1909).
 # Code groups with the gloss written above them; clear words of the telegram in capitals as (clear).
 # Hyphens mark our split of one glossed word over two groups. [?] = no usable gloss; ? = doubtful.
 # Notes in brackets are ours.
@@ -716,7 +716,7 @@ identifications, not checked]. The point is a Portuguese decoration for Briand i
 18803   prudente
 (clear) BEIJO AS MAOS DE VOSSA MAJESTADE
 (clear) = WENCESLAU DE LIMA ,-</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0018_reading.md">m0018_reading.md</a></p><pre># m0018: Venceslau de Lima to King Manuel II, Lisbon -&gt; Paris, 28 Nov 1909, 12.25 pm
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0018_reading.md">m0018_reading.md</a></p><pre translate="no"># m0018: Venceslau de Lima to King Manuel II, Lisbon -&gt; Paris, 28 Nov 1909, 12.25 pm
 
 Tendo sido tão affectuoso nosso acolhimento em França, parece conveniente tornar [o] brinde [do] jantar [?] mais
 caloroso. Por isso convem no primeiro periodo, a seguir a &quot;sympathia&quot;, accrescentar &quot;e amizade&quot;; no segundo periodo,
@@ -724,7 +724,7 @@ a seguir a &quot;tendes feito&quot;, dizer &quot;pelo acolhimento que nos dispen
 sua intellectual Paris&quot;. Ao 3º periodo, a seguir [a] &quot;entre Portugal e a França&quot;, intercalar &quot;e ainda pelo maior
 estreitamento das suas relações&quot;. Se houver no brinde do P[residente da] Republica qualquer cousa especial, fazer na
 resposta a devida allusão [?] discreta e prudente. Beijo as mãos de Vossa Majestade. Wenceslau de Lima.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0018_en.md">m0018_en.md</a></p><pre># m0018: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0018_en.md">m0018_en.md</a></p><pre translate="no"># m0018: English translation
 
 Since our welcome in France has been so affectionate, it seems right to make the [dinner?] toast warmer. In the first
 section, after &quot;sympathy&quot;, add &quot;and friendship&quot;; in the second, after &quot;you have done&quot;, say &quot;for the welcome the French
@@ -738,7 +738,7 @@ glossed &quot;tend&quot; and &quot;es&quot;: &quot;tendes feito&quot;, the words
 &quot;jantar&quot; is a faint gloss [?].</pre></details>
 <h3>m0020, Lisbon -&gt; Paris, 30 Nov 1909</h3>
 <p>Confidential: the King should go only to São Carlos on the night of his arrival and hold the reception at the station; Lima asks for an answer.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0020_transcription.txt">m0020_transcription.txt</a></p><pre># ANTT PT/TT/CAM/M09, image m0020 (back m0021). French receiving form; printed strips.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0020_transcription.txt">m0020_transcription.txt</a></p><pre translate="no"># ANTT PT/TT/CAM/M09, image m0020 (back m0021). French receiving form; printed strips.
 # Header strip: SS DE LISBOA 325,-93,-30-12./30 M (origin Lisboa, no. 325, 93 taxed words, day 30, 12.30 pm);
 # the receiver pencilled &quot;83&quot; above the 93. Pencil gloss above every group (decode of the time); &quot;conveniente&quot;
 # of the first line is written in the margin above. VCSSA as printed.
@@ -748,7 +748,7 @@ glossed &quot;tend&quot; and &quot;es&quot;: &quot;tendes feito&quot;, the words
 40817 12036 99251 66271 93148 32101 93148 55478 40817 93048 29140 01021 04053
 10977 45418 25584 99211 75137 25584 84798 79456 46523 84727 05123 70857 93048
 BEIJO AS MAOS DE VCSSA MAGESTADE .= WENCESLAU DE LIMA +</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0020_decryption.txt">m0020_decryption.txt</a></p><pre># m0020: group by group with the pencil gloss of the time (Lisbon -&gt; Paris, 30 Nov 1909).
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0020_decryption.txt">m0020_decryption.txt</a></p><pre translate="no"># m0020: group by group with the pencil gloss of the time (Lisbon -&gt; Paris, 30 Nov 1909).
 # Code groups with the gloss written above them; clear words of the telegram in capitals as (clear).
 # Hyphens mark our split of one glossed word over two groups. [?] = no usable gloss; ? = doubtful.
 # Notes in brackets are ours.
@@ -818,14 +818,14 @@ BEIJO AS MAOS DE VCSSA MAGESTADE .= WENCESLAU DE LIMA +</pre></details>
 70857   ordenar
 93048   serviço
 (clear) BEIJO AS MAOS DE VCSSA MAGESTADE .= WENCESLAU DE LIMA +</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0020_reading.md">m0020_reading.md</a></p><pre># m0020: Venceslau de Lima to King Manuel II, Lisbon -&gt; Paris, 30 Nov 1909, 12.30 pm
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0020_reading.md">m0020_reading.md</a></p><pre translate="no"># m0020: Venceslau de Lima to King Manuel II, Lisbon -&gt; Paris, 30 Nov 1909, 12.30 pm
 
 Confidencial. Parece conveniente que Vossa Magestade só [vá] a São Carlos na noite do dia da chegada. [?] me disse se
 inconveniencia [?] posso [?] contar com isso. Tambem parece mais vantajoso que Vossa Magestade dê [a] recepção na estação, para o
 que haverá sala convenientemente preparada. Isso tornará [a] recepção mais facil e melhor e desembaraçará [o] serviço
 [da] chegada na preparação. Aguardo determinação [de] Vossa Magestade Muito peço [a] Vossa Magestade sua resposta pela necessidade de
 ordenar [o] serviço. Beijo as mãos de Vossa Magestade. Wenceslau de Lima.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0020_en.md">m0020_en.md</a></p><pre># m0020: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lima1909/m0020_en.md">m0020_en.md</a></p><pre translate="no"># m0020: English translation
 
 Confidential. It seems best that Your Majesty go only to [the theatre of] São Carlos on the night of the day of
 arrival. [Someone] told me whether [...] I can count on that [the clause is not clear]. It also seems better that Your
@@ -847,13 +847,13 @@ says 93 words; the receiver pencilled 83, which is the count of the strips.</pre
 <li>Arquivo Nacional Torre do Tombo, <em>Documentos de D. Carlos, D. Am&eacute;lia e D. Manuel II</em>, ma&ccedil;o 9, PT/TT/CAM/M09, <a href="https://digitarq.arquivos.pt/documentDetails/43db7e2e319d472a996dd926fcc6c5c1" rel="noopener">DigitArq record</a>, 21 images (m0001&ndash;m0021).</li>
 <li>No printed decipherment was found in one web search; the published papers of Manuel II and of Venceslau de Lima were not searched. The decodes on the forms are the receiver&rsquo;s; what is new is the transcription, the dating and direction, the word-count check, the 261 code values and the corrected readings.</li>
 </ul>
-<p class="muted">Files: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/lima1909">targets/lima1909/</a> (notes, transcriptions, group-by-group decryptions, readings and translations, <code>groups.py</code> with its output, <code>code_values.tsv</code>). Contributed by WAINUT; reviewed for the site on 27 October 2026.</p>
+<p class="muted">Files: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/lima1909">targets/lima1909/</a> (notes, transcriptions, group-by-group decryptions, readings and translations, <code translate="no">groups.py</code> with its output, <code translate="no">code_values.tsv</code>). Contributed by WAINUT; reviewed for the site on 27 October 2026.</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Arquivo Nacional Torre do Tombo, Documentos de D. Carlos, D. Am&eacute;lia e D. Manuel II, PT/TT/CAM/M09, via DigitArq</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="hintze1903.html" rel="prev">&larr; Hintze Ribeiro to Queen Am&eacute;lie 1903 1903</a><a href="sabugosa1910.html" rel="next">Sabugosa to Queen Am&eacute;lie 1903&ndash;1910 1903&ndash;1910 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

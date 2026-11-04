@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">ꝺ m W 4 ı ʒ 9 − W ⊐ ꝝ &middot; ƨ ⊐ ɔ + − m ava &middot; ℰ &middot; k &middot; W tt ⊏ ≠ θ ⊏ ava ∞ ʃ<br>a r c h i d i a c r e &middot; b r u l a r t &middot; qui &middot; i &middot; c o n s e n t i t &middot; (p. 2 l. 7; ℰ = qui, ı here read i)</div>
+  <div class="cipherstrip" translate="no">ꝺ m W 4 ı ʒ 9 − W ⊐ ꝝ &middot; ƨ ⊐ ɔ + − m ava &middot; ℰ &middot; k &middot; W tt ⊏ ≠ θ ⊏ ava ∞ ʃ<br>a r c h i d i a c r e &middot; b r u l a r t &middot; qui &middot; i &middot; c o n s e n t i t &middot; (p. 2 l. 7; ℰ = qui, ı here read i)</div>
   <p class="kicker">Reims &rarr; a patron in Rome &middot; homophonic cipher of graphic signs with codes, three pages &middot; 19 June 1589</p>
   <h1>A letter from Reims on the chapter&rsquo;s postulation, 19 June 1589</h1>
   <p class="sub">BnF fr. 20974 pp. 1&ndash;3 &middot; DECODE R2276 &middot; catalogued as &ldquo;unknown sender to the duc de Guise, 1 January 1556&rdquo; &middot; three pages of continuous cipher, the third bound upside down</p>
@@ -96,7 +96,7 @@ The letter at <a href="orbais.html">fr. 3413 no.&nbsp;62</a>, from Cardinal Pell
 
 <h2 id="reading"><span class="num">03</span> The decrypted text</h2>
 <figure class="creveal" data-src="reveal/r2276.json"></figure>
-<p>The text is given as the signs spell it, in the writer&rsquo;s spelling (<em>u</em> for <em>v</em>, <em>i</em> for <em>j</em>, no accents). <code>?</code> marks a word whose signs are present but unresolved, <code>[&hellip;]</code> paper that is lost, and <code>*</code> a word accepted with a sign against the key (grade C). A vertical bar marks the line ends of the manuscript. There are no word divisions in the cipher; the spaces are editorial.</p>
+<p>The text is given as the signs spell it, in the writer&rsquo;s spelling (<em>u</em> for <em>v</em>, <em>i</em> for <em>j</em>, no accents). <code translate="no">?</code> marks a word whose signs are present but unresolved, <code translate="no">[&hellip;]</code> paper that is lost, and <code translate="no">*</code> a word accepted with a sign against the key (grade C). A vertical bar marks the line ends of the manuscript. There are no word divisions in the cipher; the spaces are editorial.</p>
 
 <h3>Page 1: the chapter&rsquo;s letter to the Pope</h3>
 <p><em>apres a este leu en la presence de ceulx qui est[oient &hellip;] | arreste de l&rsquo;assemblee a lettre estoit escript de a[&hellip;] | [&hellip;]ape pour luy remonstrer la necessite que la uile a pour [&hellip;] | feit residence et preschat et fut capable de u[&hellip;] | uoir de prelat, pour la descharge il s&rsquo;en trouueroit de ceulx de | mesmes idoines de ce, s&rsquo;il plaisoit a sa Sainctete l&rsquo;en pour|uoir comme ilz l&rsquo;en suplioient, plustost que ung estranger. | Uous scauraie pas representer le contenu de la lettre au urai, mais | peu de desus que uous en pouez imaginer le subiect &hellip; | qu&rsquo;il i eut personne de nomme la lettre signe. Il proposa deux choses, | une le moien de la faire tenir a Rome ? et fut prie le capitaine Tr|on de l&rsquo;enuoier a son frere pour la presenter, de quoi ils s&rsquo;excusent, | disant que cela ? trop de soupcon a leur maison et a son nom, | et mesme que pour les choses passees &hellip; qu&rsquo;il failloit moien | d&rsquo;obtenir du chapitre une semblable lettre pour fortifier &hellip;</em></p>
@@ -125,7 +125,7 @@ The dean Frison is &ldquo;maintenant a Rome&rdquo; with the act of postulation. 
 <h2 id="method"><span class="num">05</span> How it was decrypted</h2>
 <p>The three pages were fetched from DECODE and transcribed sign by sign into ASCII labels, 93 lines. Page 1 was done by hand at twice the scan size. Pages 2 and 3 were done by two agents at 1.5&ndash;3&times;, and page 3 was transcribed turned upright.
 A free homophonic annealing under a French 5-gram model failed: the text collapsed into <em>e</em> and <em>s</em>. A decoder that allowed each sign a small set of values, then a word-level decoder with a 30,000-word lexicon of sixteenth-century letters that re-estimated those sets, brought out the content: <em>chapitre, chanoines, archidiacre Brulart, postulation, lansquenetz, Parme, Elbeuf</em>.
-The decryption itself was done line by line against the images in six rounds. Each word was checked against the signs by an aligner, which measures the fraction of signs that agree with the key (<code>measure.py</code>).
+The decryption itself was done line by line against the images in six rounds. Each word was checked against the signs by an aligner, which measures the fraction of signs that agree with the key (<code translate="no">measure.py</code>).
 Two decoding figures are reported; neither is a reading figure (see the Extent above). <em>Sense</em> counts every sign inside a real word or a declared null: 3,600 of 3,920, 91.8%. <em>Strict</em> counts only signs that agree with the key: 3,484, 88.9%. The difference is the writer&rsquo;s slips and doubtful glyphs, accepted from context.</p>
 
 <h2 id="residuals"><span class="num">06</span> What remains uncertain</h2>
@@ -137,7 +137,7 @@ Two decoding figures are reported; neither is a reading figure (see the Extent a
 <li><strong>Open words:</strong> about 80 words of two or more signs, with no candidate that fits both the signs and the sentence. The worst passages are page 1 lines 16 and 22&ndash;26 (Madame de Sainct Pierre&rsquo;s reply, next to the tear), page 2 lines 2&ndash;3, 13&ndash;16 and 39, and page 3 lines 1, 5 and 9.</li>
 <li><strong>Doubtful readings (grade C):</strong> <em>capitaine Tron</em> (p. 1 l. 11&ndash;12, a name decrypted from the key alone); <em>en uerite</em> (p. 2 l. 2); <em>sont</em> (l. 28); <em>commodite</em> (l. 35); <em>depesches</em> (p. 3 l. 10); <em>de Lique</em> (p. 2 l. 34); the year 1589, inferred as above.</li>
 </ul>
-<p>The transcription, the key files, the decrypted text and the alignment tools are in the repository folder. So is the aligned sibling <code>fr4715_aligned.txt</code>, which also serves the <a href="orbais.html">orbais</a> letter.</p>
+<p>The transcription, the key files, the decrypted text and the alignment tools are in the repository folder. So is the aligned sibling <code translate="no">fr4715_aligned.txt</code>, which also serves the <a href="orbais.html">orbais</a> letter.</p>
 
 <!-- texts:start -->
 <h2 id="texts">Full texts</h2>
@@ -145,7 +145,7 @@ Two decoding figures are reported; neither is a reading figure (see the Extent a
 <h3>Letter from Reims, 19 June [1589], BnF fr. 20974 pp. 1-3 (DECODE R2276): the lines that read (p. 1 ll. 1-15, 27-37; p. 2 ll. 4-12, 22-35; p. 3) <span class="st partial">read in part</span></h3>
 <p>Written from Reims, probably by Jean de Piles, abbé d&#x27;Orbais: while he was still in Rome the chapter of Reims made an election or postulation for the archbishopric, of the grand archdeacon Brulart (who consented in tears) and of the dean Frison, now in Rome with the act of postulation. It names the Cardinal de Lorraine, Cardinal de Pellevé, Cardinal Allen, Mayenne, the abbey of Saint-Remi, 18,000 lansquenets and 8,000 reiters for the Low Countries against Parma, and Elbeuf&#x27;s ransom agreed at 50,000 écus. Read in part; &#x27;?&#x27; marks unread words.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (92% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r2276/t1.txt">t1.txt</a></p><pre># page 1, re-transcribed
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r2276/t1.txt">t1.txt</a></p><pre translate="no"># page 1, re-transcribed
 1: d P m o S b z S A z t z c X R t - P m z S o R w z 1 w o c t n E X S A ...
 2: v m X g A z 1 t d g o v 2 t z b z Ml X S A T 9 J o S w m Q 0 A 1 o - ...
 3: - 0 z C y m z V T R g A m X H t - R o w z S Q A X G t - f Q t z b C ...
@@ -186,7 +186,7 @@ Two decoding figures are reported; neither is a reading figure (see the Extent a
 38: F - c t A 0 - S O 1 v T R g A m v d g T R Q t v d Y G x H T f o l z S 1 P t - m z R z E P - y A X T z
 39: f o A c S Q P c 2 t Q z u G S T R v d Q g A m X S A D S Q 3 D 1 v v Q R ... d 3 4 o
 40: A T S d Y m X G P T R S z n R X G z f o c t A f T Q R 7 m z u o R d</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r2276/t2.txt">t2.txt</a></p><pre># page 2, re-transcribed
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r2276/t2.txt">t2.txt</a></p><pre translate="no"># page 2, re-transcribed
 1: ... P o Q R z T c X d T c m f o ^ X S A m z 7 c 7 Q g w T c m S G V X F - Q g
 2: ... v - M 7 c - z v o R z E S o F - Q S T 9 A z R b X f Q A z S d w 4 X 0 L h - A T R m 8 o v y
 3: g g t T G S E Y w c t 9 o H S d Y - h o H A d P m X S t d m w t o f X g s t x V H A o H g K m 1
@@ -227,7 +227,7 @@ Two decoding figures are reported; neither is a reading figure (see the Extent a
 38: d X P m - A Q 8 G Q w h e S c G P o 8 A X d P m X G t - 8 A g T R P m Q S z e 3 _ 1 P m
 39: ... R 3 L Q - z S w T c t z 8 G h o 3 o S d G o V 2 t z H f c m P o m S F c -
 40: ... f c X M % o _ z n X R F T m z 1 S Q m H z m w F v z o t z F c A -</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r2276/t3.txt">t3.txt</a></p><pre># page 3, re-transcribed
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r2276/t3.txt">t3.txt</a></p><pre translate="no"># page 3, re-transcribed
 1: m z d t d m v Y L x - 7 z v h S K A Q o H A X S A m z S z H z u d G o c m X
 2: z H d F z v - v m H z 1 3 Q u e c Q 8 A v Y t t - H G L c z H X A H n e c Q 8 A v Q t m 9 Q G J n 1
 3: ? z S 7 T H A 4 H z E h z 7 T g A d l z m v c P - s S 2 - G e z v P o S 8 t z 3 @ 1 P - m v z
@@ -241,7 +241,7 @@ Two decoding figures are reported; neither is a reading figure (see the Extent a
 11: l - s v d 4 G Q M G E T c m o H A v T R G A m z G e w x t - P c m A F g o H A 8 z R A
 12: w Q H L c v H A o v Q t z S 8 c S I H A z H S G t - F Q t z S o n w c S z 3 z h P T F e Q m
 13: w T R A m g 2 c X H</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r2276/reading.txt">reading.txt</a></p><pre>t1.1: apres a este leu en la presence de ceulx qui est[...]
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r2276/reading.txt">reading.txt</a></p><pre translate="no">t1.1: apres a este leu en la presence de ceulx qui est[...]
 t1.2: arreste de lassemblee a lettre estoit escript de a[...]
 t1.3: [...]ape pour luy remonstrer la necessite que la uile a pour [...]
 t1.4: feit residence et preschat et fut capable de u[...]
@@ -334,7 +334,7 @@ t3.10: il i a mrs depesches* pour cela il i eust deuant quil assemble de uille p
 t3.11: la il ma dict que les mrs qui ourent monstre que pour cela portoient cent
 t3.12: cinquante mil escus ientens que la uille sexcuse de y pouoir
 t3.13: contribuer</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r2276/R2276_reading.md">R2276_reading.md</a></p><pre>&lt;!-- Reading of R2276, the lines that read (outcome.texts[0]: p. 1 ll. 1-15 and 27-37, p. 2 ll. 4-12 and 22-35, all of p. 3), written 23 Oct 2026 (Claude Opus 5.5) from reading.txt (the project&#x27;s decryption with the Nevers-Piles alphabet, key_v8). Letters as reading.txt gives them (u for v, i for j, no accents); only word division at line breaks, capitals and punctuation added. Each &quot;?&quot; of reading.txt (a word with an unattested sign) is […]; &quot;[...]&quot; at a torn edge is […]. The other lines (p. 1 ll. 16-26, 38-40; p. 2 ll. 1-3, 13-21, 36-40) are decoded, not read, and are not here. Whole letter in cipher. --&gt;
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r2276/R2276_reading.md">R2276_reading.md</a></p><pre translate="no">&lt;!-- Reading of R2276, the lines that read (outcome.texts[0]: p. 1 ll. 1-15 and 27-37, p. 2 ll. 4-12 and 22-35, all of p. 3), written 23 Oct 2026 (Claude Opus 5.5) from reading.txt (the project&#x27;s decryption with the Nevers-Piles alphabet, key_v8). Letters as reading.txt gives them (u for v, i for j, no accents); only word division at line breaks, capitals and punctuation added. Each &quot;?&quot; of reading.txt (a word with an unattested sign) is […]; &quot;[...]&quot; at a torn edge is […]. The other lines (p. 1 ll. 16-26, 38-40; p. 2 ll. 1-3, 13-21, 36-40) are decoded, not read, and are not here. Whole letter in cipher. --&gt;
 
 # R2276, letter from Reims, 19 June [1589] (BnF fr. 20974 pp. 1-3): reading of the lines that read
 
@@ -359,7 +359,7 @@ t3.13: contribuer</pre></details>
 ### Page 3
 
 […] a larmee que […] quil tient estre seure et asseure en a […] […] de dix huict mil lansquenetz et huict mil reistres et de […]es, dont une qui se doit aler au pais bas pour empescher le duc de Parme, et du reste ici. Il est sr de metre luy mesmes a leuer […] pais apres quil aura retires ce quil aura peu en […] […]. Quil est infiniment mal content des longueurs de Mr de Maine et du peu dordre quil donera a faire que […]. De Reims, du dix neufiesme de iuin; et ie uous suplie uous asseurer de ma fidelite a uous faire seruice. Il accorde de la rancon du duc delbeuf a cinquante mil escus, que […] […] de leuer sur les uiles; il i a mrs depesches pour cela. Il i eust deuant quil assemble de uille pour cela; il ma dict que les mrs qui ourent monstre que pour cela portoient cent cinquante mil escus. Ientens que la uille sexcuse de y pouoir contribuer.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r2276/R2276_en.md">R2276_en.md</a></p><pre>&lt;!-- English translation of R2276_reading.md (Claude Opus 5.5, 23 Oct 2026): the lines of R2276 that read (p. 1 ll. 1-15 and 27-37, p. 2 ll. 4-12 and 22-35, all of p. 3), from the project&#x27;s decryption (reading.txt). Same holes: […] = word with an unattested sign or lost at the torn edge. The decoded-not-read lines are not translated. --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r2276/R2276_en.md">R2276_en.md</a></p><pre translate="no">&lt;!-- English translation of R2276_reading.md (Claude Opus 5.5, 23 Oct 2026): the lines of R2276 that read (p. 1 ll. 1-15 and 27-37, p. 2 ll. 4-12 and 22-35, all of p. 3), from the project&#x27;s decryption (reading.txt). Same holes: […] = word with an unattested sign or lost at the torn edge. The decoded-not-read lines are not translated. --&gt;
 
 # R2276, letter from Reims, 19 June [1589] (BnF fr. 20974 pp. 1-3): English translation of the lines that read
 
@@ -419,7 +419,7 @@ purpose brought a hundred and fifty thousand écus. I understand that the town e
 contribute to it.</pre></details>
 <h3>Letter from Reims, 19 June [1589], BnF fr. 20974 pp. 1-3 (DECODE R2276): p. 1 ll. 16-26 and 38-40, p. 2 ll. 1-3, 13-21 and 36-40 <span class="st stuck">decoded, not read</span></h3>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r2276/t1.txt">t1.txt</a></p><pre># page 1, re-transcribed
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r2276/t1.txt">t1.txt</a></p><pre translate="no"># page 1, re-transcribed
 1: d P m o S b z S A z t z c X R t - P m z S o R w z 1 w o c t n E X S A ...
 2: v m X g A z 1 t d g o v 2 t z b z Ml X S A T 9 J o S w m Q 0 A 1 o - ...
 3: - 0 z C y m z V T R g A m X H t - R o w z S Q A X G t - f Q t z b C ...
@@ -460,7 +460,7 @@ contribute to it.</pre></details>
 38: F - c t A 0 - S O 1 v T R g A m v d g T R Q t v d Y G x H T f o l z S 1 P t - m z R z E P - y A X T z
 39: f o A c S Q P c 2 t Q z u G S T R v d Q g A m X S A D S Q 3 D 1 v v Q R ... d 3 4 o
 40: A T S d Y m X G P T R S z n R X G z f o c t A f T Q R 7 m z u o R d</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r2276/t2.txt">t2.txt</a></p><pre># page 2, re-transcribed
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r2276/t2.txt">t2.txt</a></p><pre translate="no"># page 2, re-transcribed
 1: ... P o Q R z T c X d T c m f o ^ X S A m z 7 c 7 Q g w T c m S G V X F - Q g
 2: ... v - M 7 c - z v o R z E S o F - Q S T 9 A z R b X f Q A z S d w 4 X 0 L h - A T R m 8 o v y
 3: g g t T G S E Y w c t 9 o H S d Y - h o H A d P m X S t d m w t o f X g s t x V H A o H g K m 1
@@ -501,7 +501,7 @@ contribute to it.</pre></details>
 38: d X P m - A Q 8 G Q w h e S c G P o 8 A X d P m X G t - 8 A g T R P m Q S z e 3 _ 1 P m
 39: ... R 3 L Q - z S w T c t z 8 G h o 3 o S d G o V 2 t z H f c m P o m S F c -
 40: ... f c X M % o _ z n X R F T m z 1 S Q m H z m w F v z o t z F c A -</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r2276/t3.txt">t3.txt</a></p><pre># page 3, re-transcribed
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r2276/t3.txt">t3.txt</a></p><pre translate="no"># page 3, re-transcribed
 1: m z d t d m v Y L x - 7 z v h S K A Q o H A X S A m z S z H z u d G o c m X
 2: z H d F z v - v m H z 1 3 Q u e c Q 8 A v Y t t - H G L c z H X A H n e c Q 8 A v Q t m 9 Q G J n 1
 3: ? z S 7 T H A 4 H z E h z 7 T g A d l z m v c P - s S 2 - G e z v P o S 8 t z 3 @ 1 P - m v z
@@ -515,7 +515,7 @@ contribute to it.</pre></details>
 11: l - s v d 4 G Q M G E T c m o H A v T R G A m z G e w x t - P c m A F g o H A 8 z R A
 12: w Q H L c v H A o v Q t z S 8 c S I H A z H S G t - F Q t z S o n w c S z 3 z h P T F e Q m
 13: w T R A m g 2 c X H</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r2276/reading.txt">reading.txt</a></p><pre>t1.1: apres a este leu en la presence de ceulx qui est[...]
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r2276/reading.txt">reading.txt</a></p><pre translate="no">t1.1: apres a este leu en la presence de ceulx qui est[...]
 t1.2: arreste de lassemblee a lettre estoit escript de a[...]
 t1.3: [...]ape pour luy remonstrer la necessite que la uile a pour [...]
 t1.4: feit residence et preschat et fut capable de u[...]
@@ -627,7 +627,7 @@ t3.13: contribuer</pre></details>
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Biblioth&egrave;que nationale de France, fr. 20974, via DECODE R2276 and Gallica</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="morosini1589.html" rel="prev">&larr; Morosini 1589, second key 1589</a><a href="orbais.html" rel="next">Orbais 1589 1589 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">3222 450 340 = cet avis et<br>1401 450 1242 = depuis avis est &middot; 1000 357 = ce projet</div>
+  <div class="cipherstrip" translate="no">3222 450 340 = cet avis et<br>1401 450 1242 = depuis avis est &middot; 1000 357 = ce projet</div>
   <p class="kicker">Berlin &rarr; London, intercepted at The Hague · numerical code (Michell&rsquo;s envoy code) · 28 December 1751 · decoded, not read: 95 of 360 groups, fragments only</p>
   <h1>Frederick the Great&rsquo;s ministerial letter to Louis Michell, 28 December 1751</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_frederick-ii.jpg" alt="Frederick II" title="Frederick II: Portrait, Anton Graff. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Frederick II</figcaption></figure></div><!-- /parties -->
@@ -100,7 +100,7 @@
 <h3>Frederick II (ministerial rescript) to Louis Michell, Berlin, 28 Dec 1751 (DECODE R1955) <span class="st stuck">decoded, not read</span></h3>
 <p>The ministerial rescript in the King&#x27;s name to his envoy in London, opening in clear &#x27;Toutes vos dépêches m&#x27;ont été bien rendues et la dernière est du 14e de ce mois&#x27;, then 362 code groups. WAINUT decoded 95 of 360 groups (26.4%) with the envoy table rebuilt from the Dutch decipherments of Michell&#x27;s reports R1050/R1051: fragments only, the subject cannot be stated with confidence.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r1955/transcription_r1955.txt">transcription_r1955.txt</a></p><pre># DECODE R1955 (KHA Prins Willem V inv. 198), Frederick II (ministerial rescript) to Michell, Berlin 28 Dec 1751
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r1955/transcription_r1955.txt">transcription_r1955.txt</a></p><pre translate="no"># DECODE R1955 (KHA Prins Willem V inv. 198), Frederick II (ministerial rescript) to Michell, Berlin 28 Dec 1751
 # Transcribed 19 Sept 2026 from the DECODE images (P2 = first page, P1 = second page). One line per manuscript line.
 # Heading: Lettre du Roi de Prusse au Secretaire Michell du 28 Decemb. 1751.
 # Clear opening: Toutes vos depeches m&#x27;ont ete bien rendues et la derniere est du 14e de ce mois
@@ -137,7 +137,7 @@
 1520 1116 2893 1487 50 3127 660 2381 916 1222 1187 14 1626
 4797 5328
 # A Berlin ce 28e Decemb. (Signe:) Federic.</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r1955/R1955_tx.txt">R1955_tx.txt</a></p><pre># WAINUT transcription of DECODE R1955 (KHA The Hague, Prins Willem V inv. 198), made 2026-10-11 from the DECODE images (not included). One line per manuscript line.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r1955/R1955_tx.txt">R1955_tx.txt</a></p><pre translate="no"># WAINUT transcription of DECODE R1955 (KHA The Hague, Prins Willem V inv. 198), made 2026-10-11 from the DECODE images (not included). One line per manuscript line.
 # R1955: photographs img/R1955_p1.jpg (p1: heading, clear opening, 25 cipher lines) and img/R1955_p2.jpg (p2: 6 cipher lines, the last one ending in the date line, then the signature; the rest of p2 is blank apart from mirror show-through of p1). On p1 the right edge of the leaf is curled/shadowed: the last group of several lines runs into that dark band (l.1, l.2, l.16, l.19, l.21, l.22, l.25).
 # Heading: &quot;Lettre du Roi de Prusse au Secretaire Michell / du 28 Decemb. 1751.&quot;
 # Clear opening: &quot;Toutes vos depeches m&#x27;ont été bien rendües et la derniere est du 14e de ce mois&quot; then cipher. The first manuscript line is entirely clear text (&quot;derniere&quot; runs into the curled edge); data l.1 = 2nd manuscript line, after &quot;est du 14e de ce mois&quot; (14e with superscript e).
@@ -197,7 +197,7 @@
 633 1433 180+1/2 928 2589 409 3072 326 2417 500 1828_ 3331
 1520 1116 2893 1487 50 3127 660= 2381 916 1222 1187 14 1626
 4797 5328 &quot;à Berlin ce 28e Decemb: (Signé:)&quot;</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r1955/R1955_reading_line.txt">R1955_reading_line.txt</a></p><pre># R1955 (Berlin 28 Dec 1751, to Michell; Michell&#x27;s envoy code) decoded group by group with the envoy table rebuilt by
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r1955/R1955_reading_line.txt">R1955_reading_line.txt</a></p><pre translate="no"># R1955 (Berlin 28 Dec 1751, to Michell; Michell&#x27;s envoy code) decoded group by group with the envoy table rebuilt by
 # scripts/envoy_key.py from the contemporary decipherments of Michell&#x27;s reports R1050/R1051 (DECODE transcriptions).
 # &#x27;·&#x27; = group not in that table. 95 of 360 groups (26.4%) have a value. NOT a decipherment: a trial reading of fragments.
 # Reproduce: python scripts/decode.py envoy_key_lyonet.tsv R1955_tx.txt
@@ -214,13 +214,13 @@
 <li>K. de Leeuw, <em>Diplomacy &amp; Statecraft</em> 10 (1999), on Pieter Lyonet&rsquo;s deciphering for the States General.</li>
 </ul>
 
-<p class="muted">The two transcriptions, WAINUT&rsquo;s decoding and the notes are in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/r1955"><code>targets/r1955/</code></a>; the scripts are shared with <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/michell1751"><code>targets/michell1751/</code></a>. The DECODE images are not committed.</p>
+<p class="muted">The two transcriptions, WAINUT&rsquo;s decoding and the notes are in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/r1955"><code translate="no">targets/r1955/</code></a>; the scripts are shared with <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/michell1751"><code translate="no">targets/michell1751/</code></a>. The DECODE images are not committed.</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Manuscript images: Koninklijk Huisarchief, The Hague, via DECODE</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="michell1751.html" rel="prev">&larr; Michell 1751 1751</a><a href="hellen1752.html" rel="next">Hellen 1752–1763 1752&ndash;63 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

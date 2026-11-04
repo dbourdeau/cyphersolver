@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-  <div class="cipherstrip">&Lambda;&#1016;7&perp;V &nbsp;&#1046;&gamma;7U&Lambda; &nbsp;&infin;7&Lambda;&perp;V &nbsp;Z H<br>their great desir of (f. 75, interlinear gloss) &middot; a = U, e = 7, h = &#1016;, r = V/&gamma;, s/t = &Lambda;</div>
+  <div class="cipherstrip" translate="no">&Lambda;&#1016;7&perp;V &nbsp;&#1046;&gamma;7U&Lambda; &nbsp;&infin;7&Lambda;&perp;V &nbsp;Z H<br>their great desir of (f. 75, interlinear gloss) &middot; a = U, e = 7, h = &#1016;, r = V/&gamma;, s/t = &Lambda;</div>
   <p class="kicker">Ostend and Bourbourg &rarr; Walsingham &middot; homophonic and polyphonic substitution in signs, inside clear English &middot; May&ndash;June 1588</p>
   <h1>Lord Cobham to Walsingham, May&ndash;June 1588</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_lord-cobham.jpg" alt="Lord Cobham" title="Lord Cobham: Portrait, 16th century. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Lord Cobham</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_francis-walsingham.jpg" alt="Francis Walsingham" title="Francis Walsingham: Portrait by John de Critz the Elder, 1589. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Francis Walsingham</figcaption></figure></div><!-- /parties -->
@@ -59,8 +59,8 @@
 <dt>The letters</dt><dd>Four letters from Lord Cobham to Walsingham, May&ndash;June 1588, written while he was an English commissioner treating with Parma&rsquo;s deputies at Ostend and then Bourbourg. They are clear English with passages in Greek-like signs.</dd>
 <dt>Where</dt><dd>British Library, Harley MS 287 ff. 80&ndash;81, 88, 92&ndash;93 and 96&ndash;97 (DECODE R8490, R8492, R8495, R8496), catalogued with no decipherment. The key record the catalogue suggested (Bodley&rsquo;s 1590 cipher) does not fit.</dd>
 <dt>The cipher</dt><dd>A polyphonic sign cipher: one sign stands for s, t and a, another for r and y. Code numbers include 7 the Queen, 10 the Lord Admiral, 15 Parma and 16 the King of Spain.</dd>
-<dt>How it was read</dt><dd>The key comes from Cobham&rsquo;s own April letters in the same volume, deciphered between the lines at the time. About sixty glossed words aligned at full scan resolution give a sign inventory (<code>signs.tsv</code>). A solver (<code>solve.py</code>) matched cipher words against a word list from the Calendar of State Papers Foreign for 1588.</dd>
-<dt>What it says</dt><dd>Cobham reports on the talks, a captain gone into Scotland, Italians arriving and the haven of Rain, in fragments such as &ldquo;within France&rdquo;. The graded decipherment is in <code>targets/cobham1588/READING.md</code>.</dd>
+<dt>How it was read</dt><dd>The key comes from Cobham&rsquo;s own April letters in the same volume, deciphered between the lines at the time. About sixty glossed words aligned at full scan resolution give a sign inventory (<code translate="no">signs.tsv</code>). A solver (<code translate="no">solve.py</code>) matched cipher words against a word list from the Calendar of State Papers Foreign for 1588.</dd>
+<dt>What it says</dt><dd>Cobham reports on the talks, a captain gone into Scotland, Italians arriving and the haven of Rain, in fragments such as &ldquo;within France&rdquo;. The graded decipherment is in <code translate="no">targets/cobham1588/READING.md</code>.</dd>
 <dt>Still open</dt><dd>About a third of the cipher words are deciphered. The rest could not be resolved from the scans: the L-shape and K-shape signs on f. 88, the square on f. 80 and the codes 4, 22 and 27 are unglossed.</dd>
 </dl>
 </div>
@@ -91,19 +91,19 @@
 <tr><td>i</td><td>&perp;, undotted X</td><td>w</td><td>dot and stroke</td></tr>
 <tr><td>k</td><td>&omega;</td><td>y</td><td>&gamma;</td></tr>
 </table>
-<p>Not found: j, q, x and z. Several signs on f. 88 (shapes like K, &upsilon;, &rho; and W) are not in the glosses and may be code signs. A second session working on Cobham&rsquo;s March letters (R8477&ndash;R8487) reached the same values independently from its own cribs, and deciphered most of those letters: see <a href="harley287.html">Cobham at Ostend, March 1587/8</a> (key in <code>targets/harley287/key.tsv</code>). Its table separates s (a narrow &and;) from t (a wide one), which may resolve the s/t ambiguity here.</p>
+<p>Not found: j, q, x and z. Several signs on f. 88 (shapes like K, &upsilon;, &rho; and W) are not in the glosses and may be code signs. A second session working on Cobham&rsquo;s March letters (R8477&ndash;R8487) reached the same values independently from its own cribs, and deciphered most of those letters: see <a href="harley287.html">Cobham at Ostend, March 1587/8</a> (key in <code translate="no">targets/harley287/key.tsv</code>). Its table separates s (a narrow &and;) from t (a wide one), which may resolve the s/t ambiguity here.</p>
 
 <h2 id="what-reads"><span class="num">03</span> The sign inventory, and what is deciphered</h2>
-<p>A third pass worked from the scans at full resolution (7,200 pixels wide), aligning about sixty glossed words on ff.&nbsp;75, 79 and 89 sign by sign. The result is <code>targets/cobham1588/signs.tsv</code>. The families that look alike at normal size separate cleanly. p is a loop with its tail swept down-left (&ldquo;upon&rdquo;, &ldquo;popes&rdquo;, &ldquo;perswade&rdquo;). l is a circle crossed by a straight stem (&ldquo;arrival&rdquo;, &ldquo;holding&rdquo;). h is a stem with a bowl to the right (&ldquo;harken&rdquo;, &ldquo;thought&rdquo;). m is a horizontal S with a loop (&ldquo;made&rdquo;, &ldquo;commission&rdquo;), and w a dot and stroke (&ldquo;willing&rdquo;, &ldquo;sworne&rdquo;). The glosses also show that several signs are polyphonic. &Lambda; is s and t (and probably a), &gamma; is r and y, c is o and once a, and the l sign once stands for t. The code numbers are glossed too: 7&nbsp;=&nbsp;her Majesty, 10&nbsp;=&nbsp;the Lord Admiral, 15&nbsp;=&nbsp;the Duke of Parma, 16&nbsp;=&nbsp;the King of Spain.</p>
+<p>A third pass worked from the scans at full resolution (7,200 pixels wide), aligning about sixty glossed words on ff.&nbsp;75, 79 and 89 sign by sign. The result is <code translate="no">targets/cobham1588/signs.tsv</code>. The families that look alike at normal size separate cleanly. p is a loop with its tail swept down-left (&ldquo;upon&rdquo;, &ldquo;popes&rdquo;, &ldquo;perswade&rdquo;). l is a circle crossed by a straight stem (&ldquo;arrival&rdquo;, &ldquo;holding&rdquo;). h is a stem with a bowl to the right (&ldquo;harken&rdquo;, &ldquo;thought&rdquo;). m is a horizontal S with a loop (&ldquo;made&rdquo;, &ldquo;commission&rdquo;), and w a dot and stroke (&ldquo;willing&rdquo;, &ldquo;sworne&rdquo;). The glosses also show that several signs are polyphonic. &Lambda; is s and t (and probably a), &gamma; is r and y, c is o and once a, and the l sign once stands for t. The code numbers are glossed too: 7&nbsp;=&nbsp;her Majesty, 10&nbsp;=&nbsp;the Lord Admiral, 15&nbsp;=&nbsp;the Duke of Parma, 16&nbsp;=&nbsp;the King of Spain.</p>
 <ul>
 <li>f. 80r: the word first taken for ARMADA (&ldquo;as usuall in all armadas&rdquo;) is <b>treaties</b>: its third sign is the 7-form e, not the m sign (re-checked 22 October 2026), so the passage reads &ldquo;as usuall yn all treaties in [?numbers], that at the treaty of [?Breda]&rdquo;. Also &ldquo;hoping theym in the [?ex]pances&rdquo;; a run with vertical word dividers ending &ldquo;<b>to these termes</b>&rdquo;; and &ldquo;[22] is so forwarde yn the <b>action</b> that he promised Q[ueen]&rdquo;. (M)</li>
 <li>f. 88r: &ldquo;15:&rdquo; is <b>the Duke of Parma</b>. The first cipher run probably begins &ldquo;[?captain] &hellip;&rdquo; before a name, &ldquo;with 40 men of […] have promised the haven of […]&rdquo;. The rest turns on signs no gloss shows. (M)</li>
 <li>f. 92r: &ldquo;4 sent by […]&rdquo; and &ldquo;of words of [?letters]&rdquo; (M); the September guess &ldquo;the Portugals&rdquo; is withdrawn.</li>
 </ul>
 <h2 id="what-stays-open"><span class="num">04</span> What stays open</h2>
-<p>The sign inventory is now fixed, so the images are no longer the obstacle. Several signs are polyphonic and a few (an L-shape and a K-shape on f. 88, the square on f. 80, the codes 4, 22 and 27) are unglossed. The next step is to transcribe the runs sign by sign from the full-resolution crops, give each sign its set of possible letters from <code>signs.tsv</code>, enumerate each cipher word&rsquo;s possible decryptions against a word list of the 1580s, and let the clear context choose.</p>
+<p>The sign inventory is now fixed, so the images are no longer the obstacle. Several signs are polyphonic and a few (an L-shape and a K-shape on f. 88, the square on f. 80, the codes 4, 22 and 27) are unglossed. The next step is to transcribe the runs sign by sign from the full-resolution crops, give each sign its set of possible letters from <code translate="no">signs.tsv</code>, enumerate each cipher word&rsquo;s possible decryptions against a word list of the 1580s, and let the clear context choose.</p>
 <h2 id="reading"><span class="num">05</span> The partial readings, letter by letter</h2>
-<p>On 22 October 2026 the clear text of ff. 80r&ndash;80v, 92r and 96v was transcribed as running English and every cipher run re-checked on the 7,200-pixel images (<code>texts/R8490_reading.md</code> and the others, with modern English). One sign was misread in September: the third sign of the f. 80r word taken for <em>armada</em> is the 7-form <em>e</em>, so the word is <em>treaties</em>, and the hostages passage now holds. The September guesses graded I are withdrawn. The cipher runs (in italics in the reading files) still give scattered words, so all four letters remain decoded, not read; [&hellip;] marks an unread run, [?word] a word only partly carried.</p>
+<p>On 22 October 2026 the clear text of ff. 80r&ndash;80v, 92r and 96v was transcribed as running English and every cipher run re-checked on the 7,200-pixel images (<code translate="no">texts/R8490_reading.md</code> and the others, with modern English). One sign was misread in September: the third sign of the f. 80r word taken for <em>armada</em> is the 7-form <em>e</em>, so the word is <em>treaties</em>, and the hostages passage now holds. The September guesses graded I are withdrawn. The cipher runs (in italics in the reading files) still give scattered words, so all four letters remain decoded, not read; [&hellip;] marks an unread run, [?word] a word only partly carried.</p>
 <ul>
 <li><b>f. 80r (5 May):</b> &ldquo;Touching hostages, yt ys honorable for [7] to […] their surety to these termes, as usuall yn all treaties in [?numbers], that at the treaty of [?Breda], which was the 20&rdquo;; &ldquo;[22] is so forwarde yn the action that he promised Q[ueen] to send to […] [27]&rdquo;; f. 80v &ldquo;[22] hath a desire to retourne from theym&rdquo;.</li>
 <li><b>f. 88r:</b> &ldquo;There ys captayne Mongomery of latt gone into Schotland. [?captain] […] with 40 men of […] have promised the haven of […] […] yn […] there to [15]&rdquo;; &ldquo;Italians [?arriving] […] [?Naples] Antonio&rdquo;.</li>
@@ -117,7 +117,7 @@
 <h3>R8490, ff. 80-81, Ostend 5 May 1588 <span class="st stuck">decoded, not read</span></h3>
 <p>Lord Cobham, one of Elizabeth&#x27;s commissioners for the Bourbourg peace talks with Parma&#x27;s deputies, writes to Walsingham from Ostend in clear English with short cipher passages; Julio Romeo, Cristophero Mondragon and Doctor Dale are named in clear, and the cipher words concern hostages, the haven and the armada.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/runs.txt">runs.txt</a></p><pre># Sign-level transcription of the cipher runs in the four Cobham letters (Harley 287), from full-resolution crops.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/runs.txt">runs.txt</a></p><pre translate="no"># Sign-level transcription of the cipher runs in the four Cobham letters (Harley 287), from full-resolution crops.
 # One run per line:  folio | clear text before | cipher words (space-separated) | clear text after
 # Sign codes (see signs.tsv for the glossed evidence):
 #   U cup (a)          A caret ∧ (s t a)     + (b)        8 (c)          D ∞ (d)        T barred t ŧ (d t)
@@ -152,7 +152,7 @@ f92c | and | 8lIUV Icn Ucn | sent by
 f92d | imprisoned in | V+c?7A | it is reported that they have
 f92e | it is reported that they have | 8hcV? |
 f92f | of | l7AA:IVA | which</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/READING.md">READING.md</a></p><pre># Cobham to Walsingham, May–June 1588 (Harley 287): consolidated reading, 21 Sept 2026
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/READING.md">READING.md</a></p><pre translate="no"># Cobham to Walsingham, May–June 1588 (Harley 287): consolidated reading, 21 Sept 2026
 
 Deciphered words in **bold** with grades (H sign-certain + solver exact; M one sign or 1–2 edits; I guess).
 Code numbers glossed on f. 79: 7 = the Queen, 10 = Lord Admiral, 15 = Duke of Parma, 16 = King of Spain.
@@ -202,7 +202,7 @@ Code numbers glossed on f. 79: 7 = the Queen, 10 = Lord Admiral, 15 = Duke of Pa
 Read in part: the key and sign inventory are fixed, the code numbers glossed, and about a third of the cipher words
 read with grade H or M. The rest are unread because their signs could not be resolved confidently from the scans:
 the ∧ and γ signs stand for several letters, and a few signs are glossed nowhere.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/reading_ff80_92_96_full.md">reading_ff80_92_96_full.md</a></p><pre># Cobham to Walsingham: full-resolution re-read of ff. 80r, 81r, 92r, 96v (cipher runs)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/reading_ff80_92_96_full.md">reading_ff80_92_96_full.md</a></p><pre translate="no"># Cobham to Walsingham: full-resolution re-read of ff. 80r, 81r, 92r, 96v (cipher runs)
 
 Grades: H certain, M one doubtful sign / 1-2 edits, I guess. Sign codes as in runs.txt.
 
@@ -259,7 +259,7 @@ L4 &quot;caried **of** (cH, H) **letters** (ϕLAAALVA: l-e-t-t-(t)-e-r-s, same s
 L8 &quot;that he had **written?** (·\VLAAATn: w-r-e-t-t-(t/e)-n, one carries a tilde; I) [**AnAAT7nӾ ϕ7nc** unread: s-n-s-s-d-e-n-g / l-e-n-o] is fully ...&quot;
 
 f.96v counts: H 3 (the, of, for), M 8 (passed, within, France, servants, priests, letters, the, people), I 4 (by, serves, Roper, written), unread 8 sign groups (incl. ⊥ϸcn, possibly &quot;Iohn&quot;).</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/texts/R8490_reading.md">R8490_reading.md</a></p><pre># R8490 — Lord Cobham to Walsingham, Ostend, 5 May 1588 (BL Harley MS 287 ff. 80r-80v) — reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/texts/R8490_reading.md">R8490_reading.md</a></p><pre translate="no"># R8490 — Lord Cobham to Walsingham, Ostend, 5 May 1588 (BL Harley MS 287 ff. 80r-80v) — reading
 
 Rests on: the clear text transcribed on 22 Oct 2026 from the DECODE images IMG_R8490_I39188_P1 (f. 80r) and P2 (f. 80v),
 7,200 px per page (the main checkout&#x27;s `tmp/cobham/`, BL images, not committed), read in strips at 0.45x and the cipher at
@@ -323,7 +323,7 @@ Yowr very loving frend, W. Cobham
   *haven* (h-[a]-v-e-n, the a-sign not written).
 * f. 80v l. 1-2 `∞7Λ⊥VL ΛcV7ΛcV:ǂǂ … VӾΛΛVc⊥ǂǂ-8`: *desire* *to retourne* (Λc to + r-e-t-o-u-r-n, the run written without a
   bar); `VӾΛΛVc⊥ǂǂ-8` r-?-s-t-r-a-i-n-b-c: *[?restrained]*, the second sign and the ending unexplained.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/texts/R8490_en.md">R8490_en.md</a></p><pre># R8490 — Lord Cobham to Walsingham, Ostend, 5 May 1588 — modern English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/texts/R8490_en.md">R8490_en.md</a></p><pre translate="no"># R8490 — Lord Cobham to Walsingham, Ostend, 5 May 1588 — modern English
 
 Modernised version of `R8490_reading.md`, with the same holes. Passages in cipher in the original are in *italics*.
 
@@ -357,7 +357,7 @@ Your very loving friend, W. Cobham</pre></details>
 <h3>R8492, f. 88, undated 1588 <span class="st stuck">decoded, not read</span></h3>
 <p>The densest cipher of the four letters: captain Montgomery has lately gone into Scotland with 40 men, a haven has been promised to Parma (code 15), Italians are arriving, and other Scotsmen are coming; the clear lower half reports Parma&#x27;s commissioners and 80 sail with saddles, bridles, boots and spurs.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/runs.txt">runs.txt</a></p><pre># Sign-level transcription of the cipher runs in the four Cobham letters (Harley 287), from full-resolution crops.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/runs.txt">runs.txt</a></p><pre translate="no"># Sign-level transcription of the cipher runs in the four Cobham letters (Harley 287), from full-resolution crops.
 # One run per line:  folio | clear text before | cipher words (space-separated) | clear text after
 # Sign codes (see signs.tsv for the glossed evidence):
 #   U cup (a)          A caret ∧ (s t a)     + (b)        8 (c)          D ∞ (d)        T barred t ŧ (d t)
@@ -392,7 +392,7 @@ f92c | and | 8lIUV Icn Ucn | sent by
 f92d | imprisoned in | V+c?7A | it is reported that they have
 f92e | it is reported that they have | 8hcV? |
 f92f | of | l7AA:IVA | which</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/READING.md">READING.md</a></p><pre># Cobham to Walsingham, May–June 1588 (Harley 287): consolidated reading, 21 Sept 2026
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/READING.md">READING.md</a></p><pre translate="no"># Cobham to Walsingham, May–June 1588 (Harley 287): consolidated reading, 21 Sept 2026
 
 Deciphered words in **bold** with grades (H sign-certain + solver exact; M one sign or 1–2 edits; I guess).
 Code numbers glossed on f. 79: 7 = the Queen, 10 = Lord Admiral, 15 = Duke of Parma, 16 = King of Spain.
@@ -442,7 +442,7 @@ Code numbers glossed on f. 79: 7 = the Queen, 10 = Lord Admiral, 15 = Duke of Pa
 Read in part: the key and sign inventory are fixed, the code numbers glossed, and about a third of the cipher words
 read with grade H or M. The rest are unread because their signs could not be resolved confidently from the scans:
 the ∧ and γ signs stand for several letters, and a few signs are glossed nowhere.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/reading_f88_full.md">reading_f88_full.md</a></p><pre># f.88 fuller pass (21 Sept 2026) - PARTIAL, lines 1-11 only
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/reading_f88_full.md">reading_f88_full.md</a></p><pre translate="no"># f.88 fuller pass (21 Sept 2026) - PARTIAL, lines 1-11 only
 Line numbers follow the deskewed page. Sign codes as in runs.txt. Grades H/M/I; [...] unread.
 
 L1: There is captain Montgomery ... 8AAkwTn (captain? M, prior) Kc?llApcV [...] with 40 men of [pc8cn...] have promised the p[...]
@@ -473,7 +473,7 @@ L20: delivered to be ... whether yt maye be taken and sent   [clear]
 
 Counts for lines 12-20 cipher words: H 0, M 0, I 3 (ten, ten/tone, deny), unread 4 (HVcnnG:, cp-IQ--V, TnnAVV, and the prefix of L19&#x27;s first group).
 Note: the recurring group &quot;Tnn&quot; (L12, L17 interlineation, L19 twice) is probably one sign cluster misread as T + n n; recheck at higher zoom before trusting any of these.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/reading_f88.md">reading_f88.md</a></p><pre># f. 88 (DECODE R8492), working reading, 21 Sept 2026
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/reading_f88.md">reading_f88.md</a></p><pre translate="no"># f. 88 (DECODE R8492), working reading, 21 Sept 2026
 
 Clear text in roman, deciphered words in **bold**, unread runs as […]. Grades: H certain from signs + solver exact,
 M one sign doubtful or 1–2 edits, I guess.
@@ -487,7 +487,7 @@ there are coming of other Scottishmen **divers** (H) … **soldiers(?)** (I) …
 
 Grades show how little of the line is secure: the letter is read in part. Clear-text lines 4–9 were read from the
 deskewed page (tmp/cobham/f88_deskew.png, rotation −1.75°).</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/texts/R8492_reading.md">R8492_reading.md</a></p><pre># R8492 — Lord Cobham to Walsingham, [Ostend, May 1588] (BL Harley MS 287 f. 88r) — partial reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/texts/R8492_reading.md">R8492_reading.md</a></p><pre translate="no"># R8492 — Lord Cobham to Walsingham, [Ostend, May 1588] (BL Harley MS 287 f. 88r) — partial reading
 
 Rests on: the 21 Sept sign transcription and line readings (`../reading_f88_full.md`, `../runs.txt`, `../solve_out.txt`),
 re-checked line by line on 22 Oct 2026 against the DECODE image IMG_R8492_I39196_P1 (7,200 px; main checkout
@@ -523,7 +523,7 @@ ys the Landers, with saddelles, bryddelles, bootes and spurres with [?] made rea
 * l. 6-7 `cl··7VΛcn` *[?divers]*; `n:·x··` *[?number] of*. Every other run of the page (`T7HLVTA`, `p7nATcn`, `7nIAIAT`,
   `Tnn HVcnnG`, `cp-IQ--V`, `TnnAVV`) gives no word with the glossed sign values; the 22 Oct look at the image did not
   change any reading. The clear text of the lower half is as read on 21 Sept, checked on the image.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/texts/R8492_en.md">R8492_en.md</a></p><pre># R8492 — Lord Cobham to Walsingham, [Ostend, May 1588] — modern English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/texts/R8492_en.md">R8492_en.md</a></p><pre translate="no"># R8492 — Lord Cobham to Walsingham, [Ostend, May 1588] — modern English
 
 Modernised version of `R8492_reading.md`, with the same holes. Passages in cipher in the original are in *italics*.
 
@@ -542,7 +542,7 @@ delivered to be […] whether it may be taken and sent over.</pre></details>
 <h3>R8495, ff. 92-93, 27 May 1588 <span class="st stuck">decoded, not read</span></h3>
 <p>News from Cobham to Walsingham: the Armada still at Lisbon, Gonzaga, 200 mariners at Sluys; the cipher passages mention men imprisoned in Bruges, letters, the ancient of Newport and Irish noblemen.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/runs.txt">runs.txt</a></p><pre># Sign-level transcription of the cipher runs in the four Cobham letters (Harley 287), from full-resolution crops.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/runs.txt">runs.txt</a></p><pre translate="no"># Sign-level transcription of the cipher runs in the four Cobham letters (Harley 287), from full-resolution crops.
 # One run per line:  folio | clear text before | cipher words (space-separated) | clear text after
 # Sign codes (see signs.tsv for the glossed evidence):
 #   U cup (a)          A caret ∧ (s t a)     + (b)        8 (c)          D ∞ (d)        T barred t ŧ (d t)
@@ -577,7 +577,7 @@ f92c | and | 8lIUV Icn Ucn | sent by
 f92d | imprisoned in | V+c?7A | it is reported that they have
 f92e | it is reported that they have | 8hcV? |
 f92f | of | l7AA:IVA | which</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/READING.md">READING.md</a></p><pre># Cobham to Walsingham, May–June 1588 (Harley 287): consolidated reading, 21 Sept 2026
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/READING.md">READING.md</a></p><pre translate="no"># Cobham to Walsingham, May–June 1588 (Harley 287): consolidated reading, 21 Sept 2026
 
 Deciphered words in **bold** with grades (H sign-certain + solver exact; M one sign or 1–2 edits; I guess).
 Code numbers glossed on f. 79: 7 = the Queen, 10 = Lord Admiral, 15 = Duke of Parma, 16 = King of Spain.
@@ -627,7 +627,7 @@ Code numbers glossed on f. 79: 7 = the Queen, 10 = Lord Admiral, 15 = Duke of Pa
 Read in part: the key and sign inventory are fixed, the code numbers glossed, and about a third of the cipher words
 read with grade H or M. The rest are unread because their signs could not be resolved confidently from the scans:
 the ∧ and γ signs stand for several letters, and a few signs are glossed nowhere.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/reading_ff80_92_96_full.md">reading_ff80_92_96_full.md</a></p><pre># Cobham to Walsingham: full-resolution re-read of ff. 80r, 81r, 92r, 96v (cipher runs)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/reading_ff80_92_96_full.md">reading_ff80_92_96_full.md</a></p><pre translate="no"># Cobham to Walsingham: full-resolution re-read of ff. 80r, 81r, 92r, 96v (cipher runs)
 
 Grades: H certain, M one doubtful sign / 1-2 edits, I guess. Sign codes as in runs.txt.
 
@@ -684,7 +684,7 @@ L4 &quot;caried **of** (cH, H) **letters** (ϕLAAALVA: l-e-t-t-(t)-e-r-s, same s
 L8 &quot;that he had **written?** (·\VLAAATn: w-r-e-t-t-(t/e)-n, one carries a tilde; I) [**AnAAT7nӾ ϕ7nc** unread: s-n-s-s-d-e-n-g / l-e-n-o] is fully ...&quot;
 
 f.96v counts: H 3 (the, of, for), M 8 (passed, within, France, servants, priests, letters, the, people), I 4 (by, serves, Roper, written), unread 8 sign groups (incl. ⊥ϸcn, possibly &quot;Iohn&quot;).</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/texts/R8495_reading.md">R8495_reading.md</a></p><pre># R8495 — Lord Cobham to Walsingham, &quot;Belgia&quot;, 27 May 1588 (BL Harley MS 287 f. 92r) — partial reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/texts/R8495_reading.md">R8495_reading.md</a></p><pre translate="no"># R8495 — Lord Cobham to Walsingham, &quot;Belgia&quot;, 27 May 1588 (BL Harley MS 287 f. 92r) — partial reading
 
 Rests on: the clear text transcribed on 22 Oct 2026 from the DECODE image IMG_R8495_I39207_P1 (7,200 px; main checkout
 `tmp/cobham/`, not committed) in ten strips at 0.42x; the cipher signs as transcribed on 21 Sept at full resolution
@@ -730,7 +730,7 @@ the K[ing] ys loked for at Roan; the D[uke] of Guyse hath taken […]
   guess (the ϑ is not m) and stays a hole.
 * All other runs of the page (about 20 sign groups, listed in `../reading_ff80_92_96_full.md`) give no word; the 22 Oct
   look at the strips changed none of them.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/texts/R8495_en.md">R8495_en.md</a></p><pre># R8495 — Lord Cobham to Walsingham, &quot;Belgia&quot;, 27 May 1588 — modern English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/texts/R8495_en.md">R8495_en.md</a></p><pre translate="no"># R8495 — Lord Cobham to Walsingham, &quot;Belgia&quot;, 27 May 1588 — modern English
 
 Modernised version of `R8495_reading.md`, with the same holes. Passages in cipher in the original are in *italics*.
 
@@ -759,7 +759,7 @@ of Guise has taken […]</pre></details>
 <h3>R8496, ff. 96-97, Bourbourg 9 June 1588 <span class="st stuck">decoded, not read</span></h3>
 <p>Cobham at Bourbourg (&quot;Binborow&quot;), 9 June 1588, with scattered cipher words; those read include &quot;passed&quot;, &quot;within France&quot;, &quot;servants&quot;, &quot;priests&quot; and &quot;of letters for the people&quot;.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/reading_f96v.md">reading_f96v.md</a></p><pre># f. 96v (DECODE R8496, Bourbourg 9 June 1588), cipher lines at the head: working reading
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/reading_f96v.md">reading_f96v.md</a></p><pre translate="no"># f. 96v (DECODE R8496, Bourbourg 9 June 1588), cipher lines at the head: working reading
 
 Line 1: Λϑ7ŧVϕϕLcH ·\7ΩΛγϑ·· Vϑz+o ϑ∪ΛΛŧ∞ – X yn Bruges&#x27; works overthrown …
         **passed** (M; ϑ=p, ŧ=e) … &quot;in Bruges works overthrown&quot; clear.
@@ -769,7 +769,7 @@ Line 3: [clear] and of his ɔV··7ǂǂΛ ⊥ϑcǂǂ ϕV7XɔΛ a letter …
         **servants** (M; ɔ=s) … **priests** (M) …
 Line 4: … ·7ǂǂΛ7Vϑ ϕ·IV ·· 8ŧ and that shortly …  (unread)
 Line 8: … ΛΛΛ·· 7ǂǂΛ ⊥ϑcǂǂ …  **seventy** (M, solver exact A7:7nAI) …</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/READING.md">READING.md</a></p><pre># Cobham to Walsingham, May–June 1588 (Harley 287): consolidated reading, 21 Sept 2026
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/READING.md">READING.md</a></p><pre translate="no"># Cobham to Walsingham, May–June 1588 (Harley 287): consolidated reading, 21 Sept 2026
 
 Deciphered words in **bold** with grades (H sign-certain + solver exact; M one sign or 1–2 edits; I guess).
 Code numbers glossed on f. 79: 7 = the Queen, 10 = Lord Admiral, 15 = Duke of Parma, 16 = King of Spain.
@@ -819,7 +819,7 @@ Code numbers glossed on f. 79: 7 = the Queen, 10 = Lord Admiral, 15 = Duke of Pa
 Read in part: the key and sign inventory are fixed, the code numbers glossed, and about a third of the cipher words
 read with grade H or M. The rest are unread because their signs could not be resolved confidently from the scans:
 the ∧ and γ signs stand for several letters, and a few signs are glossed nowhere.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/reading_ff80_92_96_full.md">reading_ff80_92_96_full.md</a></p><pre># Cobham to Walsingham: full-resolution re-read of ff. 80r, 81r, 92r, 96v (cipher runs)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/reading_ff80_92_96_full.md">reading_ff80_92_96_full.md</a></p><pre translate="no"># Cobham to Walsingham: full-resolution re-read of ff. 80r, 81r, 92r, 96v (cipher runs)
 
 Grades: H certain, M one doubtful sign / 1-2 edits, I guess. Sign codes as in runs.txt.
 
@@ -876,7 +876,7 @@ L4 &quot;caried **of** (cH, H) **letters** (ϕLAAALVA: l-e-t-t-(t)-e-r-s, same s
 L8 &quot;that he had **written?** (·\VLAAATn: w-r-e-t-t-(t/e)-n, one carries a tilde; I) [**AnAAT7nӾ ϕ7nc** unread: s-n-s-s-d-e-n-g / l-e-n-o] is fully ...&quot;
 
 f.96v counts: H 3 (the, of, for), M 8 (passed, within, France, servants, priests, letters, the, people), I 4 (by, serves, Roper, written), unread 8 sign groups (incl. ⊥ϸcn, possibly &quot;Iohn&quot;).</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/reading_f96v.md">reading_f96v.md</a></p><pre># f. 96v (DECODE R8496, Bourbourg 9 June 1588), cipher lines at the head: working reading
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/reading_f96v.md">reading_f96v.md</a></p><pre translate="no"># f. 96v (DECODE R8496, Bourbourg 9 June 1588), cipher lines at the head: working reading
 
 Line 1: Λϑ7ŧVϕϕLcH ·\7ΩΛγϑ·· Vϑz+o ϑ∪ΛΛŧ∞ – X yn Bruges&#x27; works overthrown …
         **passed** (M; ϑ=p, ŧ=e) … &quot;in Bruges works overthrown&quot; clear.
@@ -886,7 +886,7 @@ Line 3: [clear] and of his ɔV··7ǂǂΛ ⊥ϑcǂǂ ϕV7XɔΛ a letter …
         **servants** (M; ɔ=s) … **priests** (M) …
 Line 4: … ·7ǂǂΛ7Vϑ ϕ·IV ·· 8ŧ and that shortly …  (unread)
 Line 8: … ΛΛΛ·· 7ǂǂΛ ⊥ϑcǂǂ …  **seventy** (M, solver exact A7:7nAI) …</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/texts/R8496_reading.md">R8496_reading.md</a></p><pre># R8496 — Lord Cobham to Walsingham, Bourbourg (&quot;Binborow&quot;), 9 June 1588 (BL Harley MS 287 ff. 96r-96v) — partial reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/texts/R8496_reading.md">R8496_reading.md</a></p><pre translate="no"># R8496 — Lord Cobham to Walsingham, Bourbourg (&quot;Binborow&quot;), 9 June 1588 (BL Harley MS 287 ff. 96r-96v) — partial reading
 
 Rests on: the DECODE images IMG_R8496_I39208_P1-P3 (7,200 px; main checkout `tmp/cobham/`, not committed). f. 96r is
 wholly in clear (news from France: the D. of Longueville, d&#x27;Epernon, the barricades and Rouen) and is not transcribed
@@ -928,7 +928,7 @@ which […] yt ys thought that they shall doo rather us [?harm]: for all our fre
   unread. In the reading *for* and *the* are plain (H-c-V, A-ϸ-T with ŧ = e).
 * l. 7 `·\VLAAATn` *[?written]* (a tilde over one sign), `AnAAT7nӾ ϕ7nc` unread; l. 8 `ӾVϸǂǂΛ⊥ΛV7⊥V∪` and `·⊥Λ∪L`,
   l. 9 `ǂǂϕ⊥8LΛT··V`, l. 11 `8·7ϕΛcΛǂǂ -⊃V·ΛǂǂX`: no word with the glossed values (22 Oct, on the strips).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/texts/R8496_en.md">R8496_en.md</a></p><pre># R8496 — Lord Cobham to Walsingham, Bourbourg, 9 June 1588 — modern English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/texts/R8496_en.md">R8496_en.md</a></p><pre translate="no"># R8496 — Lord Cobham to Walsingham, Bourbourg, 9 June 1588 — modern English
 
 Modernised version of `R8496_reading.md`, with the same holes. Passages in cipher in the original are in *italics*.
 

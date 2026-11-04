@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">878 &middot; 1117 813 &middot; 1138 &middot; 583 &middot; 578 &middot; 888 &middot; 878 &middot; 945 864<br>le danger de la religion, mais le peuple<br>de = 219 1018 1138 &middot; la = 583 382 &middot; que = 197 194 &middot; M. = 196 &middot; vous = 569 &middot; 13 = full stop</div>
+  <div class="cipherstrip" translate="no">878 &middot; 1117 813 &middot; 1138 &middot; 583 &middot; 578 &middot; 888 &middot; 878 &middot; 945 864<br>le danger de la religion, mais le peuple<br>de = 219 1018 1138 &middot; la = 583 382 &middot; que = 197 194 &middot; M. = 196 &middot; vous = 569 &middot; 13 = full stop</div>
   <p class="kicker">The Hague &rarr; Versailles &middot; numerical word-and-syllable code of about 1,200 groups &middot; January 1757 &ndash; January 1758</p>
   <h1>The comte d&rsquo;Affry&rsquo;s intercepted letters, 1757&ndash;58</h1>
 <div class="parties"><figure class="party recipient"><img src="portrait_cardinal-de-bernis.jpg" alt="Cardinal de Bernis" title="Cardinal de Bernis: Portrait, Château de Versailles (MV 2986). Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Cardinal de Bernis</figcaption></figure></div><!-- /parties -->
@@ -134,10 +134,10 @@
 
 <h2 id="open"><span class="num">05</span> What remains open</h2>
 <ul>
-<li><b>Re-measured 5 October 2026.</b> The 21 September figure (86%) counted every group that had a value. A sense measure (<code>measure_sense.py</code>) now counts a group only if its nine-group window reads as French: <strong>89.0%</strong> of the 9,306 groups in this code (Lyonet&rsquo;s eight letters counted as read; rerun 14 October 2026 without R1071, which is in another code and was counted unread until then, giving 82.3%). Four letters were re-transcribed from the images, which recovered the copyist&rsquo;s looped 8 that DECODE reads as 0 and 135 groups the earlier parse had lost: R1072 0.66 &rarr; 0.89, R1067 0.66 &rarr; 0.79, R1074 0.70 &rarr; 0.75, R1064 0.77 &rarr; 0.81. Pooling every occurrence fixed eighteen more code values (<i>lui</i>, <i>dit</i>, <i>faire</i>, <i>&Eacute;cosse</i>, <i>la Gouvernante</i> &hellip;).</li>
+<li><b>Re-measured 5 October 2026.</b> The 21 September figure (86%) counted every group that had a value. A sense measure (<code translate="no">measure_sense.py</code>) now counts a group only if its nine-group window reads as French: <strong>89.0%</strong> of the 9,306 groups in this code (Lyonet&rsquo;s eight letters counted as read; rerun 14 October 2026 without R1071, which is in another code and was counted unread until then, giving 82.3%). Four letters were re-transcribed from the images, which recovered the copyist&rsquo;s looped 8 that DECODE reads as 0 and 135 groups the earlier parse had lost: R1072 0.66 &rarr; 0.89, R1067 0.66 &rarr; 0.79, R1074 0.70 &rarr; 0.75, R1064 0.77 &rarr; 0.81. Pooling every occurrence fixed eighteen more code values (<i>lui</i>, <i>dit</i>, <i>faire</i>, <i>&Eacute;cosse</i>, <i>la Gouvernante</i> &hellip;).</li>
 <li>R1071 (4 August 1757, to Stainville in Vienna) is in a different code: <a href="affry1757c.html">its own page</a>.</li>
 <li>Per letter, 5&ndash;12% of groups stay open (listed as [n] in each decryption file). R1072 gives only about two thirds in sense: its copy is the worst transcribed.</li>
-<li>Grades: values forced by a decipherment are H; values inferred from context in the letters without a decipherment are M or ? and listed with their evidence in <code>read/R*_new.tsv</code>. 56 groups of the key are ambiguous between two values (<code>amb_M.json</code>).</li>
+<li>Grades: values forced by a decipherment are H; values inferred from context in the letters without a decipherment are M or ? and listed with their evidence in <code translate="no">read/R*_new.tsv</code>. 56 groups of the key are ambiguous between two values (<code translate="no">amb_M.json</code>).</li>
 <li>The eight decipherments themselves are Lyonet&rsquo;s. The contribution here is the key and the decryption of the nine letters that have none on DECODE.</li>
 </ul>
 <div class="callout"><strong>Contributed, 21 October 2026.</strong> <a href="https://github.com/WAINUTAI">WAINUT</a>, a Dutch AI company, found that the clear text of all ten letters without a Lyonet sheet is digitised after all: clerks&rsquo; copies in the Fagel registers, Nationaal Archief 1.10.29 inv. 5186 (1757) and 5187 (1758), in date order with number and addressee (<a href="https://github.com/dbourdeau/cyphersolver/pull/65">pull request #65</a>). Aligned against them, this key gives the register&rsquo;s word for 4,333 of 5,554 keyed groups (78%), against at most 21% for shuffled keys; the per-letter figures were re-run here and reproduce. The registers were found after the decryption and were not used for it: the 89% is a reading from the key alone. They settle open groups (<i>projets</i>, <i>lundi</i>, <i>mardi</i>, <i>l&agrave; dessus</i> &hellip;), contradict some key values (675 is <i>vingt</i>, not <i>deux</i>; 1106 <i>froid</i>, not <i>succ&egrave;s</i>; 992 is <i>-er</i>, not <i>des</i>, at all eleven places) and correct the 25 January letter in about ten places.</div>
@@ -150,7 +150,7 @@
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>R1052</h3>
 <p>Lyonet&#x27;s contemporary clear decipherment, imaged on the DECODE record and transcribed here.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/decode/DOC_R1052_D1853_1853.txt">DOC_R1052_D1853_1853.txt</a></p><pre>#CIPHERTEXT
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/decode/DOC_R1052_D1853_1853.txt">DOC_R1052_D1853_1853.txt</a></p><pre translate="no">#CIPHERTEXT
 #CATALOG NAME: KHA_A31_PWW_inr192_L.A._d’Affry_to_A.L.Rouille_1757-02-08
 #IMAGE NAME: 5505.png - 5506.png
 #TRANSCRIBER NAME: HJ
@@ -199,8 +199,8 @@
 &lt;CLEARTEXT FR si ces propos ont été veritablement tenus, et en ce cas&gt;
 &lt;CLEARTEXT FR je ne perdrai pas un instant à demander que cet jnsensé&gt;
 &lt;CLEARTEXT FR soit enfermé dans, la Maison des fous.&gt;</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1052.txt">R1052.txt</a></p><pre>Je ne peux me dispenser de vous faire part d&#x27;un bruit sourd qui s&#x27;est repandu ici, d&#x27;une pretendue prophetie faite par un homme habitant à Amsterdam, qui en disant à Mr Thomas Hop que le vaisseau dont il etoit en peine n&#x27;avoit point été pris par les Anglois; mais qu&#x27;il avoit peri à telle hauteur, ajoute, qu&#x27;il savoit aussi qu&#x27;on devoit attenter aux jours de Sa Majesté le 15 de ce mois. Je saurai dès demain si ces propos ont été veritablement tenus, et en ce cas je ne perdrai pas un instant à demander que cet insensé soit enfermé dans la maison des fous.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1052_en.md">R1052_en.md</a></p><pre>&lt;!-- English translation of plain/R1052.txt (Claude Opus 5.5, 23 Oct 2026): Lyonet&#x27;s contemporary clear decipherment of d&#x27;Affry&#x27;s ciphered passage, imaged on the DECODE record R1052 and transcribed here. --&gt;
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1052.txt">R1052.txt</a></p><pre translate="no">Je ne peux me dispenser de vous faire part d&#x27;un bruit sourd qui s&#x27;est repandu ici, d&#x27;une pretendue prophetie faite par un homme habitant à Amsterdam, qui en disant à Mr Thomas Hop que le vaisseau dont il etoit en peine n&#x27;avoit point été pris par les Anglois; mais qu&#x27;il avoit peri à telle hauteur, ajoute, qu&#x27;il savoit aussi qu&#x27;on devoit attenter aux jours de Sa Majesté le 15 de ce mois. Je saurai dès demain si ces propos ont été veritablement tenus, et en ce cas je ne perdrai pas un instant à demander que cet insensé soit enfermé dans la maison des fous.</pre></details>
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1052_en.md">R1052_en.md</a></p><pre translate="no">&lt;!-- English translation of plain/R1052.txt (Claude Opus 5.5, 23 Oct 2026): Lyonet&#x27;s contemporary clear decipherment of d&#x27;Affry&#x27;s ciphered passage, imaged on the DECODE record R1052 and transcribed here. --&gt;
 
 # R1052, d&#x27;Affry, The Hague, 1757: English translation of the contemporary decipherment
 
@@ -211,7 +211,7 @@ Majesty&#x27;s life on the 15th of this month. I shall know by tomorrow whether 
 case I shall not lose an instant in asking that this madman be shut up in the madhouse.</pre></details>
 <h3>R1053</h3>
 <p>Lyonet&#x27;s contemporary clear decipherment, imaged on the DECODE record and transcribed here.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/decode/DOC_R1053_D1876_1876.txt">DOC_R1053_D1876_1876.txt</a></p><pre>﻿#CIPHERTEXT
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/decode/DOC_R1053_D1876_1876.txt">DOC_R1053_D1876_1876.txt</a></p><pre translate="no">﻿#CIPHERTEXT
 #CATALOG NAME: KHA_A31_PWV_inr192_L.A._d&#x27;Affry_to_A.L._Rouillé_1757-02-11
 #IMAGE NAME : 5507.png - 5510.png
 #TRANSCRIBER NAME: FK
@@ -329,8 +329,8 @@ case I shall not lose an instant in asking that this madman be shut up in the ma
 9 7 9 .  9 3 8 .  9 6 6 .  1 1 3 4 .  1 0 1 8 . 9 4 1 .  5 2 7 .  5 7 4 .  1 0 9 6 . 
 5 8 3 .  6 7 .  2 1 9 . 8 2 8 .  3 1 . 8 6 5 .  5 8 2 .  8 7 5 .  2 1 9 .  5 6 9 .  
 8 9 7 .  9 9 2 .  1 3 .</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1053.txt">R1053.txt</a></p><pre>Il est arrivé hier ici un courrier de Mr de Haren, Ministre de la Republique à Bruxelles, par lequel ce Ministre donne avis de la marche de l&#x27;Armée du Roi, composée de Nonante Mille hommes. Cette nouvelle a dabord allarmé, et quelques Republicains sont venus me demander si je le savois. Je les ai assuré que non; et je leur ai dit que vous ne manqueriez pas de me mettre en état de notifier aux Ministres de la Republique la marche de cette armée, et de témoigner en même tems à Leurs Hautes Puissances la droiture des intentions de Sa Majesté à leur égard. J&#x27;ai ajouté que si le courrier que j&#x27;attendois m&#x27;en aportoit la nouvelle, j&#x27;en ferois part sur le champ, et que si vous ne me le marquiez pas on pouvoit compter que cette nouvelle n&#x27;étoit qu&#x27;un panneau du parti anglois pour alterer notre confiance mutuelle, mais j&#x27;esperois que l&#x27;on n&#x27;en seroit la duppe. Vous jugez, Mr, combien il est important que je sois instruit de bonne heure de tout ce que Sa Majesté jugera devoir être communiqué ici. Mr Burdin, qui m&#x27;a porté une lettre de vous de recommandation, s&#x27;est informé depuis Anvers jusqu&#x27;ici et dans les differentes routes qu&#x27;il a fait en Hollande d&#x27;un officier Suisse au service des Etats Generaux, nommé Ficher. Cet officier est parti il y a quelques jours pour Paris accompagné d&#x27;un François arrivant d&#x27;Angleterre, qui doit avoir emprunté beaucoup d&#x27;argent à Amsterdam de la part de l&#x27;Angleterre pour faire à Paris et dans le Royaume le metier d&#x27;espion. Ce François s&#x27;appelle Meunier; mais il a traduit son nom en Anglois, et doit porter celui de Muller ou de Miller. Il y a aparence que Ficher cherchera à voir Mr Burdin par lequel on pourroit decouvrir la verité de ce que j&#x27;ai eu l&#x27;honneur de vous marquer.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1053_en.md">R1053_en.md</a></p><pre>&lt;!-- English translation of plain/R1053.txt (Claude Opus 5.5, 23 Oct 2026): Lyonet&#x27;s contemporary clear decipherment, imaged on the DECODE record R1053 and transcribed here. --&gt;
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1053.txt">R1053.txt</a></p><pre translate="no">Il est arrivé hier ici un courrier de Mr de Haren, Ministre de la Republique à Bruxelles, par lequel ce Ministre donne avis de la marche de l&#x27;Armée du Roi, composée de Nonante Mille hommes. Cette nouvelle a dabord allarmé, et quelques Republicains sont venus me demander si je le savois. Je les ai assuré que non; et je leur ai dit que vous ne manqueriez pas de me mettre en état de notifier aux Ministres de la Republique la marche de cette armée, et de témoigner en même tems à Leurs Hautes Puissances la droiture des intentions de Sa Majesté à leur égard. J&#x27;ai ajouté que si le courrier que j&#x27;attendois m&#x27;en aportoit la nouvelle, j&#x27;en ferois part sur le champ, et que si vous ne me le marquiez pas on pouvoit compter que cette nouvelle n&#x27;étoit qu&#x27;un panneau du parti anglois pour alterer notre confiance mutuelle, mais j&#x27;esperois que l&#x27;on n&#x27;en seroit la duppe. Vous jugez, Mr, combien il est important que je sois instruit de bonne heure de tout ce que Sa Majesté jugera devoir être communiqué ici. Mr Burdin, qui m&#x27;a porté une lettre de vous de recommandation, s&#x27;est informé depuis Anvers jusqu&#x27;ici et dans les differentes routes qu&#x27;il a fait en Hollande d&#x27;un officier Suisse au service des Etats Generaux, nommé Ficher. Cet officier est parti il y a quelques jours pour Paris accompagné d&#x27;un François arrivant d&#x27;Angleterre, qui doit avoir emprunté beaucoup d&#x27;argent à Amsterdam de la part de l&#x27;Angleterre pour faire à Paris et dans le Royaume le metier d&#x27;espion. Ce François s&#x27;appelle Meunier; mais il a traduit son nom en Anglois, et doit porter celui de Muller ou de Miller. Il y a aparence que Ficher cherchera à voir Mr Burdin par lequel on pourroit decouvrir la verité de ce que j&#x27;ai eu l&#x27;honneur de vous marquer.</pre></details>
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1053_en.md">R1053_en.md</a></p><pre translate="no">&lt;!-- English translation of plain/R1053.txt (Claude Opus 5.5, 23 Oct 2026): Lyonet&#x27;s contemporary clear decipherment, imaged on the DECODE record R1053 and transcribed here. --&gt;
 
 # R1053, d&#x27;Affry, The Hague, 1757: English translation of the contemporary decipherment
 
@@ -351,7 +351,7 @@ into English, and is said to go by that of Muller or Miller. It seems likely tha
 through whom one might discover the truth of what I have had the honour to tell you.</pre></details>
 <h3>R1054, 19 Jul 1757</h3>
 <p>The purpose of the Gouvernante&#x27;s (Princess Anne&#x27;s) journey to The Hague is not known. Some think she comes to push an augmentation of the land forces; her (pro-Orange / anti-French) party and even the ministers are starting to raise alarm; others say she wants a naval augmentation.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/decode/DOC_R1054_D2332_2332.txt">DOC_R1054_D2332_2332.txt</a></p><pre>#CIPHERTEXT
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/decode/DOC_R1054_D2332_2332.txt">DOC_R1054_D2332_2332.txt</a></p><pre translate="no">#CIPHERTEXT
 #CATALOG NAME: KHA_A31_PWV_inr192_L.A._d&#x27;Affry_to_F.A.d&#x27;Usson de Bonnac_1757-07-19
 #IMAGE NAME: 5511.png
 #TRANSCRIBER NAME: FL
@@ -393,7 +393,7 @@ Not sure if the single figures on row 4, 20 and 21 should replace or stand next 
 1 3 4 . 1 1 5 0 . 7 0 5 . 5 4 . 1 7 2 . 1 1 7 3 . 7 9 2 . 3 8 9 . 8 2 4 . 8 3 4 . 2 1 9 . 3 8 2 . 1 0 .
 1 1 0 8 . 1 1 5 0 . 1 1 2 7 . 1 1 3 8 . 3 9 9 . 6 7 1 . 1 1 9 . 1 0 4 5 . 1 1 3 1 . 1 7 2 . 1 9 7 . 1 0 1 8 . 9 1 3 . 3 1 4 .
 8 5 6 . 2 4 5 . 4 7 9 . 1 0 1 8 . 1 0 4 6 . 9 2 6 . 1 1 3 8 . 4 5 4 . 1 0 1 8 . 1 9 7 . 3 0 6 . 6 2 8 .</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1054.md">R1054.md</a></p><pre># R1054 — d&#x27;Affry to Bernis (&quot;B&quot;), The Hague, 19 July 1757
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1054.md">R1054.md</a></p><pre translate="no"># R1054 — d&#x27;Affry to Bernis (&quot;B&quot;), The Hague, 19 July 1757
 
 DECODE R1054 (catalogue name gives d&#x27;Usson de Bonnac as addressee), image IMG_R1054_I5511_P1, page 1 only.
 Clear heading &quot;Du 19 Juillet 1757&quot;; the whole page below it is code, 372 groups (the letter continues beyond this page).
@@ -450,7 +450,7 @@ Otherwise Fruin/Bussemaker&#x27;s quotation appears faithful.
 - Transcriber&#x27;s marks at rows 4, 20, 21 (8^6, 878^6, 7^140) not further checked; pos 44/45/273 read as transcribed.
 - Right-margin truncation likely also at row ends marked &quot;?&quot; (pos 25 &quot;4?&quot;, pos 38 &quot;750?&quot;, pos 264 &quot;75?&quot;, pos 278 &quot;800?&quot;);
   75 read as &quot;rendre&quot; fits, the others unverified. No image crops were made.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1054_reading.md">R1054_reading.md</a></p><pre># R1054 - d&#x27;Affry, The Hague, 19 July 1757 (to Bernis, &quot;B.&quot;): reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1054_reading.md">R1054_reading.md</a></p><pre translate="no"># R1054 - d&#x27;Affry, The Hague, 19 July 1757 (to Bernis, &quot;B.&quot;): reading
 
 Rests on: the contemporary clear copy of this despatch in the Fagel register, Nationaal Archief 1.10.29 inv. 5186
 scans 248R-249L (margin &quot;Dat: 19. Juïllet 1757. A: à B:&quot;), transcribed by WAINUT (21 Oct 2026,
@@ -502,7 +502,7 @@ l&#x27;Abregé dont j&#x27;ai eu l&#x27;honneur de vous parler. J&#x27;aurai cel
 - &quot;que par le [...]&quot; for the register&#x27;s &quot;que je le voudrois.&quot;: the page ends with 197 306 628 (que, par, le); 306 =
   par at 34 other places; the register&#x27;s &#x27;que je le voudrois&#x27; has no group for &#x27;je&#x27; or &#x27;voudrois&#x27; here, and the letter
   goes on on a page that is not on the DECODE record.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1054_en.md">R1054_en.md</a></p><pre>&lt;!-- English translation of read/R1054_reading.md (Claude Opus 5.5, 23 Oct 2026): the reading follows the contemporary clear copy in the Fagel register, aligned with the keyed decode; three places follow the figures. --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1054_en.md">R1054_en.md</a></p><pre translate="no">&lt;!-- English translation of read/R1054_reading.md (Claude Opus 5.5, 23 Oct 2026): the reading follows the contemporary clear copy in the Fagel register, aligned with the keyed decode; three places follow the figures. --&gt;
 
 # R1054, d&#x27;Affry to Bernis, The Hague, 19 July 1757: English translation
 
@@ -531,7 +531,7 @@ The Count of Wassenaer has not yet handed me the summary I had the honour to men
 sending it to you as soon as it reaches me.&quot;)</pre></details>
 <h3>R1062</h3>
 <p>Lyonet&#x27;s contemporary clear decipherment, imaged on the DECODE record and transcribed here.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/decode/DOC_R1062_D2263_2263.txt">DOC_R1062_D2263_2263.txt</a></p><pre>#CIPHERTEXT
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/decode/DOC_R1062_D2263_2263.txt">DOC_R1062_D2263_2263.txt</a></p><pre translate="no">#CIPHERTEXT
 #CATALOG NAME: KHA_A31_PWV_inr192_L.A._d&#x27;Affry_to_Rouillé_1757-01-13
 #IMAGE NAME: 5552.png - 5556.png
 #TRANSCRIBER NAME: EK
@@ -684,9 +684,9 @@ N*? 5 1  1 1 4 6 . 5 2 1 . 3 2 8 . 2 1 9 . 4 7 2 . 7 8 7 . 1 1 8 9 : 5 5 7 . 8 8
 6 9 5 . 2 0 8 . 1 0 . 5 8 0 . 1 0 5 7 . 1 0 1 7 . 8 3 6 . 1 0 1 7 . 6 5 0 . 5 2 7 . 1 0 1 6 . 1 0 2 0 .
 9 0 0 . 6 9 3 . 7 4 4 . 7 2 7 . 5 9 3 . 2 4 5 . 3 6 2 . 9 5 0 . 5 8 2 . 4 0 6 . 1 1 6 4 .
 8 6 8 . 8 5 6 . 5 2 1 . 7 2 9 . 5 0 . 7 8 7 . 5 2 1 .</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1062.txt">R1062.txt</a></p><pre>L&#x27;Assemblée de Hollande est commencée. On doit y agiter la question de l&#x27;augmentation, et si les debats sont vifs je serai averti à tems pour parler sans m&#x27;écarter cependant de ce que vous me prescrivez. Je sais surement que le Corps combiné qui doit s&#x27;assembler pour couvrir Hanovre, et s&#x27;il se peut la Gueldres, devoit être commandé par Mr de Cumberland, comme j&#x27;ai eu l&#x27;honneur de vous le marquer; mais le Roi de Prusse ne le veut pas. On a proposé ce Commandement au Duc Louis Wolfenbuttel Feld Marechal de la Republique, qui l&#x27;a refusé. Je suis assuré de ceci, et c&#x27;est un grand secret. Il est aisé de juger qu&#x27;on esperoit engager moyennant cela plus facilement la Republique. Le Baron de Reischach vient de me dire qu&#x27;il savoit positivement que le Roi de Prusse auroit des subsides de l&#x27;Angleterre, et que si le Ministere Anglois ne pouvoit les lui faire accorder apresent par la Nation, ce seroit tacitement qu&#x27;il les auroit.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1062.txt">R1062.txt</a></p><pre translate="no">L&#x27;Assemblée de Hollande est commencée. On doit y agiter la question de l&#x27;augmentation, et si les debats sont vifs je serai averti à tems pour parler sans m&#x27;écarter cependant de ce que vous me prescrivez. Je sais surement que le Corps combiné qui doit s&#x27;assembler pour couvrir Hanovre, et s&#x27;il se peut la Gueldres, devoit être commandé par Mr de Cumberland, comme j&#x27;ai eu l&#x27;honneur de vous le marquer; mais le Roi de Prusse ne le veut pas. On a proposé ce Commandement au Duc Louis Wolfenbuttel Feld Marechal de la Republique, qui l&#x27;a refusé. Je suis assuré de ceci, et c&#x27;est un grand secret. Il est aisé de juger qu&#x27;on esperoit engager moyennant cela plus facilement la Republique. Le Baron de Reischach vient de me dire qu&#x27;il savoit positivement que le Roi de Prusse auroit des subsides de l&#x27;Angleterre, et que si le Ministere Anglois ne pouvoit les lui faire accorder apresent par la Nation, ce seroit tacitement qu&#x27;il les auroit.
 (Je crois que dans la Lettre de Mr de Hattel, il est dit que ce Chevau Leger est Breton. Le hazard m&#x27;a amené un Negociant de Lyon qui dit être parti d&#x27;Anvers pour Breda avec un homme qui en chemin lui dit qu&#x27;il etoit ancien Mousquetaire; qu&#x27;il entroit au service du Roi de Prusse; qu&#x27;il abandonnoit une femme jeune, quatre enfans, et beaucoup de bien, parce qu&#x27;il ne pouvoit plus retourner en France; et qu&#x27;il y auroit dans peu de grands changements dans le Royaume; qu&#x27;il etoit de Saint Brieux en Bretagne; qu&#x27;il avoit voulu faciliter aux Anglois une descente dans ce Païs là; et qu&#x27;il y avoit eu des intelligences. Cet homme a donné à ce Negociant des adresses de sa main que vous trouverez dans ce Paquet, et un itineraire pour le Negociant, au cas qu&#x27;il voulût aller en Bretagne, et que celui ci m&#x27;a donné. Il a ajouté que cet homme etoit à Cologne, et qu&#x27;il viendroit peut-être à Amsterdam. Leur conversation a été le vingt huit ____ dernier en chemin et à Breda. Cet homme s&#x27;est apellé à Bruxelles Mr Delf, et il doit avoir repris son Nom de Comte d&#x27;Urvoy. Dans le trouble où je suis, je n&#x27;ai point songé à faire faire une copie de la Lettre du Baron de Hatzel; mais comme vous l&#x27;avez, vous pourrez voir si malgré la difference d&#x27;etats, cet homme est le même, ou si ce sont deux Monstres. Le Negociant de Lyon nommé Santerre est revenu cet après diné chez moi, et m&#x27;a porté l&#x27;empreinte du Cachet du Comte d&#x27;Urvoy</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1062_en.md">R1062_en.md</a></p><pre>&lt;!-- English translation of plain/R1062.txt (Claude Opus 5.5, 23 Oct 2026): Lyonet&#x27;s contemporary clear decipherment, imaged on the DECODE record R1062 and transcribed here. The blank &quot;____&quot; of the copy is kept. --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1062_en.md">R1062_en.md</a></p><pre translate="no">&lt;!-- English translation of plain/R1062.txt (Claude Opus 5.5, 23 Oct 2026): Lyonet&#x27;s contemporary clear decipherment, imaged on the DECODE record R1062 and transcribed here. The blank &quot;____&quot; of the copy is kept. --&gt;
 
 # R1062, d&#x27;Affry, The Hague, 1757: English translation of the contemporary decipherment
 
@@ -714,7 +714,7 @@ condition, this man is the same, or whether they are two monsters. The merchant 
 my house this afternoon and brought me the impression of the Comte d&#x27;Urvoy&#x27;s seal</pre></details>
 <h3>R1063</h3>
 <p>Lyonet&#x27;s contemporary clear decipherment, imaged on the DECODE record and transcribed here.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/decode/DOC_R1063_D2244_2244.txt">DOC_R1063_D2244_2244.txt</a></p><pre>#CIPHERTEXT
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/decode/DOC_R1063_D2244_2244.txt">DOC_R1063_D2244_2244.txt</a></p><pre translate="no">#CIPHERTEXT
 #CATALOG NAME: KHA_A31_PWV_inr192_L.A._d&#x27;Affry_to_Rouillé_1757-01-27
 #IMAGE NAME: 5557.png - 5560.png
 #TRANSCRIBER NAME: EK
@@ -844,9 +844,9 @@ my house this afternoon and brought me the impression of the Comte d&#x27;Urvoy&
 1 0 1 3 . 9 9 2 . 2 1 9 . 8 3 2 . 7 3 6 . 7 8 7 . 7 4 0 . 1 0 4 3 . 1 1 3 1 . 2 1 0 . 1 4 2 . 3 1 .
 5 8 3 . 1 0 1 8 . 1 1 4 8 . 7 2 9 . 2 8 9 . 1 1 2 7 . 5 2 1 . 8 2 7 . 3 0 8 . 9 2 7 . 9 9 6 . 8 3 2 .
 5 2 1 . 1 4 0 . 1 1 2 7 . 4 7 . 1 0 8 8 . 9 6 6 . 1 1 3 4 . 5 4 . 5 7 9 . 6 8 4 . 5 8 2 . 1 0 9 3 .</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1063.txt">R1063.txt</a></p><pre>N° [134] D&#x27;A. à R. Du 27 Janvier 1757
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1063.txt">R1063.txt</a></p><pre translate="no">N° [134] D&#x27;A. à R. Du 27 Janvier 1757
 J&#x27;écris aujourd&#x27;hui à Mr de Hatzel comme vous me l&#x27;ordonnez; mais je crois qu&#x27;il n&#x27;aura rien à nous reveler que de vague. Je suis persuadé que l&#x27;homme dont il nous parle n&#x27;est autre chose que le Comte d&#x27;Urvoy. On n&#x27;a point encore entendu parler de lui dans ce Païs. Les bruits de l&#x27;augmentation de Terre prennent vivement depuis avanthier au soir; à en croire le public elle va être determinée. J&#x27;ai lieu (de croire) qu&#x27;Elle ne le sera pas si tôt. Comme Mr de Reischach a la permission de sa Cour de presser plus ou moins la demande du secours, j&#x27;ai cru devoir Lui conseiller de voir les Ministres pour leur demander à quoi cette affaire en étoit. Cela a produit ce que j&#x27;en esperois; c&#x27;est à dire de l&#x27;embarras, et tout embarras est un moyen leur de retarder, et quelque fois même d&#x27;anéantir les Projets qui pourroient nous gêner. La Cour de Vienne a en main de quoi les retenir, par les questions qu&#x27;Elle peut agiter sur les Places de la Barriere, et sur tout sur l&#x27;occupation de Namur. Daignez vous rapeller ce que j&#x27;ai eu l&#x27;honneur de vous en dire; mais comme ce moyen est très delicat, je crois qu&#x27;il faut pour l&#x27;employer de concert avec Vienne, attendre que la delicatesse du moment nous y conduise; car il pourroit arriver l&#x27;evenement le plus singulier qui seroit que l&#x27;Imperatrice auroit malgré Elle une Guarnizon dans une de ces Places les plus fortes, que ces étrangers approvisionnent amplement de tout. Comme je ne suis instruit de rien, je ne puis que vous mettre sous les yeux une idée de ce qui (peut) arriver. Je ne puis croire que ce Païs manque de raison au point de vouloir s&#x27;engager et augmenter les troubles qui agitent l&#x27;Europe; mais si cela est, une explication prompte sur Namur seroit plus essentielle que je ne peux l&#x27;exprimer.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1063_en.md">R1063_en.md</a></p><pre>&lt;!-- English translation of plain/R1063.txt (Claude Opus 5.5, 23 Oct 2026): Lyonet&#x27;s contemporary clear decipherment, imaged on the DECODE record R1063 and transcribed here. Words in round brackets are the copy&#x27;s own insertions. --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1063_en.md">R1063_en.md</a></p><pre translate="no">&lt;!-- English translation of plain/R1063.txt (Claude Opus 5.5, 23 Oct 2026): Lyonet&#x27;s contemporary clear decipherment, imaged on the DECODE record R1063 and transcribed here. Words in round brackets are the copy&#x27;s own insertions. --&gt;
 
 # R1063, d&#x27;Affry to Rouillé, The Hague, 27 January 1757 (no. 134): English translation of the contemporary decipherment
 
@@ -868,7 +868,7 @@ with everything. As I am informed of nothing, I can only put before you an idea 
 that this country is so lacking in reason as to wish to commit itself and increase the troubles that agitate Europe;
 but if it is so, a prompt explanation about Namur would be more essential than I can express.</pre></details>
 <h3>R1064, 1 Feb 1757, no. 136</h3>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/transcr/R1064.txt">R1064.txt</a></p><pre># R1064 (d&#x27;Affry 1757, N.136), numeric code groups, one manuscript line per text line.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/transcr/R1064.txt">R1064.txt</a></p><pre translate="no"># R1064 (d&#x27;Affry 1757, N.136), numeric code groups, one manuscript line per text line.
 # Re-transcribed/checked from the images 5 Oct 2026 (start: DECODE DOC_R1064_D1846 via doc2tr.py).
 # Glyph rule: p.1-2 and p.5 hand writes 8 as a looped glyph and 0 as a plain small o; p.3-4 hand writes 8 as a
 # double loop (w-shaped, leading or inside a group) and 0 as a plain o; DECODE read both loops as 0. 9 looks like g,
@@ -1005,7 +1005,7 @@ but if it is so, a prompt explanation about Namur would be more essential than I
 31 878 943 1127 950 1017 282 936 380|360 265 729 460
 172 516 134 797 593 878 836 742 992 228 835 593
 31 583 130 398 856 134 377 31 885 265 9 13 107</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1064.md">R1064.md</a></p><pre># R1064 - d&#x27;Affry to Rouillé, The Hague, 1 February 1757
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1064.md">R1064.md</a></p><pre translate="no"># R1064 - d&#x27;Affry to Rouillé, The Hague, 1 February 1757
 
 No. 136 (&quot;N:136&quot;, &quot;D&#x27;A. à R.&quot;, &quot;Du 1 Février 1757&quot; in clear at the head of p.1). Five pages, IMG_R1064_I5561..I5565
 (P1-P5). **No clear copy (Lyonet decipherment) among the images**: the only clear text is the heading on 5561, the
@@ -1109,7 +1109,7 @@ herring being a bone of contention with England, estrange the two countries; he 
 the troop augmentation. This matches §§1-8 point by point and fixes 674 = 20, 981 = x (sixième), 42 = générale.
 Bussemaker (Fruin) omits the intelligence paragraphs §§3-4 and §§9-13, as his preface says he did for agents and
 intriguers.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1064_reading.md">R1064_reading.md</a></p><pre># R1064 - d&#x27;Affry, The Hague, 1 February 1757 (no. 136, to Rouillé): reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1064_reading.md">R1064_reading.md</a></p><pre translate="no"># R1064 - d&#x27;Affry, The Hague, 1 February 1757 (no. 136, to Rouillé): reading
 
 Rests on: the contemporary clear copy of this despatch in the Fagel register, Nationaal Archief 1.10.29 inv. 5186
 scans 62R-63R (margin &quot;No 136. Dat: 1. Fevrier 1757. A: à R:&quot;), transcribed by WAINUT (21 Oct 2026,
@@ -1204,7 +1204,7 @@ enfermée dans une Enveloppe addressée à Mr de Montaran. [The work:] La Verit�
   dans une Enveloppe addressée à Mr de Montaran. [The work:] La Verité des Faits.&quot; for the register&#x27;s &quot;J&#x27;espere que
   vous en Serez content. dans une Enveloppe addressée à Mr de Montaran.&quot;: the clerk&#x27;s two footnotes (63R), which the
   joiner drops because they begin with &#x27;#&#x27;.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1064_en.md">R1064_en.md</a></p><pre>&lt;!-- English translation of read/R1064_reading.md (Claude Opus 5.5, 23 Oct 2026): the reading follows the contemporary clear copy in the Fagel register, aligned with the keyed decode; where the figures give another word they are followed. --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1064_en.md">R1064_en.md</a></p><pre translate="no">&lt;!-- English translation of read/R1064_reading.md (Claude Opus 5.5, 23 Oct 2026): the reading follows the contemporary clear copy in the Fagel register, aligned with the keyed decode; where the figures give another word they are followed. --&gt;
 
 # R1064, d&#x27;Affry to Rouillé, The Hague, 1 February 1757 (no. 136): English translation
 
@@ -1256,7 +1256,7 @@ three copies of a work to which M. Rouillé d&#x27;Orfeuil gave the form and the
 Montaran. [The work:] La Vérité des Faits.</pre></details>
 <h3>R1065, 3 Feb 1757, no. 137</h3>
 <p>Lyonet&#x27;s contemporary clear decipherment, imaged on the DECODE record and transcribed here.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/transcr/R1065.txt">R1065.txt</a></p><pre># R1065 from decode\DOC_R1065_D2269_2269.txt (DECODE transcription), converted 5 Oct 2026 by doc2tr.py: leading 0 -&gt; 8; lines tagged
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/transcr/R1065.txt">R1065.txt</a></p><pre translate="no"># R1065 from decode\DOC_R1065_D2269_2269.txt (DECODE transcription), converted 5 Oct 2026 by doc2tr.py: leading 0 -&gt; 8; lines tagged
 # with paragraph marks kept. Lines marked &quot;#img&quot; were then checked against the image.
 # --- IMAGE NAME: 5566.png - 5574.png
 # --- IMAGE NAME: 5566.png
@@ -1413,7 +1413,7 @@ Montaran. [The work:] La Vérité des Faits.</pre></details>
 1088 49 1164 909 898 31 583 949 77 362 896 853 742
 593 1088 838 362 1164 495 689 31 460 839 580 362
 946 276 645 38 13 105 582 86 276 613 202 466</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1065.txt">R1065.txt</a></p><pre>P1: J&#x27;ai eu l&#x27;honneur de vous marquer avanthier que les Etats de Hollande se rassembleroient le 8 de ce Mois. Cela m&#x27;a paru si singulier, que j&#x27;ai voulu m&#x27;en éclaircir, et j&#x27;ai été en droiture hier au soir chez le Conseiller Pensionaire, il m&#x27;a dit qu&#x27;il se pourroit que l&#x27;Assemblée reprit effectivement dans ce tems
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1065.txt">R1065.txt</a></p><pre translate="no">P1: J&#x27;ai eu l&#x27;honneur de vous marquer avanthier que les Etats de Hollande se rassembleroient le 8 de ce Mois. Cela m&#x27;a paru si singulier, que j&#x27;ai voulu m&#x27;en éclaircir, et j&#x27;ai été en droiture hier au soir chez le Conseiller Pensionaire, il m&#x27;a dit qu&#x27;il se pourroit que l&#x27;Assemblée reprit effectivement dans ce tems
 P2: là, et qu&#x27;il comptoit cependant la pouvoir retarder jusqu&#x27;au jour de jeûne. Je lui ai repeté à l&#x27;egard de l&#x27;augmentation ce que je lui ai encore dit. Il me paroit ne pas s&#x27;éloigner d&#x27;en faire un objet. A la verité ce sentiment part de la peur reelle qu&#x27;il a de perdre sa Place; mais comme tous les
 P3: Republicains veulent qu&#x27;il la conserve, je ne serois point étonné de le voir travailler foiblement à l&#x27;Augmentation, avec la certitude de la voir traverser par Eux. Il m&#x27;a dit encore que si l&#x27;on s&#x27;y determinoit ce ne seroit pas sans prendre la precaution de declarer aux autres Puissances voisines quel est l&#x27;objet de
 P4: cette demarche. Je lui ai repondu: vous devez bien juger, Mr, que le Roi mon Maitre n&#x27;aprendroit pas la nouvelle d&#x27;une demarche qui pourroit être contraire à la neutralité que vous avez promise, sans m&#x27;ordonner de vous faire des questions très positives sur les intentions de la Republique. J&#x27;espère en savoir d&#x27;avantage avant le bout de ce Mois. J&#x27;aurai l&#x27;honneur de vous
@@ -1426,7 +1426,7 @@ P10: vent ait varié, j&#x27;espère qu&#x27;il sera arrivé en Angleterre et qu
 P11: avis à Hanover de tout ce que nous ferons. Comme il arrive souvent qu&#x27;on ne peut pas passer ici par les vents d&#x27;Est et de Nord Est, et que ces vents n&#x27;empêchent pas d&#x27;arriver à Ostende, il m&#x27;écrira par cette voye en droiture. J&#x27;aviserai Mr d&#x27;Aubigni [cipher adds: à Liège] en même temps que j&#x27;aurai l&#x27;honneur de vous faire part des nouvelles de
 P12: l&#x27;Italien si vous le trouvez bon. Je vous ai envoyé avanthier une Note sur un nommé Lacombe. Je crois qu&#x27;il faudroit ne faire aucune poursuite sur ce qui le regarde avant d&#x27;avoir Pichon, parce que celui ci pourroit s&#x27;effaroucher s&#x27;il aprenoit que Lacombe a disparu, et il est à presumer que Pichon a plus d&#x27;un correspondant. L&#x27;Ambassadeur d&#x27;Espagne a depêché
 P13: hier un courrier pour Paris. Je ne sais à quel sujet.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1065_en.md">R1065_en.md</a></p><pre>&lt;!-- English translation of plain/R1065.txt (Claude Opus 5.5, 23 Oct 2026): Lyonet&#x27;s contemporary clear decipherment of d&#x27;Affry&#x27;s no. 137, 3 Feb 1757, imaged on the DECODE record and transcribed here. The P1-P13 piece numbers of the copy are kept; the pieces run on mid-sentence. --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1065_en.md">R1065_en.md</a></p><pre translate="no">&lt;!-- English translation of plain/R1065.txt (Claude Opus 5.5, 23 Oct 2026): Lyonet&#x27;s contemporary clear decipherment of d&#x27;Affry&#x27;s no. 137, 3 Feb 1757, imaged on the DECODE record and transcribed here. The P1-P13 piece numbers of the copy are kept; the pieces run on mid-sentence. --&gt;
 
 # R1065, d&#x27;Affry to Rouillé, The Hague, 3 February 1757 (no. 137): English translation of the contemporary decipherment
 
@@ -1484,7 +1484,7 @@ despatched
 P13: a courier to Paris yesterday. I do not know on what business.</pre></details>
 <h3>R1066</h3>
 <p>Lyonet&#x27;s contemporary clear decipherment, imaged on the DECODE record and transcribed here.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/decode/DOC_R1066_D2479_2479.txt">DOC_R1066_D2479_2479.txt</a></p><pre>﻿#CIPHERTEXT:
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/decode/DOC_R1066_D2479_2479.txt">DOC_R1066_D2479_2479.txt</a></p><pre translate="no">﻿#CIPHERTEXT:
 #CATALOG NAME:KHA_A31_PWV_inr192_L.A._d&#x27;Affry_to_A.L._Rouille_1757-02-17
 #IMAGE NAME: 5575.png-5578.png
 #TRANSCRIBER NAME: AJ
@@ -1583,8 +1583,8 @@ P13: a courier to Paris yesterday. I do not know on what business.</pre></detail
 &lt;CLEARTEXT FR et possessions, n’offre pas desconditions aileés.&gt;
 &lt;CLEARTEXT FR Je vous suplie d’être persuide que je n’ai pas la presom?&gt;
 &lt;CLEARTEXT FR tion de eroire que je sois digne d’une operation de cette.&gt;</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1066.txt">R1066.txt</a></p><pre>J&#x27;ai vu Mr de Slingerland chez moi ce matin. Je lui ai dit ce que vous me prescrivez par votre depêche du 11e à l&#x27;egard de la negociation avec l&#x27;Angleterre. Il m&#x27;a repondu qu&#x27;il croyoit devoir me communiquer la substance de la lettre de Mr de Holdernesse à Mr Yorke. La voici telle qu&#x27;il me l&#x27;a dictée. Sa Majesté Britannique a evité la guerre autant que la prudence et les interets de sa part l&#x27;ont permis. Sa Majesté desire sincerement la paix, pourvu que les conditions en soient assez equitables pour la rendre durable, et qu&#x27;elle comprenne touts les alliés respectifs, et qu&#x27;elle conserve les droits et les possessions des sujets de la Grande Bretagne. En ce cas, le Roi d&#x27;Angleterre verra avec plaisir cette negociation entamée entre Mr Yorke et Mr D&#x27;Affry, sans entremise d&#x27;un tiers. Vous voyez, Mr, que ce langage n&#x27;a rien d&#x27;excessif; mais qu&#x27;il n&#x27;a rien non plus de recevable, puis qu&#x27;il est juste que l&#x27;Angleterre fasse les premiers pas. D&#x27;ailleurs la reserve de touts ses alliés, et la condition vague des droits et possessions, n&#x27;offre pas des conditions aisées.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1066_en.md">R1066_en.md</a></p><pre>&lt;!-- English translation of plain/R1066.txt (Claude Opus 5.5, 23 Oct 2026): Lyonet&#x27;s contemporary clear decipherment, imaged on the DECODE record R1066 and transcribed here. --&gt;
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1066.txt">R1066.txt</a></p><pre translate="no">J&#x27;ai vu Mr de Slingerland chez moi ce matin. Je lui ai dit ce que vous me prescrivez par votre depêche du 11e à l&#x27;egard de la negociation avec l&#x27;Angleterre. Il m&#x27;a repondu qu&#x27;il croyoit devoir me communiquer la substance de la lettre de Mr de Holdernesse à Mr Yorke. La voici telle qu&#x27;il me l&#x27;a dictée. Sa Majesté Britannique a evité la guerre autant que la prudence et les interets de sa part l&#x27;ont permis. Sa Majesté desire sincerement la paix, pourvu que les conditions en soient assez equitables pour la rendre durable, et qu&#x27;elle comprenne touts les alliés respectifs, et qu&#x27;elle conserve les droits et les possessions des sujets de la Grande Bretagne. En ce cas, le Roi d&#x27;Angleterre verra avec plaisir cette negociation entamée entre Mr Yorke et Mr D&#x27;Affry, sans entremise d&#x27;un tiers. Vous voyez, Mr, que ce langage n&#x27;a rien d&#x27;excessif; mais qu&#x27;il n&#x27;a rien non plus de recevable, puis qu&#x27;il est juste que l&#x27;Angleterre fasse les premiers pas. D&#x27;ailleurs la reserve de touts ses alliés, et la condition vague des droits et possessions, n&#x27;offre pas des conditions aisées.</pre></details>
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1066_en.md">R1066_en.md</a></p><pre translate="no">&lt;!-- English translation of plain/R1066.txt (Claude Opus 5.5, 23 Oct 2026): Lyonet&#x27;s contemporary clear decipherment, imaged on the DECODE record R1066 and transcribed here. --&gt;
 
 # R1066, d&#x27;Affry, The Hague, 1757: English translation of the contemporary decipherment
 
@@ -1600,7 +1600,7 @@ take the first steps. Besides, the reservation of all its allies, and the vague 
 do not offer easy terms.</pre></details>
 <h3>R1067, 1 Apr 1757, no. 161</h3>
 <p>D&#x27;Affry reports his interview with Pensionary Steyn on the King&#x27;s orders (the demand for an answer on the passage of French troops by Maastricht/Namur): Steyn, embarrassed and under attack by enemies trying to bring him down, could not answer before the week-end. D&#x27;Affry then saw the Gouvernante (Anne of Hanover), gave her the King&#x27;s declaration; she answered &quot;must it be I who favour the means of doing harm to my father?&quot; (George II); he asked her to use her credit to obtain the answer the King had a right to expect.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/transcr/R1067.txt">R1067.txt</a></p><pre># R1067 re-transcribed from the images 5 Oct 2026 (IMG_R1067_I5579_P1 ... I5584_P6, all rotated -90, full resolution).
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/transcr/R1067.txt">R1067.txt</a></p><pre translate="no"># R1067 re-transcribed from the images 5 Oct 2026 (IMG_R1067_I5579_P1 ... I5584_P6, all rotated -90, full resolution).
 # Glyph rule for this copyist: closed theta-like loop and open double loop (omega) are both 8; a plain small o is 0;
 # &#x27;g&#x27; = 9, &#x27;b&#x27;-shaped = 6, &#x27;a&#x27;/&#x27;u&#x27;-shaped = 4, sigma-like = 5. a|b = two readings of a doubtful glyph (first preferred).
 # One line per manuscript line.
@@ -1782,7 +1782,7 @@ do not offer easy terms.</pre></details>
 1040 175 179 1137 54 579 663 360 134 995
 943 197 927 580 732 200 878 590 227 631
 925 855 899 6 797 1058 140 466</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1067.md">R1067.md</a></p><pre># R1067 - d&#x27;Affry to Rouillé, The Hague, 1 April 1757
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1067.md">R1067.md</a></p><pre translate="no"># R1067 - d&#x27;Affry to Rouillé, The Hague, 1 April 1757
 
 No. 161 (&quot;D&#x27;aff à R&quot;, &quot;No 161.&quot;, &quot;Dat: Premier Avril 1757&quot; in clear at the head of IMG_R1067_I5580_P2). Six pages
 (I5579..I5584), about 1480 code groups: the ciphered periods of a much longer letter, the clear text not transcribed.
@@ -1896,7 +1896,7 @@ actuellement un employ en Frise, dont la nomination dépend de Mme la Gouvernant
 Gouvernante interview (No 1-4), the Pensionary &quot;pour le perdre&quot; (No 1, No 6), and the Wassenaer sentence word for word
 in No 7, which fixes [6?3] Wassenaer(?), 1115 encore, 11 venir, 158+44 a actuellement, 737 ation. Coquelle&#x27;s early-April
 Maastricht dispute matches No 9/No 10/No 12 (bataillons, Maastricht, passage de Namur).</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1067_reading.md">R1067_reading.md</a></p><pre># R1067 - d&#x27;Affry, The Hague, 1 April 1757 (no. 161): reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1067_reading.md">R1067_reading.md</a></p><pre translate="no"># R1067 - d&#x27;Affry, The Hague, 1 April 1757 (no. 161): reading
 
 Rests on: the contemporary clear copy of this despatch in the Fagel register, Nationaal Archief 1.10.29 inv. 5186
 scans 148R-150L (margin &quot;No 161. Dat: 1. Avril 1757. A: à R:&quot;), transcribed by WAINUT (21 Oct 2026,
@@ -1960,7 +1960,7 @@ au premier jour à Mr de Moras un Memoire que je ne crois pas plus fondé que ce
 Batimens rencontrent quelque Corsaire François ils leur montrent des Attestations de Domicile en Hollande. S&#x27;ils
 rencontrent des Corsaires Anglois ils produisent des Ecrits Baptistaires de cette Nation et des Lettres qui leur
 ouvrent les Ports de l&#x27;Angleterre, conformement au Traité de 1652. ce qui est veritablement un Abus intolerable .</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1067_en.md">R1067_en.md</a></p><pre>&lt;!-- English translation of read/R1067_reading.md (Claude Opus 5.5, 23 Oct 2026): the reading follows the contemporary clear copy in the Fagel register (Nationaal Archief 1.10.29 inv. 5186), aligned with the keyed decode. The register&#x27;s blank &quot;( )&quot; is kept. --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1067_en.md">R1067_en.md</a></p><pre translate="no">&lt;!-- English translation of read/R1067_reading.md (Claude Opus 5.5, 23 Oct 2026): the reading follows the contemporary clear copy in the Fagel register (Nationaal Archief 1.10.29 inv. 5186), aligned with the keyed decode. The register&#x27;s blank &quot;( )&quot; is kept. --&gt;
 
 # R1067, d&#x27;Affry to Rouillé, The Hague, 1 April 1757 (no. 161): English translation
 
@@ -2014,7 +2014,7 @@ privateers, they produce baptismal certificates of that nation and letters that 
 in accordance with the Treaty of 1652; which is truly an intolerable abuse.</pre></details>
 <h3>R1068, 26 Apr 1757, no. 172</h3>
 <p>An Austrian courier passed through (The Hague) the evening before, on his way from Vienna to London. D&#x27;Affry says the minister will know better than he does what the courier carries.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/decode/DOC_R1068_D2335_2335.txt">DOC_R1068_D2335_2335.txt</a></p><pre>#CIPHERTEXT
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/decode/DOC_R1068_D2335_2335.txt">DOC_R1068_D2335_2335.txt</a></p><pre translate="no">#CIPHERTEXT
 #CATALOG NAME: KHA_A31_PWV_inr192_L.A._d&#x27;Affry_to_A.L._Rouille_1757-04-26(no172)
 #IMAGE NAME: 5585.png
 #TRANSCRIBER NAME: LS
@@ -2034,7 +2034,7 @@ in accordance with the Treaty of 1652; which is truly an intolerable abuse.</pre
 5 9 9 . 7 4 5 . 8 4 7 . 9 5 1 . 2 3 9 . 1 9 6 . 9 8 2 . 4 0 2 . 1 0 1 7 .
 2 4 5 . 7 7 . 4 8 7 . 3 6 7 . 8 2 8 . 9 8 4 . 8 8 9 . 1 0 2 4 . 9 5 5 .
 8 5 5 . 5 2 1 . 1 0 7 . 1 3 . 1 1 9 .</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1068.md">R1068.md</a></p><pre># R1068 — d&#x27;Affry to Rouillé, The Hague, 26 April 1757, N.172
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1068.md">R1068.md</a></p><pre translate="no"># R1068 — d&#x27;Affry to Rouillé, The Hague, 26 April 1757, N.172
 
 DECODE R1068, image IMG_R1068_I5585 (1 page). Clear heading &quot;A R.: Dat: 26 avril 1757. No. 172&quot;. A short note of 60
 code groups, beginning with the usual 28 105 119 and ending with nulls 107 . 119. Written the same day as N.171 (R1069).
@@ -2066,7 +2066,7 @@ occurrence. The reading above is left as the key gives it.
 ## Bussemaker
 
 Bussemaker has no entry for 26 April 1757 (his entries near it are 1 and 12 April).</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1068_reading.md">R1068_reading.md</a></p><pre># R1068 - d&#x27;Affry, The Hague, 26 April 1757 (no. 172): reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1068_reading.md">R1068_reading.md</a></p><pre translate="no"># R1068 - d&#x27;Affry, The Hague, 26 April 1757 (no. 172): reading
 
 Rests on: the contemporary clear copy of this despatch in the Fagel register, Nationaal Archief 1.10.29 inv. 5186 scan
 181L (margin &quot;No. 172. Dat: 26. Avril 1757. A: à R:&quot;), transcribed by WAINUT (21 Oct 2026,
@@ -2081,7 +2081,7 @@ keyed decode it replaces is `R1068.md`.
 
 Il a passé Vendredi au Soir un Courrier de Vienne à Londres. Vous Savez mieux que moi ce dont il est chargé. Mr. de
 Colloredo doit faire passer à Mr. Starrenberg ce qu&#x27;on lui aura repondu.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1068_en.md">R1068_en.md</a></p><pre>&lt;!-- English translation of read/R1068_reading.md (Claude Opus 5.5, 23 Oct 2026): the reading follows the contemporary clear copy in the Fagel register, aligned with the keyed decode. --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1068_en.md">R1068_en.md</a></p><pre translate="no">&lt;!-- English translation of read/R1068_reading.md (Claude Opus 5.5, 23 Oct 2026): the reading follows the contemporary clear copy in the Fagel register, aligned with the keyed decode. --&gt;
 
 # R1068, d&#x27;Affry, The Hague, 26 April 1757 (no. 172): English translation
 
@@ -2089,7 +2089,7 @@ On Friday evening a courier passed through from Vienna to London. You know bette
 Mr Colloredo is to pass on to Mr Starhemberg what answer he has been given.</pre></details>
 <h3>R1069</h3>
 <p>Lyonet&#x27;s contemporary clear decipherment, imaged on the DECODE record and transcribed here.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/decode/DOC_R1069_D2359_2359.txt">DOC_R1069_D2359_2359.txt</a></p><pre>#CIPHERTEXT
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/decode/DOC_R1069_D2359_2359.txt">DOC_R1069_D2359_2359.txt</a></p><pre translate="no">#CIPHERTEXT
 #CATALOG NAME: KHA_A31_PWV_inr192_L.A._d&#x27;Affry_to_A.L._Rouille_1757-04-26(no171)
 #IMAGE NAME: 5586.png-5589.png 
 #TRANSKRIBER NAME: FL
@@ -2192,8 +2192,8 @@ Mr Colloredo is to pass on to Mr Starhemberg what answer he has been given.</pre
 &lt;CLEARTEXT FR derniers entr&#x27;autres, est un homme qui a une&gt;
 &lt;CLEARTEXT FR trés grande influence en Frise, et qui en fait la?&gt;
 &lt;CLEARTEXT FR meilleur usage. Permettez moi de vous prier&gt;</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1069.txt">R1069.txt</a></p><pre>J&#x27;ai l&#x27;honneur de vous addresser la copie d&#x27;une lettre que Mr de la Salle m&#x27;a écrite de Hambourg, qui étoit accompagnée d&#x27;une lettre de Mr de Saltikof, dont je joins aussi ici la copie. Mr de Saltikof a écrit à Mr de Golofkin qui m&#x27;a envoyé cette lettre ce matin. Vous verrez, Mr, que Mr de la Salle croit sa justification remplie, et je le desire; mais Mr de Golofkin le fils, m&#x27;a dit avoir parlé de Mr de la Salle à Mr de Laurenzi qui lui a dit qu&#x27;il savoit bien qu&#x27;il y avoit un projet de proposé à Mr Yorke; mais chimerique, et auquel ce ministre ne s&#x27;étoit point arrêté. Quoi qu&#x27;il en soit, je crois qu&#x27;il n&#x27;y aura nul inconvenient à parler de Mr de la Salle à Mr de St Sauveur à son passage ici, pour qu&#x27;en arrivant à Petersbourg il puisse faire veiller à sa conduite. On a pris et conduit à Dunkerque un vaisseau hollandois, nommé les cinq freres, capitaine Jarighates. Les proprietaires et les interressés à ce vaisseau sont gens considerables. Un de ces derniers entr&#x27;autres, est un homme qui a une très grande influence en Frise, et qui en fait le meilleur usage. Permettez moi de vous prier d&#x27;en parler à Mr de Moras, et de lui dire que si, comme les proprietaires l&#x27;assurent, cette prise n&#x27;est pas validée, il seroit à desirer que le Conseil des Prises terminât promptement cette affaire, parce que dans ce cas la detention du vaisseau et de son equipage desobligeroit ceux qui s&#x27;y interressent, et feroit plaisir à nos adversaires.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1069_en.md">R1069_en.md</a></p><pre>&lt;!-- English translation of plain/R1069.txt (Claude Opus 5.5, 23 Oct 2026): Lyonet&#x27;s contemporary clear decipherment, imaged on the DECODE record R1069 and transcribed here. --&gt;
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1069.txt">R1069.txt</a></p><pre translate="no">J&#x27;ai l&#x27;honneur de vous addresser la copie d&#x27;une lettre que Mr de la Salle m&#x27;a écrite de Hambourg, qui étoit accompagnée d&#x27;une lettre de Mr de Saltikof, dont je joins aussi ici la copie. Mr de Saltikof a écrit à Mr de Golofkin qui m&#x27;a envoyé cette lettre ce matin. Vous verrez, Mr, que Mr de la Salle croit sa justification remplie, et je le desire; mais Mr de Golofkin le fils, m&#x27;a dit avoir parlé de Mr de la Salle à Mr de Laurenzi qui lui a dit qu&#x27;il savoit bien qu&#x27;il y avoit un projet de proposé à Mr Yorke; mais chimerique, et auquel ce ministre ne s&#x27;étoit point arrêté. Quoi qu&#x27;il en soit, je crois qu&#x27;il n&#x27;y aura nul inconvenient à parler de Mr de la Salle à Mr de St Sauveur à son passage ici, pour qu&#x27;en arrivant à Petersbourg il puisse faire veiller à sa conduite. On a pris et conduit à Dunkerque un vaisseau hollandois, nommé les cinq freres, capitaine Jarighates. Les proprietaires et les interressés à ce vaisseau sont gens considerables. Un de ces derniers entr&#x27;autres, est un homme qui a une très grande influence en Frise, et qui en fait le meilleur usage. Permettez moi de vous prier d&#x27;en parler à Mr de Moras, et de lui dire que si, comme les proprietaires l&#x27;assurent, cette prise n&#x27;est pas validée, il seroit à desirer que le Conseil des Prises terminât promptement cette affaire, parce que dans ce cas la detention du vaisseau et de son equipage desobligeroit ceux qui s&#x27;y interressent, et feroit plaisir à nos adversaires.</pre></details>
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1069_en.md">R1069_en.md</a></p><pre translate="no">&lt;!-- English translation of plain/R1069.txt (Claude Opus 5.5, 23 Oct 2026): Lyonet&#x27;s contemporary clear decipherment, imaged on the DECODE record R1069 and transcribed here. --&gt;
 
 # R1069, d&#x27;Affry, The Hague, 1757: English translation of the contemporary decipherment
 
@@ -2211,7 +2211,7 @@ this prize is not validated, it would be desirable for the Prize Council to sett
 case the detention of the ship and its crew would offend those concerned in it and would please our adversaries.</pre></details>
 <h3>R1070, 22 Jul 1757, no. 210</h3>
 <p>It is said that the Gouvernante (Princess Anne, &quot;son Altesse Royale&quot;) will go to the States of Holland to speak in favour of her father George II and urge the need to help [England/Hanover], invoking the danger to the Protestant religion. D&#x27;Affry doubts she will; if she does and proposes a land-forces augmentation, the other side will propose a naval augmentation instead.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/decode/DOC_R1070_D1878_1878.txt">DOC_R1070_D1878_1878.txt</a></p><pre>﻿#CIPHERTEXT
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/decode/DOC_R1070_D1878_1878.txt">DOC_R1070_D1878_1878.txt</a></p><pre translate="no">﻿#CIPHERTEXT
 #CATALOG NAME: KHA_A31_PWV_inr192_L.A._d&#x27;Affry_to_A.L.Rouillé_1757-07-22
 #IMAGE NAME: 5590.png-5591.png
 #TRANSCRIBER NAME: LW
@@ -2263,7 +2263,7 @@ case the detention of the ship and its crew would offend those concerned in it a
 1 1 3 8 .  5 8 3 .  5 7 8 .  8 8 8 .  8 7 8 .  9 4 5  8 6 4 .  5 8 0 .  8 3 5 .  7 5 2 .  9 5 1 .
 8 3 1 .  7 1 2 .  2 0 8 .  1 0 5 .  1 0 2 8 .  1 0 9 3 .  2 2 7 .  3 5 2 .  2 1 0 .  2 1 9 .  1 3 4 .  9 5 0 .
 9 5 5 .  1 3 6 .  1 1 3 8 .  5 0 3 .  1 0 2 4 .  7 7 4 .  1 0 1 8 .  5 8 3 .  1 7 1 .  1 1 5 9 .  1 0 6 8 .  2 7 4 .</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1070.md">R1070.md</a></p><pre># R1070 — d&#x27;Affry to Bernis (&quot;A à B&quot;), The Hague, N. 210, 22 July 1757
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1070.md">R1070.md</a></p><pre translate="no"># R1070 — d&#x27;Affry to Bernis (&quot;A à B&quot;), The Hague, N. 210, 22 July 1757
 
 DECODE R1070 (catalogue name gives Rouillé as addressee; header on the page reads &quot;N. 210 / A à B. / du 22 Juillet / 1757&quot;).
 Images IMG_R1070_I5591_P2 (clear header, then groups 125-399) and IMG_R1070_I5590_P1 (groups 0-124, then a clear
@@ -2315,7 +2315,7 @@ daardoor den handel winnen, dien Engeland op de Nederlanden dreef. Il y a quelqu
 hollandais ont prêché sur le danger de la religion, mais le peuple n&#x27;en paroit pas animé.&quot; The reading matches both
 points (displeasure at the Ostend/Nieuport occupation; the trade gain for Amsterdam and Rotterdam) and the quoted
 sentence group for group. Bussemaker omits the Gouvernante&#x27;s projected harangue and d&#x27;Affry&#x27;s audience plan.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1070_reading.md">R1070_reading.md</a></p><pre># R1070 - d&#x27;Affry, The Hague, 22 July 1757 (no. 210, to Bernis): reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1070_reading.md">R1070_reading.md</a></p><pre translate="no"># R1070 - d&#x27;Affry, The Hague, 22 July 1757 (no. 210, to Bernis): reading
 
 Rests on: the contemporary clear copy of this despatch in the Fagel register, Nationaal Archief 1.10.29 inv. 5186
 scans 255R-256L (margin &quot;No 210. Dat: 22. Juillet 1757. A: à B.&quot;), transcribed by WAINUT (21 Oct 2026,
@@ -2346,7 +2346,7 @@ vous en faire part, et Si cela pressoit je croirois devoir Sans attendre les ord
 demander à cette Princesse une Conference dans la quelle je tâcherois de lui prouver combien il lui est essentiel, et
 aux Interêts de Mr. le Stadhouder Son Fils de meriter la bienveïllance de Sa Majesté. Cela ne me Sera pas difficile.
 Vous trouverez cijoint Mr. une Lettre ou Son fragment du 15. de Londres, et un état de la Marine Angloise.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1070_en.md">R1070_en.md</a></p><pre>&lt;!-- English translation of read/R1070_reading.md (Claude Opus 5.5, 23 Oct 2026): the reading follows the contemporary clear copy in the Fagel register, aligned with the keyed decode. --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1070_en.md">R1070_en.md</a></p><pre translate="no">&lt;!-- English translation of read/R1070_reading.md (Claude Opus 5.5, 23 Oct 2026): the reading follows the contemporary clear copy in the Fagel register, aligned with the keyed decode. --&gt;
 
 # R1070, d&#x27;Affry to Bernis, The Hague, 22 July 1757 (no. 210): English translation
 
@@ -2367,7 +2367,7 @@ her son, to deserve His Majesty&#x27;s goodwill. That will not be difficult for 
 or a fragment of one, of the 15th from London, and a statement of the English navy.</pre></details>
 <h3>R1072, 6 Jan 1757, no. 123</h3>
 <p>D&#x27;Affry has had &quot;the Italian&quot; (an informer already known to Rouillé) come to see him. The man says he expects to be rewarded for a service already rendered, advice on England&#x27;s designs against French possessions in the two Indies, passed on through a certain Maham or Mahom(et), commandant or sub-commandant of a fort.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/transcr/R1072.txt">R1072.txt</a></p><pre># R1072 re-transcribed from the images 5 Oct 2026 (IMG_R1072_I5595_P1, I5596_P2, rotated -90, full resolution).
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/transcr/R1072.txt">R1072.txt</a></p><pre translate="no"># R1072 re-transcribed from the images 5 Oct 2026 (IMG_R1072_I5595_P1, I5596_P2, rotated -90, full resolution).
 # Glyph rule for this copyist: closed theta-like loop and open double loop (omega) are both 8; a plain small o is 0;
 # &#x27;g&#x27; = 9, &#x27;b&#x27;-shaped = 6. a|b = two readings of a doubtful glyph (first preferred). One line per manuscript line.
 # --- p. 1 (I5595) heading: Lettre d&#x27;Aff a R Le 6 Janvier 1757 No 123
@@ -2419,7 +2419,7 @@ or a fragment of one, of the 15th from London, and a statement of the English na
 749 1196 1018 517 635 207 1049 134 1084 966 645
 71 992 588 1179 219 1068 38 927 684 992 200 828
 572 884 955 202 582 362 11 13 107 29 118 107</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1072.md">R1072.md</a></p><pre># R1072 - d&#x27;Affry to Rouillé, The Hague, 6 January 1757
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1072.md">R1072.md</a></p><pre translate="no"># R1072 - d&#x27;Affry to Rouillé, The Hague, 6 January 1757
 
 No. 123 (clear heading on p. 1: &quot;Lettre d&#x27;Af a R Le 6 Janvier 1757 N° 123&quot;). Two pages (IMG_R1072_I5595_P1,
 I5596_P2), 556 code groups as re-parsed from decode/DOC_R1072_D1858_1858.txt. The whole text on these two leaves is
@@ -2482,7 +2482,7 @@ from love of France; Prussia&#x27;s Protestant league) and no. 56 (7 Jan 1757: n
 protection of trade, herring) do not touch this matter. This letter, entirely about an Italian spy offering to go to
 London, is new content not summarised in the printed edition, which is consistent with its being a separate secret
 despatch.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1072_reading.md">R1072_reading.md</a></p><pre># R1072 - d&#x27;Affry to Rouillé, The Hague, 6 January 1757 (no. 123): reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1072_reading.md">R1072_reading.md</a></p><pre translate="no"># R1072 - d&#x27;Affry to Rouillé, The Hague, 6 January 1757 (no. 123): reading
 
 Rests on: the contemporary clear copy of this despatch in the Fagel register, Nationaal Archief 1.10.29 inv. 5186,
 scans 13R-14L (margin &quot;No 123. Dat: 6. Janvier 1757. A: à R:&quot;), transcribed by WAINUT (21 Oct 2026,
@@ -2521,7 +2521,7 @@ impatience. Si vous agréez ses services, son retour à Londres ne sauroit étre
 
 Je suis convenu avec Mr Hensi, que je lui donnerois demain Vingt Cinq Guinées pour un quartier de son Correspondant.
 Nous verrons ce qu&#x27;il fera à l&#x27;avenir.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1072_en.md">R1072_en.md</a></p><pre>&lt;!-- English translation of read/R1072_reading.md (Claude Opus 5.5, 23 Oct 2026): the reading follows the contemporary clear copy in the Fagel register, aligned with the keyed decode. --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1072_en.md">R1072_en.md</a></p><pre translate="no">&lt;!-- English translation of read/R1072_reading.md (Claude Opus 5.5, 23 Oct 2026): the reading follows the contemporary clear copy in the Fagel register, aligned with the keyed decode. --&gt;
 
 # R1072, d&#x27;Affry to Rouillé, The Hague, 6 January 1757 (no. 123): English translation
 
@@ -2548,7 +2548,7 @@ I have agreed with Mr Hensi that I would give him tomorrow twenty-five guineas f
 correspondent. We shall see what he does in future.</pre></details>
 <h3>R1073, 25 Jan 1757, no. 133</h3>
 <p>A rumour had spread that d&#x27;Affry had given the States General a memorial saying the King would regard an increase of the Republic&#x27;s land forces as a breach of neutrality. The rumour was killed at once, but d&#x27;Affry saw the Grand Pensionary: the King did not and never meant to meddle in their internal affairs, but out of friendship would regret to see them commit to heavy expenses whose consequences the Republic should fear.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/decode/DOC_R1073_D1860_1860.txt">DOC_R1073_D1860_1860.txt</a></p><pre>#CIPHERTEXT
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/decode/DOC_R1073_D1860_1860.txt">DOC_R1073_D1860_1860.txt</a></p><pre translate="no">#CIPHERTEXT
 #CATALOG NAME: KHA_A31_PWV_inr192_L.A._d&#x27;Affry_to_A.L._Rouille_1757-01-25
 #IMAGE NAME: 5597.png-5598.png
 #TRANSCRIBER NAME: AK
@@ -2594,7 +2594,7 @@ correspondent. We shall see what he does in future.</pre></details>
 7 2 2 . 5 8 0 . 1 1 2 7 . 5 1 6 .   1 0 4 1 . 5 6 9 . 8 7 8 . 6 8 4 . 1 1 1 6 .   1 3 4 . 8 3 .
 9 0 7 .  7 8 7 .   9 4 3 . 8 8 5 . 9  8 . 2 1 9 .  2 9 2 . 1 1 0 3 .    2 8 4 . 8? 2 0 . 
 1 0 8 8 . 6 3 5 . 8 9 . 1 0 4 6 . 1 1 5 9 .  6 1 6 . 1 3 4 . 2 . 9 4 3.  8 0 6 . 1 3 .</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1073.md">R1073.md</a></p><pre># R1073 - d&#x27;Affry to Rouillé, The Hague, 25 January 1757
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1073.md">R1073.md</a></p><pre translate="no"># R1073 - d&#x27;Affry to Rouillé, The Hague, 25 January 1757
 
 No. 133 (&quot;N: 133&quot;, &quot;D&#x27;A à R.&quot;, &quot;Du 25 Janv: 1757&quot; in clear). Two pages (IMG_R1073_I5597_P1, I5598_P2; the DECODE
 transcription gives 5598 first and the last four lines under 5597). 312 code groups, ending with 13 (full stop); the
@@ -2671,7 +2671,7 @@ increasing its army; Vienna, through the Barrier treaty and Namur, should press 
 shows the French line in between: disavowing any threat, but warning against the expense, and the Pensionary&#x27;s
 forecast of difficulties for the augmentation and of a prior declaration to Vienna and London - the same lever no. 58
 proposes.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1073_reading.md">R1073_reading.md</a></p><pre># R1073 - d&#x27;Affry, The Hague, 25 January 1757 (no. 133): reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1073_reading.md">R1073_reading.md</a></p><pre translate="no"># R1073 - d&#x27;Affry, The Hague, 25 January 1757 (no. 133): reading
 
 Rests on: the contemporary clear copy of this despatch in the Fagel register, Nationaal Archief 1.10.29 inv. 5186 scan
 42R (margin &quot;No 133. Dat: 25. Janvier 1757. A: à R:&quot;), transcribed by WAINUT (21 Oct 2026,
@@ -2695,7 +2695,7 @@ seront du moins assez fort pour y faire preceder une Declaration à nôtre Cour,
 Londres, par la quelle la Republique confirmera la Resolution ou Elle est de rester exactement Neutre, et il ne
 s&#x27;agira de tout celà que vers le vingt du Mois prochain. Il Semble que l&#x27;Abbé Senski, comme vous le verrez ne fournit
 plus de nouvelles de Londres fort interessants. Il faudroit voir Si celà ne va pas mieux.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1073_en.md">R1073_en.md</a></p><pre>&lt;!-- English translation of read/R1073_reading.md (Claude Opus 5.5, 23 Oct 2026): the reading follows the contemporary clear copy in the Fagel register, aligned with the keyed decode. --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1073_en.md">R1073_en.md</a></p><pre translate="no">&lt;!-- English translation of read/R1073_reading.md (Claude Opus 5.5, 23 Oct 2026): the reading follows the contemporary clear copy in the Fagel register, aligned with the keyed decode. --&gt;
 
 # R1073, d&#x27;Affry, The Hague, 25 January 1757 (no. 133): English translation
 
@@ -2713,7 +2713,7 @@ next month.&quot; It seems that the Abbé Senski, as you will see, no longer sup
 should see whether this does not improve.</pre></details>
 <h3>R1074</h3>
 <p>The first and longer part is an extract of a report from a correspondent (M. ...tier) about a loan.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/transcr/R1074.txt">R1074.txt</a></p><pre># R1074 re-transcribed from the images 5 Oct 2026 (IMG_R1074_I5599_P1..I5601_P3, rotated -90). A clearer hand than
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/transcr/R1074.txt">R1074.txt</a></p><pre translate="no"># R1074 re-transcribed from the images 5 Oct 2026 (IMG_R1074_I5599_P1..I5601_P3, rotated -90). A clearer hand than
 # R1072: 8 has a small upper loop (looks like theta at the start of a group), 0 is a plain o. a|b = doubtful glyph.
 # --- p. 1 (I5599) heading: ... No 283, 17 janv. 1758
 118 28 90 858 898 219 583 1146 219 196 1022 588 1179
@@ -2764,7 +2764,7 @@ should see whether this does not improve.</pre></details>
 955 140 1159 869 805 227 1090 607 898 800 1111 1174
 1144 521 1191 6 482 633 1111 276 310 219 793 38 105
 119</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1074.md">R1074.md</a></p><pre># R1074 — d&#x27;Affry to Rouillé (&quot;B&quot;), The Hague, 17 January 1758
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1074.md">R1074.md</a></p><pre translate="no"># R1074 — d&#x27;Affry to Rouillé (&quot;B&quot;), The Hague, 17 January 1758
 
 DECODE R1074, images IMG_R1074_I5599_P1 .. I5601_P3 (3 pages). Clear heading, top right of p.1: &quot;No. 283. 17 janvr. 1758&quot;
 (the number is hard to read). The top left corner of p.1 is cut off, so the first groups are missing. Everything after the
@@ -2828,7 +2828,7 @@ Mac[donald]&#x27;s movements and correspondents.
 Bussemaker has no entry for 17 January 1758. The nearest are no. 83, 9 Janvier 1758 (the Leiden gazetteer) and no. 84,
 27 Janvier 1758 (talk with a leading republican; Amsterdam fears an English landing on the lower Scheldt). Neither covers
 this letter. The loan in England and the Macdonald warning are not in Bussemaker.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1074_reading.md">R1074_reading.md</a></p><pre># R1074 - d&#x27;Affry to Rouillé (&quot;B&quot;), The Hague, 17 January 1758: the Astier extract and d&#x27;Affry&#x27;s news: reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1074_reading.md">R1074_reading.md</a></p><pre translate="no"># R1074 - d&#x27;Affry to Rouillé (&quot;B&quot;), The Hague, 17 January 1758: the Astier extract and d&#x27;Affry&#x27;s news: reading
 
 Rests on: the contemporary clear copy in the Fagel register, Nationaal Archief 1.10.29 inv. 5187, scans 15L-15R
 (&quot;Extrait de la Lettre de Mr. Astier&quot;, margin &quot;Du 11. Janvier 1758&quot;, then d&#x27;Affry&#x27;s own paragraphs), transcribed by
@@ -2864,7 +2864,7 @@ J&#x27;ai quelque Sujet de croire qu&#x27;il a été chargé de quelque Commissi
 homme a servi dans le Regiment de Bückley gt. On devroit faire quelque attention aux Ecossois et aux Irlandois qui
 sont dans nos Troupes, quelques uns sont des Espions, mais il seroit peut être imprudent et dangereux de marquer de la
 défiance aux autres. Je verrai s&#x27;il y a moyen d&#x27;être instruit des allures du Sr Macdonald, et de ses Correspondances.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1074_en.md">R1074_en.md</a></p><pre>&lt;!-- English translation of read/R1074_reading.md (Claude Opus 5.5, 23 Oct 2026). --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1074_en.md">R1074_en.md</a></p><pre translate="no">&lt;!-- English translation of read/R1074_reading.md (Claude Opus 5.5, 23 Oct 2026). --&gt;
 
 # R1074, d&#x27;Affry to &quot;B&quot;, The Hague, 17 January 1758: the Astier extract and d&#x27;Affry&#x27;s news: English translation
 
@@ -2889,7 +2889,7 @@ imprudent and dangerous to show distrust towards the others. I shall see whether
 Mr Macdonald&#x27;s movements and of his correspondence.</pre></details>
 <h3>R1075</h3>
 <p>Lyonet&#x27;s contemporary clear decipherment, imaged on the DECODE record and transcribed here.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/decode/DOC_R1075_D2010_2010.txt">DOC_R1075_D2010_2010.txt</a></p><pre>#CIPHERTEXT
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/decode/DOC_R1075_D2010_2010.txt">DOC_R1075_D2010_2010.txt</a></p><pre translate="no">#CIPHERTEXT
 #CATALOG NAME: KHA_A31_PWV_inr192_L.A._d&#x27;Affry_to_A.L._Rouillé_1757-01-21
 #IMAGE NAME : 5602.png -5605.png
 #TRANSCRIBER NAME:  FK
@@ -3059,12 +3059,12 @@ Mr Macdonald&#x27;s movements and of his correspondence.</pre></details>
 &lt;CLEARTEXT FR rai mardi prochain.&gt; 
 &lt;CLEARTEXT FR La faute de Lecqueville étoit d&#x27;avoir chiffré la lettre d’ R &gt;
 &lt;CLEARTEXT FR d’un chiffre qu’il n’a point. &gt;</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1075.txt">R1075.txt</a></p><pre>J&#x27;ai vu ce matin un Republicain avec lequel j&#x27;eus une longue dissertation sur l&#x27;augmentation. Après lui en avoir demontré l&#x27;inutilité et meme le danger quant aux affaires étrangères, il m&#x27;a avoué que si on la faisoit, ce n&#x27;étoit que relativement à ce qu&#x27;on avoit à craindre du (+) peu seront necessaires.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1075.txt">R1075.txt</a></p><pre translate="no">J&#x27;ai vu ce matin un Republicain avec lequel j&#x27;eus une longue dissertation sur l&#x27;augmentation. Après lui en avoir demontré l&#x27;inutilité et meme le danger quant aux affaires étrangères, il m&#x27;a avoué que si on la faisoit, ce n&#x27;étoit que relativement à ce qu&#x27;on avoit à craindre du (+) peu seront necessaires.
 (Vous verrez dans le Placcard pour le jeune une expression assez ridicule, &quot;pour qu&#x27;il plaise au Ciel de faire &quot;rentrer l&#x27;Epée ambitieuse dans le fourreau.
 Je joins ici la Copie de la lettre que Madame Tronchin a ecrite. Sa Gazette étoit imprimée aparemment lors qu&#x27;elle a reçu ma lettre: Le Supplement ne l&#x27;étoit pas. Plus nos Ennemis cherchent à trouver du Mystere dans l&#x27;horrible action du cinq de ce mois, plus je crois devoir faire publier, qu&#x27;il paroit que cet execrable assassin n&#x27;a point eu de complices.
 [clear in the original: J&#x27;ai l&#x27;honneur de vous envoyer ... chiffre ordinaire.]
 Je serois bien fâché de l&#x27;inutilité du courrier que je vous ai envoyé si je n&#x27;avois eu à vous faire part aussi de la demande qui doit se faire à Londres.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1075_en.md">R1075_en.md</a></p><pre>&lt;!-- English translation of plain/R1075.txt (Claude Opus 5.5, 23 Oct 2026): Lyonet&#x27;s contemporary clear decipherment, imaged on the DECODE record R1075 and transcribed here. The copy&#x27;s own break &quot;(+)&quot; and the bracketed note on a clear passage are kept. --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/plain/R1075_en.md">R1075_en.md</a></p><pre translate="no">&lt;!-- English translation of plain/R1075.txt (Claude Opus 5.5, 23 Oct 2026): Lyonet&#x27;s contemporary clear decipherment, imaged on the DECODE record R1075 and transcribed here. The copy&#x27;s own break &quot;(+)&quot; and the bracketed note on a clear passage are kept. --&gt;
 
 # R1075, d&#x27;Affry, The Hague, January 1757: English translation of the contemporary decipherment
 
@@ -3085,7 +3085,7 @@ I would be very sorry that the courier I sent you had been useless, if I had not
 that is to be made in London.</pre></details>
 <h3>R1076, 7 Jan 1757, no. 124</h3>
 <p>The Dutch, after the alarm over the convoy (four warships were to escort it, two were disabled by the storm), are relieved that it has arrived. D&#x27;Affry expects the naval armament of [n] ships to go through without any increase of the land forces, and says the argument will be pressed harder now that people see that the English will respect Dutch navigation only in proportion to the protection it has, so convoys through the Channel must be strongly escorted.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/decode/DOC_R1076_D2333_2333.txt">DOC_R1076_D2333_2333.txt</a></p><pre>#CIPHERTEXT
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/decode/DOC_R1076_D2333_2333.txt">DOC_R1076_D2333_2333.txt</a></p><pre translate="no">#CIPHERTEXT
 #CATALOG NAME: KHA_A31_PWV_inr192_L.A._d&#x27;Affry_to_A.L._Rouillé_1757-01-07
 #IMAGE NAME: 5606.png-5607.png
 #TRANSCRIBER NAME: JO
@@ -3142,7 +3142,7 @@ that is to be made in London.</pre></details>
 4 2 2 . 5 1 6 . 1 1 1 1 . 1 1 6 5 . 1 0 9 9 . 7 3 9 . 1 1 6 5 . 1 1 0 8 . 3 0 8 . 2 7 6 . 7 1 6 .
 7 9 7 . 1 0 5 7 . 4 8 1 . 8^2 4 5 . 1 0 1 7 . 9 5 4 . 1 0 5 7 . 8 2 8 . 3 1 . 2 3 . 1 1 . 9 3 4 .
 2 1 9 .</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1076.md">R1076.md</a></p><pre># R1076 - d&#x27;Affry to Rouillé, The Hague, 7 January 1757
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1076.md">R1076.md</a></p><pre translate="no"># R1076 - d&#x27;Affry to Rouillé, The Hague, 7 January 1757
 
 No. 124 (&quot;N: 124. D&#x27;A à R&quot;, &quot;Du 7 Janvier 1757&quot; in clear at the head of p. 2). Two pages (IMG_R1076_I5606_P1, I5607_P2),
 about 400 code groups; the cipher passages are the ciphered periods of a longer letter, the rest not transcribed. Page 1
@@ -3183,7 +3183,7 @@ protection of the Republic&#x27;s trade; many republicans would want some privil
 increased without enlarging the army; that would help detach the Republic from England. Agreement: armament &quot;sans
 augmentation dans les troupes de terre&quot;; protection/escort of navigation; the Amsterdam conversation about
 &quot;preneurs de [200]&quot; fits the herring privileges (200 = harengs, inferred, M).</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1076_reading.md">R1076_reading.md</a></p><pre># R1076 - d&#x27;Affry, The Hague, 7 January 1757 (no. 124): reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1076_reading.md">R1076_reading.md</a></p><pre translate="no"># R1076 - d&#x27;Affry, The Hague, 7 January 1757 (no. 124): reading
 
 Rests on: the contemporary clear copy of this despatch in the Fagel register, Nationaal Archief 1.10.29 inv. 5186
 scans 16R-17L (margin &quot;No 124. Dat: 7. Janvier 1757. A: à R:&quot;), transcribed by WAINUT (21 Oct 2026,
@@ -3225,7 +3225,7 @@ Une grande partie des Republicains desirent vivement quelque grace pour le haran
 passe sans augmentation de Terre, et il est certain que ce sera un moyen de plus de l&#x27;éloignement entre l&#x27;Angleterre
 et la Hollande. J&#x27;espere Mr que vous verrez encore combien je cherche à suivre mes Instructions. Je vous repête avec
 verité que je leur dois ma conduite, et les succés que vous avez bien voulu aprouver jusqu&#x27;apresent.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1076_en.md">R1076_en.md</a></p><pre>&lt;!-- English translation of read/R1076_reading.md (Claude Opus 5.5, 23 Oct 2026). --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R1076_en.md">R1076_en.md</a></p><pre translate="no">&lt;!-- English translation of read/R1076_reading.md (Claude Opus 5.5, 23 Oct 2026). --&gt;
 
 # R1076, d&#x27;Affry, The Hague, 7 January 1757 (no. 124): English translation
 
@@ -3252,7 +3252,7 @@ Holland. I hope, Sir, that you will see once more how much I seek to follow my i
 that I owe them my conduct, and the successes that you have been pleased to approve until now.</pre></details>
 <h3>R2067</h3>
 <p>D&#x27;Affry sends &quot;B&quot; a copy of what M. ...tier wrote to him (the loan extract read in R1074).</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/transcr/R2067.txt">R2067.txt</a></p><pre># R2067 groups from decode/R2067_transcription.txt (hand transcription from the images, 19 Sept 2026), reformatted 5 Oct 2026
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/transcr/R2067.txt">R2067.txt</a></p><pre translate="no"># R2067 groups from decode/R2067_transcription.txt (hand transcription from the images, 19 Sept 2026), reformatted 5 Oct 2026
 # R2067 d&#x27;Affry to &quot;B&quot;, 17 Jan 1758. Hand transcription from the images (looped digit = 8, &#x27;(&#x27; = 1).
 # Reading order: image P2 (I14815, carries the heading) first, then image P1 (I14814, ends with the closing flourish).
 # --- image P2 (I14815) = first page ---
@@ -3299,7 +3299,7 @@ that I owe them my conduct, and the successes that you have been pleased to appr
 663 380 197 758 380 729 1099 793 1044 134 1068
 943 883 187 1084 1117 583 302 194 856 680 946
 306 1090 413 1084 1018 114 432 1127 119</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R2067.md">R2067.md</a></p><pre># R2067 — d&#x27;Affry to &quot;B&quot; (d&#x27;Usson?), The Hague, 17 January 1758
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R2067.md">R2067.md</a></p><pre translate="no"># R2067 — d&#x27;Affry to &quot;B&quot; (d&#x27;Usson?), The Hague, 17 January 1758
 
 DECODE R2067, 2 images. Image P2 (I14815) is the first page: clear heading &quot;Lettre d&#x27;Aff. à B. le 17 janvier 1758 / No. 283&quot;,
 then 23 lines of code. Image P1 (I14814) is the second page: 17 lines of code ending with a closing flourish. The whole body is
@@ -3346,7 +3346,7 @@ of Prussia, and prize (prise) cases.
 ## Bussemaker
 
 bussemaker.txt has no entry for 17 January 1758 (only 17 Jan 1757 and 1760), so there is nothing to compare.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R2067_reading.md">R2067_reading.md</a></p><pre># R2067 - d&#x27;Affry to &quot;B&quot;, The Hague, 17 January 1758 (no. 283): reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R2067_reading.md">R2067_reading.md</a></p><pre translate="no"># R2067 - d&#x27;Affry to &quot;B&quot;, The Hague, 17 January 1758 (no. 283): reading
 
 Rests on: the contemporary clear copy in the Fagel register, Nationaal Archief 1.10.29 inv. 5187, scans 14R-15L
 (margin &quot;Dat: 17. Janvier 1758. A: à B:&quot;), transcribed by WAINUT (21 Oct 2026, `wainut/register_clear.txt`) and checked
@@ -3378,7 +3378,7 @@ rien pour justifier l&#x27;usage de l&#x27;Argent, il étoit apparent qu&#x27;il
 croyoit pas qu&#x27;il fut destiné directement au payement de Leurs Troupes, mais qu&#x27;il croyoit qu&#x27;il étoit destiné et
 ad[re]ssé à des Sujets de Sa Majesté Prussienne, et je crois effectivement que toutes les Caisses qui ne sont pas
 [?désignées] dans la Requête, finiront par être declarées de bonne prise.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R2067_en.md">R2067_en.md</a></p><pre>&lt;!-- English translation of read/R2067_reading.md (Claude Opus 5.5, 23 Oct 2026), with the same holes. --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/affry1757/read/R2067_en.md">R2067_en.md</a></p><pre translate="no">&lt;!-- English translation of read/R2067_reading.md (Claude Opus 5.5, 23 Oct 2026), with the same holes. --&gt;
 
 # R2067, d&#x27;Affry to &quot;B&quot;, The Hague, 17 January 1758 (no. 283): English translation
 
@@ -3418,7 +3418,7 @@ in the petition will end by being declared good prize.</pre></details>
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Koninklijk Huisarchief, The Hague, via DECODE</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="kauderbach1754.html" rel="prev">&larr; Kauderbach 1754 1754&ndash;56</a><a href="affry1757c.html" rel="next">d&rsquo;Affry to Stainville 1757 1757 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

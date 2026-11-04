@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">30 c 19 g 4, 4 30 12 30 19, 2 30 f 16 0 8 a 0 2 12 20 30 90 30 80 0<br>a 0 u 4 19 88 30 0 20 4 a 16 0 30</div>
+  <div class="cipherstrip" translate="no">30 c 19 g 4, 4 30 12 30 19, 2 30 f 16 0 8 a 0 2 12 20 30 90 30 80 0<br>a 0 u 4 19 88 30 0 20 4 a 16 0 30</div>
   <p class="kicker">France · homophonic substitution, mixed alphabet · 1644</p>
   <h1>Sir Richard Forster, 13 May 1644</h1>
   <p class="sub">Archives départementales du Val-d&rsquo;Oise, 68.H.8, troisième liasse · published by Karen Britland (2013) · transcribed by S. Tomokiyo (2021)</p>
@@ -139,9 +139,9 @@ depend on it.</li>
 
 <h2 id="method"><span class="num">06</span> Method and files</h2>
 <ol>
-<li>Tokeniser, groups, Pitt&rsquo;s key and literal decode (<code>targets/forster/key.py</code>).</li>
-<li>Letters-only French 5-gram, permutation test, blind annealer, six matched controls (<code>ng5fr.py</code>, <code>solve.py</code>, <code>run1.txt</code>).</li>
-<li>Word-edge model with <em>u/v</em>, <em>i/j</em> normalisation, same tests (<code>solve2.py</code>, <code>run2&ndash;4.txt</code>); the 134-letter repeat (<code>control134.py</code>, <code>run5_134.txt</code>).</li>
+<li>Tokeniser, groups, Pitt&rsquo;s key and literal decode (<code translate="no">targets/forster/key.py</code>).</li>
+<li>Letters-only French 5-gram, permutation test, blind annealer, six matched controls (<code translate="no">ng5fr.py</code>, <code translate="no">solve.py</code>, <code translate="no">run1.txt</code>).</li>
+<li>Word-edge model with <em>u/v</em>, <em>i/j</em> normalisation, same tests (<code translate="no">solve2.py</code>, <code translate="no">run2&ndash;4.txt</code>); the 134-letter repeat (<code translate="no">control134.py</code>, <code translate="no">run5_134.txt</code>).</li>
 </ol>
 <p class="muted">Checked: Pitt&rsquo;s input against the blog text; the key against 20,000 permutations; ciphertext-only recovery and six matched controls under four
 models. Not checked: the manuscript; Britland&rsquo;s article itself beyond its abstract and the readings quoted by Pitt.</p>
@@ -151,7 +151,7 @@ models. Not checked: the manuscript; Britland&rsquo;s article itself beyond its 
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>Forster papers, 13 May 1644</h3>
 <p>A ciphered French passage dated 13 May 1644 in the papers of Sir Richard Forster (Val-d&#x27;Oise 68.H.8): spiritual counsel that there is no cause for scruple, and that the correspondent should take the ways of prudence to preserve his life, the better to serve God and his brethren, weighing whether it is better to act or to endure. Recipient not established.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/forster/ciphertext.txt">ciphertext.txt</a></p><pre>d. c., t. g., p., 4. 30. q. 30. 19., x. 30. f. 16. 2. 50., a. 0. 40. 12. 20.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/forster/ciphertext.txt">ciphertext.txt</a></p><pre translate="no">d. c., t. g., p., 4. 30. q. 30. 19., x. 30. f. 16. 2. 50., a. 0. 40. 12. 20.
 30. y. 30. c. 2., 7. 0., u. 4. t. 88. 30. 0. l. p., a. d. 2. 30.,
 ie vous en responds et mesmes dans c. 0. x. l. 2. d. e. c.
 0. 40., 7. 2., y. 0. 20. n. 2. 12. 50. 16. s. t., 90. 20. 0. t. 2. 14.
@@ -164,7 +164,7 @@ d. g. 0., 90. 4. 20. c. p., u. 30. 80. 50. 16. y. c. d. q. 4. 8.
 s. 30. 20., 80. 0. x. 4. c. 30. 50., 7. 0., 30. s. x., 70. 20
 2. l. 0. 40. et mesurer a cela sil est meilleur d’agir, ou
 de soupir 13. de may. 1644</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/forster/texts/13may1644_decryption.md">13may1644_decryption.md</a></p><pre># Forster, 13 May 1644: decryption with Pitt&#x27;s key (copied from NOTES.md section 2)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/forster/texts/13may1644_decryption.md">13may1644_decryption.md</a></p><pre translate="no"># Forster, 13 May 1644: decryption with Pitt&#x27;s key (copied from NOTES.md section 2)
 
 Copied verbatim from NOTES.md: `key.py` applies Robert Pitt&#x27;s table (`src/pitt/recovered_key.json`) literally; the
 tokens in bold conflict with the other occurrences of their symbol (slips). `|` marks the clear passages. Pitt&#x27;s own
@@ -182,7 +182,7 @@ souffrir/subir.&quot;
 
 Variant readings (NOTES.md): Britland&#x27;s correspondents read &quot;aucune voie de scrupule&quot; and &quot;preveu seulement&quot; where
 Pitt reads &quot;aucun subiet&quot; and &quot;prenez&quot;; Britland gives the clear phrase as &quot;de soubir&quot; where Tomokiyo has &quot;soupir&quot;.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/forster/src/pitt/decoder_output.txt">decoder_output.txt</a></p><pre>LITERAL DECODING WITH THE SUPPLIED PROPOSED KEY
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/forster/src/pitt/decoder_output.txt">decoder_output.txt</a></p><pre translate="no">LITERAL DECODING WITH THE SUPPLIED PROPOSED KEY
 207 cipher tokens; 34 distinct symbols
 No editorial repairs; f -&gt; b is a tentative lexical assignment.
 
@@ -233,7 +233,7 @@ COMPLETE CIPHER GROUP ALIGNMENT
 37. 202-207: 70 20 2 l 0 40 -&gt; freres
 [ALREADY PLAINTEXT] et mesurer a cela sil est meilleur d’agir, ou
 de soupir 13. de may. 1644</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/forster/src/pitt/README.md">README.md</a></p><pre># Forster cipher — 13 May 1644
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/forster/src/pitt/README.md">README.md</a></p><pre translate="no"># Forster cipher — 13 May 1644
 
 A reproducible AI-assisted reconstruction of the French passage dated
 **13 May 1644** in the Richard Forster papers: ciphertext, proposed key, Python
@@ -423,7 +423,7 @@ This repository’s code, key, and editorial documentation are released under th
 [MIT License](LICENSE), permitting free use, modification, and redistribution,
 including commercial use. The historical passage is attributed above; the license
 does not extend to external publications linked as sources.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/forster/texts/13may1644_reading.md">13may1644_reading.md</a></p><pre>&lt;!-- Reading of the 13 May 1644 cipher written 23 Oct 2026 (Claude Opus 5.5, verification 5) from the literal decode with Robert Pitt&#x27;s key in texts/13may1644_decryption.md: word division, apostrophes and punctuation added, spelling as decoded (u for v, i for j). The four slips the decode marks in bold (sd, i, c, y: tokens that conflict with the other occurrences of their symbol) are read with the symbol&#x27;s value elsewhere: seulement, pour, conseruer, sacrifice. Clear passages of the letter in ⟨ ⟩. Variants: Britland&#x27;s correspondents read &quot;aucune voie de scrupule&quot; and &quot;preveu seulement&quot;; Britland gives &quot;de soubir&quot; for Tomokiyo&#x27;s &quot;soupir&quot;. --&gt;
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/forster/texts/13may1644_reading.md">13may1644_reading.md</a></p><pre translate="no">&lt;!-- Reading of the 13 May 1644 cipher written 23 Oct 2026 (Claude Opus 5.5, verification 5) from the literal decode with Robert Pitt&#x27;s key in texts/13may1644_decryption.md: word division, apostrophes and punctuation added, spelling as decoded (u for v, i for j). The four slips the decode marks in bold (sd, i, c, y: tokens that conflict with the other occurrences of their symbol) are read with the symbol&#x27;s value elsewhere: seulement, pour, conseruer, sacrifice. Clear passages of the letter in ⟨ ⟩. Variants: Britland&#x27;s correspondents read &quot;aucune voie de scrupule&quot; and &quot;preveu seulement&quot;; Britland gives &quot;de soubir&quot; for Tomokiyo&#x27;s &quot;soupir&quot;. --&gt;
 
 # Forster papers, 13 May 1644
 
@@ -433,7 +433,7 @@ Il n&#x27;y a aucun subiet de scrupule de manquer a Dieu; ⟨ie vous en responds
 prenez seulement les uoyes de prudence pour conseruer uotre uie, pour en faire a Dieu un plus grand sacrifice par la
 multiplication des uos seruices pour le salut de uos freres; ⟨et mesurer a cela s&#x27;il est meilleur d&#x27;agir, ou de
 soupir. 13. de may. 1644.⟩</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/forster/texts/13may1644_en.md">13may1644_en.md</a></p><pre>&lt;!-- English translation of texts/13may1644_reading.md (Claude Opus 5.5, 23 Oct 2026); clear passages in ⟨ ⟩ as in the reading. --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/forster/texts/13may1644_en.md">13may1644_en.md</a></p><pre translate="no">&lt;!-- English translation of texts/13may1644_reading.md (Claude Opus 5.5, 23 Oct 2026); clear passages in ⟨ ⟩ as in the reading. --&gt;
 
 # Forster papers, 13 May 1644: English translation
 
@@ -451,14 +451,14 @@ services for the salvation of your brethren; ⟨and to measure by this whether i
 <li>S. Tomokiyo, blog post of 21 September 2021, and <em>Unsolved Historical Ciphers</em> (<a href="https://cryptiana.web.fc2.com/code/unsolved.htm">cryptiana</a>).</li>
 <li>R. Pitt, <a href="https://github.com/robertpitt/forster-cipher">forster-cipher</a> (GitHub, September 2026; Lasry and Biermann credited in the README).</li>
 </ul>
-<p class="muted">Analysis scripts and the ciphertext are in the repository (<code>targets/forster/</code>).</p>
+<p class="muted">Analysis scripts and the ciphertext are in the repository (<code translate="no">targets/forster/</code>).</p>
 
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="lucca.html" rel="prev">&larr; Lucca 1644</a><a href="letellier1644.html" rel="next">Le Tellier to Marca 1644 1644 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>
 </body>

@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">
+  <div class="cipherstrip" translate="no">
     <span class="row">+ &#8752; q X 9 &#948; x r 4 y gg a n s + &#658; 8 4 f 6 // T 23</span>
     <span class="row">&hellip; partira demain ou apres &hellip; ratrapera monsieur d&rsquo;Halincourt</span>
   </div>
@@ -76,9 +76,9 @@
 <table>
 <thead><tr><th>Letter</th><th>Gallica</th><th>Lines</th><th>Signs</th><th>In runs of French</th><th>Deciphered by</th></tr></thead>
 <tbody>
-<tr><td>fr. 15572 ff. 218r&ndash;219r, Matignon to the King, Mons&eacute;gur, May 1586</td><td><code>btv1b9061879d</code>, views 225&ndash;226</td><td>79</td><td>2,138</td><td>1,856 (86.8%)</td><td>Harumi-Matsuba</td></tr>
-<tr><td>fr. 15573 f. 120r&ndash;v, autumn 1586</td><td><code>btv1b90618780</code>, views 246&ndash;247</td><td>39</td><td>1,103</td><td>1,002 (90.8%)</td><td>Harumi-Matsuba</td></tr>
-<tr><td>fr. 15573 f. 385r&ndash;v, autumn 1586</td><td><code>btv1b90618780</code>, views 752&ndash;753</td><td>68</td><td>2,052</td><td>1,702 (82.9%)</td><td>Brett Burford</td></tr>
+<tr><td>fr. 15572 ff. 218r&ndash;219r, Matignon to the King, Mons&eacute;gur, May 1586</td><td><code translate="no">btv1b9061879d</code>, views 225&ndash;226</td><td>79</td><td>2,138</td><td>1,856 (86.8%)</td><td>Harumi-Matsuba</td></tr>
+<tr><td>fr. 15573 f. 120r&ndash;v, autumn 1586</td><td><code translate="no">btv1b90618780</code>, views 246&ndash;247</td><td>39</td><td>1,103</td><td>1,002 (90.8%)</td><td>Harumi-Matsuba</td></tr>
+<tr><td>fr. 15573 f. 385r&ndash;v, autumn 1586</td><td><code translate="no">btv1b90618780</code>, views 752&ndash;753</td><td>68</td><td>2,052</td><td>1,702 (82.9%)</td><td>Brett Burford</td></tr>
 </tbody>
 </table>
 <figure data-credit="Biblioth&egrave;que nationale de France, fr. 15573 f. 385r (view 752), via Gallica"><img src="mayenne1586c2_f385r.jpg" alt="Four lines of hand-drawn cipher signs: barred crosses, figures such as 23, slashes and loops" loading="lazy"><figcaption>The first four lines of f. 385r. In Burford&rsquo;s reading they begin <em>&hellip; partira demain ou apres &hellip; ratrapera monsieur d&rsquo;Halincourt</em>, which agrees with the fragment Tomokiyo published. <span class="credit">Image: Biblioth&egrave;que nationale de France, fr. 15573 f. 385r (view 752), via Gallica.</span></figcaption></figure>
@@ -101,7 +101,7 @@
 
 <h2 id="checks"><span class="num">05</span> How it was checked</h2>
 <ul>
-<li><strong>One measure for all three.</strong> Both contributors&rsquo; files were put in one format (<code>to_read.py</code>) and measured with the rule used for the Cipher-1 and Cipher-3 entries. A sign counts only inside a run of at least three words of a period lexicon (<code>fr-1600-letters</code>) totalling ten letters or more. The result is 1,856 of 2,138 signs for ff. 218&ndash;219, 1,002 of 1,103 for f. 120 and 1,702 of 2,052 for f. 385.</li>
+<li><strong>One measure for all three.</strong> Both contributors&rsquo; files were put in one format (<code translate="no">to_read.py</code>) and measured with the rule used for the Cipher-1 and Cipher-3 entries. A sign counts only inside a run of at least three words of a period lexicon (<code translate="no">fr-1600-letters</code>) totalling ten letters or more. The result is 1,856 of 2,138 signs for ff. 218&ndash;219, 1,002 of 1,103 for f. 120 and 1,702 of 2,052 for f. 385.</li>
 <li><strong>Shuffled keys.</strong> With the letter values shuffled, 20 keys give medians of 10&ndash;16% per letter and at most 31%.</li>
 <li><strong>Sense is not correctness.</strong> The measure shows the key turns the transcriptions into French. It does not show that each sign was named right, and the calibrations put that at 75&ndash;93% per sign.</li>
 <li><strong>On the images.</strong> Here the line counts and layout of ff. 218v&ndash;219r, f. 120r and f. 385r were compared with the contributors&rsquo; files, and the clear closing and signature of f. 219r were transcribed. All three letters show the same signs (barred crosses, three dots, double slashes, figures). f. 120r also has a few small superscript marks over some signs, which neither contributor mentions; examined on 23 October 2026, they are cipher signs, not glosses.</li>
@@ -121,7 +121,7 @@
 <h3>fr. 15572 ff. 218r-219r, Matignon to Henri III, camp before Monségur, May 1586 (Harumi-Matsuba) <span class="st partial">read in part</span></h3>
 <p>Matignon reports the battery before Monségur: about twelve hundred shots with less effect than hoped, three breaches, Sacramore de Birague badly wounded trying for the lodgement. The army is in need, the forces shrink daily and the pay is what matters most; Mayenne has a fever, but the physicians see no danger.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (92% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f218_219_harumi/transcription_f218r.txt">transcription_f218r.txt</a></p><pre># EN: Sign-by-sign transcription of the cipher of BnF fr. 15572 f. 218r (Gallica view 225, right page), read by eye on 19-20 Oct 2026; not final. Sign names are those of data/key.tsv; | = a divider stroke in the manuscript; a trailing ? = shape uncertain; &lt;...&gt; = a sign not yet named.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f218_219_harumi/transcription_f218r.txt">transcription_f218r.txt</a></p><pre translate="no"># EN: Sign-by-sign transcription of the cipher of BnF fr. 15572 f. 218r (Gallica view 225, right page), read by eye on 19-20 Oct 2026; not final. Sign names are those of data/key.tsv; | = a divider stroke in the manuscript; a trailing ? = shape uncertain; &lt;...&gt; = a sign not yet named.
 # BnF fr.15572 f.218r 暗号部分の書き起こし（2026-10-19、目視。確定ではない）
 # 画像：Gallica ark:/12148/btv1b9061879d の225コマ（右ページ）。https://gallica.bnf.fr/ark:/12148/btv1b9061879d/f225.item
 # 記号名は key.tsv。| は原本の縦線（区切り）。末尾の ? は形の読みに自信がないもの。&lt;…&gt; は名前を付けていない記号。
@@ -153,7 +153,7 @@ c24: r 6 8 | s 4H | fi // T # =la | .12. | 2 dl n H r T # | rp? | F o3 nd dl rp?
 c25: dl T xs dl 6 8 | x | =il | sp dl 6 =est | + T xs y2 rp r r5 9 T | .12. | &lt;dot-th-dot&gt; &lt;dot-J-dot&gt; 9 fi 3bar
 c26: // T 27 &lt;b6&gt; th sp dl | J // lq 9 4 8 J | =et | .8-. | T fi 6 tri 8 4 n 6 r | .3. | pi
 # f.218v に続く（未着手）</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f218_219_harumi/transcription_f218v.txt">transcription_f218v.txt</a></p><pre># EN: Sign-by-sign transcription of the cipher of BnF fr. 15572 f. 218v (Gallica view 226, left page), read by eye on 20 Oct 2026; not final. Sign names are those of data/key.tsv; | = a divider stroke; a trailing ? = shape uncertain; &lt;...&gt; = a sign not yet named.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f218_219_harumi/transcription_f218v.txt">transcription_f218v.txt</a></p><pre translate="no"># EN: Sign-by-sign transcription of the cipher of BnF fr. 15572 f. 218v (Gallica view 226, left page), read by eye on 20 Oct 2026; not final. Sign names are those of data/key.tsv; | = a divider stroke; a trailing ? = shape uncertain; &lt;...&gt; = a sign not yet named.
 # BnF fr.15572 f.218v 暗号部分の書き起こし（2026-10-19、目視。確定ではない）
 # 画像：Gallica ark:/12148/btv1b9061879d の226コマ（左ページ）。https://gallica.bnf.fr/ark:/12148/btv1b9061879d/f226.item
 # 記号名は key.tsv。| は原本の縦線（区切り）。末尾の ? は形の読みに自信がないもの。&lt;…&gt; は名前を付けていない記号。
@@ -192,7 +192,7 @@ c31: // T # fn n r5 | =et | cd rh // y2 | =qui y | J dl r5 + | 6 4H s r xs A&lt;
 c32: A&lt; n # r | th 4H 6 fi rh | .3. | =la | pi r5 r a 4 n tri fn 4H | xo | 4 psi + n 6 9 r5 dl
 c33: =la | rh 4H | s o3 y 8 dl | xo T 4 6 oc | + | T rC | Bf co # s r f | dl H x J | 9 n
 c34: gam fi 6 T dl 6 8 | Th f | =les | fi o3 T # f | =et | T dl // y2 | =que | s r | J dl r5 4 | .yy.</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f218_219_harumi/transcription_f219r.txt">transcription_f219r.txt</a></p><pre># EN: Sign-by-sign transcription of the cipher of BnF fr. 15572 f. 219r (Gallica view 226, right page), read by eye on 20 Oct 2026; not final. Sign names are those of data/key.tsv; | = a divider stroke; a trailing ? = shape uncertain.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f218_219_harumi/transcription_f219r.txt">transcription_f219r.txt</a></p><pre translate="no"># EN: Sign-by-sign transcription of the cipher of BnF fr. 15572 f. 219r (Gallica view 226, right page), read by eye on 20 Oct 2026; not final. Sign names are those of data/key.tsv; | = a divider stroke; a trailing ? = shape uncertain.
 # BnF fr.15572 f.219r 暗号部分の書き起こし（2026-10-19、目視。確定ではない）
 # 画像：Gallica ark:/12148/btv1b9061879d の226コマ（右ページ）。https://gallica.bnf.fr/ark:/12148/btv1b9061879d/f226.item
 # 記号名は key.tsv。| は原本の縦線（区切り）。末尾の ? は形の読みに自信がないもの。
@@ -218,7 +218,7 @@ c17: s fi 6 f | en2 | o3 fn 8 | m // r5 8 | pi o3 Ln u1? u2? r fi fn n // 6 | =e
 c18: A&lt; | 9 fi dl T | 2 dl # s zk? | 4 T s th fn | fi 6 9 n s 4H | .3. | zk r r5 n lq
 c19: .20. | Re? | 2-? | .3. | lq o3 6 tri 4H T rh
 # この後に平文の結び（Sire, …）と日付・署名が続く</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f218_219_harumi/READING.en.md">READING.en.md</a></p><pre># Reading (the enciphered parts of BnF fr. 15572 ff. 218r–219r)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f218_219_harumi/READING.en.md">READING.en.md</a></p><pre translate="no"># Reading (the enciphered parts of BnF fr. 15572 ff. 218r–219r)
 
 [日本語](READING.md)
 
@@ -248,7 +248,7 @@ From the camp before Monségur to the King (May 1586).
 - The army is worn out and needs relief and provision for the future. The writer awaits the King&#x27;s decision on how to use the army after the siege, on the Duke of Mayenne&#x27;s proposals.
 - Something (sign 36, value unknown; guessed to be victuals, since it must last until the harvest) will be hard to find in sufficient quantity in the province and must be brought from Brittany. The forces shrink every day, and the troops not from the region want to leave. Most important of all is the payment of the troops.
 - The Duke of Mayenne has a fever, but the physicians are hopeful and there is no sign of danger.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f218_219_harumi/decoded_f218r.txt">decoded_f218r.txt</a></p><pre>c01 ET y ayant EST e tire
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f218_219_harumi/decoded_f218r.txt">decoded_f218r.txt</a></p><pre translate="no">c01 ET y ayant EST e tire
 c02 pres DE dous e cens coups MAIS ne feirent
 c03 PAS TOUT e FOIS TANT DE fect QUE lon sestoit promis
 c04 PARCEQUE LA muraile setroua ausi BEAUCOUP meileure
@@ -276,7 +276,7 @@ c25 eusent u IL sen EST ausyperdu DES [?][?]dix
 c26 oud[?]use soldats ET UN uingtaine DE b
 # 記号 713 個のうち、表と推定を合わせて値が付いたもの 704 個（98.7%）
 # 704 of 713 signs (98.7%) given a value by table and inferred values</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f218_219_harumi/decoded_f218v.txt">decoded_f218v.txt</a></p><pre>c01 eses IL y EN eust eu BIEN dauantaige c JE
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f218_219_harumi/decoded_f218v.txt">decoded_f218v.txt</a></p><pre translate="no">c01 eses IL y EN eust eu BIEN dauantaige c JE
 c02 neuse faict retirer TOUT e [?] ieune no
 c03 blese QUI EST oit fort dispos EE dy aler
 c04 DE EN PAR nauons hier ET auiourdhuy faict
@@ -312,7 +312,7 @@ c33 LA re colte quant a us forces elus di
 c34 minuent TOUT s LES iours ET ueoy QUE ce sera ENCORE
 # 記号 926 個のうち、表と推定を合わせて値が付いたもの 921 個（99.5%）
 # 921 of 926 signs (99.5%) given a value by table and inferred values</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f218_219_harumi/decoded_f219r.txt">decoded_f219r.txt</a></p><pre>c01 pis au PAR tir DE cesiege CAR LES [?]s DE [?]a QUI n
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f218_219_harumi/decoded_f219r.txt">decoded_f219r.txt</a></p><pre translate="no">c01 pis au PAR tir DE cesiege CAR LES [?]s DE [?]a QUI n
 c02 esontdu pais ssiu ueulent res retirer
 c03 ET ce les DE VOSTRE MAJESTE QUI ne sont gueres fortes
 c04 safoibliront ENCORE dauantaige ET seil
@@ -333,7 +333,7 @@ c18 a dieu mercp aucun indice DE peril
 c19 MAIS [?] [?] DE longeur
 # 記号 498 個のうち、表と推定を合わせて値が付いたもの 485 個（97.4%）
 # 485 of 498 signs (97.4%) given a value by table and inferred values</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f218_219_harumi/f218_219_reading.md">f218_219_reading.md</a></p><pre># Matignon to Henri III, camp before Monségur, May 1586 (BnF fr. 15572 ff. 218r-219r): reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f218_219_harumi/f218_219_reading.md">f218_219_reading.md</a></p><pre translate="no"># Matignon to Henri III, camp before Monségur, May 1586 (BnF fr. 15572 ff. 218r-219r): reading
 
 The French reading of the enciphered parts in `f218_219_harumi/READING.en.md` (Harumi-Matsuba&#x27;s contribution),
 copied here alone 23 Oct 2026 (translation wave v7) so that it is scored and translated without the summary and
@@ -353,7 +353,7 @@ Et y ayant esté tiré pres de douze cens coups, mais ne feirent pas toutesfois 
 
 ### f. 219r (after the cipher: the clear closing « Sire, je supplie le Createur … Du camp devant Monsegur ce [?] May 1586 » and the signature Matignon)
 pis au partir de ce siege, car les [?…] qui ne sont du pais [?…] veulent se retirer, et celles de Vostre Majesté, qui ne sont gueres fortes, s&#x27;afoibliront encore davantaige, et [?…] par moy celles de gendarmes ; de sorte qu&#x27;il seroit bien necessaire de refraischir les uns et les autres pour continuer la guerre en ce pays. Mais ce qui est le plus important, c&#x27;est le payement, car sans cela, [?estant] ordinairement aux sieges des villes, il ne fault pas esperer d&#x27;y pouvoir [retenir] les soldats. [?…] je sceu que [?…] vous [?…] souvent [?…] adverty, qui me gardera d&#x27;en ennuyer icy [V. M.] davantaige. [?Quant] a la disposition dudict s[ieu]r du Mayne, il n&#x27;a [?…] encore [?…] a sa fievre ; toutesfois les medecins en ont fort bonne opinion, et n&#x27;y a, Dieu mercy, aucun indice de peril, mais [?…] de longueur.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f218_219_harumi/f218_219_en.md">f218_219_en.md</a></p><pre># Matignon to Henri III, camp before Monségur, May 1586 (BnF fr. 15572 ff. 218r-219r): English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f218_219_harumi/f218_219_en.md">f218_219_en.md</a></p><pre translate="no"># Matignon to Henri III, camp before Monségur, May 1586 (BnF fr. 15572 ff. 218r-219r): English translation
 
 Translation (Claude Opus 5.5, 23 Oct 2026) of `f218_219_harumi/f218_219_reading.md`, the reading of the enciphered
 parts (Harumi-Matsuba), with the clear words before and after them. Same holes: `[x]` supplied, `[?]` a sign with no
@@ -408,7 +408,7 @@ of length.</pre></details>
 <h3>fr. 15573 f. 120r-v, autumn 1586, sender and recipient unknown (Harumi-Matsuba) <span class="st stuck">decoded, not read</span></h3>
 <p>&quot;This prince&quot; is more vexed than ever; the treasurer Bilart wrote that thirty thousand écus in gold have been ready for ten days, the Cardinal of Guise writes that five thousand are coming, but not even a hundred and five thousand would set the army right. Biron cannot be kept; deputies of the army have come; papers of the secretary La Marsilière have fallen into &quot;our&quot; hands.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f120_harumi/transcription_f120r.txt">transcription_f120r.txt</a></p><pre># BnF fr.15573 f.120r 暗号の書き起こし（2026-10-20、目視。確定ではない）
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f120_harumi/transcription_f120r.txt">transcription_f120r.txt</a></p><pre translate="no"># BnF fr.15573 f.120r 暗号の書き起こし（2026-10-20、目視。確定ではない）
 # 画像：Gallica ark:/12148/btv1b90618780 の246コマ（f. 120r）。画像はこのリポジトリに含めていない
 # 記号名は Brett Burford 氏の見本表 v3（BravoBravoIX/mayenne-forget-1586-cipher-reading の method/sheet-v3.png、CC BY 4.0）に合わせた。見本にない記号は data/key.tsv に名前を足した。
 # ^(…) は行間の書き込み（解読と採点には使わない）
@@ -444,7 +444,7 @@ c28: m f a z9 f2 .15. w 2 w a // 8s pi delta phi a # delta tt 2 4 n 6 g th 6 r
 c29: .u. 9 th g r S # delta a 4 n # delta Ee 8s 4 ls g n q+ f r # r 2o nous y delta
 c30: B : hs alpha gg a n S th q+ n r # r eps .12. 4 box + f ls r g z9 4d g zk r
 c31: 4 9 r eps .12. curlo n 6 4 f2 S delta g % g r 8s pi q+ r 2o q+ f m + dsi+ r 6 a</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f120_harumi/transcription_f120v.txt">transcription_f120v.txt</a></p><pre># BnF fr.15573 f.120v 暗号の書き起こし（2026-10-20、目視。確定ではない）
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f120_harumi/transcription_f120v.txt">transcription_f120v.txt</a></p><pre translate="no"># BnF fr.15573 f.120v 暗号の書き起こし（2026-10-20、目視。確定ではない）
 # 画像：Gallica ark:/12148/btv1b90618780 の247コマ（f. 120v）。画像はこのリポジトリに含めていない
 # 記号名は transcription_f120r.txt と同じ。{x} は原本で線を引いて消してある記号（採点に入れない）
 c01: Tl z9 6b // 6 z9 eps g th # 0 zk 4 Id hs delta a r Q g th # Ee T delta 6 x r {struck}
@@ -455,7 +455,7 @@ c05: f ls delta 9 th I .26. {pi} w S r # a 4 n 6 Q dsi r H r g th pi dsi n g a :
 c06: n 8 yy g n xd f r zk 8s 4 n 6 r g Q H r zk // I : n a 6b 4 n # delta rect
 c07: z9 tri ls 4 6 9 g r box delta S a f .26. tt r L delta 8s f g 6 r m th ls r 6
 c08: f 4 .20. dsi w // L r g xbar dbar oo oo Dsign delta 4t ud R</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f120_harumi/READING.en.md">READING.en.md</a></p><pre># Reading (cipher of BnF fr. 15573 f. 120r–v)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f120_harumi/READING.en.md">READING.en.md</a></p><pre translate="no"># Reading (cipher of BnF fr. 15573 f. 120r–v)
 
 [日本語](READING.md)
 
@@ -492,7 +492,7 @@ c08: f 4 .20. dsi w // L r g xbar dbar oo oo Dsign delta 4t ud R</pre></details>
 
 ## Summary
 The summary is under &quot;Content&quot; in [README.en.md](../README.en.md). The sender and the date are not known. Persons are given as spelt (le cardinal de Guise, le mareschal de Biron, le secretaire La Marsilière, le tresorier Bilart, le sieur [M]ontablaye); who they are was not checked.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f120_harumi/decoded_f120r.txt">decoded_f120r.txt</a></p><pre>c01 [?]a[?]u[?] IE VOUS a(s|ss)eure QUE ceprince EST PLUS e(a|n)uye
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f120_harumi/decoded_f120r.txt">decoded_f120r.txt</a></p><pre translate="no">c01 [?]a[?]u[?] IE VOUS a(s|ss)eure QUE ceprince EST PLUS e(a|n)uye
 c02 ET fa(s|z)che QUE (i|s)a MAIS ET niaordre DE ledi(s|ss)ua DE rde
 c03 cro(i|s)re QUE LA nece(s|ss)ite QUI lsoufrene(s|z)oita DES
 c04 (i|s)e(i|s)ng CAR EST consi DE re QUE LES efectsne(s|z)erapo
@@ -525,7 +525,7 @@ c30 sort PAR ticuliere MENT DES afa(i|s)res DE [?]spe
 c31 ade MENT DES oinances ET semble QUI l(i|s)facent
 # 記号 885 個のうち、表・Burford・推定を合わせて値が付いたもの 874 個（98.8%）
 # 874 of 885 signs (98.8%) given a value by the table, Burford and inferred values</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f120_harumi/decoded_f120v.txt">decoded_f120v.txt</a></p><pre>c01 PLUS DE fon DE MENT suripaurete QUE sur LA uenue
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f120_harumi/decoded_f120v.txt">decoded_f120v.txt</a></p><pre translate="no">c01 PLUS DE fon DE MENT suripaurete QUE sur LA uenue
 c02 l[?]urs EST ranger(i|s) QUI ldict EST reremise
 c03 POUR utemp(i|s)lonne(s|z)auroitcomir EN drel(q|x)
 c04 tort QUE LA rupture DE c EST e ARMEE faict(a|n)user
@@ -535,7 +535,7 @@ c07 DE grandsefect(i|s) CAR LES e(a|n)em(i|s)snefuren
 c08 (i|s)a MAIS SI EST o(a|n)es(s|ss)y[?][?][?]eeuh
 # 記号 218 個のうち、表・Burford・推定を合わせて値が付いたもの 214 個（98.2%）
 # 214 of 218 signs (98.2%) given a value by the table, Burford and inferred values</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f120_harumi/f120_reading.md">f120_reading.md</a></p><pre># fr. 15573 f. 120r-v, autumn 1586, sender and recipient unknown: partial reading (not read)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f120_harumi/f120_reading.md">f120_reading.md</a></p><pre translate="no"># fr. 15573 f. 120r-v, autumn 1586, sender and recipient unknown: partial reading (not read)
 
 Re-read 23 Oct 2026 (Claude Opus 5.5; REREAD_BRIEF, batch b21) from Harumi-Matsuba&#x27;s reading (`READING.en.md`), checked
 word by word against his letter decode (`decoded_f120r.txt`, `decoded_f120v.txt`; `research/reading_audit/b21_may_check.py`:
@@ -554,7 +554,7 @@ from context (three places after &#x27;mil&#x27;). ‖ marks the turn of the lea
 <h3>fr. 15573 f. 385r-v, from Mayenne&#x27;s side, autumn 1586 (Brett Burford, v0.2) <span class="st stuck">decoded, not read</span></h3>
 <p>The army in Guyenne is breaking up at the start of winter 1586: not a thousand foot left, men asking for leave, no powder. The letter asks what to do with the regiments and the foreigners over the winter, and names the landsknechts from Champagne, a company of light horse, Monsieur d&#x27;Halincourt, Monsieur de Matignon and La Roche.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f385_burford/f385r/signs.txt">signs.txt</a></p><pre># BnF fr. 15573 f. 385r (Gallica view 752): sign names as read (five passes voted, image-checked corrections applied, decoder switches applied), one manuscript line per row: line number, a tab, the signs. Names are those of the reference sheet (method/). A slash (/) is a word divider: it carries no letter and is not counted as a sign.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f385_burford/f385r/signs.txt">signs.txt</a></p><pre translate="no"># BnF fr. 15573 f. 385r (Gallica view 752): sign names as read (five passes voted, image-checked corrections applied, decoder switches applied), one manuscript line per row: line number, a tab, the signs. Names are those of the reference sheet (method/). A slash (/) is a word divider: it carries no letter and is not counted as a sign.
 1	+ dsi q+ x g delta xbar r th 4 y gg a n ls + z9 8s 4 f 6 // T 23 z9 2u L f f2 %
 2	# 4 8 hs 4 zk delta ls 2x A 9 F 4 q+ n 6 S // th # a f th g Q f curl T f r ls 2x invT
 3	dsi 6 // f2 a 0 q+ y r y 4 n xbar r ls 4 L 9 T + 6 S 4t ls 9 th 6 4t f // th ls 6 N
@@ -589,7 +589,7 @@ from context (three places after &#x27;mil&#x27;). ‖ marks the turn of the lea
 32	f2 4 8 4 : dsi r H delta Ee 4 tri ls r + pi q+ r % g delta a r 6 f ls zk ls r f 9 r H delta
 33	17 2o q+ 3 zk q+ 4 n 2u + // th dsi Ee tri th delta zk r 9 // n pi a S // 6 a f 6 th
 34	r ls % Q q+ : 6 y delta T r th n H delta ls ooC th : dbar r ls rect 9 dbar ls r th delta 6 n #</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f385_burford/f385v/signs.txt">signs.txt</a></p><pre># BnF fr. 15573 f. 385v (Gallica view 753): sign names as read (five passes voted, image-checked corrections applied, decoder switches applied), one manuscript line per row: line number, a tab, the signs. Names are those of the reference sheet (method/). A slash (/) is a word divider: it carries no letter and is not counted as a sign.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f385_burford/f385v/signs.txt">signs.txt</a></p><pre translate="no"># BnF fr. 15573 f. 385v (Gallica view 753): sign names as read (five passes voted, image-checked corrections applied, decoder switches applied), one manuscript line per row: line number, a tab, the signs. Names are those of the reference sheet (method/). A slash (/) is a word divider: it carries no letter and is not counted as a sign.
 1	2o 9 dbar z9 8s // th ls r # 9 th ls 4 6 a S w F dbar th r ls 10 q+ delta th r // dbar
 2	# delta g // q+ th z9 6 r q+ r 31 m 4 n ls r Gamma 4 th r f 4 S // 6 dsi z9 ls delta #
 3	Q z9 th n ooC 9 ls dots 6 8 17 z9 ls delta tri n Ee th z9 2 g // q+ 9 4 8 f Q z9 th
@@ -624,7 +624,7 @@ from context (three places after &#x27;mil&#x27;). ‖ marks the turn of the lea
 32	eps Lbar // ls a q+ r Lbar 4 n g 2o 9 f g 6 : g 8 4 th q+ ooC th 6 r S delta xbar n a delta
 33	% Q S r Q g 4 th : 6 f r th 6 2x n 4 2o w delta m // th ls 6 dbar 4 Lbar ls dots zk curl f
 34	phi x // 6 a Ee g r th q+ r S 4 th g delta Id delta Qh dsi 0 0 4t curl dots I</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f385_burford/f385-french.md">f385-french.md</a></p><pre># BnF fr. 15573 f. 385r–v (Mayenne–Forget Cipher-2, 1586): French text, literal and normalised
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f385_burford/f385-french.md">f385-french.md</a></p><pre translate="no"># BnF fr. 15573 f. 385r–v (Mayenne–Forget Cipher-2, 1586): French text, literal and normalised
 
 **Status: partial reading (v0.2). Not solved.** The evidence weighs toward French plaintext produced by the key; many stretches are unresolved (see `unresolved-v02.md`). Literal = what key.json gives for signs.txt (`data/f385r`, `data/f385v`); `[?name]` = a sign with no value. Normalised = the same letters with word breaks chosen by the decoder; `[..]` = letters that make no dictionary word; `=` = a word that runs on to the next line. Nothing has been emended. Source of the images: gallica.bnf.fr / BnF.
 
@@ -707,7 +707,7 @@ from context (three places after &#x27;mil&#x27;). ‖ marks the turn of the lea
 | 34 | enuontlaseulecauseuearmeesiiiepourou | en uont la seule cau seue armee si [i] ie pour ou |
 
 Letters of literal and normalised agree on every line: True.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f385_burford/f385r/plaintext-by-line.txt">plaintext-by-line.txt</a></p><pre>  1 asiluseseualpartirademainouapresdedensnet
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f385_burford/f385r/plaintext-by-line.txt">plaintext-by-line.txt</a></p><pre translate="no">  1 asiluseseualpartirademainouapresdedensnet
   2 ratraperamonsieurdhalincourtiusquespourusera·
   3 sinontillelaisseraaduancerduneiournee
   4 estachargeespressede·derepnterasama
@@ -741,7 +741,7 @@ Letters of literal and normalised agree on every line: True.</pre></details>
  32 nataosielelaagreableetsetenirpresdele
  33 tantquildeplaideaousilaguepedoibtcontinu
  34 eretquelonleueuilerenuoyericydyreuenir</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f385_burford/f385v/plaintext-by-line.txt">plaintext-by-line.txt</a></p><pre>  1 quidydemourerdurantcesthyuerieleueoy
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f385_burford/f385v/plaintext-by-line.txt">plaintext-by-line.txt</a></p><pre translate="no">  1 quidydemourerdurantcesthyuerieleueoy
   2 resoludenelepasfairevousauesaconsiderer
   3 quedeuiendronttantderegilaudemsoldatsquedeu
   4 iendrontaussilesestrangiersmndelesconte
@@ -775,7 +775,7 @@ Letters of literal and normalised agree on every line: True.</pre></details>
  32 mentportlepaisquidisnostaulenunecessite
  33 etquecequesauonseunaiaquiestefournyaproppours
  34 enuontlaseulecauseuearmeesiiiepourou</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f385_burford/f385_reading.md">f385_reading.md</a></p><pre># fr. 15573 f. 385r-v, from Mayenne&#x27;s side, autumn 1586: partial reading (not read)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f385_burford/f385_reading.md">f385_reading.md</a></p><pre translate="no"># fr. 15573 f. 385r-v, from Mayenne&#x27;s side, autumn 1586: partial reading (not read)
 
 Re-read 23 Oct 2026 (Claude Opus 5.5; REREAD_BRIEF, batch b21): a punctuated, word-divided partial reading of Brett
 Burford&#x27;s literal decode (v0.2, `f385-french.md`, letters unchanged), in the figures&#x27; spelling. [?word] = partly carried
@@ -813,7 +813,7 @@ si [?] y doibt demourer, ce sera toutsiours une despence de cent mil [?…] par 
 doivent entrer [?…] [?…] [?…] ne recevoir ce que dessus que par advis [?…] n&#x27;y a [?…] de iugement. [?…] foiblesse est tele
 que [?nous] ne pouons [?attaquer] [?…] n&#x27;y [?…] ou troys [?meschans] petits forts [?qui] ne valent [?] et [?…] [?…] le pais
 qui [?…] necessite, et que ce que [?…] eu [?…] a qui este fourny [?…] pour s&#x27;en vont la seule cause [?…] armee [?…].</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f385_burford/f385-english.md">f385-english.md</a></p><pre># BnF fr. 15573 f. 385r–v: English gist of the readable stretches (a translation, not the plaintext)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mayenne1586c2/f385_burford/f385-english.md">f385-english.md</a></p><pre translate="no"># BnF fr. 15573 f. 385r–v: English gist of the readable stretches (a translation, not the plaintext)
 
 **This is a translation by Claude of the stretches of `f385-french.md` that read as French.** It is not the literal plaintext, and it is not a full text. &quot;…&quot; marks unresolved stretches. Words in [brackets] are supplied or doubtful readings from `unresolved-v02.md`; *(?)* marks doubtful sense. Nothing is solved; the reading is partial (v0.2).
 
@@ -854,11 +854,11 @@ The writer is probably the Duke of Mayenne, or someone in his camp, writing to t
 <!-- replay:end -->
 <h2 id="sources"><span class="num">07</span> Sources</h2>
 <ul>
-<li>Biblioth&egrave;que nationale de France, fr. 15572 ff. 218&ndash;219 (Gallica <code>btv1b9061879d</code>, views 225&ndash;226) and fr. 15573 ff. 120 and 385 (<code>btv1b90618780</code>, views 246&ndash;247, 752&ndash;753).</li>
+<li>Biblioth&egrave;que nationale de France, fr. 15572 ff. 218&ndash;219 (Gallica <code translate="no">btv1b9061879d</code>, views 225&ndash;226) and fr. 15573 ff. 120 and 385 (<code translate="no">btv1b90618780</code>, views 246&ndash;247, 752&ndash;753).</li>
 <li><strong>Satoshi Tomokiyo</strong>, cryptiana, <a href="https://cryptiana.web.fc2.com/code/henryiii.htm"><em>Henry III&rsquo;s Cipher with Ambassadors</em></a>: the list of the letters, the Cipher-2 table, and the f. 385 fragment, credited to George Lasry.</li>
 <li><strong>Brett Burford</strong>, <a href="https://github.com/dbourdeau/cyphersolver/issues/46">issue 46</a> and <a href="https://github.com/BravoBravoIX/mayenne-forget-1586-cipher-reading">BravoBravoIX/mayenne-forget-1586-cipher-reading</a> (v0.2, 19 October 2026; Zenodo doi:10.5281/zenodo.23470961; data CC BY 4.0).</li>
 <li><strong>Harumi-Matsuba</strong>, <a href="https://github.com/dbourdeau/cyphersolver/issues/49">issue 49</a> with <a href="https://github.com/Harumi-Matsuba/matignon1586-public">Harumi-Matsuba/matignon1586-public</a>, and <a href="https://github.com/dbourdeau/cyphersolver/issues/51">issue 51</a> with <a href="https://github.com/Harumi-Matsuba/mayenne1586f120-public">Harumi-Matsuba/mayenne1586f120-public</a> (October 2026; data CC BY 4.0).</li>
-<li>Other entries for these papers: <a href="matignon1586c3.html">Matignon&rsquo;s Cipher-3</a>, a different cipher with its own page, and the Mayenne&ndash;Forget Cipher-1 despatches (<code>targets/matignon1586/</code>, in progress).</li>
+<li>Other entries for these papers: <a href="matignon1586c3.html">Matignon&rsquo;s Cipher-3</a>, a different cipher with its own page, and the Mayenne&ndash;Forget Cipher-1 despatches (<code translate="no">targets/matignon1586/</code>, in progress).</li>
 </ul>
 <p class="muted">Notes, profile and the contributors&rsquo; data in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/mayenne1586c2">targets/mayenne1586c2/</a>.</p>
 </main>
@@ -867,7 +867,7 @@ The writer is probably the Duke of Mayenne, or someone in his camp, writing to t
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Manuscript rights: Biblioth&egrave;que nationale de France</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="matignon1586tuple.html" rel="prev">&larr; Matignon tuple cipher 1586 1586</a><a href="saintluc1586b.html" rel="next">Saint-Luc 1586 (f. 260) 1586 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

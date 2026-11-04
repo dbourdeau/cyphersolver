@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-<div class="cipherstrip">20:. X:e 7:e^<br>pe ro con<br>number = consonant (20 p, 22 r, 7 c) &middot; mark after it = vowel &middot; superscript ^ = final n</div>
+<div class="cipherstrip" translate="no">20:. X:e 7:e^<br>pe ro con<br>number = consonant (20 p, 22 r, 7 c) &middot; mark after it = vowel &middot; superscript ^ = final n</div>
 <p class="kicker">Madrid &rarr; Don John of Austria in the Netherlands &middot; numerical syllabary &middot; 19 August 1578 &middot; deciphered with a key adapted from a sibling cipher</p>
 <h1>Antonio P&eacute;rez to Don John of Austria, Madrid, 19 August 1578</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_antonio-perez.jpg" alt="Antonio Pérez" title="Antonio Pérez: Portrait by Alonso Sánchez Coello, c. 1570 (Hospital Tavera, Toledo). Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Antonio Pérez</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_don-juan-of-austria.jpg" alt="Don John of Austria" title="Don John of Austria: Portrait of Don Juan of Austria. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Don John of Austria</figcaption></figure></div><!-- /parties -->
@@ -74,7 +74,7 @@
 </figure>
 
 <h2 id="cipher"><span class="num">02</span> The cipher</h2>
-<p>It is neither P&eacute;rez&rsquo;s cipher with Vargas Mex&iacute;a (1578&ndash;1579) nor the &ldquo;general cipher&rdquo; of Don John and Escobedo (1576&ndash;1577). It is the numerical syllabary found in 1577 in the despatches of the Spanish embassy at Genoa (Simancas, Estado, leg. 1410), with departures peculiar to P&eacute;rez. A number is a consonant (6 d, 7 c, 15 l, 16 m, 17 n, 20 p, 22 r, 23 s, 24 t); a mark after it is the vowel (+ a, a dot e, 6 i, a hook o, an i-stroke u); single numbers are vowels (10 a, 4 e, 18 o, 1 u); superscripts are a final n (^), s (a bar), r and l. A draft of 4 February 1577 (Estado 1410,196) announces to the ministers in Italy the change of the &ldquo;cifra general&rdquo; but does not contain the table. In P&eacute;rez&rsquo;s hand 8 is g (b in the Genoa table) and an 8 with a small 2 is <em>ble</em>. The key is <code>targets/perez1578/key.tsv</code> (K_P2).</p>
+<p>It is neither P&eacute;rez&rsquo;s cipher with Vargas Mex&iacute;a (1578&ndash;1579) nor the &ldquo;general cipher&rdquo; of Don John and Escobedo (1576&ndash;1577). It is the numerical syllabary found in 1577 in the despatches of the Spanish embassy at Genoa (Simancas, Estado, leg. 1410), with departures peculiar to P&eacute;rez. A number is a consonant (6 d, 7 c, 15 l, 16 m, 17 n, 20 p, 22 r, 23 s, 24 t); a mark after it is the vowel (+ a, a dot e, 6 i, a hook o, an i-stroke u); single numbers are vowels (10 a, 4 e, 18 o, 1 u); superscripts are a final n (^), s (a bar), r and l. A draft of 4 February 1577 (Estado 1410,196) announces to the ministers in Italy the change of the &ldquo;cifra general&rdquo; but does not contain the table. In P&eacute;rez&rsquo;s hand 8 is g (b in the Genoa table) and an 8 with a small 2 is <em>ble</em>. The key is <code translate="no">targets/perez1578/key.tsv</code> (K_P2).</p>
 
 <h2 id="method"><span class="num">03</span> How the key was found</h2>
 <p><strong>A sibling key.</strong> The 1577 Genoa table was rebuilt on cipher and <em>descifrada</em> pairs of AGS Estado 1410 and validated on 1410,78&ndash;79 (87.3% of words, 95.5% of characters). Four values were learnt on P&eacute;rez&rsquo;s own lines (9 = g, 8 = g, X = r, the i-stroke = u) and 27 = x after the first test below.</p>
@@ -83,7 +83,7 @@
 <h2 id="reading"><span class="num">04</span> The reading</h2>
 <figure class="creveal" data-src="reveal/perez1578.json"></figure>
 <p class="legend">Brice Dudout&rsquo;s text, spelling of the cipher kept. {x} probable; &lsaquo;x&rsaquo; unresolved; the text in angle brackets in his file is P&eacute;rez&rsquo;s plain Spanish around the cipher and is not counted.</p>
-<blockquote lang="es">
+<blockquote lang="es" translate="no">
 [&hellip;] pero con grandissima dificultad del consejo de hazienda, por no aver un real y tantas cosas que proveer [en claro: por lo qual &hellip;]<br>
 [&hellip;] {ir} acomodado {esso} de alguna {manera} que se {pueda} {estragar}, temiendo el peligro de los sucesos, estando lo de la hazienda tan {estrecho} que tengo por {imposible} del poderse acudir con tanto como es menester [en claro: y advierto a V. Al. &hellip;]<br>
 [&hellip;] ha sido con protesto de que no se {cunplira} &lsaquo;ningun&rsaquo; otro, y que asi me ha {dicho} [en claro: lo advierto a V. Al. &hellip;]
@@ -111,7 +111,7 @@
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>Antonio Pérez to Don John of Austria, 19 Aug 1578, four cipher passages</h3>
 <p>The Council of Finance has &quot;not a single real&quot;; supplying what is needed is impossible; the asiento was accepted under protest that no other will be honoured.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/perez1578/transcription.txt">transcription.txt</a></p><pre># RAH (Madrid), 2/Ms Caja 8 no. 4, Antonio Pérez to don Juan de Austria, 19 Aug 1578: the four cipher passages.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/perez1578/transcription.txt">transcription.txt</a></p><pre translate="no"># RAH (Madrid), 2/Ms Caja 8 no. 4, Antonio Pérez to don Juan de Austria, 19 Aug 1578: the four cipher passages.
 # Neutral notation: NUMBER[:MARK][SUPERSCRIPT] ; marks + . 6 e(hook) 1(i-stroke) ; superscripts ^ _ v(r-shaped) &#x27; 2(small 2) ;
 # X = r-shaped sign on the line ; @mo = letters &quot;m&quot; + hook ; | = writer&#x27;s punctuation ; ? = doubtful.
 ## P2A (img 02, after &quot;el despacho que lleva este correo&quot;)
@@ -132,7 +132,7 @@ P3AL4	7:e^ 24:+^ 24:e 7:e @mo 4_ 16:. 17:._ 24:.v |
 P3BL0	12:+ 23:6 6:e 7:e^ 20 X:e 24:._ 24:e
 P3BL1	6:. 21:. 17:e 23:. 7:1&#x27; 20 15:6 22:+ 1 7:6^? 11:+^? 18 24 22:e | 28
 P3BL2	21:. 10 23:6 16:. 12:+ 6:6? 7:e</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/perez1578/decryption.txt">decryption.txt</a></p><pre># Unit-by-unit decryption with key.tsv (K_P2, SHA-256 4d5eb01d...). &quot;?&quot; = sign not in the key.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/perez1578/decryption.txt">decryption.txt</a></p><pre translate="no"># Unit-by-unit decryption with key.tsv (K_P2, SHA-256 4d5eb01d...). &quot;?&quot; = sign not in the key.
 
 ## P2AL0
 20:. X:e 7:e^
@@ -185,7 +185,7 @@ de que no se cul p li ra u cin gan o t ro / y
 ## P3BL2
 21:. 10 23:6 16:. 12:+ 6:6? 7:e
 que a si me ha di co</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/perez1578/reading.md">reading.md</a></p><pre># Established text (Spanish, cipher spelling kept)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/perez1578/reading.md">reading.md</a></p><pre translate="no"># Established text (Spanish, cipher spelling kept)
 
 {x} probable; ‹x› unresolved; &lt;x&gt; = Pérez&#x27;s plain text around the cipher (not counted).
 
@@ -194,7 +194,7 @@ que a si me ha di co</pre></details>
 &lt;[…] quando no huviesse otras causas,&gt; {ir} acomodado {esso} de alguna {manera} que se {pueda} {estragar}, temiendo el peligro de los sucesos, estando lo de la hazienda tan {estrecho} que tengo por {imposible} del poderse acudir con tanto como es menester &lt;, y advierto a V. Al. […]&gt;
 
 &lt;[…] la aceptación que el consejo de hazienda ha hecho deste assiento&gt; ha sido con protesto de que no se {cunplira} ‹ningun› otro, y que asi me ha {dicho} &lt;. Lo advierto a V. Al. […]&gt;</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/perez1578/translation.md">translation.md</a></p><pre># English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/perez1578/translation.md">translation.md</a></p><pre translate="no"># English translation
 
 […] but with the greatest difficulty on the part of the Council of Finance, since there is not a single real and so many things to provide for [in plain text: for which reason …]
 
@@ -220,7 +220,7 @@ que a si me ha di co</pre></details>
   <span>Brice Dudout, September 2026 &middot; Text released under CC BY 4.0 &middot; Real Academia de la Historia, Biblioteca Digital (Public Domain Mark 1.0)</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="ancel1577.html" rel="prev">&larr; Ancel, Vienna 1577 1577</a><a href="sauli1579.html" rel="next">Sauli and Riario 1579 1579&ndash;81 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

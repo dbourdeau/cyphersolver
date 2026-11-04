@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">83 8 79 47 21 74 116 19 16 60 23 82 7 60 16 34 50 93 98 43 56 40 5 30 93 73 58 25 40<br>si e fa ta u na me s co la n za a la co r te di he re ti ci e t di ca to li ci<br>a = 3 7 &middot; e = 5 8 &middot; si = 83 85 89 95 &middot; 1&#775;24 = Umena (Mayenne)</div>
+  <div class="cipherstrip" translate="no">83 8 79 47 21 74 116 19 16 60 23 82 7 60 16 34 50 93 98 43 56 40 5 30 93 73 58 25 40<br>si e fa ta u na me s co la n za a la co r te di he re ti ci e t di ca to li ci<br>a = 3 7 &middot; e = 5 8 &middot; si = 83 85 89 95 &middot; 1&#775;24 = Umena (Mayenne)</div>
   <p class="kicker">Tours, Moulins &rarr; Rome &middot; syllabic cipher of one- and two-figure groups, nomenclator &middot; May 1589 &middot; existing decipherment, aligned with Lasry&rsquo;s partial key</p>
   <h1>Morosini&rsquo;s second key: two enclosures from Moulins, May 1589</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_cardinal-morosini.jpg" alt="Cardinal Morosini" title="Cardinal Morosini: Anonymous portrait, c. 1596–99. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Cardinal Morosini</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_cardinal-montalto.jpg" alt="Cardinal Montalto" title="Cardinal Montalto: Drawing by Ottavio Leoni, 17th century. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Cardinal Montalto</figcaption></figure></div><!-- /parties -->
@@ -88,12 +88,12 @@
 <p>R54 continues R53&rsquo;s last clause (the decipherment runs on from f. 500r to f. 500v). With Navarre beside the King, the legate expects the Pope to recall him, and asks that anyone at court who wants him back be told it is impossible &ldquo;se non pensano di mandarmi un grosso essercito che mi accompagni et difenda dagli heretici&rdquo;. Of 622 letters, 468 are the figures&rsquo; own value and 61 stand on digits that DECODE&rsquo;s transcription marks illegible, supplied by the decipherment; one <i>non</i> is the decipherer&rsquo;s insertion in the margin, with no figures under it.</p>
 
 <h2 id="method"><span class="num">04</span> Method</h2>
-<p>The figures run on without separators, so the key cannot be applied group by group. The decoder of the sibling entry (<code>targets/morosini1588/decrypt.py</code>, run with <code>--f22b</code>) tries every way of dividing the figures into Lasry&rsquo;s one-, two- and three-figure elements and keeps the division that a five-gram model of sixteenth-century Italian scores best. Where the key has a gap, the model fills it with the nearest Italian it can make from the elements it knows, so a stretch that looks like Italian is not proof that the values are right. The figures follow DECODE&rsquo;s volunteer transcriptions; the scans were not checked figure by figure.</p>
-<p><strong>The decipherment of 1589 (23 October 2026).</strong> DECODE R54 carries, as png attachments filed &ldquo;[cleartext]&rdquo;, the decipherment written in 1589 for both cipher passages, on f. 500r (R53) and f. 500v (R54). It was transcribed (<code>texts/R53_decifrato_f500r.txt</code>, <code>R54_decifrato_f500v.txt</code>) and aligned element by element with the figures under Lasry&rsquo;s key (<code>research/reading_audit/b21_moro_align.py</code>, <code>texts/*_align.tsv</code>). The alignment confirmed one value, 4 = c, at all 17 places, and no letter rests on a look-alike sign. The readings, <code>texts/R53_reading.md</code> and <code>R54_reading.md</code>, with English beside them, follow the figures where they give another word than the decipherer wrote.</p>
+<p>The figures run on without separators, so the key cannot be applied group by group. The decoder of the sibling entry (<code translate="no">targets/morosini1588/decrypt.py</code>, run with <code translate="no">--f22b</code>) tries every way of dividing the figures into Lasry&rsquo;s one-, two- and three-figure elements and keeps the division that a five-gram model of sixteenth-century Italian scores best. Where the key has a gap, the model fills it with the nearest Italian it can make from the elements it knows, so a stretch that looks like Italian is not proof that the values are right. The figures follow DECODE&rsquo;s volunteer transcriptions; the scans were not checked figure by figure.</p>
+<p><strong>The decipherment of 1589 (23 October 2026).</strong> DECODE R54 carries, as png attachments filed &ldquo;[cleartext]&rdquo;, the decipherment written in 1589 for both cipher passages, on f. 500r (R53) and f. 500v (R54). It was transcribed (<code translate="no">texts/R53_decifrato_f500r.txt</code>, <code translate="no">R54_decifrato_f500v.txt</code>) and aligned element by element with the figures under Lasry&rsquo;s key (<code translate="no">research/reading_audit/b21_moro_align.py</code>, <code translate="no">texts/*_align.tsv</code>). The alignment confirmed one value, 4 = c, at all 17 places, and no letter rests on a look-alike sign. The readings, <code translate="no">texts/R53_reading.md</code> and <code translate="no">R54_reading.md</code>, with English beside them, follow the figures where they give another word than the decipherer wrote.</p>
 
 <h2 id="what-remains-uncertain"><span class="num">05</span> What remains uncertain</h2>
 <ul>
-<li>29 single elements whose value only the decipherment gives (57 q, 117, 637, 42, 53/0, 81, 38, 27 lu, 75, 11 and others; <code>texts/f22b_values_b21.tsv</code>). Each occurs once in 1,448 figures, so they are not adopted as key values; the reading rests on the decipherment there.</li>
+<li>29 single elements whose value only the decipherment gives (57 q, 117, 637, 42, 53/0, 81, 38, 27 lu, 75, 11 and others; <code translate="no">texts/f22b_values_b21.tsv</code>). Each occurs once in 1,448 figures, so they are not adopted as key values; the reading rests on the decipherment there.</li>
 <li>Words where the figures as transcribed give no Italian word (in R53 <i>mi disse domenica</i>, <i>francesi</i>, <i>seco</i>, <i>al quale si tiene</i>; in R54 <i>di qui</i>, <i>fin hora</i>, <i>perche</i>, <i>distrutti i primi</i>): lone figures or digits DECODE marks illegible, carried by the decipherment.</li>
 <li>Before the decipherment was found, a decode with Lasry&rsquo;s values gave 75% of letters in Italian word forms but no sentences, and rebuilding the missing values from the cipher alone (14 October 2026) gave fits on R53 and R54 that agreed on one code in ten; none was adopted. Meister (1906) prints no second key for Morosini.</li>
 </ul>
@@ -103,7 +103,7 @@
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>R53, Francia 22/32, image 499v, [Moulins, early May 1589; decipherment f. 500r]</h3>
 <p>Navarre, by what the vice-legate of Avignon&#x27;s secretary said, arrived at Tours on Thursday and lodged at Plessis with a large company; he went to see the King, gave him the shirt at his rising and the napkin at table, and dined with him: a mixing of heretics and Catholics at court, hateful to honest men. Navarre was to review his troops before the King and, joined by Turenne&#x27;s men, push against Mayenne, between Le Mans and Vendôme; the King&#x27;s forces were greater than Mayenne&#x27;s. The 1589 decipherment on f. 500r (DECODE attachment DOC_R54_D1099) and the figures read together.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1589/decode/DOC_R53_D1717_1717.txt">DOC_R53_D1717_1717.txt</a></p><pre>#CATALOG NAME: Segr. Stato Francia 22/32
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1589/decode/DOC_R53_D1717_1717.txt">DOC_R53_D1717_1717.txt</a></p><pre translate="no">#CATALOG NAME: Segr. Stato Francia 22/32
 #IMAGE NAME: 499v.jpg
 #TRANSCRIBER NAME: Midas
 #DATE OF TRANSCRIPTION: March 31, 2017
@@ -131,7 +131,7 @@ tanto ?????&gt;
 3 0 3 4 5 9 9 1 4 5 4 1 7 1 9 1 6 2 3 5 0 9 3 6 5 4 3 7 4 9 3 8? 9 1 2 7 4 5 4 3 9 3 1 9 3 3 2 3 2 2 3 4 2 6 1 6 2 3 3 0 4 1
 1^. 2 4 4 9 8 8 3 3 0 6 3 5 4 7 2 1 3 1 9 4 1 2 6 1 3 0 2 3 1 9 5 3 0 2 1 7 2 3 4 4 9 2 3 6 2 3 8 3 7 8 5 2 2 3 4 4 4 9 6 9 3 1? 0
 1 2 3 1 9 3 7 9 4 3 4 9 5 2 6 6 7 3 4 8 5 9 9 1 4 1^. 1 6 5 4 1 3 6 1 3 0 2 8 1 8? 4 8 9 3 3 5 2 6 9 3 8 9 6 1^. 2 4 8? 9 8? 1 7 0</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1589/texts/R53_decryption.txt">R53_decryption.txt</a></p><pre># R53 decryption, copied verbatim from decode_updates/decryptions/R53.txt (22 Oct 2026); word-split by ../morosini1588/make_decryptions.py from decrypt_raw.txt (Lasry&#x27;s F22b key, D3187/D3188), no letters changed; this is the split measured by measure_sense.py
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1589/texts/R53_decryption.txt">R53_decryption.txt</a></p><pre translate="no"># R53 decryption, copied verbatim from decode_updates/decryptions/R53.txt (22 Oct 2026); word-split by ../morosini1588/make_decryptions.py from decrypt_raw.txt (Lasry&#x27;s F22b key, D3187/D3188), no letters changed; this is the split measured by measure_sense.py
 [IMG 499v]
 ilo e pere a uelo ch im co[?]i se[?] o min cota colse dorario de luco celegato di niagnone a riuo giouedia
 tours et a logio a ple si con grosa compagnie di signoro et gentilomini boge ae orsi a logia non el borgo
@@ -141,7 +141,7 @@ mescolanza a la corte di heretici et dicatolici chi eodos aat utili huomini da g
 far pasare tute le sue[?] geati ala uista di sua maiesta la quale giunte chineia siia alcuni altre del
 uisconte di iuan a di signaua di spinger le contra umena chi si trouaua s r alemans et uandomo non si
 sapendo che d im gni di fare chi le forsi del re erano ma giori di que le di sii umena ehe i[?]</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1589/plaintext_by_record.txt">plaintext_by_record.txt</a></p><pre>### R53 (Francia 22/32) clear heading: non solo? grarà? di tinze? in uita una sua ???.a et
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1589/plaintext_by_record.txt">plaintext_by_record.txt</a></p><pre translate="no">### R53 (Francia 22/32) clear heading: non solo? grarà? di tinze? in uita una sua ???.a et
 obligatissima criatura?. Fra&#x27; hora non sono? comparse? lettere
 uorbire? da Roma, N M ?? di proni?, et li? ??&#x27; aspettendo
 con quella sollecitudine che usi ui? postite? imaginari, alli
@@ -153,7 +153,7 @@ iloepereauelochimco?ise?omincotacolsedorariodelucocelegatodiniagnoneariuogiouedi
 ### R54 (Francia 22/33) clear heading: chi è quara mouari dirui Conchi fine mi
 ?? ?allomand. Di Molins à gli xi di Maggio 1589 / SIGNATURE / SIGNATURE
 hgliandauanoingrosandoognigi?aregoparedonqueilocolreetuiscolatiglihereticicoicaelicialacortepensochifaramagi?araichelureiloileuarmileaaequandosindranonlohabiafatoilpaehpermiadisgratiaifaetchiu?ihneisteanco?aacunodiqueininirichihauefenimochiiomeneerarealacortenonmancateeraipregodifargliconohrepaatratadelimmneeledisuapensanodimandarmiungiahtuhrciepamiacompagnietdifendadaglihretici?ltrechiaestaunii?taglialatestanobiquelochihabiamodiscorsoinaemealapartitauostradasuaepiuinmpoteredialcunodipraticareetcon??aderecoapauagliaehndodistaeti?lcogonainentiosi</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1589/texts/R53_decifrato_f500r.txt">R53_decifrato_f500r.txt</a></p><pre># AAV Segr. Stato Francia 22, f. 500r: contemporary decipherment of the R53 cipher (f. 499v), in a second hand.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1589/texts/R53_decifrato_f500r.txt">R53_decifrato_f500r.txt</a></p><pre translate="no"># AAV Segr. Stato Francia 22, f. 500r: contemporary decipherment of the R53 cipher (f. 499v), in a second hand.
 # DECODE R54 attachment DOC_R54_D1099 (&#x27;500r.jpg [cleartext]&#x27;), first opened 23 Oct 2026 (b21). Transcribed from the
 # native-resolution image by Claude Opus 5.5; abbreviations expanded in [ ]; the hand writes final e much like i
 # (Avignone, Onde, Corte), read as e where the word needs it; line breaks as on the page.
@@ -172,7 +172,7 @@ alcuni altri del Visconte di Turena dissegnava di spingerle
 contra Umena, che si trovava tra Limans, et Vandomo;
 non si sapendo, che dissegni di fare; Che le forze del Re
 sono maggiori di quelle di Umena, al quale si tiene</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1589/texts/R53_reading.md">R53_reading.md</a></p><pre># R53 (AAV Segr. Stato Francia 22/32, f. 499v), Morosini to Montalto, [Moulins, early May 1589]: reading of the cipher
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1589/texts/R53_reading.md">R53_reading.md</a></p><pre translate="no"># R53 (AAV Segr. Stato Francia 22/32, f. 499v), Morosini to Montalto, [Moulins, early May 1589]: reading of the cipher
 
 Re-read 23 Oct 2026 (Claude Opus 5.5; REREAD_BRIEF, batch b21). What it rests on: the contemporary decipherment on
 f. 500r (DECODE R54 attachment DOC_R54_D1099, &#x27;500r.jpg [cleartext]&#x27;, never opened before; `R53_decifrato_f500r.txt`),
@@ -207,7 +207,7 @@ erano maggiori di quelle di Umena, al quale si tiene
   &#x27;Plesi&#x27; Plessis-lès-Tours; the Visconte di Turena is Henri de La Tour, vicomte de Turenne.
 - &#x27;la camisa al letto ... la salvietta alla tavola&#x27;: Navarre served the King at his lever and at table (the meeting of
   the two kings at Plessis, 30 April 1589).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1589/texts/R53_en.md">R53_en.md</a></p><pre># R53 (f. 499v), Morosini to Montalto, [Moulins, early May 1589]: English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1589/texts/R53_en.md">R53_en.md</a></p><pre translate="no"># R53 (f. 499v), Morosini to Montalto, [Moulins, early May 1589]: English
 
 Translation of `R53_reading.md` (23 Oct 2026, Claude Opus 5.5; b21). Holes as in the reading (none).
 
@@ -221,7 +221,7 @@ meant to push against Mayenne, who was between Le Mans and Vendôme, it not bein
 King&#x27;s forces were greater than Mayenne&#x27;s, whose own, it is believed,</pre></details>
 <h3>R54, Francia 22/33, image 502r, Moulins, 11 May 1589</h3>
 <p>Continues R53 (Mayenne&#x27;s forces growing daily). With Navarre at the King&#x27;s side and heretics mixed with Catholics at court, the Pope will be the more resolved to recall Morosini; if not, any lords wanting him back at court must understand it is impossible unless they send an army to escort and defend him from the heretics; the union cuts the head off all that was discussed at Montalto&#x27;s departure. The 1589 decipherment on f. 500v (DECODE attachment DOC_R54_D1095) and the figures read together.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1589/decode/DOC_R54_D1825_1825.txt">DOC_R54_D1825_1825.txt</a></p><pre>#CIPHERTEXT
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1589/decode/DOC_R54_D1825_1825.txt">DOC_R54_D1825_1825.txt</a></p><pre translate="no">#CIPHERTEXT
 #CATALOG NAME: Segr. Stato Francia 22/33
 #IMAGE NAME: 502r.jpg
 #TRANSCRIBER NAME: NiLan
@@ -245,7 +245,7 @@ King&#x27;s forces were greater than Mayenne&#x27;s, whose own, it is believed,<
 ?? ?allomand. Di Molins à gli xi di Maggio 1589&gt;
 &lt;CLEARTEXT IT SIGNATURE&gt;
 &lt;CLEARTEXT IT SIGNATURE&gt;</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1589/texts/R54_decryption.txt">R54_decryption.txt</a></p><pre># R54 decryption, copied verbatim from decode_updates/decryptions/R54.txt (22 Oct 2026); word-split by ../morosini1588/make_decryptions.py from decrypt_raw.txt (Lasry&#x27;s F22b key, D3187/D3188), no letters changed; this is the split measured by measure_sense.py
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1589/texts/R54_decryption.txt">R54_decryption.txt</a></p><pre translate="no"># R54 decryption, copied verbatim from decode_updates/decryptions/R54.txt (22 Oct 2026); word-split by ../morosini1588/make_decryptions.py from decrypt_raw.txt (Lasry&#x27;s F22b key, D3187/D3188), no letters changed; this is the split measured by measure_sense.py
 [IMG 502r]
 hgli andauano in grosando ogni gi[?]a rego pare don queilo col re et ui scolati gli heretici coi caelici a
 la corte penso chifara ma gi[?]a rai che lure il oi leuarmi leaae quandosi ndra non lo habia fato il paeh
@@ -254,7 +254,7 @@ reala corte non mancate era i prego di fargli cono h repa a trata del im m nee l
 un gia h tu h rci e pamia compagniet difenda dagli h retici [?]ltre chia esta uni i[?]taglia la testa nobi
 que lochi habiamo discorso ina e me a la partita uostrada sua e piu in m potere di alcuno di praticare et
 con[?][?]adere co a paua gli ae hndo dista et i[?]l cogo nainentio si</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1589/plaintext_by_record.txt">plaintext_by_record.txt</a></p><pre>### R53 (Francia 22/32) clear heading: non solo? grarà? di tinze? in uita una sua ???.a et
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1589/plaintext_by_record.txt">plaintext_by_record.txt</a></p><pre translate="no">### R53 (Francia 22/32) clear heading: non solo? grarà? di tinze? in uita una sua ???.a et
 obligatissima criatura?. Fra&#x27; hora non sono? comparse? lettere
 uorbire? da Roma, N M ?? di proni?, et li? ??&#x27; aspettendo
 con quella sollecitudine che usi ui? postite? imaginari, alli
@@ -266,7 +266,7 @@ iloepereauelochimco?ise?omincotacolsedorariodelucocelegatodiniagnoneariuogiouedi
 ### R54 (Francia 22/33) clear heading: chi è quara mouari dirui Conchi fine mi
 ?? ?allomand. Di Molins à gli xi di Maggio 1589 / SIGNATURE / SIGNATURE
 hgliandauanoingrosandoognigi?aregoparedonqueilocolreetuiscolatiglihereticicoicaelicialacortepensochifaramagi?araichelureiloileuarmileaaequandosindranonlohabiafatoilpaehpermiadisgratiaifaetchiu?ihneisteanco?aacunodiqueininirichihauefenimochiiomeneerarealacortenonmancateeraipregodifargliconohrepaatratadelimmneeledisuapensanodimandarmiungiahtuhrciepamiacompagnietdifendadaglihretici?ltrechiaestaunii?taglialatestanobiquelochihabiamodiscorsoinaemealapartitauostradasuaepiuinmpoteredialcunodipraticareetcon??aderecoapauagliaehndodistaeti?lcogonainentiosi</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1589/texts/R54_decifrato_f500v.txt">R54_decifrato_f500v.txt</a></p><pre># AAV Segr. Stato Francia 22, f. 500v: contemporary decipherment of the R54 cipher (f. 502r), continuing f. 500r
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1589/texts/R54_decifrato_f500v.txt">R54_decifrato_f500v.txt</a></p><pre translate="no"># AAV Segr. Stato Francia 22, f. 500v: contemporary decipherment of the R54 cipher (f. 502r), continuing f. 500r
 # (the R53 decipherment) in the same hand. DECODE R54 attachment DOC_R54_D1095 (&#x27;500v.jpg [cleartext]&#x27;), first opened
 # 23 Oct 2026 (b21). Transcribed by Claude Opus 5.5; abbreviations expanded in [ ]; line breaks as on the page.
 segli [struck: le] andavano ingrossando ogni giorno. L&#x27;essere dunque
@@ -283,7 +283,7 @@ che habbiamo discorso insieme à la partita vostra;
 perche non è più in potere di alcuno di praticare, et
 concludere cosa, che vaglia; essendo distrutti i primi
 fondamenti</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1589/texts/R54_reading.md">R54_reading.md</a></p><pre># R54 (AAV Segr. Stato Francia 22/33, f. 502r), Morosini to Montalto, Moulins, 11 May 1589: reading of the cipher
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1589/texts/R54_reading.md">R54_reading.md</a></p><pre translate="no"># R54 (AAV Segr. Stato Francia 22/33, f. 502r), Morosini to Montalto, Moulins, 11 May 1589: reading of the cipher
 
 Re-read 23 Oct 2026 (Claude Opus 5.5; REREAD_BRIEF, batch b21). What it rests on: the contemporary decipherment on
 f. 500v (DECODE R54 attachment DOC_R54_D1095, &#x27;500v.jpg [cleartext]&#x27;, never opened before; `R54_decifrato_f500v.txt`),
@@ -315,7 +315,7 @@ concludere cosa che vaglia, essendo distrutti i primi fondamenti.
   ogni giorno&#x27;: whose forces, it is believed, were growing every day).
 - &#x27;Nostro Signore&#x27; (N.S.re, code 1̇51, which Lasry read &#x27;h.s.re&#x27;; the decipherer&#x27;s capital N looks like H) is the Pope.
 - &#x27;questa unione&#x27;: the union of Henri III with Navarre (truce of 3 April 1589).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1589/texts/R54_en.md">R54_en.md</a></p><pre># R54 (f. 502r), Morosini to Montalto, Moulins, 11 May 1589: English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1589/texts/R54_en.md">R54_en.md</a></p><pre translate="no"># R54 (f. 502r), Morosini to Montalto, Moulins, 11 May 1589: English
 
 Translation of `R54_reading.md` (23 Oct 2026, Claude Opus 5.5; b21). Holes as in the reading (none).
 
@@ -337,13 +337,13 @@ anything worthwhile, the first foundations being destroyed.</pre></details>
 <li>The sibling entry for the other thirty-four enclosures, in Meister&rsquo;s key no. 40: <a href="morosini1588.html">Cardinal Morosini to Rome, 1587&ndash;89</a>.</li>
 </ul>
 
-<p class="muted">Transcriptions, Lasry&rsquo;s key files and the decoded text: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/morosini1589"><code>targets/morosini1589/</code></a>. Page images are not reproduced beyond the crop above.</p>
+<p class="muted">Transcriptions, Lasry&rsquo;s key files and the decoded text: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/morosini1589"><code translate="no">targets/morosini1589/</code></a>. Page images are not reproduced beyond the crop above.</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Archivio Apostolico Vaticano, via DECODE R53, R54</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="ottobon.html" rel="prev">&larr; Venice to Mocenigo 1589 1589</a><a href="r2276.html" rel="next">Reims 1589 1589 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

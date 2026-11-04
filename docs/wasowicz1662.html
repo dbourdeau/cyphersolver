@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">52 90 25 &middot; 90 33 13 90 25 &middot; 72 &middot; 92 23 35 53 90 52 12<br>nie idzie w Ukrain&#281;<br>52 = n &middot; 90 = i &middot; 25 = e &middot; 13 = z &middot; 12 = &#281;</div>
+  <div class="cipherstrip" translate="no">52 90 25 &middot; 90 33 13 90 25 &middot; 72 &middot; 92 23 35 53 90 52 12<br>nie idzie w Ukrain&#281;<br>52 = n &middot; 90 = i &middot; 25 = e &middot; 13 = z &middot; 12 = &#281;</div>
   <p class="kicker">Ludwik W&#261;sowicz &rarr; Aleksander Micha&#322; Lubomirski &middot; two-digit numbers for letters inside clear Polish &middot; 1662&ndash;1663 &middot; known key applied</p>
   <h1>W&#261;sowicz to Lubomirski, 1662&ndash;1663: watching the Marshal</h1>
 <div class="parties"><figure class="party recipient"><img src="portrait_aleksander-micha-lubomirski.jpg" alt="Aleksander Michał Lubomirski" title="Aleksander Michał Lubomirski: Portrait by an unidentified Gdańsk painter, 1660s (Wilanów Palace Museum). Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Aleksander Michał Lubomirski</figcaption></figure></div><!-- /parties -->
@@ -61,7 +61,7 @@
   <dt>Where</dt><dd>Archiwum Narodowe w Krakowie, Archiwum Krzeszowickie Potockich (fonds 29/639), AKPot 3227: DECODE R7503&ndash;R7510 for the letters, R7501 (p. 81) for the table. Catalogue entry 439, now removed.</dd>
   <dt>The cipher</dt><dd>A simple substitution: one two-digit number for each letter, 25 values, no homophones, no nulls, no code words. The numbers run together inside the clear sentence.</dd>
   <dt>How it was deciphered</dt><dd>With the table on R7501, a nineteenth-century reconstruction headed &ldquo;Klucz W&#261;sowicza (i Kotowicza) do Alex. Lubomirskiego&rdquo;, applied unchanged. Brice Dudout checked it blind on the letter of 5 May 1663: 0.389 of the decoded words are in a Polish lexicon, against a 99th percentile of 0.083 for 1,000 permuted tables and 1,000 shuffled texts.</dd>
-  <dt>What it says</dt><dd>The confederated army in its circle at Wolb&oacute;rz waiting for its pay, a court that &ldquo;strives to keep the agreement with the army&rdquo;, and the Marshal, Jerzy Sebastian Lubomirski, the recipient&rsquo;s brother, watched two years before his rebellion. In December 1663 he will not join the King&rsquo;s Ukrainian campaign: <i lang="pl">iam ani hetman ani &#380;o&#322;nierz do wiosny</i>.</dd>
+  <dt>What it says</dt><dd>The confederated army in its circle at Wolb&oacute;rz waiting for its pay, a court that &ldquo;strives to keep the agreement with the army&rdquo;, and the Marshal, Jerzy Sebastian Lubomirski, the recipient&rsquo;s brother, watched two years before his rebellion. In December 1663 he will not join the King&rsquo;s Ukrainian campaign: <i lang="pl" translate="no">iam ani hetman ani &#380;o&#322;nierz do wiosny</i>.</dd>
   <dt>Still open</dt><dd>One word of 19 March 1663 (&lsaquo;przez&#281;id&#261;&rsaquo;, two digits uncertain) and the end of the next; doubtful digits in the letter of 5 May 1663, settled by sense; several people named in clear (Born, Argent, Paczanowski, Paprocki, Woie&#324;ski, Tekieli) not identified.</dd>
   <dt>Credit</dt><dd>Transcription, decipherment, Polish text in context and English translation by Brice Dudout, with Claude Opus 5.5 agents, 27 October 2026; <a href="https://bdudout.github.io/europe-chiffree/en/documents.html#krakow-1663" rel="noopener">his write-up on Europe chiffr&eacute;e</a>. The key is the DECODE record R7501. The DECODE images of the file are restricted and were lent to him for study; none is reproduced here.</dd>
 </dl>
@@ -86,7 +86,7 @@
 <p>No image of the file is reproduced on this page: the DECODE images are restricted.</p>
 
 <h2 id="table"><span class="num">02</span> The table</h2>
-<p>R7501 is a sheet of ruled nineteenth-century paper headed &ldquo;Klucz W&#261;sowicza (i Kotowicza) do Alex. Lubomirskiego&rdquo;: a grid from 1 to 100 in which only the values used are filled in. It is a reconstruction, not the key of the time, probably made when the papers passed through the hands of J&oacute;zef &#321;epkowski and Franciszek Kluczycki at Krzeszowice; the heading also names a Kotowicz, probably another correspondent who used the same cipher. Its 25 values (<code>key.tsv</code>):</p>
+<p>R7501 is a sheet of ruled nineteenth-century paper headed &ldquo;Klucz W&#261;sowicza (i Kotowicza) do Alex. Lubomirskiego&rdquo;: a grid from 1 to 100 in which only the values used are filled in. It is a reconstruction, not the key of the time, probably made when the papers passed through the hands of J&oacute;zef &#321;epkowski and Franciszek Kluczycki at Krzeszowice; the heading also names a Kotowicz, probably another correspondent who used the same cipher. Its 25 values (<code translate="no">key.tsv</code>):</p>
 <table>
 <tbody>
 <tr><td>12 &#281;</td><td>13 z</td><td>21 g</td><td>22 b</td><td>23 k</td><td>25 e</td><td>28 t</td><td>30 l</td><td>33 d</td></tr>
@@ -94,44 +94,44 @@
 <tr><td>69 y</td><td>70 o</td><td>72 w</td><td>88 h</td><td>90 i</td><td>92 u</td><td>96 s</td><td></td><td></td></tr>
 </tbody>
 </table>
-<p>One number stands for one letter, with no homophones, nulls or code words; &#380; and &#378; are written with the number for z, &#263; with that for c, &#324; with that for n, and i also serves for j. Brice Dudout checked the table first on R7502, the one letter already deciphered between the lines, then applied it unchanged to the others, where correct Polish comes out at once: <i lang="pl">zgod&#281; z woyskiem dwor dotrzymawac usi&#322;uie</i>.</p>
+<p>One number stands for one letter, with no homophones, nulls or code words; &#380; and &#378; are written with the number for z, &#263; with that for c, &#324; with that for n, and i also serves for j. Brice Dudout checked the table first on R7502, the one letter already deciphered between the lines, then applied it unchanged to the others, where correct Polish comes out at once: <i lang="pl" translate="no">zgod&#281; z woyskiem dwor dotrzymawac usi&#322;uie</i>.</p>
 
 <h2 id="content"><span class="num">03</span> What the letters say</h2>
-<p>In 1661&ndash;1663 the Crown army, unpaid, had formed a military confederation (the <i lang="pl">zwi&#261;zek</i>), whose general assembly, the circle of Wolb&oacute;rz, met from December 1662 into the spring of 1663 to negotiate the arrears. The court of John II Casimir and Louise Marie suspected the Grand Marshal of the Crown, Jerzy Sebastian Lubomirski (1616&ndash;1667), the recipient&rsquo;s younger brother, of backing the confederates and of opposing the election of a successor in the King&rsquo;s lifetime. Condemned by the Sejm court at the end of 1664, he led the open rebellion of 1665&ndash;1666. W&#261;sowicz&rsquo;s letters watch him from his own brother&rsquo;s circle. In these letters <i lang="pl">krolestwo</i> means the royal couple, &ldquo;Their Majesties&rdquo;.</p>
+<p>In 1661&ndash;1663 the Crown army, unpaid, had formed a military confederation (the <i lang="pl" translate="no">zwi&#261;zek</i>), whose general assembly, the circle of Wolb&oacute;rz, met from December 1662 into the spring of 1663 to negotiate the arrears. The court of John II Casimir and Louise Marie suspected the Grand Marshal of the Crown, Jerzy Sebastian Lubomirski (1616&ndash;1667), the recipient&rsquo;s younger brother, of backing the confederates and of opposing the election of a successor in the King&rsquo;s lifetime. Condemned by the Sejm court at the end of 1664, he led the open rebellion of 1665&ndash;1666. W&#261;sowicz&rsquo;s letters watch him from his own brother&rsquo;s circle. In these letters <i lang="pl" translate="no">krolestwo</i> means the royal couple, &ldquo;Their Majesties&rdquo;.</p>
 <ul>
-<li><b>29 November 1662.</b> Only two words are in cipher: <i lang="pl">woiewoda ruski</i>, the Voivode of Ruthenia, Stefan Czarniecki, who stayed loyal to the court (the writer put 69 for 96 in <i lang="pl">ruski</i>).</li>
+<li><b>29 November 1662.</b> Only two words are in cipher: <i lang="pl" translate="no">woiewoda ruski</i>, the Voivode of Ruthenia, Stefan Czarniecki, who stayed loyal to the court (the writer put 69 for 96 in <i lang="pl" translate="no">ruski</i>).</li>
 <li><b>Winter 1662&ndash;1663, undated.</b> The Marshal leaves &ldquo;for Wolb&oacute;rz, for the circle&rdquo;. The rest concerns an estate, B&#322;a&#380;ejowa, held in pledge for three hundred thousand by a Tekieli who could not buy it for want of indigenate, the naturalisation into the Polish nobility; every name is in cipher.</li>
-<li><b>25 January 1663.</b> <i lang="pl">widziec obroty iakie mia&#322; marsza&#322;ek</i> (to see the manoeuvres the Marshal has made); <i lang="pl">zgod&#281; z woyskiem dwor dotrzymawac usi&#322;uie</i> (the court strives to keep the agreement with the army); the whole point is <i lang="pl">aby pieni&#261;dze zwieziono</i>, that the money be brought in.</li>
-<li><b>17&ndash;18 February 1663.</b> The Marshal is rather well received by Their Majesties and has satisfaction at the audiences; someone was ordered to negotiate nothing more, only to serve the King after the confederation and to watch <i lang="pl">iesli woysko czego z&#322;ego nie mysli oyczyznie</i>, whether the army is plotting harm to the fatherland.</li>
+<li><b>25 January 1663.</b> <i lang="pl" translate="no">widziec obroty iakie mia&#322; marsza&#322;ek</i> (to see the manoeuvres the Marshal has made); <i lang="pl" translate="no">zgod&#281; z woyskiem dwor dotrzymawac usi&#322;uie</i> (the court strives to keep the agreement with the army); the whole point is <i lang="pl" translate="no">aby pieni&#261;dze zwieziono</i>, that the money be brought in.</li>
+<li><b>17&ndash;18 February 1663.</b> The Marshal is rather well received by Their Majesties and has satisfaction at the audiences; someone was ordered to negotiate nothing more, only to serve the King after the confederation and to watch <i lang="pl" translate="no">iesli woysko czego z&#322;ego nie mysli oyczyznie</i>, whether the army is plotting harm to the fatherland.</li>
 <li><b>19 March 1663.</b> The Marshal has sent Tatar prisoners (probably) and so obliged Their Majesties; he does not promise to detach the better banners from the confederation before the circle, but after it assures that many will leave it; the Voivode of Ruthenia will not set out again.</li>
-<li><b>5 May 1663.</b> <i lang="pl">Marsza&#322;{ek} ze teraz siedzi w &#321;ancucie nie odzywai&#261;c si&#281; dworowi</i>: the Marshal stays at &#321;a&#324;cut without a word to the court, and opinions about him differ. When the King moves with the camp from near Cracow, the idea is to watch whether the Marshal detaches the banners from the confederation as he promised, and whether he comes with them to the King.</li>
+<li><b>5 May 1663.</b> <i lang="pl" translate="no">Marsza&#322;{ek} ze teraz siedzi w &#321;ancucie nie odzywai&#261;c si&#281; dworowi</i>: the Marshal stays at &#321;a&#324;cut without a word to the court, and opinions about him differ. When the King moves with the camp from near Cracow, the idea is to watch whether the Marshal detaches the banners from the confederation as he promised, and whether he comes with them to the King.</li>
 <li><b>9 December 1663.</b> The Archdeacon of Sandomierz has not asked after the recipient&rsquo;s health; the continuation is below.</li>
 </ul>
 
 <h2 id="jaroslaw"><span class="num">04</span> Jaros&#322;aw, 9 December 1663</h2>
 <figure class="creveal" data-src="reveal/wasowicz1662.json"></figure>
 <p>The longest letter, written at Jaros&#322;aw after the funeral of the &ldquo;podczaszy&rdquo;, most likely Konstanty Jacek Lubomirski, Cupbearer of the Crown, the recipient&rsquo;s brother, who died childless in 1663 and owned Jaros&#322;aw (an identification still to be confirmed). On p. 246, with the cipher in italics in the established text:</p>
-<blockquote lang="pl"><p>JMP Marsza&#322;ek we czwartek na noc odiecha&#322; st&#261;d do Przeworska, z k&#261;d wczora po obiedzie iecha&#322; do &#321;a&#324;cuta. <i>Nie idzie w Ukrain&#281;</i> y tak mowi: <i>iam a{n}i hetman ani &#380;o&#322;nierz do wiosny. Ma iecha&#263; do Ianowca</i>, ale wprzod <i>uczyni konferency&#261; z Woienskiem</i> [&hellip;] w &#321;a&#324;cucie.</p></blockquote>
+<blockquote lang="pl" translate="no"><p>JMP Marsza&#322;ek we czwartek na noc odiecha&#322; st&#261;d do Przeworska, z k&#261;d wczora po obiedzie iecha&#322; do &#321;a&#324;cuta. <i>Nie idzie w Ukrain&#281;</i> y tak mowi: <i>iam a{n}i hetman ani &#380;o&#322;nierz do wiosny. Ma iecha&#263; do Ianowca</i>, ale wprzod <i>uczyni konferency&#261; z Woienskiem</i> [&hellip;] w &#321;a&#324;cucie.</p></blockquote>
 <blockquote><p>His Grace the Marshal left here on Thursday at night for Przeworsk, whence yesterday after dinner he went to &#321;a&#324;cut. He is not going to Ukraine, and says thus: &ldquo;I am neither hetman nor soldier until the spring.&rdquo; He is to go to Janowiec, but first he will hold a conference with Woie&#324;ski [&hellip;] at &#321;a&#324;cut.</p></blockquote>
-<p>The rest of the letter, in cipher where it matters: Born took it ill that there was no letter for him from the recipient, and would not say a word to W&#261;sowicz when he called on him; Born&rsquo;s people say there is no concord in the army and nothing good will be done without him; the deputies of the army are being paid in <i lang="pl">szel&#261;gi</i>, the debased copper coin, and the army must hold its circle in secret. Born is already taking Po&#322;onne and has summoned its burghers to &#321;a&#324;cut. The Cupbearer&rsquo;s death is put down to an unheard-of fatness that caught fire from a great dance, for he had fallen in love with a German woman at Danzig, and to an internal stone. A postscript after the date line says that Born was to visit Argent, but Paczanowski spoke of a change.</p>
+<p>The rest of the letter, in cipher where it matters: Born took it ill that there was no letter for him from the recipient, and would not say a word to W&#261;sowicz when he called on him; Born&rsquo;s people say there is no concord in the army and nothing good will be done without him; the deputies of the army are being paid in <i lang="pl" translate="no">szel&#261;gi</i>, the debased copper coin, and the army must hold its circle in secret. Born is already taking Po&#322;onne and has summoned its burghers to &#321;a&#324;cut. The Cupbearer&rsquo;s death is put down to an unheard-of fatness that caught fire from a great dance, for he had fallen in love with a German woman at Danzig, and to an internal stone. A postscript after the date line says that Born was to visit Argent, but Paczanowski spoke of a change.</p>
 
 <h2 id="method"><span class="num">05</span> How it was checked</h2>
 <ol>
 <li><b>The table.</b> R7501 was transcribed and checked on the one letter already deciphered (R7502, with its interlinear clear text and the sheet R7511).</li>
 <li><b>Applied unchanged</b> to the seven unglossed letters: every cipher passage gives Polish.</li>
 <li><b>Blind check</b> on the letter of 5 May 1663, held out. The protocol was written before computing; the numbers were transcribed by shape and frozen (SHA-256) before any decoding, then measured with a Polish lexicon: 0.389 of the words found, against a 99th percentile of 0.083 for 1,000 permuted tables and 1,000 shuffled texts.</li>
-<li><b>Doubtful numbers</b> were settled by sense only, and marked. After the measurement, errors in the frozen transcription were identified without touching the file: a flat-topped 3 read as 5 (<i lang="pl">cho{d}zi&#322;</i>, <i lang="pl">{oko&#322;o}</i>), 35 for 38 (<i lang="pl">{p}ilniey</i>), &ldquo;21 [3]&rdquo; for 25 23 (<i lang="pl">Marsza&#322;{ek}</i>).</li>
+<li><b>Doubtful numbers</b> were settled by sense only, and marked. After the measurement, errors in the frozen transcription were identified without touching the file: a flat-topped 3 read as 5 (<i lang="pl" translate="no">cho{d}zi&#322;</i>, <i lang="pl" translate="no">{oko&#322;o}</i>), 35 for 38 (<i lang="pl" translate="no">{p}ilniey</i>), &ldquo;21 [3]&rdquo; for 25 23 (<i lang="pl" translate="no">Marsza&#322;{ek}</i>).</li>
 </ol>
-<p>Numbers outside the table are the writer&rsquo;s slips or overwritings, not code: 69 for 96 (<i lang="pl">ru&lsaquo;y&rsaquo;ki</i>, reversed digits), 13 for 53 (<i lang="pl">&lsaquo;z&rsaquo;udiencyach</i>), 36 for 63 (<i lang="pl">kon&lsaquo;36&rsaquo;idency&#261;</i>, reversed), 92 for 52 twice (<i lang="pl">{n}ie kazano</i>, <i lang="pl">a{n}i</i>), 33 for 22 (<i lang="pl">&lsaquo;d&rsaquo;ytno&#347;ci</i> for <i lang="pl">bytno&#347;ci</i>), and 93, an overwritten 13. Across the eight transcriptions, 1,561 of 1,587 numbers (98.4%) are transcribed without doubt and have a value in the table; the other 26 are doubtful digits, mostly in the frozen transcription of 5 May 1663, or slips, each resolved by sense in the reading. Read as sentences against the translation, every letter&rsquo;s cipher passages build Polish with the clear text around them; the established texts give the clear text only where it is needed for the sense.</p>
+<p>Numbers outside the table are the writer&rsquo;s slips or overwritings, not code: 69 for 96 (<i lang="pl" translate="no">ru&lsaquo;y&rsaquo;ki</i>, reversed digits), 13 for 53 (<i lang="pl" translate="no">&lsaquo;z&rsaquo;udiencyach</i>), 36 for 63 (<i lang="pl" translate="no">kon&lsaquo;36&rsaquo;idency&#261;</i>, reversed), 92 for 52 twice (<i lang="pl" translate="no">{n}ie kazano</i>, <i lang="pl" translate="no">a{n}i</i>), 33 for 22 (<i lang="pl" translate="no">&lsaquo;d&rsaquo;ytno&#347;ci</i> for <i lang="pl" translate="no">bytno&#347;ci</i>), and 93, an overwritten 13. Across the eight transcriptions, 1,561 of 1,587 numbers (98.4%) are transcribed without doubt and have a value in the table; the other 26 are doubtful digits, mostly in the frozen transcription of 5 May 1663, or slips, each resolved by sense in the reading. Read as sentences against the translation, every letter&rsquo;s cipher passages build Polish with the clear text around them; the established texts give the clear text only where it is needed for the sense.</p>
 <p>No earlier decipherment was found: DECODE gives the records no status, key file or decryption, and a web search on 27 October 2026 found none.</p>
 
 <h2 id="open"><span class="num">06</span> What remains uncertain</h2>
 <ul>
-<li><b>19 March 1663:</b> <i lang="pl">&lsaquo;przez&#281;id&#261;&rsaquo;</i> gives no word as it stands, with two digits uncertain; the sense expected is <i lang="pl">przeyd&#261;</i> (will pass over), not proven (M). The end of <i lang="pl">komendyrowani&lsaquo;e&rsaquo;</i> lies outside the line crop used. <i lang="pl">z z{a}wi&#261;zku</i> (from the confederation) is the likeliest reading of a badly formed group; <i lang="pl">z zwi&#261;zku</i> remains possible (M).</li>
-<li><b>5 May 1663:</b> the readings in braces correct digits misread in the frozen transcription (C, forced by the sentence); <i lang="pl">{iak}&lsaquo;&#322;&rsaquo;</i>: 90 53 23 gives <i lang="pl">iak</i>, and the following 40 (&#322;) is the writer&rsquo;s addition.</li>
-<li><b>9 December 1663:</b> numbers lost in the tear of the right edge or cut off at the line end are restored in square brackets (<i lang="pl">upo[do]ba&#322;</i>, <i lang="pl">list[u]</i>, <i lang="pl">tera&#378;nie[y]szych</i>) (I).</li>
+<li><b>19 March 1663:</b> <i lang="pl" translate="no">&lsaquo;przez&#281;id&#261;&rsaquo;</i> gives no word as it stands, with two digits uncertain; the sense expected is <i lang="pl" translate="no">przeyd&#261;</i> (will pass over), not proven (M). The end of <i lang="pl" translate="no">komendyrowani&lsaquo;e&rsaquo;</i> lies outside the line crop used. <i lang="pl" translate="no">z z{a}wi&#261;zku</i> (from the confederation) is the likeliest reading of a badly formed group; <i lang="pl" translate="no">z zwi&#261;zku</i> remains possible (M).</li>
+<li><b>5 May 1663:</b> the readings in braces correct digits misread in the frozen transcription (C, forced by the sentence); <i lang="pl" translate="no">{iak}&lsaquo;&#322;&rsaquo;</i>: 90 53 23 gives <i lang="pl" translate="no">iak</i>, and the following 40 (&#322;) is the writer&rsquo;s addition.</li>
+<li><b>9 December 1663:</b> numbers lost in the tear of the right edge or cut off at the line end are restored in square brackets (<i lang="pl" translate="no">upo[do]ba&#322;</i>, <i lang="pl" translate="no">list[u]</i>, <i lang="pl" translate="no">tera&#378;nie[y]szych</i>) (I).</li>
 <li><b>People.</b> Born (with &ldquo;the Bornowscy&rdquo;, his people), Argent, Paczanowski, Paprocki and Woie&#324;ski are not identified, nor Bieykowski and &ldquo;the father&rdquo; of February 1663, nor the Starost of Spisz meant here. Tekieli may be of the Hungarian Th&ouml;k&ouml;ly family (not verified). The Cupbearer&rsquo;s identification is probable.</li>
-<li><b>Dates and places.</b> The undated letter is placed between December 1662 and early 1663 by its opening (the Marshal leaving for the Wolb&oacute;rz circle); the archivist&rsquo;s pencil gives 1663. The established texts do not say where W&#261;sowicz wrote the first six letters; he writes from the court (<i lang="pl">tu w Cancellaryach</i>, here in the chancelleries).</li>
+<li><b>Dates and places.</b> The undated letter is placed between December 1662 and early 1663 by its opening (the Marshal leaving for the Wolb&oacute;rz circle); the archivist&rsquo;s pencil gives 1663. The established texts do not say where W&#261;sowicz wrote the first six letters; he writes from the court (<i lang="pl" translate="no">tu w Cancellaryach</i>, here in the chancelleries).</li>
 </ul>
 
 <!-- texts:start -->
@@ -139,22 +139,22 @@
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>Wąsowicz to Lubomirski, 29 November 1662 (ANK AKPot 3227, p. 137; DECODE R7503)</h3>
 <p>Wąsowicz reports that the Voivode of Ruthenia, Stefan Czarniecki, has himself subscribed to something; only his title is in cipher. Written as the Crown army&#x27;s confederation pressed the court for its pay.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7503_transcription.txt">R7503_transcription.txt</a></p><pre># Wąsowicz to Lubomirski, 29 November 1662 (ANK AKPot 3227, p. 137; DECODE R7503)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7503_transcription.txt">R7503_transcription.txt</a></p><pre translate="no"># Wąsowicz to Lubomirski, 29 November 1662 (ANK AKPot 3227, p. 137; DECODE R7503)
 # numbers as written; | = clear text between cipher runs
 72 70 90 25 72 70 33 53 | 35 92 69 23 90</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7503_decryption.txt">R7503_decryption.txt</a></p><pre># Wąsowicz to Lubomirski, 29 November 1662 (ANK AKPot 3227, p. 137; DECODE R7503): number=value (key.tsv); ‹n› number without value
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7503_decryption.txt">R7503_decryption.txt</a></p><pre translate="no"># Wąsowicz to Lubomirski, 29 November 1662 (ANK AKPot 3227, p. 137; DECODE R7503): number=value (key.tsv); ‹n› number without value
 72=w 70=o 90=i 25=e 72=w 70=o 33=d 53=a | 35=r 92=u 69=y 23=k 90=i</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7503_reading.md">R7503_reading.md</a></p><pre># Wąsowicz to Lubomirski, 29 November 1662 (ANK AKPot 3227, p. 137; DECODE R7503): text in context (Polish)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7503_reading.md">R7503_reading.md</a></p><pre translate="no"># Wąsowicz to Lubomirski, 29 November 1662 (ANK AKPot 3227, p. 137; DECODE R7503): text in context (Polish)
 
 […] clear text not reproduced; {x} probable; ‹x› slip or unresolved.
 
 […] do ktorych y sam się przyznał woiewoda ru‹y›ki […]</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7503_translation.md">R7503_translation.md</a></p><pre># Wąsowicz to Lubomirski, 29 November 1662 (ANK AKPot 3227, p. 137; DECODE R7503): English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7503_translation.md">R7503_translation.md</a></p><pre translate="no"># Wąsowicz to Lubomirski, 29 November 1662 (ANK AKPot 3227, p. 137; DECODE R7503): English translation
 
 […] to which [the Voivode of Ruthenia] himself has subscribed […]</pre></details>
 <h3>Wąsowicz to Lubomirski, [December 1662 – January 1663] (undated) (ANK AKPot 3227, pp. 181–183; DECODE R7504)</h3>
 <p>Undated letter of winter 1662-1663: the Marshal Jerzy Sebastian Lubomirski leaves for the army&#x27;s circle at Wolbórz; the rest concerns the estate of Błażejowa, held in pledge for 300,000 by a Tekieli who lacked indigenate, and how to secure a donation of it on the palatine&#x27;s death. The names are in cipher.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7504_transcription.txt">R7504_transcription.txt</a></p><pre># Wąsowicz to Lubomirski, [December 1662 – January 1663] (undated) (ANK AKPot 3227, pp. 181–183; DECODE R7504)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7504_transcription.txt">R7504_transcription.txt</a></p><pre translate="no"># Wąsowicz to Lubomirski, [December 1662 – January 1663] (undated) (ANK AKPot 3227, pp. 181–183; DECODE R7504)
 # numbers as written; | = clear text between cipher runs
 p. 181 : 22 40 53 13 25 90 70 = 72 25 69
 34 53 35 96 13 53 40 23 70 72 90
@@ -170,7 +170,7 @@ p. 182 : 38 53 30 53 28 90 52 92 96
 p. 183 : 28 25 23 90 25 30 25 34 92
 52 53 | 22 40 53 13 25 90 70 72 25 69
 96 | 38 53 30 53 28 69 52 92 96 = 25 34</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7504_decryption.txt">R7504_decryption.txt</a></p><pre># Wąsowicz to Lubomirski, [December 1662 – January 1663] (undated) (ANK AKPot 3227, pp. 181–183; DECODE R7504): number=value (key.tsv); ‹n› number without value
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7504_decryption.txt">R7504_decryption.txt</a></p><pre translate="no"># Wąsowicz to Lubomirski, [December 1662 – January 1663] (undated) (ANK AKPot 3227, pp. 181–183; DECODE R7504): number=value (key.tsv); ‹n› number without value
 p.=‹p.› 181=‹181› :=‹:› 22=b 40=ł 53=a 13=z 25=e 90=i 70=o ==‹=› 72=w 25=e 69=y
 34=m 53=a 35=r 96=s 13=z 53=a 40=ł 23=k 70=o 72=w 90=i
 38=p 52=n 25=e 34=m | 70=o 69=y 41=c 25=e 34=m | 53=a | 28=t 25=e 23=k 90=i 25=e 30=l 25=e 34=m
@@ -185,7 +185,7 @@ p.=‹p.› 182=‹182› :=‹:› 38=p 53=a 30=l 53=a 28=t 90=i 52=n 92=u 96=s
 p.=‹p.› 183=‹183› :=‹:› 28=t 25=e 23=k 90=i 25=e 30=l 25=e 34=m 92=u
 52=n 53=a | 22=b 40=ł 53=a 13=z 25=e 90=i 70=o 72=w 25=e 69=y
 96=s | 38=p 53=a 30=l 53=a 28=t 69=y 52=n 92=u 96=s ==‹=› 25=e 34=m</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7504_reading.md">R7504_reading.md</a></p><pre># Wąsowicz to Lubomirski, [December 1662 – January 1663] (undated) (ANK AKPot 3227, pp. 181–183; DECODE R7504): text in context (Polish)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7504_reading.md">R7504_reading.md</a></p><pre translate="no"># Wąsowicz to Lubomirski, [December 1662 – January 1663] (undated) (ANK AKPot 3227, pp. 181–183; DECODE R7504): text in context (Polish)
 
 […] clear text not reproduced; {x} probable; ‹x› slip or unresolved.
 
@@ -194,7 +194,7 @@ Dziś wyieżdża JMP Marszałek do Wolborza na koło […]. A ia strony Błażei
 […] kiedyby wprzod umarł palatinus […] po wstąpieniu z tego świata palatynusa […]. Starać się, aby uczyniono realiter donatią Błażeiowey, wręcz proponuiąc, że Syn za wstąpieniem Oyca nie utrzyma maiętności […].
 
 […] blisko tego, isz Tekielemu, gdyby sam Syn faworował na Błażeiowey, danoby prętko absolucyą. A in recompensam donatii uczynić contract osobny s palatynusem […]</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7504_translation.md">R7504_translation.md</a></p><pre># Wąsowicz to Lubomirski, [December 1662 – January 1663] (undated) (ANK AKPot 3227, pp. 181–183; DECODE R7504): English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7504_translation.md">R7504_translation.md</a></p><pre translate="no"># Wąsowicz to Lubomirski, [December 1662 – January 1663] (undated) (ANK AKPot 3227, pp. 181–183; DECODE R7504): English translation
 
 Today His Grace the Marshal leaves for Wolbórz, for the circle […]. As for [Błażejowa], I long ago informed Your Grace, my lord and benefactor, that there is no note of it here in the chancelleries, nor of anything that might have been granted by His Majesty the King [to the Marshal] […] one must see to obtaining a deed [between the lord father and Tekieli], to the effect that [Tekieli] holds [Błażejowa] by way of obligation (modo obligatorio) for three hundred thousand, since he could not buy these estates [having no indigenate] […]. It is on such a title that [Tekieli] sat, who will no doubt, after the death [of the palatine’s wife], try to recover it. […] restore [to Tekieli].
 
@@ -203,28 +203,28 @@ Today His Grace the Marshal leaves for Wolbórz, for the circle […]. As for [B
 […] it comes close to this: that [Tekieli], if the Son himself favoured [the Błażejowa matter], would soon be granted absolution. And in return for the donation, to make a separate contract [with the palatine] […]</pre></details>
 <h3>Wąsowicz to Lubomirski, 25 January 1663 (ANK AKPot 3227, p. 200; DECODE R7505)</h3>
 <p>The court strives to keep the agreement with the confederated army; the circle of Wolbórz must be satisfied, and the whole point is that the money be brought in. Wąsowicz watches the Marshal&#x27;s manoeuvres.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7505_transcription.txt">R7505_transcription.txt</a></p><pre># Wąsowicz to Lubomirski, 25 January 1663 (ANK AKPot 3227, p. 200; DECODE R7505)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7505_transcription.txt">R7505_transcription.txt</a></p><pre translate="no"># Wąsowicz to Lubomirski, 25 January 1663 (ANK AKPot 3227, p. 200; DECODE R7505)
 # numbers as written; | = clear text between cipher runs
 72 90 33 13 90 25 41 | 70 22 35 70 28 69 | 90 53 23 90 25 | 34 90 53 40 | 34 53 35 96 13 53 40 25 23
 13 21 70 33 12 | 13 | 72 70 69 96 23 90 25 34 | 33 72 70 35 | 33 70 28 35 13 69 34 53 72 53 41 | 92 96 90 40 92 90 25 | 69
 23 70 40 92 | 72 70 30 22 70 35 96 23 90 25 34 92 | 96 69 41 | 96 28 53 40 70
 53 22 69 | 38 90 25 52 90 68 33 13 25 | 13 72 90 25 13 90 70 52 70</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7505_decryption.txt">R7505_decryption.txt</a></p><pre># Wąsowicz to Lubomirski, 25 January 1663 (ANK AKPot 3227, p. 200; DECODE R7505): number=value (key.tsv); ‹n› number without value
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7505_decryption.txt">R7505_decryption.txt</a></p><pre translate="no"># Wąsowicz to Lubomirski, 25 January 1663 (ANK AKPot 3227, p. 200; DECODE R7505): number=value (key.tsv); ‹n› number without value
 72=w 90=i 33=d 13=z 90=i 25=e 41=c | 70=o 22=b 35=r 70=o 28=t 69=y | 90=i 53=a 23=k 90=i 25=e | 34=m 90=i 53=a 40=ł | 34=m 53=a 35=r 96=s 13=z 53=a 40=ł 25=e 23=k
 13=z 21=g 70=o 33=d 12=ę | 13=z | 72=w 70=o 69=y 96=s 23=k 90=i 25=e 34=m | 33=d 72=w 70=o 35=r | 33=d 70=o 28=t 35=r 13=z 69=y 34=m 53=a 72=w 53=a 41=c | 92=u 96=s 90=i 40=ł 92=u 90=i 25=e | 69=y
 23=k 70=o 40=ł 92=u | 72=w 70=o 30=l 22=b 70=o 35=r 96=s 23=k 90=i 25=e 34=m 92=u | 96=s 69=y 41=c | 96=s 28=t 53=a 40=ł 70=o
 53=a 22=b 69=y | 38=p 90=i 25=e 52=n 90=i 68=ą 33=d 13=z 25=e | 13=z 72=w 90=i 25=e 13=z 90=i 70=o 52=n 70=o</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7505_reading.md">R7505_reading.md</a></p><pre># Wąsowicz to Lubomirski, 25 January 1663 (ANK AKPot 3227, p. 200; DECODE R7505): text in context (Polish)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7505_reading.md">R7505_reading.md</a></p><pre translate="no"># Wąsowicz to Lubomirski, 25 January 1663 (ANK AKPot 3227, p. 200; DECODE R7505): text in context (Polish)
 
 […] clear text not reproduced; {x} probable; ‹x› slip or unresolved.
 
 […] widziec obroty iakie miał marszałek. […] zgodę z woyskiem dwor dotrzymawac usiłuie y […] piłne starania aby się kołu wolborskiemu [do]syc stało. Cała rzecz aby pieniądze zwieziono. […]</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7505_translation.md">R7505_translation.md</a></p><pre># Wąsowicz to Lubomirski, 25 January 1663 (ANK AKPot 3227, p. 200; DECODE R7505): English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7505_translation.md">R7505_translation.md</a></p><pre translate="no"># Wąsowicz to Lubomirski, 25 January 1663 (ANK AKPot 3227, p. 200; DECODE R7505): English translation
 
 […] [to see the manoeuvres the Marshal has made.] […] [The court strives to keep the agreement with the army, and] […] diligent efforts so that [the circle of Wolbórz be satisfied.] The whole point: [that the money be brought in.] […]</pre></details>
 <h3>Wąsowicz to Lubomirski, 17–18 February 1663 (ANK AKPot 3227, p. 209; DECODE R7506)</h3>
 <p>The Marshal is well received by the King and Queen at the audiences; someone was told to negotiate nothing further, only to serve the King after the confederation and to watch whether the army plots harm against the fatherland.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7506_transcription.txt">R7506_transcription.txt</a></p><pre># Wąsowicz to Lubomirski, 17–18 February 1663 (ANK AKPot 3227, p. 209; DECODE R7506)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7506_transcription.txt">R7506_transcription.txt</a></p><pre translate="no"># Wąsowicz to Lubomirski, 17–18 February 1663 (ANK AKPot 3227, p. 209; DECODE R7506)
 # numbers as written; | = clear text between cipher runs
 34 53 35 96 13 53 40 25 23
 38 35 13 69 90 12 28 69 | 92 | 23 35 70 30 25 96 28 72 53 | 69 | 52 53 | 13 92 33 90 25 52 41 69 53 41 88 | 34 90 25 72 53
@@ -233,7 +233,7 @@ Today His Grace the Marshal leaves for Wolbórz, for the circle […]. As for [B
 92 90 25 | 23 53 13 53 52 70
 38 70 | 13 72 90 68 13 23 92 | 96 40 92 13 69 40 | 23 35 70 30 70 72 90
 38 35 13 25 96 28 35 13 25 21 53 41 | 90 25 96 30 90 | 72 70 69 96 23 70 | 41 13 25 21 70 | 13 40 25 21 70 | 52 90 25 | 34 69 96 30 90 | 70 69 41 13 69 13 52 90 25</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7506_decryption.txt">R7506_decryption.txt</a></p><pre># Wąsowicz to Lubomirski, 17–18 February 1663 (ANK AKPot 3227, p. 209; DECODE R7506): number=value (key.tsv); ‹n› number without value
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7506_decryption.txt">R7506_decryption.txt</a></p><pre translate="no"># Wąsowicz to Lubomirski, 17–18 February 1663 (ANK AKPot 3227, p. 209; DECODE R7506): number=value (key.tsv); ‹n› number without value
 34=m 53=a 35=r 96=s 13=z 53=a 40=ł 25=e 23=k
 38=p 35=r 13=z 69=y 90=i 12=ę 28=t 69=y | 92=u | 23=k 35=r 70=o 30=l 25=e 96=s 28=t 72=w 53=a | 69=y | 52=n 53=a | 13=z 92=u 33=d 90=i 25=e 52=n 41=c 69=y 53=a 41=c 88=h | 34=m 90=i 25=e 72=w 53=a
 96=s 28=t 53=a 35=r 70=o 96=s 41=c 90=i 25=e | 96=s 38=p 90=i 96=s 23=k 90=i 25=e 34=m 92=u
@@ -241,17 +241,17 @@ Today His Grace the Marshal leaves for Wolbórz, for the circle […]. As for [B
 92=u 90=i 25=e | 23=k 53=a 13=z 53=a 52=n 70=o
 38=p 70=o | 13=z 72=w 90=i 68=ą 13=z 23=k 92=u | 96=s 40=ł 92=u 13=z 69=y 40=ł | 23=k 35=r 70=o 30=l 70=o 72=w 90=i
 38=p 35=r 13=z 25=e 96=s 28=t 35=r 13=z 25=e 21=g 53=a 41=c | 90=i 25=e 96=s 30=l 90=i | 72=w 70=o 69=y 96=s 23=k 70=o | 41=c 13=z 25=e 21=g 70=o | 13=z 40=ł 25=e 21=g 70=o | 52=n 90=i 25=e | 34=m 69=y 96=s 30=l 90=i | 70=o 69=y 41=c 13=z 69=y 13=z 52=n 90=i 25=e</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7506_reading.md">R7506_reading.md</a></p><pre># Wąsowicz to Lubomirski, 17–18 February 1663 (ANK AKPot 3227, p. 209; DECODE R7506): text in context (Polish)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7506_reading.md">R7506_reading.md</a></p><pre translate="no"># Wąsowicz to Lubomirski, 17–18 February 1663 (ANK AKPot 3227, p. 209; DECODE R7506): text in context (Polish)
 
 […] clear text not reproduced; {x} probable; ‹x› slip or unresolved.
 
 Marszałek dosyć dobrze przyięty u krolestwa y na ‹z›udiencyach miewa […] kontentowania. […] staroscie spiskiemu […] u oyca kon‹36›idencyą z Bieykowskiem nic więcey tractować {n}ie kazano, tylko zeby po związku służył krolowi, a temu zeby przestrzegac iesli woysko czego złego nie mysli oyczyznie. […]</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7506_translation.md">R7506_translation.md</a></p><pre># Wąsowicz to Lubomirski, 17–18 February 1663 (ANK AKPot 3227, p. 209; DECODE R7506): English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7506_translation.md">R7506_translation.md</a></p><pre translate="no"># Wąsowicz to Lubomirski, 17–18 February 1663 (ANK AKPot 3227, p. 209; DECODE R7506): English translation
 
 [The Marshal] is rather well [received by Their Majesties and obtains at the audiences] […] satisfaction. […] [to the Starost of Spisz] […] [the confidence at the father’s with Bieykowski:] [he was ordered] to negotiate nothing further, only [that after the confederation he should serve the King], and that he [should watch whether the army is plotting some harm against the fatherland.] […]</pre></details>
 <h3>Wąsowicz to Lubomirski, 19 March 1663 (ANK AKPot 3227, p. 225; DECODE R7507)</h3>
 <p>The Marshal has obliged the royal couple by sending Tatar [prisoners?]; he will not detach the better banners from the confederation before the circle, but promises that many will leave it afterwards; Czarniecki will not set out again.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7507_transcription.txt">R7507_transcription.txt</a></p><pre># Wąsowicz to Lubomirski, 19 March 1663 (ANK AKPot 3227, p. 225; DECODE R7507)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7507_transcription.txt">R7507_transcription.txt</a></p><pre translate="no"># Wąsowicz to Lubomirski, 19 March 1663 (ANK AKPot 3227, p. 225; DECODE R7507)
 # numbers as written; | = clear text between cipher runs
 38 35 13 69 96 40 53 40
 34 53 35 96 13 53 40 25 23 · […] · 70 22 30 90 21 70 72 53 40 | 23 35 70 =
@@ -260,7 +260,7 @@ Marszałek dosyć dobrze przyięty u krolestwa y na ‹z›udiencyach miewa […
 13 25 | 90 41 88 | 96 90 40 53 | 13 | 13 ? 72 90 68 13 23 92 | 72 69 52 90 33 13 90 25 | 72 70 90 25 =
 72 70 33 53 | 35 92 96 23 90 | 13 52 70 72 92 | 52 90 25 | 72 69 90 25 33 13 90 25
 52 53 | 28 12 | 90 34 | 38 3? 2? 13 12 90 33 68 | 23 70 34 25 52 33 69 35 70 72 53 52 90 …</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7507_decryption.txt">R7507_decryption.txt</a></p><pre># Wąsowicz to Lubomirski, 19 March 1663 (ANK AKPot 3227, p. 225; DECODE R7507): number=value (key.tsv); ‹n› number without value
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7507_decryption.txt">R7507_decryption.txt</a></p><pre translate="no"># Wąsowicz to Lubomirski, 19 March 1663 (ANK AKPot 3227, p. 225; DECODE R7507): number=value (key.tsv); ‹n› number without value
 38=p 35=r 13=z 69=y 96=s 40=ł 53=a 40=ł
 34=m 53=a 35=r 96=s 13=z 53=a 40=ł 25=e 23=k ·=‹·› […]=‹…› ·=‹·› 70=o 22=b 30=l 90=i 21=g 70=o 72=w 53=a 40=ł | 23=k 35=r 70=o ==‹=›
 30=l 25=e 96=s 28=t 72=w 70=o ·=‹·› […]=‹…› ·=‹·› 38=p 35=r 13=z 25=e 33=d | 23=k 70=o 40=ł 25=e 34=m | 30=l 25=e 38=p 96=s 13=z 69=y 41=c 88=h
@@ -268,17 +268,17 @@ Marszałek dosyć dobrze przyięty u krolestwa y na ‹z›udiencyach miewa […
 13=z 25=e | 90=i 41=c 88=h | 96=s 90=i 40=ł 53=a | 13=z | 13=z ?=‹› 72=w 90=i 68=ą 13=z 23=k 92=u | 72=w 69=y 52=n 90=i 33=d 13=z 90=i 25=e | 72=w 70=o 90=i 25=e ==‹=›
 72=w 70=o 33=d 53=a | 35=r 92=u 96=s 23=k 90=i | 13=z 52=n 70=o 72=w 92=u | 52=n 90=i 25=e | 72=w 69=y 90=i 25=e 33=d 13=z 90=i 25=e
 52=n 53=a | 28=t 12=ę | 90=i 34=m | 38=p 3?=‹3› 2?=‹2› 13=z 12=ę 90=i 33=d 68=ą | 23=k 70=o 34=m 25=e 52=n 33=d 69=y 35=r 70=o 72=w 53=a 52=n 90=i …=‹…›</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7507_reading.md">R7507_reading.md</a></p><pre># Wąsowicz to Lubomirski, 19 March 1663 (ANK AKPot 3227, p. 225; DECODE R7507): text in context (Polish)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7507_reading.md">R7507_reading.md</a></p><pre translate="no"># Wąsowicz to Lubomirski, 19 March 1663 (ANK AKPot 3227, p. 225; DECODE R7507): text in context (Polish)
 
 […] clear text not reproduced; {x} probable; ‹x› slip or unresolved.
 
 […] także tatarskie przysłał marszałek, czym tu sobie wielce obligował krolestwo. Nie obiecuie przed kołem lepszych oderwac chorągwi, ale po kole upewnia, że ich siła z z{a}wiązku wynidzie. Woiewoda ruski znowu nie wyiedzie, ludzie iednak na tę im ‹przezęidą› komendyrowani‹e› […]</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7507_translation.md">R7507_translation.md</a></p><pre># Wąsowicz to Lubomirski, 19 March 1663 (ANK AKPot 3227, p. 225; DECODE R7507): English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7507_translation.md">R7507_translation.md</a></p><pre translate="no"># Wąsowicz to Lubomirski, 19 March 1663 (ANK AKPot 3227, p. 225; DECODE R7507): English translation
 
 […] [the Marshal] has also [sent] Tatar [prisoners?], by which he has greatly [obliged Their Majesties] here. He does not promise [to detach the better banners before the circle, but after the circle he gives assurance that a good many of them will leave the confederation. The Voivode of Ruthenia will not set out again]; the men however [will pass? under this command] […]</pre></details>
 <h3>Wąsowicz to Lubomirski, 5 May 1663 (ANK AKPot 3227, p. 235; DECODE R7508)</h3>
 <p>The Marshal stays at Łańcut without a word to the court; when the King moves from Cracow with the camp, the plan is to see whether the Marshal detaches the banners from the confederation as he promised and brings them to the King.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7508_transcription.txt">R7508_transcription.txt</a></p><pre># Wąsowicz to Lubomirski, 5 May 1663 (ANK AKPot 3227, p. 235; DECODE R7508)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7508_transcription.txt">R7508_transcription.txt</a></p><pre translate="no"># Wąsowicz to Lubomirski, 5 May 1663 (ANK AKPot 3227, p. 235; DECODE R7508)
 # numbers as written; | = clear text between cipher runs
 72 41 13 69 34 | 33 53 40 25 34 | 90 25 34 92 | 28 12 | 90 52 63 70 35 34 53 41 69 68
 13 5? 22 69 | 21 70 | 72 28 12 | 70 22 30 90 21 53 41 69 68 | 72 41 90 68 21 52 68 41 | 69 | 13 25 22 69 | 35 90 30 =
@@ -289,7 +289,7 @@ Marszałek dosyć dobrze przyięty u krolestwa y na ‹z›udiencyach miewa […
 34 53 35 96 13 53 40 2[3/5] 53
 90 2[5/1] 96 [3/5]0 90 | ! 40 33 0 35 72 90 25 | 41 88 70 35 68 | 21 72 90 25 | 90 53 2[8/3] 40 | 70 22 90 25 41 53 40 70 3[5] =
 13 72 90 68 13 23 92 | 69 | 90 25 96 30 90 | 38 35 13 69 69 33 13 90 25 13 | 52 90 25 34 90 | 33 70 | 23 35 70 30 53</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7508_decryption.txt">R7508_decryption.txt</a></p><pre># Wąsowicz to Lubomirski, 5 May 1663 (ANK AKPot 3227, p. 235; DECODE R7508): number=value (key.tsv); ‹n› number without value
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7508_decryption.txt">R7508_decryption.txt</a></p><pre translate="no"># Wąsowicz to Lubomirski, 5 May 1663 (ANK AKPot 3227, p. 235; DECODE R7508): number=value (key.tsv); ‹n› number without value
 72=w 41=c 13=z 69=y 34=m | 33=d 53=a 40=ł 25=e 34=m | 90=i 25=e 34=m 92=u | 28=t 12=ę | 90=i 52=n 63=f 70=o 35=r 34=m 53=a 41=c 69=y 68=ą
 13=z 5?=‹5› 22=b 69=y | 21=g 70=o | 72=w 28=t 12=ę | 70=o 22=b 30=l 90=i 21=g 53=a 41=c 69=y 68=ą | 72=w 41=c 90=i 68=ą 21=g 52=n 68=ą 41=c | 69=y | 13=z 25=e 22=b 69=y | 35=r 90=i 30=l ==‹=›
 52=n 90=i 25=e 69=y | 41=c 88=h 70=o 35=r 1[3/5]=‹1[3/5› 9[0/8]=‹9[0/8› 40=ł | 70=o 2[5/3]=‹2[5/3› 70=o [9/4]0=‹9/4]0› | 28=t 25=e 21=g 70=o | 41=c 70=o | 38=p 53=a 52=n 92=u | 70=o 22=b 90=i 25=e 41=c 53=a 40=ł
@@ -299,38 +299,38 @@ Marszałek dosyć dobrze przyięty u krolestwa y na ‹z›udiencyach miewa […
 34=m 53=a 35=r 96=s 13=z 53=a 40=ł 2[3/5]=‹2[3/5› 53=a
 90=i 2[5/1]=‹2[5/1› 96=s [3/5]0=‹3/5]0› 90=i | !=‹!› 40=ł 33=d 0=‹0› 35=r 72=w 90=i 25=e | 41=c 88=h 70=o 35=r 68=ą | 21=g 72=w 90=i 25=e | 90=i 53=a 2[8/3]=‹2[8/3› 40=ł | 70=o 22=b 90=i 25=e 41=c 53=a 40=ł 70=o 3[5]=‹3[5› ==‹=›
 13=z 72=w 90=i 68=ą 13=z 23=k 92=u | 69=y | 90=i 25=e 96=s 30=l 90=i | 38=p 35=r 13=z 69=y 69=y 33=d 13=z 90=i 25=e 13=z | 52=n 90=i 25=e 34=m 90=i | 33=d 70=o | 23=k 35=r 70=o 30=l 53=a</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7508_reading.md">R7508_reading.md</a></p><pre># Wąsowicz to Lubomirski, 5 May 1663 (ANK AKPot 3227, p. 235; DECODE R7508): text in context (Polish)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7508_reading.md">R7508_reading.md</a></p><pre translate="no"># Wąsowicz to Lubomirski, 5 May 1663 (ANK AKPot 3227, p. 235; DECODE R7508): text in context (Polish)
 
 […] clear text not reproduced; {x} probable; ‹x› slip or unresolved.
 
 […] zeby Chorągiew pozwoliła na przyście, w czym dałem iemu tę informacyą, a to dla tego {ze}by go w tę obligacyą wciągnąc y zeby {p}ilniey cho{d}ził {około} tego co panu obiecał. Ale y w tym więcey będę mógł powiedzieć WMM Panu y Dobrodzieiowi.
 
 Marszał{ek} ze teraz siedzi w Łancucie nie odzywaiąc się dworowi; o nim są tu rożne rozumienia. Widzę że kiedy się Król JM ruszy s pod Krakowa z obozem, idea konsyderować marszałka, iesli {oderwie} chorągwie {iak}‹ł› obiecał od związku, iesli przyydzie z niemi do krola. […]</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7508_translation.md">R7508_translation.md</a></p><pre># Wąsowicz to Lubomirski, 5 May 1663 (ANK AKPot 3227, p. 235; DECODE R7508): English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7508_translation.md">R7508_translation.md</a></p><pre translate="no"># Wąsowicz to Lubomirski, 5 May 1663 (ANK AKPot 3227, p. 235; DECODE R7508): English translation
 
 […] that the banner should consent to come, [in which I gave him this information], and that [in order to draw him into this obligation, so that he should attend more diligently to what he promised the lord]. But on this too I shall be able to tell Your Grace, my lord and benefactor, more.
 
 [The Marshal] is now [staying at Łańcut without a word to the court; about him there are here] various [opinions]. I see that when His Majesty the King moves from Cracow with the camp, the idea is to watch [the Marshal: whether he detaches the banners from the confederation, as he promised, whether he comes with them to the King.] […]</pre></details>
 <h3>Wąsowicz to Lubomirski, 9 December 1663 (ANK AKPot 3227, p. 239; DECODE R7509)</h3>
 <p>Beginning of the letter of 9 December 1663, continued in R7510: the Archdeacon of Sandomierz has not asked after Lubomirski&#x27;s health.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7509_transcription.txt">R7509_transcription.txt</a></p><pre># Wąsowicz to Lubomirski, 9 December 1663 (ANK AKPot 3227, p. 239; DECODE R7509)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7509_transcription.txt">R7509_transcription.txt</a></p><pre translate="no"># Wąsowicz to Lubomirski, 9 December 1663 (ANK AKPot 3227, p. 239; DECODE R7509)
 # numbers as written; | = clear text between cipher runs
 52 90 25 | 96 38 69 28 53 40 | 96 90 12
 70 | 13 33 35 70 72 90 25 | 72 53 96 13 25 41 90</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7509_decryption.txt">R7509_decryption.txt</a></p><pre># Wąsowicz to Lubomirski, 9 December 1663 (ANK AKPot 3227, p. 239; DECODE R7509): number=value (key.tsv); ‹n› number without value
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7509_decryption.txt">R7509_decryption.txt</a></p><pre translate="no"># Wąsowicz to Lubomirski, 9 December 1663 (ANK AKPot 3227, p. 239; DECODE R7509): number=value (key.tsv); ‹n› number without value
 52=n 90=i 25=e | 96=s 38=p 69=y 28=t 53=a 40=ł | 96=s 90=i 12=ę
 70=o | 13=z 33=d 35=r 70=o 72=w 90=i 25=e | 72=w 53=a 96=s 13=z 25=e 41=c 90=i</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7509_reading.md">R7509_reading.md</a></p><pre># Wąsowicz to Lubomirski, 9 December 1663 (ANK AKPot 3227, p. 239; DECODE R7509): text in context (Polish)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7509_reading.md">R7509_reading.md</a></p><pre translate="no"># Wąsowicz to Lubomirski, 9 December 1663 (ANK AKPot 3227, p. 239; DECODE R7509): text in context (Polish)
 
 […] clear text not reproduced; {x} probable; ‹x› slip or unresolved.
 
 […] na ten czas X. Archidyakon Sendomirski nie spytał się nay mnieyszym podobieństwem o zdrowie Waszeci. […]</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7509_translation.md">R7509_translation.md</a></p><pre># Wąsowicz to Lubomirski, 9 December 1663 (ANK AKPot 3227, p. 239; DECODE R7509): English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7509_translation.md">R7509_translation.md</a></p><pre translate="no"># Wąsowicz to Lubomirski, 9 December 1663 (ANK AKPot 3227, p. 239; DECODE R7509): English translation
 
 […] for the time being the Archdeacon of Sandomierz [has not asked] in the slightest way [after Your Grace’s health.] […]</pre></details>
 <h3>Wąsowicz to Lubomirski, 9 December 1663, continued (Jarosław) (ANK AKPot 3227, pp. 245–248; DECODE R7510)</h3>
 <p>End of the Jarosław letter of 9 December 1663, after the funeral of the Cupbearer (probably Konstanty Jacek Lubomirski): Born&#x27;s grievances and his taking of Połonne; the Marshal refuses the King&#x27;s Ukrainian campaign (&#x27;iam ani hetman ani żołnierz do wiosny&#x27;); the army&#x27;s deputies paid in debased szelągi; gossip about the Cupbearer&#x27;s death.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7510_transcription.txt">R7510_transcription.txt</a></p><pre># Wąsowicz to Lubomirski, 9 December 1663, continued (Jarosław) (ANK AKPot 3227, pp. 245–248; DECODE R7510)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7510_transcription.txt">R7510_transcription.txt</a></p><pre translate="no"># Wąsowicz to Lubomirski, 9 December 1663, continued (Jarosław) (ANK AKPot 3227, pp. 245–248; DECODE R7510)
 # numbers as written; | = clear text between cipher runs
 p. 245 : 33 70 | 52 90 25 21 70 | 30 9[0] = 96 28 92 | 70 33 | 72 53 96 13 25 41 90
 38 53 38 35 = 70 41 23 90
@@ -366,7 +366,7 @@ p. 248 (P.-S.) : 34 90 53 40 | 22 69 41 | 28 25 35 53 13
 96 28 53 35 70 96 28 53 | 96 38 90 96 23 90
 38 53 41 13 53 52 70 72 96 23 90
 90 53 33 68 41 | 38 35 13 25 13 = 40 53 52 41 92 28</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7510_decryption.txt">R7510_decryption.txt</a></p><pre># Wąsowicz to Lubomirski, 9 December 1663, continued (Jarosław) (ANK AKPot 3227, pp. 245–248; DECODE R7510): number=value (key.tsv); ‹n› number without value
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7510_decryption.txt">R7510_decryption.txt</a></p><pre translate="no"># Wąsowicz to Lubomirski, 9 December 1663, continued (Jarosław) (ANK AKPot 3227, pp. 245–248; DECODE R7510): number=value (key.tsv); ‹n› number without value
 p.=‹p.› 245=‹245› :=‹:› 33=d 70=o | 52=n 90=i 25=e 21=g 70=o | 30=l 9[0]=‹9[0› ==‹=› 96=s 28=t 92=u | 70=o 33=d | 72=w 53=a 96=s 13=z 25=e 41=c 90=i
 38=p 53=a 38=p 35=r ==‹=› 70=o 41=c 23=k 90=i
 72=w | 33=d 70=o 34=m 92=u | 52=n 53=a 96=s 13=z 69=y 34=m
@@ -401,7 +401,7 @@ p.=‹p.› 248=‹248› (P.-S.)=‹(P.-S.)› :=‹:› 34=m 90=i 53=a 40=ł |
 96=s 28=t 53=a 35=r 70=o 96=s 28=t 53=a | 96=s 38=p 90=i 96=s 23=k 90=i
 38=p 53=a 41=c 13=z 53=a 52=n 70=o 72=w 96=s 23=k 90=i
 90=i 53=a 33=d 68=ą 41=c | 38=p 35=r 13=z 25=e 13=z ==‹=› 40=ł 53=a 52=n 41=c 92=u 28=t</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7510_reading.md">R7510_reading.md</a></p><pre># Wąsowicz to Lubomirski, 9 December 1663, continued (Jarosław) (ANK AKPot 3227, pp. 245–248; DECODE R7510): text in context (Polish)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7510_reading.md">R7510_reading.md</a></p><pre translate="no"># Wąsowicz to Lubomirski, 9 December 1663, continued (Jarosław) (ANK AKPot 3227, pp. 245–248; DECODE R7510): text in context (Polish)
 
 […] clear text not reproduced; {x} probable; ‹x› slip or unresolved.
 
@@ -412,7 +412,7 @@ p. 246 : Narażałem się potym Bornowi, będąc u niego w pokoiu; iednego słow
 p. 247 : […] JMX Archidyakon nie pisał teraz do WMM Pana, bo zaraz nazaiutrz po pogrzebie odiechał do Sendomierza, ale z domu obiecał napisać. Miał ‹z› Bornem rozmowę, ale mi nie chciał odkryć, tylko to, że Born skarżył się na Waszeci, isz iego ruiną chcesz awancować. Born iuż Połonne odeymuie y słuchać pani nie barzo będą, bo kazał być u siebie mieszczanom połońskim w Łańcucie. […] Śmierć JMP Podczaszego z tłustości niewidaney przypisuią, ktora się miała zapalić z tańca wielkiego, bo sobie upo[do]bał Niemkę we Gdańsku y zakochał, a przydano, że miał krzemyk wnętrzny, około czego iest baieczek wszelkich między białemi głowami. […]
 
 p. 248, après « W Jarosławiu d. 9 decembr. 1663 » : Zanosiło się na to, że Born miał być teraz u Argenta, iako mi namienił starosta spiski, ale wczora Paczanowski powiedał o odmianie, od ktorego będę więcey wiedział iadąc przez Łańcut.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7510_translation.md">R7510_translation.md</a></p><pre># Wąsowicz to Lubomirski, 9 December 1663, continued (Jarosław) (ANK AKPot 3227, pp. 245–248; DECODE R7510): English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wasowicz1662/texts/R7510_translation.md">R7510_translation.md</a></p><pre translate="no"># Wąsowicz to Lubomirski, 9 December 1663, continued (Jarosław) (ANK AKPot 3227, pp. 245–248; DECODE R7510): English translation
 
 p. 245: […] Born took it ill that there was [no letter for him from Your Grace]; he said that at the same time [Paprocki] to him… It is a misfortune [in our house] that we have [no correspondence with one another]; at least now [it was proper to write], that I should do it [in his name]. I answered: [the letter, that it was not given] […], but that Your Grace should have no single understanding with Born [in the present affairs]: I am instructed […] to Born.
 
@@ -430,16 +430,16 @@ P.S. (p. 248, after “At Jarosław, 9 December 1663”): It looked as though Bo
 <ul>
 <li>Archiwum Narodowe w Krakowie, Archiwum Krzeszowickie Potockich (29/639), AKPot 3227: pp. 81 (table), 137, 181&ndash;183, 200, 209, 225, 235, 239, 245&ndash;248. DECODE records <a href="https://de-crypt.org/decrypt-web/RecordsView/7501" rel="noopener">R7501</a> (table), <a href="https://de-crypt.org/decrypt-web/RecordsView/7503" rel="noopener">R7503</a>, <a href="https://de-crypt.org/decrypt-web/RecordsView/7504" rel="noopener">R7504</a>, <a href="https://de-crypt.org/decrypt-web/RecordsView/7505" rel="noopener">R7505</a>, <a href="https://de-crypt.org/decrypt-web/RecordsView/7506" rel="noopener">R7506</a>, <a href="https://de-crypt.org/decrypt-web/RecordsView/7507" rel="noopener">R7507</a>, <a href="https://de-crypt.org/decrypt-web/RecordsView/7508" rel="noopener">R7508</a>, <a href="https://de-crypt.org/decrypt-web/RecordsView/7509" rel="noopener">R7509</a>, <a href="https://de-crypt.org/decrypt-web/RecordsView/7510" rel="noopener">R7510</a>; R7502 and R7511 (the letter deciphered at the time and its sheet).</li>
 <li>Brice Dudout, <a href="https://bdudout.github.io/europe-chiffree/en/documents.html#krakow-1663" rel="noopener">&ldquo;Ludwik W&#261;sowicz to Aleksander Micha&#322; Lubomirski, 1662&ndash;1663&rdquo;</a>, Europe chiffr&eacute;e (27 October 2026).</li>
-<li>S. Cynarski and A. Falniowska-Gradowska (eds.), <i lang="pl">Urz&#281;dnicy wojew&oacute;dztwa krakowskiego XVI&ndash;XVIII wieku. Spisy</i> (K&oacute;rnik 1990), p. 268, for Ludwik W&#261;sowicz, as cited by the <a href="https://pl.wikipedia.org/wiki/Ludwik_W%C4%85sowicz" rel="noopener">Polish Wikipedia</a> (not consulted directly).</li>
+<li>S. Cynarski and A. Falniowska-Gradowska (eds.), <i lang="pl" translate="no">Urz&#281;dnicy wojew&oacute;dztwa krakowskiego XVI&ndash;XVIII wieku. Spisy</i> (K&oacute;rnik 1990), p. 268, for Ludwik W&#261;sowicz, as cited by the <a href="https://pl.wikipedia.org/wiki/Ludwik_W%C4%85sowicz" rel="noopener">Polish Wikipedia</a> (not consulted directly).</li>
 <li>K&oacute;rnik Library (PAN), catalogue entries for the acts of the Wolb&oacute;rz circle, 12 December 1662, 22 February and 16 April 1663.</li>
 </ul>
-<p class="muted">Files: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/wasowicz1662">targets/wasowicz1662/</a> (notes, the table <code>key.tsv</code>, and for each letter the transcription of the numbers, the decryption, the Polish text in context and the English translation). Contributed by Brice Dudout and reviewed for the site on 27 October 2026.</p>
+<p class="muted">Files: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/wasowicz1662">targets/wasowicz1662/</a> (notes, the table <code translate="no">key.tsv</code>, and for each letter the transcription of the numbers, the decryption, the Polish text in context and the English translation). Contributed by Brice Dudout and reviewed for the site on 27 October 2026.</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Archiwum Narodowe w Krakowie, Archiwum Krzeszowickie Potockich 3227; DECODE images restricted, none reproduced</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="asang1662.html" rel="prev">&larr; Anonymous letter, Sanguszko archive 1662 1662</a><a href="vilaflor1663.html" rel="next">Afonso VI to Vila Flor 1663 1663 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

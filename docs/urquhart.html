@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">25 · 11 · 39 · 4 · 4 · 10 · 3 · 54 · 50 · 19 · 1 · 18 · 1 · 5 · 9 · 58 · 15 · 1<br>4 · 17 · 1 · 42 · 32 · 77 · 23 · 75 · 6 · 3 · 18 · 20 · 36 · 8 · 21<br>5.3.27.38.32.14.21.8.66.8.70.39.5.9.12.18.2.3.56.5.1.7.3.2.13.19.3.25.9.3.16.6</div>
+  <div class="cipherstrip" translate="no">25 · 11 · 39 · 4 · 4 · 10 · 3 · 54 · 50 · 19 · 1 · 18 · 1 · 5 · 9 · 58 · 15 · 1<br>4 · 17 · 1 · 42 · 32 · 77 · 23 · 75 · 6 · 3 · 18 · 20 · 36 · 8 · 21<br>5.3.27.38.32.14.21.8.66.8.70.39.5.9.12.18.2.3.56.5.1.7.3.2.13.19.3.25.9.3.16.6</div>
   <p class="kicker">London · book cipher on the author's own printed book · 1652–53</p>
   <h1>Thomas Urquhart’s Cyphral Octastich and Distich</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_thomas-urquhart.jpg" alt="Thomas Urquhart" title="Thomas Urquhart: Engraving by George Glover, 1641. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Thomas Urquhart</figcaption></figure></div><!-- /parties -->
@@ -83,9 +83,9 @@ verse beneath it, which a reader quoted in 2019:</p>
 <p>Transcribed from the photographs of the 1983 edition on the HCPortal record, laid out as printed: each stanza-line runs over onto an indented second line, and the
 Decagram follows. The counts and sums are there so that another transcription can be checked line by line, and the range in brackets is the position of each line in the
 count that the rule uses (number 146, the first of line 5, goes to page 146). Schmeh’s transcription (2015), the one in circulation, has 272: it lacks the run-overs
-of lines 2 and 6 (<code>31.5.19.32.3.115.3.22</code> and <code>16.69.1.44</code>), drops the <code>2</code> before the last <code>10</code> of line 6, and has
-<code>6</code> for <code>16</code> as the second number of line 3. The list is <code>OCTASTICH_1983</code> in <code>targets/urquhart/ct.py</code>.</p>
-<pre>
+of lines 2 and 6 (<code translate="no">31.5.19.32.3.115.3.22</code> and <code translate="no">16.69.1.44</code>), drops the <code translate="no">2</code> before the last <code translate="no">10</code> of line 6, and has
+<code translate="no">6</code> for <code translate="no">16</code> as the second number of line 3. The list is <code translate="no">OCTASTICH_1983</code> in <code translate="no">targets/urquhart/ct.py</code>.</p>
+<pre translate="no">
 Line 1    33 numbers, sum  710   (numbers 1&ndash;33)
 25.11.39.4.4.10.3.54.50.19.1.18.1.5.9.58.15.1.4.17.1.42.32.77.23.75.6.
     3.18.20.36.8.21.
@@ -152,13 +152,13 @@ turned from p. 1, not by their printed numbers, and running heads, marginal note
 </tbody></table>
 <p>Each of these words is also the first on its page with that initial: no earlier word on p. 1 begins with G, none on p. 2 with R, none on p. 3 with E. That is the
 habit the test in section 03 measures. The first row also shows a typical difference between the TCP and the 1652 page: the TCP text sets the drop-capital N of
-&ldquo;NO&rdquo; apart, so its word list counts &ldquo;N&rdquo; and &ldquo;O&rdquo; as two words and puts &ldquo;given&rdquo; at 26, and the block gives <code>w</code>
+&ldquo;NO&rdquo; apart, so its word list counts &ldquo;N&rdquo; and &ldquo;O&rdquo; as two words and puts &ldquo;given&rdquo; at 26, and the block gives <code translate="no">w</code>
 (&ldquo;Worcester&rdquo;) for the first number; on the 1652 page &ldquo;given&rdquo; is word 25.</p>
 <figure class="creveal" data-src="reveal/urquhart.json"></figure>
-<p>Each row of the block has one letter per number, so line 5 has 32: <code>_</code> marks number 158, which the TCP cannot decode because its filming has a
+<p>Each row of the block has one letter per number, so line 5 has 32: <code translate="no">_</code> marks number 158, which the TCP cannot decode because its filming has a
 duplicate image there; the 1652 page gives W (section 04). Capitals are first-occurrence hits; a lower-case letter is the initial of a TCP word that is not the first of its letter on the page, usually a word or
 two from it. The right-hand column is the plaintext.</p>
-<pre>
+<pre translate="no">
 wREATLORDMApTAInETHATREGtaFAMILIE          Great Lord, mantaine that regal familie
 WtEREOFKINGCHARLStHaStCONtISTaEHiAD        Whereof King Charls the second is the head
 ANDGRAnTTHatHEDAYBEARETHEFUPaEMESgEIGS     And grant that he may beare the supreme sweigh
@@ -222,7 +222,7 @@ word higher than the TCP counts it: Urquhart used that page twice.</p>
 <h2 id="distich"><span class="num">05</span> The distich does not follow</h2>
 <p>The distich is a separate cryptogram in another book, and the octastich&rsquo;s rule does not open it, so it has its own result: not solved.</p>
 <p>The same test applied to the distich under Vals’ Proquiritation rule, using Reticuli’s tokenised Proquiritations, yields 34 first-occurrence hits in 64 and the string
-<code>NTMAMNDN_OHTISEABRPTTSGSNTAATVTD</code>, not <em>O God uphold King Charls the second</em>. Texts of thirty to a hundred words give high base rates, so 34 of 64 is
+<code translate="no">NTMAMNDN_OHTISEABRPTTSGSNTAATVTD</code>, not <em>O God uphold King Charls the second</em>. Texts of thirty to a hundred words give high base rates, so 34 of 64 is
 chance. Page-index variants on either book, with either numbering, with the second line restarting at page 1, all sit inside the shuffled control. Reticuli’s ten
 infeasible positions stand. Scheers&rsquo;s further suggestions (20 October 2026) were tested too: the last letter of the <em>k</em>-th word, the <em>n</em>-th letter
 of the page, the sums and differences of the two lines, each line alone and the lines interleaved, on both books at every starting page. The best decode
@@ -231,7 +231,7 @@ scores &minus;2.94 per letter against &minus;2.72 to &minus;2.97 for shuffled nu
 
 <h2 id="remaining"><span class="num">06</span> What remains</h2>
 <ul>
-<li>Measured against the verse (<code>measure_sense.py</code>, 5 October 2026), 274 of the octastich&rsquo;s 285 numbers give the required letter (96.1%): 233 exactly
+<li>Measured against the verse (<code translate="no">measure_sense.py</code>, 5 October 2026), 274 of the octastich&rsquo;s 285 numbers give the required letter (96.1%): 233 exactly
 and 41 within two words of the first occurrence. The distich is another construction and is counted on its own: none of its 64 numbers is deciphered. (Pooled, the two would make 274 of 349, 78.5%, which is neither cryptogram&rsquo;s result.)</li>
 <li>Number 149, line 5: word 2 of p. 149 is &ldquo;Colonel&rdquo;, where the line wants a one-letter word. The 1652 page would show whether Urquhart&rsquo;s copy differs there.</li>
 <li>Number 158, line 5: resolved on 20 October 2026 from David Scheers&rsquo;s photographs of the 1652 pp. 156&ndash;159. No leaf is missing; Urquhart used printed
@@ -243,9 +243,9 @@ letter.</li>
 </ul>
 
 <h2 id="method"><span class="num">07</span> Method and reproduction</h2>
-<p>In <code>targets/urquhart/</code>: <code>ct.py</code> holds both transcriptions of the octastich; <code>pages.py</code> parses the TCP XML of A95749 into pages under both
-numberings; <code>decode_1983_full.tsv</code> gives every position with page, word, letter and first-occurrence flag; <code>measure_sense.py</code> scores every position against the
-plaintext (<code>measure_sense.txt</code>); <code>align.py</code> is the alignment used on the defective transcription; the controls are in the notes. The TCP text comes from the Text Creation Partnership’s GitHub mirror; the 1983 page photographs from the
+<p>In <code translate="no">targets/urquhart/</code>: <code translate="no">ct.py</code> holds both transcriptions of the octastich; <code translate="no">pages.py</code> parses the TCP XML of A95749 into pages under both
+numberings; <code translate="no">decode_1983_full.tsv</code> gives every position with page, word, letter and first-occurrence flag; <code translate="no">measure_sense.py</code> scores every position against the
+plaintext (<code translate="no">measure_sense.txt</code>); <code translate="no">align.py</code> is the alignment used on the defective transcription; the controls are in the notes. The TCP text comes from the Text Creation Partnership’s GitHub mirror; the 1983 page photographs from the
 HCPortal record, whose API answers at api.hcportal.eu.</p>
 
 <!-- texts:start -->
@@ -253,7 +253,7 @@ HCPortal record, whose API answers at api.hcportal.eu.</p>
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>The Cyphral Octastich, The Jewel (London, 1652), last leaf</h3>
 <p>A royalist prayer for Charles II in ottava rima (&#x27;Great Lord, mantaine that regal familie / Whereof King Charls the second is the head&#x27;), written in London in March 1652 by Urquhart, a prisoner of Worcester, and hidden as a book cipher on The Jewel itself.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/urquhart/texts/octastich_transcription.txt">octastich_transcription.txt</a></p><pre># Urquhart, the Cyphral Octastich (1652): the 285 numbers, written out from ct.py OCTASTICH_1983 on 22 Oct 2026.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/urquhart/texts/octastich_transcription.txt">octastich_transcription.txt</a></p><pre translate="no"># Urquhart, the Cyphral Octastich (1652): the 285 numbers, written out from ct.py OCTASTICH_1983 on 22 Oct 2026.
 # Transcribed 16 Sept 2026 from the HCPortal photographs of the 1983 Jack &amp; Lyall edition, p. 212 and facing
 # (src/octastich_part1.jpg, src/octastich_part2.jpg). One line per stanza-line (with its run-over); last line = the Decagram.
 L1: 25 11 39 4 4 10 3 54 50 19 1 18 1 5 9 58 15 1 4 17 1 42 32 77 23 75 6 3 18 20 36 8 21
@@ -265,7 +265,7 @@ L6: 5 20 5 87 40 25 9 56 21 29 2 81 50 147 2 6 16 15 14 9 13 27 3 16 14 7 6 2 10
 L7: 38 3 3 2 10 34 8 18 9 28 2 4 6 2 201 10 13 6 1 36 1 31 4 17 54 16 5 22 11 5 31
 L8: 71 96 15 45 19 6 64 10 42 7 83 37 6 3 7 74 4 14 8 91 27 12 11 2 28 50 68 3 2 12 1 5 49 3
 Decagram: 7 7 95 66 1 11 33 51 50 6</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/urquhart/texts/octastich_decryption.md">octastich_decryption.md</a></p><pre># Urquhart, the Cyphral Octastich: the reading (copied verbatim from NOTES.md, 22 Oct 2026)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/urquhart/texts/octastich_decryption.md">octastich_decryption.md</a></p><pre translate="no"># Urquhart, the Cyphral Octastich: the reading (copied verbatim from NOTES.md, 22 Oct 2026)
 
 Rule: the k-th number, counting straight through the poem, is a word index into physical page k of *The Jewel*
 (1652); the letter is that word&#x27;s initial. The number-by-number decode (page, word, letter, first-occurrence flag) is
@@ -283,7 +283,7 @@ Let him be our sole Cesar, Artur, Hector,
 Our Emperour, King, Monarch and Protector.
                               Amen, so be it.
 ```</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/urquhart/decode_1983_full.tsv">decode_1983_full.tsv</a></p><pre>k	n	word	letter	first	first_index_of_letter
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/urquhart/decode_1983_full.tsv">decode_1983_full.tsv</a></p><pre translate="no">k	n	word	letter	first	first_index_of_letter
 1	25	Worcester	W	False	7
 2	11	rushing	R	True	11
 3	39	every	E	True	39
@@ -569,7 +569,7 @@ Our Emperour, King, Monarch and Protector.
 283	51	Logical	L	True	51
 284	50	Therefore	T	False	6
 285	6	those	T	False	3</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/urquhart/reading_octastich.txt">reading_octastich.txt</a></p><pre>wREATLORDMApTAInETHATREGtaFAMILIE
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/urquhart/reading_octastich.txt">reading_octastich.txt</a></p><pre translate="no">wREATLORDMApTAInETHATREGtaFAMILIE
 WtEREOFKINGCHARLStHaStCONtISTaEHiAD
 ANDGRAnTTHatHEDAYBEARETHEFUPaEMESgEIGS
 WHERDENGLIsHSCoTSANDIOSoAREBORNEANDBRED
@@ -581,12 +581,12 @@ AMsNSOwLtt</pre></details>
 <h3>The Cyphral Distich, Logopandecteision (1653), last leaf <span class="st stuck">decoded, not read</span></h3>
 <p>64 numbers in two lines; not deciphered. The published Proquiritation reading does not reproduce here.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/urquhart/texts/distich_transcription.txt">distich_transcription.txt</a></p><pre># Urquhart, the Cyphral Distich: the 64 numbers, written out from ct.py DISTICH on 22 Oct 2026.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/urquhart/texts/distich_transcription.txt">distich_transcription.txt</a></p><pre translate="no"># Urquhart, the Cyphral Distich: the 64 numbers, written out from ct.py DISTICH on 22 Oct 2026.
 # Two lines of 32 as printed (Maitland Club Works 1834 p. 417; 1653 Logopandecteision, NLS H.32.a.39 per Scheers).
 # Position 56 is 38 in the 1653 print and the 1834 Works (Schmeh has 33).
 5 3 27 38 32 14 21 8 66 8 70 39 5 9 12 18 2 3 56 5 1 7 3 2 13 19 3 25 9 3 16 6
 25 15 13 6 11 20 5 1 2 12 1 20 20 49 20 20 35 33 4 6 8 35 5 38 5 5 18 10 3 11 32 42</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/urquhart/texts/distich_decryption.md">distich_decryption.md</a></p><pre># Urquhart, the Cyphral Distich: no decipherment
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/urquhart/texts/distich_decryption.md">distich_decryption.md</a></p><pre translate="no"># Urquhart, the Cyphral Distich: no decipherment
 
 The distich is not deciphered (outcome.parts: not solved, 0/64). The August 2026 claim (the i-th number indexes a
 word of the i-th Proquiritation, first letters taken; claimed text `OGODUPHOLDKINGCHARLSTHESECONDANDMAKEHIMTHESUPREMERULEROFTHISLAND`, ct.py `CLAIM`)
@@ -615,7 +615,7 @@ and David Scheers&#x27;s suggested variants (20 Oct 2026, `distich_scheers_varia
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="clair460num.html" rel="prev">&larr; Not established to Not established,&hellip; 1650</a><a href="bagno1652.html" rel="next">Guidi di Bagno 1652 1652 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

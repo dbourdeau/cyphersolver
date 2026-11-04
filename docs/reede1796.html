@@ -37,7 +37,7 @@
   </div>
 </div>
 <section class="hero">
-  <div class="cipherstrip">12.15.72.45.92.171.319 &middot; 13 &middot; 73 &middot; 2 &middot; 39.97.16<br>&ldquo;envoy&eacute; &agrave; Ivoy un m&eacute;moire pour &eacute;tablir &amp; justifier les principes d&rsquo;une nouvelle coalition &hellip;&rdquo;<br>91 = Ivoy &middot; 72 = le Duc &middot; 13 = Athlone &middot; 73 = Portland &middot; 2 = de Luc</div>
+  <div class="cipherstrip" translate="no">12.15.72.45.92.171.319 &middot; 13 &middot; 73 &middot; 2 &middot; 39.97.16<br>&ldquo;envoy&eacute; &agrave; Ivoy un m&eacute;moire pour &eacute;tablir &amp; justifier les principes d&rsquo;une nouvelle coalition &hellip;&rdquo;<br>91 = Ivoy &middot; 72 = le Duc &middot; 13 = Athlone &middot; 73 = Portland &middot; 2 = de Luc</div>
   <p class="kicker">Berlin, Blankenburg &rarr; the Hereditary Prince of Orange &middot; book code and numbered lists &middot; 1796&ndash;1807 &middot; attempted, not solved</p>
   <h1>Arend Willem van Reede to the Hereditary Prince, 1796&ndash;1807 (KHA A35-1232, A32-549)</h1>
 <div class="parties"><figure class="party recipient"><img src="portrait_hereditary-prince-william.jpg" alt="Hereditary Prince William" title="Hereditary Prince William: Portrait, Joseph Paelinck. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Hereditary Prince William</figcaption></figure></div><!-- /parties -->
@@ -62,7 +62,7 @@
 <figure data-credit="Koninklijk Huisarchief, The Hague, A35-1232 (image 144358), via Koninklijke Verzamelingen"><img src="reede1796_aug1796.jpg" alt="Van Reede's letter of 15 August 1796: French text with numbers glossed Ivoy, du Duc, Athlone, au Duc de Portland, de Luc, and the dotted run marked (1)" loading="lazy"><figcaption>15 August 1796: name numbers glossed above (91 Ivoy, 72 du Duc, 13 Athlone, 73 au Duc de Portland, 2 de Luc) and the run marked (1.), &ldquo;12.15.72.45.92.171.319&rdquo;, explained on the next page. <span class="credit">Image: Koninklijk Huisarchief, The Hague, A35-1232 (image 144358), via Koninklijke Verzamelingen.</span></figcaption></figure>
 
 <h2 id="the-passages"><span class="num">01</span> The passages</h2>
-<p>The pairing of all 300 scans of A35-1232 and 139 of A32-549 (research files <code>pairs_A35-1232.tsv</code>, <code>pairs_A32-549.tsv</code>) left nine code passages with no decipherment:</p>
+<p>The pairing of all 300 scans of A35-1232 and 139 of A32-549 (research files <code translate="no">pairs_A35-1232.tsv</code>, <code translate="no">pairs_A32-549.tsv</code>) left nine code passages with no decipherment:</p>
 <table>
 <tr><th>Image</th><th>Date</th><th>Groups</th><th>Note</th></tr>
 <tr><td>143592</td><td>Jan&ndash;Feb 1796</td><td>78 in 14 runs</td><td>black letter over brown invisible ink</td></tr>
@@ -83,8 +83,8 @@
 
 <h2 id="method"><span class="num">03</span> What was tried</h2>
 <ul>
-<li><b>Transcription.</b> The nine passages and the glossed letters of 15 August 1796, 27 September 1796 (the Prince&rsquo;s draft, meanings in parentheses), 19 May and October&ndash;November 1798 were transcribed at full size with every mark (<code>runs_a.txt</code>, <code>runs_b.txt</code>).</li>
-<li><b>Known keys.</b> <code>test_keys.py</code> decoded every run with Van Reede&rsquo;s 1789&ndash;92 code to Wilhelmina (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/reede1789">targets/reede1789</a>) and with the Euler word list of 1795&ndash;96 (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/wilhelmina1795">targets/wilhelmina1795</a>), and scored both on the fifteen glossed runs: 3 of 13 and 3 of 32 decoded words stand in the run&rsquo;s own gloss, against 2 and 0 in another run&rsquo;s. The glossed values contradict both (13 is Athlone here, &ldquo;difficile&rdquo; in the Euler list; 6/52 is Haugwitz in 1798, where the Euler list has 52 = une).</li>
+<li><b>Transcription.</b> The nine passages and the glossed letters of 15 August 1796, 27 September 1796 (the Prince&rsquo;s draft, meanings in parentheses), 19 May and October&ndash;November 1798 were transcribed at full size with every mark (<code translate="no">runs_a.txt</code>, <code translate="no">runs_b.txt</code>).</li>
+<li><b>Known keys.</b> <code translate="no">test_keys.py</code> decoded every run with Van Reede&rsquo;s 1789&ndash;92 code to Wilhelmina (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/reede1789">targets/reede1789</a>) and with the Euler word list of 1795&ndash;96 (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/wilhelmina1795">targets/wilhelmina1795</a>), and scored both on the fifteen glossed runs: 3 of 13 and 3 of 32 decoded words stand in the run&rsquo;s own gloss, against 2 and 0 in another run&rsquo;s. The glossed values contradict both (13 is Athlone here, &ldquo;difficile&rdquo; in the Euler list; 6/52 is Haugwitz in 1798, where the Euler list has 52 = une).</li>
 <li><b>Print.</b> Colenbrander&rsquo;s <i>Gedenkstukken</i> II and III, searched in full text, print no letter of Van Reede to the Prince.</li>
 </ul>
 

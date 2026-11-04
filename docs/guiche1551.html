@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-  <div class="cipherstrip">W 3 p 4 d Q 3 &middot; B r # d p Q 3 &middot; g # 4 t 3<br>l e c o n t e &middot; s a i n c t e &middot; f i o r e &nbsp;&laquo;&nbsp;le conte Sainte Fiore est mal satisfaict&nbsp;&raquo;</div>
+  <div class="cipherstrip" translate="no">W 3 p 4 d Q 3 &middot; B r # d p Q 3 &middot; g # 4 t 3<br>l e c o n t e &middot; s a i n c t e &middot; f i o r e &nbsp;&laquo;&nbsp;le conte Sainte Fiore est mal satisfaict&nbsp;&raquo;</div>
   <p class="kicker">Rome &rarr; Montmorency &middot; simple substitution &middot; 22 November 1551</p>
   <h1>La Guiche to Montmorency, Rome, 1551</h1>
 <div class="parties"><figure class="party recipient"><img src="portrait_anne-de-montmorency.jpg" alt="Anne de Montmorency" title="Anne de Montmorency: Portrait by Jean Clouet, c. 1530. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Anne de Montmorency</figcaption></figure></div><!-- /parties -->
@@ -56,7 +56,7 @@
 <p class="gl-top"><strong>At a glance</strong><span class="gl-res">Ciphertext-only break &middot; partial (87% of the cipher)</span></p>
 <dl>
 <dt>The letter</dt><dd>Claude de La Guiche, bishop of Mirepoix, to Montmorency, Rome, 22 November 1551, with about thirteen lines of cipher inside clear text; no decipherment exists.</dd>
-<dt>Where</dt><dd>BnF fr. 3138 no. 22, f. 60v&ndash;61r (Gallica <code>btv1b90601662</code>). The page also checks two letters of Noailles (1558) and Seure (1558) in the same volumes.</dd>
+<dt>Where</dt><dd>BnF fr. 3138 no. 22, f. 60v&ndash;61r (Gallica <code translate="no">btv1b90601662</code>). The page also checks two letters of Noailles (1558) and Seure (1558) in the same volumes.</dd>
 <dt>The cipher</dt><dd>406 symbols, 22 distinct, one for each letter of the period&rsquo;s 22-letter alphabet.</dd>
 <dt>How it was read</dt><dd>Simulated annealing over permutations, scored against a model of French despatches 1530&ndash;1600, recovered the key.</dd>
 <dt>What it says</dt><dd>Dom Diego has had a Sienese imprisoned; the Sienese envoy has left Rome with him; the Count of Santa Fiora is &ldquo;mal satisfaict&rdquo; and might return to the King&rsquo;s service.</dd>
@@ -71,13 +71,13 @@
 
 <h2 id="la-guiche-the-reading"><span class="num">02</span> La Guiche: the decipherment</h2>
 <figure class="creveal" data-src="reveal/guiche1551.json"></figure>
-<p>The reading in the letter&rsquo;s spelling (<code>texts/laguiche1551_reading.md</code>). The deciphered passages are in italics and the clear words of the letter in roman; [?word] marks an uncertain reading, [&hellip;] symbols or words not deciphered, [::] the open code symbol. The two lines the writer struck through are deciphered only in fragments, so the letter counts as partial.</p>
+<p>The reading in the letter&rsquo;s spelling (<code translate="no">texts/laguiche1551_reading.md</code>). The deciphered passages are in italics and the clear words of the letter in roman; [?word] marks an uncertain reading, [&hellip;] symbols or words not deciphered, [::] the open code symbol. The two lines the writer struck through are deciphered only in fragments, so the letter counts as partial.</p>
 <blockquote><p>[Struck through by the writer:] <i>[…] Die[…] […]constituer prisonnier en ceste [?ville] […] un [?Senois] […] croy q[…] […] adverty le</i></p><p><i>[L2] procès duquel i'ay trouvé moien de veoir</i>, affin de informer led. Sr cardinal du contenu en icelluy, pour selon cela mettre tel fondement qu'il advisera, <i>à la pratique qu'aves entendu.</i> Et aussi pour dire aud. Sr cardinal les propos que [?Mignet] a tenus à <i>l'ambassadeur de Senes qui estoit icy, lequel est party pour s'en retorner à Senes avecq [Dom Diego] […]</i>. Et pour ce que ledict Sr cardinal a commancé à vous escripre de ceste affaire, je m'en remettray à ce qu'il vous en escripra. J'entendz que <i>le conte Saincte Fiore est mal satisfaict de [::], et que facilement se reduiroi[t] au service du ro[y]</i> […] de la Seance […] <i>le servi[ce]</i> […]. Car ledict personnage qui estoit icy tractant <i>avec moy l'affaire du sieur Barnabe Adorne</i> […] la responce qu'a[…] […] <i>vous informer du service que le roy pourroit avoir du dict sieur Barnabe, et aussi des conditions qu'il demanderoit.</i></p></blockquote>
 <p>&ldquo;Dom Diego&rdquo; is Diego Hurtado de Mendoza, Charles V&rsquo;s ambassador in Rome and the power behind Siena until the Sienese rising of July 1552. The count of Santa Fiora is Sforza Sforza (1520&ndash;1575), a grandson of Paul III, who had gone back into Charles V&rsquo;s service after that pope&rsquo;s death. The letter shows La Guiche sounding him out for the French side eight months before Siena turned to France. &ldquo;Barnabe Adorne&rdquo; is presumably a Genoese of the Adorno family; he is not identified further.</p>
 <p>Filled 30 September 2026. The run after &ldquo;qu&rsquo;il advisera&rdquo; (24 symbols, missed by the first transcription) gives <i>a la pratique qu&rsquo;aves entendu</i> with the key unchanged (grade H for the key, C for the reading). The plain cross without a bar is a symbol of its own, <i>b</i>: it gives <i>l&rsquo;ambassadeur</i> and, twice, <i>Barnabe</i>, where the barred cross is <i>r</i> in the same word and in <i>Adorne</i> (grade M: a value found on three words). The pair <i>ff</i>+<i>c</i> is <i>ss</i> in both places it occurs (<i>ambassadeur</i>, <i>aussi</i>; M). In &ldquo;du service&rdquo; the image has the barred p (<i>s</i>) where the first transcription had the double-barred #. After &ldquo;mal satisfaict de&rdquo; stands a single four-dot symbol (::), a code for a person that occurs nowhere else; &ldquo;l&rsquo;Empereur&rdquo; is a conjecture from context (grade I): &ldquo;se reduiroit au service du roy&rdquo; says the count was serving someone else, and in 1551 he was in the Emperor&rsquo;s service (the Pope, whose general he had been, is the alternative). The clear words were transcribed from the image (Gallica view 65).</p>
 
 <h2 id="method"><span class="num">03</span> Method</h2>
-<p>The cipher was transcribed symbol by symbol from full-resolution crops of each line (<code>guiche_ct.txt</code>). The counts pointed to a simple substitution: 22 distinct symbols, one of them at 16%, the rate of French <i>e</i>. An annealer that allowed several symbols per letter converged on a degenerate i/x solution. A permutation annealer with swap moves, scored with a French 5-gram model without word spaces (<code>fr-1530-despatches</code>), produced <i>le conte sainctefiore est mal satisfaict</i> on its best restart. Four symbols were then fixed from context (qu, p, y, v), and the rest re-annealed. Key: 3=e, t=r, #=i, &theta;=u, the stemmed 4=t, barred p=s, hook=a, f=d, d=n, open 4=o, curled d=o, p=c, &#8546;=l, ff=qu, overbarred d=m, &phi;=y, the circle=v, hooked q=f, &infin;=p; added 30 September 2026: the plain cross=b, ff followed by c=ss, and one four-dot code symbol (::).</p>
+<p>The cipher was transcribed symbol by symbol from full-resolution crops of each line (<code translate="no">guiche_ct.txt</code>). The counts pointed to a simple substitution: 22 distinct symbols, one of them at 16%, the rate of French <i>e</i>. An annealer that allowed several symbols per letter converged on a degenerate i/x solution. A permutation annealer with swap moves, scored with a French 5-gram model without word spaces (<code translate="no">fr-1530-despatches</code>), produced <i>le conte sainctefiore est mal satisfaict</i> on its best restart. Four symbols were then fixed from context (qu, p, y, v), and the rest re-annealed. Key: 3=e, t=r, #=i, &theta;=u, the stemmed 4=t, barred p=s, hook=a, f=d, d=n, open 4=o, curled d=o, p=c, &#8546;=l, ff=qu, overbarred d=m, &phi;=y, the circle=v, hooked q=f, &infin;=p; added 30 September 2026: the plain cross=b, ff followed by c=ss, and one four-dot code symbol (::).</p>
 
 <h2 id="what-remains-uncertain"><span class="num">04</span> What remains uncertain</h2>
 <ul>
@@ -90,7 +90,7 @@
 <h3>La Guiche to Montmorency, Rome, 22 Nov 1551 (BnF fr. 3138 no. 22, f. 60v) <span class="st partial">read in part</span></h3>
 <p>Claude de la Guiche, in Rome, reports to Montmorency that the Sienese envoy has left Rome with Dom Diego (Diego Hurtado de Mendoza, imperial ambassador and master of Siena) and that the Count of Santa Fiora is discontented and would readily come over to the king&#x27;s service on conditions; the winter of the Parma war, months before the Sienese rising of July 1552. The first two struck-through lines read only in part.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (89% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/guiche1551/guiche_ct.txt">guiche_ct.txt</a></p><pre># BnF fr. 3138 no. 22, f. 60v (Gallica btv1b90601662 view 65). La Guiche, Rome, 22 Nov 1551.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/guiche1551/guiche_ct.txt">guiche_ct.txt</a></p><pre translate="no"># BnF fr. 3138 no. 22, f. 60v (Gallica btv1b90601662 view 65). La Guiche, Rome, 22 Nov 1551.
 # Sign codes: f F(ff) 3 # W(III) Q(4 with stem) 4(open 4) g(hooked q) p B(barred p) d o(curled d) D(d with overbar)
 # e(theta) t(+ with bar) 8(infinity) r(hook) P(phi) A(circled) X(double-barred #) c 5
 # 30 Sept 2026: + (plain cross, no bar; was merged with t) = b; : (four-dot sign ::, once, L5) = a code sign, open;
@@ -109,7 +109,7 @@ L9 f e B # 3 e t + r t d r + 3 r f 4 t d 3
 L10 A 4 e B # d p o t D 3 t f e B 3 t g # p 3 F e 3 W 3
 L11 t 4 P 8 4 e t t o # Q r e 4 # t f e f # f # p Q B # 3 e t + r t d r + 3 3 Q
 L12 r e F c # f 3 B p 4 d f # Q # 4 d B F A # W f 3 D r d f 3 t 4 # Q</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/guiche1551/reading_raw.txt">reading_raw.txt</a></p><pre>L0 dtmdielttitctnstituerprisonnierencestuile
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/guiche1551/reading_raw.txt">reading_raw.txt</a></p><pre translate="no">L0 dtmdielttitctnstituerprisonnierencestuile
 L1 vnlsenoismoiei?croyqfeauresesteaduertyle
 L2 procesduqueliaytrouvemoiendeueoir
 L2x alapratiquequauesentendu
@@ -125,7 +125,7 @@ L11 roypourroitauoirdudidictsieurbarnabeet
 L12 aussidesconditionsqvildemanderoit
 # 30 Sept 2026: + = b (L3, L9, L11); F c = ss (L3, L12); &#x27;:&#x27; (the four-dot sign, L5) left as [::]; L10 &#x27;incormer&#x27;/&#x27;serfice&#x27;
 # are look-alike slips of the f and v signs in the first pass: read &#x27;informer du service&#x27;.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/guiche1551/texts/laguiche1551_decryption.md">laguiche1551_decryption.md</a></p><pre># La Guiche to Montmorency, Rome, 22 Nov 1551: normalised reading with the clear words around it, copied verbatim from NOTES.md (section 1). The decryption line by line is reading_raw.txt.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/guiche1551/texts/laguiche1551_decryption.md">laguiche1551_decryption.md</a></p><pre translate="no"># La Guiche to Montmorency, Rome, 22 Nov 1551: normalised reading with the clear words around it, copied verbatim from NOTES.md (section 1). The decryption line by line is reading_raw.txt.
 
 - Reading (`reading_raw.txt`, then the text below with the clear words around it). Normalised, [?] = unsure:
 
@@ -136,7 +136,7 @@ L12 aussidesconditionsqvildemanderoit
   &gt; facilement se reduiroit au service du roy … *[clear: de la Seance]* … le service … *Car ledict personnage qui
   &gt; estoit icy tractant* avec moy la faire du sieur +arna+e a dorne[?] *la responce qu&#x27;a…* … vous informer du …
   &gt; que le roy pourroit avoir du dict sieur +arna+e et aux [?] … des conditions qu&#x27;il demanderoit.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/guiche1551/texts/laguiche1551_reading.md">laguiche1551_reading.md</a></p><pre># La Guiche to Montmorency, Rome, 22 Nov 1551 (BnF fr. 3138 no. 22, f. 60v): reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/guiche1551/texts/laguiche1551_reading.md">laguiche1551_reading.md</a></p><pre translate="no"># La Guiche to Montmorency, Rome, 22 Nov 1551 (BnF fr. 3138 no. 22, f. 60v): reading
 
 Running text of the decryption line by line in `reading_raw.txt` (key `texts/key.md`), with the clear words round
 the cipher runs as NOTES.md gives them (30 Sept 2026, item 6, and section 1), written out 23 Oct 2026 (translation
@@ -159,7 +159,7 @@ remettray à ce qu&#x27;il vous en escripra. J&#x27;entendz que ⟨le conte Sain
 facilement se reduiroi[t] au service du ro[y]⟩ […] de la Seance […] ⟨le servi[ce]⟩ […]. Car ledict personnage qui
 estoit icy tractant ⟨avec moy l&#x27;affaire du sieur Barnabe Adorne⟩ […] la responce qu&#x27;a[…] […] ⟨vous informer du
 service que le roy pourroit avoir du dict sieur Barnabe, et aussi des conditions qu&#x27;il demanderoit.⟩</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/guiche1551/texts/laguiche1551_en.md">laguiche1551_en.md</a></p><pre># La Guiche to Montmorency, Rome, 22 Nov 1551 (BnF fr. 3138 no. 22, f. 60v): English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/guiche1551/texts/laguiche1551_en.md">laguiche1551_en.md</a></p><pre translate="no"># La Guiche to Montmorency, Rome, 22 Nov 1551 (BnF fr. 3138 no. 22, f. 60v): English translation
 
 Translation (Claude Opus 5.5, 23 Oct 2026) of `texts/laguiche1551_reading.md`: the deciphered cipher runs (in ⟨ ⟩;
 key recovered ciphertext-only) with the clear words round them as far as the repository has them. Same holes: `[…]`
@@ -193,7 +193,7 @@ service the King could have from the said Lord Barnabé, and also of the conditi
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Biblioth&egrave;que nationale de France / Gallica</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="siena5.html" rel="prev">&larr; Siena R4794, the artillery slip 16th century</a><a href="vargas1552.html" rel="next">Vargas to Charles V 1552 1552 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

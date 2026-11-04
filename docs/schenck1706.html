@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-  <div class="cipherstrip">34 20 32 43 &middot; 25 64 61 62 21 59 &middot; 46 40 19 43<br>k e i n &middot; g u t t e s &middot; o m e n<br>a = 7 8 9 &middot; e = 19 20 21 &middot; n = 43 44 45 &middot; t = 61 62 63</div>
+  <div class="cipherstrip" translate="no">34 20 32 43 &middot; 25 64 61 62 21 59 &middot; 46 40 19 43<br>k e i n &middot; g u t t e s &middot; o m e n<br>a = 7 8 9 &middot; e = 19 20 21 &middot; n = 43 44 45 &middot; t = 61 62 63</div>
   <p class="kicker">Vienna &rarr; Baron Schenck at Cracow &middot; alphabetical homophonic table with a code &middot; March&ndash;July 1706</p>
   <h1>A Vienna agent to Baron Schenck, 1706</h1>
   <p class="sub">Fifteen German letters from Vienna to a chamberlain of Augustus II, catalogued as &ldquo;from Dresden&rdquo;: their letter cipher was recovered from the ciphertext alone, but most of their code numbers for people stay open.</p>
@@ -98,7 +98,7 @@
 
 <h2 id="the-reading"><span class="num">04</span> The decipherment</h2>
 <figure class="creveal" data-src="reveal/schenck1706.json"></figure>
-<p>106 runs of the letter table, 682 numbers. Quoted from the readings of 22&ndash;23 October 2026 (<code>reading/&lt;R&gt;_reading.md</code>, English <code>_en.md</code>): the clear German re-read on the images, the runs printed as the words they spell, codes and dotted signs that have a value in {braces}, open person codes as [numbers], open dotted signs in &lt;angles&gt;.</p>
+<p>106 runs of the letter table, 682 numbers. Quoted from the readings of 22&ndash;23 October 2026 (<code translate="no">reading/&lt;R&gt;_reading.md</code>, English <code translate="no">_en.md</code>): the clear German re-read on the images, the runs printed as the words they spell, codes and dotted signs that have a value in {braces}, open person codes as [numbers], open dotted signs in &lt;angles&gt;.</p>
 <ul>
 <li>&ldquo;Dieser glaubet, [es] sey kein guttes omen alhier&rdquo;; &ldquo;{Der} Herr Senfft hat gar &lt;3&gt; [181] abgesezt, {und} &lt;e&gt; [190] sich geschlagen&rdquo;; &ldquo;{Der} [190] [?soll] hier viel Cabalen wieder [181] vorgehabt haben&rdquo;; &ldquo;{Der} Reichsvicecantzler&rdquo; (N.&nbsp;18, 7 March; decoded, not read).</li>
 <li>&ldquo;von {König Augustus} Ihm eine convoy [&hellip;]&rdquo; (N.&nbsp;15, decoded, not read).</li>
@@ -155,7 +155,7 @@
 <h3>R7486, N. 18, Vienna, 7 March 1706 <span class="st stuck">decoded, not read</span></h3>
 <p>A letter of the numbered series from the Vienna agent signing &#x27;Sidon&#x27; to Baron Schenck, chamberlain of Augustus II, at Cracow, 7 March 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7486.txt">R7486.txt</a></p><pre># R7486  N. 18  Wien 7 March 1706 (P3 foot: &quot;d. 7. Marti 1706&quot;)   docket: &quot;Lehman[?]&quot; / &quot;Recept. 12 aprilis 1706&quot;; later hand &quot;Wien 7 marty 1706&quot;   images: P1 (text p.1), P2 (address leaf/back, docket only), P3 (pp.2-3 spread)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7486.txt">R7486.txt</a></p><pre translate="no"># R7486  N. 18  Wien 7 March 1706 (P3 foot: &quot;d. 7. Marti 1706&quot;)   docket: &quot;Lehman[?]&quot; / &quot;Recept. 12 aprilis 1706&quot;; later hand &quot;Wien 7 marty 1706&quot;   images: P1 (text p.1), P2 (address leaf/back, docket only), P3 (pp.2-3 spread)
 # Conventions: the digit 6 is written like a Greek delta (ascender loop); 0 is a plain o. &quot;3.&quot; (flat-topped 3 with a dot) may be the Kurrent letter z. used as an isolated sign; transcribed as seen.
 # A lone digit 7 (often with a dot before or after it) recurs inside runs (P1 l.5, l.25, l.28; P3a l.13; P3b l.19; P3 margin) - it looks like a sign of its own, not half of a pair.
 # &quot;oj&quot; (o with dot + j) occurs twice as an isolated sign (P1 l.5, P3b l.18).
@@ -250,7 +250,7 @@
 ##   &quot;[?] können, gönnen ein monopolium 3. 7 22 24 7. 32 55 19 43 [?]&quot;   (the cipher run 7 22 24 7. 32 55 19 43 is underlined)
 ##   &quot;[?] seÿ 527. [?] haben wolle [?] als 186 exempel, be-&quot;   (ctx: tail reads &quot;[...]trefft haben wolle als 186 exempel be-[zeugt?]&quot;)
 ##   &quot;[?] genug. Ob es 150 [?] ... [?] erfordert die Zeit&quot;   (ctx: &quot;Ob es 150 avantage[?] [?] lehret[?] die Zeit&quot;)</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7486.txt">R7486.txt</a></p><pre># R7486  N. 18  Wien 7 March 1706 (P3 foot: &quot;d. 7. Marti 1706&quot;)   docket: &quot;Lehman[?]&quot; / &quot;Recept. 12 aprilis 1706&quot;; later hand &quot;Wien 7 marty 1706&quot;   images: P1 (text p.1), P2 (address leaf/back, docket only), P3 (pp.2-3 spread)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7486.txt">R7486.txt</a></p><pre translate="no"># R7486  N. 18  Wien 7 March 1706 (P3 foot: &quot;d. 7. Marti 1706&quot;)   docket: &quot;Lehman[?]&quot; / &quot;Recept. 12 aprilis 1706&quot;; later hand &quot;Wien 7 marty 1706&quot;   images: P1 (text p.1), P2 (address leaf/back, docket only), P3 (pp.2-3 spread)
 # Conventions: the digit 6 is written like a Greek delta (ascender loop); 0 is a plain o. &quot;3.&quot; (flat-topped 3 with a dot) may be the Kurrent letter z. used as an isolated sign; transcribed as seen.
 # A lone digit 7 (often with a dot before or after it) recurs inside runs (P1 l.5, l.25, l.28; P3a l.13; P3b l.19; P3 margin) - it looks like a sign of its own, not half of a pair.
 # &quot;oj&quot; (o with dot + j) occurs twice as an isolated sign (P1 l.5, P3b l.18).
@@ -345,7 +345,7 @@
 ##   &quot;[?] können, gönnen ein monopolium 3. 7 22 24 7. 32 55 19 43 [?]&quot;   (the cipher run 7 22 24 7. 32 55 19 43 is underlined)
 ##   &quot;[?] seÿ 527. [?] haben wolle [?] als 186 exempel, be-&quot;
 ##   &quot;[?] genug. Ob es 150 [?] ... [?] erfordert die Zeit&quot;</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7486_reading.md">R7486_reading.md</a></p><pre># R7486 (N. 18), Vienna, 7 March 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7486_reading.md">R7486_reading.md</a></p><pre translate="no"># R7486 (N. 18), Vienna, 7 March 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
 
 Rests on: the diplomatic transcription `transcr/R7486.txt` re-checked line by line on the full-resolution DECODE images
 (IMG_R7486_I33848_P1-P3, 22 Oct 2026, batch b05; corrections in `R7486_corrections.tsv`), the letter table of `key.py`
@@ -391,7 +391,7 @@ Bleibe, Monsieur, Votre tres humble e tres obeissant [serviteur], Sidon. (Foot: 
 * `[?soll]`: 58 46 37 78 = s o l y (78 written clearly where l needs 37-39).
 * `[?contrair]`: 15 48 45 62 7 31 55 = c o n t a i r.
 * &quot;an an den König von Schweden&quot;: the word is written twice across the line break.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7486_en.md">R7486_en.md</a></p><pre># R7486 (N. 18), Vienna, 7 March 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7486_en.md">R7486_en.md</a></p><pre translate="no"># R7486 (N. 18), Vienna, 7 March 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
 
 Translation of `R7486_reading.md` (22 Oct 2026, batch b05), with the same holes: `[187]` an unvalued code, `&lt;e.&gt;` an
 unvalued sign, `[?word]` partly carried, `[word]` supplied, `[…]` unread. The letter stays &quot;decoded, not read&quot;.
@@ -414,7 +414,7 @@ P.S. That [190] can bear neither superior, nor equal, nor inferior, grant a mono
 <h3>R7487, Vienna, 13 March 1706 <span class="st partial">read in part</span></h3>
 <p>A letter of the numbered series from the Vienna agent signing &#x27;Sidon&#x27; to Baron Schenck, chamberlain of Augustus II, at Cracow, 13 March 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (90% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7487.txt">R7487.txt</a></p><pre># R7487  N. [none visible]  Wien 13 March 1706 (foot of p.4: &quot;W[ien] d. 13 Mart 1706&quot;)   docket: none besides later hand &quot;Wien 13 marty 1706&quot; / &quot;Seligman&quot; at top of P2   images: P1 (text p.1), P3 (pp.2-3 spread), P2 (p.4, end of letter + signature)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7487.txt">R7487.txt</a></p><pre translate="no"># R7487  N. [none visible]  Wien 13 March 1706 (foot of p.4: &quot;W[ien] d. 13 Mart 1706&quot;)   docket: none besides later hand &quot;Wien 13 marty 1706&quot; / &quot;Seligman&quot; at top of P2   images: P1 (text p.1), P3 (pp.2-3 spread), P2 (p.4, end of letter + signature)
 # Reading order P1 -&gt; P3a -&gt; P3b -&gt; P2. Mostly clear text; only two 2-digit runs.
 [P1 top] Monsieur      (pencil folio 290)
 [P1 l.1] Es ist heute die Post abermahl wegen
@@ -497,7 +497,7 @@ P.S. That [190] can bear neither superior, nor equal, nor inferior, grant a mono
 [P2 l.17] womit verharre
 [P2 l.18] Monsieur
 [P2 foot left] paraph &quot;W&quot; + &quot;d. 13 Mart 1706.&quot;      [P2 foot right] Votre tres humble / tres obeiss. Serv. / [signature, flourish &quot;S..don&quot;?]</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7487.txt">R7487.txt</a></p><pre># R7487  N. [none visible]  Wien 13 March 1706 (foot of p.4: &quot;W[ien] d. 13 Mart 1706&quot;)   docket: none besides later hand &quot;Wien 13 marty 1706&quot; / &quot;Seligman&quot; at top of P2   images: P1 (text p.1), P3 (pp.2-3 spread), P2 (p.4, end of letter + signature)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7487.txt">R7487.txt</a></p><pre translate="no"># R7487  N. [none visible]  Wien 13 March 1706 (foot of p.4: &quot;W[ien] d. 13 Mart 1706&quot;)   docket: none besides later hand &quot;Wien 13 marty 1706&quot; / &quot;Seligman&quot; at top of P2   images: P1 (text p.1), P3 (pp.2-3 spread), P2 (p.4, end of letter + signature)
 # Reading order P1 -&gt; P3a -&gt; P3b -&gt; P2. Mostly clear text; only two 2-digit runs.
 [P1 top] Monsieur      (pencil folio 290)
 [P1 l.1] Es ist heute die Post abermahl wegen
@@ -580,7 +580,7 @@ P.S. That [190] can bear neither superior, nor equal, nor inferior, grant a mono
 [P2 l.17] womit verharre
 [P2 l.18] Monsieur
 [P2 foot left] paraph &quot;W&quot; + &quot;d. 13 Mart 1706.&quot;      [P2 foot right] Votre tres humble / tres obeiss. Serv. / [signature, flourish &quot;S..don&quot;?]</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7487_reading.md">R7487_reading.md</a></p><pre># R7487, Vienna, 13 March 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7487_reading.md">R7487_reading.md</a></p><pre translate="no"># R7487, Vienna, 13 March 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
 
 Rests on: the decryption `reading/R7487.txt` (the transcription `transcr/R7487.txt` of 9 Oct 2026 with the codes and
 runs resolved), the letter table of `key.py` for the runs and the code values of `codes_key.json`. Written 23 Oct 2026
@@ -617,7 +617,7 @@ Womit verharre, Monsieur, Votre tres humble tres obeiss. Serv. [signature, read 
 * P1 l.16-17: the run &quot;32 43 64 9 43 | 6 49 59 32 | 4 [paper hole] 4&quot; gives i n u a n · p s i and is broken by a hole in
   the paper; then &quot;d. 314&quot;, &quot;[?]mann f. 83&quot;. Read as holes.
 * &quot;f. 83&quot; = bey + der Kayser (both valued from the recipient&#x27;s glosses and context, grade C/M).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7487_en.md">R7487_en.md</a></p><pre># R7487, Vienna, 13 March 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7487_en.md">R7487_en.md</a></p><pre translate="no"># R7487, Vienna, 13 March 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
 
 Translation of `R7487_reading.md` (23 Oct 2026, r2m, Claude Opus 5.5), the reading of the decryption `R7487.txt`
 (clear German with two short cipher runs and three-figure codes). Same holes: `[187]` an unvalued code, `&lt;d&gt;` an
@@ -639,7 +639,7 @@ With which I remain, Monsieur, your very humble, very obedient servant [signatur
 <h3>R7488, N. 15, Vienna, 27 March 1706 <span class="st stuck">decoded, not read</span></h3>
 <p>A letter of the numbered series from the Vienna agent signing &#x27;Sidon&#x27; to Baron Schenck, chamberlain of Augustus II, at Cracow, 27 March 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7488.txt">R7488.txt</a></p><pre># R7488  N. 15  Wien 27 March 1706 (foot of p.2: &quot;[paraph] d. 27. Mart 1706&quot;)   docket (P2, left, vertical): &quot;Wien 27 marty 1706 / Seligman&quot;; small note on P2 right, upside down: &quot;R. 4 [?]&quot;   images: P1 (text p.1), P2 (address leaf, red seal), P3 (spread: left = p.2 end of letter, right = blank)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7488.txt">R7488.txt</a></p><pre translate="no"># R7488  N. 15  Wien 27 March 1706 (foot of p.2: &quot;[paraph] d. 27. Mart 1706&quot;)   docket (P2, left, vertical): &quot;Wien 27 marty 1706 / Seligman&quot;; small note on P2 right, upside down: &quot;R. 4 [?]&quot;   images: P1 (text p.1), P2 (address leaf, red seal), P3 (spread: left = p.2 end of letter, right = blank)
 # Hand distinguishes plain 0 (&quot;40&quot;) from the delta-shaped 6 (&quot;46&quot;). Reading order P1 -&gt; P3a.
 [P1 top] N. 15        Monsieur       (pencil folio 292)
 [P1 l.1] Es seÿnd unterschiedene Posten ver-
@@ -675,7 +675,7 @@ With which I remain, Monsieur, your very humble, very obedient servant [signatur
 [P3a l.13] Monsieur
 [P3a foot] paraph + &quot;d. 27. Mart 1706&quot;      Votr. tres humble / Serviteur / [signature &quot;Sadon&quot;?]
 [P3b] blank (pencil folio 293)</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7488.txt">R7488.txt</a></p><pre># R7488  N. 15  Wien 27 March 1706 (foot of p.2: &quot;[paraph] d. 27. Mart 1706&quot;)   docket (P2, left, vertical): &quot;Wien 27 marty 1706 / Seligman&quot;; small note on P2 right, upside down: &quot;R. 4 [?]&quot;   images: P1 (text p.1), P2 (address leaf, red seal), P3 (spread: left = p.2 end of letter, right = blank)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7488.txt">R7488.txt</a></p><pre translate="no"># R7488  N. 15  Wien 27 March 1706 (foot of p.2: &quot;[paraph] d. 27. Mart 1706&quot;)   docket (P2, left, vertical): &quot;Wien 27 marty 1706 / Seligman&quot;; small note on P2 right, upside down: &quot;R. 4 [?]&quot;   images: P1 (text p.1), P2 (address leaf, red seal), P3 (spread: left = p.2 end of letter, right = blank)
 # Hand distinguishes plain 0 (&quot;40&quot;) from the delta-shaped 6 (&quot;46&quot;). Reading order P1 -&gt; P3a.
 [P1 top] N. 15        Monsieur       (pencil folio 292)
 [P1 l.1] Es seÿnd unterschiedene Posten ver-
@@ -711,7 +711,7 @@ With which I remain, Monsieur, your very humble, very obedient servant [signatur
 [P3a l.13] Monsieur
 [P3a foot] paraph + &quot;d. 27. Mart 1706&quot;      Votr. tres humble / Serviteur / [signature &quot;Sadon&quot;?]
 [P3b] blank (pencil folio 293)</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7488_reading.md">R7488_reading.md</a></p><pre># R7488 (N. 15), Vienna, 27 March 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7488_reading.md">R7488_reading.md</a></p><pre translate="no"># R7488 (N. 15), Vienna, 27 March 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
 
 Rests on: `transcr/R7488.txt` re-checked line by line on the full-resolution DECODE images (IMG_R7488_I33856_P1, P3,
 22 Oct 2026, batch b05; corrections in `R7488_corrections.tsv`), the letter table of `key.py` for the two-digit runs and
@@ -747,7 +747,7 @@ Ich aber verharre, Monsieur, Votre tres humble Serviteur, Sidon. (Foot of p. 2: 
   sentence lacks its verb.
 * &quot;eine convoy&quot;: 20 32 44 20 15 46 45 67 48 77 = e i n e c o n w o y.
 * &quot;ver-/sichert&quot; is divided between the foot of p. 1 (&quot;ver-&quot;, read &quot;wegen[?]&quot; before) and the head of p. 2.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7488_en.md">R7488_en.md</a></p><pre># R7488 (N. 15), Vienna, 27 March 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7488_en.md">R7488_en.md</a></p><pre translate="no"># R7488 (N. 15), Vienna, 27 March 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
 
 Translation of `R7488_reading.md` (22 Oct 2026, batch b05), with the same holes: `[187]` an unvalued code, `&lt;e.&gt;` an
 unvalued sign, `[?word]` partly carried, `[word]` supplied, `[…]` unread.
@@ -764,7 +764,7 @@ I remain, Monsieur, your very humble servant, Sidon.</pre></details>
 <h3>R7489, N. 27, Vienna, 8 May 1706 <span class="st stuck">decoded, not read</span></h3>
 <p>A letter of the numbered series from the Vienna agent signing &#x27;Sidon&#x27; to Baron Schenck, chamberlain of Augustus II, at Cracow, 8 May 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7489.txt">R7489.txt</a></p><pre># R7489  N. 27  Wien 8 May 1706 (closing, P2 left margin: &quot;W. d. 8. Maj 1706&quot;)   docket: later hand &quot;Wien 8 may 1706&quot; top of P1; no Rec. docket seen   images: P1 (text p.1), P3 (pp.2-3 spread), P2 (p.4 + closing written vertically in left margin)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7489.txt">R7489.txt</a></p><pre translate="no"># R7489  N. 27  Wien 8 May 1706 (closing, P2 left margin: &quot;W. d. 8. Maj 1706&quot;)   docket: later hand &quot;Wien 8 may 1706&quot; top of P1; no Rec. docket seen   images: P1 (text p.1), P3 (pp.2-3 spread), P2 (p.4 + closing written vertically in left margin)
 # Reading order P1 -&gt; P3a -&gt; P3b -&gt; P2. Water-stained, faded lower parts. Almost all clear text: one short 2-digit run? none; only 3-digit codes.
 [P1 top] N. 27.      Monsieur      (pencil folio 294; later hand top right &quot;Wien 8 may 1706&quot;)
 [P1 l.1] Des 166. reconvalescence hat den 187 ei-
@@ -854,7 +854,7 @@ I remain, Monsieur, your very humble servant, Sidon.</pre></details>
 ##   &quot;[?] es [?] 150. [?]&quot;
 ##   &quot;ich [?]&quot;     &quot;[?] [signature &#x27;Sadon&#x27;?]&quot;
 ##   paraph &quot;W&quot; + &quot;d. 8. Maj 1706.&quot;</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7489.txt">R7489.txt</a></p><pre># R7489  N. 27  Wien 8 May 1706 (closing, P2 left margin: &quot;W. d. 8. Maj 1706&quot;)   docket: later hand &quot;Wien 8 may 1706&quot; top of P1; no Rec. docket seen   images: P1 (text p.1), P3 (pp.2-3 spread), P2 (p.4 + closing written vertically in left margin)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7489.txt">R7489.txt</a></p><pre translate="no"># R7489  N. 27  Wien 8 May 1706 (closing, P2 left margin: &quot;W. d. 8. Maj 1706&quot;)   docket: later hand &quot;Wien 8 may 1706&quot; top of P1; no Rec. docket seen   images: P1 (text p.1), P3 (pp.2-3 spread), P2 (p.4 + closing written vertically in left margin)
 # Reading order P1 -&gt; P3a -&gt; P3b -&gt; P2. Water-stained, faded lower parts. Almost all clear text: one short 2-digit run? none; only 3-digit codes.
 [P1 top] N. 27.      Monsieur      (pencil folio 294; later hand top right &quot;Wien 8 may 1706&quot;)
 [P1 l.1] Des 166. reconvalescence hat den 187 ei-
@@ -944,7 +944,7 @@ I remain, Monsieur, your very humble servant, Sidon.</pre></details>
 ##   &quot;[?] es [?] 150. [?]&quot;
 ##   &quot;ich [?]&quot;     &quot;[?] [signature &#x27;Sadon&#x27;?]&quot;
 ##   paraph &quot;W&quot; + &quot;d. 8. Maj 1706.&quot;</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7489_reading.md">R7489_reading.md</a></p><pre># R7489 (N. 27), Vienna, 8 May 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7489_reading.md">R7489_reading.md</a></p><pre translate="no"># R7489 (N. 27), Vienna, 8 May 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
 
 Rests on: `transcr/R7489.txt` re-read line by line on the full-resolution DECODE images (IMG_R7489_I33857_P1-P3,
 22 Oct 2026, batch b05; the margin of P2 rotated; corrections in `R7489_corrections.tsv`) and the code values of
@@ -981,7 +981,7 @@ Ich verbleibe […] gehorsamster Sidon. W[ien] d. 8. Maj 1706. (Written up the l
 * &quot;6000 teutsche gegen 25 m.&quot;: the &quot;25&quot; is overlined with a small m (25,000), not a cipher.
 * The code on P2 l.4 is written 131 (the earlier transcription had 181).
 * &quot;[?bittet um]&quot; (P2 l.5-6): &quot;belobt 187 und Nachricht&quot; lacks a verb; the bracketed words are supplied in part.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7489_en.md">R7489_en.md</a></p><pre># R7489 (N. 27), Vienna, 8 May 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7489_en.md">R7489_en.md</a></p><pre translate="no"># R7489 (N. 27), Vienna, 8 May 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
 
 Translation of `R7489_reading.md` (22 Oct 2026, batch b05), with the same holes: `[187]` an unvalued code, `[?word]`
 partly carried, `[word]` supplied, `[…]` unread.
@@ -1000,7 +1000,7 @@ Royal […] will be, but {Baron Schenck} hopes […], be it at {King Augustus}&#
 <h3>R7490, N. 28, Vienna, 12 May 1706 <span class="st stuck">decoded, not read</span></h3>
 <p>A letter of the numbered series from the Vienna agent signing &#x27;Sidon&#x27; to Baron Schenck, chamberlain of Augustus II, at Cracow, 12 May 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7490.txt">R7490.txt</a></p><pre># R7490  N. 28  Wien 12 May 1706 (P1 top right: &quot;W. d 12. Maj 1706&quot;)   docket (P4 top): &quot;Recept. d. 18 May 1706 / [?] Sandau[?]&quot;; later hand &quot;Wien 12 may&quot;   images: P1 (p.1), P5 (spread pp.2-3), P2 (p.4, pencil 298), P3 (p.5), P4 (p.6, end + signature + vertical margin)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7490.txt">R7490.txt</a></p><pre translate="no"># R7490  N. 28  Wien 12 May 1706 (P1 top right: &quot;W. d 12. Maj 1706&quot;)   docket (P4 top): &quot;Recept. d. 18 May 1706 / [?] Sandau[?]&quot;; later hand &quot;Wien 12 may&quot;   images: P1 (p.1), P5 (spread pp.2-3), P2 (p.4, pencil 298), P3 (p.5), P4 (p.6, end + signature + vertical margin)
 # Reading order P1 -&gt; P5a -&gt; P5b -&gt; P2 -&gt; P3 -&gt; P4. P1 clear text only.
 [P1 top] N. 28      (pencil folio 296)      W. d 12. Maj 1706
 [P1 l.0] Monsieur
@@ -1165,7 +1165,7 @@ Royal […] will be, but {Baron Schenck} hopes […], be it at {King Augustus}&#
 ##   &quot;grosser [?].&quot;
 ##   &quot;Von [?] Mons: [?] [?] soll [?] in [?]&quot;
 ##   &quot;[?] terminis [?] [?]&quot;</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7490.txt">R7490.txt</a></p><pre># R7490  N. 28  Wien 12 May 1706 (P1 top right: &quot;W. d 12. Maj 1706&quot;)   docket (P4 top): &quot;Recept. d. 18 May 1706 / [?] Sandau[?]&quot;; later hand &quot;Wien 12 may&quot;   images: P1 (p.1), P5 (spread pp.2-3), P2 (p.4, pencil 298), P3 (p.5), P4 (p.6, end + signature + vertical margin)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7490.txt">R7490.txt</a></p><pre translate="no"># R7490  N. 28  Wien 12 May 1706 (P1 top right: &quot;W. d 12. Maj 1706&quot;)   docket (P4 top): &quot;Recept. d. 18 May 1706 / [?] Sandau[?]&quot;; later hand &quot;Wien 12 may&quot;   images: P1 (p.1), P5 (spread pp.2-3), P2 (p.4, pencil 298), P3 (p.5), P4 (p.6, end + signature + vertical margin)
 # Reading order P1 -&gt; P5a -&gt; P5b -&gt; P2 -&gt; P3 -&gt; P4. P1 clear text only.
 [P1 top] N. 28      (pencil folio 296)      W. d 12. Maj 1706
 [P1 l.0] Monsieur
@@ -1330,7 +1330,7 @@ Royal […] will be, but {Baron Schenck} hopes […], be it at {King Augustus}&#
 ##   &quot;grosser [?].&quot;
 ##   &quot;Von [?] Mons: [?] [?] soll [?] in [?]&quot;
 ##   &quot;[?] terminis [?] [?]&quot;</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7490_reading.md">R7490_reading.md</a></p><pre># R7490 (N. 28), Vienna, 12 May 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7490_reading.md">R7490_reading.md</a></p><pre translate="no"># R7490 (N. 28), Vienna, 12 May 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
 
 Rests on: `transcr/R7490.txt` re-read line by line on the full-resolution DECODE images (IMG_R7490_I33858_P1-P5,
 22 Oct 2026, batch b05; a contrast-enhanced crop for the water-stained foot of p. 2; corrections in
@@ -1382,7 +1382,7 @@ margin of p. 6, faded: &quot;... auf 2. Monat prorogiret und ... grosser Hoffnun
 * Not read as words: 16 7 61 40 58 20 76 31 29 42 = d a t m s e y i h m (&quot;[…] ihm&quot;), 31 67 79 46 = i w z o, 10 19 = b e.
 * &quot;cauta salutaris&quot;: the writer has &quot;Cives salutaris&quot;; the proverb&#x27;s first word is read from the hand as written and
   is not certain.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7490_en.md">R7490_en.md</a></p><pre># R7490 (N. 28), Vienna, 12 May 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7490_en.md">R7490_en.md</a></p><pre translate="no"># R7490 (N. 28), Vienna, 12 May 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
 
 Translation of `R7490_reading.md` (22 Oct 2026, batch b05), with the same holes: `[187]` an unvalued code, `&lt;e&gt;` an
 unvalued sign, `[?word]` partly carried, `[word]` supplied, `[…]` unread. The letter stays &quot;decoded, not read&quot;.
@@ -1407,7 +1407,7 @@ Close: But I remain, Monsieur, your very humble and very obedient servant, Sidon
 <h3>R7491, N. 31, Vienna, 22 May 1706 <span class="st partial">read in part</span></h3>
 <p>A letter of the numbered series from the Vienna agent signing &#x27;Sidon&#x27; to Baron Schenck, chamberlain of Augustus II, at Cracow, 22 May 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (92% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7491.txt">R7491.txt</a></p><pre># R7491  N. 31 (&quot;No 31&quot;)  Wien 22 May 1706 (closing on P2: &quot;W. d. 22 Maj 1706&quot;)   docket (P1 top right): &quot;Recept. 28 May in [?] / [?] 1706&quot;; later hand &quot;Wien 22 may 1706&quot;   images: P1 (p.1, pencil 299), P3 (spread pp.2-3, pencil 300), P2 (p.4 end, with upside-down lines at top and marginal notes)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7491.txt">R7491.txt</a></p><pre translate="no"># R7491  N. 31 (&quot;No 31&quot;)  Wien 22 May 1706 (closing on P2: &quot;W. d. 22 Maj 1706&quot;)   docket (P1 top right): &quot;Recept. 28 May in [?] / [?] 1706&quot;; later hand &quot;Wien 22 may 1706&quot;   images: P1 (p.1, pencil 299), P3 (spread pp.2-3, pencil 300), P2 (p.4 end, with upside-down lines at top and marginal notes)
 # Reading order P1 -&gt; P3a -&gt; P3b -&gt; P2.
 [P1 top] No 31     (pencil 299)     later hand: &quot;Wien 22 may 1706&quot;
 [P1 top right] docket: &quot;Recept. 28 May in [?] / [?] 1706&quot;
@@ -1540,7 +1540,7 @@ Close: But I remain, Monsieur, your very humble and very obedient servant, Sidon
 ##   &quot;meine recommendation zu machen und der [?] be-&quot;
 ##   &quot;[?] seiner [?] [?] [?]. Ob [?]&quot;
 ##   &quot;[?] [?] ist [?] [?] [?] d[?]&quot;</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7491.txt">R7491.txt</a></p><pre># R7491  N. 31 (&quot;No 31&quot;)  Wien 22 May 1706 (closing on P2: &quot;W. d. 22 Maj 1706&quot;)   docket (P1 top right): &quot;Recept. 28 May in [?] / [?] 1706&quot;; later hand &quot;Wien 22 may 1706&quot;   images: P1 (p.1, pencil 299), P3 (spread pp.2-3, pencil 300), P2 (p.4 end, with upside-down lines at top and marginal notes)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7491.txt">R7491.txt</a></p><pre translate="no"># R7491  N. 31 (&quot;No 31&quot;)  Wien 22 May 1706 (closing on P2: &quot;W. d. 22 Maj 1706&quot;)   docket (P1 top right): &quot;Recept. 28 May in [?] / [?] 1706&quot;; later hand &quot;Wien 22 may 1706&quot;   images: P1 (p.1, pencil 299), P3 (spread pp.2-3, pencil 300), P2 (p.4 end, with upside-down lines at top and marginal notes)
 # Reading order P1 -&gt; P3a -&gt; P3b -&gt; P2.
 [P1 top] No 31     (pencil 299)     later hand: &quot;Wien 22 may 1706&quot;
 [P1 top right] docket: &quot;Recept. 28 May in [?] / [?] 1706&quot;
@@ -1673,7 +1673,7 @@ Close: But I remain, Monsieur, your very humble and very obedient servant, Sidon
 ##   &quot;meine recommendation zu machen und der [?] be-&quot;
 ##   &quot;[?] seiner [?] [?] [?]. Ob [?]&quot;
 ##   &quot;[?] [?] ist [?] [?] [?] d[?]&quot;</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7491_reading.md">R7491_reading.md</a></p><pre># R7491 (N. 31), Vienna, 22 May 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7491_reading.md">R7491_reading.md</a></p><pre translate="no"># R7491 (N. 31), Vienna, 22 May 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
 
 Rests on: `transcr/R7491.txt` re-read line by line on the full-resolution DECODE images (IMG_R7491_I33870_P1-P3,
 22 Oct 2026, batch b05; corrections in `R7491_corrections.tsv`), the letter table of `key.py` for the runs and the
@@ -1716,7 +1716,7 @@ recommendation ...&quot; (one line, faded, not read). Upside down at the head of
 * &quot;gedencke&quot;: 25 19 16 20 45 14 34 20 = g e d e n c k e.
 * The closing paragraph&#x27;s last lines (&quot;Unterdessen ... Vermuthlich ... etwas&quot;) are cramped and partly faded; printed
   with `[?]` and `[?…]`.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7491_en.md">R7491_en.md</a></p><pre># R7491 (N. 31), Vienna, 22 May 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7491_en.md">R7491_en.md</a></p><pre translate="no"># R7491 (N. 31), Vienna, 22 May 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
 
 Translation of `R7491_reading.md` (22 Oct 2026, batch b05), with the same holes: `[187]` an unvalued code, `&lt;e&gt;` an
 unvalued sign, `[?word]` partly carried, `[word]` supplied, `[…]` unread.
@@ -1739,7 +1739,7 @@ Close: your very humble and very obedient Sidon. Vienna, 22 May 1706.</pre></det
 <h3>R7492, Vienna, 26 May 1706 <span class="st stuck">decoded, not read</span></h3>
 <p>A letter of the numbered series from the Vienna agent signing &#x27;Sidon&#x27; to Baron Schenck, chamberlain of Augustus II, at Cracow, 26 May 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7492.txt">R7492.txt</a></p><pre># R7492  N. [none visible]  Wien 26 May 1706 (P2 foot: &quot;W. d. 26. Maj 1706&quot;)   docket (P1 top right): &quot;Recept. 2[?] maj 1706&quot; (day overwritten, 2x); later hand &quot;Wien 26 may 1706&quot;   images: P1 (p.1, pencil 301), P3 (spread pp.2-3, pencil 302), P2 (p.4, end + signature; lower half blank with show-through)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7492.txt">R7492.txt</a></p><pre translate="no"># R7492  N. [none visible]  Wien 26 May 1706 (P2 foot: &quot;W. d. 26. Maj 1706&quot;)   docket (P1 top right): &quot;Recept. 2[?] maj 1706&quot; (day overwritten, 2x); later hand &quot;Wien 26 may 1706&quot;   images: P1 (p.1, pencil 301), P3 (spread pp.2-3, pencil 302), P2 (p.4, end + signature; lower half blank with show-through)
 # Reading order P1 -&gt; P3a -&gt; P3b -&gt; P2. Faint text at left of P1 is show-through from the verso, not a margin note.
 [P1 top] (pencil 301)  later hand &quot;Wien 26 may 1706&quot;
 [P1 top right] docket: &quot;Recept. 2[?] maj 1706&quot;     (day digits struck/overwritten)
@@ -1836,7 +1836,7 @@ Close: your very humble and very obedient Sidon. Vienna, 22 May 1706.</pre></det
 [P2 foot right] Votr. tres humb. / et tres obeissant / Serviteur / [signature &quot;Sadoni&quot;?]
 [P2 foot left] &quot;W. d. 26. Maj 1706.&quot;
 # P2 lower half otherwise blank (show-through of the verso only).</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7492.txt">R7492.txt</a></p><pre># R7492  N. [none visible]  Wien 26 May 1706 (P2 foot: &quot;W. d. 26. Maj 1706&quot;)   docket (P1 top right): &quot;Recept. 2[?] maj 1706&quot; (day overwritten, 2x); later hand &quot;Wien 26 may 1706&quot;   images: P1 (p.1, pencil 301), P3 (spread pp.2-3, pencil 302), P2 (p.4, end + signature; lower half blank with show-through)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7492.txt">R7492.txt</a></p><pre translate="no"># R7492  N. [none visible]  Wien 26 May 1706 (P2 foot: &quot;W. d. 26. Maj 1706&quot;)   docket (P1 top right): &quot;Recept. 2[?] maj 1706&quot; (day overwritten, 2x); later hand &quot;Wien 26 may 1706&quot;   images: P1 (p.1, pencil 301), P3 (spread pp.2-3, pencil 302), P2 (p.4, end + signature; lower half blank with show-through)
 # Reading order P1 -&gt; P3a -&gt; P3b -&gt; P2. Faint text at left of P1 is show-through from the verso, not a margin note.
 [P1 top] (pencil 301)  later hand &quot;Wien 26 may 1706&quot;
 [P1 top right] docket: &quot;Recept. 2[?] maj 1706&quot;     (day digits struck/overwritten)
@@ -1933,7 +1933,7 @@ Close: your very humble and very obedient Sidon. Vienna, 22 May 1706.</pre></det
 [P2 foot right] Votr. tres humb. / et tres obeissant / Serviteur / [signature &quot;Sadoni&quot;?]
 [P2 foot left] &quot;W. d. 26. Maj 1706.&quot;
 # P2 lower half otherwise blank (show-through of the verso only).</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7492_reading.md">R7492_reading.md</a></p><pre># R7492, Vienna, 26 May 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7492_reading.md">R7492_reading.md</a></p><pre translate="no"># R7492, Vienna, 26 May 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
 
 Rests on: `transcr/R7492.txt` re-read line by line on the full-resolution DECODE images (IMG_R7492_I33874_P1-P3,
 22 Oct 2026, batch b05; corrections in `R7492_corrections.tsv`), the letter table of `key.py` for the one run and the
@@ -1969,7 +1969,7 @@ Ich verharre, Monsieur, Votr. tres humb. et tres obeissant Serviteur, Sidon. W[i
 * &quot;ames ignobles basses et rampantes&quot;: the insult in French in the letter quoted, as written.
 * &quot;Reservatus in pectore&quot;: the cardinal reserved in pectore at the creation of 17 May 1706; &quot;Savia&quot; is as written.
 * &quot;Radoniski&quot;, &quot;Liegnitz&quot;: the Radziejowski/Liegnitz business is not identified further.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7492_en.md">R7492_en.md</a></p><pre># R7492, Vienna, 26 May 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7492_en.md">R7492_en.md</a></p><pre translate="no"># R7492, Vienna, 26 May 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
 
 Translation of `R7492_reading.md` (22 Oct 2026, batch b05), with the same holes: `[187]` an unvalued code, `&lt;c&gt;` an
 unvalued sign, `[?word]` partly carried, `[word]` supplied, `[…]` unread.
@@ -1990,7 +1990,7 @@ Close: I remain, Monsieur, your very humble and very obedient servant, Sidon. Vi
 <h3>R7493, N. 32, Vienna, 29 May 1706 <span class="st stuck">decoded, not read</span></h3>
 <p>A letter of the numbered series from the Vienna agent signing &#x27;Sidon&#x27; to Baron Schenck, chamberlain of Augustus II, at Cracow, 29 May 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7493.txt">R7493.txt</a></p><pre># R7493  N. 32  Wien 29 May 1706 (later hand &quot;Wien 29 may 1706&quot;; closing date on P2 foot left, trimmed/faded &quot;W[ien] [?] 1706&quot;?)   docket (P1 top right): &quot;Recept. d. 7. Junÿ 1706 / in Lublin[?]&quot;   images: P1 (p.1, f.303), P6 (spread: left = p.2 = 303v, right = p.3 = f.304), P4 (p.4 = 304v), P3 (p.5 = f.305), P5 (spread: left = p.6 = 305v, right = p.7 = f.306), P2 (p.8 = 306v, end + signature)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7493.txt">R7493.txt</a></p><pre translate="no"># R7493  N. 32  Wien 29 May 1706 (later hand &quot;Wien 29 may 1706&quot;; closing date on P2 foot left, trimmed/faded &quot;W[ien] [?] 1706&quot;?)   docket (P1 top right): &quot;Recept. d. 7. Junÿ 1706 / in Lublin[?]&quot;   images: P1 (p.1, f.303), P6 (spread: left = p.2 = 303v, right = p.3 = f.304), P4 (p.4 = 304v), P3 (p.5 = f.305), P5 (spread: left = p.6 = 305v, right = p.7 = f.306), P2 (p.8 = 306v, end + signature)
 # Order inferred from pencil folios (303, 304, 305, 306) and spreads; check continuity before relying on it.
 # Heavy water damage (brown tide marks, lost/abraded patches) on all leaves; many clear words unreadable.
 [P1 top] N. 32.      (pencil 303)      later hand &quot;Wien 29 may 1706&quot;
@@ -2203,7 +2203,7 @@ Close: I remain, Monsieur, your very humble and very obedient servant, Sidon. Vi
 [P2 l.25] [?] 166. [?] 150 [?] [?]     (very faint; &quot;166.&quot; and &quot;150&quot; legible)
 [P2 l.26] [?] [?]
 [P2 foot] &quot;W. d. 29. Maÿ 1706&quot;   Monsieur      Votr. tres humb. / et tres obeiss. / Sadon[?]</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7493.txt">R7493.txt</a></p><pre># R7493  N. 32  Wien 29 May 1706 (later hand &quot;Wien 29 may 1706&quot;; closing date on P2 foot left, trimmed/faded &quot;W[ien] [?] 1706&quot;?)   docket (P1 top right): &quot;Recept. d. 7. Junÿ 1706 / in Lublin[?]&quot;   images: P1 (p.1, f.303), P6 (spread: left = p.2 = 303v, right = p.3 = f.304), P4 (p.4 = 304v), P3 (p.5 = f.305), P5 (spread: left = p.6 = 305v, right = p.7 = f.306), P2 (p.8 = 306v, end + signature)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7493.txt">R7493.txt</a></p><pre translate="no"># R7493  N. 32  Wien 29 May 1706 (later hand &quot;Wien 29 may 1706&quot;; closing date on P2 foot left, trimmed/faded &quot;W[ien] [?] 1706&quot;?)   docket (P1 top right): &quot;Recept. d. 7. Junÿ 1706 / in Lublin[?]&quot;   images: P1 (p.1, f.303), P6 (spread: left = p.2 = 303v, right = p.3 = f.304), P4 (p.4 = 304v), P3 (p.5 = f.305), P5 (spread: left = p.6 = 305v, right = p.7 = f.306), P2 (p.8 = 306v, end + signature)
 # Order inferred from pencil folios (303, 304, 305, 306) and spreads; check continuity before relying on it.
 # Heavy water damage (brown tide marks, lost/abraded patches) on all leaves; many clear words unreadable.
 [P1 top] N. 32.      (pencil 303)      later hand &quot;Wien 29 may 1706&quot;
@@ -2416,7 +2416,7 @@ Close: I remain, Monsieur, your very humble and very obedient servant, Sidon. Vi
 [P2 l.25] [?] 166. [?] 150&lt;King Augustus? (I)&gt; [?] [?]     (very faint; &quot;166.&quot; and &quot;150&lt;King Augustus? (I)&gt;&quot; legible)
 [P2 l.26] [?] [?]
 [P2 foot] &quot;W. d. 29. Maÿ 1706&quot;   Monsieur      Votr. tres humb. / et tres obeiss. / Sadon[?]</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7493_reading.md">R7493_reading.md</a></p><pre># R7493 (N. 32), Vienna, 29 May 1706: the agent &quot;Sidon&quot; to Baron Schenck — partial reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7493_reading.md">R7493_reading.md</a></p><pre translate="no"># R7493 (N. 32), Vienna, 29 May 1706: the agent &quot;Sidon&quot; to Baron Schenck — partial reading
 
 Rests on: `transcr/R7493.txt` re-read on the full-resolution DECODE images (IMG_R7493_I33878_P1-P6, 22 Oct 2026, batch
 b05), the letter table of `key.py` for the runs and the code values of `codes_key.json`; the recipient&#x27;s gloss on p. 1
@@ -2456,7 +2456,7 @@ Monsieur, Votr. tres humb. et tres obeiss. Sidon. W[ien] d. 29. Maÿ 1706 (foot 
   (bracketed in the letter); 17 32 20 44 21 55 = diener; 40 31 59 62 56 8 64 19 45 = mistrauen.
 * The lower halves of ff. 303v-304 and the faded feet of ff. 305v-306v were read only in part; the brown tide marks
   cover the inner columns.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7493_en.md">R7493_en.md</a></p><pre># R7493 (N. 32), Vienna, 29 May 1706: the agent &quot;Sidon&quot; to Baron Schenck — English (partial)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7493_en.md">R7493_en.md</a></p><pre translate="no"># R7493 (N. 32), Vienna, 29 May 1706: the agent &quot;Sidon&quot; to Baron Schenck — English (partial)
 
 Translation of the partial reading `R7493_reading.md` (22 Oct 2026, batch b05), with the same holes: `[187]` an
 unvalued code, `&lt;g&gt;` an unvalued sign, `[?word]` partly carried, `[…]` unread. The letter stays &quot;decoded, not read&quot;;
@@ -2478,7 +2478,7 @@ Close: Monsieur, your very humble and very obedient Sidon. Vienna, 29 May 1706.<
 <h3>R7494, N. 35, Vienna, 5 June 1706 <span class="st partial">read in part</span></h3>
 <p>A letter of the numbered series from the Vienna agent signing &#x27;Sidon&#x27; to Baron Schenck, chamberlain of Augustus II, at Cracow, 5 June 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (87% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7494.txt">R7494.txt</a></p><pre># R7494  N. 35  Wien 5 Juni 1706 (in text: &quot;den 5. Jun 1706&quot;; back: &quot;5 Junÿ&quot;)   docket: &quot;Rec. 11 Juny 1706&quot;   images: P1 (text p.1, fol. 307), P2 (spread: P2a = p.2 with close and signature, P2b = P.S. on fol. 308), P3 (back: date + docket only)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7494.txt">R7494.txt</a></p><pre translate="no"># R7494  N. 35  Wien 5 Juni 1706 (in text: &quot;den 5. Jun 1706&quot;; back: &quot;5 Junÿ&quot;)   docket: &quot;Rec. 11 Juny 1706&quot;   images: P1 (text p.1, fol. 307), P2 (spread: P2a = p.2 with close and signature, P2b = P.S. on fol. 308), P3 (back: date + docket only)
 [P1 l.1] Dem heutigen schreiben^d 181 werde
 [P1 l.2] die continuationes der grossen
 [P1 l.3] progressen in brabant beygeleg-
@@ -2534,7 +2534,7 @@ Close: Monsieur, your very humble and very obedient Sidon. Vienna, 29 May 1706.<
 [P2b l.12] mit nechsten geschehen.
 ## P2b top: &quot;308&quot; foliation (pencil).
 ## P3 (back of leaf): top right &quot;5 Junÿ&quot;; docket &quot;Rec. 11 Juny 1706&quot;. No cipher.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7494.txt">R7494.txt</a></p><pre># R7494  N. 35  Wien 5 Juni 1706 (in text: &quot;den 5. Jun 1706&quot;; back: &quot;5 Junÿ&quot;)   docket: &quot;Rec. 11 Juny 1706&quot;   images: P1 (text p.1, fol. 307), P2 (spread: P2a = p.2 with close and signature, P2b = P.S. on fol. 308), P3 (back: date + docket only)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7494.txt">R7494.txt</a></p><pre translate="no"># R7494  N. 35  Wien 5 Juni 1706 (in text: &quot;den 5. Jun 1706&quot;; back: &quot;5 Junÿ&quot;)   docket: &quot;Rec. 11 Juny 1706&quot;   images: P1 (text p.1, fol. 307), P2 (spread: P2a = p.2 with close and signature, P2b = P.S. on fol. 308), P3 (back: date + docket only)
 [P1 l.1] Dem heutigen schreiben^d 181 werde
 [P1 l.2] die continuationes der grossen
 [P1 l.3] progressen in brabant beygeleg-
@@ -2590,7 +2590,7 @@ Close: Monsieur, your very humble and very obedient Sidon. Vienna, 29 May 1706.<
 [P2b l.12] mit nechsten geschehen.
 ## P2b top: &quot;308&quot; foliation (pencil).
 ## P3 (back of leaf): top right &quot;5 Junÿ&quot;; docket &quot;Rec. 11 Juny 1706&quot;. No cipher.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7494_reading.md">R7494_reading.md</a></p><pre># R7494 (N. 35), Vienna, 5 June 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7494_reading.md">R7494_reading.md</a></p><pre translate="no"># R7494 (N. 35), Vienna, 5 June 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
 
 Rests on: `transcr/R7494.txt` re-read line by line on the full-resolution DECODE images (IMG_R7494_I33885_P1-P2,
 22 Oct 2026, batch b05; corrections in `R7494_corrections.tsv`), the letter table of `key.py` for the two runs and the
@@ -2628,7 +2628,7 @@ stands on fol. 308.)
 * The code on P2a l.8 is 2?8 with the middle digit blotted; read 268, possibly 258.
 * The last word of p. 1 (&quot;Königl.&quot; or &quot;König&quot;) stands at the page edge; p. 2 opens a new sentence, so the end of that
   sentence is lost or was a catchword; printed `Königl. […]`.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7494_en.md">R7494_en.md</a></p><pre># R7494 (N. 35), Vienna, 5 June 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7494_en.md">R7494_en.md</a></p><pre translate="no"># R7494 (N. 35), Vienna, 5 June 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
 
 Translation of `R7494_reading.md` (22 Oct 2026, batch b05), with the same holes: `[187]` an unvalued code, `&lt;e.&gt;` an
 unvalued sign, `[?word]` partly carried, `[word]` supplied, `[…]` unread.
@@ -2649,7 +2649,7 @@ Close: Monsieur, Vienna, in greatest haste, 5 June 1706, your very humble and ve
 <h3>R7495, N. 38, Vienna, 15 June 1706 <span class="st partial">read in part</span></h3>
 <p>A letter of the numbered series from the Vienna agent signing &#x27;Sidon&#x27; to Baron Schenck, chamberlain of Augustus II, at Cracow, 15 June 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (92% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7495.txt">R7495.txt</a></p><pre># R7495  N. 38  Wien 15 Juni 1706 (close on last page: &quot;W. d. 15 Jun 1706&quot;; head of last page &quot;Wien 15 Juny 1706&quot;)   docket: none seen on these images   images: P2 (p.1, fol. 309, &quot;N. 38&quot; + &quot;Monsieur&quot;), P5 (spread: P5a = p.2, P5b = p.3 fol. 310), P3 (p.4, fol. 311), P6 (spread: P6a = p.5, P6b = p.6 fol. 312), P1 (p.7), P4 (p.8, close + signature)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7495.txt">R7495.txt</a></p><pre translate="no"># R7495  N. 38  Wien 15 Juni 1706 (close on last page: &quot;W. d. 15 Jun 1706&quot;; head of last page &quot;Wien 15 Juny 1706&quot;)   docket: none seen on these images   images: P2 (p.1, fol. 309, &quot;N. 38&quot; + &quot;Monsieur&quot;), P5 (spread: P5a = p.2, P5b = p.3 fol. 310), P3 (p.4, fol. 311), P6 (spread: P6a = p.5, P6b = p.6 fol. 312), P1 (p.7), P4 (p.8, close + signature)
 ## Reading order inferred from foliation (309-312) and text run-ons; image order on DECODE is P1..P6 but P2 is the first page.
 [P2 l.1] Das schreiben des 189^b (small &quot;b&quot; written above a long stroke after 189) unterm 9. curr. da-
 [P2 l.2] tirt und No. 35. grunlosen[?], habe 187. richtig
@@ -2890,7 +2890,7 @@ Close: Monsieur, Vienna, in greatest haste, 5 June 1706, your very humble and ve
 [P4 l.24] Ihr. hochstwerthe[?] Gnad.
 ## P4 bottom left (close): &quot;W. d. 15 Jun 1706.&quot;   bottom right (subscription): &quot;ganz gehorsamster / treuester diener / Sidon[?]&quot; (signature reads &quot;Sidon&quot;; possibly a cover name)
 ## No foliation visible on P1/P4 (the second bifolium); P4 is the last page.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7495.txt">R7495.txt</a></p><pre># R7495  N. 38  Wien 15 Juni 1706 (close on last page: &quot;W. d. 15 Jun 1706&quot;; head of last page &quot;Wien 15 Juny 1706&quot;)   docket: none seen on these images   images: P2 (p.1, fol. 309, &quot;N. 38&quot; + &quot;Monsieur&quot;), P5 (spread: P5a = p.2, P5b = p.3 fol. 310), P3 (p.4, fol. 311), P6 (spread: P6a = p.5, P6b = p.6 fol. 312), P1 (p.7), P4 (p.8, close + signature)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7495.txt">R7495.txt</a></p><pre translate="no"># R7495  N. 38  Wien 15 Juni 1706 (close on last page: &quot;W. d. 15 Jun 1706&quot;; head of last page &quot;Wien 15 Juny 1706&quot;)   docket: none seen on these images   images: P2 (p.1, fol. 309, &quot;N. 38&quot; + &quot;Monsieur&quot;), P5 (spread: P5a = p.2, P5b = p.3 fol. 310), P3 (p.4, fol. 311), P6 (spread: P6a = p.5, P6b = p.6 fol. 312), P1 (p.7), P4 (p.8, close + signature)
 ## Reading order inferred from foliation (309-312) and text run-ons; image order on DECODE is P1..P6 but P2 is the first page.
 [P2 l.1] Das schreiben des 189^b&lt;Baron Schenck? (I)&gt; (small &quot;b&quot; written above a long stroke after 189&lt;Baron Schenck? (I)&gt;) unterm 9. curr. da-
 [P2 l.2] tirt und No. 35. grunlosen[?], habe 187. richtig
@@ -3131,7 +3131,7 @@ Close: Monsieur, Vienna, in greatest haste, 5 June 1706, your very humble and ve
 [P4 l.24] Ihr. hochstwerthe[?] Gnad.
 ## P4 bottom left (close): &quot;W. d. 15 Jun 1706.&quot;   bottom right (subscription): &quot;ganz gehorsamster / treuester diener / Sidon[?]&quot; (signature reads &quot;Sidon&quot;; possibly a cover name)
 ## No foliation visible on P1/P4 (the second bifolium); P4 is the last page.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7495_reading.md">R7495_reading.md</a></p><pre># R7495 (N. 38), Vienna, 15 June 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7495_reading.md">R7495_reading.md</a></p><pre translate="no"># R7495 (N. 38), Vienna, 15 June 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
 
 Rests on: the decryption `reading/R7495.txt` (the transcription `transcr/R7495.txt` of 9 Oct 2026 with the codes and
 runs resolved), the letter table of `key.py` for the runs and the code values of `codes_key.json`. Written 23 Oct 2026
@@ -3184,7 +3184,7 @@ Und ich ersterbe Ihr [?hochstwerthe] Gnad ganz gehorsamster treuester diener [?S
 * P6b l.6 &quot;1?1&quot;: 181 or 131 (middle figure under an ink blot), printed [?181].
 * The bracketed passage at the end of P1 (&quot;ist in dem Polln. desshon Kupfer ...&quot;) is the transcription&#x27;s doubtful
   reading of a cramped parenthesis; printed as transcribed with each doubtful word marked.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7495_en.md">R7495_en.md</a></p><pre># R7495 (N. 38), Vienna, 15 June 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7495_en.md">R7495_en.md</a></p><pre translate="no"># R7495 (N. 38), Vienna, 15 June 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
 
 Translation of `R7495_reading.md` (23 Oct 2026, r2m, Claude Opus 5.5), the reading of the decryption `R7495.txt`
 (clear German with Latin and French; four cipher runs and codes on the first page). Same holes: `[187]` an unvalued
@@ -3219,7 +3219,7 @@ And I die your [?most worthy] grace&#x27;s wholly most obedient, most faithful s
 <h3>R7496, N. 39, Vienna, 16 June 1706 <span class="st stuck">decoded, not read</span></h3>
 <p>A letter of the numbered series from the Vienna agent signing &#x27;Sidon&#x27; to Baron Schenck, chamberlain of Augustus II, at Cracow, 16 June 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7496.txt">R7496.txt</a></p><pre># R7496  N. 39  Wien 16 Juni 1706 (close: &quot;Wien d. 16 Jun 1706&quot;; address leaf, later hand: &quot;wien 16 Juny 1706&quot;)   docket (address leaf, other hand): &quot;R?ent. d. 2? 21 Juny 1706&quot; (same &quot;R?ent.&quot; abbreviation as R7497, probably &quot;Recept.&quot;; day written twice, 21)   images: P2 (p.1, fol. 313, &quot;N. 39&quot; + &quot;Monsieur&quot;), P3 (spread: P3a = p.2, P3b = p.3 fol. 314 with close + signature), P1 (back/address leaf: date + docket only)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7496.txt">R7496.txt</a></p><pre translate="no"># R7496  N. 39  Wien 16 Juni 1706 (close: &quot;Wien d. 16 Jun 1706&quot;; address leaf, later hand: &quot;wien 16 Juny 1706&quot;)   docket (address leaf, other hand): &quot;R?ent. d. 2? 21 Juny 1706&quot; (same &quot;R?ent.&quot; abbreviation as R7497, probably &quot;Recept.&quot;; day written twice, 21)   images: P2 (p.1, fol. 313, &quot;N. 39&quot; + &quot;Monsieur&quot;), P3 (spread: P3a = p.2, P3b = p.3 fol. 314 with close + signature), P1 (back/address leaf: date + docket only)
 [P2 l.1] Die beylage wird die disconsola-
 [P2 l.2] tion des 132. wegen des un vor- (ctx: was im vor-)
 [P2 l.3] mutheten streichs bezeugen. (ctx: was mittelten[?]) Es
@@ -3280,7 +3280,7 @@ And I die your [?most worthy] grace&#x27;s wholly most obedient, most faithful s
 [P3b l.18] (centre) Wien d. 16 Jun / 1706.   (right) Votre tres humble / et tres obeissant / Servit. / Sidon.
 ## P3b top: &quot;314&quot; foliation (pencil).
 ## P1 (address leaf, back): &quot;wien 16 Juny 1706&quot; (later hand); reply/receipt note &quot;R[?] d. [2?] 21 Juny 1706&quot;. No cipher.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7496.txt">R7496.txt</a></p><pre># R7496  N. 39  Wien 16 Juni 1706 (close: &quot;Wien d. 16 Jun 1706&quot;; address leaf, later hand: &quot;wien 16 Juny 1706&quot;)   docket (address leaf, other hand): &quot;R?ent. d. 2? 21 Juny 1706&quot; (same &quot;R?ent.&quot; abbreviation as R7497, probably &quot;Recept.&quot;; day written twice, 21)   images: P2 (p.1, fol. 313, &quot;N. 39&quot; + &quot;Monsieur&quot;), P3 (spread: P3a = p.2, P3b = p.3 fol. 314 with close + signature), P1 (back/address leaf: date + docket only)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7496.txt">R7496.txt</a></p><pre translate="no"># R7496  N. 39  Wien 16 Juni 1706 (close: &quot;Wien d. 16 Jun 1706&quot;; address leaf, later hand: &quot;wien 16 Juny 1706&quot;)   docket (address leaf, other hand): &quot;R?ent. d. 2? 21 Juny 1706&quot; (same &quot;R?ent.&quot; abbreviation as R7497, probably &quot;Recept.&quot;; day written twice, 21)   images: P2 (p.1, fol. 313, &quot;N. 39&quot; + &quot;Monsieur&quot;), P3 (spread: P3a = p.2, P3b = p.3 fol. 314 with close + signature), P1 (back/address leaf: date + docket only)
 [P2 l.1] Die beylage wird die disconsola-
 [P2 l.2] tion des 132. wegen des im vor-
 [P2 l.3] mittelten[?] streichs bezeugen. Es
@@ -3341,7 +3341,7 @@ And I die your [?most worthy] grace&#x27;s wholly most obedient, most faithful s
 [P3b l.18] (centre) Wien d. 16 Jun / 1706.   (right) Votre tres humble / et tres obeissant / Servit. / Sidon.
 ## P3b top: &quot;314&quot; foliation (pencil).
 ## P1 (address leaf, back): &quot;wien 16 Juny 1706&quot; (later hand); reply/receipt note &quot;R[?] d. [2?] 21 Juny 1706&quot;. No cipher.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7496_reading.md">R7496_reading.md</a></p><pre># R7496 (N. 39), Vienna, 16 June 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7496_reading.md">R7496_reading.md</a></p><pre translate="no"># R7496 (N. 39), Vienna, 16 June 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
 
 Rests on: `transcr/R7496.txt` re-read line by line on the full-resolution DECODE images (IMG_R7496_I33896_P2-P3,
 22 Oct 2026, batch b05; corrections in `R7496_corrections.tsv`), the letter table of `key.py` for the one run and the
@@ -3377,7 +3377,7 @@ Monsieur, Wien d. 16 Jun 1706, Votre tres humble et tres obeissant Servit. Sidon
 * `[180]` is written &quot;i80&quot;; it may be a slip for 150 (the King is the subject of the sentence), not changed.
 * &quot;denn wenn ohne mature Vor-ausarbeitung dergl. Sachen entamiret werden&quot; ends without a main clause before the
   closing formula; the writer broke off.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7496_en.md">R7496_en.md</a></p><pre># R7496 (N. 39), Vienna, 16 June 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7496_en.md">R7496_en.md</a></p><pre translate="no"># R7496 (N. 39), Vienna, 16 June 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
 
 Translation of `R7496_reading.md` (22 Oct 2026, batch b05), with the same holes: `[187]` an unvalued code, `&lt;e.&gt;` an
 unvalued sign, `[?word]` partly carried, `[word]` supplied, `[…]` unread.
@@ -3396,7 +3396,7 @@ Close: Monsieur, Vienna, 16 June 1706, your very humble and very obedient servan
 <h3>R7497, N. 40, Vienna, 19 June 1706 <span class="st stuck">decoded, not read</span></h3>
 <p>A letter of the numbered series from the Vienna agent signing &#x27;Sidon&#x27; to Baron Schenck, chamberlain of Augustus II, at Cracow, 19 June 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7497.txt">R7497.txt</a></p><pre># R7497  N. 40  Wien 19 Juni 1706 (close: &quot;Wien d. 19 Jun 1706&quot;; head of last page, later hand: &quot;19 Juny&quot;)   docket (top of last page, other hand): &quot;R?ent. d. 25 Juny 1706&quot; (probably &quot;Recept.&quot; = received; same form as R7496)   images: P1 (p.1, fol. 315, &quot;N. 40&quot; + &quot;Monsieur&quot;), P3 (spread: P3a = p.2, P3b = p.3 fol. 316), P2 (p.4: end of text, close, signature &quot;Sidon&quot;)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7497.txt">R7497.txt</a></p><pre translate="no"># R7497  N. 40  Wien 19 Juni 1706 (close: &quot;Wien d. 19 Jun 1706&quot;; head of last page, later hand: &quot;19 Juny&quot;)   docket (top of last page, other hand): &quot;R?ent. d. 25 Juny 1706&quot; (probably &quot;Recept.&quot; = received; same form as R7496)   images: P1 (p.1, fol. 315, &quot;N. 40&quot; + &quot;Monsieur&quot;), P3 (spread: P3a = p.2, P3b = p.3 fol. 316), P2 (p.4: end of text, close, signature &quot;Sidon&quot;)
 [P1 l.1] Es ist heüte der 187 wegen be-
 [P1 l.2] sonderer Angelegenheit des
 [P1 l.3] 181 genöthiget worden, Weile[?]
@@ -3468,7 +3468,7 @@ Close: Monsieur, Vienna, 16 June 1706, your very humble and very obedient servan
 [P2 l.11] Monsieur
 [P2 l.12] (left) Wien / d. 19 Jun / 1706   (right) Votre tres humble / et tres obeissant / Servit. / Sidon
 ## P2 head (later hand) &quot;19 Juny&quot;; note &quot;R?ent. d. 25 Juny / 1706&quot; (abbreviated year). l.4: the first &quot;187&quot; written &quot;18&quot; + 7 partly under the fold, second &quot;187.&quot; clear; between them a word like &quot;kösstet&quot;/&quot;lässet&quot; (unclear, possibly &quot;lässet&quot;).</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7497.txt">R7497.txt</a></p><pre># R7497  N. 40  Wien 19 Juni 1706 (close: &quot;Wien d. 19 Jun 1706&quot;; head of last page, later hand: &quot;19 Juny&quot;)   docket (top of last page, other hand): &quot;R?ent. d. 25 Juny 1706&quot; (probably &quot;Recept.&quot; = received; same form as R7496)   images: P1 (p.1, fol. 315, &quot;N. 40&quot; + &quot;Monsieur&quot;), P3 (spread: P3a = p.2, P3b = p.3 fol. 316), P2 (p.4: end of text, close, signature &quot;Sidon&quot;)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7497.txt">R7497.txt</a></p><pre translate="no"># R7497  N. 40  Wien 19 Juni 1706 (close: &quot;Wien d. 19 Jun 1706&quot;; head of last page, later hand: &quot;19 Juny&quot;)   docket (top of last page, other hand): &quot;R?ent. d. 25 Juny 1706&quot; (probably &quot;Recept.&quot; = received; same form as R7496)   images: P1 (p.1, fol. 315, &quot;N. 40&quot; + &quot;Monsieur&quot;), P3 (spread: P3a = p.2, P3b = p.3 fol. 316), P2 (p.4: end of text, close, signature &quot;Sidon&quot;)
 [P1 l.1] Es ist heüte der 187 wegen be-
 [P1 l.2] sonderer Angelegenheit des
 [P1 l.3] 181 genöthiget worden, Weile[?]
@@ -3540,7 +3540,7 @@ Close: Monsieur, Vienna, 16 June 1706, your very humble and very obedient servan
 [P2 l.11] Monsieur
 [P2 l.12] (left) Wien / d. 19 Jun / 1706   (right) Votre tres humble / et tres obeissant / Servit. / Sidon
 ## P2 head (later hand) &quot;19 Juny&quot;; note &quot;R?ent. d. 25 Juny / 1706&quot; (abbreviated year). l.4: the first &quot;187&quot; written &quot;18&quot; + 7 partly under the fold, second &quot;187.&quot; clear; between them a word like &quot;kösstet&quot;/&quot;lässet&quot; (unclear, possibly &quot;lässet&quot;).</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7497_reading.md">R7497_reading.md</a></p><pre># R7497 (N. 40), Vienna, 19 June 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7497_reading.md">R7497_reading.md</a></p><pre translate="no"># R7497 (N. 40), Vienna, 19 June 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
 
 Rests on: the decryption `reading/R7497.txt` (the transcription `transcr/R7497.txt` of 9 Oct 2026 with the codes
 resolved) and the code values of `codes_key.json`. Written 23 Oct 2026 (r2m, Claude Opus 5.5) under TRANSLATE_BRIEF:
@@ -3573,7 +3573,7 @@ Verbleibe mir, Monsieur, Votre tres humble et tres obeissant Servit. Sidon. Wien
 * P3a l.5 &quot;mit der 100 Kayserl. Hof.[?]&quot;: the code 100 (the imperial court) is followed by &quot;Kayserl. Hof.&quot; in clear,
   apparently the writer&#x27;s own gloss or a doubled expression; printed as transcribed.
 * P2 l.4: between the two 187s a word read &quot;kösstet&quot; or &quot;lässet&quot; (unclear on the image, 9 Oct).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7497_en.md">R7497_en.md</a></p><pre># R7497 (N. 40), Vienna, 19 June 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7497_en.md">R7497_en.md</a></p><pre translate="no"># R7497 (N. 40), Vienna, 19 June 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
 
 Translation of `R7497_reading.md` (23 Oct 2026, r2m, Claude Opus 5.5), the reading of the decryption `R7497.txt`
 (clear German with three-figure codes, no cipher runs). Same holes: `[187]` an unvalued code, `[?word]` partly
@@ -3595,7 +3595,7 @@ I remain, Monsieur, your very humble and very obedient servant Sidon. Vienna, 19
 <h3>R7498, N. 41, Vienna, 23 June 1706 <span class="st stuck">decoded, not read</span></h3>
 <p>A letter of the numbered series from the Vienna agent signing &#x27;Sidon&#x27; to Baron Schenck, chamberlain of Augustus II, at Cracow, 23 June 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7498.txt">R7498.txt</a></p><pre># R7498  N. 41  Wien 23 Juni 1706 (close: &quot;W. d. 23. Jun 1706&quot;; head, later hand: &quot;Wien 1706 / 23 Juny&quot;)   docket: none seen   images: P1 (p.1, fol. 317, &quot;N. 41&quot; + &quot;Monsieur&quot;), P3 (spread: P3a = p.2 with left-margin note, P3b = p.3 fol. 318 with left-margin note), P2 (p.4, end of text + close + long left-margin note)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7498.txt">R7498.txt</a></p><pre translate="no"># R7498  N. 41  Wien 23 Juni 1706 (close: &quot;W. d. 23. Jun 1706&quot;; head, later hand: &quot;Wien 1706 / 23 Juny&quot;)   docket: none seen   images: P1 (p.1, fol. 317, &quot;N. 41&quot; + &quot;Monsieur&quot;), P3 (spread: P3a = p.2 with left-margin note, P3b = p.3 fol. 318 with left-margin note), P2 (p.4, end of text + close + long left-margin note)
 [P1 l.1] b. 187. bin ersuchet worden 189 zu hinter-
 [P1 l.2] bringen, dass o. 181 sich sehr verwundert, dass
 [P1 l.3] dass Ihm einige Vorstellung von dem
@@ -3723,7 +3723,7 @@ I remain, Monsieur, your very humble and very obedient servant Sidon. Vienna, 19
 ##    werden; En confidence dem 166. zu [?] ... Recommendation
 ##    [?] ... zu meinem[?] ... bitte[?]&quot;
 ## No address leaf or docket among these images.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7498.txt">R7498.txt</a></p><pre># R7498  N. 41  Wien 23 Juni 1706 (close: &quot;W. d. 23. Jun 1706&quot;; head, later hand: &quot;Wien 1706 / 23 Juny&quot;)   docket: none seen   images: P1 (p.1, fol. 317, &quot;N. 41&quot; + &quot;Monsieur&quot;), P3 (spread: P3a = p.2 with left-margin note, P3b = p.3 fol. 318 with left-margin note), P2 (p.4, end of text + close + long left-margin note)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7498.txt">R7498.txt</a></p><pre translate="no"># R7498  N. 41  Wien 23 Juni 1706 (close: &quot;W. d. 23. Jun 1706&quot;; head, later hand: &quot;Wien 1706 / 23 Juny&quot;)   docket: none seen   images: P1 (p.1, fol. 317, &quot;N. 41&quot; + &quot;Monsieur&quot;), P3 (spread: P3a = p.2 with left-margin note, P3b = p.3 fol. 318 with left-margin note), P2 (p.4, end of text + close + long left-margin note)
 [P1 l.1] b. 187. bin ersuchet worden 189&lt;Baron Schenck? (I)&gt; zu hinter-
 [P1 l.2] bringen, dass o. 181 sich sehr verwundert, dass
 [P1 l.3] dass Ihm einige Vorstellung von dem
@@ -3851,7 +3851,7 @@ I remain, Monsieur, your very humble and very obedient servant Sidon. Vienna, 19
 ##    werden; En confidence dem 166. zu [?] ... Recommendation
 ##    [?] ... zu meinem[?] ... bitte[?]&quot;
 ## No address leaf or docket among these images.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7498_reading.md">R7498_reading.md</a></p><pre># R7498 (N. 41), Vienna, 23 June 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7498_reading.md">R7498_reading.md</a></p><pre translate="no"># R7498 (N. 41), Vienna, 23 June 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
 
 Rests on: the decryption `reading/R7498.txt` (the transcription `transcr/R7498.txt` of 9 Oct 2026 with the codes and
 runs resolved), the letter table of `key.py` for the runs and the code values of `codes_key.json`. Written 23 Oct 2026
@@ -3909,7 +3909,7 @@ Monsieur, Votre tres obligé et tres humble Servit: Sidon. W. d. 23. Jun. 1706.
   landgraviate; one r missing); 49 46 59 62 67 46 55 = p o s t v o r (&quot;post vor&quot;); 16 19 40 = d e m; 18 21 45 = d e n;
   16 19 58 = d e s. P3b l.10 &quot;67 46 55 67&quot; = w o r w (last figure perhaps 62: &quot;wort&quot;), printed […].
 * P1 l.19 &quot;9. 349&quot; may be &quot;g. 349&quot;; P3a l.14 &quot;349 2. f&quot; may be &quot;349 L. f&quot;.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7498_en.md">R7498_en.md</a></p><pre># R7498 (N. 41), Vienna, 23 June 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7498_en.md">R7498_en.md</a></p><pre translate="no"># R7498 (N. 41), Vienna, 23 June 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
 
 Translation of `R7498_reading.md` (23 Oct 2026, r2m, Claude Opus 5.5), the reading of the decryption `R7498.txt`
 (clear German with three-figure codes, dotted signs and fifteen short runs of the letter cipher). Same holes: `[187]`
@@ -3946,7 +3946,7 @@ Monsieur, your very obliged and very humble servant Sidon. Vienna, 23 June 1706.
 <h3>R7499, N. 44, Vienna, 3 July 1706 <span class="st partial">read in part</span></h3>
 <p>A letter of the numbered series from the Vienna agent signing &#x27;Sidon&#x27; to Baron Schenck, chamberlain of Augustus II, at Cracow, 3 July 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (92% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7499.txt">R7499.txt</a></p><pre># R7499  N. 44  Wien 3 Juli 1706 (close: &quot;W. d. 3. Jul / 1706&quot;)   docket/reply note top right of p.1 (other hand): &quot;[?]bert[?] bey Höfe[?] an der Kirchhof[?] / d. 13 July 1706.&quot; (probably receipt/reply note, dated 13 July)   images: P1 (p.1, fol. 319, &quot;N. 44&quot; + &quot;Monsieur&quot;), P2 (spread: P2a = p.2, P2b = p.3 fol. 320 with close + signature &quot;Sidon&quot;)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7499.txt">R7499.txt</a></p><pre translate="no"># R7499  N. 44  Wien 3 Juli 1706 (close: &quot;W. d. 3. Jul / 1706&quot;)   docket/reply note top right of p.1 (other hand): &quot;[?]bert[?] bey Höfe[?] an der Kirchhof[?] / d. 13 July 1706.&quot; (probably receipt/reply note, dated 13 July)   images: P1 (p.1, fol. 319, &quot;N. 44&quot; + &quot;Monsieur&quot;), P2 (spread: P2a = p.2, P2b = p.3 fol. 320 with close + signature &quot;Sidon&quot;)
 [P1 l.1] Durch eine hefftige purpuram bin
 [P1 l.2] ich etliche tage ganz indispost gewesen
 [P1 l.3] etwas zuentrichten. Nunmehro wer-
@@ -4016,7 +4016,7 @@ Monsieur, your very obliged and very humble servant Sidon. Vienna, 23 June 1706.
 [P2b l.14] Mons.r
 [P2b l.15] (left) W. d. 3. Jul / 1706.   (right) Votre tres humble / et tres obeissant / Servit. / Sidon
 ## P2b top: &quot;320&quot; foliation (pencil). No address leaf/docket image for this letter (only the p.1 top-right note dated 13 July 1706).</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7499.txt">R7499.txt</a></p><pre># R7499  N. 44  Wien 3 Juli 1706 (close: &quot;W. d. 3. Jul / 1706&quot;)   docket/reply note top right of p.1 (other hand): &quot;[?]bert[?] bey Höfe[?] an der Kirchhof[?] / d. 13 July 1706.&quot; (probably receipt/reply note, dated 13 July)   images: P1 (p.1, fol. 319, &quot;N. 44&quot; + &quot;Monsieur&quot;), P2 (spread: P2a = p.2, P2b = p.3 fol. 320 with close + signature &quot;Sidon&quot;)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7499.txt">R7499.txt</a></p><pre translate="no"># R7499  N. 44  Wien 3 Juli 1706 (close: &quot;W. d. 3. Jul / 1706&quot;)   docket/reply note top right of p.1 (other hand): &quot;[?]bert[?] bey Höfe[?] an der Kirchhof[?] / d. 13 July 1706.&quot; (probably receipt/reply note, dated 13 July)   images: P1 (p.1, fol. 319, &quot;N. 44&quot; + &quot;Monsieur&quot;), P2 (spread: P2a = p.2, P2b = p.3 fol. 320 with close + signature &quot;Sidon&quot;)
 [P1 l.1] Durch eine hefftige purpuram bin
 [P1 l.2] ich etliche tage ganz indispost gewesen
 [P1 l.3] etwas zuentrichten. Nunmehro wer-
@@ -4086,7 +4086,7 @@ Monsieur, your very obliged and very humble servant Sidon. Vienna, 23 June 1706.
 [P2b l.14] Mons.r
 [P2b l.15] (left) W. d. 3. Jul / 1706.   (right) Votre tres humble / et tres obeissant / Servit. / Sidon
 ## P2b top: &quot;320&quot; foliation (pencil). No address leaf/docket image for this letter (only the p.1 top-right note dated 13 July 1706).</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7499_reading.md">R7499_reading.md</a></p><pre># R7499 (N. 44), Vienna, 3 July 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7499_reading.md">R7499_reading.md</a></p><pre translate="no"># R7499 (N. 44), Vienna, 3 July 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
 
 Rests on: the decryption `reading/R7499.txt` (the transcription `transcr/R7499.txt` of 9 Oct 2026 with the codes
 resolved) and the code values of `codes_key.json`. Written 23 Oct 2026 (r2m, Claude Opus 5.5) under TRANSLATE_BRIEF:
@@ -4123,7 +4123,7 @@ Mons.r, Votre tres humble et tres obeissant Servit. Sidon. W. d. 3. Jul 1706.
 * P1 l.23 &quot;in 18ta vanitate&quot;: read here as the Latin &quot;in ista vanitate&quot; (the transcription&#x27;s own note: &quot;i-s-t-a&quot;, not a
   code).
 * P2b l.9 &quot;p.&quot; may be &quot;g.&quot;; &quot;c.&quot; a single dotted sign.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7499_en.md">R7499_en.md</a></p><pre># R7499 (N. 44), Vienna, 3 July 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7499_en.md">R7499_en.md</a></p><pre translate="no"># R7499 (N. 44), Vienna, 3 July 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
 
 Translation of `R7499_reading.md` (23 Oct 2026, r2m, Claude Opus 5.5), the reading of the decryption `R7499.txt`
 (clear German with a few three-figure codes and dotted signs). Same holes: `[187]` an unvalued code, `&lt;p&gt;` an
@@ -4147,7 +4147,7 @@ Monsieur, your very humble and very obedient servant Sidon. Vienna, 3 July 1706.
 <h3>R7500, N. 47, Vienna, 14 July 1706 <span class="st stuck">decoded, not read</span></h3>
 <p>A letter of the numbered series from the Vienna agent signing &#x27;Sidon&#x27; to Baron Schenck, chamberlain of Augustus II, at Cracow, 14 July 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7500.txt">R7500.txt</a></p><pre># R7500  N. 47  Wien 14 Juli 1706 (close: &quot;W. d. 14 Jul / 1706&quot;)   docket/reply note top right of p.1 (other hand): &quot;R?ent[?] Paris[?] d. 25. July 1706.&quot; (cf. &quot;R?ent. d. 25 Juny&quot; on R7497)   images: P1 (p.1, fol. 321, &quot;N. 47&quot; + &quot;Monsieur&quot;), P3 (spread: P3a = p.2, P3b = p.3 fol. 322), P2 (p.4: end of text, close, signature &quot;Sidon&quot;)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/transcr/R7500.txt">R7500.txt</a></p><pre translate="no"># R7500  N. 47  Wien 14 Juli 1706 (close: &quot;W. d. 14 Jul / 1706&quot;)   docket/reply note top right of p.1 (other hand): &quot;R?ent[?] Paris[?] d. 25. July 1706.&quot; (cf. &quot;R?ent. d. 25 Juny&quot; on R7497)   images: P1 (p.1, fol. 321, &quot;N. 47&quot; + &quot;Monsieur&quot;), P3 (spread: P3a = p.2, P3b = p.3 fol. 322), P2 (p.4: end of text, close, signature &quot;Sidon&quot;)
 [P1 l.1] Ich fürchte, dass bey sonderbarer Entfer-
 [P1 l.2] nung die Kräffte nicht allzu richtig
 [P1 l.3] lauffen möchte, habe der 187. gesagt
@@ -4275,7 +4275,7 @@ Monsieur, your very humble and very obedient servant Sidon. Vienna, 3 July 1706.
 [P2 l.29] Mons.r
 [P2 l.30] (left) W. d. 14 Jul / 1706.   (right) Votre tres humble / et tres fidel serv. / Sidon
 ## No address leaf/docket image; receipt note top right of P1 (&quot;... d. 25. July 1706&quot;).</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7500.txt">R7500.txt</a></p><pre># R7500  N. 47  Wien 14 Juli 1706 (close: &quot;W. d. 14 Jul / 1706&quot;)   docket/reply note top right of p.1 (other hand): &quot;R?ent[?] Paris[?] d. 25. July 1706.&quot; (cf. &quot;R?ent. d. 25 Juny&quot; on R7497)   images: P1 (p.1, fol. 321, &quot;N. 47&quot; + &quot;Monsieur&quot;), P3 (spread: P3a = p.2, P3b = p.3 fol. 322), P2 (p.4: end of text, close, signature &quot;Sidon&quot;)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7500.txt">R7500.txt</a></p><pre translate="no"># R7500  N. 47  Wien 14 Juli 1706 (close: &quot;W. d. 14 Jul / 1706&quot;)   docket/reply note top right of p.1 (other hand): &quot;R?ent[?] Paris[?] d. 25. July 1706.&quot; (cf. &quot;R?ent. d. 25 Juny&quot; on R7497)   images: P1 (p.1, fol. 321, &quot;N. 47&quot; + &quot;Monsieur&quot;), P3 (spread: P3a = p.2, P3b = p.3 fol. 322), P2 (p.4: end of text, close, signature &quot;Sidon&quot;)
 [P1 l.1] Ich fürchte, dass bey sonderbarer Entfer-
 [P1 l.2] nung die Kräffte nicht allzu richtig
 [P1 l.3] lauffen möchte, habe der 187. gesagt
@@ -4403,7 +4403,7 @@ Monsieur, your very humble and very obedient servant Sidon. Vienna, 3 July 1706.
 [P2 l.29] Mons.r
 [P2 l.30] (left) W. d. 14 Jul / 1706.   (right) Votre tres humble / et tres fidel serv. / Sidon
 ## No address leaf/docket image; receipt note top right of P1 (&quot;... d. 25. July 1706&quot;).</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7500_reading.md">R7500_reading.md</a></p><pre># R7500 (N. 47), Vienna, 14 July 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7500_reading.md">R7500_reading.md</a></p><pre translate="no"># R7500 (N. 47), Vienna, 14 July 1706: the agent &quot;Sidon&quot; to Baron Schenck — reading
 
 Rests on: the decryption `reading/R7500.txt` (the transcription `transcr/R7500.txt` of 9 Oct 2026 with the codes and
 runs resolved), the letter table of `key.py` for the runs and the code values of `codes_key.json`. Written 23 Oct 2026
@@ -4454,7 +4454,7 @@ Womit [?verharre], Mons.r, Votre tres humble et tres fidel serv. Sidon. W. d. 14
 * P3b l.20 &quot;83.&quot; before the Latin tag (Ovid-like: &quot;choris epulisque vacat&quot;) may be a mark rather than the code; printed
   [83] (not valued as der Kayser here).
 * P1 ll.20-22 are rough in the transcription and partly illegible.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7500_en.md">R7500_en.md</a></p><pre># R7500 (N. 47), Vienna, 14 July 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/schenck1706/reading/R7500_en.md">R7500_en.md</a></p><pre translate="no"># R7500 (N. 47), Vienna, 14 July 1706: the agent &quot;Sidon&quot; to Baron Schenck — English
 
 Translation of `R7500_reading.md` (23 Oct 2026, r2m, Claude Opus 5.5), the reading of the decryption `R7500.txt`
 (clear German with Latin, three-figure codes, dotted signs and runs of the letter cipher). Same holes: `[187]` an
@@ -4494,7 +4494,7 @@ With which I [?remain], Monsieur, your very humble and very faithful servant Sid
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Archiwum Narodowe w Krakowie, via DECODE</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="bay1706.html" rel="prev">&larr; Bay to R&aacute;k&oacute;czi 1706 1706</a><a href="papai1706.html" rel="next">P&aacute;pai to R&aacute;k&oacute;czi 1706&ndash;10 1706&ndash;10 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

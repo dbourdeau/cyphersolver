@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">1166 &middot; 0352 &middot; 7031 &middot; 1515 &middot; 6147 &middot; 9699 &middot; 6699<br>Memorandum &middot; Lansing &middot; &uuml;berreicht &middot; . &middot; Meines Erachtens &middot; wird &middot; Vorgehen<br>4879 Bruch &middot; 7937 mit &middot; 4873 Vereinigten Staaten &middot; 2373 Wilson</div>
+  <div class="cipherstrip" translate="no">1166 &middot; 0352 &middot; 7031 &middot; 1515 &middot; 6147 &middot; 9699 &middot; 6699<br>Memorandum &middot; Lansing &middot; &uuml;berreicht &middot; . &middot; Meines Erachtens &middot; wird &middot; Vorgehen<br>4879 Bruch &middot; 7937 mit &middot; 4873 Vereinigten Staaten &middot; 2373 Wilson</div>
   <p class="kicker">Washington &rarr; Berlin &middot; two-part four-figure code &middot; 10 January 1917 &middot; key recovered from the printed text, partial</p>
   <h1>Bernstorff to Berlin, 10 January 1917: the code telegram the State Department carried</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_johann-heinrich-von-bernstorff.jpg" alt="Johann Heinrich von Bernstorff" title="Johann Heinrich von Bernstorff: Photograph, Bain News Service, 1908. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Johann Heinrich von Bernstorff</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_arthur-zimmermann.jpg" alt="Arthur Zimmermann" title="Arthur Zimmermann: Photograph, c. 1917-18. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Arthur Zimmermann</figcaption></figure></div><!-- /parties -->
@@ -88,7 +88,7 @@
 
 <h2 id="reading"><span class="num">04</span> Telegram No. 205</h2>
 <figure class="creveal" data-src="reveal/bernstorff1917.json"></figure>
-<p>The 82 base groups are in <code>codebook.tsv</code>, each with the positions that fix it and a grade (C: from the known plaintext and consistent at every occurrence; M: uncertain). 120 of the 147 groups of No. 205 have a value of their own. The passage below runs from &ldquo;Hierzu mu&szlig; aber jedenfalls&rdquo; to &ldquo;Davon abgesehen&rdquo;:</p>
+<p>The 82 base groups are in <code translate="no">codebook.tsv</code>, each with the positions that fix it and a grade (C: from the known plaintext and consistent at every occurrence; M: uncertain). 120 of the 147 groups of No. 205 have a value of their own. The passage below runs from &ldquo;Hierzu mu&szlig; aber jedenfalls&rdquo; to &ldquo;Davon abgesehen&rdquo;:</p>
 <blockquote><p>Hierzu mu&szlig; aber jedenfalls [der] hiesigen Regierung Zeit gelassen werden. Da alles [7918] von Wilson entschieden wird, ist Besprechung mit Lansing reine Formsache. Er antwortet niemals, bis er Instruktionen von Wilson hat. Im vorliegenden Fall mu&szlig; letzterer erst Denkschrift lesen.</p></blockquote>
 <p>&ldquo;For this, however, the government here must in any case be given time. Since everything is decided by Wilson, a discussion with Lansing is a mere formality. He never answers until he has instructions from Wilson. In the present case the latter must first read the memorandum.&rdquo; Bernstorff warns that acting on the memorandum will wreck Wilson&rsquo;s peace mediation and lead to a break with the United States unless Berlin waits for agreement in Washington, and suggests that Americans might be warned against serving on armed ships. Germany announced unrestricted U-boat warfare on 31 January 1917; the United States broke off relations on 3 February.</p>
 <p>The full German and English texts, with every hole marked, are given below under Full texts. Words in [?&hellip;] there come from the 1920 print and sit on runs of groups whose split is not fixed; they are not decoded from the groups.</p>
@@ -104,7 +104,7 @@
 <tr><td>&plusmn;2</td><td class="n">16/25</td><td class="n">2/25</td><td class="n">0/19, 0/16, 3/16</td><td class="n">0.10 / 0.32</td></tr>
 </tbody>
 </table>
-<p>No shuffle reached the observed score at any window (p &lt; 0.0005). The No. 212 control is the opening of Bernstorff&rsquo;s cipher telegram of 16 January 1917 from the same book. The letter-level statistical check (<code>docs/_validate.py</code>) returns &ldquo;underdetermined&rdquo;, as expected for a whole-word code with 1.38 tokens per type: swapping word values of equal length still yields German words, so the alignment test is the one that fits this code.</p>
+<p>No shuffle reached the observed score at any window (p &lt; 0.0005). The No. 212 control is the opening of Bernstorff&rsquo;s cipher telegram of 16 January 1917 from the same book. The letter-level statistical check (<code translate="no">docs/_validate.py</code>) returns &ldquo;underdetermined&rdquo;, as expected for a whole-word code with 1.38 tokens per type: swapping word values of equal length still yields German words, so the alignment test is the one that fits this code.</p>
 
 <h2 id="part2"><span class="num">06</span> The second text</h2>
 <p>Filling in the groups already fixed by No. 205 gives values to 69 of the 430 groups of the second text (16.0%), nearly all function words (ich, da&szlig;, hat, auf, f&uuml;r, Wilson, Friedens-). No sentence can be built and no plaintext is claimed. The second text opens <span class="c">6497 8511</span>, and the same pair recurs at groups 277&ndash;278 (with <span class="c">96497</span> and <span class="c">98511</span> elsewhere), perhaps a heading or a formula. The run <span class="c">8769 3865 2452</span> occurs twice (507&ndash;509, 512&ndash;514).</p>
@@ -127,7 +127,7 @@
 <h3>Telegram No. 205, Washington, 10 Jan 1917 (groups 0-146) <span class="st partial">read in part</span></h3>
 <p>Bernstorff reports that he has handed Lansing the German memorandum on armed merchant ships, and warns that acting on it will wreck Wilson&#x27;s peace mediation and bring a break with the United States unless Berlin waits until agreement is reached in Washington; since Wilson decides everything, he must first read the memorandum. Three weeks later Germany declared unrestricted U-boat warfare and the United States broke off relations.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (79% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/bernstorff1917/transcription.txt">transcription.txt</a></p><pre># Catalogue 657: Bernstorff to the Auswaertiges Amt, Washington 10 Jan 1917, sent by the State Department on 11 Jan 1917
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/bernstorff1917/transcription.txt">transcription.txt</a></p><pre translate="no"># Catalogue 657: Bernstorff to the Auswaertiges Amt, Washington 10 Jan 1917, sent by the State Department on 11 Jan 1917
 # as its telegram to the American Embassy in Berlin (&quot;Please deliver following cipher to Foreign Office&quot;).
 # Source: NARA RG 59, decimal file 763.72111/4443, microfilm M367 roll 166 (naId 27179174), frames 0785 (sheet &quot;1.&quot;)
 # and 0786 (sheet &quot;2.&quot;).
@@ -197,7 +197,7 @@
 0404 2880 9671 9505 8693 2509 6722 2380 5924 2600 2122 8327
 3126 3285 2194 5778 8379 92012 5857 10642 9076 52396 1787
 14873 7575 5893</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/bernstorff1917/decryption_tel205.txt">decryption_tel205.txt</a></p><pre># Catalogue 657, telegram No. 205 (groups 0-146): decryption line by line. Written by decode.py.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/bernstorff1917/decryption_tel205.txt">decryption_tel205.txt</a></p><pre translate="no"># Catalogue 657, telegram No. 205 (groups 0-146): decryption line by line. Written by decode.py.
 # Each line: group numbers | groups | value of each group from codebook.tsv (grade) | German as printed | note.
 # A group with no value of its own sits in a span whose split is not fixed (see align_205.tsv); [?] after a
 # group = doubtful reading of its figures. Value N+x = prefix figure N on base group x.
@@ -241,7 +241,7 @@
 132-137 | 4879 7937 4873 9076 8096 1026 | 4879=Bruch(C); 7937=mit(C); 4873=Vereinigten Staaten(C); 9076=für(C); 8096[?]=unvermeidlich(M); 1026=halte(C) | Bruch mit Vereinigten Staaten für unvermeidlich halte
 138-145 | 0545 4203 6986 6918 7437 61166 86699 9699 | 0545=[Komma](C); 4203=wenn(C); 6986=ohne weiteres(C); 6918=im(C); 7437=Sinne(C); 61166=6+Memorandum(C); 86699=8+Vorgehen(C); 9699=wird(C) | , wenn ohne weiteres im Sinne des Memorandums vorgegangen wird
 146-146 | 0278 | 0278=- | [Schluss / Bernstorff]? | end of telegram 205; part 2 starts at 147</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/bernstorff1917/reading_tel205.md">reading_tel205.md</a></p><pre># Telegram No. 205 (groups 0-146) as sentences, in German
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/bernstorff1917/reading_tel205.md">reading_tel205.md</a></p><pre translate="no"># Telegram No. 205 (groups 0-146) as sentences, in German
 
 Bernstorff to the Auswärtiges Amt, Washington, 10 Jan 1917. Word division, punctuation and spelling follow the text
 Bernstorff printed in 1920 (Deutschland und Amerika, pp. 325-326), against which the groups were aligned.
@@ -269,7 +269,7 @@ abgesehen, [?muß ich pflichtgemäß bestimmt erklären, daß ich] Bruch mit Ver
 halte, wenn ohne weiteres im Sinne des Memorandums vorgegangen wird.
 
 [0278]</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/bernstorff1917/translation_tel205.md">translation_tel205.md</a></p><pre># Telegram No. 205 (groups 0-146): English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/bernstorff1917/translation_tel205.md">translation_tel205.md</a></p><pre translate="no"># Telegram No. 205 (groups 0-146): English translation
 
 Our translation of `reading_tel205.md`, with the same holes. `[958]` = a group without a value; `[?words]` = the
 English of words that are taken from the 1920 print but not read from the groups. A published English translation
@@ -297,7 +297,7 @@ taken along the lines of the memorandum without further ado.
 <h3>Second text, groups 147-576 <span class="st stuck">decoded, not read</span></h3>
 <p>A second text in the same code, sent with No. 205. Lansing&#x27;s letter of 10 Jan 1917 (FRUS 1917 Supp. 1 doc. 75) says Bernstorff&#x27;s cipher message concerned the armament of Entente merchant ships and also the American note of 18 Dec 1916 on peace terms; this part is probably the second subject. Not confirmed.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/bernstorff1917/transcription.txt">transcription.txt</a></p><pre># Catalogue 657: Bernstorff to the Auswaertiges Amt, Washington 10 Jan 1917, sent by the State Department on 11 Jan 1917
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/bernstorff1917/transcription.txt">transcription.txt</a></p><pre translate="no"># Catalogue 657: Bernstorff to the Auswaertiges Amt, Washington 10 Jan 1917, sent by the State Department on 11 Jan 1917
 # as its telegram to the American Embassy in Berlin (&quot;Please deliver following cipher to Foreign Office&quot;).
 # Source: NARA RG 59, decimal file 763.72111/4443, microfilm M367 roll 166 (naId 27179174), frames 0785 (sheet &quot;1.&quot;)
 # and 0786 (sheet &quot;2.&quot;).
@@ -367,7 +367,7 @@ taken along the lines of the memorandum without further ado.
 0404 2880 9671 9505 8693 2509 6722 2380 5924 2600 2122 8327
 3126 3285 2194 5778 8379 92012 5857 10642 9076 52396 1787
 14873 7575 5893</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/bernstorff1917/decryption_part2.txt">decryption_part2.txt</a></p><pre># Catalogue 657, groups 147-576: the second text in the same code. Written by decode.py.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/bernstorff1917/decryption_part2.txt">decryption_part2.txt</a></p><pre translate="no"># Catalogue 657, groups 147-576: the second text in the same code. Written by decode.py.
 # Only groups whose base is fixed by telegram No. 205 are filled in; _ = unknown group. N+ = prefix figure.
 # No plaintext is claimed: no sentence can be built from these values.
 
@@ -471,13 +471,13 @@ known 69 of 430 groups (16.0%)</pre></details>
 <li>Johann Heinrich Graf von Bernstorff, <em>Deutschland und Amerika</em> (Berlin 1920), pp. 325&ndash;326 (telegram No. 205, the crib) and pp. 352&ndash;353 (No. 212, the control).</li>
 <li><em>Official German Documents relating to the World War</em> (Carnegie Endowment for International Peace, 1923), vol. II, p. 1017, no. 56 (No. 205 in English) and p. 881.</li>
 </ul>
-<p class="muted">Files: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/bernstorff1917">targets/bernstorff1917/</a> (notes, transcription of the 577 groups, <code>codebook.tsv</code> with the 82 recovered groups, the alignment, both decryptions, the printed crib and the control, <code>decode.py</code>). Contributed by WAINUT; reviewed for the site on 27 October 2026.</p>
+<p class="muted">Files: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/bernstorff1917">targets/bernstorff1917/</a> (notes, transcription of the 577 groups, <code translate="no">codebook.tsv</code> with the 82 recovered groups, the alignment, both decryptions, the printed crib and the control, <code translate="no">decode.py</code>). Contributed by WAINUT; reviewed for the site on 27 October 2026.</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; National Archives (NARA), RG 59, State Department decimal file 763.72111/4443, M367 roll 166, via the National Archives Catalog</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="numeric1916.html" rel="prev">&larr; Huang Xing numeric codes June&ndash;July 1916</a><a href="adfgvx.html" rel="next">ADFGVX 1918 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

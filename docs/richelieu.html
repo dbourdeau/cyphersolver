@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">11 16 19 ~25 29 10<br>14 19 24 11 29 ~25 34 20 27<br>40 16 37 24 27</div>
+  <div class="cipherstrip" translate="no">11 16 19 ~25 29 10<br>14 19 24 11 29 ~25 34 20 27<br>40 16 37 24 27</div>
   <p class="kicker">France · homophonic cipher with nomenclator · 1629</p>
   <h1>Richelieu to Monsieur de Rancé</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_cardinal-richelieu.jpg" alt="Cardinal Richelieu" title="Cardinal Richelieu: Portrait by Philippe de Champaigne, 1633–40. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Cardinal Richelieu</figcaption></figure></div><!-- /parties -->
@@ -122,7 +122,7 @@ neighbouring letters in the same cipher.</p>
 <h2 id="decipherment"><span class="num">03</span> Decipherment</h2>
 <figure class="creveal" data-src="reveal/richelieu.json"></figure>
 <p class="legend"><span><span class="c">Red</span> = was in cipher</span><span><span class="k">Blue</span> = nomenclature code</span><span>Plain = in clear in the original</span></p>
-<p>The text is the running reading of 23 October 2026 (<code>texts/ff87-89_reading.md</code>, English <code>ff87-89_en.md</code>): Avenel&rsquo;s clear text (<i>Lettres de Richelieu</i> III, nos. CXCIX and CCV), transcribed in full from the page images with his printed figures, every figure run decoded with the key recovered here, and the ciphered words given in the figures&rsquo; spelling. Three places were checked on the DECODE scans: Avenel misprints a 16 in &ldquo;menée au&rdquo; (the original lacks a figure there, written [?au]) and leaves out &ldquo;et 52&rdquo; on f. 89v, so Richelieu proposed Brassac to the King <i>and the Queen Mother</i>. Avenel&rsquo;s &ldquo;il (elle)&rdquo; marks a pronoun he corrected.</p>
+<p>The text is the running reading of 23 October 2026 (<code translate="no">texts/ff87-89_reading.md</code>, English <code translate="no">ff87-89_en.md</code>): Avenel&rsquo;s clear text (<i>Lettres de Richelieu</i> III, nos. CXCIX and CCV), transcribed in full from the page images with his printed figures, every figure run decoded with the key recovered here, and the ciphered words given in the figures&rsquo; spelling. Three places were checked on the DECODE scans: Avenel misprints a 16 in &ldquo;menée au&rdquo; (the original lacks a figure there, written [?au]) and leaves out &ldquo;et 52&rdquo; on f. 89v, so Richelieu proposed Brassac to the King <i>and the Queen Mother</i>. Avenel&rsquo;s &ldquo;il (elle)&rdquo; marks a pronoun he corrected.</p>
 
 <h3>3.1 Letter of 7 July 1629 (f. 87), French</h3>
 <blockquote>
@@ -211,7 +211,7 @@ as a convenience for anyone meeting the same cipher in Richelieu's 1629 correspo
 
 <h2 id="try"><span class="num">06</span> Try the key</h2>
 <div id="decoder">
-<p>Paste cipher groups separated by spaces or semicolons (e.g. <code>11 16 19 ~25 29 10</code>). Use <code>~</code> before a number for the doubling mark.
+<p>Paste cipher groups separated by spaces or semicolons (e.g. <code translate="no">11 16 19 ~25 29 10</code>). Use <code translate="no">~</code> before a number for the doubling mark.
 Each group is shown with its letter written above it; <span class="k">blue</span> = nomenclature code.</p>
 <textarea id="cin">11;16;19;~25;29;10 pour 14;19;24;11;29;~25;34;20;27 40 16;37;24;27</textarea>
 <button onclick="decode()">Decipher</button>
@@ -250,7 +250,7 @@ addEventListener('DOMContentLoaded',decode);
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>ff. 87 and 89 (7 and mid-July 1629), recovered key applied</h3>
 <p>Richelieu to M. de Rancé, July 1629: the King&#x27;s anger at Bonneuil, a wish that the Duchesse de Chevreuse be seized near the frontier and taken to Vincennes, the cabals of Lorraine with Spain; and in mid-July the stalled peace with England, Henrietta Maria&#x27;s French bishop and priests, and Brassac proposed for the Rome embassy.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/richelieu/richelieu1629.txt">richelieu1629.txt</a></p><pre>#Cleartext is only partially transcribed.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/richelieu/richelieu1629.txt">richelieu1629.txt</a></p><pre translate="no">#Cleartext is only partially transcribed.
 #See S.Tomokiyo, &quot;Unsolved Historical Ciphers&quot; at https://cryptiana.web.fc2.com/code/unsolved.htm
 
 # Richelieu1629(BnFfr3829f87).png
@@ -294,7 +294,7 @@ jay_propose_au_roy;Mr_de;11;16;19;~25;29;10;pour;14;19;24;11;29;~25;34;20;27;
 trouver_ledict_Sr_de;11;16;19;~25;29;10;
 31;30;18;52;de;luy;
 20;27;25;24;30;26;11;14;30;25;qui;luy;sont;necessaire;pour;24;11;34;~25;29;20;27;</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/richelieu/texts/ff87-89_decryption.md">ff87-89_decryption.md</a></p><pre># Richelieu to M. de Rancé, July 1629 (BnF fr. 3829 ff. 87, 89): decryption of the cryptiana transcription
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/richelieu/texts/ff87-89_decryption.md">ff87-89_decryption.md</a></p><pre translate="no"># Richelieu to M. de Rancé, July 1629 (BnF fr. 3829 ff. 87, 89): decryption of the cryptiana transcription
 
 Output of `python final.py` in this folder (the recovered key applied to `richelieu1629.txt`), saved 22 Oct 2026; regenerated 23 Oct 2026 with figure 39 = et (Avenel; was a). Cipher letters run together as in the source; clear words are spaced; {..} = nomenclator codes; [n] = unvalued group. The partial clear text is Tomokiyo&#x27;s transcription as given.
 
@@ -340,7 +340,7 @@ derole vous scaurez de {la Reine mère} sil aura agreable
 iet{la Reine mère} de  luy 
 desmeubles qui  luy  sont  necessaire  pour mbassade
 ```</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/richelieu/texts/ff87-89_avenel_figures.txt">ff87-89_avenel_figures.txt</a></p><pre># Richelieu to M. de Rancé, July 1629 (BnF fr. 3829 ff. 87, 89 = old Béthune 9323): Avenel&#x27;s printed text with his figures
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/richelieu/texts/ff87-89_avenel_figures.txt">ff87-89_avenel_figures.txt</a></p><pre translate="no"># Richelieu to M. de Rancé, July 1629 (BnF fr. 3829 ff. 87, 89 = old Béthune 9323): Avenel&#x27;s printed text with his figures
 # Transcribed 23 Oct 2026 (re-reading, batch b33) from the page images of Avenel, Lettres, instructions diplomatiques et
 # papiers d&#x27;État du cardinal de Richelieu, t. III (Paris 1858), pp. 368-369 (no. CXCIX) and 381-383 (no. CCV), Google Books
 # id OIQItRIybmIC (Internet Archive bub_gb_OIQItRIybmIC). Avenel prints the original&#x27;s cipher figures in place, with his
@@ -372,7 +372,7 @@ J&#x27;ay proposé au roy Mr de [11 16 19 ~25 29 10] pour [14 19 24 11 29 ~25 34
 # l&#x27;Angleterre. 7 La reine mère. 8 L&#x27;évesque et les prestres. 9 Près d&#x27;elle. 10 Donner d&#x27;autres François que. 11 Près d&#x27;elle. 12 Une lettre
 # secrète. 13 Vantelet. 14 La lettre de la reine mère. 15 Ne le dire qu&#x27;à sa maîtresse. 16 Le dira aux. 17 Doit désirer. | p. 383: 1 A
 # souhaiter que cette paix se face et. 2 Brassac pour l&#x27;ambassade de Rome. 3 La reine mère. 4 Brassac. 5 Au roy. 6 Des meubles. 7 Ambassade.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/richelieu/texts/ff87-89_reading.md">ff87-89_reading.md</a></p><pre># Richelieu to M. de Rancé, 7 July and mid-July 1629 (BnF fr. 3829 ff. 87, 89): reading
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/richelieu/texts/ff87-89_reading.md">ff87-89_reading.md</a></p><pre translate="no"># Richelieu to M. de Rancé, 7 July and mid-July 1629 (BnF fr. 3829 ff. 87, 89): reading
 
 Rests on Avenel&#x27;s printed text (Lettres de Richelieu III, 1858, nos. CXCIX and CCV), transcribed in full with his
 figures in `ff87-89_avenel_figures.txt`. Every figure run was decoded with the recovered key (`key.md`) and agrees
@@ -412,7 +412,7 @@ On a fort bien fait d&#x27;envoyer Mr d&#x27;Ebeuf en Picardie, et tous les gouv
 {La reyne mère} peut passer jusques là de dire qu&#x27;il (elle) peut l&#x27;asseurer qu&#x27;outre *l&#x27;evesque et les pretres* qui doivent estre *pres d&#x27;elle* il ne voit pas qu&#x27;on ait dessein de luy *donner d&#x27;autres François que* ceux qui sont *pres d&#x27;ele*; mais il faut que ce soit *une lettre secrete*, ou bien le dire en grande confiance à *Vantelet* qui aura créance par *la letre de* {la reyne mère}, ce que j&#x27;estime plus à propos; luy recommandant de *ne le dire qu&#x27;à sa maitresse*; et cependant il *le dira aus* autres, qui est ce qu&#x27;on *doit desirer*. Il est *à souhaiter que* cette *pais se face et* promptement.
 
 J&#x27;ay proposé au roy Mr de *Brassac* pour *l&#x27;ambassade de Rome*. Vous sçaurez de {la reyne mère} s&#x27;il (si elle) aura agréable cette proposition; et, au cas qu&#x27;il (elle) l&#x27;agrée, vous irez trouver ledit Sr de *Brassac*, et luy direz la proposition que j&#x27;ai faite à {le roy} *et* {la reyne mère} de luy, en ceste occasion, et que si c&#x27;est chose qu&#x27;il désire, il peut dès ceste heure, s&#x27;asseurer *des meubles* qui luy sont nécessaires pour cet *ambassade*.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/richelieu/texts/ff87-89_reading.md">ff87-89_reading.md</a></p><pre># Richelieu to M. de Rancé, 7 July and mid-July 1629 (BnF fr. 3829 ff. 87, 89): reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/richelieu/texts/ff87-89_reading.md">ff87-89_reading.md</a></p><pre translate="no"># Richelieu to M. de Rancé, 7 July and mid-July 1629 (BnF fr. 3829 ff. 87, 89): reading
 
 Rests on Avenel&#x27;s printed text (Lettres de Richelieu III, 1858, nos. CXCIX and CCV), transcribed in full with his
 figures in `ff87-89_avenel_figures.txt`. Every figure run was decoded with the recovered key (`key.md`) and agrees
@@ -452,7 +452,7 @@ On a fort bien fait d&#x27;envoyer Mr d&#x27;Ebeuf en Picardie, et tous les gouv
 {La reyne mère} peut passer jusques là de dire qu&#x27;il (elle) peut l&#x27;asseurer qu&#x27;outre *l&#x27;evesque et les pretres* qui doivent estre *pres d&#x27;elle* il ne voit pas qu&#x27;on ait dessein de luy *donner d&#x27;autres François que* ceux qui sont *pres d&#x27;ele*; mais il faut que ce soit *une lettre secrete*, ou bien le dire en grande confiance à *Vantelet* qui aura créance par *la letre de* {la reyne mère}, ce que j&#x27;estime plus à propos; luy recommandant de *ne le dire qu&#x27;à sa maitresse*; et cependant il *le dira aus* autres, qui est ce qu&#x27;on *doit desirer*. Il est *à souhaiter que* cette *pais se face et* promptement.
 
 J&#x27;ay proposé au roy Mr de *Brassac* pour *l&#x27;ambassade de Rome*. Vous sçaurez de {la reyne mère} s&#x27;il (si elle) aura agréable cette proposition; et, au cas qu&#x27;il (elle) l&#x27;agrée, vous irez trouver ledit Sr de *Brassac*, et luy direz la proposition que j&#x27;ai faite à {le roy} *et* {la reyne mère} de luy, en ceste occasion, et que si c&#x27;est chose qu&#x27;il désire, il peut dès ceste heure, s&#x27;asseurer *des meubles* qui luy sont nécessaires pour cet *ambassade*.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/richelieu/texts/ff87-89_en.md">ff87-89_en.md</a></p><pre># Richelieu to M. de Rancé, 7 July and mid-July 1629 (BnF fr. 3829 ff. 87, 89): English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/richelieu/texts/ff87-89_en.md">ff87-89_en.md</a></p><pre translate="no"># Richelieu to M. de Rancé, 7 July and mid-July 1629 (BnF fr. 3829 ff. 87, 89): English
 
 Translation of `ff87-89_reading.md` (Avenel 1858, nos. CXCIX and CCV, checked figure by figure with the recovered key).
 Ciphered passages in *italics*; `{...}` = nomenclator figures.
@@ -490,7 +490,7 @@ It was very well done to send Mr d&#x27;Elbeuf to Picardy, and all the governors
 I have proposed to the King Mr de *Brassac* for *the embassy to Rome*. You will learn from {the Queen Mother} whether she approves of this proposal; and if she approves, you will go and find the said Sieur de *Brassac* and tell him of the proposal I have made to {the King} *and* {the Queen Mother} concerning him on this occasion, and that if it is something he wishes, he can from this moment provide himself *with the furniture* he needs for this *embassy*.</pre></details>
 <h3>ff. 87 and 89, Avenel&#x27;s printed text (1858)</h3>
 <p>The same two letters as printed by Avenel (Lettres de Richelieu III, nos. CXCIX and CCV), which agree with the key recovered here.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/richelieu/richelieu1629.txt">richelieu1629.txt</a></p><pre>#Cleartext is only partially transcribed.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/richelieu/richelieu1629.txt">richelieu1629.txt</a></p><pre translate="no">#Cleartext is only partially transcribed.
 #See S.Tomokiyo, &quot;Unsolved Historical Ciphers&quot; at https://cryptiana.web.fc2.com/code/unsolved.htm
 
 # Richelieu1629(BnFfr3829f87).png
@@ -534,7 +534,7 @@ jay_propose_au_roy;Mr_de;11;16;19;~25;29;10;pour;14;19;24;11;29;~25;34;20;27;
 trouver_ledict_Sr_de;11;16;19;~25;29;10;
 31;30;18;52;de;luy;
 20;27;25;24;30;26;11;14;30;25;qui;luy;sont;necessaire;pour;24;11;34;~25;29;20;27;</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/richelieu/texts/ff87-89_avenel_figures.txt">ff87-89_avenel_figures.txt</a></p><pre># Richelieu to M. de Rancé, July 1629 (BnF fr. 3829 ff. 87, 89 = old Béthune 9323): Avenel&#x27;s printed text with his figures
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/richelieu/texts/ff87-89_avenel_figures.txt">ff87-89_avenel_figures.txt</a></p><pre translate="no"># Richelieu to M. de Rancé, July 1629 (BnF fr. 3829 ff. 87, 89 = old Béthune 9323): Avenel&#x27;s printed text with his figures
 # Transcribed 23 Oct 2026 (re-reading, batch b33) from the page images of Avenel, Lettres, instructions diplomatiques et
 # papiers d&#x27;État du cardinal de Richelieu, t. III (Paris 1858), pp. 368-369 (no. CXCIX) and 381-383 (no. CCV), Google Books
 # id OIQItRIybmIC (Internet Archive bub_gb_OIQItRIybmIC). Avenel prints the original&#x27;s cipher figures in place, with his
@@ -566,7 +566,7 @@ J&#x27;ay proposé au roy Mr de [11 16 19 ~25 29 10] pour [14 19 24 11 29 ~25 34
 # l&#x27;Angleterre. 7 La reine mère. 8 L&#x27;évesque et les prestres. 9 Près d&#x27;elle. 10 Donner d&#x27;autres François que. 11 Près d&#x27;elle. 12 Une lettre
 # secrète. 13 Vantelet. 14 La lettre de la reine mère. 15 Ne le dire qu&#x27;à sa maîtresse. 16 Le dira aux. 17 Doit désirer. | p. 383: 1 A
 # souhaiter que cette paix se face et. 2 Brassac pour l&#x27;ambassade de Rome. 3 La reine mère. 4 Brassac. 5 Au roy. 6 Des meubles. 7 Ambassade.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/richelieu/texts/ff87-89_decryption_avenel.md">ff87-89_decryption_avenel.md</a></p><pre># Richelieu to M. de Rancé, July 1629: the reading after Avenel 1858
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/richelieu/texts/ff87-89_decryption_avenel.md">ff87-89_decryption_avenel.md</a></p><pre translate="no"># Richelieu to M. de Rancé, July 1629: the reading after Avenel 1858
 
 Copied verbatim from SOLUTION.md (&quot;Reading&quot; section), 22 Oct 2026: Avenel&#x27;s printed text (Lettres de Richelieu III, 1858, nos. CXCIX and CCV), with the codes resolved; ciphered words in italics.
 
@@ -602,7 +602,7 @@ Copied verbatim from SOLUTION.md (&quot;Reading&quot; section), 22 Oct 2026: Ave
 
 &quot;Elle&quot; / &quot;sa maistresse&quot; = Henrietta Maria, Queen of England (Louis XIII&#x27;s sister), whose French bishop
 and priests had been expelled by Charles I — the peace of Susa (24 Apr 1629) was being finalised.</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/richelieu/texts/ff87-89_reading.md">ff87-89_reading.md</a></p><pre># Richelieu to M. de Rancé, 7 July and mid-July 1629 (BnF fr. 3829 ff. 87, 89): reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/richelieu/texts/ff87-89_reading.md">ff87-89_reading.md</a></p><pre translate="no"># Richelieu to M. de Rancé, 7 July and mid-July 1629 (BnF fr. 3829 ff. 87, 89): reading
 
 Rests on Avenel&#x27;s printed text (Lettres de Richelieu III, 1858, nos. CXCIX and CCV), transcribed in full with his
 figures in `ff87-89_avenel_figures.txt`. Every figure run was decoded with the recovered key (`key.md`) and agrees
@@ -642,7 +642,7 @@ On a fort bien fait d&#x27;envoyer Mr d&#x27;Ebeuf en Picardie, et tous les gouv
 {La reyne mère} peut passer jusques là de dire qu&#x27;il (elle) peut l&#x27;asseurer qu&#x27;outre *l&#x27;evesque et les pretres* qui doivent estre *pres d&#x27;elle* il ne voit pas qu&#x27;on ait dessein de luy *donner d&#x27;autres François que* ceux qui sont *pres d&#x27;ele*; mais il faut que ce soit *une lettre secrete*, ou bien le dire en grande confiance à *Vantelet* qui aura créance par *la letre de* {la reyne mère}, ce que j&#x27;estime plus à propos; luy recommandant de *ne le dire qu&#x27;à sa maitresse*; et cependant il *le dira aus* autres, qui est ce qu&#x27;on *doit desirer*. Il est *à souhaiter que* cette *pais se face et* promptement.
 
 J&#x27;ay proposé au roy Mr de *Brassac* pour *l&#x27;ambassade de Rome*. Vous sçaurez de {la reyne mère} s&#x27;il (si elle) aura agréable cette proposition; et, au cas qu&#x27;il (elle) l&#x27;agrée, vous irez trouver ledit Sr de *Brassac*, et luy direz la proposition que j&#x27;ai faite à {le roy} *et* {la reyne mère} de luy, en ceste occasion, et que si c&#x27;est chose qu&#x27;il désire, il peut dès ceste heure, s&#x27;asseurer *des meubles* qui luy sont nécessaires pour cet *ambassade*.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/richelieu/texts/ff87-89_en.md">ff87-89_en.md</a></p><pre># Richelieu to M. de Rancé, 7 July and mid-July 1629 (BnF fr. 3829 ff. 87, 89): English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/richelieu/texts/ff87-89_en.md">ff87-89_en.md</a></p><pre translate="no"># Richelieu to M. de Rancé, 7 July and mid-July 1629 (BnF fr. 3829 ff. 87, 89): English
 
 Translation of `ff87-89_reading.md` (Avenel 1858, nos. CXCIX and CCV, checked figure by figure with the recovered key).
 Ciphered passages in *italics*; `{...}` = nomenclator figures.
@@ -700,7 +700,7 @@ the transcription <a href="https://cryptiana.web.fc2.com/code/richelieu1629.txt"
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Manuscript rights: Biblioth&egrave;que nationale de France</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="r1874.html" rel="prev">&larr; Mocenigo 1628 1628</a><a href="bethune1629.html" rel="next">Louis XIII to Philippe de Béthune, 30&hellip; 1629 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

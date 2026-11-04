@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-<div class="cipherstrip">4037224023132338173125962831 &nbsp;&rarr;&nbsp; sia stata procurata con veleno da Spagnoli &middot; 40 s &middot; 37 i &middot; 22 a &middot; 96 Spagnoli</div>
+<div class="cipherstrip" translate="no">4037224023132338173125962831 &nbsp;&rarr;&nbsp; sia stata procurata con veleno da Spagnoli &middot; 40 s &middot; 37 i &middot; 22 a &middot; 96 Spagnoli</div>
 <p class="kicker">Mantua &rarr; the duc de Nevers &middot; homophonic cipher of two-digit figures with a nomenclator &middot; 17 September 1590</p>
 <h1>Vincenzo Gonzaga, Duke of Mantua, to the duc de Nevers</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_vincenzo-i-gonzaga.jpg" alt="Vincenzo I Gonzaga" title="Vincenzo I Gonzaga: Portrait by Frans Pourbus the Younger. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Vincenzo I Gonzaga</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_duke-of-nevers.jpg" alt="Duke of Nevers" title="Duke of Nevers: Portrait of Louis de Gonzague, duc de Nevers. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Duke of Nevers</figcaption></figure></div><!-- /parties -->
@@ -95,14 +95,14 @@
 <li><b>Prior work.</b> DECODE (no decryption on the record, cipher type unknown) and Tomokiyo&rsquo;s <em>nevers.htm</em>. Tomokiyo lists the key, not this letter. No earlier decipherment was found.</li>
 <li><b>Key.</b> Tomokiyo&rsquo;s description of no. 35 pointed to fr. 3995 f. 64, which was transcribed from the Gallica image.</li>
 <li><b>Transcription.</b> The digit runs were transcribed from the DECODE high-resolution strips: f. 92r in the main session, ff. 92v and 93r by two sub-agents. Unseparated figures lose their pairing whenever a digit is misread.</li>
-<li><b>Decoding.</b> A decoder (<code>beam.py</code>) divides the digits into pairs and scores the candidate texts with the project&rsquo;s <code>it-cinquecento</code> language model. It tries the alternatives 3/9, 0/8, 7/8 and 27/28 where the hand makes them look alike. The values of the graphic signs were then taken from the key sheet.</li>
+<li><b>Decoding.</b> A decoder (<code translate="no">beam.py</code>) divides the digits into pairs and scores the candidate texts with the project&rsquo;s <code translate="no">it-cinquecento</code> language model. It tries the alternatives 3/9, 0/8, 7/8 and 27/28 where the hand makes them look alike. The values of the graphic signs were then taken from the key sheet.</li>
 <li><b>Retry.</b> The doubtful lines were transcribed again at triple scale and decoded again. This recovered most of ff. 92v and 93r.</li>
 <li><b>Blind re-transcription.</b> Every open stretch was then transcribed again at four times scale by a sub-agent that had not seen the earlier digits, and the two versions compared. This gave <em>contro cotesto Regno di Francia</em>, <em>tutti i buoni Italiani</em>, <em>anichilata cotesta potenza</em>, <em>si vede chiaramente</em>, <em>far riverenza per me</em> and <em>in quello</em>, and confirmed <em>sottoporsi</em> as written: 56 more tokens.</li>
 <li><b>Second image.</b> The BnF microfilm of fr. 3979 on Gallica (btv1b9060544v, views 160&ndash;162) was used to check every open stretch. On f. 93r the q-like sign is the key&rsquo;s &#9792; <em>non</em> and the next ● <em>che</em>, and the microfilm gives 14 35 31 38 <em>hora</em>: <em>s&igrave; come non h&ograve; mancato in quello che h&ograve; potuto sin hora</em>, 15 more tokens.</li>
 </ol>
 
 <h2 id="what-remains"><span class="num">04</span> What remains</h2>
-<p>45 of 923 tokens are open (measured from the transcriptions; <code>reading.md</code>). Each stretch was transcribed again independently at four times scale twice, and again on the Gallica microfilm, without a fit:</p>
+<p>45 of 923 tokens are open (measured from the transcriptions; <code translate="no">reading.md</code>). Each stretch was transcribed again independently at four times scale twice, and again on the Gallica microfilm, without a fit:</p>
 <ul>
 <li>f. 92r, line 5: about 10 tokens (<em>la nda a a di</em>) before <em>S. Ecc.za</em>.</li>
 <li>f. 92r, line 8: about 27 tokens in the middle, including 26 Inglesi. Probably the writer&rsquo;s own slips; a search allowing any one digit to be changed finds no Italian.</li>
@@ -116,7 +116,7 @@
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>BnF fr. 3979 ff. 92-93, Vincenzo Gonzaga to Nevers, Mantua, 17 Sept 1590</h3>
 <p>Vincenzo I Gonzaga, Duke of Mantua, writes to his uncle Louis de Gonzague, duc de Nevers: he reports the rumour that Sixtus V was poisoned by the Spaniards, welcomes Henri IV&#x27;s expected conversion, and assures Nevers (for the King) of his devotion to the French crown against the &#x27;common enemy&#x27;, a guarded pro-Bourbon declaration of September 1590. Deciphered with Nevers cipher no. 35 (BnF fr. 3995 f. 64).</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1590/ct_92r.txt">ct_92r.txt</a></p><pre># BnF fr. 3979 f. 92r (DECODE R4176 images P2-P4). Transcribed from the DECODE scans at 3x.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1590/ct_92r.txt">ct_92r.txt</a></p><pre translate="no"># BnF fr. 3979 f. 92r (DECODE R4176 images P2-P4). Transcribed from the DECODE scans at 3x.
 # after &quot;che la morte del Papa&quot;
 p1l1 | 40372240231323381731259628312222338362516241530361639212296
 # decode: sia stata procurata con veleno da [96 Spagnoli]
@@ -161,7 +161,7 @@ p1l8 | 273422213330381831381621152022222132{che}15233133303833332438322115223336
 # was: 27342221333038381831383816221115201522222132{che}1523313330383833332438322115223336222132223623262215223315402333339720
 # note: re-read at 3x (y≈1200): 38 18 31 38 16 21 15 20 22 22 = &quot;a grandeza a&quot; (one 20 only, as written); 33 in 21 33 30 38 probably the scribe&#x27;s 36 (e): &quot;della&quot;. End re-read 39 72 84 (Regno di Francia), not 33 97 20. Middle 15 23 31 33 30 38 38 33 33 24 38 32 21 15 22 33 36 22 21 32 22 36 23 [26] 22 15 22 33 15 40 23 33 39 still nonsense (etr-la-acqu-ati de acce a di acet [Inglesi] ae a qu est co); 33 = q throughout (key has no q), so &quot;a qu[e]sto Regno di Francia&quot; at the end.
 # decode: [u]ia d[e]lla grandeza a di {che} [e tr.la acqu.. ati de acce a di acet (26 Inglesi) ae] a qu[e]sto [72 Regno di] [84 Francia]</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1590/ct_92v.txt">ct_92v.txt</a></p><pre># f. 92v (IMG_R4176_I24620_P5 overview; strips P7 = l1-l5, P8 = l6-l8)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1590/ct_92v.txt">ct_92v.txt</a></p><pre translate="no"># f. 92v (IMG_R4176_I24620_P5 overview; strips P7 = l1-l5, P8 = l6-l8)
 # passage 1: after &quot;dell&#x27;altra lega, cose tutte&quot; ; ends before clear &quot;Mi è piaciuto infinitamente intendere che quello&quot;
 p92vl1 | {0Δ}{●-θ-}32162315313640152137402313232530132115243516391217
 p92vl2 | 3131324035302415313622363931153115301312393123281638{T}{4-sign}36251115123816393327
@@ -177,7 +177,7 @@ p92vl7 | {●-}323060
 # passage 3: after &quot;nel parti S.&quot;; clear &quot;ò ò sia stato menzognero&quot; follows
 p92vl8 | {T}112516403218163931
 # decode: {T} Monsignor -&gt; &quot;{T} Monsignor ... sia stato menzognero&quot;</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1590/ct_93r.txt">ct_93r.txt</a></p><pre># f. 93r (img/IMG_R4176_I24620_P10.jpg; overview P9). P11 = lower half, clear text only; P13/P14 belong to other pages (no cipher).
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1590/ct_93r.txt">ct_93r.txt</a></p><pre translate="no"># f. 93r (img/IMG_R4176_I24620_P10.jpg; overview P9). P11 = lower half, clear text only; P13/P14 belong to other pages (no cipher).
 # Clear text before: &quot;... presupongo che questa mia la trouerà&quot;  |  after: &quot;Hò una lite in Milano di molta importanza ...&quot;
 # Signs: {circle-plus} = circle with cross; {bar-circle} = small circle on a horizontal bar; {T-sign} = T/Γ with hooked foot;
 #        {box-sign} = square with a vertical stroke rising from it (like ь); {blot-sign} = inked blob with bar (l10); {q-sign} = q-like 9 with descender standing apart (l4).
@@ -217,7 +217,7 @@ p93l11 | 361437383113111516233621222118303237712152334
 # note (pass 2): l2 middle re-read at 3x, digits still do not give a word; &quot;far riverenza per me&quot; fits the sense but is not in the digits as seen. l5 &quot;14 9 35 32 30 80&quot; after &quot;sin&quot; (hora?) still unread. l8 re-read: 36 25 16 23 [39 13 53 23 0] reads best as 31 35 32 30 (&quot;contro il&quot;), then 4 looped glyphs (5? 8 8 8, dotted) = a code group before 36 25 11 24 16 15 &quot;comune&quot;; left as transcribed.
 # decode: presso {⊕ S. M.tà} alla quale la priego far riverenza {θ per} me con certificarla della otima (a) mia volontà verso il suo Re, al servitio {Γ di} {● che} si come {♀ non} ho mancato in quello {sign: che} ho potuto sin hora {Γ di} darne c[..] parte, e si stia sicura la {⊕ S. M.tà} {θ per} oltre la mia particolar inclinatione e verso cotesta corona {⌊ et} parimente la con {⊕ S. M.tà} gli interesi contro il [code, 58/81/88?] comune nemico me le renderà sempre devotissimo servitore come a tempo {⌊ et} luogo conveniente {●} conoscerà chiaramente da gli effetti.
 # was-decode: presso(?) {circle-plus} alla ... la piego far ... {bar-circle} me concertifi|carlo della ottima ... volontà verso il suo Re al servitio {T-sign}{bar-circle} si come {q-sign} ho man(cato/dato) ... con ... e lo {bar-circle} ho potuto sin hora ... {T-sign} darne ca... parle o si sta sicuri la {circle-plus}{bar-circle} oltre la mia particolar inclinatione e verso cotesta corona {box-sign} pa(ri)mente la con {circle-plus} gli interessi contro il ... comune nemico me le renderà sempre devotissimo servitore come a tempo {box-sign} luogo conveniente {blot-sign} conoscerà chiaramente da gli effetti.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1590/reading.md">reading.md</a></p><pre># Vincenzo Gonzaga to Nevers, Mantua 17 Sept 1590 (BnF fr. 3979 ff. 92–93): working reading
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1590/reading.md">reading.md</a></p><pre translate="no"># Vincenzo Gonzaga to Nevers, Mantua 17 Sept 1590 (BnF fr. 3979 ff. 92–93): working reading
 
 Clear text is plain, deciphered passages are **bold**, `[..]` marks a piece still unread, `[?]` a doubtful
 word. Code words and signs are resolved from the key (fr. 3995 f. 64) and shown in the reading. The spelling is the
@@ -311,7 +311,7 @@ Unread pieces (each re-read independently at 4x twice; blocker: illegible, write
 - 93r l4 middle: read. The q-like sign is the key&#x27;s ♀ = non and the ● after it = che: &quot;sì come non hò mancato in quello che hò potuto sin hora&quot; (digits 14 35 11 13 16 36 38 23 33 35, one stray 33, writer&#x27;s slip). (The rest was read from the Gallica microfilm, btv1b9060544v f162: 36 38, not 36 30, gives &quot;mancato&quot; with one stray 33.)
 - 93r l5: read from the Gallica microfilm (btv1b9060544v f162) as 14 35 31 38 &quot;hora&quot;; no longer unread.
 - 93r l8 (~2): a looped, dotted code group before &quot;comune nemico&quot;.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1590/f92_en.md">f92_en.md</a></p><pre># Vincenzo Gonzaga to Nevers, Mantua 17 Sept 1590 (BnF fr. 3979 ff. 92-93): English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1590/f92_en.md">f92_en.md</a></p><pre translate="no"># Vincenzo Gonzaga to Nevers, Mantua 17 Sept 1590 (BnF fr. 3979 ff. 92-93): English translation
 
 Translation (Claude Opus 5.5, 23 Oct 2026) of the working reading `reading.md` (clear text with the deciphered
 passages, key BnF fr. 3995 f. 64). Deciphered passages are **bold**, as in the reading. Same holes: `[..]` a piece
@@ -391,7 +391,7 @@ Florence; I kiss your hands, praying God for a long and happy course of life for
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Biblioth&egrave;que nationale de France</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="champagne1590.html" rel="prev">&larr; Champagne 1590 1590</a><a href="sega1590.html" rel="next">Filippo Sega, Paris 1590&ndash;91 1590&ndash;1591 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

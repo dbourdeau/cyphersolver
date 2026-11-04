@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-  <div class="cipherstrip">China quest whether transportation in reach what is if bully imboden by to forward &hellip;<br>If your information as to Imboden is confirmed, let me know by what route you shall try to reach him &hellip;</div>
+  <div class="cipherstrip" translate="no">China quest whether transportation in reach what is if bully imboden by to forward &hellip;<br>If your information as to Imboden is confirmed, let me know by what route you shall try to reach him &hellip;</div>
   <p class="kicker">Union telegrams to General Milroy &middot; Stager Cipher No. 7, word route transposition &middot; 1861&ndash;62 &middot; known key applied</p>
   <h1>The Milroy telegrams, 1861&ndash;62</h1>
   <p class="sub">Two Civil War telegrams enciphered by writing words into six columns in a set route, solved by Richard Bean in 2026; two of their routes checked here on Milroy&rsquo;s own copy.</p>
@@ -68,7 +68,7 @@
 
 <h2 id="the-telegrams"><span class="num">01</span> The telegrams</h2>
 <p>The Cox telegram, as Milroy&rsquo;s copy gives it, is a run of ordinary English words in the wrong order, with an indicator word in front (&ldquo;China&rdquo;) and a few words that are nulls or code words:</p>
-<pre>China quest whether transportation in reach what is if bully imboden
+<pre translate="no">China quest whether transportation in reach what is if bully imboden
 by to forward Jrsisert also are Cumberland hole that the will the him
 route confirmed your health information let you also morsefield supply
 roads with stine at connection's for co your far try know w to fight
@@ -81,7 +81,7 @@ Moonfield morning star answer from can - Winchester by being</pre>
 
 <h2 id="the-reading"><span class="num">03</span> The reading and our check</h2>
 <p>Bean&rsquo;s decipherment of the Cox telegram begins &ldquo;If your information as to Imboden is confirmed, let me know by what route you shall try to reach him, also how far forward in the Moorefield Road&hellip;&rdquo; The Bascom telegram begins &ldquo;General Kelley having received directions from General Halleck to hold himself in readiness to move under orders from army head quarters&hellip;&rdquo;</p>
-<p>The check here (<code>route.py</code> in the repository folder) used Milroy&rsquo;s copy. The run &ldquo;imboden by to forward&rdquo; is column 6, rows 1 to 4, read downward, and the run &ldquo;what is if&rdquo; is column 1, rows 3 to 1, read upward. Both agree with Bean&rsquo;s grid. A blind bigram search over all six-column routes did not converge, because the transcription is unreliable and the grid holds nulls and code words, so it was not pursued.</p>
+<p>The check here (<code translate="no">route.py</code> in the repository folder) used Milroy&rsquo;s copy. The run &ldquo;imboden by to forward&rdquo; is column 6, rows 1 to 4, read downward, and the run &ldquo;what is if&rdquo; is column 1, rows 3 to 1, read upward. Both agree with Bean&rsquo;s grid. A blind bigram search over all six-column routes did not converge, because the transcription is unreliable and the grid holds nulls and code words, so it was not pursued.</p>
 
 <h2 id="uncertain"><span class="num">04</span> What remains uncertain</h2>
 <ul>
@@ -94,7 +94,7 @@ Moonfield morning star answer from can - Winchester by being</pre>
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>Cox to Milroy, 3 Dec 1862 (Richard Bean&#x27;s decipherment, 2026)</h3>
 <p>A Union telegram in Stager Cipher No. 7 (a word route transposition with indicator words) from Cox to General Milroy: &#x27;If your information as to Imboden is confirmed, let me know by what route you shall try to reach him, also how far forward in the Moorefield Road&#x27;. Deciphered by Richard Bean with Claude Opus 5 in 2026; the full decipherment is on Tomokiyo&#x27;s cryptiana page.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/milroy/texts/cox1862_transcription.txt">cox1862_transcription.txt</a></p><pre>Cox to Milroy, 3 Dec 1862: the telegram as in Milroy&#x27;s copy, from the Jasper County Library lesson plan transcription (unreliable in places). Copied verbatim from the raw string in route.py, 22 Oct 2026.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/milroy/texts/cox1862_transcription.txt">cox1862_transcription.txt</a></p><pre translate="no">Cox to Milroy, 3 Dec 1862: the telegram as in Milroy&#x27;s copy, from the Jasper County Library lesson plan transcription (unreliable in places). Copied verbatim from the raw string in route.py, 22 Oct 2026.
 
 China quest whether transportation in reach what is if bully imboden by to forward Jrsisert also are Cumberland
 hole that the will the him route confirmed your health information let you also morsefield supply roads with stine
@@ -110,7 +110,7 @@ communications avoid you drink to your direction extest Mountain Moonfield morni
   <li>Richard Bean with Claude Opus 5, solution of the Milroy telegrams, 2026, on S. Tomokiyo&rsquo;s <a href="https://cryptiana.web.fc2.com/code/civilwar1b_milroy.htm">Cryptiana</a>.</li>
   <li>The Cox telegram as transcribed from Milroy&rsquo;s own copy in a Jasper County Library lesson plan.</li>
 </ul>
-<p class="muted">Notes, scripts and profile: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/milroy"><code>targets/milroy/</code></a>.</p>
+<p class="muted">Notes, scripts and profile: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/milroy"><code translate="no">targets/milroy/</code></a>.</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Solution: Richard Bean, via S. Tomokiyo, Cryptiana; Milroy&rsquo;s copy as transcribed in a Jasper County Library lesson plan</span>

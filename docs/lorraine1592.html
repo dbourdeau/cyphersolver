@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-  <div class="cipherstrip">f x i n e t i g &middot; a y i a s n<br>c h a s t e a u &middot; [v] i l a i n s<br>a/i b/p c/f d/q e/t g/u l/y m/z n/s o/r h/x</div>
+  <div class="cipherstrip" translate="no">f x i n e t i g &middot; a y i a s n<br>c h a s t e a u &middot; [v] i l a i n s<br>a/i b/p c/f d/q e/t g/u l/y m/z n/s o/r h/x</div>
   <p class="kicker">Nancy &rarr; the comte de Vaud&eacute;mont &middot; reciprocal letter-pair cipher with doubling dots, a null and syllable figures, inline with clear French &middot; 18 June 1592</p>
   <h1>Charles III of Lorraine to Vaud&eacute;mont, 18 June 1592</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_charles-iii-of-lorraine.jpg" alt="Charles III of Lorraine" title="Charles III of Lorraine: Portrait, workshop of François Clouet, 16th century. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Charles III of Lorraine</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_comte-de-vaudemont.jpg" alt="Comte de Vaudémont" title="Comte de Vaudémont: Drawing, anonymous, 1530s (Gaignières collection, BnF). Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Comte de Vaudémont</figcaption></figure></div><!-- /parties -->
@@ -77,7 +77,7 @@ Nevers&rsquo;s own correspondents and their keys, not Lorraine&rsquo;s. So no. 9
 munitions promised and undelivered, Chaumont, the sieur de Buzonville, the attempt on Chasteauvillain.</p>
 
 <h2 id="unpublished"><span class="num">02</span>No key has ever been published</h2>
-<p data-term-ok>DECODE record 9449 is this letter, by shelfmark, sender, receiver and date, and its status field reads <code>Non-decrypted</code>; of the eight DECODE records for Fran&ccedil;ais 3621 only this one and no. 116 have that status.
+<p data-term-ok>DECODE record 9449 is this letter, by shelfmark, sender, receiver and date, and its status field reads <code translate="no">Non-decrypted</code>; of the eight DECODE records for Fran&ccedil;ais 3621 only this one and no. 116 have that status.
 No key record in DECODE is attributed to Charles III or to Vaud&eacute;mont. Keys for <em>other</em> Lorraine ciphers are published and are not this system: Br&eacute;val to Henri II of about 1620, and Bassompierre to
 Charles III of 1 August 1593, both reconstructed by Satoshi Tomokiyo. Desenclos and Lasry&rsquo;s 2024 paper on the Henri IV&ndash;Nevers ciphers of Fran&ccedil;ais 3995 never mentions Fran&ccedil;ais 3621, and Henri
 Lepage&rsquo;s 1864 edition of Charles III&rsquo;s League correspondence stops in 1591 and prints no cipher table.</p>
@@ -116,7 +116,7 @@ degenerate <em>etenete&hellip;</em> key). The key it found was checked against t
 </table>
 <p>Thirty-three long words against none to three: there was French under the transcription. From controls with deliberately merged glyphs, the contributor estimated that about a quarter of the glyph
 transcriptions were still wrong, and proposed re-transcribing the page with the key in hand. The 18 September decryption gave, for example,
-<code>chasteauilainss [145] nntaises deramenermonarme dooites esquartiers de-</code>, with whole words correct and the joins between them wrong.</p>
+<code translate="no">chasteauilainss [145] nntaises deramenermonarme dooites esquartiers de-</code>, with whole words correct and the joins between them wrong.</p>
 
 <h2 id="reread"><span class="num">04</span>The re-transcription of 22 September, and what it corrected</h2>
 <p>The re-transcription was done as proposed: the native IIIF image of canvas 227 (4046&nbsp;&times;&nbsp;5762), sheared &minus;0.031 and cut into 21 line bands, each viewed in five crops at 2.3&times;, every word checked
@@ -157,9 +157,9 @@ same words for 449 of 1,105 tokens, <strong>40.6%</strong>; the re-transcription
 
 <h2 id="reading"><span class="num">05</span>The decipherment</h2>
 <figure class="creveal" data-src="reveal/lorraine1592.json"></figure>
-<p>Running text of the re-transcription, line by line as the manuscript runs (lines numbered from L00; the unnumbered lines are in clear on the page). <code>[?]</code> is a word not deciphered; a word in brackets is doubtful
+<p>Running text of the re-transcription, line by line as the manuscript runs (lines numbered from L00; the unnumbered lines are in clear on the page). <code translate="no">[?]</code> is a word not deciphered; a word in brackets is doubtful
 (grade M); bracketed figures are nomenclator figures not decoded. u/v and i/j are folded as the period writes them.</p>
-<pre><code>L00 [?] j'ay esté [?] infiniment [?] mal satisfait [?] du peu d'execution [?] vous
+<pre translate="no"><code translate="no">L00 [?] j'ay esté [?] infiniment [?] mal satisfait [?] du peu d'execution [?] vous
 L01 [57] [?] et ceulx de la [98] [?] ont, de tant de belles promesses [141] [?] avoient fait,
 L02 [l'?] de me assister et de [122] [123] [?] pionniers [?] et [?] munitions [?] [dressera]
 L03 [?ien] fait. Vous [?] le faire l'entendre [?] clairement ausdits [57] [?], et les de-
@@ -189,7 +189,7 @@ the Duke means <em>de ramener mon arm&eacute;e &egrave;s quartiers de la Faulche
 Chasteauvillain, and whether to <em>passer oultre</em>.</p>
 
 <h2 id="measured"><span class="num">06</span>How much is deciphered, measured</h2>
-<p>The rule, stated in <code>measure_reread.py</code>: the unit is the cipher token (one letter sign, a dotted double counting once; one special sign; one null; one figure). Each word of the decipherment is graded
+<p>The rule, stated in <code translate="no">measure_reread.py</code>: the unit is the cipher token (one letter sign, a dotted double counting once; one special sign; one null; one figure). Each word of the decipherment is graded
 H secure, C probable, M doubtful or I not deciphered, and a token counts as deciphered if its word is H or C. Every word is also decrypted mechanically with the pair key, so a decipherment that departs from the key shows up as an emendation.</p>
 <table>
 <thead><tr><th></th><th>Tokens</th><th>Read</th><th>Share</th></tr></thead>
@@ -213,8 +213,8 @@ At 71.5% the letter is below the 95% at which a text counts as complete, and the
 <h2 id="residuals"><span class="num">07</span>What remains uncertain</h2>
 <p>315 tokens are not deciphered. Each open piece, with the reason it is open:</p>
 <ul>
-<li><b>Re-measured 5 October 2026.</b> After a further pass on 5 October 2026, <strong>844 of 1,102 tokens (76.6%)</strong> are deciphered (<code>measure_reread.py</code>); 787 (71.4%) also pass a lexicon check (<code>measure_sense.py</code>). These count tokens in recognised words, not sentences: read as a text, the decode has a gap in almost every line, and the letter is decoded, not read (reading audit, 22 October 2026). Settled: &lambda;, &gamma;, U, &pi; and m&#772; are nulls, and L18&rsquo;s run reads <i>l&rsquo;effect du dict</i>; <i>quelq</i>, <i>auld&hellip;is</i> and <i>promes</i> were downgraded to M because they fail the lexicon check. Open: the special signs &#359; (12 tokens), &#8857; where it is not s, &alpha;, &#42775;, E, the figure-4, a Z and V (about 60 tokens with their words); ten single figures (14 tokens; 98 = <i>ville</i> fits but so do other nouns); the garbled runs of L12, L13 and L20 (about 35 tokens), legible at full IIIF resolution but not decodable under the pair key.</li>
-<li><b>Re-read 23 October 2026.</b> The graded re-read of 5 October was written out as running text with the clear lines (<code>ct/no97_partial_reading.md</code>, with English), the standalone crossed t taken as a null (eight of eight places between complete words). One sign in five is still open, and only about one sentence in seven holds: the letter stays decoded, not read. DECODE R9449 and R9444 were opened again (one image, no attachment), and the DECODE record list and the BnF keys of 1580&ndash;1600 were searched for a key in this pair system; none was found (fr. 3623 no. 23, R9453, is the Bienvenut&ndash;Nevers key of 1590). A key or duplicate may survive in the Lorraine ducal archive (Archives d&eacute;partementales de Meurthe-et-Moselle), not consulted.</li>
+<li><b>Re-measured 5 October 2026.</b> After a further pass on 5 October 2026, <strong>844 of 1,102 tokens (76.6%)</strong> are deciphered (<code translate="no">measure_reread.py</code>); 787 (71.4%) also pass a lexicon check (<code translate="no">measure_sense.py</code>). These count tokens in recognised words, not sentences: read as a text, the decode has a gap in almost every line, and the letter is decoded, not read (reading audit, 22 October 2026). Settled: &lambda;, &gamma;, U, &pi; and m&#772; are nulls, and L18&rsquo;s run reads <i>l&rsquo;effect du dict</i>; <i>quelq</i>, <i>auld&hellip;is</i> and <i>promes</i> were downgraded to M because they fail the lexicon check. Open: the special signs &#359; (12 tokens), &#8857; where it is not s, &alpha;, &#42775;, E, the figure-4, a Z and V (about 60 tokens with their words); ten single figures (14 tokens; 98 = <i>ville</i> fits but so do other nouns); the garbled runs of L12, L13 and L20 (about 35 tokens), legible at full IIIF resolution but not decodable under the pair key.</li>
+<li><b>Re-read 23 October 2026.</b> The graded re-read of 5 October was written out as running text with the clear lines (<code translate="no">ct/no97_partial_reading.md</code>, with English), the standalone crossed t taken as a null (eight of eight places between complete words). One sign in five is still open, and only about one sentence in seven holds: the letter stays decoded, not read. DECODE R9449 and R9444 were opened again (one image, no attachment), and the DECODE record list and the BnF keys of 1580&ndash;1600 were searched for a key in this pair system; none was found (fr. 3623 no. 23, R9453, is the Bienvenut&ndash;Nevers key of 1590). A key or duplicate may survive in the Lorraine ducal archive (Archives d&eacute;partementales de Meurthe-et-Moselle), not consulted.</li>
 <li><strong>Special signs</strong> with no settled value: &lambda; (11 times), m&#772; (9), U (8), &gamma; (5), E (4), &pi; (4), &#42775;, t with a low bar, the figure-4 form, and the reversed 3 in some places:
 about 60 tokens, and most of the words not deciphered contain one. m&#772; and &lambda; stand between whole words and may be nulls, but that is not proved. Grade I. Open because no key survives and each sign
 occurs one to eleven times, too few for context to fix most of them.</li>
@@ -238,7 +238,7 @@ Both need physical access or a catalogue not online.</li>
 <h3>fr. 3621 no. 97, Nancy, 18 June 1592 <span class="st stuck">decoded, not read</span></h3>
 <p>A contemporary copy of Charles III of Lorraine&#x27;s letter to his son the comte de Vaudémont, with clear French and cipher alternating on the same lines. The Duke is infinitely ill satisfied with the little execution of the promises of pioneers and munitions made to him, urges his son to press the attempt on Chasteauvillain, and writes of putting someone there to command and hold the plain and of bringing his army back to quarters. The volume is the duc de Nevers&#x27;s intercept and correspondence file for 1591-92.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lorraine1592/ct/no97_eye.txt">no97_eye.txt</a></p><pre># BnF fr. 3621 no. 97, f. 109 (Gallica canvas f227): &quot;Coppie d&#x27;une lettre de Monsieur de
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lorraine1592/ct/no97_eye.txt">no97_eye.txt</a></p><pre translate="no"># BnF fr. 3621 no. 97, f. 109 (Gallica canvas f227): &quot;Coppie d&#x27;une lettre de Monsieur de
 # Lorraine a Monsieur de Vaudemont&quot;, 18 June 1592.
 # By-eye transcription of the ciphered portions, read from per-line crops lc/L{00..20}{a,b}.jpg
 # fetched from the IIIF region x=490+, y=980+ of the native 4046x5762 image, shear -0.031.
@@ -283,7 +283,7 @@ L17 a n q t x W &lt;88&gt; &lt;31&gt; o t n r y G c a r s M &lt;146&gt; T a t s 
 L18 t y i B r G o p i G i a s T o y t C t s H c q G q a s c r s f H i n c t i G a y i a C x i a s n L &lt;139&gt; y r s i G r a C U W B o r z a n x M
 L19 [[et de la ilz pourroient tascher de remedier, ou bien juger le peu de suiect qui me doibt occasionner]]
 L20 W n G o c t J t n B o r W z z t n i t J c i a o t U B i N t v o r G y C o T z i q a s c t x Y &lt;103&gt; T M . [[[dire] si munitions]]</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lorraine1592/ct/no97_reread.txt">no97_reread.txt</a></p><pre># BnF fr. 3621 no. 97 (f. 109, Gallica canvas f227): re-read of the cipher with the key in hand, 22 Sept 2026.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lorraine1592/ct/no97_reread.txt">no97_reread.txt</a></p><pre translate="no"># BnF fr. 3621 no. 97 (f. 109, Gallica canvas f227): re-read of the cipher with the key in hand, 22 Sept 2026.
 #
 # Source: the native 4046x5762 IIIF image, sheared -0.031 and cut into 21 line bands (img/, git-ignored),
 # each band viewed in five crops at 2.3x (img/g/L??_?.png) and four at 2x (img/seg/).
@@ -338,7 +338,7 @@ L16: q.t=de/H v.i.L.y.t=?/I T=?/I f.H.t.z.a.s.D=chemins/H &lt;139&gt;=vous/C C.a
 L17: a.n=is/M q.t=de/H x=/H W:=/C &lt;88&gt;=?/I &lt;31&gt;=ma/C o.t.n.r.y.G.c:t.a.r.s=resolution/H M:=/C &lt;146&gt;=?/I T.a.t.s=?ien/M y.t=le/H Z=/C b.t.G=peu/H q.t=de/H z.r.a.t.s=moien/H d.T=que/C c=?/I n.t.f.r.g.o.n=secours/H &lt;139&gt;=vous/C &lt;145&gt;=me/C c:p.o.r.z.T.n=promes/M B.i.o=par/H q=d/H
 L18: t.y.i=ela/H B.r.G.o=pour/H p.i.G.i.a.s.T.o=?/I y.t.C:ff.t.f.c:t=leffect/C q.G=du/C q.a.f.c:t=dict/C T=?/I f.H.i.n.c:t.t.i.G=chasteau/H a.y.i.a.C:n=vilain/C x=/H i.a.s.n.L:y=ainsy/C &lt;139&gt;=vous/C y.r.s=lon/C i.G.r.a.C=avoit/C U:.W:=/C B.o.r.z.a.n=promis/H x=/H M:=/C
 L20: W.n.G.o.c:t.t=?surte/M J.t.n=ses/H B.o.r.W:.z.z.t.n=promesses/C i.t.J=?/I c.i.a.o.t=faire/H U:=/C B.i.N.t.v=passer/C o:.r.G.y.C.o.T=oultre/C z.i.q.a.s.c:t.t=?/I x=/H Y:=/C &lt;103&gt;=?/I T=?/I M:=/C</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lorraine1592/ct/no97_reread.txt">no97_reread.txt</a></p><pre># BnF fr. 3621 no. 97 (f. 109, Gallica canvas f227): re-read of the cipher with the key in hand, 22 Sept 2026.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lorraine1592/ct/no97_reread.txt">no97_reread.txt</a></p><pre translate="no"># BnF fr. 3621 no. 97 (f. 109, Gallica canvas f227): re-read of the cipher with the key in hand, 22 Sept 2026.
 #
 # Source: the native 4046x5762 IIIF image, sheared -0.031 and cut into 21 line bands (img/, git-ignored),
 # each band viewed in five crops at 2.3x (img/g/L??_?.png) and four at 2x (img/seg/).
@@ -393,7 +393,7 @@ L16: q.t=de/H v.i.L.y.t=?/I T=?/I f.H.t.z.a.s.D=chemins/H &lt;139&gt;=vous/C C.a
 L17: a.n=is/M q.t=de/H x=/H W:=/C &lt;88&gt;=?/I &lt;31&gt;=ma/C o.t.n.r.y.G.c:t.a.r.s=resolution/H M:=/C &lt;146&gt;=?/I T.a.t.s=?ien/M y.t=le/H Z=/C b.t.G=peu/H q.t=de/H z.r.a.t.s=moien/H d.T=que/C c=?/I n.t.f.r.g.o.n=secours/H &lt;139&gt;=vous/C &lt;145&gt;=me/C c:p.o.r.z.T.n=promes/M B.i.o=par/H q=d/H
 L18: t.y.i=ela/H B.r.G.o=pour/H p.i.G.i.a.s.T.o=?/I y.t.C:ff.t.f.c:t=leffect/C q.G=du/C q.a.f.c:t=dict/C T=?/I f.H.i.n.c:t.t.i.G=chasteau/H a.y.i.a.C:n=vilain/C x=/H i.a.s.n.L:y=ainsy/C &lt;139&gt;=vous/C y.r.s=lon/C i.G.r.a.C=avoit/C U:.W:=/C B.o.r.z.a.n=promis/H x=/H M:=/C
 L20: W.n.G.o.c:t.t=?surte/M J.t.n=ses/H B.o.r.W:.z.z.t.n=promesses/C i.t.J=?/I c.i.a.o.t=faire/H U:=/C B.i.N.t.v=passer/C o:.r.G.y.C.o.T=oultre/C z.i.q.a.s.c:t.t=?/I x=/H Y:=/C &lt;103&gt;=?/I T=?/I M:=/C</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lorraine1592/ct/no97_reading2.md">no97_reading2.md</a></p><pre># BnF fr. 3621 no. 97: the re-read (22 Sept 2026)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lorraine1592/ct/no97_reading2.md">no97_reading2.md</a></p><pre translate="no"># BnF fr. 3621 no. 97: the re-read (22 Sept 2026)
 
 Charles III of Lorraine to the comte de Vaudémont, Nancy, 18 June 1592 (fol. 109, Gallica canvas f227,
 DECODE R9449). This replaces section 5 of `no97_reading.md` as the reading of record. Transcription and
@@ -496,7 +496,7 @@ decode give the word exactly, not that a reader recognise it through *intiniment
   specials set aside: L12 *i t G y B G r J c r o* (after *passer*), L13 middle (*des … apres*), L18
   *pour [?] le [?] Chasteauvilain*, L20 *m&#x27;a d...te*. These need a second look at higher magnification
   than the IIIF 1:1 crops, or they hide more special signs.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lorraine1592/ct/clear_texts.md">clear_texts.md</a></p><pre># BnF fr. 3621: the clear text around the cipher
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lorraine1592/ct/clear_texts.md">clear_texts.md</a></p><pre translate="no"># BnF fr. 3621: the clear text around the cipher
 
 Transcribed by eye from the Gallica images (single pages, 4266 × 5883; canvas = 2 × folio + 9).
 `[chiffre]` marks a ciphered stretch; `⟨?⟩` an uncertain reading. Spelling as written.
@@ -552,7 +552,7 @@ Spanish pretensions, Villeroy at Pontoise, the house of Bourbon, the resolution 
 the sieur de Bellievre, and &quot;la paix&quot; — the peace nobody could any longer support the length of the war
 without. That is the double game the catalogue points at: the Duke of Lorraine&#x27;s son inside the League
 army, writing home about Parma and about feelers toward Henri IV, and the King&#x27;s side reading it.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lorraine1592/ct/no97_partial_reading.md">no97_partial_reading.md</a></p><pre># BnF fr. 3621 no. 97: Charles III of Lorraine to the comte de Vaudémont, Nancy, 18 June 1592 — partial reading (b29)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lorraine1592/ct/no97_partial_reading.md">no97_partial_reading.md</a></p><pre translate="no"># BnF fr. 3621 no. 97: Charles III of Lorraine to the comte de Vaudémont, Nancy, 18 June 1592 — partial reading (b29)
 
 Rests on: the 5 Oct 2026 graded re-read `ct/no97_reread.txt` (pair key a/i b/p c/f d/q e/t g/u l/y m/z n/s o/r h/x,
 doubling dots, nulls æ λ γ U π m̄; 31 = ma, 139 = vous, 141 = qu&#x27;il, 145 = me), rendered as running text for the
@@ -590,7 +590,7 @@ Vous me [?promes] par delà pour […] l&#x27;effect du dict Chasteau[v]ilain, a
 <li data-term-ok>DECODE <a href="https://de-crypt.org/decrypt-web/RecordsView/9449" rel="noopener">record 9449</a> (this letter, <em>Non-decrypted</em>) and <a href="https://de-crypt.org/decrypt-web/RecordsView/9444" rel="noopener">record 9444</a> (no. 22, <em>Decrypted</em>).</li>
 <li>BnF Fran&ccedil;ais 3995, ff. 32, 83&ndash;84, 98, 103 (the Nevers key book; eliminated).</li>
 <li>S. Tomokiyo, <em>Cryptiana</em>: the Lorraine keys (Br&eacute;val c. 1620; Bassompierre 1593). C. Desenclos and G. Lasry, HistoCrypt 2024, on the Henri IV&ndash;Nevers ciphers. H. Lepage, League correspondence of Charles III (1864).</li>
-<li>The 18 September key recovery: aryasn2026, <a href="https://github.com/dbourdeau/cyphersolver/pull/4" rel="noopener">pull request #4</a> (<code>ct/no97_reading.md</code>, <code>ct/no97_solution.txt</code>). The 22 September re-transcription: <code>ct/no97_reading2.md</code>, <code>ct/no97_reread.txt</code>, <code>measure_reread.py</code>.</li>
+<li>The 18 September key recovery: aryasn2026, <a href="https://github.com/dbourdeau/cyphersolver/pull/4" rel="noopener">pull request #4</a> (<code translate="no">ct/no97_reading.md</code>, <code translate="no">ct/no97_solution.txt</code>). The 22 September re-transcription: <code translate="no">ct/no97_reading2.md</code>, <code translate="no">ct/no97_reread.txt</code>, <code translate="no">measure_reread.py</code>.</li>
 </ul>
 <p class="rights">Manuscript rights: Biblioth&egrave;que nationale de France.</p>
 <p class="muted">Transcriptions, key, scripts and controls: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/lorraine1592" rel="noopener">targets/lorraine1592/</a> in the repository.</p>
@@ -599,7 +599,7 @@ Vous me [?promes] par delà pour […] l&#x27;effect du dict Chasteau[v]ilain, a
   <span>Arya Sanketbhai Patel, September 2026 &middot; Text released under CC BY 4.0 &middot; Manuscript rights: Biblioth&egrave;que nationale de France</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="sega1591.html" rel="prev">&larr; Filippo Sega to Cardinal Caetano, 9&hellip; 1591</a><a href="dinteville1592.html" rel="next">Dinteville 1592 1592 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

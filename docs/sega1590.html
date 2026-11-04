@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-<div class="cipherstrip">28 32 41 25 38 32 35 28 23 3^<br>io et fuori de<br>28 = i &middot; 32 = o &middot; 41 = et &middot; 25 = f &middot; 38 = u &middot; 35 = r &middot; 23 = d &middot; 3 with a circumflex = e</div>
+<div class="cipherstrip" translate="no">28 32 41 25 38 32 35 28 23 3^<br>io et fuori de<br>28 = i &middot; 32 = o &middot; 41 = et &middot; 25 = f &middot; 38 = u &middot; 35 = r &middot; 23 = d &middot; 3 with a circumflex = e</div>
 <p class="kicker">Paris &rarr; Rome &middot; digit-pair syllabary with a nomenclator (Meister key no. 65) &middot; 26 November 1590 and 16 January 1591 &middot; deciphered with a known key</p>
 <h1>Filippo Sega, Paris, 26 November 1590 and 16 January 1591</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_filippo-sega.jpg" alt="Filippo Sega" title="Filippo Sega: Portrait, 16th century. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Filippo Sega</figcaption></figure></div><!-- /parties -->
@@ -73,7 +73,7 @@
 </figure>
 
 <h2 id="cipher"><span class="num">02</span> The cipher</h2>
-<p>Meister printed the key in 1906 (<em>Die Geheimschrift im Dienste der p&auml;pstlichen Kurie</em>, no. 65, pp. 435&ndash;436). A two-digit number is a letter or a syllable (28 i, 31 n, 35 r, 37 t, 42 a, 24 e). A sign over a digit gives the vowel: a diaeresis a, a circumflex e, a bar i, a cross o, a small 2 u. Single letters stand for words (<em>Z</em> non, <em>c</em> per, <em>b</em> che, <em>l</em> il, <em>X</em> della), a few symbols for <em>tanto</em>, <em>quanto</em>, <em>in</em>, <em>ma</em>, <em>pi&ugrave;</em>, and dotted three-digit numbers for names (128 Mayenne, 129 Navarre, 453 Villeroy). The digits 7, 8, 9 and 0 are nulls. The key is in <code>targets/sega1590/key.tsv</code>.</p>
+<p>Meister printed the key in 1906 (<em>Die Geheimschrift im Dienste der p&auml;pstlichen Kurie</em>, no. 65, pp. 435&ndash;436). A two-digit number is a letter or a syllable (28 i, 31 n, 35 r, 37 t, 42 a, 24 e). A sign over a digit gives the vowel: a diaeresis a, a circumflex e, a bar i, a cross o, a small 2 u. Single letters stand for words (<em>Z</em> non, <em>c</em> per, <em>b</em> che, <em>l</em> il, <em>X</em> della), a few symbols for <em>tanto</em>, <em>quanto</em>, <em>in</em>, <em>ma</em>, <em>pi&ugrave;</em>, and dotted three-digit numbers for names (128 Mayenne, 129 Navarre, 453 Villeroy). The digits 7, 8, 9 and 0 are nulls. The key is in <code translate="no">targets/sega1590/key.tsv</code>.</p>
 
 <h2 id="method"><span class="num">03</span> How it was deciphered</h2>
 <p><strong>The key.</strong> George Lasry identified key no. 65 for Sega&rsquo;s letter of 9 January 1591 (BnF Fran&ccedil;ais 3613), <a href="sega1591.html">a separate target</a>. Brice Dudout recognised the same cipher on f. 17r, where the word <em>Villeroy</em> is written over the number 453 in the DECODE image, and applied the key without changing a value.</p>
@@ -83,7 +83,7 @@
 <h2 id="reading"><span class="num">04</span> The reading</h2>
 <figure class="creveal" data-src="reveal/sega1590.json"></figure>
 <p class="legend">Brice Dudout&rsquo;s text, spelling of the cipher kept (qulche, aparenti, tuto, sano, posono, iritando, zopicamento); u/v, accents and punctuation modernised. {x} probable; &lt;x&gt; unresolved; the sentence in square brackets is in clear in the letter.</p>
-<blockquote lang="it">
+<blockquote lang="it" translate="no">
 Io et fuori de le parti ho {qulche} informatione della mala natura et inclinatione del {vescovo} al partito {contrario}, non tanto per ragione di moderna politica, quanto per zopicamento di religione; et anderò temporeggiando il più che potrò, col far dimostrationi aparenti di sentimento in suo favore et contra, ma tardi di esecutione, iritando in tanto le parti a vomitar tuto quello che sano et posono [in clear: per poter meglio informar costì et più maturamente risolvere quel che convenga in questo così notabile accidente.] &lt;canonizatorio&gt; della festa che si può sperare il nostro &lt;c&gt; un giorno, se non è più che caduto.
 </blockquote>
 <blockquote>
@@ -105,7 +105,7 @@ I myself, and outside the parties, have some information on the bishop&rsquo;s b
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>Sega, Paris, 26 Nov 1590, enciphered passage f. 17r-v</h3>
 <p>Sega reports the bishop&#x27;s bad nature and leaning to the opposite party, out of limping religion rather than politics, and says he will temporise, showing feelings for and against him while stirring the parties to tell all they know.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sega1590/transcription.txt">transcription.txt</a></p><pre># AAV, Segreteria di Stato, Francia 32, f. 17r (lines L01-L14) and f. 17v (line P4): Filippo Sega, Paris, 26 Nov 1590.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sega1590/transcription.txt">transcription.txt</a></p><pre translate="no"># AAV, Segreteria di Stato, Francia 32, f. 17r (lines L01-L14) and f. 17v (line P4): Filippo Sega, Paris, 26 Nov 1590.
 # Transcribed from DECODE R5612 (views 3-4), https://de-crypt.org/decrypt-web/RecordsView/5612 ; images not included (DECODE terms: research use only).
 # Notation: digit pairs; a sign after a digit: &#x27;:&#x27; diaeresis (a), &#x27;^&#x27; circumflex (e), &#x27;-&#x27; bar (i), &#x27;+&#x27; cross (o), &#x27;s&#x27; small 2 (u).
 # Code letters of Meister key 65: Z non, b che, c per, l il, r ho, u del, X della, P quello; symbols TANTO QUANTO IN PIU MA.
@@ -151,7 +151,7 @@ B1: 23 28 52 42 37 6s 35 42 35 3^
 B2: 34 24 29 33 5+ 52 32
 B3: 33 8^ 35 32 33 0 35 28 2: 36 37 42 26 28 32 31 24
 B4: QUESTI 42 22 22 42 38 36 2: 35 42 33 35 3^ 36 24 31? 37 42 37 2: 22 5+ 36 3 9: 28</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sega1590/decryption.txt">decryption.txt</a></p><pre># Sign-by-sign decryption with Meister key 65 applied unchanged ([word] = code letter or symbol; nulls 7 8 9 0 dropped).
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sega1590/decryption.txt">decryption.txt</a></p><pre translate="no"># Sign-by-sign decryption with Meister key 65 applied unchanged ([word] = code letter or symbol; nulls 7 8 9 0 dropped).
 
 ## L01
 28 32 41 25 38 32 35 28 23 3^
@@ -291,7 +291,7 @@ propriastagione
 ## B4
 QUESTI 42 22 22 42 38 36 2: 35 42 33 35 3^ 36 24 31? 37 42 37 2: 22 5+ 36 3 9: 28
 [questi]accausarapresentatacosei</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sega1590/reading.md">reading.md</a></p><pre># Established text (Italian)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sega1590/reading.md">reading.md</a></p><pre translate="no"># Established text (Italian)
 
 Conventions: {x} probable; &lt;x&gt; unresolved. Spelling of the cipher kept (qulche, aparenti, tuto, sano, posono, iritando, zopicamento); u/v, accents and punctuation modernised.
 
@@ -329,7 +329,7 @@ Io et fuori de le parti ho {qulche} informatione della mala natura et inclinatio
 # Not included: duplicate of early January 1591 (ff. 49v-54v, DECODE R5615)
 
 Not included here: a third letter of Sega, the duplicate (&quot;Dupp.ta&quot;) of early January 1591 in Francia 32, ff. 49v-54v (DECODE R5615, https://de-crypt.org/decrypt-web/RecordsView/5615, images not included), was transcribed and decoded with the same key 65 over its whole enciphered text, but read only in part: 1,319 enciphered words, 1,094 read in their sense (82.9%: 886 certain, 205 probable, 3 restored, 225 unresolved), below Daniel Bourdeau&#x27;s 95% threshold; the copy is also incomplete (f. 54v ends in the cipher, with no subscription). It is published on our site as a partial reading with the unresolved words shown in place (https://bdudout.github.io/europe-chiffree/en/documents.html#sega1591-dupl), and is not submitted here as a reading.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sega1590/translation.md">translation.md</a></p><pre># English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sega1590/translation.md">translation.md</a></p><pre translate="no"># English translation
 
 I myself, and outside the parties, have some information on the bishop&#x27;s bad nature and his leaning towards the opposite party, not so much for reasons of modern politics as from a limping religion. I shall go on temporising as much as I can, making outward shows of feeling for and against him, but slow in execution, meanwhile stirring the parties to spew out all they know and can, [in clear:] so as to be able to inform [Rome] better and resolve more maturely what is fitting in so notable an incident. The last enciphered sentence (&quot;&lt;canonizatorio&gt; della festa ... se non è più che caduto&quot;) remains obscure and is not translated.
 
@@ -338,7 +338,7 @@ I myself, and outside the parties, have some information on the bishop&#x27;s ba
 [f. 71r] ... and what I wrote to you of having discussed with Mayenne about the service of the Pope, I did not think it necessary to have it sent in duplicate ... He wrote to His Holiness ... without even mentioning you, despite my first advice, already approved as good by His Excellency himself: a proof of the reading he makes ... and of the application of his mind to affairs; but let it pass. The provincial wrote to me that Mayenne himself told him he had written something or other good for me to Rome; but he writes it so obscurely that I do not understand it exactly ... What Mayenne wrote, I do not know. ... not finding that I need, with the Pope, a greater, more powerful and more timely intercession than the one which the lord Duke of Bavaria, of his own motion and as a good father, takes under his protection, and which I promise myself, in due time and place, in the favour of His Highness ... [f. 71v] ... that fruit (&quot;quel pomo&quot;) whose proper season I have awaited with singular patience and dissimulation for so many years ... the freedom to speak the truth, which this cause particularly needs, represented as it is by both sides far from what it really is.</pre></details>
 <h3>Sega, Paris, 16 Jan 1591, enciphered groups f. 71r-v</h3>
 <p>Sega on Mayenne writing something good for him to Rome, the protection of the Duke of Bavaria, the long-awaited &quot;pomo&quot;, and a cause misrepresented by both sides.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sega1590/transcription.txt">transcription.txt</a></p><pre># AAV, Segreteria di Stato, Francia 32, f. 17r (lines L01-L14) and f. 17v (line P4): Filippo Sega, Paris, 26 Nov 1590.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sega1590/transcription.txt">transcription.txt</a></p><pre translate="no"># AAV, Segreteria di Stato, Francia 32, f. 17r (lines L01-L14) and f. 17v (line P4): Filippo Sega, Paris, 26 Nov 1590.
 # Transcribed from DECODE R5612 (views 3-4), https://de-crypt.org/decrypt-web/RecordsView/5612 ; images not included (DECODE terms: research use only).
 # Notation: digit pairs; a sign after a digit: &#x27;:&#x27; diaeresis (a), &#x27;^&#x27; circumflex (e), &#x27;-&#x27; bar (i), &#x27;+&#x27; cross (o), &#x27;s&#x27; small 2 (u).
 # Code letters of Meister key 65: Z non, b che, c per, l il, r ho, u del, X della, P quello; symbols TANTO QUANTO IN PIU MA.
@@ -384,7 +384,7 @@ B1: 23 28 52 42 37 6s 35 42 35 3^
 B2: 34 24 29 33 5+ 52 32
 B3: 33 8^ 35 32 33 0 35 28 2: 36 37 42 26 28 32 31 24
 B4: QUESTI 42 22 22 42 38 36 2: 35 42 33 35 3^ 36 24 31? 37 42 37 2: 22 5+ 36 3 9: 28</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sega1590/decryption.txt">decryption.txt</a></p><pre># Sign-by-sign decryption with Meister key 65 applied unchanged ([word] = code letter or symbol; nulls 7 8 9 0 dropped).
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sega1590/decryption.txt">decryption.txt</a></p><pre translate="no"># Sign-by-sign decryption with Meister key 65 applied unchanged ([word] = code letter or symbol; nulls 7 8 9 0 dropped).
 
 ## L01
 28 32 41 25 38 32 35 28 23 3^
@@ -524,7 +524,7 @@ propriastagione
 ## B4
 QUESTI 42 22 22 42 38 36 2: 35 42 33 35 3^ 36 24 31? 37 42 37 2: 22 5+ 36 3 9: 28
 [questi]accausarapresentatacosei</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sega1590/reading.md">reading.md</a></p><pre># Established text (Italian)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sega1590/reading.md">reading.md</a></p><pre translate="no"># Established text (Italian)
 
 Conventions: {x} probable; &lt;x&gt; unresolved. Spelling of the cipher kept (qulche, aparenti, tuto, sano, posono, iritando, zopicamento); u/v, accents and punctuation modernised.
 
@@ -562,7 +562,7 @@ Io et fuori de le parti ho {qulche} informatione della mala natura et inclinatio
 # Not included: duplicate of early January 1591 (ff. 49v-54v, DECODE R5615)
 
 Not included here: a third letter of Sega, the duplicate (&quot;Dupp.ta&quot;) of early January 1591 in Francia 32, ff. 49v-54v (DECODE R5615, https://de-crypt.org/decrypt-web/RecordsView/5615, images not included), was transcribed and decoded with the same key 65 over its whole enciphered text, but read only in part: 1,319 enciphered words, 1,094 read in their sense (82.9%: 886 certain, 205 probable, 3 restored, 225 unresolved), below Daniel Bourdeau&#x27;s 95% threshold; the copy is also incomplete (f. 54v ends in the cipher, with no subscription). It is published on our site as a partial reading with the unresolved words shown in place (https://bdudout.github.io/europe-chiffree/en/documents.html#sega1591-dupl), and is not submitted here as a reading.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sega1590/translation.md">translation.md</a></p><pre># English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sega1590/translation.md">translation.md</a></p><pre translate="no"># English translation
 
 I myself, and outside the parties, have some information on the bishop&#x27;s bad nature and his leaning towards the opposite party, not so much for reasons of modern politics as from a limping religion. I shall go on temporising as much as I can, making outward shows of feeling for and against him, but slow in execution, meanwhile stirring the parties to spew out all they know and can, [in clear:] so as to be able to inform [Rome] better and resolve more maturely what is fitting in so notable an incident. The last enciphered sentence (&quot;&lt;canonizatorio&gt; della festa ... se non è più che caduto&quot;) remains obscure and is not translated.
 
@@ -588,7 +588,7 @@ I myself, and outside the parties, have some information on the bishop&#x27;s ba
   <span>Brice Dudout, September 2026 &middot; Text released under CC BY 4.0 &middot; Archivio Apostolico Vaticano, Segreteria di Stato, Francia 32, via DECODE (restricted; detail shown with credit)</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="gonzaga1590.html" rel="prev">&larr; Mantua to Nevers 1590 1590</a><a href="sega1591.html" rel="next">Filippo Sega to Cardinal Caetano, 9&hellip; 1591 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

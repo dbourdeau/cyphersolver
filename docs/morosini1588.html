@@ -42,7 +42,7 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">1 6&#775; 6 &middot; 20 21 51 17 01 21 &middot; &hellip; &middot; 1 2&#775; 9 &middot; 40 37 17 45 21 &middot; 80 &middot; &hellip; &middot; 1 1&#775; 3<br>questa matina &hellip; Duca di Guisa [null] &hellip; S. M.t&agrave;<br>a = 21 212 2 &middot; e = 35 153 5 &middot; n = 10 01 0 &middot; 8x = null &middot; 1&#775;29 = Duca di &middot; 1&#775;13 = S. M.t&agrave;</div>
+  <div class="cipherstrip" translate="no">1 6&#775; 6 &middot; 20 21 51 17 01 21 &middot; &hellip; &middot; 1 2&#775; 9 &middot; 40 37 17 45 21 &middot; 80 &middot; &hellip; &middot; 1 1&#775; 3<br>questa matina &hellip; Duca di Guisa [null] &hellip; S. M.t&agrave;<br>a = 21 212 2 &middot; e = 35 153 5 &middot; n = 10 01 0 &middot; 8x = null &middot; 1&#775;29 = Duca di &middot; 1&#775;13 = S. M.t&agrave;</div>
   <p class="kicker">Paris, Blois, Tours, Moulins &rarr; Rome &middot; homophonic nomenclator, variable-length figures run together &middot; 1587, August 1588 &ndash; July 1589</p>
   <h1>Cardinal Morosini, nuncio and legate in France, to Rome, 1587&ndash;89</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_cardinal-morosini.jpg" alt="Cardinal Morosini" title="Cardinal Morosini: Anonymous portrait, c. 1596–99. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Cardinal Morosini</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_cardinal-montalto.jpg" alt="Cardinal Montalto" title="Cardinal Montalto: Drawing by Ottavio Leoni, 17th century. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Cardinal Montalto</figcaption></figure></div><!-- /parties -->
@@ -98,7 +98,7 @@ were arrested, and the Cardinal de Bourbon put under guard.) The duplicate of th
 matina solam[ente] &egrave; rimasto priuo di uita&rdquo;. The legate, because a cardinal had been killed, leaves the answer to the Pope.</p>
 
 <h2 id="all-thirty-six-in-brief"><span class="num">03</span> All thirty-five, in brief</h2>
-<p>Dates in square brackets come from the context or the series. The quotations are from the readings of 22&ndash;23 October 2026 (<code>texts/&lt;R&gt;_reading.md</code>), in the clerk&rsquo;s spelling (u for v, single for double consonants), with [?word] for a word the figures carry only in part. The summaries were first written from the September decode and were checked against the new readings where they differed (R39: it is Guise, not Nevers, who presses for war; R40: the levy is 15,000 Swiss and 8,000 landsknechts). Each reading file has its English translation (<code>_en.md</code>).</p>
+<p>Dates in square brackets come from the context or the series. The quotations are from the readings of 22&ndash;23 October 2026 (<code translate="no">texts/&lt;R&gt;_reading.md</code>), in the clerk&rsquo;s spelling (u for v, single for double consonants), with [?word] for a word the figures carry only in part. The summaries were first written from the September decode and were checked against the new readings where they differed (R39: it is Guise, not Nevers, who presses for war; R40: the levy is 15,000 Swiss and 8,000 landsknechts). Each reading file has its English translation (<code translate="no">_en.md</code>).</p>
 <div class="tablewrap"><table>
 <thead><tr><th>Record</th><th>Item</th><th>Date</th><th>What the cipher says</th><th>From the text</th></tr></thead>
 <tbody>
@@ -140,22 +140,22 @@ matina solam[ente] &egrave; rimasto priuo di uita&rdquo;. The legate, because a 
 <tr><td>R58</td><td>22/37</td><td>Moulins, 5 July 1589 (dup.)</td><td>The King has taken Jargeau (&quot;Giorgio&quot;) and its Loire bridge, hanged a captain and pardoned the governor. Other Loire towns have surrendered, and the King is heading for Paris, where four faubourgs are said to favour him. Mayenne has taken Montereau and Nemours is raising money at Lyon for the League&#x27;s Swiss. The count is said to have escaped from Nantes castle in a basket, which Morosini doubts.</td><td><i>Si è inteso che il Re habia preso Giorgio</i></td></tr></tbody></table></div>
 
 <h2 id="method"><span class="num">04</span> Method</h2>
-<p>DECODE&rsquo;s transcriptions give the figures one by one, marking a dotted figure <code>X Y^. Z</code>. Dotted groups were taken as
+<p>DECODE&rsquo;s transcriptions give the figures one by one, marking a dotted figure <code translate="no">X Y^. Z</code>. Dotted groups were taken as
 nomenclator codes. The rest of each page is a single string of digits, and each position can open a code of one, two or three figures.
-The decoder (<code>targets/morosini1588/decrypt.py</code>) keeps, at every position, the best-scoring decryption for each four-letter context. It scores
-the letters it emits with the repository&rsquo;s shared Italian 5-gram model (<code>lang/</code>, <i>it-cinquecento</i>, built from
+The decoder (<code translate="no">targets/morosini1588/decrypt.py</code>) keeps, at every position, the best-scoring decryption for each four-letter context. It scores
+the letters it emits with the repository&rsquo;s shared Italian 5-gram model (<code translate="no">lang/</code>, <i>it-cinquecento</i>, built from
 Renaissance letters and nunciature reports, without spaces). It charges a fixed cost for a null (8 and any figure) and a larger one for a figure it cannot place.
 A page of 1,500 figures runs in about a second. The Spanish enclosure (R35, a copy of Philip II&rsquo;s letter to the Queen Mother)
 comes out in readable Spanish although the model is Italian. R17 went through the same decoder unchanged, from DECODE&rsquo;s transcription D1611 (volunteer TimB, 2015).</p>
-<p><strong>The re-reading of 22&ndash;23 October 2026.</strong> The character decode above follows the gist but does not build sentences. A word-level decoder with a model of transcription slips (<code>research/reading_audit/reread_b00_decode.py</code>) split each page into words; every break was then re-parsed by hand on the transcribed figures and, where a figure was in doubt, on crops of the DECODE images (55 corrections from the images). Each reading was aligned word by word with its figures, and every word the figures do not fully carry is bracketed. What had garbled the decode: spurious nomenclator dots in DECODE&rsquo;s transcriptions (250 is &ldquo;Bles&rdquo; in letters), real codes with the dot on the wrong figure or none, the clerk&rsquo;s <i>-mente</i> abbreviation (m and the null 8), numbers in plain figures between nulls, and page order (R30, R31, R43, R45, R47). No new code value came out of it. Tempesti&rsquo;s <i>Vita di Sisto V</i> (1754), which paraphrases many of these letters, was used for names and sense only, never as a source of words. The readings are <code>texts/&lt;R&gt;_reading.md</code>, with English in <code>_en.md</code> and the corrections and logs beside them.</p>
+<p><strong>The re-reading of 22&ndash;23 October 2026.</strong> The character decode above follows the gist but does not build sentences. A word-level decoder with a model of transcription slips (<code translate="no">research/reading_audit/reread_b00_decode.py</code>) split each page into words; every break was then re-parsed by hand on the transcribed figures and, where a figure was in doubt, on crops of the DECODE images (55 corrections from the images). Each reading was aligned word by word with its figures, and every word the figures do not fully carry is bracketed. What had garbled the decode: spurious nomenclator dots in DECODE&rsquo;s transcriptions (250 is &ldquo;Bles&rdquo; in letters), real codes with the dot on the wrong figure or none, the clerk&rsquo;s <i>-mente</i> abbreviation (m and the null 8), numbers in plain figures between nulls, and page order (R30, R31, R43, R45, R47). No new code value came out of it. Tempesti&rsquo;s <i>Vita di Sisto V</i> (1754), which paraphrases many of these letters, was used for names and sense only, never as a source of words. The readings are <code translate="no">texts/&lt;R&gt;_reading.md</code>, with English in <code translate="no">_en.md</code> and the corrections and logs beside them.</p>
 
 <h2 id="what-remains-uncertain"><span class="num">05</span> What remains uncertain</h2>
 <ul>
 <li>Nomenclator: 113 is &ldquo;Il Re di Francia, S. M.t&agrave; Christ.ma&rdquo; in Meister and is rendered &ldquo;S. M.t&agrave;&rdquo; throughout (H). 165 and 166, printed &ldquo;quelli&rdquo; and &ldquo;questi&rdquo;, serve for every form of quello and questo (H), and 161 likewise for quanto (C).</li>
 <li>Dotted groups not in Meister&rsquo;s table (162, 191, 250, 516, 617, 712, 716, 770 and a few others): the re-reading of 22 October 2026 showed them to be spurious dots on ordinary letter groups, or real codes with the dot on the wrong figure. No new code value.</li>
-<li>About 540 short holes in 33,000 words of reading: openings and closings, and groups of one to eight figures that no word parse fits. On 23 October 2026 every hole of R49, R51 and R55 was checked on the images, with sample lines of R27, R35, R39, R40 and R57; many are encipherer&rsquo;s slips transcribed as written, and on R40 (f. 293r ll. 15 and 21) two are stretches the encipherer crossed through, which DECODE gives as ordinary figures. The other records are still to be cropped (listed in each <code>texts/&lt;R&gt;_reread_log.md</code>). R35 loses a stretch to a hole in the paper (f. 202v l. 8) and its last line to damage.</li>
+<li>About 540 short holes in 33,000 words of reading: openings and closings, and groups of one to eight figures that no word parse fits. On 23 October 2026 every hole of R49, R51 and R55 was checked on the images, with sample lines of R27, R35, R39, R40 and R57; many are encipherer&rsquo;s slips transcribed as written, and on R40 (f. 293r ll. 15 and 21) two are stretches the encipherer crossed through, which DECODE gives as ordinary figures. The other records are still to be cropped (listed in each <code translate="no">texts/&lt;R&gt;_reread_log.md</code>). R35 loses a stretch to a hole in the paper (f. 202v l. 8) and its last line to damage.</li>
 <li>With these holes, R32 reads at 93.8% of its words, R33 at 94.8% and R35 at 92.5% (measured 24 October 2026): each builds coherent sentences, but under the 95% a complete reading needs.</li>
-<li>Letter-level slips in the first decode (&ldquo;euisone&rdquo; for Soissons) are corrected in the readings; the raw decode stays in <code>decrypt_raw.txt</code>. Proper names are graded C (Soissons, Nevers, Poigny); Tempesti&rsquo;s paraphrase confirms several.</li>
+<li>Letter-level slips in the first decode (&ldquo;euisone&rdquo; for Soissons) are corrected in the readings; the raw decode stays in <code translate="no">decrypt_raw.txt</code>. Proper names are graded C (Soissons, Nevers, Poigny); Tempesti&rsquo;s paraphrase confirms several.</li>
 <li>Rome&rsquo;s own decipherments of these despatches are in Segreteria di Stato, Francia 27 (Hübner, <i>Sixte-Quint</i>, 1870, cites them as &ldquo;déchiffré à Rome, 9 janvier 1589&rdquo;), not imaged online. Missing leaves: R46 between ff. 382v and 383r, R47 after f. 385v; R17 f. 233v and the last leaf of R22 are not imaged.</li>
 <li>R17: five groups open (519, 911, 556, 722, 561, most likely transcription slips), and the date within 1587 is not fixed.</li>
 <li>Item 22/29 is not on DECODE and was not seen. The clear covering letters were not edited here.</li>
@@ -167,7 +167,7 @@ comes out in readable Spanish although the model is Italian. R17 went through th
 <h3>R18, Francia 22/1, 10 Aug [1588] (duplicate)</h3>
 <p>On publishing the Council of Trent: strong resistance everywhere over Gallican liberties. In Paris Morosini lobbied the Sorbonne and the royal council, and told Henri III that a Most Christian king should accept the council without conditions. The King answered that the clergy, above all the Archbishop of Lyon, were the ones opposing it.</p>
 <p class="ftext">Transcription: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R18_D1686_1686.txt">DOC_R18_D1686_1686.txt</a></p>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R18_decryption.txt">R18_decryption.txt</a></p><pre># R18 decryption, copied verbatim from decode_updates/decryptions/R18.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R18_decryption.txt">R18_decryption.txt</a></p><pre translate="no"># R18 decryption, copied verbatim from decode_updates/decryptions/R18.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 032r]
 &lt;191&gt; caos iano circa la publicatione del concilio di trento o non ho mancatore manco di fare tu ti
 continiien uica ciofi crittonioso a fine che sia una ta senza alcuna limitatione o conditione ma il ferto
@@ -262,7 +262,7 @@ deli heretici n ambassadore di spagna ha fato gran onere la meco che in alcuni p
 armata d inghilterra habia briti rinfrescamentina questo lo negano apertame sino a o non ho potuto hauerne
 sicura relatione quando io e sia certo non mancaro di doler ment con sua maesta to far quello uficio che in
 simil caso conuiene creta il papa no</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R18_reading.md">R18_reading.md</a></p><pre># R18 — Morosini to Montalto, [Paris], 10 August 1588 (duplicate): the Council of Trent and the Gallican liberties (Francia 22/1, ff. 32r–35r)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R18_reading.md">R18_reading.md</a></p><pre translate="no"># R18 — Morosini to Montalto, [Paris], 10 August 1588 (duplicate): the Council of Trent and the Gallican liberties (Francia 22/1, ff. 32r–35r)
 
 Rests on: the figures. DECODE&#x27;s transcription D1686 (TimB, Jan 2016) under Meister no. 40, segmented into words by
 `research/reading_audit/reread_b00_decode.py` (`R18_worddecode.txt`, `_figs.txt`), then every break re-parsed by hand on
@@ -378,7 +378,7 @@ sia certo, non mancarò di dolermene con S. M.tà et far quello uficio che in si
 - &quot;nela […] N. S.&quot; (33v l. 6): 0 3 5 0 5 2 1 1 2 before 111: &quot;nela&quot; + &quot;1 2&quot; (z?); left open.
 - &quot;[quanto] posono&quot; (35r l. 5): the dotted group is written 166 (questo); 161 (quanto) is what the sentence needs.
 - Close (35r l. 19): &quot;8 4 2 2 7 5 2 1 1^. 1 0 9&quot; after &quot;conuiene&quot; does not parse (a 111 = N. S. may be in it).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R18_en.md">R18_en.md</a></p><pre># R18 — English (Morosini to Montalto, [Paris], 10 August 1588, duplicate: the Council of Trent and the Gallican liberties)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R18_en.md">R18_en.md</a></p><pre translate="no"># R18 — English (Morosini to Montalto, [Paris], 10 August 1588, duplicate: the Council of Trent and the Gallican liberties)
 
 Translation of `R18_reading.md`; holes as there.
 
@@ -466,7 +466,7 @@ of it I shall not fail to complain of it to His Majesty and do the office that i
 <h3>R19, Francia 22/2, 24 Aug [1588] (duplicate)</h3>
 <p>The clergy&#x27;s deputies appeared before the Parlement to oppose the council as against Gallican liberty. In an audience the King defended his privileges and benefice nominations. He was told that the legation&#x27;s faculties must be verified by the Parlement.</p>
 <p class="ftext">Transcription: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R19_D1687_1687.txt">DOC_R19_D1687_1687.txt</a></p>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R19_decryption.txt">R19_decryption.txt</a></p><pre># R19 decryption, copied verbatim from decode_updates/decryptions/R19.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R19_decryption.txt">R19_decryption.txt</a></p><pre translate="no"># R19 decryption, copied verbatim from decode_updates/decryptions/R19.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 071r]
 ommi il papa eam entre che io a tendeuo anari giooi di persuadere cosi a sua maesta come a quello de la
 borbona et altri che si doue se publicare il concilio di trento senza altra conditione il giorno medesmo et
@@ -558,7 +558,7 @@ conte die ui son
 [IMG 074v]
 e la figliuola del ra o di guisa i quello che si fara u s illma ne sara auisa tarciso cro il papa aaestre
 traii</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R19_reading.md">R19_reading.md</a></p><pre># R19 — Morosini to Montalto, Chartres, 24 August 1588 (duplicate): the publication of the Council of Trent and the Estates (Francia 22/2, ff. 71r–74v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R19_reading.md">R19_reading.md</a></p><pre translate="no"># R19 — Morosini to Montalto, Chartres, 24 August 1588 (duplicate): the publication of the Council of Trent and the Estates (Francia 22/2, ff. 71r–74v)
 
 Rests on: the figures. DECODE&#x27;s transcription D1687 (TimB, Jan 2016, speech recognition) under Meister no. 40,
 segmented into words by `research/reading_audit/reread_b00_decode.py` (`R19_worddecode.txt`, `_figs.txt`), then every
@@ -662,7 +662,7 @@ quello che si farà, V. S. Ill.ma ne sarà auisata. […]
   place and questo (166) in the second.
 - &quot;con sé […] magiore compagnia&quot; (74r l. 17): &quot;1 7 1 5 0 9 2 0 0 9&quot;.
 - &quot;di metere […] questo […] disegno&quot; (74r l. 21): &quot;1 4 4 2 3 2&quot; before 166 and &quot;1 9&quot; after it.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R19_en.md">R19_en.md</a></p><pre># R19 — English (Morosini to Montalto, Chartres, 24 August 1588, duplicate: the Council of Trent and the Estates)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R19_en.md">R19_en.md</a></p><pre translate="no"># R19 — English (Morosini to Montalto, Chartres, 24 August 1588, duplicate: the Council of Trent and the Estates)
 
 Translation of `R19_reading.md`; holes as there.
 
@@ -741,7 +741,7 @@ informed of it. […]</pre></details>
 <h3>R20, Francia 22/3, 9 Sept [1588]</h3>
 <p>The King gave the Count of Soissons letters clearing him of his service with Navarre and the Huguenots. Paris citizens and the prévôt protested to the Parlement. Cardinal de Vendôme and the Princess of Condé were furious.</p>
 <p class="ftext">Transcription: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R20_D1688_1688.txt">DOC_R20_D1688_1688.txt</a></p>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R20_decryption.txt">R20_decryption.txt</a></p><pre># R20 decryption, copied verbatim from decode_updates/decryptions/R20.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R20_decryption.txt">R20_decryption.txt</a></p><pre translate="no"># R20 decryption, copied verbatim from decode_updates/decryptions/R20.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 087r]
 che io e sortario sua sigilamo formandosi con la necesita dei tempi presenti non uolere far rumore di questo
 fare conte si rendeua lei piu odiosa a la principale cita del regno et procuraua di metere di nuouo il re in
@@ -825,7 +825,7 @@ giuditio di il papa ethauria fermata la bocaduti
 per la corte che il conte di sui son earia uenuto ables questo giorni feci con la eu loro maiesta gagliardo
 uficio che non lo per metesero se prima non ueniua la solutione da roma ioni promisero di fa resta impia
 come</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R20_reading.md">R20_reading.md</a></p><pre># R20 — Morosini to Montalto, Blois, 9 September 1588: Paris opposes the letters patent for the Count of Soissons (Francia 22/3, ff. 88r–90r, 87r–v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R20_reading.md">R20_reading.md</a></p><pre translate="no"># R20 — Morosini to Montalto, Blois, 9 September 1588: Paris opposes the letters patent for the Count of Soissons (Francia 22/3, ff. 88r–90r, 87r–v)
 
 Rests on: the figures. DECODE&#x27;s transcription D1688 (EH, Feb 2016, speech recognition) under Meister no. 40, segmented
 into words by `research/reading_audit/reread_b00_decode.py` (`R20_worddecode.txt`, `_figs.txt`), then every break
@@ -933,7 +933,7 @@ Mi rispose S. M.tà che era così il douere, et che ne parlaria con la Regina su
 - &quot;ma che S. M.tà doueua anco&quot; (87v ll. 17-18): &quot;5 6 | 1 1 3 | 2 6 9 1 3 7 3 5 3 7 2&quot; = che, 113 (S. M.tà; no dot seen), doueua (r2p).
 - 87r: &quot;di stimare asai il mio consiglio tutauia&quot; is written twice on consecutive lines of the manuscript (image checked: the encipherer&#x27;s dittography, not the transcriber&#x27;s); read
   once).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R20_en.md">R20_en.md</a></p><pre># R20 — English (Morosini to Montalto, Blois, 9 September 1588: Paris opposes the letters patent for the Count of Soissons)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R20_en.md">R20_en.md</a></p><pre translate="no"># R20 — English (Morosini to Montalto, Blois, 9 September 1588: Paris opposes the letters patent for the Count of Soissons)
 
 Translation of `R20_reading.md`; holes as there. Page order 88r–90r, then 87r–v (a second sheet).
 
@@ -1004,7 +1004,7 @@ it was publicly said […]</pre></details>
 <h3>R21, Francia 22/4, n.d. [Sept 1588]</h3>
 <p>The King dismissed his secretaries of state and the chancellor all at once, leaving the court anxious. Mons. de Nevers(?) and the Queen Mother were displeased not to have been consulted. Morosini warned the King that new men would be inexperienced and the old ones could side with his enemies.</p>
 <p class="ftext">Transcription: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R21_D1689_1689.txt">DOC_R21_D1689_1689.txt</a></p>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R21_decryption.txt">R21_decryption.txt</a></p><pre># R21 decryption, copied verbatim from decode_updates/decryptions/R21.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R21_decryption.txt">R21_decryption.txt</a></p><pre translate="no"># R21 decryption, copied verbatim from decode_updates/decryptions/R21.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 094r]
 ieolta a u s a quando il papa na risolutione presa dal sua maesta di leuare in un medesmo tempo ch iitii
 suoi secretario di stato il gran canceliero d non satia e l eurero alcuni altri ufi aticiali ha me sola
@@ -1074,7 +1074,7 @@ conserui questo huomodar la parte di adheri mando che cio si non di grandisima i
 che sono in sua mano et egli hauen speso consue lettere mentata ferma intentione mostrando grandisimo
 desiderio che il papa resti bene giustificato de le sue ationi per il qual rispeto dicetutauia di uolere
 inuiare un huomo a il papa ia assicome arra m</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R21_reading.md">R21_reading.md</a></p><pre># R21 — Morosini to Montalto, Blois, 10 September 1588: the King dismisses his ministers (Francia 22/4, ff. 94r–96v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R21_reading.md">R21_reading.md</a></p><pre translate="no"># R21 — Morosini to Montalto, Blois, 10 September 1588: the King dismisses his ministers (Francia 22/4, ff. 94r–96v)
 
 Rests on: the figures. DECODE&#x27;s transcription D1689 (KaJo, March 2016) under Meister no. 40, segmented into words by
 `research/reading_audit/reread_b00_decode.py` (`R21_worddecode.txt`, `_figs.txt`), then every break re-parsed by hand
@@ -1160,7 +1160,7 @@ giustificato dele sue ationi, per il qual rispeto dice tutauia di uolere inuiare
 - &quot;[?tenir]&quot; (96r l. 5): &quot;1 6 3 5 0 1 1 7 0 0&quot;, the same group as R20&#x27;s &quot;[?tenire]&quot;; the plain spelling 6 35 01 17 00
   is elsewhere (96r l. 13 &quot;tratenirlo&quot;).
 - &quot;ofenderli&quot; (96r l. 6): &quot;... 26 35 00 50 171 8&quot; = ofenderli (r2p); &quot;[?esi]&quot; (96r l. 7): the figures give &quot;esa&quot; (5 45 212).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R21_en.md">R21_en.md</a></p><pre># R21 — English (Morosini to Montalto, Blois, 10 September 1588: the King dismisses his ministers)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R21_en.md">R21_en.md</a></p><pre translate="no"># R21 — English (Morosini to Montalto, Blois, 10 September 1588: the King dismisses his ministers)
 
 Translation of `R21_reading.md`; holes as there.
 
@@ -1221,7 +1221,7 @@ of his actions, for which reason he still says he wants to send a man to Our Lor
 <h3>R22, Francia 22/5, n.d. [Sept 1588] (duplicate)</h3>
 <p>Replies to Montalto. Morosini has kept pressing for the council; the Estates promise to ask for it. His faculties will not be obeyed unless the Parlement verifies them.</p>
 <p class="ftext">Transcription: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R22_D1690_1690.txt">DOC_R22_D1690_1690.txt</a></p>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R22_decryption.txt">R22_decryption.txt</a></p><pre># R22 decryption, copied verbatim from decode_updates/decryptions/R22.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R22_decryption.txt">R22_decryption.txt</a></p><pre translate="no"># R22 decryption, copied verbatim from decode_updates/decryptions/R22.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 132r]
 questo b ora l foglio di cifra uenuto ne n e xu lettere di u s illma dio del nasato a riconcorre dire che
 quanto ala ia publicatione del r tcilio di trento o non ho mai tra lasciato di fare ogni oficaci siano con
@@ -1317,7 +1317,7 @@ sapra che oltre ete et di tempo in tempo ho scrito di hauere fato in questo prop
 dauantagio bcritt per htancare u s illma contro polonga scritura sola sato di scriuere ma in efeto pare a me
 che loro non douriano ricusare il partito che sua maesta li propone come io ho scrito al duca di e per non
 ete di la sar lui regno ueno de la prouenza quello den a</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R22_reading.md">R22_reading.md</a></p><pre># R22 — Morosini to Montalto, Blois, 7 October 1588: the Council of Trent, the legate&#x27;s faculties, the Count of Soissons&#x27; absolution, the vice-legate of Avignon and Épernon (Francia 22/5, ff. 132r–135v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R22_reading.md">R22_reading.md</a></p><pre translate="no"># R22 — Morosini to Montalto, Blois, 7 October 1588: the Council of Trent, the legate&#x27;s faculties, the Count of Soissons&#x27; absolution, the vice-legate of Avignon and Épernon (Francia 22/5, ff. 132r–135v)
 
 Rests on: the figures. DECODE&#x27;s transcription D1690 (KaJo, March 2016; the first line is marked &quot;dup.&quot; in clear, a
 duplicate) under Meister no. 40, segmented into words by `research/reading_audit/reread_b00_decode.py`
@@ -1447,7 +1447,7 @@ Epernone, che è di lasare il goue[r]no dela Prouenza [et] quello dela […]
 - Dotted groups in DECODE that are plain letters (spurious dots): 130 (oficio), 212 (promesa), 545 (esprese), 435
   (senza), 132 (= 113 with the dot on the 3), 615 (si contiene), 101 (comandato), 926, 213 (contentauano), 137
   (causa), 534 (esendo), 209 (comodo), 721 (piaciute), 713 (lui scrito), 216 (anima …).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R22_en.md">R22_en.md</a></p><pre># R22 — English (Morosini to Montalto, Blois, 7 October 1588: the Council of Trent, the faculties, Soissons&#x27; absolution, Avignon, Épernon)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R22_en.md">R22_en.md</a></p><pre translate="no"># R22 — English (Morosini to Montalto, Blois, 7 October 1588: the Council of Trent, the faculties, Soissons&#x27; absolution, Avignon, Épernon)
 
 Translation of `R22_reading.md`; holes as there.
 
@@ -1533,7 +1533,7 @@ the arrangement His Majesty proposes to them, as I have written to the Duke of �
 government of Provence [and] that of the […]</pre></details>
 <h3>R27, Francia 22/6, n.d. (fragment)</h3>
 <p>On governments for Épernon (Saintonge, Angoulême, Cognac) and on Boulogne. Épernon&#x27;s side refuses to give anything back and is said to deal with the Queen of England and Navarre. Morosini hopes for peace between Guise and the others, though with little confidence.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R27_D1691_1691.txt">DOC_R27_D1691_1691.txt</a></p><pre>#CATALOG NAME: Segr. Stato Francia 22/6
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R27_D1691_1691.txt">DOC_R27_D1691_1691.txt</a></p><pre translate="no">#CATALOG NAME: Segr. Stato Francia 22/6
 #IMAGE NAME: 137r.jpg-137v.jpg
 #TRANSCRIBER NAME: HeHan
 #DATE OF TRANSCRIPTION: April 5, 2016
@@ -1568,7 +1568,7 @@ government of Provence [and] that of the […]</pre></details>
 1 7 1 1 5 3 8 4 1 5 2 1 5 1 9 2 5 2 1 3 7 4 5 2 1 2 2? 6 3 5 0 5 2 1 2 4 3 7 2 1 2 1 9 1 3 7 1 7 0 0? 2 1 2 8 1 6 2 6 
 6 3 7 1 5 1 7 1 0 5 1 7 1 2 0 2 1 5 0 7 5 6 4 9 1 0 1 9 4 3 5 4 0 3 7 1 7 1? 5 1/2? 7 1 8 4 2 2 7 1 9 5 4 0 1 1 1^. 0 2 3 9 
 2 7 4 2 5 5 6 9 1 6^. 6</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R27_decryption.txt">R27_decryption.txt</a></p><pre># R27 decryption, copied verbatim from decode_updates/decryptions/R27.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R27_decryption.txt">R27_decryption.txt</a></p><pre translate="no"># R27 decryption, copied verbatim from decode_updates/decryptions/R27.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 137r]
 arche sareo di sa uenirao et quello dian gole and tirranto nsnet di cogna cho uno oficio per uno de la
 coronaro et posono uiuerne con grandignit altre iesiendo &lt;832&gt; in francia et habitanei gouerni come loro et
@@ -1585,7 +1585,7 @@ et il seguito dei popoli io per con sario l h
 [IMG 137v]
 auere uol uoi ne sostenerli et fauorirei etato causa de la sua roui nna tattuti li mali che sono seguitair
 altro sn &lt;110&gt; a uol t sce et questo</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R27_reading.md">R27_reading.md</a></p><pre># R27 — Morosini to Montalto, n.d. [Blois, October 1588] (fragment): Épernon&#x27;s governments and Guise (Francia 22/6, ff. 137r–v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R27_reading.md">R27_reading.md</a></p><pre translate="no"># R27 — Morosini to Montalto, n.d. [Blois, October 1588] (fragment): Épernon&#x27;s governments and Guise (Francia 22/6, ff. 137r–v)
 
 Rests on: the figures, checked line by line on the DECODE images. DECODE&#x27;s transcription (HeHan, April 2016) marks many
 figures &quot;?&quot;; every line of 137r–v was compared with crops of the image (scratchpad), and the figures read there
@@ -1621,7 +1621,7 @@ uoluto il Re sostenerli et fauorir[?li] è stato causa dela sua rouina et d[i] t
 - &quot;onde […]&quot; (137r l. 13): 3 7 1 7 0 3 7 2 9 1 8 4 2 5 2 1 0 0 5 (as on the image) does not parse; &quot;-care/-scare&quot; ending.
 - &quot;poi [?che]&quot; (137r l. 20): 7 0 9 1 1 7 1 6 5 0 ...: poi + 1 6 (et?); &quot;che&quot; not carried.
 - 137v l. 3 end: &quot;8 4 2 2 7 1 9 5 4 0 1 1 1^. 0 2 3 9 / 2 7 4 2 5 5 6 9 1 6^. 6&quot; does not parse (&quot;... uolta con et questo&quot;?).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R27_en.md">R27_en.md</a></p><pre># R27 — English (Morosini to Montalto, n.d. [Blois, October 1588], fragment: Épernon&#x27;s governments and Guise)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R27_en.md">R27_en.md</a></p><pre translate="no"># R27 — English (Morosini to Montalto, n.d. [Blois, October 1588], fragment: Épernon&#x27;s governments and Guise)
 
 Translation of `R27_reading.md`; holes as there.
 
@@ -1642,7 +1642,7 @@ support and favour [them] has been the cause of his ruin and of all the evils th
 <h3>R28, Francia 22/7, [early] Oct [1588] (duplicate)</h3>
 <p>While walking in the palace garden with the King, the Queen Mother and the Cardinals of Bourbon and Vendôme, Morosini learned that the King would send Signor Girolamo Gondi to Rome about pulling Marshal Montmorency away from the Huguenots. Morosini urged the King to win Guise over with money, since Guise is heavily in debt; Guise refused the grant offered. Vendôme reports that Cardinal Joyeuse worked against the Count of Soissons in Rome.</p>
 <p class="ftext">Transcription: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R28_D1692_1692.txt">DOC_R28_D1692_1692.txt</a></p>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R28_decryption.txt">R28_decryption.txt</a></p><pre># R28 decryption, copied verbatim from decode_updates/decryptions/R28.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R28_decryption.txt">R28_decryption.txt</a></p><pre translate="no"># R28 decryption, copied verbatim from decode_updates/decryptions/R28.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 142r]
 xza io tesso nei ma che io mi face si farle al piede mi ritrouai una matina a parse giare in un uia le di
 questo giardini di sua maesta come soglio fare spese uolte doue e sendo sopra uenuta &lt;162&gt; niino sia pase
@@ -1717,7 +1717,7 @@ alesandrino et santiqua
 [IMG 145r]
 t roma et il medesmo di gior io seanra stato al stanze di il papa a fare il medesmo et seruira per auisa u s
 illma scri il papa aaioresque n questo na</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R28_reading.md">R28_reading.md</a></p><pre># R28 — Morosini to Montalto, Blois, [8 October 1588]: the garden talk with Henri III on Montmorency and Guise (Francia 22/7, ff. 142r–145r)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R28_reading.md">R28_reading.md</a></p><pre translate="no"># R28 — Morosini to Montalto, Blois, [8 October 1588]: the garden talk with Henri III on Montmorency and Guise (Francia 22/7, ff. 142r–145r)
 
 Rests on: the figures. DECODE&#x27;s transcription D1692 (KaJo, April 2016) under Meister no. 40, segmented into words by
 `research/reading_audit/reread_b00_decode.py` (`R28_worddecode.txt`, `_figs.txt`), then every break re-parsed by hand on
@@ -1822,7 +1822,7 @@ a V. S. Ill.ma. […]
   on a few legible figures; the image is no better.
 - The closing figures (145r ll. 3–4: 8 4 2 2 7 111 2 2 7 9 1 5 4 9 6 0 166 0 1 2 …) were transcribed only in part
   (the transcription line breaks off in corrupt characters); left open.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R28_en.md">R28_en.md</a></p><pre># R28 — English (Morosini to Montalto, Blois, [8 October 1588]: the garden talk with Henri III on Montmorency and Guise)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R28_en.md">R28_en.md</a></p><pre translate="no"># R28 — English (Morosini to Montalto, Blois, [8 October 1588]: the garden talk with Henri III on Montmorency and Guise)
 
 Translation of `R28_reading.md`; holes as there.
 
@@ -1889,7 +1889,7 @@ Lord Cardinals Alessandrino and Santi [f. 145r] Quattro, but that the same Joyeu
 do the same; which will serve as a notice to Your Most Illustrious Lordship. […]</pre></details>
 <h3>R29, Francia 22/8, 10 Oct [1588] (duplicate)</h3>
 <p>A messenger is back from Florence about the Grand Duke&#x27;s marriage to the Princess of Lorraine; Orazio Rucellai will conclude it, and the Queen Mother plans to escort her to Marseille. News that the Duke of Savoy has seized the whole marquisate of Saluzzo; Guise fears this will force peace with Navarre and the heretics. Morosini asks for orders; a Danish ambassador is dealing over merchants&#x27; goods.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R29_D1693_1693.txt">DOC_R29_D1693_1693.txt</a></p><pre>#CATALOG NAME: Segr. Stato Francia 22/8
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R29_D1693_1693.txt">DOC_R29_D1693_1693.txt</a></p><pre translate="no">#CATALOG NAME: Segr. Stato Francia 22/8
 #IMAGE NAME: 152r.jpg-153v.jpg
 #TRANSCRIBER NAME: KaJo
 #DATE OF TRANSCRIPTION: April 22, 2016
@@ -1977,7 +1977,7 @@ do the same; which will serve as a notice to Your Most Illustrious Lordship. [�
 4 0 3 5 0 1 1 2 2 1 2  4 3 7 2 1 2  4 7 0 3 5 2 6 1 7 1 5 1 7 9 1 0 1 5 8 5 0 2 1 9 5 0 5 ?
 1 1^. 3 1 4  2 5 9 1 2 0 2 1 0 1 2 6 2 1 5 1 9  5 6 4 1 7 1 3 0 2 1 2 5 1 7 2  8 4 2 2 7 9 1 2 1 3^. 0 1
 2 7 4 2 9 6 0 1 0 2</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R29_decryption.txt">R29_decryption.txt</a></p><pre># R29 decryption, copied verbatim from decode_updates/decryptions/R29.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R29_decryption.txt">R29_decryption.txt</a></p><pre translate="no"># R29 decryption, copied verbatim from decode_updates/decryptions/R29.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 152r]
 con sia ar et cra hieri era giunse qui una i diritorno da firenze mandato da la questo sna conclusione del
 matrimonio del rd con questo principe sa di lorena non riporta et il sig hora tior u celar rnra onastro
@@ -2015,7 +2015,7 @@ d&#x27;inghilterra ne d altro particolare la fede s moho anco io esto per altra 
 [IMG 153v]
 che una uolta con il re et ino et sime parole et hora solecita co molta diligenza sua speditionem con le sua
 maesta ha eomandato che si facia alto a &lt;130&gt; rai botn m</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R29_reading.md">R29_reading.md</a></p><pre># R29 — Morosini to Montalto, [Blois], 10 October 1588: the Tuscan marriage, Savoy&#x27;s seizure of Saluzzo, Soissons, Denmark (Francia 22/8, ff. 152r–153v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R29_reading.md">R29_reading.md</a></p><pre translate="no"># R29 — Morosini to Montalto, [Blois], 10 October 1588: the Tuscan marriage, Savoy&#x27;s seizure of Saluzzo, Soissons, Denmark (Francia 22/8, ff. 152r–153v)
 
 Rests on: the figures. DECODE&#x27;s transcription D1693 (KaJo, April 2016) under Meister no. 40, segmented into words by
 `research/reading_audit/reread_b00_decode.py` (`R29_worddecode.txt`, `_figs.txt`), then every break re-parsed by hand on
@@ -2094,7 +2094,7 @@ quale S. M.tà ha [?comandato] che si facia […].
 - &quot;da uaseli franzesi&quot; (153r l. 19): 3 21 45 35 05 7 + 152.
 - 153v l. 1: &quot;4 5 1 7 2 0 5&quot; between poche and parole does not parse; 153v ll. 4–5: &quot;4 2 2 7 9 1 2 1 3^. 0 1 2 7 4 2 9
   6 0 1 0 2&quot; at the end does not parse.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R29_en.md">R29_en.md</a></p><pre># R29 — English (Morosini to Montalto, [Blois], 10 October 1588: the Tuscan marriage, Saluzzo, Soissons, Denmark)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R29_en.md">R29_en.md</a></p><pre translate="no"># R29 — English (Morosini to Montalto, [Blois], 10 October 1588: the Tuscan marriage, Saluzzo, Soissons, Denmark)
 
 Translation of `R29_reading.md`; holes as there.
 
@@ -2134,7 +2134,7 @@ Queen of England or on any other particular matter. I have [heard] the same by a
 despatch, which His Majesty has [ordered] to be made […].</pre></details>
 <h3>R30, Francia 22/9, 3 Oct [1588], Blois</h3>
 <p>Morosini took on the job of reconciling the Duke of Guise and Mons. de Nevers, who have been at odds since they married sisters; with the King&#x27;s approval, both promised to follow his advice. He pressed Guise and the Cardinal of Guise on publishing the council. The clergy is split: the lower deputies want Gallican liberty reserved.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R30_D1694_1694.txt">DOC_R30_D1694_1694.txt</a></p><pre>#CATALOG NAME: Segr. Stato Francia 22/9
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R30_D1694_1694.txt">DOC_R30_D1694_1694.txt</a></p><pre translate="no">#CATALOG NAME: Segr. Stato Francia 22/9
 #IMAGE NAME: 162v.jpg-160r.jpg
 #TRANSCRIBER NAME: KaJo
 #DATE OF TRANSCRIPTION: May 2, 2016
@@ -2253,7 +2253,7 @@ despatch, which His Majesty has [ordered] to be made […].</pre></details>
 3 3 5 0 1 2 6 3 7 1 5 1 7 1 1 9  2 0 9 1 2 7 9  6 2 1 7 4 4 1 7 2 1 5 2 3 5 0 0 5  2 6 1 7 1 1 1^. 1  5 6 0 1 7 4 5 3 7 0 1 2 1 2 
 2 5 9 1 4 5 2 1 2  2 6 3 5 4 5 1 7 6 2 3 5 0 0 2  7 0 1 7 1 7 3 5 6 5 0 2 1 2  4 3 7 2 1 2  1 9 4 5 3 5 0 0 3 7 2 1 5 1 1 7
 9 1 0 1 5 6 9 8 1 7 1 0 1 2 6 3 5 0 2  0 1 1 7 1 5 2 1 2  8 4 2 5 9 1 1^. 1 2 7 0 0 1 3 2 2  1 6^. 6 2 0 1 3 7 7 6 9 7 0</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R30_decryption.txt">R30_decryption.txt</a></p><pre># R30 decryption, copied verbatim from decode_updates/decryptions/R30.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R30_decryption.txt">R30_decryption.txt</a></p><pre translate="no"># R30 decryption, copied verbatim from decode_updates/decryptions/R30.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 162v]
 etl alte i ragionamenti sautitc non sti niueresso scoperto ascia manifestamente una mala sodisfatione che
 sua celiene con mons d inuisate la quale se bene anco prima io ne hur ueuo qualche notitiar credeuo pero che
@@ -2312,7 +2312,7 @@ metere mano ne la potesta di il papa et che era anco superfluo il tra tarne e io
 ne con il consenso ne senza per metera piu prendita di beni de la chiesa poi che pur tropose ne erano
 uenduti con molto dispiacere di il papa etnis una cosa desidera piu che la sua conseruatione et in demnita
 co il papa airraa questo anuito p</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R30_reading.md">R30_reading.md</a></p><pre># R30 — Morosini to Montalto, Blois, 3 October 1588: reconciling Nevers and Guise, the Council of Trent, the clergy and the Gallican liberties (Francia 22/9, ff. 162v, 162r, 161v, 161r, 160r)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R30_reading.md">R30_reading.md</a></p><pre translate="no"># R30 — Morosini to Montalto, Blois, 3 October 1588: reconciling Nevers and Guise, the Council of Trent, the clergy and the Gallican liberties (Francia 22/9, ff. 162v, 162r, 161v, 161r, 160r)
 
 Rests on: the figures. DECODE&#x27;s transcription D1694 (KaJo, May 2016) under Meister no. 40, segmented into words by
 `research/reading_audit/reread_b00_decode.py` (`R30_worddecode.txt`, `_figs.txt`), then every break re-parsed by hand
@@ -2400,7 +2400,7 @@ questo […]
   on to a page not imaged.
 - Recurring transcription habits: 30 for 70 (p) in &quot;questo punto&quot; (160r l. 2); &quot;pr&quot;, &quot;fr&quot; written 7 0 0 0 / 3 0 0 0
   (proposto, propone, pretenderà, fra); 64 = per inside words (scoperto, scoperta, superfluo, apertam.).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R30_en.md">R30_en.md</a></p><pre># R30 — English (Morosini to Montalto, Blois, 3 October 1588: reconciling Nevers and Guise, the Council of Trent, the clergy)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R30_en.md">R30_en.md</a></p><pre translate="no"># R30 — English (Morosini to Montalto, Blois, 3 October 1588: reconciling Nevers and Guise, the Council of Trent, the clergy)
 
 Translation of `R30_reading.md`; holes as there.
 
@@ -2454,7 +2454,7 @@ the great displeasure of Our Lord, who desires nothing more than its preservatio
 this […]</pre></details>
 <h3>R31, Francia 22/10, 23 Oct [1588], Blois</h3>
 <p>Mandelot, governor of Lyon, is ordered to arrest a man for transfer to Avignon. The Cardinal of Guise asks for the vice-legation of Avignon. The Florentine marriage contract is going forward.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R31_D1695_1695.txt">DOC_R31_D1695_1695.txt</a></p><pre>#CATALOG NAME: Segr. Stato Francia 22/10
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R31_D1695_1695.txt">DOC_R31_D1695_1695.txt</a></p><pre translate="no">#CATALOG NAME: Segr. Stato Francia 22/10
 #IMAGE NAME: 172r.jpg-174v.jpg
 #TRANSCRIBER NAME: Matt
 #DATE OF TRANSCRIPTION: January 31, 2016
@@ -2593,7 +2593,7 @@ this […]</pre></details>
 2 6 3 5 3 5 2 7 0 2 1 0 0 9 1 5 0 2 8 6 4 2 2^.? 1 2 6 3 5 0 5 4 1 7 4 0 1 3^. 1 4 5 2 1 0 1 5 1 2 1 4 5 3 5 3 7 3 5 0 0 1 7 
 0 1 2 1 8 4 9 1 0 1 9 2 3 7 1 7 4 5 2 1 5 1 9 2 6 3 5 0 5 2 6 3 5 4 5 1 7 2 6 3 5 0 1 1 7 9 2 6 7 1 1^. 1 5 6 3 0 9 1 5 4 5 
 3 3 3 5 4 5 9 1 7 3 0 2 5 9 1 0 1 5 1 5 8 3 7 5 0 1 7 5 4 3 5 2 0 2 1 0 0 1 5 1 7 0 1 3 5 0 1 4 0 9 1 2 2^. 7 3 3 5 0 1</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R31_decryption.txt">R31_decryption.txt</a></p><pre># R31 decryption, copied verbatim from decode_updates/decryptions/R31.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R31_decryption.txt">R31_decryption.txt</a></p><pre translate="no"># R31 decryption, copied verbatim from decode_updates/decryptions/R31.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 172r]
 uixo a lione stratarre con li ugonotti et poi inuiato in auignone ne le forze di il papa driet hauendone
 tratato con il papa urbsubito con molta pronteza et desiderio di compiacere il papa una francia o scriuercu
@@ -2662,7 +2662,7 @@ parlamento non a sentira mai che io habia autorita diuisitare et riformare come 
 dicendo che questo e diret a mostra la liberta de la chiesa gali cana a medicio non e a stata deue a parola
 per lettere delhi g cardinale di santa seuerina sono auisato del desidenio di il papa etforse preso un conte
 i li se martinen s no heretici pren</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R31_reading.md">R31_reading.md</a></p><pre># R31 — Morosini to Montalto, Blois, 23 October 1588: Gondi to Rome, Épernon and Provence, the fundamental law, Martinengo (Francia 22/10, ff. 173r–174v, 172r–v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R31_reading.md">R31_reading.md</a></p><pre translate="no"># R31 — Morosini to Montalto, Blois, 23 October 1588: Gondi to Rome, Épernon and Provence, the fundamental law, Martinengo (Francia 22/10, ff. 173r–174v, 172r–v)
 
 Rests on: the figures. DECODE&#x27;s transcription D1695 under Meister no. 40, segmented into words by
 `research/reading_audit/reread_b00_decode.py` (`R31_worddecode.txt`, `_figs.txt`), then every break re-parsed by hand on
@@ -2753,7 +2753,7 @@ circa questo particolare, nel quale credo io che non [?ui] habia ad esere alcuna
 - 172v l. 4: &quot;dei costumi 2 6 1 4^. 1? 1 9 165 di Francia&quot;: the dotted 141 is &quot;clero&quot; in the key; here &quot;di [Lorena?]&quot;
   is what the sense wants. Left as [141].
 - 172v l. 9 (end): &quot;1 1^. 1 4 2 7 5 7 0 0 9 1 7^. 9 2 2 6 9 5 2 9 6 9 4 0 0 7 0 1 0 0 5 2 7 0 9 1&quot; does not parse.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R31_en.md">R31_en.md</a></p><pre># R31 — English (Morosini to Montalto, Blois, 23 October 1588: Gondi to Rome, Épernon and Provence, the fundamental law, Martinengo)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R31_en.md">R31_en.md</a></p><pre translate="no"># R31 — English (Morosini to Montalto, Blois, 23 October 1588: Gondi to Rome, Épernon and Provence, the fundamental law, Martinengo)
 
 Translation of `R31_reading.md`; holes as there.
 
@@ -2823,7 +2823,7 @@ Highness on this point, in which I believe there [will] be no difficulty. […]<
 <p>Savoy is keeping Saluzzo and is suspected of designs on Marseille. M. de Poigny is sent to the Duke to demand restitution. Morosini protests over Cardinal Lenoncourt&#x27;s indult and over church revenues in the Cambrai truce, and the Queen Mother answers him.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (94% here); the holes are marked in the reading.</p>
 <p class="ftext">Transcription: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R32_D1696_1696.txt">DOC_R32_D1696_1696.txt</a></p>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R32_decryption.txt">R32_decryption.txt</a></p><pre># R32 decryption, copied verbatim from decode_updates/decryptions/R32.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R32_decryption.txt">R32_decryption.txt</a></p><pre translate="no"># R32 decryption, copied verbatim from decode_updates/decryptions/R32.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 181r]
 ne la sem salnta per uedere come l autorita sua dia dare hora mai il ta questo negoeio quel buon fine che si
 des er derato a o sii g i lustris ni ha pro mur so sua maesta e auuertita non pensig duca di sauoia ino
@@ -2897,7 +2897,7 @@ er auuenuta molto a tempo et la faria uedere et poi mi parlaria ho anco di nuouo
 publicatione del concilio di trento la quale mi ha promeso che di mani in ogni modo ne tratar dote epistati
 pure doman hene ha da parlar ersonato instanza al sig cardinale di di borbone che uoglia lui o a ritrouar u
 s i</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R32_reading.md">R32_reading.md</a></p><pre># R32 — Morosini to Montalto, Blois, 24 October 1588: Saluzzo, Provence, the Cambrai canon, the bull of the *confidenze* (Francia 22/11, ff. 181r–183v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R32_reading.md">R32_reading.md</a></p><pre translate="no"># R32 — Morosini to Montalto, Blois, 24 October 1588: Saluzzo, Provence, the Cambrai canon, the bull of the *confidenze* (Francia 22/11, ff. 181r–183v)
 
 Rests on: the figures. DECODE&#x27;s transcription D1696 (KaJo, Jan 2017) under Meister no. 40, segmented into words by
 `research/reading_audit/reread_b00_decode.py` (`R32_worddecode.txt`, `_figs.txt`) and by a scratch variant with a
@@ -3002,7 +3002,7 @@ sig. cardinale di Borbone che uoglia lui ancora ritrouarsi […]
 - 183r l. 22, 183v l. 13 and 182r l. 13 (as 1 9 4 9 2): &quot;contra&quot; is written 6 4 9 2 twice (&quot;tropo contra di lui&quot;,
   &quot;più contradire&quot;); 64 here cannot be &quot;per&quot;.
 - 183v l. 2: the governor proposed for Boulogne, &quot;1 6 1 5 2 1 4 0 1 7 2 1 0 1&quot;, does not parse into a known name.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R32_en.md">R32_en.md</a></p><pre># R32 — English (Morosini to Montalto, Blois, 24 October 1588: Saluzzo, Provence, the Cambrai canon, the bull of the *confidenze*)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R32_en.md">R32_en.md</a></p><pre translate="no"># R32 — English (Morosini to Montalto, Blois, 24 October 1588: Saluzzo, Provence, the Cambrai canon, the bull of the *confidenze*)
 
 Translation of `R32_reading.md`; holes as there.
 
@@ -3071,7 +3071,7 @@ too be present […]</pre></details>
 <p>The King referred the council to the clergy&#x27;s congregation. There the chapters, bishops and others quarrelled over exemptions, and they finally asked for publication with four reservations (royal authority, Gallican liberty, chapter exemptions, particular privileges). Morosini argued that it must be published without conditions.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (95% here); the holes are marked in the reading.</p>
 <p class="ftext">Transcription: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R33_D1697_1697.txt">DOC_R33_D1697_1697.txt</a></p>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R33_decryption.txt">R33_decryption.txt</a></p><pre># R33 decryption, copied verbatim from decode_updates/decryptions/R33.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R33_decryption.txt">R33_decryption.txt</a></p><pre translate="no"># R33 decryption, copied verbatim from decode_updates/decryptions/R33.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 189r]
 oeta sp il papa hauendo io continouamente in stato conforme agli orati nr et piacque a il papa didarran
 riforno a la publicati nore del conata lio di trento che sua maesta senza piu dilatioa ne uenise ales et
@@ -3172,7 +3172,7 @@ a trai in una generale congregatione de li statti di tuto il regno strandaro con
 pro aurando con modi de so il papa difia degnare piu che h un prio in questo punto ohe uiri potraspontare
 mandro tra tenendo sino a tanto che postix si riuere lume da questo u s illma di quello do ui rom are per
 sodisfare compitant la uolonta et desiderio di il papa aao e io et ei lettere liar questo s</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R33_reading.md">R33_reading.md</a></p><pre># R33 — Morosini to Montalto, Blois, [Oct–Nov 1588]: the clergy and the publication of the Council of Trent (Francia 22/12, ff. 189r–192v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R33_reading.md">R33_reading.md</a></p><pre translate="no"># R33 — Morosini to Montalto, Blois, [Oct–Nov 1588]: the clergy and the publication of the Council of Trent (Francia 22/12, ff. 189r–192v)
 
 Rests on: the figures. DECODE&#x27;s transcription D1697 (KaJo) under Meister no. 40, segmented into words by
 `research/reading_audit/reread_b00_decode.py` (`R33_worddecode.txt`, `_figs.txt`), then every break re-parsed by hand on
@@ -3289,7 +3289,7 @@ dourò [f]are per sodisfare compitam[ente] a […] uolontà et desiderio di N. S
 - 192v l. 4–5: &quot;4? 1 3? 1 0 3? 3 7 1 9 1&quot; and &quot;4 1 3 5 3 7 1 8&quot; unread (transcriber&#x27;s queries).
 - 192v l. 8: &quot;a 1 5? ? ? ? ? 5 0 2 1 2&quot;: illegible to the transcriber.
 - Closing (192v l. 9): &quot;8 7 2 2 9 5 7 9 6 9 5 7 221 0 5 7 2 0 0 166 4&quot; (221 = lettere) not read.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R33_en.md">R33_en.md</a></p><pre># R33 — English (Morosini to Montalto, Blois, [Oct–Nov 1588]: the clergy and the publication of the Council of Trent)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R33_en.md">R33_en.md</a></p><pre translate="no"># R33 — English (Morosini to Montalto, Blois, [Oct–Nov 1588]: the clergy and the publication of the Council of Trent)
 
 Translation of `R33_reading.md`; holes as there.
 
@@ -3376,7 +3376,7 @@ can be carried, I shall temporise until I can have light from Your Most Illustri
 satisfy fully […] the will and desire of His Holiness. […]</pre></details>
 <h3>R34, Francia 22/13, n.d. [Nov 1588]</h3>
 <p>The Spanish ambassador pressed the Queen Mother for union and good understanding between Philip II and Henri III, and showed a copy of Philip&#x27;s letter. Morosini sees a real opening for the alliance and asks that it be kept secret. The ambassador blamed Savoy for the Saluzzo attack.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R34_D1698_1698.txt">DOC_R34_D1698_1698.txt</a></p><pre>#CATALOG NAME: Segr. Stato Francia 22/13
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R34_D1698_1698.txt">DOC_R34_D1698_1698.txt</a></p><pre translate="no">#CATALOG NAME: Segr. Stato Francia 22/13
 #IMAGE NAME: 198r.jpg-200v.jpg
 #TRANSCRIBER NAME: KaJo
 #DATE OF TRANSCRIPTION: February 10, 2017
@@ -3495,7 +3495,7 @@ satisfy fully […] the will and desire of His Holiness. […]</pre></details>
 3 7 3 5 0 0 1 0 2 1 5 1 9 1 0 0 5  2 6 8 9 1 0 0 5 0 1 7 3 5 0 1 4 5 8 1 4 2 1 0 1 9  1 6^. 6 2 2 7 0 0 7  3 3 9 1 3 7 9 1 2 5
 2 1 5 1 9  1 7 1 5 0  7 0 9 1 7 0 9 1 5 0 9 6 9 3 0 2 1 5 1 1 7 1 3 3 5 0 1 1 7 0 0 5  2 1^. 3  2 6 3 5 0 5 2  2 5 1 7 1 5 2 1 2 
 2 2 6 1 7 2 0 2 1 0 1 2 6 2 1 0 0 5  5 6 5 0 2 1 2  3 0 9 1 0 0 1 5 3 5 1 2 2  4 1 7 2  7 0 9 1 4 7 2 1 2  1 7 1 2 0 2 1 8</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R34_decryption.txt">R34_decryption.txt</a></p><pre># R34 decryption, copied verbatim from decode_updates/decryptions/R34.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R34_decryption.txt">R34_decryption.txt</a></p><pre translate="no"># R34 decryption, copied verbatim from decode_updates/decryptions/R34.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 198r]
 loro et da sua maesta etato sentito con grandisimo dispusto conoscendo molto bene la causa di questo motio
 come i tiene anco per certo che mons die per non eo la ualere a suo fratelosiano molto alestrete per unirsi
@@ -3557,7 +3557,7 @@ il medesmo ne cose di qui con tuto che uadino contino uandone la pace e tunione 
 guisa in aussi ne so nuoui o casioni per intorbidar la come hora che hauendo sua maesta ritirato da la sua
 parte il gouernatore d orliens sano questo altri prouocato il popolo e tunati uenire ambassadore de la cita
 a di mandare che la forteza sia posta ima</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R34_reading.md">R34_reading.md</a></p><pre># R34 — Morosini to Montalto, [Blois, November 1588]: Mendoza&#x27;s offer of a Franco-Spanish union; Saluzzo; Gondi to Rome; Orléans (Francia 22/13, ff. 198r, 199r–200v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R34_reading.md">R34_reading.md</a></p><pre translate="no"># R34 — Morosini to Montalto, [Blois, November 1588]: Mendoza&#x27;s offer of a Franco-Spanish union; Saluzzo; Gondi to Rome; Orléans (Francia 22/13, ff. 198r, 199r–200v)
 
 Rests on: the figures. DECODE&#x27;s transcription D1698 (KaJo, Feb 2017) under Meister no. 40, segmented into words by
 `research/reading_audit/reread_b00_decode.py` (`R34_worddecode.txt`, `_figs.txt`), then every break re-parsed by hand on
@@ -3651,7 +3651,7 @@ ma[…]
 - &quot;cardinale … arciuescouo di Lione&quot; (200v l. 7): 1 3 1? (131 without dot), 6 4 5 0 (per l&#x27;), 133.
 - 200v l. 7: &quot;3 1? 8?&quot; after Lione, uncertain figures.
 - &quot;santa Chiesa&quot; (200v l. 12): 4 2 1 0 1? 1 1 2 (11 for 51?).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R34_en.md">R34_en.md</a></p><pre># R34 — English (Morosini to Montalto, [Blois, November 1588]: Mendoza&#x27;s offer of a Franco-Spanish union; Saluzzo; Gondi; Orléans)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R34_en.md">R34_en.md</a></p><pre translate="no"># R34 — English (Morosini to Montalto, [Blois, November 1588]: Mendoza&#x27;s offer of a Franco-Spanish union; Saluzzo; Gondi; Orléans)
 
 Translation of `R34_reading.md`; holes as there.
 
@@ -3713,7 +3713,7 @@ hands […]</pre></details>
 <h3>R35, Francia 22/14, n.d. <span class="st partial">read in part</span></h3>
 <p>Copy, in Spanish, of a memorandum (&quot;scritura&quot;) the Spanish ambassador gave the Queen Mother: Philip II answers her wish to see the two crowns in close friendship and good understanding, praises it as worthy of the mother of two kings, and urges union against the heretics. Not a letter of Philip II (the Italian heading in cipher says so).</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (92% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R35_D1699_1699.txt">DOC_R35_D1699_1699.txt</a></p><pre>#CATALOG NAME: Segr. Stato Francia 22/14
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R35_D1699_1699.txt">DOC_R35_D1699_1699.txt</a></p><pre translate="no">#CATALOG NAME: Segr. Stato Francia 22/14
 #IMAGE NAME: 202r.jpg-203r.jpg
 #TRANSCRIBER NAME: Amsa
 #DATE OF TRANSCRIPTION: February 7, 2016
@@ -3790,7 +3790,7 @@ hands […]</pre></details>
 3 5 0 0 2 0 2 1 0 1 9 1 7 1  6 2 1 0 8 7 0 0 0 9 1 3 1 9  7 0 2 1 0 0 2  5 4 9 3 5 2 1 4 2 1 0 (?) 5 4 5 1 7 1 1 4 
 2  1 1 2 3 5 0 0 5 4 5 1 7 3 0 1 2  2 0 3 5 4 5 2 0 2  2 5 9 1 4 5 2 1 2  1 9 5 0 5  7 9 8 3 3 5 0 0 2  (?) 7 0 2 1 1
 5 0 2 1 4  1 9 1 4 2 0 0 3 5 4  8  2 1 2  2 7 4 0 0 1 1^. 1 2 7 9 6 2 1 2 1 0 2  ——</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R35_decryption.txt">R35_decryption.txt</a></p><pre># R35 decryption, copied verbatim from decode_updates/decryptions/R35.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R35_decryption.txt">R35_decryption.txt</a></p><pre translate="no"># R35 decryption, copied verbatim from decode_updates/decryptions/R35.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 202r]
 n &lt;559&gt; ii eopia di una utitura data a la regina madre dal ambassadore chi del re di spagna residente a la
 corte di francia la de tautitura e in lingua spagnioli stre a no que io dire aiuta su mas nuesta t
@@ -3823,7 +3823,7 @@ responderlo sato he rius conferto al nombre ia so il tre o s de quest uintie ul 
 sansere dato ho tental caso o lui dandolere ipse no a o stra sas de que pudiera acordar sui l us niuere posi
 non e a le ha la rale sua maesta t an buena mi snoi herma noi dnn ronto para e truch al si hazer se una mese
 ma cosa con le come era parla sobre sacris r il papa aiota na</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R35_reading.md">R35_reading.md</a></p><pre># R35 — Enclosure: copy of a memorandum given to the Queen Mother by the Spanish ambassador, in Spanish (Francia 22/14, ff. 202r–203r)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R35_reading.md">R35_reading.md</a></p><pre translate="no"># R35 — Enclosure: copy of a memorandum given to the Queen Mother by the Spanish ambassador, in Spanish (Francia 22/14, ff. 202r–203r)
 
 Rests on: the figures. DECODE&#x27;s transcription D1699 (Amsa, February 2016; the transcriber noted bleed-through and
 damaged paper) under Meister no. 40, segmented into words by `research/reading_audit/reread_b00_decode.py` re-run with
@@ -3899,7 +3899,7 @@ amigo i hermano, i tan pronto para estrecharse i hazerse una mesma cosa con el, 
   2 7 9 6 2 1 2 1 0 2: the last line, on damaged paper, does not parse.
 - Spurious dots: 559 (heading), none in the Spanish body except 226 (catolica, a real code). Codes written as words:
   &quot;Rei&quot; spelt in letters (13 5 171), &quot;como&quot; by the Italian word code 79 (come), &quot;per&quot; (Spanish por) by 64.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R35_en.md">R35_en.md</a></p><pre># R35 — English (copy of a memorandum given to the Queen Mother by the Spanish ambassador; Spanish, with an Italian heading)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R35_en.md">R35_en.md</a></p><pre translate="no"># R35 — English (copy of a memorandum given to the Queen Mother by the Spanish ambassador; Spanish, with an Italian heading)
 
 Translation of `R35_reading.md`; holes as there.
 
@@ -3933,7 +3933,7 @@ forgetting [other] […] that he could remember, […] wishes to set it aside; H
 good a friend and brother, and so ready to draw close and become one and the same thing with him, as […] Our Lord […]</pre></details>
 <h3>R36, Francia 22/15, 10 Nov [1588] (duplicate)</h3>
 <p>A fever kept Morosini indoors. The Savoy ambassador reported the Poigny talks to the Queen Mother: the Duke will not return the Saluzzo places, and claims to have acted by the Pope&#x27;s order (Carmagnola). Morosini firmly denies that the Pope had any part in it.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R36_D1700_1700.txt">DOC_R36_D1700_1700.txt</a></p><pre>#CATALOG NAME: Segr. Stato Francia 22/15
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R36_D1700_1700.txt">DOC_R36_D1700_1700.txt</a></p><pre translate="no">#CATALOG NAME: Segr. Stato Francia 22/15
 #IMAGE NAME: 249r.jpg-250v.jpg
 #TRANSCRIBER NAME: KaJo
 #DATE OF TRANSCRIPTION: May 6, 2016
@@ -4017,7 +4017,7 @@ good a friend and brother, and so ready to draw close and become one and the sam
 2 0 2 1 0 0 5 6 3 5 4 5 2 1 5 1 9 4 1 7 2 1 2  2 6 2 1 5 1 9 2 1 2 2 0 9 1 0 1 4 8 2 6 7 0 1 3 5 2 0 3 7 0 0 4 5 8 7 7 1 7 3 7 3 9 1
 0 0 2 1 2  2 2 7 0 0 5 1 9 2 6 1 7 1 5 1 7 9 1 0 1 7 6 9 8 2 6 3 5 0 5  5 0 3 7 9 1 4 0 9 6 3 5 0 1 3 5 0 1 5 1 5 6 9 2 2 7 0 0 5  4 1 7 2 0 1 7 5 0 7
 5 6 8 9 7 7 1  4 2 1 0 0 2 1 0 1 9  2 0 2 1 1 7 1 2 2 5 3 5 1 5 2 1 5 1 5 8 4 2  2 7 9 6 1 6^. 7 0 0 1 1^. 1 9 2 7 0 1 2</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R36_decryption.txt">R36_decryption.txt</a></p><pre># R36 decryption, copied verbatim from decode_updates/decryptions/R36.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R36_decryption.txt">R36_decryption.txt</a></p><pre translate="no"># R36 decryption, copied verbatim from decode_updates/decryptions/R36.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 249r]
 noi csto o l ultime mieti sia u s illma c haueuo pensiero di fare qualche ficio oltre quello che prima
 haueuo farti con le loro maiesta per le cose di saluzo ma quello s era medesma mi sopra uene una gran febre
@@ -4064,7 +4064,7 @@ con che parera a il papa et io mi habia a gouernare giongendo le che il sode to 
 de to che se bene crede che il si grao suo si contentara che il gouerno del marche esato sia dato a
 monstinem ursi ui uorra altre conditioni et del luogotenente et altre simili et i non sarano mai acerea et
 alto t u s illma r il papa ancora in a</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R36_reading.md">R36_reading.md</a></p><pre># R36 — Morosini to Montalto, Blois, 10 November 1588 (duplicate): Poigny&#x27;s mission fails; the Savoy ambassador and the Duke&#x27;s letter on Carmagnola (Francia 22/15, ff. 249r–250v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R36_reading.md">R36_reading.md</a></p><pre translate="no"># R36 — Morosini to Montalto, Blois, 10 November 1588 (duplicate): Poigny&#x27;s mission fails; the Savoy ambassador and the Duke&#x27;s letter on Carmagnola (Francia 22/15, ff. 249r–250v)
 
 Rests on: the figures. DECODE&#x27;s transcription D1700 (KaJo, May 2016) under Meister no. 40, word-decoded with
 `research/reading_audit/reread_b00_decode.py` (`R36_worddecode.txt`, `_figs.txt`) and a scratch variant with a longer
@@ -4134,7 +4134,7 @@ nondimeno [?uorrà] altre conditioni, et del luogotenente, et altre simili, che 
 - 250r l. 13 &quot;arabiati 4 5 1 7 2 0 7 da tute&quot;; l. 16 &quot;da alcuni 3 2 1 4 7&quot;; l. 17 &quot;molti 1 5 2 4 1 5 1 7 … stimano&quot;;
   l. 19 &quot;gli altri 9 1 7 altro&quot;: single words not carried.
 - 250v l. 10: the closing &quot;8 4 2 2 7 9 6 167. 0 0 111. 9 2 7 0 1 2&quot; does not parse.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R36_en.md">R36_en.md</a></p><pre># R36 — English (Morosini to Montalto, Blois, 10 November 1588, duplicate: Poigny&#x27;s mission fails)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R36_en.md">R36_en.md</a></p><pre translate="no"># R36 — English (Morosini to Montalto, Blois, 10 November 1588, duplicate: Poigny&#x27;s mission fails)
 
 Translation of `R36_reading.md`; holes as there.
 
@@ -4178,7 +4178,7 @@ given to Monsieur de Nemours, he will nevertheless [want] other conditions, abou
 which they will never accept. […]</pre></details>
 <h3>R37, Francia 22/16, 21 Nov [1588] (duplicate)</h3>
 <p>Morosini urged the King and Queen Mother to settle Saluzzo peacefully. The Savoy ambassador had offered to restore the places if they were given to a Catholic knight, with Nemours as governor. Guise advised force instead, sending Mayenne into Bresse.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R37_D1701_1701.txt">DOC_R37_D1701_1701.txt</a></p><pre>#CATALOG NAME: Segr. Stato Francia 22/16
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R37_D1701_1701.txt">DOC_R37_D1701_1701.txt</a></p><pre translate="no">#CATALOG NAME: Segr. Stato Francia 22/16
 #IMAGE NAME: 256r.jpg-257v.jpg
 #TRANSCRIBER NAME: KaJo
 #DATE OF TRANSCRIPTION: May 7, 2016
@@ -4266,7 +4266,7 @@ which they will never accept. […]</pre></details>
 7 6 5 0 2 1 2  3 3 1 7 2 0 2 1 2 8 9 2 5 2 1 4 5 1 7 9 1 0 1 1 5 3 7 1  5 0 2 1 3 4 1 7 2 1 0 0 9 2 6 1 7 1  3 0 2 1 0 0 5 0 9  1 7 1 0 1 6^. 5
 7 0 2 1 0 0 1 5 1 7 1  5 6 0 1 5 3 8 1 4 2 1 3 7 0 0 2 1 0 1 9  4 2 1 7 4 5 9 1 4 0 1 0 9 8 1 7 1 4 9__ 7 2 2 4 7 5 2 1 1^. 1 9 1 6 7 4 2 2 0
 0 1 2 9 6</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R37_decryption.txt">R37_decryption.txt</a></p><pre># R37 decryption, copied verbatim from decode_updates/decryptions/R37.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R37_decryption.txt">R37_decryption.txt</a></p><pre translate="no"># R37 decryption, copied verbatim from decode_updates/decryptions/R37.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 256r]
 il papa qui hieri ma exprcsendo mi ritrouato con le loro maiesta alia c feci quello ficio che haueuo
 disegnato per le cose di saluzo sortandole a procederer an questo negotio i temperamenatorsi lasciandro
@@ -4315,7 +4315,7 @@ ra per hora di risposta anco a quello capo de la sua cifra uenuta con le lettere
 trata de le cose di saluo a la quale per breuita di tempo in calciando mila partita del ordinario inoso piu
 particolarmi spontere ma con la prima casione non lasciaro di farlo in quello parti che ne haurano
 bisognoistria b et a il papa oti barra que</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R37_reading.md">R37_reading.md</a></p><pre># R37 — Morosini to Montalto, Blois, [21 November 1588]: Saluzzo, the King and the Duke of Guise (Francia 22/16, ff. 256r–257v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R37_reading.md">R37_reading.md</a></p><pre translate="no"># R37 — Morosini to Montalto, Blois, [21 November 1588]: Saluzzo, the King and the Duke of Guise (Francia 22/16, ff. 256r–257v)
 
 Rests on: the figures. DECODE&#x27;s transcription D1701 (KaJo) under Meister no. 40, segmented into words by
 `research/reading_audit/reread_b00_decode.py` (`R37_worddecode.txt`, `_figs.txt`), then every break re-parsed by hand on
@@ -4385,7 +4385,7 @@ particolarm[ente] rispondere; ma con la prima ocasione non lasciarò di farlo in
 - &quot;da cardinale&quot; (256v l. 10): 62 2 + 131 (cardinale di) + a stray 9.
 - Closing (257v ll. 7–8): &quot;8 1 7 1 4 9 7 2 2 4 7 5 2 111 9 167 4 2 2 0 0 1 2 9 6&quot; (the courtesy formula with V. S. Ill.ma)
   not read.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R37_en.md">R37_en.md</a></p><pre># R37 — English (Morosini to Montalto, Blois, [21 November 1588]: Saluzzo, the King and the Duke of Guise)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R37_en.md">R37_en.md</a></p><pre translate="no"># R37 — English (Morosini to Montalto, Blois, [21 November 1588]: Saluzzo, the King and the Duke of Guise)
 
 Translation of `R37_reading.md`; holes as there.
 
@@ -4433,7 +4433,7 @@ detail; but at the first opportunity I shall not fail to do so in those parts th
 <h3>R38, Francia 22/17, n.d. [late Nov-Dec 1588]</h3>
 <p>The Savoy ambassador complained that Mayenne was ordered into Bresse. Morosini urged the King not to start a war before trying every other way, and to fight the heretics first. The King said he gave Mayenne no such order, but called the Duke of Savoy ungrateful.</p>
 <p class="ftext">Transcription: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R38_D1702_1702.txt">DOC_R38_D1702_1702.txt</a></p>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R38_decryption.txt">R38_decryption.txt</a></p><pre># R38 decryption, copied verbatim from decode_updates/decryptions/R38.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R38_decryption.txt">R38_decryption.txt</a></p><pre translate="no"># R38 decryption, copied verbatim from decode_updates/decryptions/R38.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 282r]
 e &lt;517&gt; nuui l altr hieri con sua maesta asai &lt;509&gt; hna mette il giorno inanzi l ambassadore del sig duca di
 sauoia m haueua der rode sulla uertito per cosa ce &lt;001&gt; e &lt;212&gt; che sua maesta haueua spedie o al duca di
@@ -4517,7 +4517,7 @@ piazet a non satisfii s arm ha de to che h r si fara la guerra con sauoia ilre o
 triegua con l li ugonotti del del fran signoria di genova to per non hauersl inimiciale s &lt;702&gt; tneto in
 fronte et ses dentio ho risposto a cou conuenza che questo in modo ancuno non si doueua fare e la mi trai se
 che non ci ucdeua i medio i il papa ori consi quam</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R38_reading.md">R38_reading.md</a></p><pre># R38 — Morosini to Montalto, n.d. [Blois, late November – December 1588] (duplicate): Savoy, Saluzzo and Mayenne; Lenoncourt; the Avignon legation (Francia 22/17, ff. 282r–284v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R38_reading.md">R38_reading.md</a></p><pre translate="no"># R38 — Morosini to Montalto, n.d. [Blois, late November – December 1588] (duplicate): Savoy, Saluzzo and Mayenne; Lenoncourt; the Avignon legation (Francia 22/17, ff. 282r–284v)
 
 Rests on: the figures. DECODE&#x27;s transcription D1702 (RebAn, Feb 2017, 110 minutes for six pages) under Meister no. 40,
 segmented by `research/reading_audit/reread_b00_decode.py` (`R38_worddecode.txt`), then re-parsed by hand line by line on
@@ -4626,7 +4626,7 @@ questo in modo alcuno non si doueua fare […], che non ci uedeua rimedio […] 
 - 284r l. 7: &quot;corriere 5 4 6 3 5 4 5 9&quot; ([?steso]) and &quot;tuta 1 6^. [sodisfatione]&quot;.
 - 284v ll. 7–11: &quot;far[e] 1 9 5 0 5 5 6 [145] con le Ugonotti&quot; and the last three lines (crossed-out figures, which DECODE
   did not transcribe) are only partly carried; the page breaks off at &quot;se N. S. …&quot;.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R38_en.md">R38_en.md</a></p><pre># R38 — English (Morosini to Montalto, n.d. [Blois, late November – December 1588], duplicate: Savoy, Saluzzo and Mayenne; Lenoncourt; the Avignon legation)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R38_en.md">R38_en.md</a></p><pre translate="no"># R38 — English (Morosini to Montalto, n.d. [Blois, late November – December 1588], duplicate: Savoy, Saluzzo and Mayenne; Lenoncourt; the Avignon legation)
 
 Translation of `R38_reading.md`; holes as there.
 
@@ -4700,7 +4700,7 @@ of Dauphiné, so as not to have enemies at his back and in front. And although I
 should in no way be done […], that he saw no remedy […] Our Lord […].</pre></details>
 <h3>R39, Francia 22/18, 8 Dec [1588] (duplicate)</h3>
 <p>A courier from Turin came from Poigny. In the council, Guise insisted on war with Savoy even if Saluzzo were restored; the others would forgive the Duke if he gave the places back. Munitions and artillery are to be sent to Lyon.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R39_D1703_1703.txt">DOC_R39_D1703_1703.txt</a></p><pre>#CATALOG NAME: Segr. Stato Francia 22/18
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R39_D1703_1703.txt">DOC_R39_D1703_1703.txt</a></p><pre translate="no">#CATALOG NAME: Segr. Stato Francia 22/18
 #IMAGE NAME: 289r.jpg-289v.jpg
 #TRANSCRIBER NAME: KaJo
 #DATE OF TRANSCRIPTION: February 19, 2017
@@ -4747,7 +4747,7 @@ should in no way be done […], that he saw no remedy […] Our Lord […].</pre
 0 1 1 7 0 1 9 4 0 2 1 4 0 5 0 1 7 2 1 0 0 2 6 2 1 2 0 8 6 3 7 1 5 2 1 3 7 1 7 2  7 0 9 1 4 9__ 1 7 2  5 4 5 3 5 0 0 5 5 6 1 7 1 5 0 2 6 3 5 4 5 1 7 2 6 3 5
 0 0 1 7 9 5 9 2 1 0 1 2 6 5  5 6 1 4 2 1 3 7 3 5 4 5 7  5 6 5 0 5 8 2 5 9 1 4 5 5  7 0 2 1 4 5 2 1 5 4 3 5 0 0 9 4 3 5 0 1 1 2  2 0 0 2 0 7 2 0 7
 8 3 0 2 1 2 5 3 5 4 5 5 6 3 5 2 0 3 5 0 0 5 7 0 1 7 1 7 3 5 6 7 1 2 6 9 1 3 7 3 5 0 0 3 5 1 7 1 8 0 0 1 6^. 7 4 7 9 9 1 6^. 9 0 2 1 ——</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R39_decryption.txt">R39_decryption.txt</a></p><pre># R39 decryption, copied verbatim from decode_updates/decryptions/R39.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R39_decryption.txt">R39_decryption.txt</a></p><pre translate="no"># R39 decryption, copied verbatim from decode_updates/decryptions/R39.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 289r]
 e il papa sia a poco fa e giunto qui un corriere spedito da turino da mons di pugnie ho potuto ancora
 intendere quello che porti ma da persona molto principale a piene de to che hieri sera fu longam raerato nel
@@ -4773,7 +4773,7 @@ consequenza lei po et la fee era in quello consideratione et parera a la singola
 ued &lt;191&gt; segni asai manifesti di guerra etle prouisioni pare a me et caminino gagliarda mutauia potria
 seuere che il desiderio grande che hauesi che le cose parsa sero senz armi mi face se temere piu che non
 douere in u s illma siquando u s na</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R39_reading.md">R39_reading.md</a></p><pre># R39 — Morosini to Montalto, Blois, 8 December 1588 (duplicate): the Council on Saluzzo (Francia 22/18, f. 289r–v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R39_reading.md">R39_reading.md</a></p><pre translate="no"># R39 — Morosini to Montalto, Blois, 8 December 1588 (duplicate): the Council on Saluzzo (Francia 22/18, f. 289r–v)
 
 Rests on: the figures. DECODE&#x27;s transcription D1703 (KaJo, Feb 2017) under Meister no. 40, segmented into words by
 `research/reading_audit/reread_b00_decode.py` (`R39_worddecode.txt`, `_figs.txt`), then every break re-parsed by hand
@@ -4817,7 +4817,7 @@ grande che hauesi che le cose pasasero senz&#x27;armi mi facese temere più che 
   code (143 guerra does not fit).
 - &quot;consigliaua[no] […] et quando&quot; (289r ll. 12–13): &quot;2 6 1 9 1 7 7 5&quot; between.
 - 289v l. 15: after &quot;douerei&quot;, &quot;8 0 0 1^. 6 7 4 7 9 9 1 6^. 9 0 2 1&quot; (V. S. Ill.ma … quando V. S. …) ends the sheet.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R39_en.md">R39_en.md</a></p><pre># R39 — English (Morosini to Montalto, Blois, 8 December 1588, duplicate: the Council on Saluzzo)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R39_en.md">R39_en.md</a></p><pre translate="no"># R39 — English (Morosini to Montalto, Blois, 8 December 1588, duplicate: the Council on Saluzzo)
 
 Translation of `R39_reading.md`; holes as there.
 
@@ -4844,7 +4844,7 @@ vigorously; yet it may be that my great wish that things should pass without arm
 […] Your Most Illustrious Lordship […]</pre></details>
 <h3>R40, Francia 22/19, dup., &quot;li 8 X[bre]&quot; (8 Dec 1588?), [Blois]</h3>
 <p>The King&#x27;s council discusses the Duke of Savoy&#x27;s artillery and troops on the borders of Bresse and Dauphiné and resolves to levy Swiss and 1,500 horse to join the Duke of Mayenne; the Duke of Guise offers 10,000 scudi, and the Estates&#x27; treasurers promise money. Morosini goes to the Capuchins hoping to find Henri III and complains that the King no longer talks openly with him. He reports that the King is tightly bound to Guise and is said to have dismissed his heads of finance.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R40_D1706_1706.txt">DOC_R40_D1706_1706.txt</a></p><pre>#CATALOG NAME: Segr. Stato Francia 22/19
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R40_D1706_1706.txt">DOC_R40_D1706_1706.txt</a></p><pre translate="no">#CATALOG NAME: Segr. Stato Francia 22/19
 #IMAGE NAME: 293r.jpg-294v.jpg
 #TRANSCRIBER NAME: KaJo
 #DATE OF TRANSCRIPTION: May 6, 2016
@@ -4906,7 +4906,7 @@ vigorously; yet it may be that my great wish that things should pass without arm
 1 5 1 7 1  2 5 9 1 0 1 4 9__ 2 1 0 0 7  2 5 0 4 9 1 2 6 3 5 1 5 9 2 0 9 1 0 1 4 5 1 7 4 0 8 2 6 7  4 0 3 7 1 7 4 5 2 1 2 8 6 2 7
 1 6^. 5  4 3 7 2 5 3 5 2 6 3 5 0 0 2  7 1 2 0 2 1 0 1 2 5 2 1 0 0 9 2 6 7  6 3 5 0 1 3 5 0 0 1 0 5  2 1 2 3 7 1 7 4 5 2 1 5 1 2 1 2 
 1 6^. 7 4 7 9 2 2 7  9 0 0 5 5 5 4 7 9__ 7  1 6^. 6 9 4 7 2 ——</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R40_decryption.txt">R40_decryption.txt</a></p><pre># R40 decryption, copied verbatim from decode_updates/decryptions/R40.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R40_decryption.txt">R40_decryption.txt</a></p><pre translate="no"># R40 decryption, copied verbatim from decode_updates/decryptions/R40.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 293r]
 i il papa quasi e riuenen no nuoue dama cone et il si grao que haueua fato condure a da no miliano a borgo
 inare sai un buon numero di pezi d artegliaria et che a li confini del n que et de la brescriuerano intorno
@@ -4938,7 +4938,7 @@ nze et il mediconinno ne suo fratelo perseuere poco grati also de to di guisa ro
 piu iua institu et confidenti che haues e sua maesta si dice anco che fara il medesmo di monsignono et di
 alcuni altri che si sono sempre scoperti contrari also de tomonsigti guisa di quello sucedera non mancaro di
 tenerne auisata u s illma sto al tore e si o i questo osta</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R40_reading.md">R40_reading.md</a></p><pre># R40 — Morosini to Montalto, Blois, 8 December 1588 (duplicate): Savoy&#x27;s troops in Bresse, the King&#x27;s levies, the Estates&#x27; money, the dismissals (Francia 22/19, ff. 293r–294r)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R40_reading.md">R40_reading.md</a></p><pre translate="no"># R40 — Morosini to Montalto, Blois, 8 December 1588 (duplicate): Savoy&#x27;s troops in Bresse, the King&#x27;s levies, the Estates&#x27; money, the dismissals (Francia 22/19, ff. 293r–294r)
 
 Rests on: the figures. DECODE&#x27;s transcription D1706 (KaJo, May 2016) under Meister no. 40, word-decoded with
 `research/reading_audit/reread_b00_decode.py` (`R40_worddecode.txt`, `_figs.txt`) and a scratch variant with a longer
@@ -4995,7 +4995,7 @@ sucederà non mancarò di tenerla auisata. […]
 - 293v l. 21: &quot;monsig. di 2 5 3 5 0 1 2 1 4 0 5 0 1 7 2 1 2 5 2 1 7 0 9&quot;: c e n a g l i, then &quot;a capo&quot;; the name is not
   identified.
 - 294r l. 8: the closing &quot;167. 4 7 9 2 2 7 9 0 0 5 5 5 4 7 9 7 166. 9 4 7 2&quot; does not parse.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R40_en.md">R40_en.md</a></p><pre># R40 — English (Morosini to Montalto, Blois, 8 December 1588, duplicate: Savoy&#x27;s troops in Bresse, the King&#x27;s levies)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R40_en.md">R40_en.md</a></p><pre translate="no"># R40 — English (Morosini to Montalto, Blois, 8 December 1588, duplicate: Savoy&#x27;s troops in Bresse, the King&#x27;s levies)
 
 Translation of `R40_reading.md`; holes as there.
 
@@ -5025,7 +5025,7 @@ trusted men. It is said too that he will do the same with Monsieur d&#x27;O and 
 opposed to the said Monsieur de Guise. Of what follows I shall not fail to keep you informed. […]</pre></details>
 <h3>R41, Francia 22/20, n.d. [Blois, Dec 1588]</h3>
 <p>The Duke of Savoy has seized the Marquisate of Saluzzo and offers to give it back once the Dauphiné is free of Huguenots, with his wife or a son as a hostage. The Duke of Guise tells Morosini he must press the King to recover Saluzzo by force, or else retire from court; the Savoyard ambassador has been refused. Mayenne asks what to do, with the Savoyard enemy so near.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R41_D1705_1705.txt">DOC_R41_D1705_1705.txt</a></p><pre>#CATALOG NAME: Segr. Stato Francia 22/20
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R41_D1705_1705.txt">DOC_R41_D1705_1705.txt</a></p><pre translate="no">#CATALOG NAME: Segr. Stato Francia 22/20
 #IMAGE NAME: 298r.jpg-299v.jpg
 #TRANSCRIBER NAME: KaJo
 #DATE OF TRANSCRIPTION: May 5, 2016
@@ -5133,7 +5133,7 @@ opposed to the said Monsieur de Guise. Of what follows I shall not fail to keep 
 2 1 6^. 7 7 0 9 1 4 9__ 1 7 2  5 4 5 3 5 0 0 5 6 4 1 7 2 5 9 1 5 0 9 1 4 5 9 2 6 7  3 0 2 1 0 0 5 1 9 1 2 9 3 5 0 0 5 6 9 6 4 9 1 7 1 9 7 1
 2 0 2 1 0 1 2 5 9 2 6 7  3 0 2 1 0 0 5 1 9 1 4 0 1 0 7  4 9 1 0 0 1 5 5 2 6 7  9 3 0 1 7 2 5 1 7 9  2 3 0 1 7 0 1 5 5 6  4 1 7 1 8 1 9 4 ? 
 3 5 0 0 3 7 1 7 1  5 0 3 0 1 1 7 9 1 0 1 5 6 9  5 0 2 1 2  1 4^. 4 8 7 7 9 2 2 7 3 7 9 0 ——</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R41_decryption.txt">R41_decryption.txt</a></p><pre># R41 decryption, copied verbatim from decode_updates/decryptions/R41.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R41_decryption.txt">R41_decryption.txt</a></p><pre translate="no"># R41 decryption, copied verbatim from decode_updates/decryptions/R41.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 298r]
 sii ungaria per lettere del hig hieronimos non di scrittua sua maesta ta si uiglia noi e inteso che il sig
 duca di di sauoia non hauea acereato il partito di me ella non hat iremur seguo cugino nel marchesato di
@@ -5191,7 +5191,7 @@ forse alcuno contrario al suo partito circa che non so quello potra fare i resen
 di buona uoglia sia per a consentiruieten usare uiolenza come hano fare o in diuerse altre cose che ho gia
 scrite a u s illma potria seuere pericoloso di far eompere et pero io non manco di fare ogni sorte dio ficio
 a fine che si conserui l unione et la pace iocri uon</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R41_reading.md">R41_reading.md</a></p><pre># R41 — Morosini to Montalto, Blois, [8?] December 1588 (duplicate): Savoy refuses the Nemours solution; Guise urges war; Alfonso Corso from Mayenne (Francia 22/20, ff. 298r–299v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R41_reading.md">R41_reading.md</a></p><pre translate="no"># R41 — Morosini to Montalto, Blois, [8?] December 1588 (duplicate): Savoy refuses the Nemours solution; Guise urges war; Alfonso Corso from Mayenne (Francia 22/20, ff. 298r–299v)
 
 Rests on: the figures. DECODE&#x27;s transcription D1705 (KaJo, May 2016) under Meister no. 40, word-decoded with
 `research/reading_audit/reread_b00_decode.py` (`R41_worddecode.txt`, `_figs.txt`) and a scratch variant with a longer
@@ -5266,7 +5266,7 @@ fare ogni sorte d&#x27;oficio a fine che si conserui l&#x27;unione et la pace [�
 - 299v l. 4: &quot;6 4 9 2 dicono&quot;: 64 9 = però, a stray 2 (in R32 the same group reads &quot;contra&quot;).
 - 299v l. 11: &quot;auanti 0 1 5 1 7 giorni&quot;: &quot;[ue]nti&quot;.
 - 299v l. 23: the closing &quot;8 7 7 9 2 2 7 3 7 9 0&quot; does not parse.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R41_en.md">R41_en.md</a></p><pre># R41 — English (Morosini to Montalto, Blois, [8?] December 1588, duplicate: Savoy refuses the Nemours solution; Guise urges war)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R41_en.md">R41_en.md</a></p><pre translate="no"># R41 — English (Morosini to Montalto, Blois, [8?] December 1588, duplicate: Savoy refuses the Nemours solution; Guise urges war)
 
 Translation of `R41_reading.md`; holes as there.
 
@@ -5319,7 +5319,7 @@ already written to Your Lordship, could be dangerous and bring about a break. An
 office so that union and peace may be kept […]</pre></details>
 <h3>R42, Francia 22/21, n.d. [Blois, Dec 1588]</h3>
 <p>Morosini tells the King at the Capuchins that the Pope is displeased the Council of Trent has not been published; the King answers through Gondi. Guise complains that the King does not trust him, and Morosini urges the King to satisfy Guise. He also reports on the papal bull against procurers of abortion and says the Queen Mother has a fever.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R42_D1707_1707.txt">DOC_R42_D1707_1707.txt</a></p><pre>#CATALOG NAME: Segr. Stato Francia 22/21
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R42_D1707_1707.txt">DOC_R42_D1707_1707.txt</a></p><pre translate="no">#CATALOG NAME: Segr. Stato Francia 22/21
 #IMAGE NAME: 303r.jpg-304v.jpg
 #TRANSCRIBER NAME: KaJo
 #DATE OF TRANSCRIPTION: December 19, 2015
@@ -5414,7 +5414,7 @@ office so that union and peace may be kept […]</pre></details>
 2 0 1 7 4 5 3 5 0 0 1 7 2 5 9 1 0 0 2 6 1/2? 7 2  9 0 2 1 2 5 1^.? 7 2  1 6^. 5 4 1 7 1 7 1  2 6 7 2 0 2 1 4 0 1 7 9 1 0 0 0? 5 3
 4 0 5 0 9 1 0 0 1 7 2  4 3 7 2 1 2  6 9 4 3 5 0 0 3 7 1 7 1 5 3? 7 9  2 6 7 5 0 5 2 1? 2 2 5 1 4 0 0 1 7 4 7 1 7 2 1 0 1
 1 7 1 5 2 1 2 8 4 7 9 9 6 1 5^.? 2  2 7 9 6 0 0 2 1 1^. 1 7 4 4 9__1 1^. 3</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R42_decryption.txt">R42_decryption.txt</a></p><pre># R42 decryption, copied verbatim from decode_updates/decryptions/R42.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R42_decryption.txt">R42_decryption.txt</a></p><pre translate="no"># R42 decryption, copied verbatim from decode_updates/decryptions/R42.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 303r]
 li austriaci m qui per risposta de la cifra io &lt;335&gt; nutame le lettere di u s illma delit del pasa comico a
 redirle che seendo mi ritrouar co questo matina ai cap uicini con sua maesta gli ho de co la mala sodisfatio
@@ -5462,7 +5462,7 @@ altri questo signori di guisani quali sii la sc noi intendere per te la uenise a
 di stare in cortete mendo che a non ernese sua sodali loro inimici non uentarse quel che cosa contra la
 persona di mons d inuisa il signonio per sua misericora tra impna &lt;517&gt; a quello sinondi ma gior lu gloria
 sua et seruieio die la christianita come que franzesi aio tra il papa isso sua maesta</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R42_reading.md">R42_reading.md</a></p><pre># R42 — Morosini to Montalto, Blois, 19 November 1588: the King, the Council of Trent, Guise and the sick Queen Mother (Francia 22/21, ff. 303r–304v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R42_reading.md">R42_reading.md</a></p><pre translate="no"># R42 — Morosini to Montalto, Blois, 19 November 1588: the King, the Council of Trent, Guise and the sick Queen Mother (Francia 22/21, ff. 303r–304v)
 
 Rests on: the figures. DECODE&#x27;s transcription D1707 (KaJo, Dec 2015; the transcriber notes that 8s, 1s and 2s are hard
 to see and that the pages bleed through) under Meister no. 40, segmented into words by
@@ -5534,7 +5534,7 @@ seruitio dela christianità. […]
 - &quot;[…] gli altri&quot; (304v l. 3): &quot;6 3 9 0 0^. 0 2 4 0 5 0 1 7 1&quot;: tuti? + a dotted 000.
 - &quot;Il sig. Dio per sua misericordia […] a quello&quot; (304v ll. 8–9): &quot;9 0 2 1 2 5 1 7^. 2&quot; (no code 517); the close after
   &quot;christianità&quot; (&quot;8 4 7 9 9 6 1 5^. 2 2 7 9 6 0 0 2 1 1^. 1 7 4 4 9 1 1^. 3&quot;) does not parse.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R42_en.md">R42_en.md</a></p><pre># R42 — English (Morosini to Montalto, Blois, 19 November 1588: the King, the Council of Trent, Guise and the sick Queen Mother)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R42_en.md">R42_en.md</a></p><pre translate="no"># R42 — English (Morosini to Montalto, Blois, 19 November 1588: the King, the Council of Trent, Guise and the sick Queen Mother)
 
 Translation of `R42_reading.md`; holes as there.
 
@@ -5579,7 +5579,7 @@ his mercy […] to what is for his greater glory and the service of Christendom.
 <h3>R43, Francia 22/22, Blois, 23 Dec [1588]</h3>
 <p>Guise is killed with daggers in the King&#x27;s chamber on the King&#x27;s order, after warnings that he meant harm to the King. The Cardinal of Guise, the Prince de Joinville, the Dukes of Nemours and Elbeuf, the Archbishop of Lyon, the prévôt des marchands and a Paris president are arrested, and the Cardinal de Bourbon is put under guard. The Queen Mother is left speechless, the city is locked down, Morosini seeks an audience in vain, and the Cardinal of Guise is feared dead too.</p>
 <p class="ftext">Transcription: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R43_D1708_1708.txt">DOC_R43_D1708_1708.txt</a></p>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R43_decryption.txt">R43_decryption.txt</a></p><pre># R43 decryption, copied verbatim from decode_updates/decryptions/R43.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R43_decryption.txt">R43_decryption.txt</a></p><pre translate="no"># R43 decryption, copied verbatim from decode_updates/decryptions/R43.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 307r]
 qui l haue senata sa ancora sua maesta spedito il sig alfonso corso alione con partenti di suo nogoten uent
 generale d &lt;716&gt; e forze che sono con il duca di um uendo scriue a suae cultanos a principarlandar l
@@ -5655,7 +5655,7 @@ auuertito che sua maesta ha spedito al duca di niuerse pregandolo instante matia
 guerra contra il nauaro sendo molto risoluta di uolere continouare con ogni suo poter et ss raticare le
 heresie dal suo regno cio il mondo non credacte ma piu tosta o per con piacere al duca di guisa che per sua
 propria in ratinatione sino a</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R43_reading.md">R43_reading.md</a></p><pre># R43 — Morosini to Montalto, Blois, 23 December 1588: the killing of the Duke of Guise (Francia 22/22, ff. 308r–309v, 307r–v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R43_reading.md">R43_reading.md</a></p><pre translate="no"># R43 — Morosini to Montalto, Blois, 23 December 1588: the killing of the Duke of Guise (Francia 22/22, ff. 308r–309v, 307r–v)
 
 Rests on: the figures. DECODE&#x27;s transcription D1708 (KaJo, Dec 2015) under Meister no. 40, segmented into words by
 `research/reading_audit/reread_b00_decode.py` (`R43_worddecode.txt`, `_figs.txt`), then every break re-parsed by hand on
@@ -5748,7 +5748,7 @@ risposta […] con questo ordine che piacerà [f. 307v] a N. S. di darmi; et a V
 - 307r l. 10: &quot;credeua che a del ser le fratelo … biasimare&quot;: Tempesti has &quot;la quale non harebbe esso Mena (tolto il
   rispetto del sangue) potuto biasimare&quot;; the figures carry &quot;del [e]ser … fratelo&quot; and &quot;biasimare&quot; but not the rest.
 - 307r l. 23: &quot;risposta del 5 2 0 0 0 3 5 4 5 3 5 0 1 1 5 1 7 1 8 19&quot;: c r e s e n t i + 8 null + con; not a word.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R43_en.md">R43_en.md</a></p><pre># R43 — English (Morosini to Montalto, Blois, 23 December 1588: the killing of the Duke of Guise)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R43_en.md">R43_en.md</a></p><pre translate="no"># R43 — English (Morosini to Montalto, Blois, 23 December 1588: the killing of the Duke of Guise)
 
 Translation of `R43_reading.md`; holes as there.
 
@@ -5812,7 +5812,7 @@ myself so troubled and confused, and I shall await with most ardent desire an an
 please [f. 307v] Our Lord to give me; and I kiss Your Most Illustrious Lordship&#x27;s hands again […].</pre></details>
 <h3>R44, Francia 22/23, dup., 24 Xbre [1588], [Blois]</h3>
 <p>The Cardinal of Guise was put to death only this morning. Because he was a churchman, Morosini leaves the response to the Pope&#x27;s judgment. The Cardinal de Bourbon is under guard and ill, and Joinville and the Archbishop of Lyon are to go to Amboise.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R44_D1709_1709.txt">DOC_R44_D1709_1709.txt</a></p><pre>#CATALOG NAME: Segr. Stato Francia 22/23
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R44_D1709_1709.txt">DOC_R44_D1709_1709.txt</a></p><pre translate="no">#CATALOG NAME: Segr. Stato Francia 22/23
 #IMAGE NAME: 313r.jpg-315r.jpg
 #TRANSCRIBER NAME: KaJo
 #DATE OF TRANSCRIPTION: January 11, 2016
@@ -5888,7 +5888,7 @@ please [f. 307v] Our Lord to give me; and I kiss Your Most Illustrious Lordship&
 0 1 1 4 2 1 2  3 3 3 5 4 5 2 1 2  6 2 1 0 1 5 1 2   1 9 3 0 1 7 2 6 3 5 0 1 1 2 2 1 2  5 6 1 9 2 0 9 1 2 7 2 1 2  3 0 2 1 2 5 1 7 5 0 1 7 1 5 2
 9 9 3 0 9 1 5 4 5  2 1 2 4 9 3 5 1 5 2 1 2  7 0 9 1 4 9__ 1 7 2  2 0 9 1 4 9 2 1 0 0 1 0 5  1 1 7 4 5 3 5 0 1 5 1 1 7 2 0 3 5 0 1 5 1 9 8 4 7 
 2 2^. 7 1 6^. 9 0 0 1 7 1 0 4 5 0 0 0 �</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R44_decryption.txt">R44_decryption.txt</a></p><pre># R44 decryption, copied verbatim from decode_updates/decryptions/R44.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R44_decryption.txt">R44_decryption.txt</a></p><pre translate="no"># R44 decryption, copied verbatim from decode_updates/decryptions/R44.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 313r]
 o qui sati si hieri sera a u s illma che oltre la morte del sig duca di guisa peria in gli diceua che era
 morto ancora il sig cardinale di suo fratelo che non fu uero alhora m questo matina solame rimasto priuo di
@@ -5929,7 +5929,7 @@ la sare di dire a u s illma ch er uescouado s questo auuenimento suceso le cosi 
 poi che senza mouimento anche miniano o alteratione di popoli e uenuta al disopra di questo suoi inimici et
 da tuto il mondo erano stimati insuperabili n ha presa tanta confidenza et con molta facilico o forse a so
 et a potria mostrarne risentimento i heretici u s rins nr</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R44_reading.md">R44_reading.md</a></p><pre># R44 — Morosini to Montalto, [Blois], 24 December 1588 (duplicate): the death of the Cardinal of Guise (Francia 22/23, ff. 313r–314r, 315r)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R44_reading.md">R44_reading.md</a></p><pre translate="no"># R44 — Morosini to Montalto, [Blois], 24 December 1588 (duplicate): the death of the Cardinal of Guise (Francia 22/23, ff. 313r–314r, 315r)
 
 Rests on: the figures. DECODE&#x27;s transcription D1709 (KaJo, Jan 2016) under Meister no. 40, segmented into words by
 `research/reading_audit/reread_b00_decode.py` (`R44_worddecode.txt`, `_figs.txt`), then every break re-parsed by hand on
@@ -5989,7 +5989,7 @@ quando fose astreta, potria mostrarne risentimento […] heretici […].
 - 314r ll. 9–11: &quot;il fine 1 7 3 7 1 7 1 uederò dimani se 1 7 3 7 1 0 1 7 2 1 2 5 5 8 0 2 1 2 Dio 8 / 4 2 2 4 7 3 1 9^. 6 7 9&quot;
   (image: the same, with 7 and 2 0 uncertain in the second group); the close does not parse.
 - 315r l. 8: &quot;risentimento 8 4 7 2 2^. 7 1 6^. 9 0 0 1 7 1 0 4 5 0 0 0&quot; — 227 heretici, then the line breaks off.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R44_en.md">R44_en.md</a></p><pre># R44 — English (Morosini to Montalto, [Blois], 24 December 1588, duplicate: the death of the Cardinal of Guise)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R44_en.md">R44_en.md</a></p><pre translate="no"># R44 — English (Morosini to Montalto, [Blois], 24 December 1588, duplicate: the death of the Cardinal of Guise)
 
 Translation of `R44_reading.md`; holes as there.
 
@@ -6031,7 +6031,7 @@ were he pressed, he could very easily show resentment […] heretics […].</pre
 <h3>R45, Francia 22/24, n.d. [Blois, Jan 1589, after Catherine de&#x27; Medici&#x27;s death]</h3>
 <p>Morosini defends his conduct. The Archbishop of Lyon refuses lay examiners because he is primate of France. The Estates&#x27; article excluding Navarre carries a clause reserving the Bourbon succession.</p>
 <p class="ftext">Transcription: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R45_D1710_1710.txt">DOC_R45_D1710_1710.txt</a></p>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R45_decryption.txt">R45_decryption.txt</a></p><pre># R45 decryption, copied verbatim from decode_updates/decryptions/R45.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R45_decryption.txt">R45_decryption.txt</a></p><pre translate="no"># R45 decryption, copied verbatim from decode_updates/decryptions/R45.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 357r]
 a cerca se il papa et io molte uoltegno me de la il papa le haueuo de to saria in tute le cose honeste
 compiaciuita et la sua maesta non mi rispose altro et io mi licentiai ho uoluto dire questo tuto a u s illma
@@ -6160,7 +6160,7 @@ sopra quello che io le diceuo ma che le pareua che de le conditioni e a luis uir
 dopre si contentare mi sia la sua maesta che lei douea publicare il concilio io stato giata senza altra
 conditione come hano fare con tuti gli altri re et principe di catolici che non manco di lei uogliono
 conseruare la loro autorita et se pretendea alcun aiser ucdc et ando il concilio ne ri</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R45_reading.md">R45_reading.md</a></p><pre># R45 — Morosini to Montalto, Blois, [mid-]January 1589: audience with Henry III on Navarre, Nevers, the Council of Trent (Francia 22/24, ff. 357r–361v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R45_reading.md">R45_reading.md</a></p><pre translate="no"># R45 — Morosini to Montalto, Blois, [mid-]January 1589: audience with Henry III on Navarre, Nevers, the Council of Trent (Francia 22/24, ff. 357r–361v)
 
 Rests on: the figures. DECODE&#x27;s transcription D1710 (KaJo, Jan 2016) under Meister no. 40, word-decoded with
 `research/reading_audit/reread_b00_decode.py` (`R45_worddecode.txt`, `_figs.txt`) and a scratch variant with a longer
@@ -6294,7 +6294,7 @@ esaminato da laici; et io ancora feci intendere a S. M.tà che se ne astenese, c
 - 357r l. 1: &quot;dela 111&quot;: &quot;dela [Santità di] N. S.&quot; (the code alone is carried).
 - 357r l. 7: &quot;che non 9 1 9 8 mi laso&quot;: two figures before &quot;mi&quot; not carried.
 - 357r l. 24: the closing &quot;2 7 111. 4 2 0 0 1 7 1 0 2 2&quot; after &quot;come ha fato&quot; does not parse.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R45_en.md">R45_en.md</a></p><pre># R45 — English (Morosini to Montalto, Blois, [mid-]January 1589: audience with Henry III on Navarre, Nevers, the Council of Trent)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R45_en.md">R45_en.md</a></p><pre translate="no"># R45 — English (Morosini to Montalto, Blois, [mid-]January 1589: audience with Henry III on Navarre, Nevers, the Council of Trent)
 
 Translation of `R45_reading.md` (pages in the cipher&#x27;s catchword order); holes as there.
 
@@ -6399,7 +6399,7 @@ could not be examined by laymen; and I too let His Majesty know that he should r
 <h3>R46, Francia 22/25, Blois, 24 Jan 1589 (dup.)</h3>
 <p>The Pope rejects the clause &quot;saluis iuribus regis et regni&quot;, and Morosini works on the King&#x27;s confessor and the Keeper of the Seals, who promise to argue his case. Saluzzo is set aside for now. At length Morosini complains of the Pope&#x27;s displeasure and the false reports reaching Rome, and he begs leave to come to Rome to justify himself.</p>
 <p class="ftext">Transcription: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R46_D1711_1711.txt">DOC_R46_D1711_1711.txt</a></p>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R46_decryption.txt">R46_decryption.txt</a></p><pre># R46 decryption, copied verbatim from decode_updates/decryptions/R46.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R46_decryption.txt">R46_decryption.txt</a></p><pre translate="no"># R46 decryption, copied verbatim from decode_updates/decryptions/R46.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 381r]
 oanciu &lt;1715&gt; o l ultime miei r su sai tempo di rispondere ale cifra di u s illma disdel pasato hora le dico
 che hauendo inteso quanto la mi scriue intorno al concilio di tre ne o feci subito sapere al re che il papa
@@ -6481,7 +6481,7 @@ mancara mai di adoprarsi in suo seruitio pregandola a credere che io non mio no 
 hauer ragione alcuna con il papa tedale ii desidero altro che &lt;265&gt; tra lo che le piacende sia informata de
 la ueritato posi sincerare l animo de la il papa quando da persone di poca conscien iia forse altram uisata
 anno ai sauoia usar pia ar</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R46_reading.md">R46_reading.md</a></p><pre># R46 — Morosini to Montalto, [Blois, 24 January 1589]: the publication of the Council of Trent; the Pope&#x27;s displeasure (Francia 22/25, ff. 381r–384r)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R46_reading.md">R46_reading.md</a></p><pre translate="no"># R46 — Morosini to Montalto, [Blois, 24 January 1589]: the publication of the Council of Trent; the Pope&#x27;s displeasure (Francia 22/25, ff. 381r–384r)
 
 Rests on: the figures. DECODE&#x27;s transcription D1711 (KaJo, Dec 2015) under Meister no. 40, segmented into words by
 `research/reading_audit/reread_b00_decode.py` (`R46_worddecode.txt`, `_figs.txt`), then every break re-parsed by hand on
@@ -6595,7 +6595,7 @@ da persone di poca conscientia fose altram[ente] auisata […]
 - 383v l. 13: &quot;9 2 2 0 0 3 5 5 6&quot; after N. S. does not parse.
 - &quot;honore&quot; (384r l. 7) and &quot;hora&quot; (383v l. 9): 4 for 14 (h).
 - 384r l. 16–17: &quot;4 2 0 1 0 9 2 7 196. 1 7 3 4 2 0 0 7 0 7 2 2 1 0 0&quot; at the end does not parse (with 196 Sauoia).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R46_en.md">R46_en.md</a></p><pre># R46 — English (Morosini to Montalto, [Blois, 24 January 1589]: the Council of Trent; the Pope&#x27;s displeasure)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R46_en.md">R46_en.md</a></p><pre translate="no"># R46 — English (Morosini to Montalto, [Blois, 24 January 1589]: the Council of Trent; the Pope&#x27;s displeasure)
 
 Translation of `R46_reading.md`; holes as there.
 
@@ -6669,7 +6669,7 @@ in the right against Our Lord — for from him I desire nothing but what pleases
 the truth and may set His Holiness&#x27;s mind at rest, should he be informed otherwise by persons of little conscience […]</pre></details>
 <h3>R47, Francia 22/26, n.d. [Blois, Jan 1589]</h3>
 <p>Morosini continues his defence and denies ever dealing with the English ambassador. He explains why the Council could not be forced through the parlements and the Estates. He had suggested that the King publish it at once and then send a personage to Rome to ask for his privileges.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R47_D1712_1712.txt">DOC_R47_D1712_1712.txt</a></p><pre>#CATALOG NAME: Segr. Stato Francia 22/26
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R47_D1712_1712.txt">DOC_R47_D1712_1712.txt</a></p><pre translate="no">#CATALOG NAME: Segr. Stato Francia 22/26
 #IMAGE NAME: 385r.jpg-386v.jpg
 #TRANSCRIBER NAME: KaJo
 #DATE OF TRANSCRIPTION: December 27, 2015
@@ -6765,7 +6765,7 @@ the truth and may set His Holiness&#x27;s mind at rest, should he be informed ot
 3 5 2 6 1 7 0 0 5  5 0 5 2 1 2  2 5 0 2 0 3 5 0 1 9 1 4 2 1 3 7 0 0 1 7 2  2 6 2 1 5 0  2 5 2 1 0 1 5 1 9 4 3 7 1 9 1 2 5
 9 1 2 9 5 0 1 7 1 5 2 1 2  1 6^. 5  5 6 1 5 3  6 3 5 0 1 3 7 1 5 2  6 9 9 4 2 5 0 1 7 4 0 2 1 5 1 2 1 8? 1 6  2 6 2 1 0 0 1 5 3
 &lt;CATCHWORD 9 2 5 2 1 4&gt;</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R47_decryption.txt">R47_decryption.txt</a></p><pre># R47 decryption, copied verbatim from decode_updates/decryptions/R47.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R47_decryption.txt">R47_decryption.txt</a></p><pre translate="no"># R47 decryption, copied verbatim from decode_updates/decryptions/R47.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 385r]
 alore et con piu prudenza di me non lo poteua certo ne con magior ratore ne con magior fede non hauendo io
 mai harita altra mira che l honore del sig dio non e buon seruitio di il papa tati cotesta santa sede et
@@ -6813,7 +6813,7 @@ ordini et le constitui io nrr eterminate perche in tanto e buono et uero quello 
 fede in quanto ciuiene comandato et in begnato da la chiesa et pero non doueua regina madre s questo risse
 to la sare di publica resto concilio tei popoli i la uol esero in questo obedire e la almeno hauria dal
 canto suo complire a quello che et uenuta et obligata et dare</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R47_reading.md">R47_reading.md</a></p><pre># R47 — Morosini to Montalto, n.d. [Blois, January 1589] (two leaves of a longer letter): the Council and his own defence (Francia 22/26, ff. 386r–v, 385r–v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R47_reading.md">R47_reading.md</a></p><pre translate="no"># R47 — Morosini to Montalto, n.d. [Blois, January 1589] (two leaves of a longer letter): the Council and his own defence (Francia 22/26, ff. 386r–v, 385r–v)
 
 Rests on: the figures. DECODE&#x27;s transcription D1712 (KaJo, Dec 2015) under Meister no. 40, segmented into words by
 `research/reading_audit/reread_b00_decode.py` (`R47_worddecode.txt`, `_figs.txt`), then every break re-parsed by hand on
@@ -6878,7 +6878,7 @@ mia fede et gratitudine, conoscerà di non hauere alcuno a questo mondo sopra di
 - &quot;[?aspri]&quot; (385v l. 10): 2 4 6 1 7 1 = a + &quot;4 6&quot; + i; aspri would be 2 44 13 171.
 - &quot;[?però] io&quot; (385v l. 11): 6 4 1 5 3 1 7 1 9 = per + e + io.
 - The last words &quot;sopra di che posi ha-&quot; run into the catchword &quot;uere ma-&quot;; the following leaf is missing.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R47_en.md">R47_en.md</a></p><pre># R47 — English (Morosini to Montalto, n.d. [Blois, January 1589], two leaves of a longer letter: the Council and his own defence)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R47_en.md">R47_en.md</a></p><pre translate="no"># R47 — English (Morosini to Montalto, n.d. [Blois, January 1589], two leaves of a longer letter: the Council and his own defence)
 
 Translation of `R47_reading.md`; holes as there. The order of the two leaves (386r–v before 385r–v) is the reading&#x27;s,
 not certain.
@@ -6925,7 +6925,7 @@ test my fidelity and gratitude, you will find that you have no one in this world
 <h3>R48, Francia 22/27, Blois, 30 &amp; 31 Jan 1589</h3>
 <p>Morosini again asks for his leave. The Parisians have put themselves under Mayenne&#x27;s protection, and the King is leaving for Amboise with his prisoners. Morosini protests about moving the Cardinal de Bourbon and the Archbishop of Lyon.</p>
 <p class="ftext">Transcription: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R48_D1713_1713.txt">DOC_R48_D1713_1713.txt</a></p>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R48_decryption.txt">R48_decryption.txt</a></p><pre># R48 decryption, copied verbatim from decode_updates/decryptions/R48.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R48_decryption.txt">R48_decryption.txt</a></p><pre translate="no"># R48 decryption, copied verbatim from decode_updates/decryptions/R48.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 399r]
 &lt;171&gt; obic nr an hauendo io di gia con l ultime mie scrito a soficienza a u s illma soprade miei particolari
 et pretendendo di non disputare conchiogliori uerire o bemine et seruire bastara hora dirle per risposta de
@@ -7023,7 +7023,7 @@ altro che si forma se questo lettere et ch era medesero una copia die sa la qual
 con le prime mira u s illma et procuraro et e la sii in buona formato senza alcuna conditione io mi ha
 promeso sua maesta io non mancai di ricordarle di farla anco a prouare dal parlamento ma mi rispose che hora
 non e i era parlamento hauendo el lei leuata l autorita si snn l&#x27;imperatore doti s pni le et nn</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R48_reading.md">R48_reading.md</a></p><pre># R48 — Morosini to Montalto, [Blois, January 1589]: two cipher sheets — his defence against the Pope&#x27;s displeasure and the news of Paris; his audience with the King on the removal of the prisoners to Amboise (Francia 22/27, ff. 399r–402v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R48_reading.md">R48_reading.md</a></p><pre translate="no"># R48 — Morosini to Montalto, [Blois, January 1589]: two cipher sheets — his defence against the Pope&#x27;s displeasure and the news of Paris; his audience with the King on the removal of the prisoners to Amboise (Francia 22/27, ff. 399r–402v)
 
 Rests on: the figures. DECODE&#x27;s transcription D1713 (KaJo, Jan 2016) under Meister no. 40, segmented into words by
 `research/reading_audit/reread_b00_decode.py` (`R48_worddecode.txt`, `_figs.txt`), then every break re-parsed by hand on
@@ -7160,7 +7160,7 @@ parlamento; ma mi rispose che hora non ci era parlamento, hauendole lei leuata l
 - &quot;si […] in buona forma&quot; (402v l. 10): 1 7 1 8 between si and in does not parse.
 - &quot;fare [?lo] anco&quot; (402v l. 12): 0 5 0 2 between fare and anco.
 - 402v l. 15: the end &quot;8 2 4 7 5 4 0 0 1 112. 2 6 9 6 7 4 4 0 1 1 7 1 0 5 5 6 9 0 1 0&quot; does not parse.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R48_en.md">R48_en.md</a></p><pre># R48 — English (Morosini to Montalto, [Blois, January 1589]: his defence; news of Paris; the audience on the prisoners&#x27; removal to Amboise)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R48_en.md">R48_en.md</a></p><pre translate="no"># R48 — English (Morosini to Montalto, [Blois, January 1589]: his defence; news of Paris; the audience on the prisoners&#x27; removal to Amboise)
 
 Translation of `R48_reading.md`; holes as there.
 
@@ -7245,7 +7245,7 @@ promised me. I did not fail to remind him to have it approved by the Parlement a
 was no Parlement now, since he had taken away its authority […]</pre></details>
 <h3>R49, Francia 22/28, n.d. (fragment) [early 1589]</h3>
 <p>The Archbishop of Lyon refuses to answer the royal commissioners or a bishop, saying he is primate of France. His relatives ask Morosini to plead with the King not to prejudice ecclesiastical dignity and to refer the case to the Pope.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R49_D1714_1714.txt">DOC_R49_D1714_1714.txt</a></p><pre>#CATALOG NAME: Segr. Stato Francia 22/28
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R49_D1714_1714.txt">DOC_R49_D1714_1714.txt</a></p><pre translate="no">#CATALOG NAME: Segr. Stato Francia 22/28
 #IMAGE NAME: 404vr.jpg
 #TRANSCRIBER NAME: KaJo
 #DATE OF TRANSCRIPTION: February 8, 2016
@@ -7275,7 +7275,7 @@ was no Parlement now, since he had taken away its authority […]</pre></details
 0 1 9 5 0 2  2 5 2 1 3 7 4 5 2 1 2  4 3 7 2 1 2 7 1 5 0 9 3 9 1 4 0 5 0 1 7 2  3 0 2 1 0 0 5 1 7 1 0  2 5 0 2 5 3 7 0 1 9 1 1 3^. 5
 2 6 7 1 5^. 1 6 5 7 1 4 1 7 1  3 0 1 7 2 6 2 1 2  2 6 1 7 1 2 5 0 2 5 3 7 0 1 9 2 6 1 7 1  5 4 5 1 7 1 8 1 7 1 9 2 6 3 5 4 5 1 7 2 6 3 5
 &lt;CATCHWORD 0 0 2 1 3&gt;</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R49_decryption.txt">R49_decryption.txt</a></p><pre># R49 decryption, copied verbatim from decode_updates/decryptions/R49.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R49_decryption.txt">R49_decryption.txt</a></p><pre translate="no"># R49 decryption, copied verbatim from decode_updates/decryptions/R49.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 404v]
 quando non siano pagati procurarano dio cui pare qualche citaro paese di sua maesta ale non sapensato di
 rimediare consnla signamenti gia scriti uti questo rumori seruono a la grandeza del il gia re di nauarra
@@ -7289,7 +7289,7 @@ che non ha giurisditione sopra di lui noni che seendosi alterato a sai il re son
 so arciuescouo pregandomi di que sare con sua maesta che non uoglia fare pregiudicio a la dignita
 cclesiastica et di suplicare il papa et se uno stricercato da sua maesta di come ella qualche uno la causa
 sua non lo uoglia fare in alcuno uescouo di francia perche non si fida di alcuno di sei io deside</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R49_reading.md">R49_reading.md</a></p><pre># R49 — Morosini to Montalto, [Blois, early 1589]: unpaid troops; the Archbishop of Lyon refuses to answer the King&#x27;s commissioners (Francia 22/28, f. 404v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R49_reading.md">R49_reading.md</a></p><pre translate="no"># R49 — Morosini to Montalto, [Blois, early 1589]: unpaid troops; the Archbishop of Lyon refuses to answer the King&#x27;s commissioners (Francia 22/28, f. 404v)
 
 Rests on: the figures. DECODE&#x27;s transcription D1714 (KaJo, Feb 2016) under Meister no. 40, segmented into words by
 `research/reading_audit/reread_b00_decode.py` (`R49_worddecode.txt`, `_figs.txt`), then every break re-parsed by hand on
@@ -7330,7 +7330,7 @@ esi. Io deside[…]
 - &quot;simplicem[ente]&quot; (l. 12): 2 4 1 7 2 9 5 0 1 7 2 5 3 5 0 2 8 (a 2 before s; 02 + 8 = -mente).
 - &quot;primate&quot; (l. 14): 70 00 17 20 21 51 5.
 - &quot;Io deside[…]&quot; (l. 22): the page ends in mid-word; the rest of the letter is not in the record.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R49_en.md">R49_en.md</a></p><pre># R49 — English (Morosini to Montalto, [Blois, early 1589]: unpaid troops; the Archbishop of Lyon and the King&#x27;s commissioners)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R49_en.md">R49_en.md</a></p><pre translate="no"># R49 — English (Morosini to Montalto, [Blois, early 1589]: unpaid troops; the Archbishop of Lyon and the King&#x27;s commissioners)
 
 Translation of `R49_reading.md`; holes as there.
 
@@ -7350,7 +7350,7 @@ prejudice the dignity of the Church, and to beg Our Lord, if His Majesty should 
 not to commit it to any bishop of France, since he trusts none of them. I desire […]</pre></details>
 <h3>R51, Francia 22/30, Tours, 27 March 1589</h3>
 <p>A count&#x27;s gentleman brings news that two cavalry companies of Mayenne&#x27;s (under Sagona and Farlandra, who was badly wounded) have been routed and their baggage taken. Orléans and Paris are in the League&#x27;s hands, and Mayenne remains in Paris. The King wants peace, while Navarre is taking places.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R51_D1715_1715.txt">DOC_R51_D1715_1715.txt</a></p><pre>CATALOG NAME: Segr. Stato Francia 22/30
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R51_D1715_1715.txt">DOC_R51_D1715_1715.txt</a></p><pre translate="no">CATALOG NAME: Segr. Stato Francia 22/30
 #IMAGE NAME: 466r.jpg-467r.jpg
 #TRANSCRIBER NAME: KaJo
 #DATE OF TRANSCRIPTION: February 10, 2016
@@ -7417,7 +7417,7 @@ not to commit it to any bishop of France, since he trusts none of them. I desire
 0 1 2 1 3 7 2 1 0 0 9 1 0? 3? 1 6 4 1 5 3  4 2 1 1 3 2 1 2 1 9 3 7 1 7 0 1 5 1 9 5 0 2  7 0 9 1 4 9__ 1 7 2  3 0 2 1 0 0 0 2 2 1 5 0
 1 5 3 8 4 3 5 4 2 3 5 0 1 5  2 0 9 1 2 7 1 7 1 2 2 3 5 2 6 9 1 0 1 9 5 6 4 1 7 1 2 6 3 5 4 2 2 1 2  4 0 1 7 3 7 4 7 1 7 3 0 1 7
 2 5 2 1 0 0 5 3 3 3 5 4 7 9 8 1 1^. 1 4 2 2 7 0 0 1 9^. 2 5 2 0 1 3 1 2 ? ————</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R51_decryption.txt">R51_decryption.txt</a></p><pre># R51 decryption, copied verbatim from decode_updates/decryptions/R51.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R51_decryption.txt">R51_decryption.txt</a></p><pre translate="no"># R51 decryption, copied verbatim from decode_updates/decryptions/R51.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG None]
 aaf
 
@@ -7452,7 +7452,7 @@ dili li basar tene blanca m beri d argen tonto di non re monngliono infinito num
 tal bene sono state poste le guardie in casa per ordine di sua maesta e sendo sospeto d auisare non solo
 quei de la legata quali sie nostrato al ueni siano sempre ma ancora il nauaron u et se sara conuinto la
 potria far male e bene molti credono che si deba giustificare presto il papa sa air bascia cnur a</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R51_reading.md">R51_reading.md</a></p><pre># R51 — Morosini to Montalto, Tours, 27 March 1589: news of the war, Navarre&#x27;s conquests, the abbé del Bene under guard (Francia 22/30, ff. 466r–467r)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R51_reading.md">R51_reading.md</a></p><pre translate="no"># R51 — Morosini to Montalto, Tours, 27 March 1589: news of the war, Navarre&#x27;s conquests, the abbé del Bene under guard (Francia 22/30, ff. 466r–467r)
 
 Rests on: the figures. DECODE&#x27;s transcription D1715 (KaJo, Feb 2016) under Meister no. 40, segmented into words by
 `research/reading_audit/reread_b00_decode.py` (`R51_worddecode.txt`, `_figs.txt`), then re-parsed by hand on the raw
@@ -7504,7 +7504,7 @@ che si deba giustificare presto. […]
   &quot;4 2 5 0 2 1 0 1 2 5 2 1 0 2 4 2 3 5 0 0 1 7&quot; Blanc … Berri, &quot;2 6 2 1 0 0 4 0 3 5 0 1 5 1 9 1 0&quot; Argenton,
   &quot;2 0 9 1 0 1 1 5 2 0 9 1 0 0 4 0 5 0 1 7 9 1 0&quot; Montmorillon).
 - Close (467r l. 9): &quot;8 1 1^. 1 4 2 2 7 0 0 1 9^. 2 5 2 0 1 3 1 2&quot; (N. S. …) does not parse; the sheet ends there.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R51_en.md">R51_en.md</a></p><pre># R51 — English (Morosini to Montalto, Tours, 27 March 1589: news of the war, Navarre&#x27;s conquests, the abbé del Bene under guard)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R51_en.md">R51_en.md</a></p><pre translate="no"># R51 — English (Morosini to Montalto, Tours, 27 March 1589: news of the war, Navarre&#x27;s conquests, the abbé del Bene under guard)
 
 Translation of `R51_reading.md`; holes as there.
 
@@ -7537,7 +7537,7 @@ for him, although many believe he will soon clear himself. […]</pre></details>
 <h3>R52, Francia 22/31, Tours, 6 April 1589</h3>
 <p>The castellan of Angers refuses the League&#x27;s bribe, and Marshal d&#x27;Aumont secures the castle for the King, who writes him a letter in his own hand. The count is sent to Brittany against the Duke of Mercoeur; Alfonso Corso is in Auvergne; Épernon&#x27;s command is disputed; Mayenne is still in Paris. The King keeps Holy Week and Easter devotions and touches for the scrofula.</p>
 <p class="ftext">Transcription: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R52_D1716_1716.txt">DOC_R52_D1716_1716.txt</a></p>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R52_decryption.txt">R52_decryption.txt</a></p><pre># R52 decryption, copied verbatim from decode_updates/decryptions/R52.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R52_decryption.txt">R52_decryption.txt</a></p><pre translate="no"># R52 decryption, copied verbatim from decode_updates/decryptions/R52.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 473r]
 sa come quali sendosi a co auto il castela no dang uerse et nei de la cita per pra di mons d im nisa et
 auano per unirsi con l altre co ligate e tiratendeuano altro per efetuare il loro disegno et narriuo di mons
@@ -7615,7 +7615,7 @@ maesta questo tre di de la sertimana santa e stata aglirfi cias an francesco di 
 francescani et seco anonicata il gioue dil sabato et il giorno di pas casa uendo la uiati al solito non
 piedi a poueri in un gran sa lonti chi si ma mado bato et segnate le scro folto altri ofici di pieta il che
 seruira per fine di questo sia come t inghilterra nno a re il papa sici</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R52_reading.md">R52_reading.md</a></p><pre># R52 — Morosini to Montalto, Tours, 6 April 1589: Angers castle saved for the King, the war in the provinces, Épernon, Mayenne, the archbishop of Tours, Holy Week at court (Francia 22/31, ff. 473r–474v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R52_reading.md">R52_reading.md</a></p><pre translate="no"># R52 — Morosini to Montalto, Tours, 6 April 1589: Angers castle saved for the King, the war in the provinces, Épernon, Mayenne, the archbishop of Tours, Holy Week at court (Francia 22/31, ff. 473r–474v)
 
 Rests on: the figures. DECODE&#x27;s transcription D1716 (transcriber&#x27;s notes: &quot;difficult to see some numbers due to ink
 quality&quot;, &quot;right margin&quot; on 474v) under Meister no. 40, segmented into words by
@@ -7718,7 +7718,7 @@ ofici di pietà; il che seruirà per fine di questa […]
 - 474v l. 33 (last line): &quot;8 5 5 4 7 2 7 9 6 [173] 0 0 9 2 1 2 0 0 5 [111] 4 7 5 2 1 7 1&quot;: the closing does not parse.
 - Spurious dots: 816 (8 + 16 et), 265 (165), 216 is &quot;auiso&quot; without its dot on 473r l. 25; 229 Ugonotti is real.
 - Recurring transcription habits: 3 0 0 0 / 7 0 0 0 for fr / pr; 30 for 70 in &quot;Preuosto&quot; (474v l. 11).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R52_en.md">R52_en.md</a></p><pre># R52 — English (Morosini to Montalto, Tours, 6 April 1589: Angers, the war in the provinces, Épernon, Mayenne, Holy Week)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R52_en.md">R52_en.md</a></p><pre translate="no"># R52 — English (Morosini to Montalto, Tours, 6 April 1589: Angers, the war in the provinces, Épernon, Mayenne, Holy Week)
 
 Translation of `R52_reading.md`; holes as there.
 
@@ -7790,7 +7790,7 @@ the feet of the poor as usual in a great hall richly adorned, and touched for th
 which will serve as the end of this […]</pre></details>
 <h3>R55, Francia 22/34, Moulins, 11 June 1589</h3>
 <p>A gentleman of the Grand Duchess of Tuscany reports that the Comte de Soissons (?) was captured in bed by the Duke of Mercoeur, and that a League count was killed by a gunpowder explosion. The King is marching on Paris, where Mayenne is and the city is barricaded, with 4,000 horse and 17,000 foot; Swiss and Casimir&#x27;s cavalry are coming, and Épernon has taken Montereau. Morosini also passes on, with doubts, a rumour of a plot to kill the King.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R55_D1719_1719.txt">DOC_R55_D1719_1719.txt</a></p><pre>#CATALOG NAME: Segr. Stato Francia 22/34
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R55_D1719_1719.txt">DOC_R55_D1719_1719.txt</a></p><pre translate="no">#CATALOG NAME: Segr. Stato Francia 22/34
 #IMAGE NAME: 516r.jpg-516v.jpg
 #TRANSCRIBER NAME: KaJo
 #DATE OF TRANSCRIPTION: February 28, 2016
@@ -7840,7 +7840,7 @@ which will serve as the end of this […]</pre></details>
 1 6^. 6  6 2 1 0 1 5 1 9 4 3 5 4 2 3 5 0 1 5 1 7 1 9 7 1 5 0 9 6 3 5 0 1 4 0 9 6 3 7 1 5 9 6 4  3 3 5 0 0 9  7 0 9 1 1 7 5 6 5 0 2 1^. 6 1 7 3
 1 7 3 5 0 1 5  2 6 2 1 5 0 2  2 5 9 1 0 0 1 5 1 5 3  2 6 9 1 3 7 5 5 0 5 0 3 7 9 1 3 7 5 4 1 7 1  3 0 9 1 0 0 2 0 2 1 0 1 9 4 3 5 2 9 0 0 5
 2 1 2 5 0  2 1 2 3 7 2 1 0 1 5 1 2 1 4 0 1 7 9  2 6 3 5 0 5 2  7 0 2 1 0 0 1 5 1 5 3 8 4 9__ 5 2 1 1^. 1 2 7 0 0 1 6 9 ���</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R55_decryption.txt">R55_decryption.txt</a></p><pre># R55 decryption, copied verbatim from decode_updates/decryptions/R55.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R55_decryption.txt">R55_decryption.txt</a></p><pre translate="no"># R55 decryption, copied verbatim from decode_updates/decryptions/R55.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 516r]
 reii regina d&#x27;inghilterra m potuto che habia scrito a u s illma quanto mio correua per l ordinario et
 inuiato anco i duplicati non uoglio pero e stare anco al presente con ocasione di un gentilhuomo de la
@@ -7862,7 +7862,7 @@ in francia hauendo ancora questo diien &lt;29&gt; e per non e preso montere o fa
 uiedere quando a che era stato presto un giorgio da uoi ora nando che haueua deliberato di amazare il re ho
 uoluto dire a u s illma questo tanto se bene io non lo tengo tuto per uero poi che l auisi uiene da la corte
 doue el nuoui si formano sempre a la uantagio de la parte qua a il papa ltre to</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R55_reading.md">R55_reading.md</a></p><pre># R55 — Morosini to Montalto, Moulins, 11 June 1589: Soissons taken prisoner by Mercœur, the King&#x27;s march on Paris, Épernon takes Montereau (Francia 22/36, ff. 516r–v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R55_reading.md">R55_reading.md</a></p><pre translate="no"># R55 — Morosini to Montalto, Moulins, 11 June 1589: Soissons taken prisoner by Mercœur, the King&#x27;s march on Paris, Épernon takes Montereau (Francia 22/36, ff. 516r–v)
 
 Rests on: the figures. DECODE&#x27;s transcription D1719 under Meister no. 40, segmented into words by
 `research/reading_audit/reread_b00_decode.py` (`R55_worddecode.txt`, `_figs.txt`), then every break re-parsed by hand on
@@ -7917,7 +7917,7 @@ dela parte [?sua]. N. S. […]
 - &quot;Giorgio da Uoi, normando&quot; (516v l. 13): 40 17 91 00 40 17 91 | 26 21 37 91 17 | 8 | 0 91 00 20 21 01 26 191.
 - &quot;dela parte [?sua]. N. S. […]&quot; (516v l. 17, last line): 4 9 5 2 then 111 and 2 7 0 0 1 6 9: the closing does not
   parse.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R55_en.md">R55_en.md</a></p><pre># R55 — English (Morosini to Montalto, Moulins, 11 June 1589: Soissons taken by Mercœur, the King&#x27;s march on Paris)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R55_en.md">R55_en.md</a></p><pre translate="no"># R55 — English (Morosini to Montalto, Moulins, 11 June 1589: Soissons taken by Mercœur, the King&#x27;s march on Paris)
 
 Translation of `R55_reading.md`; holes as there.
 
@@ -7944,7 +7944,7 @@ Lordship this much, although I do not hold it all for true, since the news comes
 shaped to the advantage of [its] side. Our Lord […]</pre></details>
 <h3>R56, Francia 22/35, Moulins, 16(?) June 1589</h3>
 <p>Morosini is distressed by Montalto&#x27;s letter about his secretary. The monitorium has reportedly been posted at St Peter&#x27;s, and Cardinal Joyeuse and the French ambassador are leaving Rome. Morosini thinks of retiring to Lyon, but the Lyonnais will let him stay only three days.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R56_D1720_1720.txt">DOC_R56_D1720_1720.txt</a></p><pre>#CATALOG NAME: Segr. Stato Francia 22/35
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R56_D1720_1720.txt">DOC_R56_D1720_1720.txt</a></p><pre translate="no">#CATALOG NAME: Segr. Stato Francia 22/35
 #IMAGE NAME: 522r.jpg-523r.jpg
 #TRANSCRIBER NAME: KaJo
 #DATE OF TRANSCRIPTION: January 3, 2016
@@ -8036,7 +8036,7 @@ shaped to the advantage of [its] side. Our Lord […]</pre></details>
 0 1 2 5 9 7 0 2 1 1 3 2 5 2 1 2 0 8 6 5 4 1 5 3 1 7 1 9  3 6 1 7 3 7 3 5 4 5 1 7 1 6 3 7 1 5 9 1 6^. 5 5 6 9 7 4 1 7 1 2  6 1 7 2 5 1 5 3
 4 2 1 0 0 3 5 1 7 1  4 1 7 2 5 3 7 1 3 9 2 6 1 7 1  2 6 1 7 1 3 5 0 5 2 0 9 1 2 3 ? 1 9 1 7 0 1 7 1 7 3 3 0 2 1 5 0 4 5 1 7 1 5 2 5 6 1 7 3
 3 5 0 0 1 7 1 5 2 1 2 8 4 4 9__ 5 2 0 0 1 6^. 6 2 2 1 1 7 0 0 1 ��</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R56_decryption.txt">R56_decryption.txt</a></p><pre># R56 decryption, copied verbatim from decode_updates/decryptions/R56.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R56_decryption.txt">R56_decryption.txt</a></p><pre translate="no"># R56 decryption, copied verbatim from decode_updates/decryptions/R56.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 522r]
 intin il papa in questo nia con ualescenza mise una cosa mi poteua afligere etat uerare piu che l intendere
 per la lettere di u s illma drizo del pasato come in conformita m haueuadere o il mio secretario senza pero
@@ -8085,7 +8085,7 @@ duemieria fantito alquanti cauali per andarsi congiungersi con i suizeri che uen
 et non mia sicuro che siano tu teuere ma io non poso scriuere a u s illma se non quello che intendo et anco
 par canseio scriue si tuto quello che qui si di cesarei sicuro di dire la no anto piu falsita et uerita so e
 ar questo aai nn</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R56_reading.md">R56_reading.md</a></p><pre># R56 — Morosini to Montalto, Moulins, mid-June 1589: the legate&#x27;s distress at the monitory, Lyon closed to him, the King&#x27;s successes, Lyon turns royalist (Francia 22/37, ff. 522r–523r)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R56_reading.md">R56_reading.md</a></p><pre translate="no"># R56 — Morosini to Montalto, Moulins, mid-June 1589: the legate&#x27;s distress at the monitory, Lyon closed to him, the King&#x27;s successes, Lyon turns royalist (Francia 22/37, ff. 522r–523r)
 
 Rests on: the figures. DECODE&#x27;s transcription D1720 under Meister no. 40 (transcriber&#x27;s note: 522v line 24 damaged),
 segmented into words by `research/reading_audit/reread_b00_decode.py` (`R56_worddecode.txt`, `_figs.txt`), then every
@@ -8160,7 +8160,7 @@ sicuro di dirle molto più falsità che uerità. […]
 - Separators: &quot;8 0 8&quot; after &quot;martirio&quot; (522v l. 3), &quot;atorno&quot; (522v l. 10), &quot;cosa alcuna&quot; (523r l. 1), and &quot;8 1 0 8&quot;
   after &quot;loco&quot; (522v l. 29); cf. R55 (8 9 8 / 8 0 8).
 - Spurious dots: &quot;1666.&quot; on 522v l. 3 is 166 questo with a doubled 6; the dot of 171 on 522r l. 7 sits on &quot;di&quot;.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R56_en.md">R56_en.md</a></p><pre># R56 — English (Morosini to Montalto, Moulins, mid-June 1589: the monitory, Lyon closed to him, Lyon turns royalist)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R56_en.md">R56_en.md</a></p><pre translate="no"># R56 — English (Morosini to Montalto, Moulins, mid-June 1589: the monitory, Lyon closed to him, Lyon turns royalist)
 
 Translation of `R56_reading.md`; holes as there.
 
@@ -8209,7 +8209,7 @@ true; but I can write to Your Most Illustrious Lordship only what I hear, and sp
 that is said here I am sure I would tell you much more falsehood than truth. […]</pre></details>
 <h3>R57, Francia 22/36, n.d. (enclosures dated &quot;dix di giugno&quot; [1589], Moulins)</h3>
 <p>This record holds copies of papers sent to M. de la Guiche. The first says the King&#x27;s Swiss army (about 12,000 Swiss and 2,000 lansquenets, some 17–18,000 men with 12 guns) is marching, paid with money lent by Strasbourg. The second is the oath of the inhabitants of Moulins to live and die Catholic and loyal to &quot;Henri, by the grace of God King of France and Poland&quot;.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R57_D1721_1721.txt">DOC_R57_D1721_1721.txt</a></p><pre>#CATALOG NAME: Segr. Stato Francia 22/36
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R57_D1721_1721.txt">DOC_R57_D1721_1721.txt</a></p><pre translate="no">#CATALOG NAME: Segr. Stato Francia 22/36
 #IMAGE NAME: 524r.jpg-525r.jpg
 #TRANSCRIBER NAME: KaJo
 #DATE OF TRANSCRIPTION: January 3, 2016
@@ -8284,7 +8284,7 @@ that is said here I am sure I would tell you much more falsehood than truth. [�
 0 0 5 1 4 2 1 0 1 9  2 6 2 1 5 1 1 7 1  5 0 7 5 0 9 1 0 0 9 0 9 1 2 0 1 7 1 5 6 4 9 1 0 1 9  4 1 5 2 1 5 1 1 7 1  6 0 0 2 1 3 6 1 7 1 5 1 7 1 6 2
 2 1 5 0  0 9 1 5 1 2 1 1 7 9 8 2 6 3 5 0 5 2 1 2  4 1 7 4 0 1 0 9 1 0 0 1 7 2  6 2 1 7 1  4 2 9 1 0 0 4 2  9 1 0 1 3 5 4 5 1 3? 5 8 0 3 5 0 5 
 3 0 1 7 0 1 5  2 6 3 5 0 5 1 5 3 3 3 3 5 4 5 3 5 0 1 5 1 1 7 1 8 4 9__  2 7 5 9 1 1 2 2  1 6^. 6 �</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R57_decryption.txt">R57_decryption.txt</a></p><pre># R57 decryption, copied verbatim from decode_updates/decryptions/R57.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R57_decryption.txt">R57_decryption.txt</a></p><pre translate="no"># R57 decryption, copied verbatim from decode_updates/decryptions/R57.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 524r]
 que u s illma e orator tione de la lettere utica a mons de la guich am i orig nancorare quando io cercario
 un suo a questeso per inuiarui io ho trouato questo portatore an esagi ero di molin st mi ha promeso di
@@ -8322,7 +8322,7 @@ le promese et a sociationi che pote sero hauere fatti nostrario se alcune ce ne 
 quello soder ei habitanti che sano segnare hano segnato et per lo risguardo di coloro che non sano segnare
 hano dati li loro nomi che sono stati trascriti dal notario de la signoria di borboneste el fine de le
 presenti olte ora a questo</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R57_reading.md">R57_reading.md</a></p><pre># R57 — Morosini to Montalto, [Moulins, June 1589]: two French papers sent to M. de la Guiche, in Italian translation (Francia 22/36, ff. 524r–525r)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R57_reading.md">R57_reading.md</a></p><pre translate="no"># R57 — Morosini to Montalto, [Moulins, June 1589]: two French papers sent to M. de la Guiche, in Italian translation (Francia 22/36, ff. 524r–525r)
 
 Rests on: the figures. DECODE&#x27;s transcription D1721 (KaJo, Jan 2016) under Meister no. 40, segmented into words by
 `research/reading_audit/reread_b00_decode.py` (`R57_worddecode.txt`, `_figs.txt`), then every break re-parsed by hand on
@@ -8389,7 +8389,7 @@ notaio dela signoria di Borbones[e], nel fine dele presenti. […]
 - &quot;[?gouernamento]&quot; (524v l. 19): &quot;4 0 9 1 3 7? 3 5 0 0 1 0 2 1 2 0 3 5 0 3 5 1 9&quot;.
 - &quot;ubidire&quot; (525r l. 3): &quot;16 8 26 | 3 42 17 26 17 00 5&quot; = et (null 8) d(i) u b i d i r e, as the figures spell it (r2p).
 - The last line (525r l. 13: &quot;8 4 9 2 7 5 9 1 1 2 2 166 …&quot;) breaks off in corrupt characters.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R57_en.md">R57_en.md</a></p><pre># R57 — English (Morosini to Montalto, [Moulins, June 1589]: two French papers sent to M. de la Guiche, in Italian translation)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R57_en.md">R57_en.md</a></p><pre translate="no"># R57 — English (Morosini to Montalto, [Moulins, June 1589]: two French papers sent to M. de la Guiche, in Italian translation)
 
 Translation of `R57_reading.md`; holes as there.
 
@@ -8428,7 +8428,7 @@ those of the said inhabitants who can sign have signed, and as regards those who
 names, which have been transcribed by the notary of the lordship of Bourbonnais at the end of these presents. […]</pre></details>
 <h3>R58, Francia 22/37, Moulins, 5 July 1589 (dup.)</h3>
 <p>The King has taken Jargeau (&quot;Giorgio&quot;) and its Loire bridge, hanged a captain and pardoned the governor. Other Loire towns have surrendered, and the King is heading for Paris, where four faubourgs are said to favour him. Mayenne has taken Montereau and Nemours is raising money at Lyon for the League&#x27;s Swiss.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R58_D1722_1722.txt">DOC_R58_D1722_1722.txt</a></p><pre>#CATALOG NAME: Segr. Stato Francia 22/37
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/decode/DOC_R58_D1722_1722.txt">DOC_R58_D1722_1722.txt</a></p><pre translate="no">#CATALOG NAME: Segr. Stato Francia 22/37
 #IMAGE NAME: 533r.jpg-534r.jpg
 #TRANSCRIBER NAME: KaJo
 #DATE OF TRANSCRIPTION: February 29, 2016
@@ -8538,7 +8538,7 @@ names, which have been transcribed by the notary of the lordship of Bourbonnais 
 9 1 0 1 4 8 7 1 2 0 7 1 5 3  7 0 2 1 0 0 4 5 9 2 6 9 1 3 7 3 5 0 0 5  5 0 2 1 4 5 2 1 0 0 5  2 6 1 7 1 2 6 2 1 0 0 1 0 5 1 9 1 5 9 2 1 2  1 6^. 7 5 6 5 0 5
 2 0 3 5 1 5 3 5 0 0 2  1 7 1 0  1 6^. 5  1 9 4 5 1 7 2 6 3 5 0 0 2 1 5 1  1 7 9 1 0 1 5  5 6 7 0 2 1 0 0 3 5 0 0 2  2 5 0 2 4 1 7 0 1 4 0? 9 1 5 0 2 1 0 0 5
 4 3 7 2 1 2  3 3 3 7 2 6 3 5 0 1  1 2 2 1 2 8 1 1^. 1  4 5 0 0 9 7 9 6 1 3 2 4 9__ 7 0 0 1 2 —————————</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R58_decryption.txt">R58_decryption.txt</a></p><pre># R58 decryption, copied verbatim from decode_updates/decryptions/R58.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R58_decryption.txt">R58_decryption.txt</a></p><pre translate="no"># R58 decryption, copied verbatim from decode_updates/decryptions/R58.txt (22 Oct 2026); word-split by make_decryptions.py from decrypt_raw.txt (Meister no. 40 key), no letters changed; the run-on stream for every item is plaintext_by_record.txt
 [IMG 533r]
 goeia a questo s de le cose di qui io non la saro di dirle quello che s intende se bene con molta dificolta
 si puo sapere una uerita poi che ognuno parla secondo il suo senso i e inteso che il re habia preso giorgio
@@ -8591,7 +8591,7 @@ questo mons mi ha refcrto se bene io gli presto poca fede e sendo molto parti al
 certo che uiene da la corte hauendo animortate lettere del sig gale arao fregosto et de le nuoui si rimete a
 quello che intendero da sto mons non mie parso douere la sare di darne conto a u s illma che le mere era in
 quello consideratione et parera albingolar sua prudenza il papa sero io traso inna</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R58_reading.md">R58_reading.md</a></p><pre># R58 — Morosini to Montalto, Moulins, 5 July 1589: Jargeau taken, the King&#x27;s march on Paris (Francia 22/37, ff. 533r–534r)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R58_reading.md">R58_reading.md</a></p><pre translate="no"># R58 — Morosini to Montalto, Moulins, 5 July 1589: Jargeau taken, the King&#x27;s march on Paris (Francia 22/37, ff. 533r–534r)
 
 Rests on: the figures. DECODE&#x27;s transcription D1722 (KaJo) under Meister no. 40, segmented into words by
 `research/reading_audit/reread_b00_decode.py` (`R58_worddecode.txt`, `_figs.txt`), then every break re-parsed by hand on
@@ -8668,7 +8668,7 @@ meterà in quella consideratione che parerà ala singolar sua prudenza. […]
   carried.
 - &quot;[p]ortate&quot; (534r l. 24): 2 0 for 7 0.
 - The transcription stops at &quot;ala singolar sua&quot; (534r l. 30); the last figures were not transcribed.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R58_en.md">R58_en.md</a></p><pre># R58 — English (Morosini to Montalto, Moulins, 5 July 1589: Jargeau taken, the King&#x27;s march on Paris)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R58_en.md">R58_en.md</a></p><pre translate="no"># R58 — English (Morosini to Montalto, Moulins, 5 July 1589: Jargeau taken, the King&#x27;s march on Paris)
 
 Translation of `R58_reading.md`; holes as there.
 
@@ -8723,7 +8723,7 @@ account of it to Your Most Illustrious Lordship, who will give it the considerat
 […]</pre></details>
 <h3>R17, Francia 18/3, ff. 233r-235v, 1587</h3>
 <p>A Morosini-period letter of 1587 in the Meister no. 40 key, filed by DECODE with the Bergamo/Nazareth despatches: it concerns the Duke of Lorraine and Guise, the German reiters, the Queen Mother and Schomberg.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/R17_transcription_decode.txt">R17_transcription_decode.txt</a></p><pre>#CATALOG NAME: Segr. Stato Francia 18/3/
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/R17_transcription_decode.txt">R17_transcription_decode.txt</a></p><pre translate="no">#CATALOG NAME: Segr. Stato Francia 18/3/
 #IMAGE NAME: 233r-235v
 #TRANSCRIBER NAME: TimB
 #DATE OF TRANSCRIPTION: December 21, 2015
@@ -8845,7 +8845,7 @@ account of it to Your Most Illustrious Lordship, who will give it the considerat
 1 7 2 1 0 0 1 9 1  8 2 6 1 7 1 8 0 3 2 1 0 0 5 6 3 7 1 5 1 9 1 1 6^. 5 5 6 8 4 2 1 0 0 2 1 2  8 1 7 1 0  8 0 2 1 5 3 6 4
 1 7 1 0 2 7 0 3 5 2 6 1 7 0 0 0 5 1 9 1 8 7 9 8 7 1 8 7 0 0 0 3 5 1 5 3 5 0 0 0 2 3 5 1 5 1 9 1 8 2 0 1  5 2 9 8 2 0 5
 7 0 1 3 3 5 4 5 3 5 0 1 1 5 1 5 3  8 2 6 1 7 1 0 3 2 1 0 0 5 S 6 3 7 1 5 1 7 1 1 6^. 5 1 7 3 0 3 1 7 5 2 7 8 5 6^. 1 7 1 9  8 7 0 9 1</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/R17_decryption.txt">R17_decryption.txt</a></p><pre>== R17 233r.jpg (1092 items, -1.16/item)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/R17_decryption.txt">R17_decryption.txt</a></p><pre translate="no">== R17 233r.jpg (1092 items, -1.16/item)
 sosprocuraredileuareledificultatodifiatemcituointrodureniunioneetolanuoniouareipresentibisognigseinpersoarernemarscialediresettemeasari[QUESTO]caridentiinunlongoragionamentochehauatomecohogiconcludechee[IL PAPA]iopadredelachristianitanoninterponeuiuanentelautoritasuacosiconileoancoconglialtriiuederimedioet[QUESTO]regnononsiperdandeioperintendere[QUELLO]cheegliuolesedirechepotesecun[QUESTO]casofarela[IL PAPA]dopolongocircuitodiparoledieseet[QUESTO]eraricercaredintenderelepretensionidelunaetlaltrapartedatarearagioneetilortoachelhaueseprocurandopoiconlaopremauaautoritadifarecheognunosicontentidelhonestoetchenonceraaltrorimedioa[QUESTO]male
 
 == R17 234r.jpg (1288 items, -1.13/item)
@@ -8859,7 +8859,7 @@ replicatoalsodetoducaetnonatebaentrarein[FRANCIA]manonpotendorotutociorimouerlos
 
 == R17 235v.jpg (1239 items, -1.33/item)
 senzailgiuramentositienepersicurocheileriaperuoltarelesueforzecontradiluidenendopercertochenintentioneuadodeglialtridelalegasiauoltaaleuargineacoronaetdigiaidiscorretapersonedimoltaquantitaetposcriuenireparigiointentioanredifaridureunconsigliodelirestatidelregnoperatichiararelenhabilealgouernonecheebeneinareuerisimilenempochesitrouanoant[722?]inelregnoina[REGINA MADRE]nelragionamentochehohautohogiecosadimostratodiremeresaiecontinuail[DUCA DI]lorenoauoleruenireinanzidiqualcheinfeliceuicesoiononhomancatodidarnimo[REGINA MADRE]etseuedrotiatacaminodicombaterefra[CATOLICI]nonlasciarodifaretuto[QUELLO]chesarainaetsimpedirloorpretermetroncolpresentedifaretuti[QUELLO]unuici[561?]nonono</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/R17_words.txt">R17_words.txt</a></p><pre>== R17 233r.jpg (1092 items, -1.16/item)
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/R17_words.txt">R17_words.txt</a></p><pre translate="no">== R17 233r.jpg (1092 items, -1.16/item)
 so sprocurare di leuare l edificultato di fiatem cit uo introdur en iunione et olan uon iouare i presenti bisogni g sein perso ar erne marsciale dire sette measari [QUESTO] ca ridenti in un longo ragionamento che hauato meco hogi conclude che e [IL PAPA] io padre de la christianita non interpone uiuan ente l autorita sua cosi coni leo anco con gli altri i uede rimedio et [QUESTO] regno non si per d ande io per intendere [QUELLO] che egli uole se dire che pote secun [QUESTO] caso fare la [IL PAPA] dopo longo circuito di parole diese et [QUESTO] era ricercare d intendere le pretensioni del una et l altra parte datare a ragione et il orto a che l hauese procurando poi con la o premaua autorita di fare che ognuno si contenti del honesto et che non c era altro rimedio a [QUESTO] male
 
 == R17 234r.jpg (1288 items, -1.13/item)
@@ -8873,7 +8873,7 @@ replicato also de to duca et non a teba entrare in [FRANCIA] ma non potendo rotu
 
 == R17 235v.jpg (1239 items, -1.33/item)
 senza il giuramento si tiene per sicuro che ileria per uoltare le sue forze contra di lui denendo per certo che n intentione uado degli altri de la lega sia uolta a leuargine a corona et di gia i discorreta persone di molta quantita et poscriuenire parigio intentio an re di fa ridure un consiglio de li restati del regno peratichiarare le n habile al gouernone che eben ein are uerisimile nempo che si trouano ant [722?] i nel regno in a [REGINA MADRE] nel ragionamento che ho hauto hogi e cosa dimostrato di remere sai e continua il [DUCA DI] loreno a uoler uenire inanzi di qualche infelice uice so io non ho mancato di darnimo [REGINA MADRE] et se uedro tiata camino di comba tere fra [CATOLICI] non lasciaro di fare tuto [QUELLO] che saraina et simpedirlo or preterme tron col presente di fare tu ti [QUELLO] unuici [561?] no non o</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R17_reading.md">R17_reading.md</a></p><pre># R17 — Nuncio&#x27;s cipher enclosure, Paris, 1586–87: the Duke of Lorraine&#x27;s army and the oath (Francia 18/3, ff. 233r, 234r–235v)
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R17_reading.md">R17_reading.md</a></p><pre translate="no"># R17 — Nuncio&#x27;s cipher enclosure, Paris, 1586–87: the Duke of Lorraine&#x27;s army and the oath (Francia 18/3, ff. 233r, 234r–235v)
 
 Rests on: the figures. DECODE&#x27;s transcription (TimB, Dec 2015, `R17_transcription_decode.txt`) under Meister no. 40,
 segmented into words by `research/reading_audit/reread_b00_decode.py` (`R17_worddecode.txt`, `_figs.txt`), then every
@@ -8956,7 +8956,7 @@ che sarà in me per impedirlo, come non pretermeto anco al presente di fare tuti
 - &quot;[?la] Regina Madre&quot; (235r l. 11): figures 5 2 1 2 before 116; la would be 50 212.
 - &quot;[?che] non segua&quot; (235r l. 12): figures 6 3 (chi) again where che is wanted.
 - &quot;tanti heretici&quot; (235v l. 11): 2^. 2 7 = 227 with the dot on the first figure.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R17_en.md">R17_en.md</a></p><pre># R17 — English (nuncio&#x27;s cipher enclosure, Paris, 1586–87: the Duke of Lorraine&#x27;s army and the oath)
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/texts/R17_en.md">R17_en.md</a></p><pre translate="no"># R17 — English (nuncio&#x27;s cipher enclosure, Paris, 1586–87: the Duke of Lorraine&#x27;s army and the oath)
 
 Translation of `R17_reading.md`; holes as there.
 
@@ -9017,13 +9017,13 @@ those offices that I can […]</pre></details>
 <li>No printed edition of Morosini&rsquo;s legation turned up (there is no Acta Nuntiaturae Gallicae volume for 1587&ndash;89); searched 19 September 2026.</li>
 </ul>
 
-<p class="muted">Decoder, notes, the decoded pages and the summaries: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/morosini1588"><code>targets/morosini1588/</code></a>. Page images are not reproduced beyond the crop above.</p>
+<p class="muted">Decoder, notes, the decoded pages and the summaries: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/morosini1588"><code translate="no">targets/morosini1588/</code></a>. Page images are not reproduced beyond the crop above.</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Archivio Apostolico Vaticano, via DECODE R18&ndash;R58</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="r3708.html" rel="prev">&larr; Informant to the Nevers household, June 1588 1588</a><a href="mendoza1589.html" rel="next">Mendoza 1589 1589 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

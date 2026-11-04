@@ -75,13 +75,13 @@
 
 <h2 id="keys"><span class="num">02</span> The keys, made machine-readable</h2>
 
-<p>Lasry&rsquo;s list gives each key as a transposition permutation and a 36-character substitution square, the cells in row order of A D F G V X. Three of the fourteen squares contain runs of hyphens for cells never recovered, and the text layer of the PDF collapses those runs into en- and em-dashes, leaving squares of 34 or 35 characters. Expanding each dash back to the run length that makes 36 repairs all three. All fourteen are in <code>keys.json</code>.</p>
+<p>Lasry&rsquo;s list gives each key as a transposition permutation and a 36-character substitution square, the cells in row order of A D F G V X. Three of the fourteen squares contain runs of hyphens for cells never recovered, and the text layer of the PDF collapses those runs into en- and em-dashes, leaving squares of 34 or 35 characters. Expanding each dash back to the run length that makes 36 repairs all three. All fourteen are in <code translate="no">keys.json</code>.</p>
 
-<p>The key numbers admit two interpretations. Either <code>perm[i]</code> is the column emitted i-th, or it is the position at which column i is emitted. Both round-trip self-consistently, so an encrypt-decrypt test cannot tell them apart. Decrypting a real message can. It is the second.</p>
+<p>The key numbers admit two interpretations. Either <code translate="no">perm[i]</code> is the column emitted i-th, or it is the position at which column i is emitted. Both round-trip self-consistently, so an encrypt-decrypt test cannot tell them apart. Decrypting a real message can. It is the second.</p>
 
 <h3>The key not on the list</h3>
 
-<p>On 3 May 2017 Lasry reported in the thread that a two-part message, the FFVXV cryptogram of 13 November and the AFAFF fragment that continues it, decrypted jointly under a key that was in none of the fourteen periods: transposition word CMBLAKOHIDENFJGP, length 16. He gave the joint plaintext, 173 letters, and noted that his program had needed all 356 ciphertext letters to recover a length-16 key. The substitution square was not published. It is rebuilt here by aligning the untransposed bigrams of the two cryptograms with his plaintext, Norbert&rsquo;s corrections applied: 24 of 36 cells, with the digits and the letters M, Q and Y unrecovered because the message never uses them. It is the fifteenth entry in <code>keys.json</code> and the repo&rsquo;s notes call it the CHI key, after the header of the message it enciphered.</p>
+<p>On 3 May 2017 Lasry reported in the thread that a two-part message, the FFVXV cryptogram of 13 November and the AFAFF fragment that continues it, decrypted jointly under a key that was in none of the fourteen periods: transposition word CMBLAKOHIDENFJGP, length 16. He gave the joint plaintext, 173 letters, and noted that his program had needed all 356 ciphertext letters to recover a length-16 key. The substitution square was not published. It is rebuilt here by aligning the untransposed bigrams of the two cryptograms with his plaintext, Norbert&rsquo;s corrections applied: 24 of 36 cells, with the digits and the letters M, Q and Y unrecovered because the message never uses them. It is the fifteenth entry in <code translate="no">keys.json</code> and the repo&rsquo;s notes call it the CHI key, after the header of the message it enciphered.</p>
 
 <h2 id="table"><span class="num">03</span> The 2017 results in one table</h2>
 <figure class="creveal" data-src="reveal/adfgvx.json"></figure>
@@ -132,9 +132,9 @@
 <p>Five keys are complete for their messages, two are partial, and nine messages belong to no known key, so the entry as a whole is not complete.</p>
 <h2 id="method"><span class="num">05</span> Norbert&rsquo;s method, reimplemented</h2>
 
-<p>Norbert stated his method in one sentence: add or remove up to five characters at two different positions, exhaustive search, an n-gram value function to rank the results. <code>blocks.py</code> does exactly that. For each of the fifteen keys, and each choice of up to two block edits of one to five letters, inserted or deleted at the five-letter group boundaries of the transcript, it decrypts and scores the result with a German quadgram model built from 3.6 million letters of Gutenberg German (<code>lm_de.py</code>). Windows that contain a digit or an unrecovered cell cost a floor; windows that cross an X separator cost less than junk and more than text. German prose scores about &minus;3.3 nats per window on this model, and random letters about &minus;7.</p>
+<p>Norbert stated his method in one sentence: add or remove up to five characters at two different positions, exhaustive search, an n-gram value function to rank the results. <code translate="no">blocks.py</code> does exactly that. For each of the fifteen keys, and each choice of up to two block edits of one to five letters, inserted or deleted at the five-letter group boundaries of the transcript, it decrypts and scores the result with a German quadgram model built from 3.6 million letters of Gutenberg German (<code translate="no">lm_de.py</code>). Windows that contain a digit or an unrecovered cell cost a floor; windows that cross an X separator cost less than junk and more than text. German prose scores about &minus;3.3 nats per window on this model, and random letters about &minus;7.</p>
 
-<p>Given no hint of the plaintext, the search re-derives pages 105, 109, 146 and 171, the &ldquo;missing 10 letters&rdquo; message of page 176, and the two CHI messages. On page 146 the five-letter block that Norbert inserted before group 10 comes out as <code>(45, 5)</code>. On the page-176 message the two five-letter blocks come out as <code>(10, 5), (130, 5)</code>. Page 100 falls to the same search with one two-letter insertion. The search also finds the Nov 22&ndash;24 partial of the unnumbered VGADA message. Where the printed transcription marks gaps, <code>gaps.py</code> restores them to their groups and anneals the residual single-letter losses; on page 132 it lands on Norbert&rsquo;s text unprompted.</p>
+<p>Given no hint of the plaintext, the search re-derives pages 105, 109, 146 and 171, the &ldquo;missing 10 letters&rdquo; message of page 176, and the two CHI messages. On page 146 the five-letter block that Norbert inserted before group 10 comes out as <code translate="no">(45, 5)</code>. On the page-176 message the two five-letter blocks come out as <code translate="no">(10, 5), (130, 5)</code>. Page 100 falls to the same search with one two-letter insertion. The search also finds the Nov 22&ndash;24 partial of the unnumbered VGADA message. Where the printed transcription marks gaps, <code translate="no">gaps.py</code> restores them to their groups and anneals the residual single-letter losses; on page 132 it lands on Norbert&rsquo;s text unprompted.</p>
 
 <p>The scores of the re-derived pages, from the run log, against the best any of the open messages achieves:</p>
 
@@ -156,7 +156,7 @@
 
 <h3>Two block edits, fifteen keys</h3>
 
-<p>In September 2026, when page 217 was still open, every one of the ten was run against all fifteen keys with up to two block edits. The best result for each, from <code>blocks_out.txt</code>:</p>
+<p>In September 2026, when page 217 was still open, every one of the ten was run against all fifteen keys with up to two block edits. The best result for each, from <code translate="no">blocks_out.txt</code>:</p>
 
 <table>
 <tr><th>page</th><th class="n">letters</th><th>key length of best</th><th class="n">best score</th><th>output</th></tr>
@@ -179,7 +179,7 @@
 
 <h3>A key-free attack, and why it fails</h3>
 
-<p>If some of the open messages were enciphered under a key not in the corpus, the key would have to be recovered from the ciphertext alone. <code>keyless.py</code> tries: anneal the column order at each candidate length on the index of coincidence of the letter pairs the untransposition produces, since a correct untransposition pairs the bigrams of a monoalphabetic substitution, then solve the 36-symbol substitution with the German model. Before running it on the open messages it was run on a planted control: 224 letters of German enciphered under a length-19 key of the same design.</p>
+<p>If some of the open messages were enciphered under a key not in the corpus, the key would have to be recovered from the ciphertext alone. <code translate="no">keyless.py</code> tries: anneal the column order at each candidate length on the index of coincidence of the letter pairs the untransposition produces, since a correct untransposition pairs the bigrams of a monoalphabetic substitution, then solve the 36-symbol substitution with the German model. Before running it on the open messages it was run on a planted control: 224 letters of German enciphered under a length-19 key of the same design.</p>
 
 <table>
 <tr><th class="n">candidate length</th><th class="n">15</th><th class="n">16</th><th class="n">17</th><th class="n">18</th><th class="n">19 (true)</th><th class="n">20</th><th class="n">21</th><th class="n">22</th><th class="n">23</th></tr>
@@ -205,16 +205,16 @@
 
 <table>
 <tr><th>file</th><th>contents</th></tr>
-<tr><td><code>targets/adfgvx/msgs.txt</code></td><td>the twenty-two cryptograms as Schmeh printed them, gap marks preserved</td></tr>
-<tr><td><code>targets/adfgvx/keys.json</code></td><td>fifteen keys: Lasry&rsquo;s fourteen with the three damaged squares repaired, and the CHI key of 13 November</td></tr>
-<tr><td><code>targets/adfgvx/key16.py</code></td><td>rebuilds the CHI substitution square from the two-part plaintext</td></tr>
-<tr><td><code>targets/adfgvx/repair.py</code></td><td>the decoder; <code>validate</code> reproduces page 100, <code>solve</code> runs the insertion search on all messages</td></tr>
-<tr><td><code>targets/adfgvx/blocks.py</code></td><td>Norbert&rsquo;s two-block-edit search against all keys; output in <code>blocks_out.txt</code></td></tr>
-<tr><td><code>targets/adfgvx/gaps.py</code></td><td>gap-aware parser and annealer for residual single-letter losses</td></tr>
-<tr><td><code>targets/adfgvx/lm_de.py</code></td><td>German quadgram model, 3.6 M letters of Gutenberg German</td></tr>
-<tr><td><code>targets/adfgvx/keyless.py</code></td><td>the key-free transposition attack; control output in <code>kl_control224.txt</code></td></tr>
-<tr><td><code>research/top50/arts/46_comments.txt</code></td><td>the 70 comments of the 2017 thread, text</td></tr>
-<tr><td><code>targets/adfgvx/NOTES.md</code></td><td>the working notes, both sessions</td></tr>
+<tr><td><code translate="no">targets/adfgvx/msgs.txt</code></td><td>the twenty-two cryptograms as Schmeh printed them, gap marks preserved</td></tr>
+<tr><td><code translate="no">targets/adfgvx/keys.json</code></td><td>fifteen keys: Lasry&rsquo;s fourteen with the three damaged squares repaired, and the CHI key of 13 November</td></tr>
+<tr><td><code translate="no">targets/adfgvx/key16.py</code></td><td>rebuilds the CHI substitution square from the two-part plaintext</td></tr>
+<tr><td><code translate="no">targets/adfgvx/repair.py</code></td><td>the decoder; <code translate="no">validate</code> reproduces page 100, <code translate="no">solve</code> runs the insertion search on all messages</td></tr>
+<tr><td><code translate="no">targets/adfgvx/blocks.py</code></td><td>Norbert&rsquo;s two-block-edit search against all keys; output in <code translate="no">blocks_out.txt</code></td></tr>
+<tr><td><code translate="no">targets/adfgvx/gaps.py</code></td><td>gap-aware parser and annealer for residual single-letter losses</td></tr>
+<tr><td><code translate="no">targets/adfgvx/lm_de.py</code></td><td>German quadgram model, 3.6 M letters of Gutenberg German</td></tr>
+<tr><td><code translate="no">targets/adfgvx/keyless.py</code></td><td>the key-free transposition attack; control output in <code translate="no">kl_control224.txt</code></td></tr>
+<tr><td><code translate="no">research/top50/arts/46_comments.txt</code></td><td>the 70 comments of the 2017 thread, text</td></tr>
+<tr><td><code translate="no">targets/adfgvx/NOTES.md</code></td><td>the working notes, both sessions</td></tr>
 </table>
 
 <!-- texts:start -->
@@ -222,7 +222,7 @@
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>22 ADFGVX messages, Childs pages 73-217 (Nov 1918): the nine read in full (pp. 100, 105, 109, 132, 146, 171, 176, 187 part 1 and its part 2 AFAFF)</h3>
 <p>German ADFGVX radio messages of November 1918 from James Rives Childs&#x27;s transcription, listed by George Lasry on Schmeh&#x27;s blog in 2017 among the messages with no known decipherment. The readings, consolidated from the 2017 comment thread (Norbert, Armin, Baertl, Lasry), are routine traffic: march reports towards Belgrade, a repeat-telegram order, the Kertsch radio station, rouble rates after the break with the Soviet government; no decipherment of the other ten messages is known.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/adfgvx/msgs.txt">msgs.txt</a></p><pre>entry-content&quot;&gt;
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/adfgvx/msgs.txt">msgs.txt</a></p><pre translate="no">entry-content&quot;&gt;
  Unsolved ADFXVX messages from World War I
 Provided by George Lasry
 This page lists radio messages from World War I encrypted in the ADFGVX cipher that still wait to be solved. For more information click here. A list of known key is available here. It contains most certainly all the keys used during the period. So the challenge is to understand how the cryptograms were mutilated or affected, probably by reception problems, or maybe even by wrong transmission or encoding. And try to see if after some additions/edits, they can be decrypted with one of the keys.
@@ -371,7 +371,7 @@ XVVAD FDVAA
  Mit einem Feedreader abonnieren 
 Anzeige--&gt;
 Über den Autor</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/adfgvx/texts/residue22_decryption.md">residue22_decryption.md</a></p><pre># Readings of the 22 messages, copied verbatim from NOTES.md (second session, 2026-09-15): the 2017 Cipherbrain readers&#x27; decryptions consolidated per Childs page; open messages are marked &#x27;-&#x27;.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/adfgvx/texts/residue22_decryption.md">residue22_decryption.md</a></p><pre translate="no"># Readings of the 22 messages, copied verbatim from NOTES.md (second session, 2026-09-15): the 2017 Cipherbrain readers&#x27; decryptions consolidated per Childs page; open messages are marked &#x27;-&#x27;.
 
 | Childs page | letters | status | key | reading (2017 author) |
 |---|---|---|---|---|
@@ -400,7 +400,7 @@ Anzeige--&gt;
 
 Nine solved, three partial, **ten never read by anyone**. The transcript page 187 (SELLV..., &quot;Stellv Gen Kom 9 AK
 Breslau&quot;) was a message the Kassel team had already solved and does not belong on the list (Lasry, comment 29).</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/adfgvx/texts/residue22_reading.md">residue22_reading.md</a></p><pre># Childs residue, the nine messages read in full: reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/adfgvx/texts/residue22_reading.md">residue22_reading.md</a></p><pre translate="no"># Childs residue, the nine messages read in full: reading
 
 Rests on: the 2017 Cipherbrain readers&#x27; decryptions (Armin, Norbert, Lasry, Baertl; Schmeh&#x27;s blog thread), consolidated
 per Childs page in `residue22_decryption.md` (the table, which also lists the thirteen open and partial messages). This
@@ -434,7 +434,7 @@ p. 187 (part 2, AFAFF). SOWEIT FERNSCHREIBERVERBDG NICHT ARBEITET. REST SCHRIFTL
 
 - The &quot;...&quot; in p. 105 is the 2017 reader&#x27;s own gap, kept as [...].
 - Numbers (message numbers, times, call signs) count as holes in the sentence score; they are what the telegrams say.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/adfgvx/texts/residue22_en.md">residue22_en.md</a></p><pre>&lt;!-- English translation of texts/residue22_reading.md (Claude Opus 5.5, 23 Oct 2026): the nine ADFGVX messages of Childs&#x27;s residue read in full by the 2017 Cipherbrain readers. Abbreviations expanded only where the meaning is certain; numbers and call signs kept as sent. --&gt;
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/adfgvx/texts/residue22_en.md">residue22_en.md</a></p><pre translate="no">&lt;!-- English translation of texts/residue22_reading.md (Claude Opus 5.5, 23 Oct 2026): the nine ADFGVX messages of Childs&#x27;s residue read in full by the 2017 Cipherbrain readers. Abbreviations expanded only where the meaning is certain; numbers and call signs kept as sent. --&gt;
 
 # Childs residue, the nine messages read in full (German ADFGVX radio traffic, November 1918): English translation
 
@@ -464,7 +464,7 @@ p. 187 (part 2, AFAFF). As far as the teleprinter connection is not working. The
 <h3>the same file: three messages read only in part (p. 164 F-G-X, p. 164 VFGAG, VGADA p. 215) and nine with no reading (pp. 73, 152, 153 VFVAX and AXVAA, 158, 170, 176 GGDAA, 189, 198); p. 217 is now its own entry <span class="st stuck">decoded, not read</span></h3>
 <p>Twelve of the 22 residue messages: three give fragments (Temesvar, Mirco; the Entente fleet at Kertsch with New Zealand, English and French divisions, VGADA, partial reading in texts/vgada_partial_reading.md); nine have no reading, because no known key fits them and several carry marked transmission gaps.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/adfgvx/msgs.txt">msgs.txt</a></p><pre>entry-content&quot;&gt;
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/adfgvx/msgs.txt">msgs.txt</a></p><pre translate="no">entry-content&quot;&gt;
  Unsolved ADFXVX messages from World War I
 Provided by George Lasry
 This page lists radio messages from World War I encrypted in the ADFGVX cipher that still wait to be solved. For more information click here. A list of known key is available here. It contains most certainly all the keys used during the period. So the challenge is to understand how the cryptograms were mutilated or affected, probably by reception problems, or maybe even by wrong transmission or encoding. And try to see if after some additions/edits, they can be decrypted with one of the keys.
@@ -613,7 +613,7 @@ XVVAD FDVAA
  Mit einem Feedreader abonnieren 
 Anzeige--&gt;
 Über den Autor</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/adfgvx/texts/residue22_decryption.md">residue22_decryption.md</a></p><pre># Readings of the 22 messages, copied verbatim from NOTES.md (second session, 2026-09-15): the 2017 Cipherbrain readers&#x27; decryptions consolidated per Childs page; open messages are marked &#x27;-&#x27;.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/adfgvx/texts/residue22_decryption.md">residue22_decryption.md</a></p><pre translate="no"># Readings of the 22 messages, copied verbatim from NOTES.md (second session, 2026-09-15): the 2017 Cipherbrain readers&#x27; decryptions consolidated per Childs page; open messages are marked &#x27;-&#x27;.
 
 | Childs page | letters | status | key | reading (2017 author) |
 |---|---|---|---|---|
@@ -644,7 +644,7 @@ Nine solved, three partial, **ten never read by anyone**. The transcript page 18
 Breslau&quot;) was a message the Kassel team had already solved and does not belong on the list (Lasry, comment 29).</pre></details>
 <h3>Childs p. 217 (DXXXG GVXAX ..., 27 Nov 1918), one of the ten open messages</h3>
 <p>An English cruiser has put in at Sevastopol on the 24th; an Allied squadron follows on the 26th. Decipherment published by &#x27;prinz&#x27; on 17 Sept 2026 (keyword TRUPPENVERSCHIEBUNG, a key Childs lists for later use), checked here against the figures: the 85 plaintext letters map one to one onto the 85 ADFGVX pairs (23 pairs, 23 letters, no conflict).</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/adfgvx/msgs.txt">msgs.txt</a></p><pre>entry-content&quot;&gt;
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/adfgvx/msgs.txt">msgs.txt</a></p><pre translate="no">entry-content&quot;&gt;
  Unsolved ADFXVX messages from World War I
 Provided by George Lasry
 This page lists radio messages from World War I encrypted in the ADFGVX cipher that still wait to be solved. For more information click here. A list of known key is available here. It contains most certainly all the keys used during the period. So the challenge is to understand how the cryptograms were mutilated or affected, probably by reception problems, or maybe even by wrong transmission or encoding. And try to see if after some additions/edits, they can be decrypted with one of the keys.
@@ -793,7 +793,7 @@ XVVAD FDVAA
  Mit einem Feedreader abonnieren 
 Anzeige--&gt;
 Über den Autor</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/adfgvx/texts/p217_b24_check.txt">p217_b24_check.txt</a></p><pre>cells 170 plaintext letters 85
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/adfgvx/texts/p217_b24_check.txt">p217_b24_check.txt</a></p><pre translate="no">cells 170 plaintext letters 85
 B pairs 23 letters 23 pair-&gt;2+ letters 0 letter-&gt;2+ pairs 0
   conflicts {} {}
    A T R U P E 4
@@ -820,7 +820,7 @@ A pairs 23 letters 23 pair-&gt;2+ letters 0 letter-&gt;2+ pairs 0
 176        220 cells  known 0.68  W..S..HKO.ENCLZ.ZFH...KG.FA.X.D.6WD.EX.P6D6G6.FRWAU6Z.N..RC.H.OUG.U.ELRA6ZP.A.C.
 189         84 cells  known 0.52  .....X.R.ZE..4.AR....O.OO.P.FEO.2.P.ROZ2UL
 198        164 cells  known 0.56  4.E.EGXR..W.DAX2N...I...X....6.LF..K.G..O.W...HEGNC4DWAX..S4A.I.D..NW.S6..4L..WW</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/adfgvx/texts/p217_reading.md">p217_reading.md</a></p><pre># Childs p. 217 (DXXXG GVXAX ..., 27 Nov 1918): reading
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/adfgvx/texts/p217_reading.md">p217_reading.md</a></p><pre translate="no"># Childs p. 217 (DXXXG GVXAX ..., 27 Nov 1918): reading
 
 Rests on: the decipherment published by &quot;prinz&quot; on 17 Sept 2026 (reported by The Neuron, 18 Sept 2026, and news
 coverage: keyword TRUPPENVERSCHIEBUNG, a key Childs lists for later use), **checked here against the figures**
@@ -844,7 +844,7 @@ EIN ENGLISCHER KREUZER EINLIEG, SEWASTOPOL, S4STEN. EIN GESCHWADER DER, ALLIIERT
   inside the phrase.
 - The Royal Navy record cited with the report (HMS Canterbury at Sevastopol on 24 Nov 1918, an Allied squadron on 26
   Nov) fits &quot;S4STEN&quot; = 24th; the cipher check above does not depend on it.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/adfgvx/texts/p217_en.md">p217_en.md</a></p><pre># Childs p. 217 (27 Nov 1918): English
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/adfgvx/texts/p217_en.md">p217_en.md</a></p><pre translate="no"># Childs p. 217 (27 Nov 1918): English
 
 Translation of `p217_reading.md`.
 
@@ -861,7 +861,7 @@ An English cruiser has put in, Sevastopol, on the [?2]4th. A squadron of the All
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="bernstorff1917.html" rel="prev">&larr; Bernstorff telegram No. 205, 1917 1917</a><a href="auckland1918.html" rel="next">Auckland cables 1918 Feb&ndash;Mar 1918 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>
 </body>

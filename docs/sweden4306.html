@@ -32,7 +32,7 @@
     <div class="shint"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> move</span><span><kbd>&crarr;</kbd> open</span><span><kbd>Esc</kbd> close</span><span class="sn" id="sn"></span></div>
   </div>
 </div>
-<section class="hero"><div class="cipherstrip">30 40 16 40 34 47 &middot; 50 48 &middot; 33 34 42 &middot; 49 50<br>alles wt den uw &hellip;<br>30 = a &middot; 34 = e &middot; 42 = n &middot; 16 = null</div><p class="kicker">Dutch diplomatic report · year unknown · partial</p><h1>R4306: passports, rival envoys and an agent’s watch</h1><p class="sub">An alphabetical number cipher yields a Dutch report about passports, rival envoys and surveillance, with four unidentified codes and several uncertain readings retained.</p><p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-18">18 October 2026</time> &middot; updated <time datetime="2026-10-20">20 October 2026</time></p>
+<section class="hero"><div class="cipherstrip" translate="no">30 40 16 40 34 47 &middot; 50 48 &middot; 33 34 42 &middot; 49 50<br>alles wt den uw &hellip;<br>30 = a &middot; 34 = e &middot; 42 = n &middot; 16 = null</div><p class="kicker">Dutch diplomatic report · year unknown · partial</p><h1>R4306: passports, rival envoys and an agent’s watch</h1><p class="sub">An alphabetical number cipher yields a Dutch report about passports, rival envoys and surveillance, with four unidentified codes and several uncertain readings retained.</p><p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-18">18 October 2026</time> &middot; updated <time datetime="2026-10-20">20 October 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#ct">key recovered from ciphertext-only</a> &middot; Extent: partial (99% of the cipher)</p><!-- /outcome -->
 <p class="credits">Contributed by <a href="contributors.html#lasry">George Lasry</a> (solution) and <a href="contributors.html#burford">Brett Burford</a> (verification)</p><!-- /credits --></section><main>
 <nav class="toc" aria-label="On this page"><span>On this page</span><a href="#cryptanalysis">Cryptanalysis and visual key</a><a href="#reading">The Dutch reading and translation</a><a href="#mechanical">Five lines of mechanical decryption</a><a href="#history">Historical context and research</a><a href="#method">Method, verification and remaining gaps</a><a href="#texts">Full texts</a><a href="#sources">Sources and credit</a></nav>
@@ -51,18 +51,18 @@
 <figure data-credit="George Lasry’s working key; glyph samples from Riksarkivet, Chifferklaver låda II:133, via DECODE R4306"><img src="sweden4306_key.png" alt="Visual numerical key with alphabet, nulls, unresolved codes and date numerals" loading="lazy"><figcaption>The reconstructed working key. Unobserved values and unresolved codes are marked. <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sweden4306/visual_key.html">HTML key</a>. <span class="credit">Image: George Lasry’s working key; glyph samples from Riksarkivet, Chifferklaver låda II:133, via DECODE R4306.</span></figcaption></figure>
 <h2 id="reading"><span class="num">02</span> The Dutch reading and translation</h2>
 <p>The following two texts are preserved as supplied, including their uncertainty marks. The Dutch is an edited, normalized reading, and the English includes interpretive expansions.</p><h3>Decrypted text (edited, normalized)</h3>
-<div class="edition" lang="nl">Alles wt den uwen verstaen. Ic sal mondelinge [gekl…men?] antwoorden. Als o[o]c des saecken kan seer grooten gewichte syn ende metbrengen, antwoort op U.L. [v]ersoeck met paspoorten hier. Begint ialousye tussen [106] en [114] [105] gesanten; syn beyde van hier vertrocken. Ic weet [113] syn gantsen voornemen, wat hy inden sin heeft. Wel, den heb ic ooc ga[d]e gegeuen. Hy is naden [114]. Ic rust nacht noch dacht, sy dat ic sieck ben oft niet, en schouw geen peryckel. U.L. twee breuen ontfangen vanden 23 Febr. en 13 Mar[t]y, om een noodige saecke. Blyf ic noch wat, die importeert.</div>
+<div class="edition" lang="nl" translate="no">Alles wt den uwen verstaen. Ic sal mondelinge [gekl…men?] antwoorden. Als o[o]c des saecken kan seer grooten gewichte syn ende metbrengen, antwoort op U.L. [v]ersoeck met paspoorten hier. Begint ialousye tussen [106] en [114] [105] gesanten; syn beyde van hier vertrocken. Ic weet [113] syn gantsen voornemen, wat hy inden sin heeft. Wel, den heb ic ooc ga[d]e gegeuen. Hy is naden [114]. Ic rust nacht noch dacht, sy dat ic sieck ben oft niet, en schouw geen peryckel. U.L. twee breuen ontfangen vanden 23 Febr. en 13 Mar[t]y, om een noodige saecke. Blyf ic noch wat, die importeert.</div>
 <h3>Translation</h3><div class="edition" lang="en">I have understood everything in yours. I shall answer [it] orally [when I come?]. Since these matters may be of very great weight and bring great consequences: [here is my] answer to Your Honour’s request concerning passports here. Jealousy is beginning between the [106] and the [114] [105] envoys; both have left here. I know [113]’s whole intention, what he has in mind. Well, I have also kept a close watch on him. He has gone to the [114]. I rest neither night nor day, whether I am ill or not, and shrink from no danger. I have received Your Honour’s two letters of 23 February and 13 March, about a necessary matter. I am staying on here a while longer, which matters.</div>
 <h3>Contributor’s translation notes</h3><ul><li><strong>U.L.</strong>: Uwe Liefde, explained by the contributor as a conventional address, roughly “Your Honour” or “dear Sir”.</li><li><strong>gade gegeven</strong>: interpreted as “kept watch on” or “observed”.</li><li><strong>Codes:</strong> 106, 114 and 105 suggest rulers, states or persons; “114 105 gesanten” and movement to 114 may point to a sovereign or court. These are contextual possibilities, not identified key values. Code 113 is also unresolved.</li><li><strong>Last sentence:</strong> “Blyf ic noch wat” is the contributor’s least certain reading.</li></ul>
 <h2 id="mechanical"><span class="num">03</span> Five lines of mechanical decryption</h2>
 <figure class="creveal" data-src="reveal/sweden4306.json"></figure>
 <p>Exactly CTTS/manuscript lines 1–5: 73 selections, yielding 62 literal letters. Nulls omitted; no word spacing, u/v normalization, letter substitutions or repairs.</p>
-<pre>alleswtdenuw
+<pre translate="no">alleswtdenuw
 enuerstaenicsal
 mondelingekll
 menantwoorden
 alsodesaecken</pre>
-<p>Lines 3–4 retain the literal <code>ekll / men</code>; the supplied edition instead marks <code>[gekl…men?]</code>. Line 5 is <code>alsodesaecken</code>, so the restored wording “Als o[o]c des saecken” is not exact mechanical output. This short excerpt is below the statistical validator’s 80-letter threshold; it does not establish full-text accuracy.</p>
+<p>Lines 3–4 retain the literal <code translate="no">ekll / men</code>; the supplied edition instead marks <code translate="no">[gekl…men?]</code>. Line 5 is <code translate="no">alsodesaecken</code>, so the restored wording “Als o[o]c des saecken” is not exact mechanical output. This short excerpt is below the statistical validator’s 80-letter threshold; it does not establish full-text accuracy.</p>
 <h2 id="history"><span class="num">04</span> Historical context and research</h2>
 <p><strong>Contributor’s interpretation:</strong> the writer appears to be an agent or informant reporting to a superior. Passports, rivalry between envoys and their departure fit diplomatic activity, possibly a congress or mediation. The Swedish collection suggests a possible Swedish connection, and the references to 23 February and 13 March suggest writing later than the cited March letter. Late March or April is a working suggestion, not a recovered date.</p>
 <p><strong>What was checked:</strong> the <a href="https://de-crypt.org/decrypt-web/RecordsView/4306">public DECODE record</a> gives only the broad range 1600–1699, leaves the correspondents and languages blank, and still carries an unresolved catalogue status. Its general collection note concerns Oxenstierna correspondence, not an attribution of this specific letter. The supplied scan visibly carries a pencilled “1632?”. Neither this annotation nor archive custody proves the year or recipient. The earlier survey reports an Amsterdam address on another view; that view was checked on 18 October 2026 and does read Amsterdam (section 05).</p>
@@ -83,7 +83,7 @@ alsodesaecken</pre>
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>R4306, Riksarkivet Chifferklaver låda II:133, a Dutch cipher letter to Amsterdam, [1632?] (George Lasry)</h3>
 <p>A Dutch letter addressed &#x27;Aen Mr. ?ilick ... Amsterdam&#x27;, pencilled 1632?: the writer will answer orally, reports jealousy beginning between the [106] and the [114] [105] envoys, knows [113]&#x27;s whole intention and has kept a close watch on him, and has received the recipient&#x27;s letters of 23 February and 13 March. Reading and translation are George Lasry&#x27;s (transcribed with CTTS, solved with Opus 5.5); the project_attempt/ files are this project&#x27;s earlier transcriptions, and texts/address_note.md the cipher note on the address leaf, with Brett Burford&#x27;s proposed reading, which his reading does not cover.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sweden4306/transcription.txt">transcription.txt</a></p><pre># 1.png
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sweden4306/transcription.txt">transcription.txt</a></p><pre translate="no"># 1.png
 30;40;16;40;34;47;50;48;33;34;42;49;50;
 34;42;49;34;46;47;48;30;34;42;38;32;47;30;40;
 41;43;42;33;34;40;38;42;16;28;36;34;39;40;40;
@@ -119,7 +119,7 @@ alsodesaecken</pre>
 43;41;34;16;34;42;42;43;11;43;33;38;36;34;47;30;34;32;39;34;
 31;40;52;35;38;32;42;43;32;37;50;30;48;33;18;34;38;41;44;43;46;48;
 34;34;46;48;</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sweden4306/cipher_tokens.txt">cipher_tokens.txt</a></p><pre>30 40 16 40 34 47 50 48 33 34 42 49 50
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sweden4306/cipher_tokens.txt">cipher_tokens.txt</a></p><pre translate="no">30 40 16 40 34 47 50 48 33 34 42 49 50
 34 42 49 34 46 47 48 30 34 42 38 32 47 30 40
 41 43 42 33 34 40 38 42 16 28 36 34 39 40 40
 41 34 42 30 42 48 50 07 11 43 06 43 46 33 34 42
@@ -154,7 +154,7 @@ alsodesaecken</pre>
 43 41 34 16 34 42 42 43 11 43 33 38 36 34 47 30 34 32 39 34
 31 40 52 35 38 32 42 43 32 37 50 30 48 33 18 34 38 41 44 43 46 48
 34 34 46 48</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sweden4306/project_attempt/r4306_transcription.txt">r4306_transcription.txt</a></p><pre># R4306 transcription (Riksarkivet, &quot;1632?&quot;; archive folder cover reads &quot;1600- Chifferbref ... i Amsterdam&quot;, II:104)
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sweden4306/project_attempt/r4306_transcription.txt">r4306_transcription.txt</a></p><pre translate="no"># R4306 transcription (Riksarkivet, &quot;1632?&quot;; archive folder cover reads &quot;1600- Chifferbref ... i Amsterdam&quot;, II:104)
 # Digit notes (this hand): 3 = open &quot;z&quot;-like with top hook, often with long lead-in stroke (30/33 start like a &quot;Z&quot;);
 #  4 = closed &quot;q&quot;/&quot;4&quot; with short tail staying on line; 9 = &quot;g&quot;-shaped with long descender below line (49, 39);
 #  7 = small &quot;z/7&quot; angled stroke, sits on line (47, 37, 57); 1 = plain vertical minim;
@@ -210,7 +210,7 @@ alsodesaecken</pre>
 ## IMG_R4306_I25834_P_hi.jpeg
 # No cipher. Left: blank leaf with faint show-through of a short list. Right: modern archive wrapper in pencil/ink:
 # [II:104] [1600-] [Chifferbref] [till?] [i Amsterdam]</pre></details>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sweden4306/project_attempt/r4306_v2.txt">r4306_v2.txt</a></p><pre># R4306 page 1, v2: digit variants NOT normalised.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sweden4306/project_attempt/r4306_v2.txt">r4306_v2.txt</a></p><pre translate="no"># R4306 page 1, v2: digit variants NOT normalised.
 # 3 = open z-like 3 with top hook/lead-in; 7 = narrow &#x27;7&#x27;/&#x27;)&#x27;-like form in the tens position (70,74,77...).
 # o = 0 with extra loop/flourish (&#x27;ø&#x27;/&#x27;00&#x27;); 0 = plain small round 0. &#x27;?&#x27; = variant form uncertain.
 ## IMG_R4306_I25832_P_hi.jpeg
@@ -253,13 +253,13 @@ alsodesaecken</pre>
 # the q-form in &quot;42&quot; was left as 4 throughout (nearly all 42s are written that way), so 42/92 is NOT split.
 # &#x27;Z4&#x27; = 3 written as a descending &#x27;ʒ&#x27;. The 7-vs-3 and o-vs-0 calls are by eye at ~1x and inconsistent
 # risk is real; treat per-token variant counts as indicative.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sweden4306/reading.txt">reading.txt</a></p><pre>Alles wt den uwen verstaen. Ic sal mondelinge [gekl…men?] antwoorden. Als o[o]c des saecken kan seer grooten gewichte syn ende metbrengen, antwoort op U.L. [v]ersoeck met paspoorten hier. Begint ialousye tussen [106] en [114] [105] gesanten; syn beyde van hier vertrocken. Ic weet [113] syn gantsen voornemen, wat hy inden sin heeft. Wel, den heb ic ooc ga[d]e gegeuen. Hy is naden [114]. Ic rust nacht noch dacht, sy dat ic sieck ben oft niet, en schouw geen peryckel. U.L. twee breuen ontfangen vanden 23 Febr. en 13 Mar[t]y, om een noodige saecke. Blyf ic noch wat, die importeert.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sweden4306/mechanical_excerpt.txt">mechanical_excerpt.txt</a></p><pre>alleswtdenuw
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sweden4306/reading.txt">reading.txt</a></p><pre translate="no">Alles wt den uwen verstaen. Ic sal mondelinge [gekl…men?] antwoorden. Als o[o]c des saecken kan seer grooten gewichte syn ende metbrengen, antwoort op U.L. [v]ersoeck met paspoorten hier. Begint ialousye tussen [106] en [114] [105] gesanten; syn beyde van hier vertrocken. Ic weet [113] syn gantsen voornemen, wat hy inden sin heeft. Wel, den heb ic ooc ga[d]e gegeuen. Hy is naden [114]. Ic rust nacht noch dacht, sy dat ic sieck ben oft niet, en schouw geen peryckel. U.L. twee breuen ontfangen vanden 23 Febr. en 13 Mar[t]y, om een noodige saecke. Blyf ic noch wat, die importeert.</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sweden4306/mechanical_excerpt.txt">mechanical_excerpt.txt</a></p><pre translate="no">alleswtdenuw
 enuerstaenicsal
 mondelingekll
 menantwoorden
 alsodesaecken</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sweden4306/texts/address_note.md">address_note.md</a></p><pre># R4306, the cipher note on the address leaf (image I25833): this project&#x27;s finding and Brett Burford&#x27;s reading
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sweden4306/texts/address_note.md">address_note.md</a></p><pre translate="no"># R4306, the cipher note on the address leaf (image I25833): this project&#x27;s finding and Brett Burford&#x27;s reading
 
 Not part of George Lasry&#x27;s reading (`reading.txt`), which covers the one cipher page. Copied verbatim from NOTES.md,
 &quot;Findings of 18 October 2026 (proposals for George Lasry&#x27;s review)&quot; (22 Oct 2026). Both readings are proposals.
@@ -274,7 +274,7 @@ Not part of George Lasry&#x27;s reading (`reading.txt`), which covers the one ci
   `42:30:34:40:33.30:11:42` *niet dan* (42 38 34 48 33 30, 11 a null), line 3 `39:42: 101. 42:30` *in [101] na...*
   (39 -&gt; 38). A hole loses two or three groups at the start. It continues the letter after *importeert*. Proposal: each
   digit still to be checked on image I25833 (the DECODE cookie had expired when this was written).</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sweden4306/translation.txt">translation.txt</a></p><pre>I have understood everything in yours. I shall answer [it] orally [when I come?]. Since these matters may be of very great weight and bring great consequences: [here is my] answer to Your Honour’s request concerning passports here. Jealousy is beginning between the [106] and the [114] [105] envoys; both have left here. I know [113]’s whole intention, what he has in mind. Well, I have also kept a close watch on him. He has gone to the [114]. I rest neither night nor day, whether I am ill or not, and shrink from no danger. I have received Your Honour’s two letters of 23 February and 13 March, about a necessary matter. I am staying on here a while longer, which matters.</pre></details>
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sweden4306/translation.txt">translation.txt</a></p><pre translate="no">I have understood everything in yours. I shall answer [it] orally [when I come?]. Since these matters may be of very great weight and bring great consequences: [here is my] answer to Your Honour’s request concerning passports here. Jealousy is beginning between the [106] and the [114] [105] envoys; both have left here. I know [113]’s whole intention, what he has in mind. Well, I have also kept a close watch on him. He has gone to the [114]. I rest neither night nor day, whether I am ill or not, and shrink from no danger. I have received Your Honour’s two letters of 23 February and 13 March, about a necessary matter. I am staying on here a while longer, which matters.</pre></details>
 <p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sweden4306/key.txt">key.txt</a></p>
 <!-- texts:end -->
 <!-- replay:start -->
@@ -285,7 +285,7 @@ Not part of George Lasry&#x27;s reading (`reading.txt`), which covers the one ci
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Manuscript rights: Riksarkivet, Stockholm, via DECODE R4306</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="riksarkivet1628.html" rel="prev">&larr; Bremen to Salvius 1631 1631</a><a href="ceva1632.html" rel="next">Barberini to Ceva 1632 1632 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>

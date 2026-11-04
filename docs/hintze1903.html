@@ -41,7 +41,7 @@
   </div>
 </div>
 <section class="hero">
-  <div class="cipherstrip">1378 NA 24724 29878 11876 DE TODOS 37600 43322<br>Hoje na Camara dos Pares &middot; Arroio &middot; divorciado de todos &middot; interpellar &middot; Ministro dos Estrangeiros<br>41285 = Vossa Magestade &middot; 62851 = viagem &middot; 63416 = visita</div>
+  <div class="cipherstrip" translate="no">1378 NA 24724 29878 11876 DE TODOS 37600 43322<br>Hoje na Camara dos Pares &middot; Arroio &middot; divorciado de todos &middot; interpellar &middot; Ministro dos Estrangeiros<br>41285 = Vossa Magestade &middot; 62851 = viagem &middot; 63416 = visita</div>
   <p class="kicker">Lisbon &rarr; Queen Am&eacute;lie (Naples, Paris) &middot; four- and five-figure code &middot; April&ndash;May 1903 &middot; one of two telegrams decoded at the time</p>
   <h1>Hintze Ribeiro to Queen Am&eacute;lie, 1903: two code telegrams</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_ernesto-hintze-ribeiro.jpg" alt="Ernesto Hintze Ribeiro" title="Ernesto Hintze Ribeiro: Photograph by Vidal &amp; Fonseca, Lisbon, c. 1903. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Ernesto Hintze Ribeiro</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_amelie-of-orleans.jpg" alt="Amélie of Orléans" title="Amélie of Orléans: Postcard portrait (photomechanical print), undated. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Amélie of Orléans</figcaption></figure></div><!-- /parties -->
@@ -75,27 +75,27 @@
 <tr><td>m0003 (back m0004)</td><td>Monte Estoril &rarr; Paris, Hotel Bristol, 11 May 1903, Expr&egrave;s, no. 12, 46 words</td><td>25 among clear words</td><td>under the strips, continued on the back</td></tr>
 </tbody>
 </table>
-<p>The word counts check both transcriptions (<code>code.py</code>, part 1). With five figures to a word, the address counted and punctuation not, the April telegram gives 12 + 63 = 75 and the May telegram 9 + 37 = 46, the figures in both headers. The count also shows that the April telegram&rsquo;s &ldquo;60134&rdquo;, printed with a stray stroke, is one five-figure group: as six figures the count would be 76.</p>
+<p>The word counts check both transcriptions (<code translate="no">code.py</code>, part 1). With five figures to a word, the address counted and punctuation not, the April telegram gives 12 + 63 = 75 and the May telegram 9 + 37 = 46, the figures in both headers. The count also shows that the April telegram&rsquo;s &ldquo;60134&rdquo;, printed with a stray stroke, is one five-figure group: as six figures the count would be 76.</p>
 
 <h2 id="reading"><span class="num">02</span> The May telegram</h2>
 <figure data-credit="Arquivo Nacional Torre do Tombo, PT/TT/CAM/M15, image m0003, via DigitArq"><img src="hintze1903_telegram.jpg" alt="Printed telegraph strips with code groups and clear Portuguese words, signed HINTZE RIBEIRO, and four faint handwritten lines of decode below" loading="lazy">
 <figcaption>The telegram of 11 May 1903 as received in Paris, with the decode of the time written below the strips in four lines; it goes on on the back. The ink figure 63276 at the right of the third line is not a group of the telegram. <span class="credit">Image: Arquivo Nacional Torre do Tombo, PT/TT/CAM/M15, image m0003, via DigitArq.</span></figcaption></figure>
-<p>Split at the clear words, the groups and the decode&rsquo;s units agree segment by segment: 1, 3, 5, 4, 8, 1, 1 and 2 (<code>code.py</code>, part 2). 43322 stands both times where the decode says &ldquo;Ministro dos Estrangeiros&rdquo;. Only the split of &ldquo;Camara dos Pares / Arroio / divorciado&rdquo; over three groups is a choice made here.</p>
+<p>Split at the clear words, the groups and the decode&rsquo;s units agree segment by segment: 1, 3, 5, 4, 8, 1, 1 and 2 (<code translate="no">code.py</code>, part 2). 43322 stands both times where the decode says &ldquo;Ministro dos Estrangeiros&rdquo;. Only the split of &ldquo;Camara dos Pares / Arroio / divorciado&rdquo; over three groups is a choice made here.</p>
 <figure class="creveal" data-src="reveal/hintze1903.json"></figure>
 <blockquote><p>Hoje, na Camara dos Pares, Arroio, divorciado de todos, [veio] interpellar o Ministro dos Estrangeiros acerca da viagem [de] Vossa Magestade, fazendo referencia [&aacute;] ausencia [das] auctoridades [em] Livorno [?] e [&aacute;] falta [de] visita [do] Presidente da Republica Franceza. O Ministro dos Estrangeiros [veio] contestar [?], [ser] falso boato, referindo os factos em termos convenientes. Hintze Ribeiro.</p></blockquote>
 <p>&ldquo;Today in the House of Peers Arroio, at odds with everyone, interpellated the Foreign Minister about Your Majesty&rsquo;s journey, pointing to the absence of the authorities at Livorno [?] and to the President of the French Republic not having paid a visit. The Foreign Minister answered that it was a false rumour, setting out the facts in suitable terms.&rdquo; Words in brackets are supplied here. Arroio is presumably Jo&atilde;o Arroio (Arroyo), a peer who had broken with Hintze&rsquo;s party, which fits &ldquo;divorciado de todos&rdquo; (an identification made here, not checked). &ldquo;Livorno&rdquo; is a hard reading of a smudged word; the last word on the face is &ldquo;contestar&rdquo; or &ldquo;contestou&rdquo;. The marks &ldquo;. S&rdquo; around 26541 are not explained.</p>
 
 <h2 id="code"><span class="num">03</span> The code</h2>
-<p>The alignment gives 24 values (<code>code_values.tsv</code>). Groups under 10000 are sent with four figures, and all 54 groups of the two telegrams lie between 1347 and 67398, so the book probably has fewer than about 70,000 entries.</p>
+<p>The alignment gives 24 values (<code translate="no">code_values.tsv</code>). Groups under 10000 are sent with four figures, and all 54 groups of the two telegrams lie between 1347 and 67398, so the book probably has fewer than about 70,000 entries.</p>
 <p>Group number and the alphabetical order of the values agree only loosely (rank correlation 0.57). Read each group as a page (n &divide; 100) and a line (n mod 100), and reverse the order of the pages below a split while keeping the lines in order: with the split at page 375, 21 of the 24 values fall in alphabetical order (rho 0.957). The reversed lower half holds <em>a</em>&ndash;<em>h</em>, the upper half <em>i</em>&ndash;<em>v</em>; Livorno sits in a high block (67398), perhaps for names. Shuffling the 24 words and giving chance the same choice of split reaches a median of 0.275 and a maximum of 0.746 in 2,000 runs, so the model is not a fit to noise. It was found after the fact on these 24 values, with a fitted split, and stays a hypothesis until more decoded traffic in this code tests it.</p>
 <p>The model supports the doubtful words of the decode: <em>divorciado</em> falls among the d-words, <em>contestar</em> among the c-words, <em>Arroio</em> among the a-words (so the encoder used the common noun <em>arroio</em> for the name). Two groups are out of order: the model would rather make 3707 = <em>franceza</em> and 49641 a word between <em>ministro</em> and <em>presidente</em>. The decode&rsquo;s split is kept.</p>
-<p>No group is shared with King Carlos&rsquo;s code of the same spring (<a href="carlos1903.html">carlos1903</a>), Sabugosa&rsquo;s, Manuel II&rsquo;s of 1910 or Venceslau de Lima&rsquo;s of 1909 (<code>code.py</code>, part 5).</p>
+<p>No group is shared with King Carlos&rsquo;s code of the same spring (<a href="carlos1903.html">carlos1903</a>), Sabugosa&rsquo;s, Manuel II&rsquo;s of 1910 or Venceslau de Lima&rsquo;s of 1909 (<code translate="no">code.py</code>, part 5).</p>
 
 <h2 id="m0001"><span class="num">04</span> The April telegram</h2>
 <figure data-credit="Arquivo Nacional Torre do Tombo, PT/TT/CAM/M15, image m0001, via DigitArq"><img src="hintze1903_naples.jpg" alt="Printed telegraph strips on an Italian form: clear Portuguese words with 29 code groups among them, signed HINTZE RIBEIRO" loading="lazy">
 <figcaption>The telegram of 23 April 1903 as received at Naples. There is no decode on the form or on its back. <span class="credit">Image: Arquivo Nacional Torre do Tombo, PT/TT/CAM/M15, image m0001, via DigitArq.</span></figcaption></figure>
 <p>The clear words give the frame: &ldquo;Agrade&ccedil;o muito a carta de Vossa Magestade. No [..] [..] das [..] em [..] parece-me [..] &hellip; mas Vossa Magestade [..] &hellip; e muito dedicadamente beijo a sua m&atilde;o. Hintze Ribeiro.&rdquo; (&ldquo;I thank Your Majesty very much for your letter &hellip; most devotedly I kiss your hand.&rdquo;) One group recurs in the May telegram: 41285 = Vossa Magestade. The first pass counted four values; the other three (57136 <em>seu</em>, 53803 <em>regresso</em>, 67394 <em>Lisboa</em>, &ldquo;no seu regresso a Lisboa&rdquo;) are guesses from position and the code&rsquo;s order, and are not used.</p>
-<p>Under the page model every open group but one is bracketed between two decoded values (<code>code.py</code>, part 4). &ldquo;No 34648 7684 das 22922 em 67033&rdquo; would be an <em>a</em>-word, an <em>e</em>/<em>f</em>-word, a <em>c</em>-word and a name. The brackets are too wide to decode the telegram.</p>
+<p>Under the page model every open group but one is bracketed between two decoded values (<code translate="no">code.py</code>, part 4). &ldquo;No 34648 7684 das 22922 em 67033&rdquo; would be an <em>a</em>-word, an <em>e</em>/<em>f</em>-word, a <em>c</em>-word and a name. The brackets are too wide to decode the telegram.</p>
 
 <h2 id="uncertain"><span class="num">05</span> What remains uncertain</h2>
 <ul>
@@ -110,7 +110,7 @@
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>m0003, Monte Estoril -&gt; Paris, 11 May 1903</h3>
 <p>Hintze Ribeiro tells the Queen, then in Paris, that the peer Arroio interpellated the Foreign Minister in the House of Peers about her journey (no authorities at Livorno, no visit from the French President), and that the minister called it a false rumour.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hintze1903/m0003_transcription.txt">m0003_transcription.txt</a></p><pre># ANTT PT/TT/CAM/M15, image m0003 (back m0004). French receiving form, printed strips, marked &quot;Exprès&quot;.
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hintze1903/m0003_transcription.txt">m0003_transcription.txt</a></p><pre translate="no"># ANTT PT/TT/CAM/M15, image m0003 (back m0004). French receiving form, printed strips, marked &quot;Exprès&quot;.
 # Address strip: SA MAGESTE LA REINE DE PORTUGAL HOTEL BRISTOL PARIS =
 # Header strip: SS PARIS MONT ESTORYL 12,-46,-11,-10/30- HSR (destination Paris, origin Monte Estoril, no. 12,
 # 46 taxed words, day 11, 10.30). Stamp CENTRAL PARIS .. MAI 03 (the day is not clear). Form imprint &quot;Mai 1902&quot;.
@@ -120,7 +120,7 @@
 = 1378 NA 24724 29878 11876 DE TODOS 37600 43322 34962 62851 41285 FAZENDO
 53538 28643 28605 67398 E 5556 63416 50554 3707 49641 43322 18148 5554
 . S 26541 . S REFERINDO OS 5897 EM 59587 17836 .- HINTZE RIBEIRO .</pre></details>
-<details class="ftext"><summary>Decipherment of the time</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hintze1903/m0003_contemporary.txt">m0003_contemporary.txt</a></p><pre># ANTT PT/TT/CAM/M15, images m0003 and m0004: the decode of m0003 made at the time, written by hand under the
+<details class="ftext"><summary>Decipherment of the time</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hintze1903/m0003_contemporary.txt">m0003_contemporary.txt</a></p><pre translate="no"># ANTT PT/TT/CAM/M15, images m0003 and m0004: the decode of m0003 made at the time, written by hand under the
 # printed strips in four lines (pencil or faded ink) and continued on the back. Line breaks as on the form.
 # &quot;63276&quot; stands at the right of line 3 in darker ink; it is not a group of the telegram.
 Hoje na Camara dos Pares Arroio divorciado de todos inter-
@@ -130,7 +130,7 @@ visita Presidente da Rep. franceza. Mm. dos Estrangeiros contestar[?]
 # m0004 (back)
 falso boato. Referindo os factos em termos
 convenientes.</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hintze1903/m0003_decryption.txt">m0003_decryption.txt</a></p><pre># m0003 group by group against the decode of the time (m0003, continued on m0004). 25 groups.
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hintze1903/m0003_decryption.txt">m0003_decryption.txt</a></p><pre translate="no"># m0003 group by group against the decode of the time (m0003, continued on m0004). 25 groups.
 # Clear words of the telegram in capitals as (clear). The decode gives one unit per group, segment by segment
 # between the clear words (code.py, part 2); only the split of &quot;Camara dos Pares / Arroio / divorciado&quot; over
 # three groups is ours. ? = doubtful reading of the decoder&#x27;s word.
@@ -167,13 +167,13 @@ convenientes.</pre></details>
 59587   termos
 17836   convenientes
 (clear) .- HINTZE RIBEIRO .</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hintze1903/m0003_reading.md">m0003_reading.md</a></p><pre># m0003: Hintze Ribeiro to Queen Amélie, Monte Estoril -&gt; Paris (Hotel Bristol), 11 May 1903
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hintze1903/m0003_reading.md">m0003_reading.md</a></p><pre translate="no"># m0003: Hintze Ribeiro to Queen Amélie, Monte Estoril -&gt; Paris (Hotel Bristol), 11 May 1903
 
 Hoje, na Camara dos Pares, Arroio, divorciado de todos, [veio] interpellar o Ministro dos Estrangeiros acerca da
 viagem [de] Vossa Magestade, fazendo referencia [á] ausencia [das] auctoridades [em] Livorno [?] e [á] falta [de] visita [do]
 Presidente da Republica Franceza. O Ministro dos Estrangeiros [veio] contestar [?], [ser] falso boato, referindo os
 factos em termos convenientes. Hintze Ribeiro.</pre></details>
-<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hintze1903/m0003_en.md">m0003_en.md</a></p><pre># m0003: English translation
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hintze1903/m0003_en.md">m0003_en.md</a></p><pre translate="no"># m0003: English translation
 
 Today in the House of Peers Arroio, at odds with everyone, interpellated the Foreign Minister about Your Majesty&#x27;s
 journey. He pointed to the absence of the authorities at Livorno [?] and to the President of the French Republic not
@@ -187,7 +187,7 @@ Diário da Câmara dos Pares of about 11 May 1903 would confirm the day and thes
 <h3>m0001, Lisbon -&gt; Naples, 23 Apr 1903 <span class="st stuck">decoded, not read</span></h3>
 <p>Hintze Ribeiro thanks the Queen, on the yacht at Naples, for her letter; the coded part is not read.</p>
 <p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription and the key can be checked and improved, not as a reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hintze1903/m0001_transcription.txt">m0001_transcription.txt</a></p><pre># ANTT PT/TT/CAM/M15, image m0001 (back m0002). Italian receiving form, Ufizio Telegrafico di Napoli, printed strips,
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hintze1903/m0001_transcription.txt">m0001_transcription.txt</a></p><pre translate="no"># ANTT PT/TT/CAM/M15, image m0001 (back m0002). Italian receiving form, Ufizio Telegrafico di Napoli, printed strips,
 # stamped URGENZA. Address strip: SA MAJESTE LA REINE DE PORTUGAL A&#x27; BORD DU YACHT AMELIA NAPLES
 # Header strip: SS NAPLES LISBOA 7325 75 23 5/27 HN .+ (destination Naples, origin Lisbon, no. 7325, 75 taxed words,
 # day 23, 5.27). Stamp NAPOLI 23 APR 03; &quot;Ricevuto il 23/4 190[3]&quot;.
@@ -200,7 +200,7 @@ PARECE .+ ME 50272 32540 55354 NO 57136 53803 A 67394 63194 NAO 60134 10972 EM
 49920 1347 49638 MAS 41285 15716 35512 COM 10928 O QUE 42476 56840 49638 VOU
 60775 15128 DAS 53251 55354 QUE VOSSA MAGESTADE 42414 , 5249 E MUITO
 DEDICADAMENTE BAIJO A SUA MAO .+ HINTZE RIBEIRO .+</pre></details>
-<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hintze1903/m0001_decryption.txt">m0001_decryption.txt</a></p><pre># m0001 (Lisbon -&gt; Naples, 23 Apr 1903): no decode of the time. Clear words in capitals; one group has a value from
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hintze1903/m0001_decryption.txt">m0001_decryption.txt</a></p><pre translate="no"># m0001 (Lisbon -&gt; Naples, 23 Apr 1903): no decode of the time. Clear words in capitals; one group has a value from
 # m0003 (41285 = Vossa Magestade); the other 28 are open. After each open group, its place among the decoded values
 # under the page model (code.py, part 4), and our guesses, which are not readings.
 AGRADECO MUITO A CARTA DE VOSSA MAGESTADE . NO       (clear)
@@ -258,13 +258,13 @@ E MUITO DEDICADAMENTE BAIJO A SUA MAO .+ HINTZE RIBEIRO .+   (clear)</pre></deta
 <li>Arquivo Nacional Torre do Tombo, <em>Documentos de D. Carlos, D. Am&eacute;lia e D. Manuel II</em>, ma&ccedil;o 15, PT/TT/CAM/M15, <a href="https://digitarq.arquivos.pt/documentDetails/70a181c91c944a74bed573252735928b" rel="noopener">DigitArq record</a>, 4 images: m0001 (Naples, 23 April) and its back m0002; m0003 (Paris, 11 May) and its back m0004 with the end of the decode.</li>
 <li>No print of these telegrams or of the interpellation was found (one web search). General literature on the 1903 journey: <a href="https://repositorioaberto.uab.pt/entities/publication/5aeeede3-d055-4254-bed2-b88d8c1d459c" rel="noopener">Reposit&oacute;rio Aberto, Universidade Aberta</a>.</li>
 </ul>
-<p class="muted">Files: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/hintze1903">targets/hintze1903/</a> (notes, transcriptions, the decode of the time, reading and translation, <code>code_values.tsv</code>, <code>code.py</code> with its output). Contributed by WAINUT; reviewed for the site on 27 October 2026.</p>
+<p class="muted">Files: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/hintze1903">targets/hintze1903/</a> (notes, transcriptions, the decode of the time, reading and translation, <code translate="no">code_values.tsv</code>, <code translate="no">code.py</code> with its output). Contributed by WAINUT; reviewed for the site on 27 October 2026.</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Arquivo Nacional Torre do Tombo, PT/TT/CAM/M15, via DigitArq</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="carlos1903.html" rel="prev">&larr; King Carlos to Queen Am&eacute;lie 1903 1903</a><a href="lima1909.html" rel="next">Venceslau de Lima to Manuel II 1909 1909 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
 <script src="solve-replay.js?v=20261030a" defer></script>
 <script src="zoom.js?v=20261030a" defer></script>
 <script src="site.js?v=20261030a"></script>
