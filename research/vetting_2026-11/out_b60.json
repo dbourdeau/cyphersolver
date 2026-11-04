@@ -1,0 +1,175 @@
+{
+ "2057": {
+  "unvetted": "needs Chrome: https://search.amphilsoc.org/collections/view?docId=ead/Mss.B.F327-ead.xml (Cloudflare 403 to curl and WebFetch, so the finding-aid entry for Feinstone no. 398 could not be re-read). Three searches for de Grasse / du Bar / 'Number 106' found no edition or decipherment, but the item is microfilm-only and its cipher is names only; confirm the entry wording and extent before opening."
+ },
+ "2110": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b60",
+  "seen": {
+   "kind": "not online",
+   "where": "Yale finding aid https://ead-pdfs.library.yale.edu/11076.pdf (Spinelli archive, GEN MSS 109), PDF pp. 105 and 125; no scan online",
+   "extent": "b. 126 f. 2560-65: Piero Spinelli, 30 letters, 90 pp. part in cipher, 1514-26; Barcelona letter of 7 Sep 1519, 4 pp. part in cipher",
+   "cipher": "Finding aid: 'Spinelli, Piero. 30 letters; Anversa (Antwerp), Bruggia (Bruges), Rignalla, Venezia (Venice). 90pp. part in cipher. 1514-26' and 'Barchenonia (Barcelona). 4pp. part in cipher. 1519 Sep 7'. A 2017 blog post (Schmeh) shows a Beinecke letter from Tommaso in Barcelona to Leonardo Spinelli with two ciphered paragraphs, very probably the 1519 Barcelona letter, so cipher text survives there; the Piero letters are known only from the finding aid."
+  },
+  "prior_art": {
+   "decode": "known.py on 'Spinelli' and 'GEN MSS 109' (harvested DECODE dump, which is what was run): hits are only this lead, its sweep file and catalogue 1618 (Gasparo Spinelli at Naples, a different Spinelli); no DECODE record for the Beinecke Spinelli archive.",
+   "tomokiyo": "Web searches found no Cryptiana page on the Beinecke Spinelli letters; Cryptiana henryvii.htm cites Domnina on Spinelly's ciphers (per the lead), not opened here.",
+   "lasry": "GL.htm (local copy targets/gramont1529/GL.htm) has no Spinelli entry; web search found no Lasry paper on the Spinelli family ciphers.",
+   "edition": "No printed edition of the Spinelli family letters found. Domnina, 'Ciphers in Early Tudor Diplomacy: the Case of Tommaso Spinelli's Private Letters' (Geheime Post, 2015, pp. 181-194, DHI Paris catalogue) studies Tommaso's private-letter cipher; full text not opened (the Lomonosov PDF did not answer).",
+   "literature": "Per commenters on the 2017 Schmeh blog post, Domnina 2015 prints a cipher table (p. 186) and an improved key; Norbert read page 1 ('et li dite che madama...') and Thomas part of page 2, so a partial decipherment of the Barcelona letter is on record. Nothing found on Piero Spinelli's cipher."
+  },
+  "key_check": "No Spinelli key in this repo (targets/spinelly1516 is Thomas Spinelly to Wolsey, a different system). Domnina's printed table for Tommaso's cipher is the candidate key for the Barcelona letter; not obtained or tested here. Piero's cipher is unknown.",
+  "key_held": "Domnina 2015 cipher table (Tommaso Spinelli's private-letter cipher), in print; not obtained or tested.",
+  "duplicates": "known.py 'Spinelli', 'GEN MSS 109': only catalogue 1618 (Gasparo Spinelli, Naples 1618) and this lead; no duplicate. targets/spinelly1516 is a different document.",
+  "verdict": "partly_read",
+  "closed": "The 7 Sep 1519 Barcelona letter (Tommaso to Leonardo Spinelli) has a decipherment on record: Domnina's 2015 key and partial readings of pages 1-2 posted in the comments of Schmeh's blog post of 24 Mar 2017 (scienceblogs.de/klausis-krypto-kolumne/2017/03/24). The 30 Piero Spinelli letters (f. 2560-65) were not found studied; split them into their own lead if a scan can be had."
+ },
+ "2111": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b60",
+  "seen": {
+   "kind": "not online",
+   "where": "Yale finding aid https://ead-pdfs.library.yale.edu/1108.pdf, Osborn Manuscript Files, LANGLOIS, BENJAMIN, b. 87, file 8640; no scan online",
+   "extent": "3 pp., part in code, ALS of 15 Nov 1769 from Vienna to Sir John Goodricke",
+   "cipher": "Finding aid: 'ALS, part in code, to Sir John Goodricke. Vienna. 3 p. 23 x 19 cm.' (1769 Nov 15). The sibling in file 9398 (St Petersburg, 22 Dec 1766) is described as 'Most of the letter is in code, decoded on the line above'; this item carries no such note."
+  },
+  "prior_art": {
+   "decode": "known.py on 'OSB MSS FILE 8640', 'Langlois', 'Goodricke' (harvested DECODE dump, which is what was run): no DECODE record; only this lead and catalogue 1541 (Walpole to Goodricke 1769) mention Goodricke.",
+   "tomokiyo": "Web search (Cryptiana, British diplomatic ciphers 1760s, Vienna, Stormont, Langlois) found no Cryptiana page on this letter or on Vienna embassy ciphers of 1769.",
+   "lasry": "GL.htm (local copy) has no Langlois, Goodricke or Vienna 1769 entry; web search found no Lasry or HistoCrypt paper on it.",
+   "edition": "No edition of Langlois's letter found. Bodleian MS. Eng. hist. c. 62 (24 letters to Goodricke, some in cypher with transliteration) is a separate set whose item list sits behind Anubis and was not opened; a letter exists once, so it cannot hold a transliteration of this physical letter. TNA SP 80 (Austria) embassy despatches not opened.",
+   "literature": "Web searches on Langlois (secretary of Stormont's Vienna embassy 1763-71), the Goodricke papers and the Camden 'Sir John Goodricke, Baronet 1758-1773' (403, not opened) found no decipherment of a 1769 Langlois letter."
+  },
+  "searches": [
+   {
+    "query": "Benjamin Langlois secretary British embassy Vienna 1769 letter Goodricke Stockholm cipher code",
+    "result": "Langlois was Stormont's embassy secretary at Vienna 1763-71; BL has Langlois to Phelps 1763-64; nothing on a 1769 letter to Goodricke or its code."
+   },
+   {
+    "query": "Sir John Goodricke papers Stockholm 1769 cypher letters deciphered Bodleian Vienna correspondence Stormont Langlois",
+    "result": "Bodleian MS. Eng. hist. c. 62 has 24 letters to Goodricke incl. some in cypher with transliteration, correspondents not named; TNA SP 95/116 is Goodricke's 1769 diet journal; no Langlois decipherment."
+   },
+   {
+    "query": "cryptiana British diplomatic ciphers 1760s Vienna Stormont embassy code Langlois decipherment Osborn Yale",
+    "result": "Nothing on 1760s British Vienna ciphers or this letter; only unrelated Jacobite and Yardley material."
+   }
+  ],
+  "key_check": "No Vienna or Goodricke key held in this repo, on DECODE or found in print; the 1766 St Petersburg sibling (file 9398) was decoded interlinearly but is another correspondent's code and its text is not online.",
+  "duplicates": "known.py 'Langlois', 'Goodricke', file 8640: no catalogue duplicate; catalogue 1541 is Walpole to Goodricke (Paris, 8 Oct 1769), a different letter and writer.",
+  "verdict": "open"
+ },
+ "2112": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b60",
+  "seen": {
+   "kind": "not online",
+   "where": "Yale finding aid https://ead-pdfs.library.yale.edu/1108.pdf, Osborn Manuscript Files, PERWICH, WILLIAM, FL.1675, b. 118, file 11791 (PDF p. 1166); no scan online",
+   "extent": "ALS, 2 pp. 23 x 17 cm, with a long passage in code; Paris, 7 Jun 1669, to [Sir William Temple]",
+   "cipher": "Finding aid: 'ALS to [Sir William Temple]. Paris. 2 p. 23 x 17 cm. Letter includes a long passage in code.' (1669 Jun 7), filed under Perwich, William. No decipherment is mentioned; neighbouring file 11790 is a plain letter to Downton."
+  },
+  "prior_art": {
+   "decode": "known.py on 'OSB MSS FILE 11791', 'Perwich', 'Temple' (harvested DECODE dump, which is what was run): no DECODE record; hits are this lead, other catalogue entries and targets/perwich (the 1670 Arlington letter).",
+   "tomokiyo": "Cryptiana (Sept 2025 post on Perwich's 9 Apr 1670 transposition) quotes Temple's 1669 remark that Perwich 'wrote from France for a Tryal' of Morland's cypher; it describes no 1669 letter to Temple and no decipherment of one.",
+   "lasry": "GL.htm (local copy) has no Perwich entry; Lasry, Biermann and Tomokiyo solved only the 1670 letter to Arlington (TNA blog, 14 Oct 2025); nothing on the Beinecke 1669 letter.",
+   "edition": "Curran, Despatches of William Perwich (Camden 1903; archive.org despatchesofwill00perwrich, full text opened): letters to Arlington, 'only the deciphered portions have been printed', no letter to Temple; Temple's own letter volumes not found online.",
+   "literature": "Web searches (TNA blog, Cryptiana, Language Hat, Yale) found no mention of this letter or any decipherment of it."
+  },
+  "searches": [
+   {
+    "query": "Perwich letter to Sir William Temple 7 June 1669 Paris cipher passage deciphered",
+    "result": "Only the 9 Apr 1670 Arlington letter (solved Oct 2025) and Curran 1903 came back; no record of a 1669 Temple letter or its decipherment."
+   },
+   {
+    "query": "Temple 1669 Perwich Morland cypher trial letter from Paris Osborn Beinecke",
+    "result": "Cryptiana quotes Temple 1669 'Mr. Perwick wrote from France for a Tryal' on Morland's cypher; no text or decipherment of the letter itself."
+   },
+   {
+    "query": "Perwich Temple 1669 letter in code Yale Osborn OSB MSS FILE 11791",
+    "result": "No Yale record for file 11791 surfaced; Language Hat and TNA posts concern the 1670 letter only."
+   },
+   {
+    "query": "Curran Despatches of William Perwich full text cipher Temple (archive.org djvu text)",
+    "result": "Opened: cipher passages are printed only when deciphered, all in letters to Arlington; no Temple letter, so the Beinecke letter is unprinted."
+   }
+  ],
+  "key_check": "No key for the 1669 letter. TNA holds Perwich's later numerical keys (not for his alphabetical 1670 system); the 1670 system was a 20-column transposition with nulls, solved 2025 (targets/perwich); whether the 1669 passage uses it is unknown.",
+  "key_held": "Method only: targets/perwich (columnar transposition, Morland-style, solved by others Oct 2025); not tested, since there is no scan of the 1669 letter.",
+  "duplicates": "known.py 'Perwich', file 11791, 'Temple': no catalogue duplicate; targets/perwich is the 9 Apr 1670 Arlington letter, a different document.",
+  "verdict": "open"
+ },
+ "2113": {
+  "unvetted": "Only the Yale finding aid line (GEN MSS MISC GROUP 577 F-47: 'Unidentified AM written in an unidentified hand, mostly in cipher', [2] leaves, undated); no scan, writer, language or date, so prior art cannot be searched for a specific document, and the cataloguer's 'cipher' may be shorthand. Searches on Beinecke GROUP 577 and Bible-commentator cipher notes found no record; needs a Yale image."
+ },
+ "868": {
+  "unvetted": "needs Chrome: https://archives.bodleian.ox.ac.uk/repositories/2/archival_objects/7695 (Anubis blocks curl and WebFetch). Bodleian summary (beta.nationalarchives.gov.uk e3f1f349, read) says 'Most of it is written in cipher' with Arlington's note 'cursed cypher' and gives the treaty content at length; Carte 50 f.405 holds ciphers of 1662-82. Whether a decipherment is written on fols 498-499 cannot be told without the leaf or the Carte calendar; three searches found no printed edition."
+ },
+ "872": {
+  "unvetted": "TNA SP 87/13/85 (ff. 174-175, not digitised; Discovery C9188928 blocked, read via search snippet): 'original in cipher' with the sense calendared, enclosing a letter to '101' [undeciphered]; siblings SP 87/13/18, /29, /66 use '101' as an agent name, so 'undeciphered' may only mean an unidentified code number. Needs the Kew image to show whether any ciphertext lacks a decipherment; no web decipherment found."
+ },
+ "879": {
+  "unvetted": "needs Chrome: https://discovery.nationalarchives.gov.uk/details/r/C7306137 (Discovery gives an empty 202 to curl, the beta page hangs). SP 84/161/66 f.169 is 'Letter in cipher or shorthand', writer, language and recipient unknown, not digitised; cannot show ciphertext survives. Thurloe State Papers vol. 5 (July 1656, BHO) not opened for an 18 Jul item; three searches found nothing."
+ },
+ "1247": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b60",
+  "seen": {
+   "kind": "facsimile",
+   "where": "Wikimedia Commons file 'Shifrovannoe pismo vitse-kantslera Ostermana rezidentu v Persii Kalushkinu, 1737.jpg' (714x1021 px, downloaded and viewed), from GKUAO GAAO f. 394 op. 1 dop. d. 11 l. 21",
+   "extent": "one leaf: a 4-line clear opening, then about 17 lines of cipher",
+   "cipher": "Clear heading 'Ukaz nashemu rezidentu Kalushkinu' and an opening sentence acknowledging the rescript of 6 January and relations nos. 10, 11 and 12; then about 17 lines of a symbol cipher (mixed Cyrillic letters, digits and signs) with no decipherment written on or between the lines of the leaf."
+  },
+  "prior_art": {
+   "decode": "known.py 'Ostermann', 'Kalushkin' (harvested DECODE dump, which is what was run): only this lead and its sweep files; deboli1788 mentions Ostermann in another context; no DECODE record.",
+   "tomokiyo": "English and Russian web searches found no Cryptiana page on this rescript or on Russian Anna-era ciphers to Persia.",
+   "lasry": "GL.htm (local copy) has no Russian 1737 entry; no Lasry or HistoCrypt paper found on it.",
+   "edition": "No printed edition found. Russian searches (fond 394 GAAO, Ostermann rescript to Kalushkin, Astrakhan exhibition) returned only fond 178 (Kalushkin's 1739 relations, a different series) and no publication of this leaf; Soboleva, Istoriya shifroval'nogo dela v Rossii (2002) not opened.",
+   "literature": "Soboleva 2002 and Podyapolskaya 1959 (Russian cipher correspondence) surfaced as general works; no mention of Kalushkin or Persian ciphers."
+  },
+  "searches": [
+   {
+    "query": "Osterman Kalushkin 1737 reskript shifrom GKUAO GAAO f. 394 op. 1 dop. d. 11 (Russian script)",
+    "result": "No record of the leaf or finding aid; only unrelated Ostermann literature and TNA SP 91 items."
+   },
+   {
+    "query": "Ostermann rescript to Kalushkin 1737 cipher Astrakhan archive Commons File Kalushkin",
+    "result": "Nothing on this file; a 1741 TNA despatch mentions Kalushkin in Persia, unrelated to a cipher."
+   },
+   {
+    "query": "shifr reskript Ostermana rezidentu v Persii Kalushkinu rasshifrovka (Russian script)",
+    "result": "No source on this rescript or its decipherment; general cryptanalysis pages only."
+   },
+   {
+    "query": "Soboleva istoriya shifrovannoi diplomaticheskoi perepiski Rossii XVIII vek Ostermann Kalushkin Persiya (Russian script)",
+    "result": "Soboleva 2002 and Podyapolskaya 1959 are general; nothing on Persia, Kalushkin or this rescript."
+   },
+   {
+    "query": "Astrakhan archive exhibition shifrovannoe pismo Ostermana Kalushkinu 1737 Nadir-shah rezident (Russian script)",
+    "result": "Only fond 178 (Astrakhan prikaznaya palata) listing Kalushkin's 1739 relations; no exhibition page or decipherment."
+   }
+  ],
+  "key_check": "No Russian Collegium of Foreign Affairs key for 1737 held in this repo or found online; no key leaf on Commons; none tested.",
+  "duplicates": "known.py 'Ostermann', 'Kalushkin': only this lead and its sweep; no catalogue entry or target for the same document.",
+  "verdict": "open"
+ },
+ "1248": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b60",
+  "seen": {
+   "kind": "facsimile",
+   "where": "Commons File:Letter_of_Alexis_of_Russia.JPG (Kutepov vol. 2, St Petersburg 1898, p. 104), viewed; Kutepov's text in archive.org velikokniazheska02kute (djvu text opened)",
+   "extent": "one page, 11 lines of cursive, a column of names ending 'A potom bud zdrav'",
+   "cipher": "Facsimile of the tsar's autograph: lines of proper names and monosyllables, with the closing sign-off in clear; Kutepov's plate caption prints the reading."
+  },
+  "prior_art": {
+   "decode": "known.py 'Matyushkin', 'Alexis': no DECODE record; only this lead and sweep files.",
+   "tomokiyo": "Web searches found no Cryptiana page; not needed once the printed reading was found.",
+   "lasry": "GL.htm (local copy) has no entry for it.",
+   "edition": "Kutepov, Velikoknyazheskaya i tsarskaya okhota na Rusi, vol. 2 (1898), plate 'Sobstvennoruchnoe tarabarskoe pismo Tsarya Aleksiya Mikhailovicha k stolniku i moskovskomu lovchemu A. I. Matyushkinu' prints the plaintext and describes the method.",
+   "literature": "Kutepov reports that the copy went via A. F. Malinovsky to Count N. P. Rumyantsev and was read by a Foreign Ministry clerk."
+  },
+  "key_check": "The method is an acrostic of names and monosyllables, not a table; no key needed.",
+  "duplicates": "known.py: no duplicate in catalogue or targets.",
+  "verdict": "read",
+  "closed": "Printed decipherment: Kutepov 1898 vol. 2 (p. 104 and the list of plates) prints 'Brother, as you are not here, there is no one to feed me bread with zakala. And then be well', obtained for Count Rumyantsev by a Foreign Ministry clerk who wrote the names and monosyllables under each other and read the first letters (an acrostic). Caption in the Russian djvu text of archive.org velikokniazheska02kute, lines 925-933."
+ }
+}

@@ -110,3 +110,63 @@ file header.
    they are cribs for box 636.
 3. In Vienna (HHStA): the Staatskanzlei Chiffrenschlüssel for Russia and Saxony of 1744, and the key Dorotheum says
    accompanies the Maria Theresa–Esterházy letters of 1744.
+
+## 3 Nov 2026: the sender may be Prussian, which changes where to look for the key
+
+This revises the sender discussion and the key candidates above. It does not read the letter. The method stays *not solved*.
+
+**Hypothesis: Axel von Mardefeld, Prussian envoy at the Russian court, to Frederick II. Inferred, not established.**
+
+- The clear text praises "la refutation de l'Imprimé de la Cour de Vienne" as "trop solide". An Austrian envoy would hardly write that to Maria Theresa, or call his own court "la Cour de Vienne" in this way, so the Rosenberg reading above looks unlikely. The print need not concern the Botta affair either.
+- The dispute fits. Vienna printed its *Beantwortung* of Dohna's declaration on 22 Aug 1744. Berlin answered with the *Widerlegung … Scheingründe* (Berlin, Gäbert, 1744), French title *Refutation du Memoire publié par la Cour de Vienne* (Koser, *Preussische Staatsschriften* I, 477-482; *Politische Correspondenz* III, 265 n. 1).
+- Mardefeld is addressed "à Moscou" in 1744 and his reports are quoted in French ("J'ai reçu les ordres…", PC III, reports of 21 May and others). No. 1621 (29 Oct 1744) acknowledges his relations of 28 Sept and 1 Oct, so a report of 5 Oct fits his rhythm. "Re- & Postscripts" fits a ministerial rescript with a postscript.
+- Open points. The 5 Oct relation is not quoted in PC III. The French *Refutation* went to the legations only on 20 Oct (Koser), so a paper received with a rescript of 15 Sept would be the German text or a manuscript, and that link is unproved. Another anti-Viennese court's envoy is not excluded. Nothing here explains for certain why the sheet is in the Esterházy papers. Vienna did hold intercepted Prussian despatches that autumn (the printed Schmettau papers of 16 Oct 1744), and Rosenberg passed one to Bestuzhev (Berlin to Mardefeld, 15 Dec 1744, quoted by Koser), but this does not show that this letter was intercepted.
+
+**If this holds, the key and the plaintext are Prussian, not Viennese.** The HHStA Russia/Saxony keys are then the wrong place for this letter (the other box-636 letters, including Maria Theresa's, are a separate question).
+
+- *Text:* the received, deciphered relation should be in the Geheimes Staatsarchiv PK, Berlin, Russia series (series not checked; I. HA Rep. 11 Russland or Rep. 96 are the likely ones). A matched copy would allow a key from external plaintext.
+- *Key:* DECODE R4366, BL Add MS 32276 f. 37, dated 1744, "Prufsia", sender "Scholing?", a British Deciphering Branch table. Only 200 px thumbnails were seen; it needs a DECODE login. It may belong to another Prussian correspondent. R4367 (1745, Andrié) is a weaker second. R2824 ("cipher_Prussia_1746") was already rejected as a Prussian lead in `targets/hellen1752/AUDIT_2026-09-20.md`.
+
+**Also new**
+
+- Keys tested: 71 tables in this repository scanned by coverage. R596 (values to 3293) applied with its null rules gives 98 of 176 nulls, close to the 57% expected by chance, and no sentence: ruled out. The envoy table of `targets/r1955/` was not tested.
+- The 3xxx block: 6 of 12 such groups stand first or last on a line, against 22 of 176 slots (permutation p about 0.001). The pattern was noticed after looking, so it is only a pointer. It may mean names, nulls or a habit of the copyist.
+- Verso show-through in the figure: `transcription/fig6_verso_showthrough.txt`. Low confidence, not counted. It includes "… que ce Marquis [?] y est arrivé", so the same document has more clear text and more groups in the same value range.
+- Ciphertext-only: still not run, for the reason given above. 140 of the 157 distinct groups occur once.
+
+Sources: *Politische Correspondenz Friedrich's des Grossen* III and IV (Internet Archive `politischecorres03freduoft`, `politischecorres04fred`); Koser, *Preussische Staatsschriften* I (`bub_gb_HUguAAAAMAAJ`). OCR text, checked only where quoted; page references should be confirmed on the images.
+
+### Remaining gaps, added 3 Nov 2026
+- the sender hypothesis and its plaintext - blocker: needs-physical-access; request Mardefeld's relation of 5 Oct 1744 from the GStA PK, Berlin
+- key test against R4366/R4367 - blocker: needs-physical-access; DECODE login needed for full images and transcriptions
+
+## 3 Nov 2026, later: R4366 and R4367 tested, both ruled out; GStA files located
+
+Images of both records were supplied by the contributor (not committed). Transcriptions are in `keys/`; both are first passes.
+
+- **R4366** (BL Add MS 32276 ff. 37-38v, docket "Scholings Papers. Prussian. 1744"): a table to 1075, filled only to about 950, values 1-54 torn. 44 of the 78 sample groups in 55-950 fall on filled cells; distinct values 39 of 71 (55%), against a fill rate of 52% (P = 0.34). 80 sample groups lie above the table. The decode gives no sentence. Ruled out for this letter (`keys/test_r4366.py`).
+- **R4367** (ff. 40-41, docket "Andrié 1745. Old Cyphers out of Use"): 1-2198, no 3xxx. Under a code of that range, 164 groups would all miss 1738-2198 with probability about 1.7e-17, while its 2001+ cells hold common items such as "Vre Majesté". The decode gives no sentence. Ruled out for this letter (`keys/test_r4367.py`).
+- These tests say nothing against the Mardefeld hypothesis: they show only that these two Prussian tables are not this code.
+
+**GStA PK files (Archivportal-D, read 3 Nov 2026; catalogue entries only, no documents seen, no digitisation shown):**
+
+- I. HA Rep. 96, Nr. 55 C and Nr. 55 D, both "Schriftwechsel mit dem preußischen bevollmächtigten Minister Axel Freiherr von Mardefeld in St. Petersburg und Moskau", 1744 (Geheimes Kabinett). The entries do not say which holds October. Neighbours: Nr. 55 B (1743), Nr. 55 E (1745).
+- I. HA GR, Rep. XI Russland: the ministerial series, likely for a report answering "Re- & Postscripts". Cited for a 1746 Mardefeld text as "Rep. XI Russland 91, 54 E" (vostlit edition); the 1744 file numbers were not found online.
+- VI. HA, Nl Mardefeld, A. v. (1719-1748): his papers, which might hold drafts or cipher material; contents not seen.
+
+The report of 5 Oct 1744 itself has **not** been seen, so it is not yet confirmed that it exists or that it is the same text.
+
+## 3 Nov 2026, later: where Mardefeld's 1744 letters are, from Liechtenhan 1998
+
+F.-D. Liechtenhan, "La Russie d'Élisabeth vue par des diplomates prussiens (1)", *Cahiers du monde russe* 39/3 (1998), 253-282, cites Mardefeld's letters to the King by file and folio (PDF supplied by the contributor; read by OCR, so check numbers on the page):
+
+- **I. HA Rep. 96, Nr. 55 C:** letter of 11 Jan 1744 at fol. 13 (n. 66), letter of 26 May 1744 at fol. 178 (n. 44). The file therefore starts about January 1744 and is at fol. 178 by late May. **Nr. 55 D is the likelier place for October**, by inference only; nobody here has seen it.
+- **I. HA GR, Rep. 11 Auswärtige Beziehungen, Nr. 171-175 Moskau (Russland), Konv. 46 B:** fol. 295 is cited for "la description de Mardefeld en 1744" (n. 19). The date of that piece is the only dating evidence for the Konvolut, so Konv. 46 is a candidate series for 1744, not a confirmed one. Other Konvolute cited: 49 C, 50 B, 54 E (the 1746 memorandum), 56 A (1748).
+
+This corrects the shorter citation "Rep. XI Russland 91" used above: request the series as Rep. 11, Nr. 171-175 Moskau (Russland).
+
+Context, not evidence for this letter: Mardefeld's own memorandum says Goldbach deciphered foreign ministers' despatches only when they were carelessly enciphered, and the article quotes a Russian postal report on his mail of 1745 (n. 105). So his post was watched. It does not show that this despatch was copied.
+
+### Archive request, 3 Nov 2026
+
+Jozef Krajčovič sent the enquiry to the GStA PK on 3 Nov 2026. It asks about Mardefeld's report of 5 Oct 1744 (Rep. 96 Nr. 55 D/C; Rep. 11 Nr. 171-175 Moskau, Konv. 46), the form it survives in, the rescript of 15 Sept 1744, any cipher key, and a quote for digital copies. No reply yet. The archive says it does not usually confirm receipt.

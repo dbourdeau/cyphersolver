@@ -1,0 +1,68 @@
+{
+ "1208": {
+  "unvetted": "Notice only ('annonçant en chiffres'); 'en chiffres' may mean figures, not cipher; possible duplicate of COL C11A 105 ff.147-152 (research/canada_lac); known.py finds only this lead; ANOM has no viewer, so no ciphertext and no duplicate check; needs ANOM leaf or Chrome pass"
+ },
+ "1209": {
+  "unvetted": "Calendar says 'Passage chiffré non traduit' but no leaf online; Hatalkar 1983 edition of Montigny's correspondence (French Records relating to the History of the Marathas) not opened, so printed decipherment unchecked; needs that volume or ANOM leaf"
+ },
+ "1211": {
+  "unvetted": "Title-only 'Chiffrée' for outgoing ministerial minutes (likely clear drafts); no leaf online at FranceArchives or ANOM; needs the ANOM 201 MIOM 3 images to show ciphertext"
+ },
+ "1214": {
+  "unvetted": "Inventory entry only ('sans clé de déchiffrement', 3 pieces, date 1659-1890); no digitised leaf, no ciphertext seen; needs AD24 scans: https://francearchives.gouv.fr/fr/facomponent/84717ae4732f39f610e5cf1dde6823b25b075d77"
+ },
+ "1215": {
+  "unvetted": "Inventory entry only ('lettre chiffrée', 1832); may be sympathetic ink not cipher; no scan; royalist 1832 key literature unopened; needs AD30 scan"
+ },
+ "1216": {
+  "unvetted": "Inventory only ('quelques unes de ces lettres sont chiffrées'); no digitised leaf, no ciphertext seen; sibling Yvelines E/3756 is catalogue 549; needs AD91 scans"
+ },
+ "1217": {
+  "unvetted": "Inventory only ('une pièce chiffrée'); no scan, ciphertext not shown; needs AD95 scans of 68 H 19"
+ },
+ "1218": {
+  "unvetted": "Catalogue mention only ('dépêches télégraphiques chiffrées'); no scan; 1855 telegraph codes may be recorded elsewhere; needs SHD item or inventory text"
+ },
+ "1219": {
+  "unvetted": "Inventory remarks only ('feuille volante chiffrée'); cannot tell cipher from business shorthand; no scan; needs AD52 scans"
+ },
+ "1579": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b20",
+  "seen": {
+   "kind": "scan",
+   "where": "https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/28225111 (and 28225112-28225114), AGAD zesp. 338, 1/338/0/1/1398-1401; seen in the Nov 2026 Chrome pass (research/chrome_pass_2026-11/)",
+   "extent": "four letters, one or more pages each; 1398 scan 2 is a full page of dense mixed text",
+   "cipher": "1398, 1399 and 1400 are letter-cipher mixed with 3-digit numbers (845 frequent), 1399 after a French clear opening; 1401 is Polish clear text with underlined digit groups, a different system. No decipherment written on the pages seen."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump plus repo ledgers) on 1/338/0/1/1398, 338/0/1/1399, 'AGAD Branicka cyfrowany': only this lead and its chrome-pass candidate row; no DECODE record.",
+   "tomokiyo": "Searched Tomokiyo's cryptiana by way of web searches for AGAD zespol 338 and Branicki cipher letters: nothing on this fonds or these letters.",
+   "lasry": "Searched Lasry/HistoCrypt for Polish 18th century cipher letters from the Branicki archive: only Chodkiewicz 1574-75 and Saxon-Polish Wackerbarth/Flemming nomenclators turned up, different material; GL.htm not listing this fonds.",
+   "edition": "No printed edition of zesp. 338 correspondence found; the cataloguer's own note 'List cyfrowany, nierozwiazany' says unsolved; the 1872 Branicki edition of 1768 letters is clear text.",
+   "literature": "Polish and English searches (szyfr, rozszyfrowany, Cryptologia, HistoCrypt) found no study of these letters; the nearest are the Chodkiewicz and Saxon-Polish papers, which are other documents."
+  },
+  "searches": [
+   {
+    "query": "AGAD Archiwum Radziwiłłów OR Branickich zespół 338 szyfr list zaszyfrowany rozszyfrowany 1398",
+    "result": "Only generic fonds descriptions: zesp. 338 is the Anna Potocka Branicka collection; nothing on ciphers or decipherment."
+   },
+   {
+    "query": "AGAD zespół 338 Archiwum Roskie OR Branickich listy szyfrowane odszyfrowanie kryptologia XVIII wiek",
+    "result": "No hit on cipher letters in zesp. 338; unrelated Branicki and Rosk archive articles."
+   },
+   {
+    "query": "decipherment Polish 18th century cipher letters Branicki archive AGAD numeric cipher Cryptologia HistoCrypt",
+    "result": "Found HistoCrypt Chodkiewicz 1574-75 and Saxon-Polish Wackerbarth/Flemming studies, and the Brougham 1724 letter: none concern these AGAD letters."
+   },
+   {
+    "query": "known.py 1/338/0/1/1398 338/0/1/1399 AGAD Branicka cyfrowany",
+    "result": "Repo ledgers and DECODE dump: only this lead and the chrome-pass candidate; no prior record."
+   }
+  ],
+  "key_check": "No key tested on these letters. Fonds key 1/338/0/1/1196 exists (see key_in_volume) but the numeric part was not tried against it yet; no reading of these letters is on record, so it does not block the lead.",
+  "key_in_volume": "Fonds key unit 1/338/0/1/1196 noted in research/chrome_pass_2026-11/prior_a.json; not tested, needs a larger image than the 800-pixel scan.",
+  "duplicates": "known.py on the shelfmarks and 'AGAD Branicka cyfrowany' finds only this lead and its candidate row; no catalogue entry or target covers AGAD zesp. 338.",
+  "verdict": "open"
+ }
+}

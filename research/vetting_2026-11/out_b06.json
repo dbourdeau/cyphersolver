@@ -1,0 +1,122 @@
+{
+ "2125": {
+  "unvetted": "Description only ('two AL, written in code in unidentified hands, dated Apr 17, 1790, and undated'); ArchiveGrid 702150338 returns 403 to scripts, and web search (SNAC record, Shepherd 1904, Wilkinson cipher literature) could not confirm the holder or find a finding aid or scan, so the leaf was not seen and a decipherment of these two items could not be searched for item by item. The Library of Congress Wilkinson ciphers were decoded by others (arXiv 2010.04746) but those are different letters. Needs Chrome: https://researchworks.oclc.org/archivegrid/collection/data/702150338 then the Yale finding aid for the Wilkinson-Miro letters."
+ },
+ "2126": {
+  "unvetted": "Holder not established: ArchiveGrid 191917369 returns 403 and the Kentucky guide text could not be found; WKU Manuscripts Collection 612 (Richard Vance, Warren County, 1833-1902) is the probable holder but its finding aid PDF returned 403 and no source seen says 'in code'. WKU blog posts quote Vance diary passages (Sophia), so some diary text has been read and printed, which could be prior art. Needs Chrome: https://digitalcommons.wku.edu/dlsc_mss_fin_aid/4335/ (finding aid PDF) and https://researchworks.oclc.org/archivegrid/collection/data/191917369"
+ },
+ "2127": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b06",
+  "seen": {
+   "kind": "not online",
+   "where": "Massachusetts Historical Society catalogue record for the Peter Thacher diaries, read as search-engine snippets (ArchiveGrid 30087660 returns 403); no scan online",
+   "extent": "diaries 2 Jan 1679-28 Dec 1681 and 1 Mar 1682-27 Feb 1699; portions in cipher",
+   "cipher": "MHS record: 'Portions of the diary are in cipher'; the record also lists notes on the cipher compiled by Edward P. Hamilton in 1958."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump, repo, leads) on Peter Thacher: only this lead's own rows; no DECODE record.",
+   "tomokiyo": "No Tomokiyo cryptiana page on Thacher found by web search.",
+   "lasry": "No Lasry or HistoCrypt item on Thacher found by web search.",
+   "edition": "Edward Pierce Hamilton's article on Thacher's diary in Proceedings of the Massachusetts Historical Society (1953-57) says the diary is in cipher or shorthand; MHS holds Hamilton's 1958 notes on the cipher, so the cipher has been worked out and is on record. Article text not opened.",
+   "literature": "Searches for Thacher diary cipher found only Hamilton's article and the MHS catalogue entry; no Cryptologia or HistoCrypt study."
+  },
+  "key_check": "No key held in the repo or on DECODE; Hamilton's 1958 cipher notes at MHS are the nearest key material and were not seen.",
+  "duplicates": "known.py on Peter Thacher, Barnstable, 1679: only this lead and the sweep candidate row; no catalogue entry or target.",
+  "verdict": "partly_read",
+  "closed": "MHS catalogue lists Edward P. Hamilton's 1958 notes on the cipher and his Proceedings article draws on the diary, so a worked-out reading of the cipher or shorthand is on record; its completeness is unknown and the notes were not seen."
+ },
+ "2128": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b06",
+  "seen": {
+   "kind": "not online",
+   "where": "Newberry record https://collections.newberry.org/archive/-2KXJ8ZS500QQT.html (Ayer MS 1417; offers an image view and IIIF manifest, not opened)",
+   "extent": "entries 1 Jan-1 Nov 1884",
+   "cipher": "Newberry: 'Personal remarks and amorous references are written in code'; the record cites Retana, Vida y escritos del Dr. Jose Rizal (1907) pp. 72-91 as the printed diary."
+  },
+  "prior_art": {
+   "decode": "known.py on Rizal and Agenda 1884: no hits in the DECODE dump or repo.",
+   "tomokiyo": "No Tomokiyo page on Rizal's diary found by web search.",
+   "lasry": "No Lasry item on Rizal found by web search.",
+   "edition": "Retana 1907 prints the diary at pp. 72-91; Philippine Diary Project and search summaries say Retana had Unamuno decipher the coded paragraphs. Retana text not opened here.",
+   "literature": "Philippine Diary Project and Rizal biographies discuss the diary; no cipher-specific study found."
+  },
+  "key_check": "No key held here; Retana's printed decipherment stands in for one and was not opened.",
+  "duplicates": "known.py on Rizal and Agenda 1884: no hits; no catalogue entry.",
+  "verdict": "partly_read",
+  "closed": "Retana 1907 pp. 72-91 prints the diary and, per the Philippine Diary Project, Unamuno deciphered the coded paragraphs for it: a printed decipherment is prior art. Retana's volume was not opened to confirm that every coded passage is resolved."
+ },
+ "2129": {
+  "unvetted": "Description 'some entries in code' (SNAC and ArchiveGrid 32616851, 403) in an orderly book where daily signs and countersigns are recorded, so it may be paroles and not cipher; holder (Boston Athenaeum) not confirmed, no finding aid or scan found by web search. Needs Chrome: https://researchworks.oclc.org/archivegrid/collection/data/32616851 then the Athenaeum catalogue."
+ },
+ "2130": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b06",
+  "seen": {
+   "kind": "scan",
+   "where": "OPenn, College of Physicians of Philadelphia Ms. 10a 132, https://openn.library.upenn.edu/Data/0027/cpp_10a_132/data/web/6207_0112_web.jpg (f. 75r) and 6207_0114_web.jpg (f. 76r)",
+   "extent": "f. 76r, about 21 lines of cipher filling the page; f. 75r opens with three crossed-out lines of the same cipher; f. 76v not viewed",
+   "cipher": "Viewed both leaves: Latin cursive text on f. 75r below the struck lines, then on f. 76r a full page of word-spaced unfamiliar spellings (e.g. 'qfs', 'tbouborn') in the same letter shapes as the crossed-out heading, a monoalphabetic-style substitution of a Latin text; no plaintext, key or interlinear decipherment appears on either leaf."
+  },
+  "prior_art": {
+   "decode": "known.py on the miscellany, College of Physicians and 10a 132: no hits in the DECODE dump, repo or leads other than this lead.",
+   "tomokiyo": "Searched Tomokiyo cryptiana for the College of Physicians of Philadelphia and Italian medical-recipe ciphers: no page on this manuscript.",
+   "lasry": "Searched Lasry, HistoCrypt and DECRYPT for 10a 132 and for this miscellany: nothing.",
+   "edition": "OPenn record notes only 'Fol. 76 in cipher'; the Hirsch catalogue lists the manuscript as no. 646; neither gives a reading. Hirsch text not opened.",
+   "literature": "Searched for 10a 132, Bertapalia, 'cipher' and Caesar: no study of the cipher leaf."
+  },
+  "key_check": "No key in the volume or in the repo; none on DECODE; a simple letter substitution is suggested by the shapes but was not tested.",
+  "key_in_volume": "None seen on ff. 75r-76r; the rest of the volume was not paged through.",
+  "duplicates": "known.py on the miscellany, 10a 132 and College of Physicians: only this lead's row; no catalogue entry or target.",
+  "verdict": "open",
+  "searches": [
+   {
+    "query": "College of Physicians of Philadelphia medical pharmaceutical miscellany Italy 16th century 'in cipher' leaves 75r",
+    "result": "Found the OPenn record for Ms. 10a 132 (c. 1550, Italy, Latin) noting 'Fol. 76 in cipher' and giving image paths for ff. 75-76; no decipherment mentioned."
+   },
+   {
+    "query": "cpp_10a_132 cipher fol. 76 Caesar shift medical miscellany College of Physicians Philadelphia deciphered",
+    "result": "Only the OPenn record and the Hirsch catalogue (no. 646) came back; nothing on a cipher or its solution."
+   },
+   {
+    "query": "Medical-pharmaceutical miscellany Philadelphia Ms. 10a 132 Bertapalia Venereal Man cipher leaf Schoenberg database",
+    "result": "No match for this manuscript in the Schoenberg Database or Penn catalogue results; no cipher study."
+   },
+   {
+    "query": "Tomokiyo cryptiana Italian 16th century medical recipe cipher College of Physicians Philadelphia 10a 132",
+    "result": "Unrelated Borg cipher, Tomokiyo's 1593 Italian ciphers and others; nothing on this volume."
+   }
+  ]
+ },
+ "2131": {
+  "unvetted": "Description shows cipher on pp. 79-80, 96, 97 and 100 of Beinecke Osborn b77 (Stanton, Cases and discourses controversial, 1697, 118 pp., partially digitized), but the Yale collections page returns an empty JS shell to curl and WebFetch, so no leaf was seen; three searches (Stanton 1697 cipher, Osborn b77, Dryden parallels) found no decipherment, and it may be shorthand. Needs Chrome: https://collections.library.yale.edu/catalog/10001763 (look at pp. 79-80 for the cipher's form)."
+ },
+ "2132": {
+  "unvetted": "Beinecke record for Fairfax's Exposition on the 75 Psalm (1658) could not be located: ArchiveGrid 702174751 returns 403 and web search for the title, Osborn and Ipswich found no Yale record or scan; description only says a passage 'in cipher' on the flyleaf verso and later, possibly shorthand. Needs Chrome: https://researchworks.oclc.org/archivegrid/collection/data/702174751 then Yale collections search for Fairfax 75 Psalm."
+ },
+ "2133": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b06",
+  "seen": {
+   "kind": "not online",
+   "where": "Cornell record via ArchiveGrid 1519884526 (403 to scripts); not located in Cornell's catalogue by web search",
+   "extent": "two parchment leaves; one provenance statement",
+   "cipher": "Archive description: 'a provenance statement written in cipher, likely dating from the 15th or 16th century, in which symbols resembling the letter P'."
+  },
+  "prior_art": {
+   "decode": "known.py on Hippocrates Prognostics Cornell: no hits in the DECODE dump or repo.",
+   "tomokiyo": "No Tomokiyo cryptiana page on this fragment.",
+   "lasry": "No Lasry item on this fragment found by web search.",
+   "edition": "Butler Rare Books' listing of two Prognostics leaves with the same description (vowels written as a 'p' with one, two, three cross-strokes) prints the decipherment: Italian 'Questa regela e di don giouanni bartolo meo'. Listing seen only through search snippets (page returned 401); Cornell's identity with those leaves not confirmed.",
+   "literature": "Searches found nothing but the dealer listing."
+  },
+  "key_check": "Cipher is a vowel substitution by number of strokes on a 'p', stated in the dealer listing; no key held here.",
+  "duplicates": "known.py on the Hippocrates Prognostics and Cornell: no hits; no catalogue entry.",
+  "verdict": "read",
+  "closed": "Butler Rare Books' listing decodes the same provenance cipher (symbols like a 'p', vowels by cross-stroke count) as an Italian ownership line; match to the Cornell leaves rests on the matching description and is unconfirmed, and the leaf was not seen."
+ },
+ "2134": {
+  "unvetted": "Cornell record for Siefert's I.N.D. Omnia cum Deo could not be found: ArchiveGrid 1459145544 returns 403 and three searches (Siefert, the motto, 'book of secrets' Cornell) found no catalogue entry, scan or finding aid; description only says early pages and prescriptions use 'a code or cypher'. Needs Chrome: https://researchworks.oclc.org/archivegrid/collection/data/1459145544 then Cornell's RMC catalogue."
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "907": {
+  "unvetted": "Aggregate lead, not one item. Opened CSP Dom. Commonwealth 1655 (archive.org cu31924091770424) and 1655-56 (cu31924091770440): Lamplugh letters to Williamson are plain-text entries; the 'italics in cypher, undecyphered' notes sit on separate entries (1655 vol. C, Sept 1655, 2.5 pp, court gossip about the Chancellor and Sir Edw. Hyde; and three 1655-56 entries marked 'cyphers undecyphered', 1-2 pp). Each needs its own lead (volume, number, date) and the MS images (TNA SP 18, not online)."
+ },
+ "1572": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b58",
+  "seen": {
+   "kind": "scan",
+   "where": "Gallica btv1b10033937d (Cinq cents de Colbert 338) via openapi.bnf.fr IIIF, views f231, f232, f244, f260, f266, f270 (view = (page+29)/2: f231 = p.433, f270 = p.519); BAM cc91720t/cd0e760 read for the page list",
+   "extent": "BAM gives Luigi d'Este pp. 433, 459, 491, 503, 511 ff. (9 letters, partly ciphered); f232 (p.435, 7 Sept 1584, to Villeroy) is a full page of symbol-cipher lines, f270 (p.519, Rome 2 Jan 1585) has a paragraph of symbol cipher in the middle of a clear letter.",
+   "cipher": "f270: letter dated 'De Rome ce 2 de janvier 1585' signed 'Luigi car. d'Este' (signature read at 3000 px), one paragraph of about 8 lines of unspaced symbols (nomenclator plus alphabet signs) between clear French lines; f232 similar, whole page. Only short marginal summaries (apostilles) in the left margin, no plaintext written over or under the cipher lines, so no decipherment on the leaf."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump): 'Luigi d Este', 'Villeroy 1584', '16041' gave no DECODE record; hits on 'Colbert 338' are only the Bazin lead/catalogue entry (a different document) and this lead.",
+   "tomokiyo": "Fetched cryptiana henryiii.htm: it says many cipher letters from Luigi d'Este in Rome to Villeroy 1584-86 are in BnF fr. 16041 (f.259, 264) and fr. 16042 and describes reconstructing the cipher, but cites no Colbert 338 letter and prints no decipherment of them.",
+   "lasry": "Web search 'Lasry Desenclos Luigi d'Este Villeroy 1584 Colbert 338' returned only the Nevers 1592, Mary Stuart and Colbert 500/33 papers; nothing on d'Este.",
+   "edition": "No edition of the Colbert 338 d'Este letters found; the Gallica leaf carries none. Printed correspondence of cardinal d'Este with Villeroy not located by search (book 'Entre l'Aigle, les Lys et la tiare' 2021, OAPEN, found but not opened).",
+   "literature": "Searches for Luigi d'Este cardinal chiffrees Catherine de Medicis Colbert 338 and Lasry/Desenclos found no HistoCrypt or Cryptologia paper on his ciphers; the 2021 d'Este-France monograph (unopened) is the one place left to check."
+  },
+  "key_check": "Same cardinal's cipher in fr. 16041-16042 (Villeroy 1584-86) was reconstructed by Tomokiyo; no key held in this repo and none tested on Colbert 338.",
+  "key_held": "Tomokiyo's reconstruction of the d'Este-Villeroy cipher (cryptiana henryiii.htm) is the likely key; not tested here.",
+  "duplicates": "known.py on 'Colbert 338', 'Luigi d Este', 'Cinq cents': only the Bazin catalogue entry (pp. 141, 189, 191, a different correspondent) and this lead; 'Este', 'Villeroy 1584', '16041' match no target.",
+  "verdict": "open",
+  "searches": [
+   {
+    "query": "Luigi d'Este cardinal lettres chiffrées Catherine de Médicis Colbert 338 déchiffrement",
+    "result": "Wikipedia, BnF Fr 3199/3151 indexes, the 2021 d'Este-France monograph; nothing on deciphering Colbert 338 letters."
+   },
+   {
+    "query": "Lasry Desenclos cardinal Luigi d'Este Villeroy 1584 cipher letters deciphered Colbert 338",
+    "result": "Only Nevers 1592, Mary Stuart 1578-84 and Colbert 500/33 papers; no d'Este item."
+   },
+   {
+    "query": "Tomokiyo cryptiana henryiii.htm Cardinal d'Este Rome Villeroy 1584 fr. 16041",
+    "result": "Page fetched: covers fr. 16041/16042 d'Este letters and a reconstructed cipher, not Colbert 338."
+   }
+  ]
+ },
+ "1573": {
+  "unvetted": "Gallica btv1b90007170 (Lorraine 367, 289 views) swept by thumbnail over views 1-285 (every view 184-285, every 2nd-3rd view 1-183): all leaves are 16th-century hands, Reichstag/diet papers and troop tables; no 1667 French Lille despatch and no figure cipher seen. BAM (cc34620f/cd0e194) lists fol. 148 onward as the Lille letters with 'deux depeches chiffrees' but the digitised volume does not match that description; a BAM folio-to-view mapping or another shelfmark is needed. No prior art found (web search siege de Lille Lorraine 367 chiffre: nothing)."
+ },
+ "1576": {
+  "unvetted": "Not online (BAM fr. 3485/3486, 'Lettre, avec chiffre', no scan). Editions that cover it could not be opened: Halphen 1894 and Lajeunie 1952 are not on archive.org, Berger de Xivrey vol. VI (1603-06) is not in the archive.org index (vols 1-5 are; vol. V 1599-1602 prints one ciphered passage as 'partie chiffree, dont on n'a pas le dechiffrement', so editors do leave such parts out). An unopened edition is an unanswered prior-art question; the earlier key_lookup closure is withdrawn because no reading of these letters is on record."
+ },
+ "1577": {
+  "unvetted": "Not online (BAM fr. 3828/3835, 'Lettre, avec chiffre'). Opened Avenel, Lettres ... du cardinal de Richelieu vol. 3 (archive.org lettresinstructi03richuoft): it prints Richelieu to Rance letters of Mar-May 1629 (21 and 31 Mar, 30 Apr, 2 May) from Bibl. imp. Fonds Bethune, some with numerals left (e.g. 39 26 22 ...), others deciphered; the BAM numbers of fr. 3828 (nos. 8-26) cannot be matched to Avenel dates without the item list, so which letters are printed and deciphered is unsettled. Earlier key_lookup closure withdrawn (no reading on record for these)."
+ },
+ "1610": {
+  "unvetted": "needs Chrome: https://archivesearch.lib.cam.ac.uk/repositories/2/resources/2134 (CUL MS Add.110 record; curl gets CloudFront 403, Hub and cudl 403). Title 'Law reports in cipher' only; may be legal shorthand (Baker's CUL legal MS catalogue; McKenzie, 'Was early modern shorthand cipher?'). No leaf seen, so cipher not shown."
+ },
+ "1611": {
+  "unvetted": "Hull catalogue (catalogue.hullhistorycentre.org.uk U-DDHO-3-19, 3-30, 3-3, 3-6) read by curl: U DDHO/3/19 'Notes of mistakes in Reichenbach's cypher' and 3/30 'Notes of mistakes in a cypher' are one item each with no description or images, so no ciphertext is shown; 3/3 (48 items Grumkow-Reichenbach) and 3/6 (3 items) are copies with no cipher note. Needs Hull scans. Searches found no decipherment."
+ },
+ "1612": {
+  "unvetted": "Senate House AL340/MS325 records (archives.libraries.london.ac.uk/Details/archive/110015700, atom.aim25.com) only say 'many notes and calculations are written in Rastrick's private cipher' (finding aid: Rogers 1968); item list and images not reachable by curl (hierarchy is dynamic; Science Museum digitised notebook gives CloudFront 403). needs Chrome: https://archives.libraries.london.ac.uk/Details/archive/110015700 and the Science Museum Group notebook; cipher vs shorthand unseen. Searches found no decipherment."
+ },
+ "1613": {
+  "unvetted": "needs Chrome: https://library.soas.ac.uk/Record/PP_MS_1.EPRE.1.56.284 (curl and WebFetch cannot resolve library.soas.ac.uk; Archives Hub gives Cloudflare 403). Snippets show most telegrams are commercial code with translation, so likely not ciphertext; item 56/284 'Telegram in code. No translation' needs viewing. No decipherment found."
+ },
+ "1852": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b58",
+  "seen": {
+   "kind": "not online",
+   "where": "Calames notice https://calames.abes.fr/pub/ms/IF1B10758 (Institut de France, Ms Godefroy 262 f. 158), read by curl 3 Nov 2026; no image link",
+   "extent": "1 letter, Sillery to Henri IV, 21 Oct 1594, duplicate, whole letter",
+   "cipher": "Calames description: 'Duplicata entièrement chiffré' (letter of Sillery to Henri IV, 21 octobre 1594); reading room only (readers must be presented by a member of the Institut)."
+  },
+  "prior_art": {
+   "decode": "known.py on Godefroy 262/263/266, Sillery, Revest, Chamoux: only leads of this Calames sweep; no DECODE record.",
+   "tomokiyo": "Search 'Tomokiyo cryptiana Nicolas Brulart de Sillery cipher Henri IV 1594 Switzerland': nothing on Sillery; only Nevers 1592 and Mary Stuart items.",
+   "lasry": "No Lasry paper on Sillery found (same search; the Nevers 1592 digit cipher paper is a different letter and archive).",
+   "edition": "Neighbouring Calames notices (ff. 154-163, IF1B10755-10761) carry a 'Bibliographie' field when a letter is printed (f. 157 Henri IV to Sillery, printed Guadet t. VIII p. 531); f. 158 has none, so Calames records no printed text; Sillery's own letters are not in the Henri IV Recueil.",
+   "literature": "Web searches 'Sillery Henri IV 1594 Godefroy 262 lettre chiffrée déchiffrée' and 'octobre 1594 Suisse chiffre Institut Godefroy' found no study of this letter."
+  },
+  "key_check": "Same volume holds a decipherment of two other Sillery letters (ff. 133-134, 1594) that may serve as a crib; not seen, so not tested.",
+  "duplicates": "known.py on 'Godefroy 262' shows sibling leads f. 185 and f. 281 (other letters); no catalogue entry or target for f. 158.",
+  "verdict": "open",
+  "searches": [
+   {
+    "query": "Sillery Henri IV 1594 Godefroy 262 lettre chiffrée déchiffrée",
+    "result": "Nothing on this folio; Nevers 1592 digit cipher paper and Henri IV letters only."
+   },
+   {
+    "query": "Sillery Henri IV octobre 1594 Suisse lettre chiffre Bibliothèque de l'Institut Godefroy",
+    "result": "Drouot lot on Sillery's Swiss embassy and a Beze edition note; no decipherment."
+   },
+   {
+    "query": "Tomokiyo cryptiana Nicolas Brulart de Sillery cipher Henri IV 1594 Switzerland letters",
+    "result": "No Sillery page on cryptiana; no HistoCrypt hit."
+   }
+  ]
+ }
+}

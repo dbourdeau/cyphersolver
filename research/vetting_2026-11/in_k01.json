@@ -1,0 +1,618 @@
+[
+ {
+  "id": 11,
+  "counted": true,
+  "year": 1563,
+  "date": "31 Jul 1563; 1560s",
+  "title": "Catherine de Médicis and the Court to the bishop of Rennes",
+  "correspondents": "Catherine de Médicis; Charles IX's Court; Bourdin → Bernardin Bochetel, bishop of Rennes",
+  "place": "Court → imperial court",
+  "language": "French",
+  "region": "France",
+  "period": "1560-1589",
+  "shelfmark": "BnF fr. 3181 f. 55; 500 Colbert 390 pp. 139, 357; 500 Colbert 392 p. 231",
+  "ark": "btv1b9059845t",
+  "folio_note": "fr. 3181: folio = Gallica view + 19, so f. 55 = view 36, f. 57 = view 38. 500 Colbert 390 = btv1b10033942k (p. 139 = view 70, p. 357 = view 180); 500 Colbert 392 = btv1b100339594 (p. 231 = view 112).",
+  "cls": "B",
+  "seen": "image",
+  "source": "cryptiana fine print",
+  "status": "Attempted 20 Sept 2026 (targets/rennes1563/): Tomokiyo's reconstruction of the Bishop of Rennes' cipher (1561-64) applied with per-hand letter forms from the glossed siblings (fr. 3181 ff. 57-58, Colbert 390) and an LM lattice. Removed from the catalogue when first claimed read in part; restored 23 Oct 2026: Reading audit 22-23 Oct 2026 (George Lasry's test: a reading must build sentences): fr. 3181 f. 55 (0.50 clean sentences on explicit holes), Colbert 390 pp. 357-358 (0.27), p. 139 and Colbert 392 p. 231 (0.17) are decoded, not read: no letter reads.",
+  "why": "Charles IX's majority declared at Rouen 17 Aug 1563; the last session of Trent.",
+  "importance": 3,
+  "solvability": 4,
+  "difficulty": 2,
+  "score_note": "Reconstructed sibling keys exist; probably a variant or a key change. Content is Court instructions to an ambassador.",
+  "verify": "Re-read the weak lines on the native-resolution IIIF crops against the glossed siblings; look for further glossed letters of the Rennes embassy in Colbert 390-392.",
+  "outcome": "attempted, open",
+  "writeup": "rennes1563.html",
+  "known": "Tomokiyo's key fits after calibration on the glossed sibling f. 57 (rennes1563.html); La Ferrière 1885 prints f. 55 with the cipher left blank.",
+  "open": "All five ciphertexts: unread sign runs and slips in most sentences (fr. 3181 f. 55 ll. 2, 4, 8, 9, 12; Colbert 390 pp. 139, 357-358; Colbert 392 p. 231). Blocker: no key material beyond Tomokiyo's table and the glossed siblings.",
+  "as_of": "2026-10-23",
+  "access": "online",
+  "access_note": "online (backfilled 28 Oct 2026 from the entry: seen: image)",
+  "vetting": {
+   "date": "2026-11-02",
+   "by": "claude vetting batch L07",
+   "seen": {
+    "kind": "scan",
+    "where": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9059845t/f36/full/1100,/0/default.jpg (BnF fr. 3181 f. 55 = canvas 36, viewed 2 Nov 2026 via curl)",
+    "extent": "f. 55 only was viewed now: about 13 lines of sign cipher (one hand, stroke/loop signs with a few Roman letters) between a clear opening ('Mons. de Rennes, j'ay receu...') and a clear continuation of about 12 lines. Colbert 390 pp. 139, 357 and Colbert 392 p. 231 were not re-opened in this pass.",
+    "cipher": "Substitution with graphic signs plus clear text in the same letter (Catherine de Medici to Bochetel, 31 Jul 1563). No interlinear or marginal decipherment on f. 55; the glossed siblings are ff. 57-58 (and Colbert 390 p. 138 etc.), other leaves."
+   },
+   "prior_art": {
+    "decode": "DECODE has the fr. 3181 / Colbert 390 records as Non-decrypted; repo ledgers (known.py 'fr. 3181', 'Colbert 390', 'Bochetel') hit only this entry, targets/rennes1563 and fiesque1567 notes; no DECODE reading or key attached to f. 55.",
+    "tomokiyo": "Tomokiyo reconstructed the Bishop of Rennes' cipher (1561-64) from the glossed letters; a WebFetch of cryptiana unsolved.htm and two WebSearches (Rennes/Bochetel cipher, Catherine de Medici cipher) did not list f. 55 as read or give a text for it; rennes1563 NOTES record the table as the source for the key.",
+    "lasry": "No Lasry paper or GL.htm entry on Bochetel/Rennes 1563 found by search or in the repo ledgers.",
+    "edition": "La Ferriere, Lettres de Catherine de Medicis (1885) prints f. 55 with the cipher passages left blank (per rennes1563 NOTES); no edition supplies the cipher text.",
+    "literature": "No study of the fr. 3181 letters found; the cipher is only treated on Tomokiyo's pages."
+   },
+   "key_check": "Tomokiyo's Rennes table, calibrated on the glossed siblings (ff. 57-58, Colbert 390), applied in targets/rennes1563 with a language-model lattice: f. 55 reaches 0.50 clean sentences on explicit holes, Colbert 390 pp. 357-358 0.27, p. 139 and Colbert 392 p. 231 0.17 (audit 22-23 Oct 2026). So the key is held and fits; what is missing is clean sign transcription, not a key.",
+   "duplicates": "known.py terms 'fr. 3181', 'Colbert 390', 'Bochetel', 'Rennes': only this entry (catalogue.json/CATALOGUE.md/README) and the target notes; no second entry for the same letters. Sibling letters ff. 52, 57 belong to the same series, not duplicates.",
+   "verdict": "key_lookup",
+   "closed": "The cipher is Tomokiyo's reconstructed Bishop of Rennes table, already held and applied here (glossed siblings give the per-hand forms); remaining holes are sign-reading problems on the five leaves, not an unknown system."
+  }
+ },
+ {
+  "id": 17,
+  "counted": true,
+  "year": 1593,
+  "date": "1593",
+  "title": "Henri IV to Maisse (Venice), two letters (fr. 16093 ff. 406, 410)",
+  "correspondents": "Henri IV (countersigned Revol) → André Hurault de Maisse",
+  "place": "Court → Venice",
+  "language": "French",
+  "region": "Italy",
+  "period": "1589-1598",
+  "shelfmark": "BnF fr. 16093 ff. 406, 410",
+  "ark": "",
+  "folio_note": "Restored 23 Oct 2026 for ff. 406 and 410 only; ff. 370 and 373 (maisse1592) are deciphered from the existing decipherment.",
+  "cls": "B",
+  "seen": "image",
+  "source": "cryptiana fine print",
+  "status": "Henri IV to Maisse, two letters in Tomokiyo's \"Maisse's Cipher (1592-1593)\" (targets/maisse1593/). The content of both is known from contemporary clear copies in fonds Brienne 13 (BnF NAF 6984, ff. 171r and 193v), but neither copy is transcribed here. Removed from the catalogue when the four letters were first claimed solved (PR #7, 20 Sept 2026); restored 23 Oct 2026: Reading audit 22-23 Oct 2026 (George Lasry's test: a reading must build sentences): no text of ff. 406 and 410 is in the repository, so nothing counts as read.",
+  "why": "Henri IV's Italian diplomacy in the months before his conversion.",
+  "importance": 3,
+  "solvability": 3,
+  "difficulty": 3,
+  "score_note": "Maisse's other ciphers of 1593–94 are reconstructed; these four use a different key with no sibling found yet.",
+  "verify": "Transcribe the two Brienne 13 copies (Gallica NAF 6984 canvases 176, 199) and align them with the cipher.",
+  "known": "Clear copies located in Brienne 13 (NAF 6984 ff. 171r, 193v; maisse1593.html). ff. 370 and 373 deciphered from the existing decipherment (maisse1592).",
+  "open": "ff. 406 and 410: the Brienne 13 clear copies are not transcribed and not aligned with the cipher. Not attempted yet.",
+  "outcome": "attempted, open",
+  "as_of": "2026-10-23",
+  "access": "online",
+  "access_note": "online (backfilled 28 Oct 2026 from the entry: seen: image)",
+  "vetting": {
+   "date": "2026-11-02",
+   "by": "claude vetting batch L07",
+   "seen": {
+    "kind": "scan",
+    "where": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b90074656/f457 and /f461 (BnF fr. 16093 ff. 406 and 410, viewed 2 Nov 2026 via curl)",
+    "extent": "f. 406 (canvas 457): letter from the King dated Chartres 8 Feb 1593, clear opening paragraphs then about 18 lines of continuous two-sign cipher at the foot; f. 410 (canvas 461): 'Du Roy contresigne Revol Secretaire d'Estat a Mr de Maisse', Mantes 27 Apr 1593, clear opening of about 10 lines then about 23 lines of cipher.",
+    "cipher": "Homophonic sign cipher (Tomokiyo's Maisse cipher 2) in running text. No interlinear decipherment on either leaf; the contemporary clear copies are in Brienne 13 (NAF 6984 fol. 171r and 193v), a different volume."
+   },
+   "prior_art": {
+    "decode": "DECODE records for fr. 16093 are not matched to these leaves in the repo ledgers (known.py 'fr. 16093', 'Maisse', 'NAF 6984' hit only this entry and the maisse1592/maisse1593 notes).",
+    "tomokiyo": "Tomokiyo's 'Maisse's Cipher (1592-1593)' key image (henryiv_Maisse2.png) covers this cipher; WebSearch confirmed Tomokiyo's French Ciphers during the Reign of Henry IV page and Savasse (1997) for Maisse's 1590 cipher; the cryptiana page itself was not retrievable by WebFetch (404 on a guessed URL), so what it prints for ff. 406/410 is taken from maisse1593 NOTES.",
+    "lasry": "No Lasry paper on Maisse's ciphers found by search or ledger.",
+    "edition": "Brienne 13 (NAF 6984, Gallica btv1b100904592) holds clear copies of both letters, headed 'Coppie de lettre du Roy audict sieur de Maisse...'; no printed edition of these two letters was located (Lettres missives de Henri IV not checked page by page).",
+    "literature": "WebSearch on Maisse/Hurault cipher gave no separate study."
+   },
+   "key_check": "Tomokiyo's Maisse cipher 2 key applied unchanged to six stretches (128 signs) of ff. 404, 406, 410 on 27 Oct 2026 (maisse1593 NOTES, wainut/decode_check.py): it gives the clear-copy text. So a held key reads the cipher; the blocks are not yet fully transcribed.",
+   "duplicates": "known.py: only this entry and targets/maisse1592 (ff. 370, 373), maisse1593. f. 404 is the same despatch as f. 406 sent by the second route; ff. 370/373 are the other two leaves, in another entry.",
+   "verdict": "key_lookup",
+   "closed": "Held key (Tomokiyo's Maisse cipher 2) reads the leaves and contemporary clear copies exist in Brienne 13 fol. 171r/193v; what remains is transcribing the cipher blocks, not breaking a cipher."
+  }
+ },
+ {
+  "id": 120,
+  "access": "archive",
+  "counted": true,
+  "year": 1554,
+  "date": "Jun 1554",
+  "title": "Nicholas Wotton to Queen Mary, 13 June 1554",
+  "correspondents": "Nicholas Wotton → Queen Mary",
+  "place": "London",
+  "language": "English",
+  "region": "England",
+  "period": "1497-1559",
+  "shelfmark": "BL, Harley MS 1582 f 8-10",
+  "folio_note": "",
+  "cls": "C",
+  "status": "DECODE R8499 (Harley MS 1582 ff. 8-10): Wotton to Queen Mary, 13 June 1554 (targets/harley1582r8499/). The key DECODE R354 (TNA SP 106/2 f. 162, \"France 1554\"), filed in another series, was matched and corrected over eight passes. Removed from the catalogue when first claimed read; restored 23 Oct 2026: Reading audit 22-23 Oct 2026 (George Lasry's test: a reading must build sentences): the decode leaves holes in most sentences, so nothing counts as read. The contemporary clear copy (Harley 1582 art. 2, ff. 5r-7v) is not digitised.",
+  "why": "Ciphered letter of N. Wottoy ? to unknown recipient, Jun 1554; what the cipher hides is not known.",
+  "importance": 2,
+  "solvability": 2,
+  "difficulty": 4,
+  "score_note": "Scored by rule from DECODE metadata (class from key signals, solvability from key, length and language, importance from the correspondents); not yet reviewed by hand.",
+  "verify": "Get images of Harley 1582 ff. 5r-7v (the clear copy) and align them with the cipher.",
+  "ark": "",
+  "links": [
+   {
+    "label": "DECODE R8499",
+    "href": "https://de-crypt.org/decrypt-web/RecordsView/8499"
+   }
+  ],
+  "seen": "image",
+  "source": "DECODE",
+  "decode_ids": [
+   8499
+  ],
+  "scored": "rule",
+  "known": "Key DECODE R354 matched (harley1582r8499.html).",
+  "open": "About 31% of non-null signs unread, tentative or not sense; about 40 rare code signs. Blocker: the clear copy needs the BL (not digitised).",
+  "writeup": "harley1582r8499.html",
+  "outcome": "attempted, open",
+  "as_of": "2026-10-23",
+  "vetting": {
+   "date": "2026-11-02",
+   "by": "claude vetting batch L07",
+   "seen": {
+    "kind": "scan",
+    "where": "DECODE R8499 (6 images, first two viewed 2 Nov 2026), BL Harley MS 1582 ff. 8-10",
+    "extent": "f. 8: about 24 lines almost wholly in graphic-sign cipher with a few clear English words ('pleasing in your highness to understand that', 'it seeming by his saying that', 'pleasur'); no gloss over the signs.",
+    "cipher": "Graphic-sign substitution with clear English interpolations (Wotton to Queen Mary, 13 June 1554). No interlinear decipherment on the leaf; the contemporary clear copy (Harley 1582 art. 2, ff. 5r-7v) is not digitised."
+   },
+   "prior_art": {
+    "decode": "DECODE R8499 Non-decrypted; the key R354 (TNA SP 106/2 f. 162, 'France 1554') is on another DECODE record.",
+    "tomokiyo": "Tomokiyo's elizabeth.htm (WebFetch 2 Nov 2026): Wotton sent Mary a new cipher on 9 May 1554 (CSP Foreign Mary), no shelfmark or solution given.",
+    "lasry": "No Lasry item found.",
+    "edition": "CSP Foreign Mary calendars the despatch; no printed text of the cipher passages found.",
+    "literature": "No study found."
+   },
+   "key_check": "DECODE R354 matched and corrected over eight passes (harley1582r8499 NOTES): about 69% of non-null signs read, 31% tentative or not sense, about 40 rare code signs unvalued.",
+   "duplicates": "known.py 'R8499', 'Harley MS 1582', 'Wotton': this entry, README, targets/harley1582r8499; R8500 (Stafford 1586, entry 118) and R8505 (entry 121) are other letters in the same volume.",
+   "verdict": "key_lookup",
+   "closed": "A held DECODE key (R354) reads most of the letter; the remainder is key corrections and rare signs, and the clear copy exists at the BL."
+  }
+ },
+ {
+  "id": 559,
+  "counted": true,
+  "year": 1519,
+  "date": "1518-1522",
+  "title": "Duke Heinrich the Middle of Brunswick-Lüneburg, letters in Geheimschrift (military affairs; his political aims)",
+  "correspondents": "Heinrich (the Middle), Duke of Brunswick-Lüneburg → unknown",
+  "place": "Celle / unknown",
+  "language": "German (cipher numeric, 1-20/1-21)",
+  "region": "Germany",
+  "period": "1497-1559",
+  "shelfmark": "Niedersächsisches Landesarchiv Hannover, L 1 Nr. 548 (I Ca 30 Bd. 1) and Nr. 562 (I Ca 30 Bd. 2)",
+  "folio_note": "2 files; the titles say the content is in Geheimschrift",
+  "cls": "C",
+  "status": "NLA HA L 1 Nr. 548 (aufn_0002 key, aufn_0003 letter 1519) and Nr. 562 (aufn_0002 key, aufn_0003 letter Trier 8 Aug 1522): key tables by a nineteenth-century archivist are in the volumes (viewed 2 Nov 2026). The Nr. 548 sheet is headed 'Zwei Briefe des Herzogs Heinrich des Jüngeren zu Br.-L., 1519' and signed Dr. Grein, 28/2 1860; it names Heinrich the Younger where this entry says the Middle (not settled).",
+  "why": "The Hildesheim Stiftsfehde 1519-23 and the 1519 imperial election, where Heinrich backed Francis I.",
+  "importance": 4,
+  "solvability": 3,
+  "difficulty": 3,
+  "score_note": "Scored from the archive description during the Oct 2026 Archivportal-D sweep (research/archivportal_d/); not viewed",
+  "verify": "Open the digitised files in the viewer; count cipher length and sign set.",
+  "links": [
+   {
+    "label": "L 1 Nr. 548",
+    "href": "https://www.archivportal-d.de/item/OVDSPWOXBH2NY54Y2F27RAGXLOVKUGBQ"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "Archivportal-D sweep",
+  "prior_art": "open (checked 26 Oct 2026: known.py, quick web search: nothing on a Heinrich cipher; Reitemeier ed., Die Hildesheimer Stiftsfehde 2025, not checked).",
+  "ark": "",
+  "scored": "sweep",
+  "access": "online",
+  "access_note": "online (backfilled 28 Oct 2026 from the entry: ...... (Geheimschrift)'. No decipherment noted. Not on DECODE. Digitised: images in the Archivportal-D/DDB viewer. Open the digitise...)",
+  "frame_check": {
+   "result": "confirmed",
+   "href": "https://iiif.deutsche-digitale-bibliothek.de/image/2/1d421803-7787-4201-878e-74522fcbe634/full/1800,/0/default.jpg",
+   "frame": "image 3 of 4 (NLA HA L 1 Nr. 548, aufn_0003, fol. 299); key on image 2 (aufn_0002, https://iiif.deutsche-digitale-bibliothek.de/image/2/2f0e8e51-50b2-407c-81ea-fc201834b35a/full/1600,/0/default.jpg)",
+   "saw": "Aufn_0003: German letter of 1519 (right leaf) with a numeric cipher, digits 1-20 separated by dots (e.g. '12.1.18.15.2.11.8...'), about 8 lines of numerals inside clear text, no decipherment on page. Aufn_0002 (fol. 298): later hand table 'Der Schluessel zu der Geheimschrift in diesen beiden Briefen' with a 1-20 number to letter grid plus lists of clear words; titled 'Zum Entwurf des Herzogs Heinrich des Juengeren zu Br.L. 1519'.",
+   "note": "Letter plus key (archivist's note) both online.",
+   "date": "2026-10-30",
+   "by": "claude frame check 01"
+  },
+  "vetting": {
+   "date": "2026-11-02",
+   "by": "claude vetting batch L03",
+   "seen": {
+    "kind": "scan",
+    "where": "NLA Hannover L 1 Nr. 548: DDB IIIF 1d421803-... (aufn_0003) and 2f0e8e51-... (aufn_0002); L 1 Nr. 562: arcinsys-digitalisate nla_bu/l_1/nr._562 aufn_0002 and aufn_0003; all fetched by curl and viewed on 2 Nov 2026. Archivportal-D item page opened in Chrome (Anubis passes after 5 s).",
+    "extent": "Nr. 548 (4 images, 1519): letter on fol. 299 with about 8 lines of dotted numerals 1-20 mixed into German text. Nr. 562 (images 1-4, letter from Trier of 8 Aug 1522, fol. 44): about 9 numeral runs of 1-21 dotted groups in the body and a marginal run.",
+    "cipher": "Monoalphabetic numeric substitution with small numbers (dots between groups, 1-20 or 1-21, with a few sign numbers for words such as regimente, sonen, land, vorlatinge), written into a clear German letter. Each volume has a later-hand sheet signed with a date in 1858/1860 giving the key table and the decoded words: Nr. 548 (1=n 2=e 3=a 4=i 5=r 6=t ... 20=z, words Rete, Herren, Naheut, Fulmechtig ...) and Nr. 562 (1=g 3=h ... 21=t, words regimente, sonen, landtschop, landen, luden). So the key is in the file."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE (known.py L 1 Nr. 548: only repo candidate/CATALOGUE rows).",
+    "tomokiyo": "Tomokiyo cryptiana search 2 Nov 2026 (Heinrich Brunswick-Lueneburg 1519 Geheimschrift, Schaumburger Samtarchiv): no page.",
+    "lasry": "No Lasry reading found.",
+    "edition": "The 1858/1860 key sheets are the contemporary nineteenth-century archival reading; Reitemeier ed., Die Hildesheimer Stiftsfehde (2025), not checked at letter level; the archivist note names Heinrich der Juengere, the finding aid says Heinrich der Mittlere: identification of the sender needs checking.",
+    "literature": "WebSearch 2 Nov 2026 (Heinrich Mittlere Geheimschrift 1519, Hildesheimer Stiftsfehde) found no study of these letters."
+   },
+   "key_check": "The digit-to-letter tables on the file sheets (Nr. 548: 1-20; Nr. 562: 1-21) are keys held in the file; applying them would read both volumes; they are not yet applied or checked against the numerals.",
+   "duplicates": "known.py L 1 Nr. 548 / Heinrich: only the CATALOGUE.md and research/archivportal_d rows; no copy of the letters elsewhere.",
+   "verdict": "key_lookup",
+   "closed": "Both volumes carry a nineteenth-century key table with the decoded words (1858/1860, viewed 2 Nov 2026); reading means applying the tables to the numeral runs, a short job."
+  }
+ },
+ {
+  "id": 615,
+  "counted": true,
+  "year": 1495,
+  "date": "28 Dec 1495",
+  "title": "Ferdinand and Isabella → De Puebla, Tortosa, 28 Dec 1495, cipher copy in Puebla's Great Roman Numeral code",
+  "correspondents": "Ferdinand and Isabella → Rodrigo González de Puebla",
+  "place": "Tortosa",
+  "language": "Spanish",
+  "region": "England",
+  "period": "15th century",
+  "shelfmark": "AGS, Patronato Real, LEG,52, DOC.124",
+  "folio_note": "PARES description 2207846, 4 images (pp. 1-4, foliation 664-665; old mark T. c. Y. 2). Sample decoded: p. 1 ll. 6-8 and p. 2 ll. 1-6; the rest of the cipher copy not decoded.",
+  "cls": "B",
+  "status": "Identified 27 Oct 2026 (WAINUT, PR #101; targets/puebla1495/): the cipher copy of the despatch of 28 Dec 1495 whose clear draft Bergenroth abstracted in CSP Spain I no. 113 (no. 114 notices the cipher copy, 'substance exactly the same', with no decipherment); five sending dates on p. 2 match no. 113 and no other item. A sample (p. 1 ll. 6-8) decoded with the extant key AGS PTR leg. 52 doc. 33. Open: the cipher copy beyond the sample, and the groups 883, 1374, 1335, 1813, 852, 868, 1221 and 'xxix' (key images not opened: PARES HTTP 429). No page.",
+  "why": "Anglo-Spanish diplomacy of 1495 (Perkin Warbeck, the Catherine of Aragon marriage treaty) in a code whose 2400-element key survives.",
+  "importance": 3,
+  "solvability": 4,
+  "difficulty": 2,
+  "score_note": "Scored from the archive description during the Oct 2026 PARES sweep (research/pares_ags/); not viewed",
+  "verify": "Decode the rest of pp. 1-4 with the PTR 52 doc. 33 key (key images 3-9, 47-51, 70-75, 78-84, 110-113 for the open groups) and compare the wording with no. 113.",
+  "links": [
+   {
+    "label": "PARES description",
+    "href": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/2207846"
+   },
+   {
+    "label": "Tomokiyo, Spanish ciphers",
+    "href": "http://cryptiana.web.fc2.com/code/spanish.htm"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "PARES (AGS) sweep",
+  "prior_art": "checked 27 Oct 2026: content in print as Bergenroth's abstract of the clear draft (CSP Spain I no. 113, pp. 72-75); no decipherment of the cipher copy printed (no. 114); 1868 Supplement starts in 1498",
+  "ark": "",
+  "scored": "sweep",
+  "outcome": "attempted, open",
+  "frame_check": {
+   "result": "confirmed",
+   "href": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/2207846",
+   "frame": "image 1 (664R) and image 2 (664V), PTR,LEG,52,124",
+   "saw": "Image 1: about 27 lines of Roman-numeral cipher (dar + lxxi style numerals with strokes/abbreviation marks, interspersed with some clear Spanish words e.g. names Diego de Soria, John de Santangel), docket \"De los Reyes cifra sin fecha\", old mark T.C.Y.2. Image 2: about 25 lines, same Roman-numeral cipher with a few plain words (Salvador Duarte, la compania). No decipherment written on either page. Spanish. 4 images total (664R-665V); only images 1-2 viewed.",
+   "date": "2026-11-02",
+   "by": "claude frame check p01"
+  },
+  "vetting": {
+   "date": "2026-11-02",
+   "by": "claude vetting batch L03",
+   "seen": {
+    "kind": "scan",
+    "where": "AGS PTR,LEG,52,124 = PARES 2207846, images 1 and 2 (664R, 664V) fetched via the PARES recipe from the Spanish exit on 2 Nov 2026 (3 s between requests, no 429) and viewed at about 1000 px; frame check of 30 Oct 2026.",
+    "extent": "About 27 and 25 lines of Roman-numeral cipher (dar + lxxij style numerals with strokes) with plain Spanish names and words (Diego de Soria, Salvador Duart, la conpania, mercaderias); docket De los Reyes cifra sin fecha, old mark T.C.Y.2, foliation 664-665, modern note on p.4 Carta de los RR.CC. al doctor Puebla en cifra incompleta.",
+    "cipher": "Puebla Great Roman Numeral code with a minority of clear words; no decipherment written on the leaves. The repo (targets/puebla1495, PR #101, WAINUT) identifies it as the cipher copy of the despatch of 28 Dec 1495 (CSP Spain I no. 113 clear draft, no. 114 the cipher copy)."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE (known.py PTR,LEG,54 and 52: only catalogue and targets rows).",
+    "tomokiyo": "cryptiana.web.fc2.com/code/spanish.htm lists the Puebla code and key AGS PTR leg. 52 doc. 33 (link in the entry); no reading of doc. 124.",
+    "lasry": "No Lasry reading of this item found.",
+    "edition": "Bergenroth, CSP Spain I no. 113 (pp. 72-75) abstracts the clear draft and no. 114 notices the cipher copy without a decipherment; the 1868 Supplement starts in 1498.",
+    "literature": "targets/puebla1495 (27 Oct 2026): a sample of p.1 ll. 6-8 and p.2 ll. 1-6 decoded with the extant key; the rest of the copy not decoded; groups 883, 1374, 1335, 1813, 852, 868, 1221 and xxix open."
+   },
+   "key_check": "The extant key AGS PTR leg. 52 doc. 33 (2,400-element Roman numeral code) applies and reads a sample; the remaining groups need a key lookup, not a cryptanalysis.",
+   "duplicates": "known.py 2207846 and PTR,LEG,52: catalogue 616 (PTR 52 doc. 47) and 617 are other Puebla letters; targets/puebla1495 is this very document, so no duplicate beyond that.",
+   "verdict": "key_lookup",
+   "closed": "The Puebla code key (PTR leg. 52 doc. 33) is extant and already decodes a sample of this copy; the rest is a key application, plus the content is in print as the clear draft (CSP Spain I no. 113)."
+  }
+ },
+ {
+  "id": 637,
+  "counted": true,
+  "year": 1823,
+  "date": "6 Aug 1823",
+  "title": "John J. Appleton → John Quincy Adams, Cadiz, despatch with an 18-group coded passage on the Spanish liberal government's secret English loan, printed 'no decodification'",
+  "correspondents": "John James Appleton (US chargé d'affaires ad interim at Madrid, with the Cortes at Cadiz) → John Quincy Adams, Secretary of State",
+  "place": "Cadiz",
+  "language": "English",
+  "region": "Spain",
+  "period": "1801-1900",
+  "shelfmark": "NARA RG 59, Despatches from US Ministers to Spain, vol. 22 (20 May 1822-30 Dec 1823) = microfilm M31 reel 24, catalog naId 188609418",
+  "folio_note": "Viewer image 133 of 329 on naId 188609418 (catalogue 'frame 0134' is the same leaf); 18 groups in two lines at the foot of the left page",
+  "cls": "A",
+  "status": "Manning, Diplomatic Correspondence ... Independence of the Latin-American Nations (1925) vol. 3, doc. 1124, p. 2041, prints the groups with '[no decodification]'. The groups fit the code rebuilt in targets/jqa (the = 1385, of = 1576, that = 1384, and = 668; the London/St Petersburg code): with targets/jqa/code_table.tsv 16 of 18 groups take a value ('... of [794] that ... was [192] and that he had a part in England'). Not in the repo (known.py: Appleton no hits).",
+  "why": "The Spanish constitutional government's secret plan to raise money in England in the last weeks of the Cortes at Cadiz (1823), told to the US chargé by the finance minister Yandiola; directly readable with a key this repository already holds.",
+  "importance": 3,
+  "solvability": 5,
+  "difficulty": 1,
+  "score_note": "Scored from the printed edition (Manning 1925) during the Oct 2026 NARA/State Department sweep (research/nara_state/); not viewed",
+  "verify": "Find the despatch on M31 reel 24 (naId 188609418, 329 frames), re-transcribe the 18 groups and decode with targets/jqa/code_table.tsv; check the other Appleton despatches of 1822-23 in the same volume for more code.",
+  "links": [
+   {
+    "label": "Manning vol. 3 (archive.org)",
+    "href": "https://archive.org/details/diplomaticcorres03mann"
+   },
+   {
+    "label": "NARA M31 vol. 22",
+    "href": "https://catalog.archives.gov/id/188609418"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "NARA RG 59 diplomatic despatches (via Manning 1925) sweep",
+  "prior_art": "open (checked 27 Oct 2026: Manning prints it undecoded; no other decoding found)",
+  "ark": "",
+  "scored": "sweep",
+  "access": "online",
+  "access_note": "NARA catalogue file digitised (naId 188609418: 329 images) (checked 28 Oct 2026)",
+  "frame_check": {
+   "result": "confirmed",
+   "href": "https://catalog.archives.gov/id/188609418?objectPage=133",
+   "frame": "viewer image 133 of 329 (pp. 18-19 of the volume); the catalogue's 'frame 0134' is the same leaf, numbered one higher",
+   "saw": "Handwritten despatch, spread with Appleton's text about Yandiola and the loan. Two lines of number groups in the body at the foot of the left page: '1088 648 [sign] 1576 794 [sign] 1384 1453 347 1372 500 / 192 668 1384 169 1244 1501 1110 1426 1290' (668 as printed by Manning, not 168); no decipherment written on the page. Plain English follows on the right page ('Yandiola inquired then when Mr. Nelson might come'). Frames 134-136 show the same despatch with no code groups.",
+   "note": "Entry's 'frame 0134' = viewer image 133 (objectPage=133).",
+   "date": "2026-10-30",
+   "by": "claude frame check 05"
+  },
+  "vetting": {
+   "date": "2026-11-02",
+   "by": "claude vetting batch L04",
+   "seen": {
+    "kind": "scan",
+    "where": "https://catalog.archives.gov/id/188609418?objectPage=133 (NARA, Despatches from US Ministers to Spain vol. 22, M31 reel 24); viewer opened 2 Nov 2026, frame-check 05 (30 Oct) reused for the two code lines",
+    "extent": "18 code groups in two lines at the foot of the left page, inside Appleton's account of the Yandiola loan conversation; the rest of the despatch is clear English",
+    "cipher": "Numeric code groups (3-4 digits) interlined in a clear English despatch; the viewer showed the Yandiola loan text of the despatch; no decipherment, interlinear or key is written on the leaf (frames 134-136 of the same despatch carry no groups)."
+   },
+   "prior_art": {
+    "decode": "Not a DECODE series: NARA diplomatic and military records; known.py on the correspondents finds only this repo's own catalogue rows and target notes.",
+    "tomokiyo": "Not in Tomokiyo's cryptiana pages (a search on the shelfmark, correspondents and system on 2 Nov 2026 found nothing).",
+    "lasry": "No Lasry reading or listing found (web search 2 Nov 2026 on the correspondents and system).",
+    "edition": "Manning, Diplomatic Correspondence ... Latin-American Nations vol. 3 doc. 1124 prints the groups '[no decodification]'; the Serial Set (19th Congress, doc. 121) lists only an extract of Appleton to Adams 6 Aug 1823. Web searches for 'Yandiola', 'Appleton 6 August 1823 cipher' found no printed decipherment.",
+    "literature": "Searches on Appleton, Yandiola, the Cadiz loan and the 1823 Spanish-American recognition debate (Founders Online, Serial Set, MHS Adams slip file) found no decoding of this passage."
+   },
+   "key_check": "Held key tried: targets/jqa/code_table.tsv (the State Department code of JQA at St Petersburg). Looked up here on 2 Nov 2026: 1576 of, 1384 that (twice), 668 and, 500 was, 169 he, 1244 had, 1501 a, 1110 part, 1426 in, 1290 England (all grade H, many occurrences); 1088 sa, 1453 la, 1372 te, 347 fit, 648 April? are syllables or uncertain; 794 and 192 have no value. The tail reads 'was [192] and that he had a part in England', so the held key reads most of the passage.",
+   "duplicates": "known.py 'Appleton' and 'Yandiola' (2 Nov): only catalogue 637 itself; no other record of this despatch; Appleton's other 1822-23 despatches are not in the repo.",
+   "verdict": "key_lookup",
+   "closed": "Read with a key this repository already holds (targets/jqa code_table.tsv): 16 of 18 groups take a value and the end of the passage reads as English sense."
+  }
+ },
+ {
+  "id": 650,
+  "counted": true,
+  "year": 1814,
+  "date": "c. Nov 1813 - 1815 (one leaf dated 14 Jan 1814)",
+  "title": "Anthony Morris (US confidential agent at Cadiz/Madrid) → James Monroe, despatches largely in an unidentified State Department code (the = 285?)",
+  "correspondents": "Anthony Morris → James Monroe, Secretary of State",
+  "place": "Cadiz; Madrid",
+  "language": "English",
+  "region": "Spain",
+  "period": "1801-1900",
+  "shelfmark": "NARA RG 59, Despatches from US Ministers to Spain, vol. 12 (28 May 1813-13 Apr 1816) = microfilm M31 roll 14, catalog naId 188606645",
+  "folio_note": "code runs on frames 0036-0039 (Triplicate, Cadiz), 0050, 0052-0057, 0124-0125 and 0191-0192 (two copies of the same despatch: a built-in check), about 3,000 groups in all; frame 0058 is a Morris account sheet",
+  "cls": "C",
+  "status": "Code identified 2 Nov 2026: the State Department code of targets/jqa with its blocks of 100 in reverse order (Morris 100*i+r = JQA 100*(15-i)+r); frame 0039 reads as sense ('it appears to me that ... democratic government of the United States under the'); the other coded frames are not yet transcribed.",
+  "why": "Morris negotiated with Cevallos over Florida and seized ships in the last years of the Peninsular War; the coded passages are the confidential part of the only US channel to the Regency and to Ferdinand VII in 1813-15.",
+  "importance": 3,
+  "solvability": 3,
+  "difficulty": 3,
+  "verify": "Check Woolfley, A Quaker Goes to Spain (2013), and Manning 1925 vol. 3 for printed decodes; look for a decipherment bound elsewhere in vol. 12; otherwise rebuild the code from the two copies and the clear-text islands (syllabic code of ~1,600 groups, partly alphabetical).",
+  "links": [
+   {
+    "label": "NARA M31 vol. 12",
+    "href": "https://catalog.archives.gov/id/188606645"
+   },
+   {
+    "label": "frame 0039",
+    "href": "https://catalog.archives.gov/medialz/dc-metro/rg-059/603720/M31/M31-014/M31-014-0039.jpg"
+   },
+   {
+    "label": "Repo target morris1813 (key and reading)",
+    "href": "targets/morris1813/NOTES.md"
+   }
+  ],
+  "seen": "image",
+  "prior_art": "open as far as checked (27 Oct 2026: web search found Woolfley 2013 on the mission, no mention of cipher; Founders has only his private letters to Madison)",
+  "source": "NARA RG 59 bulk-scan triage (slice A, 1789-1906)",
+  "score_note": "Scored from the NARA OCR and the frame image(s) named in folio_note during the Oct 2026 NARA bulk-scan triage (research/nara_triage_a/)",
+  "ark": "",
+  "scored": "sweep",
+  "access": "online",
+  "access_note": "online (backfilled 28 Oct 2026 from the entry: seen: image)",
+  "vetting": {
+   "date": "2026-11-02",
+   "by": "claude vetting batch L20",
+   "seen": {
+    "kind": "scan",
+    "where": "NARA M31 roll 14 image 0039 (catalog.archives.gov/medialz/dc-metro/rg-059/603720/M31/M31-014/M31-014-0039.jpg, fetched 2 Nov 2026, 2560x3072 px)",
+    "extent": "One page headed '4', 26 lines of dotted numeric groups (about 550 groups) with a few clear phrases ('would induce them to', 'an offer was made by them', 'the intention of holding it', 'take place'); other coded frames 0036-0038, 0050, 0052-0057, 0124-0125, 0191-0192 (about 3,000 groups per the catalogue) not looked at",
+    "cipher": "Numeric code (groups to about 1600) with subscript marks (s, c, 333) and strokes; no interlinear decipherment on the leaf; most frequent groups 285 and 76."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE (known.py 'Morris', 'Cadiz': no DECODE record; targets/morris1813 states none).",
+    "tomokiyo": "No cryptiana page found; web search 'Anthony Morris Cadiz 1813 Monroe cipher code' (2 Nov 2026) gave no hit.",
+    "lasry": "No Lasry reading found (same search).",
+    "edition": "No printed decipherment: Manning vol. 3 searched by the repo target; Woolfley, A Quaker Goes to Spain (Lehigh 2013) discusses the mission, no cipher reading located; Papers of James Monroe vols. 6-7 not read.",
+    "literature": "Web search 2 Nov 2026 (Morris Cadiz Monroe cipher despatches): only Founders letters and Woolfley's book; nothing on the code."
+   },
+   "key_check": "Key held: targets/jqa/code_table.tsv (State Department code, the = 1385) with the sixteen blocks of 100 in reverse order (targets/morris1813/block_map.tsv: Morris 100*i+r = JQA 100*(15-i)+r). I checked it myself on the first lines of frame 0039: 140 it, 977 appears, 1069 to, 928 me, 284 that, 285 the, 76 of, 1549 United States, then 285 the, 721 51 554 dem-o-cre, 999 104 at-ic, 329 937 govern-ment, 76 of, 285 the, 1549 United States, 1180 under: 'it appears to me that ... democratic government of the United States under the', fluent English. So the lead's note that signature groups do not match JQA is wrong: they match with the block order reversed.",
+   "duplicates": "known.py 'Morris', 'Cadiz': targets/morris1813 (same document, WAINUT contribution) is the only hit; nothing else in the catalogue.",
+   "verdict": "key_lookup",
+   "closed": "The held JQA/State Department code table with blocks reversed reads frame 0039 as sense (spot check of about 35 groups); only that frame is transcribed in the repo, the other coded frames are unread."
+  }
+ },
+ {
+  "id": 681,
+  "counted": true,
+  "year": 1865,
+  "date": "Nov 1864 - Apr 1865",
+  "title": "Lt. Gen. Richard Taylor (Dept. of Alabama, Mississippi and East Louisiana) → Maury, S. D. Lee, Forrest and others: telegram letter-books with Confederate Vigenère passages copied in cipher only",
+  "correspondents": "Richard Taylor (by W. F. Bullock Jr., AAG) → D. H. Maury (Mobile), S. D. Lee (Augusta), Wirt Adams, Gov. Clark, Richmond and others",
+  "place": "Meridian, Mississippi",
+  "language": "English",
+  "region": "Americas",
+  "period": "1801-1900",
+  "shelfmark": "NARA RG 109, War Department Collection of Confederate Records, Chapter II vols. 10, 11 and 196 (Telegrams Sent, Department of Alabama, Mississippi and East Louisiana, 1864-1865)",
+  "folio_note": "Cipher words written in capitals inside the clear copies, word lengths kept. Vol. 196 (Feb-Mar 1865, naId 45485022): about 40 runs, e.g. frame 0061 = p. 117, Taylor → Maury 12 Mar 1865 (viewed). Vol. 11 (1865, naId 12127054): about 10 runs. Vol. 10 (1864-65, naId 16878212): about 8 runs. Run lists with best key per run in research/nara_triage_d/capruns1.txt and capruns2.txt.",
+  "cls": "A",
+  "status": "Not unsolved in the strict sense: the keys are the known Confederate ones. Frame 0061 transcribed from the image and read here with COME RETRIBUTION (Vigenère, key running through the cipher letters only): 'Telegraph in cipher what [cavalry you have on which side of bay, strength and name of commander] ... Direct [cavalry so keep close to enemy] as possible ... [keep in constant telegraphic communication with] Genl D W Adams ... indicate in cipher [what] ... you have decided upon [outside through which to communicate]'. On the OCR alone, runs in vol. 11 read with COME RETRIBUTION ('stores', 'will move westward', 'was evacuated by') and runs in vol. 10 read with COMPLETE VICTORY ('Genl Johnston this alone will restore confidence', 'renders the assignment'). The volumes carry the 'War Records COPIED' stamp, so the Official Records may print these telegrams, but whether OR printed the cipher words deciphered or left them out was not checked. Not on DECODE; known.py: no hit for Come Retribution, Taylor 1865 or Markoe. 27 Oct 2026 (WAINUT, PR #111; targets/taylor1865/, in progress): four telegrams of 12 and 30 Mar and 6 and 8 Apr 1865 read from the NARA images with COME RETRIBUTION; the 6 and 8 April ones are printed in clear in the OR. Frame 0061's \"on each side of bay\" and \"[?west] point\" confirmed.",
+  "why": "A set of Confederate field ciphers from the last months of the war (Mobile campaign, Wilson's raid) that a known key reads, with the clear sense of each telegram in the same book: a quick, verifiable reading and a test set for Confederate key usage (which key, and when the change was made).",
+  "importance": 3,
+  "solvability": 5,
+  "difficulty": 1,
+  "score_note": "Scored from NARA OCR and one viewed frame during the Oct 2026 NARA bulk-scan triage (research/nara_triage_d/)",
+  "verify": "Check OR Ser. I vol. 49 pt. 2 and vol. 45 pt. 2 for Taylor's telegrams of 12 Mar 1865 to Maury and to S. D. Lee (does OR give the cipher words in clear?). Then transcribe the capital runs from the images of vols. 10, 11 and 196 and decipher with vig.py.",
+  "links": [
+   {
+    "label": "Vol. 196, Telegrams Sent Feb-Mar 1865 (NARA 45485022)",
+    "href": "https://catalog.archives.gov/id/45485022"
+   },
+   {
+    "label": "Vol. 11, Telegrams Sent 1865 (NARA 12127054)",
+    "href": "https://catalog.archives.gov/id/12127054"
+   },
+   {
+    "label": "Vol. 10, Telegrams Sent 1864-65 (NARA 16878212)",
+    "href": "https://catalog.archives.gov/id/16878212"
+   }
+  ],
+  "seen": "image",
+  "source": "NARA bulk-scan triage (RG 109)",
+  "prior_art": "Keys known (Manchester Bluff / Complete Victory / Come Retribution); OR not checked (checked 27 Oct 2026: web search for the 12 Mar 1865 Taylor-Maury text gave no hit; Rosenbach Telegraphic History holds Maury-Taylor telegrams of Nov 1864-Feb 1865)",
+  "ark": "",
+  "scored": "sweep",
+  "as_of": "2026-10-27",
+  "access": "online",
+  "access_note": "online (backfilled 28 Oct 2026 from the entry: seen: image)",
+  "vetting": {
+   "date": "2026-11-02",
+   "by": "claude vetting batch L21",
+   "seen": {
+    "kind": "scan",
+    "where": "NARA RG 109 Ch. II vols. 196/11/10 (naIds 45485022, 12127054, 16878212); frames viewed by the entry's contributor (targets/taylor1865); I reread targets/taylor1865/NOTES.md and research/nara_triage_d/capruns1.txt and capruns2.txt but did not re-open the frames",
+    "extent": "vol. 196 about 40 runs, vol. 11 about 10, vol. 10 about 8; four telegrams fully read",
+    "cipher": "Cipher words in capitals inside clear copies, Vigenere over cipher letters only, key COMERETRIBUTION; capruns files list best key per run (COMERETR / MANCHEST / COMPLETE in the 1865 volumes)."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE (known.py: no hit for Come Retribution, Taylor 1865).",
+    "tomokiyo": "Tomokiyo has no page on these volumes; the Confederate keys (Manchester Bluff, Complete Victory, Come Retribution) are public.",
+    "lasry": "No Lasry publication on this item found (web searches 2 Nov 2026 on the title terms returned only general SIS/MI-8 histories).",
+    "edition": "OR I/49/2 pp. 1209 and 1216 print the 6 and 8 April 1865 telegrams in clear; for 12 and 30 March no printed text was found (targets/taylor1865 notes).",
+    "literature": "Web search 2 Nov 2026 (Taylor telegrams 1865 Confederate cipher Come Retribution Vigenere Maury Mobile OR) found the key lists and Rosenbach Maury-Taylor transcripts, nothing reading these letter-book passages."
+   },
+   "key_check": "Held key reads it: COME RETRIBUTION fits each of the four telegrams from its first letter; the 12 Mar one is 180 letters = 12 key turns. Remaining runs in vols. 10 and 196 need only key assignment (MANCHESTER BLUFF / COMPLETE VICTORY / COME RETRIBUTION) from the public lists.",
+   "duplicates": "known.py: only targets/taylor1865 and this entry (WAINUT PR #111); Rosenbach Maury-Taylor telegrams are different (Nov 1864-Feb 1865, plain transcripts).",
+   "verdict": "key_lookup",
+   "closed": "Four telegrams read with the known Confederate key COME RETRIBUTION; remaining runs are key-lookup, not a break."
+  }
+ },
+ {
+  "id": 813,
+  "counted": true,
+  "year": 1825,
+  "date": "1825",
+  "title": "Joseph von Chlingensperg auf Berg, encrypted diary (1825)",
+  "correspondents": "Joseph von Chlingensperg auf Berg (diarist)",
+  "place": "Bavaria (probably)",
+  "language": "German",
+  "region": "Germany",
+  "period": "1801-1900",
+  "shelfmark": "Beinecke, Chlingensperg family diaries, GEN MSS 1495, Series II, Box 3",
+  "folio_note": "Encrypted diary",
+  "cls": "B",
+  "status": "Archives at Yale title \"Encrypted diary\". The same series holds a 20th-century \"Translation of 1811 diary, with related papers\" (Box 2), which may give the system. Not digitised, not on DECODE, not in repo.",
+  "why": "A Bavarian noble diary of the Napoleonic and Restoration years kept partly in cipher.",
+  "importance": 2,
+  "solvability": 2,
+  "difficulty": 2,
+  "verify": "Request scans; check the Box 2 translation papers for the key.",
+  "links": [
+   {
+    "label": "Quicksearch archives search",
+    "href": "https://search.library.yale.edu/archives?q=Chlingensperg+encrypted"
+   }
+  ],
+  "source": "Beinecke sweep",
+  "seen": "catalogue",
+  "score_note": "Scored from the archive description during the Oct 2026 Beinecke sweep (research/us_beinecke_folger/); not viewed",
+  "prior_art": "open (checked 28 Oct 2026: repo known.py, DECODE list)",
+  "ark": "",
+  "scored": "sweep",
+  "access": "archive",
+  "vetting": {
+   "date": "2026-11-02",
+   "by": "claude vetting batch L26",
+   "seen": {
+    "kind": "not online",
+    "where": "Yale EAD finding aid for the Chlingensperg family diaries (GEN MSS 1495, resource 11037) https://ead-pdfs.library.yale.edu/11037.pdf; Quicksearch archives search \"Chlingensperg\"; Yale Digital Collections search: 0 results",
+    "extent": "Encrypted diary 1825, Series II box 3 (Box 2 holds the 1811 decipherment)",
+    "cipher": "Finding aid: \"Entries from 1805 through 1830 ... are encrypted with cipher of Joseph von Chlingensperg auf Berg's own construction. Some passages have been decoded into German in notes laid in through select volumes. The 1811 volume has been decoded in full in a 33-page manuscript.\" And: \"The cipher has since been cracked by multiple sources.\""
+   },
+   "prior_art": {
+    "decode": "DECODE: not listed in the repo ledgers (known.py on shelfmark, correspondents, date found only this lead and research/us_beinecke_folger); no DECODE record search of my own beyond that.",
+    "tomokiyo": "No cryptiana page found for this item (WebSearch 2 Nov 2026 with correspondents + cipher; cryptiana not searched page by page).",
+    "lasry": "No Lasry reading found: WebSearch 2 Nov 2026 (Lasry/DECRYPT + correspondents + cipher) returned nothing on this item.",
+    "edition": "WebSearch 2 Nov 2026 (Chlingensperg diary cipher cracked; Tagebuch): nothing outside the Yale finding aid; the 33-page printed translation of the 1811 volume is in the collection (box 2).",
+    "literature": "Finding aid only: states that the cipher \"has since been cracked by multiple sources\" and that the 1801 volume has two sheets about the decoding, the 1803 volume notes on translation by a contemporary (probably his son), a 20th-century owner and possibly Jonathan Hill."
+   },
+   "key_check": "The system is a single cipher used 1805-1830 and the collection holds decoding material (1811 full translation with index, decoding sheets in the 1801 volume), so the 1825 volume reads by key lookup once the key is rebuilt from those pages; not held here.",
+   "duplicates": "known.py \"GEN MSS 1495\", \"Chlingensperg\": this lead, 812 and a \"Partially encrypted diary\" candidate; the 1825 volume is its own item.",
+   "verdict": "key_lookup",
+   "closed": "Same cipher as the 1805-1830 volumes, \"cracked by multiple sources\" per the finding aid, with a full 1811 translation and decoding sheets in the collection: the key exists; needs the collection pages to apply it to 1825."
+  }
+ },
+ {
+  "id": 849,
+  "counted": true,
+  "year": 1650,
+  "date": "17th century",
+  "title": "Case MS 5017 occult manuscript (17th c.), folio with a characters table and two sample lines 'in cipher'",
+  "correspondents": "unknown (compiler not identified; not verified to be Robert Ashley)",
+  "place": "England",
+  "language": "English",
+  "region": "England",
+  "period": "1611-1650",
+  "shelfmark": "Newberry Library, Case MS 5017 (digital item case_ms_5017_020_o2, CONTENTdm nby_dig/2714)",
+  "folio_note": "one page: table of symbols paired with letters, with two sample ciphertexts transcribed in the image alt-text as 'edward; eliet' and 'writ; tsis'",
+  "cls": "B",
+  "status": "Digitised page: 'This Table which standeth here underneth serveth them who are desirous to use a form of Characters to write in that maner that no man shall reade; but by the Table folowing.' The page carries its own key, so the examples are readable. This is a key lead, not an unsolved text; the other pages (case_ms_5017_070_o2 matched 'code') may hold further cipher material and are worth a look. The volume's catalogue record was not matched (Ashley's 1612 'Book of magical charms' is a separate digital record, not shown to be this volume). Not on DECODE; known.py no hit for Case MS 5017.",
+  "why": "Shows a 17th-century amateur cipher alphabet inside an occult manuscript; useful as a key for any unread characters elsewhere in the volume.",
+  "importance": 1,
+  "solvability": 4,
+  "difficulty": 1,
+  "verify": "View nby_dig/2714 and neighbouring pages (2764); check whether any longer passage in the volume is in these characters.",
+  "links": [
+   {
+    "label": "Newberry Digital Collections item",
+    "href": "https://collections.carli.illinois.edu/digital/collection/nby_dig/id/2714"
+   }
+  ],
+  "prior_art": "not checked beyond the digital record (28 Oct 2026)",
+  "access": "online",
+  "source": "Newberry Library sweep",
+  "score_note": "Scored from the Newberry catalogue record during the Oct 2026 Newberry sweep (research/chi_newberry/); not viewed",
+  "seen": "catalogue",
+  "ark": "",
+  "scored": "sweep",
+  "frame_check": {
+   "result": "confirmed",
+   "href": "https://collections.carli.illinois.edu/digital/iiif/nby_dig/2714/full/1400,/0/default.jpg",
+   "frame": "Newberry Case MS 5017, nby_dig/2714 (case_ms_5017_020_o2), one page",
+   "saw": "English 17th-c. hand: 'Ex eodem lib. Mst. This Table which standeth here underneth serveth them who are desirous to use a form of Characters ...'; a 3x3 grid of cells each giving three letters paired with dotted/stroked marks (a.k.t, b.l.u, c.m.i, d.n.x, e.o.y, f.p.z, g.q, s.r.&, s.w ...), and below it two lines of cipher characters (block/angle strokes with dots) separated by a semicolon, matching the two sample lines. Page carries its own key; no plaintext written beneath the samples.",
+   "date": "2026-10-30",
+   "by": "claude frame check 07"
+  },
+  "status_append": "2 Nov 2026 vetting: page viewed; pigpen-type grid with dots; samples decode with it ('edward; eliet', 'writ; tsis'); other pages of the volume still to be paged for further cipher material.",
+  "vetting": {
+   "date": "2026-11-02",
+   "by": "claude vetting batch L06",
+   "seen": {
+    "kind": "scan",
+    "where": "https://collections.carli.illinois.edu/digital/iiif/nby_dig/2714/full/1400,/0/default.jpg (downloaded and viewed 2 Nov 2026)",
+    "extent": "One page: 'Ex eodem lib. Mst.' and the heading of a table 'serveth them who are desirous to use a form of Characters to write in that maner that no man shall reade'; a 3x3 grid, each cell giving three letters with dots (a.k.t, b.l.u, c.m.i, d.n.x, e.o.y, f.p.z, g.q, s.r.&, s.w); below, two lines of cipher characters separated by a semicolon.",
+    "cipher": "A pigpen-type table: the cell outline of the grid gives the group, the number of dots (none, one, two) the letter. The page carries its own key, so the two sample lines can be read at once; I checked the first two signs of line 1 (open box with no dot = e, right-hand-bracket cell = d), matching the 'edward' of the item's alt-text transcription."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE (known.py 'Case MS 5017': only research/chi_newberry and chi_consortium notes).",
+    "tomokiyo": "Not on Tomokiyo; a standard pigpen/Freemason-type variant (searched).",
+    "lasry": "No Lasry entry; not a historical-cipher problem.",
+    "edition": "Satterley, 'Robert Ashley and the authorship of Newberry MS 5017' (Manuscript Studies 6.2) and the Newberry's transcription project describe the volume; they do not discuss this table.",
+    "literature": "Searches (Newberry Case MS 5017 characters table cipher; Book of Magical Charms) found nothing on the cipher page; the book is a magical commonplace book (Ashley, d. 1641)."
+   },
+   "key_check": "The key is on the page: pigpen-style table. Applied to the first two samples: the alt-text readings 'edward; eliet' and 'writ; tsis' are consistent with it. The other pages of the volume (case_ms_5017_070_o2 'code') were not paged here.",
+   "duplicates": "known.py 'Case MS 5017': no catalogue duplicate; research/chi_consortium README says it is already catalogue 849. Not a duplicate.",
+   "verdict": "key_lookup",
+   "closed": "The page contains its own cipher table and two short sample lines (about 10 signs); the entry is a key, not an unsolved text."
+  }
+ }
+]

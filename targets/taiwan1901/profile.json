@@ -1,0 +1,203 @@
+{
+ "schema_version": 1,
+ "target": "taiwan1901",
+ "title": "Taiwan Government-General telegrams, Taipei-Tokyo 1901: kana substitution key (table A) reconstructed from the contemporary translations; texts not reproduced",
+ "documents": [
+  {
+   "id": "th680-drafts-construction",
+   "read": "not read",
+   "shelfmark": "National Taiwan Historical Archives (國史館臺灣文獻館), 臺灣總督府檔案, 典藏號 00000680010 (pp. 2, 22-25), 00000680013 (pp. 7-8), 00000680019 (p. 3), 00000680020 (p. 2)",
+   "date": "8-18 September 1901",
+   "year": 1901,
+   "country": "Japan (Taiwan Government-General)",
+   "route": "Taipei -> Tokyo",
+   "places": {"from": "Taipei", "to": "Tokyo"},
+   "language": "Japanese",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {"location": ["interlinear"], "source": "Outgoing drafts (電報案): the clear text with the cipher kana written between its lines; used to build the key."},
+   "length": {"tokens": 765, "unit": "symbols", "measured": false},
+   "transcription": {
+    "by": "llm from images",
+    "source": "online images of the National Taiwan Historical Archives (about 65-70 dpi)",
+    "image_quality": "poor",
+    "notes": "Construction set of table A. 765 = cipher kana aligned with the clear. Transcriptions frozen by SHA-256; corrections kept apart. Not reproduced here."
+   }
+  },
+  {
+   "id": "th680-received-validation",
+   "read": "not read",
+   "shelfmark": "National Taiwan Historical Archives (國史館臺灣文獻館), 臺灣總督府檔案, 典藏號 00000680021, 022, 024-032, 034-036, 038-044, 046 (32 telegrams with their 譯電)",
+   "date": "18 September - 9 November 1901",
+   "year": 1901,
+   "country": "Japan (Taiwan Government-General)",
+   "route": "Tokyo -> Taipei",
+   "places": {"from": "Tokyo", "to": "Taipei"},
+   "language": "Japanese",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {"location": ["separate folio"], "source": "Contemporary translation (譯電) filed with each telegram form."},
+   "length": {"tokens": 5693, "unit": "symbols", "measured": false},
+   "transcription": {
+    "by": "llm from images",
+    "source": "online images of the National Taiwan Historical Archives (about 65-70 dpi)",
+    "image_quality": "poor",
+    "notes": "Decisive validation set, transcribed blind by a separate agent (cursive forms read at about 60-70 %). Clear kana and enciphered passages mixed. Not reproduced here."
+   }
+  },
+  {
+   "id": "th680-drafts-validation",
+   "read": "not read",
+   "shelfmark": "National Taiwan Historical Archives (國史館臺灣文獻館), 臺灣總督府檔案, 典藏號 00000680022, 024, 025, 026, 028, 029, 030, 033, 035 (11 send drafts)",
+   "date": "September - October 1901",
+   "year": 1901,
+   "country": "Japan (Taiwan Government-General)",
+   "route": "Taipei -> Tokyo",
+   "places": {"from": "Taipei", "to": "Tokyo"},
+   "language": "Japanese",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {"location": ["interlinear"], "source": "Outgoing drafts: clear with interlinear cipher kana."},
+   "length": {"tokens": 782, "unit": "symbols", "measured": false},
+   "transcription": {
+    "by": "llm from images",
+    "source": "online images of the National Taiwan Historical Archives",
+    "image_quality": "fair",
+    "notes": "Secondary validation set, transcribed blind. Not reproduced here."
+   }
+  },
+  {
+   "id": "th703-reserve-keyB",
+   "read": "not read",
+   "shelfmark": "National Taiwan Historical Archives (國史館臺灣文獻館), 臺灣總督府檔案, 典藏號 00000703007 (translation in 00000703008), 009, 010, 012, 013, 022 (9 received telegrams); 00000703012, 015, 043 (3 drafts)",
+   "date": "3 October - 11 November 1901",
+   "year": 1901,
+   "country": "Japan (Taiwan Government-General)",
+   "route": "Tokyo -> Taipei",
+   "places": {"from": "Tokyo", "to": "Taipei"},
+   "language": "Japanese",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {"location": ["separate folio"], "source": "Contemporary translations filed with the telegrams (associations of 00000703013 by length only)."},
+   "length": {"tokens": 696, "unit": "symbols", "measured": false},
+   "transcription": {
+    "by": "llm from images",
+    "source": "online images of the National Taiwan Historical Archives",
+    "image_quality": "poor",
+    "notes": "Reserve for key B, transcribed blind (read at 40-85 %). 606 kana in the received telegrams, 90 in the drafts. Not reproduced here."
+   }
+  }
+ ],
+ "system": {
+  "types": ["monoalphabetic"],
+  "summary": "Kana-to-kana substitution of Japanese written in katakana (period telegraphic spelling), almost reciprocal (対合 type, 20 base pairs, ヒ fixed, a few one-way entries), built on the 五十音 grid; numerals in clear.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 72,
+  "diacritics": {"used": true, "note": "dakuten and handakuten: voiced kana mostly follow their base pair, with exceptions (ダ->デ)"},
+  "homophones": {"used": false},
+  "nomenclator": {"present": false},
+  "nulls": {"present": false},
+  "key_order": "partly alphabetical",
+  "word_division": "none",
+  "sibling_key": "Same type as the reciprocal kana tables of the Meiji ministries, 1875-1896 (長田 1989, 佐々木 1995, 大野 2012; Tomokiyo, Cryptiana); not identical to any table available online (closest: Foreign Ministry 1902, 3 of 45 entries). Not used.",
+  "notes": "distinct_symbols = entries of table A (45 base kana and their voiced forms). key_order: 11 of the 20 pairs swap two kana of the same 五十音 row. Received telegrams mix clear kana and enciphered passages (marked by arcs)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Each received telegram is filed with its contemporary translation (譯電); the outgoing drafts carry the clear with interlinear cipher kana (National Taiwan Historical Archives, vols. 00000680 and 00000703). The table itself was not found in the file nor in the published tables available online.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": ["images", "known plaintext"],
+  "attack": "known plaintext",
+  "human_role": "Brice Dudout chose the corpus and set the rules (protocol frozen before any key computation, blind transcription of the validation pieces by a separate agent, one measurement against random keys); AI agents transcribed, built the key, measured and wrote up. No hand correction of readings.",
+  "tools": ["Needleman-Wunsch alignment of cipher kana with the kana of the clear", "control: best of 200 random involutions (seed 1901)", "key B: two-state clear/cipher Viterbi decoder with an order-4 kana language model"],
+  "models": ["Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"],
+  "sessions": 2,
+  "first_date": "2026-11-03",
+  "last_date": "2026-11-04"
+ },
+ "solution": [
+  {
+   "date": "2026-11-03",
+   "kind": "access",
+   "what": "Online images of vol. 00000680 (35 pieces, Sept-Nov 1901) and later vol. 00000703 from the National Taiwan Historical Archives; pieces are pairs of an enciphered form and its contemporary translation, and outgoing drafts with interlinear cipher kana.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "hypothesis",
+   "technique": ["key-structure hypothesis"],
+   "what": "Protocol frozen (SHA-256) before any computation: H1 kana-to-kana substitution (monoalphabetic, reciprocal or not), H2 two-kana code groups, H3 mixed clear and cipher; construction on lot 1 only; score, random-key control and thresholds fixed in advance.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "key from source",
+   "technique": ["plaintext matching", "manual reconstruction"],
+   "what": "Table A built from four outgoing drafts with interlinear cipher kana (00000680010, 013, 019, 020): the clear put into period kana and aligned with the cipher (Needleman-Wunsch); 765 aligned positions; 72 entries, 44 certain, 7 probable, 21 conjectural. H1 (almost reciprocal substitution) holds; H2 rejected (cipher length = kana length of the clear).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "control",
+   "technique": ["statistical test"],
+   "what": "One measurement of frozen table A on lot 2 transcribed blind. Decisive set (32 received telegrams, 5,693 kana): 0.233 against the best of 200 random keys 0.164 (threshold 0.60 and control + 0.30): fails. Informative: key between the arcs only 0.371 / 0.302; kana between the arcs 0.453 / 0.323.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "control",
+   "technique": ["statistical test"],
+   "what": "Secondary set (11 Taipei send drafts, 782 kana, blind, never seen during construction): 0.721 against 0.316, 9 of 11 drafts at control + 0.25 or more. Table A is right for the telegrams sent from Taipei.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "solver",
+   "technique": ["beam/DP decoding", "language-model scoring"],
+   "what": "Key B for the received telegrams (own frozen protocol): table re-learned on the received forms (59 of 79 symbols keep table A's value: no other table, not the inverse of A) plus a two-state clear/cipher decoder. Cross-validation by excluded piece 0.424 against 0.340.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "control",
+   "technique": ["statistical test"],
+   "what": "One measurement of key B on a new reserve (vol. 00000703, 9 received telegrams, 606 kana, transcribed blind): 0.206 against a control of 0.228, 1 of 9 at control + 0.10 (threshold 0.45 and control + 0.15): fails. Drafts 0.167 / 0.222.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "literature search",
+   "what": "Table A compared with 15 kana tables or families available online (Cryptiana; JACAR B13080285600, B13080285400; NDL): closest the Foreign Ministry table of 9 May 1902, 3 of 45 entries in common (chance level), sent to Taiwan only in June 1904. The ministerial tables of 1875-1896 printed in 長田 1989, 佐々木 1995 and 大野 2012 could not be checked online. Daniel Bourdeau's catalogue has no Taiwan entry.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Table A rebuilt from outgoing drafts that carry the cipher kana between the lines of the clear, the telegrams being read at the time (contemporary translations filed with them); validated blind on Taipei drafts (0.72 against 0.32), not on the telegrams received from Tokyo (0.23 against 0.16).",
+  "first_break": false,
+  "contribution": ["key recovered"],
+  "verification": ["contemporary decipherment"],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "new cipher with solution",
+    "note": "key only: table A reconstructed from the 1901 drafts, frozen-protocol validation, key B attempt, prior-art comparison",
+    "date": "2026-11-04"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the 1901 translations (譯電) and the clear of the outgoing drafts, filed with the telegrams in the National Taiwan Historical Archives"
+   }
+  ],
+  "gaps": [
+   {"item": "Telegrams received at Taipei from Tokyo (vols. 00000680 and 00000703)", "blocker": "illegible", "detail": "no validated key: the cursive forms are read at about 55-70 % on 65-70 dpi online images, clear and cipher passages are mixed, and the grid reading order is not established"},
+   {"item": "21 conjectural entries of table A", "blocker": "too-short", "detail": "rare kana and voiced forms with 0 or 1 attestation in the drafts"}
+  ],
+  "texts_withheld": "The telegrams, their contemporary translations and the drafts belong to the National Taiwan Historical Archives (國史館臺灣文獻館), whose images are not republished; the contemporary translations are the existing reading. Only the key reconstructed here, its method and aggregate scores are shared.",
+  "key_file": "key_1901A.tsv",
+  "notes": "Key table A, not a new reading. Prior art for the table itself: not found in the published tables available online; the 1875-1896 ministerial tables in print remain to be compared."
+ }
+}

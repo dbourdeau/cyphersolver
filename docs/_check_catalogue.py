@@ -24,8 +24,10 @@ duplicates. A lead becomes a catalogue entry only when its "vetting" block shows
              "cipher": "what is on the leaf: the system seen, and that no decipherment is written on or with it"},
     "prior_art": {"decode": "...", "tomokiyo": "...", "lasry": "...", "edition": "...", "literature": "..."},
     "key_check": "keys held here or in print that were tried or ruled out, and why none reads it",
-    "key_in_volume": "optional: the key filed in the same volume or unit, and whether it was tested; such an entry may be
-                      promoted if no decipherment exists (rule of 3 Nov 2026). A key held elsewhere is still key_lookup",
+    "key_in_volume": "optional: the key filed in the same volume or unit, and whether it was tested",
+    "key_held": "optional: a key held here, on DECODE or in print, and whether it was tested. Neither key field blocks
+                 promotion: a lead with no known decipherment is open whether or not a key exists (rule of 3 Nov 2026);
+                 key_lookup is only for a text that a key has already been shown to read and that reading is on record",
     "duplicates": "what was searched (known.py terms, DECODE ids, correspondents and date) and the result",
     "verdict": "open"                          # or read / partly_read / duplicate / key_lookup / not_cipher
   }
@@ -100,6 +102,8 @@ def vetting_problems(e):
             out.append(f'vetting.{k} missing or too short')
     if 'key_in_volume' in v and not text_ok(v['key_in_volume']):
         out.append('vetting.key_in_volume too short: say where the key is and whether it was tested')
+    if 'key_held' in v and not text_ok(v['key_held']):
+        out.append('vetting.key_held too short: say which key and whether it was tested')
     if v.get('verdict') not in VERDICTS:
         out.append(f'vetting.verdict must be one of {", ".join(VERDICTS)}')
     elif v['verdict'] != 'open':

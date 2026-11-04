@@ -1,0 +1,60 @@
+{
+ "1434": {"unvetted": "needs Chrome: https://founders.archives.gov/documents/Washington/04-02-02-0401 (Lafayette to Washington 11 May 1785) and /04-02-02-0167 (21 Dec 1784). Founders Online returns an empty 202 bot-wall to curl and WebFetch, and ldr.lafayette.edu scans (xk81jn011, dv13zv892) return 403. Search snippets say the editors' footnote calls the 11 May 1785 letter the example of Lafayette using the code and that the encoded words are written above the code numbers and printed in angle brackets, i.e. a printed interlinear decipherment (prior art, likely verdict read). That has not been read on the page, so no verdict yet."},
+ "1436": {"unvetted": "needs Chrome: http://collections.digitalmaryland.org/cdm/ref/collection/hawp/id/170 and /216 (403 to curl; connection refused on the digital/api route; dp.la item 34a943d9ff5095dd9a9d9811ed8678e5 returns an empty page). The DPLA description only says the 3-page 12 Feb 1903 telegram was 'received in cipher' from Tower, which may be the decoded typescript; no description shows ciphertext survives, and no 8 Apr 1904 record was found on dp.la by search. FRUS 1903 (history.state.gov d405, d471) prints paraphrases only, so the pairing cannot be checked until the leaves are seen."},
+ "1437": {"unvetted": "needs Chrome: https://texashistory.unt.edu/ark:/67531/metapth1891647/ (altcha 'Validating your request' check on the page, /ocr/, /med_res/ and IIIF; must be cleared by the user in a tab). The OAI record (texashistory.unt.edu/oai, fetched by curl) confirms: 'Telegram from H. F. Sinclair to Edwin H. Chandler providing a ciphered message expressed in telegraphic commercial code', 14 Dec 1916, [1] p., local no. MS1052-0023-24-04, subject 'commercial code', but the telegram text was not seen. The other seven telegram records were not listed. known.py hits only this lead's own rows; web search found no study of these telegrams (the Teapot Dome code reading in 1924 was Friedman's, for other telegrams)."},
+ "1438": {"unvetted": "needs Chrome: https://digitalcollections.nypl.org/items/9205bfb0-c62b-012f-3b65-58d385a7bc34 (Incapsula bot wall on page, API and IIIF; the rp-digitalcollections mirror does not resolve). Search confirms the record sits in NYPL Spencer Greek MS 2 (Synaxarion and Menologion, dated 1150-1210) with the item note 'prayer by the scribe in bottom margin written in a cryptographic system', but the leaf was not seen, so the system is unjudged. Literature searched: Gardthausen Griechische Palaeographie II p.300 ff. describes Byzantine letter-to-numeral substitution, and 'Zur byzantinischen Kryptographie' (zenodo 2150236) gives such a colophon of 1105 (Paris Suppl. gr. 482); no study of the Spencer prayer found. Needs the leaf viewed to decide whether it is such a numeral-letter cipher already known."},
+ "1441": {"unvetted": "needs Chrome: https://id.lib.harvard.edu/curiosity/worlds-of-change/149-990075728710203941_HUL.ARCH:10870313 (403 to curl and WebFetch for id.lib.harvard.edu, api.lib.harvard.edu; curiosity.lib.harvard.edu gives an empty 202). Three web searches (Elias Mann diary code; Harvard 1790s coded sweetheart; HUD 800.5) found only the SNAC catalogue record (Mann b. 1778 Medfield, AB 1800, d. 1807) and no study of a coded name. The earlier Chrome pass saw only images 1 and 3 of 64; the coded name has not been located, so the cipher is unseen."},
+ "1442": {"unvetted": "needs Chrome: https://id.lib.harvard.edu/curiosity/worlds-of-change/149-990146986160203941_HBS.BAKER.GEN:32064577-2017 (403 to curl and WebFetch; curiosity.lib.harvard.edu gives an empty 202). Two further web searches (William Parker daybooks Baker Mss:83 symbols; 'unidentified symbols, possibly a cipher' finding-aid wording) found no finding aid text beyond the record and no study. The record does not say which of the four volumes holds the symbol pages, and the earlier Chrome pass saw only image 1 of v.1, so no symbols were seen and shorthand versus cipher is undecided."},
+ "1443": {"unvetted": "script type unresolved. Seen: Winterthur ASC 876, 54 IIIF leaves via iiif.quartexcollections.com (manifest a1c5092e-ccc6-4366-8cca-f993ddb54002, fetched with a Referer header, scratch only). Image 35 (p.31) carries about four lines of an unknown glyph script under blank staves; image 44 carries three lines of the same kind interleaved with staves and ending in a word in Latin letters; short monogram-like marks end hymns on images 34, 36, 39. So ciphertext of some kind survives, but it matches the Shaker 'spirit/unknown tongue' songs and gift writing (Andrews, The Gift to Be Simple; Winterthur notes another hymnal with songs in a spirit language) as well as a private substitution, and no key or study was found. Searches: Shaker hymnal code Buckingham deciphered; Shaker secret alphabet 'written in code'; cryptiana/Cryptologia/Schmeh Shaker ASC 876; Shaker spirit language symbol songs. Needs Shaker-literature check (Patterson, Heavenly Visions catalogue, Hamilton ACSQ 2007.07 p.117) to decide cipher versus spirit script before it goes in the catalogue."},
+ "1444": {"unvetted": "needs Chrome: https://idn.duke.edu/ark:/87924/r4q52nd66 and the Duke repository record RL.30814 (Anubis proof-of-work challenge on idn.duke.edu, repository.duke.edu and archives.lib.duke.edu; not solved, per the bot-check rule). Web search for the Elliott papers found no description beyond the finding-aid wording 'Loose items, and a few diary pages, pertain to ciphers and codes' and found nothing on a decipherment. Where the cipher leaves lie among 184 images is unknown, so no cipher was seen."},
+ "1921": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b40",
+  "seen": {
+   "kind": "not online",
+   "where": "https://manuscripts.nls.uk/repositories/2/archival_objects/17151 (catalogue record, Cloudflare 403 to curl and WebFetch; text read from search-result snippets of the same record); siblings 17110, 17153",
+   "extent": "Adv.MS.80.3.48: account book 1688-1699; siblings 80.3.49-80.3.50 run to 1701. Whole volume described as mainly in cipher. Leaves not seen: no digitisation found.",
+   "cipher": "NLS catalogue: 'Household and personal account books of the family of Dundas of Dundas: accounts of legal expenses, mainly written in cipher., 1688-1699'; siblings 'Some entries are in cipher'. No decipherment or key is mentioned in the record."
+  },
+  "prior_art": {
+   "decode": "known.py on 'Dundas' searches the harvested DECODE dump and the repo: no Dundas of Dundas record, only the unrelated Harford Jones to Henry Dundas code (catalogue). Web search of DECODE for the account books found nothing.",
+   "tomokiyo": "Search for Tomokiyo cryptiana plus Dundas, NLS and Scottish 17th-century account-book cipher returned only the Mary Stuart letters project; no Cryptiana entry for the Dundas volumes.",
+   "lasry": "No Lasry or Schmeh item on the Dundas of Dundas accounts found (searches 'Dundas of Dundas' with Lasry, Schmeh, Cipher Challenge; Mary Stuart papers only).",
+   "edition": "No printed edition or calendar of the Dundas of Dundas account books found; NLS catalogue lists them as Adv.MSS.80.3.1-57, bought by the Advocates' Library, with the cipher noted and no decipherment. No HMC report for this family covers them.",
+   "literature": "Searches for a published decipherment of the Dundas cipher volumes found only Susanna Kearsley's novel A Desperate Fortune (fiction, unrelated) and the NLS subject index of ciphers; nothing in HistoCrypt or Cryptologia located."
+  },
+  "key_check": "No key is recorded in the NLS description of 80.3.48-50, and none is held in the repo or on DECODE (known.py 'Dundas' finds none). Sibling Adv.MS.80.7.7 (lead 1922) is a separate 6-folio cipher notes volume of the same fonds; whether it shares the system is untested.",
+  "duplicates": "known.py 'Dundas' hit only leads 1921 and 1922 (this sweep) and the unrelated catalogue entry Harford Jones to Henry Dundas 1798; 'Adv.MS.80.3.48' no other hit. Lead 1922 is a different volume (80.7.7), not a duplicate.",
+  "verdict": "open",
+  "searches": [
+   {"query": "\"Dundas of Dundas\" papers National Library of Scotland Adv.MS.80 cipher accounts legal expenses 1688", "result": "Returned the NLS records for 80.3.48 ('mainly written in cipher', 1688-1699), 80.3.48-50 (1688-1701, some entries in cipher) and the fonds; no decipherment or key mentioned."},
+   {"query": "DECODE database Dundas cipher Scotland 1690s account book \"Dundas of Dundas\" Lasry OR Schmeh OR \"Cipher Challenge\"", "result": "Only the NLS records and the DECODE v2 HistoCrypt paper; no DECODE, Lasry or Schmeh item on the Dundas accounts."},
+   {"query": "Tomokiyo cryptiana Scottish cipher 17th century account book Dundas National Library of Scotland Advocates cipher decipherment", "result": "Only Mary Stuart letter coverage; no Cryptiana or other decipherment of the Dundas volumes."}
+  ]
+ },
+ "1922": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b40",
+  "seen": {
+   "kind": "not online",
+   "where": "https://manuscripts.nls.uk/repositories/2/archival_objects/16992 (catalogue record, Cloudflare 403 to curl and WebFetch; text read from search-result snippets of the same record)",
+   "extent": "Adv.MS.80.7.7, 17th century, 6 folios octavo. Leaves not seen: no digitisation found.",
+   "cipher": "NLS catalogue: 'Notes of the family of Dundas of Dundas in cipher., 17th century', extent '6 folios. Octavo.' No decipherment or key mentioned in the record."
+  },
+  "prior_art": {
+   "decode": "known.py on 'Dundas' and 'Adv.MS.80.7.7' searches the harvested DECODE dump and the repo: no Dundas of Dundas record; web search of DECODE found none.",
+   "tomokiyo": "Searches combining Tomokiyo or cryptiana with Dundas of Dundas and the NLS shelfmark found nothing on this volume; only the Mary Stuart letters project came up.",
+   "lasry": "No Lasry or Schmeh item on the Dundas of Dundas notes found in the same searches.",
+   "edition": "No printed edition of these family notes found; the Dundas of Dundas papers are not in an HMC report and the NLS record cites no decipherment. Search for genealogical notes in Dundas family printed works found only unrelated Arniston memoirs.",
+   "literature": "No HistoCrypt or Cryptologia paper on the Dundas cipher volumes found; the only hit naming a Dundas cipher journal is Kearsley's novel A Desperate Fortune (fiction)."
+  },
+  "key_check": "No key recorded in the NLS description and none held in the repo or on DECODE. Lead 1921 (Adv.MS.80.3.48-50, accounts mainly in cipher, same fonds) is a possible comparison text; whether the two share a system is untested.",
+  "duplicates": "known.py 'Dundas' hit only leads 1921 and 1922 (this sweep) and the unrelated Harford Jones to Henry Dundas catalogue entry; 'Adv.MS.80.7.7' no other hit. Lead 1921 is a different volume, not a duplicate.",
+  "verdict": "open",
+  "searches": [
+   {"query": "\"Adv.MS.80.7.7\" OR \"Adv. MS. 80.7.7\" Dundas notes cipher", "result": "Returned the NLS record 16992: notes of the family of Dundas of Dundas in cipher, 17th century, 6 folios octavo; no decipherment."},
+   {"query": "Dundas of Dundas family 17th century cipher notes deciphered Scottish family cipher manuscript Historical Manuscripts Commission Dundas", "result": "NLS records and Kearsley's novel only; no HMC or other report printing or deciphering the notes."},
+   {"query": "\"Dundas of Dundas\" cipher family notes seventeenth century genealogy Scots cipher volume 6 folios octavo Advocates' Library bought 1925", "result": "Confirmed the 6-folio octavo extent and fonds context (Adv.MS.80.7 miscellaneous papers); nothing on any decipherment."}
+  ]
+ }
+}

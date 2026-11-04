@@ -1,0 +1,428 @@
+[
+ {
+  "id": 1134,
+  "counted": true,
+  "language": "German or Spanish",
+  "cls": "C",
+  "seen": "catalogue",
+  "year": 1699,
+  "date": "6 Sep 1699",
+  "title": "Count Sinzendorf (Paris) -> Count Aloys Harrach: in German and 'in part undecipherable'",
+  "correspondents": "Count Sinzendorf (Paris) -> Count Aloys Harrach",
+  "place": "Madrid or Paris",
+  "region": "Central Europe",
+  "period": "1651-1700",
+  "shelfmark": "Haus-, Hof- und Staatsarchiv Vienna, as calendared in HHStA Span. Varia Fasz. 4x (Vienna), BRAH 98 (Boletin de la Real Academia de la Historia, Austrian documents on the Spanish succession)",
+  "folio_note": "a single calendar line; the cipher extent is not stated",
+  "status": "Calendar note only; overlaps the broader catalogue.json entry on the Harrach/Trautson letters ('teilweise verschluesselt'), so merge there if wanted.",
+  "why": "Spanish succession politics 1697-99 from the Imperial side.",
+  "importance": 2,
+  "solvability": 2,
+  "difficulty": 3,
+  "score_note": "Scored from the printed catalogue/edition text during the Oct 2026 Internet Archive non-English printed-sources sweep (research/ia_pass2_c/); not viewed",
+  "verify": "Compare with the catalogue.json Harrach entry; HHStA Spanien Korrespondenz",
+  "links": [
+   {
+    "label": "BRAH volume on IA",
+    "href": "https://archive.org/details/boletindelareala96madr?q=sin+descifrar"
+   }
+  ],
+  "source": "Internet Archive printed-sources sweep (non-English)",
+  "prior_art": "open (checked 28 Oct 2026: known.py)",
+  "ark": "",
+  "scored": "sweep",
+  "vetting_note": "Calendar line only (BRAH 98, 'en parte indescifrable', HHStA Span. Varia); may mean illegible rather than cipher, fascicle number garbled, not online, access not 'archive'."
+ },
+ {
+  "id": 1266,
+  "counted": true,
+  "seen": "catalogue",
+  "source": "BNE/Hispana sweep",
+  "prior_art": "possible key: Reales Pérez reconstructed Mary of Hungary's 1546 cipher from French letters to Granvelle; Pich-Ponce 2023 give PP3 (Perrenot) and PP1 (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed)",
+  "score_note": "Scored from the BNE catalogue description (via the Europeana record API) during the Oct 2026 BNE/Hispana sweep (research/bne_hispana/); not viewed",
+  "decode_ids": [],
+  "year": 1544,
+  "date": "Jul 1544 - Jul 1548",
+  "title": "Mary of Hungary (Brussels) → Cardinal Granvelle: ten letters, one with cipher",
+  "correspondents": "Mary of Hungary, regent of the Netherlands → Antoine Perrenot de Granvelle",
+  "place": "Brussels",
+  "language": "French",
+  "region": "Low Countries",
+  "period": "1497-1559",
+  "shelfmark": "Madrid, Biblioteca Nacional de España, Gayangos Granvela series; BDH bdh0000173419",
+  "folio_note": "ten letters, 'una de las cartas con texto cifrado'",
+  "cls": "C",
+  "status": "BNE catalogue: one of ten letters has ciphered text. No decipherment noted. Not on DECODE. Checked 28 Oct 2026: Mary's ciphers to Granvelle have published reconstructions (Reales Pérez; Pich-Ponce PP3), so this letter may be readable with an existing key; no reading of this letter itself found.",
+  "why": "The regent's own cipher to her chief minister during the Schmalkaldic War; a French-language sample.",
+  "importance": 3,
+  "solvability": 4,
+  "difficulty": 3,
+  "verify": "View the ciphered letter; apply Reales Pérez's 1546 cipher and PP3.",
+  "links": [
+   {
+    "label": "BDH viewer",
+    "href": "http://bdh-rd.bne.es/viewer.vm?id=0000173419&page=1"
+   },
+   {
+    "label": "Europeana record",
+    "href": "https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000173419"
+   }
+  ],
+  "ark": "",
+  "scored": "sweep",
+  "access": "online",
+  "access_note": "online (backfilled 28 Oct 2026 from the entry: link BDH viewer (http://bdh-rd.bne.es/viewer.vm?id=0000173419&page=1))",
+  "vetting_note": "2 Nov: BNE viewer works in Chrome (bdh-rd URL redirects to bnedigital.bne.es card) but the letter containing the cipher in the 10-letter Mary of Hungary volume was not paged this round; no ciphertext seen and no key tried (Reales Perez / Pich-Ponce PP3 tables not applied)."
+ },
+ {
+  "id": 1267,
+  "counted": true,
+  "seen": "catalogue",
+  "source": "BNE/Hispana sweep",
+  "prior_art": "open for these letters (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed); Tomokiyo: Sessa used Kolosova's Ko.1, reconstructed from Sánchez/Juan Manuel letters",
+  "score_note": "Scored from the BNE catalogue description (via the Europeana record API) during the Oct 2026 BNE/Hispana sweep (research/bne_hispana/); not viewed",
+  "decode_ids": [],
+  "year": 1524,
+  "date": "Apr 1524 - Jun 1529 (+ May 1554)",
+  "title": "Duke of Sessa (Rome) → Charles V: twenty letters, some partly in cipher",
+  "correspondents": "Duke of Sessa (ambassador in Rome) → Charles V; one letter to Granvelle 1554",
+  "place": "Rome",
+  "language": "Spanish",
+  "region": "Spain",
+  "period": "1497-1559",
+  "shelfmark": "Madrid, Biblioteca Nacional de España, Gayangos; BDH bdh0000172732",
+  "folio_note": "twenty letters 1524-29 plus one of 1554; 'algunas cartas con texto parcialmente cifrado'",
+  "cls": "B",
+  "status": "BNE catalogue: some letters partly ciphered, originals and copies. The repo has Sessa 1523-24 RAH items (sessa1523, sessa1524) from the same ambassador, whose key may extend to these. No decipherment noted. Not on DECODE. Checked 28 Oct 2026: Verified 28 Oct: no reading of this volume found, but the cipher Ko.1 is known, so a key exists. Check Bergenroth CSP Spain 1525-29 too.",
+  "why": "The Rome ambassador during the League of Cognac and the Sack of Rome; the repo's 1523-24 Sessa key may read these.",
+  "importance": 4,
+  "solvability": 4,
+  "difficulty": 2,
+  "verify": "View volume; apply Ko.1 and the sessa1523/sessa1524 keys.",
+  "links": [
+   {
+    "label": "BDH viewer",
+    "href": "http://bdh-rd.bne.es/viewer.vm?id=0000172732&page=1"
+   },
+   {
+    "label": "Europeana record",
+    "href": "https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000172732"
+   }
+  ],
+  "ark": "",
+  "scored": "sweep",
+  "access": "online",
+  "access_note": "online (backfilled 28 Oct 2026 from the entry: link BDH viewer (http://bdh-rd.bne.es/viewer.vm?id=0000172732&page=1))",
+  "vetting_note": "2 Nov: BNE MSS/20214/52 not paged beyond the first leaves of 52/1-4b (no cipher there; 52/1 headed 'Claro'); remaining 15 PDFs unopened; no Sessa key (Ko.1, repo sessa1523/1524) applied. Left a lead."
+ },
+ {
+  "id": 1268,
+  "counted": true,
+  "seen": "image",
+  "source": "BNE/Hispana sweep",
+  "prior_art": "Not open: DECODE R1189 Decrypted; Tomokiyo spanish2.htm assigns the letter to the Imperial Cipher of 1544-1554 (checked 2 Nov 2026). The key has not been applied here.",
+  "score_note": "Scored from the BNE catalogue description (via the Europeana record API) during the Oct 2026 BNE/Hispana sweep (research/bne_hispana/); not viewed",
+  "decode_ids": [
+   1189
+  ],
+  "year": 1548,
+  "date": "May 1548 - Nov 1551",
+  "title": "Diego Hurtado de Mendoza (Rome, Siena) → Cardinal Granvelle: five letters, the first in cipher",
+  "correspondents": "Diego Hurtado de Mendoza → Antoine Perrenot de Granvelle",
+  "place": "Rome / Siena",
+  "language": "Spanish",
+  "region": "Spain",
+  "period": "1497-1559",
+  "shelfmark": "Madrid, Biblioteca Nacional de España, Gayangos (first part of the incomplete letter at Mss/7919/75); BDH bdh0000172694",
+  "folio_note": "first letter 'cifrada'; one letter incomplete, first part in Mss/7919/75",
+  "cls": "C",
+  "status": "BNE catalogue: 'La primera carta cifrada'. Corrected 2 Nov 2026: the cipher letter MSS/20212/29/1 is DECODE R1189, status Decrypted, 29 May 1548, homophonic with separate signs for syllables, no key named on the record. Tomokiyo (spanish2.htm) lists this card, Diego Hurtado de Mendoza to Granvelle, Rome, 29 May 1548 (BDH 172694), as an example of the Imperial Cipher of 1544-1554, whose fuller reconstruction is Bertomeu Masiá 2009. Date conflict: the 29 Oct vetting read 29 March 1548 at the top of f. 1 at low zoom; DECODE and Tomokiyo give 29 May. Not re-checked, BNE blocked access on 2 Nov 2026.",
+  "why": "The imperial ambassador in Rome and governor of Siena, in the year of the Siena revolt (1551); a named, dated cipher letter.",
+  "importance": 4,
+  "solvability": 4,
+  "difficulty": 3,
+  "verify": "Apply the Imperial Cipher of 1544-1554 (Tomokiyo spanish2.htm, Bertomeu Masiá 2009) to f. 1; check the date on the image.",
+  "links": [
+   {
+    "label": "BDH viewer",
+    "href": "http://bdh-rd.bne.es/viewer.vm?id=0000172694&page=1"
+   },
+   {
+    "label": "Europeana record",
+    "href": "https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000172694"
+   }
+  ],
+  "ark": "",
+  "scored": "vetted",
+  "access": "online",
+  "access_note": "online (backfilled 28 Oct 2026 from the entry: link BDH viewer (http://bdh-rd.bne.es/viewer.vm?id=0000172694&page=1))",
+  "vetting_note": "BDH 403 / Europeana challenge; no scan seen. Needs Chrome pass; candidate keys Lu.32 (Luo 2021), Bertomeu Masia 2009.",
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch c01",
+   "seen": {
+    "kind": "scan",
+    "where": "https://bnedigital.bne.es/bd/card?oid=0000172694&site=bdh (BNE Digital card, MSS/20212/29/1-6); viewer for MSS/20212/29/1 (id 1eaa4bb7-4272-4363-8fb3-c46855f34c46) opened in Chrome 29 Oct 2026, f.1 read at 0.8 scale",
+    "extent": "MSS/20212/29/1: letter of Diego Hurtado de Mendoza, Rome, 29 March 1548 (date at top right of f.1), three images; f.1 is a full page of about 20 lines wholly in symbol cipher (roughly 600 signs). The remaining letters 2-5 are the card's other Mendoza letters (May 1548-Nov 1551) and a 1551 unsigned letter from Schwaz; not opened.",
+    "cipher": "Whole-page substitution in non-Latin signs and Greek-like letters with word-dividing dots, not a clear letter with a cipher passage; no decipherment, interlinear text or key is written on f.1 (only faint show-through of the verso)."
+   },
+   "prior_art": {
+    "decode": "On DECODE, corrected 2 Nov 2026: R1189 (NLS_MSS_20212_29_1, MSS/20212/29/1), Hurtado de Mendoza to Granvelle, 29 May 1548, status Decrypted, record opened. The 29 Oct entry 'Not on DECODE' was wrong.",
+    "tomokiyo": "spanish2.htm lists 'Diego Hurtado de Mendoza to Granvelle, Rome, 29 May 1548' (BDH 172694, this card) under the Imperial Cipher of 1544-1554. The 29 Oct entry missed it.",
+    "lasry": "No Lasry paper or GL.htm entry on Hurtado de Mendoza's Rome cipher found by web search.",
+    "edition": "Real Biblioteca note (Avisos 2007) says Granvela's correspondence holds 94 Mendoza letters and 98 copies of his Rome letters, with no mention of cipher; no edition of this BNE letter found; Bertomeu Masia's books (Granvela and the Parma-Piacenza question; Bucchia) are the likely printed context and were not read.",
+    "literature": "Bucure 2025, Estudios Romanicos 'Napoles 1547: cartas cifradas y secretos de Estado' (Mendoza as ambassador in Rome writing to Charles V, four Simancas letters, a Naples-period cipher) is the closest published cipher analysis; not read in full."
+   },
+   "key_check": "Published key family: Imperial Cipher of 1544-1554 (Tomokiyo; Bertomeu Masiá 2009; Meister p. 212). Not applied to this letter here. The earlier candidates were Luo Lu.32 and the 1547 cipher in Bucure 2025.",
+   "duplicates": "known.py: only the bne_hispana candidate and an unrelated Guiche 1551 note; sibling leads 1265-1267 are other volumes; no duplicate of this letter or of Mendoza's 1548 Rome letters in catalogue.json.",
+   "verdict": "key_lookup",
+   "closed": "DECODE R1189 Decrypted and Tomokiyo assigns the letter to a published cipher, so it fails the bar's prior-art and key checks. Moved back to leads 2 Nov 2026."
+  }
+ },
+ {
+  "id": 1269,
+  "counted": true,
+  "seen": "catalogue",
+  "source": "BNE/Hispana sweep",
+  "prior_art": "open for these letters (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed); Leyva ciphers Ko.12 (1525), Ko.17 (1527), Lu.15 reconstructed by Kolosova/Luo",
+  "score_note": "Scored from the BNE catalogue description (via the Europeana record API) during the Oct 2026 BNE/Hispana sweep (research/bne_hispana/); not viewed",
+  "decode_ids": [],
+  "year": 1523,
+  "date": "Oct 1512 - Sep 1527",
+  "title": "Antonio de Leyva: twelve letters, two partly in cipher (cipher on a separate sheet or interlinear)",
+  "correspondents": "Antonio de Leyva → Charles V, Miguel Pérez de Almazán, Lope Hurtado de Mendoza",
+  "place": "Pavia / Milan etc.",
+  "language": "Spanish",
+  "region": "Spain",
+  "period": "1497-1559",
+  "shelfmark": "Madrid, Biblioteca Nacional de España, Gayangos; BDH bdh0000186678",
+  "folio_note": "12 letters; two partly ciphered, 'con la cifra en documento aparte e interlineal'",
+  "cls": "A",
+  "status": "BNE catalogue: the cipher is on a separate sheet in one letter and interlinear in the other, so a decipherment sits with the letters. Not on DECODE. The open part is a key for other Leyva letters. Checked 28 Oct 2026: Verified 28 Oct: keys for Leyva exist (Kolosova Ko.12, Ko.17; Luo Lu.15), plus a decipherment with the letters per BNE, so a reading should be straightforward; check date of the two letters first.",
+  "why": "Leyva held Milan for Charles V through Pavia 1525; two ciphers with attached decipherments give a clean crib.",
+  "importance": 3,
+  "solvability": 5,
+  "difficulty": 2,
+  "verify": "View the two letters, date them, apply Ko.12/Ko.17/Lu.15 and the in-file decipherment.",
+  "links": [
+   {
+    "label": "BDH viewer",
+    "href": "http://bdh-rd.bne.es/viewer.vm?id=0000186678&page=1"
+   },
+   {
+    "label": "Europeana record",
+    "href": "https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000186678"
+   }
+  ],
+  "ark": "",
+  "scored": "sweep",
+  "access": "online",
+  "access_note": "online (backfilled 28 Oct 2026 from the entry: link BDH viewer (http://bdh-rd.bne.es/viewer.vm?id=0000186678&page=1))",
+  "vetting_note": "2 Nov: BNE card MSS/20212/43/1-12 paged in Chrome by viewer thumbnails: letter 2 (1523, Mariñán), 3 (Villiers de l'Isle-Adam, Latin), 4 and 9 (sheet 4, 1527) are clear text with no cipher on the sheets seen; thumbnails of letters 5-7 would not render and letters 8, 10-12 were not examined, so the two partly ciphered letters (cipher 'en documento aparte e interlineal') are still not located. Kolosova Ko.12/Ko.17 and Luo Lu.15 not applied. Left a lead."
+ },
+ {
+  "id": 1270,
+  "counted": true,
+  "seen": "catalogue",
+  "source": "BNE/Hispana sweep",
+  "prior_art": "partly read: Tomokiyo 2025 (AlonsoSanchez.htm) and Kolosova Ko.2 cover Juan Manuel's 1521-22 letters; 1497 letter is repo catalogue 1014 (read)",
+  "score_note": "Scored from the BNE catalogue description (via the Europeana record API) during the Oct 2026 BNE/Hispana sweep (research/bne_hispana/); not viewed",
+  "decode_ids": [],
+  "year": 1496,
+  "date": "Nov 1496 - Nov 1522",
+  "title": "Juan Manuel (Genoa, Rome) → Catholic Monarchs and Charles V: seven letters partly in cipher",
+  "correspondents": "Juan Manuel, imperial ambassador → Ferdinand and Isabella, Charles V",
+  "place": "Genoa / Rome",
+  "language": "Spanish",
+  "region": "Spain",
+  "period": "1497-1559",
+  "shelfmark": "Madrid, Biblioteca Nacional de España, Gayangos; BDH bdh0000186690",
+  "folio_note": "seven letters 1496-1522, 'parcialmente cifradas'",
+  "cls": "B",
+  "status": "BNE catalogue: partly ciphered. Tomokiyo (2025, cryptiana AlonsoSanchez.htm) covers Juan Manuel's 1521-22 correspondence, so the 1520-22 letters may be known; the 1496-1519 ones are earlier and possibly open. Not on DECODE. Checked 28 Oct 2026: Overlaps: 1521-22 letters read by Tomokiyo/Kolosova; 1497 letter duplicates catalogue 1014. Only other-dated letters in the seven may be open.",
+  "why": "Possibly late-15th-century Spanish diplomatic cipher (1496-1500) if early letters carry cipher; would bear on the repo's oldest-cipher search.",
+  "importance": 4,
+  "solvability": 3,
+  "difficulty": 3,
+  "verify": "Date the seven letters on BDH and keep only those outside 1497 and 1521-22.",
+  "links": [
+   {
+    "label": "BDH viewer",
+    "href": "http://bdh-rd.bne.es/viewer.vm?id=0000186690&page=1"
+   },
+   {
+    "label": "Europeana record",
+    "href": "https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000186690"
+   },
+   {
+    "label": "Tomokiyo, Sánchez and Juan Manuel",
+    "href": "https://cryptiana.web.fc2.com/code/AlonsoSanchez.htm"
+   }
+  ],
+  "ark": "",
+  "scored": "sweep",
+  "access": "online",
+  "access_note": "online (backfilled 28 Oct 2026 from the entry: link BDH viewer (http://bdh-rd.bne.es/viewer.vm?id=0000186690&page=1))",
+  "vetting_note": "2 Nov: BNE card oid=0000186690 (7 letters) not paged; overlaps Tomokiyo AlonsoSanchez.htm (1521-22) and catalogue 1014; unread letters not identified. Left a lead."
+ },
+ {
+  "id": 1271,
+  "counted": true,
+  "seen": "catalogue",
+  "source": "BNE/Hispana sweep",
+  "prior_art": "open (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed; Mirabel not mentioned)",
+  "score_note": "Scored from the BNE catalogue description (via the Europeana record API) during the Oct 2026 BNE/Hispana sweep (research/bne_hispana/); not viewed",
+  "decode_ids": [],
+  "year": 1622,
+  "date": "1621-1624",
+  "title": "Marquis of Mirabel (Paris) → Count of Gondomar: letters, some in cipher",
+  "correspondents": "Antonio de Zúñiga y Dávila, Marquis of Mirabel → Diego Sarmiento de Acuña, Count of Gondomar",
+  "place": "Paris / Madrid",
+  "language": "Spanish",
+  "region": "Spain",
+  "period": "1611-1650",
+  "shelfmark": "Madrid, Biblioteca Nacional de España, Mss/18619 (Gayangos); BDH bdh0000141369",
+  "folio_note": "volume of originals and copies; 'algunas cifradas'",
+  "cls": "C",
+  "status": "BNE catalogue: some letters ciphered, on the Valtelline and European politics. No decipherment noted. Not on DECODE. Checked 28 Oct 2026: Verified 28 Oct: no reading found.",
+  "why": "Spanish ambassador in Paris on the Valtelline crisis, writing to Gondomar; a 1620s Spanish diplomatic cipher.",
+  "importance": 3,
+  "solvability": 3,
+  "difficulty": 3,
+  "verify": "View ciphered letters; find Gondomar-era Spanish ambassador cipher.",
+  "links": [
+   {
+    "label": "BDH viewer",
+    "href": "http://bdh-rd.bne.es/viewer.vm?id=0000141369&page=1"
+   },
+   {
+    "label": "Europeana record",
+    "href": "https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000141369"
+   }
+  ],
+  "ark": "",
+  "scored": "sweep",
+  "access": "online",
+  "access_note": "online (backfilled 28 Oct 2026 from the entry: link BDH viewer (http://bdh-rd.bne.es/viewer.vm?id=0000141369&page=1))",
+  "vetting_note": "2 Nov: BNE Mss/18619 card not paged; shelfmark possibly wrong (Herrero Garcia 2023 cites Mss. 18428 for Mirabel 1622). Left a lead."
+ },
+ {
+  "id": 1272,
+  "counted": true,
+  "seen": "catalogue",
+  "source": "BNE/Hispana sweep",
+  "prior_art": "open (checked 28 Oct 2026: repo known.py, Europeana BNE record, web search for cryptiana; no decipherment found; BDH viewer not reachable by script, not viewed)",
+  "score_note": "Scored from the BNE catalogue description (via the Europeana record API) during the Oct 2026 BNE/Hispana sweep (research/bne_hispana/); not viewed",
+  "decode_ids": [],
+  "year": 1688,
+  "date": "1679-1697",
+  "title": "Letters to Diego José Dormer (vol. VI), some by 'El Milanés' under pseudonyms, some in cipher",
+  "correspondents": "Juan Pantoja, Miguel de Rival, Count of Guaras, 'El Milanés' and others → Diego José Dormer",
+  "place": "Spain",
+  "language": "Spanish",
+  "region": "Spain",
+  "period": "1651-1700",
+  "shelfmark": "Madrid, Biblioteca Nacional de España, Cartas políticas y particulares dirigidas a Diego José Dormer, Tomo VI; BDH bdh0000064262",
+  "folio_note": "'algunas cifradas'",
+  "cls": "C",
+  "status": "BNE catalogue: some letters ciphered. No decipherment noted. Not on DECODE.",
+  "why": "An Aragonese chronicler's correspondents under Charles II; ciphers in private correspondence.",
+  "importance": 2,
+  "solvability": 2,
+  "difficulty": 3,
+  "verify": "View volume VI; check the other Dormer volumes on BDH for more cipher.",
+  "links": [
+   {
+    "label": "BDH viewer",
+    "href": "http://bdh-rd.bne.es/viewer.vm?id=0000064262&page=1"
+   },
+   {
+    "label": "Europeana record",
+    "href": "https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000064262"
+   }
+  ],
+  "ark": "",
+  "scored": "sweep",
+  "access": "online",
+  "access_note": "online (backfilled 28 Oct 2026 from the entry: link BDH viewer (http://bdh-rd.bne.es/viewer.vm?id=0000064262&page=1))",
+  "vetting_note": "2 Nov: BNE Dormer tomo VI is a multi-letter volume with unknown cipher locations; not paged. Left a lead."
+ },
+ {
+  "id": 1273,
+  "counted": true,
+  "seen": "catalogue",
+  "source": "BNE/Hispana sweep",
+  "prior_art": "open (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed; Olivares to Alba not mentioned)",
+  "score_note": "Scored from the BNE catalogue description (via the Europeana record API) during the Oct 2026 BNE/Hispana sweep (research/bne_hispana/); not viewed",
+  "decode_ids": [],
+  "year": 1630,
+  "date": "undated, 17th century",
+  "title": "Count-Duke of Olivares to the Duke of Alba: one letter in cipher (Papeles varios, Osuna)",
+  "correspondents": "Olivares → Duke of Alba",
+  "place": "Spain",
+  "language": "Spanish",
+  "region": "Spain",
+  "period": "1611-1650",
+  "shelfmark": "Madrid, Biblioteca Nacional de España, 'Papeles varios' (Osuna e Infantado), ff. 13-15; BDH bdh0000042230",
+  "folio_note": "ff. 13-15, 'es cifrada'",
+  "cls": "C",
+  "status": "BNE catalogue: one letter of the Count-Duke to the Duke of Alba is ciphered. No decipherment noted. Not on DECODE. Date within 1601-1700 only. Checked 28 Oct 2026: Verified 28 Oct: no reading found.",
+  "why": "A short cipher letter from Olivares, whose own ciphers are little known.",
+  "importance": 3,
+  "solvability": 2,
+  "difficulty": 4,
+  "verify": "View ff.13-15 on BDH.",
+  "links": [
+   {
+    "label": "BDH viewer",
+    "href": "http://bdh-rd.bne.es/viewer.vm?id=0000042230&page=1"
+   },
+   {
+    "label": "Europeana record",
+    "href": "https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000042230"
+   }
+  ],
+  "ark": "",
+  "scored": "sweep",
+  "access": "online",
+  "access_note": "online (backfilled 28 Oct 2026 from the entry: link BDH viewer (http://bdh-rd.bne.es/viewer.vm?id=0000042230&page=1))",
+  "vetting_note": "2 Nov: BNE Papeles varios (64 images): the 1630 Olivares cipher letter was not reached; ff. 13-15 do not map to image numbers. Left a lead."
+ },
+ {
+  "id": 1277,
+  "counted": true,
+  "seen": "catalogue",
+  "source": "BNE/Hispana sweep",
+  "prior_art": "open (checked 28 Oct 2026: repo known.py, Europeana BNE record, web search for cryptiana; no decipherment found; BDH viewer not reachable by script, not viewed)",
+  "score_note": "Scored from the BNE catalogue description (via the Europeana record API) during the Oct 2026 BNE/Hispana sweep (research/bne_hispana/); not viewed",
+  "decode_ids": [],
+  "year": 1687,
+  "date": "1687",
+  "title": "Ciphered alchemical recipe book on metallic transmutation (Receptari xifrat)",
+  "correspondents": "unknown",
+  "place": "Catalonia",
+  "language": "Catalan",
+  "region": "Other",
+  "period": "1651-1700",
+  "shelfmark": "Barcelona, Universitat de Barcelona, manuscrits (BIPADI) 89503",
+  "folio_note": "whole manuscript",
+  "cls": "C",
+  "status": "Library title: '[Receptari xifrat sobre la transmutació metàl·lica]'; no key or decipherment noted.",
+  "why": "A ciphered alchemical recipe book; a cheap test for a substitution on a technical Catalan/Latin text.",
+  "importance": 2,
+  "solvability": 3,
+  "difficulty": 3,
+  "verify": "View the digitised manuscript at the UB repository; check for a transcription.",
+  "links": [
+   {
+    "label": "UB manuscrits 89503",
+    "href": "http://bipadi.ub.edu/cdm/ref/collection/manuscrits/id/89503"
+   }
+  ],
+  "ark": "",
+  "scored": "sweep",
+  "access": "online",
+  "access_note": "online (backfilled 28 Oct 2026 from the entry: ...utació metàl·lica]'; no key or decipherment noted. View the digitised manuscript at the UB repository; check for a transcription....)",
+  "vetting_note": "2 Nov: UB BiPaDi Ms 40 seen earlier (letter-for-letter substitution of Catalan recipes) but whether Luanco (La Alquimia en Espana I pp. 25-47) or Rosell printed a key/transcription is unchecked; not a clean open. Left a lead."
+ }
+]

@@ -1,0 +1,152 @@
+{
+ "615": {
+  "unvetted": "Unopened editions that would cover the unread part: Antonio de la Torre, Documentos sobre relaciones internacionales de los Reyes Catolicos vol. V (1495-1497, CSIC 1965), and Suarez Fernandez, Politica internacional de Isabel la Catolica vol. IV (1972). Neither is on archive.org (advancedsearch 0 hits); Google Books gives the set no preview or snippet only, and searches there for the despatch returned nothing either way. Either may print the clear draft of 28 Dec 1495 in full, so the prior-art question is unanswered. Opened: CSP Spain I pp. 72-79 (BHO in Chrome): no. 113 is an English abstract of the draft with quotations, no. 114 notices the cipher copy ('Written in two different keys of cipher, one of which is extant') with no decipherment. Tomokiyo, spanish.htm: lists PTR 52 doc. 124 as 'another undated letter' in a list of letters probably using the code, with no reading. Not checked: Rymer, Rodriguez Villa, Mattingly (no text opened; none is known to print this despatch). New for whoever resumes: CSP no. 117 (pp. 75-77), the merchant-cover letter of the same day from 'MCCCIX (Guide)' to Alonzo de Compludo, also names Diego de Soria, Juan de Santa Gadea and the Company, and Bergenroth prints its groups deciphered. Doc. 124 uses the same cover words, so compare doc. 124 with no. 117 as well as no. 113: the identification with no. 113 alone is not settled. If de la Torre V and Suarez IV show no print, the block can be open with key_held AGS PTR leg. 52 doc. 33."
+ },
+ "650": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch k01",
+  "seen": {
+   "kind": "scan",
+   "where": "NARA M31 roll 14 (naId 188606645), images fetched this pass from catalog.archives.gov/medialz/dc-metro/rg-059/603720/M31/M31-014/M31-014-NNNN.jpg: about 60 coded frames viewed as contact sheets at about 470-640 px, frames 0052, 0077 and 0206 at about 1000 px. The whole-reel OCR (proxy/extractedText/188606645) gave the list of coded frames.",
+   "extent": "Narrowed part: No. 18, Seville 20 Sept 1814 (frames 0112, 0117, 0129 are three copies, with continuation on 0139), about 240 OCR-counted numeric groups per copy; No. 28, Madrid 12 May 1815 (frames 0209-0210, one short coded passage in two copies); the coded despatch at the top of frames 0220-0221, heading groups 368 1274 873 687, about 240 groups. No transcription of any of these exists here.",
+   "cipher": "Dotted numeric groups to about 1600 with marks under some, the State Department code, running in lines inside plain English; on these frames I saw no words written above the numerals on any copy at contact-sheet resolution, whereas frames 0077-0079, 0206-0207 and 0293 carry a clerk's words above the groups."
+  },
+  "prior_art": {
+   "decode": "known.py on the harvested DECODE dump for Anthony Morris and M31: no DECODE record, only targets/morris1813, the NARA triage rows and leads mentioning catalogue 650.",
+   "tomokiyo": "No cryptiana page on Morris found: WebSearch naming Morris, Cadiz, Monroe, cipher and code gave no Tomokiyo hit, and known.py shows no Tomokiyo row.",
+   "lasry": "No Lasry paper or GL.htm row: the same searches and known.py give nothing on Morris; targets/jqa covers the code for other correspondents.",
+   "edition": "Papers of James Monroe vol. 7 (2020, April 1814-March 1817), Google Books in-book search: 'From Anthony Morris' hits 18 May 1814 (p. 51, a plain letter), 18 Nov 1814 and 7 Nov 1816 only, and 'Morris cipher' has no results, so neither open letter is printed there, snippet search only. Vol. 6 ends before these dates. Manning vol. 3 was searched by the target. Papers of James Madison 9, Madison to Monroe 26 June 1815 n. 3 lists the 12 May letter as 'partially in code' without its text.",
+   "literature": "Woolfley 2013 quotes coded 4 and 11 April 1814 (target notes, p. 78) and gives code values, but the book was read in part only and Google Books returned no in-book text this pass, so the 20 Sept 1814 and 12 May 1815 letters are not ruled out there. Curry 1888 reports the 4 April advice in substance (beling reading). WebSearch found nothing on these two letters."
+  },
+  "key_check": "Held key reads the code on other frames: targets/jqa/code_table.tsv under the block reversal, with the M97 roll 13 sheet in targets/morris1813/beling/key. Not applied to frames 0112, 0117, 0129, 0209 or 0220 in this pass.",
+  "key_held": "State Department code: targets/jqa/code_table.tsv with block_map.tsv, and the WE028 sheet transcribed in targets/morris1813/beling/key/codebook_M97_13_transcription.csv. Tested on frame 0039 and five other letters; not on the narrowed part.",
+  "duplicates": "known.py 'Anthony Morris', 'M31': targets/morris1813 is the same series; no other catalogue entry. Leads citing catalogue 650 concern Adams's coded despatches in the same code, different documents.",
+  "searches": [
+   {
+    "query": "Papers of James Monroe volume 6 7 Anthony Morris Cadiz 1814 cipher despatch Florida Cevallos deciphered Monroe",
+    "result": "Vol. 7 listing, Madison Papers notes and Woolfley; no text of a coded Morris despatch and no statement that one was deciphered."
+   },
+   {
+    "query": "Anthony Morris confidential agent Spain 1813-1815 despatches cipher State Department Woolfley \"A Quaker Goes to Spain\" code deciphered",
+    "result": "Publisher pages, reviews and Founders letters on the mission; nothing on the code or on the September 1814 or May 1815 despatches."
+   },
+   {
+    "query": "Morris Monroe 1814 Cadiz \"partly in code\" OR \"in cipher\" OR \"in code\" despatches to Spain NARA Manning Diplomatic Correspondence Independence Latin-American Nations",
+    "result": "Founders note on 24 Mar and 12 May 1815 letters, 'partially in code', opened in Chrome: no decoded text given."
+   },
+   {
+    "query": "Google Books in Papers of James Monroe vol. 7: \"From Anthony Morris\"; Morris cipher; Morris Seville September 1814 Madrid Sir",
+    "result": "Letters of 18 May 1814, 18 Nov 1814, 7 Nov 1816 only; no result for cipher or for the September 1814 letter."
+   },
+   {
+    "query": "Google Books: \"Anthony Morris\" Monroe \"12 May 1815\"",
+    "result": "Calendar of the Correspondence of James Monroe 1891 and microcopy lists; no print of this letter found."
+   }
+  ],
+  "verdict": "open",
+  "lead_updates": {
+   "title": "Anthony Morris → James Monroe, coded despatches with no decipherment on record: No. 18 (Seville, 20 Sept 1814), No. 28 (Madrid, 12 May 1815) and the despatch on M31 roll 14 frames 0220-0221",
+   "status": "Narrowed 3 Nov 2026: most of the coded despatches have a decipherment or clear copy on record, and these three letters do not; held code not yet applied to them.",
+   "access": "online",
+   "folio_note": "Open part: frames 0112, 0117, 0129, 0139 (No. 18); 0209-0210 (No. 28); 0220-0221. Coded frames are far more than the old list: OCR puts code on about 60 frames from 0027 to 0316. Not open: clerk's words above the groups on 0028, 0033, 0066, 0069-0070, 0077-0079, 0169-0170, 0174, 0201, 0206-0207, 0293, 0316 (contact-sheet check for all but 0077 and 0206); proposal of 4 Jan 1814 with clear copy on 0059-0064 and M37 roll 2 frames 395-396; 4 and 11 April 1814 quoted by Woolfley. Read here without outside decipherment: 11 May 1814 (0086-0087) and 27 Jan 1815 (0075), targets/morris1813/beling. Correction: beling's note that 24 Mar 1815 has no interlinear applies to the copies it checked; frames 0206-0207 are a further copy, headed No. 27, with the clerk's words."
+  }
+ },
+ "681": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch k01",
+  "seen": {
+   "kind": "scan",
+   "where": "NARA RG 109 ch. II vol. 196, frames 0027 and 0065 viewed this pass (catalog.archives.gov/medialive/22/4850/45485022/content/dc-metro/rg-109/596501-confederate-record-books/chapter-02-volume-196/chapter-2-volume-196-0065.jpg); NARA OCR of vols. 196, 11, 10 read for the other frames; targets/taylor1865/NOTES.md records viewing vol. 11 fr. 0044-0046.",
+   "extent": "Narrowed part, vol. 196: fr. 0030 (Feb 1865 to Maury), 0032 (22-23 Feb), 0053 (8 Mar to D. W. Adams), 0056 (9 Mar to Adams and to Levy), 0064 (13 Mar to Secretary of War), 0065 (13 Mar to Maury, about 60 cipher letters), 0071 (18 Mar to Maury). Vol. 11: fr. 0044 first passage, 0045, 0046 (10-11 Apr). Vol. 10: fr. 0056 (18 Jan, provisional only).",
+   "cipher": "Capital cipher words joined by dashes inside the clerk's clear copies, as on fr. 0065: 'he will in short time have - TSMHE - THI - NYE'. Nothing is written over them on the frames viewed. Vigenere over cipher letters, keys COME RETRIBUTION and COMPLETE VICTORY."
+  },
+  "prior_art": {
+   "decode": "known.py on the harvested DECODE dump for Richard Taylor, RG 109, Maury and Come Retribution: no DECODE record, only targets/taylor1865, triage rows and CATALOGUE.md notes.",
+   "tomokiyo": "No cryptiana page on these letter-books: WebSearch on the telegrams and key gave none, and known.py shows no Tomokiyo row.",
+   "lasry": "No Lasry reading of these volumes: searches and known.py give nothing; the Confederate keys themselves are public.",
+   "edition": "OR I/49 pts 1-2 and I/45 pt 2 full text searched on the clear words of each frame and every Meridian dateline of those days: none of the narrowed telegrams found. OR prints others of the same days without them. OR gives fr. 0010, 0022, 0036, 0039, 0041, 0044 second, 0049, 0054, 0076-0077, and now 0027 (I/49/1 about p. 1035, quoted by Beauregard to Lee, 7 Mar).",
+   "literature": "WebSearch on Taylor to Maury March 1865 and 'Telegraph in cipher' returned civilwar.com OR pages and csa-railroads transcripts, none with these passages. Earlier target searches of Roman, Taylor's memoir and Rowland found no January counterpart."
+  },
+  "key_check": "COME RETRIBUTION at offset 0 fits the read telegrams of March-April; on fr. 0065 my own reading of the first four cipher letters TSMH gives READ, and the rest was not worked. COMPLETE VICTORY fits vol. 10 and pre-March orders. No full decrypt of the narrowed frames here.",
+  "key_held": "COME RETRIBUTION, COMPLETE VICTORY and THE NAVY OUR PRIDE (targets/taylor1865/key.md, continuation_key.md), tested on the telegrams already read; narrowed frames not fully tested.",
+  "duplicates": "known.py 'Richard Taylor', 'RG 109', 'Maury', 'Come Retribution': targets/taylor1865 only. The Rosenbach Maury-Taylor telegrams are different, Nov 1864-Feb 1865 plain transcripts.",
+  "searches": [
+   {
+    "query": "Taylor to Maury Meridian March 1865 telegram Official Records \"Telegraph in cipher\" cavalry each side of bay Mobile Confederate",
+    "result": "civilwar.com OR I/49 pages and csa-railroads transcripts; other Taylor telegrams of March, not the cipher passages named here."
+   },
+   {
+    "query": "OR I/49/1, I/49/2, I/45/2 archive.org djvu text: clear phrases of each frame, e.g. 'in short time have', 'your two ciphers', 'latest information indicates that enemy', 'all public stores and property', 'i know no reason why'",
+    "result": "No hit for any of them; only 'present information indicates enemy' hit, which prints fr. 0027 and removes it from the open part."
+   },
+   {
+    "query": "OR I/49/1-2 regex on Meridian datelines of 17, 21, 22 Feb, 8, 9, 13, 18 Mar, 10, 11 Apr 1865",
+    "result": "Lists the printed telegrams of those days; to Maury on 13 Mar none, to Adams 8 Mar others without the cipher passage."
+   },
+   {
+    "query": "NARA extractedText for naIds 45485022, 12127054, 16878212: 6-word clear-text matches against OR per frame",
+    "result": "Matches show which neighbouring telegrams OR printed; none falls on the narrowed cipher telegrams' own clear words."
+   }
+  ],
+  "verdict": "open",
+  "lead_updates": {
+   "title": "Richard Taylor's telegram letter-books 1865 (NARA RG 109 ch. II vols. 196, 11, 10): the cipher telegrams still unread and not in the Official Records",
+   "status": "Narrowed 3 Nov 2026: read here or printed in OR are listed in folio_note; open are about ten telegrams of Feb-Apr 1865; held keys not yet run on them.",
+   "access": "online",
+   "folio_note": "Open: vol. 196 fr. 0030, 0032, 0053, 0056, 0064, 0065, 0071; vol. 11 fr. 0044 first passage, 0045, 0046; vol. 10 fr. 0056 provisional. Other runs in the OCR list were not image-checked and some are noise. Printed in OR: vol. 196 fr. 0010, 0022, 0027; vol. 11 fr. 0036, 0039, 0041, 0044 second, 0076-0077; vol. 10 fr. 0049, 0054. Read here, not found in OR: vol. 196 fr. 0018, 0031, 0052, 0055, 0061; vol. 11 fr. 0022. Correction: targets/taylor1865/NOTES.md says fr. 0027 has no cipher words; it holds Taylor to Brent, 17 Feb 1865, with long cipher runs."
+  }
+ },
+ "813": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch k01",
+  "seen": {
+   "kind": "not online",
+   "where": "Yale finding aid, Chlingensperg family diaries, GEN MSS 1495, https://ead-pdfs.library.yale.edu/11037.pdf fetched by curl and read in full (11 pp., last exported 8 Jan 2025). No digital object is listed; reproductions by request to beinecke.images@yale.edu.",
+   "extent": "One Schreib-Kalender volume, Series II, box 3, 'Encrypted diary', 1825; number of cipher entries not stated. Series II is 2 boxes plus folders for 1801-1830.",
+   "cipher": "Finding aid, 1825: 'This volume is encrypted with a cipher created by Joseph von Chlingensperg auf Berg.' Its note names no decoded passages or laid-in notes, unlike 1805-1810, and the full translation is of 1811 only."
+  },
+  "prior_art": {
+   "decode": "known.py on the harvested DECODE dump for Chlingensperg and GEN MSS 1495: no DECODE record, only the Beinecke sweep rows, removed entries 812-813 and catalogue 1894.",
+   "tomokiyo": "No cryptiana page on the diarist: WebSearch naming Chlingensperg with Beinecke, cipher and encrypted diary returned other diaries only; known.py has no Tomokiyo row.",
+   "lasry": "No Lasry paper or GL.htm row for Chlingensperg in known.py, and the WebSearch on the 'cracked' cipher found no cryptologic paper naming him.",
+   "edition": "No edition found: German WebSearch on Tagebuch and Geheimschrift, and Google Books on Chlingensperg with Tagebuch, diary, cipher, gave only unrelated jurists and booksellers' catalogues. The only full decipherment on record is the 1811 volume, a 33-page translation in box 2 (the aid calls it both manuscript and printed), not 1825.",
+   "literature": "Finding aid: 'The cipher has since been cracked by multiple sources', naming no publication; it lists notes for 1805-1810 only. WebSearch for an article, blog or Jonathan Hill description found none. So the system is broken but no decoded 1825 text is on record."
+  },
+  "key_check": "No key held in this repo and nothing tested, since the volume is not online. The system is broken at Yale, see key_held; reading 1825 needs a scan and those papers.",
+  "key_held": "Not held here. At Yale: two sheets on decoding in the 1801 volume, notes on cipher translation in the 1805 volume, and the 1811 translation with index and notes in box 2. Untested on 1825.",
+  "duplicates": "known.py 'Chlingensperg', 'GEN MSS 1495': catalogue 1894 is the 1830 volume and 812 the 1805 volume, separate items; no target. Box 3 also holds Karoline's plain household diary of 1825, not this item.",
+  "searches": [
+   {
+    "query": "Chlingensperg auf Berg diary 1825 cipher decoded Beinecke Yale Jonathan Hill bookseller encrypted Tagebuch Joseph von Chlingensperg",
+    "result": "Voynich pages and other encrypted diaries; nothing on this diary or a decoded 1825 text."
+   },
+   {
+    "query": "\"Chlingensperg\" Tagebuch Geheimschrift 1825 Hofrat München Tagebücher entschlüsselt Dissertation Sexualität Joseph von Chlingensperg auf Berg",
+    "result": "Unrelated German cipher material; no edition, thesis or article on these diaries."
+   },
+   {
+    "query": "Chlingensperg family diaries Yale Beinecke GEN MSS 1495 cipher \"cracked\" article blog cipher diary sexual Bavarian Encrypted Schreib-Kalender research",
+    "result": "No page names the family or call number; Schmeh's list of encrypted diaries as returned does not name it."
+   },
+   {
+    "query": "Google Books: \"Chlingensperg\" Tagebuch OR Tagebücher OR diary Geheimschrift OR cipher OR verschlüsselt",
+    "result": "Only a U-boat book's naval Chlingensperg and 1884 bookseller entries for an earlier jurist; nothing on the diary."
+   }
+  ],
+  "verdict": "open",
+  "lead_updates": {
+   "title": "Joseph von Chlingensperg auf Berg, encrypted diary, 1825 volume (cipher broken for other years, no decoded 1825 text on record)",
+   "status": "Finding aid: volume encrypted, cipher 'cracked by multiple sources', decoded text only for 1805-1811 material; nothing for 1825 held or published as far as searched.",
+   "access": "archive"
+  }
+ },
+ "864": {
+  "verdict": "partly_read",
+  "evidence": "Warburton III pp. 125-128 prints Digby to Legge, undated, with Legge's reply placing it at Hereford, 30 June 1645: continuous plain English, no gap and no cipher mark, though Warburton marks cipher elsewhere (p. 153). Quote: 'Prince Rupert is neither gainable nor tenable by me'. It covers the explanations of defeat, but not the 'Proposals on which a meeting between King and Parliament might be arranged' in the Staffordshire description. BL Add MS 18982 ff. 66r-67v is a copy, 'Partially in cipher (deciphered)' (BL catalogue; leaf not seen, IIIF 403). Legge mentions a duplicate.",
+  "closed": "The letter is in print and a deciphered copy is at BL, so the 'coded part' is very likely read, but which passage is coded in /56 cannot be told without the leaf, and the proposals are not in Warburton."
+ },
+ "865": {
+  "verdict": "open",
+  "evidence": "Warburton III has no letter of 9 Aug 1645. Rupert's letters stop at 'Bristol, July 29, 1645' (p. 155), then Digby's of Aug. 27 and 29 and Bristol siege papers; a text search for 9 August finds only Paris 1653. BL Add MS 18982 lists nothing of that date. HMC Dartmouth I and III have no 1645 text. So no decipherment found; the letter is still not seen."
+ }
+}

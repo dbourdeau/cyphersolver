@@ -1,0 +1,911 @@
+{
+ "2128": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch r02 (audit of b06)",
+  "seen": {
+   "kind": "not online",
+   "where": "Newberry record https://collections.newberry.org/archive/-2KXJ8ZS500QQT.html (Ayer MS 1417; offers an image view and IIIF manifest, not opened)",
+   "extent": "entries 1 Jan-1 Nov 1884",
+   "cipher": "Newberry: 'Personal remarks and amorous references are written in code'; the record cites Retana, Vida y escritos del Dr. Jose Rizal (1907) pp. 72-91 as the printed diary."
+  },
+  "prior_art": {
+   "decode": "known.py on Rizal and Agenda 1884: no hits in the DECODE dump or repo.",
+   "tomokiyo": "No Tomokiyo page on Rizal's diary found by web search.",
+   "lasry": "No Lasry item on Rizal found by web search.",
+   "edition": "Opened Retana, Vida y escritos del Dr. Jose Rizal (1907), archive.org bwb_S0-BPM-573 and vidayescritosde00retagoog full text. The diary is printed from p. 72 with the code phrases left in cipher; note 63 (pp. 74-75) prints Unamuno's letter of 30 Jan 1906 giving the vowel-swap key and the decipherment of the first phrase ('Pedro va buscando voto para que le hagan presidente. Lete sigue aun enamorado de Consuelo...'), and says the other phrases follow once the key is known.",
+   "literature": "Philippine Diary Project and Rizal biographies discuss the diary; no cipher-specific study found."
+  },
+  "key_check": "No key held here; Retana's printed decipherment stands in for one and was not opened.",
+  "duplicates": "known.py on Rizal and Agenda 1884: no hits; no catalogue entry.",
+  "verdict": "partly_read",
+  "closed": "Printed prior art confirmed at source: Retana 1907 note 63 (pp. 74-75) prints Unamuno's key and one deciphered phrase of this diary; the other phrases stay in cipher in print, hence partly_read.",
+  "searches": [
+   {
+    "query": "Retana Vida y escritos del Dr. Jose Rizal 1907, full text bwb_S0-BPM-573, 'vamos a lo de las cifras'",
+    "result": "Note 63 pp. 74-75: Unamuno's key (a e i o swapped with e a o i; u b d h j p q y unchanged) and a decipherment of the first phrase."
+   }
+  ]
+ },
+ "1775": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch r02 (audit of b28)",
+  "seen": {
+   "kind": "not online",
+   "where": "TNA Discovery record C17213748 fetched through the Discovery API (SP 35/31/23, ff. 33-34, digitised=false)",
+   "extent": "extract on ff. 33-34 (two folios)",
+   "cipher": "Archive description quoted: 'Extract of a letter from Spain directed to Monsieur Dumville, Procureur and enclosed to Mr Wilmore at Mr Stokoe's bookseller at Charing Cross. In cypher'. Endorsement 'Extract of a letter relating to Captain Arnold's ship 16/27 April 1722'. Not digitised."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump, plus the removal file) on 'SP 35/31/23', 'Dumville' and the date found no DECODE record.",
+   "tomokiyo": "Web search for Dumville/Captain Arnold/Atterbury-plot ciphers found no cryptiana page for this extract.",
+   "lasry": "Web search for Lasry on 1722 Atterbury-era letters found none; the Lasry-team hits are other centuries.",
+   "edition": "Opened Cobbett's Parliamentary History viii (archive.org pp809777_0008 djvu text), Commons committee report on the conspiracy, 1723, cols c. 102-105: 'a letter was intercepted here, coming from Spain, directed to Monsieur Dumville Procureur, and inclosed under cover to one Wilmore at Mr. Stokoe's, bookseller near Charing-cross', 'writ partly in cypher', dated 27 April 1722 N.S. (the TNA 16/27 April). The report quotes its deciphered substance at length, with the decipherers' explanations of names.",
+   "literature": "Web searches (Dumville Captain Arnold 1722; Atterbury plot Spain intercepted letters) returned Discovery neighbours and general histories; no study of this extract or its decipherment."
+  },
+  "searches": [
+   {
+    "query": "Dumville Captain Arnold ship 1722 letter from Spain cypher State Papers Domestic Stokoe Charing Cross",
+    "result": "Only Discovery records of a Captain William Arnold in 1723 (SP 35/41, 35/43); no Dumville or decipherment."
+   },
+   {
+    "query": "Jacobite intelligence 1722 Atterbury plot intercepted letters Spain Dumville cipher Willes decipherer Walpole Townshend Spanish letters Captain Arnold",
+    "result": "General Atterbury Plot background and Willes as decipherer; nothing on this extract."
+   },
+   {
+    "query": "Discovery API C17213748 SP 35/31/23 scopeContent cypher",
+    "result": "Record fetched directly: description as quoted, digitised false, no decipher noted."
+   },
+   {
+    "query": "Internet Archive full-text search: \"Dumville\" \"Captain Arnold\" 1722",
+    "result": "Hits Cobbett's Parliamentary History viii and State Trials: the 1723 Commons report on the conspiracy prints the deciphered content of the Dumville letter."
+   }
+  ],
+  "key_check": "SP 35/36 and /71 hold cipher keys of the period (per the lead); none was opened here or applied, as nothing of the ciphertext is online.",
+  "key_held": "None held here; the SP 35/36 and SP 35/71 keys are candidates, untested.",
+  "duplicates": "known.py on the shelfmark, 'Dumville' and 'Arnold' found no catalogue entry, lead or target for this extract.",
+  "verdict": "partly_read",
+  "literature": "The 1723 Commons report itself (also in State Trials, Bishop of Rochester's case, archive.org 10394025bsb hit) is the published treatment; not a modern study, but a contemporary printed decipherment of the content.",
+  "closed": "Commons committee report 1723, printed in Cobbett's Parliamentary History viii cols c. 102-105, quotes the deciphered content of this same letter (Dumville, Wilmore at Stokoe's, 27 Apr 1722 N.S.). Quoted passages, not the whole letter or the SP 35 ciphertext, hence partly_read."
+ },
+ "1728": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch r02 (audit of b12)",
+  "seen": {
+   "kind": "not online",
+   "where": "AIS record https://www.archivinformationssystem.at/detail.aspx?ID=4158277 (HHStA StAbt Spanien Varia 24-2-4), read by curl on 3 Nov 2026; the record carries no image link or digitised-copy flag",
+   "extent": "fol 8-65 (58 folios) of Einsichtsakten of the imperial embassy in Madrid, 1670; German, French, Latin; cipher share not stated",
+   "cipher": "AIS field Bemerkungen reads 'teilweise verschlüsselt' for this unit (embassy inspection files); no scan is online, so no decipherment could be looked for on the leaf. Access: Zugaenglichkeit 'Oeffentlich', no permission needed."
+  },
+  "prior_art": {
+   "decode": "known.py on 'Spanien Varia 24-2-4' and '4158277': only this lead's row and the sweep file; no DECODE record.",
+   "tomokiyo": "No Tomokiyo page found for the Poetting embassy files; web search shows none.",
+   "lasry": "Search for Poetting/Madrid 1670 with Lasry, HistoCrypt, deciphered: nothing on this unit.",
+   "edition": "Opened Pribram and Landwehr, Privatbriefe Kaiser Leopold I. an Poetting (FRA II 56-57, 1903; archive.org privatbriefekai01pribgoog, privatbriefekai00pribgoog full text). It prints Leopold's own letters (Grosse Korr. Fasz. 33) with ciphered passages resolved, and gives chancery rescripts as short regests in notes, citing Grosse Korr. and Span. Korr.; 'Einsicht' and 'Spanien Varia' do not occur in either OCR text, so this 1670 unit is not identified there. Poetting's diary (Nieto Nuno 1990) was not opened; it is a diary, not these files.",
+   "literature": "Olivan Santaliestra 2016 (Memoria y Civilizacion 19) on Poetting's secret agents: abstract does not mention a decipherment of these files; full text not read."
+  },
+  "searches": [
+   {
+    "query": "Einsichtsakten kaiserliche Botschaft Madrid 1670 Pötting Chiffre Schlüssel Entzifferung",
+    "result": "Poetting studies (Olivan 2016, diary edition, Pribram letters); nothing on a decipherment of 24-2-4."
+   },
+   {
+    "query": "Pötting 1670 Madrid Mariana Nithard Leopold dispatches deciphered cipher imperial embassy",
+    "result": "Regency context (Pillo 2019); no deciphered 1670 dispatches mentioned."
+   },
+   {
+    "query": "Pötting 1670 Madrid cartas cifradas descifradas embajada imperial Oliván Santaliestra cifra",
+    "result": "Olivan article only; no 1670 cipher or decipherment surfaced."
+   },
+   {
+    "query": "Pribram Privatbriefe vol. II full text: grep Einsicht, Varia, Kanzleireskript 1670",
+    "result": "No Einsichtsakten or Spanien Varia citation; 1670 chancery rescripts appear only as regests from other fascicles."
+   }
+  ],
+  "key_check": "No key for this unit is held in the repo or known on DECODE; known.py on the shelfmark, AIS id and names found none. Pribram's preface says the editors rebuilt three chancery ciphers of this embassy and deciphered chancery letters with them; no key table turned up in a text search of either volume, and those ciphers were not tested here.",
+  "duplicates": "known.py finds no other unit with this shelfmark; sibling Einsichtsakten units (1666, 1671) are separate leads with their own shelfmarks and dates, not the same documents.",
+  "verdict": "open"
+ },
+ "1729": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch r02 (audit of b12)",
+  "seen": {
+   "kind": "not online",
+   "where": "AIS record https://www.archivinformationssystem.at/detail.aspx?ID=4146247 (HHStA StAbt Spanien Varia 20-3-4), read by curl on 3 Nov 2026; the record carries no image link or digitised-copy flag",
+   "extent": "fol 26-103 (78 folios) of Einsichtsakten of the imperial embassy in Madrid, 1666; German, Latin, Spanish; cipher share not stated",
+   "cipher": "AIS field Bemerkungen reads 'teilweise verschlüsselt' for this unit (embassy inspection files); no scan is online, so no decipherment could be looked for on the leaf. Access: Zugaenglichkeit 'Oeffentlich', no permission needed."
+  },
+  "prior_art": {
+   "decode": "known.py on 'Spanien Varia 20-3-4' and '4146247': only this lead and the sweep file; nothing on DECODE.",
+   "tomokiyo": "No Tomokiyo page on 1666 Poetting dispatches turned up.",
+   "lasry": "Lasry/HistoCrypt terms with Poetting and 1666 returned nothing on this unit.",
+   "edition": "Opened Pribram and Landwehr, Privatbriefe Kaiser Leopold I. an Poetting (FRA II 56-57, 1903; archive.org privatbriefekai01pribgoog, privatbriefekai00pribgoog full text). Vol. I (1662-68) resolves Leopold's ciphered passages and summarises chancery letters in notes; its preface places Poetting's chancery reports for 1666 in Grosse Korr. Fasz. 37, a different series. 'Einsicht' and 'Spanien Varia' do not occur in the OCR, so 20-3-4 is not identified there, though overlap with those 1666 papers is not excluded.",
+   "literature": "Pribram 1891 on the Leopold marriage and Olivan 2016 on Poetting: no decipherment of these Einsichtsakten reported in the abstracts read."
+  },
+  "searches": [
+   {
+    "query": "Pötting Madrid 1666 cipher letters kaiserlicher Botschafter Chiffre Edition Diarium",
+    "result": "Diary edition, Pribram Privatbriefe, Olivan 2016; no 1666 cipher decipherment."
+   },
+   {
+    "query": "kaiserliche Botschaft Madrid 1666 Pötting Depeschen Chiffre Leopold Margarita Heirat Entzifferung",
+    "result": "Marriage and embassy background only; no cipher or decipherment found."
+   },
+   {
+    "query": "Einsichtsakten Botschaft Madrid 1666 Spanien Varia Wien teilweise verschlüsselt Pötting Heiratsvertrag Akten",
+    "result": "No mention of these Einsichtsakten outside the AIS; Olivan and diary edition again."
+   },
+   {
+    "query": "Pribram Privatbriefe vol. I preface and notes: grep chiffr, Einsicht, Varia, Fasz. 37, 1666",
+    "result": "Preface describes the deciphering of chancery letters from Grosse Korr.; no citation of Spanien Varia 20-3-4."
+   }
+  ],
+  "key_check": "No key for this unit is held in the repo or known on DECODE; known.py on the shelfmark, AIS id and names found none. Pribram's preface says the editors rebuilt three chancery ciphers of this embassy and deciphered chancery letters with them; no key table turned up in a text search of either volume, and those ciphers were not tested here.",
+  "duplicates": "known.py shows no other lead or target for 20-3-4; the 1670 and 1671 Einsichtsakten are different shelfmarks and years.",
+  "verdict": "open"
+ },
+ "1730": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch r02 (audit of b12)",
+  "seen": {
+   "kind": "not online",
+   "where": "AIS record https://www.archivinformationssystem.at/detail.aspx?ID=4135479 (HHStA StAbt Spanien Varia 18-1-12), read by curl on 3 Nov 2026; the record carries no image link or digitised-copy flag",
+   "extent": "fol 93-96 (4 folios), Den Haag, 9 Oct 1665, French; note of imperial councillor Friquet to the States General",
+   "cipher": "AIS field Bemerkungen reads 'teilweise verschlüsselt' for this unit (a diplomatic note); no scan is online, so no decipherment could be looked for on the leaf. Access: Zugaenglichkeit 'Oeffentlich', no permission needed."
+  },
+  "prior_art": {
+   "decode": "known.py on 'Spanien Varia 18-1-12', 'Friquet' and '4135479': only this lead and the sweep; no DECODE record.",
+   "tomokiyo": "No Tomokiyo page about Friquet or imperial notes at The Hague in 1665.",
+   "lasry": "Searched Lasry/HistoCrypt with Friquet, Hague 1665: no hit; the Dutch-archive HistoCrypt paper found concerns a 1684 French letter, a different item.",
+   "edition": "No edition of Friquet's notes found. Opened De Nederlandsche Republiek en Munster (1871, archive.org denederlandsche00kindgoog): Friquet recurs and States General resolutions of Sept-Dec 1665 are cited, but my searches of its OCR found this note of 9 Oct 1665 neither printed nor mentioned. Pribram's Privatbriefe has no Friquet hit. Not opened: Aitzema's Saken van Staet for 1665 (the IA 'Historie' copies are dated 1657) and the manuscript States General resolutions; nothing shows they print this note.",
+   "literature": "Literature on the First Muenster War (1665-66) mentions Friquet's role but nothing on a cipher in this note."
+  },
+  "searches": [
+   {
+    "query": "Friquet Den Haag 1665 note Generalstände kaiserlicher Rat chiffré",
+    "result": "Friquet's role as imperial envoy and printed 1660/1667 memorials; no cipher note or decipherment."
+   },
+   {
+    "query": "Friquet imperial envoy Hague 1665 Emperor Leopold States General cipher deciphered",
+    "result": "Only unrelated HistoCrypt Dutch-archive papers (1684 d'Avaux, Portuguese 1646-49); nothing on Friquet."
+   },
+   {
+    "query": "Friquet 1665 Münster Bernhard von Galen Kaiser Note Generalstaaten Haag Memorial Leopold Gesandter Friquet Chiffre",
+    "result": "Muenster War background only; no cipher information."
+   },
+   {
+    "query": "De Nederlandsche Republiek en Munster 1871 full text: grep Friquet with 1665 and 9 Oct",
+    "result": "78 Friquet hits; 1665 resolutions cited in a note; this note not found and no cipher mentioned for it."
+   }
+  ],
+  "key_check": "No key for this unit is held in the repo or known on DECODE; known.py on the shelfmark, AIS id and names found none. No key was tested, since none exists to test.",
+  "duplicates": "known.py hits for 'Friquet' are this lead and the sweep file only; no catalogue entry or target.",
+  "verdict": "open"
+ },
+ "1734": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch r02 (audit of b12)",
+  "seen": {
+   "kind": "not online",
+   "where": "AIS record https://www.archivinformationssystem.at/detail.aspx?ID=4146301 (HHStA StAbt Spanien Varia 20-4-4), read by curl on 3 Nov 2026; the record carries no image link or digitised-copy flag",
+   "extent": "fol 26 (a single folio), undated (volume about 1667), German; letter on regiment costs",
+   "cipher": "AIS field Bemerkungen reads 'teilweise verschlüsselt' for this unit (a letter); no scan is online, so no decipherment could be looked for on the leaf. Access: Zugaenglichkeit 'Oeffentlich', no permission needed."
+  },
+  "prior_art": {
+   "decode": "known.py on 'Spanien Varia 20-4-4' and '4146301': this lead and the sweep file only; no DECODE record.",
+   "tomokiyo": "No Tomokiyo page for this item.",
+   "lasry": "No Lasry or HistoCrypt result for 'Regimentskosten' 1667.",
+   "edition": "Opened Pribram and Landwehr, Privatbriefe Kaiser Leopold I. an Poetting (FRA II 56-57, 1903; archive.org privatbriefekai01pribgoog, privatbriefekai00pribgoog full text). Vol. I covers 1667 and neither 'Regimentskosten' nor Spanien Varia 20-4-4 occurs in the OCR; a single undated letter on regiment costs is not identified there. No other edition of it found.",
+   "literature": "War of Devolution literature gives context on imperial troops and money, nothing on a cipher in this letter."
+  },
+  "searches": [
+   {
+    "query": "Schreiben betreffend Regimentskosten 1667 Kaiser Spanien Regimenter Kosten Spanien Varia HHStA verschlüsselt",
+    "result": "Unrelated UK and Aberdeen regiment records; nothing on this item."
+   },
+   {
+    "query": "kaiserliche Regimenter Spanien 1667 Unterhalt Kosten Leopold Madrid Truppen Flandern Hilfe Devolutionskrieg Chiffre",
+    "result": "General War of Devolution background; no cipher or edition."
+   },
+   {
+    "query": "imperial regiments cost 1667 Leopold I Spain Flanders troops War of Devolution Pötting letter cipher deciphered",
+    "result": "Perwich and Spanish-decipherment-treatise hits; no Poetting or 1667 decipherment."
+   },
+   {
+    "query": "Pribram Privatbriefe vol. I full text: grep Regiment with Kosten, Varia, Einsicht",
+    "result": "No hit for this letter or shelfmark."
+   }
+  ],
+  "key_check": "No key for this unit is held in the repo or known on DECODE; known.py on the shelfmark, AIS id and names found none. It is a single folio, so the amount of cipher is small. Pribram's preface says the editors rebuilt three chancery ciphers of this embassy and deciphered chancery letters with them; no key table turned up in a text search of either volume, and those ciphers were not tested here.",
+  "duplicates": "known.py shows no other lead or target for 20-4-4; the neighbouring 20-3-4 is a different unit.",
+  "verdict": "open"
+ },
+ "1787": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch r02 (audit of b29)",
+  "seen": {
+   "kind": "not online",
+   "where": "TNA Discovery API record (discovery.nationalarchives.gov.uk/API/records/v1/details/C18893269), digitised=false; no image online",
+   "extent": "letter on f. 45 (SP 8/8/23): some lines of cypher",
+   "cipher": "Discovery description: \"Then follow some lines of cypher, and, in the Duke of Portland's hand: Henning will be able to decipher these lines\". The cipher lines are in the letter; the leaf is not online."
+  },
+  "prior_art": {
+   "decode": "known.py on 'SP 8/8/23' and 'Henning': this lead and sweep files only.",
+   "tomokiyo": "Web search with the Portland note wording found only the TNA record; no Cryptiana item.",
+   "lasry": "No Lasry item found for this letter.",
+   "edition": "Opened CSPD William and Mary 1690-91 (archive.org calendarofstatep02grea_1 text), just before p. 211: '--- to the King... Then follow some lines of cypher, and, in the Duke of Portland's hand: \"Henning will be able to decipher these lines.\" [Ibid., No. 23.]' The calendar prints no decipher; the writer is unnamed. Not opened: Japikse's Correspondentie van Willem III en Bentinck; nothing shows it has this SP 8 letter.",
+   "literature": "Web search for Henning as decipherer found nothing on this letter."
+  },
+  "key_check": "No key in repo; Portland note names Henning as decipherer but no key or decipher is on record; nothing tested.",
+  "duplicates": "known.py on 'SP 8/8/23': this lead only.",
+  "verdict": "open",
+  "searches": [
+   {
+    "query": "Portland \"Henning will be able to decipher\" 1690 William III cypher letter Henning decipherer",
+    "result": "Only the TNA record; Henning not identified."
+   },
+   {
+    "query": "grep CSPD William and Mary 1690-91 (calendarofstatep02grea_1 djvu text) for 'Henning will be able'",
+    "result": "Calendar entry repeats the cypher note; no decipher printed."
+   },
+   {
+    "query": "Japikse Correspondentie Willem III Bentinck 1690 Henning chiffre lines of cypher Portland decipher letter to the King",
+    "result": "Edition identified; no sign it prints this item or a decipher."
+   },
+   {
+    "query": "Internet Archive full-text search for the phrase 'Henning will be able to decipher'",
+    "result": "One hit only, the CSPD calendar; entry read, cypher lines not printed or deciphered."
+   }
+  ]
+ },
+ "1921": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch r02 (audit of b40)",
+  "seen": {
+   "kind": "not online",
+   "where": "NLS record 17151 read in full through the Wayback snapshot of 24 May 2024 (web.archive.org/web/20240524021332/https://manuscripts.nls.uk/repositories/2/archival_objects/17151); the live site gives Cloudflare 403; no digitisation shown",
+   "extent": "Adv.MS.80.3.48, 18 folios, 1688-1699 (extent from the NLS record); siblings 80.3.49-50 run to 1701. Leaves not seen.",
+   "cipher": "NLS record: 'accounts of legal expenses, mainly written in cipher., 1688-1699'; sub-series note 'Some entries are in cipher'; genre terms 'Ciphers. Codes.' No decipherment or key is mentioned."
+  },
+  "prior_art": {
+   "decode": "known.py on 'Dundas' searches the harvested DECODE dump and the repo: no Dundas of Dundas record, only the unrelated Harford Jones to Henry Dundas code (catalogue). Web search of DECODE for the account books found nothing.",
+   "tomokiyo": "Search for Tomokiyo cryptiana plus Dundas, NLS and Scottish 17th-century account-book cipher returned only the Mary Stuart letters project; no Cryptiana entry for the Dundas volumes.",
+   "lasry": "No Lasry or Schmeh item on the Dundas of Dundas accounts found (searches 'Dundas of Dundas' with Lasry, Schmeh, Cipher Challenge; Mary Stuart papers only).",
+   "edition": "Opened Macleod, Royal Letters and Other Historical Documents from the Family Papers of Dundas of Dundas (1897, archive.org royallettersand01maclgoog): the family's printed selection has no hit for cipher, cypher, account book or legal expenses. No other edition of the account books found.",
+   "literature": "Searches for a published decipherment of the Dundas cipher volumes found only Susanna Kearsley's novel A Desperate Fortune (fiction, unrelated) and the NLS subject index of ciphers; nothing in HistoCrypt or Cryptologia located."
+  },
+  "key_check": "No key is recorded in the NLS description of 80.3.48-50, and none is held in the repo or on DECODE (known.py 'Dundas' finds none). Sibling Adv.MS.80.7.7 (lead 1922) is a separate 6-folio cipher notes volume of the same fonds; whether it shares the system is untested.",
+  "duplicates": "known.py 'Dundas' hit only leads 1921 and 1922 (this sweep) and the unrelated catalogue entry Harford Jones to Henry Dundas 1798; 'Adv.MS.80.3.48' no other hit. Lead 1922 is a different volume (80.7.7), not a duplicate.",
+  "verdict": "open",
+  "searches": [
+   {
+    "query": "\"Dundas of Dundas\" papers National Library of Scotland Adv.MS.80 cipher accounts legal expenses 1688",
+    "result": "Returned the NLS records for 80.3.48 ('mainly written in cipher', 1688-1699), 80.3.48-50 (1688-1701, some entries in cipher) and the fonds; no decipherment or key mentioned."
+   },
+   {
+    "query": "DECODE database Dundas cipher Scotland 1690s account book \"Dundas of Dundas\" Lasry OR Schmeh OR \"Cipher Challenge\"",
+    "result": "Only the NLS records and the DECODE v2 HistoCrypt paper; no DECODE, Lasry or Schmeh item on the Dundas accounts."
+   },
+   {
+    "query": "Tomokiyo cryptiana Scottish cipher 17th century account book Dundas National Library of Scotland Advocates cipher decipherment",
+    "result": "Only Mary Stuart letter coverage; no Cryptiana or other decipherment of the Dundas volumes."
+   },
+   {
+    "query": "Royal Letters ... Dundas of Dundas 1897 full text: grep cipher, cypher, account-book, legal expenses",
+    "result": "No hits; the edition does not print or decipher these accounts."
+   }
+  ]
+ },
+ "1922": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch r02 (audit of b40)",
+  "seen": {
+   "kind": "not online",
+   "where": "https://manuscripts.nls.uk/repositories/2/archival_objects/16992: still known only from search-result snippets; the live site gives Cloudflare 403 and the Wayback snapshot of 19 May 2024 exists but returned 429 twice",
+   "extent": "Adv.MS.80.7.7, 17th century, 6 folios octavo. Leaves not seen: no digitisation found.",
+   "cipher": "NLS catalogue: 'Notes of the family of Dundas of Dundas in cipher., 17th century', extent '6 folios. Octavo.' No decipherment or key mentioned in the record."
+  },
+  "prior_art": {
+   "decode": "known.py on 'Dundas' and 'Adv.MS.80.7.7' searches the harvested DECODE dump and the repo: no Dundas of Dundas record; web search of DECODE found none.",
+   "tomokiyo": "Searches combining Tomokiyo or cryptiana with Dundas of Dundas and the NLS shelfmark found nothing on this volume; only the Mary Stuart letters project came up.",
+   "lasry": "No Lasry or Schmeh item on the Dundas of Dundas notes found in the same searches.",
+   "edition": "Opened Macleod, Royal Letters ... Family Papers of Dundas of Dundas (1897, archive.org royallettersand01maclgoog): no hit for cipher or cypher, and these notes were not found there. No other edition found. (The earlier statement that no Dundas print exists overlooked this volume.)",
+   "literature": "No HistoCrypt or Cryptologia paper on the Dundas cipher volumes found; the only hit naming a Dundas cipher journal is Kearsley's novel A Desperate Fortune (fiction)."
+  },
+  "key_check": "No key recorded in the NLS description and none held in the repo or on DECODE. Lead 1921 (Adv.MS.80.3.48-50, accounts mainly in cipher, same fonds) is a possible comparison text; whether the two share a system is untested.",
+  "duplicates": "known.py 'Dundas' hit only leads 1921 and 1922 (this sweep) and the unrelated Harford Jones to Henry Dundas catalogue entry; 'Adv.MS.80.7.7' no other hit. Lead 1921 is a different volume, not a duplicate.",
+  "verdict": "open",
+  "searches": [
+   {
+    "query": "\"Adv.MS.80.7.7\" OR \"Adv. MS. 80.7.7\" Dundas notes cipher",
+    "result": "Returned the NLS record 16992: notes of the family of Dundas of Dundas in cipher, 17th century, 6 folios octavo; no decipherment."
+   },
+   {
+    "query": "Dundas of Dundas family 17th century cipher notes deciphered Scottish family cipher manuscript Historical Manuscripts Commission Dundas",
+    "result": "NLS records and Kearsley's novel only; no HMC or other report printing or deciphering the notes."
+   },
+   {
+    "query": "\"Dundas of Dundas\" cipher family notes seventeenth century genealogy Scots cipher volume 6 folios octavo Advocates' Library bought 1925",
+    "result": "Confirmed the 6-folio octavo extent and fonds context (Adv.MS.80.7 miscellaneous papers); nothing on any decipherment."
+   },
+   {
+    "query": "Macleod 1897 Dundas of Dundas selection, grep cipher or cypher for the 6-folio notes Adv.MS.80.7.7",
+    "result": "No hits; family notes in cipher not found there."
+   }
+  ]
+ },
+ "1949": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch r02 (audit of b34)",
+  "seen": {
+   "kind": "not online",
+   "where": "Archives Portal Europe record (Cloudflare 'Just a moment' page to curl and WebFetch, HTTP 403): only the finding-aid description could be used, as quoted in the lead; link in lead 1949 (fonds 326 no. 925)",
+   "extent": "One folder with seals, letters in cipher 1621-24; number of letters and groups not stated in the description",
+   "cipher": "Archive description quoted: 'Enige brieven in cijferschrift (geheimschrift) ... getekend door Maurits van Nassau', 1621-24: the letters themselves are in cipher; no leaf seen, so no system or decipherment can be described"
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump) on 'Nassau' 'Starckenborgh' and 'Maurits': no DECODE record for this folder; only unrelated Nassau entries (catalogue 2236 Willem Frederik 1795, a 1525 Heinrich of Nassau lead)",
+   "tomokiyo": "Searches for Maurits van Nassau cipher 1621 and Starckenborgh cijfer returned nothing from Tomokiyo's cryptiana for this folder; no entry found",
+   "lasry": "Search 'Prince Maurice of Nassau cipher letters 1621 decipherment Cryptologia' returned only Lasry/HistoCrypt papers on other Dutch items (Pina 1646, d'Avaux 1684); none on Maurice",
+   "edition": "No edition of these letters found by web search or Internet Archive full-text search (Starckenborgh, Maurits, Tjaerda: only genealogies and archive reports). Not opened: the holding archive's inventory of fonds 326 (Archives Portal Europe gives Cloudflare 403); it is a finding aid, and nothing suggests an edition of Maurits to Starckenborgh.",
+   "literature": "Heijbroek 1987 'Het geheimschrift van Huygens ontcijferd' came up as Dutch cipher literature but concerns Huygens, not Maurits letters; no HistoCrypt or Cryptologia item on Maurits found"
+  },
+  "key_check": "No key for this folder located. Checked targets/casimir1618/inventory.md: it holds keys to the Prince of Orange of 1626 (Frederik Hendrik) and Casembroot 1623, none addressed to Starckenborgh; not tested because no ciphertext is available to test against",
+  "duplicates": "known.py on shelfmark text, 'Nassau' 'Starckenborgh' and 'Tjaerda': only unrelated Nassau entries; no catalogue entry or target covers fonds 326 no. 925",
+  "verdict": "open",
+  "searches": [
+   {
+    "query": "Maurits van Nassau Starckenborgh brieven cijferschrift 1621 inventaris Tjaerda",
+    "result": "Nothing on this folder; KHA Maurits papers description (1567-1625) and Huygens letter lists only"
+   },
+   {
+    "query": "Starckenborgh Maurits cijfer ontcijferd geheimschrift 1621 1624 Edzart",
+    "result": "No decipherment; Huygens correspondence entries for A. van Starckenborgh and a Heijbroek article on Huygens' cipher, unrelated"
+   },
+   {
+    "query": "Prince Maurice of Nassau cipher letters 1621 decipherment Cryptologia Dutch Republic cipher",
+    "result": "Lasry/HistoCrypt papers on other Dutch ciphers (Pina 1646, d'Avaux 1684); nothing on Maurice"
+   },
+   {
+    "query": "\"Enige brieven in cijferschrift\" Maurits van Nassau Tjaerda van Starckenborgh inventaris Groninger Archieven",
+    "result": "Inventory not found; no edition or decipherment of this folder."
+   }
+  ],
+  "lead_updates": {
+   "access": "archive"
+  },
+  "key_held": "casimir1618 keys to Frederik Hendrik 1626 and Casembroot 1623 are not addressed to this correspondent; no test possible without ciphertext"
+ },
+ "1958": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch r02 (audit of b34)",
+  "seen": {
+   "kind": "not online",
+   "where": "Archives Portal Europe record (Cloudflare 'Just a moment' page to curl and WebFetch, HTTP 403): only the finding-aid description could be used, as quoted in the lead; link in lead 1958 (Belgian State Archives BE-A0511 file 448 item 3)",
+   "extent": "Letters from Brussels 1656-60 on military developments and diplomatic negotiations; scan status not checked",
+   "cipher": "Archive description quoted: 'Opgesteld deels in het Frans, deels in cijferschrift' (letters of J. d'Uguarte, 1656-60): part of the letters is in cipher; no leaf seen"
+  },
+  "prior_art": {
+   "decode": "known.py on 'Uguarte': only this lead and its sweep file; no DECODE record",
+   "tomokiyo": "Searches on Uguarte/Spanish Netherlands cipher 1657 found nothing from cryptiana for him",
+   "lasry": "A Brussels Secretaria de Estado y Guerra cipher handbook (1668-1714) came up in a Polish journal article; no Lasry reading of Uguarte",
+   "edition": "No edition of Uguarte's letters found; Internet Archive full-text search 'Uguarte Bruxelles 1658 Don Juan' returned nothing. Not opened: the Belgian State Archives finding aid BE-A0511 for file 448 (Archives Portal Europe gives Cloudflare 403); nothing suggests an edition covers these letters.",
+   "literature": "No HistoCrypt or Cryptologia item on Uguarte; background only on Spanish Netherlands cipher practice"
+  },
+  "key_check": "No key identified; the Brussels Spanish chancery handbook of 1668-1714 is later and not in hand",
+  "duplicates": "known.py 'Uguarte': no catalogue entry or target covers it",
+  "verdict": "open",
+  "searches": [
+   {
+    "query": "d'Uguarte Bruxelles 1656 1660 lettres chiffre Archives de l'Etat Belgique Conseil d'Etat",
+    "result": "Nothing naming Uguarte; Spanish Secretaria de Estado material only"
+   },
+   {
+    "query": "Uguarte Brussels 1657 letters cipher Spanish Netherlands secretary decipher",
+    "result": "Polish article on a Brussels cipher handbook 1668-1714; no Uguarte"
+   },
+   {
+    "query": "Uguarte 1658 Bruxelles Don Juan d'Autriche lettres militaires negociations Uguarte",
+    "result": "Gachard and Don Juan literature, nothing on Uguarte"
+   },
+   {
+    "query": "Internet Archive full text: Uguarte Bruxelles 1658 Don Juan",
+    "result": "Zero hits for this name in the full-text index."
+   }
+  ],
+  "lead_updates": {
+   "access": "archive"
+  }
+ },
+ "1960": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch r02 (audit of b34)",
+  "seen": {
+   "kind": "not online",
+   "where": "Archives Portal Europe record (Cloudflare 'Just a moment' page to curl and WebFetch, HTTP 403): only the finding-aid description could be used, as quoted in the lead; link in lead 1960 (Utrecht archive NL-UtHUA fonds 57 no. 359)",
+   "extent": "Letters 1672-73 to Johan Louis Godin; only some words in cipher; scan status not checked",
+   "cipher": "Archive description quoted: 'Sommige woorden in cijferschrift' (letters to Godin, deputy of Utrecht in France, 1672-73): cipher is limited to some words, nomenclator-style; no leaf seen"
+  },
+  "prior_art": {
+   "decode": "known.py on 'Godin' 'Utrecht': only this lead and its sweep; no DECODE record",
+   "tomokiyo": "Searches on Godin/Rampjaar cipher found nothing from cryptiana",
+   "lasry": "Lasry's d'Avaux 1684 HistoCrypt paper mentions Utrecht delegations but not Godin; no reading of these letters",
+   "edition": "No edition of Godin's correspondence found; web and Internet Archive searches gave only a biographical entry on a Jean Louis Godin. Not opened: Utrecht inventory 57 (Het Utrechts Archief site and Archives Portal Europe both 403); it is a finding aid, and nothing suggests an edition covers these letters.",
+   "literature": "Only Godin's DBNL biography (1672 delegate to Louis XIV); no cipher literature"
+  },
+  "key_check": "No key identified for the Godin letters",
+  "duplicates": "known.py 'Godin': no catalogue entry or target",
+  "verdict": "open",
+  "searches": [
+   {
+    "query": "Godin gedeputeerde Utrecht Frankrijk 1672 brieven cijfer Het Utrechts Archief 57 inventaris Staten van Utrecht",
+    "result": "Godin biography only; no inventory located"
+   },
+   {
+    "query": "Johan Louis Godin Utrecht deputy 1672 Louis XIV French invasion letters cipher decipherment",
+    "result": "Godin biography, Spink Louis XIV lot to Villars, Lasry d'Avaux paper; no Godin cipher"
+   },
+   {
+    "query": "Godin Utrecht Rampjaar 1672 correspondentie edition brieven gedeputeerde Staten Utrecht Frankrijk Lodewijk XIV ontcijfering",
+    "result": "De Witt letters edition and Utrecht surrender literature; no Godin edition"
+   },
+   {
+    "query": "Het Utrechts Archief inventaris 57 Johan Louis Godin gedeputeerde Utrecht Frankrijk 1672-1673 brieven cijferschrift",
+    "result": "Inventory not reached; DBNL biography of a Jean Louis Godin only; no edition or decipherment."
+   }
+  ],
+  "lead_updates": {
+   "access": "archive"
+  }
+ },
+ "1961": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch r02 (audit of b34)",
+  "seen": {
+   "kind": "not online",
+   "where": "Archives Portal Europe record (Cloudflare 'Just a moment' page to curl and WebFetch, HTTP 403): only the finding-aid description could be used, as quoted in the lead; link in lead 1961 (HCL Maastricht 01.075 no. 589)",
+   "extent": "Letters 1649-60 of Abbot Winand Lamberti, partly in cipher; scan status not checked",
+   "cipher": "Archive description quoted: 'Gedeeltelijk in cijferschrift' (letters of Winand Lamberti, abbot of Kloosterrade/Rolduc, 1649-60); no leaf seen"
+  },
+  "prior_art": {
+   "decode": "known.py on 'Kloosterrade' 'Lamberti': only this lead and its sweep; no DECODE record",
+   "tomokiyo": "Search for Lamberti Rolduc cipher found nothing from cryptiana",
+   "lasry": "No Lasry paper on Rolduc found",
+   "edition": "No edition of Lamberti's letters found; Internet Archive full text (Winand Lamberti, Kloosterrade, Rolduc) gave Limburg society volumes with no sign of them. Not opened: Haas's 1985 inventory and RHCL 01.075 (portal 403), both finding aids; nothing suggests an edition covers these letters.",
+   "literature": "No HistoCrypt or Cryptologia item on Rolduc found"
+  },
+  "key_check": "No key identified",
+  "duplicates": "known.py 'Kloosterrade': no catalogue entry or target",
+  "verdict": "open",
+  "searches": [
+   {
+    "query": "Winand Lamberti abt Kloosterrade Rolduc 1649 1660 brieven cijferschrift Historisch Centrum Limburg",
+    "result": "Grave and abbey history only (abbot 1650-64); no cipher item"
+   },
+   {
+    "query": "abdij Kloosterrade archief inventaris Winand Lamberti correspondentie 1650 Historisch Centrum Limburg 01.075",
+    "result": "Haas 1985 inventory and Franquinet 1869 charters; no cipher mention"
+   },
+   {
+    "query": "Rolduc abbot Lamberti cipher letters seventeenth century decipher Cologne Westphalia Kloosterrade",
+    "result": "Abbey histories and unrelated cipher papers; nothing on Lamberti"
+   },
+   {
+    "query": "Winand Lamberti abt Kloosterrade Rolduc 1649-1660 brieven gedeeltelijk in cijferschrift inventaris RHCL 01.075 no. 589",
+    "result": "Inventory entry not reached; Lamberti's abbacy and Rolduc bibliographies only; no decipherment."
+   }
+  ],
+  "lead_updates": {
+   "access": "archive"
+  }
+ },
+ "2064": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch r02 (audit of b55)",
+  "seen": {
+   "kind": "not online",
+   "where": "ARVAS viwc_viwc00178 (empty 202 to curl; ViWC is read here as the Colonial Williamsburg code); SNAC 6971195 and 8355368 known only through search extracts (now a bot check). Holder not settled: SNAC cites UVa's Papers of John Catlett 1784-1889, whose dates do not fit a 1664 letter.",
+   "extent": "One phrase in a letter, John Catlett to Thomas Catlett, 1 April 1664; no scan online",
+   "cipher": "Catalogue description: 'Includes cipher to say that he has been made \"President of the Court.\"' The SNAC copy credits the UVa Papers of John Catlett as its source, so the holding library (Colonial Williamsburg per the lead) is not settled."
+  },
+  "prior_art": {
+   "decode": "known.py over DECODE dumps for 'Catlett': only this lead; no DECODE record.",
+   "tomokiyo": "Search for a 1664 Catlett Virginia cipher on Tomokiyo or cryptiana found nothing.",
+   "lasry": "No Lasry or HistoCrypt mention of a 1664 Virginia colonial cipher.",
+   "edition": "No edition of the letter found. The archive description itself gives the plaintext of the only cipher reported in the letter: 'Includes cipher to say that he has been made \"President of the Court.\"'",
+   "literature": "Search for a scholarly account of the cipher turned up genealogy pages (John Catlett, sheriff of Old Rappahannock 1664) and no decipherment."
+  },
+  "key_check": "No key held or found; only a short cipher phrase whose sense is given by the catalogue, so a crib exists but no ciphertext is in hand.",
+  "duplicates": "known.py (searches the harvested DECODE dump, leads, catalogue and targets) on 'Catlett': only this lead's own rows and the sweep candidates file; no catalogue entry, target or DECODE record for this document.",
+  "searches": [
+   {
+    "query": "John Catlett Thomas Catlett 1664 letter Virginia cipher 'President of the Court' Colonial Williamsburg Rockefeller Library",
+    "result": "SNAC catalogue record with the same description and advice on ships to the Rappahannock; no decipherment."
+   },
+   {
+    "query": "'Papers of John Catlett' University of Virginia Library 1664 Thomas Catlett cipher letter Rappahannock",
+    "result": "Record names Thomas Ludwell; UVa Catlett papers are dated 1784-1889, so the holder of the 1664 leaf is unsettled; no edition."
+   },
+   {
+    "query": "Catlett 1664 cipher 'President of the Court' Virginia seventeenth century private cipher decipherment Rappahannock Ludwell",
+    "result": "Only genealogy pages and the SNAC description; no study or decipherment of the alphabet."
+   },
+   {
+    "query": "ViWC John Catlett letter 1664 Colonial Williamsburg Rockefeller Library cipher President of the Court Thomas Ludwell",
+    "result": "Same SNAC description only; holder not settled; no edition."
+   }
+  ],
+  "verdict": "read",
+  "closed": "The catalogue states what the cipher phrase says ('President of the Court'), so its content is on record. The alphabet is not published and the leaf was not seen; the holder (Colonial Williamsburg or UVa) stays unsettled."
+ },
+ "2073": {
+  "unvetted": "Morgan MA 23779.1 reads 'Letter and copy in cipher', 6 pp.: if the cipher copies the letter, its plain text sits with it. Record reachable only by search extract (403); needs the leaf or Morgan staff. Arckenholtz vols I-IV opened by OCR search: 23 May 1655 not found."
+ },
+ "2077": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch r02 (audit of b02)",
+  "lead_updates": {
+   "access": "archive"
+  },
+  "seen": {
+   "kind": "not online",
+   "where": "BYU L. Tom Perry Special Collections, Vault MSS 771 (ArchiveGrid 122536438; BYU Sfondrati collection page lib.byu.edu/collections/sfondrati-family-papers/)",
+   "extent": "27 letters of 1583, mostly Carlo d'Aragona Tagliavia (governor of Milan) to Paolo Sfondrati and to the future Gregory XIV",
+   "cipher": "Finding aid quoted in the lead: \"handwritten letters on paper, many of which are partially or entirely in code\". BYU's public Sfondrati page covers MSS 524 (legal and land papers 1494-1900) and does not mention MSS 771 or any code; no image of these letters was reached (ArchiveGrid returned 403, BYU archives search 403)."
+  },
+  "searches": [
+   {
+    "query": "BYU Vault MSS 771 Sfondrati letters 1583 code Aragona Tagliavia",
+    "result": "No page for MSS 771 found; only unrelated BL Add MS 28418 (Paolo Sfondrati, ambassador at Turin, deciphered copies 1580-85, a different person's correspondence to Philip II)."
+   },
+   {
+    "query": "Carlo d'Aragona Tagliavia Paolo Sfondrati lettere 1583 cifra decifrate",
+    "result": "Biographies of Carlo d'Aragona and an Italian study chapter on baron Paolo Sfondrati between Milan, Turin and Madrid; nothing on cipher letters to Sfondrati or a decipherment."
+   },
+   {
+    "query": "Sfondrati family papers BYU digital collection letters cipher deciphered",
+    "result": "BYU collection description (legal documents, land records, 1494-1900), no cipher mention; DECRYPT/HistoCrypt hits are other papal ciphers (1721 etc.), none touch these letters."
+   },
+   {
+    "query": "Carlo d'Aragona Tagliavia governatore Milano 1583 lettere cifrate Sfondrati Simancas decifrado",
+    "result": "Only governorship dates (Milan 1583-84), a Morgan Library 1591 letter and a BL Milan file; no cipher edition or decipherment."
+   },
+   {
+    "query": "BYU Vault MSS 771 letters 1583 Carlo d'Aragona Paolo Sfondrati Gregory XIV partially or entirely in code",
+    "result": "No record for MSS 771 surfaced; other Sfondrati letters only; no decipherment."
+   }
+  ],
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump) on 'Sfondrati', 'Aragona Tagliavia' returned only this lead's own row and the sweep README; no DECODE record.",
+   "tomokiyo": "Web search for Aragona Tagliavia / Sfondrati with cipher found no Cryptiana page for these letters.",
+   "lasry": "Searches (Lasry, DECRYPT, GL.htm terms with Sfondrati) found no Lasry decipherment of these letters; the DECRYPT hits concern other papal ciphers.",
+   "edition": "No edition or calendar of the BYU 1583 letters found by web or Internet Archive full-text search. Not opened: BYU's finding aid for Vault MSS 771 and ArchiveGrid (both 403); it is a finding aid, and nothing suggests an edition of Tagliavia's letters to the Sfondrati covers them.",
+   "literature": "Searched Cryptologia/HistoCrypt phrasing with the two names: nothing; the 1583 Milan-Turin Sfondrati correspondence in print is Spanish-ambassador material, not this set."
+  },
+  "key_check": "No key found for this set in BYU description, DECODE dump or print; contemporary Milan/Spanish nomenclators in the repo were not tried on images since none was reached.",
+  "duplicates": "known.py on shelfmark, 'Sfondrati', 'Aragona Tagliavia', Gregory XIV: only this lead; no catalogue entry or target on the same letters.",
+  "verdict": "open"
+ },
+ "2080": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch r02 (audit of b02)",
+  "seen": {
+   "kind": "not online",
+   "where": "Massachusetts Historical Society, Clap family papers (ArchiveGrid 48203464)",
+   "extent": "one letter of 6 Oct 1707, part in cipher",
+   "cipher": "Catalogue record quoted in the lead: \"a letter ... part in cipher\". No scan online; cipher versus shorthand is not established by the description (MHS ministers' 'cipher' is often shorthand)."
+  },
+  "searches": [
+   {
+    "query": "Jonathan Clap Nathaniel Clap 1707 letter cipher Massachusetts Historical Society",
+    "result": "Genealogy only: Nathaniel Clap of Dorchester died May 1707, sons Jonathan (executor) and Nathaniel (Newport minister); no cipher letter, no decipherment."
+   },
+   {
+    "query": "Clap family papers Massachusetts Historical Society cipher decoded",
+    "result": "Returned MHS Adams, Winthrop, Newell-diary cipher material; nothing for the Clap papers."
+   },
+   {
+    "query": "Jonathan Clap Dorchester 1707 letter to Nathaniel Clap Newport cipher",
+    "result": "Dorchester Atheneum and genealogy pages on the family and will; the only cipher hit is an unrelated 1775 letter; no edition of this letter."
+   },
+   {
+    "query": "Clap family papers Massachusetts Historical Society Jonathan Clap to Nathaniel Clap 6 October 1707 letter cipher Newport",
+    "result": "Family background only; MHS item not surfaced; no transcription or decipherment."
+   }
+  ],
+  "prior_art": {
+   "decode": "known.py on 'Jonathan Clap' returned only this lead and its sweep candidate; not on the harvested DECODE dump.",
+   "tomokiyo": "Searched Clap with cipher: no Cryptiana page found.",
+   "lasry": "No Lasry or GL.htm item on Clap or MHS New England letters found in searches.",
+   "edition": "No edition of the letter found; web and Internet Archive full-text searches gave vital records and genealogy (Nathaniel Clap of Dorchester d. May 1707, so the recipient may be the Newport minister). Not opened: the MHS record behind ArchiveGrid (403); it is a catalogue, and nothing suggests an edition covers this letter.",
+   "literature": "No Cryptologia or HistoCrypt paper on this letter turned up."
+  },
+  "key_check": "No key known for this letter in the record or held here; none tested.",
+  "duplicates": "known.py on names and shelfmark: only this lead; no catalogue entry for Clap.",
+  "verdict": "open"
+ },
+ "2086": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch r02 (audit of b02)",
+  "seen": {
+   "kind": "not online",
+   "where": "Ohio History Connection, Philip E. Robertson Civil War diaries (ArchiveGrid 1292630732; SNAC 'Civil War Diaries, 1861-1863')",
+   "extent": "irregular entries 1 Jan-20 Sept 1863 in the 1863 volume",
+   "cipher": "Catalogue record quoted in the lead: \"irregular entries from Jan. 1-Sept. 20, 1863, often using a code\". No scan online; SNAC's other record (4th Ohio, a 1862 diary) differs in dates."
+  },
+  "searches": [
+   {
+    "query": "Philip E. Robertson diaries 1861-1863 Ohio History Connection code",
+    "result": "SNAC confirms the Robertson diaries at the Ohio Historical Society; no code detail, no transcription."
+   },
+   {
+    "query": "Robertson \"often using a code\" diary 1863 Ohio Civil War",
+    "result": "Phrase not found; Indiana State Library Robertson 1863 diary is a different man, no code."
+   },
+   {
+    "query": "Philip E. Robertson 4th Ohio Infantry Civil War diary transcription published",
+    "result": "Only archival descriptions (4th Ohio, Company B, 1892 letter); no published or decoded text."
+   },
+   {
+    "query": "Philip E. Robertson Civil War diaries 1861-1863 Ohio History Connection code entries transcription",
+    "result": "SNAC listings of the diaries and papers; no transcription or reading of the code."
+   }
+  ],
+  "prior_art": {
+   "decode": "known.py on 'Robertson diaries' returned only this lead and its sweep row; not on DECODE dump.",
+   "tomokiyo": "Searched Robertson with code and Civil War: no Cryptiana page.",
+   "lasry": "No Lasry or GL.htm item found.",
+   "edition": "No edition of the Robertson diaries found by web or Internet Archive full-text search. Not opened: the Ohio History Connection finding aid (site 403); it is a finding aid, and nothing suggests the diaries were ever printed.",
+   "literature": "No Cryptologia or HistoCrypt paper on this diary found."
+  },
+  "key_check": "No key known or held; none tested.",
+  "duplicates": "known.py on name and shelfmark: only this lead; no catalogue or target match.",
+  "verdict": "open"
+ },
+ "2111": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch r02 (audit of b60)",
+  "seen": {
+   "kind": "not online",
+   "where": "Yale finding aid https://ead-pdfs.library.yale.edu/1108.pdf, Osborn Manuscript Files, LANGLOIS, BENJAMIN, b. 87, file 8640; no scan online",
+   "extent": "3 pp., part in code, ALS of 15 Nov 1769 from Vienna to Sir John Goodricke",
+   "cipher": "Finding aid: 'ALS, part in code, to Sir John Goodricke. Vienna. 3 p. 23 x 19 cm.' (1769 Nov 15). The sibling in file 9398 (St Petersburg, 22 Dec 1766) is described as 'Most of the letter is in code, decoded on the line above'; this item carries no such note."
+  },
+  "prior_art": {
+   "decode": "known.py on 'OSB MSS FILE 8640', 'Langlois', 'Goodricke' (harvested DECODE dump, which is what was run): no DECODE record; only this lead and catalogue 1541 (Walpole to Goodricke 1769) mention Goodricke.",
+   "tomokiyo": "Web search (Cryptiana, British diplomatic ciphers 1760s, Vienna, Stormont, Langlois) found no Cryptiana page on this letter or on Vienna embassy ciphers of 1769.",
+   "lasry": "GL.htm (local copy) has no Langlois, Goodricke or Vienna 1769 entry; web search found no Lasry or HistoCrypt paper on it.",
+   "edition": "No edition of Langlois's letter found; Internet Archive full text (Goodricke, Langlois, Vienna 1769) gave only secondary and calendar mentions. Opened the Yale finding aid (b. 87, file 8640): 'ALS, part in code', no decode noted. Not opened: Bodleian MS. Eng. hist. c. 62 and TNA SP 80, which are other manuscripts, not editions.",
+   "literature": "Web searches on Langlois (secretary of Stormont's Vienna embassy 1763-71), the Goodricke papers and the Camden 'Sir John Goodricke, Baronet 1758-1773' (403, not opened) found no decipherment of a 1769 Langlois letter."
+  },
+  "searches": [
+   {
+    "query": "Benjamin Langlois secretary British embassy Vienna 1769 letter Goodricke Stockholm cipher code",
+    "result": "Langlois was Stormont's embassy secretary at Vienna 1763-71; BL has Langlois to Phelps 1763-64; nothing on a 1769 letter to Goodricke or its code."
+   },
+   {
+    "query": "Sir John Goodricke papers Stockholm 1769 cypher letters deciphered Bodleian Vienna correspondence Stormont Langlois",
+    "result": "Bodleian MS. Eng. hist. c. 62 has 24 letters to Goodricke incl. some in cypher with transliteration, correspondents not named; TNA SP 95/116 is Goodricke's 1769 diet journal; no Langlois decipherment."
+   },
+   {
+    "query": "cryptiana British diplomatic ciphers 1760s Vienna Stormont embassy code Langlois decipherment Osborn Yale",
+    "result": "Nothing on 1760s British Vienna ciphers or this letter; only unrelated Jacobite and Yardley material."
+   },
+   {
+    "query": "Internet Archive full text: Goodricke Langlois Vienna 1769",
+    "result": "British Diplomats, Home Office calendars naming Langlois; this letter not printed in the hits."
+   }
+  ],
+  "key_check": "No Vienna or Goodricke key held in this repo, on DECODE or found in print; the 1766 St Petersburg sibling (file 9398) was decoded interlinearly but is another correspondent's code and its text is not online.",
+  "duplicates": "known.py 'Langlois', 'Goodricke', file 8640: no catalogue duplicate; catalogue 1541 is Walpole to Goodricke (Paris, 8 Oct 1769), a different letter and writer.",
+  "verdict": "open"
+ },
+ "2112": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch r02 (audit of b60)",
+  "seen": {
+   "kind": "not online",
+   "where": "Yale finding aid https://ead-pdfs.library.yale.edu/1108.pdf, Osborn Manuscript Files, PERWICH, WILLIAM, FL.1675, b. 118, file 11791 (PDF p. 1166); no scan online",
+   "extent": "ALS, 2 pp. 23 x 17 cm, with a long passage in code; Paris, 7 Jun 1669, to [Sir William Temple]",
+   "cipher": "Finding aid: 'ALS to [Sir William Temple]. Paris. 2 p. 23 x 17 cm. Letter includes a long passage in code.' (1669 Jun 7). I read the PDF: the heading PERWICH, WILLIAM runs across the page break to this file, so it is filed as Perwich's. No decipherment is mentioned."
+  },
+  "prior_art": {
+   "decode": "known.py on 'OSB MSS FILE 11791', 'Perwich', 'Temple' (harvested DECODE dump, which is what was run): no DECODE record; hits are this lead, other catalogue entries and targets/perwich (the 1670 Arlington letter).",
+   "tomokiyo": "Cryptiana (Sept 2025 post on Perwich's 9 Apr 1670 transposition) quotes Temple's 1669 remark that Perwich 'wrote from France for a Tryal' of Morland's cypher; it describes no 1669 letter to Temple and no decipherment of one.",
+   "lasry": "GL.htm (local copy) has no Perwich entry; Lasry, Biermann and Tomokiyo solved only the 1670 letter to Arlington (TNA blog, 14 Oct 2025); nothing on the Beinecke 1669 letter.",
+   "edition": "Curran, Despatches of William Perwich (Camden 1903; archive.org despatchesofwill00perwrich): letters to Arlington, 'only the deciphered portions have been printed', no letter to Temple. The solved 1670 reading (targets/perwich/NOTES.md) is SP 78/129 f.180 to Arlington, a different letter and the only text it covers; it does not read this one. Temple's own letter volumes were not opened.",
+   "literature": "Web searches (TNA blog, Cryptiana, Language Hat, Yale) found no mention of this letter or any decipherment of it."
+  },
+  "searches": [
+   {
+    "query": "Perwich letter to Sir William Temple 7 June 1669 Paris cipher passage deciphered",
+    "result": "Only the 9 Apr 1670 Arlington letter (solved Oct 2025) and Curran 1903 came back; no record of a 1669 Temple letter or its decipherment."
+   },
+   {
+    "query": "Temple 1669 Perwich Morland cypher trial letter from Paris Osborn Beinecke",
+    "result": "Cryptiana quotes Temple 1669 'Mr. Perwick wrote from France for a Tryal' on Morland's cypher; no text or decipherment of the letter itself."
+   },
+   {
+    "query": "Perwich Temple 1669 letter in code Yale Osborn OSB MSS FILE 11791",
+    "result": "No Yale record for file 11791 surfaced; Language Hat and TNA posts concern the 1670 letter only."
+   },
+   {
+    "query": "Curran Despatches of William Perwich full text cipher Temple (archive.org djvu text)",
+    "result": "Opened: cipher passages are printed only when deciphered, all in letters to Arlington; no Temple letter, so the Beinecke letter is unprinted."
+   },
+   {
+    "query": "Perwich letter to Sir William Temple 7 June 1669 Paris cipher Temple correspondence Osborn Blathwayt",
+    "result": "TNA and cryptiana on the 1670 letter and the Morland cipher trial; nothing on this letter."
+   },
+   {
+    "query": "Yale OSB finding aid 1108.pdf text: grep 11791 and Perwich's Cypher",
+    "result": "File 11791 under Perwich; code memorandum is file 1409, not 1410."
+   },
+   {
+    "query": "targets/gramont1529/GL.htm: grep Perwich, Temple",
+    "result": "No entry for Perwich or Temple in the local copy."
+   }
+  ],
+  "key_check": "Not covered by the 1670 solution: that was a 20-column transposition with nulls, and whether this 1669 passage uses it is unknown. Yale OSB file 1409 is Perwich's own code memorandum (the lead's '1410' is wrong); it was not opened or tested.",
+  "key_held": "Yale OSB MSS FILE 1409, 'Memorandum of code used by William Perwich in his correspondence with Blathwayt', endorsed 'Mr. Perwich's Cypher', c. 1668-72, not tested; method only in targets/perwich.",
+  "duplicates": "known.py 'Perwich', file 11791, 'Temple': no catalogue duplicate; targets/perwich is the 9 Apr 1670 Arlington letter, a different document.",
+  "verdict": "open"
+ },
+ "2119": {
+  "unvetted": "Akkerman, The Correspondence of Elizabeth Stuart, Queen of Bohemia, vol. II 1632-42 (OUP 2011) is the edition of her letters for this date and prints deciphered letters with a keys appendix. Not on Internet Archive, Google Books API gave 429. Open it at 6 Feb 1635."
+ },
+ "2120": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch r02 (audit of b05)",
+  "seen": {
+   "kind": "not online",
+   "where": "Morgan Library record themorgan.org/literary-historical/126965 (ArchiveGrid 270614743), read through web-search extract; 403 to scripts",
+   "extent": "2 pp., Siena, 11 Jan 1552; three lines in cipher",
+   "cipher": "Morgan: 'Three lines of the letter are in cipher'. No decipherment is mentioned."
+  },
+  "prior_art": {
+   "decode": "known.py Fourquevaux and 'Este 1552': only this lead and sweep files; not on DECODE dump",
+   "tomokiyo": "search with Tomokiyo/cryptiana, Fourquevaux, Este, 1552 found no page",
+   "lasry": "no Lasry paper or GL.htm item on Fourquevaux or Este-Siena ciphers found",
+   "edition": "No edition found that prints this letter. Opened Du Gabre's Correspondance politique (1903, archive.org correspondancepo00duga): Fourquevaux at Parma recurs, but no letter of 11 Jan 1552 from Este to him turned up. Douais's Depeches de Fourquevaux cover Spain 1565-72. Not opened: Douais, Une importante correspondance (20-page paper); Ribier's Lettres et memoires d'estat; nothing suggests they print it.",
+   "literature": "no HistoCrypt/Cryptologia item found on this letter"
+  },
+  "key_check": "No key held for an Este-French cipher of 1552. Does not block; very short (3 lines).",
+  "duplicates": "known.py Fourquevaux and 'Este 1552': no catalogue entry or target.",
+  "verdict": "open",
+  "searches": [
+   {
+    "query": "Ippolito d'Este Fourquevaux 1552 Parma lettre chiffre Siena 11 janvier 1552",
+    "result": "Only the Morgan record (3 lines in cipher) and biographical pages; no decipherment."
+   },
+   {
+    "query": "Fourquevaux Este cipher Siena 1552 Tomokiyo cryptiana French Italian war Parma decipherment",
+    "result": "No cryptiana or Lasry result for this letter; unrelated Venetian cryptanalysis papers."
+   },
+   {
+    "query": "Lettres de Fourquevaux 1552 Parme Ippolito d'Este chiffre edition Siena lettere cifra Mazzei Guerra di Siena",
+    "result": "No edition of Fourquevaux's letters with ciphers found; Vidori's book is the only context."
+   },
+   {
+    "query": "Du Gabre Correspondance politique 1903 full text: grep Fourquevaux, 11 janvier",
+    "result": "35 Fourquevaux hits, first five read, none this letter; 11 janvier hits concern other years or events."
+   }
+  ],
+  "lead_updates": {
+   "access": "archive"
+  }
+ },
+ "2130": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch r02 (audit of b06)",
+  "seen": {
+   "kind": "scan",
+   "where": "OPenn, College of Physicians of Philadelphia Ms. 10a 132, https://openn.library.upenn.edu/Data/0027/cpp_10a_132/data/web/6207_0112_web.jpg (f. 75r) and 6207_0114_web.jpg (f. 76r)",
+   "extent": "f. 76r, about 21 lines of cipher filling the page; f. 75r opens with three crossed-out lines of the same cipher; f. 76v not viewed",
+   "cipher": "Viewed both leaves: Latin cursive text on f. 75r below the struck lines, then on f. 76r a full page of word-spaced unfamiliar spellings (e.g. 'qfs', 'tbouborn') in the same letter shapes as the crossed-out heading, a monoalphabetic-style substitution of a Latin text; no plaintext, key or interlinear decipherment appears on either leaf."
+  },
+  "prior_art": {
+   "decode": "known.py on the miscellany, College of Physicians and 10a 132: no hits in the DECODE dump, repo or leads other than this lead.",
+   "tomokiyo": "Searched Tomokiyo cryptiana for the College of Physicians of Philadelphia and Italian medical-recipe ciphers: no page on this manuscript.",
+   "lasry": "Searched Lasry, HistoCrypt and DECRYPT for 10a 132 and for this miscellany: nothing.",
+   "edition": "Opened the OPenn TEI record (cpp_10a_132_TEI.xml): 'Fol.76 in cipher', citing Hirsch, Catalogue of the Manuscripts and Archives of the College of Physicians (1983), no. 646. Hirsch was not opened; it is a catalogue, and nothing suggests it reads the cipher. No edition of the miscellany found.",
+   "literature": "Searched for 10a 132, Bertapalia, 'cipher' and Caesar: no study of the cipher leaf."
+  },
+  "key_check": "No key in the volume or in the repo; none on DECODE; a simple letter substitution is suggested by the shapes but was not tested.",
+  "key_in_volume": "None seen on ff. 75r-76r; the rest of the volume was not paged through.",
+  "duplicates": "known.py on the miscellany, 10a 132 and College of Physicians: only this lead's row; no catalogue entry or target.",
+  "verdict": "open",
+  "searches": [
+   {
+    "query": "College of Physicians of Philadelphia medical pharmaceutical miscellany Italy 16th century 'in cipher' leaves 75r",
+    "result": "Found the OPenn record for Ms. 10a 132 (c. 1550, Italy, Latin) noting 'Fol. 76 in cipher' and giving image paths for ff. 75-76; no decipherment mentioned."
+   },
+   {
+    "query": "cpp_10a_132 cipher fol. 76 Caesar shift medical miscellany College of Physicians Philadelphia deciphered",
+    "result": "Only the OPenn record and the Hirsch catalogue (no. 646) came back; nothing on a cipher or its solution."
+   },
+   {
+    "query": "Medical-pharmaceutical miscellany Philadelphia Ms. 10a 132 Bertapalia Venereal Man cipher leaf Schoenberg database",
+    "result": "No match for this manuscript in the Schoenberg Database or Penn catalogue results; no cipher study."
+   },
+   {
+    "query": "Tomokiyo cryptiana Italian 16th century medical recipe cipher College of Physicians Philadelphia 10a 132",
+    "result": "Unrelated Borg cipher, Tomokiyo's 1593 Italian ciphers and others; nothing on this volume."
+   },
+   {
+    "query": "OPenn TEI cpp_10a_132: grep cipher, note, bibl, Hirsch",
+    "result": "Notes 'Fol.76 in cipher'; related resource Hirsch no. 646; no reading."
+   }
+  ]
+ },
+ "2133": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch r02 (audit of b06)",
+  "seen": {
+   "kind": "not online",
+   "where": "Cornell record via ArchiveGrid 1519884526 (403 to scripts); not located in Cornell's catalogue by web search",
+   "extent": "two parchment leaves; one provenance statement",
+   "cipher": "Archive description: 'a provenance statement written in cipher, likely dating from the 15th or 16th century, in which symbols resembling the letter P'."
+  },
+  "prior_art": {
+   "decode": "known.py on Hippocrates Prognostics Cornell: no hits in the DECODE dump or repo.",
+   "tomokiyo": "No Tomokiyo cryptiana page on this fragment.",
+   "lasry": "No Lasry item on this fragment found by web search.",
+   "edition": "Butler Rare Books listing (butlerrarebooks.co.uk/?p=3933; 401 to curl and fetch, read through search extracts) prints the decipherment: 'Questa regela e di don giouanni bartolo meo', vowels as a p with cross-strokes. Same leaves as Cornell by description, not by a stated sale: Butler's title 'c.1175, France - the Prognostics 2 leaves' and the Cornell record share date, text, two leaves, a 15th/16th-c. provenance cipher and P-like signs. No Cornell catalogue record reached.",
+   "literature": "Searches found nothing but the dealer listing."
+  },
+  "key_check": "Cipher is a vowel substitution by number of strokes on a 'p', stated in the dealer listing; no key held here.",
+  "duplicates": "known.py on the Hippocrates Prognostics and Cornell: no hits; no catalogue entry.",
+  "verdict": "read",
+  "closed": "Butler Rare Books prints the decipherment of a provenance cipher matching the Cornell record on date, text, leaf count, cipher date and P-like signs. Identity rests on that match; no document of a sale to Cornell was found and the leaf was not seen.",
+  "searches": [
+   {
+    "query": "Butler Rare Books one of the earliest Latin manuscripts of Hippocrates c.1175 France the Prognostics 2 leaves sold Cornell",
+    "result": "Butler title confirms c.1175 and 2 leaves; no source names Cornell as buyer."
+   },
+   {
+    "query": "Cornell University Library Prognostics Hippocrates two leaves provenance cipher Bartolo Questa regela",
+    "result": "Butler listing again with the reading; no Cornell record surfaced."
+   }
+  ]
+ },
+ "1782": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch r02 (audit of b29)",
+  "seen": {
+   "kind": "not online",
+   "where": "TNA Discovery API record (discovery.nationalarchives.gov.uk/API/records/v1/details/C7344608), digitised=false; no image online",
+   "extent": "SP 78/271/11 is f. 27 only: the next item starts at f. 29 (SP 78/271/12), so at most two folios. Shelburne's f. 12 runs up to f. 18 (next item f. 19).",
+   "cipher": "Discovery: 'Folio 27: P.M. Morin to Porten. Encloses second ciphered copy of f.12. The first was enciphered in haste.' From Whitehall to Porten at Paris: a cover note describing an enclosure. No cipher is described in the item; leaf not seen."
+  },
+  "prior_art": {
+   "decode": "known.py on 'SP 78/271/11', 'Morin', 'Porten': only this lead and sweep files; no DECODE record.",
+   "tomokiyo": "Web search on the Morin/Porten ciphered copy and 1766 embassy cipher found nothing in Cryptiana.",
+   "lasry": "No Lasry paper on 1760s British embassy ciphers found.",
+   "edition": "No calendar of SP 78/271 found. f. 12 (SP 78/271/6) is Shelburne to Porten, 23 Sept 1766, catalogued with no cipher note: by the f. 27 note it is the text that was enciphered, so any cipher copy that turned up would already have its plain text. The 'Part decoded cipher' note reported for SP 78/271/14 is not in the scope text the API gave me.",
+   "literature": "Web search found only the TNA catalogue entries for the volume; no literature on this cipher copy."
+  },
+  "key_check": "No key in the repo; the 1760s series SP 106/32-39 not opened; nothing tested.",
+  "duplicates": "known.py on 'SP 78/271/11': this lead only. SP 78/271/14 is a different letter, not a duplicate.",
+  "verdict": "not_cipher",
+  "searches": [
+   {
+    "query": "Morin Porten 1766 ciphered copy SP 78/271 Foreign Office cipher Paris embassy",
+    "result": "Found the record itself and the 'Part decoded cipher' note on SP 78/271/14; no decipher of f. 27."
+   },
+   {
+    "query": "Shelburne Porten 1766 Paris embassy cipher enciphered despatches Canada paper Lennox cipher clerk Morin decipher",
+    "result": "Volume context only; nothing on how f. 12 was enciphered or any decipherment."
+   },
+   {
+    "query": "TNA API neighbours C7344596-C7344613 (SP 78/270/115 to 271/16), listing descriptions",
+    "result": "f. 12 (SP 78/271/6) is plain Shelburne to Porten 23 Sep 1766; f. 27 is the only cipher-copy note in the run; one neighbour has 'Part decoded cipher'."
+   },
+   {
+    "query": "Discovery API C7344596-C7344613, re-read for foliation of SP 78/271",
+    "result": "Items run f. 12, f. 19, ... f. 27, f. 29; no enciphered copy of f. 12 catalogued."
+   }
+  ],
+  "key_held": "Possible keys: TNA SP 106/32-39 (not opened).",
+  "closed": "A cover note, not ciphertext: f. 27 mentions a ciphered copy, and foliation (next item f. 29) leaves little room for it. The plain f. 12 in the volume is that copy's text anyway. Judged from Discovery records; leaf not seen."
+ }
+}
