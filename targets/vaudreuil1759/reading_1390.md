@@ -1,0 +1,7 @@
+# Reading (French, 18th-century spelling kept, punctuation added), Vaudreuil to the minister, 16 April 1759
+
+Plain word = certain; {x} = probable (digit re-read from the sense, or key value corrected after the measurement); [x] = restored (group cut by the binding or evident missing syllable); ‹...› = unresolved. "Monseigneur" and the closing formula and signature are in clear on the manuscript.
+
+Dans la crainte de nous trouver l'année prochaine dans la même disette que celle-ci, j'ai engagé le munitionnaire à donner ordre à ses correspondans en France que, dans le cas qu'ils apprissent la prise de quelques-uns des navires qu'ils auront chargés en vivres pour lui, de les remplacer dans l'instant et de lui faire de nouveaux envois de quelque port que ce soit.
+J'ai l'honneur, Monseigneur, de {vous} prévenir de cet arrangement et de vous supplier de vouloir bien {faire} fournir aux correspondans de ce munitionnaire les navires dont ils auront besoin, supposé qu'ils ne pussent en trouver ; le munitionnaire payera au Roy en Canada le fret de ces navires suivant le cou[r]s de cette année. Les risques sont trop grands pour qu'il puisse payer à quelque prix que ce soit ce fret acquis, ce qui l'oblige d'écrire à ses correspondans qu'il n'entend pas payer ce fret ailleurs que dans la Colonie.
+Je ne puis au surplus, Monseigneur, que vous réitérer le désir que j'ai que vous ajoutiez un supplément aux envois de vivres qui nous {seront} faits cette année ; de là dépend particulièrement la conservation de la Colonie, et sans cela elle tomberoit d'{elle}-même.
