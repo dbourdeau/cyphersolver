@@ -57,3 +57,10 @@ Hessian correspondence would settle them.
 ## DECODE update queued
 
 `decode_updates/queue.json` (heusner1637): R4332 date 15 March → 15 May 1637, key re-check, 747 missing from the key file; R3816 marked as a duplicate of R4332 (proposed Partially decrypted, date and place filled). Not sent: needs write access.
+
+## Brice Dudout: shelfmark of the original (credit added 4 Nov 2026)
+
+Brice Dudout's report of 2 Nov 2026 (issue #208) gives the location of the original letter. It is in the Riksarkivet, Oxenstiernska
+samlingen, Axel Oxenstierna, letters received, vol. E 622 A "Henckell-Heydt" (SE/RA/720701/II/01/B/I/E 622 A). The
+volume is catalogued "1637 mars, i oupplöst chiffer", which is probably where DECODE's "not solved" comes from. It
+is not digitised on the Riksarkivet portal (an analog copy only). Credited `dudout`, role "pointer".
