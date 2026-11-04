@@ -1,5 +1,7 @@
 # Gian Giacomo Medici, marquis of Marignano, to Ferrante Gonzaga, Ratisbon, 12 June 1546 (Biblioteca Estense; not in the catalogue)
 
+Status: in progress. Not yet written up: no site page or README row. Classed read, so it is ready for the /writeup skill. The status below is the contributor's.
+
 Status: read (3 Nov 2026), the cipher passage of c. 13r, read from the contemporary clear translation on c. 14r, with a
 key rebuilt from it. This is a **transcription job, not a break**: the contemporary translation covers the whole cipher
 passage. Contributed by WAINUT; the work was done with AI language-model agents viewing the images. No human palaeographer has

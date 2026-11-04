@@ -1,5 +1,7 @@
 # Catalogue 1245: Sir George Barlow to Thomas Grenville, 1807, "in a curious cipher"
 
+Status: in progress. Not yet written up: no site page or README row. Read in part, with escalation steps still open (see Remaining gaps and Escalation). The status below is the contributor's.
+
 Status: read in part (3 Nov 2026). 1192 of 1379 words of the letter to Grenville read with no letter changed (86.4%).
 The letter to Tierney is in clear.
 
