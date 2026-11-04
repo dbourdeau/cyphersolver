@@ -49,7 +49,7 @@
   <p class="sub">Napoleon III’s policy toward the Pope, his criticism of diplomatic speculation, and reports from the Italian campaign; private family news exchanged with Empress Eugénie. Deciphered by George Lasry, working with ChatGPT Astra 6 and Anthropic Opus 5.5, in his <i>BnF cipher research</i> of October 2026: 440 elements, 370 identified (84.1%); 4 assumed readings; 50 ?. Read by Lasry; excerpt here: this repository holds his tokens for ff. 9r, 15r, 17r and 18r and three excerpts of his report, which read as French sentences (about 31% of the cipher; measured on their words, the ff. 9r&ndash;18r excerpt builds coherent sentences but reads at 84.6%, under the 95% bar); the rest of his decipherment is not here (reading audit, 22 October 2026). Krajčovič&rsquo;s proposed token corrections are a list, not a text.</p>
   <p class="meta">George Lasry &middot; posted <time datetime="2026-10-13">13 October 2026</time> &middot; updated <time datetime="2026-10-26">26 October 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#ct">key recovered from ciphertext-only</a> &middot; Extent: partial (95% of the cipher)</p><!-- /outcome -->
-<p class="credits">Contributed by <a href="contributors.html#lasry">George Lasry</a> (solution) and <a href="contributors.html#krajcovic">Jozef Krajčovič</a> (verification)</p><!-- /credits -->
+<p class="credits">Contributed by <a href="contributors.html#lasry">George Lasry</a> (solution, key corrected) and <a href="contributors.html#krajcovic">Jozef Krajčovič</a> (verification)</p><!-- /credits -->
 <div class="seal partial" aria-hidden="true"><span class="long">ciphertext-only</span></div>
 </section>
 
@@ -58,15 +58,14 @@
 <!-- lasry:start -->
 <section class="lreport">
 <h2 id="lasry-report">George Lasry&rsquo;s decipherment</h2>
-<p class="lr-src">George Lasry&rsquo;s report on this item, as he sent it on 24 October 2026 (<a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/eugenie1859/lasry/report/08_naf-11355-emperorempress-code.pdf">PDF</a>), in its own order and wording. The decipherment, the translation and the reconstruction of the key are his, made with ChatGPT Astra 6 and Anthropic Opus 5.5. This project&rsquo;s own checks follow under <a href="#verification">Verification</a>.</p>
+<p class="lr-src">George Lasry&rsquo;s report on this item, as he sent it on 24 October 2026 (<a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/eugenie1859/lasry/report/08_naf-11355-emperorempress-code_fr.pdf">PDF</a>), in its own order and wording. The decipherment, the translation and the reconstruction of the key are his, made with ChatGPT Astra 6 and Anthropic Opus 5.5. This project&rsquo;s own checks follow under <a href="#verification">Verification</a>.</p>
 <div class="lr-summary"><h3>NAF 11355 — Emperor–Empress code</h3>
 <p><b>Contents:</b> Napoleon III’s policy toward the Pope, his criticism of diplomatic speculation, and reports from the Italian campaign; private family news exchanged with Empress Eugénie.</p>
 <p class="lr-status">15/15 pages transcribed; 9/11 cipher pages deciphered; 2 more in part</p>
-<dl><dt>Ciphertext-only:</dt><dd>Yes</dd><dt>Sender:</dt><dd>Napoleon III / Empress Eugénie (both directions)</dd><dt>Recipient:</dt><dd>Empress Eugénie / Napoleon III (both directions)</dd><dt>Year:</dt><dd>June 1859</dd><dt>Key:</dt><dd>233 codes, 12 letter signs, 220 in nomenclature, 1 separator</dd><dt>Ciphertext:</dt><dd>440 elements, 370 identified (84.1%); 4 assumed readings; 50 ?</dd><dt>Literal plaintext:</dt><dd>f35r: L’ennemi s’est retiré cette nuit. — One ciphered sentence only; fatigue passage not</dd></dl>
+<dl><dt>Ciphertext-only:</dt><dd>Yes</dd><dt>Sender:</dt><dd>Napoleon III / Empress Eugénie (both directions)</dd><dt>Recipient:</dt><dd>Empress Eugénie / Napoleon III (both directions)</dd><dt>Year:</dt><dd>June 1859</dd><dt>Key:</dt><dd>242 codes, 12 letter signs, 229 in nomenclature, 1 separator (updated 30 Oct 2026)</dd><dt>Ciphertext:</dt><dd>440 elements, 370 identified (84.1%); 4 assumed readings; 50 ?</dd><dt>Literal plaintext:</dt><dd>f35r: L’ennemi s’est retiré cette nuit. — One ciphered sentence only; fatigue passage not</dd></dl>
 <p class="lr-links"><a href="https://archives.ville-saumur.fr/_depot_amsaumur/_depot_arko/fonds/echo_saumurois/pdf/1859/FRAC049328_ECHSAU_1859_06_28.pdf" rel="noopener">Gallica f3r</a> &middot; <a href="https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f11.item" rel="noopener">Gallica f9r</a> &middot; <a href="https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f23.item" rel="noopener">Gallica f14r</a> &middot; <a href="https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f33.item" rel="noopener">Gallica f17r</a> &middot; <a href="https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f39.item" rel="noopener">Gallica f27r</a> &middot; <a href="https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f57.item" rel="noopener">Gallica f29r</a> &middot; <a href="https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f61.item" rel="noopener">Gallica f32r</a> &middot; <a href="https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f67.item" rel="noopener">Gallica </a></p>
 </div>
 <figure class="keytab" data-credit="key reconstructed by George Lasry (report, 24 October 2026); sign images: Biblioth&egrave;que nationale de France, NAF 11355, via Gallica"><img src="lasry/eugenie1859/key_1.jpg" alt="The reconstructed key, from George Lasry’s report." loading="lazy"><figcaption>The reconstructed key, from George Lasry&rsquo;s report. <span class="credit">Image: key reconstructed by George Lasry (report, 24 October 2026); sign images: Biblioth&egrave;que nationale de France, NAF 11355, via Gallica.</span></figcaption></figure>
-<figure class="keytab" data-credit="key reconstructed by George Lasry (report, 24 October 2026); sign images: Biblioth&egrave;que nationale de France, NAF 11355, via Gallica"><img src="lasry/eugenie1859/key_2.jpg" alt="The reconstructed key, from George Lasry’s report." loading="lazy"><figcaption>The reconstructed key, from George Lasry&rsquo;s report. <span class="credit">Image: key reconstructed by George Lasry (report, 24 October 2026); sign images: Biblioth&egrave;que nationale de France, NAF 11355, via Gallica.</span></figcaption></figure>
 <h3 id="lasry-excerpt">Excerpt and Translation</h3>
 <p class="exwhere">f19r — the Pope and diplomacy</p>
 <figure data-credit="Biblioth&egrave;que nationale de France, NAF 11355, f19r, via Gallica; crop from George Lasry&rsquo;s report"><img src="lasry/eugenie1859/leaf_1.jpg" alt="The manuscript lines of the excerpt (f19r — the Pope and diplomacy)." loading="lazy"><figcaption>The manuscript lines of the excerpt (f19r — the Pope and diplomacy). <span class="credit">Image: Biblioth&egrave;que nationale de France, NAF 11355, f19r, via Gallica; crop from George Lasry&rsquo;s report.</span></figcaption></figure>
@@ -82,81 +81,77 @@
 <div class="lr-readable" translate="no">
 <p class="lr-doc">NAF 11355 — Napoléon III et Eugénie</p>
 <h4>f3r · PDF 13</h4>
-<p>· Gallica</p>
+<p>· Gallica <a href="https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f11.item" rel="noopener">https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f11.item</a></p>
 <p>Empereur à Impératrice, St Cloud.</p>
 <p>Rien de nouveau ce matin, les choses vont bien. <b class="dec">Je t’embrasse.</b> Au revoir.</p>
 <h4>f4r · PDF 15</h4>
-<p>· Gallica</p>
+<p>· Gallica <a href="https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f13.item" rel="noopener">https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f13.item</a></p>
 <p>Novare, 2 juin 1859. L’Empereur à l’Impératrice, St Cloud.</p>
 <p>Je suis à Novare depuis hier soir avec 100,000 hommes. Cette ville n’a pas été défendue. Mon armée était il y a quatre jours sur la rive droite du Pô à 25 lieues d’ici. J’ai reçu le rapport officiel du combat de Palestro. Il prouvera que, contrairement à nos ennemis, nous restons en dessous de la vérité. Les zouaves ont pris 9 canons, fait 700 prisonniers dont 9 officiers. Les pertes de l’ennemi ont été très sensibles, car on évalue à 500 le nombre des Autrichiens noyés en se sauvant.</p>
 <p>Les pertes des zouaves sont aussi plus considérables que je ne l’avais dit. Nous avons à regretter 46 tués, dont un capitaine, 229 blessés dont 18 officiers — 20 noyés en poursuivant l’ennemi. — Au revoir.</p>
 <h4>f5r · PDF 17</h4>
-<p>· Gallica</p>
+<p>· Gallica <a href="https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f15.item" rel="noopener">https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f15.item</a></p>
 <p>Novare, 3 juin 1859. L’Empereur à l’Impératrice, St Cloud. 101 mots.</p>
-<p>865? 442 163 824 204 543 225</p>
+<p><b class="dec">865 442 163 824 204 543 225</b></p>
 <p>J’ai jeté trois ponts sur le Tessin ; j’ai un corps d’armée sur la rive gauche ; les Autrichiens sont en pleine retraite ; il y a eu un combat aujourd’hui pendant que j’y étais, devant la tête de pont ; cela n’a pas duré longtemps, et, chose singulière, le général Auger a pris un canon à l’ennemi. Je rentre bien fatigué, mais bien portant. Il y a tout au plus aujourd’hui quatre ou cinq tués et une vingtaine de blessés. Au revoir.</p>
 <h4>f9r · PDF 25</h4>
-<p>· Gallica</p>
+<p>· Gallica <a href="https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f23.item" rel="noopener">https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f23.item</a></p>
 <p>Milan, 9 Juin 1859. L’Empereur à l’Impératrice, St Cloud.</p>
-<p>432 1210 85 126 702 588 / 65? / 27? Aujourd’hui Te Deum au Dôme. Enthousiasme extraordinaire. Évêque officiant. La Garde Impériale formait la haie. <b class="dec">En sortant avec le Roi, tous les prêtres m’ont baisé les main[s] ; les femmes s’agenouillai[ent], les hommes étai[en]t exaltés au delà de toute expression ; toutes les troupes étai[en]t couvertes de fleurs</b> 485<b class="dec">, mais nous avons de la peine à trouver du pain.</b></p>
+<p>Aujourd’hui Te Deum au Dôme. Enthousiasme extraordinaire. Évêque officiant. La Garde Impériale formait la haie. <b class="dec">En sortant avec le Roi, tous les prêtres m’ont baisé les main[s]</b> <b class="dec">; les femmes s’agenouillai[ent], les hommes étai[en]t exaltés au delà de toute expression ; toutes les troupes étai[en]t couvertes de fleurs</b> <b class="dec">485, mais nous avons de la peine à trouver du pain.</b></p>
 <h4>f14r · PDF 35</h4>
-<p>· Gallica</p>
-<p>N° 3977. Service. Paris n° 16445? 13 — 11 h. 08. Exp. à 10 h. 00.</p>
+<p>· Gallica <a href="https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f33.item" rel="noopener">https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f33.item</a></p>
+<p>N° 3977. Service. Paris n° 16445 13 — 11 h. 08. Exp. à 10 h. 00.</p>
 <p>Impératrice à Empereur — Gorgonzola.</p>
 <p>Tout va bien ici. Monsieur Schmidt vient d’arriver avec votre lettre.</p>
 <p>E.</p>
 <h4>f15r · PDF 37</h4>
-<p>· Gallica</p>
+<p>· Gallica <a href="https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f35.item" rel="noopener">https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f35.item</a></p>
 <p>Chiari, 16 Juin 1859. Empereur à Impératrice, St Cloud.</p>
-<p>753</p>
 <p>Quartier Impérial de Covo, 16 Juin 1859.</p>
-<p><b class="dec">L’armée aura? passé aujourd’hui l’Oglio sans résistance. Nous suivons l’armée autrichienne?</b> <b class="dec">pas à pas. Je</b> <b class="dec">re</b> 310 925 <b class="dec">des</b> 981 <b class="dec">le</b> 81 1099 123 495 656 257 <b class="dec">par? l’ennemi.</b> Je vais bien. Au revoir.</p>
+<p><b class="dec">L’armée aura passé aujourd’hui l’Oglio sans résistance. Nous suivons l’armée</b> <b class="dec">autrichienne</b> <b class="dec">pas à pas. Je recueille partout des doléances relatives aux exactions commises par l’ennemi.</b> Je vais bien. Au revoir.</p>
 <h4>f17r · PDF 41</h4>
-<p>· Gallica</p>
+<p>· Gallica <a href="https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f39.item" rel="noopener">https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f39.item</a></p>
 <p>Travagliato, 17 Juin 1859, 3 h. 30. Empereur. Impératrice, St Cloud.</p>
-<p>1098</p>
-<p>Je couche ce soir à Travagliato. <b class="dec">Nous espérons une bataille? sur? Chiese?, mais l’ennemi paraît décidément se retirer derrière le Mincio.</b> L’état moral et physique de l’armée est excellent. Au revoir.</p>
+<p>Je couche ce soir à Travagliato. <b class="dec">Nous espérons une bataille sur Chiese, mais l’ennemi paraît décidément se retirer derrière le Mincio.</b> L’état moral et physique de l’armée est excellent. Au revoir.</p>
 <h4>f18r · PDF 43</h4>
-<p>· Gallica</p>
+<p>· Gallica <a href="https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f41.item" rel="noopener">https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f41.item</a></p>
 <p>Brescia, 18 Juin 1859, 12 h. 20. Empereur à Impératrice, St Cloud.</p>
-<p>504 L’armée est arrivée à Brescia, nous ne savons pas encore <b class="dec">si les</b> <b class="dec">Autrichiens?</b> <b class="dec">défendront les positions de Lonato et de Castiglion[e].</b> Tout va bien, au revoir.</p>
+<p>L’armée est arrivée à Brescia, nous ne savons pas encore <b class="dec">si les</b> <b class="dec">Autrichiens</b> <b class="dec">défendront les positions de Lonato et de Castiglion[e].</b> Tout va bien, au revoir.</p>
 <h4>f19r · PDF 45</h4>
-<p>· Gallica</p>
+<p>· Gallica <a href="https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f43.item" rel="noopener">https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f43.item</a></p>
 <p>Brescia, 19 Juin 1859. Empereur à Impératrice, St Cloud.</p>
-<p>302</p>
-<p>Je suis bien <b class="dec">peiné</b> au milieu de mes travaux d’avoir à <b class="dec">répondre</b> à toutes les <b class="dec">sotte[s] suppositions de la diplomatie. Je maintiens le pape à Rome avec mon armée. Je ne me mêle en rien du reste de ses États. Le roi de</b> <b class="dec">Sardaigne?</b> n’accepte pas <b class="dec">la dictature? des Légations?.</b> Tout ce qu’on dit <b class="dec">du</b> <b class="dec">Piémont?</b> <b class="dec">est faux ; les peuples mécontents? s’insurgent dès que la force matérielle?</b> s’éloigne d’eux sans qu’il y ait besoin de chercher <b class="dec">une cause étrangère?</b> à ce mouvement.</p>
-<p>136</p>
+<p>Je suis bien <b class="dec">peiné</b> au milieu de mes travaux d’avoir à <b class="dec">répondre</b> à toutes les <b class="dec">sotte[s]</b> <b class="dec">suppositions de la diplomatie. Je maintiens le pape à Rome avec mon armée. Je ne me mêle en rien du reste de ses États. Le roi de</b> <b class="dec">Sardaigne</b> n’accepte pas <b class="dec">la dictature des Légations.</b> Tout ce qu’on dit <b class="dec">du</b> <b class="dec">Piémont</b> <b class="dec">est faux ; les peuples mécontents s’insurgent dès que la force matérielle</b> s’éloigne d’eux sans qu’il y ait besoin de chercher <b class="dec">une cause étrangère</b> à ce mouvement.</p>
 <h4>f27r · PDF 59</h4>
-<p>· Gallica</p>
+<p>· Gallica <a href="https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f57.item" rel="noopener">https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f57.item</a></p>
 <p>St Cloud, le 23 Juin 1859, à 5 h. 25. L’Impératrice à l’Empereur, armée d’Italie.</p>
-<p><b class="dec">Je suis désolée? de vous avoir fait de la peine, ce n’était pas mon intention. Ne vous inquiét[e]z pas du petit, il va à merveille.</b> J’écris aujourd’hui par la poste.</p>
+<p><b class="dec">Je suis désolée de vous avoir fait de la peine, ce n’était pas mon intention. Ne vous inquiét[e]z pas du petit, il va à merveille.</b> J’écris aujourd’hui par la poste.</p>
 <h4>f29r · PDF 63</h4>
-<p>· Gallica</p>
+<p>· Gallica <a href="https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f61.item" rel="noopener">https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f61.item</a></p>
 <p>Montechiari, 23 Juin 1859. L’Empereur à l’Impératrice, St Cloud.</p>
-<p>163 455</p>
-<p>J’ai reçu trois lettres de vous aujourd’hui <b class="dec">la</b> <b class="dec">longue</b> <b class="dec">a</b> <b class="dec">compensé</b> <b class="dec">la peine que les autre[s]</b> <b class="dec">m’ont fait[e]. J’ai brûlé ce matin celle que je vous avais répondu. Quand on est loin, il faut y regarder à deux fois avant de faire de la peine à ceux qui? aime[nt].</b></p>
-<p>Dites au Maréchal Randon de mettre <b class="dec">des extraits des rapports de Magenta dans</b> <b class="dec">[le]</b> <b class="dec">journal militaire ; l’important est que les noms des</b> <b class="dec">officiers?</b> <b class="dec">soient mentionné[s]. Je suis inquiet de la santé de notre fils ; dites-moi franchement comment il est.</b></p>
-<p><b class="dec">De Cotte était de service hier, il se portait très bien. Il a? couch[é]</b> <b class="dec">à ma port[e]</b> <b class="dec">et à</b> <b class="dec">mi-nuit ; au moment</b> <b class="dec">où</b> <b class="dec">on lui apportait un[e]</b> <b class="dec">dépêche, il est mort subitement</b> 263<b class="dec">.</b></p>
+<p><b class="dec">163 455</b></p>
+<p>J’ai reçu trois lettres de vous aujourd’hui <b class="dec">la</b> <b class="dec">longue</b> <b class="dec">a</b> <b class="dec">compensé</b> <b class="dec">la peine que les autre[s]</b> <b class="dec">m’ont fait[e]. J’ai brûlé ce matin celle que je vous avais répondu. Quand on est loin, il faut y regarder à deux fois avant de faire de la peine à ceux qui aime[nt].</b></p>
+<p>Dites au Maréchal Randon de mettre <b class="dec">des extraits des rapports de Magenta dans</b> <b class="dec">[le]</b> <b class="dec">journal militaire ; l’important est que les noms des</b> <b class="dec">officiers</b> <b class="dec">soient mentionné[s]. Je suis inquiet de la santé de notre fils ; dites-moi franchement comment il est.</b></p>
+<p><b class="dec">De Cotte était de service hier, il se portait très bien. Il a couch[é]</b> <b class="dec">à ma port[e]</b> <b class="dec">et à</b> <b class="dec">mi-nuit ; au moment</b> <b class="dec">où</b> <b class="dec">on lui apportait un[e]</b> <b class="dec">dépêche, il est mort subitement</b> <b class="dec">263.</b></p>
 <h4>f30r · PDF 65</h4>
-<p>· Gallica</p>
+<p>· Gallica <a href="https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f63.item" rel="noopener">https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f63.item</a></p>
 <p>St Cloud, le 24 Juin 1859, à 5 h. 20. L’Impératrice à l’Empereur, Montechiari.</p>
 <p>Tout va bien ici. <b class="dec">Le petit va à merveille.</b> J’attends de vos nouvelles avec bien de l’impatience.</p>
-<p><b class="dec">La mèr[e] de de Co[t]te</b> <b class="dec">demande</b> <b class="dec">le</b> <b class="dec">corps</b> <b class="dec">du</b> <b class="dec">général</b> <b class="dec">et</b> <b class="dec">son</b> <b class="dec">fils</b> 768 162z <b class="dec">le</b> 1046 <b class="dec">dites</b> <b class="dec">harassé de fatigue</b></p>
+<p><b class="dec">La mèr[e]</b> <b class="dec">de de Co[t]te</b> <b class="dec">demande</b> <b class="dec">le</b> <b class="dec">corps</b> <b class="dec">du</b> <b class="dec">général</b> <b class="dec">et</b> <b class="dec">son</b> <b class="dec">fils</b> <b class="dec">768</b> <b class="dec">162z</b> <b class="dec">le</b> <b class="dec">1046</b> <b class="dec">dites</b> <b class="dec">harassé</b> <b class="dec">de fatigue</b></p>
 <h4>f32r · PDF 69</h4>
-<p>· Gallica</p>
+<p>· Gallica <a href="https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f67.item" rel="noopener">https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f67.item</a></p>
 <p>Cavriana, 24 Juin 1859, 9 h. 1/4 soir. Empereur à Impératrice, St Cloud.</p>
-<p>163 723?</p>
+<p><b class="dec">163 723</b></p>
 <p>Grande bataille et grande victoire ! Toute l’armée autrichienne a donné. Ligne de bataille 5 lieues. Enlevé toutes les positions. Pris beaucoup de canons, de drapeaux et de prisonniers.</p>
 <p><b class="dec">Personne de connaissance blessé.</b></p>
 <p>Autres détails impossibles. La bataille a duré depuis 4 heures du matin jusqu’à 8 h. du soir.</p>
 <h4>f33r · PDF 71</h4>
-<p>· Gallica</p>
+<p>· Gallica <a href="https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f69.item" rel="noopener">https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f69.item</a></p>
 <p>St Cloud, 25 juin 1859, 7 h. 20 matin. Impératrice à Empereur, Lonato. N° 4299.</p>
 <p>Votre dépêche nous comble tous de joie. Je vous félicite de tout cœur ainsi que notre belle armée de ce nouveau succès. Le petit va très bien. Envoyez-nous les détails dès que ce sera possible.</p>
 <h4>f35r · PDF 75</h4>
-<p>· Gallica</p>
+<p>· Gallica <a href="https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f73.item" rel="noopener">https://gallica.bnf.fr/ark:/12148/btv1b52517729k/f73.item</a></p>
 <p>Cavriana, 25 Juin 1859. Empereur. Impératrice, St Cloud.</p>
-<p>163 723</p>
+<p><b class="dec">163 723</b></p>
 <p>Impossible de donner des détails sur la bataille d’hier. <b class="dec">Tout</b> <b class="dec">[le]</b> <b class="dec">monde était mort de fatigue. L’ennemi s’est retiré cette nuit.</b> J’ignore le nombre précis de canons, de drapeaux et de prisonniers. J’ai couché cette nuit dans la chambre où l’Empereur d’Autriche a déjeuné hier matin. Niel est nommé Maréchal. La bataille prendra le nom de Solférino.</p>
 </div>
 </section>
@@ -280,18 +275,18 @@ f15r	37	4	23	30	a	high
 f15r	37	4	24	926	pas	high
 f15r	37	4	25	677	je	high
 f15r	37	4	26	1074	re	high
-f15r	37	4	27	310	?	unverified_transcription
-f15r	37	4	28	925	?	unverified_transcription
+f15r	37	4	27	310	cueille	probable_contextual_order_checked
+f15r	37	4	28	925	partout	probable_contextual_order_checked
 f15r	37	5	29	357	des	high
-f15r	37	5	30	981	?	unverified_transcription
+f15r	37	5	30	381	do	probable_contextual_order_checked
 f15r	37	5	31	708	le	high
-f15r	37	5	32	81	?	unverified_transcription
-f15r	37	5	33	1099	?	unverified_transcription
-f15r	37	5	34	123	?	unverified_transcription
-f15r	37	5	35	495	?	unverified_transcription
-f15r	37	6	36	656	?	unverified_transcription
-f15r	37	6	37	257	?	unverified_transcription
-f15r	37	6	38	914	par	medium
+f15r	37	5	32	81	ances	probable_contextual_order_checked
+f15r	37	5	33	1099	relatives	probable_contextual_order_checked
+f15r	37	5	34	123	aux	probable_contextual_order_checked
+f15r	37	5	35	495	exact	probable_contextual_order_checked
+f15r	37	6	36	656	ions	probable_contextual_order_checked
+f15r	37	6	37	257	commises	probable_contextual_order_checked
+f15r	37	6	38	914	par	probable_contextual_order_checked
 f15r	37	6	39	439	ennemi	high
 f17r	41	1	1	858	nous	high
 f17r	41	1	2	462	esp	high
@@ -426,18 +421,18 @@ f15r	37	4	23	30	a	high
 f15r	37	4	24	926	pas	high
 f15r	37	4	25	677	je	high
 f15r	37	4	26	1074	re	high
-f15r	37	4	27	310	?	unverified_transcription
-f15r	37	4	28	925	?	unverified_transcription
+f15r	37	4	27	310	cueille	probable_contextual_order_checked
+f15r	37	4	28	925	partout	probable_contextual_order_checked
 f15r	37	5	29	357	des	high
-f15r	37	5	30	981	?	unverified_transcription
+f15r	37	5	30	381	do	probable_contextual_order_checked
 f15r	37	5	31	708	le	high
-f15r	37	5	32	81	?	unverified_transcription
-f15r	37	5	33	1099	?	unverified_transcription
-f15r	37	5	34	123	?	unverified_transcription
-f15r	37	5	35	495	?	unverified_transcription
-f15r	37	6	36	656	?	unverified_transcription
-f15r	37	6	37	257	?	unverified_transcription
-f15r	37	6	38	914	par	medium
+f15r	37	5	32	81	ances	probable_contextual_order_checked
+f15r	37	5	33	1099	relatives	probable_contextual_order_checked
+f15r	37	5	34	123	aux	probable_contextual_order_checked
+f15r	37	5	35	495	exact	probable_contextual_order_checked
+f15r	37	6	36	656	ions	probable_contextual_order_checked
+f15r	37	6	37	257	commises	probable_contextual_order_checked
+f15r	37	6	38	914	par	probable_contextual_order_checked
 f15r	37	6	39	439	ennemi	high
 f17r	41	1	1	858	nous	high
 f17r	41	1	2	462	esp	high
@@ -503,7 +498,7 @@ etai[en]t exaltes au dela de toute expression, tous les troupes etai[en]t couver
 peine a trouver du pain.
 
 La armee aura passé aujourd’hui le Oglio sans resistance; nous suivons la armee Autrichien[ne] pas a pas. Je
-re[?] [?] des [?] le [?] [?] [?] [?] [?] [?] par ennemi.
+recueille partout des doléances relatives aux exactions commises par ennemi.
 
 Nous esperons une bataille sur Chiese, mais le ennemi parait decidement se retirer derriere le Mincio.
 
@@ -515,8 +510,8 @@ Si les Autrichien[s] defendront les positions de Lonato et de Castiglion [...]</
 On going out with the King, all the priests kissed my hands, the women knelt, the men were exalted beyond all expression,
 all the troops were covered with flowers [?] but we have trouble finding bread.
 
-The army will have crossed the Oglio today without resistance; we are following the Austrian army step by step. I
-[?] [?] the [?] the [?] [?] [?] [?] [?] [?] by the enemy.
+The army will have crossed the Oglio today without resistance; we are following the Austrian army step by step. On
+all sides I receive complaints about the abuses committed by the enemy.
 
 We hope for a battle on the Chiese, but the enemy seems decidedly to be withdrawing behind the Mincio.
 
@@ -610,18 +605,18 @@ f15r	37	4	23	30	a	high
 f15r	37	4	24	926	pas	high
 f15r	37	4	25	677	je	high
 f15r	37	4	26	1074	re	high
-f15r	37	4	27	310	?	unverified_transcription
-f15r	37	4	28	925	?	unverified_transcription
+f15r	37	4	27	310	cueille	probable_contextual_order_checked
+f15r	37	4	28	925	partout	probable_contextual_order_checked
 f15r	37	5	29	357	des	high
-f15r	37	5	30	981	?	unverified_transcription
+f15r	37	5	30	381	do	probable_contextual_order_checked
 f15r	37	5	31	708	le	high
-f15r	37	5	32	81	?	unverified_transcription
-f15r	37	5	33	1099	?	unverified_transcription
-f15r	37	5	34	123	?	unverified_transcription
-f15r	37	5	35	495	?	unverified_transcription
-f15r	37	6	36	656	?	unverified_transcription
-f15r	37	6	37	257	?	unverified_transcription
-f15r	37	6	38	914	par	medium
+f15r	37	5	32	81	ances	probable_contextual_order_checked
+f15r	37	5	33	1099	relatives	probable_contextual_order_checked
+f15r	37	5	34	123	aux	probable_contextual_order_checked
+f15r	37	5	35	495	exact	probable_contextual_order_checked
+f15r	37	6	36	656	ions	probable_contextual_order_checked
+f15r	37	6	37	257	commises	probable_contextual_order_checked
+f15r	37	6	38	914	par	probable_contextual_order_checked
 f15r	37	6	39	439	ennemi	high
 f17r	41	1	1	858	nous	high
 f17r	41	1	2	462	esp	high
@@ -818,18 +813,18 @@ f15r	37	4	23	30	a	high
 f15r	37	4	24	926	pas	high
 f15r	37	4	25	677	je	high
 f15r	37	4	26	1074	re	high
-f15r	37	4	27	310	?	unverified_transcription
-f15r	37	4	28	925	?	unverified_transcription
+f15r	37	4	27	310	cueille	probable_contextual_order_checked
+f15r	37	4	28	925	partout	probable_contextual_order_checked
 f15r	37	5	29	357	des	high
-f15r	37	5	30	981	?	unverified_transcription
+f15r	37	5	30	381	do	probable_contextual_order_checked
 f15r	37	5	31	708	le	high
-f15r	37	5	32	81	?	unverified_transcription
-f15r	37	5	33	1099	?	unverified_transcription
-f15r	37	5	34	123	?	unverified_transcription
-f15r	37	5	35	495	?	unverified_transcription
-f15r	37	6	36	656	?	unverified_transcription
-f15r	37	6	37	257	?	unverified_transcription
-f15r	37	6	38	914	par	medium
+f15r	37	5	32	81	ances	probable_contextual_order_checked
+f15r	37	5	33	1099	relatives	probable_contextual_order_checked
+f15r	37	5	34	123	aux	probable_contextual_order_checked
+f15r	37	5	35	495	exact	probable_contextual_order_checked
+f15r	37	6	36	656	ions	probable_contextual_order_checked
+f15r	37	6	37	257	commises	probable_contextual_order_checked
+f15r	37	6	38	914	par	probable_contextual_order_checked
 f15r	37	6	39	439	ennemi	high
 f17r	41	1	1	858	nous	high
 f17r	41	1	2	462	esp	high
