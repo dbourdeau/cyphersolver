@@ -1431,6 +1431,11 @@ PAGES = [
          blurb='A governor&rsquo;s plan for war with Britain during the Dutch crisis, enciphered in Bouill&eacute;&rsquo;s cipher of 1778, which the margin names. Brice Dudout read it with that key unchanged: 298 of 302 words.',
          quote='&ldquo;si la [guerre] avec l&rsquo;[Angleterre] avoit lieu&hellip;&rdquo;',
          rights='Letter: Archives nationales d&rsquo;outre-mer, COL C8 B 16 no. 61; reading by Brice Dudout, Europe chiffr&eacute;e'),
+    dict(slug='deboli1788', label='Deboli to Stanis&#322;aw August 1788', year='1788', y=1788.36, place='St Petersburg &rarr; Warsaw', st='partial', stt='read in part',
+         title='Deboli to King Stanis&#322;aw August, 13 May 1788',
+         blurb='A cipher despatch of the Polish envoy at St Petersburg, one of two of 1788 with no cabinet decipherment, on a dinner for John Paul Jones and Russian talk of an alliance to be turned into a confederation. Brice Dudout read it with the 1789 key completed on 1788 pairs; on a held-out pair it reads 0.862 of groups as sense.',
+         quote='&ldquo;the project of alliance&hellip; at the Diet, which we shall try to turn into a Confederation&rdquo;',
+         rights='Despatch: AGAD Warszawa, Zbi&oacute;r Popiel&oacute;w 428 k. 74&ndash;75v; reading by Brice Dudout, Europe chiffr&eacute;e'),
     dict(slug='vanreede1793', label='Van Reede 1793', year='1793', y=1793.23, place='Berlin &rarr; The Hague', st='stuck', stt='not solved',
          title='Van Reede to the Secret Committee, 24 March 1793',
          blurb='The Dutch envoy in Berlin to the Secret Committee of the States General (Nationaal Archief 1.01.02 inv. 6695, DECODE R1893), in a code of three-digit groups with marks over single digits: 696 groups in 513 distinct forms. Not the Grand Chiffre of his earlier despatches; the 1793 keys on DECODE do not fit, there is no crib, and the text is too short to rebuild a code this large. WAINUT rebuilt the code from 44 cipher/clear pairs of his other despatches (PR #66) and decoded the letter in part, recorded as a proposal.',
@@ -4146,6 +4151,7 @@ IMAGES['waddall1656'] = ('waddall1656_tsp5_p337.jpg','The cipher words in Waddal
 IMAGES['johnston1863'] = ('johnston1863_lead.jpg', 'The cipher lines of the telegram: UNIEK &ndash; CXNKVNED, JJTRRK, ISLX &ndash; KFYHJEER', 'National Archives, RG 109, naId 3854726, image 1, via the National Archives Catalog')
 IMAGES['milroy'] = None
 IMAGES['auckland1918'] = None
+IMAGES['deboli1788'] = None
 IMAGES['siguenza1554'] = None
 IMAGES['alfonso1576'] = None
 IMAGES['marignano1546'] = None
