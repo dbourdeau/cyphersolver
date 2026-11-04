@@ -2,6 +2,829 @@
  "_about": "Leads: candidate ciphertexts found by sweeps and not yet vetted. They are not catalogue entries and are not on the site. Each keeps the id it was given at merge (ids are shared with catalogue.json and never reused). A lead is promoted to catalogue.json by `python docs/_check_catalogue.py --promote <id>` once its \"vetting\" block passes the gate (README Conventions, \"Catalogue vetting bar\"; field list in docs/_check_catalogue.py); a lead found read, duplicated, readable with a held key or not a cipher is closed with --close and kept here as a record. Entries 861-1422 were moved here from catalogue.json on 28 Oct 2026: all came from the Oct 2026 archive sweeps, scored from descriptions; the 98 checked on 28 Oct (research/verify_2026-10/) keep that check in status and prior_art.",
  "leads": [
   {
+   "id": 390,
+   "counted": true,
+   "year": 1664,
+   "date": "1664",
+   "title": "Marquês de Sande's papers: cipher B, Rome 1664",
+   "correspondents": "various → Francisco de Melo, conde da Ponte, marquês de Sande; Diogo Lopes de Ulhoa → Rui Teles de Meneses",
+   "place": "London; The Hague; Paris; Lisbon",
+   "language": "Portuguese, Italian, Latin, English, French",
+   "region": "Portugal",
+   "period": "1651-1700",
+   "shelfmark": "ANTT, Luís de Miranda Pereira, liv. 1 (PT/TT/LMP/0001)",
+   "folio_note": "Luís de Miranda Pereira, liv. 1; 592 scans online; 'códice factício contendo cartas assinadas, cartas cifradas e cópias de cartas'",
+   "cls": "C",
+   "status": "Cipher A (scans m0265-m0273, Dutch Republic c. 1657-59, three units) located and its letter key recovered from the ciphertext by WAINUT (PR #124, 27 Oct 2026); about 45 of ~290 lines transcribed and read; code groups open. Cipher B (Rome 1664, m0059-m0063, glossed) located, not attacked. In progress (targets/sande1660/). Narrowed to the unread part and restored 2 Nov 2026.",
+   "why": "The Anglo-Portuguese marriage treaty of 1661 (Bombay, Tangier) and Portuguese diplomacy at The Hague and Paris.",
+   "importance": 4,
+   "solvability": 4,
+   "difficulty": 3,
+   "score_note": "Scored from the archive description during the Oct 2026 Torre do Tombo sweep (research/torre_do_tombo/); viewed 27 Oct 2026 (PR #124)",
+   "verify": "Transcribe the rest of m0265-m0273 and apply the key; test Fernando Teles de Faro (catalogue 385) as the writer; then the m0063 glosses for cipher B.",
+   "links": [
+    {
+     "label": "DigitArq PT/TT/LMP/0001",
+     "href": "https://digitarq.arquivos.pt/documentDetails/7d037cd7783448dfb5fa761cf9301aa5"
+    }
+   ],
+   "seen": "viewed",
+   "source": "Arquivo Nacional Torre do Tombo (DigitArq) sweep",
+   "prior_art": "open (checked 26 Oct 2026: known.py (repo, DECODE, Cryptoole: no hit), web search).",
+   "ark": "",
+   "scored": "sweep",
+   "as_of": "2026-10-27",
+   "access": "online",
+   "access_note": "online (backfilled 28 Oct 2026 from the entry: seen: viewed)",
+   "vetting": {
+    "date": "2026-11-03",
+    "by": "claude leads review batch b66",
+    "seen": {
+     "kind": "scan",
+     "where": "https://digitarq.arquivos.pt/documentDetails/7d037cd7783448dfb5fa761cf9301aa5 (PT/TT/LMP/0001): fetched via /api/rdigital and /rdigital/dissemination on 3 Nov 2026; viewed m0062 and m0063 (Rome, 21 Jan 1664)",
+     "extent": "cipher B m0059-m0063: Portuguese letters with long runs of dotted numbers (12.13.37 ... 204 ... 900s); cipher A m0265-m0273 is a separate system",
+     "cipher": "m0062 and m0063 carry numeric passages in the body of the letters with contemporary interlinear glosses written over some groups ('do Cardeal', 'perdidas', 'de fazer', 'ser filho de hum ...'); the glosses give only single words or short phrases over a minority of the numbers, no full decipherment or key sheet is written on the leaves"
+    },
+    "prior_art": {
+     "decode": "known.py on Sande and Miranda Pereira hit this entry, targets/sande1660 and catalogue rows only; no DECODE record",
+     "tomokiyo": "No cryptiana page on Portuguese 1660s diplomatic ciphers found",
+     "lasry": "No Lasry item on ANTT ciphers known",
+     "edition": "No edition of the cipher passages; the contemporary glosses on m0062-m0063 are the only reading on record for cipher B",
+     "literature": "Web searches found nothing on cipher B; cipher A was recovered by WAINUT (PR 124), the repo's own work"
+    },
+    "key_check": "Cipher A key in targets/sande1660; no key for cipher B; keys of catalogue 388 and 384 not digitised.",
+    "duplicates": "known.py: catalogue 384/385/388 and targets/sande1660 are the same volume's other units; cipher B has no separate entry.",
+    "verdict": "partly_read",
+    "closed": "Cipher B (Rome 1664) carries contemporary interlinear glosses over some numeric groups on m0062 and m0063, a partial decipherment on the leaf; cipher A is read by this project's key (targets/sande1660), not prior art. Session may keep cipher B open for the unglossed numbers."
+   },
+   "restored_from": "removed_2026-11-02 #390",
+   "open": "Cipher B, numeric passages in Portuguese letters; located, not attacked (targets/sande1660). Cipher A is a separate key, recovered here and tracked in that target.",
+   "needs": "The extent of cipher B: only m0063 was viewed, and the neighbouring leaves are listed as probable. The keys of catalogue 388 and 384 are not digitised."
+  },
+  {
+   "id": 441,
+   "counted": true,
+   "year": 1662,
+   "date": "1660s (DECODE 1600-1799)",
+   "title": "Jan Andrzej Morsztyn to Jerzy Sebastian Lubomirski, letter with digit runs (R7517)",
+   "correspondents": "Jan Andrzej Morsztyn → Jerzy Sebastian Lubomirski",
+   "place": "unknown",
+   "language": "Polish (cleartext)",
+   "region": "Poland-Lithuania",
+   "period": "1651-1700",
+   "shelfmark": "Archiwum Narodowe w Krakowie, Archiwum Sanguszków (ASang), teka 247/13 (DECODE R7517)",
+   "folio_note": "three records, 2-4 pp.; cleartext Polish with cipher",
+   "cls": "C",
+   "status": "DECODE R7517, R7518, R7519 (status N/A, cipher type unknown, private ciphertext, uploaded by the Archiwum Narodowe w Krakowie 2023; no key or decryption file on the records). Not in repo (known.py on each R-number: no hits). Narrowed to the unread part and restored 2 Nov 2026.",
+   "why": "The poet and later Crown treasurer, a French-party courtier, writing to the Crown marshal before the rokosz.",
+   "importance": 4,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scored from the DECODE metadata dump (research/catalogue_harvest/decode) during the Oct 2026 Polish archives sweep (research/polish_archives/); not viewed",
+   "verify": "Log in to DECODE and open the images; check sibling keys in the same teka.",
+   "links": [
+    {
+     "label": "DECODE R7517",
+     "href": "https://de-crypt.org/decrypt-web/RecordsView/7517"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Polish archives sweep (DECODE, Archiwum Narodowe w Krakowie)",
+   "prior_art": "open (checked 26 Oct 2026: known.py, web search for Wąsowicz/Lubomirski cipher: nothing)",
+   "decode_ids": [
+    7517
+   ],
+   "ark": "",
+   "scored": "sweep",
+   "access": "online",
+   "access_note": "online (backfilled 28 Oct 2026 from the entry: link DECODE R7517 (https://de-crypt.org/decrypt-web/RecordsView/7517))",
+   "frame_check": {
+    "result": "confirmed",
+    "href": "https://de-crypt.org/decrypt-web/RecordsView/7517 page 3",
+    "frame": "R7517 p.1 (digits at foot) and p.3; R7518/R7519 not viewed",
+    "saw": "p.1 (f.145): Polish letter with a block of about 4 lines of continuous digits at the foot; p.2 blank verso; p.3 (f.147): Polish text with 5-6 lines of continuous digit strings inside the lines and signature. No decipherment written.",
+    "date": "2026-10-30",
+    "by": "claude frame check d02"
+   },
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L02; narrowed 2 Nov 2026",
+    "seen": {
+     "kind": "scan",
+     "where": "DECODE R7517 pp.1-3, R7518 pp.1-2, R7519 pp.1-3 (images fetched and viewed 2 Nov 2026)",
+     "extent": "R7517 two digit runs of about 9 lines; R7518 and R7519 several runs of two-digit groups separated by points, 6-12 lines a page",
+     "cipher": "Polish letters with digit-group cipher in clear text. R7518 pp.1-2 and R7519 p.3 carry plaintext words written above the number groups in the writer's hand (e.g. 'przyiechales tu do Krolowey', 'pisze Xiadz Arcybiskup'): an interlinear decipherment. R7517 has none."
+    },
+    "prior_art": {
+     "decode": "R7517-R7519 status 4 (N/A), but DECODE flags inline plaintext on R7518/R7519, which the images confirm.",
+     "tomokiyo": "Tomokiyo's Unsolved Historical Ciphers page (local copy unsolved.htm in the repo) grepped 2 Nov 2026: no Polish items.",
+     "lasry": "No Lasry entry found.",
+     "edition": "Web search found only 'Listy Jana Andrzeja Morsztyna' (edition cited in a BK PAN record; not checked for these letters).",
+     "literature": "Search for a Morsztyn-Lubomirski cipher key found nothing specific."
+    },
+    "key_check": "Sanguszko-archive key records R7515 (a=5/10/15) and R7460/R7461 (graphic signs) are held (targets/potocka1714) and did not fit Potocka; not applied to R7517 here, but R7518/R7519 give the values by interlinear.",
+    "duplicates": "known.py R7517 / R7518 / R7519 / Morsztyn (2 Nov): no other record; R7517-R7519 are three letters of teka 247/13."
+   },
+   "restored_from": "removed_2026-11-02 #441",
+   "open": "R7517, two digit runs of about 9 lines with no gloss. Siblings R7518 and R7519 are glossed.",
+   "needs": "Rebuild values from the R7518 and R7519 glosses and apply them; this may prove a lookup.",
+   "vetting_note": "Letter seen (DECODE R7517 p.1: Polish text with two runs of continuous digits, no gloss) but the printed edition Listy Jana Andrzeja Morsztyna, ed. Ochmann-Staniszewska (Wroclaw 2002, 378 pp., contains Morsztyn to Lubomirski letters) could not be opened, so prior art is unanswered; the letter may be printed there with the cipher expanded. Needs the volume (library) or a Polish full-text search; no Lasry or Tomokiyo item found in 4 searches."
+  },
+  {
+   "id": 497,
+   "counted": true,
+   "year": 1541,
+   "date": "Nov 1540 - May 1541",
+   "title": "Hieronymus Łaski to Ferdinand I: letters 5-2-20 and 5-2-24",
+   "correspondents": "Hieronymus Łaski (Jarosław Łaski) → Ferdinand I",
+   "place": "Constantinople",
+   "language": "Latin",
+   "region": "Central Europe",
+   "period": "1497-1559",
+   "shelfmark": "HHStA Wien, StAbt Türkei I 5-2-20, 5-2-24",
+   "folio_note": "about 10 letters, 'Chiffriertes Schreiben'; digitised (AIS)",
+   "cls": "B",
+   "status": "AIS: 'Chiffriertes Schreiben von Hieronymus Laski an Ferdinand I.'; no decipherment noted (other Türkei I items say 'interlinear dechiffriert' when glossed). The repo rebuilt Łaski's 1531 key to the Bavarian dukes (kaa4591) — a different alphabet but the same writer. Not on DECODE. || Brackx, issue #172 (28 Oct 2026): AIS notes 'interlinear dechiffriert' on Türkei I 5-2-1, 5-2-5, 5-2-7, 5-2-9 and 5-2-10; 5-1-77 glossed likewise; all printed in Gévay, Urkunden und Actenstücke III (Vienna 1842; archive.org urkundenundacten113gv), Beilagen 27-47. Read at the time and in print; more letters (5-2-18, 5-2-20 ...) are listed in the issue. Narrowed to the unread part and restored 2 Nov 2026.",
+   "why": "Łaski's 1540-41 mission, in which he was imprisoned by the Porte while Buda fell (1541): first-hand reports to Ferdinand.",
+   "importance": 4,
+   "solvability": 4,
+   "difficulty": 3,
+   "score_note": "Scored from the archive description during the Oct 2026 Austrian State Archives (HHStA/FHKA) sweep (research/central_archives/); not viewed",
+   "verify": "Check the Gévay print against the interlinear decipherments; extend to 5-2-18 and later items.",
+   "links": [
+    {
+     "label": "AIS 5-2-1",
+     "href": "https://www.archivinformationssystem.at/detail.aspx?ID=6234762"
+    },
+    {
+     "label": "AIS 5-2-9",
+     "href": "https://www.archivinformationssystem.at/detail.aspx?ID=6235126"
+    },
+    {
+     "label": "AIS 5-2-7",
+     "href": "https://www.archivinformationssystem.at/detail.aspx?ID=6234791"
+    },
+    {
+     "label": "AIS 5-2-2 N.N. (Spanish)",
+     "href": "https://www.archivinformationssystem.at/detail.aspx?ID=6234784"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Austrian State Archives (HHStA/FHKA) sweep",
+   "prior_art": "open (checked 26 Oct 2026: repo known.py, web: Janakowski 2023 thesis on Łaski's diplomacy, no decipherment edition found)",
+   "ark": "",
+   "scored": "sweep",
+   "access": "online",
+   "access_note": "online (backfilled 28 Oct 2026 from the entry: about 10 letters, 'Chiffriertes Schreiben'; digitised (AIS) AIS: 'Chiffriertes Schreiben von Hieronymus Laski an...)",
+   "frame_check": {
+    "result": "confirmed",
+    "href": "https://www.archivinformationssystem.at/detail.aspx?ID=6234762",
+    "frame": "StAbt Tuerkei I 5-2-1, image 1 of 2 (Laski, 12 Jan 1541)",
+    "saw": "Latin letter with long runs of alphabetic/symbol cipher (about 30 lines), each run with an interlinear contemporary decipherment in Latin; Vienna archive stamp; two images (opened outer sheet and second sheet).",
+    "note": "Only 5-2-1 checked; the AIS entry does carry the interlinear decipherment, consistent with Brackx.",
+    "date": "2026-10-30",
+    "by": "claude frame check 02"
+   },
+   "vetting": {
+    "date": "2026-11-03",
+    "by": "claude leads review batch b62",
+    "seen": {
+     "kind": "transcription",
+     "where": "AIS records 6235157 (5-2-20) and 6235166 (5-2-24) opened by curl 3 Nov 2026; Gévay, Urkunden und Actenstücke III, archive.org urkundenundacten113gv_djvu.txt, Beilagen L-LIII",
+     "extent": "5-2-20: 2 letters (13 and 25 Apr 1541), 4 images; 5-2-24: 5 letters 8-21 May 1541, fol. 58-62",
+     "cipher": "AIS: 'Chiffrierte Schreiben von Hieronymus Laski an Ferdinand I.' with 'Edition: Anton Gevay ... Beilage Nr. 50 & 51' (5-2-20) and 'Beilage Nr. 52 & 53' (5-2-24); Gévay's headings say the originals are 'durchaus in Chiffern geschrieben'."
+    },
+    "prior_art": {
+     "decode": "known.py 3 Nov 2026 on 5-2-20 and Laski: only leads rows; not on DECODE.",
+     "tomokiyo": "WebSearch 3 Nov 2026 (Hieronymus Laski Gevay Chiffre): no cryptiana page.",
+     "lasry": "No Lasry reading of the 1541 letters found; the repo's Laski 1531 key (kaa4591) is a different alphabet.",
+     "edition": "Gévay III prints Laski's letters of 13 Apr (no. L), 25 Apr (LI), 8/9/11 May (LII) and 21 May 1541 (LIII) in Latin; the djvu text was opened and the headings and Latin texts read.",
+     "literature": "Gévay 1838/1842 is the standard print; AIS cites it on both units."
+    },
+    "key_check": "No key needed to read them: the printed Latin in Gévay is the decipherment.",
+    "duplicates": "known.py 3 Nov 2026: catalogue 161 is the 1531 Bavarian Laski letter; no entry for these two units.",
+    "verdict": "read",
+    "closed": "Both units are printed with deciphered Latin text in Gévay, Urkunden und Actenstücke III (AIS cites Beilage 50 & 51 for 5-2-20 and 52 & 53 for 5-2-24; headings L, LI, LII, LIII read in the djvu text), so a printed decipherment exists."
+   },
+   "restored_from": "removed_2026-11-02 #497",
+   "open": "5-2-20 and 5-2-24, not seen glossed. The other letters were read at the time and printed by Gevay.",
+   "needs": "Viewing both items: they may be glossed too."
+  },
+  {
+   "id": 499,
+   "counted": true,
+   "year": 1542,
+   "date": "Mar 1542 - Jul 1543",
+   "title": "Niccolò Ferducci to Ferdinand I: letters 5-4-11, 5-4-16 and 5-5-6",
+   "correspondents": "Niccolò Ferducci → Ferdinand I; Ferducci → Castilegius",
+   "place": "Ragusa",
+   "language": "Italian; Latin",
+   "region": "Central Europe",
+   "period": "1497-1559",
+   "shelfmark": "HHStA Wien, StAbt Türkei I 5-4-11, 5-4-16, 5-5-6",
+   "folio_note": "fol. 20-27, 55 and others; digitised",
+   "cls": "A",
+   "status": "AIS: 5-4-5 'Chiffrierte Schreiben' (no decipherment); 5-4-7 of 6 Jun 1542 'interlinear dechiffriert' — same writer, same months. 27 Oct 2026, Brice Dudout (email): contemporary interlinear decipherments; his independent 1542 table agrees 6/6 with the codes rebuilt for no. 498. Narrowed to the unread part and restored 2 Nov 2026.",
+   "why": "Ottoman news from Ragusa in the years after the fall of Buda.",
+   "importance": 3,
+   "solvability": 4,
+   "difficulty": 2,
+   "score_note": "Scored from the archive description during the Oct 2026 Austrian State Archives (HHStA/FHKA) sweep (research/central_archives/); not viewed",
+   "verify": "View 5-4-7 (glossed) and 5-4-5 in AIS; rebuild and apply the key.",
+   "links": [
+    {
+     "label": "AIS 5-4-5",
+     "href": "https://www.archivinformationssystem.at/detail.aspx?ID=6453190"
+    },
+    {
+     "label": "AIS 5-4-7 glossed",
+     "href": "https://www.archivinformationssystem.at/detail.aspx?ID=6453196"
+    },
+    {
+     "label": "AIS 5-4-11",
+     "href": "https://www.archivinformationssystem.at/detail.aspx?ID=6453545"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Austrian State Archives (HHStA/FHKA) sweep",
+   "prior_art": "in archive: contemporary interlinear decipherments (Dudout, 27 Oct 2026; not verified here)",
+   "ark": "",
+   "scored": "sweep",
+   "as_of": "2026-10-27",
+   "access": "online",
+   "access_note": "online (backfilled 28 Oct 2026 from the entry: fol. 20-27, 55 and others; digitised AIS: 5-4-5 'Chiffrierte Schreiben' (no decipherment); 5-4-7...)",
+   "frame_check": {
+    "result": "confirmed",
+    "href": "https://www.archivinformationssystem.at/detail.aspx?ID=6453190",
+    "frame": "StAbt Tuerkei I 5-4-5, image 1 of 8 (Ferducci, Ragusa 24 Mar 1542)",
+    "saw": "Italian letter, about 22 lines: runs of symbol cipher (Greek/Latin-like signs) with the contemporary Italian decipherment written interlinear above each run. AIS description reads '4 Schreiben, interlinear dechiffriert', and images 2-4 show the other letters (5 Mai 1542 etc.) of the same file.",
+    "note": "The entry's statement 'no decipherment' for 5-4-5 is wrong: the AIS record says interlinear dechiffriert and the images show the glosses.",
+    "date": "2026-10-30",
+    "by": "claude frame check 02"
+   },
+   "vetting": {
+    "date": "2026-11-03",
+    "by": "claude leads review batch c14",
+    "seen": {
+     "kind": "scan",
+     "where": "AIS getimage route, 1600 px, for 5-4-11 (ID 6453545, images 1-2), 5-4-16 (ID 6454134, images 1-2), 5-5-6 (ID 6454181, images 1, 3, 7 of at least 12)",
+     "extent": "5-4-11 f. 55: two short Italian notes, clear text with about 25 code groups. 5-4-16 f. 65-66: a full letter in clear Italian. 5-5-6 f. 18-46: 9 letters per AIS; f. 19 is about 28 lines of symbol cipher, f. 20 a full clear Italian text.",
+     "cipher": "5-5-6 f. 19 (13 Mar 1543): symbol cipher with code values noted in the margin (N5, N23, S21 galere, S10 Friuli, Q8 exercitus); f. 20, dated 1543 13/3, is the clear Italian text with the same codes noted, and f. 24 is another such sheet (8/10 April 1543). 5-4-11: code groups such as Q20, H1, NS with glosses written above them and in the margin (first note glossed; second note, some groups have no visible gloss). 5-4-16: clear letter; only place, date and signature in code (S18, D8, D19, 543)."
+    },
+    "prior_art": {
+     "decode": "known.py on Ferducci returned only this lead and its own rows in the harvested DECODE dump and ledgers; not on DECODE.",
+     "tomokiyo": "Earlier pass (2 Nov) found no cryptiana page on Ferducci; not rerun, as the decipherment is on the leaves.",
+     "lasry": "Earlier pass found no Lasry reading of Ferducci; not rerun, as the decipherment is on the leaves.",
+     "edition": "Austro-Turcica 1541-1552 not opened for these letters; not needed for this verdict, which rests on the archive's own decipherments.",
+     "literature": "Dudout's report of 27 Oct 2026 (in this lead's status) describes contemporary interlinear decipherments in this series; these leaves agree with it."
+    },
+    "key_check": "No key needed for the verdict: the code values are written on the leaves. Dudout's 1542 table is known here only as a report; not tested.",
+    "duplicates": "known.py Ferducci: catalogue 498 (1530-32) is a different group; no other entry holds these three units.",
+    "verdict": "partly_read",
+    "closed": "Contemporary decipherments are in the file. AIS 5-5-6 reads '9, teilweise chiffrierte, Schreiben mit dechiffriertem Text als Beilage', and f. 20 and f. 24 are such clear sheets. 5-4-11 has code glosses above the groups, with some groups in its second note unglossed at this resolution. 5-4-16 is clear except place, date and signature codes. I viewed 3 of the 5-5-6 images, not all nine letters; what remains unread is short name and place codes."
+   },
+   "restored_from": "removed_2026-11-02 #499",
+   "open": "5-4-11, 5-4-16 and 5-5-6, not seen. Glossed siblings 5-4-5 and 5-4-7 give the key.",
+   "needs": "Viewing the three items: they may be glossed or read with the sibling values."
+  },
+  {
+   "id": 521,
+   "counted": true,
+   "year": 1798,
+   "date": "Jul 1798 - Feb 1799",
+   "title": "Sieyès embassy: Wessenberg P 1839 5 and the Rivals letter of 10 Oct 1798",
+   "correspondents": "Talleyrand to Sieyes (Konstanz P 1839 21, Paris 26 Oct 1798, clear text written over the cipher); Sieyes to Talleyrand (probable, P 1839 5, Berlin 17 Jul 1798); AN 284AP/12: Rivals (Cassel, 10 Oct 1798, dechiffrement manque), De Bry, Roberjot, Grouvelle, Parandier",
+   "place": "Paris / Berlin / Hamburg",
+   "language": "French",
+   "region": "France",
+   "period": "1701-1800",
+   "shelfmark": "Stadtarchiv Konstanz, Wessenberg correspondence P 1839 5; Archives nationales 284AP/12",
+   "folio_note": "Konstanz: 1 ciphered letter (26 Oct 1798, 1 p.) and a postscript of ciphered news (17 Jul 1798); AN: letters of 10 and 14 Oct 1798 partly ciphered, decipherment missing",
+   "cls": "B",
+   "status": "Kalliope: 'Chiffrierter Brief mit der Bitte um Auskunft über die Reaktionen in Berlin...'; AN inventory: 'partiellement chiffrée, le déchiffrement manque'. Another Konstanz letter (15 Sep 1798) mentions Grouvelle bringing 'la nouvelle chiffre' for Berlin-Hamburg-Copenhagen-Stockholm. Narrowed to the unread part and restored 2 Nov 2026.",
+   "why": "The Directory's secret Prussian policy during the Second Coalition, in Sieyès's own papers.",
+   "importance": 4,
+   "solvability": 2,
+   "difficulty": 3,
+   "score_note": "Scored from the archive description during the Oct 2026 Kalliope / FranceArchives sweep (research/central_archives/); not viewed",
+   "verify": "Ask Stadtarchiv Konstanz for P 1839 5/21 and consult AN 284AP/12; look for the 1798 Directory cipher (AE, Bazeries).",
+   "links": [
+    {
+     "label": "Kalliope P 1839 21",
+     "href": "https://kalliope-verbund.info/DE-611-HS-2869939"
+    },
+    {
+     "label": "Kalliope P 1839 5",
+     "href": "https://kalliope-verbund.info/DE-611-HS-2869346"
+    },
+    {
+     "label": "FranceArchives 284AP/12",
+     "href": "https://francearchives.gouv.fr/fr/facomponent/1136e85496902146877dddc1d3cfd9b284e913ff"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Kalliope sweep",
+   "prior_art": "open (checked 26 Oct 2026: repo known.py, web search)",
+   "ark": "",
+   "scored": "sweep",
+   "frame_check": {
+    "result": "not_found",
+    "href": "https://kalliope-verbund.info/DE-611-HS-2869939",
+    "frame": "P 1839 21 / P 1839 5 / AN 284AP/12",
+    "saw": "Kalliope records (P 1839 21: ciphered letter Talleyrand to Sieyes, Paris 26 Oct 1798, 1 p., French, 'Klartext ist ueber den Chiffren notiert'; P 1839 5: Berlin 17 Jul 1798, 4 pp., cipher in postscript) and the FranceArchives notice for 284AP/12 are catalogue text only. No digitised images on any of them.",
+    "note": "Nothing digitised online; cipher not seen.",
+    "date": "2026-10-30",
+    "by": "claude frame check 05"
+   },
+   "access": "archive",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L15; narrowed 2 Nov 2026",
+    "seen": {
+     "kind": "not online",
+     "where": "Kalliope P 1839 21 https://kalliope-verbund.info/DE-611-HS-2869939 and P 1839 5 DE-611-HS-2869346 (fetched 2 Nov 2026); FranceArchives 284AP/12 https://francearchives.gouv.fr/fr/facomponent/1136e85496902146877dddc1d3cfd9b284e913ff read in Chrome 2 Nov 2026 (inventory text only); no images on any",
+     "extent": "Konstanz: P 1839 21, Talleyrand to Sieyes, Paris 26 Oct 1798, 1 p.; P 1839 5, Berlin 17 Jul 1798, 4 pp., ciphered and clear news in the postscript. AN 284AP/12: inventory of Sieyes's Berlin mission files; ciphered letters of Rivals (Cassel), De Bry and Roberjot (Rastatt), Grouvelle (Copenhagen), Parandier (Hamburg) and others",
+     "cipher": "Kalliope P 1839 21: \"Chiffrierter Brief ...\" and \"Der Klartext ist ueber den Chiffren notiert\": the plaintext is written over the cipher on the leaf. P 1839 5: \"im Nachtrag chiffrierte und nicht chiffrierte Tagesnachrichten\" (no decipherment mentioned). Both are Wessenberg's copies headed \"Varia Curiosa concernant la Prusse tire de la correspondance de Mr Laforest\". FranceArchives: Rivals, Cassel 10 Oct 1798 \"partiellement chiffree, le dechiffrement manque\"; many other letters \"chiffree\"."
+    },
+    "prior_art": {
+     "decode": "DECODE list scan: no Sieyes, Wessenberg or De Bry record.",
+     "tomokiyo": "No cryptiana page on Directory-era Berlin or Rastatt ciphers found.",
+     "lasry": "No Lasry item found.",
+     "edition": "The inventory states that De Bry's and Roberjot's Rastatt letters marked * are printed in Montarlot & Pingaud, Le Congres de Rastadt (Paris 1912-13), the printed ciphered ones among them. The Konstanz copy P 1839 21 carries its own clear text.",
+     "literature": "Web searches in German on the Konstanz Wessenberg copies and on Talleyrand-Sieyes ciphers found nothing further."
+    },
+    "key_check": "No Directory-period key is held or on DECODE. The clear text over the cipher in P 1839 21 is itself a crib for that piece; not tried because the leaf is not online. Rastatt printed texts would give cribs for the De Bry/Roberjot letters; not applied.",
+    "duplicates": "known.py run 2 Nov 2026 on the shelfmark series and correspondents; no catalogue duplicate; the Konstanz letters A 33 11/12 (catalogue 523) are a different group. No duplicate."
+   },
+   "restored_from": "removed_2026-11-02 #521",
+   "open": "P 1839 5 and the Rivals letter ('déchiffrement manque'). P 1839 21 carries clear text over the cipher and is a crib.",
+   "needs": "Scans of both; neither has been seen.",
+   "vetting_note": "cluster of ciphered letters across two archives, none online. Kalliope P 1839 21 (fetched 3 Nov) says 'Der Klartext ist ueber den Chiffren notiert', so that letter is deciphered on its leaf; P 1839 5 has only 'im Nachtrag chiffrierte und nicht chiffrierte Tagesnachrichten'; AN 284AP/12 (FranceArchives needs JS, not fetchable by curl) lists many ciphered letters, the Rastatt ones printed in Montarlot & Pingaud, Le Congres de Rastadt (1912-13), which could not be found on archive.org and was not opened, so the edition question is open. Needs one identified document (e.g. the Rivals letter of 10 Oct 1798, 'dechiffrement manque') and the AN inventory or Montarlot & Pingaud text checked at that item."
+  },
+  {
+   "id": 591,
+   "counted": true,
+   "year": 1812,
+   "date": "1809-1813",
+   "title": "Prussian cipher pieces: Rep. 91 A Nr. 86 and the Naples piece",
+   "correspondents": "Frederick William III → Heinrich von Werther; French governor of Magdeburg → Napoleon; Prussian legation Naples",
+   "place": "Königsberg / Vienna / Magdeburg / Naples",
+   "language": "French / German",
+   "region": "Germany",
+   "period": "1801-1900",
+   "shelfmark": "GStA PK, I. HA Rep. 91 A Nr. 86; I. HA Rep. 81 Neapel nach 1807 Nr. 24",
+   "folio_note": "FA Werther Nr. 36: 3 Bl., franz., 'Dechiffrierung des Zahlensystems' filed with the ciphered letters of 24-31 March 1810",
+   "cls": "B",
+   "status": "Finding aid as quoted. Prussian keys of 1807-14 survive in III. HA MdA ZB Nr. 73/1-7, 76, 76/1 (incl. 'Chiffren für ... die Missionen in Wien'), and 'Chiffren der französischen Kundschafter unter Napoleon' (MdA I Nr. 8808). Not digitised. Narrowed to the unread part and restored 2 Nov 2026.",
+   "why": "Prussia between Tilsit and the War of Liberation.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 2,
+   "score_note": "Scored from the archive description during the Oct 2026 Archivportal-D sweep (research/archivportal_d/); not viewed",
+   "verify": "Order FA Werther 36 and MdA ZB 73/6.",
+   "links": [
+    {
+     "label": "FA Werther Nr. 36",
+     "href": "https://www.archivportal-d.de/item/4Z2P2GUGPJUUL3GT6XLUQSTPW3BAQHOJ"
+    },
+    {
+     "label": "Rep. 91 A Nr. 86",
+     "href": "https://www.archivportal-d.de/item/C4CCF5LUUEXRXLSPLOIJDVTAJZ5BDCL3"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Archivportal-D sweep",
+   "prior_art": "open (checked 26 Oct 2026: known.py, quick web search).",
+   "ark": "",
+   "scored": "sweep",
+   "access": "archive",
+   "access_note": "not online (backfilled 28 Oct 2026 from the entry: ...ranzösischen Kundschafter unter Napoleon' (MdA I Nr. 8808). Not digitised. Order FA Werther 36 and MdA ZB 73/6. open (checked 26 Oct...)",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L18; narrowed 2 Nov 2026",
+    "seen": {
+     "kind": "not online",
+     "where": "https://www.archivportal-d.de/item/4Z2P2GUGPJUUL3GT6XLUQSTPW3BAQHOJ and https://www.archivportal-d.de/item/C4CCF5LUUEXRXLSPLOIJDVTAJZ5BDCL3",
+     "extent": "VI. HA FA Werther Nr. 36: 3 sheets, French, 24-31 March 1810, three ciphered letters of Frederick William III to Werther in Vienna; Rep. 91 A Nr. 86 (1813, ciphered dispatch of the governor of Magdeburg to Napoleon) not read beyond the lead.",
+     "cipher": "Archive's own note on Nr. 36: '3 Bl., franz. Dechiffrierung des Zahlensystems': a decipherment of the number system is filed with the letters. Not digitised."
+    },
+    "prior_art": {
+     "decode": "known.py over the DECODE dumps (views.jsonl, views_b, views_c), decode_updates queue, cryptoole snapshot and all targets/NOTES for the shelfmark and correspondents: no DECODE record for it. Searched 'Werther', 'Magdeburg': only unrelated hits.",
+     "tomokiyo": "Searched web for Tomokiyo cryptiana pages on German-archive ciphers (Baden, Hohenlohe, Wuerttemberg, Bavaria, Prussia): nothing on this item.",
+     "lasry": "Searched web for Lasry / DECODE German envoy ciphers: found only his Saxon 1698-1728 court ciphers (Tartu paper), papal ciphers and 1900-15 German attache messages; nothing on this file.",
+     "edition": "Web search (Prussian cipher 1810 Werther Vienna Frederick William III) found only the DDB/Archivportal record itself and a 1841 file in the same Werther papers asking Werther to decipher a message; no edition.",
+     "literature": "No literature on Prussian ciphers of 1809-13 found; the lead notes Prussian keys of 1807-14 in III. HA MdA ZB Nr. 73/1-7, 76."
+    },
+    "key_check": "Prussian keys of 1807-14 are named in the lead (III. HA MdA ZB Nr. 73, 76); none is held here. The decipherment filed with Nr. 36 would read those three letters once imaged.",
+    "duplicates": "known.py on 'Werther', 'Magdeburg', 'Rep. 91 A': the dudout 2026-10-29 README mentions 'ar-281: Werther 36 and Rep. 91 A Nr. 86' as a candidate; no catalogue, target or DECODE duplicate."
+   },
+   "restored_from": "removed_2026-11-02 #591",
+   "open": "Both unexamined. The three Werther letters have a Dechiffrierung filed with them and are not part of this lead.",
+   "needs": "Scans of both; the Prussian keys of 1807-14 named in the original lead (III. HA MdA ZB Nr. 73, 76) are not held.",
+   "vetting_note": "Records opened in Chrome, none digitised. FA Werther Nr. 36: '3 chiffrierte Schreiben Friedrich Wilhelm III. an v. Werther in Wien', 24-31 Mar 1810, with 'Dechiffrierung des Zahlensystems' noted: prior art, out of this lead. Rep. 91 A Nr. 86: title only, 'Übergabe einer chiffrierten Depesche des Gouverneurs von Magdeburg an Napoleon', 1813, filed under Reisen, Zeremoniell, so no sign the ciphertext survives. Naples piece not rechecked. Needs a GStA PK copy of Rep. 91 A Nr. 86."
+  },
+  {
+   "id": 599,
+   "counted": true,
+   "year": 1700,
+   "date": "1654-1711",
+   "title": "Swedish government of Bremen-Verden: numeric cipher with interlinear plaintext, Rep. 5a Nr. 654, 379, 670",
+   "correspondents": "Charles X Gustav, Charles XII, Nils Gyllenstierna, Johan Schmedeman, Henrik Gustaf von Müllern; Heinrich von Schöllen (Breslau) ↔ Bremen-Verden government (Stade)",
+   "place": "Stockholm / Stade / Breslau / field",
+   "language": "Swedish / German",
+   "region": "Scandinavia",
+   "period": "1651-1700",
+   "shelfmark": "Niedersächsisches Landesarchiv Stade, Rep. 5a Nr. 654",
+   "folio_note": "Nr. 670 'Diverse chiffrierte Schreiben ... auch: Schlüssel zu den Chiffren'; Nr. 379 'teils chiffriert' with a letter about the key; Nr. 636, 643, 654 partly ciphered",
+   "cls": "A",
+   "status": "Finding aid as quoted; all digitised. Digitised: images in the Archivportal-D/DDB viewer. 27 Oct 2026, Brice Dudout (email): Nr. 670 read: Charles XII to the Rådet, Bender, 26 April 1710, both enciphered copies, 639 of 640 groups; key rebuilt by crib (a ciphered troop list, fols. 73 and 82, against its clear draft, fol. 74) and checked on letters not used to build it (93% and 96%, shuffled keys at most 80%). Merged 27 Oct 2026 as targets/stade1710 (pull request #132, write-up stade1710.html). Entry narrowed to the rest: the other letters of Nr. 670 and the files Nr. 379, 636, 643, 654, 915, none reported read. Narrowed to the unread part and restored 2 Nov 2026.",
+   "why": "Swedish Germany in the wars of 1657-60 and 1700-11.",
+   "importance": 3,
+   "solvability": 4,
+   "difficulty": 1,
+   "score_note": "Scored from the archive description during the Oct 2026 Archivportal-D sweep (research/archivportal_d/); not viewed",
+   "verify": "Open Nr. 670 and apply its key to the rest.",
+   "links": [
+    {
+     "label": "Rep. 5a Nr. 670",
+     "href": "https://www.archivportal-d.de/item/FUSDO3EWDESHSDD752WH6TEVDJI2KIVI"
+    },
+    {
+     "label": "Rep. 5a Nr. 379",
+     "href": "https://www.archivportal-d.de/item/HFE3O2LYIAOIGZ4FTFSJX3QDEMNW637Y"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Archivportal-D sweep",
+   "prior_art": "partial: Nr. 670 (26 Apr 1710) read by Brice Dudout, Europe chiffrée (https://bdudout.github.io/europe-chiffree/en/documents.html#stade-1710), Oct 2026",
+   "ark": "",
+   "scored": "sweep",
+   "as_of": "2026-10-27",
+   "outcome": "attempted, open",
+   "writeup": "stade1710.html",
+   "access": "online",
+   "access_note": "online (backfilled 28 Oct 2026 from the entry: ...r. 636, 643, 654 partly ciphered Finding aid as quoted; all digitised. Digitised: images in the Archivportal-D/DDB viewer. 27 Oct...)",
+   "frame_check": {
+    "result": "confirmed",
+    "href": "https://www.arcinsys-digitalisate.niedersachsen.de/nla_st/rep._5a/nr._670/m_st_rep._5a_nr._670_aufn_0074.jpg",
+    "frame": "aufn_0074 of 135 (NLA ST Rep. 5a Nr. 670, fol. 73)",
+    "saw": "Slip dated Stade Nov 1710 with a ciphered troop list: three-digit number groups separated by points under headings (e.g. 'CCC', '424'), plus a few lines of dotted numbers at the foot; the clear Swedish draft is aufn_0075 (fol. 74). METS: https://www.arcinsys.niedersachsen.de/arcinsys/mets?detailid=v7225247 (direct JPEGs aufn_NNNN).",
+    "note": "Other files (379, 636, 643, 654, 915) not opened.",
+    "date": "2026-10-30",
+    "by": "claude frame check 01"
+   },
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L03; narrowed 2 Nov 2026",
+    "seen": {
+     "kind": "scan",
+     "where": "NLA Stade Rep. 5a Nr. 670 aufn_0074 (arcinsys-digitalisate .../nr._670/m_st_rep._5a_nr._670_aufn_0074.jpg), fetched and shown in the frame check; plus first pages of Nr. 379, 636, 643, 654 and 915 (aufn_0001, 0004, 0008, 0014, 0020, 0030) fetched by curl and viewed as a contact sheet on 2 Nov 2026.",
+     "extent": "Nr. 670: ciphered troop list of Nov 1710 with three-digit groups (read). Nr. 654 aufn_0004/0008/0030: pages of hand-drawn symbol cipher in rows. Nr. 643 aufn_0020: two inserted sheets of dense black print or blocks, not checked. Nr. 379, 636, 915 pages sampled show clear German/Swedish hands; cipher location in them not found in the sample.",
+     "cipher": "Nr. 670 is read (Dudout, stade1710): numeric code groups with a rebuilt key. Nr. 654 shows a symbol cipher with no gloss on the pages seen; the other files not confirmed to hold cipher on the pages sampled."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE (known.py Rep. 5a: targets/stade1710, README and SOLVED_* rows only).",
+     "tomokiyo": "Tomokiyo cryptiana: no page on Bremen-Verden or Stade cipher letters (search 2 Nov 2026).",
+     "lasry": "No Lasry reading found.",
+     "edition": "No edition found for the Bremen-Verden government ciphers; Charles XII letter of 26 Apr 1710 read by Dudout and published as targets/stade1710.",
+     "literature": "Dudout Europe chiffree documents.html#stade-1710 (Nr. 670, 639 of 640 groups, key rebuilt by crib)."
+    },
+    "key_check": "Nr. 670 key (targets/stade1710) rebuilt by crib from the troop list; it is a numeric code and was not tried on the symbol cipher of Nr. 654 (different sign type). No key held for Nr. 379, 636, 643, 654, 915.",
+    "duplicates": "known.py Rep. 5a: Nr. 670 is covered by stade1710 (PR #132); the other five files have no repo target.",
+    "verdict": "read",
+    "closed": "Unit by unit. Nr. 654: numeric cipher with the plaintext letter written under each group (aufn_0003, 0021, 0057, 0073); the earlier note of a 'symbol cipher' misread those glosses. Nr. 379: glossed over each group (aufn_0008). Nr. 670: pieces glossed (aufn_0004, 0097); the German letter at aufn_0079 is unglossed but looks like the one stade1710 NOTES says K1710 reads; aufn_0107-0134 hold a Clavis, which stade1710 did not use. Nr. 915: 11 images, no cipher seen. Nr. 636 and 643: cipher not located at contact-sheet size. No unglossed passage without a key was found, but most pages were seen only as contact sheets."
+   },
+   "restored_from": "removed_2026-11-02 #599",
+   "open": "Pages of hand-drawn symbol cipher in rows, unglossed (aufn_0004, 0008, 0030). Nr. 670 is read (targets/stade1710), and its numeric key is a different type.",
+   "needs": "Extent: a page-by-page pass. Nr. 643 has sheets not checked; Nr. 379, 636 and 915 were sampled only."
+  },
+  {
+   "id": 615,
+   "counted": true,
+   "year": 1495,
+   "date": "28 Dec 1495",
+   "title": "Ferdinand and Isabella → De Puebla, Tortosa, 28 Dec 1495, cipher copy in Puebla's Great Roman Numeral code",
+   "correspondents": "Ferdinand and Isabella → Rodrigo González de Puebla",
+   "place": "Tortosa",
+   "language": "Spanish",
+   "region": "England",
+   "period": "15th century",
+   "shelfmark": "AGS, Patronato Real, LEG,52, DOC.124",
+   "folio_note": "PARES description 2207846, 4 images (pp. 1-4, foliation 664-665; old mark T. c. Y. 2). Sample decoded: p. 1 ll. 6-8 and p. 2 ll. 1-6; the rest of the cipher copy not decoded.",
+   "cls": "B",
+   "status": "Identified 27 Oct 2026 (WAINUT, PR #101; targets/puebla1495/): the cipher copy of the despatch of 28 Dec 1495 whose clear draft Bergenroth abstracted in CSP Spain I no. 113 (no. 114 notices the cipher copy, 'substance exactly the same', with no decipherment); five sending dates on p. 2 match no. 113 and no other item. A sample (p. 1 ll. 6-8) decoded with the extant key AGS PTR leg. 52 doc. 33. Open: the cipher copy beyond the sample, and the groups 883, 1374, 1335, 1813, 852, 868, 1221 and 'xxix' (key images not opened: PARES HTTP 429). No page.",
+   "why": "Anglo-Spanish diplomacy of 1495 (Perkin Warbeck, the Catherine of Aragon marriage treaty) in a code whose 2400-element key survives.",
+   "importance": 3,
+   "solvability": 4,
+   "difficulty": 2,
+   "score_note": "Scored from the archive description during the Oct 2026 PARES sweep (research/pares_ags/); not viewed",
+   "verify": "Decode the rest of pp. 1-4 with the PTR 52 doc. 33 key (key images 3-9, 47-51, 70-75, 78-84, 110-113 for the open groups) and compare the wording with no. 113.",
+   "links": [
+    {
+     "label": "PARES description",
+     "href": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/2207846"
+    },
+    {
+     "label": "Tomokiyo, Spanish ciphers",
+     "href": "http://cryptiana.web.fc2.com/code/spanish.htm"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "PARES (AGS) sweep",
+   "prior_art": "checked 27 Oct 2026: content in print as Bergenroth's abstract of the clear draft (CSP Spain I no. 113, pp. 72-75); no decipherment of the cipher copy printed (no. 114); 1868 Supplement starts in 1498",
+   "ark": "",
+   "scored": "sweep",
+   "outcome": "attempted, open",
+   "frame_check": {
+    "result": "confirmed",
+    "href": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/2207846",
+    "frame": "image 1 (664R) and image 2 (664V), PTR,LEG,52,124",
+    "saw": "Image 1: about 27 lines of Roman-numeral cipher (dar + lxxi style numerals with strokes/abbreviation marks, interspersed with some clear Spanish words e.g. names Diego de Soria, John de Santangel), docket \"De los Reyes cifra sin fecha\", old mark T.C.Y.2. Image 2: about 25 lines, same Roman-numeral cipher with a few plain words (Salvador Duarte, la compania). No decipherment written on either page. Spanish. 4 images total (664R-665V); only images 1-2 viewed.",
+    "date": "2026-11-02",
+    "by": "claude frame check p01"
+   },
+   "vetting_note": "Unopened editions that would cover the unread part: Antonio de la Torre, Documentos sobre relaciones internacionales de los Reyes Catolicos vol. V (1495-1497, CSIC 1965), and Suarez Fernandez, Politica internacional de Isabel la Catolica vol. IV (1972). Neither is on archive.org (advancedsearch 0 hits); Google Books gives the set no preview or snippet only, and searches there for the despatch returned nothing either way. Either may print the clear draft of 28 Dec 1495 in full, so the prior-art question is unanswered. Opened: CSP Spain I pp. 72-79 (BHO in Chrome): no. 113 is an English abstract of the draft with quotations, no. 114 notices the cipher copy ('Written in two different keys of cipher, one of which is extant') with no decipherment. Tomokiyo, spanish.htm: lists PTR 52 doc. 124 as 'another undated letter' in a list of letters probably using the code, with no reading. Not checked: Rymer, Rodriguez Villa, Mattingly (no text opened; none is known to print this despatch). New for whoever resumes: CSP no. 117 (pp. 75-77), the merchant-cover letter of the same day from 'MCCCIX (Guide)' to Alonzo de Compludo, also names Diego de Soria, Juan de Santa Gadea and the Company, and Bergenroth prints its groups deciphered. Doc. 124 uses the same cover words, so compare doc. 124 with no. 117 as well as no. 113: the identification with no. 113 alone is not settled. If de la Torre V and Suarez IV show no print, the block can be open with key_held AGS PTR leg. 52 doc. 33."
+  },
+  {
+   "id": 697,
+   "counted": true,
+   "year": 1917,
+   "date": "9 Nov 1917",
+   "title": "German agent message 'Tismera', Nov 1917",
+   "correspondents": "German agents -> unknown",
+   "place": "United States / Mexico",
+   "language": "German",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 165, WCD/MID file 10270-81 (index card M1194 roll 75, frame 2399)",
+   "folio_note": "Three messages; the Tismera message unfinished.",
+   "cls": "B",
+   "status": "Card read 2 Nov 2026: two messages 'have been deciphered' (code a disc[...], text cut at the card edge) and the Tismera message was being deciphered 'by use of an old system of Ger. shorthand ... very slow'. No later result on the card. Narrowed to the unread part and restored 2 Nov 2026.",
+   "why": "MI-8's first months: a German agent system built on shorthand, read only in part.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 4,
+   "score_note": "Scored from MID index cards / BI case-file OCR during the Oct 2026 NARA slice-E triage (research/nara_triage_e/); not viewed",
+   "verify": "Order MID file 10270-81 (RG 165, entry 65, NARA College Park) and check whether the ciphertext copy survives.",
+   "links": [
+    {
+     "label": "M1194 roll 75 (frame 2399)",
+     "href": "https://catalog.archives.gov/id/118077561"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage (slice E, RG 165/RG 65 cipher-word pass)",
+   "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search)",
+   "ark": "",
+   "scored": "sweep",
+   "access": "archive",
+   "access_note": "not online (backfilled 28 Oct 2026 from the entry: ...rrespondence file itself (RG 165, entry 65, MID 1917-41) is not digitised; only the index card (M1194/M912/M1474) is online. Order MI...)",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L22; narrowed 2 Nov 2026",
+    "seen": {
+     "kind": "not online",
+     "where": "NARA M1194 roll 75 frame 2399 (https://catalog.archives.gov/id/118077561); NARA catalog card image (RG 165 index card, fetched by curl from the catalog medialz route and read in full)",
+     "extent": "Three messages (MID file 10270-81; not digitised).",
+     "cipher": "Card read: 10270-81, C,MIS.WCD. Nov. 9-17: 'Enc. 2 messages which have been deciphered. Code used in these messages was a disc[...] The Tismera message is being deciphered by use of an old system of Ger. shorthand. Translation & deciphering goes very slow.'"
+    },
+    "prior_art": {
+     "decode": "Not a DECODE item: DECODE holds European early-modern archives; known.py on the names (2 Nov 2026) hits only this repo's own catalogue/triage rows.",
+     "tomokiyo": "Tomokiyo's cryptiana covers European and some Spanish/Latin material before 1900, not US MID files; nothing on this item (searched with the names, 2 Nov 2026).",
+     "lasry": "No Lasry/DECODE treatment; known.py hit only our own rows.",
+     "edition": "No edition or calendar known (searched 2 Nov 2026).",
+     "literature": "Searched 2 Nov 2026 (WebSearch, five or more queries across the MID-card group: MI-8/Yardley and Manly case lists, Friedman collection, the lead's names plus cipher/code): no printed or online decipherment of this item; the Yardley/Manly literature (Dooley, Codes Ciphers and Spies; NSA histories) does not mention it."
+    },
+    "key_check": "No key held; the two messages were deciphered at the time (decipherments not online); the Tismera message was in progress with no result on the card.",
+    "duplicates": "known.py run on 'Tismera' (2 Nov 2026): hits only this entry's own catalogue/CATALOGUE.md/nara_triage_e rows, no other catalogue id or DECODE record for the same item."
+   },
+   "restored_from": "removed_2026-11-02 #697",
+   "open": "The Tismera message, in progress with no recorded result; the other two were deciphered by MID.",
+   "needs": "MID file 10270-81 itself: only the index card is online.",
+   "vetting_note": "Chrome pass 3 Nov 2026 c20: catalog.archives.gov/id/118077561 opens in Chrome but is only the M1194 name-index file unit 'Eun - Fac' (RG 165, Security Classified Personal Name Index, 2510 card images); the correspondence itself, MID file 10270-81 (RG 165, entry 65, College Park), is not digitised, so no ciphertext can be seen. The card's 'old system of Ger. shorthand' leaves cipher versus shorthand unsettled, and it is no evidence that the sheets survive. Searches ('Tismera' + MI-8 + Mexico; MID file 10270 + Manly/Yardley/Gabelsberger) found nothing on this item; Dooley, Codes Ciphers and Spies, not opened. Needs the file from NARA College Park."
+  },
+  {
+   "id": 737,
+   "counted": true,
+   "year": 1773,
+   "date": "1761-1775",
+   "title": "Spanish despatches from St Petersburg, file on Russian America: unglossed digit pages",
+   "correspondents": "Spanish envoys at St Petersburg → Secretaría de Estado",
+   "place": "St Petersburg / Madrid",
+   "language": "Spanish",
+   "region": "Americas",
+   "period": "1701-1800",
+   "shelfmark": "AGI, ESTADO,86B,N.100",
+   "folio_note": "expediente; images online",
+   "cls": "C",
+   "status": "PARES hit for \"no descifrada\" (27 Oct 2026); title gives no cipher detail, and the term may match \"descifrada\" alone. PARES full-text search seems to match the words, not the phrase (a 1494 lawsuit and Falla letters also hit), so the term match is a pointer, not proof of an undeciphered cipher. not on DECODE or in the repo (known.py: no hits for the signatura or names). Narrowed to the unread part and restored 2 Nov 2026.",
+   "why": "Spanish intelligence on Russian Alaska that set off the Alta California and North Pacific expeditions.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scored from the PARES hit list (title, dates, signatura only) during the 27 Oct 2026 PARES sweep (research/pares_ags/); full description and images not viewed",
+   "verify": "Open the PARES description; view images for cipher passages and descifrados.",
+   "links": [
+    {
+     "label": "PARES 67815",
+     "href": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/67815"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "PARES sweep (AGI)",
+   "prior_art": "open as far as checked (27 Oct 2026, one web search: the file is cited by historians of the North Pacific (e.g. González Martín and Bellón de Aguilar 2024; Almodóvar studies), nothing on its ciphers; the clear content is known)",
+   "ark": "",
+   "scored": "sweep",
+   "access": "online",
+   "access_note": "online (backfilled 28 Oct 2026 from the entry: expediente; images online PARES hit for \"no descifrada\" (27 Oct 2026); title gives no...)",
+   "frame_check": {
+    "result": "confirmed",
+    "href": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/67815",
+    "frame": "images 59 and 79 of 215 (ESTADO,86B,N.100)",
+    "saw": "Expediente of 215 images; viewed images 1, 20, 40, 59, 79, 98, 118, 137, 157, 176, 196, 215 only. Image 59: about 20 lines of numeric cipher (digits separated by dots/slashes) with clear Spanish decipherment written between the lines (text about the expedition of Capitan Estehacov, Krenizin, Kamtschatka). Image 79: about 20 lines of digits only, no gloss. Other sampled images: clear Spanish (title page 'Informe sobre los descubrimientos de los Rusos', Petersburg 1764 docket), several blanks.",
+    "note": "Only 12 of 215 images viewed; other cipher pages likely lie between.",
+    "date": "2026-11-02",
+    "by": "claude frame check p02"
+   },
+   "vetting": {
+    "date": "2026-11-03",
+    "by": "claude leads review batch b67",
+    "seen": {
+     "kind": "scan",
+     "where": "PARES record 67815 (AGI ESTADO,86B,N.100), fetched by curl on 3 Nov 2026 with a fresh cookie jar (show page, then ViewImage.do at zoom 10, 3 s apart): description page read; images 20, 59, 79, 96-101, 104, 108, 112, 116, 118 fetched and viewed",
+     "extent": "215 images. The description marks three ciphered letters 'Carta cifrada. Descifrada entre lineas' (no. 4 Moscow 20 Nov 1767; no. 8 St Petersburg 8 Mar 1773, letter 37; no. 15 St Petersburg 1773, letter 70) and item 11 'Copia descifrada de la carta no. 52'. Image 79 is a full leaf of digit groups with a line of Spanish written under each digit line; images 96-101 are about 20 lines each of bare digit groups (letter 52); image 108 is the clear Spanish copy about Popov (the descifrada copy of letter 52). Image 59 returned the PARES blank-image placeholder.",
+     "cipher": "Image 79 shows digit groups separated by dots and slashes with the decipherment written between the lines ('tres embarcaciones al mismo intento', 'Puso dos al mando del Capitan ...'): the interlinear decipherment is on the leaf. The bare-digit pages 96-101 belong to letter 52, whose decipherment is the separate clear copy at image 108. So the ciphers in this file all carry a contemporary decipherment."
+    },
+    "prior_art": {
+     "decode": "known.py (harvested DECODE dump and repo ledgers) on 'ESTADO,86B,N.100', 'Navia Osorio' and the PARES id: only this lead and the PARES sweep rows; no DECODE record. This is the dump, not a live DECODE search.",
+     "tomokiyo": "No Tomokiyo page on this expediente; the cipher pages are Spanish embassy digit codes of the 1760s-70s and the file is not discussed in cryptiana (web searches of 2-3 Nov 2026).",
+     "lasry": "No Lasry or DECODE-team work on this series found; the decipherments on the leaves make it a read item anyway.",
+     "edition": "The cipher is read in the file itself: interlinear gloss on the letters, a separate descifrada copy of letter 52. No printed edition of the ciphers needed or found.",
+     "literature": "Historians of Russian America (Almodovar, Gonzalez Martin and Bellon de Aguilar 2024) cite the file for its clear content only."
+    },
+    "key_check": "No key is held; none is needed, the clerk's own decipherment is on or filed with every ciphered letter (letters 4 and 15 per the description, 8 and 52 seen).",
+    "duplicates": "known.py on the shelfmark: only entries 737 and 743 (ESTADO,86B,N.64); no duplicate.",
+    "verdict": "read",
+    "closed": "Interlinear decipherment written between the digit lines on PARES image 79 (letter 8), the descifrada copy of letter 52 at image 108, and the description's 'Descifrada entre lineas' for letters 4, 8 and 15. The earlier 'unglossed digit page' (image 79) is glossed; the bare-digit pages 96-101 are covered by the clear copy of letter 52."
+   },
+   "restored_from": "removed_2026-11-02 #737",
+   "open": "The page of digits at image 79 and any others; letter 4 (1767) is deciphered between the lines.",
+   "needs": "A page-by-page pass of the 215 images; the letter 4 gloss is a key sample to try."
+  },
+  {
+   "id": 813,
+   "counted": true,
+   "year": 1825,
+   "date": "1825",
+   "title": "Joseph von Chlingensperg auf Berg, encrypted diary, 1825 volume (cipher broken for other years, no decoded 1825 text on record)",
+   "correspondents": "Joseph von Chlingensperg auf Berg (diarist)",
+   "place": "Bavaria (probably)",
+   "language": "German",
+   "region": "Germany",
+   "period": "1801-1900",
+   "shelfmark": "Beinecke, Chlingensperg family diaries, GEN MSS 1495, Series II, Box 3",
+   "folio_note": "Encrypted diary",
+   "cls": "B",
+   "status": "Finding aid: volume encrypted, cipher 'cracked by multiple sources', decoded text only for 1805-1811 material; nothing for 1825 held or published as far as searched.",
+   "why": "A Bavarian noble diary of the Napoleonic and Restoration years kept partly in cipher.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 2,
+   "verify": "Request scans; check the Box 2 translation papers for the key.",
+   "links": [
+    {
+     "label": "Quicksearch archives search",
+     "href": "https://search.library.yale.edu/archives?q=Chlingensperg+encrypted"
+    }
+   ],
+   "source": "Beinecke sweep",
+   "seen": "catalogue",
+   "score_note": "Scored from the archive description during the Oct 2026 Beinecke sweep (research/us_beinecke_folger/); not viewed",
+   "prior_art": "open (checked 28 Oct 2026: repo known.py, DECODE list)",
+   "ark": "",
+   "scored": "sweep",
+   "access": "archive",
+   "vetting": {
+    "date": "2026-11-03",
+    "by": "claude leads review batch k01",
+    "seen": {
+     "kind": "not online",
+     "where": "Yale finding aid, Chlingensperg family diaries, GEN MSS 1495, https://ead-pdfs.library.yale.edu/11037.pdf fetched by curl and read in full (11 pp., last exported 8 Jan 2025). No digital object is listed; reproductions by request to beinecke.images@yale.edu.",
+     "extent": "One Schreib-Kalender volume, Series II, box 3, 'Encrypted diary', 1825; number of cipher entries not stated. Series II is 2 boxes plus folders for 1801-1830.",
+     "cipher": "Finding aid, 1825: 'This volume is encrypted with a cipher created by Joseph von Chlingensperg auf Berg.' Its note names no decoded passages or laid-in notes, unlike 1805-1810, and the full translation is of 1811 only."
+    },
+    "prior_art": {
+     "decode": "known.py on the harvested DECODE dump for Chlingensperg and GEN MSS 1495: no DECODE record, only the Beinecke sweep rows, removed entries 812-813 and catalogue 1894.",
+     "tomokiyo": "No cryptiana page on the diarist: WebSearch naming Chlingensperg with Beinecke, cipher and encrypted diary returned other diaries only; known.py has no Tomokiyo row.",
+     "lasry": "No Lasry paper or GL.htm row for Chlingensperg in known.py, and the WebSearch on the 'cracked' cipher found no cryptologic paper naming him.",
+     "edition": "No edition found: German WebSearch on Tagebuch and Geheimschrift, and Google Books on Chlingensperg with Tagebuch, diary, cipher, gave only unrelated jurists and booksellers' catalogues. The only full decipherment on record is the 1811 volume, a 33-page translation in box 2 (the aid calls it both manuscript and printed), not 1825.",
+     "literature": "Finding aid: 'The cipher has since been cracked by multiple sources', naming no publication; it lists notes for 1805-1810 only. WebSearch for an article, blog or Jonathan Hill description found none. So the system is broken but no decoded 1825 text is on record."
+    },
+    "key_check": "No key held in this repo and nothing tested, since the volume is not online. The system is broken at Yale, see key_held; reading 1825 needs a scan and those papers.",
+    "key_held": "Not held here. At Yale: two sheets on decoding in the 1801 volume, notes on cipher translation in the 1805 volume, and the 1811 translation with index and notes in box 2. Untested on 1825.",
+    "duplicates": "known.py 'Chlingensperg', 'GEN MSS 1495': catalogue 1894 is the 1830 volume and 812 the 1805 volume, separate items; no target. Box 3 also holds Karoline's plain household diary of 1825, not this item.",
+    "searches": [
+     {
+      "query": "Chlingensperg auf Berg diary 1825 cipher decoded Beinecke Yale Jonathan Hill bookseller encrypted Tagebuch Joseph von Chlingensperg",
+      "result": "Voynich pages and other encrypted diaries; nothing on this diary or a decoded 1825 text."
+     },
+     {
+      "query": "\"Chlingensperg\" Tagebuch Geheimschrift 1825 Hofrat München Tagebücher entschlüsselt Dissertation Sexualität Joseph von Chlingensperg auf Berg",
+      "result": "Unrelated German cipher material; no edition, thesis or article on these diaries."
+     },
+     {
+      "query": "Chlingensperg family diaries Yale Beinecke GEN MSS 1495 cipher \"cracked\" article blog cipher diary sexual Bavarian Encrypted Schreib-Kalender research",
+      "result": "No page names the family or call number; Schmeh's list of encrypted diaries as returned does not name it."
+     },
+     {
+      "query": "Google Books: \"Chlingensperg\" Tagebuch OR Tagebücher OR diary Geheimschrift OR cipher OR verschlüsselt",
+      "result": "Only a U-boat book's naval Chlingensperg and 1884 bookseller entries for an earlier jurist; nothing on the diary."
+     }
+    ],
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 859,
+   "counted": true,
+   "language": "German",
+   "seen": "catalogue",
+   "source": "Europeana sweep",
+   "decode_ids": [],
+   "score_note": "Scored from the Europeana record during the Oct 2026 Europeana sweep (research/europeana/); not viewed",
+   "prior_art": "open (checked 28 Oct 2026: repo ledgers, DECODE list, Cryptoole snapshot; no web search)",
+   "year": 1623,
+   "date": "1620s",
+   "title": "Landgrave Moritz of Hessen-Kassel's alchemical papers: Geheimschrift beyond Schmitz/Winkelmann 1961",
+   "correspondents": "Landgrave Moritz, Johann Popp and others",
+   "place": "Kassel",
+   "region": "Germany",
+   "period": "1611-1650",
+   "shelfmark": "Kassel, Universitätsbibliothek, 2° Ms. theol. 181 (former cover, Bl. 1/2); Popp letters in 2° Ms. chem. 19[2 and 19[5",
+   "folio_note": "2 Ms. chem. 19[3 (ORKA 1381745635760; former cover now 2 Ms. theol. 181 Bl. 1/2): about 50 pages of Geheimschrift, key material at ff. 62r-62v; seen image 150 (f. 70v). Popp letters in 2 Ms. chem. 19[2 and [5.",
+   "cls": "B",
+   "status": "Kassel record: the items in Geheimschrift are partly published (Schmitz & Winkelmann 1961). The unpublished remainder is open. Not on DECODE, not in the repo. Narrowed to the unread part and restored 2 Nov 2026.",
+   "why": "Alchemical Geheimschrift of a famous alchemist-prince's court; the partial publication gives symbol values for the rest.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "Get Schmitz & Winkelmann 1961 for the symbol table; view the Kassel scans of Ms. theol. 181 and Ms. chem. 19.",
+   "links": [
+    {
+     "label": "Kassel viewer",
+     "href": "http://orka.bibliothek.uni-kassel.de/viewer/ppnresolver?id=1381745635760"
+    },
+    {
+     "label": "Europeana",
+     "href": "https://www.europeana.eu/item/2048445/item_2KAVLCFUX6L2UPF4FU6JFTC65RQUGN7I"
+    },
+    {
+     "label": "ORKA 2 Ms. chem. 19[3, f. 70v (image 150), Geheimschrift leaf",
+     "href": "https://orka.bibliothek.uni-kassel.de/viewer/image/1381745635760/150/"
+    },
+    {
+     "label": "Alchemie am Kasseler Hof (2011), ORKA, no. 23 on the Geheimschrift pages",
+     "href": "https://orka.bibliothek.uni-kassel.de/viewer/image/1486550062531/27/LOG_0025/"
+    }
+   ],
+   "ark": "",
+   "scored": "sweep",
+   "access": "online",
+   "access_note": "online (backfilled 28 Oct 2026 from the entry: link Europeana (https://www.europeana.eu/item/2048445/item_2KAVLCFUX6L2UPF4FU6JFTC65RQUGN7I))",
+   "frame_check": {
+    "result": "not_found",
+    "href": "https://orka.bibliothek.uni-kassel.de/viewer/image/1381745635760/",
+    "frame": "",
+    "saw": "The linked ppnresolver id opens ORKA volume 'Chemische Korrespondenz des Landgrafen Moritz', shelfmark 2 Ms. chem. 19[3 (red cover, cover/prepage/table of contents entries). That is not any of the items the entry names (2 Ms. theol. 181 former cover Bl. 1/2; Popp letters in 2 Ms. chem. 19[2 and 19[5). No cipher page was seen; page text search for Geheimschrift found nothing.",
+    "note": "Catalogue link points to the wrong volume (19[3). ORKA site shows an Anubis proof-of-work page that clears by itself after about 10 s. Need ORKA viewer ids for 19[2, 19[5 and theol. 181.",
+    "date": "2026-10-30",
+    "by": "claude frame check 04"
+   },
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L28; narrowed 2 Nov 2026",
+    "seen": {
+     "kind": "scan",
+     "where": "ORKA Kassel viewer, 2 Ms. chem. 19[3 (https://orka.bibliothek.uni-kassel.de/viewer/image/1381745635760/150/ and /134/, /133/); ORKA full-text catalogue search 'Geheimschrift' (9 hits) and the exhibition catalogue 'Alchemie am Kasseler Hof' (Broszinski/Wiedemann 2011) no. 23, viewed in ORKA",
+     "extent": "Volume 19[3 holds about 50 pages in Geheimschrift (catalogue no. 23: 'Rezepte und Briefe an Landgraf Moritz in Geheimschrift', ff. 62r-62v illustrated). Seen: image 150 (f. 70v), an invented runic-style glyph script in 5 lines with a tipped-in slip carrying a symbol/letter table; ff. 62r-62v are clear German numbered points.",
+     "cipher": "Invented-alphabet Geheimschrift (letter substitution with a key slip and key lists in the volume, 'Schluessel zu zwei Geheimschriften' per the catalogue); partly published by Schmitz/Winkelmann 1961. No decipherment of the glyph leaves is written on them. The frame check of 30 Oct found the linked volume without a cipher page: that volume is in fact the right one (the record's annotation names theol. 181 as its former cover and Ms. chem. 19[2/[5 as the Popp letters)."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE (known.py 'chem. 19' and 'Moritz Popp': only this entry and the Europeana sweep).",
+     "tomokiyo": "Not in cryptiana; web searches found no Tomokiyo page for Moritz.",
+     "lasry": "No Lasry or DECODE work found on the Kassel alchemical scripts.",
+     "edition": "Schmitz and Winkelmann, 'Ueber die alchemistischen Geheimschriften im Briefwechsel des Landgrafen Moritz von Hessen-Kassel', Pharmazeutische Zeitung 106 (1961) 374-378 (partial publication per the ORKA annotation; article not seen). Broszinski, Manuscripta chemica in quarto (2011) and the 2011 exhibition catalogue describe the volume.",
+     "literature": "Searches: Kassel Ms. chem. 19 Geheimschrift/Popp, Schmitz Winkelmann 1961 (nothing online), 'theol. 181' Kassel; Moran, 'Privilege, communication and chemiatry' (Moritz's circle) is the relevant secondary work."
+    },
+    "key_check": "A key to two scripts is in the volume itself (catalogue no. 23, ff. 62r-62v region and the slip on f. 70v); no key is held in the repo. The 1961 article's symbol table was not seen, so how much of the rest is readable with it is unknown.",
+    "duplicates": "known.py searches: no duplicate; ORKA lists other Kassel volumes with cipher alphabets (4 deg Ms. chem. 31, 44, 60[5,2) which are separate items."
+   },
+   "restored_from": "removed_2026-11-02 #859",
+   "open": "The pieces of about 50 pages not published in 1961.",
+   "needs": "The 1961 article, to see what it covers, and the key in the volume (ff. 62r-62v, slip on f. 70v).",
+   "vetting_note": "Cipher confirmed in Chrome on ORKA 2 Ms. chem. 19[3, image 150 (f. 70v): five lines in an invented angular script with a letter table on a tipped-in slip, no decipherment visible on that leaf. Verdict still blocked by the edition: Schmitz and Winkelmann, 'Ueber die alchemistischen Geheimschriften im Briefwechsel des Landgrafen Moritz', Pharmazeutische Zeitung 106 (1961) 374-378, is not online and a new search found only Moran's work, so what it deciphers is unknown. Needs that article, by interlibrary loan or a library scan."
+  },
+  {
    "id": 861,
    "counted": true,
    "year": 1648,
@@ -54,6 +877,62 @@
     "duplicates": "Same record as lead 1141 (same shelfmark ZSW/554/1, same date and letter); known.py hit the leads.json entry 1141 and CATALOGUE.md.",
     "verdict": "duplicate",
     "closed": "Duplicate of lead 1141 (ZSW/554/1), which is closed as read: printed in Carte 1739 vol. I pp. 185-186."
+   }
+  },
+  {
+   "id": 864,
+   "counted": true,
+   "year": 1645,
+   "date": "30 Jun 1645",
+   "title": "George Digby to William Legge, explanations of defeat (coded part not deciphered)",
+   "correspondents": "George Digby to William Legge",
+   "place": "unknown",
+   "language": "English",
+   "region": "England",
+   "period": "1611-1650",
+   "shelfmark": "Staffordshire Record Office, D(W)1778/I/i/56 (Dartmouth/Legge papers)",
+   "folio_note": "one letter; 'Coded part not deciphered'; 'Not Digby's hand'",
+   "cls": "B",
+   "status": "Catalogue says not deciphered. The 1645 Digby/Nicholas/Goring keys are in BL Add MS 32256 (see catalogue.json). Not on DECODE.",
+   "why": "Naseby aftermath; Royalist 1645 key family exists.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 2,
+   "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+   "verify": "Get an image from Staffordshire RO; try the SP 106/3 and BL 32256 keys.",
+   "links": [
+    {
+     "label": "Discovery record (Staffordshire RO)",
+     "href": "https://discovery.nationalarchives.gov.uk/details/r/750f061a-d5f1-41d0-b7dd-c099644253b7"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "UK archives sweep (TNA Discovery)",
+   "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
+   "access": "archive",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-03",
+    "by": "claude vetting batch 31",
+    "seen": {
+     "kind": "not online",
+     "where": "https://beta.nationalarchives.gov.uk/catalogue/id/750f061a-d5f1-41d0-b7dd-c099644253b7/ (Staffordshire RO D(W)1778/I/i/56, read 29 Oct 2026); not online",
+     "extent": "One letter, 30 Jun 1645.",
+     "cipher": "Catalogue: Digby to Legge, 'Coded part not deciphered', not in Digby's hand."
+    },
+    "prior_art": {
+     "decode": "Local DECODE dumps hold Digby records (e.g. the Digby-Walsingham key R8724) but no Legge letter.",
+     "tomokiyo": "Cryptiana has 'a bundle of ciphers of Lord Digby' (Oct 2024) and says most undeciphered Digby texts are readable; no Staffordshire item named.",
+     "lasry": "Lasry's SP 106 keys cover the Charles I/Rupert 1645 family (targets/rupert1645).",
+     "edition": "HMC Dartmouth report not located online; Lords Journal records a different intercepted Digby-Legge letter on 7 Jun 1645.",
+     "literature": "Searches on Digby, Legge, Oxford 1645 cipher found BL Add MS 33596 Digby keys, not this letter."
+    },
+    "key_check": "Digby key family (BL Add MS 33596 / 32256, R8724) not applied: no image.",
+    "duplicates": "known.py: leads.json siblings D(W)1778/I/i/37-59; no catalogue entry.",
+    "verdict": "partly_read",
+    "closed": "The letter is in print and a deciphered copy is at BL, so the 'coded part' is very likely read, but which passage is coded in /56 cannot be told without the leaf, and the proposals are not in Warburton.",
+    "evidence": "Warburton III pp. 125-128 prints Digby to Legge, undated, with Legge's reply placing it at Hereford, 30 June 1645: continuous plain English, no gap and no cipher mark, though Warburton marks cipher elsewhere (p. 153). Quote: 'Prince Rupert is neither gainable nor tenable by me'. It covers the explanations of defeat, but not the 'Proposals on which a meeting between King and Parliament might be arranged' in the Staffordshire description. BL Add MS 18982 ff. 66r-67v is a copy, 'Partially in cipher (deciphered)' (BL catalogue; leaf not seen, IIIF 403). Legge mentions a duplicate."
    }
   },
   {
@@ -9175,6 +10054,70 @@
    "vetting_note": "BNE Digital blocked on 3 Nov 2026 in Chrome: no checkbox showed; the Crolope card loaded, then the viewer returned 'SE HA BLOQUEADO EL ACCESO POR PARTE DE LOS SISTEMAS DE SEGURIDAD' (Cloudflare 1000-series). Stopped on the host, nothing clicked through, no retry. Not opened this pass: BNE MSS/20214/52 (BDH 0000172732), 15 PDFs beyond 52/1-4b unseen; CSP Spain 1525-29 not compared."
   },
   {
+   "id": 1268,
+   "counted": true,
+   "seen": "image",
+   "source": "BNE/Hispana sweep",
+   "prior_art": "Not open: DECODE R1189 Decrypted; Tomokiyo spanish2.htm assigns the letter to the Imperial Cipher of 1544-1554 (checked 2 Nov 2026). The key has not been applied here.",
+   "score_note": "Scored from the BNE catalogue description (via the Europeana record API) during the Oct 2026 BNE/Hispana sweep (research/bne_hispana/); not viewed",
+   "decode_ids": [
+    1189
+   ],
+   "year": 1548,
+   "date": "May 1548 - Nov 1551",
+   "title": "Diego Hurtado de Mendoza (Rome, Siena) → Cardinal Granvelle: five letters, the first in cipher",
+   "correspondents": "Diego Hurtado de Mendoza → Antoine Perrenot de Granvelle",
+   "place": "Rome / Siena",
+   "language": "Spanish",
+   "region": "Spain",
+   "period": "1497-1559",
+   "shelfmark": "Madrid, Biblioteca Nacional de España, Gayangos (first part of the incomplete letter at Mss/7919/75); BDH bdh0000172694",
+   "folio_note": "first letter 'cifrada'; one letter incomplete, first part in Mss/7919/75",
+   "cls": "C",
+   "status": "BNE catalogue: 'La primera carta cifrada'. Corrected 2 Nov 2026: the cipher letter MSS/20212/29/1 is DECODE R1189, status Decrypted, 29 May 1548, homophonic with separate signs for syllables, no key named on the record. Tomokiyo (spanish2.htm) lists this card, Diego Hurtado de Mendoza to Granvelle, Rome, 29 May 1548 (BDH 172694), as an example of the Imperial Cipher of 1544-1554, whose fuller reconstruction is Bertomeu Masiá 2009. Date conflict: the 29 Oct vetting read 29 March 1548 at the top of f. 1 at low zoom; DECODE and Tomokiyo give 29 May. Not re-checked, BNE blocked access on 2 Nov 2026.",
+   "why": "The imperial ambassador in Rome and governor of Siena, in the year of the Siena revolt (1551); a named, dated cipher letter.",
+   "importance": 4,
+   "solvability": 4,
+   "difficulty": 3,
+   "verify": "Apply the Imperial Cipher of 1544-1554 (Tomokiyo spanish2.htm, Bertomeu Masiá 2009) to f. 1; check the date on the image.",
+   "links": [
+    {
+     "label": "BDH viewer",
+     "href": "http://bdh-rd.bne.es/viewer.vm?id=0000172694&page=1"
+    },
+    {
+     "label": "Europeana record",
+     "href": "https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000172694"
+    }
+   ],
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "access_note": "online (backfilled 28 Oct 2026 from the entry: link BDH viewer (http://bdh-rd.bne.es/viewer.vm?id=0000172694&page=1))",
+   "vetting": {
+    "date": "2026-11-03",
+    "by": "claude leads review batch b50",
+    "seen": {
+     "kind": "scan",
+     "where": "https://bnedigital.bne.es/bd/card?oid=0000172694&site=bdh, MSS/20212/29/1 f.1, as seen in Chrome on 29 Oct 2026 (earlier vetting block); not re-opened here, BNE returned HTTP 403 to curl on 3 Nov 2026",
+     "extent": "One letter, about 20 lines, wholly in symbol cipher (roughly 600 signs), Rome, 29 May 1548 per DECODE (date read 29 March at low zoom on 29 Oct).",
+     "cipher": "Whole-page homophonic substitution in graphic signs with word-dividing dots; no decipherment written on the leaf."
+    },
+    "prior_art": {
+     "decode": "DECODE R1189 (NLS_MSS_20212_29_1) fetched 3 Nov 2026 with decode_fetch.py: Cipher Status Decrypted, homophonic, graphic signs, syllable signs, Plaintext Spanish, Inline Plaintext Yes, 2 pages, created 2019; images not retrievable, so the plaintext itself was not inspected. known.py (harvested dump) also lists R1189.",
+     "tomokiyo": "Tomokiyo spanish2.htm lists this card (Diego Hurtado de Mendoza to Granvelle, Rome, 29 May 1548, BDH 172694) under the Imperial Cipher of 1544-1554; seen per the earlier block, not re-fetched.",
+     "lasry": "No Lasry paper or GL.htm item on this letter found in the earlier web search; not repeated.",
+     "edition": "No printed edition of this BNE letter found; Bertomeu Masia 2009 is the cipher reconstruction, not opened.",
+     "literature": "Bucure 2025 (Estudios Romanicos, Napoles 1547) concerns Mendoza's Naples-period cipher, not this letter."
+    },
+    "key_check": "Imperial Cipher of 1544-1554 (Tomokiyo; Bertomeu Masia 2009) is the published key family; not applied here.",
+    "key_held": "Imperial Cipher 1544-1554 reconstruction in print; not tested in this batch.",
+    "duplicates": "known.py R1189 / Hurtado de Mendoza / 20212/29 on 3 Nov 2026: this lead is the BNE card of DECODE R1189; no catalogue.json duplicate.",
+    "verdict": "read",
+    "closed": "DECODE R1189 carries status Decrypted with an inline plaintext (Spanish) for MSS/20212/29/1, i.e. a decipherment is on record there; Tomokiyo also assigns it to a known cipher. Plaintext not inspected because DECODE images are access-restricted."
+   }
+  },
+  {
    "id": 1269,
    "counted": true,
    "seen": "catalogue",
@@ -17177,773 +18120,6 @@
    "access": "archive",
    "scored": "sweep",
    "vetting_note": "library.soas.ac.uk gives a Chrome error page on record and /Preview URLs, Wayback has no copy, and archiveshub.jisc.ac.uk shows a Cloudflare verify-you-are-human check (stopped there, not clicked). Only search snippets seen: PP MS 1/EPRE/1/56/284, 11 Jul 1890, 'P.L. McDermott to Inheritor, Zanzibar p.341 Telegram in code. No translation'; others of Nov 1889 carry their gist. Needs the SOAS catalogue when back, or the items at SOAS, to see which telegrams survive as code with no translation."
-  },
-  {
-   "id": 1268,
-   "counted": true,
-   "seen": "image",
-   "source": "BNE/Hispana sweep",
-   "prior_art": "Not open: DECODE R1189 Decrypted; Tomokiyo spanish2.htm assigns the letter to the Imperial Cipher of 1544-1554 (checked 2 Nov 2026). The key has not been applied here.",
-   "score_note": "Scored from the BNE catalogue description (via the Europeana record API) during the Oct 2026 BNE/Hispana sweep (research/bne_hispana/); not viewed",
-   "decode_ids": [
-    1189
-   ],
-   "year": 1548,
-   "date": "May 1548 - Nov 1551",
-   "title": "Diego Hurtado de Mendoza (Rome, Siena) → Cardinal Granvelle: five letters, the first in cipher",
-   "correspondents": "Diego Hurtado de Mendoza → Antoine Perrenot de Granvelle",
-   "place": "Rome / Siena",
-   "language": "Spanish",
-   "region": "Spain",
-   "period": "1497-1559",
-   "shelfmark": "Madrid, Biblioteca Nacional de España, Gayangos (first part of the incomplete letter at Mss/7919/75); BDH bdh0000172694",
-   "folio_note": "first letter 'cifrada'; one letter incomplete, first part in Mss/7919/75",
-   "cls": "C",
-   "status": "BNE catalogue: 'La primera carta cifrada'. Corrected 2 Nov 2026: the cipher letter MSS/20212/29/1 is DECODE R1189, status Decrypted, 29 May 1548, homophonic with separate signs for syllables, no key named on the record. Tomokiyo (spanish2.htm) lists this card, Diego Hurtado de Mendoza to Granvelle, Rome, 29 May 1548 (BDH 172694), as an example of the Imperial Cipher of 1544-1554, whose fuller reconstruction is Bertomeu Masiá 2009. Date conflict: the 29 Oct vetting read 29 March 1548 at the top of f. 1 at low zoom; DECODE and Tomokiyo give 29 May. Not re-checked, BNE blocked access on 2 Nov 2026.",
-   "why": "The imperial ambassador in Rome and governor of Siena, in the year of the Siena revolt (1551); a named, dated cipher letter.",
-   "importance": 4,
-   "solvability": 4,
-   "difficulty": 3,
-   "verify": "Apply the Imperial Cipher of 1544-1554 (Tomokiyo spanish2.htm, Bertomeu Masiá 2009) to f. 1; check the date on the image.",
-   "links": [
-    {
-     "label": "BDH viewer",
-     "href": "http://bdh-rd.bne.es/viewer.vm?id=0000172694&page=1"
-    },
-    {
-     "label": "Europeana record",
-     "href": "https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000172694"
-    }
-   ],
-   "ark": "",
-   "scored": "vetted",
-   "access": "online",
-   "access_note": "online (backfilled 28 Oct 2026 from the entry: link BDH viewer (http://bdh-rd.bne.es/viewer.vm?id=0000172694&page=1))",
-   "vetting": {
-    "date": "2026-11-03",
-    "by": "claude leads review batch b50",
-    "seen": {
-     "kind": "scan",
-     "where": "https://bnedigital.bne.es/bd/card?oid=0000172694&site=bdh, MSS/20212/29/1 f.1, as seen in Chrome on 29 Oct 2026 (earlier vetting block); not re-opened here, BNE returned HTTP 403 to curl on 3 Nov 2026",
-     "extent": "One letter, about 20 lines, wholly in symbol cipher (roughly 600 signs), Rome, 29 May 1548 per DECODE (date read 29 March at low zoom on 29 Oct).",
-     "cipher": "Whole-page homophonic substitution in graphic signs with word-dividing dots; no decipherment written on the leaf."
-    },
-    "prior_art": {
-     "decode": "DECODE R1189 (NLS_MSS_20212_29_1) fetched 3 Nov 2026 with decode_fetch.py: Cipher Status Decrypted, homophonic, graphic signs, syllable signs, Plaintext Spanish, Inline Plaintext Yes, 2 pages, created 2019; images not retrievable, so the plaintext itself was not inspected. known.py (harvested dump) also lists R1189.",
-     "tomokiyo": "Tomokiyo spanish2.htm lists this card (Diego Hurtado de Mendoza to Granvelle, Rome, 29 May 1548, BDH 172694) under the Imperial Cipher of 1544-1554; seen per the earlier block, not re-fetched.",
-     "lasry": "No Lasry paper or GL.htm item on this letter found in the earlier web search; not repeated.",
-     "edition": "No printed edition of this BNE letter found; Bertomeu Masia 2009 is the cipher reconstruction, not opened.",
-     "literature": "Bucure 2025 (Estudios Romanicos, Napoles 1547) concerns Mendoza's Naples-period cipher, not this letter."
-    },
-    "key_check": "Imperial Cipher of 1544-1554 (Tomokiyo; Bertomeu Masia 2009) is the published key family; not applied here.",
-    "key_held": "Imperial Cipher 1544-1554 reconstruction in print; not tested in this batch.",
-    "duplicates": "known.py R1189 / Hurtado de Mendoza / 20212/29 on 3 Nov 2026: this lead is the BNE card of DECODE R1189; no catalogue.json duplicate.",
-    "verdict": "read",
-    "closed": "DECODE R1189 carries status Decrypted with an inline plaintext (Spanish) for MSS/20212/29/1, i.e. a decipherment is on record there; Tomokiyo also assigns it to a known cipher. Plaintext not inspected because DECODE images are access-restricted."
-   }
-  },
-  {
-   "id": 390,
-   "counted": true,
-   "year": 1664,
-   "date": "1664",
-   "title": "Marquês de Sande's papers: cipher B, Rome 1664",
-   "correspondents": "various → Francisco de Melo, conde da Ponte, marquês de Sande; Diogo Lopes de Ulhoa → Rui Teles de Meneses",
-   "place": "London; The Hague; Paris; Lisbon",
-   "language": "Portuguese, Italian, Latin, English, French",
-   "region": "Portugal",
-   "period": "1651-1700",
-   "shelfmark": "ANTT, Luís de Miranda Pereira, liv. 1 (PT/TT/LMP/0001)",
-   "folio_note": "Luís de Miranda Pereira, liv. 1; 592 scans online; 'códice factício contendo cartas assinadas, cartas cifradas e cópias de cartas'",
-   "cls": "C",
-   "status": "Cipher A (scans m0265-m0273, Dutch Republic c. 1657-59, three units) located and its letter key recovered from the ciphertext by WAINUT (PR #124, 27 Oct 2026); about 45 of ~290 lines transcribed and read; code groups open. Cipher B (Rome 1664, m0059-m0063, glossed) located, not attacked. In progress (targets/sande1660/). Narrowed to the unread part and restored 2 Nov 2026.",
-   "why": "The Anglo-Portuguese marriage treaty of 1661 (Bombay, Tangier) and Portuguese diplomacy at The Hague and Paris.",
-   "importance": 4,
-   "solvability": 4,
-   "difficulty": 3,
-   "score_note": "Scored from the archive description during the Oct 2026 Torre do Tombo sweep (research/torre_do_tombo/); viewed 27 Oct 2026 (PR #124)",
-   "verify": "Transcribe the rest of m0265-m0273 and apply the key; test Fernando Teles de Faro (catalogue 385) as the writer; then the m0063 glosses for cipher B.",
-   "links": [
-    {
-     "label": "DigitArq PT/TT/LMP/0001",
-     "href": "https://digitarq.arquivos.pt/documentDetails/7d037cd7783448dfb5fa761cf9301aa5"
-    }
-   ],
-   "seen": "viewed",
-   "source": "Arquivo Nacional Torre do Tombo (DigitArq) sweep",
-   "prior_art": "open (checked 26 Oct 2026: known.py (repo, DECODE, Cryptoole: no hit), web search).",
-   "ark": "",
-   "scored": "sweep",
-   "as_of": "2026-10-27",
-   "access": "online",
-   "access_note": "online (backfilled 28 Oct 2026 from the entry: seen: viewed)",
-   "vetting": {
-    "date": "2026-11-03",
-    "by": "claude leads review batch b66",
-    "seen": {
-     "kind": "scan",
-     "where": "https://digitarq.arquivos.pt/documentDetails/7d037cd7783448dfb5fa761cf9301aa5 (PT/TT/LMP/0001): fetched via /api/rdigital and /rdigital/dissemination on 3 Nov 2026; viewed m0062 and m0063 (Rome, 21 Jan 1664)",
-     "extent": "cipher B m0059-m0063: Portuguese letters with long runs of dotted numbers (12.13.37 ... 204 ... 900s); cipher A m0265-m0273 is a separate system",
-     "cipher": "m0062 and m0063 carry numeric passages in the body of the letters with contemporary interlinear glosses written over some groups ('do Cardeal', 'perdidas', 'de fazer', 'ser filho de hum ...'); the glosses give only single words or short phrases over a minority of the numbers, no full decipherment or key sheet is written on the leaves"
-    },
-    "prior_art": {
-     "decode": "known.py on Sande and Miranda Pereira hit this entry, targets/sande1660 and catalogue rows only; no DECODE record",
-     "tomokiyo": "No cryptiana page on Portuguese 1660s diplomatic ciphers found",
-     "lasry": "No Lasry item on ANTT ciphers known",
-     "edition": "No edition of the cipher passages; the contemporary glosses on m0062-m0063 are the only reading on record for cipher B",
-     "literature": "Web searches found nothing on cipher B; cipher A was recovered by WAINUT (PR 124), the repo's own work"
-    },
-    "key_check": "Cipher A key in targets/sande1660; no key for cipher B; keys of catalogue 388 and 384 not digitised.",
-    "duplicates": "known.py: catalogue 384/385/388 and targets/sande1660 are the same volume's other units; cipher B has no separate entry.",
-    "verdict": "partly_read",
-    "closed": "Cipher B (Rome 1664) carries contemporary interlinear glosses over some numeric groups on m0062 and m0063, a partial decipherment on the leaf; cipher A is read by this project's key (targets/sande1660), not prior art. Session may keep cipher B open for the unglossed numbers."
-   },
-   "restored_from": "removed_2026-11-02 #390",
-   "open": "Cipher B, numeric passages in Portuguese letters; located, not attacked (targets/sande1660). Cipher A is a separate key, recovered here and tracked in that target.",
-   "needs": "The extent of cipher B: only m0063 was viewed, and the neighbouring leaves are listed as probable. The keys of catalogue 388 and 384 are not digitised."
-  },
-  {
-   "id": 441,
-   "counted": true,
-   "year": 1662,
-   "date": "1660s (DECODE 1600-1799)",
-   "title": "Jan Andrzej Morsztyn to Jerzy Sebastian Lubomirski, letter with digit runs (R7517)",
-   "correspondents": "Jan Andrzej Morsztyn → Jerzy Sebastian Lubomirski",
-   "place": "unknown",
-   "language": "Polish (cleartext)",
-   "region": "Poland-Lithuania",
-   "period": "1651-1700",
-   "shelfmark": "Archiwum Narodowe w Krakowie, Archiwum Sanguszków (ASang), teka 247/13 (DECODE R7517)",
-   "folio_note": "three records, 2-4 pp.; cleartext Polish with cipher",
-   "cls": "C",
-   "status": "DECODE R7517, R7518, R7519 (status N/A, cipher type unknown, private ciphertext, uploaded by the Archiwum Narodowe w Krakowie 2023; no key or decryption file on the records). Not in repo (known.py on each R-number: no hits). Narrowed to the unread part and restored 2 Nov 2026.",
-   "why": "The poet and later Crown treasurer, a French-party courtier, writing to the Crown marshal before the rokosz.",
-   "importance": 4,
-   "solvability": 3,
-   "difficulty": 3,
-   "score_note": "Scored from the DECODE metadata dump (research/catalogue_harvest/decode) during the Oct 2026 Polish archives sweep (research/polish_archives/); not viewed",
-   "verify": "Log in to DECODE and open the images; check sibling keys in the same teka.",
-   "links": [
-    {
-     "label": "DECODE R7517",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/7517"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "Polish archives sweep (DECODE, Archiwum Narodowe w Krakowie)",
-   "prior_art": "open (checked 26 Oct 2026: known.py, web search for Wąsowicz/Lubomirski cipher: nothing)",
-   "decode_ids": [
-    7517
-   ],
-   "ark": "",
-   "scored": "sweep",
-   "access": "online",
-   "access_note": "online (backfilled 28 Oct 2026 from the entry: link DECODE R7517 (https://de-crypt.org/decrypt-web/RecordsView/7517))",
-   "frame_check": {
-    "result": "confirmed",
-    "href": "https://de-crypt.org/decrypt-web/RecordsView/7517 page 3",
-    "frame": "R7517 p.1 (digits at foot) and p.3; R7518/R7519 not viewed",
-    "saw": "p.1 (f.145): Polish letter with a block of about 4 lines of continuous digits at the foot; p.2 blank verso; p.3 (f.147): Polish text with 5-6 lines of continuous digit strings inside the lines and signature. No decipherment written.",
-    "date": "2026-10-30",
-    "by": "claude frame check d02"
-   },
-   "vetting": {
-    "date": "2026-11-02",
-    "by": "claude vetting batch L02; narrowed 2 Nov 2026",
-    "seen": {
-     "kind": "scan",
-     "where": "DECODE R7517 pp.1-3, R7518 pp.1-2, R7519 pp.1-3 (images fetched and viewed 2 Nov 2026)",
-     "extent": "R7517 two digit runs of about 9 lines; R7518 and R7519 several runs of two-digit groups separated by points, 6-12 lines a page",
-     "cipher": "Polish letters with digit-group cipher in clear text. R7518 pp.1-2 and R7519 p.3 carry plaintext words written above the number groups in the writer's hand (e.g. 'przyiechales tu do Krolowey', 'pisze Xiadz Arcybiskup'): an interlinear decipherment. R7517 has none."
-    },
-    "prior_art": {
-     "decode": "R7517-R7519 status 4 (N/A), but DECODE flags inline plaintext on R7518/R7519, which the images confirm.",
-     "tomokiyo": "Tomokiyo's Unsolved Historical Ciphers page (local copy unsolved.htm in the repo) grepped 2 Nov 2026: no Polish items.",
-     "lasry": "No Lasry entry found.",
-     "edition": "Web search found only 'Listy Jana Andrzeja Morsztyna' (edition cited in a BK PAN record; not checked for these letters).",
-     "literature": "Search for a Morsztyn-Lubomirski cipher key found nothing specific."
-    },
-    "key_check": "Sanguszko-archive key records R7515 (a=5/10/15) and R7460/R7461 (graphic signs) are held (targets/potocka1714) and did not fit Potocka; not applied to R7517 here, but R7518/R7519 give the values by interlinear.",
-    "duplicates": "known.py R7517 / R7518 / R7519 / Morsztyn (2 Nov): no other record; R7517-R7519 are three letters of teka 247/13."
-   },
-   "restored_from": "removed_2026-11-02 #441",
-   "open": "R7517, two digit runs of about 9 lines with no gloss. Siblings R7518 and R7519 are glossed.",
-   "needs": "Rebuild values from the R7518 and R7519 glosses and apply them; this may prove a lookup.",
-   "vetting_note": "Letter seen (DECODE R7517 p.1: Polish text with two runs of continuous digits, no gloss) but the printed edition Listy Jana Andrzeja Morsztyna, ed. Ochmann-Staniszewska (Wroclaw 2002, 378 pp., contains Morsztyn to Lubomirski letters) could not be opened, so prior art is unanswered; the letter may be printed there with the cipher expanded. Needs the volume (library) or a Polish full-text search; no Lasry or Tomokiyo item found in 4 searches."
-  },
-  {
-   "id": 599,
-   "counted": true,
-   "year": 1700,
-   "date": "1654-1711",
-   "title": "Swedish government of Bremen-Verden: numeric cipher with interlinear plaintext, Rep. 5a Nr. 654, 379, 670",
-   "correspondents": "Charles X Gustav, Charles XII, Nils Gyllenstierna, Johan Schmedeman, Henrik Gustaf von Müllern; Heinrich von Schöllen (Breslau) ↔ Bremen-Verden government (Stade)",
-   "place": "Stockholm / Stade / Breslau / field",
-   "language": "Swedish / German",
-   "region": "Scandinavia",
-   "period": "1651-1700",
-   "shelfmark": "Niedersächsisches Landesarchiv Stade, Rep. 5a Nr. 654",
-   "folio_note": "Nr. 670 'Diverse chiffrierte Schreiben ... auch: Schlüssel zu den Chiffren'; Nr. 379 'teils chiffriert' with a letter about the key; Nr. 636, 643, 654 partly ciphered",
-   "cls": "A",
-   "status": "Finding aid as quoted; all digitised. Digitised: images in the Archivportal-D/DDB viewer. 27 Oct 2026, Brice Dudout (email): Nr. 670 read: Charles XII to the Rådet, Bender, 26 April 1710, both enciphered copies, 639 of 640 groups; key rebuilt by crib (a ciphered troop list, fols. 73 and 82, against its clear draft, fol. 74) and checked on letters not used to build it (93% and 96%, shuffled keys at most 80%). Merged 27 Oct 2026 as targets/stade1710 (pull request #132, write-up stade1710.html). Entry narrowed to the rest: the other letters of Nr. 670 and the files Nr. 379, 636, 643, 654, 915, none reported read. Narrowed to the unread part and restored 2 Nov 2026.",
-   "why": "Swedish Germany in the wars of 1657-60 and 1700-11.",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 1,
-   "score_note": "Scored from the archive description during the Oct 2026 Archivportal-D sweep (research/archivportal_d/); not viewed",
-   "verify": "Open Nr. 670 and apply its key to the rest.",
-   "links": [
-    {
-     "label": "Rep. 5a Nr. 670",
-     "href": "https://www.archivportal-d.de/item/FUSDO3EWDESHSDD752WH6TEVDJI2KIVI"
-    },
-    {
-     "label": "Rep. 5a Nr. 379",
-     "href": "https://www.archivportal-d.de/item/HFE3O2LYIAOIGZ4FTFSJX3QDEMNW637Y"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "Archivportal-D sweep",
-   "prior_art": "partial: Nr. 670 (26 Apr 1710) read by Brice Dudout, Europe chiffrée (https://bdudout.github.io/europe-chiffree/en/documents.html#stade-1710), Oct 2026",
-   "ark": "",
-   "scored": "sweep",
-   "as_of": "2026-10-27",
-   "outcome": "attempted, open",
-   "writeup": "stade1710.html",
-   "access": "online",
-   "access_note": "online (backfilled 28 Oct 2026 from the entry: ...r. 636, 643, 654 partly ciphered Finding aid as quoted; all digitised. Digitised: images in the Archivportal-D/DDB viewer. 27 Oct...)",
-   "frame_check": {
-    "result": "confirmed",
-    "href": "https://www.arcinsys-digitalisate.niedersachsen.de/nla_st/rep._5a/nr._670/m_st_rep._5a_nr._670_aufn_0074.jpg",
-    "frame": "aufn_0074 of 135 (NLA ST Rep. 5a Nr. 670, fol. 73)",
-    "saw": "Slip dated Stade Nov 1710 with a ciphered troop list: three-digit number groups separated by points under headings (e.g. 'CCC', '424'), plus a few lines of dotted numbers at the foot; the clear Swedish draft is aufn_0075 (fol. 74). METS: https://www.arcinsys.niedersachsen.de/arcinsys/mets?detailid=v7225247 (direct JPEGs aufn_NNNN).",
-    "note": "Other files (379, 636, 643, 654, 915) not opened.",
-    "date": "2026-10-30",
-    "by": "claude frame check 01"
-   },
-   "vetting": {
-    "date": "2026-11-02",
-    "by": "claude vetting batch L03; narrowed 2 Nov 2026",
-    "seen": {
-     "kind": "scan",
-     "where": "NLA Stade Rep. 5a Nr. 670 aufn_0074 (arcinsys-digitalisate .../nr._670/m_st_rep._5a_nr._670_aufn_0074.jpg), fetched and shown in the frame check; plus first pages of Nr. 379, 636, 643, 654 and 915 (aufn_0001, 0004, 0008, 0014, 0020, 0030) fetched by curl and viewed as a contact sheet on 2 Nov 2026.",
-     "extent": "Nr. 670: ciphered troop list of Nov 1710 with three-digit groups (read). Nr. 654 aufn_0004/0008/0030: pages of hand-drawn symbol cipher in rows. Nr. 643 aufn_0020: two inserted sheets of dense black print or blocks, not checked. Nr. 379, 636, 915 pages sampled show clear German/Swedish hands; cipher location in them not found in the sample.",
-     "cipher": "Nr. 670 is read (Dudout, stade1710): numeric code groups with a rebuilt key. Nr. 654 shows a symbol cipher with no gloss on the pages seen; the other files not confirmed to hold cipher on the pages sampled."
-    },
-    "prior_art": {
-     "decode": "Not on DECODE (known.py Rep. 5a: targets/stade1710, README and SOLVED_* rows only).",
-     "tomokiyo": "Tomokiyo cryptiana: no page on Bremen-Verden or Stade cipher letters (search 2 Nov 2026).",
-     "lasry": "No Lasry reading found.",
-     "edition": "No edition found for the Bremen-Verden government ciphers; Charles XII letter of 26 Apr 1710 read by Dudout and published as targets/stade1710.",
-     "literature": "Dudout Europe chiffree documents.html#stade-1710 (Nr. 670, 639 of 640 groups, key rebuilt by crib)."
-    },
-    "key_check": "Nr. 670 key (targets/stade1710) rebuilt by crib from the troop list; it is a numeric code and was not tried on the symbol cipher of Nr. 654 (different sign type). No key held for Nr. 379, 636, 643, 654, 915.",
-    "duplicates": "known.py Rep. 5a: Nr. 670 is covered by stade1710 (PR #132); the other five files have no repo target.",
-    "verdict": "read",
-    "closed": "Unit by unit. Nr. 654: numeric cipher with the plaintext letter written under each group (aufn_0003, 0021, 0057, 0073); the earlier note of a 'symbol cipher' misread those glosses. Nr. 379: glossed over each group (aufn_0008). Nr. 670: pieces glossed (aufn_0004, 0097); the German letter at aufn_0079 is unglossed but looks like the one stade1710 NOTES says K1710 reads; aufn_0107-0134 hold a Clavis, which stade1710 did not use. Nr. 915: 11 images, no cipher seen. Nr. 636 and 643: cipher not located at contact-sheet size. No unglossed passage without a key was found, but most pages were seen only as contact sheets."
-   },
-   "restored_from": "removed_2026-11-02 #599",
-   "open": "Pages of hand-drawn symbol cipher in rows, unglossed (aufn_0004, 0008, 0030). Nr. 670 is read (targets/stade1710), and its numeric key is a different type.",
-   "needs": "Extent: a page-by-page pass. Nr. 643 has sheets not checked; Nr. 379, 636 and 915 were sampled only."
-  },
-  {
-   "id": 737,
-   "counted": true,
-   "year": 1773,
-   "date": "1761-1775",
-   "title": "Spanish despatches from St Petersburg, file on Russian America: unglossed digit pages",
-   "correspondents": "Spanish envoys at St Petersburg → Secretaría de Estado",
-   "place": "St Petersburg / Madrid",
-   "language": "Spanish",
-   "region": "Americas",
-   "period": "1701-1800",
-   "shelfmark": "AGI, ESTADO,86B,N.100",
-   "folio_note": "expediente; images online",
-   "cls": "C",
-   "status": "PARES hit for \"no descifrada\" (27 Oct 2026); title gives no cipher detail, and the term may match \"descifrada\" alone. PARES full-text search seems to match the words, not the phrase (a 1494 lawsuit and Falla letters also hit), so the term match is a pointer, not proof of an undeciphered cipher. not on DECODE or in the repo (known.py: no hits for the signatura or names). Narrowed to the unread part and restored 2 Nov 2026.",
-   "why": "Spanish intelligence on Russian Alaska that set off the Alta California and North Pacific expeditions.",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 3,
-   "score_note": "Scored from the PARES hit list (title, dates, signatura only) during the 27 Oct 2026 PARES sweep (research/pares_ags/); full description and images not viewed",
-   "verify": "Open the PARES description; view images for cipher passages and descifrados.",
-   "links": [
-    {
-     "label": "PARES 67815",
-     "href": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/67815"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "PARES sweep (AGI)",
-   "prior_art": "open as far as checked (27 Oct 2026, one web search: the file is cited by historians of the North Pacific (e.g. González Martín and Bellón de Aguilar 2024; Almodóvar studies), nothing on its ciphers; the clear content is known)",
-   "ark": "",
-   "scored": "sweep",
-   "access": "online",
-   "access_note": "online (backfilled 28 Oct 2026 from the entry: expediente; images online PARES hit for \"no descifrada\" (27 Oct 2026); title gives no...)",
-   "frame_check": {
-    "result": "confirmed",
-    "href": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/67815",
-    "frame": "images 59 and 79 of 215 (ESTADO,86B,N.100)",
-    "saw": "Expediente of 215 images; viewed images 1, 20, 40, 59, 79, 98, 118, 137, 157, 176, 196, 215 only. Image 59: about 20 lines of numeric cipher (digits separated by dots/slashes) with clear Spanish decipherment written between the lines (text about the expedition of Capitan Estehacov, Krenizin, Kamtschatka). Image 79: about 20 lines of digits only, no gloss. Other sampled images: clear Spanish (title page 'Informe sobre los descubrimientos de los Rusos', Petersburg 1764 docket), several blanks.",
-    "note": "Only 12 of 215 images viewed; other cipher pages likely lie between.",
-    "date": "2026-11-02",
-    "by": "claude frame check p02"
-   },
-   "vetting": {
-    "date": "2026-11-03",
-    "by": "claude leads review batch b67",
-    "seen": {
-     "kind": "scan",
-     "where": "PARES record 67815 (AGI ESTADO,86B,N.100), fetched by curl on 3 Nov 2026 with a fresh cookie jar (show page, then ViewImage.do at zoom 10, 3 s apart): description page read; images 20, 59, 79, 96-101, 104, 108, 112, 116, 118 fetched and viewed",
-     "extent": "215 images. The description marks three ciphered letters 'Carta cifrada. Descifrada entre lineas' (no. 4 Moscow 20 Nov 1767; no. 8 St Petersburg 8 Mar 1773, letter 37; no. 15 St Petersburg 1773, letter 70) and item 11 'Copia descifrada de la carta no. 52'. Image 79 is a full leaf of digit groups with a line of Spanish written under each digit line; images 96-101 are about 20 lines each of bare digit groups (letter 52); image 108 is the clear Spanish copy about Popov (the descifrada copy of letter 52). Image 59 returned the PARES blank-image placeholder.",
-     "cipher": "Image 79 shows digit groups separated by dots and slashes with the decipherment written between the lines ('tres embarcaciones al mismo intento', 'Puso dos al mando del Capitan ...'): the interlinear decipherment is on the leaf. The bare-digit pages 96-101 belong to letter 52, whose decipherment is the separate clear copy at image 108. So the ciphers in this file all carry a contemporary decipherment."
-    },
-    "prior_art": {
-     "decode": "known.py (harvested DECODE dump and repo ledgers) on 'ESTADO,86B,N.100', 'Navia Osorio' and the PARES id: only this lead and the PARES sweep rows; no DECODE record. This is the dump, not a live DECODE search.",
-     "tomokiyo": "No Tomokiyo page on this expediente; the cipher pages are Spanish embassy digit codes of the 1760s-70s and the file is not discussed in cryptiana (web searches of 2-3 Nov 2026).",
-     "lasry": "No Lasry or DECODE-team work on this series found; the decipherments on the leaves make it a read item anyway.",
-     "edition": "The cipher is read in the file itself: interlinear gloss on the letters, a separate descifrada copy of letter 52. No printed edition of the ciphers needed or found.",
-     "literature": "Historians of Russian America (Almodovar, Gonzalez Martin and Bellon de Aguilar 2024) cite the file for its clear content only."
-    },
-    "key_check": "No key is held; none is needed, the clerk's own decipherment is on or filed with every ciphered letter (letters 4 and 15 per the description, 8 and 52 seen).",
-    "duplicates": "known.py on the shelfmark: only entries 737 and 743 (ESTADO,86B,N.64); no duplicate.",
-    "verdict": "read",
-    "closed": "Interlinear decipherment written between the digit lines on PARES image 79 (letter 8), the descifrada copy of letter 52 at image 108, and the description's 'Descifrada entre lineas' for letters 4, 8 and 15. The earlier 'unglossed digit page' (image 79) is glossed; the bare-digit pages 96-101 are covered by the clear copy of letter 52."
-   },
-   "restored_from": "removed_2026-11-02 #737",
-   "open": "The page of digits at image 79 and any others; letter 4 (1767) is deciphered between the lines.",
-   "needs": "A page-by-page pass of the 215 images; the letter 4 gloss is a key sample to try."
-  },
-  {
-   "id": 859,
-   "counted": true,
-   "language": "German",
-   "seen": "catalogue",
-   "source": "Europeana sweep",
-   "decode_ids": [],
-   "score_note": "Scored from the Europeana record during the Oct 2026 Europeana sweep (research/europeana/); not viewed",
-   "prior_art": "open (checked 28 Oct 2026: repo ledgers, DECODE list, Cryptoole snapshot; no web search)",
-   "year": 1623,
-   "date": "1620s",
-   "title": "Landgrave Moritz of Hessen-Kassel's alchemical papers: Geheimschrift beyond Schmitz/Winkelmann 1961",
-   "correspondents": "Landgrave Moritz, Johann Popp and others",
-   "place": "Kassel",
-   "region": "Germany",
-   "period": "1611-1650",
-   "shelfmark": "Kassel, Universitätsbibliothek, 2° Ms. theol. 181 (former cover, Bl. 1/2); Popp letters in 2° Ms. chem. 19[2 and 19[5",
-   "folio_note": "2 Ms. chem. 19[3 (ORKA 1381745635760; former cover now 2 Ms. theol. 181 Bl. 1/2): about 50 pages of Geheimschrift, key material at ff. 62r-62v; seen image 150 (f. 70v). Popp letters in 2 Ms. chem. 19[2 and [5.",
-   "cls": "B",
-   "status": "Kassel record: the items in Geheimschrift are partly published (Schmitz & Winkelmann 1961). The unpublished remainder is open. Not on DECODE, not in the repo. Narrowed to the unread part and restored 2 Nov 2026.",
-   "why": "Alchemical Geheimschrift of a famous alchemist-prince's court; the partial publication gives symbol values for the rest.",
-   "importance": 2,
-   "solvability": 3,
-   "difficulty": 3,
-   "verify": "Get Schmitz & Winkelmann 1961 for the symbol table; view the Kassel scans of Ms. theol. 181 and Ms. chem. 19.",
-   "links": [
-    {
-     "label": "Kassel viewer",
-     "href": "http://orka.bibliothek.uni-kassel.de/viewer/ppnresolver?id=1381745635760"
-    },
-    {
-     "label": "Europeana",
-     "href": "https://www.europeana.eu/item/2048445/item_2KAVLCFUX6L2UPF4FU6JFTC65RQUGN7I"
-    },
-    {
-     "label": "ORKA 2 Ms. chem. 19[3, f. 70v (image 150), Geheimschrift leaf",
-     "href": "https://orka.bibliothek.uni-kassel.de/viewer/image/1381745635760/150/"
-    },
-    {
-     "label": "Alchemie am Kasseler Hof (2011), ORKA, no. 23 on the Geheimschrift pages",
-     "href": "https://orka.bibliothek.uni-kassel.de/viewer/image/1486550062531/27/LOG_0025/"
-    }
-   ],
-   "ark": "",
-   "scored": "sweep",
-   "access": "online",
-   "access_note": "online (backfilled 28 Oct 2026 from the entry: link Europeana (https://www.europeana.eu/item/2048445/item_2KAVLCFUX6L2UPF4FU6JFTC65RQUGN7I))",
-   "frame_check": {
-    "result": "not_found",
-    "href": "https://orka.bibliothek.uni-kassel.de/viewer/image/1381745635760/",
-    "frame": "",
-    "saw": "The linked ppnresolver id opens ORKA volume 'Chemische Korrespondenz des Landgrafen Moritz', shelfmark 2 Ms. chem. 19[3 (red cover, cover/prepage/table of contents entries). That is not any of the items the entry names (2 Ms. theol. 181 former cover Bl. 1/2; Popp letters in 2 Ms. chem. 19[2 and 19[5). No cipher page was seen; page text search for Geheimschrift found nothing.",
-    "note": "Catalogue link points to the wrong volume (19[3). ORKA site shows an Anubis proof-of-work page that clears by itself after about 10 s. Need ORKA viewer ids for 19[2, 19[5 and theol. 181.",
-    "date": "2026-10-30",
-    "by": "claude frame check 04"
-   },
-   "vetting": {
-    "date": "2026-11-02",
-    "by": "claude vetting batch L28; narrowed 2 Nov 2026",
-    "seen": {
-     "kind": "scan",
-     "where": "ORKA Kassel viewer, 2 Ms. chem. 19[3 (https://orka.bibliothek.uni-kassel.de/viewer/image/1381745635760/150/ and /134/, /133/); ORKA full-text catalogue search 'Geheimschrift' (9 hits) and the exhibition catalogue 'Alchemie am Kasseler Hof' (Broszinski/Wiedemann 2011) no. 23, viewed in ORKA",
-     "extent": "Volume 19[3 holds about 50 pages in Geheimschrift (catalogue no. 23: 'Rezepte und Briefe an Landgraf Moritz in Geheimschrift', ff. 62r-62v illustrated). Seen: image 150 (f. 70v), an invented runic-style glyph script in 5 lines with a tipped-in slip carrying a symbol/letter table; ff. 62r-62v are clear German numbered points.",
-     "cipher": "Invented-alphabet Geheimschrift (letter substitution with a key slip and key lists in the volume, 'Schluessel zu zwei Geheimschriften' per the catalogue); partly published by Schmitz/Winkelmann 1961. No decipherment of the glyph leaves is written on them. The frame check of 30 Oct found the linked volume without a cipher page: that volume is in fact the right one (the record's annotation names theol. 181 as its former cover and Ms. chem. 19[2/[5 as the Popp letters)."
-    },
-    "prior_art": {
-     "decode": "Not on DECODE (known.py 'chem. 19' and 'Moritz Popp': only this entry and the Europeana sweep).",
-     "tomokiyo": "Not in cryptiana; web searches found no Tomokiyo page for Moritz.",
-     "lasry": "No Lasry or DECODE work found on the Kassel alchemical scripts.",
-     "edition": "Schmitz and Winkelmann, 'Ueber die alchemistischen Geheimschriften im Briefwechsel des Landgrafen Moritz von Hessen-Kassel', Pharmazeutische Zeitung 106 (1961) 374-378 (partial publication per the ORKA annotation; article not seen). Broszinski, Manuscripta chemica in quarto (2011) and the 2011 exhibition catalogue describe the volume.",
-     "literature": "Searches: Kassel Ms. chem. 19 Geheimschrift/Popp, Schmitz Winkelmann 1961 (nothing online), 'theol. 181' Kassel; Moran, 'Privilege, communication and chemiatry' (Moritz's circle) is the relevant secondary work."
-    },
-    "key_check": "A key to two scripts is in the volume itself (catalogue no. 23, ff. 62r-62v region and the slip on f. 70v); no key is held in the repo. The 1961 article's symbol table was not seen, so how much of the rest is readable with it is unknown.",
-    "duplicates": "known.py searches: no duplicate; ORKA lists other Kassel volumes with cipher alphabets (4 deg Ms. chem. 31, 44, 60[5,2) which are separate items."
-   },
-   "restored_from": "removed_2026-11-02 #859",
-   "open": "The pieces of about 50 pages not published in 1961.",
-   "needs": "The 1961 article, to see what it covers, and the key in the volume (ff. 62r-62v, slip on f. 70v).",
-   "vetting_note": "Cipher confirmed in Chrome on ORKA 2 Ms. chem. 19[3, image 150 (f. 70v): five lines in an invented angular script with a letter table on a tipped-in slip, no decipherment visible on that leaf. Verdict still blocked by the edition: Schmitz and Winkelmann, 'Ueber die alchemistischen Geheimschriften im Briefwechsel des Landgrafen Moritz', Pharmazeutische Zeitung 106 (1961) 374-378, is not online and a new search found only Moran's work, so what it deciphers is unknown. Needs that article, by interlibrary loan or a library scan."
-  },
-  {
-   "id": 497,
-   "counted": true,
-   "year": 1541,
-   "date": "Nov 1540 - May 1541",
-   "title": "Hieronymus Łaski to Ferdinand I: letters 5-2-20 and 5-2-24",
-   "correspondents": "Hieronymus Łaski (Jarosław Łaski) → Ferdinand I",
-   "place": "Constantinople",
-   "language": "Latin",
-   "region": "Central Europe",
-   "period": "1497-1559",
-   "shelfmark": "HHStA Wien, StAbt Türkei I 5-2-20, 5-2-24",
-   "folio_note": "about 10 letters, 'Chiffriertes Schreiben'; digitised (AIS)",
-   "cls": "B",
-   "status": "AIS: 'Chiffriertes Schreiben von Hieronymus Laski an Ferdinand I.'; no decipherment noted (other Türkei I items say 'interlinear dechiffriert' when glossed). The repo rebuilt Łaski's 1531 key to the Bavarian dukes (kaa4591) — a different alphabet but the same writer. Not on DECODE. || Brackx, issue #172 (28 Oct 2026): AIS notes 'interlinear dechiffriert' on Türkei I 5-2-1, 5-2-5, 5-2-7, 5-2-9 and 5-2-10; 5-1-77 glossed likewise; all printed in Gévay, Urkunden und Actenstücke III (Vienna 1842; archive.org urkundenundacten113gv), Beilagen 27-47. Read at the time and in print; more letters (5-2-18, 5-2-20 ...) are listed in the issue. Narrowed to the unread part and restored 2 Nov 2026.",
-   "why": "Łaski's 1540-41 mission, in which he was imprisoned by the Porte while Buda fell (1541): first-hand reports to Ferdinand.",
-   "importance": 4,
-   "solvability": 4,
-   "difficulty": 3,
-   "score_note": "Scored from the archive description during the Oct 2026 Austrian State Archives (HHStA/FHKA) sweep (research/central_archives/); not viewed",
-   "verify": "Check the Gévay print against the interlinear decipherments; extend to 5-2-18 and later items.",
-   "links": [
-    {
-     "label": "AIS 5-2-1",
-     "href": "https://www.archivinformationssystem.at/detail.aspx?ID=6234762"
-    },
-    {
-     "label": "AIS 5-2-9",
-     "href": "https://www.archivinformationssystem.at/detail.aspx?ID=6235126"
-    },
-    {
-     "label": "AIS 5-2-7",
-     "href": "https://www.archivinformationssystem.at/detail.aspx?ID=6234791"
-    },
-    {
-     "label": "AIS 5-2-2 N.N. (Spanish)",
-     "href": "https://www.archivinformationssystem.at/detail.aspx?ID=6234784"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "Austrian State Archives (HHStA/FHKA) sweep",
-   "prior_art": "open (checked 26 Oct 2026: repo known.py, web: Janakowski 2023 thesis on Łaski's diplomacy, no decipherment edition found)",
-   "ark": "",
-   "scored": "sweep",
-   "access": "online",
-   "access_note": "online (backfilled 28 Oct 2026 from the entry: about 10 letters, 'Chiffriertes Schreiben'; digitised (AIS) AIS: 'Chiffriertes Schreiben von Hieronymus Laski an...)",
-   "frame_check": {
-    "result": "confirmed",
-    "href": "https://www.archivinformationssystem.at/detail.aspx?ID=6234762",
-    "frame": "StAbt Tuerkei I 5-2-1, image 1 of 2 (Laski, 12 Jan 1541)",
-    "saw": "Latin letter with long runs of alphabetic/symbol cipher (about 30 lines), each run with an interlinear contemporary decipherment in Latin; Vienna archive stamp; two images (opened outer sheet and second sheet).",
-    "note": "Only 5-2-1 checked; the AIS entry does carry the interlinear decipherment, consistent with Brackx.",
-    "date": "2026-10-30",
-    "by": "claude frame check 02"
-   },
-   "vetting": {
-    "date": "2026-11-03",
-    "by": "claude leads review batch b62",
-    "seen": {
-     "kind": "transcription",
-     "where": "AIS records 6235157 (5-2-20) and 6235166 (5-2-24) opened by curl 3 Nov 2026; Gévay, Urkunden und Actenstücke III, archive.org urkundenundacten113gv_djvu.txt, Beilagen L-LIII",
-     "extent": "5-2-20: 2 letters (13 and 25 Apr 1541), 4 images; 5-2-24: 5 letters 8-21 May 1541, fol. 58-62",
-     "cipher": "AIS: 'Chiffrierte Schreiben von Hieronymus Laski an Ferdinand I.' with 'Edition: Anton Gevay ... Beilage Nr. 50 & 51' (5-2-20) and 'Beilage Nr. 52 & 53' (5-2-24); Gévay's headings say the originals are 'durchaus in Chiffern geschrieben'."
-    },
-    "prior_art": {
-     "decode": "known.py 3 Nov 2026 on 5-2-20 and Laski: only leads rows; not on DECODE.",
-     "tomokiyo": "WebSearch 3 Nov 2026 (Hieronymus Laski Gevay Chiffre): no cryptiana page.",
-     "lasry": "No Lasry reading of the 1541 letters found; the repo's Laski 1531 key (kaa4591) is a different alphabet.",
-     "edition": "Gévay III prints Laski's letters of 13 Apr (no. L), 25 Apr (LI), 8/9/11 May (LII) and 21 May 1541 (LIII) in Latin; the djvu text was opened and the headings and Latin texts read.",
-     "literature": "Gévay 1838/1842 is the standard print; AIS cites it on both units."
-    },
-    "key_check": "No key needed to read them: the printed Latin in Gévay is the decipherment.",
-    "duplicates": "known.py 3 Nov 2026: catalogue 161 is the 1531 Bavarian Laski letter; no entry for these two units.",
-    "verdict": "read",
-    "closed": "Both units are printed with deciphered Latin text in Gévay, Urkunden und Actenstücke III (AIS cites Beilage 50 & 51 for 5-2-20 and 52 & 53 for 5-2-24; headings L, LI, LII, LIII read in the djvu text), so a printed decipherment exists."
-   },
-   "restored_from": "removed_2026-11-02 #497",
-   "open": "5-2-20 and 5-2-24, not seen glossed. The other letters were read at the time and printed by Gevay.",
-   "needs": "Viewing both items: they may be glossed too."
-  },
-  {
-   "id": 499,
-   "counted": true,
-   "year": 1542,
-   "date": "Mar 1542 - Jul 1543",
-   "title": "Niccolò Ferducci to Ferdinand I: letters 5-4-11, 5-4-16 and 5-5-6",
-   "correspondents": "Niccolò Ferducci → Ferdinand I; Ferducci → Castilegius",
-   "place": "Ragusa",
-   "language": "Italian; Latin",
-   "region": "Central Europe",
-   "period": "1497-1559",
-   "shelfmark": "HHStA Wien, StAbt Türkei I 5-4-11, 5-4-16, 5-5-6",
-   "folio_note": "fol. 20-27, 55 and others; digitised",
-   "cls": "A",
-   "status": "AIS: 5-4-5 'Chiffrierte Schreiben' (no decipherment); 5-4-7 of 6 Jun 1542 'interlinear dechiffriert' — same writer, same months. 27 Oct 2026, Brice Dudout (email): contemporary interlinear decipherments; his independent 1542 table agrees 6/6 with the codes rebuilt for no. 498. Narrowed to the unread part and restored 2 Nov 2026.",
-   "why": "Ottoman news from Ragusa in the years after the fall of Buda.",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 2,
-   "score_note": "Scored from the archive description during the Oct 2026 Austrian State Archives (HHStA/FHKA) sweep (research/central_archives/); not viewed",
-   "verify": "View 5-4-7 (glossed) and 5-4-5 in AIS; rebuild and apply the key.",
-   "links": [
-    {
-     "label": "AIS 5-4-5",
-     "href": "https://www.archivinformationssystem.at/detail.aspx?ID=6453190"
-    },
-    {
-     "label": "AIS 5-4-7 glossed",
-     "href": "https://www.archivinformationssystem.at/detail.aspx?ID=6453196"
-    },
-    {
-     "label": "AIS 5-4-11",
-     "href": "https://www.archivinformationssystem.at/detail.aspx?ID=6453545"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "Austrian State Archives (HHStA/FHKA) sweep",
-   "prior_art": "in archive: contemporary interlinear decipherments (Dudout, 27 Oct 2026; not verified here)",
-   "ark": "",
-   "scored": "sweep",
-   "as_of": "2026-10-27",
-   "access": "online",
-   "access_note": "online (backfilled 28 Oct 2026 from the entry: fol. 20-27, 55 and others; digitised AIS: 5-4-5 'Chiffrierte Schreiben' (no decipherment); 5-4-7...)",
-   "frame_check": {
-    "result": "confirmed",
-    "href": "https://www.archivinformationssystem.at/detail.aspx?ID=6453190",
-    "frame": "StAbt Tuerkei I 5-4-5, image 1 of 8 (Ferducci, Ragusa 24 Mar 1542)",
-    "saw": "Italian letter, about 22 lines: runs of symbol cipher (Greek/Latin-like signs) with the contemporary Italian decipherment written interlinear above each run. AIS description reads '4 Schreiben, interlinear dechiffriert', and images 2-4 show the other letters (5 Mai 1542 etc.) of the same file.",
-    "note": "The entry's statement 'no decipherment' for 5-4-5 is wrong: the AIS record says interlinear dechiffriert and the images show the glosses.",
-    "date": "2026-10-30",
-    "by": "claude frame check 02"
-   },
-   "vetting": {
-    "date": "2026-11-03",
-    "by": "claude leads review batch c14",
-    "seen": {
-     "kind": "scan",
-     "where": "AIS getimage route, 1600 px, for 5-4-11 (ID 6453545, images 1-2), 5-4-16 (ID 6454134, images 1-2), 5-5-6 (ID 6454181, images 1, 3, 7 of at least 12)",
-     "extent": "5-4-11 f. 55: two short Italian notes, clear text with about 25 code groups. 5-4-16 f. 65-66: a full letter in clear Italian. 5-5-6 f. 18-46: 9 letters per AIS; f. 19 is about 28 lines of symbol cipher, f. 20 a full clear Italian text.",
-     "cipher": "5-5-6 f. 19 (13 Mar 1543): symbol cipher with code values noted in the margin (N5, N23, S21 galere, S10 Friuli, Q8 exercitus); f. 20, dated 1543 13/3, is the clear Italian text with the same codes noted, and f. 24 is another such sheet (8/10 April 1543). 5-4-11: code groups such as Q20, H1, NS with glosses written above them and in the margin (first note glossed; second note, some groups have no visible gloss). 5-4-16: clear letter; only place, date and signature in code (S18, D8, D19, 543)."
-    },
-    "prior_art": {
-     "decode": "known.py on Ferducci returned only this lead and its own rows in the harvested DECODE dump and ledgers; not on DECODE.",
-     "tomokiyo": "Earlier pass (2 Nov) found no cryptiana page on Ferducci; not rerun, as the decipherment is on the leaves.",
-     "lasry": "Earlier pass found no Lasry reading of Ferducci; not rerun, as the decipherment is on the leaves.",
-     "edition": "Austro-Turcica 1541-1552 not opened for these letters; not needed for this verdict, which rests on the archive's own decipherments.",
-     "literature": "Dudout's report of 27 Oct 2026 (in this lead's status) describes contemporary interlinear decipherments in this series; these leaves agree with it."
-    },
-    "key_check": "No key needed for the verdict: the code values are written on the leaves. Dudout's 1542 table is known here only as a report; not tested.",
-    "duplicates": "known.py Ferducci: catalogue 498 (1530-32) is a different group; no other entry holds these three units.",
-    "verdict": "partly_read",
-    "closed": "Contemporary decipherments are in the file. AIS 5-5-6 reads '9, teilweise chiffrierte, Schreiben mit dechiffriertem Text als Beilage', and f. 20 and f. 24 are such clear sheets. 5-4-11 has code glosses above the groups, with some groups in its second note unglossed at this resolution. 5-4-16 is clear except place, date and signature codes. I viewed 3 of the 5-5-6 images, not all nine letters; what remains unread is short name and place codes."
-   },
-   "restored_from": "removed_2026-11-02 #499",
-   "open": "5-4-11, 5-4-16 and 5-5-6, not seen. Glossed siblings 5-4-5 and 5-4-7 give the key.",
-   "needs": "Viewing the three items: they may be glossed or read with the sibling values."
-  },
-  {
-   "id": 521,
-   "counted": true,
-   "year": 1798,
-   "date": "Jul 1798 - Feb 1799",
-   "title": "Sieyès embassy: Wessenberg P 1839 5 and the Rivals letter of 10 Oct 1798",
-   "correspondents": "Talleyrand to Sieyes (Konstanz P 1839 21, Paris 26 Oct 1798, clear text written over the cipher); Sieyes to Talleyrand (probable, P 1839 5, Berlin 17 Jul 1798); AN 284AP/12: Rivals (Cassel, 10 Oct 1798, dechiffrement manque), De Bry, Roberjot, Grouvelle, Parandier",
-   "place": "Paris / Berlin / Hamburg",
-   "language": "French",
-   "region": "France",
-   "period": "1701-1800",
-   "shelfmark": "Stadtarchiv Konstanz, Wessenberg correspondence P 1839 5; Archives nationales 284AP/12",
-   "folio_note": "Konstanz: 1 ciphered letter (26 Oct 1798, 1 p.) and a postscript of ciphered news (17 Jul 1798); AN: letters of 10 and 14 Oct 1798 partly ciphered, decipherment missing",
-   "cls": "B",
-   "status": "Kalliope: 'Chiffrierter Brief mit der Bitte um Auskunft über die Reaktionen in Berlin...'; AN inventory: 'partiellement chiffrée, le déchiffrement manque'. Another Konstanz letter (15 Sep 1798) mentions Grouvelle bringing 'la nouvelle chiffre' for Berlin-Hamburg-Copenhagen-Stockholm. Narrowed to the unread part and restored 2 Nov 2026.",
-   "why": "The Directory's secret Prussian policy during the Second Coalition, in Sieyès's own papers.",
-   "importance": 4,
-   "solvability": 2,
-   "difficulty": 3,
-   "score_note": "Scored from the archive description during the Oct 2026 Kalliope / FranceArchives sweep (research/central_archives/); not viewed",
-   "verify": "Ask Stadtarchiv Konstanz for P 1839 5/21 and consult AN 284AP/12; look for the 1798 Directory cipher (AE, Bazeries).",
-   "links": [
-    {
-     "label": "Kalliope P 1839 21",
-     "href": "https://kalliope-verbund.info/DE-611-HS-2869939"
-    },
-    {
-     "label": "Kalliope P 1839 5",
-     "href": "https://kalliope-verbund.info/DE-611-HS-2869346"
-    },
-    {
-     "label": "FranceArchives 284AP/12",
-     "href": "https://francearchives.gouv.fr/fr/facomponent/1136e85496902146877dddc1d3cfd9b284e913ff"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "Kalliope sweep",
-   "prior_art": "open (checked 26 Oct 2026: repo known.py, web search)",
-   "ark": "",
-   "scored": "sweep",
-   "frame_check": {
-    "result": "not_found",
-    "href": "https://kalliope-verbund.info/DE-611-HS-2869939",
-    "frame": "P 1839 21 / P 1839 5 / AN 284AP/12",
-    "saw": "Kalliope records (P 1839 21: ciphered letter Talleyrand to Sieyes, Paris 26 Oct 1798, 1 p., French, 'Klartext ist ueber den Chiffren notiert'; P 1839 5: Berlin 17 Jul 1798, 4 pp., cipher in postscript) and the FranceArchives notice for 284AP/12 are catalogue text only. No digitised images on any of them.",
-    "note": "Nothing digitised online; cipher not seen.",
-    "date": "2026-10-30",
-    "by": "claude frame check 05"
-   },
-   "access": "archive",
-   "vetting": {
-    "date": "2026-11-02",
-    "by": "claude vetting batch L15; narrowed 2 Nov 2026",
-    "seen": {
-     "kind": "not online",
-     "where": "Kalliope P 1839 21 https://kalliope-verbund.info/DE-611-HS-2869939 and P 1839 5 DE-611-HS-2869346 (fetched 2 Nov 2026); FranceArchives 284AP/12 https://francearchives.gouv.fr/fr/facomponent/1136e85496902146877dddc1d3cfd9b284e913ff read in Chrome 2 Nov 2026 (inventory text only); no images on any",
-     "extent": "Konstanz: P 1839 21, Talleyrand to Sieyes, Paris 26 Oct 1798, 1 p.; P 1839 5, Berlin 17 Jul 1798, 4 pp., ciphered and clear news in the postscript. AN 284AP/12: inventory of Sieyes's Berlin mission files; ciphered letters of Rivals (Cassel), De Bry and Roberjot (Rastatt), Grouvelle (Copenhagen), Parandier (Hamburg) and others",
-     "cipher": "Kalliope P 1839 21: \"Chiffrierter Brief ...\" and \"Der Klartext ist ueber den Chiffren notiert\": the plaintext is written over the cipher on the leaf. P 1839 5: \"im Nachtrag chiffrierte und nicht chiffrierte Tagesnachrichten\" (no decipherment mentioned). Both are Wessenberg's copies headed \"Varia Curiosa concernant la Prusse tire de la correspondance de Mr Laforest\". FranceArchives: Rivals, Cassel 10 Oct 1798 \"partiellement chiffree, le dechiffrement manque\"; many other letters \"chiffree\"."
-    },
-    "prior_art": {
-     "decode": "DECODE list scan: no Sieyes, Wessenberg or De Bry record.",
-     "tomokiyo": "No cryptiana page on Directory-era Berlin or Rastatt ciphers found.",
-     "lasry": "No Lasry item found.",
-     "edition": "The inventory states that De Bry's and Roberjot's Rastatt letters marked * are printed in Montarlot & Pingaud, Le Congres de Rastadt (Paris 1912-13), the printed ciphered ones among them. The Konstanz copy P 1839 21 carries its own clear text.",
-     "literature": "Web searches in German on the Konstanz Wessenberg copies and on Talleyrand-Sieyes ciphers found nothing further."
-    },
-    "key_check": "No Directory-period key is held or on DECODE. The clear text over the cipher in P 1839 21 is itself a crib for that piece; not tried because the leaf is not online. Rastatt printed texts would give cribs for the De Bry/Roberjot letters; not applied.",
-    "duplicates": "known.py run 2 Nov 2026 on the shelfmark series and correspondents; no catalogue duplicate; the Konstanz letters A 33 11/12 (catalogue 523) are a different group. No duplicate."
-   },
-   "restored_from": "removed_2026-11-02 #521",
-   "open": "P 1839 5 and the Rivals letter ('déchiffrement manque'). P 1839 21 carries clear text over the cipher and is a crib.",
-   "needs": "Scans of both; neither has been seen.",
-   "vetting_note": "cluster of ciphered letters across two archives, none online. Kalliope P 1839 21 (fetched 3 Nov) says 'Der Klartext ist ueber den Chiffren notiert', so that letter is deciphered on its leaf; P 1839 5 has only 'im Nachtrag chiffrierte und nicht chiffrierte Tagesnachrichten'; AN 284AP/12 (FranceArchives needs JS, not fetchable by curl) lists many ciphered letters, the Rastatt ones printed in Montarlot & Pingaud, Le Congres de Rastadt (1912-13), which could not be found on archive.org and was not opened, so the edition question is open. Needs one identified document (e.g. the Rivals letter of 10 Oct 1798, 'dechiffrement manque') and the AN inventory or Montarlot & Pingaud text checked at that item."
-  },
-  {
-   "id": 591,
-   "counted": true,
-   "year": 1812,
-   "date": "1809-1813",
-   "title": "Prussian cipher pieces: Rep. 91 A Nr. 86 and the Naples piece",
-   "correspondents": "Frederick William III → Heinrich von Werther; French governor of Magdeburg → Napoleon; Prussian legation Naples",
-   "place": "Königsberg / Vienna / Magdeburg / Naples",
-   "language": "French / German",
-   "region": "Germany",
-   "period": "1801-1900",
-   "shelfmark": "GStA PK, I. HA Rep. 91 A Nr. 86; I. HA Rep. 81 Neapel nach 1807 Nr. 24",
-   "folio_note": "FA Werther Nr. 36: 3 Bl., franz., 'Dechiffrierung des Zahlensystems' filed with the ciphered letters of 24-31 March 1810",
-   "cls": "B",
-   "status": "Finding aid as quoted. Prussian keys of 1807-14 survive in III. HA MdA ZB Nr. 73/1-7, 76, 76/1 (incl. 'Chiffren für ... die Missionen in Wien'), and 'Chiffren der französischen Kundschafter unter Napoleon' (MdA I Nr. 8808). Not digitised. Narrowed to the unread part and restored 2 Nov 2026.",
-   "why": "Prussia between Tilsit and the War of Liberation.",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 2,
-   "score_note": "Scored from the archive description during the Oct 2026 Archivportal-D sweep (research/archivportal_d/); not viewed",
-   "verify": "Order FA Werther 36 and MdA ZB 73/6.",
-   "links": [
-    {
-     "label": "FA Werther Nr. 36",
-     "href": "https://www.archivportal-d.de/item/4Z2P2GUGPJUUL3GT6XLUQSTPW3BAQHOJ"
-    },
-    {
-     "label": "Rep. 91 A Nr. 86",
-     "href": "https://www.archivportal-d.de/item/C4CCF5LUUEXRXLSPLOIJDVTAJZ5BDCL3"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "Archivportal-D sweep",
-   "prior_art": "open (checked 26 Oct 2026: known.py, quick web search).",
-   "ark": "",
-   "scored": "sweep",
-   "access": "archive",
-   "access_note": "not online (backfilled 28 Oct 2026 from the entry: ...ranzösischen Kundschafter unter Napoleon' (MdA I Nr. 8808). Not digitised. Order FA Werther 36 and MdA ZB 73/6. open (checked 26 Oct...)",
-   "vetting": {
-    "date": "2026-11-02",
-    "by": "claude vetting batch L18; narrowed 2 Nov 2026",
-    "seen": {
-     "kind": "not online",
-     "where": "https://www.archivportal-d.de/item/4Z2P2GUGPJUUL3GT6XLUQSTPW3BAQHOJ and https://www.archivportal-d.de/item/C4CCF5LUUEXRXLSPLOIJDVTAJZ5BDCL3",
-     "extent": "VI. HA FA Werther Nr. 36: 3 sheets, French, 24-31 March 1810, three ciphered letters of Frederick William III to Werther in Vienna; Rep. 91 A Nr. 86 (1813, ciphered dispatch of the governor of Magdeburg to Napoleon) not read beyond the lead.",
-     "cipher": "Archive's own note on Nr. 36: '3 Bl., franz. Dechiffrierung des Zahlensystems': a decipherment of the number system is filed with the letters. Not digitised."
-    },
-    "prior_art": {
-     "decode": "known.py over the DECODE dumps (views.jsonl, views_b, views_c), decode_updates queue, cryptoole snapshot and all targets/NOTES for the shelfmark and correspondents: no DECODE record for it. Searched 'Werther', 'Magdeburg': only unrelated hits.",
-     "tomokiyo": "Searched web for Tomokiyo cryptiana pages on German-archive ciphers (Baden, Hohenlohe, Wuerttemberg, Bavaria, Prussia): nothing on this item.",
-     "lasry": "Searched web for Lasry / DECODE German envoy ciphers: found only his Saxon 1698-1728 court ciphers (Tartu paper), papal ciphers and 1900-15 German attache messages; nothing on this file.",
-     "edition": "Web search (Prussian cipher 1810 Werther Vienna Frederick William III) found only the DDB/Archivportal record itself and a 1841 file in the same Werther papers asking Werther to decipher a message; no edition.",
-     "literature": "No literature on Prussian ciphers of 1809-13 found; the lead notes Prussian keys of 1807-14 in III. HA MdA ZB Nr. 73/1-7, 76."
-    },
-    "key_check": "Prussian keys of 1807-14 are named in the lead (III. HA MdA ZB Nr. 73, 76); none is held here. The decipherment filed with Nr. 36 would read those three letters once imaged.",
-    "duplicates": "known.py on 'Werther', 'Magdeburg', 'Rep. 91 A': the dudout 2026-10-29 README mentions 'ar-281: Werther 36 and Rep. 91 A Nr. 86' as a candidate; no catalogue, target or DECODE duplicate."
-   },
-   "restored_from": "removed_2026-11-02 #591",
-   "open": "Both unexamined. The three Werther letters have a Dechiffrierung filed with them and are not part of this lead.",
-   "needs": "Scans of both; the Prussian keys of 1807-14 named in the original lead (III. HA MdA ZB Nr. 73, 76) are not held.",
-   "vetting_note": "Records opened in Chrome, none digitised. FA Werther Nr. 36: '3 chiffrierte Schreiben Friedrich Wilhelm III. an v. Werther in Wien', 24-31 Mar 1810, with 'Dechiffrierung des Zahlensystems' noted: prior art, out of this lead. Rep. 91 A Nr. 86: title only, 'Übergabe einer chiffrierten Depesche des Gouverneurs von Magdeburg an Napoleon', 1813, filed under Reisen, Zeremoniell, so no sign the ciphertext survives. Naples piece not rechecked. Needs a GStA PK copy of Rep. 91 A Nr. 86."
-  },
-  {
-   "id": 697,
-   "counted": true,
-   "year": 1917,
-   "date": "9 Nov 1917",
-   "title": "German agent message 'Tismera', Nov 1917",
-   "correspondents": "German agents -> unknown",
-   "place": "United States / Mexico",
-   "language": "German",
-   "region": "Americas",
-   "period": "1901-1950",
-   "shelfmark": "NARA RG 165, WCD/MID file 10270-81 (index card M1194 roll 75, frame 2399)",
-   "folio_note": "Three messages; the Tismera message unfinished.",
-   "cls": "B",
-   "status": "Card read 2 Nov 2026: two messages 'have been deciphered' (code a disc[...], text cut at the card edge) and the Tismera message was being deciphered 'by use of an old system of Ger. shorthand ... very slow'. No later result on the card. Narrowed to the unread part and restored 2 Nov 2026.",
-   "why": "MI-8's first months: a German agent system built on shorthand, read only in part.",
-   "importance": 2,
-   "solvability": 1,
-   "difficulty": 4,
-   "score_note": "Scored from MID index cards / BI case-file OCR during the Oct 2026 NARA slice-E triage (research/nara_triage_e/); not viewed",
-   "verify": "Order MID file 10270-81 (RG 165, entry 65, NARA College Park) and check whether the ciphertext copy survives.",
-   "links": [
-    {
-     "label": "M1194 roll 75 (frame 2399)",
-     "href": "https://catalog.archives.gov/id/118077561"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "NARA bulk-scan triage (slice E, RG 165/RG 65 cipher-word pass)",
-   "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search)",
-   "ark": "",
-   "scored": "sweep",
-   "access": "archive",
-   "access_note": "not online (backfilled 28 Oct 2026 from the entry: ...rrespondence file itself (RG 165, entry 65, MID 1917-41) is not digitised; only the index card (M1194/M912/M1474) is online. Order MI...)",
-   "vetting": {
-    "date": "2026-11-02",
-    "by": "claude vetting batch L22; narrowed 2 Nov 2026",
-    "seen": {
-     "kind": "not online",
-     "where": "NARA M1194 roll 75 frame 2399 (https://catalog.archives.gov/id/118077561); NARA catalog card image (RG 165 index card, fetched by curl from the catalog medialz route and read in full)",
-     "extent": "Three messages (MID file 10270-81; not digitised).",
-     "cipher": "Card read: 10270-81, C,MIS.WCD. Nov. 9-17: 'Enc. 2 messages which have been deciphered. Code used in these messages was a disc[...] The Tismera message is being deciphered by use of an old system of Ger. shorthand. Translation & deciphering goes very slow.'"
-    },
-    "prior_art": {
-     "decode": "Not a DECODE item: DECODE holds European early-modern archives; known.py on the names (2 Nov 2026) hits only this repo's own catalogue/triage rows.",
-     "tomokiyo": "Tomokiyo's cryptiana covers European and some Spanish/Latin material before 1900, not US MID files; nothing on this item (searched with the names, 2 Nov 2026).",
-     "lasry": "No Lasry/DECODE treatment; known.py hit only our own rows.",
-     "edition": "No edition or calendar known (searched 2 Nov 2026).",
-     "literature": "Searched 2 Nov 2026 (WebSearch, five or more queries across the MID-card group: MI-8/Yardley and Manly case lists, Friedman collection, the lead's names plus cipher/code): no printed or online decipherment of this item; the Yardley/Manly literature (Dooley, Codes Ciphers and Spies; NSA histories) does not mention it."
-    },
-    "key_check": "No key held; the two messages were deciphered at the time (decipherments not online); the Tismera message was in progress with no result on the card.",
-    "duplicates": "known.py run on 'Tismera' (2 Nov 2026): hits only this entry's own catalogue/CATALOGUE.md/nara_triage_e rows, no other catalogue id or DECODE record for the same item."
-   },
-   "restored_from": "removed_2026-11-02 #697",
-   "open": "The Tismera message, in progress with no recorded result; the other two were deciphered by MID.",
-   "needs": "MID file 10270-81 itself: only the index card is online.",
-   "vetting_note": "Chrome pass 3 Nov 2026 c20: catalog.archives.gov/id/118077561 opens in Chrome but is only the M1194 name-index file unit 'Eun - Fac' (RG 165, Security Classified Personal Name Index, 2510 card images); the correspondence itself, MID file 10270-81 (RG 165, entry 65, College Park), is not digitised, so no ciphertext can be seen. The card's 'old system of Ger. shorthand' leaves cipher versus shorthand unsettled, and it is no evidence that the sheets survive. Searches ('Tismera' + MI-8 + Mexico; MID file 10270 + Manly/Yardley/Gabelsberger) found nothing on this item; Dooley, Codes Ciphers and Spies, not opened. Needs the file from NARA College Park."
   },
   {
    "id": 1617,
@@ -30769,80 +30945,6 @@
    "vetting_note": "NLS record read in Chrome (archival_objects/38177, MS.3836, 6 leaves, c. 1690, \"partly in code\"). Macpherson, Original Papers i (archive.org, 95 Melfort hits) prints Melfort's Rome letters to the Queen, and BL Lansdowne 1163 A-C registers them: whether ff. 3-8 are already printed or deciphered needs the leaves from NLS to compare."
   },
   {
-   "id": 2047,
-   "counted": true,
-   "year": 1664,
-   "date": "1664-73",
-   "title": "Correspondence with Wilhelm von Schröder, secret secretary at the imperial court, with ciphers",
-   "correspondents": "Wilhelm von Schröder ↔ Philipp Wilhelm of Pfalz-Neuburg",
-   "place": "Vienna",
-   "language": "German",
-   "region": "Central Europe",
-   "period": "1651-1700",
-   "shelfmark": "BayHStA, Kasten blau 61/25",
-   "folio_note": "file 1664-73",
-   "cls": "A",
-   "status": "Finding aid: \"Enthält u.a.: Chiffren\". May be keys rather than ciphertext.",
-   "why": "Pfalz-Neuburg intelligence from the Vienna court.",
-   "importance": 3,
-   "solvability": 2,
-   "difficulty": 3,
-   "score_note": "Scored from the finding-aid description during the Nov 2026 German portals sweep 2 (research/sweep_2026-11_german_portals_2/); not viewed",
-   "verify": "Blocked (review 3 Nov 2026): Bare \"Chiffren\" in a mixed correspondence file: \"Enthält u.a.: Chiffren\". The same describer writes \"nicht aufgelöste Chiffren\" (61/3) and \"entschlüsselte Chiffren\" (62/9 II) when ciphertext is meant, so this may be keys. Blocker: no scan online; needs an archive answer or scan. Kasten blau 61/25, 1664-73; known.py and web search found no print.",
-   "links": [
-    {
-     "label": "Kasten blau 61/25",
-     "href": "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++6DC92A09-978E-4B66-955A-3DBBBA89E04F&parent_id=#Vz______6DC92A09-978E-4B66-955A-3DBBBA89E04F"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "gda.bayern.de sweep",
-   "prior_art": "open as far as checked (3 Nov 2026: known.py on shelfmark and names, repo catalogue, leads and the DECODE list; Tomokiyo, Lasry, the edition and the literature not yet searched)",
-   "needs_archive_scan": "yes",
-   "access_note": "finding aid online; the archive shows no scan of this unit, so a scan order or a reading-room visit is needed",
-   "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "gda.bayern.de record Kasten blau 61/25 (fetched by curl) says only 'Enthält u.a.: Chiffren' in a mixed Schröder correspondence file 1664-73: no ciphertext shown, may be keys; no scan online; web search for Schröder/Philipp Wilhelm/Chiffren found nothing. Needs archive answer or scan."
-  },
-  {
-   "id": 2048,
-   "counted": true,
-   "year": 1671,
-   "date": "1671-74",
-   "title": "Correspondence with Oberkanzler Franz von Gise, with several ciphers and letters of Louis de Verjus",
-   "correspondents": "Franz von Gise ↔ Philipp Wilhelm of Pfalz-Neuburg",
-   "place": "unknown",
-   "language": "German; French",
-   "region": "Germany",
-   "period": "1651-1700",
-   "shelfmark": "BayHStA, Kasten blau 61/30",
-   "folio_note": "file 1671-74",
-   "cls": "A",
-   "status": "Finding aid: \"Enthält auch: verschiedene Chiffren, Briefe von dem französischen Diplomaten Louis de Verjus\".",
-   "why": "Neuburg and French diplomacy before the Dutch War; may hold keys for Gise letters.",
-   "importance": 3,
-   "solvability": 2,
-   "difficulty": 3,
-   "score_note": "Scored from the finding-aid description during the Nov 2026 German portals sweep 2 (research/sweep_2026-11_german_portals_2/); not viewed",
-   "verify": "Blocked (review 3 Nov 2026): Bare \"Chiffren\" in a mixed correspondence file: \"Enthält auch: verschiedene Chiffren, Briefe von dem französischen Diplomaten Louis de Verjus und von M.L.J. von Sinzig\". The same describer writes \"nicht aufgelöste Chiffren\" (61/3) and \"entschlüsselte Chiffren\" (62/9 II) when ciphertext is meant, so this may be keys. Blocker: no scan online; needs an archive answer or scan. \"Verschiedene\" fits a set of keys best; if so it is a key candidate for catalogue 2001. Date 1671-74.",
-   "links": [
-    {
-     "label": "Kasten blau 61/30",
-     "href": "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++6686A886-B136-4D32-9F30-7CE624B01246&parent_id=#Vz______6686A886-B136-4D32-9F30-7CE624B01246"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "gda.bayern.de sweep",
-   "prior_art": "open as far as checked (3 Nov 2026: known.py on shelfmark and names, repo catalogue, leads and the DECODE list; Tomokiyo, Lasry, the edition and the literature not yet searched)",
-   "needs_archive_scan": "yes",
-   "access_note": "finding aid online; the archive shows no scan of this unit, so a scan order or a reading-room visit is needed",
-   "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "gda.bayern.de record Kasten blau 61/30 says only 'verschiedene Chiffren' in a Gise/Verjus correspondence file 1671-74: no ciphertext shown, fits keys (candidate key set for catalogue 2001/Gise entries); no scan online; web search Gise/Verjus found nothing. Needs archive answer or scan."
-  },
-  {
    "id": 1997,
    "counted": true,
    "year": 1670,
@@ -31537,6 +31639,80 @@
     "closed": "E 40/11 Bü 243 not digitised; the description itself says 'verschlüsselte Geheimkorrespondenz samt Auflösung', so the decipherment is in the file. Not viewed.",
     "date": "2026-11-03"
    }
+  },
+  {
+   "id": 2047,
+   "counted": true,
+   "year": 1664,
+   "date": "1664-73",
+   "title": "Correspondence with Wilhelm von Schröder, secret secretary at the imperial court, with ciphers",
+   "correspondents": "Wilhelm von Schröder ↔ Philipp Wilhelm of Pfalz-Neuburg",
+   "place": "Vienna",
+   "language": "German",
+   "region": "Central Europe",
+   "period": "1651-1700",
+   "shelfmark": "BayHStA, Kasten blau 61/25",
+   "folio_note": "file 1664-73",
+   "cls": "A",
+   "status": "Finding aid: \"Enthält u.a.: Chiffren\". May be keys rather than ciphertext.",
+   "why": "Pfalz-Neuburg intelligence from the Vienna court.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 3,
+   "score_note": "Scored from the finding-aid description during the Nov 2026 German portals sweep 2 (research/sweep_2026-11_german_portals_2/); not viewed",
+   "verify": "Blocked (review 3 Nov 2026): Bare \"Chiffren\" in a mixed correspondence file: \"Enthält u.a.: Chiffren\". The same describer writes \"nicht aufgelöste Chiffren\" (61/3) and \"entschlüsselte Chiffren\" (62/9 II) when ciphertext is meant, so this may be keys. Blocker: no scan online; needs an archive answer or scan. Kasten blau 61/25, 1664-73; known.py and web search found no print.",
+   "links": [
+    {
+     "label": "Kasten blau 61/25",
+     "href": "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++6DC92A09-978E-4B66-955A-3DBBBA89E04F&parent_id=#Vz______6DC92A09-978E-4B66-955A-3DBBBA89E04F"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "gda.bayern.de sweep",
+   "prior_art": "open as far as checked (3 Nov 2026: known.py on shelfmark and names, repo catalogue, leads and the DECODE list; Tomokiyo, Lasry, the edition and the literature not yet searched)",
+   "needs_archive_scan": "yes",
+   "access_note": "finding aid online; the archive shows no scan of this unit, so a scan order or a reading-room visit is needed",
+   "ark": "",
+   "access": "archive",
+   "scored": "sweep",
+   "vetting_note": "gda.bayern.de record Kasten blau 61/25 (fetched by curl) says only 'Enthält u.a.: Chiffren' in a mixed Schröder correspondence file 1664-73: no ciphertext shown, may be keys; no scan online; web search for Schröder/Philipp Wilhelm/Chiffren found nothing. Needs archive answer or scan."
+  },
+  {
+   "id": 2048,
+   "counted": true,
+   "year": 1671,
+   "date": "1671-74",
+   "title": "Correspondence with Oberkanzler Franz von Gise, with several ciphers and letters of Louis de Verjus",
+   "correspondents": "Franz von Gise ↔ Philipp Wilhelm of Pfalz-Neuburg",
+   "place": "unknown",
+   "language": "German; French",
+   "region": "Germany",
+   "period": "1651-1700",
+   "shelfmark": "BayHStA, Kasten blau 61/30",
+   "folio_note": "file 1671-74",
+   "cls": "A",
+   "status": "Finding aid: \"Enthält auch: verschiedene Chiffren, Briefe von dem französischen Diplomaten Louis de Verjus\".",
+   "why": "Neuburg and French diplomacy before the Dutch War; may hold keys for Gise letters.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 3,
+   "score_note": "Scored from the finding-aid description during the Nov 2026 German portals sweep 2 (research/sweep_2026-11_german_portals_2/); not viewed",
+   "verify": "Blocked (review 3 Nov 2026): Bare \"Chiffren\" in a mixed correspondence file: \"Enthält auch: verschiedene Chiffren, Briefe von dem französischen Diplomaten Louis de Verjus und von M.L.J. von Sinzig\". The same describer writes \"nicht aufgelöste Chiffren\" (61/3) and \"entschlüsselte Chiffren\" (62/9 II) when ciphertext is meant, so this may be keys. Blocker: no scan online; needs an archive answer or scan. \"Verschiedene\" fits a set of keys best; if so it is a key candidate for catalogue 2001. Date 1671-74.",
+   "links": [
+    {
+     "label": "Kasten blau 61/30",
+     "href": "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++6686A886-B136-4D32-9F30-7CE624B01246&parent_id=#Vz______6686A886-B136-4D32-9F30-7CE624B01246"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "gda.bayern.de sweep",
+   "prior_art": "open as far as checked (3 Nov 2026: known.py on shelfmark and names, repo catalogue, leads and the DECODE list; Tomokiyo, Lasry, the edition and the literature not yet searched)",
+   "needs_archive_scan": "yes",
+   "access_note": "finding aid online; the archive shows no scan of this unit, so a scan order or a reading-room visit is needed",
+   "ark": "",
+   "access": "archive",
+   "scored": "sweep",
+   "vetting_note": "gda.bayern.de record Kasten blau 61/30 says only 'verschiedene Chiffren' in a Gise/Verjus correspondence file 1671-74: no ciphertext shown, fits keys (candidate key set for catalogue 2001/Gise entries); no scan online; web search Gise/Verjus found nothing. Needs archive answer or scan."
   },
   {
    "id": 2049,
