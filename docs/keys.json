@@ -2399,7 +2399,11 @@
 {"id": "k-martinique1778-k507", "label": "Bouillé's cipher of 1778-1782, 507-group key (rebuilt here from the glosses of five 1779 letters)", "kind": "rebuilt here", "by": "cyphersolver (Daniel Bourdeau)", "year": 1778, "note": "Numeric nomenclator, 507 values (letters, syllables, words and names; 428 la Guadeloupe, 268 garnison, 138 la Dominique) paired group by group with the clerks' interlinear glosses of C8 A 78 ff. 123, 3, 5, 31 and 144; found independently of Dudout's K6 and agrees with it where they overlap. Applied to three unglossed letters of 1780-1782."},
 {"id": "k-partyet1721", "label": "Cadiz consulate cipher 1719-1722, numerical table 1-465 (rebuilt from the interlinear glosses)", "kind": "rebuilt here", "by": "cyphersolver (Brice Dudout)", "year": 1721, "note": "Alphabetical numerical table, syllables then words for each initial, rebuilt from the contemporary interlinear decipherments of five neighbouring Partyet letters (AE/B/I/226) and frozen before validation on held-out glossed letters of January-February 1721."},
 {"id": "k-genes1638-k3f", "label": "Spanish embassy at Genoa, numerical cipher of 1638 (key K3f)", "kind": "rebuilt here", "by": "cyphersolver (Brice Dudout)", "year": 1638, "note": "Vowels 16-20, syllabic series of five numbers, disguised syllables and code signs; rebuilt on the pairs 3594,146/145, 143/142 and 169/168 of the same bundle and frozen before the held-out test on 3594,160/159 (0.896 of characters, 0.784 of words)."},
-{"id": "k-adrian1520-k7", "label": "Cardinal of Tortosa's dotted trigraph code, 1520-21 (key K7, rebuilt from his other letters)", "kind": "rebuilt here", "by": "cyphersolver (Brice Dudout)", "year": 1520, "note": "Consonant-vowel-consonant groups with a dot for words and syllables, and a homophonic alphabet; rebuilt from cipher and plain pairs of the Cardinal's letters of 1520-21 (Bergenroth, Danvila, contemporary transcriptions), frozen, and validated on a fresh pair (0.882 of characters against at best 0.176 for 200 shuffled keys)."}
+{"id": "k-adrian1520-k7", "label": "Cardinal of Tortosa's dotted trigraph code, 1520-21 (key K7, rebuilt from his other letters)", "kind": "rebuilt here", "by": "cyphersolver (Brice Dudout)", "year": 1520, "note": "Consonant-vowel-consonant groups with a dot for words and syllables, and a homophonic alphabet; rebuilt from cipher and plain pairs of the Cardinal's letters of 1520-21 (Bergenroth, Danvila, contemporary transcriptions), frozen, and validated on a fresh pair (0.882 of characters against at best 0.176 for 200 shuffled keys)."},
+{"id": "k-buda1490", "label": "Maffeo da Treviglio 1490 homophonic Latin cipher (key.json, rebuilt here)", "kind": "rebuilt here", "by": "cyphersolver (contributor)", "year": 1490, "note": "Rebuilt from the clear minute of the same letter kept in Milan, extended by a retry pass; 76 labels over 3,199 tokens, about 60 carrying the text."},
+{"id": "k-marignano1546", "label": "Marignano 1546 homophonic substitution (key.tsv, rebuilt here)", "kind": "rebuilt here", "by": "cyphersolver (contributor)", "year": 1546, "note": "Rebuilt from the contemporary clear translation on c. 14r of the same letter and frozen; homophones for vowels, a sigma-shaped null, and a code for V. Ecc.a."},
+{"id": "k-alfonso1576", "label": "Alfonso II d'Este 1576 simple substitution (key_1576.tsv, recovered ciphertext-only)", "kind": "rebuilt here", "by": "cyphersolver (contributor)", "year": 1576, "note": "20 signs, nulls x, y, k, & and 3, no word breaks; recovered by quadgram search on period Italian with no crib, then corrected on two q-forms (g = s, q = m)."},
+{"id": "k-siguenza1554", "label": "Pacheco 1554 chancery syllabary (key_1554.md, rebuilt here)", "kind": "rebuilt here", "by": "cyphersolver (contributor)", "year": 1554, "note": "Consonant signs with vowel marks, syllable signs, homophones and code groups; rebuilt by aligning cipher and the decipherment of the time on five BNE letters, then confirmed on four Real Biblioteca letters (97% of 626 signs)."}
  ],
  "links": [
 {"key": "k-imperial-1544", "target": "gonzaga1549", "how": "adapted", "note": "Key image read at low resolution, extended by hand from the letters; validated on 2,959 read signs."},
@@ -3823,7 +3827,11 @@
 {"key": "k-martinique1778-k507", "target": "martinique1778", "how": "rebuilt from", "note": "key paired from the glosses of five 1779 letters, then applied unchanged to the unglossed letters of 24 May 1780, 14 Nov 1780 and 24 Nov 1782"},
 {"key": "k-partyet1721", "target": "partyet1721", "how": "rebuilt from", "note": "table rebuilt from the interlinear decipherments of neighbouring letters, frozen, then applied to the unglossed passage"},
 {"key": "k-genes1638-k3f", "target": "genes1638", "how": "rebuilt from", "note": "key rebuilt from the contemporary plain copies in the same bundle, frozen, then applied to 3594,156 which has no plain copy"},
-{"key": "k-adrian1520-k7", "target": "adrian1520", "how": "rebuilt from", "note": "key rebuilt from the Cardinal's other cipher letters with known plain text, frozen, validated on PTR,LEG,2,1,99, then applied to the unread paragraph of 9 September 1520"}
+{"key": "k-adrian1520-k7", "target": "adrian1520", "how": "rebuilt from", "note": "key rebuilt from the Cardinal's other cipher letters with known plain text, frozen, validated on PTR,LEG,2,1,99, then applied to the unread paragraph of 9 September 1520"},
+{"key": "k-buda1490", "target": "buda1490", "how": "rebuilt from", "note": "key recovered from the Milan minute, extended by the retry pass; statistical validation passed"},
+{"key": "k-marignano1546", "target": "marignano1546", "how": "rebuilt from", "note": "key rebuilt from the clear translation on c. 14r, frozen, then used for the counts"},
+{"key": "k-alfonso1576", "target": "alfonso1576", "how": "rebuilt from", "note": "key recovered from the ciphertext alone by quadgram search; 8 of 10 restarts reached one solution"},
+{"key": "k-siguenza1554", "target": "siguenza1554", "how": "rebuilt from", "note": "key rebuilt from the decipherments of the time on the BNE letters; confirmed on the Real Biblioteca siblings"}
  ],
  "sources": [
   {
@@ -4455,7 +4463,11 @@
 {"source": "s-cyphersolver", "key": "k-martinique1778-k507"},
 {"source": "s-cyphersolver", "key": "k-partyet1721"},
 {"source": "s-cyphersolver", "key": "k-genes1638-k3f"},
-{"source": "s-cyphersolver", "key": "k-adrian1520-k7"}
+{"source": "s-cyphersolver", "key": "k-adrian1520-k7"},
+{"source": "s-cyphersolver", "key": "k-buda1490"},
+{"source": "s-cyphersolver", "key": "k-marignano1546"},
+{"source": "s-cyphersolver", "key": "k-alfonso1576"},
+{"source": "s-cyphersolver", "key": "k-siguenza1554"}
  ],
  "unlinked": {
   "kopp1921": "Not solved: no key recovered or identified.",

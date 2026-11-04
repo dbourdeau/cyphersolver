@@ -155,6 +155,11 @@ PAGES = [
          blurb='Asko Parpola&rsquo;s Dravidian readings checked on two independent corpora, then 2,364 hypotheses registered before testing (1,224 held, 1,140 failed), with Linear B and Ur III seal legends as controls. The grammar a reading must fit is set out: an ending slot chosen by the name&rsquo;s last sign, line breaks that never split a word unit, numerals fixed with what they count. Seal names are individual compositions, as Linear B personal names are. No sign value is established.',
          quote='255 435 690 740 &middot; 705 33 520 &middot; 2 + fish, not 6 + fish, is the commonest count',
          rights='CISI vol. 1 (Joshi and Parpola 1987); signs drawn in the indus-website font'),
+    dict(slug='buda1490', label='Maffeo to Bak&oacute;cz 1490', year='1490', y=1490.91, place='Milan &rarr; Buda', st='partial', stt='read in part',
+         title='Maffeo da Treviglio to Tam&aacute;s Bak&oacute;cz, 30 November 1490',
+         blurb='A four-page Latin cipher letter on the Sforza marriage alliance with the new king of Hungary, with the dowry raised from 150,000 to 200,000 ducats. Harrison Bornstein recovered the key from the clear minute kept in Milan and read 561 of 624 words (89.9%), under the 95% bar.',
+         quote='&ldquo;In christo pater et domine pater honorande&hellip;&rdquo;',
+         rights='Letter: Hungarian National Archives, DL 46150, via Hungaricana; reading by Harrison Bornstein (PR #199)'),
     dict(slug='adrian1520', label='Adrian of Utrecht to Charles V 1520', year='1520', y=1520.69, place='Valladolid &rarr; Charles V', st='solved', stt='key from external plaintext',
          title='Adrian of Utrecht to Charles V, 9 September 1520',
          blurb='Six cipher lines in the regent of Castile&rsquo;s letter during the Comuneros revolt, printed in 1897 without them as not translatable. Brice Dudout rebuilt the Cardinal&rsquo;s dotted trigraph code from his other letters, validated it on a fresh pair (0.882 of characters), and read the paragraph: 44 of 46 words.',
@@ -175,11 +180,21 @@ PAGES = [
          blurb='Catalogued as a ciphered letter of &ldquo;Augurellio&rdquo;, it is a report from the Bavarian agent J&ouml;rg Weinmeister, who signs in cipher, on King John&rsquo;s siege of Palota in 1533. The homophonic key of the volume&rsquo;s System A&prime; was recovered from contemporary glosses on a sibling letter and on this one (adjacent plaintext), and 96.7% of the letter&rsquo;s words are deciphered.',
          quote='&ldquo;er sol von solchen sachen des morgens, wan er nuechter sei, mit ime reden&rdquo;',
          rights='Bayerisches Hauptstaatsarchiv, via DECODE R9407'),
+    dict(slug='marignano1546', label='Marignano to Ferrante Gonzaga 1546', year='1546', y=1546.45, place='Ratisbon &rarr; Milan', st='solved', stt='existing decipherment',
+         title='Marignano to Ferrante Gonzaga, 12 June 1546',
+         blurb='Ten cipher lines in a letter from the imperial court at Ratisbon on the war against the Lutherans. A contemporary clear translation on the next leaf covers the whole passage, so WAINUT rebuilt the key from it and read all 62 words.',
+         quote='&ldquo;la guerra &egrave; risoluta&hellip;&rdquo; (the war against the Lutherans is decided)',
+         rights='Letter: Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera M; reading by WAINUT'),
     dict(slug='huyson1547', label='Henry II to Suleiman 1547', year='1547', y=1547.75, place='Constantinople &rarr; Ferdinand I', st='solved', stt='external key matched',
          title='Henry II to Suleiman, 1547: Malvezzi&rsquo;s enciphered copy',
          blurb='Ferdinand I&rsquo;s resident at the Porte, Giovanni Maria Malvezzi, sent Vienna an enciphered Latin copy of three letters of Henry II to Suleiman, among them the credence for the sieur d&rsquo;Huyson, with his own Italian notes (HHStA T&uuml;rkei I 7-2-18). Brice Dudout deciphered it with Malvezzi&rsquo;s alphabet from DECODE R367/R386, calibrated on a sibling copy against its decipherment of the time and tested blind on a letter of 1550: about 97.5% of some 1,550 word groups. Henry asks the Sultan to have the Swiss included in the truce with Charles V and Ferdinand, warns against the Cr&eacute;py articles slipped into the Emperor&rsquo;s ratification, and asks for the Ottoman fleet.',
          quote='&ldquo;tunc michi scripsit literas lusorias et ridicolas&rdquo;',
          rights='&Ouml;sterreichisches Staatsarchiv, HHStA StAbt T&uuml;rkei I 7-2-18; no image reproduced'),
+    dict(slug='siguenza1554', label='Pacheco to Granvelle 1554', year='1554', y=1554.25, place='Naples &rarr; Granvelle', st='solved', stt='key from adjacent plaintext',
+         title='Pacheco to Granvelle, April&ndash;June 1554',
+         blurb='Five letters of the viceroy of Naples to the bishop of Arras on money, troops and the war of Siena. Their cipher passages carry a decipherment written at the time, and Michael Brackx rebuilt the chancery syllabary from it: 887 signs transcribed, 98% valued.',
+         quote='&ldquo;Yo me hallo confuso en hallarme en este tiempo tan falto de dinero&rdquo;',
+         rights='Letters: Biblioteca Nacional de Espa&ntilde;a, MSS/20214/61/1&ndash;6, via BNE Digital; reading by Michael Brackx'),
     dict(slug='philip1574', label='Philip II to Don Juan 1574', year='1574', y=1574.65, place='Madrid &rarr; Don Juan of Austria', st='solved', stt='read',
          title='Philip II to Don Juan of Austria, Madrid, 28 August 1574',
          blurb='A ciphered royal letter in the Koninklijk Huisarchief (G016-A0204) came with a clear version on a separate sheet. Rebuilding the key from the pair (letters near alphabetical order, vowels added as a cross or a dot on the preceding sign) confirms the clear version on the lines checked and corrects it twice. The King sends Don Juan the ransomed ensign Diego de Esquivia and answers Hürrem Bey, the Sultan&rsquo;s chief interpreter.',
@@ -207,6 +222,11 @@ PAGES = [
          rights='British Library, Add MS 4136, via DECODE R2989'),
     dict(slug='r8358', label='Burghley to Walsingham July 1572', year='1572', y=1572.51, place='Westminster &rarr; Paris', st='stuck', stt='key not found', title='Burghley to Walsingham, 5 July 1572', blurb='A letter-book copy of Burghley&rsquo;s letter to Walsingham in Paris, clear English with 15 code and cipher tokens. Context and Walsingham&rsquo;s reply identify code [3] as the French King; no key survives, and the rest is not deciphered.', quote='Some that are come home bear us in hand that [3] reneweth the m o R. d A. [4] whereby the last matter is hindered', rights='British Library (images via DECODE; details reproduced with credit)'),
     dict(slug='walsingham1572', label='Walsingham to Burghley 1573', year='1573', y=1573.05, place='Paris &rarr; London', st='stuck', stt='too short, no key', title='Walsingham to Burghley, 20 January 1572/3', blurb='A letter-book copy in clear English with one ciphered place name of six symbols. With the one group in Burghley&rsquo;s reply there are twelve symbols in all, too few to recover a key, and several Channel ports fit; the group is not deciphered.', quote='a Gentleman of [9] departed hence to 2 1 &#8984; &epsilon; 9 4 with intention to imbarke there', rights='British Library (images via DECODE; details reproduced with credit)'),
+    dict(slug='alfonso1576', label='Alfonso II d&rsquo;Este to Venice 1576', year='1576', y=1576.29, place='Ferrara &rarr; Venice', st='solved', stt='ciphertext-only break',
+         title='Alfonso II d&rsquo;Este to his agent at Venice, 14 April 1576',
+         blurb='A two-leaf cipher letter of the duke of Ferrara to his agent at Venice, with no decipherment on the leaf. WAINUT recovered the substitution by quadgram search on period Italian, no crib, and read 737 of 740 words, narrowly over the bar.',
+         quote='&ldquo;&hellip;il quale non fu mai a soldo nostro&hellip;&rdquo; (he was never in Este pay)',
+         rights='Letter: Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera E; reading by WAINUT'),
     dict(slug='mercoeur1586', label='&ldquo;MR&rdquo; to Merc&oelig;ur 1586', year='[1586]', y=1586.48, place='? &rarr; Merc&oelig;ur, Brittany', st='stuck', stt='too short, no key',
          title='&ldquo;MR&rdquo; to the Duke of Merc&oelig;ur, 26 June [1586]',
          blurb='A slip in clear French with six cipher runs, 217 symbols of 55 kinds. Lasry&rsquo;s key for the volume and two other League keys of 1586 share no symbols with it, and a ciphertext-only solver scores the text no better than a shuffled copy; the cipher is not deciphered.',
@@ -4126,6 +4146,10 @@ IMAGES['waddall1656'] = ('waddall1656_tsp5_p337.jpg','The cipher words in Waddal
 IMAGES['johnston1863'] = ('johnston1863_lead.jpg', 'The cipher lines of the telegram: UNIEK &ndash; CXNKVNED, JJTRRK, ISLX &ndash; KFYHJEER', 'National Archives, RG 109, naId 3854726, image 1, via the National Archives Catalog')
 IMAGES['milroy'] = None
 IMAGES['auckland1918'] = None
+IMAGES['siguenza1554'] = None
+IMAGES['alfonso1576'] = None
+IMAGES['marignano1546'] = None
+IMAGES['buda1490'] = None
 IMAGES['adrian1520'] = None
 IMAGES['damas1787'] = None
 IMAGES['bouille1778'] = None
