@@ -204,3 +204,16 @@ folio cropped to the telegram sheet, its decryption with the enciphered parts in
 - [x] print: no edition of the unread passages found
 - [n/a] key-rebuild: the key reconstruction is George Lasry's, not this project's work
 - [x] retry: his full Readable text (24 Oct 2026) read and measured; holes left as he marks them
+
+## Update 4 Nov 2026: PR #201 merged as submitted, with open points
+
+George Lasry's PR #201 (French report, f15r read, codebook revised to 242 groups) was merged as submitted. Five questions
+put to him on the PR on 31 Oct and 1 Nov were not answered by the time of the merge, and are open:
+- The body says eleven readings lose their question mark; the list shows ten words plus 329z and 1102z.
+- `readable.md` drops the f9r group line (432 1210 85 126 702 588 / 65 / 27) and the stray numbers 753, 1098, 302, 136 and 504.
+- 1216 `tu` breaks the alphabetical order in `lasry_key.csv` (before 1222 `sub`); it stays uncertain.
+- 163 is `ble` in the key but also opens the header lines on f5r, f29r, f32r and f35r; whether those are a separate coded header is not confirmed.
+- The f15r sequence has no code for `l'` before `ennemi`, so the French reads "par ennemi": either `l'` is uncoded or a group is missing from the transcription.
+
+Jozef Krajčovič's token streams for f7r, f10r, f11r and f12r (issue #194) are in `kjfriedo/`, not checked against the scan.
+
