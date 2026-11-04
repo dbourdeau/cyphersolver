@@ -1,0 +1,329 @@
+{
+ "2117": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch c02",
+  "seen": {
+   "kind": "transcription",
+   "where": "TARO finding aid, Valentín Gómez Farías Collection, https://txarchives.org/utlac/finding_aids/00068.xml (item-level Ynsfrán descriptions, read in Chrome 3 Nov 2026; every line matching cifra/descifr/clave/cipher pulled from the full text). Leaves not viewed.",
+   "extent": "Four cipher items: no. 1162 (GF 27 Apr 1844), no. 1186 (GF 1010, 31 Aug 1844), no. 1202 ([1844]) and no. 3596 (GF 3703, 2 Nov 1854, part cipher); nos. 994 and 1023 were read with the 1186 key.",
+   "cipher": "Finding aid: no. 1186 Othón?, 'Carta en clave, juntamente con su versión descifrada y la clave respectiva', with the note that the deciphered copy is in Benito's hand and that the key also deciphered MSS 994 and 1023."
+  },
+  "prior_art": {
+   "decode": "known.py 'Farias' searched the harvested DECODE dump and the repo: only this lead's own row, no DECODE record.",
+   "tomokiyo": "WebSearch on the 1844 Gómez Farías cifra letters returned no cryptiana page on them.",
+   "lasry": "No Lasry work on Gómez Farías turned up in the searches of 3 Nov 2026.",
+   "edition": "The Ynsfrán catalogue text in TARO gives the content of the cipher letters: 1162 asks Fermín to tell Arrangoiz there is nothing new; 1202 announces the Paredes, Cortázar and Arista pronunciamiento.",
+   "literature": "WebSearch (Gómez Farías 1844 carta cifrada clave Arrangoiz Paredes) found only UT catalogue records of clear letters; no study of the cipher."
+  },
+  "key_check": "No test run. The key is filed with no. 1186 in the collection, and the catalogue says it deciphered 994 and 1023 as well.",
+  "key_in_volume": "Key filed with no. 1186 (GF 1010, Mexico, 31 Aug 1844); not seen or tested here.",
+  "duplicates": "known.py 'Farias' and 'Gomez Farias': only this lead's own row and unrelated Gomez hits (catalogue 744 Figueroa, Rueckheim); no catalogue entry or target for this collection.",
+  "verdict": "partly_read",
+  "closed": "TARO finding aid 00068: no. 1186 carries its own deciphered version and key, in Benito Gómez Farías's hand, and that key read MSS 994 and 1023; 1162 and 1202 have their content catalogued. Only no. 3596 (Castillo, Brownsville, 2 Nov 1854, 'Carta en parte cifrada') has no decipherment noted, and could be raised as its own lead.",
+  "lead_updates": {
+   "folio_note": "nos. 1162, 1186, 1202, 3596 (TARO 00068); 994 and 1023 read with the 1186 key"
+  }
+ },
+ "2121": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch c02",
+  "seen": {
+   "kind": "not online",
+   "where": "ArchiveGrid record 270887097, read in Chrome 3 Nov 2026 (Morgan Library and Museum, 'Autograph letter signed : the Hague, to Sir Robert Long, 1650 Feb. 1'). The Morgan's own page shows a Cloudflare check and was not opened.",
+   "extent": "1 item, 1 page; the record says part of the letter is in cipher, amount not stated.",
+   "cipher": "Archive description: 'Enclosing a letter from General [Sir Edward] Massey; part of the letter in cipher'. No decipherment is mentioned in the record; the leaf itself has not been seen."
+  },
+  "searches": [
+   {
+    "query": "Boswell Hague February 1650 Sir Robert Long letter General Massey cipher royalist Scots treaty Charles II Breda Clarendon State Papers",
+    "result": "Morgan snippets 199772-199774 (Boswell to Long, same date to Charles II, 'Advice from the Hague' endorsed by Long) and BL Add MS 37047 (Long's letters, Boswell ff. 36, 68, 76); no decipherment or printed text."
+   },
+   {
+    "query": "Massey letter Hague 1650 cipher Sir Robert Long deciphered Tomokiyo cryptiana royalist exile cipher Charles II secretary Long key",
+    "result": "Add MS 37047 index and other letters to Long partly in cipher from 1649; nothing on this letter and no reading of it."
+   },
+   {
+    "query": "cryptiana charlesii.htm: Robert Long, William Boswell, Edward Massey, 1 Feb 1650",
+    "result": "Tomokiyo's Charles II page names neither Long nor Boswell; Massey only for a separate 1660 cipher to Hyde; its 1650 letters are Aug-Sept, none of 1 Feb."
+   }
+  ],
+  "prior_art": {
+   "decode": "known.py 'Boswell Long 1650' and 'Massey' searched the harvested DECODE dump: no record of this letter.",
+   "tomokiyo": "charlesii.htm fetched: no Long, no Boswell, no 1 Feb 1650 letter; Massey's cipher there is his 1660 one to Hyde.",
+   "lasry": "Searched with Long, Massey and 1650: no Lasry paper or GL.htm reading of this letter surfaced.",
+   "edition": "Morgan autograph item with no edition found; the Add MS 37047 calendar lists other Boswell letters to Long, and the Clarendon State Papers were not shown to carry it.",
+   "literature": "Royalist exile cipher searches found HistoCrypt papers on other letters, none on the Boswell-Long letter of Feb 1650."
+  },
+  "key_check": "None tried, since the ciphertext is unseen. A royalist key with Long is recorded, so it is the first thing to test once a scan is in hand.",
+  "key_held": "BL Add MS 33596 ff. 21r-22v, 'Cipher key with Mr Secretary Long (Sir Robert Long), 1649': from the BL catalogue, not held here and not tested.",
+  "duplicates": "known.py 'Boswell Long 1650', 'Massey': hits are only this lead and unrelated Massey items (Thurloe no. 55, Hyde and Wallis notes); same document not present. Earlier conflict settled: 199774 is a separate unsigned 'Advice' of the same date.",
+  "verdict": "open"
+ },
+ "2124": {
+  "unvetted": "Catalogue itself is unsure: ArchiveGrid 270572463 says only 'The letter may be written partially in cipher. From Archives de Villebon', so no ciphertext is shown. The Morgan record https://www.themorgan.org/literary-historical/116250 shows a Cloudflare 'Verify you are human' check and no scan was found. Needs a Morgan scan or the check cleared by the user."
+ },
+ "2125": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch c02",
+  "seen": {
+   "kind": "not online",
+   "where": "ArchiveGrid record 702150338, read in Chrome 3 Nov 2026; Yale Quicksearch gives Beinecke WA MSS S-1985 (Oversize). collections.library.yale.edu has no digital copy under the title or call number; archives.yale.edu returned 403.",
+   "extent": "Two letters, one dated 17 Apr 1790 and one undated; length not stated in the record.",
+   "cipher": "Archive description: 'two AL, written in code in unidentified hands, dated Apr 17, 1790, and undated; and two autograph manuscript documents listing code numbers with word translations'. No decipherment of the two letters is mentioned; the leaves have not been seen."
+  },
+  "searches": [
+   {
+    "query": "Wilkinson Miró April 17 1790 letter in code cipher deciphered Beinecke Western Americana \"code numbers\" Spanish conspiracy",
+    "result": "Chu, Valenti and Knight 2020 on the Library of Congress Wilkinson letters, a different corpus; nothing on the Beinecke letters of 1790."
+   },
+   {
+    "query": "\"WA MSS S-1985\" Wilkinson Miró Beinecke letters code numbers",
+    "result": "No hit on the call number or on any study of this collection; unrelated Wilkinson and Miró results only."
+   },
+   {
+    "query": "Kinnaird \"Spain in the Mississippi Valley\" 1765-1794 Wilkinson to Miró April 1790 cipher letter Kentucky text",
+    "result": "Web hits gave no text; the volume itself (AHA Report 1945, vol. III) was then opened at archive.org and has no letter of 17 Apr 1790 and no cipher term."
+   },
+   {
+    "query": "Tomokiyo cryptiana Wilkinson Spanish cipher Miró Gayoso 1790 code number dictionary American cipher history",
+    "result": "No cryptiana page on Wilkinson; the Chu et al. description of the table-plus-dictionary system and general histories only."
+   }
+  ],
+  "prior_art": {
+   "decode": "known.py 'Wilkinson' and 'Miró' searched the harvested DECODE dump: catalogue 761 and the Eustis letter only; these two letters absent.",
+   "tomokiyo": "WebSearch named Tomokiyo, Wilkinson, Miró, 1790: no cryptiana page on Wilkinson's Spanish code or these letters.",
+   "lasry": "No Lasry work on them found; Chu et al. 2020 (arXiv 2010.04746) attack the LoC copies of AGI Cuba leg. 2374, not these Beinecke letters.",
+   "edition": "Kinnaird, Spain in the Mississippi Valley pt II (AHA 1945 vol. III) opened in full text: none of 17 Apr 1790, no cipher term. Shepherd, AHR 9 (1904), checked: prints 1787-89 only.",
+   "literature": "targets/wilkinson1789 NOTES and Chu et al. cover other letters; web searches found no article on the unidentified 1790 code letters."
+  },
+  "key_check": "None tried on these two letters, unseen. The code-number lists in the same box and the rebuilt table in targets/wilkinson1789 are the first things to test.",
+  "key_in_volume": "Same box, WA MSS S-1985: 'two autograph manuscript documents listing code numbers with word translations'; not seen, not tested.",
+  "key_held": "targets/wilkinson1789 holds a partial reconstruction of Wilkinson's numbered word table from Chu et al.'s wordbanks (58.6% on a held-out excerpt); not tested on these letters, unseen.",
+  "duplicates": "known.py 'Wilkinson', 'Miró': catalogue 761/targets/wilkinson1789 is the LoC/AGI Cuba leg. 2374 set, a different holding with no match on 17 Apr 1790 at Beinecke; the Eustis 1809 letter is another document. No duplicate found.",
+  "verdict": "open",
+  "lead_updates": {
+   "shelfmark": "Beinecke, WA MSS S-1985 (Oversize), James Wilkinson letters to Esteban Miró (ArchiveGrid 702150338)"
+  }
+ },
+ "2126": {
+  "unvetted": "Do not promote yet: ArchiveGrid 191917369 says 'a key to the cipher Vance used for the coded journals, and a computer program set up to read and decipher the code are available', and WKU's 2017-18 blog posts quote his diaries on women, so a reading probably exists. The finding aid that would settle it, WKU MSS 612 https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=5339&context=dlsc_mss_fin_aid, shows a Cloudflare check; core.ac.uk too. Needs that PDF or an email to mssfa@wku.edu."
+ },
+ "2129": {
+  "unvetted": "ArchiveGrid 32616851 (Boston Athenaeum) now read: 'The daily sign (paroles) and countersigns are recorded and there are some entries in code'. That does not show whether the 'code' is cipher or just the paroles. No scan or edition found; the Athenaeum catalogue https://catalog.bostonathenaeum.org/ was not searched by item. Needs a sample page from the Athenaeum."
+ },
+ "2131": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch c02",
+  "seen": {
+   "kind": "not online",
+   "where": "Catalogue entry 817 vetting block (Yale record 10001763 and its IIIF manifest of 5 canvases, opened in Chrome 2 Nov 2026), compared with this lead's row.",
+   "extent": "Cipher on pp. 79-80, 96, 97 and 100; the digitised pp. 14-21 do not include them.",
+   "cipher": "Archive description: 'Portions of text in cipher on p. 79-80, 96, 97, and 100'; the same sentence on both records."
+  },
+  "prior_art": {
+   "decode": "known.py 'Osborn b77' and 'William Stanton' searched the harvested DECODE dump: only catalogue 817 and this lead.",
+   "tomokiyo": "Not repeated here: catalogue 817's block records no cryptiana page for this item.",
+   "lasry": "Not repeated here: catalogue 817's block records no Lasry reading found.",
+   "edition": "Not repeated here: catalogue 817's block records no edition, only Dryden parallels cited.",
+   "literature": "Not repeated here: catalogue 817's block records nothing on the cipher."
+  },
+  "key_check": "No key known; catalogue 817 records none applicable to unseen text.",
+  "duplicates": "known.py 'Osborn b77', 'William Stanton': catalogue 817, Beinecke Osborn b77, the same 1697 manuscript with the same pages in cipher, vetted open on 2 Nov 2026. ArchiveGrid 1056171469 is a second route to one document.",
+  "verdict": "duplicate",
+  "closed": "Same manuscript as catalogue 817: William Stanton, Cases and discourses controversial, 1697, Beinecke Osborn b77, cipher on pp. 79-80, 96, 97, 100."
+ },
+ "2132": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch c02",
+  "seen": {
+   "kind": "not online",
+   "where": "ArchiveGrid record 702174751, read in Chrome 3 Nov 2026; Yale Quicksearch gives Beinecke Osborn b253. collections.library.yale.edu returns no digital copy under the call number or title.",
+   "extent": "Two passages: verso of the flyleaf and one later in the ca. 369 pp. volume; length not stated.",
+   "cipher": "Archive description: 'Verso of flyleaf: a passage in cipher; another passage in the same cipher also appears later in the manuscript'. No decipherment is mentioned; the leaves have not been seen, so cipher against shorthand rests on the cataloguer's word."
+  },
+  "searches": [
+   {
+    "query": "\"Exposison on the 75 Psalm\" Fairfax Ipswich 1658 Osborn manuscript Yale collections cipher passage",
+    "result": "SNAC title record, with a conflated Fairfax biography; nothing on the passages and no reading."
+   },
+   {
+    "query": "John Fairfax Ipswich nonconformist 1623-1700 sermons manuscript 1658 shorthand cipher Osborn b253 Thomas Flindell Mary Cross",
+    "result": "Biography of the ejected minister, GEMMS entry; McKenzie on shorthand labelled as cipher in general; nothing on this volume."
+   },
+   {
+    "query": "Osborn b253 Beinecke seventeenth-century sermon notebook cipher shorthand decipher Lasry Tomokiyo Hase Cavendish \"Fairfax\" manuscript HistoCrypt",
+    "result": "Other Osborn notebooks and general Lasry and Tomokiyo work; no mention of b253 or a decipherment."
+   }
+  ],
+  "prior_art": {
+   "decode": "known.py 'John Fairfax' searched the harvested DECODE dump: only this lead's row; no DECODE record of Osborn b253.",
+   "tomokiyo": "WebSearch naming Tomokiyo with Osborn b253 and Fairfax returned no cryptiana page on this volume.",
+   "lasry": "Same search named Lasry: his Mary Stuart and HistoCrypt work only, nothing on this sermon volume.",
+   "edition": "No edition of these 1658 sermons found; the GEMMS entry for Fairfax lists a 1678 sermon, not this manuscript.",
+   "literature": "McKenzie's paper on early modern shorthand as cipher is the nearest item and does not name this volume; no article on it found."
+  },
+  "key_check": "No key known or held for a private cipher in a sermon book; nothing to test against, and the passages are unseen.",
+  "duplicates": "known.py 'John Fairfax', 'Fairfax 75 Psalm': only this lead's row. Catalogue 817 (Osborn b77) is another Osborn volume by a different compiler; no duplicate.",
+  "verdict": "open",
+  "lead_updates": {
+   "shelfmark": "Beinecke, Osborn b253, Fairfax, Exposison on the 75 Psalm (ArchiveGrid 702174751)"
+  }
+ },
+ "2134": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch c02",
+  "seen": {
+   "kind": "not online",
+   "where": "ArchiveGrid record 1459145544 and Cornell catalogue search (catalog.library.cornell.edu, Siefert Omnia cum Deo), both read in Chrome 3 Nov 2026: Rare and Manuscript Collections, Archives 8888 Bd. Ms. 1, access 'At the Library', no online copy listed.",
+   "extent": "Some early pages and prescriptions in a volume of 165 pp. plus 20 leaves with 324 numbered recipes; number of ciphered pages not stated.",
+   "cipher": "Archive description: 'with some early pages and prescriptions written using a code or cypher'; language note 'In German and Latin, with some passages written in cypher'. No decipherment is mentioned; the leaves have not been seen."
+  },
+  "searches": [
+   {
+    "query": "Carl Sigismund Siefert \"Omnia cum Deo\" manuscript Cornell book of secrets recipes cypher 8888 Bd. Ms. 1",
+    "result": "Unrelated Cornell items and Digital Scriptorium entries; nothing on Siefert, no scan, no reading."
+   },
+   {
+    "query": "Siefert Heugel Zinzmann \"Wildigans\" Arzneibuch manuscript 17th century Dresden Geheimschrift Rezepte cipher German recipe book Cornell",
+    "result": "Wellcome and other German Arzneibücher, an inlibris alchemy catalogue; none names Siefert or the physicians cited in this volume."
+   },
+   {
+    "query": "Siefert Carolus Siegismundus manuscript receipts cypher Geheimschrift \"Siefert\" 17th-century German medical recipes Rudolf II stomach powder cipher decoded",
+    "result": "Cipher Mysteries posts, Copiale, Wellcome MS.589; no mention of this manuscript or any decoding."
+   },
+   {
+    "query": "German recipe book manuscript 17th century cipher passages deciphered HistoCrypt Cryptologia Lasry \"book of secrets\" Cornell Division of Rare and Manuscript Collections cypher Siefert",
+    "result": "Petraeus (Hamburg), Sloane MS 1902, Copiale: other documents; nothing on the Cornell volume."
+   }
+  ],
+  "prior_art": {
+   "decode": "known.py 'Siefert' searched the harvested DECODE dump: only this lead's row; no DECODE record of Cornell 8888 Bd. Ms. 1.",
+   "tomokiyo": "Searches with Siefert and the motto found no cryptiana page; recipe ciphers do not surface there for this volume.",
+   "lasry": "WebSearch naming Lasry, HistoCrypt and Cryptologia with Siefert: other recipe and alchemical ciphers only (Petraeus, Sloane 1902).",
+   "edition": "No edition or study of Siefert's book found; the Cornell record cites no publication.",
+   "literature": "German recipe-cipher searches return Copiale, Petraeus and Wellcome MS.589, none on Siefert or on Doctors Heugel, Zinzman and Wildigans."
+  },
+  "key_check": "No key known or held; a private recipe cipher, so nothing to test, and the pages are unseen.",
+  "duplicates": "known.py 'Siefert': only this lead's rows. No other Cornell recipe item in the catalogue or targets.",
+  "verdict": "open",
+  "lead_updates": {
+   "shelfmark": "Cornell, Rare and Manuscript Collections, Archives 8888 Bd. Ms. 1, Siefert, I.N.D. Omnia cum Deo (ArchiveGrid 1459145544)"
+  }
+ },
+ "2135": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch c02",
+  "seen": {
+   "kind": "transcription",
+   "where": "OAC finding aid mssBLA, https://oac.cdlib.org/findaid/ark:/13030/kt1199n4mx, all items BLA 175-195 read in Chrome 3 Nov 2026; ArchiveGrid 122564675; targets/blathwayt1729, portstemarie1729, newcastle1729 notes. Leaves not reopened in this pass.",
+   "extent": "Ten items with cipher: BLA 179, 184, 185, 186, 187, 188, 189, 190, 191, 194.",
+   "cipher": "Finding aid: BLA 179 '3 lines in cipher, deciphered'; 185 'separate sheet in cipher, deciphered in French'; 188-190 and 194 'deciphered in French'; 184 'partly in cipher'; 186 'two lines in cipher'; 191 '(a) undated, in cipher'."
+  },
+  "prior_art": {
+   "decode": "known.py 'Marchmont', 'Rottembourg', 'Pareti' searched the harvested DECODE dump and repo: only the repo's own Blathwayt targets and sweep rows.",
+   "tomokiyo": "Not repeated: this lead is a collection-level rollup of items already worked in targets/blathwayt1729 and portstemarie1729.",
+   "lasry": "Not repeated: the items were handled in this repo and by Brice Dudout (targets/blathwayt1729, 28 Oct 2026).",
+   "edition": "No edition; the Huntington's own notes record contemporary interlinear decipherments on most items, per the finding aid.",
+   "literature": "Dudout's Europe chiffrée write-up and docs/portstemarie1729.html cover BLA 191; nothing further was searched for this rollup."
+  },
+  "key_check": "Rebuilt code in targets/blathwayt1729 key.tsv (from glossed BLA 185, 187, 188, 189, 190, 194); BLA 184 and 186 were checked against it in the Nov 2 vetting.",
+  "key_held": "targets/blathwayt1729/key.tsv and targets/portstemarie1729: Port Sainte-Marie one-part numerical code, tested and read on BLA 191.",
+  "duplicates": "known.py 'Marchmont': targets/blathwayt1729. Every cipher item here is already placed: BLA 191 = catalogue 826 (targets/portstemarie1729, blathwayt1729); 186 = lead 827 and 184 = lead 828, both closed partly_read in vetting_2026-10/removed_2026-11-02.json; 179, 185, 194 in targets/newcastle1729.",
+  "verdict": "duplicate",
+  "closed": "Collection-level rollup with no new document. The ten cipher items in Blathwayt addenda box 3 (OAC mssBLA 179-194) are glossed on the leaf or already placed: catalogue 826, closed leads 827 and 828, targets/newcastle1729."
+ },
+ "2138": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch c02",
+  "seen": {
+   "kind": "transcription",
+   "where": "ArchiveGrid 968710995 and the Brooklyn Museum Library fellow's account, https://nyarc.org/blog/the-love-letters-of-jane-schenck-malbone-and-ralph-malbone (Giana Ricci, 17 Apr 2017), read in Chrome 3 Nov 2026. Its images were not examined; the research guide and summaries PDFs at nyarc.org would not load.",
+   "extent": "123 items, 1810-1859; backward writing is often a single line, and one letter of 1810 is backward throughout.",
+   "cipher": "The 'secret coded messages' are explained by the museum: words kept in order with each word spelled backwards, and 'Enaj Werter' as a cover address for Jane. Trivially readable, and read by the staff."
+  },
+  "prior_art": {
+   "decode": "known.py 'Malbone' searched the harvested DECODE dump: only this lead's rows.",
+   "tomokiyo": "Not applicable once the 'code' was identified as word reversal; no cryptiana page turned up in the search.",
+   "lasry": "Not applicable for the same reason; no Lasry mention in the search.",
+   "edition": "Katherine Christensen's 48-page summaries and 20-page research guide (linked from ArchiveGrid) describe the letters; the PDFs did not load, so their handling of the backward lines is not confirmed.",
+   "literature": "Ricci 2017 on the NYARC blog describes the system and the content of the backward letter; Brooklyn Museum's 2017 'Thy Sweetest Nectar' programme used the letters."
+  },
+  "key_check": "No key needed: reversing each word reads the text, as the museum's account states.",
+  "duplicates": "known.py 'Malbone': only this lead's rows; no duplicate.",
+  "verdict": "read",
+  "closed": "Brooklyn Museum Library's own account (Ricci, NYARC blog, 17 Apr 2017) identifies the 'coded messages' as word-by-word backward writing and describes what they say; staff read the correspondence and summarised it. Nothing here needs solving."
+ },
+ "2142": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch c02",
+  "seen": {
+   "kind": "not online",
+   "where": "ArchiveGrid 289019679 and the finding aid PDF (RecordsStoredIn1919Series_Accession2.pdf via Wayback); The Henry Ford blog, Bizonet, 27 May 2009 (Wayback copy in Chrome). The blog's telegram images no longer load, so captions were read, not the leaves.",
+   "extent": "Some telegrams and letters between Liebold and agents, Accession 2, 1916-19; identified example: Anderson to Liebold, 26 Feb 1917, Box 40 (THF64058). Most telegrams are in plain English, so coded ones are few; no count.",
+   "cipher": "Archive description: 'Some of the correspondence, both telegrams and letters, between Liebold and his agents is written in a secret code devised by Liebold. A partial key to this code exists'. Finding aid genre term: 'Ciphers'. No decipherment noted except one telegram below."
+  },
+  "searches": [
+   {
+    "query": "E. G. Liebold secret code Henry Ford telegrams \"Bantoro\" code key decoded Peace Ship Plantiff",
+    "result": "Ford Barn 2010 post and MetaFilter 2009 thread, both repeating the museum's blog ('some have yet to be decoded'); Edison Papers plain Liebold telegrams; no published reading."
+   },
+   {
+    "query": "Henry Ford archivist blog telegraphic code Liebold telegrams commercial code \"Bantoro\" The Henry Ford From the Collections",
+    "result": "Same two secondary posts; the Ford Barn post linked blog.thehenryford.org/2009/05/27, opened via Wayback: code samples and one recipient-translated telegram, no general reading."
+   },
+   {
+    "query": "Liebold \"Communications Code\" Ford telegram Anderson 1917 THF64058 decoded telegraph code Henry Ford \"Bantarosa\" OR \"Bantibosi\"",
+    "result": "Edison Papers catalogue entries only; no transcription or decoding of the 1917 telegrams."
+   },
+   {
+    "query": "Lasry DECODE telegraph code Henry Ford Liebold 1917 cipher Cryptologia OR HistoCrypt private telegraph code decoded Ford Motor Company telegrams",
+    "result": "No paper on it; Lasry hit is ADFGVX, and the rest are Edison Papers and MetaFilter."
+   }
+  ],
+  "prior_art": {
+   "decode": "known.py 'Liebold' searched the harvested DECODE dump: only this lead's rows; no DECODE record.",
+   "tomokiyo": "No cryptiana page named Liebold or Ford in the searches; his telegraph pages were not read one by one for this lead.",
+   "lasry": "WebSearch naming Lasry, HistoCrypt and Cryptologia with Liebold: nothing on this code; only his ADFGVX work appeared.",
+   "edition": "No edition of the Henry Ford Office telegrams found. The finding aid lists them in Accession 2 without transcription; the blog says only one sample was translated by its recipient.",
+   "literature": "Bizonet 2009 is the only account: a private telegraph code, charts for names and numbers not understood by her, and the coded Anderson telegram offered unread. Ford Barn and MetaFilter repeat it."
+  },
+  "key_check": "No key tried: the charts are not in hand and the images on the archived blog no longer load. MetaFilter comments describe the name and number charts as simple substitutions; this is unverified.",
+  "key_in_volume": "Partial key, Accession 2, folder 1, box 1 (finding aid). A fuller 'Communications Code', Accession 62, box 7 (THF64061-64069), is unfinished, per the blog. Neither seen nor tested.",
+  "duplicates": "known.py 'Liebold': only this lead's rows and sweep. One telegram on record is translated by its recipient (Liebold to Anderson, 27 Feb 1917, THF64059), which gives a crib, not a reading of the set.",
+  "verdict": "open",
+  "lead_updates": {
+   "date": "1916-1919 (coded telegrams and letters; series bulk 1907-1918)",
+   "folio_note": "Accession 2, Telegrams, e.g. Box 40; partial key box 1 folder 1; code book Acc. 62 box 7"
+  }
+ },
+ "2146": {
+  "unvetted": "ArchiveGrid 929027581 read: 'extensive correspondence between Maximilian and his government officials, some of it in code', in a 3-box collection 1560-1940 with no item identified. The Lilly finding aid https://archives.iu.edu/catalog/InU-Li-VAD4730 shows a Cloudflare 'Verify you are human' check, so no document can be named. Needs that check cleared by the user, or the Lilly's item index."
+ },
+ "2147": {
+  "unvetted": "Cipher is real: ArchiveGrid 51099586 'In part, in cipher code' (KSHS, RG 920, series 03319, box 4, folder 14), and Kansas: A Cyclopedia (1912) says one dispatch is 'wholly in figures, incapable of translation'. Not on Kansas Memory (locate.php 'danite' 0 hits; item 90159 is unrelated). Blocker: Todd Mildfelt, The Secret Danites (2003, 132 pp.), which treats the Danite cipher, is not on archive.org and is unopened, so a decipherment there cannot be ruled out."
+ },
+ "2149": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch c02",
+  "seen": {
+   "kind": "not online",
+   "where": "ArchiveGrid 702174645, read in Chrome 3 Nov 2026; Yale Quicksearch gives Beinecke Osborn b190. collections.library.yale.edu returns no digital copy, so the leaves were not seen.",
+   "extent": "Numerical cipher throughout the first 9 of 98 pages.",
+   "cipher": "Archive description: 'Numerical cipher throughout first 9 pages, partially deciphered by another hand'. Inscription 'Peter Brigins His Book 1684'."
+  },
+  "prior_art": {
+   "decode": "known.py 'History of Christianity' and '702174645' searched the harvested DECODE dump: only this lead's rows.",
+   "tomokiyo": "Search with Brigins and Osborn found no cryptiana page; closing on the leaf's own decipherment did not need more.",
+   "lasry": "Search with Brigins and Osborn found no Lasry item.",
+   "edition": "No edition found; a BorrowDirect copy of the Yale record repeats the same note.",
+   "literature": "WebSearch 'History of Christianity Peter Brigins 1684 numerical cipher Osborn' returned only the catalogue record, with no study."
+  },
+  "key_check": "None tested, leaves unseen. The partial decipherment in the other hand would give a key to the rest.",
+  "duplicates": "known.py 'History of Christianity', '702174645': only this lead's rows; no duplicate.",
+  "verdict": "partly_read",
+  "closed": "Yale's record (ArchiveGrid 702174645, Beinecke Osborn b190) states a decipherment on the leaves: 'Numerical cipher throughout first 9 pages, partially deciphered by another hand'. The undeciphered remainder is unmeasured until the pages are seen.",
+  "lead_updates": {
+   "shelfmark": "Beinecke, Osborn b190, History of Christianity, late 17th century (ArchiveGrid 702174645)"
+  }
+ }
+}

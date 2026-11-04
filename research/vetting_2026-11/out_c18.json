@@ -1,0 +1,191 @@
+{
+ "1429": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch c18",
+  "seen": {
+   "kind": "scan",
+   "where": "Not reopened here: cplorg.contentdm.oclc.org gave a Chrome error page on both /cdm/ref and /digital routes. The scan was seen under catalogue 1245 (Commons file, DPLA e4082bb91cf5f55ec10516bc367df12d, page 1).",
+   "extent": "Same Cleveland item: two letters to Thomas Grenville (in cipher) and to George Tierney, 26 page images, Zamboni note 159.",
+   "cipher": "As recorded on catalogue 1245: runs of comma-separated two-digit numbers inside English clear text. Identity rests on the matching library wording, not on a fresh look at the leaf."
+  },
+  "prior_art": {
+   "decode": "known.py Barlow on the harvested dump and catalogue: no DECODE record; hits catalogue 1245.",
+   "tomokiyo": "Not re-searched: the lead closes as a duplicate; catalogue 1245 records no cryptiana page.",
+   "lasry": "Not re-searched: the lead closes as a duplicate; catalogue 1245 records no Lasry item.",
+   "edition": "Earlier pass read HMC Fortescue (Dropmore) vol. 9 full text: Barlow appears only for a red ribbon, no printed decipherment.",
+   "literature": "Not re-searched: catalogue 1245 records no study of the Barlow reports."
+  },
+  "key_check": "No key known; carried by catalogue 1245, which records none held.",
+  "duplicates": "known.py 'Barlow' hits catalogue 1245: Barlow to Thomas Grenville 1807, Cleveland Public Library, Zamboni note 159, 'Two letters to Thomas Grenville (in cipher) and to George Tierney'. Same shelf record, same wording.",
+  "verdict": "duplicate",
+  "closed": "Duplicate of catalogue 1245: same Cleveland Public Library Barlow item (Zamboni note no. 159, 'Two letters to Thomas Grenville (in cipher) and to George Tierney on affairs in India', 'written in a curious cipher'), found under Commons/DPLA by the other sweep."
+ },
+ "1434": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch c18",
+  "seen": {
+   "kind": "transcription",
+   "where": "Founders Online, Papers of George Washington, Confederation Series 2: Lafayette to GW 11 May 1785 (04-02-02-0401, pp. 550-551) and 21 Dec 1784 (04-02-02-0167, pp. 226-228), both read in Chrome. Lafayette College scans not opened.",
+   "extent": "11 May 1785: about 20 number groups for names and words in clear English (102 Protestants, 12 France, 80 Despotism, 25 king, 42 Castries, 1600 finances, 840 South Spain). 21 Dec 1784: no ciphertext, only 'inclosed I Send You a Small Cypher'.",
+   "cipher": "Small numerical nomenclator. The edition prints each code number with its plaintext in angle brackets, noting 'Someone has written the encoded words in the letter above the code numbers, perhaps for GW'."
+  },
+  "prior_art": {
+   "decode": "known.py 'Lafayette Washington' and 'mdlh' on the harvested DECODE dump: only this lead's own context, no record of these letters.",
+   "tomokiyo": "Not needed for the verdict: the printed edition already gives the reading; no cryptiana page was opened.",
+   "lasry": "Not needed for the verdict: the printed edition already gives the reading; Lasry's papers were not searched for this item.",
+   "edition": "Papers of George Washington, Confederation Series 2:550-551 prints every code number of the 11 May 1785 letter with its decipherment from an interlinear hand on the ALS (PEL); also Idzerda, Lafayette Papers 5:322-24.",
+   "literature": "Footnote 3 of the 21 Dec 1784 letter says Lafayette and Washington 'seem rarely to have used the code' and points to 11 May 1785 as the example."
+  },
+  "key_check": "Key not needed: the interlinear gloss gives each value. The 'Small Cypher' enclosed on 21 Dec 1784 is not printed.",
+  "duplicates": "known.py 'Lafayette Washington' and 'mdlh': no catalogue entry or target for these two letters.",
+  "verdict": "read",
+  "closed": "Printed decipherment: Papers of George Washington, Confederation Series 2:550-551 gives all code numbers of the 11 May 1785 letter with values from an interlinear hand on the original. The 21 Dec 1784 letter has no ciphertext, only mentions an enclosed cipher."
+ },
+ "1431": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch c18",
+  "seen": {
+   "kind": "facsimile",
+   "where": "DPLA item 33a74ab0ce8379e91bdb70d8da7804a7 thumbnail (dp.la/thumb, 92 px, enlarged in Chrome); Indiana State Library host unreachable. Plate explained in Pitman, Trials for Treason at Indianapolis (1865), archive.org trialsfortreas00pitm, Explanation of the Illustrations.",
+   "extent": "One short letter, about five lines plus heading and signature, at the foot of a printed plate of a portmanteau, shells and grenades.",
+   "cipher": "Plate layout matches Pitman's numbered illustration: portmanteau open and shut, conical and spherical shells, then 'No. 13 ... a letter in secret cipher'. Letter forms not legible at thumbnail size."
+  },
+  "prior_art": {
+   "decode": "known.py 'Milligan', 'Sons of Liberty', 'treason Indianapolis' on the harvested dump: only this lead's sweep rows, no DECODE record.",
+   "tomokiyo": "Not needed for the verdict: the 1865 printed plaintext settles it; no cryptiana page opened.",
+   "lasry": "Not needed for the verdict: the 1865 printed plaintext settles it; Lasry not searched for this item.",
+   "edition": "Pitman 1865, 'Explanation of the Illustrations' prints the plaintext of No. 13: 'We have 40 rifles and 100 pistols for your township...' signed A. A. D. C.",
+   "literature": "Full text grep of Pitman for 'cipher': the plate note and a later remark that the order's mailed letters were usually in cipher."
+  },
+  "key_check": "Key not needed: plaintext printed beside the plate. No alphabet for the Sons of Liberty cipher is printed in Pitman.",
+  "duplicates": "known.py 'Milligan', 'Sons of Liberty', 'treason Indianapolis': only this lead's rows in access_uncertain.md and the dpla_smithsonian README.",
+  "verdict": "read",
+  "closed": "Printed decipherment: Pitman, Trials for Treason at Indianapolis (1865), Explanation of the Illustrations, gives No. 13 'a letter in secret cipher' with its full plaintext. The library image is that plate, identified by matching layout on the DPLA thumbnail."
+ },
+ "1433": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch c18",
+  "seen": {
+   "kind": "not online",
+   "where": "Lehigh Preserve item page shows a Cloudflare verify-you-are-human checkbox in Chrome (not clicked); leaf not seen.",
+   "extent": "One letter, per Lehigh's description; length of the cipher not seen.",
+   "cipher": "Lehigh description: 'A letter written in code during the Civil War bearing mathematical calculations at the bottom in a different hand'."
+  },
+  "prior_art": {
+   "decode": "known.py 'Fitz-John Porter', 'Porter McClellan' on the harvested dump: only this lead's sweep rows.",
+   "tomokiyo": "Not needed for the verdict: a published decipherment is on record; no cryptiana page opened.",
+   "lasry": "Not needed for the verdict: a published decipherment is on record by other authors.",
+   "edition": "Not needed for the verdict: the decipherment is in a journal article; Official Records not reopened.",
+   "literature": "Assarpour and Boklan, 'How We Broke the Union Code (148 Years Too Late)', Cryptologia 34(3) 2010, 200-210, doi 10.1080/01611194.2010.485435. Abstract excerpts via search: an unbroken Civil War cipher 'in the collection of Lehigh University', a letter from Porter to McClellan, 'August 16th' in a note on the decrypt. Tandfonline itself blocked by Cloudflare."
+  },
+  "key_check": "Broken without codebooks by Assarpour and Boklan, who also explain an encryption error; no key needed here.",
+  "duplicates": "known.py 'Fitz-John Porter', 'Porter McClellan': no catalogue entry or target.",
+  "verdict": "read",
+  "closed": "Published decipherment: Assarpour and Boklan, Cryptologia 34(3) 2010, 200-210, break the Porter to McClellan letter held at Lehigh University (abstract and search excerpts name Lehigh, Porter, McClellan, August 16). Full paper and leaf not opened; both behind Cloudflare."
+ },
+ "1287": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch c18",
+  "seen": {
+   "kind": "not online",
+   "where": "PMA Archives finding aid JRC, series 'Financial records, 1935-1959' (archival_objects/64362) and digital object 22426, opened in Chrome. The object's link rb.gy/1ayzqy lands on a Dropbox page 'This item was deleted', so no scan exists online now.",
+   "extent": "Account book 1923-1955, ledger fragments 1939-49 and daybooks 1935, 1936, 1938, 1941-43, 1945, 1946, 1959: bound volumes; the share in code is given only as most of the entries. The 1959 volume falls after 1950.",
+   "cipher": "PMA finding aid: 'written primarily in code. This code has not yet been deciphered'; series note: 'cryptographic entries' in a code based on his Social Security number."
+  },
+  "prior_art": {
+   "decode": "known.py 'Covert', 'John Covert' on the harvested dump: only Humphrey Covert 1601 and unrelated uses of the word; no DECODE record.",
+   "tomokiyo": "Web search naming Covert with Cryptiana, Schmeh and Lasry returned only PMA records; no cryptiana page on him.",
+   "lasry": "Same search returned no Lasry paper or GL.htm item on Covert; a 20th-century private ledger code is outside his published lists.",
+   "edition": "No edition of the ledgers found; PMA bibliography lists Klein on Covert and the Arensberg circle (Art Journal 1979) and on Time, neither listed as treating the code.",
+   "literature": "PMA 2006 finding aid says undeciphered. Searches for Klein's Covert monograph, Vesuvius Crucible and coded daybooks found no study or decoded ledger."
+  },
+  "key_check": "Key not tested: scans are gone, and the key is not printed in the finding aid.",
+  "key_in_volume": "Finding aid says a cipher key for the Social Security number code is in the 'Word and number puzzles' series (Magic squares notebook, Box 2 Folder 2, archival_objects/64418). Not online, not tested.",
+  "duplicates": "known.py 'Covert', 'John Covert': only Humphrey Covert 1601, an unrelated catalogue entry, and this lead's own sweep rows.",
+  "searches": [
+   {
+    "query": "John Covert artist ledgers code Social Security number deciphered Philadelphia Museum of Art archives financial records cipher",
+    "result": "Only PMA records: code described as undeciphered, key said to be in the puzzles series; no decipherment reported."
+   },
+   {
+    "query": "Michael Klein John Covert 1882-1960 Hirshhorn monograph code daybooks in code cryptographic notebooks magic squares",
+    "result": "No monograph treatment of the code surfaced; Klein articles listed in the PMA bibliography concern the Arensberg circle and Time."
+   },
+   {
+    "query": "John Raphael Covert ledgers cipher Cryptologia Cryptiana Schmeh Lasry Vesuvius Crucible coded diary decoded Arensberg",
+    "result": "PMA records only; no cryptologic article, blog post or decoded text for these ledgers."
+   }
+  ],
+  "verdict": "open",
+  "lead_updates": {
+   "access": "archive",
+   "access_note": "PMA digital object 22426 points to a deleted Dropbox folder (seen in Chrome 3 Nov 2026); volumes must be requested from PMA Archives."
+  }
+ },
+ "1444": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch c18",
+  "seen": {
+   "kind": "scan",
+   "where": "Duke Digital Repository, George Augustus Elliott papers (RL.30814), viewed in Chrome through its IIIF manifest: contact sheet of images 145-184, then images 160, 166, 179-184 enlarged.",
+   "extent": "Image 166 (inverted diary page of alphabet drills and letter runs); loose sheets 179-182 and 183-184. Images 1-144 were not checked for further cipher pages.",
+   "cipher": "Worksheets, not a message: 183-184 copy the cipher of Poe's Gold-Bug headed 'Cypher' with 'Guides to read' and the solving steps; 181 has a shifted alphabet table with clear words 'al. recd. must. answer. you send. place and'; 180 has an alphabet with numeric homophones and unexplained number pairs."
+  },
+  "prior_art": {
+   "decode": "known.py 'George Augustus Elliott' on the harvested dump: only this lead's sweep rows; no DECODE record.",
+   "tomokiyo": "Web search on Elliott, Burma, Crimea, Duke and ciphers returned no cryptiana page on him.",
+   "lasry": "Same search found no Lasry item; nothing on these worksheets.",
+   "edition": "No edition of the Elliott papers found. The Gold-Bug text on 183-184 is Poe (1843), printed with its solution.",
+   "literature": "Search found nothing on this diary or its cipher notes; other Elliott and Eliot officers only."
+  },
+  "key_check": "Keys are on the sheets themselves: the shifted alphabet (181), numbered alphabets (179, 180). Not applied to the stray number pairs on 180.",
+  "duplicates": "known.py 'George Augustus Elliott': only this lead's rows in access_uncertain.md.",
+  "verdict": "partly_read",
+  "closed": "Practice sheets with the answers on the leaf: images 183-184 copy Poe's Gold-Bug cipher and its solution, and 179-181 give alphabets and clear text. Unread remainder: short letter groups on 181, number pairs on 180 and drills on 166, no connected message seen. Images 1-144 not checked."
+ },
+ "1161": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch c18",
+  "seen": {
+   "kind": "scan",
+   "where": "SLUB IIIF manifest iiif.slub-dresden.de/iiif/2/480740046/manifest.json opened in Chrome (digital.slub-dresden.de itself answered 403): contact sheets of all 205 images, then images 72, 76, 102, 103, 163, 164 enlarged.",
+   "extent": "Sign pages on ff. 34r-37r (geomantic figures), 49v-50r (alphabets), 80r-80v (charakteres inside recipes), and scattered diagrams.",
+   "cipher": "No enciphered text found. ff. 49v-50r are labelled sign alphabets ('Alphabetum Egiptium', 'Caldeorum', 'arabicum') with the Latin letter above every sign; f. 36r gives letters as geomantic dots ('De litteris figurarum'); ff. 80r-v give magic characters to write ('Scribe istas karacteres') in love and torture charms."
+  },
+  "prior_art": {
+   "decode": "known.py 'Mscr.Dresd.N.103', 'N.103' on the harvested dump: only the kalliope_ddb README; no DECODE record.",
+   "tomokiyo": "Not relevant: no cipher text. Web search on the shelfmark returned no cryptiana page.",
+   "lasry": "Not relevant: no cipher text. Search on the shelfmark returned no Lasry item.",
+   "edition": "No edition found; search returned only other SLUB alchemical manuscripts (N.174, J.345, N.74.a, M.206).",
+   "literature": "Search on the shelfmark and title found no study of N.103."
+  },
+  "key_check": "No key at issue: each alphabet table is its own key, and no text in these signs was found to apply it to.",
+  "duplicates": "known.py 'Mscr.Dresd.N.103', 'N.103': only this lead's sweep README row.",
+  "verdict": "not_cipher",
+  "closed": "Seen on the leaves: the 'Geheimschriften' are alphabet tables with letters written over the signs (ff. 49v-50r), geomantic figures (ff. 34r-36r) and magic charakteres in charms (ff. 80r-v). No enciphered passage on the leaves enlarged; the other images were seen as contact-sheet thumbnails only."
+ },
+ "1430": {
+  "unvetted": "needs a working host: images.indianahistory.org gives a Chrome error page on /cdm and /digital, digital.library.in.gov/Record/IHS_ONWT-1583 redirects to it, curl and WebFetch reset. DPLA search found no copy. Coded names and glosses on the address leaf unseen; retry when the host answers, or ask IHS."
+ },
+ "1432": {
+  "unvetted": "needs a working host: dmr.bsu.edu gives connection errors in Chrome, curl and WebFetch. DPLA item 9d4fa387e16f966f46749c2e713406ad gives only a 92 px thumbnail: handwritten letter on lined paper, about 15 lines, script unreadable at that size, so code type unjudged. Search for Ammen found nothing on it."
+ },
+ "1436": {
+  "unvetted": "needs a working host: collections.digitalmaryland.org fails in Chrome, curl and WebFetch. DPLA 34a943d9ff5095dd9a9d9811ed8678e5 and 0cff4e55eca65f632e1815a7914c2a8a say telegrams 'received in cipher' and 'sent in cipher', which may be decoded typescripts; thumbnails show first pages only, no ciphertext seen. FRUS pairing unchecked."
+ },
+ "1437": {
+  "unvetted": "needs the user: texashistory.unt.edu/ark:/67531/metapth1891647/ redirects to a /dam/ 'I'm not a robot' check in Chrome, not clicked. Telegrams unseen. DPLA lists siblings (Sinclair to Zevely 1922, Wahlberg 1923, Watts 1917, Parham 1923) with 92 px thumbnails only. Clear the check in a tab, then rerun."
+ },
+ "1438": {
+  "unvetted": "needs Kavrus-Hoffmann, 'Catalogue of Greek Medieval and Renaissance Manuscripts... Part II: New York Public Library', Manuscripta 50.1 (2006), Spencer section pp. 51-68, not open online. Leaf seen in Chrome (iiif.nypl.org psnypl_spn_649, only 538x760 px): one bottom-margin line of Greek-like signs, too small to transcribe; the catalogue may give the reading."
+ },
+ "1293": {
+  "unvetted": "leaf not online: edition RTP2d054 opened in Chrome says only 'a brief note in undeciphered code', RTP2d191 'in shorthand', with no ciphertext printed. Collection guide fa0271 digitises Box 13 and cases, not Box 2 Correspondence 1757-1765 (microfilm Reel 2). Cipher versus shorthand unsettled; needs the reel or an MHS scan."
+ },
+ "1277": {
+  "unvetted": "needs a working host: bipadi.ub.edu gives a Chrome error page on /cdm and /digital; curl and WebFetch reset. Luanco, La alquimia en Espana I (archive.org full text) has no Barcelona cipher book at pp. 25-47 (a Castilian Violeta codex). Unchecked: Luanco, 'Otro libro catalan desconocido', Mem. Acad. Buenas Letras 4 (1887), 197-222, on a UB miscellany."
+ },
+ "1392": {
+  "unvetted": "needs Antoine Roy, 'Dossier ... Tremais', ANQ Rapport 1959-60 pp. 3-22: collections.banq.qc.ca sends Chrome to its security page 'Technical problem' (indispo.banq.qc.ca) and no archive.org copy was found. Numeric groups seen earlier on the leaf; this edition may print the deciphered letter. The C11A transcript reels on Canadiana are also unchecked."
+ }
+}

@@ -1,0 +1,170 @@
+{
+ "1201": {
+  "date": "2026-11-03",
+  "by": "c09",
+  "seen": {
+   "kind": "scan",
+   "where": "ANOM IIIF images opened in Chrome 3 Nov 2026: recherche-anom.culture.gouv.fr/iiif/MINISTERES/SEM/C14/C14_051/FRANOM34_C14_051_018.jpg (f.16), also images 009-014 and 019-027. The item notices (ark:/61561/uy306wurspg, uy306kifgid) have no viewer; the volume is served at this path.",
+   "extent": "f.16 ff. (images 018-021, 'Cayenne 3e quartier 1779', du 29 aout), several full pages of numeric groups; ff.9 ff. (images 009-014, 13 Jul 1779 duplicata) clear text with long cipher blocks.",
+   "cipher": "f.16 at full zoom: 'Cayenne 3e quartier 1779', a heading in numeric groups ('183. 633. 600. 72. 233.'), then 'J'ai eu l'honneur ... Rendu Compte a Monseigneur' running into dot-separated three-digit groups ('10. 514. 104. 301. 104.'), values to about 785. No gloss between the lines on f.16; the ruled top lines hold groups only. ANOM calendar: 'Piece chiffree non traduite', 'Passage chiffre non traduit'."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump) on 'COL C14 51', 'Fiedmond', 'Jacau': no DECODE record; only this lead and its sweep row, plus a 1762 Jacau mention in targets/orvilliers1759.",
+   "tomokiyo": "Web searches naming cryptiana with Cayenne, Guyane and Fiedmond 1779: the only cryptiana hit is a 2025 post on d'Estaing and Gerard, nothing on Guiana or C14 51.",
+   "lasry": "Web search with Lasry and HistoCrypt on Fiedmond 1779: only Lasry's d'Avaux 1684 paper; nothing on Cayenne 1779. GL.htm not reached in this pass; no repo hit for C14 51.",
+   "edition": "ANOM calendar read in Chrome (C14 51 f.9 and f.16, 'non traduit'). Dudout's Europe chiffree page grepped in full: it covers C14 19 and C14 25 (1746, 1760-61), not C14 51. No edition of Fiedmond's 1779 reports found.",
+   "literature": "Searches on Jacau de Fiedmond in 1779 found biographies and a ghcaraibe genealogy article with no cipher content; no Cryptologia or HistoCrypt item on these reports."
+  },
+  "searches": [
+   {
+    "query": "Jacau Cayenne Guyane 1779 lettre chiffrée Bessner COL C14 51 déchiffrement \"chiffre\" Guyane française XVIIIe",
+    "result": "No item on C14 51 or Jacau's 1779 ciphers; only general Cayenne books and an unrelated Tartu cipher paper on COL C9."
+   },
+   {
+    "query": "Jacau de Fiedmond Cayenne 1779 dépêche cipher COL C14 51 Guyane histoire Bessner chiffre décrypté Dudout Guiana code",
+    "result": "Biographies of Fiedmond and a 2017 ghcaraibe article on his will; no decipherment of the 1779 reports."
+   },
+   {
+    "query": "Guyane française 1779 gouverneur Fiedmond rapport trimestre \"chiffré\" Lasry HistoCrypt Cryptologia French colonial navy cipher Cayenne deciphered cryptiana",
+    "result": "Lasry's d'Avaux paper and a cryptiana post on d'Estaing 1779, both other ciphers; nothing on the Fiedmond quarterly report."
+   }
+  ],
+  "key_check": "No key in the volume seen. Dudout's Guiana code (targets/orvilliers1759/dudout/key.tsv, about 500 numbers, 1744-62) was not tested; these groups run to about 785, above its range, so a later table. Lead for one: AN MAR/G/178, colonial ciphers 1741-76 (offline).",
+  "duplicates": "known.py on 'COL C14 51', 'Fiedmond', 'Jacau': only this lead. Catalogue 543 (orvilliers1759), 1199 and 1200 are earlier C14 volumes, different letters.",
+  "verdict": "open",
+  "lead_updates": {
+   "shelfmark": "Archives nationales d'outre-mer (Aix-en-Provence), COL C14 51 f.9 (13 Jul 1779, duplicata) and f.16 (29 Aug 1779, 'pièce chiffrée non traduite')",
+   "access_note": "Item notices have no viewer, but the volume images open in Chrome at recherche-anom.culture.gouv.fr/iiif/MINISTERES/SEM/C14/C14_051/FRANOM34_C14_051_NNN.jpg/full/900,/0/default.jpg (checked 3 Nov 2026)"
+  }
+ },
+ "1204": {
+  "date": "2026-11-03",
+  "by": "c09",
+  "seen": {
+   "kind": "scan",
+   "where": "ANOM manifests opened in Chrome 3 Nov 2026: ark:/61561/zn401nmhnmn (C8 A 56 f.13), zn401qposng (f.79), zn401b1312c (f.323), zn401rqopnf (C8 A 51 f.116), zn401hgefcg (C8 A 51 f.109).",
+   "extent": "First page of each of five items viewed; the rest of the 16 letters not opened.",
+   "cipher": "Numeric groups with a clerk's decipherment written between the lines. C8 A 56 f.13: 'nous avons receu la' over '165. 304. 386. 491. 215. 301. 302. 456. 229.'; the same interlinear French on f.79, f.323 and C8 A 51 f.116."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump) on the shelfmarks and Longueville: no DECODE record of these letters.",
+   "tomokiyo": "Not searched for these letters: the decipherment is on the leaves, so a later study would not change the verdict.",
+   "lasry": "Not searched on the web, for the same reason; repo holds Dudout's contributed reading of f.57 only.",
+   "edition": "ANOM calendar: '(chiffrée)'; for f.54 it says part of the letter was not decrypted (targets/champigny1744/NOTES.md). No printed edition found.",
+   "literature": "Dudout, Europe chiffree, champigny-1744 (28 Oct 2026) rebuilt the code from the glosses of ff.40, 44, 54-56v, 59, 63, 67, 79."
+  },
+  "key_check": "Dudout's key.tsv in targets/champigny1744, built from these same glosses, applies to the C8 A 56 letters.",
+  "duplicates": "targets/champigny1744 is f.57, an enclosure of f.54 in this volume; catalogue 1777 (TNA SP 42/27/73) is a separate intercept. known.py on the shelfmarks found no other record.",
+  "verdict": "read",
+  "closed": "Contemporary interlinear decipherment seen on C8 A 56 ff.13, 79, 323 and C8 A 51 f.116, and attested by targets/champigny1744 for ff.40, 44, 54-56v, 59, 63, 67. Not viewed: C8 A 51 f.109 cipher part (its first page is clear), C8 A 58 f.33, C8 A 59 f.158. The calendar says part of f.54 was left undecrypted."
+ },
+ "1205": {
+  "date": "2026-11-03",
+  "by": "c09",
+  "seen": {
+   "kind": "scan",
+   "where": "ANOM manifests opened in Chrome 3 Nov 2026: ark:/61561/zn401nppnoa (C8 A 69 f.354, images FRANOM23_C8A_069_0575 ff.) and zn401qssqsq (f.357, images 0580 ff.).",
+   "extent": "f.354: images 1-3 of 5 viewed. f.357: images 2-3 of 4 viewed.",
+   "cipher": "Mixed clear and numeric groups, with a clerk's decipherment between the lines. f.354 (16 Nov 1770, d'Ennery): 'J'ai si foible en troupes a la Martinique' over '333. 740. 5. 147...'. f.357: 'J'ay eu l'honneur de vous mander' over '761. 132. 472...'."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump) on 'COL C8 A 69': only this lead and its sweep row.",
+   "tomokiyo": "Search naming d'Ennery, Nozieres and C8 A 69 found no cryptiana page; not needed, the decipherment is on the leaves.",
+   "lasry": "Not searched by name, since the decipherment is on the leaves; repo holds the d'Ennery form of 1765 in mercier1761.",
+   "edition": "ANOM calendar: 'en partie chiffrée'. No printed edition found.",
+   "literature": "Search on d'Ennery 1770 Guadeloupe cipher found only an SHD listing that Nozières' despatches were mostly ciphered."
+  },
+  "key_check": "Not needed: the plain is written between the lines. key1765_ennery (targets/mercier1761) was not tried against it.",
+  "duplicates": "known.py on the shelfmark: no catalogue entry or target for C8 A 69.",
+  "verdict": "read",
+  "closed": "Contemporary interlinear decipherment seen on the cipher lines of C8 A 69 f.354 (16 Nov 1770) and f.357 (4 Dec 1770), on the pages viewed at ANOM."
+ },
+ "1206": {
+  "unvetted": "Pusch, 'Kerlérec's Cipher', Louisiana History 49/4 (2008) 463-480 not readable: JSTOR stable/25478601 shows page 1 as a preview and 'Read online' needs an account; Scribd 116703976 gives a Client Challenge page in Chrome. A University of Arkansas chapter opened in Chrome says Pusch gives a deciphering code for Kerlérec's letters, and it cites COL C13A 39 f.280 (21 Oct 1757) with a 'decoded version', so this volume is probably covered. C13A notices (bo755nhimlnc, bo755vpquuos, bo755ztuyx0a) read 'Dépêche chiffrée' with no viewer; no C13A image path found on the ANOM IIIF server. Needs the article."
+ },
+ "1207": {
+  "unvetted": "Same blocker as 1206: Pusch 2008 (JSTOR stable/25478601, sign-in; Scribd 116703976, challenge page) unread. It covers coded letters to Feb 1763 and quotes one of 13 Jul 1759, so C13A 41/42 may be read there; C13A 21 (1736) falls outside it. Notices bo755oijophf, bo755eyz464o, bo755tnounmd read 'Lettre chiffrée' with no viewer; the digitised flag has no images behind it, and no C13A path found on the ANOM IIIF server."
+ },
+ "1208": {
+  "unvetted": "ANOM notice ark:/61561/3072359 read in Chrome: COL F3 16 f.115, dated 29 Aug 1760, title 'annonçant en chiffres la perte de la colonie', no viewer, no content summary. 'En chiffres' may mean figures. Its date differs from catalogue 1391 (C11A 105, 13 Aug 1760), so not shown as a duplicate. Two searches on the letter found no text. Needs F3 16 f.115 images (247 MIOM 13); no F3 path found on the ANOM IIIF server."
+ },
+ "1209": {
+  "date": "2026-11-03",
+  "by": "c09",
+  "seen": {
+   "kind": "not online",
+   "where": "ANOM notice ark:/61561/3132909 read in Chrome 3 Nov 2026 (COL C5 B 3 no. 63, 4 p.); no viewer, and no C5B image path found on the ANOM IIIF server.",
+   "extent": "One letter of 4 pages holding one ciphered passage, per the notice; leaf not seen.",
+   "cipher": "ANOM calendar, COL C5 B 3 no. 63, 22 Dec 1781: 'Déroulement des événements aux Indes. Résultat de son activité chez les Marathes. Passage chiffré non traduit.'"
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump) on 'COL C5 B 3', 'Montigny', 'Baudouin': no DECODE record; the only hits are this lead, an unrelated Montigny of 1726 and Baudouin-Desportes of 1593.",
+   "tomokiyo": "Web search naming Tomokiyo with Montigny, Baudouin and Poona 1781: no cryptiana page on this letter or on French Maratha ciphers.",
+   "lasry": "Same search naming Lasry, and repo grep: no Lasry item on Montigny or the C5 B series.",
+   "edition": "Hatalkar, French Records vols V-VI (1983) opened on archive.org and grepped: letters of 20 and 28 Dec 1781 are there, but no 22 Dec 1781 to Baudouin; his only Baudouin letters are of 1783, drawn from C2 163. The editor marks cipher as blanks: 'either blanks in the original, or in cipher or illegible'.",
+   "literature": "Searches on Montigny at Poona found the Hatalkar record and Dutch-Maratha studies; no article treating his cipher or this passage."
+  },
+  "searches": [
+   {
+    "query": "Montigny Poona 1781 Baudouin French Records relating to the History of the Marathas Hatalkar cipher letter",
+    "result": "Hatalkar catalogue records and a BL intercept of 1784; nothing on a 22 Dec 1781 cipher passage. Led to opening vols V-VI."
+   },
+   {
+    "query": "Montigny à Baudouin Poona 22 décembre 1781 passage chiffré Marathes Tomokiyo Lasry cipher French resident Maratha court decipher",
+    "result": "No decipherment; only Hatalkar and an unrelated Destouches 1781 cipher at the Huntington."
+   },
+   {
+    "query": "\"Montigny\" Baudouin Isle de France 1781 Cap de Bonne-Espérance correspondance C5B lettre Poona Marathes Nana Fadnavis résident français chiffre",
+    "result": "Nothing indexing the C5B letter or Baudouin; Hatalkar again and general Isle de France items."
+   }
+  ],
+  "key_check": "No key found. Hatalkar prints Montigny's remark 'I shall often make use of our cipher' with no table. No Montigny key in the repo or on DECODE; none tested.",
+  "duplicates": "known.py on 'COL C5 B 3', 'Montigny', 'Baudouin': only this lead; the Montigny in the catalogue is the Württemberg agent of 1726, another man.",
+  "verdict": "open",
+  "lead_updates": {
+   "shelfmark": "Archives nationales d'outre-mer (Aix-en-Provence), COL C5 B 3 no. 63 (Correspondance à l'arrivée, Cap de Bonne-Espérance, 1781-84)"
+  }
+ },
+ "1211": {
+  "unvetted": "ANOM notices read in Chrome: COL B 7 f.143 (27 Dec 1677, in two copies), f.153 (8 Mar 1678), f.188 (13 Jun 1678), each marked only 'chiffrée', no viewer, no COL B image path found. The notices summarise the subject, and COL B is an outgoing register, so the entries may be clear minutes. Needs COL B 7 images. Dessalles, Histoire générale des Antilles (manioc ADG18237.pdf) may print the 27 Dec 1677 letter: not read, 68 MB at about 25 KB/s."
+ },
+ "1214": {
+  "unvetted": "FranceArchives notice read in Chrome: 56 J 199 'Correspondance, chiffrement : systèmes de codage (sans clé de déchiffrement) [3 pièces]', among mixed papers 1659-1890. It may describe coded letters or papers about codes; no ciphertext shown, no digitised leaf, no date for the pieces. Needs AD Dordogne scans of 56 J 199."
+ },
+ "1215": {
+  "unvetted": "FranceArchives notice and the Gard finding aid (earchives.gard.fr FRAD030_00074_J) read in Chrome: 74 J 38, an autograph collection, 'lettre chiffrée de la duchesse de Berry (1832)'. One phrase in a list, no scan, no viewer; a search on her 1832 ciphers turned up sympathetic-ink material only. Ciphertext not shown. Needs AD Gard scan of 74 J 38."
+ },
+ "1216": {
+  "date": "2026-11-03",
+  "by": "c09",
+  "seen": {
+   "kind": "not online",
+   "where": "FranceArchives notice 81f0c8fe and AD Essonne notice archives.essonne.fr/ark:/28047/h1nqm6lbjsk7, read in Chrome 3 Nov 2026; no images.",
+   "extent": "Copy letters of Dupleix, 15 Oct 1751 to 21 Oct 1753; 'quelques unes' ciphered, per the notice.",
+   "cipher": "Inventory E/3749: Dupleix's letters for Europe, including to the comte de Thoumone and de Baquencourt, '[quelques unes de ces lettres sont chiffrées avec la traduction interlinéaire]'. A neighbouring Valory notice on the same Essonne page says the same of Jan-Jun 1752 letters."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump) on 'E/3749' and 'Valory': no DECODE record.",
+   "tomokiyo": "Not searched: the inventory already records the interlinear translation.",
+   "lasry": "Not searched by name, same reason; known.py has no Lasry row for E/3749.",
+   "edition": "The inventory itself records the interlinear translation.",
+   "literature": "Not searched beyond the repo; sibling E/3756 was closed in research/vetting_2026-10."
+  },
+  "key_check": "Not needed: the inventory says the ciphered letters carry an interlinear translation.",
+  "duplicates": "known.py: sibling Yvelines E/3756 (old catalogue 549, removed 2 Nov 2026 as not_cipher) is another register; no entry for E/3749.",
+  "verdict": "read",
+  "closed": "The AD Essonne inventory of E/3749 states the ciphered letters have an interlinear translation: 'chiffrées avec la traduction interlinéaire'. Leaf not seen. The lead's title is wrong: these are Dupleix's copy letters, and Thoumone and Baquencourt are among his addressees."
+ },
+ "1217": {
+  "unvetted": "AD Val-d'Oise notice archives.valdoise.fr/ark:/18127/899017.1117512 read in Chrome: 68 H 19, 87 paper pieces, 1642-70, 'une pièce chiffrée'. No viewer and no description of the piece, so ciphertext is not shown and the piece cannot be dated or named. Needs AD95 scans of 68 H 19."
+ },
+ "1218": {
+  "unvetted": "FranceArchives notice read in Chrome: SHD 1 M 2294, sub-dossier 4, 'dépêches télégraphiques chiffrées du maréchal Pélissier ... adressées au ministre de la Guerre (1856)' (the lead says 1855). No scan; the SHD page ark/924547 opens to the finding aid only. The telegrams may be deciphered copies or clear texts of ciphered wires, and nothing shows cipher groups. Needs the SHD item."
+ },
+ "1219": {
+  "unvetted": "FranceArchives notice and AD Haute-Marne finding aid read in Chrome: 129 J 23 'Présence d'une feuille volante chiffrée à la fin', in a wine and grain merchant's journal. 'Chiffrée' in a ledger may mean a sheet of figures (the same fonds has registers of 'chiffre d'affaires'), which is no proof either way. No scan. Needs AD52 scans of 129 J 23, 35, 37."
+ },
+ "1617": {
+  "unvetted": "Archivportal-D record opened in Chrome: E 29/IV Nr. 456 is dated 19.01.1534, not 1490 (1490-1554 are Lorenz Tucher's life dates). 2 leaves, 1 1/2 written pages. 'Geheimschrift' and 'Geheimhaltung' appear only as index terms, so ciphertext is not shown. No digitisation. One search on the letter found only sibling records. Needs a Stadtarchiv Nürnberg copy."
+ }
+}

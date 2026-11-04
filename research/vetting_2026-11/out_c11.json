@@ -1,0 +1,52 @@
+{
+ "1410": {"unvetted": "Chrome pass 3 Nov 2026: NAA ViewImage.aspx for both 8352370 and 260520 answers 'Images do not exist for this item'. Not digitised; the title states no code or cipher, so ciphertext is not shown. Needs an NAA copy request for CP506/1, 1."},
+ "1411": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch c11",
+  "seen": {
+   "kind": "scan",
+   "where": "NAA: MP1049/1, 1916/0235, item 400554, 338 pages, read in Chrome via SearchNRetrieve/NAAMedia/ShowImage.aspx?B=400554&S=<page>. Pages viewed: 3, 20, 50, 52, 53, 54, 56, 58, 60, 62 (zoomed), 66, 70, 75, 90, 110, 140, 170, 200, 230, 290, 335; about 21 of 338, a sample, not a full read.",
+   "extent": "Handwritten station logs of 25 Jul - 4 Aug 1914 start at p. 56. Pages 56, 58, 60, 62, 66 and 70 carry several messages each of 10-letter code words, 5 to 40 words a message, e.g. p. 60 ASB (Scharnhorst) to KCA (Yap), 3 Aug: 'Asintjoung jopsimonado ...'. Total word count not measured. Wheatley's report (pp. 50-53) says copies of all messages of 25 Jul - 4 Aug are attached.",
+   "cipher": "Artificial 10-letter code words copied by Australian operators from German wireless, with plain German (some with English) in between. Wheatley, 19 Apr 1916, p. 53: 'These were all in the same code, which is evidently a code for the use of men-of-war and important land stations only. It differs very considerably from the Handels Verkehr Buch'. The code-word messages on pp. 56, 58, 60, 66 and 70 have no decipherment written with them. Two decodes are on the leaves: p. 62, one 7-word message glossed in German and English ('From Cruiser squadron. You are to go to Caroline Isles'), and p. 75, 4-letter groups (VGHA OHAG PDLW ...) glossed. So this lead covers the unglossed code-word messages only. Pages 170 and later seen are plain-language translations and minutes."
+  },
+  "prior_art": {
+   "decode": "known.py on the harvested DECODE dump and repo: 'Scharnhorst' hits only Schrödel postcards in hcportal (unrelated), 'Handelsverkehrsbuch' none, 'HVB' only unrelated rows and the oceania_naa code-book list, 'MP1049/1, 1916' only this lead. No DECODE record of this file.",
+   "tomokiyo": "Web search naming Tomokiyo, cryptiana, HVB, Scharnhorst and Spee returned nothing by Tomokiyo on this traffic; his pages were searched for it only through that query, not page by page.",
+   "lasry": "GL.htm (targets/gramont1529) grep for Scharnhorst, HVB, Wheatley, Spee: no hits. The web search naming Lasry and 1914 German naval messages returned no Lasry work on it.",
+   "edition": "No edition of these logs found. Jose's Official History vol. IX and Corbett surfaced only as background and were not opened at these messages; neither is known to print the code-word texts. Admiralty telegrams of Aug 1914 on archivfuehrer-kolonialzeit concern ship movements, not these messages.",
+   "literature": "navyhistory.au on Wheatley quotes his 1934 paper: most intercepts were 'in an unknown code' and filed; he later decoded 10-letter HVB groups (two 5-letter parts) under a changed key, on Melbourne Cup Day 1914. That is HVB squadron traffic, and his 1916 report separates this men-of-war code from HVB. NOT opened: Phelps, Australian Code Breakers (2020), and Wheatley's account AWM252 A228, either of which might say more; Room 40 files not searched."
+  },
+  "searches": [
+   {"query": "Balsillie Engineer for Radiotelegraphy August 1914 intercepted German wireless messages Thursday Island Scharnhorst Yap decipher Wheatley report MP1049/1 1916/0235", "result": "No mention of this file or of a decode of these messages; Balsillie biographies, Holmes papers and press on Wheatley only."},
+   {"query": "\"Scharnhorst\" August 1914 wireless intercepted Australia \"Thursday Island\" Port Moresby German code not deciphered Wheatley SKM Admiral Berlin Phelps Australian Code Breakers", "result": "Phelps book blurbs and reviews, 1926 press on Navy Office finding the key change, Admiralty telegrams; nothing printing or decoding the 25 Jul - 4 Aug messages."},
+   {"query": "Graf Spee East Asia Squadron wireless messages July August 1914 Berlin Yap Tsingtau Planet Nauru intercepted Australian stations codewords decrypted Signalbuch Dutch Sitoebondo Geier", "result": "HVB seizure story and general squadron histories; nothing on the Berlin-Yap-Planet-Nauru messages or Sitoebondo-Geier relay."},
+   {"query": "Wheatley 1934 \"Unravelling of a German Code\" unknown code intercepted messages filed 1914 Navy Office Melbourne men-of-war code later decoded", "result": "Quotes from Wheatley: unknown code filed, later 10-letter HVB groups decoded Nov 1914; no statement that the July-Aug 1914 men-of-war code was read."},
+   {"query": "AWM252 A228 Wheatley \"German code\" Australian War Memorial account unravelling 1933 HVB Pacific squadron intercepted messages", "result": "AWM record itself not surfaced, only unrelated Wheatleys and Phelps listings, so that account stays unread."}
+  ],
+  "key_check": "No key tested. HVB is the only named candidate and Wheatley's report of Apr 1916 says this code differs very considerably from it. The Signalbuch der Kaiserlichen Marine was not tried and no copy is held in the repo.",
+  "key_held": "HVB copies are listed, not held as data, in research/oceania_naa/README.md (AWM27 311/36; MP1049/1 1914/0351, taken from SS Hobart). Not tested on these messages.",
+  "duplicates": "known.py 'MP1049/1, 1916', '400554', 'Wheatley', 'Scharnhorst', 'HVB': own lead and sweep rows only, plus the AWM252 A228 note in the oceania_naa README. No catalogue entry or target with this file.",
+  "verdict": "open",
+  "lead_updates": {
+   "title": "German wireless intercepts by Australian stations, 25 Jul - 4 Aug 1914, in the men-of-war 10-letter code (Scharnhorst, Yap, Tsingtau, Nauru, Berlin), with Wheatley's report of 19 Apr 1916",
+   "date": "25 Jul 1914 - 1916",
+   "year": 1914,
+   "correspondents": "SMS Scharnhorst, Admiral Berlin, stations Yap, Tsingtau and Nauru, SMS Planet, SMS Geier; copied at Thursday Island, Port Moresby, Cooktown, Roebourne and others",
+   "language": "German",
+   "folio_note": "338 pages digitised; station logs from p. 56; Wheatley report pp. 50-53; about 21 pages viewed 3 Nov 2026. The Dutch minutes of the old lead are only pp. 3 and 8."
+  }
+ },
+ "1416": {"unvetted": "Chrome pass 3 Nov 2026: NAA ViewImage.aspx?B=305911 answers 'Images do not exist for this item'. Not digitised; the title '[Secret message relating to German sabotage]' does not show a cipher. Needs an NAA copy request for C320, SAB2."},
+ "1417": {"unvetted": "Chrome pass 3 Nov 2026: NAA ViewImage.aspx?B=407615 answers 'Images do not exist for this item'. Not digitised; title-only, no cipher shown. Needs an NAA copy request for MP1049/1, 1918/0291."},
+ "1418": {"unvetted": "Chrome pass 3 Nov 2026: NAA ViewImage.aspx?B=233108 answers 'Images do not exist for this item'. Not digitised; title-only, code content not stated. Needs an NAA copy request for A3200, TEM78."},
+ "1419": {"unvetted": "Chrome pass 3 Nov 2026: NAA ViewImage.aspx?B=412931 answers 'Images do not exist for this item'. Not digitised; title-only, no cipher shown. Needs an NAA copy request for B543, W389/3/125."},
+ "1421": {"unvetted": "Chrome pass 3 Nov 2026: NAA ViewImage.aspx?B=503067 answers 'Images do not exist for this item'. Not digitised; title-only, no cipher shown. Needs an NAA copy request for MP1049/5, 2037/2/27."},
+ "1422": {"unvetted": "Chrome pass 3 Nov 2026: NAA ViewImage.aspx?B=4169037 answers 'Images do not exist for this item'. Not digitised; title-only, no cipher shown. Needs an NAA copy request for MP1074/8, 44."},
+ "1597": {"unvetted": "BNE Digital shows a Cloudflare 'Verify you are human' checkbox in Chrome (tried twice on bnedigital.bne.es; bdh-rd.bne.es redirects there), not clicked: https://bnedigital.bne.es/bd/es/card?id=3ec1dafd-40d2-4e42-90c2-a66ba335e0f9 . Address and glosses unread. Tomokiyo 2018 opens on Academia in Chrome with abstract only, PDF download not taken, so its letter list is unread. Europeana bdh0000172749 gives 'al Rey de Aragón', 7 Oct 1470, 'Notas marginales'."},
+ "1598": {"unvetted": "BNE Digital Cloudflare checkbox in Chrome, not clicked: https://bnedigital.bne.es/bd/es/card?id=efc87815-5336-44c7-930c-ad2af9bb5609 . Leaf not seen. Tomokiyo 2018 (academia.edu/37751652) opens in Chrome with abstract only and a Download PDF button, not taken, so whether it treats MSS/20211/123 (R1172) stays unanswered."},
+ "1599": {"unvetted": "BNE Digital Cloudflare checkbox in Chrome, not clicked: https://bnedigital.bne.es/bd/es/card?id=29736cc9-91f0-4f84-b38e-93bb5f93f932 . Leaf not seen, 'Carta cifrada' known from the title only. Web search shows the SNAC record (resources/7511688: Prague, 14 Apr 1680, 2 leaves, 31 x 20 cm) with a Huntington note that looks carried over; second exemplar unverified; no decipherment found."},
+ "1600": {"unvetted": "BNE Digital Cloudflare checkbox in Chrome, not clicked: https://bnedigital.bne.es/bd/es/card?id=fd34a0af-aca4-4122-92ae-02a7b7012a0f . Leaf not seen. Vázquez and Selden Rose, Algunas cartas de don Diego Hurtado de Mendoza, and González Palencia and Mele, Vida y obras, not opened, and either could print 12 May 1548. Sibling R1189 (29 May 1548) is Decrypted on DECODE, under Tomokiyo's Imperial Cipher."},
+ "1601": {"unvetted": "BNE Digital Cloudflare checkbox in Chrome, not clicked: https://bnedigital.bne.es/bd/es/card?id=0c7ab8a3-f444-4a54-a356-e07f50dc525d . Leaf not seen, only the title 'Carta cifrada'. Search for Mirabel, Coloma, Lyon, 8 Dec 1622 found no decipherment and nothing on the item. Clearing the checkbox is the only step left before a verdict."},
+ "1602": {"unvetted": "BNE Digital Cloudflare checkbox in Chrome, not clicked: https://bnedigital.bne.es/bd/es/card?id=fd72f368-47a6-45d9-96cf-0d7a71f3ccc9 and id=ce09330d-dffc-4e3d-8ed8-4f2ccd37dcac . Leaf not seen, only 'La primera carta, cifrada en parte'. Search found Valencia Rodríguez 2010 on Feria (dialnet 3786812), not read at this letter; no decipherment found."},
+ "1605": {"unvetted": "BNE Digital Cloudflare checkbox in Chrome, not clicked: e.g. https://bnedigital.bne.es/bd/es/card?id=bafe8c96-2090-4c14-a48d-e265723b5f32 (nine tomo cards). Matching cipher field and volumes unseen; a cluster-level record with no identified cipher document. Search for Villagarcía with cifra found Rodríguez Pérez's work with no cipher mention."}
+}
