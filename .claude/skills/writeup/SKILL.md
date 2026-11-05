@@ -264,7 +264,7 @@ three are data files you edit by hand; each is a few lines, and skipping one lea
   profile's `outcome.method` involves a key (known key, external key, or key recovered from adjacent plaintext, outside
   plaintext or ciphertext only) or its steps used a sibling or source key.
   `kind` is one of `contemporary key`, `archive key`, `DECODE key record`, `scholar's key`, `rebuilt here`; labels are
-  plain text (no HTML entities); `year` is the year the key was in use, and a scholar's publication year goes in
+  plain text (no HTML entities); `year` is the year the key was in use (an integer, or null if unknown), and a scholar's publication year goes in
   `found`. Optional `"image": {"src", "credit", "caption", "page"}` puts a picture of the key on its card (credit
   required). A `rebuilt here` key also gets `{"source": "s-cyphersolver", "key": "k-…"}` in `source_links`, the
   project's hub node. Every named key the NOTES say was tested and did not fit goes in `"tried": [{"key", "target", "note"}]`
