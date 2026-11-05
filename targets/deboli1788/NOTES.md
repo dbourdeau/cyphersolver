@@ -85,6 +85,15 @@ No. 039 (13 May 1788, k. 76-77v) opens in a different table (groups 2300-3409, f
 December 1789), so under the one-key-one-entry rule it belongs in its own entry, not here. The 9 May 1788 despatch
 (428 k. 71-73) uses the same 9933 table and has its French clear text (417 k. 113-114): a pair to start that table.
 
+## Pointers from Brice Dudout, 5 Nov 2026 (issue #286; not checked here)
+
+- K4 is already in use in the "4000" pieces of 1787 (AGAD, Zbiór Popielów 3, e.g. pieces 14 and 38), so the key predates 1788.
+- In 1787 Deboli's despatches use five systems (ZbPop 3): the old Polish code of ZbPop 444, tables 9933, 3865 and 12282, and the
+  1789-91 code with leading 4000 in three pieces. System 3865 (1786-87) is the same as system "2084" (1783-85), an alphabetical
+  one-part code (100 "à" ... 2300 "ser", 3401 "s" ... 3791 "za"); no validated key yet.
+- The King's cabinet kept Deboli's despatches in clear in AGAD, Archiwum Królestwa Polskiego (zesp. 11) 262-269 (1779-1789),
+  which can serve as clear texts for these systems (catalogue 413-416 notes, PR #283).
+
 ## Remaining gaps
 
 - 13 May 1788 no. 038: 32 groups without a value in K4, and 11 groups with unsettled alternatives (e.g. 637 list|ła, 360 ie|nie) - blocker: open-codes; each occurs too few times in the learning pairs and no context narrows them.

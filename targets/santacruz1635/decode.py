@@ -53,6 +53,11 @@ K.update({'85': 'armada', '86': 'aquel', '88': 'all-', '97': 'bien', '98': 'bue'
           'pan': 'tengo', 'huc': 'quenta', 'mah': 'Sicilia', 'lec': 'razon', 'mach': 'seguridad',
           'tic': 'visto', 'Q': 'justo', 'J': 'Italia'})
 
+# D.179 transcription signs (brackxm/signs_d179.md, issue #183, 31 Oct 2026): conventions of the earlier
+# transcription passes, written here from that list, not copied from dec1635.py. I, T, S are marks (no value).
+K.update({'ff': 'm', '1u': 'pu', '1c': 'no', 'Lc': 'no', 'ch': 'os', 'Ch': 'os', 'Le': 'me', '7L': 'de',
+          'Lo': 'ne', 'Z': 'n', 'l': 'n', 'I': '', 'T': '', 'S': ''})
+
 
 def decode_line(line):
     """Return (text, n_tokens, n_unknown). '(clear:)' tails are kept as-is."""
