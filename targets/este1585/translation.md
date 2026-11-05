@@ -1,0 +1,7 @@
+# este1585 - English translation (working translation of reading.md)
+
+Read in part: 88.5% of the words without restorations. `{…}` = unresolved; `{y}` = the code word for the prince's country, not read.
+
+"… that the King of {y} had the pope asked to grant him the title of king; His Holiness, so {…} told me, flatly refused; but word is that after the refusal the said King of {y} turned to the emperor, where he is pressing hard for the title. When I said to those who spoke of it to me that the emperor would not grant such a title on his own authority without calling his electors, who would first have to consent, I was told that when Cosimo, duke of {Florence}, was made grand duke of Tuscany, the emperor alone gave him the title by his full authority, without consulting the electors. I thought I should tell you, so that you may let the King know and he may take the decision he pleases. But I beg you that no one learn from anyone that this advice came from me, for I would be deprived in future of such news, which reaches me through people of the pope's, and I would be in trouble."
+
+Note. The grand-ducal title was created by Pius V (bull of 27 August 1569) and confirmed to Francesco de' Medici by the emperor Maximilian II (1575-1576); the argument in the letter points to that imperial recognition. The prince who wanted a royal title in 1584-1585 is not identified here (Savoy, Mantua or Ferrara are mere context guesses and are not checked).
