@@ -1,0 +1,234 @@
+{
+ "schema_version": 1,
+ "target": "ariosto1559",
+ "title": "Ercole II d'Este to Claudio Ariosto, Ferrara, 23 April 1559 (Estense, Campori E, cc. 39-41): key validated by our protocol, read in part",
+ "documents": [
+  {
+   "id": "campori-e-39-41",
+   "read": "read in part",
+   "shelfmark": "Modena, Biblioteca Estense Universitaria, Autografoteca Campori, Lettera E, Este (d'), Ercole II d'Este, duca di Ferrara, cc. 39-41 (IIIF manifest 8d50f9af-95d8-405e-a3a4-f66933e69af1)",
+   "date": "23 April 1559",
+   "year": 1559,
+   "country": "Italy",
+   "route": "Ercole II d'Este, duke of Ferrara -> his secretary Claudio Ariosto",
+   "places": {
+    "from": "Ferrara",
+    "to": "Claudio Ariosto (place not stated on the leaves)"
+   },
+   "language": "Italian",
+   "pages": 5,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No contemporary decipherment on the leaves; the cipher runs are set in clear Italian.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 1832,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Estense Digital Library IIIF images (CC BY-NC-SA; not reproduced)",
+    "image_quality": "good",
+    "notes": "Two blind passes by AI agents (87.7% of tokens identical); 9 signs settled by a pre-registered blind shape sheet answered by Brice Dudout. No human palaeographer."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "Consonant signs of Greek and Latin shape with a small raised digit giving the following vowel (2 o, 3 i, 4 e, 5 a, 6 a, 7 e, 8 i, 9 o, 1 u); a raised ring doubles the consonant; dot = null; & = qu; a few code numbers under a bar ({23} = Sua Maestà Catolica, restored; {22}, {24}, {25}{27} open).",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 48,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "titles"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "random",
+  "word_division": "none",
+  "notes": "Not the key of targets/ercole1559 (Bentivoglio 1559), nor francescoeste1546, bresegno1548 or alfonso1576 (each applied once before learning)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment on the leaves; no edition or study found (web searches, 4-5 Nov 2026); nothing on DECODE or at Cryptiana (Tomokiyo); catalogue 2159 open and no target, PR or issue for cc. 39-41 on origin/main (GitHub API, e2315f8a, 5 Nov 2026). Archivio di Stato di Modena not searched.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "first_date": "2026-11-04",
+  "last_date": "2026-11-05",
+  "human_role": "Brice Dudout chose the target, set the rules (protocol, held-out set and thresholds hashed before any key work, one measurement) and answered the blind shape sheet (shapes only, no values shown). AI agents transcribed, learned the key, measured, read and wrote up. No human palaeographer checked the transcription or the reading.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-11-04",
+   "kind": "transcription",
+   "what": "Cipher lines of 39r-41r transcribed blind (shapes only) and frozen by SHA-256 with the protocol and the measuring script; held-out set H = 40v:08-14, 40vB, 41r (22.1% of tokens).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Public keys of the family (ercole1559, francescoeste1546, bresegno1548, alfonso1576) applied once each to the training lines.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring",
+    "key-structure hypothesis"
+   ],
+   "what": "Annealing on a character 5-gram Italian model, training lines only, raised digits constrained to vowels; dot = null, & = qu, raised ring = doubling (amendment before the measurement); key frozen.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One measurement on H: M5 0.605 against 0.155 for the best of 200 permuted keys (gap 0.451); thresholds >= 0.60 and >= +0.30 fixed in advance.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "verification",
+   "what": "Second blind transcription by two agents (87.7% identical tokens); blind shape sheet on 9 places answered by Brice Dudout: double loop D confirmed (D = f), qoppa-like sign confirmed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "prediction",
+   "what": "Frozen key applied once to Ariosto c. 1 (targets/ercole1559): WAINUT's transcription M5 0.189 vs 0.294, our copy 0.271 vs 0.204. Another table; c. 1 not read.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "reading",
+   "what": "Read by sense: 402 cipher words, 262 certain, 95 probable, 6 restored, 39 unresolved (88.8% without restorations); {23} restored as Sua Maestà Catolica.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Key recovered here by annealing on the cipher (with the clear words of the letter as context only) and validated by a single pre-registered measurement on held-out lines. Key 'partial' because code numbers {22}, {24}, {25}{27} have no value.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.888,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Daniel's rule (certain + probable; restored words not counted), counted by script on reading.md: 402 cipher words, 262 certain, 95 probable, 6 restored, 39 unresolved = 357/402 = 88.8%.",
+  "verification": [
+   "statistical test",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-11-05",
+   "verdict": "pass",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): protocol, transcription and held-out set H (405 of 1,832 tokens) frozen before any key work; key learned on the rest and frozen; one measurement: M5 0.605 vs 0.155 for the best of 200 permuted keys (gap 0.451); thresholds >= 0.60 and >= +0.30 fixed in advance. The measured key had D = n; the reading uses D = f (after the measurement, confirmed by a blind shape sheet). External test on Ariosto c. 1 failed (another table)."
+  },
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "blind transcription (two passes), key recovered and validated once on held-out lines (M5 0.605 vs 0.155), letter read in part (88.8%), translation",
+    "date": "2026-11-05"
+   },
+   {
+    "who": "lccompany",
+    "role": "pointer",
+    "note": "WAINUT's Estense sweep (PR #242) found the letter; their public transcription of Ariosto c. 1 was used for an external test of the key, which failed",
+    "date": "2026-11-03"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "catalogue entry 2159 and its vetting",
+    "date": "2026-11-03"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "39 cipher words unresolved, mostly in 39r:07-08, 39r:19-21, 40r:12-16, 40v:02-04, 40v:12-13 (read the same in both blind passes)",
+    "blocker": "illegible",
+    "detail": "a third reading of those lines at full resolution by a human reader, or a clear minute, would settle them"
+   },
+   {
+    "item": "Code numbers {22}, {24}, {25}{27} (one place each); {23} restored by sense only",
+    "blocker": "open-codes"
+   },
+   {
+    "item": "The countess, her husband, the count her son-in-law, 'don Cesare' and 'il marchese' not identified",
+    "blocker": "needs-physical-access",
+    "detail": "Archivio di Stato di Modena (Cancelleria, Ambasciatori) not searched; four web searches found nothing decisive"
+   },
+   {
+    "item": "Ariosto c. 1 (targets/ercole1559) not read: the key does not fit it",
+    "blocker": "no-key-material"
+   },
+   {
+    "item": "Catalogue 2160 (8 Jan 1547, cc. 16-17) transcribed blind but not solved: another table, about 180 training signs, no key frozen, no measurement",
+    "blocker": "too-short"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "campori-e-39-41",
+    "label": "cc. 39-41 (39r, 39v, postscript 40r-41r): cipher runs in a clear letter",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.888,
+    "summary": "A countess claims arrears of censi owed by the duke; he refuses those due at the time of her husband's rebellion and offers to pay the future ones to her rather than to the husband, who had false complaints made against him at Philip II's court; she thinks of suing her husband; a favourite, Iacomo, is to have 4,000 ducats; the peace lessens the husband's credit.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "date": "2026-11-05",
+     "note": "Read as sentences 5 Nov 2026 by one AI reader; Brice Dudout answered the shape sheet only, not the reading. The cipher words construe as Italian sentences inside the clear letter, with gaps: 262 certain, 95 probable, 6 restored, 39 unresolved of 402 (88.8% without restorations), so read in part."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "The key is ours and reusable (key.tsv, CC BY 4.0); it is not the key of Ariosto c. 1 or of catalogue 2160, both declared not read."
+ }
+}
