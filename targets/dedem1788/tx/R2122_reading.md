@@ -8,7 +8,7 @@ decode `R2122_decode.txt`), and the clear text of the letter transcribed from th
 Conventions: cipher words are carried by their groups, clear words by the letter; `[?word]` partly carried; `[word]`
 supplied (nothing carries it); `[…]` unread; `[1230]` a group whose codebook value gives no sense here. Spelling as
 the codebook and the letter give it; words the code spells in pieces are joined (el+der+s = elders, du+r+ven = durven,
-ver+ne+der+ing = vernedering). The opening groups 2504 2604 2704 are the "begin des briefs" markers and are not read.
+ver+ne+der+ing = vernedering). The opening groups 2504 2604 2704 are markers, not text: begin des briefs, a blank slot, and "annuleert 2 voorige caracters" (corrected 5 Nov 2026, issue #244); none is read.
 
 ## Reading
 

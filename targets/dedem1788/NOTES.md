@@ -1,5 +1,15 @@
 # Van Dedem (Constantinople) to Van de Spiegel, 1788–1793 — DECODE R2120, R2122, R2131
 
+**5 Nov 2026, code 2704 corrected (issue #244, EscalatorStudios).** Our key table had 2704 as "anno 2 voorige jaar" (a faded
+indicator). On Nationaal Archief scan 0004 of inv. 785 the cell of "te meer" (2701), row 4, holds a faded abbreviated
+entry that reads *ann.t 2 voorige Car.s*: "annuleert 2 voorige caracters", an instruction to cancel the 2 preceding
+characters, not a date word. Checked on the scan (service.archief.nl render of scan 0004; the scans are not kept in the
+repository); `key/kroll785_values.tsv` and `tx/R2122_decode.txt` updated (`research/reading_audit/b19_dedem_decode.py`).
+No reading changes: 2504 2604 2704 stay the unread opening markers (begin des briefs, blank slot, cancel 2 preceding).
+Not verified: the reporter's comparison entry 1429 on scan 0002 (the faded "einde des Briefs" mark sits on the ruled line
+above the written 1430 row, but we did not settle which column it belongs to); whether the instruction really cancels
+2504 and 2604 in the opener is a hypothesis, nothing in R2122 tests it (R2053 and R2121 open the same way).
+
 **23 Oct 2026, re-read (REREAD_BRIEF, batch b19): the codebook found; R2122 and R2131 read.** The legation
 inventory lists under Kroll (chargé 1784-85) **NA 1.02.20 (legatie Turkije) inv. 785**, "Sleutel geheimschrift": its six
 scans on the Nationaal Archief site are the codebook itself, headed "Kroll. Un Chiffre" (500-group pages of five
@@ -45,7 +55,7 @@ L.P. van de Spiegel (NA 3.01.26 inv. 212: R2120, R2122, R2131) and to the Agent 
 
 - Numbers 2–3839, one group ≈ one Dutch or French word, **heavily homophonic** ("de" 36× in R2121's clear, no
   group more than 11×; 541/641/841/941 all frequent). Not alphabetical in any test (welke≈2888, landen≈1277, als≈17). [Superseded 4 Oct 2026: alphabetical within 500-group blocks once the groups are re-indexed by column; see "Second pass".]
-- Fixed opener 2504 2604 2704 (R2120, R2122, R2053) and 701 801 … 301 401 501 601 frames (R1947, R2131): nulls/indicators.
+- Fixed opener 2504 2604 2704 (R2120, R2122, R2053; begin des briefs, blank slot, "annuleert 2 voorige caracters") and 701 801 … 301 401 501 601 frames (R1947, R2131): nulls/indicators.
 - The same code is used in the deciphered R1947 (8 Nov 1789, French annex + solution) and R2053 (1 Dec 1789,
   French + solution), both transcribed here (`tx/R1947_*`, `tx/R2053_*`).
 
