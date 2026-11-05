@@ -14825,7 +14825,12 @@
    "prior_art": "open (checked 28 Oct 2026: catalogue only; the existing catalogue row Roosevelt → Hay 27 May 1903 is a different item)",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "needs a working host: collections.digitalmaryland.org fails in Chrome, curl and WebFetch. DPLA 34a943d9ff5095dd9a9d9811ed8678e5 and 0cff4e55eca65f632e1815a7914c2a8a say telegrams 'received in cipher' and 'sent in cipher', which may be decoded typescripts; thumbnails show first pages only, no ciphertext seen. FRUS pairing unchecked."
+   "vetting_note": "needs a working host: collections.digitalmaryland.org fails in Chrome, curl and WebFetch. DPLA 34a943d9ff5095dd9a9d9811ed8678e5 and 0cff4e55eca65f632e1815a7914c2a8a say telegrams 'received in cipher' and 'sent in cipher', which may be decoded typescripts; thumbnails show first pages only, no ciphertext seen. FRUS pairing unchecked.",
+   "vetting": {
+    "verdict": "not_cipher",
+    "closed": "Both Digital Maryland items (hawp id 170, 216) are viewed and hold only typewritten clear text: Tower's 12 Feb 1903 telegram is a decoded typescript headed 'Received in cipher' and Hay's 8 Apr 1904 reply is a Department of State 'Telegram Sent in Cipher' file form giving the plaintext; no cipher groups appear anywhere.",
+    "date": "2026-11-04"
+   }
   },
   {
    "id": 1437,
@@ -17418,7 +17423,12 @@
    "access_note": "BNE Digital viewer, free; CC BY 4.0",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "BNE Digital Cloudflare checkbox in Chrome, not clicked: https://bnedigital.bne.es/bd/es/card?id=fd72f368-47a6-45d9-96cf-0d7a71f3ccc9 and id=ce09330d-dffc-4e3d-8ed8-4f2ccd37dcac . Leaf not seen, only 'La primera carta, cifrada en parte'. Search found Valencia Rodríguez 2010 on Feria (dialnet 3786812), not read at this letter; no decipherment found."
+   "vetting_note": "BNE Digital Cloudflare checkbox in Chrome, not clicked: https://bnedigital.bne.es/bd/es/card?id=fd72f368-47a6-45d9-96cf-0d7a71f3ccc9 and id=ce09330d-dffc-4e3d-8ed8-4f2ccd37dcac . Leaf not seen, only 'La primera carta, cifrada en parte'. Search found Valencia Rodríguez 2010 on Feria (dialnet 3786812), not read at this letter; no decipherment found.",
+   "vetting": {
+    "verdict": "partly_read",
+    "closed": "BNE RES/227/120-121 and 127-129 viewed: the Duke of Feria's 1622 letters to Coloma carry cipher passages (digits and signs) with plaintext written beside them in the left margin, so the cipher is partly read by an adjacent decipherment, not open.",
+    "date": "2026-11-04"
+   }
   },
   {
    "id": 1603,
@@ -21546,43 +21556,6 @@
    "vetting_note": "Series-level record: reports from Madrid to Neny and instructions to Lebzeltern 1765-1768, extent not given in AIS 4328197, only 'teilweise verschlüsselt'; no identifiable cipher document. Needs the volume or images."
   },
   {
-   "id": 1736,
-   "counted": true,
-   "year": 1623,
-   "date": "01.03.1623",
-   "title": "Schreiben Khevenhüllers an Eggenberg: largely enciphered (HHStA Spanien Varia)",
-   "correspondents": "unknown (see title)",
-   "place": "unknown",
-   "language": "Spanish",
-   "region": "Spain",
-   "period": "1611-1650",
-   "shelfmark": "HHStA StAbt Spanien Varia 5-6-5 (AIS ID 4075037)",
-   "folio_note": "fol 441-442; scans not flagged",
-   "cls": "B",
-   "status": "AIS: 'Schreiben Khevenhüllers an Eggenberg'; Bemerkungen: 'großteils verschlüsselt'. No decipherment is mentioned in the record.",
-   "why": "Imperial correspondence in the Spanish series of the Staatenabteilung; the cataloguer marks it largely or wholly enciphered.",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 3,
-   "score_note": "Scored from the AIS description (Bemerkungen / Titel) during the Nov 2026 HHStA AIS sweep (research/sweep_2026-11_hhsta_ais/); images not viewed",
-   "verify": "Order or open the volume; locate the ciphered passages, measure them, and look for a decipherment or key in the same series.",
-   "links": [
-    {
-     "label": "AIS 5-6-5",
-     "href": "https://www.archivinformationssystem.at/detail.aspx?ID=4075037"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "HHStA AIS sweep (Nov 2026)",
-   "prior_art": "open as far as checked (2 Nov 2026: known.py on the shelfmark and AIS id, the catalogue, leads and sweep files; AIS gives no decipherment; Tomokiyo, Lasry, the editions not searched)",
-   "needs_archive_scan": "yes",
-   "access_note": "AIS record only; whether a scan exists is not flagged on this record",
-   "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Possible clear copy not checked: the Khevenhueller letter-copy books (Franz Christoph Khevenhueller, imperial ambassador in Madrid 1617-31; volumes 1617-25 hold cipher correspondence with Eggenberg; article at journals.ub.uni-heidelberg.de mittgnm 25637, not opened) may hold this 1 March 1623 letter deciphered. Needs that article read and the letter book located: https://journals.ub.uni-heidelberg.de/index.php/mittgnm/article/download/25637/19351/72749 . AIS 4075037 says 'großteils verschlüsselt', fol 441-442, no scan online."
-  },
-  {
    "id": 1743,
    "counted": true,
    "year": 1792,
@@ -21638,43 +21611,6 @@
     "verdict": "read",
     "closed": "AIS record itself (fetched live) states 'Einige Briefe sind chiffriert; Edition: Eugene Hubert, Le Comte de Mercy-Argenteau et Blumendorf: depeches inedites tiree des archives imperiales de Vienne, 5 janvier-23 septembre 1792, Bruxelles, 1919'. Edition found on Google Books (ids jxHv92sks8IC, gBpA02EQykIC, full view); a snippet search for 'chiffre' returned one hit. Not checked letter by letter which ciphered items are printed in clear; closed as printed in an edition."
    }
-  },
-  {
-   "id": 1744,
-   "counted": true,
-   "year": 1667,
-   "date": "24.12.1667",
-   "title": "Protokoll der Konferenz zwischen dem Herzog von Buckingham, dem Grafen Arlington, Grafen Molina und dem Baron Lisola betreffend Belgien (ciphered, per AIS)",
-   "correspondents": "see title",
-   "place": "unknown",
-   "language": "Latin",
-   "region": "England",
-   "period": "1651-1700",
-   "shelfmark": "HHStA StAbt England Varia 5-2-26 (AIS ID 6428100)",
-   "folio_note": "fol. 502-10; scans not flagged",
-   "cls": "B",
-   "status": "AIS: 'Protokoll der Konferenz zwischen dem Herzog von Buckingham, dem Grafen Arlington, Grafen Molina und dem Baron Lisola betreffend Belgien'; Bemerkungen: 'Weitgehend chiffriert.'. No decipherment is mentioned in the record.",
-   "why": "Conference record of 24 Dec 1667 between Buckingham, Arlington, Molina and a baron (Latin), largely ciphered.",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 3,
-   "score_note": "Scored from the AIS description (Bemerkungen / Titel) during the Nov 2026 HHStA AIS sweep (research/sweep_2026-11_hhsta_ais/); images not viewed",
-   "verify": "Order or open the volume; locate the ciphered passages, measure them, and look for a decipherment or key in the same series.",
-   "links": [
-    {
-     "label": "AIS 5-2-26",
-     "href": "https://www.archivinformationssystem.at/detail.aspx?ID=6428100"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "HHStA AIS sweep (Nov 2026)",
-   "prior_art": "open as far as checked (2 Nov 2026: known.py on the shelfmark and AIS id, the catalogue, leads and sweep files; AIS gives no decipherment; Tomokiyo, Lasry, the editions not searched)",
-   "needs_archive_scan": "yes",
-   "access_note": "AIS record only; whether a scan exists is not flagged on this record",
-   "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Lisola/Buckingham/Arlington/Molina conference 24 Dec 1667 (England Varia 5-2-26): AIS says 'Weitgehend chiffriert' but record is cipher mention only, no scan; Pribram's Lisola biography/Archiv fuer oesterreichische Geschichte edition of Lisola papers may print the text and was not opened. Needs that volume checked."
   },
   {
    "id": 1747,
@@ -22395,43 +22331,6 @@
    }
   },
   {
-   "id": 1768,
-   "counted": true,
-   "year": 1648,
-   "date": "11.02.1648",
-   "title": "Original einige Zeilen in Chiffern, Resident Plettenberg an Holzapfel, Nachrichten",
-   "correspondents": "unknown (see title)",
-   "place": "unknown",
-   "language": "unknown",
-   "region": "Central Europe",
-   "period": "1611-1650",
-   "shelfmark": "HHStA Kriegsakten 134-79 (AIS ID 4111696)",
-   "folio_note": "extent not given; scans not flagged",
-   "cls": "B",
-   "status": "AIS: 'Original einige Zeilen in Chiffern, Resident Plettenberg an Holzapfel, Nachrichten'. No decipherment is mentioned in the record.",
-   "why": "Thirty Years' War letter in the HHStA Kriegsakten, partly or wholly ciphered, no decipherment in the record title.",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 2,
-   "score_note": "Scored from the AIS description (Bemerkungen / Titel) during the Nov 2026 HHStA AIS sweep (research/sweep_2026-11_hhsta_ais/); images not viewed",
-   "verify": "Order or open the volume; locate the ciphered passages, measure them, and look for a decipherment or key in the same series.",
-   "links": [
-    {
-     "label": "AIS 134-79",
-     "href": "https://www.archivinformationssystem.at/detail.aspx?ID=4111696"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "HHStA AIS sweep (Nov 2026)",
-   "prior_art": "open as far as checked (2 Nov 2026: known.py on the shelfmark and AIS id, the catalogue, leads and sweep files; AIS gives no decipherment; Tomokiyo, Lasry, the editions not searched)",
-   "needs_archive_scan": "yes",
-   "access_note": "AIS record only; whether a scan exists is not flagged on this record",
-   "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "AIS 4111696 (Plettenberg to Holzapfel, 11 Feb 1648, 'einige Zeilen in Chiffern', fol. 204-205): no images online, so ciphertext not seen. Searches run: Volmar/Osnabrück APW, Plettenberg/Holzapfel, Ruischenberg/Banér, Kurz/Traun, Schmeh's blog on Thirty Years War ciphers. No decipherment or edition found. Needs an HHStA photo."
-  },
-  {
    "id": 1770,
    "counted": true,
    "year": 1737,
@@ -22893,51 +22792,6 @@
     "verdict": "partly_read",
     "closed": "Catalogue wording 'partly undeciphered' on SP 87/30/5 shows a contemporary partial decipherment is on the leaf, so it is prior art; leaf not seen, extent of the decipherment unmeasured."
    }
-  },
-  {
-   "id": 1792,
-   "counted": true,
-   "year": 1742,
-   "date": "30 Apr - 13 May 1742",
-   "title": "Hyndford (Breslau, 30 Apr and 5 May) and Villiers (Dresden, 13 May) to Stair, partly in cipher",
-   "correspondents": "Hyndford, Villiers -> Earl of Stair",
-   "place": "Breslau, Dresden",
-   "language": "English",
-   "region": "Central Europe",
-   "period": "1701-1800",
-   "shelfmark": "TNA SP 87/8/45, /51, /59",
-   "folio_note": "ff. 92-96, 113-115, 132-133",
-   "cls": "A",
-   "status": "Catalogue: \"Partly in cipher\" on each; no decipher mentioned.",
-   "why": "Same series as SP 87/8/65; keys of Hyndford and Villiers are in SP 106/20-21.",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 2,
-   "score_note": "Scored from the TNA Discovery catalogue description only (TNA State Papers sweep, 2 Nov 2026; research/sweep_2026-11_tna_state_papers/); not viewed",
-   "verify": "Order a copy from Kew or look in State Papers Online; check the same volume for a decipher or a key in SP 106.",
-   "links": [
-    {
-     "label": "TNA Discovery SP 87/8/45",
-     "href": "https://discovery.nationalarchives.gov.uk/details/r/C9232930"
-    },
-    {
-     "label": "TNA Discovery SP 87/8/51",
-     "href": "https://discovery.nationalarchives.gov.uk/details/r/C9232936"
-    },
-    {
-     "label": "TNA Discovery SP 87/8/59",
-     "href": "https://discovery.nationalarchives.gov.uk/details/r/C9232944"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "TNA Discovery API, State Papers sweep",
-   "prior_art": "open as far as checked (2 Nov 2026: known.py, incl. the removal file, on the shelfmark and the correspondents; Discovery text only; CSP calendars, Tomokiyo, Lasry and the SP 106 key volumes not searched for this item)",
-   "needs_archive_scan": "yes",
-   "access_note": "not digitised on Discovery (digitised=false); State Papers Online (Gale, subscription) or a Kew visit",
-   "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Three items 'partly in cipher' (SP 87/8/45, /51, /59), catalogue only, not digitised; descriptions summarise content so interlinear decipherment cannot be excluded without seeing the leaves. Searches on Hyndford/Villiers/Stair 1742 found no edition or decipherment."
   },
   {
    "id": 1793,
@@ -25934,7 +25788,12 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "Calames MSRIC 44 f. 26 notice (read by curl) is a 1-folio 'Chiffre de correspondance de M. Colonna' key sheet only; the MSRIC 48 ff. 28-29, 118-119 letter notices could not be found by search, so ciphertext is not shown; needs the Calames MSRIC 48 notices or Sorbonne access"
+   "vetting_note": "Calames MSRIC 44 f. 26 notice (read by curl) is a 1-folio 'Chiffre de correspondance de M. Colonna' key sheet only; the MSRIC 48 ff. 28-29, 118-119 letter notices could not be found by search, so ciphertext is not shown; needs the Calames MSRIC 48 notices or Sorbonne access",
+   "vetting": {
+    "verdict": "read",
+    "closed": "Calames MSRIC 48 ff. 118-119 (Colonna de Bozzi to Richelieu, Zicavo, 14 May 1748) is described as 'Lettre chiffree. Texte dechiffre entre les lignes', so the only ciphered letter carries a contemporary interlinear decipherment; the other letter (ff. 28-29, Calvi, 6 May) is not described as cipher and MSRIC 44 f. 26 is a key sheet only.",
+    "date": "2026-11-04"
+   }
   },
   {
    "id": 1849,
@@ -27892,47 +27751,12 @@
    "access_note": "catalogue record only on Archives Portal Europe; no scan flagged; MNL OL reading room or order needed",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "New route: the MNL Károlyi database opens without a check. https://adatbazisokonline.mnl.gov.hu/adatbazis/a-karolyi-leveltar-rakoczi-kori-iratai/adatlap/12603 says of no. 11214 'utóirat rejtjeles' (postscript in cipher), Szerencs 1 Oct 1710, Ser. II 1710-1711 pag. 220-226, no image, no edition noted. BUT Thaly, Archivum Rakoczianum I/3 (MEK 18829) no. 104 pp. 169-172, opened and read, prints 'Szerencs, 1. 8-bris. Károlyi úrnak' from Rákóczi's secret protocol in clear. Same letter; whether its text includes the postscript needs a leaf of no. 11214 to compare, so a reading may already be in print. Not open until compared. Needs an MNL scan."
-  },
-  {
-   "id": 1903,
-   "counted": true,
-   "year": 1710,
-   "date": "15 Sept 1710",
-   "title": "Janos Pongracz to Sandor Karolyi: letter with cipher (MNL OL P 396 no. 9027)",
-   "correspondents": "Janos Pongracz to Sandor Karolyi",
-   "place": "Ujvar",
-   "language": "Hungarian (assumed)",
-   "region": "Central Europe",
-   "period": "1701-1800",
-   "shelfmark": "MNL OL P 396, 1. sorozat, no. 9027",
-   "folio_note": "one letter",
-   "cls": "B",
-   "status": "MNL record carries titkos irás (secret writing). Keys in the same fonds. known.py: no hit for Pongracz in this role.",
-   "why": "A general of the Kuruc army to Karolyi in the last autumn of the war.",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 2,
-   "score_note": "Scored from the archive description during the Nov 2026 Hungary/Czech sweep (research/sweep_2026-11_hungary_czech/); not viewed",
-   "verify": "Open the record and its image or reading-room copy; measure the cipher; look for a decipherment or key in the same fonds.",
-   "links": [
-    {
-     "label": "no. 9027",
-     "href": "https://www.archivesportaleurope.net/advanced-search/search-in-archives/results-(archives)/?repositoryCode=HU-1&levelName=clevel&t=hg&recordId=3571&c=C1116142657"
-    },
-    {
-     "label": "keys no. 11345",
-     "href": "https://www.archivesportaleurope.net/advanced-search/search-in-archives/results-(archives)/?repositoryCode=HU-1&levelName=clevel&t=hg&recordId=3571&c=C1116144977"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "Hungary/Czech sweep, MNL OL via Archives Portal Europe",
-   "prior_art": "open as far as checked (2 Nov 2026: known.py on the names and the DF/P/R numbers, no hits; no web search by instruction: Tomokiyo, Lasry, the DECODE site search, editions and literature NOT searched)",
-   "needs_archive_scan": "unknown",
-   "access_note": "catalogue record only on Archives Portal Europe; no scan flagged; MNL OL reading room or order needed",
-   "ark": "",
-   "scored": "sweep",
-   "vetting_note": "MNL record https://adatbazisokonline.mnl.gov.hu/adatbazis/a-karolyi-leveltar-rakoczi-kori-iratai/adatlap/10429 read in Chrome: no. 9027, Pongrácz János to Károlyi Sándor, Újvár 15 Sep 1710, 'titkos írás is', no image, no edition noted. BUT Commons prints from Révay, II. Rákóczi Ferenc és korának rejtjelezése (1974) a facsimile of a Pongrácz letter of the same day (caption: to Rákóczi, Kassa), and I saw its letter-by-letter interlinear decipherment (scan viewed in Chrome). Addressee and place differ, so it is the same sign system and possibly a sister letter. Révay 1974 is not online: an unopened prior-art question. Needs Révay and a leaf of no. 9027."
+   "vetting_note": "New route: the MNL Károlyi database opens without a check. https://adatbazisokonline.mnl.gov.hu/adatbazis/a-karolyi-leveltar-rakoczi-kori-iratai/adatlap/12603 says of no. 11214 'utóirat rejtjeles' (postscript in cipher), Szerencs 1 Oct 1710, Ser. II 1710-1711 pag. 220-226, no image, no edition noted. BUT Thaly, Archivum Rakoczianum I/3 (MEK 18829) no. 104 pp. 169-172, opened and read, prints 'Szerencs, 1. 8-bris. Károlyi úrnak' from Rákóczi's secret protocol in clear. Same letter; whether its text includes the postscript needs a leaf of no. 11214 to compare, so a reading may already be in print. Not open until compared. Needs an MNL scan.",
+   "vetting": {
+    "verdict": "read",
+    "closed": "MNL Karolyi database no. 11214 (Rakoczi to Karolyi, Szerencs, 1 Oct 1710) notes only 'utoirat rejtjeles' (postscript in cipher), and Thaly, Archivum Rakoczianum I/3 (1874) no. 104 pp. 169-172 prints the whole letter in clear from the secret protocol, so a reading is in print; the leaf is not online to check the postscript against it.",
+    "date": "2026-11-04"
+   }
   },
   {
    "id": 1904,
@@ -28611,7 +28435,12 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "NLS record read in Chrome (archival_objects/39392, MS.16980, 27 + 4 inverted folios): \"A cypher key is on the inverted folios.\" Only a key is named and the journal text is undescribed, so neither ciphertext nor its absence is shown. No digital object; needs the leaves from NLS."
+   "vetting_note": "NLS record read in Chrome (archival_objects/39392, MS.16980, 27 + 4 inverted folios): \"A cypher key is on the inverted folios.\" Only a key is named and the journal text is undescribed, so neither ciphertext nor its absence is shown. No digital object; needs the leaves from NLS.",
+   "vetting": {
+    "verdict": "not_cipher",
+    "closed": "NLS MS.16980 (Milton's journal no. 161, 1754, 31 leaves) is described only as having 'A cypher key' on the inverted folios, a key with no ciphertext named (unlike MS.16962 and MS.17018, whose records say an account or leaves are in cypher).",
+    "date": "2026-11-04"
+   }
   },
   {
    "id": 1927,
@@ -31434,7 +31263,12 @@
    "decode_ids": [],
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Needs the user to clear a Cloudflare checkbox: https://search.amphilsoc.org/collections/view?docId=ead/Mss.B.F85inventory12-ead.xml and, for scans, https://diglib-legacy.amphilsoc.org/ (not clicked). Evidence so far points to no open cipher. Hays, Calendar of the Papers of Franklin (archive.org calendarofpapers04amer) has XLVII, 114 as Wharton to 'Benson' [Deane's alias], 19 May 1778, 'L. (In cipher.) 2 p.', and summarises its whole content (Williams's charge about Lord North, Wharton's denial); XLVII, 115, to Williams, 20 May, is 'L. S. 2 p. (In duplicate.)' with no cipher mark. Papers of Franklin XXVI (notes at 01-26-02-0328 and -0508) paraphrases the same letters from the APS. So 114 was understood by 1908, whether from an interlinear or clear names is unseen, and 115 may not be in cipher. Settle on the leaf: probably read or partly_read for 114."
+   "vetting_note": "Needs the user to clear a Cloudflare checkbox: https://search.amphilsoc.org/collections/view?docId=ead/Mss.B.F85inventory12-ead.xml and, for scans, https://diglib-legacy.amphilsoc.org/ (not clicked). Evidence so far points to no open cipher. Hays, Calendar of the Papers of Franklin (archive.org calendarofpapers04amer) has XLVII, 114 as Wharton to 'Benson' [Deane's alias], 19 May 1778, 'L. (In cipher.) 2 p.', and summarises its whole content (Williams's charge about Lord North, Wharton's denial); XLVII, 115, to Williams, 20 May, is 'L. S. 2 p. (In duplicate.)' with no cipher mark. Papers of Franklin XXVI (notes at 01-26-02-0328 and -0508) paraphrases the same letters from the APS. So 114 was understood by 1908, whether from an interlinear or clear names is unseen, and 115 may not be in cipher. Settle on the leaf: probably read or partly_read for 114.",
+   "vetting": {
+    "verdict": "partly_read",
+    "closed": "Only XLVII 114 (19 May 1778, to 'Benson', i.e. Bancroft) is marked 'In cipher', and the APS's own Calendar (Hays 1908) summarises its whole content (Williams's charge, Wharton's denial), so it was read at least in substance; XLVII 115 (to Williams, 20 May) carries no cipher mark.",
+    "date": "2026-11-04"
+   }
   },
   {
    "id": 2055,
@@ -31746,44 +31580,6 @@
     "verdict": "read",
     "closed": "Same letter (Edinburgh, 27 March 1560, Queen Dowager to Lorraine and Guise) is calendared in CSP Foreign Eliz. II no. 906 p. 480 from a contemporary copy, \"deciphered, and translated\" by Throckmorton into English; a further copy is BL Caligula B. ix. 96b."
    }
-  },
-  {
-   "id": 2070,
-   "counted": true,
-   "year": 1551,
-   "date": "15 Dec 1551",
-   "title": "Henry II → M. de Bayonne: letter in cipher from Orléans",
-   "correspondents": "Henry II → Jean de Monluc?, bishop of Bayonne",
-   "place": "Orléans",
-   "language": "French",
-   "region": "France",
-   "period": "1497-1559",
-   "shelfmark": "Morgan Library (ArchiveGrid 270477800)",
-   "folio_note": "letter, autograph signature",
-   "cls": "B",
-   "status": "Morgan: \"Autograph signature to letter (in cipher)\". Ribier may print; not compared. Cryptiana henryii.htm has no item for this letter; Ribier could not be reached.",
-   "why": "French diplomacy at the Parma war.",
-   "importance": 4,
-   "solvability": 3,
-   "difficulty": 3,
-   "score_note": "Scored from the archive description during the Nov 2026 US blocked-sources sweep (research/sweep_2026-11_us_blocked/); not viewed",
-   "verify": "Check Ribier; ask for a scan.",
-   "links": [
-    {
-     "label": "ArchiveGrid record",
-     "href": "https://researchworks.oclc.org/archivegrid/collection/data/270477800"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "ArchiveGrid sweep",
-   "prior_art": "open as far as checked (3 Nov 2026: known.py on names and shelfmark; archive description says nothing of a decipherment; no edition compared)",
-   "needs_archive_scan": "yes",
-   "access_note": "Reading-room item; no scan found online",
-   "decode_ids": [],
-   "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Chrome read ArchiveGrid 270477800: \"Autograph signature to letter (in cipher) : Orleans, to M. de Bayonne, 1551 Dec. 15\", 1 item, 2 1/2 pages, Morgan Library. M. de Bayonne in Dec 1551 is Jean des Monstiers du Fraisse, not Monluc (correct the lead). Unopened edition that would cover it: Des Monstiers Merinville, \"Jean des Monstiers, seigneur du Fraisse, eveque de Bayonne ... sa vie et correspondance\" (Limoges 1895; repr. Geneva 1970); not on archive.org by search, Google Books API gave none. Ribier II (archive.org bub_gb_qWTswSr32NYC, the true vol. II, grep plus section M.D.LI) has no letter to Bayonne in 1551; Cryptiana henryii.htm has no Dec 1551 item. Morgan record page themorgan.org is behind a Cloudflare \"Verify you are human\" checkbox, not clicked."
   },
   {
    "id": 2071,
@@ -35491,7 +35287,12 @@
    "access_note": "Whole volume digitised from microfilm on digitale-sammlungen.de (MDZ), free, IIIF; no login",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Bierther, Briefe und Akten N.F. II/8 (1982) could not be read at this date. HathiTrust catalog and babel full-text search both stopped at a Cloudflare 'Performing security verification' page in Chrome, not clicked; no MDZ copy of this volume was seen in the MDZ search (the results viewed were older works, not checked to the end), and the Historische Kommission page lists it as print; De Gruyter Brill has it (ISBN 9783486498011) for purchase only. Google Books holds two scans, eEPWsb6K5vEC and 5a8yAQAAIAAJ, both snippet-only (no page view; each query shows at most 3 short hits). Its Chronologisches Aktenregister is the decisive place, and p. 810, which should list about 21-25 Oct 1633, never surfaces: pp. 809 and 811 came up, but no p. 810 hit in 16 further queries on each scan. '1633 X 22' gives 0 on one scan and only pp. 805, 353, 861 on the other, though the book cites letters of 22 Oct (pp. 371, 401, 405), so that zero is the gap, not evidence. Need p. 810 and the Geleen index entry from a library copy."
+   "vetting_note": "Bierther, Briefe und Akten N.F. II/8 (1982) could not be read at this date. HathiTrust catalog and babel full-text search both stopped at a Cloudflare 'Performing security verification' page in Chrome, not clicked; no MDZ copy of this volume was seen in the MDZ search (the results viewed were older works, not checked to the end), and the Historische Kommission page lists it as print; De Gruyter Brill has it (ISBN 9783486498011) for purchase only. Google Books holds two scans, eEPWsb6K5vEC and 5a8yAQAAIAAJ, both snippet-only (no page view; each query shows at most 3 short hits). Its Chronologisches Aktenregister is the decisive place, and p. 810, which should list about 21-25 Oct 1633, never surfaces: pp. 809 and 811 came up, but no p. 810 hit in 16 further queries on each scan. '1633 X 22' gives 0 on one scan and only pp. 805, 353, 861 on the other, though the book cites letters of 22 Oct (pp. 371, 401, 405), so that zero is the gap, not evidence. Need p. 810 and the Geleen index entry from a library copy.",
+   "vetting": {
+    "verdict": "partly_read",
+    "closed": "Already a target here (targets/geleen1633, Dudout with Claude agents, 4 Nov 2026): the original letter of Mainz and Cologne to Geleen of 22 Oct 1633 is read in part (84.2% of 221 cipher words), so it is not an open catalogue entry.",
+    "date": "2026-11-04"
+   }
   },
   {
    "id": 2185,
@@ -36234,7 +36035,12 @@
    "source": "Sweep 2026-11 B unswept south (Manus Online / Wayback copies of Italian inventories)",
    "seen": "catalogue",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "verdict": "not_cipher",
+    "closed": "Penn Ms. Codex 553 (scans viewed on Colenda IIIF) is a clear-text register of Zacchia's letters in which proper names appear as numbers (e.g. 1000) and the nuncio writes that 'dieci righe di cifra' accompany a letter without the lines being copied; the Casanatense Ms. 1309 record says the same, so there is no ciphertext block, only isolated nomenclator numbers.",
+    "date": "2026-11-04"
+   }
   },
   {
    "id": 2203,
@@ -36313,46 +36119,6 @@
    "source": "Sweep 2026-11 B unswept south (Manus Online / Wayback copies of Italian inventories)",
    "seen": "catalogue",
    "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 2205,
-   "counted": true,
-   "year": 1705,
-   "date": "1704-1706 (letters at cc. 120, 125, 132 and passim; key at c. 172)",
-   "title": "Cardinal Pietro Ottoboni and others on the Naples immunities dispute with the viceroy Villena: letters to and from Mgr de la Tremoille Noirmoutier in cipher, with the decipherment scheme on c. 172",
-   "correspondents": "Cardinal Pietro Ottoboni / Mario Saverio Bottoni / Mgr de la Tremoille Noirmoutier -> and from; also the viceroy of Naples, Juan Fernandez Pacheco, marquis of Villena",
-   "place": "Rome / Naples",
-   "language": "Italian (some French, Spanish, Latin)",
-   "region": "Italy",
-   "period": "1701-1800",
-   "shelfmark": "Turin, Biblioteca Reale, Manoscritti Varia 244 (Manus CNMD 0000456583; inventory no. SM 14518), 203 leaves, 87 letters",
-   "folio_note": "cipher in letters at cc. 120, 125, 132 and passim; 'lo schema di decrittazione si trova alla c. 172'",
-   "cls": "A",
-   "status": "Manus: 'Alcune lettere ... indirizzate a un certo Monsignor de La Tremoille Noirmoutier, ed una risposta di questi, contengono codici cifrati; lo schema di decrittazione si trova alla c. 172.' Record created 14 Apr 2026. No decipherment is mentioned.",
-   "why": "A key and the ciphertexts bound together in one volume of the War of the Spanish Succession (the Pope against Naples' Spanish administration); a ready cribbed read with no sibling needed.",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 2,
-   "score_note": "Scored from the Manus Online record description read on 4 Nov 2026 (research/sweep_2026-11_B_unswept_south/); not viewed",
-   "verify": "Request cc. 120-132 and 172 from the Biblioteca Reale (Turin); check the cipher against the Roman curial and French-embassy keys of 1704-06.",
-   "links": [
-    {
-     "label": "Turin Biblioteca Reale Varia 244 (Manus Online record)",
-     "href": "https://manus.iccu.sbn.it/risultati-ricerca-manoscritti/-/manus-search/detail/1871606"
-    },
-    {
-     "label": "Manus JSON for the same record",
-     "href": "https://manus.iccu.sbn.it/o/manus-api/title?id=1871606"
-    }
-   ],
-   "prior_art": "open as far as checked (4 Nov 2026: known.py on 'Tremoille', 'Noirmoutier', 'Ottoboni' - only unrelated hits; one web search for Varia 244 found nothing)",
-   "needs_archive_scan": "yes",
-   "access_note": "no images linked from Manus; Biblioteca Reale di Torino",
-   "source": "Sweep 2026-11 B unswept south (Manus Online / Wayback copies of Italian inventories)",
-   "seen": "catalogue",
-   "ark": "",
-   "access": "archive",
    "scored": "sweep"
   },
   {
@@ -36497,7 +36263,12 @@
    "seen": "catalogue",
    "ark": "",
    "access": "archive",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "verdict": "partly_read",
+    "closed": "ASPa Misc. Arch. I.68 holds about 20 cipher items of Sicily's 1848-49 foreign ministry, and by the repertory's own wording 11 of them have a 'versione' or 'traduzione' attached, so the cipher is partly read by the contemporary translations, not open.",
+    "date": "2026-11-04"
+   }
   },
   {
    "id": 2210,
@@ -36760,7 +36531,12 @@
    "source": "Sweep 2026-11 B unswept south (Manus Online / Wayback copies of Italian inventories)",
    "seen": "catalogue",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "verdict": "not_cipher",
+    "closed": "BNCF Ginori Conti 29.141 cc. 1r-2r viewed online: both leaves are clear Italian chancery hand, and 'Extracto di cifra' on c. 2r is a deciphered extract, with no cipher groups on the sheet.",
+    "date": "2026-11-04"
+   }
   },
   {
    "id": 2216,
@@ -36845,45 +36621,6 @@
    "access_note": "images online without login at teca.bncf.firenze.sbn.it (BNCF Digital); not opened for the cipher lines",
    "source": "Sweep 2026-11 B unswept south (Manus Online / Wayback copies of Italian inventories)",
    "seen": "catalogue",
-   "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 2218,
-   "counted": true,
-   "region": "Central Europe",
-   "seen": "catalogue",
-   "source": "Sweep D, Lang 2015 repertory",
-   "score_note": "Scored from Lang's repertory entry (thesis p. 286) during the Nov 2026 sweep D (research/sweep_2026-11_D_east_north/); ciphertext not viewed",
-   "prior_art": "open as far as checked (4 Nov 2026: Lang 2015 repertory p. 286 marks it undeciphered; known.py on shelfmark and names, no hit; web search found no decipherment; Tomokiyo, Lasry, DECODE not searched for this item)",
-   "year": 1678,
-   "date": "11 Jan - 4 Mar 1678",
-   "title": "Mihaly Teleki to Nalaczi, Haller, Apafi, Szepesi, Szalai and Rhedey: 13 letters in number cipher before the 1678 campaign",
-   "correspondents": "Mihaly Teleki (chancellor of Transylvania) -> Istvan Nalaczi, Janos Haller, Mihaly Apafi, Pal Szepesi, Pal Szalai, Ferenc Rhedey",
-   "place": "Transylvania (Kovar)",
-   "language": "Hungarian",
-   "shelfmark": "Teleki Mihaly levelezese VIII (ed. S. Gergely, Budapest 1926) nos. 9, 10, 20, 21, 25, 30, 36, 38, 41, 43, 50, 79, 87 (pp. 9-96); copies from Teleki's chancery letter-book (Lang IDs C.Tel.04, 05, 07, 08, 11, 12, 14, 15, 16, 17, 19, 21, 22)",
-   "folio_note": "13 short letters, numbers 1-79 (about 37 distinct values), printed in the edition; Hegedus read C.Tel.15 only (23 Jan 1678)",
-   "cls": "B",
-   "status": "Lang lists all 13 as \"megfejtetlen\" (numbers, probably homophonic) and the editor did not solve them. Hegedus (NyelvVilag 23, 2020) worked through C.Tel.15 (to Rhedey, 23 Jan 1678) as a monoalphabetic number code and says the key from Teleki's 1666 letter does not fit it: a different clavis was used. The others of Jan-Mar 1678 probably share that clavis. The letter-book is probably DECODE R4819-R4834 (Cluj Reformed diocese; records with no images or decryption; not matched record by record).",
-   "why": "Transylvania's war council writing in cipher on the eve of the Thokoly/kuruc campaign into Upper Hungary (June 1678).",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 2,
-   "verify": "Obtain Teleki Mihaly levelezese VIII (Arcanum, MEK or a library copy); take the C.Tel.15 key from Hegedus (kripto.blog.hu 2016 and NyelvVilag 23) and run it over C.Tel.04-22; where it fails, solve as monoalphabetic with homophones.",
-   "links": [
-    {
-     "label": "Lang 2015, Titkosirás a kora ujkori Magyarországon (MTA doctoral thesis, repertory pp. 191-330), p. 286",
-     "href": "https://real-d.mtak.hu/922/7/dc_758_13_doktori_mu.pdf"
-    },
-    {
-     "label": "Hegedus, NyelvVilag 23 (2020), C.Tel.15 decipherment",
-     "href": "https://publikaciotar.uni-bge.hu/1711/1/Hegedus_Nyelvvilag23.pdf"
-    }
-   ],
-   "needs_archive_scan": "partly",
-   "access_note": "ciphertext printed in the Gergely edition (full text only behind Arcanum, not located free online); manuscript letter-book in Cluj (DECODE R4819-R4834 has no images)",
-   "period": "1651-1700",
    "ark": "",
    "scored": "sweep"
   },
@@ -37493,41 +37230,6 @@
     "closed": "The archive's own inventory (Hungaricana, Viennese inventory, Fasc. 12 Konv. B 45-47, 23 Aug 1529) says the letter of Gerendi, Torok, Horvath, Bethlen, Majlath and Sydonius to Ferdinand I is wholly in cipher 'with some interlinear solution' and cites a print (Schuller 1896, pp. 446-448), so it is read in part from an existing decipherment, not open; the lead's 'unknown envoy, 3 folios, graphic signs' is also wrong.",
     "date": "2026-11-04"
    }
-  },
-  {
-   "id": 2236,
-   "counted": true,
-   "region": "Central Europe",
-   "seen": "catalogue",
-   "source": "Sweep D, Lang 2015 repertory",
-   "score_note": "Scored from Lang's repertory entry (thesis p. 259) during the Nov 2026 sweep D (research/sweep_2026-11_D_east_north/); ciphertext not viewed",
-   "prior_art": "open as far as checked (4 Nov 2026: Lang 2015 repertory p. 259 marks it undeciphered; known.py on shelfmark and names, no hit; web search found no decipherment; Tomokiyo, Lasry, DECODE not searched for this item)",
-   "year": 1629,
-   "date": "27 Oct 1629",
-   "title": "Johann Ludwig Kuefstein, Constantinople, to Ferdinand III: ciphered despatch, undeciphered",
-   "correspondents": "Johann Ludwig von Kuefstein (imperial resident, Constantinople) -> Ferdinand III",
-   "place": "Constantinople",
-   "language": "German",
-   "shelfmark": "Eotvos Lorand University Library (ELTE), Budapest, Kezirattar, G. 4. Fol. Tom. V., p. 1461 (Lang C.Kuf.16)",
-   "folio_note": "nearly complete cipher, weak homophonic, graphic signs",
-   "cls": "A",
-   "status": "Lang: \"megfejtetlen\". The same volume holds 12 Kuefstein drafts of 1628-29 with plaintext written over the signs, and Donath Regina (Magyar Konyvszemle 1964, 55-62) reconstructed the key (Lang T.Kuf.01) and reproduces this despatch. Lang marks the key itself unresolved.",
-   "why": "Imperial-Ottoman diplomacy in the Thirty Years' War; sibling drafts with the plaintext supply a crib.",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 2,
-   "verify": "Obtain the ELTE digitised images of Ms G. 4 Fol. Tom. V (check whether ELTE has digitised it) and Donath 1964 (Magyar Konyvszemle, on EPA).",
-   "needs_archive_scan": "unknown",
-   "access_note": "ELTE University Library manuscript; digitisation not checked",
-   "links": [
-    {
-     "label": "Lang 2015, Titkosirás a kora ujkori Magyarországon (MTA doctoral thesis, repertory pp. 191-330), p. 259",
-     "href": "https://real-d.mtak.hu/922/7/dc_758_13_doktori_mu.pdf"
-    }
-   ],
-   "period": "1611-1650",
-   "ark": "",
-   "scored": "sweep"
   },
   {
    "id": 2237,
