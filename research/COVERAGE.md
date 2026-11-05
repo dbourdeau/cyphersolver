@@ -1,6 +1,6 @@
 # Sweep coverage: what has not been swept
 
-As of 2 Nov 2026. This is an index: each sweep's own README or `coverage.md` holds the detail, and the folder named on
+As of 4 Nov 2026 (sweeps A, B and D of that day added at the end). This is an index: each sweep's own README or `coverage.md` holds the detail, and the folder named on
 each row is the source. No archive was contacted to write this file, so a block is as the sweep recorded it, and may
 have lifted since. A sweep that closes a gap removes its row here.
 
@@ -63,6 +63,7 @@ permission (`chrome_pass_2026-11`).
 | Danish KB manuscripts, Krigsarkivet beyond the NAD notes | `scandinavia` |
 | GStA's own database, HStA Dresden | `archivportal_d` |
 | Departmental archives with their own viewers | `calames_biblissima` |
+| Boston: Massachusetts Archives (no searchable catalogue found), BU Gotlieb, UMass Boston, NEHGS, Congregational Library; MIT, Tufts, Brandeis return 403 (BPL, Athenaeum, BC, Northeastern, Digital Commonwealth done) | `boston_sweep` |
 
 ## Started and not finished
 
@@ -97,3 +98,20 @@ AGATHA's envoy series (`belgium_lux`).
   eAccess (`belgium_lux`). CEHM images, SIAN and Chile ClaveÚnica come from the 2 Nov review of the Latin American sweeps;
   check the sweep before asking. CEHM scans have since opened in Chrome with no login (`vetting_2026-10/BRIEF.md`).
 - **API key:** Trove (`oceania_naa`).
+
+## Sweeps of 4 Nov 2026 (A half-done runs, B unswept south, D east and north)
+
+Folders: `sweep_2026-11_A_halfdone`, `sweep_2026-11_B_unswept_south`, `sweep_2026-11_D_east_north`. 57 leads merged.
+
+- **Closed:** Internet Culturale full text (printed books and newspapers only, 0 archival rows); szukajwarchiwach
+  1900-50 and Radom (agrees with `polish_harvest`; the `szh` harvest is now exported to
+  `chrome_pass_2026-11/szh_export.json`); PARES bare terms "cifra" and "descifrado".
+- **New route:** PARES-HTR (`pares.cultura.gob.es/pares-htr`, ACA Cancilleria 1479-1556) is a plaintext index of "En cifra"
+  registers, not a source of new ciphertexts. ICCU Manus Online API and the Wayback Machine work for Italian inventories.
+- **Still never swept:** Dubrovnik (no item-level catalogue online; ask the State Archives about "sifra" bundles), Malta
+  (vHMML Turnstile), ARSI and Propaganda Fide (only the printed MHSI volumes), Turin diplomatic inventories ("Lettere
+  ministri"), Czech lands, Slovakia, Russia, Belarus. About 6,000 Manus "cifre" records unscreened.
+- **Blocked:** Finna (Cloudflare), BOA (login with CAPTCHA), hrcak.srce.hr, Harvard hosts (403), Abhilekh Patal (403 on the
+  user's network on 4 Nov; its 18 image leads stay unvetted).
+- **Not done:** Riksarkivet: six contact sheets built and not viewed, 40 volumes with no manifest. ACA reg. 3225 (1435)
+  not reached.

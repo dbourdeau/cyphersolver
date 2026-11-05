@@ -64198,6 +64198,611 @@
     "verdict": "open"
    },
    "access": "online"
+  },
+  {
+   "id": 1272,
+   "counted": true,
+   "seen": "image",
+   "source": "BNE/Hispana sweep",
+   "prior_art": "open (checked 28 Oct 2026: repo known.py, Europeana BNE record, web search for cryptiana; no decipherment found; BDH viewer not reachable by script, not viewed)",
+   "score_note": "Scored from the BNE catalogue description (via the Europeana record API) during the Oct 2026 BNE/Hispana sweep (research/bne_hispana/); not viewed",
+   "decode_ids": [],
+   "year": 1688,
+   "date": "1679-1697",
+   "title": "Letters to Diego José Dormer (vol. VI), some by 'El Milanés' under pseudonyms, some in cipher",
+   "correspondents": "Juan Pantoja, Miguel de Rival, Count of Guaras, 'El Milanés' and others → Diego José Dormer",
+   "place": "Spain",
+   "language": "Spanish",
+   "region": "Spain",
+   "period": "1651-1700",
+   "shelfmark": "Madrid, Biblioteca Nacional de España, Cartas políticas y particulares dirigidas a Diego José Dormer, Tomo VI; BDH bdh0000064262",
+   "folio_note": "'algunas cifradas'",
+   "cls": "C",
+   "status": "BNE catalogue: some letters ciphered. No decipherment noted. Not on DECODE.",
+   "why": "An Aragonese chronicler's correspondents under Charles II; ciphers in private correspondence.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 3,
+   "verify": "View volume VI; check the other Dormer volumes on BDH for more cipher.",
+   "links": [
+    {
+     "label": "BDH viewer",
+     "href": "http://bdh-rd.bne.es/viewer.vm?id=0000064262&page=1"
+    },
+    {
+     "label": "Europeana record",
+     "href": "https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000064262"
+    }
+   ],
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "access_note": "online (backfilled 28 Oct 2026 from the entry: link BDH viewer (http://bdh-rd.bne.es/viewer.vm?id=0000064262&page=1))",
+   "vetting_note": "BNE Digital blocked on 3 Nov 2026 in Chrome: no checkbox showed; the Crolope card loaded, then the viewer returned 'SE HA BLOQUEADO EL ACCESO POR PARTE DE LOS SISTEMAS DE SEGURIDAD' (Cloudflare 1000-series). Stopped on the host, nothing clicked through, no retry. Not opened this pass: BDH 0000064262, Dormer tomo VI; cipher locations in the volume unknown.",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "Claude Sonnet 5.5 vetting agent",
+    "seen": {
+     "kind": "scan",
+     "where": "BNE Digital viewer for MSS/8387 (card https://bnedigital.bne.es/bd/card?oid=0000064262&site=bdh; the volume is served as two PDF-style halves, ff. 1-128 in 134 openings and ff. 129-259 in 135 openings), opened in Chrome on 4 Nov 2026 without any check page. Second half openings 1-2 viewed and zoomed; first half sampled at 128-px thumbnails for openings 1-30 and at viewer size for openings 30-38, 42, then every third opening from 45 to 123.",
+     "extent": "Second half, openings 1-2 = ff. 129r-130r: one letter from a correspondent signing 'El Conde ... Rojo' (reading uncertain) to 'Sr. Diego Josef Dormer', dateline 'Marzo 6 de 169?' (last digit uncertain). On f.129r about 6 lines of clear text are followed by runs of dotted numbers (e.g. '8.15.14.8.19.21.11.15' and a run of about 14 numbers) and more such runs on f.129v. In all about 5-8 runs of 8-14 numbers inside the clear lines; clear text on f.130r. Every sampled opening of the first half (about 30 openings) showed plain cursive letters at viewer size, but cipher in them could be missed at the sampling scale. Where the other ciphered letters named in the BNE summary ('varias cartas firmadas por El Milanes y otros seudonimos, algunas cifradas') are was not found.",
+     "cipher": "Numbers separated by full stops used for single words or names inside a clear letter (a numeral nomenclator or syllabary); no interlinear plaintext, marginal gloss or key table on ff. 129-130. Nothing else in the volume was seen with a decipherment. BNE card: 259 h., 'La mayoria de las h. solo escrito el recto'."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE: known.py 'Dormer', 'MSS/8387', 'Pantoja', 'Guaras', 'Milanes' found only this lead and the bne_hispana and chrome_pass sweep rows; no DECODE record and no Cryptoole row for MSS/8387.",
+     "tomokiyo": "Tomokiyo spanish2, spanish2C, spanish3 and unsolved pages fetched 4 Nov 2026 and searched for Dormer, Olivares, MSS/8387: nothing. A web search on Dormer, 'El Milanes' and cipher returned only BNE MSS/994 (Valle de la Zerda, Philip II era), which is unrelated.",
+     "lasry": "No Lasry or HistoCrypt item on Aragonese 1680-90s private correspondence found in the same web searches.",
+     "edition": "No edition of the Dormer letters found (web search 4 Nov 2026); the BNE catalogue card gives only the summary and the notes 'Firmas autografas' and a damaged f.23.",
+     "literature": "Spanish web searches (Dormer cartas cifradas, El Milanes, Pantoja, Rival, Guaras) found no study of this volume or its ciphers."
+    },
+    "key_check": "No key for a 1690s Aragonese correspondence is held in the repo or known in print; none tried. Because the numerals sit inside clear sentences the clear context offers cribs for a nomenclator rebuild, not a ready key.",
+    "duplicates": "known.py 'Dormer', 'MSS/8387', 'Milanes', 'Pantoja', 'Guaras': only lead 1272 and its bne_hispana row; no other entry covers a Dormer letter. The other Dormer volumes on BDH named in the lead's verify note are not leads here.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1321,
+   "counted": true,
+   "year": 1466,
+   "date": "6 Jun 1466",
+   "title": "Giovanni Bianco → the Duke of Milan, cipher letter from Lyon",
+   "correspondents": "Giovanni Bianco → Galeazzo Maria Sforza",
+   "place": "Lyon",
+   "language": "Italian",
+   "region": "Italy",
+   "period": "15th century",
+   "shelfmark": "BnF italien 1591, f. 348",
+   "folio_note": "one letter",
+   "cls": "B",
+   "status": "Mazzatinti 'In cifre'; no decipherment noted.",
+   "why": "Milanese reporting from France after the War of the Public Weal.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 3,
+   "score_note": "Scored from Mazzatinti, Inventario dei mss. italiani II (1887) pp. 285-509, during the Oct 2026 venice_milan_print sweep (research/venice_milan_print/, sforza_list.txt)",
+   "verify": "Check Mandrot, Dépêches des ambassadeurs milanais IV (1923); test the Panigarola/Maletta keys (ital. 1593 'Traduzioni').",
+   "links": [
+    {
+     "label": "Gallica ital. 1591 (microfilm)",
+     "href": "https://gallica.bnf.fr/ark:/12148/btv1b100373919"
+    },
+    {
+     "label": "Mazzatinti 1887 inventory",
+     "href": "https://archive.org/details/InventarioDeiManoscrittiItalianiT2"
+    }
+   ],
+   "seen": "image",
+   "source": "BnF italien (Archivio Sforzesco) via Mazzatinti 1887",
+   "prior_art": "open as far as checked (28 Oct 2026: cryptiana unsolved.htm mentions only ital. 1584 f. 68/69 and key DECODE R1857; DECODE has only ital. 1583 ff. 68-158, R7898-R7915; known.py no hit for ital. 1584-1591). Many leaves carry interlinear or filed contemporary decipherments that Mazzatinti does not always note (seen: 1584 f. 15 followed by an unlisted clear f. 16 of the same date; a cipher block on canvas 235 has interlinear glosses), so 'read at the time' must be ruled out leaf by leaf. Not checked: Mandrot IV.",
+   "needs_archive_scan": "no",
+   "access_note": "Gallica, BnF italien 1584-1594 digitised (IIIF via openapi.bnf.fr; Gallica blocks scripts)",
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "vetting_note": "Cipher seen 3 Nov 2026 on Gallica italien 1591 (btv1b100373919, image index 358-359 = f.348-349): Bianco's letter from Lyon 6 June 1466, clear text then about 14 lines of cipher on f.348 and about 9 more on f.349 before the signature, no gloss. Unvetted because the covering editions cannot be opened: Mandrot, Depeches des ambassadeurs milanais IV (1923; not on archive.org) and Kendall-Ilardi, Dispatches vol. III (1981, borrow-only, 401 on full text). A printed decipherment cannot be excluded.",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "Claude Sonnet 5.5 vetting agent",
+    "seen": {
+     "kind": "scan",
+     "where": "Gallica BnF italien 1591 (https://gallica.bnf.fr/ark:/12148/btv1b100373919), images 358 and 359 fetched at 1400 px from https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b100373919/f358/full/1400,/0/default.jpg and f359, plus f357, f360 and f361 at 700-1400 px, viewed 4 Nov 2026. Microfilm (black and white) copy.",
+     "extent": "Image 358 right page = f.348 (top-right '348', head '1466, 6 jun'): about 16 lines of clear Italian news, then about 13 lines of cipher at the foot. Image 359 left page (continuation of the same sheet): 3 lines of clear text, about 9 lines of cipher, then 3 clear lines, the dateline 'Ex Lugduno die vj Junii 1466' and the signature 'Johannes Blanchus' (reading of the second word uncertain), with the address 'Illmo principi ... domino Galeaz Maria Sforcia vicecomiti duci Mediolani' on the folded verso. About 22 lines of cipher in all.",
+     "cipher": "Continuous strings of a few stroked shapes (m, n, c, e, a-like forms with bars, dots and a crossed variant), no word division, set in the middle of the clear letter. No interlinear or marginal plaintext on either leaf; neighbouring leaves are other letters (f.347 a copy of a Venetian letter of 6 June, f.349 a clear letter of Firmo de Landriano of 11 June, f.360 another letter), so no separate decipherment is filed beside it."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE: known.py 'Bianco', 'italien 1591', 'ital. 1591', 'Lyon 1466' finds only this lead and the venice_milan_print sweep row; the lead's note records that DECODE has only italien 1583 ff. 68-158 (R7898-R7915) and the key R1857 for this archive.",
+     "tomokiyo": "The lead's check of cryptiana unsolved.htm (28 Oct) and my fetch of unsolved.htm and the Spanish pages on 4 Nov 2026 found no Bianco or italien 1591 f.348 entry; Tomokiyo mentions only italien 1584 ff. 68/69.",
+     "lasry": "Web searches (Milanese ciphers 1466, BnF italien 1584-1591) found only Simonetta's rules, Tranchedino's codex and general Milanese cipher background; nothing on this letter, no GL.htm entry.",
+     "edition": "The letter falls in Ilardi (ed.), Dispatches with Related Documents of Milanese Ambassadors in France, vol. III, 11 March-29 June 1466 (De Kalb 1981), and in Mandrot and Samaran, Depeches des ambassadeurs milanais IV, 1465-66 (Paris 1923). Neither could be opened: Ilardi III is Google Books xBxJYAAACAAJ 'view_no_pages' and not on archive.org (only the 1971 vol. II is); Mandrot is on archive.org only for T.1-T.3, and HathiTrust lists T.1 as search-only. Whether either prints a decipherment is unknown, the one residual gap.",
+     "literature": "Italian, French and English web searches (Giovanni Bianco Lione 1466 lettera in cifra; Kendall-Ilardi vol. 3) found no study of this letter or its cipher."
+    },
+    "key_check": "Milanese keys of 1463-66 named in research/venice_milan_print (italien 1591 ff. 131-133 'Spiegazioni delle cifre' of 1465, italien 1593 'Traduzioni') were not tried on this letter's stroked-symbol alphabet; no key is held that is known to fit.",
+    "key_in_volume": "italien 1591 ff. 131-133 hold explanations of the cipher of the 1465 'cum quodam amico' letters, a different series; not tested on f.348.",
+    "duplicates": "known.py 'Bianco', 'italien 1591', 'ital. 1591', 'Lyon 1466': only lead 1321 and its research/venice_milan_print candidates row; no catalogue entry or other lead covers this letter or f.348.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1392,
+   "counted": true,
+   "year": 1759,
+   "date": "6 Nov 1759",
+   "title": "Trémais → the minister, cipher letter, Montréal",
+   "correspondents": "Charles-François Pichot de Querdisien Trémais (commissaire sent to audit Bigot) → minister of the Marine",
+   "place": "Montréal",
+   "language": "French",
+   "region": "Americas",
+   "period": "1701-1800",
+   "shelfmark": "ANOM, COL C11A 104, ff.346-347v (CABAC_PIAF_60950)",
+   "folio_note": "3 images",
+   "cls": "B",
+   "status": "Title only (\"Lettre chiffrée ... au ministre\"), no content summary, unlike the deciphered despatches around it: the ANOM/LAC describers apparently could not read it. Not on DECODE, not in repo. Trémais was sent in 1758 to investigate the Bigot frauds; his cipher may differ from Vaudreuil's.",
+   "why": "Secret report of the investigator behind the \"Affaire du Canada\" (Bigot trial), just after the fall of Quebec.",
+   "importance": 4,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scored from the archive description during the Oct 2026 LAC / Canadian manuscripts sweep (research/canada_lac/); not viewed (LAC image server central.bac-lac.gc.ca returned 503 to scripts)",
+   "verify": "View images on nouvelle-france.org (LAC image server; retry or use a browser); check the LAC C11A transcript reels on heritage.canadiana.ca (\"Archives des Colonies: Série C 11 A (transcrits)\", reels C-2380 ff.) for a deciphered copy; then test the C11E 10 key.",
+   "links": [
+    {
+     "label": "New France Archives record (images)",
+     "href": "https://nouvelle-france.org/eng/item/details?id=27542"
+    }
+   ],
+   "seen": "image",
+   "source": "New France Archives (nouvelle-france.org, LAC/ANOM) sweep",
+   "prior_art": "open (checked 28 Oct 2026: known.py, web search for Vaudreuil/Beauharnois/New France ciphers; no published decipherment found)",
+   "needs_archive_scan": "no",
+   "access_note": "images on nouvelle-france.org from the LAC image server (answered 503 on 28 Oct 2026; retry)",
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "vetting_note": "needs Antoine Roy, 'Dossier ... Tremais', ANQ Rapport 1959-60 pp. 3-22: collections.banq.qc.ca sends Chrome to its security page 'Technical problem' (indispo.banq.qc.ca) and no archive.org copy was found. Numeric groups seen earlier on the leaf; this edition may print the deciphered letter. The C11A transcript reels on Canadiana are also unchecked.",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "Claude Sonnet 5.5 vetting agent",
+    "seen": {
+     "kind": "scan",
+     "where": "https://nouvelle-france.org/eng/item/details?id=27542 (New France Archives viewer, LAC images of ANOM COL C11A 104 fol. 346-347v, CABAC_PIAF_60950), opened in Chrome 4 Nov 2026; all 3 images viewed and zoomed; no bot check appeared.",
+     "extent": "3 images: f.346 recto (page 1 of the letter), the open spread f.346v-347 (two full pages of numbers), and f.347v with the closing lines and the 1759 'Canada, M. Bernier, commissaire a Montreal' docket leaf (f.348). About 110 lines of cipher in all; dated 'A Montreal le 6 9bre 1759', signed Querdisien Tremais.",
+     "cipher": "French nomenclator or code: lines of comma-separated 2- and 3-digit numbers (range seen about 12 to 700, e.g. '440, 261, 219, 227, 108, 177, 231') running through whole paragraphs, with clear French words standing among the groups ('Lorsque j'ay lieu de compter que vous aurez recu la lettre...', 'Monseigneur', 'Je suis avec un profond respect', a postscript 'P.S. Vous avez, Monseigneur, regle mon appointement...'). Three-line clear note at the head giving routes of dispatch. A short clear marginal note (a few lines, too small to read at the zoom used) sits beside the numbers on f.346. No decipherment, interlinear gloss or clerk's expansion is written on any of the three images, and no deciphered copy is bound with them."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE: known.py on 'Tremais', 'Querdisien' and 'C11A 104' finds only leads.json, research/canada_lac and the catalogue's Vaudreuil C11A 104 entries; the harvested DECODE dump has no Trémais record.",
+     "tomokiyo": "Search of Tomokiyo's cryptiana pages for New France ciphers (also done for catalogue 1388-1391) found nothing on Vaudreuil, Montcalm, Bigot or Trémais; not listed on cryptiana.web.fc2.com as far as the searches show.",
+     "lasry": "No Lasry or HistoCrypt item on New France or Trémais found in 4 Nov 2026 searches (HistoCrypt papers returned were on other French ciphers).",
+     "edition": "Not found in NY Colonial Documents vol. 10 (archive.org documentsrelativ10brod djvu text grepped for Tremais, Tremais, Querdisien: no hit). Antoine Roy, 'Dossier Charles-Francois Pichot de Querdisien Tremais', ANQ Rapport 1959-60 pp. 3-22 (cited in the Dictionary of Canadian Biography entry) was not opened (collections.banq.qc.ca blocked, no archive.org copy): it may print the letter deciphered, so a reading in print is not excluded.",
+     "literature": "Dictionary of Canadian Biography entry on Pichot de Querdisien Tremais (biographi.ca, read 4 Nov 2026) says he 'received a code to use for correspondence' and cites AN Col. B 109, 110, 113, 115 and C11A 104, but no decipherment; web searches in French and English for a deciphered 6 Nov 1759 letter found nothing."
+    },
+    "key_check": "No key tried. DCB says the ministry gave Tremais a code (instructions in AN Col. B 109-115 not seen). The only New France table known is the 1757-58 Montcalm/Vaudreuil chiffre, ANOM COL C11E 10 ff.285-290v (nouvelle-france.org id 15213), a code table with numbers to about 700, the same range as these groups; it is not transcribed and was not tried on this letter.",
+    "key_held": "None held for this letter; the C11E 10 Montcalm/Vaudreuil table (see key_check) is the nearest candidate and is untested.",
+    "duplicates": "known.py 'Tremais', 'Querdisien', 'C11A 104' on 4 Nov 2026: only lead 1392 and sibling Vaudreuil C11A 104 entries in the catalogue (1388 ff.54-66 and neighbours; different writer, date and folios); no DECODE or repo record for Tremais.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1599,
+   "counted": true,
+   "year": 1680,
+   "date": "14 Apr 1680",
+   "title": "Emperor Leopold I → Charles II of Spain: autograph cipher letter from Prague",
+   "correspondents": "Leopold I → Charles II of Spain",
+   "place": "Prague",
+   "language": "Spanish or Italian",
+   "region": "Central Europe",
+   "period": "1651-1700",
+   "shelfmark": "BNE, RES/261/58",
+   "folio_note": "[I, 3] leaves",
+   "cls": "C",
+   "status": "BNE title: 'Carta cifrada del Emperador Leopoldo I a Carlos II de España'; autograph, wax seal. No decipherment noted on the card. Not on DECODE. Not viewed.",
+   "why": "A ruler's own cipher letter inside the Habsburg family, after Nijmegen.",
+   "importance": 5,
+   "solvability": 4,
+   "difficulty": 3,
+   "score_note": "Scored from the archive description during the Nov 2026 Chrome pass (research/chrome_pass_2026-11/); not viewed",
+   "verify": "View the scans; measure the cipher; look for a decipherment or key in the same fonds.",
+   "links": [
+    {
+     "label": "BNE card",
+     "href": "https://bnedigital.bne.es/bd/es/card?id=29736cc9-91f0-4f84-b38e-93bb5f93f932"
+    }
+   ],
+   "seen": "image",
+   "source": "Chrome pass, BNE Digital",
+   "prior_art": "open as far as checked (2 Nov 2026: known.py, Cryptoole snapshot; one web search; Tomokiyo, Lasry, edition not searched); SNAC mirrors the BNE title",
+   "needs_archive_scan": "no",
+   "access_note": "BNE Digital viewer, free; CC BY 4.0",
+   "ark": "",
+   "scored": "vetted",
+   "vetting_note": "BNE Digital Cloudflare checkbox in Chrome, not clicked: https://bnedigital.bne.es/bd/es/card?id=29736cc9-91f0-4f84-b38e-93bb5f93f932 . Leaf not seen, 'Carta cifrada' known from the title only. Web search shows the SNAC record (resources/7511688: Prague, 14 Apr 1680, 2 leaves, 31 x 20 cm) with a Huntington note that looks carried over; second exemplar unverified; no decipherment found.",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "Claude Sonnet 5.5 vetting agent",
+    "seen": {
+     "kind": "scan",
+     "where": "BNE Digital viewer for BNE RES/261/58, https://bnedigital.bne.es/bd/es/viewer?id=29736cc9-91f0-4f84-b38e-93bb5f93f932 (10 pages, CC BY 4.0), opened in Chrome 4 Nov 2026; pages 1-2 cover/blank, 5 the letter, 6 its verso, 7-8 seal and address panels, 9-10 blank.",
+     "extent": "One folio (page 5): a clear opening line ('Ser.mo Rey Carlos(?) ... He recibido la carta de V. Magd. de 8 de febrero y holgado de veer en ella') then about 21 lines of numbers, roughly 11 per line (about 240 groups by eye, not measured; 2- and 3-digit values up to 224, many struck through), ending in a clear closing ('Guarde Dios a V. Magd. como deseo. Praga 14 de Abril 1680. Buen tio y hermano de V. Mag. [signature]'). Page 6 is the verso showing through.",
+     "cipher": "Numeric cipher (values about 12-224, some groups such as 224 and 62 39 recurring, underlined or struck through in the usual way) set between a clear opening and a clear closing. No interlinear decipherment, no margin gloss, no key sheet and no claro on any of the 10 pages; only library marks (RES/261/58, 18632)."
+    },
+    "prior_art": {
+     "decode": "known.py (harvested DECODE dump, Cryptoole snapshot, repo ledgers) on RES/261, Leopoldo I, Leopold I: only this lead and unrelated Habsburg entries (Leopold I to Pötting, Mayerberg); no DECODE record.",
+     "tomokiyo": "Fetched 4 Nov 2026 and grepped habsburg.htm: 'Emperor Leopold I personally used cipher (Auer p.158)', Marchese di Grana (1664, 1668) and a general imperial cipher c.1680-90 in graphic symbols are described; no decipherment of this letter and no key for Leopold-Charles II correspondence. Not on unsolved.htm.",
+     "lasry": "No Lasry or HistoCrypt item on Leopold I's letters to Spain found (web search 4 Nov 2026 returned Ernst's 2017 Ferdinand III decipherment and Klaus Schmeh's posts only).",
+     "edition": "No edition of Leopold I's letters to Charles II found: web searches in Spanish and English return only the SNAC mirror of the BNE title (Prague, 14 Apr 1680, 2 leaves, 31 x 20 cm); Pribram and Landwehr's printed Leopold I to Pötting letters (1662-73) are a different series; a Huntington Library record surfaced in search but returned HTTP 429 and was not opened.",
+     "literature": "Three web searches (Spanish, English, Habsburg cipher with Auer): Auer on Habsburg cryptology, Ernst's Zifra Piccolominea for Ferdinand III; nothing on this 1680 letter or on a Leopold-Charles II cipher."
+    },
+    "key_check": "No key held. Candidate families, none tested: the Reichskanzlei numeric ciphers described by Auer and Tomokiyo (Grana 1664 and 1668, shared with Leopold's Pötting letters, printed by Pribram and Landwehr with ciphers resolved) and the Spanish court's general cipher of the 1680s (Devos); no table was available online to test.",
+    "duplicates": "known.py on RES/261, Leopoldo I, Leopold I finds no catalogue entry or target for this letter; RES/261/73 (lead 1600) is a different letter in the same BNE series. The Huntington record seen in search was not opened, so a second exemplar is not excluded.",
+    "verdict": "open",
+    "searches": [
+     {
+      "query": "Leopoldo I emperador carta cifrada Carlos II Praga 14 abril 1680 cifra BNE RES/261/58",
+      "result": "Only the SNAC bibliographic record (Prague, 14 Apr 1680, 2 leaves); no signature confirmation, no decipherment, no key."
+     },
+     {
+      "query": "Emperor Leopold I autograph cipher letter to Charles II of Spain 1680 Prague numeric cipher decipherment Habsburg cipher Auer",
+      "result": "Ernst 2017 on Ferdinand III's letters, Schmeh blog posts, a Huntington record (429, not opened); nothing on the 1680 letter."
+     },
+     {
+      "query": "cryptiana habsburg.htm Leopold I cipher Grana Potting (fetched and grepped locally)",
+      "result": "Leopold I used cipher personally (Auer p.158); Grana ciphers of 1664/1668; no decipherment of any Leopold I letter to Charles II."
+     }
+    ]
+   }
+  },
+  {
+   "id": 2161,
+   "counted": true,
+   "year": 1549,
+   "date": "3 Apr 1549",
+   "title": "Diego Hurtado de Mendoza (imperial ambassador in Rome) → Ferrante Gonzaga, letter with enclosures partly in cipher",
+   "correspondents": "Diego Hurtado de Mendoza → Ferrante Gonzaga",
+   "place": "Rome (presumed)",
+   "language": "Spanish",
+   "region": "Spain",
+   "period": "1497-1559",
+   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera H, Hurtado de Mendoza, Diego, sfasc. I, cc. 40-46",
+   "folio_note": "14 canvases; enclosures cc. 42-44 with lines of symbol cipher and a list of names (possibly a partial key or a clear summary).",
+   "cls": "B",
+   "status": "Record: 'Le cc. 42-44 contengono allegati alla lettera, alcuni cifrati.' Hurtado de Mendoza appears in Dan's repo for other archives, not for this item. The other ~95 Hurtado de Mendoza records here were checked: none mentions cipher. Manifest uuid(s): e02077fa-33a9-4749-b581-f88f2d45e9be. Compare with the Hurtado de Mendoza key of open PR #216 (mendoza1548), same sender a year earlier; not tested.",
+   "why": "Charles V's ambassador in Rome writing to the governor of Milan during the Parma-Piacenza crisis of 1549.",
+   "importance": 4,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "Read the list on c. 43 at full size: if it pairs names with signs, it is a key.",
+   "links": [
+    {
+     "label": "Hurtado de Mendoza 3 Apr 1549 record",
+     "href": "https://lodovico.medialibrary.it/media/schedadl.aspx?id=e02077fa-33a9-4749-b581-f88f2d45e9be"
+    },
+    {
+     "label": "Hurtado de Mendoza 3 Apr 1549 IIIF manifest",
+     "href": "https://edl-jarvis.cultura.gov.it/meta/iiif/e02077fa-33a9-4749-b581-f88f2d45e9be/manifest"
+    }
+   ],
+   "source": "Biblioteca Estense (Lodovico) sweep",
+   "score_note": "Scored from the Lodovico record and a low-resolution look at the scans during the Nov 2026 Estense sweep (research/wainut_leads_2026-11-03/)",
+   "prior_art": "open as far as checked (checked 3 Nov 2026: Dan's catalogue, leads and Dudout's Estense list by uuid and shelfmark; sender names grepped in origin/main)",
+   "needs_archive_scan": "no",
+   "access_note": "IIIF scans online on Lodovico / Estense Digital Library, CC BY-NC-SA, no login",
+   "seen": "image",
+   "ark": "",
+   "scored": "vetted",
+   "vetting_note": "Editions still not opened in full. Varo Zafra, Cartas (Granada 2016): no online copy, and no Google Books volume found for it (only its 16-page sample was read earlier). Vazquez and Rose, Algunas cartas 1538-1552 (Yale 1935): HathiTrust catalog and babel both stop at a Cloudflare check, not clicked; Google Books FM0PAQAAMAAJ (1973 reprint) is snippet-only and its zero counts are unreliable, since 'Gonzaga' gives 0 hits while its 'Ferrante' hits print 'Ferrante de Gonzaga'. Losi 1998 (Google shNpAAAAMAAJ) is snippet-only too. Need Varo Zafra's Roma y Siena section, or Algunas cartas in full text.",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "Claude Sonnet 5.5 vetting agent",
+    "seen": {
+     "kind": "scan",
+     "where": "Estense Digital Library IIIF manifest https://edl-jarvis.cultura.gov.it/meta/iiif/e02077fa-33a9-4749-b581-f88f2d45e9be/manifest (record https://lodovico.medialibrary.it/media/schedadl.aspx?id=e02077fa-33a9-4749-b581-f88f2d45e9be); all 14 canvases (cc. 40r-46v) fetched at 1400 px by curl 4 Nov 2026 and viewed; the server refuses larger sizes.",
+     "extent": "14 canvases. cc.40r-42r letter in clear Spanish, 'Illmo y Exmo Sr', about 100 lines over four pages, signed by Mendoza, closing 'en Sena ... de abril 1549'; c.43r-43v a loose slip with a clear list of heads of business (about 18 lines), photographed lying over the cipher sheet; c.44r one page of about 20 lines wholly in cipher (c.44v shows only the bleed-through of it); c.45v address 'Al Illmo y Exmo Sr Don Fernando Gonzaga' with the note 'Don Diego de Mendoza, de abril'; cc.46r-46v a second leaf in clear Spanish with 3 cipher lines in the sentence on c.46v.",
+     "cipher": "Syllabic or nomenclator signs with word spaces and points (curved and barred letter-like signs, e.g. a ꝓ-like and ∂-like family) filling c.44r from top to bottom, and three lines on c.46v after 'Al capitan Tapia en Massa, la qual ...'. The slip on c.43r is clear Spanish, not cipher: a list of heads ('del sacar de la gente', 'de los 4000 ducados del donativo', 'de los de Rauena', 'Mendoca en Orbitello y Porto Ercole', 'Tapia en Massa') that reads as an agenda or summary and gives no signs. On c.46v a clear marginal note of about six lines ('por fas o nefas se tenga ... el tiempo se resolvera ... el Trivulcio ... el Rey y a los hijos') stands beside the 3 cipher lines; I could not tell whether it paraphrases them or is part of the letter, and it is not an interlinear decipherment. No decipherment is written between the lines of c.44r, which is the main cipher, and no clear copy of it is bound with it. Note: the closing says Siena, not Rome (Mendoza was governor of Siena)."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE: known.py on 'e02077fa', 'Campori' and 'Hurtado de Mendoza' finds only leads and catalogue rows (the other Campori Gonzaga entries, 1554-1556 and neighbours) and Mendoza leads from the BNE series; the harvested DECODE dump has no Estense record for this letter.",
+     "tomokiyo": "Tomokiyo's spanish2.htm lists Mendoza-to-Granvelle 1548 (BDH 172694) under the Imperial Cipher of 1544-1554; no Tomokiyo page on Mendoza to Ferrante Gonzaga or on the Estense Campori letters was found in 4 Nov 2026 searches.",
+     "lasry": "No Lasry or HistoCrypt work on the Estense Campori letters or on Mendoza to Ferrante Gonzaga found (web search 4 Nov 2026); the repo holds Lasry material only on other targets.",
+     "edition": "Not found in print: Varo Zafra, Cartas (Granada 2016), Vazquez and Rose, Algunas cartas de don Diego Hurtado de Mendoza (Yale 1935), Losi 1998 and Bertomeu Masia 2009 were not opened for this letter (no online full text; HathiTrust stops at a bot check, not clicked), so whether this letter is printed with the cipher expanded is unknown. Bertomeu Masia 2009 prints the Mendoza letter of 1548 deciphered (see targets/mendoza1548).",
+     "literature": "Bucure, 'Napoles 1547: cartas cifradas y secretos de Estado', Estudios Romanicos 34 (2025), found by web search; per targets/mendoza1548 it gives the cipher system and cites Bertomeu Masia 2009 pp.152-153 for its use between Granvelle, Mendoza and Ferrante Gonzaga. No study reading this letter of 3 April 1549 turned up."
+    },
+    "key_check": "Not tried here. The same Spanish chancery syllabary (Bucure's 'cifra de Napoles 1547') is rebuilt in targets/mendoza1548 (key values for 99% of the signs) and used in targets/ferrante1549 for other Campori letters to and from Ferrante Gonzaga; whether the signs on c.44r are drawn from that system was judged by eye only (similar letter-like families), not tested.",
+    "key_held": "targets/mendoza1548 key (decryption/d1_decode.txt) and the Ferrante 1549 key in targets/ferrante1549: held, not tested on this letter. Neither blocks the lead: no decipherment of c.44r is on record.",
+    "duplicates": "known.py 'e02077fa', 'Campori', 'Hurtado de Mendoza', 'Gonzaga, Ferrante' on 4 Nov 2026: no other record of this uuid or of Mendoza cc.40-46; the nearby targets/ferrante1549 covers Charles V and Philip letters to Ferrante, not this Mendoza letter; catalogue 1554-1556 are other Campori items.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 2184,
+   "counted": true,
+   "year": 1633,
+   "date": "13 Aug 1633",
+   "title": "Letter to an ecclesiastical elector (?), Osnabrück 13 Aug 1633, written in cipher",
+   "correspondents": "unknown → an ecclesiastical elector (?)",
+   "place": "Osnabrück",
+   "language": "unknown",
+   "region": "Germany",
+   "period": "1611-1650",
+   "shelfmark": "Munich, Bayerische Staatsbibliothek, Clm 10415 (Collectio Camerariana vol. 65), n. 58",
+   "folio_note": "n. 58 = MDZ bsb00116463 scan 329, fol. 161; verso scan 330 blank. Halm p. 164 has running head Cam. 65; the next piece, n. 59 Ferdinand II on scan 331, confirms the volume.",
+   "cls": "C",
+   "status": "Halm, Verzeichniss der handschriftlichen Sammlung der Camerarii (1874), p. 164: \"Brief an einen geistlichen Churfürsten (?) in Chiffern geschrieben, Osnabrugi 13 Aug. 1633\". Whole letter in cipher; no decipherment noted. Osnabrück was under Swedish siege in Aug 1633 (taken in September). Not on DECODE (repo dumps have no BSB Clm 103xx). Image: https://www.digitale-sammlungen.de/en/view/bsb00116464?page=1 (IIIF https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00116464/manifest).",
+   "why": "Catholic correspondence from besieged Osnabrück, probably intercepted; same year and side as n. 206 in Clm 10406, perhaps the same cipher.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scored from Halm's catalogue entry during the Nov 2026 bavarikon/BSB sweep (research/wainut_leads_2026-11-03/); the volume's scans are confirmed online (MDZ, from microfilm, legible), the cipher leaves not yet located in them",
+   "verify": "Page through https://www.digitale-sammlungen.de/en/view/bsb00116464?page=1 to find piece n. 58 (pieces carry Halm's numbers); check whether a decipherment is written over or beside the cipher.",
+   "links": [
+    {
+     "label": "MDZ scans Clm 10416",
+     "href": "https://www.digitale-sammlungen.de/en/view/bsb00116464?page=1"
+    },
+    {
+     "label": "Halm 1874 catalogue entry",
+     "href": "https://www.digitale-sammlungen.de/en/view/bsb11184610?page=174"
+    }
+   ],
+   "seen": "image",
+   "source": "bavarikon / BSB digital collections sweep",
+   "prior_art": "open (checked 3 Nov 2026: quick web search on Camerarius + cipher/Chiffre/Solms found no decipherment; DECODE dumps in the repo have no BSB Clm 103xx item; repo grep 'Camerari' on origin/main, 3 Nov 2026: Riksarkivet R4284 and catalogue 207/1614 (Oxenstierna E 701/E 708, letters to 'Camerarius?'), no BSB item)",
+   "needs_archive_scan": "no",
+   "access_note": "Whole volume digitised from microfilm on digitale-sammlungen.de (MDZ), free, IIIF; no login",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "Claude Sonnet 5.5 vetting agent",
+    "seen": {
+     "kind": "scan",
+     "where": "MDZ IIIF https://api.digitale-sammlungen.de/iiif/image/v2/bsb00116463_00329/full/1400,/0/default.jpg (manifest https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00116463/manifest, 990 canvases) and scan 330 at 700 px, downloaded and viewed 4 Nov 2026. Microfilm (black and white) scan of Clm 10415 (Collectio Camerariana vol. 65), fol. 161, old piece number '58' in the margin.",
+     "extent": "One page: a ruled frame of about 28 lines of cipher (counted by eye from the 1400 px image, not by machine), about 4-5 groups per line; scan 330 (verso) is blank.",
+     "cipher": "Framed block of word-divided groups of digits mixed with letter and sign characters (e.g. '2047oEi', '203y205bo', '250100', 'Sarbo', 'bo4304'), one line struck through; above it the clear salutation 'Rme Illme Princeps ac Domine Dne Clementissime', below it the clear dateline '... Raptissime Osnabrugi 1633 13 Aug.' (the reading of the first word of the dateline is uncertain), the clear closing 'Rmae et Illmae Celsitudinis Vrae ... Humillimus et obedientissimus Servus' and a signature that looks like 'C. L.' with a flourish. No plaintext, interlinear gloss or marginal decipherment is written on the frame or the page; the page has only faint show-through, which is not a gloss. No key table on the leaf."
+    },
+    "prior_art": {
+     "decode": "known.py 'Clm 10415', 'Clm 10416', 'Camerariana', 'Osnabr': only this lead, its sweep row, sibling Camerariana leads and unrelated Osnabrück entries (catalogue 601 Wartenberg 1632 at Osnabrück Rep 100 Abschnitt 1 Nr. 43, catalogue 1639 Magdeburg envoys); no DECODE record for any BSB Clm 103xx item.",
+     "tomokiyo": "known.py found no Camerariana or Osnabrück-1633 row from cryptiana; web searches (Thirty Years' War, Camerarius, Osnabrück 1633, cipher) returned no Tomokiyo page for this letter.",
+     "lasry": "Web search 'Osnabrück 1633 Chiffre Camerarius Oxenstierna Knyphausen Wartenberg entziffert' found only a Tartu paper on the decipherment of a German letter from Heusner von Wandersleben to Oxenstierna (1637), a different letter, and nothing on this one; no GL.htm entry.",
+     "edition": "Halm 1874 p. 164 records it as 'in Chiffern geschrieben' with no decipherment. Bierther, Briefe und Akten N.F. II/8 (1982), the only edition volume that could cover this date for Bavarian and League business, was opened again in Google Books on 4 Nov 2026 and shows 'Preview unavailable' (no search inside); the earlier batch c25 searched its snippets for 13 Aug 1633 with Osnabrück and Chiffre and found no entry. A letter in the Palatine Camerariana from besieged Osnabrück is not obviously in a Bavarian-political edition, but that is not excluded. Oxenstierna's Rikskansleren skrifter and Swedish-Palatine editions not opened.",
+     "literature": "Three web searches (Osnabrück 13 Aug 1633 Chiffern Camerariana Clm 10415; Brief in Ziffern Belagerung Knyphausen Wartenberg entziffert; earlier batch's Cryptologia/HistoCrypt searches) found only the 1633 Swedish siege of Osnabrück (14 Aug to 11 Sep 1633), other Camerariana items (Clm 10404 Oxenstierna invitation) and no study or decipherment of this letter."
+    },
+    "key_check": "No key found on record for this cipher and none tested. The digit-and-letter groups are not the plain two-digit numbers of Clm 10406 n. 206 (lead 2183), which the earlier batch compared, so no sibling key is known. No key table was seen on this leaf and the neighbouring pieces were not searched for one in this pass.",
+    "duplicates": "known.py 'Clm 10415', 'Clm 10416', 'Camerariana', 'Osnabr': no entry for this letter among catalogue, leads, targets or DECODE; catalogue 601 (Wartenberg 1632, Osnabrück archive, Hohenzollern) is another document and another repository. The lead's own shelfmark and links name Clm 10416 / bsb00116464, but the letter is in Clm 10415 / bsb00116463 scan 329.",
+    "verdict": "open"
+   },
+   "vetting_note": "Hold, session review 4 Nov 2026: batch c25 said open, but Bierther, Briefe und Akten N.F. II/8 (1982) could only be searched in snippets, register p. 797 only in part, and two faint traces on the microfilm leaf (Clm 10415 scan 329) could not be read. Needs the volume opened and a colour image. Same gap as lead 2183, which stayed unvetted."
+  },
+  {
+   "id": 2188,
+   "counted": true,
+   "year": 1545,
+   "date": "10 Dec 1545",
+   "title": "Camillo Capilupi → Ferrante Gonzaga, 'Bolduch' ('s-Hertogenbosch), 10 Dec 1545, partly in cipher (digits)",
+   "correspondents": "Camillo Capilupi → Ferrante Gonzaga",
+   "place": "'Bolduch' ('s-Hertogenbosch)",
+   "language": "Italian",
+   "region": "Italy",
+   "period": "1497-1559",
+   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera C, Capilupi, Camillo, cc. 44-47",
+   "folio_note": "8 canvases. Digit runs on 44r (6 lines), 44v (about 20), 46r (4), 46v (4); 45r-45v clear; 47 address and docket.",
+   "cls": "B",
+   "status": "Split on 4 Nov 2026 from lead 2163, which keeps cc. 17-19. Record: 'Lettera parzialmente cifrata. Data topica specifica: Bolduch'. Manifest uuid e801746d-f7c5-47e0-aa2d-5ab1c0ac30df. Review batch b68 saw continuous digits with vertical strokes and no decipherment on 44v and 46v (enlarged crops) or on the leaf views of 44r and 46r.",
+   "why": "A Gonzaga agent at Charles V's court in 1545; a sister letter to catalogue 1565 (targets/capilupi1545), with no decipherment on the leaf.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scored from the Lodovico record and the review of lead 2163 (batch b68, 4 Nov 2026)",
+   "verify": "Run a third prior-art search and open Chiesi's essay on the Capilupi-Gonzaga letters. Compare the digits with the unread digits of c. 48 and c. 49r (catalogue 1565) and the Ercole fonds cc. 88-92.",
+   "links": [
+    {
+     "label": "Capilupi 10 Dec 1545 record",
+     "href": "https://lodovico.medialibrary.it/media/schedadl.aspx?id=e801746d-f7c5-47e0-aa2d-5ab1c0ac30df"
+    },
+    {
+     "label": "Capilupi 10 Dec 1545 IIIF manifest",
+     "href": "https://edl-jarvis.cultura.gov.it/meta/iiif/e801746d-f7c5-47e0-aa2d-5ab1c0ac30df/manifest"
+    }
+   ],
+   "seen": "image",
+   "source": "Split from lead 2163 in the Nov 2026 leads review",
+   "prior_art": "open as far as checked (4 Nov 2026, batch b68): known.py on Capilupi and Bolduch; two web searches found nothing on the December letter; no cryptiana or Lasry entry found",
+   "needs_archive_scan": "no",
+   "access_note": "IIIF scans online on Lodovico / Estense Digital Library, CC BY-NC-SA, no login",
+   "vetting_note": "Not yet vetted as its own lead. Cipher seen with no decipherment on the leaf (batch b68), but only two searches were run and Chiesi's essay on the Capilupi-Gonzaga letters was not seen. Needs that essay and a third search before it can be promoted.",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "Claude Sonnet 5.5 vetting agent",
+    "seen": {
+     "kind": "scan",
+     "where": "Estense Digital Library / Lodovico IIIF manifest https://edl-jarvis.cultura.gov.it/meta/iiif/e801746d-f7c5-47e0-aa2d-5ab1c0ac30df/manifest (8 canvases, cc. 44r-47v); canvases 44r, 44v, 45r, 45v, 46r and 46v downloaded at 1000-1300 px and viewed whole on 4 Nov 2026 (47r-47v, address and docket, not re-viewed).",
+     "extent": "Digit runs inside a clear Italian letter: 44r about 7 lines at the foot, 44v about 20 lines mixed with short clear stretches, 46r 4 lines mid-page, 46v 3 lines at the foot above the dateline 'Da Bolduch alli xi di decemb. 1545' and the signature 'Camillo Capilupo'; roughly 1,200 digits by eye, not counted by machine. 45r-45v are clear Italian prose. After the 46r run the clear text goes on with news (Queen Maria at Utrecht, English ambassadors, the Turk before Buda), so the digits are inserts in the letter.",
+     "cipher": "Continuous strings of digits with no word division, vertical strokes marking some breaks, a few clear words intercalated on 44v (e.g. 'allhora fu forza che', 'della qual cosa resagli la causa', 'onde con questo adito', 'Appresso gli ricordai la importanza ch'era alle cose di parma et di piacenza'); one underlined run on 44v. Digit groups run on, so the unit size is not visible. The clear Italian before and after each run is the covering letter and is not a decipherment of the digits: it differs from them in length and sense, and no interlinear or marginal plaintext is written over, under or beside any run on cc. 44r, 44v, 45r, 45v, 46r or 46v. No key table on the leaves."
+    },
+    "prior_art": {
+     "decode": "known.py 'Capilupi', 'Bolduch', 'Campori': hits only catalogue 1564 and 1565 (other shelfmarks), leads 2163 and this lead, the repo target targets/capilupi1545; no DECODE record in the harvested dump for this letter.",
+     "tomokiyo": "known.py found no cryptiana row for Capilupi; web search 'Capilupi cipher 1545 Ferrante Gonzaga ... cryptiana OR DECODE OR Lasry' returned only unrelated Venice, papal and Brno Gonzaga-1400 items; no Tomokiyo page on Camillo Capilupi.",
+     "lasry": "The same web search returned Lasry/Simonetta/Biermann on the Antonio Elio papal cipher (1530s-40s) and nothing on Capilupi or Ferrante Gonzaga's agents; no GL.htm entry for Capilupi.",
+     "edition": "Web search for Chiesi's essay found it to be L. Chiesi, 'Papa Giulio III e la guerra di Parma e della Mirandola secondo il carteggio di Ippolito Capilupi con Ferrante Gonzaga', Atti e memorie Deput. storia patria prov. modenesi s. IV (1893) 215-230: it is on Ippolito, 1550-51, so it does not cover Camillo's Dec 1545 letter; the essay itself was not opened. No other edition of Camillo Capilupi's letters found; a May 1545 Camillo letter to Ercole Gonzaga with a contemporary decipher exists in a calendar, a sibling and not this letter.",
+     "literature": "Three web searches (Italian and English; Camillo Capilupi, Bolduch/'s-Hertogenbosch, Capilupi cifra Ferrante Gonzaga Carlo V) found no study of this letter or its cipher; the Accademia Virgiliana volume on the Capilupi family of Mantua was not opened."
+    },
+    "key_check": "No key tested here on these digits. Catalogue 1565 (targets/capilupi1545/key.tsv) is a different system, a signs-and-digit-marks homophonic alphabet for 8 May 1545; the digit runs of cc. 48 and 49r of the same target are unread, and its own tests found no fixed pair grid. The Ercole fonds cc. 88-92 hold deciphered 1544 digit-cipher Capilupi material that has not been compared with these runs.",
+    "key_held": "targets/capilupi1545/key.tsv (signs, 8 May 1545) is held; it was not applied to these digits and is not shown to be the same system. Not blocking.",
+    "duplicates": "known.py on 'Capilupi', 'Bolduch', 'e801746d', 'Campori': lead 2163 (cc. 17-19, closed read: postscript written out on c. 18r), catalogue 1564 and 1565 and this lead; cc. 44-47 appear only here and in the split note of 4 Nov 2026. DECODE: none. No duplicate.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 2192,
+   "counted": true,
+   "cls": "A",
+   "seen": "image",
+   "source": "Half-done runs sweep (Nov 2026)",
+   "needs_archive_scan": "no",
+   "year": 1554,
+   "date": "4 Jul 1554 (PARES creation date; letters undated, \"S.F.\")",
+   "title": "Tierra Firme: five cipher letters, 13 folios (AGI Indiferente 737 no. 171); the first letter is deciphered in Panama 29",
+   "correspondents": "Alvaro de Sosa, governor of Tierra Firme (first letter) and others → officials at Seville / Consejo de Indias",
+   "place": "Tierra Firme (Panama)",
+   "language": "Spanish",
+   "region": "Americas",
+   "period": "1497-1559",
+   "shelfmark": "AGI, Indiferente General, 737, N.171 (PARES 300401); decipherment of letter 1 in AGI, Panama, 29, R.6, N.23",
+   "folio_note": "\"Cinco cartas cifradas. S.F. 13 f.\" Four of the five have no decipherment named; images online (PARES flags IMG).",
+   "status": "PARES description (read 4 Nov 2026): \"Cinco cartas cifradas ... Nota: El texto descifrado de la primera carta se halla en el legajo Panama,29,R.6,N.23 (Copia de carta de Alvaro de Sosa, Gobernador de Tierra Firme a los oficiales de Sevilla, 1554, Julio, 4. 2 + 2 f.)\". So letter 1 has a clear copy (a crib) and letters 2-5 are open. Not on DECODE (known.py).",
+   "why": "A same-hand plaintext for the first letter gives a key for the other four, in an Indies cipher of the 1550s that nobody has published.",
+   "importance": 3,
+   "solvability": 4,
+   "difficulty": 2,
+   "score_note": "Scored from the PARES description during the Nov 2026 half-done runs sweep (research/sweep_2026-11_A_halfdone/); not viewed",
+   "verify": "Open PARES 300401 (13 folios), transcribe letter 1, align it with the clear copy in Panama 29 R.6 N.23 (PARES search \"Panama,29,R.6,N.23\"), then read letters 2-5 with the recovered table.",
+   "links": [
+    {
+     "label": "PARES Indiferente 737 N.171",
+     "href": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/300401"
+    }
+   ],
+   "prior_art": "open (checked 4 Nov 2026: known.py on shelfmark and names, no hit; one web search on Alvaro de Sosa, Tierra Firme, 1554 and Indiferente 737 found no decipherment; Tomokiyo and Lasry not searched)",
+   "access_note": "Images on PARES, no login (the description page links the scans).",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "Claude Sonnet 5.5 vetting agent",
+    "seen": {
+     "kind": "scan",
+     "where": "PARES AGI, Indiferente General 737 N.171 (https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/300401, dbCode 3893240): all 28 images downloaded and viewed 4 Nov 2026 (image 1 and 19 at full 864x1240 px, the rest on contact sheets); also PARES Panama 29 R.6 N.23 (id 381859, dbCode 5088604), all 11 images viewed.",
+     "extent": "28 images for 13 folios: cipher on images 1-2, 5-6, 9-11, 13-14, 17-26 (about 25 pages, 12-25 lines each, roughly 350-400 lines; not measured); images 3, 7, 27 are 'imagen en blanco' and 4, 8, 12, 16, 28 are versos with a short docket.",
+     "cipher": "Substitution with a distorted-letter symbol alphabet (a few clear Spanish words inside, e.g. 'ausencia' on image 19) written in paragraphs and, on images 17-25, as numbered lines each marked with a slash; signatures and flourishes at the end of letters (images 2, 6, 11, 15). No interlinear decipherment, margin gloss or key on any of the 28 leaves. PARES description: 'Cinco cartas cifradas. S.F. 13 f. Nota: El texto descifrado de la primera carta se halla en el legajo Panama,29,R.6,N.23'. Panama 29 R.6 N.23 holds two clear copies of Sosa's letter of 4 July 1554 (images 1-2, 5) and a cipher copy (images 8-9), with the note 'el texto cifrado de esta carta se encuentra en Ind. Gen. 737 n 171'."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Alvaro de Sosa', 'Indiferente 737', 'Tierra Firme' (4 Nov 2026): only this lead; not in the DECODE dump or Cryptoole snapshot.",
+     "tomokiyo": "Fetched and grepped the cryptiana index and Spanish (spanish*, bergenroth) pages: Peru 1601/1604 items and Charles V / Philip II ciphers, nothing on Tierra Firme, Panama or Sosa.",
+     "lasry": "No Lasry or HistoCrypt item on Indies ciphers found (web search 'Alvaro de Sosa Tierra Firme carta cifrada 1554' and a Lohmann/Indies cipher search); GL.htm not found to list it.",
+     "edition": "PARES notes the clear text of letter 1 in Panama 29 R.6 N.23 (the plaintext, copied by the Audiencia, not a decipherment of letters 2-5); Lohmann Villena, 'Cifras y claves indianas' (1954), cited in web results for Indies ciphers, was not opened and could print keys; RAH DBE biography of Sosa (Panama 236) names no cipher.",
+     "literature": "Three web searches (Spanish): Sosa's governorship (appointed 31 May 1552), Romero Tallafigo 2023 on Council of the Indies cipher letters (1598, Ibarra), Benavent 2025 on 16th-century ciphers; no study or decipherment of Indiferente 737 N.171."
+    },
+    "key_check": "No key held. The clear text of letter 1 (Panama 29 R.6 N.23 images 1-2, 5, 4 Jul 1554) is a crib for the cipher copy at images 8-9 there and for the first letter of Indiferente 737 N.171; no alphabet has been built. Lohmann Villena (1954) not opened.",
+    "key_in_volume": "Not a key: the same-fonds clear copy of letter 1 (Panama 29 R.6 N.23) is a plaintext crib; further Sosa letters in clear at Panama 29 R.6 N.22 (24 Apr 1554), N.24 (24 Nov 1554), N.25 may be the plaintext of letters 2-5 and were not read against them.",
+    "duplicates": "known.py (names, shelfmark, Tierra Firme): only lead 2192; the AGI Indiferente 737 N.171 unit and Panama 29 R.6 N.23 appear in no catalogue entry or target.",
+    "verdict": "open",
+    "searches": [
+     {
+      "query": "\"Alvaro de Sosa\" gobernador Tierra Firme Panama 1554 carta cifrada Indiferente 737 descifrada",
+      "result": "RAH biography and chronicle texts; no cipher letter or decipherment linked to Indiferente 737."
+     },
+     {
+      "query": "cartas cifradas Indias siglo XVI Consejo de Indias cifra gobernador Panama 1554 criptografia AGI Indiferente General",
+      "result": "Lohmann Villena 1954 (cited only), Romero Tallafigo 2023 on 1598; nothing on this unit."
+     },
+     {
+      "query": "PARES find signatura PANAMA,29,R.6,N.22 / N.23 / N.24",
+      "result": "Three records of Sosa letters or copies (N.22 24 Apr 1554, N.23 4 Jul 1554, N.24 24 Nov 1554), digitised; only N.23 mentions the cipher."
+     }
+    ]
+   }
+  },
+  {
+   "id": 2244,
+   "counted": true,
+   "region": "Scandinavia",
+   "seen": "image",
+   "source": "Sweep D, Riksarkivet IIIF volume pass, Nov 2026",
+   "score_note": "Scored from sampled images (20 per volume, plus full-size views where noted) viewed during sweep D (research/sweep_2026-11_D_east_north/), Nov 2026",
+   "prior_art": "open as far as checked (4 Nov 2026: known.py on the shelfmark and the correspondents found nothing; not on DECODE as far as the Nordic dump goes; no web search hit for a decipherment; Tomokiyo and Lasry not searched for this item)",
+   "needs_archive_scan": "no",
+   "access_note": "scans public on Riksarkivet (sok.riksarkivet.se), no login",
+   "year": 1742,
+   "date": "1742",
+   "title": "Höpken and Carlson (Constantinople) to the chancery president, 1742: French and Swedish passages in four-digit code with interlinear plaintext",
+   "correspondents": "Carl Fredrik von Höpken and Edvard Carlson -> the chancery president (Gyllenborg) and the King",
+   "place": "Constantinople",
+   "language": "Swedish, French",
+   "period": "1701-1800",
+   "shelfmark": "Riksarkivet, Diplomatica Turcica, SE/RA/2119/2119.1/I/9/28 (Brev till kanslipresidenten, 1742)",
+   "folio_note": "567 images (R0003637). Image 227: a French \"extrait de la traduction\" of a letter with whole lines of four-digit numbers and French written between them; image 482: a Swedish letter of 22 Sept 1742 with three number blocks glossed in Swedish; underlined interlinear passages also at about 29, 86, 114, 397, 539 (thumbnails).",
+   "cls": "A",
+   "status": "Catalogue: plain letters to the chancery president. Same four-digit code as the sibling volumes 9/20-9/23 and 9/29; glosses written over the numbers show the passages were read on receipt.",
+   "why": "The last Höpken-Carlson volume (1742, after the Swedish defeat in Finland): the Ottoman side of the Hat government's foreign policy, with plaintext cribs for every passage.",
+   "importance": 3,
+   "solvability": 5,
+   "difficulty": 2,
+   "verify": "View images 227 and 482 at full size; transcribe, align numerals and glosses, and pool with 9/20-9/23 to rebuild the whole code.",
+   "links": [
+    {
+     "label": "NAD record",
+     "href": "https://sok.riksarkivet.se/arkiv/1wvyAzfQqL3W6GbBAfICcD"
+    },
+    {
+     "label": "IIIF manifest",
+     "href": "https://lbiiif.riksarkivet.se/arkis!R0003637/manifest"
+    },
+    {
+     "label": "image 227",
+     "href": "https://sok.riksarkivet.se/bildvisning/R0003637_00227"
+    },
+    {
+     "label": "image 482",
+     "href": "https://sok.riksarkivet.se/bildvisning/R0003637_00482"
+    },
+    {
+     "label": "image 29",
+     "href": "https://sok.riksarkivet.se/bildvisning/R0003637_00029"
+    },
+    {
+     "label": "image 86",
+     "href": "https://sok.riksarkivet.se/bildvisning/R0003637_00086"
+    },
+    {
+     "label": "image 114",
+     "href": "https://sok.riksarkivet.se/bildvisning/R0003637_00114"
+    },
+    {
+     "label": "image 397",
+     "href": "https://sok.riksarkivet.se/bildvisning/R0003637_00397"
+    },
+    {
+     "label": "image 539",
+     "href": "https://sok.riksarkivet.se/bildvisning/R0003637_00539"
+    }
+   ],
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "Claude Sonnet 5.5 vetting agent",
+    "seen": {
+     "kind": "scan",
+     "where": "Riksarkivet IIIF R0003637 (Diplomatica Turcica SE/RA/2119/2119.1/I/9/28, Brev till kanslipresidenten 1742; NAD https://sok.riksarkivet.se/arkiv/1wvyAzfQqL3W6GbBAfICcD): every 12th image of 567 (47 images, images 6-558) at 520 px, plus images 29, 86, 114, 198, 227, 246, 342, 397, 539 at 1000-1300 px, viewed 4 Nov 2026.",
+     "extent": "567 images. In the 47-image sample about 10 spreads carry bare four-digit runs set in clear Swedish (198, 246, 342, 378, 438, 450, 474, 486, 510, 522; image 342 alone has about 50 lines of numbers) and about 20 carry glossed passages (e.g. 29, 86, 114, 227, 397, 539); the rest are clear text or blank versos. Not paged leaf by leaf, so counts are by sampling.",
+     "cipher": "Four-digit numeric code, values about 1000-2900, in Swedish and French despatches of Hopken and Carlson, Jan-Dec 1742 (dockets 19 Feb, 8/19 Apr, 10/21 May, 27 Oct). Image 198 (8/19 April 1742) and 246 (10/21 May 1742): number runs inside clear Swedish with no gloss, no interlinear text, no key on the leaf. Image 342: two full pages of numbers, no gloss. In the glossed passages (image 227 French 'Extrait de la traduction de la lettre du Chan de Crimee', 29 Latin, 86 and 114 Swedish, 397, 539 French) a plaintext word is written over each number run, so those are cribs, not part of the open text."
+    },
+    "prior_art": {
+     "decode": "known.py (harvested DECODE dump, Cryptoole snapshot, repo ledgers) on Hopken, I/9/2, R0003589, R0003637: only the sweep-D rows and catalogue 1771 / lead 1770 (sibling volumes 9/21, 9/20); no DECODE record of any Hopken-Carlson cipher.",
+     "tomokiyo": "Fetched 4 Nov 2026 and grepped the cryptiana index and unsolved, habsburg, spanish*, variable2, elizabeth pages: no Hopken, Carlson, Swedish-Ottoman or 18th-century Swedish entry.",
+     "lasry": "Web search for Lasry with Hopken/Orlyk/Rakoczi (4 Nov 2026) found nothing on these despatches; the local GL.htm copies had no Hopken item per catalogue 1771's block.",
+     "edition": "Searches in English and Swedish for the 1742 despatches (Hopken Konstantinopel chiffer, Diplomatica Turcica) found no printed edition or calendar; Hopken's later Skrifter (Runeberg author page) and the Stockholm University note on diplomats' writings in Constantinople were not opened, so a printed text of individual despatches cannot be excluded.",
+     "literature": "Three web searches (English, Swedish, Hat-party cipher): background on Hopken and Carlson (Constantinople 1734-42/45, Hats alliance of 1739) and Bingol's Cryptologia papers on 19th-century Ottoman ciphers; nothing on the Swedish four-digit code."
+    },
+    "key_check": "No complete key held. The glossed passages of this volume (images 29, 86, 114, 227, 397, 539), of 9/22 (images 383, 390, 650, 670, all glossed) and of sibling volumes 9/20, 9/21 give partial number-to-word values for one code; the Chifferklaver box keys on DECODE are 17th-century and were not tested. The key was not rebuilt here.",
+    "key_in_volume": "Partial: glossed passages in the same volume (images 29, 86, 114, 227, 397, 539) and in 9/22 supply plaintext for the same code; no key table seen. Not yet used to rebuild or test a table.",
+    "duplicates": "known.py: lead 2244 is this volume only; catalogue 1771 is vol. 9/21 (1739-41) and lead 1770 vol. 9/20 (1734-38), different shelfmarks and years of the same code; siblings 2240 (9/22), 2241 (9/23), 2242 (9/29), 2245-2248 (9/24-9/27) are separate volumes, not duplicates. Not an enciphered copy of a printed text.",
+    "verdict": "open",
+    "searches": [
+     {
+      "query": "Hopken Carlson Constantinople 1742 despatches cipher four-digit code Swedish Riksarkivet Diplomatica Turcica deciphered",
+      "result": "Only Swedenborg documents mentioning Hopken's return in 1742, Ottoman-record articles and unrelated Constantinople cipher studies; no decipherment."
+     },
+     {
+      "query": "Carl Fredrik Hopken Konstantinopel 1735 1742 chiffer depescher Edvard Carlson kanslikollegium chiffrerade brev dechiffrering",
+      "result": "Runeberg author page, National Museum entry, Sylvia Ioannou record of the two men's travels; nothing about their ciphers."
+     },
+     {
+      "query": "Swedish diplomatic cipher 18th century Hat party Ottoman alliance 1739 numeric code Hopken Cryptologia OR HistoCrypt",
+      "result": "Hats party background, Bingol on 19th-century Ottoman ciphers; no Swedish 18th-century code study."
+     }
+    ]
+   }
   }
  ]
 }
