@@ -4,14 +4,17 @@ Run from docs/:  python _catalogue_page.py   (it runs _build_site.py afterwards 
 strip; a catalogue.html left with the bare <!-- site:nav --> marker has no navigation bar).
 
 catalogue.json is the single source: entries with 1-5 scores for importance, solvability and difficulty.
-The page embeds the JSON and computes a priority score client-side from adjustable weights; it also renders a
-static table for readers without JavaScript. CATALOGUE.md gets its table (counted entries, default weights) and
+The page embeds the entries as compact JSON and the script draws the list from it, 30 rows at a time, in four views
+(try from a desk, needs an archive, all open, left the catalogue), with the priority computed from adjustable weights;
+the first page of the default view is also written out as a static table for readers without JavaScript. The
+holding archives come from ../repositories.json (_repositories.py) and make the "Where the ciphers are" index. CATALOGUE.md gets its table (counted entries, default weights) and
 its "Also noted" list rewritten between <!-- table:start --> / <!-- table:end --> and <!-- also:start --> /
 <!-- also:end --> markers; the prose around them is hand-written and left alone.
 """
-import json, html, pathlib, re, datetime
+import json, html, pathlib, re, datetime, collections
 import _methods as M
 import _claims
+import _repositories as RP
 
 HERE = pathlib.Path(__file__).parent
 ROOT = HERE.parent
@@ -290,40 +293,66 @@ def frame_info(e):
     return ('unconfirmed', 'No one has yet confirmed the cipher on a specific page or frame. The location comes from the written description of the document, not from a page.', '')
 
 
+def flags(e):
+    """The small markers a row carries after its outcome pill, as letters the page script reads (see row())."""
+    v = e.get('vetting') or {}
+    return ''.join(c for c, on in (('w', e.get('workable')), ('a', e.get('access') == 'archive'), ('v', v.get('key_in_volume')),
+                                   ('h', v.get('key_held')), ('u', frame_info(e)[0] == 'unconfirmed')) if on)
+
+
+FLAG_PILLS = {'w': ('work', 'the key material exists (siblings, glosses); what is left is work, not an outside blocker', 'no outside blocker'),
+              'a': ('arch', 'the ciphertext or the key material is not online; it needs the archive to digitise it or someone to photograph it', 'needs archive scans'),
+              'v': ('work', 'a key is filed in the same volume or unit and no decipherment exists; a reading would be read with known key', 'key in volume'),
+              'h': ('work', 'a key is held here, on DECODE or in print, and no decipherment is known', 'key held'),
+              'u': ('unf', 'no one has confirmed the cipher on a specific frame yet', 'frame unchecked')}
+
+
 def row(e):
+    """One table row. The page script draws the same markup from the embedded data (CAT_JS row()); this one is the
+    first page of the default view, for readers without JavaScript."""
     href = entry_href(e)
     seen = '<span class="seen img" title="viewed on the image">●</span>' if seen_image(e) else '<span class="seen cat" title="catalogue description only">◇</span>'
     tip = f' title="being worked in targets/{", targets/".join(f for f, _, _ in progress(e))}/"' if progress(e) else ''
-    pill = f'<span class="pill{" att" if e.get("outcome") or tip else ""}"{tip}>{esc(short_outcome(e))}</span>'
-    if e.get('workable'): pill += '<span class="pill work" title="the key material exists (siblings, glosses); what is left is work, not an outside blocker">no outside blocker</span>'
-    if e.get('access') == 'archive': pill += '<span class="pill arch" title="the ciphertext or the key material is not online; it needs the archive to digitise it or someone to photograph it">needs archive scans</span>'
-    if (e.get('vetting') or {}).get('key_in_volume'): pill += '<span class="pill work" title="a key is filed in the same volume or unit and no decipherment exists; a reading would be read with known key">key in volume</span>'
-    if (e.get('vetting') or {}).get('key_held'): pill += '<span class="pill work" title="a key is held here, on DECODE or in print, and no decipherment is known">key held</span>'
     hk = help_kind(e)
-    pill = f'<span class="pill help-{hk}" title="{esc(HELP[hk][1])}">{HELP[hk][0]}</span>' + pill
-    if frame_info(e)[0] == 'unconfirmed': pill += '<span class="pill unf" title="no one has confirmed the cipher on a specific frame yet">frame unchecked</span>'
+    pill = (f'<span class="pill help-{hk}" title="{esc(HELP[hk][1])}">{HELP[hk][0]}</span>'
+            f'<span class="pill{" att" if e.get("outcome") or tip else ""}"{tip}>{esc(short_outcome(e))}</span>')
+    pill += ''.join(f'<span class="pill {FLAG_PILLS[c][0]}" title="{FLAG_PILLS[c][1]}">{FLAG_PILLS[c][2]}</span>' for c in flags(e))
     link = ''.join(f'<a href="{h}" rel="noopener">{esc(t)}</a>' if h else esc(t) for t, h in link_pairs(e)[:1])
+    r = RP.info(RP.of(e))
     return (f'<tr class="e" data-id="{e["id"]}" data-href="{href}">'
             f'<td class="prio"><b>{priority(e):.1f}</b></td>'
             f'<td class="date">{esc(e["date"])}<span class="num">no. {e["id"]}</span></td>'
             f'<td class="item"><a class="t" href="{href}">{seen} {esc(e["title"])}</a>{pill}<span class="sub">{esc(e["why"])}</span></td>'
-            f'<td class="shelf"><span class="sm" title="{html.escape(e["shelfmark"])}">{esc(e["shelfmark"])}</span>{link}</td>'
+            f'<td class="shelf"><span class="ar" title="{html.escape(arch_place(r))}">{esc(r.get("short") or r["name"])}</span>'
+            f'<span class="sm" title="{html.escape(e["shelfmark"])}">{esc(e["shelfmark"])}</span>{link}</td>'
             f'<td class="sc">{dots(e["importance"])}</td><td class="sc">{dots(e["solvability"])}</td><td class="sc">{dots(e["difficulty"], "diff")}</td>'
             f'<td class="cls"><span class="badge {e["cls"]}">{e["cls"]}</span></td></tr>')
+
+
+def arch_place(r):
+    """'Haus-, Hof- und Staatsarchiv, Vienna, Austria': the full name and where it is, for a tooltip."""
+    return ', '.join(x for x in (r['name'], r.get('city'), r.get('country')) if x and x not in r['name'])
 
 
 # ---------- filter keys ----------
 # The catalogue fields are free text written by many sweeps ('Polish/French (unknown which; ...)', 'Archivportal-D
 # sweep', 'images'), so the table filters on a few clean keys derived here, in entry['f'], not on the raw values.
 # Language keys are the lowercase names the writeups.html Language facet uses, so a #lang=french link works on both.
+# cls, help, arch and country are added by the page script from the entry's own fields, to keep the page small.
 CAT_LANGS = ['French', 'German', 'English', 'Portuguese', 'Italian', 'Spanish', 'Latin', 'Dutch', 'Polish', 'Swedish',
              'Danish', 'Hungarian']
 LANG_ALIAS = {'castilian': 'Spanish', 'scots': 'English'}
 OTHER_LANGS = {'Russian', 'Czech', 'Catalan', 'Turkish', 'Greek', 'Arabic', 'Hebrew', 'Croatian', 'Romanian', 'Lithuanian'}
 CENTURIES = [('1400s', '1400s'), ('1500s', '1500s'), ('1600s', '1600s'), ('1700s', '1700s'), ('1800s', '1800s'),
              ('1900s', '1900s'), ('undated', 'undated')]
-SOURCES = [('decode', 'DECODE'), ('sweep', 'archive sweeps'), ('cryptoole', 'Cryptoole'), ('bnf', 'BnF / Gallica'),
-           ('print', 'print and literature'), ('contributed', 'sent in')]
+# how an entry was found, as against where it is held (repository): the 140-odd sweep labels in "source", in six families
+FOUND = [('sweep', 'archive and library catalogues', 'searches of national and regional archive portals, finding aids and library catalogues for letters described as in cipher'),
+         ('print', 'printed sources', 'calendars of state papers, editions and the literature, mostly searched in full text on the Internet Archive and HathiTrust'),
+         ('decode', 'DECODE', 'the database of historical cipher documents: the records it marks not decrypted or partly decrypted'),
+         ('bnf', 'BnF / Gallica', 'the French diplomatic volumes digitised on Gallica, where the catalogue began'),
+         ('cryptoole', 'Cryptoole', 'open items in Satoru&rsquo;s <a href="https://cryptoole.satoru.net/" rel="noopener">Cryptoole</a> index'),
+         ('contributed', 'sent in', 'readers&rsquo; issues on GitHub and HCPortal')]
+SOURCES = [(k, l) for k, l, _ in FOUND]
 STATUSES = [('new', 'not attempted'), ('progress', 'in progress here'), ('attempted', 'attempted here'), ('skipped', 'skipped')]
 ACCESS = [('online', 'no archive trip needed'), ('workable', 'no outside blocker'), ('archive', 'needs archive scans'), ('unchecked', 'access not checked')]
 CLASSES = [('A', 'A · sibling deciphered'), ('B', 'B · partial key known'), ('C', 'C · no key')]
@@ -349,11 +378,11 @@ def century_key(e):
 
 def source_key(e):
     s = (e.get('source') or '').lower()
-    if 'decode' in s: return 'decode'
+    if 'decode' in s and 'sweep' not in s: return 'decode'
     if 'cryptoole' in s: return 'cryptoole'
-    if 'bnf' in s or 'gallica' in s: return 'bnf'
+    if re.search(r'\bbnf\b|gallica', s) and 'archives et manuscrits' not in s: return 'bnf'
     if 'github' in s or 'hcportal' in s: return 'contributed'
-    if re.search(r'print|calendar|literature|cryptiana', s): return 'print'
+    if re.search(r'print|calendar|literature|cryptiana|internet archive|hathitrust|wikisource|masked dispatches|repertory|frus', s): return 'print'
     return 'sweep'
 
 
@@ -366,20 +395,32 @@ def access_unchecked(e):
     return e.get('access') is None and not seen_image(e)
 
 
+def has_known(e):
+    """An open entry with pieces already read or identified: its known line, or a write-up citing its number."""
+    return bool((e.get('known') and not e['known'].startswith('Nothing')) or e['id'] in SOLVED)
+
+
 def filter_keys(e):
     o = e.get('outcome') or ''
-    return {'lang': lang_keys(e), 'century': century_key(e), 'region': e['region'], 'cls': e['cls'],
-            'status': 'progress' if progress(e) else 'skipped' if 'skipped' in o else 'attempted' if o.startswith('attempted') else 'new',
-            'access': [k for k, on in (('online', e.get('access') != 'archive' and not access_unchecked(e)), ('unchecked', access_unchecked(e)),
-                                       ('workable', e.get('workable')), ('archive', e.get('access') == 'archive')) if on],
-            'help': help_kind(e), 'frame': frame_info(e)[0],
-            'source': source_key(e), 'seen': 'image' if seen_image(e) else 'catalogue',
-            'counted': 'counted' if e['counted'] else 'noted'}
+    k = {'lang': lang_keys(e), 'century': century_key(e), 'region': e['region'],
+         'status': 'progress' if progress(e) else 'skipped' if 'skipped' in o else 'attempted' if o.startswith('attempted') else 'new',
+         'access': [k for k, on in (('online', e.get('access') != 'archive' and not access_unchecked(e)), ('unchecked', access_unchecked(e)),
+                                    ('workable', e.get('workable')), ('archive', e.get('access') == 'archive')) if on],
+         'frame': frame_info(e)[0], 'source': source_key(e), 'seen': 'image' if seen_image(e) else 'catalogue',
+         'counted': 'counted' if e['counted'] else 'noted'}
+    if has_known(e): k['pieces'] = 'known'
+    return k
+
+
+def all_keys(e, k):
+    """filter_keys plus the keys the page script derives (for the facets' value lists, built here)."""
+    r = RP.info(RP.of(e))
+    return dict(k, cls=e['cls'], help=help_kind(e), arch=r['id'], country=r.get('country') or 'none')
 
 
 def facet(name, label, values, keys):
     """values: (key, label) pairs; a value no entry has is left out. Each chip carries a live count."""
-    have = {k for f in keys for k in ([f[name]] if isinstance(f[name], str) else f[name])}
+    have = {k for f in keys for k in ([f[name]] if isinstance(f.get(name), str) else f.get(name) or [])}
     opts = ''.join(f'<button type="button" class="chip" data-facet="{name}" data-val="{esc(k)}" aria-pressed="false">'
                    f'{esc(l)}<span class="n"></span></button>' for k, l in values if k in have)
     return f'<div class="facet" role="group" aria-label="{label}"><span class="flabel">{label}</span><span class="opts">{opts}</span></div>'
@@ -404,165 +445,292 @@ def is_blocked(e):
     return 'blocked' in o or o.startswith('attempted, skipped')
 
 
-def status_html(E):
-    """The two lists a reader needs before starting work: what is known and what is still open, both dated."""
-    day = fmt_day(datetime.date.today().isoformat())     # the build day: solved list, counts and PRs are computed now
-    ids = {e['id'] for e in E}
-    gone = sorted(set(SOLVED) - ids)
-    part = sorted([e for e in E if (e.get('known') and not e['known'].startswith('Nothing')) or e['id'] in SOLVED], key=lambda e: e['id'])
-    opn = sorted(E, key=lambda e: (-priority(e), e['id']))
+# ---------- the views ----------
+# One list, four views: what a desk can work, what needs an archive first (grouped by archive), everything open, and the
+# numbers that have left. 'try' and 'archive' are cut on the access keys; CAT_JS inView() is the same test.
+VIEWS = [('try', 'Try from a desk', 'The cipher, and any key material, is online: open a row and hand its page to your agent.'),
+         ('archive', 'Needs an archive', 'The ciphertext, or the key that would unlock it, is not online: the first step is a scan from the archive or a reading-room photograph. Grouped by the archive that holds it; requests and volunteers are on the <a href="archives.html">To the archive</a> page.'),
+         ('all', 'All open', 'Every open entry, whatever its access.'),
+         ('gone', 'Left the catalogue', 'Numbers deciphered, explained or found in print, grouped by how the reading was reached; each links to the write-up that took it out.')]
+
+
+def in_view(k, v):
+    if v == 'try': return 'online' in k['access'] or 'workable' in k['access']
+    if v == 'archive': return 'archive' in k['access']
+    return True
+
+
+def short_name(n):
+    """'Mondoucet → Charles IX, Brussels 13 July 1572 (BnF ...)' -> 'Mondoucet → Charles IX'."""
+    s = re.split(r',|;| \(| — ', n, maxsplit=1)[0].strip()
+    return s if len(s) <= 56 else s[:56].rsplit(' ', 1)[0] + '…'
+
+
+def summary_html(E, keys, n_gone, prs):
+    """The strip under the title: what is open, what a desk can do, what needs an archive, what has left."""
+    day = fmt_day(datetime.date.today().isoformat())
+    n_try = sum(in_view(k, 'try') for k in keys)
+    n_arch = sum(in_view(k, 'archive') for k in keys)
+    n_unc = len(E) - n_try - n_arch
     n_prog = sum(1 for e in E if progress(e))
-    n_blk = sum(1 for e in E if is_blocked(e) and not progress(e))
-    n_att = sum(1 for e in E if (e.get('outcome') or '').startswith('attempted') and not is_blocked(e) and not progress(e))
-    prs = open_prs()
-
-    def one(e, field):
-        t = e.get(field) or e['status']
-        return f'<li><a href="{entry_href(e)}">no. {e["id"]}</a> <b>{esc(e["title"])}</b> <span class="d">{esc(e["date"])}</span> &mdash; {esc(t)}</li>'
-
-    gone_rows = ''.join(
-        f'<tr id="e{i}g"><td>{i}</td><td>' + '<br>'.join(
-            (f'<a href="{sl}.html">{esc(n)}</a>' if sl else esc(n)) + (' <span class="d">(part)</span>' if pt else '')
-            for n, _, _, sl, pt in SOLVED[i]) + '</td><td>' + '<br>'.join(esc(m) for _, m, _, _, _ in SOLVED[i])
-        + '</td><td>' + '<br>'.join(esc(l) for _, _, l, _, _ in SOLVED[i]) + '</td></tr>' for i in gone)
+    tiles = [('all', '', len(E), 'open ciphers', f'{sum(e["counted"] for e in E)} counted targets, the rest noted'),
+             ('try', '', n_try, 'to try from a desk', 'online, or the key material at hand'),
+             ('archive', '', n_arch, 'need an archive first', 'not online: a scan or a photograph comes first'),
+             ('all', 'progress', n_prog, 'in progress here', 'a target folder is working on them'),
+             ('gone', '', n_gone, 'have left the catalogue', 'deciphered, explained or found in print')]
+    t = ''.join(f'<a class="tile t-{v}{" t-prog" if st else ""}" href="#v={v}{"&status=" + st if st else ""}" data-go="{v}"{f' data-status="{st}"' if st else ""}>'
+                f'<b>{n}</b><span>{lab}</span><small>{sub}</small></a>' for v, st, n, lab, sub in tiles)
+    bar = (f'<div class="sbar" role="img" aria-label="{n_try} to try from a desk, {n_arch} need an archive, {n_unc} with access not yet checked">'
+           f'<i class="b-try" style="flex:{n_try}"></i><i class="b-arch" style="flex:{n_arch}"></i><i class="b-unc" style="flex:{n_unc}"></i></div>'
+           f'<p class="skey"><span class="k-try">{n_try} from a desk</span><span class="k-arch">{n_arch} need an archive</span>'
+           f'<span class="k-unc">{n_unc} access not yet checked</span></p>')
     pr_li = ''.join(f'<li><a href="{esc(r["url"])}" rel="noopener">#{r["number"]}</a> {esc(r["title"])} '
                     f'<span class="d">{esc((r.get("author") or {}).get("login", ""))}, updated {fmt_day(r["updatedAt"][:10])}</span></li>' for r in prs)
-    html_ = f"""<section class="state" id="status">
-<h2>Where things stand, {day}</h2>
-<p>Before starting on an entry, read its <b>known</b> and <b>open</b> lines on its page and the open pull requests below. Work that has landed is folded into both lists at each rebuild; work still in a pull request is not. If a number you were given is not in the table, it has left the catalogue: <a href="#gone">look it up</a>. The lists and the pull requests are recomputed at every rebuild; each entry&rsquo;s known and open lines were written by hand and carry the day they were checked (all of them on {fmt_day(AS_OF)} at the latest full pass).</p>
-<div class="cols">
-<div class="scard"><h3>What is solved or known so far</h3>
-<p><b>{len(gone)}</b> catalogue numbers have been deciphered, explained or found in print and have left the open list (<a href="#gone">the list</a>; every write-up is on the <a href="writeups.html">write-ups</a> page). <b>{len(part)}</b> of the entries still open have pieces already deciphered or identified.</p>
-<details><summary>the {len(part)} open entries with known pieces</summary><ul class="sl">{"".join(one(e, "known") for e in part)}</ul></details>
-</div>
-<div class="scard"><h3>What is still unsolved</h3>
-<p><b>{len(E)}</b> entries are open ({sum(1 for e in E if e['counted'])} counted targets, the rest also noted): <b>{n_prog}</b> in progress here (a target folder is working on them; its notes are linked from the entry&rsquo;s page), <b>{n_blk}</b> blocked from outside (no images online, an archive order needed, or no key known to exist), <b>{n_att}</b> attempted here without a decipherment, <b>{len(E) - n_prog - n_blk - n_att}</b> not yet attempted. <b>{sum(1 for e in E if e.get('workable'))}</b> have their key material at hand and no outside blocker ({', '.join(f'<a href="{solve_href(e)}">no. {e["id"]}</a>' for e in E if e.get('workable'))}): good places to start.</p>
-<details><summary>the {len(E)} open entries, by priority, with what is still open</summary><ul class="sl">{"".join(one(e, "open") for e in opn)}</ul></details>
-</div>
-</div>
-<div class="scard wide"><h3>Work in progress: {len(prs)} open pull request{"s" if len(prs) != 1 else ""}</h3>
-{f'<ul class="sl">{pr_li}</ul>' if prs else '<p>None.</p>'}</div>
-</section>"""
-    return html_, gone_rows, len(gone)
+    prl = (f'<details class="prs"><summary>{len(prs)} open pull request{"s" if len(prs) != 1 else ""}</summary><ul class="sl">{pr_li}</ul></details>'
+           if prs else '<span>no open pull requests</span>')
+    return (f'<div class="stand" id="status">\n<div class="tiles">{t}</div>\n{bar}\n'
+            f'<div class="asof">Counts as of {day}; each entry&rsquo;s known and open lines were last checked by hand on {fmt_day(AS_OF)} or later. '
+            f'Before starting, read the entry&rsquo;s page and the work still in review: {prl}</div>\n</div>')
+
+
+def gone_html(gone):
+    """The numbers that have left, as compact links grouped by outcome method (the README section that holds them)."""
+    by = {}
+    for i in gone: by.setdefault(SOLVED[i][0][1], []).append(i)
+    def chip(i):
+        rows = SOLVED[i]
+        n, _, landed, sl, _ = rows[0]
+        tip = ' · '.join(x[0] + (' (part)' if x[4] else '') for x in rows) + f' (landed {landed})'
+        more = f' <i>+{len(rows) - 1}</i>' if len(rows) > 1 else ''
+        q = f'{i} ' + ' '.join(x[0] for x in rows)
+        return (f'<li id="e{i}g" data-q="{html.escape(q.lower())}"><a href="{sl + ".html" if sl else f"solve/{i}.html"}" title="{html.escape(tip)}">'
+                f'<b>{i}</b> {esc(short_name(n))}</a>{more}</li>')
+    return ''.join(f'<section class="gm"><h3>{esc(m)} <span class="n">{len(by[m])}</span></h3><ul class="gl">{"".join(chip(i) for i in by[m])}</ul></section>'
+                   for m in sorted(by, key=lambda m: -len(by[m])))
+
+
+def sources_html(E):
+    """Where the open entries are held, by country, and how they were found."""
+    n = collections.Counter(RP.of(e) for e in E)
+    by = {}
+    for rid, k in n.items(): by.setdefault(RP.info(rid).get('country') or '', []).append((rid, k))
+    def a(rid, k):
+        r = RP.info(rid)
+        return (f'<a href="#v=all&amp;arch={rid}" data-arch="{rid}" title="{html.escape(arch_place(r))}">{esc(r.get("short") or r["name"])}</a>'
+                f'&nbsp;<b>{k}</b>')
+    def line(rows):
+        return ' · '.join(a(rid, k) for rid, k in sorted(rows, key=lambda x: (-x[1], RP.info(x[0])['name'])))
+    cs = sorted((c for c in by if c), key=lambda c: (-sum(k for _, k in by[c]), c))
+    rows = ''.join(f'<div class="cty"><h3>{esc(c)} <span class="n">{sum(k for _, k in by[c])}</span></h3><p>{line(by[c])}</p></div>' for c in cs)
+    if by.get(''):
+        rows += f'<div class="cty other"><h3>No single archive <span class="n">{sum(k for _, k in by[""])}</span></h3><p>{line(by[""])}</p></div>'
+    n_rep = len([r for r in n if RP.info(r)['kind'] not in ('print', 'unknown')])
+    fam = collections.Counter(source_key(e) for e in E)
+    found = ''.join(f'<li><a href="#v=all&amp;source={k}" data-src="{k}"><b>{fam[k]}</b> {l}</a><span>{d}</span></li>' for k, l, d in FOUND if fam[k])
+    labels = collections.Counter(e.get('source') or 'unknown' for e in E)
+    every = ' · '.join(f'{esc(s)}&nbsp;<b>{k}</b>' for s, k in sorted(labels.items(), key=lambda x: (-x[1], x[0])))
+    return f'''<h2 id="where">Where the ciphers are</h2>
+<p class="lede">The {len(E)} open entries are held by <b>{n_rep}</b> archives, libraries and collections in <b>{len(cs)}</b> countries; {sum(k for r, k in n.items() if RP.info(r)['kind'] == 'print')} are known only from a printed edition and {sum(k for r, k in n.items() if RP.info(r)['kind'] == 'unknown')} sit in an archive not yet identified. Click an archive to list its ciphers. Data: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/repositories.json" rel="noopener">repositories.json</a>.</p>
+<div class="archidx">{rows}</div>
+<h3 class="fh">How they were found</h3>
+<ul class="found">{found}</ul>
+<details class="every"><summary>All {len(labels)} searches, with the entries each found</summary><p>{every}</p></details>
+'''
 
 
 # page rules live in style.css under body.pg-catalogue (the site build strips inline <style> from catalogue.html).
-# The table script: search, facets, reweighting, sort; a row click opens the cipher's page. __GONE__ is replaced by
-# the numbers that have left the catalogue, so an old catalogue.html#eNN link still lands somewhere useful.
+# The page script: views, search, facets, reweighting, sort, paging; a row click opens the cipher's page. __GONE__ is
+# replaced by the numbers that have left the catalogue, so an old catalogue.html#eNN link still lands somewhere useful.
 CAT_JS = r'''
 (function(){
 document.body.classList.remove('nojs');
-var D=JSON.parse(document.getElementById('catdata').textContent),E=D.entries,G=__GONE__,byId={};E.forEach(function(e){byId[e.id]=e;});
+var D=JSON.parse(document.getElementById('catdata').textContent),E=D.entries,A=D.arch,G=__GONE__,byId={};
+E.forEach(function(e){byId[e.id]=e;var a=A[e.r]||['','','',''];e.f.cls=e.c;e.f.help=e.k;e.f.arch=e.r;e.f.country=a[2]||'none';});
 var hm=/^#e(\d+)$/.exec(location.hash);
-if(hm&&byId[hm[1]]){location.replace('solve/'+hm[1]+'.html');return;}
-if(hm&&!byId[hm[1]]&&!G[hm[1]]){var h0=document.getElementById('hashnote');h0.textContent='Catalogue no. '+hm[1]+' is no longer in the catalogue: it was merged into another entry or withdrawn.';h0.hidden=false;}
-if(hm&&G[hm[1]]){var hn=document.getElementById('hashnote');hn.innerHTML='Catalogue no. '+hm[1]+' is no longer open: '+G[hm[1]].map(function(x){var t=x[0].replace(/&/g,'&amp;').replace(/</g,'&lt;');return x[1]?'<a href="'+x[1]+'.html">'+t+'</a>':t;}).join(' · ');hn.hidden=false;}
-var tb=document.querySelector('#cat tbody'),rows={};
-Array.prototype.forEach.call(tb.querySelectorAll('tr.e'),function(r){rows[r.dataset.id]=r;});
-var state={q:'',sort:'prio',dir:-1,w:{imp:D.weights.importance,sol:D.weights.solvability,eas:D.weights.ease},f:{}};
-var chips=Array.prototype.slice.call(document.querySelectorAll('.chip[data-facet]')),clr=document.getElementById('reset'),qi=document.getElementById('q'),dds=Array.prototype.slice.call(document.querySelectorAll('.cfilters details.dd'));
+if(hm&&byId[hm[1]]){location.replace(byId[hm[1]].h||'solve/'+hm[1]+'.html');return;}
+function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+if(hm&&!G[hm[1]]){var h0=document.getElementById('hashnote');h0.textContent='Catalogue no. '+hm[1]+' is no longer in the catalogue: it was merged into another entry or withdrawn.';h0.hidden=false;}
+if(hm&&G[hm[1]]){var hn=document.getElementById('hashnote');hn.innerHTML='Catalogue no. '+hm[1]+' is no longer open: '+G[hm[1]].map(function(x){return x[1]?'<a href="'+x[1]+'.html">'+esc(x[0])+'</a>':esc(x[0]);}).join(' · ');hn.hidden=false;}
+var PAGE=30,GROUPS=8,ROWS_PER_GROUP=3;
+var tb=document.querySelector('#cat tbody'),tw=document.getElementById('tw'),gp=document.getElementById('gonep'),more=document.getElementById('more'),bar=document.getElementById('cbar'),top=document.getElementById('list'),cf=document.querySelector('.cfilters'),lg=document.querySelector('.legend'),vd=document.getElementById('vdesc');
+var tabs=[].slice.call(document.querySelectorAll('.views [data-v]')),gli=[].slice.call(gp.querySelectorAll('li[data-q]')),gsec=[].slice.call(gp.querySelectorAll('section.gm'));
+var state={v:'try',q:'',sort:'prio',dir:-1,w:{imp:D.weights.importance,sol:D.weights.solvability,eas:D.weights.ease},f:{},n:PAGE,g:GROUPS};
+var chips=[].slice.call(document.querySelectorAll('.chip[data-facet]')),clr=document.getElementById('reset'),qi=document.getElementById('q'),dds=[].slice.call(document.querySelectorAll('.cfilters details.dd'));
 dds.forEach(function(d){d.addEventListener('toggle',function(){if(!d.open)return;dds.forEach(function(o){if(o!==d)o.open=false;});
  var p=d.querySelector('.pop');p.style.left='';p.style.right='';if(p.getBoundingClientRect().right>document.documentElement.clientWidth-8){p.style.left='auto';p.style.right='0';}});});
 document.addEventListener('click',function(ev){if(!ev.target.closest('.cfilters details.dd'))dds.forEach(function(d){d.open=false;});});
 document.addEventListener('keydown',function(ev){if(ev.key==='Escape')dds.forEach(function(d){if(d.open){d.open=false;d.querySelector('summary').focus();}});});
-function prio(e){var w=state.w,t=w.imp+w.sol+w.eas||1;var v=(w.imp*e.importance+w.sol*e.solvability+w.eas*(6-e.difficulty))/t;return Math.round((v-1)/4*100)/10;}
-// e.f holds the clean filter keys built in Python; a facet matches when the entry has any of its chosen values
+function prio(e){var w=state.w,t=w.imp+w.sol+w.eas||1;var v=(w.imp*e.i+w.sol*e.so+w.eas*(6-e.df))/t;return Math.round((v-1)/4*100)/10;}
+// the views: 'try' is what a desk can work (access online, or the key material at hand); the Python in_view() is the same test
+function inView(e,v){var a=e.f.access;if(v==='try')return a.indexOf('online')>=0||a.indexOf('workable')>=0;if(v==='archive')return a.indexOf('archive')>=0;return true;}
 function vals(e,k){var v=e.f[k];return v==null?[]:[].concat(v);}
 function hit(e,k){var s=state.f[k];if(!s||!s.length)return true;var v=vals(e,k);return s.some(function(x){return v.indexOf(x)>=0;});}
-function texthit(e){if(!state.q)return true;var h=e._h||(e._h=(e.id+' '+e.title+' '+e.correspondents+' '+e.place+' '+e.shelfmark+' '+e.why+' '+e.status+' '+(e.known||'')+' '+(e.open||'')+' '+e.region+' '+e.language+' '+e.date+' '+e.year).toLowerCase());return h.indexOf(state.q)>=0;}
+function texthit(e){if(!state.q)return true;var a=A[e.r]||[];var h=e._h||(e._h=(e.id+' '+e.t+' '+e.w+' '+e.s+' '+e.d+' '+e.y+' '+a[3]+' '+a[1]+' '+(e.q||'')).toLowerCase());return h.indexOf(state.q)>=0;}
 function match(e,skip){if(!texthit(e))return false;for(var k in state.f)if(k!==skip&&!hit(e,k))return false;return true;}
-// each chip's count: entries it would show, given every other facet and the search
-function counts(){var c={};chips.forEach(function(b){c[b.dataset.facet+'|'+b.dataset.val]=0;});var ks={};chips.forEach(function(b){ks[b.dataset.facet]=1;});
- Object.keys(ks).forEach(function(k){E.forEach(function(e){if(match(e,k))vals(e,k).forEach(function(v){var x=k+'|'+v;if(x in c)c[x]++;});});});
+// each chip's count: entries it would show in this view, given every other facet and the search
+function counts(){var c={},ks={};chips.forEach(function(b){c[b.dataset.facet+'|'+b.dataset.val]=0;ks[b.dataset.facet]=1;});
+ Object.keys(ks).forEach(function(k){E.forEach(function(e){if(inView(e,state.v)&&match(e,k))vals(e,k).forEach(function(v){var x=k+'|'+v;if(x in c)c[x]++;});});});
  chips.forEach(function(b){var on=(state.f[b.dataset.facet]||[]).indexOf(b.dataset.val)>=0,n=c[b.dataset.facet+'|'+b.dataset.val];b.setAttribute('aria-pressed',on?'true':'false');b.querySelector('.n').textContent=n;b.classList.toggle('z',!n&&!on);});}
-// each dropdown button names what is chosen in it: 'Language: French, Polish'
 function labels(){dds.forEach(function(d){var ks=(d.dataset.dd||'').split(' '),on=[];ks.forEach(function(k){(state.f[k]||[]).forEach(function(v){var b=d.querySelector('.chip[data-facet="'+k+'"][data-val="'+v+'"]');if(b)on.push(b.firstChild.textContent);});});
  d.querySelector('.dv').textContent=on.length?': '+(on.length>2?on.length+' chosen':on.join(', ')):'';d.classList.toggle('act',on.length>0);});}
-function save(){var p=[];for(var k in state.f)if(state.f[k].length)p.push(k+'='+state.f[k].map(encodeURIComponent).join(','));if(state.q)p.push('q='+encodeURIComponent(state.q));
+function save(){var p=[];for(var k in state.f)if(state.f[k].length)p.push(k+'='+state.f[k].map(encodeURIComponent).join(','));if(state.q)p.push('q='+encodeURIComponent(state.q));if(p.length||state.v!=='try')p.unshift('v='+state.v);
  try{history.replaceState(null,'',p.length?'#'+p.join('&'):location.pathname);}catch(x){}}
-function load(){var h=location.hash.slice(1);if(h.indexOf('=')<0)return;h.split('&').forEach(function(kv){var i=kv.indexOf('=');if(i<1)return;var k=kv.slice(0,i),v=decodeURIComponent(kv.slice(i+1));if(k==='q'){state.q=v.toLowerCase();qi.value=v;}else state.f[k]=v.split(',').filter(Boolean);});}
-function key(e){var s=state.sort;if(s==='prio')return prio(e);if(s==='cls'||s==='title')return e[s];return +e[s];}
-var lastOrder='',lastW=[];function nf0(){var n=0;for(var k in state.f)n+=state.f[k].length;return n;}
-function render(keep){var L=E.filter(function(e){return match(e);});L.sort(function(a,b){var x=key(a),y=key(b);if(x<y)return -1*state.dir;if(x>y)return 1*state.dir;return a.id-b.id;});
- var shown={},order=L.map(function(e){return e.id;}).join();L.forEach(function(e){shown[e.id]=1;});
- E.forEach(function(e){var r=rows[e.id],on=!!shown[e.id];if(r.hidden===on)r.hidden=!on;});
- if(order!==lastOrder){var fr=document.createDocumentFragment();L.forEach(function(e){fr.appendChild(rows[e.id]);});tb.insertBefore(fr,tb.firstChild);lastOrder=order;}
- if(state.w.imp!==lastW[0]||state.w.sol!==lastW[1]||state.w.eas!==lastW[2]||!lastW.done){E.forEach(function(e){rows[e.id].querySelector('td.prio b').textContent=prio(e).toFixed(1);});lastW=[state.w.imp,state.w.sol,state.w.eas];lastW.done=1;}
+// a link with filters and no view (writeups.html sends #lang=french) opens on all open entries, as before the views
+function load(){var h=location.hash.slice(1),sv=0;if(h==='gone'){state.v='gone';return;}if(h.indexOf('=')<0)return;h.split('&').forEach(function(kv){var i=kv.indexOf('=');if(i<1)return;var k=kv.slice(0,i),v=decodeURIComponent(kv.slice(i+1));
+ if(k==='q'){state.q=v.toLowerCase();qi.value=v;}else if(k==='v'){if(D.views[v]){state.v=v;sv=1;}}else state.f[k]=v.split(',').filter(Boolean);});if(!sv)state.v='all';}
+var SK={year:'y',title:'t',importance:'i',solvability:'so',difficulty:'df',cls:'c'};
+function key(e){var s=state.sort;if(s==='prio')return prio(e);if(s==='cls'||s==='title')return e[SK[s]];return +e[SK[s]];}
+function sorter(a,b){var x=key(a),y=key(b);if(x<y)return -1*state.dir;if(x>y)return 1*state.dir;return a.id-b.id;}
+function nf0(){var n=0;for(var k in state.f)n+=state.f[k].length;return n;}
+var HELP=D.help,FP=D.flags;
+function dots(v,c){var s='<span class="dots'+(c?' '+c:'')+'" title="'+v+' of 5">';for(var i=0;i<5;i++)s+='<i class="'+(i<v?'on':'')+'"></i>';return s+'</span>';}
+// the same markup as row() in _catalogue_page.py
+function row(e){var href=e.h||('solve/'+e.id+'.html'),a=A[e.r]||['','','',''];
+ var p='<span class="pill help-'+e.k+'" title="'+esc(HELP[e.k][1])+'">'+HELP[e.k][0]+'</span><span class="pill'+(e.at?' att':'')+'"'+(e.pg?' title="being worked in targets/'+esc(e.pg)+'/"':'')+'>'+esc(e.o)+'</span>';
+ (e.x||'').split('').forEach(function(c){var f=FP[c];p+='<span class="pill '+f[0]+'" title="'+esc(f[1])+'">'+f[2]+'</span>';});
+ var ln=e.l?(e.l[1]?'<a href="'+esc(e.l[1])+'" rel="noopener">'+esc(e.l[0])+'</a>':esc(e.l[0])):'';
+ var seen=e.im?'<span class="seen img" title="viewed on the image">●</span>':'<span class="seen cat" title="catalogue description only">◇</span>';
+ return '<tr class="e" data-id="'+e.id+'" data-href="'+href+'"><td class="prio"><b>'+prio(e).toFixed(1)+'</b></td><td class="date">'+esc(e.d)+'<span class="num">no. '+e.id+'</span></td>'
+ +'<td class="item"><a class="t" href="'+href+'">'+seen+' '+esc(e.t)+'</a>'+p+'<span class="sub">'+esc(e.w)+'</span></td>'
+ +'<td class="shelf"><span class="ar" title="'+esc(a[4])+'">'+esc(a[0])+'</span><span class="sm" title="'+esc(e.s)+'">'+esc(e.s)+'</span>'+ln+'</td>'
+ +'<td class="sc">'+dots(e.i)+'</td><td class="sc">'+dots(e.so)+'</td><td class="sc">'+dots(e.df,'diff')+'</td><td class="cls"><span class="badge '+e.c+'">'+e.c+'</span></td></tr>';}
+function btn(act,label){return '<button type="button" class="chip" data-act="'+act+'">'+label+'</button>';}
+function render(keep){
+ var v=state.v,nf=nf0();
+ tabs.forEach(function(t){var tv=t.dataset.v,n=tv==='gone'?gli.filter(function(li){return !state.q||li.dataset.q.indexOf(state.q)>=0;}).length:E.filter(function(e){return inView(e,tv)&&match(e);}).length;
+  t.setAttribute('aria-selected',tv===v?'true':'false');t.querySelector('.n').textContent=n;});
+ vd.innerHTML=D.views[v];bar.classList.toggle('vgone',v==='gone');
+ lg.hidden=v==='gone';
+ if(v==='gone'){tw.hidden=true;gp.hidden=false;more.innerHTML='';var n=0;
+  gli.forEach(function(li){var ok=!state.q||li.dataset.q.indexOf(state.q)>=0;li.hidden=!ok;if(ok)n++;});gsec.forEach(function(s){s.hidden=!s.querySelector('li:not([hidden])');});
+  document.getElementById('count').textContent=(state.q?n+' of '+gli.length:gli.length)+' numbers';clr.hidden=!state.q;clr.textContent='clear search';if(!keep)save();return;}
+ tw.hidden=false;gp.hidden=true;
+ var L=E.filter(function(e){return inView(e,v)&&match(e);}).sort(sorter),base=E.filter(function(e){return inView(e,v);}).length,h='',m='';
+ var ga=state.f.arch&&state.f.arch.length===1;
+ if(v==='archive'&&!ga){var g={},order=[];L.forEach(function(e){if(!g[e.r]){g[e.r]=[];order.push(e.r);}g[e.r].push(e);});
+  order.sort(function(a,b){return g[b].length-g[a].length||(A[a][0]<A[b][0]?-1:1);});
+  order.slice(0,state.g).forEach(function(r){var rs=g[r],a=A[r];
+   h+='<tr class="grp"><td colspan="8"><b>'+esc(a[3])+'</b>'+(a[1]?' <span>'+esc(a[1]+(a[2]&&a[1].indexOf(a[2])<0?', '+a[2]:''))+'</span>':'')+' <span class="gn">'+rs.length+'</span></td></tr>';
+   rs.slice(0,ROWS_PER_GROUP).forEach(function(e){h+=row(e);});
+   if(rs.length>ROWS_PER_GROUP)h+='<tr class="gmore"><td colspan="8"><button type="button" class="chip" data-arch="'+r+'">all '+rs.length+' at '+esc(a[0])+' &rarr;</button></td></tr>';});
+  if(order.length>state.g)m=btn('g','Show '+Math.min(GROUPS,order.length-state.g)+' more archives')+'<span class="d">'+(order.length-state.g)+' archives not shown</span>';}
+ else{L.slice(0,state.n).forEach(function(e){h+=row(e);});
+  if(L.length>state.n)m=btn('n','Show '+Math.min(PAGE,L.length-state.n)+' more')+btn('all','Show all '+L.length)+'<span class="d">'+state.n+' of '+L.length+' shown</span>';}
+ tb.innerHTML=h||'<tr><td colspan="8" class="none">Nothing matches. <button type="button" class="chip" data-act="clear">clear the filters</button></td></tr>';more.innerHTML=m;
  var msrt=document.getElementById('msort');if(msrt)msrt.value=state.sort;
- var ft=document.getElementById('ftoggle');if(ft)ft.textContent='Filters'+(nf0()?' ('+nf0()+')':'');
- var nf=0;for(var k in state.f)nf+=state.f[k].length;
- document.getElementById('count').textContent=(L.length===E.length?'All '+E.length:L.length+' of '+E.length)+' ciphers';
+ var ft=document.getElementById('ftoggle');if(ft)ft.textContent='Filters'+(nf?' ('+nf+')':'');
+ document.getElementById('count').textContent=(L.length===base?base:L.length+' of '+base)+' ciphers';
  clr.hidden=!(nf||state.q);clr.textContent=nf?'clear '+nf+' filter'+(nf>1?'s':''):'clear search';
  counts();labels();if(!keep)save();
  document.getElementById('v_imp').textContent=state.w.imp.toFixed(2);document.getElementById('v_sol').textContent=state.w.sol.toFixed(2);document.getElementById('v_eas').textContent=state.w.eas.toFixed(2);
- Array.prototype.forEach.call(document.querySelectorAll('#cat th[data-sort]'),function(h){h.setAttribute('aria-sort',h.dataset.sort===state.sort?(state.dir<0?'descending':'ascending'):'none');});}
-Array.prototype.forEach.call(tb.querySelectorAll('tr.e'),function(r){r.addEventListener('click',function(ev){if(ev.target.closest('a'))return;if(ev.ctrlKey||ev.metaKey)window.open(r.dataset.href);else location.href=r.dataset.href;});});
-Array.prototype.forEach.call(document.querySelectorAll('#cat th[data-sort]'),function(h){h.addEventListener('click',function(){var s=h.dataset.sort;if(state.sort===s)state.dir=-state.dir;else{state.sort=s;state.dir=(s==='year'||s==='title'||s==='cls'||s==='difficulty')?1:-1;}render();});});
-chips.forEach(function(b){b.addEventListener('click',function(){var k=b.dataset.facet,v=b.dataset.val,s=state.f[k]=state.f[k]||[],i=s.indexOf(v);if(i<0)s.push(v);else s.splice(i,1);if(!s.length)delete state.f[k];render();});});
-var qt;qi.addEventListener('input',function(ev){clearTimeout(qt);var v=ev.target.value;qt=setTimeout(function(){state.q=v.trim().toLowerCase();render();},140);});
+ [].forEach.call(document.querySelectorAll('#cat th[data-sort]'),function(th){th.setAttribute('aria-sort',th.dataset.sort===state.sort?(state.dir<0?'descending':'ascending'):'none');});}
+function reset(){state.n=PAGE;state.g=GROUPS;}
+function go(v,f,scroll){state.v=v;if(f){state.f=f;state.q='';qi.value='';}reset();render();if(scroll)top.scrollIntoView({block:'start'});}
+tabs.forEach(function(t){t.addEventListener('click',function(ev){ev.preventDefault();go(t.dataset.v);});});
+[].forEach.call(document.querySelectorAll('a[data-go]'),function(a){a.addEventListener('click',function(ev){ev.preventDefault();go(a.dataset.go,a.dataset.status?{status:[a.dataset.status]}:{},true);});});
+[].forEach.call(document.querySelectorAll('.archidx a[data-arch]'),function(a){a.addEventListener('click',function(ev){ev.preventDefault();go('all',{arch:[a.dataset.arch]},true);});});
+[].forEach.call(document.querySelectorAll('.found a[data-src]'),function(a){a.addEventListener('click',function(ev){ev.preventDefault();go('all',{source:[a.dataset.src]},true);});});
+tb.addEventListener('click',function(ev){var b=ev.target.closest('button');
+ if(b){if(b.dataset.arch){state.f.arch=[b.dataset.arch];reset();render();top.scrollIntoView({block:'start'});}else if(b.dataset.act==='clear'){state.q='';state.f={};qi.value='';reset();render();}return;}
+ if(ev.target.closest('a'))return;var r=ev.target.closest('tr.e');if(!r)return;if(ev.ctrlKey||ev.metaKey)window.open(r.dataset.href);else location.href=r.dataset.href;});
+more.addEventListener('click',function(ev){var b=ev.target.closest('button');if(!b)return;var a=b.dataset.act;if(a==='n')state.n+=PAGE;else if(a==='all')state.n=1e9;else if(a==='g')state.g+=GROUPS;render(true);});
+[].forEach.call(document.querySelectorAll('#cat th[data-sort]'),function(th){th.addEventListener('click',function(){var s=th.dataset.sort;if(state.sort===s)state.dir=-state.dir;else{state.sort=s;state.dir=(s==='year'||s==='title'||s==='cls'||s==='difficulty')?1:-1;}render();});});
+chips.forEach(function(b){b.addEventListener('click',function(){var k=b.dataset.facet,v=b.dataset.val,s=state.f[k]=state.f[k]||[],i=s.indexOf(v);if(i<0)s.push(v);else s.splice(i,1);if(!s.length)delete state.f[k];reset();render();});});
+var qt;qi.addEventListener('input',function(ev){clearTimeout(qt);var v=ev.target.value;qt=setTimeout(function(){state.q=v.trim().toLowerCase();reset();render();},140);});
 // phones: the filters fold behind one button, and a menu replaces the column headings as the sort control
-(function(){var bar=document.getElementById('list'),b=document.createElement('button');b.type='button';b.id='ftoggle';b.className='chip';b.textContent='Filters';b.setAttribute('aria-expanded','false');
- b.addEventListener('click',function(){var on=bar.classList.toggle('fopen');b.setAttribute('aria-expanded',on?'true':'false');});qi.after(b);
+(function(){var b=document.createElement('button');b.type='button';b.id='ftoggle';b.className='chip';b.textContent='Filters';b.setAttribute('aria-expanded','false');
+ b.addEventListener('click',function(){var on=cf.classList.toggle('fopen');b.setAttribute('aria-expanded',on?'true':'false');});qi.after(b);
  var s=document.createElement('select');s.id='msort';s.setAttribute('aria-label','Sort by');[['prio','Sort: priority'],['year','Sort: date'],['title','Sort: name'],['importance','Sort: importance'],['solvability','Sort: solvability'],['difficulty','Sort: difficulty']].forEach(function(o){var x=document.createElement('option');x.value=o[0];x.textContent=o[1];s.appendChild(x);});
- s.addEventListener('change',function(){state.sort=s.value;state.dir=(s.value==='year'||s.value==='title'||s.value==='difficulty')?1:-1;render();});b.after(s);
- var note=document.querySelector('.archnote');if(note)note.addEventListener('click',function(){note.classList.toggle('x');});})();
+ s.addEventListener('change',function(){state.sort=s.value;state.dir=(s.value==='year'||s.value==='title'||s.value==='difficulty')?1:-1;render();});b.after(s);})();
 [['w_imp','imp'],['w_sol','sol'],['w_eas','eas']].forEach(function(p){document.getElementById(p[0]).addEventListener('input',function(ev){state.w[p[1]]=ev.target.value/100;render();});});
-clr.addEventListener('click',function(){state.q='';state.f={};qi.value='';render();});
+clr.addEventListener('click',function(){state.q='';state.f={};qi.value='';reset();render();});
 document.getElementById('wreset').addEventListener('click',function(){state.sort='prio';state.dir=-1;state.w={imp:D.weights.importance,sol:D.weights.solvability,eas:D.weights.ease};document.getElementById('w_imp').value=state.w.imp*100;document.getElementById('w_sol').value=state.w.sol*100;document.getElementById('w_eas').value=state.w.eas*100;render();});
 var qm=/[?&]q=([^&#]+)/.exec(location.search);if(qm){var qv=decodeURIComponent(qm[1].replace(/\+/g,' '));qi.value=qv;state.q=qv.trim().toLowerCase();}
-if(!(hm&&G[hm[1]])){if(location.hash.indexOf('=')<0){state.f.access=['online'];state.f.status=['new'];}load();}
-render(!location.hash||hm);
-if(hm&&G[hm[1]])document.getElementById('hashnote').scrollIntoView();
+if(hm&&G[hm[1]])state.v='gone';else load();
+render(!location.hash||hm||location.hash.indexOf('=')<0);
+if(hm&&G[hm[1]]){var gi=document.getElementById('e'+hm[1]+'g');if(gi)gi.classList.add('hit');document.getElementById('hashnote').scrollIntoView();}
+else if(location.hash.indexOf('=')>0||location.hash==='#gone')top.scrollIntoView({block:'start'});
 })();
 '''
 
 
-CAT_FIELDS = ('id', 'title', 'correspondents', 'place', 'shelfmark', 'why', 'status', 'known', 'open', 'region', 'language', 'date', 'year',
-              'importance', 'solvability', 'difficulty', 'cls')    # what CAT_JS reads of an entry
+def data_entry(e, k):
+    """What the page script reads of an entry, under short keys (the page embeds all of them)."""
+    rid = RP.of(e)
+    r = RP.info(rid)
+    d = {'id': e['id'], 't': e['title'], 'd': e['date'], 'y': e['year'], 'w': e['why'], 's': e['shelfmark'],
+         'i': e['importance'], 'so': e['solvability'], 'df': e['difficulty'], 'c': e['cls'], 'r': rid, 'k': help_kind(e),
+         'o': short_outcome(e), 'f': k,
+         'q': ' '.join(str(x) for x in (e['correspondents'], e['place'], e['region'], e['language'], e.get('known') or '', e.get('open') or '') if x)}
+    if flags(e): d['x'] = flags(e)
+    if seen_image(e): d['im'] = 1
+    if e.get('outcome') or progress(e): d['at'] = 1
+    if progress(e): d['pg'] = ', targets/'.join(f for f, _, _ in progress(e))
+    if entry_href(e) != solve_href(e): d['h'] = entry_href(e)
+    lp = link_pairs(e)[:1]
+    if lp: d['l'] = list(lp[0])
+    return d
+
 
 def build_html():
     E = DATA['entries']
-    state, gone_rows, n_gone = status_html(E)
-    gone_js = json.dumps({i: [[n, sl] for n, _, _, sl, _ in SOLVED[i]] for i in sorted(set(SOLVED) - {e['id'] for e in E})}, ensure_ascii=False).replace('</', '<\\/')
-    ordered = sorted(E, key=lambda e: (not is_open(e), not e['counted'], -priority(e), e['id']))
+    ids = {e['id'] for e in E}
+    gone = sorted(set(SOLVED) - ids)
+    gone_js = json.dumps({i: [[n, sl] for n, _, _, sl, _ in SOLVED[i]] for i in gone}, ensure_ascii=False).replace('</', '<\\/')
+    fk = [filter_keys(e) for e in E]
+    keys = [all_keys(e, k) for e, k in zip(E, fk)]
     counted = [e for e in E if e['counted'] and is_open(e)]
-    keys = [filter_keys(e) for e in E]
     langs = [(l.lower(), l) for l in CAT_LANGS] + [('other', 'other'), ('unknown', 'unknown')]
-    data_js = json.dumps({'weights': W, 'entries': [dict({f: e.get(f) for f in CAT_FIELDS}, f=k) for e, k in zip(E, keys)]}, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
+    used = sorted({RP.of(e) for e in E})
+    arch = {rid: [RP.info(rid).get('short') or RP.info(rid)['name'], RP.info(rid).get('city') or '', RP.info(rid).get('country') or '',
+                  RP.info(rid)['name'], arch_place(RP.info(rid))] for rid in used}
+    n_arch = collections.Counter(k['arch'] for k in keys)
+    arch_vals = [(rid, arch[rid][0]) for rid in sorted(used, key=lambda r: (-n_arch[r], arch[r][0]))]
+    data_js = json.dumps({'weights': W, 'arch': arch, 'help': HELP, 'flags': {c: list(v) for c, v in FLAG_PILLS.items()},
+                          'views': {v: d for v, _, d in VIEWS},
+                          'entries': [data_entry(e, k) for e, k in zip(E, fk)]},
+                         ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
     n_all, n_img = len(E), sum(1 for e in E if seen_image(e))
-    n_dec = sum(1 for e in E if e.get('source') == 'DECODE')
-    n_arch = sum(1 for e in E if e.get('access') == 'archive' and is_open(e))
     years = [e['year'] for e in E if e['year']]
+    first = sorted((e for e, k in zip(E, keys) if in_view(k, 'try')), key=lambda e: (-priority(e), e['id']))[:30]
+    prs = open_prs()
+    tabs = ''.join(f'<a role="tab" href="#v={v}" data-v="{v}" aria-selected="{"true" if v == "try" else "false"}">{lab} <span class="n">'
+                   f'{sum(in_view(k, v) for k in keys) if v != "gone" else len(gone)}</span></a>' for v, lab, _ in VIEWS)
     page = f'''<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Unsolved Catalogue — {len(E)} ciphers nobody has read</title>
-<meta name="description" content="{len(E)} undeciphered historical cipher letters, {min(years)}–{max(years)}. Each has its own page with the sources, what has been tried, and instructions to hand to an AI agent.">
+<meta name="description" content="{len(E)} undeciphered historical cipher letters, {min(years)}–{max(years)}, held by {len([r for r in used if RP.info(r)['kind'] not in ('print', 'unknown')])} archives and libraries. Each has its own page with the sources, what has been tried, and instructions to hand to an AI agent.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body id="top" class="nojs">
 <!-- site:nav -->
 
 <section class="hero">
-  <p class="kicker">{min(years)}–{max(years)} · {len(E)} ciphers · {n_gone} moved out to <a href="writeups.html">write-ups</a> · entries last checked {fmt_day(AS_OF)}</p>
+  <p class="kicker">{min(years)}–{max(years)} · {len(E)} ciphers · {len(gone)} moved out to <a href="writeups.html">write-ups</a> · entries last checked {fmt_day(AS_OF)}</p>
   <h1>The Unsolved <span class="stk">Catalogue<a class="sticker" href="#list" title="Pick a cipher below"><span><b>Help<br>Solve!</b><small>pick one below</small></span></a></span></h1>
   <p class="sub">Historical cipher letters that nobody has read. Pick one, open its page, and give that page&rsquo;s address to your AI agent: the page holds the sources, what has been tried and the instructions.</p>
   <ol class="steps"><li><b>1</b>pick a row</li><li><b>2</b>open its page</li><li><b>3</b>point your agent at the URL</li><li><b>4</b>send back what it finds</li></ol>
+{summary_html(E, keys, len(gone), prs)}
 </section>
 
 <main>
 <div id="hashnote" hidden></div>
-<div class="callout archnote" data-term-ok><strong>Many of these cannot be read from a desk.</strong> {n_arch} of the open entries are marked <span class="pill arch">needs archive scans</span>: the ciphertext, or the key material that would unlock it, is not online, so nothing can be deciphered until the archive digitises it or someone photographs it in the reading room. They are listed because a request to the archive, or a visit, is the first step.</div>
-<div class="cfilters jsonly" id="list" role="search">
-  <input type="search" id="q" placeholder="Search: name, place, shelfmark, year…" aria-label="Search the catalogue">
+<h2 id="list">The ciphers</h2>
+<div class="cbar" id="cbar">
+<nav class="views jsonly" role="tablist" aria-label="Which ciphers">{tabs}</nav>
+<p class="vdesc" id="vdesc">{VIEWS[0][2]}</p>
+<div class="cfilters jsonly" role="search">
+  <input type="search" id="q" placeholder="Search: name, place, archive, shelfmark, year…" aria-label="Search the catalogue">
+  {dropdown('Archive', facet('country', 'Country', by_count(keys, 'country', last=('none',)), keys) + facet('arch', 'Archive', arch_vals, keys), 'country arch')}
   {dropdown('Language', facet('lang', 'Language', langs, keys), 'lang')}
   {dropdown('Century', facet('century', 'Century', CENTURIES, keys), 'century')}
   {dropdown('Region', facet('region', 'Region', by_count(keys, 'region', last=('Other',)), keys), 'region')}
   {dropdown('Class', facet('cls', 'Class', CLASSES, keys), 'cls')}
-  {dropdown('Status', facet('status', 'Status', STATUSES, keys) + facet('access', 'Access', ACCESS, keys) + facet('help', 'Help needed', [('solve', 'Help solve'), ('read', 'Help read'), ('obtain', 'Help obtain')], keys), 'status access help')}
-  {dropdown('More', facet('source', 'Found in', SOURCES, keys)
+  {dropdown('Status', facet('status', 'Status', STATUSES, keys) + facet('pieces', 'Known pieces', [('known', 'some pieces already read')], keys) + facet('access', 'Access', ACCESS, keys) + facet('help', 'Help needed', [('solve', 'Help solve'), ('read', 'Help read'), ('obtain', 'Help obtain')], keys), 'status pieces access help')}
+  {dropdown('More', facet('source', 'Found via', SOURCES, keys)
             + facet('seen', 'Checked on', [('image', 'the image'), ('catalogue', 'catalogue description only')], keys)
             + facet('frame', 'Cipher located on a frame', [('confirmed', 'confirmed'), ('missing', 'none at the named frame'), ('viewed', 'viewed earlier'), ('unconfirmed', 'not yet confirmed')], keys)
             + facet('counted', 'Ranking', [('counted', 'counted'), ('noted', 'noted only')], keys)
@@ -574,31 +742,38 @@ def build_html():
   <span class="count" id="count" aria-live="polite"></span>
   <button type="button" class="chip clear" id="reset" hidden>clear filters</button>
 </div>
+</div>
 
-<div class="tw"><table class="cat" id="cat">
+<div class="tw" id="tw"><table class="cat" id="cat">
 <colgroup><col class="c-prio"><col class="c-date"><col class="c-item"><col class="c-shelf"><col class="c-sc"><col class="c-sc"><col class="c-sc"><col class="c-cls"></colgroup>
 <thead><tr>
 <th class="prio" data-sort="prio" aria-sort="descending">Priority</th><th data-sort="year">Date</th><th data-sort="title">Cipher</th><th>Where</th>
 <th class="sc" data-sort="importance">Import.</th><th class="sc" data-sort="solvability">Solvab.</th><th class="sc" data-sort="difficulty">Difficulty</th><th class="cls" data-sort="cls">Class</th>
 </tr></thead>
 <tbody>
-{"".join(row(e) for e in ordered)}
+{"".join(row(e) for e in first)}
 </tbody></table></div>
+<div class="more jsonly" id="more"></div>
+<noscript><p class="vdesc">Without JavaScript only the {len(first)} highest-priority entries that can be worked from a desk are listed. The whole catalogue is in <a href="https://github.com/dbourdeau/cyphersolver/blob/main/CATALOGUE.md">CATALOGUE.md</a>, and every entry has its own page at solve/&lt;number&gt;.html.</p></noscript>
 <div class="legend"><span>click a row for its page</span><span>● viewed on the image</span><span>◇ catalogue description only</span><span>gold dots importance / solvability</span><span>red dots difficulty</span><span>class A sibling deciphered · B partial key in print · C no key</span></div>
 
-{state}
+<div class="gonep" id="gonep">
+<h3 id="gone">Numbers that have left the catalogue <span class="n">{len(gone)}</span></h3>
+<p class="d">If a number you were given is not in the list, it is here. <i>+1</i> marks a number split between write-ups; a piece still open stays in the list under its number. Hover a number for its write-ups and the day each landed.</p>
+{gone_html(gone)}
+</div>
 
-<h2 id="gone">Numbers that have left the catalogue</h2>
-<p>{n_gone} catalogue numbers as of {fmt_day(datetime.date.today().isoformat())}, with the write-ups that took them out and the day each landed. <i>(part)</i> marks a split entry: that piece has an outcome, and any piece still open stays in the table above under its number.</p>
-<div style="overflow-x:auto"><table class="gone"><thead><tr><th>No.</th><th>Write-up</th><th>Outcome</th><th>Landed</th></tr></thead><tbody>{gone_rows}</tbody></table></div>
+{sources_html(E)}
 
-<h2>About the catalogue</h2>
-<p>What is still in cipher in the digitised diplomatic volumes, and nobody has read. The first entries came from the French volumes on Gallica; the rest ({n_dec}) from the DECODE database, every ciphertext record it marks non-decrypted or partly decrypted, grouped into letters and series and checked against this repository's own targets and Tomokiyo's list. A sweep of 22 Sept 2026 added candidates for new solves and outside reads: DECODE records never classified, letters Tomokiyo calls undeciphered while naming a key, Gallica notices and the printed calendars. On 14 Oct 2026 open items were pulled from Satoru&rsquo;s <a href="https://cryptoole.satoru.net/" rel="noopener">Cryptoole</a> index and checked against the repository. {len(counted)} entries are counted targets, {len(E) - len(counted)} are noted only. Class <b>A</b> means siblings with decipherment in the same volume, <b>B</b> a partial key or known family in print, <b>C</b> no key and no sibling. Entries read, partly read, resolved or found already in print are taken out of the catalogue and written up; those attempted here without a reading stay, tagged <b>attempted, open</b>. An entry a target folder is working on now is tagged <b>in progress</b>, read at each rebuild from the head of the folder&rsquo;s NOTES.md, and its page links those notes.</p>
-<p>Scores are judgements from catalogue descriptions and the literature, not from the leaves: {n_img} of {n_all} entries have been viewed on the image, and each page carries the check that would confirm it is open. Data: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/catalogue.json" rel="noopener">catalogue.json</a> · text: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/CATALOGUE.md" rel="noopener">CATALOGUE.md</a> · how to send a result: <a href="contribute.html">contribute</a>.</p>
-
-<h2>How the scores were set</h2>
-<p><b>Importance</b> asks what a full reading would add: 5 for a first-hand report of a major event by a principal witness (du Bellay in London 1529, Lanssac at the Polish election), 2 for routine business. <b>Solvability</b> asks whether the material online is enough: 5 when deciphered siblings of the same hand and year sit in the same volume, 1 for one short letter in an unknown language. <b>Difficulty</b> is the technical work at the keyboard: 1 for aligning a known sibling, 5 for a statistics-only attack on a large homophonic nomenclator. The default priority weights importance {W['importance']}, solvability {W['solvability']} and ease {W['ease']} (ease is 6 minus difficulty), rescaled to 0–10; change them under &ldquo;More&rdquo; above the table. Every score is a judgement made before viewing the leaf, so treat the order as a work plan, not a finding.</p>
-<p><b>Checked:</b> catalogue descriptions and item numbering; presence or absence of a decipherment item in each volume; shelfmarks from the IIIF manifests. For the DECODE entries: the record metadata and notes, key records from the same archive series, overlap with this repository's targets and with Tomokiyo's list. Entries tagged <i>rule-scored</i> were scored by a script from DECODE's metadata and not yet reviewed by hand. Verify each entry on the image and in the literature before attacking it.</p>
+<h2 id="about">About the catalogue</h2>
+<p>Historical cipher documents that nobody has read: ciphertext with no decipherment known in the document itself, in DECODE, in Tomokiyo&rsquo;s and Lasry&rsquo;s lists, in the edition or in the literature. It began with the French diplomatic volumes on Gallica and the records DECODE marks not decrypted, and grew through sweeps of archive portals, finding aids and printed calendars (<a href="#where">where the ciphers are</a>). Since the October 2026 sweeps a new find enters only after vetting: the ciphertext seen, prior art searched, keys recorded, duplicates checked; the rest wait as leads. {len(counted)} entries are counted targets, {len(E) - len(counted)} are noted only.</p>
+<p>Class <b>A</b> means a sibling with a decipherment in the same volume, <b>B</b> a partial key or a known family in print, <b>C</b> no key and no sibling. An entry read, partly read, resolved or found in print leaves the catalogue and is written up (<a href="#v=gone" data-go="gone">left the catalogue</a>); one attempted here without a reading stays, tagged <b>attempted, open</b>; one a target folder is working on is tagged <b>in progress</b>, read at each rebuild from the head of the folder&rsquo;s NOTES.md. Data: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/catalogue.json" rel="noopener">catalogue.json</a> · text: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/CATALOGUE.md" rel="noopener">CATALOGUE.md</a> · how to send a result: <a href="contribute.html">contribute</a>.</p>
+<details class="about"><summary>How the scores were set</summary>
+<p><b>Importance</b> asks what a full reading would add: 5 for a first-hand report of a major event by a principal witness (du Bellay in London 1529, Lanssac at the Polish election), 2 for routine business. <b>Solvability</b> asks whether the material online is enough: 5 when deciphered siblings of the same hand and year sit in the same volume, 1 for one short letter in an unknown language. <b>Difficulty</b> is the technical work at the keyboard: 1 for aligning a known sibling, 5 for a statistics-only attack on a large homophonic nomenclator. The default priority weights importance {W['importance']}, solvability {W['solvability']} and ease {W['ease']} (ease is 6 minus difficulty), rescaled to 0–10; change them under &ldquo;More&rdquo; above the list. Every score is a judgement made before viewing the leaf, so treat the order as a work plan, not a finding.</p>
+</details>
+<details class="about"><summary>What was checked</summary>
+<p>Scores are judgements from catalogue descriptions and the literature, not from the leaves: {n_img} of {n_all} entries have been viewed on the image, and each page carries the check that would confirm it is open. Checked for every entry: the catalogue description and item numbering, the presence or absence of a decipherment in the volume, and the shelfmark. For the DECODE entries: the record metadata and notes, key records from the same archive series, overlap with this repository&rsquo;s targets and with Tomokiyo&rsquo;s list. Entries tagged <i>rule-scored</i> were scored by a script from DECODE&rsquo;s metadata and not yet reviewed by hand. Verify each entry on the image and in the literature before attacking it.</p>
+</details>
 </main>
 <!-- site:footer -->
 <script id="catdata" type="application/json">{data_js}</script>

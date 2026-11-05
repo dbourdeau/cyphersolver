@@ -135,7 +135,10 @@ def check():
         print(f'catalogue id {d} appears more than once'); bad += 1
     for d in sorted(set(ids) & {l['id'] for l in leads}):
         print(f'id {d} is both a catalogue entry and a lead'); bad += 1
+    import _repositories as R       # each entry's holding archive: an id in repositories.json (docs/_repositories.py --write fills it)
     for e in entries:
+        if e.get('repository') and e['repository'] not in R.BY_ID:
+            print(f'#{e["id"]} repository "{e["repository"]}" is not in repositories.json'); bad += 1
         if e['id'] < GATE_ID:
             continue
         p = vetting_problems(e)
@@ -173,6 +176,8 @@ def promote(nums):
         if p:
             print(f'#{n}: not promoted'); [print(f'   {x}') for x in p]; continue
         leads.remove(e)
+        import _repositories as R
+        e.setdefault('repository', R.guess(e) or 'unidentified')
         e['scored'] = 'vetted'
         if e['vetting']['seen']['kind'] != 'not online':
             e['seen'] = 'image'
