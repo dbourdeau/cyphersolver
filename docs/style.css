@@ -1814,6 +1814,18 @@ body.pg-catalogue .archnote{margin:1rem 0}
 @keyframes cipher-trail{0%{opacity:0;transform:translate(-50%,-50%) rotate(var(--rot)) scale(.8)}15%{opacity:.16}100%{opacity:0;transform:translate(-50%,-110%) rotate(var(--rot)) scale(1.1)}}
 
 /* archives.html: requests for archives and libraries (docs/_archives_page.py) */
+body.pg-archives .hero{padding-top:4.6rem}
+body.pg-archives .hero .kicker{letter-spacing:.13em}
+body.pg-archives .ahero-grid{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:2.4rem;align-items:stretch}
+/* the photo takes the height of the title block beside it: absolutely placed, so it adds no height of its own */
+body.pg-archives .ahero{position:relative;margin:0;max-width:none;min-height:300px;border-radius:12px;overflow:hidden;border:1px solid var(--rule);box-shadow:0 14px 34px -20px rgba(0,0,0,.6);background:var(--panel2)}
+body.pg-archives .ahero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+body.pg-archives .ahero figcaption{position:absolute;left:0;right:0;bottom:0;margin:0;padding:1.8rem .8rem .55rem;background:linear-gradient(to top,rgba(14,10,6,.78),rgba(14,10,6,0));color:#efe6d4;font-family:var(--ui);font-style:normal;font-size:0.72rem;line-height:1.4;text-align:left}
+body.pg-archives .ahero figcaption .credit{font-size:inherit;opacity:.8}
+body.pg-archives .ahero figcaption a{color:inherit;text-decoration:underline dotted;text-underline-offset:3px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) body.pg-archives .ahero img{filter:brightness(.95)}}
+:root[data-theme="dark"] body.pg-archives .ahero img{filter:brightness(.95)}
+@media (max-width:820px){body.pg-archives .hero{padding-top:3rem}body.pg-archives .ahero-grid{grid-template-columns:minmax(0,1fr);gap:1.2rem}body.pg-archives .ahero{min-height:0;aspect-ratio:3/2;border-radius:10px}}
 body.pg-archives .steps{display:flex;flex-wrap:wrap;gap:.4rem .9rem;margin:.9rem 0 0;padding:0;list-style:none;font-family:var(--ui);font-size:.9rem;color:var(--ink2)}
 body.pg-archives .steps li{display:flex;align-items:center;gap:.45rem;margin:0}
 body.pg-archives .steps b{display:inline-grid;place-items:center;width:1.5rem;height:1.5rem;border-radius:50%;background:var(--gold);color:var(--gold-ink);font-size:.78rem}
