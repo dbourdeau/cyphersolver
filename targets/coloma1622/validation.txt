@@ -1,0 +1,31 @@
+coloma1622 - tests of the key (contributor's protocols, not docs/_validate.py)
+
+System. A syllabary on a grid (fV = tV, xV = nV, cVr = rV, xVr = sV, sVr = cV, sVn = pV, fVn = pVr, frV = gV, Vs = mV),
+two-digit numbers for letters and syllables, three-digit numbers and underlined tokens for code words, ligatures faz / fez /
+fuz = que. The same system is used in the Duke of Feria's letters to Coloma (BNE RES/227/120, 127, 128, 129), whose cipher
+passages carry a contemporary clear in the left margin, and in BNE MSS/18428 (Mirabel's letters to Gondomar).
+
+Each key was frozen by SHA-256 before its held-out passage was viewed; each held-out passage was used once.
+Character score = alignment of the decryption with the contemporary clear. Controls = 200 keys shuffling the key's values
+among the tokens present (seed 1622); control = the best of the 200.
+Thresholds fixed in advance: VALIDATED >= 0.85 and >= control + 0.30; PARTIAL: gap >= 0.30 without 0.85; otherwise FAILED.
+(The first test, C01, had no clear and used M5 with thresholds >= 0.60 and >= +0.30.)
+
+| test | date | key (SHA-256) | held-out passage | units covered | score | best control | gap | result |
+|------|------|---------------|------------------|---------------|-------|--------------|-----|--------|
+| C01 | 4 Nov | K-C01 (4299d5d3...) | Mirabel f.1v ll. 12-21 (target letter; no clear) | 198/214 | M5 0.333 | 0.169 | 0.164 | FAILED |
+| C02 | 4 Nov | CLE_C02 (bbad3852...) | Feria, RES/227/127 f.1r, against its margin clear (169 letters) | 69/74 | 0.761 | 0.437 | 0.324 | PARTIAL |
+| H3 | 5 Nov | CLE_C03 (475970e4...) | Feria, RES/227/128 f.1v, against its margin clear (491 letters) | 182/199 | 0.690 | 0.419 | 0.271 | FAILED |
+| H4 | 5 Nov | CLE_C04 (714f70ba...) | MSS/18428 p. 15 left | - | - | - | - | NO MEASUREMENT: the "margin clear" was the verso seen through the paper (mirror show-through); reserve burned, not replaced (rule fixed in advance) |
+| H5 | 5 Nov | CLE_C04 (714f70ba...) | MSS/18428 p. 44 right, 3 cipher lines, against its margin clear (91 letters) | 51/55 | 0.814 | 0.466 | 0.348 | PARTIAL |
+
+Notes
+- C01's held-out lines belong to the target letter; they are now read like the rest (the key has changed since).
+- H3 failed mainly through 11 code words absent from the key and 3 transcription faults ("no" = code PARA QUE; a triangle sign
+  read V; "fa z" read faz). H5 losses: 29, zam and 84‡ unknown; 94‡ (cho? / de), Ð (n? / t) and fon (por / de) in conflict.
+- H4: before H5, a test of dark ink in the margin was added by amendment (AMENDMENT-C04-1, 2010e249...) and pages 23, 52, 7
+  (left) were set aside as clear only, p. 32 failed the test, p. 7 right was set aside (interlinear clear glimpsed).
+- The grid holds in every test; the losses are code words and marked signs (barred, or with a raised r) not in the training text.
+
+Reading key. The reading of Mirabel's letter uses CLE_C02 with the values of CLE_C04 that come from clear text outside the
+letter (RES/227/128-129); no value was taken from the reading itself without being marked restored.
