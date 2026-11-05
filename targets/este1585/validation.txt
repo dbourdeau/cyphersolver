@@ -1,0 +1,39 @@
+este1585 - tests of the key on BnF Cinq Cents de Colbert 338 (contributor's protocols, not docs/_validate.py)
+
+The key is Satoshi Tomokiyo's table "Cardinal d'Este's Cipher (1584-1586)" (Cryptiana, built on BnF fr. 16041-16042), with our
+shape names and a few values fixed on pages of Colbert 338 that carry a contemporary gloss. Each protocol and amendment was
+hashed (SHA-256) before the computation it governs.
+
+A. Tests against the contemporary glosses of the volume (29 Oct 2026; thresholds 0.85 on characters and 0.75 on words,
+   200 shuffled keys as controls). None passes; all five pieces are now used ("burned").
+   | test | piece | key | characters | words | best control (chars / words) | result |
+   |------|-------|-----|-----------|-------|------------------------------|--------|
+   | V1 | p. 453, margin gloss cut by the binding | K-T | 0.438 | 0.395 | 0.151 / 0.163 | applicable, below thresholds |
+   | V2 | p. 504, outer margin gloss | K-T2 | 0.777 | 0.634 | 0.332 / 0.098 | below thresholds |
+   | V3 | p. 454 ll. 1-4 against the clear at the foot of p. 453 (already seen: not blind) | K-T3 | 0.860 | 0.684 | 0.290 / 0.053 | indicative only |
+   | V4 | pp. 437-438 against the margin gloss of p. 438 | K-T3 | (0.323 raw) | | (0.031 raw) | NOT ADMISSIBLE: only 36% of gloss letters alignable (the gloss belongs to another passage) |
+   | V5 | p. 436-438 against 6 clear lines at the foot of pp. 436-437 | K-T4 | (0.601 raw) | | (0.374 raw) | NOT ADMISSIBLE: 69.7% of letters retained, rule 70% |
+   Why: the glosses of this volume are not literal (summaries, other wording, abbreviations such as "maral"), and some are cut
+   in the gutter. The cipher passages read as French with every key from K-T2 on, but the formal test was never met.
+
+B. Probable words and a single held-out page (5 Nov 2026; protocol PROTOCOLE-CRIBS 933401e4...)
+   - Probable words, fixed in a list before any trial, placed on the pages already seen (A) only. One value changed:
+     alpha with a descending tail = f ("differer / difficultes", 4 places). Key K-C01 frozen (SHA-256 002d38d9...).
+   - H = p. 523 (view 275, right page), a whole page in cipher with no gloss, never transcribed or decoded before; transcribed by
+     shapes after the freeze and hashed before decoding (08a3f8a0...). The transcriber knew the table but applied no tool to H.
+   - Metric M5: share of decoded letters covered by French words of 5+ letters (the repository's lang/lexicons/fr.json.gz,
+     frequency >= 5, accents removed, j->i, v->u, y->i), dynamic programming over the whole page; nulls give nothing; a sign
+     with no value counts as an uncovered letter. Controls: 200 keys shuffling the letter values of K-C01, seed 523.
+   - Thresholds fixed in advance: VALIDATED M5 >= 0.60 and >= best control + 0.30; PARTIAL if the gap holds without 0.60.
+     Calibration declared before the measurement: the contemporary glosses themselves score 0.50-0.73 on M5 (0.62 on the two
+     longest), so 0.60 sits near the ceiling.
+   - Result (one measurement): 777 signs, 766 with a value (0.986); M5 = 0.457; controls max 0.078, median 0.014; gap 0.379.
+     DECISION: PARTIAL.
+
+C. After the measurement (not part of any test)
+   - newt (thin c + barred t) = nn, found by reading (donner, donna, vienne; 3/3 places on p. 523).
+   - Blind shape sheet R14 (pre-registered 0185789d..., 14 questions, shapes only, answered by Brice Dudout, answers 2e913cf6...):
+     9 tokens changed in the reading copy; "l'a", "il", "premier" became probable; one unresolved word removed. Three remarks
+     not foreseen by the pre-registration were applied as written (see NOTES.md, deviations); none changed a count.
+   - The barred dumbbell (oob) is e in K-C01 and a null in Tomokiyo's table; it was not settled (it would need a separate,
+     hashed key amendment). It touches line 1 and line 22 only.
