@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Cipher Atlas — five centuries of secret letters on the map</title>
-<meta name="description" content="Every ciphered letter this site has read or attempted, drawn as an arc from where it was written to where it was sent, from Urbino in 1425 to Mogilev in 1942. Scrub or play through time.">
-<link rel="stylesheet" href="style.css?v=20261105a">
+<meta name="description" content="Every ciphered letter this site has worked on, drawn as a line from where it was written to where it was sent, from Avignon in 1399 to Mogilev in 1942. Follow the story, or open any line to see what the letter says.">
+<link rel="stylesheet" href="style.css?v=20261105b">
 <meta name="date" content="2026-09-21">
-<meta name="last-modified" content="2026-10-26">
+<meta name="last-modified" content="2026-11-05">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -44,59 +44,75 @@
 <section class="hero">
   <p class="kicker">Explore &middot; the map</p>
   <h1>The Cipher Atlas</h1>
-  <p class="sub">Every ciphered letter this site has read or tried to read, drawn as an arc from where it was written to where it was
-  sent. Press play to watch five centuries of secret diplomacy cross the map, from a Florentine commissioner at Urbino in 1425 to a
-  German police radio net on the Eastern Front in 1942. Hover an arc for the letter, click it for the write-up.</p>
-  <div class="jump"><a href="#map">The map</a><a href="#routes">Busiest routes</a><a href="#about">About the data</a><a href="keys.html">The key web</a></div>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-21">21 September 2026</time> &middot; updated <time datetime="2026-10-26">26 October 2026</time></p>
+  <p class="sub">Five centuries of secret letters, from a besieged pope at Avignon in 1399 to a police radio net in 1942. Follow the
+  story, or open any line on the map to see what the letter says.</p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-21">21 September 2026</time> &middot; updated <time datetime="2026-11-05">5 November 2026</time></p>
 </section>
 
 <main>
 
 <div class="atlas-wrap" id="map">
-  <div class="a-people" id="apeople">
-    <div class="a-ph"><span>Correspondents</span><input id="apq" type="search" placeholder="Find a correspondent" aria-label="Find a correspondent"></div>
-    <div class="a-row" id="arow" role="group" aria-label="Correspondents: pick one to see their letters, two to see the letters between them"></div>
+  <div class="a-stage">
+    <div class="a-mapcol">
+      <div class="atlas" id="atlas">
+        <div class="a-year" id="ayear"></div>
+        <div class="a-count" id="acount"></div>
+        <button type="button" class="a-world" id="aworld" hidden></button>
+        <div class="a-zoom" role="group" aria-label="Zoom the map">
+          <button type="button" id="azin" aria-label="Zoom in">+</button>
+          <button type="button" id="azout" aria-label="Zoom out">&minus;</button>
+          <button type="button" id="azreset" aria-label="Reset the map">&#8634;</button>
+        </div>
+        <div class="a-tip" id="atip" role="tooltip"></div>
+      </div>
+      <div class="a-legend" id="alegend" role="group" aria-label="Show or hide letters by how the text was obtained"></div>
+      <div class="a-ctl">
+        <button type="button" id="aplay" aria-label="Play through time">&#9654; Play</button>
+        <div class="a-time"><svg class="a-hist" id="ahist" preserveAspectRatio="none" aria-hidden="true"></svg>
+          <input type="range" id="aslider" min="1395" max="1945" step="1" value="1945" aria-label="Year">
+          <div class="a-ticks" id="aticks" aria-hidden="true"></div></div>
+        <div class="a-win" id="awin" role="group" aria-label="How many years to show at once">
+          <button type="button" data-w="10">10 yrs</button><button type="button" data-w="25">25 yrs</button><button type="button" data-w="0">All so far</button>
+        </div>
+        <button type="button" class="ghost" id="aall">All years</button>
+      </div>
+      <p class="a-feed" id="afeed"></p>
+    </div>
+    <aside class="a-panel" id="apanel" aria-label="Stories, people, routes and letters">
+      <div class="a-tabs" role="tablist" aria-label="Browse the atlas">
+        <button type="button" role="tab" id="atab-stories" data-tab="stories" aria-controls="abody">Story</button>
+        <button type="button" role="tab" id="atab-people" data-tab="people" aria-controls="abody">People</button>
+        <button type="button" role="tab" id="atab-routes" data-tab="routes" aria-controls="abody">Routes</button>
+      </div>
+      <div class="a-body" id="abody" role="tabpanel"></div>
+      <section class="a-sheet" id="asheet" tabindex="-1" hidden aria-label="Selected letters"></section>
+    </aside>
   </div>
-  <div class="atlas" id="atlas">
-    <div class="a-year" id="ayear">1425</div>
-    <div class="a-count" id="acount"></div>
-    <div class="a-legend" id="alegend"></div>
-    <div class="a-tip" id="atip" role="tooltip"></div>
-  </div>
-  <div class="a-ctl">
-    <button type="button" id="aplay" aria-label="Play through time">&#9654; Play</button>
-    <div class="a-time"><svg class="a-hist" id="ahist" preserveAspectRatio="none" aria-hidden="true"></svg>
-      <input type="range" id="aslider" min="1420" max="1945" step="1" value="1945" aria-label="Year">
-      <div class="a-ticks"><span>1420</span><span>1500</span><span>1600</span><span>1700</span><span>1800</span><span>1945</span></div></div>
-    <button type="button" class="ghost" id="aall">Show all</button>
-  </div>
-  <div class="a-filter" id="afilter" hidden aria-live="polite"></div>
-  <p class="a-feed" id="afeed" aria-live="polite"></p>
 </div>
 
-<h2 id="routes">Busiest routes</h2>
-<p>The same few lines carry most of the traffic: the nuncios writing home to Rome, the ambassadors of the Habsburgs and of France, and the
-Dutch envoys reporting to The Hague. Click a route to isolate it on the map, or a city on the map to see the routes through it.</p>
-<div class="a-top" id="atop"></div>
-
 <h2 id="about">About the data</h2>
-<p>Each arc is one document from a target's <code translate="no">profile.json</code>, the record kept for every cipher on this site. It is placed at the
-city where the letter was written and the city it was sent to, as the notes state them. A court or a person is placed where they were at
-that date. Letters whose sender or recipient cannot be located from the evidence are left off rather than guessed. So are the
-cryptograms with no route at all, such as Voynich, Scorpion and the gold bars. The coastlines are modern (Natural Earth); the
-map draws no frontiers, because they moved too often over five centuries. Colour gives the outcome of the write-up:
-<span style="color:var(--green)">read</span>, <span style="color:var(--blue)">explained or found already read</span>,
-<span style="color:var(--amber)">read in part</span>, <span style="color:var(--red)">attempted</span>.</p>
+<p>Each letter comes from a target's <code translate="no">profile.json</code>, the record kept for every cipher on this site. It is
+placed at the city where it was written and the city it was sent to, as the notes state them. A court or a person is placed where they
+were at that date. Letters whose sender or recipient cannot be located from the evidence are left off rather than guessed. So are the
+cryptograms with no route at all, such as Voynich, Scorpion and the gold bars.</p>
+<p>A line stands for one route in one direction, and it gets thicker with each letter sent along it. Moving dots show the direction of
+travel on the busiest routes on screen. A route's colour is the commonest outcome among the letters showing: <span style="color:var(--green)">key
+recovered</span> here, <span style="color:var(--blue)">an existing key applied</span>, <span style="color:var(--violet)">an existing
+decipherment</span>, or <span style="color:var(--red)">not solved</span>. The <a href="glossary.html">glossary</a> gives the exact categories.</p>
+<p>Hollow rings are letters from <a href="catalogue.html">the catalogue</a> with no known decipherment, at the one place the
+catalogue names, where that place can be located. English excerpts appear only where a reader has passed the reading, and never for
+texts withheld at their owner's request; each write-up has the complete text. The coastlines are modern (Natural Earth). The map draws
+no frontiers, because they moved too often over five centuries.</p>
 
 </main>
+
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
 <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
-<script src="atlas.js?v=5e9be40d" defer></script>
-<script src="site.js?v=20261105a"></script>
+<script src="atlas.js?v=2334b199" defer></script>
+<script src="site.js?v=20261105b"></script>
 </body>
 </html>

@@ -38,6 +38,8 @@ NEW_PLACES = {
     'Sondrio': [46.17, 9.872], 'Compiègne': [49.418, 2.826], 'Agen': [44.203, 0.616], 'Landriano': [45.311, 9.26], 'Locate': [45.351, 9.226],
     'Jackson, Mississippi': [32.299, -90.185], 'Richmond, Virginia': [37.541, -77.436], 'Manassas': [38.751, -77.475],
     'Montréal': [45.5017, -73.5673],  # Vaudreuil 1760, last seat of the governor of New France
+    'Lima': [-12.046, -77.043], 'Valparaíso': [-33.047, -71.613], 'Rio de Janeiro': [-22.907, -43.173], 'Buenos Aires': [-34.604, -58.382], 'Cayenne': [4.922, -52.313],  # open catalogue letters
+    'Regensburg': [49.013, 12.102], 'Wolfenbüttel': [52.162, 10.537], 'Antwerp': [51.219, 4.402], 'Darmstadt': [49.873, 8.651], 'Münster': [51.962, 7.626],
     'Leszno': [51.8457, 16.5753], 'Sárospatak': [48.3188, 21.5683], 'Tortosa': [40.812, 0.521], 'Almazán': [41.486, -2.531],
 }
 # words in a route that stand for a gazetteer place
@@ -118,6 +120,7 @@ def sync(pages=None):
                 gen.append({'slug': slug, 'doc': d.get('id', ''), 'year': y, 'date': d.get('date', ''), 'from': a, 'to': b,
                             'st': pages[slug]['st'], 'label': pages[slug]['label'], 'src': 'profile'})
                 used |= {a, b}
+    used |= {c for l in hand for c in (l['from'], l['to']) if c in names}   # a hand-drawn letter may name a place only NEW_PLACES has
     added = sorted(k for k in used if k not in at['places'])
     for k in added: at['places'][k] = names[k]
     at['letters'] = hand + sorted(gen, key=lambda l: (l['year'], l['slug']))
