@@ -84,7 +84,22 @@ Both show literal phrase repeats, so no additive is on them.
   curl and Chrome from this machine, probably because of that crawl. Search results show mostly notes, plus a radiogram of
   2 April to several missions (node 50549) and a telegram to Brodovsky. Neither text has been read.
 - Politburo decision "Predlozhenie t. Koppa", 16 April 1921, same date as frames 041-0876/0877: the notes tie it to goods
-  exchange. Text not seen.
+  exchange. Text not seen. The decision approves a reply to Kopp, so its date alone does not identify the Berlin to Moscow
+  intercept.
+
+## Dating and duplicates (5 Nov 2026)
+
+Checked against the cached NARA OCR of M316 roll 42 after an outside check of the same texts by a correspondent (name
+held until credit is agreed; no plaintext from their tests):
+
+- Nr 417 sits on a sheet headed "MAY 26th 1921 / FROM BERLIN TO MOSCOW" with the message line "FUNKSPRUCH Nr 417 VOM
+  23 MAI 1921". The sheet date is the intercept date; 23 May is the message date.
+- It belongs to Bristol No. 246, Constantinople, 31 May 1921, stamped 861.00/8742 (object 604704182), enclosure "Cipher
+  telegrams exchanged between Moscow and Berlin, etc. May 26th-31st inclusive". Roll 42 covers 861.00/8623-8773.
+- Our three transcriptions total 717 positions; the small table is the 715 complete groups. Not in them: one partial last
+  line of 041-0876 and an overwritten group before 9603 in Nr 417.
+- No parallel copy: runs of three groups from each text match only their own frame in rolls 40-48.
+- Nr 421 and 427 (23 and 24 May, Berlin to Moscow) are five-digit SWET messages, not four-figure like Nr 417.
 
 ## Figure traffic after the letter break
 
