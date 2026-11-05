@@ -44,6 +44,9 @@
   "es-golden-age": {"language": "es", "period": "1490-1650", "norm": "early", "order": 5, "spaces": true,
     "sources": ["es-quijote", "es-vasto-memorias"], "language_id": false,
     "use_for": "Habsburg-era Spanish ciphers (Ferdinand, Charles V, Philip II)", "replaces": ["targets/esp318/lm.py", "targets/vasto1527/lm.py"]},
+  "es-golden-age-nospace": {"language": "es", "period": "1490-1650", "norm": "early", "order": 5, "spaces": false,
+    "sources": ["es-quijote", "es-vasto-memorias"], "language_id": false,
+    "use_for": "letter-level homophonic and code-group work on Habsburg-era Spanish (leopold1680)", "replaces": []},
   "ca-modern": {"language": "ca", "period": "1490-1920", "norm": "early", "order": 5, "spaces": true,
     "sources": ["ca-gutenberg"], "use_for": "Catalan (Crown of Aragon)", "replaces": ["targets/maria1435/lm"]},
 

@@ -1,0 +1,146 @@
+{
+ "schema_version": 1,
+ "target": "leopold1680",
+ "title": "Emperor Leopold I to Charles II of Spain, autograph cipher letter, Prague 14 Apr 1680 (BNE RES/261/58)",
+ "documents": [
+  {
+   "id": "RES/261/58",
+   "read": "not read",
+   "shelfmark": "Madrid, BNE, RES/261/58 (BNE Digital, id 29736cc9-91f0-4f84-b38e-93bb5f93f932)",
+   "date": "14 Apr 1680",
+   "year": 1680,
+   "country": "Czech Republic",
+   "route": "Prague (Leopold I, autograph) -> Madrid (Charles II)",
+   "language": "Spanish",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaf, in the margin or on the BNE card; none found in print or online (Tomokiyo habsburg.htm, Lasry, three web searches, DECODE ledgers; see NOTES.md)."
+   },
+   "length": {
+    "tokens": 250,
+    "distinct": 86,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "BNE Digital viewer page 5, single-page PDF (one embedded image 1654 x 2473 px), CC BY 4.0",
+    "image_quality": "good",
+    "notes": "Measured distinct 86 counts 4 doubtful readings (181?, 75?, 45?, 104?, 120?) as separate tokens; the plain value count is 85. The long pen-stroke running through most groups is not transcribed; whether it carries meaning is open."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "unknown"
+  ],
+  "summary": "Numeric cipher of 250 groups between a clear Spanish opening and closing; 85 distinct values from 10 to 224, none in the 20s, one bigram (62 39) six times; letter, syllable or nomenclator structure not established.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 86,
+  "diacritics": "unknown",
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "none held; Reichskanzlei numeric ciphers (Grana 1664 and 1668, Auer) and the Spanish court's general cipher of the 1680s are untested candidates",
+  "notes": "Values cluster in blocks 10-17, 30-67, 72-105, 108-154 with outliers 181, 202 and 224 (224 four times); the highest value is 224. Leopold writes 1 as 'i' in the hundreds (i23 = 123). Index of coincidence 0.0165; 35 values occur once."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "none found",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Daniel Bourdeau pasted the project's task brief for catalogue no. 1599; no target-specific intervention recorded.",
+  "tools": [
+   "solve_homophonic.py (letter-level homophonic annealer, es-golden-age-nospace order 5)",
+   "Claude in Chrome for the BNE Digital viewer"
+  ],
+  "models": [
+   "claude-sonnet-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-04",
+  "last_date": "2026-11-04"
+ },
+ "solution": [
+  {
+   "date": "2026-11-04",
+   "kind": "access",
+   "what": "BNE Digital viewer opened in Chrome without a Cloudflare challenge; page 5 (the letter) fetched as a single-page PDF with the page's own session and its 1654 x 2473 px image extracted.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "transcription",
+   "what": "20 lines, 250 number groups read from the image into transcription.txt; five readings marked doubtful.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis",
+    "repeat/pattern analysis"
+   ],
+   "what": "Frequencies, value blocks, bigrams: 85 values over 250 groups, IoC 0.0165, 62 39 six times (62 followed by 39 in six of nine occurrences), 59 129 104 twice; value ranges in four blocks with gaps.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "literature search",
+   "what": "Web searches in English and German (Leopold I cipher, Spanish court, Auer, Habsburg ciphers) and the vetting pass of the same day (DECODE ledgers, Tomokiyo habsburg.htm): no decipherment, no key for the Leopold-Charles II correspondence. Leads left: Auer's chapter on imperial ciphers, the Spain chapter in the same volume, OeStA and AHN holdings.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "control",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Letter-level homophonic annealer (85 symbols to 24 letters, order-5 Spanish model without spaces, 300,000 steps x 6 restarts) run on two Spanish texts of 250 letters enciphered with random 81-82-symbol homophonic keys.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Same annealer on the real letter, 6 restarts: best score -488.6 gives pseudo-Spanish; the controls reach only 4-22% letter accuracy and score far below their true plaintext (about -380), so the real output is not evidence of a reading.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "Ciphertext-only letter-level homophonic annealing could not recover a key on two controls of the same size (4-22% letters correct, search score far below the true plaintext), so its output on the real letter was not accepted; no key or decipherment was found in the literature, the repository or online.",
+  "contribution": [
+    "none"
+  ],
+  "class": "not read",
+  "fraction_read": 0,
+  "verification": [
+   "matched control"
+  ],
+  "notes": "Next: Auer's chapter on imperial ciphers and the Spain chapter (Navarro Bonilla, Hernandez-Castro) in the same volume; OeStA Spanien and AHN Estado for a Leopold-Charles II key; sibling letter RES/261/73 (catalogue 1600); a syllabic or nomenclator reading of the value blocks."
+ }
+}
