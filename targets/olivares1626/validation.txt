@@ -1,0 +1,25 @@
+# Validation of key.tsv (K_OA1): ONE measurement on a held-out part, protocol hashed before any measurement (5 Nov 2026).
+# Protocol (SHA-256 856013ae...): split by manuscript lines fixed on the layout: training part A = f13r, f13v, f14r, f14v lines 1-17;
+#   buffer T = f14v lines 18-21; held-out part H = f14v lines 22-27 + the whole cipher of f15r; rule: if H < 20% of all tokens, H is extended
+#   upwards line by line into T. H was transcribed only after the key was frozen (K_OA1, SHA-256 da594d15...) and hashed before decoding
+#   (fe8d4ba4..., then a1361f85... after the 20% rule moved f14v.21 from T to H: 522 tokens = 19.9% -> 542 tokens = 20.7%).
+# Key: K6A (targets/santacruz1630) + 20 values learnt on A only (key.tsv header). The neighbouring keys were each measured once on A, never on H:
+#   K6A 0.472, K5 0.491, KC6 0.043, CLE_C04 0.102.
+# Measure M5 (there is no contemporary decipherment of this letter): share of the decoded letters of H covered, by a maximum-coverage
+#   segmentation, by Spanish words of >= 5 letters (this repository's lang/lexicons/es.json.gz, count >= 5). A token with no value cuts the
+#   segment and counts 1 in the denominator. Same normalisation on both sides: lower case, accents dropped, ñ->n, v->u, b->u, j->i, y->i, h dropped.
+# Amendment C01-1 (SHA-256 e2da68e9..., written BEFORE H was transcribed or measured): the free-shuffle control of the protocol beat the true key
+#   on A (it gives long word values such as "conueniente" to frequent tokens), so the control became 200 keys whose values are shuffled WITHIN
+#   length classes (1, 2, 3, >= 4 letters), seed 1626. Calibrated on an outside, already-used piece (santacruz D.182, key K6A known good):
+#   M5 0.543, free control max 0.673, length-class control max 0.253. Upper bound: M5 of the contemporary plaintext D.183 itself = 0.636
+#   (words under 5 letters weigh about a third of the letters), so the absolute threshold 0.60 asks for about 95% correctness.
+# Criterion fixed in advance: VALIDATED if M5 >= 0.60 AND M5 >= best control + 0.30; PARTIAL if only the margin is met; else FAILED.
+#
+H   tokens 542   M5 0.506   best control 0.144   median of controls 0.080   margin 0.362   RESULT: PARTIAL (0.094 under 0.60)
+#
+# Reading of the result: the margin over the controls is met by far (0.36), the absolute threshold is not; the ceiling of M5 on a perfect
+# plaintext of the same series is about 0.64. So the key is "partial by our protocol". Seen after the measurement and not corrected:
+# 9 code tokens of H have no value in K_OA1 (hol x3, bil, Qar, per, hen, gli, pes), and each cuts a segment.
+# The measured key and transcription were not changed afterwards. The reading (reading.md) was made after the measurement; the three "hol"
+# of H are read "Su Majestad" by a value established outside H (blind proof-reading O13 of 5 Nov 2026, f14r.25 and f14v.09), as a reading
+# decision counted "probable", not as a change of the key.
