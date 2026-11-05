@@ -935,10 +935,10 @@ PAGES = [
          blurb='A six-line slip wholly in cipher (Concistoro 2308 fasc. 2, DECODE R4794) in a pigpen-like grid where a dot shifts a frame to another block of four letters. George Lasry recovered the key from the ciphertext alone with CTTS and Claude: it warns the Signoria about pieces of artillery and a suspicious envoy. Four number codes stay unidentified.',
          quote='&ldquo;Di alcuni pezzi [d&rsquo;]i artigliaria 44 di 26&rdquo;',
          rights='Manuscript images: Archivio di Stato di Siena, Concistoro 2308, via DECODE R4794 and George Lasry&rsquo;s report'),
-    dict(slug='malatesta1428', label='Pandolfo Malatesta 1428', year='1428', y=1428.31, place='Rome &rarr; Gianfrancesco Gonzaga', st='stuck', stt='not solved',
+    dict(slug='malatesta1428', label='Pandolfo Malatesta 1428', year='1428', y=1428.31, place='Rome &rarr; Gianfrancesco Gonzaga', st='solved', stt='read',
          title='Pandolfo Malatesta to Gianfrancesco Gonzaga, 22 April 1428',
-         blurb='The archbishop of Patras wrote to his brother-in-law, the lord of Mantua, in clear Latin about the peace of Ferrara, and hid his plans in three runs of 262 letter-like signs (DECODE R1854, image 1). They are not a simple or homophonic substitution in Latin or Italian, and none of the Gonzaga register&rsquo;s Malatesta keys fits. A ciphered letter of his of 1438 with its contemporary translation may hold the key; it is not online.',
-         quote='&ldquo;licet nondum publicatam&rdquo; &middot; the clear news of the peace, before the cipher',
+         blurb='The archbishop of Patras wrote to his brother-in-law, the lord of Mantua, in clear Latin about the peace of Ferrara, and hid his advice in three runs of letter-like signs (DECODE R1854, image 1). This project could not read them; on 5 November 2026 Mark Vladimir Prizmic, working with Claude from Satoshi Tomokiyo&rsquo;s transcription, sent a key (a homophonic substitution of Latin with two nulls) and a reading, which decodes here: 307 of 308 signs. Pandolfo asks Gonzaga to keep his men-at-arms and proposes that he become king of the Morea.',
+         quote='&ldquo;rex efici&rdquo; &middot; &ldquo;provincie Moree, patrie siquidem fertilis et amene&rdquo;',
          rights='Archivio di Stato di Mantova, via DECODE R1854 (images not reproduced)'),
     dict(slug='r1854', label='Gonzaga agent 1428', year='1428', y=1428.6, place='Rome &rarr; Gianfrancesco Gonzaga', st='solved', stt='read',
          title='A Gonzaga agent in Rome to Gianfrancesco Gonzaga, 9 August 1428',
@@ -2506,6 +2506,10 @@ PAGES = [
          title='Why the famous ciphers resist',
          blurb='Kryptos, Voynich, Dorabella, Beale, Linear A, Phaistos, the pigeon message. Sorted by the actual reason each has held out: undeciphered writing systems, one that is information-theoretically secure, several too short for any answer to be provable, and at least two that were probably never enciphered.',
          quote='Fame is a poor guide to tractability.'),
+    dict(slug='top25', label='Top 25 unsolved ciphers', year='survey', y=9997, place='Survey', st='partial', stt='unsolved ciphers',
+         title='Top 25 unsolved ciphers',
+         blurb='Kryptos K4, the Beale papers, Voynich, Debosnys, the Kaliningrad bottle, D&rsquo;Agapeyeff, Dorabella and seventeen more: real ciphers with no accepted reading, ranked, each tagged with the reason it holds out (open, needs a source, too short to prove, probably no message, unbreakable, undecided) and where it stands on 5 November 2026. Lost scripts are left out.',
+         quote='Ranked by interest; ranked by tractability, Debosnys, Kaliningrad and the diplomatic codes would come first.'),
     dict(slug='highlights', label='Highlights', year='survey', y=9998, place='Survey', st='partial', stt='thirty favourites',
          title='Thirty favourites from the archive',
          blurb='Ten findings that are funny, ten that matter to history and ten that are simply ingenious, from three hundred cipher write-ups: a drunk envoy to be seen when sober, a king and a nun, the relief of Malta, the murder of the Duke of Guise, a despatch in lemon juice and a father&rsquo;s coded log of his baby son&rsquo;s fits. Then six of the hardest breaks, keys recovered from the ciphertext alone.',
@@ -3010,7 +3014,7 @@ IMAGES['villeroy258'] = None
 IMAGES['vulcob1573'] = None
 # lasry-bnf images:end
 
-SURVEYS = ('famous', 'solved', 'highlights')
+SURVEYS = ('famous', 'solved', 'highlights', 'top25')
 # Outcome method (George Lasry's categories, _methods.py): a page whose target has a profile with outcome.method
 # takes its badge, colour, seal and byline verb from the profile, so the hand-typed st/stt above only stand for
 # surveys, famous targets and pages without a classified profile.  p['method'] / p['extent'] drive the filters.
@@ -3294,6 +3298,7 @@ GROUPS = [(M.KEY[m], M.LABEL[m][0].upper() + M.LABEL[m][1:], M.status_class(m, '
 EXPLORE = [('highlights', 'Highlights', 'Thirty favourites: the funny, the historic, the ingenious'),
            ('glossary', 'Glossary', 'How each cipher was solved, and the terms used'),
            ('famous', 'The famous ones', 'Why Voynich, Kryptos, Beale and Dorabella resist'),
+           ('top25', 'Top 25 unsolved ciphers', 'Twenty-five ciphers with no accepted reading, ranked'),
            ('atlas', 'Atlas', 'Every letter drawn on the map, five centuries of it'),
            ('keys', 'Key web', 'Which key opened which letter'),
            ('secret', 'Secret letter', 'Seal a message in a real historical cipher')]
@@ -3591,7 +3596,7 @@ def glossary_html():
 
 
 def footer_html(current):
-    order = sorted([p for p in PAGES if p['slug'] not in ('famous', 'solved')], key=lambda p: p['y'])
+    order = sorted([p for p in PAGES if p['slug'] not in ('famous', 'solved', 'top25')], key=lambda p: p['y'])
     prev = nxt = None
     for i, p in enumerate(order):
         if p['slug'] == current:
@@ -3624,7 +3629,7 @@ def when_html(p, cls='when'):
     """The short datestamp shown on the index cards and list rows."""
     rec = DATES['pages'].get(p['slug'])
     if not rec: return ''
-    verb = 'posted' if p['slug'] in ('famous', 'solved') else verb_of(p)
+    verb = 'posted' if p['slug'] in ('famous', 'solved', 'top25') else verb_of(p)
     return (f'<time class="{cls}" datetime="{rec["first"]}" '
             f'title="{verb} {fmt_date(rec["first"])}, updated {fmt_date(rec["updated"])}">'
             f'{verb if p.get("method") else VERB_SHORT.get(p["st"], verb)} {fmt_date(rec["first"], short=True)}</time>')
