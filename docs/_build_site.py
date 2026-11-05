@@ -730,6 +730,11 @@ PAGES = [
          blurb='First partial reading of a letter without a contemporary decipherment. The key was rebuilt from sibling interlinear glosses in Nationaal Archief inv. 248, 249 and 250. The French plan against Den Briel and Hellevoetsluis, Du Plat and a doubtful informer emerge; strict coverage is 264/278 (94.96%), with 265/278 (95.32%) only conditionally.',
          quote='het my aen-gebracht dessein op den BRIEL ende HELLEVOET',
          rights='Nationaal Archief, 3.01.18, inv. 249, scans 131&ndash;132 (CC0)'),
+    dict(slug='aragon1676', label='Pascual de Arag&oacute;n to Pedro de Arag&oacute;n', year='1676&ndash;77', y=1676.6, place='Cardinal of Toledo &rarr; his brother Pedro', st='partial', stt='key from adjacent plaintext, partial',
+         title='Cardinal Pascual de Arag&oacute;n to his brother Pedro de Arag&oacute;n, c. 1676&ndash;77',
+         blurb='One page of a letter in a mixed syllabic cipher (BNE Mss/2043, p. 0496), with a contemporary decipherment in the margin. Brice Dudout learned a key from 14 other pairs of the same volume, froze it, and measured it once on this page: 0.742 of characters against 0.422 for the best of 200 shuffled keys. 82 of 95 margin words read (86%); the cipher corrects the margin in three places.',
+         quote='&ldquo;temo a Medina, que el no contentarse juzgo le tiene en este estado&rdquo;',
+         rights='Biblioteca Nacional de Espa&ntilde;a, Mss/2043 (BNE Digital)'),
     dict(slug='ronquillo1676', label='Salinas &amp; Ronquillo 1676', year='1676&ndash;78', y=1677.1, place='London, Nijmegen &rarr; Copenhagen', st='partial', stt='solved in part',
          title='Bernardo de Salinas and Pedro Ronquillo to Baltasar de Fuenmayor, 1676&ndash;78',
          blurb='Twenty cipher letters from the Spanish envoys in London and at Nijmegen (Brussels SEG 2559, DECODE R966&ndash;R984, R1001). The Balbases 1677 key, from the same volume, was applied unchanged: 88% of 23,463 groups decrypted, and the sixteen contemporary marginal decipherments confirmed. The four letters with no decipherment are decrypted in gist; the residue is mostly transcription noise.',
@@ -4216,6 +4221,7 @@ IMAGES['buda1490'] = None
 IMAGES['adrian1520'] = None
 IMAGES['damas1787'] = None
 IMAGES['bouille1778'] = None
+IMAGES['aragon1676'] = ('aragon1676_lead.jpg', 'Left page of p. 0496: six lines of cipher, with the contemporary decipherment in the margin', 'Biblioteca Nacional de Espa&ntilde;a, Mss/2043, PDF view 0496, via BNE Digital (BDH)')
 IMAGES['martinique1778'] = ('martinique1778_lead.jpg', 'The opening of Bouill&eacute;&rsquo;s letter of 24 May 1780 (no. 415): the clear words J&rsquo;ai l&rsquo;honneur de vous envoyer, then the dotted code numbers', 'Archives nationales d&rsquo;outre-mer, COL C8 A 79 f. 70, via recherche-anom.culture.gouv.fr')
 IMAGES['partyet1721'] = None
 IMAGES['genes1638'] = None
