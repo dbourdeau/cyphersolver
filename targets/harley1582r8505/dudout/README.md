@@ -1,6 +1,6 @@
 # "L'Estat du Roy de Navarre et de son party en France", fols. 264r-264v: cipher passages read (Brice Dudout, 29 Oct 2026)
 
-Status: read in part (fols. 264r-264v read, 635 of 666 cipher words in their sense, 95.3%; fols. 263r-263v not re-read; code numbers not read).
+Status: read in part (fols. 264r-264v; recounted 5 Nov 2026 under the strict 95% rule: 629 of 666 cipher words read = 94.4%, 533 certain + 96 probable; the 6 restored words no longer count, 95.3% with them; fols. 263r-263v not re-read; code numbers not read).
 
 Write-up: https://bdudout.github.io/europe-chiffree/en/documents.html#navarre-1583 (local, to be pushed when the GitHub account is restored)
 

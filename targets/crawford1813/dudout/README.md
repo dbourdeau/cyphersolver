@@ -1,5 +1,7 @@
 # Independent reading of Crawford's coded letter (catalogue 652), Brice Dudout
 
+Status: read in part (Brice Dudout; recounted 5 Nov 2026 under the strict 95% rule: 1,205 of 1,371 code groups read = 87.9%; the 125 groups read by sense no longer count, 1,330 = 97.0% with them; 41 unread).
+
 Made on 27 Oct 2026 independently of WAINUT's reading in this folder. Write-up:
 https://bdudout.github.io/europe-chiffree/en/documents.html#crawford-1813
 
