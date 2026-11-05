@@ -159,7 +159,8 @@ The sender's signs at the foot of f. 167v are not identified.
 
 ## Remaining gaps
 
-- ~~f. 167r after the cross mark and f. 167v read only in fragments~~ closed 23 Oct 2026 (texts/f167_interlinear_reading.md)
+Closed 23 Oct 2026: f. 167r after the cross mark and f. 167v, once read only in fragments (texts/f167_interlinear_reading.md).
+
 - a few unglossed figure strings on f. 167r-v (under "ne pourroit procurer", "si porte bien …", the last line before the date) - blocker: illegible; strokes run together and the glosses are cut or faint
 - the sender's signs at the foot of f. 167v (8 X X 8) - blocker: no-key-material
 
