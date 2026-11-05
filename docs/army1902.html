@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Japanese Army numeric kana cipher, 1902–04 — Read in part</title>
-<meta name="description" content="Imperial Japanese Army domestic telegrams of 1902–04 (JACAR C09122911500, C09123116600, C09122909900, C03020059400) in which two digits stand for one kana on a coordinate table: vowel row, then consonant column in reverse gojuon order. Contributed by Harumi-Matsuba, who rebuilt the table from a filed translation and decoded four telegrams; checked here with an independent decoder, a permutation control and the forms themselves. Three give sentences, the third with the help of its filed contemporary translation (found 23 October 2026); the fourth enciphers only a noun phrase.">
-<link rel="stylesheet" href="style.css?v=20261105c">
+<meta name="description" content="Imperial Japanese Army domestic telegrams of 1902–04 (JACAR C09122911500, C09123116600, C09122909900, C03020059400) in which two digits stand for one kana on a coordinate table: vowel row, then&hellip;" data-full="Imperial Japanese Army domestic telegrams of 1902–04 (JACAR C09122911500, C09123116600, C09122909900, C03020059400) in which two digits stand for one kana on a coordinate table: vowel row, then consonant column in reverse gojuon order. Contributed by Harumi-Matsuba, who rebuilt the table from a filed translation and decoded four telegrams; checked here with an independent decoder, a permutation control and the forms themselves. Three give sentences, the third with the help of its filed contemporary translation (found 23 October 2026); the fourth enciphers only a noun phrase.">
+<link rel="stylesheet" href="style.css?v=fb44852f">
 <style>
 .kt{font-family:var(--mono);font-size:.82rem;border-collapse:collapse;margin:.6rem 0 1rem;width:auto}
 .kt th,.kt td{border:1px solid var(--rule);padding:.2rem .5rem;text-align:center}
@@ -25,14 +25,25 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- social:start -->
+<link rel="canonical" href="https://cyphersolver.com/army1902.html">
+<link rel="alternate" type="application/atom+xml" title="Cyphersolver: new write-ups" href="https://cyphersolver.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Cyphersolver">
+<meta property="og:url" content="https://cyphersolver.com/army1902.html">
+<meta property="og:title" content="Japanese Army numeric kana cipher, 1902–04 — Read in part">
+<meta property="og:description" content="Imperial Japanese Army domestic telegrams of 1902–04 (JACAR C09122911500, C09123116600, C09122909900, C03020059400) in which two digits stand for one kana on a coordinate table: vowel row, then&hellip;">
+<meta property="og:image" content="https://cyphersolver.com/army1902_f0110.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<!-- social:end -->
 </head>
 <body id="top">
-<header class="nav"><div class="in">
+<header class="nav"><a class="skip" href="#content">Skip to content</a><div class="in">
   <a class="brand" href="index.html"><span class="glyph">972</span><span>Cyphersolver</span></a>
   <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
   <nav id="sitemenu" class="links" aria-label="Site">
     <details class="menu"><summary class="active">Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
-      <div class="panel wp"><div class="grp latest"><h4>Latest</h4><ul><li><a href="guarna1447.html"><i class="dot partial" aria-hidden="true"></i><b>Guarna to Sforza, 21 May 1447</b><span class="yr">1447</span><span class="m">key from adjacent plaintext &middot; partial</span></a></li><li><a href="aragon1676.html"><i class="dot partial" aria-hidden="true"></i><b>Pascual de Arag&oacute;n to Pedro de Arag&oacute;n</b><span class="yr">1676&ndash;77</span><span class="m">key from adjacent plaintext &middot; partial</span></a></li><li><a href="coloma1622.html"><i class="dot partial" aria-hidden="true"></i><b>Mirabel to Coloma 1622</b><span class="yr">1622</span><span class="m">key from adjacent plaintext &middot; partial</span></a></li><li><a href="ariosto1559.html"><i class="dot partial" aria-hidden="true"></i><b>Ercole II to Ariosto 1559</b><span class="yr">1559</span><span class="m">ciphertext-only break &middot; partial</span></a></li><li><a href="este1585.html"><i class="dot partial" aria-hidden="true"></i><b>Cardinal d&rsquo;Este 1584&ndash;85</b><span class="yr">1584&ndash;1585</span><span class="m">known key applied &middot; partial</span></a></li><li><a href="gongmi1916.html"><i class="dot partial" aria-hidden="true"></i><b>Huang Xing 共密 telegrams</b><span class="yr">June&ndash;July 1916</span><span class="m">ciphertext-only break &middot; partial</span></a></li></ul></div><div class="grp outc"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=ct"><i class="dot solved" aria-hidden="true"></i><b>Ciphertext-only break</b><b class="sh">Ciphertext-only</b><span class="n">85</span></a></li><li><a href="writeups.html#kind=extpt"><i class="dot solved" aria-hidden="true"></i><b>Key from external plaintext</b><b class="sh">Ext. plaintext</b><span class="n">19</span></a></li><li><a href="writeups.html#kind=adjpt"><i class="dot solved" aria-hidden="true"></i><b>Key from adjacent plaintext</b><b class="sh">Adj. plaintext</b><span class="n">95</span></a></li><li><a href="writeups.html#kind=extkey"><i class="dot solved" aria-hidden="true"></i><b>External key matched</b><b class="sh">External key</b><span class="n">35</span></a></li><li><a href="writeups.html#kind=known"><i class="dot solved" aria-hidden="true"></i><b>Known key applied</b><b class="sh">Known key</b><span class="n">108</span></a></li><li><a href="writeups.html#kind=deciph"><i class="dot solved" aria-hidden="true"></i><b>Existing decipherment</b><b class="sh">Existing reading</b><span class="n">97</span></a></li><li><a href="writeups.html#kind=notsolved"><i class="dot stuck" aria-hidden="true"></i><b>Not solved</b><b class="sh">Not solved</b><span class="n">75</span></a></li><li><a href="writeups.html#kind=na"><i class="dot found" aria-hidden="true"></i><b>Not applicable</b><b class="sh">Not applicable</b><span class="n">18</span></a></li><li><a href="writeups.html#kind=other"><i class="dot todo" aria-hidden="true"></i><b>Not yet classified</b><b class="sh">Unclassified</b><span class="n">1</span></a></li><li><a href="writeups.html#kind=survey"><i class="dot todo" aria-hidden="true"></i><b>Surveys</b><b class="sh">Surveys</b><span class="n">3</span></a></li></ul></div><div class="foot"><a class="all" href="writeups.html">All 536 write-ups, with filters &rarr;</a><a href="findings.html">All findings, newest first</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+      <div class="panel wp"><div class="foot"><a class="all" href="writeups.html">All write-ups, with filters &rarr;</a><a href="findings.html">All findings, newest first</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
     <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
       <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="famous.html"><b>The famous ones</b><span class="d">Why Voynich, Kryptos, Beale and Dorabella resist</span></a></li><li><a href="top25.html"><b>Top 25 unsolved ciphers</b><span class="d">Twenty-five ciphers with no accepted reading, ranked</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key opened which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
     <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
@@ -42,7 +53,7 @@
     <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
     <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
   </nav>
-</div></header>
+</div><span id="content" tabindex="-1"></span></header>
 <div class="search" id="search" hidden>
   <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
     <form class="sform" role="search" onsubmit="return false">
@@ -59,7 +70,8 @@
   <div class="cipherstrip" translate="no">44 10 17 42 28 18 18 42 29 03 87 44 10 76 45 &hellip; 80<br>ホ ン シ ヨ ク キ キ ヨ ウ マ デ ホ ン ブ ノ &hellip;<br>08 = カ &middot; 17 = シ &middot; 59 = ガ &middot; 76 = ブ &middot; 10 = ン</div>
   <p class="kicker">Osaka, Kokura, Moji &rarr; Tokyo · two digits for a kana · 1902&ndash;04</p>
   <h1>The Japanese Army&rsquo;s numeric kana cipher</h1>
-<div class="parties"><figure class="party sender"><img src="portrait_oyama-iwao.jpg" alt="Ōyama Iwao" title="Ōyama Iwao: Photograph, before 1916. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Ōyama Iwao</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_terauchi-masatake.jpg" alt="Terauchi Masatake" title="Terauchi Masatake: Photograph, before 1919. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Terauchi Masatake</figcaption></figure></div><!-- /parties -->
+<div class="parties"><figure class="party sender"><img src="portrait_oyama-iwao.jpg" width="192" height="4360" decoding="async" alt="Ōyama Iwao" title="Ōyama Iwao: Photograph, before 1916. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Ōyama Iwao</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_terauchi-masatake.jpg" width="192" height="4360" decoding="async" alt="Terauchi Masatake" title="Terauchi Masatake: Photograph, before 1919. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Terauchi Masatake</figcaption></figure></div><!-- /parties -->
+<p class="readjump"><a href="#texts">Go to the full text &darr;</a></p><!-- /readjump -->
   <p class="sub">Imperial Japanese Army telegrams of 1902&ndash;04 in which two digits stand for one kana on a fixed table; Harumi-Matsuba rebuilt the table from a filed translation and decoded four telegrams, checked here. Three give sentences, one of them through its filed contemporary translation; the fourth enciphers only a twelve-kana noun phrase, confirmed by its draft (61 of 73 pairs in telegrams that give sentences).</p>
   <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-21">21 October 2026</time> &middot; updated <time datetime="2026-10-25">25 October 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#adjpt">key recovered based on adjacent plaintext</a> &middot; Extent: partial (96% of the cipher) &middot; <a href="atlas.html#slug=army1902">On the map</a></p><!-- /outcome -->
@@ -96,7 +108,7 @@
 
 <h2 id="telegrams"><span class="num">02</span> The four telegrams</h2>
 <figure class="creveal" data-src="reveal/army1902.json"></figure>
-<figure data-credit="National Institute for Defense Studies, 参謀本部 雑 秘 明治35年 電報綴 北清事件, frame 0110, via JACAR Ref. C09122911500"><img src="army1902_f0110.jpg" alt="Army telegraph form of 27 March 1902 from Osaka, with seven columns of kanji numerals separated by black marks" loading="lazy">
+<figure data-credit="National Institute for Defense Studies, 参謀本部 雑 秘 明治35年 電報綴 北清事件, frame 0110, via JACAR Ref. C09122911500"><img src="army1902_f0110.jpg" width="1343" height="2824" decoding="async" srcset="thumbs/army1902_f0110-480.webp 480w, army1902_f0110.jpg 1343w" sizes="(max-width: 1000px) 100vw, 940px" alt="Army telegraph form of 27 March 1902 from Osaka, with seven columns of kanji numerals separated by black marks" loading="lazy">
 <figcaption>Osaka, 27 March 1902, no. 987, 72 characters: Ōyama to Terauchi, all in digits. Read in columns from the right, top to bottom; the rightmost is 四四一〇一七四二二八 = ホンシヨク, and the leftmost holds only 八〇, the end mark. <span class="credit">Image: National Institute for Defense Studies, 参謀本部 雑 秘 明治35年 電報綴 北清事件, frame 0110, via JACAR Ref. C09122911500.</span></figcaption></figure>
 <table class="kt">
 <tr><th>JACAR</th><th>date, route</th><th>pairs</th><th>reading</th><th>check</th></tr>
@@ -106,7 +118,7 @@
 <tr><td>C03020059400</td><td>18 Jan 1904, Kokura: Inoue &rarr; War Minister</td><td>12</td><td>シンテイハクゼウシレイブ</td><td>12/12 with the filed translation (pair 5 04, as Tomokiyo reads the image; ゼウ for 場)</td></tr>
 </table>
 <p><b>C09122911500</b> is the whole telegram: 本職帰京迄本部ノ事務ハ貴官宜シク取計ハレタシ, &ldquo;until I return to Tokyo, please handle the business of the General Staff as you see fit&rdquo;. <b>C09122909900</b>, sent the next day, enciphers only カイグンエンシウケンガク, the observation of the naval exercise, inside a clear message granting permission. <b>C03020059400</b> enciphers only the unit name, 辛碇泊場司令部 (Anchorage Command Shin), with 場 spelt ジウ; the rest of the telegram is in clear kana. On 23 October 2026 the JACAR item turned out to hold the filed contemporary translation (訳文) of the whole telegram on frame 0118: 辛碇泊場司令部ニ要スル下士以下及器具材料ハ門司補給廠支廠長ニ交付済。[…]ノ結了ハ支廠長ヨリ直接報告ノ筈。, &ldquo;The NCOs and men and the equipment and materials needed by Anchorage Command Shin have been handed over to the head of the Moji branch supply depot. The completion of […] is to be reported directly by the head of the branch depot.&rdquo; Ten of the twelve pairs agree with it; the telegram is deciphered with the translation carrying the two off-table pairs.</p>
-<figure data-credit="National Institute for Defense Studies, 参謀本部 雑 秘 明治37年 臨号書類綴, frame 0026, via JACAR Ref. C09123116600"><img src="army1902_f0026.jpg" alt="Army telegraph form from Kokura, January 1904: clear katakana and kanji numerals in four columns" loading="lazy">
+<figure data-credit="National Institute for Defense Studies, 参謀本部 雑 秘 明治37年 臨号書類綴, frame 0026, via JACAR Ref. C09123116600"><img src="army1902_f0026.jpg" width="1301" height="2824" decoding="async" alt="Army telegraph form from Kokura, January 1904: clear katakana and kanji numerals in four columns" loading="lazy">
 <figcaption>Kokura, 25 January 1904, no. 62. The right column begins in clear, コロクニシ, then the digits 四二四二二; the left column ends in clear, サレタシ ヲハラ. <span class="credit">Image: National Institute for Defense Studies, 参謀本部 雑 秘 明治37年 臨号書類綴, frame 0026, via JACAR Ref. C09123116600.</span></figcaption></figure>
 <p><b>C09123116600</b> has no translation and is the real test of the table. Its thirteen pairs read ヨヨウノカンコクチズダイヨ, 要用ノ韓国地図貸与, and with the clear サレタシ that follows, &ldquo;please lend the required maps of Korea&rdquo;. The reply drafted in Tokyo two days later, in the same file, sends fifty copies of the 1:50,000 map of Korea and twenty of the 1:1,000,000 map of Korea and Manchuria. Two spellings are off: ヨヨウ for ヨウヨウ and ダイヨ for タイヨ. The contributor takes them as the sender&rsquo;s. The telegram is from 25 January 1904; Japan broke off relations with Russia on 6 February.</p>
 
@@ -364,14 +376,27 @@ reported directly by the head of the branch depot.</pre></details>
 
 <p class="muted">Decoder, digit pairs and control output: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/army1902">targets/army1902/</a> (<code translate="no">python decode.py</code>, <code translate="no">python decode.py control</code>).</p>
 
+<!-- cite:start -->
+<details class="cite" id="cite"><summary>Cite this page</summary>
+<p class="citetext">Daniel Bourdeau, “The Japanese Army’s numeric kana cipher, 1902–04”, Cyphersolver, posted 21 October 2026, updated 25 October 2026, https://cyphersolver.com/army1902.html.</p>
+<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau, “The Japanese Army’s numeric kana cipher, 1902–04”, Cyphersolver, posted 21 October 2026, updated 25 October 2026, https://cyphersolver.com/army1902.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-army1902,
+  author = {Daniel Bourdeau},
+  title = {The Japanese Army’s numeric kana cipher, 1902–04},
+  year = {2026},
+  howpublished = {Cyphersolver},
+  note = {posted 21 October 2026, updated 25 October 2026},
+  url = {https://cyphersolver.com/army1902.html}
+}">Copy BibTeX</button></p>
+</details>
+<!-- cite:end -->
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Telegram images: National Institute for Defense Studies, via JACAR; readings &copy; Harumi-Matsuba, CC BY 4.0</span>
-  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="bell1900.html" rel="prev">&larr; Bell to Mabel Bell 1900 1900</a><a href="carlos1903.html" rel="next">King Carlos to Queen Am&eacute;lie 1903 1903 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="bell1900.html" rel="prev">&larr; Bell to Mabel Bell 1900 1900</a><a href="carlos1903.html" rel="next">King Carlos to Queen Am&eacute;lie 1903 1903 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="feed.xml">Feed</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
 <script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
-<script src="solve-replay.js?v=20261105c" defer></script>
-<script src="zoom.js?v=20261105c" defer></script>
-<script src="site.js?v=20261105c"></script>
+<script src="solve-replay.js?v=fb44852f" defer></script>
+<script src="zoom.js?v=fb44852f" defer></script>
+<script src="site.js?v=fb44852f"></script>
 </body>
 </html>

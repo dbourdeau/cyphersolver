@@ -261,7 +261,7 @@ def page(pages, profiles, reg, dates, version, today):
 def helpband(pages, profiles):
     """The landing page's three ways to help, each behind its nav sticker, between <!-- help:start/end -->."""
     import _archives_page as AR, _catalogue_page as C
-    still_open = sum(1 for x in C.DATA['entries'] if x['counted'] and C.is_open(x))
+    still_open = sum(1 for x in C.DATA['entries'] if C.is_open(x))
     fn = sum(p.get('extent') == 'partial' and bool(p.get('folders')) for p in pages)
     na = sum(r['status'] in AR.LIVE for r in AR.load())
     q = len(queue(pages, profiles))

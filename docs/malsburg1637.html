@@ -4,21 +4,32 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Malsburg to the Landgrave of Hesse-Kassel 1637 - Ciphertext-only keys, partial reading</title>
-<meta name="description" content="Daniel Bourdeau recovered the two-digit cipher of Malsburg's January-March 1637 letters. Larry Beck with ChatGPT recovered the separate alphabetic block's period-five shifts, 4,5,3,6,2. A ten-line critical reading separates manuscript choices, literal decryption and interpretation; 43, 45 and the angular LL sign remain unidentified.">
-<link rel="stylesheet" href="style.css?v=20261105c">
+<meta name="description" content="Daniel Bourdeau recovered the two-digit cipher of Malsburg's January-March 1637 letters. Larry Beck with ChatGPT recovered the separate alphabetic block's period-five shifts, 4,5,3,6,2." data-full="Daniel Bourdeau recovered the two-digit cipher of Malsburg's January-March 1637 letters. Larry Beck with ChatGPT recovered the separate alphabetic block's period-five shifts, 4,5,3,6,2. A ten-line critical reading separates manuscript choices, literal decryption and interpretation; 43, 45 and the angular LL sign remain unidentified.">
+<link rel="stylesheet" href="style.css?v=fb44852f">
 <meta name="date" content="2026-09-28">
 <meta name="last-modified" content="2026-10-23">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- social:start -->
+<link rel="canonical" href="https://cyphersolver.com/malsburg1637.html">
+<link rel="alternate" type="application/atom+xml" title="Cyphersolver: new write-ups" href="https://cyphersolver.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Cyphersolver">
+<meta property="og:url" content="https://cyphersolver.com/malsburg1637.html">
+<meta property="og:title" content="Malsburg to the Landgrave of Hesse-Kassel 1637 - Ciphertext-only keys, partial reading">
+<meta property="og:description" content="Daniel Bourdeau recovered the two-digit cipher of Malsburg's January-March 1637 letters. Larry Beck with ChatGPT recovered the separate alphabetic block's period-five shifts, 4,5,3,6,2.">
+<meta property="og:image" content="https://cyphersolver.com/malsburg1637_lead.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<!-- social:end -->
 </head>
 <body id="top">
-<header class="nav"><div class="in">
+<header class="nav"><a class="skip" href="#content">Skip to content</a><div class="in">
   <a class="brand" href="index.html"><span class="glyph">972</span><span>Cyphersolver</span></a>
   <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
   <nav id="sitemenu" class="links" aria-label="Site">
     <details class="menu"><summary class="active">Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
-      <div class="panel wp"><div class="grp latest"><h4>Latest</h4><ul><li><a href="guarna1447.html"><i class="dot partial" aria-hidden="true"></i><b>Guarna to Sforza, 21 May 1447</b><span class="yr">1447</span><span class="m">key from adjacent plaintext &middot; partial</span></a></li><li><a href="aragon1676.html"><i class="dot partial" aria-hidden="true"></i><b>Pascual de Arag&oacute;n to Pedro de Arag&oacute;n</b><span class="yr">1676&ndash;77</span><span class="m">key from adjacent plaintext &middot; partial</span></a></li><li><a href="coloma1622.html"><i class="dot partial" aria-hidden="true"></i><b>Mirabel to Coloma 1622</b><span class="yr">1622</span><span class="m">key from adjacent plaintext &middot; partial</span></a></li><li><a href="ariosto1559.html"><i class="dot partial" aria-hidden="true"></i><b>Ercole II to Ariosto 1559</b><span class="yr">1559</span><span class="m">ciphertext-only break &middot; partial</span></a></li><li><a href="este1585.html"><i class="dot partial" aria-hidden="true"></i><b>Cardinal d&rsquo;Este 1584&ndash;85</b><span class="yr">1584&ndash;1585</span><span class="m">known key applied &middot; partial</span></a></li><li><a href="gongmi1916.html"><i class="dot partial" aria-hidden="true"></i><b>Huang Xing 共密 telegrams</b><span class="yr">June&ndash;July 1916</span><span class="m">ciphertext-only break &middot; partial</span></a></li></ul></div><div class="grp outc"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=ct"><i class="dot solved" aria-hidden="true"></i><b>Ciphertext-only break</b><b class="sh">Ciphertext-only</b><span class="n">85</span></a></li><li><a href="writeups.html#kind=extpt"><i class="dot solved" aria-hidden="true"></i><b>Key from external plaintext</b><b class="sh">Ext. plaintext</b><span class="n">19</span></a></li><li><a href="writeups.html#kind=adjpt"><i class="dot solved" aria-hidden="true"></i><b>Key from adjacent plaintext</b><b class="sh">Adj. plaintext</b><span class="n">95</span></a></li><li><a href="writeups.html#kind=extkey"><i class="dot solved" aria-hidden="true"></i><b>External key matched</b><b class="sh">External key</b><span class="n">35</span></a></li><li><a href="writeups.html#kind=known"><i class="dot solved" aria-hidden="true"></i><b>Known key applied</b><b class="sh">Known key</b><span class="n">108</span></a></li><li><a href="writeups.html#kind=deciph"><i class="dot solved" aria-hidden="true"></i><b>Existing decipherment</b><b class="sh">Existing reading</b><span class="n">97</span></a></li><li><a href="writeups.html#kind=notsolved"><i class="dot stuck" aria-hidden="true"></i><b>Not solved</b><b class="sh">Not solved</b><span class="n">75</span></a></li><li><a href="writeups.html#kind=na"><i class="dot found" aria-hidden="true"></i><b>Not applicable</b><b class="sh">Not applicable</b><span class="n">18</span></a></li><li><a href="writeups.html#kind=other"><i class="dot todo" aria-hidden="true"></i><b>Not yet classified</b><b class="sh">Unclassified</b><span class="n">1</span></a></li><li><a href="writeups.html#kind=survey"><i class="dot todo" aria-hidden="true"></i><b>Surveys</b><b class="sh">Surveys</b><span class="n">3</span></a></li></ul></div><div class="foot"><a class="all" href="writeups.html">All 536 write-ups, with filters &rarr;</a><a href="findings.html">All findings, newest first</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+      <div class="panel wp"><div class="foot"><a class="all" href="writeups.html">All write-ups, with filters &rarr;</a><a href="findings.html">All findings, newest first</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
     <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
       <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="famous.html"><b>The famous ones</b><span class="d">Why Voynich, Kryptos, Beale and Dorabella resist</span></a></li><li><a href="top25.html"><b>Top 25 unsolved ciphers</b><span class="d">Twenty-five ciphers with no accepted reading, ranked</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key opened which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
     <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
@@ -28,7 +39,7 @@
     <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
     <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
   </nav>
-</div></header>
+</div><span id="content" tabindex="-1"></span></header>
 <div class="search" id="search" hidden>
   <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
     <form class="sform" role="search" onsubmit="return false">
@@ -44,7 +55,8 @@
 <div class="cipherstrip" translate="no">27 39 13 95 N F D 44 89 N &middot; das ich auch noch nit weiss &middot; 16 33 48 49 61 79 84 = e &middot; N = ch &middot; Z = st</div>
 <p class="kicker">Westphalia &rarr; Kassel &middot; homophonic two-digit cipher with digraph signs and a small code &middot; January&ndash;March 1637</p>
 <h1>Otto von der Malsburg&rsquo;s cipher letters to Landgrave Wilhelm V, 1637</h1>
-<div class="parties"><figure class="party recipient"><img src="portrait_landgrave-wilhelm-v-of-hesse-kassel.jpg" alt="Landgrave Wilhelm V of Hesse-Kassel" title="Landgrave Wilhelm V of Hesse-Kassel: Portrait from an ancestral series, 17th century (Museumslandschaft Hessen Kassel). Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Landgrave Wilhelm V of Hesse-Kassel</figcaption></figure></div><!-- /parties -->
+<div class="parties"><figure class="party recipient"><img src="portrait_landgrave-wilhelm-v-of-hesse-kassel.jpg" width="192" height="4360" decoding="async" alt="Landgrave Wilhelm V of Hesse-Kassel" title="Landgrave Wilhelm V of Hesse-Kassel: Portrait from an ancestral series, 17th century (Museumslandschaft Hessen Kassel). Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Landgrave Wilhelm V of Hesse-Kassel</figcaption></figure></div><!-- /parties -->
+<p class="readjump"><a href="#texts">Go to the full text &darr;</a></p><!-- /readjump -->
 <p class="sub">Two keys recovered from ciphertext: the numerical cipher in ten letters, and a repeating alphabetic cipher in the January postscript, whose command dispute now reads with several uncertainties.</p>
 <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-28">28 September 2026</time> &middot; updated <time datetime="2026-10-23">23 October 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#ct">key recovered from ciphertext-only</a> &middot; Extent: partial (53% of the cipher) &middot; <a href="atlas.html#slug=malsburg1637">On the map</a></p><!-- /outcome -->
@@ -66,7 +78,7 @@
 </dl>
 </div>
 
-<figure data-credit="Hessisches Staatsarchiv Marburg, HStAM 4 h Nr. 1411 f. 3, via HCPortal record 496"><img src="malsburg1637_lead.jpg" alt="Six lines of two-digit groups with capital signs, beginning after the clear word gemachet" loading="lazy"><figcaption>The first cipher lines of the letter of 5/15 January 1637. After the clear &ldquo;gemachet,&rdquo; the groups 27.39.13.95.N.F.D.44.89.N read &ldquo;das ich auch noch nit weiss&rdquo;. <span class="credit">Image: Hessisches Staatsarchiv Marburg, HStAM 4 h Nr. 1411 f. 3, via HCPortal record 496.</span></figcaption></figure>
+<figure data-credit="Hessisches Staatsarchiv Marburg, HStAM 4 h Nr. 1411 f. 3, via HCPortal record 496"><img src="malsburg1637_lead.jpg" width="265" height="4360" decoding="async" srcset="thumbs/malsburg1637_lead-480.webp 480w, malsburg1637_lead.jpg 265w" sizes="(max-width: 1000px) 100vw, 940px" alt="Six lines of two-digit groups with capital signs, beginning after the clear word gemachet" loading="lazy"><figcaption>The first cipher lines of the letter of 5/15 January 1637. After the clear &ldquo;gemachet,&rdquo; the groups 27.39.13.95.N.F.D.44.89.N read &ldquo;das ich auch noch nit weiss&rdquo;. <span class="credit">Image: Hessisches Staatsarchiv Marburg, HStAM 4 h Nr. 1411 f. 3, via HCPortal record 496.</span></figcaption></figure>
 
 <h2 id="the-letters"><span class="num">01</span> The letters and the key</h2>
 <p>Otto von der Malsburg served Landgrave Wilhelm V as general war commissary for the Hessian army in Westphalia. In 1637 Hesse-Kassel was under imperial ban, Upper Hesse was occupied, and the landgrave had moved his army into East Frisia, where he died in September. File 4 h Nr. 1411 at Marburg keeps Malsburg&rsquo;s reports from January to March of that year. Each is a clear letter with long cipher runs, and several are nearly all cipher.</p>
@@ -118,7 +130,7 @@
 <p>The reading was measured by splitting each deciphered run into words of 17th-century German (the Deutsches Textarchiv prints of 1470&ndash;1670, plus names and spellings checked in context). A group counts as read when all its letters fall inside words. The ten letters give 9,338 of 9,736 groups (95.9%); the 193 open code groups account for half the rest, and 97.9% of the non-code text reads. The same measure on shuffled keys gives 50&ndash;58%. It counts groups inside words, not sentences: read as sentences (reading audit, 22 October 2026), ff. 3, 14, 15&ndash;17, 28&ndash;29 (and the duplicate 30&ndash;31) and 32&ndash;33 had open codes, stray letters or noise in most sentences. On 22&ndash;23 October every letter was built into sentences on the scans, letter by letter with the decode: ff. 3 and 28&ndash;29 now hold, while ff. 18 and 23&ndash;24 turned out to have open codes in most sentences, and ff. 14, 15&ndash;17, 30&ndash;31 and 32&ndash;33 stay decoded, not read (in the German extracts of f. 33 about thirty words of a fast second hand are also unread). The letters that read, with the alphabetic block, hold about 53% of the cipher (estimated); each of them builds coherent sentences but reads at 89&ndash;93% of its words (measured 24 October 2026), under the 95% a complete reading needs, so even these are partial. Every group that did not read was checked again on the scans: 24 misreadings and 2 doubled groups were corrected, and 210 were confirmed as the writer wrote them.</p>
 
 <h2 id="letter-block"><span class="num">04</span> The alphabetic block of 7/17 January</h2>
-<figure data-credit="Hessisches Staatsarchiv Marburg, HStAM 4 h Nr. 1411, digital image 0012, via HCPortal record 497"><img src="malsburg1637_letterblock.jpg" alt="Ten manuscript lines of lower-case cipher letters, numbers 43 and 45, two angular signs and a marginal annotation" loading="lazy"><figcaption>The alphabetic block below the numerical cipher. The angular pair is provisionally labelled LL; neither Latin letters nor the number 44 are established. The marginal annotation is tentatively read &ldquo;[E?]: Sixt: / cla:&rdquo;; its expansion and attribution remain open. This page previously called digital image 0012 &ldquo;f. 12&rdquo;, a label retained above for continuity, not a verified manuscript foliation. <span class="credit">Image: Hessisches Staatsarchiv Marburg, HStAM 4 h Nr. 1411, digital image 0012, via HCPortal record 497.</span></figcaption></figure>
+<figure data-credit="Hessisches Staatsarchiv Marburg, HStAM 4 h Nr. 1411, digital image 0012, via HCPortal record 497"><img src="malsburg1637_letterblock.jpg" width="337" height="4360" decoding="async" alt="Ten manuscript lines of lower-case cipher letters, numbers 43 and 45, two angular signs and a marginal annotation" loading="lazy"><figcaption>The alphabetic block below the numerical cipher. The angular pair is provisionally labelled LL; neither Latin letters nor the number 44 are established. The marginal annotation is tentatively read &ldquo;[E?]: Sixt: / cla:&rdquo;; its expansion and attribution remain open. This page previously called digital image 0012 &ldquo;f. 12&rdquo;, a label retained above for continuity, not a verified manuscript foliation. <span class="credit">Image: Hessisches Staatsarchiv Marburg, HStAM 4 h Nr. 1411, digital image 0012, via HCPortal record 497.</span></figcaption></figure>
 <p><strong>The alphabetic key is recovered; the reading remains critical.</strong> Larry Beck and ChatGPT continued from Bourdeau&rsquo;s transcription and recovered a period-five shift cipher. The original normalized transcription has 523 alphabetic positions; a selected reading from the authentic 2834 &times; 4284-pixel source image has 510. Both inputs and both literal outputs are preserved. The earlier figure of 531 also counted the four characters of the two LL labels and the four letters of the blot annotation; these are not ordinary cipher letters. This contribution concerns the separate ten-line block, not the surrounding numerical cipher.</p>
 
 <h3>The mechanism and its checks</h3>
@@ -1942,14 +1954,27 @@ In Paris they have so much to do with the dispatch of Duke Bernhard of Saxony an
 <li>Documentary retrieval leads, catalogue records only: <a href="https://apertus.rlp.de/index.php?PLINK=1&amp;ID=d5c14d42-f356-4ff4-8509-b39dc6dbbcbe">LHA Koblenz 47/4400</a> (cipher codes, 1635-1641); <a href="https://arcinsys.hessen.de/arcinsys/detailAction.action?detailid=v2343475">HStAM 4 h 2208</a> (July-December 1636, not a proved concordance for Kr. A. 1636, III); <a href="https://arcinsys.hessen.de/arcinsys/detailAction.action?detailid=v1018318">HStAM 4 h 2209</a> (January-March 1637); and <a href="https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails?archivalDescriptionId=2045812">HStAM 4 f Staaten F, Frankreich 1297</a> (Hoff reports, 1636-1637).</li>
 </ul>
 <p class="muted">Transcriptions, key, codes, solver and measure: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/malsburg1637">targets/malsburg1637/</a>.</p>
+<!-- cite:start -->
+<details class="cite" id="cite"><summary>Cite this page</summary>
+<p class="citetext">Daniel Bourdeau, “Otto von der Malsburg’s cipher letters to Landgrave Wilhelm V, 1637”, Cyphersolver, posted 28 September 2026, updated 23 October 2026, https://cyphersolver.com/malsburg1637.html.</p>
+<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau, “Otto von der Malsburg’s cipher letters to Landgrave Wilhelm V, 1637”, Cyphersolver, posted 28 September 2026, updated 23 October 2026, https://cyphersolver.com/malsburg1637.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-malsburg1637,
+  author = {Daniel Bourdeau},
+  title = {Otto von der Malsburg’s cipher letters to Landgrave Wilhelm V, 1637},
+  year = {2026},
+  howpublished = {Cyphersolver},
+  note = {posted 28 September 2026, updated 23 October 2026},
+  url = {https://cyphersolver.com/malsburg1637.html}
+}">Copy BibTeX</button></p>
+</details>
+<!-- cite:end -->
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Hessisches Staatsarchiv Marburg, HStAM 4 h Nr. 1411, via HCPortal</span>
-  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="dole1636.html" rel="prev">&larr; Siege of Dole 1636 1636</a><a href="heusner1637.html" rel="next">Heusner 1637 1637 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="dole1636.html" rel="prev">&larr; Siege of Dole 1636 1636</a><a href="heusner1637.html" rel="next">Heusner 1637 1637 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="feed.xml">Feed</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
 <script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
-<script src="solve-replay.js?v=20261105c" defer></script>
-<script src="zoom.js?v=20261105c" defer></script>
-<script src="site.js?v=20261105c"></script>
+<script src="solve-replay.js?v=fb44852f" defer></script>
+<script src="zoom.js?v=fb44852f" defer></script>
+<script src="site.js?v=fb44852f"></script>
 </body>
 </html>

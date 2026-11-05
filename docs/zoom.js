@@ -42,7 +42,7 @@
     let OS; try{ OS=await load(); }catch(e){ box.querySelector('.zv-view').innerHTML='<p class="zv-err">The zoom viewer could not be loaded.</p>'; return; }
     if(viewer){ viewer.destroy(); viewer=null; }
     const view=box.querySelector('.zv-view'); view.innerHTML='';
-    viewer=OS({element:view,tileSources:data&&data.iiif?data.iiif:{type:'image',url:img.currentSrc||img.src},
+    viewer=OS({element:view,tileSources:data&&data.iiif?data.iiif:{type:'image',url:img.src},
       showNavigationControl:false,showNavigator:true,navigatorPosition:'BOTTOM_RIGHT',maxZoomPixelRatio:4,visibilityRatio:.6,
       animationTime:matchMedia('(prefers-reduced-motion: reduce)').matches?0:1.1,gestureSettingsMouse:{clickToZoom:false,dblClickToZoom:true}});
     if(!data || !(data.lines||[]).length) return;

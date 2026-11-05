@@ -44,6 +44,98 @@ function renderTiles(el, items){
     t.appendChild(p); t.appendChild(g); el.appendChild(t);
   }
 }
+// the Write-ups menu's Latest and By outcome groups live in menu.json, so a new write-up does not rewrite every page
+(function(){
+  const panel=document.querySelector('.nav .panel.wp'), nav=document.querySelector('.nav'); if(!panel) return;
+  let asked=false;
+  const fill=()=>{ if(asked) return; asked=true;
+    fetch('menu.json').then(r=>r.ok?r.json():Promise.reject()).then(m=>{
+      panel.insertAdjacentHTML('afterbegin',m.groups);
+      const here=location.href.split('#')[0];
+      panel.querySelectorAll('.grp a').forEach(a=>{ if(a.href===here) a.setAttribute('aria-current','page'); });
+      const all=panel.querySelector('.foot .all'); if(all) all.textContent=m.all;
+    }).catch(()=>{});
+  };
+  ['pointerover','focusin','touchstart'].forEach(ev=>nav.addEventListener(ev,fill,{once:true,passive:true}));
+  if('requestIdleCallback' in window) requestIdleCallback(fill,{timeout:4000}); else setTimeout(fill,2000);
+})();
+// reading aids: skip link, section menu on long pages, heading links, expand all, cite buttons, long hero summaries on phones
+(function(){
+  const pageUrl=location.pathname+location.search;
+  // a page with <base> (solve, further, 404) would send a bare #anchor to the base address
+  if(document.querySelector('base')) document.querySelectorAll('a[href^="#"]').forEach(a=>{ a.href=pageUrl+a.getAttribute('href'); });
+  const skip=document.querySelector('.nav .skip'), target=document.getElementById('content');
+  if(skip&&target) skip.addEventListener('click',e=>{ e.preventDefault(); target.focus(); });
+  const copy=(text,el,done)=>{
+    if(!navigator.clipboard) return;
+    navigator.clipboard.writeText(text).then(()=>{ const was=el.textContent; el.textContent=done; setTimeout(()=>{ el.textContent=was; },1400); },()=>{});
+  };
+  document.querySelectorAll('.cite [data-copy]').forEach(b=>b.addEventListener('click',()=>copy(b.dataset.copy,b,'Copied')));
+  // each section heading carries a link to itself; a click copies the address
+  document.querySelectorAll('main h2[id], main h3[id]').forEach(h=>{
+    const a=document.createElement('a'); a.className='hlink'; a.href=pageUrl+'#'+h.id; a.textContent='#';
+    a.setAttribute('aria-label','Copy a link to this section'); a.title='Copy a link to this section';
+    a.addEventListener('click',e=>{ e.preventDefault(); history.replaceState(null,'',a.href); copy(a.href,a,'copied'); });
+    h.appendChild(a);
+  });
+  // expand all: the collapsed texts of a page, also opened for printing
+  const folds=[...document.querySelectorAll('main details')].filter(d=>!d.closest('.cfilters')&&!d.classList.contains('cite'));
+  const toggles=[];
+  const syncToggles=()=>{ const open=folds.every(d=>d.open); toggles.forEach(b=>{ b.textContent=open?'Collapse all':'Expand all '+folds.length; b.setAttribute('aria-pressed',open?'true':'false'); }); };
+  const makeToggle=()=>{ const b=document.createElement('button'); b.type='button'; b.className='expandall'; toggles.push(b);
+    b.addEventListener('click',()=>{ const open=!folds.every(d=>d.open); folds.forEach(d=>{ d.open=open; }); syncToggles(); }); return b; };
+  if(folds.length>=3){
+    const texts=document.getElementById('texts');
+    if(texts){ const lead=texts.nextElementSibling&&texts.nextElementSibling.tagName==='P'?texts.nextElementSibling:texts; lead.after(makeToggle()); }
+    folds.forEach(d=>d.addEventListener('toggle',syncToggles));
+    let reopen=[];
+    addEventListener('beforeprint',()=>{ reopen=folds.filter(d=>!d.open); reopen.forEach(d=>{ d.open=true; }); });
+    addEventListener('afterprint',()=>{ reopen.forEach(d=>{ d.open=false; }); });
+  }
+  // sections: a rail beside the text on a wide screen, a button with a list on anything narrower
+  const toc=document.querySelector('main .toc');
+  const links=toc?[...toc.querySelectorAll('a')]:[];
+  if(links.length>=3 && document.documentElement.scrollHeight>innerHeight*3 && 'IntersectionObserver' in window){
+    const box=document.createElement('aside'); box.className='secnav'; box.setAttribute('aria-label','Sections');
+    const btn=document.createElement('button'); btn.type='button'; btn.className='secbtn'; btn.textContent='Sections'; btn.setAttribute('aria-expanded','false'); btn.setAttribute('aria-controls','seclist');
+    const list=document.createElement('nav'); list.className='seclist'; list.id='seclist'; list.setAttribute('aria-label','On this page');
+    const head=document.createElement('p'); head.className='sechead'; head.textContent='On this page'; list.appendChild(head);
+    const own=new Map();
+    links.forEach(l=>{ const a=l.cloneNode(true); a.classList.remove('on'); list.appendChild(a); own.set(l.getAttribute('href').split('#').pop(),a); });
+    const cite=document.getElementById('cite');
+    if(cite){ const a=document.createElement('a'); a.href=pageUrl+'#cite'; a.textContent='Cite this page'; a.className='seccite'; a.addEventListener('click',()=>{ cite.open=true; }); list.appendChild(a); }
+    if(folds.length>=3){ const t=document.createElement('div'); t.className='sectools'; t.appendChild(makeToggle()); list.appendChild(t); }
+    box.append(list,btn); document.body.appendChild(box); document.body.classList.add('has-secnav');
+    const setOpen=on=>{ box.classList.toggle('open',on); btn.setAttribute('aria-expanded',on?'true':'false'); };
+    btn.addEventListener('click',e=>{ e.stopPropagation(); setOpen(!box.classList.contains('open')); });
+    list.addEventListener('click',e=>{ if(e.target.closest('a')) setOpen(false); });
+    document.addEventListener('click',e=>{ if(!box.contains(e.target)) setOpen(false); });
+    document.addEventListener('keydown',e=>{ if(e.key==='Escape'&&box.classList.contains('open')){ setOpen(false); btn.focus(); } });
+    new IntersectionObserver(es=>{ box.classList.toggle('past',!es[es.length-1].isIntersecting); }).observe(toc);
+    // the section in view: the last heading above the upper third of the window, so a jump lands on the right one too
+    const heads=[...own.keys()].map(id=>[id,document.getElementById(id)]).filter(x=>x[1]);
+    let tick=0, shown=null;
+    const spot=()=>{ tick=0; let cur=null;
+      for(const [id,h] of heads){ if(h.getBoundingClientRect().top<=innerHeight*.3) cur=id; else if(cur) break; }
+      if(cur===shown) return; shown=cur;
+      own.forEach((a,id)=>a.classList.toggle('on',id===cur));
+      const a=own.get(cur); if(!a) return;
+      const r=a.getBoundingClientRect(), R=list.getBoundingClientRect(); if(R.height&&(r.top<R.top||r.bottom>R.bottom)) list.scrollTop+=r.top-R.top-R.height/2; };
+    addEventListener('scroll',()=>{ if(!tick) tick=setTimeout(spot,80); },{passive:true}); spot();
+  }
+  syncToggles();
+  // phones: a long hero summary folds to a few lines, so the page itself comes sooner
+  if(matchMedia('(max-width:760px)').matches){
+    document.querySelectorAll('section.hero:not(.solve) > p.sub').forEach(p=>{
+      const line=parseFloat(getComputedStyle(p).lineHeight)||26;
+      if(p.offsetHeight<line*6.5) return;
+      p.classList.add('folded');
+      const b=document.createElement('button'); b.type='button'; b.className='subless'; b.textContent='More'; b.setAttribute('aria-expanded','false');
+      b.addEventListener('click',()=>{ const on=p.classList.toggle('folded'); b.textContent=on?'More':'Less'; b.setAttribute('aria-expanded',on?'false':'true'); });
+      p.after(b);
+    });
+  }
+})();
 // 'show more' blocks on the home page
 // .showmore reveals its hidden box; with data-step it reveals the box's <li> a batch at a time, then offers to fold them back
 document.querySelectorAll('.showmore').forEach(b=>b.addEventListener('click',()=>{
@@ -140,29 +232,49 @@ document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent)
   if(!box||!input||!res) return;
   const btns=document.querySelectorAll('.searchbtn'), closeBtn=box.querySelector('.sclose');
   const ver=(document.currentScript&&document.currentScript.src.split('?')[1])||'';
-  let idx=null, loading=null, bodies=null, bloading=null, items=[], sel=-1, opener=null;
+  let idx=null, loading=null, byU=new Map(), nextShard=0, shardBusy=false, fullAsked=false, shardFail=false, items=[], sel=-1, opener=null, typing=0;
+  const SHARDS=16;      // _build_site.py has the same number
   // fold case, accents and curly quotes one UTF-16 unit at a time, so an index into the folded text is an index into the original
   const foldCh=c=>{ const f=c.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[‘’]/g,"'"); return f.length===1?f:(f.length?f[0]:''); };
-  const fold=s=>s.replace(/[\s\S]/g,foldCh);
+  const fold=s=>s.replace(/[^\x00-\x40\x5b-\x7f]/g,foldCh);     // plain lowercase ASCII is most of it, and stays as it is
   function msg(t){ res.innerHTML=''; const p=document.createElement('p'); p.className='smsg'; p.textContent=t; res.appendChild(p); }
   function load(){
     if(loading) return loading;
     msg('Loading the index…');
     loading=fetch('search-t.json'+(ver?'?'+ver:'')).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); }).then(d=>{
       idx=d.map(e=>(e.b='', {e, ft:fold(e.t+(e.h?' '+e.h:'')), fp:fold(e.p+' '+e.y+' '+e.stt), fb:''}));
+      idx.forEach(r=>byU.set(r.e.u,r));
       return idx;
     }).catch(()=>{ idx=null; loading=null; msg('The search index could not be loaded.'); });
     return loading;
   }
-  // the page and section texts are the big part of the index: fetched on the first keystroke, and the results
-  // are drawn again when they arrive (titles, places and years match in the meantime)
-  function loadBodies(){
-    if(bodies||bloading||!idx) return;
-    bloading=fetch('search-b.json'+(ver?'?'+ver:'')).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); }).then(d=>{
-      bodies=d; idx.forEach((r,i)=>{ r.e.b=d[i]||''; r.fb=fold(r.e.b); });
-      if(!box.hidden) render(input.value);
-    }).catch(()=>{ bloading=null; });
+  // the page and section texts are the big part of the index: fetched shard by shard after the first query, the results
+  // drawn again as each arrives (titles, places and years match in the meantime). Closing the box stops the fetching; a
+  // reader on a slow or data-saving connection is asked first.
+  const slowNet=()=>{ const c=navigator.connection; return !!c&&(c.saveData||/2g/.test(c.effectiveType||'')); };
+  const bodiesDone=()=>nextShard>=SHARDS||shardFail;
+  async function loadBodies(){
+    if(!idx||shardBusy||bodiesDone()||(slowNet()&&!fullAsked)) return;
+    shardBusy=true;
+    try{
+      while(nextShard<SHARDS&&!box.hidden){
+        const r=await fetch('search-b/'+String(nextShard).padStart(2,'0')+'.json'+(ver?'?'+ver:''));
+        if(!r.ok) throw new Error(r.status);
+        const rows=await r.json();
+        let t=performance.now();
+        for(const [u,b] of rows){
+          const x=byU.get(u); if(x){ x.e.b=b; x.fb=fold(b); }
+          if(performance.now()-t>12){ await new Promise(ok=>setTimeout(ok)); t=performance.now(); }
+        }
+        nextShard++;
+        if(!box.hidden&&sel<0) render(input.value); else progress();
+      }
+    }catch(e){ shardFail=true; }
+    shardBusy=false;
+    if(!box.hidden&&sel<0&&bodiesDone()) render(input.value);
   }
+  let nHits='';
+  function progress(){ sn.textContent=nHits+(bodiesDone()||!nextShard&&!shardBusy?'':(nHits?' · ':'')+'searching full text '+Math.round(nextShard/SHARDS*100)+'%')+(shardFail?(nHits?' · ':'')+'full text not available':''); }
   function terms(q){
     const out=[], re=/"([^"]+)"|(\S+)/g; let m;
     while((m=re.exec(q))){ const t=fold(m[1]||m[2]).trim(); if(t) out.push(t); }
@@ -208,14 +320,18 @@ document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent)
   function render(q){
     if(!idx) return;
     const ts=terms(q); res.innerHTML=''; items=[]; sel=-1; input.removeAttribute('aria-activedescendant');
+    nHits='';
     if(!ts.length){ sn.textContent=''; msg(idx.length+' pages, sections and catalogue entries. Try a name, a place, a shelfmark, a year or a word of the cipher.'); return; }
     const whole=fold(q.replace(/"/g,'')).trim();
     const hits=[]; for(const r of idx){ const s=score(r,ts,whole); if(s) hits.push([s,r]); }
     hits.sort((a,b)=>b[0]-a[0]);
     const per={}, out=[];
     for(const [s,r] of hits){ const k=r.e.u.split('#')[0]; per[k]=(per[k]||0)+1; if(per[k]>3) continue; out.push(r); if(out.length>=40) break; }
-    sn.textContent=hits.length?hits.length+(hits.length===1?' match':' matches'):'';
-    if(!out.length){ msg('Nothing found for “'+q.trim()+'”.'); return; }
+    nHits=hits.length?hits.length+(hits.length===1?' match':' matches'):''; progress();
+    if(!out.length&&bodiesDone()){ msg('Nothing found for “'+q.trim()+'”.'); return; }
+    if(!out.length&&!slowNet()){ msg('Nothing in the titles; still searching the full text…'); return; }
+    if(slowNet()&&!fullAsked&&!bodiesDone()){ const b=document.createElement('button'); b.type='button'; b.className='sfull'; b.textContent='Also search the full text (about 8 MB)';
+      b.addEventListener('click',()=>{ fullAsked=true; b.remove(); loadBodies(); }); if(!out.length) msg('Nothing in the titles.'); res.appendChild(b); }
     out.forEach((r,n)=>{
       const e=r.e, a=document.createElement('a'); a.className='sr'; a.href=e.u; a.id='sr-'+n; a.setAttribute('role','option');
       const t=document.createElement('span'); t.className='srt'; hilite(t,e.t,fold(e.t),ts);
@@ -234,7 +350,7 @@ document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent)
     if(!box.hidden){ input.focus(); return; }
     opener=document.activeElement; box.hidden=false; document.documentElement.classList.add('sopen');
     input.focus(); input.select();
-    load().then(()=>{ if(idx){ if(input.value.trim()) loadBodies(); render(input.value); } });
+    load().then(()=>{ if(idx){ if(input.value.trim().length>1) loadBodies(); render(input.value); } });
   }
   function close(){
     if(box.hidden) return;
@@ -250,7 +366,7 @@ document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent)
   btns.forEach(b=>b.addEventListener('click',open));
   closeBtn.addEventListener('click',close);
   box.addEventListener('click',e=>{ if(e.target===box) close(); });
-  input.addEventListener('input',()=>{ if(input.value.trim()) loadBodies(); render(input.value); });
+  input.addEventListener('input',()=>{ clearTimeout(typing); typing=setTimeout(()=>{ if(input.value.trim().length>1) loadBodies(); render(input.value); },nextShard?110:30); });
   input.addEventListener('keydown',e=>{
     if(e.key==='ArrowDown'){ e.preventDefault(); move(1); }
     else if(e.key==='ArrowUp'){ e.preventDefault(); move(-1); }
