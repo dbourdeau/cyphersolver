@@ -72,7 +72,7 @@ def solved_map():
         name = re.sub(r'\*\*|\[|\]\([^)]*\)', '', cells[0])
         name = re.sub(r'\s*\((?:[^()]|\([^()]*\))*(?:catalogue|DECODE)(?:[^()]|\([^()]*\))*\)\s*$', '', name).strip()
         slug = re.search(r'dbourdeau\.github\.io/cyphersolver/([\w-]+)\.html', line)
-        part = bool(re.search(r'catalogue(?: item)? \d+[^)]*?part|split \d|from catalogue', cells[0]))
+        part = bool(re.search(r'catalogue(?: item)? \d+[^)]*?\bpart\b|split \d|from catalogue', cells[0]))
         for i in ids:
             out.setdefault(i, []).append((name, sec, cells[2], slug.group(1) if slug else None, part))
     return out
