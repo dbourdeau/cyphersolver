@@ -67,7 +67,11 @@ requested.** As he reports it:
 Files copied unchanged into `brackx/` from https://gist.github.com/brackxm/c48586b981081bc69a5db8d672eef296 (revision
 a026501dcb23, 28 Oct 2026); he allows copying under the project licence (CC BY 4.0 for text and data, MIT for code), with
 credit. Tools, from his readme: Claude Code with Claude Opus 5.5, directed by him, on the BnF IIIF images (views 61-62).
-His crib_anneal.py and lm_anneal.py are not in the gist (offered on request).
+His `crib_anneal.py` (alignment of the signs with the marginal gloss) and `lm_anneal.py` (French 5-gram fill of the free
+values) were added to the gist later the same day (28 Oct, revision d819ac655347) and copied unchanged into `brackx/` on
+5 Nov 2026, MIT, credited to him. The other twelve files of the gist at that revision have the same content as our copies
+(only line endings and a trailing blank line differ). The two scripts are not run here: `lm_anneal.py` needs numpy and a
+5-gram table built from Montaigne that is not in the gist, so key recovery is not reproduced.
 
 `check_brackx.py` (our own code; it does not run his scripts) applies `key_r5.tsv` to `transcription_f60r_f60v.txt` and
 compares with `decode_tvd_r5.txt`: 274 tokens, 272 agree; the 2 differences are bracketed clear words in the transcription

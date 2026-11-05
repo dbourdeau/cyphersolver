@@ -1,6 +1,6 @@
 # coloma1622: the Marquis of Mirabel to Carlos Coloma, Lyon, 8 December 1622 (BNE RES/227/122; catalogue 1601)
 
-Status: in progress: site write-up pending (merged from Brice Dudout's PR 5 Nov 2026); read in part (Brice Dudout, 5 Nov 2026; 375 of 425 cipher words = 88.2% without restorations; key partial by our protocol: C02 0.761, H3 0.690, H5 0.814 on characters against contemporary clears).
+Status: read in part (Brice Dudout, 5 Nov 2026; 375 of 425 cipher words = 88.2% without restorations; key partial by our protocol: C02 0.761, H3 0.690, H5 0.814 on characters against contemporary clears).
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents. Catalogue entry 1601 (Chrome pass, BNE Digital).
 The key comes from the Duke of Feria's letters to Coloma (lead 1602), whose cipher passages carry a contemporary clear in the
@@ -13,7 +13,7 @@ Spanish ambassador in France, to Don Carlos Coloma, Spanish ambassador in London
 close; the body in cipher: 969 tokens (f.1r 25 lines, f.1v 36 lines), plus two tokens read on the image that were missing
 from the frozen transcriptions. Signature and postscript autograph.
 
-**No image, crop or thumbnail is included** (BNE scans used for research only).
+The scans are not kept in the repository. The site write-up shows one crop (f.1v ll. 1-7, viewer image 6), credited, under BNE Digital's CC BY 4.0; it was captured from the viewer in Chrome (a plain curl gets a 403 from Cloudflare), so a sweep of BNE Digital should go straight to Chrome.
 
 ## System and key (`key.tsv`, `validation.txt`)
 

@@ -1,6 +1,6 @@
 # aragon1676: Cardinal Pascual de Aragón to his brother Pedro de Aragón (BNE Mss/2043), system S1, p. 0496
 
-Status: in progress: site write-up pending (merged from Brice Dudout's PR 5 Nov 2026); read in part (Brice Dudout, 5 Nov 2026; 82 of 95 words = 86% without restorations; key partial by our protocol, 0.742 on a single held-out page; the page carries a contemporary margin decipherment).
+Status: read in part (Brice Dudout, 5 Nov 2026; 82 of 95 words = 86% without restorations; key partial by our protocol, 0.742 on a single held-out page; the page carries a contemporary margin decipherment).
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents. Not in the catalogue; first reported in issue #254
 (new lead "BNE Mss/2043"). No DECODE record found, nothing at Cryptiana (Tomokiyo), no edition found.
@@ -17,8 +17,9 @@ This target is **one page**: PDF view 0496, left and right pages (about f. 493).
 contemporary decipherment in the margin. The date is not on the part transcribed; the content (suspension of arms, Sicily,
 Carpio, Medina, Oropesa) points to 1676-1677. View numbers are image ranks in the PDF, not folios (folio ≈ view - 3).
 
-Citation of images: "BNE Mss/2043, BNE Digital". **No image, crop or thumbnail is included here**: the scans were used for
-research only.
+Citation of images: "BNE Mss/2043, BNE Digital". Contributor's folder: no image included. The site write-up (5 Nov 2026)
+adds one crop of the left page (cipher lines 1-6 with their margin), taken from the BNE Digital viewer (BDH bdh0000042925,
+view 496), credited to the BNE.
 
 ## System S1 and key (`key.tsv`)
 
@@ -92,7 +93,21 @@ state" by discontent, and the conferences of Oropesa; Valencia (or Valenzuela) i
 
 ## Remaining gaps
 
-- Other pages of S1 with a margin or with the "Descifrado" gathering are not read; no held-out page is left for a new key
-  test (all the margined pages we chose have been used once).
-- Pages without any clear are not attempted: the key is not validated.
-- The date and the exact persons behind Carpio, Medina, Oropesa and Valencia/Valenzuela are not established.
+- 13 of 95 margin words restored from the margin, not given by the key ("en", "la", "con", "que" x3, "lo", "hando", "cierto", "ahi", "se" x2, "mui"), and the cipher stretches "tararahasii", "hsmir", "enne", "eyseco", "prohcp", "lapide" - blocker: open-codes; the key is partial (0.742 on the held-out page) and the signs behind these stretches have no settled value
+- 3 illegible signs and 7 doubtful signs given as A|B in the transcription (pale ink, crossing interlinear writing) - blocker: illegible; a second reader or a better image would settle them
+- start of the right-page margin lines, caught in the binding ("mel ar", "tado", "me as", "contentar e", "el iene") - blocker: needs-physical-access; only the cut margin is on the scan
+- no held-out page with a clear is left to test the key again (every margined page chosen has been used once) - blocker: no-key-material; a new test needs another page with a contemporary decipherment
+
+Not gaps of this reading (scope): the interlinear clear on the right page was not read and was not used, so that the held-out
+test stayed clean (declared deviation above); it is not part of this reading. The other S1 pieces of the volume (about 90-110,
+with or without a margin) are not part of it either. The date of the letter and the individuals behind Carpio, Medina,
+Oropesa and Valencia/Valenzuela are not established here; the content points to 1676-1677.
+
+## Escalation
+
+- [x] siblings: the other margin pieces of Mss/2043 (views 0138-0139, 0484-0485) and ten letters of views 0318-0355 were opened as training pairs; held-out pages 0493, 0495, 0501, 0504, 0519-0520 were measured by earlier keys (validation.txt)
+- [x] clear-pages: the separate gathering "Descifrado de las cartas..." (views 0356-0368) holds clear copies, paired with ten letters for training; the margin decipherment of this page is the reading of the time and is what the key was measured against
+- [x] known-keys: no key for S1 was known beforehand; the keys CLE_FIGEE, C02, C03, C04, C06 and C08c were all built here, in that order, and only C08c was frozen for this page
+- [x] print: web searches 4-5 Nov 2026 found no edition or study of these letters; nothing at Cryptiana (Tomokiyo); no DECODE record; Maura (Vida y reinado de Carlos II) and studies of Valenzuela and Juan Jose, which may quote the cardinal's letters in clear, were not opened
+- [x] key-rebuild: CLE_C08c learned by EM alignment on 14 cipher/clear pairs, with the 6/10/20, 21/24/31 and 28 sign shapes settled on blind shape plates by Brice Dudout, then frozen by SHA-256 before p. 0496 was opened
+- [n/a] retry: not recorded in these notes; the key was frozen by protocol before p. 0496 was opened and the notes record no second decode of the unread stretches with an extended key

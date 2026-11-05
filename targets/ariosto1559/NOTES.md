@@ -1,6 +1,6 @@
 # ariosto1559: Ercole II d'Este to Claudio Ariosto, 23 April 1559 (catalogue 2159)
 
-Status: in progress: site write-up pending (merged from Brice Dudout's PR 5 Nov 2026); read in part (Brice Dudout, 5 Nov 2026; 357 of 402 cipher words = 88.8% without restorations; key validated by our protocol, M5 0.605 against 0.155 on a held-out set, one measurement).
+Status: read in part (Brice Dudout, 5 Nov 2026; 357 of 402 cipher words = 88.8% without restorations; key validated by our protocol, M5 0.605 against 0.155 on a held-out set, one measurement).
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents. Catalogue entry 2159, from WAINUT's Estense
 leads (PR #242). No DECODE record, nothing at Cryptiana (Tomokiyo), no edition found.
@@ -110,6 +110,8 @@ Catalogue 2159 and 2160 were open when checked through the GitHub API (origin/ma
 issue for cc. 39-41 or cc. 16-17. No edition or study of this letter found. We have not searched the Archivio di Stato di
 Modena (Cancelleria, Ambasciatori; Ariosto's 1559 correspondence), where a clear minute could exist. If one prints this
 letter, we will credit it.
+
+Site write-up: `docs/ariosto1559.html` (5 Nov 2026). Portraits: sender from an engraved portrait of Ercole II (Rijksmuseum, via Commons); no portrait of Claudio Ariosto the secretary was found (no Wikipedia article, Wikidata item or Commons file or category, searched 5 Nov 2026). No DECODE record exists, so there is no DECODE edit to queue.
 
 ## Credits
 

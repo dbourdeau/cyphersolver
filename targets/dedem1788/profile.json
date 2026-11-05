@@ -332,6 +332,12 @@
       "kind": "literature search",
       "what": "Nationaal Archief EAD search located S.E. Croiset's cipher-office papers, NA 2.21.045 (familie Croiset) A.7.b, 1789-1810: inv. 18 correspondence with Dutch envoys on setting cipher codes, with cipher letters and code tables; inv. 21 cipher codes with notes and instructions to envoys; inv. 22 letter from W.F. Roell. All PHYSICAL, not scanned.",
       "result": "unknown"
+    },
+    {
+      "date": "2026-11-05",
+      "kind": "verification",
+      "what": "Issue #244 (EscalatorStudios): code 2704 was entered as 'anno 2 voorige jaar'. Scan 0004 of NA 1.02.20 inv. 785 (downloaded from the reporter's link) read directly: the faded entry in the 'te meer' cell, row 4, is the abbreviation 'ann.t 2 voorige Car.s', annuleert 2 voorige caracters (cancel the 2 preceding characters). Key table corrected, R2122 decode regenerated with b19_dedem_decode.py (one line changes); no reading changes (the opener 2504 2604 2704 was never read). The reporter's comparison entry 1429 on scan 0002 not settled.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -398,6 +404,13 @@
         "note": "PR #21: the code shown alphabetical within 500-group blocks (five-column layout); 354-value graded table; R2122 and R2131 decoded in part",
         "date": "2026-10-04",
         "source": "https://github.com/dbourdeau/cyphersolver/pull/21"
+      },
+      {
+        "who": "escalatorstudios",
+        "role": "key corrected",
+        "note": "code 2704 is 'annuleert 2 voorige caracters', not 'anno 2 voorige jaar' (scan 0004 of the Kroll codebook; with OpenAI Codex assistance)",
+        "date": "2026-11-05",
+        "source": "https://github.com/dbourdeau/cyphersolver/issues/244"
       }
     ],
     "key": "recovered",

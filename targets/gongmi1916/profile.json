@@ -1,0 +1,251 @@
+{
+ "schema_version": 1,
+ "target": "gongmi1916",
+ "title": "共密 (Gongmi): 9 numeric telegrams of Huang Xing's circle, Tokyo <-> Shanghai, 10 June - 2 July 1916 (JACAR) — read in part",
+ "documents": [
+  {
+   "id": "gongmi-1916",
+   "read": "read in part",
+   "shelfmark": "JACAR B03050089300, B03050089400, B03050089500, B03050090000 (特定人ノ発受郵便物取調): N17, N18, N23, N32, N27, N30, N33, N35, V4E (prefix 0364 1378 = 共密)",
+   "date": "10 June - 2 July 1916",
+   "year": 1916,
+   "country": "Japan",
+   "route": "Tokyo <-> Shanghai",
+   "places": {
+    "from": "Tokyo",
+    "to": "Shanghai"
+   },
+   "language": "Chinese (classical telegraphic)",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the copies; the texts are not in Hsueh Chun-tu's edition of Huang Xing's 1916 drafts (黃興等電稿) nor found online.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 555,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "JACAR scans; transcribed with Claude (first trials with Codex), every digit re-read blind by Brice Dudout",
+    "image_quality": "fair",
+    "notes": "Clear prefix 0364 1378 left out of the count. V4E includes framing repairs deduced from the decoding."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code",
+   "superencipherment"
+  ],
+  "summary": "The Chinese telegraph code (明密 book) with its pages, columns and rows renumbered by hand for the 共密 correspondent (S. Tomokiyo); equivalently key C51 (candidate) as a formula (key.md).",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "4",
+   "separation": "contiguous"
+  },
+  "distinct_symbols": 10,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "not applicable",
+  "word_division": "none",
+  "notes": "Digits written in kanji numerals in a grid, read in columns right to left; the first two groups are a clear prefix naming the code book. One key, one entry: split from targets/numeric1916, as its NOTES propose."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "None known: not in Hsueh Chun-tu's edition of Huang Xing's 1916 drafts (nothing between 8 and 20 June), nor online (Wenmi, Juin 1916 article). 黃興集 and Li Yuanhong's correspondence not yet checked.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "transcription"
+  ],
+  "attack": "ciphertext-only",
+  "first_date": "2026-10-12",
+  "last_date": "2026-11-04",
+  "human_role": "Brice Dudout read the digits on the JACAR scans (blind re-reading), proposed the reading order of the grids, chose leads and criteria; Claude wrote the solvers, tests and log, proposed hypotheses, readings and translations; Codex made early trials.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout",
+   "OpenAI Codex (early trials)"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10",
+   "kind": "transcription",
+   "what": "Forms read in columns right to left, four-digit groups; every digit re-read blind by Brice Dudout (20 groups of N30-N35 corrected on the scans).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10",
+   "kind": "solver",
+   "technique": [
+    "exhaustive search",
+    "language-model scoring",
+    "key-structure hypothesis"
+   ],
+   "what": "For each of the 10,000 constants K the optimal tens permutation by exact assignment, scored by a CTC unigram/bigram model (first trials by Codex); K = 9000 and φ = 9761405283.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "N07, under the same clear prefix 共密, does not read under C51 (another copy of the book or a faulty stream).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-19",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Contributor (Wenmi verify.py): the key reproduces every published raw text from the re-read digits; score far above 200 random keys of the same form and 200 digit shuffles. Rerun independently in targets/numeric1916 (20 Oct 2026).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "S. Tomokiyo (Cryptiana): the 共密 key is a 明密 code book with pages, columns and rows renumbered by hand; the contributor checked the exact factorisation over all group values (mingmi.py).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "reading",
+   "what": "Readings and translations as on the Wenmi page; counted by Daniel's rule: 510 certain, 24 probable, 21 unresolved or illegible of 555.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Project: Dudout's verify.py rerun with python -I (targets/numeric1916/NOTES.md): the 共密 text scores 3.492 against a maximum of -1.450 over 200 random keys of the same form and -1.224 over 200 digit shuffles.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "control",
+   "technique": [
+    "exhaustive search",
+    "language-model scoring"
+   ],
+   "what": "Project: his search_gongmi.py rerun from scratch recovers K = 9000 and the tens table exactly (score 3.492; shuffled-digit nulls -1.10, -1.07, -1.09).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Project: a decoder written here from the key statement alone (targets/numeric1916/decode.py, Unihan kTaiwanTelegraph table) applied to his digits gives the same character as his published raw text for 555 of 555 共密 groups.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Project, b21 re-read (targets/numeric1916/texts/gongmi_reading.md): his readings checked group by group against the decoder: 510 characters the figure's own value, 21 one-digit alternates, 3 supplied from context, 21 [?x]; explicit-hole score 41 of 45 sentences clean (0.91), grade B, kept 'read' there. This folder keeps the class the Wenmi edition gives (read in part).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "verification",
+   "what": "Project, dating check for the split of numeric1916 (Dan Bourdeau's condition): Dudout's public commits (bdudout/wenmi, UTC) put the 共密 key on 17 Oct 2026 21:35 UTC (partial edition, key C51); Cryptiana's mingmi section (undated; page 'first posted 18 September 2026, last modified 24 October 2026'; Wenmi cites it as 23 Oct 2026) credits the key formulas to Dudout and adds the reading as a renumbered 明密 book. Recovery predates the section; no priority for the project. Wayback holds only a 2 Oct 2026 capture. See NOTES.md, 'Dating and credit'.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {"validation": {"date": "2026-11-05", "verdict": "not applicable", "notes": "plaintext is Chinese telegraph code numbers, no Chinese letter model in lang; the contributor's verify.py random-key and digit-shuffle nulls were rerun here instead on 2026-10-20 (see solution steps)"}, 
+  "class": "read in part",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Key search scored with a telegraph-code language model, without cribs or plaintext; only the form dates served as checks (key.md, NOTES.md).",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.962,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Daniel's rule on reading.md: 510 certain + 24 probable of 555 groups (21 unresolved).",
+  "verification": [
+   "historical consistency",
+   "key confirms",
+   "independent verification"
+  ],
+  "gaps": [
+   {
+    "item": "21 characters unresolved or illegible (24 more read as probable)",
+    "blocker": "illegible",
+    "detail": "One-digit uncertainties on the police copies (the clerk's 一/二/三), anomalous codes, names and date codes; marked in reading.md."
+   }
+  ],
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "共密: digits re-read on the JACAR scans, key C51 (candidate) recovered with Claude (Opus 5.5), readings, translations and context; read in part (partial critical edition)",
+    "date": "2026-10-19",
+    "source": "https://bdudout.github.io/wenmi/en/gongmi.html",
+    "published": true
+   },
+   {
+    "who": "tomokiyo",
+    "role": "identification",
+    "note": "the three keys read as one renumbered 明密 code book (pages, columns and rows rewritten by hand), shown on a June 1916 edition of the 明密碼電報書. The Cryptiana section is undated (page last modified 24 Oct 2026); 23 Oct 2026 is the date Wenmi cites. It credits the formulas to Dudout, whose keys were published 17-19 Oct 2026",
+    "date": "2026-10-23",
+    "source": "https://cryptiana.web.fc2.com/code/chinesecrypto_e2.htm",
+    "published": true
+   }
+  ],
+  "texts": [
+   {
+    "doc": "gongmi-1916",
+    "label": "共密 (Gongmi), 9 telegrams, 10 June - 2 July 1916",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "zh",
+    "state": "read in part",
+    "read_share": 0.962,
+    "summary": "Huang Xing's five conditions to Li Yuanhong (restore the 1912 Provisional Constitution and the old Parliament, no amnesty, Duan's cabinet to resign, move Wang Zhanyuan, bring the party leaders to Beijing); Japan will not lend to Beijing before unification; reports from Shanghai on the Constitution and on Beijing's plan of provincial delegates.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "date": "2026-11-04",
+     "note": "Read as sentences 4 Nov 2026 (Chinese, classical telegraphic): N17, N18, N23, N27, N30 and V4E hold as sentences (Huang Xing's five conditions to Li Yuanhong; Japan will not lend to Beijing before unification; loans through Koike and Aoki); N32, N33 and N35 read in outline, with unresolved names and endings. 555 groups, 96.2% certain or probable, kept read in part as on the Wenmi edition (candidate key, N07 unread): grade B."
+    }
+   }
+  ],
+  "key_file": "key.md",
+  "provenance": "contributed"
+ }
+}

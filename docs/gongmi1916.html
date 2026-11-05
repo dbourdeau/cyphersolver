@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gongmi 共密 telegrams, Tokyo and Shanghai (June&ndash;July 1916) &mdash; Read in part</title>
+<meta name="description" content="Nine numeric telegrams of 10 June to 2 July 1916 between Huang Xing in Tokyo and the Shanghai group, copied by the Japanese police (JACAR B03050089300&ndash;90000) and headed 0364 1378 = 共密. The key, a tens-digit table and a subtraction from 9000, was recovered from the ciphertext alone by Brice Dudout with Claude and published on 17 October 2026 as a candidate key; 555 cipher groups, 96.2% read as sense. Satoshi Tomokiyo identified the key as a renumbered mingmi code book. One more telegram under the same prefix does not read with it.">
+<link rel="stylesheet" href="style.css?v=20261105a">
+<meta name="date" content="2026-11-05">
+<meta name="last-modified" content="2026-11-05">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body id="top">
+<header class="nav"><div class="in">
+  <a class="brand" href="index.html"><span class="glyph">972</span><span>Cyphersolver</span></a>
+  <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
+  <nav id="sitemenu" class="links" aria-label="Site">
+    <details class="menu"><summary class="active">Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel wp"><div class="grp latest"><h4>Latest</h4><ul><li><a href="guarna1447.html"><i class="dot partial" aria-hidden="true"></i><b>Guarna to Sforza, 21 May 1447</b><span class="yr">1447</span><span class="m">key from adjacent plaintext &middot; partial</span></a></li><li><a href="aragon1676.html"><i class="dot partial" aria-hidden="true"></i><b>Pascual de Arag&oacute;n to Pedro de Arag&oacute;n</b><span class="yr">1676&ndash;77</span><span class="m">key from adjacent plaintext &middot; partial</span></a></li><li><a href="coloma1622.html"><i class="dot partial" aria-hidden="true"></i><b>Mirabel to Coloma 1622</b><span class="yr">1622</span><span class="m">key from adjacent plaintext &middot; partial</span></a></li><li><a href="ariosto1559.html"><i class="dot partial" aria-hidden="true"></i><b>Ercole II to Ariosto 1559</b><span class="yr">1559</span><span class="m">ciphertext-only break &middot; partial</span></a></li><li><a href="este1585.html"><i class="dot partial" aria-hidden="true"></i><b>Cardinal d&rsquo;Este 1584&ndash;85</b><span class="yr">1584&ndash;1585</span><span class="m">known key applied &middot; partial</span></a></li><li><a href="gongmi1916.html" aria-current="page"><i class="dot partial" aria-hidden="true"></i><b>Huang Xing 共密 telegrams</b><span class="yr">June&ndash;July 1916</span><span class="m">ciphertext-only break &middot; partial</span></a></li></ul></div><div class="grp outc"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=ct"><i class="dot solved" aria-hidden="true"></i><b>Ciphertext-only break</b><b class="sh">Ciphertext-only</b><span class="n">85</span></a></li><li><a href="writeups.html#kind=extpt"><i class="dot solved" aria-hidden="true"></i><b>Key from external plaintext</b><b class="sh">Ext. plaintext</b><span class="n">19</span></a></li><li><a href="writeups.html#kind=adjpt"><i class="dot solved" aria-hidden="true"></i><b>Key from adjacent plaintext</b><b class="sh">Adj. plaintext</b><span class="n">95</span></a></li><li><a href="writeups.html#kind=extkey"><i class="dot solved" aria-hidden="true"></i><b>External key matched</b><b class="sh">External key</b><span class="n">34</span></a></li><li><a href="writeups.html#kind=known"><i class="dot solved" aria-hidden="true"></i><b>Known key applied</b><b class="sh">Known key</b><span class="n">108</span></a></li><li><a href="writeups.html#kind=deciph"><i class="dot solved" aria-hidden="true"></i><b>Existing decipherment</b><b class="sh">Existing reading</b><span class="n">97</span></a></li><li><a href="writeups.html#kind=notsolved"><i class="dot stuck" aria-hidden="true"></i><b>Not solved</b><b class="sh">Not solved</b><span class="n">76</span></a></li><li><a href="writeups.html#kind=na"><i class="dot found" aria-hidden="true"></i><b>Not applicable</b><b class="sh">Not applicable</b><span class="n">18</span></a></li><li><a href="writeups.html#kind=other"><i class="dot todo" aria-hidden="true"></i><b>Not yet classified</b><b class="sh">Unclassified</b><span class="n">1</span></a></li><li><a href="writeups.html#kind=survey"><i class="dot todo" aria-hidden="true"></i><b>Surveys</b><b class="sh">Surveys</b><span class="n">2</span></a></li></ul></div><div class="foot"><a class="all" href="writeups.html">All 535 write-ups, with filters &rarr;</a><a href="findings.html">All findings, newest first</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+    <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="famous.html"><b>The famous ones</b><span class="d">Why Voynich, Kryptos, Beale and Dorabella resist</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key read which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
+    <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
+    <a class="navcat" href="further.html">Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>
+    <a class="navcat" href="archives.html">To the archive<span class="sticker arc" aria-hidden="true"><span><b>Go<br>Look!</b></span></span></a>
+    <a href="contributors.html">Contributors</a>
+    <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
+    <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
+  </nav>
+</div></header>
+<div class="search" id="search" hidden>
+  <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
+    <form class="sform" role="search" onsubmit="return false">
+      <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input type="search" id="sq" placeholder="Search names, places, shelfmarks, words of the cipher&hellip;" autocomplete="off" spellcheck="false" aria-label="Search" aria-controls="sres">
+      <button type="button" class="sclose" aria-label="Close search">Esc</button>
+    </form>
+    <div class="sres" id="sres" role="listbox" aria-label="Results"></div>
+    <div class="shint"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> move</span><span><kbd>&crarr;</kbd> open</span><span><kbd>Esc</kbd> close</span><span class="sn" id="sn"></span></div>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="cipherstrip" translate="no">0364 1378 &middot; 1188 4080 4113 7528 8883 7811<br>[共密] 黎 總 統 就 任 大<br>1188 &rarr; 9000 &minus; 1188 = 7812 黎 &middot; 7528 &rarr; 1432 就</div>
+  <p class="kicker">Tokyo &harr; Shanghai &middot; Chinese telegraph code, the 共密 key &middot; 10 June &ndash; 2 July 1916</p>
+  <h1>Huang Xing&rsquo;s 共密 telegrams, June 1916</h1>
+<div class="parties"><figure class="party sender"><img src="portrait_huang-xing.jpg" alt="Huang Xing" title="Huang Xing: Photograph, c. 1910s. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Huang Xing</figcaption></figure></div><!-- /parties -->
+  <p class="sub">Nine intercepted telegrams on Huang Xing&rsquo;s conditions for the new president and on Beijing&rsquo;s plan to summon provincial delegates, in a telegraph code with a scrambled tens digit; Brice Dudout recovered the key from the ciphertext alone.</p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-11-05">5 November 2026</time></p>
+<p class="outcome">Method: <a href="glossary.html#ct">key recovered from ciphertext-only</a> &middot; Extent: partial (96% of the cipher)</p><!-- /outcome -->
+<p class="credits">Contributed by <a href="contributors.html#dudout">Brice Dudout</a> (solution) and <a href="contributors.html#tomokiyo">Satoshi Tomokiyo</a> (identification)</p><!-- /credits -->
+<div class="seal partial" aria-hidden="true"><span class="long">ciphertext-only</span></div>
+</section>
+
+<main>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#forms">The forms</a><a href="#key">The 共密 key</a><a href="#checks">The checks</a><a href="#content">What they say</a><a href="#why">Why only partial</a><a href="#open">What is open</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
+<div class="callout glance">
+<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Ciphertext-only break &middot; partial (96% of the cipher)</span></p>
+<dl>
+  <dt>The telegrams</dt><dd>Nine telegrams of 10 June to 2 July 1916 (N17, N18, N23, N27, N30, N32, N33, N35 and, from volume 4, V4E), 555 four-digit groups: five from Tokyo to Shanghai (Huang Xing), four from Shanghai to Tokyo.</dd>
+  <dt>Where</dt><dd>Diplomatic Archives of the Ministry of Foreign Affairs of Japan, via JACAR: B03050089300, B03050089400, B03050089500 and, for V4E, B03050090000. Telegraph-office forms copied by the police.</dd>
+  <dt>The cipher</dt><dd>Chinese telegraph code numbers in four-digit groups, the tens digit swapped through a table and the group subtracted from 9000. The first two groups of a form are in clear: 0364 1378 = 共密.</dd>
+  <dt>How it was deciphered</dt><dd>The key came from an exhaustive search over the constant with the best tens table for each, scored with a telegraph-code language model, with no crib. It was found on N17 and N18 and reads the other telegrams; V4E, never used, reads unchanged.</dd>
+  <dt>Credit</dt><dd>Brice Dudout, with Claude (mainly Opus 5.5; Codex made the first trials): digits re-read on the scans, the key (published 17 October 2026), translations and context. Satoshi Tomokiyo, <em>Cryptiana</em>: the identification of the key as a renumbered 明密 code book; his section credits the formula to Dudout. This project checked the key with its own decoder.</dd>
+  <dt>What it says</dt><dd>Huang Xing&rsquo;s five conditions to be put to Li Yuanhong, beginning with the 1912 Provisional Constitution; efforts to raise money from Japanese contacts; and the warning that Beijing&rsquo;s summons of provincial delegates is meant to destroy the Constitution and Parliament.</dd>
+  <dt>Still open</dt><dd>21 characters are kept as decoded but not understood (names, signatures and date codes) and 24 more are probable readings. Another telegram under the same prefix, N07, does not read with the key. The key is published as a candidate: no copy of the 共密 book has been found.</dd>
+</dl>
+</div>
+
+<h2 id="forms"><span class="num">01</span> The forms</h2>
+<p>When Yuan Shikai died on 6 June 1916, Huang Xing was in Tokyo, living at Aoyama Minami-machi 3-53, and his allies were in Shanghai. The Japanese police copied the telegrams that passed between them onto the telegraph office&rsquo;s own forms, and the copies survive in a Foreign Ministry series of mail and telegrams of watched persons. Each form holds a grid of digits written as kanji numerals. Brice Dudout reads the grid in columns, right to left, each column from the top, and cuts the stream into four-digit groups.</p>
+<figure data-credit="Diplomatic Archives of the Ministry of Foreign Affairs of Japan, JACAR B03050089300, N17 first sheet (PDF p. 16, right), via Brice Dudout&rsquo;s wenmi repository"><img src="gongmi1916_n17_lead.jpg" alt="A Japanese telegram form (頼信紙) with a grid of digits in kanji numerals at lower left and the katakana address of the recipient in Shanghai on the right" loading="lazy">
+<figcaption>N17, first sheet, sent from Tokyo on 10 June 1916 to Shanghai (the form is annotated 10/6). The digits are in the two grids at lower left. As Dudout transcribes them, the groups after the clear prefix 0364 1378 begin 1188 4080 4113 7528, which the key turns into 黎總統就, &ldquo;President Li has taken [office]&rdquo;. <span class="credit">Image: Diplomatic Archives of the Ministry of Foreign Affairs of Japan, JACAR B03050089300, N17 first sheet (PDF p. 16, right), via Brice Dudout&rsquo;s wenmi repository.</span></figcaption></figure>
+<p>The first two groups are in clear and name the code. Hsueh Chun-tu&rsquo;s edition of Huang Xing&rsquo;s 1916 drafts notes a code name at the head of each telegram, one per correspondent. On that evidence 共密 is a code book issued to particular correspondents, and it needed its own key. The same files hold telegrams in two other numeric keys with their own pages: <a href="rongmi1916.html">容密</a> and <a href="chenmi1916.html">辰密</a>.</p>
+<table>
+<tr><th>telegram</th><th>date, 1916</th><th>direction</th><th>groups</th></tr>
+<tr><td>N17, N18</td><td>10, 11 June</td><td>Tokyo &rarr; Shanghai</td><td>165, 62</td></tr>
+<tr><td>N27, N30, N35</td><td>15, 15, 16 June</td><td>Tokyo &rarr; Shanghai</td><td>14, 31, 91</td></tr>
+<tr><td>N23, N32, N33</td><td>13, 14, 15 June</td><td>Shanghai &rarr; Tokyo</td><td>30, 54, 70</td></tr>
+<tr><td>V4E</td><td>2 July</td><td>Shanghai &rarr; Tokyo</td><td>38</td></tr>
+<tr><td><strong>all 9</strong></td><td></td><td></td><td><strong>555</strong></td></tr>
+</table>
+<p class="legend">Group counts measured on the transcription. Of the 555, 510 read without doubt, 24 are probable readings and 21 are unresolved (Daniel&rsquo;s rule, counted on <code translate="no">reading.md</code>).</p>
+
+<h2 id="key"><span class="num">02</span> The 共密 key</h2>
+<figure class="creveal" data-src="reveal/gongmi1916.json"></figure>
+<p>Swap the tens digit through a fixed table, then subtract the group from 9000. The tens table is</p>
+<table>
+<tr><th>tens written</th><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr>
+<tr><th>tens meant</th><td>9</td><td>7</td><td>6</td><td>1</td><td>4</td><td>0</td><td>5</td><td>2</td><td>8</td><td>3</td></tr>
+</table>
+<p><strong>Example.</strong> N17 opens <span class="c">1188 4080 4113 7528</span>. In 1188 the tens digit 8 stays 8, and 9000 &minus; 1188 = 7812, 黎. In 7528 the tens 2 becomes 6, giving 7568, and 9000 &minus; 7568 = 1432, 就. The four groups give 黎總統就, &ldquo;President Li has taken [office]&rdquo;. N17 ends <span class="c">3887 3739 5550</span>, 聞興灰: &ldquo;for your information. Xing. The 10th.&rdquo;</p>
+<p><strong>How it was found.</strong> By trying every constant from 0000 to 9999 and, for each, choosing the best tens table exactly (an assignment problem), scored by a model of telegraph-code pairs trained on telegrams of 1915&ndash;16 already published on the <em>Wenmi</em> site. Only 9000 and this table give Chinese. Codex made the first trials. The key was found on N17 and N18 and reads the other telegrams.</p>
+<p><strong>As a renumbered book.</strong> Satoshi Tomokiyo, in the <em>Cryptiana</em> section on the mingmi (明密) format codes, reads this key as a standard 明密 code book with its pages numbered backwards (written page 89 is page 00) and its columns and rows renumbered by hand; the subtraction from 9000 is this double backward count. The two descriptions give the same table over all 10,000 values; the repository file <code translate="no">key.md</code> states the key both ways.</p>
+<p><strong>Dating.</strong> Dudout published the first partial 共密 edition, with the key as a candidate (N17 and N18), on 17 October 2026 (GitHub commit of the <em>Wenmi</em> repository, 21:35 UTC), and added N23 on 19 October. Tomokiyo&rsquo;s section is undated, the page was last modified on 24 October 2026, and <em>Wenmi</em> cites it as of 23 October. The section credits the formula to Dudout (&ldquo;The formula found by Dudout is to first map the tens digit C to &phi;(C)&rdquo;) and adds the renumbered-book reading.</p>
+
+<h2 id="checks"><span class="num">03</span> The checks</h2>
+<p><strong>His checks.</strong> The key found on N17 and N18 reads the other seven telegrams. V4E, from the later volume, was not used and reads unchanged. The names and offices that come out fit June 1916. Twenty digits in N30 to N35 were re-read by him on the scans after the first reading (looks-alike 一, 二 and 三) and are in the transcription here. In N35 two groups carry an 8 where the other 共密 telegrams have a 3 (表, 袁).</p>
+<p><strong>The check made here (20 October 2026).</strong> His <code translate="no">verify.py</code> reproduces the published raw texts from his digits and scores the 共密 text at 3.49 against 200 random keys of the same form (best &minus;1.45) and 200 shufflings of the digits (best &minus;1.22). His <code translate="no">search_gongmi.py</code>, rerun from scratch, finds 9000 and the tens table exactly. A decoder written here from the key statement alone, using the Unihan telegraph-code table already in this repository, gives the same character as his published text for <strong>all 555 groups</strong>. This confirms that the key as stated turns his digits into his text; it does not re-read the scans. N35 sheet 1 was compared on the JACAR scan here (B03050089500, PDF p. 2): the prefix and groups 1 to 8 match his page.</p>
+
+<h2 id="content"><span class="num">04</span> What they say</h2>
+<p>Hsueh Chun-tu&rsquo;s edition of Huang Xing&rsquo;s 1916 drafts has nothing between the pieces of 8 and 20 June, and these telegrams are dated in between. Translations below are Dudout&rsquo;s, shortened.</p>
+<p>On 10 June (N17) Huang Xing, writing that &ldquo;President Li has taken office and the general situation is beginning to settle&rdquo;, asks the Shanghai friends to consult Tang Hualong and Tan Yankai in secret and to have Li Yuanhong carry out five points, the first two being to restore the old Provisional Constitution and the Parliament and to issue no amnesty. The next day (N18) he adds that if Li and Duan sincerely support the Republic the demands can be met, but &ldquo;armed force is needed as support&rdquo;.</p>
+<p>On 13 and 15 June (N23, N27, N30) the telegrams turn to money: Zhang Ji reports that Tanaka and Koike have both wired Aoki about a loan; Huang Xing answers that funds from two provinces are hopeless, and that a Japanese contact would lend a small sum if &ldquo;our friend Pu&rdquo; asked the consul general in Shanghai to introduce him. On 14 to 16 June (N32, N33, N35) Shanghai reports Beijing&rsquo;s plan that each province send three men to discuss the Constitution; Huang Xing replies that its purpose is &ldquo;to destroy the Constitution and the Parliament&rdquo;, and that the colleagues should convene by themselves in a safe place and dissuade the independent provinces from sending delegates. The last telegram (V4E, 2 July) says that Guangdong has sent someone, that money is urgent, and asks when the addressee is coming back and by which ship.</p>
+
+<h2 id="why"><span class="num">05</span> Why only partial</h2>
+<p>The share of characters that read as sense is above 95%, but the class is kept as the <em>Wenmi</em> page gives it: it publishes these nine telegrams as a partial critical edition. The key C51 is a candidate reconstruction (the historical code book is not identified; a printed edition of the telegraph code of uncertain date agrees on fourteen entries checked). 21 characters are unresolved: the endings of N32 (會逵境) and N33 (會城), names in N27, N30, N35 and V4E, and two names in N17. And N07, which carries the same clear prefix 共密 but only its first sheet transcribed, does not read with the key: it may be another copy of the book, or a faulty digit stream, and there is no plaintext to test it. The Rongmi and Chenmi keys, in eight reading orders, and the renumbered-book model that read the 乾密 telegram N09, were tried on N07 and fail. Satoshi Tomokiyo&rsquo;s <em>Cryptiana</em> and Hsueh Chun-tu&rsquo;s edition of Huang Xing&rsquo;s drafts do not contain these texts.</p>
+
+<h2 id="open"><span class="num">06</span> What is open</h2>
+<ul>
+<li>21 characters kept as decoded but not understood (〔x〕), and 24 probable readings (in braces in <code translate="no">reading.md</code>): no one-digit variant gives an evident character, so they need the digits re-read on the police copies, or names and date codes.</li>
+<li>N07 does not read with the key (above). In V4E the digit file includes framing repairs (a digit missing or extra) inferred from the decoding, still to be checked on the JACAR scan.</li>
+<li>The key is a candidate: no historical copy of the 共密 book has been found. The texts have not been found in the 黃興集 or in Li Yuanhong&rsquo;s correspondence, which are still to be searched. The translations are proposals, and the identifications of Japanese and Chinese names are candidates.</li>
+</ul>
+
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>共密 (Gongmi), 9 telegrams, 10 June - 2 July 1916 <span class="st partial">read in part</span></h3>
+<p>Huang Xing&#x27;s five conditions to Li Yuanhong (restore the 1912 Provisional Constitution and the old Parliament, no amnesty, Duan&#x27;s cabinet to resign, move Wang Zhanyuan, bring the party leaders to Beijing); Japan will not lend to Beijing before unification; reports from Shanghai on the Constitution and on Beijing&#x27;s plan of provincial delegates.</p>
+<p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (96% here); the holes are marked in the reading.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gongmi1916/transcription.txt">transcription.txt</a></p><pre translate="no"># 共密 (Gongmi), June-July 1916: cipher groups as re-read by Brice Dudout on the JACAR police copies.
+# The forms carry the digits in kanji numerals in a grid, read in columns right to left, top to bottom, sheet after sheet,
+# cut into groups of four. One telegram per line: label, then its groups. The clear prefix 0364 1378 (= 共密) is left out.
+# &quot;?&quot; = illegible digit. Sheets and dates: decryption.txt.
+N17 1188 4080 4113 7528 8883 7811 7566 4217 7647 2294 7068 1565 8669 7645 7037 6611 8934 7250 6714 8304 6832 8545 6436 2902 6436 7122 8923 8943 2847 7672 8256 5566 6074 4101 7666 2875 8622 2347 2847 1188 8699 5649 3133 8909 7197 7232 3737 4294 5813 8366 8062 6435 8941 8467 4951 2674 8801 8366 8664 2938 8801 8905 8891 5902 4437 2432 3880 8341 8408 8883 8210 5326 3741 6486 4080 5100 8869 1969 8295 8918 6438 8406 3087 2870 8349 3976 8467 8675 8408 8646 8707 1910 8062 6435 2140 6560 4101 4010 6077 7201 8645 1969 8026 7588 5291 8456 8623 2862 1910 7709 5964 2489 8918 6741 2140 8695 3976 5326 2261 4704 8997 6844 5964 1115 2902 8934 8646 8971 8432 8256 8909 8526 8675 6570 5039 7566 5938 7647 1724 8431 8476 4113 8909 7375 8902 8726 6061 6544 8446 8971 6652 7360 8822 6076 1188 8699 6981 8902 3793 8361 8545 8983 3887 3739 5550
+N18 3466 1857 7135 1188 5902 3633 2826 7250 6620 2727 8696 8225 5964 1115 2902 5999 5039 5466 4899 7691 8062 6652 8902 1839 2655 6544 5813 5888 6077 2400 6062 2379 6076 4862 4806 5759 6431 6074 8550 5326 8923 7275 6794 7142 4842 8593 6462 1839 6653 8883 6039 8062 8943 8707 6486 6156 7878 8861 8675 5938 3039 4874
+N23 8666 8622 1905 5066 8918 7580 5991 4805 6431 1857 3793 1710 6304 6431 8271 8624 5326 7283 8736 6061 2847 8622 ?916 7294 8775 8859 5326 2902 7212 4061
+N32 3737 4294 5813 8392 6452 7197 7232 6227 5875 2985 7890 8446 8971 5623 2902 8934 5469 7219 4731 8929 7212 8918 7578 1857 6974 2248 8745 8695 8983 1857 2806 8699 7479 4952 7928 7232 1857 5745 7109 4951 3007 7645 7043 3486 5901 1104 7541 1857 8699 1688 2900 6435 2348 7996
+N27 5608 6061 8943 7491 8334 8321 9880 8941 4896 2849 2395 5469 6452 3739
+N30 1602 8368 6646 7580 5991 8999 5608 8622 8800 8718 8934 8338 3910 2847 6431 8371 1615 8943 4109 8956 6074 2165 8392 8726 7580 6061 2847 3799 7899 3739 8248
+N33 1542 6183 6468 6405 8368 8971 1857 5902 4437 2729 5938 8373 4896 5875 8905 8934 2636 8971 2729 4294 5813 5623 6653 7644 6537 4761 6227 1887 2870 2800 4294 5813 6745 7271 8645 1969 5902 5326 4080 4113 1104 3912 8549 8971 6451 5902 2721 5623 2729 8295 8387 1910 6435 8364 7583 8902 7197 7232 3737 4294 5813 7142 4041 6991 8699 6462 1726 2926 6435 7906
+N35 8446 8971 8396 1898 8373 4896 8802 8007 2729 4294 5813 7068 8099 5856 5681 4294 5803 8817 8065 6435 2847 8503 8339 8934 2347 7647 7666 8644 8094 6545 3799 3133 1398 6435 8983 2970 5813 2869 5263 4421 8373 4896 8902 5875 8802 8007 9887 1290 6061 8955 6303 8976 5103 1189 8902 3799 5065 5902 6431 2908 8087 6651 6425 8923 8412 7645 5065 8065 6435 2729 8195 3770 5964 2489 7880 8976 8802 8007 7843 2944 2847 7880 8934 8707 6077 4113 8909 7275 8675 8976 3739
+V4E 4213 5875 8934 8879 2944 8943 7122 1856 6061 8699 7878 2160 4213 6511 7645 7122 2306 4898 8669 4118 3633 7314 8063 7491 8646 8971 8699 8861 6486 8968 8861 3603 2306 2847 8669 4645 2901 6511</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gongmi1916/decryption.txt">decryption.txt</a></p><pre translate="no"># 共密 (Gongmi): decryption, group by group
+# cipher group -&gt; CTC number under key C51 (candidate) (key.md) -&gt; character; status as on the Wenmi site:
+# ok; douteux = doubtful (one-digit uncertainty on the copy, or an anomalous code read as the sense requires); illisible = illegible digit
+
+## N17 | 10 June 1916 | Tokyo → Shanghai | JACAR B03050089300, PDF pp. 16R, 16L, 17R, 17L, 18R, 18L, 19R, 19L, 20R, 20L, 21R, 21L, 22R, 22L
+   1  1188  7812  黎  ok
+   2  4080  4920  總  ok
+   3  4113  4827  統  ok
+   4  7528  1432  就  ok
+   5  8883  0117  任  ok
+   6  7811  1129  大  ok
+   7  7566  1444  局  ok
+   8  4217  4723  粗  ok
+   9  7647  1353  定  ok
+  10  2294  6766  鄙  ok
+  11  7068  1942  意  ok
+  12  1565  7445  首  ok
+  13  8669  0341  先  ok
+  14  7645  1355  宜  ok
+  15  7037  1983  慰  ok
+  16  6611  2329  撫  ok
+  17  8934  0086  人  ok
+  18  7250  1800  心  ok
+  19  6714  2226  排  ok
+  20  8304  0606  却  ok
+  21  6832  2188  挾  ok
+  22  8545  0455  制  ok
+  23  6436  2584  最  ok
+  24  2902  6008  要  ok
+  25  6436  2584  最  ok
+  26  7122  1838  急  ok
+  27  8923  0037  之  ok
+  28  8943  0057  事  ok
+  29  2847  6153  請  ok
+  30  7672  1378  密  ok
+  31  8256  0794  商  ok
+  32  5566  3444  濟  ok
+  33  6074  2976  武  ok
+  34  4101  4809  組  ok
+  35  7666  1344  安  ok
+  36  2875  6175  諸  ok
+  37  8622  0338  兄  ok
+  38  2347  6653  逶  douteux
+  39  2847  6153  請  ok
+  40  1188  7812  黎  ok
+  41  8699  0361  公  ok
+  42  5649  3351  漠  douteux
+  43  3133  5887  行  ok
+  44  8909  0001  一  ok
+  45  7197  1863  恢  ok
+  46  7232  1788  復  ok
+  47  3737  5283  舊  ok
+  48  4294  4766  約  ok
+  49  5813  3127  法  ok
+  50  8366  0644  及  ok
+  51  8062  0948  國  ok
+  52  6435  2585  會  ok
+  53  8941  0059  二  ok
+  54  8467  0543  勿  ok
+  55  4951  4099  發  ok
+  56  2674  6376  赦  ok
+  57  8801  0109  令  ok
+  58  8366  0644  及  ok
+  59  8664  0346  免  ok
+  60  2938  6082  訢  douteux
+  61  8801  0109  令  ok
+  62  8905  0005  三  ok
+  63  8891  0169  使  ok
+  64  5902  3008  段  ok
+  65  4437  4583  等  ok
+  66  2432  6588  辭  ok
+  67  3880  5120  職  ok
+  68  8341  0659  另  ok
+  69  8408  0502  加  ok
+  70  8883  0117  任  ok
+  71  8210  0730  命  ok
+  72  5326  3634  爲  ok
+  73  3741  5259  臨  ok
+  74  6486  2514  時  ok
+  75  4080  4920  總  ok
+  76  5100  3810  理  ok
+  77  8869  0141  但  ok
+  78  1969  7041  閣  ok
+  79  8295  0765  員  ok
+  80  8918  0022  中  ok
+  81  6438  2582  曾  ok
+  82  8406  0504  助  ok
+  83  3087  5913  袁  ok
+  84  2870  6180  謀  ok
+  85  8349  0651  叛  ok
+  86  3976  5074  者  ok
+  87  8467  0543  勿  ok
+  88  8675  0375  再  ok
+  89  8408  0502  加  ok
+  90  8646  0354  入  ok
+  91  8707  0203  俟  ok
+  92  1910  7030  開  ok
+  93  8062  0948  國  ok
+  94  6435  2585  會  ok
+  95  2140  6860  釣  douteux
+  96  6560  2450  新  ok
+  97  4101  4809  組  ok
+  98  4010  4930  織  ok
+  99  6077  2973  正  ok
+ 100  7201  1709  式  ok
+ 101  8645  0355  內  ok
+ 102  1969  7041  閣  ok
+ 103  8026  0934  四  ok
+ 104  7588  1412  將  ok
+ 105  5291  3769  王  ok
+ 106  8456  0594  占  ok
+ 107  8623  0337  元  ok
+ 108  2862  6148  調  ok
+ 109  1910  7030  開  ok
+ 110  7709  1201  委  ok
+ 111  5964  3046  民  ok
+ 112  2489  6511  軍  ok
+ 113  8918  0022  中  ok
+ 114  6741  2259  握  ok
+ 115  2140  6860  釣  douteux
+ 116  8695  0365  兵  ok
+ 117  3976  5074  者  ok
+ 118  5326  3634  爲  ok
+ 119  2261  6749  郙  douteux
+ 120  4704  4206  督  ok
+ 121  8997  0063  五  ok
+ 122  6844  2156  招  ok
+ 123  5964  3046  民  ok
+ 124  1115  7825  黨  ok
+ 125  2902  6008  要  ok
+ 126  8934  0086  人  ok
+ 127  8646  0354  入  ok
+ 128  8971  0079  京  ok
+ 129  8432  0588  協  ok
+ 130  8256  0794  商  ok
+ 131  8909  0001  一  ok
+ 132  8526  0434  切  ok
+ 133  8675  0375  再  ok
+ 134  6570  2480  日  ok
+ 135  5039  3981  當  ok
+ 136  7566  1444  局  ok
+ 137  5938  3082  決  ok
+ 138  7647  1353  定  ok
+ 139  1724  7236  非  ok
+ 140  8431  0589  南  ok
+ 141  8476  0574  匿  douteux
+ 142  4113  4827  統  ok
+ 143  8909  0001  一  ok
+ 144  7375  1675  廖  douteux
+ 145  8902  0008  不  ok
+ 146  8726  0234  借  ok
+ 147  6061  2949  款  ok
+ 148  6544  2456  於  ok
+ 149  8446  0554  北  ok
+ 150  8971  0079  京  ok
+ 151  6652  2398  政  ok
+ 152  7360  1650  府  ok
+ 153  8822  0138  似  ok
+ 154  6076  2974  此  ok
+ 155  1188  7812  黎  ok
+ 156  8699  0361  公  ok
+ 157  6981  2019  應  ok
+ 158  8902  0008  不  ok
+ 159  3793  5267  至  ok
+ 160  8361  0649  受  ok
+ 161  8545  0455  制  ok
+ 162  8983  0017  並  ok
+ 163  3887  5113  聞  ok
+ 164  3739  5281  興  ok
+ 165  5550  3500  灰  ok
+
+## N18 | 11 June 1916 | Tokyo → Shanghai | JACAR B03050089300, PDF pp. 23R, 23L, 24R, 24L, 25R, 25L
+   1  3466  5544  蒸  ok
+   2  1857  7193  電  ok
+   3  7135  1885  悉  ok
+   4  1188  7812  黎  ok
+   5  5902  3008  段  ok
+   6  3633  5387  若  ok
+   7  2826  6134  誠  ok
+   8  7250  1800  心  ok
+   9  6620  2340  擁  ok
+  10  2727  6233  護  ok
+  11  8696  0364  共  ok
+  12  8225  0735  和  ok
+  13  5964  3046  民  ok
+  14  1115  7825  黨  ok
+  15  2902  6008  要  ok
+  16  5999  3061  求  ok
+  17  5039  3981  當  ok
+  18  5466  3544  然  ok
+  19  4899  4161  相  ok
+  20  7691  1369  容  ok
+  21  8062  0948  國  ok
+  22  6652  2398  政  ok
+  23  8902  0008  不  ok
+  24  1839  7181  難  ok
+  25  2655  6395  趨  ok
+  26  6544  2456  於  ok
+  27  5813  3127  法  ok
+  28  5888  3112  治  ok
+  29  6077  2973  正  ok
+  30  2400  6510  軌  ok
+  31  6062  2948  欲  ok
+  32  2379  6671  達  ok
+  33  6076  2974  此  ok
+  34  4862  4148  監  douteux
+  35  4806  4104  的  ok
+  36  5759  3291  湏  ok
+  37  6431  2589  有  ok
+  38  6074  2976  武  ok
+  39  8550  0500  力  ok
+  40  5326  3634  爲  ok
+  41  8923  0037  之  ok
+  42  7275  1775  後  ok
+  43  6794  2266  援  ok
+  44  7142  1858  恐  ok
+  45  4842  4158  目  ok
+  46  8593  0467  前  ok
+  47  6462  2548  暫  ok
+  48  1839  7181  難  ok
+  49  6653  2397  放  ok
+  50  8883  0117  任  ok
+  51  6039  2981  歸  ok
+  52  8062  0948  國  ok
+  53  8943  0057  事  ok
+  54  8707  0203  俟  ok
+  55  6486  2514  時  ok
+  56  6156  2894  機  ok
+  57  7878  1172  如  ok
+  58  8861  0149  何  ok
+  59  8675  0375  再  ok
+  60  5938  3082  決  ok
+  61  3039  5981  襋  douteux
+  62  4874  4176  真  ok
+
+## N23 | 13 June 1916 | Shanghai → Tokyo | JACAR B03050089400, PDF pp. 14R, 14L, 15R
+   1  8666  0344  克  ok
+   2  8622  0338  兄  ok
+   3  1905  7005  鑕  douteux
+   4  5066  3944  田  ok
+   5  8918  0022  中  ok
+   6  7580  1420  小  ok
+   7  5991  3069  池  ok
+   8  4805  4105  皆  ok
+   9  6431  2589  有  ok
+  10  1857  7193  電  ok
+  11  3793  5267  至  ok
+  12  1710  7230  青  ok
+  13  6304  2606  木  ok
+  14  6431  2589  有  ok
+  15  8271  0779  唈  douteux
+  16  8624  0336  允  ok
+  17  5326  3634  爲  ok
+  18  7283  1717  弟  ok
+  19  8736  0284  僅  douteux
+  20  6061  2949  款  ok
+  21  2847  6153  請  ok
+  22  8622  0338  兄  ok
+  23  ?916  ----  □  douteux
+  24  7294  1766  往  ok
+  25  8775  0275  催  ok
+  26  8859  0191  促  ok
+  27  5326  3634  爲  ok
+  28  2902  6008  要  ok
+  29  7212  1728  張  ok
+  30  4061  4949  繼  ok
+
+## N32 | 14 June 1916 | Shanghai → Tokyo | JACAR B03050089400, PDF pp. 39R, 39L, 40R, 40L, 41R
+   1  3737  5283  舊  ok
+   2  4294  4766  約  ok
+   3  5813  3127  法  ok
+   4  8392  0668  可  ok
+   5  6452  2598  望  ok
+   6  7197  1863  恢  ok
+   7  7232  1788  復  ok
+   8  6227  2733  梁  ok
+   9  5875  3175  派  ok
+  10  2985  6015  見  ok
+  11  7890  1170  好  ok
+  12  8446  0554  北  ok
+  13  8971  0079  京  ok
+  14  5623  3337  滬  ok
+  15  2902  6008  要  ok
+  16  8934  0086  人  ok
+  17  5469  3541  無  ok
+  18  7219  1721  弧  douteux
+  19  4731  4289  硬  ok
+  20  8929  0031  主  ok
+  21  7212  1728  張  ok
+  22  8918  0022  中  ok
+  23  7578  1472  山  ok
+  24  1857  7193  電  ok
+  25  6974  2076  所  ok
+  26  2248  6752  部  ok
+  27  8745  0255  停  ok
+  28  8695  0365  兵  ok
+  29  8983  0017  並  ok
+  30  1857  7193  電  ok
+  31  2806  6104  詢  ok
+  32  8699  0361  公  ok
+  33  7479  1571  已  ok
+  34  4952  4098  登  ok
+  35  7928  1032  報  ok
+  36  7232  1788  復  ok
+  37  1857  7193  電  ok
+  38  5745  3255  渠  ok
+  39  7109  1801  必  ok
+  40  4951  4099  發  ok
+  41  3007  5903  表  ok
+  42  7645  1355  宜  ok
+  43  7043  1957  慎  ok
+  44  3486  5514  葛  ok
+  45  5901  3009  殷  ok
+  46  1104  7806  黃  ok
+  47  7541  1459  屢  ok
+  48  1857  7193  電  ok
+  49  8699  0361  公  ok
+  50  1688  7312  須  ok
+  51  2900  6010  覆  ok
+  52  6435  2585  會  douteux
+  53  2348  6652  逵  douteux
+  54  7996  1064  境  douteux
+
+## N27 | 15 June 1916 | Tokyo → Shanghai | JACAR B03050089400, PDF pp. 31L, 32R
+   1  5608  3302  溥  ok
+   2  6061  2949  款  ok
+   3  8943  0057  事  ok
+   4  7491  1569  己  ok
+   5  8334  0686  向  ok
+   6  8321  0639  參  douteux
+   7  9880  9120  薾  douteux
+   8  8941  0059  二  ok
+   9  4896  4164  省  ok
+  10  2849  6151  談  ok
+  11  2395  6665  過  ok
+  12  5469  3541  無  ok
+  13  6452  2598  望  ok
+  14  3739  5281  興  ok
+
+## N30 | 15 June 1916 | Tokyo → Shanghai | JACAR B03050089400, PDF pp. 36R, 36L, 37R
+   1  1602  7308  頃  ok
+   2  8368  0642  又  ok
+   3  6646  2354  據  ok
+   4  7580  1420  小  ok
+   5  5991  3069  池  ok
+   6  8999  0061  云  ok
+   7  5608  3302  溥  ok
+   8  8622  0338  兄  ok
+   9  8800  0110  以  ok
+  10  8718  0222  個  ok
+  11  8934  0086  人  ok
+  12  8338  0682  名  ok
+  13  3910  5030  義  ok
+  14  2847  6153  請  ok
+  15  6431  2589  有  ok
+  16  8371  0679  吉  ok
+  17  1615  7325  領  ok
+  18  8943  0057  事  ok
+  19  4109  4801  紹  ok
+  20  8956  0094  介  ok
+  21  6074  2976  武  ok
+  22  2165  6845  釆  douteux
+  23  8392  0668  可  ok
+  24  8726  0234  借  ok
+  25  7580  1420  小  ok
+  26  6061  2949  款  ok
+  27  2847  6153  請  ok
+  28  3799  5261  自  ok
+  29  7899  1161  奪  ok
+  30  3739  5281  興  ok
+  31  8248  0752  咸  ok
+
+## N33 | 15 June 1916 | Shanghai → Tokyo | JACAR B03050089400, PDF pp. 41L, 42R, 42L, 43R, 43L, 44R
+   1  1542  7458  馮  ok
+   2  6183  2817  極  ok
+   3  6468  2542  暗  ok
+   4  6405  2505  昧  ok
+   5  8368  0642  又  ok
+   6  8971  0079  京  ok
+   7  1857  7193  電  ok
+   8  5902  3008  段  ok
+   9  4437  4583  等  ok
+  10  2729  6231  議  ok
+  11  5938  3082  決  ok
+  12  8373  0677  各  ok
+  13  4896  4164  省  ok
+  14  5875  3175  派  ok
+  15  8905  0005  三  ok
+  16  8934  0086  人  ok
+  17  2636  6384  赴  ok
+  18  8971  0079  京  ok
+  19  2729  6231  議  ok
+  20  4294  4766  約  ok
+  21  5813  3127  法  ok
+  22  5623  3337  滬  ok
+  23  6653  2397  放  douteux
+  24  7644  1356  客  ok
+  25  6537  2483  早  ok
+  26  4761  4249  知  ok
+  27  6227  2733  梁  ok
+  28  1887  7113  陰  ok
+  29  2870  6180  謀  ok
+  30  2800  6110  詬  douteux
+  31  4294  4766  約  ok
+  32  5813  3127  法  ok
+  33  6745  2255  換  ok
+  34  7271  1779  得  ok
+  35  8645  0355  內  ok
+  36  1969  7041  閣  ok
+  37  5902  3008  段  ok
+  38  5326  3634  爲  ok
+  39  4080  4920  總  ok
+  40  4113  4827  統  ok
+  41  1104  7806  黃  ok
+  42  3912  5028  羣  ok
+  43  8549  0451  到  ok
+  44  8971  0079  京  ok
+  45  6451  2599  朞  douteux
+  46  5902  3008  段  ok
+  47  2721  6239  變  ok
+  48  5623  3337  滬  ok
+  49  2729  6231  議  ok
+  50  8295  0765  員  ok
+  51  8387  0613  卽  ok
+  52  1910  7030  開  ok
+  53  6435  2585  會  ok
+  54  8364  0646  反  ok
+  55  7583  1417  對  ok
+  56  8902  0008  不  ok
+  57  7197  1863  恢  ok
+  58  7232  1788  復  ok
+  59  3737  5283  舊  ok
+  60  4294  4766  約  ok
+  61  5813  3127  法  ok
+  62  7142  1858  恐  ok
+  63  4041  4959  纍  douteux
+  64  6991  2069  戰  ok
+  65  8699  0361  公  ok
+  66  6462  2548  暫  ok
+  67  1726  7234  靜  ok
+  68  2926  6034  觀  ok
+  69  6435  2585  會  douteux
+  70  7906  1004  城  douteux
+
+## N35 | 16 June 1916 | Tokyo → Shanghai | JACAR B03050089500, PDF pp. 2R, 2L, 3R, 3L, 4R, 4L, 5R, 5L
+   1  8446  0554  北  ok
+   2  8971  0079  京  ok
+   3  8396  0664  召  ok
+   4  1898  7162  集  ok
+   5  8373  0677  各  ok
+   6  4896  4164  省  ok
+   7  8802  0108  代  ok
+   8  8007  0903  噸  douteux
+   9  2729  6231  議  ok
+  10  4294  4766  約  ok
+  11  5813  3127  法  ok
+  12  7068  1942  意  ok
+  13  8099  0961  在  ok
+  14  5856  3194  消  ok
+  15  5681  3319  滅  ok
+  16  4294  4766  約  ok
+  17  5803  3107  沮  douteux
+  18  8817  0123  伋  douteux
+  19  8065  0945  圄  douteux
+  20  6435  2585  會  ok
+  21  2847  6153  請  ok
+  22  8503  0407  凌  douteux
+  23  8339  0681  同  ok
+  24  8934  0086  人  ok
+  25  2347  6653  逶  douteux
+  26  7647  1353  定  ok
+  27  7666  1344  安  ok
+  28  8644  0356  全  ok
+  29  8094  0966  地  ok
+  30  6545  2455  方  ok
+  31  3799  5261  自  ok
+  32  3133  5887  行  ok
+  33  1398  7662  鰭  douteux
+  34  6435  2585  會  ok
+  35  8983  0017  並  ok
+  36  2970  6080  設  ok
+  37  5813  3127  法  ok
+  38  2869  6141  説  ok
+  39  5263  3747  獨  ok
+  40  4421  4539  立  ok
+  41  8373  0677  各  ok
+  42  4896  4164  省  ok
+  43  8902  0008  不  ok
+  44  5875  3175  派  ok
+  45  8802  0108  代  ok
+  46  8007  0903  噸  douteux
+  47  9887  9113  蓷  douteux
+  48  1290  7770  鹽  ok
+  49  6061  2949  款  ok
+  50  8955  0095  仍  ok
+  51  6303  2607  未  ok
+  52  8976  0074  交  ok
+  53  5103  3807  現  ok
+  54  1189  7811  黏  douteux
+  55  8902  0008  不  ok
+  56  3799  5261  自  ok
+  57  5065  3945  由  ok
+  58  5902  3008  段  ok
+  59  6431  2589  有  ok
+  60  2908  6002  襲  ok
+  61  8087  0913  嚥  douteux
+  62  6651  2399  故  ok
+  63  6425  2535  智  ok
+  64  8923  0037  之  ok
+  65  8412  0528  勢  ok
+  66  7645  1355  宜  ok
+  67  5065  3945  由  ok
+  68  8065  0945  圄  douteux
+  69  6435  2585  會  ok
+  70  2729  6231  議  ok
+  71  8195  0865  嗹  douteux
+  72  3770  5280  與  ok
+  73  5964  3046  民  ok
+  74  2489  6511  軍  ok
+  75  7880  1120  外  ok
+  76  8976  0074  交  ok
+  77  8802  0108  代  ok
+  78  8007  0903  噸  douteux
+  79  7843  1157  奡  douteux
+  80  2944  6056  言  ok
+  81  2847  6153  請  ok
+  82  7880  1120  外  ok
+  83  8934  0086  人  ok
+  84  8707  0203  俟  ok
+  85  6077  2973  正  ok
+  86  4113  4827  統  ok
+  87  8909  0001  一  ok
+  88  7275  1775  後  ok
+  89  8675  0375  再  ok
+  90  8976  0074  交  ok
+  91  3739  5281  興  ok
+
+## V4E | 2 July 1916 | Shanghai → Tokyo | JACAR B03050090000, PDF pp. 1L, 2R, 2L, 3R
+   1  4213  4727  粤  ok
+   2  5875  3175  派  ok
+   3  8934  0086  人  ok
+   4  8879  0171  來  ok
+   5  2944  6056  言  ok
+   6  8943  0057  事  ok
+   7  7122  1838  急  ok
+   8  1856  7194  需  ok
+   9  6061  2949  款  ok
+  10  8699  0361  公  ok
+  11  7878  1172  如  ok
+  12  2160  6850  重  ok
+  13  4213  4727  粤  ok
+  14  6511  2429  文  ok
+  15  7645  1355  宜  ok
+  16  7122  1838  急  ok
+  17  2306  6604  返  ok
+  18  4898  4162  盼  ok
+  19  8669  0341  先  ok
+  20  4118  4822  給  ok
+  21  3633  5387  若  ok
+  22  7314  1626  干  ok
+  23  8063  0947  圉  douteux
+  24  7491  1569  己  douteux
+  25  8646  0354  入  ok
+  26  8971  0079  京  ok
+  27  8699  0361  公  ok
+  28  8861  0149  何  ok
+  29  6486  2514  時  ok
+  30  8968  0042  乘  ok
+  31  8861  0149  何  ok
+  32  3603  5307  船  ok
+  33  2306  6604  返  ok
+  34  2847  6153  請  ok
+  35  8669  0341  先  ok
+  36  4645  4355  示  ok
+  37  2901  6009  覃  douteux
+  38  6511  2429  文  ok</pre></details>
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gongmi1916/reading.md">reading.md</a></p><pre translate="no"># 共密 (Gongmi): reading
+
+Chinese text with punctuation, as published in the Wenmi edition (Brice Dudout with Claude). {x}: a probable reading replacing an
+anomalous decoded character (a one-digit variant of the group or the context; the decryption keeps the figure&#x27;s
+own value). 〔x〕: the decoded character kept, not understood. □ / 〔…〕: illegible group. Translations in translation.md.
+
+## N17 — 10 June 1916, Tokyo → Shanghai
+
+黎總統就任，大局粗定。鄙意首先宜慰撫人心，排却挾制。最要最急之事，請密商濟武、組安諸兄，{速}請黎公〔漠〕行：一、恢復舊約法及國會；二、勿發赦令及免{訴}令；三、使段等辭職，另加任命爲臨時總理，但閣員中曾助袁謀叛者勿再加入，俟開國會，{重}新組織正式內閣；四、將王占元調開，委民軍中握{重}兵者爲{都}督；五、招民黨要人入京協商一切。再，日當局決定：非南{北}統一，〔廖〕不借款於北京政府。似此黎公應不至受制。並聞。興灰
+
+## N18 — 11 June 1916, Tokyo → Shanghai
+
+蒸電悉。黎、段若誠心擁護共和，民黨要求當然相容，國政不難趨於法治正軌。欲達此{目}的，湏有武力爲之後援。恐目前暫難放任。歸國事俟時機如何再決。{興}真
+
+## N23 — 13 June 1916, Shanghai → Tokyo
+
+克兄{鑒}：田中、小池皆有電至青木，有〔唈〕允爲弟{借}款，請兄{親}往催促爲要。張繼
+
+## N32 — 14 June 1916, Shanghai → Tokyo
+
+舊約法可望恢復，梁派見好。北京、滬要人無{強}硬主張。中山電所部停兵，並電詢公，已登報復電，渠必發表，宜慎。葛、殷、黃屢電，公須覆。〔會逵境〕
+
+## N27 — 15 June 1916, Tokyo → Shanghai
+
+溥款事，己向〔參薾〕二省談過，無望。興
+
+## N30 — 15 June 1916, Tokyo → Shanghai
+
+頃又據小池云：溥兄以個人名義請有吉領事紹介，武〔釆〕可借小款，請自奪。興咸
+
+## N33 — 15 June 1916, Shanghai → Tokyo
+
+馮極暗昧。又京電：段等議決各省派三人赴京議約法。滬{政}客早知梁陰謀，{詢}約法，換得內閣，段爲總統。黃羣到京，〔朞〕段變，滬議員卽開會反對。不恢復舊約法，恐〔纍〕戰，公暫靜觀。〔會城〕
+
+## N35 — 16 June 1916, Tokyo → Shanghai
+
+北京召集各省代{表}議約法，意在消滅約{法}〔伋〕{國}會。請〔凌〕同人{速}定安全地方自行{開}會，並設法説獨立各省不派代{表}。〔蓷〕鹽款仍未交，現〔黏〕不自由。段有襲{袁}故智之勢，宜由{國}會議〔嗹〕，與民軍外交代{表}〔奡〕言，請外人俟正統一後再交。興
+
+## V4E — 2 July 1916, Shanghai → Tokyo
+
+粤派人來，言事急需款。公如重粤，文宜急返，盼先給若干。〔圉〕{已}入京。公何時乘何船返？請先示。〔覃〕文。</pre></details>
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gongmi1916/translation.md">translation.md</a></p><pre translate="no"># 共密 (Gongmi): English translation
+
+Working translations from the Wenmi page (https://bdudout.github.io/wenmi/en/gongmi.html, Brice Dudout with Claude, CC BY 4.0).
+Identifications of people are candidates; uncertain passages are marked as on the site.
+
+## N17 — 10 June 1916
+
+President Li has taken office and the general situation is beginning to settle. In my humble view, we must first calm people’s minds and remove coercion. For the most important and urgent matters, please consult secretly with Jiwu, Zu’an and the others, and quickly ask Mr Li to carry out: 1. restore the old Provisional Constitution and the Parliament; 2. issue no amnesty and no order dropping prosecutions; 3. make Duan and the others resign and appoint anew a provisional premier, without readmitting cabinet members who helped Yuan’s rebellion, then, once Parliament meets, form a regular cabinet anew; 4. transfer Wang Zhanyuan and appoint as governor a commander of the people’s army holding strong forces; 5. invite the leading men of the people’s party to Beijing to consult on everything. Moreover, the Japanese authorities have decided not to lend to the Beijing government unless North and South are unified. So Mr Li should not be constrained. For information. — Xing. The 10th.
+
+Note: 濟武 = Tang Hualong, 組安 = Tan Yankai. Digits re-read by Brice Dudout.
+
+## N18 — 11 June 1916
+
+Your telegram of the 10th received. If Li and Duan sincerely support the Republic, the people’s party’s demands can naturally be accommodated, and it will not be hard to bring the State onto the proper path of the rule of law. To reach this goal, armed force is needed as support. I fear that for now we cannot let things take their course. The return home will be decided according to circumstances. — Xing. The 11th.
+
+Note: Digits re-read by Brice Dudout.
+
+## N23 — 13 June 1916
+
+Brother Ke: Tanaka and Koike have both wired Aoki; […] agreed to a loan for me; please, brother, go in person to press the matter — it is essential. — Zhang Ji.
+
+Note: 小池, 田中, 青木: candidate identifications. Digits re-read by Brice Dudout.
+
+## N32 — 14 June 1916
+
+The old Provisional Constitution can be hoped to be restored; Liang’s faction is favourable. The leading men of Beijing and Shanghai have no hard-line position. Zhongshan has wired his troops to cease fighting and asked your opinion by wire; the reply has already appeared in the press and he will certainly publish it: be careful. Ge, Yin and Huang have wired repeatedly; you must reply. […]
+
+Note: Signed 葛、殷、黃 = Ge Jing’en, Yin Ruli, Huang Fu (cf. N24). Digits re-read by Brice Dudout.
+
+## N27 — 15 June 1916
+
+About Pu’s funds: we have discussed it with the two provinces of […]: no hope. — Xing.
+
+Note: Digits re-read by Brice Dudout.
+
+## N30 — 15 June 1916
+
+Koike has just said again that if our friend Pu, in his own name, asks Consul Ariyoshi to introduce him, a military […] could lend a small sum. Decide for yourself. — Xing. The 15th.
+
+Note: 溥 = Puquan (Zhang Ji); 有吉 = Ariyoshi Akira, Japanese consul general in Shanghai (candidate). Digits re-read by Brice Dudout.
+
+## N33 — 15 June 1916
+
+Feng is very ambiguous. Another telegram from Beijing: Duan and the others have decided that each province will send three men to Beijing to discuss the Constitution. The Shanghai politicians long knew Liang’s schemes: [to] the Constitution, obtain the cabinet in exchange, with Duan as president. Huang Qun has arrived in Beijing; […] Duan has changed; the Shanghai members of Parliament will meet at once to oppose it. If the old Constitution is not restored, we fear fighting. Watch quietly for now. […]
+
+Note: Digits re-read by Brice Dudout.
+
+## N35 — 16 June 1916
+
+Beijing is summoning delegates of the provinces to discuss the Constitution, intending to destroy the Constitution and the Parliament. Let our colleagues […] quickly choose a safe place and convene by themselves, and find a way to persuade the independent provinces not to send delegates. The salt revenue has still not been handed over; at present […] is not free. Duan seems to be taking up Yuan’s old tricks; Parliament should deliberate […], and the diplomatic representatives of the people’s army should say […], asking the foreigners to wait until true unification before handing over [the funds]. — Xing.
+
+Note: Here two groups have 8 where the other Gongmi telegrams have 3 (表, 袁). Digits re-read by Brice Dudout.
+
+## V4E — 2 July 1916
+
+Guangdong has sent someone: the matter is urgent and money is needed. If you care for Guangdong, I, Wen, should go back quickly; I hope you will first advance some funds. […] has already entered Beijing. When are you coming back, and by which ship? Please let me know in advance. […] Wen.
+
+Note: Digits re-read by Brice Dudout.</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gongmi1916/key.md">key.md</a></p>
+<!-- texts:end -->
+<!-- replay:start -->
+<figure class="sreplay" data-src="steps/gongmi1916.json"></figure>
+<!-- replay:end -->
+<h2 id="sources"><span class="num">07</span> Sources</h2>
+<ul>
+<li>Japan Center for Asian Historical Records (JACAR), Diplomatic Archives of the Ministry of Foreign Affairs of Japan, series 特定人ノ発受郵便物取調: <a href="https://www.jacar.archives.go.jp/das/meta/B03050089300" rel="noopener">B03050089300</a>, <a href="https://www.jacar.archives.go.jp/das/meta/B03050089400" rel="noopener">B03050089400</a>, <a href="https://www.jacar.archives.go.jp/das/meta/B03050089500" rel="noopener">B03050089500</a>, <a href="https://www.jacar.archives.go.jp/das/meta/B03050090000" rel="noopener">B03050090000</a>.</li>
+<li>Brice Dudout, <em>Wenmi</em> (October 2026, CC BY 4.0): <a href="https://bdudout.github.io/wenmi/en/gongmi.html" rel="noopener">共密</a> and <a href="https://bdudout.github.io/wenmi/en/juin1916.html" rel="noopener">&ldquo;June 1916: what Huang Xing&rsquo;s telegrams say&rdquo;</a>; <a href="https://github.com/bdudout/wenmi/tree/main/solver/numeric1916" rel="noopener">github.com/bdudout/wenmi, solver/numeric1916</a>; pull request <a href="https://github.com/dbourdeau/cyphersolver/pull/266" rel="noopener">#266</a> to this repository.</li>
+<li>Satoshi Tomokiyo, <a href="https://cryptiana.web.fc2.com/code/chinesecrypto_e2.htm" rel="noopener">Cryptiana</a>, section &ldquo;Mingmi (明密) Format Code: Gongmi, Rongmi, Chenmi&rdquo;.</li>
+<li>Hsueh Chun-tu (薛君度), ed., 黃興等電稿, as cited by Brice Dudout.</li>
+<li>Related pages, each a different key or system: <a href="rongmi1916.html">容密 (Rongmi)</a>, <a href="chenmi1916.html">辰密 (Chenmi)</a>, <a href="sunintercepts.html">Sun Yat-sen&rsquo;s intercepted telegrams, 1916&ndash;17</a> (code condensers) and <a href="huangxing.html">Huang Xing to Lin Hu and Li Genyuan, 25 May 1916</a> (romanised kana).</li>
+</ul>
+<p class="muted">The digit transcription, decryption, reading, translation and key file are in the repository under <code translate="no">targets/gongmi1916/</code>; the independent check made on 20 October 2026 is in <code translate="no">targets/numeric1916/</code>. The JACAR scans stay in Brice Dudout&rsquo;s repository.</p>
+
+</main>
+<footer><div class="in">
+  <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Telegram forms: Diplomatic Archives of the Ministry of Foreign Affairs of Japan, via JACAR</span>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="huangxing.html" rel="prev">&larr; Huang Xing three-kana 1916</a><a href="rongmi1916.html" rel="next">Huang Xing 容密 telegrams June 1916 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
+</div></footer>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
+<script src="solve-replay.js?v=20261105a" defer></script>
+<script src="zoom.js?v=20261105a" defer></script>
+<script src="site.js?v=20261105a"></script>
+</body>
+</html>

@@ -133,7 +133,7 @@
   }
  ],
  "outcome": {
-  "class": "already solved",
+  "class": "read in part",
   "key": "partial",
   "method": "key recovered based on adjacent plaintext",
   "method_basis": "The key was learned from the contemporary decipherments of other letters of the same volume (margins and the 'Descifrado' gathering) and measured once on p. 0496, whose margin decipherment is the reading of the time. The content is the margin's (existing); the transcription, the key as a table and three corrections of the margin are the contribution.",
@@ -172,24 +172,23 @@
   "gaps": [
    {
     "item": "13 of 95 margin words restored from the margin, not given by the key; cipher stretches 'tararahasii', 'hsmir', 'enne', 'eyseco', 'prohcp', 'lapide' unresolved",
+    "blocker": "open-codes",
+    "detail": "the key is partial (0.742 on the held-out page) and the signs behind these stretches have no settled value"
+   },
+   {
+    "item": "3 illegible signs and 7 doubtful signs (A|B) in the transcription",
     "blocker": "illegible",
-    "detail": "pale ink and doubtful signs; a second reader or a better image would settle them"
+    "detail": "pale ink and crossing interlinear writing; a second reader or a better image would settle them"
    },
    {
-    "item": "Interlinear clear on the right page not read",
-    "blocker": "not-attempted"
+    "item": "start of the right-page margin lines, caught in the binding",
+    "blocker": "needs-physical-access",
+    "detail": "only the cut margin is on the scan"
    },
    {
-    "item": "Margin of the right page cut by the binding (line starts)",
-    "blocker": "needs-physical-access"
-   },
-   {
-    "item": "Key not validated (0.742 < 0.85); no held-out page left for a new test; the 90-110 other S1 pieces, including those without clear, not read",
-    "blocker": "not-attempted"
-   },
-   {
-    "item": "Date of the letter and the persons behind Carpio, Medina, Oropesa and Valencia/Valenzuela not established",
-    "blocker": "not-attempted"
+    "item": "no held-out page with a clear is left to test the key again",
+    "blocker": "no-key-material",
+    "detail": "every margined page chosen has been used once; a new test needs another page with a contemporary decipherment"
    }
   ],
   "texts": [
@@ -213,6 +212,6 @@
    }
   ],
   "key_file": "key.tsv",
-  "notes": "The page was deciphered at the time (margin), so we claim no solution. New here: the transcription, the S1 key as a reusable table (partial by our protocol), and three places where the cipher corrects the margin."
+  "notes": "The page was deciphered at the time (margin), so we claim no solution. New here: the transcription, the S1 key as a reusable table (partial by our protocol), and three places where the cipher corrects the margin. Scope, not gaps: the interlinear clear on the right page was not read and not used, so that the held-out test stayed clean (declared deviation); the other S1 pieces of the volume, the date of the letter and the individuals behind Carpio, Medina, Oropesa and Valencia/Valenzuela are not part of this reading."
  }
 }

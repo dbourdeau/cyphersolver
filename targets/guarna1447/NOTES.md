@@ -1,6 +1,6 @@
 # guarna1447: Nicolò Guarna to Francesco Sforza, Milan, 21 May 1447 (BnF italien 1584, ff. 153r-154r)
 
-Status: in progress: site write-up pending (merged from Brice Dudout's PR 5 Nov 2026); read in part (Brice Dudout, 5 Nov 2026; 616 of about 852 cipher words = 72.3% certain or probable, unresolved stretches estimated; key K3 partial by our protocol: 0.759 on characters against 0.315, and M5 0.441 against 0.118).
+Status: read in part (Brice Dudout, 5 Nov 2026; 616 of about 852 cipher words = 72.3% certain or probable, unresolved stretches estimated; key K3 partial by our protocol: 0.759 on characters against 0.315, and M5 0.441 against 0.118).
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents. **Not in the catalogue or the leads as such**:
 lead 1315 (Guarna's letters, ital. 1584) lists ff. 163-64, 232, 235, 238, 245, 259, 263, 268, 272, 286, 296, and the survey
@@ -14,7 +14,7 @@ stamped number). Signed "Servitor N. Guarna", dated "Mli dominico 21 Maij 1447".
 of the body in cipher (about 50 lines on 153r, 52 on 153v, 3 on 154r; 3,960 cipher tokens). f. 156 is a 15th-century clear
 text of the end of a letter of the same day, which matches the end of this cipher.
 
-**No image, crop or thumbnail is included** (Gallica scans used for research only).
+The scans are not kept in the repository. The site write-up shows one crop (f. 153r, top, Gallica view 146 through the openapi.bnf.fr IIIF host), credited to the BnF in its data-credit. Sforza's place at the date is Pesaro (atlas): his letters to Guarna of 17 and 25 May 1447 are dated there in the printed index of the volume (`research/venice_milan_print/sforza_cifre_all.json`, f. 149 and f. 158); the letter itself does not name it.
 
 ## Key (`key.tsv`)
 

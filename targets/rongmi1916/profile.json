@@ -1,0 +1,260 @@
+{
+ "schema_version": 1,
+ "target": "rongmi1916",
+ "title": "容密 (Rongmi): 14 numeric telegrams of Huang Xing's circle, Tokyo <-> Shanghai, 8 June - c. 30 June 1916 (JACAR)",
+ "documents": [
+  {
+   "id": "rongmi-1916",
+   "read": "read",
+   "shelfmark": "JACAR B03050089200, B03050089300, B03050089400, B03050089500, B03050089900 (特定人ノ発受郵便物取調): N11, N12, N14, N19b, N21, N28, N36, V4B, N02, N08, N19a, N24, N25, V4D (prefix 1369 1378 = 容密)",
+   "date": "8 June - c. 30 June 1916",
+   "year": 1916,
+   "country": "Japan",
+   "route": "Tokyo <-> Shanghai",
+   "places": {
+    "from": "Tokyo",
+    "to": "Shanghai"
+   },
+   "language": "Chinese (classical telegraphic)",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the copies; the texts are not in Hsueh Chun-tu's edition of Huang Xing's 1916 drafts (黃興等電稿) nor found online.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 1306,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "JACAR scans; transcribed with Claude (first trials with Codex), every digit re-read blind by Brice Dudout (V4B: 4 of 22 sheets)",
+    "image_quality": "fair",
+    "notes": "Clear prefix 1369 1378 left out of the count. V4B and V4D include framing repairs deduced from the decoding, still to be checked on the scans."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code",
+   "superencipherment"
+  ],
+  "summary": "The Chinese telegraph code (明密 book) with its pages, columns and rows renumbered by hand for the 容密 correspondent (S. Tomokiyo); equivalently key v2 (C83) as a formula (key.md).",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "4",
+   "separation": "contiguous"
+  },
+  "distinct_symbols": 10,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "not applicable",
+  "word_division": "none",
+  "notes": "Digits written in kanji numerals in a grid, read in columns right to left; the first two groups are a clear prefix naming the code book. One key, one entry: split from targets/numeric1916, as its NOTES propose."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "None known: not in Hsueh Chun-tu's edition of Huang Xing's 1916 drafts (nothing between 8 and 20 June), nor online (Wenmi, Juin 1916 article). 黃興集 and Li Yuanhong's correspondence not yet checked.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "transcription"
+  ],
+  "attack": "ciphertext-only",
+  "first_date": "2026-10-12",
+  "last_date": "2026-11-04",
+  "human_role": "Brice Dudout read the digits on the JACAR scans (blind re-reading), proposed the reading order of the grids, chose leads and criteria; Claude wrote the solvers, tests and log, proposed hypotheses, readings and translations; Codex made early trials.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout",
+   "OpenAI Codex (early trials)"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10",
+   "kind": "transcription",
+   "what": "Forms read in columns right to left, four-digit groups; first sheets, then the continuation sheets; every digit re-read blind by Brice Dudout (V4B: 4 of 22 sheets).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "90 first-sheet groups too few; on about 590 groups, four per-place digit substitutions annealed into readable text (starting model from Codex trials).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "repeat/pattern analysis"
+   ],
+   "what": "借甸 (3949) for 借款 (2949) exactly when the hundreds gave no carry revealed an additive; exact key (tables + 0901 with carries) computed on N02, N08, N11, N12; rule 90 = 00 added from the groups beginning 90.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-19",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Contributor (Wenmi verify.py): the key reproduces every published raw text from the re-read digits; score far above 200 random keys of the same form and 200 digit shuffles. Rerun independently in targets/numeric1916 (20 Oct 2026).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "S. Tomokiyo (Cryptiana): the 容密 key is a 明密 code book with pages, columns and rows renumbered by hand; the contributor checked the exact factorisation over all group values (mingmi.py); written page 80 = 89 corrects group 8012 of N25 (8102 一).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "reading",
+   "what": "Readings and translations as on the Wenmi page; counted by Daniel's rule: 1198 certain, 55 probable, 54 unresolved or illegible of 1306.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Project: Dudout's verify.py rerun with python -I (targets/numeric1916/NOTES.md): the 容密 text scores 3.179 against a maximum of -1.665 over 200 random keys and -1.455 over 200 digit shuffles.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "control",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Project: his search_rongmi.py rerun: step 1 (four substitutions) 2.175; step 2 K = 0900 with hundreds and tens tables exact, units equal to the published key plus 1 (equivalent up to the carry), thousands off on 7/8/9 (the 90 = 00 rule is not modelled); score 2.608 against 3.179 for the published key; shuffled nulls -1.10, -1.19. The last manual step is not reproduced by the search, as his README says.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Project: a decoder written here from the key statement alone (targets/numeric1916/decode.py) applied to his digits gives the same character as his published raw text for 1,306 of 1,306 容密 groups (5 groups carry an illegible digit).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": [
+    "plaintext matching",
+    "contextual inference"
+   ],
+   "what": "Project, b21 re-read (targets/numeric1916/texts/rongmi_reading.md): his readings checked group by group against the decoder: 1,197 characters the figure's own value, 41 one-digit alternates, 15 supplied from context, 47 [?x], 6 illegible; explicit-hole score 82 of 90 sentences clean (0.91), grade B. One value added there, N24 group 22, 2530 滠 -> 2520 灰 (the 10th, after 佳日 the 9th in the same sentence; sense-only conjecture): the Wenmi edition, and so reading.md here, keeps 〔滠〕.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "verification",
+   "what": "Project, dating check for the split of numeric1916 (Dan Bourdeau's condition): Dudout's public commits (bdudout/wenmi, UTC) put the 容密 key on 19 Oct 2026 10:11 UTC; Cryptiana's mingmi section (undated; page 'first posted 18 September 2026, last modified 24 October 2026'; Wenmi cites it as 23 Oct 2026) credits the key formulas to Dudout and adds the reading as a renumbered 明密 book. Recovery predates the section; no priority for the project. Wayback holds only a 2 Oct 2026 capture. See NOTES.md, 'Dating and credit'.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {"validation": {"date": "2026-11-05", "verdict": "not applicable", "notes": "plaintext is Chinese telegraph code numbers, no Chinese letter model in lang; the contributor's verify.py random-key and digit-shuffle nulls were rerun here instead on 2026-10-20 (see solution steps)"}, 
+  "class": "read",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Key search scored with a telegraph-code language model, without cribs or plaintext; only the form dates served as checks (key.md, NOTES.md).",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.959,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Daniel's rule on reading.md: 1198 certain + 55 probable of 1306 groups (48 unresolved, 6 illegible).",
+  "verification": [
+   "historical consistency",
+   "key confirms",
+   "independent verification"
+  ],
+  "gaps": [
+   {
+    "item": "54 characters unresolved or illegible (55 more read as probable)",
+    "blocker": "illegible",
+    "detail": "One-digit uncertainties on the police copies (the clerk's 一/二/三), anomalous codes, names and date codes; marked in reading.md."
+   }
+  ],
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "new cipher with solution",
+    "note": "容密: digits re-read on the JACAR scans, key v2 (C83) recovered with Claude (Opus 5.5), readings, translations and context",
+    "date": "2026-10-19",
+    "source": "https://bdudout.github.io/wenmi/en/rongmi.html",
+    "published": true
+   },
+   {
+    "who": "tomokiyo",
+    "role": "identification",
+    "note": "the three keys read as one renumbered 明密 code book (pages, columns and rows rewritten by hand), shown on a June 1916 edition of the 明密碼電報書. The Cryptiana section is undated (page last modified 24 Oct 2026); 23 Oct 2026 is the date Wenmi cites. It credits the formulas to Dudout, whose keys were published 17-19 Oct 2026",
+    "date": "2026-10-23",
+    "source": "https://cryptiana.web.fc2.com/code/chinesecrypto_e2.htm",
+    "published": true
+   },
+   {
+    "who": "tomokiyo",
+    "role": "key corrected",
+    "note": "written page 80 = page 89 in his renumbered book (the formula gives 99); group 8012 of N25 read 8102 一 (一切到乞賜教). Cryptiana credits the finding that 8012 is an enciphering error for 8102 to Dudout, Wenmi credits Tomokiyo's note that it reads in neither version: both credited",
+    "date": "2026-10-23",
+    "source": "https://cryptiana.web.fc2.com/code/chinesecrypto_e2.htm",
+    "published": true
+   }
+  ],
+  "texts": [
+   {
+    "doc": "rongmi-1916",
+    "label": "容密 (Rongmi), 14 telegrams, 8 June - c. 30 June 1916",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "zh",
+    "state": "read",
+    "read_share": 0.959,
+    "summary": "Zhang Xiaozhun and Huang Xing in Tokyo, the Yin Ruli-Huang Fu-Ge Jing'en group in Shanghai: about 10,000 rifles, mountain guns and machine guns bought in Japan for Zhejiang (Governor Lü Gongwang), payment before 30 June, a one-million loan and tobacco taxes as security; Japan will not lend to Beijing before North and South are unified; \"no legal solution without armed force\"; the meeting at Tang's house; late June, Duan back to three delegates per province.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "date": "2026-11-04",
+     "note": "Read as sentences 4 Nov 2026 (Chinese, classical telegraphic): the fourteen telegrams hold as sentences (arms for Zhejiang, loans and tobacco taxes as security, Japan will not lend to Beijing before unification, the meeting at Tang's house, the 1912 Provisional Constitution) except N36 (about 15 unresolved in 58) and V4B (about 15 in 265), which read in outline. 1,306 groups, 95.9% certain or probable: read, grade B."
+    }
+   }
+  ],
+  "key_file": "key.md",
+  "provenance": "contributed"
+ }
+}
