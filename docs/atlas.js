@@ -24,7 +24,7 @@
   const letters=atlas.letters.map((l,i)=>({...l,i,pg:page[l.slug]})).filter(l=>atlas.places[l.from]&&atlas.places[l.to]).sort((x,y)=>x.year-y.year);
   const byRoute=new Map(); const label=l=>l.pg?l.pg.label:l.label;
   for(const l of letters){
-    l.who=(l.pg&&l.pg.people)||[]; l.fam=FAM[l.pg&&l.pg.m]||'na'; l.route=l.from+' → '+l.to; l.key=l.slug+'~'+l.doc;
+    l.who=l.who||(l.pg&&l.pg.people)||[]; l.fam=FAM[l.pg&&l.pg.m]||'na'; l.route=l.from+' → '+l.to; l.key=l.slug+'~'+l.doc;
     if(!byRoute.has(l.route)) byRoute.set(l.route,{id:l.route,from:l.from,to:l.to,all:[],v:[],pc:-1,pf:''});
     byRoute.get(l.route).all.push(l);
   }
@@ -242,7 +242,7 @@
   const load=slug=>{ if(!texts.has(slug)) texts.set(slug,fetch(`atlas/${slug}.json`).then(r=>r.ok?r.json():{letters:{}}).catch(()=>({letters:{}}))); return texts.get(slug); };
   const entryOf=(rec,l)=>{ const d=rec.letters||{}; if(d[l.doc]) return d[l.doc]; if(d.all) return d.all; const v=Object.values(d); return v.length===1?{...v[0],set:true}:null; };
   const paras=t=>t.split(/\n\s*\n/).map(x=>`<p>${esc(x).replace(/\n/g,' ')}</p>`).join('');
-  const parties=l=>{ const ps=[...l.who].sort((a,b)=>(a.role!=='sender')-(b.role!=='sender')); return ps.map(p=>`<span class="pty">${face(p)}<small>${p.role==='sender'?'from':'to'}</small> ${esc(p.name)}</span>`).join(''); };
+  const parties=l=>{ const ps=[...l.who].sort((a,b)=>(a.role!=='sender')-(b.role!=='sender')); return ps.map(p=>`<span class="pty">${face(p)}<small>${({sender:'from',recipient:'to'})[p.role]||'with'}</small> ${esc(p.name)}</span>`).join(''); };
   const dot=l=>`<i class="fd" style="background:var(--${FAMS[l.fam][1]})" aria-hidden="true"></i>`;
   const row=l=>`<button type="button" class="a-l" data-l="${l.i}"><span class="d">${dot(l)}${esc(l.date||Math.floor(l.year))}</span><b>${esc(label(l))}</b><span class="m">${esc(l.from)} → ${esc(l.to)}</span></button>`;
   const byIdx=new Map(letters.map(l=>[l.i,l]));

@@ -4,6 +4,8 @@
                            and per document the summary and an excerpt of the English text. Fetched when a letter opens.
   docs/atlas-open.json     the open catalogue letters that can be placed on the map, for the unread layer.
   docs/atlas_stories.json  hand-written chapters; check_stories() refuses a chapter pointing at a letter not on the map.
+  docs/atlas_people.json   hand-written: the people of a letter that differ from its write-up's. apply_people() copies
+                           them into atlas.json as the letter's "who"; a write-up's people otherwise stand for all its letters.
 
 What may be shown follows _texts.py: nothing from a target with outcome.texts_withheld (fr. 3029/3092 and the like), and
 English text only for an entry a reader has passed (state read or read in part, grade A or B).
@@ -160,6 +162,28 @@ def write_open():
     return len(rows), sum(1 for e in entries if C.is_open(e) and not e.get('writeup'))
 
 
+def apply_people():
+    """Give each letter listed in atlas_people.json its own people, with the portrait of anyone _portraits.json knows."""
+    listed = {k: v for k, v in json.loads((HERE / 'atlas_people.json').read_text(encoding='utf-8')).items() if not k.startswith('_')}
+    imgs = {}
+    for ps in json.loads((HERE / '_portraits.json').read_text(encoding='utf-8')).values():
+        for q in ps:
+            if q.get('img'): imgs[q['name']] = q['img']
+    at = json.loads((HERE / 'atlas.json').read_text(encoding='utf-8'))
+    role = {'s': 'sender', 'r': 'recipient', 'p': 'party'}
+    done = set()
+    for l in at['letters']:
+        l.pop('who', None)
+        ps = listed.get(l['slug'], {}).get(l['doc'])
+        if ps is None: continue
+        l['who'] = [{'role': role[r], 'name': n, 'img': imgs.get(n)} for r, n in ps]
+        done.add((l['slug'], l['doc']))
+    bad = [f'{s} {d}' for s, ds in listed.items() for d in ds if (s, d) not in done]
+    if bad: raise SystemExit('docs/atlas_people.json names letters not on the map:\n  ' + '\n  '.join(bad))
+    (HERE / 'atlas.json').write_text(json.dumps(at, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+    return len(done)
+
+
 def check_stories():
     """Every letter a chapter spotlights has to be on the map, or the chapter would open nothing."""
     p = HERE / 'atlas_stories.json'
@@ -172,4 +196,4 @@ def check_stories():
 
 
 def build(pages, profiles, images):
-    return write_targets(pages, profiles, images), write_open(), check_stories()
+    return write_targets(pages, profiles, images), write_open(), check_stories(), apply_people()

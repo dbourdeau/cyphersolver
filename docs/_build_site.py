@@ -4140,8 +4140,8 @@ if __name__ == '__main__':
     sys.path.insert(0, str(HERE.parent / 'tools')); import atlas_places    # atlas letters from profile routes/places
     print('atlas: %d letters from profiles (%d new places)' % atlas_places.sync({m['slug']: m for m in meta}))
     import _atlas_data as AD                                               # the Atlas's reading panel, unread layer and chapters
-    (atfiles, attexts), (atopen, atopenall), atstories = AD.build(PAGES, PROFILES, IMAGES)
-    print(f'atlas: {atfiles} write-ups with panel data, {attexts} letters with a text, {atopen} of {atopenall} open letters placed, {atstories} chapters')
+    (atfiles, attexts), (atopen, atopenall), atstories, atpeople = AD.build(PAGES, PROFILES, IMAGES)
+    print(f'atlas: {atfiles} write-ups with panel data, {attexts} letters with a text, {atopen} of {atopenall} open letters placed, {atstories} chapters, {atpeople} letters with their own people')
     print('key web: %d keys, %d links, %d tried' % check_keys(meta))
     print('built', ', '.join(done))
 IMAGES['bordeaux1653'] = ('bordeaux1653_f88r_opening.jpg', 'Add MS 4200 f. 88r: clear opening, then the first cipher lines', 'British Library, Add MS 4200 f. 88r, via DECODE R8390')
