@@ -39553,7 +39553,7 @@
    "shelfmark": "Madrid, Biblioteca Nacional de España, Cartas políticas y particulares dirigidas a Diego José Dormer, Tomo VI; BDH bdh0000064262",
    "folio_note": "'algunas cifradas'",
    "cls": "C",
-   "status": "BNE catalogue: some letters ciphered. No decipherment noted. Not on DECODE.",
+   "status": "Cipher found and broken (Brice Dudout, 5 Nov 2026, targets/dormer1694): one simple substitution, numbers 1-25 with dots, in letters signed 'Ex Conde' and pseudonyms (Rojo, Zabulón, El Chismoso; writers not identified), Barcelona, Mataró, Hostalric, Zaragoza 1693-1696, views 132-197 of the BNE digitisation, including an inserted slip wholly in cipher (fol. 190r-v). Key partial by the contributor's protocol (held-out measurements 0.577 and 0.594 against a 0.60 threshold). Slip recto and later passages read, slip verso read in part (line ends in the binding). View 10 holds one line in another system, not treated. Earlier note: BNE catalogue: some letters ciphered. No decipherment noted. Not on DECODE.",
    "why": "An Aragonese chronicler's correspondents under Charles II; ciphers in private correspondence.",
    "importance": 2,
    "solvability": 2,
@@ -40273,7 +40273,7 @@
    "region": "Italy",
    "period": "15th century",
    "shelfmark": "BnF italien 1583, ff. 134, 135, 139, 143, 147",
-   "folio_note": "Gallica link in the lead is italien 1587, wrong; images used are DECODE R7905-R7913. f.139 (R7908) and f.143 (R7909) are the cleanest full-sign leaves.",
+   "folio_note": "Gallica link in the lead is italien 1587, wrong; ital. 1583 is not on Gallica. Worked 4 Nov 2026 (targets/tranchedini1446/): of R7905-R7910 only f.134 (R7905, glossed runs) and f.139 (R7908, the long cipher page) are Tranchedini cipher; f.135 (R7906) and f.147 (R7910) are clear letters; R7909 is the Duke's slip f.145 of 1 Dec 1446 (key R5323, see visconti1446), not f.143.",
    "cls": "B",
    "status": "DECODE Non-decrypted, no names on DECODE (identified here from Mazzatinti's inventory). Not in the repo. Key family: Lasry deciphered Tranchedini → Sforza 28 June 1452 (BnF ital. 2242; targets/tranchedini1452, 55-symbol key); DECODE holds 208 Sforza keys from ASMi cart. 1591/1597/1598.",
    "why": "Sforza's resident in Florence reporting during the 1446 war, by the man who later ran Milan's cipher office (the Tranchedino ledger).",
@@ -40343,7 +40343,10 @@
     "key_check": "Sforza chancery keys sit in ASMi cart. 1597 (DECODE R5380, R5391, R5415-R5468; see lead 1310); none was matched to these signs. Not applied as no transcription was made.",
     "duplicates": "known.py 'italien 1583','Tranchedini','Alamanni' (2 Nov 2026): the lead, siblings 1307/1309, and the closed-unread Sforza/Maino 1446 R7898 record in repo notes; no repo target for ff.134-147.",
     "verdict": "open"
-   }
+   },
+   "outcome": "attempted, open",
+   "known": "Leaves identified (4 Nov 2026, targets/tranchedini1446/): the cipher is on f.134 (27 Nov, short runs of signs with contemporary interlinear glosses: gente d'arme in Toscana, alle stantie, fiorentini, and 'non' over the double-comb sign) and f.139 (29 Nov, Alamanni and Nicodemo, one page of long runs among clear words). f.135 and f.147 are clear letters; R7909 is the Duke's f.145. f.139 transcribed once (778 signs, 31% unmatched shapes, labels over-split): the Domnina 1454 / Lasry 1452 table reads 'cento mila' on line 3 and the comb = non, and the bar-o-bar-o Veneziani sign closes runs after 'la via', but over 54 stretches it scores only z 2.5 against shuffled values, so the 1446 key differs or the transcription is too noisy. No decipherment of either folio found.",
+   "open": "f.139 not read: needs one common sign inventory (merge look-alike shapes by cropping every occurrence), the 1446 nomenclator (word signs for stantie, Fiorentini ...) from the f.134 glosses, then a crib attack on the runs between clear words; f.134 glosses not aligned sign by sign. f.133, f.132, f.126, f.162 (other Nicodemo letters of 25-30 Nov per Mazzatinti) are not on these DECODE records."
   },
   {
    "id": 1309,
@@ -42901,7 +42904,7 @@
    "shelfmark": "ANOM, COL C11A 104, ff.346-347v (CABAC_PIAF_60950)",
    "folio_note": "3 images",
    "cls": "B",
-   "status": "Title only (\"Lettre chiffrée ... au ministre\"), no content summary, unlike the deciphered despatches around it: the ANOM/LAC describers apparently could not read it. Not on DECODE, not in repo. Trémais was sent in 1758 to investigate the Bigot frauds; his cipher may differ from Vaudreuil's.",
+   "status": "Still open (Brice Dudout, 5 Nov 2026), two facts for the entry. (a) The PREVIOUS Trémais cipher letter, 22 Sept 1759, is at ff. 342-343v (New France Archives NFA 27540) and is existing: its contemporary decipherment is bound right after it, ff. 344-345 ('Copie de la lettre en chiffre de M. Querdisien Trémais, dattée du Canada le 22 7bre 1759'), and is copied in the LAC C11A transcripts, reel C-2402 (vol. 104 part 2) pp. 523-527, with a bureau note dated 21 Nov 1759 ('cela ne dit rien et n'éclaircit rien...'). (b) The 6 Nov letter is the covering letter for a copy of the 22 Sept one, mostly in clear with cipher runs; it is NOT in the transcript. Trémais's code is his own, not the Vaudreuil C11E 10 table (0.063 against a best of 0.229 for 200 shuffled keys on f. 342). A partial key rebuilt from the 22 Sept pair by known plaintext reaches 0.704 on a held-out page (best shuffled 0.272): real but incomplete, not validated. Images are only 624-1125 px; HD scans are needed. Earlier note: Title only (\"Lettre chiffrée ... au ministre\"), no content summary, unlike the deciphered despatches around it: the ANOM/LAC describers apparently could not read it. Not on DECODE, not in repo. Trémais was sent in 1758 to investigate the Bigot frauds; his cipher may differ from Vaudreuil's.",
    "why": "Secret report of the investigator behind the \"Affaire du Canada\" (Bigot trial), just after the fall of Quebec.",
    "importance": 4,
    "solvability": 3,
@@ -43434,7 +43437,7 @@
    "shelfmark": "UC Riverside, Special Collections, Juan Silvano Godoi papers (MS 003), letters of 1878-08-08 (mostly in code), 1883-11-02 (partly), 1884-04-23 (partly); Calisphere items",
    "folio_note": "Machain 2 leaves mostly code; Decoud and Perousha partial passages",
    "cls": "C",
-   "status": "Item-level finding-aid text: 'mostly written in code', 'writes partially in code on the possibility of revolutionary undertaking', 'partly in code'. No key or decipherment noted. Not on DECODE. known.py: no hits for Godoi.",
+   "status": "Split (Brice Dudout, 5 Nov 2026). (a) Decoud 2 Nov 1883 and Perousha 23 Apr 1884: existing. The Decoud PDF on Calisphere (curivsc_003_004_055, image 7) holds a typed sheet 'Key to Code in Hector Francisco Decoud's Letters - Decoded by Harris G. Warren May 29, 1980' (A6 B7 C8 D9 E1 F2 G3 H4 I5 J10 L11 M13 N14 O16 P17 Q18 R19 S20 T21 U22 V23 X24 Y25 Z26). It reads all of Decoud's number runs (revolucion, Adolfo, Jara, frustrado [sic], planes, paraguayos, Marcelina, Antonio Taboada) and Perousha's (siempre, permitiras, siempre); the pencil note on Perousha reads '(Clave revolucionaria)'. (b) Machain 8 Aug 1878 (curivsc_003_005_046): a different system, single Latin letters plus ll, rr, ñ, about 330 symbols in 11 runs. Still open: simple substitution, Caesar/affine over 26-29-letter Spanish alphabets, periodic Vigenère and per-word Vigenère all fail; IC 0.052; long exact repeats (9 symbols at distance 73, 7 at 57) point to a homophonic or nomenclator-like letter system. Earlier note: Item-level finding-aid text: 'mostly written in code', 'writes partially in code on the possibility of revolutionary undertaking', 'partly in code'. No key or decipherment noted. Not on DECODE. known.py: no hits for Godoi.",
    "why": "Exile conspiracy letters of Paraguayan politicians after the War of the Triple Alliance; a rare Latin American 19th-century nomenclator with a known plaintext language.",
    "importance": 3,
    "solvability": 3,
@@ -50722,7 +50725,7 @@
    "shelfmark": "BNE, RES/261/58",
    "folio_note": "[I, 3] leaves",
    "cls": "C",
-   "status": "BNE title: 'Carta cifrada del Emperador Leopoldo I a Carlos II de España'; autograph, wax seal. No decipherment noted on the card. Not on DECODE. Viewed 4 Nov 2026 (BNE Digital page 5): numeric cipher, no decipherment on the leaf.",
+   "status": "Note (Brice Dudout, 5 Nov 2026): the BNE records of RES/261/55-61 are not cipher (55 = Elisabeth Charlotte d'Orléans to Charles II, Fontainebleau 16 Sept 1679; the others are autograph royal letters in clear). Of the 98 RES/261 records only /58 (this letter) and /73 (lead 1600) are cipher, and /73 is Diego Hurtado de Mendoza to Granvelle, Rome 1548 (imperial cipher of 1544-54, see lead 1600's vetting), so the series holds no sibling or key for Leopold's cipher. Earlier note: BNE title: 'Carta cifrada del Emperador Leopoldo I a Carlos II de España'; autograph, wax seal. No decipherment noted on the card. Not on DECODE. Viewed 4 Nov 2026 (BNE Digital page 5): numeric cipher, no decipherment on the leaf.",
    "why": "A ruler's own cipher letter inside the Habsburg family, after Nijmegen.",
    "importance": 5,
    "solvability": 4,
@@ -66438,6 +66441,63 @@
     },
     "key_check": "No key held. Pinckney's letters to Jefferson of Feb and Mar 1793 (Founders Online) say he had lost and then recovered Morris's cypher and compared it with his own, so a Morris-Pinckney cypher existed; it is not in the finding aid. The Morris-Jay (WE006) and Morris-Franklin (WE008) codes of 1782-83 are known and not tested.",
     "duplicates": "known.py \"Duportail\", \"Gouverneur Morris\", \"Pinckney\": no catalogue or lead entry for these Columbia items. Other Morris items in the same finding aid (Morris to Jay 1 Jan 1783, printed with its decipherment in the Papers of John Jay; Robert Morris 8 Aug 1790, transcription of the decoded text) were closed and left out.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 2250,
+   "counted": true,
+   "year": 1803,
+   "date": "1803",
+   "title": "Robert R. Livingston (Paris) → his brother: letter on the Louisiana negotiations, \"partly in cipher handwriting\"",
+   "correspondents": "Robert R. Livingston → his brother",
+   "place": "Paris",
+   "language": "English",
+   "region": "Americas",
+   "period": "1801-1900",
+   "shelfmark": "Center for Brooklyn History, Mid-Atlantic early manuscripts collection 1974.002, Box 1, Folder 25",
+   "folio_note": "one letter in a mixed folder; gift of Dr A. S. Hunt, date unknown",
+   "cls": "C",
+   "status": "Finding aid (read 4 Nov 2026): \"1803 letter from Robert R. Livingston at Paris to his brother re: negotiations for the Louisiana purchase, mentions James Monroe and Talleyrand, partly in cipher handwriting.\" Ambiguous: it may mean cipher or only a cursive hand. Livingston's State Department number code of 12 April 1803 (to Madison) is known and printed.",
+   "why": "Livingston and Monroe at Paris in the weeks of the purchase; a private cipher to a brother would show what he kept out of dispatches. Weak: the note may describe handwriting.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 3,
+   "score_note": "Scored from the Brooklyn History finding aid on 4 Nov 2026 (research/nyc_sweep/); not viewed",
+   "verify": "Ask Brooklyn History for the folder; check whether the numbers match the State Department code of the Madison letter.",
+   "links": [
+    {
+     "label": "Finding aid",
+     "href": "https://findingaids.library.nyu.edu/cbh/1974_002/all/"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NYU special collections sweep (Chrome)",
+   "prior_art": "open as far as checked (4 Nov 2026: known.py on names and shelfmark; cryptiana livingst.htm names the Morris-Jay and Morris-Franklin codes only; web search found no edition or study of these items)",
+   "needs_archive_scan": "yes",
+   "access_note": "Reading-room item at Center for Brooklyn History; no scan found online",
+   "decode_ids": [],
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude NYC archives sweep (research/nyc_sweep/)",
+    "seen": {
+     "kind": "not online",
+     "where": "https://findingaids.library.nyu.edu/cbh/1974_002/all/ (read 4 Nov 2026 in Chrome, after the NYU human check); no digital object",
+     "extent": "one letter in a folder of mixed items",
+     "cipher": "Finding aid: \"1803 letter from Robert R. Livingston at Paris to his brother re: negotiations for the Louisiana purchase, mentions James Monroe and Talleyrand, partly in cipher handwriting.\" No decipherment mentioned; \"cipher handwriting\" may only mean cursive."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE: known.py \"Livingston\" finds catalogue and lead rows on his 1781-82 letters, none on this folder.",
+     "tomokiyo": "cryptiana.web.fc2.com/code/livingst.htm fetched 4 Nov 2026 and grepped for Duportail and Gouverneur: only the Morris-Jay (WE006) and Morris-Franklin (WE008) codes, which Gouverneur Morris filled out for the Finance Office; no Duportail, no 1794 item. The rest of the cryptiana text pages were mirrored and grepped for other names on 3 Nov 2026 (no hit).",
+     "lasry": "GL.htm (the copy in a repo worktree) grepped 4 Nov 2026 for Duportail, Pinckney, Gouverneur Morris and Livingston: no hit. No Lasry or HistoCrypt item found by web search.",
+     "edition": "Web search of 4 Nov 2026 found the famous coded letter to Madison of 12-13 April 1803 (Historic New Orleans Collection; Papers of Madison, Founders Online) and no brother letter in print.",
+     "literature": "No study of a Livingston letter to a brother at Brooklyn History found."
+    },
+    "key_check": "No key held. The Madison letter of April 1803 used the State Department number code, decoded in print; whether this letter does is unknown.",
+    "duplicates": "known.py \"Livingston\": no entry for this folder or for a letter to his brother.",
     "verdict": "open"
    }
   }

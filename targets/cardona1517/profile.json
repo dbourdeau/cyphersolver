@@ -184,9 +184,10 @@
    ],
    "what": "Rounds 2-5 (firm values fixed, rest re-annealed) alternating with reading by context; E/EO/ε/o+ settled on the images; Borghese Petrucci (1517) and Giampaolo Baglioni (1520) confirm the key.",
    "result": "partial"
-  }
+  },
+  {"date": "2026-11-04", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1517 tokens, 132 types, es-golden-age order 4: reading -1.956 per letter; random keys -3.403 (z 8.9); key annealed onto shuffled ciphertext best -2.366 (mean -2.402, z 17.7); annealer on the real text -2.199. Verdict: pass.", "result": "worked"}
  ],
- "outcome": {
+ "outcome": {"validation": {"date": "2026-11-04", "model": "es-golden-age", "file": "validation.tsv", "tokens": 1517, "types": 132, "tokens_per_type": 11.49, "score": -1.956, "nulls": {"random keys": {"n": 200, "mean": -3.403, "sd": 0.162, "max": -3.049, "z": 8.9, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.402, "sd": 0.025, "max": -2.366, "z": 17.7, "p": 0.1429}}, "power": -2.199, "verdict": "pass", "notes": "claimed per-occurrence score -1.956; polyphony 0.0; 119 unread tokens left out; annealer on the real text from random keys reached -2.199"}, 
   "method": "key recovered from ciphertext-only",
   "method_basis": "Sign alphabet recovered without a crib by the joint annealer of vich1515 extended with Lannoy's class rule and whole-word code options; code groups by a chancery model and context; a final context pass overruled two unanimous sign values (A ll, ll e). Confirmed by two historical names (Borghese Petrucci, Giampaolo Baglioni). No external plaintext used.",
   "contribution": [
@@ -195,10 +196,7 @@
   ],
   "class": "not read",
   "key": "partial",
-  "verification": [
-   "matched control",
-   "historical consistency"
-  ],
+  "verification": ["matched control", "historical consistency", "statistical test"],
   "gaps": [
    {
     "item": "22 code types without a value and 12 doubtful (most once or twice; commonest open: gie 3 tokens; probably names: 'las cosas de nac y feg'; doubtful gnd 'mes' reads in neither context)",
@@ -221,7 +219,8 @@
    {
     "who": "brackx",
     "role": "solution",
-    "note": "transcription, key recovered ciphertext-only (with Claude Code / Claude Opus 5.5), reading by context"
+    "note": "transcription, key recovered ciphertext-only (with Claude Code / Claude Opus 5.5), reading by context",
+   "source": "https://github.com/dbourdeau/cyphersolver/issues/262 and pull request #264"
    }
   ],
   "provenance": "contributed",

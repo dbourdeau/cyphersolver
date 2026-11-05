@@ -1,0 +1,22 @@
+# Validation of the key, lead 2187 (casimir1629): ONE measurement on a held-out part, protocol fixed before.
+# Protocol (French working file PROTOCOLE.md, SHA-256 2f76bb86...), frozen 4 Nov 2026 before any measurement:
+# - Training: scan 470 (n. 138), glossed groups whose normalised gloss has as many letters as numbers.
+# - Key: K_table = majority letter for each number seen; K_bloc = extension by blocks of three (14-16, 17-19, ... 83-85) when every
+#   seen number of a block gives the same letter; numbers >= 86 = nulls. Frozen in KEY.json (SHA-256 d8b9e735...) with the protocol,
+#   the training transcription (08827286...) and the tools (GEL-AVANT-H.sha256).
+# - Held out (H): scans 476 and 477 (n. 140, Calmar 3 July 1629), not read before the freeze, transcribed after it
+#   (SHA-256 65f59e58...). In H: every glossed group (status ok or doubt, not cut) whose normalised gloss has as many letters as numbers.
+# - Gloss normalisation: lower case, umlauts folded, ss for sharp s, j -> i, v -> u, y kept.
+# - Score = share of H characters rendered right by K_bloc (unknown number = wrong). M5 = share of H words entirely right.
+# - Controls: 200 keys made by permuting the letters among the numbers of K_table (seed 20261104), then the same block extension.
+# - Thresholds fixed in advance: VALIDATED if score >= 0.85 and score - best control >= 0.30.
+# Result as recorded (H_MESURE.json):
+H words 33, H characters 165
+K_bloc characters 0.8727  (whole words 0.6667)
+K_table characters 0.8667  (whole words 0.6667)
+best of 200 controls: characters 0.1697  (whole words 0.0303)
+margin 0.703
+DECISION: VALIDATED
+# Errors seen after the measurement (H spent): 71-73 is y, not i (freyheit, meyne, heyrath); 44 = p (party); a few spellings of the
+# cipher clerk (heuraht, bunt, nemmen) and doubtful numbers (69/64, 23/24). The key in key.tsv carries the y and p changes; they are
+# outside this test.

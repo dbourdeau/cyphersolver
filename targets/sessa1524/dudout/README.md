@@ -1,4 +1,4 @@
-Status: read in part (94 %) (Brice Dudout, 4 Nov 2026; BNE MSS/20214/52-7, ciphered part 630 of 670 words read, 40 unresolved).
+Status: read in part (93 %) (Brice Dudout; BNE MSS/20214/52-7, ciphered part recounted 5 Nov 2026 under the strict 95% rule: 623 of 670 words read = 93.0%, 590 certain + 33 probable; the 7 restored words no longer count, 94.0% with them; 40 unresolved).
 
 # BNE MSS/20214/52-7: Sessa to Charles V, Rome, 24 July 1524, read in part
 

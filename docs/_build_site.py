@@ -678,6 +678,12 @@ PAGES = [
          title='Fra Giovanni di Lucca to Ferdinand III, 1644',
          blurb='A 231-figure Italian cipher paragraph in a friar&rsquo;s letter to the Emperor (DECODE R2159), a substitution with two figures for each vowel. The key was recovered using the opening words Tomokiyo had published as a crib, and every figure was decrypted; checked against the manuscript, the apparent polyphony turned out to be ten misread 4s and three encipherment slips. The Grand Hetman Koniecpolski offers to keep the Turk from R&aacute;k&oacute;czi, raise Moldavia against him and give two thousand Cossacks.',
          quote='&ldquo;il principe di Bogdania, et li dar&ograve; dumilia Cosachi &hellip; che non faccia pace fin che non l&rsquo;habbi humiliato o vinto&rdquo;'),
+    dict(slug='desnoyers1659', label='Des Noyers to Boulliau 1659', year='1659', y=1659.95, place='Danzig &rarr; Paris', st='solved', stt='existing decipherment',
+         author='Brice Dudout',
+         title='Pierre Des Noyers to Isma&euml;l Boulliau, Danzig, December 1659',
+         blurb='A short note in cipher, enclosed in a letter from the secretary of the Queen of Poland to the Paris astronomer Boulliau, on the Spanish marriage of Louis XIV and la Mancini. A contemporary hand, probably Boulliau&rsquo;s, wrote the clear word above every cipher group, so the note was deciphered at the time and is not a new decipherment. Brice Dudout transcribed the 24 groups and the gloss and rebuilt the two-digit nomenclator with marks from the other glossed passages of the volume; 12 of 12 cipher words are given by the gloss and 8 are supported by the rebuilt table.',
+         quote='&ldquo;sans la Reine on n&rsquo;attendroit pas la mort du Prince despagne pour rompre le mariage&rdquo;',
+         rights='Manuscript: Biblioth&egrave;que nationale de France, Fran&ccedil;ais 13020 f. 297, via Gallica; transcription and key by Brice Dudout (PR #263)'),
     dict(slug='asang1662', label='Anonymous letter, Sanguszko archive 1662', year='1662', y=1662.58, place='Poland (Royal Prussia?)', st='solved', stt='read',
          title='Anonymous letter in the Sanguszko archive, 31 July 1662',
          blurb='An unsigned Polish letter written wholly in a substitution of 23 composite sign groups, with no key and no contemporary decipherment (Archiwum Narodowe w Krakowie, Archiwum Sanguszk&oacute;w 134/8; DECODE R7513). Brice Dudout broke it from the ciphertext of the front, froze the key, tested it on the held-out reverse, and read all 71 words: the Swedes are arming and have ordered prayers and a fast for the third time.',
@@ -1270,6 +1276,11 @@ PAGES = [
          blurb='Ferdinand&rsquo;s letter of 26 October 1515 to his ambassador at Rome, almost all in cipher and with no decipherment (AHN Estado 8715 N.73). It is not in the 1511&ndash;12 nomenclator but in a code of three-letter groups and signs that no deciphered letter shares. Transcribed in full, 3,177 tokens. Michael Brackx recovered its symbol alphabet from the ciphertext alone: the code groups stand for syllables inside spelled words as well as for words. A printed quotation of the letter then confirmed a long stretch; it is still decoded, not read.',
          quote='&ldquo;la flaquesa del papa&rdquo;',
          rights='Manuscript images: Archivo Hist&oacute;rico Nacional (PARES)'),
+    dict(slug='cardona1517', label='Cardona 1517&ndash;20', year='1517&ndash;1520', y=1517.76, place='Naples &rarr; the court of Charles I', st='stuck', stt='key recovered, not read',
+         title='Ram&oacute;n de Cardona to Charles I, Naples, 1517 and 1520',
+         blurb='Two letters of the viceroy of Naples to the young Charles I of Spain, of 5 October 1517 and 18 June 1520 (BNE MSS/20210/11/1 and /4), each with passages in cipher and no decipherment on the pages. Michael Brackx recovered most of the key from the ciphertext alone, with Claude Code: letter signs and three-letter code groups that stand for whole words, in the family of Lannoy&rsquo;s Naples cipher. Two names confirm it, Borghese Petrucci and Giampaolo Baglioni; about half the sentences still have holes, so it is decoded, not read.',
+         quote='&ldquo;su deseo era vivir y morir debazo [de la] protecci&oacute;n del papa&rdquo;',
+         rights='Manuscript images: Biblioteca Nacional de Espa&ntilde;a (BNE Digital), public domain'),
     dict(slug='ayala1516', label='Ayala 1516', year='1516', y=1516.66, place='Brussels &rarr; Cardinal Cisneros', st='found', stt='printed 1875; re-read',
          title='Diego L&oacute;pez de Ayala to Cardinal Cisneros, 30 August 1516',
          blurb='A five-page letter in invented signs (AGS Estado leg. 496 fol. 22, DECODE R9954), catalogued with no decipherment. Tomokiyo&rsquo;s key for Ayala&rsquo;s letter of 12 July was applied unchanged and the letter was deciphered but for seven words. A Simancas decipherment of 1849, printed in 1875 and found afterwards, settles those words and otherwise agrees.',
@@ -2775,6 +2786,7 @@ IMAGES['erving1807'] = ('erving1807_hanover.jpg', 'M31 reel 12, frame 0285: Ervi
 IMAGES['erving1807aug'] = ('erving1807aug_lead.jpg', 'Frame 0362: the head of No. 24, &ldquo;In Mr Pinkneys Cypher, the Cypher of ye Legation&rdquo;, &ldquo;Duplicate&rdquo;, and the first code groups, 69. 1651. 32. 424. 500. 1290 (in the relations between France)', 'National Archives and Records Administration, RG 59, Despatches from US Ministers to Spain, vol. 10, microfilm M31 reel 12, frame 0362 (right page), via catalog.archives.gov NAID 188605361')
 IMAGES['revol1593'] = ('revol1593_f146v_block.jpg', 'BnF Fran&ccedil;ais 3986 f. 146v: the nine lines of symbol cipher no. 60 in the copy of Nevers to Revol, Vese, 7 October 1593', 'Biblioth&egrave;que nationale de France, fr. 3986 f. 146v, via Gallica (btv1b9060631k, canvas 287)')
 IMAGES['vich1515'] = ('vich1515_lead.jpg', 'The docket a 26 de octubre 1515, the clear opening videlicet iterum, and the first lines of code groups and signs', 'Archivo Hist&oacute;rico Nacional, Estado 8715 N.73, first image, via PARES (12751418)')
+IMAGES['cardona1517'] = ('cardona1517_c_left.jpg', 'Block C of the 1517 letter: the clear line <em>no s&eacute; lo que en esto se podr&aacute; acabar</em>, then fourteen lines of letter signs and three-letter code groups', 'Biblioteca Nacional de Espa&ntilde;a, MSS/20210/11/1 viewer page 9, via BNE Digital')
 IMAGES['r1955'] = ('r1955_lead.jpg', 'The head of the copy: Lettre du Roi de Prusse au Secr&eacute;taire Michell du 28 Decemb. 1751, the clear opening and the first lines of the code', 'Koninklijk Huisarchief, The Hague, Prins Willem V inv. 198, first page (image P2), via DECODE R1955')
 IMAGES['siena12'] = ('siena12_lead.jpg', 'No. 12, the first lines: signs divided by short strokes; the crown-like sign in line 2 is Re, the King', 'Archivio di Stato di Siena, Concistoro 2308 fasc. 2 no. 12, via DECODE R4790 (image P2)')
 IMAGES['siena9'] = ('siena9_no9.jpg', 'No. 9, lines 4&ndash;8: the two cipher passages after nichil and before Stella, and below them the decipherment in a second hand, la pri chastiglone questa vernata', 'Archivio di Stato di Siena, Concistoro 2308 fasc. 2 no. 9, via DECODE R4798')
@@ -4173,6 +4185,7 @@ IMAGES['deboli1788'] = None
 IMAGES['siguenza1554'] = None
 IMAGES['alfonso1576'] = None
 IMAGES['marignano1546'] = None
+IMAGES['desnoyers1659'] = ('desnoyers1659_note.jpg', 'The whole note, with the gloss above the cipher groups', 'Biblioth&egrave;que nationale de France, Fran&ccedil;ais 13020 f. 297, via Gallica')
 IMAGES['buda1490'] = None
 IMAGES['adrian1520'] = None
 IMAGES['damas1787'] = None

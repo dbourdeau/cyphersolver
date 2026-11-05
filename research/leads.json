@@ -2957,7 +2957,8 @@
     },
     "key_check": "A key exists: DECODE R9467 (BnF NAF 4206 no. 5, 1529, Du Bellay/Montmorency, pointing to fr. 3077 f. 114). It is an image on DECODE, not a transcription, and was not applied because the cipher opening was not seen; the task is a key lookup in NAF 4206 no. 5 plus the cipher leaf in the Le Grand ms. / BnF.",
     "duplicates": "Ledger grep (Du Bellay, Montmorency, 6019, Le Grand) and DECODE list scan: no catalogue entry, target or DECODE ciphertext for this letter; the sibling Du Bellay letter of 17 Oct 1529 is LP 6011 (not in this batch).",
-    "closed": "Key held on DECODE (R9467, BnF NAF 4206 no. 5, cites fr. 3077 f. 114); needs transcription of the key and of the opening cipher passage, which is only a few lines."
+    "closed": "The 22 Oct 1529 Du Bellay-Montmorency opening is already the subject of targets/dubellay (catalogue item 4), where it was read in part from the signed leaf BnF fr. 3005 ff. 165r-166r on Gallica with Bayonne's 1529 key, so this lead is a duplicate and the earlier 'key_lookup' close was wrong.",
+    "verdict": "duplicate"
    },
    "vetting_note": "cipher not seen: LP IV pt 3 no. 6019 (read in IA OCR) says only 'beginning of the letter is in cipher, undeciphered' from Le Grand iii, whose fragment is the clear part; the modern edition (Scheurer, Correspondance du cardinal Jean du Bellay I, SHF 1969) and BnF fr. 3077 f. 114 / NAF 4206 no. 5 could not be opened (not online); the 3 searches (Du Bellay 22 octobre 1529 chiffre; Scheurer; Lasry/Tomokiyo) found no decipherment but an unopened edition is an open prior-art question."
   },
@@ -14546,7 +14547,12 @@
    "prior_art": "open (checked 28 Oct 2026: web search, Cipherbrain/Schmeh blog, catalogue description; no decipherment found)",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "needs a working host: dmr.bsu.edu gives connection errors in Chrome, curl and WebFetch. DPLA item 9d4fa387e16f966f46749c2e713406ad gives only a 92 px thumbnail: handwritten letter on lined paper, about 15 lines, script unreadable at that size, so code type unjudged. Search for Ammen found nothing on it."
+   "vetting_note": "needs a working host: dmr.bsu.edu gives connection errors in Chrome, curl and WebFetch. DPLA item 9d4fa387e16f966f46749c2e713406ad gives only a 92 px thumbnail: handwritten letter on lined paper, about 15 lines, script unreadable at that size, so code type unjudged. Search for Ammen found nothing on it.",
+   "vetting": {
+    "verdict": "read",
+    "closed": "The Ball State scan is a word-transposition cipher letter dated Knoxville 29 Sept 1864 (not 1862) to Brig. Gen. Ammen, and its plaintext (Sherman's recall order to Burbridge, relayed by Schofield's HQ) is printed in OR I vol. 39 pt. 2 p. 524.",
+    "date": "2026-11-04"
+   }
   },
   {
    "id": 1433,
@@ -17422,7 +17428,7 @@
    "shelfmark": "BNE, Correspondencia diplomática de Antonio de Mendoza Caamaño y Sotomayor, tomos 3, 4, 8, 9, 11, 13, 14, 17, 18 (shelfmarks not read)",
    "folio_note": "nine volumes; extent of cipher unknown",
    "cls": "C",
-   "status": "All nine returned by BNE's field search for 'cifrado'; the matching field was not seen. The volume notes on Europeana contain no cipher word, so the cipher is unconfirmed. Per BNE and the DBE this is the II marquis (1638-1714), at Genoa from 1672 and Venice 1677-91. Not viewed: BNE blocked access on 2 Nov 2026.",
+   "status": "Not found (Brice Dudout, 5 Nov 2026): a BNE simple search on 5 Nov 2026 did not return these Villagarcía volumes with a cipher match; the BNE record ids behind the original 'cifrado' hit are needed to check them. Earlier note: All nine returned by BNE's field search for 'cifrado'; the matching field was not seen. The volume notes on Europeana contain no cipher word, so the cipher is unconfirmed. Per BNE and the DBE this is the II marquis (1638-1714), at Genoa from 1672 and Venice 1677-91. Not viewed: BNE blocked access on 2 Nov 2026.",
    "why": "Spanish embassy files at Venice during the War of the Holy League, if they do hold cipher.",
    "importance": 3,
    "solvability": 2,
@@ -35312,7 +35318,7 @@
    "shelfmark": "Munich, Bayerische Staatsbibliothek, Clm 10382 (Collectio Camerariana vol. 32), piece 81 on the leaf (Halm prints 'n. 78')",
    "folio_note": "MDZ bsb00112117 scans 307-309. The leaf is numbered 81. Halm's entry stands between n. 80 and n. 82 and prints 'n. 78', evidently a misprint.",
    "cls": "C",
-   "status": "Halm, Verzeichniss der handschriftlichen Sammlung der Camerarii (1874), p. 60: 'n. 78 Axelii ab Oxenstierna ep. (ad Lud. Cam.?) 10 Jun. 1625 (partim signis secretis scripta)'. Addressed 'Magnifice Vir', dated at Stockholm, signed by Oxenstierna.",
+   "status": "Key note (Brice Dudout, 5 Nov 2026) (the classification already matches the 4 Nov vetting: existing, contemporary interlinear decipherment over all 21 runs). The key rebuilt from the glosses is a homophonic table in alternating alphabetical blocks: consonants 1-18 ascending (b1 c2 d3 ... t15), vowels 19-23 (a e i o u), vowels 26-30 descending (u o i e a), 31-35 ascending, 38-42 descending, consonants 60 down to 43 and 61-78 ascending, e = 80. Predictions from the structure check out on the leaf (m = 9, h = 6 in 'marchiam'; b = 1 in 'Brandeburgica'). It is not Lasry's Rusdorff 1625 table (A = 16/40/64) and not the 1621-22 Camerarius nomenclator. Printed text not checked: AOSB part 1 may print the letter from the Stockholm draft. Earlier note: Halm, Verzeichniss der handschriftlichen Sammlung der Camerarii (1874), p. 60: 'n. 78 Axelii ab Oxenstierna ep. (ad Lud. Cam.?) 10 Jun. 1625 (partim signis secretis scripta)'. Addressed 'Magnifice Vir', dated at Stockholm, signed by Oxenstierna.",
    "why": "Oxenstierna on the Danish and Brandenburg proposals and Sweden's choice between Poland and Germany in 1625. The glosses give a two-digit key sample.",
    "importance": 3,
    "solvability": 5,
@@ -35600,7 +35606,12 @@
    "prior_art": "open as far as checked (checked 4 Nov 2026: known.py on shelfmark and names, no hit; Tomokiyo, Lasry, HistoCrypt and the Genoa literature not searched)",
    "access_note": "Images on PARES, no login.",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "verdict": "read",
+    "closed": "AGS Estado 3591 f.181 no.2 (cipher chapter from Turin) is an eight-line cipher with a line of small cursive written over each line and struck through in ink, and f.183 is a clean copy headed 'Cap. de la carta descifrada de Turin' with the Spanish plaintext, so a contemporary decipherment sits with the cipher (images viewed on PARES).",
+    "date": "2026-11-04"
+   }
   },
   {
    "id": 2197,
@@ -36176,7 +36187,7 @@
    "shelfmark": "Florence, Biblioteca nazionale centrale, Ginori Conti 29.132 (Manus CNMD record 611112)",
    "folio_note": "cc. 2r-3v (BNCF inventory no. 3423160); the 1 Dec letter on cc. 1r-v is not marked as cipher",
    "cls": "B",
-   "status": "Manus: 'Parte della lettera e cifrata.' No interlinear decipherment is noted. Not on DECODE. Manus gives the sheet-by-sheet description; the 29.114.a key sheets (Otto di Pratica, Dieci di Balia) are on the same fund and may fit.",
+   "status": "Existing (edition) (Brice Dudout, 5 Nov 2026): Lorenzo de' Medici, Lettere XVI (Sept 1489-Feb 1490, ed. L. Böninger, 2011) edits GC 29.132 (e.g. the letter of 18 Dec 1489, cc. 19-20); the leaf also carries the contemporary interlinear decipherment noted in the 4 Nov vetting. Letter number not seen (Google Books snippets only). Earlier note: Manus: 'Parte della lettera e cifrata.' No interlinear decipherment is noted. Not on DECODE. Manus gives the sheet-by-sheet description; the 29.114.a key sheets (Otto di Pratica, Dieci di Balia) are on the same fund and may fit.",
    "why": "Lorenzo's own cipher in the last year of his life, in the Roman papal-benefice business; oldest group is under 1500 with images online.",
    "importance": 4,
    "solvability": 4,
@@ -36224,7 +36235,7 @@
    "shelfmark": "Florence, Biblioteca nazionale centrale, Ginori Conti 29.125bis (Manus CNMD record 611086)",
    "folio_note": "cc. 5r-6v (BNCF inventory no. 3423030); the letter on cc. 1r-v (5 Jul 1484) is separate",
    "cls": "B",
-   "status": "Manus: 'Parte della lettera e cifrata.' No decipherment noted. Not on DECODE. Manus gives the sheet-by-sheet description; the 29.114.a key sheets (Otto di Pratica, Dieci di Balia) are on the same fund and may fit.",
+   "status": "Existing (edition) (Brice Dudout, 5 Nov 2026): printed deciphered in Lorenzo de' Medici, Lettere VII (1482-1484, ed. M. Mallett, 1998), nos. 701/701A, pp. 455-457; the edition's heading reads 'In parte cifrata e decifrata nell'interlinea'. Seen in Google Books snippets only. Earlier note: Manus: 'Parte della lettera e cifrata.' No decipherment noted. Not on DECODE. Manus gives the sheet-by-sheet description; the 29.114.a key sheets (Otto di Pratica, Dieci di Balia) are on the same fund and may fit.",
    "why": "A Medici cipher letter from the War of Ferrara (1482-84), when Lorenzo directed the League's diplomacy.",
    "importance": 4,
    "solvability": 4,
@@ -36272,7 +36283,7 @@
    "shelfmark": "Florence, Biblioteca nazionale centrale, Ginori Conti 29.136 (Manus CNMD record 611138)",
    "folio_note": "cc. 2r-3v (BNCF inventory no. 3423183); the 8 Jan biglietto on cc. 1r-v is not marked as cipher",
    "cls": "B",
-   "status": "Manus: 'Lettera in parte cifrata.' No decipherment noted. Not on DECODE. Manus gives the sheet-by-sheet description; the 29.114.a key sheets (Otto di Pratica, Dieci di Balia) are on the same fund and may fit.",
+   "status": "Existing (contemporary decipherment; edition probable) (Brice Dudout, 5 Nov 2026): Lorenzo de' Medici, Lettere XVI (Sept 1489-Feb 1490, ed. L. Böninger, 2011) covers these weeks of the Michelozzi correspondence and very likely prints it, and the leaf carries the contemporary interlinear decipherment noted in the 4 Nov vetting. Letter number not seen (Google Books snippets only). Earlier note: Manus: 'Lettera in parte cifrata.' No decipherment noted. Not on DECODE. Manus gives the sheet-by-sheet description; the 29.114.a key sheets (Otto di Pratica, Dieci di Balia) are on the same fund and may fit.",
    "why": "Another of the 1489-90 Roman letters of Lorenzo to Michelozzi; with 29.132 a second cipher text from the same weeks, useful for a joint key.",
    "importance": 4,
    "solvability": 4,
@@ -36368,7 +36379,7 @@
    "shelfmark": "Florence, Biblioteca nazionale centrale, Ginori Conti 29.104 (Manus CNMD record 610402)",
    "folio_note": "cc. 5r-6v (BNCF inventory no. 3422591); the earlier letter of 23 Dec 1486 (Milan, cc. 1r-2v) is not marked as cipher",
    "cls": "B",
-   "status": "Manus: 'Alcune righe sono cifrate.' No decipherment noted. Not on DECODE. Manus gives the sheet-by-sheet description; the 29.114.a key sheets (Otto di Pratica, Dieci di Balia) are on the same fund and may fit.",
+   "status": "Still open (Brice Dudout, 5 Nov 2026): not a Lorenzo letter and no edition found (Lettere and the 1964 Censimento cover Lorenzo's own letters). Only about 55 cipher signs in three short runs on c. 5v, with no interlinear gloss: too short to solve without the key. The 29.114.a key sheets were looked through quickly and none was confirmed. Earlier note: Manus: 'Alcune righe sono cifrate.' No decipherment noted. Not on DECODE. Manus gives the sheet-by-sheet description; the 29.114.a key sheets (Otto di Pratica, Dieci di Balia) are on the same fund and may fit.",
    "why": "A Roman news letter of Lorenzo's last months (Innocent VIII, Virginio Orsini), partly ciphered.",
    "importance": 3,
    "solvability": 3,
@@ -36411,7 +36422,7 @@
    "shelfmark": "Florence, Biblioteca nazionale centrale, Ginori Conti 29.137 (cc. 1-39) (Manus CNMD record 611145)",
    "folio_note": "c. 13r (BNCF inventory no. 3423197)",
    "cls": "C",
-   "status": "Manus: 'Il biglietto e in scrittura cifrata.' Sender, addressee and date of the biglietto not given. Not on DECODE. Manus gives the sheet-by-sheet description; the 29.114.a key sheets (Otto di Pratica, Dieci di Balia) are on the same fund and may fit.",
+   "status": "Existing (edition), probable (Brice Dudout, 5 Nov 2026): the 1964 Censimento of Lorenzo's letters lists two Lorenzo to Michelozzi pieces in GC 29.137 (July? and 5 Aug 1481), so Lettere VI (1481-82) very likely prints this biglietto. Not checked in the volume. Earlier note: Manus: 'Il biglietto e in scrittura cifrata.' Sender, addressee and date of the biglietto not given. Not on DECODE. Manus gives the sheet-by-sheet description; the 29.114.a key sheets (Otto di Pratica, Dieci di Balia) are on the same fund and may fit.",
    "why": "A short Medici cipher note of 1481 (Pazzi-war aftermath); cheap to test against the Florentine keys.",
    "importance": 2,
    "solvability": 3,
@@ -37348,7 +37359,7 @@
    "shelfmark": "Riksarkivet, Diplomatica Turcica, bihang Transylvanica, SE/RA/2119/2119.5/4 (\"Furstarnas av Siebenbürgen Georg I och II Rácóczis originalbrev till Kungl. Maj:t\", 1632-1659), images 18, 20, 22, 23",
    "folio_note": "64 images (R0003533). Images 18 (5 sign lines), 20 (about 6 sign lines in a letter about \"Rex Poloniae\"), 22 (4 sign lines) and 23 (a full page of about 16 lines of signs, about 500 characters, with a faint Latin gloss between some rows).",
    "cls": "B",
-   "status": "Catalogue: only \"originalbrev\" of the two Rakoczi princes; no cipher mentioned. Graphic sign cipher, probably monoalphabetic (the Lang repertory describes the same prince's sign systems in MOL E 190 as \"not broken\"). A few glosses are written between the rows at image 23, so a partial reading was made at the time. Not in Lang's repertory (checked pp. 191-330 for Swedish-archive items); keys for the same fonds are held (DECODE R4310 \"Siebenbürgen Schauis\" number key and R4296, Chifferklaver låda II), but they are number keys, not sign keys.",
+   "status": "Existing, not 'partly read' (Brice Dudout, 5 Nov 2026). (a) The contemporary interlinear Latin decipherment covers every sign row: the glosses run about two rows behind the cipher, so the rows that look unglossed (top and bottom of image 23) are glossed further down. Checked by deciphering the 'unglossed' rows of image 23 with a key built from image 18 alone: '...[ex]creverit, an Vestra Majestas possit partem aliquam exercitus sui ad Cracoviam pro conjunctione expedire. Caetera magnificus dominus Sternbach Majestati Vestrae uberius perscribet', which matches the gloss and the edition word for word. (b) All three cipher postscripts are printed deciphered in Szilágyi Sándor, Erdély és az északkeleti háború. Levelek és okiratok II (MTA, Budapest 1891; archive.org erdlysazsz02sziluoft): PS of 12 Dec 1656 (image 18) p. 204; PS of 28 Dec 1656 (image 20) p. 209; PS of 27 Feb 1657 (images 22-23) p. 275. (c) The same volume holds a fourth sign-cipher letter (images 52-53, Gyalu, 13 Jan 1658), printed in full on pp. 484-485 ('Eredetije titkos írással írva a svéd állami levéltárban'): also existing. (d) A sign key rebuilt from image 18 (simple substitution, Latin, about 22 signs) was validated on image 20 held out: 0.935 of characters against a best of 0.442 for 200 shuffled keys. The key is not printed in Szilágyi and could be filed as a key record. Possible new leads in the same volume, not checked: image 8 (Georg I, 23 Apr 1644, number cipher in a Latin letter) and images 62-63 (1659, dense number cipher). Earlier note: Catalogue: only \"originalbrev\" of the two Rakoczi princes; no cipher mentioned. Graphic sign cipher, probably monoalphabetic (the Lang repertory describes the same prince's sign systems in MOL E 190 as \"not broken\"). A few glosses are written between the rows at image 23, so a partial reading was made at the time. Not in Lang's repertory (checked pp. 191-330 for Swedish-archive items); keys for the same fonds are held (DECODE R4310 \"Siebenbürgen Schauis\" number key and R4296, Chifferklaver låda II), but they are number keys, not sign keys.",
    "why": "Rakoczi's alliance with Charles X Gustav against Poland (Jan 1657): the sign-cipher passages carry the secret terms between the two allies.",
    "importance": 4,
    "solvability": 4,
@@ -37383,8 +37394,8 @@
    "ark": "",
    "scored": "sweep",
    "vetting": {
-    "verdict": "partly_read",
-    "closed": "Real graphic sign cipher in Latin letters (about 40 sign lines, Riksarkivet R0003533 images 18-23), but a contemporary partial interlinear Latin decipherment is written over the signs on images 20, 22 and 23 and a marginal gloss on 18, so it is read in part from an existing decipherment; the unglossed lower half of image 23 and the unglossed rows remain open.",
+    "verdict": "read",
+    "closed": "Real graphic sign cipher in Latin letters (Riksarkivet R0003533 images 18-23), already read: the contemporary interlinear Latin decipherment covers every sign row (glosses run about two rows behind the cipher, checked on the apparently unglossed rows of image 23 against a key built from image 18), and all three cipher postscripts are printed deciphered in Szilagyi Sandor, Erdely es az eszakkeleti haboru II (Budapest 1891), pp. 204, 209, 275; a fourth sign-cipher letter (images 52-53, 13 Jan 1658) is printed on pp. 484-485. Verdict corrected from partly_read on 5 Nov 2026 (Brice Dudout, PR #273). Not a lead for a new reading; a sign key rebuilt from image 18 (0.935 on held-out image 20) could be filed as a key record.",
     "date": "2026-11-04"
    }
   },
@@ -37615,63 +37626,6 @@
    ],
    "ark": "",
    "scored": "sweep"
-  },
-  {
-   "id": 2250,
-   "counted": true,
-   "year": 1803,
-   "date": "1803",
-   "title": "Robert R. Livingston (Paris) → his brother: letter on the Louisiana negotiations, \"partly in cipher handwriting\"",
-   "correspondents": "Robert R. Livingston → his brother",
-   "place": "Paris",
-   "language": "English",
-   "region": "Americas",
-   "period": "1801-1900",
-   "shelfmark": "Center for Brooklyn History, Mid-Atlantic early manuscripts collection 1974.002, Box 1, Folder 25",
-   "folio_note": "one letter in a mixed folder; gift of Dr A. S. Hunt, date unknown",
-   "cls": "C",
-   "status": "Finding aid (read 4 Nov 2026): \"1803 letter from Robert R. Livingston at Paris to his brother re: negotiations for the Louisiana purchase, mentions James Monroe and Talleyrand, partly in cipher handwriting.\" Ambiguous: it may mean cipher or only a cursive hand. Livingston's State Department number code of 12 April 1803 (to Madison) is known and printed.",
-   "why": "Livingston and Monroe at Paris in the weeks of the purchase; a private cipher to a brother would show what he kept out of dispatches. Weak: the note may describe handwriting.",
-   "importance": 2,
-   "solvability": 2,
-   "difficulty": 3,
-   "score_note": "Scored from the Brooklyn History finding aid on 4 Nov 2026 (research/nyc_sweep/); not viewed",
-   "verify": "Ask Brooklyn History for the folder; check whether the numbers match the State Department code of the Madison letter.",
-   "links": [
-    {
-     "label": "Finding aid",
-     "href": "https://findingaids.library.nyu.edu/cbh/1974_002/all/"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "NYU special collections sweep (Chrome)",
-   "prior_art": "open as far as checked (4 Nov 2026: known.py on names and shelfmark; cryptiana livingst.htm names the Morris-Jay and Morris-Franklin codes only; web search found no edition or study of these items)",
-   "needs_archive_scan": "yes",
-   "access_note": "Reading-room item at Center for Brooklyn History; no scan found online",
-   "decode_ids": [],
-   "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting": {
-    "date": "2026-11-04",
-    "by": "claude NYC archives sweep (research/nyc_sweep/)",
-    "seen": {
-     "kind": "not online",
-     "where": "https://findingaids.library.nyu.edu/cbh/1974_002/all/ (read 4 Nov 2026 in Chrome, after the NYU human check); no digital object",
-     "extent": "one letter in a folder of mixed items",
-     "cipher": "Finding aid: \"1803 letter from Robert R. Livingston at Paris to his brother re: negotiations for the Louisiana purchase, mentions James Monroe and Talleyrand, partly in cipher handwriting.\" No decipherment mentioned; \"cipher handwriting\" may only mean cursive."
-    },
-    "prior_art": {
-     "decode": "Not on DECODE: known.py \"Livingston\" finds catalogue and lead rows on his 1781-82 letters, none on this folder.",
-     "tomokiyo": "cryptiana.web.fc2.com/code/livingst.htm fetched 4 Nov 2026 and grepped for Duportail and Gouverneur: only the Morris-Jay (WE006) and Morris-Franklin (WE008) codes, which Gouverneur Morris filled out for the Finance Office; no Duportail, no 1794 item. The rest of the cryptiana text pages were mirrored and grepped for other names on 3 Nov 2026 (no hit).",
-     "lasry": "GL.htm (the copy in a repo worktree) grepped 4 Nov 2026 for Duportail, Pinckney, Gouverneur Morris and Livingston: no hit. No Lasry or HistoCrypt item found by web search.",
-     "edition": "Web search of 4 Nov 2026 found the famous coded letter to Madison of 12-13 April 1803 (Historic New Orleans Collection; Papers of Madison, Founders Online) and no brother letter in print.",
-     "literature": "No study of a Livingston letter to a brother at Brooklyn History found."
-    },
-    "key_check": "No key held. The Madison letter of April 1803 used the State Department number code, decoded in print; whether this letter does is unknown.",
-    "duplicates": "known.py \"Livingston\": no entry for this folder or for a letter to his brother.",
-    "verdict": "open"
-   }
   }
  ]
 }

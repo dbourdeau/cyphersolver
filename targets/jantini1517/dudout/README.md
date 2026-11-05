@@ -1,6 +1,6 @@
 # Fantini 1518 (R1126): the key, and the contemporary plaintext copy on pp. 3-4 (Brice Dudout)
 
-Status: read; contemporary plaintext copy identified on pp. 3–4 (Brice Dudout, 28 Oct 2026; 469 of 492 words read by sense, 95.3%, of which 290 sure; probable and restored words rest on that copy).
+Status: read in part; contemporary plaintext copy identified on pp. 3–4 (Brice Dudout; recounted 5 Nov 2026 under the strict 95% rule: 415 of 492 words read = 84.3%, 290 sure + 125 probable; the 54 words restored by sense no longer count, 95.3% with them; probable and restored words rest on that copy).
 
 ## What is new
 
