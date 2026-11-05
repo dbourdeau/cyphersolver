@@ -47,7 +47,8 @@ done, and search with `research/archive_sweep_2026-10/known.py` before starting.
 | New-York Historical (NYU finding-aid search), Maryland Center (site search returns nothing) | Human check; site fault. Reached only through ArchiveGrid | `sweep_2026-11_us_blocked` |
 | Benson finding aids in TARO | API ignores the query | `sweep_2026-11_us_blocked` |
 | BYU CONTENTdm images (`cdm15999.contentdm.oclc.org`) | Times out from this network; holds the Sfondrati letters | `sweep_2026-11_us_blocked` |
-| Morgan Library record pages (`themorgan.org/literary-historical/`) | Cloudflare checkbox; needs the owner in Chrome. ArchiveGrid gives the description only | `sweep_2026-11_us_blocked` |
+| NYC, other: NYPL archives catalogue, Hispanic Society, Center for Jewish History, Brooklyn Public Library; Columbia terms beyond cipher/cypher/cryptogram | N-YHS/Brooklyn History (NYU search) and Columbia finding aids were searched 4 Nov 2026 for cipher/cypher/cryptogram; the others not touched | `nyc_sweep` |
+| Morgan Library (`themorgan.org` record pages, `corsair.themorgan.org` catalogue) | Cloudflare checkbox that returns after 2 to 4 requests; owner clears it in Chrome. Record pages add nothing to ArchiveGrid and show no images. CORSAIR keyword search works (206 records for cipher/cypher/cryptogram); chiffre, cifra, decipher and 11 bib ids unread | `nyc_sweep` |
 | LAC collection search | Cloudflare; `nouvelle-france.org` is the working route | `canada_lac` |
 | AGN Argentina, national libraries of Peru, Argentina and Colombia, dLOC | Unreachable or JS-only | `canada_latam` |
 | ABNB (Bolivia) | Cloudflare | `latam_southcone` |
