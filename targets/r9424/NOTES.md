@@ -70,6 +70,29 @@ reading_review grade A; clean sentences 0.21 on the shape score (modern word lis
 (19/21) counting explicit holes only (b17_score HOLES=1). _validate.py: not applicable (polyphony 0.147 from the merged
 labels; validation.tsv from the 126 directly read words). fraction_read about 0.97 of 913 signs (about 28 signs unvalued).
 
+## 25 Oct 2026: writer and sigils identified from Lossen (issue #89, ry-xu); checked 5 Nov 2026
+
+Ryan Xu (with Claude Opus 5.5) pointed to Max Lossen, *Der Kölnische Krieg*, vol. 2 (Gotha 1897; BSB bsb11808949, OCR
+search and page images), p. 348 n. 1. The note quotes another letter by Dandorf to the Duke of Bavaria, dated 13 Aug 1583
+(StA. 9/5 f. 42), which uses the same sigils, and Lossen resolves them in square brackets: "Ho. [d. i. Gf. S.]" (Count
+Salentin von Isenburg), "Bi. [Kf. Ernst]" (Elector Ernst), "Si. [Paul Stor]" ("... Bi. sol sich nach Luttich begeben,
+aber Si. und ich habens widerraten"). Checked here on the page image: p. 348 n. 1 says exactly this, and p. 164 names
+"der bairische Rat Jakob von Dandorf, Hofmeister der Herzogin-Mutter" among the few who left Munich with Duke Ernst, with
+Paul Stor, Ernst's old confidant, gone ahead to Cologne and Düsseldorf.
+
+What follows from it, as reported by Xu: the writer of R9424 is very likely Jakob von Dandorf (an inference from the
+shared sigils; the docket "Landorff(?)" would be *Dandorff*); "Ho." = Salentin, "Si." = Stor, so "zu hof regirt Si. allain"
+says Stor ran the court. Not checked here: "Fe." and "Ni." as Arenberg and Manrique (Xu: Lossen II 301-302, 339),
+"Susanna" as Ernst's mistress at Freising (II 159 n. 1), the f.275r "provostship" as the Würzburg cathedral provostship
+(II 457), and the forename "Hans Jakob" (Lossen p. 164 gives "Jakob"). Lossen supplies sigil meanings, not cipher values:
+the key is unchanged, and the # sign is still open (Xu: it must mean Ernst at l. 27 and f.275r, but reads more naturally as
+Wilhelm at l. 23).
+
+Xu's proposed readings of the gaps, not applied until he has checked them on the six pages (we offered to send him the
+images by email): l. 8 `dʒ` = *dz* (dass) and `nprse` = *als* (n and p leading nulls), `mur3ar` = *magna* (m an edge null, u the
+n/u sign); with these 13 of 235 words are holes (94.5%) on his count, 11 (95.3%) with *Co.* (l. 22 `eo`, Cöln) and
+*weib* (`i/kocw`); `zodDcw3` = *richtig?* is open. His counts are not recomputed here.
+
 ## Remaining gaps
 
 - the # sign (barred o-o), 3 times (ll. 23, 27; f.275r) - blocker: no-key-material; a nomenclator sign, the volume key R9422 is cut at a/b and the f.273v table is half outside the photo
@@ -82,7 +105,7 @@ labels; validation.tsv from the 126 directly read words). fraction_read about 0.
 - [x] siblings: R9419-R9423 key records of the volume opened; the f.273v nomenclator fragment noted (half visible)
 - [x] clear-pages: the f.275r glosses checked against the key (der, thumbrobst, Wirtzburg, Hildesheim agree; Aichstet does not decode)
 - [x] known-keys: R9420, R9421, R9422 tried (21 Sept); Ryan Xu's key fits
-- [x] print: no edition found (Ryan Xu: Cryptiana, GitHub, Leighton 1974); Immler 1999 not online
+- [x] print: no edition found (Ryan Xu: Cryptiana, GitHub, Leighton 1974); Immler 1999 not online; Lossen, Der Kölnische Krieg II (1897) p. 348 n. 1 gives the sigils Ho., Bi., Si. from Dandorf's letter of 13 Aug 1583 (Xu, checked here)
 - [x] key-rebuild: key recovered ciphertext-only by Ryan Xu; checked sign by sign on the images 23 Oct 2026
 - [x] retry: every emendation and unread group re-read on the full-resolution images 23 Oct 2026; 9 settled, 1 withdrawn
 ## Next
