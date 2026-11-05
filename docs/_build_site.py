@@ -985,6 +985,11 @@ PAGES = [
          blurb='Two Milanese envoys wrote to Sforza in one cipher (key DECODE R1857) during the conclave of 1447: Barbavara from Rome on the death of Eugenius IV, King Alfonso&rsquo;s 94,000 ducats and the election of Nicholas V, Pusterla from Ferrara on money that never came. Every letter in BnF italien 1584 has a later clear copy or a decipherment of the time beside it. The copies are transcribed and translated here, and the code signs their copyist left blank are filled from the key: the Duca di Ferrara, the Venetians, &lsquo;qui&rsquo;.',
          quote='&ldquo;li preti sono homini da bastonate, non da pregare&rdquo;',
          rights='Images: Biblioth&egrave;que nationale de France (Gallica)'),
+    dict(slug='guarna1447', label='Guarna to Sforza, 21 May 1447', year='1447', y=1447.39, place='Milan &rarr; Francesco Sforza', st='partial', stt='key from adjacent plaintext &middot; partial',
+         title='Nicol&ograve; Guarna to Francesco Sforza, Milan, 21 May 1447',
+         blurb='Sforza&rsquo;s envoy at Milan reports an audience with Duke Filippo Maria Visconti: the state in danger, the plague, nine thousand ducats and no more money for a long while, and the Duke&rsquo;s fervent wish that Sforza come at once. Brice Dudout rebuilt the key from another Guarna letter and its late clear copy and read 616 of about 852 cipher words (72.3%, the unread stretches estimated); the key is partial by our protocol, there is no fresh held-out block, and the end of the letter was already in clear on f. 156.',
+         quote='&ldquo;voi non haveriti piu uno fiorino per uno grande spacio&rdquo;',
+         rights='Manuscript images: Biblioth&egrave;que nationale de France, italien 1584 ff. 153r&ndash;154r (Gallica); transcription and key by Brice Dudout (PR #280)'),
     dict(slug='birago1448', label='Birago to Sforza 1448', year='1448', y=1448.16, place='Pavia &rarr; Francesco Sforza', st='found', stt='read at the time',
          title='Andrea da Birago to Francesco Sforza, Pavia, 28 February 1448',
          blurb='The one cipher letter of the 1447&ndash;48 Sforza series in Paris with no decipherment beside it (BnF italien 1585 f. 33). Birago&rsquo;s own key sheet is in Milan (DECODE R5316, never connected to a letter), and with it the cipher reads as the clear letter mounted above it, f. 32: Orlando Pallavicino asks Birago&rsquo;s help to get home, while the Milanese court Francesco Piccinino. All 513 signs are on the key.',
@@ -2962,6 +2967,7 @@ IMAGES['clair460num'] = None
 IMAGES['dampierre1589'] = None
 IMAGES['dole1636'] = None
 IMAGES['coloma1622'] = ('coloma1622_snip.jpg', 'F.1v, lines 1-7: the cipher body, numbers, underlined code words and ligatures', 'Biblioteca Nacional de Espa&ntilde;a, RES/227/122, f.1v ll. 1-7 (viewer image 6), via BNE Digital, CC BY 4.0')
+IMAGES['guarna1447'] = ('guarna1447_cipher.jpg', 'F. 153r, top: the clear opening of the letter, then runs of cipher signs written between clear words', 'Biblioth&egrave;que nationale de France, italien 1584 f. 153r (detail), via Gallica (openapi.bnf.fr IIIF, view 146)')
 IMAGES['ariosto1559'] = ('ariosto1559_cipher.jpg', 'C. 39r, lines 4-7: clear Italian words and runs of signs with raised vowel digits', 'Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera E, Este (d&rsquo;), Ercole II d&rsquo;Este, cc. 39-41, c. 39r (detail), via the Estense Digital Library (IIIF), CC BY-NC-SA')
 IMAGES['geleen1633'] = ('geleen1633_lead.jpg', 'Fol. 184r: two-digit cipher numbers run together between clear German words', 'Bayerische Staatsbibliothek, Clm 10406 no. 206, fol. 184r (view 653), via MDZ, Public Domain Mark 1.0')
 IMAGES['dubellay1555'] = None
