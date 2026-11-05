@@ -81,20 +81,21 @@ THE CIPHER
     - AGAD inventory, Zbiór Popielów (fonds 12): https://www.agad.gov.pl/inwentarze/ZbPopiel12.xml
 
 WHAT IS KNOWN
-  Status: AGAD inventory: "Korespondencja polityczna tajna (pismo cyfrowe) ... Listy zapisane szyfrem"; no decipherment noted. Keys in the same fonds: ZbPop 444 "Cyfra polska posłana do Petersburga Deboliemu" 8 III 1783; 451 "Chiffre François Nouveau envoyé a Monsieur Deboli" 1780; 453-454 the Cabinet's numbered keys 1772-1795 (not seen online). Not on DECODE (list dump searched); not in repo (known.py Deboli, Popiel: no hits). No scan album found on agadd2 for this signature; may be on szukajwarchiwach (blocked).
+  Status: Existing for the despatches the cabinet register covers (Brice Dudout, 5 Nov 2026), not yet matched piece by piece. The King's cabinet kept Deboli's despatches of 1784-85 in clear in AGAD, Archiwum Królestwa Polskiego (zesp. 11) 1/11/0/-/267, 'Deboli' 2 Jan 1784 - 20 Dec 1785 (790 scans). The King's drafts to Deboli for the same years are AKP 268 (419 scans), and AKP 264 has extracts, among them one of 20 Aug 1784. Unprinted: Zielińska &amp; Danilczyk stop at 31 Dec 1782. Systems seen on the ZbPop 10 scans: the old Polish code (ZbPop 444) in 'Sire' despatches, and a second table with 2084, 1103 and 509 frequent (groups to about 3800, e.g. 2 Jul 1784), for which no key of the time was found; ZbPop 451 gives only French fragments on it. Keys of the time: ZbPop 444 'Cyfra polska' of 8 Mar 1783 (1/12/0/-/444, 9 scans) is the old Polish code of 1783-88 (signal group 2345), not the 1789-91 code of targets/deboli1789; ZbPop 451 'Chiffre François Nouveau' of 1780 (1/12/0/-/451, 9 scans) is a French table. Both are online on szukajwarchiwach. We have transcribed both; the transcription will come with a later target. Earlier note: AGAD inventory: "Korespondencja polityczna tajna (pismo cyfrowe) ... Listy zapisane szyfrem"; no decipherment noted. Keys in the same fonds: ZbPop 444 "Cyfra polska posłana do Petersburga Deboliemu" 8 III 1783; 451 "Chiffre François Nouveau envoyé a Monsieur Deboli" 1780; 453-454 the Cabinet's numbered keys 1772-1795 (not seen online). Not on DECODE (list dump searched); not in repo (known.py Deboli, Popiel: no hits). No scan album found on agadd2 for this signature; may be on szukajwarchiwach (blocked).
   Outcome so far: not yet attempted by the project
   Prior-art check: open as far as checked: Zielińska &amp; Danilczyk print the Deboli correspondence only for 1780, 1781, 1782 (IH PAN, 2015-2017+); later years unedited, Rolnik 2025 says the Great Sejm reports remain in manuscript. A contemporary decipherment may survive in the King's cabinet copies (cf. ZbPop 320, deciphered register for 1774-77) (checked 26 Oct 2026: web search, Zielińska &amp; Danilczyk IH PAN edition series, known.py)
   Check first: Check the open Polish despatch of the same date (ZbPop 419/420/421/417/415) and any cabinet decipherment; try the 1780 French key (ZbPop 451) and the 1783 Polish key (ZbPop 444) if obtainable; Zielińska's 1780-82 volumes give plaintext for code-group calibration.
   Class B: part of a key or a known cipher family of the same office is in print or on DECODE.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/deboli1789/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/deboli1789/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/deboli1789/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -134,7 +135,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/deboli1789/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+413&amp;target=catalogue+413
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -153,10 +154,10 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>What is known</h2>
 
 
-<p><b>Status and prior art.</b> AGAD inventory: "Korespondencja polityczna tajna (pismo cyfrowe) ... Listy zapisane szyfrem"; no decipherment noted. Keys in the same fonds: ZbPop 444 "Cyfra polska posłana do Petersburga Deboliemu" 8 III 1783; 451 "Chiffre François Nouveau envoyé a Monsieur Deboli" 1780; 453-454 the Cabinet's numbered keys 1772-1795 (not seen online). Not on DECODE (list dump searched); not in repo (known.py Deboli, Popiel: no hits). No scan album found on agadd2 for this signature; may be on szukajwarchiwach (blocked).</p>
+<p><b>Status and prior art.</b> Existing for the despatches the cabinet register covers (Brice Dudout, 5 Nov 2026), not yet matched piece by piece. The King's cabinet kept Deboli's despatches of 1784-85 in clear in AGAD, Archiwum Królestwa Polskiego (zesp. 11) 1/11/0/-/267, 'Deboli' 2 Jan 1784 - 20 Dec 1785 (790 scans). The King's drafts to Deboli for the same years are AKP 268 (419 scans), and AKP 264 has extracts, among them one of 20 Aug 1784. Unprinted: Zielińska &amp; Danilczyk stop at 31 Dec 1782. Systems seen on the ZbPop 10 scans: the old Polish code (ZbPop 444) in 'Sire' despatches, and a second table with 2084, 1103 and 509 frequent (groups to about 3800, e.g. 2 Jul 1784), for which no key of the time was found; ZbPop 451 gives only French fragments on it. Keys of the time: ZbPop 444 'Cyfra polska' of 8 Mar 1783 (1/12/0/-/444, 9 scans) is the old Polish code of 1783-88 (signal group 2345), not the 1789-91 code of targets/deboli1789; ZbPop 451 'Chiffre François Nouveau' of 1780 (1/12/0/-/451, 9 scans) is a French table. Both are online on szukajwarchiwach. We have transcribed both; the transcription will come with a later target. Earlier note: AGAD inventory: "Korespondencja polityczna tajna (pismo cyfrowe) ... Listy zapisane szyfrem"; no decipherment noted. Keys in the same fonds: ZbPop 444 "Cyfra polska posłana do Petersburga Deboliemu" 8 III 1783; 451 "Chiffre François Nouveau envoyé a Monsieur Deboli" 1780; 453-454 the Cabinet's numbered keys 1772-1795 (not seen online). Not on DECODE (list dump searched); not in repo (known.py Deboli, Popiel: no hits). No scan album found on agadd2 for this signature; may be on szukajwarchiwach (blocked).</p>
 <p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open as far as checked: Zielińska &amp; Danilczyk print the Deboli correspondence only for 1780, 1781, 1782 (IH PAN, 2015-2017+); later years unedited, Rolnik 2025 says the Great Sejm reports remain in manuscript. A contemporary decipherment may survive in the King's cabinet copies (cf. ZbPop 320, deciphered register for 1774-77) (checked 26 Oct 2026: web search, Zielińska &amp; Danilczyk IH PAN edition series, known.py).</p>
 <p><b>Check first.</b> Check the open Polish despatch of the same date (ZbPop 419/420/421/417/415) and any cabinet decipherment; try the 1780 French key (ZbPop 451) and the 1783 Polish key (ZbPop 444) if obtainable; Zielińska's 1780-82 volumes give plaintext for code-group calibration.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/deboli1789/NOTES.md" rel="noopener">targets/deboli1789/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/deboli1789" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>

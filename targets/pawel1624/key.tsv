@@ -1,0 +1,82 @@
+# Key of the Carl Pawel cipher (lead 2179, BSB Clm 10382 n. 46, 1624), rebuilt by Brice Dudout (Claude Opus 5.5 agents), 5 Nov 2026.
+# Licence: CC BY 4.0, Brice Dudout. German letter cipher; each letter has three homophones in a block of three consecutive numbers.
+# It is the alphabet of targets/casimir1629 (Johann Casimir to Camerarius, 1624-29) moved down by 3: number here = casimir1629 number - 3.
+# Frozen before the held-out test: casimir1629 KEY (as frozen for that target, SHA-256 d8b9e735...) shifted by 3, the shift chosen on scan 181
+# (0.921 of the glossed letters there, next best 0.737); held-out scan 182: 13/13 letters (validation.txt).
+# As in casimir1629, 41-43 = p and 68-70 = y are taken from the published casimir1629 key (corrected there after its own test); the frozen
+# key had 41-43 = p (from "pars" on scan 181) and 68-70 = i. Neither block occurs in the held-out part.
+# Numbers 83 and up would be the nulls of casimir1629 (86 and up) moved by 3: not seen here. 1-10 and 53-55 not seen.
+# number<TAB>letter<TAB>seen in training: glossed runs of scan 181 with status ok (count)<TAB>note
+11	a	1	
+12	a	0	from casimir1629 15
+13	a	1	
+14	g	1	
+15	g	0	from casimir1629 18
+16	g	1	
+17	n	1	
+18	n	2	
+19	n	1	
+20	t	2	
+21	t	2	
+22	t	1	
+23	b	0	from casimir1629 26
+24	b	0	from casimir1629 27
+25	b	2	
+26	h	1	
+27	h	0	from casimir1629 30
+28	h	0	from casimir1629 31
+29	o	2	glossed e/o
+30	o	1	
+31	o	0	from casimir1629 34
+32	u/v	2	
+33	u/v	1	
+34	u/v	0	from casimir1629 37
+35	c	0	from casimir1629 38
+36	c	0	from casimir1629 39
+37	c	0	from casimir1629 40
+38	i	2	
+39	i	1	
+40	i	0	from casimir1629 43
+41	p	1	
+42	p	0	from casimir1629 45
+43	p	0	from casimir1629 46
+44	w	0	from casimir1629 47
+45	w	1	
+46	w	0	from casimir1629 49
+47	d	0	from casimir1629 50
+48	d	0	from casimir1629 51
+49	d	0	from casimir1629 52
+50	k	0	from casimir1629 53
+51	k	0	from casimir1629 54
+52	k	0	from casimir1629 55
+53	?	0	not seen (casimir1629 56 not seen either)
+54	?	0	not seen (casimir1629 57 not seen either)
+55	?	0	not seen (casimir1629 58 not seen either)
+56	x	0	from casimir1629 59
+57	x	0	from casimir1629 60
+58	x	0	from casimir1629 61
+59	e	4	
+60	e	3	
+61	e	2	
+62	l	2	
+63	l	2	
+64	l	1	
+65	r	2	
+66	r	1	
+67	r	1	
+68	y	0	from casimir1629 71; y as in the published casimir1629 key; frozen key had i
+69	y	0	from casimir1629 72; y as in the published casimir1629 key; frozen key had i
+70	y	0	from casimir1629 73; y as in the published casimir1629 key; frozen key had i
+71	f	0	from casimir1629 74
+72	f	0	from casimir1629 75
+73	f	0	from casimir1629 76
+74	m	0	from casimir1629 77
+75	m	0	from casimir1629 78
+76	m	0	from casimir1629 79
+77	s	1	
+78	s	1	
+79	s	0	from casimir1629 82
+80	z	0	from casimir1629 83
+81	z	0	from casimir1629 84
+82	z	0	from casimir1629 85
+83-99	null?	-	not seen; nulls in casimir1629 from 86

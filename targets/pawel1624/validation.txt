@@ -1,0 +1,25 @@
+# Validation of the key, lead 2179 (pawel1624): ONE measurement on a held-out part, protocol fixed before.
+# Protocol (French working file PROTOCOLE.md, SHA-256 0a8c1278...), frozen 5 Nov 2026 22:25 CET before scan 182 was looked at:
+# - Start: the casimir1629 key as frozen for that target (KEY.json, SHA-256 d8b9e735..., unchanged).
+# - One parameter learned on scan 181 only: a shift s with K[n] = casimir1629[n + s], s in -12..12, best score on the glossed runs of 181
+#   (status ok, gloss as long as the run). s = 3: 0.921 (s = 4: 0.737; s = 2: 0.526; the 22 others <= 0.42).
+# - Numbers the shifted key does not cover take the majority letter of scan 181 (41 = p from "pars"); then extension by blocks of three from 11.
+# - Frozen (KEY.json 266c757b..., training transcription bcbed0ea..., tools) in GEL-AVANT-H.sha256.
+# - Held out (H): scan 182, looked at and transcribed after the freeze (SHA-256 in H-TRANSCRIPTION.sha256). Every glossed run.
+# - Score = share of H characters right (unknown number = wrong); M5 = share of H words entirely right.
+# - Controls: 200 keys made by permuting the letters among the numbers of the frozen key (seed 20261105).
+# - Thresholds fixed in advance: VALIDATED if score >= 0.85 and score - best control >= 0.30.
+# Result as recorded (H_MESURE.json):
+H words 2, H characters 13
+frozen key characters 1.0000  (whole words 1.0000)
+casimir1629 key shifted by 3, alone: characters 1.0000
+best of 200 controls: characters 0.1538  (whole words 0.0000)
+margin 0.846
+DECISION: VALIDATED
+
+# LIMIT: the held-out part is tiny (scan 182 has only two letter runs: degen, brauchen; 13 letters). The stronger evidence is that the
+# frozen casimir1629 key, with one fitted parameter, already renders 35 of the 38 glossed letters of scan 181 used for the fit, and that
+# over all 17 runs (102 letters) the only differences from the glosses are the cipher clerk's spellings (vorharret, gunnen, scaf, uf),
+# a gloss written "victix" for victrix, and an added h in a gloss (rückh).
+# After the measurement (H spent): 181.14 re-read 78 30 63 20 61 (not 26) = solte, 181.15 re-read 64 59 38 25 (not 33) = leib; both now
+# agree with the glosses. Declared here and in transcription.txt; the frozen key and the measurement are unchanged.
