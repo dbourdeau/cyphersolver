@@ -1,0 +1,40 @@
+# H = fol. 492v (MDZ bsb00117497 scan 1202), chiffre seul, transcrit le 06/11/2026 sur bandes masquées
+# (scripts/crop_h2.py demi-hauteur 17 px, 2x ; scripts/zoom_h.py 3x, même masque), AVANT toute lecture des gloses de H.
+# Une ligne = une ligne de chiffre, repérée par son centre y (scripts/lines.py, couverture >= 0,5).
+# Groupes joints par des points ; mots clairs en minuscules entre espaces. Les limites de mots chiffrés
+# ne sont pas lues ici (tous les séparateurs sont des points) : elles seront prises sur la position des gloses.
+# Signes : {a} {phi} {x} {s} {z} {c} comme WAINUT ; {w} = signe en oméga (nouveau) ; {f} = crochet en s long (nouveau) ;
+# {U} = signe « 7115 »/« ʒuu » (nouveau, illisible). ? après un groupe = lecture douteuse ; [cut] = la ligne continue
+# dans le pli (microfilm), groupes perdus.
+# INCIDENTS DE MASQUE : y=565 n'était pas une ligne de chiffre mais la ligne de gloses au-dessus de y=590 (vues :
+# « Regi Poloniae, Si quid ... à tergo ... invadent ») -> y=590 EXCLUE de la mesure. Fragments de glose vus au bord :
+# y=278 « bellum » au-dessus des 3 derniers groupes ; y=328 « ...finis(?) » au-dessus de 42.80.3? -> ces mots EXCLUS.
+y214 22.34.64.19.49 sunt {a}.18.25.70.{E}.73
+y278 40.18.19.32.30.25.16.37 autem 18.70.20.25.38.16.28?.3? [cut]
+y328 25.66.68?.82.32.28.49.32.18.76.23.37 in {x}.25.42.80.3? [cut]
+y381 18.{a}.64?.32.55.26.80.28.49.16.66.19.38.{phi}.79.52.32.24? [cut]
+y436 85.{a}.33.57.80.56.76.25.19.32.52 et 12?.61.73.81.{f}.80.24.16.? [cut]
+y485 26.21.58.64.72.67.22.{x} quibus 85.23.66.25.19.49 in 61.80.? [cut]
+y539 47.62.38.19.23.28.49.40 etiam et 37.22.33.49.19.25.46? [cut]
+y590 82?.38.222.32 [mot clair barré] 40.{s}.32.82.65.70.73.18.43.32.66? [cut]   # EXCLUE (gloses vues)
+y643 34.80.19.40.66.67.32.23.{phi}.58.{z}?.56.82.32 posterius et 5? [cut]
+y695 64.32.38.25.76.49.16 atq 80.79.24.23.20.49.16.62 ork? [cut]
+y747 38.70.58.76.25.66.16.34.80.23.40.33.80.16.37.28?.62
+y827 30.33.12?.37?.26.82.25.37.47.61 etiam 48.32.1.19.23.37.40.33.? [cut]
+y878 47.80.61 et 84.{a}.76.71.37.69?.22.85.25.66.32.85.{w}.18.22.62.1? [cut]
+y931 64.42.86.61.{a}.43.67.32.82.56 ne 52.25.60.{x}.80.58.40.66.1? [cut]
+y1001 etiam 80.79.26.32.19.80.34.{phi}.18.43 ut non 48.23.8?.1? [cut]
+y1048 25.62 hiberni temporis incommoditatibus 24.47.37.85.? [cut]
+y1104 33.25.19.80.{w}.23.66.41.64.34.49.24.22.72.16.62.19.82.4? [cut]
+y1154 22.38.67.82.16.85.70.47.56.64.88.71.62.{x}.47.61.85.{w}.6?.32.? [cut]
+y1205 26.32.19.25.67.40.37 in 37.16.56.23.86.66.70.80.19.58.40.? [cut]
+y1253 64.38.86.25.{c}.66.32.18.67 et in 84.49.18.32.38.6?.65.32.1? [cut]
+y1306 34.16.66.38.85.49.19.43.40.18.71.82 inter alia {x}.69?.22.? [cut]
+y1354 37.49.66.23.61.85.25.33.{f}.73.16 iuxta 64.34.19.25.72.4? [cut]
+y1405 81.23.37.{U}.28.32.30.50.24.19.23.61 et ideo 18.22.66.? [cut]
+y1453 28.37.25.33.{f}.32.61.23.38 Verum hac in parte 25.38.32.1? [cut]
+y1502 19.37.23.19.47.22.48.70.18.38.32.18.62.23.38 eaq 24.46.? [cut]
+y1552 82.56.62.50.{s}.66.28.80.18.43.25.40.65.32.58.80.42.76.? [cut]
+y1607 ne 28.49.23.19.25.71.38.16.33.19.32.82.23.43.34.71.37.5? [cut]
+y1658 82.16.32.38.19.22.33.40.82.25 et ad 40.28.23.32.66.19? [cut]
+y1709 37.61.22.82.40.85 facere 70.50.22.34.43.80.40.19
