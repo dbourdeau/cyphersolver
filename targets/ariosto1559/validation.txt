@@ -1,0 +1,55 @@
+ariosto1559 - pre-registered held-out test of the key (contributor's protocol, not docs/_validate.py)
+
+Order of operations (each file hashed with SHA-256 before the next step; hashes kept in our working folder)
+1. 4 Nov 2026 ~23:00 CET: protocol written and hashed (each amendment re-hashed) before any key work. The cipher lines of 39r-41r were
+   transcribed blind (shapes only, no value tried) and frozen with the measuring script (transcription 3bb9b845...,
+   measure.py 1c4af2f9...).
+2. Held-out set H fixed in advance by line references and excluded in code from every learning step.
+   Amendment 1 (before any key trial): the first H (40v from "Et circa al buono uff.o" to the end, and 41r) was only 13.3% of
+   the tokens, under the 20% floor written in the protocol; H was enlarged upwards, as the protocol said:
+   H = 40v:08-14 + 40vB: + 41r: = 405 of 1,832 cipher tokens (22.1%).
+3. The four public keys of the family in the repository (ercole1559 key_1559.tsv, francescoeste1546, bresegno1548,
+   alfonso1576) were applied once each to the BUILD lines: none reads 2159.
+4. Key learned on BUILD only: simulated annealing on a character 5-gram Italian model, raised digits constrained to vowels,
+   frequency penalty; then hand corrections on BUILD only (dot = null, & = "qu"). Amendment 2 (before the measurement):
+   the raised ring takes the value "double the preceding consonant" (one line added to decode(); the value is permuted in
+   the controls like any other). No decoding of H was displayed before the measurement (show.py refuses H by assertion).
+   Key frozen: KEY.json, SHA-256 ee8fc375683a103dd85e457d429b673106219d3cd16464351ebe1343ac5ad30c.
+5. One measurement: python3 -I scripts/measure.py KEY.json transcription_2159.txt H
+
+Metric and thresholds (fixed in the protocol)
+- M5 = share of the decoded letters of H covered, by a maximum-coverage segmentation, by Italian words of 5 letters or more
+  (the repository's lang/lexicons/it.json.gz, count >= 2, j->i, v->u) plus a name list frozen in measure.py. "?" = uncovered.
+- Controls: 200 keys made by permuting the key's non-code values among its tokens, seed 1559.
+- VALIDATED: M5(H) >= 0.60 and M5(H) - best control >= 0.30. PARTIAL: 0.30 <= M5 < 0.60 with the same gap. Otherwise FAILED.
+- No contemporary decipherment exists for this letter, so there is no character score.
+
+Result (H_MESURE.txt, unchanged)
+  doc=2159 set=H letters=403 M5=0.605 | controls (200) max=0.155 median=0.038 gap=0.451 rank=1/201
+  decision VALIDATED
+
+After the measurement (not part of the test)
+- The measured key had the double-loop sign D = n. The second blind pass (below) showed that the sign first read as delta in
+  "satisoar..." is D, and with D = f at least 15 places read (satisfare, far, prefata, fosse, favore, facessimo, fuor di,
+  favorito, figliolo, fra, Farnesi...). The reading key is the frozen key with D = f only. The validation held with the
+  wrong value (D = n), so it does not depend on this change.
+
+Second blind transcription (5 Nov 2026)
+- Two further AI agents, blind to the first pass and to the key, given only the line skeleton and the conventions.
+- Token by token (difflib alignment per line): pass 1 1,838 tokens, pass 2 1,844; identical 1,612 = 87.7%; on aligned places
+  signs 89.3% (990/1,109) and raised marks 95.5% (622/651). Most differences are naming choices (pass 2 named the qoppa-like
+  sign y at 26 places in 39r-39v; d/D at 14 places; t/T; R/PL).
+
+Blind shape sheet (5 Nov 2026)
+- Pre-registered and hashed before it was built (8e8f8d64..., amendment f6a23bf2...: reference boxes corrected); 9 questions
+  at the places where the passes differ and the word depends on it (6 d/D, 3 qoppa/gamma); shape thumbnails only, one sign
+  boxed per question, "none / illegible" and a remark offered; no value or word shown. Answered by Brice Dudout (answers
+  hashed ebfde434...). Consequences fixed in advance: those 9 words can only move from probable to certain.
+- Answers: 6/6 the double loop D, 3/3 the qoppa-like sign. D = f confirmed; 9 words probable -> certain.
+
+External test on Ariosto c. 1 (targets/ercole1559, WAINUT): FAILED, so no external validation
+- Amendment 3, written before decoding c. 1: the frozen key, unchanged, applied once to WAINUT's public transcription of c. 1
+  (converted by a shape table frozen before decoding): 53 letters, M5 0.189, controls max 0.294, gap -0.105: FAILED.
+- Then once to our own copy of c. 1 from the IIIF image (not blind to the key): 59 letters, M5 0.271, controls max 0.204,
+  gap 0.067: FAILED.
+- c. 1 is in Ariosto's own hand and has a sign absent from 2159; probably another table of the same family. c. 1 is not read.
