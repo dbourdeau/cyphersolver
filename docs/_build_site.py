@@ -3749,11 +3749,11 @@ def list_findings(s):
     return s[:m.start(2)] + '<ul class="findings">\n' + '\n'.join(items) + '\n</ul>' + s[m.end(2):]
 
 def mirror_findings(s, n=RECENT_VISIBLE):
-    """index.html: the newest n entries of findings.html, then the way to the rest."""
+    """index.html: the newest n entries of findings.html, then the way to all the write-ups."""
     m, items = FINDINGS_LIST.search(s), findings_items(FINDINGS_PAGE.read_text(encoding='utf-8'))
     if not m or not items: return s
     head = ('<ul class="findings">\n' + '\n'.join(li.replace('<li>', '<li data-mirror>', 1) for li in items[:n]) + '\n</ul>\n'
-            f'<p class="allws"><a href="findings.html">All {len(items)} findings, newest first &rarr;</a></p>')
+            f'<p class="allws"><a href="writeups.html">All {len(PAGES)} write-ups &rarr;</a></p>')
     return s[:m.start(2)] + head + s[m.end(2):]
 
 FEATURED = ['voynich', 'lucca', 'armstrong', 'sunyatsen', 'feuquieres', 'ormonde']
