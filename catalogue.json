@@ -38394,7 +38394,7 @@
    "period": "1560-1589",
    "shelfmark": "Institut de France, Bibliothèque, Collection Godefroy, Ms Godefroy 260, f. 52",
    "folio_note": "1 letter",
-   "status": "Catalogue: original 'en partie chiffré' (or 'en grande partie chiffré'); no decipherment noted. Not on DECODE (known.py). Checked 28 Oct 2026: 28 Oct 2026 verify: Henri III to Bellièvre and Villeroy, 30 Oct 1580, original partly ciphered (f. 52); no edition named. Calames gives no images; access by justified research request only; publication needs authorisation.",
+   "status": "Catalogue: original 'en partie chiffré' (or 'en grande partie chiffré'); no decipherment noted. Not on DECODE (known.py). Checked 28 Oct 2026: 28 Oct 2026 verify: Henri III to Bellièvre and Villeroy, 30 Oct 1580, original partly ciphered (f. 52); no edition named. Calames gives no images; access by justified research request only; publication needs authorisation. 5 Nov 2026: Lettres de Henri III t. V (2000), p. 116, prints this letter (source 'Bibl. de l'Institut, coll. Godefroy 260, fol. 52 ro-vo: orig.', dated 31 Oct, Ollainville) as an analysis (don Antonio's successes in Portugal, Porto) with the note 'en partie chiffrée'; seen in Google Books snippets only, so whether the analysis covers the cipher passages is not known. Its sibling of 21 Oct 1580 (BnF fr. 15906 (2) ff. 520-522, lead 2255) is in a homophonic sign cipher whose key was rebuilt from that letter's marginal decipherments (research/gallica_sweep/bellievre_hi/ps1580/key.json); probably the same key.",
    "why": "Henri III on the Portuguese succession crisis of 1580.",
    "importance": 3,
    "solvability": 3,
@@ -38417,12 +38417,13 @@
      "decode": "not on DECODE (known.py over the DECODE list/view dumps, no record at this shelfmark)",
      "tomokiyo": "cryptiana.blogspot.com posts 'Ciphers of Henry III of France' (2019) and 'Ciphers under Henry IV of France' (2019) found by search 29 Oct 2026: no mention of this Godefroy letter or its writers; Institut Godefroy items not covered",
      "lasry": "No Lasry/HistoCrypt paper on the Institut de France Godefroy collection found (HistoCrypt/DECRYPT results searched 29 Oct 2026)",
-     "edition": "No edition named in Calames; Champion-François, Lettres de Henri III (Klincksieck 1959) is the likely edition, not consulted for this letter",
+     "edition": "No edition named in Calames; Champion-François, Lettres de Henri III (Klincksieck 1959) is the likely edition, not consulted for this letter Checked 5 Nov 2026: Lettres de Henri III t. V (2000) p. 116 prints it as an analysis, 'en partie chiffrée' (Google Books snippets; the page itself not seen). For the 21 Oct sibling (lead 2255) the same edition's analysis covers the cipher postscript, so check p. 116 before working this one.",
      "literature": "Web searches on the names + chiffre/dechiffrement (29 Oct 2026) returned nothing on this letter; ARCSI bulletins only generic on Henri III/IV ciphers"
     },
     "key_check": "No key for this Godefroy volume is held in the repo or on DECODE (known.py); the Godefroy keys the lead mentions (Ms Godefroy 168, Sillery/Villeroy family nomenclators) are not here, so nothing could be applied; the cipher cannot be tested until images and a key are obtained.",
     "duplicates": "known.py run on the shelfmark and correspondents (29 Oct 2026): hits only research/leads.json, research/calames_biblissima/candidates.json and research/archive_sweep_2026-10/access_uncertain.md; no target, DECODE record, ledger or queue entry. Other Godefroy leads in the batch (1185-1194) are different letters.",
-    "verdict": "open"
+    "verdict": "open",
+    "key_held": "A key for the Henri III-Bellièvre/Villeroy cipher of Oct 1580, rebuilt 5 Nov 2026 from the glossed passages of BnF fr. 15906 (2) ff. 521r-v (research/gallica_sweep/bellievre_hi/ps1580/key.json); untested on this letter (no images)."
    },
    "repository": "institut"
   },

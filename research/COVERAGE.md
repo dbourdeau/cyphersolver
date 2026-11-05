@@ -81,7 +81,7 @@ permission (`chrome_pass_2026-11`).
 | Abhilekh Patal | "cypher" paged to 691 of 4,505 | `asia_india` |
 | NARA M1194 | No search for "decipher" across all 261 rolls; only cards the bulk scan flagged were read | `nara_triage_c` |
 | QDL | No Arabic or Persian terms; 23,753 hit pages not screened as images | `qdl` |
-| BnF | fr. 15906, 15900, 15891 | `gallica_sweep` |
+| BnF | Bellièvre papers not yet screened: fr. 15890, 15892-15905, 15907-15911; fr. 15900 (2) has no Gallica ark (15906, 15900 (1) and 15891 swept 5 Nov 2026) | `gallica_sweep` |
 | Dudout's BnF BAM list | The 675-article JSON, available from him on request | `dudout_2026-10-29` |
 | Archivportal-D | Only the first 200 "chiffriert" slots, no other terms | `central_archives` |
 | HHStA | Staatenabteilungen Spanien, Rom, Venedig beyond the term searches | `central_archives` |

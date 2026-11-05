@@ -16,9 +16,9 @@ nevers, league, henryiii, henryiv, mayenne) so as not to redo his ground:
 | fr. 4715 "pièces originales, la plupart en chiffre, affaires de la Ligue" | btv1b52509819x | 202 | yes, `bnf4715.htm`, most items with decipherments; ff. 82, 84 solved by Lasry; f. 61 open | fetched for f. 61 (`f4715_full/`); not the sweep target |
 | fr. 3995 "Recueil de chiffres avec leurs clefs 1580–95 (Nevers)" | btv1b525085665 | 285 | yes, `nevers.htm` catalogue | fetched as a key reference |
 | **fr. 16127** ambassadors in the Low Countries 1571–94 (Mondoucet, Refuges, Blatier; Court minutes) | btv1b90609766 | 427 | **no** | **swept, see below** |
-| fr. 15906 Bellièvre XVII, letters to Bellièvre 1581–82 | btv1b9064322t | 377 | no | fetching |
-| fr. 15900 Bellièvre XI, letters from foreign sovereigns and their agents | btv1b525217736 | 900 | no | fetching |
-| fr. 15891 Bellièvre II 1578–85 | btv1b525218150 | 888 | no | queued |
+| fr. 15906 Bellièvre XVII, letters to Bellièvre 1581–82 | btv1b90643237 (1), btv1b9064322t (2) | 478 + 377 | ff. 759–781 only (Lasry) | swept 5 Nov 2026, see below |
+| fr. 15900 (1) Bellièvre XI, letters from foreign sovereigns and their agents | btv1b525217736 | 900 | no | swept 5 Nov 2026: no cipher |
+| fr. 15891 Bellièvre II 1578–85 | btv1b525218150 | 888 | no | swept 5 Nov 2026: no cipher |
 | 500 Colbert 402 | – | – | – | not on Gallica (checked 16 Sept, `../../targets/segur/NOTES.md`) |
 | Dupuy 407 | btv1b10035037p | 320 | – | read to canvas 46 in the Ségur session, chronological, clear; not resumed |
 
@@ -180,3 +180,73 @@ Which passages lack a reading, fixed by transcribing and aligning rather than by
 letter (ratio 0.91, only word signs unaligned). **4 Jan 1573** (ff. 126v–127v) has none; ff. 124–125 decipher the 5 Dec
 1572 letters. With the 1573 key from the 9 Sept alignment the 4 Jan cipher reads in stretches (about two-thirds; held-out
 control 77 % letters; the Court's gloss "hambourg" decoded in place). Full account `mondoucet/f1573/reading.md`.
+
+## Bellièvre volumes fr. 15906, 15900 (1), 15891: swept 5 Nov 2026
+
+All canvases fetched through openapi.bnf.fr at 800 px (`fetch_openapi.py`; gallica.bnf.fr/iiif 403s scripts): four
+arks, 2,643 canvases. fr. 15906 is split in two arks, **btv1b90643237 = fr. 15906 (1)** (478 canvases, ff. 1-434) and
+**btv1b9064322t = fr. 15906 (2)** (377 canvases, ff. ~322-782); both are microfilm shot as two-page openings.
+fr. 15900 (1) is btv1b525217736 (900 canvases); **fr. 15900 (2)** (letters to Bellièvre 1599-1607, chronological) has
+no Gallica ark (archivesetmanuscrits notice cd0e3981) and was not swept. fr. 15891 is btv1b525218150 (888 canvases).
+Contact sheets (`sheetN.py`: 3x3 at 420 px for single pages, 2x3 at 640 px for openings) were read by screening
+agents to the brief in `SCREEN_BRIEF.md`, each flag checked on the 800-px canvas; results per batch in
+`screen_<vol>_<a-f>.txt`. An ink-fraction filter (`ink.py`) was tried to skip blank pages and dropped: it skipped
+faint-ink letters. The BnF item-level inventories are saved in `bellievre_inventory.txt`; none flags cipher except
+Entragues.
+
+Yield: one new cipher item, and the known Entragues letters.
+
+* **fr. 15891** (Bellièvre's own minutes and letters 1578-85, Low Countries, Guyenne, Navarre): no cipher. Minutes
+  are written in clear; the only figures are article numbers and sums.
+* **fr. 15900 (1)** (letters from sovereigns and agents 1596-1605: Clement VIII, cardinals, Tuscany, Malta, Spain,
+  England, German princes, Netherlands, Swiss cantons): no cipher.
+* **fr. 15906 (1)** (letters to Bellièvre 1581): no cipher. The Henri III / Catherine / Anjou letters were opened at
+  800 px; at that size one page of an opening is ~300 px wide, so a block of signs shows but a single cipher word
+  inside a line may not. Pages too faint to read at 800 px are listed in `screen_15906_d.txt`.
+* **fr. 15906 (2)**: ff. 759-761 and 780-782, d'Entragues to Saint-Aignan with the "Copie d'une cifra trouvée" key on
+  f. 761 and the summary slip on f. 782, all glossed: George Lasry's item (`targets/entragues1581/`), excluded.
+  **ff. 520r-522v: Henri III to Bellièvre and Villeroy, Ollainville, Friday 21 Oct 1580**, countersigned Pinart, the
+  new item (below).
+
+### Henri III to Bellièvre and Villeroy, 21 Oct 1580 (fr. 15906 (2), ff. 520r-522v)
+
+Canvases 92-95 of btv1b9064322t; full-resolution openings saved as `bellievre_hi/a_c092.jpg`-`a_c095.jpg` (9,700 x
+6,460 px). The letter, written while the two were going to assist Anjou in the peace negotiation with Navarre (the
+peace of Fleix, 26 Nov 1580), has four cipher passages in one system of invented signs (Greek-like and barred
+letters, phi/psi/sigma shapes, '#'-like crossed strokes, a few figures such as 14 and 18):
+
+| place | extent | decipherment |
+|---|---|---|
+| f. 521r, lines 2-8 | 7 lines, ~330 signs | complete, in the left margin ("que je ne pesseray pas que le sr de la Rochepot se puisse loger avec ses troupes du costé de Cambray ... bien pourrez dire") |
+| f. 521v, upper | 2 lines | in the margin ("je croy qu'ilz n'y ont ny l'un ny l'autre aucune volunté", on Anjou's marriage) |
+| f. 521v, middle | 13 lines | in the margin (Portugal, Labadie, Elizabeth's forces, Strozzi, the English ambassador's audience), breaking off at "pour elle et pour moy d'aultant" |
+| f. 522v, postscript after the signature | **17 lines, ~750 signs** | **none on the leaf** |
+
+The postscript ends in clear "... a Dolinville ..." and is signed Henry / Pinart. The glossed blocks, about 900
+letters of known plaintext, give the key for it. The sibling Godefroy 260 f. 52 (Henri III to the same two,
+Ollainville, 30 Oct 1580, partly ciphered, catalogue #1185, not online) is probably in the same key.
+
+Edition. *Lettres de Henri III*, t. V (ed. J. Boucher, Société de l'histoire de France, 2000), **no. 4006, p. 110**,
+prints this letter as an analysis with quotations, source "ms. fr. 15906/2, fol. 520-523: orig.", and a note that
+the original has "passages chiffrés. Le résultat du déchiffrement y a été porté en regard". Read through Google Books
+snippets only (gdata feed `gb_feed.py` and the new Books interface in Chrome; books.google.fr shows a CAPTCHA). The
+analysis quotes the marginal decipherments, then a phrase not in any margin seen ("... guerre sur les bras a quoy je
+veulx bien penser avant que d'entrer en aucune chose qui me puisse nuire"), and ends: "Enfin le maréchal de Biron veut
+se mêler du rétablissement de la paix en France. Des consignes sont données ici à Villeroy pour qu'il écrive au
+maréchal. (Pinart.)" The edition says "post-scriptum" where a letter has one (four hits in the volume) and does not say
+it for no. 4006, and the clear text of ff. 522r-v speaks of Biron only as sending news. So the last sentence may
+summarise the cipher postscript, which would mean its content was known to the editors.
+
+**Key test (5 Nov 2026), and the lead closed.** A substitution key was rebuilt from the glossed f. 521r block (the
+decipherer wrote "escripte" over its signs; the rest aligned to the margin) and the postscript read in part
+(`bellievre_hi/ps1580/report.md`, `key.json`, `ct_ps.txt`). The system is a homophonic letter substitution with word
+signs and number codes. The postscript tells of Marchaumont and Anjou's wish to send troops toward Cambrai and seize
+Le Catelet, the king's "je veulz y penser avant que d'entrer en aucune choze", and then the peace, with Villeroy to
+write to the man "que j'ay employé aulx aultres paix" (code 10) to learn whether he wants to take part or to
+obstruct. That is the end of the edition's analysis of no. 4006, quotation included, so the editors had the
+postscript deciphered: the item is closed as read (edition), lead in `candidates.json`. The partial key fits the
+sibling Godefroy 260 f. 52 (catalogue #1185), which the same volume prints as "31 octobre, Ollainville" (Portugal,
+don Antonio; "en partie chiffrée"); noted on #1185.
+
+Result of the sweep: no open cipher in fr. 15906, 15900 (1) or 15891. Still unswept: fr. 15900 (2) (no ark), and the
+other Bellièvre volumes fr. 15890, 15892-15905, 15907-15911 (fr. 15905 holds Catherine's 1580 letters to Bellièvre).
