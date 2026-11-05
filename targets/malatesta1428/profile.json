@@ -5,86 +5,96 @@
  "documents": [
   {
    "id": "R1854-P1",
-   "read": "not read",
+   "read": "read",
    "shelfmark": "Archivio di Stato di Mantova, Archivio Gonzaga (busta not given on DECODE), DECODE R1854 image 1",
    "date": "22 Apr 1428",
    "year": 1428,
    "country": "Mantua",
    "route": "Rome -> Mantua",
-   "language": "Latin (runs; possibly Italian)",
+   "language": "Latin",
    "pages": 1,
    "cleartext_in_document": "interspersed",
    "plaintext": {
     "location": [
      "none"
     ],
-    "source": "none",
+    "source": "No contemporary decipherment on the leaf; first reading by Mark Vladimir Prizmic with Claude, 5 Nov 2026 (doi 10.5281/zenodo.23969170).",
     "partial": false
    },
    "length": {
-    "tokens": 262,
-    "distinct": 29,
+    "tokens": 308,
+    "distinct": 33,
     "unit": "symbols",
     "measured": true,
-    "file": "ct_p1.txt"
+    "file": "transcription_tomokiyo_corrected.txt"
    },
    "transcription": {
-    "by": "llm from images",
-    "source": "DECODE images via saved session cookie",
+    "by": "published",
+    "source": "Satoshi Tomokiyo's 309-sign transcription of the DECODE image (DECODE1854_transcription.txt), with five corrections made on the image by Prizmic (4 Nov 2026); this project's own transcription (p1v2.txt, 262 signs) is superseded.",
+    "corrections": 5,
     "image_quality": "fair",
-    "notes": "First pass by the model, second pass sign by sign by a subagent (p1v2.txt): 262 signs in 3 runs."
+    "notes": "Our 262-sign transcription (p1v2.txt) left out the marks it took for word separators; the corrected transcription counts them as cipher letters (the double slash i, the three dots a). 308 signs: runs of 66, 82 and 160."
    }
   }
  ],
  "system": {
   "types": [
-   "unknown"
+   "homophonic"
   ],
-  "summary": "Three cipher runs of letter-like signs in a clear Latin letter; system not identified (not a simple or homophonic substitution in Latin or Italian).",
+  "summary": "Three runs of letter-like signs in a clear Latin letter: a homophonic substitution of Latin letters, with two null signs, no word division and no code groups. The marks first taken for separators are cipher letters.",
   "symbol_kind": "symbols",
   "distinct_symbols": 29,
   "diacritics": {
-   "used": "unknown"
+   "used": false
   },
   "homophones": {
-   "used": "unknown"
+   "used": true,
+   "max_per_vowel": 3,
+   "max_per_consonant": 2
   },
   "nomenclator": {
-   "present": "unknown"
+   "present": false
   },
   "nulls": {
-   "present": "unknown"
+   "present": true,
+   "count": 2
   },
-  "key_order": "unknown",
-  "word_division": "unknown",
-  "doubled_letters": "unknown",
-  "sibling_key": "None fits: the R1853 register's Malatesta keys (1406-19), R1855 (Este keys incl. Malatesta Novello 1441) and R1852 (Florence Dieci 1424-32) tried.",
-  "notes": "IC 0.056 with 29 sign types and about 44% vowel-like signs. Separators strewn between signs. Split 14 Oct 2026 from r1854."
+  "key_order": "random",
+  "word_division": "none",
+  "doubled_letters": "written once or twice, no special sign (cassandis with one s, delliberet with two l)",
+  "sibling_key": "None: the R1853 register's Malatesta keys (1406-19), R1855 (Este keys incl. Malatesta Novello 1441) and R1852 (Florence Dieci 1424-32) were tried and do not fit.",
+  "notes": "308 signs of 33 kinds (31 letter values, 2 nulls and 1 unread sign). Values: a 12 44 22, b x, c 48, d cc, e 9 ss 42, f 30, g 20, i 26 b3 46, l 8, m ss2, n 40, o V 45 50, p 52, q 28, r H 21, s 32, t I, u/v 10 24 33, x 49; nulls v and g; 23 unread (once). The earlier note 'IC 0.056 with 29 sign types' described our 262-sign transcription."
  },
  "conditions": {
   "prior_solution": {
-   "exists": "no",
-   "where": "nothing for image 1",
-   "found": "not found",
-   "used": false
+   "exists": "online",
+   "where": "Preprint by Mark Vladimir Prizmic, Zenodo doi 10.5281/zenodo.23969170 (posted 5 Nov 2026), from Satoshi Tomokiyo's 309-sign transcription of DECODE R1854 image 1; emailed to Tomokiyo and to us the same day, after our attempt closed on 14 Oct 2026. Key and corrected transcription received as attachments and applied here.",
+   "found": "during attempt",
+   "used": true
   },
   "inputs": [
    "images",
-   "cleartext context"
+   "transcription",
+   "cleartext context",
+   "published key",
+   "published reading"
   ],
-  "attack": "ciphertext-only",
-  "human_role": "Project-level: DECODE login cookie and /goal target setting. No target-specific intervention.",
+  "attack": "published key",
+  "human_role": "The owner forwarded the outside email of 5 Nov 2026 with its attachments and asked the model to review, verify and write it up. No cryptanalysis was done in that session; the earlier attempts (Sept-Oct 2026) are the solution steps before 5 Nov.",
   "tools": [
    "targets/r1854/solve.py, solve_syl.py (annealers on lang/ models)",
-   "synthetic controls (synth.txt, synth_noise.txt)"
+   "synthetic controls (synth.txt, synth_noise.txt)",
+   "targets/malatesta1428/dec.py (re-decode and shuffled-key control)",
+   "lang/ la and la-letters models"
   ],
   "models": [
    "claude-opus-5-5",
+   "claude-sonnet-5-5",
    "subagents for transcription passes"
   ],
-  "sessions": 2,
+  "sessions": 3,
   "first_date": "2026-09-22",
-  "last_date": "2026-10-14"
+  "last_date": "2026-11-05"
  },
  "solution": [
   {
@@ -211,31 +221,106 @@
    "kind": "verification",
    "what": "Split from the R1854 entry under the one-key rule (Lasry, 14 Oct 2026): the record's four letters use four ciphers; image 1 is this entry, not solved.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "reading",
+   "what": "Outside reading received by email (Mark Vladimir Prizmic, with Claude, from Satoshi Tomokiyo's 309-sign transcription and CTTS trial): all three runs Latin, homophonic substitution with two nulls (Tomokiyo's v and g), north-Italian x for s. Run 1: de suis gentibus armigeris cassandis vel quid aliud peragendum [one sign unread] delliberet; run 2: absque discrimine et multo dispendio provincie Moree, patrie siquidem fertilis et amene, rex effici; run 3: De eo autem regno magnificum comitem Riciardum bene informatum puto, quoniam ad illud cum serenissima sorore nostra domina vaxilissa tetendit, et iterum deinde etiam sui ocaxione redivit. Five corrections to Tomokiyo's transcription, which Tomokiyo accepted. His key table and transcription (the email attachment) are not yet checked here.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "key from source",
+   "what": "Received Prizmic's key (key.json: 31 sign values, nulls v and g, sign 23 unread) and the corrected transcription (308 signs) as email attachments; saved in the target folder with their source.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "verification",
+   "what": "Applied the key to the corrected transcription with dec.py: the three decoded runs agree letter for letter with the reading (66, 82 and 160 signs, 307 of 308 read, one unread). Control: under the Latin model 'la' the decode scores -5.25 per letter against -6.90 for the best of 300 keys with the letters shuffled among the sign classes (mean -7.88); lm.best_language names Latin (-2.18, ahead of every other language). The reading also fits the clear text round each run (run 2 follows 'me sciat quo modo valeat', run 3 leads into 'amplitudinem tantam vendicare ... sibi et natis'), and the first and last words of run 1 agree sign for sign with our own p1v2.txt. Not an independent decipherment: the key was built with the reading, and the control shuffles an already-fitted key.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "reading",
+   "what": "Built the decoded runs and the clear Latin of the letter into one text (texts/p1_decryption.md) and an English translation (texts/p1_en.md); the sentences hold, with doubts only in the clear transcription (prepositum(?), fratrem(?), sensu(?)) and the one unread sign.",
+   "result": "worked"
   }
  ],
  "outcome": {
-  "method": "not solved",
-  "method_basis": "Annealing under twelve hypotheses (Latin, Italian, other Romance and German models, costed nulls, vowel classes, reversals, digraph splits, syllable signs, separators as signs) gave no reading, while the same solver reads a synthetic text of this length with 12% noise; no register or sibling key fits.",
+  "method": "read after matching with key from external sources",
+  "method_basis": "Prizmic's key (built with Claude from Tomokiyo's transcription and a Latin model, then fitted by hand) was applied to the corrected transcription here: all 307 read signs decode to the reading, which scores -5.25 per letter in Latin against -6.90 for the best of 300 shuffled keys, and fits the clear text round each run.",
   "contribution": [
    "transcription",
    "sender or date identified"
   ],
-  "class": "not read",
-  "key": "none",
-  "fraction_read": 0,
+  "class": "read",
+  "key": "recovered",
+  "fraction_read": 0.997,
   "fraction_read_method": "measured",
-  "fraction_read_source": "p1v2.txt: 0 of 262 signs",
+  "fraction_read_source": "dec.py: 307 of 308 signs decoded; sign 23 (once) unread",
   "verification": [
-   "matched control"
+   "matched control",
+   "key confirms",
+   "historical consistency"
   ],
   "gaps": [
    {
-    "item": "262 signs in 3 runs",
-    "blocker": "no-key-material",
-    "detail": "not a simple or homophonic substitution in Latin or Italian; none of the register's Malatesta keys fits; the likely key material is Pandolfo's ciphered letter of 1 Mar 1438 with its contemporary translation (ASMn AG b. 1081 c. 159-160 and b. 840 c. 95, Falcioni 2015), whose ciphertext is not online and not printed"
+    "item": "sign 23, once, before 'delliberet'",
+    "blocker": "illegible",
+    "detail": "the sentence is complete without it, so it may be a null; one sign, no other occurrence to compare"
    }
   ],
-  "notes": "Split 14 Oct 2026 from the four-letter R1854 entry; catalogue entry 152.",
-  "credits": []
+  "notes": "Split 14 Oct 2026 from the four-letter R1854 entry; catalogue entry 152. Not solved here: the first reading is Prizmic's (5 Nov 2026). Open outside the cipher: Count Riciardo is not identified, and the clear text round runs 1 and 2 wants a better image than DECODE's.",
+  "credits": [
+   {
+    "who": "prizmic",
+    "role": "solution",
+    "note": "key and reading of runs 1-3 (with Claude), preprint doi 10.5281/zenodo.23969170, emailed 5 Nov 2026; verified here",
+    "date": "2026-11-05",
+    "source": "https://doi.org/10.5281/zenodo.23969170"
+   },
+   {
+    "who": "prizmic",
+    "role": "prior solution",
+    "note": "key and reading of runs 1-3 (with Claude), preprint doi 10.5281/zenodo.23969170, emailed 5 Nov 2026; verified here",
+    "date": "2026-11-05",
+    "source": "https://doi.org/10.5281/zenodo.23969170"
+   },
+   {
+    "who": "tomokiyo",
+    "role": "transcription",
+    "note": "309-sign transcription of DECODE R1854 image 1 and CTTS trial, the base of the reading; accepted Prizmic's five corrections 5 Nov 2026",
+    "date": "2026-11-05",
+    "source": "https://cryptiana.web.fc2.com/code/DECODE1854_transcription.txt"
+   }
+  ],
+  "codes_open": {
+   "open": 0,
+   "total": 0
+  },
+  "provenance": "contributed",
+  "texts": [
+   {
+    "doc": "R1854-P1",
+    "label": "ASMn, Archivio Gonzaga, Pandolfo Malatesta to Gianfrancesco Gonzaga, Rome, 22 Apr 1428 (DECODE R1854 image 1)",
+    "transcription": "transcription_tomokiyo_corrected.txt",
+    "decryption": "texts/p1_decryption.md",
+    "translation": "texts/p1_en.md",
+    "state": "read",
+    "language": "la",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Sonnet 5.5",
+     "date": "2026-11-05",
+     "note": "Read as sentences on 5 Nov 2026: the three runs build whole Latin clauses (de suis gentibus armigeris cassandis ..., rex effici, tetendit et iterum redivit) that agree grammatically with the clear text round them; one unread sign, no word is a hole. The clear text is this project's transcription, with its own doubts."
+    },
+    "summary": "Pandolfo Malatesta, archbishop of Patras, three days after the peace of Ferrara, asks his brother-in-law Gianfrancesco Gonzaga not to disband his men-at-arms until he has more news, and proposes that Gonzaga become king of the Morea, 'without risk and without great expense', citing Count Riciardo, who went there with their sister Cleofe, the Despot Theodore II's wife.",
+    "read_share": 0.997,
+    "note": "Cipher 307 of 308 signs; the clear Latin round the runs keeps the doubts of p1_clear.md.",
+    "reading": "texts/p1_reading.md"
+   }
+  ],
+  "key_file": "key.json"
  }
 }
