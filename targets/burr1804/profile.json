@@ -1,0 +1,236 @@
+{
+ "schema_version": 1,
+ "target": "burr1804",
+ "title": "Aaron Burr to Joseph Alston, New York, [c. 20 July] 1804: stroke-and-figure cipher on the clear page of GLC01523 (catalogue 2049)",
+ "documents": [
+  {
+   "id": "glc01523",
+   "read": "read",
+   "shelfmark": "Gilder Lehrman Collection, GLC01523 (clear page, lines 15-21)",
+   "date": "[c. 20 Jul 1804]",
+   "year": 1804,
+   "country": "United States",
+   "route": "New York -> South Carolina",
+   "language": "English",
+   "pages": 1,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the page; Gilder Lehrman calls the cipher undecoded; not in Davis 1837; Kline 1983 lists no July 1804 letter to Alston."
+   },
+   "length": {
+    "tokens": 132,
+    "distinct": 21,
+    "unit": "symbols",
+    "measured": true,
+    "file": "signs.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "Gilder Lehrman's Hamilton Education Program transcript (stroke signs written as Roman numerals) checked sign by sign against GLC01523_Page_3.png (1200x1400) in 2-3x crops",
+    "image_quality": "good",
+    "notes": "The image has two groups in line 19 (II X VII 2 1 VII | 4 1, 'murder be') that the Gilder Lehrman transcript drops. signs.txt is generated from transcription.txt (clear words and the struck word dropped)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Simple substitution, one sign per letter: figures 0-8 and 10 for a-l, hatched stroke groups numbered II-X for m-u, three odd signs for v, w, y; words divided, clear words between.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": 21,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false,
+   "count": 0
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "kept",
+  "doubled_letters": "written twice (little, IX IX)",
+  "sibling_key": "none",
+  "notes": "Key built in runs: a-f = 5 down to 0, g-i = 6-8, l = 10, m-u = Roman II-X in order. The two number-cipher sheets filed with the letter are a different cipher and date (burr1808)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Gilder Lehrman (catalogue, AMDigital, Hamilton Education Program) says undecoded; Davis 1837 does not print the letter; Kline 1983 table of contents lists no letter to Alston in July 1804 (vol. 2 annotation not read); not on cryptiana or DECODE.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "transcription",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project owner pasted the catalogue 2049 contributor task; no target-specific intervention.",
+  "tools": [
+   "PIL crops",
+   "Project Gutenberg text of Davis 1837",
+   "Internet Archive search-inside (built-in browser)"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-05",
+  "last_date": "2026-11-05"
+ },
+ "solution": [
+  {
+   "date": "2026-11-05",
+   "kind": "access",
+   "what": "Hamilton Education Program page: three page PNGs and Gilder Lehrman's transcript PDF.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "literature search",
+   "what": "Gilder Lehrman says undecoded; Davis 1837 prints Burr to Alston 13, 18, 29 July 1804 but not this letter; the 18 July letter names the coroner's jury's object, 'an inquest of murder'.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "hypothesis",
+   "what": "Simple substitution with word division (21 distinct signs in 132, clear words between).",
+   "technique": [
+    "frequency analysis"
+   ],
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "crib",
+   "what": "Pattern words in the sign labels: IX 7 1 = the, IX 7 5 III = than, lambda 7 5 IX = what, II 5 IX 1 VII 8 5 10 VIII = materials, 8 III IX 7 8 VIII VIII IX 5 IX 1 = in this state; every word then reads.",
+   "technique": [
+    "repeat/pattern analysis",
+    "contextual inference",
+    "manual reconstruction"
+   ],
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "transcription",
+   "what": "Every sign checked against 2-3x crops of the page; two groups the Gilder Lehrman transcript drops restored in line 19 ('murder be').",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "reading",
+   "what": "'If the inquest of murder be found, what would you advise - To stand - to go to Europe or what?'; one word one sign off ('pleant' for pliant?).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "verification",
+   "what": "Key structure checked: a-f count down 5-0, g-i up 6-8, m-u Roman II-X; consistent with every occurrence. Content matches Davis's 18 July letter and the inquest timeline.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "literature search",
+   "what": "Kline 1983 table of contents (archive.org search-inside): no letter to Alston in July 1804; cryptiana and DECODE: nothing.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 132 tokens, 21 types, en-modern order 4: reading -1.897 per letter; random keys -7.513 (z 8.0); key annealed onto shuffled ciphertext best -3.598 (mean -4.058, z 8.7); annealer on the real text -3.741. Verdict: pass.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-05",
+   "model": "en-modern",
+   "file": "validation.tsv",
+   "tokens": 132,
+   "types": 21,
+   "tokens_per_type": 6.29,
+   "score": -1.897,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -7.513,
+     "sd": 0.704,
+     "max": -5.694,
+     "z": 8.0,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -4.058,
+     "sd": 0.249,
+     "max": -3.598,
+     "z": 8.7,
+     "p": 0.1429
+    }
+   },
+   "power": -3.741,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -1.897; polyphony 0.0; 0 unread tokens left out; annealer on the real text from random keys reached -3.741"
+  },
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "The substitution key was rebuilt from pattern words in the cipher itself; no decipherment, key or plaintext of the passage exists on the page or in print as far as found.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction"
+  ],
+  "first_break": true,
+  "class": "read",
+  "key": "recovered",
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "signs.txt and decryption.txt, cipher signs (132), struck word not counted",
+  "codes_open": {
+   "open": 0,
+   "total": 0,
+   "tokens_open": 0
+  },
+  "grades": "unknown",
+  "verification": [
+   "key confirms",
+   "historical consistency",
+   "statistical test"
+  ],
+  "gaps": [],
+  "texts": [
+   {
+    "doc": "glc01523",
+    "label": "GLC01523, Burr to Joseph Alston, New York, [c. 20 July 1804], clear page lines 15-21",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "language": "en",
+    "state": "read",
+    "read_share": 1.0,
+    "summary": "Nine days after the duel with Hamilton, with a coroner's jury sitting to find 'an inquest of murder', Burr tells his son-in-law in cipher that 'the little band', about 20,000 in New York, will stand firm, and asks: if the inquest of murder is found, should he stand trial, go to Europe, or what?",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-11-05",
+     "note": "Every sign reads as sentences; one word one sign off ('pleant' for pliant?)."
+    },
+    "reading": "reading.md"
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "Catalogue 2049's 'pp. 2-3 in cipher' are two sheets of a 1808 Vigenere, written up separately as burr1808."
+ }
+}

@@ -1,0 +1,37 @@
+# Key of Burr's number cipher, January-February 1808 (recovered here from the ciphertext, 5 Nov 2026)
+# Vigenère over the alphabet numbered a=1 ... z=26, period 6, the key running through the letters (word spaces do
+# not advance it), restarting at the first place at the head of each section.
+#   cipher = plain + shift  (mod 26, written 1..26)
+#   plain  = cipher - shift
+# key place   1   2   3   4   5   6
+# shift       6  18  22   7  24   8
+# as letter   G   S   W   H   Y   I   (a=0)
+#
+# Table: plain letter -> cipher number at each key place
+plain	p1	p2	p3	p4	p5	p6
+a	7	19	23	8	25	9
+b	8	20	24	9	26	10
+c	9	21	25	10	1	11
+d	10	22	26	11	2	12
+e	11	23	1	12	3	13
+f	12	24	2	13	4	14
+g	13	25	3	14	5	15
+h	14	26	4	15	6	16
+i	15	1	5	16	7	17
+j	16	2	6	17	8	18
+k	17	3	7	18	9	19
+l	18	4	8	19	10	20
+m	19	5	9	20	11	21
+n	20	6	10	21	12	22
+o	21	7	11	22	13	23
+p	22	8	12	23	14	24
+q	23	9	13	24	15	25
+r	24	10	14	25	16	26
+s	25	11	15	26	17	1
+t	26	12	16	1	18	2
+u	1	13	17	2	19	3
+v	2	14	18	3	20	4
+w	3	15	19	4	21	5
+x	4	16	20	5	22	6
+y	5	17	21	6	23	7
+z	6	18	22	7	24	8

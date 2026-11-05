@@ -1,0 +1,401 @@
+{
+ "schema_version": 1,
+ "target": "burr1808",
+ "title": "Aaron Burr to Theodosia Burr Alston, Baltimore, 31 January, 10 and 18 February [1808]: period-6 Vigenere sheets filed with GLC01523",
+ "documents": [
+  {
+   "id": "31jan1808",
+   "read": "read",
+   "shelfmark": "Gilder Lehrman Collection, GLC01523 (sheet pencilled 1523A, sections B and C)",
+   "date": "31 Jan [1808] (copy sent with the 10 Feb letter)",
+   "year": 1808,
+   "country": "United States",
+   "route": "Baltimore -> The Oaks, S.C.",
+   "places": {
+    "from": "Baltimore",
+    "to": "The Oaks"
+   },
+   "language": "English",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the sheets; Gilder Lehrman calls them undecoded; nothing in Davis 1837 or in Kline 1983's table of contents."
+   },
+   "length": {
+    "tokens": 488,
+    "distinct": 26,
+    "unit": "symbols",
+    "measured": true,
+    "file": "numbers_31jan1808.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "GLC01523_Page_1.png (1160x1400, Hamilton Education Program), read from 2.4x line crops",
+    "image_quality": "fair",
+    "notes": "Two numbers torn at the right edge (2[5], 2[4]) completed from the key. numbers_*.txt are generated from transcription.txt."
+   }
+  },
+  {
+   "id": "10feb1808",
+   "read": "read",
+   "shelfmark": "Gilder Lehrman Collection, GLC01523 (sheet pencilled 1523A, section A)",
+   "date": "10 Feb [1808]",
+   "year": 1808,
+   "country": "United States",
+   "route": "Baltimore -> The Oaks, S.C.",
+   "places": {
+    "from": "Baltimore",
+    "to": "The Oaks"
+   },
+   "language": "English",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "As for 31 Jan."
+   },
+   "length": {
+    "tokens": 341,
+    "distinct": 26,
+    "unit": "symbols",
+    "measured": true,
+    "file": "numbers_10feb1808.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "GLC01523_Page_1.png, read from 2.4x line crops",
+    "image_quality": "fair",
+    "notes": "Superscript figures with a caret are insertions; three without a caret (A.06, A.07) are not part of the cipher."
+   }
+  },
+  {
+   "id": "18feb1808",
+   "read": "read",
+   "shelfmark": "Gilder Lehrman Collection, GLC01523 (sheet docketed 'Balt.' and '1808')",
+   "date": "18 Feb [1808]",
+   "year": 1808,
+   "country": "United States",
+   "route": "Baltimore -> The Oaks, S.C.",
+   "places": {
+    "from": "Baltimore",
+    "to": "The Oaks"
+   },
+   "language": "English",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "As for 31 Jan."
+   },
+   "length": {
+    "tokens": 144,
+    "distinct": 26,
+    "unit": "symbols",
+    "measured": true,
+    "file": "numbers_18feb1808.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "GLC01523_Page_2.png (1400x1138), read from 2.4x line crops",
+    "image_quality": "fair",
+    "notes": "One four-number group rubbed on a fold (2?,11?,1,23); one group struck through by Burr and rewritten."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "polyalphabetic"
+  ],
+  "summary": "Vigenere over the alphabet numbered a=1 ... z=26, period 6 (shifts 6 18 22 7 24 8), key running through the letters and restarting at each section; words divided.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-2",
+   "separation": "commas"
+  },
+  "distinct_symbols": 26,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false,
+   "count": 0
+  },
+  "key_order": "not applicable",
+  "word_division": "kept",
+  "doubled_letters": "enciphered like other letters",
+  "sibling_key": "none",
+  "notes": "Numbers of a word joined by commas or dots, words by spaces. No keyword behind the shifts found (a=0 GSWHYI). The July 1804 letter on the same file uses a simple substitution (burr1804)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Gilder Lehrman (catalogue, AMDigital, Hamilton Education Program) treats the sheets as the 1804 letter's pages and says undecoded; Davis 1837 has no letters Oct 1807 - June 1808; Kline 1983's table of contents has no Jan-Feb 1808 letter (the vol. 2 editorial note 'The Road to Exile' was not read); not on cryptiana or DECODE.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project owner pasted the catalogue 2049 contributor task; no target-specific intervention.",
+  "tools": [
+   "PIL crops",
+   "decrypt.py",
+   "resync.py (Viterbi, lang en-modern)",
+   "control.py"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-05",
+  "last_date": "2026-11-05"
+ },
+ "solution": [
+  {
+   "date": "2026-11-05",
+   "kind": "access",
+   "what": "Hamilton Education Program page: page PNGs of GLC01523.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "transcription",
+   "what": "Section A of img1 transcribed (80 words, 341 numbers 1-26).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "statistics",
+   "what": "Flat frequencies, all 26 values; one 6-number word three times running; IoC 0.0435 overall, 0.0618 at period 6.",
+   "technique": [
+    "frequency analysis",
+    "repeat/pattern analysis",
+    "statistical test"
+   ],
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "hypothesis",
+   "what": "Monoalphabetic ruled out (doubled numbers that cannot be double letters, impossible two-letter words).",
+   "technique": [
+    "repeat/pattern analysis"
+   ],
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "solver",
+   "what": "Column chi-square against English letter frequencies at periods 3, 6, 12; period 6 gives shifts 6 18 22 7 24 8 and section A reads; period 3 fails.",
+   "technique": [
+    "frequency analysis",
+    "exhaustive search"
+   ],
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "transcription",
+   "what": "Sections B, C of img1 and img2 transcribed; caretless superscripts left out after they broke the decode.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "solver",
+   "what": "resync.py: Viterbi over words scored with the en-modern model finds two key-phase slips: Burr's omitted s in 'best', and a rubbed group in img2.",
+   "technique": [
+    "beam/DP decoding",
+    "language-model scoring"
+   ],
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "control",
+   "what": "Davis's text of Burr's 18 July 1804 letter, 341 letters, enciphered with 20 random 6-place keys; the same solver recovers the key 20/20.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "reading",
+   "what": "Every section reads with the same key; torn edge numbers completed from the key; 973 numbers, 969 give sense.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "verification",
+   "what": "Docket 'Balt.' '1808' and content (Baltimore incog., long voyage, The Oaks, 'mari') date the sheets to Jan-Feb 1808 and make Theodosia the recipient, not part of the July 1804 letter.",
+   "technique": [
+    "contextual inference"
+   ],
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "literature search",
+   "what": "Davis 1837 (Gutenberg) grepped; Kline 1983 table of contents via archive.org search-inside; cryptiana; DECODE harvest: no prior reading.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "hypothesis",
+   "what": "Keyword behind the shifts: all 26 alphabet offsets and the reversed form tried; none spells a word.",
+   "technique": [
+    "exhaustive search"
+   ],
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "solver",
+   "what": "Rubbed img2 group tried at all six key places with 3 and 4 numbers: no word fits before 'hourly'.",
+   "technique": [
+    "exhaustive search"
+   ],
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 969 tokens, 136 types, en-modern order 4: reading -2.211 per letter; random keys -7.468 (z 21.4); key annealed onto shuffled ciphertext best -4.054 (mean -4.182, z 25.6); annealer on the real text -3.573. Verdict: pass.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-05",
+   "model": "en-modern",
+   "file": "validation.tsv",
+   "tokens": 969,
+   "types": 136,
+   "tokens_per_type": 7.12,
+   "score": -2.211,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -7.468,
+     "sd": 0.246,
+     "max": -6.864,
+     "z": 21.4,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -4.182,
+     "sd": 0.077,
+     "max": -4.054,
+     "z": 25.6,
+     "p": 0.1429
+    }
+   },
+   "power": -3.573,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.211; polyphony 0.0; 4 unread tokens left out; annealer on the real text from random keys reached -3.573"
+  },
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "The period and the six shifts were found by the index of coincidence and column frequency fitting on the cipher alone; nothing on the sheets or in print gave plaintext or a key.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "sender or date identified",
+   "catalogue correction"
+  ],
+  "first_break": true,
+  "class": "read",
+  "key": "recovered",
+  "fraction_read": 0.996,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading_numbers.txt (decrypt.py --measure), cipher numbers: 969 of 973",
+  "codes_open": {
+   "open": 0,
+   "total": 0,
+   "tokens_open": 0
+  },
+  "grades": "unknown",
+  "verification": [
+   "matched control",
+   "key confirms",
+   "historical consistency",
+   "statistical test"
+  ],
+  "gaps": [
+   {
+    "item": "img2.02 group {2?,11?,1,23} before 'hourly'",
+    "blocker": "illegible"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "31jan1808",
+    "label": "Copy of the letter of 31 January [1808] (img1, sections B and C)",
+    "transcription": "transcription.txt",
+    "decryption": "reading_numbers.txt",
+    "reading": "reading.md",
+    "language": "en",
+    "state": "read",
+    "read_share": 1.0,
+    "summary": "Burr, hiding at Baltimore, tells Theodosia he still holds to his plans, is distressed that waiting to see him keeps her at The Oaks at risk to her health, and will try to reach her or send an express; no one is to know he means to visit South Carolina, and all but her husband are to think he is in Philadelphia.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-11-05",
+     "note": "Reads as sentences; 'be[s]t' Burr's omission, two torn numbers completed from the key."
+    }
+   },
+   {
+    "doc": "10feb1808",
+    "label": "Baltimore, 10 February [1808] (img1, section A)",
+    "transcription": "transcription.txt",
+    "decryption": "reading_numbers.txt",
+    "reading": "reading.md",
+    "language": "en",
+    "state": "read",
+    "read_share": 1.0,
+    "summary": "A cover note sending the copy of 31 January by the schooner Wolf: still at Baltimore incognito, business detains him ten days more, the promise in his last letter was rashly made, affairs begin to look up.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-11-05",
+     "note": "Reads as sentences; 'in' read against one number (15,16 gives 'ix')."
+    }
+   },
+   {
+    "doc": "18feb1808",
+    "label": "Baltimore, 18 February [1808] (img2)",
+    "transcription": "transcription.txt",
+    "decryption": "reading_numbers.txt",
+    "reading": "reading.md",
+    "language": "en",
+    "state": "read",
+    "read_share": 0.972,
+    "summary": "Nothing new: the same hopes and intentions; he waits hourly for money for 'the long voyage' (he sailed for England in June 1808), and nothing else keeps him.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-11-05",
+     "note": "Reads as sentences with one rubbed group open; 'have' and 'detains' each read against one number."
+    }
+   }
+  ],
+  "key_file": "key.txt",
+  "notes": "Filed with the July 1804 letter GLC01523 as its 'pp. 2-3 in cipher' (catalogue 2049); a different cipher and date."
+ }
+}
