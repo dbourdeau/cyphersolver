@@ -159,11 +159,14 @@ So Crawford in 1813 and Everett in 1825 used this code (Weber's "Monroe Cipher",
 he supplied that the table lacked are added as overrides: 126 convey (grade I, slot and sense) and 1323 been (grade M,
 from the 1813 interlinear decipherments). The values he uses that disagree with the table, or that only one later
 writer attests, are kept apart in `overlay_dudout.tsv` and are not in `code_table.tsv`: the date digits of Crawford's
-heading (932 = 1, 939 = 8, 954 = 3), 1264 as a full stop, 580 was, and Everett's 557 thro. WAINUT's readings
+heading (952 = 1, 959 = 8, 954 = 3), 1264 as a full stop, and Everett's 557 thro. (Corrected 5 Nov 2026, issue #203: the heading
+groups are 952 959 952 954, not 932 939 932 954, and the key sheet M97 frame 1057 prints 951-960 = 0-9; 580 was is withdrawn: the groups
+under "was" are read as 500, the least certain of the corrections, and the groups read as 402, 901 and 1106 are 482, 981 and 1186,
+which the table already has.) WAINUT's readings
 (crawford1813, ellis1839) reached 1264 = full stop and 1323 = been independently; their other proposals are in the
 "Proposed table changes" sections of crawford1813 and everett1825, still not applied. The digits are sound for
-Crawford: the legation register (frame 0005, checked here) dates the letter 15 Aug 1813, and "932 939 932 954" can
-only be 1813. Whether 932 and 939 also meant force and ow for Adams, or the 1813 copy differs, is open.
+Crawford: the legation register (frame 0005, checked here) dates the letter 15 Aug 1813, and "952 959 952 954" can
+only be 1813 (the groups 932 939 932 were a misreading of 952 959 952).
 
 ## Remaining gaps
 

@@ -5,6 +5,18 @@ Status: read in part (Brice Dudout; recounted 5 Nov 2026 under the strict 95% ru
 Made on 27 Oct 2026 independently of WAINUT's reading in this folder. Write-up:
 https://bdudout.github.io/europe-chiffree/en/documents.html#crawford-1813
 
+## Correction, 5 Nov 2026 (issue #203, Andrew Beling)
+
+The date groups are **952 959 952 954**, not 932 939 932 954: on M34 roll 17 frame 0027 the second digit of the first three
+is the 5 of 954, and the key sheet (M97 roll 13 frame 1057) prints 951-960 = 0-9, so 952 = 1, 959 = 8. The overlay entries
+932 = 1 and 939 = 8 are replaced by 952 = 1 and 959 = 8 (grade E, the key sheet). Four values were 8/0 slips of table
+values: on Despatch No. 4 (frame 0031) the groups under "will", "unless" and "for" are 1186, 482 and 981, so 1106, 402 and
+901 are removed and the transcription reads 1186 (2x), 482 (1x) and 981? (3x, marked doubtful); 580 = was is removed and
+the five groups read 500? (marked doubtful: on frame 0032 the middle digit is a tick-topped o that cannot be told from 0
+at the size viewed). The 1,205 / 87.9% / 97.0% counts above predate this correction and were not recomputed; each
+changed group already had a word, so the readings and the unread count are unchanged. Not checked group by group: the 981?
+and 500? instances on frames 0028-0029.
+
 ## Same letter, but which date?
 
 WAINUT's notes date the letter on frames 0027-0029 to 3 Sept 1813 (No. 1, private). We read it as the letter of

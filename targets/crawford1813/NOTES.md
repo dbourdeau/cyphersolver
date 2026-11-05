@@ -130,8 +130,13 @@ Queued as a `jqa` follow-up for the maintainer (not applied here). The most impo
   is the letter Monroe calls "of the 4th of Sepr. in cypher" (section 6), so the decipherment made in 1813 that the
   PJM note points to is No. 4's, not this letter's. The PJM note on the coded letters of 15 Aug and 3 Sept does
   cover this one.
-- The heading groups 1109 336 868 932 939 932 954 are Paris [15] Au[gust] 1813: 932 939 932 954 have the pattern of
-  1813 (Brice Dudout's reading). Section 4's "Paris, ... 3rd ..." took 954 at its table value "3rd (23rd)" (grade M).
+- The heading groups are 1109 336 868 952 959 952 954 = Paris [15] Au[gust] 1813. Both transcriptions here read the
+  second group of digits as 932 939 932 (the pattern of 1813 was Brice Dudout's reading); on frame 0027 they are 952 959
+  952 954, and the key sheet M97 frame 1057 prints 951-960 = 0-9 (A. Beling, issue #203, checked 5 Nov 2026).
+  `crawford1813_transcription.txt` (WAINUT's) was not changed: it still has 932 939 932, and 402 in 27R19 (482 on the
+  frame) and 1106 in eight lines (28L04, 28L05, 28L17, 28L25, 28R04, 28R06, 28R09, 28R19; 1186 = will in the table, probably
+  the same 8/0 slip) were not re-read there. Dudout's corrected
+  transcription is `dudout/transcription.txt`. Section 4's "Paris, ... 3rd ..." took 954 at its table value "3rd (23rd)" (grade M).
   The ninth group is transcribed 1303 (back) here and 1503 (able, giving Hon-orable) by Dudout; not settled on the
   frame at the size viewed.
 
