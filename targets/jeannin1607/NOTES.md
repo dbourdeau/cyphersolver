@@ -94,3 +94,9 @@ deciphered passages 0.968. His status: 2/15 pages transcribed; 2 more in part; 2
 - [x] print: no edition of the deciphered passages known to this project (24 Oct 2026)
 - [n/a] key-rebuild: the key reconstruction is George Lasry's, not this project's work
 - [x] retry: his full Readable text (24 Oct 2026) read and measured; holes left as he marks them
+
+## Passage verification and key additions
+
+A sign-by-sign collation of selected passages adds six corroborated values to Lasry’s chart. On f. 87r the cipher and contemporary gloss preserve a negative omitted by the 1656, 1819 and 1875 editions. On f. 116v the cipher gives *leurs navires* where the checked editions print *les navires*. The proposed value of barred 90 remains provisional. The sampled wording on f. 113r matches the 1875 text. Contemporary glosses are also visible beyond the leaves identified in the original report.
+
+See the [contribution note](CONTRIBUTION_NOTE.md), [cipher transcription](TRANSCRIPTION.txt), [French readings, alignments and English translations](PLAINTEXT.md), [key additions](key_additions.md), [source locations](SOURCES.md) and [Python verifier](verify.py). This evidence covers the listed passages and comparisons. The original report’s document-level coverage figures still refer to Lasry’s work.
