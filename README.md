@@ -34,10 +34,10 @@ are being written up with George Lasry as a paper on how LLMs perform against hi
 | Outcome | Rows | Complete |
 |---|---|---|
 | [Key recovered from ciphertext-only](#key-recovered-from-ciphertext-only) | 83 | 36 |
-| [Key recovered based on plaintext from external sources](#key-recovered-based-on-plaintext-from-external-sources) | 21 | 12 |
+| [Key recovered based on plaintext from external sources](#key-recovered-based-on-plaintext-from-external-sources) | 21 | 10 |
 | [Key recovered based on adjacent plaintext](#key-recovered-based-on-adjacent-plaintext) | 93 | 41 |
 | [Read after matching with key from external sources](#read-after-matching-with-key-from-external-sources) | 36 | 11 |
-| [Read with known key](#read-with-known-key) | 111 | 59 |
+| [Read with known key](#read-with-known-key) | 111 | 58 |
 | [Read from existing decipherment](#read-from-existing-decipherment) | 101 | 79 |
 | [Not solved](#not-solved) | 97 | &mdash; |
 | [Not applicable](#not-applicable) | 22 | &mdash; |
