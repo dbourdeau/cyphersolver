@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Siege of Dole (1636) &mdash; Key from adjacent plaintext</title>
+<meta name="description" content="Letters from besieged Dole to the relief army of the Marquis of Conflans, June&ndash;July 1636, in a cipher of one number per letter set between clear words. Brice Dudout recovered the key from a period marginal decipherment on one folio, tested it on a held-out block of the same folio, and read the letters that carry no gloss.">
+<link rel="stylesheet" href="style.css?v=20261030a">
+<meta name="date" content="2026-11-04">
+<meta name="last-modified" content="2026-11-04">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body id="top">
+<header class="nav"><div class="in">
+  <a class="brand" href="index.html"><span class="glyph">972</span><span>Cyphersolver</span></a>
+  <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
+  <nav id="sitemenu" class="links" aria-label="Site">
+    <details class="menu"><summary class="active">Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel wp"><div class="grp latest"><h4>Latest</h4><ul><li><a href="desnoyers1659.html"><i class="dot solved" aria-hidden="true"></i><b>Des Noyers to Boulliau 1659</b><span class="yr">1659</span><span class="m">existing decipherment</span></a></li><li><a href="cardona1517.html"><i class="dot stuck" aria-hidden="true"></i><b>Cardona 1517&ndash;20</b><span class="yr">1517&ndash;1520</span><span class="m">key recovered from ciphertext-only &middot; text not read</span></a></li><li><a href="geleen1633.html"><i class="dot partial" aria-hidden="true"></i><b>Electors to Geleen 1633</b><span class="yr">1633</span><span class="m">ciphertext-only break &middot; partial</span></a></li><li><a href="dole1636.html" aria-current="page"><i class="dot solved" aria-hidden="true"></i><b>Siege of Dole 1636</b><span class="yr">1636</span><span class="m">key from adjacent plaintext</span></a></li><li><a href="deboli1788.html"><i class="dot partial" aria-hidden="true"></i><b>Deboli to Stanis&#322;aw August 1788</b><span class="yr">1788</span><span class="m">key from adjacent plaintext &middot; partial</span></a></li><li><a href="buda1490.html"><i class="dot partial" aria-hidden="true"></i><b>Maffeo to Bak&oacute;cz 1490</b><span class="yr">1490</span><span class="m">key from external plaintext &middot; partial</span></a></li></ul></div><div class="grp outc"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=ct"><i class="dot solved" aria-hidden="true"></i><b>Ciphertext-only break</b><b class="sh">Ciphertext-only</b><span class="n">82</span></a></li><li><a href="writeups.html#kind=extpt"><i class="dot solved" aria-hidden="true"></i><b>Key from external plaintext</b><b class="sh">Ext. plaintext</b><span class="n">19</span></a></li><li><a href="writeups.html#kind=adjpt"><i class="dot solved" aria-hidden="true"></i><b>Key from adjacent plaintext</b><b class="sh">Adj. plaintext</b><span class="n">92</span></a></li><li><a href="writeups.html#kind=extkey"><i class="dot solved" aria-hidden="true"></i><b>External key matched</b><b class="sh">External key</b><span class="n">33</span></a></li><li><a href="writeups.html#kind=known"><i class="dot solved" aria-hidden="true"></i><b>Known key applied</b><b class="sh">Known key</b><span class="n">107</span></a></li><li><a href="writeups.html#kind=deciph"><i class="dot solved" aria-hidden="true"></i><b>Existing decipherment</b><b class="sh">Existing reading</b><span class="n">97</span></a></li><li><a href="writeups.html#kind=notsolved"><i class="dot stuck" aria-hidden="true"></i><b>Not solved</b><b class="sh">Not solved</b><span class="n">76</span></a></li><li><a href="writeups.html#kind=na"><i class="dot found" aria-hidden="true"></i><b>Not applicable</b><b class="sh">Not applicable</b><span class="n">18</span></a></li><li><a href="writeups.html#kind=other"><i class="dot todo" aria-hidden="true"></i><b>Not yet classified</b><b class="sh">Unclassified</b><span class="n">1</span></a></li><li><a href="writeups.html#kind=survey"><i class="dot todo" aria-hidden="true"></i><b>Surveys</b><b class="sh">Surveys</b><span class="n">2</span></a></li></ul></div><div class="foot"><a class="all" href="writeups.html">All 527 write-ups, with filters &rarr;</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+    <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="famous.html"><b>The famous ones</b><span class="d">Why Voynich, Kryptos, Beale and Dorabella resist</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key read which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
+    <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
+    <a class="navcat" href="further.html">Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>
+    <a class="navcat" href="archives.html">To the archive<span class="sticker arc" aria-hidden="true"><span><b>Go<br>Look!</b></span></span></a>
+    <a href="contributors.html">Contributors</a>
+    <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
+    <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
+  </nav>
+</div></header>
+<div class="search" id="search" hidden>
+  <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
+    <form class="sform" role="search" onsubmit="return false">
+      <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input type="search" id="sq" placeholder="Search names, places, shelfmarks, words of the cipher&hellip;" autocomplete="off" spellcheck="false" aria-label="Search" aria-controls="sres">
+      <button type="button" class="sclose" aria-label="Close search">Esc</button>
+    </form>
+    <div class="sres" id="sres" role="listbox" aria-label="Results"></div>
+    <div class="shint"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> move</span><span><kbd>&crarr;</kbd> open</span><span><kbd>Esc</kbd> close</span><span class="sn" id="sn"></span></div>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="cipherstrip" translate="no">11.25.1.11.44.40.42.5.40.42 &hellip;<br>le plus tost &hellip; que vous pourez venir sera le meilleur</div>
+  <p class="kicker">Dole &rarr; the relief army &middot; one number per letter, set between points &middot; June&ndash;July 1636 &middot; key from adjacent plaintext</p>
+  <h1>The siege of Dole, 1636: the &ldquo;points&rdquo; cipher</h1>
+<div class="parties"><figure class="party sender"><img src="portrait_antoine-brun.jpg" alt="Antoine Brun" title="Antoine Brun: Portrait of Antoine Brun (1600-1654). Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Antoine Brun</figcaption></figure></div><!-- /parties -->
+  <p class="sub">Letters smuggled out of Dole while Cond&eacute; besieged it, in a cipher the Parlement had already warned was broken, read with a key taken from a decipherment written in the margin at the time.</p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-11-04">4 November 2026</time></p>
+<p class="outcome">Method: <a href="glossary.html#adjpt">key recovered based on adjacent plaintext</a> &middot; Extent: complete</p><!-- /outcome -->
+<p class="credits">Contributed by <a href="contributors.html#dudout">Brice Dudout</a> (solution) &middot; Also credited &middot; <a href="contributors.html#contemporary">Contemporary key or decipherment</a> (earlier solution)</p><!-- /credits -->
+<div class="seal solved" aria-hidden="true"><span>adjacent text</span></div>
+</section>
+
+<main>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letters">The letters</a><a href="#the-key">The key and its test</a><a href="#the-reading">The reading</a><a href="#uncertain">What remains uncertain</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
+<div class="callout glance">
+<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Key from adjacent plaintext &middot; complete</span></p>
+<dl>
+  <dt>The letters</dt><dd>Four letters from Dole, besieged by the Prince of Cond&eacute; from 27 May to 15 August 1636, to the Marquis of Conflans and Jean Girardot de Beauchemin, who were raising a relief army: the Parlement and the Archbishop (7 June and 22 July), the commis au gouvernement (25 June) and the procureur g&eacute;n&eacute;ral Antoine Brun ([1 July]).</dd>
+  <dt>Where</dt><dd>Besan&ccedil;on, Biblioth&egrave;que municipale, Ms 1594 (Ms 1591&ndash;1595 vol. IV, papers of Jean Girardot de Nozeroy), fols. 127, 181, 183, 191 and 200; clear copy fol. 182. Not on DECODE and not in the project&rsquo;s catalogue.</dd>
+  <dt>The cipher</dt><dd>A simple substitution of one number (1&ndash;54) per letter, the numbers separated by points and set inside clear text. 23 distinct numbers; <em>c</em> has two (20 and 29).</dd>
+  <dt>How it was deciphered</dt><dd>The key was learnt from block 1 of fol. 200, whose 177 numbers line up one to one with the marginal gloss, and frozen. One measurement on block 2 of the same folio (341 numbers) gave 0.907 of letters against at most 0.229 for 200 shuffled keys. The unglossed letters were then read with the frozen key.</dd>
+  <dt>What it says</dt><dd>Come as soon as you can with the cavalry relief; bring rations and tools to reap; burn Rigny, Talmay, Pontailler and Mirebeau and destroy the forge of Drambon where the bombs thrown on Dole are made.</dd>
+  <dt>Still open</dt><dd>Four words: a struck-out group, a word under a blot, <em>?atlons</em> and <em>o&hellip;</em>. No number for <em>k</em> was seen. Fol. 106 (12 August) is in another cipher, not broken.</dd>
+  <dt>Credit</dt><dd>Brice Dudout transcribed the numbers, recovered and tested the key and read the letters, working with Claude Opus 5.5 agents. The clear text of the letters was already printed by &Eacute;. Longin (1912), a fact found after the reading.</dd>
+</dl>
+</div>
+
+<h2 id="the-letters"><span class="num">01</span> The letters</h2>
+<p>Dole, capital of the Franche-Comt&eacute;, was besieged by the Prince of Cond&eacute; from 27 May to 15 August 1636. The Parlement and the governor wrote to the relief army of the Marquis of Conflans and of Jean Girardot de Beauchemin, and the letters that reached it are kept among Girardot&rsquo;s papers at Besan&ccedil;on. Only the words that mattered were enciphered. The rest is clear French, with the cipher passages set in it as strings of numbers.</p>
+<p>The cipher did not stay secret. Antoine Rossignol deciphered the intercepted dispatches in Paris, and in July Richelieu sent him to Cond&eacute;&rsquo;s camp with &ldquo;the decipherment of the letters that those of Dole were writing to the Marquis of Conflans&rdquo; (Longin, no. CCLXXVIII). In late July and early August the court warned Conflans three times that &ldquo;the enemy has found the key of the cipher&rdquo;, and the letter of 12 August (fol. 106) changes to another cipher.</p>
+
+<h2 id="the-key"><span class="num">02</span> The key and its test</h2>
+<p>The numbers run in two stretches: <em>p</em> = 1, then <em>o</em> 5, <em>n</em> 7, <em>m</em> 9, <em>l</em> 11 going up by two; <em>a</em> = 35, <em>b</em> 31 going down; <em>q</em> = 36, <em>r</em> 38, <em>s</em> 40, <em>t</em> 42, <em>u</em> 44 going up. Fol. 200 carries two blocks of cipher, each glossed in the margin at the time. Block 1 gave the key: 177 numbers aligned with 177 letters of the gloss, the majority letter per number, frozen before anything else was decrypted.</p>
+<table>
+<tr><th>Letters</th><th>Numbers</th></tr>
+<tr><td>p o n m l</td><td>1 5 7 9 11</td></tr>
+<tr><td>i (and j) h g</td><td>15 17 19</td></tr>
+<tr><td>c f e d c</td><td>20 21 25 27 29</td></tr>
+<tr><td>b a</td><td>31 35</td></tr>
+<tr><td>q r s t u (and v)</td><td>36 38 40 42 44</td></tr>
+<tr><td>x y z</td><td>50 52 54</td></tr>
+</table>
+<p>Block 2 (341 numbers) was the test, with the protocol written and hashed before the measurement: letter agreement with its gloss 0.9072, against a best of 0.229 and a mean of 0.131 for 200 shuffled keys. The thresholds (0.85, and the best control plus 0.30) were fixed in advance and the key passed. Three numbers had no value in training (17, 21, 50) and were given h, f and x by the gloss afterwards. The value 20 = c comes from sense (<em>cavalerie</em>), 54 = z from the clear copy fol. 182 (<em>douze</em>).</p>
+
+<h2 id="the-reading"><span class="num">03</span> The reading</h2>
+<figure class="creveal" data-src="reveal/dole1636.json"></figure>
+<p>Fol. 191 (Brun, [1 July]) and fol. 127v (7 June) carry no gloss. The frozen key gives French from the first line:</p>
+<blockquote><p><em>le plus tost que vous pourez venir sera le meilleur &hellip; le secours de cavalerie envoy&eacute; par son altesse &hellip; a vous aller joindre a Salins</em></p></blockquote>
+<p>Brun asks the army to come at once with the cavalry relief, not to go to Salins to join it, and warns that four or five days lost would be a great risk. He recalls the diversions, the signals and the recognition marks, and the cutting of the enemy&rsquo;s communications; an attack by day would be more honourable and more useful than one by night. They are to bring flour and corn and tools to reap, the garrison of Gray is to burn Rigny, Talmay, Pontailler and Mirebeau, and above all to destroy the forge of Drambon and the others where the bombs thrown on Dole are made. Of 128 cipher words on fols. 191 and 127v, 113 are certain, 11 probable and 4 unresolved (96.9%). Fol. 127v reads &ldquo;c&rsquo;est[oit] un pi&egrave;ge pour l&rsquo;ennemi&rdquo;.</p>
+<p>Fol. 183 (25 June) read with the key matches the period clear copy fol. 182 apart from <em>vous</em>/<em>nous</em> and <em>ou</em>/<em>a</em>: the commis describe the French quarters, with a separate attack by the bridge of three or four hundred horse and six hundred foot, and elsewhere one of twelve hundred men. Fol. 200 (22 July) is the glossed folio itself: the Parlement praises the relief army&rsquo;s resolution to come without delay and says it is better to risk something than to lose everything.</p>
+<p>The reading was made from the numbers alone. Only afterwards was the clear text found, printed by &Eacute;. Longin in <em>Le si&egrave;ge de Dole par le prince de Cond&eacute;</em> (1912, nos. LIV, CXXXII, CLXXVIII and CCLXXXVII) from Brun&rsquo;s drafts, the words to be enciphered in brackets. Letter agreement of the mechanical decryption with Longin&rsquo;s text is 0.967 (584 of 589 letters on fols. 191 and 127v). Longin used the drafts, not the letters received, and gives no key; his text differs in &ldquo;par S. A.&rdquo; for <em>par son altesse</em> and &ldquo;&agrave; plein&rdquo; for <em>&agrave; plain</em>.</p>
+
+<h2 id="uncertain"><span class="num">04</span> What remains uncertain</h2>
+<ul>
+<li>Four unresolved words on fols. 191 and 127v: a struck-out group, a word under a blot, <em>?atlons</em> (Longin: <em>rations</em>) and <em>o&hellip;</em> (Longin: <em>c&rsquo;estoit</em>).</li>
+<li>Longin brackets &ldquo;de Mercy et de Forgats&rdquo; and &ldquo;accueillir&rdquo; in the 1 July letter; they were not read on fol. 191 and have not been checked against the image.</li>
+<li>No number for <em>k</em> has been seen. 17, 21 and 50 were given by the gloss after the measurement.</li>
+<li>Fol. 106 (12 August) is another cipher with no key material here.</li>
+<li>The images are from the library&rsquo;s M&eacute;moire vive and are not reproduced here; the numbers are given as read.</li>
+</ul>
+
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>The Parlement of Dole, 22 July 1636 (fol. 200r, both blocks glossed in the margin)</h3>
+<p>On 22 July the Parlement of Dole praises the relief army&#x27;s resolution to come without delay, admits some slight danger in an arrival put off too long, and says it is better to risk something than to lose everything, hoping all will go to their glory and the confusion of their enemies. The text is the period marginal gloss, which the key was learnt from and tested on.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/dole1636/transcription.txt">transcription.txt</a></p><pre translate="no"># BM Besançon Ms 1594 (Ms 1591-1595 vol. IV, papers of Jean Girardot de Nozeroy), siege of Dole 1636. Cipher numbers as read
+# from the library images (Mémoire vive; images not reproduced). One passage per line: &lt;id&gt; | numbers. Marks: ■ blot; ✕ struck-out
+# group; … edge lost; 15(1.5?) read 15, perhaps 1.5; 38? doubtful. Clear text of the letters is not transcribed here.
+
+== fol. 200r (view 351), Parlement of Dole, 22 July 1636: block 1 (training) and block 2 (held out); both glossed in the margin at the time
+T1 | 7 5 44 40 11 5 44 5 7 40 27 15 25 44 27 25 11 35 31 5 7 7 25 25 42 29 5 44 38 35 19 25 44 40 25 38 25 40 5 11 44 42 15 5 7 36 44 25 44 5 44 40 35 44 25 40 1 38 15 40 25 27 25 44 25 7 15 38 15 7 29 25 40 40 35 9 9 25 7 44 35 7 5 44 40 35 36 44 5 52 7 5 44 40 44 5 44 40 15 7 44 15 42 5 7 40 27 25 7 5 44 44 25 35 44 35 44 42 35 7 42 36 44 15 11 7 5 44 40 25 40 42 1 5 40 40 15 31 11 25 1 5 44 38 29 25 36 44 25 42 5 44 42 25 40 29 5 7 40 15 27 25 38 35 42 15 5 7 40 1 38 25 40 40 25 7 42
+H2 | 25 7 29 5 38 25 36 44 25 7 5 44 40 44 5 52 5 7 40 36 44 25 11 36 44 25 1 25 38 15 11 35 44 5 40 42 38 25 35 38 15 44 25 25 1 5 44 38 35 44 5 15 38 25 40 42 25 42 38 5 1 27 15 21 21 25 25 7 25 35 44 9 5 15 7 40 15 11 7 25 40 42 1 35 40 1 5 40 40 15 31 11 25 27 25 11 35 9 25 42 42 38 25 1 11 44 40 35 44 11 5 15 7 19 25 42 44 35 44 42 9 15 25 44 50 17 35 40 35 38 29 25 38 36 44 25 11 35 44 25 29 17 5 40 25 36 44 25 42 5 44 42 1 25 38 27 38 25 9 35 15 40 7 5 44 40 25 40 1 25 38 5 7 40 36 44 35 19 15 40 40 35 7 42 27 25 31 5 7 7 25 40 5 38 42 25 17 35 38 27 15 9 25 7 42 25 42 29 5 44 38 35 19 25 44 40 25 9 25 7 42 29 5 9 9 25 44 5 44 40 40 29 35 44 38 25 40 31 15 25 7 21 35 15 38 25 25 42 7 5 44 40 35 29 17 25 44 35 7 42 11 25 38 25 40 42 25 27 25 7 5 40 25 21 21 5 38 42 40 1 5 44 38 44 5 44 40 40 25 29 5 7 27 25 38 42 5 44 42 15 38 35 35 7 5 40 42 38 25 19 11 5 15 38 25 25 42 35 11 35 29 5 7 21 44 40 15 5 7 27 25 7 5 40 25 7 7 25 9 15 40
+
+== fol. 191r-v (views 332-333), A. Brun, [Dole, 1 July 1636]
+P1 | 11 25 1 11 44 40 42 5 40 42 36 44 25 44 5 44 40 1 5 44 38 25 40 44 25 7 15 38 40 25 38 35 11 25 9 25 15 11 11 25 44 38
+P2 | 11 25 40 25 29 5 44 38 40 27 25 20 35 44 35 11 25 38 15 25 25 7 44 5 15 25 1 35 38 40 5 7 35 11 42 25 40 40 25 40 9 25
+P3 | 35 44 5 44 40 35 11 11 25 38 15 5 15 7 27 38 25 35 40 35 11 15 7 40
+P4 | 27 25 42 35 38 27 25 38 11 25 9 5 15 7 40 36 44 25 44 5 44 40 1 5 44 38 25 40 25 42 27 25 7 25 44 5 44 40 ✕ 35 42 42 25 7 27 38 25 35 35 44 29 44 7 25 7 5 44 44 25 11 11 25 35 15 27 25 17 5 38 40 29 25 11 11 25 27 44 27 15 29 42 40 25 29 5 44 38 40
+P5 | ■ 31 25 35 44 29 5 44 1 17 35 40 35 38 27 25 38 36 44 25 27 25 1 35 40 40 25 38 35 44 35 42 38 25 5 44 29 15 7 36 15 5 44 38 40 40 35 7 40 44 5 44 45 38 25 7 27 38 25 35 7 5 40 1 5 38 42 25 40
+P6 | 11 25 40 27 15 44 25 38 42 15 40 40 25 9 25 7 42 40
+P7 | 11 25 40 40 15 19 7 35 11 40 11 15 44 38 25 25 40
+P8 | 29 5 9 9 44 7 15 29 35 42 15 5 7 40 27 44 27 15 29 42 25 7 7 25 9 15
+P9 | 25 42 1 11 44 40 17 15 7 7 15 38 35 31 11 25 25 42 1 11 44 40 44 42 15 11 25 35 11 35 29 11 35 38 42 25 27 44 40 5 11 25 15 11 36 44 25 27 35 7 40 11 35 7 44 15 29 42
+P10 | 38? 35 42 11 5 7 40 21 35 38 15 7 25 40 25 42 31 11 25 27 40
+P11 | 35 44 25 29 11 25 40 5 44 42 15 11 40 1 5 44 38 52 9 5 15 40 40 5 7 7 25 38
+P12 | 31 38 44 11 25 7 42 38 15 19 7 52 42 35 11 25 9 35 52 1 5 7 42 35 15 11 11 15 25 38 9 15 38 25 31 25 38 44
+P13 | 27 25 42 38 44 15 40 25 7 42 35 1 11 35 15 7 11 35 21 5? 38 19 25 27 25 27 38 35 9 31 5 7 25 42 35 44 42 38 25 40 5 44 40 25 21 5 7 42 11 25 40 31 5 7 31 25 40 36 44 5 7 7 5 44 40 15 25 42 42 25
+P14 | 35 44 27 44 29 17 25 36 44 25 31 35 40 40 15 19 7 15 25 42 31 38 25 40 40 25
+
+== fol. 127v (view 226), Archbishop and Parlement, Dole, 7 June 1636
+R1 | 29 25 40 42 5 ■4 44 7 15(1.5?) 25 19 25 15(1.5) 44 38 11 25 7 7 25 9 15
+
+== fols. 181r (view 316) and 183 (view 319), commis au gouvernement, 25 June 1636; clear copy fol. 182 (view 318)
+Q1 | 36 44 15 7 25 44 5 44 40 29 5 7 44 15 25 7 42 36 44 …
+Q2 | 25 38 35 42 42 35 36 44 25 1 35 38 42 15 29 44 11 15 25 38 …
+Q3 | 5 44 29 25 7 42 29 17 25 44 35 44 50 25 42 40 15 …
+Q4 | 17 5 9 9 25 40 27 25 1 15 25 27
+Q5 | 36 5 44 38 35 ■ 42 42 35 36 44 25 27 25 27 …
+Q6 | 17 5 9 9 25 40
+V1 | 36 44 15 7 25 44 5 44 40 29 5 7 44 15 25 7 42 36 44 25 1 5 44 38 27 5 7 7 25 38 35 42 42 35 36 44 25 1 35 38 42 15 29 44 11 15? 25 38 25 27 25 42 38 5 40 5 44 36 44 35 42 38 25 29 25 7 42 ■ 29 19 25 44 35 44 50 25 42 40 15 50 29 25 7 42 17 5 9 9 25 40 27 25 1 15 25 27
+V2 | 1 5 44 38 35 42 42 36 44 25 27 25 27 5 44 54 25 29 25 7 42 17 5 9 9 25 40</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/dole1636/decryption.txt">decryption.txt</a></p><pre translate="no"># Mechanical decryption of transcription.txt with key.tsv (unchanged). Capitals = deciphered letters; · = blot; ? = no value.
+
+== fol. 200r
+T1  NOUSLOUONSDIEUDELABONNEETCOURAGEUSERESOLUTIONQUEUOUSAUESPRISEDEUENIRINCESSAMMENUANOUSAQUOYNOUSUOUSINUITONSDENOUUEAUAUTANTQUILNOUSESTPOSSIBLEPOURCEQUETOUTESCONSIDERATIONSPRESSENT
+    gloss: nous louons dieu de la bonne et courageuse resolution que vous avez prise de venir incessamment a nous a quoy nous vous invitons de nouveau autant quil nous est possible pour ce que toutes considerations pressent
+H2  ENCOREQUENOUSUOYONSQUELQUEPERILAUOSTREARIUEEPOURAUOIRESTETROPDIFFEENEAUMOINSILNESTPASPOSSIBLEDELAMETTREPLUSAULOINGETUAUTMIEUXHASARCERQUELAUECHOSEQUETOUTPERDREMAISNOUSESPERONSQUAGISSANTDEBONNESORTEHARDIMENTETCOURAGEUSEMENTCOMMEUOUSSCAURESBIENFAIREETNOUSACHEUANTLERESTEDENOSEFFORTSPOURUOUSSECONDERTOUTIRAANOSTREGLOIREETALACONFUSIONDENOSENNEMIS
+    gloss: En ce que nous voyons quelque leger peril a vostre arrivee, pour avoir este trop differee, neantmoins il n&#x27;est pas possible de la mettre plus au loing, et vault mieux hazarder quelque chose que tout perdre ; mais nous esperons qu&#x27;agissant de bonne sorte, hardiment et courageusement comme vous scaurez bien faire, et nous achevans le reste de nos efforts pour vous seconder, tout ira a nostre gloire, et a la confusion de nos ennemys.
+
+== fol. 191r-v (views 332-333), A. Brun, [Dole, 1 July 1636]
+P1  LEPLUSTOSTQUEUOUSPOURESUENIRSERALEMEILLEUR
+P2  LESECOURSDECAUALERIEENUOIEPARSONALTESSESME
+P3  AUOUSALLERIOINDREASALINS
+P4  DETARDERLEMOINSQUEUOUSPOURESETDENEUOUS [struck out] ATTENDREAAUCUNENOUUELLEAIDEHORSCELLEDUDICTSECOURS
+P5  ·BEAUCOUPHASARDERQUEDEPASSERAUATREOUCINQIOURSSANSUOU?RENDREANOSPORTES
+P6  LESDIUERTISSEMENTS
+P7  LESSIGNALSLIUREES
+P8  COMMUNICATIONSDUDICTENNEMI
+P9  ETPLUSHINNIRABLEETPLUSUTILEALACLARTEDUSOLEILQUEDANSLANUICT
+P10 RATLONSFARINESETBLEDS
+P11 AUECLESOUTILSPOURYMOISSONNER
+P12 BRULENTRIGNYTALEMAYPONTAILLIERMIREBERU
+P13 DETRUISENTAPLAINLAFORGEDEDRAMBONETAUTRESOUSEFONTLESBONBESQUONNOUSIETTE
+P14 AUDUCHEQUEBASSIGNIETBRESSE
+
+== fol. 127v (view 226), Archbishop and Parlement, Dole, 7 June 1636
+R1  CESTO·?UN⟨I|PO⟩EGE⟨I|PO⟩URLENNEMI
+
+== fols. 181r (view 316) and 183 (view 319), commis au gouvernement, 25 June 1636; clear copy fol. 182 (view 318)
+Q1  QUINEUOUSCONUIENTQU |…
+Q2  ERATTAQUEPARTICULIER |…
+Q3  OUCENTCHEUAUXETSI |…
+Q4  HOMMESDEPIED
+Q5  QOURA·TTAQUEDED |…
+Q6  HOMMES
+V1  QUINEUOUSCONUIENTQUEPOURDONNERATTAQUEPARTICULIEREDETROSOUQUATRECENT·CGEUAUXETSIXCENTHOMMESDEPIED
+V2  POURATTQUEDEDOUZECENTHOMMES</pre></details>
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/dole1636/f200_reading.md">f200_reading.md</a></p><pre translate="no"># fol. 200r, Parlement of Dole, 22 July 1636: the two blocks as glossed in the margin at the time
+
+The reading of this folio is the period marginal decipherment, spelling kept. The key was learnt from block 1 (177 numbers aligned one to one with the gloss) and tested on block 2 (341 numbers; letter agreement 0.9072, see validation.txt).
+
+## Block 1 (T1, training)
+
+nous louons dieu de la bonne et courageuse resolution que vous avez prise de venir incessamment a nous a quoy nous vous invitons de nouveau autant quil nous est possible pour ce que toutes considerations pressent
+
+## Block 2 (H2, held out)
+
+En ce que nous voyons quelque leger peril a vostre arrivee, pour avoir este trop differee, neantmoins il n&#x27;est pas possible de la mettre plus au loing, et vault mieux hazarder quelque chose que tout perdre ; mais nous esperons qu&#x27;agissant de bonne sorte, hardiment et courageusement comme vous scaurez bien faire, et nous achevans le reste de nos efforts pour vous seconder, tout ira a nostre gloire, et a la confusion de nos ennemys.</pre></details>
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/dole1636/f200_translation.md">f200_translation.md</a></p><pre translate="no"># English translation of fol. 200r (22 July 1636)
+
+## Block 1
+
+We praise God for the good and courageous resolution you have taken to come to us without delay, to which we invite you again as far as we can, because every consideration presses.
+
+## Block 2
+
+Although we see some slight danger in your arrival, having been put off too long, it is nevertheless not possible to delay it any further, and it is better to risk something than to lose everything; but we hope that, acting in good order, boldly and courageously as you know how to do, and we on our side making the rest of our efforts to second you, all will go to our glory and to the confusion of our enemies.</pre></details>
+<h3>A. Brun, [1 July 1636] (fol. 191) and the Parlement, 7 June 1636 (fol. 127v)</h3>
+<p>On 1 July (fol. 191) Brun writes that they must come as soon as possible with the cavalry relief sent by “His Most Serene Highness” (not identified here), without going to join it at Salins; that letting four or five days pass is a great risk; he recalls the diversions, the signals and recognition marks, the cutting of the enemy’s communications; an attack by day would be more honourable and more useful than by night. They are to bring rations, flour and corn, with tools to reap; the Gray garrison is to burn Rigny, Talmay, Pontailler and Mirebeau, and above all destroy the forge of Drambon and the others where the bombs thrown on Dole are made; raids are to go into the Duchy, Bassigny and Bresse.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/dole1636/transcription.txt">transcription.txt</a></p><pre translate="no"># BM Besançon Ms 1594 (Ms 1591-1595 vol. IV, papers of Jean Girardot de Nozeroy), siege of Dole 1636. Cipher numbers as read
+# from the library images (Mémoire vive; images not reproduced). One passage per line: &lt;id&gt; | numbers. Marks: ■ blot; ✕ struck-out
+# group; … edge lost; 15(1.5?) read 15, perhaps 1.5; 38? doubtful. Clear text of the letters is not transcribed here.
+
+== fol. 200r (view 351), Parlement of Dole, 22 July 1636: block 1 (training) and block 2 (held out); both glossed in the margin at the time
+T1 | 7 5 44 40 11 5 44 5 7 40 27 15 25 44 27 25 11 35 31 5 7 7 25 25 42 29 5 44 38 35 19 25 44 40 25 38 25 40 5 11 44 42 15 5 7 36 44 25 44 5 44 40 35 44 25 40 1 38 15 40 25 27 25 44 25 7 15 38 15 7 29 25 40 40 35 9 9 25 7 44 35 7 5 44 40 35 36 44 5 52 7 5 44 40 44 5 44 40 15 7 44 15 42 5 7 40 27 25 7 5 44 44 25 35 44 35 44 42 35 7 42 36 44 15 11 7 5 44 40 25 40 42 1 5 40 40 15 31 11 25 1 5 44 38 29 25 36 44 25 42 5 44 42 25 40 29 5 7 40 15 27 25 38 35 42 15 5 7 40 1 38 25 40 40 25 7 42
+H2 | 25 7 29 5 38 25 36 44 25 7 5 44 40 44 5 52 5 7 40 36 44 25 11 36 44 25 1 25 38 15 11 35 44 5 40 42 38 25 35 38 15 44 25 25 1 5 44 38 35 44 5 15 38 25 40 42 25 42 38 5 1 27 15 21 21 25 25 7 25 35 44 9 5 15 7 40 15 11 7 25 40 42 1 35 40 1 5 40 40 15 31 11 25 27 25 11 35 9 25 42 42 38 25 1 11 44 40 35 44 11 5 15 7 19 25 42 44 35 44 42 9 15 25 44 50 17 35 40 35 38 29 25 38 36 44 25 11 35 44 25 29 17 5 40 25 36 44 25 42 5 44 42 1 25 38 27 38 25 9 35 15 40 7 5 44 40 25 40 1 25 38 5 7 40 36 44 35 19 15 40 40 35 7 42 27 25 31 5 7 7 25 40 5 38 42 25 17 35 38 27 15 9 25 7 42 25 42 29 5 44 38 35 19 25 44 40 25 9 25 7 42 29 5 9 9 25 44 5 44 40 40 29 35 44 38 25 40 31 15 25 7 21 35 15 38 25 25 42 7 5 44 40 35 29 17 25 44 35 7 42 11 25 38 25 40 42 25 27 25 7 5 40 25 21 21 5 38 42 40 1 5 44 38 44 5 44 40 40 25 29 5 7 27 25 38 42 5 44 42 15 38 35 35 7 5 40 42 38 25 19 11 5 15 38 25 25 42 35 11 35 29 5 7 21 44 40 15 5 7 27 25 7 5 40 25 7 7 25 9 15 40
+
+== fol. 191r-v (views 332-333), A. Brun, [Dole, 1 July 1636]
+P1 | 11 25 1 11 44 40 42 5 40 42 36 44 25 44 5 44 40 1 5 44 38 25 40 44 25 7 15 38 40 25 38 35 11 25 9 25 15 11 11 25 44 38
+P2 | 11 25 40 25 29 5 44 38 40 27 25 20 35 44 35 11 25 38 15 25 25 7 44 5 15 25 1 35 38 40 5 7 35 11 42 25 40 40 25 40 9 25
+P3 | 35 44 5 44 40 35 11 11 25 38 15 5 15 7 27 38 25 35 40 35 11 15 7 40
+P4 | 27 25 42 35 38 27 25 38 11 25 9 5 15 7 40 36 44 25 44 5 44 40 1 5 44 38 25 40 25 42 27 25 7 25 44 5 44 40 ✕ 35 42 42 25 7 27 38 25 35 35 44 29 44 7 25 7 5 44 44 25 11 11 25 35 15 27 25 17 5 38 40 29 25 11 11 25 27 44 27 15 29 42 40 25 29 5 44 38 40
+P5 | ■ 31 25 35 44 29 5 44 1 17 35 40 35 38 27 25 38 36 44 25 27 25 1 35 40 40 25 38 35 44 35 42 38 25 5 44 29 15 7 36 15 5 44 38 40 40 35 7 40 44 5 44 45 38 25 7 27 38 25 35 7 5 40 1 5 38 42 25 40
+P6 | 11 25 40 27 15 44 25 38 42 15 40 40 25 9 25 7 42 40
+P7 | 11 25 40 40 15 19 7 35 11 40 11 15 44 38 25 25 40
+P8 | 29 5 9 9 44 7 15 29 35 42 15 5 7 40 27 44 27 15 29 42 25 7 7 25 9 15
+P9 | 25 42 1 11 44 40 17 15 7 7 15 38 35 31 11 25 25 42 1 11 44 40 44 42 15 11 25 35 11 35 29 11 35 38 42 25 27 44 40 5 11 25 15 11 36 44 25 27 35 7 40 11 35 7 44 15 29 42
+P10 | 38? 35 42 11 5 7 40 21 35 38 15 7 25 40 25 42 31 11 25 27 40
+P11 | 35 44 25 29 11 25 40 5 44 42 15 11 40 1 5 44 38 52 9 5 15 40 40 5 7 7 25 38
+P12 | 31 38 44 11 25 7 42 38 15 19 7 52 42 35 11 25 9 35 52 1 5 7 42 35 15 11 11 15 25 38 9 15 38 25 31 25 38 44
+P13 | 27 25 42 38 44 15 40 25 7 42 35 1 11 35 15 7 11 35 21 5? 38 19 25 27 25 27 38 35 9 31 5 7 25 42 35 44 42 38 25 40 5 44 40 25 21 5 7 42 11 25 40 31 5 7 31 25 40 36 44 5 7 7 5 44 40 15 25 42 42 25
+P14 | 35 44 27 44 29 17 25 36 44 25 31 35 40 40 15 19 7 15 25 42 31 38 25 40 40 25
+
+== fol. 127v (view 226), Archbishop and Parlement, Dole, 7 June 1636
+R1 | 29 25 40 42 5 ■4 44 7 15(1.5?) 25 19 25 15(1.5) 44 38 11 25 7 7 25 9 15
+
+== fols. 181r (view 316) and 183 (view 319), commis au gouvernement, 25 June 1636; clear copy fol. 182 (view 318)
+Q1 | 36 44 15 7 25 44 5 44 40 29 5 7 44 15 25 7 42 36 44 …
+Q2 | 25 38 35 42 42 35 36 44 25 1 35 38 42 15 29 44 11 15 25 38 …
+Q3 | 5 44 29 25 7 42 29 17 25 44 35 44 50 25 42 40 15 …
+Q4 | 17 5 9 9 25 40 27 25 1 15 25 27
+Q5 | 36 5 44 38 35 ■ 42 42 35 36 44 25 27 25 27 …
+Q6 | 17 5 9 9 25 40
+V1 | 36 44 15 7 25 44 5 44 40 29 5 7 44 15 25 7 42 36 44 25 1 5 44 38 27 5 7 7 25 38 35 42 42 35 36 44 25 1 35 38 42 15 29 44 11 15? 25 38 25 27 25 42 38 5 40 5 44 36 44 35 42 38 25 29 25 7 42 ■ 29 19 25 44 35 44 50 25 42 40 15 50 29 25 7 42 17 5 9 9 25 40 27 25 1 15 25 27
+V2 | 1 5 44 38 35 42 42 36 44 25 27 25 27 5 44 54 25 29 25 7 42 17 5 9 9 25 40</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/dole1636/decryption.txt">decryption.txt</a></p><pre translate="no"># Mechanical decryption of transcription.txt with key.tsv (unchanged). Capitals = deciphered letters; · = blot; ? = no value.
+
+== fol. 200r
+T1  NOUSLOUONSDIEUDELABONNEETCOURAGEUSERESOLUTIONQUEUOUSAUESPRISEDEUENIRINCESSAMMENUANOUSAQUOYNOUSUOUSINUITONSDENOUUEAUAUTANTQUILNOUSESTPOSSIBLEPOURCEQUETOUTESCONSIDERATIONSPRESSENT
+    gloss: nous louons dieu de la bonne et courageuse resolution que vous avez prise de venir incessamment a nous a quoy nous vous invitons de nouveau autant quil nous est possible pour ce que toutes considerations pressent
+H2  ENCOREQUENOUSUOYONSQUELQUEPERILAUOSTREARIUEEPOURAUOIRESTETROPDIFFEENEAUMOINSILNESTPASPOSSIBLEDELAMETTREPLUSAULOINGETUAUTMIEUXHASARCERQUELAUECHOSEQUETOUTPERDREMAISNOUSESPERONSQUAGISSANTDEBONNESORTEHARDIMENTETCOURAGEUSEMENTCOMMEUOUSSCAURESBIENFAIREETNOUSACHEUANTLERESTEDENOSEFFORTSPOURUOUSSECONDERTOUTIRAANOSTREGLOIREETALACONFUSIONDENOSENNEMIS
+    gloss: En ce que nous voyons quelque leger peril a vostre arrivee, pour avoir este trop differee, neantmoins il n&#x27;est pas possible de la mettre plus au loing, et vault mieux hazarder quelque chose que tout perdre ; mais nous esperons qu&#x27;agissant de bonne sorte, hardiment et courageusement comme vous scaurez bien faire, et nous achevans le reste de nos efforts pour vous seconder, tout ira a nostre gloire, et a la confusion de nos ennemys.
+
+== fol. 191r-v (views 332-333), A. Brun, [Dole, 1 July 1636]
+P1  LEPLUSTOSTQUEUOUSPOURESUENIRSERALEMEILLEUR
+P2  LESECOURSDECAUALERIEENUOIEPARSONALTESSESME
+P3  AUOUSALLERIOINDREASALINS
+P4  DETARDERLEMOINSQUEUOUSPOURESETDENEUOUS [struck out] ATTENDREAAUCUNENOUUELLEAIDEHORSCELLEDUDICTSECOURS
+P5  ·BEAUCOUPHASARDERQUEDEPASSERAUATREOUCINQIOURSSANSUOU?RENDREANOSPORTES
+P6  LESDIUERTISSEMENTS
+P7  LESSIGNALSLIUREES
+P8  COMMUNICATIONSDUDICTENNEMI
+P9  ETPLUSHINNIRABLEETPLUSUTILEALACLARTEDUSOLEILQUEDANSLANUICT
+P10 RATLONSFARINESETBLEDS
+P11 AUECLESOUTILSPOURYMOISSONNER
+P12 BRULENTRIGNYTALEMAYPONTAILLIERMIREBERU
+P13 DETRUISENTAPLAINLAFORGEDEDRAMBONETAUTRESOUSEFONTLESBONBESQUONNOUSIETTE
+P14 AUDUCHEQUEBASSIGNIETBRESSE
+
+== fol. 127v (view 226), Archbishop and Parlement, Dole, 7 June 1636
+R1  CESTO·?UN⟨I|PO⟩EGE⟨I|PO⟩URLENNEMI
+
+== fols. 181r (view 316) and 183 (view 319), commis au gouvernement, 25 June 1636; clear copy fol. 182 (view 318)
+Q1  QUINEUOUSCONUIENTQU |…
+Q2  ERATTAQUEPARTICULIER |…
+Q3  OUCENTCHEUAUXETSI |…
+Q4  HOMMESDEPIED
+Q5  QOURA·TTAQUEDED |…
+Q6  HOMMES
+V1  QUINEUOUSCONUIENTQUEPOURDONNERATTAQUEPARTICULIEREDETROSOUQUATRECENT·CGEUAUXETSIXCENTHOMMESDEPIED
+V2  POURATTQUEDEDOUZECENTHOMMES</pre></details>
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/dole1636/reading.md">reading.md</a></p><pre translate="no"># Reading (French, spelling of the cipher, word division restored), Daniel Bourdeau&#x27;s rule
+
+plain word = certain; {x} = probable; [x] = restored from the sense; ‹…› = unresolved. After each line, in italics, the clear text
+printed by É. Longin (1912) from Brun&#x27;s drafts (fols. 191, 127v, 181) or the period clear copy fol. 182 (fol. 183); it was found after the reading.
+
+## fol. 191r-v (views 332-333), A. Brun, [Dole, 1 July 1636]
+
+P1 le plustost que vous pourez venir sera le meilleur  
+*le plus tost que vous pourés venir sera le meilleur*
+
+P2 le secours de {cavalerie} {envoie} par son altesse Sme  
+*le secours de cavalerie envoyé par S. A. Sme*
+
+P3 a vous aller ioindre a Salins  
+*à vous aller joindre à Salins*
+
+P4 de tarder le moins que vous pourez et de ne vous ‹biffé› attendre a aucune nouvelle aide hors celle dudict secours  
+*de tarder le moins que vous pourés et de ne vous attendre à aucune nouvelle aide, hors celle du dict secours*
+
+P5 ‹…› beaucoup hasarder que de passer {quatre} ou cinq iours sans {vous} rendre a nos portes  
+*que c’est beaucoup hasarder que de passer quatre ou cinq jours sans vous rendre à nos portes*
+
+P6 les divertissements  
+*les divertissements*
+
+P7 les signals {livrées}  
+*les signals, livrées*
+
+P8 communications dudict ennemi  
+*communications du dict ennemi*
+
+P9 et plus {honnorable} et plus utile a la clarté du soleil que dans la nuict  
+*et plus honnorable et plus utile à la clarté du soleil que dans la nuict*
+
+P10 ‹?atlons› farines et bleds  
+*rations, farines et bleds*
+
+P11 avec les outils pour y moissonner  
+*avec les outils pour y moissonner*
+
+P12 brulent Rigny, Talemay, {Pontailler}, {Mirebeau}  
+*brûlent Rigny, Talemay, Pontaillier, Mirebeau*
+
+P13 détruisent a plain la {forge} de Drambon et autres ou se font les {bombes} qu’on nous iette  
+*détruisent à plein la forge de Drambon et autres où se font les bombes qu’on nous jette*
+
+P14 au duché que Bassigni et Bresse  
+*au [duché] que [Bassigny] et [Bresse]*
+
+
+## fol. 127v (view 226), Archbishop and Parlement, Dole, 7 June 1636
+
+R1 c’est ‹o…› un {piège} pour l’ennemi  
+*c’estoit un piège pour l’ennemi*
+
+
+## fols. 181r (view 316) and 183 (view 319), commis au gouvernement, 25 June 1636; clear copy fol. 182 (view 318)
+
+Q1 qui ne vous convient [que]  
+*qui ne vous convient que*
+
+Q2 ‹…er› attaque particulier  
+*donner attaque particulière*
+
+Q3 ou cent {chevaux} et [six]  
+*de 3 ou 4 cent chevaux et six cent*
+
+Q4 hommes de pied  
+*hommes de pied*
+
+Q5 {pour} {attaque} de ‹d…›  
+*pour attaque de douze cent*
+
+Q6 hommes  
+*hommes*
+
+V1 qui ne vous convient que pour donner attaque {particuliere} de {tros} {ou} quatre cent {cheuaux} et six cent hommes de pied  
+*qui ne nous convient que pour donner attaque particulière de trois a quatre cent chevaux et six cent hommes de pied (f. 182)*
+
+V2 pour {attaque} de {douze} cent hommes  
+*pour attaque de douze cens hommes (f. 182)*
+
+## Count (mechanical, recompte.py)
+
+| | words | certain | probable | restored | unresolved | certain + probable |
+|---|---|---|---|---|---|---|
+| fol. 191 + fol. 127v | 128 | 113 | 11 | 0 | 4 | 124 (96.9%) |
+| fol. 181 + fol. 183 | 48 | 35 | 9 | 2 | 2 | 44 (91.7%) |
+
+fols. 181 + 183: fol. 183 alone (complete second copy) is 27 words, 21 certain, 6 probable (100%); fol. 181 has its right edge lost.</pre></details>
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/dole1636/translation.md">translation.md</a></p><pre translate="no"># English translation of the ciphered passages (each passage is a phrase inside a letter written in clear)
+
+## fol. 191r-v (views 332-333), A. Brun, [Dole, 1 July 1636]
+
+- P1: the sooner you can come, the better
+- P2: the cavalry relief sent by His Most Serene Highness
+- P3: to go and join you at Salins
+- P4: to delay as little as you can, and to expect no new help other than that relief
+- P5: [that it is] a great risk to let four or five days go by without your coming to our gates
+- P6: the diversions
+- P7: the signals, the liveries (recognition marks)
+- P8: the communications of that enemy
+- P9: both more honourable and more useful by daylight than at night
+- P10: [rations], flour and corn
+- P11: with tools to reap the harvest there
+- P12: that they burn Rigny, Talmay, Pontailler, Mirebeau
+- P13: that they destroy outright the forge of Drambon and the others where the bombs thrown at us are made
+- P14: [raids] into the Duchy [of Burgundy] as well as Bassigny and Bresse
+
+## fol. 127v (view 226), Archbishop and Parlement, Dole, 7 June 1636
+
+- R1: it was a trap for the enemy
+
+## fols. 181r (view 316) and 183 (view 319), commis au gouvernement, 25 June 1636; clear copy fol. 182 (view 318)
+
+- Q1: which suits you only [for]
+- Q2: [giv]ing a separate attack
+- Q3: [three] or [four] hundred horse and six [hundred]
+- Q4: foot soldiers
+- Q5: for an attack of tw[elve hundred]
+- Q6: men
+- V1: which suits you only for making a separate attack with three or four hundred horse and six hundred foot
+- V2: for an attack of twelve hundred men
+
+## Summary
+
+On 7 June (fol. 127) the Archbishop and the court urge Conflans to attack quickly; a letter they had addressed to him “was a trap for the enemy”.
+On 25 June (fols. 181, 183; clear on fol. 182) the commis describe the French quarters: on the side of the bridge, a separate attack with three or four hundred horse and six hundred foot; elsewhere, an attack of twelve hundred men.
+On 1 July (fol. 191) Brun writes that they must come as soon as possible with the cavalry relief sent by “His Most Serene Highness” (not identified here), without going to join it at Salins; that letting four or five days pass is a great risk; he recalls the diversions, the signals and recognition marks, the cutting of the enemy’s communications; an attack by day would be more honourable and more useful than by night. They are to bring rations, flour and corn, with tools to reap; the Gray garrison is to burn Rigny, Talmay, Pontailler and Mirebeau, and above all destroy the forge of Drambon and the others where the bombs thrown on Dole are made; raids are to go into the Duchy, Bassigny and Bresse.
+The cipher was broken at the time. Antoine Rossignol deciphered the intercepted dispatches in Paris; in July Richelieu sent him to Condé’s camp with “the decipherment of the letters that those of Dole were writing to the Marquis of Conflans” (Longin, no. CCLXXVIII). In late July and early August the court warned Conflans three times that “the enemy has found the key of the cipher”; the letter of 12 August (fol. 106) says so again and changes to another cipher, which we have not broken.</pre></details>
+<h3>Commis au gouvernement, 25 June 1636 (fols. 181 and 183; clear copy fol. 182)</h3>
+<p>On 25 June (fols. 181, 183; clear on fol. 182) the commis describe the French quarters: on the side of the bridge, a separate attack with three or four hundred horse and six hundred foot; elsewhere, an attack of twelve hundred men.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/dole1636/transcription.txt">transcription.txt</a></p><pre translate="no"># BM Besançon Ms 1594 (Ms 1591-1595 vol. IV, papers of Jean Girardot de Nozeroy), siege of Dole 1636. Cipher numbers as read
+# from the library images (Mémoire vive; images not reproduced). One passage per line: &lt;id&gt; | numbers. Marks: ■ blot; ✕ struck-out
+# group; … edge lost; 15(1.5?) read 15, perhaps 1.5; 38? doubtful. Clear text of the letters is not transcribed here.
+
+== fol. 200r (view 351), Parlement of Dole, 22 July 1636: block 1 (training) and block 2 (held out); both glossed in the margin at the time
+T1 | 7 5 44 40 11 5 44 5 7 40 27 15 25 44 27 25 11 35 31 5 7 7 25 25 42 29 5 44 38 35 19 25 44 40 25 38 25 40 5 11 44 42 15 5 7 36 44 25 44 5 44 40 35 44 25 40 1 38 15 40 25 27 25 44 25 7 15 38 15 7 29 25 40 40 35 9 9 25 7 44 35 7 5 44 40 35 36 44 5 52 7 5 44 40 44 5 44 40 15 7 44 15 42 5 7 40 27 25 7 5 44 44 25 35 44 35 44 42 35 7 42 36 44 15 11 7 5 44 40 25 40 42 1 5 40 40 15 31 11 25 1 5 44 38 29 25 36 44 25 42 5 44 42 25 40 29 5 7 40 15 27 25 38 35 42 15 5 7 40 1 38 25 40 40 25 7 42
+H2 | 25 7 29 5 38 25 36 44 25 7 5 44 40 44 5 52 5 7 40 36 44 25 11 36 44 25 1 25 38 15 11 35 44 5 40 42 38 25 35 38 15 44 25 25 1 5 44 38 35 44 5 15 38 25 40 42 25 42 38 5 1 27 15 21 21 25 25 7 25 35 44 9 5 15 7 40 15 11 7 25 40 42 1 35 40 1 5 40 40 15 31 11 25 27 25 11 35 9 25 42 42 38 25 1 11 44 40 35 44 11 5 15 7 19 25 42 44 35 44 42 9 15 25 44 50 17 35 40 35 38 29 25 38 36 44 25 11 35 44 25 29 17 5 40 25 36 44 25 42 5 44 42 1 25 38 27 38 25 9 35 15 40 7 5 44 40 25 40 1 25 38 5 7 40 36 44 35 19 15 40 40 35 7 42 27 25 31 5 7 7 25 40 5 38 42 25 17 35 38 27 15 9 25 7 42 25 42 29 5 44 38 35 19 25 44 40 25 9 25 7 42 29 5 9 9 25 44 5 44 40 40 29 35 44 38 25 40 31 15 25 7 21 35 15 38 25 25 42 7 5 44 40 35 29 17 25 44 35 7 42 11 25 38 25 40 42 25 27 25 7 5 40 25 21 21 5 38 42 40 1 5 44 38 44 5 44 40 40 25 29 5 7 27 25 38 42 5 44 42 15 38 35 35 7 5 40 42 38 25 19 11 5 15 38 25 25 42 35 11 35 29 5 7 21 44 40 15 5 7 27 25 7 5 40 25 7 7 25 9 15 40
+
+== fol. 191r-v (views 332-333), A. Brun, [Dole, 1 July 1636]
+P1 | 11 25 1 11 44 40 42 5 40 42 36 44 25 44 5 44 40 1 5 44 38 25 40 44 25 7 15 38 40 25 38 35 11 25 9 25 15 11 11 25 44 38
+P2 | 11 25 40 25 29 5 44 38 40 27 25 20 35 44 35 11 25 38 15 25 25 7 44 5 15 25 1 35 38 40 5 7 35 11 42 25 40 40 25 40 9 25
+P3 | 35 44 5 44 40 35 11 11 25 38 15 5 15 7 27 38 25 35 40 35 11 15 7 40
+P4 | 27 25 42 35 38 27 25 38 11 25 9 5 15 7 40 36 44 25 44 5 44 40 1 5 44 38 25 40 25 42 27 25 7 25 44 5 44 40 ✕ 35 42 42 25 7 27 38 25 35 35 44 29 44 7 25 7 5 44 44 25 11 11 25 35 15 27 25 17 5 38 40 29 25 11 11 25 27 44 27 15 29 42 40 25 29 5 44 38 40
+P5 | ■ 31 25 35 44 29 5 44 1 17 35 40 35 38 27 25 38 36 44 25 27 25 1 35 40 40 25 38 35 44 35 42 38 25 5 44 29 15 7 36 15 5 44 38 40 40 35 7 40 44 5 44 45 38 25 7 27 38 25 35 7 5 40 1 5 38 42 25 40
+P6 | 11 25 40 27 15 44 25 38 42 15 40 40 25 9 25 7 42 40
+P7 | 11 25 40 40 15 19 7 35 11 40 11 15 44 38 25 25 40
+P8 | 29 5 9 9 44 7 15 29 35 42 15 5 7 40 27 44 27 15 29 42 25 7 7 25 9 15
+P9 | 25 42 1 11 44 40 17 15 7 7 15 38 35 31 11 25 25 42 1 11 44 40 44 42 15 11 25 35 11 35 29 11 35 38 42 25 27 44 40 5 11 25 15 11 36 44 25 27 35 7 40 11 35 7 44 15 29 42
+P10 | 38? 35 42 11 5 7 40 21 35 38 15 7 25 40 25 42 31 11 25 27 40
+P11 | 35 44 25 29 11 25 40 5 44 42 15 11 40 1 5 44 38 52 9 5 15 40 40 5 7 7 25 38
+P12 | 31 38 44 11 25 7 42 38 15 19 7 52 42 35 11 25 9 35 52 1 5 7 42 35 15 11 11 15 25 38 9 15 38 25 31 25 38 44
+P13 | 27 25 42 38 44 15 40 25 7 42 35 1 11 35 15 7 11 35 21 5? 38 19 25 27 25 27 38 35 9 31 5 7 25 42 35 44 42 38 25 40 5 44 40 25 21 5 7 42 11 25 40 31 5 7 31 25 40 36 44 5 7 7 5 44 40 15 25 42 42 25
+P14 | 35 44 27 44 29 17 25 36 44 25 31 35 40 40 15 19 7 15 25 42 31 38 25 40 40 25
+
+== fol. 127v (view 226), Archbishop and Parlement, Dole, 7 June 1636
+R1 | 29 25 40 42 5 ■4 44 7 15(1.5?) 25 19 25 15(1.5) 44 38 11 25 7 7 25 9 15
+
+== fols. 181r (view 316) and 183 (view 319), commis au gouvernement, 25 June 1636; clear copy fol. 182 (view 318)
+Q1 | 36 44 15 7 25 44 5 44 40 29 5 7 44 15 25 7 42 36 44 …
+Q2 | 25 38 35 42 42 35 36 44 25 1 35 38 42 15 29 44 11 15 25 38 …
+Q3 | 5 44 29 25 7 42 29 17 25 44 35 44 50 25 42 40 15 …
+Q4 | 17 5 9 9 25 40 27 25 1 15 25 27
+Q5 | 36 5 44 38 35 ■ 42 42 35 36 44 25 27 25 27 …
+Q6 | 17 5 9 9 25 40
+V1 | 36 44 15 7 25 44 5 44 40 29 5 7 44 15 25 7 42 36 44 25 1 5 44 38 27 5 7 7 25 38 35 42 42 35 36 44 25 1 35 38 42 15 29 44 11 15? 25 38 25 27 25 42 38 5 40 5 44 36 44 35 42 38 25 29 25 7 42 ■ 29 19 25 44 35 44 50 25 42 40 15 50 29 25 7 42 17 5 9 9 25 40 27 25 1 15 25 27
+V2 | 1 5 44 38 35 42 42 36 44 25 27 25 27 5 44 54 25 29 25 7 42 17 5 9 9 25 40</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/dole1636/decryption.txt">decryption.txt</a></p><pre translate="no"># Mechanical decryption of transcription.txt with key.tsv (unchanged). Capitals = deciphered letters; · = blot; ? = no value.
+
+== fol. 200r
+T1  NOUSLOUONSDIEUDELABONNEETCOURAGEUSERESOLUTIONQUEUOUSAUESPRISEDEUENIRINCESSAMMENUANOUSAQUOYNOUSUOUSINUITONSDENOUUEAUAUTANTQUILNOUSESTPOSSIBLEPOURCEQUETOUTESCONSIDERATIONSPRESSENT
+    gloss: nous louons dieu de la bonne et courageuse resolution que vous avez prise de venir incessamment a nous a quoy nous vous invitons de nouveau autant quil nous est possible pour ce que toutes considerations pressent
+H2  ENCOREQUENOUSUOYONSQUELQUEPERILAUOSTREARIUEEPOURAUOIRESTETROPDIFFEENEAUMOINSILNESTPASPOSSIBLEDELAMETTREPLUSAULOINGETUAUTMIEUXHASARCERQUELAUECHOSEQUETOUTPERDREMAISNOUSESPERONSQUAGISSANTDEBONNESORTEHARDIMENTETCOURAGEUSEMENTCOMMEUOUSSCAURESBIENFAIREETNOUSACHEUANTLERESTEDENOSEFFORTSPOURUOUSSECONDERTOUTIRAANOSTREGLOIREETALACONFUSIONDENOSENNEMIS
+    gloss: En ce que nous voyons quelque leger peril a vostre arrivee, pour avoir este trop differee, neantmoins il n&#x27;est pas possible de la mettre plus au loing, et vault mieux hazarder quelque chose que tout perdre ; mais nous esperons qu&#x27;agissant de bonne sorte, hardiment et courageusement comme vous scaurez bien faire, et nous achevans le reste de nos efforts pour vous seconder, tout ira a nostre gloire, et a la confusion de nos ennemys.
+
+== fol. 191r-v (views 332-333), A. Brun, [Dole, 1 July 1636]
+P1  LEPLUSTOSTQUEUOUSPOURESUENIRSERALEMEILLEUR
+P2  LESECOURSDECAUALERIEENUOIEPARSONALTESSESME
+P3  AUOUSALLERIOINDREASALINS
+P4  DETARDERLEMOINSQUEUOUSPOURESETDENEUOUS [struck out] ATTENDREAAUCUNENOUUELLEAIDEHORSCELLEDUDICTSECOURS
+P5  ·BEAUCOUPHASARDERQUEDEPASSERAUATREOUCINQIOURSSANSUOU?RENDREANOSPORTES
+P6  LESDIUERTISSEMENTS
+P7  LESSIGNALSLIUREES
+P8  COMMUNICATIONSDUDICTENNEMI
+P9  ETPLUSHINNIRABLEETPLUSUTILEALACLARTEDUSOLEILQUEDANSLANUICT
+P10 RATLONSFARINESETBLEDS
+P11 AUECLESOUTILSPOURYMOISSONNER
+P12 BRULENTRIGNYTALEMAYPONTAILLIERMIREBERU
+P13 DETRUISENTAPLAINLAFORGEDEDRAMBONETAUTRESOUSEFONTLESBONBESQUONNOUSIETTE
+P14 AUDUCHEQUEBASSIGNIETBRESSE
+
+== fol. 127v (view 226), Archbishop and Parlement, Dole, 7 June 1636
+R1  CESTO·?UN⟨I|PO⟩EGE⟨I|PO⟩URLENNEMI
+
+== fols. 181r (view 316) and 183 (view 319), commis au gouvernement, 25 June 1636; clear copy fol. 182 (view 318)
+Q1  QUINEUOUSCONUIENTQU |…
+Q2  ERATTAQUEPARTICULIER |…
+Q3  OUCENTCHEUAUXETSI |…
+Q4  HOMMESDEPIED
+Q5  QOURA·TTAQUEDED |…
+Q6  HOMMES
+V1  QUINEUOUSCONUIENTQUEPOURDONNERATTAQUEPARTICULIEREDETROSOUQUATRECENT·CGEUAUXETSIXCENTHOMMESDEPIED
+V2  POURATTQUEDEDOUZECENTHOMMES</pre></details>
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/dole1636/reading.md">reading.md</a></p><pre translate="no"># Reading (French, spelling of the cipher, word division restored), Daniel Bourdeau&#x27;s rule
+
+plain word = certain; {x} = probable; [x] = restored from the sense; ‹…› = unresolved. After each line, in italics, the clear text
+printed by É. Longin (1912) from Brun&#x27;s drafts (fols. 191, 127v, 181) or the period clear copy fol. 182 (fol. 183); it was found after the reading.
+
+## fol. 191r-v (views 332-333), A. Brun, [Dole, 1 July 1636]
+
+P1 le plustost que vous pourez venir sera le meilleur  
+*le plus tost que vous pourés venir sera le meilleur*
+
+P2 le secours de {cavalerie} {envoie} par son altesse Sme  
+*le secours de cavalerie envoyé par S. A. Sme*
+
+P3 a vous aller ioindre a Salins  
+*à vous aller joindre à Salins*
+
+P4 de tarder le moins que vous pourez et de ne vous ‹biffé› attendre a aucune nouvelle aide hors celle dudict secours  
+*de tarder le moins que vous pourés et de ne vous attendre à aucune nouvelle aide, hors celle du dict secours*
+
+P5 ‹…› beaucoup hasarder que de passer {quatre} ou cinq iours sans {vous} rendre a nos portes  
+*que c’est beaucoup hasarder que de passer quatre ou cinq jours sans vous rendre à nos portes*
+
+P6 les divertissements  
+*les divertissements*
+
+P7 les signals {livrées}  
+*les signals, livrées*
+
+P8 communications dudict ennemi  
+*communications du dict ennemi*
+
+P9 et plus {honnorable} et plus utile a la clarté du soleil que dans la nuict  
+*et plus honnorable et plus utile à la clarté du soleil que dans la nuict*
+
+P10 ‹?atlons› farines et bleds  
+*rations, farines et bleds*
+
+P11 avec les outils pour y moissonner  
+*avec les outils pour y moissonner*
+
+P12 brulent Rigny, Talemay, {Pontailler}, {Mirebeau}  
+*brûlent Rigny, Talemay, Pontaillier, Mirebeau*
+
+P13 détruisent a plain la {forge} de Drambon et autres ou se font les {bombes} qu’on nous iette  
+*détruisent à plein la forge de Drambon et autres où se font les bombes qu’on nous jette*
+
+P14 au duché que Bassigni et Bresse  
+*au [duché] que [Bassigny] et [Bresse]*
+
+
+## fol. 127v (view 226), Archbishop and Parlement, Dole, 7 June 1636
+
+R1 c’est ‹o…› un {piège} pour l’ennemi  
+*c’estoit un piège pour l’ennemi*
+
+
+## fols. 181r (view 316) and 183 (view 319), commis au gouvernement, 25 June 1636; clear copy fol. 182 (view 318)
+
+Q1 qui ne vous convient [que]  
+*qui ne vous convient que*
+
+Q2 ‹…er› attaque particulier  
+*donner attaque particulière*
+
+Q3 ou cent {chevaux} et [six]  
+*de 3 ou 4 cent chevaux et six cent*
+
+Q4 hommes de pied  
+*hommes de pied*
+
+Q5 {pour} {attaque} de ‹d…›  
+*pour attaque de douze cent*
+
+Q6 hommes  
+*hommes*
+
+V1 qui ne vous convient que pour donner attaque {particuliere} de {tros} {ou} quatre cent {cheuaux} et six cent hommes de pied  
+*qui ne nous convient que pour donner attaque particulière de trois a quatre cent chevaux et six cent hommes de pied (f. 182)*
+
+V2 pour {attaque} de {douze} cent hommes  
+*pour attaque de douze cens hommes (f. 182)*
+
+## Count (mechanical, recompte.py)
+
+| | words | certain | probable | restored | unresolved | certain + probable |
+|---|---|---|---|---|---|---|
+| fol. 191 + fol. 127v | 128 | 113 | 11 | 0 | 4 | 124 (96.9%) |
+| fol. 181 + fol. 183 | 48 | 35 | 9 | 2 | 2 | 44 (91.7%) |
+
+fols. 181 + 183: fol. 183 alone (complete second copy) is 27 words, 21 certain, 6 probable (100%); fol. 181 has its right edge lost.</pre></details>
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/dole1636/translation.md">translation.md</a></p><pre translate="no"># English translation of the ciphered passages (each passage is a phrase inside a letter written in clear)
+
+## fol. 191r-v (views 332-333), A. Brun, [Dole, 1 July 1636]
+
+- P1: the sooner you can come, the better
+- P2: the cavalry relief sent by His Most Serene Highness
+- P3: to go and join you at Salins
+- P4: to delay as little as you can, and to expect no new help other than that relief
+- P5: [that it is] a great risk to let four or five days go by without your coming to our gates
+- P6: the diversions
+- P7: the signals, the liveries (recognition marks)
+- P8: the communications of that enemy
+- P9: both more honourable and more useful by daylight than at night
+- P10: [rations], flour and corn
+- P11: with tools to reap the harvest there
+- P12: that they burn Rigny, Talmay, Pontailler, Mirebeau
+- P13: that they destroy outright the forge of Drambon and the others where the bombs thrown at us are made
+- P14: [raids] into the Duchy [of Burgundy] as well as Bassigny and Bresse
+
+## fol. 127v (view 226), Archbishop and Parlement, Dole, 7 June 1636
+
+- R1: it was a trap for the enemy
+
+## fols. 181r (view 316) and 183 (view 319), commis au gouvernement, 25 June 1636; clear copy fol. 182 (view 318)
+
+- Q1: which suits you only [for]
+- Q2: [giv]ing a separate attack
+- Q3: [three] or [four] hundred horse and six [hundred]
+- Q4: foot soldiers
+- Q5: for an attack of tw[elve hundred]
+- Q6: men
+- V1: which suits you only for making a separate attack with three or four hundred horse and six hundred foot
+- V2: for an attack of twelve hundred men
+
+## Summary
+
+On 7 June (fol. 127) the Archbishop and the court urge Conflans to attack quickly; a letter they had addressed to him “was a trap for the enemy”.
+On 25 June (fols. 181, 183; clear on fol. 182) the commis describe the French quarters: on the side of the bridge, a separate attack with three or four hundred horse and six hundred foot; elsewhere, an attack of twelve hundred men.
+On 1 July (fol. 191) Brun writes that they must come as soon as possible with the cavalry relief sent by “His Most Serene Highness” (not identified here), without going to join it at Salins; that letting four or five days pass is a great risk; he recalls the diversions, the signals and recognition marks, the cutting of the enemy’s communications; an attack by day would be more honourable and more useful than by night. They are to bring rations, flour and corn, with tools to reap; the Gray garrison is to burn Rigny, Talmay, Pontailler and Mirebeau, and above all destroy the forge of Drambon and the others where the bombs thrown on Dole are made; raids are to go into the Duchy, Bassigny and Bresse.
+The cipher was broken at the time. Antoine Rossignol deciphered the intercepted dispatches in Paris; in July Richelieu sent him to Condé’s camp with “the decipherment of the letters that those of Dole were writing to the Marquis of Conflans” (Longin, no. CCLXXVIII). In late July and early August the court warned Conflans three times that “the enemy has found the key of the cipher”; the letter of 12 August (fol. 106) says so again and changes to another cipher, which we have not broken.</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/dole1636/key.tsv">key.tsv</a></p>
+<!-- texts:end -->
+<!-- replay:start -->
+<figure class="sreplay" data-src="steps/dole1636.json"></figure>
+<!-- replay:end -->
+<h2 id="sources"><span class="num">05</span> Sources</h2>
+<ul>
+<li>Besan&ccedil;on, Biblioth&egrave;que municipale, Ms 1594, fols. 127, 181, 182, 183, 191, 200 (M&eacute;moire vive; not reproduced).</li>
+<li>&Eacute;. Longin (ed.), <em>Le si&egrave;ge de Dole par le prince de Cond&eacute; (27 mai &ndash; 15 ao&ucirc;t 1636). Documents in&eacute;dits</em>, M&eacute;moires et documents in&eacute;dits pour servir &agrave; l&rsquo;histoire de la Franche-Comt&eacute; X, Besan&ccedil;on, 1912 (<a href="https://archive.org/details/mmoiresetdocum10acaduoft">Internet Archive</a>).</li>
+<li>Brice Dudout, <a href="https://bdudout.github.io/europe-chiffree/en/documents.html#girardot-1636">Europe chiffr&eacute;e, Girardot 1636</a>.</li>
+</ul>
+<p class="muted">Working files: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/dole1636">targets/dole1636/</a> in the repository.</p>
+</main>
+<footer><div class="in">
+  <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Biblioth&egrave;que municipale de Besan&ccedil;on (images not reproduced)</span>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="rohan1636.html" rel="prev">&larr; Savoy and Canisy to Rohan 1636 1636</a><a href="malsburg1637.html" rel="next">Malsburg to Wilhelm V 1637 1637 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
+</div></footer>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
+<script src="solve-replay.js?v=20261030a" defer></script>
+<script src="zoom.js?v=20261030a" defer></script>
+<script src="site.js?v=20261030a"></script>
+</body>
+</html>

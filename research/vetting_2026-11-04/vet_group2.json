@@ -1,0 +1,402 @@
+{
+ "2239": {
+  "verdict": "read",
+  "note": "Cipher is real (about 190 lines of 2-3-digit numbers, Riksarkivet R0000481 images 36-42) but every cipher line carries a contemporary interlinear Latin decipherment in a clean hand, so under the bar it is read from an existing decipherment; the interleaved plaintext is a ready crib if a key-from-adjacent-plaintext target is wanted.",
+  "closed": "A complete contemporary interlinear Latin decipherment is written over every cipher line on the leaves viewed (README: interlinear decipherment is prior art).",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "scan",
+    "where": "Riksarkivet IIIF R0000481 images 34-45 downloaded and viewed 4 Nov 2026 (https://lbiiif.riksarkivet.se/arkis!R0000481_00037/full/1400,/0/default.jpg etc.; NAD https://sok.riksarkivet.se/arkiv/rp6JwGDAFasc5R6mtPZn00); Diplomatica Muscovitica, Cosacica, SE/RA/2113/2113.2/2 (Philip Orliks brev 1711-1741), pages numbered 38-46.",
+    "extent": "One despatch of Orlyk, received 16 Nov 1713 (docket on image 36), about 7 pages / 6 openings (images 36-42), about 16 numeric lines per page, roughly 190 lines and 4,000 numbers by eye (not measured); clear covering letter signed Philippus Orlik, Bender, dated 1713 and received 13 Jan 1714, on image 43 (page 46).",
+    "cipher": "Numeric cipher of 2- and 3-digit values (up to about 450, several groups underlined) with a contemporary Latin plaintext written line by line above every cipher line in a second, neater hand (e.g. image 42: 'Augustus Warsavia subiit...', 'Hoc negotio mentem Sacrae Regiae Majestatis ... explorare'). So a full decipherment is on the leaf. The word 'clavis' on image 36 is the plaintext's first word, not a key table; no key table seen on images 34-45."
+   },
+   "prior_art": {
+    "decode": "known.py (harvested DECODE dump, Cryptoole snapshot, repo ledgers) on Orlyk, Orlik, Cosacica, 2113.2, R0000481: only the sweep-D row itself; no DECODE record.",
+    "tomokiyo": "Fetched 4 Nov 2026 and grepped the cryptiana index (crypto.htm) and unsolved, habsburg, spanish2, spanish2A-C, spanish4, variable2 and elizabeth pages: no Orlyk, Cossack, Ukrainian or Swedish-archive entry.",
+    "lasry": "Web search 'George Lasry historical ciphers Orlyk OR Rakoczi OR Hopken' returned only his general HistoCrypt list (d'Avaux 1684, papal 1721, Wars of Religion); nothing on Orlyk. No GL.htm entry found.",
+    "edition": "Searches in English and Ukrainian (Orlyk Bender 1713, letters, Riksarkivet) found no printed edition of this despatch; the Riksarkivet catalogue gives only 'brev'. Orlyk's Bender correspondence in Krupnytsky's monograph was not opened, so a printed text cannot be excluded.",
+    "literature": "Three web searches (English, Ukrainian, cipher-specific) gave only Orlyk biography, the Constitution (Latin original in Riksarkivet), Kornacka 2025 on the 1727 Latin letters and Sobol's reading of the 1720s Diary; no study of a cipher in the 1713 despatches."
+   },
+   "key_check": "No key table is on images 34-45 of R0000481 and no Orlyk key is held here: R4310 and R4296 (Chifferklaver box, Siebenburgen) are number keys of other users and were not tested against these 2-3 digit values. The interlinear Latin on the leaf serves as the crib.",
+   "duplicates": "known.py (Orlyk, Orlik, Cosacica, 2113.2, R0000481) finds no catalogue entry, target or lead for it other than 2239 itself; Cosacica 2113.2/1a image 224 (two-line postscript) is a separate item.",
+   "verdict": "read",
+   "searches": [
+    {
+     "query": "Pylyp Orlyk 1713 Bender cipher letter Latin deciphered Riksarkivet Diplomatica Muscovitica Cosacica",
+     "result": "Only Orlyk biography, Constitution (Latin original in Stockholm), Kornacka 2025 and Sobol's Diary reading; no cipher letter of 1713."
+    },
+    {
+     "query": "Листи Пилипа Орлика 1713 Бендери шифр лист розшифровка Стокгольм Риксархів",
+     "result": "Constitution returned from Stockholm 2025, Borschak on the Devolution; nothing about enciphered letters of 1713."
+    },
+    {
+     "query": "cryptiana Orlyk Orlik cipher Mazepa cipher Pylyp Orlyk key",
+     "result": "Orlyk biographies only; no cipher key or Tomokiyo page."
+    },
+    {
+     "query": "George Lasry historical ciphers Orlyk OR Rakoczi OR Hopken cipher solved HistoCrypt",
+     "result": "General Lasry/HistoCrypt list; nothing on Orlyk."
+    }
+   ]
+  }
+ },
+ "2243": {
+  "verdict": "partly_read",
+  "note": "Real graphic sign cipher in Latin letters (about 40 sign lines, Riksarkivet R0003533 images 18-23), but a contemporary partial interlinear Latin decipherment is written over the signs on images 20, 22 and 23 and a marginal gloss on 18, so it is read in part from an existing decipherment; the unglossed lower half of image 23 and the unglossed rows remain open.",
+  "closed": "Contemporary interlinear Latin glosses over the sign lines (image 23 lines 1-11 fully glossed, image 22 first rows, image 20, marginal note on image 18) are a decipherment on the leaf; the rest of the signs are unglossed.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "scan",
+    "where": "Riksarkivet IIIF R0003533 images 17-25 viewed 4 Nov 2026 (image 23 at 2400 px and cropped); Diplomatica Turcica, bihang Transylvanica, SE/RA/2119/2119.5/4 (Georg I and II Racoczis originalbrev till Kungl. Maj:t, 1632-1659); NAD https://sok.riksarkivet.se/arkiv/Twx98TOXEaEFk8kcjTgJY3.",
+    "extent": "Five letters of 1656-57 with sign passages: image 18 (5 sign lines), 20 (about 6 lines, letter dated 22 Jan 1657 n.s.), 22 (about 7 lines), 23 (a full page of about 21 sign lines, roughly 600 signs by eye, not measured).",
+    "cipher": "Geometric sign alphabet (triangles, circles, bars; probably monoalphabetic) in running Latin text. Contemporary Latin glosses in a small cursive hand are written over the signs: image 23 lines 1-11 ('...Chano Tartarorum concessa est facultas nos omnibus modis impediendi... Legatus etiam Turcicus ad me expeditus die 13 Februarii...'), image 22 first rows ('Legationes ad Chamum Tartarorum ... non sunt differendae'), image 20 between the sign rows, and a marginal line on image 18 ('In Januario aggrediemur Polonos nisi insuperabilis difficultas intervenerit'). The lower 10 lines of image 23 are not glossed. No key table on these images."
+   },
+   "prior_art": {
+    "decode": "known.py (DECODE dump, Cryptoole, repo ledgers) on R0003533, 2119.5/4, Rakoczi Charles X, Rakoczi Gyorgy II, Transylvanica: only the lead's own row; no DECODE record of these letters. Held DECODE keys R4310 (Siebenburgen Schauis) and R4296 are number keys.",
+    "tomokiyo": "Fetched and grepped the cryptiana index and the Charles V, Habsburg, 17th-century Spanish, variable-length and Elizabethan pages 4 Nov 2026: no Rakoczi, Transylvania or Hungarian entry.",
+    "lasry": "Web search for Lasry with Orlyk, Rakoczi, Hopken (4 Nov 2026) found no Rakoczi item; Lang's 2015 Hungarian repertory (checked pp. 191-330 by the sweep) does not list this Swedish-archive item.",
+    "edition": "Searches (Hungarian and Swedish) found Szilagyi's editions of the princes' family letters (MEK) and Szabo on the 1657 campaign (epa.oszk.hu), but none printing these letters to Charles X Gustav; the 1891 Swedish monograph on Charles X Gustav and Rakoczi (HathiTrust 006085800) returned HTTP 403 and was not opened, so a printed text of the glosses cannot be excluded.",
+    "literature": "Three web searches: Lang's dissertation on early modern Hungarian cryptography and Hegedus/Szilagyi on I. Rakoczi's sign letters; nothing on a decipherment of the 1657 sign passages to Charles X."
+   },
+   "key_check": "No sign-alphabet key for G. Rakoczi II to Sweden is held or found. DECODE R4310 and R4296 are number keys and do not apply to a sign cipher; the Comenius 1655 catalogue entry cites the Rakoczi envoys' table (MHH XXIII p. 740), a different system, not tested. The glosses on image 23 are the crib.",
+   "key_in_volume": "No key table in the images viewed (17-25); the rest of the 64-image volume (R0003533) was not paged.",
+   "duplicates": "known.py (R0003533, 2119.5/4, Rakoczi Charles X, Transylvanica, Siebenburgen) finds no catalogue entry, lead or target for this volume; catalogue entries on Comenius 1655 and Papai/Rakoczi II 1710 are different documents.",
+   "verdict": "partly_read",
+   "searches": [
+    {
+     "query": "II. Rakoczi Gyorgy levelei X. Karoly Gusztav svéd király 1657 titkos írás jelírás levél Riksarkivet",
+     "result": "Szilagyi editions and Szabo on the 1657 campaign; none prints these Swedish-archive letters."
+    },
+    {
+     "query": "Georg II Rakoczi Karl X Gustav 1657 brev Riksarkivet Siebenburgen chiffer",
+     "result": "Auction listing on the alliance, a 1891 Swedish monograph (HathiTrust 403, unopened); no cipher decipherment."
+    },
+    {
+     "query": "Lang Benedek Rakoczi Gyorgy rejtjel jelekkel irt level svéd király megfejtés",
+     "result": "Lang's dissertation, Szilagyi on I. Rakoczi's sign letters; nothing on II. Rakoczi to Charles X."
+    }
+   ]
+  }
+ },
+ "2244": {
+  "verdict": "open",
+  "note": "Four-digit code (values about 1000-2900) of the Hopken-Carlson Constantinople despatches, 1742: this volume holds both glossed passages (crib) and whole pages of bare numbers (images 198, 246, 342, 378, 438-522), no decipherment known; best of the family (siblings 2240-2248 share the key). Siblings 2241, 2242, 2245, 2246, 2247, 2248 (Turcica 9/23, 9/29, 9/24-9/27) share the code and were not viewed in this pass.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "scan",
+    "where": "Riksarkivet IIIF R0003637 (Diplomatica Turcica SE/RA/2119/2119.1/I/9/28, Brev till kanslipresidenten 1742; NAD https://sok.riksarkivet.se/arkiv/1wvyAzfQqL3W6GbBAfICcD): every 12th image of 567 (47 images, images 6-558) at 520 px, plus images 29, 86, 114, 198, 227, 246, 342, 397, 539 at 1000-1300 px, viewed 4 Nov 2026.",
+    "extent": "567 images. In the 47-image sample about 10 spreads carry bare four-digit runs set in clear Swedish (198, 246, 342, 378, 438, 450, 474, 486, 510, 522; image 342 alone has about 50 lines of numbers) and about 20 carry glossed passages (e.g. 29, 86, 114, 227, 397, 539); the rest are clear text or blank versos. Not paged leaf by leaf, so counts are by sampling.",
+    "cipher": "Four-digit numeric code, values about 1000-2900, in Swedish and French despatches of Hopken and Carlson, Jan-Dec 1742 (dockets 19 Feb, 8/19 Apr, 10/21 May, 27 Oct). Image 198 (8/19 April 1742) and 246 (10/21 May 1742): number runs inside clear Swedish with no gloss, no interlinear text, no key on the leaf. Image 342: two full pages of numbers, no gloss. In the glossed passages (image 227 French 'Extrait de la traduction de la lettre du Chan de Crimee', 29 Latin, 86 and 114 Swedish, 397, 539 French) a plaintext word is written over each number run, so those are cribs, not part of the open text."
+   },
+   "prior_art": {
+    "decode": "known.py (harvested DECODE dump, Cryptoole snapshot, repo ledgers) on Hopken, I/9/2, R0003589, R0003637: only the sweep-D rows and catalogue 1771 / lead 1770 (sibling volumes 9/21, 9/20); no DECODE record of any Hopken-Carlson cipher.",
+    "tomokiyo": "Fetched 4 Nov 2026 and grepped the cryptiana index and unsolved, habsburg, spanish*, variable2, elizabeth pages: no Hopken, Carlson, Swedish-Ottoman or 18th-century Swedish entry.",
+    "lasry": "Web search for Lasry with Hopken/Orlyk/Rakoczi (4 Nov 2026) found nothing on these despatches; the local GL.htm copies had no Hopken item per catalogue 1771's block.",
+    "edition": "Searches in English and Swedish for the 1742 despatches (Hopken Konstantinopel chiffer, Diplomatica Turcica) found no printed edition or calendar; Hopken's later Skrifter (Runeberg author page) and the Stockholm University note on diplomats' writings in Constantinople were not opened, so a printed text of individual despatches cannot be excluded.",
+    "literature": "Three web searches (English, Swedish, Hat-party cipher): background on Hopken and Carlson (Constantinople 1734-42/45, Hats alliance of 1739) and Bingol's Cryptologia papers on 19th-century Ottoman ciphers; nothing on the Swedish four-digit code."
+   },
+   "key_check": "No complete key held. The glossed passages of this volume (images 29, 86, 114, 227, 397, 539), of 9/22 (images 383, 390, 650, 670, all glossed) and of sibling volumes 9/20, 9/21 give partial number-to-word values for one code; the Chifferklaver box keys on DECODE are 17th-century and were not tested. The key was not rebuilt here.",
+   "key_in_volume": "Partial: glossed passages in the same volume (images 29, 86, 114, 227, 397, 539) and in 9/22 supply plaintext for the same code; no key table seen. Not yet used to rebuild or test a table.",
+   "duplicates": "known.py: lead 2244 is this volume only; catalogue 1771 is vol. 9/21 (1739-41) and lead 1770 vol. 9/20 (1734-38), different shelfmarks and years of the same code; siblings 2240 (9/22), 2241 (9/23), 2242 (9/29), 2245-2248 (9/24-9/27) are separate volumes, not duplicates. Not an enciphered copy of a printed text.",
+   "verdict": "open",
+   "searches": [
+    {
+     "query": "Hopken Carlson Constantinople 1742 despatches cipher four-digit code Swedish Riksarkivet Diplomatica Turcica deciphered",
+     "result": "Only Swedenborg documents mentioning Hopken's return in 1742, Ottoman-record articles and unrelated Constantinople cipher studies; no decipherment."
+    },
+    {
+     "query": "Carl Fredrik Hopken Konstantinopel 1735 1742 chiffer depescher Edvard Carlson kanslikollegium chiffrerade brev dechiffrering",
+     "result": "Runeberg author page, National Museum entry, Sylvia Ioannou record of the two men's travels; nothing about their ciphers."
+    },
+    {
+     "query": "Swedish diplomatic cipher 18th century Hat party Ottoman alliance 1739 numeric code Hopken Cryptologia OR HistoCrypt",
+     "result": "Hats party background, Bingol on 19th-century Ottoman ciphers; no Swedish 18th-century code study."
+    }
+   ]
+  }
+ },
+ "2240": {
+  "verdict": "read",
+  "note": "Same four-digit code as 2244, but in vol. 9/22 (1734-37) every cipher passage seen carries an interlinear plaintext (images 383, 390, 450, 650, 670; no bare passage in a 35-image sample), so it is a crib volume read from an existing decipherment; a bare passage elsewhere in the 695 images cannot be excluded.",
+  "closed": "Contemporary interlinear Swedish/French plaintext over every cipher passage in the sampled images; use 2240 as the crib source for rebuilding the code and test it on the bare passages of 2244 (and siblings).",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "scan",
+    "where": "Riksarkivet IIIF R0003589 (Diplomatica Turcica SE/RA/2119/2119.1/I/9/22, Brev till Kanslikollegium 1734-1737; NAD https://sok.riksarkivet.se/arkiv/BZZb19ExraUD08aOGW31T0): every 20th image of 695 (35 images) at 520 px, plus images 36, 140, 279, 383, 417, 556, 660 at 1300 px and 650, 670 at 1100 px, viewed 4 Nov 2026.",
+    "extent": "695 images, mostly clear Swedish letters and blank versos. Cipher seen on 383 (two pages of about 25 lines of four-digit numbers, values 1000-1700), 390, 450, 630, 650 and 670 (a French enclosure 'Bil. till Hopkens och Carlsons dep. 17/26 Nov 1737', about 30 lines of numbers); about 7 of the 35 sampled spreads carry cipher.",
+    "cipher": "Four-digit numeric code underlined in Swedish and French letters; on every cipher passage looked at, a plaintext (Swedish on image 383: 'Sedan hafwen Jag den Aran at lagga darvid...'; French on 670; Swedish on 650) is written over the numbers in a second hand, so a contemporary decipherment is on the leaf. No bare cipher page found in the sample; no key table seen."
+   },
+   "prior_art": {
+    "decode": "known.py (DECODE dump, Cryptoole, repo ledgers) on Hopken, I/9/2, R0003589: only sweep rows and catalogue 1771 / lead 1770 (same envoys, vols 9/21, 9/20); no DECODE record.",
+    "tomokiyo": "Fetched and grepped the cryptiana index and unsolved, habsburg, spanish*, variable2, elizabeth pages 4 Nov 2026: no Hopken, Carlson or Swedish-Ottoman item.",
+    "lasry": "Web search for Lasry with Hopken/Orlyk/Rakoczi found nothing on these despatches; no GL.htm item.",
+    "edition": "No printed edition of the 1734-37 despatches found in English or Swedish searches (Hopken Konstantinopel chiffer); Hopken's Skrifter on Runeberg not opened.",
+    "literature": "Same three web searches as lead 2244 (Hopken/Carlson cipher, Swedish chiffer search, Hat-party Ottoman cipher): background only; no study of the code."
+   },
+   "key_check": "No key table seen and none held; the interlinear plaintext in this volume is the crib for the code, shared with 9/20-9/29. Chifferklaver keys on DECODE are 17th-century and not applicable.",
+   "duplicates": "known.py: separate volume from catalogue 1771 (9/21, 1739-41) and lead 1770 (9/20, 1734-38); sibling of 2244 (9/28) and 2241-2248; not a duplicate of any of them.",
+   "verdict": "read",
+   "searches": [
+    {
+     "query": "Hopken Carlson Constantinople 1742 despatches cipher four-digit code Swedish Riksarkivet Diplomatica Turcica deciphered",
+     "result": "No decipherment; background on the envoys only."
+    },
+    {
+     "query": "Carl Fredrik Hopken Konstantinopel 1735 1742 chiffer depescher Edvard Carlson kanslikollegium chiffrerade brev dechiffrering",
+     "result": "Biographical pages only."
+    },
+    {
+     "query": "Swedish diplomatic cipher 18th century Hat party Ottoman alliance 1739 numeric code Hopken Cryptologia OR HistoCrypt",
+     "result": "No study of this code."
+    }
+   ]
+  }
+ },
+ "2192": {
+  "verdict": "open",
+  "note": "Genuine symbol-alphabet cipher on 13 folios (28 PARES images, five letters), no decipherment on or with the leaves; letter 1 has a clear copy in Panama 29 R.6 N.23 (4 Jul 1554, Alvaro de Sosa, the same legajo also holds the cipher copy), so letters 2-5 are open and letter 1 is a crib; Panama 29 R.6 N.22, N.24, N.25 (more Sosa letters in clear) were not matched to letters 2-5.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "scan",
+    "where": "PARES AGI, Indiferente General 737 N.171 (https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/300401, dbCode 3893240): all 28 images downloaded and viewed 4 Nov 2026 (image 1 and 19 at full 864x1240 px, the rest on contact sheets); also PARES Panama 29 R.6 N.23 (id 381859, dbCode 5088604), all 11 images viewed.",
+    "extent": "28 images for 13 folios: cipher on images 1-2, 5-6, 9-11, 13-14, 17-26 (about 25 pages, 12-25 lines each, roughly 350-400 lines; not measured); images 3, 7, 27 are 'imagen en blanco' and 4, 8, 12, 16, 28 are versos with a short docket.",
+    "cipher": "Substitution with a distorted-letter symbol alphabet (a few clear Spanish words inside, e.g. 'ausencia' on image 19) written in paragraphs and, on images 17-25, as numbered lines each marked with a slash; signatures and flourishes at the end of letters (images 2, 6, 11, 15). No interlinear decipherment, margin gloss or key on any of the 28 leaves. PARES description: 'Cinco cartas cifradas. S.F. 13 f. Nota: El texto descifrado de la primera carta se halla en el legajo Panama,29,R.6,N.23'. Panama 29 R.6 N.23 holds two clear copies of Sosa's letter of 4 July 1554 (images 1-2, 5) and a cipher copy (images 8-9), with the note 'el texto cifrado de esta carta se encuentra en Ind. Gen. 737 n 171'."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Alvaro de Sosa', 'Indiferente 737', 'Tierra Firme' (4 Nov 2026): only this lead; not in the DECODE dump or Cryptoole snapshot.",
+    "tomokiyo": "Fetched and grepped the cryptiana index and Spanish (spanish*, bergenroth) pages: Peru 1601/1604 items and Charles V / Philip II ciphers, nothing on Tierra Firme, Panama or Sosa.",
+    "lasry": "No Lasry or HistoCrypt item on Indies ciphers found (web search 'Alvaro de Sosa Tierra Firme carta cifrada 1554' and a Lohmann/Indies cipher search); GL.htm not found to list it.",
+    "edition": "PARES notes the clear text of letter 1 in Panama 29 R.6 N.23 (the plaintext, copied by the Audiencia, not a decipherment of letters 2-5); Lohmann Villena, 'Cifras y claves indianas' (1954), cited in web results for Indies ciphers, was not opened and could print keys; RAH DBE biography of Sosa (Panama 236) names no cipher.",
+    "literature": "Three web searches (Spanish): Sosa's governorship (appointed 31 May 1552), Romero Tallafigo 2023 on Council of the Indies cipher letters (1598, Ibarra), Benavent 2025 on 16th-century ciphers; no study or decipherment of Indiferente 737 N.171."
+   },
+   "key_check": "No key held. The clear text of letter 1 (Panama 29 R.6 N.23 images 1-2, 5, 4 Jul 1554) is a crib for the cipher copy at images 8-9 there and for the first letter of Indiferente 737 N.171; no alphabet has been built. Lohmann Villena (1954) not opened.",
+   "key_in_volume": "Not a key: the same-fonds clear copy of letter 1 (Panama 29 R.6 N.23) is a plaintext crib; further Sosa letters in clear at Panama 29 R.6 N.22 (24 Apr 1554), N.24 (24 Nov 1554), N.25 may be the plaintext of letters 2-5 and were not read against them.",
+   "duplicates": "known.py (names, shelfmark, Tierra Firme): only lead 2192; the AGI Indiferente 737 N.171 unit and Panama 29 R.6 N.23 appear in no catalogue entry or target.",
+   "verdict": "open",
+   "searches": [
+    {
+     "query": "\"Alvaro de Sosa\" gobernador Tierra Firme Panama 1554 carta cifrada Indiferente 737 descifrada",
+     "result": "RAH biography and chronicle texts; no cipher letter or decipherment linked to Indiferente 737."
+    },
+    {
+     "query": "cartas cifradas Indias siglo XVI Consejo de Indias cifra gobernador Panama 1554 criptografia AGI Indiferente General",
+     "result": "Lohmann Villena 1954 (cited only), Romero Tallafigo 2023 on 1598; nothing on this unit."
+    },
+    {
+     "query": "PARES find signatura PANAMA,29,R.6,N.22 / N.23 / N.24",
+     "result": "Three records of Sosa letters or copies (N.22 24 Apr 1554, N.23 4 Jul 1554, N.24 24 Nov 1554), digitised; only N.23 mentions the cipher."
+    }
+   ]
+  }
+ },
+ "1599": {
+  "verdict": "open",
+  "note": "Autograph letter of Leopold I to Charles II, Prague 14 Apr 1680: about 21 lines (roughly 240 numbers) of numeric cipher after a clear opening line, closing and signature; no gloss, key or claro on the leaf and no decipherment found anywhere.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "scan",
+    "where": "BNE Digital viewer for BNE RES/261/58, https://bnedigital.bne.es/bd/es/viewer?id=29736cc9-91f0-4f84-b38e-93bb5f93f932 (10 pages, CC BY 4.0), opened in Chrome 4 Nov 2026; pages 1-2 cover/blank, 5 the letter, 6 its verso, 7-8 seal and address panels, 9-10 blank.",
+    "extent": "One folio (page 5): a clear opening line ('Ser.mo Rey Carlos(?) ... He recibido la carta de V. Magd. de 8 de febrero y holgado de veer en ella') then about 21 lines of numbers, roughly 11 per line (about 240 groups by eye, not measured; 2- and 3-digit values up to 224, many struck through), ending in a clear closing ('Guarde Dios a V. Magd. como deseo. Praga 14 de Abril 1680. Buen tio y hermano de V. Mag. [signature]'). Page 6 is the verso showing through.",
+    "cipher": "Numeric cipher (values about 12-224, some groups such as 224 and 62 39 recurring, underlined or struck through in the usual way) set between a clear opening and a clear closing. No interlinear decipherment, no margin gloss, no key sheet and no claro on any of the 10 pages; only library marks (RES/261/58, 18632)."
+   },
+   "prior_art": {
+    "decode": "known.py (harvested DECODE dump, Cryptoole snapshot, repo ledgers) on RES/261, Leopoldo I, Leopold I: only this lead and unrelated Habsburg entries (Leopold I to Pötting, Mayerberg); no DECODE record.",
+    "tomokiyo": "Fetched 4 Nov 2026 and grepped habsburg.htm: 'Emperor Leopold I personally used cipher (Auer p.158)', Marchese di Grana (1664, 1668) and a general imperial cipher c.1680-90 in graphic symbols are described; no decipherment of this letter and no key for Leopold-Charles II correspondence. Not on unsolved.htm.",
+    "lasry": "No Lasry or HistoCrypt item on Leopold I's letters to Spain found (web search 4 Nov 2026 returned Ernst's 2017 Ferdinand III decipherment and Klaus Schmeh's posts only).",
+    "edition": "No edition of Leopold I's letters to Charles II found: web searches in Spanish and English return only the SNAC mirror of the BNE title (Prague, 14 Apr 1680, 2 leaves, 31 x 20 cm); Pribram and Landwehr's printed Leopold I to Pötting letters (1662-73) are a different series; a Huntington Library record surfaced in search but returned HTTP 429 and was not opened.",
+    "literature": "Three web searches (Spanish, English, Habsburg cipher with Auer): Auer on Habsburg cryptology, Ernst's Zifra Piccolominea for Ferdinand III; nothing on this 1680 letter or on a Leopold-Charles II cipher."
+   },
+   "key_check": "No key held. Candidate families, none tested: the Reichskanzlei numeric ciphers described by Auer and Tomokiyo (Grana 1664 and 1668, shared with Leopold's Pötting letters, printed by Pribram and Landwehr with ciphers resolved) and the Spanish court's general cipher of the 1680s (Devos); no table was available online to test.",
+   "duplicates": "known.py on RES/261, Leopoldo I, Leopold I finds no catalogue entry or target for this letter; RES/261/73 (lead 1600) is a different letter in the same BNE series. The Huntington record seen in search was not opened, so a second exemplar is not excluded.",
+   "verdict": "open",
+   "searches": [
+    {
+     "query": "Leopoldo I emperador carta cifrada Carlos II Praga 14 abril 1680 cifra BNE RES/261/58",
+     "result": "Only the SNAC bibliographic record (Prague, 14 Apr 1680, 2 leaves); no signature confirmation, no decipherment, no key."
+    },
+    {
+     "query": "Emperor Leopold I autograph cipher letter to Charles II of Spain 1680 Prague numeric cipher decipherment Habsburg cipher Auer",
+     "result": "Ernst 2017 on Ferdinand III's letters, Schmeh blog posts, a Huntington record (429, not opened); nothing on the 1680 letter."
+    },
+    {
+     "query": "cryptiana habsburg.htm Leopold I cipher Grana Potting (fetched and grepped locally)",
+     "result": "Leopold I used cipher personally (Auer p.158); Grana ciphers of 1664/1668; no decipherment of any Leopold I letter to Charles II."
+    }
+   ]
+  }
+ },
+ "1600": {
+  "verdict": "read",
+  "note": "Hurtado de Mendoza to Granvelle, Rome 12 May 1548, is printed in clear with its cipher passages in Bertomeu Masia 2009 (doc. 31, pp. 262-263; her note says the deciphering is in pencil, interlinear, by Granvelle's secretary), and the system is the Imperial Cipher of 1544-54 / 'cifra de Napoles 1547' already rebuilt in targets/mendoza1548.",
+  "closed": "Printed decipherment: M. J. Bertomeu Masia, La guerra secreta de Carlos V contra el Papa (2009), doc. 31 (BNM Res. 261/73, ff. 1r-2r), pp. 262-263, found via Google Books search-in-volume; p. 190 records the secretary's pencil interlinear decipherment on the original.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "scan",
+    "where": "BNE Digital viewer for BNE RES/261/73, https://bnedigital.bne.es/bd/es/viewer?id=fd34a0af-aca4-4122-92ae-02a7b7012a0f (8 pages, CC BY 4.0), opened in Chrome 4 Nov 2026; pages 3-4 the letter (f. 1r, f. 1v), 5-6 address panel and library label, 1-2 and 7-8 covers and blanks.",
+    "extent": "One bifolio, Hurtado's autograph: f. 1r with about 8 lines of cipher at the foot and in the margin, f. 1v about 17 lines of cipher between clear sentences and a clear closing ('Besso sus manos', signature); about 25 cipher lines in all (not measured).",
+    "cipher": "Mixed digit and symbol nomenclator/syllabary (digits, letters with marks, plus signs) written into a clear Spanish letter. The BNE viewer shows no gloss at overview size; the decipherment recorded in print is a pencil interlinear in the hand of Granvelle's secretary, which I could not see at viewer resolution."
+   },
+   "prior_art": {
+    "decode": "known.py: the sibling letter of 29 May 1548 (MSS/20212/29/1) is DECODE R1189, Decrypted, and the repo target mendoza1548 (catalogue 1268); RES/261/73 itself has no DECODE record.",
+    "tomokiyo": "spanish2.htm and spanish2C.htm fetched and grepped 4 Nov 2026: 'Cipher of Charles V, Prince Philip, Granvelle, Ferrante Gonzaga, Diego Hurtado de Mendoza (Imperial Cipher of 1544-1554)' (Meister p.212, Bertomeu Masia 2009, Luo Lu.31): the key family exists; the letter itself is not listed as undeciphered.",
+    "lasry": "No Lasry or GL.htm entry for this letter; his and Luo's Charles V cipher work cited by Tomokiyo covers the same Imperial Cipher.",
+    "edition": "Bertomeu Masia 2009, doc. 31 (pp. 262-263) 'BNM Res. 261/73 ff. 1r-2r, Diego Hurtado de Mendoza a Granvela, Roma 12 de mayo de 1548', printed with the cipher passages deciphered; p. 190 describes the original: Hurtado's autograph plus the hand of Granvelle's secretary, who deciphers in pencil, interlinear; the editor's own decipherment is in brackets (Google Books search-in-volume, id BqebtMQLd_MC, 4 Nov 2026). Weiss's Papiers d'Etat vol. covering 1547-49 (archive.org OCR) has no Mendoza letter.",
+    "literature": "Bucure 2025 (Estudios Romanicos 34) on the cifra de Napoles 1547 (the same syllabary, per targets/mendoza1548); Vazquez and Selden Rose, Algunas cartas de Hurtado de Mendoza, not seen. Web search found no other reading."
+   },
+   "key_check": "The Imperial Cipher of 1544-54 (Meister; Luo Lu.31; Tomokiyo) and the key rebuilt in targets/mendoza1548 (key_1548.md, from the 29 May 1548 letter's glosses) are the candidate keys; not applied here because a printed decipherment exists.",
+   "key_held": "targets/mendoza1548/key_1548.md (Bucure 'cifra de Napoles 1547' family) rebuilt for the 29 May 1548 letter; not tested on RES/261/73 since the letter is printed.",
+   "duplicates": "known.py on RES/261, Mendoza, MSS/7909: no catalogue entry or target for RES/261/73; targets/mendoza1548 (29 May 1548, MSS/20212/29/1) and DECODE R1189 are a different letter of the same correspondence.",
+   "verdict": "read",
+   "searches": [
+    {
+     "query": "Google Books search inside Bertomeu Masia 2009 (BqebtMQLd_MC): '12 de mayo'",
+     "result": "p. 55 discusses the 12 May 1548 letter; p. 262 'doc. 31 (BNM, Res. 261/73, ff. 1r-2r) Diego Hurtado de Mendoza a Granvela, Roma, 12 de mayo de 1548'."
+    },
+    {
+     "query": "Google Books search inside Bertomeu Masia 2009: 'descifrado de mano del secretario de Granvela a lapiz'",
+     "result": "pp. 190 and 263: the decipherment is in the hand of Granvelle's secretary, pencil, interlinear; the editor's own decipherment in brackets."
+    },
+    {
+     "query": "archive.org Weiss Papiers d'Etat du cardinal de Granvelle vols (OCR) grep Mendoza / 12 mai 1548",
+     "result": "No Hurtado de Mendoza letter of May 1548 in the 1547-49 volumes' OCR text; not printed there."
+    }
+   ]
+  }
+ },
+ "1266": {
+  "verdict": "partly_read",
+  "note": "Only one of ten letters is ciphered: MSS/7909/178 (Mary of Hungary, 30 Oct 1546) has a short passage of about 75 signs in three lines, partly glossed in the left margin ('pour les faire partir sans quelque advertissement'), so it is a contemporary partial decipherment, and the passage is too short to stand as a target.",
+  "closed": "Contemporary marginal decipherment on the cipher passage of MSS/7909/178; the cipher is three lines (about 75 signs) in an otherwise clear French letter; the other letters seen (7909/177, 179) are in clear.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "scan",
+    "where": "BNE Digital, Cartas de la Reina de Hungria al Cardenal Granvela, MSS/7909/177-187 (card https://bnedigital.bne.es/bd/card?oid=0000173419&site=bdh): viewers of MSS/7909/177, 178 and 179 opened in Chrome 4 Nov 2026 (178 page 1 at full width and zoomed); 180-187 not opened.",
+    "extent": "MSS/7909/178: one letter of three images (letter, verso show-through, address), docketed '30 de Octob. 1546', French; the cipher is three lines of signs (about 75, mixes of 8, +, crossbar and ladder forms) in the lower half of the page. 7909/177 (Hungarian Estates, Trnava 11 Dec 1547, Latin) and 179 (Mary, 8 Dec 1547?) are clear.",
+    "cipher": "Short symbol cipher inside a clear French letter. In the left margin, opposite the signs, a contemporary hand has written 'pour les faire / partir sans / quelque advertissement' and small interlinear words stand above the preceding clear line, so a partial decipherment is on the leaf. The BNE summary says one letter of the ten has cipher; I did not check 7909/180-187."
+   },
+   "prior_art": {
+    "decode": "known.py: the lead and the BNE/Hispana sweep only; not on DECODE.",
+    "tomokiyo": "spanish2C.htm fetched and grepped 4 Nov 2026: Reales Perez (2025) reconstructed Mary of Hungary's cipher of 1546 from two letters to Granvelle; those two are at the Real Biblioteca (RB II/2293), not BNE MSS/7909/178.",
+    "lasry": "No Lasry or HistoCrypt item on Mary of Hungary's ciphers found; GL.htm not located.",
+    "edition": "Reales Perez, 'Dechiffrer l'histoire', Estudios Romanicos 34 (2025) 159-177 (downloaded 4 Nov 2026): states that BNE, Besancon and the Real Biblioteca were searched, that only RB II/2293 ff. 185r-186v and 190r-190v used his cipher, and does not cite MSS/7909/178; Van Durme 1956 (Notes sur la correspondance de Granvelle), named in the BNE record, was not seen.",
+    "literature": "Pich-Ponce 2023 (Simon Renard-Granvelle ciphers) and Reales Perez 2025 are the studies; neither addresses this letter. Web search found no reading of MSS/7909/178."
+   },
+   "key_check": "No key held. Reales Perez's reconstructed 1546 table (from RB II/2293, a homophonic syllabary with numerals) and Pich-Ponce's PP1/PP3 were not available to test and the symbols here (8, +, ladder forms) were not matched to them; the marginal gloss gives only a few words.",
+   "key_in_volume": "The marginal gloss on the leaf itself ('pour les faire partir sans quelque advertissement') is the only plaintext; no key sheet in 7909/177-179.",
+   "duplicates": "known.py: no catalogue entry or target for MSS/7909/177-187; the neighbouring Hurtado letters (RES/261/73, MSS/20212/29) are different items.",
+   "verdict": "partly_read",
+   "searches": [
+    {
+     "query": "Reales Perez 2025 Dechiffrer l'histoire chiffre Marie de Hongrie Estudios Romanicos (article PDF downloaded and searched for BNE shelfmarks)",
+     "result": "Two letters, both Real Biblioteca II/2293; BNE searched but no BNE letter cited; MSS/7909 not mentioned."
+    },
+    {
+     "query": "cryptiana spanish2C.htm Mary of Austria 1546 Granvelle (fetched, grepped)",
+     "result": "Reales Perez 2025 and Pich-Ponce 2023/2025 listed; no entry for MSS/7909/178."
+    },
+    {
+     "query": "known.py MSS/7909, Reina de Hungria, Mary of Hungary",
+     "result": "No repo entry for this volume."
+    }
+   ]
+  }
+ },
+ "1267": {
+  "verdict": "partly_read",
+  "note": "BNE MSS/20214/52 is a volume of originals and copies in the Ko.1 mixed nomenclator: the cipher letters 52/1, 4, 6, 10, 14 have contemporary 'A claro' copies filed with them (52/4b, 6b, 10b, 14b, 15) and 52/7 was read in part by Dudout on 4 Nov 2026 in targets/sessa1524; Bergenroth's CSP Spain III also prints the deciphered 1525-26 passages, so only 52/8 and 52/11 may be unclaimed and they were not matched.",
+  "closed": "Period 'claro' copies are filed with most of the cipher letters (viewer thumbnails and spreads of 52/1, 4b, 6b, 10b, 14b, 15) and 52/7 is already worked in targets/sessa1524 (contribution of 4 Nov 2026); closing the volume rather than promoting it, with 52/8 (21 Apr 1526) and 52/11 as the possible leftovers.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "scan",
+    "where": "BNE Digital, Cartas del Duque de Sessa al Emperador Carlos V, MSS/20214/52 (card https://bnedigital.bne.es/bd/card?oid=0000172732&site=bdh): viewers of 19 of the 20 units opened in Chrome on 4 Nov 2026 (every unit except 52/14b), first page and thumbnails of each seen at 0.4-0.5 scale; spreads of 52/4 p. 2, 52/7 p. 3 and 52/8 p. 2 looked at in more detail; the other pages of the 5-9 image units were not opened one by one.",
+    "extent": "20 items, 1524-1554 (BNE: 20 letters 1524-29 plus one of 1554): cipher originals headed 'Sa. Ce. Ca. Mt' at 52/4 (Rome 7 May 1524), 52/6 (4 Jun 1524), 52/7 (24 Jul 1524, 5 images), 52/8 (Rome 21 Apr 1526, 3 images), 52/10 (12 Jul 1526, 9 images), 52/11 (July 1525?, 7 images), 52/14 (17 Apr 1526, 7 images); clear letters at 52/1 (the claro of 14 Apr 1524), 52/3, 52/13, 52/16; clear copies headed 'Al Rey del Duque de Sessa ... A claro' at 52/4b, 52/6b, 52/10b, 52/14b, 52/15. About 10-25 cipher lines per letter by eye, not measured.",
+    "cipher": "Mixed nomenclator of three-letter code groups and signs set between clear Spanish sentences (e.g. 52/7 pp. 2-3 and 52/8 p. 2: columns of groups with no gloss on the leaf), the same system as RAH Salazar A-31 (R9873 ff.). 52/7 and 52/8 carry no interlinear or claro on the pages viewed; the claros 'A claro' are separate units with the same dates."
+   },
+   "prior_art": {
+    "decode": "known.py: the RAH Salazar A-31 twins are DECODE R9873, R9877-78, R9881, R9883-84, R9890 (several Decrypted); the BNE MSS/20214/52 units are not DECODE records; targets/sessa1524 and sessa1523 already cite MSS/20214/52-1, 52-4, 52-6, 52-10, 52-14 as the period clears.",
+    "tomokiyo": "spanish2C.htm fetched and grepped 4 Nov 2026: Ko.1 (Duke of Sessa, Juan Perez, Herrera 1522-27; Kolosova 2017) is a published reconstruction of this cipher; no page of Tomokiyo reads these letters.",
+    "lasry": "No Lasry or GL.htm entry for Sessa's 1524-29 letters found.",
+    "edition": "Bergenroth, CSP Spain vol. III part 1 (archive.org calendarofletter0003pasc, OCR searched 4 Nov 2026): calendars Sessa's letters of 12, 14 and 24 July 1525 and 21-23 April 1526 with '(Cipher:)' and '(Common writing:)' marks, i.e. the cipher passages were deciphered and printed in English abstract from the Salazar copies; vol. III part 2 (1527-29) not read; no full-text edition of the BNE copies.",
+    "literature": "targets/sessa1524 NOTES (29 Oct and 4 Nov 2026 entries: 14 Apr 1524 compared with BNE 52-1 at 92.8%; Dudout's KS4 key read 52-7 at 94%); Kolosova 2017/2024 on Ko.1; no other study."
+   },
+   "key_check": "Ko.1 (Kolosova; Tomokiyo) and the repo key of targets/sessa1524 (extended by Dudout from the pairs 52-1, 52-4, 52-10, 52-14, R9893 and validated on 52-6) read the same system; 52/8 and 52/11 were not tested here.",
+   "key_in_volume": "The claro copies 52/4b, 6b, 10b, 14b, 15 in the volume itself are plaintexts of cipher letters; no separate key sheet seen.",
+   "key_held": "targets/sessa1524 key KS4 (Dudout, 4 Nov 2026) and key_working.md; Ko.1 in print; neither tested on 52/8 or 52/11.",
+   "duplicates": "known.py on MSS/20214, bdh0000172732 and Sessa: targets/sessa1524 already contains BNE 52-1 (as period clear), 52-7 (read in part, 94%) and uses 52-4/6/10/14; sessa1523 and R9873-R9899 are the RAH twins; so the volume overlaps existing targets.",
+   "verdict": "partly_read",
+   "searches": [
+    {
+     "query": "archive.org CSP Spain vol. III part 1 (calendarofletter0003pasc) OCR: Sessa Rome April and July 1526 and July 1525, cipher marks",
+     "result": "Sessa letters of 12, 14, 24 July 1525 and 21-23 April 1526 calendared with (Cipher:) passages printed; Salazar A. 37 'deciphering on separate sheet f. 333'."
+    },
+    {
+     "query": "known.py MSS/20214 bdh0000172732 Sessa",
+     "result": "targets/sessa1524 NOTES cite 52-1 claro, 52-4, 52-6, 52-10, 52-14 and Dudout's 52-7 reading."
+    },
+    {
+     "query": "cryptiana spanish2C.htm Sessa Ko.1 (fetched, grepped)",
+     "result": "Ko.1 Duke of Sessa 1522-27 reconstructed by Kolosova; Tomokiyo has an independent reconstruction note."
+    }
+   ]
+  }
+ },
+ "1269": {
+  "verdict": "read",
+  "note": "Two letters carry cipher: Carta 9 (Milan, 7 Jul 1525) has its contemporary clear text on a separate sheet in the same unit and Carta 12 (1527) an interlinear gloss; both systems (Ko.12, Ko.17) are published by Kolosova and Tomokiyo, and the other ten letters are clear.",
+  "closed": "Verified in the viewer 4 Nov 2026: Carta 9 pp. 2-3 show the cipher (about 17 lines) and, on the facing separate sheet in another hand, the clear text (Galeazzo Birago, the council of France); Carta 12 p. 3 shows a cipher passage with interlinear plaintext; keys published (Tomokiyo spanish2.htm 'Carta 9 ... 7 July 1525', Kolosova Ko.12, Ko.17).",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "scan",
+    "where": "BNE Digital, Cartas de Antonio de Leyva a diversos destinatarios, MSS/20212/43 (card https://bnedigital.bne.es/bd/card?oid=0000186678&site=bdh): viewers of 43-9 (Carta 9, 6 images, pp. 1-3 viewed) and 43-12 (Carta 12, 10 images, pp. 1 and 3 viewed) opened in Chrome 4 Nov 2026; the other ten letters not opened (BNE and the lead's earlier note: clear).",
+    "extent": "Carta 9 (Milan, 7 Jul 1525, to Charles V): cipher of about 17 lines of geometric/syllabic signs on page 3 left, preceded by clear text, and a separate sheet of clear text on page 3 right. Carta 12 (1527): a cipher passage of about 8 lines with underlined digits on the right of page 3, with interlinear plaintext.",
+    "cipher": "Carta 9: geometric sign cipher, with the clear text written on a separate sheet in another hand ('Yo tengo en Francia un amigo deste estado que se llama Galeazo Borago...'), so a full decipherment is with the letter. Carta 12: digit cipher with a small interlinear plaintext above the underlined digits."
+   },
+   "prior_art": {
+    "decode": "known.py on bdh0000186678, MSS/20212/43, Leyva: no DECODE record of these letters; Leyva keys Ko.12, Ko.17, Lu.15 appear in other catalogue entries.",
+    "tomokiyo": "spanish2.htm and spanish2C.htm fetched and grepped 4 Nov 2026: 'Antonio Leyva's Ciphers (1525, 1527)' with a 'Carta 9 ... 7 July 1525' item and Ko.17 (Leyva's cipher), reconstructed independently by Kolosova and Tomokiyo; the 1527 cipher uses vowel indicators.",
+    "lasry": "No Lasry or GL.htm entry for Leyva's 1525 or 1527 letters found.",
+    "edition": "BNE record: 'con la cifra en documento aparte e interlineal' (decipherment with the letters); calendared in CSP Spain for 1525; the key is printed in Kolosova 2017/2024 (Ko.12, Ko.17) and Luo 2021 (Lu.15).",
+    "literature": "Kolosova 2017 thesis and 2024 book (17 ciphers), Luo 2021, Tomokiyo spanish2.htm/spanish2C.htm; the Dudout reply of 29 Oct 2026 (CORRECTIONS-FOR-DANIEL) already suspected 'existing decipherment' for this record."
+   },
+   "key_check": "Published keys: Ko.12 (Leyva 1525), Ko.17 (1527), Lu.15; not re-tested here because the contemporary decipherments are on the leaves.",
+   "key_in_volume": "Carta 9's clear sheet (separate, same unit) and Carta 12's interlinear text are the decipherments in the volume.",
+   "key_held": "Ko.12 and Ko.17 are in print (Kolosova) and on Tomokiyo's page; not held as files here.",
+   "duplicates": "known.py on bdh0000186678, MSS/20212/43, Leyva: no catalogue entry or target for these letters; the lead's follow-up (other ciphered Leyva letters in AGS Estado Milan and RAH Salazar without a claro) is a different search.",
+   "verdict": "read",
+   "searches": [
+    {
+     "query": "BNE Digital viewer MSS/20212/43 Carta 9 pages 1-3 and Carta 12 pages 1, 3 (Chrome)",
+     "result": "Carta 9 cipher p. 3 with clear text on a separate sheet; Carta 12 cipher with interlinear plaintext."
+    },
+    {
+     "query": "cryptiana spanish2.htm Leyva Carta 9 7 July 1525 (fetched, grepped)",
+     "result": "Leyva's ciphers (1525, 1527) reconstructed; Ko.17 independent reconstructions."
+    },
+    {
+     "query": "known.py bdh0000186678 MSS/20212/43 Leyva",
+     "result": "No repo target for these two letters."
+    }
+   ]
+  }
+ }
+}

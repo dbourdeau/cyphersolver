@@ -1,0 +1,200 @@
+{
+ "1436": {
+  "verdict": "not_cipher",
+  "note": "Both Digital Maryland items (hawp id 170, 216) are viewed and hold only typewritten clear text: Tower's 12 Feb 1903 telegram is a decoded typescript headed 'Received in cipher' and Hay's 8 Apr 1904 reply is a Department of State 'Telegram Sent in Cipher' file form giving the plaintext; no cipher groups appear anywhere.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "scan",
+    "where": "Digital Maryland CONTENTdm, Henry White - John Hay Correspondence (Hampton NHS): https://collections.digitalmaryland.org/digital/collection/hawp/id/170 (5 pp.: Hay to White 16 Feb 1903, 2 pp., + 3-page attachment, page images 165-169) and https://collections.digitalmaryland.org/digital/collection/hawp/id/216 (4 pp., page images 212-215); page images and OCR text fetched through the CONTENTdm API on 4 Nov 2026 (the collections.digitalmaryland.org host works with the /digital/ URLs, not the old /cdm/ref/ links in the lead).",
+    "extent": "id 170: pp. 3-5 (CONTENTdm images 167-169) are the attachment, a 3-page typescript of Tower's telegram of 12 Feb 1903; id 216: p. 4 (image 215) is Hay's telegram of 8 Apr 1904, p. 3 White's inquiry, pp. 1-2 internal memoranda (M. Hanna to Mr Babcock, 8 Apr 1904). No cipher groups on any page.",
+    "cipher": "Page 3 of id 170 (viewed): typewritten, headed 'Received in cipher, 7:40 p.m. Berlin, February 12, 1903. Secretary of State. German Minister for foreign affairs has just informed me ...' and signed 'Tower. --BA--': this is the decoded English text of a telegram that came in cipher, so the leaf is plaintext. Page 4 of id 216 (viewed): printed State Department Form 281 'Telegram Sent in Cipher', Washington 8 Apr 1904, to White, London: 'White cipher. There is no objection. The prohibition affects only members of Congress. HAY.' with 'Enciphered by M.M.H., Chief Clerk's Office'; again the file copy shows the plaintext, not the enciphered text. Digital Maryland's own description says the 1903 telegram was 'received in cipher' and the 1904 one 'sent in cipher'; neither item carries ciphertext."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: known.py on 'Henry White', 'Hampton National', 'digitalmaryland', 'Babcock' finds only this lead and its sweep file; the local DECODE list (research/catalogue_harvest/decode) has no Hay-White record. The live DECODE site was not queried.",
+    "tomokiyo": "cryptiana.web.fc2.com: fetched the 293 pages linked from code/crypto.htm on 4 Nov 2026 and grepped them for Venezuela, 'John Hay', 'Henry White', Tower: no hit on this correspondence (the only 'Hay' hits are Malcolm Hay and Hay 1944 on the Coleman letters).",
+    "lasry": "No Lasry or HistoCrypt item on Hay-White telegrams found; web search on the telegrams returned only the Digital Maryland/DPLA records.",
+    "edition": "FRUS 1903 (history.state.gov, Venezuela claims chapter, e.g. frus1903/d389, d391) prints the Tower telegrams of Dec 1902 - Jan 1903 in plaintext (the $325,000 claims figure recurs in the search snippets); whether the 12 Feb 1903 telegram is printed was not confirmed, but the leaf itself is already plain English, so any FRUS pairing would be plaintext to plaintext, not a crib.",
+    "literature": "Web search (FRUS 1903 Tower Hay 12 February 1903 White Lansdowne) found only the DPLA/Digital Maryland catalogue records and FRUS chapters on the Venezuela blockade; no study of the 1903-04 State Department cipher telegrams of Hay and White."
+   },
+   "key_check": "No cipher text exists on the leaves, so no key is relevant; the existing catalogue row Roosevelt to Hay 27 May 1903 is a separate item whose ciphertext was seen.",
+   "duplicates": "known.py on 'Henry White', 'Hampton National', 'digitalmaryland', 'Hay': only this lead (and the unrelated catalogue row Roosevelt to Hay, 27 May 1903); no targets/ folder for Hay or White.",
+   "verdict": "not_cipher"
+  }
+ },
+ "1484": {
+  "verdict": "unvettable",
+  "note": "A six-item bundle of CPDOC/FGV Klinger-fonds records (1931-33, 1-3 folios each, different senders, microfilm rolo 1, nothing online): the catalogue gives only one-line summaries that state the content, and the 34-telegram sibling is explicitly 'cifrados e traduzidos', so no leaf can be seen to carry undeciphered ciphertext and the items probably do not share one key.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "CPDOC/FGV Accessus records, fetched 4 Nov 2026 by curl: BK ger 1932.11.16 https://www18.fgv.br/cpdoc/acervo/arquivo-pessoal/BK/textual/carta-cifrada-de-edgar-batista-pereira-a-bertoldo-klinger-sobre-a-rearticulacao-do-movimento-em-sao-paulo-e-rio-grande-do-sul-s-l and BK ger 1932.09.00/5 https://www18.fgv.br/cpdoc/acervo/arquivo-pessoal/BK/textual/radios-alguns-cifrados-sobre-noticias-diversas-uberaba-itapira; the other four records (BK ger 1932.04.07, 1933.04.28, 1933.04.30, 1931.06.30) and the sibling BK ger 1932.08.27/1 are taken from the sweep's saved CPDOC hit list research/latam_brazil/cpdoc_hits.tsv (same Accessus URLs), not re-fetched. Lead access 'archive'; CPDOC has not digitised the Klinger fonds (microfilm only).",
+    "extent": "BK ger 1931.06.30 (1 f.); 1932.04.07 (1 doc, 3 ff.); 1932.09.00/5 (11 radios, 5 ff., rolo 1 fot. 809-810, 'alguns cifrados'); 1932.11.16 (1 doc, 3 ff., rolo 1 fot. 825); 1933.04.28 (1 f.); 1933.04.30 (1 f.). The amount of cipher on each leaf is not stated.",
+    "cipher": "CPDOC Accessus 'Resumo' lines (verbatim, accents omitted): 'Carta cifrada de Edgar Batista Pereira a Bertoldo Klinger sobre a rearticulacao do movimento em Sao Paulo e Rio Grande do Sul. s.l.' (BK ger 1932.11.16); 'Radios, alguns cifrados sobre noticias diversas. Uberaba, Itapira.' (1932.09.00/5); 'Telegrama cifrado do Conselho Consultivo da Coxim (MT) (possivelmente a Bertoldo Klinger) sobre o Clube 3 de Outubro. Cuiaba.' (1932.04.07); 'Carta de Bertoldo Klinger cifrada a Democrito Barbosa respondendo a um telegrama. Campo Grande (MT).' (1931.06.30); 'Telegrama cifrado de Basilio Taborda a Bertoldo Klinger querendo dizer que podera enviar recursos para comprar sua passagem de retorno. Buenos Aires.' (1933.04.28); a second Taborda telegram (1933.04.30). The summaries state what each message says, so a decipherment or translation was available to the cataloguer; the catalogue does not say whether it is filed with the leaf. The sibling BK ger 1932.08.27/1 is described as 'Telegramas cifrados e traduzidos' (34 items, 45 ff.), i.e. with translations attached. Whether any leaf shows ciphertext and no decipherment cannot be seen."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: known.py on 'Klinger' and 'CPDOC' finds only this lead, the sweep files (research/latam_brazil) and unrelated CPDOC catalogue rows (Aranha, Setembrino de Carvalho); the local DECODE list has no Klinger record. The live DECODE site was not queried.",
+    "tomokiyo": "cryptiana.web.fc2.com: fetched the 293 pages linked from code/crypto.htm on 4 Nov 2026 and grepped them for Klinger: no hit; Brazil appears only in unrelated pages (Charles II, Meiji, CSS Florida).",
+    "lasry": "Web searches (Bertoldo Klinger cifra 1932 telegramas cifrados; CPDOC Klinger telegramas cifrados e traduzidos) found no Lasry, HistoCrypt or Cryptologia item on the Klinger telegrams.",
+    "edition": "No edition of the cipher items found; the searches returned only the NUPERGS (UFRGS) clear-text telegram summaries of the 1932 revolution and FRUS 1932 reports. Klinger's own memoirs and the CPDOC guide to his papers were not searched.",
+    "literature": "Web searches in Portuguese and English (Revolucao Constitucionalista telegramas cifrados Klinger Coxim; Bertoldo Klinger cifra) found nothing on the cipher system or any decipherment beyond the CPDOC summaries."
+   },
+   "key_check": "No key is held. The sibling BK ger 1932.08.27/1 (34 telegrams 'cifrados e traduzidos', 45 ff.) would give cipher/translation pairs for the 1932 Mato Grosso system, but it is not online; the 1931 and 1933 items (Klinger to Barbosa, Taborda in Buenos Aires) are probably other systems.",
+   "key_in_volume": "BK ger 1932.08.27/1 in the same fonds holds 34 telegrams 'cifrados e traduzidos' (Mato Grosso with Minas and Sao Paulo, Sao Paulo and Campo Grande); not seen, not tested.",
+   "duplicates": "known.py on 'Klinger', 'CPDOC', 'BK ger': only this lead and the Brazil sweep files; the catalogue rows citing CPDOC (Setembrino 1914, Aranha 1930) are other fonds; no targets/ folder for Klinger.",
+   "verdict": "unvettable"
+  }
+ },
+ "1794": {
+  "verdict": "unvettable",
+  "note": "TNA Discovery confirms eight SP 87 items (1745-47) 'partly in cipher' or 'original partly in cipher' from four different writer/recipient pairs (two of them duplicates of other letters), all undigitised, each summarised in full by the cataloguer; no leaf can be seen to show ciphertext without a contemporary decipher, and the group is not one key.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "TNA Discovery API records fetched 4 Nov 2026 (https://discovery.nationalarchives.gov.uk/API/records/v1/details/<id>; each record says digitised=false): C9189257 SP 87/16/12, C9189258 SP 87/16/13, C9233504 SP 87/17/58, C9233568 SP 87/17/122, C9067846 SP 87/21/45, C9040584 SP 87/23/41, C9040876 SP 87/23/51, C9046270 SP 87/23/70 (browse URLs https://discovery.nationalarchives.gov.uk/details/r/<id>). Lead access 'archive'; not digitised on Discovery, State Papers Online (Gale) or a Kew visit needed.",
+    "extent": "Eight items of 2-4 ff. each: SP 87/16/12 ff. 32-33; 87/16/13 ff. 34-35; 87/17/58 ff. 131-132; 87/17/122 ff. 302-303; 87/21/45 ff. 126-127; 87/23/41 ff. 86-88; 87/23/51 ff. 107-109; 87/23/70 ff. 149-152. The amount of cipher in each is not stated.",
+    "cipher": "Discovery descriptions (quoted): SP 87/16/12 'Duplicate (partly in cipher) of SP 87/16/10, with additional paragraph on the state of Ostend. Dated at Brussels'; SP 87/16/13 'Duplicate (partly in cipher) of SP 87/16/11 ... Dated at Ghent'; SP 87/17/58 'Harrington to Cumberland [original partly in cipher]: he has signed a treaty with the king of Sweden, as Landgrave, for 6,000 Hessians ...'; SP 87/17/122 'Harrington to Fawkener [original partly in cipher] ...'; SP 87/21/45 'Harrington to Ligonier, partially in cypher, enclosing a list ...'; SP 87/23/41 'Chesterfield to Cumberland, partly in cipher: the king's surprise that the prince of Orange has taken the command from Waldeck ...'; SP 87/23/51 'Chesterfield to Cumberland, partly in cipher: the king's decision on Saxe's letter will be delayed ...'; SP 87/23/70 'Cumberland to Chesterfield, partly in cipher, enclosing a letter ... Waldeck affair'. Every summary gives the full sense of the letter, which suggests the cataloguer worked from a deciphered text; whether a contemporary decipher is written over or filed with each leaf is not stated, and two are duplicates of letters described elsewhere (SP 87/16/10, /11). No leaf was seen."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: known.py on 'SP 87', 'Cumberland', 'Fawkener', 'Ligonier' and the local DECODE list (research/catalogue_harvest/decode) show no record of these items; the only hits are other SP 87 leads/entries (SP 87/8/65, SP 87/24/33) and the sibling lead 1793 (Cumberland to Chesterfield 12 May 1747, SP 87/22). The live DECODE site was not queried.",
+    "tomokiyo": "cryptiana.web.fc2.com: fetched the 293 pages linked from code/crypto.htm on 4 Nov 2026 and grepped them for Harrington, Chesterfield, Cumberland, Fawkener, Hanover: only the 1659 Chesterfield memoir passage and unrelated hits; nothing on the 1745-47 Flanders correspondence.",
+    "lasry": "Web search (Cumberland Chesterfield Harrington 1745 1747 cipher decipher SP 87 with Lasry, Cryptologia, HistoCrypt) found no study or decipherment; only TNA catalogue entries.",
+    "edition": "No edition of the ciphered passages found. A Camden Third Series item (Parts I-II covering Dec 1744 - Oct 1746, Cambridge Core) surfaced in the search but returned HTTP 403 and was not opened, so it is not shown to be this correspondence; whether a calendar or edition covers SP 87 for 1745-47 was not established.",
+    "literature": "Web search found no article on ciphers in the Harrington, Chesterfield or Cumberland letters of the Flanders campaign; the lead's own note that most were read at the time stands unverified either way."
+   },
+   "key_check": "No key held. SP 106 (cipher volumes) was not searched for a Harrington or Cumberland key; a contemporary Hanover/Flanders cipher key, if it exists, would sit in the SP 106 'cyphers' series and is not online.",
+   "duplicates": "known.py on 'SP 87', 'Cumberland', 'Fawkener', 'Ligonier', 'SP 106': no catalogue entry or target holds these shelfmarks; sibling lead 1793 is a different letter (SP 87/22, 12 May 1747) and catalogue SP 87/8/65 a different volume; two of the eight items are duplicates of SP 87/16/10 and /11 (not themselves leads).",
+   "verdict": "unvettable"
+  }
+ },
+ "1878": {
+  "verdict": "unvettable",
+  "note": "RGIA's own record (opened in Chrome on 4 Nov 2026, the site works again) is only a case title, Ф. 508 Оп. 3 Д. 1072 'Дворцовая полиция. Шифрованные телеграммы.', dated 1917-1918 (not 1917); it gives no extent, no scan and no word on whether ciphertext or decrypted copies are filed, and keys sit in Д. 1069-1071, so nothing shows an undeciphered leaf (lead's access field is empty; the case is offline).",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "RGIA (Russian State Historical Archive) KAISA record https://fgurgia.ru/object/3376911, opened in Chrome and by curl on 4 Nov 2026 (the lead's note that it was blocked no longer holds); the case list of Ф. 508 Оп. 3 was also pulled through the site's own tree/search listing. The page shows the description only, no link to scans; the lead's access field is empty and nothing indicates a digital copy.",
+    "extent": "'whole case' (Д. 1072); the record gives no number of leaves or telegrams.",
+    "cipher": "RGIA record, verbatim: 'Шифр Ф. 508 Оп. 3 Д. 1072. Название фонда ДВОРЦОВАЯ ПОЛИЦИЯ. Заголовок: Дворцовая полиция. Шифрованные телеграммы. Крайние даты: 1917-1918 гг.' ('Palace police. Enciphered telegrams.'). This is a title only: it does not say whether the telegrams are filed in cipher, as decrypted copies, or both. The neighbouring cases in the same opis are keys: Д. 1069 'Шифры для шифровки телеграмм. Часть I' and Д. 1070 '... Часть II' (1850-1917), Д. 1071 'Шифры для расшифровки телеграмм' (1850-1917); the lead named only 1070-1071."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: known.py on 'Ф. 508' and 'Palace police' finds only this lead and the 2 Nov Russia sweep files; the local DECODE list (research/catalogue_harvest/decode) has no Russian palace-police record. The live DECODE site was not queried.",
+    "tomokiyo": "cryptiana.web.fc2.com: fetched the 293 pages linked from code/crypto.htm on 4 Nov 2026 and grepped them for Palace (only Lambeth Palace, Blenheim, St James's), Okhrana, Tsar, Romanov and Russia: nothing on RGIA, the palace police or 1917-18 telegrams.",
+    "lasry": "Web searches (Tsarskoe Selo palace police 1917 ciphered telegrams ... Lasry, Tomokiyo, Cryptologia) found no decipherment or paper on this case or on a Tsarskoe Selo police cipher.",
+    "edition": "No edition known; a Russian-language search on the shelfmark and title (Дворцовая полиция РГИА Ф. 508 шифрованные телеграммы 1917) returned nothing on Ф. 508 Д. 1072, only general Romanov-arrest material and a prlib.ru record of a clear telegram from the Minister of the Interior.",
+    "literature": "Web searches found nothing on cipher use by the palace police in 1917-18; whether the telegrams were printed in the Provisional Government commission papers (Padenie tsarskogo rezhima) was not checked."
+   },
+   "key_check": "The RGIA keys in Д. 1069-1071 (1850-1917 ciphers of the palace police) are the obvious candidate keys; none is online, none seen or tested.",
+   "key_in_volume": "Д. 1069, 1070, 1071 of the same opis (Ф. 508 Оп. 3): cipher tables for enciphering and deciphering telegrams, 1850-1917; not seen, not tested.",
+   "duplicates": "known.py on 'Ф. 508', 'Palace police', 'Д. 1072': only this lead and the Russia sweep files; no catalogue entry or targets/ folder for the palace police.",
+   "verdict": "unvettable"
+  }
+ },
+ "1260": {
+  "verdict": "unvettable",
+  "note": "NRS GD124/15/1256 (2 documents, 29 Sep 1724 - 10 Mar 1725) is a letter in cipher plus a 'Note of the cipher used', on site only; the cataloguer states the letter's whole sense (Jacobite Court crisis, calumnies on 'Manley' = Mar), so the note is probably the key or a decipherment and the letter was read, but nothing online shows which, and no prior reading is on record.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "National Records of Scotland online catalogue, opened in Chrome 4 Nov 2026: https://catalogue.nrscotland.gov.uk/nrsonlinecatalogue/details.aspx?reference=GD124%2f15%2f1256 (GD124 Mar and Kellie papers, GD124/15 Correspondence and personal papers; 'Records updated 30 October 2026'; access status Open, location On site). The neighbouring items GD124/15/1255 and /1257 (clear letters to Lord Grange, Sep-Oct 1724) were also read. No digital image; lead access 'archive'.",
+    "extent": "2 documents (the letter in cipher and the note of the cipher); number of leaves and cipher groups not stated.",
+    "cipher": "NRS record, verbatim: 'Letter in cipher [? from Earl of Mar] describing a political crisis within the Jacobite Court at Rome [Italy], in which calumnies were loaded on 'Manley' (Mar). Note of the cipher used.' Dates 29 Sep 1724-10 Mar 1725; 'Extent 2 documents'. The summary gives the full sense and resolves the cover name 'Manley' to Mar, so whoever described it could read it; the 'note of the cipher used' is either the key (a bare cipher table) or a decipherment, and the record does not say which. Whether the cipher letter itself carries plaintext cannot be seen."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: known.py on 'GD124/15/1256' and 'Jacobite' finds only this lead, its UK-libraries sweep file and unrelated Jacobite catalogue rows (862, 1153 etc.); the local DECODE list (research/catalogue_harvest/decode) has no NRS Mar and Kellie record. The live DECODE site was not queried.",
+    "tomokiyo": "cryptiana.web.fc2.com: fetched the 293 pages linked from code/crypto.htm on 4 Nov 2026 and grepped them for Earl of Mar, Jacobite, Grange: Mar appears only as the 1716 gualterio.htm footnote and as Atterbury's betrayer (atterbury.htm); the 'Grange' hits are the 1571 Chisholm-Grange (Kirkcaldy of Grange) ciphers; nothing on a 1724 Mar letter.",
+    "lasry": "Web searches (Earl of Mar 1724 cipher 'Manley'; NRS GD124/15/1256) found no Lasry paper on it; the only 1724 cipher result is the Kopal-Makin 2024 decipherment of a letter of 24 Feb 1724 in UCL's Brougham Archive, a monoalphabetic substitution of unconfirmed Jacobite link, a different document.",
+    "edition": "None found: the lead records that HMC Mar and Kellie (1904) and the Supplementary Report (1930) do not print it or mention 'Manley'; the Calendar of the Stuart Papers volume for 1724 and the Stuart Papers at Windsor were not searched here.",
+    "literature": "Web search found only general accounts of Mar's fall from favour in 1724 (Atterbury's evidence, the Dunbar quarrel) and a Tartu thesis on Jacobite cipher keys (Stuart Papers, 1715-45); nothing on this letter."
+   },
+   "key_check": "The 'note of the cipher used' (second document of the item) is the only key known and is in the same item; not seen. Jacobite keys of the period (the Stuart Papers key typology, BL Add MS 32256) would be candidates if the note proves not to be a decipherment.",
+   "key_in_volume": "The 'Note of the cipher used' is the second of the two documents in GD124/15/1256 itself; not seen, so not tested.",
+   "duplicates": "known.py on 'GD124/15/1256', 'Jacobite', 'Mar and Kellie': only this lead and its sweep file; catalogue Jacobite entries (862, 1153 and others) are 1745 and Atterbury-plot items; no targets/ folder.",
+   "verdict": "unvettable"
+  }
+ },
+ "1244": {
+  "verdict": "unvettable",
+  "note": "The Staatsarchiv Zürich volumes E II 399 and E II 400 (microfilm only; lead access field empty, nothing online) name the cipher folios solely through Usteri's 1960 article 'Über Chiffrierung ... Breitingers Geheimschrift ... Peblis' (ZTB 80, pp. 11-28, with a table), which analyses exactly these 24 folios and may print the key or readings; the article and the leaves are unseen, so open versus read cannot be decided.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Staatsarchiv Zürich online catalogue, opened in Chrome 4 Nov 2026: E II 399 https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=324946 and E II 400 https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=324948 (Antistitialarchiv, Briefe an Antistes Johann (Jakob) Breitinger; 'Kopien bzw. Reproduktionen: Mikrofilm'; no digital images). The lead's access field is empty; the leaves are offline (microfilm / reading room), so the item is genuinely not online.",
+    "extent": "24 folios across two bound volumes: E II 399 fol. 105, 128, 130, 137, 250, 287, 307, 360 (volume 1632-33, fol. 1-324 plus index, 'Teil 1') and E II 400 fol. 8, 46, 76, 103, 122, 126, 278, 287, 295, 300, 305, 312, 329, 335, 337, 348 (volume 1633-35, fol. 1-431); the number of cipher groups per folio is not stated.",
+    "cipher": "The archive's catalogue does not describe the cipher itself; it names it only in the 'Auswertung' field of both records, verbatim: 'Usteri, Emil: Uber Chiffrierung in fruherer Zeit, insbesondere Antistes Breitingers Geheimschrift im Verkehr mit dem schwedischen Agenten Peblis, in: ZTB 80, 1960, S. 11-28 [betrifft E II 399, fol. 105, 130, 128, 137, 250, 287, 307, 360]' (and the E II 400 list above). Independent evidence that the correspondence was ciphered: Wallstein open-access study 'Botschafter des Protestantismus' (chapter on Breitinger and Peblis, notes 55-56): 'Ein grosser Teil dieses intensiven Briefwechsels wurde chiffriert', citing Usteri, Chiffrierung, S. 15 (his wife apparently kept the key). Whether the folios show cipher groups with or without a decipherment written on them cannot be seen."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: known.py on 'Breitinger' and 'Peblis' finds only this lead, its sweep file (research/swiss_austrian) and access_uncertain.md; the local DECODE list (research/catalogue_harvest/decode) has no Zurich Antistitialarchiv record. The live DECODE site was not queried.",
+    "tomokiyo": "cryptiana.web.fc2.com: fetched the 293 pages linked from code/crypto.htm on 4 Nov 2026 and grepped them for Breitinger, Peblis, Usteri, Zurich/Zürich: no hit on this correspondence (Swiss hits concern Sillery, Schiner, Guicciardini and similar other items).",
+    "lasry": "Web searches (Usteri Breitingers Geheimschrift Peblis; Breitinger Peblis Chiffre Staatsarchiv Zürich) found no Lasry, HistoCrypt or Cryptologia item on the Breitinger-Peblis cipher.",
+    "edition": "Emil Usteri, 'Über Chiffrierung in früherer Zeit, insbesondere Antistes Breitingers Geheimschrift im Verkehr mit dem schwedischen Agenten Peblis', Zürcher Taschenbuch auf das Jahr 1960 (Neue Folge 80), pp. 11-28, 'm. Tab.' (with a table; entry confirmed in Büchner's Zürcher Bibliographie, as recorded by the lead). The volume is not online (the Zentralbibliothek repository holds only the bibliography offprints) and was not opened, so whether it prints the key, the table of signs and readings of the folios is unknown; it is cited by Helfenstein 1963, Schlégl 1980, Braun-Bucher 1991 and the Wallstein study as the study of this cipher.",
+    "literature": "Web searches found the article cited in later literature (Google Books snippets) but no account of the cipher system; Gallati (Eidgenössische Politik) is cited by the Wallstein study for the reasons of secrecy, not the system. No other study of the cipher found."
+   },
+   "key_check": "No key held. Usteri's table (ZTB 80, 1960) is the likely key or key-like material for the Breitinger-Peblis cipher; not seen, not tested. Peblis's wife apparently kept the key (Usteri p. 15, per the Wallstein study).",
+   "duplicates": "known.py on 'Breitinger', 'Peblis', 'E II 399', 'Staatsarchiv Zürich': only this lead, research/swiss_austrian/candidates.json and access_uncertain.md; no catalogue entry or targets/ folder.",
+   "verdict": "unvettable"
+  }
+ },
+ "1903": {
+  "verdict": "open",
+  "note": "MNL OL P 396 no. 9027 (original, Pongracz Janos to Karolyi Sandor, Ujvar, 15 Sep 1710, 2 ff., 'titkos iras is') is catalogued as partly in secret writing with no decipherment or edition recorded; the only reading seen is Revay's interlinear for a different Pongracz letter of the same day (to Rakoczi, Kassa), so the sign system may be known in print but this letter is not shown to be read; scan not online (access field empty).",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "MNL OL Karolyi database record opened in Chrome 4 Nov 2026: https://adatbazisokonline.mnl.gov.hu/adatbazis/a-karolyi-leveltar-rakoczi-kori-iratai/adatlap/10429 (ark:52333/s10095r0fw305d); the record carries no image and the lead's access field is empty, so the original is genuinely offline (reading room at MNL OL, Budapest).",
+    "extent": "One original letter, P 396 box 23, old reference 'Ser. I. irregestrata_1710. szept. irreg. fol. 31-32' (two folios), one seal; amount of cipher not stated ('also' in secret writing).",
+    "cipher": "MNL record, verbatim: 'Pongracz Janos -> Karolyi Sandor; 1_09027; 1710.09.15.; Torzsszam P 396; Raktari egyseg 23; Fennmaradasi forma Eredeti; Leveliro Pongracz Janos, Cimzett Karolyi Sandor - generalis; Keletkezes helye Ujvar; Nyelv Magyar; Regi jelzet Ser. I. irregestrata_1710. szept. irreg. fol. 31-32; Pecset 1 - zaropecset; Megjegyzes: titkos iras is' (accents omitted; 'secret writing also'). The record names no decipherment, interlinear text or enclosure, and the MNL notes on other Karolyi letters (e.g. no. 8939, no. 699) say so explicitly when a decipherment is present; none is noted here."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: known.py on 'Pongr', 'Karolyi', 'P 396' finds only the sweep rows and the vetted siblings (catalogue 1902 Karolyi to Barkoczy no. 699 and the unattributed no. 10924; lead 1901 read; research/wikisource_commons/README.md); the local DECODE list has no Karolyi/Pongracz record. The live DECODE site was not queried.",
+    "tomokiyo": "cryptiana.web.fc2.com: fetched the 293 pages linked from code/crypto.htm on 4 Nov 2026 and grepped them for Pongr, Karolyi/Károlyi, Rakoczi/Rákóczi: nothing on Pongracz or Karolyi; Rákóczi appears only in blencowe2.htm (Blencowe's 1707 decipherment of a letter to the Elector of Bavaria) and gualterio.htm (1716 letter concerning Rakoczi).",
+    "lasry": "No Lasry, HistoCrypt or Cryptologia item on Pongracz's letters found in web searches (Hungarian and English); the Lang work below is the Hungarian literature.",
+    "edition": "Not printed as far as found. Commons file 'Encrypted letter to Francis II Rákóczi, 1710-09-15.jpg' (https://commons.wikimedia.org/wiki/File:Encrypted_letter_to_Francis_II_R%C3%A1k%C3%B3czi,_1710-09-15.jpg), scanned by Szilas from Révay, 'II. Rákóczi Ferenc és korának rejtjelezése' (1974), is a Pongracz letter of the same day to Rakoczi about the plague near Kosice, 'partially based on the Old Hungarian script'; the earlier vetting note records a letter-by-letter interlinear decipherment on that scan (not re-viewed here). Addressee and place differ from no. 9027 (Ujvar, to Karolyi), so it is a sister letter, not this one. Révay 1974 itself was not opened. Folia Rakocziana 8 (Bankuti, Karolyi Sandor's letters from Ersekujvar, Apr-Oct 1710, Vaja 2000) prints Karolyi's own letters; its contents were not seen.",
+    "literature": "Web searches (Hungarian: Pongracz Janos Karolyi Sandor 1710 titkosiras; Lang Benedek Rakoczi rejtjelezes Pongracz) found no study of this letter; Lang, 'Real Life Cryptology' (2015) and the AETAS 2014 article treat the Karolyi-Bercsenyi sign system, and I did not find Pongracz named in the search results."
+   },
+   "key_check": "No key held here. The Pongracz sign system as shown in Revay's interlinear (sister letter, Commons scan) and the keys in the Karolyi fonds are candidates once a leaf is imaged; none was tested because no image of no. 9027 is online.",
+   "key_held": "Commons scan 'Encrypted letter to Francis II Rákóczi, 1710-09-15.jpg' (Revay 1974, with interlinear decipherment per the earlier note): the Pongracz sign system as deciphered for a different letter; not tested on no. 9027 (no image). Per the 3 Nov 2026 rule it does not block.",
+   "key_in_volume": "Same fonds P 396: no. 11345 'kulcsok Rakoczi leveleiben hasznalt titkosirasokhoz' (a 19th-c. sheet of keys to the ciphers in Rakoczi's letters), no. 10543 'Titkos iras feloldo kulcsok (4 fol.)' and a 1704 key sheet (as recorded in the vetting of catalogue 1902); none imaged, none tested.",
+   "duplicates": "known.py on 'Pongr', 'Karolyi', 'P 396', 'Ujvar': no catalogue entry, lead or target for no. 9027; sibling lead 1904 is three other letters (nos. 7950-7952, July 1710), catalogue 1902 and no. 10924 are other letters; the Commons Pongracz letter is to Rakoczi, not in P 396.",
+   "verdict": "open"
+  }
+ },
+ "1904": {
+  "verdict": "open",
+  "note": "Three MNL OL P 396 originals from Ujvar, July 1710 (no. 7950 Nagyszegi and Ordody, no. 7951 its enclosure 'Triplica (?)', no. 7952 Szluha), each catalogued 'titkosirassal irt level' with no decipherment noted; the later copy no. 8939 (7 Aug 1710, same writers) contains the decipherment of its own earlier cipher parts and might also cover no. 7950, and the three writers may not share one key (split if so); scans not online (access field empty).",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "MNL OL Karolyi database records opened in Chrome 4 Nov 2026 (no image on any): no. 7950 https://adatbazisokonline.mnl.gov.hu/adatbazis/a-karolyi-leveltar-rakoczi-kori-iratai/adatlap/9367 (ark:52333/s10095rc2s486j), no. 7951 .../adatlap/9368 (ark:52333/s10095r0qxr45z), no. 7952 .../adatlap/9369 (ark:52333/s10095rj793jhh), and for the decipherment question no. 8939 .../adatlap/10341 (ark:52333/s10095r7c158vz). The lead's access field is empty; the originals are offline (MNL OL reading room).",
+    "extent": "Three items in P 396 box 20, one seal each: no. 7950 (old ref. Ser. I. regestrata_1710. jul. Fasc. 1. A. 41, 10 Jul 1710, 'este 6 ora', i.e. 6 p.m.), no. 7951 (Fasc. 1. A. 41 Mell., i.e. enclosure of A. 41, undated July 1710, no writer or addressee named), no. 7952 (Fasc. 1. A. 42, 10 Jul 1710). Number of folios and amount of cipher not stated.",
+    "cipher": "MNL records, verbatim (accents omitted): no. 7950 'Nagyszegi Gabor, Ordody Gyorgy -> Karolyi Sandor; 1710.07.10. este 6 ora; Ujvar; Eredeti; Megjegyzes: titkosirassal irt level; Kapcsolodo anyagok: P 396 - 1_Extractus_0974, 9368'; no. 7951 'Leiras: Triplica (?); Megjegyzes: titkosirassal irt level; Kapcsolodo anyagok: P 396 - 1_Extractus_0974'; no. 7952 'Szluha Ferenc -> Karolyi Sandor; 1710.07.10.; Ujvar; Eredeti; Megjegyzes: titkosirassal irt level; Kapcsolodo anyagok: P 396 - 1_Extractus_0975' ('letter written in secret writing'). No record notes a decipherment on or with these three. By contrast no. 8939 (Nagyszegi Gabor, commander of Ersekujvar, and Ordody Gyorgy to Karolyi, 7 Aug 1710, Ersekujvar; 'Masolat', i.e. a copy, Ser. I. irregestrata 1710 aug. fol. 14) is noted 'elozo titkos irassal irt reszeinek feloldasat is tartalmazza' (also contains the resolution of its previous secret-writing parts): that note concerns no. 8939 itself, but 'previous' could point back to the July letter no. 7950 by the same two writers; the records do not say."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: known.py on 'Karolyi', 'P 396', 'Szluha', 'Nagyszegi', 'Ordody' finds only the sweep rows and the vetted siblings (catalogue 1902 and no. 10924; lead 1901 read; lead 1903); the local DECODE list (research/catalogue_harvest/decode) has no Karolyi, Szluha or Nagyszegi record. The live DECODE site was not queried.",
+    "tomokiyo": "cryptiana.web.fc2.com: fetched the 293 pages linked from code/crypto.htm on 4 Nov 2026 and grepped them for Karolyi/Károlyi, Szluha, Nagyszegi, Ordody/Ordódy, Pongr and Rakoczi/Rákóczi: none of the Karolyi correspondents appears; Rákóczi only in blencowe2.htm (Blencowe's 1707 decipherment) and gualterio.htm.",
+    "lasry": "No Lasry, HistoCrypt or Cryptologia item on Karolyi's 1710 Ujvar correspondence found in web searches (Szluha Nagyszegi Ordody Karolyi 1710; Hungarian and English).",
+    "edition": "Not printed as far as found: web searches (Szluha Ferenc, Nagyszegi Gabor, Ordody Gyorgy, Karolyi Sandor, July 1710) surfaced Folia Rakocziana 8 (Bankuti Imre, 'Karolyi Sandor levelei Ersekujvarbol es harom varvedo szabalyzata', Apr-Oct 1710, Vaja 2000, reviewed Leveltari Kozlemenyek 72) which prints Karolyi's letters from Ersekujvar, not shown to include these incoming letters; its contents and the MNL 'Extractus 0974/0975' summaries were not seen (the Extractus items are named on the records but not linked to any viewable record). Revay 1974 (Rakoczi Ferenc es korenak rejtjelezese) was not opened.",
+    "literature": "Web searches found nothing on these three letters; Lang (2015, AETAS 2014) covers the Karolyi-Bercsenyi sign system; Ersekujvar surrendered on 24 Sep 1710, so these letters are from the last months of the garrison."
+   },
+   "key_check": "No key held and no image online to test one on. The Karolyi-Bercsenyi sign table (Thaly 1875 plate, Lang) and the key sheets in P 396 are candidates once a leaf is imaged; the Szilas/Revay Commons scans show Pongracz's different sign system, not tested here.",
+   "key_in_volume": "Same fonds P 396: no. 11345 (19th-c. key sheet to the Rakoczi-letter ciphers), no. 10543 'Titkos iras feloldo kulcsok (4 fol.)' and a 1704 key sheet (as recorded in the vetting of catalogue 1902); none imaged, none tested. No. 8939 (copy of 7 Aug 1710) contains a decipherment of earlier cipher parts and is the only known resolved text from these two writers.",
+   "duplicates": "known.py on 'Karolyi', 'P 396', 'Szluha', 'Nagyszegi', 'Ordody', '7950': no catalogue entry or target for nos. 7950-7952; sibling letters are catalogue 1902 (no. 699), no. 10924, lead 1901 (no. 11214, read) and lead 1903 (no. 9027). Caution on one key per entry: the three letters have three different writers (Nagyszegi/Ordody, unnamed, Szluha); a shared garrison cipher is plausible but unshown, so the entry may need splitting once leaves are seen.",
+   "verdict": "open"
+  }
+ }
+}

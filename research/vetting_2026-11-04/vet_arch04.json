@@ -1,0 +1,196 @@
+{
+ "1670": {
+  "verdict": "not_cipher",
+  "note": "Landesarchiv BW record B 90 BuE 1213 is clear correspondence about sending Geizkofler to Prague whose only cipher item is 'Schluessel fuer eine Wortchiffre', a key with no ciphertext.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Archivportal-D record opened in Chrome 4 Nov 2026: https://www.archivportal-d.de/item/EE77CQO7APUFONSROHLISXEAQBLXUPZC (Landesarchiv Baden-Wuerttemberg, Staatsarchiv Ludwigsburg, B 90 Geizkofler: Familienarchiv, B 90 Bue 1213, old Bue 341). No digital object; access 'archive'.",
+    "extent": "1 Buendel, 1586-1587; no folio count given.",
+    "cipher": "Archive title: 'Schriftwechsel Erzherzog Ferdinands mit Zacharias Geizkofler ueber die Abfertigung des letzten mit Instruktionen und Memorialien (Original Papierlibell) nach Prag an den kaiserlichen Hof zur Aufklaerung ueber die Entlassung des Freiherrn ...'; Enthaeltvermerk: 'Darin: Schluessel fuer eine Wortchiffre (Geheimschrift)'. The only cipher item is a key; the correspondence is described as ordinary (instructions, memorials) and no ciphered letter or decipherment is named. The lead's own note already says it names only a key."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE (known.py on Geizkofler, 'B 90 Bue 1213', Ludwigsburg searched the repo's DECODE dumps 4 Nov 2026: only this lead and its sweep file).",
+    "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 4 Nov 2026 and grepped for Geizkofler, Ludwigsburg, Wortchiffre: no hit (its only Thirty Years' War entries are Wallenstein's simple substitution and two Imperial ministers' homophonic ciphers solved 2018, unrelated); web search for cryptiana + the names found nothing.",
+    "lasry": "No Lasry/HistoCrypt item on Geizkofler or Archduke Ferdinand II's chancery found (web search 4 Nov 2026).",
+    "edition": "No edition of Bue 1213 found; the Geizkofler family archive is only catalogued (Landesarchiv BW finding aid on Archivportal-D); the Sigelen 2009 study and the Bamberg Geizkofler project (Kavalierstour correspondence) do not cover a cipher.",
+    "literature": "web search 'Geizkofler Zacharias Erzherzog Ferdinand 1586 Prag Chiffre Geheimschrift' returned only biographies (Deutsche Biographie), the family-archive description and an unrelated Ernst paper on Ferdinand III; nothing on a Wortchiffre."
+   },
+   "key_check": "The only cipher material is the key itself (a word cipher key in the same Buendel); no ciphertext in the unit to try it on, none held here.",
+   "key_in_volume": "Schluessel fuer eine Wortchiffre (Geheimschrift), in the same Buendel; not seen. It is the only cipher item, so the unit is a key without ciphertext.",
+   "duplicates": "known.py on 'Geizkofler', 'B 90 Bue 1213': only this lead and sweep_2026-11_archivportal_more/candidates.json; no catalogue or DECODE duplicate.",
+   "verdict": "not_cipher"
+  }
+ },
+ "1676": {
+  "verdict": "unvettable",
+  "note": "GStA PK Rep. 49 R Nr. 129 (Johann Constantin von Ferber trial, 1743-46) lists seized 'Chiffren' among army lists and correspondence, but the record does not say whether they are keys or ciphered letters, and nothing is online to look at.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Archivportal-D record opened in Chrome 4 Nov 2026: https://www.archivportal-d.de/item/LUKBPI4OMY7PWFJGUFHV6WYOBGEIRHKE (GStA PK, I. HA GR, Rep. 49 Fiscalia, R Nr. 129). No digital object; the lead has access 'archive'.",
+    "extent": "Unknown; one Beilagen volume, 1743-1746.",
+    "cipher": "Archive title: 'Prozess gegen den Geheimen Rat und preussischen Residenten in Danzig, Johann Constantin von Ferber, wegen Spionage und Hochverrats. Beilagen'; Enthaeltvermerk: 'Beschlagnahmte Unterlagen Ferbers, dabei u. a. Chiffren, General-Listen der preussischen Armee 1743 und 1746, Verzeichnisse abgesandter und empfangener Briefe, Schriftwechsel mit Korrespondenzpartnern u. a. in Wien, Dresden, Danzig, Warschau und Kopenhagen'. 'Chiffren' may be keys or ciphered letters; the record does not say. Correction: the lead calls him 'Jakob? Ferber'; he is Johann Constantin von Ferber (1704-46). No decipherment is mentioned."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE (known.py on Ferber, Danzig and the shelfmark searched the repo's DECODE dumps 4 Nov 2026: only this lead and its sweep file).",
+    "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 4 Nov 2026 and grepped for Ferber, Danzig: no hit (its only Thirty Years' War entries are Wallenstein's simple substitution and two Imperial ministers' homophonic ciphers solved 2018, unrelated); web search for cryptiana + the names found nothing.",
+    "lasry": "No Lasry/HistoCrypt item on Ferber's treason correspondence found (web search 4 Nov 2026).",
+    "edition": "No edition found. Sibling GStA files of the same trial (Rep. 49 R Nr. 135, 1746-47; Nr. 138 Hoffmann, 1717-46) are catalogue records only and mention no ciphers or decipherments. NDB/Deutsche Biographie 'Ferber, Konstantin' (sfz15821/sfz15815) mentions the treasonous correspondence; the Polish article in Przeglad Historyczny 48 (1957) was not read.",
+    "literature": "Two web searches (Ferber Danzig Resident Hochverrat Chiffre; Ferber 1746 Sachsen Russland Verraeter) gave only the archive records and biographies; no article on a cipher or its decipherment."
+   },
+   "key_check": "No Ferber key held here or on DECODE; the 'Chiffren' in the file may be his keys, not tested.",
+   "duplicates": "known.py on Ferber, 'Rep. 49', Danzig: only this lead and its sweep file. No catalogue or DECODE record.",
+   "verdict": "unvettable"
+  }
+ },
+ "1677": {
+  "verdict": "unvettable",
+  "note": "SStA Bautzen 50120 Baruth Nr. 808 lists 'Geheimschrift' only as one heading among an envoy's instruction and treaties, with no sign that ciphertext (rather than a key) exists, and nothing online to check.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Archivportal-D record opened in Chrome 4 Nov 2026: https://www.archivportal-d.de/item/XU5D7DYWUBAMRJ2YQV3BOHZDK7WCFDFT (Saechsisches Staatsarchiv, 50120 Gutsherrschaft Baruth, Nr. 808, 'Zu benutzen im Staatsfilialarchiv Bautzen'). No digital object; the lead has access 'archive'.",
+    "extent": "Unknown; one Akte, 1742-1745.",
+    "cipher": "Archive title: 'Gesandschaft des Geheim Rats Nicolaus Freiherr von Gersdorff am russischen Hof'; Enthaeltvermerk: 'Enthaelt auch: Instruktion als Gesandter; Geheimschrift; Defensiv- und Garantietraktat zwischen Kaiserin Anna von Russland und Koenig Friedrich August II. von Polen; Erneuerung des Traktates (1733) mit Kaiserin Elisabeth'. 'Geheimschrift' is a bare heading between an instruction and a treaty: it could be the envoy's cipher key or ciphered dispatches. No decipherment mentioned."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE (known.py on Gersdorff, Baruth and the shelfmark searched the repo's DECODE dumps 4 Nov 2026: only leads 1682/1683 for other Saxon Gersdorff material, this lead and its sweep file).",
+    "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 4 Nov 2026 and grepped for Gersdorff, Baruth, Russia: no hit (its only Thirty Years' War entries are Wallenstein's simple substitution and two Imperial ministers' homophonic ciphers solved 2018, unrelated); web search for cryptiana + the names found nothing.",
+    "lasry": "No Lasry/HistoCrypt item on Saxon-Polish envoys in St Petersburg 1742-45 found (web search 4 Nov 2026).",
+    "edition": "No edition found; the Saxon envoy's dispatches would be in HStA Dresden 10026 Geheimes Kabinett, not searched online beyond catalogue level.",
+    "literature": "Web search 'Nicolaus von Gersdorff Gesandter St. Petersburg 1742 Geheimschrift' found no source on this envoy or his cipher (only a general note that Saxon envoys' cipher letters in Dresden often lack a translation, and a Hanover cipher key for Weber in Petersburg)."
+   },
+   "key_check": "No Gersdorff key held here or on DECODE.",
+   "duplicates": "known.py on Gersdorff, Baruth, 'Geheimschrift': leads 1682/1683 (Saxon Geheimes Kabinett Chiffren, other dates and people), biermann1675 NOTES (a different Gersdorff mention); no duplicate of this item.",
+   "verdict": "unvettable"
+  }
+ },
+ "1762": {
+  "verdict": "partly_read",
+  "note": "AIS title of HHStA Kriegsakten 119-98 (Volmar to the Emperor, 9 Jan 1645, fol. 351-356) says '(chiffriert und Klartext)', the catalogue's own sign (cf. entry 489) of an enclosed clear text, so it is probably not an undeciphered item; unconfirmed without a leaf.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "AIS record opened in Chrome 4 Nov 2026: https://www.archivinformationssystem.at/detail.aspx?ID=3950425 (AT-OeStA/HHStA Kriegsakten 119-98, alt 156, Karton 119 'Kriegsakten in genere', 1644-1645). Metadata only, no image link; access 'archive'.",
+    "extent": "6 folios (Unterteilung/Enthaelt 351-356).",
+    "cipher": "AIS title: 'Dr. Volmar an den Kaiser ueber die Anlehnung des Bischofs von Osnabrueck an die franzoesischen Gesandten. (chiffriert und Klartext)', 9 Jan 1645. The title says both a ciphered text and a clear text are present; six folios for one report fits a ciphered original plus its clear version. Whether the clear text is a chancery decipherment of the whole letter or only the unciphered part is not stated (not seen)."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE (known.py on Volmar, 119-98 and AIS id 3950425 searched the repo's DECODE dumps 4 Nov 2026: only leads and catalogue entry 609 on Koerler/Muenster, a different Volmar mention).",
+    "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 4 Nov 2026 and grepped for Volmar, Osnabrueck: no hit (its only Thirty Years' War entries are Wallenstein's simple substitution and two Imperial ministers' homophonic ciphers solved 2018, unrelated); web search for cryptiana + the names found nothing.",
+    "lasry": "No Lasry/HistoCrypt item on this item found (web searches 4 Nov 2026). Nearest: Ernst's Zifra Piccolominea (Ferdinand III to Leopold Wilhelm, 1640-41), Schmeh's 'Unsolved cryptograms from the Thirty Years War' posts and the Heusner/Oxenstierna 1637 decipherment (Tartu): all different letters and systems.",
+    "edition": "Acta Pacis Westphalicae Serie II A (kaiserliche Korrespondenzen 1644-46) and Volmar's Diarium cover this week; not reachable here (in copyright), so whether the letter and its clear text are printed could not be checked. APW editions print the decrypted text as a rule, which would make this a read item.",
+    "literature": "Web search 'Volmar Bischof Osnabrueck Wartenberg 9 Januar 1645 Kaiser Chiffre APW' gave only Wartenberg biographies and APW diary references; no statement on a cipher."
+   },
+   "key_check": "No Volmar key held here; the imperial plenipotentiaries' cipher at Muenster/Osnabrueck is not in the collection.",
+   "duplicates": "known.py on Volmar, 119-98, 3950425: only the lead itself (and an unrelated Volmar mention in catalogue 609); no catalogue duplicate.",
+   "verdict": "partly_read"
+  }
+ },
+ "1763": {
+  "verdict": "open",
+  "note": "AIS HHStA Kriegsakten 100-4-18 (Ruischenberg to the Reichsvizekanzler, 21 Nov 1640, fol. 76-77) is described as 'Original teilweise in Chiffer' with no clear text or decipherment named; a distinct item from the Ruischenberg letters in catalogue 491 (100-4-11, 100-4-13), not seen on a leaf.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "AIS record opened in Chrome 4 Nov 2026: https://www.archivinformationssystem.at/detail.aspx?ID=4328784 (AT-OeStA/HHStA Kriegsakten 100-4-18, Karton 100 'Kriegsakten in genere (alt 130, 131)', Kriegsakten Nov-Dec 1640). Metadata only, no image link; access 'archive'.",
+    "extent": "2 folios (Unterteilung/Enthaelt 76-77), partly ciphered.",
+    "cipher": "AIS title: 'Original teilweise in Chiffer - Ruischenberg an den Reichsvizekanzler, er berichtet ueber Feindseligkeiten der Lueneburger, Banérs Empfang in Hildesheim und ueber die unberechtigten Gravamina Herzog Augusts', 21 Nov 1640. The title says the original is partly in cipher; it names no 'Klarschrift', 'entziffert' or enclosed clear text, so no decipherment is recorded on or with it."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE (known.py on Ruischenberg, 100-4-18, 4328784, Banér, Hildesheim searched the repo's DECODE dumps 4 Nov 2026: no DECODE hit; hits only in catalogue 491, leads and CATALOGUE.md).",
+    "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 4 Nov 2026 and grepped for Ruischenberg, Reuschenberg, Banér, Hildesheim: no hit (its only Thirty Years' War entries are Wallenstein's simple substitution and two Imperial ministers' homophonic ciphers solved 2018, unrelated); web search for cryptiana + the names found nothing.",
+    "lasry": "No Lasry/HistoCrypt item on this item found (web searches 4 Nov 2026). Nearest: Ernst's Zifra Piccolominea (Ferdinand III to Leopold Wilhelm, 1640-41), Schmeh's 'Unsolved cryptograms from the Thirty Years War' posts and the Heusner/Oxenstierna 1637 decipherment (Tartu): all different letters and systems.",
+    "edition": "No edition found. Johann (Sigismund) von Reuschenberg appears in Deutsche Biographie (sfz77429); no printed cipher text or decipherment of this report was found.",
+    "literature": "Web searches 'Ruischenberg Reichsvizekanzler 1640 Chiffre Banér Hildesheim Herzog August' and 'Schmeh Thirty Years War Kriegsakten Wien Chiffren' found nothing on this letter; Peter Nuechterlein's 100+ Vienna Thirty Years' War ciphers (Schmeh blog) are a different set and no reading of this item is reported."
+   },
+   "key_check": "No Ruischenberg key held here. Not tested: Ernst's Zifra Piccolominea (Ferdinand III's own cipher with Leopold Wilhelm), which is unlikely to be the system of a Reich official's report.",
+   "key_in_volume": "None named. Siblings 100-4-11 and 100-4-13 (Ruischenberg, catalogue 491) are partly ciphered too, not glossed per the record; not tested.",
+   "duplicates": "known.py on Ruischenberg, 100-4-18, 4328784: catalogue 491 (15 partly ciphered Kriegsakten items incl. Ruischenberg 100-4-11 and 100-4-13, shelfmark list does NOT include 100-4-18) and lead 1768 (Kriegsakten 134-79, a different Ruischenberg/Plettenberg letter). Same series, different item, so not a duplicate; a key from 491's siblings could apply.",
+   "verdict": "open"
+  }
+ },
+ "1764": {
+  "verdict": "not_cipher",
+  "note": "AIS HHStA Kriegsakten 112-3-2 (Graf Kurz to his brother-in-law Traun, 1 Jul 1643, one folio) says the writer 'uebersendet Chiffern', i.e. sends cipher tables; no ciphertext is described.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "AIS record opened in Chrome 4 Nov 2026: https://www.archivinformationssystem.at/detail.aspx?ID=3954611 (AT-OeStA/HHStA Kriegsakten 112-3-2, Karton 112 'Kriegsakten in genere (alt 146, 147)', Juli-August 1643). Metadata only, no image link; access 'archive'.",
+    "extent": "1 folio (Unterteilung/Enthaelt 22).",
+    "cipher": "AIS title: 'Graf Kurz an Herrn v. Traun, seinen Schwager, hofft auf sein Einlangen in Koeln und uebersendet Chiffern', 1 Jul 1643. The letter hopes Traun arrives in Cologne and sends him cipher tables; the record does not say the letter itself is ciphered. At most the folio is a key, which is a key without ciphertext."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE (known.py on Kurz, Traun, 112-3-2, 3954611 searched the repo's DECODE dumps 4 Nov 2026; DECODE holds Kurz von Senftenau's 1639 Hamburg letters to Trauttmansdorff, R3811-R4736, a different series and date).",
+    "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 4 Nov 2026 and grepped for Kurz, Traun: no hit (its only Thirty Years' War entries are Wallenstein's simple substitution and two Imperial ministers' homophonic ciphers solved 2018, unrelated); web search for cryptiana + the names found nothing.",
+    "lasry": "No Lasry/HistoCrypt item on this item found (web searches 4 Nov 2026). Nearest: Ernst's Zifra Piccolominea (Ferdinand III to Leopold Wilhelm, 1640-41), Schmeh's 'Unsolved cryptograms from the Thirty Years War' posts and the Heusner/Oxenstierna 1637 decipherment (Tartu): all different letters and systems.",
+    "edition": "No edition found.",
+    "literature": "Web searches (Schmeh Thirty Years War Kriegsakten; Kurz Traun Koeln 1643) found nothing on this item."
+   },
+   "key_check": "If the 'Chiffern' are Kurz's cipher, it could be related to the kurtz1639 series (Kurz von Senftenau 1639, key rebuilt here), but identity of this Graf Kurz with Ferdinand Sigmund Kurz von Senftenau is not established; not tested.",
+   "duplicates": "known.py on Kurz, Traun, 112-3-2, 3954611: catalogue 359 and CATALOGUE.md mention Kurz von Senftenau (different letters, DECODE R3811 series); no duplicate of this item.",
+   "verdict": "not_cipher"
+  }
+ },
+ "1765": {
+  "verdict": "not_cipher",
+  "note": "AIS HHStA Kriegsakten 130-2-43 (Lamberg to Holzapfel, 7 Nov 1647, fol. 79-80) only says 'Chiffern stehen zur Verfuegung', an offer of cipher use in an ordinary letter, with no ciphertext described.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "AIS record opened in Chrome 4 Nov 2026: https://www.archivinformationssystem.at/detail.aspx?ID=4091515 (AT-OeStA/HHStA Kriegsakten 130-2-43, Karton 130 'Kriegsakten in genere (alt 170, 171)', Nov 1647). Metadata only, no image link; access 'archive'.",
+    "extent": "2 folios (Unterteilung/Enthaelt 79-80).",
+    "cipher": "AIS title: 'Graf Maximilian Lamberg ersucht Holzapfel, ihm ueber die Armada auf dem Laufenden zu erhalten, wie er gleicherweise ueber die Unterhandlungen tun will. Chiffern stehen zur Verfuegung.', 7 Nov 1647. The final sentence says ciphers are available; the record does not say any part of the letter is ciphered, so no cipher document is shown."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE (known.py on Lamberg, Holzapfel, 130-2-43, 4091515 searched the repo's DECODE dumps 4 Nov 2026: no DECODE hit).",
+    "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 4 Nov 2026 and grepped for Lamberg, Holzapfel: no hit (its only Thirty Years' War entries are Wallenstein's simple substitution and two Imperial ministers' homophonic ciphers solved 2018, unrelated); web search for cryptiana + the names found nothing.",
+    "lasry": "No Lasry/HistoCrypt item on this item found (web searches 4 Nov 2026). Nearest: Ernst's Zifra Piccolominea (Ferdinand III to Leopold Wilhelm, 1640-41), Schmeh's 'Unsolved cryptograms from the Thirty Years War' posts and the Heusner/Oxenstierna 1637 decipherment (Tartu): all different letters and systems.",
+    "edition": "No edition found.",
+    "literature": "Web searches (Schmeh Thirty Years War; Holzapfel Traun 1647 imperial cipher) found only Ernst's Zifra Piccolominea and the Schmeh posts; nothing on this letter."
+   },
+   "key_check": "No key held; catalogue 489 (Ferdinand III to Holzapfel and Traun, Dec 1647 - Jan 1648, 'in Chiffern ohne Klarschrift') is the nearest ciphered correspondence, of another sender, not tested.",
+   "duplicates": "known.py on Lamberg, Holzapfel, 130-2-43, 4091515: catalogue 489 (Holzapfel despatches, different shelfmarks), 568 (Hesse-Darmstadt), 510/514/1705 (Lamberg in Madrid, other Lamberg); no duplicate of this letter.",
+   "verdict": "not_cipher"
+  }
+ },
+ "1767": {
+  "verdict": "duplicate",
+  "note": "HHStA Kriegsakten 137-2-45 is already listed in the shelfmark of catalogue entry 489 (Ferdinand III's despatches to Holzapfel and Traun 'in Chiffern ohne Klarschrift'), so this lead repeats an item of an existing entry.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "AIS record opened in Chrome 4 Nov 2026: https://www.archivinformationssystem.at/detail.aspx?ID=4123602 (AT-OeStA/HHStA Kriegsakten137-2-45, Karton 137 'Kriegsakten in genere (alt 180)', 'Akten ohne Datum' 1646-1648). Metadata only, no image link; access 'archive'.",
+    "extent": "3 folios (Unterteilung/Enthaelt 105-107), undated, c. 1648.",
+    "cipher": "AIS title: 'Ausfertigung in Chiffern (aus der kaiserlichen Kanzlei).', s.d.; it sits between a letter of Strozzi to Blumenthal (c. 1648) and a list of debts paid after Blumenthal left Cologne. A ciphered imperial chancery despatch with no clear text named."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE (known.py on Blumenthal, 137-2-45, 4123602 searched the repo's DECODE dumps 4 Nov 2026: no DECODE hit).",
+    "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 4 Nov 2026 and grepped for Blumenthal, Ferdinand III: no hit (its only Thirty Years' War entries are Wallenstein's simple substitution and two Imperial ministers' homophonic ciphers solved 2018, unrelated); web search for cryptiana + the names found nothing.",
+    "lasry": "No Lasry/HistoCrypt item on this item found (web searches 4 Nov 2026). Nearest: Ernst's Zifra Piccolominea (Ferdinand III to Leopold Wilhelm, 1640-41), Schmeh's 'Unsolved cryptograms from the Thirty Years War' posts and the Heusner/Oxenstierna 1637 decipherment (Tartu): all different letters and systems.",
+    "edition": "No edition found.",
+    "literature": "Web searches found Ernst's Zifra Piccolominea (Schmeh, Oct 2017) for Ferdinand III's letters to Leopold Wilhelm, 1640-41; no reading of this chancery despatch."
+   },
+   "key_check": "Catalogue 489 says the key has to be rebuilt from glossed sibling despatches; none held here.",
+   "duplicates": "known.py found catalogue entry 489, whose shelfmark reads '... also 137-2-45 and 137-2-167': this item is already in the catalogue under 489 (vetted 2 Nov 2026, verdict open).",
+   "verdict": "duplicate"
+  }
+ }
+}

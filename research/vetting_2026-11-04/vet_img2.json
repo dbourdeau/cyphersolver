@@ -1,0 +1,175 @@
+{
+ "2188": {
+  "verdict": "open",
+  "note": "Estense IIIF cc. 44-47 show a digit cipher (digit runs of about 7, 20, 4 and 3 lines on 44r, 44v, 46r, 46v) set inside a clear Italian letter, with no decipherment on or with any leaf; no edition, no DECODE or cryptiana record, and the only Chiesi essay found is on Ippolito Capilupi 1551 so it does not cover this letter.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "scan",
+    "where": "Estense Digital Library / Lodovico IIIF manifest https://edl-jarvis.cultura.gov.it/meta/iiif/e801746d-f7c5-47e0-aa2d-5ab1c0ac30df/manifest (8 canvases, cc. 44r-47v); canvases 44r, 44v, 45r, 45v, 46r and 46v downloaded at 1000-1300 px and viewed whole on 4 Nov 2026 (47r-47v, address and docket, not re-viewed).",
+    "extent": "Digit runs inside a clear Italian letter: 44r about 7 lines at the foot, 44v about 20 lines mixed with short clear stretches, 46r 4 lines mid-page, 46v 3 lines at the foot above the dateline 'Da Bolduch alli xi di decemb. 1545' and the signature 'Camillo Capilupo'; roughly 1,200 digits by eye, not counted by machine. 45r-45v are clear Italian prose. After the 46r run the clear text goes on with news (Queen Maria at Utrecht, English ambassadors, the Turk before Buda), so the digits are inserts in the letter.",
+    "cipher": "Continuous strings of digits with no word division, vertical strokes marking some breaks, a few clear words intercalated on 44v (e.g. 'allhora fu forza che', 'della qual cosa resagli la causa', 'onde con questo adito', 'Appresso gli ricordai la importanza ch'era alle cose di parma et di piacenza'); one underlined run on 44v. Digit groups run on, so the unit size is not visible. The clear Italian before and after each run is the covering letter and is not a decipherment of the digits: it differs from them in length and sense, and no interlinear or marginal plaintext is written over, under or beside any run on cc. 44r, 44v, 45r, 45v, 46r or 46v. No key table on the leaves."
+   },
+   "prior_art": {
+    "decode": "known.py 'Capilupi', 'Bolduch', 'Campori': hits only catalogue 1564 and 1565 (other shelfmarks), leads 2163 and this lead, the repo target targets/capilupi1545; no DECODE record in the harvested dump for this letter.",
+    "tomokiyo": "known.py found no cryptiana row for Capilupi; web search 'Capilupi cipher 1545 Ferrante Gonzaga ... cryptiana OR DECODE OR Lasry' returned only unrelated Venice, papal and Brno Gonzaga-1400 items; no Tomokiyo page on Camillo Capilupi.",
+    "lasry": "The same web search returned Lasry/Simonetta/Biermann on the Antonio Elio papal cipher (1530s-40s) and nothing on Capilupi or Ferrante Gonzaga's agents; no GL.htm entry for Capilupi.",
+    "edition": "Web search for Chiesi's essay found it to be L. Chiesi, 'Papa Giulio III e la guerra di Parma e della Mirandola secondo il carteggio di Ippolito Capilupi con Ferrante Gonzaga', Atti e memorie Deput. storia patria prov. modenesi s. IV (1893) 215-230: it is on Ippolito, 1550-51, so it does not cover Camillo's Dec 1545 letter; the essay itself was not opened. No other edition of Camillo Capilupi's letters found; a May 1545 Camillo letter to Ercole Gonzaga with a contemporary decipher exists in a calendar, a sibling and not this letter.",
+    "literature": "Three web searches (Italian and English; Camillo Capilupi, Bolduch/'s-Hertogenbosch, Capilupi cifra Ferrante Gonzaga Carlo V) found no study of this letter or its cipher; the Accademia Virgiliana volume on the Capilupi family of Mantua was not opened."
+   },
+   "key_check": "No key tested here on these digits. Catalogue 1565 (targets/capilupi1545/key.tsv) is a different system, a signs-and-digit-marks homophonic alphabet for 8 May 1545; the digit runs of cc. 48 and 49r of the same target are unread, and its own tests found no fixed pair grid. The Ercole fonds cc. 88-92 hold deciphered 1544 digit-cipher Capilupi material that has not been compared with these runs.",
+   "key_held": "targets/capilupi1545/key.tsv (signs, 8 May 1545) is held; it was not applied to these digits and is not shown to be the same system. Not blocking.",
+   "duplicates": "known.py on 'Capilupi', 'Bolduch', 'e801746d', 'Campori': lead 2163 (cc. 17-19, closed read: postscript written out on c. 18r), catalogue 1564 and 1565 and this lead; cc. 44-47 appear only here and in the split note of 4 Nov 2026. DECODE: none. No duplicate.",
+   "verdict": "open"
+  }
+ },
+ "2184": {
+  "verdict": "open",
+  "note": "MDZ scan 329 of Clm 10415 (fol. 161, Halm n. 58) shows a framed block of about 28 lines of digit-and-letter-sign cipher between a clear salutation and clear dateline 'Osnabrugi 1633 13 Aug', with no decipherment written on or beside it; no edition, DECODE or cryptiana record found, with one residual gap (Bierther's Briefe und Akten NF II/8 only searchable as snippets).",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "scan",
+    "where": "MDZ IIIF https://api.digitale-sammlungen.de/iiif/image/v2/bsb00116463_00329/full/1400,/0/default.jpg (manifest https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00116463/manifest, 990 canvases) and scan 330 at 700 px, downloaded and viewed 4 Nov 2026. Microfilm (black and white) scan of Clm 10415 (Collectio Camerariana vol. 65), fol. 161, old piece number '58' in the margin.",
+    "extent": "One page: a ruled frame of about 28 lines of cipher (counted by eye from the 1400 px image, not by machine), about 4-5 groups per line; scan 330 (verso) is blank.",
+    "cipher": "Framed block of word-divided groups of digits mixed with letter and sign characters (e.g. '2047oEi', '203y205bo', '250100', 'Sarbo', 'bo4304'), one line struck through; above it the clear salutation 'Rme Illme Princeps ac Domine Dne Clementissime', below it the clear dateline '... Raptissime Osnabrugi 1633 13 Aug.' (the reading of the first word of the dateline is uncertain), the clear closing 'Rmae et Illmae Celsitudinis Vrae ... Humillimus et obedientissimus Servus' and a signature that looks like 'C. L.' with a flourish. No plaintext, interlinear gloss or marginal decipherment is written on the frame or the page; the page has only faint show-through, which is not a gloss. No key table on the leaf."
+   },
+   "prior_art": {
+    "decode": "known.py 'Clm 10415', 'Clm 10416', 'Camerariana', 'Osnabr': only this lead, its sweep row, sibling Camerariana leads and unrelated Osnabrück entries (catalogue 601 Wartenberg 1632 at Osnabrück Rep 100 Abschnitt 1 Nr. 43, catalogue 1639 Magdeburg envoys); no DECODE record for any BSB Clm 103xx item.",
+    "tomokiyo": "known.py found no Camerariana or Osnabrück-1633 row from cryptiana; web searches (Thirty Years' War, Camerarius, Osnabrück 1633, cipher) returned no Tomokiyo page for this letter.",
+    "lasry": "Web search 'Osnabrück 1633 Chiffre Camerarius Oxenstierna Knyphausen Wartenberg entziffert' found only a Tartu paper on the decipherment of a German letter from Heusner von Wandersleben to Oxenstierna (1637), a different letter, and nothing on this one; no GL.htm entry.",
+    "edition": "Halm 1874 p. 164 records it as 'in Chiffern geschrieben' with no decipherment. Bierther, Briefe und Akten N.F. II/8 (1982), the only edition volume that could cover this date for Bavarian and League business, was opened again in Google Books on 4 Nov 2026 and shows 'Preview unavailable' (no search inside); the earlier batch c25 searched its snippets for 13 Aug 1633 with Osnabrück and Chiffre and found no entry. A letter in the Palatine Camerariana from besieged Osnabrück is not obviously in a Bavarian-political edition, but that is not excluded. Oxenstierna's Rikskansleren skrifter and Swedish-Palatine editions not opened.",
+    "literature": "Three web searches (Osnabrück 13 Aug 1633 Chiffern Camerariana Clm 10415; Brief in Ziffern Belagerung Knyphausen Wartenberg entziffert; earlier batch's Cryptologia/HistoCrypt searches) found only the 1633 Swedish siege of Osnabrück (14 Aug to 11 Sep 1633), other Camerariana items (Clm 10404 Oxenstierna invitation) and no study or decipherment of this letter."
+   },
+   "key_check": "No key found on record for this cipher and none tested. The digit-and-letter groups are not the plain two-digit numbers of Clm 10406 n. 206 (lead 2183), which the earlier batch compared, so no sibling key is known. No key table was seen on this leaf and the neighbouring pieces were not searched for one in this pass.",
+   "duplicates": "known.py 'Clm 10415', 'Clm 10416', 'Camerariana', 'Osnabr': no entry for this letter among catalogue, leads, targets or DECODE; catalogue 601 (Wartenberg 1632, Osnabrück archive, Hohenzollern) is another document and another repository. The lead's own shelfmark and links name Clm 10416 / bsb00116464, but the letter is in Clm 10415 / bsb00116463 scan 329.",
+   "verdict": "open"
+  }
+ },
+ "859": {
+  "verdict": "partly_read",
+  "note": "ORKA 2 Ms. chem. 19[3 really holds about 25 leaves (images 162-189) of invented-glyph and pseudo-Greek Geheimschrift with numeral tables and a letter-table slip and no plaintext on them, but the Kassel record itself says the Geheimschrift items are partly published (Schmitz and Winkelmann, Pharmazeutische Zeitung 106, 1961, 374-378), the article is not online, and what it reads cannot be separated from the unpublished remainder.",
+  "closed": "Kassel's own record states the Geheimschrift items were partly published in a printed decipherment (Schmitz/Winkelmann 1961); until that article is seen the unread remainder cannot be delimited, so the lead is not an open undeciphered text under the vetting bar.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "scan",
+    "where": "ORKA Kassel IIIF API, which answers curl without a bot check: https://orka.bibliothek.uni-kassel.de/viewer/api/v1/records/1381745635760/manifest/ (281 images) and .../files/images/000001NN.tif/full/1100,/0/default.jpg. Viewed 4 Nov 2026: images 150 (f. 70v), 162, 173, 187 at 1100-1400 px, and thumbnails of all of images 118-189. The catalogue link names 2 Ms. chem. 19[3 (red-bound volume, 'Chemische Korrespondenz des Landgrafen Moritz', 281 images, ff. numbered from 1r).",
+    "extent": "From thumbnails: the glyph-script and table leaves run from about image 149 to image 189 (roughly 25 leaves), with German cursive letters before them (images 139-148, 152-158, partly water-damaged). Image 150: 5 lines of glyph script partly hidden by a tipped-in slip carrying a column of sign = letter pairs. Images 162-163: a 10 x 12 numeral grid with letter groups (A, I, S, T and so on) in black and red. Image 173: about 20 lines of dense glyph script in two blocks, separated by two lines of pseudo-Greek cursive. Image 187: numbered lines ('No 1 ... No 44') of glyph words and a pasted slip with alchemical signs and about 10 lines of cursive pseudo-Greek-like script. Line counts by eye, not machine.",
+    "cipher": "Several invented alphabets: an angular runic-like glyph script (images 150, 165-175, 183-189), a cursive pseudo-Greek-looking hand (173, 187), alchemical planetary signs, and a numeral grid with letter groups (162-163), plus a letter-table slip tipped in on image 150 (a key to at least one script, in the volume). On the leaves viewed no decipherment, interlinear gloss or plaintext in Latin letters is written over, under or beside the glyph lines; the German cursive on neighbouring leaves is separate recipe text."
+   },
+   "prior_art": {
+    "decode": "known.py 'Hessen-Kassel', 'chem. 19', 'Moritz': only this lead, the Europeana sweep row and unrelated Hesse targets; Moritz's Geheimschrift is not on DECODE.",
+    "tomokiyo": "known.py found no cryptiana row for Moritz or Kassel; web searches for Landgraf Moritz Geheimschrift and Popp found no Tomokiyo page.",
+    "lasry": "No Lasry or HistoCrypt work on the Kassel alchemical scripts found; a web search returned only the Lang, Zotov and Piorko HistoCrypt 2024 survey 'Sources of Alchemical Cryptography' (over 100 alchemical cipher instances, 10 countries), the Dee notebook papers and Lang's alchemy-cipher work. The survey's full text (dspace.ut.ee bitstream 18c0caf0) could not be read here (curl reset, Chrome PDF viewer not readable), so whether it lists Kassel is unchecked.",
+    "edition": "Schmitz and Winkelmann, 'Ueber die alchemistischen Geheimschriften im Briefwechsel des Landgrafen Moritz von Hessen-Kassel', Pharmazeutische Zeitung 106 (1961) 374-378: named in Kassel's record as the partial publication of the Geheimschrift items; a web search for it found no online copy or abstract, so its content was not seen. Moran, 'Privilege, communication and chemiatry' (Ambix 1985) and his book The Alchemical World of the German Court (Steiner 1991) are the secondary works on Moritz's circle; not opened.",
+    "literature": "Two web searches (Schmitz Winkelmann 1961; Moritz Geheimschrift Popp Ms. chem. 19 decipherment) found library records for Moran and Kassel's digitisation pages and no study that reads these scripts."
+   },
+   "key_check": "A key to at least one of the scripts is physically in the volume (the sign = letter slip on image 150, f. 70v; the numeral grid on images 162-163 looks like a number-to-letter table). None was applied here. Not blocking under the rule of 3 Nov 2026.",
+   "key_in_volume": "Letter-table slip tipped in on f. 70v (image 150) and numeral grids on images 162-163; not tested.",
+   "duplicates": "known.py 'chem. 19', 'Hessen-Kassel', 'Moritz': no catalogue entry, target or lead for these leaves; the lead's earlier shelfmark mix (theol. 181 former cover, chem. 19[2, 19[5 Popp letters) names other units, none of them in the repo.",
+   "verdict": "partly_read"
+  }
+ },
+ "1243": {
+  "verdict": "unvettable",
+  "note": "Staatsarchiv Zürich A 225.1 Nr. 182 has no image online (microfilm copy only, empty image list in the catalogue) and Tanner 1917, which prints it with a facsimile (Beilagen pp. 649-650), has no readable copy online (Google Books view_no_pages, then a CAPTCHA that was not touched), so the cipher leaf was not seen and whether Tanner printed a decipherment is unknown.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Nothing seen. Catalogue record https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=5421134 fetched 4 Nov 2026: 'Chiffriertes Schreiben des Agenten Francesco Turreo an Francesco de Laveno', 21 Nov 1515, Roveredo, original on paper, Italian, scribe Michele di Casasco (?), keyword Geheimschrift, copies: Mikrofilm; bildansicht.aspx for this unit returns 'No entries found'.",
+    "extent": "Unknown; the record says one unit, one letter.",
+    "cipher": "Not seen. The archive's description is 'Chiffriertes Schreiben' with the keyword Geheimschrift; the letter is printed with an illustration ('mit Abb.') in Karl Tanner, Der Kampf ums Eschental und der Verrat von Domodossola (Zürich 1917, Schweizer Studien zur Geschichtswissenschaft 9/2), Beilagen pp. 649-650, which could not be opened, so the system and any decipherment on or with the leaf are unconfirmed."
+   },
+   "prior_art": {
+    "decode": "known.py 'Turreo', 'Laveno', 'Eschental': only the Swiss-Austrian-Bohemian sweep row and this lead; not on DECODE.",
+    "tomokiyo": "known.py found no cryptiana row; no Tomokiyo page found for Eschental or Turreo.",
+    "lasry": "No Lasry or HistoCrypt work on Eschental or Turreo found.",
+    "edition": "Tanner 1917 pp. 649-650 (with a facsimile) is the edition. Google Books has it as OHQ7AQAAMAAJ (MSU copy, 350 pages), viewability 'no pages'; a snippet search from Chrome hit Google's 'unusual traffic' page and was stopped. archive.org advanced search for Eschental/Domodossola/Tanner found nothing; a web search for a digital full text found nothing. Whether Tanner printed a decipherment is therefore unknown.",
+    "literature": "One web search (Tanner 1917 full text; Eschental) found only the Wikipedia article on the transalpine campaigns, the HLS entries and recent Ossola items; no study of this letter or its cipher."
+   },
+   "key_check": "No key on record; none tested; the leaf was not seen.",
+   "duplicates": "known.py 'Turreo', 'Laveno', 'Eschental': no duplicate in catalogue, leads, targets or DECODE.",
+   "verdict": "unvettable"
+  }
+ },
+ "1285": {
+  "verdict": "unvettable",
+  "note": "Every Harvard host (HOLLIS for Archival Discovery, the nrs.harvard.edu URN, iiif.lib.harvard.edu and ids.lib.harvard.edu) answered a plain 403 to both curl and Chrome on 4 Nov 2026, so neither the record nor the leaf was seen; the lead's only evidence is the catalogue note 'Part of text in code' and the letter may be an official Foreign Office despatch (Grantham to Weymouth) of the kind that carries a decipher.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Nothing seen. Tried 4 Nov 2026: https://hollisarchives.lib.harvard.edu/catalog/hou01430_hou01430c00499, https://nrs.harvard.edu/urn-3:FHCL.HOUGH:38447771, https://iiif.lib.harvard.edu/manifests/drs:38447771 and https://ids.lib.harvard.edu/ids/view/38447771 by curl (all 403) and the last three in Chrome (403, no CAPTCHA).",
+    "extent": "Unknown; the lead says one duplicate letter, 18 Jun 1778, Spain, with 'Part of text in code' in HOLLIS.",
+    "cipher": "Not seen; the cipher system, its extent and whether a decipherment is written on the leaf are unconfirmed. Only the catalogue phrase 'Part of text in code' is on record."
+   },
+   "prior_art": {
+    "decode": "known.py 'Grantham', 'Thynne': only this lead and the repo's TNA notes (research/tna_discovery and research/uk_tna: Grantham family letters, L 30/15, carry decoded text); no DECODE record.",
+    "tomokiyo": "known.py found no cryptiana row; no Tomokiyo page on Grantham or on Weymouth's Spanish despatches found.",
+    "lasry": "No Lasry or HistoCrypt work on Grantham's ciphers found.",
+    "edition": "No edition found. The Bedfordshire Archives catalogue (L 30/15/54, Grantham in Madrid to Frederick Robinson, 1778-79) summarises letters with '[In Cypher]' passages, some with decoded summaries and one with a garbled fragment (L 30/15/54/146); these are sibling letters at another archive, not this one, and a web search on 4 Nov 2026 returned them but not the Harvard item.",
+    "literature": "One web search (Grantham, Weymouth, June 1778, decyphered, Houghton) found only the Bedfordshire catalogue entries and a TNA SP 37 Weymouth letter; nothing on the Houghton letter."
+   },
+   "key_check": "No key tested; the leaf was not seen. The Grantham family and Foreign Office codes of the 1770s are not held in the repo. If this is an official duplicate despatch from the Madrid embassy the decipher would normally sit with the Secretary of State's copy (TNA SP 94), which was not checked.",
+   "duplicates": "known.py 'Grantham', 'Thynne': no duplicate in catalogue, leads, targets or DECODE; the Bedfordshire L 30/15/54 letters are a separate group (private letters to Frederick Robinson), not this despatch.",
+   "verdict": "unvettable"
+  }
+ },
+ "1277": {
+  "verdict": "key_lookup",
+  "note": "The codex (UB Barcelona Ms 40, 518 pp. plus 39 of index, 570 images) is a recipe book in Catalan, Latin and a little Italian and Castilian whose cipher is a simple digit-for-vowel substitution on key words, and J. R. de Luanco, La alquimia en España I (Barcelona 1889) pp. 25-31 already describes this very codex, prints its key (vowels = 1-5, l m n and a few others = 0, 6, 7, 8, r and j = x) and deciphers its title and several recipe openings.",
+  "closed": "Luanco 1889 (La alquimia en España, vol. 1, 'Anónimo Catalán', pp. 25-47, archive.org b24852077) gives the key and deciphered samples; the key is in print, so this is a key lookup and not an undeciphered text.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "scan",
+    "where": "BiPaDi (UB) https://bipadi.ub.edu/digital/collection/manuscrits/id/89503 (loads in Chrome); images by IIIF https://bipadi.ub.edu/digital/iiif/manuscrits/<pageptr>/full/full/0/default.jpg (996 px wide; page list from /digital/bl/dmwebservices/index.php?q=dmGetCompoundObjectInfo/manuscrits/89503/json). All 570 images fetched as thumbnails and viewed as contact sheets (images 1-48 and every 12th to 570); images 17 and 43 viewed whole at 996 px on 4 Nov 2026. Item record: 'Receptari xifrat sobre la transmutació metàl·lica', 1687, Ms 40, 518 pp. + 39 pp. index, 215x160 mm.",
+    "extent": "Whole volume; from the sheets the cipher is in the headings and in key words inside the recipe text on most pages from about image 8 to image 520, about 500 pages with an unknown number of cipher words; the last pages (about 520-568) are an index of recipe numbers and folios. Not counted by machine.",
+    "cipher": "Not a page-long cipher: Catalan/Latin recipe text (e.g. image 43 'Otro de 20h83 ... Rasige 20h83 ...'; heading 'Para fer 66582') in which the names of substances and some titles are written in digit-and-letter groups; image 17 carries a clear table 'Xifres de la Alquimia' pairing substance names (sal comú, vitriol, argent viu, oro, plata, ferro...) with alchemical signs and the planetary metal signs. No interlinear or marginal plaintext for the digit groups is written on the leaves viewed (images 17, 43 and the contact sheets); the decipherment is in print instead (see edition)."
+   },
+   "prior_art": {
+    "decode": "known.py 'Receptari', '89503': only the BNE/Hispana sweep row and this lead; no DECODE record.",
+    "tomokiyo": "known.py found no cryptiana row for this codex; no Tomokiyo page found.",
+    "lasry": "No Lasry or HistoCrypt work on it found; the HistoCrypt 2024 survey 'Sources of Alchemical Cryptography' (Lang, Zotov, Piorko) is the general alchemical-cipher survey, its text was not read for this codex.",
+    "edition": "J. R. de Luanco, La alquimia en España, escritos inéditos, vol. 1 (Barcelona 1889), section 'Anónimo Catalán', pp. 25-47 (archive.org b24852077, full text read 4 Nov 2026): describes the codex (a 4to in vellum, 518 pages plus 39 of index, '1687' on the first page, from the Biblioteca Mariana of S. Francisco de Barcelona), states that the writer hides his operations with a key 'tan sencilla que está reducida á representar las cinco vocales con los números 1 al 5, las consonantes ?, l, m, n con los guarismos 0, 6, 7, 8, y alguna vez la r y la j con un mismo signo x', and prints the deciphered title 'Secrets de natura alesa ad solem coloran augendam' and the openings of recipes 2, 4, 15, 20 and 21 and recipe 970 with its ciphered word 'vermellón'. The BiPaDi record cites the same pages, plus MCEM 1112 and Miquel Rosell vol. 1 pp. 45-46.",
+    "literature": "The BiPaDi record's own references (Luanco; MCEM 1112; Miquel Rosell) are the literature found; no separate web search was run because Luanco's volume is online and answers the question. No later full decipherment of the 1,009 recipes was found."
+   },
+   "key_check": "Luanco's key (digits 1-5 for the vowels, 0 6 7 8 for four consonants, x for r and j) is in print; it is a simple monoalphabetic digit-for-letter scheme on selected words and was not re-tested here beyond reading his examples. The earlier lead note, that Luanco pp. 25-47 holds only a Castilian Violeta codex, was wrong for the other archive.org copy: the 'Anónimo Catalán' section starts at p. 25 of vol. 1.",
+   "key_held": "Luanco's key as printed (vol. 1, p. 26-27); not yet tested by us on the images. This does not block promotion by itself, but the text is already deciphered in samples in print.",
+   "duplicates": "known.py 'Receptari', '89503': no duplicate in catalogue, leads or targets. Luanco's codex is the same one as this lead (same pagination, 518 p. + 39 p. index, '1687').",
+   "verdict": "key_lookup"
+  }
+ },
+ "1573": {
+  "verdict": "unvettable",
+  "note": "Gallica btv1b90007170 (labelled BnF Lorraine 367, 172 ff., linked from BAM) shows, on every view from 100 to 289 and the sampled earlier ones, 16th-century German imperial and Lorraine papers (1532 Regensburg copies, Jacques Zorn letters, tables) and no 1667-1669 French Lille letter or cipher, so the two despatches the BAM note places from fol. 148 could not be found in the scan that is linked to it.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "BAM record https://archivesetmanuscrits.bnf.fr/ark:/12148/cc34620f/cd0e194 (read in Chrome 4 Nov 2026: 'Letters, from August 18, 1667 until January 9, 1669, on the siege of the Ille, and others ... two coded dispatches', fol. 148; parent cd0e55 'Lorraine 367, I - 1667-1670, 172 pages', digitised from substitute R 194050). Gallica manifest https://openapi.bnf.fr/iiif/presentation/v3/ark:/12148/btv1b90007170/manifest.json (title 'Lorraine 367', 289 views, 'Documents ... relations de la Lorraine avec l'Empire (XVe-XVIIIe siècle). I - 1667-1670', 172 feuillets) read; all 289 views fetched as thumbnails and viewed in contact sheets (views 100-289 on 4 Nov 2026), views 181, 224, 227, 229, 248, 251, 252 and 253 at 700 px.",
+    "extent": "No cipher leaf found in the Gallica object: views 100-189 are 16th-century secretary-hand letters, 190-221 muster-type tables, 222-228 sealed German letters, 229-285 16th-century French and German letters (e.g. view 253 a 1532 Regensburg copy), 286-289 binding and Gallica placeholders. Early views 1-99 were seen only as thumbnails by the earlier batch.",
+    "cipher": "Not seen. The only evidence is the BAM sentence 'two coded dispatches' under fol. 148; the digitised object linked to the same shelfmark contains different (earlier) material, so either Gallica's file does not match the shelfmark or the BAM subunit description does."
+   },
+   "prior_art": {
+    "decode": "known.py 'Lorraine 367', 'siege de Lille', 'Lorraine': only this lead and the sweep rows; no DECODE record for Lorraine 367.",
+    "tomokiyo": "known.py found no cryptiana row for the Lorraine file; no Tomokiyo page found.",
+    "lasry": "No Lasry or HistoCrypt work on Lorraine ciphers of 1667-69 found.",
+    "edition": "No edition known; Lauer's Catalogue des manuscrits de la collection Lorraine (the BAM text) is the only description found.",
+    "literature": "The earlier batch's web search (siege de Lille Lorraine 367 chiffre) found nothing and none was repeated here; BAM subject terms name Borck, Persius, Monnet de Reinemberg, Risaucourt and the Diet of Regensburg, so any study would be on those correspondents and none was searched."
+   },
+   "key_check": "No key tested; no cipher leaf was found. Lorraine 14-15 or Clairambault keys named in the lead's verify field were not looked for.",
+   "duplicates": "known.py 'Lorraine 367': only the sweep row and this lead; no duplicate in catalogue, targets or DECODE.",
+   "verdict": "unvettable"
+  }
+ }
+}

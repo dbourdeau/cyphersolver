@@ -1,7 +1,5 @@
 # The Electors of Mainz and Cologne to Gottfried Huyn von Geleen, [Cologne] 22 October 1633 (BSB Clm 10406, no. 206)
 
-Status: in progress. Not yet written up: no site page or README row. Read in part (84.2%, key from ciphertext only), with escalation steps still open. The status below is the contributor's.
-
 Status: read in part (Brice Dudout, 4 Nov 2026; 221 cipher words: 151 certain, 35 probable, 8 restored, 27 unresolved; 84.2% read, below the 95% rule; 19 words lost in the binding cap it at 91.4%).
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents. Lead no. 2183 found by WAINUT
@@ -47,3 +45,20 @@ Files: `transcription.txt`, `decryption.txt` (K, mechanical), `reading.md` (Germ
 ## Method
 
 Method: (1) protocol written and hashed (SHA-256) before transcription, with five lines of fol. 185r (186 cipher letters, up to the clear word “Bedanken”) held out; (2) numbers transcribed without any key value, then frozen; three known keys of the period (Camerarius 1621, Rákóczi 1632, Kurz 1639) tested by a frozen criterion: none applies; (3) key built on the rest of the letter (simulated annealing with a model of 17th-century German, then three corrections from the clear context: “vom Feind”, “Kniphausen”, “Geltmittel”), then frozen; (4) a single measurement on the held-out lines: 0.656 of the cipher letters covered by German words of five letters or more, against at best 0.113 for 200 shuffled keys (threshold fixed in advance: 0.60), and a language-model score clearly above all controls (−2.51 against −4.18): key validated; (5) reading of the whole letter by Daniel’s rule. The held-out passage reads: “zum besten nichts erwinden lassen und euch hingegen vor gewiss versichern…”.
+
+## Remaining gaps
+
+- 19 words cut or lost where the line ends of fol. 184v vanish into the gutter - blocker: needs-physical-access; the volume was microfilmed bound, only the original or a new photograph shows them (caps the reading at 91.4%)
+- 2 word ends at the cut (le, non) - blocker: needs-physical-access; same gutter
+- 4 words whose written numbers contradict the expected word (Statt, Weg, Wachtmeister, richten) - blocker: illegible; blind re-reading 4 Nov 2026 confirmed the numbers as transcribed, the enlarged microfilm gives no other reading
+- 2 runs without a recognisable word (derdselfemlh, anewerder) - blocker: illegible; re-inspected on the MDZ images (views 653, 654) 4 Nov 2026: in derdselfemlh the film shows 17 22 13 17 18 3?/2? 17 23 18 25 with no clear second 21 and 2/3/5 and 7/8 not separable, so derselbe mehr is possible but not verifiable; in anewerder the film shows 30 ?1 17 19 17 22 (17|21 17) 22 where one pair reads as 11, not a number of the key. The microfilm does not settle either; the transcription is left as written
+- values of 33 and 38 - blocker: no-key-material; rare, no clear context
+
+## Escalation
+
+- [x] siblings: nos. 205-207 of Clm 10406 opened; no decipherment or clear copy among them
+- [x] clear-pages: no clear copy or postscript on the letter or its neighbours
+- [x] known-keys: Camerarius 1621, Rakoczi 1632 and Kurz 1638-39 tested by a frozen criterion; none applies
+- [x] print: no folder or reading in the repository or on DECODE, nothing from Tomokiyo; Bierther (1982) not online and its snippets do not list the letter; web search 4 Nov 2026 for the letter, Menselius and Lerchenfeld found nothing
+- [x] key-rebuild: annealing with a 17th-century German model, then three corrections from clear context (vom Feind, Kniphausen, Geltmittel), frozen
+- [x] retry: blind re-reading plate of 20 questions on 14 words answered 4 Nov 2026: 9 words now certain, 4 dropped to unresolved

@@ -1,6 +1,6 @@
 # Sweep coverage: what has not been swept
 
-As of 2 Nov 2026. This is an index: each sweep's own README or `coverage.md` holds the detail, and the folder named on
+As of 4 Nov 2026 (sweeps A, B and D of that day added at the end). This is an index: each sweep's own README or `coverage.md` holds the detail, and the folder named on
 each row is the source. No archive was contacted to write this file, so a block is as the sweep recorded it, and may
 have lifted since. A sweep that closes a gap removes its row here.
 
@@ -47,7 +47,8 @@ done, and search with `research/archive_sweep_2026-10/known.py` before starting.
 | New-York Historical (NYU finding-aid search), Maryland Center (site search returns nothing) | Human check; site fault. Reached only through ArchiveGrid | `sweep_2026-11_us_blocked` |
 | Benson finding aids in TARO | API ignores the query | `sweep_2026-11_us_blocked` |
 | BYU CONTENTdm images (`cdm15999.contentdm.oclc.org`) | Times out from this network; holds the Sfondrati letters | `sweep_2026-11_us_blocked` |
-| Morgan Library record pages (`themorgan.org/literary-historical/`) | Cloudflare checkbox; needs the owner in Chrome. ArchiveGrid gives the description only | `sweep_2026-11_us_blocked` |
+| NYC, other: NYPL archives catalogue, Hispanic Society, Center for Jewish History, Brooklyn Public Library; Columbia terms beyond cipher/cypher/cryptogram | N-YHS/Brooklyn History (NYU search) and Columbia finding aids were searched 4 Nov 2026 for cipher/cypher/cryptogram; the others not touched | `nyc_sweep` |
+| Morgan Library (`themorgan.org` record pages, `corsair.themorgan.org` catalogue) | Cloudflare checkbox that returns after 2 to 4 requests; owner clears it in Chrome. Record pages add nothing to ArchiveGrid and show no images. CORSAIR keyword search works (206 records for cipher/cypher/cryptogram); chiffre, cifra, decipher and 11 bib ids unread | `nyc_sweep` |
 | LAC collection search | Cloudflare; `nouvelle-france.org` is the working route | `canada_lac` |
 | AGN Argentina, national libraries of Peru, Argentina and Colombia, dLOC | Unreachable or JS-only | `canada_latam` |
 | ABNB (Bolivia) | Cloudflare | `latam_southcone` |
@@ -63,6 +64,7 @@ permission (`chrome_pass_2026-11`).
 | Danish KB manuscripts, Krigsarkivet beyond the NAD notes | `scandinavia` |
 | GStA's own database, HStA Dresden | `archivportal_d` |
 | Departmental archives with their own viewers | `calames_biblissima` |
+| Boston: Massachusetts Archives (no searchable catalogue found), BU Gotlieb, UMass Boston, NEHGS, Congregational Library; MIT, Tufts, Brandeis return 403 (BPL, Athenaeum, BC, Northeastern, Digital Commonwealth done) | `boston_sweep` |
 
 ## Started and not finished
 
@@ -97,3 +99,20 @@ AGATHA's envoy series (`belgium_lux`).
   eAccess (`belgium_lux`). CEHM images, SIAN and Chile ClaveÚnica come from the 2 Nov review of the Latin American sweeps;
   check the sweep before asking. CEHM scans have since opened in Chrome with no login (`vetting_2026-10/BRIEF.md`).
 - **API key:** Trove (`oceania_naa`).
+
+## Sweeps of 4 Nov 2026 (A half-done runs, B unswept south, D east and north)
+
+Folders: `sweep_2026-11_A_halfdone`, `sweep_2026-11_B_unswept_south`, `sweep_2026-11_D_east_north`. 57 leads merged.
+
+- **Closed:** Internet Culturale full text (printed books and newspapers only, 0 archival rows); szukajwarchiwach
+  1900-50 and Radom (agrees with `polish_harvest`; the `szh` harvest is now exported to
+  `chrome_pass_2026-11/szh_export.json`); PARES bare terms "cifra" and "descifrado".
+- **New route:** PARES-HTR (`pares.cultura.gob.es/pares-htr`, ACA Cancilleria 1479-1556) is a plaintext index of "En cifra"
+  registers, not a source of new ciphertexts. ICCU Manus Online API and the Wayback Machine work for Italian inventories.
+- **Still never swept:** Dubrovnik (no item-level catalogue online; ask the State Archives about "sifra" bundles), Malta
+  (vHMML Turnstile), ARSI and Propaganda Fide (only the printed MHSI volumes), Turin diplomatic inventories ("Lettere
+  ministri"), Czech lands, Slovakia, Russia, Belarus. About 6,000 Manus "cifre" records unscreened.
+- **Blocked:** Finna (Cloudflare), BOA (login with CAPTCHA), hrcak.srce.hr, Harvard hosts (403), Abhilekh Patal (403 on the
+  user's network on 4 Nov; its 18 image leads stay unvetted).
+- **Not done:** Riksarkivet: six contact sheets built and not viewed, 40 volumes with no manifest. ACA reg. 3225 (1435)
+  not reached.

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paper editor</title>
+<style>
+:root{--bg:#fafaf8;--panel:#fff;--ink:#1d1d1b;--mute:#6b6b66;--line:#dcdcd4;--acc:#1f5fbf;--mark:#fff1a8;--ask:#ffd9b0;--done:#d8ecd2}
+@media (prefers-color-scheme:dark){:root{--bg:#161614;--panel:#1f1f1c;--ink:#ecece6;--mute:#9a9a92;--line:#3a3a35;--acc:#7fb0ff;--mark:#5a4d10;--ask:#6b3f12;--done:#254021}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,Segoe UI,sans-serif;height:100vh;display:flex;flex-direction:column}
+header{display:flex;gap:10px;align-items:center;padding:8px 14px;border-bottom:1px solid var(--line);background:var(--panel)}
+header h1{font-size:15px;margin:0;font-weight:600}
+header .sp{flex:1}
+button{font:inherit;padding:5px 11px;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:6px;cursor:pointer}
+button:hover{border-color:var(--acc)} button.pri{background:var(--acc);color:#fff;border-color:var(--acc)}
+select{font:inherit;padding:4px;border-radius:6px;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
+main{flex:1;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);min-height:0}
+#doc{overflow:auto;padding:14px 18px 60px;border-right:1px solid var(--line)}
+#side{display:flex;flex-direction:column;min-height:0}
+.tabs{display:flex;border-bottom:1px solid var(--line);background:var(--panel)}
+.tabs button{border:0;border-radius:0;padding:8px 14px;border-bottom:2px solid transparent}
+.tabs button.on{border-bottom-color:var(--acc);font-weight:600}
+.pane{flex:1;overflow:auto;min-height:0;display:none}.pane.on{display:block}
+iframe{width:100%;height:100%;border:0}
+.blk{position:relative;border:1px solid transparent;border-radius:6px;padding:6px 9px;margin:3px 0;white-space:pre-wrap;word-break:break-word;font:13.5px/1.55 ui-monospace,Consolas,monospace;cursor:text}
+.blk:hover{border-color:var(--line);background:var(--panel)}
+.blk.section{font-weight:700;font-size:15px;margin-top:18px;border-bottom:1px solid var(--line)}
+.blk.comment{color:var(--mute)}
+.blk .edit{position:absolute;right:6px;top:4px;display:none;font-size:12px;padding:1px 8px}
+.blk:hover .edit{display:block}
+textarea.ed{width:100%;font:13.5px/1.55 ui-monospace,Consolas,monospace;padding:8px;border:1px solid var(--acc);border-radius:6px;background:var(--panel);color:var(--ink);resize:vertical}
+.btns{display:flex;gap:8px;margin:6px 0 10px;align-items:center}
+.err{color:#c0392b;font-size:13px}
+mark{background:var(--mark);color:inherit;border-radius:3px;padding:0 1px;cursor:pointer}
+mark.ask{background:var(--ask)} mark.done{background:var(--done)}
+#pop{position:fixed;z-index:9;background:var(--panel);border:1px solid var(--acc);border-radius:8px;padding:8px;box-shadow:0 6px 24px #0004;width:320px;display:none}
+#pop textarea{width:100%;height:70px;font:inherit;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink);padding:6px}
+#pop .q{font:12px ui-monospace,Consolas,monospace;color:var(--mute);max-height:48px;overflow:hidden;margin-bottom:6px}
+#notes{padding:10px 14px}
+.note{border:1px solid var(--line);border-radius:8px;padding:8px 10px;margin:0 0 9px;background:var(--panel)}
+.note .q{font:12.5px ui-monospace,Consolas,monospace;color:var(--mute);margin-bottom:4px}
+.note .st{font-size:11px;text-transform:uppercase;letter-spacing:.04em;padding:1px 6px;border-radius:9px;background:var(--ask)}
+.note.done .st{background:var(--done)}.note.mark .st{background:var(--mark)}
+.note .row{display:flex;gap:6px;margin-top:6px}
+.note textarea{width:100%;font:inherit;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink);padding:5px}
+.hint{color:var(--mute);font-size:13px;padding:8px 14px}
+#log{white-space:pre-wrap;font:12px ui-monospace,Consolas,monospace;padding:10px 14px;color:var(--mute)}
+@media(max-width:900px){main{grid-template-columns:1fr}#side{display:none}}
+</style></head>
+<body>
+<header>
+  <h1 id="title">Paper editor</h1><span id="stat" class="hint"></span><span class="sp"></span>
+  <label class="hint">Filter <select id="filter"><option value="">all blocks</option><option value="notes">with notes</option></select></label>
+  <button id="reload">Reload</button>
+  <select id="which"><option value="0">Submission</option><option value="1">Camera-ready</option></select>
+  <button class="pri" id="build">Build PDF</button>
+</header>
+<main>
+  <section id="doc"></section>
+  <aside id="side">
+    <div class="tabs"><button data-t="notes" class="on">Requests <span id="cnt"></span></button><button data-t="pdf">PDF</button><button data-t="log">Build log</button></div>
+    <div class="pane on" id="p-notes"><div class="hint">Select text in the paper, then choose <b>Ask the LLM</b>. Tell your LLM: <i>do the open requests in papers/lasry/editor_notes.json</i>.</div><div id="notes"></div></div>
+    <div class="pane" id="p-pdf"><iframe id="pdf" title="PDF preview"></iframe></div>
+    <div class="pane" id="p-log"><div id="log">No build yet.</div></div>
+  </aside>
+</main>
+<div id="pop"><div class="q" id="pq"></div><textarea id="pi" placeholder="What should the LLM do with this passage? (e.g. shorten, check the numbers, make it less hedged)"></textarea>
+  <div class="btns"><button class="pri" id="pask">Ask the LLM</button><button id="pmark">Just mark</button><button id="pcancel">Cancel</button></div></div>
+<script>
+const $=s=>document.querySelector(s);let DOC=null,sel=null;
+const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+async function j(url,body){const r=await fetch(url,body===undefined?{}:{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});return {s:r.status,d:await r.json()}}
+function sectionOf(i){let s='';for(let k=0;k<=i;k++){const b=DOC.blocks[k];if(b.kind==='section')s=b.text.split('\n')[0].replace(/\\\w+\*?\{/,'').replace(/\}.*/,'')}return s}
+function render(){
+  const ff=$('#filter').value;const el=$('#doc');el.innerHTML='';
+  $('#title').textContent='Editing '+DOC.file;
+  const open=DOC.notes.filter(n=>n.status==='open').length;$('#cnt').textContent=open?'('+open+' open)':'';
+  DOC.blocks.forEach((b,i)=>{
+    let html=esc(b.text);
+    const here=DOC.notes.filter(n=>n.found&&b.text.includes(n.quote));
+    if(ff==='notes'&&!here.length)return;
+    here.forEach(n=>{const q=esc(n.quote);html=html.replace(q,`<mark class="${n.status==='open'?'ask':n.status==='done'?'done':''}" data-n="${n.id}" title="${esc(n.instruction||'highlight')}">${q}</mark>`)});
+    const d=document.createElement('div');d.className='blk '+b.kind;d.dataset.i=i;d.innerHTML=html+'<button class="edit">Edit</button>';
+    d.querySelector('.edit').onclick=e=>{e.stopPropagation();edit(d,i)};
+    d.ondblclick=()=>edit(d,i);
+    el.appendChild(d);
+  });
+  const nl=$('#notes');nl.innerHTML='';
+  if(!DOC.notes.length)nl.innerHTML='<div class="hint">No requests yet.</div>';
+  [...DOC.notes].reverse().forEach(n=>{
+    const c=document.createElement('div');c.className='note '+n.status;
+    c.innerHTML=`<span class="st">${n.status==='mark'?'highlight':n.status}</span> <span class="hint">#${n.id} ${esc(n.section||'')} ${n.found?'':'· passage has changed'}</span>
+      <div class="q">${esc(n.quote.length>160?n.quote.slice(0,160)+'…':n.quote)}</div><textarea rows="2" placeholder="Instruction for the LLM">${esc(n.instruction||'')}</textarea>
+      <div class="row"><button data-a="save">Save</button><button data-a="done">${n.status==='done'?'Reopen':'Mark done'}</button><button data-a="del">Delete</button></div>`;
+    c.querySelector('[data-a=save]').onclick=async()=>{await j('/api/note_update',{id:n.id,instruction:c.querySelector('textarea').value});load()};
+    c.querySelector('[data-a=done]').onclick=async()=>{await j('/api/note_update',{id:n.id,status:n.status==='done'?'open':'done'});load()};
+    c.querySelector('[data-a=del]').onclick=async()=>{await j('/api/note_update',{id:n.id,delete:true});load()};
+    nl.appendChild(c)});
+  el.querySelectorAll('mark').forEach(m=>m.onclick=()=>{tab('notes')});
+}
+function edit(div,i){
+  const b=DOC.blocks[i];div.onmouseup=null;div.ondblclick=null;
+  div.innerHTML='';div.classList.remove('blk');const ta=document.createElement('textarea');ta.className='ed';ta.value=b.text;ta.rows=Math.min(24,b.text.split('\n').length+2);
+  const bar=document.createElement('div');bar.className='btns';bar.innerHTML='<button class="pri">Save</button><button>Cancel</button><span class="err"></span>';
+  div.append(ta,bar);ta.focus();
+  bar.children[1].onclick=()=>render();
+  bar.children[0].onclick=async()=>{const r=await j('/api/save',{start:b.start,end:b.end,hash:b.hash,text:ta.value});
+    if(r.s!==200){bar.children[2].textContent=r.d.error;return}
+    await load();$('#stat').textContent='Saved. Build the PDF to see it.'};
+}
+document.addEventListener('mouseup',e=>{
+  if(e.target.closest('#pop'))return;
+  const s=getSelection();if(!s||s.isCollapsed){return}
+  const a=s.anchorNode&&(s.anchorNode.nodeType===3?s.anchorNode.parentElement:s.anchorNode).closest('.blk'),b=s.focusNode&&(s.focusNode.nodeType===3?s.focusNode.parentElement:s.focusNode).closest('.blk');
+  if(!a||a!==b)return;
+  let q=s.toString().replace(/Edit$/,'').trim();if(q.length<3)return;
+  const blk=DOC.blocks[+a.dataset.i];if(!blk.text.includes(q))return $('#stat').textContent='Select plain text inside one paragraph (not across highlights).';
+  sel={quote:q,section:sectionOf(+a.dataset.i)};
+  $('#pq').textContent=q.length>140?q.slice(0,140)+'…':q;$('#pi').value='';
+  const r=s.getRangeAt(0).getBoundingClientRect();const p=$('#pop');p.style.display='block';
+  p.style.left=Math.min(innerWidth-340,Math.max(8,r.left))+'px';p.style.top=Math.min(innerHeight-190,r.bottom+8)+'px';$('#pi').focus();
+});
+async function addNote(withInstr){if(!sel)return;const t=$('#pi').value;if(withInstr&&!t.trim()){$('#pi').focus();return}
+  await j('/api/note',{quote:sel.quote,section:sel.section,instruction:withInstr?t:''});$('#pop').style.display='none';getSelection().removeAllRanges();sel=null;await load();tab('notes')}
+$('#pask').onclick=()=>addNote(true);$('#pmark').onclick=()=>addNote(false);$('#pcancel').onclick=()=>{$('#pop').style.display='none';sel=null};
+function tab(t){document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('on',b.dataset.t===t));document.querySelectorAll('.pane').forEach(p=>p.classList.toggle('on',p.id==='p-'+t))}
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>tab(b.dataset.t));
+$('#build').onclick=async()=>{const bt=$('#build');bt.disabled=true;bt.textContent='Building…';tab('log');$('#log').textContent='Running tectonic…';
+  const r=await j('/api/build',{camera:$('#which').value==='1'});bt.disabled=false;bt.textContent='Build PDF';
+  $('#log').textContent=(r.d.ok?'Built in '+r.d.seconds+' s.\n':'Build failed.\n')+(r.d.errors||[]).join('\n')+'\n\n'+(r.d.log||'');
+  if(r.d.ok){$('#pdf').src='/pdf/'+r.d.pdf+'?t='+Date.now();tab('pdf')}};
+$('#reload').onclick=load;$('#filter').onchange=render;
+async function load(){const r=await j('/api/doc');DOC=r.d;render()}
+load();
+</script></body></html>

@@ -47,6 +47,23 @@ submission-ready now. *Cryptologia* remains the right home for a longer version 
   as far as I could establish.\*
 - Preprint policy: T&F allows author's original manuscript on a personal site or preprint server.\*
 
+## LLM performance paper with George Lasry: `lasry/`
+
+`lasry/llm-ciphers.tex` (HistoCrypt 2027, regular) reports what the LLM agents achieved on every profiled target, by
+outcome method (Lasry's categories, `docs/_methods.py`) and extent. Corpus: classical ciphers of European origin dated
+1350–1950 (the DECODE range); the famous targets and the out-of-scope profiles (`OUT_OF_SCOPE` in `lasry/_analysis.py`)
+are left out. Every number, table and the appendix are generated from the profiles, and the data release
+(`targets.csv`, `codebook.md`) is filtered to the same corpus:
+
+```bash
+PYTHONUTF8=1 python papers/lasry/_analysis.py
+cd papers/lasry && tectonic llm-ciphers.tex          # anonymous submission
+cd papers/lasry && tectonic llm-ciphers-camera.tex   # camera-ready: authors named, Arya Sanketbhai Patel credited
+```
+
+Targets worked by Arya Sanketbhai Patel (found from the git authors of each target folder) are marked with a dagger in
+the tables and appendix, listed in the method section, and carry `worked_by = second contributor` in `targets.csv`.
+
 ## Cryptologia submission (first to go): `cryptologia/`
 
 The Armstrong 1808 paper was reformatted on 2026-09-16 for *Cryptologia* in the Taylor & Francis Interact template

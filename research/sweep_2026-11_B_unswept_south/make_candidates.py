@@ -1,0 +1,360 @@
+"""Builds candidates.json for the 4 Nov 2026 'unswept south' sweep (research/sweep_2026-11_B_unswept_south/).
+Every row comes from a catalogue description read on 4 Nov 2026 (Manus Online API, Bianchi 1876 on archive.org,
+Wayback copies of Genoa and Palermo inventories); none was viewed on an image. Run: python make_candidates.py"""
+import json, os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+MANUS = "https://manus.iccu.sbn.it/risultati-ricerca-manoscritti/-/manus-search/detail/%s"
+MAPI = "https://manus.iccu.sbn.it/o/manus-api/title?id=%s"
+SRC = "Sweep 2026-11 B unswept south (Manus Online / Wayback copies of Italian inventories)"
+NOTE = "Scored from the %s description read on 4 Nov 2026 (research/sweep_2026-11_B_unswept_south/); not viewed"
+
+
+def manus(i, label):
+    return [{"label": label + " (Manus Online record)", "href": MANUS % i},
+            {"label": "Manus JSON for the same record", "href": MAPI % i}]
+
+
+def row(**k):
+    k.setdefault("source", SRC)
+    k.setdefault("seen", "catalogue")
+    return k
+
+
+R = []
+
+# ---------------------------------------------------------------- Rome: Gregorian University (Jesuit archive), Council of Trent volumes
+R.append(row(
+    year=1541, date="30 Mar - 4 Jul 1541 (34 copied letters; cipher at pp. 172-173 and p. 180)",
+    title="Cardinal Gasparo Contarini (Regensburg) -> Cardinal Alessandro Farnese: 34 copied despatches of the 1541 Diet, with ciphered text at pp. 172-173 and p. 180",
+    correspondents="Gasparo Contarini, papal legate to the Diet of Regensburg -> Cardinal Alessandro Farnese (Secretary of State)",
+    place="Regensburg", language="Italian", region="Papacy", period="1497-1559",
+    shelfmark="Rome, Archivio della Pontificia Universita Gregoriana (APUG), Concilio di Trento 242rec ('Litterae Em.mi Contarini Anno 1541'; Manus CNMD 0000180258)",
+    folio_note="pp. 1-187 (94 leaves + 1); 'testo cifrato' at pp. 172-173 and p. 180; Pallavicino's marginalia throughout; the index lists a Pole letter of 22 Aug 1541 that is missing",
+    cls="B",
+    status="Manus record: 'Presente testo cifrato alle pp. 172-173; p. 180'. The volume is a 17th-century copy of the originals (Sforza Pallavicino's working copy). Whether the copyist wrote the cipher groups only or also the plaintext is not stated. Listed once in the Venice sweep's manus_nonvenice.txt ('cifrato') but never made a row. Not on DECODE (local list has no Gregoriana holder).",
+    why="The legation of 1541 (Regensburg colloquy, Contarini's compromise on justification) in the Farnese chancery cipher, about 20 years before the Trent volumes; a pre-1560 papal-legate cipher with images possibly obtainable from a Jesuit archive.",
+    importance=4, solvability=3, difficulty=3,
+    score_note=NOTE % "Manus Online record",
+    verify="Ask APUG for pp. 170-181; check whether plaintext stands beside the cipher; compare the Contarini despatches printed by Schulze (ZKG 3, 1879), Pastor (1880) and Dittrich (Regesten und Briefe, 1881) and the Farnese cipher of Dec 1541 already in the repo (AAV Segr. Stato, Spagna 1A).",
+    links=manus("750696", "APUG Concilio di Trento 242rec"),
+    prior_art="open as far as checked (4 Nov 2026: known.py on APUG/Contarini/Gregoriana; one web search for a decipherment of the Contarini-Farnese letters found only the 19th-century editions, none stated to print the cipher passages; those editions not read)",
+    needs_archive_scan="yes",
+    access_note="Manus links no images; APUG (Rome) reading room or e-mail request"))
+
+R.append(row(
+    year=1546, date="11 Apr 1546 - 30 Aug 1547",
+    title="Giovanni Battista Cervini (Rome) -> Cardinal Marcello Cervini (legate at Trent): register 'Lettere in cifra intorno al C. di T.', 83 leaves, with a list of the ciphers used",
+    correspondents="Giovanni Battista Cervini -> Cardinal Marcello Cervini (later Pope Marcellus II)",
+    place="Rome -> Trent", language="Italian", region="Papacy", period="1497-1559",
+    shelfmark="Rome, Archivio della Pontificia Universita Gregoriana (APUG), Concilio di Trento 690rec (Manus CNMD 0000177158)",
+    folio_note="cc. 1-83; 'Al f. 83r vi e un elenco delle cifre usate'; copy of the 17th century 'dalle Carte cerviniane'",
+    cls="B",
+    status="Manus record titles the whole volume 'Lettere in cifra intorno al C. di T. dal 1546 al 1547' and says f. 83r lists the ciphers used. Original Cervini papers are elsewhere (Carte cerviniane); this is a later copy. Listed in the Venice sweep's manus_nonvenice.txt ('in cifra') but not made a row. Not on DECODE.",
+    why="A whole register of ciphered curial letters to the legate in the first Trent period, with a cipher list that may serve as its own key; the oldest ciphertext of this size in the Jesuit-university collection.",
+    importance=4, solvability=3, difficulty=3,
+    score_note=NOTE % "Manus Online record",
+    verify="Ask APUG for cc. 1-5 and 83; see whether cipher stands alone or with interlinear plaintext; check the Concilium Tridentinum (Goerres) letter volumes for these Cervini letters, which may print them deciphered.",
+    links=manus("724628", "APUG Concilio di Trento 690rec"),
+    prior_art="open as far as checked (4 Nov 2026: known.py on APUG/Cervini; one web search on Cervini cipher letters for Trent found only general background and a remark that Buschbell's Concilium Tridentinum prints Cervini's letters only in part; the volumes not read)",
+    needs_archive_scan="yes",
+    access_note="Manus links no images; APUG (Rome)"))
+
+R.append(row(
+    year=1562, date="18 Jul - 5 Sep 1562 (cc. 243-253) and 4 Jul 1562 (c. 242); volume 1561-1564",
+    title="Council of Trent letter volume with 'cifre a parte' (cc. 243-253) and 'un'altra in Cifra' (c. 242), 517 leaves",
+    correspondents="unknown (the contents list names Lippomano, Cardinal Morone and the Count of Luna)",
+    place="Trent", language="Italian", region="Papacy", period="1560-1589",
+    shelfmark="Rome, Archivio della Pontificia Universita Gregoriana (APUG), Concilio di Trento 588rec ('Lettere anno 1561 usque ad 1564'; Manus CNMD 0000171672)",
+    folio_note="cc. 242 and 243-253 (about 12 leaves); cc. 415-430 are missing",
+    cls="C",
+    status="Manus contents list: 'Altre litterae del medesimo al medesimo con li cifre a parte de li 18 di Luglio sino a li v settembre 1562 (cc. 243-253)'; 'Littera del medesimo al medesimo di 4 Luglio con un'altra in Cifra (c. 242)'. Unclear whether the cipher groups sit in the volume or only the clear parts. Listed in the Venice sweep's manus_nonvenice.txt ('in cifra') only.",
+    why="Cipher leaves from the third Trent period (1562), the year of the precedence quarrel and Philip II's representatives; same collection as the 1546-47 register.",
+    importance=3, solvability=2, difficulty=3,
+    score_note=NOTE % "Manus Online record",
+    verify="Ask APUG for cc. 240-254; identify sender and addressee from the leaf; test the Roman curial keys of 1562 held in the repo.",
+    links=manus("685212", "APUG Concilio di Trento 588rec"),
+    prior_art="open as far as checked (4 Nov 2026: known.py on APUG and 'Concilio di Trento' found only the Kircher rows and an Ambrosiana Q 123 sup row; no web search specific to this volume)",
+    needs_archive_scan="yes",
+    access_note="Manus links no images; APUG (Rome)"))
+
+R.append(row(
+    year=1562, date="1549-1565 (volume); the cipher items are of 1562-63",
+    title="'Cifre di lettere del Concilio di Trento' and 'Cifra sopra il luogo del conte di Luna' (ff. 31r-43r) in a Trent miscellany",
+    correspondents="unknown (Pius IV, Borromeo, nuncio Delfino and others appear in the volume)",
+    place="Trent / Rome", language="Italian", region="Papacy", period="1560-1589",
+    shelfmark="Rome, Archivio della Pontificia Universita Gregoriana (APUG), Concilio di Trento 608rec ('Res ad Conc. Trid. spectantes'; Manus CNMD 0000173489)",
+    folio_note="ff. 31r-43r (13 leaves) 'Cifra sopra il luogo del conte di Luna'; 'Cifre di lettere del Concilio di Trento' (leaves not given)",
+    cls="C",
+    status="Manus 'Osservazioni' list the two items by title only. The Count of Luna was Philip II's ambassador-designate to Trent (1562-63), so the 13 leaves probably concern his precedence. Not on DECODE.",
+    why="Another Trent-period cipher bundle that may hold both ciphertext and a key in the same hand.",
+    importance=3, solvability=2, difficulty=3,
+    score_note=NOTE % "Manus Online record",
+    verify="Ask APUG for ff. 28-44; see whether 'cifre' means key tables or ciphered letters.",
+    links=manus("699266", "APUG Concilio di Trento 608rec"),
+    prior_art="open as far as checked (4 Nov 2026: known.py only; no web search specific to this volume)",
+    needs_archive_scan="yes",
+    access_note="Manus links no images; APUG (Rome)"))
+
+# ---------------------------------------------------------------- Rome: other libraries
+R.append(row(
+    year=1606, date="16 Jun - 12 Nov 1606 (eight letters)",
+    title="Cardinal Roberto Ubaldini: copies of eight letters sent in cipher, 1606",
+    correspondents="Roberto Ubaldini (cardinal 1606, nuncio in France 1607-16) -> unknown (Rome / Scipione Borghese circle)",
+    place="unknown", language="Italian", region="Papacy", period="1598-1610",
+    shelfmark="Vatican Library, Vat. lat. 14673, cc. 122r-129v (pointer from Rome, Biblioteca nazionale centrale, Vitt. Em. 1680/1-2, Manus CNMD 0000068096, citing Piazzoni-Vian, Manoscritti Vaticani Latini 14666-15203, p. 7)",
+    folio_note="cc. 122r-129v (8 leaves); further letters from various writers to Cardinal Scipione Borghese follow in the same volume",
+    cls="C",
+    status="Secondhand: the Rome BNC record says the volume contains 'copie di 8 lettere inviate in cifra' by Ubaldini; it does not say whether plaintext accompanies them. The Vatican catalogue entry itself was not read. Not in the vatican_rome sweep (4 rows: Cappon. 164, Urb. lat. 1704, Vat. lat. 13153, Vat. lat. 9684).",
+    why="Eight consecutive cipher letters of a Borghese-era prelate on the eve of his French nunciature; the Spain/France nunciature keys of Paul V's secretariat may fit.",
+    importance=3, solvability=3, difficulty=3,
+    score_note=NOTE % "Manus Online note (Rome BNC)",
+    verify="Open Vat. lat. 14673 cc. 122r-129v on DigiVatLib (reset from this network; try another network or the Vatican reading room) and see if the copies are cipher or decipher; read Piazzoni-Vian p. 7.",
+    links=[{"label": "DigiVatLib record (not opened)", "href": "https://digi.vatlib.it/mss/detail/Vat.lat.14673"}] + manus("596528", "Rome BNC Vitt. Em. 1680/1-2, the note's source"),
+    prior_art="open as far as checked (4 Nov 2026: known.py 'Ubaldini' no hits; one web search on 'Vat. lat. 14673' found nothing)",
+    needs_archive_scan="partly",
+    access_note="DigiVatLib connection resets from this network (chrome_pass_2026-11); manuscripts of Vat. lat. 14666-15203 are often digitised"))
+
+R.append(row(
+    year=1621, date="3 Jul - Dec 1621 (register; cipher on the first leaves, c. 2r-3r, and elsewhere)",
+    title="Laudivio Zacchia, nuncio in Venice -> Cardinal Ludovisi: register of letters, July-December 1621, with ciphered proper names and cipher lines ('dieci righe di cifra')",
+    correspondents="Laudivio Zacchia, nuncio in Venice -> Cardinal Ludovico Ludovisi (Secretary of State of Gregory XV)",
+    place="Venice", language="Italian", region="Papacy", period="1611-1650",
+    shelfmark="Rome, Biblioteca Casanatense, Ms. 1309, cc. 1r-124v (Manus CNMD 0000161871); sibling copy: Philadelphia, Penn Libraries, Ms. Codex 553 (OPenn, open images)",
+    folio_note="cc. 1r-124v; record notes 'i nomi propri sono cifrati' and, at c. 3r, 'dieci righe di cifra'",
+    cls="B",
+    status="Manus record for the Casanatense register. Penn Ms. Codex 553 carries the same title (letters from Zacchia to Ludovisi, July to December 1621) and is digitised on OPenn with open images; its cipher leaves were not checked. Ploncher (ASI 9, 1882) printed only the 1623 Sarpi letters (Ms. 1308 in the Casanatense). Not on DECODE.",
+    why="Venetian nunciature in the year of Gregory XV's accession: a regular papal nuncio-to-secretary cipher, with a digitised sibling copy in the open.",
+    importance=3, solvability=4, difficulty=2,
+    score_note=NOTE % "Manus Online record and the OPenn page title",
+    verify="Open OPenn Ms. Codex 553 (https://openn.library.upenn.edu/Data/0002/mscodex553) and find the cipher lines; compare Meister's papal keys and the Ludovisi-era Venice nunciature keys.",
+    links=manus("622316", "Casanatense Ms. 1309") + [{"label": "Penn Ms. Codex 553 (OPenn)", "href": "https://openn.library.upenn.edu/Data/0002/html/mscodex553.html"}],
+    prior_art="open as far as checked (4 Nov 2026: known.py 'Zacchia' no hits; one web search found the Penn copy, the DBI bibliography and Ploncher 1882, no study of the cipher)",
+    needs_archive_scan="no",
+    access_note="Penn Ms. Codex 553 images are open on OPenn (CC0); Casanatense needs a request"))
+
+R.append(row(
+    year=1700, date="undated (the volume is dated 1650-1800; the element is a Mantua-Paris exchange)",
+    title="Correspondence of the Duke of Mantua with an envoy at Paris, partly in cipher, with a few other letters to the Duke (cc. 147r-197r)",
+    correspondents="a Duke of Mantua (Gonzaga) <-> his envoy in Paris",
+    place="Mantua / Paris", language="Italian", region="Italy", period="unknown",
+    shelfmark="Rome, Biblioteca nazionale centrale, Gesuitico 204 (Manus CNMD 0000066385), cc. 147r-197r",
+    folio_note="about 50 leaves; one of 28 elements in a composite miscellany from the Valenti Gonzaga library and the Casa Professa del Gesu",
+    cls="C",
+    status="Manus: 'Carteggio del Duca di Mantova con un suo invitato [sic, inviato] a Parigi in parte in cifra'; Catalogo dei manoscritti Gesuitici, p. 119, dates the volume to the 18th century. The Duke and the years are not given.",
+    why="A Gonzaga-Paris cipher exchange of the late Mantuan dukes (probably Ferdinando Carlo, d. 1708) outside the Mantua archives, where the Gonzaga keys are well documented.",
+    importance=2, solvability=3, difficulty=3,
+    score_note=NOTE % "Manus Online record",
+    verify="Open the volume at cc. 147r-197r (BNC Rome; Gesuitico manuscripts are not digitised as far as Manus shows) to date the exchange; compare the Mantuan keys already worked in the repo (Gonzaga, ASMn).",
+    links=manus("588084", "BNC Rome Gesuitico 204"),
+    prior_art="open as far as checked (4 Nov 2026: known.py on 'Valenti Gonzaga' no hits; no web search)",
+    needs_archive_scan="yes",
+    access_note="no images linked from Manus; BNC Rome"))
+
+R.append(row(
+    year=1632, date="c. 1630-1634 (volume dated 1601-1650)",
+    title="'Lettera in cifra di Monsig. N. Segretario di Stato di S.S.ta mandata all'em.mo Card.le Bichi Nunzio in Francia, che fu intercetta' (second copy of catalogue 1345)",
+    correspondents="Papal Secretary of State -> Cardinal Alessandro Bichi, nuncio in France",
+    place="Rome", language="Italian", region="Papacy", period="1611-1650",
+    shelfmark="Florence, Biblioteca Moreniana, Bigazzi 303 (Manus CNMD record 691092)",
+    folio_note="folios not given in the part of the record read",
+    cls="C",
+    status="Manus lists the title in a Bigazzi miscellany. The Ambrosiana copy (X 279 inf.) is catalogue entry 1345; this is a second manuscript copy of what looks like the same intercepted letter, so a pair of copies could be compared. Not on DECODE.",
+    why="A second witness of the intercepted papal cipher letter lets a transcription be checked against another hand, and may carry a contemporary decipherment (intercepted letters usually do).",
+    importance=3, solvability=3, difficulty=3,
+    score_note=NOTE % "Manus Online record (title only)",
+    verify="Open Bigazzi 303 for the letter; compare with Ambrosiana X 279 inf. (catalogue 1345) and with the Barberini/Bichi keys on DECODE.",
+    links=manus("691092", "Moreniana Bigazzi 303"),
+    prior_art="open as far as checked (4 Nov 2026: known.py 'Bichi' finds catalogue 1345, 'Bigazzi'/'Moreniana' no hits)",
+    needs_archive_scan="unknown",
+    access_note="Moreniana is a Florence library; digitisation not checked"))
+
+# ---------------------------------------------------------------- Turin
+R.append(row(
+    year=1705, date="1704-1706 (letters at cc. 120, 125, 132 and passim; key at c. 172)",
+    title="Cardinal Pietro Ottoboni and others on the Naples immunities dispute with the viceroy Villena: letters to and from Mgr de la Tremoille Noirmoutier in cipher, with the decipherment scheme on c. 172",
+    correspondents="Cardinal Pietro Ottoboni / Mario Saverio Bottoni / Mgr de la Tremoille Noirmoutier -> and from; also the viceroy of Naples, Juan Fernandez Pacheco, marquis of Villena",
+    place="Rome / Naples", language="Italian (some French, Spanish, Latin)", region="Italy", period="1701-1800",
+    shelfmark="Turin, Biblioteca Reale, Manoscritti Varia 244 (Manus CNMD 0000456583; inventory no. SM 14518), 203 leaves, 87 letters",
+    folio_note="cipher in letters at cc. 120, 125, 132 and passim; 'lo schema di decrittazione si trova alla c. 172'",
+    cls="A",
+    status="Manus: 'Alcune lettere ... indirizzate a un certo Monsignor de La Tremoille Noirmoutier, ed una risposta di questi, contengono codici cifrati; lo schema di decrittazione si trova alla c. 172.' Record created 14 Apr 2026. No decipherment is mentioned.",
+    why="A key and the ciphertexts bound together in one volume of the War of the Spanish Succession (the Pope against Naples' Spanish administration); a ready cribbed read with no sibling needed.",
+    importance=3, solvability=4, difficulty=2,
+    score_note=NOTE % "Manus Online record",
+    verify="Request cc. 120-132 and 172 from the Biblioteca Reale (Turin); check the cipher against the Roman curial and French-embassy keys of 1704-06.",
+    links=manus("1871606", "Turin Biblioteca Reale Varia 244"),
+    prior_art="open as far as checked (4 Nov 2026: known.py on 'Tremoille', 'Noirmoutier', 'Ottoboni' - only unrelated hits; one web search for Varia 244 found nothing)",
+    needs_archive_scan="yes",
+    access_note="no images linked from Manus; Biblioteca Reale di Torino"))
+
+R.append(row(
+    year=1588, date="1588 (no day)",
+    title="Duke Charles Emmanuel I -> his secretary Corte, sent to Rome: instruction on benefices and indults, 'con altra istruzione in cifra per affari di Stato'",
+    correspondents="Charles Emmanuel I of Savoy -> Secretary Corte (mission to Rome)",
+    place="Turin -> Rome", language="Italian", region="Italy", period="1560-1589",
+    shelfmark="Archivio di Stato di Torino, Corte, Materie politiche per rapporto all'estero (Materie ecclesiastiche, Roma); item as listed in Bianchi, Le materie politiche relative all'estero degli archivi di Stato piemontesi (1876), under Roma, Categoria Materie ecclesiastiche",
+    folio_note="mazzo and item number not given in Bianchi's list",
+    cls="C",
+    status="Bianchi (1876): 'Istruzione del Duca al Segretario Corte, mandato a Roma coll'incarico di molte raccomandazioni per benefizi, indulgenze, indulti, ma con altra istruzione in cifra per affari di Stato [1588]'. No key or decipherment mentioned; the Turin inventories were not reachable to confirm the present shelfmark.",
+    why="A Savoyard cipher instruction of the League years, in the one sovereign-to-envoy channel (Turin-Rome) for which the Savoy cipher family of Charles Emmanuel I could be rebuilt.",
+    importance=3, solvability=2, difficulty=4,
+    score_note=NOTE % "Bianchi 1876 print entry",
+    verify="Find the item in the ASTo Lettere ministri / Negoziazioni inventories (archiviodistatotorino.cultura.gov.it blocked from this network); ask the archive for a scan; check for a plain minute.",
+    links=[{"label": "Bianchi 1876 on archive.org", "href": "https://archive.org/details/lemateriepolitic00bian"}],
+    prior_art="open as far as checked (4 Nov 2026: Bianchi's only mentions of 'cifra' read in full; known.py not run for Corte; no web search)",
+    needs_archive_scan="yes",
+    access_note="no online images; ASTo reading room"))
+
+# ---------------------------------------------------------------- Genoa
+R.append(row(
+    year=1796, date="1795-1797",
+    title="Genoese minister Celesia (Madrid) to the Serenissimo Governo: letters including 'lettere in cifre'",
+    correspondents="Celesia, minister of Genoa at Madrid -> Serenissimo Governo of Genoa",
+    place="Madrid", language="Italian", region="Italy", period="1701-1800",
+    shelfmark="Archivio di Stato di Genova, Archivio Segreto, Lettere Ministri, Spagna, mazzo 76 (inventory 34, Archivio Segreto)",
+    folio_note="one mazzo; cipher letters not counted",
+    cls="B",
+    status="Inventory 34: 'Mazzo 76 - Lettere del M.tro Celesia al Ser.mo Governo e lettere in cifre (1795-1797)'. The same series holds 'Cifrari per il Ministro' (Francia mazzo 79, 1771-72), 'lettere e cifre' (Inghilterra mazzo 17 A) and a cifrario (Olanda mazzo 5), so keys sit beside the letters. Read from the Wayback copy of the PDF (the live site is unreachable).",
+    why="The Genoese republic's last Madrid minister in the Revolutionary Wars; keys of the series are in the same fonds.",
+    importance=2, solvability=3, difficulty=3,
+    score_note=NOTE % "ASGe inventory 34 (Wayback copy of 13 Jun 2025)",
+    verify="Request mazzo 76 from ASGe; match against the cifrari of Archivio Segreto 2707 and the 'Raccolta cifrari' (b. 1).",
+    links=[{"label": "ASGe inventory 34, Archivio Segreto (Wayback)", "href": "https://web.archive.org/web/20250613/https://archiviodistatogenova.cultura.gov.it/fileadmin/risorse/pdf/34_ArchivioSegreto202003.pdf"}],
+    prior_art="open as far as checked (4 Nov 2026: known.py found no Genoese minister Celesia; no web search)",
+    needs_archive_scan="yes",
+    access_note="no online images; ASGe (host unreachable from this network)"))
+
+R.append(row(
+    year=1750, date="1746-1794 (16 volumes flagged)",
+    title="Genoese legation in Paris ('Legation genoise a Paris'): 16 volumes of the returned manuscripts with documents 'in cifra/cifre', one with a cifrario (cc. 126-132)",
+    correspondents="Genoese envoys at Paris <-> Serenissimo Governo / Giunta",
+    place="Paris", language="French / Italian", region="Italy", period="1701-1800",
+    shelfmark="Archivio di Stato di Genova, Manoscritti restituiti dalla Francia (inventory 41bis), nos. 218, 220, 225, 226, 228, 229, 231, 234, 247, 254, 257, 259, 365, 388, 389 (cifrario at cc. 126-132), 390",
+    folio_note="volumes of 200-400 leaves each; the number of cipher leaves per volume is not stated",
+    cls="B",
+    status="Inventory 41bis flags these volumes 'Contiene doc. in cifra/cifre'; no. 247 'contiene un decifrante' (c. 166) and no. 389 'un cifrario' (cc. 126-132). Numbers are read from a split-column OCR layout and need checking against the PDF. No decipherment mentioned.",
+    why="A run of keyed French-Italian legation volumes of the 1746-94 period with at least two internal keys, a ready field for key recovery.",
+    importance=2, solvability=3, difficulty=2,
+    score_note=NOTE % "ASGe inventory 41bis (Wayback copy of 13 Jun 2025)",
+    verify="Open the inventory PDF to confirm the volume numbers; request nos. 247 and 389 first.",
+    links=[{"label": "ASGe inventory 41bis (Wayback)", "href": "https://web.archive.org/web/20250613/https://archiviodistatogenova.cultura.gov.it/fileadmin/risorse/pdf/41bis_ManoscrittiParigi_202004.pdf"}],
+    prior_art="open as far as checked (4 Nov 2026: no web search; 'Legation genoise' not in the repo)",
+    needs_archive_scan="yes",
+    access_note="no online images; ASGe"))
+
+# ---------------------------------------------------------------- Palermo
+R.append(row(
+    year=1849, date="Feb 1848 - Apr 1849",
+    title="Sicilian revolutionary government's diplomatic correspondence 1848-49 (Minister Torrearsa, Commissioners at London and Paris): many despatches 'in cifra' with their 'versione' attached",
+    correspondents="Marchese di Torrearsa (Foreign Minister of Sicily) <-> the Sicilian Commissioners at London and Paris (Baron Friddani and Michele Amari at Paris) and other agents (Carlo Gemelli)",
+    place="Palermo / London / Paris", language="Italian", region="Italy", period="1801-1900",
+    shelfmark="Archivio di Stato di Palermo, Miscellanea archivistica, I serie, b. 68 (505 documents, formerly bb. 68-69; repertory by S. Falletta 2020)",
+    folio_note="the repertory marks about 30 of the 505 documents as in cipher, many 'con sua versione'; e.g. nos. 274 (model for cipher correspondence), 316 (27 Oct 1848, cipher sheet with its version) and 441 (27 Jan 1849, despatch wholly in cipher with translation)",
+    cls="A",
+    status="Repertory text read from the Wayback copy: e.g. no. 441 (27 Jan 1849) 'Dispaccio interamente in cifra con sua traduzione ... candidatura di Murat'; no. 274 (24 Dec 1848) 'un modello per la corrispondenza in cifra'. Because versions are attached, the cipher can be recovered from cipher/clear pairs; no study of it is mentioned.",
+    why="A short-lived revolutionary state's diplomatic cipher, with paired plaintext, from the year of the Sicilian independence attempt; the same cipher sits in Misc. Arch. I.65-67.",
+    importance=3, solvability=4, difficulty=2,
+    score_note=NOTE % "ASPa repertory (Wayback copy of 9 Aug 2024)",
+    verify="Request b. 68 (fascicoli 1-6 and 7-18); transcribe three pairs and test a nomenclator/digit hypothesis.",
+    links=[{"label": "Repertory of Misc. Arch. I.68 (Wayback)", "href": "https://web.archive.org/web/20240809/https://saassipa.cultura.gov.it/wp-content/uploads/2020/08/Misc.-Arch.-I.68-Repertorio-delle-carte-depositate-dal-marchese-di-Torrearsa.pdf"}],
+    prior_art="open as far as checked (4 Nov 2026: Amari's own Sicilian-revolution papers exist in print; not searched for the cipher)",
+    needs_archive_scan="yes",
+    access_note="no online images; ASPa (host unreachable from this network)"))
+
+R.append(row(
+    year=1849, date="Feb - Apr 1849",
+    title="Sicilian Foreign Ministry, Feb-Apr 1849 despatches (Commissioners of London and Paris): 'dispaccio in cifra', 'lettera cifrata' and 'nota in cifra' items",
+    correspondents="Commissioners of London (Granatelli, Scalea) and Paris (Friddani, Amari) -> Minister of Foreign Affairs, Palermo",
+    place="London / Paris -> Palermo", language="Italian", region="Italy", period="1801-1900",
+    shelfmark="Archivio di Stato di Palermo, Miscellanea archivistica, Misc. Arch. I.67 (Repertorio della corrispondenza diplomatica del Governo di Sicilia, 1848-49; deposit of the marchese di Misuraca, 16 Sep 1886); also I.65, I.66",
+    folio_note="e.g. item 86 a-b (London, 31 Mar 1849: 'Dispaccio in cifra', 'Lettera cifrata') and several of 5-8 Apr 1849 with 'Traduzione di lettera cifrata' or 'Nota in cifra'; item numbers should be checked on the PDF",
+    cls="A",
+    status="Same cipher family as b. 68; the repertory notes 'Traduzione' for several items, so some have a contemporary clear version.",
+    why="The second box of the same Sicilian diplomatic cipher; together with b. 68 enough text to rebuild the whole nomenclator.",
+    importance=2, solvability=4, difficulty=2,
+    score_note=NOTE % "ASPa repertory (Wayback copy of 8 Aug 2024)",
+    verify="Request I.67 and I.66 together with b. 68; see if the versions are complete.",
+    links=[{"label": "Repertory of Misc. Arch. I.67 (Wayback)", "href": "https://web.archive.org/web/20240808/https://saassipa.cultura.gov.it/wp-content/uploads/2020/09/Misc.-Arch.-I.67-Repertorio-della-corrispondenza-diplomatica-del-Governo-di-Sicilia-del-febbraio-1848.pdf"}],
+    prior_art="open as far as checked (4 Nov 2026: no web search)",
+    needs_archive_scan="yes",
+    access_note="no online images; ASPa"))
+
+# ---------------------------------------------------------------- Bologna
+R.append(row(
+    year=1708, date="10 Nov 1708 (c. 91r-v, within a volume of 20 Jun 1708 - 29 Jun 1709)",
+    title="Cardinal Fabrizio Paolucci (Rome) -> Count Luigi Ferdinando Marsili: letter in cipher on the papal defence against the Imperial army, a cipher bifolio possibly with its decipherment",
+    correspondents="Fabrizio Paolucci, papal Secretary of State -> Luigi Ferdinando Marsili",
+    place="Rome", language="Italian", region="Papacy", period="1701-1800",
+    shelfmark="Bologna, Biblioteca Universitaria, Ms. Marsili 75/C, cc. 91r-92r (Manus CNMD record 1846991)",
+    folio_note="the item is 'Lettera in cifre c. 91rv', bifolium 91-92",
+    cls="A",
+    status="Manus regesto: '10 novembre 1708. Lettera in cifre c. 91rv. All'interno del bifoglio cifrato, forse allegata la sua decifrazione che riguarda la protezione di Roma e utilizzo di fondi economici.' The other 95 letters of the volume are plain.",
+    why="One short cipher letter from the Papal Secretary of State in the 1708 Comacchio war with a possible attached decipherment as a crib.",
+    importance=2, solvability=3, difficulty=2,
+    score_note=NOTE % "Manus Online record",
+    verify="Ask the Biblioteca Universitaria di Bologna (Marsili fund) for cc. 91-92.",
+    links=manus("1846991", "Bologna BU Marsili 75/C"),
+    prior_art="open as far as checked (4 Nov 2026: known.py 'Paolucci' and 'Marsili' only unrelated hits; no web search)",
+    needs_archive_scan="yes",
+    access_note="no images linked from Manus; Bologna BU"))
+
+
+# ---------------------------------------------------------------- Florence BNCF, Ginori Conti 29 (Medici circle, pre-1500; images on teca.bncf.firenze.sbn.it)
+TECA = "https://teca.bncf.firenze.sbn.it/ImageViewer/servlet/ImageViewer?idr=%s"
+GC_NOTE = "Manus gives the sheet-by-sheet description; the 29.114.a key sheets (Otto di Pratica, Dieci di Balia) are on the same fund and may fit."
+GC_PRIOR = "open as far as checked (4 Nov 2026: known.py 'Ginori Conti' and the shelfmark no hits; Lorenzo de' Medici, Lettere (Giunti/Barbera 1977-) may print the cipher passages deciphered and was not checked; no web search)"
+
+
+def gc(i, idr, num, year, date, title, corr, place, folio, status, why, imp, sol, cls="B"):
+    return row(
+        year=year, date=date, title=title, correspondents=corr, place=place, language="Italian", region="Italy",
+        period="1497-1559" if year >= 1497 else "15th century",
+        shelfmark="Florence, Biblioteca nazionale centrale, Ginori Conti %s (Manus CNMD record %s)" % (num, i),
+        folio_note=folio, cls=cls, status=status + " " + GC_NOTE, why=why, importance=imp, solvability=sol, difficulty=3,
+        score_note=NOTE % "Manus Online record", verify="Open the BNCF teca viewer, count the cipher lines, and try the Florentine chancery keys on DECODE (ASF) and Ginori Conti 29.114.a; compare Lorenzo de' Medici, Lettere.",
+        links=[{"label": "BNCF teca image viewer", "href": TECA % idr}] + manus(i, "Ginori Conti " + num),
+        prior_art=GC_PRIOR, needs_archive_scan="no",
+        access_note="images online without login at teca.bncf.firenze.sbn.it (BNCF Digital); not opened for the cipher lines")
+
+
+R.append(gc("611112", "BNCF0003827727", "29.132", 1489, "7 Dec 1489 (cc. 2r-3v)",
+            "Lorenzo de' Medici (Florence) -> Niccolo Michelozzi (Rome): part of the letter ciphered, on the Badia di Nicosia and Innocent VIII",
+            "Lorenzo de' Medici -> Niccolo Michelozzi (with Don Gregorio's mission to the Pope)", "Florence -> Rome",
+            "cc. 2r-3v (BNCF inventory no. 3423160); the 1 Dec letter on cc. 1r-v is not marked as cipher",
+            "Manus: 'Parte della lettera e cifrata.' No interlinear decipherment is noted. Not on DECODE.",
+            "Lorenzo's own cipher in the last year of his life, in the Roman papal-benefice business; oldest group is under 1500 with images online.", 4, 4))
+R.append(gc("611086", "BNCF0003827454", "29.125bis", 1484, "28 Jul 1484 (cc. 5r-6v)",
+            "Lorenzo de' Medici (Florence) -> Niccolo Michelozzi (with the League's camp): part of the letter ciphered",
+            "Lorenzo de' Medici -> Niccolo Michelozzi, Florentine mandatory 'In Castris Serenissime Lige'", "Florence -> the League's camp (Ferrara war)",
+            "cc. 5r-6v (BNCF inventory no. 3423030); the letter on cc. 1r-v (5 Jul 1484) is separate",
+            "Manus: 'Parte della lettera e cifrata.' No decipherment noted. Not on DECODE.",
+            "A Medici cipher letter from the War of Ferrara (1482-84), when Lorenzo directed the League's diplomacy.", 4, 4))
+R.append(gc("611138", "BNCF0003827859", "29.136", 1490, "5 Feb 1490 (1489 Florentine style; cc. 2r-3v)",
+            "Lorenzo de' Medici -> Niccolo Michelozzi and Giovanni Antonio d'Arezzo (Rome): letter in part ciphered",
+            "Lorenzo de' Medici -> Niccolo Michelozzi and Giovanni Antonio d'Arezzo", "Florence -> Rome",
+            "cc. 2r-3v (BNCF inventory no. 3423183); the 8 Jan biglietto on cc. 1r-v is not marked as cipher",
+            "Manus: 'Lettera in parte cifrata.' No decipherment noted. Not on DECODE.",
+            "Another of the 1489-90 Roman letters of Lorenzo to Michelozzi; with 29.132 a second cipher text from the same weeks, useful for a joint key.", 4, 4))
+R.append(gc("611165", "BNCF0003828116", "29.141", 1486, "undated (Pope Innocent VIII, after 1484; c. 1485-87)",
+            "Baccio Ugolini (Bracciano) to Florence: copied chapter of his letter, with an 'Extracto di cifra' of the letter of the 26th",
+            "Baccio Ugolini -> Florence (Medici circle), about Virginio Orsini and the Pope", "Bracciano",
+            "cc. 1r-2v (BNCF inventory no. 3423269); c. 2r: 'Extracto di cifra i(n) la lette(ra) de di XXVI dal Baccio'",
+            "Manus: the leaf is headed 'Extracto di cifra ...' so a deciphered extract is probably already beside the cipher. Date not given.",
+            "Ugolini's Orsini-barons reports of the mid-1480s; a clear extract is a crib for the whole letter.", 3, 4, cls="A"))
+R.append(gc("610402", "BNCF0003826367", "29.104", 1492, "24 Feb 1492 (cc. 5r-6v)",
+            "Piero Alamanni (Rome) -> Niccolo Michelozzi (Naples): some lines ciphered",
+            "Piero Alamanni -> Niccolo Michelozzi, Florentine mandatory at Naples", "Rome -> Naples",
+            "cc. 5r-6v (BNCF inventory no. 3422591); the earlier letter of 23 Dec 1486 (Milan, cc. 1r-2v) is not marked as cipher",
+            "Manus: 'Alcune righe sono cifrate.' No decipherment noted. Not on DECODE.",
+            "A Roman news letter of Lorenzo's last months (Innocent VIII, Virginio Orsini), partly ciphered.", 3, 3))
+R.append(gc("611145", "BNCF0003827870", "29.137 (cc. 1-39)", 1481, "c. 1481 (cc. 9v; the biglietto is c. 13r)",
+            "Short ciphered biglietto (c. 13r) in the Medici letters of Ginori Conti 29.137, cc. 1-39",
+            "Medici circle (Lorenzo de' Medici / Niccolo Michelozzi correspondence of 1481)", "Florence",
+            "c. 13r (BNCF inventory no. 3423197)",
+            "Manus: 'Il biglietto e in scrittura cifrata.' Sender, addressee and date of the biglietto not given. Not on DECODE.",
+            "A short Medici cipher note of 1481 (Pazzi-war aftermath); cheap to test against the Florentine keys.", 2, 3, cls="C"))
+
+out = os.path.join(HERE, "candidates.json")
+json.dump(R, open(out, "w", encoding="utf8"), ensure_ascii=False, indent=1)
+print(len(R), "rows ->", out)

@@ -1,0 +1,201 @@
+{
+ "615": {
+  "verdict": "open",
+  "note": "AGS PTR leg. 52 doc. 124 viewed on PARES (images 1, 2, 4): full pages of Roman-numeral cipher, no decipherment on the leaves; CSP Spain I no. 114 only notices it; the extant key (PTR 52 doc. 33) is held and a 3-line sample by WAINUT exists in targets/puebla1495, so the rest of pp. 1-4 is open (key_held).",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "scan",
+    "where": "PARES description 2207846 (AGS, Patronato Real, LEG,52,DOC.124), images 1, 2 and 4 fetched via ViewImage.do (dbCode 12533193) and viewed on 4 Nov 2026: https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/2207846",
+    "extent": "4 images (pp. 1-4, foliation 664-665): image 1 about 27 lines and image 2 about 25 lines of Roman-numeral groups; image 4 a further full page of about 28 lines (image 3 not opened). Spanish. Cipher copy of the Ferdinand and Isabella despatch to De Puebla of 28 Dec 1495.",
+    "cipher": "Dense lines of Roman numerals in script forms (da/dar/jV ligatures, strokes and abbreviation marks) with a few clear names (Diego de Soria, Iohn de Santagadea, Diego Lopez de Ayala, Salvador Duarte); docket 'De los Reyes cifra sin fecha', old mark T.C.Y. 2. Nothing is written between the lines or on the leaves as a decipherment. Image 4 carries a modern note that targets/puebla1495/NOTES.md reads as 'Carta de los RR.CC. al doctor Puebla en cifra incompleta' (a description, not a reading)."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: local harvest (research/catalogue_harvest/decode/list.json, 10106 records, 30 Oct 2026) has no Puebla, Tortosa or AGS Patronato Real 1495 record (only ACA Sastago 1496-98 letters, unrelated); web search 'de-crypt.org DECODE Puebla Patronato Real leg. 52' found nothing.",
+    "tomokiyo": "cryptiana.web.fc2.com/code/spanish.htm (fetched 4 Nov 2026): describes Puebla's Great Roman Numeral Code (2400 elements, key PTR,LEG,52,DOC.33) and lists PTR,LEG,52,DOC.124 as 'another undated letter ... from 1495' probably in that code; no reading given. Not on unsolved.htm.",
+    "lasry": "No Lasry or HistoCrypt paper on the Puebla code or on doc. 124 found: GL.htm grepped (no Simancas/Puebla entry) and web search 'Puebla Great Roman Numeral Code Lasry HistoCrypt Cryptologia' returned only unrelated 2018 CNI Great Captain news.",
+    "edition": "Bergenroth, CSP Spain I (1862) no. 113 pp. 72-75 prints an abstract of the clear draft; no. 114 p. 75 (BHO pp72-79, fetched 4 Nov 2026) reads 'The same despatch written in cipher ... Written in two different keys of cipher, one of which is extant' and prints no decipherment of the cipher copy. De la Torre, Documentos sobre relaciones internacionales de los Reyes Catolicos V (1965) and Suarez Fernandez IV (1972) not opened (not online); Galende Diaz's study of the Puebla cipher (Univ. Granada, digibug 10481/30410) describes the code, not this despatch.",
+    "literature": "Web searches (Puebla cipher Roman numerals decipherment; Galende Diaz La escritura cifrada durante el reinado de los Reyes Catolicos) found descriptions of the 2400-word code, no published reading of doc. 124. Project notes (targets/puebla1495) record a sample decode p. 1 ll. 6-8 and p. 2 ll. 1-2 with the extant key, made 27 Oct 2026 by WAINUT; that is our own partial work, not prior art in print."
+   },
+   "key_check": "The extant key AGS PTR leg. 52 doc. 33 (PARES show/2207755) is held and was applied to a 3-line sample (targets/puebla1495) which gives coherent Spanish; the rest of the cipher copy is not decoded and eight groups (883, 1374, 1335, 1813, 852, 868, 1221, 'xxix') lack values. Bergenroth says the despatch exists in two keys, so the second key is not held. The key does not close the lead because no reading beyond the sample is on record.",
+   "key_held": "AGS PTR leg. 52 doc. 33, Puebla's Great Roman Numeral Code (2400 elements, Tomokiyo/Bergenroth Puebla-5); tested on the sample only (targets/puebla1495/key_excerpt.tsv). Per the 3 Nov 2026 rule it does not block.",
+   "duplicates": "known.py on 'Puebla', 'PTR', 'Tortosa': no catalogue.json entry for PTR,LEG,52,DOC.124 (catalogue 625 = PTR,LEG,54,DOC.13, a different document; lead 1607 = Paz 4715, same). Siblings in the same code are separate targets (targets/puebla1496, puebla1506, puebla1507). CSP Spain I no. 117 (the merchant-cover letter of the same day) is a different document; the identification of doc. 124 with no. 113/114 is probable, not proven (targets/puebla1495/NOTES.md).",
+   "verdict": "open"
+  }
+ },
+ "1427": {
+  "verdict": "partly_read",
+  "note": "The Miami digital objects for the coded letters 1956, 2200 and 2543 carry attached transcripts ('+ 4 transcripts (18 p.)' etc.; handwritten Spanish transcript pages viewed) and the finding aid says the coded letters 'have been transcribed'; item 2924 is a plain-English telegram and 2876/2912 are cipher-alphabet keys, so the lead is already read in part by the archive.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "scan",
+    "where": "University of Miami Cuban Heritage Collection, Fernando Fernandez-Cavada Collection chc5006, CONTENTdm IIIF images fetched 4 Nov 2026 (https://digitalcollections.library.miami.edu/digital/collection/chc5006/id/1956, /2200, /2543, /1719, /2876, /2912, /2924) and item metadata via the dmwebservices API; finding aid https://atom.library.miami.edu/chc5006 (read in Chrome) and chc5006.pdf.",
+    "extent": "Item 1956 (Federico Fernandez Cavada to Carmela Merino, 23 Jul 1870): 4 p. original with pp. 1-2 of symbol cipher, plus 4 transcripts of 18 p. in the same object (22 images); item 2200 (Adolfo, 24 May 1870): 6 images, pp. 1-4 cipher with clear Spanish headings, plus 2 transcript pages; item 2543 (Alfaro to Emilio, 12 Jul 1870): 3 p. + 1 transcript (2 p.); item 1719 (V. Garcia): 2 p., 3 lines of cipher with English text; item 2924: 1 p. telegram; items 2876 (2 p.) and 2912 (1 p.): cipher alphabets.",
+    "cipher": "Letters 1956 and 2200 are homophonic symbol ciphers in the same hand/system as the alphabet on item 2912 (a-z with several symbols per letter, 'Cop[ia] No 2'); the metadata lists 'transcripts' in each object and the images after the originals are handwritten Spanish transcripts (e.g. 1956 image 11 'Camaguey - Julio 23/70 Agrego algunos renglones ...'; 2200 image 5 'Cuartel General Distrito de Cienfuegos, Mayo 24 de 1870 ... emplea la clave') with the cipher passages written out in clear. Item 2924 is plain English ('Highly important despatches from Cespedes for you in cyphers ... just received'), tagged 'Cipher and telegraph codes', not a cipher."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: local harvest (list.json, 10106 records, 30 Oct 2026) has no Cavada, Cuba, Miami or Cienfuegos record.",
+    "tomokiyo": "Not covered: cryptiana unsolved.htm, spanish.htm, GL.htm, bookcode.htm and german.htm (fetched 4 Nov 2026) have no Cavada or Cuban Ten Years War entry.",
+    "lasry": "No Lasry, HistoCrypt or Cryptologia item on the Fernandez Cavada ciphers found (GL.htm grepped; web search 'Fernandez Cavada Cuban Heritage Collection letters in code transcribed cipher 1870').",
+    "edition": "The collection itself holds the transcripts: finding aid scope note 'Many of the letters are written in code and have been transcribed', plus folders 'Transcripts of Unidentified Letters' (Box 1 f. 9; Box 2 f. 53) and 'Codes' (Box 2 f. 54); 'Codes, n.d.' (Box 2 f. 30) holds the two key sheets. No printed edition found.",
+    "literature": "Web search found only the Miami finding aid and CONTENTdm records; no article on the cipher. Davis, Sketch of Frederic Fernandez-Cavada (1963) not checked."
+   },
+   "key_check": "The cipher alphabet (items 2876, 2912, Box 2 f. 30) is in the same collection and was in use at the time; the archive's transcripts show the letters were read contemporaneously or by the donor family. No independent test run here.",
+   "key_in_volume": "Items 2876 and 2912 (Box 2 folder 30 'Codes'): symbol alphabet, a-z with homophones. Not tested here because the transcripts already give the plaintext.",
+   "duplicates": "known.py on 'Cavada', 'chc5006', 'Alfaro': only the lead itself, research/dpla_smithsonian and research/archive_sweep_2026-10/access_uncertain.md; no catalogue or DECODE duplicate. The related lead 1428 (J. Norma letter, Cuban war) is a different item.",
+   "verdict": "partly_read"
+  }
+ },
+ "1631": {
+  "verdict": "not_cipher",
+  "note": "Archivportal-D (opened 4 Nov 2026): AA 0031 Nr. 1940 lists 'Bl. 42 Chiffrenschluessel' and 'Bl. 483 Chiffrenschluessel 1541' and Nr. 242 'dabei Chiffrenschluessel 1539'; only key sheets, no ciphertext named, not digitised.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Archivportal-D records opened in Chrome 4 Nov 2026: AA 0031 Nr. 1940 https://www.archivportal-d.de/item/G7HVQQ2PRN3QXFI32ORO7WQEYTT666PH and AA 0031 Nr. 242 https://www.archivportal-d.de/item/R35FR6H3R4EVANODRIWGMHOMRGMCRGHO (Landesarchiv NRW Abt. Rheinland, Jülich-Berg II). No digital object; access 'archive'.",
+    "extent": "Two key sheets in two Sachakten: Nr. 1940 Bl. 42 and Bl. 483 (Ehe Herzog Wilhelms mit Johanna von Navarra Bd. II, 1540-45); Nr. 242 (Religionsverhandlungen 1530-1546) with a key of 1539. No ciphered letter is listed in either file.",
+    "cipher": "Nr. 1940: 'Enthält: Bl. 42 Chiffrenschlüssel - 142) Gedenkzettel (Notizen) für den Kanzler - 168) Schreiben des Vergerio an die Königin von Navarra 1540 - ... 483) Chiffrenschlüssel 1541 - ...'. Nr. 242: 'Enthält: Wahl des Franz von Waldeck zum Bischof von Minden 1530 - Abschied des Frankfurter Tages 1539 - Bistum Münster 1546, dabei Chiffrenschlüssel 1539'. The records name keys only; no letter in cipher and no decipherment is listed. I did not see the leaves."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: local harvest (list.json, 30 Oct 2026) has only 17th-century Düsseldorf records and no Jülich-Berg 1539-45 item; no AA 0031 shelfmark match.",
+    "tomokiyo": "cryptiana german.htm and unsolved.htm (fetched 4 Nov 2026): the only Jülich entry is Maurice of Hesse-Kassel's cipher with Henri IV in 1609-10; nothing on Jülich-Cleves-Berg 1539-45.",
+    "lasry": "No Lasry or HistoCrypt item on Jülich-Berg ciphers found (GL.htm grepped; web search 'Jülich-Berg Herzog Wilhelm Chiffre 1539 1541 Vergerio Navarra').",
+    "edition": "No edition of these key sheets known; web search found no Landesarchiv NRW or edition text beyond general Jülich-Berg II finding-aid pages.",
+    "literature": "Web search found no study of a Jülich-Berg chancery cipher of 1539-41 (only an unrelated 1525 cipher sent by Leonhard Eck to Duke Wilhelm of Bavaria). No literature on these leaves."
+   },
+   "key_check": "The leaves are themselves keys; there is no ciphertext on record to test them on. Not tested on catalogue AA 0031 Nr. 4978 (1598-1610) because the dates differ by 55 years.",
+   "key_in_volume": "AA 0031 Nr. 1940 Bl. 42 and Bl. 483 (Chiffrenschlüssel 1541) and Nr. 242 (Chiffrenschlüssel 1539): the key leaves are the entire lead; not seen.",
+   "duplicates": "known.py on 'AA 0031', 'Jülich', 'Navarra': catalogue.json AA 0031 Nr. 4978 (1598-1610, keys Nr. 2041/1938, a different file and period) and unrelated Navarre mentions; no other record of Nr. 1940 or Nr. 242.",
+   "verdict": "not_cipher"
+  }
+ },
+ "1633": {
+  "verdict": "unvettable",
+  "note": "StAN E-Laden Akten 193 lists only 'Nürnberger Geheimschrift, von 1570, fol. 252' beside a Löffelholz letter of 10 Nov 1570; the record does not say whether fol. 252 is a key table or enciphered text and nothing shows ciphertext, so it cannot be vetted without the leaf.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Archivportal-D record for StAN Reichsstadt Nürnberg, Ratskanzlei, E-Laden, Akten 193 (old mark S VII L 122 (193 IV)) opened in Chrome 4 Nov 2026: https://www.archivportal-d.de/item/RPKXYUJBR3RM4SZMOVIB5EYHIVMOLDPH. No digital object; access 'archive'.",
+    "extent": "One leaf, fol. 252, named in a file of 1569-1572 on the extension of the Landsberg League and the Bundesabschied of Munich; extent of the leaf unknown.",
+    "cipher": "Archive description: 'Enthält u.a.: Nürnberger Geheimschrift, von 1570, fol. 252. - Schreiben des Thomas Löffelholz an die Herren Älteren zu Nürnberg, vom 10.11.1570.' Nothing says the letter is in cipher; whether the Geheimschrift is a cipher table or enciphered text is not stated. I did not see the leaf."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: local harvest (list.json, 30 Oct 2026) has only 1901/1917 Nürnberg postcards; no 16th-century Nuremberg record.",
+    "tomokiyo": "cryptiana german.htm, unsolved.htm and GL.htm (fetched 4 Nov 2026): no Nuremberg 1570 or Landsberg League entry.",
+    "lasry": "No Lasry or HistoCrypt item on a Nuremberg cipher of 1570 found (GL.htm grepped; web searches).",
+    "edition": "No edition known. Web search ('Nürnberger Geheimschrift 1570 Landsberger Bund') surfaced only A. Wagner, 'Nürnbergische Geheimschrift im 15. und am Beginn des 16. Jahrhunderts' (Anzeiger f. Kunde der deutschen Vorzeit 9, 1884), which predates 1570; not opened.",
+    "literature": "Searches found no study of the 1570 Nuremberg cipher or of E-Laden Akten 193; Wagner 1884 and Frenz bibliography (geku.uni-passau.de 5i_Geheim.pdf) list earlier Nuremberg Geheimschrift material only."
+   },
+   "key_check": "No key or ciphertext in hand; if fol. 252 is the city's cipher table it would be a key for Löffelholz's reports from Munich and Prague, but no ciphered letter of the file is named, so nothing could be tested.",
+   "key_in_volume": "Possibly fol. 252 itself ('Nürnberger Geheimschrift, von 1570') if it is a key table; unseen and unverified.",
+   "duplicates": "known.py on 'Löffelholz', 'Landsberg', 'E-Laden': catalogue 587 (Nuremberg envoys at Ulm/Heilbronn 1632-35, E 11/II Nr. 715) and unrelated Landsberg-Velen entries; no record of E-Laden Akten 193.",
+   "verdict": "unvettable"
+  }
+ },
+ "1640": {
+  "verdict": "not_cipher",
+  "note": "Archivportal-D (opened 4 Nov 2026): StA Ludwigsburg B 207 Bü 88 lists letters of Tilly, Oxenstierna, Weimar, Turenne and others with 'Darin: Schlüssel zu den Chiffren' and a printed Friedland Revers; the only cipher item is a key, no ciphertext named, not digitised.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Archivportal-D record for Landesarchiv Baden-Württemberg, Staatsarchiv Ludwigsburg B 207 Bü 88 (old mark B 207 Bü 21) opened in Chrome 4 Nov 2026: https://www.archivportal-d.de/item/JYMSTC5YZL5SP2X6QOGXFE6OZPHCBKE6. No digital object; access 'archive'.",
+    "extent": "One Büschel, 1634-1638, 5 cm, Nr. 150-220 of the Pfister collection of Ulm Thirty Years War records; one key item inside, no ciphertext listed.",
+    "cipher": "Archive description: 'Enthält u.a.: Schreiben von Ferdinand II. und III., Tilly, Gustav Adolf, Oxenstierna, Horn, Wrangel, Bernhard von Weimar, Turenne, Graf Georg Friedrich und Kraft von Hohenlohe, Eberhard III. von Württemberg. Darin: Schlüssel zu den Chiffren; Abschrift des zwischen dem Herzog von Friedland und seinen untergebenen Obristen den 12. Januar 1634 vorgegangenen Reverses ... (Druck)'. The Schlüssel is the only cipher item and the Friedland Revers is a print; no letter is said to be in cipher. I did not see the leaves."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: local harvest (list.json, 30 Oct 2026) has only 1901/1917 Ulm postcards; no Ulm Thirty Years War record.",
+    "tomokiyo": "cryptiana german.htm (fetched 4 Nov 2026) Thirty Years War section lists Wallenstein 1626, Rabenhaupt 1646 and others, no Ulm Bü 88; unsolved.htm/GL.htm have no Ulm or B 207 entry (Turenne appears only as a BnF fr. 2999 reference).",
+    "lasry": "No Lasry or HistoCrypt item on Ulm B 207 Bü 88 found (GL.htm grepped; web search 'Ulm Reichsstadt Dreissigjaehriger Krieg 1634 Chiffren Schluessel B 207').",
+    "edition": "No edition: the Büschel is a Pfister collection of mixed letters; web search found no edition of its contents.",
+    "literature": "Web search found only general Ulm 1634 history (Noerdlingen, Wuerttembergische Vierteljahrshefte) and no study of a key in B 207 Bü 88."
+   },
+   "key_check": "The only cipher item is a key sheet with no ciphertext to test it on; which correspondents it serves (Wallenstein/Weimar/Turenne/Hohenlohe in the lead title are only the Büschel's letter writers) is not stated.",
+   "key_in_volume": "'Schlüssel zu den Chiffren' in B 207 Bü 88: the whole lead; unseen, not tested.",
+   "duplicates": "known.py on 'B 207', 'Ulm', 'Ludwigsburg' returned only this lead; no catalogue or DECODE duplicate.",
+   "verdict": "not_cipher"
+  }
+ },
+ "1667": {
+  "verdict": "partly_read",
+  "note": "Three undigitised LASH files: Nr. 3348 (Dorth 1620-22) 'teils in Geheimschrift mit Entschlüsselung' and Nr. 299 (1550) 'Meist in aufgelöster Geheimschrift, mit Reskript' have decipherments filed with the ciphertext, so the lead is read in part; only Nr. 1563 (Decquere 1619-21, 'zum Teil chiffrierte Relationen') names no decipherment and should be split into its own lead.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Archivportal-D records opened in Chrome 4 Nov 2026 (Landesarchiv Schleswig-Holstein, Abt. 7, Herzöge von Schleswig-Holstein-Gottorf): Nr. 1563 https://www.archivportal-d.de/item/ZQYCJWC3HSSLASBLL56G7IXOSDS7PY43 ; Nr. 3348 https://www.archivportal-d.de/item/D3H6GMJ6LQE5QEP7HA7T6TWVBSJPYBQP ; Nr. 299 https://www.archivportal-d.de/item/ERXOPCCBKK3ZDEVM4NRNMVMBIL3IBGCB. Records are 'Verzeichnung' only, no digital object; access 'archive'.",
+    "extent": "Three separate files, extent not stated: Nr. 1563 (1604-1621, Die spanische Schuld, Konvolut V), Nr. 3348 (1620-1622, Dorth correspondence), Nr. 299 (1550, councillors' reports to Duke Adolf at Augsburg).",
+    "cipher": "Nr. 1563: 'Gesandtschaft des Philipp Decquere 1619-1621 (zum Teil chiffrierte Relationen)'. Nr. 3348: 'Relationen von Dorths (teils in Geheimschrift mit Entschlüsselung, meist aus Den Haag) und Reskripte des Herzogs'. Nr. 299: 'Meist in aufgelöster Geheimschrift, mit Reskript'. So a decipherment is recorded with Nr. 3348 and Nr. 299, none with Nr. 1563. I did not see the leaves."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: local harvest (list.json, 30 Oct 2026) has no Gottorp, Schleswig, Decquere or Dorth record.",
+    "tomokiyo": "cryptiana german.htm, unsolved.htm and GL.htm (fetched 4 Nov 2026): no Gottorp, Decquere or Dorth entry.",
+    "lasry": "No Lasry or HistoCrypt item on these Gottorp files found (GL.htm grepped; web search 'Philipp Decquere Gesandtschaft Spanien 1619-1621 Gottorf Chiffre Dorth').",
+    "edition": "No edition known; searches on Decquere and Dorth found nothing. The archive's own description is the prior art: 'mit Entschlüsselung' (Nr. 3348) and 'in aufgelöster Geheimschrift' (Nr. 299).",
+    "literature": "Web searches (Decquere, Dorth, 'spanische Schuld' Gottorf) found no study of the ciphers; the Hamburg Gottorp literature surfaced in earlier catalogue vetting (entry 530) does not treat them."
+   },
+   "key_check": "No key held or in print for Gottorf 1550 or 1619-22 ciphers; where a Entschlüsselung is filed with the ciphertext (Nr. 3348, 299) it gives the plaintext directly, so no key is needed there. Nr. 1563 has no key or decipherment named.",
+   "key_in_volume": "Nr. 3348 and Nr. 299: contemporary decipherments filed with the ciphered reports (per the archive description); not seen.",
+   "duplicates": "known.py on 'Gottorp', 'Decquere', 'Dorth', 'Holstein': catalogue 530 (Holstein-Gottorf 1713-44, LASH Abt. 8.1) and the 1675-83/1712-44 Gottorp entry (Abt. 7 Nr. 1450/1451) are other files and periods; no record of Abt. 7 Nr. 1563, 3348 or 299 apart from this lead.",
+   "verdict": "partly_read"
+  }
+ },
+ "1685": {
+  "verdict": "not_cipher",
+  "note": "Archivportal-D (opened 4 Nov 2026): HStA Dresden 11248 Nr. 7307 lists 'Chiffre für den sächsischen König' and telegram copies in clear (Gasteiner Konvention, Schleswig occupation); a cipher/key with no ciphertext named, not digitised.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Archivportal-D record for Sächsisches Hauptstaatsarchiv Dresden, 11248 Sächsisches Kriegsministerium, Nr. 7307 (Bundesexekution in Holstein 1863/64) opened in Chrome 4 Nov 2026: https://www.archivportal-d.de/item/H7GYVGG6JPMUJA3GBUH6N7QTOEF37PQY. 'Zu benutzen im Hauptstaatsarchiv Dresden'; no digital object. Note: the lead carries no 'access' field, so 'not online' is accepted only if access is set to 'archive'.",
+    "extent": "One Akte, 1863-1864; the cipher item is a single entry in a list of contents, extent not stated.",
+    "cipher": "Archive description: 'Enthält u. a.: Etatsübersichten der sächsischen und hannoverischen Division.- Chiffre für den sächsischen König.- Abschrift eines Telegramms an den sächsischen Militärbevollmächtigten über die Absicht Österreichs und Preußens, Schleswig ohne Bundesbeschluss zu besetzten.- Abschrift eines Telegramms vom 14.8.1865 über den Abschluss der Gasteiner Konvention.' The 'Chiffre' is listed as a separate item and the telegrams as copies ('Abschrift'); no ciphertext and no decipherment is named. I did not see the leaves."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: local harvest (list.json, 30 Oct 2026) has Saxon State Archive records only for the Flemming keys of 1700-1728 (HStAD 10026); no Kriegsministerium 11248 or 1863-64 record.",
+    "tomokiyo": "cryptiana german.htm (fetched 4 Nov 2026) covers Saxony only for the 18th century (Saxony-Poland); no 1863-64 Holstein entry in unsolved.htm or GL.htm.",
+    "lasry": "No Lasry or HistoCrypt item on the Saxon Holstein execution found (GL.htm grepped; web search 'Bundesexekution Holstein 1863 sächsischer Militärbevollmächtigter Chiffre Telegramme 7307').",
+    "edition": "No edition known; web search returned general histories of the 1863 Bundesexekution (Hake's Saxon-Hanoverian corps) only.",
+    "literature": "Web search found no study of Saxon cipher practice in the Holstein execution; none located."
+   },
+   "key_check": "The 'Chiffre für den sächsischen König' is the cipher/key itself with no ciphertext on record to test it on; no key held here.",
+   "key_in_volume": "'Chiffre für den sächsischen König' in the same Akte: a key leaf, unseen and untested.",
+   "duplicates": "known.py on '7307', 'Kriegsministerium', 'Holstein', 'Sächsisches Hauptstaatsarchiv': catalogue 530 and other Holstein-Gottorp entries are 18th-century Kiel files; the one Saxon HStA Dresden catalogue entry is 10731 Gesandtschaft für Russland Nr. 59 (different). No other record of 11248 Nr. 7307.",
+   "verdict": "not_cipher"
+  }
+ },
+ "2049": {
+  "verdict": "open",
+  "note": "Gilder Lehrman GLC01523, Burr to Alston c. 13-21 Jul 1804: image viewed (clear English lines plus symbol-cipher groups and 'Enclose to Ch. Biddle'); the Institute and Adam Matthew both say the cypher 'has not yet been decoded', no decipherment found anywhere; Kline and Ryan 1983 could not be opened (lending-only), so the edition check is incomplete.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "scan",
+    "where": "Google Arts & Culture image of GLC01523 viewed in Chrome 4 Nov 2026: https://artsandculture.google.com/asset/aaron-burr-to-joseph-alston-burr-aaron-1756-1836/_AHwqSQ7laubpw ; catalogue text read at https://www.americanhistory.amdigital.co.uk/Documents/Details/Aaron-Burr-to-Joseph-Alston--mainly-in-cypher--concerning-Burr-s-duel-with-Alexander-Hamilton/GLC01523 and https://hamilton.gilderlehrman.org/supporting-document/burrs-coded-letter-about-duel-1804",
+    "extent": "3-page letter; pages 2-3 in cipher (the viewed image shows the page with clear opening lines followed by about 8 lines of cipher groups and the docket note). The cipher is about 8 to 12 lines of symbol/numeral groups on the page seen.",
+    "cipher": "The image shows clear English lines ('Immediately on the receipt of your letter on finance, I put the thing in a train of inquiry ...') followed by lines of cipher groups of signs and numerals and a closing 'Enclose to Ch. Biddle, Phila'. Hamilton Education Program text: 'Part of the letter is in code ... The cyphered part of the letter has not yet been decoded.' No decipherment is written on or with the leaf."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: local harvest (list.json, 30 Oct 2026) has no Burr, Alston or Biddle record.",
+    "tomokiyo": "cryptiana bookcode.htm (fetched 4 Nov 2026) covers Burr's 1806 Entick's dictionary code only; unsolved.htm, spanish.htm, GL.htm and german.htm have no 1804 Burr-Alston entry.",
+    "lasry": "No Lasry or HistoCrypt item on the 1804 Burr-Alston letter found (GL.htm grepped; web searches 'Aaron Burr cipher 1804 Alston decoded'); the Wilkinson 1806 cipher letter is a different document.",
+    "edition": "Not verified: Kline and Ryan, Political Correspondence and Public Papers of Aaron Burr (Princeton 1983) would print this letter; archive.org copy is lending-only, Google Books API quota-exhausted, HathiTrust full-text search returned nothing, so whether it prints a reading was not checked. The Gilder Lehrman transcript (T-01523.pdf) gives only the clear text with the cypher groups undecoded.",
+    "literature": "Web searches (Burr Alston cipher July 1804 decoded/undeciphered; Kline) found no decipherment; Gilder Lehrman and Adam Matthew (post-1983 catalogues) both state it is undecoded."
+   },
+   "key_check": "Burr's 1806 cipher to Wilkinson (Entick's Dictionary, catalogue 847 / Newberry Graff 4668) is a different system (numbers of page and line) and the 1804 page also uses symbols; it was not tested on this text as no transcription exists here. No key in the same volume.",
+   "duplicates": "known.py on 'Burr', 'Alston', 'GLC01523', 'Biddle': only this lead (research/sweep_2026-11_us_blocked) and unrelated Burr-Wilkinson entries (catalogue 847, 2374 and the Williamson papers entry); no catalogue or DECODE duplicate.",
+   "verdict": "open"
+  }
+ }
+}

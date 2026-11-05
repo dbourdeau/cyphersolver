@@ -1,6 +1,6 @@
 # Damas 1787: the governor of the Windward Islands to the minister of the Navy, Martinique, 2 Nov 1787
 
-Status: read (Brice Dudout, 28 Oct 2026; 298 of 302 words of the cipher part read in their sense, 281 certain, 5 probable, 12 restored, 4 unresolved; Daniel Bourdeau's 95% rule).
+Status: read in part (Brice Dudout; Remaining gaps and Escalation written 5 Nov 2026 from these notes; recounted 5 Nov 2026 under the strict 95% rule: 286 of 302 words of the cipher part read = 94.7%, 281 certain + 5 probable; 12 restored from the sense no longer count as read, 98.7% with them; 4 unresolved).
 
 Contributed by Brice Dudout (Europe chiffrée), 28 Oct 2026. Not in the catalogue. Published write-up:
 https://bdudout.github.io/europe-chiffree/en/documents.html#damas-1787
@@ -35,3 +35,18 @@ Files: `transcription.txt`, `decryption.txt`, `reading.md`, `translation.md`, `k
 - Words restored [x], with justification. [guerre]: 300 (“si la 300 avec l’741 avoit lieu”); 710 = guerre is glossed, 300 would be a homophone; the same phrase recurs below with 710 (“si la guerre survient”). [Angleterre]: 741, the only possible country in 1787 against the “isles angloises”. [tant]: 762, forced by “… que pour ceux qui manquent”. [d’]: 808 (“je n’ai pas reçu 808 ordres”). [lieu]: 644 (“qu’il y ait 644 à craindre”). [et] (×4): 244, always between two coordinated terms (“munitions 244 artillerie”, “sa garnison 244 celle de la Martinique”, “deux cent trente 244 celle de…”). [chacune]: 493.e (“huit cents hommes 493.e sous les armes”). [Tabago] (×2): 831, paired with St Lucia as in the clear part (“Sainte-Lucie et Tabago”).
 - Unresolved. ‹269›s (“vous verrez par les 269.s que l’on prend dans cette isle”: “measures”, “dispositions”?); ‹464› (“il faut en 464 un approvisionnement”; 464 = “ar” in a 1779 gloss, which gives no sense here); ‹686› (“un approvisionnement de 686 et de boulets”: powder?); ‹190› (“à l’190 de la marine”: arsenal?).
 - Prior work. The inventory marks the piece “ciphered” without summarising the cipher; no decipherment on the images or the neighbouring leaves (store return of 1 November and Foulquier’s letter of 12 November, both in clear); nothing in Daniel Bourdeau’s repository (28 October 2026).
+
+## Remaining gaps
+
+- Codes 269, 464, 686 and 190 (4 words, each once) - blocker: open-codes; not glossed in the K6 key (464 = "ar" in a 1779 gloss gives no sense here)
+- The 12 words restored from the sense (guerre 300, Angleterre 741, tant 762, d' 808, lieu 644, et 244 four times, chacune 493.e, Tabago 831 twice) - blocker: open-codes; the numbers are not attested in K6 and are forced by the syntax
+
+## Escalation
+
+- [x] siblings: the neighbouring leaves of COL C8 B 16 (the store return of 1 November and Foulquier's letter of 12 November) are in clear; no decipherment on the images or the neighbouring leaves
+- [x] clear-pages: same leaves; nothing that deciphers the cipher part
+- [x] known-keys: the margin names the "Chiffre du 25 avril 1778"; K6 of targets/bouille1778 covers 92% of the groups and was validated on Bouillé no. 415 (0.894 of words)
+- [n/a] print: the NOTES say only "first published decipherment, to our knowledge" and "nothing in Daniel Bourdeau's repository"; no search of printed editions is recorded
+- [n/a] key-rebuild: K6 was used frozen; no extension of the key is recorded in the NOTES
+- [n/a] retry: no retry of the unread groups with an extended key is recorded in the NOTES
+

@@ -1,0 +1,50 @@
+# Reading: Vaudreuil to the minister, Montréal, 10 Apr 1759 (ANOM COL C11A 104 ff.68-72)
+
+Decoded with the 1757 Vaudreuil table (ANOM COL C11E 10 f.289, LAC e001295274; `key/key274.json` + `key/overrides.json`) and read as
+sentences against the images (LAC e000874969-73). Orthography modernised (the cipher spells phonetically; "m" stands for "M."
+and "m r s" for "Messieurs"). `[...]` = supplied from the sense, not from the group as written; `[?]` = groups read but not understood.
+Clear on the page: the ordinals 1o, 2o, 3o and the date 27, "Monseigneur" (heading, twice in the text, closing formula), the word "comme" (f.69r) and
+the closing formula and signature. Notes on the supplied and unread groups: `reading_notes.md`.
+
+## f.68r-68v
+J'ai l'honneur de vous envoyer ci-joint copie: 1o de la lettre que M. le marquis de Montcalm m'écrivit le 27 février dernier; 2o d'un mémoire
+contenant d'un côté les réflexions de M. le marquis de Montcalm [?] [?] [?] [?] [?] [?] [?] [?]; 3o du précis du plan de mes opérations
+générales pour cette campagne que j'ai remis à M. le marquis de Montcalm. Vous verrez, Monseigneur, par toutes ces pièces quel a été le sentiment
+de M. le marquis de Montcalm. J'ai l'honneur de vous observer, pour vous seul, Monseigneur, que la façon de penser de M. le marquis de Montcalm a
+été publique: elle a fait l'entretien de l'officier, du bourgeois, du soldat, du milicien, longtemps avant qu'elle m'ait été connue.
+
+## f.69r
+Malheureusement il n'a point manifesté son opinion en l'annonçant de vive voix, en entretenant indistinctement toutes personnes, avec autant de
+discrétion qu'il l'a fait dans sa lettre et ses réflexions par écrit. De là s'est suivi un concours de raisonnements qui ont bien vite circulé dans
+toutes les paroisses; la perte de la Colonie a été regardée comme très évidente; les mesures que je prends pour sa conservation ont été censurées par
+certains officiers des troupes de terre, qui ont ajouté les propos les plus indécents à mon égard au peuple même; ce peuple qui n'est déjà que trop
+fatigué de la guerre, qui manque de subsistance et de tous ses divers besoins les plus pressants, qui s'aperçoit en même temps que la bonté et la
+vigueur de son tempérament s'affaiblissent: ce peuple, dis-je, seroit aisé à persuader; le mal dont on le menace l'effraye et le découragerait si je
+ne le rassurois, et si ma fermeté et la confiance qu'il a en moi ne ranimaient son zèle et son ardeur pour le service du Roi.
+
+## f.70r
+Je n'ai que trop reconnu que tous ces raisonnements ne déplaisent point à M. le marquis de Montcalm; les progrès qu'ils ont faits ne sont ignorés de
+personne, mais les officiers qui en sont les auteurs n'en sont que plus hardis et plus libres dans leurs propos. J'ai prié M. le marquis de Montcalm
+de vouloir bien couper racine à tous ces raisonnements; qu['autrement] je ne pourrois me dispenser de faire arrêter ceux des officiers qui y
+participent le plus et de les faire passer en France pour vous rendre compte de [leur] conduite.
+
+## f.70v
+J'aurois [?] Monseigneur, effectué déjà tout ce que j'ai dit à cet égard à M. le marquis de Montcalm, mais dans les circonstances où nous sommes
+je me fais violence; j'emploie les [?] [?] de la douceur pour ramener les esprits et ranimer ceux qui sont timides; mais il faudra bien que je
+prenne un parti de rigueur si le cas l'exige, pour obvier à un plus grand mal; c'est ce que je ne ferai qu'à la dernière extrémité.
+
+## f.71r
+Je rends à Messieurs les officiers des troupes de terre en général la justice qui leur est due: il y en a beaucoup qui ont une circonspection égale à
+leur zèle. Rien de tout cela n'empêche, Monseigneur, que je saisisse toutes les occasions pour entretenir autant d'union que d'intelligence entre
+M. le marquis de Montcalm et moi, et je passerai sous silence tous les propos qu'il a tenus et qu'il pourra tenir à mon sujet.
+
+## f.71v
+Bien loin de lui en faire paraître du ressentiment, je lui donne des témoignages de ma confiance; je me mets enfin tout en œuvre pour éviter l'éclat
+d'une rupture entre lui et moi; je n'envisage que le bien du service même et la gloire des armes de Sa Majesté. J'attends, Monseigneur, avec la plus
+grande impatience vos premières dépêches; j'espère que vous aurez bien voulu entrer dans les raisons que je n'ai développées qu'à vous seul.
+
+## f.72r
+Cependant vous voyez que, pour n'avoir aucun reproche à me faire, j'ai prévenu M. le marquis de Montcalm que je compte qu'il prendra le commandement
+de l'armée de Carillon.
+
+*Je suis avec un très profond respect, Monseigneur, votre très humble et très obéissant serviteur, Vaudreuil.*
