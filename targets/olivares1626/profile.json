@@ -1,0 +1,208 @@
+{
+ "schema_version": 1,
+ "target": "olivares1626",
+ "title": "The Count-Duke of Olivares to the Duke of Alba, Madrid, 22 August 1626 (lead 1273): Philip IV's general cipher A, read; key partial by our protocol",
+ "documents": [
+  {
+   "id": "letter1626",
+   "read": "read",
+   "shelfmark": "Madrid, BNE MSS/10249 ('Papeles varios', Osuna; BDH bdh0000042230), ff. 13r-15r (BNE Digital PDF pp. 16-18)",
+   "date": "1626-08-22",
+   "year": 1626,
+   "country": "Spain",
+   "route": "Gaspar de Guzmán, Count-Duke of Olivares -> Antonio Álvarez de Toledo, 5th Duke of Alba (viceroy of Naples)",
+   "places": {
+    "from": "Madrid",
+    "to": "Naples"
+   },
+   "language": "Spanish",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No gloss, interlinear decipherment or key on ff. 13-15. A covering letter in clear of the same day (f. 11r) announces this one ('en otra carta que aquí le remito').",
+    "partial": false
+   },
+   "length": {
+    "tokens": 2621,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "BNE Digital (Biblioteca Digital Hispánica) images at 120 dpi (not reproduced)",
+    "image_quality": "fair"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "Philip IV's general cipher 'A' (as used with the 2nd Marquis of Santa Cruz, 1629-1632): homophonic syllabary of letter groups (fer, xer, pon, tor ...), numbers for letters and syllables, special signs, and a nomenclator of numbers and groups for words (fro = Dios, 199 = hija, ber = servicio ...).",
+  "symbol_kind": "digits and letters",
+  "distinct_symbols": 158,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "random",
+  "word_division": "none",
+  "notes": "The same general cipher as targets/santacruz1630 (1630), here already in use in August 1626. Diacritics: crosses/daggers above c and q, underlined signs (D_, C); a superscript '4' on a sign marks a null (as f4). Only the closing formula, the dateline and the signature are in clear."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unpublished",
+   "where": "DECODE R1190 lists this letter (BNE MSS/10249, Madrid 22 Aug 1626) with status 'Decrypted' and an inline-plaintext flag, behind authentication; its plaintext and key were not seen by us (your vetting note of 4 Nov 2026 on lead 1273 says the same). No edition found: Elliott & de la Peña, Memoriales y cartas del Conde Duque de Olivares (2013 ed.), table of contents: the only 1626 piece is doc. XI to the King; no letter to Alba. Nothing at Tomokiyo's or on the web.",
+   "found": "after reading",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "sibling key"
+  ],
+  "attack": "sibling key",
+  "first_date": "2026-11-05",
+  "last_date": "2026-11-05",
+  "human_role": "Brice Dudout chose the lead and set the rules (protocol hashed before any measurement, one measurement on a held-out part, no change to the measured key or transcription); he answered a blind pre-registered proof-reading of 13 sign forms (none from the held-out part) and decided, after the measurement, to read the three 'hol' of the held-out part by the value so established, counted as probable. AI agents transcribed, measured, read and wrote up.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-11-05",
+   "kind": "transcription",
+   "what": "ff. 13r-15r transcribed in the notation of key A (2,621 tokens); the held-out part H (f14v.21-27 + f15r, 542 tokens, 20.7%) only after the key was frozen.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "sibling key",
+   "technique": [
+    "key matching",
+    "contextual inference"
+   ],
+   "what": "Four neighbouring keys measured once each on the training part A: K6A (Santa Cruz 1630) reads it; K_OA1 = K6A + 20 values learnt on A by reading and from a fixed list of probable words; frozen by SHA-256.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One measurement on H: M5 0.506 against 0.144 for the best of 200 length-class shuffled keys; margin met, absolute threshold 0.60 missed (ceiling about 0.64 on a perfect plaintext of the series).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Blind, pre-registered proof-reading of 13 sign forms outside H by Brice Dudout (forms only, the sheet tested for leaks): hol = Su Majestad, gli = buena, 209 = 20 9, pr = for, nulls marked by a superscript 4.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "reading",
+   "what": "Whole letter read by the sense after the measurement and counted by script by Daniel's rule: 1,001 words, 906 certain, 47 probable, 13 restored, 35 unresolved = 95.2%.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "partial",
+  "method": "read after matching with key from external sources",
+  "method_basis": "The general cipher A rebuilt from Santa Cruz pairs of 1630-32 (targets/santacruz1630, K6A) reads the training part of this letter; 20 values were added from that part only, then the key was frozen and measured once on the held-out part.",
+  "contribution": [
+   "transcription",
+   "key extended or corrected",
+   "sender or date identified"
+  ],
+  "fraction_read": 0.952,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Daniel's rule (certain + probable; restored words not counted as read), counted by script on the marked reading (reading.md): 1,001 cipher words: 906 certain, 47 probable, 13 restored, 35 unresolved = 953/1,001 = 95.2%. About 54 line ends lost in the gutter (ff. 13v, 14v) are not counted. The three 'hol' of the held-out part are among the probable words (value established outside it).",
+  "verification": [
+   "statistical test",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-11-05",
+   "verdict": "weak",
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py), one measurement: M5 (share of decoded letters covered by Spanish words of >= 5 letters) 0.506 on H (542 tokens) against 0.144 for the best of 200 keys shuffled within length classes (amendment written before H was transcribed). Criterion fixed in advance: >= 0.60 and >= best control + 0.30. Margin met (0.362), threshold not: partial by our protocol. M5 of a perfect contemporary plaintext of the same series is 0.636, so 0.60 asks for about 95% correctness."
+  },
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "letter dated and identified (Olivares to Alba, 22 Aug 1626, with its covering letter in clear); cipher identified as Philip IV's general cipher A; key K6A extended (partial by our protocol: one held-out measurement 0.506 vs 0.144); letter transcribed, decrypted, read (95.2%) and translated. DECODE R1190 lists the letter as 'Decrypted' (plaintext not public, not seen): if that reading is earlier and complete, this credit should become 'verification'.",
+    "date": "2026-11-05"
+   },
+   {
+    "who": "decode",
+    "role": "prior solution",
+    "note": "DECODE R1190 lists this letter with status 'Decrypted' and an inline-plaintext flag (record created 26 Aug 2019 with the DECODE Spanish series), behind authentication; its reading and key were not seen by us and not used",
+    "date": "2019",
+    "source": "https://de-crypt.org/decrypt-web/RecordsView/1190",
+    "published": false
+   }
+  ],
+  "gaps": [
+   {
+    "item": "About 54 line ends lost in the gutter of ff. 13v and 14v (not counted)",
+    "blocker": "needs-physical-access",
+    "detail": "an image of the volume opened flat, or the original"
+   },
+   {
+    "item": "Codes with no value: 22‡, 197, bir, B_, dol, yil, 229, 102, Qar, per, hen, bil (probably 'V.E.', held-out part only), pes",
+    "blocker": "open-codes",
+    "detail": "single occurrences; values given by the sense only would be guesses"
+   },
+   {
+    "item": "Sign □: K_OA1 gives 'mi', the sense gives 'merced' at f14r.26 (read probable) and f14v.21 (left unresolved)",
+    "blocker": "open-codes"
+   },
+   {
+    "item": "Sign 't': two forms (p, g) not separated at 120 dpi except where the blind proof-reading settled them",
+    "blocker": "illegible",
+    "detail": "a higher-resolution image"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "letter1626",
+    "label": "Olivares to the Duke of Alba, Madrid, 22 August 1626 (BNE MSS/10249 ff. 13r-15r)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "es",
+    "state": "read",
+    "read_share": 0.952,
+    "summary": "Olivares tells the Duke of Alba of his griefs of summer 1626: the death of a young Guzmán nephew meant for the Church; his daughter María's stillbirth, her recovery, then her death; her virtue. He keeps her widower Ramiro, Marquis of Toral, as son and heir of his house: the dukedom of Medina de las Torres on the commandery of Caravaca, the office of sumiller de corps given by the King of his own motion; he puts his life in the King's service and hopes the Duke his son will behave wisely.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "date": "2026-11-05",
+     "note": "Read as sentences 5 Nov 2026 against translation.md: coherent Spanish of the 1620s from first to last line, a single family narrative. 1,001 words: 906 certain, 47 probable, 13 restored, 35 unresolved = 95.2%. Grade B: the key is partial by our protocol, 47 words rest on the sense or on a blind proof-reading of forms, and about 54 line ends are lost in the gutter, so ff. 13v and 14v read in fragments."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "provenance": "contributed"
+ }
+}
