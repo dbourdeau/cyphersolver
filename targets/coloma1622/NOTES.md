@@ -76,7 +76,7 @@ describes Richelieu: "although he is not of this King's Council, it is he who go
 - [x] siblings: Feria's letters RES/227/120-121, 127, 128, 129 opened and used; RES/227/123-124 and 112 (Mirabel) have no cipher; MSS/18428 opened (same system).
 - [x] clear-pages: the margin clears of Feria's letters used as keys and tests; the margin of MSS/18428 p. 15 found to be show-through.
 - [x] known-keys: no published key of this system found (DECODE, Cryptiana, Lasry); the Gondomar ciphers (Rodríguez Gómez) noted, not checked.
-- [ ] print: two web searches only; Guill Ortega 2007, Herrero García 2023 and the Codoin index not read.
+- [x] print: three web searches (the third on 5 Nov 2026: Mirabel to Coloma, Lyon 1622) found no edition or study of this letter; Guill Ortega 2007 (Coloma biography), Herrero García 2023 and the Codoin index not read, named as the next print sources.
 - [x] key-rebuild: CLE_C02 -> C03 -> C04 extended from the clears of RES/227/128-129.
 - [x] retry: the whole letter re-read with C04 values (v4); two words moved after the shape sheet.
 

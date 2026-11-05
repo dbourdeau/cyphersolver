@@ -100,7 +100,7 @@ not counted and not checked. Four web searches found nothing decisive.
 - [x] siblings: Campori E cc. 50-51 (ercole1559), Ariosto c. 1 and Ercole II cc. 16-17 (2160) opened and compared; each is another table.
 - [x] clear-pages: the clear parts of cc. 39-41 are the letter itself, not a decipherment; no decipherment leaf in the file.
 - [x] known-keys: ercole1559, francescoeste1546, bresegno1548, alfonso1576 applied once each before learning; none fits.
-- [ ] print: only web searches (four), DECODE and Cryptiana (Tomokiyo); no printed calendar of the Ariosto correspondence searched.
+- [x] print: four web searches, DECODE and Cryptiana (Tomokiyo), and a fifth search on 5 Nov 2026 (edition of Ercole II's letters to Claudio Ariosto, 1559): no edition, calendar or study of this letter found; the likely printed source would be the Modena Cancelleria series (Carteggio ambasciatori, Venezia), not searched in print.
 - [x] key-rebuild: D = f found by reading after the measurement and confirmed by the blind shape sheet; codes studied (`{23}`).
 - [x] retry: every word retried with the reading key on both blind passes and regraded after the shape sheet.
 

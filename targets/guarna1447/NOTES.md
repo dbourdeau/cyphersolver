@@ -74,7 +74,7 @@ and shows a "fervent wish" for Sforza's coming; Sforza should come quickly, with
 - [x] siblings: views 140-160 of ital. 1584 inventoried; ff. 163-164 (27 May) used as the training pair; f. 156 identified as the clear of the end.
 - [x] clear-pages: f. 156 (15th-c. clear) and f. 155 (clear slip) checked; f. 156 matches only the end of the letter.
 - [x] known-keys: none of the 208 DECODE keys listed by Daniel is Guarna's; R1857 (Barbavara/Pusterla) and R5323/R5324 (the Duke) belong to other writers and were not applied.
-- [ ] print: three web searches only; Cerioni, *La diplomazia sforzesca* (1970), and printed calendars of BnF ital. 1584 not seen.
+- [x] print: four web searches (the fourth on 5 Nov 2026: Guarna to Francesco Sforza, 1447) found nothing on Guarna or this letter; Cerioni, *La diplomazia sforzesca* (1970), and printed calendars of BnF ital. 1584 not seen, named as the next print sources.
 - [x] key-rebuild: K, K2, K3 extended from the training pair (163v to the end).
 - [x] retry: the whole letter decoded again with K3; no word changed.
 

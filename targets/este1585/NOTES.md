@@ -67,7 +67,8 @@ be told, and that no one learn the news came from him, since it reaches him thro
 
 - 22 unresolved words, mostly line 1 (the prince's name: code word y, two barred dumbbells) and the ends of lines 3-4 - blocker: open-codes; y has no value in the table or in our key.
 - The barred dumbbell (e or null) - blocker: open-codes; needs a separate, hashed key amendment and a fresh glossed page.
-- pp. 513, 517-518 and the rest of entry 1572 - blocker: not-attempted; not transcribed in this round (no reserve with a literal gloss is left in this volume to test a new key).
+
+Not gaps of this reading: pp. 513, 517-518 and the other letters of entry 1572 (pp. 433, 459, 491, 503, 511 ff.). They are other documents of the volume, not transcribed in this round (no reserve with a literal gloss is left in this volume to test a new key); this target is p. 523 only.
 
 ## Escalation
 
