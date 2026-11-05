@@ -1,6 +1,6 @@
 # Sweep coverage: what has not been swept
 
-As of 4 Nov 2026 (sweeps A, B and D of that day added at the end). This is an index: each sweep's own README or `coverage.md` holds the detail, and the folder named on
+As of 5 Nov 2026 (sweeps A, B and D of 4 Nov added at the end; Riksarkivet Turcica/Polonica and Calames rows updated 5 Nov). This is an index: each sweep's own README or `coverage.md` holds the detail, and the folder named on
 each row is the source. No archive was contacted to write this file, so a block is as the sweep recorded it, and may
 have lifted since. A sweep that closes a gap removes its row here.
 
@@ -39,7 +39,7 @@ done, and search with `research/archive_sweep_2026-10/known.py` before starting.
 | NLS, National Library of Wales | Cloudflare challenge | `uk_libraries` |
 | TCD, Lambeth | Security check, 403 | `uk_libraries` |
 | PRONI, NAI, NRS Jacobite catalogue | Bot wall, 403 or not tried | `uk_tna` |
-| ÖNB, manuscripta.at, Basel, Geneva, Vaud | 403 to scripts, not tried in a browser | `swiss_austrian` |
+| manuscripta.at, ÖNB Primo, Vaud | 403 in both browsers (2 Nov 2026); ÖNB Digital and Basel were swept in a browser pass (two Basel leads) | `swiss_austrian`, `browser_pass_oenb_basel_geneva` |
 | Hispana, BVPB | HTTP 429; not tried in the Chrome pass, nor was BDCyL | `bne_hispana`, `chrome_pass_2026-11` |
 | Biblissima, CCFr | Anubis; redirect to an authentication page | `calames_biblissima` |
 | Alvin | Anubis; five searches only | `scandinavia` |
@@ -76,7 +76,6 @@ permission (`chrome_pass_2026-11`).
 | RAH | OCR text probably not searched; Salazar index not reached | `chrome_pass_2026-11` |
 | PARES | Bare terms "cifra" and "descifrado" | `pares_ags` |
 | DECODE Sforzesco | R5297-R5587: 13 thumbnails and one PDF of 169 records | `venice_milan_decode` |
-| Calames | About 330 of 2,203 bodies read | `calames_biblissima` |
 | JACAR | 144 undated volume hits not opened; `cands_raw.json` is git-ignored | `jacar` |
 | Abhilekh Patal | "cypher" paged to 691 of 4,505 | `asia_india` |
 | NARA M1194 | No search for "decipher" across all 261 rolls; only cards the bulk scan flagged were read | `nara_triage_c` |
@@ -89,7 +88,9 @@ permission (`chrome_pass_2026-11`).
 
 ## Swept at catalogue level, ciphers hidden
 
-These need browsing by volume, because descriptions rarely note cipher: Riksarkivet Diplomatica, the Oxenstiernska
+These need browsing by volume, because descriptions rarely note cipher: Riksarkivet Diplomatica beyond Turcica and Polonica
+(Muscovitica, Gallica, Italica, Hollandica; Turcica and Polonica were sheeted volume by volume on 5 Nov 2026,
+`sweep_2026-11_riksarkivet_turcica`, which also found the Referer route to the 4000xxxx image series), the Oxenstiernska
 samlingen and the Kanslikollegium series, and Rigsarkivet TKUA envoy reports (`scandinavia`); TNA State Papers (`uk_tna`);
 AGATHA's envoy series (`belgium_lux`).
 
@@ -114,5 +115,6 @@ Folders: `sweep_2026-11_A_halfdone`, `sweep_2026-11_B_unswept_south`, `sweep_202
   ministri"), Czech lands, Slovakia, Russia, Belarus. About 6,000 Manus "cifre" records unscreened.
 - **Blocked:** Finna (Cloudflare), BOA (login with CAPTCHA), hrcak.srce.hr, Harvard hosts (403), Abhilekh Patal (403 on the
   user's network on 4 Nov; its 18 image leads stay unvetted).
-- **Not done:** Riksarkivet: six contact sheets built and not viewed, 40 volumes with no manifest. ACA reg. 3225 (1435)
+- **Not done:** Riksarkivet: the six Muscovitica, Gallica, Italica and Hollandica sheets were never viewed (the 40
+  "manifest-less" Turcica/Polonica volumes were reached on 5 Nov 2026, see `sweep_2026-11_riksarkivet_turcica`). ACA reg. 3225 (1435)
   not reached.
