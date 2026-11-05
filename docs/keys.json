@@ -2431,7 +2431,9 @@
 {"id": "k-olivares1626-koa1", "label": "Olivares to Alba 1626, key K_OA1 (cipher A of Philip IV plus 20 values)", "kind": "rebuilt here", "by": "cyphersolver (Brice Dudout)", "year": 1626, "note": "Key K6A of the royal cipher A plus 20 values learnt on the first part of the letter, frozen before the held-out part was transcribed; partial by our protocol (0.506 against 0.144)."},
 {"id": "k-vaudreuil1757", "label": "Vaudreuil's numerical table of 1757, 700 entries (ANOM COL C11E 10 ff.285-290v, sheet e001295274)", "kind": "archive key", "by": "Vaudreuil (governor of New France)", "year": 1757, "note": "Syllabary-nomenclator of 700 numbers filed in the Colonies series with the Montcalm table of 1758; used by Vaudreuil from at least April 1759 to August 1760. Transcribed and corrected here (targets/vaudreuil1760/key/)."},
 {"id": "k-vaudreuil1757-272", "label": "Vaudreuil's first numerical sheet of 1757 (ANOM COL C11E 10, sheet e001295272)", "kind": "archive key", "by": "Vaudreuil (governor of New France)", "year": 1757, "note": "The other numerical sheet of the 1757 pair; it gives nonsense on the letter of August 1760."},
-  {"id": "k-tomokiyo-este", "label": "Cardinal d'Este's Cipher 1584-1586 (Tomokiyo's table, built on BnF fr. 16041-16042)", "kind": "scholar's key", "by": "Satoshi Tomokiyo (Cryptiana)", "year": 1584, "note": "Homophonic symbol alphabet with nulls and a few code words (Roy, le pape, qui, Monsieur), reconstructed by Tomokiyo from Luigi d'Este's letters to Villeroy in fr. 16041-16042 (Cryptiana henryiii.htm). Applied by Brice Dudout to Colbert 338 p. 523 with new shape names and three changes (targets/este1585/key.tsv)."}
+  {"id": "k-tomokiyo-este", "label": "Cardinal d'Este's Cipher 1584-1586 (Tomokiyo's table, built on BnF fr. 16041-16042)", "kind": "scholar's key", "by": "Satoshi Tomokiyo (Cryptiana)", "year": 1584, "note": "Homophonic symbol alphabet with nulls and a few code words (Roy, le pape, qui, Monsieur), reconstructed by Tomokiyo from Luigi d'Este's letters to Villeroy in fr. 16041-16042 (Cryptiana henryiii.htm). Applied by Brice Dudout to Colbert 338 p. 523 with new shape names and three changes (targets/este1585/key.tsv)."},
+{"id": "k-burr1804", "label": "Burr's stroke-and-figure cipher, July 1804 (GLC01523)", "kind": "rebuilt here", "by": "cyphersolver", "year": 1804, "note": "Simple substitution: a-f = 5 down to 0, g-i = 6-8, l = 10, m-u = Roman II-X, three odd signs for v, w, y; recovered from 132 signs of the letter."},
+{"id": "k-burr1808", "label": "Burr's number Vigenere, 1808 (period 6, shifts 6 18 22 7 24 8)", "kind": "rebuilt here", "by": "cyphersolver", "year": 1808, "note": "Vigenere over a=1 ... z=26, period 6, key running through the letters; recovered from 973 numbers of three letters to Theodosia."}
  ],
  "links": [
 {"key": "k-imperial-1544", "target": "gonzaga1549", "how": "adapted", "note": "Key image read at low resolution, extended by hand from the letters; validated on 2,959 read signs."},
@@ -3884,7 +3886,9 @@
 {"key": "k-dudout-santacruz1630-k6a", "target": "olivares1626", "how": "adapted", "note": "K6A reads the training part and is extended by 20 values to K_OA1"},
 {"key": "k-olivares1626-koa1", "target": "olivares1626", "how": "rebuilt from", "note": "20 values learnt on ff. 13r-14v l.17 only, then frozen"},
 {"key": "k-vaudreuil1757", "target": "vaudreuil1760", "how": "adapted", "note": "Same volume as the key lead; 700 cells transcribed from the images and 33 corrected from the letter and the alphabetical sheet; reads 96.0% of the groups."},
-{"key": "k-tomokiyo-este", "target": "este1585", "how": "adapted", "note": "Tomokiyo's table applied to Colbert 338 p. 523 with our shape names, alpha with a tail = f, the large looped rho = a, the barred dumbbell = e (a null in his table, left open) and newt = nn added by reading; 88.5% of words read, key not validated by the glossed pages of the volume (held-out M5 0.457, partial)."}
+{"key": "k-tomokiyo-este", "target": "este1585", "how": "adapted", "note": "Tomokiyo's table applied to Colbert 338 p. 523 with our shape names, alpha with a tail = f, the large looped rho = a, the barred dumbbell = e (a null in his table, left open) and newt = nn added by reading; 88.5% of words read, key not validated by the glossed pages of the volume (held-out M5 0.457, partial)."},
+{"key": "k-burr1804", "target": "burr1804", "how": "rebuilt from", "note": "from the cipher lines of the letter alone"},
+{"key": "k-burr1808", "target": "burr1808", "how": "rebuilt from", "note": "index of coincidence and column frequencies on the cipher alone"}
  ],
  "sources": [
   {
@@ -4529,7 +4533,9 @@
 {"source": "s-cyphersolver", "key": "k-siguenza1554"},
 {"source": "s-cyphersolver", "key": "k-deboli1788-k4"},
 {"source": "s-cyphersolver", "key": "k-olivares1626-koa1"},
-{"source": "s-tomokiyo", "key": "k-tomokiyo-este"}
+{"source": "s-tomokiyo", "key": "k-tomokiyo-este"},
+{"source": "s-cyphersolver", "key": "k-burr1804"},
+{"source": "s-cyphersolver", "key": "k-burr1808"}
  ],
  "unlinked": {
   "kopp1921": "Not solved: no key recovered or identified.",
