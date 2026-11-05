@@ -149,7 +149,9 @@ document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent)
   if(q) q.addEventListener('input',()=>{ state.q=q.value; apply(true); });
   if(reset) reset.addEventListener('click',()=>{ state.f={}; state.q=''; apply(true); });
   window.addEventListener('hashchange',()=>{ parse(); apply(false); });
-  parse(); apply(false);
+  parse();
+  // arriving with no hash: start on complete + partial, hiding the "text not obtained" rows (a hash, even #kind=ct, overrides)
+  if(!location.hash){ state.f.extent=['complete','partial']; apply(true); } else apply(false);
 })();
 // site search: a palette opened from the nav button, "/" or Ctrl+K. The index (search.json, one entry per page,
 // per h2 section and per catalogue entry) is fetched the first time the box opens; matching is accent- and
