@@ -1,6 +1,6 @@
 # Juan de Eraso to Philip IV, Genoa, 18 January 1643 (catalogue 755, item EST,LEG,3598,44)
 
-Status: in progress (read in part, escalation not yet done: the Remaining gaps blockers and the Escalation checklist are still to be written; Brice Dudout; recounted 5 Nov 2026 under the strict 95% rule: 119 of 137 words read = 86.9%, 115 certain + 4 probable; 16 restored from the sense no longer count as read, 98.5% with them; 2 unresolved).
+Status: read in part (Brice Dudout; Remaining gaps and Escalation written 5 Nov 2026 from these notes; recounted 5 Nov 2026 under the strict 95% rule: 119 of 137 words read = 86.9%, 115 certain + 4 probable; 16 restored from the sense no longer count as read, 98.5% with them; 2 unresolved).
 
 Contributed by Brice Dudout (Europe chiffrée), 28 Oct 2026. Write-up prepared for:
 https://bdudout.github.io/europe-chiffree/en/documents.html#genes-1643
@@ -53,5 +53,15 @@ Files: `transcription.txt`, `decryption.txt` (each line and its token values), `
 
 ## Remaining gaps
 
-- Codes 149 (before "residente") and 210 (between "llegue" and "antes este aviso") occur only here.
-- A reproduction of the plain original 3598,42 (not online) would check the restored code words.
+- Codes 149 (before "residente") and 210 (between "llegue" and "antes este aviso") - blocker: open-codes; each occurs once, attested nowhere else
+- The 16 words restored from the sense (con que 213, órdenes tun, España 166, respuesta 224, cuenta 214, ...) are checked by syntax only - blocker: needs-physical-access; the plain original 3598,42 (ff. 151-152) exists in the archive but the PARES record for no. 42 shows the images of no. 41, so only the archive can supply it
+
+## Escalation
+
+- [x] siblings: the bundle EST,LEG,3598 was opened; the next item 3598,43 is the Grand Duke's letter announced here, and nine of the ten cipher items of 1643-1651 have their contemporary plain text in the same bundle; 3598,44 is the only one without
+- [x] clear-pages: the plain original 3598,42 is the clear copy; it is not online (PARES shows no. 41's images for it)
+- [x] known-keys: the 1638 Genoa letters (targets/genes1638) use a different table, and the 1645 letters the Rome 1644-45 family; the 1643 table K4b was learned on pairs 3598,38/37 and 41/40
+- [x] print: no edition of this letter was found (NOTES: first published decipherment, to our knowledge); which editions were searched is not recorded
+- [x] key-rebuild: K4b learned by EM alignment of cipher/plain pairs, frozen by SHA-256, and tested on 3598,15/14 (below the criterion) and 3598,291/290 (met)
+- [n/a] retry: no retry with an extended key is recorded in the NOTES; K4b was frozen before the tests and is not extended since, and the two unresolved codes occur once each
+

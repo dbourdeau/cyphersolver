@@ -1,6 +1,6 @@
 # Adrian of Utrecht (Cardinal of Tortosa) to Charles V, Valladolid, 9 September 1520: the cipher paragraph
 
-Status: in progress (read in part, escalation not yet done: the Remaining gaps blockers and the Escalation checklist are still to be written; Brice Dudout; recounted 5 Nov 2026 under the strict 95% rule: 40 of 46 cipher words read = 87.0%, 28 certain + 12 probable; 4 restored from the sense no longer count as read, 95.7% with them; 2 unresolved; key K7 validated on a fresh held-out pair).
+Status: read in part (Brice Dudout; Remaining gaps and Escalation written 5 Nov 2026 from these notes; recounted 5 Nov 2026 under the strict 95% rule: 40 of 46 cipher words read = 87.0%, 28 certain + 12 probable; 4 restored from the sense no longer count as read, 95.7% with them; 2 unresolved; key K7 validated on a fresh held-out pair).
 
 Contributed by Brice Dudout (Europe chiffrée), 28 Oct - 2 Nov 2026. Write-up:
 https://bdudout.github.io/europe-chiffree/en/documents.html#tortosa-1520
@@ -55,9 +55,17 @@ Re-checked on 2 Nov 2026: no modern edition of the decipherments; Höfler (1880)
 
 ## Remaining gaps
 
-- The first cipher word (six signs, p ‹?› u i c a; one uninventoried shape) and the group fud.
-- Signs still outside the key: the first signs of [tales] and [juntar], the 2nd sign of [villas], ‹ro›, ‹qx›, ‹m.›.
-- Still without plain text in the same code: a struck-out cipher paragraph of 21 Oct 1520 (not yet located on PARES).
-- The cipher sheet enclosed with the letter of 7 Dec 1521 (PTR,LEG,2,1,100, fol. 434) is not an open problem: it is the cipher
-  original of the paragraphs of 24 Oct 1521 printed by Danvila (MHE XXXVIII p. 547; contemporary transcription
-  PTR,LEG,2,1,92, PARES 12987667). K7 decodes its first line as "... apareiamos ... exercito ... mas muy ...".
+- The first cipher word (six signs, p ‹?› u i c a; one uninventoried shape) and the group fud. - blocker: open-codes; the shape and the group have no value in K7
+- Signs still outside the key: the first signs of [tales] and [juntar], the 2nd sign of [villas], ‹ro›, ‹qx›, ‹m.› - blocker: open-codes; no value in K7
+
+Not gaps of this reading: the struck-out cipher paragraph of 21 October 1520 (a different piece in the same code, not yet located on PARES), and the cipher sheet enclosed with the letter of 7 December 1521 (PTR,LEG,2,1,100, fol. 434), which is the cipher original of paragraphs Danvila prints deciphered (see Notes).
+
+## Escalation
+
+- [x] siblings: the Cardinal's other letters of 1520-21 in PTR,LEG,2,1 (23, 30, 32, 61, 68, 70, 71, 73, 85, 88, 92, 99, 100, 107) were opened as training and validation; the contemporary decipherment PTR,LEG,2,1,107 is not the text of this paragraph
+- [x] clear-pages: the sentence "por la cifra que va dentro desta" points to an enclosed sheet; 2,1,107 was checked and is not it
+- [x] known-keys: K3, K4 and K6 tried and failed (0.851/0.541 words, 0.783, 0.813); K7 validated on 2,1,99 (0.882 of characters); the code of adrian1521 (Estado 8,150) is a different one
+- [x] print: Danvila 1897 (the paragraph "no ha podido traducirse"), Bergenroth's Supplement 1868 (does not include the letter), Höfler 1880-81 (wrong date, no Spanish plain text); nothing on Cryptiana; re-checked 2 Nov 2026
+- [x] key-rebuild: K7 rebuilt from cipher/plain pairs of the Cardinal's other letters, with sign shapes re-read blind
+- [n/a] retry: no retry of the unread words with an extended key is recorded in the NOTES; the six unread words need signs outside K7
+
