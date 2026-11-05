@@ -1,0 +1,332 @@
+{
+ "schema_version": 1,
+ "target": "tranchedini1446",
+ "title": "Nicodemo Tranchedini and Boccaccino Alamanni, Florence, to Francesco Sforza, 27-29 Nov 1446 (BnF italien 1583 ff. 134, 139; DECODE R7905, R7908)",
+ "documents": [
+  {
+   "id": "f134",
+   "shelfmark": "BnF italien 1583 f. 134 (DECODE R7905)",
+   "date": "27 Nov 1446",
+   "year": 1446,
+   "country": "Florence",
+   "route": "Nicodemo Tranchedini da Pontremoli (Florence) -> Francesco Sforza",
+   "places": {
+    "from": "Florence",
+    "to": "Sforza's camp (Marche)"
+   },
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "contemporary interlinear glosses over most of the sign runs (small hand between the lines)",
+    "partial": true
+   },
+   "length": {
+    "tokens": "unknown",
+    "distinct": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE image",
+    "image_quality": "fair",
+    "notes": "No sign-by-sign transcription yet; about 60-70 signs in six or seven runs counted by eye."
+   },
+   "read": "not read"
+  },
+  {
+   "id": "f139",
+   "shelfmark": "BnF italien 1583 f. 139 (DECODE R7908)",
+   "date": "29 Nov 1446",
+   "year": 1446,
+   "country": "Florence",
+   "route": "Boccaccino Alamanni and Nicodemo Tranchedini (Florence) -> Francesco Sforza",
+   "places": {
+    "from": "Florence",
+    "to": "Sforza's camp (Marche)"
+   },
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate collection"
+    ],
+    "source": "no decipherment seen; the reply of 3 Dec 1446 (f. 147, clear) answers its matters and gives context, not a decipherment",
+    "partial": true
+   },
+   "length": {
+    "tokens": 778,
+    "distinct": 172,
+    "unit": "symbols",
+    "measured": true,
+    "file": "texts/f139_signs.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE image (binarized scan)",
+    "image_quality": "good",
+    "notes": "778 signs on about 40 cipher-bearing lines, 240 (31%) unmatched shapes; two agents' labels not unified, so 172 distinct is an over-split; L21 dropped as a duplicate row of L22; L31-L33 may double-count."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator",
+   "homophonic",
+   "syllabic"
+  ],
+  "summary": "Graphic signs for letters (several signs for some letters), syllables, double letters and word signs (non, che, stantie, Fiorentini ...), written among clear Italian words; the key family of the later Tranchedini ciphers (Domnina 2018, Lasry 2026) is likely but unconfirmed for 1446.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "syllables",
+    "common words",
+    "places"
+   ]
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "possible: Domnina 2018 Fig. 5 (1454) and Lasry's 1452 table share the sign for non (confirmed by a gloss on f. 134); no 1446 key sheet known",
+  "notes": "R7909, listed on the lead as f. 143, is the Duke's slip f. 145 (key R5323, see visconti1446), not Tranchedini's."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Searched 4 Nov 2026: Domnina 2018, Cipher Mysteries, Tomokiyo via the catalogue vetting, web search; no decipherment of ff. 134 or 139. Contemporary glosses on f. 134 only.",
+   "found": "during attempt",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "sibling key"
+  ],
+  "attack": "none",
+  "human_role": "Posed the target from the catalogue page (pasted task, 4 Nov 2026); no target-specific intervention recorded.",
+  "tools": [
+   "crop and upscale script (crops.py)",
+   "Domnina 2018 PDF",
+   "Lasry 1452 key table",
+   "table_test.py (shuffled-table score, it-cinquecento)",
+   "two Claude subagents for the sign transcription"
+  ],
+  "models": [
+   "claude-sonnet-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-04",
+  "last_date": "2026-11-04"
+ },
+ "solution": [
+  {
+   "date": "2026-11-04",
+   "kind": "access",
+   "what": "Images of R7905-R7910 taken from the it1583 worktree (DECODE); all five leaves viewed whole.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "verification",
+   "what": "Identified the leaves: f. 135 and f. 147 are clear letters (no cipher); R7909 is the Duke's slip f. 145 in key R5323, not f. 143 of Tranchedini; the cipher is on f. 134 and f. 139 only.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "literature search",
+   "what": "Domnina 2018 (Fig. 5 extracted), Lasry's 1452 table, Cipher Mysteries and web search for the 1446 letters.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "contextual inference"
+   ],
+   "what": "Read the interlinear glosses over f. 134's runs (gente d'arme in Toscana, alle stantie, fiorentini, non over the double-comb sign): the sign for non matches the later keys, and new word signs exist.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "crib",
+   "technique": [
+    "crib testing"
+   ],
+   "what": "Tried Lasry's 1452 table on the first 12 signs of f. 139 line 3-4 by eye; no Italian came out.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "transcription",
+   "what": "f. 139 transcribed sign by sign by two subagents from 3-6x crops, labels from Domnina's and Lasry's tables, @NN for unmatched shapes: 778 signs, 172 labels, 31% unmatched.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "contextual inference"
+   ],
+   "what": "Anchors from the clear context: ce-n-to-mi-l-a = cento mila before the clear 4m cavalli et 2m fanti; the comb sign = non; the bar-o-bar-o sign closes runs after 'la via' and 'l'impresa contra'.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "statistics",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ],
+   "what": "Domnina/Lasry table values on 54 stretches (259 signs). First run (4 Nov) scored unspaced text with the spaced model (-3.91 vs -4.62, z 2.5): wrong. Corrected 5 Nov with it-cinquecento order 5 without spaces: -2.16 vs -3.04 (sd 0.23) for 200 shuffled assignments, z 3.9; real unspaced Italian about -1.8.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "transcription",
+   "technique": [
+    "other",
+    "repeat/pattern analysis"
+   ],
+   "what": "Replaced the two agents' hand labels by one automatic inventory: f. 139 deskewed 0.8 degrees, 41 text lines from projection peaks, glyph groups cut per line, 1080 narrow groups clustered (Ward, 90 clusters, contact sheets checked by eye). Measured texts/f139_seg.txt: 863 narrow signs in 73 types (against 172 labels before), IC 0.0177, 237 wide groups (clear words or linked signs) and 217 clear-text fragments still unseparated.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "statistics",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ],
+   "what": "table_test2.py: 40 clusters mapped by eye to Domnina/Lasry values, 70 stretches (276 signs); corrected no-space model: -2.23 per letter vs -2.50 (sd 0.15) shuffled, z 1.8 (first run with the spaced model: z 2.2). Weaker than the agents' careful labels.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "transcription",
+   "technique": [
+    "key matching",
+    "contextual inference"
+   ],
+   "what": "Partial decode of the agents' labelled lines with the table values and the clear words kept (texts/f139_partial_decode.txt): readable Italian stretches (o qui hauete che; cento mila; milia; et sforza; non in; et non per; o che pi ne da; Veneziani closing runs). Table letters largely right; the 31% unmatched shapes (nomenclator, syllables) missing.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "solver",
+   "technique": [
+    "hill climbing",
+    "language-model scoring"
+   ],
+   "what": "solver.py: all 75 cluster types free on 691 signs, per-letter score under the no-space it-cinquecento model. Real -2.54, order shuffled -2.59, synthetic control (true key -2.32): solver -2.42, 1 of 53 types recovered. No power at this data size.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "solver",
+   "technique": [
+    "hill climbing",
+    "language-model scoring"
+   ],
+   "what": "solver2.py: table values fixed for 455 of 788 tokens, 115 free types. Real -2.30 vs -2.51 to -2.60 shuffled; held-out control (free the 5 and 10 most frequent matched labels) restores 2/5 and 0/10 table values at the same score. Solver values for free labels are not evidence.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "literature search",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Read the top of f. 147 (R7910, Sforza's reply of 3 Dec): he answers their letter of 29 Nov, mainly on the money (dinaro) and the quarters (stantie), then Montevarchi (about 3500 horse). Confirms the topic of f. 139; no wording to match.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "control",
+   "technique": [
+    "language-model scoring"
+   ],
+   "what": "heldout.py: one table-valued label at a time freed, language model picks its value: restores 5 of 25 (letters-only pool) and 2 of 25 (with syllables). The method cannot infer values of unmatched shapes with 45% of tokens unknown.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "crib",
+   "technique": [
+    "crib testing"
+   ],
+   "what": "cribs.py: 19 content words (denaro, stantie, cavalli, Cosimo, Fiorentini, Milanesi, ducati, Montevarchi, conte, compagnie, gente, pace, guerra, duca ...) searched against the table-decoded runs, unknown sign = 1-2 letters, 300 order-shuffled controls: none spelled out. Content words are nomenclator signs, not spelled.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "transcription",
+   "technique": [
+    "manual reconstruction",
+    "key matching"
+   ],
+   "what": "f. 134: the seven glossed runs transcribed sign by sign (texts/f134_signs.md). Glosses give: run 6 'le compagnie in' = le co m pa g (table values, spelled); run 3 ends with the bar-o-bar-o sign, glossed 'del duce', not Veneziani as in the 1454 tables; Fiorentini = V with a circle on each top corner; 'gente d'arme in Toscana' written in 11 and 8 signs.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference",
+    "key matching"
+   ],
+   "what": "Bar-o-bar-o = duca in 1446 (not Veneziani): gloss on f. 134 run 3 plus contexts on f. 139 ('adherirvi ala via del duca', 'al favor del duca', 'l'impresa contra .. duca') and the Duke's letter f. 145 of 1 Dec. Tentative, not tested against a control.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "crib",
+   "technique": [
+    "contextual inference",
+    "statistical test"
+   ],
+   "what": "f. 139 re-read with the f. 134 values: Fiorentini (V with a circle on each top corner) located at L7, L23, L28, L36 (context 'che [Fiorentini] debiano hauer per male', L36); bar-o-bar-o read duca ('adherirvi ala via .. duca', 'al fauor de .. duca', 'adyutassi duca'). Positional test: the sign before duca is the o sign in 5 of 11 cases (base rate 6.6%, binomial p 4e-4); four runs end 'e X o duca' with X = @12 or @102, so X = l ('e lo duca'). Tentative; no control run on the substitution.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "statistics",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "f. 139 relabelled with duca, Fiorentini and the 9-shape sign (@12/@102 unified) and rescored (relabel.py): stretch score of the table letters -2.204 (353 letters) -> -2.149 (456 letters) with @12 = l and duca/fiorentini as words; z 4.0 against 100 shuffled assignments of the table values. Single-sign scans over 55 candidate values: @12 (32 uses) best l (z 2.3 among the 55; next i); @101 (18 uses) best e (z 1.8, weak); other shapes <= 9 uses show no clear best. Control (hide a table sign, scan): signs with >= 16 uses come back at rank 1-2 (u, a, e, i, o); rarer ones do not (re, te, p, c, n rank 2-26), so only @12 is accepted (tentative) and @101 is not. Decoded runs then show 'e lo duca' six times, 'duca in', 'cento mila hor.', 'hauete che'. 487 of 788 run signs carry a value (62%); 301 unmatched or ambiguous. Rotated V at L5 (first sign, left-pointing triangle with circles on its right edge) looks like the Fiorentini sign turned on its side; unconfirmed. No sign always follows the same clear function word (checked, none repeats twice).",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "Leaves identified and glosses read; no key value assigned and no text read yet; work in progress.",
+  "contribution": [
+   "catalogue correction"
+  ],
+  "class": "not read",
+  "fraction_read": 0,
+  "verification": [
+   "none"
+  ],
+  "notes": "In progress: f. 139 transcribed twice; table letters fit (z 3.9, no-space model) and give readable fragments; f. 134 glosses give duca (bar-o-bar-o) and Fiorentini (V with two circles); with them the clear context of f. 139 reads as a letter urging Sforza to the Duke's side, but the cipher runs are still mostly unread (word signs and unmatched shapes). Relabelled with duca, Fiorentini and l (@12, 9-shape): z 4.0 on the table letters, 62% of run signs valued, 'e lo duca' six times; 301 run signs unmatched. Solvers fail held-out controls."
+ }
+}
