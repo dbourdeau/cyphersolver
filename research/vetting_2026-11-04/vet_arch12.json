@@ -1,0 +1,196 @@
+{
+ "2091": {
+  "verdict": "read",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "ArchiveGrid record https://researchworks.oclc.org/archivegrid/collection/data/910950198 (New-York Historical Society, 'Sir James Henry Craig coded letter to Charles Cornwallis, 1781', MS 2958.2318, read in Chrome 4 Nov 2026); no scan of the N-YHS leaf online (access: open to qualified researchers at the N-YHS; lead access 'archive'). Also NARA catalog naId 475670722 (RG 360, PCC item 51, M247 roll 65 vol. 1), digital-object list fetched by curl 4 Nov 2026 (Fold3 file 407600), images not viewed.",
+    "extent": "N-YHS: 1 item, 4 pages. NARA copy: 5 pages ('Copy'), part cipher, translation on p. 759 of the PCC volume.",
+    "cipher": "N-YHS/ArchiveGrid description: 'Letter, signed J.H. Craig, dated Wilmington, July 23, 1781, to Lord Cornwallis, written partly in code, giving news of both British and U.S. troop movements in South Carolina' (1 item, 4 pages). NARA catalog, Fold3 file #407600: 'Craig,James H. Wilmington. To Lord Corn- wallis. 5 p. Copy. (Part in cipher with translation on p. 759); Date: 1781-07-23'. So a contemporary translation is filed with the Congress copy of this letter; none is recorded on the N-YHS leaf, which is probably the original or another copy of the same text (4 vs 5 pages; not shown to be identical)."
+   },
+   "prior_art": {
+    "decode": "Local DECODE list (research/catalogue_harvest/decode/list.json, 10,106 records) and known.py: no Craig, Cornwallis or Wilmington record; not on DECODE.",
+    "tomokiyo": "cryptiana.web.fc2.com/code/cornwals.htm (fetched 4 Nov 2026) has a section 'Craig to Cornwallis, 23 July 1781, PCC Roll 65, Page 703 (translation on Page 759)': the Common cipher with three shifted table arrangements in one letter, and Lovell's 21 Sept 1781 explanation. cornwal2.htm also mentions Craig letters of 2 and 5 May 1781.",
+    "lasry": "GL.htm (Lasry's list, cryptiana mirror) and unsolved.htm grepped 4 Nov 2026: no Craig or Cornwallis hit; no Lasry item on this letter found.",
+    "edition": "Saberton, The Cornwallis Papers vols. 3-4 (2010) not opened (no online copy) and may print it deciphered; the contemporary translation on PCC p. 759 is already a decipherment.",
+    "literature": "Saberton, Journal of the American Revolution 2019 (Common cipher, key by alignment); web search 4 Nov 2026 for the N-YHS item found nothing more."
+   },
+   "key_check": "The southern British Common cipher is described by Saberton and Tomokiyo (ring turned against the alphabet, start indicator, nulls, table switches) and was rebuilt here in targets/balfour1781; Lovell's table arrangements for this very letter are on Tomokiyo's page. A reading already exists, so no key work is needed.",
+   "key_held": "targets/balfour1781 (ring.py) holds the Common cipher key; Lovell's table arrangements for this letter are printed on Tomokiyo's cornwals page; not run on this letter because a translation exists.",
+   "duplicates": "known.py Craig, Cornwallis, Wilmington: targets/balfour1781/NOTES.md item D lists 'Craig, Wilmington -> Cornwallis, 23 July 1781' (PCC 51 images 416-419, 552-556, translations pp. 759-761) as part of that target's volume, not transcribed; catalogue 781 is a different set (Cornwallis-Clinton); lead 'four number-cipher letters (Money, Balfour, Rawdon, Craig)' concerns Craig's May 1781 letters (Kew PRO 30/11), not this one.",
+   "verdict": "read"
+  },
+  "note": "The 23 Jul 1781 Craig-to-Cornwallis letter exists (N-YHS MS 2958.2318, 4 pp., 'written partly in code') and the intercepted copy in the Papers of the Continental Congress carries a contemporary translation (PCC item 51, 'translation on p. 759'), with the cipher described on Tomokiyo's cornwals page, so it is read, not open."
+ },
+ "2094": {
+  "verdict": "partly_read",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "scan",
+    "where": "University of Wyoming digital collections, Mark A. Chapman Collection, https://digitalcollections.uwyo.edu/luna/servlet/view/all/when/5-30-1892-6-22-1892 (19 images ah00003_113 ff., viewed in Chrome 4 Nov 2026: ah00003_113-124 looked at); finding aid https://archiveswest.orbiscascade.org/ark:80444/xv682691 (AHC Collection 00003, Box 1 Folder 18, read 4 Nov 2026); ArchiveGrid 27302551.",
+    "extent": "Folder 18: 19 images, telegrams and letters between Senator Joseph M. Carey (Washington) and Louis Kirk (Governor Barber's office, Cheyenne), 30 May-22 June 1892; originals in a safe, photocopies in the box.",
+    "cipher": "Finding aid: 'correspondence (often in code) between the governor's office and Senator Joseph M. Carey's office regarding the aftermath of the Johnson County War' and 'Correspondence between Governor's office and Sen. Carey (photocopies in box, originals in safe), May 30-June 22, 1892'. Seen: Western Union night messages and typed telegrams made of unconnected English words (e.g. Carey to Kirk, 30 May: 'Aulz requests go at Satisfactory disorder Extent They Connect ...'), a word-substitution with transposition. Filed with them: ah00003_114, a letter from Carey's office, 30 May 1892 ('We sent you a telegram last night in cypher ... I give you a copy of the telegram as translated: Tell Barber Secretary says his dispatch meant prisoners could be held ...'); ah00003_116-117, handwritten word-column worksheets; ah00003_118, typed plaintext 'Barber says your telegram perfectly understood ...' marked 'cypher May 31/92'; ah00003_121-122, typed plaintext of Kirk's 2 June telegram beside the cipher form (ah00003_123-124). So decipherments are written with the leaves; the 1 Jun Carey telegram (ah00003_120) and images 125-131 were not matched to plaintexts."
+   },
+   "prior_art": {
+    "decode": "Local DECODE list (10,106 records) and known.py on Wyoming, Chapman, Carey, Kirk, Johnson County War: no record; not on DECODE.",
+    "tomokiyo": "cryptiana unsolved.htm and GL.htm grepped 4 Nov 2026 for Wyoming, Carey, Johnson County: no hit.",
+    "lasry": "GL.htm grepped: no hit; no Lasry or HistoCrypt item found.",
+    "edition": "No edition of the folder known; the plaintexts are in the folder itself (digitised by AHC 23 Apr 2010).",
+    "literature": "Web searches 4 Nov 2026 (Johnson County War Barber Carey telegrams cipher; Chapman collection) found the finding aid only and no study of the telegram code."
+   },
+   "key_check": "No key held or needed for the plaintexts; the folder's own translation and worksheets give the word mapping for 30-31 May and 2 June 1892.",
+   "duplicates": "known.py Wyoming, Chapman, Carey, Kirk: only this lead and its sweep candidate; no targets/ folder; no catalogue entry on the Johnson County War.",
+   "verdict": "partly_read"
+  },
+  "note": "The University of Wyoming digital collection shows Box 1 Folder 18 (30 May-22 Jun 1892, 19 images) holds Carey/Kirk word-cipher telegrams that were deciphered at the time, with a typed or handwritten plaintext, a 'translated' copy in Carey's secretary's letter and columnar worksheets filed with them, so not open."
+ },
+ "2100": {
+  "verdict": "read",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "ArchiveGrid record https://researchworks.oclc.org/archivegrid/collection/data/1017180737 (National Library of South Africa - Archives, read in Chrome 4 Nov 2026); no scan online (lead access 'archive').",
+    "extent": "2 despatches, one in cipher; the record says 'Photo Original ; 140 x 20', i.e. a small strip.",
+    "cipher": "ArchiveGrid/NLSA record title: 'Despatches Received During the Siege of Kimberley - 2 Dispatches, Dated 1899-10-25 & 1899-11-23, One in Cipher / Hancox, F H.'; physical description 'Photo Original ; 140 x 20'; ids 0081479, A0081479. No decipherment is recorded in the NLSA record; the cipher itself was not seen."
+   },
+   "prior_art": {
+    "decode": "Local DECODE list and known.py on Kimberley, Hancox: no record; not on DECODE.",
+    "tomokiyo": "cryptiana unsolved.htm and GL.htm grepped 4 Nov 2026 for Kimberley, Boer, South Africa: no hit.",
+    "lasry": "GL.htm grepped: no hit; no Lasry item found.",
+    "edition": "O'Meara, Kekewich in Kimberley, ch. IV (https://www.angloboerwar.com/books/omeara-kekewich-in-kimberley/omeara-chapter-iv, fetched 4 Nov 2026): 'a runner managed to get into Kimberley early on the morning of 23rd November', a message 'in cipher' was brought to the Conning Tower; 'when decoded, it read: 18th November. No. R 98: General leaves here with small force on 21st November ...'. The text does not mention a 25 October despatch or Hancox.",
+    "literature": "Web searches 4 Nov 2026 (Hancox, NLSA, Kimberley cipher despatch) found only that F. H. Hancox was a Kimberley photographer (Premier Studio) and O'Meara's account."
+   },
+   "key_check": "No key held; the siege-period cipher is not documented, but the 23 Nov message is already printed decoded.",
+   "duplicates": "known.py Kimberley, Hancox: only this lead; no targets/ folder, no catalogue entry.",
+   "verdict": "read"
+  },
+  "note": "The NLSA item (A0081479, a 140 x 20 photographic record of two Kimberley siege despatches of 25 Oct and 23 Nov 1899) has a printed decipherment: O'Meara's Kekewich in Kimberley ch. IV gives the cipher message that reached Kimberley at 8 a.m. on 23 Nov 1899 with its decoded text (identity with the NLSA item inferred from the date, not shown)."
+ },
+ "2145": {
+  "verdict": "unvettable",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "ArchiveGrid record https://researchworks.oclc.org/archivegrid/collection/data/703874395 (University of Arizona Special Collections MS 450, read in Chrome 4 Nov 2026). The finding aid (azarchivesonline.org UAMS450.xml) returned 403 to WebFetch and was not read; the original collection is at SIU Carbondale. No scan online.",
+    "extent": "5 linear ft in 4 series; no count or folio of coded telegrams given.",
+    "cipher": "ArchiveGrid: 'Many clippings are copies of correspondence in the form of telegrams, some in code, between revolutionaries and key political figures at the time such as Francisco Madero and Venustiano Carranza.' No coded item is identified by date, sender or folder, so what is on a leaf (system, length, whether a plaintext is attached) is unknown."
+   },
+   "prior_art": {
+    "decode": "Local DECODE list and known.py on Vazquez Gomez, Madero: no DECODE record; not on DECODE.",
+    "tomokiyo": "cryptiana unsolved.htm, GL.htm, index.htm grepped 4 Nov 2026 for Madero, Mexico: no hit.",
+    "lasry": "GL.htm grepped: no hit.",
+    "edition": "Vazquez Gomez, Memorias politicas 1909-1913 (1933) was written from this material and may print telegrams in clear; not checked.",
+    "literature": "No literature on coded telegrams in this collection found; the Mexican Revolution telegram codes are covered by catalogue 1462 (Maderista junta at El Paso)."
+   },
+   "key_check": "No key held; nothing identifiable to test one on.",
+   "duplicates": "known.py Vazquez Gomez: catalogue 1462 (CEHM-Carso Fondo CMXV, Gustavo Madero, Vazquez Gomez et al.) is a different archive and set; no targets/ folder.",
+   "verdict": "unvettable"
+  },
+  "note": "Collection-level record only (Vazquez-Gomez Collection MS 450: clippings that are 'copies of correspondence in the form of telegrams, some in code'), no single coded document is named and the finding aid could not be opened."
+ },
+ "2147": {
+  "verdict": "unvettable",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "ArchiveGrid record https://researchworks.oclc.org/archivegrid/collection/data/51099586 (Kansas State Historical Society, State archives RG 920, Executive Dept. subgroup 1, series 03319, box 4, folder 14, read in Chrome 4 Nov 2026); Kansas Memory has no item (earlier sweep, locate.php 'danite' 0 hits); no scan found.",
+    "extent": "Folder of 7 letters or fragments, Feb-May 1858 with Dougherty's transmittal of 17 July 1858; the number of cipher items is not stated.",
+    "cipher": "ArchiveGrid: 'Subject folder containing 7 letters or fragments that deal with the Danite Lodges of northeastern Kansas Territory ... Includes the Danite Lodge papers, one signed by Gen. [James H.] Lane ... All communications from the Legion / Danites were either in cipher or they used numbers as opposed to real names.' Physical note: 'In part, in cipher code'. Kansas: A Cyclopedia (1912, ksgenweb.org/archives/1912/d/danites.html): 'One of the despatches in the archives is wholly in figures, incapable of translation'; officers go by numbers, one despatch is addressed to '4141'. No decipherment is recorded; the leaves were not seen."
+   },
+   "prior_art": {
+    "decode": "Local DECODE list and known.py on Danite, Kansas: only postcard records (Hoxie/Selden, Kansas); not on DECODE.",
+    "tomokiyo": "cryptiana unsolved.htm, GL.htm, index.htm grepped 4 Nov 2026 for Danite, Kansas: no hit.",
+    "lasry": "GL.htm grepped: no hit.",
+    "edition": "Kansas: A Cyclopedia (1912) describes the despatches but prints no reading; Todd Mildfelt, The Secret Danites (2003, 132 pp.) is not online and unopened, and a Lawrence Journal-World review (ljworld.com 11 Jan 2004) says only that the Danites had 'its own secret cipher' and that Mildfelt transcribed Leonhardt's manuscripts, not that he deciphered anything.",
+    "literature": "Web searches 4 Nov 2026 (Danite cipher Kansas; Leonhardt papers; Mildfelt cipher) found no decipherment and no key; the Charles Leonhardt papers (KSHS) hold a Danite-related member's material but no key is described."
+   },
+   "key_check": "No key held; a Danite cipher key could sit in the Leonhardt papers or Mildfelt's book, not checked.",
+   "duplicates": "known.py Danite, Kansas Historical, Leonhardt: only this lead; no targets/ folder, no catalogue entry.",
+   "verdict": "unvettable"
+  },
+  "note": "A KSHS subject folder of 7 letters or fragments by several writers ('In part, in cipher code'), none identified individually and no scan online, so no single cipher leaf can be vetted; the 1912 Kansas Cyclopedia says one despatch is wholly in figures, incapable of translation."
+ },
+ "2210": {
+  "verdict": "partly_read",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Repertory of Misc. Arch. I.67 by S. Falletta (Soprintendenza archivistica della Sicilia / Archivio di Stato di Palermo, 2020), Wayback copy https://web.archive.org/web/20240808/https://saassipa.cultura.gov.it/wp-content/uploads/2020/09/Misc.-Arch.-I.67-Repertorio-della-corrispondenza-diplomatica-del-Governo-di-Sicilia-del-febbraio-1848.pdf, fetched by curl and text-extracted 4 Nov 2026 (16 pp.); no images online (lead access 'archive').",
+    "extent": "Cipher items named in the repertory: no. 57a (London, 21 Mar 1849, 'Lettera cifrata'), no. 86 (London, 31 Mar, 'Dispaccio in cifra', 'Lettera cifrata'), 4 Apr no. 3 ('Cifrato e in chiaro'), 5 Apr no. 7 (accompanying 'un dispaccio in cifra'), 6 Apr no. 8 ('Traduzione di lettera cifrata'), no. 9 ('Nota in cifra'), 7 Apr no. 11 ('In lettera con un paragrafo in cifra'); lengths not given.",
+    "cipher": "Repertory wording: no. 8, 'I Commissari di Londra al Ministro degli Esteri di Palermo - Traduzione di lettera cifrata. Annunziano la partenza del Bascia per Porto Ferraio e del Bombay ...' (London, 6 Apr 1849); no. 9, 'Contiene quanto e detto nella traduzione del dispaccio dello stesso giorno, n. 8 - Nota in cifra'; no. 86, 'Dispaccio in cifra / Lettera cifrata' (London, 31 Mar 1849). So translations are filed with some cipher items; the cipher leaves themselves were not seen and the lead's 'also I.65, I.66' were not read."
+   },
+   "prior_art": {
+    "decode": "Local DECODE list and known.py on Sicily, Palermo, Misuraca, Granatelli, Friddani: only BL Add MS 32297 Castelcicala (Naples/Sicily 1814-20) records; no Sicilian 1848-49 record; not on DECODE.",
+    "tomokiyo": "cryptiana unsolved.htm and GL.htm grepped 4 Nov 2026 for Sicil, Palermo, 1849: only the 1503 Viceroy of Sicily letter; no 1849 Sicilian page.",
+    "lasry": "GL.htm grepped: no hit; no Lasry or HistoCrypt item found.",
+    "edition": "No edition of these cipher despatches found; the repertory is an inventory (Falletta 2020).",
+    "literature": "Web searches 4 Nov 2026 (Governo di Sicilia 1849 cifrario commissari Londra Parigi; Granatelli Scalia Bombay cipher) found the I.66-I.68 repertories and Hansard on the Bombay seizure, nothing on the cipher."
+   },
+   "key_check": "No key held; Misc. Arch. I.68 (lead 2209, partly_read) is the sibling box with 'versione' items that would supply the key.",
+   "duplicates": "known.py I.67, Misc. Arch, Granatelli, Friddani, Falletta: lead 2209 (I.68, closed partly_read 4 Nov) is the sibling box; no catalogue entry or targets/ folder for ASPa Misc. Arch.",
+   "verdict": "partly_read"
+  },
+  "note": "ASPa Misc. Arch. I.67 holds about seven cipher items of Sicily's Feb-Apr 1849 foreign ministry by several writers, and by the repertory's own wording at least one ('Traduzione di lettera cifrata', 6 Apr 1849) has a translation attached with its 'nota in cifra' (no. 9), so like sibling lead 2209 (I.68) it is partly read, not open."
+ },
+ "2229": {
+  "verdict": "unvettable",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Not seen. Searched the MNL AdatbazisokOnline E 190 database (https://adatbazisokonline.mnl.gov.hu/adatbazis/e-190-archivum-familiae-rakoczi-(rakoczi-missilisek)) on 4 Nov 2026: 'Mednyanszky' gives 40 documents, all in the date facet 1637-1650 (none 1658-59), and 'Jonas' with date filter 1658 gives no hit. Only secondary description: Lang 2015 repertory p. 272 and notes 181-184, https://real-d.mtak.hu/922/7/dc_758_13_doktori_mu.pdf (text layer read 4 Nov 2026).",
+    "extent": "Lang: C.Rag.16 (c. 1658, no. 886) plus C.Rag.17-26 (1658-59, nos. 891-893, 897-898, 901, 904, 909, 924, 926), about 11 letters, Hungarian; C.Rag.17-26 'majdnem teljes' (almost complete) cipher.",
+    "cipher": "NOT the archive's description: Lang row C.Rag.16, '1658 korul, Mednyanszky Jonas Gyorgy -> II. Rakoczi, MOL E 190, Arch Fam. Rakoczi, 44. doboz, 5 tetel, 886. szam, magyar, homof., latin abc, szamok (3 betunkent), szotagoknak kulon jelek, kb. 10 nkl., T.Med.01, megfejtetlen'; row C.Rag.17-26, 'monoalf., latin abc, graf. jelek, betuk es szamok is vannak, 7 nkl, T.Med.05, megfejtetlen, majdnem teljes' (note 183: 'MOL E 190, Arch Fam. Rakoczi, 44. doboz, 5 tetel, pl 891-893, 897-198, 901, 904, 909, 924, 926'). No archive catalogue text opened, so no quotation of the archive's own description is possible."
+   },
+   "prior_art": {
+    "decode": "Local DECODE list (10,106 records): the keys are on DECODE (NAH P497 Mednyanszky family 3, Keys II fol. 1, 2, 4, 5, 7, 9-13, ids 485-495, 1658, plus HHStA Verschworerakten Fasc. 327 Konv. D fol. 16 id 682 'Mednyanszky?'); no record of the letters of E 190 44. doboz. Letters not on DECODE.",
+    "tomokiyo": "cryptiana unsolved.htm, GL.htm, bookcode.htm grepped 4 Nov 2026 for Rakoczi, Mednyanszky, Hungary: no page on these letters (unsolved.htm only the Mirka 2012 / Ferdinand III entry).",
+    "lasry": "GL.htm grepped: no Rakoczi or Mednyanszky hit; no Lasry or HistoCrypt item found.",
+    "edition": "Lang 2015 gives no edition for C.Rag.16 or C.Rag.17-26 and marks them megfejtetlen; Szabo (epa.oszk.hu 01500/00006/04Szabo.pdf) cites a Mednyanszky letter of 22 Feb 1658 only from Szilagyi 1874 and Mednyanszky 1880, not a cipher letter.",
+    "literature": "Web searches 4 Nov 2026 (Mednyanszky Jonas Rakoczi 1658 titkosiras kulcs megfejtes) found no decipherment."
+   },
+   "key_check": "Keys are in the same family fonds and on DECODE (P 497 Mednyanszky csalad 3. csomo, Kulcsok II.: T.Med.01 homophonic 3 numbers per letter with syllable signs, T.Med.05 monoalphabetic graphic signs); not tested because no images of the letters are available.",
+   "key_held": "DECODE ids 485-495 (NAH P497 Mednyanszky 3, Keys II, 1658); images not downloaded for this check; not tested.",
+   "duplicates": "known.py Mednyanszky, E 190, C.Rag: sibling leads for the Rakoczi box (Lang C.Rag.03-08, 15) and lead 'Mednyanszky to Kemeny 1655'; no catalogue entry or targets/ folder (rakoczi1632/1704/1707/1711 are other items).",
+   "verdict": "unvettable"
+  },
+  "note": "Lang's repertory lists these Mednyanszky-to-Rakoczi letters (E 190 44. doboz, nos. 886, 891-926) as two different systems, not one homophonic cipher with syllable signs as the lead says, but the archive's own record could not be found (E 190 database has no 1658 Mednyanszky record) and no image is online, so no cipher description can be quoted."
+ },
+ "2232": {
+  "verdict": "unvettable",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Not seen. Searched the MNL AdatbazisokOnline E 190 database (https://adatbazisokonline.mnl.gov.hu/adatbazis/e-190-archivum-familiae-rakoczi-(rakoczi-missilisek)) on 4 Nov 2026 for the date 1644.07.21: two records, neither this letter (E 190 - 1644 - 11 - 3322 Debreczeni Tamas -> Rakoczi Gyorgy, Sarospatak; E 190 - 1644 - 12 - 3720 Rakoczi Gyorgy -> Lorantffy Zsuzsanna, Ungvar). The item 43. doboz 5. tetel 629 has no record there. Only secondary description: Lang 2015 repertory p. 264, https://real-d.mtak.hu/922/7/dc_758_13_doktori_mu.pdf (text layer read 4 Nov 2026).",
+    "extent": "Lang: 'reszleges' (partial) cipher; length unknown.",
+    "cipher": "NOT the archive's description: Lang row C.Rag.06, '1644. 07. 21. | ? | I. Rakoczi Gyorgy | MOL E 190, Arch Fam. Rakoczi, 43. doboz, 5 tetel, 629. sz. | magyar | betuk, monoalf. | nincs feltorve | Rakoczi csalad levelezese | reszleges' (Hungarian, letters, monoalphabetic, not broken, partial). No archive catalogue text for the cipher could be opened, so no quotation of the archive's own description is possible."
+   },
+   "prior_art": {
+    "decode": "Local DECODE list and known.py on E 190, C.Rag, Rakoczi Gyorgy: no record of this letter (the Rakoczi records there are Rakoczi II, 1703-11, and Kemeny XIX at Cluj); not on DECODE.",
+    "tomokiyo": "cryptiana unsolved.htm and GL.htm grepped 4 Nov 2026 for Rakoczi, Hungary: no entry for this letter.",
+    "lasry": "GL.htm grepped: no hit; no Lasry or HistoCrypt item found.",
+    "edition": "Lang gives no edition for C.Rag.06 (its neighbour C.Rag.05 of 1642 has a publication entry 'Budapest, MTA, 1888' in Lang's table); no edition found for this letter.",
+    "literature": "Web searches 4 Nov 2026 (MNL E 190 Rakoczi titkosiras) found no decipherment."
+   },
+   "key_check": "No key held; the lead's own note guesses that one hand-made monoalphabetic key may serve this and C.Rag.05 (lead 2231), neither seen.",
+   "duplicates": "known.py E 190, C.Rag: sibling leads 2231 (C.Rag.05, also unvettable) and C.Rag.07, 15; no catalogue entry or targets/ folder.",
+   "verdict": "unvettable"
+  },
+  "note": "Lang's repertory (p. 264, C.Rag.06) records a partly enciphered monoalphabetic Hungarian letter of 21 Jul 1644 to Gyorgy I Rakoczi 'nincs feltorve', but the archive's own record could not be found (E 190 database has no such item) and no image is online, so no cipher description can be quoted."
+ }
+}
