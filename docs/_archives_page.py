@@ -154,6 +154,20 @@ def build_html(pages):
 <main>
 <ul class="kinds" aria-label="Filter by kind of request">{kinds}</ul>
 
+<h2 id="map">The unread map</h2>
+<p class="am-lede">The <a href="atlas.html">atlas</a>&rsquo;s unread layer on its own: every open catalogue letter with no known decipherment, at the place it was written, and none of the read ones. A <span class="am-key arch">gold ring</span> holds at least one letter with a request on this page; a <span class="am-key">dashed ring</span> only letters that can be worked from the scans already online.</p>
+<div class="amap-wrap jsonly">
+  <div class="amap" id="amap">
+    <span class="am-count" id="amapn"></span>
+    <div class="am-zoom" role="group" aria-label="Zoom the map"><button type="button" id="amzin" aria-label="Zoom in">+</button><button type="button" id="amzout" aria-label="Zoom out">&minus;</button><button type="button" id="amzreset" aria-label="Reset the map">&#8634;</button></div>
+  </div>
+  <aside class="am-side" id="amapside" aria-live="polite">
+    <p class="am-sub">Click a ring for the letters written there. Those with a request open it below; the others open their catalogue entry.</p>
+    <button type="button" class="am-only" id="amaponly" aria-pressed="false">Only the places that need the archive</button>
+  </aside>
+</div>
+<script type="application/json" id="amapreq">{json.dumps(sorted({int(r["catalogue"]) for r in live if is_cat(r) and str(r["catalogue"]).isdigit()}))}</script>
+
 <div class="qbar jsonly" id="list">
   <input type="search" id="q" placeholder="Search: archive, city, shelfmark, cipher, region…" aria-label="Search the requests">
   <span class="kf" role="group" aria-label="Kind"><button type="button" data-k="" aria-pressed="true">all kinds</button><button type="button" data-k="visit" aria-pressed="false">reading room</button><button type="button" data-k="order" aria-pressed="false">order</button><button type="button" data-k="library" aria-pressed="false">library</button></span>
@@ -196,10 +210,18 @@ document.getElementById('openall').addEventListener('click',function(){{secs.for
 document.getElementById('closeall').addEventListener('click',function(){{secs.forEach(function(x){{x.open=false;}});}});
 [].forEach.call(document.querySelectorAll('details.toc a'),function(a){{a.addEventListener('click',function(){{var d=document.querySelector(a.getAttribute('href'));if(d){{d.hidden=false;d.open=true;}}}});}});
 render();
-var hm=/^#(c\d+)$/.exec(location.hash),he=hm&&document.getElementById(hm[1]);
-if(he){{var hd=he.closest('details.arch');if(hd){{hd.hidden=false;hd.open=true;}}he.classList.add('hit');he.scrollIntoView();}}
+function hit(){{
+ var hm=/^#(c\\d+)$/.exec(location.hash),he=hm&&document.getElementById(hm[1]);if(!he)return;
+ if(he.hidden){{q.value='';k='';sr='';press(kb,'k','');press(cards,'k','');press(sb,'s','');render();}}
+ var hd=he.closest('details.arch');if(hd){{hd.hidden=false;hd.open=true;}}
+ [].forEach.call(document.querySelectorAll('li.rq.hit'),function(x){{x.classList.remove('hit');}});he.classList.add('hit');he.scrollIntoView();
+}}
+hit();addEventListener('hashchange',hit);
 }})();
 </script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script src="archmap.js" defer></script>
 </body>
 </html>
 '''
