@@ -29,7 +29,7 @@ de vouloir bien couper racine à tous ces raisonnements; qu['autrement] je ne po
 participent le plus et de les faire passer en France pour vous rendre compte de [leur] conduite.
 
 ## f.70v
-J'aurois [?] Monseigneur, effectué déjà tout ce que j'ai dit à cet égard à M. le marquis de Montcalm, mais dans les circonstances où nous sommes
+J'aurois, Monseigneur, effectué déjà tout ce que j'ai dit à cet égard à M. le marquis de Montcalm, mais dans les circonstances où nous sommes
 je me fais violence; j'emploie les [?] [?] de la douceur pour ramener les esprits et ranimer ceux qui sont timides; mais il faudra bien que je
 prenne un parti de rigueur si le cas l'exige, pour obvier à un plus grand mal; c'est ce que je ne ferai qu'à la dernière extrémité.
 

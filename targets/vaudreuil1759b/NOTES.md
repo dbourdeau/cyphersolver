@@ -2,7 +2,7 @@
 
 Status: in progress
 
-Class: read (external key matched), 99.1% of 1221 groups; read as sentences against the images on 5 Nov 2026 (a model reading, no outside reader).
+Class: read (external key matched), 99.2% of 1221 groups; read as sentences against the images on 5 Nov 2026 (a model reading, no outside reader).
 
 Catalogue 1389. ANOM, COL C11A 104, ff.68-72 (CABAC_PIAF_60892); LAC e000874969-e000874973 (5 images); [record](https://nouvelle-france.org/eng/item/details?id=27479). Pierre de Rigaud de Vaudreuil de Cavagnial, governor of New France, to the minister of the Marine. French.
 1221 number groups (253 distinct); in clear: Monseigneur, the closing formula.
@@ -20,11 +20,11 @@ transcription and the context corrections are described). The key is the 1757 Va
 ## The reading
 
 `transcription.txt` (groups), `decode.txt` (decode, syllabic spelling as written), `ct.txt` (groups only), `tools/decode.py`. Outcome method: **external key matched**.
-Measured: 1221 groups (the written ordinals 1o-3o and the date 27 are figures, not groups); 11 unread (0.9%), so 99.1% read as sense (`reading.md`, English in `reading_en.md`, supplied and unread groups in `reading_notes.md`).
+Measured: 1221 groups (the written ordinals 1o-3o and the date 27 are figures, not groups); 10 unread (0.8%), so 99.2% read as sense (`reading.md`, English in `reading_en.md`, supplied and unread groups in `reading_notes.md`).
 Reader pass: all five images compared line by line with the transcription; three groups corrected (353 -> 553 obser, 381 -> 581 faire, 613 -> 615 em); seven cut groups supplied from visible digits and sense.
 
 ## Remaining gaps
-- f.68v "de l diver m es re ment e c es" (8 groups), f.70v "j'aurois [?] Monseigneur effectué" (1 group, 301) and "les [?] [?] de la douceur" (2 groups, 431 + s) - blocker: open-codes; cells 139, 301, 431 do not give the words; scattered, no sentence is lost
+- f.68v "de l diver m es re ment e c es" (8 groups), f.70v "les [?] [?] de la douceur" (2 groups, 431 + s) - blocker: open-codes; cells 139, 431 do not give the words; scattered, no sentence is lost
 
 ## Escalation
 - [x] siblings: the other cipher letters of the same hand (cat. 1388-1391) decoded with the same table; 1392 (Trémais) uses another code

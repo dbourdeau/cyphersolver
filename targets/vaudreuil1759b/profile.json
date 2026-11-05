@@ -32,7 +32,7 @@
     "source": "LAC microfilm images, LAC e000874969-e000874973 (5 images)",
     "corrections": 3,
     "image_quality": "good",
-    "notes": "Transcribed 5 Nov 2026 from enlarged half-spread crops; 32 groups at the gutter are cut ('~' in transcription.txt, digits kept in ct.txt). Reader pass 5 Nov 2026: three groups corrected against the image (353->553, 381->581, 613->615); written ordinals 1o-3o and the date 27 are figures, not cipher groups (bracketed; 1225 -> 1221 groups)."
+    "notes": "Transcribed 5 Nov 2026 from enlarged half-spread crops; 32 groups at the gutter are cut ('~' in transcription.txt, digits kept in ct.txt). Reader pass 5 Nov 2026: four groups corrected against the image (353->553, 381->581, 613->615, 301->501); written ordinals 1o-3o and the date 27 are figures, not cipher groups (bracketed; 1225 -> 1221 groups)."
    },
    "read": "read"
   }
@@ -147,8 +147,14 @@
    "technique": [
     "contextual inference"
    ],
-   "what": "Cut groups at the gutter supplied from the visible digits and the sense (471 e, 328 ne, 467 ti, 246 leur, 642 de, 483 lu, 389 m); 11 groups unread (the memorandum described as 2o on f.68v, 'j'aurois [?] Monseigneur effectué', 'les [?] [?] de la douceur').",
+   "what": "Cut groups at the gutter supplied from the visible digits and the sense (471 e, 328 ne, 467 ti, 246 leur, 642 de, 483 lu, 389 m); 10 groups unread (the memorandum described as 2o on f.68v, 'les [?] [?] de la douceur').",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "verification",
+   "what": "Cat. 1388 reader review turned up the same 3/5 slip in the sibling: group 301 (trou) at f.70v line 6 is 501 (ois) on the image, so \"j'aurois, Monseigneur, effectué\" reads. Transcription, ct.txt and decode.txt corrected; 10 groups now unread (was 11).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -160,7 +166,7 @@
    "transcription",
    "key extended or corrected"
   ],
-  "fraction_read": 0.991,
+  "fraction_read": 0.992,
   "codes_open": {
    "open": 0,
    "total": 0,
@@ -184,12 +190,12 @@
     "language": "fr",
     "translation": "reading_en.md",
     "reading": "reading.md",
-    "read_share": 0.991,
+    "read_share": 0.992,
     "reading_review": {
      "grade": "A",
      "by": "Claude Sonnet 5.5 (a model reading, not a person), after the solving passes",
      "date": "2026-11-05",
-     "note": "Read the French sentence by sentence against reading_en.md and the images: the whole letter builds coherent 1759 chancery French (Montcalm's opinions public among officers and people, the measures Vaudreuil takes, the request that officers be sent to France if need be, the instruction that Montcalm command at Carillon). Three groups corrected on the image, 11 unread, seven gutter-cut groups supplied by sense. Not checked by a person."
+     "note": "Read the French sentence by sentence against reading_en.md and the images: the whole letter builds coherent 1759 chancery French (Montcalm's opinions public among officers and people, the measures Vaudreuil takes, the request that officers be sent to France if need be, the instruction that Montcalm command at Carillon). Four groups corrected on the image, 10 unread, seven gutter-cut groups supplied by sense. Not checked by a person."
     }
    }
   ],
@@ -206,12 +212,12 @@
    }
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "transcription.txt via tools/decode.py + reading.md: cipher groups (1221); 11 groups unread (listed in reading_notes.md) counted unread. Seven cut groups supplied from visible digits and sense are counted read.",
+  "fraction_read_source": "transcription.txt via tools/decode.py + reading.md: cipher groups (1221); 10 groups unread (listed in reading_notes.md) counted unread. Seven cut groups supplied from visible digits and sense are counted read.",
   "gaps": [
    {
-    "item": "11 groups: f.68v 'de l diver m es re ment e c es' (8), f.70v 'j'aurois [?] Monseigneur' (1), f.70v 'les [?] [?] de la douceur' (2)",
+    "item": "10 groups: f.68v 'de l diver m es re ment e c es' (8), f.70v 'les [?] [?] de la douceur' (2)",
     "blocker": "open-codes",
-    "detail": "cells 139, 301, 431 do not give the words; scattered, no sentence is lost"
+    "detail": "cells 139, 431 do not give the words; scattered, no sentence is lost"
    }
   ]
  }

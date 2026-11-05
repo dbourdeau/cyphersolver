@@ -22,7 +22,7 @@
    },
    "length": {
     "tokens": 3633,
-    "distinct": 380,
+    "distinct": 385,
     "unit": "code groups",
     "measured": true,
     "file": "ct.txt"
@@ -30,11 +30,11 @@
    "transcription": {
     "by": "llm from images",
     "source": "LAC microfilm images, LAC e000874955-e000874967 (13 images)",
-    "corrections": 0,
+    "corrections": 21,
     "image_quality": "good",
-    "notes": "Transcribed 5 Nov 2026 from enlarged half-spread crops; no group is cut at the gutter."
+    "notes": "Transcribed 5 Nov 2026 from enlarged half-spread crops; no group is cut at the gutter. Reader pass 5 Nov 2026 against all 13 images: 21 groups corrected (the hand's 5 read as 3 or the reverse: 301->501 in six places, 329->529, 341->541, 382->582, 303->305, 303->503, 381->581, 633->635, 533->535, 533->553, 255->235, 30->50); the written ordinals 1o-4o are figures, not cipher groups (bracketed)."
    },
-   "read": "not read"
+   "read": "read"
   }
  ],
  "system": {
@@ -140,10 +140,26 @@
    "kind": "transcription",
    "what": "Written ordinals 1o-4o (f.54-) are figures, not cipher groups: bracketed in transcription.txt and removed from ct.txt (the decode had read them as cell 1 etc.). Overrides synchronised with cat. 1391 (cell 2 = campagne).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "verification",
+   "what": "Reader review: fetched the 13 images, compared every half-page with the transcription and the decode, corrected 21 groups (5/3 slips, 301 trou -> 501 ois in six places) and decoded the letter as sentences; wrote reading.md, reading_en.md, reading_notes.md. The same slip (301->501) was found in cat. 1389.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "reading",
+   "technique": [
+    "contextual inference",
+    "key matching"
+   ],
+   "what": "Cells settled from the letter: 656 = q (cinq, cinquante, conséquent), 505 = am, 9 = possession, 289 = os; overrides copied to cat. 1389, 1390 and 1391. 23 groups stay unread (the Sulpicians' groups on f.64r, 'ap se e ment' on f.60v and 9 others).",
+   "result": "partial"
   }
  ],
  "outcome": {
-  "class": "not read",
+  "class": "read",
   "key": "partial",
   "method": "read after matching with key from external sources",
   "method_basis": "The 1757 Vaudreuil table (ANOM COL C11E 10, LAC e001295274), found to fit catalogue 1391 of the same hand, applied to this letter.",
@@ -151,13 +167,14 @@
    "transcription",
    "key extended or corrected"
   ],
-  "fraction_read": "unknown",
+  "fraction_read": 0.994,
   "codes_open": {
    "open": 0,
    "total": 0,
    "tokens_open": 0
   },
   "verification": [
+   "key confirms",
    "historical consistency"
   ],
   "texts": [
@@ -168,22 +185,40 @@
      "transcription.txt",
      "ct.txt"
     ],
-    "decryption": "decode.txt",
-    "state": "decoded, not read",
-    "summary": "Vaudreuil reports to the minister on the winter and the defence plan: famine and loss of draught animals, a British army of about 20-25 000 against Niagara, Fort Duquesne evacuated, Montcalm's absence, and numbered requests for battalions, munitions and provisions.",
-    "language": "fr"
+    "decryption": "reading.md",
+    "state": "read",
+    "summary": "Vaudreuil reports to the minister on the winter and the defence plan: famine and loss of draught animals, a British army of about 20-25 000 against Niagara, Fort Duquesne evacuated, the four points to defend (Carillon, the Belle Rivière, Niagara, La Présentation and Lake Ontario), his plan to fall back on Québec with his troops, and numbered requests for battalions, munitions and provisions.",
+    "language": "fr",
+    "translation": "reading_en.md",
+    "reading": "reading.md",
+    "read_share": 0.994,
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Sonnet 5.5 (a model reading, not a person), after the solving passes",
+     "date": "2026-11-05",
+     "note": "Read the French sentence by sentence against reading_en.md and the images: the whole letter builds coherent 1759 chancery French (the census of the three governments, the four points to defend, the plan to meet the English at Québec, the request for troops, munitions and a supplement of provisions). 21 groups corrected on the images, 23 unread, one cell (403) odd, one syllable group (s-in-d-re = moindre) read twice by sense. Not checked by a person."
+    }
    }
   ],
   "key_file": [
    "key/key274.json",
    "key/overrides.json"
   ],
-  "notes": "Decoded, not read: the whole letter decodes mechanically as French with the 1757 table (99.7% of groups carry a settled table value), but the decode, in the clerk's syllabic spelling, has not been reviewed as sentences or translated. Mechanical decode with the syllabic spelling left as written; no English translation and no reader review yet. The table cells were read from the images of the volume by the same model.",
+  "notes": "Read as sentences against the images on 5 Nov 2026 (model reading, no outside reader). Key found, not recovered; table cells read from the images of the volume. Four more cells settled from this letter (656 q, 505 am, 9 possession, 289 os).",
   "credits": [
    {
     "who": "contemporary",
     "role": "key or decipherment used",
     "note": "Vaudreuil 1757 numerical table, ANOM COL C11E 10 f.289 (LAC e001295274)"
+   }
+  ],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "transcription.txt via tools/sib.py + reading.md: cipher groups (3633); 23 groups unread (listed in reading_notes.md) counted unread.",
+  "gaps": [
+   {
+    "item": "23 groups: f.64r 'toutes les s u tu r es des s u l in s' (10), f.60v 'des ap se e ment' (4), f.59v 'la sur co' (2), f.66r 'point d i que' (2), and 5 single groups (f.56v 389, f.58r 84, f.61r 235, f.63r 65, f.63v 686)",
+    "blocker": "open-codes",
+    "detail": "the groups do not spell the word the sense wants; scattered, no sentence is lost"
    }
   ]
  }

@@ -2,14 +2,14 @@
 
 Status: in progress
 
-Class: not read (decoded, not read). The whole letter decodes mechanically as French; a reader review and translation are what is missing.
+Class: read (external key matched), 99.4% of 3633 groups; read as sentences against the images on 5 Nov 2026 (a model reading, no outside reader).
 
 Catalogue 1388. ANOM, COL C11A 104, ff.54-66 (CABAC_PIAF_60891); LAC e000874955-e000874967 (13 images); [record](https://nouvelle-france.org/eng/item/details?id=27478). Pierre de Rigaud de Vaudreuil de Cavagnial, governor of New France, to the minister of the Marine. French.
-3633 number groups (380 distinct); in clear: Monseigneur, the closing formula.
+3633 number groups (385 distinct); in clear: Monseigneur, the closing formula.
 
 ## What the document is
 
-Vaudreuil reports to the minister on the winter and the defence plan: famine and loss of draught animals, a British army of about 20-25 000 against Niagara, Fort Duquesne evacuated, Montcalm's absence, and numbered requests for battalions, munitions and provisions.
+Vaudreuil reports to the minister on the winter and the defence plan: famine and loss of draught animals, the census of the three governments (about 13 000 militia), a British army of 25-30 000 against Carillon and 10 000 each against the Belle Rivière and Niagara, Fort Duquesne evacuated, Montcalm's refusal to pursue the enemy in 1758, and his own plan to fall back on Québec with the troops and fight there; numbered requests for battalions, munitions and provisions (full French in [reading.md](reading.md), English in [reading_en.md](reading_en.md)).
 
 ## System and key
 
@@ -19,13 +19,14 @@ transcription and the context corrections are described). The key is the 1757 Va
 
 ## The reading
 
-`transcription.txt` (groups), `decode.txt` (decode, syllabic spelling as written), `ct.txt` (groups only), `tools/decode.py`. Outcome method: **external key matched**.
-Measured: 99.7% of groups carry a settled value (3621 of 3633); 12 sit on a doubtful table cell and 0 are cut at the gutter. The decode reads as French
-throughout; no reader has yet reviewed it as sentences and there is no English translation.
+`transcription.txt` (groups), `decode.txt` (decode, syllabic spelling as written), `ct.txt` (groups only), `reading.md` (French), `reading_en.md` (English), `reading_notes.md` (corrections, supplied and unread groups), `tools/sib.py`. Outcome method: **external key matched**.
+Measured: 3633 groups (the written ordinals 1o-4o are figures, not groups); 23 unread (0.6%), so 99.4% read as sense; no group is cut at the gutter.
+Reader pass: all 13 images compared with the transcription in half-page crops; 21 groups corrected (the hand's 5 taken for 3, or the reverse; 301 trou is 501 ois in six places, the same slip as in cat. 1389 f.70v);
+four table cells settled from the letter (656 q, 505 am, 9 possession, 289 os). The reading builds sentences throughout; the checker rates it readable (0.843).
 
 ## Remaining gaps
-- 12 groups on table cells still doubtful - blocker: open-codes; cells read from a small image of the table; the alphabetical key sheets e001295267/69 are not yet used to settle them
-- reader review and English translation of the whole letter - blocker: not-attempted; not yet done
+- f.64r "toutes les s u tu r es des s u l in s" (10 groups) - blocker: open-codes; the groups do not spell a word the sense wants (the seigneurs' seed or stores are a guess); no sentence is lost
+- f.60v "le transport des ap se e ment de leur armée" (4 groups), f.59v "la sur co de cette capitale" (2), f.66r "il n'est point d i que" (2) and 5 single groups (f.56v 389, f.58r 84, f.61r 235, f.63r 65, f.63v 686) - blocker: open-codes; scattered, none leaves a sentence unread
 
 ## Escalation
 - [x] siblings: the other cipher letters of the same hand (cat. 1388-1391) decoded with the same table; 1392 (Trémais) uses another code
@@ -33,7 +34,7 @@ throughout; no reader has yet reviewed it as sentences and there is no English t
 - [x] known-keys: both numerical sheets of C11E 10 tried; sheet e001295274 fits
 - [x] print: only the catalogue's vetting (NY Colonial Documents vol. 10, web searches); nothing found
 - [x] key-rebuild: table cells corrected from context across the four letters (key/overrides.json)
-- [n/a] retry: the unread groups are on cells that need the alphabetical sheets; not retried here
+- [x] retry: the unread groups were re-run against the images and the alphabetical key (cells 656, 505, 9, 289 and the 5/3 slips settled); 9 places remain (listed above)
 
 ## Files
 

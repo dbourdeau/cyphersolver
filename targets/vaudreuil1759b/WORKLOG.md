@@ -9,3 +9,4 @@
 - Not done: reader review of the decode as sentences, English translation, the alphabetical key sheets for the doubtful cells, a clear copy.
 - Reader review (5 Nov): fetched e000874969-73, compared every line. Corrected 353 -> 553 (obser, f.68v), 381 -> 581 (faire, f.70v), 613 -> 615 (em, f.71r); the figures 1o 2o 3o and 27 (f.68r) bracketed, ct.txt 1225 -> 1221 groups (253 distinct); overrides synchronised with 1391 (cell 2 campagne).
 - Wrote reading.md, reading_en.md, reading_notes.md. 11 groups unread (f.68v 8, f.70v 3). Class changed from "not read" to "read" (99.1%); profile.json updated and valid. Not done: outside reader, write-up page, README row, DECODE queue.
+- 5 Nov, while reviewing cat. 1388: the 301 at f.70v line 6 is 501 (ois) on the image, so 'j'aurois, Monseigneur, effectué' reads; transcription, ct.txt, decode.txt, reading, notes and profile updated (10 groups unread, 99.2%).

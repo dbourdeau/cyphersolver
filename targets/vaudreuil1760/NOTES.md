@@ -64,7 +64,7 @@ l'Extravagante, Bigot, Amherst).
 ## Sibling letters (C11A 104, 1759) decoded with the same table
 
 The 1757 table is Vaudreuil's working key from at least April 1759 to August 1760, not only a 1757-58 key. Transcribed in full here and decoded
-with the same table and overrides (`tools/sib.py`); each reads as French. They now have targets of their own (cat. 1388 = `targets/vaudreuil1759a/`, 1389 = `vaudreuil1759b/`, 1390 = `vaudreuil1759c/`; class "not read": decoded, not read); they are
+with the same table and overrides (`tools/sib.py`); each reads as French. They now have targets of their own (cat. 1388 = `targets/vaudreuil1759a/`, 1389 = `vaudreuil1759b/`, 1390 = `vaudreuil1759c/`; class "read" for all three, 99.4% / 99.2% / 99.4%, model readings with no outside reader); they are
 listed as evidence that the table fits and as extra text for cell checks (5 cells settled on them: 452 fret, 301 trou, 133 oit, 367 crai, 195 vrai, 613 cas).
 - cat. 1388 (8 Apr 1759, ff.54-66, LAC e000874955-67, 13 images, 3637 groups): `sibs/1388.txt`, decode `sibs/1388_decode.txt`. Reports on the winter and the defence plan:
   famine and loss of draught animals, 20-25 000 men against Niagara, Fort Duquesne evacuated, Montcalm's absence, numbered requests (1o battalions, 2o munitions, 3o provisions).
@@ -72,7 +72,7 @@ listed as evidence that the table fits and as extra text for cell checks (5 cell
   reflections ("la façon de penser de M. le marquis de Montcalm a été publique ..."); Vaudreuil asks that the officers who spread such talk be sent to France.
 - cat. 1390 (16 Apr 1759, ff.75-76, e000874976-77, 354 groups): `sibs/1390.txt`, decode `sibs/1390_decode.txt`. Freight of the supply ships, munitionnaire.
 - cat. 1392 (Trémais, 6 Nov 1759): not this table; a different code with clear French between the groups; separate target.
-The records' image lists end one short for 1388 (the 13th image, e000874967, holds ff.65v-66). The three letters are not reviewed by a reader and have no profile.
+The records' image lists end one short for 1388 (the 13th image, e000874967, holds ff.65v-66). The three letters have profiles and reading files of their own; they carry the same hand's 3/5 confusion, which was corrected line by line on the images in cats. 1388-1390 (see their `reading_notes.md`). The 1391 transcription has not had that line-by-line image comparison.
 
 ## Files
 

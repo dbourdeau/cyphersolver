@@ -19,7 +19,7 @@ for the King's service.
 I have only too well recognised that all these arguments do not displease the Marquis de Montcalm; the progress they have made is unknown to no one, but the officers who are
 their authors are only the bolder and the freer in their talk for it. I have asked the Marquis de Montcalm to be so good as to cut off these arguments at the root; otherwise
 I could not spare myself from having arrested those officers who take the largest part in them, and from sending them to France to give you an account of [their] conduct.
-I would, Monseigneur, [?] have already carried out all that I have said on this point to the Marquis de Montcalm, but in the circumstances in which we are I do myself violence; I use
+I would, Monseigneur, have already carried out all that I have said on this point to the Marquis de Montcalm, but in the circumstances in which we are I do myself violence; I use
 [?] [?] of gentleness to bring minds round and to revive those who are timid; but I shall have to take a course of rigour if the case demands it, to
 forestall a greater evil. That I shall do only in the last extremity.
 
