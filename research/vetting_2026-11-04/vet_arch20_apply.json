@@ -1,0 +1,26 @@
+{
+ "928": {
+  "verdict": "duplicate",
+  "note": "The 22 Oct 1529 Du Bellay-Montmorency opening is already the subject of targets/dubellay (catalogue item 4), where it was read in part from the signed leaf BnF fr. 3005 ff. 165r-166r on Gallica with Bayonne's 1529 key, so this lead is a duplicate and the earlier 'key_lookup' close was wrong.",
+  "vetting": {
+   "date": "2026-11-04",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "transcription",
+    "where": "Letters and Papers IV pt 3 no. 6019 (Brewer 1876) in the Internet Archive OCR https://archive.org/download/11332111bsb/11332111bsb_djvu.txt (my download 4 Nov 2026 contains 'The beginning of the letter is in cipher, undeciphered', line 28035). The manuscript leaf is online (Gallica btv1b90599952, fr. 3005 ff. 165r-166r, canvases 259-261) per targets/dubellay/NOTES.md; I did not view it myself.",
+    "extent": "Opening of one letter, London 22 Oct 1529: 34 + 35 + 5 cipher lines on ff. 165r-166r per targets/dubellay NOTES (23 Oct 2026 session).",
+    "cipher": "Brewer (LP 6019): 'The beginning of the letter is in cipher, undeciphered.' targets/dubellay/NOTES.md records the leaf as the signed original with no decipherment on or near it, a partial reading (score 0.51) with key_p21.tsv and Scheurer's snippets agreeing on the first five lines; i.e. this text is already worked in the repo."
+   },
+   "prior_art": {
+    "decode": "Local DECODE list: Du Bellay/Montmorency hits are key records R9467 (BnF NAF 4206 no. 5, 1529, cites fr. 3077 f. 114) and R9470-R9476 (1534-35); no ciphertext record for this letter; live site not queried.",
+    "tomokiyo": "cryptiana unsolved.htm and GL.htm fetched 4 Nov 2026: Lasry's 'cipher between Bayonne and Montmorency (1528-1529)' was solved (Clair. 328 f.291 of 28 Oct 1528, a different letter); GL.htm notes a different 1529 cipher; no entry for the 22 Oct 1529 opening.",
+    "lasry": "GL.htm (Lasry's list) lists the 1528 Bayonne cipher and a 1529 Gramont letter, not the 22 Oct 1529 opening; no Lasry or HistoCrypt item found for it.",
+    "edition": "Le Grand 1688 and LP IV pt 3 print the clear part only; Scheurer, Correspondance du cardinal Jean du Bellay I (SHF 1969) has the opening deciphered (snippet view only, per targets/dubellay NOTES); not opened by me.",
+    "literature": "Per targets/dubellay/NOTES.md (22-23 Oct 2026 reading audit); no further literature searched by me."
+   },
+   "key_check": "Bayonne's 1529 key (key_p21.tsv in targets/dubellay) was applied in the repo's own 23 Oct 2026 reading; DECODE R9467 is a Friedmann key record.",
+   "duplicates": "known.py 'Bellay' and targets/ listing 4 Nov 2026: targets/dubellay (catalogue item 4, 'in progress', row 'opening unread since 1529' for 22 Oct 1529), plus dubellay1528, dubellay1555 and dubellay65; this lead duplicates the dubellay entry.",
+   "verdict": "duplicate"
+  }
+ }
+}

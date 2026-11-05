@@ -2957,7 +2957,8 @@
     },
     "key_check": "A key exists: DECODE R9467 (BnF NAF 4206 no. 5, 1529, Du Bellay/Montmorency, pointing to fr. 3077 f. 114). It is an image on DECODE, not a transcription, and was not applied because the cipher opening was not seen; the task is a key lookup in NAF 4206 no. 5 plus the cipher leaf in the Le Grand ms. / BnF.",
     "duplicates": "Ledger grep (Du Bellay, Montmorency, 6019, Le Grand) and DECODE list scan: no catalogue entry, target or DECODE ciphertext for this letter; the sibling Du Bellay letter of 17 Oct 1529 is LP 6011 (not in this batch).",
-    "closed": "Key held on DECODE (R9467, BnF NAF 4206 no. 5, cites fr. 3077 f. 114); needs transcription of the key and of the opening cipher passage, which is only a few lines."
+    "closed": "The 22 Oct 1529 Du Bellay-Montmorency opening is already the subject of targets/dubellay (catalogue item 4), where it was read in part from the signed leaf BnF fr. 3005 ff. 165r-166r on Gallica with Bayonne's 1529 key, so this lead is a duplicate and the earlier 'key_lookup' close was wrong.",
+    "verdict": "duplicate"
    },
    "vetting_note": "cipher not seen: LP IV pt 3 no. 6019 (read in IA OCR) says only 'beginning of the letter is in cipher, undeciphered' from Le Grand iii, whose fragment is the clear part; the modern edition (Scheurer, Correspondance du cardinal Jean du Bellay I, SHF 1969) and BnF fr. 3077 f. 114 / NAF 4206 no. 5 could not be opened (not online); the 3 searches (Du Bellay 22 octobre 1529 chiffre; Scheurer; Lasry/Tomokiyo) found no decipherment but an unopened edition is an open prior-art question."
   },
@@ -14546,7 +14547,12 @@
    "prior_art": "open (checked 28 Oct 2026: web search, Cipherbrain/Schmeh blog, catalogue description; no decipherment found)",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "needs a working host: dmr.bsu.edu gives connection errors in Chrome, curl and WebFetch. DPLA item 9d4fa387e16f966f46749c2e713406ad gives only a 92 px thumbnail: handwritten letter on lined paper, about 15 lines, script unreadable at that size, so code type unjudged. Search for Ammen found nothing on it."
+   "vetting_note": "needs a working host: dmr.bsu.edu gives connection errors in Chrome, curl and WebFetch. DPLA item 9d4fa387e16f966f46749c2e713406ad gives only a 92 px thumbnail: handwritten letter on lined paper, about 15 lines, script unreadable at that size, so code type unjudged. Search for Ammen found nothing on it.",
+   "vetting": {
+    "verdict": "read",
+    "closed": "The Ball State scan is a word-transposition cipher letter dated Knoxville 29 Sept 1864 (not 1862) to Brig. Gen. Ammen, and its plaintext (Sherman's recall order to Burbridge, relayed by Schofield's HQ) is printed in OR I vol. 39 pt. 2 p. 524.",
+    "date": "2026-11-04"
+   }
   },
   {
    "id": 1433,
@@ -35600,7 +35606,12 @@
    "prior_art": "open as far as checked (checked 4 Nov 2026: known.py on shelfmark and names, no hit; Tomokiyo, Lasry, HistoCrypt and the Genoa literature not searched)",
    "access_note": "Images on PARES, no login.",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "verdict": "read",
+    "closed": "AGS Estado 3591 f.181 no.2 (cipher chapter from Turin) is an eight-line cipher with a line of small cursive written over each line and struck through in ink, and f.183 is a clean copy headed 'Cap. de la carta descifrada de Turin' with the Spanish plaintext, so a contemporary decipherment sits with the cipher (images viewed on PARES).",
+    "date": "2026-11-04"
+   }
   },
   {
    "id": 2197,
