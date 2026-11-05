@@ -380,6 +380,11 @@ PAGES = [
          blurb='DECODE R9426, ten pages of figures in the Bavarian key-book, catalogued with no sender or recipient. The key, a homophonic substitution on even two-digit figures, was recovered from the ciphertext alone and checked unchanged on the sibling letter R9425. 95.8% of the cipher tokens give sense: the Elector of Cologne on quartering and paying the Catholic League&rsquo;s troops. The same key deciphers the sibling in full (97.3%): Archduke Albert&rsquo;s resolution of 15 December 1619 for the League&rsquo;s agent, which shows five nomenclator groups to be nulls; the rest of the nomenclator is open.',
          quote='&ldquo;den Catolischen ins gemein und ohne underschied [wird] geringer Zeit &uuml;brig sein, sich [vor] des andern Theils Einfal, Gwalt und Betrangnus zu entweren&rdquo;',
          rights='Manuscript images: Bayerisches Hauptstaatsarchiv, Kurbayern &Auml;u&szlig;eres Archiv 4591, via DECODE R9426; not in the public domain, not reproduced.'),
+    dict(slug='nassau1620', label='Willem Lodewijk of Nassau to Johann VII 1620', year='spring 1620', y=1620.2, place='Leeuwarden &rarr; Heidelberg', st='partial', stt='read in part',
+         title='Willem Lodewijk of Nassau to Johann VII, cipher letters of spring 1620',
+         blurb='Three cipher letters and a postscript of Willem Lodewijk of Nassau, stadtholder of Friesland, to his brother Johann VII on the defence of the Palatinate, in a nine-cell shape grid whose key sits in the family key book. Brice Dudout transcribed and read them: 96.4% of 1,388 cipher words, the nomenclator signs still open.',
+         quote='&ldquo;nicht practicabel vnd gantz immature&rdquo;',
+         rights='Letters: Hessisches Hauptstaatsarchiv Wiesbaden, Abt. 171 Nr. S 995; key: Abt. 171 Nr. C 667; reading by Brice Dudout, Europe chiffr&eacute;e'),
     dict(slug='haga1620', label='Haga at the Porte', year='1620', y=1620.3, place='Constantinople &rarr; The Hague', st='solved', stt='read',
          title='Cornelis Haga at Constantinople to the States General, 1620',
          blurb='Two ciphered despatches of the first Dutch ambassador at the Porte, listed on DECODE as non-decrypted (R2113, R2115). The key filed in the same archival series, DECODE R2118, a simple substitution with a numbered nomenclator, was applied; the one alphabet letter cut off in its photograph was recovered from the text. The records hold four letters, bound out of order, with Haga&rsquo;s advice on the Bohemian revolt and the Porte&rsquo;s questions about the truce with Spain.',
@@ -416,6 +421,11 @@ PAGES = [
          blurb='An intercepted Italian letter of the first half of 1625 (TNA SP 106/10, DECODE R722), half in clear and half in a three-figure syllabic code, with ten worksheets of the English codebreaker who tried to break it, all catalogued as anonymous ciphertexts. The endorsement and the clear text (Spinola before Breda, the Pope and B&eacute;thune) are read and the 420 groups transcribed; the codebreaker&rsquo;s partial key and annealing do not break the code. Split on 14 Oct 2026 from sp106box10.',
          quote='&ldquo;il Spinola sotto Breda&rdquo;',
          rights='Manuscript rights: The National Archives, Kew, via DECODE'),
+    dict(slug='olivares1626', label='Olivares to the Duke of Alba 1626', year='1626', y=1626.64, place='Madrid &rarr; Naples', st='solved', stt='read',
+         title='Olivares to the Duke of Alba, Madrid, 22 August 1626',
+         blurb='A letter of the Count-Duke of Olivares, wholly in cipher, to the Duke of Alba, viceroy of Naples, on the deaths in his family and the future of his son-in-law. Brice Dudout read it with Philip IV&rsquo;s cipher A plus 20 values learnt on its first part: 95.2% of 1,001 words, with the key only partly confirmed.',
+         quote='&ldquo;Su Majestad&rdquo;, read from three codes that the key does not give',
+         rights='Letter: Biblioteca Nacional de Espa&ntilde;a, MSS/10249 ff. 13r&ndash;15r; reading by Brice Dudout, Europe chiffr&eacute;e'),
     dict(slug='boswell1628', label='Ralph Boswell 1627', year='1627&ndash;28', y=1627.95, place='England &rarr; William Boswell', st='found', stt='read by others',
          title='Sir Ralph Boswell to William Boswell, December 1627',
          blurb='A ten-line letter in invented signs, catalogued as Charles I to William Boswell, 1628 (TNA SP 106/5, DECODE R413). Mark Woodard recovered the simple substitution key and deciphered it on DECODE in 2021: court news of Buckingham&rsquo;s return from Plymouth. His key was checked and applied here; three open signs are filled, and the sender and the date, 15 December 1627, are identified from the endorsement.',
@@ -490,6 +500,11 @@ PAGES = [
          blurb='A cipher letter of the Spanish ambassador at Genoa about a marquis who was stalling on money for munitions. Brice Dudout rebuilt the numerical cipher on neighbouring letters that survive with a contemporary clear copy, tested it on a held-out pair (0.896 of characters), and read this letter, which has no clear copy.',
          quote='&ldquo;que el marqu&eacute;s de Legan&eacute;s &hellip;&rdquo; (code 250, read here as Pallavicino)',
          rights='Letter: Archivo General de Simancas, Estado leg. 3594 no. 156, via PARES; reading by Brice Dudout, Europe chiffr&eacute;e'),
+    dict(slug='hatzfeldt1641', label='Ferdinand III to Hatzfeldt 1641', year='1641', y=1641.7, place='Regensburg &rarr; Hatzfeldt', st='partial', stt='read in part',
+         title='Ferdinand III to Hatzfeldt, Regensburg, August&ndash;September 1641',
+         blurb='Five cipher pieces of the Emperor Ferdinand III to Field Marshal Hatzfeldt in 1641, among them the ciphered copy of a bond of the city of Aachen. Hermann St&uuml;tzel printed the key in 1963 and no text; Brice Dudout transcribed and read the pieces, 94.1% of 859 cipher words.',
+         quote='20,000 reichsthalers, two months, 500 cuirassiers',
+         rights='Letters: Hohenlohe-Zentralarchiv Neuenstein, Ni 10 Bd 242; key: H. St&uuml;tzel, W&uuml;rttembergisch Franken 47 (1963); reading by Brice Dudout, Europe chiffr&eacute;e'),
     dict(slug='genes1643', label='Eraso to Philip IV 1643', year='1643', y=1643.05, place='Genoa &rarr; Madrid', st='solved', stt='read',
          title='Juan de Eraso to Philip IV, Genoa, 18 January 1643',
          blurb='A short cipher letter of Spain&rsquo;s ambassador at Genoa (AGS Estado leg. 3598 no. 44) whose plain original is not online. Brice Dudout learned the 1643 table on other letters of the bundle and tested it on a held-out pair (0.881 of characters, 0.834 of words; a first test fell below the criterion and is reported), then read 135 of 137 words. The Grand Duke of Tuscany answers the request for troops by referring it to his resident in Madrid, which Eraso calls a way of gaining time. Contributed by Brice Dudout.',
@@ -2425,6 +2440,11 @@ PAGES = [
          blurb='Sixteen bundles of the Japanese Navy Minister&rsquo;s records for 1932 hold about 850 intercepted American telegrams, copied as the clear text the Navy&rsquo;s cryptanalysts had recovered, with no cipher groups (JACAR C05022467800&ndash;C05022469300). Brice Dudout inventoried them, transcribed eight bundles and compared 53 State Department telegrams with FRUS: about 77% of the words recovered, 45&ndash;95% by telegram, and the confidential passages not read. The wrong words are alphabetical neighbours of the true ones (63 of 137 share the initial against 6.3% for shuffled controls), which fits a one-part code and is compatible with the Gray code. Contributed by Brice Dudout.',
          quote='&ldquo;what follows: code not deciphered&rdquo; &middot; about 77% of the words of 53 telegrams recovered',
          rights='American texts: FRUS (US government); JACAR images not reproduced (all rights reserved); notes and tests: Brice Dudout, CC BY 4.0'),
+    dict(slug='leticia1932', label='Leticia telegrams 1932', year='1932', y=1932.7, place='Bogot&aacute; &harr; Puerto As&iacute;s', st='partial', stt='read in part',
+         title='Cipher telegrams of the Leticia crisis, September 1932',
+         blurb='Seventeen cipher telegrams between the Colombian Ministry of War and the military chief of the Amazonas in the first weeks after the Peruvian seizure of Leticia. Brice Dudout read all the alphabetic ones with the Ministry&rsquo;s own weekday key (787 words, 99.5%); one numeric telegram stays open.',
+         quote='gunboats, Bofors ammunition and the move to Cauca&yacute;a',
+         rights='Telegrams: Archivo General de la Naci&oacute;n Colombia, Fondo Amadeo Rodr&iacute;guez Vergara, GARV..2.2.4; reading by Brice Dudout, Europe chiffr&eacute;e'),
     dict(slug='goldbar', label='Gold bars', year='1933', y=1933, place='Shanghai', st='found', stt='no message',
          title='The Chinese gold bar cryptograms, Shanghai 1933',
          blurb='Sixteen Latin-letter strings stamped on seven bars said to certify $300,000,000. They contain almost exactly ten of every letter: chi-squared 1.25 against uniform where random sampling predicts 25, a flatness no encryption of a natural-language text can produce. Not a cipher: the letters were counted out by hand and there is no message.',
@@ -4312,6 +4332,10 @@ IMAGES['johnston1863'] = ('johnston1863_lead.jpg', 'The cipher lines of the tele
 IMAGES['milroy'] = None
 IMAGES['auckland1918'] = None
 IMAGES['deboli1788'] = None
+IMAGES['leticia1932'] = None
+IMAGES['hatzfeldt1641'] = None
+IMAGES['olivares1626'] = None
+IMAGES['nassau1620'] = None
 IMAGES['siguenza1554'] = None
 IMAGES['alfonso1576'] = None
 IMAGES['marignano1546'] = None
