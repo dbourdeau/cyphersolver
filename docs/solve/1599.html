@@ -41,7 +41,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 1599 · class C · priority 7.9 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 1599 · class C · priority 7.9 · attempted, open</p>
   <h1>Emperor Leopold I → Charles II of Spain: autograph cipher letter from Prague</h1>
   <p class="sub">A ruler's own cipher letter inside the Habsburg family, after Nijmegen.</p>
   <dl class="facts">
@@ -75,20 +75,23 @@ THE CIPHER
     - BNE card: https://bnedigital.bne.es/bd/es/card?id=29736cc9-91f0-4f84-b38e-93bb5f93f932
 
 WHAT IS KNOWN
-  Status: BNE title: 'Carta cifrada del Emperador Leopoldo I a Carlos II de España'; autograph, wax seal. No decipherment noted on the card. Not on DECODE. Not viewed.
-  Outcome so far: not yet attempted by the project
+  Known so far (checked 21 Oct 2026): Transcribed 4 Nov 2026 (targets/leopold1680/transcription.txt): one folio, 20 lines, 250 number groups with 85 distinct values (10-224), between a clear Spanish opening and closing; IoC 0.0165; the pair 62 39 occurs six times. No interlinear decipherment, no key on any of the 10 pages. A letter-level homophonic annealer failed two same-size controls (4-22% letters correct), so its output on the letter was rejected. No key or decipherment found online or in the repo.
+  Still open: The whole letter (cipher system not established: letter, syllable or nomenclator). Needs a key: Auer's chapter on imperial ciphers (Kryptologie im fruehneuzeitlichen Europa), the Spain chapter of the same volume, OeStA and AHN Estado holdings, or a deciphered sibling (RES/261/73, catalogue 1600). Otherwise a structural attack on the value blocks.
+  History and prior art: BNE title: 'Carta cifrada del Emperador Leopoldo I a Carlos II de España'; autograph, wax seal. No decipherment noted on the card. Not on DECODE. Viewed 4 Nov 2026 (BNE Digital page 5): numeric cipher, no decipherment on the leaf.
+  Outcome so far: attempted, open
   Prior-art check: open as far as checked (2 Nov 2026: known.py, Cryptoole snapshot; one web search; Tomokiyo, Lasry, edition not searched); SNAC mirrors the BNE title
   Check first: View the scans; measure the cipher; look for a decipherment or key in the same fonds.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/leopold1680/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/leopold1680/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/leopold1680/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -128,7 +131,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/leopold1680/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+1599&amp;target=catalogue+1599
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -144,12 +147,12 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>Where the cipher is</h2>
 <p class="frame confirmed"><b>Cipher located and confirmed.</b> Numeric cipher (values about 12-224, some groups such as 224 and 62 39 recurring, underlined or struck through in the usual way) set between a clear opening and a clear closing. No interlinear decipherment, no margin gloss, no key sheet and no claro on any of the 10 pages; only library marks (RES/261/58, 18632). (BNE Digital viewer for BNE RES/261/58, https://bnedigital.bne.es/bd/es/viewer?id=29736cc9-91f0-4f84-b38e-93bb5f93f932 (10 pages, CC BY 4.0), opened in Chrome 4 Nov 2026; pages 1-2 cover/blank, 5 the letter, 6 its verso, 7-8 seal and address panels, 9-10 blank.; checked 2026-11-04 by Claude Sonnet 5.5 vetting agent) <a href="https://bnedigital.bne.es/bd/es/viewer?id=29736cc9-91f0-4f84-b38e-93bb5f93f932" rel="noopener">open that page</a></p>
 <h2>What is known</h2>
+<p class="ko"><i class="k">known</i> <span class="asof">checked 21 Oct 2026</span> Transcribed 4 Nov 2026 (targets/leopold1680/transcription.txt): one folio, 20 lines, 250 number groups with 85 distinct values (10-224), between a clear Spanish opening and closing; IoC 0.0165; the pair 62 39 occurs six times. No interlinear decipherment, no key on any of the 10 pages. A letter-level homophonic annealer failed two same-size controls (4-22% letters correct), so its output on the letter was rejected. No key or decipherment found online or in the repo.</p><p class="ko"><i class="o">open</i> The whole letter (cipher system not established: letter, syllable or nomenclator). Needs a key: Auer's chapter on imperial ciphers (Kryptologie im fruehneuzeitlichen Europa), the Spain chapter of the same volume, OeStA and AHN Estado holdings, or a deciphered sibling (RES/261/73, catalogue 1600). Otherwise a structural attack on the value blocks.</p>
 
-
-<p><b>Status and prior art.</b> BNE title: 'Carta cifrada del Emperador Leopoldo I a Carlos II de España'; autograph, wax seal. No decipherment noted on the card. Not on DECODE. Not viewed.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open as far as checked (2 Nov 2026: known.py, Cryptoole snapshot; one web search; Tomokiyo, Lasry, edition not searched); SNAC mirrors the BNE title.</p>
+<p><b>History and prior art.</b> BNE title: 'Carta cifrada del Emperador Leopoldo I a Carlos II de España'; autograph, wax seal. No decipherment noted on the card. Not on DECODE. Viewed 4 Nov 2026 (BNE Digital page 5): numeric cipher, no decipherment on the leaf.</p>
+<p><b>Outcome so far.</b> attempted, open Prior-art check: open as far as checked (2 Nov 2026: known.py, Cryptoole snapshot; one web search; Tomokiyo, Lasry, edition not searched); SNAC mirrors the BNE title.</p>
 <p><b>Check first.</b> View the scans; measure the cipher; look for a decipherment or key in the same fonds.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/leopold1680/NOTES.md" rel="noopener">targets/leopold1680/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/leopold1680" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
