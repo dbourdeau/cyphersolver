@@ -1,0 +1,24 @@
+# Validation of key.tsv: TWO independent held-out measurements, each made ONCE, protocol hashed before any key trial.
+# Protocol (5 Nov 2026, SHA-256 dca5a26d...): key built on the training set A only (frequencies + cribs from a fixed list: amigo, Cataluña,
+# guardias, caballo, que, noche, Villena were kept); key frozen (SHA-256 e40e8fd7...) before any measurement; no change after.
+# Measure M5 (there is no contemporary decipherment to compare with): share of the decoded letters of the held-out set covered, by a
+# maximum-coverage segmentation of each continuous segment, by Spanish words of >= 5 letters (lexicon = this repository's
+# lang/lexicons/es.json.gz, words with count >= 2, plus a fixed list of 45 names written into the script before the measurement:
+# Barcelona, Cataluña, Gerona, Palamós, Villena, Zaragoza, Madrid, Dormer, the pseudonyms...). Accents dropped; v=u, j=i, y=i, ç=z on both sides.
+# Controls: the same measure for 200 keys made by shuffling the values of the key over its signs (seed 1693).
+# Criterion fixed in advance: VALIDATED if M5 >= 0.60 AND M5 >= best control + 0.30; PARTIAL if only the margin (>= 0.30) is met.
+#
+# H  = the inserted slip wholly in cipher, fol. 190r-v (views 196-197): 974 signs, transcribed before any key trial.
+H   signs 974   M5 0.5770   best control 0.0329   mean of controls 0.0045   margin 0.5441   RESULT: PARTIAL (0.023 under 0.60)
+#
+# H2 = every cipher passage of views 169-193 (no fully ciphered block of >= 400 signs exists there; the change was declared in a
+#      hashed amendment, SHA-256 10b6f187..., before transcription; its sign count, f8a0371c..., before decoding): 261 signs in 25 segments, never decoded before.
+H2  signs 261   M5 0.5939   best control 0.0421   mean of controls 0.0034   margin 0.5517   RESULT: PARTIAL (0.006 under 0.60)
+#
+# Reading of the result: both sets clear the margin by far (about 0.55 over the best of 200 controls each), and neither reaches the
+# absolute 0.60 threshold we set. So the key is "partial by our protocol". Causes, seen after the measurement and not corrected:
+#  - H: the 24 lines of the verso run into the binding; every line end is lost ("…" in the transcription), which leaves short
+#    fragments that words of >= 5 letters cannot cover; the writer's spellings (guntos for juntos), an abbreviation (MRA) and one doubtful sign (soldalos, 5 or 13) add to it.
+#  - H2: the set is small (261 signs) and cut into 25 short segments (single words such as CULPA, CARGO, MADRID): a segment of 3-6
+#    letters can be covered by one 5-letter word or not at all, so a few short words weigh heavily.
+# The transcriptions that were measured were not changed afterwards (doubtful signs were settled only in the readings).
