@@ -325,7 +325,7 @@ CENTURIES = [('1400s', '1400s'), ('1500s', '1500s'), ('1600s', '1600s'), ('1700s
 SOURCES = [('decode', 'DECODE'), ('sweep', 'archive sweeps'), ('cryptoole', 'Cryptoole'), ('bnf', 'BnF / Gallica'),
            ('print', 'print and literature'), ('contributed', 'sent in')]
 STATUSES = [('new', 'not attempted'), ('progress', 'in progress here'), ('attempted', 'attempted here'), ('skipped', 'skipped')]
-ACCESS = [('online', 'no archive trip needed'), ('workable', 'no outside blocker'), ('archive', 'needs archive scans')]
+ACCESS = [('online', 'no archive trip needed'), ('workable', 'no outside blocker'), ('archive', 'needs archive scans'), ('unchecked', 'access not checked')]
 CLASSES = [('A', 'A · sibling deciphered'), ('B', 'B · partial key known'), ('C', 'C · no key')]
 
 
@@ -361,11 +361,17 @@ def seen_image(e):
     return e['seen'] != 'catalogue'
 
 
+def access_unchecked(e):
+    """No access value and only the catalogue description seen: nobody has looked for the images yet."""
+    return e.get('access') is None and not seen_image(e)
+
+
 def filter_keys(e):
     o = e.get('outcome') or ''
     return {'lang': lang_keys(e), 'century': century_key(e), 'region': e['region'], 'cls': e['cls'],
             'status': 'progress' if progress(e) else 'skipped' if 'skipped' in o else 'attempted' if o.startswith('attempted') else 'new',
-            'access': [k for k, on in (('online', e.get('access') != 'archive'), ('workable', e.get('workable')), ('archive', e.get('access') == 'archive')) if on],
+            'access': [k for k, on in (('online', e.get('access') != 'archive' and not access_unchecked(e)), ('unchecked', access_unchecked(e)),
+                                       ('workable', e.get('workable')), ('archive', e.get('access') == 'archive')) if on],
             'help': help_kind(e), 'frame': frame_info(e)[0],
             'source': source_key(e), 'seen': 'image' if seen_image(e) else 'catalogue',
             'counted': 'counted' if e['counted'] else 'noted'}
