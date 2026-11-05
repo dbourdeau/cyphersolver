@@ -24,7 +24,7 @@ No group starts with 00: the encipherer writes 90. Example: σ(2081) = 2048, + 0
 ## As a renumbered 明密 code book (S. Tomokiyo)
 
 This reading of the key is due to Satoshi Tomokiyo (Cryptiana, section "Mingmi (明密) Format Code: Gongmi, Rongmi,
-Chenmi", 23 Oct 2026, https://cryptiana.web.fc2.com/code/chinesecrypto_e2.htm). The clerk did no arithmetic: he used a copy of the standard 明密 telegraph code book
+Chenmi"; the section is undated, the page was last modified 24 Oct 2026 and Wenmi cites it as 23 Oct 2026, https://cryptiana.web.fc2.com/code/chinesecrypto_e2.htm). The clerk did no arithmetic: he used a copy of the standard 明密 telegraph code book
 whose page, column and row numbers had been rewritten by hand for secret (密) use. The formula above describes the same
 table by calculation.
 
@@ -39,6 +39,7 @@ Pages numbered cyclically from page 10: written page 01 = page 10, 02 = 11, …,
 One cell differs from the formula: written page 80 is page 89 in Tomokiyo's numbering, 99 by the formula. The only group
 concerned, 8012 (N25), read in neither case; with two adjacent digits swapped, 8102 gives 一 (一切到乞賜教). The reading
 of N25 was corrected accordingly on the Wenmi site (32c6b9f, 22-23 Oct 2026); his simpler numbering is the more probable.
+Cryptiana credits the finding that 8012 is an enciphering error for 8102 to Dudout; Wenmi credits Tomokiyo's note that it reads in neither version.
 
 For all 10,000 group values the key splits exactly into page (first two digits), column (tens) and row (units), with no
 residual carry (`mingmi.py`). In the book each column holds xxx1 to xxx9 and then, at the bottom, xxx0: this is what the

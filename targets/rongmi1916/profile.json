@@ -137,9 +137,54 @@
    "kind": "reading",
    "what": "Readings and translations as on the Wenmi page; counted by Daniel's rule: 1198 certain, 55 probable, 54 unresolved or illegible of 1306.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Project: Dudout's verify.py rerun with python -I (targets/numeric1916/NOTES.md): the 容密 text scores 3.179 against a maximum of -1.665 over 200 random keys and -1.455 over 200 digit shuffles.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "control",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Project: his search_rongmi.py rerun: step 1 (four substitutions) 2.175; step 2 K = 0900 with hundreds and tens tables exact, units equal to the published key plus 1 (equivalent up to the carry), thousands off on 7/8/9 (the 90 = 00 rule is not modelled); score 2.608 against 3.179 for the published key; shuffled nulls -1.10, -1.19. The last manual step is not reproduced by the search, as his README says.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Project: a decoder written here from the key statement alone (targets/numeric1916/decode.py) applied to his digits gives the same character as his published raw text for 1,306 of 1,306 容密 groups (5 groups carry an illegible digit).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": [
+    "plaintext matching",
+    "contextual inference"
+   ],
+   "what": "Project, b21 re-read (targets/numeric1916/texts/rongmi_reading.md): his readings checked group by group against the decoder: 1,197 characters the figure's own value, 41 one-digit alternates, 15 supplied from context, 47 [?x], 6 illegible; explicit-hole score 82 of 90 sentences clean (0.91), grade B. One value added there, N24 group 22, 2530 滠 -> 2520 灰 (the 10th, after 佳日 the 9th in the same sentence; sense-only conjecture): the Wenmi edition, and so reading.md here, keeps 〔滠〕.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "verification",
+   "what": "Project, dating check for the split of numeric1916 (Dan Bourdeau's condition): Dudout's public commits (bdudout/wenmi, UTC) put the 容密 key on 19 Oct 2026 10:11 UTC; Cryptiana's mingmi section (undated; page 'first posted 18 September 2026, last modified 24 October 2026'; Wenmi cites it as 23 Oct 2026) credits the key formulas to Dudout and adds the reading as a renumbered 明密 book. Recovery predates the section; no priority for the project. Wayback holds only a 2 Oct 2026 capture. See NOTES.md, 'Dating and credit'.",
+   "result": "worked"
   }
  ],
- "outcome": {
+ "outcome": {"validation": {"date": "2026-11-05", "verdict": "not applicable", "notes": "plaintext is Chinese telegraph code numbers, no Chinese letter model in lang; the contributor's verify.py random-key and digit-shuffle nulls were rerun here instead on 2026-10-20 (see solution steps)"}, 
   "class": "read",
   "key": "recovered",
   "method": "key recovered from ciphertext-only",
@@ -175,7 +220,7 @@
    {
     "who": "tomokiyo",
     "role": "identification",
-    "note": "the 容密 key read as a renumbered 明密 code book (pages, columns and rows rewritten by hand), shown on a June 1916 edition of the 明密碼電報書; credited on the Wenmi page",
+    "note": "the three keys read as one renumbered 明密 code book (pages, columns and rows rewritten by hand), shown on a June 1916 edition of the 明密碼電報書. The Cryptiana section is undated (page last modified 24 Oct 2026); 23 Oct 2026 is the date Wenmi cites. It credits the formulas to Dudout, whose keys were published 17-19 Oct 2026",
     "date": "2026-10-23",
     "source": "https://cryptiana.web.fc2.com/code/chinesecrypto_e2.htm",
     "published": true
@@ -183,7 +228,7 @@
    {
     "who": "tomokiyo",
     "role": "key corrected",
-    "note": "written page 80 = page 89 (not 99): group 8012 of N25 reread 8102 一 (一切到乞賜教)",
+    "note": "written page 80 = page 89 in his renumbered book (the formula gives 99); group 8012 of N25 read 8102 一 (一切到乞賜教). Cryptiana credits the finding that 8012 is an enciphering error for 8102 to Dudout, Wenmi credits Tomokiyo's note that it reads in neither version: both credited",
     "date": "2026-10-23",
     "source": "https://cryptiana.web.fc2.com/code/chinesecrypto_e2.htm",
     "published": true

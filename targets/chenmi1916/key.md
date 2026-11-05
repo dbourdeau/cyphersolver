@@ -24,7 +24,7 @@ units 9 → 10: 3400 + 90 + 10 = 3500 灰, the day code for the 10th).
 ## As a renumbered 明密 code book (S. Tomokiyo)
 
 This reading of the key is due to Satoshi Tomokiyo (Cryptiana, section "Mingmi (明密) Format Code: Gongmi, Rongmi,
-Chenmi", 23 Oct 2026, https://cryptiana.web.fc2.com/code/chinesecrypto_e2.htm). The clerk did no arithmetic: he used a copy of the standard 明密 telegraph code book
+Chenmi"; the section is undated, the page was last modified 24 Oct 2026 and Wenmi cites it as 23 Oct 2026, https://cryptiana.web.fc2.com/code/chinesecrypto_e2.htm). The clerk did no arithmetic: he used a copy of the standard 明密 telegraph code book
 whose page, column and row numbers had been rewritten by hand for secret (密) use. The formula above describes the same
 table by calculation.
 

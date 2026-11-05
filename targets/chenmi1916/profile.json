@@ -137,9 +137,43 @@
    "kind": "reading",
    "what": "Readings and translations as on the Wenmi page; counted by Daniel's rule: 232 certain, 7 probable, 0 unresolved or illegible of 239.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Project: Dudout's verify.py rerun with python -I (targets/numeric1916/NOTES.md): the 辰密 text scores 3.773 against a maximum of -1.588 over 200 random keys and -1.177 over 200 digit shuffles.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Project: a decoder written here from the key statement alone (targets/numeric1916/decode.py) applied to his digits gives the same character as his published raw text for 239 of 239 辰密 groups. No search for 辰密 was rerun here.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Project, verification 4 (targets/numeric1916/texts/chenmi_reading.md): the four telegrams punctuated from the decoder output; 19 of 19 sentences clean on the explicit-hole rule, 5 holes in 239 characters; grade A.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "verification",
+   "what": "Project, dating check for the split of numeric1916 (Dan Bourdeau's condition): Dudout's public commits (bdudout/wenmi, UTC) put the 辰密 key on 19 Oct 2026 15:15 UTC; Cryptiana's mingmi section (undated; page 'first posted 18 September 2026, last modified 24 October 2026'; Wenmi cites it as 23 Oct 2026) credits the key formulas to Dudout and adds the reading as a renumbered 明密 book. Recovery predates the section; no priority for the project. Wayback holds only a 2 Oct 2026 capture. See NOTES.md, 'Dating and credit'.",
+   "result": "worked"
   }
  ],
- "outcome": {
+ "outcome": {"validation": {"date": "2026-11-05", "verdict": "not applicable", "notes": "plaintext is Chinese telegraph code numbers, no Chinese letter model in lang; the contributor's verify.py random-key and digit-shuffle nulls were rerun here instead on 2026-10-20 (see solution steps)"}, 
   "class": "read",
   "key": "recovered",
   "method": "key recovered from ciphertext-only",
@@ -175,7 +209,7 @@
    {
     "who": "tomokiyo",
     "role": "identification",
-    "note": "the 辰密 key read as a renumbered 明密 code book (pages, columns and rows rewritten by hand), shown on a June 1916 edition of the 明密碼電報書; credited on the Wenmi page",
+    "note": "the three keys read as one renumbered 明密 code book (pages, columns and rows rewritten by hand), shown on a June 1916 edition of the 明密碼電報書. The Cryptiana section is undated (page last modified 24 Oct 2026); 23 Oct 2026 is the date Wenmi cites. It credits the formulas to Dudout, whose keys were published 17-19 Oct 2026",
     "date": "2026-10-23",
     "source": "https://cryptiana.web.fc2.com/code/chinesecrypto_e2.htm",
     "published": true

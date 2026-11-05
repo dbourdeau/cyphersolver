@@ -204,7 +204,7 @@ Tables he added in the condenser family are "Laisaosang", "New York", "Hsuweilin
 "Sixteenth", "Seventeenth", "Thirtyeight" and Huang Xing's "Ylchang" table. He also has the "Hong Kong"
 letter-to-digit substitution (1914). He confirms our tentative Manila table (Tokyo → "Konglipo", 6 Jan 1915) and
 Honolulu table (if w = v). The constructions are listed in `docs/sunintercepts.html#wider`. Not checked here. The
-Rosamonde telegrams are in `targets/rosamonde1915/`, the 共密/容密/辰密 numeric codes in `targets/numeric1916/`.
+Rosamonde telegrams are in `targets/rosamonde1915/`, the 共密/容密/辰密 numeric codes in `targets/gongmi1916/`, `targets/rongmi1916/` and `targets/chenmi1916/` (split from `targets/numeric1916/`, 5 Nov 2026).
 
 **Email of 23 Oct 2026.**
 - **Honolulu grid:** it reads the "Aloha" telegrams when written with an alphabet without q and with w (the New

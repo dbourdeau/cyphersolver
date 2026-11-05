@@ -1,6 +1,13 @@
 # Numeric telegraph codes of June–July 1916: 共密, 容密, 辰密 (Huang Xing and the Shanghai group)
 
-Status: in progress. 辰密, 共密 and 容密 all read (共密 and 容密 re-read 23 Oct 2026, b21); site page and ledgers not yet updated.
+Status: no write-up. Retired 5 Nov 2026: split into `targets/gongmi1916/`, `targets/rongmi1916/` and `targets/chenmi1916/` (one key, one entry; Brice Dudout's pull request #266, landed on Dan Bourdeau's condition that this target be retired in the same change). This folder stays as the archive of the independent check (20 Oct 2026) and the b21 re-read (23 Oct 2026), and holds N01 and N09 (`dudout/`), which are other keys.
+
+## Retired 5 Nov 2026: where everything went
+
+- Pages and ledgers: `docs/numeric1916.html` is a stub pointing to the three pages; the README row and the SOLVED_CATALOGUE row are replaced by one row per key; the `PAGES`/`IMAGES` entries, portraits, key-web node and reveal file moved to the new slugs.
+- Profile: `profile.json` moved to `profile.pre-split.json` so that the paper data count each telegram once. The three new profiles carry the telegrams, the key recoveries and the project's verification steps. Not carried: the Dudout 28 Oct credits for N01 (Gaimusho tables) and N09 乾密 and the Tomokiyo pointer for the N09 model, which belong to two other keys that still need their own targets.
+- Dating and credit of the keys (Dudout against Tomokiyo, checked 5 Nov 2026): see "Dating and credit" in the `NOTES.md` of the three new targets. The keys were published 17-19 Oct 2026 (the 19-20 Oct above is the email and the check made here); the Cryptiana section that reads them as a renumbered 明密 book is undated (page last modified 24 Oct), is cited by Wenmi as 23 Oct, and itself credits the formulas to Dudout.
+- Our N24 灰 conjecture (2530 read 2520, the 10th) is in this folder's readings only; the Wenmi edition used by the new targets keeps 〔滠〕.
 
 **23 Oct 2026, re-read (REREAD_BRIEF, b21)**: 共密 and 容密 read from Brice Dudout's proposed readings on his Wenmi pages, checked group by group against our decoder (`texts/gongmi-rongmi_reread_log.md`). His page digit tables are newer than `groups.tsv` for 共密: 20 groups re-read by him on the scans (一/二/三 look-alikes; `texts/gongmi_corrections.tsv`). Every character of the readings is the figure's own value except 21 (共密) and 41 (容密) on a one-digit alternate, 3 and 15 supplied from context ([x]), 21 and 47 kept as [?x], 6 illegible groups (`texts/*_align.tsv`). One value added here: N24 灰 (2530 read 2520, the 10th; sense-checked, for review). N35 sheet 1 checked on the JACAR scan (B03050089500 p. 2). Explicit-hole score, one character = one word: 0.91 and 0.91 (Chinese is not scored by `_check_reading.py`). Readings `texts/gongmi_reading.md`, `rongmi_reading.md`; English `texts/gongmi_en.md`, `rongmi_en.md`. fraction_read 0.11 -> 1.0.
 

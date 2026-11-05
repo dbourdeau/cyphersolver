@@ -20,7 +20,7 @@ Example: 1188, tens 8 → 8, 9000 − 1188 = 7812 黎; 7528, tens 2 → 6, 7568,
 ## As a renumbered 明密 code book (S. Tomokiyo)
 
 This reading of the key is due to Satoshi Tomokiyo (Cryptiana, section "Mingmi (明密) Format Code: Gongmi, Rongmi,
-Chenmi", 23 Oct 2026, https://cryptiana.web.fc2.com/code/chinesecrypto_e2.htm). The clerk did no arithmetic: he used a copy of the standard 明密 telegraph code book
+Chenmi"; the section is undated, the page was last modified 24 Oct 2026 and Wenmi cites it as 23 Oct 2026, https://cryptiana.web.fc2.com/code/chinesecrypto_e2.htm). The clerk did no arithmetic: he used a copy of the standard 明密 telegraph code book
 whose page, column and row numbers had been rewritten by hand for secret (密) use. The formula above describes the same
 table by calculation.
 
