@@ -76,20 +76,21 @@ THE CIPHER
     - Europeana record: https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000064262
 
 WHAT IS KNOWN
-  Status: BNE catalogue: some letters ciphered. No decipherment noted. Not on DECODE.
+  Status: Cipher found and broken (Brice Dudout, 5 Nov 2026, targets/dormer1694): one simple substitution, numbers 1-25 with dots, in letters signed 'Ex Conde' and pseudonyms (Rojo, Zabulón, El Chismoso; writers not identified), Barcelona, Mataró, Hostalric, Zaragoza 1693-1696, views 132-197 of the BNE digitisation, including an inserted slip wholly in cipher (fol. 190r-v). Key partial by the contributor's protocol (held-out measurements 0.577 and 0.594 against a 0.60 threshold). Slip recto and later passages read, slip verso read in part (line ends in the binding). View 10 holds one line in another system, not treated. Earlier note: BNE catalogue: some letters ciphered. No decipherment noted. Not on DECODE.
   Outcome so far: not yet attempted by the project
   Prior-art check: open (checked 28 Oct 2026: repo known.py, Europeana BNE record, web search for cryptiana; no decipherment found; BDH viewer not reachable by script, not viewed)
   Check first: View volume VI; check the other Dormer volumes on BDH for more cipher.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/dormer1694/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/dormer1694/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/dormer1694/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -129,7 +130,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/dormer1694/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+1272&amp;target=catalogue+1272
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -147,10 +148,10 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>What is known</h2>
 
 
-<p><b>Status and prior art.</b> BNE catalogue: some letters ciphered. No decipherment noted. Not on DECODE.</p>
+<p><b>Status and prior art.</b> Cipher found and broken (Brice Dudout, 5 Nov 2026, targets/dormer1694): one simple substitution, numbers 1-25 with dots, in letters signed 'Ex Conde' and pseudonyms (Rojo, Zabulón, El Chismoso; writers not identified), Barcelona, Mataró, Hostalric, Zaragoza 1693-1696, views 132-197 of the BNE digitisation, including an inserted slip wholly in cipher (fol. 190r-v). Key partial by the contributor's protocol (held-out measurements 0.577 and 0.594 against a 0.60 threshold). Slip recto and later passages read, slip verso read in part (line ends in the binding). View 10 holds one line in another system, not treated. Earlier note: BNE catalogue: some letters ciphered. No decipherment noted. Not on DECODE.</p>
 <p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 28 Oct 2026: repo known.py, Europeana BNE record, web search for cryptiana; no decipherment found; BDH viewer not reachable by script, not viewed).</p>
 <p><b>Check first.</b> View volume VI; check the other Dormer volumes on BDH for more cipher.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/dormer1694/NOTES.md" rel="noopener">targets/dormer1694/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/dormer1694" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
