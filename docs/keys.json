@@ -2406,7 +2406,9 @@
 {"id": "k-marignano1546", "label": "Marignano 1546 homophonic substitution (key.tsv, rebuilt here)", "kind": "rebuilt here", "by": "cyphersolver (contributor)", "year": 1546, "note": "Rebuilt from the contemporary clear translation on c. 14r of the same letter and frozen; homophones for vowels, a sigma-shaped null, and a code for V. Ecc.a."},
 {"id": "k-alfonso1576", "label": "Alfonso II d'Este 1576 simple substitution (key_1576.tsv, recovered ciphertext-only)", "kind": "rebuilt here", "by": "cyphersolver (contributor)", "year": 1576, "note": "20 signs, nulls x, y, k, & and 3, no word breaks; recovered by quadgram search on period Italian with no crib, then corrected on two q-forms (g = s, q = m)."},
 {"id": "k-siguenza1554", "label": "Pacheco 1554 chancery syllabary (key_1554.md, rebuilt here)", "kind": "rebuilt here", "by": "cyphersolver (contributor)", "year": 1554, "note": "Consonant signs with vowel marks, syllable signs, homophones and code groups; rebuilt by aligning cipher and the decipherment of the time on five BNE letters, then confirmed on four Real Biblioteca letters (97% of 626 signs)."},
-{"id": "k-deboli1788-k4", "label": "Deboli 1788 numerical code, key K4 (the 1789 key completed on 1788 pairs)", "kind": "rebuilt here", "by": "cyphersolver (Brice Dudout)", "year": 1788, "note": "Daniel Bourdeau's 1789 key plus 12 values, 3 nulls, 6 twice-attested values and 11 alternatives learned only on 1788 despatches aligned with their same-date cabinet decipherments, frozen in three stages. Held-out pair of 11 Nov 1788: 0.862 of groups read as sense."}
+{"id": "k-deboli1788-k4", "label": "Deboli 1788 numerical code, key K4 (the 1789 key completed on 1788 pairs)", "kind": "rebuilt here", "by": "cyphersolver (Brice Dudout)", "year": 1788, "note": "Daniel Bourdeau's 1789 key plus 12 values, 3 nulls, 6 twice-attested values and 11 alternatives learned only on 1788 despatches aligned with their same-date cabinet decipherments, frozen in three stages. Held-out pair of 11 Nov 1788: 0.862 of groups read as sense."},
+{"id": "k-vaudreuil1757", "label": "Vaudreuil's numerical table of 1757, 700 entries (ANOM COL C11E 10 ff.285-290v, sheet e001295274)", "kind": "archive key", "by": "Vaudreuil (governor of New France)", "year": 1757, "note": "Syllabary-nomenclator of 700 numbers filed in the Colonies series with the Montcalm table of 1758; used by Vaudreuil from at least April 1759 to August 1760. Transcribed and corrected here (targets/vaudreuil1760/key/)."},
+{"id": "k-vaudreuil1757-272", "label": "Vaudreuil's first numerical sheet of 1757 (ANOM COL C11E 10, sheet e001295272)", "kind": "archive key", "by": "Vaudreuil (governor of New France)", "year": 1757, "note": "The other numerical sheet of the 1757 pair; it gives nonsense on the letter of August 1760."}
  ],
  "links": [
 {"key": "k-imperial-1544", "target": "gonzaga1549", "how": "adapted", "note": "Key image read at low resolution, extended by hand from the letters; validated on 2,959 read signs."},
@@ -3838,7 +3840,8 @@
 {"key": "k-alfonso1576", "target": "alfonso1576", "how": "rebuilt from", "note": "key recovered from the ciphertext alone by quadgram search; 8 of 10 restarts reached one solution"},
 {"key": "k-siguenza1554", "target": "siguenza1554", "how": "rebuilt from", "note": "key rebuilt from the decipherments of the time on the BNE letters; confirmed on the Real Biblioteca siblings"},
 {"key": "k-deboli-polish-1789", "target": "deboli1788", "how": "adapted", "note": "the 1789 key is the starting point of K4 and reads 0.859 of the held-out pair unchanged"},
-{"key": "k-deboli1788-k4", "target": "deboli1788", "how": "rebuilt from", "note": "extended in three frozen stages on 1788 pairs, then applied to despatch 038, which has no decipherment"}
+{"key": "k-deboli1788-k4", "target": "deboli1788", "how": "rebuilt from", "note": "extended in three frozen stages on 1788 pairs, then applied to despatch 038, which has no decipherment"},
+{"key": "k-vaudreuil1757", "target": "vaudreuil1760", "how": "adapted", "note": "Same volume as the key lead; 700 cells transcribed from the images and 33 corrected from the letter and the alphabetical sheet; reads 96.0% of the groups."}
  ],
  "sources": [
   {
@@ -5383,6 +5386,7 @@
 {"key": "k-stafford-walsingham1586", "target": "walsingham1585", "note": "Stafford 1586 alphabet covers 26% of the R4844 sign tokens; □ ≠ ÷ absent; glyph check needs the images (23 Oct 2026)"},
 {"key": "k-stafford-walsingham1586", "target": "walsingham1572", "note": "the group is figures; the 1586 letter alphabet has none of them (23 Oct 2026)"},
 {"key": "k-lasry-gl", "target": "raince", "note": "redundant: Raince's own GL.htm key already applied; the other tables are other correspondents' ciphers (23 Oct 2026)"},
-{"key": "k-thomson-we007-jay", "target": "livingston1781", "note": "the line's numbers looked up in Jay's numbering give twelve, into, el, en, sha, their, edge: the line is in the lost copy"}
+{"key": "k-thomson-we007-jay", "target": "livingston1781", "note": "the line's numbers looked up in Jay's numbering give twelve, into, el, en, sha, their, edge: the line is in the lost copy"},
+{"key": "k-vaudreuil1757-272", "target": "vaudreuil1760", "note": "the first numerical sheet of the pair; the commonest groups (235, 661, 642, 309) give nonsense"}
  ]
 }
