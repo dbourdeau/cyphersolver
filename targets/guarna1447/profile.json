@@ -1,0 +1,210 @@
+{
+ "schema_version": 1,
+ "target": "guarna1447",
+ "title": "Nicolò Guarna to Francesco Sforza, Milan, 21 May 1447 (BnF ital. 1584, ff. 153r-154r): key rebuilt, partial by our protocol, read in part",
+ "documents": [
+  {
+   "id": "ital1584-f153-154",
+   "read": "read in part",
+   "shelfmark": "Paris, BnF, italien 1584 (Archivio Sforzesco), ff. 153r-154r (Gallica btv1b100373864, views 146-147)",
+   "date": "21 May 1447",
+   "year": 1447,
+   "country": "Italy",
+   "route": "Nicolò Guarna, Sforza's envoy at Milan -> Count Francesco Sforza",
+   "places": {
+    "from": "Milan",
+    "to": "Francesco Sforza (in the Marche; place not stated)"
+   },
+   "language": "Italian",
+   "pages": 3,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "f. 156, a 15th-century clear text of the end of a letter of the same day, matches the end of the cipher (153v about l. 46 to 154r); no late copy of the rest.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 3960,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica microfilm btv1b100373864 (BnF; not reproduced)",
+    "image_quality": "poor",
+    "notes": "Microfilm; look-alike signs (h-like 4 / hk, sigma / o with a hook, t / T / z) not separated; a blind shape sheet is pending."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Homophonic substitution with nulls, clear decoy words written inside the cipher (quia, adviso, tanto, mo, primum, tua, spes...) and a small code (A = Papa, cer = Signore, mea = non, tuy = gente d'arme, tri = Re de Ragona, SF = Signore de Faenza, dn = dinari...).",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 79,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "titles",
+    "common words",
+    "names"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "random",
+  "word_division": "none",
+  "notes": "Several signs carry more than one value in our table (by frequency); this may reflect our own confusions of look-alike signs."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "The end of the cipher (153v about l. 46 to 154r) is in clear on f. 156 of the same volume (15th century). The rest: no late copy, not in lead 1315 or in research/venice_milan_print/ital1584_copies_A.md, not on DECODE; no edition found (three web searches); Cerioni 1970 and printed calendars not seen. No target, PR or issue on origin/main (GitHub API, 895f21c4, 5 Nov 2026).",
+   "found": "during attempt",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "first_date": "2026-11-05",
+  "last_date": "2026-11-05",
+  "human_role": "Brice Dudout chose the target and set the rules (protocol and amendments hashed before each computation, one measurement per held-out block, thresholds fixed in advance). AI agents transcribed, rebuilt the key, measured, read and wrote up. No palaeographer checked the signs; a blind shape sheet is pending.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-11-05",
+   "kind": "access",
+   "what": "Views 125-160 of ital. 1584 inventoried; ff. 153r-154r found without late copy and outside lead 1315; ff. 163-164 with their copy ff. 161-162 chosen as the training pair.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching",
+    "manual reconstruction"
+   ],
+   "what": "Key K rebuilt by aligning the cipher of 163r-163v with the late copy 161r-162v; K2 adds three signs of the pair; both frozen before the held-out block was viewed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One measurement on f. 153r ll. 1-20: M5 0.441 vs 0.118 for the best of 200 permuted keys (gap 0.323); thresholds >= 0.60 and >= +0.30.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "plaintext matching"
+   ],
+   "what": "K3 (extended from 163v) measured once on the cipher of 164r against the copy 165r: characters 0.759 vs 0.315 for the best of 200 (gap 0.445); thresholds >= 0.85 and >= +0.30.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "reading",
+   "what": "Letter of 21 May read by sense: 852 words, 583 certain, 33 probable, about 236 unresolved (72.3%); end agrees with the clear of f. 156.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Key rebuilt from another letter of the same writer and its late clear copy in the same volume (ff. 163-164 / 161-162, 165), then applied to the uncopied letter of 21 May.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.723,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Daniel's rule (certain + probable), counted by script on reading.md: 852 words, 583 certain, 33 probable, 0 restored, 236 unresolved (unresolved stretches estimated at length/5) = 616/852 = 72.3%.",
+  "verification": [
+   "statistical test",
+   "independent clear copy"
+  ],
+  "validation": {
+   "date": "2026-11-05",
+   "verdict": "weak",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered held-out tests (not docs/_validate.py): M5 0.441 vs 0.118 on f. 153r ll. 1-20; characters 0.759 vs 0.315 on f. 164r against its copy f. 165r; both partial (absolute thresholds 0.60 / 0.85 missed, gaps >= 0.30 met). The end of the cipher agrees with the 15th-century clear of f. 156."
+  },
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "f. 156, a 15th-century clear text of the end of the letter (153v about l. 46 to 154r), same day",
+    "date": "1447"
+   },
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "transcription, key K3 rebuilt from ff. 163-164 and their late copy, two held-out measurements (partial), letter of 21 May read in part (72.3%)",
+    "date": "2026-11-05"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "lead 1315 and the survey of the ital. 1584 late copies (ital1584_copies_A.md), which gave the training pair ff. 163-164 / 161-162",
+    "date": "2026-10-29"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "About 236 unresolved words (estimated), mostly 153r and 153v ll. 4-19",
+    "blocker": "illegible",
+    "detail": "look-alike signs on the microfilm; a blind shape sheet is pending, then a finer re-transcription"
+   },
+   {
+    "item": "No fresh held-out block to validate K3 (H and H' used)",
+    "blocker": "no-key-material"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "ital1584-f153-154",
+    "label": "ff. 153r-154r, cipher segments of the letter of 21 May 1447",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.723,
+    "summary": "Guarna reports an audience with Duke Filippo Maria Visconti about Sforza's coming: the state in danger (enemies in the field, troops poorly provided, plague), 9,000 ducats, the gabelle and the troops at Cremona, then no more money for a long while; the Duke answered more openly than before and wants Sforza to come quickly.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "date": "2026-11-05",
+     "note": "Read as sentences 5 Nov 2026 by one AI reader; no human check. The certain stretches construe as 15th-century Lombard Italian, but many stretches are open: 583 certain, 33 probable, about 236 unresolved of 852 words (72.3%), so read in part."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "New key for Guarna's 1447 cipher (key.tsv, CC BY 4.0), partial by our protocol; the end of the letter was already in clear on f. 156."
+ }
+}

@@ -1,0 +1,42 @@
+guarna1447 - tests of the Guarna key (contributor's protocols, not docs/_validate.py)
+
+Key material. No Guarna key was known (Daniel Bourdeau reads Guarna's leaves by their late clear copies and publishes no table).
+The key was rebuilt here from the cipher of Guarna's letter of 27 May 1447 (ff. 163r ll. 6-50 and 163v ll. 1-2, later
+163v l. 3 to the end), aligned with its 18th-century clear copy (ff. 161r-162v; 165r). The protocol (PROTOCOLE-CRIBS,
+aead6d7d...) fixed the held-out block H before any key work.
+
+Test 1 - lexicon coverage on a held-out block of the target letter
+- H = f. 153r ll. 1-20 of the letter of 21 May (ll. 1 and 20 clear only), transcribed by shapes and hashed (95e803c0...).
+- Key K frozen (9203ccf9...); amendment K2 (^ = t, W = l, 2# = q, three signs of the pair forgotten in K; 10352f61...),
+  amendment 2 (metric) and amendment 3 (controls) written and hashed before H was viewed.
+- M5 = share of decoded letters covered by Italian words of 5+ letters. Controls: 200 keys permuting the value lists of the
+  one-letter signs.
+- Result (one measurement): M5 = 0.441 (297/673); controls max 0.118, mean 0.054; gap 0.323.
+  Thresholds (fixed): >= 0.60 and >= +0.30 validated; gap alone partial. DECISION: PARTIAL.
+  Likely cause of the low absolute value: 15th-century Lombard spelling (single consonants: dovese, potese, spese) is poorly
+  covered by the modern lexicon.
+- Slip, declared: line 20 of H (clear only, no cipher sign) was seen before H was frozen (a modern heading was counted as a
+  line). It carries no cipher letter and does not enter M5.
+
+Test 2 - characters against a contemporary clear, on a new held-out block of the training letter
+- Amendment 4 (082aaf15...), written and hashed before K3: H' = all cipher segments of f. 164r (letter of 27 May), cut at
+  clear anchor words; reference = the late copy f. 165r; segments whose reference has the copyist's dotted blank excluded.
+- Declared: f. 165r was seen at low resolution (legible) while choosing H'. It was not used for the key or for the language
+  model (K3 = K2 + values from 163v only; language model = the copy of ff. 161-162 only). f. 164r was seen only at quarter
+  resolution, where the signs cannot be read.
+- Key K3 frozen (8a16f1de...); tokens of 164r and the references hashed before decoding.
+- Metric: 1 - Levenshtein distance / reference length, after normalisation. Controls: 200 keys (seeds 1447-1646), same
+  permutation rule.
+- Result (one measurement): CHAR = 0.759 (78 edits / 324); controls max 0.315, mean 0.226; gap 0.445.
+  Thresholds (fixed): >= 0.85 and >= +0.30 validated; gap alone partial. DECISION: PARTIAL.
+  Whole phrases come out right ("ne deliberatione veruna pure se ne fa ... in generali", "de li inimici", "del vostro venire",
+  "li di passati"). Most errors come from look-alike signs not separated on the scans (h-like sign = 4 or hk; sigma / o with a
+  hook; t / T / z), and from "dinari" written in clear [spes] inside the cipher.
+
+External agreement (not a pre-registered test)
+- The end of the cipher of 21 May (f. 153v about l. 46 to f. 154r l. 3), decoded by K2, agrees word for word with the
+  15th-century clear text of f. 156 of the same day. That clear was not used to build the key.
+
+Pending
+- A blind shape sheet on the near-identical signs (h-like 4 / hk, sigma / o with a hook, t / T / z, hs / h) is planned and
+  has not been answered. No new held-out block is left in the training pair (H and H' are used).
