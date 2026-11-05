@@ -1,6 +1,6 @@
 # este1585: a cipher page in Cardinal Luigi d'Este's cipher, Rome 1584-85 (BnF Cinq Cents de Colbert 338, p. 523; catalogue 1572)
 
-Status: in progress: site write-up pending (merged from Brice Dudout's PR 5 Nov 2026); read in part (Brice Dudout, 5 Nov 2026; 177 of 200 words = 88.5% without restorations; key: Satoshi Tomokiyo's table, partial by our protocol on this volume, M5 0.457 against 0.078 on the held-out page).
+Status: read in part (Brice Dudout, 5 Nov 2026; 177 of 200 words = 88.5% without restorations; key: Satoshi Tomokiyo's table, partial by our protocol on this volume, M5 0.457 against 0.078 on the held-out page).
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents. Catalogue entry 1572 (BAM sweep: "Luigi, card.le
 d'Este, 9 lettres en partie chiffrées"). **The key is not ours**: it is Satoshi Tomokiyo's reconstruction of "Cardinal
@@ -15,7 +15,7 @@ of Cardinal Luigi d'Este, protector of France at Rome, and French dispatches fro
 writer of p. 523 reports to a correspondent ("vous") who is to inform "le Roy" (Henri III). Date: not on the page; 1584-85
 by the file.
 
-**No image, crop or thumbnail is included** (Gallica scans used for research only).
+The page is written up at `docs/este1585.html` (5 Nov 2026) with two crops of the Gallica scan (`docs/este1585_lead.jpg`, `docs/este1585_page.jpg`), credited to the BnF via Gallica (BnF crops allowed with credit, George Lasry, 22 Sept 2026). No full image is kept in the repository. No portrait: neither the writer nor the correspondent is named on the page (`docs/_explore_skip.json`).
 
 ## Key (`key.tsv`)
 

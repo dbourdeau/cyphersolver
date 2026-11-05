@@ -569,6 +569,11 @@ PAGES = [
          blurb='The governor of Poitou&rsquo;s ciphered report to Henri III on the Lusignan plots and Villeluisant&rsquo;s raid (BnF fr. 15572 ff. 162&ndash;164). Michael Brackx corrected Tomokiyo&rsquo;s key against the margin decipherment of f. 163r (97.6% on its first stretch): that stretch reads in part, f. 162r and the second stretch are decoded, not read, and four pages are still to come.',
          quote='&ldquo;consiste en la creance du porteur et lesdicts articles&rdquo;',
          rights='Manuscript rights: Biblioth&egrave;que nationale de France'),
+    dict(slug='este1585', label='Cardinal d&rsquo;Este 1584&ndash;85', year='1584&ndash;1585', y=1585.0, place='Rome &rarr; the French court', st='partial', stt='known key, in part',
+         title='A cipher page in Cardinal d&rsquo;Este&rsquo;s cipher, Rome 1584&ndash;85',
+         blurb='One page of BnF Cinq Cents de Colbert 338 (p. 523), wholly in the cipher of Cardinal Luigi d&rsquo;Este, protector of France at Rome. Brice Dudout transcribed it and read it with Satoshi Tomokiyo&rsquo;s published d&rsquo;Este table, adjusted on glossed pages of the same volume: 177 of 200 words, 88.5%. A prince had asked the pope for the title of king and been refused; he turned to the emperor, and the writer was told the emperor alone gave Cosimo of Florence his grand-ducal title. The prince&rsquo;s name and the key&rsquo;s own test on this page stay open.',
+         quote='&ldquo;l&rsquo;empereur seul lui donna tel tiltre de sa plaine aucthorit&eacute; sans en rien communiquer ausdicts electeurs&rdquo; &middot; 88.5% measured',
+         rights='Manuscript rights: Biblioth&egrave;que nationale de France'),
     dict(slug='mayenne1586c2', label='Cipher-2 1586', year='1586', y=1586.45, place='Guyenne &rarr; Henri III', st='partial', stt='known key, in part',
          title='Mayenne&ndash;Forget&rsquo;s Cipher-2, 1586',
          blurb='Three letters of 1586 in Mayenne&ndash;Forget&rsquo;s Cipher-2: Marshal Matignon&rsquo;s report to Henri III from the siege of Mons&eacute;gur (BnF fr. 15572 ff. 218&ndash;219) and two autumn letters from Mayenne&rsquo;s camp on money and an army breaking up (fr. 15573 ff. 120, 385). Harumi-Matsuba and Brett Burford deciphered them with Satoshi Tomokiyo&rsquo;s key and Claude; 4,560 of 5,293 signs fall in runs of French, measured here, but no person has yet checked the transcriptions.',
@@ -2777,6 +2782,7 @@ IMAGES['stockholm1918'] = ('stockholm1918_lead.jpg', 'Nr. 1014, 26 July 1918: ty
 IMAGES['ludendorff1918'] = ('ludendorff1918_lead.jpg', 'The Ludendorff telegram, 26 July 1918: typed copy by the US Legation, Stockholm', 'National Archives (US), RG 59, M367 roll 141 frame 1264, via the NARA catalogue')
 IMAGES['camus1586'] = None
 IMAGES['malicorne1586'] = None
+IMAGES['este1585'] = ('este1585_lead.jpg', 'The first seven lines of p. 523, the cipher page of Colbert 338', 'Biblioth&egrave;que nationale de France, Cinq Cents de Colbert 338, p. 523, via Gallica (btv1b10033937d, view 275)')
 IMAGES['gonzaga1549'] = ('gonzaga1549_lead.jpg', 'c. 60v, lines 19-21 of the letter of 14 November 1549', 'Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera K, Karl V, sfasc. IV c. 60v, via the Estense Digital Library (CC BY-NC-SA)')
 IMAGES['vargas1552'] = ('vargas1552_lead.jpg', 'Archive image 0002: the struck-through cipher block with the decipherment in the left margin', 'Archivo General de Simancas, Estado leg. 1320 ff. 35-38, image 0002, via DECODE R9967')
 IMAGES['transylvania1645'] = ('transylvania1645_lead.jpg', 'R4937, 1646: running cipher letters with clear words such as Cum satisfactione Evangelicorum', 'Romanian National Archives, Cluj, Keresdi Bethlen 15 (1646), via DECODE R4937')
