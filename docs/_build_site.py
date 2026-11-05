@@ -14,10 +14,13 @@ It also stamps the dates: the hero dateline, the head meta tags, the index cards
 of findings.html all carry the day the finding landed, from _dates.json, which this script maintains.
 """
 import re, sys, pathlib, html, json, hashlib, datetime
+import _images as IMG
 HERE = pathlib.Path(__file__).parent
 ICONS = ('<link rel="icon" href="favicon.svg" type="image/svg+xml">\n<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">\n'
          '<link rel="apple-touch-icon" href="apple-touch-icon.png">\n')
-VERSION ='20261105c'
+# stamped on the stylesheet and scripts: a hash of their content, so an edit reaches browsers without a bump and a
+# rebuild with no CSS or JS change rewrites no page
+VERSION = hashlib.sha1(b''.join((HERE / f).read_bytes().replace(b'\r\n', b'\n') for f in ('style.css', 'site.js', 'zoom.js', 'solve-replay.js', 'home.js'))).hexdigest()[:8]
 SITE = 'Cyphersolver'
 REPO = 'https://github.com/dbourdeau/cyphersolver'
 
@@ -73,6 +76,7 @@ GENERATED = [
     r'<!-- lasry:start -->.*?<!-- lasry:end -->\n?',
     r'\n?<p class="outcome">.*?</p><!-- /outcome -->',
     r'\n?<p class="credits">.*?</p><!-- /credits -->', r'<!-- contrib:start -->.*?<!-- contrib:end -->\n?',
+    r'\n?<p class="readjump">.*?</p><!-- /readjump -->', r'<!-- cite:start -->.*?<!-- cite:end -->\n?', r'<!-- social:start -->.*?<!-- social:end -->\n?',
 ]
 
 def normalise(s):
@@ -90,6 +94,8 @@ def normalise(s):
     s = re.sub(r'\?v=\w+', '', s)      # version stamps vanish without a trace, so a newly stamped src hashes as before
     s = s.replace(' translate="no"', '')       # added by protect_text(); not an edit
     s = re.sub(r' ?<span class="credit">[^<]*</span>| data-credit="[^"]*"', '', s)   # figure credits, added flush
+    s = IMG.ADDED.sub('', s)                   # image sizes and srcset (_images.py), added flush
+    s = re.sub(r'(<meta name="description" content=")[^"]*" data-full="([^"]*)">', r'\1\2">', s)   # the hand-written description is the content
     for pat in GENERATED: s = re.sub(pat, ' ', s, flags=re.S)
     return re.sub(r'\s+', ' ', s).strip()
 
@@ -3312,29 +3318,35 @@ def posted_at(slug):
     rec = DATES['pages'].get(slug, {})
     return rec.get('posted') or (rec.get('first', TODAY) + 'T00:00:00Z')
 
+def write_menu():
+    """menu.json: the two changing groups of the Write-ups menu, fetched by site.js."""
+    latest = sorted([p for p in PAGES if p['slug'] not in SURVEYS],
+                    key=lambda p: posted_at(p['slug']), reverse=True)[:NAV_LATEST]
+    # each row: a coloured dot for the outcome, the label, the year; the method under it in plain text, not a pill
+    lis = ''.join(f'<li><a href="{p["slug"]}.html"><i class="dot {p["st"]}" aria-hidden="true"></i>'
+                  f'<b>{p["label"]}</b><span class="yr">{p["year"]}</span><span class="m">{p["stt"]}</span></a></li>' for p in latest)
+    groups = ''.join(f'<li><a href="writeups.html#kind={key}"><i class="dot {cls}" aria-hidden="true"></i>'
+                     f'<b>{name}</b><b class="sh">{NAV_SHORT.get(key, name)}</b><span class="n">{n}</span></a></li>' for key, name, cls, pred in GROUPS if (n := sum(1 for p in PAGES if pred(p))))
+    menu = dict(groups=f'<div class="grp latest"><h4>Latest</h4><ul>{lis}</ul></div><div class="grp outc"><h4>By outcome</h4><ul>{groups}</ul></div>',
+                all=f'All {len(PAGES)} write-ups, with filters \u2192')
+    (HERE / 'menu.json').write_text(json.dumps(menu, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+
 def nav_html(current):
     """The Write-ups menu. It stopped listing every page when the count passed forty: it now shows the newest few,
     the counts by outcome (each a link into the filtered index) and the way to the full list on writeups.html."""
     cur = lambda slug: ' aria-current="page"' if slug == current else ''
-    latest = sorted([p for p in PAGES if p['slug'] not in SURVEYS],
-                    key=lambda p: posted_at(p['slug']), reverse=True)[:NAV_LATEST]
-    # each row: a coloured dot for the outcome, the label, the year; the method under it in plain text, not a pill
-    lis = ''.join(f'<li><a href="{p["slug"]}.html"{cur(p["slug"])}><i class="dot {p["st"]}" aria-hidden="true"></i>'
-                  f'<b>{p["label"]}</b><span class="yr">{p["year"]}</span><span class="m">{p["stt"]}</span></a></li>' for p in latest)
-    groups = ''.join(f'<li><a href="writeups.html#kind={key}"><i class="dot {cls}" aria-hidden="true"></i>'
-                     f'<b>{name}</b><b class="sh">{NAV_SHORT.get(key, name)}</b><span class="n">{n}</span></a></li>' for key, name, cls, pred in GROUPS if (n := sum(1 for p in PAGES if pred(p))))
     in_explore = any(slug == current for slug, _, _ in EXPLORE)
     on = ' class="active"' if not in_explore and (current == 'writeups' or any(p['slug'] == current for p in PAGES)) else ''
-    panel = (f'<div class="grp latest"><h4>Latest</h4><ul>{lis}</ul></div>'
-             f'<div class="grp outc"><h4>By outcome</h4><ul>{groups}</ul></div>'
-             f'<div class="foot"><a class="all" href="writeups.html"{cur("writeups")}>All {len(PAGES)} write-ups, with filters &rarr;</a>'
+    # Latest and By outcome change with every new write-up, so they live in menu.json (site.js fills them in) and a new
+    # write-up no longer rewrites every page; without JavaScript the menu still has these links
+    panel = (f'<div class="foot"><a class="all" href="writeups.html"{cur("writeups")}>All write-ups, with filters &rarr;</a>'
              f'<a href="findings.html"{cur("findings")}>All findings, newest first</a>'
              f'<a href="writeups.html#src=notes">Results only in the notes</a></div>')
     explore = (''.join(f'<li><a href="{slug}.html"{cur(slug)}><b>{name}</b><span class="d">{desc}</span></a></li>'
                        for slug, name, desc in EXPLORE).join(('<ul>', '</ul>'))
                + f'<div class="foot"><a href="{REPO}" rel="noopener">The code and the working notes on GitHub &#8599;</a></div>')
     return (
-        f'<header class="nav"><div class="in">\n'
+        f'<header class="nav"><a class="skip" href="#content">Skip to content</a><div class="in">\n'
         f'  <a class="brand" href="index.html"><span class="glyph">972</span><span>{SITE}</span></a>\n'
         f'  <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>\n'
         f'  <nav id="sitemenu" class="links" aria-label="Site">\n'
@@ -3348,7 +3360,7 @@ def nav_html(current):
         f'    <a href="contributors.html"{cur("contributors")}>Contributors</a>\n'
         f'    <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>\n'
         f'    <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>\n'
-        f'  </nav>\n</div></header>\n' + SEARCH_HTML)
+        f'  </nav>\n</div><span id="content" tabindex="-1"></span></header>\n' + SEARCH_HTML)
 
 SEARCH_HTML = (
     '<div class="search" id="search" hidden>\n'
@@ -3477,7 +3489,7 @@ def readme_glance():
             counts[-1][1] += 1
             counts[-1][2] += len(cells) > 3 and cells[3].startswith('complete')
     import _catalogue_page as C
-    open_n = sum(1 for e in C.DATA['entries'] if e['counted'] and C.is_open(e))
+    open_n = sum(1 for e in C.DATA['entries'] if C.is_open(e))
     pages = sum(1 for p_ in PAGES if p_['slug'] not in SURVEYS)
     anchor = lambda h: re.sub(r'[^\w\- ]', '', h.lower()).replace(' ', '-')
     rows = '\n'.join(f'| [{s}](#{anchor(s)}) | {n} | {c if s not in ("Not solved", "Not applicable", "In progress") else "&mdash;"} |'
@@ -3603,6 +3615,7 @@ def footer_html(current):
     if nxt: links.append(f'<a href="{nxt["slug"]}.html" rel="next">{nxt["label"]} {nxt["year"]} &rarr;</a>')
     links.append(f'<a href="{REPO}" rel="noopener">Code &#8599;</a>')
     links.append('<a href="contribute.html#email">Contact &#9993;</a>')
+    links.append('<a href="feed.xml">Feed</a>')
     links.append('<a href="#top">Top &uarr;</a>')
     author = cur.get('author', 'Daniel Bourdeau') if cur else 'Daniel Bourdeau and contributors' if current in SHARED_PAGES else 'Daniel Bourdeau'
     footer_date = cur.get('footer_date', 'September 2026') if cur else 'September 2026'
@@ -3620,7 +3633,8 @@ def toc_html(s):
         text = re.sub(r'<span class="num">.*?</span>', '', inner); text = re.sub(r'<[^>]+>', '', text)
         text = re.sub(r'\s+', ' ', html.unescape(text)).strip()
         text = text.split(' &mdash; ')[0]
-        links.append(f'<a href="#{hid}">{html.escape(text[:48])}</a>')
+        if len(text) > 48: text = text[:48].rsplit(' ', 1)[0].rstrip(' ,;:') + '\u2026'     # at a word, not in the middle of one
+        links.append(f'<a href="#{hid}">{html.escape(text)}</a>')
     return '<nav class="toc" aria-label="On this page"><span>On this page</span>' + ''.join(links) + '</nav>\n'
 
 def when_html(p, cls='when'):
@@ -3663,7 +3677,7 @@ def catintro_html():
     """The catalogue section's opening paragraph, counted from catalogue.json so it never goes stale."""
     import _catalogue_page as C
     es = json.loads((HERE.parent / 'catalogue.json').read_text(encoding='utf-8'))['entries']
-    op = [e for e in es if e['counted'] and C.is_open(e)]
+    op = [e for e in es if C.is_open(e)]
     ys = [e['year'] for e in op if isinstance(e.get('year'), int)]
     seen = sum(1 for e in op if 'image' in str(e.get('seen')) or e.get('seen') == 'viewed')
     return (f'<!-- catintro:start -->\n<p>{len(op):,} undeciphered letters and series from {min(ys)} to {max(ys)}. Each carries its shelfmark, the prior art '
@@ -3806,6 +3820,72 @@ def protect_text(s):
     s = re.sub(r'<(?!html)([a-z][a-z0-9]*)([^>]*\blang="(?!en)[^"]*"[^>]*)>', mark, s)
     return s
 
+BASE_URL = 'https://cyphersolver.com/'
+DESC_MAX = 200
+
+def short_desc(full):
+    """The first sentences of a description that fit what search results and share cards show."""
+    if len(full) <= DESC_MAX: return full
+    out = ''
+    for sent in re.split(r'(?<=[.!?])\s+', full):
+        if len(out) + len(sent) + 1 > DESC_MAX: break
+        out = (out + ' ' + sent).strip()
+    if len(out) >= 90: return out
+    return full[:DESC_MAX - 1].rsplit(' ', 1)[0].rstrip(' ,;:&') + '&hellip;'
+
+def share_image(slug, s):
+    """The picture a shared link shows: the page's lead image, else its first figure, else the site's."""
+    im = IMAGES.get(slug)
+    if im: return im[0]
+    m = re.search(r'<figure[^>]*>\s*(?:<a[^>]*>\s*)?<img\b[^>]*?\bsrc="([^"#?]+)"', s)
+    return m.group(1) if m and not re.match(r'(?:https?:|data:|//)', m.group(1)) else 'hero_poster.png'
+
+def head_tags(slug, s):
+    """The short description, and the canonical address, share card and feed link of a page. Moved-page stubs keep theirs."""
+    s = re.sub(r'<!-- social:start -->.*?<!-- social:end -->\n?', '', s, flags=re.S)
+    if slug == '404' or re.search(r'<meta name="robots" content="noindex"', s): return s
+    m = re.search(r'<meta name="description" content="([^"]*)"(?: data-full="([^"]*)")?>', s)
+    desc = ''
+    if m:
+        full = m.group(2) if m.group(2) and m.group(1) == short_desc(m.group(2)) else m.group(1)   # an edited content wins
+        desc = short_desc(full)
+        new = f'<meta name="description" content="{desc}"' + (f' data-full="{full}">' if desc != full else '>')
+        s = s[:m.start()] + new + s[m.end():]
+    url = BASE_URL if slug == 'index' else f'{BASE_URL}{slug}.html'
+    tags = [f'<link rel="canonical" href="{url}">', f'<link rel="alternate" type="application/atom+xml" title="Cyphersolver: new write-ups" href="{BASE_URL}feed.xml">']
+    if 'property="og:title"' not in s:      # the home page has its own
+        t = re.search(r'<title>(.*?)</title>', s, re.S)
+        title = t.group(1).strip() if t else SITE
+        kind = 'article' if any(p['slug'] == slug for p in PAGES) else 'website'
+        tags += [f'<meta property="og:type" content="{kind}">', f'<meta property="og:site_name" content="{SITE}">', f'<meta property="og:url" content="{url}">',
+                 f'<meta property="og:title" content="{title.replace(chr(34), "&quot;")}">', f'<meta property="og:description" content="{desc}">',
+                 f'<meta property="og:image" content="{BASE_URL}{share_image(slug, s)}">', '<meta name="twitter:card" content="summary_large_image">']
+    return s.replace('</head>', '<!-- social:start -->\n' + '\n'.join(tags) + '\n<!-- social:end -->\n</head>', 1)
+
+def readjump_html(page, lr, tb):
+    """A button under the hero to the page's text: George Lasry's report when there is one, else Full texts."""
+    if lr: href, label = '#lasry-report', 'Go to the decipherment'
+    elif tb and re.search(r'(?:<summary>|"ftext">)(?:Reading|Translation)', tb): href, label = '#texts', 'Go to the full text'
+    elif tb: href, label = '#texts', 'Go to the transcriptions'
+    else: return ''
+    return f'<p class="readjump"><a href="{href}">{label} &darr;</a></p><!-- /readjump -->'
+
+def cite_html(page, rec):
+    """Cite this page: the words, and a button each for the words and for BibTeX (site.js copies them)."""
+    title, slug = plain(page['title']), page['slug']
+    author = plain(page.get('author', 'Daniel Bourdeau'))
+    url = f'{BASE_URL}{slug}.html'
+    posted, updated = fmt_date(rec['first']), fmt_date(rec['updated'])
+    when = f'posted {posted}' + (f', updated {updated}' if updated != posted else '')
+    text = f'{author}, \u201c{title}\u201d, Cyphersolver, {when}, {url}.'
+    year = rec['first'][:4]
+    bib = (f'@misc{{cyphersolver-{slug},\n  author = {{{author}}},\n  title = {{{title}}},\n  year = {{{year}}},\n'
+           f'  howpublished = {{Cyphersolver}},\n  note = {{{when}}},\n  url = {{{url}}}\n}}')
+    esc = lambda t: html.escape(t, quote=True)
+    return (f'<!-- cite:start -->\n<details class="cite" id="cite"><summary>Cite this page</summary>\n<p class="citetext">{esc(text)}</p>\n'
+            f'<p class="citebtns"><button type="button" data-copy="{esc(text)}">Copy citation</button>'
+            f'<button type="button" data-copy="{esc(bib)}">Copy BibTeX</button></p>\n</details>\n<!-- cite:end -->\n')
+
 def process(path):
     slug = path.stem
     s = path.read_text(encoding='utf-8')
@@ -3828,6 +3908,7 @@ def process(path):
     # George Lasry's report at the top of the body (lasry_report_html), regenerated on every build
     s = re.sub(r'<!-- lasry:start -->.*?<!-- lasry:end -->\n?', '', s, flags=re.S)
     lr = lasry_report_html(page) if page else ''
+    if lr and 'id="verification"' not in s: lr = lr.replace('under <a href="#verification">Verification</a>', 'further down')
     if lr and '<main>' in s:
         s = re.sub(r'(<main>\n(?:<nav class="toc".*?</nav>\n)?)', lambda m: m.group(1) + lr, s, count=1, flags=re.S)
     # give every h2 an id so the contents strip and deep links work
@@ -3967,11 +4048,21 @@ def process(path):
         s = re.sub(r'<!-- catintro:start -->.*?<!-- catintro:end -->', lambda m: catintro_html(), s, flags=re.S)
         # the hero's open count follows the catalogue on every build; the rest of the hero's counts come from _build_stats.py
         import _catalogue_page as C
-        still_open = sum(1 for e in C.DATA['entries'] if e['counted'] and C.is_open(e))
+        still_open = sum(1 for e in C.DATA['entries'] if C.is_open(e))
         s = re.sub(r'(<b>)[\d,]+(</b> ciphers still open)', lambda m: f'{m.group(1)}{still_open:,}{m.group(2)}', s, count=1)
         s = re.sub(r'<!-- cattop:start -->.*?<!-- cattop:end -->\n?', '', s, flags=re.S)
         s = re.sub(r'(<h2 id="catalogue">.*?)(\n<p><a class="more" href="catalogue\.html")', lambda m: m.group(1) + '\n' + cattop_html().rstrip('\n') + m.group(2), s, count=1, flags=re.S)
         s = re.sub(r'<!-- cards:start -->.*?<!-- cards:end -->', lambda m: cards, s, flags=re.S)
+    # the button under the hero that goes straight to the text
+    s = re.sub(r'\n?<p class="readjump">.*?</p><!-- /readjump -->', '', s, flags=re.S)
+    jump = readjump_html(page, lr, tb) if page else ''
+    if jump and '<section class="hero">' in s:
+        s = re.sub(r'(<section class="hero">.*?</h1>(?:\s*<div class="parties">.*?</div><!-- /parties -->)?)', lambda m: m.group(1) + '\n' + jump, s, count=1, flags=re.S)
+    # how to cite the page, at the end of the body
+    s = re.sub(r'<!-- cite:start -->.*?<!-- cite:end -->\n?', '', s, flags=re.S)
+    if page and '</main>' in s: s = s.replace('</main>', cite_html(page, rec) + '</main>', 1)
+    s = head_tags(slug, s)
+    s = IMG.annotate(s)
     s = protect_text(s)
     after = content_hash(s)
     if after != rec['hash']:     # a generated element normalise() does not know about
@@ -3999,8 +4090,9 @@ def search_entries():
     out = []
     for path in sorted(HERE.glob('*.html')):
         slug = path.stem
-        if slug in ('catalogue', 'writeups'): continue   # catalogue from catalogue.json below; writeups is a list of the pages
+        if slug in ('catalogue', 'writeups', '404'): continue   # catalogue from catalogue.json below; writeups is a list of the pages
         s = path.read_text(encoding='utf-8')
+        s = re.sub(r'<!-- cite:start -->.*?<!-- cite:end -->', ' ', s, flags=re.S)
         s = re.sub(r'<header class="nav">.*?</header>|<div class="search" id="search".*?</div>\n</div>|<footer.*?</footer>|'
                    r'<nav class="toc".*?</nav>', ' ', s, flags=re.S)
         p = next((q for q in PAGES if q['slug'] == slug), None)
@@ -4011,7 +4103,7 @@ def search_entries():
         hero = re.search(r'<(header|section|div) class="hero.*?</\1>', s, re.S)
         hero = re.sub(r'<div class="cipherstrip">.*?</div>', ' ', hero.group(0), flags=re.S) if hero else ''   # decorative digits
         base = dict(p=visible_text(p['label']) if p else {'index': 'Overview'}.get(slug, title), y=visible_text(p['year']) if p else '',
-                    st=p['st'] if p else '', stt=p['stt'] if p else '')
+                    st=p['st'] if p else '', stt=visible_text(p['stt']) if p else '')
         parts = re.split(r'(?=<h2 id="[^"]+")', body)
         intro = visible_text((p['blurb'] if p else '') + ' ' + hero + ' ' + parts[0])
         out.append(dict(base, u=f'{slug}.html', t=title, h='', b=intro))
@@ -4032,15 +4124,24 @@ def search_entries():
         pass
     return out
 
+SEARCH_SHARDS = 16      # site.js has the same number
+
 def write_search_index():
-    # Two files so a first visit to the search box costs the small one: search-t.json (every key but b) is what the
-    # palette fetches on opening; search-b.json (the b texts, same order) is fetched on the first keystroke.
+    # A first visit to the search box costs the small file: search-t.json (every key but b) is what the palette fetches
+    # on opening. The b texts are in SEARCH_SHARDS files, search-b/NN.json ([[url, text], ...]), which the palette fetches
+    # one at a time after the first query and stops fetching when it is closed. A page always falls in the same shard,
+    # so a new write-up rewrites one small file, not the whole index.
     entries = search_entries()
     dump = lambda o: json.dumps(o, ensure_ascii=False, separators=(',', ':'))
     (HERE / 'search-t.json').write_text(dump([{k: v for k, v in e.items() if k != 'b'} for e in entries]), encoding='utf-8')
-    (HERE / 'search-b.json').write_text(dump([e['b'] for e in entries]), encoding='utf-8')
-    old = HERE / 'search.json'
-    if old.exists(): old.unlink()
+    shards = [[] for _ in range(SEARCH_SHARDS)]
+    for e in entries:
+        shards[int(hashlib.sha1(e['u'].split('#')[0].encode()).hexdigest()[:6], 16) % SEARCH_SHARDS].append([e['u'], e['b']])
+    (HERE / 'search-b').mkdir(exist_ok=True)
+    for i, rows in enumerate(shards):
+        (HERE / 'search-b' / f'{i:02d}.json').write_text(dump(rows), encoding='utf-8')
+    for old in (HERE / 'search.json', HERE / 'search-b.json'):
+        if old.exists(): old.unlink()
     return len(entries)
 
 # The home page's live header (home.js): a random-cipher button, and the list of
@@ -4125,6 +4226,9 @@ if __name__ == '__main__':
     print('further pages:', F.build_pages(PAGES))   # docs/further/<slug>.html, likewise from the built further.html
     save_dates(DATES)
     print('search index:', write_search_index(), 'entries')
+    write_menu()
+    import _feeds as FD
+    print('feed:', FD.write_feed([p for p in PAGES if p['slug'] not in SURVEYS], DATES['pages'], plain), 'entries; sitemap:', FD.write_sitemap(DATES['pages']), 'urls')
     readme_glance()
     # pages.json: label, year and outcome of every write-up, for the atlas and the key web
     meta = [dict(slug=p['slug'], label=plain(p['label']), title=plain(p['title']), y=p['y'], st=p['st'], stt=plain(p['stt']),

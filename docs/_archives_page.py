@@ -69,7 +69,9 @@ def target_link(r, bypage):
     t = r.get('target')
     if is_cat(r):
         bits = ' · '.join(x for x in (f'cat. {r["catalogue"]}', str(r.get('year') or ''), f'class {r["cls"]}' if r.get('cls') else '') if x)
-        return f'<a class="tgt" href="solve/{r["catalogue"]}.html">{bits}</a>'
+        import _catalogue_page as C     # an open entry, or a number that left and keeps a notice: both have a page
+        known = r['catalogue'] in C.SOLVED or any(e['id'] == r['catalogue'] for e in C.DATA['entries'])
+        return f'<a class="tgt" href="solve/{r["catalogue"]}.html">{bits}</a>' if known else f'<span class="tgt">{bits}</span>'
     if not t: return '<span class="tgt">general</span>'
     p = bypage.get(t)
     if p: return f'<a class="tgt" href="{p["slug"]}.html">{re.sub(r"<[^>]+>", "", p["label"] or p["slug"])}</a>'

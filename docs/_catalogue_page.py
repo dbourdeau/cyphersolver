@@ -228,7 +228,7 @@ def parts_html(e):
 
 # The table shows one thin row per cipher; everything else, with the instructions for an AI agent, is on the
 # cipher's own page, docs/solve/<id>.html, so a helper can hand an agent one URL (feedback of 26 Oct 2026).
-SITE = 'https://dbourdeau.github.io/cyphersolver/'
+SITE = 'https://cyphersolver.com/'
 REPO = 'https://github.com/dbourdeau/cyphersolver'
 CLASS_TEXT = {
     'A': 'a sibling letter with a decipherment is in the same volume or series, so matching it is the first move',
@@ -455,6 +455,7 @@ document.body.classList.remove('nojs');
 var D=JSON.parse(document.getElementById('catdata').textContent),E=D.entries,G=__GONE__,byId={};E.forEach(function(e){byId[e.id]=e;});
 var hm=/^#e(\d+)$/.exec(location.hash);
 if(hm&&byId[hm[1]]){location.replace('solve/'+hm[1]+'.html');return;}
+if(hm&&!byId[hm[1]]&&!G[hm[1]]){var h0=document.getElementById('hashnote');h0.textContent='Catalogue no. '+hm[1]+' is no longer in the catalogue: it was merged into another entry or withdrawn.';h0.hidden=false;}
 if(hm&&G[hm[1]]){var hn=document.getElementById('hashnote');hn.innerHTML='Catalogue no. '+hm[1]+' is no longer open: '+G[hm[1]].map(function(x){var t=x[0].replace(/&/g,'&amp;').replace(/</g,'&lt;');return x[1]?'<a href="'+x[1]+'.html">'+t+'</a>':t;}).join(' · ');hn.hidden=false;}
 var tb=document.querySelector('#cat tbody'),rows={};
 Array.prototype.forEach.call(tb.querySelectorAll('tr.e'),function(r){rows[r.dataset.id]=r;});
@@ -468,7 +469,7 @@ function prio(e){var w=state.w,t=w.imp+w.sol+w.eas||1;var v=(w.imp*e.importance+
 // e.f holds the clean filter keys built in Python; a facet matches when the entry has any of its chosen values
 function vals(e,k){var v=e.f[k];return v==null?[]:[].concat(v);}
 function hit(e,k){var s=state.f[k];if(!s||!s.length)return true;var v=vals(e,k);return s.some(function(x){return v.indexOf(x)>=0;});}
-function texthit(e){if(!state.q)return true;var h=(e.id+' '+e.title+' '+e.correspondents+' '+e.place+' '+e.shelfmark+' '+e.why+' '+e.status+' '+(e.known||'')+' '+(e.open||'')+' '+e.region+' '+e.language+' '+e.date+' '+e.year).toLowerCase();return h.indexOf(state.q)>=0;}
+function texthit(e){if(!state.q)return true;var h=e._h||(e._h=(e.id+' '+e.title+' '+e.correspondents+' '+e.place+' '+e.shelfmark+' '+e.why+' '+e.status+' '+(e.known||'')+' '+(e.open||'')+' '+e.region+' '+e.language+' '+e.date+' '+e.year).toLowerCase());return h.indexOf(state.q)>=0;}
 function match(e,skip){if(!texthit(e))return false;for(var k in state.f)if(k!==skip&&!hit(e,k))return false;return true;}
 // each chip's count: entries it would show, given every other facet and the search
 function counts(){var c={};chips.forEach(function(b){c[b.dataset.facet+'|'+b.dataset.val]=0;});var ks={};chips.forEach(function(b){ks[b.dataset.facet]=1;});
@@ -481,9 +482,14 @@ function save(){var p=[];for(var k in state.f)if(state.f[k].length)p.push(k+'='+
  try{history.replaceState(null,'',p.length?'#'+p.join('&'):location.pathname);}catch(x){}}
 function load(){var h=location.hash.slice(1);if(h.indexOf('=')<0)return;h.split('&').forEach(function(kv){var i=kv.indexOf('=');if(i<1)return;var k=kv.slice(0,i),v=decodeURIComponent(kv.slice(i+1));if(k==='q'){state.q=v.toLowerCase();qi.value=v;}else state.f[k]=v.split(',').filter(Boolean);});}
 function key(e){var s=state.sort;if(s==='prio')return prio(e);if(s==='cls'||s==='title')return e[s];return +e[s];}
+var lastOrder='',lastW=[];function nf0(){var n=0;for(var k in state.f)n+=state.f[k].length;return n;}
 function render(keep){var L=E.filter(function(e){return match(e);});L.sort(function(a,b){var x=key(a),y=key(b);if(x<y)return -1*state.dir;if(x>y)return 1*state.dir;return a.id-b.id;});
- var shown={};L.forEach(function(e){var r=rows[e.id];r.querySelector('td.prio b').textContent=prio(e).toFixed(1);tb.appendChild(r);r.hidden=false;shown[e.id]=1;});
- E.forEach(function(e){if(!shown[e.id])rows[e.id].hidden=true;});
+ var shown={},order=L.map(function(e){return e.id;}).join();L.forEach(function(e){shown[e.id]=1;});
+ E.forEach(function(e){var r=rows[e.id],on=!!shown[e.id];if(r.hidden===on)r.hidden=!on;});
+ if(order!==lastOrder){var fr=document.createDocumentFragment();L.forEach(function(e){fr.appendChild(rows[e.id]);});tb.insertBefore(fr,tb.firstChild);lastOrder=order;}
+ if(state.w.imp!==lastW[0]||state.w.sol!==lastW[1]||state.w.eas!==lastW[2]||!lastW.done){E.forEach(function(e){rows[e.id].querySelector('td.prio b').textContent=prio(e).toFixed(1);});lastW=[state.w.imp,state.w.sol,state.w.eas];lastW.done=1;}
+ var msrt=document.getElementById('msort');if(msrt)msrt.value=state.sort;
+ var ft=document.getElementById('ftoggle');if(ft)ft.textContent='Filters'+(nf0()?' ('+nf0()+')':'');
  var nf=0;for(var k in state.f)nf+=state.f[k].length;
  document.getElementById('count').textContent=(L.length===E.length?'All '+E.length:L.length+' of '+E.length)+' ciphers';
  clr.hidden=!(nf||state.q);clr.textContent=nf?'clear '+nf+' filter'+(nf>1?'s':''):'clear search';
@@ -493,7 +499,13 @@ function render(keep){var L=E.filter(function(e){return match(e);});L.sort(funct
 Array.prototype.forEach.call(tb.querySelectorAll('tr.e'),function(r){r.addEventListener('click',function(ev){if(ev.target.closest('a'))return;if(ev.ctrlKey||ev.metaKey)window.open(r.dataset.href);else location.href=r.dataset.href;});});
 Array.prototype.forEach.call(document.querySelectorAll('#cat th[data-sort]'),function(h){h.addEventListener('click',function(){var s=h.dataset.sort;if(state.sort===s)state.dir=-state.dir;else{state.sort=s;state.dir=(s==='year'||s==='title'||s==='cls'||s==='difficulty')?1:-1;}render();});});
 chips.forEach(function(b){b.addEventListener('click',function(){var k=b.dataset.facet,v=b.dataset.val,s=state.f[k]=state.f[k]||[],i=s.indexOf(v);if(i<0)s.push(v);else s.splice(i,1);if(!s.length)delete state.f[k];render();});});
-qi.addEventListener('input',function(ev){state.q=ev.target.value.trim().toLowerCase();render();});
+var qt;qi.addEventListener('input',function(ev){clearTimeout(qt);var v=ev.target.value;qt=setTimeout(function(){state.q=v.trim().toLowerCase();render();},140);});
+// phones: the filters fold behind one button, and a menu replaces the column headings as the sort control
+(function(){var bar=document.getElementById('list'),b=document.createElement('button');b.type='button';b.id='ftoggle';b.className='chip';b.textContent='Filters';b.setAttribute('aria-expanded','false');
+ b.addEventListener('click',function(){var on=bar.classList.toggle('fopen');b.setAttribute('aria-expanded',on?'true':'false');});qi.after(b);
+ var s=document.createElement('select');s.id='msort';s.setAttribute('aria-label','Sort by');[['prio','Sort: priority'],['year','Sort: date'],['title','Sort: name'],['importance','Sort: importance'],['solvability','Sort: solvability'],['difficulty','Sort: difficulty']].forEach(function(o){var x=document.createElement('option');x.value=o[0];x.textContent=o[1];s.appendChild(x);});
+ s.addEventListener('change',function(){state.sort=s.value;state.dir=(s.value==='year'||s.value==='title'||s.value==='difficulty')?1:-1;render();});b.after(s);
+ var note=document.querySelector('.archnote');if(note)note.addEventListener('click',function(){note.classList.toggle('x');});})();
 [['w_imp','imp'],['w_sol','sol'],['w_eas','eas']].forEach(function(p){document.getElementById(p[0]).addEventListener('input',function(ev){state.w[p[1]]=ev.target.value/100;render();});});
 clr.addEventListener('click',function(){state.q='';state.f={};qi.value='';render();});
 document.getElementById('wreset').addEventListener('click',function(){state.sort='prio';state.dir=-1;state.w={imp:D.weights.importance,sol:D.weights.solvability,eas:D.weights.ease};document.getElementById('w_imp').value=state.w.imp*100;document.getElementById('w_sol').value=state.w.sol*100;document.getElementById('w_eas').value=state.w.eas*100;render();});
@@ -505,6 +517,9 @@ if(hm&&G[hm[1]])document.getElementById('hashnote').scrollIntoView();
 '''
 
 
+CAT_FIELDS = ('id', 'title', 'correspondents', 'place', 'shelfmark', 'why', 'status', 'known', 'open', 'region', 'language', 'date', 'year',
+              'importance', 'solvability', 'difficulty', 'cls')    # what CAT_JS reads of an entry
+
 def build_html():
     E = DATA['entries']
     state, gone_rows, n_gone = status_html(E)
@@ -513,7 +528,7 @@ def build_html():
     counted = [e for e in E if e['counted'] and is_open(e)]
     keys = [filter_keys(e) for e in E]
     langs = [(l.lower(), l) for l in CAT_LANGS] + [('other', 'other'), ('unknown', 'unknown')]
-    data_js = json.dumps({'weights': W, 'entries': [dict(e, f=k) for e, k in zip(E, keys)]}, ensure_ascii=False).replace('</', '<\\/')
+    data_js = json.dumps({'weights': W, 'entries': [dict({f: e.get(f) for f in CAT_FIELDS}, f=k) for e, k in zip(E, keys)]}, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
     n_all, n_img = len(E), sum(1 for e in E if seen_image(e))
     n_dec = sum(1 for e in E if e.get('source') == 'DECODE')
     n_arch = sum(1 for e in E if e.get('access') == 'archive' and is_open(e))
@@ -531,7 +546,7 @@ def build_html():
 <!-- site:nav -->
 
 <section class="hero">
-  <p class="kicker">{min(years)}–{max(years)} · {len(E)} ciphers · {n_gone} moved out to <a href="writeups.html">write-ups</a> · status as of {fmt_day(AS_OF)}</p>
+  <p class="kicker">{min(years)}–{max(years)} · {len(E)} ciphers · {n_gone} moved out to <a href="writeups.html">write-ups</a> · entries last checked {fmt_day(AS_OF)}</p>
   <h1>The Unsolved <span class="stk">Catalogue<a class="sticker" href="#list" title="Pick a cipher below"><span><b>Help<br>Solve!</b><small>pick one below</small></span></a></span></h1>
   <p class="sub">Historical cipher letters that nobody has read. Pick one, open its page, and give that page&rsquo;s address to your AI agent: the page holds the sources, what has been tried and the instructions.</p>
   <ol class="steps"><li><b>1</b>pick a row</li><li><b>2</b>open its page</li><li><b>3</b>point your agent at the URL</li><li><b>4</b>send back what it finds</li></ol>
@@ -805,6 +820,12 @@ def solve_page(e, shell):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <base href="../">
 <title>No. {e["id"]}: {title} — help solve it</title>
+<link rel="canonical" href="{url}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Cyphersolver">
+<meta property="og:url" content="{url}">
+<meta property="og:title" content="No. {e["id"]}: {title.replace(chr(34), '&quot;')}">
+<meta property="og:image" content="{SITE}hero_poster.png">
 <meta name="description" content="{esc(e["why"]).replace('"', '&quot;')} An unread cipher of {esc(e["date"])}, with instructions for an AI agent.">
 {shell["head"]}
 </head>
@@ -814,6 +835,41 @@ def solve_page(e, shell):
 {body}
 {shell["footer"].replace('href="#top"', f'href="{solve_href(e)}#top"')}
 {SOLVE_JS}
+{shell["scripts"]}
+</body>
+</html>
+''')
+
+
+def gone_page(i, shell):
+    rows = SOLVED[i]
+    links = ''.join(f'<li><a href="{sl}.html">{esc(n)}</a> ({esc(sec)})</li>' if sl else f'<li>{esc(n)} ({esc(sec)})</li>' for n, sec, _, sl, _ in rows)
+    first = next((sl for _, _, _, sl, _ in rows if sl), None)
+    return (f'''<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="../">
+<title>No. {i} has left the catalogue</title>
+<meta name="robots" content="noindex">
+{f'<link rel="canonical" href="{SITE}{first}.html">' if first else ''}
+{shell["head"]}
+</head>
+<body id="top" class="pg-solve">
+{shell["nav"]}
+
+<section class="hero solve">
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. {i}</p>
+  <h1>No. {i} has left the catalogue</h1>
+  <p class="sub">This address used to hold the task for catalogue no. {i}. The cipher now has an outcome, so the task has closed and the work is written up here:</p>
+</section>
+
+<main>
+<ul>{links}</ul>
+<p><a href="catalogue.html">&larr; The ciphers still open</a></p>
+</main>
+{shell["footer"].replace('href="#top"', f'href="solve/{i}.html#top"')}
 {shell["scripts"]}
 </body>
 </html>
@@ -834,9 +890,14 @@ def build_solve_pages():
     for e in DATA['entries']:
         p = out / f'{e["id"]}.html'; keep.add(p.name)
         p.write_text(solve_page(e, shell), encoding='utf-8')
-    for p in out.glob('*.html'):          # entries read and removed from the catalogue lose their page
+    # a number that has left the catalogue keeps its address: people and agents were given it, so it says where the work went
+    gone = 0
+    for i in sorted(set(SOLVED) - {e['id'] for e in DATA['entries']}):
+        p = out / f'{i}.html'; keep.add(p.name); gone += 1
+        p.write_text(gone_page(i, shell), encoding='utf-8')
+    for p in out.glob('*.html'):          # anything else has no page: 404.html explains
         if p.name not in keep: p.unlink()
-    print('wrote', len(keep), 'pages in docs/solve/')
+    print('wrote', len(keep) - gone, 'pages and', gone, 'moved notices in docs/solve/')
 
 
 if __name__ == '__main__':

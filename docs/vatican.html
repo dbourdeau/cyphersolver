@@ -4,21 +4,32 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cardinal Farnese to the nuncio Poggio, Rome 1542 (Vatican Challenge Part 5)</title>
-<meta name="description" content="Cardinal Farnese to the nuncio Poggio, Rome, April 1542, a cipher of one- and two-digit codes set as Vatican Challenge Part 5. Simon Klee recovered the key from the ciphertext and published a candidate plaintext in September 2026; this page reviews his solution (controls, manuscript checks, remaining uncertainties) and keeps this project's earlier, unsuccessful attempt as a record.">
-<link rel="stylesheet" href="style.css?v=20261105c">
+<meta name="description" content="Cardinal Farnese to the nuncio Poggio, Rome, April 1542, a cipher of one- and two-digit codes set as Vatican Challenge Part 5." data-full="Cardinal Farnese to the nuncio Poggio, Rome, April 1542, a cipher of one- and two-digit codes set as Vatican Challenge Part 5. Simon Klee recovered the key from the ciphertext and published a candidate plaintext in September 2026; this page reviews his solution (controls, manuscript checks, remaining uncertainties) and keeps this project's earlier, unsuccessful attempt as a record.">
+<link rel="stylesheet" href="style.css?v=fb44852f">
 <meta name="date" content="2026-09-15">
 <meta name="last-modified" content="2026-10-26">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- social:start -->
+<link rel="canonical" href="https://cyphersolver.com/vatican.html">
+<link rel="alternate" type="application/atom+xml" title="Cyphersolver: new write-ups" href="https://cyphersolver.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Cyphersolver">
+<meta property="og:url" content="https://cyphersolver.com/vatican.html">
+<meta property="og:title" content="Cardinal Farnese to the nuncio Poggio, Rome 1542 (Vatican Challenge Part 5)">
+<meta property="og:description" content="Cardinal Farnese to the nuncio Poggio, Rome, April 1542, a cipher of one- and two-digit codes set as Vatican Challenge Part 5.">
+<meta property="og:image" content="https://cyphersolver.com/vatican_meister176.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<!-- social:end -->
 </head>
 <body id="top">
-<header class="nav"><div class="in">
+<header class="nav"><a class="skip" href="#content">Skip to content</a><div class="in">
   <a class="brand" href="index.html"><span class="glyph">972</span><span>Cyphersolver</span></a>
   <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
   <nav id="sitemenu" class="links" aria-label="Site">
     <details class="menu"><summary class="active">Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
-      <div class="panel wp"><div class="grp latest"><h4>Latest</h4><ul><li><a href="guarna1447.html"><i class="dot partial" aria-hidden="true"></i><b>Guarna to Sforza, 21 May 1447</b><span class="yr">1447</span><span class="m">key from adjacent plaintext &middot; partial</span></a></li><li><a href="aragon1676.html"><i class="dot partial" aria-hidden="true"></i><b>Pascual de Arag&oacute;n to Pedro de Arag&oacute;n</b><span class="yr">1676&ndash;77</span><span class="m">key from adjacent plaintext &middot; partial</span></a></li><li><a href="coloma1622.html"><i class="dot partial" aria-hidden="true"></i><b>Mirabel to Coloma 1622</b><span class="yr">1622</span><span class="m">key from adjacent plaintext &middot; partial</span></a></li><li><a href="ariosto1559.html"><i class="dot partial" aria-hidden="true"></i><b>Ercole II to Ariosto 1559</b><span class="yr">1559</span><span class="m">ciphertext-only break &middot; partial</span></a></li><li><a href="este1585.html"><i class="dot partial" aria-hidden="true"></i><b>Cardinal d&rsquo;Este 1584&ndash;85</b><span class="yr">1584&ndash;1585</span><span class="m">known key applied &middot; partial</span></a></li><li><a href="gongmi1916.html"><i class="dot partial" aria-hidden="true"></i><b>Huang Xing 共密 telegrams</b><span class="yr">June&ndash;July 1916</span><span class="m">ciphertext-only break &middot; partial</span></a></li></ul></div><div class="grp outc"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=ct"><i class="dot solved" aria-hidden="true"></i><b>Ciphertext-only break</b><b class="sh">Ciphertext-only</b><span class="n">85</span></a></li><li><a href="writeups.html#kind=extpt"><i class="dot solved" aria-hidden="true"></i><b>Key from external plaintext</b><b class="sh">Ext. plaintext</b><span class="n">19</span></a></li><li><a href="writeups.html#kind=adjpt"><i class="dot solved" aria-hidden="true"></i><b>Key from adjacent plaintext</b><b class="sh">Adj. plaintext</b><span class="n">95</span></a></li><li><a href="writeups.html#kind=extkey"><i class="dot solved" aria-hidden="true"></i><b>External key matched</b><b class="sh">External key</b><span class="n">35</span></a></li><li><a href="writeups.html#kind=known"><i class="dot solved" aria-hidden="true"></i><b>Known key applied</b><b class="sh">Known key</b><span class="n">108</span></a></li><li><a href="writeups.html#kind=deciph"><i class="dot solved" aria-hidden="true"></i><b>Existing decipherment</b><b class="sh">Existing reading</b><span class="n">97</span></a></li><li><a href="writeups.html#kind=notsolved"><i class="dot stuck" aria-hidden="true"></i><b>Not solved</b><b class="sh">Not solved</b><span class="n">75</span></a></li><li><a href="writeups.html#kind=na"><i class="dot found" aria-hidden="true"></i><b>Not applicable</b><b class="sh">Not applicable</b><span class="n">18</span></a></li><li><a href="writeups.html#kind=other"><i class="dot todo" aria-hidden="true"></i><b>Not yet classified</b><b class="sh">Unclassified</b><span class="n">1</span></a></li><li><a href="writeups.html#kind=survey"><i class="dot todo" aria-hidden="true"></i><b>Surveys</b><b class="sh">Surveys</b><span class="n">2</span></a></li></ul></div><div class="foot"><a class="all" href="writeups.html">All 535 write-ups, with filters &rarr;</a><a href="findings.html">All findings, newest first</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+      <div class="panel wp"><div class="foot"><a class="all" href="writeups.html">All write-ups, with filters &rarr;</a><a href="findings.html">All findings, newest first</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
     <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
       <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="top25.html"><b>Top 25 unsolved ciphers</b><span class="d">Twenty-five ciphers with no accepted reading, ranked</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key opened which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
     <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
@@ -28,7 +39,7 @@
     <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
     <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
   </nav>
-</div></header>
+</div><span id="content" tabindex="-1"></span></header>
 <div class="search" id="search" hidden>
   <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
     <form class="sform" role="search" onsubmit="return false">
@@ -45,7 +56,7 @@
   <div class="cipherstrip" translate="no">73 4 57 4 9 03 5<br>d&nbsp;&nbsp; o&nbsp;&nbsp; p&nbsp;&nbsp; o&nbsp;&nbsp; &middot;&nbsp;&nbsp; l&nbsp;&nbsp; a<br>&hellip; 6,562 corrected digit tokens over four folios</div>
   <p class="kicker">Rome &rarr; the imperial court &middot; numerical cipher of one- and two-digit codes &middot; April 1542 &middot; review of a September 2026 solution</p>
   <h1>Cardinal Farnese to the nuncio Poggio, April 1542: Simon Klee&rsquo;s solution reviewed</h1>
-<div class="parties"><figure class="party sender"><img src="portrait_alessandro-farnese.jpg" alt="Alessandro Farnese" title="Alessandro Farnese: Portrait by Titian, c. 1545-46 (Capodimonte, Naples). Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Alessandro Farnese</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_giovanni-poggio.jpg" alt="Giovanni Poggio" title="Giovanni Poggio: Portrait by an unknown painter, inscribed &#x27;Ioan. Podius&#x27;, after 1551. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Giovanni Poggio</figcaption></figure></div><!-- /parties -->
+<div class="parties"><figure class="party sender"><img src="portrait_alessandro-farnese.jpg" width="192" height="4360" decoding="async" alt="Alessandro Farnese" title="Alessandro Farnese: Portrait by Titian, c. 1545-46 (Capodimonte, Naples). Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Alessandro Farnese</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_giovanni-poggio.jpg" width="192" height="4360" decoding="async" alt="Giovanni Poggio" title="Giovanni Poggio: Portrait by an unknown painter, inscribed &#x27;Ioan. Podius&#x27;, after 1551. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Giovanni Poggio</figcaption></figure></div><!-- /parties -->
   <p class="sub">Cardinal Alessandro Farnese to the nuncio Giovanni Poggio at the court of Charles V, Rome, April 1542.
   Archivio Segreto Vaticano, Segr. Stato Spagna 1A/2, ff. 70r&ndash;73v. Set as
   <a href="https://mysterytwister.org/">MysteryTwister</a>&rsquo;s Vatican Challenge Part 5 by George Lasry in 2019;
@@ -57,7 +68,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#solution-review">Why the solution holds</a><a href="#the-document">The document</a><a href="#what-is-established">What the earlier attempt took as established</a><a href="#what-is-excluded">What the earlier attempt excluded</a><a href="#what-the-cipher-is">The earlier diagnosis: an Elio-type cipher</a><a href="#what-the-specialists-say-about-breaking-">What the specialists say about breaking it</a><a href="#the-plaintext-is-unpublished-but-its-nei">The plaintext is unpublished; its neighbours are</a><a href="#the-finding-that-best-explains-why-this-">The finding that best explains why this one resi</a><a href="#the-last-structural-question-answered">No fixed two-digit grid</a><a href="#where-it-stands">Where the earlier attempt stopped</a><a href="#the-manuscript-images">The manuscript images, and the sibling letter</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#solution-review">Why the solution holds</a><a href="#the-document">The document</a><a href="#what-is-established">What the earlier attempt took as established</a><a href="#what-is-excluded">What the earlier attempt excluded</a><a href="#what-the-cipher-is">The earlier diagnosis: an Elio-type cipher</a><a href="#what-the-specialists-say-about-breaking-">What the specialists say about breaking it</a><a href="#the-plaintext-is-unpublished-but-its-nei">The plaintext is unpublished; its neighbours…</a><a href="#the-finding-that-best-explains-why-this-">The finding that best explains why this one…</a><a href="#the-last-structural-question-answered">No fixed two-digit grid</a><a href="#where-it-stands">Where the earlier attempt stopped</a><a href="#the-manuscript-images">The manuscript images, and the sibling letter</a></nav>
 <div class="callout glance" data-term-ok>
 <p class="gl-top"><strong>At a glance</strong><span class="gl-res">Not solved &middot; text not obtained</span></p>
 <dl>
@@ -443,13 +454,26 @@ three need an order from the archive.</p>
 <code translate="no">decode/reread/</code> (the page-by-page readings with every disagreement listed), <code translate="no">decode/build_reread.py</code>.
 The images themselves are the Vatican&rsquo;s and are not redistributed.</p>
 
+<!-- cite:start -->
+<details class="cite" id="cite"><summary>Cite this page</summary>
+<p class="citetext">Daniel Bourdeau, “Cardinal Farnese to the nuncio Poggio, 1542 (Vatican Challenge Part 5)”, Cyphersolver, posted 15 September 2026, updated 26 October 2026, https://cyphersolver.com/vatican.html.</p>
+<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau, “Cardinal Farnese to the nuncio Poggio, 1542 (Vatican Challenge Part 5)”, Cyphersolver, posted 15 September 2026, updated 26 October 2026, https://cyphersolver.com/vatican.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-vatican,
+  author = {Daniel Bourdeau},
+  title = {Cardinal Farnese to the nuncio Poggio, 1542 (Vatican Challenge Part 5)},
+  year = {2026},
+  howpublished = {Cyphersolver},
+  note = {posted 15 September 2026, updated 26 October 2026},
+  url = {https://cyphersolver.com/vatican.html}
+}">Copy BibTeX</button></p>
+</details>
+<!-- cite:end -->
 </main>
 
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0</span>
-  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="devil1539.html" rel="prev">&larr; The Devil&rsquo;s Handwriting 1539 1539</a><a href="marignano1546.html" rel="next">Marignano to Ferrante Gonzaga 1546 1546 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="devil1539.html" rel="prev">&larr; The Devil&rsquo;s Handwriting 1539 1539</a><a href="marignano1546.html" rel="next">Marignano to Ferrante Gonzaga 1546 1546 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="feed.xml">Feed</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="zoom.js?v=20261105c" defer></script>
-<script src="site.js?v=20261105c"></script>
+<script src="zoom.js?v=fb44852f" defer></script>
+<script src="site.js?v=fb44852f"></script>
 </body>
 </html>

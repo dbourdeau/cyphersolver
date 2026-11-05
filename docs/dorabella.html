@@ -4,21 +4,32 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Elgar&rsquo;s Dorabella cipher (1897) — Attempted</title>
-<meta name="description" content="Edward Elgar's 87-sign note to Dora Penny of 14 July 1897, tested here in 50 calibrated rounds against shuffled copies and real English put through the same systems. The opposite-orientation flips force one fixed table if it is a message; under that table no language, plaintext form, misread allowance or homophone set produces a reading, and the statistics fit a writer with strong pair habits as well as they fit English. Not solved; what remains needs a second text or a better image.">
-<link rel="stylesheet" href="style.css?v=20261105c">
+<meta name="description" content="Edward Elgar's 87-sign note to Dora Penny of 14 July 1897, tested here in 50 calibrated rounds against shuffled copies and real English put through the same systems." data-full="Edward Elgar's 87-sign note to Dora Penny of 14 July 1897, tested here in 50 calibrated rounds against shuffled copies and real English put through the same systems. The opposite-orientation flips force one fixed table if it is a message; under that table no language, plaintext form, misread allowance or homophone set produces a reading, and the statistics fit a writer with strong pair habits as well as they fit English. Not solved; what remains needs a second text or a better image.">
+<link rel="stylesheet" href="style.css?v=fb44852f">
 <meta name="date" content="2026-10-28">
 <meta name="last-modified" content="2026-10-29">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- social:start -->
+<link rel="canonical" href="https://cyphersolver.com/dorabella.html">
+<link rel="alternate" type="application/atom+xml" title="Cyphersolver: new write-ups" href="https://cyphersolver.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Cyphersolver">
+<meta property="og:url" content="https://cyphersolver.com/dorabella.html">
+<meta property="og:title" content="Elgar&rsquo;s Dorabella cipher (1897) — Attempted">
+<meta property="og:description" content="Edward Elgar's 87-sign note to Dora Penny of 14 July 1897, tested here in 50 calibrated rounds against shuffled copies and real English put through the same systems.">
+<meta property="og:image" content="https://cyphersolver.com/dorabella_lead.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<!-- social:end -->
 </head>
 <body id="top">
-<header class="nav"><div class="in">
+<header class="nav"><a class="skip" href="#content">Skip to content</a><div class="in">
   <a class="brand" href="index.html"><span class="glyph">972</span><span>Cyphersolver</span></a>
   <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
   <nav id="sitemenu" class="links" aria-label="Site">
     <details class="menu"><summary class="active">Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
-      <div class="panel wp"><div class="grp latest"><h4>Latest</h4><ul><li><a href="guarna1447.html"><i class="dot partial" aria-hidden="true"></i><b>Guarna to Sforza, 21 May 1447</b><span class="yr">1447</span><span class="m">key from adjacent plaintext &middot; partial</span></a></li><li><a href="aragon1676.html"><i class="dot partial" aria-hidden="true"></i><b>Pascual de Arag&oacute;n to Pedro de Arag&oacute;n</b><span class="yr">1676&ndash;77</span><span class="m">key from adjacent plaintext &middot; partial</span></a></li><li><a href="coloma1622.html"><i class="dot partial" aria-hidden="true"></i><b>Mirabel to Coloma 1622</b><span class="yr">1622</span><span class="m">key from adjacent plaintext &middot; partial</span></a></li><li><a href="ariosto1559.html"><i class="dot partial" aria-hidden="true"></i><b>Ercole II to Ariosto 1559</b><span class="yr">1559</span><span class="m">ciphertext-only break &middot; partial</span></a></li><li><a href="este1585.html"><i class="dot partial" aria-hidden="true"></i><b>Cardinal d&rsquo;Este 1584&ndash;85</b><span class="yr">1584&ndash;1585</span><span class="m">known key applied &middot; partial</span></a></li><li><a href="gongmi1916.html"><i class="dot partial" aria-hidden="true"></i><b>Huang Xing 共密 telegrams</b><span class="yr">June&ndash;July 1916</span><span class="m">ciphertext-only break &middot; partial</span></a></li></ul></div><div class="grp outc"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=ct"><i class="dot solved" aria-hidden="true"></i><b>Ciphertext-only break</b><b class="sh">Ciphertext-only</b><span class="n">85</span></a></li><li><a href="writeups.html#kind=extpt"><i class="dot solved" aria-hidden="true"></i><b>Key from external plaintext</b><b class="sh">Ext. plaintext</b><span class="n">19</span></a></li><li><a href="writeups.html#kind=adjpt"><i class="dot solved" aria-hidden="true"></i><b>Key from adjacent plaintext</b><b class="sh">Adj. plaintext</b><span class="n">95</span></a></li><li><a href="writeups.html#kind=extkey"><i class="dot solved" aria-hidden="true"></i><b>External key matched</b><b class="sh">External key</b><span class="n">35</span></a></li><li><a href="writeups.html#kind=known"><i class="dot solved" aria-hidden="true"></i><b>Known key applied</b><b class="sh">Known key</b><span class="n">108</span></a></li><li><a href="writeups.html#kind=deciph"><i class="dot solved" aria-hidden="true"></i><b>Existing decipherment</b><b class="sh">Existing reading</b><span class="n">97</span></a></li><li><a href="writeups.html#kind=notsolved"><i class="dot stuck" aria-hidden="true"></i><b>Not solved</b><b class="sh">Not solved</b><span class="n">75</span></a></li><li><a href="writeups.html#kind=na"><i class="dot found" aria-hidden="true"></i><b>Not applicable</b><b class="sh">Not applicable</b><span class="n">18</span></a></li><li><a href="writeups.html#kind=other"><i class="dot todo" aria-hidden="true"></i><b>Not yet classified</b><b class="sh">Unclassified</b><span class="n">1</span></a></li><li><a href="writeups.html#kind=survey"><i class="dot todo" aria-hidden="true"></i><b>Surveys</b><b class="sh">Surveys</b><span class="n">2</span></a></li></ul></div><div class="foot"><a class="all" href="writeups.html">All 535 write-ups, with filters &rarr;</a><a href="findings.html">All findings, newest first</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+      <div class="panel wp"><div class="foot"><a class="all" href="writeups.html">All write-ups, with filters &rarr;</a><a href="findings.html">All findings, newest first</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
     <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
       <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="top25.html"><b>Top 25 unsolved ciphers</b><span class="d">Twenty-five ciphers with no accepted reading, ranked</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key opened which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
     <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
@@ -28,7 +39,7 @@
     <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
     <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
   </nav>
-</div></header>
+</div><span id="content" tabindex="-1"></span></header>
 <div class="search" id="search" hidden>
   <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
     <form class="sform" role="search" onsubmit="return false">
@@ -44,7 +55,7 @@
   <div class="cipherstrip" translate="no">A2 E3 B2 A3 A1 C2 G1 A3 D1 H2 B3 F2 F1 B1 F2 C3 &hellip;<br>orientation A&ndash;H (opening right, then clockwise) &middot; arcs 1&ndash;3 &middot; 87 signs, 20 of 24 used</div>
   <p class="kicker">Malvern &rarr; Dora Penny, Wolverhampton &middot; 24 arc signs &middot; 14 July 1897 &middot; not solved</p>
   <h1>Elgar&rsquo;s Dorabella cipher</h1>
-<div class="parties"><figure class="party sender"><img src="portrait_edward-elgar.jpg" alt="Edward Elgar" title="Edward Elgar: Photograph reproduced in J. Cuthbert Hadden, Modern Musicians (1913). Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Edward Elgar</figcaption></figure></div><!-- /parties -->
+<div class="parties"><figure class="party sender"><img src="portrait_edward-elgar.jpg" width="192" height="4360" decoding="async" alt="Edward Elgar" title="Edward Elgar: Photograph reproduced in J. Cuthbert Hadden, Modern Musicians (1913). Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Edward Elgar</figcaption></figure></div><!-- /parties -->
   <p class="sub">Edward Elgar&rsquo;s 87-sign note to Dora Penny, tested here in fifty calibrated rounds; no language, key or plaintext form gives a reading, and what is left needs a second text or a better image.</p>
   <p class="meta">Daniel Bourdeau &middot; attempted <time datetime="2026-10-28">28 October 2026</time> &middot; updated <time datetime="2026-10-29">29 October 2026</time></p>
 <div class="seal stuck" aria-hidden="true"><span>not solved</span></div>
@@ -66,7 +77,7 @@
 </div>
 
 <h2 id="note"><span class="num">01</span> The note</h2>
-<figure data-credit="Dora M. Powell, Edward Elgar: Memories of a Variation (Oxford University Press, 1937), p. 98, via the Internet Archive (Digital Library of India, in.ernet.dli.2015.155431)"><img src="dorabella_plate1937.jpg" alt="Three lines of small semicircle signs in one, two or three arcs, each facing one of eight directions, with a dot above the first line" loading="lazy"><figcaption>The cipher as printed in the first edition of Dora Penny&rsquo;s memoir, the only source since the original was lost. <span class="credit">Image: Dora M. Powell, Edward Elgar: Memories of a Variation (Oxford University Press, 1937), p. 98, via the Internet Archive (Digital Library of India, in.ernet.dli.2015.155431).</span></figcaption></figure>
+<figure data-credit="Dora M. Powell, Edward Elgar: Memories of a Variation (Oxford University Press, 1937), p. 98, via the Internet Archive (Digital Library of India, in.ernet.dli.2015.155431)"><img src="dorabella_plate1937.jpg" width="303" height="4360" decoding="async" alt="Three lines of small semicircle signs in one, two or three arcs, each facing one of eight directions, with a dot above the first line" loading="lazy"><figcaption>The cipher as printed in the first edition of Dora Penny&rsquo;s memoir, the only source since the original was lost. <span class="credit">Image: Dora M. Powell, Edward Elgar: Memories of a Variation (Oxford University Press, 1937), p. 98, via the Internet Archive (Digital Library of India, in.ernet.dli.2015.155431).</span></figcaption></figure>
 <p>Dora Penny printed the note as an appendix to her memoir of Elgar, saying it was &ldquo;the third letter I had from him, if indeed it is one&rdquo; and that it had come enclosed in a letter from Alice Elgar after the Elgars&rsquo; visit to Wolverhampton in July 1897. On the back was written &ldquo;Miss Penny&rdquo;. She never had an explanation of it. The mark under the third line is a date, 14 July &rsquo;97, not a signature.</p>
 <p>The transcription used throughout is the five-reader consensus of Hauer et al. (2025): each sign is written as its orientation, A to H going clockwise from &ldquo;opens to the right&rdquo;, and its number of arcs, 1 to 3. The three lines have 29, 31 and 27 signs. Twenty of the 24 possible signs occur; the commonest, F2, eleven times. Readers disagree on 11 positions; a measurement of the 1937 scan here reclassifies 17 signs, and Cooper Jager&rsquo;s 2026 reading differs at five. All of these readings were tested.</p>
 
@@ -141,12 +152,25 @@
 </ul>
 
 <p class="muted">Everything is in <code translate="no">targets/dorabella/</code> in the project repository: <code translate="no">NOTES.md</code> (the full record, steps 1&ndash;30), <code translate="no">HYPOTHESES.md</code> (the hypothesis map with every branch&rsquo;s status), <code translate="no">runs/loop.md</code> and <code translate="no">runs/ledger.tsv</code> (all fifty rounds and every number), the test harness (<code translate="no">hyp.py</code>, <code translate="no">rounds.py</code>, <code translate="no">bigsolve.py</code>), the transcriptions (<code translate="no">ct.txt</code>, <code translate="no">ct_measured.txt</code>, <code translate="no">ct_jager.txt</code>) and the interactive map (<code translate="no">hypothesis-map.html</code>).</p>
+<!-- cite:start -->
+<details class="cite" id="cite"><summary>Cite this page</summary>
+<p class="citetext">Daniel Bourdeau, “Elgar’s Dorabella cipher”, Cyphersolver, posted 28 October 2026, updated 29 October 2026, https://cyphersolver.com/dorabella.html.</p>
+<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau, “Elgar’s Dorabella cipher”, Cyphersolver, posted 28 October 2026, updated 29 October 2026, https://cyphersolver.com/dorabella.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-dorabella,
+  author = {Daniel Bourdeau},
+  title = {Elgar’s Dorabella cipher},
+  year = {2026},
+  howpublished = {Cyphersolver},
+  note = {posted 28 October 2026, updated 29 October 2026},
+  url = {https://cyphersolver.com/dorabella.html}
+}">Copy BibTeX</button></p>
+</details>
+<!-- cite:end -->
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Image: Powell, Memories of a Variation (1937), p. 98, via the Internet Archive</span>
-  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="debosnys.html" rel="prev">&larr; Debosnys 1883</a><a href="bell1900.html" rel="next">Bell to Mabel Bell 1900 1900 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="debosnys.html" rel="prev">&larr; Debosnys 1883</a><a href="bell1900.html" rel="next">Bell to Mabel Bell 1900 1900 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="feed.xml">Feed</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="zoom.js?v=20261105c" defer></script>
-<script src="site.js?v=20261105c"></script>
+<script src="zoom.js?v=fb44852f" defer></script>
+<script src="site.js?v=fb44852f"></script>
 </body>
 </html>

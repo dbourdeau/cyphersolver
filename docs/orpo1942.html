@@ -4,21 +4,32 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>German police double-box radiograms of 27 February 1942</title>
-<meta name="description" content="Six Ordnungspolizei radio messages of 1942 in the Doppelkastenschl&uuml;ssel, published by Frode Weierud and posted by Klaus Schmeh in August 2020 as a challenge. No key was recovered. The five messages of 27 February 1942 share one key (970 letters); every ciphertext-only attack tried fails, as it does on synthetic text of the same size with a known key, and the reasons were measured. A known-plaintext solver recovers the boxes from about 80 pairs, but Bletchley's decrypt of the 16 June message about Borki could not be aligned with its ciphertext.">
-<link rel="stylesheet" href="style.css?v=20261105c">
+<meta name="description" content="Six Ordnungspolizei radio messages of 1942 in the Doppelkastenschl&uuml;ssel, published by Frode Weierud and posted by Klaus Schmeh in August 2020 as a challenge. No key was recovered." data-full="Six Ordnungspolizei radio messages of 1942 in the Doppelkastenschl&uuml;ssel, published by Frode Weierud and posted by Klaus Schmeh in August 2020 as a challenge. No key was recovered. The five messages of 27 February 1942 share one key (970 letters); every ciphertext-only attack tried fails, as it does on synthetic text of the same size with a known key, and the reasons were measured. A known-plaintext solver recovers the boxes from about 80 pairs, but Bletchley's decrypt of the 16 June message about Borki could not be aligned with its ciphertext.">
+<link rel="stylesheet" href="style.css?v=fb44852f">
 <meta name="date" content="2026-09-18">
 <meta name="last-modified" content="2026-10-26">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- social:start -->
+<link rel="canonical" href="https://cyphersolver.com/orpo1942.html">
+<link rel="alternate" type="application/atom+xml" title="Cyphersolver: new write-ups" href="https://cyphersolver.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Cyphersolver">
+<meta property="og:url" content="https://cyphersolver.com/orpo1942.html">
+<meta property="og:title" content="German police double-box radiograms of 27 February 1942">
+<meta property="og:description" content="Six Ordnungspolizei radio messages of 1942 in the Doppelkastenschl&uuml;ssel, published by Frode Weierud and posted by Klaus Schmeh in August 2020 as a challenge. No key was recovered.">
+<meta property="og:image" content="https://cyphersolver.com/orpo1942_d34.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<!-- social:end -->
 </head>
 <body id="top">
-<header class="nav"><div class="in">
+<header class="nav"><a class="skip" href="#content">Skip to content</a><div class="in">
   <a class="brand" href="index.html"><span class="glyph">972</span><span>Cyphersolver</span></a>
   <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
   <nav id="sitemenu" class="links" aria-label="Site">
     <details class="menu"><summary class="active">Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
-      <div class="panel wp"><div class="grp latest"><h4>Latest</h4><ul><li><a href="guarna1447.html"><i class="dot partial" aria-hidden="true"></i><b>Guarna to Sforza, 21 May 1447</b><span class="yr">1447</span><span class="m">key from adjacent plaintext &middot; partial</span></a></li><li><a href="aragon1676.html"><i class="dot partial" aria-hidden="true"></i><b>Pascual de Arag&oacute;n to Pedro de Arag&oacute;n</b><span class="yr">1676&ndash;77</span><span class="m">key from adjacent plaintext &middot; partial</span></a></li><li><a href="coloma1622.html"><i class="dot partial" aria-hidden="true"></i><b>Mirabel to Coloma 1622</b><span class="yr">1622</span><span class="m">key from adjacent plaintext &middot; partial</span></a></li><li><a href="ariosto1559.html"><i class="dot partial" aria-hidden="true"></i><b>Ercole II to Ariosto 1559</b><span class="yr">1559</span><span class="m">ciphertext-only break &middot; partial</span></a></li><li><a href="este1585.html"><i class="dot partial" aria-hidden="true"></i><b>Cardinal d&rsquo;Este 1584&ndash;85</b><span class="yr">1584&ndash;1585</span><span class="m">known key applied &middot; partial</span></a></li><li><a href="gongmi1916.html"><i class="dot partial" aria-hidden="true"></i><b>Huang Xing 共密 telegrams</b><span class="yr">June&ndash;July 1916</span><span class="m">ciphertext-only break &middot; partial</span></a></li></ul></div><div class="grp outc"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=ct"><i class="dot solved" aria-hidden="true"></i><b>Ciphertext-only break</b><b class="sh">Ciphertext-only</b><span class="n">85</span></a></li><li><a href="writeups.html#kind=extpt"><i class="dot solved" aria-hidden="true"></i><b>Key from external plaintext</b><b class="sh">Ext. plaintext</b><span class="n">19</span></a></li><li><a href="writeups.html#kind=adjpt"><i class="dot solved" aria-hidden="true"></i><b>Key from adjacent plaintext</b><b class="sh">Adj. plaintext</b><span class="n">95</span></a></li><li><a href="writeups.html#kind=extkey"><i class="dot solved" aria-hidden="true"></i><b>External key matched</b><b class="sh">External key</b><span class="n">35</span></a></li><li><a href="writeups.html#kind=known"><i class="dot solved" aria-hidden="true"></i><b>Known key applied</b><b class="sh">Known key</b><span class="n">108</span></a></li><li><a href="writeups.html#kind=deciph"><i class="dot solved" aria-hidden="true"></i><b>Existing decipherment</b><b class="sh">Existing reading</b><span class="n">97</span></a></li><li><a href="writeups.html#kind=notsolved"><i class="dot stuck" aria-hidden="true"></i><b>Not solved</b><b class="sh">Not solved</b><span class="n">75</span></a></li><li><a href="writeups.html#kind=na"><i class="dot found" aria-hidden="true"></i><b>Not applicable</b><b class="sh">Not applicable</b><span class="n">18</span></a></li><li><a href="writeups.html#kind=other"><i class="dot todo" aria-hidden="true"></i><b>Not yet classified</b><b class="sh">Unclassified</b><span class="n">1</span></a></li><li><a href="writeups.html#kind=survey"><i class="dot todo" aria-hidden="true"></i><b>Surveys</b><b class="sh">Surveys</b><span class="n">2</span></a></li></ul></div><div class="foot"><a class="all" href="writeups.html">All 535 write-ups, with filters &rarr;</a><a href="findings.html">All findings, newest first</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+      <div class="panel wp"><div class="foot"><a class="all" href="writeups.html">All write-ups, with filters &rarr;</a><a href="findings.html">All findings, newest first</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
     <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
       <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="top25.html"><b>Top 25 unsolved ciphers</b><span class="d">Twenty-five ciphers with no accepted reading, ranked</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key opened which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
     <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
@@ -28,7 +39,7 @@
     <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
     <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
   </nav>
-</div></header>
+</div><span id="content" tabindex="-1"></span></header>
 <div class="search" id="search" hidden>
   <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
     <form class="sform" role="search" onsubmit="return false">
@@ -71,7 +82,7 @@
 
 <p>Weierud&rsquo;s paper, <em>German Police Doppelkastenschl&uuml;ssel Messages</em>, transcribes six messages and reproduces the teleprinter copies and W/T Red Forms from NARA, RG 457, Historic Cryptographic Collection, Box 1386 (NR. 4417, &ldquo;German WWII Police and SS Traffic&rdquo;) and Box 202 (NR. 976, &ldquo;Study of German Police Traffic&rdquo;). Each is labelled here by its Beaumanor serial (BMR A115, D33 and so on). The first five-letter group of each part is the discriminator, which names the key and is not part of the text; the letter counts below are without it.</p>
 
-<figure data-credit="NARA, RG 457, HCC, Box 1386, GPD 665 item 3, as reproduced by F. Weierud, CryptoCellar (2020), p. 11"><img src="orpo1942_d34.jpg" alt="Teleprinter copy BMR D34/27/2/42, POLICE, SQF V DSO NR 11 1030 2TLE 1TL 165 SQF, then the discriminator DNOSX and the first cipher groups HYUPD DDLSO RFKZM" loading="lazy">
+<figure data-credit="NARA, RG 457, HCC, Box 1386, GPD 665 item 3, as reproduced by F. Weierud, CryptoCellar (2020), p. 11"><img src="orpo1942_d34.jpg" width="608" height="2824" decoding="async" srcset="thumbs/orpo1942_d34-480.webp 480w, orpo1942_d34.jpg 608w" sizes="(max-width: 1000px) 100vw, 940px" alt="Teleprinter copy BMR D34/27/2/42, POLICE, SQF V DSO NR 11 1030 2TLE 1TL 165 SQF, then the discriminator DNOSX and the first cipher groups HYUPD DDLSO RFKZM" loading="lazy">
 <figcaption>The Beaumanor copy of D34, 27 February 1942, part 1: from SQF (Mogilev) to DSO, Nr 11, two parts, 165 letters in the first; then the discriminator <span class="c">DNOSX</span> (read OSX) and the text. G.P.D. 665, item 3. <span class="credit">Image: NARA, RG 457, HCC, Box 1386, GPD 665 item 3, as reproduced by F. Weierud, CryptoCellar (2020), p. 11.</span></figcaption></figure>
 
 <table>
@@ -180,13 +191,26 @@
 </ul>
 <p class="muted">Everything is in <code translate="no">targets/orpo1942/</code> in the project repository: <code translate="no">msgs.txt</code> (the ciphertexts, discriminators removed), <code translate="no">dk.py</code> (reference implementation, verified on both manuals), <code translate="no">build_lm.py</code> (25-letter German n-gram tables), <code translate="no">mksyn.py</code> (synthetic test sets), <code translate="no">dksolve2.cs</code> (annealing, iterated local search and tempering with staged scoring), <code translate="no">kpsolve.cs</code> (the known-plaintext solver), <code translate="no">emsolve.cs</code> and <code translate="no">relax.py</code> (failed attacks, kept for the record), the A115 aligners (now in <code translate="no">targets/orpo1942jun/</code>), the source PDFs, and <code translate="no">NOTES.md</code>, which holds the full record of the attempt.</p>
 
+<!-- cite:start -->
+<details class="cite" id="cite"><summary>Cite this page</summary>
+<p class="citetext">Daniel Bourdeau, “German police double-box radiograms of 27 February 1942”, Cyphersolver, posted 18 September 2026, updated 26 October 2026, https://cyphersolver.com/orpo1942.html.</p>
+<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau, “German police double-box radiograms of 27 February 1942”, Cyphersolver, posted 18 September 2026, updated 26 October 2026, https://cyphersolver.com/orpo1942.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-orpo1942,
+  author = {Daniel Bourdeau},
+  title = {German police double-box radiograms of 27 February 1942},
+  year = {2026},
+  howpublished = {Cyphersolver},
+  note = {posted 18 September 2026, updated 26 October 2026},
+  url = {https://cyphersolver.com/orpo1942.html}
+}">Copy BibTeX</button></p>
+</details>
+<!-- cite:end -->
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Images: NARA, RG 457 (HCC), via Weierud 2020</span>
-  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="moscowmeteo1940.html" rel="prev">&larr; Soviet weather ciphers 1940 1938&ndash;40</a><a href="orpo1942jun.html" rel="next">Police radiogram, June 1942 1942 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="moscowmeteo1940.html" rel="prev">&larr; Soviet weather ciphers 1940 1938&ndash;40</a><a href="orpo1942jun.html" rel="next">Police radiogram, June 1942 1942 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="feed.xml">Feed</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="solve-replay.js?v=20261105c" defer></script>
-<script src="zoom.js?v=20261105c" defer></script>
-<script src="site.js?v=20261105c"></script>
+<script src="solve-replay.js?v=fb44852f" defer></script>
+<script src="zoom.js?v=fb44852f" defer></script>
+<script src="site.js?v=fb44852f"></script>
 </body>
 </html>

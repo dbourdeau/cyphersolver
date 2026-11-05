@@ -212,7 +212,7 @@ def build(items):
     lines.append('</section>')
     lines.append('<!-- stats:end -->')
     import _catalogue_page as C
-    still_open = sum(1 for e in C.DATA['entries'] if e['counted'] and C.is_open(e))
+    still_open = sum(1 for e in C.DATA['entries'] if C.is_open(e))
     hero = (f'<p class="herostats"><a href="#scoreboard"><b>{broke}</b> keys recovered</a>'
             f'<a href="#scoreboard"><b>{applied}</b> from existing keys or decipherments</a><a href="catalogue.html"><b>{still_open:,}</b> ciphers still open</a></p>')
     return '\n'.join(lines), n, hero

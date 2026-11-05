@@ -98,7 +98,7 @@ the user's real Chrome) and continue the sweep there; read pages with `get_page_
 - Build from `docs/` with `PYTHONUTF8=1` set; `_build_stats.py` crashes on the cp1252 console without it.
 - `.github/workflows/rebuild-site.yml` rebuilds `docs/` (catalogue included) on every push to main, every PR opened or
   closed, and daily, and commits the result as github-actions[bot]. Pull before pushing; on a conflict in a generated
-  file (`search.json`, `_dates.json`, `*.html`) take main's copy and rebuild.
+  file (`search-t.json`, `search-b/*`, `menu.json`, `feed.xml`, `sitemap.xml`, `_dates.json`, `*.html`) take main's copy and rebuild.
 - main has two rulesets. "no force-push or delete" has no bypass: never force-push main; on a rejected push, pull and
   merge. "require pull request" lets the repo admin and deploy keys push directly; the rebuild pushes with the
   `REBUILD_DEPLOY_KEY` deploy key, because GitHub Actions cannot bypass a ruleset on a personal repo.

@@ -1,6 +1,7 @@
 # Rebuild the site (docs/) whenever main changes or a pull request opens, closes or merges, so the generated pages
 # (catalogue "Where things stand", its open-PR card, write-ups, contributors, search index, README glance) never
-# lag behind the repository. The build is stdlib-only Python; gh lists the open PRs for the catalogue card.
+# lag behind the repository. The build is stdlib-only Python; gh lists the open PRs for the catalogue card. Pillow is
+# only for tools/make_thumbs.py, the lighter copies of new images; without it the pages serve the originals.
 # main is protected by a ruleset that requires pull requests; the Actions bot cannot bypass it on a personal repo, so
 # the commit below is pushed with the write deploy key in REBUILD_DEPLOY_KEY (deploy keys bypass the rule). Deploy-key
 # pushes do trigger workflows, so the job skips the push event of its own "Site: rebuild" commit.
@@ -45,6 +46,8 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898+github-actions[bot]@users.noreply.github.com'
+          pip install -q pillow || true
+          python tools/make_thumbs.py || true
           (cd docs && python _build_site.py > /tmp/build.log 2>&1) || { tail -40 /tmp/build.log; exit 1; }
           git add docs README.md
           if git diff --cached --quiet; then echo 'site already up to date'; exit 0; fi
