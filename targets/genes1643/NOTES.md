@@ -1,6 +1,6 @@
 # Juan de Eraso to Philip IV, Genoa, 18 January 1643 (catalogue 755, item EST,LEG,3598,44)
 
-Status: read in part (Brice Dudout; recounted 5 Nov 2026 under the strict 95% rule: 119 of 137 words read = 86.9%, 115 certain + 4 probable; 16 restored from the sense no longer count as read, 98.5% with them; 2 unresolved).
+Status: in progress (read in part, escalation not yet done: the Remaining gaps blockers and the Escalation checklist are still to be written; Brice Dudout; recounted 5 Nov 2026 under the strict 95% rule: 119 of 137 words read = 86.9%, 115 certain + 4 probable; 16 restored from the sense no longer count as read, 98.5% with them; 2 unresolved).
 
 Contributed by Brice Dudout (Europe chiffrée), 28 Oct 2026. Write-up prepared for:
 https://bdudout.github.io/europe-chiffree/en/documents.html#genes-1643

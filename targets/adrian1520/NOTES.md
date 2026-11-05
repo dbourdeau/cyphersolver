@@ -1,6 +1,6 @@
 # Adrian of Utrecht (Cardinal of Tortosa) to Charles V, Valladolid, 9 September 1520: the cipher paragraph
 
-Status: read in part (Brice Dudout; recounted 5 Nov 2026 under the strict 95% rule: 40 of 46 cipher words read = 87.0%, 28 certain + 12 probable; 4 restored from the sense no longer count as read, 95.7% with them; 2 unresolved; key K7 validated on a fresh held-out pair).
+Status: in progress (read in part, escalation not yet done: the Remaining gaps blockers and the Escalation checklist are still to be written; Brice Dudout; recounted 5 Nov 2026 under the strict 95% rule: 40 of 46 cipher words read = 87.0%, 28 certain + 12 probable; 4 restored from the sense no longer count as read, 95.7% with them; 2 unresolved; key K7 validated on a fresh held-out pair).
 
 Contributed by Brice Dudout (Europe chiffrée), 28 Oct - 2 Nov 2026. Write-up:
 https://bdudout.github.io/europe-chiffree/en/documents.html#tortosa-1520

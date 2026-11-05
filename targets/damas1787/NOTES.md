@@ -1,6 +1,6 @@
 # Damas 1787: the governor of the Windward Islands to the minister of the Navy, Martinique, 2 Nov 1787
 
-Status: read in part (Brice Dudout; recounted 5 Nov 2026 under the strict 95% rule: 286 of 302 words of the cipher part read = 94.7%, 281 certain + 5 probable; 12 restored from the sense no longer count as read, 98.7% with them; 4 unresolved).
+Status: in progress (read in part, escalation not yet done: the Remaining gaps blockers and the Escalation checklist are still to be written; Brice Dudout; recounted 5 Nov 2026 under the strict 95% rule: 286 of 302 words of the cipher part read = 94.7%, 281 certain + 5 probable; 12 restored from the sense no longer count as read, 98.7% with them; 4 unresolved).
 
 Contributed by Brice Dudout (Europe chiffrée), 28 Oct 2026. Not in the catalogue. Published write-up:
 https://bdudout.github.io/europe-chiffree/en/documents.html#damas-1787
