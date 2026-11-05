@@ -1,0 +1,199 @@
+{
+ "schema_version": 1,
+ "target": "pawel1624",
+ "title": "Carl Pawel to Frederick V, King of Bohemia, 25 Nov 1624 (BSB Clm 10382 n. 46): the letter cipher is the casimir1629 alphabet moved by 3, rebuilt from the contemporary glosses and tested on a held-out page",
+ "documents": [
+  {
+   "id": "clm10382-n46",
+   "read": "read in part",
+   "shelfmark": "Munich, Bayerische Staatsbibliothek, Clm 10382 (Collectio Camerariana 32), n. 46 (MDZ bsb00112117, scans 181-182)",
+   "date": "25 Nov 1624",
+   "year": 1624,
+   "country": "Germany",
+   "route": "Carl Pawel -> Frederick V, King of Bohemia (Elector Palatine in exile)",
+   "places": {
+    "from": "not stated on the leaves",
+    "to": "Frederick V (The Hague)"
+   },
+   "language": "German",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "A contemporary decipherment is written above the code groups and the letter runs (Halm 1874 p. 59: 'in Chiffern mit Auflösungen').",
+    "partial": true
+   },
+   "length": {
+    "tokens": 102,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "MDZ bsb00112117 scans 181-182 (microfilm, 1334 px, Public Domain Mark 1.0)",
+    "image_quality": "fair",
+    "notes": "The 17 runs of two-digit numbers (letters) with their glosses only. The 3-4 digit code groups, the signs and the clear German text are not transcribed. Scan 181 = training, scan 182 = held out."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "code"
+  ],
+  "summary": "Mixed: a code of 3-4 digit numbers for words and names (2737 Ob. Fuchs, 3515 Stuttgart, 2224 kommen, 1732 Mansfelt, 2389 Liga), a few signs (a3 = zu, mm = so, rr = und), and a German letter cipher written as comma-separated two-digit numbers, with homophones in blocks of three: 11-13 a, 14-16 g, 17-19 n, 20-22 t, 23-25 b, 26-28 h, 29-31 o, 32-34 u/v, 35-37 c, 38-40 i, 41-43 p, 44-46 w, 47-49 d, 50-52 k, 56-58 x, 59-61 e, 62-64 l, 65-67 r, 68-70 y, 71-73 f, 74-76 m, 77-79 s, 80-82 z. This is the casimir1629 letter alphabet with every number lowered by 3.",
+  "symbol_kind": "digits",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "separator symbol",
+  "distinct_symbols": 50,
+  "nulls": {
+   "present": false
+  }
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The contemporary interlinear decipherment on the letter (Halm 1874 p. 59, 'in Chiffern mit Auflösungen'); leads review batch b70 (4 Nov 2026) found every group glossed and closed lead 2179 as 'read', noting it as a key source with no key built. No edition found; not on DECODE; no target, PR or issue for Pawel or Clm 10382 n. 46 in this repository (GitHub API, origin/main e4c7843d, 5 Nov 2026).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "sibling key"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Daniel Bourdeau's leads review (batch b70) located and vetted the piece as lead 2179. Brice Dudout set the rules (protocol and key frozen by SHA-256 before a single held-out measurement, thresholds fixed in advance). AI agents transcribed, tested the casimir1629 key, measured and wrote up. No human palaeographer checked the transcription.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-11-05",
+  "last_date": "2026-11-05"
+ },
+ "solution": [
+  {
+   "date": "2026-11-05",
+   "kind": "transcription",
+   "what": "Scan 181: 15 runs of two-digit numbers with their interlinear glosses, transcribed by eye from the microfilm.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "crib",
+   "what": "The frozen casimir1629 key was tried with every shift from -12 to 12 on the glossed runs of scan 181; a shift of 3 gives 0.921 (next best 0.737). Gaps filled from scan 181, blocks of three; frozen by SHA-256 with the protocol before scan 182 was looked at.",
+   "result": "worked",
+   "technique": [
+    "crib testing",
+    "key-structure hypothesis"
+   ]
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One measurement on scan 182, transcribed after the freeze: 2 glossed runs, 13 letters. Score 1.000 (whole words 1.000) against 0.154 for the best of 200 shuffled keys; thresholds >= 0.85 and >= 0.30 above the best control, fixed in advance. The held-out part is very small.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "reading",
+   "what": "The only unglossed run, 16 59 66 38 20 22 60 17 on scan 181, reads 'geritten' ('zu ruck geritten'), where the glossator wrote 'zu rückh kommen'.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "recovered",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The key is the casimir1629 alphabet moved by 3; the shift was fitted on the contemporary glosses of scan 181 and validated once on scan 182. The content is the glosses' (existing); the key, the shared system and one unglossed run are the contribution.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "verification": [
+   "contemporary decipherment",
+   "statistical test"
+  ],
+  "validation": {
+   "date": "2026-11-05",
+   "verdict": "pass",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): protocol and key hashed before scan 182 was looked at; one measurement on scan 182 (2 glossed runs, 13 letters): 1.000 vs best of 200 shuffled keys 0.154. Thresholds fixed in advance: >= 0.85 and >= 0.30 above the best control. Limit: the held-out part has only 13 letters. Two numbers on scan 181 (181.14, 181.15) were re-read after the measurement; the key did not change."
+  },
+  "provenance": "mixed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "the interlinear decipherment written on the letter at the time; the shift of the key was fitted on it",
+    "date": "1624"
+   },
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "note": "letter runs and glosses of scans 181-182; key identified as casimir1629 moved by 3, validated on a held-out page (key.tsv, validation.txt); unglossed run read 'geritten'",
+    "date": "2026-11-05"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "leads review batch b70 (4 Nov 2026) located n. 46 on scans 181-182 and vetted lead 2179",
+    "date": "2026-11-04"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "the 3-4 digit code groups and the clear German text not transcribed (the code is glossed on the leaf)",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "held-out part of only 13 letters",
+    "blocker": "too-short"
+   },
+   {
+    "item": "numbers 1-10, 53-55 and 83 up not seen; nulls not seen",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "one reader (an agent) on a 1334 px microfilm; no human palaeographic check",
+    "blocker": "not-attempted"
+   }
+  ],
+  "texts": [
+   {
+    "doc": [
+     "clm10382-n46"
+    ],
+    "label": "n. 46 (scans 181-182): letter runs with their contemporary glosses",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "language": "de",
+    "state": "not prose",
+    "note": "A word list, not a running text: each run of two-digit numbers with the gloss written above it at the time and our decode with key.tsv. The code groups and the clear text are not transcribed.",
+    "summary": "Carl Pawel reports to Frederick V on Colonel Fuchs's recruiting in Württemberg: Fuchs came to Stuttgart and stayed until Tuesday the 23rd, accompanied; the letter speaks of the 'pars victrix', of someone who 'rode back', of Mansfeld and the League, and of men who could be used.",
+    "reading_review": {
+     "grade": "B",
+     "note": "Word list checked against the contemporary glosses, letter by letter; not prose, clear text not transcribed.",
+     "by": "Claude Opus 5.5 agent for Brice Dudout",
+     "date": "2026-11-05"
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "The letter was deciphered at the time (interlinear glosses), so we claim no reading and no solution. New: the letter key as a reusable table; the finding that it is the casimir1629 alphabet moved by 3 (a family of Palatine keys with a movable origin); and one unglossed run read."
+ }
+}
