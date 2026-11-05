@@ -1,6 +1,6 @@
 # The Count-Duke of Olivares to the Duke of Alba, Madrid, 22 August 1626 (lead 1273)
 
-Status: read (Brice Dudout, 5 Nov 2026; Daniel's rule: 953 of 1,001 words read from the sense, 95.2%, without restorations; key partial by our protocol: one held-out measurement, M5 0.506 against 0.144 for the best control, under our 0.60 threshold, with a ceiling of about 0.64; about 54 line ends lost in the gutter not counted; DECODE R1190 lists the letter as "Decrypted", plaintext not seen).
+Status: read (Brice Dudout, 5 Nov 2026; Daniel's rule: 953 of 1,001 words read from the sense, 95.2%, without restorations; key partial by our protocol: one held-out measurement, M5 0.506 against 0.144 for the best control, under our 0.60 threshold, with a ceiling of about 0.64; about 54 line ends lost in the gutter not counted; DECODE R1190 lists the letter as "Decrypted", but no decipherment or key is attached there).
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents, for your lead 1273 (BNE/Hispana sweep).
 Not yet published on our site. Text only: the BNE Digital images were used for research and are not reproduced here.
@@ -77,9 +77,11 @@ Without them the count is 950/1,001 = 94.9%.
 ## Prior work
 
 - Your lead 1273 was open on 28 Oct 2026 ("no reading found"). Your vetting of 4 Nov 2026 (`research/leads.json`) closes it as
-  "read", because DECODE R1190 is this very letter with status "Decrypted" and an inline-plaintext flag, behind authentication.
-  We have not seen that plaintext or a key, and we found that note only after our reading. If DECODE holds an earlier full reading,
-  our credit should be "verification", not "solution": your call.
+  "read", because DECODE R1190 is this very letter with status "Decrypted" and an inline-plaintext flag. We found that note only
+  after our reading. We then checked R1190 at level 2 (5 Nov 2026): 3 images of BNE MSS/10249 (added 13 Jul 2021), an empty
+  documents list, no transcription, no key, no decipherer, and no plaintext written on the pages. Where the "Decrypted" status comes
+  from is unknown (perhaps a question for Beáta Megyesi). If an earlier full reading turns up, our credit should be "verification",
+  not "solution": your call.
 - Edition: Elliott & de la Peña, *Memoriales y cartas del Conde Duque de Olivares* (2013 ed., CEEH/Marcial Pons), from the tables of
   contents: the only piece of 1626 is doc. XI, "Reflexiones políticas y cristianas", to the King; there is no letter to the Duke of Alba
   in 1626. The full text was not seen. The BDH record of MSS/10249 cites no edition. Nothing at Tomokiyo's, nothing found on the web
