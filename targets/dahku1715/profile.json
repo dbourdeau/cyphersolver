@@ -1,0 +1,207 @@
+{
+ "schema_version": 1,
+ "target": "dahku1715",
+ "title": "Dahku (signed 'Dahka') from Cracow, 1715 (AGAD 1/338/0/1/682): sign cipher in a Polish letter, key partial by our protocol, read in part",
+ "documents": [
+  {
+   "id": "agad-338-682-scan3",
+   "read": "read in part",
+   "shelfmark": "AGAD Warsaw, fonds 338 (Zbiór Anny z Potockich Branickiej), 1/338/0/1/682, scan 3 (pp. 2-3 of the letter)",
+   "date": "Cracow, 1715 (21 Sep 1715 by the unit card '1715, IX, 21' and by the content; the catalogue's 21 May not confirmed)",
+   "year": 1715,
+   "country": "Poland",
+   "route": "Dahku (signed 'Dahka') -> a member of the Branicki circle (addressee not named in the part read)",
+   "places": {
+    "from": "Cracow",
+    "to": "unknown"
+   },
+   "language": "Polish",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment, gloss or key on the five scans; p. 1, the address and the end are in clear Polish.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 350,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "szukajwarchiwach.gov.pl, unit 28224391 (images not reproduced)",
+    "image_quality": "fair",
+    "notes": "17 lines of graphic signs, 24 sign types, one ASCII letter per shape; sign table fixed before the line-by-line transcription; frozen (SHA-256) before any key work. One slip noticed after the measurement (e06 '+' probably the clear word 'to')."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Letter-for-letter substitution of Polish with graphic signs (Cyrillic- and Greek-like shapes, digits, a cross, a hash) and a few homophones (a = + / P, z = W / N, y = z / l, w = b / C); clear Polish words written among the cipher; a framed sign (N) and a tied sign (C) probably stand for names.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": 24,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "names"
+   ]
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "partial",
+  "notes": "Word breaks follow the manuscript (spaces and line ends); the nomenclator is inferred from two signs whose letter values make no sense where a name is expected."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Catalogue 1581 open ('Część listu pisana szyfrem, nierozwiązanym'); no gloss, key or clear copy on the scans; no target, lead, PR or issue on origin/main (GitHub API, 06cf7e3b3, 6 Nov 2026); known.py, DECODE, Tomokiyo, Lasry and three web searches (Dahku Kraków 1715) found nothing (3-5 Nov 2026).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "first_date": "2026-11-05",
+  "last_date": "2026-11-06",
+  "human_role": "Brice Dudout chose the target, set the rules (protocol and pre-registration hashed before any key work, held-out lines, thresholds fixed in advance, one measurement) and answered a blind shape plate on one sign (shapes only, no values shown). AI agents transcribed, broke the key, measured, read and wrote up. No human palaeographer checked the transcription or the reading.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-11-05",
+   "kind": "transcription",
+   "what": "Scans sorted (only scan 3 is in cipher); sign table fixed; 17 lines transcribed and frozen (350 signs, 24 types).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Homophonic substitution solved on the training lines d01-e02 only (278 signs; 8 restarts, seed 1715) with a Polish 4-gram model from the Deboli clear texts of this repository; all restarts gave the same Polish text; key frozen by SHA-256.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One measurement on held-out lines e03-e06 (72 signs): M5 0.444 vs 0.083 for the best of 200 shuffled keys (margin 0.361); validated would need M5 >= 0.60.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Blind shape plate on the barred sign V (3 questions, 1 control answered as expected): at d05 and e05 V has the shape of W (z); used for the reading only.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "reading",
+   "what": "Decryption cut into words and read by sense: 63 cipher words, 39 certain, 14 probable, 0 restored, 10 unresolved (84.1%); two signs (N, C) left as probable names.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Key broken by annealing on the cipher of the training lines (clear words of the letter used only as word breaks) and measured once on held-out lines. Key 'partial' by our protocol (margin met, absolute threshold missed) and because two probable name signs have no value.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.841,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Daniel's rule (certain + probable; restored words not counted), counted on reading.md after the shape plate: 63 cipher words, 39 certain, 14 probable, 0 restored, 10 unresolved = 53/63 = 84.1% (49/59 = 83% when cipher tokens such as 'zwoiskim' are not split).",
+  "verification": [
+   "statistical test",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-11-05",
+   "verdict": "weak",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): transcription frozen, pre-registration hashed, key learned on lines d01-e02 and frozen, one measurement on e03-e06 (72 signs): M5 0.444 (share of decoded signs in Polish words of 5+ letters) vs 0.083 for the best of 200 shuffled keys, margin 0.361. Thresholds >= 0.60 and >= control + 0.30 fixed in advance: partial by our protocol. No clear text of the time exists to compare with; H is short."
+  },
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "transcription of the sign cipher, key broken ciphertext-only and measured once on held-out lines (M5 0.444 vs 0.083, partial), passage read in part (84%), translation",
+    "date": "2026-11-06"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "catalogue entry 1581 (Chrome pass on szukajwarchiwach, Nov 2026)",
+    "date": "2026-11-03"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "10 of 63 cipher words unresolved (zto, e, kostalacio, kodzarzyc, nadra, zo, a; the name signs N twice and C)",
+    "blocker": "open-codes",
+    "detail": "the key is partial and the framed sign N and the tied sign C look like nomenclator names; no other letter of the same key is known"
+   },
+   {
+    "item": "the key cannot be tested again on this letter",
+    "blocker": "no-key-material",
+    "detail": "the held-out lines are used up; another letter of Dahku in the same cipher would be needed"
+   },
+   {
+    "item": "e05 last word read on the reduced view at the page edge",
+    "blocker": "illegible",
+    "detail": "a full-resolution look at the right margin of p. 3 would settle it"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "agad-338-682-scan3",
+    "label": "scan 3, pp. 2-3: the cipher passage of the letter (17 lines)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "pl",
+    "state": "read in part",
+    "read_share": 0.841,
+    "summary": "The Sandomierz deputies asked that the Crown army support the levée en masse of the Sandomierz voivodeship, set for 9 October, and not be moved away from Sandomierz; the answer was that no commitment could be made before the Primate's resolution to the deputies was known; it was only declared that the army would not be withdrawn but taken across the Vistula. The run-up to the Confederation of Tarnogród (Nov 1715).",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "date": "2026-11-06",
+     "note": "Read as sentences 5-6 Nov 2026 by AI agents only (Brice Dudout answered the shape plate, not the reading). The decryption construes as Polish sentences once cut into words, with gaps: 39 certain, 14 probable, 10 unresolved of 63 words (84%), so read in part."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "The key is ours (key.tsv, CC BY 4.0), but partial by our protocol: the held-out test met the margin over shuffled keys and missed the absolute threshold, on a short block. The reading is offered as a partial reading with every unresolved word in place, not as a solution at 95%."
+ }
+}
