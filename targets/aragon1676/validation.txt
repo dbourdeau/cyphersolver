@@ -1,0 +1,47 @@
+aragon1676 — validation record (system S1, BNE Mss/2043)
+
+Method (the same in every cycle, fixed in hashed protocols before each measurement):
+- Key learned only on training pairs (cipher with its contemporary clear: marginal clears on views 0138-0139 and 0484-0485,
+  and the separate gathering "Descifrado" of views 0356-0368 paired with ten letters of views 0318-0355), by EM alignment,
+  then frozen by SHA-256.
+- One held-out page per key, opened only after the freeze: cipher transcribed and hashed before its margin clear was read.
+- Score = longest common subsequence of decryption and margin clear / the longer length, with a head cut t in [0, 40]
+  (the margin may begin before the cipher block). Controls: 200 keys made by shuffling the key's values (seed 20261104);
+  each control key gets its own best head cut; control = the best of the 200. The same 200 keys give the M5 control
+  (share of decoded letters covered by Spanish words of at least 5 letters, lexicon lang/lexicons/es.json.gz).
+- Thresholds: VALIDATED if characters >= 0.85 and >= control + 0.30 (or M5 >= 0.60 and >= M5 control + 0.30);
+  PARTIAL if the margin over the control is >= 0.30 without the absolute threshold; otherwise FAILED.
+
+Every measurement made on system S1 (each held-out page is used once and then counted as consumed):
+
+cycle  key        held-out page (view)        tokens  chars  control  margin  M5     M5 ctl  verdict
+C01    CLE_FIGEE  0501 left                   -       0.702  0.459    +0.244  -      -       FAILED
+C02    CLE_C02    0519 left + 0520 left       397     0.778  0.417    +0.361  0.211  0.272   PARTIAL
+C03    CLE_C03    0493 left                   200     0.772  0.438    +0.334  0.273  0.177   PARTIAL
+C04    CLE_C04    0495 left                   195     0.680  0.434    +0.246  0.344  0.192   FAILED
+C05    CLE_C05    -                           -       -      -        -       -      -       stopped at the key health check (10 -> i 0.64 < 0.70); no page opened
+C06    CLE_C06    0504 right                  -       -      -        -       -      -       page in clear, no cipher: no measurement
+C07    CLE_C06    0504 left                   149     0.778  0.424    +0.354  0.306  0.249   PARTIAL
+C08    CLE_C08    -                           -       -      -        -       -      -       stopped at the health check (31b -> pa 0.692 < 0.70); no page opened
+C08c   CLE_C08c   0496 left + right, run 1    273     0.392  0.344    +0.047  0.281  0.186   FAILED (input-format error, see below)
+C08c   CLE_C08c   0496 left + right, run 2    273     0.742  0.422    +0.320  0.281  0.186   PARTIAL  <- official result for this target
+
+Key of this target: CLE_C08c (key.tsv), SHA-256 8cb6cbf2cc0e6003da0fe56eb24f07f4c8678589e3844acc9013c2e02cefe793,
+learned on 14 pairs, health check passed before p. 0496 was opened (20 -> c, 10 -> i and 6 -> p held, 24 -> po 0.794,
+31 -> ma 0.769, 21 -> pa 0.911 (n 60), 28 -> si 0.736 (n 118); each >= 0.70 and n >= 30).
+Held-out cipher: transcription.txt, hashed before the margin was read (075594d4...).
+
+The two runs on p. 0496 (declared):
+- Run 1 read the clear file raw. The measuring script skipped "#" note lines in the cipher file but not in the clear file,
+  and the clear file began with 7 note lines in French, so about 380 letters of our own notes were scored as clear.
+  Result 0.392 against 0.344: FAILED. It is kept in the log.
+- Run 2, agreed by Brice Dudout before it was launched and declared in advance as the official result, with no third run:
+  the same key, cipher, script, 200 control keys and seed; the clear file minus its 7 "#" lines only (checked by diff:
+  13 -> 6 lines, the 6 remaining lines identical byte for byte; SHA-256 cbc8a765...). Result 0.742 against 0.422
+  (margin +0.320): PARTIAL. Head cut t = 24 ("enlasuspensiondearmascon"); without the cut 0.719.
+  The control rises from 0.344 to 0.422 because it is computed against the clear file, which changed.
+- The script now ignores "#" lines in the clear file too (for future measurements only).
+- No words written in clear inside the cipher, so the score "without clear words" is the same (0.742).
+
+Verdict for this target: key partial by our protocol (margin met, absolute threshold 0.85 missed: 0.742).
+Reading by Daniel's rule: 86% (reading.md), so read in part.
