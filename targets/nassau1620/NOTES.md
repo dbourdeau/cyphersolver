@@ -65,3 +65,21 @@ notice only. Nearby but different: `targets/casimir1618` (KHA A23-311, Ernst Cas
 ## Method
 
 Method: (1) the key was not reconstructed: it is written in the family key book (HHStAW Abt. 171 Nr. C 667, image 55), to which the cover of file S 995 points (“Die Schlüssel sind zu C. 667 gelegt”); (2) the upper grid was frozen (SHA-256), then validated on cipher words in the file that carry contemporary glosses in clear (fols. 25 and 29: “vnion”, “werbung”, “monatlich”, “künfftig”, “feindt”…): mean agreement 0.860 on 11 words, against 0.185 for the second grid and at best 0.442 for 20 permuted grids; (3) the shapes of each page were transcribed sign by sign from the digitisations, and each transcription was frozen by SHA-256 before any decoding; the key was never touched; (4) mechanical decoding, then reading by Daniel Bourdeau’s rule, with the statuses certain / probable / restored / unresolved; (5) for letter 3, a pre-registered targeted visual re-reading of doubtful shapes, answers applied mechanically; (6) final count redone by a script on the text published here. The pencil slip (fol. 1) was compared with the key only after the readings: no contradiction.
+
+## Remaining gaps
+
+- Nomenclator capitals and symbols ([A], [B], [Q], [M], [O], [⊙], [∇], [V], [W] ...); the list of capitals in C 667 images 20-54 has not been seen - blocker: no-key-material; the key book's list was not among the images used, and no copy of it is in hand.
+- Ciphered dates ("Datum [D] den [W]/[W] [S]. [y x° w]"): number signs unresolved, so the letters are dated only by context - blocker: open-codes; the signs occur once per letter and nothing in the text narrows them.
+- Postscript fol. 53r, line 16, runs to the edge of the leaf; its continuation has not been seen - blocker: needs-physical-access; verso or a neighbouring leaf not imaged in the digitisation used.
+- Prior work in print not seen: K. Wolf (1937), L. Paul (1966), W. Hahlweg (1973), and the origin of the pencil slip on fol. 1 - blocker: needs-physical-access; print copies and an enquiry to the Hessisches Hauptstaatsarchiv.
+
+(Letter 1 fol. 21v lines 23-24, not re-transcribed at high magnification, is a doubt inside read text and is kept under Limits.)
+
+## Escalation
+
+- [x] siblings: the file's letters 2 (fols. 22r-23v) and 4 (fols. 42-43) are in clear and not part of this reading; the 1609 letter of the file is already printed in clear (Groen van Prinsterer)
+- [x] clear-pages: letters 2 and 4 and the glossed words on fols. 25 and 29 checked; none is a decipherment of these letters (the glosses served only to validate the grid)
+- [x] known-keys: the second grid of C 667 img 55 (0.185) and 20 permuted grids (best 0.442) tried against the upper grid (0.860)
+- [x] print: Groen van Prinsterer, Briefe und Akten, editions of Willem Lodewijk's correspondence and the online finding aids searched: no edition of these letters; Wolf, Paul and Hahlweg unseen (see gaps)
+- [n/a] key-rebuild: the key is written in the key book; only the nomenclator is missing, and its list was not seen
+- [x] retry: letter 3's 22 doubtful shapes re-read blind (21 confirmed, 1 became unresolved); the other pieces had no such re-reading

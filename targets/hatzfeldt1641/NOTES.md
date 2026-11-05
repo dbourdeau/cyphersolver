@@ -85,3 +85,19 @@ reading fixed beforehand). Read from the review: 90v "konnest", "vom 24 Augusti"
 - The clear passages, signatures, countersignatures and the abstract were read by AI agents only, not by a human palaeographer.
 - One reader (an agent) made the reading, seeing the decryption; the key was frozen before, and nothing in it was changed.
 - Fols. 97v–98r are missing from the copies; other cipher letters of 1641 may be in the unreproduced folios and in Bd 243 (ordered, not received).
+
+## Remaining gaps
+
+- Fols. 97v-98r, the middle of the letter of 14 Sept 1641, are not among the copies supplied - blocker: needs-physical-access; a further reproduction from the Hohenlohe-Zentralarchiv is needed.
+- Other cipher letters of 1641 in the folios not reproduced and in Bd 243 (ordered, not received) - blocker: needs-physical-access; reproductions ordered from the archive.
+- Six unresolved letters (2 words) after the blind review: the postscript on 93r (one word of 4 letters) and a marginal insertion on 103r (2 letters) - blocker: illegible; the shapes do not settle.
+- 49 words with a restored or corrected letter (a scribe's slip in an otherwise certain word), counted as holes - blocker: illegible; the slip is the scribe's, the sign cannot be read otherwise.
+
+## Escalation
+
+- [x] siblings: P1 to P5 read against each other (P4 and P5 confirm each other independently; P1 and P5, P2 and P5 share names and numbers); Bd 240 is Stützel's group II, a different system; Bd 243 not received
+- [x] clear-pages: the clear passages between the cipher blocks of each letter read; the pale abstract on the endorsement of P1 (fol. 49v) is mostly illegible
+- [x] known-keys: Stützel's group I key (Anlage 1) is the key and was applied unchanged
+- [x] print: Stützel 1963, this repository, research/leads.json, DECODE and web search: no text of these pieces; the Deutsche Reichstagsakten edition of the Reichstag of 1640/41 may print the Aachen agreement (to be checked once it appears)
+- [n/a] key-rebuild: the key is in print and was not changed; glyph variants were assigned by shape
+- [x] retry: 37 signs (b/u) and 10 signs (x/y) reviewed on the images and corrected; the 18 unresolved signs went through a pre-registered blind review (7 changed, 11 confirmed)
