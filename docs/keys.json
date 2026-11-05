@@ -65,6 +65,7 @@
 {"id": "k-breves1610-henri4", "label": "Henri IV-Brèves key of 1610 (BnF fr. 3462 view 112; DECODE R2077)", "kind": "archive key", "by": "French royal chancery", "year": 1610, "note": "Broken on R2077 by George Lasry with Biermann and Tomokiyo (2021); table found by Camille Desenclos in fr. 3462 (R2077 says 3642); Lasry's CTTS key adds a repeat sign (PR #61)."},
 {"id": "k-r9424-ryxu", "label": "R9424 letter substitution, recovered by Ryan Xu", "kind": "scholar's key", "by": "Ryan Xu (ry-xu) with Claude Opus 5.5", "year": 1583, "found": 2026, "note": "Simple substitution on Latin letters, / doubles the previous letter, nulls at word edges; recovered ciphertext-only from the repository transcription (issue #89, 23 Oct 2026); checked on the images here."},
 {"id": "k-vanreede1793-wainut", "label": "Van Reede's 1792-93 marked code, rebuilt from inv. 6695 (WAINUT)", "kind": "scholar's key", "by": "WAINUT", "year": 1793, "found": 2026, "note": "Rebuilt from 44 cipher/clear pairs in NA 1.01.02 inv. 6695 (PR #66): 2,385 marked group forms; leave-one-out 0.599 of groups exact. A proposal."},
+{"id": "k-brackx-cardona1517", "label": "Ramón de Cardona, Naples 1517 and 1520 (BNE MSS/20210/11): Aragonese-chancery nomenclator, recovered ciphertext-only (Brackx)", "kind": "scholar's key", "by": "Michael Brackx with Claude Opus 5.5", "year": 1517, "found": 2026, "note": "Recovered from the ciphertext alone (GitHub issue #262, PR #264) with the joint annealer of vich1515 extended by the class rule of Lannoy's Naples key: 54 firm and 4 probable letter signs, 78 firm and 14 probable code groups of three letters standing for whole words; one table for 1517 and 1520. 22 code groups and five rare signs open. targets/cardona1517/key/key.tsv."},
 {
  "id": "k-brackx-esp318no94",
  "label": "Viceroy of Sicily 1503, Espagnol 318 no. 94 (Brackx)",
@@ -2475,6 +2476,7 @@
  "note": "alphabet recovered ciphertext-only and code read in part by Brackx; reproduced here from random starts"
 },
   {"key": "k-lasry-sabran1631", "target": "sabran1633", "how": "rebuilt from", "note": "recovered ciphertext-only by George Lasry with CTTS (2022), nomenclator completed with Claude Opus 5.5 (2026); reads all 43 images of Baluze 155, fr. 4134 and fr. 4135, one code open"},
+  {"key": "k-brackx-cardona1517", "target": "cardona1517", "how": "rebuilt from", "note": "alphabet recovered ciphertext-only by Michael Brackx with Claude Code (issue #262, PR #264), the frequent code groups read by context; confirmed by the names Borghese Petrucci (1517) and Giampaolo Baglioni (1520); key partial, text decoded, not read"},
   {"key": "k-r5258", "target": "bilia1527", "how": "read unchanged", "note": "Bilia's own key; f. 102r deciphered by Harumi-Matsuba (issue #55) with the sheet values plus five context values; the project's copy agrees on 440 of 459 signs"},
   {"key": "k-tomokiyo-letellier-marca1644", "target": "letellier1644", "how": "adapted", "note": "Applied by Harumi-Matsuba (issue #54) with values added from the sister letter f. 230r aligned against its decipherment f. 232r"},
   {"key": "k-tomokiyo-vulcob-ancel", "target": "ancel1577", "how": "adapted", "note": "Applied by Harumi-Matsuba (issue #53) to Ancel's Oct-Dec 1577 passages, with small additions from the volume's margin decipherments"},
@@ -5267,6 +5269,8 @@
    "note": "N.79 'Clave de cifra' table compared with N.73: does not fit"
   },
   {"key": "k-vich", "target": "vich1515", "note": "none of the 1511-12 values carries over to N.73's code groups and signs"},
+  {"key": "k-vich", "target": "cardona1517", "note": "the 1511-12 Vich table is another table of the same family: its values do not read Cardona's letters of 1517 and 1520"},
+  {"key": "k-kolosova", "target": "cardona1517", "note": "Charles de Lannoy's Naples cipher of 1522-27 (Kolosova 2017): same family and the source of the class rule, but its letter and code values decode Cardona barely above chance (z = +1.2 against shuffles)"},
   {
    "key": "k-tomokiyo-nevers11",
    "target": "vieuville1587",

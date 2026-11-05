@@ -9,7 +9,7 @@
 - **Reading.** Long passages read, but many sentences still have holes (about 75% of the plaintext letters read as
   sense; about half of the sentences without a hole).
 
-Status: in progress
+Write-up: https://dbourdeau.github.io/cyphersolver/cardona1517.html (written up 4 Nov 2026).
 
 Issue #262 (status report, then update).
 
