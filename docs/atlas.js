@@ -98,11 +98,14 @@
   }
   const placeMarks=()=>{ for(const d of cities) d.el.setAttribute('transform',`translate(${d.p}) scale(${1/K})`); placePins(); };
 
-  // zoom and pan: one finger on a phone scrolls the page, two move the map
-  const zoom=d3.zoom().scaleExtent([.7,14])
+  // zoom and pan: one finger on a phone scrolls the page, two move the map. Past Europe's limit the map becomes the world
+  // map: this projection pulls anything far from Europe out of place
+  const OUT={europe:.5,world:.6};
+  const zoom=d3.zoom().scaleExtent([OUT.europe,14])
     .filter(e=>e.type==='touchstart'?e.touches.length>1:(!e.ctrlKey||e.type==='wheel')&&!e.button)
     .on('zoom',e=>{ K=e.transform.k; g.attr('transform',e.transform); placeMarks(); })
-    .on('end',()=>labels());
+    .on('end',()=>{ labels();
+      if(S.view==='europe'&&K<=OUT.europe*1.01){ leaveCover(); setView('world').then(()=>{ update(); writeHash(); }); } });
   svg.call(zoom).on('dblclick.zoom',null);
   const toFrame=t=>{ (still?svg:svg.transition().duration(800)).call(zoom.transform,t); };
   const resetZoom=()=>toFrame(d3.zoomIdentity);
@@ -120,7 +123,7 @@
   $('azreset').addEventListener('click',resetZoom);
 
   async function setView(v){
-    if(S.view===v) return; S.view=v;
+    if(S.view===v) return; S.view=v; labelKey=''; zoom.scaleExtent([OUT[v],14]);
     if(v==='world'&&!landWorld){ try{ const w=await fetch(LAND+'land-110m.json').then(r=>r.json()); landWorld=topojson.feature(w,w.objects.land); }catch(e){ landWorld=landEurope; } }
     landNow=v==='world'?landWorld:landEurope; K=1; svg.call(zoom.transform,d3.zoomIdentity); layout(); update();
   }
