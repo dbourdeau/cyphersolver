@@ -41,7 +41,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 854 · class C · priority 5.0 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 854 · class C · priority 5.0 · in progress</p>
   <h1>Ramón de Cardona, viceroy of Naples → Charles I: four letters partly in cipher</h1>
   <p class="sub">Partly ciphered despatches from the Naples viceroyalty under Charles I; sibling Naples ciphers are in the repo (vich1511, nino1522).</p>
   <dl class="facts">
@@ -55,6 +55,7 @@
 </section>
 
 <main>
+<div class="callout blue"><p><strong>In progress here.</strong> <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cardona1517/NOTES.md" rel="noopener">targets/cardona1517</a> is working on this cipher (status: in progress). Read its NOTES.md before you start, and hand it to your agent with this page: it records what was transcribed, tried and ruled out, and the next step.</p></div>
 <h2>Hand this page to your AI agent</h2>
 <p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
 <p class="urlline">https://dbourdeau.github.io/cyphersolver/solve/854.html</p>
@@ -63,6 +64,10 @@
 This page: https://dbourdeau.github.io/cyphersolver/solve/854.html
 
 You are helping a public research project read historical cipher letters that nobody has read yet.
+
+START HERE: the project is already working on this cipher. Read these notes before anything else and
+build on them; they record what was transcribed, tried and ruled out, and the next step:
+  https://github.com/dbourdeau/cyphersolver/blob/main/targets/cardona1517/NOTES.md  (status: in progress)
 
 THE CIPHER
   Title:          Ramón de Cardona, viceroy of Naples → Charles I: four letters partly in cipher
@@ -76,11 +81,14 @@ THE CIPHER
     - Europeana: https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000173169
 
 WHAT IS KNOWN
-  Status: BNE catalogue: 'cuatro cartas con firma autógrafa, en parte cifradas'. No decipherment mentioned. Not on DECODE, not in the repo (checked 28 Oct 2026). Checked 28 Oct 2026: Verified 28 Oct: no published reading found; Cardona absent from Tomokiyo's Charles V key list. BDH scans not viewed (403 to script). Note a separate 1513 Cardona cipher entry exists (id 1041).
-  Outcome so far: not yet attempted by the project
+  Known so far (checked 21 Oct 2026): Key recovered ciphertext-only (4 Nov 2026, targets/cardona1517/, PR #264 by Michael Brackx, issue #262): sign alphabet recovered without a crib and the frequent code groups read; confirmed by two names (Borghese Petrucci 1517, Giampaolo Baglioni beheaded June 1520). About 75% of plaintext letters read as sense, about half the sentences without a hole: decoded, not read. Letter /1 is dated 5 Oct 1517 on the page (the record says 5 Mar); /2 and /3 are wholly in clear; no decipherment or key on any leaf.
+  Still open: Letter /1 blocks A, B, C and letter /4 block D: 22 code types without a value and 12 doubtful, mostly single occurrences; the candidate key BRAH 9/15 ff. 1-6 (Galende Diaz 1994, DECODE R9815-R9820, restricted images) was not compared and needs DECODE access. Not on DECODE (no record for these letters).
+  History and prior art: BNE catalogue: 'cuatro cartas con firma autógrafa, en parte cifradas'. No decipherment mentioned. Not on DECODE, not in the repo (checked 28 Oct 2026). Checked 28 Oct 2026: Verified 28 Oct: no published reading found; Cardona absent from Tomokiyo's Charles V key list. BDH scans not viewed (403 to script). Note a separate 1513 Cardona cipher entry exists (id 1041). Worked 4 Nov 2026: see known/open and targets/cardona1517/ (Status: in progress).
+  Outcome so far: In progress here, in targets/cardona1517/ (earlier: attempted, open).
   Prior-art check: open (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed; Cardona not mentioned on Tomokiyo's page)
   Check first: View on BDH in a browser; try Kolosova Naples/Charles V keys (Ko.1, Ko.2) on the passages.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/cardona1517/NOTES.md
   Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/vich1511/NOTES.md
   Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/federico1497/NOTES.md
 
@@ -88,9 +96,9 @@ STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); targets/vich1511/NOTES.md (everything
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/cardona1517/NOTES.md (everything
    already tried on this cipher, with the files it used); and lang/README.md (shared language models).
-   Put all your work in targets/vich1511/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   Put all your work in targets/cardona1517/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
    under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
@@ -131,7 +139,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/vich1511/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/cardona1517/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+854&amp;target=catalogue+854
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -147,12 +155,12 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>Where the cipher is</h2>
 <p class="frame confirmed"><b>Cipher located and confirmed.</b> MSS/20210/11/1, viewer page 4 (right leaf of the opening): Spanish letter (first of four, 11 viewer pages); page 3 is clear text, page 4 right leaf has a block of about 9 lines in cipher signs/letter-like symbols inside the clear text. No decipherment or gloss seen on that block. Other three letters (viewer ids 95b556a7-6aec-49a7-a7b6-c1abb83c37d0, 7f6e40bc-8bfa-4629-b9f3-e420355778cf, a84df16f-a008-4252-9c9c-16ac65c05b40) not paged through. (checked 2026-10-30 by an LLM on the page) <a href="https://bnedigital.bne.es/bd/es/viewer?id=a06f5018-54ae-4c8c-b11b-17d2e4e0d079&amp;page=4" rel="noopener">open that page</a></p>
 <h2>What is known</h2>
+<p class="ko"><i class="k">known</i> <span class="asof">checked 21 Oct 2026</span> Key recovered ciphertext-only (4 Nov 2026, targets/cardona1517/, PR #264 by Michael Brackx, issue #262): sign alphabet recovered without a crib and the frequent code groups read; confirmed by two names (Borghese Petrucci 1517, Giampaolo Baglioni beheaded June 1520). About 75% of plaintext letters read as sense, about half the sentences without a hole: decoded, not read. Letter /1 is dated 5 Oct 1517 on the page (the record says 5 Mar); /2 and /3 are wholly in clear; no decipherment or key on any leaf.</p><p class="ko"><i class="o">open</i> Letter /1 blocks A, B, C and letter /4 block D: 22 code types without a value and 12 doubtful, mostly single occurrences; the candidate key BRAH 9/15 ff. 1-6 (Galende Diaz 1994, DECODE R9815-R9820, restricted images) was not compared and needs DECODE access. Not on DECODE (no record for these letters).</p>
 
-
-<p><b>Status and prior art.</b> BNE catalogue: 'cuatro cartas con firma autógrafa, en parte cifradas'. No decipherment mentioned. Not on DECODE, not in the repo (checked 28 Oct 2026). Checked 28 Oct 2026: Verified 28 Oct: no published reading found; Cardona absent from Tomokiyo's Charles V key list. BDH scans not viewed (403 to script). Note a separate 1513 Cardona cipher entry exists (id 1041).</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed; Cardona not mentioned on Tomokiyo's page).</p>
+<p><b>History and prior art.</b> BNE catalogue: 'cuatro cartas con firma autógrafa, en parte cifradas'. No decipherment mentioned. Not on DECODE, not in the repo (checked 28 Oct 2026). Checked 28 Oct 2026: Verified 28 Oct: no published reading found; Cardona absent from Tomokiyo's Charles V key list. BDH scans not viewed (403 to script). Note a separate 1513 Cardona cipher entry exists (id 1041). Worked 4 Nov 2026: see known/open and targets/cardona1517/ (Status: in progress).</p>
+<p><b>Outcome so far.</b> In progress here, in targets/cardona1517/ (earlier: attempted, open). Prior-art check: open (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed; Cardona not mentioned on Tomokiyo's page).</p>
 <p><b>Check first.</b> View on BDH in a browser; try Kolosova Naples/Charles V keys (Ko.1, Ko.2) on the passages.</p>
-<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vich1511/NOTES.md" rel="noopener">targets/vich1511/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/vich1511" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/federico1497/NOTES.md" rel="noopener">targets/federico1497/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/federico1497" rel="noopener">the folder</a>)</li></ul>
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cardona1517/NOTES.md" rel="noopener">targets/cardona1517/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/cardona1517" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vich1511/NOTES.md" rel="noopener">targets/vich1511/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/vich1511" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/federico1497/NOTES.md" rel="noopener">targets/federico1497/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/federico1497" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
