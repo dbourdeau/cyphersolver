@@ -678,6 +678,12 @@ PAGES = [
          title='Fra Giovanni di Lucca to Ferdinand III, 1644',
          blurb='A 231-figure Italian cipher paragraph in a friar&rsquo;s letter to the Emperor (DECODE R2159), a substitution with two figures for each vowel. The key was recovered using the opening words Tomokiyo had published as a crib, and every figure was decrypted; checked against the manuscript, the apparent polyphony turned out to be ten misread 4s and three encipherment slips. The Grand Hetman Koniecpolski offers to keep the Turk from R&aacute;k&oacute;czi, raise Moldavia against him and give two thousand Cossacks.',
          quote='&ldquo;il principe di Bogdania, et li dar&ograve; dumilia Cosachi &hellip; che non faccia pace fin che non l&rsquo;habbi humiliato o vinto&rdquo;'),
+    dict(slug='desnoyers1659', label='Des Noyers to Boulliau 1659', year='1659', y=1659.95, place='Danzig &rarr; Paris', st='solved', stt='existing decipherment',
+         author='Brice Dudout',
+         title='Pierre Des Noyers to Isma&euml;l Boulliau, Danzig, December 1659',
+         blurb='A short note in cipher, enclosed in a letter from the secretary of the Queen of Poland to the Paris astronomer Boulliau, on the Spanish marriage of Louis XIV and la Mancini. A contemporary hand, probably Boulliau&rsquo;s, wrote the clear word above every cipher group, so the note was deciphered at the time and is not a new decipherment. Brice Dudout transcribed the 24 groups and the gloss and rebuilt the two-digit nomenclator with marks from the other glossed passages of the volume; 12 of 12 cipher words are given by the gloss and 8 are supported by the rebuilt table.',
+         quote='&ldquo;sans la Reine on n&rsquo;attendroit pas la mort du Prince despagne pour rompre le mariage&rdquo;',
+         rights='Manuscript: Biblioth&egrave;que nationale de France, Fran&ccedil;ais 13020 f. 297, via Gallica; transcription and key by Brice Dudout (PR #263)'),
     dict(slug='asang1662', label='Anonymous letter, Sanguszko archive 1662', year='1662', y=1662.58, place='Poland (Royal Prussia?)', st='solved', stt='read',
          title='Anonymous letter in the Sanguszko archive, 31 July 1662',
          blurb='An unsigned Polish letter written wholly in a substitution of 23 composite sign groups, with no key and no contemporary decipherment (Archiwum Narodowe w Krakowie, Archiwum Sanguszk&oacute;w 134/8; DECODE R7513). Brice Dudout broke it from the ciphertext of the front, froze the key, tested it on the held-out reverse, and read all 71 words: the Swedes are arming and have ordered prayers and a fast for the third time.',
@@ -4173,6 +4179,7 @@ IMAGES['deboli1788'] = None
 IMAGES['siguenza1554'] = None
 IMAGES['alfonso1576'] = None
 IMAGES['marignano1546'] = None
+IMAGES['desnoyers1659'] = ('desnoyers1659_note.jpg', 'The whole note, with the gloss above the cipher groups', 'Biblioth&egrave;que nationale de France, Fran&ccedil;ais 13020 f. 297, via Gallica')
 IMAGES['buda1490'] = None
 IMAGES['adrian1520'] = None
 IMAGES['damas1787'] = None

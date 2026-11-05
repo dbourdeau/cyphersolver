@@ -2405,6 +2405,8 @@
 {"id": "k-adrian1520-k7", "label": "Cardinal of Tortosa's dotted trigraph code, 1520-21 (key K7, rebuilt from his other letters)", "kind": "rebuilt here", "by": "cyphersolver (Brice Dudout)", "year": 1520, "note": "Consonant-vowel-consonant groups with a dot for words and syllables, and a homophonic alphabet; rebuilt from cipher and plain pairs of the Cardinal's letters of 1520-21 (Bergenroth, Danvila, contemporary transcriptions), frozen, and validated on a fresh pair (0.882 of characters against at best 0.176 for 200 shuffled keys)."},
 {"id": "k-buda1490", "label": "Maffeo da Treviglio 1490 homophonic Latin cipher (key.json, rebuilt here)", "kind": "rebuilt here", "by": "cyphersolver (contributor)", "year": 1490, "note": "Rebuilt from the clear minute of the same letter kept in Milan, extended by a retry pass; 76 labels over 3,199 tokens, about 60 carrying the text."},
 {"id": "k-marignano1546", "label": "Marignano 1546 homophonic substitution (key.tsv, rebuilt here)", "kind": "rebuilt here", "by": "cyphersolver (contributor)", "year": 1546, "note": "Rebuilt from the contemporary clear translation on c. 14r of the same letter and frozen; homophones for vowels, a sigma-shaped null, and a code for V. Ecc.a."},
+{"id": "k-desnoyers1659", "label": "Des Noyers and Boulliau 00-99 nomenclator with marks, 1658-1659 (key.tsv, rebuilt here)", "kind": "rebuilt here", "by": "cyphersolver (contributor Brice Dudout)", "year": 1659, "note": "Rebuilt from adjacent glossed plaintext: the twelve passages of BnF Fr. 13020 (Sept 1658 - Dec 1659) in which a contemporary hand wrote the clear word over each cipher group; 88 distinct groups, 88.8% of group occurrences agree with their most common value (contributor's count). Not the 1656 sign key of f. 315."},
+{"id": "k-desnoyers1656", "label": "Des Noyers to Boulliau sign key of 1656 (BnF Fr. 13020 f. 315)", "kind": "contemporary key", "by": "Pierre Des Noyers", "year": 1656, "note": "A sign alphabet with a nomenclator of groups 3-39, on f. 315 of the same volume; tested on the 1658-1659 glossed passages and does not fit them."},
 {"id": "k-alfonso1576", "label": "Alfonso II d'Este 1576 simple substitution (key_1576.tsv, recovered ciphertext-only)", "kind": "rebuilt here", "by": "cyphersolver (contributor)", "year": 1576, "note": "20 signs, nulls x, y, k, & and 3, no word breaks; recovered by quadgram search on period Italian with no crib, then corrected on two q-forms (g = s, q = m)."},
 {"id": "k-siguenza1554", "label": "Pacheco 1554 chancery syllabary (key_1554.md, rebuilt here)", "kind": "rebuilt here", "by": "cyphersolver (contributor)", "year": 1554, "note": "Consonant signs with vowel marks, syllable signs, homophones and code groups; rebuilt by aligning cipher and the decipherment of the time on five BNE letters, then confirmed on four Real Biblioteca letters (97% of 626 signs)."},
 {"id": "k-deboli1788-k4", "label": "Deboli 1788 numerical code, key K4 (the 1789 key completed on 1788 pairs)", "kind": "rebuilt here", "by": "cyphersolver (Brice Dudout)", "year": 1788, "note": "Daniel Bourdeau's 1789 key plus 12 values, 3 nulls, 6 twice-attested values and 11 alternatives learned only on 1788 despatches aligned with their same-date cabinet decipherments, frozen in three stages. Held-out pair of 11 Nov 1788: 0.862 of groups read as sense."}
@@ -3837,6 +3839,7 @@
 {"key": "k-adrian1520-k7", "target": "adrian1520", "how": "rebuilt from", "note": "key rebuilt from the Cardinal's other cipher letters with known plain text, frozen, validated on PTR,LEG,2,1,99, then applied to the unread paragraph of 9 September 1520"},
 {"key": "k-buda1490", "target": "buda1490", "how": "rebuilt from", "note": "key recovered from the Milan minute, extended by the retry pass; statistical validation passed"},
 {"key": "k-marignano1546", "target": "marignano1546", "how": "rebuilt from", "note": "key rebuilt from the clear translation on c. 14r, frozen, then used for the counts"},
+{"key": "k-desnoyers1659", "target": "desnoyers1659", "how": "rebuilt from", "note": "table rebuilt from the other glossed passages of Fr. 13020 (adjacent glossed plaintext); the note itself is read from its own contemporary gloss"},
 {"key": "k-alfonso1576", "target": "alfonso1576", "how": "rebuilt from", "note": "key recovered from the ciphertext alone by quadgram search; 8 of 10 restarts reached one solution"},
 {"key": "k-siguenza1554", "target": "siguenza1554", "how": "rebuilt from", "note": "key rebuilt from the decipherments of the time on the BNE letters; confirmed on the Real Biblioteca siblings"},
 {"key": "k-deboli-polish-1789", "target": "deboli1788", "how": "adapted", "note": "the 1789 key is the starting point of K4 and reads 0.859 of the held-out pair unchanged"},
@@ -4477,6 +4480,7 @@
 {"source": "s-cyphersolver", "key": "k-adrian1520-k7"},
 {"source": "s-cyphersolver", "key": "k-buda1490"},
 {"source": "s-cyphersolver", "key": "k-marignano1546"},
+{"source": "s-cyphersolver", "key": "k-desnoyers1659"},
 {"source": "s-cyphersolver", "key": "k-alfonso1576"},
 {"source": "s-cyphersolver", "key": "k-siguenza1554"},
 {"source": "s-cyphersolver", "key": "k-deboli1788-k4"}
@@ -4580,6 +4584,7 @@
   "urquhart": "No cipher key: a rule-based word puzzle, read by applying the stated rule (see the write-up)."
  },
  "tried": [
+{"key": "k-desnoyers1656", "target": "desnoyers1659", "note": "no sign of its alphabet in the glossed passages; 0 agreements in the 41 groups 3-39 (200 permuted controls: mean 0.001); a different table"},
 {"key": "k-r5324", "target": "visconti1446", "note": "its e signs are not the slips' e signs; does not fit the R5323 slips"},
 {"key": "k-r5323", "target": "visconti1447", "note": "does not fit f. 15 from its first signs"},
 {"key": "k-fifthmd1869", "target": "augur1874", "note": "same family (columns, indicator, arbitraries) but with check words; none of its arbitraries recur in the 1874 telegrams"},

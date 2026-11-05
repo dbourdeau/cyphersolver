@@ -1,6 +1,6 @@
 # Des Noyers 1659: Pierre Des Noyers to Ismaël Boulliau, note in cipher, [Danzig, December 1659] (BnF Français 13020 f. 297)
 
-Status: in progress (merged from PR #263 on 5 Nov 2026; write-up pending: key wording to settle, no image licence for a snip, reading review marginal) — author's claim: read (existing contemporary decipherment: the interlinear gloss of the time, transcribed and checked; Brice Dudout, 29 Oct 2026, revised 4 Nov 2026; 12 of 12 words read in their sense: 6 certain, 2 probable, 4 restored from the contemporary gloss, 0 unresolved; Daniel Bourdeau's 95% rule). Not a solution: the note was deciphered at the time.
+Status: written up on 4 Nov 2026 (docs/desnoyers1659.html). Outcome: read from existing decipherment: the contemporary interlinear gloss on the note deciphered it at the time; this project's contribution is the transcription of cipher and gloss (Brice Dudout, PR #263, 29 Oct 2026, revised 4 Nov 2026) and the 00-99 nomenclator rebuilt from the other glossed passages of the volume (a key rebuilt from adjacent glossed plaintext, not the 1656 sign key of f. 315). 12 of 12 cipher words given by the gloss: 6 certain, 2 probable, 4 restored from the gloss alone. Not a new decipherment.
 
 Contributed by Brice Dudout, 29 Oct 2026 (revised 4 Nov 2026).
 
@@ -44,3 +44,12 @@ Files: `transcription.txt`, `decryption.txt`, `reading.md`, `translation.md`, `k
 - What is certain. The values 29 la, 30+ Reine, 86^ Prince, 42 de, 46 s, 02 pa, 54 ne, 52 le, 41 ma, 69 n, 57 ci, 33 a, 23 r, 65 di, 10° e/ie recur with the same value in the glossed passages of 1658–1659 (“la Reine” six times, “le Prince de Condé”, “injustice”, “chambre”, “congédié”…). 40 g (Longueville) and 77 ni (“ni de gain”) occur there only once: probable. 30^ mort, 21° du, 20^° mariage and 47 b occur nowhere else: their value comes from the gloss alone (restored).
 - The Queen. In this cipher 30+ means “the Queen” without saying which: in 1658 the Queen of Poland; here, from the context (the Spanish marriage), Anne of Austria, mother of Louis XIV. “The Prince of Spain” is the Infante Philip Prosper (1657–1661), Philip IV’s only son: his death would have made the Infanta Maria Theresa heiress of Spain.
 - What the note adds. Des Noyers answers news from Paris about Marie Mancini (“what you tell me of her”); he thinks that only the Queen Mother holds the Spanish marriage together. The 1859 edition prints the letters, but not this enclosed note.
+
+## Write-up session, 4 Nov 2026
+
+- Compared the transcription with the full-resolution image (openapi.bnf.fr IIIF, view 608, 4,915 px wide): all 24 groups and the gloss words agree. Open on the image: the ring after 10, 21 and 20 (mark or raised zero; for 20 the circumflex is the only clear mark) and the final word, dittes or ditte.
+- Searched the Internet Archive OCR of the 1859 edition: no "petit billet" and no Mancini passage in the letters of 13, 20 and 27 Dec 1659 (OCR is noisy; a miss is not a proof).
+- The reading file had Des Noyers's plain text in angle brackets, which `_check_reading.py` counts as gaps (50% clean sentences). Rewritten as the sentence the note makes (1.0). The text was not changed.
+- Not recomputed: the 88.8% (450/507) and 97.2% (105/108) consistency figures and the 200 controls, because the other eleven glossed passages are not in the repository. All 24 values used here are values `key.tsv` holds for their group and agree with the gloss.
+- Not verified: that the gloss is Boulliau's hand; which Queen (Anne of Austria is the contributor's reading; the group 30+ meant the Queen of Poland in the 1658 passages) and which Mancini the note means.
+- Portraits: Boulliau (Commons, Pieter van Schuppen); none for Des Noyers (no Wikipedia article, Wikidata Q110223770 has no image, Commons search finds nothing).
