@@ -1,6 +1,6 @@
 # Des Noyers 1659: Pierre Des Noyers to Ismaël Boulliau, note in cipher, [Danzig, December 1659] (BnF Français 13020 f. 297)
 
-Status: read (existing contemporary decipherment: the interlinear gloss of the time, transcribed and checked; Brice Dudout, 29 Oct 2026, revised 4 Nov 2026; 12 of 12 words read in their sense: 6 certain, 2 probable, 4 restored from the contemporary gloss, 0 unresolved; Daniel Bourdeau's 95% rule). Not a solution: the note was deciphered at the time.
+Status: in progress (merged from PR #263 on 5 Nov 2026; write-up pending: key wording to settle, no image licence for a snip, reading review marginal) — author's claim: read (existing contemporary decipherment: the interlinear gloss of the time, transcribed and checked; Brice Dudout, 29 Oct 2026, revised 4 Nov 2026; 12 of 12 words read in their sense: 6 certain, 2 probable, 4 restored from the contemporary gloss, 0 unresolved; Daniel Bourdeau's 95% rule). Not a solution: the note was deciphered at the time.
 
 Contributed by Brice Dudout, 29 Oct 2026 (revised 4 Nov 2026).
 
