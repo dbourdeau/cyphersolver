@@ -17,7 +17,7 @@ import re, sys, pathlib, html, json, hashlib, datetime
 HERE = pathlib.Path(__file__).parent
 ICONS = ('<link rel="icon" href="favicon.svg" type="image/svg+xml">\n<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">\n'
          '<link rel="apple-touch-icon" href="apple-touch-icon.png">\n')
-VERSION ='20261105a'
+VERSION ='20261105b'
 SITE = 'Cyphersolver'
 REPO = 'https://github.com/dbourdeau/cyphersolver'
 
@@ -3295,7 +3295,7 @@ EXPLORE = [('highlights', 'Highlights', 'Thirty favourites: the funny, the histo
            ('glossary', 'Glossary', 'How each cipher was solved, and the terms used'),
            ('famous', 'The famous ones', 'Why Voynich, Kryptos, Beale and Dorabella resist'),
            ('atlas', 'Atlas', 'Every letter drawn on the map, five centuries of it'),
-           ('keys', 'Key web', 'Which key read which letter'),
+           ('keys', 'Key web', 'Which key opened which letter'),
            ('secret', 'Secret letter', 'Seal a message in a real historical cipher')]
 CHEVRON = ('<svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" '
            'stroke="currentColor" stroke-width="1.6"/></svg>')
@@ -4080,6 +4080,7 @@ def check_keys(meta):
     for k in kw['keys']:
         if k.get('kind') not in KEY_KINDS: errs.append(f"{k['id']}: kind {k.get('kind')!r} not in {sorted(KEY_KINDS)}")
         if '&' in k.get('label', '') and ';' in k['label']: errs.append(f"{k['id']}: HTML entity in label (write plain text)")
+        if not (k.get('year') is None or type(k['year']) is int): errs.append(f"{k['id']}: year {k['year']!r} is not an integer or null")
         im = k.get('image')
         if im and (not (HERE / im['src']).exists() or not im.get('credit')): errs.append(f"{k['id']}: image missing or uncredited")
     for kind, rows in (('link', kw['links']), ('tried', kw.get('tried', []))):
