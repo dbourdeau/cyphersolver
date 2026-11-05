@@ -6,19 +6,18 @@ Per page it: replaces the first <nav class="nav">...</nav> (or the <!-- site:nav
 header; replaces the last <footer>...</footer> (or <!-- site:footer -->) with the generated footer, including
 previous / next links in chronological order; inserts an "On this page" contents strip after <main> when the page
 has three or more h2 sections with ids; stamps the stylesheet and script versions; and removes inline <style>
-blocks whose rules now live in style.css. On index.html it also regenerates the write-up cards between
-<!-- cards:start --> and <!-- cards:end -->, and refolds "Recent findings" so that only the newest RECENT_VISIBLE
-entries show and the rest sit behind the "Show N earlier findings" button (add new entries at the top of the first
-list and rebuild). The priority queue is still built by _build_queue.py.
+blocks whose rules now live in style.css. On index.html it also regenerates the featured cards between
+<!-- cards:start --> and <!-- cards:end -->, the ways to help and the routes into the write-ups. Every finding lives on
+findings.html (add new entries at the top of its list and rebuild); index.html mirrors the newest RECENT_VISIBLE.
 
 It also stamps the dates: the hero dateline, the head meta tags, the index cards, the list rows and each line
-of "Recent findings" all carry the day the finding landed, from _dates.json, which this script maintains.
+of findings.html all carry the day the finding landed, from _dates.json, which this script maintains.
 """
 import re, sys, pathlib, html, json, hashlib, datetime
 HERE = pathlib.Path(__file__).parent
 ICONS = ('<link rel="icon" href="favicon.svg" type="image/svg+xml">\n<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">\n'
          '<link rel="apple-touch-icon" href="apple-touch-icon.png">\n')
-VERSION ='20261030a'
+VERSION ='20261105a'
 SITE = 'Cyphersolver'
 REPO = 'https://github.com/dbourdeau/cyphersolver'
 
@@ -28,7 +27,7 @@ REPO = 'https://github.com/dbourdeau/cyphersolver'
 # the page body: nav, footer, contents strip, lead figure, the dateline itself
 # and the version stamps are all generated here, so normalise() removes them
 # before hashing.  A rebuild that only reshuffles that furniture therefore does
-# not move the date.  Findings on index.html are dated the same way, keyed by
+# not move the date.  Findings on findings.html are dated the same way, keyed by
 # the bold lead-in of each entry, so a hand-added line dates itself on the next
 # build.  Seed the file with _seed_dates.py; after that it maintains itself.
 DATES_PATH = HERE / '_dates.json'
@@ -70,6 +69,7 @@ GENERATED = [
     r'<meta name="(?:date|last-modified)"[^>]*>', r'<link rel="(?:icon|apple-touch-icon)"[^>]*>',
     r'\n?<!-- bnx -->.*?<!-- /bnx -->', r' data-bnx="1"', r'<span class="fth">.*?</span><!-- /fth -->',
     r'<!-- cattop:start -->.*?<!-- cattop:end -->\n?',
+    r'<!-- help:start -->.*?<!-- help:end -->\n?', r'<!-- browse:start -->.*?<!-- browse:end -->\n?', r' data-mirror',
     r'<!-- lasry:start -->.*?<!-- lasry:end -->\n?',
     r'\n?<p class="outcome">.*?</p><!-- /outcome -->',
     r'\n?<p class="credits">.*?</p><!-- /credits -->', r'<!-- contrib:start -->.*?<!-- contrib:end -->\n?',
@@ -116,7 +116,7 @@ def page_dates(slug, s):
 DATEISH = re.compile(r'^(?:solved(?: in part)?|resolved|attempted|posted|read(?: in part)?|published|first published|updated)?'
                      r'\s*(?:\d{1,2}\s+)?(?:' + '|'.join(MONTHS) + r'|Sept?)?\s*\d{4}$', re.I)
 
-SHARED_PAGES = ('index', 'contributors', 'contribute')      # pages of the ledger as a whole, not of one write-up
+SHARED_PAGES = ('index', 'findings', 'contributors', 'contribute')      # pages of the ledger as a whole, not of one write-up
 def meta_html(p, rec, old, slug=None):
     """Rebuild the hero dateline, keeping whatever else the page put on that line."""
     author = (p.get('author') if p else None) or ('Daniel Bourdeau and contributors' if slug in SHARED_PAGES else 'Daniel Bourdeau')
@@ -3291,6 +3291,7 @@ def nav_html(current):
     panel = (f'<div class="grp latest"><h4>Latest</h4><ul>{lis}</ul></div>'
              f'<div class="grp outc"><h4>By outcome</h4><ul>{groups}</ul></div>'
              f'<div class="foot"><a class="all" href="writeups.html"{cur("writeups")}>All {len(PAGES)} write-ups, with filters &rarr;</a>'
+             f'<a href="findings.html"{cur("findings")}>All findings, newest first</a>'
              f'<a href="writeups.html#src=notes">Results only in the notes</a></div>')
     explore = (''.join(f'<li><a href="{slug}.html"{cur(slug)}><b>{name}</b><span class="d">{desc}</span></a></li>'
                        for slug, name, desc in EXPLORE).join(('<ul>', '</ul>'))
@@ -3618,68 +3619,15 @@ def reveal_run(slug, n=9):
     if len(toks) < 4: return None
     return d, toks[:n]
 
-def slide_extras(slug):
-    """Portraits of the correspondents and a strip of the cipher deciphering itself, for a slide on the index."""
-    people = sorted(PICTURED.get(slug, []), key=lambda p: p['role'] != 'sender')
-    who = ''
-    if people:
-        one = lambda p: (f'<span class="bw"><img src="{p["img"]}" alt="" loading="lazy"><span><i>{"from" if p["role"] == "sender" else "to"}</i>'
-                         f'{html.escape(p["name"])}</span></span>')
-        who = '<div class="bn-who">' + '<b aria-hidden="true">&rarr;</b>'.join(one(p) for p in people) + '</div>'
-    run = reveal_run(slug)
-    strip = ''
-    if run:
-        d, toks = run
-        tiles = ''.join(f'<span class="bt"><span class="g">{html.escape(t["g"])}</span><span class="p">{html.escape(t["p"])}</span></span>' for t in toks)
-        strip = (f'<div class="bn-solve"><span class="bk">See it solved</span><div class="bts">{tiles}<span class="bt more">&hellip;</span></div>'
-                 f'<a href="{slug}.html#{html.escape(d.get("anchor") or "", quote=True)}" class="bl">{html.escape(d.get("unit") or "")}</a></div>')
-    return who, strip
-
-def bnx_panels(s):
-    """Dress every slide of the index carousel: its correspondents over the picture and the opening of its
-    cipher deciphering underneath. A slide without a picture gets a panel made of the two. Idempotent."""
-    s = re.sub(r'\n?<!-- bnx -->.*?<!-- /bnx -->', '', s, flags=re.S)
-    s = s.replace('class="bn-panel hasart" data-bnx="1"', 'class="bn-panel noart"').replace('class="bn-panel hasart on" data-bnx="1"', 'class="bn-panel noart on"')
-    def dress(panel):
-        cta = re.search(r'class="cta" href="([a-z0-9]+)\.html"', panel)
-        if not cta: return panel
-        who, strip = slide_extras(cta.group(1))
-        if not (who or strip): return panel
-        if '<figure class="art">' in panel:
-            panel = panel.replace('<figure class="art">', '<figure class="art">' + (f'<!-- bnx -->{who}<!-- /bnx -->' if who else ''), 1)
-            if strip: panel = panel.replace('</figure>', f'<!-- bnx -->{strip}<!-- /bnx --></figure>', 1)
-        else:       # after the text column, which closes on the first </div> after the call to action
-            j = panel.index('</div>', panel.index('</a>', cta.end())) + len('</div>')
-            panel = panel[:j] + f'\n<!-- bnx --><figure class="art solveart">{who}{strip}</figure><!-- /bnx -->' + panel[j:]
-            panel = re.sub(r'class="bn-panel noart( on)?"', lambda k: f'class="bn-panel hasart{k.group(1) or ""}" data-bnx="1"', panel, count=1)
-        return panel
-    # each slide runs from its opening tag to the next slide's, the last one to the end of the carousel
-    starts = [m.start() for m in re.finditer(r'<div class="bn-panel', s)]
-    if not starts: return s
-    end = s.index('<h2 id="recent">', starts[-1]) if '<h2 id="recent">' in s[starts[-1]:] else len(s)
-    bounds = starts + [end]
-    return s[:starts[0]] + ''.join(dress(s[bounds[i]:bounds[i + 1]]) for i in range(len(starts))) + s[end:]
-
 def catintro_html():
     """The catalogue section's opening paragraph, counted from catalogue.json so it never goes stale."""
     import _catalogue_page as C
-    from collections import Counter
     es = json.loads((HERE.parent / 'catalogue.json').read_text(encoding='utf-8'))['entries']
     op = [e for e in es if e['counted'] and C.is_open(e)]
     ys = [e['year'] for e in op if isinstance(e.get('year'), int)]
-    src = Counter()
-    for e in op:
-        t = e['source']
-        src['DECODE' if t.startswith('DECODE') else 'Cryptoole' if t.startswith('Cryptoole') else 'the BnF catalogue on Gallica' if t.startswith('BnF')
-            else 'calendars and printed editions' if t.startswith(('Calendars', 'Printed', 'cryptiana')) else "contributors' reports" if 'issue' in t
-            else 'the archive sweeps'] += 1
-    parts = [f'{k} ({v})' for k, v in src.most_common()]
-    lst = ', '.join(parts[:-1]) + ' and ' + parts[-1] if len(parts) > 1 else ''.join(parts)
     seen = sum(1 for e in op if 'image' in str(e.get('seen')) or e.get('seen') == 'viewed')
-    return (f'<!-- catintro:start -->\n<p>The open work comes from the <a href="catalogue.html">catalogue</a>: {len(op)} undeciphered letters and series '
-            f'from {min(ys)} to {max(ys)}, found in {lst}. Each carries its shelfmark, the prior art checked, a difficulty class and the '
-            f'check that would confirm it is genuinely open; {seen} of them have been looked at on the image. A target leaves the catalogue when it '
-            f'is read, resolved or found in print, and its write-up joins the list above.</p>\n<!-- catintro:end -->')
+    return (f'<!-- catintro:start -->\n<p>{len(op):,} undeciphered letters and series from {min(ys)} to {max(ys)}. Each carries its shelfmark, the prior art '
+            f'checked, a difficulty class and the check that would confirm it is genuinely open; {seen} have been looked at on the image.</p>\n<!-- catintro:end -->')
 
 
 def cattop_html(n=6):
@@ -3687,14 +3635,14 @@ def cattop_html(n=6):
     import _catalogue_page as C
     top = sorted([e for e in C.DATA['entries'] if e['counted'] and C.is_open(e)], key=lambda e: (-C.priority(e), e['id']))[:n]
     li = ''.join(f'  <li><a href="solve/{e["id"]}.html">{C.people_html(e) or C.blank_html(e)}<span class="t">{C.esc(e["title"])}</span>'
-                 f'<span class="pr" title="priority">{C.priority(e):.1f}</span><span class="yr">{C.esc(e["date"])}</span></a></li>\n' for e in top)
+                 f'<span class="pr"><small>priority</small> {C.priority(e):.1f}</span><span class="yr">{C.esc(e["date"])}</span></a></li>\n' for e in top)
     return f'<!-- cattop:start -->\n<h3 class="listhead">Top of the queue</h3>\n<ul class="list cattop">\n{li}</ul>\n<!-- cattop:end -->\n'
 
 def card_html(p):
     im = IMAGES.get(p['slug'])
     thumb = f'    <img class="thumb" src="{im[0]}" alt="" loading="lazy">\n' if im else ''
     return (f'  <a class="card{" hasthumb" if im else ""}" href="{p["slug"]}.html">\n' + thumb +
-            f'    <div class="eyebrow"><span>{p["place"]} &middot; {p["year"]}</span>{when_html(p)}<span class="st {p["st"]}">{p["stt"]}</span></div>\n'
+            f'    <div class="eyebrow"><span>{p["place"]} &middot; {p["year"]}</span><span class="st {p["st"]}">{p["stt"]}</span></div>\n'
             f'    <h3>{p["title"]}</h3>\n    <p>{p["blurb"]}</p>\n    <p class="quote">{p["quote"]}</p>\n    {avatars_html(p["slug"])}<span class="go">read &rarr;</span>\n  </a>\n')
 
 PORTRAITS = json.loads((HERE / '_portraits.json').read_text(encoding='utf-8')) if (HERE / '_portraits.json').exists() else {}
@@ -3714,13 +3662,27 @@ def parties_html(people):
     recipients = ''.join(one(p) for p in order if p['role'] != 'sender')
     return '\n<div class="parties">' + senders + (sep if senders and recipients else '') + recipients + '</div><!-- /parties -->'
 
-RECENT_VISIBLE = 5      # "Recent findings" on index.html shows this many entries; the rest fold behind the button
+RECENT_VISIBLE = 5      # "Latest findings" on index.html mirrors this many entries of findings.html
+FINDINGS_PAGE = HERE / 'findings.html'
+FINDINGS_LIST = re.compile(r'(<h2 id="recent">.*?</h2>\n(?:<p>.*?</p>\n)?)(<ul class="findings">.*?)(?=\n<h2|\n<!-- |\Z)', re.S)
 
-def fold_findings(s, n=RECENT_VISIBLE):
-    """Rebuild the Recent findings section so the first n <li> are visible and the rest sit in the hidden
-    .more block. Entries may be added to either list by hand; this gathers them all in order and re-splits."""
-    m = re.search(r'(<h2 id="recent">.*?</h2>\n(?:<p>.*?</p>\n)?)(<ul class="findings">.*?)(?=\n<h2|\n<!-- |\Z)', s, re.S)
-    if not m: return s
+def absorb_findings():
+    """findings.html holds every finding and index.html mirrors the newest (<li data-mirror>). A plain <li> on index.html
+    was added there by hand or by a branch older than findings.html: it moves to the top of findings.html, once."""
+    index, page = (HERE / 'index.html').read_text(encoding='utf-8'), FINDINGS_PAGE.read_text(encoding='utf-8')
+    region, held = FINDINGS_REGION.search(index), FINDINGS_LIST.search(page)
+    if not region or not held: return 0
+    have = {finding_key(li) for li in re.findall(r'<li>.*?</li>', held.group(2), re.S)}
+    new = [li for li in re.findall(r'<li>.*?</li>', region.group(0), re.S) if finding_key(li) not in have]
+    if new:
+        at = held.start(2) + len('<ul class="findings">\n')
+        FINDINGS_PAGE.write_text(page[:at] + '\n'.join(new) + '\n' + page[at:], encoding='utf-8')
+    return len(new)
+
+def findings_items(s):
+    """The entries of a findings list, in order, each once, dated."""
+    m = FINDINGS_LIST.search(s)
+    if not m: return None
     items = re.findall(r'<li>.*?</li>', m.group(2), re.S)
     # Navigation entries have been accidentally pasted here during publication
     # merges. Do not date and promote menu links as research findings.
@@ -3736,14 +3698,42 @@ def fold_findings(s, n=RECENT_VISIBLE):
         if key not in seen:
             seen.add(key)
             unique.append(stamp_finding(li))
-    items = unique
+    return unique
+
+def list_findings(s):
+    """findings.html: every entry, stamped."""
+    m, items = FINDINGS_LIST.search(s), findings_items(s)
     if not items: return s
-    head = '<ul class="findings">\n' + '\n'.join(items[:n]) + '\n</ul>'
-    rest = items[n:]
-    if rest:
-        head += ('\n<div class="more" hidden><ul class="findings">\n' + '\n'.join(rest) + '\n</ul></div>\n'
-                 f'<button class="showmore" type="button" data-target="findings" data-step="20">Show {len(rest)} earlier finding{"s" if len(rest) != 1 else ""}</button>')
+    return s[:m.start(2)] + '<ul class="findings">\n' + '\n'.join(items) + '\n</ul>' + s[m.end(2):]
+
+def mirror_findings(s, n=RECENT_VISIBLE):
+    """index.html: the newest n entries of findings.html, then the way to the rest."""
+    m, items = FINDINGS_LIST.search(s), findings_items(FINDINGS_PAGE.read_text(encoding='utf-8'))
+    if not m or not items: return s
+    head = ('<ul class="findings">\n' + '\n'.join(li.replace('<li>', '<li data-mirror>', 1) for li in items[:n]) + '\n</ul>\n'
+            f'<p class="allws"><a href="findings.html">All {len(items)} findings, newest first &rarr;</a></p>')
     return s[:m.start(2)] + head + s[m.end(2):]
+
+FEATURED = ['voynich', 'lucca', 'armstrong', 'sunyatsen', 'feuquieres', 'ormonde']
+BROWSE_LANGS = 6        # languages listed under "Browse the write-ups"; the filter on writeups.html has the rest
+
+def browse_html():
+    """The routes from the home page into writeups.html: its own filters, each with what it would show."""
+    from collections import Counter
+    shown = [p for p in PAGES if p['slug'] not in SURVEYS]
+    def col(title, rows):
+        lis = ''.join(f'<li><a href="writeups.html#{k}={v}&amp;src=page">{l}<span class="n">{n}</span></a></li>' for k, v, l, n in rows if n)
+        return f'<div class="br-col"><h3>{title}</h3><ul>{lis}</ul></div>'
+    kinds = Counter(kind_of(p) for p in shown)
+    cents = Counter(century_of(p['y']) for p in shown)
+    langs = Counter(x for p in shown for x in langs_of(p.get('folders') or []).split())
+    top = [l for l, _ in langs.most_common() if l not in ('other', 'unknown')][:BROWSE_LANGS]
+    return ('<!-- browse:start -->\n<section class="browse" aria-labelledby="writeups">\n<h2 id="writeups">Browse the write-ups</h2>\n<div class="br-grid">'
+            + col('By how the text was obtained', [('kind', k, l[0].upper() + l[1:], kinds[k]) for k, l in KINDS if k not in ('active', 'other', 'survey')])
+            + col('By century', [('century', k, l, cents[k]) for k, l in CENTURIES if k != 'undated'])
+            + col('By language', [('lang', l, l.capitalize(), langs[l]) for l in top])
+            + f'</div>\n<p class="allws"><a href="writeups.html">All {len(PAGES)} write-ups, with filters and search &rarr;</a> &middot; '
+              '<a href="atlas.html">the atlas</a> &middot; <a href="keys.html">the key web</a> &middot; <a href="glossary.html">what the methods mean</a></p>\n</section>\n<!-- browse:end -->')
 
 PAGE_STYLED = {'archives', 'atlas', 'catalogue', 'further', 'goldbar', 'highlights', 'huangxing', 'keys', 'roosevelt', 'secret', 'sunintercepts', 'sunyatsen'}
 SHARED_INLINE = ('.why', '.w-yes', '.w-no', '.w-lang', '.w-otp', '.w-short', '.w-fake', '.w-open', '.item', '.item h3', '.item .meta2', '.ct', '.callout', '.callout h3', '.tw')
@@ -3811,7 +3801,7 @@ def process(path):
     s = re.sub(r'<h2((?![^>]*\bid=)[^>]*)>(.*?)</h2>', add_id, s, flags=re.S)
     # contents strip
     s = re.sub(r'<nav class="toc".*?</nav>\n*', '', s, flags=re.S)      # also eat blank lines an earlier build left
-    if slug != 'index':
+    if slug not in ('index', 'findings'):
         toc = toc_html(s)
         if toc: s = re.sub(r'<main>\n*', lambda m: '<main>\n' + toc, s, count=1)
     # lead figure: pages that have an image in the manifest but no figure of their own get one after the contents strip
@@ -3917,40 +3907,30 @@ def process(path):
     s = re.sub(r'<body(?![^>]*id=)', '<body id="top"', s, count=1)
     if slug in PAGE_STYLED and f'pg-{slug}' not in s.split('</head>')[-1][:200]:
         s = re.sub(r'<body([^>]*?)(?: class="([^"]*)")?>', lambda m: f'<body{m.group(1)} class="{(m.group(2) + " " if m.group(2) else "")}pg-{slug}">', s, count=1)
+    if slug == 'findings':
+        s = list_findings(s)
     if slug == 'index':
-        s = fold_findings(s)
-        # the contributors strip and the call to contribute, right after the scoreboard
+        s = mirror_findings(s)
         import _contributors_page as CP
+        s = re.sub(r'<!-- help:start -->.*?<!-- help:end -->', lambda m: CP.helpband(PAGES, PROFILES), s, flags=re.S)
+        s = re.sub(r'<!-- browse:start -->.*?<!-- browse:end -->', lambda m: browse_html(), s, flags=re.S)
         s = re.sub(r'\n*<!-- contrib:start -->.*?<!-- contrib:end -->', '', s, flags=re.S)
-        # after Recent findings when its end marker is there, else after the scoreboard
-        at = '<!-- recent:end -->' if '<!-- recent:end -->' in s else '<!-- stats:end -->'
-        if at in s:
-            s = s.replace(at, at + '\n\n' + CP.strip(PAGES, PROFILES, CONTRIB), 1)
+        s = s.replace('<!-- catalogue:end -->', '<!-- catalogue:end -->\n\n' + CP.strip(PAGES, PROFILES, CONTRIB), 1)
         s = re.sub(r'<!-- live:start -->.*?<!-- live:end -->\n?', '', s, flags=re.S)
         s = re.sub(r'<script src="home\.js[^"]*" defer></script>\n?', '', s)
-        s = re.sub(r'(<section class="hero">.*?)(\s*<div class="jump">)', lambda m: m.group(1) + '\n' + live_html() + m.group(2), s, count=1, flags=re.S)
+        s = re.sub(r'(<div class="hero-cta">.*?)(\s*</div>)', lambda m: m.group(1) + '\n' + live_html() + m.group(2), s, count=1, flags=re.S)
         s = s.replace('</body>', f'<script src="home.js?v={VERSION}" defer></script>\n</body>', 1)
-        FEATURED = ['raince', 'hesse1603', 'catinat1691', 'voynich', 'feuquieres', 'armstrong']
         feat = [next(p for p in PAGES if p['slug'] == f) for f in FEATURED]
-        rest = sorted([p for p in PAGES if p['slug'] not in FEATURED], key=lambda p: ({'solved': 0, 'found': 1, 'partial': 2, 'stuck': 3}[p['st']] if p['slug'] not in ('famous', 'solved') else 4, -p['y']))
-        row = lambda p: (f'  <li><a href="{p["slug"]}.html">{mini_thumb(p["slug"], "rth") or "<span class=rth></span>"}<span class="st {p["st"]}">{p["stt"]}</span><span class="t">{p["title"]}</span>'
-                         f'{when_html(p, cls="dt")}<span class="yr">{p["year"]}</span></a></li>\n')
-        REST_VISIBLE = 10       # "And the rest" shows this many rows; the others fold behind the button
-        shown, folded = rest[:REST_VISIBLE], rest[REST_VISIBLE:]
-        more = (f'<div class="more" hidden><ul class="list">\n' + ''.join(row(p) for p in folded) + '</ul></div>\n'
-                f'<button class="showmore" type="button" data-step="24">Show {len(folded)} more write-ups</button>\n') if folded else ''
-        cards = ('<!-- cards:start -->\n<div class="cards">\n' + ''.join(card_html(p) for p in feat) + '</div>\n'
-                 '<h3 class="listhead">And the rest</h3>\n<ul class="list">\n' + ''.join(row(p) for p in shown) + '</ul>\n' + more +
-                 f'<p class="allws"><a href="writeups.html">All {len(PAGES)} write-ups, filterable by outcome and period, '
-                 f'with the results that are still only in the notes &rarr;</a></p>\n<!-- cards:end -->')
-        s = bnx_panels(s)
+        cards = ('<!-- cards:start -->\n<h2 id="featured">Start with these</h2>\n<div class="cards featured">\n' + ''.join(card_html(p) for p in feat) + '</div>\n'
+                 '<p class="allws"><a href="highlights.html">Thirty favourites: the funny, the historic, the ingenious &rarr;</a></p>\n<!-- cards:end -->')
         s = re.sub(r'<!-- catintro:start -->.*?<!-- catintro:end -->', lambda m: catintro_html(), s, flags=re.S)
+        # the hero's open count follows the catalogue on every build; the rest of the hero's counts come from _build_stats.py
+        import _catalogue_page as C
+        still_open = sum(1 for e in C.DATA['entries'] if e['counted'] and C.is_open(e))
+        s = re.sub(r'(<b>)[\d,]+(</b> ciphers still open)', lambda m: f'{m.group(1)}{still_open:,}{m.group(2)}', s, count=1)
         s = re.sub(r'<!-- cattop:start -->.*?<!-- cattop:end -->\n?', '', s, flags=re.S)
         s = re.sub(r'(<h2 id="catalogue">.*?)(\n<p><a class="more" href="catalogue\.html")', lambda m: m.group(1) + '\n' + cattop_html().rstrip('\n') + m.group(2), s, count=1, flags=re.S)
-        if '<!-- cards:start -->' in s:
-            s = re.sub(r'<!-- cards:start -->.*?<!-- cards:end -->', lambda m: cards, s, flags=re.S)
-        else:
-            s = re.sub(r'(<h2(?: id="writeups")?><span class="num">01</span> Write-ups</h2>\s*)<div class="cards">.*?</div>\n(?=\n<h2)', lambda m: m.group(1) + cards + '\n', s, count=1, flags=re.S)
+        s = re.sub(r'<!-- cards:start -->.*?<!-- cards:end -->', lambda m: cards, s, flags=re.S)
     s = protect_text(s)
     after = content_hash(s)
     if after != rec['hash']:     # a generated element normalise() does not know about
@@ -4029,8 +4009,7 @@ def live_html():
     titles = {p['slug']: plain(p['label']) for p in PAGES}
     (HERE / 'reveal' / 'index.json').write_text(json.dumps([dict(slug=r, label=titles.get(r, r)) for r in rv if r in titles],
                                                            ensure_ascii=False), encoding='utf-8')
-    return ('<!-- live:start -->\n<div class="livecount">'
-            + '<button type="button" class="randbtn" aria-label="Open a random write-up">Random cipher &rarr;</button></div>\n<!-- live:end -->')
+    return '<!-- live:start -->\n<button type="button" class="randbtn" aria-label="Open a random write-up">Random cipher &rarr;</button>\n<!-- live:end -->'
 
 # steps/<slug>.json: the solution steps of each target's profile.json, with its conditions and outcome, for the
 # "How it was solved" replay (solve-replay.js).  A profile folder is its page's slug, give or take case.
@@ -4082,6 +4061,7 @@ def check_keys(meta):
 
 
 if __name__ == '__main__':
+    print('findings moved from index.html to findings.html:', absorb_findings())
     print('solution replays:', write_steps())
     import _catalogue_page as C                 # catalogue.html reads README results and open PRs too: rebuilt every time
     C.build_html()

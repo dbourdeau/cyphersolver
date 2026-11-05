@@ -258,8 +258,39 @@ def page(pages, profiles, reg, dates, version, today):
 '''
 
 
+def helpband(pages, profiles):
+    """The landing page's three ways to help, each behind its nav sticker, between <!-- help:start/end -->."""
+    import _archives_page as AR, _catalogue_page as C
+    still_open = sum(1 for x in C.DATA['entries'] if x['counted'] and C.is_open(x))
+    fn = sum(p.get('extent') == 'partial' and bool(p.get('folders')) for p in pages)
+    na = sum(r['status'] in AR.LIVE for r in AR.load())
+    q = len(queue(pages, profiles))
+    def way(href, sticker, cls, count, what, how):
+        return (f'<a class="hb-way" href="{href}"><span class="sticker{cls}" aria-hidden="true"><span><b>{sticker}</b></span></span>'
+                f'<span class="hb-t"><b>{count:,}</b> {what}</span><span class="hb-d">{how}</span></a>')
+    return f'''<!-- help:start -->
+<section class="helpband" id="help" aria-labelledby="hb-h">
+<h2 id="hb-h">Three ways to help</h2>
+<div class="hb-grid">
+{way('catalogue.html', 'Help<br>Solve!', '', still_open, 'ciphers with no known decipherment', 'Pick one and try it, by hand or with an AI agent: each has instructions to hand over.')}
+{way('further.html', 'Finish<br>It!', ' alt', fn, 'readings left partial', 'A value for a code group, a better reading of a line, a key found in another volume.')}
+{way('archives.html', 'Go<br>Look!', ' arc', na, 'pieces that need an archive', 'A visit, a reproduction order or a library loan, listed by archive.')}
+</div>
+<p class="hb-more">Or <a href="contributors.html#verify">check one of {q} readings</a> waiting for an independent check, or <a href="contribute.html#new">send a cipher that is not listed</a>. Every contribution is credited. <a class="btn" href="contribute.html">How to contribute &rarr;</a></p>
+</section>
+<!-- help:end -->'''
+
+
+SOURCES = ('''<a href="https://cryptiana.web.fc2.com/code/unsolved.htm">Tomokiyo&rsquo;s catalogue</a>, the <a href="https://de-crypt.org/">DECODE</a> database, '''
+           '''<a href="https://cryptoole.satoru.net/">Cryptoole</a>, <a href="https://crypto.hcportal.eu/">HCPortal</a>, sweeps of <a href="https://gallica.bnf.fr/">Gallica</a>, '''
+           '''the <a href="https://www.nationaalarchief.nl/">Nationaal Archief</a>, the <a href="https://www.siv.archives-nationales.culture.gouv.fr/">Archives nationales</a> and '''
+           '''<a href="https://francearchives.gouv.fr/">FranceArchives</a>, and <a href="https://sok.riksarkivet.se/">Riksarkivet</a>, calendars and printed editions, '''
+           '''<a href="https://mysterytwister.org/">MysteryTwister</a>, <a href="https://elonka.com/UnsolvedCodes.html">Elonka Dunin&rsquo;s famous-codes list</a>, '''
+           '''<a href="https://scienceblogs.de/klausis-krypto-kolumne/the-top-50-unsolved-encrypted-messages/">Schmeh&rsquo;s Top 50</a> and the contributors.''')
+
+
 def strip(pages, profiles, reg, n=8):
-    """The landing page's contributors strip and contribution call, between <!-- contrib:start/end -->."""
+    """The landing page's contributors and sources, between <!-- contrib:start/end -->."""
     t = CR.tally(profiles, reg)
     ranked = CR.ranked(t, reg)[:n]
     chips = ''.join(
@@ -269,30 +300,18 @@ def strip(pages, profiles, reg, n=8):
     chips = ''.join(
         f'<li><a href="contributors.html#{c["id"]}"><b>{e(c["name"])}</b><span>project lead &middot; {n_own} targets</span></a></li>'
         for c in leads(reg)) + chips
-    q = len(queue(pages, profiles))
-    fn = sum(p.get('extent') == 'partial' and bool(p.get('folders')) for p in pages)
-    import _archives_page as AR
-    na = sum(r['status'] in AR.LIVE for r in AR.load())
     return f'''<!-- contrib:start -->
 <section class="contribstrip" id="contributors" aria-labelledby="cs-h">
-<h2 id="cs-h"><span class="num">&#9993;</span> A shared ledger</h2>
+<h2 id="cs-h">Contributors and sources</h2>
 <div class="cs-grid">
-<div class="cs-call">
-<p>Anyone can add to this ledger. Contributions are credited on the write-up and on the <a href="contributors.html">contributors page</a>:</p>
-<ul class="cs-kinds">
-<li><b>A solution</b> to a cipher already listed in the catalogue.</li>
-<li><b>A fuller reading</b> of one left partial: {fn} write-ups have <a href="contributors.html#further">open gaps</a> to work on.</li>
-<li><b>A new unsolved cipher</b>, with its shelfmark and images.</li>
-<li><b>A new cipher with its solution.</b></li>
-<li><b>A verification</b> of a reading already here: {q} are waiting for an independent check.</li>
-<li><b>A visit or a request to an archive</b>: {na} pieces need a reading room, a reproduction order or a library, <a href="archives.html">listed by archive</a>.</li>
-</ul>
-<p class="cs-go"><a class="btn" href="contribute.html">How to contribute &rarr;</a></p>
-</div>
 <div class="cs-top">
 <h3>Top contributors</h3>
 <ol class="cs-people">{chips}</ol>
 <p class="cs-all"><a href="contributors.html">All contributors and what each added &rarr;</a></p>
+</div>
+<div class="cs-top">
+<h3>Where the targets come from</h3>
+<p class="cs-src">{SOURCES}</p>
 </div>
 </div>
 </section>

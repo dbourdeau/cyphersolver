@@ -300,9 +300,10 @@ three are data files you edit by hand; each is a few lines, and skipping one lea
   status said. Also look for the target under another name: DECODE entries carry `decode_ids`, so match the
   record numbers (`R1234`) in the folder's NOTES against them. Dump with `indent=1, ensure_ascii=False` and a
   trailing newline.
-- `docs/index.html`: a new `<li>` at the top of the first `<ul class="findings">` under Recent findings:
+- `docs/findings.html`: a new `<li>` at the top of its `<ul class="findings">`:
   `<li><b>Who to whom, date</b> &mdash; <span class="fnd">outcome in one line</span> … <a href="<slug>.html">write-up</a></li>`.
-  The builder dates it and folds the list.
+  The builder dates it and mirrors the newest five onto the home page. Do not edit that mirror on `index.html`: a plain
+  `<li>` added there is moved to `findings.html` by the next build.
 - `targets/<folder>/profile.json`: run the `/profile <folder>` skill. It records the cipher parameters, the challenge
   conditions, the solution steps and the outcome in fixed fields for the LLM-performance paper.
   `python docs/_check_profile.py <folder>` must print `result: valid`.

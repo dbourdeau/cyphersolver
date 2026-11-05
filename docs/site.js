@@ -57,32 +57,11 @@ document.querySelectorAll('.showmore').forEach(b=>b.addEventListener('click',()=
   b.textContent = left ? `Show ${Math.min(step,left)} more (${left} left)` : 'Show fewer';
 }));
 document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent);
-// big-news rotation: one panel at a time; turns by itself (every 9 s) only after the reader presses play; pauses on hover, focus, hidden tab
+// the nav stickers hang below the bar only at the top of the page; once scrolled they tuck into it (style.css)
 (function(){
-  const box=document.querySelector('.bignews.bn-rot'); if(!box) return;
-  const panels=[...box.querySelectorAll('.bn-panel')]; if(panels.length<2) return;
-  const dots=box.querySelector('.bn-dots'), pauseBtn=box.querySelector('.bn-pause');
-  let i=0, timer=null, paused=true, hovering=false;
-  panels.forEach((p,k)=>{ const b=document.createElement('button'); b.type='button'; b.setAttribute('role','tab'); b.setAttribute('aria-label','Show item '+(k+1)); b.addEventListener('click',()=>{ go(k); restart(); }); dots.appendChild(b); });
-  const db=[...dots.children];
-  function go(k, instant){
-    i=(k+panels.length)%panels.length;
-    if(instant){ box.classList.add('instant'); requestAnimationFrame(()=>requestAnimationFrame(()=>box.classList.remove('instant'))); }
-    panels.forEach((p,n)=>{ const on=n===i; p.classList.toggle('on',on); if(on) p.removeAttribute('hidden'); else if(instant) p.setAttribute('hidden',''); else setTimeout(()=>{ if(!p.classList.contains('on')) p.setAttribute('hidden',''); },650); });
-    db.forEach((b,n)=>b.setAttribute('aria-selected', n===i?'true':'false'));
-  }
-  function tick(){ if(!paused && !hovering && !document.hidden) go(i+1); }
-  function restart(){ clearInterval(timer); timer=setInterval(tick,9000); }
-  function setPause(v){ paused=v; pauseBtn.setAttribute('aria-pressed',v); pauseBtn.setAttribute('aria-label',v?'Resume rotation':'Pause rotation'); pauseBtn.innerHTML=v?'&#9654;':'&#10074;&#10074;'; }
-  box.querySelector('.bn-prev').addEventListener('click',()=>{ go(i-1); restart(); });
-  box.querySelector('.bn-next').addEventListener('click',()=>{ go(i+1); restart(); });
-  pauseBtn.addEventListener('click',()=>setPause(!paused));
-  box.addEventListener('pointerenter',()=>hovering=true); box.addEventListener('pointerleave',()=>hovering=false);
-  box.addEventListener('focusin',()=>hovering=true); box.addEventListener('focusout',e=>{ if(!box.contains(e.relatedTarget)) hovering=false; });
-  box.addEventListener('keydown',e=>{ if(e.key==='ArrowLeft'){ go(i-1); restart(); } else if(e.key==='ArrowRight'){ go(i+1); restart(); } });
-  if(paused) setPause(true);
-  const start=/[?&]bn=(\d+)/.exec(location.search); // ?bn=N opens on panel N (1-based)
-  go(start ? +start[1]-1 : 0, true); restart();
+  const nav=document.querySelector('.nav'); if(!nav) return;
+  const f=()=>nav.classList.toggle('scrolled',scrollY>24);
+  addEventListener('scroll',f,{passive:true}); f();
 })();
 // priority-queue filter: show one tier at a time
 (function(){

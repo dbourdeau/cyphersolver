@@ -32,7 +32,7 @@ LABEL.update(na='not a cipher or not reachable', active='in progress')
 COLOR = {  # CSS variables from style.css
     'ct': 'var(--green)', 'extpt': 'color-mix(in srgb, var(--green) 65%, var(--blue))', 'adjpt': 'color-mix(in srgb, var(--green) 40%, var(--blue))',
     'extkey': 'var(--violet)', 'known': 'color-mix(in srgb, var(--violet) 50%, var(--blue))', 'deciph': 'var(--amber)',
-    'notsolved': 'var(--red)', 'na': 'var(--muted)', 'active': 'var(--gold)',
+    'notsolved': 'var(--red)', 'na': 'var(--muted)', 'active': 'var(--ink2)',
 }
 
 def parse_year(s):
@@ -183,35 +183,38 @@ def build(items):
     silence = sum(YEAR_NOW - it['year'] for it in read)
     oldest = min(read, key=lambda d: d['year'])
     span = [it['year'] for it in items if it['year'] and not it['name'].startswith(OFF_TIMELINE)]
-    order = ['ct', 'extpt', 'adjpt', 'extkey', 'known', 'deciph', 'active', 'notsolved', 'na']
+    order = ['ct', 'extpt', 'adjpt', 'extkey', 'known', 'deciph', 'notsolved', 'active', 'na']     # three families, then the rest
     pc = lambda k, d: f'{100 * k / d:.0f}%' if d else '0%'     # share, whole percent
+    share = lambda c: '' if c in ('active', 'na') else f' ({pc(n[c], attacked)})'      # every percentage is of the attempted entries
     bar = ''.join(
-        f'<span class="seg {c}" style="flex:{n[c]};background:{COLOR[c]}" title="{n[c]} {LABEL[c]} ({pc(n[c], total)})"></span>'
+        f'<span class="seg {c}" style="flex:{n[c]};background:{COLOR[c]}" title="{n[c]} {LABEL[c]}{share(c)}"></span>'
         for c in order if n[c])
     legend = ''.join(
-        f'<button type="button" class="lg" data-cat="{c}" aria-pressed="false"><i style="background:{COLOR[c]}"></i>{n[c]} {LABEL[c]} <small>{pc(n[c], total)}</small></button>' for c in order if n[c])
+        f'<button type="button" class="lg" data-cat="{c}" aria-pressed="false"><i style="background:{COLOR[c]}"></i>{n[c]} {LABEL[c]}' + ('' if c in ('active', 'na') else f' <small>{pc(n[c], attacked)}</small>') + '</button>' for c in order if n[c])
     lines = []
     lines.append('<!-- stats:start -->')
     lines.append('<section class="scoreboard" id="scoreboard" aria-labelledby="sb-h">')
-    lines.append('<h2 id="sb-h"><span class="num">&sum;</span> The ledger so far</h2>')
-    lines.append(f'<p class="sb-lede">{total} entries, one per row of the results tables (a target with several letters can take more than one). Each is classed by how its text was obtained (the <a href="glossary.html">method</a>) and by how much of it was obtained (complete or partial). {n["na"]} turned out not to be ciphers or could not be reached, and {n["active"]} are in progress, which leaves {attacked} attempted. Percentages in the legend are of all {total} entries; those below are of the {attacked} attempted.</p>')
-    lines.append(f'<div class="sb-bar" role="img" aria-label="Outcomes of {total} entries by method">{bar}</div>')
-    lines.append(f'<div class="sb-legend">{legend}</div>')
+    lines.append('<h2 id="sb-h">Results so far</h2>')
+    lines.append(f'<p class="sb-lede">{total} entries, one per row of the results tables, each classed by <a href="glossary.html">how its text was obtained</a>. {n["na"]} turned out not to be ciphers or could not be reached and {n["active"]} are in progress, which leaves {attacked} attempted; every percentage here is of those {attacked}.</p>')
     lines.append('<div class="sb-grid">')
     by_contrib = sum(1 for it in items if it['cat'] in ('ct', 'extpt', 'adjpt') and it['outside'])
     who = f' {by_contrib} of them with <a href="contributors.html">outside contributors</a>.' if by_contrib else ''
-    lines.append(f'<div class="sb-big"><b>{broke}</b><em>{pc(broke, attacked)} of attempts</em><span>keys recovered by cryptanalysis</span><details><summary>breakdown</summary><span>{n["ct"]} from the ciphertext alone, {n["adjpt"]} from plaintext beside the ciphertext, {n["extpt"]} from plaintext found elsewhere.{who}' + (f' In {ko_b} of them the key was recovered but the text does not yet read.' if ko_b else '') + '</span></details></div>')
-    lines.append(f'<div class="sb-big"><b>{applied}</b><em>{pc(applied, attacked)} of attempts</em><span>read with a key or decipherment that already existed</span><details><summary>breakdown</summary><span>{n["known"]} with a known key, {n["extkey"]} with a key matched here from another document, {n["deciph"]} from a complete existing decipherment.' + (f' In {ko_a} of them the key was applied but the text does not yet read.' if ko_a else '') + '</span></details></div>')
-    lines.append(f'<div class="sb-big"><b>{n["notsolved"]}</b><em>{pc(n["notsolved"], attacked)} of attempts</em><span>closed without recovering the text; each write-up says why</span></div>')
+    lines.append(f'<div class="sb-big fam-key"><b>{broke}</b><em>{pc(broke, attacked)} of attempts</em><span>keys recovered by cryptanalysis</span><details><summary>breakdown</summary><span>{n["ct"]} from the ciphertext alone, {n["adjpt"]} from plaintext beside the ciphertext, {n["extpt"]} from plaintext found elsewhere.{who}' + (f' In {ko_b} of them the key was recovered but the text does not yet read.' if ko_b else '') + '</span></details></div>')
+    lines.append(f'<div class="sb-big fam-ext"><b>{applied}</b><em>{pc(applied, attacked)} of attempts</em><span>obtained with a key or decipherment that already existed</span><details><summary>breakdown</summary><span>{n["known"]} with a known key, {n["extkey"]} with a key matched here from another document, {n["deciph"]} from a complete existing decipherment.' + (f' In {ko_a} of them the key was applied but the text does not yet read.' if ko_a else '') + '</span></details></div>')
+    lines.append(f'<div class="sb-big fam-no"><b>{n["notsolved"]}</b><em>{pc(n["notsolved"], attacked)} of attempts</em><span>closed without recovering the text; each write-up says why</span></div>')
     lines.append(f'<div class="sb-big"><b>{silence:,}</b><em>years of silence ended</em><span>summed over the {len(read)} dated texts obtained in full ({part} more partial), each counted from its date to {YEAR_NOW}. The oldest is {oldest["name"].split(",")[0].split(" (")[0]} ({oldest["date"]}).</span></div>')
     lines.append('</div>')
-    lines.append(f'<p class="sb-note">Every entry by date, {min(span)}&ndash;{max(span)}. Hover or tap a dot for the story; click a colour in the legend to isolate a method.</p>')
+    lines.append(f'<div class="sb-bar" role="img" aria-label="Outcomes of {total} entries by method">{bar}</div>')
+    lines.append(f'<details class="sb-methods"><summary>All {sum(1 for c in order if n[c])} categories</summary><div class="sb-legend">{legend}</div></details>')
+    lines.append(f'<p class="sb-note">Every entry by date, {min(span)}&ndash;{max(span)}. Hover or tap a dot for the story; open the categories and click one to isolate it.</p>')
     lines.append(timeline_svg(items))
     lines.append(f'<p class="sb-foot">Counted from the results tables in the <a href="https://github.com/dbourdeau/cyphersolver#results">repository README</a> by <code>_build_stats.py</code>; regenerated {datetime.date.today():%d %B %Y}. Rows are documents, not correspondents.</p>')
     lines.append('</section>')
     lines.append('<!-- stats:end -->')
-    hero = (f'<p class="herostats"><a href="#scoreboard"><b>{total}</b> entries</a><a href="#scoreboard"><b>{broke}</b> keys recovered</a>'
-            f'<a href="#scoreboard"><b>{applied}</b> read with existing keys</a><a href="#scoreboard"><b>{silence:,}</b> years of silence ended</a></p>')
+    import _catalogue_page as C
+    still_open = sum(1 for e in C.DATA['entries'] if e['counted'] and C.is_open(e))
+    hero = (f'<p class="herostats"><a href="#scoreboard"><b>{broke}</b> keys recovered</a>'
+            f'<a href="#scoreboard"><b>{applied}</b> from existing keys or decipherments</a><a href="catalogue.html"><b>{still_open:,}</b> ciphers still open</a></p>')
     return '\n'.join(lines), n, hero
 
 def main():
@@ -222,8 +225,6 @@ def main():
         s = re.sub(r'<!-- stats:start -->.*?<!-- stats:end -->', lambda m: block, s, flags=re.S)
     else:
         s = s.replace('<main>\n', '<main>\n\n' + block + '\n\n', 1)
-    if 'href="#scoreboard"' not in s:
-        s = s.replace('<div class="jump"><a href="#recent">', '<div class="jump"><a href="#scoreboard">The ledger</a><a href="#recent">', 1)
     s = re.sub(r'<!-- herostats:start -->.*?<!-- herostats:end -->', lambda m: '<!-- herostats:start -->\n' + hero + '\n<!-- herostats:end -->', s, flags=re.S)
     INDEX.write_text(s, encoding='utf-8')
     for c, _ in SECTIONS:

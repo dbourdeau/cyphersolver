@@ -71,7 +71,7 @@ def main():
         rec.setdefault('first', first)
         rec.setdefault('updated', updated)
         rec['hash'] = B.content_hash(path.read_text(encoding='utf-8'))
-        if path.stem == 'index':
+        if path.stem in ('index', 'findings'):     # the list moved from index.html to findings.html on 5 Nov 2026
             for (sha, day), text in zip(hist, versions):
                 if text is None: continue
                 for key in findings_keys(text): findings.setdefault(key, day)

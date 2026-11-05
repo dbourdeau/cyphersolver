@@ -750,7 +750,7 @@ cd docs && python _build_site.py
 
 The builder is idempotent. It also regenerates the "At a glance" counts at the top of this file. The priority queue
 on the index page is generated separately from [`docs/_queue.json`](docs/_queue.json) by `python _build_queue.py`,
-and the catalogue page from `catalogue.json` by `_catalogue_page.py`. `archives.html` is built from `archive_requests.json` by `_archives_page.py`; a new `blocker: needs-physical-access` gap reaches it when `python tools/seed_archive_requests.py` is run.
+and the catalogue page from `catalogue.json` by `_catalogue_page.py`. `findings.html` holds every finding, newest first, and the home page mirrors the newest five (add a line at the top of its list and rebuild). `archives.html` is built from `archive_requests.json` by `_archives_page.py`; a new `blocker: needs-physical-access` gap reaches it when `python tools/seed_archive_requests.py` is run.
 
 Two checkers keep the ledgers in step. `python docs/_check_writeup.py <slug>` lists every surface a finished target
 must reach (page, manifest, README row, ledgers, catalogue, DECODE queue) and prints `result: complete` when it has;
@@ -775,7 +775,7 @@ anonymous, an office, or has no trustworthy portrait.
 Datestamps are kept in [`docs/_dates.json`](docs/_dates.json): for each page, the day the finding first landed in
 the repository and the day the page last really changed. `_build_site.py` maintains the second by hashing the page
 with everything it generates itself removed, so a rebuild that only restamps the furniture does not move the date;
-a new page, or a new line in "Recent findings", dates itself on the next build. The file was seeded from the git
+a new page, or a new line in `findings.html`, dates itself on the next build. The file was seeded from the git
 history by `python _seed_dates.py`, and any date can be corrected by editing it (the seeder never overwrites a date
 already there). `python _stamp_markdown.py` writes the same dates into the result tables of this file and of
 [`SOLVED_CATALOGUE.md`](SOLVED_CATALOGUE.md).

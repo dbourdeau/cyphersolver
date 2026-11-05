@@ -82,7 +82,7 @@ if __name__ == '__main__':
         import _check_writeup as cw
         res = []
         for f in sorted(HERE.glob('*.html')):
-            if f.stem in ('index', 'catalogue', 'writeups', 'glossary') or f.stem in cw.TOOL_PAGES or f.stem.startswith('_'): continue
+            if f.stem in ('index', 'findings', 'catalogue', 'writeups', 'glossary') or f.stem in cw.TOOL_PAGES or f.stem.startswith('_'): continue
             res.append((len(check(f.stem)), f.stem))
         for n, s in sorted(res, reverse=True): print(f'{n:4d}  {s}')
         print(f'{sum(n for n, _ in res)} hits on {sum(1 for n, _ in res if n)} of {len(res)} pages')
