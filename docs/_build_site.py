@@ -17,7 +17,7 @@ import re, sys, pathlib, html, json, hashlib, datetime
 HERE = pathlib.Path(__file__).parent
 ICONS = ('<link rel="icon" href="favicon.svg" type="image/svg+xml">\n<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">\n'
          '<link rel="apple-touch-icon" href="apple-touch-icon.png">\n')
-VERSION ='20261105b'
+VERSION ='20261105c'
 SITE = 'Cyphersolver'
 REPO = 'https://github.com/dbourdeau/cyphersolver'
 
@@ -3614,6 +3614,9 @@ def footer_html(current):
     return (f'<footer><div class="in">\n  <span>{author}, {footer_date} &middot; Text released under CC BY 4.0{rights}</span>\n'
             f'  <nav aria-label="Footer">{"".join(links)}</nav>\n</div></footer>')
 
+# the write-ups with letters on the Atlas, for the "On the map" link in their outcome line
+ATLAS_SLUGS = {l['slug'] for l in json.loads((HERE / 'atlas.json').read_text(encoding='utf-8'))['letters']}
+
 def toc_html(s):
     heads = re.findall(r'<h2 id="([^"]+)">(.*?)</h2>', s, re.S)
     if len(heads) < 3: return ''
@@ -3876,7 +3879,8 @@ def process(path):
     s = re.sub(r'\n?<p class="outcome">.*?</p><!-- /outcome -->', '', s, flags=re.S)
     oc = outcome_html(page) if page else ''
     if oc and '<section class="hero">' in s:
-        s = re.sub(r'(<section class="hero">.*?<p class="meta">.*?</p>)', lambda m: m.group(1) + '\n' + oc, s, count=1, flags=re.S)
+        onmap = f' &middot; <a href="atlas.html#slug={slug}">On the map</a></p><!-- /outcome -->' if slug in ATLAS_SLUGS else '</p><!-- /outcome -->'
+        s = re.sub(r'(<section class="hero">.*?<p class="meta">.*?</p>)', lambda m: m.group(1) + '\n' + oc.replace('</p><!-- /outcome -->', onmap), s, count=1, flags=re.S)
     # the At a glance badge follows the profile: method label and extent as the outcome line gives them, so the two cannot disagree
     em = re.search(r'Extent: ([^<]*)</p>', oc) if oc.startswith('<p class="outcome">Method:') else None
     if em and page.get('method') in M.LABEL:
@@ -4129,11 +4133,15 @@ if __name__ == '__main__':
     readme_glance()
     # pages.json: label, year and outcome of every write-up, for the atlas and the key web
     meta = [dict(slug=p['slug'], label=plain(p['label']), title=plain(p['title']), y=p['y'], st=p['st'], stt=plain(p['stt']),
+                 **({'m': M.KEY[p['method']]} if p.get('method') in M.KEY else {}),
                  **({'people': [{k: q[k] for k in ('role', 'name', 'img')} for q in PORTRAITS[p['slug']]]} if PORTRAITS.get(p['slug']) else {}))
             for p in PAGES if p['slug'] not in SURVEYS]
     (HERE / 'pages.json').write_text(json.dumps(meta, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
     sys.path.insert(0, str(HERE.parent / 'tools')); import atlas_places    # atlas letters from profile routes/places
     print('atlas: %d letters from profiles (%d new places)' % atlas_places.sync({m['slug']: m for m in meta}))
+    import _atlas_data as AD                                               # the Atlas's reading panel, unread layer and chapters
+    (atfiles, attexts), (atopen, atopenall), atstories = AD.build(PAGES, PROFILES, IMAGES)
+    print(f'atlas: {atfiles} write-ups with panel data, {attexts} letters with a text, {atopen} of {atopenall} open letters placed, {atstories} chapters')
     print('key web: %d keys, %d links, %d tried' % check_keys(meta))
     print('built', ', '.join(done))
 IMAGES['bordeaux1653'] = ('bordeaux1653_f88r_opening.jpg', 'Add MS 4200 f. 88r: clear opening, then the first cipher lines', 'British Library, Add MS 4200 f. 88r, via DECODE R8390')
