@@ -5,7 +5,7 @@ Status: in progress
 Class: not read (decoded, not read). The whole letter decodes mechanically as French; a reader review and translation are what is missing.
 
 Catalogue 1388. ANOM, COL C11A 104, ff.54-66 (CABAC_PIAF_60891); LAC e000874955-e000874967 (13 images); [record](https://nouvelle-france.org/eng/item/details?id=27478). Pierre de Rigaud de Vaudreuil de Cavagnial, governor of New France, to the minister of the Marine. French.
-3637 number groups (382 distinct); in clear: Monseigneur, the closing formula.
+3633 number groups (380 distinct); in clear: Monseigneur, the closing formula.
 
 ## What the document is
 
@@ -20,7 +20,7 @@ transcription and the context corrections are described). The key is the 1757 Va
 ## The reading
 
 `transcription.txt` (groups), `decode.txt` (decode, syllabic spelling as written), `ct.txt` (groups only), `tools/decode.py`. Outcome method: **external key matched**.
-Measured: 99.7% of groups carry a settled value (3625 of 3637); 12 sit on a doubtful table cell and 0 are cut at the gutter. The decode reads as French
+Measured: 99.7% of groups carry a settled value (3621 of 3633); 12 sit on a doubtful table cell and 0 are cut at the gutter. The decode reads as French
 throughout; no reader has yet reviewed it as sentences and there is no English translation.
 
 ## Remaining gaps

@@ -2,14 +2,14 @@
 
 Status: in progress
 
-Class: not read (decoded, not read). The whole letter decodes mechanically as French; a reader review and translation are what is missing.
+Class: read (external key matched), 99.1% of 1221 groups; read as sentences against the images on 5 Nov 2026 (a model reading, no outside reader).
 
 Catalogue 1389. ANOM, COL C11A 104, ff.68-72 (CABAC_PIAF_60892); LAC e000874969-e000874973 (5 images); [record](https://nouvelle-france.org/eng/item/details?id=27479). Pierre de Rigaud de Vaudreuil de Cavagnial, governor of New France, to the minister of the Marine. French.
-1225 number groups (256 distinct); in clear: Monseigneur, the closing formula.
+1221 number groups (253 distinct); in clear: Monseigneur, the closing formula.
 
 ## What the document is
 
-Vaudreuil sends the minister Montcalm's letter with his own reflections: Montcalm's way of thinking had become public among officers, bourgeois and soldiers; Vaudreuil asks that the officers who spread such talk be sent to France.
+Vaudreuil sends the minister Montcalm's letter of 27 February, a memorandum and his own plan of operations; Montcalm's opinions had become public among officers and people, and Vaudreuil, asking Montcalm to stop it, says he would otherwise arrest the officers concerned and send them to France; he has told Montcalm he is to command at Carillon.
 
 ## System and key
 
@@ -20,13 +20,11 @@ transcription and the context corrections are described). The key is the 1757 Va
 ## The reading
 
 `transcription.txt` (groups), `decode.txt` (decode, syllabic spelling as written), `ct.txt` (groups only), `tools/decode.py`. Outcome method: **external key matched**.
-Measured: 97.3% of groups carry a settled value (1192 of 1225); 1 sit on a doubtful table cell and 32 are cut at the gutter. The decode reads as French
-throughout; no reader has yet reviewed it as sentences and there is no English translation.
+Measured: 1221 groups (the written ordinals 1o-3o and the date 27 are figures, not groups); 11 unread (0.9%), so 99.1% read as sense (`reading.md`, English in `reading_en.md`, supplied and unread groups in `reading_notes.md`).
+Reader pass: all five images compared line by line with the transcription; three groups corrected (353 -> 553 obser, 381 -> 581 faire, 613 -> 615 em); seven cut groups supplied from visible digits and sense.
 
 ## Remaining gaps
-- 32 groups cut by the binding - blocker: illegible; microfilm image; a clear copy would restore them
-- 1 groups on table cells still doubtful - blocker: open-codes; cells read from a small image of the table; the alphabetical key sheets e001295267/69 are not yet used to settle them
-- reader review and English translation of the whole letter - blocker: not-attempted; not yet done
+- f.68v "de l diver m es re ment e c es" (8 groups), f.70v "j'aurois [?] Monseigneur effectué" (1 group, 301) and "les [?] [?] de la douceur" (2 groups, 431 + s) - blocker: open-codes; cells 139, 301, 431 do not give the words; scattered, no sentence is lost
 
 ## Escalation
 - [x] siblings: the other cipher letters of the same hand (cat. 1388-1391) decoded with the same table; 1392 (Trémais) uses another code
@@ -38,5 +36,5 @@ throughout; no reader has yet reviewed it as sentences and there is no English t
 
 ## Files
 
-`transcription.txt`, `decode.txt`, `ct.txt`, `key/`, `tools/`, `WORKLOG.md`, `profile.json`. Images are fetched, not stored: `curl -L "https://central.bac-lac.gc.ca/.item?id=<id>&op=img&app=nf"`.
+`transcription.txt`, `decode.txt`, `reading.md`, `reading_en.md`, `reading_notes.md`, `ct.txt`, `key/`, `tools/`, `WORKLOG.md`, `profile.json`. Images are fetched, not stored: `curl -L "https://central.bac-lac.gc.ca/.item?id=<id>&op=img&app=nf"`.
 Image credit: Library and Archives Canada (LAC) / Archives nationales d'outre-mer (ANOM), via New France Archives.
