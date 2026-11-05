@@ -1,0 +1,194 @@
+{
+ "1219": {
+  "verdict": "unvettable",
+  "note": "FranceArchives 129 J 23 (Journal 1931-34, Fonds Landanger wine and grain trade, Merrey) says only 'Presence d'une feuille volante chiffree a la fin', which in a merchant's ledger may be a sheet of figures, and no scan is online.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "https://francearchives.gouv.fr/fr/facomponent/c14aa27cc52796fc251f6cab4d7a6efdfdd341da (FranceArchives notice of AD Haute-Marne 129 J 23, opened in Chrome 5 Nov 2026; the lead's access field is empty, the item is a 400-page register and no digital images are linked)",
+    "extent": "One loose sheet at the end of a 400-page journal (129 J 23); the lead's 129 J 35 and 129 J 37 ('5 feuilles volantes chiffrees') were not re-opened.",
+    "cipher": "FranceArchives: 'Toutes les pages ne sont pas rempli de la meme facon a la fin. Presence de la signature et du cachet du maire de Merrey au debut + un cachet a la fin. Presence d'une feuille volante chiffree a la fin. 400 p.' 'Chiffree' is not shown to mean enciphered rather than a sheet of figures or a calculation; no cipher system is described, so the leaf cannot be judged ciphertext."
+   },
+   "prior_art": {
+    "decode": "Local DECODE harvest via known.py 'Landanger' and '129 J': only the lead's own rows and sweep files; not on DECODE.",
+    "tomokiyo": "No Tomokiyo page on a Haute-Marne commercial ledger known; a 20th-century private ledger is outside cryptiana's scope (no hit for Landanger).",
+    "lasry": "No Lasry or HistoCrypt item on the Landanger fonds found; nothing in the repo's GL.htm copy concerns Haute-Marne.",
+    "edition": "No edition; inventory remark only, no printed text.",
+    "literature": "No study of a business ledger sheet found; no literature on this sheet known."
+   },
+   "key_check": "No key held or known; nothing tried, since the sheet has not been seen.",
+   "duplicates": "known.py on 'Landanger' and '129 J': only lead 1219 and the Calames/Biblissima sweep rows; no catalogue, DECODE or targets/ duplicate.",
+   "verdict": "unvettable"
+  }
+ },
+ "1380": {
+  "verdict": "unvettable",
+  "note": "Academia Sinica IMH Waijiaobu 03-32 and 03-32-498 'secret telegrams of the Moscow representative' (12 pp. and 4 pp.) are catalogue titles only with no description of ciphertext, images need a reader account, and the files may hold received telegrams with their decoded Chinese text.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Union catalogue pages https://catalog.digitalarchives.tw/item/00/0a/c3/c5.html and .../c9.html (metadata only, per the lead's earlier fetch); images only in the IMH archive system (archivesonline.mh.sinica.edu.tw), which needs a reader account not entered; the lead's access field is empty and no image is reachable without an account",
+    "extent": "Two units, 12 pp. (Jun 1924) and 4 pp. (Aug 1924); how much of either is cipher is not stated.",
+    "cipher": "Catalogue titles only: Waijiaobu 03-32 'Zhu Mo Li daibiao midian' (secret telegrams of the representative in Moscow, 12 pp.) and 03-32-498 'midian' (4 pp.), language Chinese; no description of cipher groups, and no statement that a decipherment is or is not attached. 'Midian' means secret telegram, and Foreign Ministry files usually pair the cipher telegram with its decoded text, so ciphertext is not shown."
+   },
+   "prior_art": {
+    "decode": "Local DECODE harvest via known.py 'Li Jiaao' and 'Moscow': no Chinese 1924 record; not on DECODE.",
+    "tomokiyo": "No Tomokiyo page on Chinese Foreign Ministry telegram ciphers of 1924 found.",
+    "lasry": "Web search (Li Jiaao 1924 Moscow telegrams, and a Chinese query on the title) returned nothing on these files; no Lasry or HistoCrypt item known.",
+    "edition": "No edition found; the Chinese web search on the title found only unrelated FRUS and Gu Weijun archive entries.",
+    "literature": "Only Tang Qihua's studies of the Sino-Soviet negotiations (per the earlier pass); nothing on the telegram files' cipher."
+   },
+   "key_check": "No key held; the repo's research/asia_sinica README lists Waijiaobu code books as key leads, none tied to these telegrams and none tested.",
+   "duplicates": "known.py on 'Li Jiaao' and 'Moscow': only lead 1380's own rows and the asia_sinica sweep files; catalogue Moscow hits are other texts (1921 radiograms etc.).",
+   "verdict": "unvettable"
+  }
+ },
+ "1416": {
+  "verdict": "unvettable",
+  "note": "NAA C320 SAB2 (item 305911) is titled '[NSW Security Service file - Secret message relating to German sabotage]', which does not say the message is in code, and NAA answers 'Images do not exist for this item' so nothing can be seen.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "NAA RecordSearch item 305911, https://recordsearch.naa.gov.au/SearchNRetrieve/Interface/DetailsReports/ItemDetail.aspx?Barcode=305911 (title as recorded in the lead; ViewImage.aspx?B=305911 said 'Images do not exist for this item' in the 3 Nov 2026 Chrome pass, not re-opened); access 'archive'",
+    "extent": "One file, 1939-1940; page count and any cipher content not stated.",
+    "cipher": "NAA catalogue title only: '[NSW Security Service file - Secret message relating to German sabotage]'. It does not say the message is in code or cipher and no description beyond the title exists; a 'secret message' could be an ordinary confidential report."
+   },
+   "prior_art": {
+    "decode": "Local DECODE harvest via known.py '305911' and 'C320': no record; not on DECODE.",
+    "tomokiyo": "No Tomokiyo page on Australian security-service files of 1939-40 known.",
+    "lasry": "No Lasry or HistoCrypt item on this file found.",
+    "edition": "No edition; web search for the title and 'SAB2' found nothing on this file (only other C320 files).",
+    "literature": "Web search found nothing on the file or on a cipher message relating to German sabotage in NSW in 1939-40."
+   },
+   "key_check": "No key held; nothing tried, as no cipher is shown.",
+   "duplicates": "known.py on '305911', 'C320', 'SAB2': only lead 1416 and its oceania_naa sweep row (C320 S111 'Secret writing' is a different file); no duplicate.",
+   "verdict": "unvettable"
+  }
+ },
+ "1418": {
+  "verdict": "unvettable",
+  "note": "NAA A3200 TEM78 (item 233108) is titled as copies of intercepted wireless messages and of messages between enemy firms and correspondents, with no statement of code or cipher, and NAA has no images.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "NAA RecordSearch item 233108, https://recordsearch.naa.gov.au/SearchNRetrieve/Interface/DetailsReports/ItemDetail.aspx?Barcode=233108 (title as in the lead; ViewImage.aspx?B=233108 said 'Images do not exist for this item' in the 3 Nov 2026 Chrome pass); access 'archive'",
+    "extent": "One file, 1915-1918; extent and any coded content not stated.",
+    "cipher": "NAA catalogue title only: 'Navy Department: copies of intercepted wireless messages and of messages between enemy firms and correspondents'. The title says nothing about code or cipher; commercial and wireless traffic of 1915-18 may be plain German or English or commercial code, which the record does not state."
+   },
+   "prior_art": {
+    "decode": "Local DECODE harvest via known.py '233108' and 'A3200': no record; not on DECODE.",
+    "tomokiyo": "No Tomokiyo page on Australian WWI wireless intercepts known.",
+    "lasry": "No Lasry or HistoCrypt item on this file found.",
+    "edition": "No edition; web search on the shelfmark and title found nothing on this file.",
+    "literature": "Web search found only general WWI wireless-intelligence material, nothing on this file."
+   },
+   "key_check": "No key held; nothing tried, since no cipher is shown.",
+   "duplicates": "known.py on '233108' and 'A3200': only lead 1418 and the oceania_naa sweep row; sibling lead 1419 (1916) is a different file.",
+   "verdict": "unvettable"
+  }
+ },
+ "1442": {
+  "verdict": "unvettable",
+  "note": "Baker Library's William Parker legal daybooks (Hollis 990146986160203941) are described only as 'several pages filled with unidentified symbols, possibly a cipher', and Harvard returned 403 in Chrome again on 5 Nov so the pages stay unseen and may be shorthand.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "https://id.lib.harvard.edu/curiosity/worlds-of-change/149-990146986160203941_HBS.BAKER.GEN:32064577-2017 (re-tried in Chrome 5 Nov 2026: '403 Forbidden'); the lead's access field is empty; the record is said to be online at Harvard Curiosity but no page or image could be reached, so no leaf was seen",
+    "extent": "'Several pages' of symbols in daybooks of 1720-1767 (Baker Mss:83 has four volumes; which one holds them is not stated).",
+    "cipher": "Description quoted in the lead from the Harvard record: 'several pages filled with unidentified symbols, possibly a cipher'. Whether this is cipher or legal shorthand cannot be told without the pages, and 'possibly a cipher' does not establish one."
+   },
+   "prior_art": {
+    "decode": "Local DECODE harvest via known.py 'Parker' and 'Baker': no William Parker daybook record (hits are Henry Parker 1664 and other Parkers); not on DECODE.",
+    "tomokiyo": "No Tomokiyo page on the Parker daybooks found.",
+    "lasry": "No Lasry or HistoCrypt item on them found.",
+    "edition": "No edition; web search (Baker Library 'unidentified symbols' New Hampshire) found nothing on this item, only an unrelated William Parker shorthand booklet at Dover NH.",
+    "literature": "Web search found nothing on the daybooks beyond the library record; the earlier pass found no Cipherbrain or Schmeh mention."
+   },
+   "key_check": "No key held; nothing tried, since the pages are unseen.",
+   "duplicates": "known.py on 'Parker' and 'Baker': leads 1298 and 2151 are already closed as duplicates of lead 1442 (same Hollis record); no catalogue duplicate.",
+   "verdict": "unvettable"
+  }
+ },
+ "1513": {
+  "verdict": "unvettable",
+  "note": "Archivo Nacional records 000050868, 000050870 and 000050871 are volume-level descriptions of Antofagasta intendancy 'Comunicaciones recibidas' that list 'criptogramas reservados y confidenciales' among oficios and telegrams, so no single cipher document is named and nothing is digitised.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Archivo Nacional (Chile) Aleph records http://www.bncatalogo.cl/F/?func=direct&local_base=ARCHIVO_NACIONAL&doc_number=000050868 (1926-27), 000050870 (1928-29) and 000050871 (1928-40), as quoted in the lead's 3 Nov 2026 fetch; no digital object; access 'archive'",
+    "extent": "Three whole volumes of incoming communications; number of cipher telegrams unknown.",
+    "cipher": "Aleph record 000050868, as quoted in the lead: 'Contiene: Oficios, circulares, telegramas y criptogramas reservados y confidenciales' for the 1926-27 volume (1 v.). This is a volume-level contents note; no individual cryptogram, system or date is identified, so no single document can be vetted."
+   },
+   "prior_art": {
+    "decode": "Local DECODE harvest via known.py 'Antofagasta' and 'Intendencia': only the War of the Pacific catalogue entries (1879, 1891) and this lead; not on DECODE.",
+    "tomokiyo": "No Tomokiyo page on Chilean ministry ciphers of the 1920s found.",
+    "lasry": "No Lasry or HistoCrypt item on Chilean intendancy ciphers found.",
+    "edition": "No edition; the earlier web searches (Antofagasta criptogramas 1927) found no study.",
+    "literature": "No literature found on these volumes or on Chilean interior-ministry cryptograms of 1926-40."
+   },
+   "key_check": "No key or code book known for these volumes; nothing tried.",
+   "duplicates": "known.py on 'Antofagasta' and 'Intendencia': catalogue entries are other Antofagasta texts (Huneeus 1879, Pinto 1879, Villegas 1891), none from the Intendencia fonds; no duplicate.",
+   "verdict": "unvettable"
+  }
+ },
+ "1537": {
+  "verdict": "unvettable",
+  "note": "Newberry CB&Q scan 052_005 viewed in Chrome on 5 Nov: the page ends a telegram in clear ('all O.K. Bismark J.A.B.') and says Godding and J.A.B. have a cipher for their telegrams, but no ciphertext is on it and the neighbouring pages with the telegrams are unreachable.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "scan",
+    "where": "Newberry Digital Collections, https://collections.newberry.org/asset-management/2KXJ8ZS2VR90G (scan 052_005, CB&Q records, box 106 folder 811, opened in Chrome 5 Nov 2026; handwritten page viewed)",
+    "extent": "One page (p. 5 of the Pinkerton report) seen: about 8 lines of clear English; the telegram text on p. 4 and any other pages are not reachable from the record.",
+    "cipher": "Viewed page, clear English handwriting: 'all OK Bismark J.A.B.' then 'Opr. mentioned the above to show that Geo Godding and J.A.B. understand each other in having a cipher to use in their telegrams', signed for Pinkerton's Nat. Det. Agency. No cipher text is on the leaf; the page only reports that a cipher exists, and no decipherment is on it."
+   },
+   "prior_art": {
+    "decode": "Local DECODE harvest via known.py 'Godding' and 'Pinkerton': only this lead and unrelated Pinkerton hits (Greenhow 1861); not on DECODE.",
+    "tomokiyo": "No Tomokiyo page on the CB&Q strike or Pinkerton labour reports found.",
+    "lasry": "No Lasry or HistoCrypt item on the Burlington strike found.",
+    "edition": "No edition; web search (Newberry Burlington strike 1888 Pinkerton Godding J.A.B. cipher telegrams) returned finding-aid folder listings and Wikipedia only, nothing on the cipher.",
+    "literature": "Web search found nothing on a Godding or J.A.B. cipher; the Newberry finding-aid entries describe folders at high level only."
+   },
+   "key_check": "No key held; no ciphertext found to test.",
+   "duplicates": "known.py on 'Godding' and 'Pinkerton': only lead 1537 and its chi_consortium sweep row; no catalogue or DECODE duplicate.",
+   "verdict": "unvettable"
+  }
+ },
+ "1543": {
+  "verdict": "unvettable",
+  "note": "CPL finding aid (Civil War documents, Box 8 Item 86.40.15) lists Ruggles's 19 Feb 1864 orders only as 'possibly in code', which may be abbreviated clear text, and no images are online.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Chicago Public Library Special Collections finding aid https://www.chipublib.org/fa-american-civil-war-documents-manuscripts-letters-and-diaries-and-grand-army-of-the-republic-collection/ (item 86.40.15, subseries CC, Box 8; as read in Chrome in the earlier pass, not re-opened); no digital images; access 'archive'",
+    "extent": "One item; extent and share in code not stated.",
+    "cipher": "CPL finding aid, as quoted in the lead: orders to move troops, 'possibly in code'. This is hedged cataloguer wording; the item may be clear text with abbreviations, so no cipher is established and the leaf has not been seen."
+   },
+   "prior_art": {
+    "decode": "Local DECODE harvest via known.py 'Ruggles': no record; not on DECODE.",
+    "tomokiyo": "No Tomokiyo page on Confederate field-order ciphers of Ruggles found.",
+    "lasry": "No Lasry or HistoCrypt item on this order found.",
+    "edition": "No edition; web search on the date and 'possibly in code' found only other Ruggles material (Notre Dame, Emory, Nicholls, MDAH); a clear Ruggles dispatch of the same day is in OR I, 32/2 (per the earlier pass) but not this order.",
+    "literature": "Web search found nothing on a cipher in Ruggles's orders of Feb 1864."
+   },
+   "key_check": "No key held; no confirmed ciphertext to test.",
+   "duplicates": "known.py on 'Ruggles' and 'Chicago Public Library': only lead 1543 and the chi_pritzker_chm_cpl sweep rows; no catalogue or DECODE duplicate.",
+   "verdict": "unvettable"
+  }
+ }
+}

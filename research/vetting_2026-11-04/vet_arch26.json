@@ -1,0 +1,195 @@
+{
+ "1696": {
+  "verdict": "unvettable",
+  "note": "LAV NRW W 004 Nr. 119 is digitised (134 images); I viewed all on contact sheets and zoomed several, found the nomenclator key on image 133 but only clear German letters (March 1677 to Schmidtman in Vienna) and no ciphertext leaf, so nothing shows that any letter is enciphered.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "scan",
+    "where": "Landesarchiv NRW Abt. Westfalen W 004 (Msc.VI) Nr. 119, images 1-134 downloaded 5 Nov 2026 from https://www.landesarchiv-nrw.de/data01/Abt_Westfalen/Msc_VI/00119/MSC_VI_00119_001.jpg ... _134.jpg (METS https://www.landesarchiv-nrw.de/digitalisate/Abt_Westfalen/Msc_VI/00119/mets.xml); Archivportal-D record https://www.archivportal-d.de/item/YJK5OEKXRL2FKG7HBBUATGIAMESBDZRX (behind an Anubis bot check, not read; its wording is taken from the lead).",
+    "extent": "Bound volume of 134 images, wrapper dated 1677 (Urkunden und Nachrichten zur Geschichte des vormaligen kurkoelnischen Herzogthums Westphalen, Erster Band); letters of Landsberg, Landstaende memorials and a March 1677-79 run of letters to 'Monsieur Schmidtman, Deputé du Duché de Westphalie à Wien' (images about 118-132); one key sheet on image 133.",
+    "cipher": "Image 133 is a loose sheet with an alphabet A-Z over numbers (A 10, B 12, C 16 ... Z 56) and a nomenclator of about 125 numbered words (armee, alliance, Bischof zu Muenster, Turenne, Brandenburg, Lothringen, munition, secours ...): the 'Dechiffrierschluessel' of the finding aid. The letters I viewed (about a dozen enlarged, the rest on contact sheets) are plain German with ordinary numerals ('2200 Rtl', '14 Bataillon'); I identified no line of cipher figures and no decipherment is written on the leaves, but a full leaf-by-leaf read of all 134 images was not possible."
+   },
+   "prior_art": {
+    "decode": "known.py on 'W 004', 'Landsberg', 'Dechiffrierschl', 'Schmidtman': no DECODE record (local dump and repo ledgers).",
+    "tomokiyo": "cryptiana.web.fc2.com/code unsolved.htm, crypto.htm, spanish.htm and german.htm fetched 5 Nov 2026 and grepped for Landsberg, Westfal, Munster, Fuerstenberg: no hit.",
+    "lasry": "No Lasry or HistoCrypt work found on Westphalian or Cologne ciphers of 1677 (web search 5 Nov 2026 for the Landsberg/Fuerstenberg/Schmidtman cipher returned only biographical and Landesarchiv catalogue hits).",
+    "edition": "No edition of the Landsberg-Schmidtman correspondence found; Huettenhain's Muenster ciphers (1974) concern Galen, not this Cologne-Westphalian volume.",
+    "literature": "Web search (Landsberg Drost Westfalen 1677 Wien Fuerstenberg Schmidtman Chiffre) found only Deutsche Biographie and Landesarchiv catalogue entries, nothing on this key."
+   },
+   "key_check": "Key on image 133 of the same volume (number-per-letter table plus nomenclator); not tested because no ciphertext was found to test it on.",
+   "duplicates": "known.py on 'W 004', 'Landsberg', 'Schmidtman': only the lead, its sweep row and catalogue 1645 (a different file, W 004 Nr. 52, Galen/Fuerstenberg 1659); no duplicate.",
+   "verdict": "unvettable",
+   "key_in_volume": "Image 133, nomenclator and number-per-letter table, seen, not tested (no ciphertext located)."
+  }
+ },
+ "1700": {
+  "verdict": "open",
+  "note": "AIS unit HHStA Spanien Diplomatische Korrespondenz 23-24 is titled 'Chiffrierte Berichte (Schönburgs?) s. d.' and sits in Karton 23 (1632-1640), so the lead's 'about 1690' is wrong; no scan, decipherment, edition or DECODE record found.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "https://www.archivinformationssystem.at/detail.aspx?ID=2493842 (read by curl 5 Nov 2026; Karton 23 'Diplomatische Korrespondenz, 1632-1640'); the record carries no image link; lead access 'archive'.",
+    "extent": "Not stated: the record gives no date, folio count or language ('s. d.'); the neighbouring units 23-23 and 23-25 are Ferdinand III letters of 1637-1640, so the unit belongs to the 1632-1640 box, not 1690.",
+    "cipher": "AIS Titel, verbatim: 'Chiffrierte Berichte (Schönburgs?) s. d.' (Akt, no Bemerkungen, no related units); no decipherment is mentioned; the leaves are not online, so none could be inspected."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Schönburg', 'Spanien Diplomatische Korrespondenz', '2493842': no DECODE record (only the lead and its sweep row).",
+    "tomokiyo": "cryptiana.web.fc2.com/code unsolved.htm, crypto.htm, spanish.htm and german.htm fetched 5 Nov 2026 and grepped for Schönburg, Spanien, Habsburg (the Habsburg hits are other items): no hit.",
+    "lasry": "No Lasry or HistoCrypt item on Habsburg-Spanish reports of the 1630s found (web search 5 Nov 2026).",
+    "edition": "No edition identified: a web search for Schönburg and the Spanish series found only Ferdinand III cipher-letter items (Klausis Krypto Kolumne Top 50 no. 27; a MIÖG 129 abstract on Ferdinand III and Leopold Wilhelm), neither about this unit.",
+    "literature": "No study of this unit found; the writer's identity ('Schönburgs?') is itself uncertain in the catalogue."
+   },
+   "key_check": "No key is named in the record and none is held here; the sibling units 23-23 and 23-25 were not checked for a key.",
+   "duplicates": "known.py on 'Schönburg' finds only catalogue 555 (Wolf von Schönburg, 1520, GStA PK, a different person and archive) and this lead; no duplicate.",
+   "verdict": "open"
+  }
+ },
+ "1708": {
+  "verdict": "unvettable",
+  "note": "AIS 4291348 is a 320-folio file of 1720-31 in four languages marked 'teilweise verschluesselt' with no cipher document named, and an edition of the Ripperda correspondence may print its cipher passages.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "https://www.archivinformationssystem.at/detail.aspx?ID=4291348 (read by curl 5 Nov 2026); no image link on the record; lead access 'archive'.",
+    "extent": "fol 387-708 (about 320 folios), 1720-1731, German, French, Italian, Spanish; cipher share and location not stated.",
+    "cipher": "AIS Titel 'Akten betreffend die Verhandlungen zum Wiener Frieden zwischen Österreich und Spanien vom 30. April 1725'; Bemerkungen: 'teilweise verschlüsselt'. The record names no ciphered document or folio, so no single piece of ciphertext is identifiable."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Spanien Varia 52-3 / Wiener Frieden' and AIS id 4291348: no DECODE record (only the lead and its sweep row).",
+    "tomokiyo": "cryptiana.web.fc2.com/code unsolved.htm, crypto.htm, spanish.htm and german.htm fetched 5 Nov 2026 and grepped for Ripperda, Wiener Frieden, Spanien: no hit.",
+    "lasry": "No Lasry or HistoCrypt item found for this unit (web search 5 Nov 2026).",
+    "edition": "Mur Raurell, Diplomacia secreta y paz (Madrid 2011, 2 vols, Spanish-German, Ripperda correspondence 1724-27, with CD-ROM) exists; web search found no statement about ciphers or decipherments in it and it was not opened.",
+    "literature": "Web search (Mur Raurell Ripperda cifra) found catalogue records of the edition only."
+   },
+   "key_check": "No key is named in the record and none is held here; nothing could be tested.",
+   "duplicates": "known.py on the shelfmark, AIS id and correspondents: only the lead and its sweep row; no catalogue entry or targets/ folder (catalogue 1728 is a different Einsichtsakten unit, Spanien Varia 24-2-4, 1670).",
+   "verdict": "unvettable"
+  }
+ },
+ "1713": {
+  "verdict": "unvettable",
+  "note": "AIS 4327122 is a multi-writer bundle of letters to Rosenberg (1757-1764) with no extent and no ciphered item named, so it cannot be vetted as a single document.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "https://www.archivinformationssystem.at/detail.aspx?ID=4327122 (read by curl 5 Nov 2026); no image link on the record; lead access 'archive'.",
+    "extent": "Not stated: no folio count; 1757-1764 per the lead; German, French, Latin.",
+    "cipher": "AIS Titel 'Korrespondenzen an den Grafen Orsini-Rosenberg'; Bemerkungen: 'teilweise verschlüsselt'. The record is a bundle of letters from several writers to one envoy and names no ciphered item."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Orsini-Rosenberg / Spanien Varia 58-1-1' and AIS id 4327122: no DECODE record (only the lead and its sweep row).",
+    "tomokiyo": "cryptiana.web.fc2.com/code unsolved.htm, crypto.htm, spanish.htm and german.htm fetched 5 Nov 2026 and grepped for Orsini, Rosenberg, Spanien (the Orsini hit is targets/esterhazy1744, a Russian case): no hit.",
+    "lasry": "No Lasry or HistoCrypt item found for this unit (web search 5 Nov 2026).",
+    "edition": "Juretschke and Kleinmann, Berichte der diplomatischen Vertreter des Wiener Hofes aus Spanien (3 vols, 1970-72; Rosenberg's reports 1759-65 per the NDB) prints his reports to Vienna, not these letters to him; not opened.",
+    "literature": "Web search found only biographies and the edition's bibliographic records."
+   },
+   "key_check": "No key is named in the record and none is held here; nothing could be tested.",
+   "duplicates": "known.py on the shelfmark, AIS id and correspondents: only the lead and its sweep row; no catalogue entry or targets/ folder (catalogue 1728 is a different Einsichtsakten unit, Spanien Varia 24-2-4, 1670).",
+   "verdict": "unvettable"
+  }
+ },
+ "1723": {
+  "verdict": "unvettable",
+  "note": "AIS 4327185 is a 1761-1781 run of Firmian's letters to the Madrid embassy with no extent or ciphered item named, a series-level record that cannot be vetted as one document.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "https://www.archivinformationssystem.at/detail.aspx?ID=4327185 (read by curl 5 Nov 2026); no image link on the record; lead access 'archive'.",
+    "extent": "Not stated: no folio count; 1761-1781 per the lead; German, Italian.",
+    "cipher": "AIS Titel 'Verschiedene Schreiben des Gouverneurs der Lombardei Grafen Carl Joseph Firmian an die kaiserliche Botschaft in Madrid'; Bemerkungen: 'teilweise verschlüsselt'. The record spans twenty years of letters from one writer and names no ciphered item."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Firmian / Spanien Varia 58-1-4' and AIS id 4327185: no DECODE record (only the lead and its sweep row).",
+    "tomokiyo": "cryptiana.web.fc2.com/code unsolved.htm, crypto.htm, spanish.htm and german.htm fetched 5 Nov 2026 and grepped for Firmian, Spanien, Orsini, Rosenberg: no hit.",
+    "lasry": "No Lasry or HistoCrypt item found for this unit (web search 5 Nov 2026).",
+    "edition": "No edition of Firmian's letters to the Madrid embassy found; Firmian's 1755 Naples papers are a different catalogue entry.",
+    "literature": "Web search found no study of this unit."
+   },
+   "key_check": "No key is named in the record and none is held here; nothing could be tested.",
+   "duplicates": "known.py on the shelfmark, AIS id and correspondents: only the lead and its sweep row; no catalogue entry or targets/ folder (catalogue 1728 is a different Einsichtsakten unit, Spanien Varia 24-2-4, 1670).",
+   "verdict": "unvettable"
+  }
+ },
+ "1725": {
+  "verdict": "unvettable",
+  "note": "AIS 4172844 is a 146-folio embassy inspection file of 1672 (Berlin, Wien u.a.) marked 'teilweise verschluesselt' with no ciphered piece named, so no single cipher document can be identified.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "https://www.archivinformationssystem.at/detail.aspx?ID=4172844 (read by curl 5 Nov 2026); no image link on the record; lead access 'archive'.",
+    "extent": "fol 1-146, 1672, German and Spanish; place 'Berlin, Wien u.a.'; cipher share not stated.",
+    "cipher": "AIS Titel 'Einsichtsakten der kaiserlichen Botschaft in Madrid'; Bemerkungen: 'teilweise verschlüsselt'. The file mixes pieces from several places and writers and the record does not say which are enciphered."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Einsichtsakten / Spanien Varia 28-3' and AIS id 4172844: no DECODE record (only the lead and its sweep row).",
+    "tomokiyo": "cryptiana.web.fc2.com/code unsolved.htm, crypto.htm, spanish.htm and german.htm fetched 5 Nov 2026 and grepped for Einsichtsakten, Poetting, Spanien: no hit.",
+    "lasry": "No Lasry or HistoCrypt item found for this unit (web search 5 Nov 2026).",
+    "edition": "No edition found: Pribram and Landwehr's Privatbriefe Leopolds an Poetting (1903) print other documents, and a Google Books search found nothing for this unit.",
+    "literature": "Web search (Poetting Madrid 1672 chiffriert) found no study of this unit."
+   },
+   "key_check": "No key is named in the record and none is held here; nothing could be tested.",
+   "duplicates": "known.py on the shelfmark, AIS id and correspondents: only the lead and its sweep row; no catalogue entry or targets/ folder (catalogue 1728 is a different Einsichtsakten unit, Spanien Varia 24-2-4, 1670).",
+   "verdict": "unvettable"
+  }
+ },
+ "1726": {
+  "verdict": "unvettable",
+  "note": "AIS 4328197 combines reports to Neny and instructions to Lebzeltern of 1765-1768 with no extent and no ciphered item named, a two-direction series-level record that cannot be vetted as one document.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "https://www.archivinformationssystem.at/detail.aspx?ID=4328197 (read by curl 5 Nov 2026); no image link on the record; lead access 'archive'.",
+    "extent": "Not stated: no folio count; 1765-1768; French.",
+    "cipher": "AIS Titel 'Originalberichte aus Madrid an den Kabinetts-Sekretär Baron Neny und Weisungen an Lebzeltern'; Bemerkungen: 'teilweise verschlüsselt'. The record joins incoming reports and outgoing instructions of different writers and names no ciphered item."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Neny / Lebzeltern / Spanien Varia 58-2-6' and AIS id 4328197: no DECODE record (only the lead and its sweep row).",
+    "tomokiyo": "cryptiana.web.fc2.com/code unsolved.htm, crypto.htm, spanish.htm and german.htm fetched 5 Nov 2026 and grepped for Neny, Lebzeltern, Spanien: no hit.",
+    "lasry": "No Lasry or HistoCrypt item found for this unit (web search 5 Nov 2026).",
+    "edition": "No edition found for the Madrid reports to Neny (1765-68); the Juretschke-Kleinmann series was not opened for this period.",
+    "literature": "Web search found no study of this unit."
+   },
+   "key_check": "No key is named in the record and none is held here; nothing could be tested.",
+   "duplicates": "known.py on the shelfmark, AIS id and correspondents: only the lead and its sweep row; no catalogue entry or targets/ folder (catalogue 1728 is a different Einsichtsakten unit, Spanien Varia 24-2-4, 1670).",
+   "verdict": "unvettable"
+  }
+ },
+ "1789": {
+  "verdict": "unvettable",
+  "note": "TNA SP 87/4/234 (ff. 645-671, 1712) is catalogued as a 'Series of intercepted letters from Namur, partly in cipher' with no writer, date or single letter named and is not digitised, so no single document can be vetted and any decipher in the file is unknown.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "TNA Discovery SP 87/4/234, https://discovery.nationalarchives.gov.uk/details/r/C8951001 (record fetched through the Discovery API 5 Nov 2026: digitised false, language French, covering 1 Jan-31 Dec 1712, held by TNA Kew; SP 87/4 is State Papers Foreign, Military Expeditions, Cardonnel/Watkins/Cadogan); viewing only via State Papers Online (Gale) or Kew. Lead access 'archive'.",
+    "extent": "ff. 645-671, about 27 folios; number of letters and writers not stated.",
+    "cipher": "Discovery scope and content, verbatim: 'Series of intercepted letters from Namur, partly in cipher, concerning the French plenipotentiaries to the Netherlands, the choice of Utrecht for the negotiations, and the interests of the electors of Bavaria and Cologne. ff. 645-671'. The record mentions no decipher (the series states one explicitly elsewhere, SP 87/4/47 'later decoded interlinearly'), but intercepts were routinely deciphered, so a decipher sheet may sit in these folios; leaves not seen."
+   },
+   "prior_art": {
+    "decode": "known.py on 'SP 87/4', 'Namur', 'Utrecht 1712': no DECODE record for this item.",
+    "tomokiyo": "cryptiana.web.fc2.com/code unsolved.htm, crypto.htm, spanish.htm and german.htm fetched 5 Nov 2026 and grepped for Namur, Utrecht, Hyndford, Queen Anne: no hit.",
+    "lasry": "No Lasry or HistoCrypt item on the 1712 Namur intercepts found (web search 5 Nov 2026, which returned only TNA catalogue pages).",
+    "edition": "No edition: the web search returned only TNA catalogue records of SP 87/4; no calendar of State Papers for 1712 was found online.",
+    "literature": "No study of these intercepts found."
+   },
+   "key_check": "No key is named; the SP 106 key volumes and the Deciphering Branch decipher papers were not checked here.",
+   "duplicates": "known.py on 'SP 87/4/234', 'Namur', 'SP 87/4': only the lead and its sweep row, plus other SP 87/4 items (catalogue 1791 is SP 87/8/65; the lead SP 87/4/133 is a different Mons 1709 letter); no duplicate.",
+   "verdict": "unvettable"
+  }
+ }
+}

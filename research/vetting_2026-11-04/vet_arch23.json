@@ -1,0 +1,199 @@
+{
+ "1140": {
+  "verdict": "read",
+  "note": "OG/BB/492 is not an Oglander letter but a copy (Isle of Wight Record Office) of Charles I's own letter from Newport to Prince Charles, 6 Nov 1648, 'partly in code', and Charles I's 6 and 7 Nov 1648 letters to his son in that nomenclator were solved in 2021 (Biermann, Bosbach, Brown), so the cipher is read, though the IWRO leaf itself was not seen to match word for word.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "TNA Discovery record (A2A) for Isle of Wight Record Office OG/BB/492, fetched through the Discovery API on 5 Nov 2026: https://discovery.nationalarchives.gov.uk/details/r/48e366ff-f832-4c69-916d-a0a61056ba32 (digitised: false; held by Isle of Wight Record Office). The lead's 'access' field is empty; the item is offline (digitised: false).",
+    "extent": "One copy letter, dated 6 Nov 1648, no. 78/5; how many cipher groups it contains is not stated.",
+    "cipher": "Discovery title: 'Copy letter from King Charles I at Newport, I.W., to his son, Charles'; description: 'Acknowledging his letter of 17th October... the treaty is postponed for 14 days ... if Osborne (who has beene in trouble for me about Major Rolphes business) comes to you, use him well for my sake. [Letter partly in code] (78/5)'. The leaf was not seen; no decipherment is recorded with it, but the cipher is Charles I's nomenclator that was broken from the British Library originals."
+   },
+   "prior_art": {
+    "decode": "known.py 'Oglander' and 'Newport': only the sweep rows, lead 1141 (Charles I to Ormonde 28 Oct 1648, read) and catalogue 795/966 (other Charles I items); no DECODE record for OG/BB/492.",
+    "tomokiyo": "cryptiana unsolved.htm (fetched 5 Nov 2026): 'Charles I in the Isle of Wight (1648)' lists his four letters in cipher; the cipher of two was solved by Biermann and Brown in 2021 and Biermann solved the 22 May 1648 Worsley letter in 2025; charlesi2.htm gives the 3 Oct and 7 Nov 1648 letters to Prince Charles and their decipherment.",
+    "lasry": "cryptiana records that George Lasry largely confirmed Biermann's Worsley solution with AI and found the 1 Aug 1648 letter to Prince Charles readable with Egerton MS 2250 keys; no Lasry item on the Oglander copy.",
+    "edition": "Klaus Schmeh's Cipherbrain post 'Solved: the encrypted letters from Charles I to his son' (scienceblogs.de, 5 May 2021): Biermann, Bosbach and Brown decoded the 2 Sept, 3 Oct, 6 Nov and 7 Nov 1648 letters (BL scans; the plaintexts are images on the page, so the Osborne/Rolph passage could not be matched to the IWRO summary).",
+    "literature": "Web search on the plain-text phrases (Osborne, Major Rolph, treaty postponed 14 days) found nothing; the Cipherbrain solve and cryptiana pages above are the literature."
+   },
+   "key_check": "No key held here; Biermann/Bosbach/Brown reconstructed the nomenclator (published as images on Cipherbrain, 5 May 2021), so the cipher is solved; not tested against the IWRO copy because no image is online.",
+   "duplicates": "known.py 'Oglander', 'Newport', 'Isle of Wight' and a scan of catalogue/leads for 1648 Charles I items: no catalogue entry for OG/BB/492; the same 6 Nov 1648 letter to the Prince is the BL original solved in 2021, which makes this a copy of an already-read letter.",
+   "verdict": "read"
+  }
+ },
+ "1146": {
+  "verdict": "unvettable",
+  "note": "Seven unrelated TNA items (SP 81/44/225, 81/46/273, 84/130/27, 77/28/643 and three more) by different writers over 1600-1639, each only a 'postscript' or 'portion in cipher', none digitised and the Roe/Gerbier ones possibly read in Akkerman's edition, so it is a multi-writer bundle that needs splitting and an index check before any item can be vetted.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "TNA Discovery API records fetched 5 Nov 2026 (all digitised: false, held by The National Archives, Kew): SP 81/44/225 https://discovery.nationalarchives.gov.uk/details/r/C7775394 ; SP 81/46/273 /C7775701 ; SP 84/130/27 /C7302838 ; SP 77/28/643 /C7969868. The other three shelfmarks (SP 81/37/284, 81/38/250, 77/6/229) were not opened.",
+    "extent": "Seven single folios or portions; amount of cipher not stated in any record.",
+    "cipher": "Discovery: SP 81/44/225 'Folio 225: Roe to Secretary of State, with postscript in cipher' (15/25 July 1638); SP 81/46/273 'Folio 273: Portion in cipher concerning Prince Palatine and France' ([? 1639]); SP 84/130/27 'Folio 82: Portion in cipher concerning Mansfelt' (c. Nov 1625); SP 77/28/643 'Folio 643: Gerbier - cipher letter on Taylor's accusations' ([? 1638]). No leaf seen; whether any plaintext is written with them is not stated."
+   },
+   "prior_art": {
+    "decode": "known.py 'SP 81/44', 'Gerbier', 'Akkerman': only the lead itself and sweep rows; no DECODE record for these items.",
+    "tomokiyo": "cryptiana unsolved.htm and crypto.htm (fetched 5 Nov 2026) grepped for Roe, Gerbier, Elizabeth of Bohemia, Mansfeld, Kendall, Akkerman: no hit for these items.",
+    "lasry": "No Lasry or HistoCrypt item on these Stuart-embassy postscripts found in the HistoCrypt/web searches run for this batch.",
+    "edition": "Akkerman, The Correspondence of Elizabeth Stuart, Queen of Bohemia (OUP, 2011-15) deciphered Elizabeth's correspondence ciphers and may print the Roe and Gerbier passages; not online and not opened, so a printed decipherment is not excluded.",
+    "literature": "No article found that reads the four checked TNA items; the other three were not searched individually."
+   },
+   "key_check": "No key held for these items; the lead's suggestion of keys in SP 106/5 and the Roe sibling set was not tested.",
+   "duplicates": "known.py 'SP 81/44', 'Gerbier': no catalogue or DECODE duplicate; the Roe and Gerbier ciphers to Elizabeth of Bohemia are separate leads.",
+   "verdict": "unvettable"
+  }
+ },
+ "1167": {
+  "verdict": "unvettable",
+  "note": "Lombardia Beni Culturali MIBA01C525 is a series-level record of 21 Archinto volumes (1683-1720) that only says 'si segnala la presenza di lettere cifrate', with no holder named, no volume or letter singled out and no images, so there is no single document to vet.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "https://www.lombardiabeniculturali.it/archivi/complessi-archivistici/MIBA01C525/ (fetched 5 Nov 2026); no images or inventory linked.",
+    "extent": "21 volumes ('Consistenza: voll. 21'), 1683-1720; which volumes or folios carry cipher is not stated.",
+    "cipher": "LBC: 'La serie conserva volumi di corrispondenza di due rappresentanti della famiglia Archinto di condizione ecclesiastica ... Si segnala la presenza di lettere cifrate e di missive in lingua spagnola e francese.' Holder given only as the Archivio Archinto; the page says requests for consultation go to the holding institution. No leaf seen."
+   },
+   "prior_art": {
+    "decode": "known.py 'Archinto': only the lead itself; not on DECODE.",
+    "tomokiyo": "cryptiana unsolved.htm and crypto.htm (fetched 5 Nov 2026) grepped for Archinto: no hit.",
+    "lasry": "No Lasry or HistoCrypt item on the Archinto nunciature correspondence found by web search 5 Nov 2026.",
+    "edition": "No edition of these volumes found; Wikipedia/DBI entries on Giuseppe Archinto (1651-1712) are biographical only.",
+    "literature": "Web search (Archivio Archinto corrispondenza nunzio lettere cifrate) found no item on ciphers in these volumes."
+   },
+   "key_check": "No key held or known for the Archinto nunciature correspondence.",
+   "duplicates": "known.py 'Archinto': only this lead; no catalogue entry or target.",
+   "verdict": "unvettable"
+  }
+ },
+ "1182": {
+  "verdict": "open",
+  "note": "Calames (Sorbonne, MSRIC 43 ff. 177-179, 23 Dec 1747, and ff. 240-241, 30 Dec 1747, Rome) describes each as a 'partially ciphered' letter with no decipherment mentioned, like the open L'Hospital letters (catalogue 1181) in the same volume, but only catalogue text was seen and the lead has no 'access' field although the leaves are not online.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Calames notices read in Chrome 5 Nov 2026: https://calames.abes.fr/pub/ms/Calames-2017621176592554 (ff. 177-179) and https://calames.abes.fr/pub/ms/Calames-2017623106581355 (ff. 240-241), Bibliotheque de la Sorbonne, MSRIC 43 (1747, vol. 3), under 'F. 81, 174-179, 240-241 Quatre lettres du cardinal de La Rochefoucauld au marechal de Richelieu'. No image link; lead 'access' field is empty, the item is offline.",
+    "extent": "Two letters: ff. 177-179 (3 feuillets, 23 Dec 1747) and ff. 240-241 (2 sheets, 30 Dec 1747), both Rome; how much of each is cipher is not stated.",
+    "cipher": "Calames, ff. 177-179: 'Lettre ecrite de Rome le 23 decembre 1747, en reponse a la lettre adressee par le marechal de Richelieu le 16 decembre ... Description : Lettre partiellement chiffree, relative a une fourniture de poudre.' Calames, ff. 240-241: 'Lettre ecrite de Rome le 30 decembre 1747 ... Description : Lettre partiellement chiffree.' Neither notice mentions an interlinear decipherment (the 1748 letters of MSRIC 45-47 do: leads 1829, 1835). No leaf seen."
+   },
+   "prior_art": {
+    "decode": "known.py 'MSRIC 43', 'Rochefoucauld', 'Richelieu': only the sweep rows, catalogue 1181 (L'Hospital) and leads for other La Rochefoucauld letters; no DECODE record for this series.",
+    "tomokiyo": "cryptiana unsolved.htm and crypto.htm (fetched 5 Nov 2026) grepped for Rochefoucauld, Richelieu: only the 1629 Richelieu and 1690 Constantinople entries, nothing on this series.",
+    "lasry": "No Lasry or HistoCrypt item on the Sorbonne Richelieu papers found by web search 5 Nov 2026.",
+    "edition": "Girardot, Correspondance de M. de La Rochefoucauld, ambassadeur a Rome 1744-1748 (Nantes 1871, 414 pp.) exists; it is the ambassador's official correspondence and not shown to print these letters to Richelieu or any cipher decipherment; not opened.",
+    "literature": "Web searches (Calames MSRIC 43 La Rochefoucauld Richelieu poudre chiffree; Girardot edition) found no article on these two letters or their cipher."
+   },
+   "key_check": "No La Rochefoucauld/Rome code is held here; sibling Richelieu-papers letters with interlinear plaintext (MSRIC 45-47, leads 1828/1829/1835) could supply a key but were not tested.",
+   "key_in_volume": "Same series: the 1748 La Rochefoucauld letters (MSRIC 45-47) carry interlinear decipherments per Calames; not seen, not tested; per the 3 Nov 2026 rule this does not block.",
+   "duplicates": "known.py 'MSRIC 43', 'Rochefoucauld', 'F. 177': no catalogue entry or target for ff. 177-179 / 240-241; catalogue 1181 (L'Hospital, MSRIC 41-43 ff. 7-9) is a different sender; leads 1828/1829/1835 are other letters.",
+   "verdict": "open"
+  }
+ },
+ "1208": {
+  "verdict": "unvettable",
+  "note": "ANOM COL F3 16 f. 115 (Moreau de Saint-Mery copy, dated 29 Aug 1760) is a title-only notice 'Lettre de Vaudreuil a Berryer lui annoncant en chiffres la perte de la colonie' with no viewer, so 'en chiffres' may mean figures or numbers rather than cipher, and the leaf cannot be seen; it is also not shown to differ from catalogue 1391 (C11A 105, 13 Aug 1760).",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "ANOM notice https://recherche-anom.culture.gouv.fr/ark:/61561/3072359 and FranceArchives https://francearchives.gouv.fr/fr/facomponent/0478865ced1e19277f5fa3bd8b04df6260766dd0 (both read in Chrome 5 Nov 2026); communication rating COL F3 16 F 115, microfilm 247 MIOM 13; no viewer.",
+    "extent": "One letter, f. 115; length and amount of cipher unknown.",
+    "cipher": "ANOM: 'Lettre de Vaudreuil a Berryer lui annoncant en chiffres la perte de la colonie', Moreau de Saint-Mery Collection, Canada, date 29 August 1760. The notice has no content summary, so whether 'en chiffres' means in cipher is not established. No leaf seen."
+   },
+   "prior_art": {
+    "decode": "known.py 'F3 16', 'Vaudreuil', 'Berryer': only catalogue 1391, targets/vaudreuil1760 and the lead itself; no DECODE record for F3 16.",
+    "tomokiyo": "cryptiana unsolved.htm and crypto.htm (fetched 5 Nov 2026) grepped for Vaudreuil, Berryer: no hit.",
+    "lasry": "No Lasry or HistoCrypt item on this letter found; the repo's own targets/vaudreuil1760 and vaudreuil1759a-c cover other Vaudreuil letters.",
+    "edition": "No edition or transcription of COL F3 16 f. 115 found; web search (Vaudreuil Berryer 1760 chiffre perte de la colonie F3 16) returned only general Montreal capitulation history.",
+    "literature": "No article found on this letter or on a cipher in F3 16."
+   },
+   "key_check": "Catalogue 1391's key lead (C11E 10 ff. 285-290v, Montcalm/Vaudreuil table 1757-58) would be the key to try if the letter is cipher; not tested here as no image exists.",
+   "key_in_volume": "None known in COL F3 16.",
+   "duplicates": "known.py 'F3 16', 'Vaudreuil': catalogue 1391 (C11A 105 ff. 147-152, 13 Aug 1760) may be a letter of the same period; the date (29 Aug) differs, so not shown to be a copy and not marked duplicate.",
+   "verdict": "unvettable"
+  }
+ },
+ "1220": {
+  "verdict": "unvettable",
+  "note": "The lead is a series of 68 Hungaricana regest rows for HHStA Tuerkei I Kt. 29-36 (1573-77, several writers) with no single document chosen and no scan (the regests give text only; e.g. BecsSeg/47441 reads 'Ungnad jelentese (?), teljesen sifrir, feloldas nelkul'), so nothing can be seen or singled out.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Hungaricana Viennese inventory regest https://archives.hungaricana.hu/en/lear/BecsSeg/47441/ (read in Chrome 5 Nov 2026; other regests 47376, 47315 not re-read); no scan on Hungaricana or in the Austrian AIS per earlier sessions.",
+    "extent": "Lead: 68 regest rows, HHStA Tuerkei I Kt. 29-36, 1573-77; BecsSeg/47441 is Kt. 31 Konv. 5, fol. 119-127, 128-132 (1575).",
+    "cipher": "Regest of BecsSeg/47441: 'Ungnad jelentese (?), teljesen sifrir, feloldas nelkul' (Ungnad's report (?), wholly in cipher, without decipherment). The Hungarian inventory is a finding-aid summary, not an image; no leaf seen."
+   },
+   "prior_art": {
+    "decode": "known.py 'Ungnad', 'Tuerkei I': DECODE holds only Ungnad's key R392 and Breuner's R1384/R1590; no ciphertext of these despatches.",
+    "tomokiyo": "cryptiana unsolved.htm and crypto.htm (fetched 5 Nov 2026) grepped for Ungnad, Sinzendorff, Breuner, Pezzen, Rym, Constantinople: only the unrelated 1690 Louis XIV Constantinople entry; the Habsburg envoys are not listed.",
+    "lasry": "No Lasry or HistoCrypt item on these despatches found by web search 5 Nov 2026 (Lang's Real Life Cryptology 2018 and his 2015 repertory cover Ungnad/Sinzendorff only as already catalogued 342/343).",
+    "edition": "Fazekas-Fodor-Gluck, Reports of the Habsburg Envoys in Constantinople 1568-1574 (Budapest 2025) covers Rym to Nov 1574; not online, not opened.",
+    "literature": "Web search (Habsburg envoys Constantinople Ungnad Sinzendorff Breuner Pezzen ciphered despatches) found Lang 2018 and the Habsburg-Ottoman 'secret correspondence' literature but no article reading these despatches."
+   },
+   "key_check": "Candidate keys DECODE R392 (Ungnad) and R1384/R1590 (Breuner) are held in the repo (targets/ungnad1576, sinzendorff1578); untested because no image exists.",
+   "key_in_volume": "Keys R392/R1384 are the same embassy's keys per DECODE; not tested.",
+   "duplicates": "known.py 'Ungnad', 'Tuerkei I': overlaps catalogue 342 (Ungnad 12 Mar 1576, Kt. 32 Konv. 3) but is a 68-row cluster; no single-document duplicate established.",
+   "verdict": "unvettable"
+  }
+ },
+ "1221": {
+  "verdict": "unvettable",
+  "note": "The lead is a series of 46 Hungaricana regest rows for HHStA Tuerkei I Kt. 36-45 (1578-81, Ungnad, Sinzendorff, Breuner) with no single document chosen and no scan (e.g. BecsSeg/48849 reads 'Sinzendorff jelentesei sifrirban, feloldas nelkul'), so it is a collection-level bundle that cannot be vetted.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Hungaricana Viennese inventory regest https://archives.hungaricana.hu/en/lear/BecsSeg/48849/ (read in Chrome 5 Nov 2026); BecsSeg/49427 and 48650 not re-read; no scans on Hungaricana or in the Austrian AIS per earlier sessions.",
+    "extent": "Lead: 46 regest rows, Kt. 36-45, 1578-81; BecsSeg/48849 is Kt. 40 Konv. 3, fol. 22-37, three despatches of 26 Oct, 29 Oct and 1 Nov 1579.",
+    "cipher": "Regest of BecsSeg/48849: 'Sinzendorff jelentesei sifrirban, feloldas nelkul' (Sinzendorff's reports in cipher, without decipherment). A finding-aid summary only; no leaf seen."
+   },
+   "prior_art": {
+    "decode": "known.py 'Sinzendorff', 'Breuner': DECODE has only keys (Ungnad R392, Breuner R1384/R1590), no ciphertext of these despatches.",
+    "tomokiyo": "cryptiana unsolved.htm and crypto.htm (fetched 5 Nov 2026) grepped for Ungnad, Sinzendorff, Breuner, Pezzen, Rym, Constantinople: only the unrelated 1690 Louis XIV Constantinople entry; the Habsburg envoys are not listed.",
+    "lasry": "No Lasry or HistoCrypt item on these despatches found by web search 5 Nov 2026 (Lang's Real Life Cryptology 2018 and his 2015 repertory cover Ungnad/Sinzendorff only as already catalogued 342/343).",
+    "edition": "Heidelberg Sinzendorff/Preiner edition (Graf, 1580-83) and the Graz QhoD volume may print or summarise these despatches; not online, not opened.",
+    "literature": "Web search (Habsburg envoys Constantinople Ungnad Sinzendorff Breuner Pezzen ciphered despatches) found Lang 2018 and the Habsburg-Ottoman 'secret correspondence' literature but no article reading these despatches."
+   },
+   "key_check": "Candidate keys R392 and R1384 are held in the repo (targets/ungnad1576, sinzendorff1578); untested because no image exists.",
+   "key_in_volume": "Keys R392/R1384 are the same embassy's keys per DECODE; not tested.",
+   "duplicates": "known.py 'Sinzendorff': overlaps catalogue 343 (Sinzendorff 3-7 Sept 1578, Kt. 37 Konv. 2) but is a 46-row cluster; no single-document duplicate established.",
+   "verdict": "unvettable"
+  }
+ },
+ "1222": {
+  "verdict": "unvettable",
+  "note": "The lead is a cluster of 9 Hungaricana regest rows for HHStA Tuerkei I Kt. 46-49 (Breuner 1582, Pezzen 1583) with no single document chosen and no scan (e.g. BecsSeg/49930 reads 'Pezzen - Rudolf (sifrir, triplikatum, feloldas nelkul)'), so it is a series-level bundle with nothing viewable.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Hungaricana Viennese inventory regest https://archives.hungaricana.hu/en/lear/BecsSeg/49930/ (read in Chrome 5 Nov 2026); BecsSeg/49933 and 49599 not re-read; no scans on Hungaricana or in the Austrian AIS per earlier sessions.",
+    "extent": "Lead: 9 regest rows, Kt. 46-49, 1582-83; BecsSeg/49930 is Kt. 49 Konv. 2, fol. 4-6 and 26-28, a despatch of 4 Sept 1583 from Constantinople in triplicate.",
+    "cipher": "Regest of BecsSeg/49930: 'Pezzen - Rudolf (sifrir, triplikatum, feloldas nelkul)' (cipher, triplicate, without decipherment). A finding-aid summary only; no leaf seen."
+   },
+   "prior_art": {
+    "decode": "known.py 'Pezzen', 'Breuner': DECODE has Breuner's 1583 reserved key R1590 and R1384 only, no ciphertext of these despatches.",
+    "tomokiyo": "cryptiana unsolved.htm and crypto.htm (fetched 5 Nov 2026) grepped for Ungnad, Sinzendorff, Breuner, Pezzen, Rym, Constantinople: only the unrelated 1690 Louis XIV Constantinople entry; the Habsburg envoys are not listed.",
+    "lasry": "No Lasry or HistoCrypt item on these despatches found by web search 5 Nov 2026 (Lang's Real Life Cryptology 2018 and his 2015 repertory cover Ungnad/Sinzendorff only as already catalogued 342/343).",
+    "edition": "Heidelberg Sinzendorff/Preiner edition (1580-83) and Graz QhoD may cover the period; not online, not opened.",
+    "literature": "Web search (Habsburg envoys Constantinople Ungnad Sinzendorff Breuner Pezzen ciphered despatches) found Lang 2018 and the Habsburg-Ottoman 'secret correspondence' literature but no article reading these despatches."
+   },
+   "key_check": "Breuner's 1583 key DECODE R1590 and R1384 are held; untested because no image exists.",
+   "key_in_volume": "R1590 (Breuner 1583 reserved key) per DECODE; not tested.",
+   "duplicates": "known.py 'Pezzen', 'Breuner': catalogue notes mention this lead only; no single-document duplicate established.",
+   "verdict": "unvettable"
+  }
+ }
+}

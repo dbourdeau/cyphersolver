@@ -1,0 +1,171 @@
+{
+ "1377": {
+  "verdict": "unvettable",
+  "note": "Catalogue record 03-33-162-04-001 (IMH Academia Sinica, 47 pp., copy, language 'foreign', no description) only titles it 'Shandong-case secret telegrams (foreign language)', so nothing shows whether the file holds cipher groups or plain/decoded copies, and the images need an IMH reader account.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Union catalogue record https://catalog.digitalarchives.tw/item/00/0a/ff/0b.html (fetched 5 Nov 2026, HTTP 200, metadata only); images only in the IMH archive system (archivesonline.mh.sinica.edu.tw, reader account needed, not used). The lead's access field is empty; the file is offline as far as can be seen.",
+    "extent": "47 pages (頁數 47), version 抄檔 (copy), type 函 (letter/despatch), level item (件), undated (民國), language 外文 (foreign language).",
+    "cipher": "Record, verbatim fields: '件名：魯案密電（洋文）', '館藏號：03-33-162-04-001', '版本：抄檔', '頁數：47', '語言：外文', description empty; the record names no cipher groups, key or decipherment, and does not show whether the foreign-language telegrams are in code or are the plain texts as deciphered. No leaf seen."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: known.py (harvested DECODE views plus repo) on 'Shandong' and the Chinese title found only the lead's own sweep rows (research/asia_sinica) and no DECODE record; the live site was not queried.",
+    "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm and code/crypto.htm fetched 5 Nov 2026 and grepped for Shandong, China, Chinese: the only hit is the unrelated Chinese telegraph-codebook case; no Shandong item.",
+    "lasry": "Web search 5 Nov 2026 (Lasry HistoCrypt with Shandong; Shandong question cipher telegrams Academia Sinica) found no Lasry, HistoCrypt or Cryptologia item on these files.",
+    "edition": "No edition known; web searches in Chinese and English (魯案密電 近代史研究所; Shandong question cipher telegrams Waijiaobu) found no printed edition or study of file 03-33-162-04-001.",
+    "literature": "Searches found only general Shandong-question history (Versailles, Washington 1921-22, Academia Historica minutes) and no description of the cipher or of this file."
+   },
+   "key_check": "No key is named in the record and none is held here; nothing could be tested because no leaf was seen.",
+   "duplicates": "known.py on 'Shandong' and the file number: only the lead's own rows; no catalogue entry and no targets/ folder.",
+   "verdict": "unvettable"
+  }
+ },
+ "1577": {
+  "verdict": "partly_read",
+  "note": "Avenel (Lettres du cardinal de Richelieu, vol. III, 1858) prints fr. 3828 fol. 30 (Richelieu to Rance, Suze, 20 April 1629, 'Fonds Bethune 9322 fol. 30') with the numerals partly resolved in editor's footnotes (le roi, la fin a Rome, septembre), so at least this one of the 8 letters has a printed reading; the others were not matched.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "BnF Archives et manuscrits (opened in Chrome 5 Nov 2026): https://archivesetmanuscrits.bnf.fr/ark:/12148/cc502685/cd0e170 (fr. 3828, fol. 30, no. 10); no digitisation link.",
+    "extent": "8 letters (fr. 3828 nos. 8, 10, 17, 18, 19, 21, 26; fr. 3835 no. 15) per the lead, Apr-May 1629; I opened the BAM entry of no. 10 only; extent of cipher in each letter not stated.",
+    "cipher": "BAM fr. 3828: \"Recueil de lettres et pièce originales. foliotation : Fol. 30 / 10 Lettre, avec chiffre, du cardinal DE RICHELIEU « pour monsieur de Rancé,... De Suze, ce 20e apvril »\"; no decipherment is recorded with the original."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: known.py found no DECODE record for these letters (only the sibling fr. 3829 f. 87 = R9461, already solved by the repo); live site not queried.",
+    "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm and code/crypto.htm fetched 5 Nov 2026 and grepped for Richelieu, Rance: only the entry on fr. 3829 f. 87 (R9461), where Tomokiyo notes the repo's solution and the deciphered text in Avenel; nothing on fr. 3828/3835.",
+    "lasry": "Web search 5 Nov 2026 (Lasry HistoCrypt Richelieu Rance fr. 3828) found nothing on this series.",
+    "edition": "Avenel, Lettres, instructions diplomatiques et papiers d'Etat du cardinal de Richelieu, vol. III (archive.org lettresinstructi03richuoft, text read 5 Nov 2026) prints 'POUR M. DE RANCE. 20 avril [1629] ... De Suze, ce 20 apvril' from 'Bibl. imp. Fonds Bethune, 9322, fol. 30 - Original' with number groups interleaved and footnote glosses ('Le roi', 'La fin a Rome', 'Monsieur s'accommode', 'Septembre'), i.e. a partial printed reading of the letter on fr. 3828 fol. 30; the other letters of the lead were not matched to Avenel pages.",
+    "literature": "Searches (Richelieu Rance 1629 chiffre) found the Tomokiyo/DECODE notes on fr. 3829 and Avenel; no cipher study of fr. 3828."
+   },
+   "key_check": "The fr. 3829 reading of the same series code (Richelieu to Rance 1629, README) is held; not applied to fr. 3828 because no scan exists, and Avenel already supplies the plaintext for no. 10.",
+   "key_held": "fr. 3829 ff. 87, 89 reading (repo SOLVED_CATALOGUE 7) shows the same series code; untested on fr. 3828 (no scan).",
+   "duplicates": "known.py on Rance, Richelieu, 3828, 3835 (5 Nov 2026): no catalogue entry or targets/ folder for fr. 3828/3835, only the fr. 3829 reading (README, SOLVED_CATALOGUE) and the lead's own rows.",
+   "verdict": "partly_read"
+  }
+ },
+ "1590": {
+  "verdict": "unvettable",
+  "note": "AGAD AKW 1/3/0/10/38/54 is titled 'List do biskupa luckiego - szyfr w sprawie wojny ze Szwecja i Moskwa' with no scan, and its neighbours nos. 53 and 55 show the cataloguer summarises each letter's content, so nothing shows whether the leaf is ciphertext or a decipherment.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Szukaj w Archiwach unit https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/17707003 (opened in Chrome 5 Nov 2026): 'Skany (0) - Ta jednostka nie posiada jeszcze skanow'; neighbours /17707002 (no. 53) and /17707004 (no. 55) opened for comparison.",
+    "extent": "One letter, 1659, AGAD Archiwum Koronne Warszawskie 1/3/0/10/38/54; no folio or page count given.",
+    "cipher": "Record verbatim: 'Pinocci H [ rezydent krolewski ]. List do biskupa luckiego [ kanclerza wlk. kor. ] - szyfr w sprawie wojny ze Szwecja i Moskwa oraz ewentualnego zawarcia pokoju.' (Daty 1659 - 1659, Dokumentacja aktowa, Opis 'Brak danych'); the catalogue calls the letter a 'szyfr' but gives no description of the cipher and does not say whether a decipherment is filed with it; no leaf seen."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: known.py (harvested DECODE views) on Pinocci and Prazmowski found no DECODE record; the live site was not queried.",
+    "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm and code/crypto.htm fetched 5 Nov 2026 and grepped for Pinocci, Poland, Polish: no hit.",
+    "lasry": "Web search 5 Nov 2026 (Lasry HistoCrypt Pinocci and other terms) found no Lasry or HistoCrypt item on Pinocci or Polish 17th-century diplomatic ciphers.",
+    "edition": "No edition known: Targosz, Hieronim Pinocci (Wroclaw 1967) was not found online; a Polish web search (Pinocci szyfr 1659 list do biskupa luckiego) found no description or reading of this letter, and noted the Pinocci family papers are in the Archiwum Narodowe w Krakowie, not AKW.",
+    "literature": "Polish web search found only general Pinocci biography (Targosz 1967, PSB t. 26); nothing on this cipher."
+   },
+   "key_check": "No key is named in the record and none is held here; nothing could be tested because no leaf is online.",
+   "duplicates": "known.py on Pinocci (5 Nov 2026): only the lead's own rows (leads.json, chrome_pass candidates); no catalogue entry or targets/ folder.",
+   "verdict": "unvettable"
+  }
+ },
+ "1605": {
+  "verdict": "unvettable",
+  "note": "BNE's own record of tomo 3 (MSS/7940, 635 leaves, 1677-80) says 'Texto en espanol y cifrado' and the volume is imaged on BNE Digital, but I could not open the scans (the viewer hands over PDFs) and the nine volumes are multi-correspondent bundles, so no cipher document or leaf is identified to vet.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "scan",
+    "where": "BNE Digital card https://bnedigital.bne.es/bd/es/card?id=bafe8c96-2090-4c14-a48d-e265723b5f32 (tomo 3, three PDF parts pp. 1-212, 213-424, 425-636) and the catalogue record https://catalogo.bne.es/permalink/34BNE_INST/f0qo1i/alma991031588429708606, both opened in Chrome 5 Nov 2026; only the catalogue cards were read, no page image was examined (the viewer link serves PDFs, which I did not download); the other eight tomos' cards were not opened.",
+    "extent": "Tomo 3 only: 635 leaves, MSS/7940, correspondence dated 1677-1680 (Venice and the Spanish ambassador in Rome), many blank leaves and loose leaves; the lead's other volumes (4, 8, 9, 11, 13, 14, 17, 18) were not checked.",
+    "cipher": "Catalogue Notas for tomo 3, verbatim: 'Correspondencia fechada entre 1677 y 1680 • Texto en español y cifrado • Título del tejuelo: Venezia Roma n. 1 • Otro título: Venecia: correspondencia con el embajador de Su Majestad [Carlos II] en Roma'; this confirms cipher in the volume, but no leaf, system or extent is named and nothing shows whether decipherments are written on or with the letters."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: known.py (harvested DECODE views) on Villagarc found no record; the live site was not queried.",
+    "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm and code/crypto.htm fetched 5 Nov 2026 and grepped for Villagarc, Venice: the Venice hits concern Alonso Sanchez (R9509, R9522), not Villagarcia.",
+    "lasry": "Web search 5 Nov 2026 (Lasry HistoCrypt Villagarcia and other terms) found no Lasry or HistoCrypt item on the marquis of Villagarcia.",
+    "edition": "No edition of the cipher known; Rodriguez Perez's UCM thesis (eprints.ucm.es/56082) and article on the II marquis's correspondence surfaced in a web search but their treatment of ciphers was not read.",
+    "literature": "Web search (Villagarcia cifra correspondencia cifrada descifrada) found the thesis, the DBE biography and a UCM news-traffic article, none with a cipher reading."
+   },
+   "key_check": "No key is named and none is held here; no cipher leaf was examined.",
+   "duplicates": "known.py on Villagarc (5 Nov 2026): only the lead's own rows; no catalogue entry or targets/ folder.",
+   "verdict": "unvettable"
+  }
+ },
+ "1611": {
+  "verdict": "not_cipher",
+  "note": "Hull catalogue U DDHO/3/19 'Notes of mistakes in Reichenbach's cypher' and U DDHO/3/30 'Notes of mistakes in a cypher' (c. 1730, 1 item each, no description) are notes about errors in a cipher, not ciphertext, and nothing offline or online shows a cipher letter.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Hull History Centre catalogue records https://catalogue.hullhistorycentre.org.uk/catalogue/U-DDHO-3-19 and .../U-DDHO-3-30 (fetched 5 Nov 2026); neighbours U-DDHO-3-18, 3-20, 3-29, 3-31 (declarations, memoranda, plans) also read; no images online (access 'archive').",
+    "extent": "Two single items, c. 1730, within U DDHO/3 (Sir Charles Hotham, 5th Bt, Berlin mission).",
+    "cipher": "Records verbatim: 'Notes of mistakes in Reichenbach's cypher.' (U DDHO/3/19, c. 1730) and 'Notes of mistakes in a cypher.' (U DDHO/3/30, c.1730, Format Archive Item, Extent 1 item); both are titles of notes about a cipher, with no ciphertext, key or decipherment named."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: known.py on Reichenbach and Hotham found no DECODE record (Reichenbach appears only as a name in targets/schiner1516).",
+    "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm and code/crypto.htm fetched 5 Nov 2026 and grepped for Hotham, Reichenbach, Prussia: no Hotham or Reichenbach item.",
+    "lasry": "Web search 5 Nov 2026 (Lasry HistoCrypt Hotham Reichenbach) found no Lasry or HistoCrypt item on the Hotham papers.",
+    "edition": "No edition known; the items are notes, not letters.",
+    "literature": "No study of Reichenbach's cipher found in the searches run."
+   },
+   "key_check": "No key held or named; the items are notes about mistakes in a cipher, not a cipher text.",
+   "duplicates": "known.py on Reichenbach and Hotham (5 Nov 2026): no catalogue entry; only targets/schiner1516 mentions Reichenbach as a cipher user, a different case.",
+   "verdict": "not_cipher"
+  }
+ },
+ "1632": {
+  "verdict": "unvettable",
+  "note": "StA Ludwigsburg B 113 I Bu 64 (a whole Bue of 1556-57 Regensburg Reichstag papers) lists 'Transumpte von drei chiffrierten Briefen' of Albrecht, which are certified copies whose form (ciphertext or plaintext) the record does not state, with no digitisation and Hartmann's 2005 Regesten unopened.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Archivportal-D record https://www.archivportal-d.de/item/F4IVQRJ2APX2JXYY5XXVG5SON2DZGR3W (opened in Chrome 5 Nov 2026), Landesarchiv Baden-Wuerttemberg, Staatsarchiv Ludwigsburg B 113 I Bue 64; no digital object (access 'archive').",
+    "extent": "Three transumpts within one Bue dated 10 Jan 1556 - 25 Jan 1557 (the lead's date 1556 is the Riga item only); length of the transumpts not stated.",
+    "cipher": "Record verbatim: 'Enthaelt: ... 2) Streit zwischen dem Deutschmeister in Livland und dem Erzbischof in Riga (Markgraf Wilhelm von Brandenburg, Bruder Markgrafen Albrecht des Aelteren: Transumpte von drei chiffrierten Briefen des letzteren, Bericht der Meklenburgischen und Pommerschen Abgesandten in dieser Sache ...' (transumpt = certified copy); the record does not say whether the copies keep the cipher or give the clear text, and names no key; no leaf seen."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: known.py on 'Wilhelm von Brandenburg', 'Albrecht Riga' and the shelfmark found no DECODE record (the one hit is the unrelated Friedrich Wilhelm of Brandenburg entry in catalogue.json); live site not queried.",
+    "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm and code/crypto.htm fetched 5 Nov 2026 and grepped for Albrecht, Riga, Livonia, Regensburg, Limpurg: no hit relevant to this item.",
+    "lasry": "Web search 5 Nov 2026 (Lasry HistoCrypt Wilhelm of Riga and other terms) found no Lasry or HistoCrypt item on these letters.",
+    "edition": "Stefan Hartmann, Herzog Albrecht von Preussen und Livland (1551-1557), Regesten (Boehlau 2005) would cover Albrecht's 1556 letters to Wilhelm of Riga and could not be opened; a web search found the volume's bibliographic data and nothing on a ciphered letter.",
+    "literature": "Searches found only reviews of Hartmann and general Livonian-crisis literature; no study of ciphered Albrecht letters."
+   },
+   "key_check": "No key is named in the record and none is held here; the lead's suggestion of the Hohenzollern family cipher (OBA 26859) was not tested because no leaf was seen.",
+   "duplicates": "known.py (5 Nov 2026): no catalogue entry or targets/ folder for B 113 I Bue 64 or these letters; only the lead's own rows.",
+   "verdict": "unvettable"
+  }
+ },
+ "1674": {
+  "verdict": "not_cipher",
+  "note": "GStA PK I. HA Rep. 81 Rastatt Nr. 4 is a file of 100 royal rescripts (1 Dec 1797 - 21 Dec 1798) whose only cipher mention is the item 'Korrektur der Chiffre' (a correction note or key sheet), with no ciphertext named and no digital object.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Archivportal-D record https://www.archivportal-d.de/item/6LIMDLT2DZIJZVQRVLZU6LPIWG56JKKS (opened in Chrome 5 Nov 2026), GStA PK I. HA Rep. 81 Rastatt, Nr. 4; no digital object (access 'archive').",
+    "extent": "Whole file Nr. 1-100 of rescripts, 1 Dec 1797 - 21 Dec 1798; the cipher item's size is not stated.",
+    "cipher": "Record verbatim: 'Reskripte des Koenigs an die Gesandtschaft (Nr. 1 - 100) ... Enthaelt u. a.: Depesche von Comte de Keller aus Wien; Zaesur der Verhandlungen; Verhandlungen ueber Zolleinkuenfte am Rhein. Enthaelt auch: Schreiben Napoleons an Koenig Friedrich Wilhelm III.; Karte des Niederrheinischen Kreises 1789; Korrektur der Chiffre.'; the only cipher item is a correction (of a cipher/key), no ciphertext or enciphered rescript is named."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: known.py on Rastatt found only catalogue.json's Wuerttemberg Zeppelin/Maisonneuve entry (a different legation) and no DECODE record.",
+    "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm and code/crypto.htm fetched 5 Nov 2026 and grepped for Rastatt, Prussia: no Rastatt item; the Prussia hits are DECODE letters of Frederick I.",
+    "lasry": "Web search 5 Nov 2026 (Lasry HistoCrypt Rastatt and other terms) found no Lasry or HistoCrypt item on the Rastatt congress.",
+    "edition": "No edition of cipher material known; a German web search (Rastatter Kongress preussische Gesandtschaft Chiffre Reskripte) found only the GStA PK Rep. 81 finding-aid records and general congress literature.",
+    "literature": "Same search: the finding aid notes the files are mostly in French and cites Dohm's Nachlass; nothing on cipher keys or decipherment."
+   },
+   "key_check": "No key is held or named beyond the 'Korrektur der Chiffre' note; nothing to test.",
+   "duplicates": "known.py on Rastatt (5 Nov 2026): no catalogue entry or targets/ folder for Rep. 81 Rastatt Nr. 4; the catalogue's Rastatt-era Stuttgart A 205 Zeppelin entry is a different legation.",
+   "verdict": "not_cipher"
+  }
+ }
+}

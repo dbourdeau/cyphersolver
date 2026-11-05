@@ -1,0 +1,194 @@
+{
+ "1301": {
+  "verdict": "partly_read",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "No scan found online (AHGE-SRE, Mexico; access field empty on the lead, item genuinely offline). Description read from Narvaez, EHMCM 38 (2009) pp. 139-163, open PDF https://moderna.historicas.unam.mx/index.php/ehm/article/download/17768/16948/25169 (text extracted 5 Nov 2026), intro p. 139-140 and p. 152; his Memorias article (t. 49, 2007-08, pp. 7-43) and Cryptologia 39 (2015) were not available in full (tandfonline gave a bot check, not clicked); his Documenta & Instrumenta 6 (2008) pp. 29-53 was downloaded and grepped and covers the 1829 diary and Michelena, not these notes.",
+    "extent": "Two notes: no. 2 (23 Jan 1826) and no. 3 (9 Apr 1826), reserved notes from Torrens to the Primera Secretaria de Relaciones; length not stated.",
+    "cipher": "Narvaez 2009 p. 139-140: 'Dedique mis observaciones y analisis a las notas 2 (23 de enero) y 3 (9 de abril) reservadas que Torrens envio a la Primera Secretaria ... en 1826'; he separates a cifra from a codigo, says his inferences were 'amplias y concisas a proposito de las notas cifradas, pero escasamente informadas en cuanto a los materiales en codigo' (poor preservation), and p. 152 says Torrens 'elaboro sus reservadas 2 y 3 como densos tejidos de grupos numericos' using a 10 x 7 matrix. Whether the plaintext of the two notes is printed (2007-08 article, 2019 SRE book) cannot be checked; neither leaf has been seen."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Torrens': no DECODE record; only repo files (research/canada_latam, latam_mexico), the sibling lead 1302 (Michelena 1824, partly_read) and catalogue 1452 (a different cifra letter). Not on DECODE.",
+    "tomokiyo": "cryptiana unsolved.htm (cryptiana.web.fc2.com/code/unsolved.htm, fetched 5 Nov 2026) grepped for Torrens, Mexic, Bogota: no hit.",
+    "lasry": "Local GL.htm (Tomokiyo's list of Lasry decipherments) has no Torrens or Mexican 1820s item; web searches found no Lasry or HistoCrypt work on Torrens.",
+    "edition": "Narvaez 2007-08 (Memorias Acad. Mex. Hist. 49 pp. 7-43) and his Criptografia diplomatica, politica y militar en Mexico 1813-1926 (SRE 2019) are the printed treatments; neither found online, so whether they print the plaintext of notes 2 and 3 is unknown. The 1829 diary dr18 (a different document) is printed deciphered in EHMCM 38.",
+    "literature": "Web searches (Narvaez Torrens 1826 notas reservadas; 'Dos criptosistemas') found only bibliographic references to the Memorias article and the Cryptologia 2015 paper 'Some Diplomatic Ciphers of the First Mexican Federal Republic (1824-1830)', not their text."
+   },
+   "key_check": "No key held here. Narvaez recovered Torrens's number system (10 x 7 matrix on a 25-letter alphabet; separate syllabic code) and used it on these notes; the 1824 key sent to Torrens is AHDSRE exp. 5-16-8615 ff. 27-29 (per EHMCM 38); none tested here.",
+   "duplicates": "known.py on 'Torrens': catalogue 1452 (Mexican-Colombian Cuba expedition letter, 1825) is a different letter and lead 1302 (Michelena 1824) is another document; no catalogue or targets/ duplicate of notes 2 and 3.",
+   "verdict": "partly_read"
+  },
+  "note": "Torrens notes 2 (23 Jan) and 3 (9 Apr) 1826 are the very examples on which Narvaez analysed Torrens's cipher and code in Memorias Acad. Mex. Hist. 49 (2007-08) pp. 7-43 (per EHMCM 38, 2009, p. 139-140), so the cipher part has been worked on in print, but I could not see whether the plaintext is printed there; no scan online and the access field is empty (item genuinely offline)."
+ },
+ "1353": {
+  "verdict": "unvettable",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "DRRP/UTSC register 5 record https://drrp.digital.utsc.utoronto.ca/61220/utsc65994 (opened in Chrome 5 Nov 2026 after the bot wall passed on its own; metadata only, no image viewer) and register 2/3/6 records seen in search; access 'archive' (ASVe).",
+    "extent": "Registers 2-7 (c. 1571-1600) as a whole; register 5 dated 1576-1580; no folio-level cipher leaf identified. Child records of register 5 (pp. 7, 88, 73-4, 118-119) carry transcriptions only (per the earlier vetting note, not re-opened).",
+    "cipher": "DRRP record title 'Venetian State Archives, Capi del Consiglio dei Dieci, Lettere di Ambasciatori, Costantinopoli, Register 5', object type Register, 1576-1580: the description says nothing about cipher, so there is no archive description of a cipher to quote and the lead's claim that imaged pages carry cipher is unconfirmed. The repo's venice_archives README records that ASVe's series description lists 'copie moderne e traduzioni di dispacci cifrati' for Costantinopoli, i.e. deciphered copies may sit with the originals."
+   },
+   "prior_art": {
+    "decode": "known.py (research/archive_sweep_2026-10) searched 5 Nov 2026 over the harvested DECODE list and the repo ('Baili', 'Costantinopoli', 'Capi del Consiglio'): no DECODE record under this series; Council of Ten items on DECODE or in the catalogue are Soranzo London 1553 (R1851) and Zambon London.",
+    "tomokiyo": "cryptiana unsolved.htm (cryptiana.web.fc2.com/code/unsolved.htm, fetched 5 Nov 2026) grepped for Venice, Venetian, Constantinople: only the 1528 Venetian superscript-digit cipher and Louis XIV to Castaigne 1690; nothing on the baili's letters to the Capi.",
+    "lasry": "Local GL.htm not specific to this series; web search found no Lasry or HistoCrypt item on baili ciphers of the 1570s-90s.",
+    "edition": "No edition of the Capi dei Dieci Constantinople despatches found; Del Col (Ateneo Veneto) and a Milan PhD cite the fonds only generally.",
+    "literature": "Web search for Capi del Consiglio dei Dieci Costantinopoli cifra found DRRP catalogue records and the 'Cifre, chiavi e scontri di cifra' fonds note (CX b. 4 r. 16 per the lead), nothing on this series being read."
+   },
+   "key_check": "No key held; the Council of Ten's cipher book of 1578-87 (ASVe CX, Cifre chiavi e scontri di cifra, b. 4, r. 16, per the lead) is offline and not seen.",
+   "duplicates": "known.py: catalogue 278/286 and the Venice-sweep candidates are other ASVe Capi letters (London); the catalogue text notes Costantinopoli items of the inventory where 'decifrazione' is stated, so deciphered siblings exist; no duplicate, but this lead names no single document.",
+   "verdict": "unvettable"
+  },
+  "note": "Series-level record for ASVe Capi del Consiglio dei Dieci, Lettere di ambasciatori, Costantinopoli regs 2-7: the DRRP register 5 record (1576-1580) is only a metadata record with no page image and no identified cipher leaf, so no single ciphertext is named."
+ },
+ "1372": {
+  "verdict": "unvettable",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "https://catalog.digitalarchives.tw/item/00/0b/9c/34.html (Academia Sinica IMH union-catalogue record opened in Chrome 5 Nov 2026; images only via archivesonline.mh.sinica.edu.tw, reader account needed, not created). Access field empty on the lead; item genuinely not imaged publicly.",
+    "extent": "4 pp., original (yuandang), one document of the Ministry of Finance, month 08 of Minguo 9 (Aug 1920).",
+    "cipher": "Record: title 'chao song Xinjiang shengzhang suo kou E ren midian qing yi chu jian fu you' (forwarding the Russian secret telegrams detained by the Xinjiang provincial governor, please translate and reply); genre 'zi' (official note), creator Ministry of Finance (acting minister Zhou Ziqi), language 'Chinese', description field empty. It is a Chinese covering note; it does not say whether the Russian telegrams are copied in as cipher groups or were plain Russian, so there is no cipher description to quote."
+   },
+   "prior_art": {
+    "decode": "known.py (research/archive_sweep_2026-10) searched 5 Nov 2026 over the harvested DECODE list and the repo (Xinjiang, Waijiaobu, Sinica): no DECODE record; hits only this lead and its sibling Xinjiang/Waijiaobu leads.",
+    "tomokiyo": "cryptiana unsolved.htm (cryptiana.web.fc2.com/code/unsolved.htm, fetched 5 Nov 2026) grepped for Xinjiang, Sinkiang, China, Chinese: only a Chinese telegraph-codebook item unrelated to Russians in Xinjiang.",
+    "lasry": "Local GL.htm: no Chinese or Russian-1920 item; no Lasry or HistoCrypt work found by search.",
+    "edition": "No edition; a Chinese web search (Yang Zengxin, detained Russian secret telegrams 1920, Waijiaobu) found nothing on this file.",
+    "literature": "No study found; the searches returned only unrelated 1920 FRUS and newspaper items."
+   },
+   "key_check": "No key held; the Russian ciphers used in Xinjiang in 1920 are unidentified.",
+   "duplicates": "known.py: only this lead and the sibling leads for Russian telegrams detained in Xinjiang (1373) and Harbin; no catalogue or targets/ duplicate.",
+   "verdict": "unvettable"
+  },
+  "note": "IMH catalogue 03-46-007-01-019 is a 4-page Chinese covering note (zi) of the Ministry of Finance, Aug 1920, forwarding Russian telegrams seized by the Xinjiang governor for translation, with an empty description; images need a reader account, so it is unknown whether cipher groups are copied in."
+ },
+ "1379": {
+  "verdict": "unvettable",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "https://catalog.digitalarchives.tw/item/00/0b/98/91.html (03-44-034-01-001) and https://catalog.digitalarchives.tw/item/00/0b/98/95.html (03-44-035-01-001, 'xin shi ma mi ma dian ben') opened in Chrome 5 Nov 2026; images only at archivesonline.mh.sinica.edu.tw (reader account, not created). Access field empty on the lead; item genuinely not imaged publicly.",
+    "extent": "03-44-034-01-001: 82 pp., copy (chao dang); 03-44-034-02-001: 89 pp. (from the lead, not re-opened); the neighbouring 03-44-035-01-001 is 53 pp., titled 'new ten-digit code book'.",
+    "cipher": "Record title 'mi dian' (secret telegram), type dian (telegram), 'ban ben: chao dang' (copy), 82 pages, language Chinese, description and date fields empty. Nothing in the record says the telegrams are enciphered groups rather than plain-text copies of secret telegrams, so there is no cipher description to quote; no decipherment is mentioned either way."
+   },
+   "prior_art": {
+    "decode": "known.py (research/archive_sweep_2026-10) searched 5 Nov 2026 over the harvested DECODE list and the repo (Waijiaobu, Sinica, midian): no DECODE record, only this lead's rows.",
+    "tomokiyo": "cryptiana unsolved.htm (cryptiana.web.fc2.com/code/unsolved.htm, fetched 5 Nov 2026) grepped for Chinese, China: no entry for Waijiaobu telegram volumes.",
+    "lasry": "No Lasry or HistoCrypt work found by search; local GL.htm has no Chinese item.",
+    "edition": "No edition; a Chinese web search (xin shi ma mi ma dian ben, Waijiaobu midian) found nothing on these volumes.",
+    "literature": "No study found of series 03-44-034/035; unrelated results only."
+   },
+   "key_check": "The next unit 03-44-035 holds five volumes of 'xin shi ma' ten-digit code books, probably the key to these telegrams, not seen or tested.",
+   "duplicates": "known.py: only this lead and sibling Waijiaobu leads (Brussels/Urga midian, Shandong midian, Harbin); no catalogue or targets/ duplicate.",
+   "verdict": "unvettable"
+  },
+  "note": "Catalogue records 03-44-034-01-001 ('mi dian', 82 pp., copy) and -02-001 (89 pp.) carry only the title 'secret telegram', language Chinese, undated, with no description, so it is not shown whether they hold coded groups or plain Chinese text; images need a reader account."
+ },
+ "1387": {
+  "verdict": "unvettable",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Nationaal Archief 2.10.62 (NEFIS/CMI) inventory, inv. 2914, https://www.nationaalarchief.nl/onderzoeken/archief/2.10.62 (inventory PDF page read by the earlier pass on 4 Nov; the invnr page gave no extractable text in Chrome on 5 Nov). Access 'archive'; openbaar but not scanned.",
+    "extent": "1 omslag (folder), 1946 per the inventory (the lead's 1946-1948 range comes from the sweep); size unknown.",
+    "cipher": "Inventory description: 'Stukken betreffende door Bk. Makassar onderschepte, bij Republikeinse groeperingen gebruikte coderingen. 1946, 1 omslag.' It speaks of 'coderingen' (codings) used by Republican groups and documents concerning them; it does not say enciphered messages are included, and the related 'Code voor Boeginees en Makassaars' is a separate unit, inv. 4678."
+   },
+   "prior_art": {
+    "decode": "known.py (research/archive_sweep_2026-10) searched 5 Nov 2026 over the harvested DECODE list and the repo (Makassar, Celebes): only the ANRI-sweep lead rows; no DECODE record from NA 2.10.62.",
+    "tomokiyo": "cryptiana unsolved.htm (cryptiana.web.fc2.com/code/unsolved.htm, fetched 5 Nov 2026) grepped for Makassar, Indonesia, Celebes: no hit.",
+    "lasry": "No Lasry or HistoCrypt work found; local GL.htm has no Indonesian item.",
+    "edition": "No edition found; web search (NEFIS CMI Makassar onderschepte coderingen inv. 2914) returned only inventory context and the ANRI NEFIS inventory.",
+    "literature": "No study of these Makassar intercepts found."
+   },
+   "key_check": "No key held; inv. 4678 'Code voor Boeginees en Makassaars' (1947) is a possible key, not seen or tested.",
+   "duplicates": "known.py: only the ANRI sweep rows (inv. 2914, 4720, 5584 are separate leads); no catalogue or targets/ duplicate.",
+   "verdict": "unvettable"
+  },
+  "note": "NA 2.10.62 inv. 2914 is described only as 'Stukken betreffende ... onderschepte ... coderingen' (documents concerning codings intercepted at Makassar, 1946, one omslag), which reads as papers about the codes used, possibly code tables, not a named ciphertext; not scanned, availability physical."
+ },
+ "1409": {
+  "verdict": "unvettable",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "NAA RecordSearch items 184174 and 184175 (https://recordsearch.naa.gov.au/SearchNRetrieve/Interface/DetailsReports/ItemDetail.aspx?Barcode=184174); the earlier pass saw 'Images do not exist for this item'; ItemDetail needs a live search session and was not re-opened. Access 'archive'.",
+    "extent": "Two files, extent unknown, 1943 and 1944.",
+    "cipher": "Titles as given in the lead from RecordSearch: 'France: Intercepted telegrams between French Committee and Delegation in Australia' (1943) and '... to and from French Delegation in Australia' (1944). The titles describe intercepted telegrams and say nothing of cipher, so there is no archive description of a cipher leaf to quote; Allied decrypts may be filed with them."
+   },
+   "prior_art": {
+    "decode": "known.py (research/archive_sweep_2026-10) searched 5 Nov 2026 over the harvested DECODE list and the repo ('French Delegation', Algiers): no DECODE record; the NAA sweep rows only.",
+    "tomokiyo": "cryptiana unsolved.htm (cryptiana.web.fc2.com/code/unsolved.htm, fetched 5 Nov 2026) grepped for Free French, Algiers, Australia: no hit.",
+    "lasry": "No Lasry or HistoCrypt work on Free French traffic in Australia found; local GL.htm has none.",
+    "edition": "No edition; web search found DFAT historical documents citing other A989 French files and a 1944 US War Department note listing Free French codes (PC 150, PC 148, PCN9), nothing printing these intercepts.",
+    "literature": "Searches found TNA HW 74 (intercepted Free French cypher messages) and commentary that Australia never admitted intercepting diplomatic traffic; nothing on these two files."
+   },
+   "key_check": "No key held; related NAA files A989 1944/350/19/8 'French Representative in Australia. Cyphers and Codes' and MP1049/5 1835/2/736 'Fighting French - use of code & cypher' (per the lead) are not seen or tested.",
+   "duplicates": "known.py: only the oceania_naa sweep rows; no catalogue or targets/ duplicate.",
+   "verdict": "unvettable"
+  },
+  "note": "NAA A989 E1943/350/9/7 Part 1 and 1944/350/9/7 are titled 'Intercepted telegrams' between the French Committee and the French Delegation in Australia, not digitised, and nothing in the titles says whether they hold ciphertext or Allied decrypts."
+ },
+ "1426": {
+  "verdict": "partly_read",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Scans exist at https://historicpittsburgh.org/islandora/object/pitt%3A31735064659596 (Henry Clay Frick Business Records, AIS.2002.06, Univ. of Pittsburgh) but the site showed a Cloudflare 'Verify you are human' checkbox in Chrome on 5 Nov 2026, not clicked, so no leaf was viewed; record titles and dates come from web search snippets and from the Pitt lesson plan https://www.homesteadstrike.library.pitt.edu/pdfs/Decoding%20the%20Homestead%20Strike.pdf (downloaded and read). Access field empty on the lead.",
+    "extent": "19 records dated 1889-1899 (seen in snippets: 6 May 1892, 19 Nov 1890, 9 Jul 1891, 23 Apr 1898, 25 Feb 1898 with 'possession May first' discernible); length of each telegram unknown.",
+    "cipher": "Record titles 'Frick wires Carnegie a coded message' (and '... with possession May first discernible', 25 Feb 1898). Pitt lesson plan (Mark Risisky): students are 'assigned a coded telegram between Henry Clay Frick and Andrew Carnegie from July 1892' with 'a list of words useful to the decryption' and 'use the decoding book to decode the telegram', working from a 'transcribed telegram'. So a decoding book and decoded readings of some telegrams exist; the leaves themselves were not seen."
+   },
+   "prior_art": {
+    "decode": "known.py (research/archive_sweep_2026-10) searched 5 Nov 2026 over the harvested DECODE list and the repo ('Frick', 'Carnegie'): no DECODE record for the Frick-Carnegie telegrams (the Frick hits are the Frick Archives Directory entry for the de Loosey papers).",
+    "tomokiyo": "cryptiana unsolved.htm (cryptiana.web.fc2.com/code/unsolved.htm, fetched 5 Nov 2026) grepped for Frick, Carnegie, telegraph: only the Eckert Civil War archive note; nothing on Carnegie Steel codes.",
+    "lasry": "No Lasry, HistoCrypt or Cryptologia paper on the Frick-Carnegie code found by web search.",
+    "edition": "Pitt's Homestead lesson plan decodes July 1892 telegrams from a 'decoding book', and the Frick Business Records digital collection (AIS.2002.06) describes some items with a gloss; no printed edition of the whole code found.",
+    "literature": "Web searches (Frick Carnegie telegram code Homestead; 'small plunge') found only Pitt records and the lesson plan; the gloss 'small plunge' = Homestead in the lead was not confirmed here."
+   },
+   "key_check": "Pitt holds a Carnegie Steel decoding book (named in the Pitt lesson plan) and a word list; not seen here, so not tested. Because a book and decoded readings exist, the series is not an open cipher.",
+   "duplicates": "known.py on 'Frick', 'Carnegie': only this lead; no catalogue or targets/ duplicate. Other Pitt telegram records are the 18 siblings in the same series.",
+   "verdict": "partly_read"
+  },
+  "note": "The 19 Pitt 'Frick wires Carnegie a coded message' records use the Carnegie Steel private code, Pitt itself holds a decoding book and teaches decoding July 1892 telegrams from it, and at least one record carries a plaintext gloss ('possession May first'), so these are not an unread cipher; I could not view the leaves (Cloudflare check on historicpittsburgh.org, not clicked)."
+ },
+ "1542": {
+  "verdict": "unvettable",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Chicago History Museum Primo record alma991000660089709882 (read in Chrome by the 3 Nov pass; SNAC record https://snaccooperative.org/view/24010342 and a web search on 5 Nov 2026 give the same wording); no item-level finding aid found. Access 'archive'.",
+    "extent": "7 notebooks (extent of each not stated) in a 0.5 linear ft box, plus 389 pp. of Fuller's letterpress copies (4 Sept 1863 - 23 Mar 1864) and about 225 pp. of Plum's notes.",
+    "cipher": "CHM/SNAC description: 'military cipher notebooks' and '7 military telegraph cipher notebooks used by Fuller and William Rattle Plum', beside 'letterpress copies of correspondence (389 p.)' by Capt. William G. Fuller, Assistant Superintendent of Military Telegraph, Dept. of the Tennessee. It does not say the notebooks contain enciphered messages rather than the cipher tables; a Lombard history page lists a 'William Plum Cypher Book, Coded Messages, 1860s' at the CHM."
+   },
+   "prior_art": {
+    "decode": "known.py (research/archive_sweep_2026-10) searched 5 Nov 2026 over the harvested DECODE list and the repo ('Plum', 'Fuller'): no DECODE record; the Plum hits are the 1882 book and a NARA lead.",
+    "tomokiyo": "cryptiana unsolved.htm (cryptiana.web.fc2.com/code/unsolved.htm, fetched 5 Nov 2026) grepped for Plum, Civil War, telegraph: only the Eckert archive and 'Decoding the Civil War' project, nothing on the Plum notebooks.",
+    "lasry": "No Lasry or HistoCrypt work on the Plum/Fuller notebooks found by search.",
+    "edition": "Plum, The Military Telegraph during the Civil War (1882) publishes the Federal and Confederate cipher systems; no edition of the notebooks, and their contents are not described anywhere found.",
+    "literature": "Web searches (Plum Fuller notebooks; Dept. of the Tennessee cipher book) found only the SNAC/CHM record, Plum 1882, and the Eckert Huntington volumes."
+   },
+   "key_check": "The Union Military Telegraph route/transposition ciphers are published (Plum 1882, Eckert and Stager books, targets/eckert1862), so the notebooks are probably key tables or working copies; not seen or tested.",
+   "duplicates": "known.py on 'Plum', 'Fuller', 'Chicago History Museum': catalogue entries mentioning Plum cite the 1882 book only, the Fuller hit is Henry Blake Fuller (unrelated); no catalogue or targets/ duplicate beyond targets/eckert1862 as related material.",
+   "verdict": "unvettable"
+  },
+  "note": "CHM Plum papers: the catalogue lists '7 military telegraph cipher notebooks used by Fuller and Plum' (genre 'Ciphers', 'Notebooks') with no scope note, so whether they hold enciphered telegrams or only Union route-cipher key tables (published in Plum 1882) cannot be told; not imaged."
+ }
+}

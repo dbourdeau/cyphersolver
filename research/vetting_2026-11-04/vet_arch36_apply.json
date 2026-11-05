@@ -1,0 +1,50 @@
+{
+ "1378": {
+  "verdict": "not_cipher",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "scan",
+    "where": "Union catalogue records https://catalog.digitalarchives.tw/item/00/09/52/8a.html (01-001, 41 pp.), /8c (02-001), /8e (03-001) and /90 (04-001, 119 pp.); the first-page images https://image.digitalarchives.tw/ImageCache/00/16/98/6e.jpg, .../70.jpg, .../17/ef/49.jpg and .../16/98/72.jpg were fetched by curl and viewed 5 Nov 2026; the full volumes are imaged only at archivesonline.mh.sinica.edu.tw behind a reader account (not created).",
+    "extent": "Only the catalogue's cover image (first leaf) of each of the four volumes (276 pp. in all, 'copy' version, undated) was viewed; later leaves were not.",
+    "cipher": "Viewed leaves: red-ruled Foreign Ministry sheets stamped 電報處 with headings such as '收庫倫陳都護電' (Urga), '收駐日本陸公使電', '發駐日本陸公使電', '收出使墨國顧公使電', followed by running Chinese prose; no numerals or code groups. These are decoded telegram copies, so the volumes record plaintext, as the lead itself suspected."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Urga', '密電', 'Brussels', 'legation': no DECODE record for the Brussels legation files; nothing Chinese of this kind in the DECODE dumps.",
+    "tomokiyo": "cryptiana unsolved.htm grepped 5 Nov 2026 for Belgium/Brussels (only unrelated Cardinal-Infante letters) and for Urga: no hit.",
+    "lasry": "No Lasry/HistoCrypt item on Chinese legation telegrams found by web search.",
+    "edition": "No edition of the Brussels legation telegram volumes known; the Academia Sinica IMH digitisation is the only publication.",
+    "literature": "Web searches found no study treating these volumes as ciphertext."
+   },
+   "key_check": "No key needed or sought: the leaves viewed are already plaintext.",
+   "duplicates": "known.py on 'Urga', 'Brussels', 'legation', '密電': only this lead; no catalogue entry and no targets/ folder for it.",
+   "verdict": "not_cipher"
+  },
+  "note": "First leaf of all four 密電 volumes (03-13-043-01-001, -02-001, -03-001, -04-001) viewed on the union catalogue images: each is a Waijiaobu Telegraph Office (電報處) copy of a decoded Chinese telegram in plain characters, not cipher groups."
+ },
+ "1621": {
+  "verdict": "not_cipher",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Archivportal-D record https://www.archivportal-d.de/item/WJQYVAM6GGXE4HUCT6HX7LK7Y5TFDOFE (Stadtarchiv Nuernberg, B 11 Ratskanzlei, read in Chrome 5 Nov 2026); no digital copy is linked on the record; lead access 'archive'.",
+    "extent": "Folio volume of 20 + 183 leaves: leaves 1-20 an unused register, the copies of the letters on a few leaves, ff. 31-183 blank; 28 Aug 1514 - 1516.",
+    "cipher": "Record, quoted: 'Ein geheimen Schriftwechsel des Rates mit einem durch die Chiffre \"L und L\" bezeichneten Kundschafter. Letzterer berichtet ueber die politischen Vorhaben der Fuersten und der fraenkischen und schwaebischen Ritterschaft.' and 'Auf dem Vorderdeckel Pgt.-Blatt mit Aufschrift: \"L und L Nr. 1 anno etc. 1514\"'. 'Chiffre' here names the informant (a signature), and the entries are the Council's copies; no encrypted text is described."
+   },
+   "prior_art": {
+    "decode": "known.py on 'L und L', 'Kopialbuch', 'Kundschafter', 'B 11': no DECODE record; the only Nuremberg hits are Zasius 1550s and the 1633 envoys, other series.",
+    "tomokiyo": "cryptiana unsolved.htm grepped 5 Nov 2026 for Nuremberg, Nurnberg: no hit for 1514.",
+    "lasry": "No Lasry/HistoCrypt item on Nuremberg Council spy letters of 1514-16 found by web search.",
+    "edition": "No edition of B 11 Nr. 372 known; the record's own wording (informant's pseudonym) is the only evidence.",
+    "literature": "Not found in a web search on the 1514-16 Nuremberg Kundschafter; nothing suggests a cipher."
+   },
+   "key_check": "No key held or sought; the title names a pseudonym, not a cipher key.",
+   "duplicates": "known.py on 'L und L', 'Nuremberg', 'Nuernberg': no duplicate; catalogue 565/587 are other Nuremberg series (Zasius, 1630s); no targets/ folder.",
+   "verdict": "not_cipher"
+  },
+  "note": "Stadtarchiv Nuernberg B 11 Nr. 372 is a Kopialbuch with about ten leaves of copied letters whose 'Chiffre L und L' is the spy's code name (it is also the cover label 'L und L Nr. 1 anno 1514'), not a cipher."
+ }
+}

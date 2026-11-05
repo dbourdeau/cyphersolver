@@ -1,0 +1,194 @@
+{
+ "1882": {
+  "verdict": "unvettable",
+  "note": "RGAVMF F. 315 Op. 1-2 D. 1121 is a 2-leaf file whose catalogue line lists a Gorchakov note and a 'copy of a ciphered despatch' to Bludov of 16 Oct 1862, but rgavmf.ru is unreachable, the copy may be plaintext, and no ciphertext is shown.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "RGAVMF record https://rgavmf.ru/fond/315/opis-1-2/edhr-1121 (Fond 315, Opis 1-2, Ed.khr. 1121): not opened, rgavmf.ru gave ECONNRESET to WebFetch and a blank tab in Chrome on 5 Nov 2026; the record text is taken from the Russia sweep's own harvest of that record (research/sweep_2026-11_russia/navy_rows.json). Lead access is 'archive'; copy by order only.",
+    "extent": "Ll. 2 (two leaves) for the whole file, which holds both a note and the copy of the despatch.",
+    "cipher": "Catalogue line (sweep harvest, verbatim): 'Записка кн. Горчакова к графу Блудову 16 окт. с уведомлением о Выс. повелении отправить фрегат \"Генер.-Адмирал\" в Грецию; 16 окт. - копия шифрованной депеши гр. Блудову с указанием плана действий в Греции. Лл. 2.' This is a copy OF a ciphered despatch, so the leaf may carry the cleartext of the despatch rather than cipher groups; the record names no cipher groups and no decipherment, and I did not see a leaf."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: the local DECODE list (research/catalogue_harvest/decode/list.json, 10106 records) was grepped on 5 Nov 2026 for Russia, Greece, Athens, Constantinople, Bludov and Gorchakov; no RGAVMF or 1862 Greece record, and known.py 'Gorchakov' and 'Bludov' find only this lead and the sweep file.",
+    "tomokiyo": "cryptiana.web.fc2.com code/crypto.htm, unsolved.htm, italian.htm, german.htm and GL.htm fetched 5 Nov 2026 and grepped for Gorchakov, Gortchakov, Bludov, Greece: no hit (the only Russian cipher page is the Russian-American Company one).",
+    "lasry": "No Lasry or HistoCrypt item on RGAVMF or an 1862 Russian diplomatic cipher found (GL.htm grepped for Gorchakov/Bludov: no hit; web search 5 Nov 2026 in Russian and English).",
+    "edition": "No edition found: a Russian web search (RGAVMF F. 315 D. 1121, Gorchakov, Bludov, ciphered despatch, Greece 1862) returned no publication of this file; the one Greece-related hit (Vestnik MGIMO 2025) rests on AVPRI, not RGAVMF, and concerns an earlier period.",
+    "literature": "Web search 5 Nov 2026 found no study of this despatch or of a Russian naval or foreign-ministry cipher of 1862; nothing on a cipher for the frigate General-Admiral mission."
+   },
+   "key_check": "No key is held or named for this file; nothing could be tested, and no ciphertext is known to exist on the two leaves.",
+   "duplicates": "known.py on 'Gorchakov', 'Bludov' and 'RGAVMF': only the lead itself and research/sweep_2026-11_russia/candidates.json; no catalogue entry, no targets/ folder, no other lead.",
+   "verdict": "unvettable"
+  }
+ },
+ "1884": {
+  "verdict": "unvettable",
+  "note": "TNA SP 105/60/168 is Stepney's own letter (Dresden, 8/18 Jan 1694, not Vienna) that 'gives contents' of Paget's cipher letter, so the cipher is the source letter and not a leaf shown here; the folio is not digitised and cannot be seen.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "TNA Discovery SP 105/60/168 https://discovery.nationalarchives.gov.uk/details/r/C6822068 (record fetched through the Discovery API on 5 Nov 2026; digitised: false; parent C3609650). Lead access is 'archive'; no image online.",
+    "extent": "One folio (f. 168) of Stepney's letter book; extent of any cipher on it not stated.",
+    "cipher": "TNA record, verbatim in part: 'Folio 168. To Kinsky. Has failed to receive letters ... from Paget sent via Ragusa and via Transylvania ... but has had a letter of Oct 2, 1693 from Pera di Constantinopoli which cameto Ragusa by an express ... Gives contents of this letter which is entirely in cipher. ... Date and Place: 1694 Jan 8/18 Dresden'. The ciphered letter is Paget's of 2 Oct 1693; the item is Stepney's letter to Kinsky summarising it (the lead's place Vienna is wrong, TNA says Dresden), and SP 105 is a letter book of copies, so f. 168 is probably cleartext; I did not see the leaf."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: local list (10106 records) has Kinsky records only as 1719-1839 BL Add MS 32270 and one Stepney 1702 Beinecke item (R2864, Osborn fc37 box 8 folder 40); nothing from SP 105 or on Paget 1693.",
+    "tomokiyo": "cryptiana.web.fc2.com crypto.htm, unsolved.htm, italian.htm, german.htm and GL.htm fetched 5 Nov 2026 and grepped for Stepney, Paget, Kinsky: no hit.",
+    "lasry": "No Lasry or HistoCrypt item on Stepney's SP 105 letter book or Paget's 1693 cipher found (GL.htm grepped for Stepney/Paget: no hit; web search 5 Nov 2026).",
+    "edition": "No edition: the TNA catalogue entry is the only description, and a web search (Stepney Paget 1693 Pera Ragusa Kinsky cipher) returned only TNA catalogue pages of the same letter book.",
+    "literature": "Web search 5 Nov 2026 found no article on this cipher letter; neighbouring TNA entries show Stepney's letter book calling a cipher one that cannot be understood (SP 105/60/7), which is context, not a reading."
+   },
+   "key_check": "The Stepney key in targets/stepney is for 1702 (Beinecke R2864) and was not tried: there is no ciphertext of the 1693 Paget letter on f. 168 to test it on, and no Paget-Stepney key is held.",
+   "duplicates": "known.py on 'Stepney', 'Kinsky' and 'Paget': lead 1150 (Stepney SP 105/58-60, 82, 84) tracks /60/7v, /60/121, /60/123, /60/135, not f. 168; catalogue 808 is Blathwayt to Stepney 1701; targets/stepney is 1702; no duplicate of f. 168.",
+   "verdict": "unvettable"
+  }
+ },
+ "1888": {
+  "verdict": "unvettable",
+  "note": "TNA GFM 10/476/1 is a title-only record ('I.A. Turkey 200. Turkish ciphers. Volume 1', 1904, microfilm, not digitised) that does not say whether the file holds ciphertext, key tables or correspondence about ciphers, so there is nothing to vet.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "TNA Discovery GFM 10/476/1 https://discovery.nationalarchives.gov.uk/details/r/C6777006 (Discovery API record read 5 Nov 2026; digitised: false; parent GFM 10/476 'German war documents project: University of California selection, Series I'). Lead access is 'archive'; microfilm at Kew only.",
+    "extent": "Volume 1 of a series, 1904; no leaf or frame count in the record (the lead's earlier note gives frames 824-866 of a GFM 10 film).",
+    "cipher": "TNA record, verbatim in full: 'I.A. Turkey 200. Turkish ciphers. Volume 1. Original title in German: I.A.Tuerkei 200 Chiffres in der Tuerkei Vol 1.' The title says the file is about Turkish ciphers; it does not say that any ciphertext, telegram or table is in it, and no decipherment is mentioned. I did not see a leaf."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: local list (10106 records) has no German Foreign Ministry, GFM or Turkish-cipher record from 1904; known.py 'GFM 10' and 'Chiffres in der' find only this lead and the sweep file.",
+    "tomokiyo": "cryptiana.web.fc2.com crypto.htm, unsolved.htm, german.htm, italian.htm and GL.htm fetched 5 Nov 2026 and grepped for Ottoman, Turkish, Tuerkei: no page on the file (GL.htm has one Ottoman military-reports letter of another period).",
+    "lasry": "No Lasry or HistoCrypt item on German or Ottoman diplomatic ciphers of 1904 found (web search 5 Nov 2026).",
+    "edition": "No edition: a web search on the German title, I.A. Tuerkei 200 and Chiffre Konstantinopel found only unrelated Deutsche Digitale Bibliothek and Bundesarchiv consular-report files.",
+    "literature": "Web search 5 Nov 2026 found no study of this file; the Bundesarchiv and PA AA holdings named in results do not describe a Turkish-cipher file."
+   },
+   "key_check": "No key is held for Ottoman ciphers of 1904 and the file's content is unknown; nothing could be tested.",
+   "duplicates": "known.py on 'GFM 10', 'Chiffres in der' and 'Turkish ciphers': only this lead and research/sweep_2026-11_ottoman_turkish; no catalogue entry, no targets/ folder, no other lead for GFM 10/476.",
+   "verdict": "unvettable"
+  }
+ },
+ "1895": {
+  "verdict": "read",
+  "note": "MNL DF 294624 is the Hungarian photo copy of the Modena ASMo Ambasciatori Ungheria b. 3 letter of Alberto Gentili to Pandolfo Silvestri (1501), which is DECODE R1122 (SAMo_Amb_b_3_29_5, 2 pp., status Decrypted), so a decipherment is already on record.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Archives Portal Europe record 'DF294624 Rejtjelezett levél' (MNL OL X 10891, Vestigia 1552) opened in Chrome 5 Nov 2026: https://www.archivesportaleurope.net/advanced-search/search-in-archives/results-(archives)/?repositoryCode=HU-1&levelName=clevel&t=hg&recordId=11297&c=C1137514066 ; DECODE R1122 page https://de-crypt.org/decrypt-web/RecordsView/1122 read 5 Nov 2026. The image sits on Vestigia, which returned HTTP 500 on 5 Nov 2026, so no scan was viewed; the lead's access field is empty.",
+    "extent": "2 pages (DECODE R1122: IMG_R1122_I5690_P1 and _I5691_P2); the MNL record gives no length.",
+    "cipher": "MNL record: creator Alberto Gentili, addressee Pandollo Silvestri, 1501, original, place 'sine loco', media 'image', language 'titkosírás' (cipher writing); originals ASMo, Antichi regimi, ASE, C. Est., Amb., Fuori Italia, Ungh., b. 3. DECODE R1122: record type Cipher, graphic signs, cleartext Italian, plaintext 'Italian?', status 'Decrypted', access by authentication; no key listed. So a decipherment is recorded for this letter; I did not see the leaf or the decipherment."
+   },
+   "prior_art": {
+    "decode": "On DECODE as R1122 (State Archives of Modena, Ambasciatori b. 3/29, 5, Alberto Gentili to Pandolfo de Silvestri, 1501, 2 pp., status Decrypted, cleartext Italian, created 2019-05-10); also in the local list.json.",
+    "tomokiyo": "cryptiana.web.fc2.com crypto.htm, unsolved.htm, italian.htm, german.htm and GL.htm fetched 5 Nov 2026 and grepped for Gentili, Silvestri, Costabili: no hit.",
+    "lasry": "No Lasry or HistoCrypt item on Gentili or Silvestri found (GL.htm grepped: no hit; web search 5 Nov 2026).",
+    "edition": "No edition of the letter found; web search (Gentili, Silvestri, 1501, Modena, Costabili) found only an unrelated Taddeo Lardi account book of 1500 naming Silvestri and the Vestigia II volume on Modena documents; the decipherment is on DECODE.",
+    "literature": "Web search 5 Nov 2026 found no article on this letter; Vestigia II (Verbum 23/2, 2022, Mantua, Modena, Milan documents) is the project volume and was not read page by page."
+   },
+   "key_check": "No key is listed on DECODE R1122 and none is held here; not tested, because the letter already carries a DECODE decipherment.",
+   "duplicates": "known.py on 'Gentili', 'Silvestri' and '294624': only the lead and the sweep file; the same letter is DECODE R1122 (sender, recipient, year and Modena Amb. Ungheria b. 3 shelfmark agree); no catalogue entry and no targets/ folder.",
+   "verdict": "read"
+  }
+ },
+ "1897": {
+  "verdict": "unvettable",
+  "note": "Three MNL records DF 295774-295776 (ASMi Sforzesco cart. 645, letters to Maffeo da Treviglio) are catalogued as cipher with no decipherment listed, but the images are on Vestigia, which returned HTTP 500 on 5 Nov 2026, so no leaf was seen and DECODE overlap cannot be settled.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Archives Portal Europe records opened in Chrome 5 Nov 2026: DF295774 (https://www.archivesportaleurope.net/advanced-search/search-in-archives/results-(archives)/?repositoryCode=HU-1&levelName=clevel&t=hg&recordId=11297&c=C1137513312), DF295775 (c=C1137513313), DF295776 (c=C1137513314). The images are on vestigia.hu, which gave HTTP 500 on every route (home, documents, api/search) on 5 Nov 2026, and the Wayback Machine has no copy; the lead's access field is empty, so no scan could be viewed.",
+    "extent": "Three records, each media 'image'; no page or line count given.",
+    "cipher": "MNL records 'Rejtjelezett levél Maffeo da Treviglio részére' (X 10889): DF295774 and DF295775 language 'olasz, titkosírás', sender 'nincs adat', place sine loco, 15th c.; DF295774 'ELEJE: Nuperrime qua son stati rotti..., VÉGE: ... qualche novelle nove'; DF295776 language 'olasz, titkosírás', place Buda; originals ASMi, Carteggio Sforzesco, Carteggio estero, Ungheria, 645. No decipherment is listed under 'Related material' (the FELOLD. field that other DF records carry) on any of the three. Senders and dates are not given, and I did not see a leaf."
+   },
+   "prior_art": {
+    "decode": "DECODE holds the Milan embassy at Buda as R1077-R1098 (cart. 642, 1490), R1144-R1159 (cart. 645, 1491-92) and R1160-R1161, indexed by sub-bundle numbers (e.g. 'Sf. Ung. b. 645/7, 23') that cannot be matched to MNL's 'Ungheria 645' DF numbers without Vestigia's archive_ref; no DECODE record is known to carry these incipits, so overlap is unsettled, not shown.",
+    "tomokiyo": "cryptiana.web.fc2.com italian.htm (fetched 5 Nov 2026) covers Maffeo da Treviglio's 1489-90 cipher letters from Buda (DECODE R1098, Vestigia) and Somogyi's reconstruction; no page on letters addressed TO Maffeo or on DF 295774-6.",
+    "lasry": "GL.htm (Lasry/Tomokiyo list, fetched 5 Nov 2026) grepped for Maffeo, Treviglio, Buda, Matthias: no hit; web search found no Lasry/HistoCrypt item on these three leaves.",
+    "edition": "No edition of the three letters found: the incipit 'Nuperrime qua son stati rotti' is not in Labancz 1491 (targets/buda1489/labancz_1491.txt), the beatrice1482 sources or Fraknoi in the repo; the MNL encryption page (mnl.gov.hu/mnl/ol/encryption) shows only Maffeo's own 1490 letters.",
+    "literature": "Web search 5 Nov 2026 (Maffeo da Treviglio, Vestigia, DF numbers, Somogyi) found only general Vestigia/Somogyi background (Verbum 2016, Vestigia 3 2020), which says some encrypted letters have no linked key or decipherment; nothing on these three."
+   },
+   "key_check": "Maffeo's own outgoing alphabet is held (targets/buda1489 key.json, R5411, R5407) but it is Maffeo's cipher to Milan; these are letters TO Maffeo, probably another Milan cipher, and no ciphertext was seen, so nothing was tested.",
+   "duplicates": "known.py on 'Treviglio', '295774', '295775' and '295776': only the lead and sweep files plus the solved Maffeo entries (catalogue 1235 etc.); targets/buda1489/vestigia/search_rows.json has no DF 295774-6 row, so the overlap with R1144-R1159 stays open.",
+   "verdict": "unvettable"
+  }
+ },
+ "1898": {
+  "verdict": "partly_read",
+  "note": "Of the three MNL records, DF 295039 lists its contemporary decipherment ('FELOLD.', ASMi Sforzesco PE Ungheria, Aprile 1491 no. 3/3) and DF 295078 is Labancz 1491 no. 46 (Nov 1491, Pecsvarad) whose cipher end 'Quid tardatis modo' is transcribed in the edition, while DF 295041 is unseen.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Archives Portal Europe records opened in Chrome 5 Nov 2026: DF295039 (https://www.archivesportaleurope.net/advanced-search/search-in-archives/results-(archives)/?repositoryCode=HU-1&levelName=clevel&t=hg&recordId=11297&c=C1137512932, Vestigia 1984), DF295041 (c=C1137512935, Vestigia 1986), DF295078 (c=C1137512955, Vestigia 2025); edition: Labancz, targets/buda1489/labancz_1491.txt no. 46. Images are on vestigia.hu (HTTP 500 on 5 Nov 2026); the lead's access field is empty.",
+    "extent": "Three records, each media 'image'; lengths not given. DF295078 is a 20x30 mm slip per Labancz.",
+    "cipher": "MNL: DF295039 'Azonosítatlan levél', language 'latin, titkosírás', place Buda, 'VÉGE: ... penultima aprilis anno domini 1491', Related material 'FELOLD.: ASMi, ... Carteggio Sforzesco, PE, Ungheria (1491-1530), 1491, Aprile, No. 3/3' (a decipherment filed with it); DF295041 'Azonosítatlan rejtjelezett levél', language 'titkosírás' only, sine loco, no incipit; DF295078 'Ismeretlen levele ismeretlennek', 'latin, olasz, titkosírás', ELEJE 'Sapiati como in quest hora...' VÉGE '... quid tardatis modo'. Labancz no. 46 (ASMi Sforzesco cart. 645, Nov 1491, Pecsvarad) prints it and says in note 138 that the end is in cipher with the transcription given above ('Quid tardatis modo'). I did not see any leaf."
+   },
+   "prior_art": {
+    "decode": "DECODE has no record with these incipits in the local list (R1144-R1159 are Milan cart. 645 items under other sub-bundle numbers and cannot be matched without Vestigia's archive_ref); overlap with DF295039 and DF295041 unsettled.",
+    "tomokiyo": "cryptiana.web.fc2.com italian.htm, unsolved.htm and GL.htm (fetched 5 Nov 2026) grepped for Maffeo, Buda, 1491, Labancz: only the 1489-90 Maffeo cipher entry; nothing on these three.",
+    "lasry": "GL.htm grepped for Maffeo, Treviglio, Buda: no hit; web search 5 Nov 2026 found no Lasry/HistoCrypt item on DF 295039, 295041 or 295078.",
+    "edition": "DF295078 is printed in Labancz's edition of Milan's 1491 Hungary dispatches (copy in targets/buda1489/labancz_1491.txt) as no. 46, from cart. 645, Nov 1491; DF295039 and DF295041 are not in Labancz (grep for 'penultima', 'regni Ungar', 'causa huius' found nothing).",
+    "literature": "Web search 5 Nov 2026 found nothing specific; Vestigia/Somogyi writing notes that some cipher letters have no linked decipherment, which fits DF295041."
+   },
+   "key_check": "Maffeo's own key (targets/buda1489, R5411) is held but not tested: DF295039 already has an attached decipherment, DF295078 is read in the edition, and DF295041 was not seen.",
+   "duplicates": "known.py on '295039', '295041' and '295078': no hits except the lead and sweep files; DF295078 = Labancz no. 46 (in the repo's buda1489 sources, not a target of its own); no catalogue entry for any of the three.",
+   "verdict": "partly_read"
+  }
+ },
+ "1899": {
+  "verdict": "not_cipher",
+  "note": "MNL DF 294995 (Fontana to Ercole I d'Este, Pozsony, 1482) is a plain copy ('Egyszerű másolat') in Italian only with no 'titkosírás' tag, and the cipher is a separate related record ('REJTJEL: ... Francesco Fontana, No. 1/b'), so this leaf is clear text.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Archives Portal Europe record 'DF294995 Francesco Fontana levele Ercole I d'Este hercegnek' (Vestigia 1940) opened in Chrome 5 Nov 2026: https://www.archivesportaleurope.net/advanced-search/search-in-archives/results-(archives)/?repositoryCode=HU-1&levelName=clevel&t=hg&recordId=11297&c=C1137514719 ; image not viewed (vestigia.hu HTTP 500 on 5 Nov 2026); the lead's access field is empty.",
+    "extent": "One record, a simple copy; length not given.",
+    "cipher": "MNL record: creator Francesco Fontana, addressee Ercole I d'Este, place Pozsony, form 'Egyszerű másolat' (simple copy), language 'Olasz' (Italian, no 'titkosírás'), 'ELEJE: La Maestà de questo Signor Re..., VÉGE: ... ne farà bene'; Related material: 'REJTJEL: ASMo, ... C. Est., Prin., Fuori Italia, Ungheria e Boemia, Francesco Fontana, No. 1/b'; originals ASMo Ungh., b. 1623/2, fasc. 7. The record is the clear copy, and the cipher belongs to a separate related item (Fontana No. 1/b); I did not see any leaf."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: local list (10106 records) has no Francesco Fontana record (only Johannes de Fontana R2960, a Venetian treatise) and no ASMo Ungheria b. 1623 item.",
+    "tomokiyo": "cryptiana.web.fc2.com crypto.htm, italian.htm, german.htm, unsolved.htm and GL.htm fetched 5 Nov 2026 and grepped for Fontana: only the engineer Giovanni Fontana and the Portuguese apostolic collector, neither related.",
+    "lasry": "No Lasry or HistoCrypt item on Francesco Fontana's 1482 letters found (GL.htm grepped; web search 5 Nov 2026).",
+    "edition": "Francesco Fontana, Matthias Corvinus's orator at Ferrara and Naples, is documented in Berzeviczy, Beatrix kiralyne (1914) and Magyar diplomacziai emlekek vols. 3-4, both in targets/beatrice1482/sources; the phrase 'La Maesta de questo Signor Re' recurs in MDE 3 and 4 (other letters), so the clear text may be in print.",
+    "literature": "Web search 5 Nov 2026 found nothing on this letter; Fontana appears in the repo's beatrice1482 sources only as a correspondent."
+   },
+   "key_check": "No key is held and none is needed: the leaf is clear text; the related cipher item (Fontana No. 1/b) was not located as a record and could be a different lead.",
+   "duplicates": "known.py on 'Fontana' and '294995': only the lead and sweep files and the unrelated Johannes de Fontana records; no catalogue entry and no targets/ folder for Francesco Fontana 1482.",
+   "verdict": "not_cipher"
+  }
+ },
+ "1915": {
+  "verdict": "unvettable",
+  "note": "MNL abstracts of MAE Turquie vols. 151 and 153 mention a single 'rejtjelezett level' (vol. 151 f. 11v, Saint-Priest to Choiseul, 2 May 1769) whose contents the abstractor gives and vol. 153 has no cipher piece, and the La Courneuve volumes are not online, so no leaf can be seen.",
+  "vetting": {
+   "date": "2026-11-05",
+   "by": "Claude Sonnet 5.5 vetting agent",
+   "seen": {
+    "kind": "not online",
+    "where": "Archives Portal Europe records of the MNL microfilm abstracts opened in Chrome 5 Nov 2026: HK-MAE AD-133CP-151 (https://www.archivesportaleurope.net/advanced-search/search-in-archives/results-(archives)/?repositoryCode=HU-1&levelName=clevel&t=hg&recordId=11297&c=C1137509516) and HK-MAE AD-133CP-153 (c=C1137509518). Lead access is 'archive'; the originals (Paris, MAE, CP Turquie 151, 153, La Courneuve) are not digitised.",
+    "extent": "Vol. 151: one leaf, f. 11v; vol. 153: no cipher piece (f. 32 is a subject entry). The lead's 'despatches with cipher in two volumes' overstates this.",
+    "cipher": "MNL abstract of vol. 151, verbatim in part: 'fol. 3-15. Saint-Priest levele Choiseul-nek (Konstantinápoly, 1769. május 2.) fol. 11vo (rejtjelezett levél) Tott megérkezése Konstantinápolyba' (a ciphered letter, with the abstractor giving its content); vol. 153 lists Saint-Priest's letters of Jan 1770 with Tott items and no 'rejtjelezett' mark on any leaf. The abstract does not say whether ciphertext or a decipherment stands on f. 11v, and I did not see a leaf."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: local list (10106 records) has no Saint-Priest, Choiseul 1769-70 or MAE Turquie record (known.py 'Saint-Priest' and 'Tott' find only leads and the Riksarkivet Tott 1631 items, unrelated).",
+    "tomokiyo": "cryptiana.web.fc2.com crypto.htm, unsolved.htm, italian.htm, german.htm and GL.htm fetched 5 Nov 2026 and grepped for Saint-Priest, Tott, Choiseul: no hit.",
+    "lasry": "No Lasry or HistoCrypt item on Saint-Priest's 1769-70 despatches found (GL.htm grepped; web search 5 Nov 2026).",
+    "edition": "No edition of CP Turquie 151/153 found; the web search turned up Tott memoirs and studies (Crimean consular letters) and a Nantes CADN inventory for Saint-Priest 1768-69, not these despatches.",
+    "literature": "Web search 5 Nov 2026 (Saint-Priest, Choiseul 1769, chiffre, Tott, Turquie 151) found nothing on a cipher in these volumes; Tott's cipher correspondence appears only as a subject of the vol. 153 abstract."
+   },
+   "key_check": "The repo's Saint-Priest 1773 and 1776 leads (sweep_2026-11_ape README) are the nearest possible shared key and were not tested: no ciphertext of 1769 was seen.",
+   "duplicates": "known.py on 'Saint-Priest', 'Tott', 'AD-133CP-151' and 'AD-133CP-153': only the lead and sweep files; lead 1916 (Vergennes/Tott, CADN 166PO/A-208) is a different volume; no catalogue entry or targets/ folder.",
+   "verdict": "unvettable"
+  }
+ }
+}
