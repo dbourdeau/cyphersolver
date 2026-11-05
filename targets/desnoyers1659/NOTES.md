@@ -18,7 +18,7 @@ Late 1659. The Peace of the Pyrenees (7 November) provides for the marriage of L
 
 ## System and key
 
-a numerical nomenclator of about a hundred two-digit groups (00–99): letters and syllables (29 la, 42 de, 46 s, 52 le, 69 n, 23 r…); a mark above the group (ring, circumflex, cross, bar, accent) turns it into a code word (30+ Reine, 29+ Roy, 86^ Prince, 45° Ambassadeur, 00¯ France, 50° Austria). It is not the sign key that Des Noyers had sent in 1656 (BnF Fr. 13020 f. 315)..
+a numerical nomenclator of about a hundred two-digit groups (00–99): letters and syllables (29 la, 42 de, 46 s, 52 le, 69 n, 23 r…); a mark above the group (ring, circumflex, cross, bar, accent) turns it into a code word (30+ Reine, 29+ Roy, 86^ Prince, 45° Ambassadeur, 00¯ France, 50° Austria). It is not the sign key that Des Noyers had sent in 1656 (BnF Fr. 13020 f. 315).
 
 `key.tsv` = the table rebuilt from the cipher / gloss pairs of the twelve glossed passages of the volume (Sept 1658 - Dec 1659):
 88 distinct groups; consistency group -> syllable 88.8% (450/507), code words 97.2% (105/108; 200 shuffled controls <= 34%).

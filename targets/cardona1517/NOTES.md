@@ -9,6 +9,8 @@
 - **Reading.** Long passages read, but many sentences still have holes (about 75% of the plaintext letters read as
   sense; about half of the sentences without a hole).
 
+Status: in progress
+
 Issue #262 (status report, then update).
 
 ## Source
