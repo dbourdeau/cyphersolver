@@ -232,6 +232,11 @@ PAGES = [
          blurb='A slip in clear French with six cipher runs, 217 symbols of 55 kinds. Lasry&rsquo;s key for the volume and two other League keys of 1586 share no symbols with it, and a ciphertext-only solver scores the text no better than a shuffled copy; the cipher is not deciphered.',
          quote='&ldquo;mais esperons beaucoup par sa valeur. Ce xxvj<sup>e</sup> juin&rdquo;',
          rights='Images: Biblioth&egrave;que nationale de France'),
+    dict(slug='ariosto1559', label='Ercole II to Ariosto 1559', year='1559', y=1559.31, place='Ferrara &rarr; Claudio Ariosto', st='partial', stt='key from ciphertext only &middot; partial',
+         title='Ercole II d&rsquo;Este to Claudio Ariosto, 23 April 1559',
+         blurb='A letter of the duke of Ferrara to his secretary in clear Italian, with runs of Greek- and Latin-shaped signs under small raised vowel digits. Brice Dudout recovered the key from the signs alone, tested it once on held-out lines (0.605 of letters in Italian words against 0.155 for the best of 200 shuffled keys) and read 357 of 402 cipher words (88.8%). A countess claims arrears of rents; the duke refuses those that fell due during her husband&rsquo;s rebellion.',
+         quote='&ldquo;a causa della sua ribellione non s&rsquo;ha da haver nulla&rdquo;',
+         rights='Biblioteca Estense Universitaria, Modena (CC BY-NC-SA, via the Estense Digital Library)'),
     dict(slug='percy1559', label='Percy to Cecil 1559', year='1559', y=1559.55, place='Norham &rarr; Cecil', st='stuck', stt='too short, no key',
          title='Sir Henry Percy to Cecil, Norham 1559',
          blurb='Four short passages in pigpen-like box symbols, known only from an eighteenth-century tracing (BL Add MS 4136 f. 172, DECODE R9256); not solved. The 63 signs were tried ciphertext-only and with name cribs from the calendars. Cecil&rsquo;s contemporary decipherment is on the original at TNA, which is not online.',
@@ -2938,6 +2943,7 @@ IMAGES['clair460bar'] = None
 IMAGES['clair460num'] = None
 IMAGES['dampierre1589'] = None
 IMAGES['dole1636'] = None
+IMAGES['ariosto1559'] = ('ariosto1559_cipher.jpg', 'C. 39r, lines 4-7: clear Italian words and runs of signs with raised vowel digits', 'Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera E, Este (d&rsquo;), Ercole II d&rsquo;Este, cc. 39-41, c. 39r (detail), via the Estense Digital Library (IIIF), CC BY-NC-SA')
 IMAGES['geleen1633'] = ('geleen1633_lead.jpg', 'Fol. 184r: two-digit cipher numbers run together between clear German words', 'Bayerische Staatsbibliothek, Clm 10406 no. 206, fol. 184r (view 653), via MDZ, Public Domain Mark 1.0')
 IMAGES['dubellay1555'] = None
 IMAGES['dubellay65'] = None
