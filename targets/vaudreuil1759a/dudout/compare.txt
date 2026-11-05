@@ -1,0 +1,117 @@
+Comparison of the two separately produced transcriptions and key tables (Vaudreuil 1388-1390), 5 Nov 2026.
+Dan's side: targets/vaudreuil1759{a,b,c}/transcription.txt and key/key274.json + key/overrides.json.
+Brice Dudout's side (PR #268): dudout/transcription_<n>.txt and dudout/key.tsv (v2).
+Method: the cipher groups are pulled out of each file (digits only; [..] and {..} brackets, '~' line ends and '|' marks
+dropped; clear words and the written ordinals skipped) and the two number sequences are aligned with difflib.SequenceMatcher.
+Groups cut by the binding are written with fewer digits in one file ('47~', '[47]'), so they appear as differences.
+The comparison finds where the two readings of the images differ; it does not say which one is right. Nothing was reconciled
+and neither transcription was changed. The PR was public before the 1388-1390 readings here were committed, so this is a
+cross-check between two readings, not a test of independence.
+
+
+== catalogue 1388: 3633 groups here, 3631 in Brice's file; 3603 groups in matching runs (99.2% of ours); 29 differing places
+  pos 31: here [15]  Brice [13]   after [471, 44, 389]
+  pos 48: here [135]  Brice [133]   after [299, 389, 352]
+  pos 414: here [608]  Brice [508]   after [478, 251, 465]
+  pos 730: here [389]  Brice [589]   after [594, 642, 210]
+  pos 902: here [594]  Brice [394]   after [642, 341, 581]
+  pos 1041: here [306]  Brice [506]   after [565, 235, 82]
+  pos 1166: here [423]  Brice [420]   after [283, 67, 471]
+  pos 1175: here [403]  Brice [405]   after [12, 594, 51]
+  pos 1206: here [341]  Brice [541]   after [631, 299, 235]
+  pos 1315: here [84]  Brice [51]   after [352, 163, 672]
+  pos 1471: here [285]  Brice [235]   after [235, 642, 623]
+  pos 1649: here [312]  Brice [512]   after [271, 271, 76]
+  pos 1739: here [638]  Brice [658]   after [653, 673, 179]
+  pos 1784: here [234]  Brice [254]   after [235, 426, 112]
+  pos 1816: here [235]  Brice [255]   after [306, 512, 594]
+  pos 1843: here [372]  Brice [572]   after [547, 44, 630]
+  pos 1900: here [672]  Brice [572]   after [642, 386, 274]
+  pos 2173: here [341]  Brice [541]   after [535, 193, 44]
+  pos 2437: here [235]  Brice [255]   after [672, 192, 674]
+  pos 2473: here [312]  Brice [512]   after [615, 569, 271]
+  pos 2574: here [243]  Brice [213]   after [683, 674, 514]
+  pos 2705: here [235]  Brice [255]   after [235, 547, 341]
+  pos 2777: here [65, 1]  Brice [55]   after [271, 512, 673]
+  pos 2920: here [311]  Brice [511]   after [132, 471, 642]
+  pos 3002: here [234]  Brice [254]   after [235, 533, 467]
+  pos 3037: here [235]  Brice [255]   after [107, 59, 430]
+  pos 3043: here [235]  Brice [255]   after [271, 123, 453]
+  pos 3394: here [12]  Brice -   after [352, 44, 65]
+  pos 3458: here [235]  Brice [255]   after [194, 465, 673]
+
+== catalogue 1389: 1222 groups here, 1220 in Brice's file; 1206 groups in matching runs (98.7% of ours); 15 differing places
+  pos 39: here [27]  Brice -   after [630, 243, 341]
+  pos 48: here [235]  Brice [255]   after [544, 494, 672]
+  pos 87: here [683, 47]  Brice [685, 478]   after [389, 123, 674]
+  pos 96: here [531]  Brice -   after [548, 235, 514]
+  pos 156: here [38]  Brice [389]   after [51, 445, 67]
+  pos 229: here [234]  Brice [254]   after [275, 658, 533]
+  pos 438: here [64]  Brice [642]   after [37, 594, 352]
+  pos 509: here [47]  Brice [471]   after [341, 20, 67]
+  pos 547: here [32]  Brice [322]   after [608, 255, 661]
+  pos 716: here [46]  Brice [467]   after [204, 82, 12]
+  pos 737: here [24]  Brice [246]   after [674, 247, 642]
+  pos 803: here [431]  Brice [451]   after [376, 471, 430]
+  pos 1026: here [141]  Brice [441]   after [124, 352, 174]
+  pos 1088: here [235]  Brice [255]   after [394, 516, 352]
+  pos 1144: here [48]  Brice [483]   after [174, 178, 322]
+
+== catalogue 1390: 354 groups here, 354 in Brice's file; 347 groups in matching runs (98.0% of ours); 7 differing places
+  pos 121: here [351]  Brice [354]   after [67, 626, 642]
+  pos 129: here [403]  Brice [405]   after [642, 594, 51]
+  pos 141: here [33]  Brice [337]   after [642, 178, 322]
+  pos 170: here [27]  Brice [271]   after [168, 148, 657]
+  pos 217: here [323]  Brice [523]   after [107, 593, 430]
+  pos 316: here [389]  Brice [309]   after [235, 204, 269]
+  pos 353: here [488]  Brice [498]   after [229, 194, 544]
+
+== key table: 700 numbers in each; 653 agree after dropping accents, case, '?' and punctuation; 47 differ (many are spelling: magasin/magazin, hiver/hyver)
+  number: here | Brice
+  5: intention | invention
+  6: magasin | magazin
+  16: la Louisiane | la Louisianne
+  19: donnée? | denree
+  34: peu | peut
+  38: facil? | faci
+  42: savoir | scavoir
+  45: be | he
+  58: barbe? | hache
+  111: bu | hu
+  139: diver | autre
+  153: Choüeguen | Chouguen
+  161: i | obstacle
+  168: donc | dont
+  221: reçeu | recu
+  228: flûte | flate
+  238: op | ap
+  241: votre? | vivre
+  263: encor | encore
+  266: deffen | défen
+  300: saute? | sault
+  357: hiver | hyver
+  367: crai | croi
+  375: son | sou
+  392: réduit | rendre
+  404: vient | oient
+  422: prétention | prevention
+  437: gen? | afin
+  440: appo | oppo
+  452: fret | fra
+  496: Chambly | Chambli
+  502: présente | pretexte
+  528: convaincre? | couvrir
+  556: fl | fi
+  567: révoltes? | revolte
+  577: foi | soi
+  585: ba | ho
+  588: goût | jour
+  605: rapport | raport
+  609: jusques | jusque
+  615: em | en
+  620: Abenakis | Abnakis
+  624: conduire | contraire
+  629: préparatifs | preparatif
+  655: pêche | poche
+  663: ustensil | ustensiles
+  691: mouvement? | inconvenient

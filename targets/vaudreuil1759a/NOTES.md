@@ -32,11 +32,25 @@ four table cells settled from the letter (656 q, 505 am, 9 possession, 289 os). 
 - [x] siblings: the other cipher letters of the same hand (cat. 1388-1391) decoded with the same table; 1392 (Trémais) uses another code
 - [x] clear-pages: no clear copy or decipherment found on the leaves of this record
 - [x] known-keys: both numerical sheets of C11E 10 tried; sheet e001295274 fits
-- [x] print: only the catalogue's vetting (NY Colonial Documents vol. 10, web searches); nothing found
+- [ ] print: catalogue vetting (NY Colonial Documents vol. 10, web searches) found nothing; Brice Dudout found the 7 June 1759 abstract of despatches (NY Col. Docs X 974-975, a summary of the 10 and 16 April letters only); Casgrain, the RAPQ and ANOM F3 16 not yet searched
 - [x] key-rebuild: table cells corrected from context across the four letters (key/overrides.json)
 - [x] retry: the unread groups were re-run against the images and the alphabetical key (cells 656, 505, 9, 289 and the 5/3 slips settled); 9 places remain (listed above)
 
+## Second reading: Brice Dudout (PR #268)
+
+Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents, read this letter separately from the same images with the same 1757 table, and sent it as PR #268 (opened 4 Nov 2026, 22:52 UTC) with 1389, 1390 and a reading of 1391. His 1391 is not merged: `targets/vaudreuil1760/` keeps its own reading of 1391. His files are in `dudout/`: `transcription_1388.txt`, `decryption_1388.txt`, `reading_1388.md` (French), `translation_1388.md` (English); for the three letters `key.tsv` (his table, v2), `validation.txt` and `compare.txt` (the comparison made when merging, with the key-table differences). They are kept as a second reading beside this folder's, not merged into it.
+- Order: the PR was public about 14 hours before this folder's reading was committed (5 Nov 2026, 06:54-07:25 CST). Whether this session saw it is not recorded, so the two readings are a cross-check, not independent verifications of each other.
+- His count (certain + probable words, restored words not counted as read): 2,012 words, 99.6% (1,965 certain, 38 probable, 6 restored, 3 unresolved). This folder counts cipher groups: 23 groups unread of 3,633 (99.4%). The two measures differ in unit and are not compared.
+- Transcriptions (`dudout/compare.txt`, aligned digit sequences): 3,633 groups here, 3,631 there; 99.2% of ours sit in matching runs; 29 places differ, nearly all by one digit (the hand's 5 against 3, 2 or 4: 235/255, 341/541, 312/512 ...). Not reconciled; neither file was changed.
+- Key: his table is a separate transcription of the same sheet (deciphering table e001295274 checked against the enciphering table e001295269, frozen as v1, then 20 corrections in context = v2). Against `key/key274.json` with its overrides, 653 of 700 values agree after dropping accents, case and '?'; 47 differ (listed in `dudout/compare.txt`). His validation: one pre-registered measurement of v1 on the 8 May 1759 letter (ANOM C11A 104 ff.79-83), whose LAC transcript copies the cipher with its contemporary interlinear decipherment: agreement 0.972 against 0.185 for the best of 200 permuted keys (`dudout/validation.txt`). Run by him on his table; not re-run here.
+- Where his reading differs from the gaps listed above (candidate fills, not applied here; check them on the image first):
+  - f.64r "toutes les s u tu r es des s u l in s" (10 groups): he reads "j'ai pris d'autorité toutes les moutures des moulins".
+  - f.59v "la sur co de cette capitale" (2 groups): he reads "la sûreté de cette capitale".
+  - f.66r "il n'est point d i que" (2 groups): he reads "il n'est point d'obstacle que je ne surmonte" (his cell 161 is "obstacle", here "i").
+  - f.60v "le transport des ap se e ment de leur armée": open in his reading too. His other two open places, f.58 "j'‹équivale›" and f.63v "munitions ‹ta›", are read here.
+- Print: he found the "Abstract of despatches" of 7 June 1759 (New York Colonial Documents X, pp. 974-975), which summarises the letters of 10 and 16 April in a sentence or two (not this one); not re-checked here. Not checked by anyone: Casgrain (Lévis collection), the RAPQ, ANOM F3 16 (calames row "Vaudreuil à Berryer lui annonçant en chiffres la perte de la colonie", probably a cipher copy of the 13 Aug 1760 letter, cat. 1391). The print step below stays unticked until they are searched.
+
 ## Files
 
-`transcription.txt`, `decode.txt`, `ct.txt`, `key/`, `tools/`, `WORKLOG.md`, `profile.json`. Images are fetched, not stored: `curl -L "https://central.bac-lac.gc.ca/.item?id=<id>&op=img&app=nf"`.
+`transcription.txt`, `decode.txt`, `ct.txt`, `key/`, `tools/`, `WORKLOG.md`, `profile.json`, `dudout/` (second reading, see above). Images are fetched, not stored: `curl -L "https://central.bac-lac.gc.ca/.item?id=<id>&op=img&app=nf"`.
 Image credit: Library and Archives Canada (LAC) / Archives nationales d'outre-mer (ANOM), via New France Archives.

@@ -1,0 +1,11 @@
+# Validation of the 1757 table on these despatches: ONE measurement, protocol hashed (SHA-256 ef49a603...) before computation.
+# Held-out piece: Vaudreuil to the minister, Montréal, 8 May 1759 (ANOM C11A 104 ff. 79-83, NFA 27484), as copied in the LAC
+# transcripts of C11A (reel C-2401, Canadiana Heritage, views 1396-1407): the cipher groups are copied WITH the contemporary
+# interlinear decipherment. Key v1 frozen (SHA-256 8e69fb0d...) before the copy was transcribed; cipher and gloss transcribed
+# and frozen (SHA-256 bd30958d... / 9f32354a...) before the script ran. About 20 groups had been seen while identifying the table (declared).
+# Measure: decode with v1 (no '?' values), keep clear words, letters a-z only; difflib ratio against the gloss, whole letter.
+# Controls: 200 keys permuting the 700 values over the 700 numbers (seed 20261104), same measure.
+# Criterion fixed in advance: key applicable if agreement >= 0.85 and >= best control + 0.30.
+groups 1134, decoded letters 3120, gloss letters 3094
+agreement 0.9723   best control 0.1850   mean of controls 0.0957
+RESULT: APPLICABLE. The measured piece is spent (not used again). The 20 later corrections (key v2) were never applied to the measurement.

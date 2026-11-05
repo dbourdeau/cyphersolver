@@ -156,6 +156,21 @@
    ],
    "what": "Cells settled from the letter: 656 = q (cinq, cinquante, conséquent), 505 = am, 9 = possession, 289 = os; overrides copied to cat. 1389, 1390 and 1391. 23 groups stay unread (the Sulpicians' groups on f.64r, 'ap se e ment' on f.60v and 9 others).",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "verification",
+   "what": "Brice Dudout's separately produced transcription, reading and translation of this letter (PR #268, opened 4 Nov 2026 22:52 UTC, about 14 hours before this reading was committed; whether it was seen in this session is not recorded) kept in dudout/ and compared with transcription.txt: 3,633 groups here, 3,631 there; 99.2% of ours sit in matching runs; 29 places differ, nearly all by one digit (the hand's 5 against 3, 2 or 4: 235/255, 341/541, 312/512 ...). Not reconciled; a cross-check, not an independent verification.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Brice Dudout's pre-registered validation of his own transcription of the 1757 table (v1 frozen, one measurement on the 8 May 1759 letter whose LAC transcript copies the cipher with its contemporary interlinear decipherment): agreement 0.972 against 0.185 for the best of 200 permuted keys (dudout/validation.txt). Run by him on his table, not on key/key274.json; not re-run here. His table and key274.json agree on 653 of 700 values (dudout/compare.txt).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -210,6 +225,14 @@
     "who": "contemporary",
     "role": "key or decipherment used",
     "note": "Vaudreuil 1757 numerical table, ANOM COL C11E 10 f.289 (LAC e001295274)"
+   }
+,
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "separate reading of this letter from the images (transcription, decryption, French reading, English translation: dudout/), with his own transcription of the 1757 table validated on a held-out glossed letter (0.972 vs 0.185); PR #268",
+    "date": "2026-11-04",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/268"
    }
   ],
   "fraction_read_method": "measured",

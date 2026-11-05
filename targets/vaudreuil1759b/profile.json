@@ -78,8 +78,9 @@
  },
  "conditions": {
   "prior_solution": {
-   "exists": "no",
-   "found": "not found",
+   "exists": "partial",
+   "where": "Abstract of despatches, 7 June 1759 (New York Colonial Documents X, pp. 974-975), reported by Brice Dudout (PR #268); a summary of this letter in a sentence or two, not a decipherment; not re-checked here",
+   "found": "after reading",
    "used": false
   },
   "inputs": [
@@ -155,6 +156,12 @@
    "kind": "verification",
    "what": "Cat. 1388 reader review turned up the same 3/5 slip in the sibling: group 301 (trou) at f.70v line 6 is 501 (ois) on the image, so \"j'aurois, Monseigneur, effectué\" reads. Transcription, ct.txt and decode.txt corrected; 10 groups now unread (was 11).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "verification",
+   "what": "Brice Dudout's separately produced transcription, reading and translation of this letter (PR #268, opened 4 Nov 2026 22:52 UTC, about 14 hours before this reading was committed; whether it was seen in this session is not recorded) kept in dudout/ and compared with transcription.txt: 1,222 groups here (the count includes partial digits of cut groups), 1,220 there; 98.7% of ours sit in matching runs; 15 places differ, mostly the hand's 3/5 and cut groups. Not reconciled; a cross-check, not an independent verification.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -209,6 +216,13 @@
     "who": "contemporary",
     "role": "key or decipherment used",
     "note": "Vaudreuil 1757 numerical table, ANOM COL C11E 10 f.289 (LAC e001295274)"
+   },
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "separate reading of this letter from the images (transcription, decryption, French reading, English translation: dudout/), with his own transcription of the 1757 table validated on a held-out glossed letter (0.972 vs 0.185); PR #268",
+    "date": "2026-11-04",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/268"
    }
   ],
   "fraction_read_method": "measured",
