@@ -705,7 +705,6 @@ Five further list entries turned out to be solved by others with nothing to add 
 - [`research/top50/`](research/top50/) — Schmeh's Top 50 cross-referenced entry by entry and re-checked against what has been solved since each post.
 - [Thirty favourites](https://dbourdeau.github.io/cyphersolver/highlights.html) — ten funny, ten historically significant and ten ingenious findings from the write-ups, each linked to its page.
 - [George Lasry's BnF cipher research](https://dbourdeau.github.io/cyphersolver/contributors.html#lasry) — 56 enciphered letters in the BnF (1452–1859), one write-up page each deciphered by George Lasry with ChatGPT Astra 6 and Anthropic Opus 5.5 (10 Oct 2026), each spot-checked here against Gallica; 55 filed as `targets/<slug>/` with `Status: no write-up`.
-- [Why the famous ciphers resist](https://dbourdeau.github.io/cyphersolver/famous.html) — Kryptos, Voynich, Dorabella, Beale, Linear A, Phaistos, the pigeon message, sorted by the actual reason each holds out.
 
 ## Repository layout
 

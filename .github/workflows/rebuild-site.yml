@@ -47,14 +47,13 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898+github-actions[bot]@users.noreply.github.com'
           pip install -q pillow || true
-          for attempt in 1 2 3; do
-            python tools/make_thumbs.py || true
-            (cd docs && python _build_site.py > /tmp/build.log 2>&1) || { tail -40 /tmp/build.log; exit 1; }
-            git add docs README.md
-            if git diff --cached --quiet; then echo 'site already up to date'; exit 0; fi
-            git commit -q -m "Site: rebuild after ${GITHUB_EVENT_NAME} (${GITHUB_SHA::9})"
-            if git push origin HEAD:main; then exit 0; fi
-            echo "push rejected (main moved); rebuilding on the new main"
-            git fetch -q origin main && git reset -q --hard origin/main
-          done
-          exit 1
+          python tools/make_thumbs.py || true
+          (cd docs && python _build_site.py > /tmp/build.log 2>&1) || { tail -40 /tmp/build.log; exit 1; }
+          git add docs README.md
+          if git diff --cached --quiet; then echo 'site already up to date'; exit 0; fi
+          git commit -q -m "Site: rebuild after ${GITHUB_EVENT_NAME} (${GITHUB_SHA::9})"
+          if git push origin HEAD:main; then exit 0; fi
+          # If main moved, the newer push queued its own run, which rebuilds on the new main. If not, the push really failed.
+          git fetch -q origin main
+          if [ "$(git rev-parse origin/main)" = "$(git rev-parse HEAD~1)" ]; then echo 'push rejected, main did not move'; exit 1; fi
+          echo 'push rejected (main moved); the queued run rebuilds on the new main'
