@@ -1,6 +1,6 @@
 # ariosto1559: Ercole II d'Este to Claudio Ariosto, 23 April 1559 (catalogue 2159)
 
-Status: read in part (Brice Dudout, 5 Nov 2026; 357 of 402 cipher words = 88.8% without restorations; key validated by our protocol, M5 0.605 against 0.155 on a held-out set, one measurement).
+Status: in progress: site write-up pending (merged from Brice Dudout's PR 5 Nov 2026); read in part (Brice Dudout, 5 Nov 2026; 357 of 402 cipher words = 88.8% without restorations; key validated by our protocol, M5 0.605 against 0.155 on a held-out set, one measurement).
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents. Catalogue entry 2159, from WAINUT's Estense
 leads (PR #242). No DECODE record, nothing at Cryptiana (Tomokiyo), no edition found.

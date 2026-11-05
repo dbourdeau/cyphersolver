@@ -1,6 +1,6 @@
 # este1585: a cipher page in Cardinal Luigi d'Este's cipher, Rome 1584-85 (BnF Cinq Cents de Colbert 338, p. 523; catalogue 1572)
 
-Status: read in part (Brice Dudout, 5 Nov 2026; 177 of 200 words = 88.5% without restorations; key: Satoshi Tomokiyo's table, partial by our protocol on this volume, M5 0.457 against 0.078 on the held-out page).
+Status: in progress: site write-up pending (merged from Brice Dudout's PR 5 Nov 2026); read in part (Brice Dudout, 5 Nov 2026; 177 of 200 words = 88.5% without restorations; key: Satoshi Tomokiyo's table, partial by our protocol on this volume, M5 0.457 against 0.078 on the held-out page).
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents. Catalogue entry 1572 (BAM sweep: "Luigi, card.le
 d'Este, 9 lettres en partie chiffrées"). **The key is not ours**: it is Satoshi Tomokiyo's reconstruction of "Cardinal

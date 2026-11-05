@@ -1,6 +1,6 @@
 # guarna1447: Nicolò Guarna to Francesco Sforza, Milan, 21 May 1447 (BnF italien 1584, ff. 153r-154r)
 
-Status: read in part (Brice Dudout, 5 Nov 2026; 616 of about 852 cipher words = 72.3% certain or probable, unresolved stretches estimated; key K3 partial by our protocol: 0.759 on characters against 0.315, and M5 0.441 against 0.118).
+Status: in progress: site write-up pending (merged from Brice Dudout's PR 5 Nov 2026); read in part (Brice Dudout, 5 Nov 2026; 616 of about 852 cipher words = 72.3% certain or probable, unresolved stretches estimated; key K3 partial by our protocol: 0.759 on characters against 0.315, and M5 0.441 against 0.118).
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents. **Not in the catalogue or the leads as such**:
 lead 1315 (Guarna's letters, ital. 1584) lists ff. 163-64, 232, 235, 238, 245, 259, 263, 268, 272, 286, 296, and the survey

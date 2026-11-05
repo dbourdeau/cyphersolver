@@ -1,6 +1,6 @@
 # coloma1622: the Marquis of Mirabel to Carlos Coloma, Lyon, 8 December 1622 (BNE RES/227/122; catalogue 1601)
 
-Status: read in part (Brice Dudout, 5 Nov 2026; 375 of 425 cipher words = 88.2% without restorations; key partial by our protocol: C02 0.761, H3 0.690, H5 0.814 on characters against contemporary clears).
+Status: in progress: site write-up pending (merged from Brice Dudout's PR 5 Nov 2026); read in part (Brice Dudout, 5 Nov 2026; 375 of 425 cipher words = 88.2% without restorations; key partial by our protocol: C02 0.761, H3 0.690, H5 0.814 on characters against contemporary clears).
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents. Catalogue entry 1601 (Chrome pass, BNE Digital).
 The key comes from the Duke of Feria's letters to Coloma (lead 1602), whose cipher passages carry a contemporary clear in the

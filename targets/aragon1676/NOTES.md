@@ -1,6 +1,6 @@
 # aragon1676: Cardinal Pascual de Aragón to his brother Pedro de Aragón (BNE Mss/2043), system S1, p. 0496
 
-Status: read in part (Brice Dudout, 5 Nov 2026; 82 of 95 words = 86% without restorations; key partial by our protocol, 0.742 on a single held-out page; the page carries a contemporary margin decipherment).
+Status: in progress: site write-up pending (merged from Brice Dudout's PR 5 Nov 2026); read in part (Brice Dudout, 5 Nov 2026; 82 of 95 words = 86% without restorations; key partial by our protocol, 0.742 on a single held-out page; the page carries a contemporary margin decipherment).
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents. Not in the catalogue; first reported in issue #254
 (new lead "BNE Mss/2043"). No DECODE record found, nothing at Cryptiana (Tomokiyo), no edition found.
