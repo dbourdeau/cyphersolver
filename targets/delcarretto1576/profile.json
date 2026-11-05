@@ -1,0 +1,189 @@
+{
+ "schema_version": 1,
+ "target": "delcarretto1576",
+ "title": "Alfonso II del Carretto, marquis of Finale, to his agents Lodovico Allaria and Paolo Fenocchio, Regensburg, 2 Sep 1576 (catalogue 2164): homophonic cipher, key recovered from the ciphertext and validated, read",
+ "documents": [
+  {
+   "id": "campori-delcarretto-c10",
+   "read": "read",
+   "shelfmark": "Modena, Biblioteca Estense Universitaria, Autografoteca Campori, Lettera D, Del Carretto, Alfonso II (sec. XVI), c. 10",
+   "date": "2 Sep 1576",
+   "year": 1576,
+   "country": "Italy",
+   "route": "Alfonso II del Carretto, marquis of Finale -> his agents Lodovico Allaria and Paolo Fenocchio",
+   "places": {
+    "from": "Regensburg",
+    "to": "Milan"
+   },
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on c. 10r-v; the neighbouring c. 9 (1574) is in clear only.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 804,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Lodovico Media Library IIIF (uuid ca09c927-df47-423e-adbb-dc4fdac1a851; images not reproduced, no licence stated)",
+    "image_quality": "good",
+    "notes": "One pass, shapes read before any value was known, frozen before any key work; not blind-checked by a second reader. 25 words depart from the key by one sign, many probably transcription slips."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Substitution of Italian with homophones for the vowels (a: D, m; e: G, O, t, l; o: C, i and the groups oρ/oρo; i: u, n; u: 7 and ρ with a heavy dot), Latin, Greek-like and digit shapes for the consonants (4 = h, ʒ = d, d = f, ρ = l), word division kept; an isolated o is a null.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 31,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "random",
+  "word_division": "kept",
+  "notes": "A dot after rho changes its value (ρ = l, ρ with a heavy dot = u); the groups oPo, oP and oPo./oP. are read as single tokens."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment on c. 10r-v; catalogue 2164 notes none; no target, lead, PR or issue on origin/main (GitHub API, 06cf7e3b3, 6 Nov 2026); two web searches (4 Nov 2026) found no edition. Not checked: Cavagna 2012 (La biblioteca di Alfonso II Del Carretto) and the agents' papers in Genoa or Milan.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "first_date": "2026-11-04",
+  "last_date": "2026-11-06",
+  "human_role": "Brice Dudout chose the target and set the rules (protocol, partition and thresholds hashed before any calculation, one measurement). AI agents transcribed, broke the key, measured, read and wrote up. No human palaeographer checked the transcription or the reading.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-11-04",
+   "kind": "transcription",
+   "what": "Cipher lines L01-L11 and the torn margin M1-M5 transcribed in one pass (shapes only) and frozen.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Homophonic substitution solved on L01-L08 only (4-gram model of 16th-century Italian from other texts; 6 of 6 seeds identical), one correction by sense on those lines (d = f); key K_T frozen.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One measurement on held-out L09-L11 against an independent automatic break of those lines alone (frozen first): character agreement 0.961 vs 0.263 for the best of 200 shuffled keys; thresholds >= 0.85 and >= control + 0.30.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "reading",
+   "what": "Decryption read by sense: 182 words, 149 certain, 25 probable, 2 restored, 6 unresolved (torn margin) = 95.6%.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Key broken by annealing on the first eight cipher lines and validated once on the last three against an independent machine break of those lines; no clear text of the time exists.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.956,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Daniel's rule (certain + probable; restored words not counted), counted on reading.md: 182 cipher words, 149 certain, 25 probable, 2 restored, 6 unresolved = 174/182 = 95.6% (block alone: 172/174 certain or probable, 2 restored).",
+  "verification": [
+   "statistical test",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-11-04",
+   "verdict": "pass",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): protocol and partition hashed before any calculation; key learned on L01-L08 and frozen; reference = fully automatic break of L09-L11 alone (20 seeds, frozen before decoding H with the key; convergence 0.887); one measurement: character agreement 0.961 vs 0.263 for the best of 200 shuffled keys. Reservations: the reference is a machine break, not a clear of the time; one held-out word was seen while justifying the tokenisation; single-pass transcription."
+  },
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "transcription, key broken ciphertext-only and validated once on held-out lines (0.961 vs 0.263), cipher read (95.6%) and translated",
+    "date": "2026-11-04"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "catalogue entry 2164 (Estense sweep, Nov 2026)",
+    "date": "2026-11-04"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "6 words of the torn margin (M1, M2, M4, M5)",
+    "blocker": "needs-physical-access",
+    "detail": "the left edge of c. 10r is torn; only the line ends survive"
+   },
+   {
+    "item": "25 probable words departing from the key by one sign",
+    "blocker": "illegible",
+    "detail": "a blind second reading of the doubtful signs on the full-resolution tiles would tell our slips from the encipherer's"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "campori-delcarretto-c10",
+    "label": "c. 10r: cipher block L01-L11 and torn margin M1-M5",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "it",
+    "state": "read",
+    "read_share": 0.956,
+    "summary": "Beccaria has said that no one could carry out His Majesty's orders better than Count Espinula (Spinola); the marquis has not failed and will not fail to make the truth known, for his agents' honour and His Majesty's service, although it is awkward that the man was approved and sent to His Majesty as trustworthy; let the agents do their duty on their side, for the man is better known to His Majesty and his ministers than is believed, and neither he nor the one behind him will reach his aim.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "date": "2026-11-06",
+     "note": "Read as sentences 4-6 Nov 2026 by AI agents only; no human reading. The block construes as Italian sentences throughout (172 of 174 words certain or probable), but 25 probable words rest on a one-sign departure and the transcription is a single pass, so grade B rather than A."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "The key is ours and reusable (key.tsv, CC BY 4.0). The validation reference is a machine break of the held-out lines, not a clear text of the time; it is reported as such."
+ }
+}
