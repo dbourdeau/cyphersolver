@@ -380,6 +380,11 @@ PAGES = [
          quote='&ldquo;dat de Ongaren regem Bohemiae mede erweelden&rdquo;',
          rights='Manuscript images: Nationaal Archief, The Hague, 1.01.02 inv. 6894, via DECODE'),
 
+    dict(slug='coloma1622', label='Mirabel to Coloma 1622', year='1622', y=1622.93, place='Lyon &rarr; Carlos Coloma, London', st='partial', stt='key from adjacent plaintext &middot; partial',
+         title='The Marquis of Mirabel to Carlos Coloma, Lyon, 8 December 1622',
+         blurb='A letter of the Spanish ambassador in France to his colleague in London, in clear at the ends and cipher in the body. Brice Dudout rebuilt the key from the margin clears of the Duke of Feria&rsquo;s letters to Coloma and read 375 of 425 cipher words (88.2%), but the key is only partly validated (two of four held-out tests partial, two failed) and about a third of the sentences read clean. Savoy, the Valtellina, a Lorraine garrison and Richelieu.',
+         quote='&ldquo;aunque no es del Consejo deste Rey, es por el que se gobierna la Reina madre&rdquo; (Richelieu; some words restored)',
+         rights='Biblioteca Nacional de Espa&ntilde;a, RES/227/122 (BNE Digital, CC BY 4.0)'),
     dict(slug='sp106r725', label='SP 106/10 key sheet R725', year='1623&ndash;24', y=1623.45, place='London', st='stuck', stt='not solved',
          title='A codebreaker&rsquo;s key sheet: the two-figure nomenclator of TNA SP 106/10, c. 1623&ndash;24',
          blurb='The fair copy of a cipher a Jacobean English codebreaker had reconstructed (DECODE R725): two-figure groups read as a letter, a word of one list or a word of a second, according to whether they are bare, barred or ticked. Transcribed in full; its vocabulary (Inojosa, Cardinal Barberini, the Palatinate) dates his file to 1623&ndash;24. His worksheets in the cipher (R657) are not yet decoded. Split on 14 Oct 2026 from sp106box10.',
@@ -2951,6 +2956,7 @@ IMAGES['clair460bar'] = None
 IMAGES['clair460num'] = None
 IMAGES['dampierre1589'] = None
 IMAGES['dole1636'] = None
+IMAGES['coloma1622'] = ('coloma1622_snip.jpg', 'F.1v, lines 1-7: the cipher body, numbers, underlined code words and ligatures', 'Biblioteca Nacional de Espa&ntilde;a, RES/227/122, f.1v ll. 1-7 (viewer image 6), via BNE Digital, CC BY 4.0')
 IMAGES['ariosto1559'] = ('ariosto1559_cipher.jpg', 'C. 39r, lines 4-7: clear Italian words and runs of signs with raised vowel digits', 'Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera E, Este (d&rsquo;), Ercole II d&rsquo;Este, cc. 39-41, c. 39r (detail), via the Estense Digital Library (IIIF), CC BY-NC-SA')
 IMAGES['geleen1633'] = ('geleen1633_lead.jpg', 'Fol. 184r: two-digit cipher numbers run together between clear German words', 'Bayerische Staatsbibliothek, Clm 10406 no. 206, fol. 184r (view 653), via MDZ, Public Domain Mark 1.0')
 IMAGES['dubellay1555'] = None
