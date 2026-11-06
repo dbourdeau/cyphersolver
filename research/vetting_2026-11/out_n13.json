@@ -1,0 +1,249 @@
+{
+ "2340": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch n13",
+  "seen": {
+   "kind": "scan",
+   "where": "ASF PAD (archividigitali) via curl/iipsrv, 6 Nov 2026: Mediceo del Principato 391 cc. 284-290, 392 cc. 45-51, 393 cc. 259-265, rectos and versos at 1400 px; 391 c. 287r cipher lines and 392 c. 49r top at 2000 px (IIIF region)",
+   "extent": "391 c. 287r: two lines of figures (about 90 digits) inside the clear letter of 26 Dec 1548. 392 c. 49r ('Inserto'): about 25 lines of figures with '+' marks (about 1,100 digits); its last line shows below the shorter leaves cc. 47 and 48. 393 c. 263r: a small slip with 7 lines of the same '+' figures.",
+   "cipher": "Figure cipher with '+' marks. 392: c. 47r-v is the bishop's own autograph letter (docket 'Dal vescovo di Pavia adi 7 di Marzo 48', signed 'Humil. ser.re il vescovo di Pavia', and it refers the duke to 'quello che li scrivo nel(l')incluso'); c. 48r, a separate smaller leaf laid over the insert, holds 19 lines of clear text in a neat chancery italic, not the bishop's hand, with no salutation, date or signature, ending in a flourish: 'oltre l'indicij che le scrissi per m. Severo, in quello discorso della guerra ne ritrovo alcuni altri ... Don Ferrante ... Granvela ... reformare Genoua et hauere il Piemonte ... degno della sua notitia'. That is the decipherment-slip form of this chancery, so c. 49 is glossed by c. 48. 393: c. 262r, filed in front of the cipher slip c. 263, carries 5 lines in the same chancery italic, no salutation or signature: 'se S. Ecc.za si sconciassi in accommodare ... potra fare come ha fatto il Duca di Ferrara, et li Lucchesi ... come dice il Car.le di Ravenna', the decipherment of c. 263. 391 c. 287r: the figures are written between two heavily struck-through lines of clear text (illegible at 2000 px); no decipherment on the neighbouring carte 284-290."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump plus the repo ledgers) run on 'Mediceo del Principato 391', '392, cc. 47', 'vescovo di Pavia', 'Rossi': only this lead, its candidates.json row and the sweep README; no DECODE record for de' Rossi or for these filze.",
+   "tomokiyo": "cryptiana crypto.htm and italian.htm fetched 6 Nov 2026 and grepped for Pavia, Milan, Medici, Cosimo, 1549: Florence section lists only the 1414-1478 Laurentian items and the Guicciardini page; nothing on de' Rossi.",
+   "lasry": "Three local GL.htm copies grepped for Pavia, Rossi, Cosimo, Mediceo, Firenze: only Catherine de Medicis items; no Lasry work on Cosimo I's Milan informants.",
+   "edition": "Carteggio universale inventory vol. IV p. 5 (page image read): '[Giov. Gerolamo de Rossi] vesc. di Pavia, Milano 1549 marzo 7, cc. 47-49', note 7 'Parzialmente in cifra', no decipherment noted (the inventory counts c. 48 within the item). Desjardins/Canestrini III (archive.org OCR) has no de' Rossi piece ('Pavie' only for a 1544 despatch). No edition of his letters found.",
+   "literature": "Web searches on Giovanni Girolamo de' Rossi with Cosimo, Milan, 1549 and cipher return only biographies (he resigned Pavia in 1541 and was reappointed in 1550) and a 1555 cession of his goods to Cosimo; no study of these letters."
+  },
+  "searches": [
+   {
+    "query": "\"Giovanni Girolamo de' Rossi\" vescovo di Pavia Milano 1549 lettere Cosimo I cifra",
+    "result": "Wikipedia and catholic-hierarchy biographies, archivistorici.com dossiers (1555 cession of goods to Cosimo); nothing on the 1548-49 Milan letters or a decipherment."
+   },
+   {
+    "query": "\"vescovo di Pavia\" Cosimo I 1548 1549 Ferrante Gonzaga Milano informatore lettere in cifra Mediceo del Principato",
+    "result": "Regione Toscana inventory PDF vol. III and Ferrante Gonzaga background; no edition or study of the bishop's cipher."
+   },
+   {
+    "query": "Medici Archive Project \"Rossi\" \"bishop of Pavia\" Cosimo 1549 cipher MdP 392",
+    "result": "Biographical pages only; no MAP/MIA record or transcription of MdP 392 cc. 47-49."
+   }
+  ],
+  "key_check": "No key looked up. The c. 48 / c. 49 and c. 262 / c. 263 pairs give plaintext for the de' Rossi '+' system; ASF Cifrari II serie (Chiavi ... 1536-1573) not online.",
+  "key_in_volume": "Plaintext-ciphertext pairs in the run: 392 c. 48 (decipherment) with c. 49 (insert), 393 c. 262 with c. 263; not tested against the two lines on 391 c. 287.",
+  "duplicates": "known.py on the three filze, 'vescovo di Pavia', 'Rossi' and the carte: only this lead and its sweep files; lead 2329 (399 c. 643, pencil 'Vesc.o di Pavia (?)') is a different document and, per n11, a different-looking system.",
+  "verdict": "partly_read",
+  "closed": "Two of the three pieces have contemporary chancery decipherments filed with them: 392 c. 48 (a separate slip in a chancery hand, no salutation or signature, laid over the insert c. 49 and covering Don Ferrante, Granvela, Genoa and Piedmont) and 393 c. 262 (5 clear lines filed in front of the cipher slip c. 263). Matched by form, hand and position, not group by group; both plaintexts run about twice the figure count, consistently. Only the two lines of figures on 391 c. 287r stand bare (their struck-through clear text is illegible). 391 A cc. 601, 926-927 are not on PAD and were not seen."
+ },
+ "2341": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch n13",
+  "seen": {
+   "kind": "scan",
+   "where": "ASF PAD (archividigitali) via curl/iipsrv, 6 Nov 2026: Mediceo del Principato 425 cc. 190-197 rectos and versos at 1400 px; the sweep's 900 px images of cc. 173-176 and 2000 px of c. 193",
+   "extent": "Two full sides, not one: c. 193r ('Inserto', about 28 lines) and c. 193v (about 28 lines) of continuous figures; three lines of figures at the foot of c. 194r; a few figure groups on c. 195r. Roughly 60 lines in all.",
+   "cipher": "Continuous figure cipher in the secretary's hand. At the foot of c. 193v a second heading 'Inserto' opens a clear insert ('Questa sera a hore due di notte mando S. S.ta a domandare ...') that runs onto c. 194r and ends 'la l(ette)ra se ben mostra esser data in Siena, pero e scritta in Roma,' followed by the three figure lines; c. 195v is signed by Serristori, Rome 9 April 1554. Nothing is written over, under or beside the figures. The annexed cc. 173 (a clear letter about the Cortonesi, the 'rapporto' named on c. 194r), 174 (its cover, 'Rapporto') and 175-176 (clear 'Memoriale' of 7 April) are separate texts, and cc. 190-191, 196-197 are covers and other letters: no decipherment is filed with it."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump plus ledgers) on 'Mediceo del Principato 425', 'Serristori', '425, cc. 192': only this lead, its sweep row and the first-pass README note on Serristori's 410 c. 1006; no DECODE record.",
+   "tomokiyo": "cryptiana crypto.htm / italian.htm grepped for Serristori, Rome, Julius, 1554: no entry; the Vatican 1550s matrix page concerns papal ciphers, not Florentine despatches.",
+   "lasry": "GL.htm copies grepped for Serristori, Cosimo, Mediceo, Siena: nothing; no Lasry paper on Serristori's ciphers found.",
+   "edition": "Canestrini, Legazioni di Averardo Serristori (1853; archive.org bub_gb_eAY_I94htiwC full text read): the Julius III legation prints extracts and 'Decifrato' texts from Legazioni di Roma filza X, jumping from 23 Dec 1553 to 10, 16 and 17 May 1554; no despatch of 9 April 1554 (the 'Dei 9 aprile' extract there is 1552). Desjardins III prints Serristori of 27 Jul 1552, 24 and 30 Jun 1554, 24 Jan 1555: not this one. Inventory vol. VI p. 108 note 56: 'Duplicato, parzialmente in cifra', no decipherment noted.",
+   "literature": "Searches on Serristori's 1554 despatches, cipher and the Siena war found Rocco's 2020 Liege thesis and 2022 article (diplomatic practice, gifts) and the CSUN sede vacante pages (1555 letters); nothing deciphers this despatch."
+  },
+  "searches": [
+   {
+    "query": "Averardo Serristori 9 aprile 1554 dispaccio Roma Giulio III cifra Cosimo",
+    "result": "CSUN Sede Vacante 1555 pages (Serristori letters of 1555), Rocco's articles on Serristori; no text of the 9 April 1554 despatch."
+   },
+   {
+    "query": "Serristori ambasciatore Roma 1554 lettere decifrate guerra di Siena Cortona rapporto \"Serristori\" cifra edizione",
+    "result": "Canestrini 1853 named as the edition; Rocco thesis; Siena-war background; no decipherment of this despatch."
+   },
+   {
+    "query": "\"Mediceo del Principato\" 425 Serristori 1554 duplicato cifra",
+    "result": "General Mediceo del Principato descriptions only; nothing on filza 425."
+   }
+  ],
+  "key_check": "Not tested. Possible key sources: Serristori's 410 c. 1006 with interlinear decipherment (first-pass README, not opened), the 'Decifrato' texts Canestrini prints for other Serristori despatches (no matching ciphertext printed with them), and ASF Cifrari II serie (not online).",
+  "key_held": "ASF Cifrari II serie (Chiavi delle cifre del Carteggio di Cosimo I 1536-1573) may hold Serristori's key; not online, not tested. No reading of this despatch is on record.",
+  "duplicates": "known.py on 'Mediceo del Principato 425', 'Serristori', the carte: only this lead and its sweep files. The original of this duplicate (probably Legazioni di Roma, ASF) was not located; Canestrini's printed selection does not include it.",
+  "verdict": "open"
+ },
+ "2342": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch n13",
+  "seen": {
+   "kind": "scan",
+   "where": "ASF PAD (archividigitali) via curl/iipsrv, 6 Nov 2026: Mediceo del Principato 427 cc. 519-523 rectos and versos at 1400 px",
+   "extent": "c. 521r: 13 lines of clear text, then 5 lines of continuous figures (about 300 digits) to the foot; c. 521v blank (show-through only).",
+   "cipher": "Continuous figure cipher, with frequent 9 and 0 digits ('29 90 70 90 70 ...'), after a clear passage that begins mid-sentence ('spender, per satisfar all'intentione di S. San.ta ...') and speaks of agents sent to explore 'in Ferrara, et in Parma le actioni de Franzesi' and of the Duke of Ferrara 'sotto color di consultar seco'. Pencil 'giugno' at the top. Nothing written over or beside the figures; c. 520 (letter of 20 June 1554 from Castiglion Fiorentino) and c. 522 (a different writer's letter) are unrelated, so no decipherment is filed with it."
+  },
+  "prior_art": {
+   "decode": "known.py (DECODE dump plus ledgers) on 'Mediceo del Principato 427', '427, c. 521', 'Brano di lettera': only this lead and its sweep files (427 also hits n11's leads 2325/2330 for other carte).",
+   "tomokiyo": "Tomokiyo's Italian-cipher pages (italian, variable, null, polyphonic, matrix) grepped for Ferrara, Parma, Julius, 1554: nothing on this fragment.",
+   "lasry": "GL.htm copies grepped for Mediceo, Ferrara 1554, Julius: no hit; no Lasry item on it.",
+   "edition": "Inventory vol. VI p. 132: 'Brano di lettera in parte in cifra, mancante della parte iniziale. Sembra indirizzata al Papa (Giulio III?)', s.l. s.d., no decipherment noted. Desjardins III (archive.org OCR) prints no such piece; no other edition found.",
+   "literature": "Searches on a June 1554 cipher report on Ferrara, Parma and the pope found only War of Parma background, Pastor on Julius III and Este-cipher articles; nothing on this fragment."
+  },
+  "searches": [
+   {
+    "query": "\"Mediceo del Principato\" 427 \"Brano di lettera\" Giulio III 1554 cifra Ferrara Parma",
+    "result": "Pastor's History of the Popes vol. 13 and general Mediceo pages; nothing on 427 c. 521."
+   },
+   {
+    "query": "giugno 1554 lettera al papa Giulio III in cifra \"Duca di Ferrara\" Parma Francesi \"sotto color di consultar seco\" decifrazione",
+    "result": "War of Parma (Wikipedia), Capilupi-Gonzaga correspondence edition (1893, 1551-52), Este cancelleria inventory; no text or decipherment of this fragment."
+   },
+   {
+    "query": "Nuntiaturberichte 1554 Ferrara Parma Francesi lettera cifrata al papa Giulio III giugno 1554 legato informazione Cosimo intercettata",
+    "result": "Pastor, a Florence article on Renée of France's papers (1554), Este cipher article; nothing on this piece."
+   }
+  ],
+  "key_check": "Writer unknown, so no key identified; the 9/0-rich figures differ from the de' Rossi '+' system and the Serristori figures. ASF Cifrari II serie not online. Not tested.",
+  "duplicates": "known.py on 'Mediceo del Principato 427', '427, c. 521', 'Brano di lettera': only this lead and its sweep files; no DECODE, catalogue or target duplicate.",
+  "verdict": "open"
+ },
+ "2343": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch n13",
+  "seen": {
+   "kind": "scan",
+   "where": "ASF PAD (archividigitali) via curl/iipsrv, 6 Nov 2026: Mediceo del Principato 433 cc. 795-799 rectos and versos at 1400 px (c. 797r read at full width)",
+   "extent": "c. 797r, a cut slip (old foliation '776 bis'): about 8 lines in which clear phrases alternate with figure runs, roughly 6 runs of 20-40 digits (about 200 digits); c. 797v show-through.",
+   "cipher": "Figure cipher embedded in clear text: 'Piacemi il disegno che m'havete mandato, et che di gia si cominci a conoscer [figures] ... ma il tutto e, che [figures] il piu che si puo; [figures] ... accio quando vi parra [figures]: et quanto a me dovete sapere horamai il mio buono animo [figures]: Avvertite sopra tutto [figures]'. A water stain covers part of lines 2-3. Nothing written over or beside the figures; c. 796 (Roberto Strozzi) and c. 798 (another writer) are unrelated letters, so no decipherment is filed with it."
+  },
+  "prior_art": {
+   "decode": "known.py (DECODE dump plus ledgers) on 'Mediceo del Principato 433' and '433, c. 797': only this lead and its sweep files; no DECODE record.",
+   "tomokiyo": "Cryptiana index and Italian pages searched for Florence, Siena, 1554: no entry for a 1554 Florentine slip.",
+   "lasry": "No hit for Mediceo, Cosimo or Siena in the three GL.htm copies; nothing on this slip.",
+   "edition": "Inventory vol. VII p. 126: 'Brano di lettera', note 91 'Parzialmente in cifra', no sender, date or decipherment; no edition prints it.",
+   "literature": "Searches on the opening phrase and on July 1554 cipher letters in the Siena war (Cantagalli 1962 named, not opened; Landi 1994) found nothing on this slip."
+  },
+  "searches": [
+   {
+    "query": "\"Mediceo del Principato\" 433 1554 \"Brano di lettera\" cifra luglio 1554",
+    "result": "Review of inventory VII (filze 431-446) and general Mediceo pages; nothing on 433 c. 797."
+   },
+   {
+    "query": "\"Piacemi il disegno che m'havete mandato\" 1554 lettera cifra",
+    "result": "No hit for the phrase; unrelated Bellaso 1553 and Bembo/Michelangelo letters."
+   },
+   {
+    "query": "Cosimo I luglio 1554 lettera parte in cifra Roberto Strozzi Marco Spinola guerra di Siena avvisi cifrati decifrati Cantagalli",
+    "result": "Siena-war background (Marciano, Leone Strozzi), Landi 1994; no decipherment of this slip."
+   }
+  ],
+  "key_check": "Writer and addressee unknown (the voice gives instructions to an agent, possibly a Medici minute or an intercept); no key identified; ASF Cifrari II serie not online. Not tested.",
+  "duplicates": "known.py on 'Mediceo del Principato 433', '433, c. 797': only this lead and its sweep files; no DECODE, catalogue or target duplicate.",
+  "verdict": "open"
+ },
+ "2344": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch n13",
+  "seen": {
+   "kind": "scan",
+   "where": "ASF PAD (archividigitali) via curl/iipsrv, 6 Nov 2026: Mediceo del Principato 436 cc. 898-902 rectos and versos at 1400 px; c. 900r cipher block at 2000 px (IIIF region)",
+   "extent": "c. 900r: 6 lines of continuous figures (about 330 digits) at the head of the page, then 5 clear lines; c. 900v blank (show-through).",
+   "cipher": "Figure cipher with dots and short strokes over figures. The clear lines below, in the writer's quick hand, continue the report: 'viene riferito che il Rollo tiene pratica stretta con l'Amb.re di Francia che risiede in terra de Suizzeri, ne so se questo sia per servitio di V. Ecc.tia o altrimenti, onde non mancaro io di qua di far diligentia ...'. They are a clear postscript in the first person, not a decipherment of the figures. Neighbours c. 899 (letter of 24 Dec 1554) and c. 901 (Cortona letter) carry no decipherment."
+  },
+  "prior_art": {
+   "decode": "known.py (DECODE dump plus ledgers) on 'Mediceo del Principato 436', 'Gualtiero Rollo', 'Rollo', 'Svizzera': only this lead and its sweep files.",
+   "tomokiyo": "Cryptiana searched for Swiss, Switzerland, Florence, 1554: no page on this avviso or on Medici agents in the Confederation.",
+   "lasry": "GL.htm copies grepped for Rollo, Roll, Svizzeri, Cosimo: no hit.",
+   "edition": "Inventory vol. VII p. 218: 'Avviso sui contatti in Svizzera tra Gualtiero Rollo e l'Ambasciatore di Francia', note 125 'Parzialmente in cifra', no decipherment noted. Desjardins III (archive.org OCR) has no Rollo/Roll. No edition prints it.",
+   "literature": "'Gualtiero Rollo' is Walter Roll of Uri, chancellor of the Locarno bailiwick and the Medici's agent and pension-payer in the Confederation (HLS article 015525). His biography, E. Walder, Der Condottiere Walter Roll von Uri (Bern diss. 1948, 281 pp.), is not online and was not opened; it is a monograph, not an edition, and no cited decipherment of this avviso was found."
+  },
+  "searches": [
+   {
+    "query": "\"Gualtiero Rollo\" OR \"Gualtier Rollo\" Svizzera ambasciatore di Francia 1554 Cosimo",
+    "result": "HLS article on Walter Roll (in 1554 he tried to sell the Italian bailiwicks to the Medici); nothing on this cipher."
+   },
+   {
+    "query": "1554 avviso cifrato Svizzeri ambasciatore di Francia Soleure leva guerra di Siena Cosimo I decifrato \"Rollo\"",
+    "result": "Siena-war background and a Besancon Renard 1554 cipher study; nothing on this avviso."
+   },
+   {
+    "query": "Walter Roll Locarno 1554 Medici vendita baliaggi Cosimo studio lettere",
+    "result": "HLS (Roll the Medici's chief agent in the Confederation, deposed 1556) citing Walder 1948; no edition of his Medici correspondence."
+   }
+  ],
+  "key_check": "Informant unknown, so no key identified; the dotted figures resemble the 1554 dotted style of 427 c. 38 (n11, lead 2325) but were not compared group by group. ASF Cifrari II serie not online. Not tested.",
+  "duplicates": "known.py on 'Mediceo del Principato 436', 'Gualtiero Rollo', 'Rollo', 'Svizzera': only this lead and its sweep files; no DECODE, catalogue or target duplicate.",
+  "verdict": "open"
+ },
+ "2345": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch n13",
+  "seen": {
+   "kind": "scan",
+   "where": "ASF PAD (archividigitali) via curl/iipsrv, 6 Nov 2026: Mediceo del Principato 443 cc. 676-681 rectos and versos at 1400 px, c. 679r top at 2000 px; compared with the sweep's 436 cc. 849-851 and 443 cc. 78-79, 85 and a 2000 px crop of 436 c. 849r",
+   "extent": "c. 679r: 6 lines of figures at the head (about 330 digits), the clear close 'Ne occorrendomi altro bascio a V. Ecc.a humil.te le mani. di Roma alli xiiij di Marzo 1555', then a postscript ('Pos.a') of 10 lines of figures (about 550 digits), signed 'S. Bal. d. Monte'.",
+   "cipher": "Continuous figure cipher in digits (frequent 02, 39, 56, 59, 64), not 'letter-like signs' as the lead says; same hand and figure style as Baldovino's 436 c. 849r (compared at 2000 px). c. 678r-v is the clear first part of the letter; c. 677 (Leonida Malatesta), c. 680 and c. 681 (covers to the Duke of Florence) carry no decipherment, and nothing is written over or beside the figures."
+  },
+  "prior_art": {
+   "decode": "known.py (DECODE dump plus ledgers) on 'Mediceo del Principato 443', 'Baldovino', 'del Monte', '443, cc. 678': only this lead's files; 'del Monte' hits unrelated items (Christina 1672, the 1553 Santa Croce nunciature).",
+   "tomokiyo": "Cryptiana searched for Monte, Julius, Rome, 1555 and Medici: no page on Baldovino del Monte's cipher with Cosimo.",
+   "lasry": "GL.htm copies grepped for Baldovino, del Monte, Cosimo: no hit; no Lasry paper on this correspondence.",
+   "edition": "Desjardins III (archive.org OCR) prints one Baldovino letter to Cosimo, Rome 30 June 1554, not this one of 14 March 1555. Inventory vol. VII p. 376 note 89 'Parzialmente in cifra', no decipherment noted; the inventory records decipherments only for his 436 cc. 849-850 (at c. 851) and names a non-matching key for 443 c. 78.",
+   "literature": "Searches on Baldovino del Monte's 1555 letters and cipher found no study or transcription; the CSUN 1555 sede vacante pages quote Serristori, not Baldovino's cipher."
+  },
+  "searches": [
+   {
+    "query": "Baldovino del Monte 14 marzo 1555 lettera Cosimo cifra Roma Giulio III fratello",
+    "result": "Wikipedia/New Advent on Innocenzo del Monte and Julius III (Baldovino his brother, governor of Piacenza), Pastor; no text or decipherment of the 14 March 1555 letter."
+   },
+   {
+    "query": "\"Baldovino del Monte\" Cosimo I carteggio cifrato 1554 1555 decifrazione Mediceo",
+    "result": "Regione Toscana inventory PDFs (vols. III, XI, XII), AIB review of inventory VII, Morgan Cosimo letters of 1554; nothing on 443 c. 679."
+   },
+   {
+    "query": "Desjardins Négociations Toscane III Baldovino del Monte dépêche 1555",
+    "result": "Catalogue records of Desjardins only; the volume itself was then read in the archive.org OCR (gri_33125017127461): its one Baldovino letter is Rome, 30 June 1554."
+   }
+  ],
+  "key_check": "Not tested. Inventory vol. VII: ASF Cifrari II serie F. III holds a key attributed to Baldovino that 'does not correspond' to 443 c. 78; not online.",
+  "key_in_volume": "443 c. 79 (clear unsigned 'Informazione sull'atteggiamento del Papa' filed between Baldovino's cipher carte 78 and 85, very likely their decipherment) in the same filza; also 436 c. 851, the inventory-recorded decipherment of his 436 cc. 849-850 (same figure style). Neither tested against c. 679.",
+  "duplicates": "known.py on 'Mediceo del Principato 443', 'Baldovino', 'del Monte', '443, cc. 678': only this lead and its sweep files; no DECODE, catalogue or target duplicate.",
+  "lead_updates": {
+   "language": "Italian (figure cipher, continuous digits)"
+  },
+  "verdict": "open"
+ },
+ "2346": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch n13",
+  "seen": {
+   "kind": "scan",
+   "where": "ASF PAD (archividigitali) via curl/iipsrv, 6 Nov 2026: Mediceo del Principato 443 cc. 313-319 and 451 cc. 23-28, rectos and versos at 1400 px",
+   "extent": "443: c. 315r a full page of figures after the salutation (about 30 lines) and about 12 more lines at the head of c. 315v before the clear close and signature (Siena, 1 Feb 1555). 451: c. 25r about 30 lines of figures after the salutation and c. 25v a full page more; c. 26r clear close, dated Siena 3 Jan 1555 [1556], signed Marcello Griffoli. About 100 lines of figures in all.",
+   "cipher": "Continuous figure cipher in Griffoli's secretary's hand. Nothing written over, under or beside the figures. 443 c. 314 (another writer) and c. 316 (Griffoli, 2 Feb, partly in cipher) do not decipher c. 315; c. 317, the inventory's decipherment of the 2 Feb letter, is about 15 lines, far too short for c. 315. 451 c. 26r is dated and signed, the letter's own close, and cc. 24, 27 are other writers' letters: no decipherment is filed with either piece."
+  },
+  "prior_art": {
+   "decode": "known.py (DECODE dump plus ledgers) on 'Griffoli', 'Mediceo del Principato 451', '443, c. 315': only this lead and the two ASF Florence sweep READMEs (the Cifrari II serie F. III note).",
+   "tomokiyo": "Cryptiana crypto.htm and italian.htm grepped for Griffoli, Siena, Montalcino, 1555-56: Siena appears only for the 15th-century Concistoro keys; nothing on Griffoli.",
+   "lasry": "GL.htm copies grepped for Griffoli, Siena, Cosimo: no hit.",
+   "edition": "Inventory vol. VII p. 362 notes 40-41 (text read): c. 315 'In cifra. Questa cifra viene usata ufficialmente da Marcello Griffoli, cfr. A.S.F., Cifrari II serie ... F. III'; 'Parzialmente in cifra. A c. 317 decifrazione' for the 2 Feb letter only. Vol. VIII p. 137 note 3 'Parzialmente in cifra' for 451 c. 25. No edition of Griffoli's letters found.",
+   "literature": "Searches on Marcello Griffoli with Siena, Cosimo, cifra and on Cantagalli's La guerra di Siena (1962; not online, not opened) found no transcription; the only Griffoli hits are other people."
+  },
+  "searches": [
+   {
+    "query": "\"Marcello Griffoli\" Siena 1555 commissario Cosimo lettere cifra",
+    "result": "Unrelated Griffolini; Siena-war pages; nothing on Griffoli's letters or cipher."
+   },
+   {
+    "query": "\"Griffoli\" 1556 Siena Cosimo I \"Mediceo del Principato\" 451 OR 443 lettera decifrata Montalcino",
+    "result": "Inventory PDFs for other volumes and Montalcino background; no decipherment."
+   },
+   {
+    "query": "Cantagalli \"La guerra di Siena\" 1962 Griffoli dispacci cifrati edizione documenti Montalcino 1555",
+    "result": "Bibliographic citations of Cantagalli 1962 (Intronati) and Pessina's study; no edition of Griffoli's cipher despatches."
+   }
+  ],
+  "key_check": "Not tested. The key is named by the inventory (ASF Cifrari II serie F. III, 'cifra ... di Marcello Griffoli'), not online; 443 c. 317 with cc. 316-318 is a plaintext-ciphertext pair in the same system.",
+  "key_in_volume": "443 c. 317, the inventory-recorded decipherment of Griffoli's cipher passages on cc. 316 and 318 (2 Feb 1555), in the same filza as c. 315; not tested against c. 315 or 451 c. 25.",
+  "key_held": "ASF Cifrari II serie, Chiavi delle cifre del Carteggio di Cosimo I 1536-1573, F. III (Griffoli's cipher), named by inventory vol. VII note 40; in the archive, not online, not tested. No reading of these two pieces is on record.",
+  "duplicates": "known.py on 'Griffoli', 'Mediceo del Principato 451', '443, c. 315': only this lead and its sweep files; no DECODE, catalogue or target duplicate.",
+  "verdict": "open"
+ }
+}
