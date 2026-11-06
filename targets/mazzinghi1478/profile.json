@@ -107,9 +107,13 @@
    "cleartext context"
   ],
   "attack": "known plaintext",
-  "human_role": "Daniel Bourdeau chose the target; the model does the work.",
+  "human_role": "Daniel Bourdeau chose the target; the model does the work. A second session worked 2307 from the catalogue task prompt (ciphertext only) at the same time; no target-specific intervention.",
   "models": [
    "claude-opus-5-5"
+  ],
+  "tools": [
+   "solve.py (homophonic annealer, it-cinquecento order 5)",
+   "measure_ctonly.py"
   ]
  },
  "solution": [
@@ -207,6 +211,60 @@
    "date": "2026-11-06",
    "kind": "reading",
    "what": "Reading and translation of both letters (reading.md); 76.1% of cipher signs read, measured (measure.py).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "transcription",
+   "what": "Parallel session (PR #301), 2307 without the sibling key: First pass of 89/142, 29 sign classes, 1055 signs.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "sibling key",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Parallel session (PR #301), 2307 without the sibling key: Paired the 72/170 gloss with its cipher; only 'publichamente mostra lectere' aligned with confidence.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Parallel session (PR #301), 2307 without the sibling key: Homophonic annealer on it-cinquecento; collapsed onto all-i.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Parallel session (PR #301), 2307 without the sibling key: Same with a letter-frequency KL penalty and swap moves; Italian came out (contra di voi molto crudele, molte volte, grandissimo).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "control",
+   "technique": [
+    "simulated annealing"
+   ],
+   "what": "Parallel session (PR #301), 2307 without the sibling key: 537-sign Italian passage in a random 29-sign homophonic key: 655/667 letters right.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "reading",
+   "technique": [
+    "contextual inference",
+    "manual reconstruction"
+   ],
+   "what": "Parallel session (PR #301), 2307 without the sibling key: Second transcription pass in 3x crops and word-by-word reading; merged sign classes resolved from context.",
    "result": "partial"
   }
  ],

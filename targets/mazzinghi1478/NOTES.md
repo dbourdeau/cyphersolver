@@ -68,6 +68,48 @@ come in person; "aiutatevi l'occhio, ché ogni cosa fanno per la vostra fine". L
 If [30] is Lorenzo, this is a warning of a murder plot nine months after the Pazzi conspiracy. Not yet claimed:
 the code numbers need identifying from the content and the other MAP letters, and the misread look-alikes fixing.
 
+## 6 Nov 2026: independent ciphertext-only break of 2307 (parallel session, PR #301)
+
+A second session, started from the catalogue 2307 task prompt, worked 2307 at the same time without the sibling
+key: its own coarser transcription (29 sign classes), a solver on the ciphertext alone, then a word-by-word reading.
+Files: `transcription_89_142_v1.txt`, `reading_89_142.txt`, `key.md`, `solve.py`, `measure_ctonly.py`, `decode_lines.py`,
+`WORKLOG.md` (images in `images/`, git-ignored). It is a cross-check on the reading above, not a rival one: the
+key from the 170 glosses is the better one, and `t142.tsv` the finer transcription.
+
+**Agreement.** The two keys were reached separately (ciphertext-only here; the 170 glosses there) and agree on the
+main values (+ a, x e, 5 i, r o, n n, H t, 6 r, o d, q u, 4 s, 8 m, m g, = b, P p). Both drafts read "persona",
+"cancelleria", "tutti i privilegi", "contra di voi molto crudele", "addosso a voi/noi", "abbino el diavolo in corpo",
+"Iacopo de Rossi da Pistoia", "un altro pistolese che si chiama Co[la]", "ordinò la morte del 30 e mostra sia ...
+ordine sopra a voi", "...tevi l'occhio, ché bisogna ogni cosa", "messer Lorenzo da Castello", "dua travestiti",
+"gl'imbasciadori lucchesi". Differences to settle against the image: "abbiatevi" here / "aiutatevi" there; "rine"
+(open here) / "fine vostra" there; "accennando la..." here / "dannando la croce" there.
+
+**System.** Monoalphabetic substitution in letter-like signs, word division kept, numerals for persons, barred p for
+*per*, many clear words. About 1,050 cipher signs in 189 cipher words, plus about 190 clear words. The key is in
+`key.md`.
+
+**How the key came out.** A first-pass transcription (`transcription_89_142_v1.txt`, 29 sign classes) went into a
+homophonic annealer (`solve.py`, it-cinquecento order 5 with spaces, KL penalty on letter frequencies; without the
+penalty it collapsed onto all-*i*). It returned sense straight away ("contra di voi molto crudele", "la vita", "molte
+volte", "di loro altro", "grandissimo", "gli crede assai", "messere ... da castello"). Control: an Italian passage of
+537 signs in a random 29-sign homophonic key came back 655/667 letters right. Then each line was re-read in 3x crops and
+deciphered word by word (`reading_89_142.txt`). One gloss pair from the sibling 72/170 ("publichamente mostra lectere")
+agrees with the key (p q = 6 s o + 8 x n H x; 8 r 4 H r +).
+
+**What the letter says (so far).** News from Rome after the Pazzi conspiracy, so 16 January 1479 in modern style:
+the chancery has revoked "tutti i privilegi" of the Church (`cancelleria ... arrivocati tutti i privilegi`) that the
+Pope "aveva mai conceduti"; the Pope is "acceso contra di voi molto crudele", "abbino el diavolo in corpo"; a Iacopo
+"da Pistoia" and another "pistolese che si chiama ..." are named; "ordinò la morte del 30"; "sarete avisato come
+ognuno"; "è di venuto messer Lorenzo[?] da Castello ... molto gagliardo[?]"; "mi fanno mille carezze e spesso mi
+dicono mille novelle"; "dua travestiti"; "gl'imbasciadori lucchesi"; "lettere del 40"; "al popolo". The clear words
+("Bisognerà", "mille", "quanto", "effetto", "mostrando", closing "mi raccomando") are read only roughly so far.
+
+**Measured** (`python measure_ctonly.py`): of 189 cipher words, 111 read (58.7%), 30 read with doubt, 48 open; by signs
+61.8% read, 79.9% read or doubtful. Read in part.
+
+**Date and post.** The cipher confirms the Florentine-style date: the content is after April 1478 (Pazzi conspiracy,
+the papal interdict). Rome is implied by the papal news and the ambassadors; no place is written.
+
 ## Remaining gaps
 
 - 92 cipher words (394 signs) that do not decode to sense, listed in `measure.py` (UNREAD) - blocker: illegible; signs
