@@ -4,8 +4,8 @@ Key rebuilt from the contemporary interlinear decipherment of the sibling MAP LX
 completed by context and a 5-gram model (`refine.py`, `key_refined.tsv`), applied to the transcriptions `t252.tsv`
 and `t142.tsv` after a sign-by-sign recheck of doubtful words at 5-6x (`recheck.tsv`). Raw decodes: `draft252.txt`,
 `draft142.txt` (cipher words in capitals). Below, the cipher words are given in normal spelling, clear words in
-*italics* where they matter, `[…]` = cipher word not read, `[10]` = code numeral (persons; 10 is glossed "lo Duca di
-Calabria" in LXXII 170, 12 is glossed "Zanobi"; 30, 40, 51, 231 not identified), `?` = doubtful word.
+*italics* where they matter, `[…]` = cipher word not read, `[10]` = code numeral (persons; 10 is glossed "Duca" plus an
+illegible word in LXXII 170, 12 is glossed "Zanobi"; 30, 40, 51, 231 not identified), `?` = doubtful word.
 Measured (`measure.py`): 252: 72 of 121 cipher words, 371 of 581 signs read (63.9%); 142: 166 of 209 cipher words,
 882 of 1,066 signs (82.7%); together 1,253 of 1,647 signs (76.1%).
 
@@ -70,7 +70,7 @@ Castello has come and has become very bold; two men in disguise; the Lucchese am
   decoded and not interpreted further here.
 - Code 30: the letter warns the recipients ("la fine vostra", "sopra a voi"); 30 is most likely Lorenzo de' Medici
   or one of the household, but the code is not identified from any source.
-- Code 10: the sibling's gloss over the same numeral reads like "lo Duca di Calabria" (Alfonso of Aragon, commander
-  against Florence in the Pazzi War), uncertain; in 252 and 142 the duke's role fits only in part (a letter presented
-  to [10]; [10] trusts Mazzinghi), so the identification is left open.
+- Code 10: the sibling's gloss over the same numeral reads "Duca" followed by an illegible word (re-read at 6x on
+  6 Nov 2026: perhaps "nostro"; "di Calabria" is not supported). Which duke is left open; none of the Medici key
+  sheets of the period is this cipher (keysheets.md).
 - OLDP / DLDP / EDP (five times) behave like a code group for a person (perhaps "il papa" or a cardinal); not read.

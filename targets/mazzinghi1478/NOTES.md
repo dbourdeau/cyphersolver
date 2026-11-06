@@ -49,7 +49,7 @@ Files: `t170.tsv` (glossed sibling), `t252.tsv`, `t142.tsv` (transcriptions), `b
 pairs; held-out letters 57-74%), `refine.py` -> `key_refined.tsv`, `decode.py` -> `draft252.txt`, `draft142.txt`.
 The key is a homophonic letter substitution (a +, ^, d; e x, y, c; i s, 5, 1, 3; o r; u/v q, u; t H; tt {Hp}; r 6;
 l 2+, #?, l; n n; s 4, f; m 8; g m; p p, {pbar}, {dbar}; c {sg}; d o; b =; f b; ss g), words kept whole, clear
-words between. Numerals are persons: 10 (glossed "Duca di Calabria"? in 170), 12 (glossed Zanobi), 30, 40, 51, 231.
+words between. Numerals are persons: 10 (glossed "Duca n[ost]ro"? in 170: a duke, which one is not legible), 12 (glossed Zanobi), 30, 40, 51, 231.
 
 **252, 13 Jan 1478/9 (unsigned).** The writer writes only to tell them that the Pope ("S.S.") has sent a brief;
 a letter was presented yesterday morning to [10]; the king is so enraged that the writer fears they will seize
@@ -110,19 +110,28 @@ dicono mille novelle"; "dua travestiti"; "gl'imbasciadori lucchesi"; "lettere de
 **Date and post.** The cipher confirms the Florentine-style date: the content is after April 1478 (Pazzi conspiracy,
 the papal interdict). Rome is implied by the papal news and the ambassadors; no place is written.
 
+## A third letter in this cipher
+
+MAP CXXXVII 63, an unsigned bare postscript of eight lines (catalogue 2321), is in the same cipher: the key gives
+"medesime nave", "a Genova", "di Genova", "francesi", "vescovo", "imbasciadori" (found 6 Nov 2026 while checking the
+key sheets). It is not transcribed or read here; its catalogue entry stays open.
+
 ## Remaining gaps
 
 - 92 cipher words (394 signs) that do not decode to sense, listed in `measure.py` (UNREAD) - blocker: illegible; signs
   are 8-14 px at the ASF server's maximum (1272 px), rechecked at 5-6x (`recheck.tsv`) and tried against look-alike
   variants (`variants.py`); no higher-resolution image online
-- code numerals 10, 30, 40, 51, 231, 10/3 and the recurring group OLDP/DLDP/EDP - blocker: open-codes; only 12 =
-  Zanobi is glossed in LXXII 170 (10 perhaps "lo Duca di Calabria"), no code list for this cipher found
+- code numerals 10, 30, 40, 51, 231, 10/3 and the recurring group OLDP/DLDP/EDP - blocker: no-key-material; only 12 =
+  Zanobi is glossed in LXXII 170, and the gloss over 10 reads "Duca" plus an illegible word (re-read at 6x, 6 Nov:
+  "nostro"?, not "di Calabria"); none of the Medici key sheets of 1472-1494 (MAP LXXII 178-189 bis, CXIX 115-127,
+  LXXII 172, 209-210, CXXIV 184) is this cipher or holds its code list (`keysheets.md`)
 
 ## Escalation
 
 - [x] siblings: LXXII 170 (glossed) used as key source; LXXII 169, 171 and CXXXVII 251, 253 opened (171 is another system)
 - [x] clear-pages: none filed with 142 or 252; the 142 verso is the endorsement only
-- [x] known-keys: siena11 (Acciaiuoli, Rome 1478) compared, a different system; MAP LXXII 178-188 key sheets use other signs
+- [x] known-keys: siena11 (Acciaiuoli, Rome 1478) compared, a different system; every Medici key sheet of the period checked
+  (MAP LXXII 178-189 bis, CXIX 115-127 and others, `keysheets.md`): none is this cipher
 - [x] print: Lorenzo de' Medici, Lettere II-IV searched for the shelfmarks (Chrome passes c32, c33): no citation; web search for Mazzinghi and the Pistoiese plot found nothing
 - [x] key-rebuild: hard-EM on the gloss pairs (build_key.py), LM fill (refine.py), context fixes, image recheck (recheck.tsv)
 - [x] retry: every unread word retried with look-alike variants against a period word list (variants.py)

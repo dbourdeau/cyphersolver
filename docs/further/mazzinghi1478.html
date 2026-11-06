@@ -49,7 +49,7 @@
     <dt>Read now</dt><dd>76.1% of the cipher tokens give sense</dd>
     <dt>Write-up</dt><dd><a href="mazzinghi1478.html">mazzinghi1478.html</a></dd>
     <dt>Files</dt><dd><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/mazzinghi1478" rel="noopener">targets/mazzinghi1478</a></dd>
-    <dt>Open gaps</dt><dd><span class="gap w">code groups open</span><span class="gap">hard to read on the scan</span></dd>
+    <dt>Open gaps</dt><dd><span class="gap">hard to read on the scan</span><span class="gap">no key known</span></dd>
   </dl>
 </section>
 
@@ -73,12 +73,12 @@ THE READING
 
 OPEN GAPS (from NOTES.md, "## Remaining gaps")
   1. [illegible: needs a new source] 92 cipher words (394 signs) that do not decode to sense, listed in `measure.py` (UNREAD) - blocker: illegible; signs are 8-14 px at the ASF server's maximum (1272 px), rechecked at 5-6x (`recheck.tsv`) and tried against look-alike variants (`variants.py`); no higher-resolution image online
-  2. [open-codes: doable now] code numerals 10, 30, 40, 51, 231, 10/3 and the recurring group OLDP/DLDP/EDP - blocker: open-codes; only 12 = Zanobi is glossed in LXXII 170 (10 perhaps "lo Duca di Calabria"), no code list for this cipher found
+  2. [no-key-material: needs a new source] code numerals 10, 30, 40, 51, 231, 10/3 and the recurring group OLDP/DLDP/EDP - blocker: no-key-material; only 12 = Zanobi is glossed in LXXII 170, and the gloss over 10 reads "Duca" plus an illegible word (re-read at 6x, 6 Nov: "nostro"?, not "di Calabria"); none of the Medici key sheets of 1472-1494 (MAP LXXII 178-189 bis, CXIX 115-127, LXXII 172, 209-210, CXXIV 184) is this cipher or holds its code list (`keysheets.md`)
 
 ALREADY TRIED (from NOTES.md, "## Escalation")
   [x] siblings: LXXII 170 (glossed) used as key source; LXXII 169, 171 and CXXXVII 251, 253 opened (171 is another system)
   [x] clear-pages: none filed with 142 or 252; the 142 verso is the endorsement only
-  [x] known-keys: siena11 (Acciaiuoli, Rome 1478) compared, a different system; MAP LXXII 178-188 key sheets use other signs
+  [x] known-keys: siena11 (Acciaiuoli, Rome 1478) compared, a different system; every Medici key sheet of the period checked (MAP LXXII 178-189 bis, CXIX 115-127 and others, `keysheets.md`): none is this cipher
   [x] print: Lorenzo de' Medici, Lettere II-IV searched for the shelfmarks (Chrome passes c32, c33): no citation; web search for Mazzinghi and the Pistoiese plot found nothing
   [x] key-rebuild: hard-EM on the gloss pairs (build_key.py), LM fill (refine.py), context fixes, image recheck (recheck.tsv)
   [x] retry: every unread word retried with look-alike variants against a period word list (variants.py)
@@ -121,8 +121,8 @@ If you cannot open issues or pull requests, write this report for your human to 
 
 <h2>Open gaps</h2>
 <p><span class="gap w">gold</span> can be done now: the images and the key are online, it needs only work. <span class="gap">grey</span> needs a new source first: a key, a better scan, an edition or the archive.</p>
-<ul class="gaplist"><li><span class="gap">hard to read on the scan</span> 92 cipher words (394 signs) that do not decode to sense, listed in `measure.py` (UNREAD) - blocker: illegible; signs are 8-14 px at the ASF server's maximum (1272 px), rechecked at 5-6x (`recheck.tsv`) and tried against look-alike variants (`variants.py`); no higher-resolution image online</li><li><span class="gap w">code groups open</span> code numerals 10, 30, 40, 51, 231, 10/3 and the recurring group OLDP/DLDP/EDP - blocker: open-codes; only 12 = Zanobi is glossed in LXXII 170 (10 perhaps "lo Duca di Calabria"), no code list for this cipher found</li></ul>
-<h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> LXXII 170 (glossed) used as key source; LXXII 169, 171 and CXXXVII 251, 253 opened (171 is another system)</li><li>&#9745; <b>clear-pages</b> none filed with 142 or 252; the 142 verso is the endorsement only</li><li>&#9745; <b>known-keys</b> siena11 (Acciaiuoli, Rome 1478) compared, a different system; MAP LXXII 178-188 key sheets use other signs</li><li>&#9745; <b>print</b> Lorenzo de' Medici, Lettere II-IV searched for the shelfmarks (Chrome passes c32, c33): no citation; web search for Mazzinghi and the Pistoiese plot found nothing</li><li>&#9745; <b>key-rebuild</b> hard-EM on the gloss pairs (build_key.py), LM fill (refine.py), context fixes, image recheck (recheck.tsv)</li><li>&#9745; <b>retry</b> every unread word retried with look-alike variants against a period word list (variants.py)</li></ul>
+<ul class="gaplist"><li><span class="gap">hard to read on the scan</span> 92 cipher words (394 signs) that do not decode to sense, listed in `measure.py` (UNREAD) - blocker: illegible; signs are 8-14 px at the ASF server's maximum (1272 px), rechecked at 5-6x (`recheck.tsv`) and tried against look-alike variants (`variants.py`); no higher-resolution image online</li><li><span class="gap">no key known</span> code numerals 10, 30, 40, 51, 231, 10/3 and the recurring group OLDP/DLDP/EDP - blocker: no-key-material; only 12 = Zanobi is glossed in LXXII 170, and the gloss over 10 reads "Duca" plus an illegible word (re-read at 6x, 6 Nov: "nostro"?, not "di Calabria"); none of the Medici key sheets of 1472-1494 (MAP LXXII 178-189 bis, CXIX 115-127, LXXII 172, 209-210, CXXIV 184) is this cipher or holds its code list (`keysheets.md`)</li></ul>
+<h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> LXXII 170 (glossed) used as key source; LXXII 169, 171 and CXXXVII 251, 253 opened (171 is another system)</li><li>&#9745; <b>clear-pages</b> none filed with 142 or 252; the 142 verso is the endorsement only</li><li>&#9745; <b>known-keys</b> siena11 (Acciaiuoli, Rome 1478) compared, a different system; every Medici key sheet of the period checked (MAP LXXII 178-189 bis, CXIX 115-127 and others, `keysheets.md`): none is this cipher</li><li>&#9745; <b>print</b> Lorenzo de' Medici, Lettere II-IV searched for the shelfmarks (Chrome passes c32, c33): no citation; web search for Mazzinghi and the Pistoiese plot found nothing</li><li>&#9745; <b>key-rebuild</b> hard-EM on the gloss pairs (build_key.py), LM fill (refine.py), context fixes, image recheck (recheck.tsv)</li><li>&#9745; <b>retry</b> every unread word retried with look-alike variants against a period word list (variants.py)</li></ul>
 
 
 <h2>Send a result</h2>

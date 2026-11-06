@@ -103,7 +103,7 @@
 <h2 id="uncertain"><span class="num">04</span> What remains uncertain</h2>
 <ul>
 <li>92 cipher words (394 signs) do not decode to sense. The signs are 8&ndash;14 pixels high at the viewer&rsquo;s maximum (1,272 px wide); they were rechecked at five to six times magnification and tried against look-alike variants, and no higher-resolution image is online.</li>
-<li>The code numerals 10, 30, 40, 51, 231 and 10/3, and the recurring group OLDP, DLDP or EDP, are open. Only 12 = Zanobi is glossed in the sibling (10 is perhaps &ldquo;lo Duca di Calabria&rdquo;, uncertain), and no code list for this cipher was found. If 30 is Lorenzo, the letter warns of a murder plot nine months after the conspiracy; that is not claimed.</li>
+<li>The code numerals 10, 30, 40, 51, 231 and 10/3, and the recurring group OLDP, DLDP or EDP, are open. Only 12 = Zanobi is glossed in the sibling; its gloss over 10 reads &ldquo;Duca&rdquo; and an illegible word, so 10 is a duke, which one is open. None of the Medici key sheets of 1472&ndash;1494 is this cipher (MAP LXXII 178&ndash;189 bis, CXIX 115&ndash;127), and no code list for this cipher was found. If 30 is Lorenzo, the letter warns of a murder plot nine months after the conspiracy; that is not claimed.</li>
 <li>The two independent drafts differ in places: &ldquo;abbiatevi&rdquo; against &ldquo;aiutatevi&rdquo;, &ldquo;rine&rdquo; against &ldquo;fine vostra&rdquo;, &ldquo;accennando la&hellip;&rdquo; against &ldquo;dannando la croce&rdquo;. They are to be settled against the image.</li>
 <li>Lorenzo de&rsquo; Medici&rsquo;s <em>Lettere</em> II and III do not cite either shelfmark; volume IV was searched for another letter only, so the check is to be repeated for these two. DECODE has no MAP records.</li>
 <li>No human has checked the transcription against the images; the images are not reproduced.</li>
@@ -137,8 +137,8 @@ Key rebuilt from the contemporary interlinear decipherment of the sibling MAP LX
 completed by context and a 5-gram model (`refine.py`, `key_refined.tsv`), applied to the transcriptions `t252.tsv`
 and `t142.tsv` after a sign-by-sign recheck of doubtful words at 5-6x (`recheck.tsv`). Raw decodes: `draft252.txt`,
 `draft142.txt` (cipher words in capitals). Below, the cipher words are given in normal spelling, clear words in
-*italics* where they matter, `[…]` = cipher word not read, `[10]` = code numeral (persons; 10 is glossed &quot;lo Duca di
-Calabria&quot; in LXXII 170, 12 is glossed &quot;Zanobi&quot;; 30, 40, 51, 231 not identified), `?` = doubtful word.
+*italics* where they matter, `[…]` = cipher word not read, `[10]` = code numeral (persons; 10 is glossed &quot;Duca&quot; plus an
+illegible word in LXXII 170, 12 is glossed &quot;Zanobi&quot;; 30, 40, 51, 231 not identified), `?` = doubtful word.
 Measured (`measure.py`): 252: 72 of 121 cipher words, 371 of 581 signs read (63.9%); 142: 166 of 209 cipher words,
 882 of 1,066 signs (82.7%); together 1,253 of 1,647 signs (76.1%).
 
@@ -203,9 +203,9 @@ Castello has come and has become very bold; two men in disguise; the Lucchese am
   decoded and not interpreted further here.
 - Code 30: the letter warns the recipients (&quot;la fine vostra&quot;, &quot;sopra a voi&quot;); 30 is most likely Lorenzo de&#x27; Medici
   or one of the household, but the code is not identified from any source.
-- Code 10: the sibling&#x27;s gloss over the same numeral reads like &quot;lo Duca di Calabria&quot; (Alfonso of Aragon, commander
-  against Florence in the Pazzi War), uncertain; in 252 and 142 the duke&#x27;s role fits only in part (a letter presented
-  to [10]; [10] trusts Mazzinghi), so the identification is left open.
+- Code 10: the sibling&#x27;s gloss over the same numeral reads &quot;Duca&quot; followed by an illegible word (re-read at 6x on
+  6 Nov 2026: perhaps &quot;nostro&quot;; &quot;di Calabria&quot; is not supported). Which duke is left open; none of the Medici key
+  sheets of the period is this cipher (keysheets.md).
 - OLDP / DLDP / EDP (five times) behave like a code group for a person (perhaps &quot;il papa&quot; or a cardinal); not read.</pre></details>
 <details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mazzinghi1478/reading.md">reading.md</a></p><pre translate="no"># Reading of MAP CXXXVII 252 and LXXXIX 142 (January 1478 st. fior. = 1479)
 
@@ -213,8 +213,8 @@ Key rebuilt from the contemporary interlinear decipherment of the sibling MAP LX
 completed by context and a 5-gram model (`refine.py`, `key_refined.tsv`), applied to the transcriptions `t252.tsv`
 and `t142.tsv` after a sign-by-sign recheck of doubtful words at 5-6x (`recheck.tsv`). Raw decodes: `draft252.txt`,
 `draft142.txt` (cipher words in capitals). Below, the cipher words are given in normal spelling, clear words in
-*italics* where they matter, `[…]` = cipher word not read, `[10]` = code numeral (persons; 10 is glossed &quot;lo Duca di
-Calabria&quot; in LXXII 170, 12 is glossed &quot;Zanobi&quot;; 30, 40, 51, 231 not identified), `?` = doubtful word.
+*italics* where they matter, `[…]` = cipher word not read, `[10]` = code numeral (persons; 10 is glossed &quot;Duca&quot; plus an
+illegible word in LXXII 170, 12 is glossed &quot;Zanobi&quot;; 30, 40, 51, 231 not identified), `?` = doubtful word.
 Measured (`measure.py`): 252: 72 of 121 cipher words, 371 of 581 signs read (63.9%); 142: 166 of 209 cipher words,
 882 of 1,066 signs (82.7%); together 1,253 of 1,647 signs (76.1%).
 
@@ -279,9 +279,9 @@ Castello has come and has become very bold; two men in disguise; the Lucchese am
   decoded and not interpreted further here.
 - Code 30: the letter warns the recipients (&quot;la fine vostra&quot;, &quot;sopra a voi&quot;); 30 is most likely Lorenzo de&#x27; Medici
   or one of the household, but the code is not identified from any source.
-- Code 10: the sibling&#x27;s gloss over the same numeral reads like &quot;lo Duca di Calabria&quot; (Alfonso of Aragon, commander
-  against Florence in the Pazzi War), uncertain; in 252 and 142 the duke&#x27;s role fits only in part (a letter presented
-  to [10]; [10] trusts Mazzinghi), so the identification is left open.
+- Code 10: the sibling&#x27;s gloss over the same numeral reads &quot;Duca&quot; followed by an illegible word (re-read at 6x on
+  6 Nov 2026: perhaps &quot;nostro&quot;; &quot;di Calabria&quot; is not supported). Which duke is left open; none of the Medici key
+  sheets of the period is this cipher (keysheets.md).
 - OLDP / DLDP / EDP (five times) behave like a code group for a person (perhaps &quot;il papa&quot; or a cardinal); not read.</pre></details>
 <h3>MAP LXXXIX 142, Giovanni Mazzinghi, 16 January 1478 st. fior. (1479)</h3>
 <p>Giovanni Mazzinghi warns the Medici from Rome: a bull under lead has been published in the Chancery revoking the privileges the Church had granted, a very cruel process is being made against them, and Iacopo de&#x27; Rossi of Pistoia and another Pistoiese, Cola, are involved in a plot (&#x27;quello ordino la morte di [30]&#x27;, &#x27;ogni cosa fanno per la vostra fine&#x27;). Nine months after the Pazzi conspiracy, during the war and the interdict.</p>
@@ -331,8 +331,8 @@ Key rebuilt from the contemporary interlinear decipherment of the sibling MAP LX
 completed by context and a 5-gram model (`refine.py`, `key_refined.tsv`), applied to the transcriptions `t252.tsv`
 and `t142.tsv` after a sign-by-sign recheck of doubtful words at 5-6x (`recheck.tsv`). Raw decodes: `draft252.txt`,
 `draft142.txt` (cipher words in capitals). Below, the cipher words are given in normal spelling, clear words in
-*italics* where they matter, `[…]` = cipher word not read, `[10]` = code numeral (persons; 10 is glossed &quot;lo Duca di
-Calabria&quot; in LXXII 170, 12 is glossed &quot;Zanobi&quot;; 30, 40, 51, 231 not identified), `?` = doubtful word.
+*italics* where they matter, `[…]` = cipher word not read, `[10]` = code numeral (persons; 10 is glossed &quot;Duca&quot; plus an
+illegible word in LXXII 170, 12 is glossed &quot;Zanobi&quot;; 30, 40, 51, 231 not identified), `?` = doubtful word.
 Measured (`measure.py`): 252: 72 of 121 cipher words, 371 of 581 signs read (63.9%); 142: 166 of 209 cipher words,
 882 of 1,066 signs (82.7%); together 1,253 of 1,647 signs (76.1%).
 
@@ -397,9 +397,9 @@ Castello has come and has become very bold; two men in disguise; the Lucchese am
   decoded and not interpreted further here.
 - Code 30: the letter warns the recipients (&quot;la fine vostra&quot;, &quot;sopra a voi&quot;); 30 is most likely Lorenzo de&#x27; Medici
   or one of the household, but the code is not identified from any source.
-- Code 10: the sibling&#x27;s gloss over the same numeral reads like &quot;lo Duca di Calabria&quot; (Alfonso of Aragon, commander
-  against Florence in the Pazzi War), uncertain; in 252 and 142 the duke&#x27;s role fits only in part (a letter presented
-  to [10]; [10] trusts Mazzinghi), so the identification is left open.
+- Code 10: the sibling&#x27;s gloss over the same numeral reads &quot;Duca&quot; followed by an illegible word (re-read at 6x on
+  6 Nov 2026: perhaps &quot;nostro&quot;; &quot;di Calabria&quot; is not supported). Which duke is left open; none of the Medici key
+  sheets of the period is this cipher (keysheets.md).
 - OLDP / DLDP / EDP (five times) behave like a code group for a person (perhaps &quot;il papa&quot; or a cardinal); not read.</pre></details>
 <details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mazzinghi1478/reading.md">reading.md</a></p><pre translate="no"># Reading of MAP CXXXVII 252 and LXXXIX 142 (January 1478 st. fior. = 1479)
 
@@ -407,8 +407,8 @@ Key rebuilt from the contemporary interlinear decipherment of the sibling MAP LX
 completed by context and a 5-gram model (`refine.py`, `key_refined.tsv`), applied to the transcriptions `t252.tsv`
 and `t142.tsv` after a sign-by-sign recheck of doubtful words at 5-6x (`recheck.tsv`). Raw decodes: `draft252.txt`,
 `draft142.txt` (cipher words in capitals). Below, the cipher words are given in normal spelling, clear words in
-*italics* where they matter, `[…]` = cipher word not read, `[10]` = code numeral (persons; 10 is glossed &quot;lo Duca di
-Calabria&quot; in LXXII 170, 12 is glossed &quot;Zanobi&quot;; 30, 40, 51, 231 not identified), `?` = doubtful word.
+*italics* where they matter, `[…]` = cipher word not read, `[10]` = code numeral (persons; 10 is glossed &quot;Duca&quot; plus an
+illegible word in LXXII 170, 12 is glossed &quot;Zanobi&quot;; 30, 40, 51, 231 not identified), `?` = doubtful word.
 Measured (`measure.py`): 252: 72 of 121 cipher words, 371 of 581 signs read (63.9%); 142: 166 of 209 cipher words,
 882 of 1,066 signs (82.7%); together 1,253 of 1,647 signs (76.1%).
 
@@ -473,9 +473,9 @@ Castello has come and has become very bold; two men in disguise; the Lucchese am
   decoded and not interpreted further here.
 - Code 30: the letter warns the recipients (&quot;la fine vostra&quot;, &quot;sopra a voi&quot;); 30 is most likely Lorenzo de&#x27; Medici
   or one of the household, but the code is not identified from any source.
-- Code 10: the sibling&#x27;s gloss over the same numeral reads like &quot;lo Duca di Calabria&quot; (Alfonso of Aragon, commander
-  against Florence in the Pazzi War), uncertain; in 252 and 142 the duke&#x27;s role fits only in part (a letter presented
-  to [10]; [10] trusts Mazzinghi), so the identification is left open.
+- Code 10: the sibling&#x27;s gloss over the same numeral reads &quot;Duca&quot; followed by an illegible word (re-read at 6x on
+  6 Nov 2026: perhaps &quot;nostro&quot;; &quot;di Calabria&quot; is not supported). Which duke is left open; none of the Medici key
+  sheets of the period is this cipher (keysheets.md).
 - OLDP / DLDP / EDP (five times) behave like a code group for a person (perhaps &quot;il papa&quot; or a cardinal); not read.</pre></details>
 <p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mazzinghi1478/key_refined.tsv">key_refined.tsv</a></p>
 <!-- texts:end -->
