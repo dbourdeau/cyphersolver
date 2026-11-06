@@ -172,6 +172,35 @@ document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent)
   cards.forEach(c=>{ const p=c.querySelector('.tg-b p'); if(!p) return; const t=document.createElement('div'); t.className='tgmore'; t.textContent='more'; p.after(t);
     const toggle=()=>{ const on=c.classList.toggle('x'); t.textContent=on?'less':'more'; }; p.addEventListener('click',toggle); t.addEventListener('click',toggle); });
 })();
+// phones: the dropdowns of a .cfilters bar (catalogue, write-ups) fold into one full-screen "Filters" sheet, one section
+// each, with a button that shows how many results the choices leave. On wider screens the wrapper is display:contents and
+// nothing changes. The pages' own scripts keep reading and writing the chips and details.dd exactly as before.
+(function(){
+  const bar=document.querySelector('.cfilters'); if(!bar) return;
+  const dds=[...bar.querySelectorAll('details.dd')]; if(!dds.length) return;
+  const anchor=bar.querySelector('input[type=search]')||dds[0], cnt=bar.querySelector('.count'), reset=bar.querySelector('#reset')||bar.querySelector('#wreset');
+  const sheet=document.createElement('div'); sheet.className='fsheet'; sheet.setAttribute('role','dialog'); sheet.setAttribute('aria-modal','true'); sheet.setAttribute('aria-label','Filters');
+  sheet.innerHTML='<div class="fs-hd"><b>Filters</b><button type="button" class="fs-clear">Clear all</button><button type="button" class="fs-x" aria-label="Close filters">&times;</button></div>'
+    +'<div class="fs-body"></div><div class="fs-ft"><button type="button" class="fs-go">Show results</button></div>';
+  const body=sheet.querySelector('.fs-body'), go=sheet.querySelector('.fs-go'), x=sheet.querySelector('.fs-x'), clear=sheet.querySelector('.fs-clear');
+  dds[0].before(sheet); dds.forEach(d=>body.appendChild(d));
+  const t=document.createElement('button'); t.type='button'; t.id='ftoggle'; t.className='chip'; t.setAttribute('aria-expanded','false'); t.setAttribute('aria-haspopup','dialog');
+  anchor.after(t);
+  const phone=matchMedia('(max-width:760px)');
+  const label=()=>{ const n=sheet.querySelectorAll('.chip[aria-pressed=true]').length;
+    t.textContent='Filters'+(n?' ('+n+')':''); t.classList.toggle('on',n>0); clear.hidden=!n;
+    const c=cnt?cnt.textContent.replace(/^All /,'').trim():''; go.textContent=c?'Show '+c:'Show results'; };
+  const open=on=>{ bar.classList.toggle('fopen',on); t.setAttribute('aria-expanded',on?'true':'false'); document.documentElement.classList.toggle('fs-lock',on);
+    if(on){ label(); x.focus(); } else { dds.forEach(d=>{ d.open=false; }); t.focus(); } };
+  t.addEventListener('click',()=>open(!bar.classList.contains('fopen')));
+  x.addEventListener('click',()=>open(false)); go.addEventListener('click',()=>open(false));
+  clear.addEventListener('click',()=>{ if(reset) reset.click(); });
+  document.addEventListener('keydown',ev=>{ if(ev.key==='Escape'&&bar.classList.contains('fopen')) open(false); });
+  phone.addEventListener('change',()=>{ if(!phone.matches&&bar.classList.contains('fopen')) open(false); });
+  const mo=new MutationObserver(label); mo.observe(sheet,{subtree:true,attributes:true,attributeFilter:['aria-pressed']});
+  if(cnt) mo.observe(cnt,{childList:true,characterData:true,subtree:true});
+  label();
+})();
 // write-ups index: method / extent / language / century / where dropdowns, text search, state in the hash
 // (writeups.html#kind=ct&q=rome). Same toolbar as catalogue.html: each chip counts the entries it would show given
 // every other facet and the search, empty chips dim, each dropdown button names what is chosen in it.
@@ -185,7 +214,7 @@ document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent)
   dds.forEach(d=>d.addEventListener('toggle',()=>{ if(!d.open) return; dds.forEach(o=>{ if(o!==d) o.open=false; });
     const p=d.querySelector('.pop'); p.style.left=''; p.style.right='';
     if(p.getBoundingClientRect().right>document.documentElement.clientWidth-8){ p.style.left='auto'; p.style.right='0'; } }));
-  document.addEventListener('click',ev=>{ if(!ev.target.closest('.cfilters details.dd')) dds.forEach(d=>d.open=false); });
+  document.addEventListener('click',ev=>{ if(!ev.target.closest('.cfilters details.dd,.fsheet')) dds.forEach(d=>d.open=false); });
   document.addEventListener('keydown',ev=>{ if(ev.key==='Escape') dds.forEach(d=>{ if(d.open){ d.open=false; d.querySelector('summary').focus(); } }); });
   function parse(){
     state.f={}; state.q='';
@@ -206,7 +235,7 @@ document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent)
     chips.forEach(b=>{ const on=(state.f[b.dataset.facet]||[]).includes(b.dataset.val), x=c[b.dataset.facet+'|'+b.dataset.val]||0;
       b.setAttribute('aria-pressed',on?'true':'false'); b.querySelector('.n').textContent=x; b.classList.toggle('z',!x&&!on); });
     dds.forEach(d=>{ const k=d.dataset.dd, on=(state.f[k]||[]).map(v=>{ const b=d.querySelector(`.chip[data-facet="${k}"][data-val="${CSS.escape(v)}"]`); return b?b.firstChild.textContent:v; });
-      d.querySelector('.dv').textContent=on.length?': '+(on.length>2?on.length+' chosen':on.join(', ')):''; d.classList.toggle('act',on.length>0); });
+      d.querySelector('.dv').textContent=on.length?(on.length>2?on.length+' chosen':on.join(', ')):''; d.classList.toggle('act',on.length>0); });
     count.textContent = n===items.length ? 'All '+n+' entries' : n+' of '+items.length+' entries';
     if((state.f.by||[]).length){ let nm={}; try{ nm=JSON.parse(count.dataset.names||'{}'); }catch(e){}
       count.textContent += ', credited to '+state.f.by.map(v=>nm[v]||v).join(' or '); }

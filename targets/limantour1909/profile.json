@@ -110,7 +110,7 @@
   "types": [
    "unknown"
   ],
-  "summary": "A numerical substitution (code numbers to letters) proposed by the contributor: 28 independently supported number-to-letter values and one provisional value (60 = Y). Not examined by the project.",
+  "summary": "A numerical substitution (code numbers to letters) proposed by the contributor: 28 independently supported number-to-letter values and one provisional value (60 = Y, later counted by the project as the 29th). Checked by the project on the CEHM images.",
   "symbol_kind": "digits",
   "distinct_symbols": "unknown",
   "diacritics": {
@@ -167,6 +167,18 @@
    "kind": "verification",
    "what": "Alberto Garvía García sent four CEHM viewer screenshots privately. An AI model read the seven control sequences and the 77 groups of the letter of 15 July on them: all numbers and plaintexts agree with the evidence file; the strict count stays 28, with no number mapped to two letters. With the same table the letter decodes to running Spanish (enemigo, te pronuncies, temor, calma y prudencia, oficios, clubs, Guadalajara) and the 29 July note to LIMANTOUR. Images are private and not in the repository (VERIFICATION.md).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "verification",
+   "what": "Alberto Garvía García sent a second set of four clearer CEHM screenshots (1920 x 1080, from a computer), again private. An AI model re-read the controls, the letter and the 29 July note on them: all agree with the earlier check; the character after 77 is a typed s, not an e; the 29 July sequence reads 24 46 42 1 31 (CREEL); the group 28 23 24 54 2 is printed as given. The contributor reads that group as n-d-o-s-e (quejándose) with 24 as a slip for an o code, and compares the 48 in situación; the project records it as tentative, because it assumes one error (VERIFICATION.md section 5).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "verification",
+   "what": "The contributor asked to count 60 = Y. On the clearer image of the telegram of 23 July the sequence 15 60 17 is legible beside the typed 'vaya' (the 58 is under the watermark); 15 and 17 are a in the strict count, so 60 = y. Counted as the 29th strict value, one occurrence like 7 = z and 13 = b (VERIFICATION.md section 6). The contributor's packet still says 28.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -198,29 +210,30 @@
   ],
   "gaps": [
    {
-    "item": "segment C of the letter (28 23 24 54 2, n-d-c-s-e) and the special codes 79 and 77",
+    "item": "the special codes 79 and 77",
     "blocker": "open-codes",
     "detail": "each occurs once in the letter; 79 is faintly aligned to \"Sr. Presidente\" in the 15 July telegram"
    },
    {
+    "item": "segment C (28 23 24 54 2) read as quejándose only by assuming 24 is a slip for an o code",
+    "blocker": "needs-physical-access",
+    "detail": "the contributor's proposal; the original must show whether a number was corrected or mistyped; the same kind of slip as 48 for an o code in situación"
+   },
+   {
     "item": "the 29 July note: the second name (24 46 42 1 31, CREEL?) and the faint handwritten plaintext above the cipher",
     "blocker": "illegible",
-    "detail": "46 and 42 rest on one word; the screenshots are of modest resolution"
+    "detail": "46 and 42 rest on one word; the handwriting above the cipher is faint even on the clearer images"
    },
    {
-    "item": "the character after 77 in the letter (an e or a on the image, s in the contributor's file)",
-    "blocker": "illegible"
-   },
-   {
-    "item": "the numbers were checked on phone screenshots by an AI reader only; a human check on the CEHM originals is still wanted",
+    "item": "the numbers were checked on screenshots (phone, then a clearer set from a computer) by an AI reader only; a human check on the CEHM originals is still wanted",
     "blocker": "needs-physical-access",
     "detail": "the screenshots are private and not redistributable; cehm.org.mx is not reachable from the project environment"
    }
   ],
-  "notes": "Key proposed by Alberto Garvía García (28 strict values, 60 = Y provisional), checked against the CEHM images by an AI reader on 6 Nov 2026 (VERIFICATION.md). Read in part: the letter of 15 July and the names in the note of 29 July.",
-  "fraction_read": 0.888,
+  "notes": "Key proposed by Alberto Garvía García (28 strict values in his count; the project counts 60 = Y too, 29), checked against the CEHM images by an AI reader on 6 Nov 2026 (VERIFICATION.md). Read in part: the letter of 15 July (segment C tentative) and the names in the note of 29 July.",
+  "fraction_read": 0.944,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Counted by hand from key.tsv and the decryption files: letter of 15 July 70 of 75 alphabetic groups read as letters of words (the 5 groups of segment C and the codes 79 and 77 are not read) and the note of 29 July 9 of 14 (LIMANTOUR; the second name, 5 groups, is tentative and not counted): 79 of 89 = 88.8%. The control telegrams are not counted.",
+  "fraction_read_source": "Counted by hand from key.tsv and the decryption files: letter of 15 July 75 of 75 alphabetic groups read as letters of words (two of them, 24 in quejándose and 48 in situación, only by assuming a one-number slip; the codes 79 and 77 are not read) and the note of 29 July 9 of 14 (LIMANTOUR; the second name, 5 groups, is tentative and not counted): 84 of 89 = 94.4%. The control telegrams are not counted.",
   "key_file": "key.tsv",
   "texts": [
    {
@@ -234,13 +247,13 @@
     "translation": "translation.md",
     "language": "es",
     "state": "read in part",
-    "read_share": 0.933,
-    "summary": "A friend of General Reyes, then governor of Nuevo León, warns him in July 1909 that the President speaks of him as an enemy and urges him not to declare himself at once, to keep calm and be prudent and to look after his health; other clubs of Guadalajara will write; he sends a pleading message the same day.",
+    "read_share": 1.0,
+    "summary": "A friend of General Reyes, then governor of Nuevo León, warns him in July 1909 that the President speaks of him as an enemy and urges him not to declare himself at once, to keep calm and be prudent and to look after his health; other clubs of Guadalajara will write; he sends a pleading message the same day; the one complaint is quejándose (tentative).",
     "reading_review": {
      "grade": "B",
      "by": "Claude (for the project)",
      "date": "2026-11-06",
-     "note": "Read the decryption as Spanish sentences: enemigo, te pronuncies, temor, situación, calma, prudencia, oficios, clubs, Guadalajara form coherent clauses; five groups, two codes and one name are open."
+     "note": "Read the decryption as Spanish sentences: enemigo, quejándose (24 as a slip for an o code, tentative), te pronuncies, temor, situación, calma, prudencia, oficios, clubs, Guadalajara form coherent clauses; two codes and one name are open."
     }
    },
    {

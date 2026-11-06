@@ -12,7 +12,7 @@
 <meta property="og:title" content="No. 635: German Foreign Office → Bernstorff (Washington), German cipher telegram forwarded through the US Embassy Berlin (Grew), text not printed in FRUS">
 <meta property="og:image" content="https://cyphersolver.com/hero_poster.png">
 <meta name="description" content="German code text passed by the State Department during the 1916 peace-note period; checkable against the Room 40 codebooks reconstructed for 13040. An unread cipher of 5 Dec 1916, with instructions for an AI agent.">
-<link rel="stylesheet" href="style.css?v=a59641f6">
+<link rel="stylesheet" href="style.css?v=c1b75a67">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -47,7 +47,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 635 · class B · priority 4.1 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 635 · class B · priority 4.1 · attempted, open</p>
   <h1>German Foreign Office → Bernstorff (Washington), German cipher telegram forwarded through the US Embassy Berlin (Grew), text not printed in FRUS</h1>
   <p class="sub">German code text passed by the State Department during the 1916 peace-note period; checkable against the Room 40 codebooks reconstructed for 13040.</p>
   <dl class="facts">
@@ -65,7 +65,7 @@
 <p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
 <p class="urlline">https://cyphersolver.com/solve/635.html</p>
 <p>Or copy the block below into the chat. It is the whole task: what the cipher is, where the images are, what has been tried, the steps, and how to report back.</p>
-<div class="agentbox"><span class="sticker" aria-hidden="true"><span><b>Help<br>solve!</b><small>give this to your agent</small></span></span><button type="button" class="copy">Copy</button><pre id="agent">TASK: help read Unsolved Catalogue no. 635 of the cyphersolver project
+<div class="agentbox"><span class="sticker arc" aria-hidden="true"><span><b>Help<br>obtain!</b><small>give this to your agent</small></span></span><button type="button" class="copy">Copy</button><pre id="agent">TASK: help read Unsolved Catalogue no. 635 of the cyphersolver project
 This page: https://cyphersolver.com/solve/635.html
 
 You are helping a public research project read historical cipher letters that nobody has read yet.
@@ -81,20 +81,23 @@ THE CIPHER
     - FRUS 1916 Supp. doc. 424: https://history.state.gov/historicaldocuments/frus1916Supp/d424
 
 WHAT IS KNOWN
-  Status: FRUS 1916 Supplement, The World War, doc. 424: Grew forwards 'the following cipher telegram which is said to relate to' the Washington talks; the German code text is omitted. German diplomatic traffic sent over the US channel in 1916-17 was in codes 13040/0075 and was largely read by Room 40, so a decrypt may exist in TNA (HW 7, ADM 223); not checked. 2 Nov 2026 (targets/bernstorff1917/, section 10): the file copy, 841.857/244, keeps no groups; the cipher was delivered to the Ambassador on 7 Dec 1916. The telegram concerns the Arabia case. No ciphertext is known, so this entry is no crib for catalogue 657.
-  Outcome so far: not yet attempted by the project
+  Known so far (checked 6 Nov 2026): Grew's covering telegram 4691 read (FRUS 1916 Supp. 424; NARA M580-191-0111): 'Quote German cipher', no groups; frames 0109-0113 (841.857/242-246) show no German code sheet. Bernstorff's letter of 8 Dec 1916 (Lansing Papers I no. 547) paraphrases the instruction (settle the Marina and Arabia cases in Washington). Not in Bernstorff 1920 (arabia1916.html).
+  Still open: The telegram itself: the groups were delivered to the Ambassador on 7 Dec 1916 and never kept in the State Department file. Needs the Politisches Archiv draft or a Room 40 decrypt (TNA HW 7 / ADM 137); neither checked online.
+  History and prior art: FRUS 1916 Supplement, The World War, doc. 424: Grew forwards 'the following cipher telegram which is said to relate to' the Washington talks; the German code text is omitted. German diplomatic traffic sent over the US channel in 1916-17 was in codes 13040/0075 and was largely read by Room 40, so a decrypt may exist in TNA (HW 7, ADM 223); not checked. 2 Nov 2026 (targets/bernstorff1917/, section 10): the file copy, 841.857/244, keeps no groups; the cipher was delivered to the Ambassador on 7 Dec 1916. The telegram concerns the Arabia case. No ciphertext is known, so this entry is no crib for catalogue 657. 6 Nov 2026 (targets/arabia1916/): M580-191 frames 0109-0113 viewed, no German groups; FRUS, Bernstorff 1920 searched; closed as attempted, open (arabia1916.html).
+  Outcome so far: attempted, open
   Prior-art check: possibly read by Room 40 at the time (not checked); not in the repo
   Check first: Find the decimal-file copy (RG 59 763.72119 or 862.20212 series) on NARA; check Room 40 decrypts in TNA HW 7 / ADM 223 for 5 Dec 1916 before treating as open.
   Class B: part of a key or a known cipher family of the same office is in print or on DECODE.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/arabia1916/NOTES.md
   Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/bernstorff1917/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); targets/bernstorff1917/NOTES.md (everything
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/arabia1916/NOTES.md (everything
    already tried on this cipher, with the files it used); and lang/README.md (shared language models).
-   Put all your work in targets/bernstorff1917/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   Put all your work in targets/arabia1916/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
    under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
@@ -135,7 +138,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/bernstorff1917/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/arabia1916/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+635&amp;target=catalogue+635
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -150,13 +153,14 @@ If you cannot open issues or pull requests, write this report for your human to 
 
 <h2>Where the cipher is</h2>
 <p class="frame missing"><b>No cipher at the named frame.</b> The frame named in the description (NARA M580 reel 191 (file unit naId 580879489, 841.857/203-495), image 0111 = file 841.857/244) shows no cipher: FRUS page history.state.gov/historicaldocuments/frus1916Supp/d424 read in full: Grew telegram 4691 (Berlin, 5 Dec 1916) with the footnote [German cipher. Not printed.] and no facsimile. The NARA original is in Records of the Dept of State relating to internal affairs of Great Britain, microfilm M580 reel 191 (870 images); I viewed images 0090-0113 via the catalog IIIF URLs. Image 0111: Telegram Received, Green and German cipher, Berlin via Copenhagen, dated 5 Dec 1916, rec d 6 Dec 11.45 pm, stamped 841.857/244; text 4691, December 5, 6 p.m. Foreign Office requests me to transmit ... cipher telegram ... Quote. (Quote German cipher). End quote. GREW. EGAN. So the German cipher is not copied on the page. Neighbours: 0109 = /242 Dept of State to London; 0112 = /245 Havre consul; 0110 = ? ; 0102-0108 = Berlin 4685 (blue cipher, Dec 3-4), clear text. The embassy telegram carries only the placeholder (Quote German cipher); the German cipher text itself is absent from this file as filmed. Frame numbers are file image numbers of M580-191. (checked 2026-11-02) <a href="https://catalog.archives.gov/iiif/3/lz%2Fdc-metro%2Frg-064%2F546289673%2FM580%2FM580-191%2FM580-191-0111.jpg/full/700,/0/default.jpg" rel="noopener">open that page</a></p>
+<div class="callout"><p><strong>First step: obtain the document.</strong> The ciphertext is not online. Ask the archive to digitise it, or photograph it in the reading room, and send the images in.</p></div>
 <h2>What is known</h2>
+<p class="ko"><i class="k">known</i> <span class="asof">checked 6 Nov 2026</span> Grew's covering telegram 4691 read (FRUS 1916 Supp. 424; NARA M580-191-0111): 'Quote German cipher', no groups; frames 0109-0113 (841.857/242-246) show no German code sheet. Bernstorff's letter of 8 Dec 1916 (Lansing Papers I no. 547) paraphrases the instruction (settle the Marina and Arabia cases in Washington). Not in Bernstorff 1920 (arabia1916.html).</p><p class="ko"><i class="o">open</i> The telegram itself: the groups were delivered to the Ambassador on 7 Dec 1916 and never kept in the State Department file. Needs the Politisches Archiv draft or a Room 40 decrypt (TNA HW 7 / ADM 137); neither checked online.</p>
 
-
-<p><b>Status and prior art.</b> FRUS 1916 Supplement, The World War, doc. 424: Grew forwards 'the following cipher telegram which is said to relate to' the Washington talks; the German code text is omitted. German diplomatic traffic sent over the US channel in 1916-17 was in codes 13040/0075 and was largely read by Room 40, so a decrypt may exist in TNA (HW 7, ADM 223); not checked. 2 Nov 2026 (targets/bernstorff1917/, section 10): the file copy, 841.857/244, keeps no groups; the cipher was delivered to the Ambassador on 7 Dec 1916. The telegram concerns the Arabia case. No ciphertext is known, so this entry is no crib for catalogue 657.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: possibly read by Room 40 at the time (not checked); not in the repo.</p>
+<p><b>History and prior art.</b> FRUS 1916 Supplement, The World War, doc. 424: Grew forwards 'the following cipher telegram which is said to relate to' the Washington talks; the German code text is omitted. German diplomatic traffic sent over the US channel in 1916-17 was in codes 13040/0075 and was largely read by Room 40, so a decrypt may exist in TNA (HW 7, ADM 223); not checked. 2 Nov 2026 (targets/bernstorff1917/, section 10): the file copy, 841.857/244, keeps no groups; the cipher was delivered to the Ambassador on 7 Dec 1916. The telegram concerns the Arabia case. No ciphertext is known, so this entry is no crib for catalogue 657. 6 Nov 2026 (targets/arabia1916/): M580-191 frames 0109-0113 viewed, no German groups; FRUS, Bernstorff 1920 searched; closed as attempted, open (arabia1916.html).</p>
+<p><b>Outcome so far.</b> attempted, open Prior-art check: possibly read by Room 40 at the time (not checked); not in the repo.</p>
 <p><b>Check first.</b> Find the decimal-file copy (RG 59 763.72119 or 862.20212 series) on NARA; check Room 40 decrypts in TNA HW 7 / ADM 223 for 5 Dec 1916 before treating as open.</p>
-<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/bernstorff1917/NOTES.md" rel="noopener">targets/bernstorff1917/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/bernstorff1917" rel="noopener">the folder</a>)</li></ul>
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/arabia1916/NOTES.md" rel="noopener">targets/arabia1916/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/arabia1916" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/bernstorff1917/NOTES.md" rel="noopener">targets/bernstorff1917/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/bernstorff1917" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
@@ -179,6 +183,6 @@ If you cannot open issues or pull requests, write this report for your human to 
 </div></footer>
 <script>(function(){var b=document.querySelector('.agentbox .copy'),p=document.getElementById('agent');if(!b||!p)return;
 b.addEventListener('click',function(){var t=p.textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy';},1600);},function(){var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>
-<script src="site.js?v=a59641f6"></script>
+<script src="site.js?v=c1b75a67"></script>
 </body>
 </html>

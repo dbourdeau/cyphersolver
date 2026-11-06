@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <base href="../">
 <title>López Portillo y Rojas to General Bernardo Reyes, July 1909 — read it further</title>
-<meta name="description" content="A cipher read in part (88.8%), with its open gaps and instructions for an AI agent to take it further.">
-<link rel="stylesheet" href="style.css?v=a59641f6">
+<meta name="description" content="A cipher read in part (94.4%), with its open gaps and instructions for an AI agent to take it further.">
+<link rel="stylesheet" href="style.css?v=c1b75a67">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -41,15 +41,15 @@
 </div>
 
 <section class="hero">
-  <p class="kicker"><a href="further.html">Read further</a> · read 88.8% · key from adjacent plaintext &middot; partial</p>
+  <p class="kicker"><a href="further.html">Read further</a> · read 94.4% · key from adjacent plaintext &middot; partial</p>
   <h1>L&oacute;pez Portillo y Rojas to General Bernardo Reyes, July 1909</h1>
   <p class="sub">A cipher letter from a friend of General Reyes, governor of Nuevo Le&oacute;n, at the moment he was being pushed aside before the 1910 election. Alberto Garv&iacute;a Garc&iacute;a found the numerical key from two telegrams with plaintext (28 values), checked here on the images: the letter reads as Spanish (enemigo, te pronuncies, temor, calma y prudencia, clubs de Guadalajara) and the note of 29 July names Limantour. 88.8% of the groups read.</p>
   <dl class="facts">
     <dt>Date</dt><dd>1909</dd>
-    <dt>Read now</dt><dd>88.8% of the cipher tokens give sense</dd>
+    <dt>Read now</dt><dd>94.4% of the cipher tokens give sense</dd>
     <dt>Write-up</dt><dd><a href="limantour1909.html">limantour1909.html</a></dd>
     <dt>Files</dt><dd><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/limantour1909" rel="noopener">targets/limantour1909</a></dd>
-    <dt>Open gaps</dt><dd><span class="gap w">code groups open</span><span class="gap">hard to read on the scan ×2</span><span class="gap">needs the archive</span></dd>
+    <dt>Open gaps</dt><dd><span class="gap w">code groups open</span><span class="gap">needs the archive ×2</span><span class="gap">hard to read on the scan</span></dd>
   </dl>
 </section>
 
@@ -68,13 +68,13 @@ THE READING
   Write-up:   https://dbourdeau.github.io/cyphersolver/limantour1909.html (read it first: how the text was read, the key, the reading)
   Date:       1909
   Outcome:    key from adjacent plaintext · partial
-  Read now:   88.8% of the deciphered cipher tokens give sense (pieces below may be untouched)
+  Read now:   94.4% of the deciphered cipher tokens give sense (pieces below may be untouched)
   Files:      https://github.com/dbourdeau/cyphersolver/tree/main/targets/limantour1909 (NOTES.md, key, transcription, reading, scripts)
 
 OPEN GAPS (from NOTES.md, "## Remaining gaps")
-  1. [open-codes: doable now] Segment C of the letter (28 23 24 54 2) and the special codes 79 and 77 - blocker: open-codes; each occurs once, no context narrows them (79 is faintly aligned to "Sr. Presidente" in the 15 July telegram)
-  2. [illegible: needs a new source] The second name in the 29 July note (24 46 42 1 31, CREEL?) and the faint handwritten plaintext above it - blocker: illegible; 46 and 42 rest on one word, screenshots of modest resolution
-  3. [illegible: needs a new source] The character after 77 (e or a on the image, s in the contributor's file) - blocker: illegible; one typed character
+  1. [open-codes: doable now] The special codes 79 and 77 - blocker: open-codes; each occurs once, no context narrows them (79 is faintly aligned to "Sr. Presidente" in the 15 July telegram)
+  2. [needs-physical-access: needs a new source] Segment C (28 23 24 54 2) is read as quejándose only by assuming 24 is a slip for an o code (contributor's proposal) - blocker: needs-physical-access; the original must show whether a number was corrected or mistyped
+  3. [illegible: needs a new source] The second name in the 29 July note (24 46 42 1 31, CREEL?) and the faint handwritten plaintext above it - blocker: illegible; 46 and 42 rest on one word; the handwriting above the cipher is faint even on the clearer images
   4. [needs-physical-access: needs a new source] A check on the CEHM originals by a human - blocker: needs-physical-access; the screenshots are private and cehm.org.mx is not reachable from the project environment
 
 ALREADY TRIED (from NOTES.md, "## Escalation")
@@ -82,8 +82,8 @@ ALREADY TRIED (from NOTES.md, "## Escalation")
   [x] clear-pages: the typed plaintext below the 23 July telegram and the typed line on the 29 July note checked; neither is a decipherment of the letter
   [x] known-keys: the contributor's structural comparison with a 1895 key sheet (not seen by the project); no other key for this correspondence known
   [x] print: the contributor's Zenodo report (doi 10.5281/zenodo.23934776); a web search on 6 Nov 2026 (López Portillo, Reyes, 1909, clubs, Limantour, Creel) found no edition of these telegrams
-  [x] key-rebuild: the 28 strict values extended with values from the 15 July telegram (26, 41, 20, 11) and from the letter's own words (key.tsv)
-  [x] retry: segment C retried with the extended key; still n-d-c-s-e, not read
+  [x] key-rebuild: the 29 strict values extended with values from the 15 July telegram (26, 41, 20, 11) and from the letter's own words (key.tsv)
+  [x] retry: segment C retried with the extended key (n-d-c-s-e) and again with the contributor's proposed slip (n-d-o-s-e, quejándose) on the clearer images of 6 Nov 2026; kept tentative
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
@@ -123,8 +123,8 @@ If you cannot open issues or pull requests, write this report for your human to 
 
 <h2>Open gaps</h2>
 <p><span class="gap w">gold</span> can be done now: the images and the key are online, it needs only work. <span class="gap">grey</span> needs a new source first: a key, a better scan, an edition or the archive.</p>
-<ul class="gaplist"><li><span class="gap w">code groups open</span> Segment C of the letter (28 23 24 54 2) and the special codes 79 and 77 - blocker: open-codes; each occurs once, no context narrows them (79 is faintly aligned to "Sr. Presidente" in the 15 July telegram)</li><li><span class="gap">hard to read on the scan</span> The second name in the 29 July note (24 46 42 1 31, CREEL?) and the faint handwritten plaintext above it - blocker: illegible; 46 and 42 rest on one word, screenshots of modest resolution</li><li><span class="gap">hard to read on the scan</span> The character after 77 (e or a on the image, s in the contributor's file) - blocker: illegible; one typed character</li><li><span class="gap">needs the archive</span> A check on the CEHM originals by a human - blocker: needs-physical-access; the screenshots are private and cehm.org.mx is not reachable from the project environment</li></ul>
-<h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> the telegrams of 15 and 23 July (DLI.39.7677.1, DLI.39.7696.1) used as controls; the 29 July note read; other López Portillo ciphers in the fonds not opened</li><li>&#9745; <b>clear-pages</b> the typed plaintext below the 23 July telegram and the typed line on the 29 July note checked; neither is a decipherment of the letter</li><li>&#9745; <b>known-keys</b> the contributor's structural comparison with a 1895 key sheet (not seen by the project); no other key for this correspondence known</li><li>&#9745; <b>print</b> the contributor's Zenodo report (doi 10.5281/zenodo.23934776); a web search on 6 Nov 2026 (López Portillo, Reyes, 1909, clubs, Limantour, Creel) found no edition of these telegrams</li><li>&#9745; <b>key-rebuild</b> the 28 strict values extended with values from the 15 July telegram (26, 41, 20, 11) and from the letter's own words (key.tsv)</li><li>&#9745; <b>retry</b> segment C retried with the extended key; still n-d-c-s-e, not read</li></ul>
+<ul class="gaplist"><li><span class="gap w">code groups open</span> The special codes 79 and 77 - blocker: open-codes; each occurs once, no context narrows them (79 is faintly aligned to "Sr. Presidente" in the 15 July telegram)</li><li><span class="gap">needs the archive</span> Segment C (28 23 24 54 2) is read as quejándose only by assuming 24 is a slip for an o code (contributor's proposal) - blocker: needs-physical-access; the original must show whether a number was corrected or mistyped</li><li><span class="gap">hard to read on the scan</span> The second name in the 29 July note (24 46 42 1 31, CREEL?) and the faint handwritten plaintext above it - blocker: illegible; 46 and 42 rest on one word; the handwriting above the cipher is faint even on the clearer images</li><li><span class="gap">needs the archive</span> A check on the CEHM originals by a human - blocker: needs-physical-access; the screenshots are private and cehm.org.mx is not reachable from the project environment</li></ul>
+<h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> the telegrams of 15 and 23 July (DLI.39.7677.1, DLI.39.7696.1) used as controls; the 29 July note read; other López Portillo ciphers in the fonds not opened</li><li>&#9745; <b>clear-pages</b> the typed plaintext below the 23 July telegram and the typed line on the 29 July note checked; neither is a decipherment of the letter</li><li>&#9745; <b>known-keys</b> the contributor's structural comparison with a 1895 key sheet (not seen by the project); no other key for this correspondence known</li><li>&#9745; <b>print</b> the contributor's Zenodo report (doi 10.5281/zenodo.23934776); a web search on 6 Nov 2026 (López Portillo, Reyes, 1909, clubs, Limantour, Creel) found no edition of these telegrams</li><li>&#9745; <b>key-rebuild</b> the 29 strict values extended with values from the 15 July telegram (26, 41, 20, 11) and from the letter's own words (key.tsv)</li><li>&#9745; <b>retry</b> segment C retried with the extended key (n-d-c-s-e) and again with the contributor's proposed slip (n-d-o-s-e, quejándose) on the clearer images of 6 Nov 2026; kept tentative</li></ul>
 
 
 <h2>Send a result</h2>
@@ -137,6 +137,6 @@ If you cannot open issues or pull requests, write this report for your human to 
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="feed.xml">Feed</a><a href="further/limantour1909.html#top">Top &uarr;</a></nav>
 </div></footer>
 <script>(function(){var b=document.querySelector('.agentbox .copy'),p=document.getElementById('agent');if(!b||!p)return;b.addEventListener('click',function(){var t=p.textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy';},1600);},function(){var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>
-<script src="site.js?v=a59641f6"></script>
+<script src="site.js?v=c1b75a67"></script>
 </body>
 </html>

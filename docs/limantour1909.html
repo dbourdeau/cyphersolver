@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>L&oacute;pez Portillo to Reyes (1909) &mdash; Read in part</title>
 <meta name="description" content="A cipher letter of July 1909 to General Bernardo Reyes, governor of Nuevo Le&oacute;n. Alberto Garv&iacute;a Garc&iacute;a found the numerical key from two telegrams with plaintext; checked on the&hellip;" data-full="A cipher letter of July 1909 to General Bernardo Reyes, governor of Nuevo Le&oacute;n. Alberto Garv&iacute;a Garc&iacute;a found the numerical key from two telegrams with plaintext; checked on the images, the letter reads as Spanish and a note of 29 July names Limantour. 88.8% of the groups read.">
-<link rel="stylesheet" href="style.css?v=a59641f6">
+<link rel="stylesheet" href="style.css?v=c1b75a67">
 <meta name="date" content="2026-11-06">
 <meta name="last-modified" content="2026-11-06">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -59,7 +59,7 @@
 <p class="readjump"><a href="#texts">Go to the full text &darr;</a></p><!-- /readjump -->
   <p class="sub">A friend warns the governor of Nuevo Le&oacute;n, whom the President treats as an enemy, to keep calm and be prudent, in a cipher whose key a contributor found from two telegrams.</p>
   <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-11-06">6 November 2026</time></p>
-<p class="outcome">Method: <a href="glossary.html#adjpt">key recovered based on adjacent plaintext</a> &middot; Extent: partial (89% of the cipher) &middot; <a href="atlas.html#slug=limantour1909">On the map</a></p><!-- /outcome -->
+<p class="outcome">Method: <a href="glossary.html#adjpt">key recovered based on adjacent plaintext</a> &middot; Extent: partial (94% of the cipher) &middot; <a href="atlas.html#slug=limantour1909">On the map</a></p><!-- /outcome -->
 <p class="credits">Contributed by <a href="contributors.html#garvia">Alberto Garvía García</a> (solution)</p><!-- /credits -->
 <div class="seal partial" aria-hidden="true"><span>adjacent text</span></div>
 </section>
@@ -67,14 +67,14 @@
 <main>
 <nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letters">The letters</a><a href="#the-key">The key and its test</a><a href="#the-reading">The reading</a><a href="#uncertain">What remains uncertain</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout glance">
-<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Key from adjacent plaintext &middot; partial (89% of the cipher)</span></p>
+<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Key from adjacent plaintext &middot; partial (94% of the cipher)</span></p>
 <dl>
   <dt>The letters</dt><dd>A typed cipher letter of 15 July 1909 from Jos&eacute; L&oacute;pez Portillo y Rojas, a lawyer and writer, to General Bernardo Reyes, governor of Nuevo Le&oacute;n, at Galeana; a note of 29 July; and two short telegrams of 15 and 23 July with plaintext beside the cipher, which carry the key.</dd>
   <dt>Where</dt><dd>Centro de Estudios de Historia de M&eacute;xico (CEHM), Archivo del General Bernardo Reyes: DLI.39.7680.2 (the letter), DLI.39.7712.1 (the note), DLI.39.7677.1 and DLI.39.7696.1 (the telegrams). Not on DECODE.</dd>
   <dt>The cipher</dt><dd>Numbers for letters, with about three consecutive numbers for each (a is 15, 16 or 17; e is 1, 2 or 3; s is 53, 54 or 55), and two special codes, 77 and 79. Numbers are separated by full stops and typed in the letter.</dd>
-  <dt>How it was deciphered</dt><dd>Alberto Garv&iacute;a Garc&iacute;a inferred the numbers from the ciphertext and supported them with the plaintexts of the two telegrams: 28 strict values, with 60 = Y provisional. The seven control sequences and the 77 groups of the letter agree with screenshots of the CEHM images, read by an AI reader.</dd>
+  <dt>How it was deciphered</dt><dd>Alberto Garv&iacute;a Garc&iacute;a inferred the numbers from the ciphertext and supported them with the plaintexts of the two telegrams: 28 strict values, and 60 = Y once the clearer images showed it (29 in the project&rsquo;s count). The seven control sequences and the 77 groups of the letter agree with screenshots of the CEHM images, read by an AI reader.</dd>
   <dt>What it says</dt><dd>The President speaks of Reyes as an enemy and he should not declare himself at once; &ldquo;me inspira temor tu situaci&oacute;n&rdquo;; &ldquo;hay que tener calma y prudencia&rdquo;; other clubs of Guadalajara will write; the note of 29 July says there is a rupture between Limantour and, probably, Creel.</dd>
-  <dt>Still open</dt><dd>A group of five (n-d-c-s-e), the codes 79 and 77, the second name of the note, and a check on the CEHM originals by a human.</dd>
+  <dt>Still open</dt><dd>The codes 79 and 77, the second name of the note, the group of five read as <em>quejándose</em> only by assuming one slipped number, and a check on the CEHM originals by a human.</dd>
   <dt>Credit</dt><dd>The key is Alberto Garv&iacute;a Garc&iacute;a&rsquo;s (issue #245, report on Zenodo, doi 10.5281/zenodo.23934776). The images were sent privately and are not reproduced.</dd>
 </dl>
 </div>
@@ -84,26 +84,26 @@
 
 <h2 id="the-key"><span class="num">02</span> The key and its test</h2>
 <figure class="creveal" data-src="reveal/limantour1909.json"></figure>
-<p>The key rests on seven control sequences, each a word in the telegrams with its plaintext beside it: <em>aplaza</em>, <em>esperes</em> (15 July), <em>graves</em>, <em>comunicarte</em>, <em>salida</em>, <em>suspender</em> and <em>Clubs</em> (23 July). Together they give 28 distinct values with no number mapped to two letters. The value 60 = Y, from <em>vaya</em>, appears once and is kept provisional. We read the numbers of these sequences, and the 77 groups of the letter, on four screenshots of the CEHM viewer that the contributor sent privately, and they agree with his file.</p>
+<p>The key rests on seven control sequences, each a word in the telegrams with its plaintext beside it: <em>aplaza</em>, <em>esperes</em> (15 July), <em>graves</em>, <em>comunicarte</em>, <em>salida</em>, <em>suspender</em> and <em>Clubs</em> (23 July). Together they give 28 distinct values with no number mapped to two letters. The value 60 = Y, from <em>vaya</em>, appears once; the contributor kept it provisional because the word sits near the viewer&rsquo;s watermark, but on the clearer images the sequence <em>15 60 17</em> is legible beside the typed <em>vaya</em>, and 15 and 17 are already a, so it is counted: 29 strict values. We read the numbers of these sequences, and the 77 groups of the letter, on four screenshots of the CEHM viewer that the contributor sent privately, and they agree with his file.</p>
 <p>With that table the letter decodes to Spanish, and the extra values that this fixes (for example 45 = o, 26 = n, 10 = g, 33 = l, 35 = j) are consistent with the blocks of three: the first line of the telegram of 15 July, <em>79 1 26 3 41 20 8 11</em>, also decodes as <em>enemigo</em>. These values are our additions, marked as such in the key file, and are not part of the contributor&rsquo;s count. A statistical test was not possible, because the Spanish letter model cannot be built from this environment.</p>
 
 <h2 id="the-reading"><span class="num">03</span> The reading</h2>
-<p>The letter has 75 alphabetic groups: 70 decode to letters of words, 93.3%, and only the words <em>temor</em> and <em>calma</em> use nothing but the 28 strict values. With the note of 29 July, 79 of 89 groups decode, 88.8%. In English: &ldquo;I have learned from a good source that [79] speaks of you as of an enemy, [a complaint, not read] that you should not declare yourself at once. Your situation fills me with fear. One must keep calm and be prudent. Take great care of yourself so that you recover soon. [77] &hellip; offices &hellip; unchained. Other clubs of Guadalajara will write to you. Today I send you a pleading message.&rdquo; The telegram of 23 July says that Dr. G&oacute;mez must go and asks that replies to the clubs be suspended until the departure is announced. The Spanish and the translation are under Full texts.</p>
+<p>The letter has 75 alphabetic groups, and all 75 decode to letters of words; only the words <em>temor</em> and <em>calma</em> use nothing but the strict values, and two groups (24 in <em>quejándose</em> and 48 in <em>situación</em>) read only by assuming a one-number slip. With the note of 29 July, 84 of 89 groups are deciphered, 94.4%. In English: &ldquo;I have learned from a good source that [79] speaks of you as of an enemy, complaining (a tentative reading) that you do not declare yourself at once. Your situation fills me with fear. One must keep calm and be prudent. Take great care of yourself so that you recover soon. [77] &hellip; offices &hellip; unchained. Other clubs of Guadalajara will write to you. Today I send you a pleading message.&rdquo; The telegram of 23 July says that Dr. G&oacute;mez must go and asks that replies to the clubs be suspended until the departure is announced. The Spanish and the translation are under Full texts.</p>
 
 <h2 id="uncertain"><span class="num">04</span> What remains uncertain</h2>
 <ul>
-<li>The group <em>28 23 24 54 2</em> in the letter (n-d-c-s-e with the key) is not read, and the codes 79 and 77 are not read; 79 is faintly aligned to &ldquo;Sr. Presidente&rdquo; in the telegram of 15 July.</li>
+<li>The group <em>28 23 24 54 2</em> in the letter decodes n-d-c-s-e with the key. The contributor reads it as <em>-ndose</em> (<em>quejándose</em>), with 24 standing where an o code should be. The clearer images show the group exactly as given. It is kept tentative: it assumes one error, and a comma follows &ldquo;queja&rdquo;. The codes 79 and 77 are not read; 79 is faintly aligned to &ldquo;Sr. Presidente&rdquo; in the telegram of 15 July.</li>
 <li>The second name in the note of 29 July (24 46 42 1 31) fits <em>Creel</em>, but 46 and 42 rest on that one word and are not counted.</li>
-<li>The character after 77 reads like an e or an a on the image, not an <em>s</em> as in the contributor&rsquo;s file; the typed 48 in <em>situaci&oacute;n</em> stands where o (44) is expected, a probable typing slip.</li>
-<li>The check was made on phone screenshots by an AI reader. A human check on the CEHM originals is wanted.</li>
+<li>The character after 77 is a typed <em>s</em> on the clearer images, as in the contributor&rsquo;s file (the phone screenshots had suggested an e). The typed 48 in <em>situaci&oacute;n</em> stands where an o code (44 or 45) is expected, another probable slip of the same kind.</li>
+<li>The check was made on screenshots (first from a phone, then a clearer set from a computer) by an AI reader. A human check on the CEHM originals is wanted.</li>
 </ul>
 
 <!-- texts:start -->
 <h2 id="texts">Full texts</h2>
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
 <h3>López Portillo y Rojas to Bernardo Reyes, Mexico, 15 July 1909 (CEHM DLI.39.7680.2) <span class="st partial">read in part</span></h3>
-<p>A friend of General Reyes, then governor of Nuevo León, warns him in July 1909 that the President speaks of him as an enemy and urges him not to declare himself at once, to keep calm and be prudent and to look after his health; other clubs of Guadalajara will write; he sends a pleading message the same day.</p>
-<p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (93% here); the holes are marked in the reading.</p>
+<p>A friend of General Reyes, then governor of Nuevo León, warns him in July 1909 that the President speaks of him as an enemy and urges him not to declare himself at once, to keep calm and be prudent and to look after his health; other clubs of Guadalajara will write; he sends a pleading message the same day; the one complaint is quejándose (tentative).</p>
+<p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (100% here); the holes are marked in the reading.</p>
 <details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/limantour1909/transcription_7680.txt">transcription_7680.txt</a></p><pre translate="no"># CEHM DLI.39.7680.2 (record 118144), López Portillo y Rojas to Bernardo Reyes, Mexico, 15 July 1909: the cipher groups in order, segments A-L as in cyphersolver-1448-evidence.md (checked against the image 6 Nov 2026).
 # Clear words between the groups: &quot;He sabido de buena fuente que [A] habla de tí como de un [B] queja, [C] de que no [D] de una vez. Me inspira [E] tú [F] Hay que tener [G] y [H] Cuídate mucho para que sanes pronto. [I] [J] s. desencadenados. Otros [K] de [L] te escribirán. Hoy te dirijo un mensaje suplicatorio.&quot;
 A	79
@@ -133,26 +133,30 @@ K	clubs
 L	guadalajara</pre></details>
 <details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/limantour1909/reading.md">reading.md</a></p><pre translate="no"># Reading of the cipher letter of 15 July 1909 (CEHM DLI.39.7680.2) and of the note of 29 July 1909 (DLI.39.7712.1)
 
-Key: `key.tsv` (Alberto Garvía García&#x27;s 28 strict values, plus values fixed on the telegram of 15 July and on the letter&#x27;s own words;
+Key: `key.tsv` (Alberto Garvía García&#x27;s 28 strict values and 60 = Y (29 in the project&#x27;s count), plus values fixed on the telegram of 15 July and on the letter&#x27;s own words;
 see VERIFICATION.md). Cipher words are given in normal spelling; `[...]` = group not read; `[79]`, `[77]` = special codes; `?` = doubtful.
 Clear words of the typed letter are in italics.
 
 ## 15 July 1909, José López Portillo y Rojas to General Bernardo Reyes (Galeana, N. L.)
 
-*Muy estimado amigo: He sabido de buena fuente que* [79] *habla de tí como de un* enemigo, *queja,* [28 23 24 54 2: n-d-c-s-e, not read]
+*Muy estimado amigo: He sabido de buena fuente que* [79] *habla de tí como de un* enemigo, *queja,* [28 23 24 54 2: n-d-(c)-s-e = n-d-o-s-e, *quejándose*, with the 24 read as a slip for an o code; tentative, proposed by A. Garvía García, 6 Nov 2026]
 *de que no* te pronuncies *de una vez. Me inspira* temor *tú* situación. *Hay que tener* calma *y* prudencia. *Cuídate mucho para
-que sanes pronto.* [77] e? oficios s. *desencadenados. Otros* clubs *de* Guadalajara *te escribirán. Hoy te dirijo un mensaje
+que sanes pronto.* [77] s oficios s *desencadenados. Otros* clubs *de* Guadalajara *te escribirán. Hoy te dirijo un mensaje
 suplicatorio. Con memorias afectuosas para todos los tuyos, me repito tu viejo servidor y leal amigo q. b. t. m.*
 
-Notes: the typed 48 in *situación* stands where o (44) is expected; 48 is p elsewhere, so it is read as a typing slip. The
-character after 77 reads like an e (or a), not an s as the contributor&#x27;s file has it.
+Notes: the typed 48 in *situación* stands where an o code (44 or 45) is expected; 48 is p elsewhere, so it is read as a typing slip.
+The group 28 23 24 54 2 has the same shape: 24 is c everywhere else (*Clubs*, *comunicarte*, *calma*) but an o code is wanted for
+*quejándose*, so one number is taken as a slip. This is the contributor&#x27;s proposal, checked on the clearer images of 6 Nov 2026 (the
+group is printed as given, after &quot;queja,&quot;); it rests on assuming one error and stays tentative. On the clearer images the character
+after 77 is a typed **s** (as in the contributor&#x27;s file), not an e as the phone screenshots suggested; the last s after 54 looks the same.
 
-Count (counted by hand from key.tsv and decryption_7680.txt): 75 alphabetic cipher groups, 70 read as letters of words
-(93.3%), 10 of them certain (temor, calma: every value in the strict 28); the 5 groups of segment C and the codes 79 and 77 are not read.
+Count (counted by hand from key.tsv and decryption_7680.txt): 75 alphabetic cipher groups, all 75 read as letters of words
+(100%), 10 of them certain (temor, calma: every value in the strict set); two groups are read only by assuming a one-number slip
+(24 in *quejándose*, 48 in *situación*); the codes 79 and 77 are not read.
 
 ## 29 July 1909 (note)
 
-*... Hay ruptura entre* Limantour *y* [c r? e? e l: Creel?]
+*... Hay ruptura entre* Limantour *y* [c r? e? e l: Creel?; 24 46 42 1 31 on the clearer images]
 
 The typed line below reads: *Retira de tu ánimo preocupaciones, y lee mi respuesta con atención.* The handwritten plaintext above the
 cipher is faint and is not transcribed here. LIMANTOUR (9 groups) is read; the second name is tentative.</pre></details>
@@ -160,9 +164,9 @@ cipher is faint and is not transcribed here. LIMANTOUR (9 groups) is read; the s
 
 ## 15 July 1909, López Portillo y Rojas to General Bernardo Reyes
 
-My dear friend: I have learned from a good source that [79] speaks of you as of an enemy, [a complaint, not read] that you should
-not declare yourself at once. Your situation fills me with fear. One must keep calm and be prudent. Take great care of yourself so that
-you recover soon. [77] ... offices ... unchained. Other clubs of Guadalajara will write to you. Today I send you a pleading message.
+My dear friend: I have learned from a good source that [79] speaks of you as of an enemy, a complaint, complaining (tentative reading of
+28 23 24 54 2) that you do not declare yourself at once. Your situation fills me with fear. One must keep calm and be prudent. Take great care of yourself so that
+you recover soon. [77] s ... offices s ... unchained. Other clubs of Guadalajara will write to you. Today I send you a pleading message.
 With affectionate memories for all your family, I remain your old servant and loyal friend.
 
 ## 29 July 1909 (note)
@@ -180,26 +184,30 @@ M	limantour
 N	creel</pre></details>
 <details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/limantour1909/reading.md">reading.md</a></p><pre translate="no"># Reading of the cipher letter of 15 July 1909 (CEHM DLI.39.7680.2) and of the note of 29 July 1909 (DLI.39.7712.1)
 
-Key: `key.tsv` (Alberto Garvía García&#x27;s 28 strict values, plus values fixed on the telegram of 15 July and on the letter&#x27;s own words;
+Key: `key.tsv` (Alberto Garvía García&#x27;s 28 strict values and 60 = Y (29 in the project&#x27;s count), plus values fixed on the telegram of 15 July and on the letter&#x27;s own words;
 see VERIFICATION.md). Cipher words are given in normal spelling; `[...]` = group not read; `[79]`, `[77]` = special codes; `?` = doubtful.
 Clear words of the typed letter are in italics.
 
 ## 15 July 1909, José López Portillo y Rojas to General Bernardo Reyes (Galeana, N. L.)
 
-*Muy estimado amigo: He sabido de buena fuente que* [79] *habla de tí como de un* enemigo, *queja,* [28 23 24 54 2: n-d-c-s-e, not read]
+*Muy estimado amigo: He sabido de buena fuente que* [79] *habla de tí como de un* enemigo, *queja,* [28 23 24 54 2: n-d-(c)-s-e = n-d-o-s-e, *quejándose*, with the 24 read as a slip for an o code; tentative, proposed by A. Garvía García, 6 Nov 2026]
 *de que no* te pronuncies *de una vez. Me inspira* temor *tú* situación. *Hay que tener* calma *y* prudencia. *Cuídate mucho para
-que sanes pronto.* [77] e? oficios s. *desencadenados. Otros* clubs *de* Guadalajara *te escribirán. Hoy te dirijo un mensaje
+que sanes pronto.* [77] s oficios s *desencadenados. Otros* clubs *de* Guadalajara *te escribirán. Hoy te dirijo un mensaje
 suplicatorio. Con memorias afectuosas para todos los tuyos, me repito tu viejo servidor y leal amigo q. b. t. m.*
 
-Notes: the typed 48 in *situación* stands where o (44) is expected; 48 is p elsewhere, so it is read as a typing slip. The
-character after 77 reads like an e (or a), not an s as the contributor&#x27;s file has it.
+Notes: the typed 48 in *situación* stands where an o code (44 or 45) is expected; 48 is p elsewhere, so it is read as a typing slip.
+The group 28 23 24 54 2 has the same shape: 24 is c everywhere else (*Clubs*, *comunicarte*, *calma*) but an o code is wanted for
+*quejándose*, so one number is taken as a slip. This is the contributor&#x27;s proposal, checked on the clearer images of 6 Nov 2026 (the
+group is printed as given, after &quot;queja,&quot;); it rests on assuming one error and stays tentative. On the clearer images the character
+after 77 is a typed **s** (as in the contributor&#x27;s file), not an e as the phone screenshots suggested; the last s after 54 looks the same.
 
-Count (counted by hand from key.tsv and decryption_7680.txt): 75 alphabetic cipher groups, 70 read as letters of words
-(93.3%), 10 of them certain (temor, calma: every value in the strict 28); the 5 groups of segment C and the codes 79 and 77 are not read.
+Count (counted by hand from key.tsv and decryption_7680.txt): 75 alphabetic cipher groups, all 75 read as letters of words
+(100%), 10 of them certain (temor, calma: every value in the strict set); two groups are read only by assuming a one-number slip
+(24 in *quejándose*, 48 in *situación*); the codes 79 and 77 are not read.
 
 ## 29 July 1909 (note)
 
-*... Hay ruptura entre* Limantour *y* [c r? e? e l: Creel?]
+*... Hay ruptura entre* Limantour *y* [c r? e? e l: Creel?; 24 46 42 1 31 on the clearer images]
 
 The typed line below reads: *Retira de tu ánimo preocupaciones, y lee mi respuesta con atención.* The handwritten plaintext above the
 cipher is faint and is not transcribed here. LIMANTOUR (9 groups) is read; the second name is tentative.</pre></details>
@@ -207,9 +215,9 @@ cipher is faint and is not transcribed here. LIMANTOUR (9 groups) is read; the s
 
 ## 15 July 1909, López Portillo y Rojas to General Bernardo Reyes
 
-My dear friend: I have learned from a good source that [79] speaks of you as of an enemy, [a complaint, not read] that you should
-not declare yourself at once. Your situation fills me with fear. One must keep calm and be prudent. Take great care of yourself so that
-you recover soon. [77] ... offices ... unchained. Other clubs of Guadalajara will write to you. Today I send you a pleading message.
+My dear friend: I have learned from a good source that [79] speaks of you as of an enemy, a complaint, complaining (tentative reading of
+28 23 24 54 2) that you do not declare yourself at once. Your situation fills me with fear. One must keep calm and be prudent. Take great care of yourself so that
+you recover soon. [77] s ... offices s ... unchained. Other clubs of Guadalajara will write to you. Today I send you a pleading message.
 With affectionate memories for all your family, I remain your old servant and loyal friend.
 
 ## 29 July 1909 (note)
@@ -282,7 +290,7 @@ entonces contestaciones á Clubs, colectivas ó separadas.&quot;</pre></details>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="hintze1903.html" rel="prev">&larr; Hintze Ribeiro to Queen Am&eacute;lie 1903 1903</a><a href="lima1909.html" rel="next">Venceslau de Lima to Manuel II 1909 1909 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="feed.xml">Feed</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
 <script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
-<script src="solve-replay.js?v=a59641f6" defer></script>
-<script src="site.js?v=a59641f6"></script>
+<script src="solve-replay.js?v=c1b75a67" defer></script>
+<script src="site.js?v=c1b75a67"></script>
 </body>
 </html>
