@@ -102,7 +102,7 @@ him, and orders Pedro Navarro with the galleys towards Naples; and that the King
 - doubtful words 9v L02 (algun go), L08 (ca lo cosa), L12-13 ([mur]s, algd es), L15 (`/` and `.4s.`), 10r L12 (sunydas), L15 (por es), 10v L02 (a [?] y al s. [?] de Borbon), 11r L07-08 (con [?] ... debaxo de l [?] dauana) - blocker: open-codes; the signs are read, the sense needs a code value or a sign not attested elsewhere
 
 ## Escalation
-- [x] siblings: no other Soria-Lannoy letter in the Estense record or on DECODE; Lannoy's replies of 13 and 25 Apr 1527 (CSP Spain III.2 nos. 49, 54) survive only as clear copies in RAH Salazar A-40
+- [x] siblings: no other Soria-Lannoy letter in the Estense record or on DECODE; the five other Soria records in the Estense (Lettera L cc. 1-8: to Ferrante Gonzaga 1534, 1539, 1541, to Giovanni Mahona 1541; Gonzaga's draft to Soria 1539) hold no cipher at all, only clear Italian and Spanish; Lannoy's replies of 13 and 25 Apr 1527 (CSP Spain III.2 nos. 49, 54) survive only as clear copies in RAH Salazar A-40
 - [x] clear-pages: the clear passages of the letter itself used as context (Bracamonte, galleys, Savona); no decipherment on the leaves
 - [x] known-keys: Soria's keys A and B (targets/soria1523), Lannoy's Ko.5 (Kolosova 2017), the BRAH 9/15 key book (R9815-R9832): none fits
 - [x] print: CSP Spain III.2 Feb-Apr 1527, Villa's Memorias (1875) index, Tomokiyo spanish2.htm (Galende Diaz 1992): no copy or key
