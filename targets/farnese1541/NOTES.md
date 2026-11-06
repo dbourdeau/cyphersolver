@@ -1,4 +1,4 @@
-# Farnese to Poggio, December 1541: Spain IA-1 (DECODE R91, catalogue 262)
+# Farnese to Poggio, 7 August 1542: Spain IA-1 (DECODE R91, catalogue 262)
 
 Status: in progress (written up as read in part; the open-codes gaps remain workable, see Remaining gaps)
 
@@ -7,8 +7,8 @@ passes); written up 2026-11-06 as docs/farnese1541.html. Every unread piece is l
 
 Catalogue 262. AAV Segr. Stato, Spagna 1A (IA-1), ff. 64r-66r: Cardinal Alessandro Farnese (Rome) to Giovanni Poggio,
 bishop of Tropea, nuncio in Spain; clear passages on the deputation of legates, the war, the Nuremberg diet and Buda,
-cipher ff. 64r l.16 - 65r (2,963 digits after the image re-read), closing on f. 66r "a qui 1[.] di Xbre ... Come
-fratello Il Car. Farnese". DECODE R91 (five page images, transcription by MEG 2020, four cleartext Farnese letters of
+cipher ff. 64r l.16 - 65r (2,963 digits after the image re-read), closing on f. 66r "a qui; et bene valete. Da Roma alli . ... Come
+fratello Il Car. Farnese" with the day left blank. Dated 7 Aug 1542 (section of 6 Nov 2026 below; catalogued as Dec 1541). DECODE R91 (five page images, transcription by MEG 2020, four cleartext Farnese letters of
 summer 1542). The companion IA-2 (R92, 15 Apr 1542) is Vatican Challenge Part 5, solved by Simon Klee in another key:
 see [`../vatican5/`](../vatican5/), whose NOTES (sections of 15-18 Sept 2026) hold the earlier measurements of R91.
 
@@ -161,6 +161,53 @@ accompagnate", not having given up hope "di qualche concordia per l'opera de li 
 "sarebbe stata medicina contraria"; "niuno altro rimedio si trouara che non conduchi finalmente a la morte, saluo
 la pace".
 
+## 2026-11-06: the letter is of 7 August 1542, and a readable copy is in Chigi L III 65
+
+Search for Farnese's clear text (the user's option 3). Two results: the date was wrong, and the clear text exists offline.
+
+**The date.** The close on f. 66r reads "a qui; et bene valete. Da Roma alli ." with the day never filled in. DECODE's
+"a qui 12bre" is a misreading of *et bene valete*, and the "Dec 1541" of the catalogue and of this folder's name came from
+it. The clear lines date the letter:
+
+* 64r l.1-15: "accio che V.S. resti avvisata di tutto quanto prima, et possa far noto a S.M.ta Ces.a questa deputatione de
+  legati et la ragione di essa, et molto esortarla ... ad non proceder nelle cose della guerra ad atto alcuno piu avanti ...
+  per non difficultar lo accordo", the Most Christian King being asked the same, until "l'arrivo delli sop.ti legati".
+  Paul III named Contarini (to Charles V) and Sadoleto (to Francis I) peace legates on 7 Aug 1542, after Francis declared
+  war in July (Pastor V 472).
+* 65v: the King of the Romans "parti alli 9 del passato di Vienna per venir alla dieta di Norimberga a sollecitar la
+  provisione de danari per lo exercito, havendo dui giorni avanti dato principio a farlo marciar verso Buda"; Saxony and
+  the Landgrave arming against the Duke of Brunswick. The army left Vienna on 7-8 July 1542 and Ferdinand left for
+  Nuremberg right after (Cardauns, NB I/7 p. 219 n. 1, Berbena's report from Vienna).
+* Pastor, Geschichte der Paepste V (1909) p. 472 and n. 5: the Pope "hielt es fuer zu gewagt, sich offen gegen Franz I. zu
+  erklaeren, weil dieser dann von der Kirche abfallen werde", would seize church goods and become a stronger enemy of Spain,
+  citing "Schreiben des Kardinals Farnese an Poggio vom 7. August 1542, Biblioteca Chigi zu Rom L III 65". That is the
+  cipher's argument (64v.19-22, 65r.4-8). Pastor's n. 7 cites the same letter for the date of the legates.
+* Pastor app. 55 (Farnese to Poggio, 19 Aug 1542, Chigi L III 65 f. 260): Sadoleto left the day before yesterday,
+  Montepulciano sent to Contarini; "V. S. tanto piu ha da procurare quanto le scrissi con el corriere", i.e. this letter.
+
+So R91 is Farnese to Poggio, Rome, 7 August 1542. Consistent with it: the four other Farnese letters on R91 are of summer
+1542, and Meister's key no. 2, "Cifra ultima con Mons. Poggio", is later than the key of the April 1542 letter (R92). The
+folder and page keep the slug farnese1541 so that links hold; every date field now says 7 Aug 1542. Earlier sections of
+these NOTES that say "Dec 1541" or "1[.] di Xbre" are superseded on that point. The reading is unchanged; the Lucca
+sentence (65r.21) is no longer explained as "the declaration Charles wanted at Lucca", since its clause is broken.
+
+**Where the clear text is (none of it online):**
+
+* BAV, Chigi L III 65: Farnese's letters to Poggio. Pastor read the 7 Aug 1542 letter there and summarised its argument, so
+  a readable text of it (a deciphered original or a clear copy) is in that volume, near f. 260 (19 Aug). Cardauns cites a
+  19 Sept 1542 letter there as an original in cipher. Not on DigiVatLib (IIIF manifest 404 on 6 Nov 2026, while other Chigi
+  manuscripts return 200); Chigi M II 49 (the key) is not online either.
+* AAV, Lettere di principi 14A: register copies of Farnese's letters to Poggio (Cardauns: 23 Nov 1541 at ff. 45-48, 29 June
+  1542 at ff. 453-456, and the 19 Sept 1542 letter). A register copy gives the cipher passages in clear. Not digitised.
+* Naples, Archivio di Stato, Carte Farnesiane: Farnese's minutes (Cardauns: busta 707 for the Nov 1541 letters; busta
+  for Aug 1542 not identified). Not digitised.
+* Printed: Pastor gives only the paraphrase; Cardauns prints nothing of August 1542 to Poggio (the 1542 correspondence "nur
+  fragmentarisch", German matters only); Ehses, Concilium Tridentinum IV (1904) p. 283 discusses the legates' date (search-only
+  on HathiTrust; its viewer would not render in Chrome, not read).
+
+Any of the three manuscripts would settle the clear runs listed under Remaining gaps and most of the corroded lines. A
+photograph request to the BAV (Chigi L III 65, the leaves before f. 260) is the shortest route.
+
 ## Remaining gaps
 
 Unread pieces of R91 (609 tokens) after four reading passes, by blocker:
@@ -170,7 +217,7 @@ Unread pieces of R91 (609 tokens) after four reading passes, by blocker:
 - 65r.15-18 (15.19-42, 16.5-42, 17.1-34, 18.1-45) - blocker: illegible; corrosion through almost every sign, no digit readable better than the re-read (~140 tokens)
 - 65r.10 pos 1-16 and 65r.12 pos 44 - 65r.13 pos 9 - blocker: illegible; corroded starts and brown outlines at the line end
 - 65r.23 pos 53-55 (end of *finalme[nte]*) - blocker: illegible; at the edge of holes
-- clear digit stretches that spell nothing under the key after four passes (the last allowing one miswritten digit per word): 64r.16 after "il" and 64r.17 before "laltro" (26 digits), 64r.18-19 short runs, 64v.6 start and middle, 64v.7 start, 64v.10 after "iudica" and 64v.11 `2 6 0 3`, 64v.12 `2 9 0 8 4 8 1`, 64v.14 after "sente" and "pochi", 64v.17-19 around "di concorrer", 64v.21; 65r.2.56-3.8, 65r.5.51-6.4, 65r.8.28-30 and 8.59-9.14, 65r.10.59-11.1, 65r.13.47-51, 65r.14.37-52, 65r.20.53-21.2, 65r.22.21-23 - blocker: open-codes; digits sharp, no word of key 2 fits even with one slip per word: words not found, insertions or omissions by the clerk, or codes outside the printed table, which only the decifrato or the key sheet would settle
+- clear digit stretches that spell nothing under the key after four passes (the last allowing one miswritten digit per word): 64r.16 after "il" and 64r.17 before "laltro" (26 digits), 64r.18-19 short runs, 64v.6 start and middle, 64v.7 start, 64v.10 after "iudica" and 64v.11 `2 6 0 3`, 64v.12 `2 9 0 8 4 8 1`, 64v.14 after "sente" and "pochi", 64v.17-19 around "di concorrer", 64v.21; 65r.2.56-3.8, 65r.5.51-6.4, 65r.8.28-30 and 8.59-9.14, 65r.10.59-11.1, 65r.13.47-51, 65r.14.37-52, 65r.20.53-21.2, 65r.22.21-23 - blocker: open-codes; digits sharp, no word of key 2 fits even with one slip per word: words not found, insertions or omissions by the clerk, or codes outside the printed table, which only the clear text would settle: it exists in BAV Chigi L III 65 (Pastor read it), AAV Lettere di principi 14A and the Naples Carte Farnesiane, none digitised
 
 ## Escalation
 
@@ -179,9 +226,9 @@ What was tried on R91 (writeup skill section 0a), 2026-11-05/06:
 - [x] siblings: IA-2 (R92, the companion letter of 15 Apr 1542) is another key, solved by Klee; DECODE has no other Farnese item of 1538-48 (18 Sept search); R91's four document images are cleartext Farnese letters of summer 1542
 - [x] clear-pages: the clear lines 64r 1-15 and f. 66r are the letter's own clear frame (legates, Nuremberg diet, Buda, date and signature), not a decipherment; no interlinear decipherment on any page
 - [x] known-keys: Meister 1906 keys nos. 1-4 tried; key 1 as printed fails (-4.12 nats/char), key 2 fits read polyphonically; Klee's IA-2 key does not transfer
-- [x] print: no edition of Farnese's December 1541 letters to Poggio found (web and Nuntiaturberichte search, 5-6 Nov 2026); Simonetta's article on Farnese nuncios' letters in the Likhachev collection concerns Guidiccioni 1537; the decifrato, if one survives, would be in the Nunziatura di Spagna registers or the Carte Farnesiane (Naples), not online
+- [x] print: Cardauns NB I/7 (1912) and Pastor V (1909) read 6 Nov 2026: the letter is Farnese to Poggio of 7 Aug 1542, which Pastor paraphrases from BAV Chigi L III 65 (no text printed); register copies in AAV Lettere di principi 14A, minutes in the Naples Carte Farnesiane; none digitised. Earlier: Simonetta's article on Farnese nuncios' letters in the Likhachev collection concerns Guidiccioni 1537; the decifrato, if one survives, would be in the Nunziatura di Spagna registers or the Carte Farnesiane (Naples), not online
 - [x] key-rebuild: k2b -> k2d (b/c 02, s/z/et 1, null 11, ci 24, co 26), every syllable family's order tested (24 permutations each), scan of unassigned pairs for missing codes, Francia 000 added from Meister p. 177, code 23 shown unused, no digit group recurs across the unread runs (only 8048, three times), so no missing code word
 - [x] retry: image re-read of every line, key-guided image check of every unread stretch, three reading passes with cribs and a dictionary lattice (`probe.py`, `wordfit.py`), a fourth pass allowing one clerk's slip per word (`wordfit.py --slip`, 20 accepted), code 23 tested on every occurrence (not used)
 
-Next, outside the session: better images of 64v.12-13, 65r.1 pos 30 and 65r.15-18 (AAV photography, UV); the decifrato
-in the Nunziatura di Spagna registers or the Carte Farnesiane.
+Next, outside the session: photographs of the 7 Aug 1542 letter in BAV Chigi L III 65 (before f. 260), or of its register copy in
+AAV Lettere di principi 14A; better images of 64v.12-13, 65r.1 pos 30 and 65r.15-18 (AAV photography, UV).

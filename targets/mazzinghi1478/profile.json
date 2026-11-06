@@ -1,18 +1,24 @@
 {
  "schema_version": 1,
  "target": "mazzinghi1478",
- "title": "Giovanni Mazzinghi's cipher letter of 16 January 1478 (1479 modern), ASF MAP LXXXIX 142",
+ "title": "Rome, January 1478 st. fior. (1479): Giovanni Mazzinghi and an unsigned writer to the Medici, word-by-word cipher (ASF MAP LXXXIX 142, CXXXVII 252; key source MAP LXXII 170)",
  "documents": [
   {
-   "id": "map89-142",
-   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza LXXXIX, doc. 142 (old c. 149)",
+   "id": "2307",
+   "read": "read in part",
+   "shelfmark": "ASF, Mediceo avanti il Principato LXXXIX 142",
+   "date": "In Roma, 16 January 1478 st. fior.",
    "year": 1479,
-   "country": "Italy",
+   "country": "Florence",
+   "route": "Giovanni Mazzinghi (Rome) -> the Medici (Florence)",
    "language": "Italian",
    "cleartext_in_document": "interspersed",
    "plaintext": {
-    "location": ["none"],
-    "source": "No decipherment on the leaf; the sibling MAP LXXII 170 (23 Jan 1478) has an interlinear one in the same system."
+    "location": [
+     "none"
+    ],
+    "source": "Bare: no decipherment on or beside the leaf (vetting batch n08).",
+    "partial": false
    },
    "length": {
     "tokens": 1051,
@@ -25,19 +31,57 @@
     "source": "ASF IIIF A0000463, 1272 x 1837 (largest size served)",
     "image_quality": "fair",
     "notes": "Some sign pairs cannot be told apart at this resolution (o, 4, H, b/6)."
+   }
+  },
+  {
+   "id": "2320",
+   "read": "not read",
+   "shelfmark": "ASF, Mediceo avanti il Principato CXXXVII 252",
+   "date": "13 January 1478 st. fior.",
+   "year": 1479,
+   "country": "Florence",
+   "route": "unsigned (same hand and signs as 2307) -> the Medici",
+   "language": "Italian",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Bare (vetting batch n10).",
+    "partial": false
    },
-   "read": "read in part"
+   "length": {
+    "tokens": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "in progress",
+    "image_quality": "fair",
+    "notes": "Full-size ASF image, 1272 px."
+   }
   }
  ],
  "system": {
-  "types": ["monoalphabetic"],
+  "types": [
+   "monoalphabetic"
+  ],
   "summary": "Letter substitution in letter-like signs with word division kept, numerals for persons and a barred p for per.",
   "symbol_kind": "letters and symbols",
   "distinct_symbols": "unknown",
-  "diacritics": {"used": "unknown"},
-  "homophones": {"used": "unknown"},
-  "nomenclator": {"present": "unknown"},
-  "nulls": {"present": "unknown"},
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
   "key_order": "unknown",
   "word_division": "kept",
   "sibling_key": "MAP LXXII 170 (lead 2308), same sign set, glossed interlinear; not yet rebuilt sign by sign",
@@ -46,27 +90,93 @@
  "conditions": {
   "prior_solution": {
    "exists": "no",
-   "where": "none found: DECODE, Tomokiyo, Lasry, Lorenzo's Lettere II-III checked in the catalogue vetting (6 Nov 2026)",
+   "where": "No decipherment of 2307 or 2320 found; the sibling LXXII 170 carries its own contemporary gloss.",
    "found": "not found",
    "used": false
   },
-  "inputs": ["images"],
+  "inputs": [
+   "images"
+  ],
   "attack": "ciphertext-only",
-  "human_role": "Project-level: the catalogue entry's task prompt was pasted into Claude Code; no target-specific intervention.",
-  "tools": ["solve.py (homophonic annealer, it-cinquecento order 5)", "measure.py"],
-  "models": ["claude-opus-5-5"],
-  "sessions": 1,
+  "human_role": "Daniel Bourdeau chose the target; the model does the work. A second session worked 2307 from the catalogue task prompt pasted into Claude Code; no target-specific intervention.",
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "tools": [
+   "solve.py (homophonic annealer, it-cinquecento order 5)",
+   "measure.py"
+  ],
+  "sessions": 2,
   "first_date": "2026-11-06",
   "last_date": "2026-11-06"
  },
  "solution": [
-  {"date": "2026-11-06", "kind": "access", "what": "IIIF images of 89/142 and of the sibling 72/170; 1272 px is the largest size.", "result": "worked"},
-  {"date": "2026-11-06", "kind": "transcription", "what": "First pass of 89/142, 29 sign classes, 1055 signs.", "result": "partial"},
-  {"date": "2026-11-06", "kind": "sibling key", "technique": ["plaintext matching"], "what": "Paired the 72/170 gloss with its cipher; only 'publichamente mostra lectere' aligned with confidence.", "result": "partial"},
-  {"date": "2026-11-06", "kind": "solver", "technique": ["simulated annealing", "language-model scoring"], "what": "Homophonic annealer on it-cinquecento; collapsed onto all-i.", "result": "failed"},
-  {"date": "2026-11-06", "kind": "solver", "technique": ["simulated annealing", "language-model scoring"], "what": "Same with a letter-frequency KL penalty and swap moves; Italian came out (contra di voi molto crudele, molte volte, grandissimo).", "result": "worked"},
-  {"date": "2026-11-06", "kind": "control", "technique": ["simulated annealing"], "what": "537-sign Italian passage in a random 29-sign homophonic key: 655/667 letters right.", "result": "worked"},
-  {"date": "2026-11-06", "kind": "reading", "technique": ["contextual inference", "manual reconstruction"], "what": "Second transcription pass in 3x crops and word-by-word reading; merged sign classes resolved from context.", "result": "partial"}
+  {
+   "date": "2026-11-06",
+   "kind": "access",
+   "what": "Full-size images of MAP LXXXIX 142, CXXXVII 252, LXXII 170 and neighbours downloaded from the ASF MAP viewer (getdoc.py).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "statistics",
+   "what": "Datelines read: all three 'gennaio 1478', i.e. January 1479 modern (Florentine style); 2307 headed 'In Roma'; LXXII 170 verso is show-through only.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "transcription",
+   "what": "2307: First pass of 89/142, 29 sign classes, 1055 signs.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "sibling key",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "2307: Paired the 72/170 gloss with its cipher; only 'publichamente mostra lectere' aligned with confidence.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "2307: Homophonic annealer on it-cinquecento; collapsed onto all-i.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "2307: Same with a letter-frequency KL penalty and swap moves; Italian came out (contra di voi molto crudele, molte volte, grandissimo).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "control",
+   "technique": [
+    "simulated annealing"
+   ],
+   "what": "2307: 537-sign Italian passage in a random 29-sign homophonic key: 655/667 letters right.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "reading",
+   "technique": [
+    "contextual inference",
+    "manual reconstruction"
+   ],
+   "what": "2307: Second transcription pass in 3x crops and word-by-word reading; merged sign classes resolved from context.",
+   "result": "partial"
+  }
  ],
  "outcome": {
   "method": "key recovered from ciphertext-only",
@@ -75,13 +185,30 @@
   "key": "partial",
   "fraction_read": 0.587,
   "fraction_read_method": "measured",
-  "contribution": ["transcription", "decipherment with ambiguous key", "sender or date identified"],
-  "verification": ["matched control", "historical consistency"],
+  "contribution": [
+   "transcription",
+   "decipherment with ambiguous key",
+   "sender or date identified"
+  ],
+  "verification": [
+   "matched control",
+   "historical consistency"
+  ],
   "provenance": "project",
-  "notes": "111 of 189 cipher words read, 30 doubtful, 48 open. Content dates it after the Pazzi conspiracy: January 1479 modern. In progress: sibling key rebuild next.",
+  "notes": "2307: 111 of 189 cipher words read, 30 doubtful, 48 open (fraction_read is for 2307). 2320 not yet transcribed. In progress: sibling key rebuild from LXXII 170 next.",
   "gaps": [
-   {"item": "48 open cipher words and about 30 doubtful ones from merged sign classes", "blocker": "not-attempted"},
-   {"item": "code numerals 2, 3, 10, 12, 30, 40 and groups olop, ov+, cop, oxP", "blocker": "open-codes"}
+   {
+    "item": "2320 (CXXXVII 252), whole letter",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "48 open cipher words and about 30 doubtful ones from merged sign classes",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "code numerals 2, 3, 10, 12, 30, 40 and groups olop, ov+, cop, oxP",
+    "blocker": "open-codes"
+   }
   ]
  }
 }

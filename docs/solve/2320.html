@@ -11,7 +11,7 @@
 <meta property="og:url" content="https://cyphersolver.com/solve/2320.html">
 <meta property="og:title" content="No. 2320: Anonymous cipher letter of 13 January 1478 in the Mazzinghi cipher (lead 2307), bare; MAP 72/170 glosses the same system">
 <meta property="og:image" content="https://cyphersolver.com/hero_poster.png">
-<meta name="description" content="A third letter of the January 1478 Medici series, three days before the Mazzinghi letter: more ciphertext for the same key, with the glossed 72/170 as the key source. An unread cipher of 13 Jan 1478 (as written; Florentine style would make it 1479), with instructions for an AI agent.">
+<meta name="description" content="A third letter of the January 1478 Medici series, three days before the Mazzinghi letter: more ciphertext for the same key, with the glossed 72/170 as the key source. An unread cipher of January 1478 st. fior. (very probably January 1479 modern), with instructions for an AI agent.">
 <link rel="stylesheet" href="style.css?v=5c2bc3d7">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
@@ -51,7 +51,7 @@
   <h1>Anonymous cipher letter of 13 January 1478 in the Mazzinghi cipher (lead 2307), bare; MAP 72/170 glosses the same system</h1>
   <p class="sub">A third letter of the January 1478 Medici series, three days before the Mazzinghi letter: more ciphertext for the same key, with the glossed 72/170 as the key source.</p>
   <dl class="facts">
-    <dt>Date</dt><dd>13 Jan 1478 (as written; Florentine style would make it 1479)</dd>
+    <dt>Date</dt><dd>January 1478 st. fior. (very probably January 1479 modern)</dd>
     <dt>Correspondents</dt><dd>anonymous -&gt; anonymous (Medici circle)</dd>
     <dt>Place</dt><dd>not stated (Rome likely, as for the sibling letters)</dd>
     <dt>Language</dt><dd>Italian (symbol cipher with clear words)</dd>
@@ -72,7 +72,7 @@ You are helping a public research project read historical cipher letters that no
 
 THE CIPHER
   Title:          Anonymous cipher letter of 13 January 1478 in the Mazzinghi cipher (lead 2307), bare; MAP 72/170 glosses the same system
-  Date:           13 Jan 1478 (as written; Florentine style would make it 1479)
+  Date:           January 1478 st. fior. (very probably January 1479 modern)
   Correspondents: anonymous -&gt; anonymous (Medici circle)
   Place:          not stated (Rome likely, as for the sibling letters)
   Language:       Italian (symbol cipher with clear words) (expected)
@@ -83,20 +83,21 @@ THE CIPHER
     - image id 133026: https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=133026
 
 WHAT IS KNOWN
-  Status: Bare: no interlinear or marginal decipherment (checked at 1272 px). Same sign set (x, ‡, H, =, 5-like signs, "+" heads) and apparently the same hand as MAP LXXXIX 142 (Mazzinghi, 16 Jan 1478, lead 2307); MAP LXXII 170 (23 Jan 1478, lead 2308) carries a full interlinear decipherment of this system.
+  Status: Bare: no interlinear or marginal decipherment (checked at 1272 px). Same sign set (x, ‡, H, =, 5-like signs, "+" heads) and apparently the same hand as MAP LXXXIX 142 (Mazzinghi, 16 Jan 1478, lead 2307); MAP LXXII 170 (23 Jan 1478, lead 2308) carries a full interlinear decipherment of this system. Dating corrected 6 Nov 2026: "gennaio 1478" in Florentine style is January 1479 modern, during the Pazzi War (targets/mazzinghi1478).
   Outcome so far: not yet attempted by the project
   Prior-art check: open as far as checked (6 Nov 2026): known.py finds nothing on the filza, document or correspondent; DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap for undated pieces.
   Check first: Fold into the Mazzinghi lead (2307) or keep as a sibling; transcribe and apply the key rebuilt from 72/170.
   Class A: a sibling letter with a decipherment is in the same volume or series, so matching it is the first move.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/mazzinghi1478/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/mazzinghi1478/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/mazzinghi1478/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -136,7 +137,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/mazzinghi1478/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+2320&amp;target=catalogue+2320
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -154,10 +155,10 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>What is known</h2>
 
 
-<p><b>Status and prior art.</b> Bare: no interlinear or marginal decipherment (checked at 1272 px). Same sign set (x, ‡, H, =, 5-like signs, "+" heads) and apparently the same hand as MAP LXXXIX 142 (Mazzinghi, 16 Jan 1478, lead 2307); MAP LXXII 170 (23 Jan 1478, lead 2308) carries a full interlinear decipherment of this system.</p>
+<p><b>Status and prior art.</b> Bare: no interlinear or marginal decipherment (checked at 1272 px). Same sign set (x, ‡, H, =, 5-like signs, "+" heads) and apparently the same hand as MAP LXXXIX 142 (Mazzinghi, 16 Jan 1478, lead 2307); MAP LXXII 170 (23 Jan 1478, lead 2308) carries a full interlinear decipherment of this system. Dating corrected 6 Nov 2026: "gennaio 1478" in Florentine style is January 1479 modern, during the Pazzi War (targets/mazzinghi1478).</p>
 <p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open as far as checked (6 Nov 2026): known.py finds nothing on the filza, document or correspondent; DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap for undated pieces..</p>
 <p><b>Check first.</b> Fold into the Mazzinghi lead (2307) or keep as a sibling; transcribe and apply the key rebuilt from 72/170.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mazzinghi1478/NOTES.md" rel="noopener">targets/mazzinghi1478/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/mazzinghi1478" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>

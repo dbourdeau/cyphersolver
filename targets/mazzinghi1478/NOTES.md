@@ -1,22 +1,54 @@
-# Giovanni Mazzinghi, cipher letter of 16 January 1478 (1479 modern), ASF MAP LXXXIX 142
+# Rome, January 1478 (st. fior.): Giovanni Mazzinghi and a second writer to the Medici, cipher (catalogue 2307, 2320)
 
-Status: in progress
+Status: in progress. Started 6 Nov 2026 at the user's request after the overnight sweep. Transcription under way;
+no key yet.
 
-Catalogue no. 2307 (https://cyphersolver.com/solve/2307.html). Sibling with interlinear decipherment: lead 2308,
-MAP LXXII 170 (23 Jan 1478, anonymous), same sign set.
+## The documents
 
-- Document: Archivio di Stato di Firenze, Mediceo avanti il Principato, filza LXXXIX, doc. 142 (old c. 149). One leaf,
-  recto 37 lines of cipher with clear words between runs; verso endorsed "1478 ... adi 16 di gennaio ... da G. Mazinghi",
-  "Cifra". Inventory vol. 3: "Giovanni Mazzinghi. (cifrato). s. l., 1478 gen. 16, n. 142".
-- Images: IIIF recto https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100089/A0000463.ptif/full/full/0/default.jpg
-  (1272 x 1837 is the full size; info.json gives nothing larger), verso A0000464. Sibling recto 00100072/A0000397.
-  Images are kept out of git (`images/`).
+All three are in the Archivio di Stato di Firenze, Mediceo avanti il Principato (MAP). Images from the ASF MAP viewer
+(full server size, 1272 px wide), fetched with `getdoc.py FILZA DOC` into `img/` (git-ignored).
 
-## 6 Nov 2026: first session
+| Catalogue | MAP | Date as written | Writer | State |
+|---|---|---|---|---|
+| 2307 | LXXXIX 142 (recto; verso is show-through plus endorsement) | "In Roma a dì 16 di gennaio 1478" | Giovanni Mazzinghi (verso: "1478 ad 16 di gennaio / da G. Mazinghi / Cifra") | bare: about 40 lines of cipher words with clear connectives, no decipherment |
+| 2320 | CXXXVII 252 (recto) | "a dì 13 di gennaio 1478" | unsigned (same signs and hand as 2307) | bare: about 17 lines, no decipherment |
+| (lead 2308, closed read) | LXXII 170 (recto) | "a dì 2? di gennaio 1478" | same system | the key source: a decipherment written over the cipher words in a second hand |
 
-**Prior art.** The vetting record on catalogue 2307 (6 Nov 2026) already covers DECODE (no record), Tomokiyo (no MAP
-item), Lasry (GL.htm, Siena 2308 report: no), Lorenzo's *Lettere* II and III (no citation of 89/142) and the Google
-Books feed. Nothing added this session; no decipherment of this letter is known.
+**Dating.** All three say "gennaio 1478". A Florentine writer counted the year from 25 March, so this is very probably
+January **1479** in modern style: nine months after the Pazzi conspiracy (26 April 1478), during the Pazzi War, with
+Florence under Sixtus IV's interdict. 2307 is headed "In Roma". The overnight vetting (batches n08, n10, c32, c33)
+called them January 1478 and Lorenzo's *Lettere* II-III were searched for both years without a hit; the catalogue
+entries are corrected to "January 1478 st. fior. (1479)".
+
+## The system (first look)
+
+Words are enciphered one by one and left as words, separated by spaces or dots; clear words ("com[e]", "che", "quanto",
+"papa", numerals) stand between them. The signs are letter-like (o, +, double-barred crosses, q, 4, r, z, t, s, b, m,
+n, l, p, 8, x, =). Probably a homophonic substitution of letters with word division kept. The glossed letter LXXII 170
+gives cipher-word / plain-word pairs.
+
+Not the system of `targets/siena11` (Acciaiuoli, Rome, June 1478, Lasry's key).
+
+## Plan
+
+1. Glyph inventory and transcription of LXXII 170 with its glosses (`glyphs.md`, `t170.tsv`).
+2. Transcribe 2320 and 2307 with the same tokens.
+3. Fit the key on the 170 pairs; hold out a share of the pairs to test it.
+4. Decipher 2320 and 2307; read, translate, check against the 1479 events.
+
+## Prior work checked
+
+- Lorenzo de' Medici, *Lettere* II and III (Google Books ids 1hpdAAAAMAAJ, MBxdAAAAMAAJ): no citation of LXXXIX 142
+  or CXXXVII 252 (Chrome passes c32, c33, 6 Nov 2026). The Pazzi War letters of early 1479 fall in vol. III-IV;
+  vol. IV was searched for LXXII 171 only. To repeat for these two shelfmarks.
+- DECODE has no MAP records; Tomokiyo and Lasry's GL.htm have nothing on them (vetting batch n08).
+
+## 6 Nov 2026: 2307 key recovered from its own ciphertext, read in part (parallel session, PR #301)
+
+This section was worked in a parallel session from the catalogue 2307 task prompt, before the plan above was
+merged in; its files are `transcription_89_142_v1.txt`, `reading_89_142.txt`, `key.md`, `solve.py`, `measure.py`,
+`decode_lines.py`, `WORKLOG.md` (images in `images/`, git-ignored). Steps 2-4 of the plan are done for 2307 only;
+step 1 (the 170 pairs) is still the way to settle the merged sign classes. 2320 is not touched.
 
 **System.** Monoalphabetic substitution in letter-like signs, word division kept, numerals for persons, barred p for
 *per*, many clear words. About 1,050 cipher signs in 189 cipher words, plus about 190 clear words. The key is in
@@ -45,6 +77,8 @@ dicono mille novelle"; "dua travestiti"; "gl'imbasciadori lucchesi"; "lettere de
 the papal interdict). Rome is implied by the papal news and the ambassadors; no place is written.
 
 ## Remaining gaps
+
+- 2320 (CXXXVII 252): not transcribed yet; same signs, so the 2307 key should apply.
 
 - Sign classes the 1272-px scan does not separate (o, 4, H, b/6, q): values chosen from context; about 30 words
   carry a doubt from this. Not an outside blocker yet: the sibling key rebuild has not been done.
