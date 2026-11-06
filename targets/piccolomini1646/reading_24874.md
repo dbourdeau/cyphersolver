@@ -2,9 +2,10 @@
 
 Image: Vlnas 2017, appendix zip P_lohy_A_a_B.zip (theses.cz/id/p3p2kb), frame 24874.jpg (original: SOA Zámrsk,
 Rodinný archiv Piccolominiů, inv. 24874). The frame begins in mid-letter; 19 cipher lines,
-then 4 clear lines. Key: `key_frozen.tsv` (Vlnas 2017, table 3). Status: **read in part**.
+then 4 clear lines. Key: `key_frozen.tsv` (Vlnas 2017, table 3). Status: **decoded, not read** (reading review, 6 Nov 2026: 2 of
+6 cipher sentences read; the sentence check in Italian finds 1 of 8 cipher sentences clean).
 
-Counts (`python scripts/check_marks.py`): 116 words; **76 verbatim from the signs (65.5%)**, of which 33 (28.4%)
+Counts (`python scripts/check_marks.py`): 116 words; **76 decoded verbatim from the signs (65.5%; not a read share)**, of which 33 (28.4%)
 need no s/i or g/q/u/v class choice and 29 (25.0%) contain no S, G or 5; 6 with a marked repair; 7 guessed from
 context; 27 holes. Verbatim plus marked repairs: 82 (70.7%). 77 class signs are resolved by context in the read words.
 

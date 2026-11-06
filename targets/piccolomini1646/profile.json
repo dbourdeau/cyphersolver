@@ -1,11 +1,11 @@
 {
  "schema_version": 1,
  "target": "piccolomini1646",
- "title": "Two Italian cipher letters to Ottavio Piccolomini, c. 1646 (catalogue 2358; SOA Zámrsk, RA Piccolomini inv. 24874 and 24876): Vlnas's 2017 key for the neighbouring inv. 24873 applied; both letters read in part, writer not identified",
+ "title": "Two Italian cipher letters to Ottavio Piccolomini, c. 1646 (catalogue 2358; SOA Zámrsk, RA Piccolomini inv. 24874 and 24876): Vlnas's 2017 key for the neighbouring inv. 24873 applied; both letters decoded, not yet read, writer not identified",
  "documents": [
   {
    "id": "24874",
-   "read": "read in part",
+   "read": "not read",
    "shelfmark": "SOA Zámrsk, Rodinný archiv Piccolominiů (Náchod), inv. č. 24874 (one frame; Vlnas 2017 appendix B21)",
    "date": "c. 1646 (undated on the frame; the neighbouring 24873_2 is dated 1646)",
    "year": 1646,
@@ -37,7 +37,7 @@
   },
   {
    "id": "24876",
-   "read": "read in part",
+   "read": "not read",
    "shelfmark": "SOA Zámrsk, Rodinný archiv Piccolominiů (Náchod), inv. č. 24876 (one frame; Vlnas 2017 appendix B22)",
    "date": "c. 1646 (undated on the frame)",
    "year": 1646,
@@ -198,7 +198,7 @@
   {
    "date": "2026-11-06",
    "kind": "verification",
-   "what": "Independent check (VERIFY.md): blind copy of 11 lines (357 signs) of the two letters and 2 held-out lines before the solver's files were opened; about 7 solver errors and 15 unresolved signs; key and statuses confirmed. Found three places in 24874 where the transcription had followed the sense against the passes, and asked for strict counts and an honest account of the held-out excerpt.",
+   "what": "Independent check (VERIFY.md): blind copy of 11 lines (357 signs) of the two letters and 2 held-out lines before the solver's files were opened; about 7 solver errors and 15 unresolved signs; key confirmed; the verifier's \"read in part\" was lowered to \"decoded, not read\" at reading review (6 Nov 2026). Found three places in 24874 where the transcription had followed the sense against the passes, and asked for strict counts and an honest account of the held-out excerpt.",
    "result": "worked"
   },
   {
@@ -206,10 +206,16 @@
    "kind": "transcription",
    "what": "After the check: 24874 L09 and L12 written as the passes saw them (6, l; a blotted sign as [?]); three missed or misread null signs added in 24876. politico and avertimenti are now marked repairs; 24874 verbatim fell from 78 to 76 of 116.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "reading",
+   "what": "Reading review, independent of the solver: each cipher sentence read against the translation and three lines per letter against the photograph. 24874: 2 of 6 cipher sentences read, the others have holes or guesses (sentence check in Italian: 1 of 8 clean). 24876: 1 of 3 reads, with holes at its head (0 of 2 scored clean). Holes in most sentences, so both letters were lowered from \"read in part\" to \"decoded, not read\" and the target to \"not read\".",
+   "result": "partial"
   }
  ],
  "outcome": {
-  "class": "read in part",
+  "class": "not read",
   "key": "recovered",
   "method": "read after matching with key from external sources",
   "method_basis": "V. Vlnas's key (2017, ch. 4.2, table 3), recovered by him from the neighbouring letter inv. 24873 and not applied by him to 24874 or 24876 (his appendix B21, B22), was applied unchanged to both letters; our additions are 0 as a null, f as long s and class tokens for the s/5 and g/q/9 homographs.",
@@ -217,9 +223,6 @@
    "transcription",
    "decipherment with ambiguous key"
   ],
-  "fraction_read": 0.65,
-  "fraction_read_method": "measured",
-  "fraction_read_source": "scripts/check_marks.py: 108 of 166 words verbatim from the signs (24874: 76 of 116, 65.5%; 24876: 32 of 50, 64.0%); with no s/i or g/q/u/v class choice 47 of 166 (33 and 14). Marked repairs (6 and 4) are not counted as read.",
   "verification": [
    "independent verification",
    "key confirms"
@@ -229,7 +232,7 @@
    {
     "who": "lccompany",
     "role": "solution",
-    "note": "Vlnas's published key for inv. 24873 applied to 24874 and 24876, both read in part; the key is V. Vlnas's (he is not yet in contributors.json)",
+    "note": "Vlnas's published key for inv. 24873 applied to 24874 and 24876, both decoded, not read; the key is V. Vlnas's (he is not yet in contributors.json)",
     "date": "2026-11-06",
     "source": "V. Vlnas, Počítačová analýza šifrované korespondence rodu Piccolomini, BA thesis, Univerzita Hradec Králové 2017 (theses.cz/id/p3p2kb), ch. 4.2, table 3"
    },
@@ -255,10 +258,9 @@
     "reading": "reading_24874.md",
     "translation": "translation_24874.md",
     "language": "it",
-    "state": "read in part",
-    "read_share": 0.655,
-    "summary": "The writer, reporting for someone he calls 'l'arciduca mio signore', says that His Highness took great consolation from Piccolomini's letter and wishes a just and full report on the military and political government, since Piccolomini knows best which advices are needed; the clear tail announces the coming of Don Miguel de Salamanca. Archduke Leopold Wilhelm was named governor of the Spanish Netherlands at the end of 1646, which fits, but the text does not name him.",
-    "note": "Words 116: 76 verbatim from the signs (65.5%), of which 33 with no s/i or g/q/u/v class choice; 6 with a marked repair; 7 guessed from context; 27 holes. L01-L03 are mostly holes. 'dal' (L09) rests on a doubtful sign."
+    "state": "decoded, not read",
+    "summary": "An outline only (the letter is decoded, not read). The writer, reporting for someone he calls 'l'arciduca mio signore', says that 'Sua [...]' (the title is a hole) took great consolation from Piccolomini's [?letter] and wishes 'una giusta et per [...] relatione', since Piccolomini knows best which advices are needed; the middle mentions a 'modo et governo' and 'the political government'. The clear tail announces the coming of Don Miguel de Salamanca. Archduke Leopold Wilhelm was named governor of the Spanish Netherlands at the end of 1646, which fits, but the text does not name him.",
+    "note": "Reviewed 6 Nov 2026 against the translation and the photograph, independently of the solver. The cipher part has six sentences, and only two read: 'Desidera dunque una giusta et per [...] relatione, mentre lei sa meglio queli avertimenti [?che siano] necessarii' (one hole, one guess) and 'Di quelo so tralascio per non tediarla.' The middle (L03-L09: 'gran consolazione dalla di lei [?lettera] ... si esibisce di darli parte minutamente ... dal governo politico') gives an outline, but its two sentences carry 7 and 6 holes or guesses each. The opening has 11 holes or guesses in its 22 words (L01-L03). The close does not build a sentence either: L14-L20 have 10 holes in 33 words, and there is a hole in every clause. With language 'it', the sentence check finds 1 of 8 cipher sentences clean, and 15% on the file. Of the 76 words decoded verbatim, 43 rest on an s/5 or g/q/9 choice made by sense. Three sampled lines (L03-L05) match the photograph as far as letters 15-20 px high allow. Most sentences have holes, so the letter is decoded, not read. A further pass on L01-L03 and L14-L20, ideally from a clean scan, may change that. Words 116: 76 decoded verbatim from the signs (65.5%), of which 33 with no s/i or g/q/u/v class choice; 6 with a marked repair; 7 guessed from context; 27 holes. 'dal' (L09) rests on a doubtful sign."
    },
    {
     "doc": "24876",
@@ -268,10 +270,9 @@
     "reading": "reading_24876.md",
     "translation": "translation_24876.md",
     "language": "it",
-    "state": "read in part",
-    "read_share": 0.64,
-    "summary": "Two cipher passages between clear news: Bavaria, 'so that we must fight', complaints already answered; and 'the Duke of Bavaria wants peace by all means, so that he can consider the advantage we shall have'. The clear text reports prisoners' news of the enemy and, from Vienna, a journey to Linz and then Ratisbona. Fits Bavaria's moves toward a separate truce in late 1646 (Ulm, March 1647); context only.",
-    "note": "Words 50: 32 verbatim from the signs (64.0%), of which 14 with no class choice; 4 with a marked repair; 2 guessed; 12 holes. Another hand than 24874, same key."
+    "state": "decoded, not read",
+    "summary": "Two cipher passages between clear news (the letter is decoded, not read). Block A is fragments: Bavaria, 'so that we must fight', complaints already answered. Block B, with holes at its head: 'the Duke of Bavaria wants peace by all means, so that he [?can] consider the advantage we shall have'. The clear text reports prisoners' news of the enemy and, from Vienna, a journey to Linz and then Ratisbona. Fits Bavaria's moves toward a separate truce in late 1646 (Ulm, March 1647); context only.",
+    "note": "Reviewed 6 Nov 2026 against the translation and the photograph, independently of the solver. The cipher has 50 words in three sentences, and every sentence has holes. Block B holds after three opening holes and one guess: '[...] [...] [...] duca di Baviera vuoglia in tutti modi la pace, sì che [?puol] considerare l'avantaggio che noi havremo.' Block A does not build sentences. 'di Baviera non [?vengono] [...] [...] lo che si dobiamo battere [...] [...] [...] di lamentationi' has 6 holes or guesses in 17 words. 'tutta già se li risponde [...] [...] [...] et il dovere [...]' has 4 in 12. With language 'it', the sentence check finds no clean cipher sentence. Its clean sentences on the file (28%) are all in the clear passages, which are draft readings and are not counted. It also skips the second sentence of block A as too fragmentary to score. Of the 32 words decoded verbatim, 18 rest on an s/5 or g/q/9 choice made by sense. The sampled lines of both blocks match the photograph as far as letters 15-20 px high allow. Only one of three sentences reads, so the letter is decoded, not read, until block A reads. Words 50: 32 decoded verbatim from the signs (64.0%), of which 14 with no class choice; 4 with a marked repair; 2 guessed; 12 holes. Another hand than 24874, same key."
    },
    {
     "doc": "24873",
@@ -286,6 +287,11 @@
   ],
   "key_file": "key.tsv",
   "gaps": [
+   {
+    "item": "Neither letter builds sentences yet: 24874 reads in 2 of 6 cipher sentences, 24876 in 1 of 3",
+    "blocker": "illegible",
+    "detail": "Decoded verbatim, not read share: 24874 76 of 116 words (65.5%), 24876 32 of 50 (64.0%) (scripts/check_marks.py); with no s/i or g/q/u/v class choice 33 and 14. Open: 24874 L01-L03 and L14-L20, 24876 block A, ideally from a clean scan."
+   },
    {
     "item": "Holes: 27 words in 24874 (mostly L01-L03) and 12 in 24876",
     "blocker": "illegible",

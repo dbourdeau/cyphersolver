@@ -4,9 +4,10 @@ Image: Vlnas 2017, appendix zip P_lohy_A_a_B.zip (theses.cz/id/p3p2kb), frame 24
 Rodinný archiv Piccolominiů, inv. 24876). Clear opening (9 lines), cipher block A (5 lines,
 L01-L05 here), 2 clear lines, cipher block B (5 lines, L06-L10). Another hand than 24874, same system; this writer
 also mixes plain vowel letters (a, e, u) and w among the signs, which are nulls (Vlnas table 3 treats them so).
-Key: `key_frozen.tsv` (Vlnas 2017, table 3). Status: **read in part**.
+Key: `key_frozen.tsv` (Vlnas 2017, table 3). Status: **decoded, not read** (reading review, 6 Nov 2026: 1 of
+3 cipher sentences reads; the sentence check in Italian finds 0 of 3 cipher sentences clean).
 
-Counts (`python scripts/check_marks.py`): 50 words; **32 verbatim from the signs (64.0%)**, of which 14 (28.0%) need
+Counts (`python scripts/check_marks.py`): 50 words; **32 decoded verbatim from the signs (64.0%; not a read share)**, of which 14 (28.0%) need
 no s/i or g/q/u/v class choice and 10 (20.0%) contain no S, G or 5; 4 with a marked repair; 2 guessed from context;
 12 holes. Verbatim plus marked repairs: 36 (72.0%). 29 class signs are resolved by context in the read words.
 

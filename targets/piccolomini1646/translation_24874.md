@@ -1,7 +1,7 @@
 # 24874: English translation of the cipher part (and the clear tail)
 
 From the marked reading in `reading_24874.md`; holes kept as there (`[...]` not read, `[?word]` a guess from
-context). Status: read in part.
+context). Status: decoded, not read (draft translation as a reading aid).
 
 [...] am [...] [...] [...] Your Excellency will have received my [letter] of the [?13th] and [...] will have [...]
 [...]. His [...] [...] has [...] [...] great consolation from your [?letter], all the more to see [?the readiness] in

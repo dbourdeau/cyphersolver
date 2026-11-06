@@ -2,6 +2,10 @@
 
 > Published copy of the independent check of 6 Nov 2026, unchanged below this note. Its figures and file names
 > describe the folder before the fixes listed in NOTES.md ("Changes after the independent check").
+>
+> Addendum, 6 Nov 2026: the reading review recorded in NOTES.md ("Reading review") lowered both letters from "read in
+> part" to "decoded, not read" (holes in most sentences). Where this check says "read in part is correct", that
+> status no longer stands; its findings on the signs and the key are unchanged.
 
 WAINUT, 6 November 2026. Adversarial check of the solver's folder. Before writing section 1, the verifier read only NOTES.md,
 SIGN_CONVENTIONS.md and the scans. No transcription, decryption, reading or key file had been opened. (NOTES.md quotes
