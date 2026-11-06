@@ -5,6 +5,9 @@ A despatch to Charles X Gustav from Constantinople, June 1657 (it mentions "den 
 where it is dated and signed; image 115 was not read in this round). The letter is in clear Swedish; only single words
 and short phrases are in cipher. No decipherment is written anywhere on the page.
 
+Status: **not prose**: a list of 30 runs with our decode and English glosses, 31 of 40 words verbatim from the signs
+(77.5%). The cipher forms no sentences of its own; the clear text around the runs is approximate and only places them.
+
 ## Marked reading (checked by `scripts/check_marks.py`)
 
 Marks: `{x/y}` the reading has x where the signs give y; `[nn]` unidentified code; `[...]` groups lost in the binding

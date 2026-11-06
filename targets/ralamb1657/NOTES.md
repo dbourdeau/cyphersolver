@@ -4,9 +4,10 @@ WAINUT, 6 November 2026. Work done with AI language-model agents viewing the ima
 the signs. An independent AI language-model agent that took no part in the solve checked the folder (`VERIFY.md`); the
 fixes it asked for are listed under "Independent verification and what changed".
 
-Status (contributor's): image 104 **read** (one short run, 4 words); image 114 **read in part** (31 of 40 words
-verbatim from the signs, 77.5%). Images 22-23 and 75 carry a contemporary decipherment and are used only as the key
-source and the held-out test; they are not claimed as read.
+Status (contributor's, after the maintainer's review of 6 Nov 2026): image 104 **not prose**, one deciphered phrase
+(4 of 4 words verbatim); image 114 **not prose**, a list of 30 runs (31 of 40 words verbatim from the signs, 77.5%).
+Images 22-23 and 75 carry a contemporary decipherment and are used only as the key source and the held-out test; they
+are not claimed as read.
 
 ## Documents
 
@@ -18,8 +19,8 @@ Riksarkivet, Diplomatica Turcica, SE/RA/2119/2119.1/I/2/2, "E.o. ablegaterna Cla
 |---|---|---|
 | 22-23 | letter of Clas Rålamb, Constantinople 27 May 1657 (end on 24); code with a decipherment written over the numbers | key source (`pairs_022_023.txt`) |
 | 75 | copy of a letter of 22 May 1657, signed Clas Rålamb; code with decipherment above | held-out test (`transcription_heldout_075.txt`) |
-| 114 | letter of June 1657 (continues on 115); 30 bare runs, no decipherment | **read in part** (`reading_114.md`) |
-| 104 | letter after 14 June 1657; one bare run of 33 groups, no decipherment | **read** (`reading_104.md`) |
+| 114 | letter of June 1657 (continues on 115); 30 bare runs, no decipherment | **not prose**, list of runs (`reading_114.md`) |
+| 104 | letter after 14 June 1657; one bare run of 33 groups, no decipherment | **not prose**, one deciphered phrase (`reading_104.md`) |
 
 Links: https://sok.riksarkivet.se/bildvisning/40008933_00022, _00023, _00075, _00104, _00114.
 
@@ -99,14 +100,15 @@ Limits of this test, stated plainly:
   5 where groups are lost in the binding of the volume (L02, L03, L06, L09, L14), 3 with a code not yet identified
   (15, 93, 97). The 93 in L15 is written over another figure and is transcribed `93?`; it may be 97 (both are open codes,
   so the hole stays a hole). Without the two bare-run context values 67 p and 7 z, 29 of 40 words would be verbatim.
-  Status: **read in part**. Content: the Porte's assurance and how firmly "what they have once written stays
-  written"; a mutiny in the camp in which the troops seized the Vizier, brought him to the Sultan and wanted him put to
+  Status: **not prose** (a list of runs; the cipher forms no sentences of its own). Content: the Porte's assurance and
+  how firmly "what they have once written stays written"; a mutiny in the camp in which the troops seized the Vizier, brought him to the Sultan and wanted him put to
   death, and the Sultan barely got him off by great intercession; the new Mufti, said to plan with the Tatar Khan and
   the Pasha of Silistra to join forces in support of the Russian. The clear frame given in the reading is an approximate
   working transcription; the cipher words in it copy the marked reading.
 - **Image 104**: one short run (one phrase, 33 groups), 4 words, all verbatim: "romerske keiserlige residentens tålk",
   the interpreter of the Imperial (Habsburg) Resident, whom the Vizier uses. Every value used comes from a contemporary
-  gloss (the frozen key, plus 50 k from the image-75 gloss). Status: **read**, on a short text.
+  gloss (the frozen key, plus 50 k from the image-75 gloss). Status: **not prose** (one deciphered phrase, no ciphered
+  sentence to score).
 
 These two are bare letters, so this is a break with a key rebuilt from the sibling decipherments, not a transcription of a
 decipherment. The glossed letters 22-23 and 75 are only the key source and the test; they are not claimed as read.
@@ -139,6 +141,14 @@ Verdict: confirm, with minor fixes, none changing a status. Fixes made on 6 Nov 
 6. The freeze is now recorded (file times and hash above), with the post-freeze edit of the pairs file disclosed.
 
 None of these changes the decryptions or the word counts (`check_marks.py` gives the same figures before and after).
+
+**6 Nov 2026, after the maintainer's review.** The reading check asked for a `reading_review` on both entries. Both bare
+images are short cipher runs set into letters in clear Swedish: the cipher does not build sentences of its own, and the
+only sentences are in the clear text around it, which is an approximate working transcription and not our decipherment.
+Following the precedent of other targets (runs set into a clear letter, a single cipher word in a clear holograph), both
+entries are now marked **not prose**: 114 as a list of 30 runs with glosses, 104 as one deciphered phrase. The `read_share`
+fields were removed and a `reading_review` was added to each (114 grade B, 104 grade A). No count changed: 31 of 40 words
+verbatim for 114, 4 of 4 for 104.
 
 ## Remaining gaps
 

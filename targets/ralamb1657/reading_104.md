@@ -12,7 +12,8 @@ The clerk put a word space after "rom" (47 69 42 . 8 10 6 13 82); read as one wo
 Code 50 (k) is not in the frozen key; it was added after the held-out test, is backed by the contemporary gloss of image 75
 (skatt), and holds at all three occurrences (75 skatt, 114 skrifuit, here). Every other value used here is in the frozen key.
 
-Status: **read** (4 of 4 words verbatim from the signs), on a short text: one phrase.
+Status: **not prose**: one deciphered phrase of 4 words set into a clear letter, all 4 verbatim from the signs, with no
+holes. There is no ciphered sentence to score, so it is labelled not prose rather than read; the phrase itself is deciphered.
 
 Frame (clear text approximate): "... Wiziren plägar der till bruka den **romerske keiserlige residentens tålk**, medh hwilken
 iagh ..."
