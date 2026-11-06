@@ -292,6 +292,33 @@
    "kind": "verification",
    "what": "Merged reading re-aligned (align91.py): 2,025/2,965 certain (0.683), 2,261 with uncertain words and 15 emendations (0.763); 710 unread, every unread piece given a blocker.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "language-model scoring",
+    "contextual inference"
+   ],
+   "what": "Fourth pass: dictionary lattice allowing one miswritten digit per word (wordfit.py --slip), two parallel readers; a slip accepted only as a substitution between neighbouring codes or look-alike digits, with the clause then reading. 20 slips accepted (quanto, S.M.ta, di x2, considerandosi, nimico, facendosi sarebbe, apresso, interesse, li facultà; incarico, trauaglio, questo, dano, imperator, qualonche), seven candidates refused.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "language-model scoring"
+   ],
+   "what": "Code 23 tested: its 13 occurrences in read text all split as code + 3 (a); on the six unread runs no value (ci, ca, ce, co, cu, che, ti, ta, qua, gi) yields a non-padding word. 23 is not used in this letter. No digit group recurs across the unread runs (only 8048, three times), so no missing code word.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "verification",
+   "what": "Merged reading re-aligned (align91.py): 1,998/2,965 certain (0.674), 2,362 with uncertain words and 35 one-digit emendations (0.797); 609 unread.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -301,12 +328,12 @@
   "method_basis": "Meister's printed key no. 2 for Poggio's cipher (Chigi M II 49), not previously tied to this letter, matched and applied; corrected on the letter (b/c 02, s/z/et 1, null 11, ci 24, co 26).",
   "fraction_read_method": "measured",
   "fraction_read_source": "reading.txt aligned by align91.py; cipher digit tokens of the image re-read (2,965 after the third pass restored an overwritten pair at 64v.11), certain words and nulls counted read; uncertain words, emended digits and {..} unread counted unread",
-  "fraction_read": 0.683,
-  "fraction_coherent": 0.763,
+  "fraction_read": 0.674,
+  "fraction_coherent": 0.797,
   "codes_open": {
-   "open": 2,
+   "open": 0,
    "total": 15,
-   "tokens_open": 4
+   "tokens_open": 0
   },
   "verification": [
    "key confirms"
@@ -349,14 +376,9 @@
     "detail": "corroded line starts and ends"
    },
    {
-    "item": "{4 0} (S.M.?), 2 6 where 'di' is wanted, 23 undetermined",
+    "item": "clear digit stretches on 64r.16-19, 64v.6-21, 65r.2-3, 65r.5-6, 65r.8-11, 65r.13-14, 65r.20-22",
     "blocker": "open-codes",
-    "detail": "not in Meister's print; no context narrows them"
-   },
-   {
-    "item": "clear digit stretches on 64r.16-19, 64v.4-21, 65r.1-4, 65r.8, 65r.13, 65r.15, 65r.21-22",
-    "blocker": "open-codes",
-    "detail": "digits sharp, no word or code of key 2 fits after three passes with cribs and a dictionary lattice; clerk's slips or codes outside the printed table"
+    "detail": "digits sharp, no word of key 2 fits after four passes, the last allowing one miswritten digit per word: words not found, clerk's insertions or omissions, or codes outside the printed table"
    }
   ],
   "texts": [
@@ -375,18 +397,18 @@
     ],
     "state": "read in part",
     "language": "Italian",
-    "read_share": 0.683,
+    "read_share": 0.674,
     "summary": "Farnese answers for Paul III the Emperor's demand that the Pope declare against France after the Algiers campaign: the Pope will do all his rank and honour allow and join against the Turk with all his forces, but branding the King of France the Turk's ally would need a condemnation he cannot give, would cost the Holy See the reputation it needs, and would push others to leave its obedience and seize church goods as England and the Lutherans did; hope rests on the two legates, and no remedy but peace.",
     "reading_review": {
      "grade": "B",
      "by": "Claude (Opus 5.5)",
      "date": "2026-11-06",
-     "note": "The read stretches build coherent Italian sentences across all three pages (the refusal to declare against France, the Turk, the legates, peace); holes remain in many lines of 64r.16-19, 64v.10-21 and 65r.1-4 and the corroded 65r.15-18, so the reading is coherent but holed, normalised in reading_64_en.md and reading_65r_en.md."
+     "note": "The read stretches build coherent Italian sentences across all three pages (the refusal to declare against France, the Turk, the legates, peace); after the fourth pass (one clerk's slip per word, 35 one-digit emendations in all, every slip word marked uncertain) holes remain in 64r.16-19, 64v.6-21 and the corroded 65r.15-18, so the reading is coherent but holed, normalised in reading_64_en.md and reading_65r_en.md."
     }
    }
   ],
   "key_file": "k2d.py",
-  "notes": "Read in part after three reading passes; every remaining gap has a blocker (NOTES Remaining gaps). Written up 2026-11-06. DECODE queue entry under farnese1541.",
+  "notes": "Read in part after four reading passes (the fourth allowing one clerk's slip per word); every remaining gap has a blocker (NOTES Remaining gaps). Written up 2026-11-06. DECODE queue entry under farnese1541.",
   "contribution": [
    "transcription",
    "decipherment with ambiguous key",

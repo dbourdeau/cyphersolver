@@ -1,5 +1,6 @@
 {
  "keys": [
+{"id": "k-r5314", "label": "Angelus cum cifra Vincentij: the Venice envoys of 1446 (ASMi Carteggio Sforzesco cart. 1597 no. 14, DECODE R5314)", "kind": "DECODE key record", "by": "Sforza chancery (18th-century archive copy)", "year": 1446, "note": "Homophonic alphabet (two to five signs for the common letters), a vowel-consonant syllable table, fifteen word signs, a name column (stat = lo Duca de Milano) and nulls. Headed for Johannes de Stavolis, Augustinus, Baptista, Matheus and Vincentius. Reads Contucio's report of 7 Dec 1446 (BnF ital. 1583 f. 148) and Angelo Simonetta's letter of 30 Sept 1446 (f. 89, with its clear text f. 90)."},
 {"id": "k-smolensk1633", "label": "Smolensk siege cipher of June 1633 (marked digits)", "kind": "rebuilt here", "by": "cyphersolver", "year": 1633, "note": "Simple substitution on 24 signs, digits told apart by where a cross stroke sits; rebuilt from the letter of the besieged to Radziwill of 1 June 1633 with W.X.Mci of the clear close as first crib."},
 {"id": "k-imperial-1544", "label": "Imperial Cipher of 1544-1554 (Bertomeu Masiá's reconstruction, pictured by Tomokiyo)", "kind": "scholar's key", "by": "Bertomeu Masiá; Tomokiyo", "year": 1544, "found": 2009, "note": "Base shape for the consonant, mark for the vowel. Extended by hand from the Estense letters, Nov 2026 (targets/gonzaga1549/sign_values.tsv)."},
 {"id": "k-voikov1921", "label": "Voikov 1 June 1921 column key (24 columns)", "kind": "rebuilt here", "by": "cyphersolver", "year": 1921, "note": "Recovered from the ciphertext by annealing."},
@@ -2449,6 +2450,7 @@
 {"key": "k-voikov1921", "target": "voikov1921", "how": "rebuilt from", "note": "Recovered from the ciphertext by annealing."},
 {"key": "k-lejava1921", "target": "lejava1921", "how": "rebuilt from", "note": "Recovered from the ciphertext by annealing."},
 {"key": "k-vierra-feynman", "target": "feynman", "how": "read unchanged", "note": "re-enciphering both plaintexts: 228 of 231 positions of no. 3, first 118 characters of no. 2"},
+{"key": "k-r5314", "target": "contucio1446", "how": "read unchanged", "note": "225 of 226 cipher signs of f. 148; the code word pec = Cosimo added from the contemporary interlinear gloss on f. 148v"},
 {"key": "k-r5316", "target": "birago1448", "how": "read unchanged", "note": "all 513 signs of f. 33 on the key; checked against the clear duplicate f. 32"},
 {"key": "k-r5323", "target": "visconti1446", "how": "read unchanged", "note": "reads all twenty R5323 slips of Nov 1446 - Mar 1447; checked against the translations ff. 6 and 9 (96.5%, 96.9%); name signs and a few homophones added from use"},
 {"key": "k-r5324", "target": "visconti1447", "how": "read unchanged", "note": "reads f. 15; checked against the clear text f. 16 (96.0%); three code words not on the copy added"},
@@ -4657,6 +4659,7 @@
   "urquhart": "No cipher key: a rule-based word puzzle, read by applying the stated rule (see the write-up)."
  },
  "tried": [
+{"key": "k-r5314", "target": "it1583", "note": "cart. 1597 no. 14: letter signs do not match ff. 68/70 (Sept 2026)"},
 {"key": "k-desnoyers1656", "target": "desnoyers1659", "note": "no sign of its alphabet in the glossed passages; 0 agreements in the 41 groups 3-39 (200 permuted controls: mean 0.001); a different table"},
 {"key": "k-r5324", "target": "visconti1446", "note": "its e signs are not the slips' e signs; does not fit the R5323 slips"},
 {"key": "k-r5323", "target": "visconti1447", "note": "does not fit f. 15 from its first signs"},

@@ -14229,7 +14229,7 @@
     "R91": {
      "decode_status": "Non-decrypted",
      "proposed": "Partially decrypted",
-     "note": "Cardinal Alessandro Farnese to Giovanni Poggio, nuncio in Spain, Rome [1]5 Dec 1541 (closing on f. 66r; cipher ff. 64r l.16 - 65r between clear passages on the Nuremberg diet and Buda). Enciphered in Meister 1906 key no. 2 (the Poggio cipher, Chigi M II 49), identified 5 Nov 2026 by the cyphersolver project; dotted codes follow Meister's rule (dot over the preceding digit). Read in part after three passes: 2,025 of 2,965 cipher digits as certain words (68.3%), 76.3% with uncertain words (key also has Francia = 000, Meister p. 177); the Pope refuses the Emperor's demand for a declaration against France and argues for peace. The DECODE transcription has no dots and misses cancelled digits; an image re-read with dots is attached. The four document images are cleartext Farnese letters of summer 1542.",
+     "note": "Cardinal Alessandro Farnese to Giovanni Poggio, nuncio in Spain, Rome [1]5 Dec 1541 (closing on f. 66r; cipher ff. 64r l.16 - 65r between clear passages on the Nuremberg diet and Buda). Enciphered in Meister 1906 key no. 2 (the Poggio cipher, Chigi M II 49), identified 5 Nov 2026 by the cyphersolver project; dotted codes follow Meister's rule (dot over the preceding digit). Read in part after four passes: 1,998 of 2,965 cipher digits as certain words (67.4%), 79.7% with uncertain words and 35 one-digit emendations, 20 of them clerk's slips (key also has Francia = 000, Meister p. 177); the Pope refuses the Emperor's demand for a declaration against France and argues for peace. The DECODE transcription has no dots and misses cancelled digits; an image re-read with dots is attached. The four document images are cleartext Farnese letters of summer 1542.",
      "reading": "targets/farnese1541/reading.txt",
      "transcription": [
       "targets/farnese1541/reread/64r.txt",
@@ -14257,6 +14257,64 @@
   },
   "deboli1787": {
    "skip": "Not on DECODE: AGAD Zbiór Popielów 3 and 444 have no DECODE records; the transcribed key of 1783, the transcriptions and the readings are in targets/deboli1787/."
+  },
+  "contucio1446": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/contucio1446.html",
+   "key": {
+    "decode": "R5314",
+    "lang": "IT"
+   },
+   "cite": "cyphersolver targets/contucio1446/NOTES.md (6 Nov 2026)",
+   "fields": {},
+   "records": {
+    "R7911": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Contucio, one of Francesco Sforza's envoys at Venice, to Sforza, Venice, 7 Dec 1446 (BnF italien 1583 f. 148). Mostly clear; nine cipher lines (f. 148r 26-30, 50-51; f. 148v 6-7) deciphered with the envoys' key, ASMi Carteggio Sforzesco cart. 1597 no. 14 (R5314): 225 of 226 cipher signs; open: the code word utinam. The two verso lines carry a contemporary interlinear decipherment (pec = Cosimo). Language Italian.",
+     "reading": "decode_updates/decryptions/R7911.txt",
+     "sent": false
+    },
+    "R7912": {
+     "decode_status": "Non-decrypted",
+     "proposed": "N/A (no cipher)",
+     "note": "No cipher on this image (labelled f. 151): a composite photograph of clear leaves of BnF italien 1583, a corrected minute in Francesco Sforza's voice and his letter from Pesaro, 7 Dec 1446, to Boccaccino and Nicodemo, with the foot of the envoys' joint letter of 7 Dec laid over it. All in clear Italian.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false
+    },
+    "R7913": {
+     "decode_status": "Non-decrypted",
+     "proposed": "N/A (no cipher)",
+     "note": "No cipher: the joint letter of Sforza's envoys at Venice (Giovanni Stavoli, Agostino, Contucio, Matteo [Giordani], Vincenzo [Amidani]) to Francesco Sforza, Venice, 7 Dec 1446 (BnF italien 1583 f. 152), wholly in clear Italian.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false
+    },
+    "R7900": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Angelo [Simonetta] to Francesco Sforza, Venice, 30 Sept 1446 (BnF italien 1583 f. 89), headed 'Cum cifra Vincentii'. Its contemporary clear text is R7901 (f. 90, 'Explication du chiffre'); key ASMi cart. 1597 no. 14 (R5314), checked on the code word stat (lo Duca de Milano).",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false
+    },
+    "R7901": {
+     "decode_status": "Non-decrypted",
+     "proposed": "N/A (clear text)",
+     "note": "Not a cipher: the contemporary clear text of R7900 (BnF italien 1583 f. 90, pencilled 'Explication du chiffre'), Angelo [Simonetta] to Francesco Sforza, Venice, 30 Sept 1446.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false
+    },
+    "R5314": {
+     "decode_status": "N/A (key record)",
+     "proposed": "unchanged (key record)",
+     "note": "Key sheet headed 'Angelus cum cifra Vincentij' and 'Johannes de Stavolis, Augustinus, Baptista, Matheus, et Vincentius', Sforza's envoys at Venice in 1446. It reads BnF italien 1583 f. 148 (R7911, Contucio, 7 Dec 1446) and f. 89 (R7900, 30 Sept 1446). The record's date 1450-1555 can be narrowed to 1446. Add to the code column: pec = Cosimo (from the gloss on f. 148v).",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false
+    }
+   }
   }
  }
 }

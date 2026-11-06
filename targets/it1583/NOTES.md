@@ -2,6 +2,10 @@
 
 Status: in progress. f. 68 read; f. 70 decoded, not read (reading audit, 22 Oct 2026).
 
+**6 Nov 2026: catalogue 1309 (ff. 148, 151, 152, Venice 7 Dec 1446) is `../contucio1446/`.** Only f. 148 (R7911,
+Contucio) has cipher; it reads with the Vincentius key, ASMi cart. 1597 no. 14 (R5314), 225 of 226 signs. ff. 151-152
+(R7912, R7913) are clear. The R7900/R7901 pair was checked there for the key's code word *stat*.
+
 **29 Oct 2026: the Duke's own cipher slips of Nov-Dec 1446 in this volume (ff. 110-158) are `../visconti1446/`**, read
 with his key (DECODE R5323, second copy R1857 image 17), not the f. 68/70 alphabet. Correction to the ark noted in
 `bnf.htm`: btv1b10033686w is ital. 1587; ital. 1583 is not on Gallica (BnF Archives et manuscrits gives microfilm

@@ -2,6 +2,7 @@
 
   python wordfit.py 64v.10 36 64v.11 4      lattice over 64v.10 pos 36 .. 64v.11 pos 4
   python wordfit.py 64v.12                  the whole line
+  python wordfit.py --slip 65r.1            allow one wrong digit per word (shown as word<12>16=di>)
 
 Words come from ../vatican5/it_words.json (30,000 sixteenth-century word forms) plus their degeminated spellings
 (the clerk writes tuto, fato, Ingiltera). Each word is walked through a trie from every start position over the
@@ -39,35 +40,42 @@ def trie_of(W):
     return T
 
 
-def fits(i0, i1, T, W):
-    """[(start, end, word, score, path)] for every dictionary word spelled by FLAT[start:end] inside [i0, i1)."""
+SLIP = -6.0
+
+
+def fits(i0, i1, T, W, slips=0):
+    """[(start, end, word, score, path)] for every dictionary word spelled by FLAT[start:end] inside [i0, i1);
+    with slips=1, at most one code per word may be one digit off (probe.slip_options, cost SLIP, marked '!')."""
     res = []
     for s in range(i0, i1):
-        stack = [(s, T, 0.0, [])]
+        stack = [(s, T, 0.0, [], 0)]
         while stack:
-            i, node, pen, path = stack.pop()
+            i, node, pen, path, ns = stack.pop()
             if '$' in node and i > s:
                 res.append((s, i, node['$'], W[node['$']] + pen, path))
             if i >= i1:
                 continue
-            for n, c, o, f in probe.options(i):
+            opts = probe.options(i) + (probe.slip_options(i) if ns < slips else [])
+            for n, c, o, f in opts:
                 if c == '_':
                     for ch in 'aeiou':
                         if ch in node:
-                            stack.append((i + 1, node[ch], pen - 3, path + [f'_={ch}']))
+                            stack.append((i + 1, node[ch], pen - 3, path + [f'_={ch}'], ns))
                     continue
-                if not o:
+                if not o or i + n > i1:
                     continue
                 nd = node
                 for ch in o:
                     nd = nd.get(ch) if nd else None
                 if nd:
-                    stack.append((i + n, nd, pen + (STAR if f else 0), path + [f'{c}={o}{f}']))
+                    stack.append((i + n, nd, pen + (SLIP if f == '!' else STAR if f else 0), path + [f'{c}={o}{f}'],
+                                  ns + (f == '!')))
     return res
 
 
 def main():
-    a = sys.argv[1:]
+    a = [x for x in sys.argv[1:] if x != '--slip']
+    slips = 1 if '--slip' in sys.argv else 0
     lab0 = a[0]
     if len(a) == 1:
         i0, i1 = probe.span(lab0)
@@ -76,7 +84,7 @@ def main():
         i1 = probe.span(a[2], int(a[3]), int(a[3]))[1] if len(a) > 3 else probe.span(lab0)[1]
     W = load_words()
     T = trie_of(W)
-    F = fits(i0, i1, T, W)
+    F = fits(i0, i1, T, W, slips)
     by_s = {}
     for f in F:
         by_s.setdefault(f[0], []).append(f)
@@ -92,7 +100,8 @@ def main():
         if i + 1 < i1 and probe.FLAT[i][2] == 1 and probe.FLAT[i + 1][2] == 1:
             upd(i + 2, sc + NULL, path + ['|'])
         for s, e, w, v, p in by_s.get(i, []):
-            upd(e, sc + v, path + [w])
+            bad = [x for x in p if x.endswith('!')]
+            upd(e, sc + v, path + [w + (f'<{bad[0][:-1]}>' if bad else '')])
     print('best:', ' '.join(best[i1][1]), f'({best[i1][0]:.1f})')
     print()
     for s in range(i0, i1):
