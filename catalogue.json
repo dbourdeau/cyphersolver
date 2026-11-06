@@ -71307,6 +71307,164 @@
     "verdict": "open"
    },
    "repository": "riksarkivet"
+  },
+  {
+   "id": 2321,
+   "counted": true,
+   "year": 1478,
+   "date": "undated (filza CXXXVII is a miscellany of 1430s-1470s papers)",
+   "title": "\"Poscritto cifrato anonimo\": an 8-line postscript in what looks like the Mazzinghi 1478 sign set, bare",
+   "correspondents": "anonymous",
+   "place": "not stated",
+   "language": "Italian (symbol cipher with clear words)",
+   "region": "Italy",
+   "period": "15th century",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza CXXXVII, doc. 63",
+   "folio_note": "One strip, recto: 8 lines mixing clear words and cipher runs; verso blank. Inventory vol. 4 (p. 280): \"Poscritto cifrato anonimo. s. l., s. d., n. 63\".",
+   "cls": "B",
+   "status": "Bare (no gloss at 1000 px). Signs (x, ‡, H, dotted separators) resemble the January 1478 system of leads 2307/2308; not yet compared sign by sign.",
+   "why": "A short sibling of the 1478 cipher letters; if the sign set matches, the 72/170 key reads it.",
+   "importance": 2,
+   "solvability": 4,
+   "difficulty": 2,
+   "verify": "Fetch at full size; compare signs with MAP 72/170 and 137/252; apply the rebuilt key.",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=137&d=63&c=",
+     "label": "MAP filza 137, doc. 63"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=132645",
+     "label": "image id 132645"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=132646",
+     "label": "image id 132646"
+    }
+   ],
+   "source": "ASF Mediceo avanti il Principato (MAP) images + MAP printed inventory (archive.org OCR vols 1-3, ASF page images vol. 4), ASF Florence sweep, Nov 2026",
+   "score_note": "Scored from the images viewed during the ASF Florence sweep, 6 Nov 2026 (research/sweep_2026-11_asf_florence/)",
+   "access_note": "scans public on the ASF MAP site, no login, curl works: /map/ricerca/ricerca-su-filza/?f=<filza>&d=<doc> and IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (1600 px max)",
+   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza, document or correspondent; DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap for undated pieces.",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch n10",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP filza CXXXVII doc. 63 recto/verso at the server maximum, native 1264x437 (IIIF https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100137/A0000129.ptif and A0000130; riproduzione 132645-132646), two 1.6x bands",
+     "extent": "one strip, 8 lines on the recto, roughly half cipher runs and half clear words; verso blank (show-through only); no date, address or signature",
+     "cipher": "letter-like symbol cipher in the January 1478 sign set (x, ‡, ++, H, =, o, 6, 5, q, r forms) between clear words ('parlare', 'papa', 'ragione', 'in modo', 'loro anno sperato', 'mandato'); no interlinear, marginal or foot decipherment. Neighbours 137/62 (Giovanni di Cosimo, 29 May 1459, clear) and 137/64 (clear letter) carry no decipherment of it."
+    },
+    "prior_art": {
+     "decode": "DECODE: known.py (harvested DECODE dump) on 'Poscritto cifrato', 'CXXXVII, doc. 63', 'filza 137': only this lead and its sweep; batch n08 regex over research/catalogue_harvest/decode/list.json (10,106 records) found no ASF Mediceo avanti il Principato record at all.",
+     "tomokiyo": "cryptiana italian.htm Florence section (checked by n08 for the 1478 MAP letters): only Siena no. 11 and the Gabbrielli 1425 cipher; no MAP CXXXVII item.",
+     "lasry": "GL.htm (targets/gramont1529) has no Florentine or MAP item; Lasry's Florentine reading is Siena no. 11 (R4800), a different document and sign set.",
+     "edition": "MAP inventory vol. 4 p. 280 lists it only as 'Poscritto cifrato anonimo. s. l., s. d., n. 63': undated and unattributed, so no edition prints it as an item. If tonight's Chrome pass finds a printed decipherment of the January 1478 letters in Lorenzo, Lettere II-III, check whether it includes this postscript.",
+     "literature": "Web searches on 'Poscritto cifrato' and MAP CXXXVII found only general MAP pages; Vito's HistoCrypt 2025 paper and 1486-91 project do not list it."
+    },
+    "key_check": "Not tested. Same sign set as MAP LXXXIX 142 (lead 2307) and CXXXVII 252 (lead 2320); the glossed MAP LXXII 170 (lead 2308) gives the key.",
+    "key_held": "MAP LXXII 170 interlinear decipherment (lead 2308, ASF scan): pairs for this sign set rebuildable; not applied to this strip.",
+    "duplicates": "known.py 'Poscritto cifrato', 'CXXXVII, doc. 63', 'filza 137': only this lead and its sweep; not the postscript of 2307 or 2320 as filed (separate strip, different filza position); no catalogue entry or target.",
+    "verdict": "open",
+    "searches": [
+     {
+      "query": "\"Poscritto cifrato\" Mediceo avanti il Principato",
+      "result": "no hit on the phrase; only MAP inventory and Medici-archive pages, nothing on CXXXVII 63"
+     },
+     {
+      "query": "\"MAP CXXXVII\" (Google Books feed)",
+      "result": "citations of CXXXVII 44, 101, 322, 414 (Poliziano 1478) etc. in Governare l'alfabeto and Politien catalogues; no citation of doc. 63"
+     },
+     {
+      "query": "Mazzinghi cifra 1478 Simonetta (Google Books feed)",
+      "result": "no entries returned; no study of the January 1478 sign set or its postscript"
+     }
+    ]
+   },
+   "repository": "asf"
+  },
+  {
+   "id": 2324,
+   "counted": true,
+   "year": 1485,
+   "date": "undated (opens \"Magnifico Lorenzo\"; news \"da Napoli\")",
+   "title": "\"Magnifico Lorenzo\" cipher letter with news from Naples; scattered letters over a few signs, otherwise bare",
+   "correspondents": "unknown -> Lorenzo de' Medici",
+   "place": "not stated",
+   "language": "Italian (symbol cipher with clear words)",
+   "region": "Italy",
+   "period": "15th century",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza LXXII, doc. 216",
+   "folio_note": "One leaf, recto and verso full (about 35 lines a side, heavy show-through): opens \"Magnifico Lorenzo, a voi mi raccomando. Questo dì ... lettere da Napoli continenti come le cose ...\" then cipher runs (letters, digits, Greek-like signs) between clear words. Not flagged in the inventory; found by the vetting session.",
+   "cls": "B",
+   "status": "Mostly bare: a later hand wrote single letters or pairs (e, o, t, so, an ...) over some signs, a partial or attempted decipherment, not a running gloss. Those pairs are a start for the key.",
+   "why": "A long Laurentian cipher letter about Naples, unread, with a few sign values already noted on the page.",
+   "importance": 3,
+   "solvability": 4,
+   "difficulty": 3,
+   "verify": "Transcribe both sides at full size; collect the superscript values; solve the rest (homophonic substitution).",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=72&d=216&c=",
+     "label": "MAP filza 72, doc. 216"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79626",
+     "label": "image id 79626"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79627",
+     "label": "image id 79627"
+    }
+   ],
+   "source": "ASF Mediceo avanti il Principato (MAP) images + MAP printed inventory (archive.org OCR vols 1-3, ASF page images vol. 4), ASF Florence sweep, Nov 2026",
+   "score_note": "Scored from the images viewed during the ASF Florence sweep, 6 Nov 2026 (research/sweep_2026-11_asf_florence/)",
+   "access_note": "scans public on the ASF MAP site, no login, curl works: /map/ricerca/ricerca-su-filza/?f=<filza>&d=<doc> and IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (1600 px max)",
+   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza, document or correspondent; DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap for undated pieces.",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch n10",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP filza LXXII doc. 216 recto/verso at the server maximum, native 1272x1795 (IIIF https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100072/A0000517.ptif and A0000518; riproduzione 79626-79627), five 1.6x bands per side and 3x crops",
+     "extent": "one leaf written on both sides: recto about 33 lines (left column broken into short lines from line 13), verso 34 lines; clear passages: recto head 'Magnifico Lorenzo, a voi mi raccomando. Questo dì ... lettere da Napoli continenti come le cose ...' and a closing line, verso about 4 lines 'Seguendo, ho haute lettere dal Cambino ... e danari ci mandate ... le bombarde ...'; the rest cipher",
+     "cipher": "homophonic symbol cipher of digits, letters (8, g, z, m, n, A, R, M) and signs; many signs carry small superscript letters (o, e, n, m, t, s, d, 'so'/'50', w) in what looks like the same ink, over roughly a third of the signs. They are not a decipherment: read in order (verso line 1: e, n, o, w, w, e, w, e, o ...) they give no Italian, they include 'w' (not an Italian letter) and the same superscript sits over different base signs; whether they belong to the cipher's own notation or are isolated trial values cannot be told at 1272 px (the lead's 'later hand' is not confirmed). No running interlinear, marginal or foot decipherment on either side. Neighbours 72/215 (1514 code with its own gloss, different system) and 72/217 (Latin medical recipes) give none."
+    },
+    "prior_art": {
+     "decode": "DECODE: known.py (harvested DECODE dump) on 'LXXII, doc. 216', 'Napoli', 'Magnifico Lorenzo': only this lead and its sweep; batch n08 regex over research/catalogue_harvest/decode/list.json (10,106 records) found no ASF Mediceo avanti il Principato record at all.",
+     "tomokiyo": "cryptiana italian.htm Florence section: no MAP LXXII item and no Naples-news letter to Lorenzo; only Siena no. 11 (1478) and DECODE ASFi keys.",
+     "lasry": "GL.htm (targets/gramont1529): no Florentine item; no Lasry paper on MAP letters about Naples.",
+     "edition": "Undated and unattributed (inventory vol. 3 does not flag it as cipher), so no edition prints it as an item; Lorenzo, Lettere prints Lorenzo's own letters and its volumes run by date (III-IV for the 1478-80 Naples war, VIII-IX for 1484-86), none of which can be named for this letter. The Lettere IX review (Butters, 2002) and the 1484-85 volume were found in search, no MAP LXXII 216 citation.",
+     "literature": "Vito's 1486-91 encrypted-MAP project (Vienna profile) publishes no list; his HistoCrypt 2025 Capponi paper does not cover it; web searches on the letter's clear words found nothing."
+    },
+    "key_check": "Not tested. Candidate keys: LXXII 181 (Baccio Ugolini nomenclator with Re Ferrando, Duca di Calabria) and 178-188 in the same filza; CXXIV 184 (a glossed Naples-barons cipher of c. 1485-86) not compared.",
+    "key_in_volume": "MAP LXXII 178-188 key sheets (Alamanni, ser Andrea da Bologna, Baccio Ugolini, Soderini, Cambini, 'Diverse cifre'): not compared with this letter.",
+    "duplicates": "known.py 'LXXII, doc. 216', 'Napoli', 'Magnifico Lorenzo': only this lead and its sweep; no catalogue entry or target.",
+    "verdict": "open",
+    "searches": [
+     {
+      "query": "Lorenzo de' Medici \"lettere da Napoli\" lettera cifrata \"Magnifico Lorenzo\" bombarde esercito 1485 cifra Mediceo",
+      "result": "Guicciardini on the Naples journey, Lettere IX review and the 1484-85 volume; nothing on a cipher letter about Naples, bombards or money sent"
+     },
+     {
+      "query": "Marco Vito encrypted letters Medici archive 1486-1491 Mediceo avanti il Principato cipher",
+      "result": "Vito profile (database of encrypted MAP documents, no list published) and his Capponi polyalphabetic paper; MAP LXXII 216 not named"
+     },
+     {
+      "query": "\"MAP, LXXII\" (Google Books feed)",
+      "result": "citations of LXXII 77, 84, 248, 358, 364, 378, 387 etc. (Bibbiena, Poliziano, Lorenzo convegno); none of doc. 216"
+     }
+    ]
+   },
+   "repository": "asf"
   }
  ]
 }
