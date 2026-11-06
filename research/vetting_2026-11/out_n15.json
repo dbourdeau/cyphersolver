@@ -1,0 +1,181 @@
+{
+ "2354": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch n15",
+  "seen": {
+   "kind": "scan",
+   "where": "Vlnas 2017 appendix zip P_lohy_A_a_B.zip (theses.cz/id/p3p2kb), frames 24793.jpg and 24800.jpg, drawn on a canvas in Chrome and zoomed, 6 Nov 2026 (not saved)",
+   "extent": "24793: one page with about 16 lines of sign cipher (letters, digits, +, a triangle) between clear Italian lines, addressed to the Duca d'Amalfi; 24800: about 6 cipher lines in an Italian letter dated Insprugg 25 ... 1646, signed Claudia",
+   "cipher": "Sign substitution of the kind Vlnas rebuilt from inv. 24790 (his table 5); no interlinear or marginal decipherment on either frame (zoomed on 24793 lines 4-12). Frame labels inv. č. 24793 31/2 and inv. č. 24800 31/2."
+  },
+  "searches": [
+   {
+    "query": "Claudia de' Medici Ottavio Piccolomini 1646 cifra lettere Innsbruck",
+    "result": "Only biographies of Claudia (regency handed over 1646) and an OeStA Montecuccoli record; nothing on ciphered letters to Piccolomini or a decipherment."
+   },
+   {
+    "query": "Piccolomini archiv Náchod šifrovaná korespondence 1646 Zámrsk dešifrování",
+    "result": "Portafontium guide to RA Piccolomini, Mírka 2012 (Plzeň archives, Gallas-Piccolomini keys) and Crypto-World 3-4/2013; none treats Claudia's 1646 letters or inv. 24793/24800."
+   },
+   {
+    "query": "Vlnas \"Počítačová analýza šifrované korespondence rodu Piccolomini\"",
+    "result": "The thesis itself (read in Chrome): 24793 and 24800 are B07 and B12 of appendix B, not deciphered; ch. 4.3 deciphers 24790 only."
+   }
+  ],
+  "prior_art": {
+   "decode": "known.py on 24793, 24800, Claudia, Piccolomini, Zámrsk (harvested DECODE dumps): no DECODE record; Medici hits are ANC Niccolini and BnF Marie de Medici records only.",
+   "tomokiyo": "Cryptiana search (Tomokiyo Piccolomini cipher 1646) found no Claudia de' Medici or Piccolomini article; the 1646 Cryptiana items are English royalist letters.",
+   "lasry": "Local copy of Lasry's GL.htm has no Piccolomini, Claudia or Medici entry; no Lasry paper on Piccolomini found by search.",
+   "edition": "No edition of Claudia's letters to Piccolomini found. Vlnas 2017 (theses.cz/id/p3p2kb), STAG89021.pdf: ch. 4.3 prints table 5 and the text of inv. 24790 only; Vlnas's appendix B is titled 'Fotokopie šifrových textů, které nebyly v práci dešifrovány' (photocopies of cipher texts not deciphered in the thesis); his ch. 4 deciphers only 25039, 24873, 24790 and 25106.",
+   "literature": "Musílek & Hubálovský, HistoCrypt 2018 pp. 137-143 (proceedings PDF grepped): summarises Vlnas 2017 and shows only inv. 25039. Elster, Piccolomini-Studien (1911) and Barker's Piccolomini articles turned up in search with no cipher treatment of these letters."
+  },
+  "key_check": "Not applied here. Vlnas's table 5 (from inv. 24790, partly illegible signs and a few code groups) and the glossed sibling letters on the same microfilm are the obvious key; neither has been applied to 24793 or 24800 in print.",
+  "key_in_volume": "Same writer's letters on microfilm 31/2 carry interlinear decipherments (24784, 24786, 24788, 24789, 24794, 24796, 24799, 24806), not tested on these two frames.",
+  "key_held": "Vlnas 2017 table 5 (Claudia's sign substitution rebuilt from inv. 24790), printed in the thesis; not tested here.",
+  "duplicates": "known.py \"24793\" \"24800\" \"Claudia de' Medici\" \"Claudia\" \"Piccolomini\" \"Zámrsk\" (6 Nov 2026): only this lead's own rows and catalogue #577 (Claudia to Baden 1633, Karlsruhe, a different letter).",
+  "verdict": "open"
+ },
+ "2355": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch n15",
+  "seen": {
+   "kind": "scan",
+   "where": "Vlnas 2017 appendix zip (theses.cz/id/p3p2kb), frame 24854.jpg, viewed rotated and zoomed in Chrome, 6 Nov 2026 (not saved)",
+   "extent": "One page: 5 lines of long digit strings mixed with clear Italian, then \"Devotissimo Servidore\" and a digit signature (3127301016152...), plus a digit line at the foot",
+   "cipher": "Number cipher written as continuous digit strings; no gloss over or beside the lines (zoomed on the top block). The sibling 24852 (same signature) does carry interlinear glosses, e.g. \"hora stiamo trattando come si puotra\" over a digit line."
+  },
+  "searches": [
+   {
+    "query": "Ottavio Piccolomini 1646 informatore lettere in cifra numerica firma cifrata \"Devotissimo Servidore\" Spagna Fiandra",
+    "result": "Biographies and Barker 2011 (International History Review), which cites RAP 24988 (Formarini, 30 Mar 1646); nothing on this enciphered-signature writer or inv. 24854."
+   },
+   {
+    "query": "Rajlichová Piccolomini šifrovaná korespondence Francesco Ottavio bakalářská práce Pardubice",
+    "result": "Rajlichová 2011 (read in Chrome from dk.upce.cz): ciphered letters of Francesco Piccolomini 1655-56, inv. 7689-7695 etc.; no 1646 letter and no inv. 248xx."
+   },
+   {
+    "query": "HistoCrypt 2018 Piccolomini Musílek Vlnas encrypted correspondence Hradec Králové",
+    "result": "Musílek & Hubálovský 2018 summarise the thesis and show only inv. 25039; no decipherment of 24854."
+   }
+  ],
+  "prior_art": {
+   "decode": "known.py \"24854\" \"Piccolomini\" \"Amalfi\" on the harvested DECODE dumps: no record for RA Piccolomini or this writer.",
+   "tomokiyo": "No Cryptiana entry for a Piccolomini informant with a ciphered signature found by search; nothing for 1646 Piccolomini.",
+   "lasry": "GL.htm (local copy) and Lasry's papers: no Piccolomini item; the only Piccolomini in papers/lasry/targets.csv is a name in the R787 news letter.",
+   "edition": "No edition prints this letter. Vlnas 2017 (theses.cz/id/p3p2kb), STAG89021.pdf: inv. 24854 is B20 in appendix B, the frames not deciphered in the thesis.",
+   "literature": "Rajlichová 2011 covers 1650-56 ciphers only; Mírka 2012 and Crypto-World 3-4/2013 cover Gallas-Piccolomini keys; HistoCrypt 2018 shows 25039 only."
+  },
+  "key_check": "Not applied. The glossed siblings 24852 and 24853 (same digit signature) should give the digit table; not rebuilt or tested here.",
+  "key_in_volume": "Interlinear glosses on 24852 (+_1) and 24853 (+_1, _2) on the same microfilm, same writer; untested on 24854.",
+  "duplicates": "known.py \"24854\" \"Piccolomini\" \"Vlnas\" (6 Nov 2026): only this lead and its sweep files; no catalogue entry or target.",
+  "verdict": "open"
+ },
+ "2356": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch n15",
+  "seen": {
+   "kind": "scan",
+   "where": "Vlnas 2017 appendix zip (theses.cz/id/p3p2kb), frame 25071.jpg, rotated and zoomed in Chrome, 6 Nov 2026 (not saved)",
+   "extent": "One page, about 11 lines carrying long digit strings within Spanish clear text, dated \"Del Campo a Fran[ken]statt y 12 de Agosto 1646\"; clear words include Turena, Reyna de Suecia, Meno",
+   "cipher": "Number cipher in continuous digit strings; no interlinear decipherment (zoomed on lines 3-14; only a clear-text correction above one word). Frame label inv. č. 25071 31/2; signature \"Joh. Rohr von ...\" partly legible."
+  },
+  "searches": [
+   {
+    "query": "Frankenthal 1646 Piccolomini carta cifrada guarnición española \"Frankenthal\" cifra",
+    "result": "UAM paper on the restitution of Frankenthal 1649-53 and Caramuel at Frankenthal (Rebolledo); nothing on 1646 ciphered reports to Piccolomini or a decipherment."
+   },
+   {
+    "query": "Lasry Piccolomini deciphered letters Thirty Years War cipher DECODE",
+    "result": "Only Ernst 2017 on Ferdinand III's cipher to Piccolomini (another series) and Lasry's Mary Stuart work; nothing on the Frankenthal letters."
+   },
+   {
+    "query": "Elster Piccolomini-Studien Chiffre Piccolomini Korrespondenz Náchod Barker \"Army, Aristocracy, Monarchy\" Piccolomini cipher",
+    "result": "Elster 1911 on archive.org, Mírka 2012, the HistoCrypt 2018 paper; none deciphers or prints inv. 25071."
+   }
+  ],
+  "prior_art": {
+   "decode": "known.py \"25071\" \"Frankenthal\" on the DECODE dumps: no record; the Frankenthal hits are this lead and its sweep only.",
+   "tomokiyo": "Cryptiana has no Spanish Frankenthal or Piccolomini 1646 entry that search surfaced.",
+   "lasry": "No Lasry paper or GL.htm entry on Spanish Frankenthal letters (GL.htm copy grepped: no Piccolomini).",
+   "edition": "No edition of the Frankenthal reports found. Vlnas 2017 (theses.cz/id/p3p2kb), STAG89021.pdf: inv. 25071 is B36 of appendix B, not deciphered in the thesis.",
+   "literature": "Ernst 2017 (Ferdinand III key) is a different cipher and series; the Frankenthal restitution literature (UAM 2011) is 1649-53 and prints no cipher."
+  },
+  "key_check": "Not applied. Glossed siblings by the same writer (25063, 25065, 25067, 25069, 1646) and the glossed troop list 25026 give the number values; not rebuilt here.",
+  "key_in_volume": "Interlinear glosses on 25063, 25065, 25067 (+_1, _2), 25069 (+_1) on microfilm 31/2, same digit cipher; untested on 25071.",
+  "duplicates": "known.py \"25071\" \"Frankenthal\" \"Piccolomini\" (6 Nov 2026): this lead and the sweep only; Ernst's ferdinand3 target is a different cipher.",
+  "verdict": "open"
+ },
+ "2357": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch n15",
+  "seen": {
+   "kind": "scan",
+   "where": "Vlnas 2017 appendix zip (theses.cz/id/p3p2kb), frame 25054.jpg, rotated and zoomed in Chrome, 6 Nov 2026 (not saved)",
+   "extent": "One page: about 10 lines of two-digit groups (3x, 4x, 1x, 2x values: 34 44 13 ...) in Italian clear text; frame number 453",
+   "cipher": "Two-digit substitution groups; two or three isolated letters or a word written above single groups, no running decipherment. Label inv. č. 25054 at the foot."
+  },
+  "searches": [
+   {
+    "query": "\"Piccolomini\" Zámrsk inv. 25054 OR 25040 cifra due cifre lettera italiana 1646",
+    "result": "No hit on inv. 25054 or 25040; only Piccolomini family pages."
+   },
+   {
+    "query": "cryptiana Tomokiyo Piccolomini cipher 1646",
+    "result": "Cryptiana index and unsolved list surfaced; 1646 items are English royalist letters; no Piccolomini two-digit cipher."
+   },
+   {
+    "query": "Piccolomini 1646 cipher vowels replaced by odd numbers 1 3 5 7 9 Italian letter",
+    "result": "General papers (papal ciphers, Farnese letter); no publication of the Piccolomini microfilm ciphers beyond Vlnas."
+   }
+  ],
+  "prior_art": {
+   "decode": "known.py \"25054\" \"Piccolomini\" \"Zámrsk\" on the DECODE dumps: none; no Zámrsk record on DECODE.",
+   "tomokiyo": "Tomokiyo's Cryptiana index (satoru.net) surfaced in search with no Piccolomini two-digit cipher.",
+   "lasry": "Nothing in GL.htm or the Lasry paper targets on a Piccolomini two-digit cipher.",
+   "edition": "No edition. Vlnas 2017 (theses.cz/id/p3p2kb), STAG89021.pdf: inv. 25054 is B28 in appendix B (not deciphered); 25040, the possible glossed sibling, is B01.",
+   "literature": "HistoCrypt 2018 (Musílek & Hubálovský) prints a homophonic two-digit example from 25039 only; nothing on 25054."
+  },
+  "key_check": "Not compared: inv. 25040 (glossed two-digit groups) may share the system; the French grid key of 25039 (Vlnas ch. 4.1) is another candidate; neither tested.",
+  "key_in_volume": "Possibly inv. 25040 on the same microfilm (two-digit groups with interlinear gloss); identity of system not checked.",
+  "duplicates": "known.py \"25054\" \"Piccolomini\" (6 Nov 2026): this lead and the sweep only.",
+  "verdict": "open"
+ },
+ "2358": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch n15",
+  "seen": {
+   "kind": "scan",
+   "where": "Vlnas 2017 appendix zip (theses.cz/id/p3p2kb), frames 24874.jpg and 24876.jpg, rotated and zoomed in Chrome, 6 Nov 2026 (not saved)",
+   "extent": "24874: about 18 lines of cipher then 4 clear lines (mentions Don Michele di Salamanca); 24876: 9 clear lines, 5 cipher lines, 2 clear, 5 cipher (Vienna in the clear)",
+   "cipher": "Plain consonants with vowels as odd digits and even digits mixed in; no gloss on either frame. Tested at sight on 24874: \"p3r sl g7v3rn7\" = \"per [i]l governo\" with 1 3 5 7 9 = a e i o u, so Vlnas's 24873 key applies."
+  },
+  "searches": [
+   {
+    "query": "Piccolomini 1646 cipher vowels replaced by odd numbers 1 3 5 7 9 Italian letter (and Vlnas thesis ch. 4.2 read in Chrome)",
+    "result": "Vlnas ch. 4.2 prints the key (table 3) and the text of inv. 24873 only; web search found no other publication of these letters."
+   },
+   {
+    "query": "Vlnas Počítačová analýza Piccolomini appendix B 24874 24876 (thesis PDF searched for the numbers)",
+    "result": "The numbers occur only in the appendix B list (B21, B22: not deciphered in the thesis); no reading printed."
+   },
+   {
+    "query": "HistoCrypt 2018 proceedings Piccolomini (PDF grepped)",
+    "result": "Musílek & Hubálovský 2018 discuss 25039 only; no mention of the vowel cipher letters 24874/24876."
+   }
+  ],
+  "prior_art": {
+   "decode": "known.py \"24874\" \"24876\" \"24873\" on the harvested DECODE dumps: no record.",
+   "tomokiyo": "No Cryptiana article on a vowels-as-odd-digits Piccolomini cipher found by search.",
+   "lasry": "No Lasry entry (GL.htm grepped, papers) on these letters.",
+   "edition": "Vlnas 2017 (theses.cz/id/p3p2kb), STAG89021.pdf: ch. 4.2 (pp. 33-38) deciphers the neighbour inv. 24873 and prints its key; 24874 and 24876 are appendix B21-B22, explicitly not deciphered. No other edition.",
+   "literature": "No article reads them; Vlnas's conclusion lists four ciphers solved, none of them these two."
+  },
+  "key_check": "Vlnas table 3 (a e i o u = 1 3 5 7 9, consonants unchanged, even digits as dashes/nulls) checked on one line of 24874 and fits; the letters are a key lookup in practice, but no reading is on record, so open under the 3 Nov rule.",
+  "key_held": "Vlnas 2017 table 3 (from inv. 24873), printed; tested at sight on one line of 24874 (fits), not applied to the whole text.",
+  "duplicates": "known.py \"24874\" \"24876\" \"24873\" \"Vlnas\" (6 Nov 2026): this lead and the sweep only.",
+  "verdict": "open"
+ },
+ "2359": {
+  "unvetted": "Ciphertext not seen and the printed literature unopened. Only description: Staněk 2026 (theses.cz/id/hotwcc) n. 657 \"šifrovanou korespondenci ... SOA Třeboň, Historica Třeboň, sign. 4834/36\". Unopened: M. Šlach, \"Kandidatura Viléma z Rožmberka na polský trůn v l. 1573-1575\", Jihočeský sborník historický 33 (1964) 130-148 (not online in two searches); K. Pražáková, \"The secret candidature of William of Rosenberg to the Polish throne in 1574 and 1575\", Eastern European History Review 7 (2024) 37-50 (academia.edu shows the abstract only: \"a web of encrypted letters\"; the journal's handle 2067/52991 does not resolve). Either may print or decipher the letters. DECODE dumps, GL.htm and known.py (Historica Třeboň, 4834, Rožmberk, Rosenberg): nothing. Needs Šlach 1964 / Pražáková 2024 and scans of sign. 4834/36 from SOA Třeboň."
+ }
+}
