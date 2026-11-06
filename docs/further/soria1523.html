@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <base href="../">
 <title>Lope de Soria to Charles V, Genoa, 1523 — read it further</title>
-<meta name="description" content="A cipher read in part (87.3%), with its open gaps and instructions for an AI agent to take it further.">
+<meta name="description" content="A cipher read in part (87.4%), with its open gaps and instructions for an AI agent to take it further.">
 <link rel="stylesheet" href="style.css?v=5c2bc3d7">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
@@ -41,15 +41,15 @@
 </div>
 
 <section class="hero">
-  <p class="kicker"><a href="further.html">Read further</a> · read 87.3% · ciphertext-only break &middot; partial</p>
+  <p class="kicker"><a href="further.html">Read further</a> · read 87.4% · ciphertext-only break &middot; partial</p>
   <h1>Lope de Soria to Charles V, Genoa, 1523</h1>
   <p class="sub">Five despatches from Genoa, June to August 1523 (DECODE R9488&ndash;R9498), in two ciphers; no earlier decipherment was found. The key of the earlier cipher was recovered from the ciphertext alone with a solver scored on 1520s Castilian; the key of the later one was rebuilt from a Soria letter of December 1523 filed with the court&rsquo;s decipherment. The June and July letters are deciphered nearly throughout, the later ones in part: the Venetian league, Siena, money for the Swiss and Andrea Doria&rsquo;s offer of his galleys.</p>
   <dl class="facts">
     <dt>Date</dt><dd>1523</dd>
-    <dt>Read now</dt><dd>87.3% of the cipher tokens give sense</dd>
+    <dt>Read now</dt><dd>87.4% of the cipher tokens give sense</dd>
     <dt>Write-up</dt><dd><a href="soria1523.html">soria1523.html</a></dd>
     <dt>Files</dt><dd><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/soria1523" rel="noopener">targets/soria1523</a></dd>
-    <dt>Open gaps</dt><dd><span class="gap w">not yet tried</span><span class="gap">no key known ×4</span><span class="gap">hard to read on the scan</span></dd>
+    <dt>Open gaps</dt><dd><span class="gap">no key known ×4</span><span class="gap">hard to read on the scan</span></dd>
   </dl>
 </section>
 
@@ -68,7 +68,7 @@ THE READING
   Write-up:   https://dbourdeau.github.io/cyphersolver/soria1523.html (read it first: how the text was read, the key, the reading)
   Date:       1523
   Outcome:    ciphertext-only break · partial
-  Read now:   87.3% of the deciphered cipher tokens give sense (pieces below may be untouched)
+  Read now:   87.4% of the deciphered cipher tokens give sense (pieces below may be untouched)
   Files:      https://github.com/dbourdeau/cyphersolver/tree/main/targets/soria1523 (NOTES.md, key, transcription, reading, scripts)
 
 OPEN GAPS (from NOTES.md, "## Remaining gaps")
@@ -76,8 +76,7 @@ OPEN GAPS (from NOTES.md, "## Remaining gaps")
   2. [illegible: needs a new source] July L10-L12 'an fec que la' and 'Q?o Lo79' (~12 signs) - blocker: illegible; R9492 and R9493 disagree sign by sign
   3. [no-key-material: needs a new source] R9491 single key-B groups taf, tu, pud (3x, no one value fits), zib, sib (2x), tac, tad, xif, toya, and ~20 signs in l.3 and l.6-7 - blocker: no-key-material; no duplicate of this letter, not in R9844 or any sibling
   4. [no-key-material: needs a new source] R9494-96 decoded, not read (v8 23 Oct 2026: 0.583 clean sentences): te, per, tep, zu, tol, the day count before 'dias', and two phrases of R9496's extra paragraph - blocker: no-key-material; three copies collated, they spell the same groups
-  5. [no-key-material: needs a new source] R9497 paf [tiempo], sud [respuesta], xuf yic [hablado], z7∞ [hara] - blocker: no-key-material; bounded only by the alphabetical blocks, other words fit
-  6. [not-attempted: doable now] R9498 beyond block 1 not collated - blocker: not-attempted; block 2 and f.579r of R9497 read without it
+  5. [no-key-material: needs a new source] R9497 paf [tiempo], sud [respuesta], xuf yic [hablado] - blocker: no-key-material; R9498 collated in full (6 Nov 2026) and writes the same groups; bounded only by the alphabetical blocks, other words fit. (z7∞ resolved: 'me a')
 
 ALREADY TRIED (from NOTES.md, "## Escalation")
   [x] siblings: all eleven records and the duplicates used; R9844 (30 Dec 1523) found with the court's decipherment
@@ -87,6 +86,7 @@ ALREADY TRIED (from NOTES.md, "## Escalation")
   [x] key-rebuild: key A by annealing with a Castilian 4-gram model plus hand fixes; key B from R9844
   [x] retry: (5 Oct 2026): R9493 (key-A copy of the post data, interlinear decipherment of the closing), R9495, R9496 (new paragraph) and the clear foot of R9491 used as second witnesses; every letter re-measured with measure/measure.py. Not done: other decrypted Soria letters of 1523-24 in Salazar 9/29-9/31 to attest the key-B residue
   [x] retry: (23 Oct 2026, v8): R9494 reading scored on explicit holes (0.583); decoded, not read
+  [x] retry: (6 Nov 2026): R9498 block 2 transcribed and collated with R9497 block 2 and f. 579r; z7∞ = 'me a' (R9498 tec ∞), pac = sobre; paf, sud, xuf yic written the same in both copies
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
@@ -126,8 +126,8 @@ If you cannot open issues or pull requests, write this report for your human to 
 
 <h2>Open gaps</h2>
 <p><span class="gap w">gold</span> can be done now: the images and the key are online, it needs only work. <span class="gap">grey</span> needs a new source first: a key, a better scan, an edition or the archive.</p>
-<ul class="gaplist"><li><span class="gap">no key known</span> key-A code words rip (4x), pur (3x), qed (2x), dus (2x), cop - blocker: no-key-material; context only (Venetians? V. Magestad? Swiss?), every copy writes the same groups, no key-A crib exists</li><li><span class="gap">hard to read on the scan</span> July L10-L12 'an fec que la' and 'Q?o Lo79' (~12 signs) - blocker: illegible; R9492 and R9493 disagree sign by sign</li><li><span class="gap">no key known</span> R9491 single key-B groups taf, tu, pud (3x, no one value fits), zib, sib (2x), tac, tad, xif, toya, and ~20 signs in l.3 and l.6-7 - blocker: no-key-material; no duplicate of this letter, not in R9844 or any sibling</li><li><span class="gap">no key known</span> R9494-96 decoded, not read (v8 23 Oct 2026: 0.583 clean sentences): te, per, tep, zu, tol, the day count before 'dias', and two phrases of R9496's extra paragraph - blocker: no-key-material; three copies collated, they spell the same groups</li><li><span class="gap">no key known</span> R9497 paf [tiempo], sud [respuesta], xuf yic [hablado], z7∞ [hara] - blocker: no-key-material; bounded only by the alphabetical blocks, other words fit</li><li><span class="gap w">not yet tried</span> R9498 beyond block 1 not collated - blocker: not-attempted; block 2 and f.579r of R9497 read without it</li></ul>
-<h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> all eleven records and the duplicates used; R9844 (30 Dec 1523) found with the court's decipherment</li><li>&#9745; <b>clear-pages</b> R9844 ff. 36r-36v "A claro / B claro" aligned for key B</li><li>&#9745; <b>known-keys</b> BRAH 9/15 key book (R9815-R9832) checked page by page, no match; Sanchez R9768 a different cipher</li><li>&#9745; <b>print</b> Bergenroth CSP Spain vol. 2 no. 586 (clear parts only)</li><li>&#9745; <b>key-rebuild</b> key A by annealing with a Castilian 4-gram model plus hand fixes; key B from R9844</li><li>&#9745; <b>retry</b> (5 Oct 2026): R9493 (key-A copy of the post data, interlinear decipherment of the closing), R9495, R9496 (new paragraph) and the clear foot of R9491 used as second witnesses; every letter re-measured with measure/measure.py. Not done: other decrypted Soria letters of 1523-24 in Salazar 9/29-9/31 to attest the key-B residue</li><li>&#9745; <b>retry</b> (23 Oct 2026, v8): R9494 reading scored on explicit holes (0.583); decoded, not read</li></ul>
+<ul class="gaplist"><li><span class="gap">no key known</span> key-A code words rip (4x), pur (3x), qed (2x), dus (2x), cop - blocker: no-key-material; context only (Venetians? V. Magestad? Swiss?), every copy writes the same groups, no key-A crib exists</li><li><span class="gap">hard to read on the scan</span> July L10-L12 'an fec que la' and 'Q?o Lo79' (~12 signs) - blocker: illegible; R9492 and R9493 disagree sign by sign</li><li><span class="gap">no key known</span> R9491 single key-B groups taf, tu, pud (3x, no one value fits), zib, sib (2x), tac, tad, xif, toya, and ~20 signs in l.3 and l.6-7 - blocker: no-key-material; no duplicate of this letter, not in R9844 or any sibling</li><li><span class="gap">no key known</span> R9494-96 decoded, not read (v8 23 Oct 2026: 0.583 clean sentences): te, per, tep, zu, tol, the day count before 'dias', and two phrases of R9496's extra paragraph - blocker: no-key-material; three copies collated, they spell the same groups</li><li><span class="gap">no key known</span> R9497 paf [tiempo], sud [respuesta], xuf yic [hablado] - blocker: no-key-material; R9498 collated in full (6 Nov 2026) and writes the same groups; bounded only by the alphabetical blocks, other words fit. (z7∞ resolved: 'me a')</li></ul>
+<h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> all eleven records and the duplicates used; R9844 (30 Dec 1523) found with the court's decipherment</li><li>&#9745; <b>clear-pages</b> R9844 ff. 36r-36v "A claro / B claro" aligned for key B</li><li>&#9745; <b>known-keys</b> BRAH 9/15 key book (R9815-R9832) checked page by page, no match; Sanchez R9768 a different cipher</li><li>&#9745; <b>print</b> Bergenroth CSP Spain vol. 2 no. 586 (clear parts only)</li><li>&#9745; <b>key-rebuild</b> key A by annealing with a Castilian 4-gram model plus hand fixes; key B from R9844</li><li>&#9745; <b>retry</b> (5 Oct 2026): R9493 (key-A copy of the post data, interlinear decipherment of the closing), R9495, R9496 (new paragraph) and the clear foot of R9491 used as second witnesses; every letter re-measured with measure/measure.py. Not done: other decrypted Soria letters of 1523-24 in Salazar 9/29-9/31 to attest the key-B residue</li><li>&#9745; <b>retry</b> (23 Oct 2026, v8): R9494 reading scored on explicit holes (0.583); decoded, not read</li><li>&#9745; <b>retry</b> (6 Nov 2026): R9498 block 2 transcribed and collated with R9497 block 2 and f. 579r; z7∞ = 'me a' (R9498 tec ∞), pac = sobre; paf, sud, xuf yic written the same in both copies</li></ul>
 
 
 <h2>Send a result</h2>

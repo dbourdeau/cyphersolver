@@ -57,7 +57,7 @@ Glyph distinctions: ∞ (horizontal eight) = a; 8 (upright eight) = e; ɑ+ (a wi
 | + | v | servira |
 | 9# (9 with double bar) | g | galeras |
 | θ | s | descontentos, galeras |
-| z | h | hara |
+| z | h | hara (withdrawn 6 Nov 2026: z7∞ is 'me a', z = m; see below) |
 | = | m? | Jeronimo |
 | ꝑ° | pro | pro(metido?) |
 New code groups: zic = principe; soc = rey (also 'yoc soc' = el rey); yeb = dicho; pep r. = pariente;
@@ -103,3 +103,16 @@ yic = syllable '-do'; seb = qual?; sa = para?; pep = un?; xod = ha; pup = V. (V.
 | xuf | habla- (xuf yic = hablado) | I: the x-block covers F-L, and dicho is yeb |
 Code order: each initial consonant covers a stretch of the alphabet (z A-De, y Di-Es, x F-L, t M-Pa, s Pa-R,
 p Se-Y), which bounds a group's value; order inside a block is not strict.
+
+## Additions 6 Nov 2026 (R9497 block 2 and f. 579r collated with R9498 block 2)
+| sign/group | value | evidence |
+|---|---|---|
+| pac | sobre | R9498 where R9497 spells ϖrɡ̣c7 (p-block Se-Y) |
+| tec | me | R9498 'tec ∞' where R9497 spells z7∞ = m-e-a (t-block M-Pa) |
+| z | m | 'me' (R9498 z8), 'acometido' (both copies), 'me a' (R9497 z7∞) |
+| n+ (n-shape with cross-stroke) | p | R9498 republica (X8n+Tɡ̣Vqhα), palar (n+∞Vm#c) |
+| ꝏ (two rings joined by a bar) | i | R9498 capitulacion (Vαhꝏry), once |
+| √ (radical-shaped) | g | pague, both copies |
+| yic | -do | R9498 acometi-yic where R9497 spells -9ꝑ̄ |
+Unchanged by the collation (same group in both copies): pes, xob, paf, tin, xag, xa, sud, sab.
+
