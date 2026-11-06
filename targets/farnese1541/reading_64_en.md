@@ -8,6 +8,8 @@ Conventions: [...] = digits left unread; (?) = a reading I am not sure of; words
 supplied for the English only. "co" from the code 26, "et" from a lone 1 and "ci" from 24 are the k2d additions.
 A struck or uncertain digit is noted under "Open places".
 
+Fourth pass (slips, 2026-11-06): 1,126 certain words plus nulls (0.698; lower than before because the slip words, including the formerly certain "considera", now count as uncertain), 1,306 with uncertain words and emendations (0.809), 315 digits unread. Eleven one-digit slip readings, each marked [?]; see "Fourth pass (slips)" at the end.
+
 Aligner (k2d, plus Meister's code word 000 = Francia): 1,614 cipher digits after the third pass (two overwritten digits at 64v.11
 restored), 7 lost in holes. 1,144 read as certain words plus nulls (0.709). 1,240 read when uncertain words and emended
 digits are included (0.768). 381 digits unread. (After the second pass and the key check: 1,127/1,612 (0.699), 1,222 (0.758), 397 unread.) (Before the key-guided image
@@ -19,34 +21,34 @@ doubts the digit), 64v.8 67>87 (che), 64v.16 87>83 (tosto; the re-read doubts th
 
 | line | Italian (normalised) | English |
 |---|---|---|
-| 64r.16 | [...] a quello che voi scrivete, et che il [...] | [...] to what you write, and that the [...] |
+| 64r.16 | Quanto(?) a quello che voi scrivete, et che il [...] | As to(?) what you write, and that the [...] |
 | 64r.17 | [...] di bocca [...] l'altro, che | [...] by word of mouth [...] the other, that |
 | 64r.18 | [...] si dichiari in aiuto dell'Imp(eratore); sopra di che il marche(se?) [...] | [...] (he) declare himself in aid of the Emperor. On which the Marquis(?) [...] |
 | 64r.19 | il Car(dinale?) Burgos [...] parlato loro di [...] propria; più di [...] | the Cardinal(?) of Burgos [...] spoken to them of [...] own; more than [...] |
 | 64r.20 | [...] potrei per risposta dir cose assai, dando [...] facultà [...] la(?) | [...] I could say a great deal in reply, giving [...] power [...] the(?) |
 | 64r.21 | qualità della materia. Nondimeno, perché per voi stesso potete ben conoscere [...] | nature of the matter. Nevertheless, since you yourself can well know [...] |
 | 64v.1 | ragioni [...] contrario, non mi è necessario replicarle, né | the reasons [...] contrary, there is no need for me to repeat them, nor |
-| 64v.2 | mo(l)to a longo. Può ben [S.M.?] Cesarea assicurarsi che l'animo [di] N.S. sia prontissimo | at great length. His Imperial [Majesty] may well be assured that the mind of Our Lord (the Pope) is most ready |
+| 64v.2 | mo(l)to a longo. Può ben S.M.tà(?) Cesarea assicurarsi che l'animo di(?) N.S. sia prontissimo | at great length. His Imperial Majesty(?) may well be assured that the mind of(?) Our Lord (the Pope) is most ready |
 | 64v.3 | a far per lei tutto [...] che il grado et onor suo [...] permetterà(?); la [qual] | to do for him all [...] that his rank and honour will allow(?). Which |
-| 64v.4 | cosa non è in questa dichiaratione che se li dimanda di presente [...] considera [...] | thing is not (the case) in this declaration that is asked of him now [...] considers [...] |
-| 64v.5 | [...] lo Imperator et il Re [...] commesso(?) principi [...] discordi in | [...] the Emperor and the King [...] committed(?) princes [...] at odds in |
+| 64v.4 | cosa non è in questa dichiaratione che se li dimanda di presente [...] considera- | thing is not (the case) in this declaration that is asked of him now; [...] it being consi- |
+| 64v.5 | -randosi(?) lo Imperator et il Re come s[...](?) principi cris[tiani] discordi in | -dered(?) that the Emperor and the King (are) as [...](?) Christian princes at odds in |
 | 64v.6 | [...] senza [...]tione di infideli [...] sempre comune [...] | [...] without [...]tion of infidels [...] always common [...] |
-| 64v.7 | [...] aver l'uno per amico et l'altro per [cavalli?] [...] | [...] to have the one as friend and the other as [horses?] [...] |
+| 64v.7 | [...] aver l'uno per amico et l'altro per nimico(?) [...] | [...] to have the one as friend and the other as enemy(?) [...] |
 | 64v.8 | [...] il Re lo consideri. Sono a l(?) Francia nome, cioè come persona che abbia inte- | [...] (that) the King consider him (so). [...] to France (the King of France) a name, that is, as a person who has an under- |
 | 64v.9 | -lligenza con el Turco et lo(?) conduca a danni di cristi(a)ni(?), tanto che per | -standing with the Turk and leads him to the harm of Christians, so much so that for |
 | 64v.10 | questo meriti di esser de N.S. a tutti giudica[...] [...] | this he deserves to be [by] Our Lord to all judge(d?) [...] |
 | 64v.11 | [...] bisogno che a questo preceda la condannatione, il che mal si può | [...] need that this be preceded by the condemnation, which can hardly be (done) |
 | 64v.12 | [...] né in termine che non si [...] | [...] nor in such terms that one does not [...] |
-| 64v.13 | [...] et del Re, et [...] cagione che [...] | [...] and of the King, and [...] cause that [...] |
+| 64v.13 | [...] et del Re; et facendosi(?), sarebbe(?) cagione che appresso(?) li | [...] and of the King; and if it were done(?), it would be(?) the cause that among(?) the |
 | 64v.14 | popoli ogni sente(?) [...] pochi [...] po- | peoples every (one?) feels [...] few [...] |
 | 64v.15 | -trebbe certo [...] effetto(?) contrario, interpretando(?) [...] genti che N.S.(?) si | could certainly [...] the contrary effect(?), the peoples interpreting(?) that Our Lord(?) |
-| 64v.16 | movesse, più tosto per rispetti particolari che per [...] publico; | moved rather for private considerations than for [...] public (good). |
+| 64v.16 | movesse, più tosto per rispetti particolari che per interesse(?) publico; | moved rather for private considerations than for the public interest(?). |
 | 64v.17 | [...] quanto alla parte del Turco, N.S.(?) è non solo disposta, ma [...] | [...] as for the side of the Turk, Our Lord(?) is not only willing, but [...] |
 | 64v.18 | [...] non [...] di concorrer con tutte le sue forze alla difesa o offesa [...] | [...] not [...] to join with all his forces in defence or offence [...] |
 | 64v.19 | [...] con [...] di S.M.tà, e in qualunque loco si sia, et esporvi pun- | [...] with [...] of His Majesty, and in whatever place it may be, and to stake there punc- |
-| 64v.20 | -tamente [...] interesse [...] la vita, quando bisogni. La qual cosa | -tually [...] interest [...] (his) life, when need be. Which thing |
+| 64v.20 | -tamente le facultà(?), interesse [...] la vita, quando bisogni. La qual cosa | -tually his means(?), interest [and?] life, when need be. Which thing |
 | 64v.21 | [...] a tutto(?) [...] tutto(?) è comodo(?) che lo Imp(eratore) potesse mai ritrarre [...] | [...] to all(?) [...] all(?) is convenient(?) that the Emperor could ever draw out [...] |
-| 64v.22 | qualunque [di]chiaratione di N.S., in modo che il chieder(?) di presente più inanzi di questo non | any declaration from Our Lord, so that to ask at present for more than this (does) not [continues on 65r] |
+| 64v.22 | qualunque dichiaratione(?) di N.S., in modo che il chieder(?) di presente più inanzi di questo non | any declaration from Our Lord, so that to ask at present for more than this (does) not [continues on 65r] |
 
 ## Summary
 
@@ -131,3 +133,37 @@ readings. Changes to `decode/reread91/` (each noted "KEYCHECK 2026-11-05" in the
 
 Readings added with no digit change: 64v.10 "de N.S. a" (`14 08 3`, with the recorded dot over the 4). 64v.15
 "efeto(?)" (`5 01 5 83`) and "ns(?)" (`0^? 8`, "genti che N.S. si movesse").
+
+## Fourth pass (slips), 2026-11-06
+
+Rule: a reading may assume ONE wrong digit per word (a clerk's slip: substitution only, no dropped or repeated
+digit), the rest of the word's digits exact, and the clause it completes grammatical in Farnese's argument.
+Found with `wordfit.py --slip` and the helpers `slip64_fit.py` (crib with at most one slip per word) and
+`slip64_end.py` (dictionary words ending at a fixed position). Every slip word is marked [?] in `reading_64.txt`;
+`align91.py` lists each as a one-digit emendation.
+
+Accepted (line and positions: digits as written > digits assumed, word, confusion; why the clause needs it):
+- 64r.16 pos 3-7: `64 4 4^83` > `·84 4 ·83`, **quanto** (6/8). "Quanto a quelo che uoi scriuete": the standard opening of a reply to a report; the dot on the 4 marks ·83 = to, and a dot stands over the null just before the 64.
+- 64v.2 pos 21-22: `4^ | 4 0` > `4^ | ·00`, **S.M.ta** (4/0; the dot on the preceding 4 marks a dotted code, and IA-2's key writes S.M.ta as ·40, so the clerk may have written the other cipher's code). "Può ben S.M.tà Cesarea assicurarsi". The weakest of the digit types, accepted for the sense and the dot.
+- 64v.2 pos 50-51: `26` > `16`, **di** (2/1). "l'animo di N.S. sia prontissimo"; the dot on the 6 marks the following ·08 = N.S.
+- 64v.4 pos 53 - 64v.5 pos 4: `26 4 86 14 88 4 | 4? 8 8? 6` > `26 4 86 14 88 4 | 18 86`, **considerandosi** (4/1; the slipped sign is the cross-shaped 4? that the re-read added at the start of 64v.5, and this clerk's 1 can carry a cross stroke, cf. 64v.6 pos 12). "considerandosi lo Imperator et il Re come s[...] principi cris[tiani] discordi in ...": the Emperor and the King being regarded as Christian princes at odds. Revisits the third-pass refusal of *considerando*, which had assumed a missing digit; as a substitution it needs one change. `2 6^ 7` before it stays unread (*poi* would need a second, adjacent slip).
+- 64v.7 pos 40-45: `83 03 26` > `82 03 26`, **nimico** (3/2). "aver l'uno per amico et l'altro per nimico": replaces the meaningless *caualli* (which the digits spell exactly, but which makes no sense). *nemico* (83 > 81) fits equally; *nimico* is the commoner 16th-century form.
+- 64v.13 pos 18-35: `01 3 02 5 4^ 19 86 | 64 89 02 5` > `01 3 02 5 4 18 86 | 84 89 02 5`, **facendosi sarebbe** (9/8 and 6/8). Two adjacent slipped words, admitted because both words are long, every other digit is exact, both are the commonest digit confusions, and the clause is compelling: "et facendosi, sarebbe cagione che ...", if the condemnation were made it would cause ... Revisits the third-pass refusal.
+- 64v.13 pos 46-52: `3 2 8 0? 1 87` > `3 2 89 1 87`, **apresso** (0/9; the slipped sign is the holed oval the re-read added, which may be a 9 whose tail is lost). "cagione che apresso li populi ..."; the clause then runs into the unread stretch after "sente" on 64v.14, so this one is weaker.
+- 64v.16 pos 46-54: `7 4 81 3^ 9 1 85` > `7 4 81 89 1 85`, **interesse** (3/8). "più tosto per rispeti particolari che per interesse publico": the antithesis private / public; the word is spelt the same way at 64v.20.
+- 64v.20 pos 9-19: `61 02 3 02 0 2^ 80` > `61 01 3 02 0 2^ ·80`, **li facultà** (2/1). "esporvi puntamente li facultà, interesse [6] la vita quando bisogni": to stake his means, interest and life. The lone `6` before "la vita" stays unread (*et* would need a further slip).
+- 64v.22 pos 3-4: `26 | chiaratione` > `16 ...`, **dichiaratione** (2/1). "qualunque dichiaratione di N.S.".
+
+Note: 26 where *di* is wanted occurs twice (64v.2, 64v.22). Two identical slips may instead mean a code variant;
+either way the reading is the same.
+
+Tried under the slip rule and not adopted:
+- 64v.10 *iudicato et punito*: still needs an inserted `83` after "iudica", not a substitution; refused again. `1 | 2 0 82 83` = "et punito" stays unread because "iudica" cannot end the participle.
+- 64v.12 *non si possa* (`2 9 0 84 81`, 0 > 1): 0/1 is not a likely confusion and the clause runs into the illegible start of 64v.13.
+- 64v.21 *e in sustantia* (pos 4, 8 > 1): 8/1 is not a likely confusion and the clause around "tuto [...] tuto è comodo" still does not build.
+- 64r.18 *il marchese* (`8 . [struck] 2`, 2 > 5): the slip sits next to a struck group and the name after it is holed; left as "marche[?]".
+- 64v.7-8 after *nimico*: `·84 4 4 0? 8? 1? 4 2 6 | 9 9 il re lo consideri`; *quando* would need 08 > 18 on the pale added signs, and the rest (`1? 4 2 6 9 9`) spells nothing; left unread.
+- 64v.17-18 `0 3 4 0 2 non 3 8 1 8 9 di concorrer`: the slip lattice gives only *anco*, *ateso*, *non* (padding); no clause.
+- 64v.6 `senza 7 2 6 88 03 1 tione di infideli`: no dictionary word in -tione/-sione fits with one slip (*intromissione* needs three changes).
+- 64r.17, 64r.19, 64v.10 after "punito", 64v.14 after "sente" and "pochi", 64v.19: lattices with slips give only fragments (*circa mecum caso*, *seguitato con come*, *sentenza i tuno monaco*); nothing passes the grammar test.
+

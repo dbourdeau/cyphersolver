@@ -51,6 +51,29 @@ def options(i):
             seen = FLAT[i][3] or (i > 0 and FLAT[i - 1][3])
             for o in DOTTED[c2]:
                 res.append((2, c2, o, '' if seen else '*'))
+        if i + 2 < len(FLAT) and c2 == '00' and FLAT[i + 2][2] == 0:
+            res.append((3, '000', 'francia', ''))          # Meister p. 177: Francia = 000
+    return res
+
+
+def slip_options(i):
+    """Codes the clerk may have meant when one digit of a one- or two-digit code at FLAT[i] is wrong: [(n, code, out, '!')]."""
+    res = []
+    d0 = FLAT[i][2]
+    if d0 < 0:
+        return res
+    for e in '0123456789':
+        if e != str(d0):
+            for o in PLAIN.get(e, []):
+                if o:
+                    res.append((1, f'{d0}>{e}', o, '!'))
+    if i + 1 < len(FLAT) and FLAT[i + 1][2] >= 0:
+        c0 = f'{d0}{FLAT[i + 1][2]}'
+        for c2 in set(PLAIN) | set(DOTTED):
+            if len(c2) == 2 and c2 != c0 and sum(a != b for a, b in zip(c2, c0)) == 1:
+                for o in PLAIN.get(c2, []) + DOTTED.get(c2, []):
+                    if o:
+                        res.append((2, f'{c0}>{c2}', o, '!'))
     return res
 
 

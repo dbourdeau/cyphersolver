@@ -1,22 +1,22 @@
 # R91 f. 65r: normalised reading and translation
 
 Key k2d: Meister key 2 with 02 = b/c, 24 = ci, 26 = co (a code not in Meister's table) and 1 = s/z/et, plus dots.
-Aligned with `align91.py` (default key k2d) against `reading_65r.txt`. Claude, 2026-11-05, second pass; key-guided image re-check the same day; third pass the same day (sections below).
+Aligned with `align91.py` (default key k2d) against `reading_65r.txt`. Claude, 2026-11-05, second pass; key-guided image re-check the same day; third pass the same day; fourth pass (slips: one wrong digit per word allowed) 2026-11-06 (sections below).
 `[...]` = digits left unread; `[xx]` = letters supplied where the digits are unread or faulty; `(?)` = uncertain
-reading; † = the reading needs an emendation (listed at the end).
+reading; † = the reading needs an emendation (listed at the end); ‡ = fourth-pass slip reading (one digit assumed miswritten by the clerk, listed under "Fourth pass (slips)").
 The page continues 64v.22 "... di presente piu inanzi di questo non".
 
 | line | normalised Italian | English |
 |---|---|---|
-| 65r.1 | è alt[ro] che procurar† [...] et [...] a N. S. et [...] non solo | (at present, beyond this) there is nothing else but to procure [...] and [...] to His Holiness, and [...] not only |
-| 65r.2 | utile(?), ma con [...] evidente di S. M.tà Cesa†[rea], il quale gli ne resultarebbe† [...] | useful(?), but with [...] evident [...] of His Caesarean Majesty, which would result to him from it [...] |
+| 65r.1 | è alt[ro] che procurar† incarico‡(?) e travaglio‡(?) a N. S., et questo‡(?) non solo | (at present, beyond this) there is nothing else but to bring blame and trouble upon His Holiness, and this (would be) not only |
+| 65r.2 | utile(?), ma con danno‡(?) evidente di S. M.tà Cesa†[rea], il quale gli ne resultarebbe† [...] | useful(?) [i.e. useless], but with evident harm to His Caesarean Majesty, which would result to him from it [...] |
 | 65r.3 | [...] prima. Perché ogni diminutione (cipher *siminutione*) di riputation o autorità [...] | [...] first. Because every diminution of reputation or authority [...] |
 | 65r.4 | che seguisse†(?) a N. S. la farebbe manco [...] ad aiutar le cose di S. M.tà Ce[s.] | that befell His Holiness would make him less [...] to help the affairs of His Caesarean Majesty, |
 | 65r.5 | così†(?) [...] la pace come ne la guerra. Dipoi, ogni volta che [...] [...] | in peace as in war. Then, every time that [...] |
 | 65r.6 | [...] senza iusto iudicio di levarsi† da la obedientia de se[.]de(?) apos[tolica] | [...] without just judgement, to withdraw from the obedience of the Apostolic See, |
 | 65r.7 | se li apre in consequentia(?) la [s]trada(?) di occupar li beni de le chiese†, come [...] | in consequence the road is opened to them to seize the goods of the churches, as |
 | 65r.8 | fatto Ingilterra et luterani. [...] de(?) Francia(?) cristiano†(?) [...] verrebbe [...] | England and the Lutherans have done. [...] of France(?), Christian(?) [...] would come [...] |
-| 65r.9 | [...] grosse(?) [...] di denari in uso(?) de la [g]uerra contra lo impera[tore] [...] | [...] large(?) [sums?] of money in use(?) for the war against the Emperor [...] |
+| 65r.9 | [...] grosse(?) [...] di denari in uso(?) de la [g]uerra contra lo imperator‡(?) [...] | [...] large(?) [sums?] of money in use(?) for the war against the Emperor [...] |
 | 65r.10 | [...] che(?) sia, si dovrebbe dalli sopradetti, in modo che per [...] | [...] that it be, it ought (to be done) by the above-mentioned, so that for [...] |
 | 65r.11 | [...] imperator†, la dichiaratione d'una sarebbe mala [...] co- | [...] Emperor, the declaration of one [side] would be a bad thing(?) |
 | 65r.12 | -sa(?) [...]. Bene, essendo et per(?) insino da hora pronti [...] | [...] Well, being, even from now on, ready [...] |
@@ -28,14 +28,14 @@ The page continues 64v.22 "... di presente piu inanzi di questo non".
 | 65r.18 | [...] [...] che li ne [...] [...] secondo che la iudi- | [...] that to him of it [...] according as she will |
 | 65r.19 | -cherà(?) (cipher *iudicira*) convenirsi†; ancorché† non havendo riperduto(?) in tuto la sp[eranza] | judge it fitting; although, not having entirely lost(?) the hope |
 | 65r.20 | di qualche concordia per l'opera de li doi legati, come di sopra, [...] | of some concord through the work of the two legates, as (said) above, [...] |
-| 65r.21 | [...] Lucca sarebbe stata medicina contraria†. [...] sorte di de- | [...] Lucca would have been a contrary medicine. [...] kind of de- |
+| 65r.21 | [...] Lucca sarebbe stata medicina contraria†. Qualonche‡(?) sorte di de- | [...] Lucca would have been a contrary medicine. Any kind of de- |
 | 65r.22 | -chiaratione, che et l'havessero [...] come [...], se(?) sono per se stesso. Ma in somma | -claration, which even if they had it [...] as [...], if(?) they are by themselves. But in short |
 | 65r.23 | niuno altro† rimedio si troverà che non conduchi finalme[nte] | no other remedy will be found that would not lead in the end |
 | 65r.24 | a la morte, salvo la pace. | to death, except peace. |
 
 ## What the page says (summary)
 
-The Pope's answer goes on from 64v. For now nothing more can be done than to procure [...]. A declaration would be not only [useless] but [harm] evident to the Emperor, and it would recoil on him. Any loss of reputation or authority that befell the Pope would make him less able to help the Emperor's affairs, in peace as in war. It would also give occasion for others to withdraw from obedience to the Apostolic See "without just judgement". In consequence the road would be opened for them to seize church property, as England and the Lutherans have done; France(?) is named next, and the page turns to large(?) sums of money for the war against the Emperor and to what the above-mentioned ought to do. A declaration for one side would be "a bad thing". The Pope is ready even now to help the Emperor with whatever aids are possible against the forces of the Turk, "o sole o accompagnate", as the Emperor shall judge fitting, though the Pope has not entirely given up hope of some concord through the work of the two legates "come di sopra". [...] Lucca "would have been a contrary medicine". In short no remedy will be found that does not lead in the end to death, except peace. Lines 15-18 and the starts of lines 1-3 and 9-10 are still mostly unread.
+The Pope's answer goes on from 64v. For now nothing more would come of it than to bring blame and trouble (*incarico e travaglio*, fourth pass) upon the Pope, and this not only [use]less but with evident harm (*danno evidente*) to the Emperor, which would recoil on him. Any loss of reputation or authority that befell the Pope would make him less able to help the Emperor's affairs, in peace as in war. It would also give occasion for others to withdraw from obedience to the Apostolic See "without just judgement". In consequence the road would be opened for them to seize church property, as England and the Lutherans have done; France(?) is named next, and the page turns to large(?) sums of money for the war against the Emperor and to what the above-mentioned ought to do. A declaration for one side would be "a bad thing". The Pope is ready even now to help the Emperor with whatever aids are possible against the forces of the Turk, "o sole o accompagnate", as the Emperor shall judge fitting, though the Pope has not entirely given up hope of some concord through the work of the two legates "come di sopra". [...] Lucca "would have been a contrary medicine"; any kind of declaration (*qualonche sorte di dechiaratione*, fourth pass) [...]. In short no remedy will be found that does not lead in the end to death, except peace. Lines 15-18 and the starts of lines 1-3 and 9-10 are still mostly unread.
 
 ## The code groups 2 6 0 6 and 2 6 0 6 2 6 (26 = co)
 
@@ -155,4 +155,40 @@ Proposals that fit the sense but need a change to a digit the re-read does not d
 * 2.11-15 `1 1 3 8 3` = *dano* (01 3 83) would need 11 = 0 for 1 ("ma con danno evidente"); *dani* is 12 82 at 64v.9.
 * 9.53-55 `8 5 6` = *-tor* (*impera-tor*, '83 6) would need 54 = 3 for 5.
 * 4.31-34 `7 1 8 3`: *idonea* still needs 4 5 where the image shows two pale uprights with no cross-bar (checked at 5x).
+
+## Fourth pass (slips) (2026-11-06)
+
+Hand-enciphering clerks wrote wrong codes, and the letter already carries 15 accepted one-digit emendations. This pass
+accepts a reading that needs **one** miswritten digit in a word, when the rest of the word's digits match exactly
+(substitution only), the clause it completes is grammatical Italian in context and not padding, and no two slip words
+are adjacent. Tools: `wordfit.py --slip`, `slip65_crib.py` (a crib against the digits with at most one wrong digit) and
+`slip65_scan.py` (every one-slip dictionary word inside each unread stretch). Each word is marked `[?]` in
+`reading_65r.txt` and ‡ in the table above; `align91.py` takes each as an emendation (cost 4).
+
+| line | digits as written | digits assumed | word | why the clause needs it |
+|---|---|---|---|---|
+| 65r.1 pos 18-25 | 7 4 2 1? 0 8 **0** 6 | 7 4 21 08 **2**6 | *incarico* (i n ca ri co) | "non è altro che procurar *incarico* e travaglio a N.S.": the request would only bring blame and trouble on the Pope. 06 (me) for 26 (co); a 0/2 slip, the weakest of the set (26 = co is the code missing from Meister's print) |
+| 65r.1 pos 29-38 | 6 **1** 8 0 3 0 1 6 1 9 | 6 **8**8 0 3 01 61 9 | *travaglio* (t ra u a g li o) | "... incarico e *travaglio* a N.S."; the 5 before it is *e*. 18 (do) for 88 (ra); the image at 30 (a crossed x-like sign then a corroded loop) cannot settle 1 against the stem of an 8 |
+| 65r.1 pos 46-50 | 8 **1** 1^ 8 3 | '8**5** 1 '83 | *questo* (que s to) | "et *questo* non solo [in]utile ma con danno evidente": the subject of *non solo ... ma*. 81 for '85; this hand's s-shaped 5 and its 1 are confused elsewhere by the re-read (9.15, 22.16); dots stand where *que* and *to* need them (45, 48) |
+| 65r.2 pos 11-15 | **1** 1 3 8 3 | **0**1 3 83 | *dano* (d a no) | "ma con *danno* evidente di S.M.tà Cesarea, il quale gli ne resultarebbe": the second half of *non solo utile ma con danno*. 11 (the null) for 01 (d); note the letter spells *dani* 12 82 at 64v.9 |
+| 65r.9 pos 47-55 | 7 4 2 5 88 8 **5** 6 | 7 4 2 5 88 '8**3** 6 | *imperator* (i m p e ra to r) | "in uso de la guerra contra lo *imperator*"; the same spelling, 7 4 2 5 88 '83 6, is at 65r.11 pos 2-10 and 64v.5. 85 for 83; no dot is seen over 53 or 52 |
+| 65r.21 pos 39-45 | 8^ 4 6 6 4 8^ **9** | '84 66 4 '8**7** | *qualonche* (qua lo n che) | "Lucca sarebbe stata medicina contraria. *Qualonche* sorte di dechiaratione, che et l'havessero ...": the same phrase as 64v.22 *qua lonque [..] chiaratione*, and 64v.19 spells *qua lonche loco*. '89 (non) for '87 (che), neighbours in the dotted che/chi/non row; dots over 39 and 44 stand where *qua* and *che* need them. The image re-check had confirmed every sign and left it as *qua t t n non* |
+
+Line 1 now reads, with the 64v.22 lead-in: "*di presente più inanzi di questo non è altro che procurar incarico e
+travaglio a N.S., et questo non solo [in]utile ma con danno evidente di S.M.tà Cesarea, il quale gli ne
+resultarebbe [...]*". Four slips in about 45 digits is a high density; each word is one digit off and the clause
+stands only with all four, so they are kept together and all marked uncertain.
+
+Tried under the slip rule and not adopted (no word or clause that passes the three tests):
+
+* 2.56-3.8 `7 4 2 9 0 / 1 6 0 4 0 5 5 8` (after *resultarebbe*, before *prima*): best lattice path *in lo gran modo* needs two slips and makes no sense; cribs *impotente*, *pregiudicio*, *importante*, *povertà*, *detrimento*, *dimostratione* do not fit.
+* 4.31-34 `7 1 8 3`: *idonea* needs two more signs (insertions, not slips); no one-slip word of 4+ letters.
+* 5.51-54 and 5.57-6.4 (`3 5? 8? 9 / 8 6 2 4 8 5 9 0? 9? 1 6 9 4`): cribs *occasione*, *causa*, *molti*, *altri*, *principi*, *popoli*, *sudditi*, *perdesse*, *potria* fail; 5.52-53 and 6.1-2 are holes.
+* 8.28-30 `0 8 4` (before *de Francia*): nothing for *il re*/*el re* (they need four digits); one-slip forms (*usar*, *prima*, *cosa*) do not make a clause.
+* 9.11-14 `8 5 0? 4` (after *grose*): *soma* (87 04) needs 85>87, and with *grose* it would want *grosa*, a second slip in the adjacent word; *some* (87 06) needs two slips. Not adopted.
+* 10.59-11.1 `6 0 4` (*in modo che per [...] imperator*): *per un imperator* needs a dropped digit; *tuni*, *loro*, *tuti* make no clause.
+* 12.44-13.9 (before *S.M.ta*): `3 1 2 6` at 12.48-51 spells *a dar* exactly and 13.2-8 `1 5 01 5 '82` *et efeti*, but the digits between (12.52-13.1, `2 0? 4? 6`, at brown outlines) give no word, so the clause is not established; left unread.
+* 13.47-51 `2 3 0 0 4` (before *che si volge le forze del Turco*): no form of *dove*, *ovunque*, *contra* within one slip.
+* 20.53-21.2 `9? 8 9` (before *Lucca*): *che* would need 89>87 again, with 9? left over; not adopted.
+* 22.21-23 `3 8 0`, 3.62-63 `7? 6`, 15.8-12, 18.32-38 and 18.41-45: no one-slip word that makes a clause; 15-18 stay corroded.
 
