@@ -1,0 +1,31 @@
+# key for catalogue 2358 (inv. 24874, 24876), from Vlnas 2017 table 3 ("Dešifrovací tabulka", from inv. 24873, p. 33)
+# The values are Vlnas's. Our additions, not in his table: 0 = null (zero occurs five times on the frames), f = s
+# (long s), the class tokens S and G, and '?'. Rows i, o, x, y were added after the independent check (6 Nov 2026) so
+# that the key lists every null of the printed table; no transcription uses them, so no decryption changed.
+# First frozen version: file time 15:12, 6 Nov 2026, sha256
+# 0d8b0891ccd0f7371b3eceacd8d0779e036c7b920a5737a47d94547b58d37144 (the freeze rests on file times; it was not
+# committed). It differs from this file only in the comment lines, the notes column and the rows i, o, x, y; every
+# other sign has the same value.
+# sign	value	note   (value '' = null; S and G are class tokens, see SIGN_CONVENTIONS.md)
+1	a	odd digit = vowel (Vlnas table 3)
+3	e	odd digit = vowel
+5	i	odd digit = vowel (only where the shape is read as a five; see SIGN_CONVENTIONS.md; else class S)
+7	o	odd digit = vowel
+9	u	odd digit = vowel (u/v; when the shape is clearly a nine; else class G)
+2		even digit = null
+4		even digit = null
+6		even digit = null
+8		even digit = null
+0		zero = null (our extension: not in Vlnas table 3)
+a		plain vowel letter = null (Vlnas table 3: a e i o u w x y are dashes)
+e		plain vowel letter = null
+i		plain vowel letter = null (Vlnas table 3)
+o		plain vowel letter = null (Vlnas table 3)
+u		plain vowel letter = null
+w		unused letter = null (Vlnas table 3)
+x		unused letter = null (Vlnas table 3)
+y		unused letter = null (Vlnas table 3)
+S	S	class (our addition): letter s or digit 5 (= i); the reading chooses s or i
+G	G	class (our addition): letter g, letter q or digit 9 (= u/v); the reading chooses g, q, u or v
+f	s	long s (our addition)
+?	?	sign not made out
