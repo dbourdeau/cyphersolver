@@ -733,3 +733,8 @@ The companion IA-1 (DECODE R91, Farnese to Poggio, Dec 1541, catalogue 262) turn
 (the Poggio cipher, Chigi M II 49), corrected; it is now its own target, [`../farnese1541/`](../farnese1541/), with
 its images, transcription, image re-read, scripts, reading and step log. The R91 files that were here
 (`decode/DOC_R91_*`, `decode/IMG_R91_*`, `decode/reread91/`, `r91/`, `WORKLOG.md`) moved there.
+
+2026-11-06: R91 is not of December 1541 but of **7 August 1542** (day blank at the close; DECODE's "12bre" is *et bene
+valete*; dated by its clear lines and Pastor V 472 n. 5). Cardauns NB I/7 shows Lettere de' Principi 14 A runs past June
+1542 (29 June 1542 at ff. 453-456, a copy of 19 Sept 1542), so the "ff. 1-129 to 4 June 1542" above is too narrow. See
+`../farnese1541/NOTES.md`, section of 6 Nov 2026.

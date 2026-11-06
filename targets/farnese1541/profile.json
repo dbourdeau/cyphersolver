@@ -1,14 +1,14 @@
 {
  "schema_version": 1,
  "target": "farnese1541",
- "title": "Cardinal Alessandro Farnese to the nuncio Giovanni Poggio, Rome, December 1541 (AAV Segr. Stato Spagna 1A, IA-1, ff. 64r-66r, DECODE R91)",
+ "title": "Cardinal Alessandro Farnese to the nuncio Giovanni Poggio, Rome, 7 August 1542 (AAV Segr. Stato Spagna 1A, IA-1, ff. 64r-66r, DECODE R91)",
  "documents": [
   {
    "id": "R91",
    "read": "read in part",
    "shelfmark": "AAV Segr. Stato, Spagna 1A (IA-1), ff. 64r-66r (DECODE R91, ASV_i1025_SdS_Spain_IA-1)",
-   "date": "[1]5? Dec 1541 (closing 'a qui 1[.] di Xbre' on f. 66r)",
-   "year": 1541,
+   "date": "7 Aug 1542 (the day is left blank on f. 66r, 'Da Roma alli .'; dated from the clear lines, which announce the peace legates named on 7 Aug 1542 and have Ferdinand leave Vienna 'alli 9 del passato' (9 July 1542) for the Nuremberg diet, and from Pastor V 472 n. 5, who cites Farnese to Poggio of 7 Aug 1542, Chigi L III 65, for the cipher's argument; catalogued earlier as Dec 1541 from DECODE's misreading '12bre' of 'et bene valete')",
+   "year": 1542,
    "country": "Papacy",
    "route": "Rome -> Giovanni Poggio, bishop of Tropea, nuncio with Charles V in Spain",
    "language": "Italian",
@@ -16,9 +16,9 @@
    "cleartext_in_document": "separate passages",
    "plaintext": {
     "location": [
-     "none"
+     "separate collection"
     ],
-    "source": "No decipherment on the record, in print or online (checked 5 Nov 2026); DECODE status Non-decrypted.",
+    "source": "Not on the record or online. A readable text of this letter is in BAV Chigi L III 65 (Farnese's letters to Poggio): Pastor, Geschichte der Paepste V (1909) p. 472 n. 5, summarises its argument from there. Register copies of Farnese's letters to Poggio 1541-42 are in AAV Lettere di principi 14A, minutes in Naples, Archivio di Stato, Carte Farnesiane (Cardauns, NB I/7, 1912, pp. 435-439). None is digitised (DigiVatLib checked 6 Nov 2026); not seen.",
     "partial": false
    },
    "length": {
@@ -80,7 +80,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "partial",
-   "where": "Key printed in A. Meister, Die Geheimschrift im Dienste der paepstlichen Kurie (1906) pp. 176-177 no. 2, 'Cifra ultima con Mons. Poggio mandata per il Montepulciano', never connected with this letter (Lasry-Megyesi-Kopal compared IA-1 with Meister's Poggio key without success, as cited by Klee 2026). No plaintext anywhere.",
+   "where": "Key printed in A. Meister, Die Geheimschrift im Dienste der paepstlichen Kurie (1906) pp. 176-177 no. 2, 'Cifra ultima con Mons. Poggio mandata per il Montepulciano', never connected with this letter (Lasry-Megyesi-Kopal compared IA-1 with Meister's Poggio key without success, as cited by Klee 2026). No plaintext anywhere. Pastor (1909, V 472 n. 5) summarised the letter's argument (no open declaration against Francis I, who would leave the Church and seize its goods) from the readable copy in Chigi L III 65; found 6 Nov 2026, after the reading, and not used for it.",
    "found": "during attempt",
    "used": true
   },
@@ -103,7 +103,7 @@
   ],
   "sessions": 1,
   "first_date": "2026-11-05",
-  "last_date": "2026-11-05"
+  "last_date": "2026-11-06"
  },
  "solution": [
   {
@@ -319,6 +319,36 @@
    "kind": "verification",
    "what": "Merged reading re-aligned (align91.py): 1,998/2,965 certain (0.674), 2,362 with uncertain words and 35 one-digit emendations (0.797); 609 unread.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "literature search",
+   "what": "Cardauns, Nuntiaturberichte I/7 (1912) pp. 435-439, read for Farnese's letters to Poggio of Nov-Dec 1541: drafts in Naples Carte Farnesiane 707, register copies in AAV Lettere di principi 14A ff. 45-48, originals in Spagna 1A (2, 9, 23 Dec); the letter of 10 Dec 'nicht vorhanden'. None matches ff. 64-66 in content.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "reading",
+   "what": "Close of f. 66r re-read on the image: 'a qui; et bene valete. Da Roma alli .' with the day left blank. DECODE's '12bre', the source of the 'Dec 1541' date, is a misreading of 'et bene valete'.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "reading",
+   "what": "Clear lines dated: 64r announces 'questa deputatione de legati' to the Emperor and the Most Christian King to halt the war; 65v has Ferdinand leave Vienna 'alli 9 del passato' for the Nuremberg diet two days after starting the army toward Buda (army left 7-8 July 1542, Cardauns p. 219 n. 1), and Saxony and Hesse arming against Brunswick. Letter is of August 1542.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "literature search",
+   "what": "Pastor, Geschichte der Paepste V (1909) p. 472 and n. 5: Farnese to Poggio, 7 Aug 1542 (BAV Chigi L III 65) argues that an open declaration against Francis I would drive him from the Church to seize church goods, the cipher's argument; the peace legates Contarini and Sadoleto were named on 7 Aug 1542. Pastor app. 55 (19 Aug 1542, Chigi L III 65 f. 260) refers back to 'quanto le scrissi con el corriere'. Date set to 7 Aug 1542.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "access",
+   "what": "Clear copies sought online: BAV Chigi L III 65 and M II 49 not on DigiVatLib (IIIF 404, other Chigi MSS 200); AAV Lettere di principi 14A and ASNa Carte Farnesiane not digitised; Ehses, Concilium Tridentinum IV, search-only on HathiTrust (viewer would not render in Chrome).",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -336,7 +366,8 @@
    "tokens_open": 0
   },
   "verification": [
-   "key confirms"
+   "key confirms",
+   "historical consistency"
   ],
   "credits": [
    {
@@ -384,7 +415,7 @@
   "texts": [
    {
     "doc": "R91",
-    "label": "Farnese to Poggio, Dec 1541",
+    "label": "Farnese to Poggio, 7 Aug 1542",
     "transcription": [
      "reread/64r.txt",
      "reread/64v.txt",
@@ -398,7 +429,7 @@
     "state": "read in part",
     "language": "Italian",
     "read_share": 0.674,
-    "summary": "Farnese answers for Paul III the Emperor's demand that the Pope declare against France after the Algiers campaign: the Pope will do all his rank and honour allow and join against the Turk with all his forces, but branding the King of France the Turk's ally would need a condemnation he cannot give, would cost the Holy See the reputation it needs, and would push others to leave its obedience and seize church goods as England and the Lutherans did; hope rests on the two legates, and no remedy but peace.",
+    "summary": "Farnese answers for Paul III the Emperor's demand that the Pope declare against France in the first weeks of the war of 1542: the Pope will do all his rank and honour allow and join against the Turk with all his forces, but branding the King of France the Turk's ally would need a condemnation he cannot give, would cost the Holy See the reputation it needs, and would push others to leave its obedience and seize church goods as England and the Lutherans did; hope rests on the two legates, and no remedy but peace.",
     "reading_review": {
      "grade": "B",
      "by": "Claude (Opus 5.5)",
@@ -412,7 +443,9 @@
   "contribution": [
    "transcription",
    "decipherment with ambiguous key",
-   "key extended or corrected"
+   "key extended or corrected",
+   "sender or date identified",
+   "catalogue correction"
   ]
  }
 }

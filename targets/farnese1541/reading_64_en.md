@@ -1,6 +1,6 @@
 # R91 ff. 64r l.16 - 64v l.22: normalised Italian and English
 
-Cardinal Alessandro Farnese (Rome) to Giovanni Poggio, nuncio with Charles V, December 1541 (AAV Segr. Stato
+Cardinal Alessandro Farnese (Rome) to Giovanni Poggio, nuncio with Charles V, 7 August 1542 (AAV Segr. Stato
 Spagna 1A, DECODE R91). Cipher part of the letter, after the clear lines 64r 1-15 on the deputation of legates.
 Source reading: `reading_64.txt` (key k2d with dots, checked by `align91.py`). Claude (Opus 5.5), 2026-11-05.
 
