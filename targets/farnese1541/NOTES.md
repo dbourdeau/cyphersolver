@@ -1,5 +1,7 @@
 # Farnese to Poggio, December 1541: Spain IA-1 (DECODE R91, catalogue 262)
 
+Status: in progress (written up as read in part; the open-codes gaps remain workable, see Remaining gaps)
+
 Read in part (68.3% of tokens certain, 76.3% with uncertain words, after three reading passes); written up
 2026-11-06 as docs/farnese1541.html. Every unread piece is listed under Remaining gaps with its blocker.
 
