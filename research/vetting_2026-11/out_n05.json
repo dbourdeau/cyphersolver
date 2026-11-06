@@ -1,0 +1,298 @@
+{
+ "2241": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch n05",
+  "seen": {
+   "kind": "scan",
+   "where": "Riksarkivet IIIF R0003592 (Diplomatica Turcica SE/RA/2119/2119.1/I/9/23, Brev till Kanslikollegium 1738-1741): every 12th image of 522 at 360 px; images 183 at 1200 px; 37, 169, 181, 265 at 2200 px with crops; viewed 6 Nov 2026",
+   "extent": "522 images. Bare cipher seen on 37 (a spread of four-digit runs set in Swedish, about 30 lines), 169 and 181 (pages of four-digit groups with a few clear Swedish words), and 265 (P.S. of Höpken and Carlson, 22 Feb 1739: about 12 lines of a second, three-digit cipher with values 100-168 and diacritic marks over some groups). Glossed passages on 97, 145, 157 and 183 (French, 19/30 June 1738). Not paged leaf by leaf; images 235, 340, 366 named by the sweep were not opened.",
+   "cipher": "Two systems. (1) The Höpken-Carlson four-digit code (values about 1000-1750, commas or spaces between groups) in Swedish and French despatches; on 37, 169 and 181 the runs stand in the clear text with nothing written over them at 2200 px (the faint marks are show-through from the verso), while 183 and other leaves carry a French/Swedish decipherment over each run. (2) On 265 a three-digit cipher (100-168, e.g. \"168 106 135 111 121 108 135 123 108 154\") inside a Swedish postscript, bare, no gloss, no key on the leaf."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump, Cryptoole snapshot, repo ledgers) on \"I/9/23\", \"R0003592\", \"Höpken\", \"Carlson\": only this lead, sweep D's row, catalogue 1771 (vol. 9/21) and 2244 (vol. 9/28), leads 1770 (9/20) and 2240 (9/22); no DECODE record of a Höpken-Carlson cipher.",
+   "tomokiyo": "cryptiana.web.fc2.com/code/crypto.htm (Tomokiyo index) fetched 6 Nov 2026: no Swedish, Ottoman-Swedish or Höpken page (the only Constantinople item is Louis XIV's 1690 instructions); repo copy unsolved.htm has no 1738-41 Swedish item.",
+   "lasry": "local GL.htm copies (targets/esp318/lit/crypt, targets/gramont1529, targets/vasto1527/prior) grepped 6 Nov 2026: no Höpken, Carlson, Constantinople or Turcica item; web search for the 1739 alliance despatches found no Lasry paper.",
+   "edition": "No edition of the 1738-41 letters to the Kanslikollegium found: three searches returned the 1768 travel account (ed. Rebrén), Swedenborg Documents (Runeberg) and C. Görür's 2021 alliance paper (title only); no printed text of these despatches.",
+   "literature": "Searches in Swedish and English (Diplomatica Turcica, the 1739 alliance, Görür) found background on the mission and Turkish studies of the Ahidname register; nothing on the four-digit code or the 100-168 cipher of the 1739 postscript."
+  },
+  "key_check": "targets/hopken1739/key.tsv: 184 groups of the four-digit code (values 1000-1749) rebuilt from the glossed passages of vol. 9/21 (85 confirmed values); not tested on the bare runs of 37, 169, 181. No key for the three-digit cipher of image 265 is known. The glossed passages of this volume (97, 145, 157, 183) give further number-to-text pairs for the four-digit code.",
+  "key_in_volume": "Partial only: glossed four-digit passages in the same volume (97, 145, 157, 183) supply plaintext for the same code; no key table seen; not used.",
+  "key_held": "targets/hopken1739/key.tsv: 184 groups of the four-digit code (values 1000-1749) rebuilt from the glossed passages of vol. 9/21 (85 confirmed values) (targets/hopken1739); untested here.",
+  "duplicates": "known.py as above; targets/hopken1739 (in progress, another session) covers vol. I/9/21 only (R0003582, images 255-263; NOTES.md and every script name R0003582 and no other image series), so vol. 9/23 is not that target's material. Catalogue 1771 is vol. 9/21 and 2244 vol. 9/28; leads 1770, 2240, 2242, 2245-2248 are other volumes of the same correspondence. Whether a 9/23 letter repeats a despatch to the King in 9/21 with a gloss there was not checked.",
+  "verdict": "open",
+  "searches": [
+   {
+    "query": "\"Diplomatica Turcica\" Höpken Carlson Kanslikollegium 1738-1741 chiffer",
+    "result": "Wikipedia list of Swedish envoys to Turkey (Höpken and Carleson envoys 1738-42), Liotard portrait note, Swedenborg Documents; nothing on the volume or its cipher."
+   },
+   {
+    "query": "Höpken Carlson Constantinople 1739 Swedish Ottoman alliance despatches deciphered edition",
+    "result": "The 1737 commerce and 1739 alliance treaties, the 1768 travel book, Jefferyes despatches (Bender 1710, other envoy); no edition or decipherment of the 1739 despatches."
+   },
+   {
+    "query": "Görür Ottoman-Swedish alliance 1739 Höpken Riksarkivet Turcica despatches study",
+    "result": "Görür 2021 conference paper (title only), Turkish articles citing RA Diplomatica Turcica; nothing on the ciphers of vol. 9/23."
+   }
+  ]
+ },
+ "2242": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch n05",
+  "seen": {
+   "kind": "scan",
+   "where": "Riksarkivet IIIF R0003653 (Diplomatica Turcica SE/RA/2119/2119.1/I/9/29, Beskickningshandlingar 1736-1746): every 8th image of 278 at 360 px; images 56, 98, 112, 153 at 1200 px; 79-85 at 700 px; 81 and 153 at 2200 px with crops; viewed 6 Nov 2026",
+   "extent": "278 images. Images 79-85: about seven pages of French text almost wholly in four-digit groups (values to about 1884), headed \"Doupplette\" and \"Lit. B\" on 81, a few clear French words; bare. Image 56 (received 17 Jan 1739): a Swedish letter with runs of small numbers 1-26 separated by colons, glossed in Swedish. Images 112 and 153, listed by the sweep, are clear Swedish (153 has two words blotted out), not cipher. The rest of the sample is accounts, lists and registers.",
+   "cipher": "Image 81 at 2200 px: \"Doupplette\", \"Lit. B\", then lines of four-digit groups (\"1361 1128 1222 1655 1372 1337 1849 1011 1177 1024 1866 ...\") with no interlinear writing and no gloss; 79-85 look the same at 700 px. A second, small-number letter cipher (1-26, colon-separated) on 56 carries a Swedish decipherment over each run (\"skicka nu från Cochim\", \"Pashan\", \"trodde mig wäl wara\"), so that letter is read."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump, repo ledgers) on \"I/9/29\", \"R0003653\", \"Beskickningshandlingar\": only this lead and sweep D's row; DECODE has no record of the Constantinople legation papers.",
+   "tomokiyo": "cryptiana.web.fc2.com/code/crypto.htm (Tomokiyo index) fetched 6 Nov 2026: no Swedish legation, Carlson or Ottoman-Swedish entry; nothing for 1736-46.",
+   "lasry": "local GL.htm copies (targets/esp318/lit/crypt, targets/gramont1529, targets/vasto1527/prior) grepped 6 Nov 2026: nothing on Carlson, the legation papers or a \"Lit. B\" duplicate; no Lasry paper found by the legation searches.",
+   "edition": "No edition of the legation papers 1736-46 found: searches on Carlson, the beskickningshandlingar and the \"Doupplette\" pages returned the envoy list, Johansson's book on the Swedish palace (contents not seen) and the travel account; no printed despatch.",
+   "literature": "Searches on the legation's codes, Gyllenborg and Celsing found Celsing's 1745 posting, the 1717 Gyllenborg cipher (London) and the SU DECODE project page; nothing on these four-digit pages."
+  },
+  "key_check": "targets/hopken1739/key.tsv: 184 groups of the four-digit code (values 1000-1749) rebuilt from the glossed passages of vol. 9/21 (85 confirmed values); not tested on 79-85, where values run to about 1884, above the 1749 ceiling of that key, so the 1740s pages may use a revised table. The small-number cipher of image 56 is glossed, so its values can be read from the leaf.",
+  "key_in_volume": "No key table seen in the sample; image 56 is a glossed letter in a different, small-number cipher.",
+  "key_held": "targets/hopken1739/key.tsv: 184 groups of the four-digit code (values 1000-1749) rebuilt from the glossed passages of vol. 9/21 (85 confirmed values) (targets/hopken1739); untested here.",
+  "duplicates": "known.py as above; targets/hopken1739 (in progress, another session) covers vol. I/9/21 only (R0003582, images 255-263; NOTES.md and every script name R0003582 and no other image series); vol. 9/29 is a separate unit. \"Doupplette\" on 81 marks a duplicate copy: the other copy and any decipherment of it were not located. Not a sibling-volume duplicate of catalogue 1771 or 2244.",
+  "verdict": "open",
+  "searches": [
+   {
+    "query": "Edvard Carlson chargé d'affaires Konstantinopel beskickningshandlingar 1736-1746 chiffer",
+    "result": "Envoy list (Carleson chargé 1734-42, envoy 1738-42), SBL-type biography, Johansson on the Swedish palace; nothing on the mission papers or a cipher."
+   },
+   {
+    "query": "Swedish legation Constantinople 1740s code cipher Stockholm instructions Carlson Gyllenborg deciphered",
+    "result": "Celsing in Constantinople from 1745, the 1717 Gyllenborg cipher broken in London; nothing on the legation's 1740s code."
+   },
+   {
+    "query": "\"Doupplette\" OR \"dupplett\" chiffer Stockholm Konstantinopel 1740 instruktion Carlson Höpken depesch",
+    "result": "Travel account and Swedenborg Documents only; no hit for the duplicate cipher pages or a decipherment."
+   }
+  ]
+ },
+ "2245": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch n05",
+  "seen": {
+   "kind": "scan",
+   "where": "Riksarkivet IIIF R0003590 (Diplomatica Turcica SE/RA/2119/2119.1/I/9/24, Brev till kanslipresidenten 1735-1739): every 3rd image of 333 at 300 px plus every 9th at 360 px; 161, 185, 289, 325 at 2200 px with crops; viewed 6 Nov 2026",
+   "extent": "333 images, 111+ sampled. Most four-digit passages are glossed (10, 35, 44, 46, 77, 113, 119, 122, 131, 134, 137, 152, 154, 158, 163, 167, 179, 181, 182, 307, 316). Bare: 161 (a full page of four-digit groups, with 162), 185 and 188 (pages of four-digit groups set in Swedish), 289 (letter No. 28, 9/20 Nov 1739: two lines of a small-number cipher, values 11-30) and 325 (one line of the same at the end of a letter).",
+   "cipher": "Four-digit Höpken-Carlson code in Swedish letters to the chancery president; on 161 and 185 at 2200 px the groups (\"1305 1605 1020 1323 1732 ...\", \"1250 1471 1020 1705 1415 ...\") stand with no writing over them. A small-number cipher (11-30, dot-separated, \"22.15.25.11.16.28.23.18.15.25.18.28.29\") on 289 and 325 is bare too, apart from one \"29.11\" written over a group on 289."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump, repo ledgers) on \"I/9/24\", \"R0003590\": only this lead and sweep D's row; Höpken/Carlson hits are catalogue 1771, 2244 and leads 1770, 2240 (other volumes); no DECODE record.",
+   "tomokiyo": "cryptiana.web.fc2.com/code/crypto.htm (Tomokiyo index) fetched 6 Nov 2026: no page on Swedish ciphers of the 1730s or on Höpken; nothing for 1735-39.",
+   "lasry": "local GL.htm copies (targets/esp318/lit/crypt, targets/gramont1529, targets/vasto1527/prior) grepped 6 Nov 2026: no Höpken or chancery-president item; no Lasry publication found by the 1735-39 searches.",
+   "edition": "No edition of the 1735-39 letters to the chancery president found: searches (kanslipresident 1735-1739, the 1737 commerce treaty, Bonneval) returned the travel account, Swedenborg Documents, the treaty article and a 1740 German Bonneval pamphlet; no printed despatch.",
+   "literature": "Searches on the 1737 treaty, Horn and Gyllenborg, Bonneval and the envoys found the Hitit thesis on the Ahidname register and Szeged's 1640s Habsburg cipher study; nothing on this volume's ciphers."
+  },
+  "key_check": "targets/hopken1739/key.tsv: 184 groups of the four-digit code (values 1000-1749) rebuilt from the glossed passages of vol. 9/21 (85 confirmed values); not tested on 161 or 185. The glossed passages of this volume give many more pairs for the same code. No key for the small-number cipher of 289/325 is known; it was not attacked.",
+  "key_in_volume": "Partial: some twenty glossed four-digit passages in the same volume (listed in seen.extent) supply plaintext; no key table seen; not used.",
+  "key_held": "targets/hopken1739/key.tsv: 184 groups of the four-digit code (values 1000-1749) rebuilt from the glossed passages of vol. 9/21 (85 confirmed values) (targets/hopken1739); untested here.",
+  "duplicates": "known.py as above; targets/hopken1739 (in progress, another session) covers vol. I/9/21 only (R0003582, images 255-263; NOTES.md and every script name R0003582 and no other image series); vol. 9/24 is different material. Catalogue 1771 (9/21), 2244 (9/28) and leads 1770, 2240 are sibling volumes, not this one. A letter here repeating a glossed despatch to the King in 9/20 was not checked.",
+  "verdict": "open",
+  "searches": [
+   {
+    "query": "Höpken Carlson brev till kanslipresidenten 1735-1739 Konstantinopel Gyllenborg chiffrerade",
+    "result": "Background on the envoys (arrival 1735, treaty 1737, Höpken envoy 1738); no source on the cipher letters or their publication."
+   },
+   {
+    "query": "Swedish envoy Constantinople 1735 1737 commercial treaty Höpken cipher letters chancery president Horn decipherment",
+    "result": "Ottoman-Swedish Treaty article, Hitit thesis on the 1736-58 Ahidname register; nothing on cipher letters to Horn."
+   },
+   {
+    "query": "Höpken 1736 1738 Constantinople Bonneval correspondence Swedish cipher Horn Gyllenborg letters published",
+    "result": "Sutton despatches (Camden), a 1740 Bonneval pamphlet (Rostock), Szeged 1640s cipher article; no printed Höpken letters."
+   }
+  ]
+ },
+ "2246": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch n05",
+  "seen": {
+   "kind": "scan",
+   "where": "Riksarkivet IIIF R0003628 (Diplomatica Turcica SE/RA/2119/2119.1/I/9/25, Brev till kanslipresidenten 1740-): every 12th image of 463 at 360 px; 97 at 2200 px with crops; 96 and 98 at 1200 px; viewed 6 Nov 2026",
+   "extent": "463 images. Images 97-98 (and the letter's continuation): a Swedish letter of 1740 with long bare runs of a three-digit code, about 25 lines of groups on the two openings seen (Erzurum, Nadir Shah's envoy, Bonneval, the Neapolitan treaty envoy Sinochetti). Glossed four-digit passages on 37, 49, 61, 73, 85, 109, 193. Images 8, 53, 99, 329 named by the sweep were not opened at full size.",
+   "cipher": "Three-digit code (values about 100-880, some groups with a superscript mark) inside clear Swedish: \"Dett är 404 568 660 170 177 308 230 682 552 128 som man ...\" (97). At 2200 px no interlinear writing, no gloss and no key on the leaf. The four-digit code passages elsewhere in the volume carry decipherments between the lines."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump, repo ledgers) on \"I/9/25\", \"R0003628\", \"Lillienberg\", \"Troilius\": only this lead and sweep D's row; no DECODE record of a Swedish three-digit or four-digit code of 1740.",
+   "tomokiyo": "cryptiana.web.fc2.com/code/crypto.htm (Tomokiyo index) fetched 6 Nov 2026: no Swedish 1740 code; the index has German/Germanic and Dutch pages but nothing on Höpken, Lillienberg or Constantinople 1740.",
+   "lasry": "local GL.htm copies (targets/esp318/lit/crypt, targets/gramont1529, targets/vasto1527/prior) grepped 6 Nov 2026: no 1740 Constantinople item; nothing from Lasry found by the Lillienberg/Troilius searches.",
+   "edition": "No edition of the 1740 letters found: searches on 1740 with Lillienberg and Troilius, the subsidy negotiation and the cipher returned the travel account, Swedenborg Documents and Bodensten's subsidy studies; no printed despatch.",
+   "literature": "Searches in Swedish and English (1740, three-digit code, subsidies, SU historical-cipher project) found Bodensten on subsidies and the DECODE project page; nothing on this code."
+  },
+  "key_check": "No key known for the three-digit code of 97-98; targets/hopken1739/key.tsv: 184 groups of the four-digit code (values 1000-1749) rebuilt from the glossed passages of vol. 9/21 (85 confirmed values) does not apply to it (different group length). The four-digit glossed passages of this volume were not used.",
+  "key_in_volume": "Partial for the four-digit code only (glossed passages 37, 49, 61, 73, 85, 109, 193); none seen for the three-digit code.",
+  "key_held": "targets/hopken1739/key.tsv: 184 groups of the four-digit code (values 1000-1749) rebuilt from the glossed passages of vol. 9/21 (85 confirmed values) (targets/hopken1739), for the four-digit code only; not applicable to the bare three-digit letter.",
+  "duplicates": "known.py as above; targets/hopken1739 (in progress, another session) covers vol. I/9/21 only (R0003582, images 255-263; NOTES.md and every script name R0003582 and no other image series); vol. 9/25 is not part of it. No catalogue entry or lead covers vol. 9/25; siblings 1771, 2244, 1770, 2240-2248 are other volumes.",
+  "verdict": "open",
+  "searches": [
+   {
+    "query": "Höpken Carlson 1740 Constantinople Lillienberg Troilius despatches cipher Riksarkivet",
+    "result": "Travel account, Swedenborg Documents, a Turkish article on Riksarkivet holdings; nothing on Lillienberg, Troilius or the 1740 ciphers."
+   },
+   {
+    "query": "Höpken Carlson 1740 Porte Swedish subsidies Ottoman negotiation Bonneval three-digit code Swedish letters",
+    "result": "Bodensten on Swedish subsidies, a State Papers note on a Swedish dispatch; nothing on a three-digit code or the 1740 letters."
+   },
+   {
+    "query": "Höpken Konstantinopel 1740 chiffer dechiffrering svenska beskickningen Turkiet 1700-talet chiffernyckel",
+    "result": "SU news item and project page on historical ciphers (DECODE), Szeged 1640s study; no Höpken key or decipherment."
+   }
+  ]
+ },
+ "2247": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch n05",
+  "seen": {
+   "kind": "scan",
+   "where": "Riksarkivet IIIF R0003635 (Diplomatica Turcica SE/RA/2119/2119.1/I/9/26, Brev till kanslipresidenten 1741-): every 12th image of 468 at 360 px; 157 and 229 at 2200 px with crops; viewed 6 Nov 2026",
+   "extent": "468 images. Bare four-digit pages on 157 (about 30 lines of groups with short Swedish phrases: Ulfeld's audience, the dragoman) and 229 (a letter from 24 Jan with five or more full lines of groups); more dense number pages at 13, 61, 97, 109, 169, 193 seen only at sheet size. Glossed passages on 121, 181, 217, 241, 277. Image 25 is a clear French \"Conversation entre le comte Ulfeld et moy Höpken\" (2/13 Jan 1741). Images 147, 8, 54, 100, 240, 286 named by the sweep were not opened at full size.",
+   "cipher": "Four-digit code with values to about 1887 (\"1749 1611 1372 1532 1802 1849 1474 ...\", 157; \"1384 1316 1166 1757 1408 ...\", 229) inside Swedish letters to the chancery president; at 2200 px no writing over the groups, no gloss, no key on the leaf."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump, repo ledgers) on \"I/9/26\", \"R0003635\": only this lead and sweep D's row; no DECODE record for Höpken's 1741 letters.",
+   "tomokiyo": "cryptiana.web.fc2.com/code/crypto.htm (Tomokiyo index) fetched 6 Nov 2026: no 1741 Swedish or Russo-Swedish-war cipher entry.",
+   "lasry": "local GL.htm copies (targets/esp318/lit/crypt, targets/gramont1529, targets/vasto1527/prior) grepped 6 Nov 2026: no Höpken 1741 item; nothing from Lasry in the Ulfeld/1741 searches.",
+   "edition": "No edition of the Jan-Jun 1741 letters found: searches (1741 war, the Ulfeld conversation of Jan 1741, spring 1741 Ottoman support) returned Wikipedia on the war, Wurzbach on Ulfeld's farewell audience (April 1741) and the envoys' biographies; no printed despatch.",
+   "literature": "Searches on the 1741 Swedish-Ottoman diplomacy found a Ukrainian article on Swedish-Ottoman relations and TNA notes on Ottoman money for Sweden; nothing on the four-digit code of 1741."
+  },
+  "key_check": "targets/hopken1739/key.tsv: 184 groups of the four-digit code (values 1000-1749) rebuilt from the glossed passages of vol. 9/21 (85 confirmed values); not tested on 157 or 229, whose groups run above 1749 (1802, 1849, 1887), so the 1741 letters may use an enlarged table. Glossed passages in this volume (121, 181, 217, 241, 277) give pairs for testing.",
+  "key_in_volume": "Partial: glossed passages 121, 181, 217, 241, 277 in the same volume; no key table seen; not used.",
+  "key_held": "targets/hopken1739/key.tsv: 184 groups of the four-digit code (values 1000-1749) rebuilt from the glossed passages of vol. 9/21 (85 confirmed values) (targets/hopken1739); untested here.",
+  "duplicates": "known.py as above; targets/hopken1739 (in progress, another session) covers vol. I/9/21 only (R0003582, images 255-263; NOTES.md and every script name R0003582 and no other image series); vol. 9/26 is separate. Catalogue 1771 (9/21) covers Höpken's despatches to the King 1739-41: a letter here duplicating a glossed one there was not checked.",
+  "verdict": "open",
+  "searches": [
+   {
+    "query": "Höpken Carlson 1741 Russo-Swedish war Ottoman Porte despatches four-digit code Swedish historiography",
+    "result": "Wikipedia on the 1741-43 war and on A. J. von Höpken, Sutton despatches; nothing on the 1741 despatches or their code."
+   },
+   {
+    "query": "Höpken Ulfeld conversation January 1741 Constantinople Swedish envoy report",
+    "result": "Wurzbach on Ulfeld (farewell audience April 1741, left 4 May), Swedenborg Documents; no edition of Höpken's report."
+   },
+   {
+    "query": "Swedish envoys Höpken Carleson Porte spring 1741 Ottoman support against Russia letters Gyllenborg cipher",
+    "result": "Liotard portrait note, a Ukrainian article on Swedish-Ottoman policy, a TNA entry on Porte money for Sweden; no cipher letters printed."
+   }
+  ]
+ },
+ "2248": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch n05",
+  "seen": {
+   "kind": "scan",
+   "where": "Riksarkivet IIIF R0003636 (Diplomatica Turcica SE/RA/2119/2119.1/I/9/27, Brev till kanslipresidenten 1741-): every 11th image of 430 at 360 px; 45, 155, 232 at 2200 px with crops; viewed 6 Nov 2026",
+   "extent": "430 images. Bare four-digit pages on 45 and 155 (full pages of groups, about 20-25 lines each); dense number spreads also at 34, 67, 89, 111, 166, 232, 254 at sheet size. Glossed passages on 12 (No. 35, 23 Sept 1741, two glossed lines), 23, 100, 144, 177, 210. Images 50, 93, 8, 135 named by the sweep were not opened at full size.",
+   "cipher": "Four-digit code with values to about 1898 (\"1372 1125 1495 1436 1655 1194 ...\", 155; \"1011 1006 1257. 1825 1516 1869 ...\", 45) in Swedish letters to the chancery president, Jul-Dec 1741; at 2200 px nothing is written over the groups and no key is on the leaf."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump, repo ledgers) on \"I/9/27\", \"R0003636\": only this lead and sweep D's row; no DECODE record of the autumn 1741 letters.",
+   "tomokiyo": "cryptiana.web.fc2.com/code/crypto.htm (Tomokiyo index) fetched 6 Nov 2026: nothing on Swedish diplomacy in the second half of 1741 or on Lillienberg.",
+   "lasry": "local GL.htm copies (targets/esp318/lit/crypt, targets/gramont1529, targets/vasto1527/prior) grepped 6 Nov 2026: no Constantinople 1741 item; the Lillienberg/autumn 1741 searches found no Lasry work.",
+   "edition": "No edition of the Jul-Dec 1741 letters found: searches on the shelfmark (2119 I/9/27), Lillienberg and the Villmanstrand defeat returned the envoy biographies, Wikipedia on the battle and HHStA Türkei inventory entries; no printed despatch.",
+   "literature": "Searches on autumn 1741 and the Porte's reaction to the Swedish defeat found only general war histories and a Habsburg despatch-edition preface; nothing on this code."
+  },
+  "key_check": "targets/hopken1739/key.tsv: 184 groups of the four-digit code (values 1000-1749) rebuilt from the glossed passages of vol. 9/21 (85 confirmed values); not tested on 45 or 155 (groups to about 1898, above that key's range). Glossed passages in this volume (12, 23, 100, 144, 177, 210) give pairs for testing.",
+  "key_in_volume": "Partial: glossed passages 12, 23, 100, 144, 177, 210 in the same volume; no key table seen; not used.",
+  "key_held": "targets/hopken1739/key.tsv: 184 groups of the four-digit code (values 1000-1749) rebuilt from the glossed passages of vol. 9/21 (85 confirmed values) (targets/hopken1739); untested here.",
+  "duplicates": "known.py as above; targets/hopken1739 (in progress, another session) covers vol. I/9/21 only (R0003582, images 255-263; NOTES.md and every script name R0003582 and no other image series); vol. 9/27 is separate. No catalogue entry or lead covers vol. 9/27; siblings 1771, 2244, 1770, 2240-2247 are other volumes.",
+  "verdict": "open",
+  "searches": [
+   {
+    "query": "Höpken Carleson Lillienberg Constantinople autumn 1741 despatches chancery president Swedish code",
+    "result": "Envoy biographies, Liotard portrait note, a Hungarian Habsburg-despatch preface; nothing on Lillienberg or the autumn 1741 code."
+   },
+   {
+    "query": "\"Turcica\" Riksarkivet 2119 I/9/27 Höpken 1741 brev kanslipresidenten",
+    "result": "Swedenborg Documents and HHStA Türkei inventory entries on Hungaricana; no record or edition of this volume."
+   },
+   {
+    "query": "Swedish defeat Villmanstrand August 1741 Höpken Constantinople Porte reaction despatch December 1741",
+    "result": "Wikipedia on Villmanstrand and Buddenbrock; nothing on Höpken's despatches of late 1741."
+   }
+  ]
+ },
+ "2265": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch n05",
+  "seen": {
+   "kind": "not online",
+   "where": "http://id.bnportugal.gov.pt/bib/catbnp/2102847 (BNP catalogue; the record itself returned 503/504 on 6 Nov 2026, description as quoted in the lead from the 5 Nov sweep)",
+   "extent": "1 document, 2 f. (Doc. n.º 78 in PSS/Cx. 04-Mc. 10); how much of it is cipher is not stated",
+   "cipher": "BNP catalogue description: 'carta autógrafa, em cifra com indicação \"Confidencial\", do Visconde de Santarém para o Visconde de Asseca, datada de 30 de Maio de 1829 (Doc. n.º 78)'; no decipherment noted in the record. Not digitised; access reserved."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump, repo ledgers) on \"PSS/Cx. 04\", \"Asseca\", \"Santarém\", \"2102847\": only this lead; DECODE holds no BNP record.",
+   "tomokiyo": "cryptiana.web.fc2.com/code/crypto.htm (Tomokiyo index) fetched 6 Nov 2026: no Portuguese or Miguelist cipher page; nothing on Santarém or Asseca.",
+   "lasry": "local GL.htm copies (targets/esp318/lit/crypt, targets/gramont1529, targets/vasto1527/prior) grepped 6 Nov 2026: no Santarém or Asseca item; the HistoCrypt Portuguese papers (Dinnissen & Araújo 2022, the 1646 Pina paper) concern 17th-century WIC material, not 1829.",
+   "edition": "Correspondência do 2.º Visconde de Santarém (ed. Rocha Martins, 8 vols, 1918-19), all eight volumes opened in full text on archive.org (correspondenciac01sant-c08sant) and grepped for Asseca, 1829, cifra, confidencial: vol. 2 pp. 414-417 prints four despatches of 30 May 1829 to Asseca (reservados 148-151, \"Do Arch. do Minist. dos Neg. Extr.\", on US filibusters, Zea Bermúdez and Acosta, the Noble passport, the captain of HMS Vigilante), all in clear and none marked \"(Cifra)\" or \"Confidencial\", although the edition marks enciphered passages \"(Cifra)\" elsewhere; no confidential cipher letter of that date is printed https://archive.org/details/correspondenciac02sant.",
+   "literature": "Three web searches (the Correspondência with Asseca and cifra; Santarém-Asseca cipher 1829; the BNP Santarém archive) found Santarém biographies (BNP dichp, Protásio 2018) and the HistoCrypt 1646 paper; nothing on this letter."
+  },
+  "key_check": "No key known for Santarém's 1829 confidential cipher. The Miguelist cipher of the Ribeiro Saraiva letters (lead 1237, BNP MSS. 99-101) and the ciphers the edition says Santarém sent his envoys in 1828 were not tested; nothing can be tested before a scan.",
+  "duplicates": "known.py on the shelfmark, correspondents and record number: no catalogue entry, lead or target with this letter; lead 1237 (Ribeiro Saraiva correspondence) is a different archive.",
+  "verdict": "open",
+  "searches": [
+   {
+    "query": "\"Correspondencia do 2.º Visconde de Santarem\" Asseca 1829 cifra",
+    "result": "BNP biographical entry, an Atlântida note on the Correspondência, Protásio's 2018 biography; nothing on the 30 May 1829 letter. The edition itself was then found on archive.org and read."
+   },
+   {
+    "query": "Santarém Asseca carta cifrada confidencial 1829 decifração miguelista Londres",
+    "result": "Battles of Santarém and Asseiceira, the HistoCrypt 1646 Portuguese spy paper; no decipherment of an 1829 Santarém letter."
+   },
+   {
+    "query": "\"Arquivo Visconde de Santarém\" Biblioteca Nacional cifra Asseca",
+    "result": "BNP dichp Santarém PDF, 18th-century Asseca papers in São Paulo; nothing on doc. 78 or its cipher."
+   }
+  ]
+ },
+ "2270": {
+  "unvetted": "Ciphertext not shown: BNP record 2168524 (MSS. 169, n. 1-13) names only the key, \"[Cifra do diário]\" (n. 13); whether any diary entry 1831-45 is enciphered is not stated, and nothing is digitised (BNP catalogue gave 503/504 on 6 Nov 2026; the 5 Nov sweep found no BND copy). A printed \"Diário de António Ribeiro Saraiva\" (Imprensa Nacional, Lisbon 1915, 2 vols, per an Eclectica auction listing) exists and was not opened: not on archive.org (searched 6 Nov 2026). known.py on \"MSS. 169\", \"Ribeiro Saraiva\", \"2168524\": this lead, lead 1237 (his correspondence) and the swiss_austrian Manuscriptorium row. Next: open the 1915 Diário (library copy or Google Books) for enciphered entries, or a BNP scan of n. 13 and a sample year."
+ },
+ "2271": {
+  "unvetted": "Extent of cipher unknown: BNP record 2289236 (FPM-Cx. 01, n. 83, 29 Mar 1873, [2] f.) calls the letter \"parcialmente cifrada\", but the only cipher it quotes is single capital letters for names (\"amanhã vou a Z ... o enteado de O\"); without the leaf it cannot be told whether there is any ciphertext beyond a name code. Not digitised; BNP catalogue down (503) on 6 Nov 2026. known.py on \"FPM-Cx. 01\", \"Fontes Pereira de Melo\", \"2289236\": catalogue 2272 and 2273 (other FPM telegrams), no duplicate. Web search (Fontes Pereira de Melo, 1873, Elvas, enteado) found nothing. Needs a BNP Reservados scan of n. 83."
+ },
+ "2274": {
+  "unvetted": "Possible reading on record: BNP record 2259117 (Área de Música, EMUS13 27, Tavares de Andrade notebook, 10 f.) describes the invented-alphabet text as \"Caderno de artista em forma de manifesto ... O conteúdo é de natureza mista: 1. apontamentos técnicos, 2. uma reflexão sobre a forma, o gesto e o processo, e 3. um pequeno ensaio sobre a Art...\", a content summary that shows the cataloguer (or the estate) read the script; whether a transcription is held with the espólio must be asked of the BNP music area. Not digitised; BNP catalogue down (503) on 6 Nov 2026; two web searches on Tavares de Andrade (1884-1930) and the notebook found nothing. known.py on \"EMUS13\", \"Tavares de Andrade\", \"2259117\": only this lead. A 10-leaf monoalphabetic script would be small and quick to read once seen."
+ },
+ "2275": {
+  "unvetted": "No identifiable cipher document: BNP record 2231302 (Arquivo da Casa Pombal, AP/Mc. 110, 136 documents, [761] f.) says only \"Parte do texto em cifra\" for the whole bundle, without naming the document or folio. Not digitised; BNP catalogue down (503/504) on 6 Nov 2026. Web search (AP/Mc. 110, Observações secretíssimas, Pombal cipher) found only general Pombalina descriptions. known.py on \"AP/Mc. 110\", \"Casa Pombal\", \"2231302\": only this lead (catalogue 2261 is PBA. 614, a different item). Needs the BNP to say which document of the 136 carries cipher, then a scan."
+ },
+ "2285": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch n05",
+  "seen": {
+   "kind": "not online",
+   "where": "KB OAI-PMH MARC21 record GGC:AC:31152804X (https://services.kb.nl/mdo/oai?verb=GetRecord&identifier=GGC:AC:31152804X&metadataPrefix=marc21), fetched 6 Nov 2026; parent album record GGC:AC:31084617X",
+   "extent": "One album inscription on fol. 90v of 79 J 35 (Sara Cornelia Rochussen's poetry album, 186 fol., bought 1998 from A.L.M.R.V. Leenes); MARC 300 \"Papier, 1 fol.\"; language French (041); the length of the enciphered verse is not stated. A tiny item: a friendship-album entry.",
+   "cipher": "KB MARC 500 note: \"Geschreven in 'geheimschrift' waarbij klinkers door cijfers zijn vervangen\" (vowels replaced by digits); 245: \"Albuminscriptie / van Caroline Geesteranus voor Sara Cornelia Rochussen (1781-)\", Katwijk, 25 Nov 1797. No reading in the record; neither record has an 856 link, so no scan is online."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump, repo ledgers) on \"79 J 35\", \"Rochussen\", \"Geesteranus\", \"31152804X\": only this lead and the KB sweep row; DECODE lists no KB holding.",
+   "tomokiyo": "cryptiana.web.fc2.com/code/crypto.htm (Tomokiyo index) fetched 6 Nov 2026: no Dutch album or 1797 vowel cipher; the Dutch pages there are diplomatic ciphers only.",
+   "lasry": "local GL.htm copies (targets/esp318/lit/crypt, targets/gramont1529, targets/vasto1527/prior) grepped 6 Nov 2026: no Rochussen, Geesteranus or album-amicorum item; nothing by Lasry on Dutch friendship albums.",
+   "edition": "No edition of the Rochussen album known: the KB records cite no literature (no MARC 510), and searches on the album and on Geesteranus found no published transcription.",
+   "literature": "Three web searches (KB album 79 J 35, Sara Cornelia Rochussen, Caroline Geesteranus Katwijk 1797) found only unrelated alba (Utrecht de Jacobi 1796, KB Heyblocq) and Thomassen's 1990 album survey cited elsewhere; nothing on this inscription."
+  },
+  "key_check": "No key needed beyond the record's description: a vowel-to-digit substitution (five vowels to digits) that would read at once from the leaf; nothing tested because no scan is online.",
+  "duplicates": "known.py on the shelfmark, both correspondents and the PPN: no catalogue entry, lead or target; the KB sweep README lists this as the only KB item described as ciphertext.",
+  "verdict": "open",
+  "searches": [
+   {
+    "query": "Rochussen album amicorum Koninklijke Bibliotheek 79 J 35 Geesteranus geheimschrift",
+    "result": "Auction alba, the KB Heyblocq album (KW 131 H 26), Electronic Labyrinth; nothing on 79 J 35 or its cipher."
+   },
+   {
+    "query": "\"Sara Cornelia Rochussen\" album",
+    "result": "Charles Rochussen artworks and unrelated music albums; no transcription of the album."
+   },
+   {
+    "query": "Caroline Geesteranus Katwijk 1797 album amicorum geheimschrift klinkers cijfers",
+    "result": "Utrecht de Jacobi album (1796), Europeana alba; nothing on Geesteranus or the vowel cipher."
+   }
+  ]
+ }
+}
