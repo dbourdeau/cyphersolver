@@ -1,7 +1,7 @@
 # R91 f. 65r: normalised reading and translation
 
 Key k2d: Meister key 2 with 02 = b/c, 24 = ci, 26 = co (a code not in Meister's table) and 1 = s/z/et, plus dots.
-Aligned with `align91.py` (default key k2d) against `reading_65r.txt`. Claude, 2026-11-05, second pass; key-guided image re-check the same day (section below).
+Aligned with `align91.py` (default key k2d) against `reading_65r.txt`. Claude, 2026-11-05, second pass; key-guided image re-check the same day; third pass the same day (sections below).
 `[...]` = digits left unread; `[xx]` = letters supplied where the digits are unread or faulty; `(?)` = uncertain
 reading; † = the reading needs an emendation (listed at the end).
 The page continues 64v.22 "... di presente piu inanzi di questo non".
@@ -13,10 +13,10 @@ The page continues 64v.22 "... di presente piu inanzi di questo non".
 | 65r.3 | [...] prima. Perché ogni diminutione (cipher *siminutione*) di riputation o autorità [...] | [...] first. Because every diminution of reputation or authority [...] |
 | 65r.4 | che seguisse†(?) a N. S. la farebbe manco [...] ad aiutar le cose di S. M.tà Ce[s.] | that befell His Holiness would make him less [...] to help the affairs of His Caesarean Majesty, |
 | 65r.5 | così†(?) [...] la pace come ne la guerra. Dipoi, ogni volta che [...] [...] | in peace as in war. Then, every time that [...] |
-| 65r.6 | [...] senza iusto iudicio di levarsi† da la obedientia de la se[de] apos[tolica] | [...] without just judgement, to withdraw from the obedience of the Apostolic See, |
+| 65r.6 | [...] senza iusto iudicio di levarsi† da la obedientia de se[.]de(?) apos[tolica] | [...] without just judgement, to withdraw from the obedience of the Apostolic See, |
 | 65r.7 | se li apre in consequentia(?) la [s]trada(?) di occupar li beni de le chiese†, come [...] | in consequence the road is opened to them to seize the goods of the churches, as |
-| 65r.8 | fatto Ingilterra et luterani [...] cristiano†(?) [...] verrebbe [...] | England and the Lutherans have done [...] Christian(?) [...] would come [...] |
-| 65r.9 | [...] di denari in uso(?) de la [g]uerra contra lo impera[tore] [...] | [...] of money in use(?) for the war against the Emperor [...] |
+| 65r.8 | fatto Ingilterra et luterani. [...] de(?) Francia(?) cristiano†(?) [...] verrebbe [...] | England and the Lutherans have done. [...] of France(?), Christian(?) [...] would come [...] |
+| 65r.9 | [...] grosse(?) [...] di denari in uso(?) de la [g]uerra contra lo impera[tore] [...] | [...] large(?) [sums?] of money in use(?) for the war against the Emperor [...] |
 | 65r.10 | [...] che(?) sia, si dovrebbe dalli sopradetti, in modo che per [...] | [...] that it be, it ought (to be done) by the above-mentioned, so that for [...] |
 | 65r.11 | [...] imperator†, la dichiaratione d'una sarebbe mala [...] co- | [...] Emperor, the declaration of one [side] would be a bad thing(?) |
 | 65r.12 | -sa(?) [...]. Bene, essendo et per(?) insino da hora pronti [...] | [...] Well, being, even from now on, ready [...] |
@@ -35,7 +35,7 @@ The page continues 64v.22 "... di presente piu inanzi di questo non".
 
 ## What the page says (summary)
 
-The Pope's answer goes on from 64v. For now nothing more can be done than to procure [...]. A declaration would be not only [useless] but [harm] evident to the Emperor, and it would recoil on him. Any loss of reputation or authority that befell the Pope would make him less able to help the Emperor's affairs, in peace as in war. It would also give occasion for others to withdraw from obedience to the Apostolic See "without just judgement". In consequence the road would be opened for them to seize church property, as England and the Lutherans have done. The page then turns to money for the war against the Emperor and to what the above-mentioned ought to do. A declaration for one side would be "a bad thing". The Pope is ready even now to help the Emperor with whatever aids are possible against the forces of the Turk, "o sole o accompagnate", as the Emperor shall judge fitting, though the Pope has not entirely given up hope of some concord through the work of the two legates "come di sopra". [...] Lucca "would have been a contrary medicine". In short no remedy will be found that does not lead in the end to death, except peace. Lines 15-18 and the starts of lines 1-3 and 9-10 are still mostly unread.
+The Pope's answer goes on from 64v. For now nothing more can be done than to procure [...]. A declaration would be not only [useless] but [harm] evident to the Emperor, and it would recoil on him. Any loss of reputation or authority that befell the Pope would make him less able to help the Emperor's affairs, in peace as in war. It would also give occasion for others to withdraw from obedience to the Apostolic See "without just judgement". In consequence the road would be opened for them to seize church property, as England and the Lutherans have done; France(?) is named next, and the page turns to large(?) sums of money for the war against the Emperor and to what the above-mentioned ought to do. A declaration for one side would be "a bad thing". The Pope is ready even now to help the Emperor with whatever aids are possible against the forces of the Turk, "o sole o accompagnate", as the Emperor shall judge fitting, though the Pope has not entirely given up hope of some concord through the work of the two legates "come di sopra". [...] Lucca "would have been a contrary medicine". In short no remedy will be found that does not lead in the end to death, except peace. Lines 15-18 and the starts of lines 1-3 and 9-10 are still mostly unread.
 
 ## The code groups 2 6 0 6 and 2 6 0 6 2 6 (26 = co)
 
@@ -68,12 +68,12 @@ Every occurrence on this page, read with 26 = co: 2 6 0 6 = *co me*, and 2 6 0 6
 | 5.7 | 3? | pale corroded sign before *la pace* |
 | 5.51-54 | 3 5? 8? 9 | 52-53 fall in a hole in the paper |
 | 5.57-6.4 | 8 6 2 4 8 5 9 0? 9? 1 6 9 4 | 5.64-65 faint strokes at a repaired patch, 6.1-2 corroded blot; not worked out |
-| 6.56-58 | 1 1? 4 | *sede* needs 14 after *se*; 57 is a sign the re-reader added |
+| 6.56 | 1 | third pass: 57-58 (1? 4) = 14 *de* gives *se[.]de*; one of the two uprights at 56-57 is the sign the re-reader added, 56 left unread |
 | 6.63-66 | 8? 5? 3? 1? | brown outlines round holes (rest of *apostolica*), can't be checked |
 | 7.24-28 | 6 8 8 1 2 | read *trada*: the digits give no *s* (*strada* would need 1 6 88 12) |
 | 7.62 | 8? | outline round a hole (8 or 9) between *come* and *fato* |
-| 8.28-35 | 0 8 4 1 4 0 0 0 | not worked out (a dot over 32 would make 00 = S.M.ta) |
-| 8.47, 8.59-9.14 | 1 / 3 6 8 0 0? 8? 2 0 4 ... | 9.1-4 holes; possibly N.S. at 8.63-9.1; not worked out |
+| 8.28-30 | 0 8 4 | third pass: 31-35 read *de Francia* (14 + code 000); 0 8 4 (*u-c-n*, *u-sa*) spells nothing |
+| 8.47, 8.59-9.4, 9.11-14 | 1 / 3 6 8 0 0? 8? 2 0 4 / 8 5 0? 4 | 9.1-4 holes; possibly N.S. at 8.63-9.1; third pass: 9.5-10 = *grose*; 9.11-14 gives *se ma*, not *somme* (87 05) |
 | 9.34 | 0? | a corroded sign that looks like "1 1" or u; the sense wants 01 (*g*, *guerra*), one digit short |
 | 9.52-59 | 8 5 6 / 9 2 | *lo impera-* + 8 5 6 (*imperatore* would need 83); not worked out |
 | 10.1-16 | 9? 3? 6? 8? 3? 2 6 0 8 8 7 0 8 2 8 2? | corroded start of the line; 10.16-17 may be two digits too many |
@@ -130,3 +130,29 @@ each change carries a `KEYCHECK 2026-11-05` note in `decode/reread91/65r.txt`.
 | 19.17 | 7 > 3 | **a**ncorche | 7? in the re-read ("3->7?"); DECODE has 3 |
 | 21.28-29 | 21 > 26 | **co**ntraria | 29 is 1? in the re-read, "could be a loopless 6" |
 | 23.6 | 9 > 3 | **a**ltro | 9? in the re-read ("3->9?"); DECODE has 3 |
+
+## Third pass (2026-11-05)
+
+New key fact (Meister p. 177, checked by the coordinator on the page image): key no. 2 has the code word
+**Francia = 000**, printed beside N.S. ·08 and S.M.ta ·00. `align91.py` takes it from its `EXTRA` table.
+
+| place | digits | reading | why accepted |
+|---|---|---|---|
+| 8.31-35 | 1 4^ 0 0 0 | *de Francia* (14 + 000) | digit-exact; the dot over 32 stands just before the code word, as dots stand before N.S. and S.M.ta. Sense: after "occupar li beni de le chiese, come ha fato Ingiltera et luterani", France is the next power that could leave the obedience; then "... verrebbe ... grosse ... di denari in uso de la guerra contra lo imperatore". Marked (?) because 8.28-30 (0 8 4) before it is unread |
+| 9.5-10 | 0 1 0 0 8 5 | *grose* (g 01, ro 00, se 85) | digit-exact; "grosse [somme] di denari" is the stock phrase before "di denari in uso de la guerra"; marked (?) because the next four digits (8 5 0? 4 = *se ma*) do not give *somme* |
+| 6.54-58 | 8 5 1 1? 4 | *se[.]de* | 57-58 (1? 4) = 14 *de*; the re-reader saw two uprights where DECODE has one sign (1? inserted), so one of 56-57 is surplus; 56 left unread |
+
+The other 000 groups on the page are inside words already read: 65r.1 *procurar* (2 00 02 0 88 6), 65r.23 *altro*
+(… 6 00 + 08 *rimedio*) and *trouara* (6 00 0 3 88). None reads better as *Francia*.
+
+Proposals that fit the sense but need a change to a digit the re-read does not doubt (not adopted):
+
+* 1.28-38 `5 6 1 8 0 3 0 1 6 1 9` = *e trauaglio* (5, 6 88 0 3 01 61 9) if 1.30 is 8 instead of 1: "procurar [...] e
+  travaglio a N.S.". The image at 1.29-31 shows a crossed x-like sign followed by a corroded loop; it can't
+  settle whether 30 is a 1 or the stem of an 8.
+* 1.18-25 `7 4 2 1? 0 8 0 6` = *incarico* (7 4 21 08 26) would need 24 = 2 for 0.
+* 1.46-50 `8 1 1^ 8 3` = *questo* ('85 1 '83) would need 47 = 5 for 1 ("et questo non solo [in]utile ma con danno evidente").
+* 2.11-15 `1 1 3 8 3` = *dano* (01 3 83) would need 11 = 0 for 1 ("ma con danno evidente"); *dani* is 12 82 at 64v.9.
+* 9.53-55 `8 5 6` = *-tor* (*impera-tor*, '83 6) would need 54 = 3 for 5.
+* 4.31-34 `7 1 8 3`: *idonea* still needs 4 5 where the image shows two pale uprights with no cross-bar (checked at 5x).
+

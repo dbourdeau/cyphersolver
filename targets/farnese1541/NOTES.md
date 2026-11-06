@@ -1,7 +1,7 @@
 # Farnese to Poggio, December 1541: Spain IA-1 (DECODE R91, catalogue 262)
 
-Status: in progress (read in part, 67.8% of tokens certain, 75.3% with uncertain words; clear stretches still
-unread, see Remaining gaps)
+Read in part (68.3% of tokens certain, 76.3% with uncertain words, after three reading passes); written up
+2026-11-06 as docs/farnese1541.html. Every unread piece is listed under Remaining gaps with its blocker.
 
 Catalogue 262. AAV Segr. Stato, Spagna 1A (IA-1), ff. 64r-66r: Cardinal Alessandro Farnese (Rome) to Giovanni Poggio,
 bishop of Tropea, nuncio in Spain; clear passages on the deputation of legates, the war, the Nuremberg diet and Buda,
@@ -66,7 +66,7 @@ Two more departures from Meister's print, each tested on the whole letter (`k2c.
 Final key for R91: a3 e5 i7 o9 u/v0, c8, b/c/bb 02, d/f/g 01, l/p 2, n/m 4, r/t 6, s/z/et 1, null 11; ca 21 ce 22
 (ci 23?) ci 24 co 26; da-do 12 14 16 18; la-lo 62 64 61 66; ma-mo 04 06 03 05; na-no 80-83; ra-ro 88 89 08 00;
 sa-so 84-87; dot over the preceding digit (sometimes over the code's own first digit): ta-to 80-83, qua-qui 84-86,
-che/chi/non 87-89, N.S. 08, S.M.ta 00. Open code: 4 0 where *S.M.* is wanted (once with a dot before it; IA-2's key
+che/chi/non 87-89, N.S. 08, S.M.ta 00; Francia 000 (Meister p. 177, found in the third pass). Open code: 4 0 where *S.M.* is wanted (once with a dot before it; IA-2's key
 has 40^ = S.M.ta).
 
 ### The image re-read
@@ -84,17 +84,39 @@ passages or corrosion holes, never word division.
 
 `reading.txt` (clerk's spelling, merged from `reading_64.txt` and `reading_65r.txt`), aligned token by token
 with the digit stream by `align91.py`; normalised Italian and English in `reading_64_en.md` and
-`reading_65r_en.md`:
+`reading_65r_en.md`. After the third pass (2026-11-05/06):
 
 | part | tokens | certain words + nulls | with uncertain words and emendations |
 |---|---|---|---|
-| 64r l.16 - 64v | 1,612 | 1,127 (0.699) | 1,222 (0.758) |
-| 65r | 1,351 | 881 (0.652) | 1,008 (0.746) |
-| **letter** | **2,963** | **2,008 (0.678)** | **2,230 (0.753)** |
+| 64r l.16 - 64v | 1,614 | 1,144 (0.709) | 1,240 (0.768) |
+| 65r | 1,351 | 881 (0.652) | 1,021 (0.756) |
+| **letter** | **2,965** | **2,025 (0.683)** | **2,261 (0.763)** |
 
-15 emendations, each one digit (the aligner prints a two-digit emendation once per digit, 31 entries); 12 sit on
-digits the re-read doubts, 3 on sense alone (*resultarebbe*, *levarsi*, *cristiano*). 739 tokens unread. **Read in part,
-below the 95% bar.**
+(Before the third pass: 2,008/2,963 = 0.678 and 2,230 = 0.753.) 15 emendations, each one digit (the aligner prints
+a two-digit emendation once per digit, 31 entries); 12 sit on digits the re-read doubts, 3 on sense alone
+(*resultarebbe*, *levarsi*, *cristiano*). 710 tokens unread. **Read in part, below the 95% bar.**
+
+### Third reading pass (2026-11-05/06)
+
+Two new tools: `probe.py` (a line's digits with dots; best local LM decodes; where a crib encodes the digits) and
+`wordfit.py` (a dictionary word lattice over a stretch, 30,000 sixteenth-century forms plus degeminated spellings).
+
+* **Francia = 000.** Meister p. 177 prints three code words for key 2: N.S. ·08, S.M.ta ·00 and **Francia 000**; the
+  first two passes had missed the third. It reads at 64v.8 (*sono a l[?] Francia nome, cioe come persona che abbia
+  inteligenza con el turco*: the Emperor wants the Pope to brand the King of France the Turk's ally) and at 65r.8
+  (*de Francia*, `1 4^ 0 0 0`, after *come ha fato Ingiltera et luterani*). The other three 000 groups (65r.1,
+  65r.23 twice) fall inside words already read (*procurar*, *altro*, *trouara*). `align91.py` carries it as a
+  three-digit code (EXTRA).
+* **64v.11 *la condenatione*** (`62 26 4 14 80 82 9 81`): "bisogno che a questo preceda la condenatione, il che
+  mal si puo". It uses an overwritten pair (pos 32-33) that the re-read had marked struck; DECODE transcribes it
+  `2 2`, and at 4x the group ends in a clear z-shaped 2 written over an earlier sign, so it is a correction, not a
+  cancellation (`reread/64v.txt` line 11, THIRD PASS note). The stream grows by two digits.
+* **65r.9 *grose*[?]** (`01 00 85`, "grose ... di denari") and **65r.6 *se[.]de*** (`85 1 1? 4`, pos 56 extra).
+* Refused (sense fits, but a digit the re-read does not doubt would have to change): 64v.10 *iudicato et punito*,
+  64v.13 *facendosi sarebbe*, 64v.4 *considerando*, 65r.1 *e trauaglio* (pos 30 1->8; the strongest candidate if a
+  better image settles the corroded sign), 65r.1 *incarico*, 65r.1 *questo*, 65r.2 *dano*, 65r.9 *imperator*,
+  65r.4 *idonea*. Cribs and lattices on every other unread stretch found nothing that passes the digit, grammar and
+  padding tests.
 
 What it says. Farnese answers Poggio's report from the court. The Emperor, through the Cardinal of Burgos and
 others, asks the Pope to declare himself in his aid (against France). Farnese could say a great deal in reply, but Poggio
@@ -113,30 +135,26 @@ la pace".
 
 ## Remaining gaps
 
-Unread pieces of R91 (739 tokens), by blocker:
+Unread pieces of R91 (710 tokens) after three reading passes, by blocker:
 
-* **illegible**: corrosion holes at the right edge of 64r l.16-20 and the line ends of 65r (~45 positions); 64v.12
-  pos 1-15 ink-burnt and holed; 64v.13 pos 1-4 faint cluster; 65r.15-18 (15.19-42, 16.5-42, 17.1-34, 18.1-45),
-  where corrosion runs through almost every sign and no digit could be read better than the re-read (~140 tokens);
-  the struck passages (dropped from the stream).
-* **open-codes**: {4 0} (*S.M.*?, 64v.2), 2 6 where *di* is wanted (64v.2, 64v.22), 23 undetermined.
-* **not yet worked out (no outside blocker)**: clear digits with no reading found: 64r.16 start and after "il",
-  64r.17 before "laltro", 64v.10 after "iudica", 64v.11 the noun after "preceda", 64v.12 "non si 2 9 0 8 4 8 1",
-  64v.13 "facen ... rebbe" and "al c-u-scir", 64v.14 after "sente", 64v.15 before "efeto", 64v.21, 65r.1-3 starts,
-  65r.4 "manco 7 1 8 3", 65r.10 start, 65r.21 the word before "sorte", 65r.23 end.
+- corrosion holes at the right edge of 64r l.16-20 and at the line ends of 65r (~45 positions) - blocker: illegible; only hole outlines remain on the only image
+- 64v.12 pos 1-15 and 64v.13 pos 1-4 - blocker: illegible; ink-burnt and holed, digit count not fixed on the image
+- 65r.15-18 (15.19-42, 16.5-42, 17.1-34, 18.1-45) - blocker: illegible; corrosion through almost every sign, no digit readable better than the re-read (~140 tokens)
+- 65r.10 pos 1-16 and 65r.12 pos 44 - 65r.13 pos 9 - blocker: illegible; corroded starts and brown outlines at the line end
+- 65r.23 pos 53-55 (end of *finalme[nte]*) - blocker: illegible; at the edge of holes
+- code groups {4 0} (*S.M.*?, 64v.2), 2 6 where *di* is wanted (64v.2, 64v.22), 23 (undetermined, 19 occurrences) - blocker: open-codes; not in Meister's print, no context narrows them
+- clear digit stretches that spell nothing under the key after three passes: 64r.16 start and after "il", 64r.17-19 (before "laltro", after "marche", before "propria"), 64v.4-5, 64v.10 after "iudica", 64v.12 "non si 2 9 0 8 4 8 1", 64v.13 middle, 64v.14-21 (after "sente", "pochi", before "efeto", 64v.16-21 short runs), 65r.1-4 (*e trauaglio*, *incarico*, *questo*, *dano* would each need one firm digit changed), 65r.4 "manco 7 1 8 3", 65r.8.28-30, 65r.13.47-51, 65r.15.8-12, 65r.21.39-45, 65r.22.21-23 - blocker: open-codes; digits sharp on the image, no word or code of key 2 fits: clerk's slips or codes outside the printed table, which only the decifrato or the key sheet would settle
 
 ## Escalation
 
-What was tried on R91 (writeup skill section 0a), 2026-11-05:
+What was tried on R91 (writeup skill section 0a), 2026-11-05/06:
 
-1. Siblings: IA-2 (R92) is another key (Klee); DECODE has no other Farnese item of 1538-48 (18 Sept search).
-2. Known keys: Meister key 1 (fails), key 2 (fits, corrected as above).
-3. Print / clear copy: no edition of Farnese's December 1541 letters to Poggio found; Simonetta's article on Farnese
-   nuncios' letters in the Likhachev collection (St Petersburg) not seen. The decifrato, if one survives, would be in the
-   Nunziatura di Spagna registers or the Carte Farnesiane (Naples); not online.
-4. Key rebuild: done (k2b -> k2d), every syllable family tested, missing-code scan.
-5. Retry: image re-read of every line, two reading passes per page, a key-guided image check of every unread stretch.
+- [x] siblings: IA-2 (R92, the companion letter of 15 Apr 1542) is another key, solved by Klee; DECODE has no other Farnese item of 1538-48 (18 Sept search); R91's four document images are cleartext Farnese letters of summer 1542
+- [x] clear-pages: the clear lines 64r 1-15 and f. 66r are the letter's own clear frame (legates, Nuremberg diet, Buda, date and signature), not a decipherment; no interlinear decipherment on any page
+- [x] known-keys: Meister 1906 keys nos. 1-4 tried; key 1 as printed fails (-4.12 nats/char), key 2 fits read polyphonically; Klee's IA-2 key does not transfer
+- [x] print: no edition of Farnese's December 1541 letters to Poggio found (web and Nuntiaturberichte search, 5-6 Nov 2026); Simonetta's article on Farnese nuncios' letters in the Likhachev collection concerns Guidiccioni 1537; the decifrato, if one survives, would be in the Nunziatura di Spagna registers or the Carte Farnesiane (Naples), not online
+- [x] key-rebuild: k2b -> k2d (b/c 02, s/z/et 1, null 11, ci 24, co 26), every syllable family's order tested (24 permutations each), scan of unassigned pairs for missing codes, Francia 000 added from Meister p. 177
+- [x] retry: image re-read of every line, key-guided image check of every unread stretch, three reading passes with cribs and a dictionary lattice (`probe.py`, `wordfit.py`)
 
-Next: a third reading pass on the "not yet worked out" list with fresh eyes (word lists of Farnese's 1541-42
-letters; the clear passages of the same letter as a vocabulary); better images of 65r.15-18 and 64v.12 (AAV
-photography, UV) for the illegible pieces.
+Next, outside the session: better images of 64v.12-13, 65r.1 pos 30 and 65r.15-18 (AAV photography, UV); the decifrato
+in the Nunziatura di Spagna registers or the Carte Farnesiane.

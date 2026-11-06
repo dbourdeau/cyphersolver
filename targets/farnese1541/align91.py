@@ -20,6 +20,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import vdot
 
+# Meister p. 177, key no. 2: three-digit code words printed beside N.S. and S.M.ta (added 2026-11-05, third pass)
+EXTRA = {'000': ['francia']}
+
 NORM = str.maketrans('jvàáâèéêìíîòóôùúûç', 'iuaaaeeeiiiooouuuc')
 
 
@@ -121,6 +124,12 @@ def align(items, key, D):
                         pen = 1 if dotp[i] == 0 else 0
                         if matches(j, o):
                             relax(i, j, i + L, j + len(o), pen, ('code', "'" + c, o))
+            # three-digit code words (EXTRA), e.g. 000 = Francia
+            if i + 3 <= n and min(digs[i:i + 3]) >= 0:
+                c3 = ''.join(map(str, digs[i:i + 3]))
+                for o in EXTRA.get(c3, []):
+                    if matches(j, o):
+                        relax(i, j, i + 3, j + len(o), 0, ('code', c3, o))
             # emendation of one digit inside a two-digit code (e.g. 8 7 read as 88): any code differing in one digit
             if i + 1 < n and digs[i + 1] >= 0 and j < m and tgt[j][0] == 'c':
                 c0 = f'{d}{digs[i + 1]}'

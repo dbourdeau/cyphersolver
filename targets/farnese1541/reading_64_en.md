@@ -8,8 +8,9 @@ Conventions: [...] = digits left unread; (?) = a reading I am not sure of; words
 supplied for the English only. "co" from the code 26, "et" from a lone 1 and "ci" from 24 are the k2d additions.
 A struck or uncertain digit is noted under "Open places".
 
-Aligner (k2d): 1,612 cipher digits, 7 lost in holes. 1,127 read as certain words plus nulls (0.699). 1,222 read
-when uncertain words and emended digits are included (0.758). 397 digits unread. (Before the key-guided image
+Aligner (k2d, plus Meister's code word 000 = Francia): 1,614 cipher digits after the third pass (two overwritten digits at 64v.11
+restored), 7 lost in holes. 1,144 read as certain words plus nulls (0.709). 1,240 read when uncertain words and emended
+digits are included (0.768). 381 digits unread. (After the second pass and the key check: 1,127/1,612 (0.699), 1,222 (0.758), 397 unread.) (Before the key-guided image
 check of 2026-11-05: 1,110 / 0.689, 1,188 / 0.737, 431 unread.) 5 emendations, each one digit
 inside a two-digit code: 64r.21 83>81 (potete), 64v.1 01>08 (necessario), 64v.6 05>85 (sempre; the re-read
 doubts the digit), 64v.8 67>87 (che), 64v.16 87>83 (tosto; the re-read doubts the digit).
@@ -31,10 +32,10 @@ doubts the digit), 64v.8 67>87 (che), 64v.16 87>83 (tosto; the re-read doubts th
 | 64v.5 | [...] lo Imperator et il Re [...] commesso(?) principi [...] discordi in | [...] the Emperor and the King [...] committed(?) princes [...] at odds in |
 | 64v.6 | [...] senza [...]tione di infideli [...] sempre comune [...] | [...] without [...]tion of infidels [...] always common [...] |
 | 64v.7 | [...] aver l'uno per amico et l'altro per [cavalli?] [...] | [...] to have the one as friend and the other as [horses?] [...] |
-| 64v.8 | [...] il Re lo consideri. Sono a [...] nome, cioè come persona che abbia inte- | [...] (that) the King consider him (so). They are, in [...] name, that is, as a person who has an under- |
+| 64v.8 | [...] il Re lo consideri. Sono a l(?) Francia nome, cioè come persona che abbia inte- | [...] (that) the King consider him (so). [...] to France (the King of France) a name, that is, as a person who has an under- |
 | 64v.9 | -lligenza con el Turco et lo(?) conduca a danni di cristi(a)ni(?), tanto che per | -standing with the Turk and leads him to the harm of Christians, so much so that for |
 | 64v.10 | questo meriti di esser de N.S. a tutti giudica[...] [...] | this he deserves to be [by] Our Lord to all judge(d?) [...] |
-| 64v.11 | [...] bisogno che a questo preceda [...], il che mal si può | [...] need that this be preceded by [...], which can hardly be (done) |
+| 64v.11 | [...] bisogno che a questo preceda la condannatione, il che mal si può | [...] need that this be preceded by the condemnation, which can hardly be (done) |
 | 64v.12 | [...] né in termine che non si [...] | [...] nor in such terms that one does not [...] |
 | 64v.13 | [...] et del Re, et [...] cagione che [...] | [...] and of the King, and [...] cause that [...] |
 | 64v.14 | popoli ogni sente(?) [...] pochi [...] po- | peoples every (one?) feels [...] few [...] |
@@ -57,8 +58,8 @@ may rest assured that the Pope's mind is most ready to do for him all that his r
 that does not extend to the declaration now being asked of him. The middle of 64v is read only in part. It
 turns on the Emperor and the King of France, on Christian princes at odds, and on the infidels. It speaks of
 having "the one as friend and the other as [...]", and of the King regarding someone "as a person who has an
-understanding with the Turk and leads him to the harm of Christians". Such a step would need to be prepared,
-which can hardly be done, and peoples would read it as moved by private considerations rather than the
+understanding with the Turk and leads him to the harm of Christians": the Emperor wants the Pope to give "the
+King of France" (code 000) that name. Such a step would have to be preceded by a condemnation, which can hardly be done, and peoples would read it as moved by private considerations rather than the
 public good. Against the Turk, Our Lord(?) is not only willing but ready to join with all his forces, in
 defence or offence, wherever it may be, and to stake his life when need be. Asking more than this at present
 (the sentence goes on to f. 65r) would not do.
@@ -84,6 +85,7 @@ Uncertain digits (the reading needs a digit other than the one transcribed; not 
 Code word without a value:
 - `2 6` read as "di" twice: "l'animo [di] N.S." (64v.2) and "qualunque [di]chiaratione" (64v.22). 26 = co elsewhere (15 places), so these two stay open unless the image doubts a digit.
 - `4 0` in "può ben [4 0] Cesarea" (64v.2): the sense wants "S.M." Its dot (on the 4 before it) suggests an unlisted dotted code.
+- `0 0 0` = **Francia**, a Meister code word (p. 177, key no. 2, printed beside N.S. ·08 and S.M.ta ·00; checked on the page image 2026-11-05). Used at 64v.8 "a l(?) Francia nome, cioè come persona che abbia inteligenza con el Turco": the Emperor wants the Pope to brand the King of France publicly as the Turk's ally. The preceding "sono a" (`87 83 3`) does not build a clean clause with it ("che dà" or "dare" would, but the digits do not give them), so "l" is marked (?). `align91.py` now knows 000 (EXTRA table); `probe.py`, `wordfit.py` and `vdot.py` do not.
 
 Not yet worked out (digits clear, no reading found that the key supports):
 - 64r.16 start `1 1 6 4 4 8 3` ("lento"?). "Quanto" (spelled `84 4 83` at 64v.17) would need pos 3 = 8, but the image shows a 6 (stem with a bottom loop, no upper loop), so it is not adopted. After "et che il": `8 5 4 | 2 0 2 2 4 3^ 8 3 | 3 ? ?` ("il sen..."?), no word found; two digits lost in holes at the line end.
@@ -93,9 +95,7 @@ Not yet worked out (digits clear, no reading found that the key supports):
 - 64v.4-5 `2 6 7` before "considera" and `4 | 4? 8 8? 6` after it.
 - 64v.6 start, `7? 2 6 8 8 0 3 1 [ti one]` (a word in -tione after "senza"), and `3 3 4`; 64v.7 start `0 2 7 1 8 7 . 1 1 8 9 7? 0 9`.
 - 64v.7 end `1 8^ 4 4 0? 8? 1? 4 2 6` plus `9 9`: three pale signs where DECODE has one.
-- 64v.8 `2 0 0 0` in "sono a [...] nome" (loro? the digits give l/p-u-ro).
 - 64v.10 after "giudica": `[1?] 2 1 1 2 0 8 2 8^ 3 5 2 5 6 8 3 0 1 0 7 8^ 0^ 8 3 2 6 4` and 64v.11 `2 6 0 3`, not settled ("e-l-e-t-to" or "e per", "...ta-to con"). Pos 55 has the same form as the 7 at pos 51 (the 3/7 confusion); as 7 it would give `80 87` = "...ta che con", but no reading of the whole stretch needs it, so the 3 is kept.
-- 64v.11 `6 [struck] 6 4 1 4 8 0 8 2 9 8 1` after "preceda" (a -tione noun: "...de-c-u-tione"?). The image confirms every digit (crossed 4s, a clear 9); the struck cluster is overwritten, not a digit pair.
 - 64v.12 `2 9 0 8 4 8 1` after "non si": all seven digits are clear on the image (the 0 is a narrow open oval), so no image correction applies; no word found.
 - 64v.13 `0 1 3 0 2 5 4^ 1 9 8 6 6 4 8 9 0 2 5` after "et": "facendosi sarebbe" (`01 3 02 5 4 18 86 84 89 02 5`) fits the sense but needs pos 26 9->8 and pos 29 6->8. Pos 26 is a 9 with a tail and pos 29 a 6 with no upper loop, in a bled stretch, so neither change is adopted. "cagione che `3 2 8 0? 1 8 7` li populi" (the final `6 1` of 64v.13 may be "li" before "populi"): not read.
 - 64v.14 `4 1 2 7 6^ 0 8 3 ...` after "sente" and `8 6 0 4 ...` after "pochi". "sentenza" would need pos 19 2->3; it does not make sense here and is not adopted.
@@ -103,6 +103,22 @@ Not yet worked out (digits clear, no reading found that the key supports):
 - 64v.16 `7 4 8 1 3^ 9 1 8 5` before "publico"; 64v.17 `8? 7 4? 1 8^ 0 0 2 5 4 8 2^` before "quanto"; 64v.17-18 `0 3 4 0 2^ ... 3 8 1 8 9` around "non".
 - 64v.19 `8^ 3 2 2 1 6 0 3 6 7 4` and `2 2 8 2 9` (con [...] di S.M.tà); 64v.20 `6 1 0 2 3 0 2 0 2 8 0` and `6` before "la vita".
 - 64v.21 `5 7^? 4 8 0 1 8^? 0 4^ 8 2^` before "a tuto", and `7 2 0 8^?` between the two "tuto". The new dots give `1 80 4 82 3` = "-stantia" (in-, su-, di-stantia?), but pos 4 is a 6 or 8, not the 1 that "in sustantia" would need, and the `3` cannot serve both "-stantia" and "a tuto". Left unread. `1 8` after "ritrarre" is also open.
+
+## Third pass (2026-11-05)
+
+Read:
+- 64v.11 "preceda **la condenatione**, il che mal si può": `62 26 4 14 80 82 9 81` = la co n de na ti o ne (clerk's single n for condannatione/condennatione). It needs the overwritten pair at pos 32-33, which the re-read had bracketed as struck: DECODE transcribes it as `2 2`, and at 4x the group ends in a clear z-shaped 2 written over an earlier sign (a correction, not a cancellation). Restored in `reread/64v.txt` as `2? 2?` (THIRD PASS note in the DIFF line). Sense: a papal declaration branding the King as the Turk's ally would have to be preceded by a formal condemnation, which can hardly be done.
+- 64v.8 "a l(?) **Francia** nome": Meister's 000 = Francia (above).
+
+Tried and not adopted (digit-exact candidates that fail on sense or grammar, or stretches with no candidate):
+- 64v.10 after "iudica": `1 | 2 0 82 83` spells "et punito" exactly ("iudica[to] et punito" would fit the sense, judged and punished), but "iudica" has no "-to" before it, so the clause does not build; left unread. The rest (`5 2 5 6 8 3 0 1 0 7 8^0^ 8 3 2 6 4 | 2 6 0 3`) gives only "e per no dui tato con comi"-type strings.
+- 64v.4-5 `2 6 7 | considera | 4 4 8 8? 6`: "considerando" would need `4 18` where the page has `4 4? 8 8?`; not read.
+- 64v.13 `01 3 02 5 4^ 1 9 8 6 6 4 89 02 5`: "facen..." + "-rebbe" is secure in outline, but the middle (`1 9 8 6 6 4`) spells no word; "facendosi sarebbe" still needs two digit changes on clear glyphs.
+- 64v.16 `7 4 81 3^ 9 1 85` before "publico": "lo interesse" / "il ben" do not fit; no candidate.
+- 64v.17-18 `0 3 4 0 2^ | non | 3 8 1 8 9 | di concorrer`: no candidate ("ma ancora", "pronta", "mancherà", "desiderosa" all fail).
+- 64v.21 `5 7 4 8 0 1 8^0 4^ 82^ 3`: "e incostantia" would need pos 5 0->9; no sense; not adopted.
+- 64r.18 "il marche[se]" + `8 . 2 0 1 7 6 2 ? ? ?`: "d'Aguilar" (Charles V's ambassador in Rome, with the Cardinal of Burgos) was tested and does not encode; the end of the line is holed.
+- 64r.19 `3 4 2 6 8 8 3 0 8` before "propria": only "ancora a u..."; no sense.
 
 ## Key-guided image check (2026-11-05)
 
