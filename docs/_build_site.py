@@ -490,6 +490,11 @@ PAGES = [
          title='R4306: a Dutch diplomatic report',
          blurb='Transcribed with CTTS, then solved with Opus 5.5; contributed by George Lasry. An alphabetical number cipher with nulls yields a Dutch report about passports and rival envoys. The edited reading and translation, visual key and five literal mechanical lines are supplied; four codes and historical identities remain unresolved.',
          quote='&ldquo;Ic rust nacht noch dacht&rdquo;', rights='Manuscript rights: Riksarkivet, Stockholm, via DECODE R4306'),
+    dict(slug='smolensk1633', label='Besieged Smolensk to Radziwi&#322;&#322; 1633', year='1633', y=1633.42, place='Smolensk &rarr; Krzysztof Radziwi&#322;&#322;', st='solved', stt='key from adjacent plaintext',
+         title='The besieged at Smolensk to Krzysztof Radziwi&#322;&#322;, 1 June 1633',
+         blurb='An appeal for relief from the officials and citizens shut in Smolensk by the Muscovite army, to the Lithuanian field hetman (AGAD, Archiwum Radziwi&#322;&#322;&oacute;w dz. II nr 1116). The cipher is a simple substitution on digits told apart by where a cross stroke sits. The key was rebuilt from the cipher, with the clear close&rsquo;s W.X.Mci as the first crib; 95.0% of the 1,856 signs read as written and one word is open.',
+         quote='&ldquo;a teraz ju&#380; to &oacute;smy miesi&#261;c w tey niewoli trwamy&rdquo;',
+         rights='Archiwum G&#322;&oacute;wne Akt Dawnych, Warsaw, via szukajwarchiwach.gov.pl'),
     dict(slug='oxenstierna1633', label='Letters to Oxenstierna 1633', year='1633', y=1633.45, place='Germany &rarr; Axel Oxenstierna', st='stuck', stt='surveyed only',
          title='Swedish letters to Oxenstierna, June 1633',
          blurb='Four Swedish letters to Axel Oxenstierna of June 1633 (Riksarkivet, Oxenstierna collection E 708, DECODE R4338&ndash;R4341, dated 1646 there), mostly clear with two- and four-digit code numbers, some glossed between the lines at the time. Opened and dated, not yet transcribed; the writer is unidentified.',
@@ -2860,6 +2865,7 @@ IMAGES = {'burr1804': ('burr1804_cipher.jpg', 'Burr to Alston, [c. 20 July] 1804
 IMAGES['stockholm1918'] = ('stockholm1918_lead.jpg', 'Nr. 1014, 26 July 1918: typed copy by the US Legation, Stockholm', 'National Archives (US), RG 59, M367 roll 141 frame 1263, via the NARA catalogue')
 IMAGES['ludendorff1918'] = ('ludendorff1918_lead.jpg', 'The Ludendorff telegram, 26 July 1918: typed copy by the US Legation, Stockholm', 'National Archives (US), RG 59, M367 roll 141 frame 1264, via the NARA catalogue')
 IMAGES['camus1586'] = None
+IMAGES['smolensk1633'] = ('smolensk1633_lead.jpg', 'The besieged at Smolensk to Krzysztof Radziwi&#322;&#322;, 1 June 1633: the clear heading and the first lines of cipher', 'Archiwum G&#322;&oacute;wne Akt Dawnych, Warsaw, Archiwum Radziwi&#322;&#322;&oacute;w dz. II nr 1116 f. 1r, via szukajwarchiwach.gov.pl')
 IMAGES['malicorne1586'] = None
 IMAGES['este1585'] = ('este1585_lead.jpg', 'The first seven lines of p. 523, the cipher page of Colbert 338', 'Biblioth&egrave;que nationale de France, Cinq Cents de Colbert 338, p. 523, via Gallica (btv1b10033937d, view 275)')
 IMAGES['gonzaga1549'] = ('gonzaga1549_lead.jpg', 'c. 60v, lines 19-21 of the letter of 14 November 1549', 'Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera K, Karl V, sfasc. IV c. 60v, via the Estense Digital Library (CC BY-NC-SA)')
