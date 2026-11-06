@@ -1,0 +1,297 @@
+{
+ "schema_version": 1,
+ "target": "ralamb1657",
+ "title": "Clas Rålamb and Gotthard Vellingk, Constantinople, to Charles X Gustav, 1657 (catalogue 2258): number code rebuilt from the glossed letter of 27 May and tested on a held-out glossed copy; the bare runs of image 104 deciphered (one short phrase), those of image 114 in part",
+ "documents": [
+  {
+   "id": "img114_jun1657",
+   "read": "read in part",
+   "shelfmark": "Stockholm, Riksarkivet, Diplomatica Turcica, SE/RA/2119/2119.1/I/2/2 (image series 40008933), image 114 (letter continues on 115)",
+   "date": "June 1657 (mentions 'den 4 Junii'; dated on image 115, not read)",
+   "year": 1657,
+   "country": "Sweden",
+   "route": "Clas Rålamb and Gotthard Vellingk, Constantinople -> Charles X Gustav",
+   "places": {
+    "from": "Constantinople",
+    "to": "unknown"
+   },
+   "language": "Swedish",
+   "cleartext_in_document": "interspersed",
+   "pages": 2,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the page (no interlinear writing, no gloss in the margin). The key comes from the glossed letter of 27 May 1657 in the same volume (images 22-23)."
+   },
+   "length": {
+    "tokens": 240,
+    "distinct": 49,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription_114.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Riksarkivet IIIF images, full size (lbiiif.riksarkivet.se, series 40008933)",
+    "image_quality": "good",
+    "notes": "Two passes from crops (about 1x and 2x); they agree group for group. Independent blind check of 10 sample lines (199 groups): 2 raw disagreements, the solver right on one, the other (L15, 93 or 97, overwritten) unresolved and marked 93?. Five runs go into the fold of the binding. Length measured with --digits --drop-first (doubtful groups such as 93? are counted as written)."
+   }
+  },
+  {
+   "id": "img104_jun1657",
+   "read": "read",
+   "shelfmark": "Stockholm, Riksarkivet, Diplomatica Turcica, SE/RA/2119/2119.1/I/2/2 (image series 40008933), image 104, right-hand page",
+   "date": "after 14 June 1657 (the left page mentions the arrival 'den 14 Junii' at Constantinople)",
+   "year": 1657,
+   "country": "Sweden",
+   "route": "Clas Rålamb and Gotthard Vellingk, Constantinople -> Charles X Gustav",
+   "places": {
+    "from": "Constantinople",
+    "to": "unknown"
+   },
+   "language": "Swedish",
+   "cleartext_in_document": "interspersed",
+   "pages": 1,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the page. One short cipher run (one phrase) in clear Swedish."
+   },
+   "length": {
+    "tokens": 33,
+    "distinct": 23,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription_104.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Riksarkivet IIIF images, full size (lbiiif.riksarkivet.se, series 40008933)",
+    "image_quality": "good",
+    "notes": "Two passes (the second on a fresh crop at about 2x) agree; the independent blind check agrees group for group (33/33)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Clear Swedish with single words and short phrases in numbers. Each number stands for one letter and each letter has two to four numbers (e 8, 45, 82; a 34, 71, 99; t 37, 74, 102). Seen values run 2-108. u/v/w and i/j/y are each one letter in places; 38 serves å and o, 77 y and ö. In the letters of 27 and 22 May groups are separated by commas and a word ends with a point; in images 104 and 114 the clerk puts a point after every group and leaves a wider space between words.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-3",
+   "separation": "mixed"
+  },
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "random",
+  "word_division": "kept",
+  "notes": "Key: 57 numbers frozen from the glossed runs of images 22-23, 6 values added after the held-out test (72 g, 86 d, 105 ö and 50 k confirmed by the image-75 gloss; 67 p and 7 z from one bare-run word each). Open: 15, 93 (or 97), 97, 108, 2. The catalogue's numbers in the 800s were not met in the passages worked. Exceptions: 79 = t once (image 22, at the fold, could be 74) against m twice in 75; 9 = m once in 75; 31 = s once in the pairs."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment on images 104 and 114. Other letters of the same volume carry a contemporary decipherment over the numbers (images 22-23 and 75 were used here). No edition or modern decipherment of these despatches found: two web searches (6 Nov 2026) found only general work on the embassy (Rålamb's diary, ed. C. Callmer, Historiska handlingar 37:3, 1963, not opened; Forss 2021; The Sultan's Procession); the vetting of 5 Nov 2026 found nothing in DECODE, Tomokiyo or Lasry. Not compared with DECODE R4201 (Chifferklaver låda II 82, 1657).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "cleartext context"
+  ],
+  "attack": "known plaintext",
+  "human_role": "WAINUT set the task (catalogue 2258) and the rules; AI language-model agents transcribed, built and froze the key, ran the held-out test, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "Riksarkivet IIIF images",
+   "scripts in this folder (fetch, crops, contact sheets, decryption, held-out test, mark check)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-06",
+  "last_date": "2026-11-06"
+ },
+ "solution": [
+  {
+   "date": "2026-11-06",
+   "kind": "access",
+   "what": "All 132 images of series 40008933 fetched at low size for contact sheets, and images 22, 23, 75, 104 and 114 at full size, from the Riksarkivet IIIF service, one at a time, 1.6 s apart.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "transcription",
+   "what": "Sign conventions written before any key. Key pairs of images 22-23 (15 glossed runs, about 330 groups) copied with the gloss covered and the gloss read onto separate lines; bare runs of 114 and 104 in two passes each.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "key from source",
+   "what": "Key built from the interlinear pairs of images 22-23 only and frozen (key_frozen.tsv, 57 numbers) before image 75 was cropped or transcribed. The freeze is recorded by file times; the hash was taken afterwards (FROZEN.sha256).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Held-out image 75, graded against its own contemporary gloss with the frozen key: 55 of 64 groups (86%), 4 of 10 words exact, with the clerk's probable slip in 'underhåldet' read as 84; 54 of 65 groups (83%), 3 of 10 words, on the signs as written. Wrong: 79 = m twice, 9 = m once, 77 = ö once. Small test; image 75 had been seen before the freeze at contact-sheet size only.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "reading",
+   "what": "Bare runs of 114 and 104 decrypted mechanically with key.tsv and read as Swedish with every departure marked; scripts/check_marks.py rebuilds the decryptions and fails on any unmarked departure. 114: 31 of 40 words verbatim; 104: 4 of 4.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "literature search",
+   "what": "Two web searches on Rålamb, Vellingk, 1657 and cipher or edition: general work on the embassy only; no edition or decipherment of these despatches.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "verification",
+   "what": "Independent check by an AI language-model agent that took no part in the solve (VERIFY.md): blind transcription of 297 groups (114 sample, 104, 75), 2 of 297 groups (0.7%) left after settling on crops; key pairs confirmed on the scan; held-out test and mark check reproduced; tamper tests fail as they should. Verdict: confirm, with six minor fixes.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "transcription",
+   "what": "Fixes: 75 L03 written as the signs stand (8 . 4) with the gloss-guided variant on its own line and both scores given; 114 L15 93 marked 93?; key exceptions (31 = s once, the cut 7?, the image-22 79 at the fold) listed; frame table of reading_114.md made to copy the marked reading; scripts set UTF-8 output; freeze recorded. No count changed.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Key rebuilt from the contemporary interlinear decipherment of the letter of 27 May 1657 (images 22-23) in the same volume, frozen, tested on the glossed copy of 22 May (image 75), and applied to the bare runs of images 104 and 114, which carry no decipherment.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.05,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "Two bare images (104, 114; 35 of their 44 cipher words verbatim from the signs) out of about 30 images with number runs seen on the inspected contact sheets of the 132-image volume (sheets of images 49-72, 85-103 and 121-132 not inspected); the glossed letters are not counted. A rough estimate from images, not counted groups.",
+  "verification": [
+   "independent verification",
+   "contemporary decipherment",
+   "matched control",
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the interlinear decipherments written over the numbers of the letter of 27 May 1657 (images 22-23, key source) and of the copy of 22 May 1657 (image 75, held-out test)",
+    "date": "1657",
+    "source": "Riksarkivet images 40008933_00022, _00023, _00075"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "key rebuilt from the glossed letter of 27 May, frozen and tested on held-out image 75; bare runs of 104 deciphered and of 114 deciphered in part",
+    "date": "2026-11-06"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "key pairs of images 22-23, held-out image 75, bare runs of 104 and 114, from Riksarkivet images",
+    "date": "2026-11-06"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "one independent AI reader, blind on a sample of 114, all of 104 and the numbers of 75; no human palaeographer",
+    "date": "2026-11-06"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "img114_jun1657",
+    "label": "Image 114, letter of June 1657: 30 bare runs",
+    "transcription": "transcription_114.txt",
+    "decryption": "decryption_114.txt",
+    "reading": "reading_114.md",
+    "translation": "translation_114.md",
+    "language": "sv",
+    "state": "read in part",
+    "read_share": 0.775,
+    "summary": "The Porte's assurance and how firmly what they have once written stays written; a mutiny in the camp in which the troops seized the Vizier, brought him to the Sultan and wanted him put to death, until the Sultan got him off by great intercession; the new Mufti, said to plan with the Tatar Khan and the Pasha of Silistra to join forces in support of the Russian.",
+    "note": "40 words: 31 verbatim from the signs (77.5%), 1 with a marked change (förb{ö/y}n), 8 with a hole (5 in the binding, 3 open codes 15, 93?, 97). Without the two bare-run context values 67 p and 7 z it would be 29 of 40. The clear frame in the reading is an approximate working transcription."
+   },
+   {
+    "doc": "img104_jun1657",
+    "label": "Image 104, letter after 14 June 1657: one short run",
+    "transcription": "transcription_104.txt",
+    "decryption": "decryption_104.txt",
+    "reading": "reading_104.md",
+    "translation": "translation_104.md",
+    "language": "sv",
+    "state": "read",
+    "read_share": 1.0,
+    "summary": "The Vizier uses the interpreter of the Imperial (Habsburg) Resident: 'romerske keiserlige residentens tålk'.",
+    "note": "One phrase, 33 groups, 4 words, all verbatim from the signs. Every value comes from a contemporary gloss (the frozen key, plus 50 k from the image-75 gloss). A short text."
+   }
+  ],
+  "key_file": [
+   "key.tsv",
+   "key_frozen.tsv"
+  ],
+  "gaps": [
+   {
+    "item": "Five runs of image 114 that go into the fold (L02, L03, L06, L09, L14)",
+    "blocker": "needs-physical-access",
+    "detail": "Groups lost in the binding; the original or a better scan is needed."
+   },
+   {
+    "item": "Codes 15, 93 (or 97), 97, 108 and 2",
+    "blocker": "open-codes",
+    "detail": "Each occurs once in the passages worked; proposals from context only (inweckla, uplopp, orden)."
+   },
+   {
+    "item": "79 = t or m",
+    "blocker": "too-short",
+    "detail": "One place in the key pairs (at the fold, could be 74) against two in the held-out gloss; needs more glossed pages."
+   },
+   {
+    "item": "Context values 67 p and 7 z",
+    "blocker": "too-short",
+    "detail": "Each rests on one bare-run word (passa silistrie, uiziren)."
+   },
+   {
+    "item": "The rest of the volume: number runs on about 30 images, and contact sheets of images 49-72, 85-103 and 121-132 not inspected",
+    "blocker": "not-attempted",
+    "detail": "The frozen key should read most of the bare runs; the glossed letters (18, 74, 77, 87-88 per the catalogue vetting) would confirm more values. Image 115 (end of the 114 letter) not read."
+   },
+   {
+    "item": "Comparison with DECODE R4201 (Chifferklaver låda II 82, 1657), the Rákóczi cipher of 2119.5/4 (lead 2243) and Cantersten 1648",
+    "blocker": "not-attempted",
+    "detail": "R4201 may be this key."
+   },
+   {
+    "item": "Prior art",
+    "blocker": "not-attempted",
+    "detail": "Callmer's edition of Rålamb's diary (1963) not opened; an appendix of despatches is not ruled out."
+   }
+  ]
+ }
+}
