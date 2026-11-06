@@ -23,6 +23,10 @@ Albizzi's embassy in Rome could not read.
   Yale Dataverse doi:10.60600/YU/XKVOWE) has 1424 keys (pp. 1-4: Galeotto Fibindacci da Ricasoli twice, "Johannes",
   "Zaninus et Conradinus") and then 1430 keys (pp. 5-9, filza 8). Nothing for 1425-29. The filmed sender index
   covers only A-B, so whether Gabbrielli saw an Averardo cipher can't be checked from the film.
+- **Candidate key found 6 Nov 2026 (untested).** ASF, Mediceo avanti il Principato LXXII 180 is a key sheet whose name
+  list fits the Romagna war of 1424-25 (Agnolo della Pergola, Piccinino, Faenza, Forlì, Oriolo); LXXII 182 is "Cifra
+  d'Averardo con Astore" (Lucca war, c. 1430). MAP images download by curl. See `research/sweep_2026-11_asf_florence/`
+  (README, `keys.json`). The 1425 letter itself (Dieci di Balìa, Responsive) is still not online.
 - **Likely family.** The 1424 commissioner cipher of Ricasoli (`targets/florence1429/`, key extended there) is the nearest
   known Dieci commissioner system in the Romagna. The Faenza letter of 1425 may use a related table. That can be
   tested only when the ciphertext is in hand.
