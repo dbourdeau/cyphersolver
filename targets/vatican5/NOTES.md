@@ -726,3 +726,10 @@ keys of Gabriele de Lavinde, c. 1379** ("Ego Gabriel de Lavinde ... d(omi)no n(o
 antipope Clement VII): monoalphabetic symbol alphabets with a few nulls, and small nomenclators of letter-pair codes
 (Papa, Cardinales, Rex Francie, Imperator, Florentini ...), plus one Occitan note of 1400-ish dated at Avignon. No
 digits, no syllabary, 160 years too early. Irrelevant to IA-2. DECODE now holds nothing further for this cipher.
+
+## 2026-11-05: Spain IA-1 (R91) moved to its own folder
+
+The companion IA-1 (DECODE R91, Farnese to Poggio, Dec 1541, catalogue 262) turned out to be in Meister's key no. 2
+(the Poggio cipher, Chigi M II 49), corrected; it is now its own target, [`../farnese1541/`](../farnese1541/), with
+its images, transcription, image re-read, scripts, reading and step log. The R91 files that were here
+(`decode/DOC_R91_*`, `decode/IMG_R91_*`, `decode/reread91/`, `r91/`, `WORKLOG.md`) moved there.

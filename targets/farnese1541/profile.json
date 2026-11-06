@@ -1,0 +1,127 @@
+{
+ "schema_version": 1,
+ "target": "farnese1541",
+ "title": "Cardinal Alessandro Farnese to the nuncio Giovanni Poggio, Rome, December 1541 (AAV Segr. Stato Spagna 1A, IA-1, ff. 64r-66r, DECODE R91)",
+ "documents": [
+  {
+   "id": "R91",
+   "read": "read in part",
+   "shelfmark": "AAV Segr. Stato, Spagna 1A (IA-1), ff. 64r-66r (DECODE R91, ASV_i1025_SdS_Spain_IA-1)",
+   "date": "[1]5? Dec 1541 (closing 'a qui 1[.] di Xbre' on f. 66r)",
+   "year": 1541,
+   "country": "Papacy",
+   "route": "Rome -> Giovanni Poggio, bishop of Tropea, nuncio with Charles V in Spain",
+   "places": {"from": "Rome", "to": "Madrid"},
+   "language": "Italian",
+   "pages": 5,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": ["none"],
+    "source": "No decipherment on the record, in print or online (checked 5 Nov 2026); DECODE status Non-decrypted.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 2956,
+    "distinct": 10,
+    "unit": "symbols",
+    "measured": true,
+    "file": "ciphertext_decode.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "DECODE transcription by MEG, 19 June 2020 (decode/DOC_R91_D2341_2341.txt, git-ignored; parsed to r91_cipher.txt and ciphertext_decode.txt); image re-read of every cipher line by the project with dots, struck digits and corrosion holes (reread/64r.txt, 64v.txt, 65r.txt), then a key-guided check of the unread stretches (KEYCHECK notes)",
+    "corrections": 22,
+    "image_quality": "poor",
+    "notes": "2,956 digits measured on DECODE's transcript (no dots recorded); the image re-read has 2,963 digit positions (digits the transcriber skipped at cancellations and holes added, struck digits dropped), 136 certain dots. Corrections counted: ~15 firm or probable digit corrections in the re-read plus 7 in the key-guided check; ~25 further alternatives marked '?'. Heavy bleed-through and iron-gall corrosion; holes at the right edge of 64r and the line ends of 65r; 64v.12-13 openings and 65r.15-18 illegible."
+   }
+  }
+ ],
+ "system": {
+  "types": ["polyphonic", "syllabic", "nomenclator"],
+  "summary": "Meister's key no. 2 (the Poggio cipher, Chigi M II 49): polyphonic single digits for vowels and consonant groups, two-digit syllable codes, dotted codes marked by a dot over the preceding digit, null 11.",
+  "symbol_kind": "digits",
+  "digit_groups": {"width": "1-2", "separation": "contiguous"},
+  "distinct_symbols": 10,
+  "diacritics": {
+   "used": true,
+   "note": "A dot over the digit before a code (sometimes over the code's own first digit) selects its dotted value: 80-83 ta te ti to, 84-86 qua que qui, 87-89 che chi non, 08 N.S., 00 S.M.ta; 83 of 136 certain dots stand before an 8."
+  },
+  "homophones": {"used": false},
+  "nomenclator": {
+   "present": true,
+   "entries": 12,
+   "kinds": ["syllables", "common words", "titles"],
+   "unread_groups": 1
+  },
+  "nulls": {"present": true, "count": 1},
+  "key_order": "partly alphabetical",
+  "word_division": "none",
+  "doubled_letters": "mostly written once (steso, efeto, tuto); bb has a code (02)",
+  "sibling_key": "Same chancery and dossier as IA-2 (DECODE R92, Klee's key), which is a different design; Meister key no. 1 (Montepulciano) fails.",
+  "notes": "Corrections to Meister's print found on this letter: b/c = 02 (Meister's 'or' a misprint), s/z/et = 1, null = 11, ci = 24, co = 26 (26 not in Meister); 23 undetermined. Polyphony: 2 = l/p, 4 = n/m, 6 = r/t, 1 = s/z/et, 01 = d/f/g, 02 = b/c/bb."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Key printed in A. Meister, Die Geheimschrift im Dienste der paepstlichen Kurie (1906) pp. 176-177 no. 2, 'Cifra ultima con Mons. Poggio mandata per il Montepulciano', never connected with this letter (Lasry-Megyesi-Kopal compared IA-1 with Meister's Poggio key without success, as cited by Klee 2026). No plaintext anywhere.",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": ["images", "transcription", "published key"],
+  "attack": "published key",
+  "human_role": "Project-level: obtained the DECODE images and transcription (Sept 2026), set up Claude Code and posed the problem with the project's task template; the move to its own folder was the user's choice. No target-specific help.",
+  "tools": ["Python", "numba", "lang/ it-cinquecento 5-gram", "beam decoder", "aligner"],
+  "models": ["claude-opus-5-5"],
+  "sessions": 1,
+  "first_date": "2026-11-05",
+  "last_date": "2026-11-05"
+ },
+ "solution": [
+  {"date": "2026-11-05", "kind": "literature search", "what": "Web and literature search for a decipherment of R91 (Spagna 1A, Farnese, Poggio, Dec 1541) and Klee's article: none; Klee cites Lasry-Megyesi-Kopal's failed comparison with Meister's Poggio key.", "result": "worked"},
+  {"date": "2026-11-05", "kind": "transcription", "what": "DECODE transcript parsed (2,956 digits, 47 uncertain); full-size image checked: dots present that the transcript omits.", "result": "partial"},
+  {"date": "2026-11-05", "kind": "statistics", "technique": ["frequency analysis", "repeat/pattern analysis"], "what": "Digit and pair frequencies, doubled digits 0.88 of chance, pair IC equal at both phases (no fixed pairs), 9 mostly after 8 or 2 (not a free null).", "result": "worked"},
+  {"date": "2026-11-05", "kind": "solver", "technique": ["simulated annealing", "beam/DP decoding", "language-model scoring"], "what": "Klee-style joint key and segmentation annealer (mixed one/two-digit monoalphabetic with null), built as the catalogue's first suggestion.", "result": "partial"},
+  {"date": "2026-11-05", "kind": "control", "what": "The annealer on a 2,956-digit stretch of IA-2 with Klee's key as truth: best -785.6 against -9 for the true key; not run on R91.", "result": "failed"},
+  {"date": "2026-11-05", "kind": "key from source", "technique": ["key matching", "beam/DP decoding", "language-model scoring"], "what": "Meister 1906 key no. 1 (Montepulciano, 1539-42) applied as printed: no sense (-4.12 nats/char).", "result": "failed"},
+  {"date": "2026-11-05", "kind": "key from source", "technique": ["key matching", "beam/DP decoding", "language-model scoring"], "what": "Meister 1906 key no. 2 (the Poggio cipher) applied polyphonically as printed: Italian at once (-2.19 nats/char): 'la qualita de la materia nondimeno perche', 'lo imperatore', 'Ingilterra et luterani', 'a la morte saluo la pace'.", "result": "worked"},
+  {"date": "2026-11-05", "kind": "hypothesis", "technique": ["language-model scoring", "key-structure hypothesis"], "what": "Corrections by score gain: 11 = null (+867), s/z on 1 (+221); 11 = et rejected.", "result": "worked"},
+  {"date": "2026-11-05", "kind": "solver", "technique": ["hill climbing", "beam/DP decoding", "language-model scoring"], "what": "Greedy add/remove search over every value of every code: padded the text (nulls, then 'che', then 'e' on several digits); abandoned as a key learner.", "result": "failed"},
+  {"date": "2026-11-05", "kind": "hypothesis", "technique": ["contextual inference", "language-model scoring"], "what": "potrebbe / sarebbe / farebbe -> 02 = b/bb; b/c on 02, Meister's 'or' a misprint (+246).", "result": "worked"},
+  {"date": "2026-11-05", "kind": "transcription", "what": "Image re-read of all 52 cipher lines by two agents: dots, struck digits, holes, ~15 digit corrections.", "result": "worked"},
+  {"date": "2026-11-05", "kind": "statistics", "technique": ["statistical test"], "what": "Dots: 83 of 136 certain dots precede an 8 (8 is 19% of digits), 9 precede a 0: the dot marks the following code as dotted, as Meister's 'con il punto sopra la precedente' says.", "result": "worked"},
+  {"date": "2026-11-05", "kind": "reading", "technique": ["beam/DP decoding", "contextual inference", "manual reconstruction"], "what": "First reading passes with a token aligner: 64r-64v 0.681 certain, 65r 0.525.", "result": "partial"},
+  {"date": "2026-11-05", "kind": "hypothesis", "technique": ["exhaustive search", "language-model scoring", "contextual inference"], "what": "All 24 orders of each syllable family scored: Meister's order holds for d, l, m, n, r, s; c-family ci = 24; then 26 = co found from ~15 readings (+262 nats; come = 2 6 0 6, l Turco = 2 6 0 6 2 6) and et on 1 (+113).", "result": "worked"},
+  {"date": "2026-11-05", "kind": "solver", "technique": ["exhaustive search", "language-model scoring"], "what": "Scan of every unassigned pair seen 15+ times for a missing syllable: nothing above the padding level.", "result": "ruled out"},
+  {"date": "2026-11-05", "kind": "reading", "technique": ["contextual inference", "manual reconstruction"], "what": "Second reading passes on key k2d with code-internal emendations: 64r-64v 0.689, 65r 0.627.", "result": "partial"},
+  {"date": "2026-11-05", "kind": "prediction", "technique": ["contextual inference"], "what": "Key-guided image check of every unread stretch: 7 digit corrections where the glyph allows the predicted digit (beni de le chiese, di qualche concordia, the closing sentence, scriuete, esser de N.S. a tutti); candidates refused where it does not.", "result": "partial"},
+  {"date": "2026-11-05", "kind": "verification", "what": "Merged reading aligned token by token (align91.py): 2,008/2,963 certain (0.678), 2,230 with uncertain words and 15 emendations (0.753).", "result": "partial"}
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "recovered",
+  "method": "read after matching with key from external sources",
+  "method_basis": "Meister's printed key no. 2 for Poggio's cipher (Chigi M II 49), not previously tied to this letter, matched and applied; corrected on the letter (b/c 02, s/z/et 1, null 11, ci 24, co 26).",
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.txt aligned by align91.py; cipher digit tokens of the image re-read (2,963), certain words and nulls counted read; uncertain words, emended digits and {..} unread counted unread",
+  "fraction_read": 0.678,
+  "fraction_coherent": 0.753,
+  "codes_open": {"open": 1, "total": 12, "tokens_open": 2},
+  "verification": ["key confirms"],
+  "credits": [
+   {"who": "meister", "role": "key or decipherment used", "note": "Die Geheimschrift (1906) pp. 176-177 no. 2, 'Cifra ultima con Mons. Poggio mandata per il Montepulciano', applied and corrected", "date": "1906", "source": "A. Meister, Die Geheimschrift im Dienste der paepstlichen Kurie (Paderborn 1906) pp. 176-177"},
+   {"who": "decode", "role": "transcription", "note": "DECODE R91 images and transcription (MEG, 2020), the base of the re-read", "date": "2020-06-19", "source": "https://de-crypt.org/decrypt-web/RecordsView/91"}
+  ],
+  "gaps": [
+   {"item": "corrosion holes at the right edge of 64r l.16-20 and the line ends of 65r", "blocker": "illegible", "detail": "~45 positions; only hole outlines remain"},
+   {"item": "64v.12 pos 1-15 and 64v.13 pos 1-4", "blocker": "illegible", "detail": "ink-burnt and holed; unresolved on the image"},
+   {"item": "65r.15-18 (15.19-42, 16.5-42, 17.1-34, 18.1-45)", "blocker": "illegible", "detail": "corrosion through almost every sign; no digit readable better than the re-read"},
+   {"item": "{4 0} at 64v.2 (S.M.?) and 2 6 where 'di' is wanted (64v.2, 64v.22)", "blocker": "open-codes"},
+   {"item": "clear unread stretches: 64r.16-17, 64v.10-15, 64v.21, 65r.1-4, 65r.10, 65r.21-23", "blocker": "not-attempted", "detail": "digits clear, no reading found after two passes and an image check; a third pass is the next step"}
+  ],
+  "texts": [
+   {"doc": "R91", "label": "Farnese to Poggio, Dec 1541", "transcription": "reread/64r.txt", "decryption": "reading.txt", "translation": ["reading_64_en.md", "reading_65r_en.md"], "state": "read in part", "language": "Italian", "read_share": 0.678, "summary": "For Paul III, Farnese refuses the Emperor's demand that the Pope declare against France: he will do all his rank and honour allow, and join against the Turk with all his forces, but a declaration would cost the Holy See the reputation it needs, push others to leave its obedience and seize church goods as England and the Lutherans did; hope rests on the two legates, and no remedy but peace."}
+  ],
+  "key_file": "k2d.py",
+  "notes": "Status in progress: read in part with clear stretches not yet worked out (see NOTES Remaining gaps). DECODE queue entry under farnese1541."
+ }
+}

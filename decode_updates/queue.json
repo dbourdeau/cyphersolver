@@ -8189,7 +8189,7 @@
   "vatican5": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/vatican.html",
    "key": {
-    "none": "R92: key recovered by Simon Klee (https://simonklee.dk/farnese-letter), not a DECODE record; R91: no key known"
+    "none": "R92: key recovered by Simon Klee (https://simonklee.dk/farnese-letter), not a DECODE record; R91 (IA-1) is now targets/farnese1541"
    },
    "cite": "S. Klee, 'The Farnese letter' (2026), https://simonklee.dk/farnese-letter; accepted by MysteryTwister (Vatican Challenge Part 5)",
    "records": {
@@ -8203,21 +8203,13 @@
       "targets/vatican5/IA-2_reread.txt"
      ],
      "sent": false
-    },
-    "R91": {
-     "decode_status": "Non-decrypted",
-     "proposed": "Non-decrypted",
-     "note": "Not read. Spagna IA-1: a Farnese chancery letter of December 1541 (Nuremberg diet, Buda) in a different key and design from R92 (doubled digits 0.88 of chance against 0.30); the four document images are cleartext Farnese letters of summer 1542. No key or decipherment on the record.",
-     "reading": null,
-     "reading_not_needed": true,
-     "sent": false
     }
    },
    "fields": {
     "sender": "Cardinal Alessandro Farnese",
     "receiver": "Giovanni Poggio, bishop of Tropea, nuncio in Spain",
     "origin_city": "Rome",
-    "date": "R92: 15 Apr 1542; R91: Dec 1541 (DECODE's 1538/1612 is the span of the volume)"
+    "date": "15 Apr 1542 (DECODE's 1538/1612 is the span of the volume)"
    }
   },
   "vieuville1587": {
@@ -14224,6 +14216,36 @@
      "sent": false
     }
    ]
+  },
+  "farnese1541": {
+   "writeup": "https://github.com/dbourdeau/cyphersolver/blob/main/targets/farnese1541/NOTES.md",
+   "key": {
+    "file": "targets/farnese1541/k2d.py",
+    "lang": "Python",
+    "how": "Meister 1906 pp. 176-177 key no. 2, 'Cifra ultima con Mons. Poggio mandata per il Montepulciano' (Chigi M II 49), corrected on this letter: b/c 02, s/z/et 1, null 11, ci 24, co 26 (not in Meister); dotted codes marked by a dot over the preceding digit"
+   },
+   "cite": "A. Meister, Die Geheimschrift im Dienste der paepstlichen Kurie (Paderborn 1906), pp. 176-177 no. 2",
+   "records": {
+    "R91": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Cardinal Alessandro Farnese to Giovanni Poggio, nuncio in Spain, Rome [1]5 Dec 1541 (closing on f. 66r; cipher ff. 64r l.16 - 65r between clear passages on the Nuremberg diet and Buda). Enciphered in Meister 1906 key no. 2 (the Poggio cipher, Chigi M II 49), identified 5 Nov 2026 by the cyphersolver project; dotted codes follow Meister's rule (dot over the preceding digit). Read in part: 2,008 of 2,963 cipher digits as certain words (67.8%), 75.3% with uncertain words; the Pope refuses the Emperor's demand for a declaration against France and argues for peace. The DECODE transcription has no dots and misses cancelled digits; an image re-read with dots is attached. The four document images are cleartext Farnese letters of summer 1542.",
+     "reading": null,
+     "reading_not_needed": true,
+     "transcription": [
+      "targets/farnese1541/reread/64r.txt",
+      "targets/farnese1541/reread/64v.txt",
+      "targets/farnese1541/reread/65r.txt"
+     ],
+     "sent": false
+    }
+   },
+   "fields": {
+    "sender": "Cardinal Alessandro Farnese",
+    "receiver": "Giovanni Poggio, bishop of Tropea, nuncio in Spain",
+    "origin_city": "Rome",
+    "date": "Dec 1541, closing 'a qui 1[.] di Xbre' on f. 66r (DECODE's 1538/1612 is the span of the volume)"
+   }
   }
  }
 }
