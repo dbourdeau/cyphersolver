@@ -1,0 +1,77 @@
+[
+ {
+  "id": 1769,
+  "counted": true,
+  "year": 1712,
+  "date": "1711-1713",
+  "title": "King Charles XII's letters to Colonel Thomas Funck at the Porte (Bender period): numeric cipher passages",
+  "correspondents": "Charles XII and the chancery -> Thomas Funck, colonel and extraordinary envoy",
+  "place": "Bender / Constantinople",
+  "language": "Swedish (cipher text numeric)",
+  "region": "Scandinavia",
+  "period": "1701-1800",
+  "shelfmark": "Riksarkivet, Diplomatica Turcica, SE/RA/2119/2119.1/I/6/13 (Brev fran Kungl. Maj:t, 1711-1713)",
+  "folio_note": "367 images (R0003490). Number-group lines at about images 153, 266 and 278; clear text around them.",
+  "cls": "B",
+  "status": "Catalogue: plain \"Brev fran Kungl. Maj:t\", no mention of cipher. Images 153, 266, 278 show lines of dot-separated numbers inside letters. No interlinear decipherment seen on those three; the rest of the volume was not paged.",
+  "why": "Great Northern War: the King's secret instructions to his agent at the Ottoman court after Poltava. Sibling volumes 6/9 (to the King) and 6/11 (drafts) are also digitised and probably hold the same code.",
+  "importance": 4,
+  "solvability": 4,
+  "difficulty": 3,
+  "score_note": "Scored from sampled images (about 30 per volume) viewed during the Riksarkivet volume sweep, Nov 2026 (research/sweep_2026-11_riksarkivet_volumes/)",
+  "verify": "Page the volume, list every cipher passage, check for interlinear solutions, then pair with the digitised outgoing drafts (6/11) to get a crib.",
+  "links": [
+   {
+    "label": "NAD record",
+    "href": "https://sok.riksarkivet.se/arkiv/QlioY4BP3q2aJgiyGi7CK6"
+   },
+   {
+    "label": "IIIF manifest",
+    "href": "https://lbiiif.riksarkivet.se/arkis!R0003490/manifest"
+   },
+   {
+    "label": "image 153",
+    "href": "https://sok.riksarkivet.se/bildvisning/R0003490_00153"
+   },
+   {
+    "label": "image 266",
+    "href": "https://sok.riksarkivet.se/bildvisning/R0003490_00266"
+   },
+   {
+    "label": "image 278",
+    "href": "https://sok.riksarkivet.se/bildvisning/R0003490_00278"
+   }
+  ],
+  "seen": "image",
+  "source": "Riksarkivet volume sweep (IIIF), Nov 2026",
+  "prior_art": "open as far as checked (2 Nov 2026: known.py found nothing on the shelfmark or the correspondents; DECODE and the repo hold no record; no web search, Tomokiyo, Lasry or edition searched)",
+  "needs_archive_scan": "no",
+  "access_note": "online (set 4 Nov 2026 from vetting.seen, scan: https://sok.riksarkivet.se/bildvisning/R0003490_00153 and _00266 (Riksarkivet IIIF viewer, Diplomatica Turcica)",
+  "ark": "",
+  "scored": "vetted",
+  "vetting": {
+   "date": "2026-11-02",
+   "by": "claude fleet vetting",
+   "seen": {
+    "kind": "scan",
+    "where": "https://sok.riksarkivet.se/bildvisning/R0003490_00153 and _00266 (Riksarkivet IIIF viewer, Diplomatica Turcica SE/RA/2119/2119.1/I/6/13, Funck 1711-1713), viewed in Chrome 2 Nov 2026",
+    "extent": "367 images; viewed images 153 and 266 at screen size. Image 153: a letter of 14 Sept 1711 in Swedish, signed Carolus and countersigned H. v. Müllern, with a 9-line block of dot-separated numbers (two- and three-digit, about 150 groups). Image 266: a Latin letter with number groups run into the text between Latin words; sweep also notes groups at images 278.",
+    "cipher": "Numeric nomenclator-type cipher (dot-separated 2-3 digit numbers) inside clear Swedish/Latin letters. On image 153 no decipherment is written above or beside the number block. On image 266 some short Latin words sit interlinear and the clear Latin around the numbers may be the same sentence; whether those are a decipherment or the chancery's own clear text I could not tell at this size. Rest of the volume not paged."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE as far as the local dump shows: research/catalogue_harvest/decode list.json and views*.jsonl hold no Funck, Bender or Turcica record (DECODE's only Riksarkivet records are Chifferklaver/Oxenstierna/Bremen R4282-R4341, Erik Brahe diary R8889). The live DECODE site was not queried.",
+    "tomokiyo": "Local copy of Tomokiyo's unsolved.htm (root of checkout) has no Funck, Charles XII or Bender mention; live tomokiyo.com fetch timed out/reset, so not searched on the web (search limit).",
+    "lasry": "Local copy of Lasry's GL.htm (targets/ducroc/GL.htm and esp318 copy) has no Funck, Charles XII, Sweden or Constantinople item; not searched on the web (search limit).",
+    "edition": "No edition checked: not searched on the web (search limit). Locally, targets/*/NOTES.md, decode_updates/queue.json, SOLVED_CATALOGUE.md and research/**/README.md mention Funck only in this sweep's own candidates.json/README.",
+    "literature": "Not searched on the web (search limit) for Swedish literature on Funck's embassy (Karl XII's Bender letters). Local research/riksarkivet and research/scandinavia READMEs list no Turcica volume as read; DECODE's Riksarkivet items are all 17th-century."
+   },
+   "key_check": "Riksarkivet SE/RA/202 Chifferklaver keys held on DECODE (R4282-R4341) are 17th-century Oxenstierna/Bremen keys, not for 1711 Charles XII to Funck; research/riksarkivet README lists no Funck key; none applies. Sibling volumes 6/9 (to the King) and 6/11 (drafts) are digitised but not yet opened.",
+   "duplicates": "known.py on the shelfmark 'Diplomatica Turcica' and 'Charles XII' / Funck: only this sweep's candidates row; catalogue Charles XII hits are other items (Meyerfeldt Pomerania 1712-14, Bremen-Verden). No duplicate.",
+   "verdict": "read",
+   "closed": "Re-checked 5 Nov 2026 at 1000-2400 px: every cipher passage the entry names carries a contemporary decipherment written over the numbers, missed at screen size on 2 Nov. Image 153 (14 Sept 1711, Swedish): faint lighter-ink gloss over every number line, partly letter by letter; images 266 and 278 (Latin letters to the Grand Vizier and the Porte): the Latin plaintext written over every number run. The same code is glossed throughout the sibling volumes I/6/9, I/6/10, I/6/14 and I/7/16 (lead 2257). A bare passage elsewhere in the 367 images cannot be excluded: a full contact-sheet pass at 250 px could not tell cipher from script.",
+   "closed_date": "2026-11-05"
+  },
+  "access": "online",
+  "repository": "riksarkivet"
+ }
+]

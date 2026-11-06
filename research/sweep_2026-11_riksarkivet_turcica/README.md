@@ -32,13 +32,12 @@ re-fetched at 900 px. Cipher seen in nine volumes, which make five rows:
 | Row | Volumes | What is there |
 |---|---|---|
 | Poniatowski to Charles XII, 1710-14 | Turcica I/5/8 | French letters with number-cipher runs, French decipherment between the lines |
-| Bender field-chancery code, 1710-14 | Turcica I/6/9, I/6/10, I/6/14, I/7/16 | one 2-3 digit code (Funck, Perman, von Müllern), interlinear Swedish/French decipherments; key material for catalogue **#1769** (Funck I/6/13, the same code unglossed) |
+| Bender field-chancery code, 1710-14 | Turcica I/6/9, I/6/10, I/6/14, I/7/16 | one 2-3 digit code (Funck, Perman, von Müllern), interlinear Swedish/French decipherments; the same code as catalogue #1769 (Funck I/6/13), which a closer look on 5 Nov showed to be glossed too (removed as read) |
 | Rålamb and Vellingk, Constantinople 1657 | Turcica I/2/2 | Swedish despatches, small-number code, interlinear decipherment |
 | Cantersten, Poland 1648 | Polonica I/5/17 (drafts I/5/18) | Swedish despatches, small-number code, interlinear decipherment |
 | Molinari, consul at Tunis, 1765-70 | Tunisica 7/2 | French letters in unbroken digit strings, **no decipherment seen**: the one ciphertext-only row |
 
-The four glossed rows are class A: a key can be rebuilt from the pairs, and the Bender code then applies to #1769. The Funck
-drafts (I/6/11, I/6/12) are clear and may give cribs for unglossed letters.
+The four glossed rows are class A: a key can be rebuilt from the pairs. The Funck drafts (I/6/11, I/6/12) are clear.
 
 ## Sheeted, no cipher seen
 
@@ -66,7 +65,8 @@ edition of the cipher letters or printed key for any of the five.
 | Lead | Outcome | Why |
 |---|---|---|
 | 2258 Rålamb 1657 | **promoted** to catalogue | bare number runs on images 104 and 114 beside glossed letters (18, 22-23, 74, 77, 87-88) |
-| 2257 Bender code | closed `read` | every passage seen is glossed; recorded as crib material on catalogue **#1769** (`vetting.key_held`) |
+| 2257 Bender code | closed `read` | every passage seen is glossed |
+| catalogue #1769 Funck I/6/13 | **removed** as `read` (`research/vetting_2026-10/removed_2026-11-05.json`) | its cipher passages (153, 266, 278) carry faint contemporary glosses, missed at screen size on 2 Nov |
 | 2256 Poniatowski | closed `partly_read` | glossed throughout except 10-15 tail lines; cipher in images 253-335, May-Oct 1712, plus a letter cipher "de Mr de Grothus" |
 | 2259 Cantersten | closed `partly_read` | one glossed letter (images 9-11), a few bare rows |
 | 2260 Molinari | **held** (`vetting.pending`) | 16-18 pages of bare digit cipher, but image 365 is marked "Dubbletten dechifferad" and Jerad's 2015 edition (unseen) may print the text |
