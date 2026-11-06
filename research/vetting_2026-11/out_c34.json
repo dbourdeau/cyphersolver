@@ -1,0 +1,62 @@
+{
+ "2339": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch c34",
+  "seen": {
+   "kind": "scan",
+   "where": "ASF PAD, Mediceo del Principato 384, c. 78r (IIIF mdp_carteggio_universale/384/0166_C_078_R.ptif), re-fetched this pass at 1400 px; the first pass (batch n12) read it at 2000 px and checked cc. 70-80.",
+   "extent": "One page: heading 'Copia / D'una lettera del card.le Farnese', then about 31 lines of continuous figures to the foot, with a few clear words in mid-text and at the foot ('et darli Marco Fabritio', 'publico, et consolatione'); verso not counted. No machine count made.",
+   "cipher": "Continuous runs of Arabic digits with no separators between groups, a figure substitution; nothing is written over, beside or after the figures. c. 79 is the decipherment of c. 76 (French ambassador, Rome 10 Aug 1547), not of c. 78; c. 80 is unrelated. No decipherment of c. 78 on the leaf or in the gathering."
+  },
+  "prior_art": {
+   "decode": "known.py on 'Mediceo del Principato 384', 'Farnese 1547' and 'Della Casa' (harvested DECODE dump included): only this lead and its sweep row, plus catalogue rows that mention the Della Casa-Farnese edition for other letters. DECODE's ASFi 'Governo Mediceo - cifre' volumes (R5687-R7459) are 17th-18th century (first pass).",
+   "tomokiyo": "First pass (n12) searched Tomokiyo's Cryptiana for Farnese 1547, Pier Luigi Farnese and Cosimo I intercepts: nothing on this copy. Not re-run in this Chrome pass.",
+   "lasry": "GL.htm and the repo's Lasry material searched by the first pass for Farnese and Mediceo del Principato 384: nothing; Lasry's Farnese work in this repo (vatican5, farnese1541) is the papal cipher of 1541-42, a different document.",
+   "edition": "Opened this pass in Chrome (Cloudflare cleared by itself) and searched in full text (712 pp., text extracted with pdf.js): Giovanni Della Casa, Corrispondenza con Alessandro Farnese, vol. II (1546-1547), ed. M. Comelli, Ledizioni 2022 (air.unimi.it handle 2434/910303). The synoptic table lists Farnese's August 1547 letters to Della Casa as nos. 343 (7 Aug), 346 (13 Aug), 349 (20 Aug), 351 and 352 (27 Aug), all from BAV Vat. Lat. 14.832 or ASPr, none with a cipher enclosure; the first enclosures 'in cifra e decifrato' are no. 372 (1 Oct 1547) onward, and the Appendice 'Lettere cifrate' (p. 675 ff.) prints only the cipher allegati of nos. 372, 376, 383, 386, 397, 400 and 404 (Oct-Dec 1547). The Nota al testo says the only surviving cipher letters are those in Vat. Lat. 14.829. 'Fabritio/Fabrizio' occurs once (Fabritio Colonna, p. 342), 'publico et consolatione' never; 'cifr' has no hit in the August letters (pp. 495-530). So the plaintext of c. 78 is not printed there.",
+   "literature": "Two web searches this pass (Mediceo del Principato 384 + Farnese 1547 + cifra; cardinal Farnese cipher August 1547 Pier Luigi intercepted Cosimo) and two by the first pass found no study, calendar or decipherment of this copy; the hits were Simancas Genoese documents of Jan 1547 and the Della Casa edition."
+  },
+  "searches": [
+   {
+    "query": "\"Mediceo del Principato\" 384 Farnese 1547 cifra intercettata",
+    "result": "No record of this copy; hits were an ASF abbreviation list, Simancas Genoese documents of 1547 and the Della Casa-Farnese vol. II PDF."
+   },
+   {
+    "query": "cardinale Alessandro Farnese lettera in cifra agosto 1547 Pier Luigi intercettata Cosimo decifrata",
+    "result": "Nothing on an intercepted Farnese cipher of Aug 1547; hits on Pier Luigi's murder (10 Sept 1547), the Della Casa edition's cipher appendix and Simancas avvisi."
+   },
+   {
+    "query": "Della Casa-Farnese Corrispondenza vol. II full text: synoptic table rows for luglio-settembre 1547 and every 'cifr' hit",
+    "result": "Farnese's August letters (nos. 343, 346, 349, 351, 352) carry no cipher enclosure; cipher allegati start with no. 372 (1 Oct 1547); appendix covers only Oct-Dec 1547."
+   },
+   {
+    "query": "Della Casa-Farnese vol. II full text: 'Fabri[tc]i', 'publico, et consolatione', 'consolat', 'Marco'",
+    "result": "Only Fabritio Colonna (p. 342) and Marco Corner (p. 512); none of the clear words of c. 78 appears, so the letter is not printed."
+   }
+  ],
+  "key_check": "No key tried. The 1541-42 Farnese papal key worked in targets/vatican5 is five years earlier and not tested on c. 78. The Comelli appendix prints Farnese's own cipher messages to Della Casa of Oct-Dec 1547 (continuous digits) with Della Casa's autograph decipherments, from which the 1547 nunciature key could be rebuilt; whether c. 78 uses it is not tested.",
+  "key_held": "In print: Comelli, Corrispondenza Della Casa-Farnese vol. II, Appendice 'Lettere cifrate' (p. 675 ff.), Farnese cipher messages of 1 Oct-3 Dec 1547 with Della Casa's decipherments (and vol. I, Appendice II, for 1544-46): a likely key source for a Farnese cipher of Aug 1547, not tested. ASF Cifrari II serie (chancery keys of Cosimo I, 1536-73) not online.",
+  "duplicates": "known.py on the filza, 'Farnese 1547' and 'Della Casa': no catalogue entry, target or other lead for c. 78; vatican5 and farnese1541 are the 1541-42 papal ciphers; Comelli's August 1547 letters are Farnese-Della Casa originals in BAV/ASPr, not this copy.",
+  "verdict": "open"
+ },
+ "2359": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch c34",
+  "seen": {
+   "kind": "transcription",
+   "where": "T. Wierzbowski (Fedor Verzhbovsky), Двѣ кандидатуры на польскій престолъ Вильгельма изъ Розенберга и эрцгерцога Фердинанда 1574-1575 (Warsaw 1889), Приложенія part I, pp. 1-72 (archive.org dvekandidaturyn00wiergoog, Google scan of the Stanford copy, pages viewed as images); and K. Pražáková, EEHR 7 (2024) 37-50 (issue PDF via Wayback snapshot of dspace.unitus.it 2067/53009), pp. 43-45.",
+   "extent": "Pražáková: 'a thin folder of encrypted documents', SOA Třeboň, Historica Třeboň sign. 4834/36 (n. 52), letter-for-sign substitution with agreed symbols for names. Wierzbowski: at least seven printed letters of June-Oct 1574 footnoted as from cipher originals.",
+   "cipher": "Wierzbowski p. 3 n. 1: all documents of part I were copied 'in the former Rosenberg archive, now of the princes Schwarzenberg, at Třeboň (Wittingau), bundle no. 4834'. His footnotes mark the cipher pieces and print their plaintext: p. 8 n. 2 'Копія, писанная рукою Вильгельма изъ Розенберга, съ шифрованнаго подлинника' (Przecławski to Rosenberg, Kraków 19 June 1574); Przecławski 19 July 1574 'copy from the cipher original, from the sign || in Rosenberg's own hand'; Przecławski 22 July 1574 'copy written by Rosenberg from the cipher original'; several more 'Подлинникъ, писанный шифромъ' (original written in cipher), e.g. no. 15, Przecławski to Rosenberg, Kraków 8 Oct 1574."
+  },
+  "prior_art": {
+   "decode": "known.py on '4834', 'Rosenberg', 'Rožmberk', 'Wierzbowski', 'Przecławski', 'Zborowski' (harvested DECODE dump included): only this lead; no DECODE record for Historica Třeboň.",
+   "tomokiyo": "Not found in Cryptiana by the first pass (n15) or in two web searches this pass on Rosenberg cipher 1574-75; the related HistoCrypt paper on Jan Chodkiewicz's encrypted letters to Maximilian II (1574-75) concerns another correspondence.",
+   "lasry": "GL.htm and the repo's Lasry material (first pass): nothing on Rosenberg or Historica Třeboň.",
+   "edition": "Wierzbowski 1889, appendix part I (documents 1-~40, pp. 1-72), prints in Latin, Polish and Czech the texts of the 1574-75 Rosenberg-Zborowski-Przecławski-Netolický letters copied from Třeboň bundle 4834, including the cipher letters in plaintext (from Rosenberg's autograph decipherment copies and from cipher originals). Pražáková 2024 cites this edition for the same letters (nn. 39, 47, 48, 50, 53) and the cipher folder as 4834/36 (nn. 46, 52).",
+   "literature": "Pražáková 2024 (read in full this pass) describes the cipher and the surviving folder but prints no decipherment of her own. M. Šlach, JSH 33 (1964) 130-148, not online (Pražáková does not cite it); not needed for the verdict since the plaintext is already printed by Wierzbowski 1889."
+  },
+  "key_check": "No key tried. Wierzbowski also prints a reconstructed sign key for Archduke Ferdinand's correspondence with his agents in Rome and Poland (plate at the end of the volume); whether he gives Rosenberg's own key was not checked. Pražáková describes Rosenberg's system as one sign per letter plus agreed symbols for persons.",
+  "duplicates": "known.py on 4834, Rosenberg, Rožmberk, Wierzbowski, Przecławski, Zborowski: no catalogue entry, target or other lead for this folder.",
+  "verdict": "read",
+  "closed": "Plaintext already printed: Wierzbowski, Dve kandidatury (Warsaw 1889), Prilozheniya part I pp. 1-72, all copied from Třeboň bundle 4834 (p. 3 n. 1), with cipher letters printed in clear and footnoted as 'copy in Rosenberg's hand from the cipher original' (pp. 6-8 n. 2, 19 and 22 July 1574) or 'original written in cipher' (e.g. no. 15, 8 Oct 1574). Item-by-item match against the sheets of 4834/36 not made (needs SOA Třeboň scans)."
+ }
+}
