@@ -1,0 +1,242 @@
+{
+ "schema_version": 1,
+ "target": "contucio1446",
+ "title": "Contucio to Francesco Sforza, Venice, 7 December 1446 (BnF italien 1583 f. 148; DECODE R7911), catalogue 1309",
+ "documents": [
+  {
+   "id": "R7911",
+   "shelfmark": "BnF italien 1583 f. 148 (Archivio Sforzesco); DECODE R7911",
+   "date": "7 Dec 1446",
+   "year": 1446,
+   "country": "Duchy of Milan / Sforza correspondence",
+   "route": "Contucio, Sforza's envoy (Venice) -> Francesco Sforza (Pesaro)",
+   "places": {
+    "from": "Venice",
+    "to": "Pesaro"
+   },
+   "language": "Italian",
+   "pages": 2,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "A contemporary decipherment written over the two cipher lines of f. 148v only (questa, parte, parve, a cosimo, se devesse, dire); the recto passages have none.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 226,
+    "distinct": 42,
+    "unit": "symbols",
+    "measured": true,
+    "file": "cipher_tokens.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE R7911 images P1 (recto) and P2 (verso), binarized microfilm scans",
+    "image_quality": "fair",
+    "notes": "226 cipher tokens (letters, word signs, code words; one null not counted) in nine page lines: f. 148r 26-30, 50-51, f. 148v 6-7. Labels are key value + homophone variant (key.md). Two shapes uncertain (one under the library stamp)."
+   },
+   "read": "read"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "Homophonic letter cipher in graphic signs with a vowel+consonant syllable table, word signs and code words for names (key ASMi cart. 1597 no. 14, DECODE R5314).",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 42,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "syllables",
+    "common words",
+    "names"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "alphabetical",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "The same key reads R7900 (f. 89, Angelus, 30 Sept 1446, 'Cum cifra Vincentii'), whose clear text is R7901 (f. 90)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Contemporary interlinear decipherment of the two verso lines (31 of 226 tokens) on f. 148v; no reading of the recto passages found (DECODE R7911 Non-decrypted, Mazzatinti 1883 heading only, web search)",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "key from archive",
+   "cleartext context"
+  ],
+  "attack": "key from archive",
+  "human_role": "Daniel Bourdeau pasted catalogue 1309's solve-page task into the session; the DECODE images had been fetched with his cookie in an earlier sweep.",
+  "tools": [
+   "PyMuPDF",
+   "PIL (crops and zoom)",
+   "decode.py"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-06",
+  "last_date": "2026-11-06"
+ },
+ "solution": [
+  {
+   "date": "2026-11-06",
+   "kind": "access",
+   "what": "DECODE images R7911 (P1-P3), R7912, R7913, R7900, R7901 and key R5314 found on disk from the it1583 sibling sweep (23 Oct 2026).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "statistics",
+   "what": "Extent checked on the images: cipher only on f. 148 (recto lines 26-30 and 50-51, verso 6-7); R7912 and R7913 (ff. 151, 152) are clear leaves, against the catalogue's vetting note.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "key from source",
+   "what": "Key ASMi cart. 1597 no. 14 (R5314), headed for the Venice envoys Stavoli, Agostino, Battista, Matteo and Vincenzo, tested: its code word stat (lo Duca de Milano) occurs twice in f. 148r.",
+   "result": "worked",
+   "technique": [
+    "key matching"
+   ]
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "hypothesis",
+   "what": "Key applied by hand to f. 148r line 26: 'tanto per la desfatione del [Duca de Milano] quanto de la vostra perd-'; the writer's letter-forms mapped to the key's signs (key e drawn as a hooked h, key s as a k).",
+   "result": "worked",
+   "technique": [
+    "key matching",
+    "manual reconstruction"
+   ]
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "transcription",
+   "what": "All nine cipher lines transcribed sign by sign from 3-4x crops; look-alikes separated on the image: round u (p) / box u (u), -o (a) / crossed o (et), double t (r) / double t with flourish (con).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "verification",
+   "what": "Contemporary interlinear decipherment over f. 148v 6-7 (questa, parte, parve, a cosimo, se devesse, dire) agrees with the key sign for sign and gives the code word pec = Cosimo.",
+   "result": "worked",
+   "technique": [
+    "plaintext matching"
+   ]
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "reading",
+   "what": "decode.py over the transcription: 225 of 226 tokens given a value, all in sense with the clear text; the code word utinam (vtina with a tilde) has no value on the key copy and the sense does not fix it.",
+   "result": "worked",
+   "technique": [
+    "contextual inference"
+   ]
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "literature search",
+   "what": "Web search on Contucio, Stavoli, Giordani, Amidani, Venice 1446 and the Malipiero embassy; DECODE R7911 metadata; Mazzatinti 1883; it1583 and visconti1446 notes: no reading of f. 148 found.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "verification",
+   "what": "Key identification checked on the sibling pair R7900/R7901: R7900 'che lo stato de [stat]' where the clear R7901 has 'che lo stato del Duca de Milan'.",
+   "result": "worked",
+   "technique": [
+    "plaintext matching"
+   ]
+  },
+  {"date": "2026-11-06", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 225 tokens, 41 types, it-cinquecento order 4: reading -1.865 per letter; random keys -4.044 (z 5.6); key annealed onto shuffled ciphertext best -2.462 (mean -2.495, z 18.0); annealer on the real text -2.238. Verdict: pass.", "result": "worked"}
+ ],
+ "outcome": {"validation": {"date": "2026-11-06", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 225, "types": 41, "tokens_per_type": 5.49, "score": -1.865, "nulls": {"random keys": {"n": 200, "mean": -4.044, "sd": 0.392, "max": -3.263, "z": 5.6, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.495, "sd": 0.035, "max": -2.462, "z": 18.0, "p": 0.1429}}, "power": -2.238, "verdict": "pass", "notes": "claimed per-occurrence score -1.865; polyphony 0.0; 0 unread tokens left out; annealer on the real text from random keys reached -2.238"}, 
+  "class": "read",
+  "method": "read with known key",
+  "key": "recovered",
+  "method_basis": "The key sheet ASMi cart. 1597 no. 14 (DECODE R5314) is headed with the names of Sforza's envoys at Venice in 1446, the writer's own group; it was applied sign by sign, confirmed by the contemporary interlinear decipherment of the two verso lines.",
+  "contribution": [
+   "transcription",
+   "key extended or corrected",
+   "catalogue correction"
+  ],
+  "fraction_read": 0.9956,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "decode.py over transcription.txt: 225 of 226 cipher tokens given a value and in sense (reading.md); the null not counted; open: the code word utinam",
+  "codes_open": {
+   "open": 1,
+   "total": 3,
+   "tokens_open": 1
+  },
+  "verification": ["contemporary decipherment", "key confirms", "historical consistency", "statistical test"],
+  "key_file": "key.md",
+  "texts": [
+   {
+    "doc": "R7911",
+    "label": "Contucio to Francesco Sforza, Venice, 7 Dec 1446 (f. 148r-v), the cipher passages in their clear context",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "en.md",
+    "language": "it",
+    "state": "read",
+    "read_share": 0.9956,
+    "summary": "Contucio reports his embassy to the Venetian Signoria in the war of 1446 against Filippo Maria Visconti. The cipher says what Venice and Florence want to settle with Sforza (the destruction of the Duke of Milan, Sforza's losses and their compensation, a peace with a power named by a code word, and Sforza present in person at the Duke's ruin), and twice that Cosimo de' Medici advised what to offer and say.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5 (session)",
+     "date": "2026-11-06",
+     "note": "Every cipher clause read as a sentence with the clear text around it; one code word open; the verso agrees with the contemporary interlinear decipherment."
+    }
+   }
+  ],
+  "gaps": [
+   {
+    "item": "code word utinam (vtina with a tilde), f. 148r line 28, 'la pace con [utinam]'",
+    "blocker": "open-codes",
+    "detail": "once only; not on the 18th-c. key copy, whose code column has four unlabelled entries; the sense does not fix it"
+   },
+   {
+    "item": "two uncertain sign shapes (end of Ragona, f. 148r 29; first sign of parve, f. 148r 50, under the stamp)",
+    "blocker": "illegible",
+    "detail": "binarized microfilm scan; the sense fixes both"
+   }
+  ],
+  "credits": [
+   {
+    "who": "decode",
+    "role": "key or decipherment used",
+    "note": "key record R5314 (ASMi Carteggio Sforzesco cart. 1597 no. 14, 18th-c. copy of the 1446 key); letter images R7911-R7913",
+    "source": "https://de-crypt.org/decrypt-web/RecordsView/5314"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "interlinear decipherment of the two cipher lines on f. 148v (gives pec = Cosimo)",
+    "date": "1446"
+   }
+  ],
+  "notes": "Catalogue 1309 named ff. 148, 151, 152; ff. 151 and 152 (R7912, R7913) carry no cipher."
+ }
+}
