@@ -47,7 +47,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 2358 · class C · priority 7.0 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 2358 · class C · priority 7.0 · attempted, open</p>
   <h1>Two Italian letters to Ottavio Piccolomini in a vowel-to-digit cipher, without decipherment (key printed by Vlnas 2017)</h1>
   <p class="sub">Completes the reading of this writer's letters; low difficulty, useful as a control.</p>
   <dl class="facts">
@@ -81,20 +81,21 @@ THE CIPHER
     - Vlnas 2017 thesis (text + appendix zip of the photographs): https://theses.cz/id/p3p2kb/
 
 WHAT IS KNOWN
-  Status: Seen (6 Nov 2026): bare. Vlnas 2017 (ch. 4.2) deciphered the neighbouring inv. 24873 in the same system: vowels a e i o u = 1 3 5 7 9, consonants unchanged. That makes these two readable at sight; nobody has published their text. A key lookup more than a cryptanalytic target.
-  Outcome so far: not yet attempted by the project
+  Status: 6 Nov 2026: both letters decoded with Vlnas's published key (targets/piccolomini1646, piccolomini1646.html, WAINUT) but not read: 65.5% and 64.0% of words decode verbatim from a photographed microfilm-reader screen, and most sentences have holes. A clean scan from SOA Zámrsk is the way forward. Earlier note: Seen (6 Nov 2026): bare. Vlnas 2017 (ch. 4.2) deciphered the neighbouring inv. 24873 in the same system: vowels a e i o u = 1 3 5 7 9, consonants unchanged. That makes these two readable at sight; nobody has published their text. A key lookup more than a cryptanalytic target.
+  Outcome so far: attempted, open
   Prior-art check: open as far as checked (6 Nov 2026): known.py on the inventory numbers, Piccolomini, Claudia de' Medici, Frankenthal, Amalfi, Zámrsk: no hit beyond catalogue #577 (Claudia de' Medici to Baden 1633, another archive); Vlnas 2017 deciphered four other frames of the same microfilm (inv. 25039, 24873, 24790, 25106) and printed their keys, but left these frames undeciphered (his appendix B); Lasry, DECODE and Tomokiyo not searched beyond the known.py dumps
   Check first: Transcribe from the thesis photographs and substitute the five vowels.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/piccolomini1646/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/piccolomini1646/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/piccolomini1646/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -134,7 +135,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/piccolomini1646/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+2358&amp;target=catalogue+2358
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -151,11 +152,11 @@ If you cannot open issues or pull requests, write this report for your human to 
 <p class="frame confirmed"><b>Cipher located and confirmed.</b> Plain consonants with vowels as odd digits and even digits mixed in; no gloss on either frame. Tested at sight on 24874: "p3r sl g7v3rn7" = "per [i]l governo" with 1 3 5 7 9 = a e i o u, so Vlnas's 24873 key applies. (Vlnas 2017 appendix zip (theses.cz/id/p3p2kb), frames 24874.jpg and 24876.jpg, rotated and zoomed in Chrome, 6 Nov 2026 (not saved); checked 2026-11-06 by claude leads review batch n15)</p>
 <h2>What is known</h2>
 
-
-<p><b>Status and prior art.</b> Seen (6 Nov 2026): bare. Vlnas 2017 (ch. 4.2) deciphered the neighbouring inv. 24873 in the same system: vowels a e i o u = 1 3 5 7 9, consonants unchanged. That makes these two readable at sight; nobody has published their text. A key lookup more than a cryptanalytic target.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open as far as checked (6 Nov 2026): known.py on the inventory numbers, Piccolomini, Claudia de' Medici, Frankenthal, Amalfi, Zámrsk: no hit beyond catalogue #577 (Claudia de' Medici to Baden 1633, another archive); Vlnas 2017 deciphered four other frames of the same microfilm (inv. 25039, 24873, 24790, 25106) and printed their keys, but left these frames undeciphered (his appendix B); Lasry, DECODE and Tomokiyo not searched beyond the known.py dumps.</p>
+<p><span class="ko"><i class="k">written up</i> <a href="piccolomini1646.html" title="Two letters to Ottavio Piccolomini, unidentified writers, SOA Zámrsk, Rodinný archiv Piccolominiů, inv. 24874 and 24876">piccolomini1646</a></span></p>
+<p><b>Status and prior art.</b> 6 Nov 2026: both letters decoded with Vlnas's published key (targets/piccolomini1646, piccolomini1646.html, WAINUT) but not read: 65.5% and 64.0% of words decode verbatim from a photographed microfilm-reader screen, and most sentences have holes. A clean scan from SOA Zámrsk is the way forward. Earlier note: Seen (6 Nov 2026): bare. Vlnas 2017 (ch. 4.2) deciphered the neighbouring inv. 24873 in the same system: vowels a e i o u = 1 3 5 7 9, consonants unchanged. That makes these two readable at sight; nobody has published their text. A key lookup more than a cryptanalytic target.</p>
+<p><b>Outcome so far.</b> attempted, open Prior-art check: open as far as checked (6 Nov 2026): known.py on the inventory numbers, Piccolomini, Claudia de' Medici, Frankenthal, Amalfi, Zámrsk: no hit beyond catalogue #577 (Claudia de' Medici to Baden 1633, another archive); Vlnas 2017 deciphered four other frames of the same microfilm (inv. 25039, 24873, 24790, 25106) and printed their keys, but left these frames undeciphered (his appendix B); Lasry, DECODE and Tomokiyo not searched beyond the known.py dumps.</p>
 <p><b>Check first.</b> Transcribe from the thesis photographs and substitute the five vowels.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/piccolomini1646/NOTES.md" rel="noopener">targets/piccolomini1646/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/piccolomini1646" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
