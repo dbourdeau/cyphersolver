@@ -2198,8 +2198,13 @@ body.pg-catalogue details.every b{font-family:var(--mono);font-weight:normal;col
 .pg-mode button:hover{color:var(--head);transform:none;box-shadow:none}
 .pg-mode button[aria-pressed="true"]{background:var(--gold);color:var(--gold-ink)}
 .pg-plot{position:relative;outline-offset:4px;border-radius:8px;touch-action:pan-y}
-.pg-plot .vchart{margin:1rem 0 .2rem}
+.pg-plot .vchart{margin:1rem 0 .2rem;min-width:0;width:100%}
 .pg-plot svg[hidden],.pg-tip[hidden]{display:none}
+.pg-plot .pg-narrow{display:none}
+.pg-legend .lv{display:none;font-family:var(--mono);color:var(--head);font-weight:600}
+@media (max-width:640px){.pg-plot .pg-wide{display:none}.pg-plot svg.pg-narrow:not([hidden]){display:block}
+ .pg-plot .vchart text{font-size:12px}.prog .vchart .ms text{font-size:11px}.pg-legend .lv{display:inline}
+ .pg-stat b{font-size:1.6rem}}
 .prog .vchart .ar{stroke:var(--bg);stroke-width:1.5;stroke-linejoin:round}
 .prog .vchart .tk{fill:none;stroke:var(--ink2);stroke-width:1.6;stroke-dasharray:5 4;opacity:.8}
 .prog .vchart text{paint-order:stroke;stroke:var(--bg);stroke-width:3px;stroke-linejoin:round}

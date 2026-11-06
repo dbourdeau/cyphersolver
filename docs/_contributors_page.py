@@ -146,22 +146,23 @@ def further(pages):
     return sorted(out, key=lambda pg: (workable(pg[1]) == 0, pg[0]['y']))
 
 
-# Progress over time: the targets solved, day by day, stacked by how the text was obtained, against the targets taken on.
+# Progress over time: the targets solved, day by day, split between the project's own results and the contributors', against the targets taken on.
 START = '2026-09-01'      # the work began in September 2026; an older date in a log is a document's or a source's, not the work's
 BREAK_KINDS = {'reading', 'sibling key', 'key from source', 'crib', 'solver'}
 SOLVING = M.KEY_METHODS | {M.DECIPH}
 # (band, label, .vchart colour slot), bottom of the stack first
-SERIES = [('key', 'Key recovered here', 's1'), ('ext', 'Outside key applied', 's2'),
-          ('dec', 'Existing decipherment', 's3'), ('con', 'Solved by contributors', 's4')]
-PG = dict(W=900, H=340, L=44, R=184, T=22, B=30)
+SERIES = [('prj', 'This project', 's1'), ('con', 'Contributors', 's4')]
+# Two layouts of the same chart: a wide one with the line-end labels, and a narrow one for a phone (the legend names the
+# bands there). The page carries both; style.css shows one.
+PG = {'wide': dict(W=900, H=340, L=44, R=130, T=22, B=30, tick=7),
+      'narrow': dict(W=420, H=300, L=34, R=12, T=16, B=28, tick=14)}
 
 
 def solve_group(p):
     """The band a solved target goes in; None when no text was obtained (not solved, key only, not applicable)."""
     m = (p.get('outcome') or {}).get('method')
     if m not in SOLVING or M.extent(p) not in ('complete', 'partial'): return None
-    if CR.provenance_of(p) == 'contributed': return 'con'
-    return 'key' if m in M.KEY_RECOVERED else 'dec' if m == M.DECIPH else 'ext'
+    return 'con' if CR.provenance_of(p) == 'contributed' else 'prj'
 
 
 def day_of(p, first, today, solved):
@@ -205,80 +206,94 @@ def progress(real, pages_by_folder, dates, today):
     tk = list(itertools.accumulate(taken[d] for d in iso))
     tot = [sum(cum[k][i] for k in keys) for i in range(n)]
     dtot = [sum(daily[k][i] for k in keys) for i in range(n)]
-    W, H, L, R, T, B = (PG[k] for k in 'WHLRTB')
-    pw, ph = W - L - R, H - T - B
     step = 100 if tk[-1] <= 800 else 200
     ymax = -(-max(tk[-1], tot[-1]) // step) * step
     dstep = 10 if max(dtot) <= 80 else 20
     dmax = -(-max(dtot) // dstep) * dstep
-    X = lambda i: L + pw * i / max(1, n - 1)
-    Y = lambda v, top=ymax: T + ph * (1 - v / top)
+    best = max(range(n), key=lambda i: dtot[i])
     fd = lambda s: f'{datetime.date.fromisoformat(s).day} {datetime.date.fromisoformat(s):%b}'
     pt = lambda x, y: f'{x:.1f},{y:.1f}'
 
-    def axes(top, tick):
-        g = ''.join(f'<line class="grid" x1="{L}" x2="{L + pw}" y1="{Y(v, top):.1f}" y2="{Y(v, top):.1f}"/>'
-                    f'<text x="{L - 8}" y="{Y(v, top) + 4:.1f}" text-anchor="end">{v}</text>' for v in range(0, top + 1, tick))
-        g += ''.join(f'<line class="axis" x1="{X(i):.1f}" x2="{X(i):.1f}" y1="{T + ph}" y2="{T + ph + 5}"/>'
-                     f'<text x="{X(i):.1f}" y="{T + ph + 19}" text-anchor="middle">{fd(iso[i])}</text>' for i in range(0, n, 7))
-        return g
+    def chart(v):
+        """The running-total and per-day SVGs for layout v ('wide' or 'narrow')."""
+        G = PG[v]
+        W, H, L, R, T, B = (G[k] for k in 'WHLRTB')
+        pw, ph = W - L - R, H - T - B
+        X = lambda i: L + pw * i / max(1, n - 1)
+        Y = lambda val, top=ymax: T + ph * (1 - val / top)
+        geo = json.dumps(dict(W=W, L=L, pw=pw, T=T, ph=ph, ymax=ymax), separators=(',', ':'))
 
-    # running total: one stacked area per band, the taken-on line behind, a dot at every hundred
-    areas, below = [], [0] * n
-    for k, lab, cls in SERIES:
-        above = [below[i] + cum[k][i] for i in range(n)]
-        path = ' '.join(pt(X(i), Y(above[i])) for i in range(n)) + ' ' + ' '.join(pt(X(i), Y(below[i])) for i in reversed(range(n)))
-        areas.append(f'<path class="ar {cls}" d="M{path}Z"><title>{lab}</title></path>')
-        below = above
-    taken_line = f'<path class="tk" d="M{" L".join(pt(X(i), Y(tk[i])) for i in range(n))}"/>'
-    ms = []
-    for h in range(100, tot[-1] + 1, 100):
-        i = next(i for i in range(n) if tot[i] >= h)
-        ms.append(f'<g class="ms"><circle cx="{X(i):.1f}" cy="{Y(tot[i]):.1f}" r="4"/>'
-                  f'<text x="{X(i) - 8:.1f}" y="{Y(tot[i]) - 8:.1f}" text-anchor="end">{h} solved &middot; {fd(iso[i])}</text></g>')
-    ends, base = [], 0
-    for k, lab, cls in SERIES:
-        ends.append((Y(base + cum[k][-1] / 2), lab, cum[k][-1], cls))
-        base += cum[k][-1]
-    ends.append((Y(tk[-1]), 'Taken on', tk[-1], 'tkl'))
-    lx = L + pw + 10
-    end_lab = ''.join(
-        (f'<line class="tk" x1="{lx}" x2="{lx + 9}" y1="{y - 4:.1f}" y2="{y - 4:.1f}"/>' if cls == 'tkl' else
-         f'<rect class="{cls}" x="{lx}" y="{y - 8.5:.1f}" width="9" height="9" rx="2"/>')
-        + f'<text class="lab" x="{lx + 15}" y="{y:.1f}">{lab} <tspan class="v">{v}</tspan></text>'
-        for y, lab, v, cls in spread(ends, 15, T + 6, T + ph))
-    hit = f'<rect class="hit" x="{L}" y="{T}" width="{pw}" height="{ph}"/>'
-    xh = f'<line class="xh" x1="0" x2="0" y1="{T}" y2="{T + ph}"/>'
-    svg_cum = (f'<svg class="vchart pg-cum" viewBox="0 0 {W} {H}" role="img" aria-label="Targets solved, running total by day, '
-               f'stacked by how the text was obtained: {tot[-1]} solved of {tk[-1]} taken on by {fd(today)}">'
-               f'{axes(ymax, step)}<g class="reveal">{taken_line}{"".join(areas)}{"".join(ms)}{end_lab}</g>'
-               f'{xh}<circle class="xdot" r="5" cx="0" cy="0"/>{hit}</svg>')
+        def axes(top, tick):
+            g = ''.join(f'<line class="grid" x1="{L}" x2="{L + pw}" y1="{Y(val, top):.1f}" y2="{Y(val, top):.1f}"/>'
+                        f'<text x="{L - 8}" y="{Y(val, top) + 4:.1f}" text-anchor="end">{val}</text>' for val in range(0, top + 1, tick))
+            g += ''.join(f'<line class="axis" x1="{X(i):.1f}" x2="{X(i):.1f}" y1="{T + ph}" y2="{T + ph + 5}"/>'
+                         f'<text x="{X(i):.1f}" y="{T + ph + 19}" text-anchor="middle">{fd(iso[i])}</text>' for i in range(0, n, G['tick']))
+            return g
 
-    # per day: stacked bars, the best day labelled
-    bw = max(2.0, pw / n * .72)
-    bars = []
-    for i in range(n):
-        if not dtot[i]: continue
-        y, segs = dtot[i], []
-        for k, lab, cls in reversed(SERIES):
-            v = daily[k][i]
-            if not v: continue
-            top, y = Y(y, dmax), y - v
-            segs.append(f'<rect class="{cls}" x="{X(i) - bw / 2:.1f}" y="{top:.1f}" width="{bw:.1f}" height="{max(.5, Y(y, dmax) - top - 1):.1f}"/>')
-        bars.append(f'<g class="bar" data-i="{i}">{"".join(segs)}</g>')
-    best = max(range(n), key=lambda i: dtot[i])
-    best_lab = (f'<text class="lab" x="{X(best) + bw:.1f}" y="{Y(dtot[best], dmax) + 4:.1f}">'
-                f'{dtot[best]} in one day, {fd(iso[best])}</text>')
-    svg_day = (f'<svg class="vchart pg-day" viewBox="0 0 {W} {H}" role="img" hidden aria-label="Targets solved per day, '
-               f'stacked by how the text was obtained; the best day was {fd(iso[best])} with {dtot[best]}">'
-               f'{axes(dmax, dstep)}<g class="reveal">{"".join(bars)}{best_lab}</g>{xh}{hit}</svg>')
+        # running total: one stacked area per band, the taken-on line behind, a dot at every hundred
+        areas, below = [], [0] * n
+        for k, lab, cls in SERIES:
+            above = [below[i] + cum[k][i] for i in range(n)]
+            path = ' '.join(pt(X(i), Y(above[i])) for i in range(n)) + ' ' + ' '.join(pt(X(i), Y(below[i])) for i in reversed(range(n)))
+            areas.append(f'<path class="ar {cls}" d="M{path}Z"><title>{lab}</title></path>')
+            below = above
+        taken_line = f'<path class="tk" d="M{" L".join(pt(X(i), Y(tk[i])) for i in range(n))}"/>'
+        ms = []
+        for h in range(100, tot[-1] + 1, 100):
+            i = next(i for i in range(n) if tot[i] >= h)
+            ms.append(f'<g class="ms"><circle cx="{X(i):.1f}" cy="{Y(tot[i]):.1f}" r="4"/>'
+                      f'<text x="{X(i) - 8:.1f}" y="{Y(tot[i]) - 8:.1f}" text-anchor="end">{h} solved{"" if v == "narrow" else " &middot; " + fd(iso[i])}</text></g>')
+        end_lab = ''
+        if v == 'wide':
+            ends, base = [], 0
+            for k, lab, cls in SERIES:
+                ends.append((Y(base + cum[k][-1] / 2), lab, cum[k][-1], cls))
+                base += cum[k][-1]
+            ends.append((Y(tk[-1]), 'Taken on', tk[-1], 'tkl'))
+            lx = L + pw + 10
+            end_lab = ''.join(
+                (f'<line class="tk" x1="{lx}" x2="{lx + 9}" y1="{y - 4:.1f}" y2="{y - 4:.1f}"/>' if cls == 'tkl' else
+                 f'<rect class="{cls}" x="{lx}" y="{y - 8.5:.1f}" width="9" height="9" rx="2"/>')
+                + f'<text class="lab" x="{lx + 15}" y="{y:.1f}">{lab} <tspan class="v">{val}</tspan></text>'
+                for y, lab, val, cls in spread(ends, 15, T + 6, T + ph))
+        hit = f'<rect class="hit" x="{L}" y="{T}" width="{pw}" height="{ph}"/>'
+        xh = f'<line class="xh" x1="0" x2="0" y1="{T}" y2="{T + ph}"/>'
+        svg_cum = (f'<svg class="vchart pg-cum pg-{v}" viewBox="0 0 {W} {H}" data-g=\'{geo}\' role="img" aria-label="Targets solved, running total by day, '
+                   f'split between this project and contributors: {tot[-1]} solved of {tk[-1]} taken on by {fd(today)}">'
+                   f'{axes(ymax, step)}<g class="reveal">{taken_line}{"".join(areas)}{"".join(ms)}{end_lab}</g>'
+                   f'{xh}<circle class="xdot" r="5" cx="0" cy="0"/>{hit}</svg>')
+
+        # per day: stacked bars, the best day labelled
+        bw = max(2.0, pw / n * .72)
+        bars = []
+        for i in range(n):
+            if not dtot[i]: continue
+            y, segs = dtot[i], []
+            for k, lab, cls in reversed(SERIES):
+                val = daily[k][i]
+                if not val: continue
+                top, y = Y(y, dmax), y - val
+                segs.append(f'<rect class="{cls}" x="{X(i) - bw / 2:.1f}" y="{top:.1f}" width="{bw:.1f}" height="{max(.5, Y(y, dmax) - top - 1):.1f}"/>')
+            bars.append(f'<g class="bar" data-i="{i}">{"".join(segs)}</g>')
+        left = X(best) + 170 > W      # no room on the right of the best day: write its label to the left
+        anchor = ' text-anchor="end"' if left else ''
+        best_lab = (f'<text class="lab" x="{X(best) + (-bw if left else bw):.1f}" y="{Y(dtot[best], dmax) + 4:.1f}"{anchor}>'
+                    f'{dtot[best]} in one day, {fd(iso[best])}</text>')
+        svg_day = (f'<svg class="vchart pg-day pg-{v}" viewBox="0 0 {W} {H}" data-g=\'{geo}\' role="img" hidden aria-label="Targets solved per day, '
+                   f'split between this project and contributors; the best day was {fd(iso[best])} with {dtot[best]}">'
+                   f'{axes(dmax, dstep)}<g class="reveal">{"".join(bars)}{best_lab}</g>{xh}{hit}</svg>')
+        return svg_cum, svg_day
+
+    wide, narrow = chart('wide'), chart('narrow')
 
     # tiles, legend, table
     last7 = sum(dtot[-7:])
-    tiles = [(tot[-1], f'targets solved, of {tk[-1]} taken on'), (cum['key'][-1], 'keys recovered here by cryptanalysis'),
-             (last7, 'solved in the last seven days'), (dtot[best], f'on the best day, {fd(iso[best])}')]
+    tiles = [(tot[-1], f'targets solved, of {tk[-1]} taken on'), (cum['prj'][-1], 'solved by this project'),
+             (cum['con'][-1], 'solved by contributors'), (last7, 'solved in the last seven days')]
     tiles_html = ''.join(f'<div class="pg-stat"><b data-n="{v}">{v}</b><span>{t}</span></div>' for v, t in tiles)
-    legend = ''.join(f'<span><i class="pg-sw {cls}"></i>{lab}</span>' for _, lab, cls in SERIES) + '<span><i class="pg-sw tkl"></i>Taken on</span>'
+    lv = lambda v: f' <b class="lv">{v}</b>'     # the values show in the legend on a phone, where the chart has no line-end labels
+    legend = (''.join(f'<span><i class="pg-sw {cls}"></i>{lab}{lv(cum[k][-1])}</span>' for k, lab, cls in SERIES)
+              + f'<span><i class="pg-sw tkl"></i>Taken on{lv(tk[-1])}</span>')
     weeks = []
     for w in range(0, n, 7):
         j = min(n, w + 7) - 1
@@ -290,14 +305,16 @@ def progress(real, pages_by_folder, dates, today):
              + '<th class="n">Solved that week</th><th class="n">Solved so far</th><th class="n">Taken on so far</th></tr></thead><tbody>'
              + ''.join(weeks) + '</tbody></table></div></details>')
     data = json.dumps({'d': iso, 's': [daily[k] for k in keys], 'lab': [l for _, l, _ in SERIES], 'cls': [c for _, _, c in SERIES],
-                       'tk': tk, 'g': {'W': W, 'L': L, 'pw': pw, 'T': T, 'ph': ph, 'ymax': ymax}}, separators=(',', ':'))
+                       'tk': tk}, separators=(',', ':'))
     return f'''<div class="prog" id="pg">
 <div class="pg-stats">{tiles_html}</div>
 <div class="pg-bar"><div class="pg-legend">{legend}</div>
 <div class="pg-mode" role="group" aria-label="Chart view"><button type="button" data-mode="cum" aria-pressed="true">Running total</button><button type="button" data-mode="day" aria-pressed="false">Per day</button></div></div>
 <div class="vfig"><div class="pg-plot" tabindex="0" aria-label="Chart: move the pointer, or use the arrow keys, to read a day">
-{svg_cum}
-{svg_day}
+{wide[0]}
+{narrow[0]}
+{wide[1]}
+{narrow[1]}
 <div class="pg-tip" hidden></div>
 </div></div>
 <script type="application/json" class="pg-data">{data}</script>
@@ -307,27 +324,28 @@ def progress(real, pages_by_folder, dates, today):
 
 
 PG_JS = r'''(()=>{const f=document.getElementById('pg');if(!f)return;
-const D=JSON.parse(f.querySelector('.pg-data').textContent),g=D.g,n=D.d.length,plot=f.querySelector('.pg-plot'),tip=f.querySelector('.pg-tip');
-const cum=D.s.map(a=>{let t=0;return a.map(v=>t+=v)}),svg={cum:f.querySelector('.pg-cum'),day:f.querySelector('.pg-day')};
-let mode='cum',cur=n-1;const X=i=>g.L+g.pw*i/Math.max(1,n-1);
+const D=JSON.parse(f.querySelector('.pg-data').textContent),n=D.d.length,plot=f.querySelector('.pg-plot'),tip=f.querySelector('.pg-tip');
+const cum=D.s.map(a=>{let t=0;return a.map(v=>t+=v)}),S={cum:[...f.querySelectorAll('.pg-cum')],day:[...f.querySelectorAll('.pg-day')]};
+let mode='cum',cur=n-1;
+const act=m=>S[m].find(s=>s.getClientRects().length)||S[m][0],geo=s=>s._g||(s._g=JSON.parse(s.dataset.g));
+const pick=(g,x)=>Math.max(0,Math.min(n-1,Math.round((x-g.L)/g.pw*(n-1))));
 const fmt=s=>new Date(s+'T12:00:00').toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'});
-function show(i){cur=i;const s=svg[mode],x=X(i),xh=s.querySelector('.xh');xh.setAttribute('x1',x);xh.setAttribute('x2',x);s.classList.add('hov');
+function show(i){cur=i;const s=act(mode),g=geo(s),x=g.L+g.pw*i/Math.max(1,n-1),xh=s.querySelector('.xh');xh.setAttribute('x1',x);xh.setAttribute('x2',x);s.classList.add('hov');
  const v=D.s.map((a,k)=>mode==='cum'?cum[k][i]:a[i]),t=v.reduce((a,b)=>a+b,0);
  if(mode==='cum'){const d=s.querySelector('.xdot');d.setAttribute('cx',x);d.setAttribute('cy',g.T+g.ph*(1-t/g.ymax))}
  else s.querySelectorAll('.bar').forEach(b=>b.classList.toggle('on',+b.dataset.i===i));
  tip.innerHTML='<b>'+fmt(D.d[i])+'</b>'+v.map((x,k)=>[x,k]).reverse().map(([x,k])=>'<span><i class="pg-sw '+D.cls[k]+'"></i>'+D.lab[k]+'<em>'+x+'</em></span>').join('')
   +'<span class="t">'+(mode==='cum'?'Solved so far':'Solved that day')+'<em>'+t+'</em></span>'+(mode==='cum'?'<span class="k"><i class="pg-sw tkl"></i>Taken on so far<em>'+D.tk[i]+'</em></span>':'');
  tip.hidden=false;const w=s.getBoundingClientRect().width,px=x/g.W*w;
- tip.style.left=(px>w*.55?px-tip.offsetWidth-14:px+14)+'px'}
-function hide(){svg[mode].classList.remove('hov');tip.hidden=true;svg.day.querySelectorAll('.bar.on').forEach(b=>b.classList.remove('on'))}
-plot.addEventListener('pointermove',e=>{const r=svg[mode].getBoundingClientRect(),sx=(e.clientX-r.left)*g.W/r.width;
- show(Math.max(0,Math.min(n-1,Math.round((sx-g.L)/g.pw*(n-1)))))});
+ tip.style.left=Math.max(0,Math.min(w-tip.offsetWidth,px>w*.55?px-tip.offsetWidth-14:px+14))+'px'}
+function hide(){S[mode].forEach(s=>s.classList.remove('hov'));tip.hidden=true;S.day.forEach(s=>s.querySelectorAll('.bar.on').forEach(b=>b.classList.remove('on')))}
+['pointermove','pointerdown'].forEach(t=>plot.addEventListener(t,e=>{const s=act(mode),g=geo(s),r=s.getBoundingClientRect();show(pick(g,(e.clientX-r.left)*g.W/r.width))}));
 plot.addEventListener('pointerleave',hide);plot.addEventListener('blur',hide);
 plot.addEventListener('keydown',e=>{const k={ArrowLeft:-1,ArrowRight:1}[e.key];
  if(k){show(Math.max(0,Math.min(n-1,cur+k)));e.preventDefault()}else if(e.key==='Home'||e.key==='End'){show(e.key==='Home'?0:n-1);e.preventDefault()}});
 f.querySelectorAll('.pg-mode button').forEach(b=>b.addEventListener('click',()=>{hide();mode=b.dataset.mode;
- f.querySelectorAll('.pg-mode button').forEach(o=>o.setAttribute('aria-pressed',o===b));svg.cum.toggleAttribute('hidden',mode!=='cum');svg.day.toggleAttribute('hidden',mode!=='day');
- if(f.classList.contains('go')){const r=svg[mode].querySelector('.reveal');r.style.animation='none';r.getBoundingClientRect();r.style.animation=''}}));
+ f.querySelectorAll('.pg-mode button').forEach(o=>o.setAttribute('aria-pressed',o===b));for(const m in S)S[m].forEach(s=>s.toggleAttribute('hidden',mode!==m));
+ if(f.classList.contains('go')){const r=act(mode).querySelector('.reveal');r.style.animation='none';r.getBoundingClientRect();r.style.animation=''}}));
 if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
 f.classList.add('pre');const io=new IntersectionObserver(es=>{if(!es.some(e=>e.isIntersecting))return;io.disconnect();f.classList.add('go');
  const t0=performance.now(),els=[...f.querySelectorAll('.pg-stat b')];
