@@ -558,7 +558,7 @@ var state={v:'try',q:'',sort:'prio',dir:-1,w:{imp:D.weights.importance,sol:D.wei
 var chips=[].slice.call(document.querySelectorAll('.chip[data-facet]')),clr=document.getElementById('reset'),qi=document.getElementById('q'),dds=[].slice.call(document.querySelectorAll('.cfilters details.dd'));
 dds.forEach(function(d){d.addEventListener('toggle',function(){if(!d.open)return;dds.forEach(function(o){if(o!==d)o.open=false;});
  var p=d.querySelector('.pop');p.style.left='';p.style.right='';if(p.getBoundingClientRect().right>document.documentElement.clientWidth-8){p.style.left='auto';p.style.right='0';}});});
-document.addEventListener('click',function(ev){if(!ev.target.closest('.cfilters details.dd'))dds.forEach(function(d){d.open=false;});});
+document.addEventListener('click',function(ev){if(!ev.target.closest('.cfilters details.dd,.fsheet'))dds.forEach(function(d){d.open=false;});});
 document.addEventListener('keydown',function(ev){if(ev.key==='Escape')dds.forEach(function(d){if(d.open){d.open=false;d.querySelector('summary').focus();}});});
 function prio(e){var w=state.w,t=w.imp+w.sol+w.eas||1;var v=(w.imp*e.i+w.sol*e.so+w.eas*(6-e.df))/t;return Math.round((v-1)/4*100)/10;}
 // the views: 'try' is what a desk can work (access online, or the key material at hand); the Python in_view() is the same test
@@ -572,7 +572,7 @@ function counts(){var c={},ks={};chips.forEach(function(b){c[b.dataset.facet+'|'
  Object.keys(ks).forEach(function(k){E.forEach(function(e){if(inView(e,state.v)&&match(e,k))vals(e,k).forEach(function(v){var x=k+'|'+v;if(x in c)c[x]++;});});});
  chips.forEach(function(b){var on=(state.f[b.dataset.facet]||[]).indexOf(b.dataset.val)>=0,n=c[b.dataset.facet+'|'+b.dataset.val];b.setAttribute('aria-pressed',on?'true':'false');b.querySelector('.n').textContent=n;b.classList.toggle('z',!n&&!on);});}
 function labels(){dds.forEach(function(d){var ks=(d.dataset.dd||'').split(' '),on=[];ks.forEach(function(k){(state.f[k]||[]).forEach(function(v){var b=d.querySelector('.chip[data-facet="'+k+'"][data-val="'+v+'"]');if(b)on.push(b.firstChild.textContent);});});
- d.querySelector('.dv').textContent=on.length?': '+(on.length>2?on.length+' chosen':on.join(', ')):'';d.classList.toggle('act',on.length>0);});}
+ d.querySelector('.dv').textContent=on.length?(on.length>2?on.length+' chosen':on.join(', ')):'';d.classList.toggle('act',on.length>0);});}
 function save(){var p=[];for(var k in state.f)if(state.f[k].length)p.push(k+'='+state.f[k].map(encodeURIComponent).join(','));if(state.q)p.push('q='+encodeURIComponent(state.q));if(p.length||state.v!=='try')p.unshift('v='+state.v);
  try{history.replaceState(null,'',p.length?'#'+p.join('&'):location.pathname);}catch(x){}}
 // a link with filters and no view (writeups.html sends #lang=french) opens on all open entries, as before the views
@@ -618,7 +618,6 @@ function render(keep){
   if(L.length>state.n)m=btn('n','Show '+Math.min(PAGE,L.length-state.n)+' more')+btn('all','Show all '+L.length)+'<span class="d">'+state.n+' of '+L.length+' shown</span>';}
  tb.innerHTML=h||'<tr><td colspan="8" class="none">Nothing matches. <button type="button" class="chip" data-act="clear">clear the filters</button></td></tr>';more.innerHTML=m;
  var msrt=document.getElementById('msort');if(msrt)msrt.value=state.sort;
- var ft=document.getElementById('ftoggle');if(ft)ft.textContent='Filters'+(nf?' ('+nf+')':'');
  document.getElementById('count').textContent=(L.length===base?base:L.length+' of '+base)+' ciphers';
  clr.hidden=!(nf||state.q);clr.textContent=nf?'clear '+nf+' filter'+(nf>1?'s':''):'clear search';
  counts();labels();if(!keep)save();
@@ -637,11 +636,10 @@ more.addEventListener('click',function(ev){var b=ev.target.closest('button');if(
 [].forEach.call(document.querySelectorAll('#cat th[data-sort]'),function(th){th.addEventListener('click',function(){var s=th.dataset.sort;if(state.sort===s)state.dir=-state.dir;else{state.sort=s;state.dir=(s==='year'||s==='title'||s==='cls'||s==='difficulty')?1:-1;}render();});});
 chips.forEach(function(b){b.addEventListener('click',function(){var k=b.dataset.facet,v=b.dataset.val,s=state.f[k]=state.f[k]||[],i=s.indexOf(v);if(i<0)s.push(v);else s.splice(i,1);if(!s.length)delete state.f[k];reset();render();});});
 var qt;qi.addEventListener('input',function(ev){clearTimeout(qt);var v=ev.target.value;qt=setTimeout(function(){state.q=v.trim().toLowerCase();reset();render();},140);});
-// phones: the filters fold behind one button, and a menu replaces the column headings as the sort control
-(function(){var b=document.createElement('button');b.type='button';b.id='ftoggle';b.className='chip';b.textContent='Filters';b.setAttribute('aria-expanded','false');
- b.addEventListener('click',function(){var on=cf.classList.toggle('fopen');b.setAttribute('aria-expanded',on?'true':'false');});qi.after(b);
+// phones: a menu replaces the column headings as the sort control (the Filters button and sheet are built in site.js)
+(function(){
  var s=document.createElement('select');s.id='msort';s.setAttribute('aria-label','Sort by');[['prio','Sort: priority'],['year','Sort: date'],['title','Sort: name'],['importance','Sort: importance'],['solvability','Sort: solvability'],['difficulty','Sort: difficulty']].forEach(function(o){var x=document.createElement('option');x.value=o[0];x.textContent=o[1];s.appendChild(x);});
- s.addEventListener('change',function(){state.sort=s.value;state.dir=(s.value==='year'||s.value==='title'||s.value==='difficulty')?1:-1;render();});b.after(s);})();
+ s.addEventListener('change',function(){state.sort=s.value;state.dir=(s.value==='year'||s.value==='title'||s.value==='difficulty')?1:-1;render();});qi.after(s);})();
 [['w_imp','imp'],['w_sol','sol'],['w_eas','eas']].forEach(function(p){document.getElementById(p[0]).addEventListener('input',function(ev){state.w[p[1]]=ev.target.value/100;render();});});
 clr.addEventListener('click',function(){state.q='';state.f={};qi.value='';reset();render();});
 document.getElementById('wreset').addEventListener('click',function(){state.sort='prio';state.dir=-1;state.w={imp:D.weights.importance,sol:D.weights.solvability,eas:D.weights.ease};document.getElementById('w_imp').value=state.w.imp*100;document.getElementById('w_sol').value=state.w.sol*100;document.getElementById('w_eas').value=state.w.eas*100;render();});

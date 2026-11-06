@@ -1247,6 +1247,7 @@ body.pg-catalogue .steps b{display:inline-grid;place-items:center;width:1.5rem;h
 .cfilters details.dd{position:relative;margin:0}
 .cfilters details.dd > summary{list-style:none;cursor:pointer;padding:.32rem .75rem;border:1px solid var(--rule);border-radius:999px;background:var(--bg);color:var(--ink2);font-family:var(--ui);font-size:.85rem;letter-spacing:0;white-space:nowrap;max-width:15rem;overflow:hidden;text-overflow:ellipsis}
 .cfilters details.dd > summary::-webkit-details-marker{display:none}
+.cfilters details.dd > summary .dv:not(:empty)::before{content:": "}
 .cfilters details.dd > summary::after{content:" \25BE";color:var(--muted)}
 .cfilters details.dd > summary:hover,.cfilters details.dd[open] > summary{border-color:var(--gold)}
 .cfilters details.dd.act > summary{background:var(--gold);color:var(--gold-ink);border-color:var(--gold)}
@@ -2059,17 +2060,7 @@ details.cite{margin:2.4rem 0 0;padding-top:.6rem;border-top:1px solid var(--rule
   body.pg-catalogue .archnote:not(.x){display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}
   body.pg-catalogue .cfilters{position:sticky;top:3.25rem;z-index:30;margin:1rem -1.2rem .8rem;padding:.55rem 1.2rem;background:var(--bg);border-bottom:1px solid var(--rule)}
   body.pg-catalogue .cfilters{gap:.35rem}
-  body.pg-catalogue .cfilters input[type=search]{flex:1 1 100%;max-width:none;padding:.28rem .8rem}
-  body.pg-catalogue .cfilters .count{margin-left:auto;font-size:.75rem;white-space:nowrap}
-  body.pg-catalogue .cfilters:not(.fopen) #reset{display:none}
-  body.pg-catalogue .cfilters details.dd{display:none}
-  body.pg-catalogue .cfilters.fopen details.dd{display:block}
-  body.pg-catalogue #ftoggle{display:inline-block;margin:0;padding:.28rem .8rem;border:1px solid var(--rule);border-radius:999px;background:var(--bg);color:var(--ink2);font-size:.85rem;letter-spacing:0}
-  body.pg-catalogue .cfilters.fopen #ftoggle{border-color:var(--gold);color:var(--gold2)}
   body.pg-catalogue #msort{display:inline-block;max-width:8rem;padding:.28rem .4rem;border:1px solid var(--rule);border-radius:999px;background:var(--bg);color:var(--ink2);font:inherit;font-size:.85rem}
-  body.pg-catalogue .cfilters .dd .pop{position:fixed;left:1rem !important;right:1rem !important;top:auto;width:auto;max-width:none;max-height:60vh;overflow:auto}
-  body.pg-catalogue .cfilters .flabel{flex:0 0 100%}
-  body.pg-catalogue .cfilters .facet{flex-wrap:wrap}
   body.pg-catalogue .tw{overflow:visible;margin:0;border:0;border-radius:0;background:none;width:auto;left:auto;transform:none}
   body.pg-catalogue table.cat{display:block;min-width:0;width:auto;font-size:.92rem}
   body.pg-catalogue table.cat colgroup,body.pg-catalogue table.cat thead{display:none}
@@ -2225,3 +2216,57 @@ body.pg-catalogue details.every b{font-family:var(--mono);font-weight:normal;col
 .prog.go .reveal{clip-path:none;animation:pgreveal 1.8s cubic-bezier(.3,.7,.2,1) both}
 @keyframes pgreveal{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
 @media (prefers-reduced-motion: reduce){.prog.go .reveal{animation:none}}
+
+/* the filter bars on a phone (catalogue, write-ups): the dropdowns fold into one full-screen Filters sheet, one section each (site.js).
+   Wider than a phone the wrapper is display:contents and the bar is as it was. */
+.fsheet,.fs-body{display:contents}
+.fsheet > .fs-hd,.fsheet > .fs-ft{display:none}
+html.fs-lock{overflow:hidden}
+@media (max-width:760px){
+  .cfilters{gap:.4rem}
+  .cfilters input[type=search]{flex:1 1 100%;max-width:none;min-height:2.6rem;padding:.3rem .95rem;font-size:1rem}
+  .cfilters #ftoggle{display:inline-flex;align-items:center;order:1;margin:0;min-height:2.6rem;padding:.3rem 1rem;border:1px solid var(--rule);border-radius:999px;background:var(--bg);color:var(--ink2);font-family:var(--ui);font-size:.92rem;letter-spacing:0}
+  .cfilters #ftoggle.on{background:var(--gold);color:var(--gold-ink);border-color:var(--gold)}
+  .cfilters #msort{order:2;min-height:2.6rem;max-width:9rem;font-size:.92rem}
+  .cfilters .count{order:3;margin-left:auto;font-size:.78rem;white-space:nowrap}
+  .cfilters #reset,.cfilters #wreset{display:none}
+  .cfilters .fsheet{display:none}
+  body .cfilters.fopen{z-index:120}
+  .cfilters.fopen .fsheet{display:flex;flex-direction:column;position:fixed;inset:0;z-index:1;background:var(--bg)}
+  .cfilters .fsheet > .fs-hd{display:flex;align-items:center;gap:.6rem;flex:none;padding:.7rem 1rem;border-bottom:1px solid var(--rule)}
+  .fs-hd b{margin-right:auto;font-family:var(--display);font-weight:500;font-size:1.25rem;color:var(--head)}
+  .fs-hd button{min-height:2.6rem;padding:.3rem 1rem;border:1px solid var(--rule);border-radius:999px;background:var(--bg);color:var(--ink2);font-family:var(--ui);font-size:.9rem;letter-spacing:0;cursor:pointer}
+  .fs-hd .fs-x{width:2.6rem;padding:0;font-size:1.5rem;line-height:1}
+  .cfilters .fsheet > .fs-body{display:block;flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+  .cfilters .fsheet > .fs-ft{display:block;flex:none;padding:.7rem 1rem max(.7rem,env(safe-area-inset-bottom));border-top:1px solid var(--rule);background:var(--bg)}
+  .fs-go{width:100%;min-height:3rem;border:0;border-radius:999px;background:var(--gold);color:var(--gold-ink);font-family:var(--ui);font-size:1rem;font-weight:600;letter-spacing:0;cursor:pointer}
+  .fsheet details.dd{position:static;margin:0;border-bottom:1px solid var(--rule)}
+  .fsheet details.dd > summary{display:flex;align-items:center;gap:.6rem;max-width:none;min-height:3.2rem;padding:.6rem 1rem;border:0;border-radius:0;background:none;color:var(--head);font-size:1rem;white-space:normal;overflow:visible}
+  .fsheet details.dd.act > summary{background:none;color:var(--head)}
+  .fsheet details.dd > summary .dv{flex:1;min-width:0;text-align:right;color:var(--gold2);font-size:.86rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .fsheet details.dd > summary .dv:not(:empty)::before{content:none}
+  .fsheet details.dd[open] > summary::after{display:inline-block;transform:rotate(180deg)}
+  .fsheet .dd .pop{position:static;left:auto !important;right:auto !important;width:auto;max-width:none;max-height:none;overflow:visible;border:0;border-radius:0;box-shadow:none;background:none;padding:.1rem 1rem 1rem}
+  .fsheet .facet{flex-direction:column;align-items:stretch;gap:.4rem;margin:.6rem 0}
+  .fsheet .flabel{flex:none}
+  .fsheet .facet .opts{gap:.45rem}
+  .fsheet .chip{min-height:2.6rem;padding:.3rem .95rem;font-size:.95rem}
+  .fsheet .weights label{display:flex;width:100%;margin:0 0 .4rem;gap:.7rem}
+  .fsheet .weights input[type=range]{flex:1;width:auto;min-width:0}
+}
+/* the other filters on a phone: thumb-sized targets */
+@media (max-width:760px){
+  body.pg-further .qbar .only{min-height:2.75rem}
+  body.pg-further .qbar .only input{width:1.3rem;height:1.3rem}
+  body.pg-further .qbar #msort{min-height:2.75rem}
+  body.pg-further .qbar input[type=search]{min-height:2.75rem;font-size:1rem}
+  body.pg-archives .linky{min-height:2.5rem}
+  body.pg-archives .qbar input[type=search]{flex:1 1 100%;max-width:none;min-height:2.75rem;font-size:1rem}
+  body.pg-archives .kf{display:flex;flex:1 1 100%;flex-wrap:nowrap;gap:.4rem;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:0 16px;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 1.6rem),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 1.6rem),transparent)}
+  body.pg-archives .kf::-webkit-scrollbar{display:none}
+  body.pg-archives .kf button{flex:none;min-height:2.5rem;padding:.3rem .95rem;white-space:nowrap}
+  body.pg-archives #openall,body.pg-archives #closeall{min-height:2.5rem;padding:.3rem .5rem}
+  body.pg-highlights .hl-chip{min-height:2.5rem}
+  body.pg-keys .kw-chip{min-height:2.5rem;padding:.3rem .9rem}
+  .sb-legend .lg{min-height:2.5rem}
+}
