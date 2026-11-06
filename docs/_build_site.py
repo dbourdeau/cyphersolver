@@ -540,6 +540,11 @@ PAGES = [
          blurb='A short cipher letter of Spain&rsquo;s ambassador at Genoa (AGS Estado leg. 3598 no. 44) whose plain original is not online. Brice Dudout learned the 1643 table on other letters of the bundle and tested it on a held-out pair (0.881 of characters, 0.834 of words; a first test fell below the criterion and is reported), then read 135 of 137 words. The Grand Duke of Tuscany answers the request for troops by referring it to his resident in Madrid, which Eraso calls a way of gaining time. Contributed by Brice Dudout.',
          quote='&ldquo;gozar&aacute; del beneficio del tiempo&rdquo;',
          rights='Archivo General de Simancas (PARES); text and translation: Brice Dudout, CC BY 4.0'),
+    dict(slug='piccolomini1646', label='Two letters to Piccolomini c. 1646', year='c. 1646', y=1646.9, place='unknown &rarr; Ottavio Piccolomini', st='attempted', stt='decoded, not read',
+         title='Two Italian cipher letters to Ottavio Piccolomini, c. 1646',
+         blurb='Two letters in a cipher whose vowels are odd digits, never read: a student thesis of 2017 deciphered their neighbour and printed the key. WAINUT applied it unchanged to the other two, from photographs of a microfilm-reader screen: about 65% of the words decode verbatim, but most sentences have holes, so neither letter counts as read.',
+         quote='&ldquo;l&rsquo;arciduca mio signore&rdquo;, in a half-read passage',
+         rights='Letters: SOA Zamrsk, Rodinny archiv Piccolomin&#367; (inv. 24874, 24876), from the appendix of V. Vlnas, BA thesis, Hradec Kr&aacute;lov&eacute; 2017; transcription and decoding by WAINUT'),
     dict(slug='albornoz1648', label='Philip IV to Albornoz 1648', year='1648', y=1648.56, place='Madrid &rarr; Rome (Cardinal Albornoz)', st='solved', stt='read',
          title='Philip IV to Cardinal Albornoz, Madrid, 24 July 1648',
          blurb='Two copies of a royal letter to the ambassador in Rome in a syllabic cipher, with no decipherment filed with them (AHNOB Osuna, OSUNA,CT.2,D.32). Brice Dudout found the same cipher in a 1649 chapter of Luis de Haro enciphered for Albornoz whose plain copy was kept, rebuilt the key from it and tested it on held-out lines; the royal cipher of 1644&ndash;45, rebuilt from two other letters of the fonds, does not fit. 353 of the 359 groups give their value. The King insists that the nuncio at Madrid, Giulio Rospigliosi, the future Clement IX, be kept at his post. Contributed by Brice Dudout.',
@@ -4414,6 +4419,7 @@ IMAGES['johnston1863'] = ('johnston1863_lead.jpg', 'The cipher lines of the tele
 IMAGES['milroy'] = None
 IMAGES['auckland1918'] = None
 IMAGES['deboli1788'] = None
+IMAGES['piccolomini1646'] = None
 IMAGES['mazzinghi1478'] = None
 IMAGES['majesty1624'] = None
 IMAGES['deboli1787'] = None
