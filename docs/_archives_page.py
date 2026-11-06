@@ -109,6 +109,48 @@ def attr(t):
     return html.escape(str(t or ''), quote=True)
 
 
+# a few institutions the registry does not hold yet: the town gives the country
+CITY_COUNTRY = {'Barcelona': 'Spain', 'Hanover': 'Germany', 'Heraklion': 'Greece', 'Bratislava': 'Slovakia', 'Bremen': 'Germany'}
+
+
+def country_of(r, by_id):
+    """The country of the archive that holds a request: the holding repository's of its catalogue entry, else of the
+    institution named in the archive and shelfmark text, else of its town; '' when none of them says."""
+    import _repositories as RP
+    e = by_id.get(r.get('catalogue'))
+    rid = RP.of(e) if e else None
+    if not rid:
+        text = f'{r["archive"]} | {r.get("shelfmark") or ""}'
+        rid = RP._best(text, False) or RP._best(text, True)
+    c = (RP.info(rid) or {}).get('country') if rid else ''
+    return c or CITY_COUNTRY.get(r.get('city') or '', '')
+
+
+def century_of(r):
+    y = r.get('year')
+    return f'{y // 100 * 100}s' if isinstance(y, int) and y else ''
+
+
+def facet(name, label, vals):
+    """One group of filter chips; the page script fills in each chip's count."""
+    opts = ''.join(f'<button type="button" class="chip" data-facet="{name}" data-val="{attr(k)}" aria-pressed="false">{esc(l)}<span class="n"></span></button>'
+                   for k, l in vals)
+    return f'<div class="facet" role="group" aria-label="{label}"><span class="flabel">{label}</span><span class="opts">{opts}</span></div>'
+
+
+def dropdown(label, body, name):
+    return (f'<details class="dd" data-dd="{name}"><summary><span class="dl">{label}</span><span class="dv"></span></summary>'
+            f'<div class="pop">{body}</div></details>')
+
+
+def by_count(values, last=()):
+    """The distinct non-empty values, commonest first, any in last kept at the end."""
+    n = {}
+    for v in values:
+        if v: n[v] = n.get(v, 0) + 1
+    return [(v, v) for v in sorted(n, key=lambda v: (v in last, -n[v], v))]
+
+
 def load():
     return json.loads(LEDGER.read_text(encoding='utf-8'))['requests'] if LEDGER.is_file() else []
 
@@ -165,9 +207,11 @@ def row(r, bypage):
     src = 'cat' if is_cat(r) else 'gap'
     flag = '<span class="gapflag" title="A reading is already under way; this gap is what stops it">reading stalled here</span>' if src == 'gap' else ''
     text = ' '.join(x for x in (r['id'], r.get('target') or '', str(r.get('catalogue') or ''), r['archive'], r.get('city', ''),
-                                r.get('shelfmark', ''), r['need'], r.get('why', ''), r.get('region') or '', KIND[k][0])).lower()
+                                r.get('shelfmark', ''), r['need'], r.get('why', ''), r.get('region') or '', r.get('_co') or '', KIND[k][0])).lower()
     cid = f' id="c{r["catalogue"]}"' if is_cat(r) else ''
-    return (f'<li class="rq"{cid} data-kind="{k}" data-src="{src}" data-status="{r["status"]}" data-pl="{attr(r.get("_pl"))}" data-q="{attr(text)}">'
+    return (f'<li class="rq"{cid} data-kind="{k}" data-src="{src}" data-status="{r["status"]}" data-pl="{attr(r.get("_pl"))}" '
+            f'data-co="{attr(r.get("_co"))}" data-rg="{attr(r.get("region"))}" data-ce="{attr(century_of(r))}" data-cl="{attr(r.get("cls"))}" '
+            f'data-pri="{pri(r)}" data-q="{attr(text)}">'
             f'<div class="hd"><span class="id">{r["id"]}</span><span class="kd kd-{k}">{KIND[k][0]}</span>{target_link(r, bypage)}{flag}</div>'
             f'<p class="nd">{esc(r["need"])}</p>{shelf}{why}'
             f'<div class="ft">{act}{who(r)}{issue}</div></li>')
@@ -189,12 +233,95 @@ def mix(rs):
                    for k in KIND if (m := sum(r['kind'] == k for r in rs)))
 
 
+# the page script: facets (kind, country, status, why, century, class, region), search, the town picked on the map, the order of
+# the archives, state in the hash (archives.html#country=Austria&kind=visit&q=cipher). The Filters button and sheet on a phone are
+# built in site.js from this bar's dropdowns.
+ARCH_JS = r'''
+(function(){
+document.body.classList.remove('nojs');
+var rows=[].slice.call(document.querySelectorAll('li.rq')).filter(function(r){return !r.closest('.done');}),
+ wrap=document.getElementById('archs'),secs=[].slice.call(wrap.querySelectorAll('details.arch')),
+ q=document.getElementById('q'),cnt=document.getElementById('count'),rst=document.getElementById('reset'),srt=document.getElementById('asort'),
+ chips=[].slice.call(document.querySelectorAll('.cfilters .chip[data-facet]')),dds=[].slice.call(document.querySelectorAll('.cfilters details.dd')),
+ cards=[].slice.call(document.querySelectorAll('.kc')),chip=document.getElementById('plchip'),none=document.getElementById('anone'),
+ D={kind:'kind',src:'src',status:'status',country:'co',region:'rg',century:'ce',cls:'cl'},
+ F={},pl=null,sort='most',t=rows.length,OPEN=__OPEN__;
+dds.forEach(function(d){d.addEventListener('toggle',function(){if(!d.open)return;dds.forEach(function(o){if(o!==d)o.open=false;});
+ var p=d.querySelector('.pop');p.style.left='';p.style.right='';if(p.getBoundingClientRect().right>document.documentElement.clientWidth-8){p.style.left='auto';p.style.right='0';}});});
+document.addEventListener('click',function(ev){if(!ev.target.closest('.cfilters details.dd,.fsheet'))dds.forEach(function(d){d.open=false;});});
+document.addEventListener('keydown',function(ev){if(ev.key==='Escape')dds.forEach(function(d){if(d.open){d.open=false;d.querySelector('summary').focus();}});});
+function fhit(r,k){var s=F[k];return !s||!s.length||s.indexOf(r.dataset[D[k]])>=0;}
+// a row passes the search and every facet but skip; the town picked on the map is separate (the map reads counts() without it)
+function others(r,s,skip){if(s&&r.dataset.q.indexOf(s)<0)return false;for(var k in F)if(k!==skip&&!fhit(r,k))return false;return true;}
+function nfil(){var n=0;for(var k in F)n+=F[k].length;return n;}
+function save(){var p=[];for(var k in F)if(F[k].length)p.push(k+'='+F[k].map(encodeURIComponent).join(','));
+ if(pl!==null)p.push('place='+encodeURIComponent(pl));if(q.value.trim())p.push('q='+encodeURIComponent(q.value.trim()));if(sort!=='most')p.push('sort='+sort);
+ try{history.replaceState(null,'',p.length?'#'+p.join('&'):location.pathname+location.search);}catch(x){}}
+function load(){var h=location.hash.slice(1);if(h.indexOf('=')<0)return;
+ h.split('&').forEach(function(kv){var i=kv.indexOf('=');if(i<1)return;var k=kv.slice(0,i),v=decodeURIComponent(kv.slice(i+1));
+  if(k==='q')q.value=v;else if(k==='place')pl=v;else if(k==='sort'){if(srt.querySelector('option[value="'+v+'"]')){sort=v;srt.value=v;}}else if(D[k]&&v)F[k]=v.split(',').filter(Boolean);});}
+function labels(){dds.forEach(function(d){var on=[];(d.dataset.dd||'').split(' ').forEach(function(k){(F[k]||[]).forEach(function(v){var b=[].filter.call(d.querySelectorAll('.chip[data-facet="'+k+'"]'),function(x){return x.dataset.val===v;})[0];on.push(b?b.firstChild.textContent:v);});});
+ d.querySelector('.dv').textContent=on.length?(on.length>2?on.length+' chosen':on.join(', ')):'';d.classList.toggle('act',on.length>0);});}
+function order(vis,best){var by={most:function(a,b){return vis(b)-vis(a);},best:function(a,b){return best(b)-best(a)||vis(b)-vis(a);},az:function(){return 0;}}[sort];
+ return secs.slice().sort(function(a,b){var la=+!!a.dataset.last,lb=+!!b.dataset.last;return la-lb||by(a,b)||(a.dataset.name<b.dataset.name?-1:1);});}
+function render(nosave){
+ var s=q.value.trim().toLowerCase(),n=0,nf=nfil(),f=!!(s||nf||pl!==null);
+ rows.forEach(function(r){var ok=others(r,s)&&(pl===null||r.dataset.pl===pl);r.hidden=!ok;if(ok)n++;});
+ var c={},ks={};chips.forEach(function(b){c[b.dataset.facet+'|'+b.dataset.val]=0;ks[b.dataset.facet]=1;});
+ Object.keys(ks).forEach(function(k){rows.forEach(function(r){if(others(r,s,k)&&(pl===null||r.dataset.pl===pl)){var x=k+'|'+r.dataset[D[k]];if(x in c)c[x]++;}});});
+ chips.forEach(function(b){var k=b.dataset.facet,on=(F[k]||[]).indexOf(b.dataset.val)>=0,x=c[k+'|'+b.dataset.val];b.setAttribute('aria-pressed',on?'true':'false');b.querySelector('.n').textContent=x;b.classList.toggle('z',!x&&!on);});
+ var vis={},best={};secs.forEach(function(x){var l=x.querySelectorAll('li.rq:not([hidden])');vis[x.id]=l.length;best[x.id]=Math.max.apply(null,[0].concat([].map.call(l,function(r){return +r.dataset.pri;})));
+  x.hidden=!l.length;x.querySelector('summary .n').textContent=l.length;});
+ var o=order(function(x){return vis[x.id];},function(x){return best[x.id];}),shown=0;
+ o.forEach(function(x){wrap.appendChild(x);if(!x.hidden){x.open=f?true:shown<OPEN;shown++;}});
+ cnt.textContent=f?n+' of '+t+' requests':t+' requests';none.hidden=n>0;
+ chip.hidden=pl===null;chip.firstChild.textContent=pl===''?'not on the map':pl||'';
+ rst.hidden=!(nf||s||pl!==null);rst.textContent=nf+(s?1:0)+(pl!==null?1:0)>1?'clear filters':nf?'clear 1 filter':pl!==null?'clear the place':'clear search';
+ cards.forEach(function(b){b.setAttribute('aria-pressed',(F.kind||[]).indexOf(b.dataset.k)>=0?'true':'false');});
+ labels();if(!nosave)save();
+ if(window.archList.onchange)window.archList.onchange();
+}
+// what the map reads: the requests per town under the other filters, and the town picked
+window.archList={place:function(){return pl;},
+ counts:function(){var s=q.value.trim().toLowerCase(),o={};rows.forEach(function(r){if(others(r,s))o[r.dataset.pl]=(o[r.dataset.pl]||0)+1;});return o;},
+ archives:function(){return secs.filter(function(x){return !x.hidden;}).map(function(x){return {id:x.id,name:x.querySelector('h3').textContent,n:x.querySelectorAll('li.rq:not([hidden])').length};});},
+ pick:function(v){pl=v;render();},onchange:null};
+function clearAll(){F={};pl=null;q.value='';render();}
+chip.querySelector('button').addEventListener('click',function(){pl=null;render();});
+chips.forEach(function(b){b.addEventListener('click',function(){var k=b.dataset.facet,v=b.dataset.val,a=F[k]=F[k]||[],i=a.indexOf(v);if(i<0)a.push(v);else a.splice(i,1);if(!a.length)delete F[k];render();});});
+cards.forEach(function(b){b.addEventListener('click',function(){if((F.kind||[]).length===1&&F.kind[0]===b.dataset.k)delete F.kind;else F.kind=[b.dataset.k];render();document.getElementById('list').scrollIntoView({block:'start'});});});
+q.addEventListener('input',function(){render();});
+srt.addEventListener('change',function(){sort=srt.value;render();});
+rst.addEventListener('click',clearAll);document.getElementById('aclear').addEventListener('click',clearAll);
+document.getElementById('openall').addEventListener('click',function(){secs.forEach(function(x){if(!x.hidden)x.open=true;});});
+document.getElementById('closeall').addEventListener('click',function(){secs.forEach(function(x){x.open=false;});});
+[].forEach.call(document.querySelectorAll('details.toc a'),function(a){a.addEventListener('click',function(){var d=document.querySelector(a.getAttribute('href'));if(d){d.hidden=false;d.open=true;}});});
+load();render(true);
+function hit(){
+ var hm=/^#(c\d+)$/.exec(location.hash),he=hm&&document.getElementById(hm[1]);if(!he)return;
+ if(he.hidden){F={};pl=null;q.value='';render(true);}
+ var hd=he.closest('details.arch');if(hd){hd.hidden=false;hd.open=true;}
+ [].forEach.call(document.querySelectorAll('li.rq.hit'),function(x){x.classList.remove('hit');});he.classList.add('hit');he.scrollIntoView();
+}
+hit();addEventListener('hashchange',function(){if(/^#c\d+$/.test(location.hash))hit();});
+})();
+'''.replace('__OPEN__', str(OPEN_FIRST))
+
+
 def build_html(pages):
     reqs = load()
     bypage = pages_by_folder(pages)
     live = [r for r in reqs if r['status'] in LIVE]
     names, find = gazetteer()
     for r in live: r['_pl'] = place_of(r, find)
+    import _catalogue_page as C
+    by_id = {e['id']: e for e in C.DATA['entries']}
+    for r in live: r['_co'] = country_of(r, by_id) or 'unknown'
+    countries = [(v, 'not known (libraries, unplaced)' if v == 'unknown' else l) for v, l in by_count((r['_co'] for r in live), last=('unknown',))]
+    regions = by_count((r.get('region') for r in live), last=('Other',))
+    centuries = sorted({(c, c) for c in map(century_of, live) if c})
+    statuses = [(k, lab) for k, lab in (('open', 'open: nobody has taken it'), ('claimed', 'taken by a volunteer'), ('requested', 'asked the archive'))
+                if any(r['status'] == k for r in live)]
     towns = {p: names[p] for p in sorted({r['_pl'] for r in live} - {''})}
     unplaced = sum(not r['_pl'] for r in live)
     n = {s: sum(r['status'] == s for r in reqs) for s in STATUS}
@@ -205,7 +332,7 @@ def build_html(pages):
     places = len({a for (a, _), _ in G if a not in ('A library or database', 'unknown')})
     toc = ''.join(f'<li><a href="#{gid(a)}">{esc(a)}</a>{f" <span>{esc(c)}</span>" if c else ""} <b>{len(rs)}</b></li>' for (a, c), rs in G)
     secs = ''.join(
-        f'<details class="arch" id="{gid(a)}"{" open" if i < OPEN_FIRST else ""}><summary>'
+        f'<details class="arch" id="{gid(a)}"{" open" if i < OPEN_FIRST else ""}{" data-last=1" if a in ("A library or database", "unknown") else ""} data-name="{attr(a)}"><summary>'
         f'<h3>{esc("Archive not yet identified" if a == "unknown" else a)}{f" <span class=city>{esc(c)}</span>" if c else ""}</h3>'
         f'<span class="mix">{mix(rs)}</span><span class="n">{len(rs)}</span></summary>'
         f'<ul class="rqs">{"".join(row(r, bypage) for r in sorted(rs, key=lambda r: (r["status"] != "open", -pri(r), r["id"])))}</ul></details>'
@@ -254,16 +381,21 @@ def build_html(pages):
 </div>
 <script type="application/json" id="amapdata">{json.dumps({"towns": towns}, ensure_ascii=False)}</script>
 
-<div class="qbar jsonly" id="list">
+<div class="cfilters archbar jsonly" id="list" role="search">
   <input type="search" id="q" placeholder="Search: archive, city, shelfmark, cipher, region…" aria-label="Search the requests">
-  <span class="kf" role="group" aria-label="Kind"><button type="button" data-k="" aria-pressed="true">all kinds</button><button type="button" data-k="visit" aria-pressed="false">reading room</button><button type="button" data-k="order" aria-pressed="false">order</button><button type="button" data-k="library" aria-pressed="false">library</button></span>
-  <span class="kf" role="group" aria-label="Source"><button type="button" data-s="" aria-pressed="true">everything</button><button type="button" data-s="gap" aria-pressed="false">readings stalled ({ngap})</button><button type="button" data-s="cat" aria-pressed="false">catalogue items ({ncat})</button></span>
+  {dropdown('Kind', facet('kind', 'Kind of request', [(k, lab) for k, (lab, _) in KIND.items()]), 'kind')}
+  {dropdown('Country', facet('country', 'Country of the archive', countries), 'country')}
+  {dropdown('Status', facet('status', 'Status', statuses) + facet('src', 'Why it is here', [('gap', 'a reading is stalled here'), ('cat', 'catalogue item, not online')]), 'status src')}
+  {dropdown('Cipher', facet('century', 'Century', centuries) + facet('cls', 'Class', [('A', 'A · sibling deciphered'), ('B', 'B · partial key known'), ('C', 'C · no key')]) + facet('region', 'Region', regions), 'century cls region')}
+  <label class="asort"><span>Order</span><select id="asort" aria-label="Order the archives"><option value="most">most requests</option><option value="best">best targets first</option><option value="az">A&ndash;Z</option></select></label>
   <span class="plchip" id="plchip" hidden><span></span><button type="button" aria-label="Show every place">&times;</button></span>
   <span class="count" id="count" aria-live="polite"></span>
+  <button type="button" class="chip clear" id="reset" hidden>clear filters</button>
   <span class="fold"><button type="button" id="openall">expand all</button><button type="button" id="closeall">collapse all</button></span>
 </div>
 <details class="toc"><summary>Jump to an archive ({len(G)})</summary><ul>{toc}</ul></details>
-{secs}
+<div id="archs">{secs}</div>
+<p class="none" id="anone" hidden>No request matches these filters. <button type="button" class="chip" id="aclear">clear the filters</button></p>
 
 <h2 id="done">Done</h2>
 {done_html}
@@ -275,47 +407,7 @@ def build_html(pages):
 </main>
 <!-- site:footer -->
 <script>
-(function(){{
-document.body.classList.remove('nojs');
-var rows=[].slice.call(document.querySelectorAll('li.rq')).filter(function(r){{return !r.closest('.done');}}),
- secs=[].slice.call(document.querySelectorAll('details.arch')),q=document.getElementById('q'),c=document.getElementById('count'),
- kb=[].slice.call(document.querySelectorAll('.kf button[data-k]')),sb=[].slice.call(document.querySelectorAll('.kf button[data-s]')),
- cards=[].slice.call(document.querySelectorAll('.kc')),k='',sr='',pl=null,t=rows.length,keep=secs.map(function(x){{return x.open;}}),
- chip=document.getElementById('plchip');
-function press(list,a,v){{list.forEach(function(x){{x.setAttribute('aria-pressed',x.dataset[a]===v?'true':'false');}});}}
-// pl: the town picked on the map (null: every place; '': the requests not on the map)
-function others(r,s){{return (!s||r.dataset.q.indexOf(s)>=0)&&(!k||r.dataset.kind===k)&&(!sr||r.dataset.src===sr);}}
-function render(){{
- var s=q.value.trim().toLowerCase(),n=0,f=!!(s||k||sr||pl!==null);
- rows.forEach(function(r){{var ok=others(r,s)&&(pl===null||r.dataset.pl===pl);r.hidden=!ok;if(ok)n++;}});
- secs.forEach(function(x,i){{var any=!!x.querySelector('li.rq:not([hidden])');x.hidden=!any;x.open=f?any:keep[i];}});
- c.textContent=f?n+' of '+t+' requests':t+' requests';
- chip.hidden=pl===null;chip.firstChild.textContent=pl===''?'not on the map':pl||'';
- if(window.archList.onchange)window.archList.onchange();
-}}
-// what the map reads: the requests per town under the other filters, and the town picked
-window.archList={{place:function(){{return pl;}},
- counts:function(){{var s=q.value.trim().toLowerCase(),o={{}};rows.forEach(function(r){{if(others(r,s))o[r.dataset.pl]=(o[r.dataset.pl]||0)+1;}});return o;}},
- archives:function(){{return secs.filter(function(x){{return !x.hidden;}}).map(function(x){{return {{id:x.id,name:x.querySelector('h3').textContent,n:x.querySelectorAll('li.rq:not([hidden])').length}};}});}},
- pick:function(v){{pl=v;render();}},onchange:null}};
-chip.querySelector('button').addEventListener('click',function(){{pl=null;render();}});
-function setK(v){{k=v;press(kb,'k',v);press(cards,'k',v);render();}}
-kb.forEach(function(b){{b.addEventListener('click',function(){{setK(b.dataset.k);}});}});
-cards.forEach(function(b){{b.addEventListener('click',function(){{setK(k===b.dataset.k?'':b.dataset.k);}});}});
-sb.forEach(function(b){{b.addEventListener('click',function(){{sr=b.dataset.s;press(sb,'s',sr);render();}});}});
-q.addEventListener('input',render);
-document.getElementById('openall').addEventListener('click',function(){{secs.forEach(function(x){{if(!x.hidden)x.open=true;}});}});
-document.getElementById('closeall').addEventListener('click',function(){{secs.forEach(function(x){{x.open=false;}});}});
-[].forEach.call(document.querySelectorAll('details.toc a'),function(a){{a.addEventListener('click',function(){{var d=document.querySelector(a.getAttribute('href'));if(d){{d.hidden=false;d.open=true;}}}});}});
-render();
-function hit(){{
- var hm=/^#(c\\d+)$/.exec(location.hash),he=hm&&document.getElementById(hm[1]);if(!he)return;
- if(he.hidden){{q.value='';k='';sr='';pl=null;press(kb,'k','');press(cards,'k','');press(sb,'s','');render();}}
- var hd=he.closest('details.arch');if(hd){{hd.hidden=false;hd.open=true;}}
- [].forEach.call(document.querySelectorAll('li.rq.hit'),function(x){{x.classList.remove('hit');}});he.classList.add('hit');he.scrollIntoView();
-}}
-hit();addEventListener('hashchange',hit);
-}})();
+{ARCH_JS}
 </script>
 <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>

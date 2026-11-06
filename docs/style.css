@@ -1868,12 +1868,6 @@ body.pg-archives .kc[aria-pressed=true]{border-color:var(--gold);box-shadow:0 0 
 body.pg-archives .kc b{grid-area:n;font-family:var(--ui);font-size:1.7rem;line-height:1;color:var(--head)}
 body.pg-archives .kc .kd{grid-area:k;justify-self:start}
 body.pg-archives .kc small{grid-area:d;font-size:.84rem;line-height:1.35;color:var(--muted)}
-body.pg-archives .qbar{display:flex;flex-wrap:wrap;gap:.6rem 1rem;align-items:center;margin:1.2rem 0 .7rem}
-body.pg-archives .qbar input[type=search]{background:var(--bg);color:var(--ink);border:1px solid var(--rule);border-radius:6px;padding:.4rem .7rem;font:inherit;font-size:.95rem;min-width:0;flex:1 1 260px;max-width:360px}
-body.pg-archives .qbar .count{font-family:var(--ui);font-size:.85rem;color:var(--muted)}
-body.pg-archives .kf{display:inline-flex;flex-wrap:wrap;gap:.3rem}
-body.pg-archives .kf button{font-family:var(--ui);font-size:.82rem;background:var(--panel2);color:var(--ink2);border:1px solid var(--rule);border-radius:999px;padding:.2rem .7rem;cursor:pointer}
-body.pg-archives .kf button[aria-pressed=true]{background:var(--gold);color:var(--gold-ink);border-color:var(--gold)}
 body.pg-archives details.toc{margin:.4rem 0 1rem;font-family:var(--ui);font-size:.88rem}
 body.pg-archives details.toc summary{cursor:pointer;color:var(--gold)}
 body.pg-archives details.toc ul{columns:2 16rem;list-style:none;padding:0;margin:.5rem 0 0}
@@ -1912,13 +1906,12 @@ body.pg-catalogue .pill.unf{color:var(--muted,#888);border-color:currentColor;bo
 body.pg-solve p.frame.unconfirmed{border-left:3px dashed var(--amber);padding-left:.8rem}
 body.pg-solve p.frame.confirmed{border-left:3px solid var(--green);padding-left:.8rem}
 body.pg-solve p.frame.missing{border-left:3px solid var(--red,#c0392b);padding-left:.8rem}
-body.pg-archives .qbar{position:sticky;top:var(--navh,3.2rem);z-index:5;background:var(--bg);padding:.6rem 0;border-bottom:1px solid var(--rule)}
 body.pg-archives .fold{display:inline-flex;gap:.3rem;margin-left:auto}
 body.pg-archives .fold button{font-family:var(--ui);font-size:.8rem;background:none;color:var(--muted);border:0;padding:.2rem .4rem;cursor:pointer;text-decoration:underline}
 body.pg-archives details.arch{margin:.7rem 0 0;border:1px solid var(--rule);border-radius:10px;background:var(--panel2)}
 body.pg-archives details.arch > summary{display:flex;align-items:center;gap:.4rem .8rem;padding:.55rem .9rem;cursor:pointer;list-style:none}
 body.pg-archives details.arch > summary::-webkit-details-marker{display:none}
-body.pg-archives details.arch > summary::before{content:"B8";color:var(--muted);transition:transform .15s}
+body.pg-archives details.arch > summary::before{content:"\25B8";color:var(--muted);transition:transform .15s}
 body.pg-archives details.arch[open] > summary::before{transform:rotate(90deg)}
 body.pg-archives details.arch > summary h3{margin:0;border:0;padding:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:.1rem .6rem;font-size:1.05rem}
 body.pg-archives details.arch > summary .city{font-family:var(--ui);font-size:.82rem;font-weight:400;color:var(--muted)}
@@ -1928,7 +1921,7 @@ body.pg-archives details.arch > ul.rqs{padding:.2rem .7rem .8rem}
 body.pg-archives li.rq .sm{display:block;margin:.1rem 0 .15rem;font-family:var(--mono);font-size:.78rem}
 body.pg-archives .gapflag{font-family:var(--ui);font-size:.72rem;color:var(--amber);background:var(--amber-bg);border-radius:999px;padding:0 .5rem}
 body.pg-archives li.rq[hidden],body.pg-archives details.arch[hidden]{display:none}
-@media (max-width:760px){body.pg-archives .fold{margin-left:0}body.pg-archives details.arch > summary .mix{display:none}body.pg-archives .qbar{position:static}}
+@media (max-width:760px){body.pg-archives .fold{margin-left:0}body.pg-archives details.arch > summary .mix{display:none}}
 li.rq.hit{outline:2px solid var(--accent,#b8860b);outline-offset:3px}
 /* the unread map (archmap.js): the atlas's unread layer alone, gold where a letter has a request here */
 body.pg-archives.nojs .amap-wrap{display:none}
@@ -2266,12 +2259,27 @@ html.fs-lock{overflow:hidden}
   body.pg-further .qbar #msort{min-height:2.75rem}
   body.pg-further .qbar input[type=search]{min-height:2.75rem;font-size:1rem}
   body.pg-archives .linky{min-height:2.5rem}
-  body.pg-archives .qbar input[type=search]{flex:1 1 100%;max-width:none;min-height:2.75rem;font-size:1rem}
-  body.pg-archives .kf{display:flex;flex:1 1 100%;flex-wrap:nowrap;gap:.4rem;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:0 16px;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 1.6rem),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 1.6rem),transparent)}
-  body.pg-archives .kf::-webkit-scrollbar{display:none}
-  body.pg-archives .kf button{flex:none;min-height:2.5rem;padding:.3rem .95rem;white-space:nowrap}
   body.pg-archives #openall,body.pg-archives #closeall{min-height:2.5rem;padding:.3rem .5rem}
   body.pg-highlights .hl-chip{min-height:2.5rem}
   body.pg-keys .kw-chip{min-height:2.5rem;padding:.3rem .9rem}
   .sb-legend .lg{min-height:2.5rem}
+}
+/* To the Archive: the filter toolbar is the catalogue's (dropdowns with counts; a Filters sheet on a phone, site.js) */
+body.pg-archives .cfilters{position:sticky;top:var(--navh,3.2rem);z-index:5;margin:1.2rem 0 .7rem;padding:.6rem 0;background:var(--bg);border-bottom:1px solid var(--rule)}
+body.pg-archives .cfilters.fopen{z-index:120}
+body.pg-archives .cfilters input[type=search]{flex:1 1 230px;max-width:340px}
+body.pg-archives .asort{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--ui);font-size:.85rem;color:var(--muted)}
+body.pg-archives .asort select{padding:.28rem .5rem;border:1px solid var(--rule);border-radius:999px;background:var(--bg);color:var(--ink2);font:inherit;font-size:.85rem}
+body.pg-archives .cfilters .fold{margin-left:auto}
+body.pg-archives .cfilters .count{margin-left:.2rem}
+body.pg-archives #anone{margin:1.2rem 0}
+@media (max-width:760px){
+  body.pg-archives .cfilters{top:3.25rem;z-index:30;margin:1rem -1.2rem .8rem;padding:.55rem 1.2rem}
+  body.pg-archives .cfilters.fopen{z-index:120}
+  body.pg-archives .cfilters input[type=search]{max-width:none}
+  body.pg-archives .asort{order:2}
+  body.pg-archives .asort span{display:none}
+  body.pg-archives .asort select{min-height:2.6rem;max-width:9.5rem;padding:.3rem .6rem;font-size:.92rem}
+  body.pg-archives .plchip{order:4}
+  body.pg-archives .cfilters .fold{display:none}
 }
