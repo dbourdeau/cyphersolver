@@ -74518,6 +74518,283 @@
     "verdict": "open"
    },
    "repository": "unidentified"
+  },
+  {
+   "id": 2374,
+   "counted": true,
+   "year": 1443,
+   "date": "19 Mar 1443 (head '+ Al nome di dio adi 19 di marzo 1443'; the last digit is the writer's z-shaped 3)",
+   "title": "Florentine family letter of March 1443/1447 with short runs of digit-like cipher (3, z, 8, 7, g, t) among clear news, bare",
+   "correspondents": "unsigned family letter (names Benedetto, the Tornabuoni, Albertaccio, Ricciardo, Girolamo) -> a 'Discreto giovane ...' at the bank of Cosimo ('... di Chosimo ... al bancho', verso address read in part)",
+   "place": "not stated (Florence?)",
+   "language": "Italian (short cipher runs in clear text)",
+   "region": "Italy",
+   "period": "15th century",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza CXXXVII, doc. 40 (pencil 49, old 23)",
+   "folio_note": "One leaf, recto: about 20 lines of clear family news; at least four short cipher runs written in the same hand with the same dot-separated layout: line 11 end (\"... tu no(n) [3 signs] z3z3z4z3\"), line 13 (\"g3ttz1. 93 z3z3z4z3\"), line 14 (\"a z3z4z3z3z#z3. 83z3. gttztt\"), and a group at the end of line 18; signs are a small set of digit-like forms (3, z, 8, 7, 4) and g/t letters, repeating like a vowel-and-number cipher. Verso not opened.",
+   "cls": "B",
+   "status": "Bare: no gloss over the runs; neighbours 39 and 41 not checked for a clear copy. Seen at 1382 px.",
+   "why": "One of the oldest pieces of cipher found in the Medici archive (1440s), in a private letter; the runs are short and the sign set tiny, so the oldest-cipher question (pre-1497) is the main interest.",
+   "importance": 4,
+   "solvability": 2,
+   "difficulty": 3,
+   "verify": "Read the year (1443 or 1447) and the verso address at full size; transcribe the four runs; test a vowel/number substitution (the runs alternate 3 and z like vowel-consonant patterns); check docs 39 and 41.",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=137&d=40&c=",
+     "label": "MAP filza 137, doc. 40"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=132599",
+     "label": "image id 132599"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=132600",
+     "label": "image id 132600"
+    }
+   ],
+   "source": "ASF Mediceo avanti il Principato (MAP) images, whole-filza paging pass, Nov 2026",
+   "score_note": "Scored from the images viewed during the MAP paging pass, 6 Nov 2026 (research/sweep_2026-11_asf_map_paging/)",
+   "access_note": "scans public on the ASF MAP site, no login, curl works: /map/ricerca/ricerca-su-filza/?f=<filza>&d=<doc> and IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (about 1272 px max); image id = first id of the filza + position - 1",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza and document; not flagged as cipher in the MAP inventory (vol. 3, archive.org OCR); DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap.",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch n18",
+    "seen": {
+     "kind": "scan",
+     "where": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100137/A0000083.ptif (recto) and A0000084 (verso), server maximum 1382x992, cropped at 2-3x (riproduzione 132599-132600); neighbours A0000081-82 (doc. 39) and A0000085-86 (doc. 41) at 1264-1272 px",
+     "extent": "four short runs, about 50 signs in all: end of line 11 ('che tu no(n) ...' then 'z3cy34z3'), line 13 ('g8ttz1 . g3 . z3z4z3za'), line 14 ('z3z4z3g3z#3 . 8zc3 . gttztt'), and a group at the end of line 18; the rest of the 20-line recto and the 7 lines on the verso are clear family news",
+     "cipher": "Runs written in the same hand and ink as the clear text, separated by dots like words, made of digit forms (3, 4, 8, 1) mixed with letter forms (a z-shaped sign, c, y, g, t, a, #); 'z3z4z3' recurs. The runs are not sums: no lire/soldi/florin sign, no column, and they sit inside sentences ('che tu no(n) ...', 'Rigardo ... a [run] . [run] e da ogni ...'). No interlinear, marginal or foot decipherment on recto or verso. Neighbours 39 (a long clear letter in another hand) and 41 (a clear war despatch naming the Duke of Calabria and the Count of Urbino, 1460s) are unrelated and carry no decipherment."
+    },
+    "prior_art": {
+     "decode": "known.py (harvested DECODE dump and repo) on 'filza CXXXVII, doc. 40', 'CXXXVII 40', 'Albertaccio', 'Tornabuoni': only this lead and its sweep files; no DECODE record of any MAP CXXXVII item (siblings n08/n10 found no MAP record on DECODE at all).",
+     "tomokiyo": "cryptiana italian.htm fetched 6 Nov 2026, Florence section: Gabbrielli's 1865 'Crittografia Fiorentina', the 1424 Milanese letters, the 1425 Urbino report, Lasry's Siena no. 11 (1478) and Vito 2025; nothing of 1443 and no family letter.",
+     "lasry": "Local GL.htm (targets/gramont1529) grepped for Medici, Firenze, Florence, Tornabuoni, 1443, 1447: one unrelated Medici hit; no Florentine item of the 1440s.",
+     "edition": "MAP inventory vol. 3 does not flag the item as cipher (sweep check); Google Books feed '\"CXXXVII, 40\" Mediceo' and 'Albertaccio Tornabuoni 1443 lettera Benedetto Ricciardo' return nothing on this letter; no edition of this unsigned family letter is known.",
+     "literature": "Web 'Mediceo avanti il Principato CXXXVII 1443 lettera cifra Tornabuoni Albertaccio' (background on Giovanni Tornabuoni and the MAP inventory only) and feed 'lettera cifrata 1443 Firenze mercante \"in cifra\" famiglia Medici banco' (0 results): no study or decipherment."
+    },
+    "searches": [
+     {
+      "query": "known.py 'filza CXXXVII, doc. 40' / 'CXXXVII 40' / 'Albertaccio' / 'Tornabuoni'",
+      "result": "only this lead and the MAP paging sweep files; no catalogue entry, target or DECODE record"
+     },
+     {
+      "query": "Google Books feed: Albertaccio Tornabuoni 1443 lettera Benedetto Ricciardo; \"CXXXVII, 40\" Mediceo",
+      "result": "0 results / unrelated index pages: the 19 March 1443 letter is not cited in print"
+     },
+     {
+      "query": "web: \"Mediceo avanti il Principato\" CXXXVII 1443 lettera cifra Tornabuoni Albertaccio",
+      "result": "Tornabuoni biography and inventory pointers only; nothing on a 1443 cipher letter"
+     },
+     {
+      "query": "Google Books feed: lettera cifrata 1443 Firenze mercante \"in cifra\" famiglia Medici banco",
+      "result": "no entries returned"
+     }
+    ],
+    "key_check": "No key known or tried. The sign set is tiny (about ten forms) and mixes digits with letters, which suggests a private substitution (digits for some letters); no Florentine key of the 1440s is held here (the 1425 Gabbrielli key and Lasry's 1478 key are sign ciphers of another kind).",
+    "duplicates": "known.py on the shelfmark, 'CXXXVII 40', 'Albertaccio', 'Tornabuoni': only this lead; leads 2320/2321 (CXXXVII 252, 63) are other documents of the filza.",
+    "verdict": "open"
+   },
+   "repository": "asf"
+  },
+  {
+   "id": 2380,
+   "counted": true,
+   "year": 1492,
+   "date": "3 Aug 1492 - Jan 1493",
+   "title": "Angelo Niccolini, Florentine envoy in Milan/Pavia, 1492-93: four short bare cipher passages (postscripts and single lines) among his glossed letters",
+   "correspondents": "Angelo Niccolini (Milan, Pavia) -> Piero di Lorenzo de' Medici",
+   "place": "Pavia, Milan",
+   "language": "Italian (figure/sign cipher: H, HH, ÷, π, 11, 22 ...)",
+   "region": "Italy",
+   "period": "15th century",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza LXXIV, docs. 42 (c. 90r), 49 (c. 104r), 81 (c. 177r), 90 (c. 200r)",
+   "folio_note": "42 c. 90r (Pavia 3 Aug 1492): 5-line cipher postscript; 49 c. 104r (Pavia 20 Aug 1492): one run \"sul papa HH x o q m 4 d π c ÷ 11 ...\"; 81 c. 177r (21 Dec 1492): one cipher line at the end; 90 c. 200r (postscript sheet, Jan 1493): one line.",
+   "cls": "B",
+   "status": "Bare (contact sheet and 800 px; 42 also at 1272 px). Niccolini's other letters in the filza (docs 6, 21, 32, 35-37, 59, 62, 72, 78, 81 c. 176r, 97) carry interlinear decipherments of the same system (keys.json).",
+   "why": "Short, but readable from the glossed siblings; useful only as part of the Milan embassy cipher of 1492-94.",
+   "importance": 1,
+   "solvability": 5,
+   "difficulty": 2,
+   "verify": "Build the table from the glossed Niccolini pages; read the four passages.",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=74&d=42&c=",
+     "label": "MAP filza 74, doc. 42"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=81477",
+     "label": "image id 81477"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=74&d=49&c=",
+     "label": "MAP filza 74, doc. 49"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=81503",
+     "label": "image id 81503"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=74&d=81&c=",
+     "label": "MAP filza 74, doc. 81"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=81651",
+     "label": "image id 81651"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=74&d=90&c=",
+     "label": "MAP filza 74, doc. 90"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=81697",
+     "label": "image id 81697"
+    }
+   ],
+   "source": "ASF Mediceo avanti il Principato (MAP) images, whole-filza paging pass, Nov 2026",
+   "score_note": "Scored from the images viewed during the MAP paging pass, 6 Nov 2026 (research/sweep_2026-11_asf_map_paging/)",
+   "access_note": "scans public on the ASF MAP site, no login, curl works: /map/ricerca/ricerca-su-filza/?f=<filza>&d=<doc> and IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (about 1272 px max); image id = first id of the filza + position - 1",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza and document; not flagged as cipher in the MAP inventory (vol. 3, archive.org OCR); DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap.",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch n18",
+    "seen": {
+     "kind": "scan",
+     "where": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100074/ at server maximum (1272 px): 42 A0000181-184 (cc. 89-90), 49 A0000207-210 (cc. 103-104), 81 A0000351-358 (cc. 174-177), 90 A0000401-406 (cc. 199-201); neighbours 43, 50, 82 fetched",
+     "extent": "four short passages, about 300 signs in all: 42 c. 90r a 4-line cipher postscript with clear words (Pavia 3 Aug 1492); 49 c. 104r one run of about 18 signs after 'sul papa' (Pavia 20 Aug 1492); 81 c. 177r two cipher lines at the head of the last page (Milan 21 Dec 1492); 90 c. 200r (postscript sheet) one run of about 20 signs in line 3",
+     "cipher": "Figure/sign cipher of the Milan embassy (##, ÷, π, 11, 22, digits, Latin-letter forms) between clear words, in Niccolini's secretary's hand; no interlinear, marginal or foot decipherment on any of the four, and no clear copy filed beside them (43, 50 and 82 are other letters). On 81 the preceding page c. 176r carries interlinear glosses over its own runs, but the two lines on c. 177r are bare."
+    },
+    "prior_art": {
+     "decode": "known.py (harvested DECODE dump and repo) on 'Niccolini', 'LXXIV': only this lead, the Ridolfi and Alamanni rows of the same sweep and the unrelated Matteo Niccolini 1510 lead; no MAP record on DECODE.",
+     "tomokiyo": "cryptiana italian.htm fetched 6 Nov 2026: no Niccolini, no Florentine embassy in Milan of 1492-93.",
+     "lasry": "Local GL.htm grepped for Niccolini, Medici, Firenze: nothing.",
+     "edition": "Desjardins, Negociations diplomatiques de la France avec la Toscane I (1859; archive.org gri_33125017127347 OCR, grepped): the Milan section prints Niccolini's despatches from filza 74 of 7, 12, 16-29, 24, 26 May 1492 and 10 and 25 Jan 1493 only (the 10 Jan text is not doc. 90's postscript); none of 3 Aug, 20 Aug or 21 Dec 1492. No other edition of Niccolini's despatches is known; Rassegna d'arte 1903 prints two of his letters on artists (filza 74 cc. 137-138), not these.",
+     "literature": "Web 'Angelo Niccolini ambasciatore Milano 1492 lettere cifrate Piero de' Medici decifrazione' (general cipher literature only); feed '\"Angelo Niccolini\" \"3 agosto 1492\"' and '\"21 dicembre 1492\"' (Studio fiorentino, Annali di architettura 2003 citing his 26 Aug 1492 letter): no decipherment of these passages."
+    },
+    "searches": [
+     {
+      "query": "archive.org Desjardins Negociations I OCR: grep NICCOLINI / filza 74 / chiffres",
+      "result": "seven Niccolini despatches printed (May 1492, 10 and 25 Jan 1493), none of docs 42, 49, 81 or the doc. 90 postscript"
+     },
+     {
+      "query": "Google Books feed: \"Angelo Niccolini\" \"3 agosto 1492\"; \"Angelo Niccolini\" \"21 dicembre 1492\"; \"Niccolini a Piero\" 1492 \"LXXIV\"",
+      "result": "Studio fiorentino, Annali di architettura (26 Aug 1492 letter), La crisi degli antichi stati (cites the Desjardins May letters): nothing on these passages"
+     },
+     {
+      "query": "web: Angelo Niccolini ambasciatore Milano 1492 lettere cifrate Piero de' Medici decifrazione",
+      "result": "general Milanese/papal cipher articles only; nothing on Niccolini"
+     },
+     {
+      "query": "known.py 'Niccolini'; 'LXXIV'",
+      "result": "only this lead, sibling rows of the sweep and the unrelated Matteo Niccolini 1510 lead"
+     }
+    ],
+    "key_check": "No key tried. Niccolini's glossed letters in the same filza (docs 6, 21, 32, 35-37, 59, 62, 72, 78, 81 c. 176r, 97) give the same system with interlinear clear text; no reading of these four passages with it is on record.",
+    "key_in_volume": "MAP LXXIV glossed Niccolini letters (sweep keys.json item 2): same system, not applied to these four passages.",
+    "duplicates": "known.py 'Niccolini', 'LXXIV', 'filza LXXIV': no catalogue entry, other lead or target with these documents.",
+    "verdict": "open"
+   },
+   "repository": "asf"
+  },
+  {
+   "id": 2381,
+   "counted": true,
+   "year": 1494,
+   "date": "26 Apr 1494 (c. 221v: 'Vig[evan]i die xxvj Aprilis 1494')",
+   "title": "Piero Alamanni, Florentine orator in Milan, April 1494: two leaves with about 25 lines of mixed figure/sign cipher, bare",
+   "correspondents": "Piero Alamanni (signed \"Petrus Alamannus eques\"), Milan -> Piero di Lorenzo de' Medici",
+   "place": "Milan",
+   "language": "Italian (figure/sign cipher between clear words)",
+   "region": "Italy",
+   "period": "15th century",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza LXXIV, doc. 96 (cc. 220-221)",
+   "folio_note": "c. 220r clear; c. 220v from line 6 to the foot: runs of figure/sign groups (\"÷ 11 6 π b 7\", \"p π b v c q m\", \"v p y π\", \"22 λ p ÷ 11 o v 11 4\") between clear words; c. 221r: runs in lines 1-6, 9-14, 20-24; c. 221v: first lines, signature.",
+   "cls": "A",
+   "status": "Bare (1272 px): no interlinear clear text. The same sign family is glossed in Niccolini's and Ridolfi's letters of 1492-94 in this filza; key sheet LXXII 178 is endorsed \"Alamanni Piero\" (his Naples cipher of 1489-92).",
+   "why": "The orator's despatch from Ludovico Sforza's court on the eve of Charles VIII's descent (spring 1494), unread, with key material in the same and the next filza.",
+   "importance": 3,
+   "solvability": 5,
+   "difficulty": 2,
+   "verify": "Test LXXII 178 and the table rebuilt from the glossed LXXIV letters; read c. 220v-221v.",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=74&d=96&c=",
+     "label": "MAP filza 74, doc. 96"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=81733",
+     "label": "image id 81733"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=81734",
+     "label": "image id 81734"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=81735",
+     "label": "image id 81735"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=81736",
+     "label": "image id 81736"
+    }
+   ],
+   "source": "ASF Mediceo avanti il Principato (MAP) images, whole-filza paging pass, Nov 2026",
+   "score_note": "Scored from the images viewed during the MAP paging pass, 6 Nov 2026 (research/sweep_2026-11_asf_map_paging/)",
+   "access_note": "scans public on the ASF MAP site, no login, curl works: /map/ricerca/ricerca-su-filza/?f=<filza>&d=<doc> and IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (about 1272 px max); image id = first id of the filza + position - 1",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza and document; not flagged as cipher in the MAP inventory (vol. 3, archive.org OCR); DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap.",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch n18",
+    "seen": {
+     "kind": "scan",
+     "where": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100074/A0000439.ptif - A0000442 (cc. 220r-221v), 1272 px; neighbours 95 (A0000433-436) and 97 (A0000443-446)",
+     "extent": "c. 220v about 12 runs from line 6 to the foot, c. 221r about 10 runs in lines 1-6, 9-14 and 20-24, c. 221v three runs in the first lines: about 25 lines with runs of 6-25 signs, some 500 signs",
+     "cipher": "Figure/sign cipher (÷, 11, π, λ, 22, digits, b, p, q, v, x, m) between clear words, in the orator's secretary's hand, signed 'Petrus Alamannus eques' and dated 'die xxvj Aprilis 1494'; no interlinear, marginal or foot decipherment on any page, and neither 95 nor 97 is a clear copy of it."
+    },
+    "prior_art": {
+     "decode": "known.py (harvested DECODE dump and repo) on 'Alamanni', 'LXXIV': only this lead, catalogue 1308 (Boccaccino Alamanni 1446) and the 1492 Ginori Conti letter, all other documents; no MAP record on DECODE.",
+     "tomokiyo": "cryptiana italian.htm fetched 6 Nov 2026: no Alamanni and no 1494 Florentine letter.",
+     "lasry": "Local GL.htm grepped for Alamanni, Medici, Firenze: nothing.",
+     "edition": "Desjardins, Negociations I (archive.org OCR grepped): of Alamanni's 1494 Milan despatches it prints only Vigevano 7 June 1494 (from Rif. cl. X dist. II reg. 1); Villari, Machiavelli e i suoi tempi I (1877, archive.org niccolmachiave01villuoft) prints only 31 March 1494 (doc. I, from 'Archivio fiorentino, Cl. X, dist. 2, n. 18, c. 16', a copy). Azzolini (2013) cites other April 1494 letters in MAP 50 (docs 239, 242, 247), not this one. The 26 April letter is not printed in either.",
+     "literature": "Web 'Piero Alamanni aprile 1494 Vigevano lettera cifra Ludovico Sforza Piero de' Medici edizione' and feed 'Alamanni \"26 aprile 1494\"' / '\"26 avril 1494\"' (Buser 1879, Delaborde 1888: other dates): no decipherment or study of this letter."
+    },
+    "searches": [
+     {
+      "query": "archive.org Desjardins Negociations I OCR: grep ALAMANNI / Rif. classe X",
+      "result": "only the despatch of 7 June 1494 printed for his Milan embassy; nothing of 26 April"
+     },
+     {
+      "query": "archive.org Villari, Machiavelli e i suoi tempi I (1877) OCR: grep Alamanni",
+      "result": "doc. I prints the letter of 31 March 1494 from a Cl. X dist. 2 n. 18 copy; no April letter"
+     },
+     {
+      "query": "Google Books feed: Alamanni \"26 aprile 1494\"; Alamanni \"26 avril 1494\"; Alamanni Vigevano \"aprile 1494\" Lodovico cifra",
+      "result": "Buser, Delaborde, Pellegrini (Ascanio Sforza, citing MAP 50 c. 269 of 7 April): no citation of LXXIV 96"
+     },
+     {
+      "query": "web: Piero Alamanni aprile 1494 Vigevano lettera cifra Ludovico Sforza Piero de' Medici edizione",
+      "result": "catalogue and teaching pages only; no edition of this letter"
+     }
+    ],
+    "key_check": "No key tried. Key sheet LXXII 178 is endorsed 'Alamanni Piero' (his Naples cipher of 1489-92), and the same sign family is glossed in Niccolini's and Ridolfi's letters of 1492-94 in this filza; no reading of LXXIV 96 with either is on record. The Signori register copies (Cl. X dist. 2) that Villari and Desjardins used may hold other Alamanni despatches in clear; this one is not cited from them.",
+    "key_in_volume": "MAP LXXIV glossed Niccolini/Ridolfi letters, same family: not applied.",
+    "key_held": "MAP LXXII 178 ('Alamanni Piero', Naples 1489-92): not compared with this letter.",
+    "duplicates": "known.py 'Alamanni', 'LXXIV', 'filza LXXIV, doc. 96': no catalogue entry, other lead or target with this letter; catalogue 1308 and the 1492 Rome letter are other Alamanni documents.",
+    "verdict": "open"
+   },
+   "repository": "asf"
   }
  ]
 }
