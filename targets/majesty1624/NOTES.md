@@ -85,10 +85,8 @@ above rest on the sense and on the glosses of the time. No validation.txt.
 
 - 2 unglossed runs unresolved (13.32, 27.13.65) - blocker: too-short; 27, 32 and 65 occur once each
 - no held-out part and no measurement - blocker: too-short; the cipher is a single glossed page
-- code groups and clear text not transcribed - blocker: not-attempted; the code groups are glossed on the leaf
-- no human check of the microfilm reading - blocker: not-attempted; one agent reader
 
-Not gaps of this reading (scope): the cipher signature of n. 6 of the same volume; leads 2180 and 2182, which use other systems.
+Not gaps of this reading (scope): the 4-digit code groups and the clear text of the leaf, which the writer of the time glossed (part of the period decipherment, not transcribed here); the cipher signature of n. 6 of the same volume; leads 2180 and 2182, which use other systems. Disclosed, not a blocker: one agent reader on a microfilm scan, no human palaeographic check (see reading_review).
 
 ## Escalation
 
