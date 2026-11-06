@@ -5,32 +5,104 @@
  "documents": [
   {
    "id": "dli-39-7680-2",
-   "read": "not read",
+   "read": "read in part",
    "shelfmark": "Centro de Estudios de Historia de México (CEHM), Archivo del General Bernardo Reyes, DLI.39.7680.2 (record 118144)",
    "date": "15 July 1909",
    "year": 1909,
    "country": "Mexico",
    "route": "José López Portillo y Rojas -> General Bernardo Reyes",
    "language": "Spanish",
-   "cleartext_in_document": "unknown",
+   "cleartext_in_document": "interspersed",
    "plaintext": {
     "location": [
-     "unknown"
+     "none"
     ],
-    "source": "Two 1909 telegrams of the same correspondence carry a plaintext beside the cipher (DLI.39.7677.1 and DLI.39.7696.1); the letter itself has none known.",
+    "source": "No plaintext on the letter; the key comes from two sibling telegrams of 15 and 23 July 1909 with plaintext beside the cipher.",
     "partial": false
    },
    "length": {
     "tokens": 77,
     "unit": "code groups",
     "measured": false,
-    "file": "cyphersolver-1448-evidence.md"
+    "file": "transcription_7680.txt"
    },
    "transcription": {
-    "by": "unknown",
-    "source": "contributor's research transcriptions (gist and Zenodo report); original CEHM images not reproduced and not seen by the project",
-    "image_quality": "unknown",
-    "notes": "77 cipher groups numbered by position in the contributor's file; not checked against the images."
+    "by": "llm from images",
+    "source": "contributor's transcription (evidence file), checked against a phone screenshot of the CEHM viewer by an AI reader on 6 Nov 2026; the images are private",
+    "image_quality": "fair",
+    "notes": "77 numbered cipher groups; typed letter, numbers easy to read."
+   },
+   "places": {
+    "from": "Mexico City",
+    "to": "Galeana"
+   }
+  },
+  {
+   "id": "dli-39-7712-1",
+   "read": "read in part",
+   "shelfmark": "Centro de Estudios de Historia de México (CEHM), Archivo del General Bernardo Reyes, DLI.39.7712.1 (record 118230)",
+   "date": "29 July 1909",
+   "year": 1909,
+   "country": "Mexico",
+   "route": "José López Portillo y Rojas -> General Bernardo Reyes",
+   "language": "Spanish",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "A typed line below (\"Retira de tu ánimo preocupaciones, y lee mi respuesta con atención\") is not a decipherment; the handwritten text above the cipher is faint.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 14,
+    "unit": "code groups",
+    "measured": false,
+    "file": "transcription_7712.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "contributor's transcription, checked on a phone screenshot by an AI reader",
+    "image_quality": "poor",
+    "notes": "Two cipher sequences of 9 and 5 groups; the handwritten plaintext above is faint and not transcribed."
+   },
+   "places": {
+    "from": "Mexico City",
+    "to": "Galeana"
+   }
+  },
+  {
+   "id": "dli-39-7677-7696",
+   "read": "read",
+   "shelfmark": "CEHM, Archivo del General Bernardo Reyes, DLI.39.7677.1 (record 118140) and DLI.39.7696.1 (record 118185): the two control telegrams",
+   "date": "15 and 23 July 1909",
+   "year": 1909,
+   "country": "Mexico",
+   "route": "José López Portillo y Rojas -> General Bernardo Reyes",
+   "language": "Spanish",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate paragraph"
+    ],
+    "source": "handwritten plaintext (7677) and typed plaintext (7696) written beside the cipher",
+    "partial": false
+   },
+   "length": {
+    "tokens": 60,
+    "unit": "code groups",
+    "measured": false,
+    "file": "controls.md"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "the contributor and a check on phone screenshots by an AI reader",
+    "image_quality": "fair",
+    "notes": "Only the cipher sequences and plain words are given (controls.md)."
+   },
+   "places": {
+    "from": "Mexico City",
+    "to": "Galeana"
    }
   }
  ],
@@ -57,7 +129,7 @@
  },
  "conditions": {
   "prior_solution": {
-   "exists": "unknown",
+   "exists": "no",
    "where": "Two sibling telegrams of 15 and 23 July 1909 carry a contemporary plaintext (CEHM 118140, 118185), used by the contributor as controls. No prior reading of the letter found; issue #245, 4-6 Nov 2026.",
    "found": "before attempt",
    "used": true
@@ -98,7 +170,12 @@
   }
  ],
  "outcome": {
-  "class": "not read",
+  "validation": {
+   "date": "2026-11-06",
+   "verdict": "not applicable",
+   "notes": "The statistical test needs the Spanish letter model (lang/, es-modern), whose corpus cannot be fetched from this environment (Gutenberg returns 403). The key was instead checked against seven control sequences with plaintext on the CEHM images and by the decoding of the letter into running Spanish (VERIFICATION.md); it is not independent of the reading."
+  },
+  "class": "read in part",
   "verification": [
    "matched control",
    "key confirms",
@@ -121,11 +198,83 @@
   ],
   "gaps": [
    {
+    "item": "segment C of the letter (28 23 24 54 2, n-d-c-s-e) and the special codes 79 and 77",
+    "blocker": "open-codes",
+    "detail": "each occurs once in the letter; 79 is faintly aligned to \"Sr. Presidente\" in the 15 July telegram"
+   },
+   {
+    "item": "the 29 July note: the second name (24 46 42 1 31, CREEL?) and the faint handwritten plaintext above the cipher",
+    "blocker": "illegible",
+    "detail": "46 and 42 rest on one word; the screenshots are of modest resolution"
+   },
+   {
+    "item": "the character after 77 in the letter (an e or a on the image, s in the contributor's file)",
+    "blocker": "illegible"
+   },
+   {
     "item": "the numbers were checked on phone screenshots by an AI reader only; a human check on the CEHM originals is still wanted",
     "blocker": "needs-physical-access",
-    "detail": "the screenshots are private and not redistributable"
+    "detail": "the screenshots are private and not redistributable; cehm.org.mx is not reachable from the project environment"
    }
   ],
-  "notes": "Recorded as a contributed partial key. The seven control sequences and the 77 groups of the letter agree with the CEHM screenshots (VERIFICATION.md, 6 Nov 2026); the key decodes the letter to running Spanish. No reading page is claimed yet."
+  "notes": "Key proposed by Alberto Garvía García (28 strict values, 60 = Y provisional), checked against the CEHM images by an AI reader on 6 Nov 2026 (VERIFICATION.md). Read in part: the letter of 15 July and the names in the note of 29 July.",
+  "fraction_read": 0.888,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Counted by hand from key.tsv and the decryption files: letter of 15 July 70 of 75 alphabetic groups read as letters of words (the 5 groups of segment C and the codes 79 and 77 are not read) and the note of 29 July 9 of 14 (LIMANTOUR; the second name, 5 groups, is tentative and not counted): 79 of 89 = 88.8%. The control telegrams are not counted.",
+  "key_file": "key.tsv",
+  "texts": [
+   {
+    "doc": [
+     "dli-39-7680-2"
+    ],
+    "label": "López Portillo y Rojas to Bernardo Reyes, Mexico, 15 July 1909 (CEHM DLI.39.7680.2)",
+    "transcription": "transcription_7680.txt",
+    "decryption": "decryption_7680.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.933,
+    "summary": "A friend of General Reyes, then governor of Nuevo León, warns him in July 1909 that the President speaks of him as an enemy and urges him not to declare himself at once, to keep calm and be prudent and to look after his health; other clubs of Guadalajara will write; he sends a pleading message the same day.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (for the project)",
+     "date": "2026-11-06",
+     "note": "Read the decryption as Spanish sentences: enemigo, te pronuncies, temor, situación, calma, prudencia, oficios, clubs, Guadalajara form coherent clauses; five groups, two codes and one name are open."
+    }
+   },
+   {
+    "doc": [
+     "dli-39-7712-1"
+    ],
+    "label": "López Portillo y Rojas to Reyes, 29 July 1909: the cipher sequences (CEHM DLI.39.7712.1)",
+    "transcription": "transcription_7712.txt",
+    "decryption": "decryption_7712.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.643,
+    "summary": "A short note of 29 July: there is a rupture between Limantour and (probably) Creel; the typed line asks Reyes to put his worries aside and read the reply carefully.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (for the project)",
+     "date": "2026-11-06",
+     "note": "Only two names are ciphered; LIMANTOUR is secure, the second name is tentative."
+    }
+   },
+   {
+    "doc": [
+     "dli-39-7677-7696"
+    ],
+    "label": "The two control telegrams of 15 and 23 July 1909 (numbers and plain words)",
+    "transcription": "controls.md",
+    "decryption": "controls.md",
+    "language": "es",
+    "state": "not prose",
+    "note": "Cipher sequences beside their plaintext, used as the controls of the key; no running text. The images are private.",
+    "summary": "Short telegrams: the President is a declared enemy and postpones an explanation; Dr. Gómez must go; graves matters; clubs to be told to hold their replies."
+   }
+  ]
  }
 }

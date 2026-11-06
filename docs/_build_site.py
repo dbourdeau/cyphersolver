@@ -2322,6 +2322,11 @@ PAGES = [
          blurb='A one-page letter in Croiset&rsquo;s six-series numerical word code (DECODE R2034), whose only copy is an undigitised booklet (NA 2.21.045/34313). Three 1801 letters in the same code with contemporary decipherments were transcribed and aligned: they fix 3 of the 67 words, and nine values claimed earlier are withdrawn. No other key fits; not solved.',
          quote='394 handen &middot; 58 brengen &middot; 222&#773; niet',
          rights='Nationaal Archief, The Hague, via DECODE R2034'),
+    dict(slug='limantour1909', label='L&oacute;pez Portillo to Reyes 1909', year='1909', y=1909.54, place='Mexico City &rarr; Galeana', st='partial', stt='read in part',
+         title='L&oacute;pez Portillo y Rojas to General Bernardo Reyes, July 1909',
+         blurb='A cipher letter from a friend of General Reyes, governor of Nuevo Le&oacute;n, at the moment he was being pushed aside before the 1910 election. Alberto Garv&iacute;a Garc&iacute;a found the numerical key from two telegrams with plaintext (28 values), checked here on the images: the letter reads as Spanish (enemigo, te pronuncies, temor, calma y prudencia, clubs de Guadalajara) and the note of 29 July names Limantour. 88.8% of the groups read.',
+         quote='&ldquo;Hay que tener calma y prudencia&rdquo;',
+         rights='Letters: Centro de Estudios de Historia de M&eacute;xico (CEHM), Archivo del General Bernardo Reyes, DLI.39.7680.2 and DLI.39.7712.1; key by Alberto Garv&iacute;a Garc&iacute;a'),
     dict(slug='kopp1921', label='Kopp and Chicherin 1921', year='1921', y=1921.3, place='Berlin &rarr; Moscow', st='stuck', stt='not solved',
          title='The Kopp and Chicherin radiograms, 1921',
          blurb='Soviet radio telegrams intercepted at Constantinople and filed unread by the State Department (NARA M316 rolls 40&ndash;48). The file holds several systems. The small 4-figure table Kopp and Lutovinov used shows literal phrase repeats, but no group value was recovered and each hypothesis failed its control.',
@@ -4419,6 +4424,7 @@ IMAGES['johnston1863'] = ('johnston1863_lead.jpg', 'The cipher lines of the tele
 IMAGES['milroy'] = None
 IMAGES['auckland1918'] = None
 IMAGES['deboli1788'] = None
+IMAGES['limantour1909'] = None
 IMAGES['piccolomini1646'] = None
 IMAGES['mazzinghi1478'] = None
 IMAGES['majesty1624'] = None
