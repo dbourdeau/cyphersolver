@@ -34,7 +34,6 @@ done, and search with `research/archive_sweep_2026-10/known.py` before starting.
 |---|---|---|
 | Archivi Nazionali search (SIUSA redirects there), Milan ICAR image viewer | Up again 6 Nov 2026, but results and images are drawn by JavaScript: Chrome (`archivinazionali.cultura.gov.it/it/risultati-di-ricerca?search=cifra`; ICAR scat. 1591). Florence MAP images, Milan/Mantua/Genoa inventory PDFs answer curl | `sweep_2026-11_italian_state_retry` |
 | Braidense, Trivulziana | See the sweep | `milan_archives` |
-| DigiVatLib | Connection reset in Chrome, TLS error in curl; needs another network | `chrome_pass_2026-11` |
 | NLS, National Library of Wales | Cloudflare challenge | `uk_libraries` |
 | TCD, Lambeth | Security check, 403 | `uk_libraries` |
 | PRONI, NAI, NRS Jacobite catalogue | Bot wall, 403 or not tried | `uk_tna` |
@@ -89,9 +88,9 @@ permission (`chrome_pass_2026-11`).
 
 ## Swept at catalogue level, ciphers hidden
 
-These need browsing by volume, because descriptions rarely note cipher: Riksarkivet Diplomatica beyond Turcica and Polonica
-(Muscovitica, Gallica, Italica, Hollandica; Turcica and Polonica were sheeted volume by volume on 5 Nov 2026,
-`sweep_2026-11_riksarkivet_turcica`, which also found the Referer route to the 4000xxxx image series), the Oxenstiernska
+These need browsing by volume, because descriptions rarely note cipher: Riksarkivet beyond Diplomatica and Stedingk (every
+digitised Diplomatica volume was sheeted 5-6 Nov 2026, `sweep_2026-11_riksarkivet_turcica`, `_west` and `_consuls`; the other
+105 Stedingk volumes and the Barthelemy, De la Gardie, Tessin and Reuterholm papers were not), the Oxenstiernska
 samlingen and the Kanslikollegium series, and Rigsarkivet TKUA envoy reports (`scandinavia`); TNA State Papers (`uk_tna`);
 AGATHA's envoy series (`belgium_lux`).
 
@@ -112,13 +111,11 @@ Folders: `sweep_2026-11_A_halfdone`, `sweep_2026-11_B_unswept_south`, `sweep_202
 - **New route:** PARES-HTR (`pares.cultura.gob.es/pares-htr`, ACA Cancilleria 1479-1556) is a plaintext index of "En cifra"
   registers, not a source of new ciphertexts. ICCU Manus Online API and the Wayback Machine work for Italian inventories.
 - **Still never swept:** Dubrovnik (no item-level catalogue online; ask the State Archives about "sifra" bundles), Malta
-  (vHMML Turnstile), ARSI and Propaganda Fide (only the printed MHSI volumes), Turin diplomatic inventories ("Lettere
-  ministri"), Czech lands, Slovakia, Russia, Belarus. About 6,000 Manus "cifre" records unscreened.
+  (vHMML Turnstile), ARSI and Propaganda Fide (only the printed MHSI volumes), Slovakia, Russia, Belarus (Turin and the
+  Czech lands were swept 6 Nov 2026). About 6,000 Manus "cifre" records unscreened.
 - **Blocked:** Finna (Cloudflare), BOA (login with CAPTCHA), hrcak.srce.hr, Harvard hosts (403), Abhilekh Patal (403 on the
   user's network on 4 Nov; its 18 image leads stay unvetted).
-- **Not done:** Riksarkivet: the six Muscovitica, Gallica, Italica and Hollandica sheets were never viewed (the 40
-  "manifest-less" Turcica/Polonica volumes were reached on 5 Nov 2026, see `sweep_2026-11_riksarkivet_turcica`). ACA reg. 3225 (1435)
-  not reached.
+- **Not done:** ACA reg. 3225 (1435) not reached.
 
 ## Sweeps of 6 Nov 2026 (overnight)
 
@@ -129,3 +126,15 @@ Folders: `sweep_2026-11_A_halfdone`, `sweep_2026-11_B_unswept_south`, `sweep_202
 - **Italian state archives retry** (`sweep_2026-11_italian_state_retry`): the cultura.gov.it outage is over. ASF Mediceo avanti il
   Principato gave 6 leads (2307-2312); MAP vol. 4, the MAP key sheets and the PAD Mediceo del Principato runs continue in
   `sweep_2026-11_asf_florence`. Modena: no item-level inventory online.
+- **Riksarkivet** (`sweep_2026-11_riksarkivet_west`, `sweep_2026-11_riksarkivet_consuls`): all 59 remaining digitised Diplomatica
+  volumes and 59 Stedingk volumes sheeted at 600 px; the 25 consular volumes (Maroccana, Algerica, Tunisica, Tripolitana) paged
+  in full. Short code groups inside clear sentences (Logie's form) show only at 800 px.
+- **ASF Florence** (`sweep_2026-11_asf_florence`, `_2`, `asf_map_paging`): MAP inventory vol. 4 OCR'd, every unopened "in cifra"
+  item of the PAD Mediceo del Principato filze 330-460 opened. Not online: Mediceo del Principato 461-659 (the appendix filze
+  with the most cipher), Dieci di Balìa. The MAP inventory misses cipher letters: page filze, do not trust it.
+- **Turin and Archivi Nazionali** (`sweep_2026-11_turin_chrome`): the Turin browser check is a cookie printed in the page (curl
+  works); Archivi Nazionali has JSON endpoints (`keywords=`). Lettere ministri are inventoried only by bundle and not
+  digitised. Milan ICAR's certificate expired 6 Nov 2026.
+- **DigiVatLib** (`sweep_2026-11_digivatlib`): answers curl again with a browser User-Agent, cookie and Referer; the BAV OPAC
+  (`opac.vatlib.it/mss/search`) indexes undigitised volumes too. Not reached: Barberini, Ottoboni and Chigi letter volumes with
+  no item-level description.
