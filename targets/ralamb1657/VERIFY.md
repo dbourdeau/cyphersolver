@@ -168,3 +168,11 @@ groups (0.7%)**. In the bare runs (114, 104) it is 1 unresolved of 232 (0.4%), o
 5. `reading_114.md` frame table: bold cipher words should follow the marked text, or carry its marks.
 6. Record the freeze (commit `key_frozen.tsv` on its own, or give its hash) and say that `pairs_022_023.txt` was edited
    after the freeze.
+
+## Addendum, 6 Nov 2026 (after the maintainer's review)
+
+The report above is left as written. After the maintainer's review, both entries are marked **not prose** in
+`profile.json`: image 114 as a list of 30 runs with glosses, image 104 as one deciphered phrase. The cipher in both is
+short runs inside letters in clear Swedish and builds no sentences of its own. The counts are unchanged: 114 has 31 of 40
+words verbatim (77.5%), 104 has 4 of 4. Where this report says "read" or "read in part" (Verdict, section 6), read it as
+the status proposed at the time.

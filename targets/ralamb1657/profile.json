@@ -189,7 +189,7 @@
   ],
   "fraction_read": 0.05,
   "fraction_read_method": "estimated",
-  "fraction_read_source": "Two bare images (104, 114; 35 of their 44 cipher words verbatim from the signs) out of about 30 images with number runs seen on the inspected contact sheets of the 132-image volume (sheets of images 49-72, 85-103 and 121-132 not inspected); the glossed letters are not counted. A rough estimate from images, not counted groups.",
+  "fraction_read_source": "Two bare images (104, 114; 35 of their 44 cipher words verbatim from the signs) out of about 30 images with number runs seen on the inspected contact sheets of the 132-image volume (sheets of images 49-72, 85-103 and 121-132 not inspected); the glossed letters are not counted. The two bare images are short runs inside clear letters, marked not prose in the texts. A rough estimate from images, not counted groups.",
   "verification": [
    "independent verification",
    "contemporary decipherment",
@@ -233,10 +233,15 @@
     "reading": "reading_114.md",
     "translation": "translation_114.md",
     "language": "sv",
-    "state": "read in part",
-    "read_share": 0.775,
+    "state": "not prose",
     "summary": "The Porte's assurance and how firmly what they have once written stays written; a mutiny in the camp in which the troops seized the Vizier, brought him to the Sultan and wanted him put to death, until the Sultan got him off by great intercession; the new Mufti, said to plan with the Tatar Khan and the Pasha of Silistra to join forces in support of the Russian.",
-    "note": "40 words: 31 verbatim from the signs (77.5%), 1 with a marked change (förb{ö/y}n), 8 with a hole (5 in the binding, 3 open codes 15, 93?, 97). Without the two bare-run context values 67 p and 7 z it would be 29 of 40. The clear frame in the reading is an approximate working transcription."
+    "note": "Not prose: a list of 30 short cipher runs (one to three words each, 40 words) set into a despatch written in clear Swedish. Each run is given with our decode with key.tsv and an English gloss. The cipher forms no sentences of its own. The clear text around the runs is an approximate working transcription, given only to place the runs. Words: 31 verbatim from the signs (77.5%), 1 with a marked change (förb{ö/y}n, 77 read as ö), 8 with a hole. The holes are L02, L03, L06, L09 and L14 in the binding (L02 also has the open code 2), and the open codes 97, 15 and 93? in L04, L10 and L15. 22 of the 30 runs read as whole words that fit the clear text around them: a mutiny in the camp in which the troops seized the Vizier, brought him to the Sultan and wanted him put to death, until the Sultan got him off by great intercession; the new Mufti with the Tatar Khan and the Pasha of Silistra joining forces to help the Russian; and 'what has once been written with them stays written'. Two of these runs (uiziren, passa silistrie) rest on the context values 7 z and 67 p. Without those two values, 29 of the 40 words would be verbatim.",
+    "reading_review": {
+     "grade": "B",
+     "by": "AI language-model agent (for WAINUT; a model reading, not a person), independent of the solver",
+     "date": "2026-11-06",
+     "note": "Checked as a list of runs against the clear text around them; three runs (L11-L12, L15-L17, L28) checked group for group against the image; the last group of L15 is written over another figure (93 or 97)."
+    }
    },
    {
     "doc": "img104_jun1657",
@@ -246,10 +251,15 @@
     "reading": "reading_104.md",
     "translation": "translation_104.md",
     "language": "sv",
-    "state": "read",
-    "read_share": 1.0,
+    "state": "not prose",
     "summary": "The Vizier uses the interpreter of the Imperial (Habsburg) Resident: 'romerske keiserlige residentens tålk'.",
-    "note": "One phrase, 33 groups, 4 words, all verbatim from the signs. Every value comes from a contemporary gloss (the frozen key, plus 50 k from the image-75 gloss). A short text."
+    "note": "Not prose: one cipher run of 33 groups, a four-word phrase set into a despatch written in clear Swedish, with our decode and an English gloss: 'romerske keiserlige residentens tålk', the interpreter of the Roman Imperial (Habsburg) Resident, whom the Vizier uses. All 4 words are verbatim from the signs, with no holes. Every value is in the frozen key except 50 = k, which rests on the contemporary gloss of image 75 and holds at all three places it occurs. There is no ciphered sentence to score, so the entry is labelled not prose rather than read; the phrase itself is deciphered.",
+    "reading_review": {
+     "grade": "A",
+     "by": "AI language-model agent (for WAINUT; a model reading, not a person), independent of the solver",
+     "date": "2026-11-06",
+     "note": "Checked as one phrase against the clear text around it; the 33 groups agree with the independent blind transcription (VERIFY.md), and the decode with key_frozen.tsv gives every letter except the one 50 = k."
+    }
    }
   ],
   "key_file": [
@@ -275,7 +285,7 @@
    {
     "item": "Context values 67 p and 7 z",
     "blocker": "too-short",
-    "detail": "Each rests on one bare-run word (passa silistrie, uiziren)."
+    "detail": "Each rests on one bare-run word (passa silistrie, uiziren); the clear spelling 'Passa Silistriensi' in the clear text of image 22 (noted in key.tsv) supports 67 p."
    },
    {
     "item": "The rest of the volume: number runs on about 30 images, and contact sheets of images 49-72, 85-103 and 121-132 not inspected",
