@@ -2501,6 +2501,11 @@ PAGES = [
          blurb='A very urgent five-part telegram signed Ludendorff, 26 July 1918, and five Berlin telegrams to the Stockholm legation and consulate-general, copied by American diplomats. The five-figure groups are flat in every column, with no depth, and no German code printed by Mendelsohn fits. Not solved.',
          quote='&ldquo;5 Teile 1 teil urachi 39 gruppe&rdquo;',
          rights='National Archives (US), via the NARA catalogue'),
+    dict(slug='arabia1916', label='Foreign Office to Bernstorff 1916', year='1916', y=1916.93, place='Berlin &rarr; Washington', st='stuck', stt='not kept',
+         title='German Foreign Office to Bernstorff, 5 December 1916: the Arabia cable',
+         blurb='A German cipher telegram on the sinking of the <i>Arabia</i>, passed to Count Bernstorff through the American embassy in Berlin and the State Department. The file copy keeps only Grew&rsquo;s cover and the words &ldquo;(Quote German cipher)&rdquo;: the groups were delivered to the ambassador, and no digitised source has them. Not solved.',
+         quote='&ldquo;(Quote German cipher)&rdquo; &middot; Grew, telegram 4691, 5 December 1916',
+         rights='National Archives (NARA), RG 59, file 841.857/244, M580 reel 191, via the National Archives Catalog'),
     dict(slug='bernstorff1917', label='Bernstorff telegram No. 205, 1917', year='1917', y=1917.03, place='Washington &rarr; Berlin', st='partial', stt='read in part',
          title='Bernstorff to Berlin, 10 January 1917: the code telegram the State Department carried',
          blurb='The German ambassador&rsquo;s cipher telegram, cabled to Berlin for him by the State Department on 11 January 1917, holds 577 code groups. The first 147 are his telegram No. 205, whose German text he printed in 1920; aligned with the groups it fixes 82 groups of a two-part four-figure code, and a blind alignment test beats 2,000 shuffles and two control texts. The other 430 groups are a second text in the same code, probably on the peace note of 18 December 1916, and stay undecoded.',
@@ -4409,6 +4414,7 @@ IMAGES['thurloe'] = ('thurloe_tsp1_p435.jpg', 'The three cipher passages as Birc
 IMAGES['dugard1656'] = ('dugard1656_tsp5_p79.jpg', 'The new direction, in figures and letters', 'Thomas Birch, A Collection of the State Papers of John Thurloe (1742), vol. 5 p. 79, via the Internet Archive')
 IMAGES['copinger1656'] = ('copinger1656_tsp5_p267.jpg', 'The cipher sentence: a name of twelve digits and a word of four', 'Thomas Birch, A Collection of the State Papers of John Thurloe (1742), vol. 5 p. 267, via the Internet Archive')
 IMAGES['vico1398'] = None
+IMAGES['arabia1916'] = ('arabia1916_lead.jpg', 'Grew&rsquo;s telegram 4691, 5 December 1916: where the German cipher should be, &ldquo;(Quote German cipher)&rdquo;', 'National Archives (NARA), RG 59, 841.857/244, M580 reel 191 frame 0111, via the National Archives Catalog')
 IMAGES['santacruz1399'] = None
 IMAGES['biglia1565'] = None
 IMAGES['genes1643'] = None
