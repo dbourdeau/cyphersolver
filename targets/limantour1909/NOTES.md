@@ -10,7 +10,7 @@ Status: read in part (6 Nov 2026). Check of 6 Nov 2026: the control numbers and 
 
 This contribution documents a proposed numerical substitution key for the encrypted correspondence between José López Portillo y Rojas and General Bernardo Reyes (1909).
 
-The strict evidence count comprises 28 independently supported values. The assignment 60 = Y remains provisional and must not be included in that count.
+The contributor's strict evidence count comprises 28 independently supported values and kept 60 = Y provisional. After the clearer images of 6 Nov 2026 the project counts 60 = Y as the 29th strict value (VERIFICATION.md section 6); the contributor's evidence packet, kept as submitted, still says 28.
 
 ## Evidence and methodology
 
@@ -51,5 +51,5 @@ Research documentation offered for incorporation under CC BY 4.0, with attributi
 - [x] clear-pages: the typed plaintext below the 23 July telegram and the typed line on the 29 July note checked; neither is a decipherment of the letter
 - [x] known-keys: the contributor's structural comparison with a 1895 key sheet (not seen by the project); no other key for this correspondence known
 - [x] print: the contributor's Zenodo report (doi 10.5281/zenodo.23934776); a web search on 6 Nov 2026 (López Portillo, Reyes, 1909, clubs, Limantour, Creel) found no edition of these telegrams
-- [x] key-rebuild: the 28 strict values extended with values from the 15 July telegram (26, 41, 20, 11) and from the letter's own words (key.tsv)
+- [x] key-rebuild: the 29 strict values extended with values from the 15 July telegram (26, 41, 20, 11) and from the letter's own words (key.tsv)
 - [x] retry: segment C retried with the extended key (n-d-c-s-e) and again with the contributor's proposed slip (n-d-o-s-e, quejándose) on the clearer images of 6 Nov 2026; kept tentative

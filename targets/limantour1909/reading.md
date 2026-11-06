@@ -1,6 +1,6 @@
 # Reading of the cipher letter of 15 July 1909 (CEHM DLI.39.7680.2) and of the note of 29 July 1909 (DLI.39.7712.1)
 
-Key: `key.tsv` (Alberto Garvía García's 28 strict values, plus values fixed on the telegram of 15 July and on the letter's own words;
+Key: `key.tsv` (Alberto Garvía García's 28 strict values and 60 = Y (29 in the project's count), plus values fixed on the telegram of 15 July and on the letter's own words;
 see VERIFICATION.md). Cipher words are given in normal spelling; `[...]` = group not read; `[79]`, `[77]` = special codes; `?` = doubtful.
 Clear words of the typed letter are in italics.
 
@@ -18,7 +18,7 @@ group is printed as given, after "queja,"); it rests on assuming one error and s
 after 77 is a typed **s** (as in the contributor's file), not an e as the phone screenshots suggested; the last s after 54 looks the same.
 
 Count (counted by hand from key.tsv and decryption_7680.txt): 75 alphabetic cipher groups, all 75 read as letters of words
-(100%), 10 of them certain (temor, calma: every value in the strict 28); two groups are read only by assuming a one-number slip
+(100%), 10 of them certain (temor, calma: every value in the strict set); two groups are read only by assuming a one-number slip
 (24 in *quejándose*, 48 in *situación*); the codes 79 and 77 are not read.
 
 ## 29 July 1909 (note)

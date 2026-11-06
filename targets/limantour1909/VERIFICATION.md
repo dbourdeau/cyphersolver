@@ -6,7 +6,7 @@ sent privately to Daniel Bourdeau. The screenshots are **not** in this repositor
 published without the CEHM's authorisation; this note quotes numbers and plain words only. No human palaeographer has
 repeated the check.
 
-## 1. The seven control sequences (the 28 strict values)
+## 1. The seven control sequences (the 28 values of the contributor's strict count)
 
 Each cipher sequence was read on the image and compared with the plaintext written or typed beside it, and with
 `cyphersolver-1448-evidence.md`.
@@ -23,7 +23,7 @@ Each cipher sequence was read on the image and compared with the plaintext writt
 
 Result: all seven sequences are on the images exactly as listed. Taken together they give **28 distinct
 number-to-letter values with no number mapped to two letters**, as the evidence file says. The provisional `15 60 17`
-(`aya` of *vaya*) is also on the image, so 60 = Y stays provisional on the single occurrence. In this hand the digit 4
+(`aya` of *vaya*) is also on the image; on this first check 60 = Y was left provisional (it was reclassified later, section 6). In this hand the digit 4
 is often written like an X and 3 and 7 are alike; every doubtful shape was settled by the neighbouring values.
 
 ## 2. The 77 numbered groups of the letter of 15 July (7680)
@@ -33,7 +33,7 @@ The numbers of the typed letter were read on the image: all 77 agree with the gr
 
 ## 3. What the table gives on the letter and on the 29 July note
 
-Decoding the letter's groups with the 28 strict values, plus values each fixed by one of these words, gives running
+Decoding the letter's groups with the strict values, plus values each fixed by one of these words, gives running
 Spanish (the extra values are consistent with the blocks of three homophones per letter, but they are our inference,
 not independent of the key):
 
@@ -61,7 +61,7 @@ calm and prudence, reports clubs in Guadalajara, and speaks of a break between L
 - 9 = g (in *enemigo*) against 8 = g (*graves*) and 10 = g (*Guadalajara*) is a three-homophone block, but it rests on
   these words only.
 - The segment C group `28 23 24 54 2` is read as *-ndose* (*quejándose*) only by assuming that 24 is a slip for an o code; see section 5.
-- Nothing here changes the strict count of 28 or the provisional status of 60 = Y.
+- Nothing here changes the contributor's strict count of 28; the status of 60 = Y was revised afterwards (section 6).
 
 ## 5. Second set of images (6 Nov 2026)
 
@@ -83,3 +83,14 @@ note quotes numbers and plain words only. The same AI model read them against th
 - The second sequence of the 29 July note reads `24 46 42 1 31` (the 4 written like an X). It fits CREEL, but 46 = r and 42 = e rest
   on that one word.
 - No human palaeographer has repeated the check.
+
+## 6. The value 60 = Y (6 Nov 2026)
+
+The contributor's evidence packet counts 28 strict values and keeps 60 = Y provisional, because the word *vaya* in the telegram of
+23 July is in a stretch affected by the viewer's watermark. On the clearer images the sequence `15 60 17` is legible at the start of
+the second handwritten line, followed by "hemoslo", and the typed plaintext below reads "Gómez vaya; hémoslo resuelto". The first
+number of the word (58 = v, which the word *graves* already fixes) lies under the watermark at the end of the line above and cannot
+be seen. The three legible numbers align with the last three letters of *vaya*; 15 and 17 are a in the strict count, so 60 can only be
+y. This is as direct as other single-occurrence values in the strict count (7 = z in *aplaza*, 13 = b in *Clubs*), so the project now
+counts **29 strict values**. The contributor's evidence packet is kept as he submitted it and still says 28. Raised by the contributor;
+read on the image by the same AI model; no human palaeographer has repeated the check.
