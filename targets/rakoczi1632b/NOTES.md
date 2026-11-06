@@ -1,6 +1,6 @@
 # rakoczi1632b: George I Rákóczi's conditions of 1632, fol. 491v-492v (BSB Clm 10401 n. 139), read with WAINUT's key
 
-Status: read in part (Brice Dudout, 6 Nov 2026). 237 cipher words on fol. 491v-492v: 110 certain, 47 probable, 66 restored,
+Status: in progress (write-up pending: the doubtful groups still need a blind re-read on the images, and profile.json has no fraction_read; 6 Nov 2026). Reading as contributed: read in part (Brice Dudout, 6 Nov 2026). 237 cipher words on fol. 491v-492v: 110 certain, 47 probable, 66 restored,
 14 unresolved, so 157/237 = 66.2% by Daniel's count (94.1% with the restored words), below the 95% bar. WAINUT's key, completed
 with 8 values from the glosses, passed a pre-registered held-out test on the whole of fol. 492v: 0.902 against 0.341 for the
 best of 200 shuffled keys (margin 0.561).
