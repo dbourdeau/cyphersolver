@@ -2,11 +2,12 @@
 
 WAINUT, 6 Nov 2026. Work done with AI language-model agents viewing the photographs; checked by script as described
 below. No human palaeographer has checked the text. An independent AI language-model agent checked the work
-(`VERIFY.md`); the fixes made after that check are listed in "Changes after the independent check".
+(`VERIFY.md`); the fixes made after that check are listed in "Changes after the independent check". A later reading
+review lowered both letters to "decoded, not read" (see "Reading review").
 
-Status: read in part (6 Nov 2026). **Both letters, 24874 and 24876, are read in part**; neither is "read". The
-photographs are too coarse for a full sign copy. 24873 (with 24873_1, 24873_2) is the key source and a control, not
-claimed.
+Status: not read; both letters decoded, not read (6 Nov 2026 reading review). **24874 and 24876 decode with Vlnas's
+key, but most of their sentences have holes**, so neither counts as read or read in part. The photographs are too
+coarse for a full sign copy. 24873 (with 24873_1, 24873_2) is the key source and a control, not claimed.
 
 ## Result in one paragraph
 
@@ -14,17 +15,19 @@ The system and the key are not ours. V. Vlnas deciphered the neighbouring letter
 (ch. 4.2) and printed its key (table 3): consonants written plain, vowels as odd digits a e i o u = 1 3 5 7 9, even
 digits and the letters a e i o u w x y as nulls. That decipherment is prior art. What this folder adds is the first
 reading of the two letters Vlnas left undeciphered (his appendix B21 and B22): a two-pass sign transcription of each
-from the thesis photographs, the mechanical decryption with his table, and a marked reading with English translation.
-**24874: 76 of 116 words (65.5%, rounded 66%) verbatim from the signs. 24876: 32 of 50 (64.0%).** Counted strictly,
-with no s/i or g/q/u/v class choice (see System), 33 of 116 (28.4%) and 14 of 50 (28.0%). Marked repairs are counted
-apart (6 and 4 words). Both stay far under the 95% read bar. The writer is not identified.
+from the thesis photographs, the mechanical decryption with his table, and a marked reading with a draft English
+translation. **24874: 76 of 116 words (65.5%) decoded verbatim from the signs. 24876: 32 of 50 (64.0%).** These are
+word counts of the decode, not a read share: the words do not yet build sentences (24874: 2 of 6 cipher sentences
+read; 24876: 1 of 3), so both letters are decoded, not read. Counted strictly, with no s/i or g/q/u/v class choice
+(see System), 33 of 116 (28.4%) and 14 of 50 (28.0%). Marked repairs are counted apart (6 and 4 words). The writer
+is not identified.
 
 ## Documents and images
 
 | inv. | image | content | status |
 |---|---|---|---|
-| 24874 | Vlnas 2017, appendix zip P_lohy_A_a_B.zip (theses.cz/id/p3p2kb), frame 24874.jpg | one page, begins in mid-letter: 19 cipher lines, then 4 clear lines (news of the coming of Don Miguel de Salamanca, "Don Michele di Salamanca") | read in part (65.5% verbatim) |
-| 24876 | Vlnas 2017, appendix zip P_lohy_A_a_B.zip (theses.cz/id/p3p2kb), frame 24876.jpg | 9 clear lines, cipher block A (5 lines), 2 clear lines (news from Vienna: Linz, Ratisbona), cipher block B (5 lines), clear end | read in part (64.0% verbatim) |
+| 24874 | Vlnas 2017, appendix zip P_lohy_A_a_B.zip (theses.cz/id/p3p2kb), frame 24874.jpg | one page, begins in mid-letter: 19 cipher lines, then 4 clear lines (news of the coming of Don Miguel de Salamanca, "Don Michele di Salamanca") | decoded, not read (65.5% verbatim) |
+| 24876 | Vlnas 2017, appendix zip P_lohy_A_a_B.zip (theses.cz/id/p3p2kb), frame 24876.jpg | 9 clear lines, cipher block A (5 lines), 2 clear lines (news from Vienna: Linz, Ratisbona), cipher block B (5 lines), clear end | decoded, not read (64.0% verbatim) |
 | 24873 (+_1, _2) | Vlnas 2017, appendix zip P_lohy_A_a_B.zip (theses.cz/id/p3p2kb), frames 24873.jpg, 24873_1.jpg, 24873_2.jpg | the letter Vlnas deciphered (ch. 4.2); key source and control | not claimed (prior art); a held-out excerpt of the 24873_2 postscript, see below |
 
 The images are photographs of a microfilm-reader screen (2200 x 1650 px, rotated 90°), from the appendix of
@@ -114,8 +117,9 @@ consolazione dalla di lei [?lettera], tanto più per vedere [...] ... si esibisc
 [?ritrovano] ... modo et governo ..., a sì come dal governo politico. Desidera dunque una giusta et per[...] relatione,
 mentre lei sa meglio queli avertimenti [?che siano] necessarii. Di quelo so tralascio per non tediarla. ... le
 particolarità che ... per il governo ... del arciduca mio signore, asicurandola che oltre ... che ne cavarà, havrà
-consolatione ..." The writer reports for someone he calls "l'arciduca mio signore", who wants an account of the
-military and political government; the clear tail announces Don Miguel de Salamanca. Lines L01-L03 (faintest on the
+consolatione ..." The writer reports for someone he calls "l'arciduca mio signore"; the partly read middle speaks
+of a "modo et governo" and of "the political government" (whether a military government is meant is not read); the
+clear tail announces Don Miguel de Salamanca. Lines L01-L03 (faintest on the
 photograph) are mostly holes.
 
 **24876** (cipher parts): A "di Baviera non [?vengono] ... lo che si dobiamo battere ... di lamentationi; tutta già
@@ -131,7 +135,7 @@ there are draft readings from the photograph and are not part of the counts.
 Inv. 24873-24876 sit in the run of RA Piccolomini cipher frames that Vlnas dates, where dated, to 1646. 24873_2 is
 dated in clear "li 13 [?9bre] 1646" (place read uncertainly as "Lammeling"). In 1646 Piccolomini served Spain in the
 Low Countries; Archduke Leopold Wilhelm was named governor of the Spanish Netherlands at the end of 1646, which fits
-24874's "governo dell'arciduca mio signore" and the military/political government, but nothing in the text names him.
+24874's "governo ... del arciduca mio signore" and "governo politico", but nothing in the text names him.
 24876's Bavaria passages ("the Duke of Bavaria wants peace by all means") fit Bavaria's moves toward a separate truce
 in late 1646 (Ulm, March 1647); again this is context, not a statement of the letter.
 
@@ -156,8 +160,8 @@ cipher or clear text of 24874 or 24876 names the writer. A clean scan of 24873_2
 
 ## Changes after the independent check (6 Nov 2026)
 
-The verifier (`VERIFY.md`) confirmed both statuses and the key, and asked for eight fixes. All are made; none changes
-a status.
+The verifier (`VERIFY.md`) confirmed the key and, at the time, both "read in part" statuses, and asked for eight
+fixes. All are made; none changed a status. The statuses were later lowered at reading review (below).
 
 1. 24874 L09 and L12: the first reconciled copy wrote the sign the sense needs where the passes and the blind copy saw
    another (`p7l5t5c7` for `p7l565c7`, `l54t5` for `l546?5`, `m3nt?5` for `m3nl?5`). The transcription now keeps the
@@ -176,6 +180,29 @@ a status.
 8. Internal workspace references were removed from these notes.
 
 The verifier's figures in `VERIFY.md` predate these fixes. The scripts now set UTF-8 console output.
+
+## Reading review (6 Nov 2026)
+
+A reviewer independent of the solver (an AI language-model agent, for WAINUT) read each cipher sentence against the
+translation and three lines per letter against the photograph, as the repository's review rule asks. Result: holes in
+most sentences, so both letters are **decoded, not read**, and the target is classed "not read". No reading_review
+grade is recorded, since a "decoded, not read" entry needs none.
+
+- **24874**: six cipher sentences; two read ("Desidera dunque una giusta et per [...] relatione, mentre lei sa meglio
+  queli avertimenti [?che siano] necessarii"; "Di quelo so tralascio per non tediarla"). The middle (L03-L09) gives an
+  outline, but its two sentences carry 7 and 6 holes or guesses. L01-L03 have 11 holes or guesses in 22 words; L14-L20
+  have 10 holes in 33 words. Of the 76 words decoded verbatim, 43 rest on an s/5 or g/q/9 choice made by sense.
+- **24876**: three cipher sentences, all with holes. Block B holds after three opening holes and one guess ("[...] duca
+  di Baviera vuoglia in tutti modi la pace, sì che [?puol] considerare l'avantaggio che noi havremo"). Block A does not
+  build sentences (6 holes or guesses in 17 words; 4 in 12). Of the 32 words decoded verbatim, 18 rest on a class
+  choice.
+- **Sentence check** (`docs/_check_reading.py`, language "it", as the repository check runs it): 15% of sentences
+  clean on `reading_24874.md` (11 of 73), 28% on `reading_24876.md` (12 of 43). On the cipher prose alone: 1 of 8 clean
+  in 24874, 0 of 3 in 24876 (the clean sentences of 24876 are all in the clear passages, which are not counted). A
+  local run without a language gave 41% and 42%, because it guessed "es" and scored each sentence against every word
+  list; those figures are not the check's.
+- Open: 24874 L01-L03 and L14-L20, 24876 block A, ideally from a clean scan; that may raise either letter to "read in
+  part".
 
 ## Remaining gaps
 

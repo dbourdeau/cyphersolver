@@ -1,7 +1,7 @@
 # 24876: English translation of the cipher passages
 
 From the marked reading in `reading_24876.md`; holes kept as there (`[...]` not read, `[?word]` a guess from
-context). Status: read in part.
+context). Status: decoded, not read (draft translation as a reading aid).
 
 A: "... of Bavaria [?do] not [?come] [...] [...], so that we must fight [...] [...] [...] of complaints; to all of it
 an answer is already given to him [...] [...] [...] and the duty [...]."
