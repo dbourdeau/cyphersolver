@@ -40099,15 +40099,15 @@
    "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza and document; not flagged as cipher in the MAP inventory (vol. 3, archive.org OCR); DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap.",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "cipher or hard hand not settled at full size, and the edition not opened. Doc. 11 (A0000023, 1272 px) and 12-15 at server maximum: a fast, idiosyncratic hand in which many words read ('domani', 'madona', 'conforteranno', 'al campo', 'cavalli', 'gesto/gelo' for questo/quello, the date 'in Milano a di 8 luglio 1477' and the signature 'Tomaso Soderini' clear) and many do not, with vowel patterns and endings of ordinary Italian; no signs, figures or gloss. To decide: transcribe doc. 11 line by line and test whether the non-reading words follow a fixed letter swap, and search Lorenzo's Lettere II (1474-1478, ed. Fubini, Google Books 1hpdAAAAMAAJ, old interface in Chrome) for 'XLVIII, 11' ... 'XLVIII, 15' and 'Soderini luglio 1477': its notes and Rochon, La jeunesse de Laurent (1963), which uses Soderini's 1477 letters in MAP XLVIII without mention of cipher, would show whether the text was read as ordinary prose. The Google Books feed found no 'MAP, XLVIII, 11'-'15' citation."
+   "vetting_note": "edition partly answers but does not settle cipher versus hard hand. Lettere II (1474-1478, ed. Fubini, 1hpdAAAAMAAJ, opened in Chrome): p. 432 cites 'T. Soderini a Lorenzo, 17 novembre, MAP, XLVIII, 13' and paraphrases it as ordinary content (the Sienese accepting an orator, Nov 1477), with no mention of cipher; 'XLVIII, 11', '12', '14', '15' probes hit only index pages and unrelated notes (pp. 96, 409, 412, 417, 529-560); 'Soderini' 20 pages, 'cifra' 9 pages (75, 180, 276 ...), 'gergo' 0. The editor's date (17 Nov) conflicts with the lead's 'luglio 1477' for doc. 13, so the identification needs checking. Leans not cipher (editor read doc. 13 as prose; n18 found ordinary Italian vowel patterns, no signs), but a not_cipher verdict needs a line-by-line reading of docs 11-15 at full size."
   },
   {
    "id": 2376,
    "counted": true,
    "year": 1481,
-   "date": "Aug 1481 (\"in Milano a di .. d'agosto 1481\")",
+   "date": "27 Jun 1481 (recto 'in Milano a di .. di giugno 1481'; Lettere V and VI give 27 June)",
    "title": "Tommaso Soderini, Milan, August 1481: a full page of sign-and-figure cipher plus a ten-line cipher postscript, bare",
-   "correspondents": "Tommaso Soderini (signed \"v. Tomaso ...\" on the verso), Milan -> Lorenzo de' Medici",
+   "correspondents": "Tommaso Ridolfi, Florentine orator in Milan -> Lorenzo de' Medici (per Lettere V/VI; verso signature 'v. Tomaso R[idolfi] or.', as on the clear neighbours 62 and 64)",
    "place": "Milan",
    "language": "Italian (sign cipher with digits; one clear date line)",
    "region": "Italy",
@@ -40143,7 +40143,27 @@
    "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza and document; not flagged as cipher in the MAP inventory (vol. 3, archive.org OCR); DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap.",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "a second copy of this letter is cited and not seen. Lorenzo's Lettere V (1480-1481, ed. Mallett, Google Books zB9dAAAAMAAJ) says, per the Google Books feed: '[la lettera del] Ridolfi del 27 giugno era stata scritta interamente in cifra e riguardava gli ultimi sviluppi delle vicende genovesi (T. Ridolfi a Lorenzo, 27 giugno, MAP, XLVIII, 63 e Sig., X, VIII, 4, III, c. 51v)'; Lettere VI (1481-1482, CSBdAAAAMAAJ) cites the same pair just before 'Ma Ludovico era piu cauto'. So the writer is Tommaso Ridolfi (not Soderini) and the date 27 June 1481 (the leaf reads 'di giugno 1481', not agosto), and a parallel text exists at ASF Signori, Dieci di Balia, Otto di Pratica, Legazioni e commissarie / Responsive 4, III, c. 51v, which may be the clear or deciphered copy that let the editor give its subject. Needed: the Lettere V and VI pages in Chrome (old interface, search inside 'XLVIII, 63' and '27 giugno') to see whether Mallett quotes the deciphered content, and the Sig. X VIII 4 copy (archive only, not online) to see whether it is clear. Everything else checked: see notes."
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch c35",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP XLVIII 63, IIIF https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100048/A0000143.ptif and A0000144 (1272 px; batch n18)",
+     "extent": "recto about 30 lines plus a 10-line postscript, verso 2 lines: about 1,500 signs",
+     "cipher": "dense sign-and-figure cipher (Greek-like forms, digits 3 6 7 8 9, '=' and '+'), clear dating line and signature only; no gloss on the leaf."
+    },
+    "prior_art": {
+     "decode": "known.py 'XLVIII, doc. 63', 'Tommaso Soderini', 'Ridolfi' (harvested DECODE dump): only this lead; no DECODE record of MAP XLVIII.",
+     "tomokiyo": "cryptiana italian.htm checked in n18: nothing on Ridolfi or Soderini 1481.",
+     "lasry": "GL.htm checked in n18: no Florentine item of 1481.",
+     "edition": "Lorenzo de' Medici, Lettere V (1480-1481, ed. Mallett, Google Books zB9dAAAAMAAJ) opened in Chrome: p. 257 is Lorenzo's reply to Ridolfi of 3 July 1481 ('Di quello mi scrivete in cifra non so che mi credere ... non e seguito altro', n. 13); n. 13 says Ridolfi's letter of 27 June was written entirely in cipher and concerned the latest Genoese events, citing 'MAP, XLVIII, 63 e Sig., X, VIII, 4, III, c. 51v'. Sig., X, VIII = Signori, Dieci di Balia, Otto di Pratica, Legazioni e Commissarie, Missive e Responsive (sigle list p. xiv), a register holding copies of Ridolfi's legation letters (e.g. 21 May: MAP XLVIII 77 and Sig. X VIII 4 III cc. 38v-39r, p. 204). Lettere VI (1481-1482, CSBdAAAAMAAJ) p. 11 uses its content: 'Roberto di Sanseverino ed il duca del Monferrato erano nettamente favorevoli ad appoggiare gli esuli (T. Ridolfi a Lorenzo, 27 giugno, MAP, XLVIII, 63 e Sig., X, VIII, 4, III, c. 51v ...)'.",
+     "literature": "web searches in n18 (Ridolfi 1481 cifra; Sig. X VIII series): only a Warwick index of Ridolfi's 1481 letters to the Otto; no cryptologic study of this letter."
+    },
+    "key_check": "LXXII 178-188 and CXIX 115-127 Laurentian key sheets not compared; not needed since the text is on record in the register copy.",
+    "duplicates": "known.py on shelfmark, Soderini, Ridolfi: only this lead.",
+    "verdict": "read",
+    "closed": "the plaintext is on record: the register copy ASF Signori, Dieci, Otto, Legazioni e Commissarie, Missive e Responsive 4, III, c. 51v (archive only, not seen) is cited beside MAP XLVIII 63 in Lettere V p. 257 n. 13 and VI p. 11, and Mallett gives its content (Genoese events; Roberto da Sanseverino and the marquis of Monferrato favouring the exiles). Not printed in full; the register leaf would give the text."
+   }
   },
   {
    "id": 2377,
@@ -40332,7 +40352,28 @@
    "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza and document; not flagged as cipher in the MAP inventory (vol. 3, archive.org OCR); DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap.",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "tiny, and printed in an edition not opened. The six code signs (a box with a cross-stroke twice, a cross, 'B', a triangle with 'v', a circled cross) are single symbols about 25-40 px high on a 1272-px page (line height about 45 px), in a clear 30-line copy in Lorenzo's hand headed 'Abram'. The letter is in the Protocolli (Del Piazzo 1956: 'di L. all'Ugolini, 1486 agosto 20, M. a P., LXXII, 403'), the Censimento (1964) and is printed in Lorenzo's Lettere IX (1485-1486, ed. Butters 2002, Google Books cSFdAAAAMAAJ; the feed shows its contents line 'A BACCIO UGOLINI, 20 AGOSTO 1486'). Needed: the Lettere IX page in Chrome (old interface, search inside 'Abram', 'LXXII, 403', 'segno') to see whether the editor resolves the signs (the key sheet 'Cifra col Baccio Ugolini' is LXXII 181). If resolved, close as read; if printed unresolved, six person signs are too slight for a catalogue entry and the lead is a key lookup on LXXII 181."
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch c35",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP LXXII 403, IIIF .../00100072/A0001027.ptif (recto, 1272x1807) re-fetched 6 Nov 2026; key sheet LXXII 181 at A0000423 (1272x1341)",
+     "extent": "a clear 30-line copy in Lorenzo's hand headed 'Abram', with six code signs in the second paragraph and one on the verso",
+     "cipher": "nomenclator signs only: box-with-cross (three times), '+', 'B', a triangle followed by a v-topped sign, a circled cross; text otherwise clear."
+    },
+    "prior_art": {
+     "decode": "known.py 'LXXII, doc. 403', 'Ugolini' (harvested DECODE dump): only this lead and notes on LXXII 181.",
+     "tomokiyo": "cryptiana italian.htm: no Ugolini or Lorenzo nomenclator of 1486.",
+     "lasry": "GL.htm: no Florentine item of 1486.",
+     "edition": "Lettere IX (1485-1486, ed. Butters, Google Books cSFdAAAAMAAJ) opened in Chrome: the letter is lett. 895, pp. 409-415 (contents p. 465; running head 'A Baccio Ugolini, 20 agosto 1486'); p. 411 prints the first paragraph ('Scrivo ad questa parte al Lanfredino d'una certa mia spetialita molto ragionevole'), p. 412 its end ('aiutatemene manibus pedibus'); the sign paragraph could not be displayed in snippets. Page probes: p. 412 contains 'Papa' and 'Re' but not 'cifra', 'originale', 'segno' or 'San Germano'; 'Abram' and 'LXXII, 403' have no hit in the volume. Whether Butters resolves the signs is therefore not seen.",
+     "literature": "none found on this letter; the key sheet LXXII 181 ('Cifra col Baccio Ugolini') is unpublished as far as checked."
+    },
+    "key_check": "key sheet LXXII 181 read on the scan: Re Ferrando = triangle; Duca di Calavria = v-topped sign; Duchessa di Calavria = cup sign; Secretario = pi; Don Federigo = dotted circle; Badia di San Germano = B; Badia di Monte Vergine = C; Badia della Cava = D; Piero di Lorenzo, Giuliano di Lorenzo, Figliuola del canat[...]; S. Virginio; Pratica per Piero = box-with-cross; Pratica per Giuliano = circled cross; Giovanni di Lorenzo = asterisk; Dota = '+'. Every sign in the letter is on it.",
+    "key_in_volume": "MAP LXXII 181, 'Cifra col Baccio Ugolini', same filza: tested, reads all six signs.",
+    "duplicates": "known.py on LXXII 403, Ugolini, Abram: only this lead.",
+    "verdict": "key_lookup",
+    "closed": "six person/matter signs in a clear letter, all read with key sheet LXXII 181 in the same filza: 'circa [pratica per Piero]', 'el modo della [dota]', '[Badia di San Germano]', '[Re Ferrando] [Duca di Calavria]', 'maxime di [pratica per Piero] et [pratica per Giuliano]'. Printed as Lettere IX lett. 895 (pp. 409-415); too slight for a catalogue entry."
+   }
   },
   {
    "id": 2379,
@@ -40384,7 +40425,7 @@
    "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza and document; not flagged as cipher in the MAP inventory (vol. 3, archive.org OCR); DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap.",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "the printed Lettere not opened. The minute is a registered letter of Lorenzo to Giovanni Lanfredini: the Protocolli (Del Piazzo 1956) list it at 'M. a P., CXXXVII, 504' just before the letter of 27 Apr 1489, the Censimento (1964) places 'MAP, CXXXVII, 504' among the Lanfredini letters of November 1488, and Lettere XV (marzo-agosto 1489, ed. Boninger, Google Books oSQsAQAAMAAJ / JgcwAQAAMAAJ) cites it in its notes to the letter to Lanfredini of 28 Mar 1489 ('il testo di due suppliche riguardanti la costruzione e dotazione del convento fiorentino di San Gallo (MAP, CXXXVII, 504; cfr. Kent, Lorenzo de' Medici, pp. 97-99)'). Its text (answering Lanfredini's letters of the 11th and 13th on Perugia, the Baglioni and the Oddi, 'N.S.') belongs in Lettere XIV or XV, whose editors print Lorenzo's cipher passages from deciphered or register copies where they survive. Needed: Chrome search inside the Lettere volume for Oct 1488 - Feb 1489 and vol. XV for 'CXXXVII, 504' and 'Oddi', to see whether the letter is printed and whether its ~14 cipher runs are given in clear. The Lanfredini Naples edition (Corrispondenza degli ambasciatori fiorentini a Napoli, 1484-1487) ends before this letter. Everything else checked: see notes."
+   "vetting_note": "the Lettere volume that would print this minute was not found online. Lettere XV (marzo-agosto 1489, ed. Boninger, oSQsAQAAMAAJ, opened in Chrome): 'CXXXVII, 504' only on p. 40, the note on the San Gallo supplications (letter of 28 Mar 1489); 'CXXXVII' 7 pages, 'Oddi' 10 pages, none showing this letter as printed. The volume(s) covering Aug 1488 - Feb 1489 (Lettere XIII/XIV, after vol. XII febbraio-luglio 1488, OSJdAAAAMAAJ) have no Google Books record in the gdata feed (queries 'agosto 1488', 'ottobre 1488', 'febbraio 1489', 'Lettere 13/14'); the Books API quota is exhausted. Needed: Lettere XIII or XIV in a library, search 'CXXXVII, 504', 'Oddi', 'Baglioni'."
   },
   {
    "id": 2383,
