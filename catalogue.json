@@ -66865,6 +66865,80 @@
    "repository": "print"
   },
   {
+   "id": 2223,
+   "counted": true,
+   "region": "Central Europe",
+   "seen": "image",
+   "source": "Sweep D, Lang 2015 repertory",
+   "score_note": "Scored from Lang's repertory entry (thesis p. 248) during the Nov 2026 sweep D (research/sweep_2026-11_D_east_north/); ciphertext not viewed",
+   "prior_art": "open as far as checked (4 Nov 2026: Lang 2015 repertory p. 248 marks it undeciphered; known.py on shelfmark and names, no hit; web search found no decipherment; Tomokiyo, Lasry, DECODE not searched for this item)",
+   "year": 1553,
+   "date": "30 Oct 1553 - 29 Sep 1554",
+   "title": "Andras Bathory to Tamas Nadasdy: three letters with Hungarian signs and letters, undeciphered",
+   "correspondents": "Andras Bathory (Somlyo) -> Tamas Nadasdy (palatine)",
+   "place": "Hungary",
+   "language": "Hungarian",
+   "shelfmark": "Magyar Tortenelmi Tar IV/6, nos. 22, 23, 28 (pp. 224-230); Lang C.Bath.01-03; originals in the Nadasdy archive (MNL OL E 185)",
+   "folio_note": "3 letters, partly cipher",
+   "cls": "C",
+   "status": "Lang: signs (magyar jelek es betuk) \"megfejtetlen\"; no key. The edition prints the signs.",
+   "why": "Mid-16th-century Hungarian sign cipher between two magnates in the Turkish war zone; no other Hungarian-language cipher of this age is read.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "Get MTT IV/6 pp. 224-230 and look for the Nadasdy archive images; test as a monoalphabetic sign substitution.",
+   "needs_archive_scan": "partly",
+   "access_note": "printed in MTT IV/6; originals at MNL OL E 185 (images not checked)",
+   "links": [
+    {
+     "label": "Lang 2015, Titkosirás a kora ujkori Magyarországon (MTA doctoral thesis, repertory pp. 191-330), p. 248",
+     "href": "https://real-d.mtak.hu/922/7/dc_758_13_doktori_mu.pdf"
+    }
+   ],
+   "period": "1497-1559",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch c32",
+    "seen": {
+     "kind": "transcription",
+     "where": "Történelmi Tár 1905 (MTT IV/6), Komáromy, Somlyai Báthory András levelei Nádasdy Tamáshoz, nos. 22, 23, 28, pp. 224-230, Google Books 8JvzAAAAMAAJ (Wisconsin) old interface in Chrome: snippet images of pp. 224, 225, 227, 229",
+     "extent": "a few signs and sign-groups per letter; part printed as type facsimile, part replaced by the editor's placeholder '(titkos jelek)'",
+     "cipher": "p. 224: '(titkos jelek) szól vala. Írta vala kgd nekem, hogy az ⊙ szabad ...'; p. 225: '(titkos jelek) írt volna (titkos jel) az (titkos jelek) de nem azrul írtak volt, hanem hogy megírják [box-shaped sign] mint és mi statusban vagyon az p g f s, hogy azt megértvén, [box-shaped sign] hogyan te kgddel végezni ... hiszem hogy ɔɔɔ— és [square sign] nem lesnek bontói'; p. 229 after no. 28's close 'Külön darab papiroson:' (an enclosure on a separate slip). Signs printed bare, no resolution given beside them in the snippets."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Báthory András', 'Somlyai', 'Nádasdy Tamás' (harvested DECODE dump and repo): only research/oldest/scan_2026-09-23 notes listing these letters; no DECODE record.",
+     "tomokiyo": "cryptiana has no Hungarian 16th-century item; no Báthory-Nádasdy letter listed.",
+     "lasry": "No Lasry paper or GL.htm entry on Nádasdy correspondence; nothing for 1553-1554 Hungary.",
+     "edition": "Komáromy's edition in Történelmi Tár 1905 pp. 224-230 prints the signs partly and marks the rest '(titkos jel/jelek)'; no decipherment in the snippets read (pp. 224, 225, 229). Lang 2015 repertory p. 248 C.Báth.01-03: 'magyar jelek és betűk, megfejtetlen', részleges.",
+     "literature": "Lang 2015 p. 68 n. 85 cites C.Báth.01-03 among letters where signs the recipient left unresolved could not be read by the editor either; the Sept 2026 oldest-cipher scan (research/oldest/scan_2026-09-23/central_north.md) lists them unread. No decipherment found."
+    },
+    "key_check": "No key known for Báthory's signs; the ⊙, box and 'p g f s' signs look like name symbols (a small nomenclator), too few to rebuild a table from the printed fragments.",
+    "duplicates": "known.py 'Báthory András', 'Somlyai', 'Nádasdy Tamás', 'Kerecsényi': only the oldest-cipher scan note and the leads themselves; no catalogue entry or target; the Kerecsényi letters (lead 2224) are a separate series in TT 1906.",
+    "searches": [
+     {
+      "query": "Google Books 8JvzAAAAMAAJ search-inside \"titkos jelek\"",
+      "result": "pp. 224 and 225: snippet images show printed signs (⊙, box signs, 'p g f s', 'ɔɔɔ—') and '(titkos jelek)' placeholders, no resolution"
+     },
+     {
+      "query": "Google Books 8JvzAAAAMAAJ search-inside Nádasdy Báthory 1554",
+      "result": "p. 227 running head 'Somlyai Báthory András levelei Nádasdy Tamáshoz' and p. 229 close of no. 28 'Andreas Báthory de Somlyó mpr. / Külön darab papiroson:'"
+     },
+     {
+      "query": "Lang 2015 thesis grep Somlyai / C.Báth (repertory p. 248, n. 85)",
+      "result": "'magyar jelek és betűk, megfejtetlen' for all three; n. 85 names them as unresolved examples"
+     },
+     {
+      "query": "known.py Báthory András Somlyai Nádasdy Tamás",
+      "result": "no catalogue entry, target or DECODE record"
+     }
+    ],
+    "verdict": "open"
+   },
+   "repository": "mnl"
+  },
+  {
    "id": 2225,
    "counted": true,
    "region": "Central Europe",
@@ -70918,6 +70992,93 @@
     "verdict": "open"
    },
    "repository": "unidentified"
+  },
+  {
+   "id": 2307,
+   "counted": true,
+   "year": 1478,
+   "date": "16 Jan 1478 (as written; Florentine style would make it 1479)",
+   "title": "Giovanni Mazzinghi's cipher letter of 16 January 1478, bare; the same cipher is glossed in MAP 72/170 a week later",
+   "correspondents": "Giovanni Mazzinghi -> (the Medici; addressee not named on the page)",
+   "place": "not stated (Rome likely: the sibling letter reports papal news)",
+   "language": "Italian (symbol cipher with clear words)",
+   "region": "Italy",
+   "period": "15th century",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza LXXXIX, doc. 142 (old c. 149)",
+   "folio_note": "One leaf, recto full of cipher (about 45 lines, some clear words between runs); verso blank but endorsed \"1478 ... adi 16 di gennaio ... Gio. Mazinghi\" and \"Cifra\". Inventory vol. 3: \"Giovanni Mazzinghi. (cifrato). s. l., 1478 gen. 16, n. 142\".",
+   "cls": "A",
+   "status": "No decipherment on, over or beside the cipher (checked at 1600 px). The sign set (x, ‡, H, =, 5-like signs) is the one of MAP LXXII doc. 170 (23 Jan 1478), which carries a full interlinear decipherment.",
+   "why": "A pre-1497 Florentine cipher letter of the Medici circle in the months around the Pazzi conspiracy, unread on the page, with a glossed sibling in the same system: a short route to a reading.",
+   "importance": 4,
+   "solvability": 5,
+   "difficulty": 2,
+   "verify": "Transcribe MAP 72/170, build the key from its interlinear pairs, apply it to 89/142; check the date style and Mazzinghi's post (Rome?) in the letter itself.",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=89&d=142&c=",
+     "label": "MAP filza 89, doc. 142"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=94455",
+     "label": "image id 94455"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=94456",
+     "label": "image id 94456"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100089/A0000463.ptif/full/full/0/default.jpg",
+     "label": "IIIF image, recto"
+    }
+   ],
+   "source": "ASF Mediceo avanti il Principato (MAP) images + archive.org OCR of the MAP inventory, Italian state archives retry, Nov 2026",
+   "score_note": "Scored from the MAP images viewed during the Italian state archives retry, 6 Nov 2026 (research/sweep_2026-11_italian_state_retry/)",
+   "access_note": "scans public on the ASF MAP site, no login, curl works: /map/ricerca/ricerca-su-filza/?f=<filza>&d=<doc> and IIIF images from /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (1600 px max)",
+   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza, the document or the correspondent; the Google Books feed shows these items only in the MAP inventory itself; DECODE, Tomokiyo and Lasry not searched. Marco Vito (Vienna) is working on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap.",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch c32",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP filza LXXXIX doc. 142, IIIF https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100089/A0000463.ptif (recto) and A0000464 (verso), native 1272x1837, viewed in four zoomed bands (batch n08, 6 Nov 2026)",
+     "extent": "one leaf: recto about 45 lines of symbol cipher with clear words between runs; verso blank except the endorsement",
+     "cipher": "letter-like symbol cipher (x, double-dagger, H, =, 5, 6, 4, 8 forms) with clear words between runs (\"quanto\", \"conforto\", \"Bisognerà\", \"mille\", \"potrò\"); head \"+ ... di gennaio 1478\"; verso endorsed \"1478 adì 16 di gennaio / da G. Mazinghi\" and \"Cifra\". No interlinear, marginal or foot decipherment anywhere on the leaf; neighbours 89/141 and 89/143 carry none either."
+    },
+    "prior_art": {
+     "decode": "known.py (harvested DECODE dump plus repo) on Mazzinghi, Mazinghi, LXXXIX, 'Mediceo avanti', and a regex over the 10,106-record DECODE list.json: no record of this letter or any MAP filza LXXXIX item; not on DECODE.",
+     "tomokiyo": "cryptiana italian.htm, Florence section: only Lasry's Siena no. 11 (Acciaiuoli to Lorenzo, Rome 13 Jun 1478, R4800) and the Gabbrielli 1425 cipher; no MAP letter and no Mazzinghi.",
+     "lasry": "GL.htm (targets/gramont1529) has no Florentine 1478 item; his Siena 2308 report covers R4800 (Acciaiuoli) only, a different sign set.",
+     "edition": "Lorenzo de' Medici, Lettere, opened in Chrome by Google Books search-inside (old interface, books.google.fr ...&newbks=0) on the Michigan scans: vol. II 1474-1478 (ed. Fubini, id 1hpdAAAAMAAJ) 'Mazzinghi' 0, 'Mazinghi' 0, '\"LXXXIX, 142\"' 0, 'LXXXIX 142' 0 (control: 'LXXXIX' 13 pages, 'cifra' 9 pages); vol. III 1478-1479 (ed. Rubinstein, id MBxdAAAAMAAJ) 'Mazzinghi' 0, 'Mazinghi' 0, '\"LXXXIX, 142\"' 0, 'LXXXIX 142' 0 (control: 'LXXXIX' 18 pages, 'cifra' 3 pages). Neither volume cites, quotes or deciphers MAP 89/142, in either date style. The ids named before (iztLAQAACAAJ, cRUQzQEACAAJ, mIcBzQEACAAJ, 9k4LtQEACAAJ) are records without scans. The MAP inventory (T1A-AQAAIAAJ) only summarises it as 'Giovanni Mazzinghi. (cifrato)'.",
+     "literature": "Google Books feed 'Giovanni Mazzinghi' 1478, 'Mazinghi Lorenzo 1478', 'Mazzinghi cifra 1478': only the MAP inventory entry, the Protocolli del carteggio index (a Giuliano Mazinghi 1480 and an abbot 1491, not this letter) and unrelated Mazzinghi; Marco Vito's encrypted-MAP work (HistoCrypt 2025; his 1486-1491 project) is outside 1478."
+    },
+    "key_check": "No key tried here. MAP LXXII 170 (lead 2308, 23 Jan 1478) uses the same sign set and carries a full interlinear decipherment, so the key can be rebuilt from its pairs; that has not been done, and no reading of 89/142 with it is on record. Lasry's Siena no. 11 key (1478) is a different sign set.",
+    "key_held": "MAP LXXII 170 (lead 2308): same sign set, glossed interlinear, key rebuildable from the pairs; not tested on 89/142.",
+    "duplicates": "known.py 'Mazzinghi', 'Mazinghi', 'LXXXIX', 'Mediceo avanti', 'filza LXXXIX': only this lead, its sweep (research/sweep_2026-11_italian_state_retry) and lead 2308 (the glossed sibling, a different letter of 23 Jan); no catalogue entry or target holds this document.",
+    "searches": [
+     {
+      "query": "Google Books 1hpdAAAAMAAJ (Lettere II) search-inside: Mazzinghi / Mazinghi / \"LXXXIX, 142\"",
+      "result": "0 / 0 / 0 hits, while LXXXIX alone hits 13 pages and cifra 9: the volume does not cite MAP 89/142"
+     },
+     {
+      "query": "Google Books MBxdAAAAMAAJ (Lettere III) search-inside: Mazzinghi / Mazinghi / LXXXIX 142",
+      "result": "0 / 0 / 0 hits, while LXXXIX alone hits 18 pages and cifra 3: no citation of the Mazzinghi cipher of 16 Jan 1478/79"
+     },
+     {
+      "query": "Google Books feed: Mazinghi Lorenzo 1478; Mazzinghi cifra 1478",
+      "result": "MAP inventory 'Giovanni Mazzinghi (cifrato) 1478 gen. 16 n. 142' and the Protocolli index (other Mazinghi); no edition or decipherment of this letter"
+     },
+     {
+      "query": "known.py Mazzinghi Mazinghi LXXXIX (DECODE dump and repo)",
+      "result": "only this lead, its sweep and the sibling lead 2308; nothing on DECODE"
+     }
+    ],
+    "verdict": "open"
+   },
+   "repository": "asf"
   },
   {
    "id": 2309,

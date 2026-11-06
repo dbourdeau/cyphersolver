@@ -1,0 +1,134 @@
+{
+ "2307": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch c32",
+  "seen": {
+   "kind": "scan",
+   "where": "ASF MAP filza LXXXIX doc. 142, IIIF https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100089/A0000463.ptif (recto) and A0000464 (verso), native 1272x1837, viewed in four zoomed bands (batch n08, 6 Nov 2026)",
+   "extent": "one leaf: recto about 45 lines of symbol cipher with clear words between runs; verso blank except the endorsement",
+   "cipher": "letter-like symbol cipher (x, double-dagger, H, =, 5, 6, 4, 8 forms) with clear words between runs (\"quanto\", \"conforto\", \"Bisognerà\", \"mille\", \"potrò\"); head \"+ ... di gennaio 1478\"; verso endorsed \"1478 adì 16 di gennaio / da G. Mazinghi\" and \"Cifra\". No interlinear, marginal or foot decipherment anywhere on the leaf; neighbours 89/141 and 89/143 carry none either."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump plus repo) on Mazzinghi, Mazinghi, LXXXIX, 'Mediceo avanti', and a regex over the 10,106-record DECODE list.json: no record of this letter or any MAP filza LXXXIX item; not on DECODE.",
+   "tomokiyo": "cryptiana italian.htm, Florence section: only Lasry's Siena no. 11 (Acciaiuoli to Lorenzo, Rome 13 Jun 1478, R4800) and the Gabbrielli 1425 cipher; no MAP letter and no Mazzinghi.",
+   "lasry": "GL.htm (targets/gramont1529) has no Florentine 1478 item; his Siena 2308 report covers R4800 (Acciaiuoli) only, a different sign set.",
+   "edition": "Lorenzo de' Medici, Lettere, opened in Chrome by Google Books search-inside (old interface, books.google.fr ...&newbks=0) on the Michigan scans: vol. II 1474-1478 (ed. Fubini, id 1hpdAAAAMAAJ) 'Mazzinghi' 0, 'Mazinghi' 0, '\"LXXXIX, 142\"' 0, 'LXXXIX 142' 0 (control: 'LXXXIX' 13 pages, 'cifra' 9 pages); vol. III 1478-1479 (ed. Rubinstein, id MBxdAAAAMAAJ) 'Mazzinghi' 0, 'Mazinghi' 0, '\"LXXXIX, 142\"' 0, 'LXXXIX 142' 0 (control: 'LXXXIX' 18 pages, 'cifra' 3 pages). Neither volume cites, quotes or deciphers MAP 89/142, in either date style. The ids named before (iztLAQAACAAJ, cRUQzQEACAAJ, mIcBzQEACAAJ, 9k4LtQEACAAJ) are records without scans. The MAP inventory (T1A-AQAAIAAJ) only summarises it as 'Giovanni Mazzinghi. (cifrato)'.",
+   "literature": "Google Books feed 'Giovanni Mazzinghi' 1478, 'Mazinghi Lorenzo 1478', 'Mazzinghi cifra 1478': only the MAP inventory entry, the Protocolli del carteggio index (a Giuliano Mazinghi 1480 and an abbot 1491, not this letter) and unrelated Mazzinghi; Marco Vito's encrypted-MAP work (HistoCrypt 2025; his 1486-1491 project) is outside 1478."
+  },
+  "key_check": "No key tried here. MAP LXXII 170 (lead 2308, 23 Jan 1478) uses the same sign set and carries a full interlinear decipherment, so the key can be rebuilt from its pairs; that has not been done, and no reading of 89/142 with it is on record. Lasry's Siena no. 11 key (1478) is a different sign set.",
+  "key_held": "MAP LXXII 170 (lead 2308): same sign set, glossed interlinear, key rebuildable from the pairs; not tested on 89/142.",
+  "duplicates": "known.py 'Mazzinghi', 'Mazinghi', 'LXXXIX', 'Mediceo avanti', 'filza LXXXIX': only this lead, its sweep (research/sweep_2026-11_italian_state_retry) and lead 2308 (the glossed sibling, a different letter of 23 Jan); no catalogue entry or target holds this document.",
+  "searches": [
+   {
+    "query": "Google Books 1hpdAAAAMAAJ (Lettere II) search-inside: Mazzinghi / Mazinghi / \"LXXXIX, 142\"",
+    "result": "0 / 0 / 0 hits, while LXXXIX alone hits 13 pages and cifra 9: the volume does not cite MAP 89/142"
+   },
+   {
+    "query": "Google Books MBxdAAAAMAAJ (Lettere III) search-inside: Mazzinghi / Mazinghi / LXXXIX 142",
+    "result": "0 / 0 / 0 hits, while LXXXIX alone hits 18 pages and cifra 3: no citation of the Mazzinghi cipher of 16 Jan 1478/79"
+   },
+   {
+    "query": "Google Books feed: Mazinghi Lorenzo 1478; Mazzinghi cifra 1478",
+    "result": "MAP inventory 'Giovanni Mazzinghi (cifrato) 1478 gen. 16 n. 142' and the Protocolli index (other Mazinghi); no edition or decipherment of this letter"
+   },
+   {
+    "query": "known.py Mazzinghi Mazinghi LXXXIX (DECODE dump and repo)",
+    "result": "only this lead, its sweep and the sibling lead 2308; nothing on DECODE"
+   }
+  ],
+  "verdict": "open"
+ },
+ "2217": {
+  "unvetted": "Edition question settled, contemporary-clear question not. Censimento (1964, Google Books seEYGFQqM1kC, old interface in Chrome) p. 48: its two Lorenzo pieces in 'BNF, GC, 137' are '[Niccolò Michelozzi] [3 lug. 1481?]' and '[Niccolò Michelozzi] 5 ago. 1481' (snippet images read); the Censimento gives no folios for GC 137, and Lettere V p. 262 (archive.org bwb_KU-999-230_5, search 'GC, 137') identifies the first as cc. 20r-21v, Lettere VI no. 509 p. 26 (bwb_KU-999-229_6) the second as cc. 6r-9r. The '137, c. 13' phrase hit on p. 48 could not be placed in any snippet and is not one of these entries; Lettere VI has no hit for Palavisino, Strasoldano or ghibellino. So no edition prints c. 13. Alignment test of c. 13r (BNCF0003827895, 985x217) against the clear strip c. 12r (BNCF0003827893, 1036x576, transcribed: 'El conte Girolamo ha sollecitato l'andata di m. Ascanio a Roma, qual si stima sia opera del S. L[odovi]co ... el palavisino ... m. Johanfrancesco ... el S. Lco et m. palavisino et strasoldano è sospecto assai parendo loro che lui sia di ghibellini', 261 letters): c. 13r transcribed to 263 tokens over 37 sign types (scratchpad c32/tools/align.py). Results: (1) the sign '11' occurs at least 8 times, so it is not the 'll' of sollecitato/ghibellini; (2) the near-repeat ('5 g 5 3 n m π 11 b t' end of line 1 / '5 y 5 3 n π b t' mid line 3) sits at about 22% and 61% of the strip, not where the two 'palavisino' fall in the clear (49%, 74%); it would fit 'el S. Lco et' (27%, 70%) better, but no consistent sign-to-letter table was found for it together with 'sollecitato'; (3) a beam-search crib alignment scored the c. 12r text no better than three unrelated Italian controls (cost 451 vs 451-525), i.e. no signal either way. The lengths (263 tokens vs 261 letters) and the opening code-like signs ('ħ y nō' for 'El conte Girolamo'?) keep the hypothesis alive. Needs a careful sign-by-sign transcription of c. 13r at higher resolution (the BNCF viewer serves 985 px only) and a proper homophonic crib attack; if it fits, verdict read (contemporary clear), if it is excluded, open."
+ },
+ "2219": {
+  "unvetted": "Teleki VIII no. 266 pp. 290-292 still not seen beyond its first lines. Chrome pass c32 with the old Google Books interface (books.google.fr/books?id=FjzUAAAAMAAJ&newbks=0&q=...): p. 290 snippet shows the heading 'Kővár, 1678 október 10. Teleki Mihály Rhédey Ferencznek' and 'irott Kgld levelét¹ böcsülettel vöttem ...' in clear; a sweep of 'Ferencznek N' for N = 10-99 hits p. 290 only for 10 (the date) and 73, so p. 290 carries no printed number groups; the cipher Lang describes ('számok, valószínűleg homof., megfejtetlen', Lang 2015 p. 292; p. 68 n. 87: the whole ciphered part unresolved) must be on pp. 291-292, which no anchor word reached. The edition's convention is now proven on p. 307 (no. 283, Rhédey's reply): unresolved numbers in brackets '[140 131 124 123]¹' and the deciphered word in italics ('leggonoszabbak'), so no. 266's numbers are very likely printed bare. Same volume p. 88 holds a page dense with numbers (hits for 12-88 with 'Ferencznek'), another cipher letter, not this lead. Needs Teleki VIII pp. 291-292 (HathiTrust with the Cloudflare check cleared by the user, or a library copy)."
+ },
+ "2220": {
+  "unvetted": "Teleki II no. 417 located but its text not seen. Chrome pass c32, Google Books PI7RAAAAMAAJ old interface: contents p. xiv '417. 1663 szeptember 24. Teleki Mihály Kászoni Mártonnak ... 614', next letter 418 on p. 616; the p. 614 snippet shows only the heading 'Kővár, 1663 szeptember 24. Teleki Mihály Kászoni Mártonnak'. No query reached the body of pp. 614-616, so neither the cipher (Lang 2015 p. 278 C.Tel.81: 'magyar, megfejtetlen, részleges', system not stated) nor any bracketed or italic resolution is visible. Needs Teleki II pp. 614-616 (HathiTrust with the challenge cleared by the user, or a library copy). Keys to try once seen: DECODE Teleki keys R647-R651, R665-R673."
+ },
+ "2221": {
+  "unvetted": "Teleki IV no. 309 located, cipher not seen. Chrome pass c32, Google Books dY_RAAAAMAAJ old interface: contents p. xxviii '309. 1669 februárius 2. Kende Gábor Teleki Mihálynak ... 422'; the p. 424 snippet shows the close 'Datum in Cseke, die 2. Februarii 1669 / Kegyelmed kész szolgája Kende Gábor m. p.', so the letter itself ends on p. 424 (pp. 425-426 of Lang's range may be an enclosure). The 'titkos' hit on p. 426 earlier read as the editor's cipher note is in fact 'titkos pecséti alatt' (under his secret seal), not cipher. Lang 2015 p. 281 C.Ken.01 'magyar, megfejtetlen, részleges'; p. 139 n. 42 cites this letter as a clear letter carrying a still undeciphered cipher address or short note (perhaps a receipt note), so the cipher is a short endorsement-type line; whether the edition prints its signs (pp. 425-426?) is not visible. Needs Teleki IV pp. 422-426 (HathiTrust challenge cleared by the user, or a library copy)."
+ },
+ "2222": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch c32",
+  "seen": {
+   "kind": "transcription",
+   "where": "Teleki Mihály levelezése I (Gergely 1905), no. 191, pp. 220-221, Google Books WPERaH3mpaYC (ONB copy) old interface in Chrome: p. 220 heading 'Ebesfalva, 1658 július 6. Bornemisza Kata Teleki Mihálynak' and p. 221 snippet image read",
+   "extent": "four code groups printed on p. 221 ('020, 550207, 4y04, 9100'); Lang 2015 p. 145 n. 68 says Kata enciphered only one or two words of her own in this letter",
+   "cipher": "p. 221 prints, in a clear letter: 'mivel nincsen nálam leírva abban az írásban, az kit Kegyelmed itt hagyott. Ezek azok az kiket nem tudtam: 020, 550207, 4y04, 9100,¹ ezek nincsenek nálam' - four groups of Teleki's code that she could not read, printed bare with no resolution beside them. Her own one or two enciphered words were not reached in the snippets."
+  },
+  "prior_art": {
+   "decode": "known.py on 'Bornemissza Kata', 'Bornemisza Kata' (harvested DECODE dump and repo): no record; the Teleki keys on DECODE (R647-R651, R665-R673, NAH P 1238) are key records, not this letter.",
+   "tomokiyo": "cryptiana pages (unsolved, GL, crypto lists) have no Teleki or Hungarian item, nothing on Bornemissza.",
+   "lasry": "No Lasry paper or GL.htm row on Transylvanian or Teleki ciphers; nothing on this letter.",
+   "edition": "Teleki I (1905) no. 191 pp. 220-221 is the edition: the groups are printed bare on p. 221 (snippet image read); the editor's footnote 1 after '9100' was not reachable in snippets. Lang 2015 repertory p. 272 C.Bor.01: 'magyar, megfejtetlen, részleges'.",
+   "literature": "Lang Benedek, Titkosírás a kora újkori Magyarországon (2015) p. 95 quotes the passage and the four groups (n. 119) as an example of a recipient lacking the clavis; p. 145 n. 68: she 'clavized' only one or two words in this letter. No decipherment anywhere."
+  },
+  "key_check": "No key tried. The groups belong to Teleki's own system of 1658, which Kata did not hold; Teleki keys on DECODE (R647-R651, R665-R673) are of other years and were not tested on four groups.",
+  "key_held": "DECODE Teleki key records R647-R651 and R665-R673 (NAH P 1238), years not matched to 1658; not tested.",
+  "duplicates": "known.py 'Bornemissza Kata', 'Bornemisza Kata', 'Teleki': only this lead; catalogue 2218 (Teleki 1678 letters) and lead 1908 (P 1238 cluster) are other documents.",
+  "searches": [
+   {
+    "query": "Google Books WPERaH3mpaYC search-inside 550207 / 4y04",
+    "result": "p. 221 only; snippet image shows the four groups quoted in Kata's clear text with no resolution"
+   },
+   {
+    "query": "Google Books WPERaH3mpaYC search-inside \"július 6\" (Bornemissza Kata 1658)",
+    "result": "contents p. xvii '191. 1658 július 6. Bornemisza Kata Teleki Mihálynak ... 220' and the p. 220 letter heading; letter spans pp. 220-221"
+   },
+   {
+    "query": "Lang 2015 thesis (local copy of real-d.mtak.hu/922) grep Bornemissza, C.Bor.01",
+    "result": "repertory C.Bor.01 'megfejtetlen'; p. 95 quotes the groups; p. 145 n. 68 one or two enciphered words; no decipherment"
+   },
+   {
+    "query": "known.py Bornemissza Kata / Bornemisza Kata",
+    "result": "no catalogue entry, target or DECODE record for this letter"
+   }
+  ],
+  "verdict": "open",
+  "note": "The open cipher is tiny (four quoted code groups plus one or two words) and keyless: the session may prefer to fold it into a Teleki cluster rather than promote it alone."
+ },
+ "2223": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch c32",
+  "seen": {
+   "kind": "transcription",
+   "where": "Történelmi Tár 1905 (MTT IV/6), Komáromy, Somlyai Báthory András levelei Nádasdy Tamáshoz, nos. 22, 23, 28, pp. 224-230, Google Books 8JvzAAAAMAAJ (Wisconsin) old interface in Chrome: snippet images of pp. 224, 225, 227, 229",
+   "extent": "a few signs and sign-groups per letter; part printed as type facsimile, part replaced by the editor's placeholder '(titkos jelek)'",
+   "cipher": "p. 224: '(titkos jelek) szól vala. Írta vala kgd nekem, hogy az ⊙ szabad ...'; p. 225: '(titkos jelek) írt volna (titkos jel) az (titkos jelek) de nem azrul írtak volt, hanem hogy megírják [box-shaped sign] mint és mi statusban vagyon az p g f s, hogy azt megértvén, [box-shaped sign] hogyan te kgddel végezni ... hiszem hogy ɔɔɔ— és [square sign] nem lesnek bontói'; p. 229 after no. 28's close 'Külön darab papiroson:' (an enclosure on a separate slip). Signs printed bare, no resolution given beside them in the snippets."
+  },
+  "prior_art": {
+   "decode": "known.py on 'Báthory András', 'Somlyai', 'Nádasdy Tamás' (harvested DECODE dump and repo): only research/oldest/scan_2026-09-23 notes listing these letters; no DECODE record.",
+   "tomokiyo": "cryptiana has no Hungarian 16th-century item; no Báthory-Nádasdy letter listed.",
+   "lasry": "No Lasry paper or GL.htm entry on Nádasdy correspondence; nothing for 1553-1554 Hungary.",
+   "edition": "Komáromy's edition in Történelmi Tár 1905 pp. 224-230 prints the signs partly and marks the rest '(titkos jel/jelek)'; no decipherment in the snippets read (pp. 224, 225, 229). Lang 2015 repertory p. 248 C.Báth.01-03: 'magyar jelek és betűk, megfejtetlen', részleges.",
+   "literature": "Lang 2015 p. 68 n. 85 cites C.Báth.01-03 among letters where signs the recipient left unresolved could not be read by the editor either; the Sept 2026 oldest-cipher scan (research/oldest/scan_2026-09-23/central_north.md) lists them unread. No decipherment found."
+  },
+  "key_check": "No key known for Báthory's signs; the ⊙, box and 'p g f s' signs look like name symbols (a small nomenclator), too few to rebuild a table from the printed fragments.",
+  "duplicates": "known.py 'Báthory András', 'Somlyai', 'Nádasdy Tamás', 'Kerecsényi': only the oldest-cipher scan note and the leads themselves; no catalogue entry or target; the Kerecsényi letters (lead 2224) are a separate series in TT 1906.",
+  "searches": [
+   {
+    "query": "Google Books 8JvzAAAAMAAJ search-inside \"titkos jelek\"",
+    "result": "pp. 224 and 225: snippet images show printed signs (⊙, box signs, 'p g f s', 'ɔɔɔ—') and '(titkos jelek)' placeholders, no resolution"
+   },
+   {
+    "query": "Google Books 8JvzAAAAMAAJ search-inside Nádasdy Báthory 1554",
+    "result": "p. 227 running head 'Somlyai Báthory András levelei Nádasdy Tamáshoz' and p. 229 close of no. 28 'Andreas Báthory de Somlyó mpr. / Külön darab papiroson:'"
+   },
+   {
+    "query": "Lang 2015 thesis grep Somlyai / C.Báth (repertory p. 248, n. 85)",
+    "result": "'magyar jelek és betűk, megfejtetlen' for all three; n. 85 names them as unresolved examples"
+   },
+   {
+    "query": "known.py Báthory András Somlyai Nádasdy Tamás",
+    "result": "no catalogue entry, target or DECODE record"
+   }
+  ],
+  "verdict": "open"
+ },
+ "2224": {
+  "unvetted": "Signs not printed in the edition. Chrome pass c32, Google Books NpzzAAAAMAAJ (TT 1906) old interface: '\"titkos jel\"' hits pp. 130, 131, 132 and one more; the p. 131 snippet shows the editor's placeholder in place of the sign ('a város szigségére és várára, az teb (titkos jel) kiről immáron ...'), p. 132 prints 'három ezer' in italics (in this series italics may mark enciphered words given resolved, as Teleki VIII p. 307 does). Lang 2015 repertory p. 248-249 C.Ker.01-04 'magyar jelek, megfejtetlen', részleges, and p. 68 n. 85 groups them with letters where only one or two words stayed unresolved. So the open part is one or two signs per letter and Komáromy did not reproduce them: the ciphertext is only in the originals (MNL OL E 185, Nádasdy family archive), not seen. Needs scans of the four originals (or their MNL online images if any) to see whether signs survive and whether anything is legible beyond the edition's placeholders."
+ }
+}
