@@ -71465,6 +71465,249 @@
     ]
    },
    "repository": "asf"
+  },
+  {
+   "id": 2327,
+   "counted": true,
+   "year": 1551,
+   "date": "December 1551 (filed between 16 and 18 Dec 1551)",
+   "title": "\"Cifra\": a page of four-letter groups, filed in Cosimo I's correspondence, Dec 1551, bare",
+   "correspondents": "unknown",
+   "place": "not stated",
+   "language": "unknown (letter cipher in four-letter groups)",
+   "region": "Italy",
+   "period": "1497-1559",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo del Principato 406, c. 615",
+   "folio_note": "One leaf, recto: about 20 lines of four-letter groups (\"Bcam pdfe zxcb riab sdqz ...\"), no clear word. Inventory vol. V p. 78: \"Cifra., c. 615\".",
+   "cls": "A",
+   "status": "Bare. A letter cipher in fixed four-letter groups, unlike the figure ciphers of the grand-ducal chancery.",
+   "why": "An unusual system for the 1550s Medici archive (possibly polyalphabetic or a code); short and self-contained.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 4,
+   "verify": "Transcribe; frequency and IoC tests; check whether it is a key table rather than a text.",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/unita-archivistica/?id=997",
+     "label": "PAD unit 997 (Mediceo del Principato 406)"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=547952&ua=997",
+     "label": "c. 615r"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=547953&ua=997",
+     "label": "c. 615v"
+    }
+   ],
+   "source": "ASF Mediceo del Principato, Carteggio universale (PAD images) + Carteggio universale di Cosimo I inventory PDFs (ASF Inventari on-line), ASF Florence sweep, Nov 2026",
+   "score_note": "Scored from the images viewed during the ASF Florence sweep, 6 Nov 2026 (research/sweep_2026-11_asf_florence/)",
+   "access_note": "scans public on ASF PAD (archividigitali), no login, curl works: unit page /archividigitali/unita-archivistica/?id=<ua> lists carte; each /archividigitali/riproduzione/?id=<id>&ua=<ua> names the ptif; IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mdp_carteggio_universale/<filza>/<seq>_C_<carta>_<R|V>.ptif (2000 px). PAD holds filze 330-460 only (1537-1557).",
+   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza, the carta or the correspondent; the inventory marks the piece \"In cifra\" with no decipherment noted, and none is written on the page; ASF holds the chancery keys (Cifrari II serie, \"Chiavi delle cifre del Carteggio di Cosimo I dal 1536 al 1573\", 3 filze), not online; DECODE's ASFi \"Governo Mediceo - cifre\" volumes (R5687-R7459) are 17th-18th c.; Tomokiyo and Lasry not searched in this run.",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch n11",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF PAD (archividigitali) via curl/iipsrv, 6 Nov 2026: Mediceo del Principato 406 cc. 613-617 recto and verso at 1000 px (c. 615r read whole)",
+     "extent": "c. 615r: 19 lines of 7 four-letter groups each, about 133 groups (about 530 letters), from 'Bczm pdfe zxcb riab xdqz qpoo lmya' to 'ftzt ppin ozhi pacc yxfs fzli xubin'; c. 615v blank (show-through only).",
+     "cipher": "Letter cipher in fixed four-letter groups in a neat humanist hand; no clear word, heading, address or signature. Nothing written above, below or beside the groups, and the neighbours are unrelated clear pieces (c. 614 Barga deliberation, c. 616 Ugolino Grifoni, c. 617 Riccio), so no decipherment is filed with it."
+    },
+    "prior_art": {
+     "decode": "known.py (harvested DECODE dump plus repo ledgers) on 'Mediceo del Principato 406', '406, c. 615' and the opening groups 'Bczm pdfe': only lead 2327 and its sweep files; no DECODE record for any ASF Mediceo filza of 1551 (DECODE's ASFi 'Governo Mediceo - cifre' volumes R5687-R7459 are 17th-18th c.).",
+     "tomokiyo": "cryptiana crypto.htm grepped for Florence, Medici, Cosimo, Tuscany: no page on a Florentine letter-group cipher of the 1550s (only Guicciardini ca. 1590).",
+     "lasry": "GL.htm copies grepped for Mediceo, Cosimo, Firenze: nothing. The Tartu/HistoCrypt Florentine 'polyalphabetic' paper (dspace.ut.ee) treats a 15th-century Laurentian cipher, not this sheet.",
+     "edition": "Inventory vol. V p. 78 (ASF PDF, page seen): 'Cifra., c. 615', no note of a decipherment; no edition prints it.",
+     "literature": "Searches for a 1551 Florentine four-letter-group cipher and for MAP/MIA records of filza 406 c. 615 found nothing on this sheet."
+    },
+    "searches": [
+     {
+      "query": "\"Mediceo del Principato\" 406 cifra 1551 \"Bcam\" OR \"four-letter\" cipher Cosimo I",
+      "result": "Regione Toscana inventory PDFs (vol. XI) and general Mediceo pages; nothing on filza 406 c. 615 or a four-letter-group cipher."
+     },
+     {
+      "query": "Medici Archive Project MIA \"Mediceo del Principato\" \"406\" \"615\" cifra 1551",
+      "result": "MAP/BIA descriptions only; no record or abstract for 406 c. 615."
+     },
+     {
+      "query": "sixteenth-century Italian cipher four-letter groups polyalphabetic 1551 Medici Florence letter cipher \"1551\"",
+      "result": "Vito's 15th-century Florentine 'polyalphabetic' paper, the Venetian Suriano cipher page, the 1537-38 imperial ciphers article; nothing on this 1551 sheet."
+     }
+    ],
+    "key_check": "No key known for a four-letter-group system in Cosimo I's chancery; ASF Cifrari II serie not online. Not tested.",
+    "duplicates": "known.py on 'Mediceo del Principato 406' and the opening groups: only this lead and its sweep files; no DECODE, catalogue or target duplicate.",
+    "verdict": "open"
+   },
+   "repository": "asf"
+  },
+  {
+   "id": 2328,
+   "counted": true,
+   "year": 1552,
+   "date": "January 1552 (filed with letters of 10-12 Jan 1552)",
+   "title": "\"Cifra\": two pages of figure cipher filed in Cosimo I's correspondence, Jan 1552, bare",
+   "correspondents": "unknown",
+   "place": "not stated",
+   "language": "Italian? (figure cipher)",
+   "region": "Italy",
+   "period": "1497-1559",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo del Principato 407, cc. 86-87",
+   "folio_note": "cc. 86r and 87r: full pages of continuous figures. Inventory vol. V p. 85: \"Cifra., cc. 86-87\".",
+   "cls": "B",
+   "status": "Bare (checked at 1600 px).",
+   "why": "Unattributed grand-ducal cipher of 1552; sender may follow from neighbouring letters.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "Look at the versos and neighbours for an address; transcribe; compare with the Nucci series.",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/unita-archivistica/?id=998",
+     "label": "PAD unit 998 (Mediceo del Principato 407)"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=548437&ua=998",
+     "label": "c. 86r"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=548438&ua=998",
+     "label": "c. 86v"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=548439&ua=998",
+     "label": "c. 87r"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=548440&ua=998",
+     "label": "c. 87v"
+    }
+   ],
+   "source": "ASF Mediceo del Principato, Carteggio universale (PAD images) + Carteggio universale di Cosimo I inventory PDFs (ASF Inventari on-line), ASF Florence sweep, Nov 2026",
+   "score_note": "Scored from the images viewed during the ASF Florence sweep, 6 Nov 2026 (research/sweep_2026-11_asf_florence/)",
+   "access_note": "scans public on ASF PAD (archividigitali), no login, curl works: unit page /archividigitali/unita-archivistica/?id=<ua> lists carte; each /archividigitali/riproduzione/?id=<id>&ua=<ua> names the ptif; IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mdp_carteggio_universale/<filza>/<seq>_C_<carta>_<R|V>.ptif (2000 px). PAD holds filze 330-460 only (1537-1557).",
+   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza, the carta or the correspondent; the inventory marks the piece \"In cifra\" with no decipherment noted, and none is written on the page; ASF holds the chancery keys (Cifrari II serie, \"Chiavi delle cifre del Carteggio di Cosimo I dal 1536 al 1573\", 3 filze), not online; DECODE's ASFi \"Governo Mediceo - cifre\" volumes (R5687-R7459) are 17th-18th c.; Tomokiyo and Lasry not searched in this run.",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch n11",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF PAD (archividigitali) via curl/iipsrv, 6 Nov 2026: Mediceo del Principato 407 cc. 84-89 recto and verso at 1000 px",
+     "extent": "Four sides, not two: c. 86r (about 33 lines of figures), c. 86v (full page), c. 87r (full page), c. 87v (7 lines, rest show-through); about 100 lines of continuous figures. c. 89v is a cover addressed 'All'Ill.mo et Ecc.mo S.r ... Duca di Firenze', probably this piece's.",
+     "cipher": "Continuous figure cipher (digits, no separators), no clear words, heading or signature. Nothing written above, below or beside the figures, and the neighbours are clear letters (c. 85 Tommaso Adimari, c. 88 its cover to Antonino Bocca), so no decipherment is filed with it."
+    },
+    "prior_art": {
+     "decode": "known.py (harvested DECODE dump plus repo ledgers) on 'Mediceo del Principato 407' and '407, cc. 86-87': only lead 2328 and its sweep files; the DECODE dump has no record for Cosimo I's 1552 correspondence (ASFi cifre records R5687-R7459 are 17th-18th c.).",
+     "tomokiyo": "cryptiana crypto.htm grepped for Florence, Medici, Cosimo: no page covering 1552 Florentine figure ciphers.",
+     "lasry": "GL.htm copies grepped for Mediceo, Cosimo, Firenze: nothing relevant; no Lasry paper on Cosimo I's 1550s ciphers found.",
+     "edition": "Inventory vol. V p. 85 (page seen): 'Cifra., cc. 86-87', no decipherment noted, no sender; no edition found.",
+     "literature": "Searches for a January 1552 cipher letter to Cosimo (filza 407, MIA records, Siena/Piombino context) found nothing on this piece."
+    },
+    "searches": [
+     {
+      "query": "\"Mediceo del Principato\" 407 1552 lettera in cifra anonima Cosimo I decifrazione",
+      "result": "Regione Toscana inventory PDFs (vols. XI, XII) and general Mediceo pages; nothing on filza 407 cc. 86-87."
+     },
+     {
+      "query": "Medici Archive Project \"filza 407\" OR \"MdP 407\" 1552 cipher letter Cosimo January 1552",
+      "result": "Unrelated 1552 Mediceo items (Mendes estate, a Barbolani letter); no record of this cipher."
+     },
+     {
+      "query": "Cosimo I gennaio 1552 avviso cifrato Siena Piombino Francesi lettera in cifra al Duca di Firenze decifrata",
+      "result": "General Siena-war background (1552 conspiracy, Piombino); no decipherment of a January 1552 cipher letter."
+     }
+    ],
+    "key_check": "Sender unknown, so no key identified; ASF Cifrari II serie not online. The figure style differs from the Nucci series (no hyphen-like separators); not tested.",
+    "duplicates": "known.py on 'Mediceo del Principato 407': only this lead and its sweep files; no DECODE, catalogue or target duplicate.",
+    "verdict": "open"
+   },
+   "repository": "asf"
+  },
+  {
+   "id": 2331,
+   "counted": true,
+   "year": 1557,
+   "date": "30 Jan 1556 (Florentine style = 1557)",
+   "title": "\"Informazione\" on Cardinal Rodolfo Pio da Carpi, Salvestro Aldobrandini and Carafa's demand on Venice, in the Gianfigliazzi-Orsini cipher, bare",
+   "correspondents": "unknown informant -> Cosimo I",
+   "place": "Rome?",
+   "language": "Italian (figure cipher with marks)",
+   "region": "Italy",
+   "period": "1497-1559",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo del Principato 457, c. 592",
+   "folio_note": "One leaf: clear heading (date, 30 Jan), then two blocks of figures with superscript marks (about 25 lines). Inventory vol. VIII p. 305 summarises the content and notes: \"In cifra. Questa cifra viene usata ufficialmente da Bongianni Gianfigliazzi e Giordano Orsini; cfr. A.S.F., Cifrari II serie, Chiavi delle cifre del Carteggio di Cosimo I dal 1536 al 1573; F. III.\"",
+   "cls": "A",
+   "status": "Bare on the page; the key is identified by the inventory and held in ASF (Cifrari II serie F. III), not online.",
+   "why": "Key known and named, so a reading needs only the ASF key or a ciphertext-only solve; the inventory gives the topic as a crib.",
+   "importance": 3,
+   "solvability": 4,
+   "difficulty": 2,
+   "verify": "Ask for ASF Cifrari II serie F. III (Gianfigliazzi/Orsini table) or solve ciphertext-only using the inventory summary as crib.",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/unita-archivistica/?id=1016",
+     "label": "PAD unit 1016 (Mediceo del Principato 457)"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=625000&ua=1016",
+     "label": "c. 592r"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=625001&ua=1016",
+     "label": "c. 592v"
+    }
+   ],
+   "source": "ASF Mediceo del Principato, Carteggio universale (PAD images) + Carteggio universale di Cosimo I inventory PDFs (ASF Inventari on-line), ASF Florence sweep, Nov 2026",
+   "score_note": "Scored from the images viewed during the ASF Florence sweep, 6 Nov 2026 (research/sweep_2026-11_asf_florence/)",
+   "access_note": "scans public on ASF PAD (archividigitali), no login, curl works: unit page /archividigitali/unita-archivistica/?id=<ua> lists carte; each /archividigitali/riproduzione/?id=<id>&ua=<ua> names the ptif; IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mdp_carteggio_universale/<filza>/<seq>_C_<carta>_<R|V>.ptif (2000 px). PAD holds filze 330-460 only (1537-1557).",
+   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza, the carta or the correspondent; the inventory marks the piece \"In cifra\" with no decipherment noted, and none is written on the page; ASF holds the chancery keys (Cifrari II serie, \"Chiavi delle cifre del Carteggio di Cosimo I dal 1536 al 1573\", 3 filze), not online; DECODE's ASFi \"Governo Mediceo - cifre\" volumes (R5687-R7459) are 17th-18th c.; Tomokiyo and Lasry not searched in this run.",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch n11",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF PAD (archividigitali) via curl/iipsrv, 6 Nov 2026: Mediceo del Principato 457 cc. 590-596 recto and verso at 1000 px; the sweep's 1600 px images of c. 592",
+     "extent": "c. 592r: two blocks of figure cipher with superscript marks (2, +, c, s over figures), about 8 and 8 lines (about 16 lines in all), under a clear heading 'Inserto nella lettera di sua ecc.a, Addi 30 di Gennaio 1556'. c. 592v is show-through.",
+     "cipher": "Figure cipher with superscript marks; nothing written above, below or beside the figures. Neighbours: c. 590-591 Francesco Zara (Hall, Innsbruck, clear), c. 593 Lorenzo Lenzi from Bologna (clear), c. 594 cover. No decipherment is filed with it."
+    },
+    "prior_art": {
+     "decode": "known.py (harvested DECODE dump plus repo ledgers) on 'Mediceo del Principato 457', 'Gianfigliazzi', 'Giordano Orsini', 'Cifrari II serie': only lead 2331 and its sweep files; DECODE holds no record of the ASF Cifrari II serie keys or of this 1557 informazione.",
+     "tomokiyo": "cryptiana crypto.htm grepped for Florence, Medici, Cosimo, Carpi: nothing on the Gianfigliazzi/Orsini cipher.",
+     "lasry": "GL.htm copies grepped for Gianfigliazzi, Orsini, Cosimo: nothing. The repo's targets/carpi1548 (Carpi to Granvelle, Lasry-era work) is a different correspondence and system.",
+     "edition": "Inventory vol. VIII p. 305 (page seen) gives a content summary, 'Informazione di Rodolfo Pio da Carpi card. su Salvestro Aldobrandini. Notizia della richiesta di quaranta galere avanzata da Carlo Carafa ai Veneziani in cambio di Cervia e Ravenna', with note 69 naming the key (Cifrari II serie, F. III). The heading on the leaf says none of this, so the inventory editor knew the content, probably from that key, but printed only this gist, no text. No edition of the piece found. CSP Venice 1557 entries on Carpi, Ravenna and Cervia are related news, not this text.",
+     "literature": "No study of this piece found. Contamination note for the paper: the gist is in print in the inventory."
+    },
+    "searches": [
+     {
+      "query": "\"Gianfigliazzi\" \"Giordano Orsini\" cifra Cosimo 1557 Rodolfo Pio Carpi Aldobrandini",
+      "result": "Wikipedia and DDB biographies of Orsini and of Rodolfo Pio; nothing on this cipher or a decipherment."
+     },
+     {
+      "query": "Carafa quaranta galere Veneziani Cervia Ravenna 1557 Salvestro Aldobrandini cardinale di Carpi",
+      "result": "CSP Venice 1557 entries on Carpi pressing for Ravenna and Cervia and the Venetian debate; no text of this informazione and no decipherment."
+     },
+     {
+      "query": "\"Bongianni Gianfigliazzi\" ambasciatore 1557 Roma lettere Cosimo cifra edizione",
+      "result": "Only the 15th-century Bongianni's Libro rosso edition and Carteggio universale inventory PDFs; no edition of the 1557 letters or of this cipher."
+     }
+    ],
+    "key_check": "Key named but not tested: ASF Cifrari II serie, 'Chiavi delle cifre del Carteggio di Cosimo I dal 1536 al 1573', F. III (the Gianfigliazzi-Orsini cipher), not online.",
+    "key_held": "ASF Cifrari II serie F. III, named by inventory vol. VIII n. 69 as this cipher's key; held in the archive, not online, not tested. No decipherment text is on record, only the inventory's gist.",
+    "duplicates": "known.py on 'Mediceo del Principato 457', 'Gianfigliazzi', 'Giordano Orsini', 'Rodolfo Pio', 'Aldobrandini': only this lead and its sweep files; 'Rodolfo Pio' also hits targets/carpi1548 / catalogue 1265 (1548 letters to Granvelle), a different document.",
+    "verdict": "open"
+   },
+   "repository": "asf"
   }
  ]
 }
