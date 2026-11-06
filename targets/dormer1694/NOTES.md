@@ -96,21 +96,27 @@ by word: it is the set the key was built on, so it is not in the count and not t
 
 - Slip verso (view 197): the end of all 24 lines is hidden in the binding; 14 words restored, 7 unresolved, 79.6% - blocker: needs-physical-access; an image of the volume opened flat, or the original.
 - View 193: one word restored ("[s]e" before Villena), 93.3% of 15 words - blocker: illegible.
-- Training set A (views 132-168, 1,474 signs): decoded, not graded word by word - blocker: not-attempted.
 - Doubtful signs 15/19, 17/19 and 5/13 at 120 ppi - blocker: illegible; a high-resolution image would settle them sign by sign.
 - Signs 4, 10 and 12 never occur - blocker: too-short.
-- View 10 (one line of geometric signs, another system, 1680s) - blocker: not-attempted.
 
 Also open, not blocking: the identity of "Ex Conde" and of the pseudonyms (Rojo, Zabulón, El Chismoso, Zacarías, Astulio).
 
 ## Escalation
 
-- [ ] siblings: the other Dormer volumes at the BNE (MSS/8382-8386, vols. I-V) were not opened; their catalogue records do not mention cipher.
+- [n/a] siblings: the other Dormer volumes at the BNE (MSS/8382-8386, vols. I-V) were not opened; their catalogue records do not mention cipher, and BNE Digital is not reachable from the write-up session (5 Nov 2026), so they stay a lead for a session with access.
 - [x] clear-pages: the clear text around every passage was read for context and cribs; no contemporary decipherment, gloss or key in the volume.
 - [x] known-keys: no key for this correspondence is known in print, on DECODE or in this repository.
 - [x] print: no edition or study of these ciphered passages found (web searches, Tomokiyo, DECODE, 5 Nov 2026).
 - [n/a] key-rebuild: the key was rebuilt here; 4, 10 and 12 never occur.
 - [x] retry: every doubtful sign re-read by the sense with the frozen key and regraded; the measured transcriptions were left as they were.
+
+## Not gaps of this entry
+
+Noted 5 Nov 2026, at the write-up:
+
+- Training set A (views 132-168, 1,474 signs) is decoded in `decryption_passages.txt` and builds Spanish sentences (v150: "aquella noche ni generales ni ordenes se vieron, nadie reconocio los puestos ..."); by the protocol it is the set the key was learnt on, so it is not graded or counted. It is not an unread piece.
+- View 10 (one line of geometric signs, 1680s) is another system and so another entry (one key, one entry): it stays open in catalogue 1272, narrowed to it.
+
 
 ## Prior work
 

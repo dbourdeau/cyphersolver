@@ -446,6 +446,11 @@ PAGES = [
          blurb='Two letters of July 1629 (BnF Fran&ccedil;ais 3829) in a homophonic cipher with a doubling mark and a small nomenclator. The key was recovered from cribs beside the clear words of the same letters. Avenel had printed the decipherment in 1858, found only afterwards; the two agree word for word.',
          quote='&ldquo;Castor voudroit bien que la [duchesse de Chevreuse] peust estre attrap&eacute;e pr&egrave;s de la fronti&egrave;re&hellip;&rdquo;',
          rights='Manuscript rights: Biblioth&egrave;que nationale de France'),
+    dict(slug='casimir1629', label='Johann Casimir to Camerarius 1629', year='1629', y=1629.5, place='Calmar &rarr; Camerarius', st='solved', stt='key rebuilt',
+         title='Johann Casimir to Ludwig Camerarius, 1629: the key of the two-digit cipher',
+         blurb='Letters of Pfalzgraf Johann Casimir to Ludwig Camerarius whose cipher passages carry a decipherment written at the time. Brice Dudout rebuilt the key from the glosses of one letter and tested it once on another: 0.873 of characters against 0.170 for shuffled keys. The content is the period decipherment; the key is the new part.',
+         quote='three numbers for each letter, 86 and up nulls',
+         rights='Letters: Bayerische Staatsbibliothek M&uuml;nchen, Clm 10382 (MDZ bsb00112117); key by Brice Dudout, Europe chiffr&eacute;e'),
     dict(slug='pallotto1629', label='Pallotto to Barberini 1629', year='1629', y=1629.6, place='Vienna &rarr; Rome', st='found', stt='solved by others',
          title='Giovanni Battista Pallotto to Francesco Barberini, 1629',
          blurb='Twenty-eight ciphered passages in the register of the nuncio at Vienna (BAV Barb.lat. 6960, DECODE R286&ndash;R313). Their contents were printed in 1897 from the Roman decipherments. The key is Biermann and Bosbach&rsquo;s of 2018 for the sibling volume 6956, which George Lasry found also fits 6960; applied here, it gives running Italian in every record, with about 1,750 code groups open. Earlier attacks made before the key was known are recorded.',
@@ -1412,6 +1417,11 @@ PAGES = [
          blurb='Catalogued on DECODE as an unknown sender&rsquo;s letter of 1587, this is Catherine de M&eacute;dicis writing from Chenonceau, with one cipher block on Anjou, the Low Countries and the embassy to England. Tomokiyo&rsquo;s reconstructed key was applied and extended by twelve values; all 289 signs are accounted for, and the last line he left open is the end of &ldquo;d&rsquo;Angleterre&rdquo; plus padding. A contemporary marginal decipherment and the 1899 edition agree.',
          quote='&ldquo;recevoir le serment de fidelite de ceulx des pais bas pour mon filz&rdquo;',
          rights='Manuscript images: Biblioth&egrave;que nationale de France, via Gallica'),
+    dict(slug='dormer1694', label='&ldquo;Ex Conde&rdquo; to Dormer 1693&ndash;96', year='1693&ndash;96', y=1694.4, place='Catalonia &rarr; Zaragoza', st='partial', stt='read in part',
+         title='&ldquo;Ex Conde&rdquo; cipher letters to Diego Jos&eacute; Dormer, Catalonia 1693&ndash;1696',
+         blurb='Number-cipher passages and a slip wholly in cipher, in letters from unnamed writers in Catalonia to the Aragonese chronicler Diego Jos&eacute; Dormer during the French war. Brice Dudout recovered the simple substitution from the ciphertext and cribs, then measured it on two held-out sets (0.577 and 0.594, key partial): 91.7% of 290 counted words.',
+         quote='&ldquo;all to reduce the numbers so as not to march out of Gerona&rdquo;',
+         rights='Letters: Biblioteca Nacional de Espa&ntilde;a, MSS/8387 (BDH bdh0000064262); key and reading by Brice Dudout, Europe chiffr&eacute;e'),
     dict(slug='ilten1697', label='Hattorf to Ilten 1697', year='1697', y=1697.85, place='Hanover &rarr; J. H. von Ilten', st='found', stt='read at the time',
          title='Hattorf to Jobst Hermann von Ilten, 7 November 1697',
          blurb='A Hanoverian code letter in the Ilten papers at Hanover, catalogued here as not deciphered. Kalliope in fact calls it a <i>Dechiffrierter Brief</i>, and every run of its small syllabic code (code A) carries its decipherment, written over it in Ilten&rsquo;s office. It was transcribed and every gloss checked against its group&rsquo;s other occurrences: the Elector wants discord sown between Kolbe and Barfus at Berlin. The later letters to Ilten, in another code, have their own page.',
@@ -4342,6 +4352,8 @@ IMAGES['johnston1863'] = ('johnston1863_lead.jpg', 'The cipher lines of the tele
 IMAGES['milroy'] = None
 IMAGES['auckland1918'] = None
 IMAGES['deboli1788'] = None
+IMAGES['dormer1694'] = None
+IMAGES['casimir1629'] = None
 IMAGES['leticia1932'] = None
 IMAGES['hatzfeldt1641'] = None
 IMAGES['olivares1626'] = None
