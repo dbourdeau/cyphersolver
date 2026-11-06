@@ -18,11 +18,13 @@ def letters(g):
 
 
 def merge(toks):
-    """'2 +' is one sign for l (glyphs.md): join it to {l}."""
+    """'2 +' and '2 #' are one sign for l; '#' after {sg} or m is h (glyphs.md, recheck 6 Nov)."""
     out, i = [], 0
     while i < len(toks):
-        if toks[i] == '2' and i + 1 < len(toks) and toks[i + 1] == '+':
+        if toks[i] == '2' and i + 1 < len(toks) and toks[i + 1] in ('+', '#'):
             out.append('{l}'); i += 2
+        elif toks[i] == '#' and out and out[-1] in ('{sg}', 'm'):
+            out.append('{ch}'); i += 1  # the double cross after c or g is h (recheck, 6 Nov)
         else:
             out.append(toks[i]); i += 1
     return out

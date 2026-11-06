@@ -1,7 +1,7 @@
 # Rome, January 1478 (st. fior.): Giovanni Mazzinghi and a second writer to the Medici, cipher (catalogue 2307, 2320)
 
-Status: in progress. Started 6 Nov 2026 at the user's request after the overnight sweep. Key rebuilt from the glossed
-sibling; both bare letters decrypt to Italian through most words (draft); look-alike signs and code numbers still open.
+Read in part, 6 Nov 2026: key recovered from the contemporary decipherment of the sibling MAP LXXII 170; 76.1% of the
+cipher signs of the two bare letters read (measure.py); reading and translation in `reading.md`.
 
 ## The documents
 
@@ -70,12 +70,17 @@ the code numbers need identifying from the content and the other MAP letters, an
 
 ## Remaining gaps
 
-- Look-alike signs misread in the transcription (o vs q in "DUESTA" = questa; # read h in 142, l in 170; t; 3):
-  re-check at 4-6x against the key (blocker: none, work to do).
-- Code numbers 10, 12, 30, 40, 51, 231 not yet identified (blocker: none; content, 170 glosses, other MAP letters).
-- Clear abbreviations in 142 (lines 18-37) not expanded.
+- 92 cipher words (394 signs) that do not decode to sense, listed in `measure.py` (UNREAD) - blocker: illegible; signs
+  are 8-14 px at the ASF server's maximum (1272 px), rechecked at 5-6x (`recheck.tsv`) and tried against look-alike
+  variants (`variants.py`); no higher-resolution image online
+- code numerals 10, 30, 40, 51, 231, 10/3 and the recurring group OLDP/DLDP/EDP - blocker: open-codes; only 12 =
+  Zanobi is glossed in LXXII 170 (10 perhaps "lo Duca di Calabria"), no code list for this cipher found
 
 ## Escalation
 
-- Siblings: LXXII 170 used as the key source; LXXII 169/171 and CXXXVII 251/253 fetched (171 is a different system).
-- Key rebuild: done from the 170 glosses (build_key.py) with a held-out test.
+- [x] siblings: LXXII 170 (glossed) used as key source; LXXII 169, 171 and CXXXVII 251, 253 opened (171 is another system)
+- [x] clear-pages: none filed with 142 or 252; the 142 verso is the endorsement only
+- [x] known-keys: siena11 (Acciaiuoli, Rome 1478) compared, a different system; MAP LXXII 178-188 key sheets use other signs
+- [x] print: Lorenzo de' Medici, Lettere II-IV searched for the shelfmarks (Chrome passes c32, c33): no citation; web search for Mazzinghi and the Pistoiese plot found nothing
+- [x] key-rebuild: hard-EM on the gloss pairs (build_key.py), LM fill (refine.py), context fixes, image recheck (recheck.tsv)
+- [x] retry: every unread word retried with look-alike variants against a period word list (variants.py)

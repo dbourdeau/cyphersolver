@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "2307",
-   "read": "not read",
+   "read": "read in part",
    "shelfmark": "ASF, Mediceo avanti il Principato LXXXIX 142",
    "date": "16 January 1478 st. fior. (\"In nome di Dio a dì xvj di gennaio 1478\"; place not stated, Rome by content)",
    "year": 1479,
@@ -21,20 +21,25 @@
     "partial": false
    },
    "length": {
-    "tokens": "unknown",
+    "tokens": 1066,
     "unit": "symbols",
-    "measured": false
+    "measured": true,
+    "file": "t142.tsv"
    },
    "transcription": {
     "by": "llm from images",
     "source": "in progress",
     "image_quality": "fair",
-    "notes": "Full-size ASF image, 1272 px."
+    "notes": "209 cipher words, 1,066 signs after joining 2+/2# to one l-sign (measure.py); words rechecked at 5-6x (recheck.tsv)."
+   },
+   "places": {
+    "from": "Rome",
+    "to": "Florence"
    }
   },
   {
    "id": "2320",
-   "read": "not read",
+   "read": "read in part",
    "shelfmark": "ASF, Mediceo avanti il Principato CXXXVII 252",
    "date": "13 January 1478 st. fior.",
    "year": 1479,
@@ -50,15 +55,20 @@
     "partial": false
    },
    "length": {
-    "tokens": "unknown",
+    "tokens": 581,
     "unit": "symbols",
-    "measured": false
+    "measured": true,
+    "file": "t252.tsv"
    },
    "transcription": {
     "by": "llm from images",
     "source": "in progress",
     "image_quality": "fair",
-    "notes": "Full-size ASF image, 1272 px."
+    "notes": "121 cipher words, 581 signs after joining 2+/2# (measure.py); words rechecked at 5-6x (recheck.tsv)."
+   },
+   "places": {
+    "from": "Rome",
+    "to": "Florence"
    }
   }
  ],
@@ -66,11 +76,11 @@
   "types": [
    "homophonic"
   ],
-  "summary": "Homophonic letter substitution in letter-like signs, word by word with word division kept, clear words interspersed, numerals as code words for persons.",
+  "summary": "Homophonic letter substitution in letter-like signs (several for each vowel), word by word with word division kept and clear words between; numerals as code words for persons.",
   "symbol_kind": "letters and symbols",
-  "distinct_symbols": "unknown",
+  "distinct_symbols": 45,
   "diacritics": {
-   "used": "unknown"
+   "used": false
   },
   "homophones": {
    "used": true
@@ -79,16 +89,16 @@
    "present": true
   },
   "nulls": {
-   "present": "unknown"
+   "present": false
   },
-  "key_order": "unknown",
+  "key_order": "not applicable",
   "word_division": "kept",
   "sibling_key": "MAP LXXII 170, same signs, with a contemporary interlinear decipherment"
  },
  "conditions": {
   "prior_solution": {
    "exists": "no",
-   "where": "No decipherment of 2307 or 2320 found; the sibling LXXII 170 carries its own contemporary gloss.",
+   "where": "No decipherment of 2307 or 2320 on the leaves, in Lorenzo's Lettere II-IV, or by web search; the sibling LXXII 170 carries its own contemporary decipherment, used as key material.",
    "found": "not found",
    "used": false
   },
@@ -157,12 +167,158 @@
    "kind": "reading",
    "what": "Draft decryption of both bare letters (draft252.txt, draft142.txt) reads as Italian through most words: 252 on a papal brief and fear that Antonio del Palagio, Pagolo Rucellai and Lionardo di Giunta will be seized; 142 (Mazzinghi) on a bull annulling privileges, a cruel process against the Medici, and Iacopo de' Rossi da Pistoia and a Pistoiese called Cola, with 'ordinò la morte di [30]'. Look-alike signs (o/q, #/h, t) still misread in places.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "transcription",
+   "what": "Recheck of doubtful signs in 252 and 142 against the images at 4-6x (recheck.tsv, crops/recheck/): 112 words checked, 53 supported, 11 not supported, 48 unclear; 46 transcription corrections. Settled: the c-sign (sigma) also writes q (cuesta) and most o-read-as-c cases were a missed sigma; h has no shape of its own (double cross after c or g = ch/gh); '2 #' = l; t = {dbar} = {pbar} (barred p: p in words, 'per' standing alone); new {2bar} (z with top bar) = o; 3 = ss; six b were 6 (r); 2+ often written like 4. Clear abbreviations of 142 lines 18-37 expanded in clear142.txt with doubts marked.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 1253 tokens, 45 types, it-cinquecento order 4: reading -2.269 per letter; random keys -4.12 (z 4.4); key annealed onto shuffled ciphertext best -2.742 (mean -2.757, z 31.6); annealer on the real text -2.5. Verdict: weak.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "verification",
+   "technique": [
+    "crib testing"
+   ],
+   "what": "Sign-by-sign recheck of 112 doubtful words at 5-6x (recheck.tsv): 53 supported, 11 not, 48 unclear; sign classes settled ({sg} c/q, # after c/g = h, 2# = l, t = barred p, 3 = ss).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "solver",
+   "technique": [
+    "exhaustive search",
+    "language-model scoring"
+   ],
+   "what": "Look-alike variants (one or two sign swaps) of the 92 unread words tested against a 15th-16th c. Italian word list (variants.py): a few short words recovered, the long ones match nothing.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "reading",
+   "what": "Reading and translation of both letters (reading.md); 76.1% of cipher signs read, measured (measure.py).",
+   "result": "partial"
   }
  ],
  "outcome": {
-  "class": "not read",
-  "verification": [],
-  "method": "not solved",
-  "key": "none"
+  "validation": {
+   "date": "2026-11-06",
+   "model": "it-cinquecento",
+   "file": "validation.tsv",
+   "tokens": 1253,
+   "types": 45,
+   "tokens_per_type": 27.84,
+   "score": -2.269,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -4.12,
+     "sd": 0.42,
+     "max": -3.127,
+     "z": 4.4,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -2.757,
+     "sd": 0.015,
+     "max": -2.742,
+     "z": 31.6,
+     "p": 0.1429
+    }
+   },
+   "power": -2.5,
+   "verdict": "weak",
+   "notes": "claimed per-occurrence score -2.269; polyphony 0.0; 394 unread tokens left out; annealer on the real text from random keys reached -2.5"
+  },
+  "class": "read in part",
+  "verification": [
+   "key confirms",
+   "statistical test"
+  ],
+  "method": "key recovered based on plaintext from external sources",
+  "key": "partial",
+  "method_basis": "The key was fitted on the contemporary interlinear decipherment of a different letter in the same cipher (MAP LXXII 170, January 1478/9), then completed from context; neither 2307 nor 2320 carries any decipherment.",
+  "contribution": [
+   "key recovered",
+   "transcription",
+   "sender or date identified",
+   "catalogue correction"
+  ],
+  "fraction_read": 0.761,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "measure.py on t252.tsv + t142.tsv: 1,253 of 1,647 cipher signs in words that read as sense (252: 371/581, 142: 882/1,066); unread words listed in measure.py.",
+  "codes_open": {
+   "open": 6,
+   "total": 7,
+   "tokens_open": 13
+  },
+  "gaps": [
+   {
+    "item": "92 cipher words (394 signs) that do not decode to sense, listed in measure.py UNREAD",
+    "blocker": "illegible",
+    "detail": "signs are 8-14 px at the ASF server's maximum (1272 px wide); rechecked at 5-6x (recheck.tsv) and tested against look-alike variants (variants.py); no higher-resolution image online"
+   },
+   {
+    "item": "code numerals 10, 30, 40, 51, 231, 10/3 and the recurring group OLDP/DLDP/EDP",
+    "blocker": "open-codes",
+    "detail": "only 12 = Zanobi is glossed in LXXII 170 (10 perhaps 'lo Duca di Calabria', uncertain); no code list for this cipher found"
+   }
+  ],
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "The interlinear decipherment of MAP LXXII 170, written in January 1478/9, gave the cipher-word / plain-word pairs the key was fitted on.",
+    "source": "ASF, Mediceo avanti il Principato LXXII 170",
+    "published": false
+   }
+  ],
+  "texts": [
+   {
+    "doc": "2320",
+    "label": "MAP CXXXVII 252, 13 January 1478 st. fior. (1479), unsigned",
+    "transcription": "t252.tsv",
+    "decryption": "draft252.txt",
+    "reading": "reading.md",
+    "translation": "reading.md",
+    "state": "read",
+    "summary": "An unsigned writer in Rome, three days before Mazzinghi's letter: the Pope has sent a brief, a letter was presented to [10], and the king is so enraged that the writer fears Antonio del Palagio, Pagolo Rucellai and Lionardo di Giunta, Florentines in Rome, will be seized and put in Castel Sant'Angelo; written in haste during the Pazzi War.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (session)",
+     "date": "2026-11-06",
+     "note": "Sentences form in most lines; lines 2-3 and 6 have several unread words in a row; 64% of signs read."
+    }
+   },
+   {
+    "doc": "2307",
+    "label": "MAP LXXXIX 142, Giovanni Mazzinghi, 16 January 1478 st. fior. (1479)",
+    "transcription": "t142.tsv",
+    "decryption": "draft142.txt",
+    "reading": "reading.md",
+    "translation": "reading.md",
+    "state": "read",
+    "summary": "Giovanni Mazzinghi warns the Medici from Rome: a bull under lead has been published in the Chancery revoking the privileges the Church had granted, a very cruel process is being made against them, and Iacopo de' Rossi of Pistoia and another Pistoiese, Cola, are involved in a plot ('quello ordino la morte di [30]', 'ogni cosa fanno per la vostra fine'). Nine months after the Pazzi conspiracy, during the war and the interdict.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (session)",
+     "date": "2026-11-06",
+     "note": "Lines 1-18 build sentences with scattered holes; lines 18-37 mix clear abbreviations and cipher and read in stretches; 83% of signs read."
+    }
+   }
+  ],
+  "key_file": "key_refined.tsv",
+  "notes": "Dated 'gennaio 1478' in Florentine style, i.e. January 1479. Key from the sibling's contemporary gloss (external plaintext); no prior reading found."
  }
 }
