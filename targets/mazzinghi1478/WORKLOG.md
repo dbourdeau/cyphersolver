@@ -8,4 +8,4 @@
 - 2026-11-06 control: 537-sign Italian passage in a random 29-sign homophonic key, same solver: 655/667 letters right. Worked (control is half the real length).
 - 2026-11-06 hypothesis: o = q in "questa" vs o = d in "di": the class o merges two or three signs; likewise 4 (s/l), H (t/h), b/6 (r/v/l). Values taken from context. Partial.
 - 2026-11-06 transcription: second pass in 3x two-line crops; split q (flat top, u/v) from rho (t), z4/z‡ from 4; read word by word (reading_89_142.txt).
-- 2026-11-06 reading: 111 of 189 cipher words read, 30 doubtful, 48 open (measure.py). Read in part. Content: Rome after the Pazzi conspiracy, so Jan 1479 modern.
+- 2026-11-06 reading: 111 of 189 cipher words read, 30 doubtful, 48 open (measure_ctonly.py). Read in part. Content: Rome after the Pazzi conspiracy, so Jan 1479 modern.

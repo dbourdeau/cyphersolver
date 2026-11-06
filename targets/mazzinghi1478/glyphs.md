@@ -125,3 +125,35 @@ Other observations from 142:
 - A **wavy V-form** precedes clear endings (Vz, V1fr, Vt, Vrmono, Vamfero, Vaj): read as V[ostra] S[ignoria]-type
   abbreviations and transcribed inside the P text; it may be a sign of its own.
 - This hand writes clear **e** like the cipher `r` with a tail (transcribed P 'e': 19/3, 22/6, 25/2, 28/8).
+
+## Recheck 6 Nov 2026 (252 and 142 against the images)
+
+Every cipher word of `draft252.txt` / `draft142.txt` whose decode was not plausible Italian was re-read at 4-6x
+(`crops/recheck/`, sheets `S_*.png` put the same sign side by side). Log: `recheck.tsv` (112 words; 46 corrected in
+`t252.tsv` / `t142.tsv`, each note ends "recheck 6 Nov: was ..."). The key files were not changed. What the ink settles:
+
+| sign class | finding | evidence (doc line/word, page px) |
+|---|---|---|
+| `{sg}` (σ) | **c, and also q**: most "o read as c" cases were a σ whose flat top stroke had been missed. The word-initial "q" of questa/quello/questo is this σ (spelled cuesta, cuello, acuesto) | corrected: 142 2/3 (205,204), 3/1 s4, 3/3 s6, 4/7 s2, 6/7 s2 (acennando), 7/1, 7/9 s3, 14/13, 24/6, 31/8 s4, 32/1, 36/5 s4; 252 7/9 s3 (facino), 9/3 s3 (incastello), 11/10 s3. Sheet `S142_oc*.png`, `S_o_vs_c.png` |
+| no separate q-sign | none found: questa = `{sg} q x 4 H +`, the q after σ is the ordinary q (u). The plain `o` that still reads o (non, no, bolla, adomandato) has the same round shape as `o` = d | 252 6/5 (585,383), 142 10/9 |
+| h | **no separate h shape.** h is the double cross written straight after σ (c) or m (g): σ‡‡ = ch (che, chiama, chiesa, bocha, occhio, credo), m‡‡ = gh (si ghoverno). Its height is the same as H (t) in the same word (142 9/6 `{sg} # x 4 H +`, `R142_09_clesta.png`). Transcribe it `#`; read `#` after `{sg}`/`m` as h | 142 9/6 (745,530), 10/4, 11/5, 13/7, 13/8, 17/5, 17/7, 27/4, 29/5; 3/7 changed H to # |
+| `2 #` | **one sign = l**, like `2 +`: the hook runs into a double cross. Never h. 252 9/4 `# r` was in fact `2 # r` (in castel-lo, as 170 2/2) | 252 4/1, 8/6, 9/4 (640,514); 142 2/6, 3/1, 11/6, 14/13 |
+| `#` alone | in 142 10/5 (da Pist?ia, 655,581) a tall double cross stands where t is needed: the height test H/# does not hold in these two hands | `S142_h3.png` |
+| `2 +` vs `4` | in this hand `2 +` is often written compactly as an open hook joined to a crossed descender (Կ) and was read `4`. Corrected where the ink shows no closed loop: molto, Lionardo, gli (3x), l'occhio | 252 4/3 (375,293), 8/8 (1095,470), 11/10 (1110,603); 142 7/6 s2 (560,437), 26/6 s2, 36/3 s2 |
+| `t` = `{dbar}` = `{pbar}` | **one sign**: a stem with a forked or looped top crossed low by one or two long bars (ꝑ). All ten `t` were rewritten `{dbar}`. Value **p** inside words (sopra, piombata, Pistoia, dispetto) and **per** standing alone or at a word head (per avisarvi, sua per-sona, è per-sona, per la, per bolla, per voi, per via nessuna, per questa cagione, per far dispetto). No shape difference between the p and per uses could be seen | `S_t.png`, `S_dbar_per.png`, `S_dbar_p.png`; 142 15/10 (1010,803) sopra |
+| `{2bar}` NEW | a z with a flat top bar (Ƶ) sitting on the line, no tail. Value **o** (fatto, verso) | 252 2/9 s4 (1005,205), 4/5 s5 (690,293), 2/3 s3 (160,205) |
+| `6` vs `b` | the check holds: `6` (curved, leaning ascender) = r, `b` (straight ascender) = f. Six words had a `6` read as `b`: certissimo, gli crede, lettera, travvestiti, gl'inbavadori, (fatta had a `b` read as `3`). Still ambiguous: 252 13/3 s3, 252 2/4 s1 (6, though notificargli would need f) | `S_b6_*.png` |
+| `3` | **ss** (ξ with a hook tail): daresse, messere. The one `3` that read f (252 5/8, fatta) is a `b` | `S_misc1.png` |
+| `l` (looped ℓ) | l: 252 6/2 s4 (di llui) was this sign, not 6 | `R252_06_e.png` |
+| `m` | g in gli, grandissimo, bisogna, Palag(i)o (252 8/4 s8, read n before). Two words need a plain m: certissimo (142 24/2 s8), and perhaps mi racomando (252 13/3 s1) | |
+| `{phi}` | p: di Pisa (142 29/6, 750,1440); 31/8 then reads apicapti (unread) | `S_misc1.png` |
+| `e` | e, not i: egli è (142 9/1, 45,530) | |
+| `z` | z in Lorenzo (142 33/4); the LM value z = i does not fit there | |
+| `{nn}` | pp in Filippo (142 4/5) but rr would be needed for verrò (17/2): the same sign; unresolved (a doubling sign?) | `S_w2.png` |
+| `a` + `o` | the pair "bold ɑ + round o" occurs in 252 11/9 `d a o s + H x` and 142 17/4 `+ a o s + H x q s` before l'occhio: abbiate / abbiatevi l'occhio if ɑ o = bb (unproven); also 252 10/5 | `S_misc2.png` |
+| `{B}` | not one sign: in 252 6/3 and 6/6 it is the tall looped ℓ; in 252 2/12 a cursive stroke rising to a loop; in 142 29/11 a short stem with a filled loop (p-like). Unresolved | `S_misc2.png` |
+| `{h}`, `{eq3}`, `{3bar}` | `{h}` occurs only in stretches that look like clear cursive (252 line 3 from x 500; 142 5/4, 35/2): not a cipher sign. `{eq3}` is a clear ≡ standing alone (252 2/2), unread. `{3bar}` (252 11/4, three bars on a stem) would be cc(i) if the word is ispacciato | |
+
+Words the ink does **not** support as first guessed: 252 1/1 (questa), 5/3 (presentata), 7/6 (cagione), 6/10 (insidia),
+2/4 (notificargli), 13/3 (mi racomando); 142 6/7 (dannando: the ink gives accennando), 10/5 (Pistoia: # 6 for t o),
+17/2 (verrò), 18/11 (Tommaso), 31/3 (due dette).
