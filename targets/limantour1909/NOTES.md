@@ -4,6 +4,8 @@
 **Key recovered by:** Alberto Garvía García  
 **Status:** Substantial partial decipherment, pending independent verification.
 
+Status: in progress. Project note (6 Nov 2026): this folder holds the contributor's documentation as submitted in #308. The project has not seen the CEHM images (cehm.org.mx is not reachable from its environment) and has verified none of the proposed values; `profile.json` records the contribution as contributed and unverified, class not read. No write-up page yet.
+
 ## Summary
 
 This contribution documents a proposed numerical substitution key for the encrypted correspondence between José López Portillo y Rojas and General Bernardo Reyes (1909).
