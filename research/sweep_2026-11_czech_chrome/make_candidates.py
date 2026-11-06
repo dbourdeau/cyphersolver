@@ -130,7 +130,7 @@ ROWS = [
         title="Vilém z Rožmberka's ciphered correspondence with his supporters in Poland during his candidacy for the Polish throne",
         correspondents='Vilém z Rožmberka (Wilhelm von Rosenberg), Oberstburggraf of Bohemia <-> his partisans in Poland-Lithuania',
         place='Český Krumlov / Prague / Poland', language='Czech, Latin or Polish (not stated)', region='Central Europe',
-        period='1551-1610',
+        period='1560-1589',
         shelfmark='SOA Třeboň, oddělení Třeboň, Historica Třeboň (NAD 124, II T 1), sign. 4834/36',
         folio_note='Signature as cited; extent not stated',
         cls='C',
