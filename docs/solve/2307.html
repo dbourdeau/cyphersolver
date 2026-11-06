@@ -11,7 +11,7 @@
 <meta property="og:url" content="https://cyphersolver.com/solve/2307.html">
 <meta property="og:title" content="No. 2307: Giovanni Mazzinghi's cipher letter of 16 January 1478, bare; the same cipher is glossed in MAP 72/170 a week later">
 <meta property="og:image" content="https://cyphersolver.com/hero_poster.png">
-<meta name="description" content="A pre-1497 Florentine cipher letter of the Medici circle in the months around the Pazzi conspiracy, unread on the page, with a glossed sibling in the same system: a short route to a reading. An unread cipher of 16 Jan 1478 (as written; Florentine style would make it 1479), with instructions for an AI agent.">
+<meta name="description" content="A pre-1497 Florentine cipher letter of the Medici circle in the months around the Pazzi conspiracy, unread on the page, with a glossed sibling in the same system: a short route to a reading. An unread cipher of January 1478 st. fior. (very probably January 1479 modern), with instructions for an AI agent.">
 <link rel="stylesheet" href="style.css?v=5c2bc3d7">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
@@ -51,7 +51,7 @@
   <h1>Giovanni Mazzinghi's cipher letter of 16 January 1478, bare; the same cipher is glossed in MAP 72/170 a week later</h1>
   <p class="sub">A pre-1497 Florentine cipher letter of the Medici circle in the months around the Pazzi conspiracy, unread on the page, with a glossed sibling in the same system: a short route to a reading.</p>
   <dl class="facts">
-    <dt>Date</dt><dd>16 Jan 1478 (as written; Florentine style would make it 1479)</dd>
+    <dt>Date</dt><dd>January 1478 st. fior. (very probably January 1479 modern)</dd>
     <dt>Correspondents</dt><dd>Giovanni Mazzinghi -&gt; (the Medici; addressee not named on the page)</dd>
     <dt>Place</dt><dd>not stated (Rome likely: the sibling letter reports papal news)</dd>
     <dt>Language</dt><dd>Italian (symbol cipher with clear words)</dd>
@@ -72,7 +72,7 @@ You are helping a public research project read historical cipher letters that no
 
 THE CIPHER
   Title:          Giovanni Mazzinghi's cipher letter of 16 January 1478, bare; the same cipher is glossed in MAP 72/170 a week later
-  Date:           16 Jan 1478 (as written; Florentine style would make it 1479)
+  Date:           January 1478 st. fior. (very probably January 1479 modern)
   Correspondents: Giovanni Mazzinghi -&gt; (the Medici; addressee not named on the page)
   Place:          not stated (Rome likely: the sibling letter reports papal news)
   Language:       Italian (symbol cipher with clear words) (expected)
@@ -84,20 +84,21 @@ THE CIPHER
     - IIIF image, recto: https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100089/A0000463.ptif/full/full/0/default.jpg
 
 WHAT IS KNOWN
-  Status: No decipherment on, over or beside the cipher (checked at 1600 px). The sign set (x, ‡, H, =, 5-like signs) is the one of MAP LXXII doc. 170 (23 Jan 1478), which carries a full interlinear decipherment.
+  Status: No decipherment on, over or beside the cipher (checked at 1600 px). The sign set (x, ‡, H, =, 5-like signs) is the one of MAP LXXII doc. 170 (23 Jan 1478), which carries a full interlinear decipherment. Dating corrected 6 Nov 2026: "gennaio 1478" in Florentine style is January 1479 modern, during the Pazzi War (targets/mazzinghi1478).
   Outcome so far: not yet attempted by the project
   Prior-art check: open as far as checked (6 Nov 2026): known.py finds nothing on the filza, the document or the correspondent; the Google Books feed shows these items only in the MAP inventory itself; DECODE, Tomokiyo and Lasry not searched. Marco Vito (Vienna) is working on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap.
   Check first: Transcribe MAP 72/170, build the key from its interlinear pairs, apply it to 89/142; check the date style and Mazzinghi's post (Rome?) in the letter itself.
   Class A: a sibling letter with a decipherment is in the same volume or series, so matching it is the first move.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/mazzinghi1478/NOTES.md
   Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/gramont1529/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); targets/gramont1529/NOTES.md (everything
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/mazzinghi1478/NOTES.md (everything
    already tried on this cipher, with the files it used); and lang/README.md (shared language models).
-   Put all your work in targets/gramont1529/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   Put all your work in targets/mazzinghi1478/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
    under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
@@ -138,7 +139,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/gramont1529/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/mazzinghi1478/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+2307&amp;target=catalogue+2307
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -156,10 +157,10 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>What is known</h2>
 
 
-<p><b>Status and prior art.</b> No decipherment on, over or beside the cipher (checked at 1600 px). The sign set (x, ‡, H, =, 5-like signs) is the one of MAP LXXII doc. 170 (23 Jan 1478), which carries a full interlinear decipherment.</p>
+<p><b>Status and prior art.</b> No decipherment on, over or beside the cipher (checked at 1600 px). The sign set (x, ‡, H, =, 5-like signs) is the one of MAP LXXII doc. 170 (23 Jan 1478), which carries a full interlinear decipherment. Dating corrected 6 Nov 2026: "gennaio 1478" in Florentine style is January 1479 modern, during the Pazzi War (targets/mazzinghi1478).</p>
 <p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open as far as checked (6 Nov 2026): known.py finds nothing on the filza, the document or the correspondent; the Google Books feed shows these items only in the MAP inventory itself; DECODE, Tomokiyo and Lasry not searched. Marco Vito (Vienna) is working on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap..</p>
 <p><b>Check first.</b> Transcribe MAP 72/170, build the key from its interlinear pairs, apply it to 89/142; check the date style and Mazzinghi's post (Rome?) in the letter itself.</p>
-<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gramont1529/NOTES.md" rel="noopener">targets/gramont1529/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/gramont1529" rel="noopener">the folder</a>)</li></ul>
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mazzinghi1478/NOTES.md" rel="noopener">targets/mazzinghi1478/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/mazzinghi1478" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gramont1529/NOTES.md" rel="noopener">targets/gramont1529/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/gramont1529" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
