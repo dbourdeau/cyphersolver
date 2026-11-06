@@ -72120,6 +72120,584 @@
    "repository": "asf"
   },
   {
+   "id": 2332,
+   "counted": true,
+   "year": 1537,
+   "date": "[May 1537] (annexed to Noceto's letter of 2 May 1537)",
+   "title": "\"Informazione\" for Giovanni Noceto: a full page of figure cipher annexed to his letter to Francesco Campana, May 1537, bare",
+   "correspondents": "Giovanni Noceto (Bagnone, Lunigiana) -> Francesco Campana, first secretary of Cosimo I",
+   "place": "Bagnone",
+   "language": "Italian? (figure cipher)",
+   "region": "Italy",
+   "period": "1497-1559",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo del Principato 331, cc. 70-71",
+   "folio_note": "c. 70r: Noceto's clear covering letter to Campana (Bagnone, 2 May 1537); c. 71r: about 25 lines of continuous figures, no clear word; versos blank. Inventory vol. I p. 30: c. 70 \"In allegato c. 71\"; c. 71 \"Informazione [per Giovanni Noceto], [1537]\", note \"Cifra allegata a c. 70\".",
+   "cls": "A",
+   "status": "Bare: no gloss on c. 71r; c. 70 is the covering letter and c. 72 an unrelated letter (Annibale da Napoli, Mantua). Seen at 900 px.",
+   "why": "The earliest cipher piece found in the Carteggio universale (first year of Cosimo I), a self-contained page from the Lunigiana frontier, unread.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "Transcribe c. 71r at full size; test two-figure grouping; look for Noceto/Campana keys in ASF Cifrari II serie.",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/unita-archivistica/?id=373",
+     "label": "PAD unit 373 (Mediceo del Principato 331)"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=472017&ua=373",
+     "label": "c. 70r"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=472018&ua=373",
+     "label": "c. 70v"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=472019&ua=373",
+     "label": "c. 71r"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=472020&ua=373",
+     "label": "c. 71v"
+    }
+   ],
+   "source": "ASF Mediceo del Principato, Carteggio universale (PAD images) + Carteggio universale di Cosimo I inventory PDFs (ASF Inventari on-line), second ASF Florence pass, Nov 2026",
+   "score_note": "Scored from the images viewed during the second ASF Florence pass, 6 Nov 2026 (research/sweep_2026-11_asf_florence_2/)",
+   "access_note": "scans public on ASF PAD (archividigitali), no login, curl works: unit page /archividigitali/unita-archivistica/?id=<ua> lists carte; each /archividigitali/riproduzione/?id=<id>&ua=<ua> names the ptif; IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mdp_carteggio_universale/<filza>/<seq>_C_<carta>_<R|V>.ptif (2000 px). PAD holds filze 330-460 only (1537-1557).",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza, the carta or the correspondent; the inventory notes no decipherment and none is written on or beside the page (neighbouring carte checked); ASF holds the chancery keys (Cifrari II serie, \"Chiavi delle cifre del Carteggio di Cosimo I dal 1536 al 1573\", 3 filze), not online; DECODE's ASFi \"Governo Mediceo - cifre\" volumes (R5687-R7459) are 17th-18th c.; Tomokiyo and Lasry not searched in this run.",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch n12",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF PAD (archividigitali) via curl/iipsrv, 6 Nov 2026: Mediceo del Principato 331 (PAD unit 373) cc. 68-73 recto and verso at 900 px",
+     "extent": "c. 71r: about 25 lines of continuous two-digit figures (e.g. \"86 25 46 12 ...\") filling the upper half of the page, no clear word, heading or signature; c. 71v blank (show-through only).",
+     "cipher": "Figure cipher sent on by Giovanni Noceto: his clear covering letter c. 70r (Bagnone, 2 May 1537, signed \"Iohannes Nocet.\") says, as far as read, that he forwards the enclosed \"ziffra\" that \"the Amico\" sent him with orders to put it into Campana's hands. Nothing is written over, under or beside the figures; cc. 68-69 are address leaves, c. 72 is a clear letter of Annibale da Blaso (Mantua?, 2 May 1537) and c. 73 a clear captain's report, so no decipherment slip is filed with it, and the inventory (vol. I p. 30: c. 70 \"In allegato c. 71\", c. 71 note \"Cifra allegata a c. 70\") notes none."
+    },
+    "prior_art": {
+     "decode": "known.py (harvested DECODE dump plus repo ledgers) on \"Mediceo del Principato 331\", \"Noceto\", \"Bagnone\", \"Informazione\": only this lead and its sweep files (and an unrelated 1557 \"Informazione\" catalogue entry); no DECODE record for any ASF Mediceo filza of 1537.",
+     "tomokiyo": "cryptiana.web.fc2.com/code/crypto.htm fetched 6 Nov 2026 and grepped for Florence/Florentine/Medici/Cosimo/1537/Campana: only the Guicciardini page (ca. 1590-93); nothing on a Lunigiana informant's cipher of 1537.",
+     "lasry": "Local copies of Lasry's GL.htm (targets/esp318/lit/crypt, gramont1529, vasto1527/prior; identical, 42,863 bytes) grepped for Cosimo, Medici, Mediceo, Campana, Noceto: no hit beyond Catherine de Medicis items.",
+     "edition": "Inventory vol. I p. 30 (rendered page) gives no decipherment. Desjardins/Canestrini Négociations III (archive.org gri_33125017127461 OCR) has only one 1537 item (29 May, French court), nothing from Bagnone. Théa Picquet, \"Filippo Strozzi et les fuorusciti: lettres d'exil (1536-1537)\", Machiavelliana II (2023) pp. 159-171, is a 13-page article (description seen) on the exiles' letters, not on Medici informants' ciphers.",
+     "literature": "Web searches on Noceto/Bagnone/Campana/1537 and cipher found only tourist pages on Pier Francesco da Noceto, lord of Bagnone, and Montemurlo background; no study or transcription of this sheet."
+    },
+    "searches": [
+     {
+      "query": "Giovanni Noceto Bagnone 1537 Campana cifra Lunigiana",
+      "result": "Bagnone tourist and Wikipedia pages naming Pier Francesco da Noceto (Bagnone castle 1526, governor from 1530); nothing on Giovanni Noceto or a cipher."
+     },
+     {
+      "query": "\"Noceto\" Bagnone 1537 \"Campana\" Strozzi Montemurlo spia \"amico\" lettera cifra Lunigiana Medici",
+      "result": "Montemurlo and Leone Strozzi pages; Picquet 2023 article on the fuorusciti letters (description only); no Medici informant cipher from Bagnone."
+     },
+     {
+      "query": "\"Mediceo del Principato\" 331 Noceto 1537 \"Informazione\" cifra Bagnone Pontremoli",
+      "result": "General Mediceo del Principato descriptions and Pontremoli pages; no record, abstract or transcription of 331 c. 71."
+     }
+    ],
+    "key_check": "No key known for this sender or for Campana's 1537 informants; ASF Cifrari II serie (\"Chiavi delle cifre del Carteggio di Cosimo I dal 1536 al 1573\") is not online. Not tested.",
+    "duplicates": "known.py on the filza, Noceto, Bagnone and \"Informazione\": no catalogue entry, target or other lead for this sheet.",
+    "verdict": "open"
+   },
+   "repository": "asf"
+  },
+  {
+   "id": 2333,
+   "counted": true,
+   "year": 1537,
+   "date": "4 Aug 1537",
+   "title": "Giovanni Lanfredini, Lyon, 4 August 1537: letter with about twelve lines of cipher (figures and letter-signs) among clear text, bare",
+   "correspondents": "Giovanni Lanfredini (Lyon) -> *** (addressee not named; Medici chancery)",
+   "place": "Lyon",
+   "language": "Italian (mixed figure and sign cipher with clear text)",
+   "region": "Italy",
+   "period": "1497-1559",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo del Principato 333, c. 225",
+   "folio_note": "c. 225r: clear letter (news from the French court) with two cipher blocks in the lower third (about 12 lines, digits mixed with letter-like signs), c. 225v continues in clear, signed \"Gio. Lan.\" and dated Lyon 4 Aug 1537. Inventory vol. I p. 58: \"Giovanni Lanfredini, Lione, 1537 agosto 4, c. 225\", note \"Parzialmente in cifra\".",
+   "cls": "B",
+   "status": "Bare: no interlinear or marginal decipherment (cipher block cropped and checked at 900 px); cc. 224 and 226 are unrelated clear letters.",
+   "why": "A Florentine in Lyon reporting to Cosimo I's chancery in the first months of the reign, in a mixed sign cipher.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "Transcribe at full size; look for other Lanfredini letters in filze 331-335 for more ciphertext.",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/unita-archivistica/?id=375",
+     "label": "PAD unit 375 (Mediceo del Principato 333)"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=473753&ua=375",
+     "label": "c. 225r"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=473754&ua=375",
+     "label": "c. 225v"
+    }
+   ],
+   "source": "ASF Mediceo del Principato, Carteggio universale (PAD images) + Carteggio universale di Cosimo I inventory PDFs (ASF Inventari on-line), second ASF Florence pass, Nov 2026",
+   "score_note": "Scored from the images viewed during the second ASF Florence pass, 6 Nov 2026 (research/sweep_2026-11_asf_florence_2/)",
+   "access_note": "scans public on ASF PAD (archividigitali), no login, curl works: unit page /archividigitali/unita-archivistica/?id=<ua> lists carte; each /archividigitali/riproduzione/?id=<id>&ua=<ua> names the ptif; IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mdp_carteggio_universale/<filza>/<seq>_C_<carta>_<R|V>.ptif (2000 px). PAD holds filze 330-460 only (1537-1557).",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza, the carta or the correspondent; the inventory notes no decipherment and none is written on or beside the page (neighbouring carte checked); ASF holds the chancery keys (Cifrari II serie, \"Chiavi delle cifre del Carteggio di Cosimo I dal 1536 al 1573\", 3 filze), not online; DECODE's ASFi \"Governo Mediceo - cifre\" volumes (R5687-R7459) are 17th-18th c.; Tomokiyo and Lasry not searched in this run.",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch n12",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF PAD (archividigitali) via curl/iipsrv, 6 Nov 2026: Mediceo del Principato 333 (PAD unit 375) cc. 223-227 recto and verso at 900 px",
+     "extent": "c. 225r: two cipher blocks in the lower third, about 9 lines in all (digits mixed with letter-like signs, e.g. \"8 71 65 8 ... 4121 ...\"), run into the clear sentences; c. 225v clear, ending \"Gio. Lan.\", dated Lyon 4 Aug 1537.",
+     "cipher": "Mixed figure and sign cipher inside a clear newsletter from the French court (the king, the grand master, ambassadors to the Emperor). No gloss between or over the cipher lines; c. 224 (a short clear letter of 4 Aug 1537 with its address leaf) and c. 226 (Giovanni Cellesi, clear, 4 Aug 1537) are unrelated, c. 227 an address leaf: no decipherment slip on either side. Inventory vol. I p. 58: \"Parzialmente in cifra\", no decipherment noted."
+    },
+    "prior_art": {
+     "decode": "known.py (DECODE dump plus repo) on \"Mediceo del Principato 333\", \"Lanfredini\", \"Lione 1537\": only this lead and its sweep files; no DECODE record.",
+     "tomokiyo": "cryptiana.web.fc2.com/code/crypto.htm fetched 6 Nov 2026: the Francis I page (\"French Ciphers during the Reign of Francis I\") concerns French royal ciphers; no Florentine-in-Lyon letter of 1537, no Lanfredini.",
+     "lasry": "Local copies of Lasry's GL.htm (targets/esp318/lit/crypt, gramont1529, vasto1527/prior; identical, 42,863 bytes) grepped for Lanfredini, Lyon, Cosimo, Mediceo: nothing.",
+     "edition": "Desjardins/Canestrini Négociations III (archive.org OCR, grepped \"Lanfredini\", \"Lyon\", 1537): no Lanfredini letter; the only 1537 piece is dated 29 May. No edition of this Lanfredini's letters found (the Scarton edition is of the 15th-century Giovanni Lanfredini).",
+     "literature": "Searches found the 15th-century namesake and a Lanfredini family history (Olschki), nothing on a 1537 Lyon correspondent or this cipher."
+    },
+    "searches": [
+     {
+      "query": "Giovanni Lanfredini Lione 1537 lettere Cosimo I cifra",
+      "result": "Pages on the 15th-century Giovanni Lanfredini (Scarton edition), Vitali on Florentine exiles, the \"amico di Venezia\" article; nothing on this Lyon letter."
+     },
+     {
+      "query": "\"Lanfredini\" Lione 1537 \"Mediceo del Principato\" 333 cifra Francesco I corte",
+      "result": "Lanfredini family history (Olschki 2005), Tommaso Guadagni medal page; no hit for 333 c. 225."
+     },
+     {
+      "query": "\"Giovanni Lanfredini\" 1537 Lyon OR Lione fuorusciti Strozzi Cosimo agente",
+      "result": "Strozzi/Lorenzino pages, CSP Spain 1537 calendars; no 1537 Lanfredini and no decipherment."
+     }
+    ],
+    "key_check": "No key known for Lanfredini; ASF Cifrari II serie not online. Not tested.",
+    "duplicates": "known.py on the filza, Lanfredini and Lione 1537: no catalogue entry, target or other lead.",
+    "verdict": "open"
+   },
+   "repository": "asf"
+  },
+  {
+   "id": 2335,
+   "counted": true,
+   "year": 1538,
+   "date": "23 Mar 1538",
+   "title": "Averardo Serristori, Florentine envoy at Barcelona, 23 March 1538: letter with figure-cipher passages, bare",
+   "correspondents": "Averardo Serristori (Barcelona) -> Cosimo I",
+   "place": "Barcelona",
+   "language": "Italian (figure cipher with clear text)",
+   "region": "Italy",
+   "period": "1497-1559",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo del Principato 335, cc. 132, 139",
+   "folio_note": "c. 132r-v: clear despatch with several figure runs (about 15 lines of figures in all), water-stained in the middle; c. 139 the clear postscript. Inventory vol. I p. 77: \"Averardo Serristori, Barcellona, 1538 marzo 23, cc. 132,139\", note \"Parzialmente in cifra\".",
+   "cls": "B",
+   "status": "Bare: no gloss seen at 900 px; cc. 131 and 133 are unrelated clear letters. Water damage affects part of the figures.",
+   "why": "Cipher of Cosimo I's envoy to Charles V's court in Spain in 1538, unread.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "Transcribe at full size; compare with Serristori's Rome cipher of 1554 (Mediceo 425, row below) and the interlinear-glossed 410 c. 1006.",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/unita-archivistica/?id=377",
+     "label": "PAD unit 377 (Mediceo del Principato 335)"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=475079&ua=377",
+     "label": "c. 132r"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=475080&ua=377",
+     "label": "c. 132v"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=475093&ua=377",
+     "label": "c. 139r"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=475094&ua=377",
+     "label": "c. 139v"
+    }
+   ],
+   "source": "ASF Mediceo del Principato, Carteggio universale (PAD images) + Carteggio universale di Cosimo I inventory PDFs (ASF Inventari on-line), second ASF Florence pass, Nov 2026",
+   "score_note": "Scored from the images viewed during the second ASF Florence pass, 6 Nov 2026 (research/sweep_2026-11_asf_florence_2/)",
+   "access_note": "scans public on ASF PAD (archividigitali), no login, curl works: unit page /archividigitali/unita-archivistica/?id=<ua> lists carte; each /archividigitali/riproduzione/?id=<id>&ua=<ua> names the ptif; IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mdp_carteggio_universale/<filza>/<seq>_C_<carta>_<R|V>.ptif (2000 px). PAD holds filze 330-460 only (1537-1557).",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza, the carta or the correspondent; the inventory notes no decipherment and none is written on or beside the page (neighbouring carte checked); ASF holds the chancery keys (Cifrari II serie, \"Chiavi delle cifre del Carteggio di Cosimo I dal 1536 al 1573\", 3 filze), not online; DECODE's ASFi \"Governo Mediceo - cifre\" volumes (R5687-R7459) are 17th-18th c.; Tomokiyo and Lasry not searched in this run.",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch n12",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF PAD (archividigitali) via curl/iipsrv, 6 Nov 2026: Mediceo del Principato 335 (PAD unit 377) cc. 130-140 rectos and c. 132v, 900 px",
+     "extent": "c. 132r-v: clear despatch with figure runs, about 15 lines of figures in all (the lower half of 132r and parts of 132v), a vertical water stain through the middle; c. 139r the clear postscript signed \"Averardo Serristori\", c. 139v-140 address leaves.",
+     "cipher": "Figure cipher passages inside the clear despatch of 23 March 1538 from Barcelona. No interlinear or marginal gloss; cc. 130 (Volterra letter), 131 (a clear letter with salutation and signature), 133-135 (clear letters) and 136-138 (blank/address leaves) carry no decipherment slip. Inventory vol. I p. 77: \"Parzialmente in cifra\"."
+    },
+    "prior_art": {
+     "decode": "known.py on \"Mediceo del Principato 335\", \"Serristori\", \"Barcellona\": only this lead, Serristori's other leads (2341, Rome 1554) and the sweep READMEs; no DECODE record.",
+     "tomokiyo": "cryptiana.web.fc2.com/code/crypto.htm fetched 6 Nov 2026: no page on Serristori or Florentine embassies to Charles V.",
+     "lasry": "Local copies of Lasry's GL.htm (targets/esp318/lit/crypt, gramont1529, vasto1527/prior; identical, 42,863 bytes) grepped for Serristori, Cosimo, Barcelona: nothing.",
+     "edition": "Canestrini, Legazioni di Averardo Serristori (1853; archive.org bub_gb_eAY_I94htiwC OCR read): the first legation prints despatches I-XVIII, 30 Sept 1537 - 2 March 1538 (pp. 13-73), many as \"Decifrato\"; the last is dated 2 March 1538 and nothing of 23 March 1538 is printed. Desjardins III has no 1538 Serristori piece.",
+     "literature": "Rocco 2024 (Serristori's youth and formation, orbi.uliege.be PDF read) gives the mission dates only; searches found no transcription of the 23 March letter."
+    },
+    "searches": [
+     {
+      "query": "Averardo Serristori Barcellona marzo 1538 dispaccio cifra Cosimo Carlo V",
+      "result": "Rocco (Liège) on Serristori's career, the Este Spain-embassy inventory; nothing on the 23 March 1538 despatch."
+     },
+     {
+      "query": "\"Mediceo del Principato\" 335 Serristori 1538 Barcellona lettera cifra decifrata Medici Archive Project",
+      "result": "MAP/BIA and Mediceo general pages, Rocco; no abstract or transcription of 335 cc. 132, 139."
+     },
+     {
+      "query": "Serristori Bandini 1538 legazione Spagna dispacci decifrati \"23 marzo 1538\" OR \"marzo 1538\" Barcellona Nizza",
+      "result": "CSP Spain 1538 calendars and the Este inventory; no Florentine decipherment of this despatch."
+     }
+    ],
+    "key_check": "Not tested. The same legation's deciphered despatches of Oct 1537 - 2 Mar 1538 are printed in the Legazioni (plaintext only); their cipher originals, if in Mediceo 333-335, would give the key. ASF Cifrari II serie not online.",
+    "key_held": "Plaintext of Serristori's ciphered despatches of the same legation (Oct 1537 - 2 Mar 1538) printed as \"Decifrato\" in Canestrini, Legazioni pp. 13-73: usable as known plaintext against their originals; not tested on this letter.",
+    "duplicates": "known.py on the filza, Serristori, Barcellona: no catalogue entry or target; lead 2341 is a different Serristori letter (Rome, 9 Apr 1554).",
+    "verdict": "open"
+   },
+   "repository": "asf"
+  },
+  {
+   "id": 2336,
+   "counted": true,
+   "year": 1538,
+   "date": "24 Dec 1538",
+   "title": "Luzio Calvelli to Gaspare Masolini, chancellor of Prato, 24 December 1538: about eight lines of figures among clear text, bare",
+   "correspondents": "Luzio Calvelli -> Gaspare Masolini, cancelliere di Prato (Florence)",
+   "place": "not stated",
+   "language": "Italian (figure cipher with clear text)",
+   "region": "Italy",
+   "period": "1497-1559",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo del Principato 335, c. 570",
+   "folio_note": "c. 570r: four lines of figures, six clear lines, three more lines of figures, dated 24 Dec 1538, signed \"Lutio Calvelli\"; c. 570v address. Inventory vol. I p. 89: note \"Parzialmente in cifra\".",
+   "cls": "B",
+   "status": "Bare (900 px); c. 569 is an unrelated clear letter.",
+   "why": "Short private figure cipher in the Medici chancery papers; low value until the context is known.",
+   "importance": 1,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "Transcribe; compare with the Campana-network figures (row below).",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/unita-archivistica/?id=377",
+     "label": "PAD unit 377 (Mediceo del Principato 335)"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=475959&ua=377",
+     "label": "c. 570r"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=475960&ua=377",
+     "label": "c. 570v"
+    }
+   ],
+   "source": "ASF Mediceo del Principato, Carteggio universale (PAD images) + Carteggio universale di Cosimo I inventory PDFs (ASF Inventari on-line), second ASF Florence pass, Nov 2026",
+   "score_note": "Scored from the images viewed during the second ASF Florence pass, 6 Nov 2026 (research/sweep_2026-11_asf_florence_2/)",
+   "access_note": "scans public on ASF PAD (archividigitali), no login, curl works: unit page /archividigitali/unita-archivistica/?id=<ua> lists carte; each /archividigitali/riproduzione/?id=<id>&ua=<ua> names the ptif; IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mdp_carteggio_universale/<filza>/<seq>_C_<carta>_<R|V>.ptif (2000 px). PAD holds filze 330-460 only (1537-1557).",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza, the carta or the correspondent; the inventory notes no decipherment and none is written on or beside the page (neighbouring carte checked); ASF holds the chancery keys (Cifrari II serie, \"Chiavi delle cifre del Carteggio di Cosimo I dal 1536 al 1573\", 3 filze), not online; DECODE's ASFi \"Governo Mediceo - cifre\" volumes (R5687-R7459) are 17th-18th c.; Tomokiyo and Lasry not searched in this run.",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch n12",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF PAD (archividigitali) via curl/iipsrv, 6 Nov 2026: Mediceo del Principato 335 (PAD unit 377) cc. 567-572 recto and verso at 900 px",
+     "extent": "c. 570r: four lines of continuous figures at the head, about six clear lines, then two to three more lines of figures, dated \"alli 24 di dicembre 1538\", signed \"Lutio Calvelli\" (about 200 figures in all); c. 570v address leaf.",
+     "cipher": "Short figure cipher in a private letter. Nothing written over or beside the figures; c. 569 (Raffaello Corbinelli, clear), c. 568 (clear letter), c. 571 (a clear letter signed Averardo [Serristori?]) and the slip c. 572 (clear avviso) are unrelated, so no decipherment is filed beside it. Inventory vol. I p. 89: \"Parzialmente in cifra\"."
+    },
+    "prior_art": {
+     "decode": "known.py on \"Calvelli\", \"Masolini\", \"Mediceo del Principato 335\": only this lead and its sweep files.",
+     "tomokiyo": "cryptiana.web.fc2.com/code/crypto.htm fetched 6 Nov 2026: nothing on a Prato chancery or a private Florentine figure cipher of 1538.",
+     "lasry": "Local copies of Lasry's GL.htm (targets/esp318/lit/crypt, gramont1529, vasto1527/prior; identical, 42,863 bytes) grepped for Calvelli, Masolini, Prato, Cosimo: nothing.",
+     "edition": "Inventory vol. I p. 89 (rendered page) notes no decipherment; no edition of Calvelli or Masolini letters found; Desjardins III has nothing of Dec 1538.",
+     "literature": "Searches on the two names returned unrelated Sepoltuario entries and Masolino the painter; no study of this letter."
+    },
+    "searches": [
+     {
+      "query": "\"Luzio Calvelli\" OR \"Lutio Calvelli\" OR \"Gaspare Masolini\" Prato 1538",
+      "result": "Sepoltuario entries for other Calvelli and Masini; nothing on this letter."
+     },
+     {
+      "query": "Calvelli Masolini cancelliere Prato 1538 lettera cifra \"Mediceo del Principato\" 335",
+      "result": "Regione Toscana inventory PDFs (later volumes) and Mediceo general pages; no record of 335 c. 570."
+     },
+     {
+      "query": "\"Calvelli\" 1538 Firenze cifra lettera \"Masolini\" OR \"Masolino\" Prato cancelliere Cosimo",
+      "result": "Only Masolino da Panicale pages; no hit."
+     }
+    ],
+    "key_check": "No key known for Calvelli; ASF Cifrari II serie not online. Not tested (short, about 200 figures).",
+    "duplicates": "known.py on Calvelli, Masolini and the filza: no catalogue entry, target or other lead.",
+    "verdict": "open"
+   },
+   "repository": "asf"
+  },
+  {
+   "id": 2337,
+   "counted": true,
+   "year": 1540,
+   "date": "20 Dec 1539 - 4 Feb 1541 (and June 1542, not digitised)",
+   "title": "Gerolamo del Vezzo and Niccolò Campana: the Medici intelligence correspondence from Modena, Piacenza and Bologna, 1539-1541, with figure runs and letter-pair codes, bare",
+   "correspondents": "Gerolamo del Vezzo (secretary of Lucrezia Pico Rangoni, Modena; writing as from \"Barzalona\") -> Lorenzo Pagni and Niccolò Campana (Bologna) -> Lorenzo Pagni, secretary of Cosimo I",
+   "place": "Modena (as \"Barzalona\"), Piacenza, Bologna",
+   "language": "Italian (figure groups and letter-pair codes such as EE, DD, KK, ZZ in clear text)",
+   "region": "Italy",
+   "period": "1497-1559",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo del Principato 337, c. 330; 347, c. 597; 349, c. 42; 353, c. 337",
+   "folio_note": "337 c. 330r-v (del Vezzo, \"Barzalona\" = Modena, 20 Dec 1539, to [Lorenzo Pagni], annexed to Campana's c. 335): a full page with many figure runs and code pairs (EE, DD, KK, &&); 347 c. 597 (Campana, Bologna, 22 Nov 1540, to Pagni): two figure passages; 349 c. 42 (del Vezzo, Piacenza, 4 Feb 1541, to Campana, annexed to c. 12): six figure runs; 353 c. 337 (del Vezzo, \"Barzalona\", 27 Aug 1540, to Campana): mostly clear with codes ZZ, KK, HS and one figure run. Inventory vol. I pp. 112, 209, 224, 279 note each \"Parzialmente in cifra\" (with \"luogo di emissione: Barzalona\" for 337 and 353). The same network's June 1542 pieces (357 c. 558 \"Cifra\", an avviso of Bernardino Duretti; c. 564 del Vezzo \"In codice\") are in 357 parte II, which PAD lists without images.",
+   "cls": "A",
+   "status": "Bare on all four: no interlinear or marginal decipherment; the adjacent carte (337 cc. 329, 331, 335; 347 cc. 596, 598; 349 cc. 41, 43, 12; 353 cc. 336, 338) are clear letters of the network, none a decipherment.",
+   "why": "A cover-name intelligence network run by Cosimo I's secretaries into Farnese and Este territory (1539-42), with a shared figure code: several letters for one system, unread.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "Transcribe the four letters; build the figure-group inventory; the clear context names many persons (Farnese, Rangoni, the \"Marchese\"), useful as cribs; check 357 parte II at ASF.",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/unita-archivistica/?id=379",
+     "label": "PAD unit 379 (Mediceo del Principato 337)"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=477367&ua=379",
+     "label": "c. 330r"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=477368&ua=379",
+     "label": "c. 330v"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=477377&ua=379",
+     "label": "c. 335r"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=477378&ua=379",
+     "label": "c. 335v"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/unita-archivistica/?id=1028",
+     "label": "PAD unit 1028 (Mediceo del Principato 347)"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=642575&ua=1028",
+     "label": "c. 597r"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=642576&ua=1028",
+     "label": "c. 597v"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/unita-archivistica/?id=1030",
+     "label": "PAD unit 1030 (Mediceo del Principato 349)"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=643545&ua=1030",
+     "label": "c. 42r"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=643546&ua=1030",
+     "label": "c. 42v"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=643485&ua=1030",
+     "label": "c. 12r"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=643486&ua=1030",
+     "label": "c. 12v"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/unita-archivistica/?id=386",
+     "label": "PAD unit 386 (Mediceo del Principato 353)"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=481121&ua=386",
+     "label": "c. 336r"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=481122&ua=386",
+     "label": "c. 336v"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=481123&ua=386",
+     "label": "c. 337r"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=481124&ua=386",
+     "label": "c. 337v"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=481125&ua=386",
+     "label": "c. 338r"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=481126&ua=386",
+     "label": "c. 338v"
+    }
+   ],
+   "source": "ASF Mediceo del Principato, Carteggio universale (PAD images) + Carteggio universale di Cosimo I inventory PDFs (ASF Inventari on-line), second ASF Florence pass, Nov 2026",
+   "score_note": "Scored from the images viewed during the second ASF Florence pass, 6 Nov 2026 (research/sweep_2026-11_asf_florence_2/)",
+   "access_note": "scans public on ASF PAD (archividigitali), no login, curl works: unit page /archividigitali/unita-archivistica/?id=<ua> lists carte; each /archividigitali/riproduzione/?id=<id>&ua=<ua> names the ptif; IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mdp_carteggio_universale/<filza>/<seq>_C_<carta>_<R|V>.ptif (2000 px). PAD holds filze 330-460 only (1537-1557).",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza, the carta or the correspondent; the inventory notes no decipherment and none is written on or beside the page (neighbouring carte checked); ASF holds the chancery keys (Cifrari II serie, \"Chiavi delle cifre del Carteggio di Cosimo I dal 1536 al 1573\", 3 filze), not online; DECODE's ASFi \"Governo Mediceo - cifre\" volumes (R5687-R7459) are 17th-18th c.; Tomokiyo and Lasry not searched in this run.",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch n12",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF PAD (archividigitali) via curl/iipsrv, 6 Nov 2026: Mediceo del Principato 337 cc. 329-336 (unit 379), 347 cc. 596-598 (unit 1028), 349 cc. 11-13 and 41-43 (unit 1030), 353 cc. 336-338 (unit 386), rectos and the cipher versos at 900 px",
+     "extent": "337 c. 330r-v: two full sides with many figure runs and letter-pair codes (EE, DD, KK); 347 c. 597r-v: two figure passages (about 4 lines); 349 c. 42r: about six figure runs in a clear letter; 353 c. 337r-v: mostly clear with codes (KK, HS) and one figure run.",
+     "cipher": "Mixed figures and letter-pair code words inside clear intelligence letters. No gloss on any of the four. Neighbours are clear letters of the network or others, none a decipherment slip: 337 c. 329 an address leaf, c. 331 a clear letter signed L. Pio [da Carpi], cc. 332-333 clear letters, cc. 334-335 Niccolò Campana's clear covering letters (16 and 30 Dec 1539); 347 c. 596 a short clear note (\"l'amico\"), c. 598 Donato Ridolfi; 349 c. 12 Campana's clear cover (9 Feb 1541), cc. 11, 13, 41, 43 clear letters; 353 c. 336 clear, c. 338 a clear letter from Vicenza. Inventory vol. I pp. 112, 209, 224, 279: \"Parzialmente in cifra\" only."
+    },
+    "prior_art": {
+     "decode": "known.py on \"Mediceo del Principato 337/347/349/353\", \"del Vezzo\", \"Barzalona\", \"Niccolò Campana\", \"Lorenzo Pagni\": only this lead, the two ASF sweep READMEs and candidates; no DECODE record.",
+     "tomokiyo": "cryptiana.web.fc2.com/code/crypto.htm fetched 6 Nov 2026: no page on Medici intelligence networks in Modena/Piacenza/Bologna or on letter-pair codes of 1539-41.",
+     "lasry": "Local copies of Lasry's GL.htm (targets/esp318/lit/crypt, gramont1529, vasto1527/prior; identical, 42,863 bytes) grepped for Campana, Pagni, Rangoni, Modena, Piacenza: nothing.",
+     "edition": "No edition of del Vezzo's or Niccolò Campana's letters found; Desjardins III (OCR) has no piece from Modena/Bologna 1539-41 by these men; inventory vol. I notes no decipherment for any of the four.",
+     "literature": "Searches on del Vezzo, the \"Barzalona\" cover name, Campana and Pagni found nothing on this network or its cipher."
+    },
+    "searches": [
+     {
+      "query": "\"Gerolamo del Vezzo\" OR \"Girolamo del Vezzo\" Rangoni Modena Cosimo Medici",
+      "result": "Only generic Medici pages; no del Vezzo."
+     },
+     {
+      "query": "Niccolò Campana Bologna 1540 Lorenzo Pagni lettere cifra Barzalona Modena Lucrezia Pico Rangoni informatori Cosimo",
+      "result": "A 1557 Lorenzo Pagni letter record and the Della Casa-Farnese edition pages; nothing on these letters."
+     },
+     {
+      "query": "\"Barzalona\" cifra 1540 Modena Farnese Piacenza avvisi Medici \"del Vezzo\" OR \"Duretti\"",
+      "result": "Folger Este-Farnese records (1592-1805) and unrelated studies; no hit for the cover name or the cipher."
+     }
+    ],
+    "key_check": "No key known for this network; ASF Cifrari II serie not online. The June 1542 pieces of the same network (357 cc. 558, 564) are in 357 parte II, not imaged on PAD. Not tested.",
+    "duplicates": "known.py on the four filze, del Vezzo, Barzalona, Campana, Pagni: no catalogue entry, target or other lead.",
+    "verdict": "open"
+   },
+   "repository": "asf"
+  },
+  {
+   "id": 2338,
+   "counted": true,
+   "year": 1544,
+   "date": "4 Jun 1544",
+   "title": "Cristiano Pagni, Tortona, 4 June 1544: four lines of figure cipher closing a clear despatch on the Piedmont campaign, bare",
+   "correspondents": "Cristiano Pagni (with the imperial army, Tortona) -> Cosimo I",
+   "place": "Tortona",
+   "language": "Italian (figure cipher)",
+   "region": "Italy",
+   "period": "1497-1559",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo del Principato 366, cc. 39-40, 42",
+   "folio_note": "cc. 39r-42r clear (the Florentine infantry at Tortona, Count of Santa Fiora); c. 42v, after the date \"Da Tortona alli iiii di Giugno MDXLIIII\", four lines of continuous figures (about 200 digits), then the subscription. Inventory vol. II p. 245: note \"Parzialmente in cifra\".",
+   "cls": "B",
+   "status": "Bare (900 px). Short.",
+   "why": "Short cipher postscript by the future first secretary of Cosimo I; only useful with other Pagni ciphertext.",
+   "importance": 1,
+   "solvability": 2,
+   "difficulty": 3,
+   "verify": "Transcribe; compare with the figure systems of the 1540s rows here.",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/unita-archivistica/?id=399",
+     "label": "PAD unit 399 (Mediceo del Principato 366)"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=494478&ua=399",
+     "label": "c. 39r"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=494479&ua=399",
+     "label": "c. 39v"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=494480&ua=399",
+     "label": "c. 40r"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=494481&ua=399",
+     "label": "c. 40v"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=494482&ua=399",
+     "label": "c. 41r"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=494483&ua=399",
+     "label": "c. 41v"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=494484&ua=399",
+     "label": "c. 42r"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=494485&ua=399",
+     "label": "c. 42v"
+    }
+   ],
+   "source": "ASF Mediceo del Principato, Carteggio universale (PAD images) + Carteggio universale di Cosimo I inventory PDFs (ASF Inventari on-line), second ASF Florence pass, Nov 2026",
+   "score_note": "Scored from the images viewed during the second ASF Florence pass, 6 Nov 2026 (research/sweep_2026-11_asf_florence_2/)",
+   "access_note": "scans public on ASF PAD (archividigitali), no login, curl works: unit page /archividigitali/unita-archivistica/?id=<ua> lists carte; each /archividigitali/riproduzione/?id=<id>&ua=<ua> names the ptif; IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mdp_carteggio_universale/<filza>/<seq>_C_<carta>_<R|V>.ptif (2000 px). PAD holds filze 330-460 only (1537-1557).",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza, the carta or the correspondent; the inventory notes no decipherment and none is written on or beside the page (neighbouring carte checked); ASF holds the chancery keys (Cifrari II serie, \"Chiavi delle cifre del Carteggio di Cosimo I dal 1536 al 1573\", 3 filze), not online; DECODE's ASFi \"Governo Mediceo - cifre\" volumes (R5687-R7459) are 17th-18th c.; Tomokiyo and Lasry not searched in this run.",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch n12",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF PAD (archividigitali) via curl/iipsrv, 6 Nov 2026: Mediceo del Principato 366 (PAD unit 399) cc. 38-43 recto and verso at 900 px",
+     "extent": "c. 42v: after the date \"Da Tortona alli iiii di Giugno MDXLIIII\", four lines of continuous figures (about 200 digits, e.g. \"24 03 35 39 23 37 49 47 67 72 ...\"), then \"Di V. Ecc.a\" and the subscription \"Humiliss.o servo et suddito Christiano Pagni\".",
+     "cipher": "Figure-cipher postscript closing a clear despatch on the mutiny of the duke's infantry at Tortona. Nothing written over or beside the figures; c. 38 is a clear letter from Genoa, c. 41 the address leaves of this letter, c. 43 an unrelated clear letter of 4 June 1544, so no decipherment slip is filed with it. Inventory vol. II p. 245: \"Parzialmente in cifra\"."
+    },
+    "prior_art": {
+     "decode": "known.py on \"Mediceo del Principato 366\", \"Cristiano Pagni\", \"Tortona\": only this lead, Pagni as addressee in lead 2325, and an unrelated Tortona mention in targets/genes1643.",
+     "tomokiyo": "cryptiana.web.fc2.com/code/crypto.htm fetched 6 Nov 2026: nothing on Pagni or the 1544 Piedmont campaign.",
+     "lasry": "Local copies of Lasry's GL.htm (targets/esp318/lit/crypt, gramont1529, vasto1527/prior; identical, 42,863 bytes) grepped for Pagni, Tortona, Vasto, Cosimo: nothing.",
+     "edition": "Desjardins/Canestrini Négociations III pp. 113-116 (page images n119-n120 and OCR read) print this letter (XV, \"Tortona, 4 juin 1544\", cited \"Carteggio di Cosimo I, filza 35\") from \"Ier mattina me ne venni ...\" to \"chi ha errato\", with no figures and no deciphered postscript. The footnote \"Ce dernier paragraphe est déchiffré\" on p. 113 belongs to the preceding letter XIV (Pavia, 28-29 May 1544).",
+     "literature": "Searches on Pagni, Tortona, June 1544 and cipher found only Serravalle battle pages and Morgan Library Pagni items; no transcription of the postscript."
+    },
+    "searches": [
+     {
+      "query": "Cristiano Pagni Tortona 4 giugno 1544 lettera cifra Cosimo ammutinamento colonnello",
+      "result": "Regione Toscana inventory vol. 3 PDF and unrelated letters; no transcription of the cipher postscript."
+     },
+     {
+      "query": "\"Cristiano Pagni\" 1544 marchese del Vasto lettere cifra Desjardins Négociations Toscane",
+      "result": "Library records of Desjardins' series and a 1554 Pagni letter at the Morgan; opened Desjardins III on archive.org: letter XV printed without the cipher."
+     },
+     {
+      "query": "\"Mediceo del Principato\" 366 \"Pagni\" 1544 Tortona Santa Fiora fanteria fiorentina ammutinata Strozzi Serravalle",
+      "result": "Battle of Serravalle (2-4 June 1544) and Piero Strozzi pages; nothing on 366 c. 42v."
+     }
+    ],
+    "key_check": "Not tested. Pagni's Pavia letter of 28-29 May 1544 (Desjardins III XIV) has a paragraph printed as deciphered, so a known-plaintext pair for his 1544 system may exist in the same filza; ASF Cifrari II serie not online.",
+    "key_held": "Desjardins III p. 113 prints a deciphered paragraph of Pagni's letter of 28-29 May 1544 (plaintext only); its cipher original was not located or tested here.",
+    "duplicates": "known.py on the filza, Cristiano Pagni and Tortona: no catalogue entry, target or other lead for this postscript.",
+    "verdict": "open"
+   },
+   "repository": "asf"
+  },
+  {
    "id": 2341,
    "counted": true,
    "year": 1554,
