@@ -411,6 +411,11 @@ PAGES = [
          blurb='Two Italian letters (DECODE R704, R721) in a third cipher of the SP 106/10 codebreaker&rsquo;s file: groups of a letter and one or two figures, with his syllables above them. Identified and separated from the file&rsquo;s other ciphers; not yet transcribed or deciphered. Split on 14 Oct 2026 from sp106box10.',
          quote='Z6 n54 m56 g42 n24 m62',
          rights='Manuscript rights: The National Archives, Kew, via DECODE'),
+    dict(slug='pawel1624', label='Carl Pawel to Frederick V 1624', year='1624', y=1624.9, place='Carl Pawel &rarr; The Hague', st='solved', stt='key rebuilt',
+         title='Carl Pawel to Frederick V, 25 November 1624: the key of the letter cipher',
+         blurb='A report to the exiled King of Bohemia on Colonel Fuchs&rsquo;s recruiting in W&uuml;rttemberg, its cipher deciphered between the lines at the time. Brice Dudout found that its letter cipher is the alphabet of the Johann Casimir&ndash;Camerarius letters moved by three, fitted the shift on one page and tested it on the next (13 of 13 letters). The content is the period decipherment; the key and the family of keys are the new part.',
+         quote='the casimir1629 alphabet, every number minus three',
+         rights='Letter: Bayerische Staatsbibliothek M&uuml;nchen, Clm 10382 n. 46 (MDZ bsb00112117); key by Brice Dudout, Europe chiffr&eacute;e'),
     dict(slug='rusdorff1625', label='Rusdorff to Oxenstierna 1625', year='1625', y=1625.15, place='London &rarr; Axel Oxenstierna', st='solved', stt='key recovered from ciphertext-only',
          title='Rusdorff to Oxenstierna: London, February 1625',
          blurb='Three Latin letters of the Palatine envoy Johann Joachim von Rusdorff to Axel Oxenstierna, London, February 1625 (Riksarkivet E 701, DECODE R4336&ndash;R4337, catalogued The Hague 1628). George Lasry recovered the key from the cipher alone: a homophonic table with numbers 24 apart and an alphabetical three-digit nomenclator. The Swedish and Danish offers for the Palatinate, the French marriage and a French subsidy; two codes open.',
@@ -4352,6 +4357,7 @@ IMAGES['johnston1863'] = ('johnston1863_lead.jpg', 'The cipher lines of the tele
 IMAGES['milroy'] = None
 IMAGES['auckland1918'] = None
 IMAGES['deboli1788'] = None
+IMAGES['pawel1624'] = None
 IMAGES['dormer1694'] = None
 IMAGES['casimir1629'] = None
 IMAGES['leticia1932'] = None

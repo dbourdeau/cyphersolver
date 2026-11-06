@@ -11,7 +11,7 @@ All scores are judgments on a 1–5 scale, not measurements. The composite is a 
 are stated; change them and the order changes. Entries marked * carry an inference that the notes do not
 verify (see the last section).
 
-The composite table holds 277 rows (24 taken out after the reading audit of 22–23 Oct 2026), one per finished target or group, ordered by score. Rows marked † are provisional: scored by the assistant on the same axes when the target was written up, not yet checked by Daniel or worked out in the appendix. Unmarked rows are the thirteen reviewed on 16 Sept 2026. Placement notes written with the provisional rows are kept at the end of the page.
+The composite table holds 278 rows (24 taken out after the reading audit of 22–23 Oct 2026), one per finished target or group, ordered by score. Rows marked † are provisional: scored by the assistant on the same axes when the target was written up, not yet checked by Daniel or worked out in the appendix. Unmarked rows are the thirteen reviewed on 16 Sept 2026. Placement notes written with the provisional rows are kept at the end of the page.
 
 ## Axes and weights
 
@@ -336,8 +336,9 @@ The composite table holds 277 rows (24 taken out after the reading audit of 22�
 | 304 † | **Count Visconti (Brussels) with Marquis Visconti (London)**, Italian cipher key, BL Add MS 32270 f. 42 (DECODE R7931) | 1727 | 1 | 1 | 2 | 1 | 3 | 4 | **1.70** | D 1: the record is the key; nothing to break. H 1: a reconstructed key, though for Walpole-era Brussels–London traffic. N 2: DECODE typed it as a ciphertext. R 1: 193 key places. F 3: clean fair copy. V 4: the endorsement and the draft on the next leaf confirm it. |
 | 307 † | **Sir Ralph Boswell → William Boswell**, TNA SP 106/5 ff. 20–21 (DECODE R413, catalogued as Charles I to Boswell) | 15 Dec 1627 | 1 | 2 | 2 | 1 | 1 | 3 | **1.65** | D 1: Woodard's 2021 monoalphabetic key applied. H 2: court news on Buckingham before the 1628 Parliament. N 2: read by Woodard; sender, date and two signs added here. F 1: a DECODE record only. V 3: key consistent on all 442 signs; one pair unread |
 | 308 † | **Scribe's colophon of the Dominican sequentiary Uppsala UB C 513**, f. 19v, Strängnäs, and the f. 1r note (DECODE R4349) | 1517 | 1 | 1 | 2 | 3 | 1 | 3 | **1.60** | D 1: the colophon's vowel shift was printed with its reading (1992); the six signs of the f. 1r note are too short. H 1: the book's date and place, and a private note. N 2: the note and its signs are new here. R 3: all 175 images checked to find the six signs DECODE means. |
-| 309 † | **C. Ben. Schaeblin (The Hague) to Mr Jones**, BL Add MS 32256 f. 235 (DECODE R9218) | 1753 | 1 | 1 | 1 | 1 | 3 | 4 | **1.50** | D 1: nothing enciphered; the letter is in clear. H 1: a proposal for a French cipher, of interest for how the Hague office built codes. |
-| 310 † | **Burghley → Walsingham (Walsingham letter-book)**, BL Harley MS 260 f. 395 (DECODE R8362) | 1573 | 1 | 1 | 1 | 1 | 3 | 3 | **1.40** | D 1: nothing enciphered; two boxed cover-name markers. H 1: a known printed letter. |
+| 309 † | **Carl Pawel → Frederick V, King of Bohemia (in exile)**, BSB Clm 10382 n. 46 (lead 2179) | 1624 | 1 | 2 | 1 | 2 | 1 | 3 | **1.55** | D 1: the key of casimir1629 with one shift fitted on the glosses. H 2: a Palatine agent on recruiting in Württemberg in 1624. N 1: deciphered at the time on the leaf. R 2. F 1. V 3: shift chosen clearly (0.921 against 0.737) and 13 of 13 held-out letters, but the held-out part is tiny. |
+| 310 † | **C. Ben. Schaeblin (The Hague) to Mr Jones**, BL Add MS 32256 f. 235 (DECODE R9218) | 1753 | 1 | 1 | 1 | 1 | 3 | 4 | **1.50** | D 1: nothing enciphered; the letter is in clear. H 1: a proposal for a French cipher, of interest for how the Hague office built codes. |
+| 311 † | **Burghley → Walsingham (Walsingham letter-book)**, BL Harley MS 260 f. 395 (DECODE R8362) | 1573 | 1 | 1 | 1 | 1 | 3 | 3 | **1.40** | D 1: nothing enciphered; two boxed cover-name markers. H 1: a known printed letter. |
 
 Score = 0.25 D + 0.25 H + 0.20 N + 0.10 R + 0.10 F + 0.10 V. Equal scores share a rank; within a tie the order is by D, then H. † provisional (see above).
 
