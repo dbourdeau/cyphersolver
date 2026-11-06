@@ -15,6 +15,7 @@ ATLAS = ROOT / 'docs' / 'atlas.json'
 
 # places added with the 25 Oct 2026 backfill (lat, lon); names are what the atlas shows
 NEW_PLACES = {
+    'Galeana': [24.826, -100.073],  # limantour1909: Reyes, governor of Nuevo León, at Galeana, July 1909
     'Baltimore': [39.290, -76.612], 'The Oaks': [33.540, -79.090],  # burr1808 (Burr at Baltimore; the Alston plantation on the Waccamaw, S.C.)
     'Leeuwarden': [53.201, 5.799], 'Heidelberg': [49.399, 8.672], 'Dorsten': [51.660, 6.966], 'Puerto Asís': [0.507, -76.496], 'Bogotá': [4.711, -74.072],  # nassau1620, hatzfeldt1641, leticia1932
     'San Antonio': [29.424, -98.494], 'Austin': [30.267, -97.743], 'Chicago': [41.878, -87.630],  # augur1874
