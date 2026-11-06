@@ -1,0 +1,123 @@
+{
+ "schema_version": 1,
+ "target": "limantour1909",
+ "title": "José López Portillo y Rojas to General Bernardo Reyes, 1909 (CEHM DLI.39.7680.2 and sibling records): a proposed numerical substitution key by Alberto Garvía García, partial and not yet verified",
+ "documents": [
+  {
+   "id": "dli-39-7680-2",
+   "read": "not read",
+   "shelfmark": "Centro de Estudios de Historia de México (CEHM), Archivo del General Bernardo Reyes, DLI.39.7680.2 (record 118144)",
+   "date": "15 July 1909",
+   "year": 1909,
+   "country": "Mexico",
+   "route": "José López Portillo y Rojas -> General Bernardo Reyes",
+   "language": "Spanish",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "unknown"
+    ],
+    "source": "Two 1909 telegrams of the same correspondence carry a plaintext beside the cipher (DLI.39.7677.1 and DLI.39.7696.1); the letter itself has none known.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 77,
+    "unit": "code groups",
+    "measured": false,
+    "file": "cyphersolver-1448-evidence.md"
+   },
+   "transcription": {
+    "by": "unknown",
+    "source": "contributor's research transcriptions (gist and Zenodo report); original CEHM images not reproduced and not seen by the project",
+    "image_quality": "unknown",
+    "notes": "77 cipher groups numbered by position in the contributor's file; not checked against the images."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "unknown"
+  ],
+  "summary": "A numerical substitution (code numbers to letters) proposed by the contributor: 28 independently supported number-to-letter values and one provisional value (60 = Y). Not examined by the project.",
+  "symbol_kind": "digits",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "where": "Two sibling telegrams of 15 and 23 July 1909 carry a contemporary plaintext (CEHM 118140, 118185), used by the contributor as controls. No prior reading of the letter found; issue #245, 4-6 Nov 2026.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "unknown",
+  "human_role": "Alberto Garvía García reported the key and the evidence (issue #245, pull request #308). The project has not seen the CEHM images and has verified none of the values.",
+  "models": [
+   "unknown"
+  ],
+  "first_date": "2026-11-04",
+  "last_date": "2026-11-06"
+ },
+ "solution": [
+  {
+   "date": "2026-11-04",
+   "kind": "crib",
+   "what": "The contributor aligned eight control sequences from two sibling telegrams of 15 and 23 July 1909 with their plaintexts: seven retained controls give 28 distinct number-to-letter values; an eighth, watermark-affected sequence (AYA) adds 60 = Y, provisional.",
+   "result": "worked",
+   "technique": [
+    "crib testing"
+   ]
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "verification",
+   "what": "Project review of the count in issue #245: the strict count is 28; the images were not reachable from the project's environment, so nothing was compared with them.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "verification": [
+   "none"
+  ],
+  "method": "key recovered based on adjacent plaintext",
+  "key": "partial",
+  "method_basis": "Contributor's claim: ciphertext-only inference, then supported by the plaintexts of sibling telegrams. Not verified by the project.",
+  "contribution": [
+   "key recovered"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "garvia",
+    "role": "solution",
+    "note": "proposed key (28 supported values, 60 = Y provisional) and evidence packet, issue #245 and pull request #308; Zenodo report doi 10.5281/zenodo.23934776",
+    "date": "2026-11-06"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "the CEHM images and the transcriptions have not been seen or checked by the project",
+    "blocker": "needs-physical-access",
+    "detail": "cehm.org.mx is not reachable from the project's environment"
+   }
+  ],
+  "notes": "Recorded as a contributed, unverified partial key. No reading is claimed here."
+ }
+}
