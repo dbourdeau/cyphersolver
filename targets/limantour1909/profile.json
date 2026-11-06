@@ -89,12 +89,20 @@
    "kind": "verification",
    "what": "Project review of the count in issue #245: the strict count is 28; the images were not reachable from the project's environment, so nothing was compared with them.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "verification",
+   "what": "Alberto Garvía García sent four CEHM viewer screenshots privately. An AI model read the seven control sequences and the 77 groups of the letter of 15 July on them: all numbers and plaintexts agree with the evidence file; the strict count stays 28, with no number mapped to two letters. With the same table the letter decodes to running Spanish (enemigo, te pronuncies, temor, calma y prudencia, oficios, clubs, Guadalajara) and the 29 July note to LIMANTOUR. Images are private and not in the repository (VERIFICATION.md).",
+   "result": "worked"
   }
  ],
  "outcome": {
   "class": "not read",
   "verification": [
-   "none"
+   "matched control",
+   "key confirms",
+   "historical consistency"
   ],
   "method": "key recovered based on adjacent plaintext",
   "key": "partial",
@@ -113,11 +121,11 @@
   ],
   "gaps": [
    {
-    "item": "the CEHM images and the transcriptions have not been seen or checked by the project",
+    "item": "the numbers were checked on phone screenshots by an AI reader only; a human check on the CEHM originals is still wanted",
     "blocker": "needs-physical-access",
-    "detail": "cehm.org.mx is not reachable from the project's environment"
+    "detail": "the screenshots are private and not redistributable"
    }
   ],
-  "notes": "Recorded as a contributed, unverified partial key. No reading is claimed here."
+  "notes": "Recorded as a contributed partial key. The seven control sequences and the 77 groups of the letter agree with the CEHM screenshots (VERIFICATION.md, 6 Nov 2026); the key decodes the letter to running Spanish. No reading page is claimed yet."
  }
 }
