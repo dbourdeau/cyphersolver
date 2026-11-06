@@ -1,6 +1,6 @@
 # Lope de Soria (Genoa) to Charles V, 1523 — RAH Salazar A-28 (9/28), DECODE R9488-R9498
 
-Status: in progress (read in part since verify v8, 23 Oct 2026: R9494-96 decoded, not read). Earlier: read (5 Oct 2026: 96.6% of cipher units read as sense, measured; measure/measure.py) (written up as docs/soria1523.html; the page still shows the earlier 'read in part')
+Status: read in part (since verify v8, 23 Oct 2026: R9494-96 decoded, not read; every remaining gap has an outside blocker since R9498 was collated in full on 6 Nov 2026). Earlier: read (5 Oct 2026: 96.6% of cipher units read as sense, measured; measure/measure.py) (written up as docs/soria1523.html; the page still shows the earlier 'read in part')
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): R9491 and R9494-96 were graded C on the superseded files read_r9491_b.md and read_r9494.md. The 5 Oct 2026 measured readings (measure/kb_r9491.txt, measure/kb_r9494.txt) build sentences in both letters with single key-B code groups open, so both per-document grades are overturned to B. Claim unchanged.
 
 
@@ -24,7 +24,7 @@ Catalogue entry 149 ("Lope de Soria to Charles V, 11 ciphertexts", scored by rul
 | R9495 | 480-481 | same, duplicate | Emperor | B | used to check R9494 |
 | R9496 | 482-483 | same, triplicate | Emperor | B | not collated |
 | R9497 | 577-579 | Genoa, 13 Aug 1523 | Emperor | B | read_r9497.md (+ _full) |
-| R9498 | 581-584 | same, duplicate | Emperor | B | used to check R9497 |
+| R9498 | 581-584 | same, duplicate | Emperor | B | collated in full with R9497 (block 1 30 Sept, block 2 6 Nov 2026) |
 
 DECODE's "1524" for R9494 and "1524 (?)" for R9498 are wrong: both letters are dated 1523.
 Images: `img/` (git-ignored; fetched 2026-09-19 with the bordeaux cookie). Not public domain: RAH permission needed.
@@ -126,7 +126,7 @@ What moved it:
 ## Open
 
 - Key-A codes rip (Venetians?), pur, qed (Swiss?), mul; key-B groups listed in docs/soria1523.html section 09.
-- R9496 collated 5 Oct 2026 (opening paragraph new); R9498 collated for block 1 (30 Sept 2026). Measured readings: measure/.
+- R9496 collated 5 Oct 2026 (opening paragraph new); R9498 collated for block 1 (30 Sept 2026) and block 2 (6 Nov 2026). Measured readings: measure/.
 
 ## Verification v8, 23 Oct 2026
 
@@ -136,13 +136,23 @@ holes each, and the R9496 paragraph breaks off. The groups are spelled the same 
 R9844 crib. **Back to decoded, not read**; class read -> **read in part**, `fraction_read` 0.966 -> 0.873. R9498 beyond
 block 1 is still not collated (not-attempted), so the target is in progress.
 
+## R9498 block 2 collated (6 Nov 2026)
+
+R9498 writes all of R9497's block 2 and f. 579r cipher in five lines on f. 583v (img P2 left, under block 1); it has no
+other cipher. Transcribed sign by sign from the full-size image and collated (read_r9497_full.md, 'Collation of block
+2 with R9498'). Every spelled word agrees. New: pac = sobre (R9497 spells ϖrɡ̣c7), tec = me, z = m (both copies:
+'me', 'acometido'), R9498 homophones n+ = p, ꝏ = i, √ = g (pague, both), yic = -do confirmed. Consequence for block 1:
+R9497 'xip 4qƀ4r z7∞ yeb' = R9498 'xip 4qƀzr tec ∞ yeb', so z7∞ is m-e-a: 'y lo mismo me a dicho de parte del principe
+de Salerno' (and he has told me the same on behalf of the Prince of Salerno); '[hará] el dicho' withdrawn. The '▽ ꝑ̄'
+after 'Salerno' were the closer (R9497 ꝑ gto, R9498 g+o ∃ ⊙). paf, sud, sab, xag, xob, tin, xa and pes are the same
+groups in both copies: no new evidence. 13 Aug measured 404/408 = 99.0% (was 401/410); overall 3,415/3,531.
+
 ## Remaining gaps
 - key-A code words rip (4x), pur (3x), qed (2x), dus (2x), cop - blocker: no-key-material; context only (Venetians? V. Magestad? Swiss?), every copy writes the same groups, no key-A crib exists
 - July L10-L12 'an fec que la' and 'Q?o Lo79' (~12 signs) - blocker: illegible; R9492 and R9493 disagree sign by sign
 - R9491 single key-B groups taf, tu, pud (3x, no one value fits), zib, sib (2x), tac, tad, xif, toya, and ~20 signs in l.3 and l.6-7 - blocker: no-key-material; no duplicate of this letter, not in R9844 or any sibling
 - R9494-96 decoded, not read (v8 23 Oct 2026: 0.583 clean sentences): te, per, tep, zu, tol, the day count before 'dias', and two phrases of R9496's extra paragraph - blocker: no-key-material; three copies collated, they spell the same groups
-- R9497 paf [tiempo], sud [respuesta], xuf yic [hablado], z7∞ [hara] - blocker: no-key-material; bounded only by the alphabetical blocks, other words fit
-- R9498 beyond block 1 not collated - blocker: not-attempted; block 2 and f.579r of R9497 read without it
+- R9497 paf [tiempo], sud [respuesta], xuf yic [hablado] - blocker: no-key-material; R9498 collated in full (6 Nov 2026) and writes the same groups; bounded only by the alphabetical blocks, other words fit. (z7∞ resolved: 'me a')
 
 ## Escalation
 - [x] siblings: all eleven records and the duplicates used; R9844 (30 Dec 1523) found with the court's decipherment
@@ -152,3 +162,4 @@ block 1 is still not collated (not-attempted), so the target is in progress.
 - [x] key-rebuild: key A by annealing with a Castilian 4-gram model plus hand fixes; key B from R9844
 - [x] retry (5 Oct 2026): R9493 (key-A copy of the post data, interlinear decipherment of the closing), R9495, R9496 (new paragraph) and the clear foot of R9491 used as second witnesses; every letter re-measured with measure/measure.py. Not done: other decrypted Soria letters of 1523-24 in Salazar 9/29-9/31 to attest the key-B residue
 - [x] retry (23 Oct 2026, v8): R9494 reading scored on explicit holes (0.583); decoded, not read
+- [x] retry (6 Nov 2026): R9498 block 2 transcribed and collated with R9497 block 2 and f. 579r; z7∞ = 'me a' (R9498 tec ∞), pac = sobre; paf, sud, xuf yic written the same in both copies
