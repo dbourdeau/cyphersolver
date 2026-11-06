@@ -1,0 +1,246 @@
+{
+ "schema_version": 1,
+ "target": "ompteda1811",
+ "title": "Ludwig von Ompteda to Count Münster, Berlin, 24 July 1811, report and P.S. in the 'deutscher Chiffre von 1790', NLA Hannover Dep. 110 A Nr. 111 ff. 134-150",
+ "documents": [
+  {
+   "id": "report",
+   "read": "read",
+   "shelfmark": "NLA Hannover, Dep. 110 A Nr. 111, ff. 134-147 (aufn_0151 R - 0165 L)",
+   "date": "24 Jul 1811",
+   "year": 1811,
+   "country": "Germany",
+   "route": "Berlin -> London",
+   "language": "German",
+   "pages": 26,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "printed edition"
+    ],
+    "source": "f. 134 deciphered between the lines in 1811; the whole report printed from Ompteda's papers in Politischer Nachlaß des ... Ludwig von Ompteda, vol. 2 (Jena 1869), no. 21, pp. 51-59 (archive.org 11005674bsb); OCR in texts/ompteda_nachlass2_1869_nr21-22_ocr.txt",
+    "partial": false
+   },
+   "length": {
+    "tokens": 227,
+    "distinct": 224,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription/f134_digits_draft.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NLA HA Arcinsys images aufn_0151 and aufn_0152 (curl)",
+    "image_quality": "good",
+    "notes": "Only f. 134 (907 digits, draft, one digit of running-count drift in lines 9-16) and f. 134v (aufn_0152 L, 893 digits, agent, unchecked) transcribed; the length counts f. 134 only, in 4-digit groups (_check_profile --measure --width 4, per line). The remaining ~25 pages (about 26,000 digits in all) were not transcribed because the text is in print."
+   }
+  },
+  {
+   "id": "ps",
+   "read": "read",
+   "shelfmark": "NLA Hannover, Dep. 110 A Nr. 111, ff. 148-150 (aufn_0165 R - 0167)",
+   "date": "24 Jul 1811",
+   "year": 1811,
+   "country": "Germany",
+   "route": "Berlin -> London",
+   "language": "German",
+   "pages": 4,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "printed edition"
+    ],
+    "source": "f. 148 deciphered between the lines in 1811; printed in Ompteda's Nachlaß vol. 2, no. 22, pp. 59-60",
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "distinct": "unknown",
+    "unit": "code groups",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "not transcribed",
+    "image_quality": "good",
+    "notes": "Not transcribed."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code",
+   "homophonic"
+  ],
+  "summary": "Two-part 4-digit code ('den deutschen Chiffre von 1790', Ompteda), written as one undivided digit stream wrapped across lines, groups counted from the start of the letter; homophones for common words.",
+  "symbol_kind": "digits",
+  "distinct_symbols": "unknown",
+  "digit_groups": {
+   "separation": "contiguous"
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "common words",
+    "names",
+    "titles"
+   ],
+   "unread_groups": "unknown"
+  },
+  "key_order": "random",
+  "word_division": "none",
+  "sibling_key": "none used",
+  "notes": "Values seen on f. 134: den 3178, der 1697, Graf 2656, Hardenberg 2964, König 3900, durch 3061; 'von' has at least two groups. The 1811 decipherer marked some boundaries with dots.",
+  "diacritics": {
+   "used": false
+  },
+  "nulls": "unknown"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Politischer Nachlaß des hannoverschen Staats- und Cabinets-Ministers Ludwig von Ompteda aus den Jahren 1804 bis 1813, ed. F. von Ompteda, vol. 2 (Jena 1869), nos. 21-22, pp. 51-60",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published reading"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Project-level: the catalogue task pasted from cyphersolver.com/solve/2012.html by Daniel Bourdeau; no target-specific intervention.",
+  "tools": [
+   "curl image download",
+   "PIL crops and contact sheets",
+   "archive.org advanced search and djvu text"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-05",
+  "last_date": "2026-11-06"
+ },
+ "solution": [
+  {
+   "date": "2026-11-05",
+   "kind": "literature search",
+   "what": "Web searches on Münster, Dörnberg, Göteborg and cipher 1812: no decipherment found.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "access",
+   "what": "Downloaded all 277 images of Dep. 110 A Nr. 111 by curl from arcinsys-digitalisate.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "verification",
+   "what": "Surveyed every image: undivided digits only at aufn_0151-0167 (ff. 134-150); f. 134 and f. 148 interlined in German; the French Göteborg and Vienna pieces interlined throughout.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "transcription",
+   "what": "Transcribed f. 134 digits in draft (907 digits) with its German interlinear; Ompteda names the 'deutscher Chiffre von 1790'.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "repeat/pattern analysis"
+   ],
+   "what": "4-digit groups counted continuously across line breaks: 'Graf Hardenberg' = 2656 2964 on f. 134 lines 3 and 4 at group boundaries, the decipherer's dots agree.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "transcription",
+   "what": "Transcription agents started on aufn_0152-0167; aufn_0152 L done (893 digits), then stopped once the print was found.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "literature search",
+   "what": "Identified the writer as Ludwig von Ompteda and found his Politischer Nachlaß vol. 2 (1869) on archive.org: nos. 21 and 22 print the report and P.S. of 24 July 1811 in full, opening word for word as the interlinears of f. 134 and f. 148.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "On the first undeciphered page (f. 134v) the f. 134 groups 3061 3178 (durch den), 1697 (der) and 3900 (König) fall at group boundaries where the print reads 'durch den Herzog, den der König von Preußen'; 2964 (Hardenberg) where it names the chancellor.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "verification",
+   "what": "Closed catalogue 2012 as found in print: removed from catalogue.json (record kept in research/vetting_2026-10/removed_2026-11-02.json), listed in SOLVED_CATALOGUE.md section 4; DECODE new-record proposal queued.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "read from existing decipherment",
+  "method_basis": "The 'never deciphered' sheets are the rest of Ompteda's report of 24 July 1811 and its P.S., printed in full from his papers in 1869 (Nachlaß vol. 2, nos. 21-22). The text was located and checked against the cipher here; no key was rebuilt.",
+  "contribution": [
+   "sender or date identified",
+   "catalogue correction"
+  ],
+  "class": "already solved",
+  "key": "partial",
+  "fraction_read": "unknown",
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "Contents known from the print; the cipher was not transcribed or aligned in full, so no measured share.",
+  "grades": "unknown",
+  "verification": [
+   "contemporary decipherment",
+   "independent clear copy"
+  ],
+  "notes": "No write-up: contents in print since 1869, nothing added beyond locating the print and checking it on one page. The writer is Ludwig von Ompteda (heading 'B.' = Berlin), not Dörnberg. The 1790 codebook could still be rebuilt by aligning the ~6,500 groups with the print (key recovered based on plaintext from external sources).",
+  "credits": [
+   {
+    "who": "fompteda",
+    "role": "prior solution",
+    "note": "F. von Ompteda (ed.), Politischer Nachlaß ... Ludwig von Ompteda, vol. 2 (Jena 1869), nos. 21-22, print the full text",
+    "date": "1869",
+    "source": "https://archive.org/details/11005674bsb"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "report",
+    "label": "Ompteda to Münster, Berlin, 24 July 1811 (Nachlaß vol. 2 no. 21)",
+    "transcription": "transcription/f134_digits_draft.txt",
+    "decryption": [
+     "texts/ompteda_nachlass2_1869_nr21-22_ocr.txt",
+     "https://archive.org/details/11005674bsb"
+    ],
+    "summary": "Ompteda received Münster's despatch of 27 March only on 22 June, via Count Hardenberg, who had it deciphered because Ompteda holds only the German cipher of 1790. He went to Berlin, delivered the Prince Regent's message to the Duke of Mecklenburg-Strelitz at Potsdam, and in secret talks the Prussian chancellor Hardenberg told him that neither he nor the King are friends of the French and that Prussia must feign a friendship it does not feel.",
+    "language": "de",
+    "state": "read"
+   },
+   {
+    "doc": "ps",
+    "label": "P.S. of the same day (Nachlaß vol. 2 no. 22)",
+    "transcription": "",
+    "decryption": [
+     "texts/ompteda_nachlass2_1869_nr21-22_ocr.txt"
+    ],
+    "summary": "The Duke of Mecklenburg-Strelitz received the Prince Regent's offer at his son Prince Carl's house in Potsdam with deep emotion; Kolberg is suggested as the place to reach the British Baltic fleet; the rest of the report and a duplicate are to follow by another occasion.",
+    "language": "de",
+    "state": "read"
+   }
+  ]
+ }
+}
