@@ -38132,7 +38132,8 @@
    "seen": "image",
    "needs_archive_scan": "no",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting_note": "edition not opened: Lorenzo de' Medici, Lettere vol. II (1474-1478, ed. R. Fubini, Giunti-Barbera 1977) and vol. III (1478-1479, ed. N. Rubinstein, 1977) cover January 1478 (common style) or January 1479 (Florentine style); their notes quote incoming MAP letters and decipherments. Both are no-preview on Google Books (ids iztLAQAACAAJ, cRUQzQEACAAJ, mIcBzQEACAAJ, 9k4LtQEACAAJ); the gdata feed gives no snippet, google.com/books/edition?bsq= returns 302 to curl and the Books API is over quota. needs Chrome: https://www.google.com/books/edition/_/iztLAQAACAAJ?gbpv=1&bsq=Mazzinghi (and the vol. III ids). Everything else checked: see notes."
   },
   {
    "id": 2308,
@@ -38179,105 +38180,28 @@
    "seen": "image",
    "needs_archive_scan": "no",
    "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 2309,
-   "counted": true,
-   "year": 1483,
-   "date": "undated (filza XLVIII holds papers of 1482-83)",
-   "title": "\"Documento cifrato\": a full page of symbol cipher, no date, address or gloss",
-   "correspondents": "unknown -> (Lorenzo de' Medici?)",
-   "place": "unknown",
-   "language": "unknown (symbol cipher; one clear phrase \"Poi ...\")",
-   "region": "Italy",
-   "period": "15th century",
-   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza XLVIII, doc. 214 (old c. 222)",
-   "folio_note": "One leaf, recto: about 20 lines of cipher (letters, numerals and a dozen invented signs), a few clear words; verso blank. Inventory vol. 2, p. 484: \"Documento cifrato. s. d., n. 214\" (the OCR prints it under filza XLVII; the leaf is in XLVIII).",
-   "cls": "A",
-   "status": "Bare: no interlinear or marginal decipherment (checked at 1272 px, the maximum). No decipherment filed next to it in the inventory.",
-   "why": "An unread Laurentian-era cipher page; the MAP key sheets (filza LXXII nos. 178-188, LXXXII nos. 72 and 142, LXXXVII n. 414, XCVII n. 473) are the first keys to try.",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 3,
-   "verify": "Transcribe; compare the sign set with the MAP key sheets and the Gabbrielli/Dieci keys; if none fits, homophonic solve.",
-   "links": [
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=48&d=214&c=",
-     "label": "MAP filza 48, doc. 214"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch n08",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP filza LXXII doc. 170 recto/verso, IIIF https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100072/A0000397.ptif (riproduzione id 79506-79507)",
+     "extent": "one leaf, recto about 40 lines mixing cipher runs and clear words, head \"+ ... di gennaio 1478\"; verso blank (show-through)",
+     "cipher": "letter-like symbol cipher, the sign set of MAP LXXXIX 142; at 2200 px every band shows a second hand writing the plaintext above nearly every cipher run, e.g. \"a Giovanni ... qui attorno del palagio\", \"intorno del palagio\", \"del papa publicato\", \"drappi\", over the cipher runs"
     },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=60059",
-     "label": "image id 60059"
+    "prior_art": {
+     "decode": "DECODE: known.py (harvested DECODE dump) and a regex over research/catalogue_harvest/decode/list.json (10,106 records) plus views*.jsonl/out_*.jsonl for \"Mediceo avanti\", \"avanti il Principato\", Mazzinghi/Mazinghi, Rucellai/Oricellar: no hit.",
+     "tomokiyo": "cryptiana italian.htm, Florence section: lists DECODE ASFi keys, the Gabbrielli 1425 cipher and Lasry's Siena no. 11 (1478); this letter is not mentioned.",
+     "lasry": "GL.htm in targets/gramont1529 has no Florentine or MAP item; Lasry's Concistoro 2308 report covers only the Siena letters (no. 11 = R4800).",
+     "edition": "Not needed for the verdict: the decipherment is written on the leaf. Lorenzo, Lettere vols. II-III (1977) not opened (no preview).",
+     "literature": "Marco Vito HistoCrypt 2025 (Capponi polyalphabetic key) and his 1486-91 MAP project do not cover this 1478 letter; web searches found nothing on it."
     },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=60060",
-     "label": "image id 60060"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100048/A0000545.ptif/full/full/0/default.jpg",
-     "label": "IIIF image, recto"
-    }
-   ],
-   "source": "ASF Mediceo avanti il Principato (MAP) images + archive.org OCR of the MAP inventory, Italian state archives retry, Nov 2026",
-   "score_note": "Scored from the MAP images viewed during the Italian state archives retry, 6 Nov 2026 (research/sweep_2026-11_italian_state_retry/)",
-   "access_note": "scans public on the ASF MAP site, no login, curl works: /map/ricerca/ricerca-su-filza/?f=<filza>&d=<doc> and IIIF images from /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (1600 px max)",
-   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza, the document or the correspondent; the Google Books feed shows these items only in the MAP inventory itself; DECODE, Tomokiyo and Lasry not searched. Marco Vito (Vienna) is working on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap.",
-   "seen": "image",
-   "needs_archive_scan": "no",
-   "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 2310,
-   "counted": true,
-   "year": 1490,
-   "date": "undated (filza LXXII mixes papers of 1460s-1520s)",
-   "title": "\"Lettere in cifra\": two all-cipher slips in one sign set, no clear word, no gloss",
-   "correspondents": "unknown",
-   "place": "unknown",
-   "language": "unknown (symbol cipher with numerals and Greek-like signs)",
-   "region": "Italy",
-   "period": "unknown",
-   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza LXXII, docs. 213 and 214 (old cc. 256, 257)",
-   "folio_note": "Two oblong slips, rectos only: 213 has two blocks (about 15 lines), 214 about 15 lines; versos blank. Inventory vol. 3: \"Lettere in cifra. n. 213; n. 214\".",
-   "cls": "A",
-   "status": "Bare. Different sign set from the Rucellai 1482 cipher on doc. 207 of the same filza (which is deciphered by doc. 208).",
-   "why": "Two unread cipher texts filed with the Medici key sheets of filza LXXII (nos. 178-188: Piero Alamanni, Baccio Ugolini, Paolantonio Soderini, Andrea Cambini, Agostino Biliotti ...), so a matching key may be in the same filza.",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 3,
-   "verify": "View the key sheets LXXII 178-188 on the MAP site and match sign sets; transcribe both slips.",
-   "links": [
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=72&d=213&c=",
-     "label": "MAP filza 72, doc. 213"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79620",
-     "label": "image id 79620"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79621",
-     "label": "image id 79621"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79622",
-     "label": "image id 79622"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79623",
-     "label": "image id 79623"
-    }
-   ],
-   "source": "ASF Mediceo avanti il Principato (MAP) images + archive.org OCR of the MAP inventory, Italian state archives retry, Nov 2026",
-   "score_note": "Scored from the MAP images viewed during the Italian state archives retry, 6 Nov 2026 (research/sweep_2026-11_italian_state_retry/)",
-   "access_note": "scans public on the ASF MAP site, no login, curl works: /map/ricerca/ricerca-su-filza/?f=<filza>&d=<doc> and IIIF images from /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (1600 px max)",
-   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza, the document or the correspondent; the Google Books feed shows these items only in the MAP inventory itself; DECODE, Tomokiyo and Lasry not searched. Marco Vito (Vienna) is working on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap.",
-   "seen": "image",
-   "needs_archive_scan": "no",
-   "ark": "",
-   "scored": "sweep"
+    "key_check": "Not needed: the contemporary interlinear gloss is the reading; the gloss pairs give the key for MAP LXXXIX 142 (lead 2307).",
+    "duplicates": "known.py \"Mediceo avanti\", \"filza LXXII\", Mazzinghi: only this lead and its sweep; no catalogue entry or target.",
+    "verdict": "read",
+    "closed": "contemporary interlinear decipherment in a second hand over nearly every cipher run of MAP LXXII 170 recto (seen at native resolution, 2200-px bands); read at the time. Keep as key source for lead 2307."
+   }
   },
   {
    "id": 2311,
@@ -38320,7 +38244,28 @@
    "seen": "image",
    "needs_archive_scan": "no",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch n08",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP filza LXXIII doc. 371 (old c. 413), IIIF https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100073/A0000784.ptif; neighbour doc. 370 cc. 411-412 (A0000780-A0000783)",
+     "extent": "one slip, 7 lines of symbol cipher (about 330 signs) and a clear close of about 10 words; verso blank",
+     "cipher": "symbol cipher with numerals, no gloss on the slip. The leaf before it, doc. 370 c. 412 (pencilled \"370a\"), is a 5-line clear text (\"Santissimo ... el Re Christianissimo ... Fiorentini sarebbono grande difficultà ...\") ending \"che si richiederebbe meglio et avisarebbemi\", the same words as the clear close of 371 (\"ch si richiederebbe meglio et a[vi]sarebbemi\")."
+    },
+    "prior_art": {
+     "decode": "DECODE: known.py (harvested DECODE dump) and a regex over research/catalogue_harvest/decode/list.json (10,106 records) plus views*.jsonl/out_*.jsonl for \"Mediceo avanti\", \"avanti il Principato\", Mazzinghi/Mazinghi, Rucellai/Oricellar: no hit.",
+     "tomokiyo": "cryptiana italian.htm Florence section: no MAP LXXIII item.",
+     "lasry": "GL.htm: no Florentine item; no Lasry work on MAP found.",
+     "edition": "Epistolario di Bernardo Dovizi da Bibbiena (ed. Moncallero 1955) prints MAP cipher letters of 1490-94 deciphered; not opened, not needed: the clear text is filed beside.",
+     "literature": "Web searches on \"Poscritto in cifra\" and MAP LXXIII found only the inventory."
+    },
+    "key_check": "Not needed: the clear text 73/370 c. 412 is the plaintext; a key rebuild from the pair would confirm the alignment (not done).",
+    "duplicates": "known.py \"Mediceo avanti\", \"filza LXXIII\", \"Poscritto in cifra\": only this lead and its sweep.",
+    "verdict": "read",
+    "closed": "the plaintext is filed beside it: MAP LXXIII doc. 370 c. 412 (\"370a\"), a clear 5-line text ending \"che si richiederebbe meglio et avisarebbemi\", the clear tail of the cipher postscript 371 (seen at native resolution). Contemporary decipherment or clear draft; inventoried only as \"Anonimo. s. d., n. 370\"."
+   }
   },
   {
    "id": 2312,
@@ -38363,7 +38308,8 @@
    "seen": "image",
    "needs_archive_scan": "no",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting_note": "cipher share not established: MAP XVII 211 is two pages of dense mercantesca cursive (seen at native 1364 px, 2200-px bands) in which a few odd groups (e.g. \"zyzz7te\") cannot be told from abbreviations without a full reading of the clear text; the foot date reads \"... 1499\", which conflicts with the inventory's attribution to Piero di Lorenzo; no gloss seen. Needs a palaeographic reading of the letter (sender, date, which words are code) before a verdict."
   },
   {
    "id": 2313,
