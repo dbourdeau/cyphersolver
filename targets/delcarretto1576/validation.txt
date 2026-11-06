@@ -1,0 +1,25 @@
+delcarretto1576 - validation (contributor's pre-registered held-out test, not docs/_validate.py)
+
+Order of operations (contributor's folder, all hashed with SHA-256, 4 Nov 2026):
+1. Protocol written before any count or key trial (20a8ca9a...). Training T = lines L01-L08; held-out H = lines L09-L11
+   (words not struck through; 54 words, 232 sign tokens). Struck words and the torn margin M1-M5 excluded from the measure.
+2. Transcription (one pass, shapes only) frozen (d307d72f...).
+3. Key K_T broken on T only: simulated annealing with a 4-gram model of 16th-century Italian built from texts foreign to
+   this letter (6 of 6 seeds identical), plus one correction by sense on T (d = f). Frozen (453c26c6...).
+4. Independent reference for H: K_H = fully automatic break of H alone (same annealer, seeds 1-20 fixed, no human input,
+   no knowledge of K_T), run and frozen before H was decoded with K_T. Convergence condition fixed in advance: >= 60% of
+   the words of K_H(H) in the Italian lexicon. Result 0.887: converged.
+5. One measurement: character agreement = 1 - Levenshtein(K_T(H), K_H(H)) / length(K_H(H)), letters a-z normalised
+   (v -> u, j -> i, y -> i, no spaces); 200 controls = K_T with its values shuffled (seed 2164).
+
+Result (MESURE_UNIQUE.txt, 401e3800...):
+  character agreement K_T(H) vs K_H(H) = 0.9612 ; best of 200 controls = 0.2629 ; threshold = max(0.85, 0.5629)
+  word agreement (not decisive) = 0.8519 ; lexicon share of K_T(H) = 0.887
+  VERDICT: KEY VALIDATED (by the criterion fixed in advance). H is now used up.
+
+Reservations, declared:
+- The reference is an automatic break of the held-out lines, not a clear text of the time: the test shows that the key
+  learned on L01-L08 is the key a solver finds on L09-L11 alone, not that the reading matches a known clear.
+- While justifying the tokenisation of the oP / oPo / oP. groups (fixed on T), the agent read one word of H ("quella",
+  L09); the value of the dotted rho (= u) was already carried by 4 words of T.
+- The transcription is a single pass, not blind-checked by a second reader.

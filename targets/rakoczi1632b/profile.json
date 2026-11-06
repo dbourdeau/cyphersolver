@@ -1,0 +1,303 @@
+{
+ "schema_version": 1,
+ "target": "rakoczi1632b",
+ "title": "George I Rákóczi's conditions of 1632, fol. 491v-492v (BSB Clm 10401 n. 139), read in part with WAINUT's key (satellite of rakoczi1632); the key passes a held-out test on fol. 492v",
+ "documents": [
+  {
+   "id": "f491v",
+   "read": "read in part",
+   "shelfmark": "Munich, Bayerische Staatsbibliothek, Clm 10401 (Collectio Camerariana 51), n.139, fol. 491v",
+   "date": "undated (1631-32 from content)",
+   "year": 1632,
+   "country": "Germany",
+   "route": "George I Rákóczi, Prince of Transylvania -> his envoy to the King of Sweden (copy in Ludwig Camerarius's papers)",
+   "language": "Latin",
+   "cleartext_in_document": "interspersed",
+   "pages": 1,
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Interlinear decipherment in Ludwig Camerarius's hand over most cipher words."
+   },
+   "length": {
+    "tokens": 487,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_f491v.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "MDZ IIIF images of the BSB microfilm (bsb00117497, scan 1200)",
+    "image_quality": "fair",
+    "notes": "One pass by an AI agent, no independent reader. Line ends lost in the gutter fold of the microfilm. Its glossed pairs completed the key before 492v was measured."
+   }
+  },
+  {
+   "id": "f492r",
+   "read": "read in part",
+   "shelfmark": "Munich, Bayerische Staatsbibliothek, Clm 10401 (Collectio Camerariana 51), n.139, fol. 492r",
+   "date": "undated (1631-32 from content)",
+   "year": 1632,
+   "country": "Germany",
+   "route": "George I Rákóczi, Prince of Transylvania -> his envoy to the King of Sweden (copy in Ludwig Camerarius's papers)",
+   "language": "Latin",
+   "cleartext_in_document": "interspersed",
+   "pages": 1,
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Interlinear decipherment in Ludwig Camerarius's hand over most cipher words."
+   },
+   "length": {
+    "tokens": 545,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_f492r.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "MDZ IIIF images of the BSB microfilm (bsb00117497, scan 1201)",
+    "image_quality": "fair",
+    "notes": "One pass by an AI agent, no independent reader. Line ends lost in the gutter fold of the microfilm. Its glossed pairs completed the key before 492v was measured."
+   }
+  },
+  {
+   "id": "f492v",
+   "read": "read in part",
+   "shelfmark": "Munich, Bayerische Staatsbibliothek, Clm 10401 (Collectio Camerariana 51), n.139, fol. 492v",
+   "date": "undated (1631-32 from content)",
+   "year": 1632,
+   "country": "Germany",
+   "route": "George I Rákóczi, Prince of Transylvania -> his envoy to the King of Sweden (copy in Ludwig Camerarius's papers)",
+   "language": "Latin",
+   "cleartext_in_document": "interspersed",
+   "pages": 1,
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Interlinear decipherment in Ludwig Camerarius's hand over most cipher words; lines y1502-y1709 unglossed, with a clear paraphrase in the left margin."
+   },
+   "length": {
+    "tokens": 479,
+    "unit": "symbols",
+    "measured": true,
+    "file": "frozen/H-CHIFFRE.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "MDZ IIIF images of the BSB microfilm (bsb00117497, scan 1202)",
+    "image_quality": "fair",
+    "notes": "One pass by an AI agent, no independent reader. Line ends lost in the gutter fold of the microfilm. Transcribed on masked strips (glosses blanked) before the glosses were read: the held-out page."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Homophonic substitution of Latin letters by numbers 1-99 written with dots between groups, about ten extra signs, and 3-digit code groups for names (217.11.99 and 218.88 King of Sweden, 307 Principes). Cipher words embedded in clear Latin. Two to nine homophones per letter; u after q not written. Some groups take two letter values.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": 73,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 3,
+   "kinds": [
+    "names",
+    "titles"
+   ],
+   "unread_groups": 0
+  },
+  "nulls": {
+   "present": false,
+   "count": 0
+  },
+  "key_order": "random",
+  "word_division": "kept",
+  "notes": "Same system as targets/rakoczi1632 (fol. 491r). Several values seen for {s}, {a}, {x}, {c} and 68; new signs {w} and {f} on 492v."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Camerarius's interlinear decipherment on the same pages; WAINUT's target rakoczi1632 (key and fol. 491r, 3 Nov 2026; Szilágyi 1873 and 1882 searched, no printed text). Fol. 491v-492v not done there (no change since 4 Nov 2026, last commit 4e0b8af13).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "sibling key"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "WAINUT built the key and read fol. 491r. Brice Dudout set the rules (protocol hashed before transcription, one held-out measurement, thresholds fixed in advance, Daniel's count). An AI agent transcribed, measured, read and wrote up. No human palaeographer checked the text.",
+  "tools": [
+   "MDZ IIIF images",
+   "scripts in this folder (key completion, held-out measure)"
+  ],
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-11-06",
+  "last_date": "2026-11-06"
+ },
+ "solution": [
+  {
+   "date": "2026-11-06",
+   "kind": "transcription",
+   "what": "Fol. 491v and 492r transcribed with their glosses; fol. 492v transcribed on masked strips (glosses blanked) after the protocol was hashed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "sibling key",
+   "what": "WAINUT's key_frozen.tsv (72 entries) applied unchanged; it agrees with 97.0% of the letters of the glossed pairs of 491v-492r.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "crib",
+   "technique": [
+    "crib testing"
+   ],
+   "what": "8 values added by script from the glossed pairs of 491v-492r (35 i, 55 x, 69 h, 81 l, {O} e, {f} l; second values 44 t, {s} l); key K frozen by SHA-256 before the glosses of 492v were read.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One measurement on 492v: 31 glossed words, 205 letters, score 0.902 against 0.341 for the best of 200 shuffled keys (margin 0.561); thresholds >= 0.85 and >= 0.30 fixed in advance. key_frozen alone 0.878, margin 0.571.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "reading",
+   "what": "237 cipher words of 491v-492v: 110 certain, 47 probable, 66 restored (gutter fold), 14 unresolved; 66.2% (94.1% with the restored words).",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "recovered",
+  "method": "read with known key",
+  "method_basis": "WAINUT's key (built on the glosses of fol. 491r) applied to fol. 491v-492v, with 8 values added from the glosses of 491v-492r; most cipher words also carry Camerarius's gloss, so most of the content is existing.",
+  "contribution": [
+   "transcription",
+   "key extended or corrected"
+  ],
+  "verification": [
+   "contemporary decipherment",
+   "statistical test"
+  ],
+  "validation": {
+   "date": "2026-11-06",
+   "verdict": "pass",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): protocol hashed before transcription; H = all of fol. 492v, transcribed on masked strips; key frozen before the glosses of H were read; one measurement: 0.902 vs 0.341 for the best of 200 shuffled keys (margin 0.561), 31 words, 205 letters. Thresholds >= 0.85 and >= 0.30 fixed in advance. One mask incident (line y590 excluded) and one exclusion rule set before the measure, declared in validation.txt."
+  },
+  "provenance": "mixed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "key or decipherment used",
+    "note": "WAINUT's target rakoczi1632: key_frozen.tsv (72 entries), fol. 491r read, prior-art search; this satellite rests on that key",
+    "date": "2026-11-03"
+   },
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "Ludwig Camerarius's interlinear decipherment on fol. 491v-492v",
+    "date": "1632"
+   },
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "note": "fol. 491v-492v transcribed and read with WAINUT's key; held-out test of the key on 492v; 8 values added from the glosses",
+    "date": "2026-11-06"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "66 restored words at the gutter fold of the microfilm",
+    "blocker": "needs-physical-access"
+   },
+   {
+    "item": "14 unresolved words, mostly at the fold or in unglossed lines",
+    "blocker": "illegible"
+   },
+   {
+    "item": "doubtful groups (32/82, 50/80, 66/86, 56/66, {a} {s} {x} {c}) not re-read blind; one reader only",
+    "blocker": "not-attempted"
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "Satellite of WAINUT's rakoczi1632 (in progress): none of its files is changed. Daniel's count on 491v-492v: 110 certain, 47 probable, 66 restored, 14 unresolved of 237 cipher words = 66.2% (94.1% with the restored words): read in part.",
+  "texts": [
+   {
+    "doc": "f491v",
+    "label": "fol. 491v",
+    "transcription": "transcription_f491v.txt",
+    "reading": "reading.md",
+    "translation": "reading.md",
+    "language": "la",
+    "state": "read in part",
+    "read_share": 0.675,
+    "summary": "Defence of Rákóczi's estates and heirs; 500,000 florins a year in two instalments, the first year in one sum before he takes the field; 16,000 German foot and 4,000 cuirassiers whose officers swear to him; the Kingdom of Hungary.",
+    "reading_review": {
+     "grade": "B",
+     "note": "Read by sense against Camerarius's glosses; one AI reader, no independent or human review; count manual.",
+     "by": "Claude Opus 5.5 agent for Brice Dudout",
+     "date": "2026-11-06"
+    },
+    "decryption": "decryption_f491v.txt"
+   },
+   {
+    "doc": "f492r",
+    "label": "fol. 492r",
+    "transcription": "transcription_f492r.txt",
+    "reading": "reading.md",
+    "translation": "reading.md",
+    "language": "la",
+    "state": "read in part",
+    "read_share": 0.735,
+    "summary": "Help against any attacker after the peace; in peacetime, 2,000 musketeers and 2,000 cuirassiers at the allies' cost if a secret threat appears; all members of the Union bound by these four points.",
+    "reading_review": {
+     "grade": "B",
+     "note": "Read by sense against Camerarius's glosses; one AI reader, no independent or human review; count manual.",
+     "by": "Claude Opus 5.5 agent for Brice Dudout",
+     "date": "2026-11-06"
+    },
+    "decryption": "decryption_f492r.txt"
+   },
+   {
+    "doc": "f492v",
+    "label": "fol. 492v",
+    "transcription": "frozen/H-CHIFFRE.txt",
+    "reading": "reading.md",
+    "translation": "reading.md",
+    "language": "la",
+    "state": "read in part",
+    "read_share": 0.571,
+    "summary": "Troops before he enters Hungary, cover against the King of Poland, a trusted envoy at once, payment if he must campaign in winter, mutual coordination.",
+    "reading_review": {
+     "grade": "B",
+     "note": "Read by sense against Camerarius's glosses; one AI reader, no independent or human review; count manual.",
+     "by": "Claude Opus 5.5 agent for Brice Dudout",
+     "date": "2026-11-06"
+    },
+    "decryption": "decryption_f492v.txt"
+   }
+  ]
+ }
+}

@@ -1,0 +1,219 @@
+# delcarretto1576 - reading of the cipher (Italian, spelling of the letter)
+
+Marks: plain = certain (every letter given by the frozen key); {x} = probable (one sign departs from the key, settled by the
+sense); [x] = restored (the word is given by the sense, against or beyond the cipher); ‹…› = unresolved (margin torn).
+Spelling of the letter kept (ponto, soa, essequire, huomo, seruitio); accents and apostrophes added in the reading only.
+
+## Reading, line by line
+
+- L01: il Beccaria ha fra le altre cose detto che non è persona che
+- L02: possa {meglio} né così bene come il conte Espinula essequire li ordini di sua {maiestà}
+- L03: et {ci} assicura non mancherà di essequire {mentre} sia solo da questo solo {poi} far {giudi[ce]}
+- L04: il signor Pietro del resto et della qualità del huomo ma sia pur certo che non {habbian} {manca[to]}
+- L05: né siamo per mancar ponto di {far} {conoscere} il vero così in honore di soa signoria come in
+- L06: servitio di {sua} maiestà et {nostro} ancora benché ne {apporti} qualche {difficultà} l' esser
+- L07: costui {approuato} della maniere da sua signoria havendolo come persona di fe
+- L08: destinato a sua maiestà et come che si sia più tosto diportato bene che male {però}
+- L09: stia pur sua signoria et attenda a far il {debito} da quella parte si come {habbian}
+- L10: fatto et faremo noi da questa che sendo costui conosciuto da {sua} maiestà et {dalli} [suoi] {ministri}
+- L11: più che {lui} forse non si crede si promettiamo che né lui né quello {per} {cui} egli {procura} {hauranno} l'intento
+- M1: ‹…› al
+- M2: ‹…› ‹…›
+- M3: cose
+- M4: ‹…›
+- M5: ‹…› ‹…›
+
+## Count (Daniel's rule: certain + probable over all cipher words; restored words not counted)
+
+182 cipher words (block L01-L11: 174; margin M1-M5: 8): 149 certain, 25 probable, 2 restored, 6 unresolved.
+**174/182 = 95.6% read by sense** (176/182 = 96.7% with the two restored words): **read**.
+The cipher block alone: 172 certain or probable + 2 restored of 174 words; the 6 unresolved words are all in the torn margin.
+
+Most probable words differ from the key by one sign (D/G, ʒ/ɔ, e/c, ρo/u); several are probably slips of our single-pass
+transcription rather than of the encipherer, and a blind second reading of those signs has not been done. "harbbian" (twice,
+for habbian) looks like a habit of the encipherer.
+
+## Word by word (cipher token | key decryption | reading | status S/P/R/I | note)
+
+- L01 `up` | il | il | S
+- L01 `cOqqmenD` | beccaria | Beccaria | S
+- L01 `4m` | ha | ha | S
+- L01 `deD` | fra | fra | S
+- L01 `pO` | le | le | S
+- L01 `mpxeG` | altre | altre | S
+- L01 `qCaO` | cose | cose | S
+- L01 `zOxxC` | detto | detto | S | interlinear word replacing the struck-through one
+- L01 `q4G` | che | che | S
+- L01 `k1k` | non | non | S
+- L01 `O` | e | è | S
+- L01 `bGeaCkm` | persona | persona | S
+- L01 `q4G` | che | che | S
+- L02 `bCaam` | possa | possa | S
+- L02 `hDrpu1` | maglio | {meglio} | P | 2nd sign D (= a) where the sense wants e; to check on the image (D/G)
+- L02 `kO` | ne | né | S
+- L02 `qCau` | cosi | così | S
+- L02 `cGkO` | bene | bene | S
+- L02 `q1hO` | come | come | S
+- L02 `upqCkxO` | ilconte | il conte | S | written without a gap
+- L02 `labuk7pm` | espinula | Espinula | S | = Spinola (Spanish form Espínola); l = e only here
+- L02 `GaaOQ3ueG` | essequire | essequire | S
+- L02 `pn` | li | li | S
+- L02 `1ezukn` | ordini | ordini | S
+- L02 `zu` | di | di | S
+- L02 `a7D` | sua | sua | S
+- L02 `hmuzaxD` | maidsta | {maiestà} | P | 4th sign read ʒ (= d); the sense wants ɔ (= e); ʒ and ɔ are close in this hand
+- L03 `Gx` | et | et | S
+- L03 `qqO` | cce | {ci} | P | qqɔ = cce; the sense wants ci/ce ('et ci assicura'); spelling to check
+- L03 `Daanq7em` | assicura | assicura | S
+- L03 `k2k` | non | non | S
+- L03 `hDkq4Gem` | manchera | mancherà | S
+- L03 `zu` | di | di | S
+- L03 `OaaGQ7ueO` | essequire | essequire | S
+- L03 `hGkkxeO` | menntre | {mentre} | P | n doubled (kk)
+- L03 `aum` | sia | sia | S
+- L03 `aCP1` | solo | solo | S
+- L03 `zD` | da | da | S
+- L03 `Q7OaxC` | questo | questo | S
+- L03 `a1PC` | solo | solo | S
+- L03 `b2C` | poo | {poi} | P | ρo-C = o-o; the sense wants poi; last sign perhaps another (a dot)
+- L03 `dme` | far | far | S
+- L03 `ru7zn` | giudi | {giudi[ce]} | P | word at the edge of the leaf, end cut or abbreviated
+- L04 `up` | il | il | S
+- L04 `anrkie` | signor | signor | S
+- L04 `buGxe2` | pietro | Pietro | S
+- L04 `zOp` | del | del | S
+- L04 `eGaxC` | resto | resto | S
+- L04 `Ox` | et | et | S
+- L04 `zGPPm` | della | della | S
+- L04 `Q7DPuxm` | qualita | qualità | S
+- L04 `zGP` | del | del | S
+- L04 `43Ch1` | huomo | huomo | S
+- L04 `hD` | ma | ma | S
+- L04 `aum` | sia | sia | S
+- L04 `b7e` | pur | pur | S
+- L04 `qOexC` | certo | certo | S
+- L04 `q4G` | che | che | S
+- L04 `k1k` | non | non | S
+- L04 `4Deccumk` | harbbian | {habbian} | P | one sign e (= r) too many between a and cc; same spelling in L09 (habit of the encipherer)
+- L04 `hDkqm` | manca | {manca[to]} | P | end of line at the edge; 'habbian mancato'
+- L05 `kO` | ne | né | S
+- L05 `aumhC` | siamo | siamo | S
+- L05 `bGe` | per | per | S
+- L05 `hDkqme` | mancar | mancar | S
+- L05 `b1kxC` | ponto | ponto | S | = punto, spelling of the time
+- L05 `zu` | di | di | S
+- L05 `ame` | sar | {far} | P | 1st sign a (= s) where the sense wants f (d); s and f are close in clear writing too
+- L05 `q1kCaqPeG` | conosclre | {conoscere} | P | ρ (= l) where the sense wants e
+- L05 `up` | il | il | S
+- L05 `7Ge1` | uero | vero | S
+- L05 `qCau` | cosi | così | S
+- L05 `nk` | in | in | S
+- L05 `41kCeO` | honore | honore | S
+- L05 `zu` | di | di | S
+- L05 `a1m` | soa | soa | S | = sua, spelling of the time
+- L05 `anrk2eum` | signoria | signoria | S
+- L05 `qChO` | come | come | S
+- L05 `uk` | in | in | S
+- L06 `aGe7uxnC` | seruitio | servitio | S
+- L06 `zu` | di | di | S
+- L06 `a3om` | suia | {sua} | P | isolated o = null (the only isolated o of the text, with L10)
+- L06 `hDuOaxD` | maiesta | maiestà | S
+- L06 `Gx` | et | et | S
+- L06 `k1aOeC` | nosero | {nostro} | P | ɔ (= e) where the sense wants t (x)
+- L06 `Dkq2em` | ancora | ancora | S
+- L06 `cGkq4O` | benche | benché | S
+- L06 `kG` | ne | ne | S
+- L06 `DDbCexu` | aaporti | {apporti} | P | 2nd θ where the sense wants p; same in L07 (θθb = app?)
+- L06 `Q7mPq4G` | qualche | qualche | S
+- L06 `Ouddnq7PxD` | eifficulta | {difficultà} | P | 1st sign transcribed ɔ, a different shape (g/9); = d by the sense and by dd = ff
+- L06 `p` | l | l' | S
+- L06 `GaaOe` | esser | esser | S
+- L07 `qCax7u` | costui | costui | S
+- L07 `DDbe13mxC` | aaprouato | {approuato} | P | as in L06
+- L07 `zGPPD` | della | della | S
+- L07 `hmkuOet` | maniere | maniere | S
+- L07 `zm` | da | da | S
+- L07 `a7D` | sua | sua | S
+- L07 `aurk2enD` | signoria | signoria | S
+- L07 `4m7Gkz2PC` | hauendolo | havendolo | S
+- L07 `q1hO` | come | come | S
+- L07 `bGeaCkm` | persona | persona | S
+- L07 `zu` | di | di | S
+- L07 `dG` | fe | fe | S | fé (= fede); edge of the leaf
+- L08 `zGaxukmxC` | destinato | destinato | S
+- L08 `D` | a | a | S
+- L08 `a7m` | sua | sua | S
+- L08 `hDuOaxm` | maiesta | maiestà | S
+- L08 `Ox` | et | et | S
+- L08 `qChO` | come | come | S
+- L08 `q4G` | che | che | S
+- L08 `au` | si | si | S
+- L08 `anD` | sia | sia | S
+- L08 `bu7` | piu | più | S
+- L08 `xCax2` | tosto | tosto | S
+- L08 `zubCexmx1` | diportato | diportato | S
+- L08 `cGkO` | bene | bene | S
+- L08 `q4O` | che | che | S
+- L08 `hmpG` | male | male | S
+- L08 `bOeGp` | perel | {però} | R | word at the torn edge, end lost; 'però stia pur…'
+- L09 `axum` | stia | stia | S
+- L09 `b7e` | pur | pur | S
+- L09 `a3D` | sua | sua | S
+- L09 `aurkCenD` | signoria | signoria | S
+- L09 `Ox` | et | et | S
+- L09 `mxxGkzD` | attenda | attenda | S
+- L09 `m` | a | a | S
+- L09 `dDe` | far | far | S
+- L09 `up` | il | il | S
+- L09 `zGeuxC` | derito | {debito} | P | e (= r) for c (= b)
+- L09 `zD` | da | da | S
+- L09 `Q3OPPm` | quella | quella | S
+- L09 `bDexO` | parte | parte | S
+- L09 `au` | si | si | S
+- L09 `q1hO` | come | come | S
+- L09 `4Deccumk` | harbbian | {habbian} | P | as in L04
+- L10 `dmxxC` | fatto | fatto | S
+- L10 `Ox` | et | et | S
+- L10 `dDeGh1` | faremo | faremo | S
+- L10 `kCu` | noi | noi | S
+- L10 `zm` | da | da | S
+- L10 `Q7GaxD` | questa | questa | S
+- L10 `q4O` | che | che | S
+- L10 `aGkzC` | sendo | sendo | S
+- L10 `q2ax7u` | costui | costui | S
+- L10 `qCk2aqu7xC` | conosciuto | conosciuto | S
+- L10 `zD` | da | da | S
+- L10 `a3om` | suia | {sua} | P | as in L06
+- L10 `hDuOaxm` | maiesta | maiestà | S
+- L10 `Gx` | et | et | S
+- L10 `zDPPua` | dallis | {dalli} | P | final a wrongly joined to the word? (word break to check)
+- L10 `a7En` | suEi | [suoi] | R | é not found elsewhere; o by the sense
+- L10 `hukna+^en^` | minis+ri | {ministri} | P | interlinear 'en' = ri; t left out or in the interlinear
+- L11 `bu7` | piu | più | S
+- L11 `q4G` | che | che | S
+- L11 `p2n` | loi | {lui} | P | ρo (= o) for u; the dot of ρ• perhaps lost
+- L11 `dCeaO` | forse | forse | S
+- L11 `k2k` | non | non | S
+- L11 `au` | si | si | S
+- L11 `qeOzG` | crede | crede | S
+- L11 `an` | si | si | S
+- L11 `be1hOxxumhC` | promettiamo | promettiamo | S
+- L11 `q4G` | che | che | S
+- L11 `kO` | ne | né | S
+- L11 `P7u` | lui | lui | S
+- L11 `kG` | ne | né | S
+- L11 `Q7OPPC` | quello | quello | S
+- L11 `bDe` | par | {per} | P | D (= a) for e
+- L11 `q2u` | coi | {cui} | P | as in 'loi'
+- L11 `OrPn` | egli | egli | S
+- L11 `beCqreD` | procgra | {procura} | P | r (= g) for u
+- L11 `4D2emkkC` | haoranno | {hauranno} | P | ρo for u (cf. loi, coi)
+- L11 `pukxOkxC` | lintento | l'intento | S
+- M1 `[lost]Oxq4G` | …etche | ‹…› | I | start lost (tear)
+- M1 `mp` | al | al | S
+- M2 `[lost]OixxC` | …eotto | ‹…› | I | start lost
+- M2 `p1C` | loo | ‹…› | I
+- M3 `qCaO` | cose | cose | S
+- M4 `[lost]DaaGemkC` | …asserano | ‹…› | I | start lost
+- M5 `[lost]C` | …o | ‹…› | I
+- M5 `OkG` | ene | ‹…› | I | = bene? first sign lost

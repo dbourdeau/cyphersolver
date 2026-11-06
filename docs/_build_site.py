@@ -233,6 +233,11 @@ PAGES = [
          blurb='A two-leaf cipher letter of the duke of Ferrara to his agent at Venice, with no decipherment on the leaf. WAINUT recovered the substitution by quadgram search on period Italian, no crib, and read 737 of 740 words, narrowly over the bar.',
          quote='&ldquo;&hellip;il quale non fu mai a soldo nostro&hellip;&rdquo; (he was never in Este pay)',
          rights='Letter: Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera E; reading by WAINUT'),
+    dict(slug='delcarretto1576', label='Del Carretto to his agents 1576', year='1576', y=1576.67, place='Regensburg &rarr; Milan', st='solved', stt='read',
+         title='Alfonso II del Carretto to his agents in Milan, Regensburg, 2 September 1576',
+         blurb='A letter of the marquis of Finale to his agents in Milan, its first eleven lines in a homophonic cipher with no decipherment of the time. Brice Dudout broke the key on eight lines and validated it on the other three (0.961 against 0.263): 95.6% of 182 cipher words, on Count Spinola and a man sent to His Majesty as trustworthy.',
+         quote='&ldquo;neither he nor the one behind him will reach his aim&rdquo;',
+         rights='Letter: Biblioteca Estense Universitaria, Modena, Autografoteca Campori; key and reading by Brice Dudout, Europe chiffr&eacute;e'),
     dict(slug='mercoeur1586', label='&ldquo;MR&rdquo; to Merc&oelig;ur 1586', year='[1586]', y=1586.48, place='? &rarr; Merc&oelig;ur, Brittany', st='stuck', stt='too short, no key',
          title='&ldquo;MR&rdquo; to the Duke of Merc&oelig;ur, 26 June [1586]',
          blurb='A slip in clear French with six cipher runs, 217 symbols of 55 kinds. Lasry&rsquo;s key for the volume and two other League keys of 1586 share no symbols with it, and a ciphertext-only solver scores the text no better than a shuffled copy; the cipher is not deciphered.',
@@ -1477,6 +1482,11 @@ PAGES = [
          blurb='Charles XII&rsquo;s letter from Bender to the Swedish Council of the Realm, with a second copy for his envoys in London and The Hague, in a Swedish nomenclator of about 1,100 numbers in alphabetical order (NLA Stade Rep. 5a Nr. 670). Brice Dudout rebuilt the key from a ciphered troop list and its clear draft in the same file, tested it on letters not used to build it, and deciphered both copies: 639 of 640 groups. After the Danish defeat at Helsingborg the King offers Denmark peace under the mediation of the Maritime Powers and gives the Council a free hand to agree an armistice, even for a whole year. Contributed by Brice Dudout.',
          quote='&ldquo;s&aring; &auml;re wi ben&auml;gne att inga med Konungen i B.B. en billig fred under Sj&ouml;makternas mediation&rdquo;',
          rights='Manuscript images: Nieders&auml;chsisches Landesarchiv, Abt. Stade (Public Domain Mark), via Archivportal-D'),
+    dict(slug='dahku1715', label='Dahku, Cracow 1715', year='1715', y=1715.72, place='Cracow', st='partial', stt='read in part',
+         title='&ldquo;Dahka&rdquo;, Cracow 1715: a sign cipher in a Polish letter',
+         blurb='Seventeen lines of graphic signs in a Polish letter from Cracow, catalogued with no decipherment. Brice Dudout broke the substitution on the ciphertext alone and measured it on held-out lines (0.444 against 0.083, key partial): the Sandomierz deputies ask that the Crown army support their levée of 9 October 1715. 84% of 63 cipher words.',
+         quote='&ldquo;woiska koronnego nieoddalac od Sendomirza&rdquo;',
+         rights='Letter: AGAD Warsaw, 1/338/0/1/682 (Branicki papers); key and reading by Brice Dudout, Europe chiffr&eacute;e'),
     dict(slug='partyet1721', label='Partyet at Cadiz 1721', year='1721', y=1721.27, place='Cadiz &rarr; Paris', st='solved', stt='known key applied',
          title='Partyet to the Conseil de Marine, 7 April 1721',
          blurb='Six enciphered lines in the French consul at Cadiz&rsquo;s report on a quarrel among Spanish naval officers, marked not transcribed in the Archives nationales inventory. Brice Dudout read them with the consulate&rsquo;s numerical table, rebuilt from the interlinear decipherments of neighbouring letters.',
@@ -1518,6 +1528,11 @@ PAGES = [
          blurb='Two cipher letters and two troop returns after the capture of Dominica, marked not decrypted in the ANOM inventory. Brice Dudout read them with a key rebuilt from the pencil glosses on the same governor&rsquo;s 1779 letters (0.894 of words on a held-out letter); 455 of 458 words are read.',
          quote='&ldquo;l&rsquo; et at de la situation des troupes&rdquo;',
          rights='Letters: Archives nationales d&rsquo;outre-mer, COL C8 A 77; reading by Brice Dudout, Europe chiffr&eacute;e'),
+    dict(slug='deboli1787', label='Deboli 1787, the older code', year='1786&ndash;87', y=1787.5, place='St Petersburg &rarr; Warsaw', st='partial', stt='read in part',
+         title='Deboli and Go&#322;uchowski, St Petersburg, 1787: the despatches in the older code',
+         blurb='Fourteen cipher despatches of 1786&ndash;87 from the Polish legation at St Petersburg, in the one-part code of 1783 whose key survives in the same fonds. Brice Dudout transcribed the key and read the pieces blind, without opening the cabinet&rsquo;s clear texts: 81.8% of 7,040 words, on the Russian regiments in Poland and the Empress&rsquo;s journey to the Crimea.',
+         quote='the Russian regiment stationed in Poland, and Potemkin',
+         rights='Despatches and key: AGAD Warsaw, Zbi&oacute;r Popiel&oacute;w 3 and 444; reading by Brice Dudout, Europe chiffr&eacute;e'),
     dict(slug='damas1787', label='Damas to the Navy 1787', year='1787', y=1787.84, place='Martinique &rarr; Versailles', st='solved', stt='known key applied',
          title='Damas to the minister of the Navy, 1787',
          blurb='A governor&rsquo;s plan for war with Britain during the Dutch crisis, enciphered in Bouill&eacute;&rsquo;s cipher of 1778, which the margin names. Brice Dudout read it with that key unchanged: 298 of 302 words.',
@@ -4379,6 +4394,9 @@ IMAGES['johnston1863'] = ('johnston1863_lead.jpg', 'The cipher lines of the tele
 IMAGES['milroy'] = None
 IMAGES['auckland1918'] = None
 IMAGES['deboli1788'] = None
+IMAGES['deboli1787'] = None
+IMAGES['dahku1715'] = None
+IMAGES['delcarretto1576'] = None
 IMAGES['pawel1624'] = None
 IMAGES['dormer1694'] = None
 IMAGES['casimir1629'] = None

@@ -1,0 +1,43 @@
+# rakoczi1632b validation: one pre-registered held-out measurement of WAINUT's key on fol. 492v (contributor's test, not docs/_validate.py).
+# Order (SHA-256 in frozen/SHA256SUMS): frozen/PREREG.md (00:30) -> frozen/H-CHIFFRE.txt, all cipher of 492v transcribed on masked strips
+# (glosses blanked) (00:34) -> frozen/BUILD-PAIRES.tsv + frozen/KEY.tsv = K = targets/rakoczi1632/key_frozen.tsv (SHA 2b2aa8cb...6fe13, values
+# unchanged) + 8 values from the glosses of 491v-492r (00:39) -> frozen/H-GLOSES.txt, glosses of 492v read after the freeze (00:42) -> this measure.
+# Score: char agreement between decode and normalised gloss (Levenshtein alignment); 200 controls = values of K shuffled among the groups
+# present in H, seed 1632; margin = score - best control. Thresholds fixed in advance: score >= 0.85 and margin >= 0.30.
+# Mask incident: strip y565 was a gloss line (line y590 excluded); gloss fragments seen at y278/y328 (those words excluded). Fixed before the
+# measure: words begun on the line before, or whose last visible group is the last before [cut], are excluded.
+# Reproduce: python3 scripts/measure.py frozen/KEY.tsv frozen/H-GLOSES.txt frozen/H-CHIFFRE.txt ../rakoczi1632/key_frozen.tsv
+# Output (labels in French: mots = words, lettres = letters, car = score, C(H) = coverage, témoins = controls, marge = margin, VALIDÉ = pass):
+K: mots=31 lettres=205 car=0.902 C(H)=0.940 témoins moy=0.181 max=0.341 marge=0.561 -> VALIDÉ
+   inioni                       unioni         5/6
+   anteqiam                     anteqam        7/7
+   nobis                        nobis          5/5
+   inbred/iiend/oum             ingrediendum   11/12
+   exped/iiant                  expediant      9/9
+   mille                        mille          5/5
+   ed/oited                     pedites        5/7
+   mille                        mille          5/5
+   muniti                       muniti         6/6
+   stud/iia                     studia         6/6
+   anteuertere                  anteuertere    11/11
+   e?cubias                     excubias       7/8
+   ord/oinare                   ordinare       8/8
+   ualeamd/is                   ualeamus       7/8
+   ql?mprim                     qamprimum      6/9
+   certum                       certum         6/6
+   ?id/oum                      fidum          4/5
+   hominem                      hominem        7/7
+   nos                          nos            3/3
+   e?peterent                   expetent       7/8
+   cum                          cum            3/3
+   ?ungarico                    hungarico      8/9
+   mouea?us                     moueamus       7/8
+   summ??                       summam         4/6
+   maeus                        manus          4/5
+   assianent                    assignent      8/9
+   ?ines                        fines          4/5
+   millia                       millia         6/6
+   d/ieqpctum                   defectum       6/8
+   non                          non            3/3
+   is                           is             2/2
+key_frozen (descriptif): mots=31 lettres=205 car=0.878 C(H)=0.922 témoins moy=0.186 max=0.307 marge=0.571 -> VALIDÉ

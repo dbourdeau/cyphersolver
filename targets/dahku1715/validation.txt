@@ -1,0 +1,26 @@
+dahku1715 - validation (contributor's pre-registered held-out test, not docs/_validate.py)
+
+Order of operations (all files hashed with SHA-256 in the contributor's folder, 5 Nov 2026):
+1. Sign table fixed before the line-by-line transcription (1d26c9d5...); transcription frozen (53fd773a...): 17 lines,
+   350 cipher signs, 24 sign types. Only scan 3 (pp. 2-3) is in cipher; no gloss, no key, no clear copy on the scans.
+2. Pre-registration written after the freeze and before any attack (d3c17fb7...): held-out block H = lines e03-e06 (the
+   last lines in reading order; 14 cipher words, 72 signs); training block = d01-e02 (278 signs). Clear words of the
+   letter used only as word breaks, never as known plaintext.
+3. Attack on the training block only: simulated annealing (seed 1715, 8 restarts x 40,000 steps), homophonic
+   substitution (at most 2 signs per letter), 4-gram character model learnt from the Polish clear texts of
+   targets/deboli1788-1791 of this repository. All restarts gave the same Polish text to one or two words.
+   Key = raw output of the best restart, frozen before the measurement (d51a88f5...). H was never decoded before.
+4. One measurement: M5 = share of the decoded signs of H covered by Polish words of 5 letters or more (frozen lexicon),
+   against 200 shuffled keys (permutations of the frozen key's values, seed 1715).
+
+Result (MESURE.txt, unchanged):
+  H letters = 72   M5 = 0.444   controls: max 0.083, median 0.000   margin 0.361
+Thresholds fixed in advance: validated if M5 >= 0.60 and M5 >= max(controls) + 0.30; partial if only the margin is met.
+Verdict: PARTIAL (margin met, absolute threshold missed). H is now used up.
+Decoded H as printed by the measurement: | woisko zas nieoddaliac da klarowal | zawislen prze prawic z kodgarzyc |
+nadra zo strone a |
+
+Limits: H is short (72 signs); there is no clear text of the time to compare with, so the score is a lexicon score, not
+an agreement with a known clear. After the measurement: one transcription slip noticed in H (e06 isolated '+' is probably
+the clear word 'to'); a blind shape plate on sign V (3 questions, 1 control; control answered as expected) settled V as W
+at d05 and e05, used in the reading only.

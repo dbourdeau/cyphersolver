@@ -1,0 +1,38 @@
+deboli1787 - test of the key of the time ZbPop 444 (contributor's pre-registered test, not docs/_validate.py), 5 Nov 2026
+
+Question: is ZbPop 444 "Cyfra polska" (8 Mar 1783) the key of Deboli's "older code" of 1783-88, and does it read well enough
+to publish readings at our threshold?
+
+Order of operations (all files hashed with SHA-256 in the contributor's folder):
+1. Key 444 transcribed in full from its scans and hashed (v1, b426536a...) before any despatch was decoded with it.
+2. Ciphers of three despatches of Jan-Aug 1788 in the older code (AGAD ZbPop 428) transcribed and hashed BEFORE their clear
+   texts were read: A 4 Jan 1788 k. 1r (259 groups), B 11 Jan k. 5r (348 groups), C 8 Aug k. 149r (221 groups, held out:
+   never seen with its clear before).
+3. Step protocol and notation adapter hashed; then the cabinet's clear texts of 1788 (AGAD ZbPop 417) transcribed.
+4. One measurement: alignment of the decoded groups with the clear (dynamic programming of targets/deboli1788, costs
+   unchanged), share of words "read by sense"; 200 shuffled keys as controls (seed 20261105).
+
+Result (key v1, unchanged):
+  A 4 Jan 1788   190 groups (after the overflow rule)   read by sense 0.874
+  B 11 Jan 1788  348 groups                             read by sense 0.874
+  C 8 Aug 1788   221 groups (held out)                  read by sense 0.837
+  A+B+C (weighted, 759 groups)                          0.864
+  Controls (still being computed on 6 Nov 2026, 00:20): A 111 of 200 done, max 0.121; B 18 done, max 0.083; C 36 done,
+  max 0.095.
+Criterion fixed in advance: >= 0.90 on C and on the whole. VERDICT: FAILED at 0.90 (verdict not rewritten).
+444 is confirmed as the key of 1783-88: the true key reads 0.84-0.87, far above every control computed so far.
+
+Declared deviations: the banded alignment of learn.py failed ("no path") when the clear available did not match the cipher
+in length, so the same DP was run without a band (no score seen before this change). A first run on C without controls
+showed 0.824; a bug of the notation adapter (y -> i not normalised) was then fixed: 0.837 is the result kept, both are
+reported. A's clear is cut (k. 17v not on disk): 5 lines removed by the overflow rule. The first 1-3 lines of A and B had
+been seen with their clear in an earlier session; C was clean.
+
+Nature of the misses (no rescoring): mostly alignment artefacts (a neighbouring letter glued to a word: de -> ide,
+nie -> inie); then digits misread in the despatches (e.g. 1179 read for 1199 "brzeg"); the nine suspect key values were
+checked on the key image and found as transcribed.
+
+Consequence for this folder: the key is not validated at our threshold, so the despatches of 1787 are published only as
+a partial reading explained (Brice Dudout's decision), each piece "read in part" with its own count. Three further
+despatches of 1786 in the same code (14 Mar, 20 Jun, 22 Dec 1786, ZbPop 2), with clears in AKP 269, are reserved for a new
+test (pre-registration hashed 5 Nov 2026), not yet run.
