@@ -4,7 +4,7 @@
 **Key recovered by:** Alberto Garvía García  
 **Status:** Substantial partial decipherment, pending independent verification.
 
-Status: in progress. Project note (6 Nov 2026): this folder holds the contributor's documentation as submitted in #308. The project has not seen the CEHM images (cehm.org.mx is not reachable from its environment) and has verified none of the proposed values; `profile.json` records the contribution as contributed and unverified, class not read. No write-up page yet.
+Status: in progress. Check of 6 Nov 2026: the control numbers and the 77 groups were read on four private CEHM screenshots and agree with this documentation; see `VERIFICATION.md` (numbers and plain words only, no images). Earlier project note (6 Nov 2026): this folder holds the contributor's documentation as submitted in #308. The project has not seen the CEHM images (cehm.org.mx is not reachable from its environment) and has verified none of the proposed values; `profile.json` records the contribution as contributed and unverified, class not read. No write-up page yet.
 
 ## Summary
 
