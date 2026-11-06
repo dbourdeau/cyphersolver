@@ -2,9 +2,9 @@
 
 ## 15 July 1909, López Portillo y Rojas to General Bernardo Reyes
 
-My dear friend: I have learned from a good source that [79] speaks of you as of an enemy, [a complaint, not read] that you should
-not declare yourself at once. Your situation fills me with fear. One must keep calm and be prudent. Take great care of yourself so that
-you recover soon. [77] ... offices ... unchained. Other clubs of Guadalajara will write to you. Today I send you a pleading message.
+My dear friend: I have learned from a good source that [79] speaks of you as of an enemy, a complaint, complaining (tentative reading of
+28 23 24 54 2) that you do not declare yourself at once. Your situation fills me with fear. One must keep calm and be prudent. Take great care of yourself so that
+you recover soon. [77] s ... offices s ... unchained. Other clubs of Guadalajara will write to you. Today I send you a pleading message.
 With affectionate memories for all your family, I remain your old servant and loyal friend.
 
 ## 29 July 1909 (note)
