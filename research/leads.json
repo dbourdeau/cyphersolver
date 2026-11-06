@@ -39342,50 +39342,29 @@
    "needs_archive_scan": "no",
    "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza, the carta or the correspondent; the inventory notes no decipherment and none is written on or beside the page (neighbouring carte checked); ASF holds the chancery keys (Cifrari II serie, \"Chiavi delle cifre del Carteggio di Cosimo I dal 1536 al 1573\", 3 filze), not online; DECODE's ASFi \"Governo Mediceo - cifre\" volumes (R5687-R7459) are 17th-18th c.; Tomokiyo and Lasry not searched in this run.",
    "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 2348,
-   "counted": true,
-   "year": 1555,
-   "date": "s.d. [late March 1555]",
-   "title": "Anonymous full-page cipher to Cristiano Pagni, March 1555: mixed figures and letters (A, S, x as markers), bare",
-   "correspondents": "[...] -> Cristiano Pagni, secretary, Florence",
-   "place": "[...]",
-   "language": "unknown (cipher of digits mixed with letters and signs)",
-   "region": "Italy",
-   "period": "1497-1559",
-   "shelfmark": "Archivio di Stato di Firenze, Mediceo del Principato 444, c. 315",
-   "folio_note": "c. 315r: about 30 lines of cipher mixing digits with letters (A, S, x, Q-like signs) and a short clear opening line; c. 315v address to Cristiano Pagni. Inventory vol. VII p. 396: \"[...] a Cristiano Pagni segr., Firenze, [...], s.d., c. 315\", note 38 \"In cifra\".",
-   "cls": "A",
-   "status": "Bare (900 px); cc. 314 and 316 are unrelated clear letters. The system differs from the figure ciphers of Babbi, Griffoli and Nucci.",
-   "why": "A full page in a distinct mixed cipher addressed to Cosimo I's first secretary, sender suppressed; unread.",
-   "importance": 2,
-   "solvability": 3,
-   "difficulty": 3,
-   "verify": "Transcribe at full size; read the verso for any endorsement; compare with 427 c. 237 / c. 48 (lead 2330).",
-   "links": [
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/unita-archivistica/?id=444",
-     "label": "PAD unit 444 (Mediceo del Principato 444)"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch n14",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF PAD via curl/iipsrv, 6 Nov 2026: Mediceo del Principato 402 A cc. 672-677 (https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mdp_carteggio_universale/402%20A/0174_C_0675_R.ptif), 444 cc. 126-128 at 1400 px and cc. 126-127 at 2000 px (https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mdp_carteggio_universale/444/0258_C_126_R.ptif, 0260_C_127_R.ptif), 445 cc. 367-368 at 2000 px and cc. 383-389 at 1000-1400 px",
+     "extent": "402 A c. 675r: about 24 lines of dotted figures, verso show-through only; 444 c. 127r: about 24 lines of figures ending with a flourish; 445 c. 386r: about 22 lines of figures, verso blank. Three full pages in all.",
+     "cipher": "Continuous figure cipher with dots under groups, no clear word. 444 c. 126r, filed directly in front of c. 127, is a clear text of 16 lines in the chancery decipherer's hand with no salutation, date or signature, ending with a flourish: 'E tornato qua di nuovo quel Thomaso Rinuccini et questo medesimo giorno e partito per Venetia insieme con quello Aless.o ... Cameriere secreto di questo Duca, et ne hanno portato una buona somma di danari ... non sono meno di centomila ... per servitio del Re et contra all'Imp.re et V. Ecc.a ... non si vede ne sente alcuno motivo'. It is Ferrara news addressed to Cosimo, in the same slip form and hand as 445 c. 367, the decipherment of the Babbi avviso c. 368 (inventory note 52); its length (16 lines of clear against 24 of figures) matches the ratio of the 367/368 pair (7 against 9.5). 402 A c. 675 (neighbours c. 674 a cover showing an address through the paper, c. 673 Lucantonio Cuppano, c. 676-677 Fabrizio Ferrari with his own interlinear gloss) and 445 c. 386 (between Babbi's clear covering letter cc. 385, 387; cc. 383-384 Guicciardini and Prospero dal Forno, cc. 388-389 blank) have no decipherment on or beside them."
     },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=603543&ua=444",
-     "label": "c. 315r"
+    "prior_art": {
+     "decode": "known.py (harvested DECODE dump plus repo ledgers) on 'Babbi', '402 A, c. 675', '444, c. 127', '445, c. 386': only this lead, candidates.json and the sweep README; DECODE's ASFi 'Governo Mediceo - cifre' records (R5687-R7459) are 17th-18th century.",
+     "tomokiyo": "cryptiana italian.htm and crypto.htm fetched 6 Nov 2026 and grepped for Babbi, Ferrara, Cosimo: no Babbi or Florentine-agent-at-Ferrara cipher; the Ferrara/Modena section is Este material.",
+     "lasry": "Local GL.htm (targets/gramont1529) grepped for Babbi, Cosimo, Mediceo: no hit; no Lasry paper on Cosimo I's 1550s agents.",
+     "edition": "Carteggio universale inventory vol. VII p. 412 (page image seen): 'Avviso in cifra di [Francesco Babbi]' c. 368 (note 52, decipherment c. 367) and c. 386 with no note; the index line 'Babbi Francesco, avviso in cifra, 1555: 444, 127; 445, 368; 386' (Google Books feed, inventory 1982). No edition of Babbi's letters.",
+     "literature": "Web search 'Francesco Babbi Ferrara Cosimo I cifra avvisi 1555': only unrelated Medici catalogue entries and Regione Toscana inventory PDFs of 1561-63; no study of Babbi's cipher."
     },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=603544&ua=444",
-     "label": "c. 315v"
-    }
-   ],
-   "source": "ASF Mediceo del Principato, Carteggio universale (PAD images) + Carteggio universale di Cosimo I inventory PDFs (ASF Inventari on-line), second ASF Florence pass, Nov 2026",
-   "score_note": "Scored from the images viewed during the second ASF Florence pass, 6 Nov 2026 (research/sweep_2026-11_asf_florence_2/)",
-   "access_note": "scans public on ASF PAD (archividigitali), no login, curl works: unit page /archividigitali/unita-archivistica/?id=<ua> lists carte; each /archividigitali/riproduzione/?id=<id>&ua=<ua> names the ptif; IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mdp_carteggio_universale/<filza>/<seq>_C_<carta>_<R|V>.ptif (2000 px). PAD holds filze 330-460 only (1537-1557).",
-   "seen": "image",
-   "needs_archive_scan": "no",
-   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza, the carta or the correspondent; the inventory notes no decipherment and none is written on or beside the page (neighbouring carte checked); ASF holds the chancery keys (Cifrari II serie, \"Chiavi delle cifre del Carteggio di Cosimo I dal 1536 al 1573\", 3 filze), not online; DECODE's ASFi \"Governo Mediceo - cifre\" volumes (R5687-R7459) are 17th-18th c.; Tomokiyo and Lasry not searched in this run.",
-   "ark": "",
-   "scored": "sweep"
+    "key_check": "Not tested group by group. The 444 c. 126 slip supplies plaintext for c. 127; 445 cc. 367/368 is a second pair of the same system.",
+    "key_in_volume": "445 cc. 367-368 (decipherment and cipher, inventory note 52) and 444 cc. 126-127 (slip and cipher, identified here); ASF Cifrari II serie F. III holds the key (not online). Not tested on 402 A c. 675 or 445 c. 386.",
+    "duplicates": "known.py on 'Babbi', the three shelfmarks and 'Francesco Babbi': only this lead and its sweep files; no catalogue entry, other lead or target.",
+    "verdict": "partly_read",
+    "closed": "444 c. 127 has its contemporary decipherment on the slip c. 126 filed in front of it (decipherer's hand, no salutation or signature, Ferrara news addressed to 'V. Ecc.a'; judged from form, hand and length against the 445 cc. 367/368 pair, not group by group). 402 A c. 675 and 445 c. 386 stay bare and could be re-filed as their own lead, with 444 cc. 126/127 and 445 cc. 367/368 as key material."
+   }
   },
   {
    "id": 2349,
@@ -39436,138 +39415,28 @@
    "needs_archive_scan": "no",
    "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza, the carta or the correspondent; the inventory notes no decipherment and none is written on or beside the page (neighbouring carte checked); ASF holds the chancery keys (Cifrari II serie, \"Chiavi delle cifre del Carteggio di Cosimo I dal 1536 al 1573\", 3 filze), not online; DECODE's ASFi \"Governo Mediceo - cifre\" volumes (R5687-R7459) are 17th-18th c.; Tomokiyo and Lasry not searched in this run.",
    "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 2350,
-   "counted": true,
-   "year": 1482,
-   "date": "3 Jul - 4 Sep 1482",
-   "title": "Bernardo Rucellai, Florentine orator in Milan, July-September 1482: four bare letters in his sign cipher, with three glossed siblings in the same filza",
-   "correspondents": "Bernardo Rucellai, orator in Milan -> Lorenzo de' Medici",
-   "place": "Milan",
-   "language": "Italian (sign cipher with clear words)",
-   "region": "Italy",
-   "period": "15th century",
-   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza LXXII, docs. 196, 200, 202, 206",
-   "folio_note": "Each a single leaf, recto, opening in clear and running into long sign-cipher passages between clear words: 196 (old c. 238; inventory \"(Milano, 1482 lug. 3)\", about 20 lines), 200 (c. 243; \"lug. 19\", about 15 lines), 202 (c. 245; \"lug. 11\", about 15 lines), 206 (c. 249; \"set. 4\", about 8 lines with dotted gaps). MAP inventory vol. 3, filza LXXII: \"(Bernardo Rucellai). (Milano, 1482 lug. 3), n. 196; (lug. 15), n. 201; lug. 19, n. 200; (lug. 11), n. 202; (ago. 30), n. 204; n. 205; (set. 4), n. 206; (giu. 3), n. 211\"; none flagged as cipher.",
-   "cls": "A",
-   "status": "Bare: no interlinear or marginal decipherment on 196, 200, 202 or 206 (900 px, crops). Key material in the same run: 201 (15 Jul) carries interlinear glosses over many cipher groups; 205 is the clear text of 204 (30 Aug; it opens with the same words, \"Noi diremo che noi contraffacciamo ...\"); 208 is the decipherment of 207 (inventory \"Decifrato della n. 207\"). Lead 2323 (LXXII 211) is the 3 June 1482 letter of this series (inventory attribution to Rucellai).",
-   "why": "A run of cipher despatches from Milan in the War of Ferrara (1482), with three glossed letters of the same system beside them: a key can be rebuilt and the four bare letters (and lead 2323) read.",
-   "importance": 4,
-   "solvability": 5,
-   "difficulty": 2,
-   "verify": "Rebuild the sign table from 204/205, 207/208 and the glosses on 201; apply to 196, 200, 202, 206 and lead 2323 (211); compare with the 1483 Rucellai cipher of XLVIII 214 (catalogue), said to use a different sign set.",
-   "links": [
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=72&d=196&c=",
-     "label": "MAP filza 72, doc. 196"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch n14",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF PAD via curl/iipsrv, 6 Nov 2026: Mediceo del Principato 448 cc. 547-552 at 1400 px (https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mdp_carteggio_universale/448/1108_C_549_R.ptif, 1110_C_550_R.ptif) and cc. 556-562 at 1000 px",
+     "extent": "c. 549r: about 7 lines of figures (two-digit groups with +, m and a few letters) inside a clear letter; c. 549v clear, signed Mario Sforza, Santa Fiora 27 Nov 1555.",
+     "cipher": "The figure block follows 'ma promesso. Et,' and is followed by 'et voglio il piu presto ...'; it carries 'v.s.' in clear in its third line. c. 550 (a narrow slip, number written over '549 bis') is a clear text in three lines: 'con pochissima gente si torria loro gl'artiglieria, si che V.S. non perda se puo questa occasione che non puo esser maggiore,' ending with a comma. About 49 letters stand before 'V.S.' and 50 after it, against about 45 and 44 two-digit groups on either side of the clear 'v.s.' in the cipher block."
     },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79582",
-     "label": "image id 79582"
+    "prior_art": {
+     "decode": "known.py on 'Mario Sforza', 'Santa Fiora', 'Sforza Sforza', '448, cc. 549': only this lead and its sweep files, plus targets/guiche1551 (Santa Fiora named in a 1551 French letter, a different document).",
+     "tomokiyo": "cryptiana italian.htm and crypto.htm fetched 6 Nov 2026 and grepped for Sforza, Santa Fiora: only Milanese Sforza ciphers of the 15th century; nothing on the Santa Fiora family.",
+     "lasry": "Local GL.htm (targets/gramont1529) grepped for Sforza, Santa Fiora: no hit.",
+     "edition": "Carteggio universale inventory vol. VIII (1998), notes 63-65 on this item (Google Books feed): 'Parzialmente in cifra. Allegata a c. 557 ...', 'Rinviata a Cristiano Pagni', 'In allegato cc. 549-550'; no edition.",
+     "literature": "Web search 'Mario Sforza Santa Fiora 1555 lettera cifra Sforza Sforza Cosimo' found nothing on this letter."
     },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79583",
-     "label": "image id 79583"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=72&d=200&c=",
-     "label": "MAP filza 72, doc. 200"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79594",
-     "label": "image id 79594"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79595",
-     "label": "image id 79595"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=72&d=202&c=",
-     "label": "MAP filza 72, doc. 202"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79598",
-     "label": "image id 79598"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79599",
-     "label": "image id 79599"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=72&d=206&c=",
-     "label": "MAP filza 72, doc. 206"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79606",
-     "label": "image id 79606"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79607",
-     "label": "image id 79607"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=72&d=201&c=",
-     "label": "MAP filza 72, doc. 201"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79596",
-     "label": "image id 79596"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79597",
-     "label": "image id 79597"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=72&d=204&c=",
-     "label": "MAP filza 72, doc. 204"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79602",
-     "label": "image id 79602"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79603",
-     "label": "image id 79603"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79604",
-     "label": "image id 79604"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79605",
-     "label": "image id 79605"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=72&d=207&c=",
-     "label": "MAP filza 72, doc. 207"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79608",
-     "label": "image id 79608"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79609",
-     "label": "image id 79609"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79610",
-     "label": "image id 79610"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79611",
-     "label": "image id 79611"
-    }
-   ],
-   "source": "ASF Mediceo avanti il Principato (MAP) images, second ASF Florence pass, Nov 2026",
-   "score_note": "Scored from the images viewed during the second ASF Florence pass, 6 Nov 2026 (research/sweep_2026-11_asf_florence_2/)",
-   "access_note": "scans public on the ASF MAP site, no login, curl works: /map/ricerca/ricerca-su-filza/?f=<filza>&d=<doc> and IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (1600 px max)",
-   "seen": "image",
-   "needs_archive_scan": "no",
-   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza or document; not flagged as cipher in the MAP inventory; DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap.",
-   "ark": "",
-   "scored": "sweep"
+    "key_check": "Not needed: the slip c. 550 gives the plaintext of the figure block; not checked group by group.",
+    "duplicates": "known.py on 'Mario Sforza', 'Santa Fiora', 'Sforza Sforza', '448, cc. 549': no catalogue entry, other lead or target with this letter.",
+    "verdict": "read",
+    "closed": "448 c. 550 (numbered over '549 bis') is the decipherment of the figure block on c. 549r: a clear three-line slip ending in a comma, whose 'V.S.' falls where the cipher has 'v.s.' in clear and whose letter counts on either side (about 49 and 50) match the two-digit group counts (about 45 and 44). Judged from position and length, not group by group; the sweep took it for an unrelated clear slip."
+   }
   },
   {
    "id": 2351,
@@ -39630,7 +39499,8 @@
    "needs_archive_scan": "no",
    "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza or document; not flagged as cipher in the MAP inventory; DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap.",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting_note": "probable plaintext not checked: LXXII 192 is not a second private letter but a cipher copy of Acciaiuoli's public despatch of 23 Oct 1513. Its recto is headed in a contemporary hand 'Copia della l[ette]ra c[...]' and opens 'Mag(nifi)ci D(omi)ni etc.', the verso closes 'raccomandarmi alle Sig. V(ost)re ... Ex Amiens die xxiii Octobris MDXIII, Robertus Acciarolus', while 190 (to a single 'Mag.ce Vir', signed the same day) says in clear 'Ultra le lettere publ(iche) delle qual sara con questa el doppio'. Acciaiuoli's letter of 23 Oct 1513 to the Dieci di Balia survives at ASF, Dieci di Balia, Responsive 118, c. 139r (cited with the 20 Oct letter at c. 138r in Annuarium Historiae Conciliorum 1984, Google Books mADZAAAAMAAJ, feed snippet). If that original is in clear or carries its decipherment, 192's text is on record. Needs the Dieci Responsive 118 c. 139 (not online) or the 1984 article's text. Everything else checked: see notes."
   },
   {
    "id": 2352,
@@ -39681,50 +39551,28 @@
    "needs_archive_scan": "no",
    "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza or document; not flagged as cipher in the MAP inventory; DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap.",
    "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 2353,
-   "counted": true,
-   "year": 1485,
-   "date": "undated (filed among the key sheets of Lorenzo de' Medici's chancery, c. 1478-1492)",
-   "title": "A full page of sign cipher filed among Lorenzo de' Medici's key sheets (MAP CXIX 126), bare",
-   "correspondents": "unknown (Laurentian chancery correspondence)",
-   "place": "not stated",
-   "language": "unknown (sign cipher, no clear word)",
-   "region": "Italy",
-   "period": "15th century",
-   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza CXIX, doc. 126 (old c. 127)",
-   "folio_note": "One leaf, recto: about 28 lines of continuous letter-like signs (Latin letters, crosses, Greek-like forms), no clear word, no address; verso blank. MAP inventory vol. 4 lists CXIX 115-127 together as \"Cifre della segreteria di Lorenzo il Magnifico col duca di Urbino, col duca di Calabria, con Giovanni Tornabuoni, con l'ambasciatore di Venezia, Paolo Antonio Soderini, con Lodovico Sforza, con Piero Medici, con Costanzo Sforza, con Dionigi Mortellas, con Giovan Battista Centurioni, con Pellegrino (Rossi) da Forlì, con Ranuccio (Farnese)\": twelve keys named for thirteen documents; 126 is the one that is a text, not a table.",
-   "cls": "A",
-   "status": "Bare (900 px). The twelve key sheets beside it (CXIX 115-125, 127; keys.json) are the obvious first test.",
-   "why": "An unread Laurentian cipher text filed with twelve keys of the same chancery: very likely readable with one of them.",
-   "importance": 3,
-   "solvability": 5,
-   "difficulty": 2,
-   "verify": "Build the sign inventory of 126; match it against the alphabets of CXIX 115-125, 127 and LXXII 178-188.",
-   "links": [
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=119&d=126&c=",
-     "label": "MAP filza 119, doc. 126"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch n14",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP LXXII 189, cc. 230r-231v at the server maximum (https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100072/A0000455.ptif to A0000458, 1272 x 1848), 6 Nov 2026",
+     "extent": "Four written sides (cc. 230r, 230v, 231r, 231v), not two: a long clear letter with several cipher runs in most paragraphs.",
+     "cipher": "Sign cipher (varpi, phi, beta, omega, division sign, 16, 20, 24, crossed z) between clear words, codes such as 'L.A', 'L7', 'L.co'; opens 'R.mo Monsignore patrone et signore mio: Della allegrezza universale di tutta questa citta ...' and closes 'Venetiis die viij Septembris 1512, D. V. R.mae servitor Petrus Bibiena'. No interlinear or marginal decipherment on the leaves."
     },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=118042",
-     "label": "image id 118042"
+    "prior_art": {
+     "decode": "known.py on 'Bibbiena', 'Dovizi', 'LXXII, doc. 189': only this lead and its sweep files; no DECODE record.",
+     "tomokiyo": "cryptiana italian.htm and crypto.htm fetched 6 Nov 2026 and grepped for Bibbiena, Dovizi, 1512: no hit.",
+     "lasry": "Local GL.htm (targets/gramont1529) grepped for Bibbiena, Dovizi, Medici: no hit.",
+     "edition": "Printed: I. Del Lungo, 'Fra Girolamo Savonarola', Archivio storico italiano n.s. XVIII, parte I (1863), pp. 11-15 (also the 1861 offprint), cited by Pastor, Storia dei papi (Italian ed., Google Books vo2tgM8yN4oC: 'Arch. stor. ital., 2a serie XVIII 1 (1863), 11-15'; 'Del Lungo pubblico una lettera di Pietro Dovizi da Bibbiena al cardinale Medici dopo la restaurazione, Venezia 8 settembre 1512') and reprinted from it by P. Viti in Il santuario di Santa Maria del Sasso di Bibbiena (2000), whose note gives 'A.S.F., Mediceo avanti il principato, 72, 189 ... e stata pubblicata da I. Del Lungo ... pp. 11-15'. Feed snippets of the 1863 text show the cipher runs in clear: 'Non e da differirla questa superiorita' (leaf: 'questa' + cipher run), 'Venetiani non hanno gente popolare et plebea in questo' (leaf: code 'L7' and a cipher run), 'Diria adunque, che o vero se levassi via il Consiglio Grande con ripigliare la forma ... di vostro padre' (Viti; leaf: cipher runs after 'o vero' and 'ripigliare'). Moncallero's Epistolario prints Bernardo Dovizi's letters, not this one of Piero.",
+     "literature": "Villari, Machiavelli e i suoi tempi II (archive.org OCR) prints the letters of Giovanni and Giuliano de' Medici and of Bernardo Dovizi to Piero in Venice (Aug-Sept 1512), not this reply; Pastor and Viti as above."
     },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=118043",
-     "label": "image id 118043"
-    }
-   ],
-   "source": "ASF Mediceo avanti il Principato (MAP) images, second ASF Florence pass, Nov 2026",
-   "score_note": "Scored from the images viewed during the second ASF Florence pass, 6 Nov 2026 (research/sweep_2026-11_asf_florence_2/)",
-   "access_note": "scans public on the ASF MAP site, no login, curl works: /map/ricerca/ricerca-su-filza/?f=<filza>&d=<doc> and IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (1600 px max)",
-   "seen": "image",
-   "needs_archive_scan": "no",
-   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza or document; not flagged as cipher in the MAP inventory; DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap.",
-   "ark": "",
-   "scored": "sweep"
+    "key_check": "Not needed: the printed text gives the cipher runs in clear. The 189 bis alphabet strip was not compared.",
+    "duplicates": "known.py on 'Bibbiena', 'Dovizi', 'LXXII, doc. 189': no catalogue entry, other lead or target.",
+    "verdict": "read",
+    "closed": "Printed with its cipher passages in clear by I. Del Lungo, Archivio storico italiano n.s. XVIII/1 (1863) pp. 11-15, reprinted by P. Viti (2000); three passages checked against the leaf through Google Books snippets (cipher runs and the code 'L7' given as 'superiorita', 'Venetiani ... in questo', 'se levassi via il Consiglio Grande'). Whether every run is resolved in print was not checked page by page; the 1863 volume is public domain on Google Books (ids rtEFAAAAQAAJ, hwwMAAAAYAAJ) but was not opened."
+   }
   }
  ]
 }

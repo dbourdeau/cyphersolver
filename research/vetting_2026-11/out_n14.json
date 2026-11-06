@@ -1,0 +1,199 @@
+{
+ "2347": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch n14",
+  "seen": {
+   "kind": "scan",
+   "where": "ASF PAD via curl/iipsrv, 6 Nov 2026: Mediceo del Principato 402 A cc. 672-677 (https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mdp_carteggio_universale/402%20A/0174_C_0675_R.ptif), 444 cc. 126-128 at 1400 px and cc. 126-127 at 2000 px (https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mdp_carteggio_universale/444/0258_C_126_R.ptif, 0260_C_127_R.ptif), 445 cc. 367-368 at 2000 px and cc. 383-389 at 1000-1400 px",
+   "extent": "402 A c. 675r: about 24 lines of dotted figures, verso show-through only; 444 c. 127r: about 24 lines of figures ending with a flourish; 445 c. 386r: about 22 lines of figures, verso blank. Three full pages in all.",
+   "cipher": "Continuous figure cipher with dots under groups, no clear word. 444 c. 126r, filed directly in front of c. 127, is a clear text of 16 lines in the chancery decipherer's hand with no salutation, date or signature, ending with a flourish: 'E tornato qua di nuovo quel Thomaso Rinuccini et questo medesimo giorno e partito per Venetia insieme con quello Aless.o ... Cameriere secreto di questo Duca, et ne hanno portato una buona somma di danari ... non sono meno di centomila ... per servitio del Re et contra all'Imp.re et V. Ecc.a ... non si vede ne sente alcuno motivo'. It is Ferrara news addressed to Cosimo, in the same slip form and hand as 445 c. 367, the decipherment of the Babbi avviso c. 368 (inventory note 52); its length (16 lines of clear against 24 of figures) matches the ratio of the 367/368 pair (7 against 9.5). 402 A c. 675 (neighbours c. 674 a cover showing an address through the paper, c. 673 Lucantonio Cuppano, c. 676-677 Fabrizio Ferrari with his own interlinear gloss) and 445 c. 386 (between Babbi's clear covering letter cc. 385, 387; cc. 383-384 Guicciardini and Prospero dal Forno, cc. 388-389 blank) have no decipherment on or beside them."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump plus repo ledgers) on 'Babbi', '402 A, c. 675', '444, c. 127', '445, c. 386': only this lead, candidates.json and the sweep README; DECODE's ASFi 'Governo Mediceo - cifre' records (R5687-R7459) are 17th-18th century.",
+   "tomokiyo": "cryptiana italian.htm and crypto.htm fetched 6 Nov 2026 and grepped for Babbi, Ferrara, Cosimo: no Babbi or Florentine-agent-at-Ferrara cipher; the Ferrara/Modena section is Este material.",
+   "lasry": "Local GL.htm (targets/gramont1529) grepped for Babbi, Cosimo, Mediceo: no hit; no Lasry paper on Cosimo I's 1550s agents.",
+   "edition": "Carteggio universale inventory vol. VII p. 412 (page image seen): 'Avviso in cifra di [Francesco Babbi]' c. 368 (note 52, decipherment c. 367) and c. 386 with no note; the index line 'Babbi Francesco, avviso in cifra, 1555: 444, 127; 445, 368; 386' (Google Books feed, inventory 1982). No edition of Babbi's letters.",
+   "literature": "Web search 'Francesco Babbi Ferrara Cosimo I cifra avvisi 1555': only unrelated Medici catalogue entries and Regione Toscana inventory PDFs of 1561-63; no study of Babbi's cipher."
+  },
+  "key_check": "Not tested group by group. The 444 c. 126 slip supplies plaintext for c. 127; 445 cc. 367/368 is a second pair of the same system.",
+  "key_in_volume": "445 cc. 367-368 (decipherment and cipher, inventory note 52) and 444 cc. 126-127 (slip and cipher, identified here); ASF Cifrari II serie F. III holds the key (not online). Not tested on 402 A c. 675 or 445 c. 386.",
+  "duplicates": "known.py on 'Babbi', the three shelfmarks and 'Francesco Babbi': only this lead and its sweep files; no catalogue entry, other lead or target.",
+  "verdict": "partly_read",
+  "closed": "444 c. 127 has its contemporary decipherment on the slip c. 126 filed in front of it (decipherer's hand, no salutation or signature, Ferrara news addressed to 'V. Ecc.a'; judged from form, hand and length against the 445 cc. 367/368 pair, not group by group). 402 A c. 675 and 445 c. 386 stay bare and could be re-filed as their own lead, with 444 cc. 126/127 and 445 cc. 367/368 as key material."
+ },
+ "2348": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch n14",
+  "seen": {
+   "kind": "scan",
+   "where": "ASF PAD via curl/iipsrv, 6 Nov 2026: Mediceo del Principato 444 cc. 313-317 recto and verso at 1400 px (https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mdp_carteggio_universale/444/0636_C_315_R.ptif and 0637_C_315_V.ptif)",
+   "extent": "c. 315r: about 30 lines, the first line and a half clear, the rest cipher; c. 315v: about 11 more lines of cipher at the head of the page, the rest show-through. About 40 lines of cipher.",
+   "cipher": "Clear opening 'Scrissi l'altro hieri a V.S. ragguagliandola di quel che passava per ... con questa intendera come' and then digits run together with letters and signs (x, A, S, q, u, h, a crossed g, a bracket sign) as separate tokens. No interlinear or marginal decipherment on either side. Neighbours: c. 313 Cesare Guerrini (clear, signed), c. 314 Lodovico Rasponi (clear, signed, March 1555), c. 316 a clear letter of March 1555 with its own signature, c. 317 blank with an endorsement; none is a decipherment slip."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump plus repo ledgers) on '444, c. 315' and 'Cristiano Pagni': only this lead, candidates.json, the sweep README and leads 2325/2338 (other letters to or from Pagni); no DECODE record of any 1555 Mediceo del Principato item.",
+   "tomokiyo": "cryptiana italian.htm and crypto.htm fetched 6 Nov 2026 and grepped for Pagni, Florence, Cosimo: nothing on a mixed digit-letter cipher of Cosimo I's chancery (only the Guicciardini 1590s page).",
+   "lasry": "Local GL.htm (targets/gramont1529) grepped for Pagni, Mediceo, Cosimo: no hit; no Lasry paper on this piece.",
+   "edition": "Carteggio universale inventory vol. VII (1982) p. 396 lists '[...] a Cristiano Pagni segr., Firenze, [...], s.d., c. 315', note 38 'In cifra' (note page seen, p. 398); sender unknown, so no edition prints it.",
+   "literature": "Web search on Cristiano Pagni and a 1555 cipher letter in filza 444 found only the inventory and unrelated Pagni items (Lorenzo Pagni 1557); Google Books feed '\"a Cristiano Pagni\" \"in cifra\" 1555' returns only the inventory volumes."
+  },
+  "searches": [
+   {
+    "query": "\"Cristiano Pagni\" lettera in cifra 1555 Mediceo del Principato 444",
+    "result": "Bollettino AIB review of inventory VII and Regione Toscana inventory PDFs; a Lorenzo Pagni letter of 1557; nothing on c. 315"
+   },
+   {
+    "query": "Google Books feed: \"a Cristiano Pagni\" \"in cifra\" 1555",
+    "result": "only the Carteggio universale inventories (1982, 1998); no edition or decipherment of a cipher letter to Pagni"
+   },
+   {
+    "query": "Google Books feed: \"Cristiano Pagni\" cifra 1555 decifrata",
+    "result": "no entries returned"
+   },
+   {
+    "query": "known.py '444, c. 315'; 'Cristiano Pagni'",
+    "result": "only this lead, its sweep and leads 2325/2338 (different letters); no DECODE record"
+   }
+  ],
+  "key_check": "No key identified: the sender is unknown and the mixed digit-letter system differs from the Babbi, Griffoli and Nucci figure ciphers; ASF Cifrari II serie (keys of Cosimo I's correspondence 1536-1573) is not online. Not tested.",
+  "duplicates": "known.py on '444, c. 315', 'Cristiano Pagni', 'Mediceo del Principato 444': only this lead and its sweep files; leads 2325 and 2338 are other documents.",
+  "verdict": "open"
+ },
+ "2349": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch n14",
+  "seen": {
+   "kind": "scan",
+   "where": "ASF PAD via curl/iipsrv, 6 Nov 2026: Mediceo del Principato 448 cc. 547-552 at 1400 px (https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mdp_carteggio_universale/448/1108_C_549_R.ptif, 1110_C_550_R.ptif) and cc. 556-562 at 1000 px",
+   "extent": "c. 549r: about 7 lines of figures (two-digit groups with +, m and a few letters) inside a clear letter; c. 549v clear, signed Mario Sforza, Santa Fiora 27 Nov 1555.",
+   "cipher": "The figure block follows 'ma promesso. Et,' and is followed by 'et voglio il piu presto ...'; it carries 'v.s.' in clear in its third line. c. 550 (a narrow slip, number written over '549 bis') is a clear text in three lines: 'con pochissima gente si torria loro gl'artiglieria, si che V.S. non perda se puo questa occasione che non puo esser maggiore,' ending with a comma. About 49 letters stand before 'V.S.' and 50 after it, against about 45 and 44 two-digit groups on either side of the clear 'v.s.' in the cipher block."
+  },
+  "prior_art": {
+   "decode": "known.py on 'Mario Sforza', 'Santa Fiora', 'Sforza Sforza', '448, cc. 549': only this lead and its sweep files, plus targets/guiche1551 (Santa Fiora named in a 1551 French letter, a different document).",
+   "tomokiyo": "cryptiana italian.htm and crypto.htm fetched 6 Nov 2026 and grepped for Sforza, Santa Fiora: only Milanese Sforza ciphers of the 15th century; nothing on the Santa Fiora family.",
+   "lasry": "Local GL.htm (targets/gramont1529) grepped for Sforza, Santa Fiora: no hit.",
+   "edition": "Carteggio universale inventory vol. VIII (1998), notes 63-65 on this item (Google Books feed): 'Parzialmente in cifra. Allegata a c. 557 ...', 'Rinviata a Cristiano Pagni', 'In allegato cc. 549-550'; no edition.",
+   "literature": "Web search 'Mario Sforza Santa Fiora 1555 lettera cifra Sforza Sforza Cosimo' found nothing on this letter."
+  },
+  "key_check": "Not needed: the slip c. 550 gives the plaintext of the figure block; not checked group by group.",
+  "duplicates": "known.py on 'Mario Sforza', 'Santa Fiora', 'Sforza Sforza', '448, cc. 549': no catalogue entry, other lead or target with this letter.",
+  "verdict": "read",
+  "closed": "448 c. 550 (numbered over '549 bis') is the decipherment of the figure block on c. 549r: a clear three-line slip ending in a comma, whose 'V.S.' falls where the cipher has 'v.s.' in clear and whose letter counts on either side (about 49 and 50) match the two-digit group counts (about 45 and 44). Judged from position and length, not group by group; the sweep took it for an unrelated clear slip."
+ },
+ "2350": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch n14",
+  "lead_updates": {
+   "correspondents": "Bernardo Rucellai, Florentine orator in Milan -> Lionardo Spina in Pisa (Lorenzo de' Medici's cover address)",
+   "folio_note": "Each a single leaf, recto, opening in clear and running into sign-cipher passages between clear words, verso addressed 'D(omi)no Lionardo Spina in Pisa' and endorsed: 196 (old c. 238; about 18 lines; '1482 / Da Milano / a di iij di luglio / R(isposto) a di vij detto'), 200 (c. 243; about 15 lines; '1482 / da Bernardo Rucellai / a di 19 di luglio'), 202 (c. 245; about 16 lines; '1482 / da Bernardo Rucellai / ... luglio'), 206 (c. 249; about 7 lines with dotted gaps; '1482 / da Bernardo Rucellai / a di 4 di sett.'). MAP inventory vol. 3, filza LXXII: '(Bernardo Rucellai). (Milano, 1482 lug. 3), n. 196; ... lug. 19, n. 200; (lug. 11), n. 202; ... (set. 4), n. 206'."
+  },
+  "seen": {
+   "kind": "scan",
+   "where": "ASF MAP filza LXXII at the server maximum (1220-1272 px wide), 6 Nov 2026: 196 r/v https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100072/A0000473.ptif, A0000474; 200 r/v A0000485-486; 202 r/v A0000489-490; 206 r/v A0000497-498; neighbours 197 (A0000475), 198 (A0000477, 479), 199 (A0000481, 483), 203 (A0000491), 204 (A0000493), 205 (A0000495), 207 (A0000499), 208 (A0000501)",
+   "extent": "Four letters, rectos only: 196 about 18 lines, 200 about 15, 202 about 16, 206 about 7; roughly half of each line cipher.",
+   "cipher": "Letter-like sign cipher (q, b, x, pi, =, z, g, ll, 7, o with crosses and superscripts) between clear words (196: 'fatto', 'seguitono', 'credeano', 'comprendiamo', 'quando', 'abbiamo', 'luomo'; 200: 'Noi dubitiamo che questo', 'non sia'; 202: 'persone', 'la parentela'; 206: 'noi', 'dallui ogni'). No interlinear, marginal or foot decipherment on any of the four. Neighbours checked at full size: 197 a clear letter on Camerino and the Duke of Calabria in another hand, 198 a clear deposition to a duke, 199 a formal clear letter, 203 Rucellai's clear letter of 27 Aug signed 'Bern.o Rucellai or.'; 205 is the clear text of 204 (both open 'Noi diremo che noi contraffacciamo'), 208 ('Il S. Lodovico da principio si mostro molto allegro della tornata di Aschanio ...') the decipherment of 207. None of these deciphers 196, 200, 202 or 206."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump) on 'LXXII, doc. 196/200/202/206', 'Lionardo Spina', 'Rucellai': no hit on these documents; Spina and Rucellai hit only catalogue 2323 (LXXII 211, same channel, different letter) and 2309 (XLVIII 214); no MAP record on DECODE.",
+   "tomokiyo": "cryptiana italian.htm and crypto.htm fetched 6 Nov 2026 and grepped for Rucellai, Medici, 1482: no Rucellai cipher; the Florence section has Lasry's Siena no. 11 (Acciaiuoli 1478) and the Gabbrielli 1425 cipher only.",
+   "lasry": "Local GL.htm (targets/gramont1529) grepped for Rucellai, Medici, Firenze: no hit; no Lasry paper on Rucellai's Milan ciphers.",
+   "edition": "Lorenzo de' Medici, Lettere VI (1481-82) and VII (1482-84, ed. Mallett), searched inside in Chrome by batch c33 today: Lettere VI 'LXXII' 0 pages; Lettere VII single-number probes 'LXXII n' for n = 170-256 hit only 204 and 205 (p. 61), so 196, 200, 202 and 206 are not cited in either volume. The Google Books feed today confirms the p. 61 note ('Rucellai a L. Spina a Pisa, con decifrazione contemporanea effettuata all'arrivo della lettera nella cancelleria di Lorenzo il 30 agosto, MAP, LXXII, 204 e 205; per una discussione recente di queste lettere \"segrete\", cfr. Comanducci, pp. XXIX-XXXI') and finds the other Rucellai secret messages Lettere VII quotes in clear (MAP XLVIII 117, 140). R. M. Comanducci, Il carteggio di Bernardo Rucellai: inventario (Olschki 1996, O1_gAAAAMAAJ, no preview) discusses these letters at pp. XXIX-XXXI and, per reviews (Medioevo latino 1997; Esperienze letterarie 1997), lists in Appendix III the cipher keys Rucellai used; the feed places the 3 July letter in it. It is an inventory: no review says it prints decipherments.",
+   "literature": "Web 'Bernardo Rucellai Milano luglio 1482 lettere cifrate Lionardo Spina Pisa Lorenzo': biographies, Comanducci's inventory and an Este cipher article, no decipherment; Vito's encrypted-MAP project covers 1486-91."
+  },
+  "searches": [
+   {
+    "query": "Google Books feed: \"LXXII , 196\" Rucellai / \"LXXII , 200\" Rucellai / \"LXXII , 202\" Rucellai / \"LXXII , 206\" Rucellai",
+    "result": "only unrelated index pages; no citation of the four documents in Lettere VII or elsewhere"
+   },
+   {
+    "query": "Google Books feed: \"Rucellai a L. Spina\" luglio / settembre; \"tramite Leonardo Spina\"",
+    "result": "Lettere VII only, citing LXXII 204-205 and XLVIII 117, 125, 140; no July or 4 September 1482 letter cited"
+   },
+   {
+    "query": "Google Books feed: \"discussione recente di queste lettere\"; \"cifra utilizzate dal Rucellai\"; Rucellai Spina \"3 luglio\" 1482",
+    "result": "Lettere VII p. 61 points to Comanducci pp. XXIX-XXXI; Medioevo latino review: Comanducci's Appendix III lists Rucellai's cipher keys; the 3 July query hits only Comanducci (no snippet)"
+   },
+   {
+    "query": "web: Bernardo Rucellai Milano luglio 1482 lettere cifrate Lionardo Spina Pisa Lorenzo",
+    "result": "Wikipedia/DBI biography, Comanducci inventory listing, an Este cipher article; nothing on these letters"
+   }
+  ],
+  "key_check": "No key tried. Same sign set as the glossed 201 and the pairs 204/205 and 207/208 in the same run, and as catalogue 2323 (LXXII 211); Comanducci's Appendix III lists Rucellai's keys in print (not seen). No reading of 196, 200, 202 or 206 is on record.",
+  "key_in_volume": "MAP LXXII 201 (interlinear glosses), 204/205 and 207/208 (cipher letters with their clear texts): same series, not tested on the four bare letters.",
+  "key_held": "Comanducci 1996, Appendix III (keys used by Rucellai, per the Medioevo latino review): in print, not seen, not tested.",
+  "duplicates": "known.py on the four document numbers, 'Lionardo Spina', 'Rucellai': no catalogue entry, lead or target with these documents; catalogue 2323 (LXXII 211) and LXXII 204-205 are other letters of the same channel.",
+  "verdict": "open"
+ },
+ "2351": {
+  "unvetted": "probable plaintext not checked: LXXII 192 is not a second private letter but a cipher copy of Acciaiuoli's public despatch of 23 Oct 1513. Its recto is headed in a contemporary hand 'Copia della l[ette]ra c[...]' and opens 'Mag(nifi)ci D(omi)ni etc.', the verso closes 'raccomandarmi alle Sig. V(ost)re ... Ex Amiens die xxiii Octobris MDXIII, Robertus Acciarolus', while 190 (to a single 'Mag.ce Vir', signed the same day) says in clear 'Ultra le lettere publ(iche) delle qual sara con questa el doppio'. Acciaiuoli's letter of 23 Oct 1513 to the Dieci di Balia survives at ASF, Dieci di Balia, Responsive 118, c. 139r (cited with the 20 Oct letter at c. 138r in Annuarium Historiae Conciliorum 1984, Google Books mADZAAAAMAAJ, feed snippet). If that original is in clear or carries its decipherment, 192's text is on record. Needs the Dieci Responsive 118 c. 139 (not online) or the 1984 article's text. Everything else checked: see notes.",
+  "notes": {
+   "seen": "ASF MAP LXXII 190-192 at the server maximum (https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100072/A0000461-466.ptif, 1244-1272 px). 192: recto about 21 lines and verso about 17 lines of homophonic sign cipher with superscript digits 3, 4, 5, closing in clear; no interlinear or marginal decipherment. 191 recto is the clear copy of 190 (header 'Copia di lettera di Ruberto Acciaiuoli da Amiens ... al M.co Giuliano', opening 'Oltre alle lettere publiche delle quali sara con questa el doppio ... dal R.mo di Sanseverino, el quale arrivo adi xx la sera'); its verso is show-through of the recto (mirrored header and underlines match), so 191 carries no text for 192.",
+   "prior_art_done": "known.py on 'Acciaiuoli', 'Acciaioli', 'Amiens', 'LXXII, doc. 192': only this lead and its sweep (other hits are the 1758 Lisbon Acciaiuoli and Siena no. 11). Desjardins, Negociations diplomatiques de la France avec la Toscane II (archive.org gri_33125010469852, OCR grepped) prints from 'Arch. Med. cart. avant. princip. filza 72' only Acciaiuoli's despatch of Amiens 26 Sept 1513; not 23 Oct. Google Books feed '\"Acciaiuoli\" \"23 ottobre 1513\"' and '\"Ruberto Acciaiuoli\" 1513 Amiens' give the Annuarium 1984 citations (Dieci Resp. 117-118) and Sanuto's copy of a 5 Sept chapter. Tomokiyo, GL.htm: no Acciaiuoli 1513 item.",
+   "key": "190/191 (cipher letter and its clear copy, same day, same system): key rebuildable, not tested on 192.",
+   "lead_corrections": "192 opens 'Mag(nifi)ci D(omi)ni', not 'Mag.ce Vir'; addressee plural (the Signori/Dieci), not Giuliano."
+  }
+ },
+ "2352": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch n14",
+  "seen": {
+   "kind": "scan",
+   "where": "ASF MAP LXXII 189, cc. 230r-231v at the server maximum (https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100072/A0000455.ptif to A0000458, 1272 x 1848), 6 Nov 2026",
+   "extent": "Four written sides (cc. 230r, 230v, 231r, 231v), not two: a long clear letter with several cipher runs in most paragraphs.",
+   "cipher": "Sign cipher (varpi, phi, beta, omega, division sign, 16, 20, 24, crossed z) between clear words, codes such as 'L.A', 'L7', 'L.co'; opens 'R.mo Monsignore patrone et signore mio: Della allegrezza universale di tutta questa citta ...' and closes 'Venetiis die viij Septembris 1512, D. V. R.mae servitor Petrus Bibiena'. No interlinear or marginal decipherment on the leaves."
+  },
+  "prior_art": {
+   "decode": "known.py on 'Bibbiena', 'Dovizi', 'LXXII, doc. 189': only this lead and its sweep files; no DECODE record.",
+   "tomokiyo": "cryptiana italian.htm and crypto.htm fetched 6 Nov 2026 and grepped for Bibbiena, Dovizi, 1512: no hit.",
+   "lasry": "Local GL.htm (targets/gramont1529) grepped for Bibbiena, Dovizi, Medici: no hit.",
+   "edition": "Printed: I. Del Lungo, 'Fra Girolamo Savonarola', Archivio storico italiano n.s. XVIII, parte I (1863), pp. 11-15 (also the 1861 offprint), cited by Pastor, Storia dei papi (Italian ed., Google Books vo2tgM8yN4oC: 'Arch. stor. ital., 2a serie XVIII 1 (1863), 11-15'; 'Del Lungo pubblico una lettera di Pietro Dovizi da Bibbiena al cardinale Medici dopo la restaurazione, Venezia 8 settembre 1512') and reprinted from it by P. Viti in Il santuario di Santa Maria del Sasso di Bibbiena (2000), whose note gives 'A.S.F., Mediceo avanti il principato, 72, 189 ... e stata pubblicata da I. Del Lungo ... pp. 11-15'. Feed snippets of the 1863 text show the cipher runs in clear: 'Non e da differirla questa superiorita' (leaf: 'questa' + cipher run), 'Venetiani non hanno gente popolare et plebea in questo' (leaf: code 'L7' and a cipher run), 'Diria adunque, che o vero se levassi via il Consiglio Grande con ripigliare la forma ... di vostro padre' (Viti; leaf: cipher runs after 'o vero' and 'ripigliare'). Moncallero's Epistolario prints Bernardo Dovizi's letters, not this one of Piero.",
+   "literature": "Villari, Machiavelli e i suoi tempi II (archive.org OCR) prints the letters of Giovanni and Giuliano de' Medici and of Bernardo Dovizi to Piero in Venice (Aug-Sept 1512), not this reply; Pastor and Viti as above."
+  },
+  "key_check": "Not needed: the printed text gives the cipher runs in clear. The 189 bis alphabet strip was not compared.",
+  "duplicates": "known.py on 'Bibbiena', 'Dovizi', 'LXXII, doc. 189': no catalogue entry, other lead or target.",
+  "verdict": "read",
+  "closed": "Printed with its cipher passages in clear by I. Del Lungo, Archivio storico italiano n.s. XVIII/1 (1863) pp. 11-15, reprinted by P. Viti (2000); three passages checked against the leaf through Google Books snippets (cipher runs and the code 'L7' given as 'superiorita', 'Venetiani ... in questo', 'se levassi via il Consiglio Grande'). Whether every run is resolved in print was not checked page by page; the 1863 volume is public domain on Google Books (ids rtEFAAAAQAAJ, hwwMAAAAYAAJ) but was not opened."
+ },
+ "2353": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch n14",
+  "lead_updates": {
+   "folio_note": "One leaf, recto: 22 lines of continuous letter-like signs with no clear word, address or date; verso blank (show-through only). Pencil '(A 9)' at the head, between the key sheets 125 '(A 8)' and 127 '(A 10)'. MAP inventory vol. 4 lists CXIX 115-127 together as 'Cifre della segreteria di Lorenzo il Magnifico col duca di Urbino, col duca di Calabria, ... con Ranuccio (Farnese)'."
+  },
+  "seen": {
+   "kind": "scan",
+   "where": "ASF MAP filza CXIX docs. 125-127 at the server maximum, 6 Nov 2026: 126 recto https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100119/A0000296.ptif (1120 x 827), verso A0000297; 125 A0000294; 127 A0000298",
+   "extent": "One oblong leaf, 22 lines of continuous signs, about 1,300 signs; verso blank.",
+   "cipher": "Ciphertext, not a key: running lines of signs (q, phi, t, o with dots, L, b, x, 7, 3, theta-like forms, with superscripts) and no table, no plaintext column, no clear word. The neighbours are key tables: 125 a homophonic alphabet with nulls, doubled letters and a name list ('Sua Santita', 'Papa', 'Duca di Milano', 'Conte Hieronymo'), 127 'Cum S. Ranuccio' with an alphabet of Greek letters and numbers and a code list. No decipherment on or beside 126."
+  },
+  "prior_art": {
+   "decode": "known.py on 'CXIX', 'filza 119', 'Mortellas', 'Centurioni': only this lead and the sweep READMEs; no DECODE record of a MAP CXIX item.",
+   "tomokiyo": "cryptiana italian.htm and crypto.htm fetched 6 Nov 2026 and grepped for Medici, Lorenzo, Florence: only Siena no. 11 (1478), the Gabbrielli 1425 cipher and Vito's 15th-century polyalphabetic paper; nothing on CXIX.",
+   "lasry": "Local GL.htm (targets/gramont1529) grepped for Medici, Lorenzo, Firenze: no Laurentian key sheet or text.",
+   "edition": "MAP inventory vol. 4 (1963) lists CXIX 115-127 only as 'Cifre della segreteria di Lorenzo il Magnifico ...' (Google Books feed); 126 is undated and unattributed, so no edition prints it. The Ilardi Renaissance Diplomatic Documents microfilm (1981 guide) holds the filza on film.",
+   "literature": "Web search on Lorenzo's cipher keys in MAP CXIX and Vito: Vito's 1486-91 encrypted-MAP project and his Capponi paper, Simonetta's Montefeltro letter; nothing on CXIX 126."
+  },
+  "searches": [
+   {
+    "query": "Google Books feed: \"Cifre della segreteria di Lorenzo il Magnifico\"",
+    "result": "the MAP inventory (1963) and the Ilardi microfilm guides only; no study of the sheets or of doc. 126"
+   },
+   {
+    "query": "Google Books feed: \"Mediceo avanti il Principato\" CXIX 126 cifra",
+    "result": "only MAP inventory volumes without snippets; no citation of doc. 126"
+   },
+   {
+    "query": "web: Lorenzo de' Medici cipher keys Mediceo avanti il Principato filza CXIX Vito cifrari segreteria decipherment",
+    "result": "Vito's Vienna project page (1486-91 encrypted MAP letters), his Capponi paper, ciphermysteries on Simonetta; nothing on CXIX 126"
+   },
+   {
+    "query": "known.py 'CXIX'; 'filza 119'",
+    "result": "only this lead and the ASF sweep READMEs; no DECODE record, catalogue entry or target"
+   }
+  ],
+  "key_check": "Not tested. 125 (homophonic Latin-letter alphabet) and 127 (Greek letters and numbers) are visibly different sign sets from 126; the other ten sheets (115-124) were not compared.",
+  "key_in_volume": "MAP CXIX 115-125, 127: twelve Laurentian key sheets filed with it; 125 and 127 do not match on sight, 115-124 not compared.",
+  "duplicates": "known.py on 'CXIX', 'filza 119': only this lead and its sweep; no catalogue entry or target.",
+  "verdict": "open"
+ }
+}
