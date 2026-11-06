@@ -78,7 +78,7 @@ TOWNS = {'Bogotá': [4.71, -74.07], 'Canberra': [-35.28, 149.13], 'Santiago de C
          'Middlebury': [44.01, -73.17], 'Ithaca': [42.44, -76.50], 'Des Moines': [41.59, -93.62], 'Durham': [35.99, -78.90],
          'Columbia': [34.00, -81.03], 'Dearborn': [42.32, -83.18], 'Carlisle': [40.20, -77.19], 'Stanford': [37.43, -122.17],
          'Bethlehem': [40.61, -75.37], 'Lexington': [37.78, -79.44], 'Sigmaringen': [48.09, 9.22], 'Wertheim': [49.76, 9.52],
-         'Montevideo': [-34.90, -56.19], 'Mount Vernon': [38.71, -77.09], 'Châlons-en-Champagne': [48.96, 4.36]}
+         'Montevideo': [-34.90, -56.19], 'Brno': [49.19, 16.61], 'Kostelec nad Orlicí': [50.12, 16.21], 'Mount Vernon': [38.71, -77.09], 'Châlons-en-Champagne': [48.96, 4.36]}
 
 
 def gazetteer():
