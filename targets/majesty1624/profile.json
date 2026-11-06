@@ -1,0 +1,195 @@
+{
+ "schema_version": 1,
+ "target": "majesty1624",
+ "title": "Unsigned German report to a Majesty on Gabriel Bethlen, undated, filed with letters of 1624 (BSB Clm 10403 n. 65): letter key rebuilt from the contemporary glosses, unglossed runs read by sense, not validated",
+ "documents": [
+  {
+   "id": "clm10403-n65",
+   "read": "read in part",
+   "shelfmark": "Munich, Bayerische Staatsbibliothek, Clm 10403 (Collectio Camerariana 53), n. 65, fol. 192-193 (MDZ bsb00116451, scans 411-413; cipher on scan 412)",
+   "date": "undated (filed among pieces of 1624)",
+   "year": 1624,
+   "country": "Germany",
+   "route": "unnamed writer -> a Majesty ('E. M.'), not the Emperor (the text names the Kayser in the third person); Frederick V likely",
+   "places": {
+    "from": "not stated",
+    "to": "not stated"
+   },
+   "language": "German",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "A contemporary decipherment is written over most code groups and letter runs; Halm 1874 p. 123 lists the piece as 'zum Theil in Chiffern'.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 77,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "MDZ bsb00116451 scan 412 (microfilm, Public Domain Mark 1.0)",
+    "image_quality": "fair",
+    "notes": "The 19 runs of two-digit numbers (letters) with their glosses only (77 numbers, 34 distinct). The 4-digit code groups, the doubled-letter signs and the clear German text are not transcribed."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "code"
+  ],
+  "summary": "Mixed: a homophonic German letter cipher of two-digit numbers (a 6/9/15, c 8, d 12/36/60, e 13/19, f 14/20, g 24, h 25, i 26, k 30, l 31, n 42/45/51, o 43, r 49, s 50/56/59, t 63/69, u 61, v 70, w 62, z 77), a word code of 4-digit numbers (1410 Herr, 2638 schreiben, 1628 Jenner, 1007 feind, 1853 macht), doubled letters for short words (ZZ mir, Yy zu, Pp er, Gg dass, LL der, aa do) and 11 = zu, 71 = dz. Not the casimir1629 family.",
+  "symbol_kind": "digits",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "separator symbol",
+  "distinct_symbols": 50,
+  "nulls": {
+   "present": false
+  }
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The contemporary interlinear decipherment on the leaf covers most groups; 6 letter runs are unglossed. Halm 1874 p. 123 (entry only); Szilágyi 1879 has nothing for May 1624; no edition found. Not on DECODE; no target, PR or issue for Clm 10403 n. 65 in this repository (GitHub API, origin/main 2f8603497, 6 Nov 2026).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Daniel Bourdeau listed the piece as lead 2181 (Halm reference, MDZ links). Brice Dudout set the rules (exact status, Daniel's count, no claim beyond the sense). AI agents transcribed, rebuilt the key from the glosses, read the unglossed runs and wrote up. No human palaeographer checked the transcription.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-11-05",
+  "last_date": "2026-11-06"
+ },
+ "solution": [
+  {
+   "date": "2026-11-05",
+   "kind": "transcription",
+   "what": "Scan 412: 19 runs of two-digit numbers with their interlinear glosses, transcribed by eye from the microfilm.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "sibling key",
+   "what": "The casimir1629 letter key, with every shift from -6 to +6, tried on the glossed runs: at best 2 letters of 20 agree.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "crib",
+   "technique": [
+    "crib testing"
+   ],
+   "what": "Letter values set from the glosses of the time, run by run (key.tsv), then applied to the unglossed runs.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "reading",
+   "what": "Unglossed runs: 43.31.24.19.51 = -olgen (verfol|gen), 31.26.8.25.13 = -liche ([löb]liche Herr), 30.61 = kü- (kü|nfdigen) certain; 50 = -s (auffs) probable; 13.32 and 27.13.65 unresolved. Daniel's count 15 of 18 letters (83%).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "literature search",
+   "what": "Halm 1874, Szilágyi 1879 checked; Briefe und Akten NF, Acta Bohemica, Gindely, Hurmuzaki, Tadra (AÖG) not found as full text. No printed text of the piece found.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The letter values come from the contemporary glosses on the same leaf; the content of the glossed runs is therefore existing. New: the key as a table, 4 of the 6 unglossed runs read, and the addressee question.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction"
+  ],
+  "verification": [
+   "contemporary decipherment",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-11-06",
+   "verdict": "not applicable",
+   "notes": "No held-out part exists: the cipher is one page, mostly glossed at the time, and no other piece shares the code; the key is read by sense only and is not validated."
+  },
+  "provenance": "mixed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "the interlinear decipherment written on the leaf at the time; the key was rebuilt from it",
+    "date": "1624"
+   },
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "note": "letter runs and glosses of scan 412; letter key rebuilt (key.tsv); unglossed runs read by sense (liche, kü-, -olgen, -s); addressee: not the Emperor",
+    "date": "2026-11-06"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "lead 2181 in research/leads.json, with Halm's entry and the MDZ links",
+    "date": "2026-11"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "2 unglossed runs unresolved (13.32, 27.13.65); 27, 32, 65 occur once",
+    "blocker": "too-short"
+   },
+   {
+    "item": "no held-out part and no measurement: the cipher is a single glossed page",
+    "blocker": "too-short"
+   }
+  ],
+  "texts": [
+   {
+    "doc": [
+     "clm10403-n65"
+    ],
+    "label": "n. 65 (scan 412): letter runs with their contemporary glosses",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "language": "de",
+    "state": "not prose",
+    "note": "Not prose: a list of runs, not the letter. Each run of two-digit numbers with the gloss of the time and our decode with key.tsv. The code groups and the clear text are not transcribed.",
+    "summary": "An unnamed writer assures 'E. M.' that a 'worthy lord' has allowed him to write and that, if something comes about, this lord means next January, with help, to pursue the enemy to the utmost; the report deals with Gabriel Bethlen, the peace with the Emperor, money for 24,000 men and the Margrave's army.",
+    "reading_review": {
+     "grade": "B",
+     "note": "Runs checked against the contemporary glosses letter by letter; unglossed runs read by sense; no human review.",
+     "by": "Claude Opus 5.5 agent for Brice Dudout",
+     "date": "2026-11-06"
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "Read by sense, not validated: no holdout, no measurement, no printed text. Unglossed runs, Daniel's count: 3 certain, 1 probable, 0 restored, 2 unresolved (15 of 18 letters, 83%), below 95%. Halm (1874 p. 123) has 'an den Kaiser', but the text speaks of the Kayser in the third person: the addressee is probably another Majesty.",
+  "fraction_read": 0.833,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Daniel's count on the unglossed runs of scan 412 (the glossed runs were deciphered at the time and are not counted): 15 of 18 letters read (3 certain runs, 1 probable, 2 unresolved), 83%."
+ }
+}

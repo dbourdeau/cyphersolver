@@ -1,0 +1,299 @@
+{
+ "schema_version": 1,
+ "target": "claudiamedici1646",
+ "title": "Claudia de' Medici to Ottavio Piccolomini, Innsbruck 1646 (catalogue 2354): key rebuilt from the contemporary glosses of sibling letters and tested on held-out cipher; inv. 24793 and 24800 read in part",
+ "documents": [
+  {
+   "id": "24793",
+   "read": "read in part",
+   "shelfmark": "SOA Zámrsk, Rodinný archiv Piccolominiů (Náchod), inv. č. 24793 (microfilm frame labelled \"31/2\")",
+   "date": "1646 (Innsbruck; day and month not on the frame)",
+   "year": 1646,
+   "country": "Austria",
+   "route": "Claudia de' Medici, Innsbruck -> Ottavio Piccolomini, Spanish Netherlands",
+   "places": {
+    "from": "Innsbruck",
+    "to": "Spanish Netherlands"
+   },
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Bare cipher: no gloss over or beside it on the photograph. Sibling letters of the same writer and year on the same microfilm (inv. 24784, 24786, 24796 and others) carry a contemporary interlinear decipherment; they gave the key and the held-out test."
+   },
+   "length": {
+    "tokens": 439,
+    "distinct": 25,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_24793.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Vlnas 2017, appendix zip P_lohy_A_a_B.zip (theses.cz/id/p3p2kb), frame 24793.jpg: a photograph of the microfilm frame, rotated and soft",
+    "image_quality": "poor",
+    "notes": "Two passes from separate crops, reconciled on the image; not blind to the sense. Independent blind check of 9 lines: after settling, 1 shape-only slip (same value) and 1 unresolved sign (the z of 'forze', now marked doubtful). Length: signs and code groups in the cipher lines, gaps, points and plain script not counted."
+   }
+  },
+  {
+   "id": "24800",
+   "read": "read in part",
+   "shelfmark": "SOA Zámrsk, Rodinný archiv Piccolominiů (Náchod), inv. č. 24800 (microfilm frame labelled \"31/2\")",
+   "date": "25 September 1646 (\"Inspruch a 25. di 7bre 1646\")",
+   "year": 1646,
+   "country": "Austria",
+   "route": "Claudia de' Medici, Innsbruck -> Ottavio Piccolomini, Spanish Netherlands",
+   "places": {
+    "from": "Innsbruck",
+    "to": "Spanish Netherlands"
+   },
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Bare cipher: no gloss over or beside it on the photograph."
+   },
+   "length": {
+    "tokens": 173,
+    "distinct": 21,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_24800.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Vlnas 2017, appendix zip P_lohy_A_a_B.zip (theses.cz/id/p3p2kb), frame 24800.jpg: a photograph of the microfilm frame, rotated and soft",
+    "image_quality": "poor",
+    "notes": "Two passes from separate crops, reconciled on the image; not blind to the sense. Independent blind check of 4 lines: after settling, no disagreement with the solver. Length: signs and code groups in the cipher lines, gaps, points and plain script not counted."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "nomenclator"
+  ],
+  "summary": "Simple substitution of letters by signs (digits, letters, a cross, a triangle and a few special shapes), with two signs for i (g/9 and y) and five code groups followed by a point: 18 Duca di Lorena, 34 S.A., 37 Re, 57 S.M.tà Catt., iio V.E. Word gaps mostly real.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": 26,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 5,
+   "kinds": [
+    "names",
+    "titles"
+   ],
+   "unread_groups": 0
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "kept",
+  "notes": "distinct_symbols counts the 26 tokens of key.tsv (21 letter signs and 5 code groups). Letters not seen: k, x, j. Vlnas 2017 (ch. 4.3, table 5) printed the same system from inv. 24790."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "The contemporary interlinear decipherments of the sibling letters inv. 24784, 24786, 24796 (and others not used) on the same microfilm, and Vlnas 2017 (BA thesis, Univerzita Hradec Králové, theses.cz/id/p3p2kb), ch. 4.3, table 5 and his decipherment of inv. 24790. Vlnas lists 24793 and 24800 in his appendix B as not deciphered and gives no text for them. A web search and the catalogue checks found no edition or decipherment of these two letters (6 Nov 2026).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "published key"
+  ],
+  "attack": "known plaintext",
+  "human_role": "WAINUT set the task (catalogue 2354) and the rules; AI language-model agents transcribed, built and froze the key, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "photographs in the appendix of Vlnas 2017",
+   "scripts in this folder (mechanical decryption, mark check and word count, glossed-pair and held-out check)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-06",
+  "last_date": "2026-11-06"
+ },
+ "solution": [
+  {
+   "date": "2026-11-06",
+   "kind": "access",
+   "what": "Appendix zip of Vlnas 2017 (theses.cz/id/p3p2kb): photographs of the microfilm frames of inv. 24784-24806, and the thesis text.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "literature search",
+   "what": "Vlnas 2017 (appendix B lists 24793 and 24800 as not deciphered), one web search, the catalogue's earlier checks: no edition or decipherment of 24793 or 24800 found.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "key from source",
+   "what": "Key built from the glossed words of 24784 and the glossed code groups of 24796, compared with Vlnas's table 5 and his 24790 decipherment (h taken from Vlnas; later found glossed on 24784 too), and frozen in key_frozen.tsv before the held-out frame was opened.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Frozen key applied to three partial cipher lines of the held-out glossed frame 24786: 13 of 13 words agree with the gloss in sense, 10 letter for letter (communica, doppo and col are spelling variants); no sign failed. Small, the gloss was visible on the crops, and the freeze rests on file times only.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "transcription",
+   "what": "24793 and 24800 transcribed twice from separate crops and reconciled on the image; not blind to the sense.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "reading",
+   "what": "Both letters decrypted with the frozen key and read with every departure marked; scripts/check_marks.py fails on any unmarked departure.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "verification",
+   "what": "Independent check (VERIFY.md): blind transcription of 13 lines of the bare frames and 3 held-out passages (443 signs) before opening the solver's files; after settling, 3 places differ (0.7%): one shape-only slip, one dropped sign in the held-out copy, one unresolved z shape. Key spot-checked on 24784 and against Vlnas's table; tamper tests of the mark check. Six fixes asked for.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "reading",
+   "what": "Fixes made: held-out 'doppo' corrected (10 of 13 letter for letter, not 11); the 'forze' sign marked doubtful; pairs.tsv and scripts/check_pairs.py added (42 glossed words, all 21 letter signs and 5 code groups, all decrypt to the gloss); margins stated. 24793 falls to 79 of 83 verbatim (95.2%), 75 of 79 without code groups (94.9%), and is marked read in part, not read.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "recovered",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Key built from the contemporary interlinear decipherment of the sibling letters 24784 and 24796 (same writer, same year, same microfilm) and compared with Vlnas 2017's printed table; frozen and tested on the held-out glossed sibling 24786; then applied unchanged to the bare letters 24793 and 24800.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.92,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "scripts/check_marks.py: 107 of 116 cipher words verbatim from the signs in 24793 (79 of 83) and 24800 (28 of 33); the code groups are counted as words.",
+  "verification": [
+   "independent verification",
+   "contemporary decipherment",
+   "matched control",
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the interlinear decipherments of Claudia's letters 24784 and 24796 gave the key (pairs.tsv); that of 24786 the held-out test",
+    "date": "1646",
+    "source": "Vlnas 2017 appendix photographs, frames 24784.jpg, 24786.jpg, 24796.jpg"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "key rebuilt from the glossed siblings, frozen and tested on held-out cipher; 24793 and 24800 read in part",
+    "date": "2026-11-06"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "24793 and 24800 in full, the glossed words of 24784 and 24796, and three held-out lines of 24786, from the Vlnas 2017 photographs",
+    "date": "2026-11-06"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "one independent AI reader, blind on 13 lines and 3 held-out passages; no human palaeographer",
+    "date": "2026-11-06"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "24793",
+    "label": "inv. 24793, Innsbruck 1646",
+    "transcription": "transcription_24793.txt",
+    "decryption": "decryption_24793.txt",
+    "reading": "reading_24793.md",
+    "translation": "translation_24793.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.952,
+    "summary": "Success in Flanders depends on acting in concert and quickly while the Catholic and enemy forces are even; the opportunity should be used also on the side of the Duke of Lorraine, unless he has hidden aims ruled by his passions or inconstancy; the King did well to keep Piccolomini in Flanders this year too, since the French will press their enterprises; may God give him complete victory. Written in the 1646 campaign, when Piccolomini commanded for Philip IV in the Spanish Netherlands.",
+    "note": "Words 83: 79 verbatim from the signs (95.2%), 1 with a doubtful sign shape ('forze'), 3 with a marked one-sign repair, no guesses, no holes. Without the 4 code groups 75 of 79 (94.9%), under the 95% bar, so marked read in part.",
+    "reading_review": {
+     "grade": "B",
+     "by": "AI language-model agent (for WAINUT; a model reading, not a person), recorded at packaging from the independent check in VERIFY.md",
+     "date": "2026-11-06",
+     "note": "The independent check confirmed the key, the sign copy and every marked repair it could see on the image, but gave no letter grade; grade B (coherent, normalised in the reading) was recorded when the folder was packaged. Coherent throughout; weak places are the doubtful z of 'forze' (L03) and the three one-sign repairs (L02 con, L04 de', L08 dall')."
+    }
+   },
+   {
+    "doc": "24800",
+    "label": "inv. 24800, Innsbruck, 25 September 1646",
+    "transcription": "transcription_24800.txt",
+    "decryption": "decryption_24800.txt",
+    "reading": "reading_24800.md",
+    "translation": "translation_24800.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.848,
+    "summary": "The news from Flanders is not very good for the interests of the King; affairs there go badly, in great part through the disorders of the Duke of Lorraine's [?undisciplined troops], which, as Piccolomini wrote, could bring still greater ruin. Written a few weeks before Dunkirk fell to Enghien in October 1646.",
+    "note": "Words 33: 28 verbatim from the signs (84.8%), 5 with marked repairs, of which 'indisciplinate genti' (2 words, two changed signs) is a conjecture flagged [?...]. Without the 2 code groups 26 of 31 (83.9%).",
+    "reading_review": {
+     "grade": "B",
+     "by": "AI language-model agent (for WAINUT; a model reading, not a person), recorded at packaging from the independent check in VERIFY.md",
+     "date": "2026-11-06",
+     "note": "The independent check confirmed the status and every repair it could see on the image, but gave no letter grade; grade B was recorded when the folder was packaged. Coherent; the weak place is L05-L06 'indisciplinate genti', a conjecture."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "gaps": [
+   {
+    "item": "24793 L03 'forze': the fourth sign is not the key's z shape",
+    "blocker": "illegible",
+    "detail": "Only z gives a word; counted as doubtful. A clean scan from SOA Zámrsk would settle it, and with it the 'read' status of 24793."
+   },
+   {
+    "item": "24800 L05-L06 'indisciplinate genti'",
+    "blocker": "illegible",
+    "detail": "The signs give 'indisciplinitelenti'; two changed signs give the reading. Needs a clean image of L05."
+   },
+   {
+    "item": "Five single-sign repairs (5/s and g/D shapes, a cross for 4, a 2/Q loop)",
+    "blocker": "needs-physical-access",
+    "detail": "The photographs are soft; clean scans of inv. 24793 and 24800 would have to be ordered from SOA Zámrsk."
+   },
+   {
+    "item": "Held-out test",
+    "blocker": "too-short",
+    "detail": "Three partial lines, 13 words, with the gloss visible on the crops; the freeze rests on file times. The unused glossed frames 24787, 24788, 24789, 24794, 24799 and 24806 would give a larger test."
+   },
+   {
+    "item": "Date of 24793",
+    "blocker": "not-attempted",
+    "detail": "Day and month are not on the frame; the letter may continue on a page not in the zip."
+   }
+  ]
+ }
+}

@@ -1,0 +1,370 @@
+{
+ "schema_version": 1,
+ "target": "griffoli1555",
+ "title": "Marcello Griffoli to Cosimo I, Siena, January-February 1555 [1556] (catalogue 2346): key rebuilt from the contemporary decipherment of the 2 Feb letter and tested on held-out cipher; 443 c. 315 and 451 c. 25r read in part, c. 25v not transcribed",
+ "documents": [
+  {
+   "id": "c315",
+   "read": "read in part",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo del Principato 443, c. 315r-v",
+   "date": "1 February 1555 as written (Florentine year; very likely 1556 modern)",
+   "year": 1555,
+   "country": "Italy",
+   "route": "Marcello Griffoli, Siena -> Cosimo I",
+   "places": {
+    "from": "Siena",
+    "to": "Florence"
+   },
+   "language": "Italian",
+   "pages": 2,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Bare cipher: no decipherment on or beside the leaf or on the neighbouring carte (catalogue vetting, 6 Nov 2026). The key of Griffoli's cipher is named by the ASF inventory (Cifrari II serie F. III); it is not online and was not used."
+   },
+   "length": {
+    "tokens": 658,
+    "distinct": 41,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_c315.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "ASF PAD IIIF images at 2000 px (the largest size served)",
+    "image_quality": "fair",
+    "notes": "Two passes from strips of different crops, without the key; c. 315v has heavy bleed-through. Independent blind check of three lines of c. 315r: after settling on crops the solver was wrong at most at one sign (a line-end flourish read as 4), since corrected. Length: two-digit units after splitting each line on the null 0 (scripts/decrypt.py), 14 odd digit groups not counted."
+   }
+  },
+  {
+   "id": "c25",
+   "read": "read in part",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo del Principato 451, c. 25r (cipher continues on c. 25v; clear close on c. 26r)",
+   "date": "3 January 1555 as written (Florentine year; very likely 1556 modern)",
+   "year": 1555,
+   "country": "Italy",
+   "route": "Marcello Griffoli, Siena -> Cosimo I",
+   "places": {
+    "from": "Siena",
+    "to": "Florence"
+   },
+   "language": "Italian",
+   "pages": 2,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Bare cipher: no decipherment filed with the letter; cc. 24 and 27 are other writers' letters (catalogue vetting, 6 Nov 2026)."
+   },
+   "length": {
+    "tokens": 453,
+    "distinct": 35,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_c25.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "ASF PAD IIIF images at 2000 px (the largest size served)",
+    "image_quality": "fair",
+    "notes": "c. 25r only (23 lines); c. 25v, about 19 more lines, is not transcribed. Two passes (r22-r23 one pass only); several blotted or overwritten digits kept as the top ink. Independent blind check of three lines: one overwritten sign in r02 was then settled on a 9x crop as one sign (0 over the tail of a 2), not two digits. Length counts c. 25r only: two-digit units, 8 odd digit groups not counted."
+   }
+  },
+  {
+   "id": "k316",
+   "read": "not read",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo del Principato 443, cc. 316v and 318r (cipher), c. 317r (contemporary decipherment)",
+   "date": "2 February 1555 as written (Florentine year; very likely 1556 modern)",
+   "year": 1555,
+   "country": "Italy",
+   "route": "Marcello Griffoli, Siena -> Cosimo I",
+   "places": {
+    "from": "Siena",
+    "to": "Florence"
+   },
+   "language": "Italian",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "The contemporary decipherment on c. 317r (ASF inventory vol. VII p. 362, note 41) covers the cipher of cc. 316v and 318r. Used as the key source (316v) and the held-out test (318r). No reading of this letter is claimed here: it is a transcription job, and only the held-out lines of c. 317r are transcribed (gloss_c317_heldout.txt)."
+   },
+   "length": {
+    "tokens": 479,
+    "distinct": 39,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_k316.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "ASF PAD IIIF images at 2000 px (the largest size served)",
+    "image_quality": "good",
+    "notes": "Two passes without the key; line ends on c. 316v run into the gutter. The independent blind transcription of two held-out lines (c01, c03) agrees with the solver digit for digit. Length: two-digit units, 5 odd digit groups not counted."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Two-digit units, each digit 1-9, written in one run per line; the digit 0 is a null written between most units. Letters have homophones (a 22/23/28, e 43/44/49, i 45/46, o 72/73, m 33/93). A few units are words: 11 et, 12 che, 13 per, 14 come, 15 in, 18 quanto, 24 non, 25 si, 85 V. Ecc., 91 and 92 Montalcino. No doubling sign; double letters are mostly written single.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "2",
+   "separation": "contiguous"
+  },
+  "distinct_symbols": 48,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 11,
+   "kinds": [
+    "common words",
+    "places",
+    "titles"
+   ],
+   "unread_groups": 4
+  },
+  "nulls": {
+   "present": true,
+   "count": 1
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none",
+  "notes": "distinct_symbols is the 48 distinct two-digit units in the three transcriptions; 38 are in key.tsv (35 frozen before the test, 3 from later context). 29, 71, 86, 97 are unknown (probably words or names); 36, 78, 79, 83, 84, 88 are filled from context in single places and kept out of the key. Odd digit groups (27 in all) are misreads, stray digits, blots or a joined '2_2' form whose value is not settled. Letter values run in partly alphabetical order inside each decade (52 c, 53 f, 54 g, 55 h; 72-73 o, 74 r, 75 s, 76 t, 77 z)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The contemporary decipherment of the 2 Feb letter on 443 c. 317r, and the key of Griffoli's cipher in ASF Cifrari II serie F. III (named by inventory vol. VII p. 362, note 40; not online, not used). No decipherment of 443 c. 315 or 451 c. 25 found: catalogue vetting (DECODE dump, Cryptiana, Lasry's list, ASF inventories) and web searches, 6 Nov 2026. Cantagalli, La guerra di Siena (1962), not seen.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "human_role": "WAINUT set the task (catalogue 2346) and the rules; AI language-model agents transcribed, built and froze the key, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "ASF PAD IIIF images",
+   "scripts in this folder (mechanical decryption, mark check and word count, held-out test with shuffled keys, image strips)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-06",
+  "last_date": "2026-11-06"
+ },
+ "solution": [
+  {
+   "date": "2026-11-06",
+   "kind": "access",
+   "what": "443 cc. 315-318 and 451 cc. 25-26 fetched from the ASF PAD IIIF service at 2000 px.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "literature search",
+   "what": "Catalogue vetting record, ASF inventories vol. VII and VIII, one web search: no edition or decipherment of 443 c. 315 or 451 c. 25 found.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "transcription",
+   "what": "Each document transcribed twice from strips of different crops, without the key; differences settled on the image (k316 a04, 451 r09). The digit 0 found to be a null: splitting on 0 leaves stretches of even length almost everywhere.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "key from source",
+   "what": "Units of 316v blocks a and b aligned with the decipherment on c. 317r; 35 values frozen in key_frozen.tsv before any test.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Frozen key applied to the held-out block c (318r, 77 units): 22 of c. 317's 24 words agree, spelling apart (graded by hand); 1 differs (cipher che, c. 317 a sign first read et); 1 odd group unread. No held-out unit missing from the key. The held-out decipherment is on the same page as the training pairs and was visible to the solver before the freeze.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "reading",
+   "what": "443 c. 315 and 451 c. 25r decrypted with key.tsv and read with every departure marked; scripts/check_marks.py fails on any unmarked departure.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "verification",
+   "what": "Independent check (VERIFY.md): blind transcription of 8 lines (492 digits) before opening the solver's files; after settling, the solver wrong at 1 unit and 1 unresolved, 0 in the held-out lines; held-out test reproduced; statuses confirmed. Asked for context fills to be counted apart, two places re-checked and two NOTES errors corrected.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "transcription",
+   "what": "Two places changed on 5-9x crops: 443 c. 315r r01 line end (a flourish, not a 4) and 451 c. 25r r02 (one overwritten sign, kept as 0, not two digits).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "reading",
+   "what": "Word count rebuilt: context fills of holes counted with the guesses, words with a hole apart; two counting faults fixed (a multi-word fill, a not-parsed stretch over several lines). Verbatim shares fell to 85.0% (443) and 71.3% (451 c. 25r).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Held-out test at letter level by script (scripts/heldout.py): 89 of 98 gloss letters matched in order (90.8%); 1,000 shuffled keys mean 49.9%, max 69.4%. Added after the independent check.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Key built from the cipher of the 2 Feb letter (443 c. 316v) against its contemporary decipherment (c. 317r), frozen, tested on the held-out cipher of c. 318r, then applied to the bare letters of 1 Feb (443 c. 315) and 3 Jan (451 c. 25r).",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.6,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "scripts/check_marks.py: 251 of 316 words verbatim from the signs in 443 c. 315 (159 of 187) and 451 c. 25r (92 of 129); 451 c. 25v (about 19 lines, roughly 100 more words) is not transcribed and counted as not read.",
+  "verification": [
+   "independent verification",
+   "contemporary decipherment",
+   "matched control",
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the decipherment on 443 c. 317r of the cipher of the 2 Feb letter: blocks a and b gave the key, block c the held-out test",
+    "date": "1555",
+    "source": "ASF PAD images of 443 c. 317r"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "key rebuilt from the 2 Feb letter and its decipherment, frozen and tested on held-out cipher; 443 c. 315 and 451 c. 25r read in part",
+    "date": "2026-11-06"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "443 cc. 315r-v, 316v, 318r and 451 c. 25r from the ASF images",
+    "date": "2026-11-06"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "one independent AI reader, blind on 8 lines; no human palaeographer",
+    "date": "2026-11-06"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "c315",
+    "label": "1 Feb 1555 [1556], 443 c. 315r-v",
+    "transcription": "transcription_c315.txt",
+    "decryption": "decryption_c315.txt",
+    "reading": "reading_c315.md",
+    "translation": "translation_c315.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.85,
+    "summary": "Griffoli recalls his request that ladders and fire-trumpets be sent to Poggio Imperiale. No news from Montalcino; his note to 'il medico' went well. Milandrone, promised pardon and a pension by the French, has accepted; he is to draw out the French confidants in Siena by feigning a plot there and to bring their witnesses to look at an unwatched stretch of wall. Someone fled to Montalcino for fear of the plot; the ten men who are 'there for us in Montalcino' are gathered. Siena had surrendered to Cosimo in 1555; Montalcino held the Sienese republic in exile.",
+    "note": "Words 187: 159 verbatim from the signs (85.0%), 2 with a marked repair, 11 context fills of holes (counted as guesses), 1 with a hole inside, 14 decoded but not parsed; 10 holes.",
+    "reading_review": {
+     "grade": "B",
+     "by": "AI language-model agent (for WAINUT; a model reading, not a person), independent of the solver",
+     "date": "2026-11-06",
+     "note": "Given before the fixes of 6 Nov 2026 (VERIFY.md section 5). Coherent over most lines: Poggio Imperiale, the ladders and fire-trumpets, Milandrone, the feigned trattato, the ten men in Montalcino. Unparsed stretches honestly bracketed. The reviewer warned that about half the marked repairs were context fills; they are now counted as guesses."
+    }
+   },
+   {
+    "doc": "c25",
+    "label": "3 Jan 1555 [1556], 451 c. 25r",
+    "transcription": "transcription_c25.txt",
+    "decryption": "decryption_c25.txt",
+    "reading": "reading_c25.md",
+    "translation": "translation_c25.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.713,
+    "summary": "Griffoli has waited for the return of 'il medico di Montalcino': three leading citizens of Montalcino, with the following of the whole town, are won over and wait only for a messer Lelio and an Alessandro, their kinsmen, to take charge of the arms; they were heads of the faction and have declared for them. The order will come with the capitulations. The plan is to bring Montalcino over to Cosimo.",
+    "note": "c. 25r only. Words 129: 92 verbatim (71.3%), 1 marked repair, 5 context fills, 1 with a hole, 30 decoded but not parsed (r04-r05, r17-r21); 7 holes. c. 25v (about 19 lines) not transcribed.",
+    "reading_review": {
+     "grade": "B",
+     "by": "AI language-model agent (for WAINUT; a model reading, not a person), independent of the solver",
+     "date": "2026-11-06",
+     "note": "Given before the fixes of 6 Nov 2026 (VERIFY.md section 5). Coherent from r06 to r16 and r22 to r23; r17-r21 bracketed as not read. r02 rested on two context fills; after the overwritten sign was settled as 0 it rests on one."
+    }
+   },
+   {
+    "doc": "k316",
+    "label": "2 Feb 1555 [1556], 443 cc. 316v and 318r (key source and held-out test)",
+    "transcription": "transcription_k316.txt",
+    "decryption": "decryption_k316.txt",
+    "contemporary": "gloss_c317_heldout.txt",
+    "language": "it",
+    "state": "decoded, not read",
+    "summary": "Griffoli reports that the colonel asks that ladders, equal at top and bottom, and ten fire-trumpets be sent to Poggio Imperiale, and that someone be persuaded to come from Montalcino with a resolution; the contemporary decipherment on c. 317r gives the text.",
+    "note": "A transcription job: the decryption follows the contemporary decipherment on c. 317r line by line. Only the held-out lines of c. 317r are transcribed here; no reading of our own is claimed."
+   }
+  ],
+  "key_file": "key.tsv",
+  "gaps": [
+   {
+    "item": "451 c. 25v, about 19 lines of figures",
+    "blocker": "not-attempted",
+    "detail": "Not transcribed. Same key; should read on the same terms."
+   },
+   {
+    "item": "Decoded stretches that do not parse (443 c. 315 r05-r06, r09, r20, v01; 451 c. 25r r04-r05, r17-r21)",
+    "blocker": "not-attempted",
+    "detail": "Decoded letter by letter but no sense established; marked «...» in the readings."
+   },
+   {
+    "item": "Units 29, 71, 86, 97 and the single-place values 36, 78, 79, 83, 84, 88",
+    "blocker": "open-codes",
+    "detail": "Probably words or names; the ASF key (Cifrari II serie F. III) would settle them."
+   },
+   {
+    "item": "Odd digit groups, many with the joined '2_2' form; blotted digits on 451 c. 25r",
+    "blocker": "illegible",
+    "detail": "27 odd groups in all; the value of the joined form is not settled. The overwritten sign in 451 r02 is read as 0, not certainly."
+   },
+   {
+    "item": "Held-out test",
+    "blocker": "too-short",
+    "detail": "24 words, 77 units, on the same page as the training pairs; graded by hand at word level, by script at letter level."
+   },
+   {
+    "item": "Prior art and names",
+    "blocker": "not-attempted",
+    "detail": "Cantagalli, La guerra di Siena (1962), not seen. Milandrone, 'il medico' of Montalcino, Lelio and Alessandro not identified."
+   }
+  ]
+ }
+}
