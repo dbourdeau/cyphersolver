@@ -1,0 +1,125 @@
+{
+ "schema_version": 1,
+ "target": "mazzinghi1478",
+ "title": "Rome, January 1478 st. fior. (1479): Giovanni Mazzinghi and an unsigned writer to the Medici, word-by-word cipher (ASF MAP LXXXIX 142, CXXXVII 252; key source MAP LXXII 170)",
+ "documents": [
+  {
+   "id": "2307",
+   "read": "not read",
+   "shelfmark": "ASF, Mediceo avanti il Principato LXXXIX 142",
+   "date": "In Roma, 16 January 1478 st. fior.",
+   "year": 1479,
+   "country": "Florence",
+   "route": "Giovanni Mazzinghi (Rome) -> the Medici (Florence)",
+   "language": "Italian",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Bare: no decipherment on or beside the leaf (vetting batch n08).",
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "in progress",
+    "image_quality": "fair",
+    "notes": "Full-size ASF image, 1272 px."
+   }
+  },
+  {
+   "id": "2320",
+   "read": "not read",
+   "shelfmark": "ASF, Mediceo avanti il Principato CXXXVII 252",
+   "date": "13 January 1478 st. fior.",
+   "year": 1479,
+   "country": "Florence",
+   "route": "unsigned (same hand and signs as 2307) -> the Medici",
+   "language": "Italian",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Bare (vetting batch n10).",
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "in progress",
+    "image_quality": "fair",
+    "notes": "Full-size ASF image, 1272 px."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "unknown"
+  ],
+  "summary": "unknown",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "kept",
+  "sibling_key": "MAP LXXII 170, same signs, with a contemporary interlinear decipherment"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment of 2307 or 2320 found; the sibling LXXII 170 carries its own contemporary gloss.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Daniel Bourdeau chose the target; the model does the work.",
+  "models": [
+   "claude-opus-5-5"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-11-06",
+   "kind": "access",
+   "what": "Full-size images of MAP LXXXIX 142, CXXXVII 252, LXXII 170 and neighbours downloaded from the ASF MAP viewer (getdoc.py).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "statistics",
+   "what": "Datelines read: all three 'gennaio 1478', i.e. January 1479 modern (Florentine style); 2307 headed 'In Roma'; LXXII 170 verso is show-through only.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "verification": [],
+  "method": "not solved",
+  "key": "none"
+ }
+}
