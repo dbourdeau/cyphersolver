@@ -161,6 +161,11 @@ PAGES = [
          blurb='Asko Parpola&rsquo;s Dravidian readings checked on two independent corpora, then 2,364 hypotheses registered before testing (1,224 held, 1,140 failed), with Linear B and Ur III seal legends as controls. The grammar a reading must fit is set out: an ending slot chosen by the name&rsquo;s last sign, line breaks that never split a word unit, numerals fixed with what they count. Seal names are individual compositions, as Linear B personal names are. No sign value is established.',
          quote='255 435 690 740 &middot; 705 33 520 &middot; 2 + fish, not 6 + fish, is the commonest count',
          rights='CISI vol. 1 (Joshi and Parpola 1987); signs drawn in the indus-website font'),
+    dict(slug='mazzinghi1478', label='Mazzinghi to the Medici 1479', year='1478&ndash;79', y=1478.8, place='Rome &rarr; Florence', st='partial', stt='read in part',
+         title='Giovanni Mazzinghi and an unsigned writer to the Medici, Rome, January 1478 (1479)',
+         blurb='Two bare cipher letters from Rome to the Medici in the winter after the Pazzi conspiracy, the first of them warning of a bull annulling the Church&rsquo;s privileges and of a plot named by two Pistoiese. The key was fitted on the contemporary decipherment of a sibling letter and checked by an independent ciphertext-only break: 76.1% of 1,647 signs read, the key partial.',
+         quote='&ldquo;aiutatevi l&rsquo;occhio, ch&eacute; ogni cosa fanno per la vostra fine&rdquo;',
+         rights='Letters: Archivio di Stato di Firenze, Mediceo avanti il Principato, filza LXXXIX 142 and CXXXVII 252; key and reading by Daniel Bourdeau with Claude agents'),
     dict(slug='buda1490', label='Maffeo to Bak&oacute;cz 1490', year='1490', y=1490.91, place='Milan &rarr; Buda', st='partial', stt='read in part',
          title='Maffeo da Treviglio to Tam&aacute;s Bak&oacute;cz, 30 November 1490',
          blurb='A four-page Latin cipher letter on the Sforza marriage alliance with the new king of Hungary, with the dowry raised from 150,000 to 200,000 ducats. Harrison Bornstein recovered the key from the clear minute kept in Milan and read 561 of 624 words (89.9%), under the 95% bar.',
@@ -4409,6 +4414,7 @@ IMAGES['johnston1863'] = ('johnston1863_lead.jpg', 'The cipher lines of the tele
 IMAGES['milroy'] = None
 IMAGES['auckland1918'] = None
 IMAGES['deboli1788'] = None
+IMAGES['mazzinghi1478'] = None
 IMAGES['majesty1624'] = None
 IMAGES['deboli1787'] = None
 IMAGES['dahku1715'] = None
