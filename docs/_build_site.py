@@ -3915,16 +3915,27 @@ def readjump_html(page, lr, tb):
     else: return ''
     return f'<p class="readjump"><a href="{href}">{label} &darr;</a></p><!-- /readjump -->'
 
+CITE_ROLES = [r for r in CR.DIRECT if r != 'pointer']      # a pointer to a source, or a key used, is credited, not cited
+def cite_authors(page):
+    """The authors a citation names: the page's author and every person who contributed directly to its target(s).
+    A contributed result names its contributors first."""
+    own = plain(page.get('author', 'Daniel Bourdeau'))
+    cs = [c for c in page.get('credits') or [] if c.get('role') in CITE_ROLES and CONTRIB.get(c.get('who'), {}).get('kind') == 'person']
+    order = sorted({c['who'] for c in cs}, key=lambda w: (min(CITE_ROLES.index(c['role']) for c in cs if c['who'] == w), CONTRIB[w]['name']))
+    names = [n for n in dict.fromkeys(plain(CONTRIB[w]['name']) for w in order) if n not in own]
+    return names + [own] if page.get('provenance') == 'contributed' else [own] + names
+
 def cite_html(page, rec):
     """Cite this page: the words, and a button each for the words and for BibTeX (site.js copies them)."""
     title, slug = plain(page['title']), page['slug']
-    author = plain(page.get('author', 'Daniel Bourdeau'))
+    names = cite_authors(page)
+    author = names[0] if len(names) == 1 else ', '.join(names[:-1]) + ' and ' + names[-1]
     url = f'{BASE_URL}{slug}.html'
     posted, updated = fmt_date(rec['first']), fmt_date(rec['updated'])
     when = f'posted {posted}' + (f', updated {updated}' if updated != posted else '')
     text = f'{author}, \u201c{title}\u201d, Cyphersolver, {when}, {url}.'
     year = rec['first'][:4]
-    bib = (f'@misc{{cyphersolver-{slug},\n  author = {{{author}}},\n  title = {{{title}}},\n  year = {{{year}}},\n'
+    bib = (f'@misc{{cyphersolver-{slug},\n  author = {{{" and ".join("{" + n + "}" if "," in n else n for n in names)}}},\n  title = {{{title}}},\n  year = {{{year}}},\n'
            f'  howpublished = {{Cyphersolver}},\n  note = {{{when}}},\n  url = {{{url}}}\n}}')
     esc = lambda t: html.escape(t, quote=True)
     return (f'<!-- cite:start -->\n<details class="cite" id="cite"><summary>Cite this page</summary>\n<p class="citetext">{esc(text)}</p>\n'
