@@ -1,0 +1,321 @@
+{
+ "schema_version": 1,
+ "target": "piccolomini1646",
+ "title": "Two Italian cipher letters to Ottavio Piccolomini, c. 1646 (catalogue 2358; SOA Zámrsk, RA Piccolomini inv. 24874 and 24876): Vlnas's 2017 key for the neighbouring inv. 24873 applied; both letters read in part, writer not identified",
+ "documents": [
+  {
+   "id": "24874",
+   "read": "read in part",
+   "shelfmark": "SOA Zámrsk, Rodinný archiv Piccolominiů (Náchod), inv. č. 24874 (one frame; Vlnas 2017 appendix B21)",
+   "date": "c. 1646 (undated on the frame; the neighbouring 24873_2 is dated 1646)",
+   "year": 1646,
+   "country": "unknown",
+   "route": "unidentified writer (probably the writer of inv. 24873) -> Ottavio Piccolomini",
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Bare cipher: no interlinear gloss or decipherment on the frame. Vlnas 2017 lists it in appendix B (cipher texts not deciphered in the thesis) and prints no text of it."
+   },
+   "length": {
+    "tokens": 645,
+    "distinct": 25,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_24874.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Vlnas 2017 appendix zip P_lohy_A_a_B.zip (theses.cz/id/p3p2kb): photographs of a microfilm-reader screen, 2200 x 1650 px, about 15-20 px per letter; originals in SOA Zámrsk, Rodinný archiv Piccolominiů",
+    "image_quality": "poor",
+    "corrections": 5,
+    "notes": "Two passes from different crops (2.3x strips; 2.4-3x zooms), reconciled on the image. Independent blind copy of 7 lines (220 signs) before the solver's files were opened: over the 357 signs compared in both letters, about 7 solver errors and about 15 unresolved signs after settling; three errors fell in read words (L09 politico, dal; L12 avertimenti). Those places are now written as the passes saw them and marked in the reading. Length: one token per sign (scripts/signs.py; [?] counts as one, '?' doubt marks as none); distinct leaves out [?]."
+   }
+  },
+  {
+   "id": "24876",
+   "read": "read in part",
+   "shelfmark": "SOA Zámrsk, Rodinný archiv Piccolominiů (Náchod), inv. č. 24876 (one frame; Vlnas 2017 appendix B22)",
+   "date": "c. 1646 (undated on the frame)",
+   "year": 1646,
+   "country": "unknown",
+   "route": "unidentified writer (another hand than 24874) -> Ottavio Piccolomini",
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Bare cipher: no interlinear gloss or decipherment on the frame. Vlnas 2017 lists it in appendix B and prints no text of it."
+   },
+   "length": {
+    "tokens": 301,
+    "distinct": 26,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_24876.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Vlnas 2017 appendix zip P_lohy_A_a_B.zip (theses.cz/id/p3p2kb): photographs of a microfilm-reader screen, 2200 x 1650 px, about 15-20 px per letter; originals in SOA Zámrsk, Rodinný archiv Piccolominiů",
+    "image_quality": "poor",
+    "corrections": 3,
+    "notes": "Two passes (2.2x and 2.3x strips), reconciled on the image. Independent blind copy of 4 lines (137 signs): three signs that both passes had missed or misread (all nulls) were added after the check; no word of the reading changed. Length: as for 24874."
+   }
+  },
+  {
+   "id": "24873",
+   "read": "not read",
+   "shelfmark": "SOA Zámrsk, Rodinný archiv Piccolominiů (Náchod), inv. č. 24873 (frames 24873, 24873_1, 24873_2)",
+   "date": "13 [?November] 1646 (24873_2, in clear)",
+   "year": 1646,
+   "country": "unknown",
+   "route": "unidentified writer -> Ottavio Piccolomini",
+   "language": "Italian",
+   "pages": 3,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "partial": true,
+    "source": "Vlnas 2017, ch. 4.2 (pp. 33-38): modern decipherment of the cipher lines of frame 24873 and the key (table 3). The cipher postscript of 24873_2 is listed (appendix A05) but not printed."
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Vlnas 2017 appendix zip P_lohy_A_a_B.zip (theses.cz/id/p3p2kb): photographs of a microfilm-reader screen, 2200 x 1650 px, about 15-20 px per letter; originals in SOA Zámrsk, Rodinný archiv Piccolominiů",
+    "image_quality": "poor",
+    "notes": "Key source and control only; no reading is claimed (Vlnas deciphered frame 24873). Only an excerpt of 14 groups of the 24873_2 postscript is transcribed (heldout_24873_2_transcription.txt), chosen by the solver as the clearest; in-line gaps are marked [...]."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Consonants written plain; vowels as odd digits a e i o u = 1 3 5 7 9 (u also v); even digits 2 4 6 8 (and 0) and the plain letters a e i o u w x y are nulls (Vlnas 2017, table 3).",
+  "symbol_kind": "digits and letters",
+  "digit_groups": {
+   "width": "1",
+   "separation": "contiguous"
+  },
+  "distinct_symbols": 29,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": true,
+   "count": 9
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "kept",
+  "doubled_letters": "often written once (ecelenza, queli, tralascio)",
+  "sibling_key": "Vlnas 2017 table 3, recovered by Vlnas from inv. 24873 (same microfilm run; 24874 likely the same writer by hand and content); used unchanged.",
+  "notes": "distinct_symbols: tokens in the two transcriptions (digits 0-9, consonant letters, the class tokens S and G, R apart from r, and the plain null letters). nulls.count: null signs that occur (2 4 6 8 0 a e u w). On these photographs the digit 5 and the letter s, and the digit 9 and the letters g and q, have the same shape: the transcription writes class tokens S and G, and the reading chooses by sense (77 such choices in the read words of 24874, 29 in 24876). In this hand 6 is also close to b and t (two repairs in 24874). key_order: the odd digits run in vowel order."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No reading of inv. 24874 or 24876 found: Vlnas 2017 (appendix B21, B22: not deciphered, no text printed), the catalogue vetting of 6 Nov 2026 (DECODE dumps, Lasry's list, Tomokiyo, HistoCrypt 2018) and a web search. Vlnas 2017 ch. 4.2 deciphers the neighbouring inv. 24873 and prints the key used here.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "published key",
+   "sibling key"
+  ],
+  "attack": "published key",
+  "human_role": "WAINUT set the task (catalogue 2358) and the rules; AI language-model agents transcribed, applied the key, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "photographs from the Vlnas 2017 appendix zip (not in git)",
+   "scripts in this folder (mechanical decryption, mark check and word counts, sign counts)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-06",
+  "last_date": "2026-11-06"
+ },
+ "solution": [
+  {
+   "date": "2026-11-06",
+   "kind": "access",
+   "what": "Frames 24873, 24873_1, 24873_2, 24874 and 24876 taken from the appendix zip of Vlnas 2017 (theses.cz/id/p3p2kb); the thesis read for the key (table 3) and for what it prints.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "literature search",
+   "what": "Vlnas 2017, the catalogue vetting record (DECODE dumps, Lasry, Tomokiyo, HistoCrypt 2018) and one web search: no edition or decipherment of 24874 or 24876 found.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "transcription",
+   "what": "Sign conventions written before any value was applied (class tokens S for s/5 and G for g/q/9); each letter transcribed twice from different crops and reconciled on the image.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Vlnas's table 3 (from inv. 24873) frozen in key_frozen.tsv with our additions (0 null, f long s, class tokens) and applied unchanged to 24874 and 24876; even digits and plain vowel letters behave as nulls throughout.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Frozen key applied to an excerpt of the 24873_2 postscript, which Vlnas did not print: the 14 groups chosen by the solver all give Italian (desidera Sua Altezza ... ragguaglio ... che venendo). Weak: selected and self-scored, no external decipherment to grade against, the freeze rests on file times.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "reading",
+   "what": "Both letters decrypted with key.tsv and read with every departure marked; scripts/check_marks.py fails on any unmarked departure. English translations made.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "verification",
+   "what": "Independent check (VERIFY.md): blind copy of 11 lines (357 signs) of the two letters and 2 held-out lines before the solver's files were opened; about 7 solver errors and 15 unresolved signs; key and statuses confirmed. Found three places in 24874 where the transcription had followed the sense against the passes, and asked for strict counts and an honest account of the held-out excerpt.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "transcription",
+   "what": "After the check: 24874 L09 and L12 written as the passes saw them (6, l; a blotted sign as [?]); three missed or misread null signs added in 24876. politico and avertimenti are now marked repairs; 24874 verbatim fell from 78 to 76 of 116.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "recovered",
+  "method": "read after matching with key from external sources",
+  "method_basis": "V. Vlnas's key (2017, ch. 4.2, table 3), recovered by him from the neighbouring letter inv. 24873 and not applied by him to 24874 or 24876 (his appendix B21, B22), was applied unchanged to both letters; our additions are 0 as a null, f as long s and class tokens for the s/5 and g/q/9 homographs.",
+  "contribution": [
+   "transcription",
+   "decipherment with ambiguous key"
+  ],
+  "fraction_read": 0.65,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "scripts/check_marks.py: 108 of 166 words verbatim from the signs (24874: 76 of 116, 65.5%; 24876: 32 of 50, 64.0%); with no s/i or g/q/u/v class choice 47 of 166 (33 and 14). Marked repairs (6 and 4) are not counted as read.",
+  "verification": [
+   "independent verification",
+   "key confirms"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "Vlnas's published key for inv. 24873 applied to 24874 and 24876, both read in part; the key is V. Vlnas's (he is not yet in contributors.json)",
+    "date": "2026-11-06",
+    "source": "V. Vlnas, Počítačová analýza šifrované korespondence rodu Piccolomini, BA thesis, Univerzita Hradec Králové 2017 (theses.cz/id/p3p2kb), ch. 4.2, table 3"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "24874 and 24876, and an excerpt of the 24873_2 postscript, from the photographs in the Vlnas 2017 appendix",
+    "date": "2026-11-06"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "one independent AI reader, blind on 11 lines of the two letters and 2 held-out lines; no human palaeographer",
+    "date": "2026-11-06"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "24874",
+    "label": "inv. 24874 (Vlnas 2017 appendix B21)",
+    "transcription": "transcription_24874.txt",
+    "decryption": "decryption_24874.txt",
+    "reading": "reading_24874.md",
+    "translation": "translation_24874.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.655,
+    "summary": "The writer, reporting for someone he calls 'l'arciduca mio signore', says that His Highness took great consolation from Piccolomini's letter and wishes a just and full report on the military and political government, since Piccolomini knows best which advices are needed; the clear tail announces the coming of Don Miguel de Salamanca. Archduke Leopold Wilhelm was named governor of the Spanish Netherlands at the end of 1646, which fits, but the text does not name him.",
+    "note": "Words 116: 76 verbatim from the signs (65.5%), of which 33 with no s/i or g/q/u/v class choice; 6 with a marked repair; 7 guessed from context; 27 holes. L01-L03 are mostly holes. 'dal' (L09) rests on a doubtful sign."
+   },
+   {
+    "doc": "24876",
+    "label": "inv. 24876 (Vlnas 2017 appendix B22)",
+    "transcription": "transcription_24876.txt",
+    "decryption": "decryption_24876.txt",
+    "reading": "reading_24876.md",
+    "translation": "translation_24876.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.64,
+    "summary": "Two cipher passages between clear news: Bavaria, 'so that we must fight', complaints already answered; and 'the Duke of Bavaria wants peace by all means, so that he can consider the advantage we shall have'. The clear text reports prisoners' news of the enemy and, from Vienna, a journey to Linz and then Ratisbona. Fits Bavaria's moves toward a separate truce in late 1646 (Ulm, March 1647); context only.",
+    "note": "Words 50: 32 verbatim from the signs (64.0%), of which 14 with no class choice; 4 with a marked repair; 2 guessed; 12 holes. Another hand than 24874, same key."
+   },
+   {
+    "doc": "24873",
+    "label": "inv. 24873_2, cipher postscript (excerpt; letter of the key source)",
+    "transcription": "heldout_24873_2_transcription.txt",
+    "decryption": "heldout_24873_2_decryption.txt",
+    "language": "it",
+    "state": "decoded, not read",
+    "summary": "An excerpt of 14 groups of the postscript, which Vlnas did not print: 'desidera Sua Altezza [il] ragguaglio ... sono come ancora lei ... che venendo ... se ne possa governare'.",
+    "note": "Held-out excerpt chosen and scored by the solver; weak evidence, not a blind score. Frame 24873 itself is deciphered in Vlnas 2017 and not reproduced here."
+   }
+  ],
+  "key_file": "key.tsv",
+  "gaps": [
+   {
+    "item": "Holes: 27 words in 24874 (mostly L01-L03) and 12 in 24876",
+    "blocker": "illegible",
+    "detail": "Letters are 15-20 px high on the microfilm-screen photographs; a clean scan from SOA Zámrsk (not ordered) should raise both letters much further."
+   },
+   {
+    "item": "About 15 unresolved signs (24874 L08, L19; 24876 L04, L07)",
+    "blocker": "illegible",
+    "detail": "Unresolved by the independent check at 3-4x; all in holes or in marked words."
+   },
+   {
+    "item": "s/5 and g/q/9 homographs",
+    "blocker": "illegible",
+    "detail": "Most read words depend on a class choice by sense; strictly class-free: 33 of 116 and 14 of 50 words."
+   },
+   {
+    "item": "Clear passages",
+    "blocker": "not-attempted",
+    "detail": "Given as draft readings from the photograph only; not counted."
+   },
+   {
+    "item": "Writer and dates",
+    "blocker": "not-attempted",
+    "detail": "Writer not identified; the signature of 24873_2 is not legible on the photograph. 24874 and 24876 are undated."
+   },
+   {
+    "item": "Held-out test",
+    "blocker": "too-short",
+    "detail": "14 groups of the 24873_2 postscript, chosen and scored by the solver; no external decipherment."
+   }
+  ]
+ }
+}
