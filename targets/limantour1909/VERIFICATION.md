@@ -29,7 +29,7 @@ is often written like an X and 3 and 7 are alike; every doubtful shape was settl
 ## 2. The 77 numbered groups of the letter of 15 July (7680)
 
 The numbers of the typed letter were read on the image: all 77 agree with the groups listed in the evidence file
-(segments A to L). One difference: the character after `77.` reads like a typed **e** (or a), not an *s*.
+(segments A to L). One difference: the character after `77.` read like a typed **e** (or a) on the phone screenshots; the clearer images of the second set (section 5) show a typed **s**, as in the contributor's file.
 
 ## 3. What the table gives on the letter and on the 29 July note
 
@@ -60,5 +60,26 @@ calm and prudence, reports clubs in Guadalajara, and speaks of a break between L
   confirmed by a human on the CEHM originals.
 - 9 = g (in *enemigo*) against 8 = g (*graves*) and 10 = g (*Guadalajara*) is a three-homophone block, but it rests on
   these words only.
-- The segment C group `28 23 24 54 2` and the transmission slip 48 in *situación* are unexplained.
+- The segment C group `28 23 24 54 2` is read as *-ndose* (*quejándose*) only by assuming that 24 is a slip for an o code; see section 5.
 - Nothing here changes the strict count of 28 or the provisional status of 60 = Y.
+
+## 5. Second set of images (6 Nov 2026)
+
+Alberto Garvía García then sent four clearer screenshots of the CEHM viewer (1920 x 1080 px, taken on a computer), one for each of
+DLI.39.7677.1, DLI.39.7696.1, DLI.39.7680.2 and DLI.39.7712.1. As before they are private and are **not** in this repository; this
+note quotes numbers and plain words only. The same AI model read them against the records above.
+
+- The seven control sequences and the first line of the telegram of 15 July (`79 1 26 3 41 20 8 11`) read as in section 1. The
+  sixth number of *suspender* is still hard to tell (24 or 27: the writer's 4 and 7 look alike); the sense settles it as 27 = n,
+  as in *comunicarte*.
+- The group `28 23 24 54 2` is printed exactly so, after the clear word "queja,". With the table it decodes n-d-c-s-e. The contributor
+  reads it as *-ndose* (*quejándose*), with one number, 24, standing where an o code (44 or 45) should be. Two things support this:
+  the other four numbers are n, d, s, e, and 24 is c in every other place. Two things weigh against it: the comma after "queja", and
+  the fact that it assumes an error. It is recorded as a tentative reading, not as proved.
+- The 48 in *situación* is a clear 48, not a 44. The contributor suggests 45 was meant. Both groups, then, are one o code replaced by
+  another number; this is consistent with a typing or enciphering slip but does not show one.
+- The character after `77.` is a typed **s**, and the s after `54.` before *desencadenados* looks the same. The note in section 2
+  and the earlier gap are corrected.
+- The second sequence of the 29 July note reads `24 46 42 1 31` (the 4 written like an X). It fits CREEL, but 46 = r and 42 = e rest
+  on that one word.
+- No human palaeographer has repeated the check.
