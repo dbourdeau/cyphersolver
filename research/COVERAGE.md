@@ -1,6 +1,6 @@
 # Sweep coverage: what has not been swept
 
-As of 5 Nov 2026 (sweeps A, B and D of 4 Nov added at the end; Riksarkivet Turcica/Polonica and Calames rows updated 5 Nov; BNP and KB swept 5 Nov). This is an index: each sweep's own README or `coverage.md` holds the detail, and the folder named on
+As of 6 Nov 2026 (sweeps A, B and D of 4 Nov added at the end; Riksarkivet Turcica/Polonica and Calames rows updated 5 Nov; BNP and KB swept 5 Nov; Czech lands and the Italian state archives retry added 6 Nov). This is an index: each sweep's own README or `coverage.md` holds the detail, and the folder named on
 each row is the source. No archive was contacted to write this file, so a block is as the sweep recorded it, and may
 have lifted since. A sweep that closes a gap removes its row here.
 
@@ -22,8 +22,8 @@ done, and search with `research/archive_sweep_2026-10/known.py` before starting.
 | Rome | Jesuit archive (ARSI), Propaganda Fide | No sweep notes or shelfmarks match |
 | Northern and eastern Europe | Finland, Norway, Iceland, the Baltics, Ukraine, Belarus | Almost nothing |
 | Romania | Cluj, Sibiu | Only the DECODE-sourced shelfmarks |
-| Hungary, Czech lands, Slovakia | MNL, Národní archiv, Moravian archives | Only through other sweeps |
-| Italian state archives | Turin, Genoa | No shelfmarks |
+| Hungary, Slovakia | MNL; Slovak archives (no item-level portal found 6 Nov 2026) | Only through other sweeps |
+| Italian state archives | Turin (database behind a "Verifica del browser" check: Chrome, `archiviodistatotorino.cultura.gov.it/Patrimonio`); Genoa (Archivio Segreto inventory PDF lists five 1761-97 cipher bundles, not digitised) | `sweep_2026-11_italian_state_retry` |
 | Italian state archives | Naples, Palermo | Shelfmarks, but no sweep of the archives themselves |
 | German libraries | Wolfenbüttel HAB (Extravagantes; `diglib.hab.de` resets from this network, printed Heinemann catalogue grepped in `sweep_2026-11_german_portals_2`) | Almost nothing |
 | Other | Africa | Little or nothing |
@@ -32,7 +32,7 @@ done, and search with `research/archive_sweep_2026-10/known.py` before starting.
 
 | Source | Block as recorded | Sweep |
 |---|---|---|
-| `*.cultura.gov.it`: Milan, Mantua, Modena, Florence and Cremona state archives, SIUSA, Antenati | Connection refused or timeout, looked like an outage; retry first | `italian_catalogues`, `milan_archives`, `medici_bia` |
+| Archivi Nazionali search (SIUSA redirects there), Milan ICAR image viewer | Up again 6 Nov 2026, but results and images are drawn by JavaScript: Chrome (`archivinazionali.cultura.gov.it/it/risultati-di-ricerca?search=cifra`; ICAR scat. 1591). Florence MAP images, Milan/Mantua/Genoa inventory PDFs answer curl | `sweep_2026-11_italian_state_retry` |
 | Braidense, Trivulziana | See the sweep | `milan_archives` |
 | DigiVatLib | Connection reset in Chrome, TLS error in curl; needs another network | `chrome_pass_2026-11` |
 | NLS, National Library of Wales | Cloudflare challenge | `uk_libraries` |
@@ -119,3 +119,13 @@ Folders: `sweep_2026-11_A_halfdone`, `sweep_2026-11_B_unswept_south`, `sweep_202
 - **Not done:** Riksarkivet: the six Muscovitica, Gallica, Italica and Hollandica sheets were never viewed (the 40
   "manifest-less" Turcica/Polonica volumes were reached on 5 Nov 2026, see `sweep_2026-11_riksarkivet_turcica`). ACA reg. 3225 (1435)
   not reached.
+
+## Sweeps of 6 Nov 2026 (overnight)
+
+- **Czech lands** (`sweep_2026-11_czech_slovak`): ARON item search at MZA Brno, SOA Plzeň, Zámrsk and SOA Praha, NA VadeMeCum,
+  OCR of the Acta Clementina finding aids; 19 leads (2288-2306). Not reached: SOA Litoměřice, Zemský archiv Opava and SOA Třeboň
+  viewers (bot check or JS: Chrome), the Charles University thesis on the Gallas war-chancery ciphers (dspace.cuni.cz resets),
+  Roubík 1931. Mírka's survey of the Plzeň family-archive ciphers (Crypto-World 2012-13) names further items.
+- **Italian state archives retry** (`sweep_2026-11_italian_state_retry`): the cultura.gov.it outage is over. ASF Mediceo avanti il
+  Principato gave 6 leads (2307-2312); MAP vol. 4, the MAP key sheets and the PAD Mediceo del Principato runs continue in
+  `sweep_2026-11_asf_florence`. Modena: no item-level inventory online.
