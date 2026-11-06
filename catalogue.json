@@ -74795,6 +74795,482 @@
     "verdict": "open"
    },
    "repository": "asf"
+  },
+  {
+   "id": 2382,
+   "counted": true,
+   "year": 1494,
+   "date": "16-30 Oct 1494",
+   "title": "Giovan Battista Ridolfi, Florentine envoy in Milan, October 1494: three letters with bare figure/sign cipher passages, beside eleven glossed letters of the same system",
+   "correspondents": "Giovan Battista Ridolfi (Milan, Alessandria, Vigevano) -> Piero di Lorenzo de' Medici",
+   "place": "Milan",
+   "language": "Italian (figure/sign cipher between clear words)",
+   "region": "Italy",
+   "period": "15th century",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza LXXIV, docs. 112 (c. 256), 113 (c. 257), 115 (c. 263)",
+   "folio_note": "112 (Milan 16 Oct 1494): c. 256r about 17 lines of cipher runs in two blocks, c. 256v about 14 more, c. 261 the address; 113 (Milan 21 Oct 1494): c. 257r lower third 9 lines, c. 257v 2 lines; 115 (Milan 30 Oct 1494): c. 263r lines 4-13.",
+   "cls": "A",
+   "status": "Bare (1272 px on 112 and 113, 800 px on the versos and 115). Ridolfi's letters 101-110 and 114 (Sept-Oct 1494) carry interlinear decipherments of the same system (keys.json).",
+   "why": "The Milan despatches of October 1494, during Charles VIII's march through Lombardy; readable from the glossed siblings.",
+   "importance": 3,
+   "solvability": 5,
+   "difficulty": 2,
+   "verify": "Rebuild the table from 101-110 and 114; read 112, 113, 115.",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=74&d=112&c=",
+     "label": "MAP filza 74, doc. 112"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=81807",
+     "label": "image id 81807"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=81808",
+     "label": "image id 81808"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=81809",
+     "label": "image id 81809"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=81810",
+     "label": "image id 81810"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=74&d=113&c=",
+     "label": "MAP filza 74, doc. 113"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=81811",
+     "label": "image id 81811"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=81812",
+     "label": "image id 81812"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=74&d=115&c=",
+     "label": "MAP filza 74, doc. 115"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=81819",
+     "label": "image id 81819"
+    }
+   ],
+   "source": "ASF Mediceo avanti il Principato (MAP) images, whole-filza paging pass, Nov 2026",
+   "score_note": "Scored from the images viewed during the MAP paging pass, 6 Nov 2026 (research/sweep_2026-11_asf_map_paging/)",
+   "access_note": "scans public on the ASF MAP site, no login, curl works: /map/ricerca/ricerca-su-filza/?f=<filza>&d=<doc> and IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (about 1272 px max); image id = first id of the filza + position - 1",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza and document; not flagged as cipher in the MAP inventory (vol. 3, archive.org OCR); DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap.",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch n19",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP filza LXXIV at the server maximum (1272 px), 6 Nov 2026: 112 c. 256r/v https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100074/A0000513.ptif and A0000514, c. 261 (address) A0000515-516; 113 c. 257r/v A0000517-518, c. 260 (address) A0000519-520; 115 c. 263r A0000525, c. 265 (address) A0000527-528; neighbours 111 (A0000509-511), 114 (A0000521-522), 116 (A0000529)",
+     "extent": "112 (Milan 16 Oct 1494, signed \"Jo. Baptista de Ridolphis or.\"): about 17 lines of cipher runs between clear words on c. 256r (the verso image is show-through of the recto, not more cipher); 113 (Milan 21 Oct 1494): 9 cipher lines at the foot of c. 257r and 2 on c. 257v; 115 (Milan 30 Oct 1494): about 8 cipher lines on c. 263r.",
+     "cipher": "Sign cipher (pi, division sign, phi, B, L, 8, 7, h, superscript letters) between clear words: 112 \"quando\", \"dire\", \"fussi\", \"altro particulare non s'intende\", \"dicono che sendo\", \"non potevano sopportare\", \"Credo\", \"disse\", \"comprendo\"; 113 after the clear report of Gian Galeazzo Sforza's death (\"Sendo venuto publica fama questa mattina qui in Milano esser morto lo Ill.mo S. Duca\"); 115 after \"come il Duca di Ferrara s'aspetta domani qui\" and \"costoro procedono di venire in Lunigiana\". No interlinear, marginal or foot decipherment on any leaf; cc. 260, 261 and 265 are address wrappers. Neighbour 114 (22 Oct, \"Hieri vi scrissi della morte\") is the glossed letter Desjardins prints; 111 and 116 are other clear letters."
+    },
+    "prior_art": {
+     "decode": "known.py (repo + harvested DECODE dump) on \"LXXIV, docs. 112\", \"Ridolfi\", \"Giovan Battista Ridolfi\": only this lead and its sweep files; Ridolfi hits are Ludovico Ridolfi 1646 and the Ridolfi plot; no ASF MAP record on DECODE.",
+     "tomokiyo": "cryptiana italian.htm and crypto.htm fetched 6 Nov 2026 and grepped for Ridolfi, Milan 1494, Medici: no Ridolfi item; the Florence section lists only the Gabbrielli 1425 cipher and Lasry's Siena no. 11 (1478).",
+     "lasry": "Local GL.htm (targets/gramont1529) grepped for Ridolfi, Medici, Firenze, 1494: no hit; no Lasry paper on the 1494 Milan embassy.",
+     "edition": "Desjardins/Canestrini, Negociations diplomatiques de la France avec la Toscane I (1859; archive.org gri_33125017127347, OCR), Ridolfi in Milan, pp. 564-585: instructions of 3 Sept 1494 and dispatches of 15 Sept, 25 Sept, 1 Oct, 3 Oct, 7 Oct, one undated (\"Les fragments de cette depeche sont en chiffres\", on the duc d'Orleans and the Rapallo defeat; its text shares none of 112's clear words) and 22 Oct (= MAP LXXIV 114). The letters of 16, 21 and 30 Oct (112, 113, 115) are not printed; Desjardins prints only Ridolfi letters whose cipher was glossed.",
+     "literature": "Google Books feed: Rubinstein-era and later works cite LXXIV 104 (Reinhardt, Kampf um Florenz 2011) and LXXIV 114 (Invasion and Revolution 1988), Pellegrini's Chimera di Carlo VIII (2009) quotes Ridolfi; no citation or decipherment of 112, 113 or 115 found. Marco Vito's encrypted-MAP project covers 1486-91."
+    },
+    "searches": [
+     {
+      "query": "Desjardins Negociations I OCR: grep \"RIDOLFI\", \"octobre 1494\", \"chiffres\" in the Milan legation (pp. 564-585)",
+      "result": "seven Ridolfi dispatches printed (15 Sept - 22 Oct); none of 16, 21 or 30 Oct; the undated fragment is a different letter"
+     },
+     {
+      "query": "Google Books feed: Ridolfi \"MAP, LXXIV\" / Ridolfi \"LXXIV, 113\" / Ridolfi \"LXXIV\" 112 1494 Mediceo",
+      "result": "citations of LXXIV 104 and 114 only (Reinhardt 2011; Invasion and Revolution 1988); 113 hit is an unrelated Bibliofilia index"
+     },
+     {
+      "query": "Google Books feed: \"Giovan Battista Ridolfi\" Milano 1494 lettere Lodovico duca; \"Ridolfi\" \"21 ottobre 1494\" Milano",
+      "result": "Pellegrini 2009, Mantuan orators' carteggio, MAP inventory, Archivi delle famiglie fiorentine (Ridolfi letters to the Dieci): no decipherment of these letters"
+     },
+     {
+      "query": "web: \"Ridolfi\" Milano 1494 \"Gian Galeazzo\" morte lettera 21 ottobre ambasciatore fiorentino Piero de' Medici cifra decifrata",
+      "result": "ciphermysteries Sforza pages and unrelated Ridolfi items; nothing on these letters"
+     }
+    ],
+    "key_check": "No key tried. Same sign family as Ridolfi's glossed letters 101-110 and 114 in the filza (114, 22 Oct, is printed deciphered by Desjardins I pp. 584-585, a ready crib); no reading of 112, 113 or 115 is on record.",
+    "key_in_volume": "MAP LXXIV 101-110 and 114: Ridolfi letters of Sept-Oct 1494 with interlinear decipherments of the same system (sweep keys.json); not tested on 112, 113, 115.",
+    "duplicates": "known.py on \"LXXIV, docs. 112\", \"Ridolfi\", \"Giovan Battista Ridolfi\": no catalogue entry, other lead or target with these documents.",
+    "verdict": "open"
+   },
+   "repository": "asf"
+  },
+  {
+   "id": 2384,
+   "counted": true,
+   "year": 1493,
+   "date": "undated (filed with the Gentile Becchi / Piero Soderini embassy papers of 1493)",
+   "title": "Cipher slip of 1493 in figures and signs (13 ÷ 327, 83, 77, 6300 ...): four cipher lines and a clear note, bare",
+   "correspondents": "unsigned (Florentine embassy in France, 1493?) -> Piero di Lorenzo de' Medici",
+   "place": "not stated",
+   "language": "Italian (figure code mixed with letter-signs)",
+   "region": "Italy",
+   "period": "15th century",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza LXXV, doc. 106 (old c. 166)",
+   "folio_note": "Oblong slip: 4 lines of cipher, groups of figures (13, 327, 83, 77, 20, 300, 6300, 2627) and letter-like signs (÷, π, +, \"5ch6p800\"), then 4 clear lines (\"Galeasso viene da V.M. ... al Duca di Ferrara ... .L.\").",
+   "cls": "B",
+   "status": "Bare (1364 px). Doc. 110 (old c. 171) is an unsigned clear slip (\"Vuole aiuto da noi alla impresa del Reame ...\") in the format of a decipherment, but at about 90 words it is longer than 106's four lines would give unless the figures are phrase codes; not matched.",
+   "why": "A code-heavy system (three- and four-figure groups) of the 1493 French embassy; the numbered nomenclator of LXXII 183 (Paolantonio Soderini) and della Casa's \"Arroge alla vostra cyfra\" additions (LXXV 53-54, numbers 90-94) are candidates.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "Test whether 110 is the plaintext of 106 (names Re di Francia, Spagna, Napoli as code numbers); compare with LXXII 183 and LXXV 53-54.",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=75&d=106&c=",
+     "label": "MAP filza 75, doc. 106"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=82151",
+     "label": "image id 82151"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=82152",
+     "label": "image id 82152"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=75&d=110&c=",
+     "label": "MAP filza 75, doc. 110"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=82161",
+     "label": "image id 82161"
+    }
+   ],
+   "source": "ASF Mediceo avanti il Principato (MAP) images, whole-filza paging pass, Nov 2026",
+   "score_note": "Scored from the images viewed during the MAP paging pass, 6 Nov 2026 (research/sweep_2026-11_asf_map_paging/)",
+   "access_note": "scans public on the ASF MAP site, no login, curl works: /map/ricerca/ricerca-su-filza/?f=<filza>&d=<doc> and IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (about 1272 px max); image id = first id of the filza + position - 1",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza and document; not flagged as cipher in the MAP inventory (vol. 3, archive.org OCR); DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap.",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch n19",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP LXXV 106 (old c. 166) at the server maximum (1364 px), 6 Nov 2026: https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100075/A0000327.ptif (recto), A0000328 (verso); slip 110 (old c. 171) A0000337-338; neighbours 104-109, 111 (A0000323-336, 339, 341)",
+     "extent": "One oblong slip: 4 lines of cipher, about 37 groups, then 4 clear lines; verso blank.",
+     "cipher": "Groups of letter-signs and figures separated by spaces and dots: \"13÷327 +606 p3÷+. xo. bh ∓oo a10÷÷3 sohobpb00 o+ π520467 ...\", with \"83\" three times, \"∓oo\" three times and \"sohobpboo\" twice; then the clear note \"Galeasso viene da V.M. et per quella ... manda che venga presto et lassato qui con le gente ... decto Francesco al Duca di Ferrara per concludere .L. ... et quello si farà et bisognerà\". No decipherment on or with it. Test of 110 as its clear text: negative. 110 is one of Gentile Becchi's clear \"cartucce\" in his own hand (same hand as cc. 164, 165, 169, 172, 173), about 95 words (\"Vuole aiuto da noi alla impresa del Reame ... non è di exercito, classe, oro assai et fidato capitano ... Nella propria corte non sono più che 2 che non se ne ridono\"), far longer than 106's 37 groups, and in a different hand from 106's clear note."
+    },
+    "prior_art": {
+     "decode": "known.py on \"LXXV, doc. 106\", \"Becchi\", \"Soderini\": only this lead and its sweep files; no DECODE record of an ASF MAP slip.",
+     "tomokiyo": "cryptiana italian.htm and crypto.htm grepped for Becchi, Soderini, 1493, Medici: no item.",
+     "lasry": "Local GL.htm grepped for Becchi, Arezzo, Medici: no hit.",
+     "edition": "Desjardins/Canestrini, Negociations diplomatiques de la France avec la Toscane I (1859; archive.org gri_33125017127347, OCR), legation of Gentile Becchi and Piero Soderini (pp. 317-367, all from filza 75): item IX \"Notes et fragments detaches de la correspondance de l'eveque d'Arezzo (en chiffres), octobre et novembre 1493\" analyses and quotes Becchi's cartucce, including 110's phrases (\"Perche non e di esercito, classe, oro assai, e fidato capitano\"; \"Nella propria corte non sono piu che due, che non se ne ridono\") and 172-173 (audience Sunday, council Monday; the Amboise building distich). Neither 106's clear note (Galeasso, Duca di Ferrara) nor any figure-code text is printed.",
+     "literature": "Web and Google Books feed searches on Becchi's 1493 cipher slips and on \"Galeasso\" with the Duke of Ferrara in 1493 found only general histories; Vito's encrypted-MAP work stops in 1491."
+    },
+    "searches": [
+     {
+      "query": "Desjardins Negociations I OCR: grep \"aiuto da noi\", \"scacciare di Francia\", \"Galeasso\", \"Duca di Ferrara per\", \"cartucce\" in the Becchi legation",
+      "result": "110's text found paraphrased and quoted in item IX (Oct-Nov 1493); 106's clear note and cipher not found"
+     },
+     {
+      "query": "Google Books feed: \"Galeasso\" \"Duca di Ferrara\" 1493 Piero de Medici Francia",
+      "result": "general histories (Guicciardini, Archivio Veneto), nothing on this slip"
+     },
+     {
+      "query": "Google Books feed: \"LXXV, 106\" Mediceo; Becchi cartucce cifra 1493 Tours Piero de Medici",
+      "result": "no citation of the document; no hit for the Becchi query"
+     },
+     {
+      "query": "web: Gentile Becchi Piero Soderini ambasciata Francia 1493 lettere cifra Mediceo avanti il Principato filza LXXV cartucce decifrate",
+      "result": "biographies and Alison Brown's chapter; no decipherment of the slip"
+     }
+    ],
+    "key_check": "Not tested. Candidates in print or in the filza: the Becchi/Soderini and della Casa ciphers of 1493 (della Casa's additions LXXV 53-54, numbers 90-94; the stacked system 51/47), and LXXIII 183 (P. A. Soderini 1494). 110 is ruled out as its plaintext (length and hand).",
+    "key_in_volume": "MAP LXXV 47/51, 53-54 and the eight Vespucci/Capponi pairs (27/29 ... 42/43): French-embassy ciphers of 1493-94 in the same filza; none tested on 106.",
+    "duplicates": "known.py on \"LXXV, doc. 106\", \"Becchi\", \"Soderini\": no catalogue entry, other lead or target with this slip.",
+    "verdict": "open"
+   },
+   "repository": "asf"
+  },
+  {
+   "id": 2388,
+   "counted": true,
+   "year": 1512,
+   "date": "7 Mar 1512 and 6 Jun 1513 (inventory: 1512 mar. 7, n. 130; 1513 giu. 5-6, nn. 139-140)",
+   "title": "Antonio Maria Bonanni of San Gimignano, Piacenza, 1512-13: two letters to ser Giovanni da Poppi with cipher runs (letters and digits with superscript index figures), bare",
+   "correspondents": "Antonio Maria Bonanni (Bonannius geminianensis), Piacenza -> ser Giovanni da Poppi, Medici secretary",
+   "place": "Piacenza",
+   "language": "Italian (cipher runs: Latin letters and digits with superscript figures 1-4)",
+   "region": "Italy",
+   "period": "1497-1559",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza LXXII, docs. 130 and 140",
+   "folio_note": "130r (\"Placentie die vij Martij XII\", signed \"Anto: maria Bonannus Gem.\"): five lines with four runs of 10-30 symbols (e.g. \"P4 5T8 Z584 3 5 X y d 6 3 d\"), small figures 1-4 written above many symbols; 140r (Piacenza 6 June [1513]): about 2 lines (45 symbols) of the same kind. Versos: address \"S. Iohanni de Puppio secretario Florentie\".",
+   "cls": "B",
+   "status": "Bare (1228 px on 130, 800 px on 140): the superscript figures are index marks (homophone numbers), not a gloss. The same superscript-figure style is used in Acciaiuoli's 1513 cipher (LXXII 190-192) and Pandolfini's 1514-15 cipher (row below).",
+   "why": "A Medici agent in Lombardy in the year of the Medici restoration; short, but the superscript-index system ties it to the better-keyed 1513-15 Medici ciphers.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "Transcribe both; test the Acciaiuoli 190/191 table and the Pandolfini table; look at doc. 139 (5 June 1513).",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=72&d=130&c=",
+     "label": "MAP filza 72, doc. 130"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79426",
+     "label": "image id 79426"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79427",
+     "label": "image id 79427"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=72&d=140&c=",
+     "label": "MAP filza 72, doc. 140"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79446",
+     "label": "image id 79446"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79447",
+     "label": "image id 79447"
+    }
+   ],
+   "source": "ASF Mediceo avanti il Principato (MAP) images, whole-filza paging pass, Nov 2026",
+   "score_note": "Scored from the images viewed during the MAP paging pass, 6 Nov 2026 (research/sweep_2026-11_asf_map_paging/)",
+   "access_note": "scans public on the ASF MAP site, no login, curl works: /map/ricerca/ricerca-su-filza/?f=<filza>&d=<doc> and IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (about 1272 px max); image id = first id of the filza + position - 1",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza and document; not flagged as cipher in the MAP inventory (vol. 3, archive.org OCR); DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap.",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch n19",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP LXXII at the server maximum (1228 px), 6 Nov 2026: 130 (c. 161) https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100072/A0000317.ptif, A0000318; 140 (c. 171) A0000337-338; 139 (c. 170) A0000335-336",
+     "extent": "130r: four cipher runs over five lines (about 85 signs); 140r: two lines (about 45 signs). 139 is a clear note of 5 June with no cipher.",
+     "cipher": "Latin letters and digits (P, T, Z, X, y, d, q, 8, 5, 3, E, A) with small figures 1-5 written above most of them, between clear words: 130 \"...mele ritenne, [cipher] et pero non mela lasso leggere ... dinuouo da voi [cipher] et di questo vene prego mi diate qualche adviso ch[e] [cipher]\", dated \"Placentie die vij Martij XII\", signed \"Anto: maria Bonannus Gem.\"; 140 \"et havendo ad restar qua [cipher] che non voglio li altri sappino\", \"Placentie die vj Junij M.D\". No decipherment on or beside either; 139 does not repeat their content."
+    },
+    "prior_art": {
+     "decode": "known.py on \"docs. 130\", \"Bonanni\", \"Giovanni da Poppi\": only this lead and its sweep files; no DECODE record.",
+     "tomokiyo": "cryptiana italian.htm and crypto.htm grepped for Bonanni, Piacenza, 1512, 1513: no hit.",
+     "lasry": "Local GL.htm grepped for Bonanni, Piacenza, Medici: no hit.",
+     "edition": "No edition of Bonanni's letters exists as far as found: the Google Books feed shows him only as later chancellor of the Otto di Pratica (Carte Strozziane inventory 1884) and in a curriculum vitae within an essay collection (Editoria Italiana Online 2004); Desjardins II prints nothing from Piacenza by him.",
+     "literature": "Web searches on Bonanni, Piacenza 1512-13 and ser Giovanni da Poppi found nothing on these letters."
+    },
+    "searches": [
+     {
+      "query": "Google Books feed: \"Antonio Maria Bonanni\"",
+      "result": "Carte Strozziane inventory (chancellor of the Otto di Pratica, 1540) and an essay collection with his curriculum vitae; nothing on the Piacenza letters"
+     },
+     {
+      "query": "Google Books feed: \"Bonanni\" Piacenza 1513 cifra Medici \"da Poppi\"; \"Mediceo avanti il Principato\" \"LXXII\" Bonanni 130",
+      "result": "no hit / only MAP inventory records"
+     },
+     {
+      "query": "web: \"Bonanni\" San Gimignano Piacenza 1512 1513 \"Giovanni da Poppi\" lettere Medici",
+      "result": "unrelated Buonanni and Machiavelli items; nothing on these letters"
+     },
+     {
+      "query": "web: Antonio Maria Bonanni Piacenza 1512 1513 Medici agente lettere ser Giovanni da Poppi cancelliere Otto di Pratica biografia",
+      "result": "no source on Bonanni or the letters"
+     }
+    ],
+    "key_check": "No key tried. The superscript-index style is shared with Acciaiuoli's 1513 cipher (LXXII 190-192) and Pandolfini's 1514-15 cipher (LXXII 281-368 pairs); whether Bonanni used the same table is untested. No reading is on record.",
+    "key_held": "Plaintext pairs of the 1513-15 superscript-index system in MAP LXXII (Pandolfini 334/332, 308/313; Acciaiuoli 190/191): not tested on 130 or 140.",
+    "duplicates": "known.py on \"docs. 130\", \"Bonanni\", \"Giovanni da Poppi\": no catalogue entry, other lead or target with these letters.",
+    "verdict": "open"
+   },
+   "repository": "asf"
+  },
+  {
+   "id": 2389,
+   "counted": true,
+   "year": 1515,
+   "date": "Jan 1514 (st. fior.) - Feb 1515 and Sept-Dec 1514",
+   "title": "Francesco Pandolfini, Florentine orator in France, Oct 1514 - Mar 1515: six cipher letters and copies with no decipherment found, beside about fifteen cipher/decipherment pairs of the same system in MAP LXXII",
+   "correspondents": "Francesco Pandolfini, orator at the French court -> the Otto di Pratica / Lorenzo de' Medici (duke of Urbino)",
+   "place": "Paris",
+   "language": "Italian (letter/digit cipher with superscript figures, between clear passages)",
+   "region": "Italy",
+   "period": "1497-1559",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza LXXII, docs. 307, 309, 310, 311, 322, 333",
+   "folio_note": "307 (c. 369, copy to the Otto di Pratica of 16 Feb 1514 st. fior., with a clear note to Lorenzo of 16 Feb): about 25 cipher lines; 309 (cc. 378/383, to Lorenzo in Rome, Paris 26 Feb 1514 st. fior.): about 10 lines; 310 (cc. 380-381, copy to the Otto, 25 Feb - 2 Mar): about 70 lines; 311 (cc. 382/379, continuation to the Otto, \"Tenuta a di iiij\"): nearly two sides; 322 (c. 401, \"Copia di 2 cap. scripti ad Roma sotto di 20 d'ottobre\" 1514): two blocks of 7 and one of 2 lines; 333 (cc. 417/427, to Lorenzo in Rome, Paris 27 Dec 1514): 3 lines. 297 (copy to the Otto, 22 Jan 1514 st. fior.) was dropped from this lead: its decipherment is very probably LXXII 368 (see vetting).",
+   "cls": "A",
+   "status": "No gloss on these pages (contact sheet and 800 px), and the paging matched none of them with a filed clear text; some may be covered by the unheaded clear copies 284, 306, 316, 332, 337, 344, 347, 350, 365-366 and 419 (not aligned). Pairs in the filza: 281/285, 287/288, 290/291-292, 293/335, 308 (glossed)/313, 315/316, 317/348, 320/321, 330/331, 334/332, 338/339, 340/341, 342/343, 346/345, 349/348; glossed 318, 319; decipherments 368 (\"Decifrato ... a Lorenzo\"), 366 (\"tratti di cifra\"). The first pass recorded 215 (1514, interlinear) as the key text of this system.",
+   "why": "A full key can be rebuilt from the pairs, and the seven letters read; the embassy covers Louis XII's last months, Francis I's accession and the run-up to Marignano.",
+   "importance": 3,
+   "solvability": 5,
+   "difficulty": 2,
+   "verify": "Align 287 with 288 and 342 with 343 to rebuild the table (superscripts as homophone marks); read the seven; check each against the unheaded clear copies first.",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=72&d=297&c=",
+     "label": "MAP filza 72, doc. 297"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79828",
+     "label": "image id 79828"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79829",
+     "label": "image id 79829"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=72&d=307&c=",
+     "label": "MAP filza 72, doc. 307"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79856",
+     "label": "image id 79856"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79857",
+     "label": "image id 79857"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=72&d=309&c=",
+     "label": "MAP filza 72, doc. 309"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79864",
+     "label": "image id 79864"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79865",
+     "label": "image id 79865"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79866",
+     "label": "image id 79866"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79867",
+     "label": "image id 79867"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=72&d=310&c=",
+     "label": "MAP filza 72, doc. 310"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79868",
+     "label": "image id 79868"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79869",
+     "label": "image id 79869"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79870",
+     "label": "image id 79870"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79871",
+     "label": "image id 79871"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=72&d=311&c=",
+     "label": "MAP filza 72, doc. 311"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79872",
+     "label": "image id 79872"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79873",
+     "label": "image id 79873"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=72&d=322&c=",
+     "label": "MAP filza 72, doc. 322"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79910",
+     "label": "image id 79910"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79911",
+     "label": "image id 79911"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=72&d=333&c=",
+     "label": "MAP filza 72, doc. 333"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79946",
+     "label": "image id 79946"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79947",
+     "label": "image id 79947"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79948",
+     "label": "image id 79948"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79949",
+     "label": "image id 79949"
+    }
+   ],
+   "source": "ASF Mediceo avanti il Principato (MAP) images, whole-filza paging pass, Nov 2026",
+   "score_note": "Scored from the images viewed during the MAP paging pass, 6 Nov 2026 (research/sweep_2026-11_asf_map_paging/)",
+   "access_note": "scans public on the ASF MAP site, no login, curl works: /map/ricerca/ricerca-su-filza/?f=<filza>&d=<doc> and IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (about 1272 px max); image id = first id of the filza + position - 1",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza and document; not flagged as cipher in the MAP inventory (vol. 3, archive.org OCR); DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap.",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch n19",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP LXXII at the server maximum (1256-1400 px), 6 Nov 2026: 307 https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100072/A0000747.ptif-750; 309 A0000755-758; 310 A0000759-762; 311 A0000763-766; 322 A0000801-802; 333 A0000837-840; 297 A0000719-720; the filza's clear copies and decipherments 284 (A0000675), 306 (745), 313 (771), 316 (783), 332 (833), 334 (841), 337 (849), 344 (877), 347 (887), 350 (897), 365 (935), 366 (939, 941-942), 368 (947-948), 419 (1067)",
+     "extent": "Six pieces, about 120 cipher lines in all (310 and 311 the bulk), between clear passages.",
+     "cipher": "Latin letters and digits with superscript figures 1-5 (e.g. 307 \"or w y we r w g 7 φ q r 4 y S F S x φ 7 t ...\", 333 \"3 4 φ 2 y 3 3 5 3 c L ...\"), with dotted numeral groups (\"3.20.\", \"3.c.2.\"). No gloss on any of the six. Filed clear texts checked by heading and date: 284 copy of 2 Jan 1515; 306 copy of 28 Jan; 313 copy of 20 Feb (clear text of 308); 316 paired with 315; 332 copy of 27 Dec 1514 to the Otto = decipherment of 334 (the Otto letter), not of 333's covering-note lines; 337 copy of 2x Mar 1515; 344 and 350 copies of Apr and later 1515; 365 extract \"tratte di cifra\" of 2x Mar 1515; 366 extract of 6 Oct 1514 (Abbeville) and \"Copia de capitoli scripti a Roma tratti di cifra\" (c. 469, about 45 lines on the Milan enterprise, far longer than 322 and with none of 322's clear frame: archdeacon, Rocciafort, Alfonso Ariosti); 368 \"Decifrato\" of letters of the 21st to Lorenzo and the 22nd to the Otto; 419 copy of 6 Dec 1514. None deciphers 307, 309, 310, 311, 322 or 333. 368 matches 297 (to the Otto, 22 Jan 1515: 309 and 310 show Pandolfini wrote to Lorenzo on 20 Feb and to the Otto on 20 and 25 Feb, so the 21st/22nd must be January; 297 has about 280 cipher signs for 368's second text of about 600 letters, roughly the ratio of the cipher in 334 to the clear text in 332), so 297 is taken out of the lead."
+    },
+    "prior_art": {
+     "decode": "known.py on \"LXXII, docs. 297\", \"Pandolfini\", \"Francesco Pandolfini\": only this lead and its sweep files; the Pandolfini hits are Pier Filippo Pandolfini 1481-90 (other leads); no DECODE record.",
+     "tomokiyo": "cryptiana italian.htm and crypto.htm (whose index lists the Francis I cipher page) grepped for Pandolfini, 1514, 1515: no Florentine 1514-15 item.",
+     "lasry": "Local GL.htm grepped for Pandolfini, Medici, Firenze: no hit; Lasry's Francis I-era work is on French ciphers.",
+     "edition": "Desjardins/Canestrini, Negociations II (1861; archive.org gri_33125010469852, OCR), \"Extraits de la legation de Francesco Pandolfini\", pp. 608-665: instructions of 31 Jan 1514 and 24 dispatches of 24 Apr - 16 Aug 1514, printed from deciphered texts in MAP filze 102-110 (\"Presque toute cette correspondance est en chiffres\"), then Cardinal Giulio's letters to Pandolfini (Oct 1514 - Jan 1515, Strozziane appendice 1). Nothing after 16 Aug 1514 from Pandolfini, and none of the six pieces (20 Oct 1514 - 4 Mar 1515) is printed.",
+     "literature": "Google Books feed: the MAP inventory lists \"Francesco Pandolfini, s.l., s.d., n. 368\"; no study cites LXXII 307-333. Web: DBI entry (Plebani 2014) and BL family papers; no edition of the 1514-15 dispatches beyond Desjardins."
+    },
+    "searches": [
+     {
+      "query": "Desjardins Negociations II OCR: grep \"PANDOLFINI\", \"1514.\", \"1515.\", \"chiffres\", \"filza\" (pp. 608-679)",
+      "result": "Pandolfini dispatches 24 Apr - 16 Aug 1514 from MAP 102-110 only; none of Oct 1514 - Mar 1515"
+     },
+     {
+      "query": "Google Books feed: \"Francesco Pandolfini\" 1515 \"Mediceo avanti il Principato\" LXXII; \"Pandolfini\" \"MAP, LXXII\"",
+      "result": "MAP inventory entry for n. 368 (s.l., s.d.); Lorenzo-era citations of LXXII 353, 357, 387 (Pier Filippo); nothing on 307-333"
+     },
+     {
+      "query": "Google Books feed: \"Pandolfini\" Parigi \"febbraio 1515\" Otto di Pratica; Pandolfini Francesco I 1515 cifra Lorenzo duca Urbino",
+      "result": "the feed returned no volume for either query"
+     },
+     {
+      "query": "web: \"Pandolfini\" 1515 Parigi lettere \"Otto di Pratica\" decifrato Francesco I accessione Lorenzo de' Medici legazione edizione",
+      "result": "DBI and archive-series pages, a 1529 Portinari cipher bundle; no edition or decipherment of these letters"
+     }
+    ],
+    "key_check": "No key tried. The filza holds plaintext pairs of the same system (334/332 checked: cipher copy of 27 Dec 1514 and its clear copy; 308/313; 368 for 297), enough to rebuild the table; no reading of the six pieces is on record. Pandolfini's originals to the Otto di Pratica (ASF, Otto di Pratica, Responsive, not online) may carry chancery decipherments of 307, 310 and 311; not seen.",
+    "key_in_volume": "MAP LXXII 334/332 (27 Dec 1514), 308/313 (20 Feb 1515), 368 (decipherment of 21-22 Jan 1515) and the other pairs listed in the lead: same system, not applied to the six.",
+    "duplicates": "known.py on \"LXXII, docs. 297\", \"Pandolfini\", \"Francesco Pandolfini\": no catalogue entry, other lead or target with these documents; Pier Filippo Pandolfini leads are other men and letters.",
+    "verdict": "open"
+   },
+   "repository": "asf"
   }
  ]
 }
