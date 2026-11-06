@@ -1,7 +1,7 @@
 # Rome, January 1478 (st. fior.): Giovanni Mazzinghi and a second writer to the Medici, cipher (catalogue 2307, 2320)
 
-Status: in progress. Started 6 Nov 2026 at the user's request after the overnight sweep. Transcription under way;
-no key yet.
+Status: in progress. Started 6 Nov 2026 at the user's request after the overnight sweep. Key rebuilt from the glossed
+sibling; both bare letters decrypt to Italian through most words (draft); look-alike signs and code numbers still open.
 
 ## The documents
 
@@ -10,13 +10,13 @@ All three are in the Archivio di Stato di Firenze, Mediceo avanti il Principato 
 
 | Catalogue | MAP | Date as written | Writer | State |
 |---|---|---|---|---|
-| 2307 | LXXXIX 142 (recto; verso is show-through plus endorsement) | "In Roma a dì 16 di gennaio 1478" | Giovanni Mazzinghi (verso: "1478 ad 16 di gennaio / da G. Mazinghi / Cifra") | bare: about 40 lines of cipher words with clear connectives, no decipherment |
+| 2307 | LXXXIX 142 (recto; verso is show-through plus endorsement) | "In nome di Dio a dì xvj di gennaio 1478" (no place; Rome by content) | Giovanni Mazzinghi (verso: "1478 ad 16 di gennaio / da G. Mazinghi / Cifra") | bare: about 40 lines of cipher words with clear connectives, no decipherment |
 | 2320 | CXXXVII 252 (recto) | "a dì 13 di gennaio 1478" | unsigned (same signs and hand as 2307) | bare: about 17 lines, no decipherment |
 | (lead 2308, closed read) | LXXII 170 (recto) | "a dì 2? di gennaio 1478" | same system | the key source: a decipherment written over the cipher words in a second hand |
 
 **Dating.** All three say "gennaio 1478". A Florentine writer counted the year from 25 March, so this is very probably
 January **1479** in modern style: nine months after the Pazzi conspiracy (26 April 1478), during the Pazzi War, with
-Florence under Sixtus IV's interdict. 2307 is headed "In Roma". The overnight vetting (batches n08, n10, c32, c33)
+Florence under Sixtus IV's interdict. 2307 names no place; the content (the Pope, the Cancelleria, Castel Sant'Angelo in the sibling) puts the writers in Rome. The overnight vetting (batches n08, n10, c32, c33)
 called them January 1478 and Lorenzo's *Lettere* II-III were searched for both years without a hit; the catalogue
 entries are corrected to "January 1478 st. fior. (1479)".
 
@@ -43,12 +43,46 @@ Not the system of `targets/siena11` (Acciaiuoli, Rome, June 1478, Lasry's key).
   vol. IV was searched for LXXII 171 only. To repeat for these two shelfmarks.
 - DECODE has no MAP records; Tomokiyo and Lasry's GL.htm have nothing on them (vetting batch n08).
 
-## 6 Nov 2026: 2307 key recovered from its own ciphertext, read in part (parallel session, PR #301)
+## Draft reading (6 Nov 2026)
 
-This section was worked in a parallel session from the catalogue 2307 task prompt, before the plan above was
-merged in; its files are `transcription_89_142_v1.txt`, `reading_89_142.txt`, `key.md`, `solve.py`, `measure.py`,
-`decode_lines.py`, `WORKLOG.md` (images in `images/`, git-ignored). Steps 2-4 of the plan are done for 2307 only;
-step 1 (the 170 pairs) is still the way to settle the merged sign classes. 2320 is not touched.
+Files: `t170.tsv` (glossed sibling), `t252.tsv`, `t142.tsv` (transcriptions), `build_key.py` -> `key.tsv` (69 gloss
+pairs; held-out letters 57-74%), `refine.py` -> `key_refined.tsv`, `decode.py` -> `draft252.txt`, `draft142.txt`.
+The key is a homophonic letter substitution (a +, ^, d; e x, y, c; i s, 5, 1, 3; o r; u/v q, u; t H; tt {Hp}; r 6;
+l 2+, #?, l; n n; s 4, f; m 8; g m; p p, {pbar}, {dbar}; c {sg}; d o; b =; f b; ss g), words kept whole, clear
+words between. Numerals are persons: 10 (glossed "Duca di Calabria"? in 170), 12 (glossed Zanobi), 30, 40, 51, 231.
+
+**252, 13 Jan 1478/9 (unsigned).** The writer writes only to tell them that the Pope ("S.S.") has sent a brief;
+a letter was presented yesterday morning to [10]; the king is so enraged that the writer fears they will seize
+Antonio del Palagio, Pagolo Rucellai and Lionardo di Giunta and put them in Castel [Sant'Angelo]; Tornabuoni has
+asked [10] ...; a fante was sent; "comandate niente", written in haste.
+
+**142, 16 Jan 1478/9, Giovanni Mazzinghi.** "Io, persona fidata": this morning a bull under lead was published in the
+Cancelleria annulling all the privileges the Church had granted ...; a very cruel process against them ("contra di
+voi molto crudele"), "dannando la croce addosso a voi ... credo abbino el diavolo in corpo". Iacopo de' Rossi of
+Pistoia, who stays in the house of ..., has told him many times about "la fine vostra"; he could not get anything out
+of him yet; [10] told him he can trust Mazzinghi; another Pistoiese called Cola; at [10/3] o'clock [10?] called
+Iacopo, "et quello ordinò la morte di [30] e mostra sia d'ordine sopra a voi"; if he learns anything certain he will
+come in person; "aiutatevi l'occhio, ché ogni cosa fanno per la vostra fine". Later: [51] promised ...; [40] wrote to
+[10] a letter ...; messer Lorenzo da Castello ... has become very bold; two men in disguise; the Lucchese ambassadors.
+
+If [30] is Lorenzo, this is a warning of a murder plot nine months after the Pazzi conspiracy. Not yet claimed:
+the code numbers need identifying from the content and the other MAP letters, and the misread look-alikes fixing.
+
+## 6 Nov 2026: independent ciphertext-only break of 2307 (parallel session, PR #301)
+
+A second session, started from the catalogue 2307 task prompt, worked 2307 at the same time without the sibling
+key: its own coarser transcription (29 sign classes), a solver on the ciphertext alone, then a word-by-word reading.
+Files: `transcription_89_142_v1.txt`, `reading_89_142.txt`, `key.md`, `solve.py`, `measure.py`, `decode_lines.py`,
+`WORKLOG.md` (images in `images/`, git-ignored). It is a cross-check on the draft above, not a rival reading: the
+key from the 170 glosses (`key_refined.tsv`) is the better one, and `t142.tsv` the finer transcription.
+
+**Agreement.** The two keys were reached separately (ciphertext-only here; the 170 glosses there) and agree on the
+main values (+ a, x e, 5 i, r o, n n, H t, 6 r, o d, q u, 4 s, 8 m, m g, = b, P p). Both drafts read "persona",
+"cancelleria", "tutti i privilegi", "contra di voi molto crudele", "addosso a voi/noi", "abbino el diavolo in corpo",
+"Iacopo de Rossi da Pistoia", "un altro pistolese che si chiama Co[la]", "ordinò la morte del 30 e mostra sia ...
+ordine sopra a voi", "...tevi l'occhio, ché bisogna ogni cosa", "messer Lorenzo da Castello", "dua travestiti",
+"gl'imbasciadori lucchesi". Differences to settle against the image: "abbiatevi" here / "aiutatevi" there; "rine"
+(open here) / "fine vostra" there; "accennando la..." here / "dannando la croce" there.
 
 **System.** Monoalphabetic substitution in letter-like signs, word division kept, numerals for persons, barred p for
 *per*, many clear words. About 1,050 cipher signs in 189 cipher words, plus about 190 clear words. The key is in
@@ -78,19 +112,13 @@ the papal interdict). Rome is implied by the papal news and the ambassadors; no 
 
 ## Remaining gaps
 
-- 2320 (CXXXVII 252): not transcribed yet; same signs, so the 2307 key should apply.
-
-- Sign classes the 1272-px scan does not separate (o, 4, H, b/6, q): values chosen from context; about 30 words
-  carry a doubt from this. Not an outside blocker yet: the sibling key rebuild has not been done.
-- 48 cipher words open, mostly in lines 1-3, 9-12, 18-19, 23, 26-31 (see `reading_89_142.txt`).
-- Code numerals 2, 3, 10, 12, 30, 40 and the groups `olop`, `ov+`, `cop`, `oxP`: open codes, no key material yet.
-- Clear words: only a rough reading of the mercantesca; needs a careful pass.
+- Look-alike signs misread in the transcription (o vs q in "DUESTA" = questa; # read h in 142, l in 170; t; 3):
+  re-check at 4-6x against the key (blocker: none, work to do).
+- Code numbers 10, 12, 30, 40, 51, 231 not yet identified (blocker: none; content, 170 glosses, other MAP letters).
+- Clear abbreviations in 142 (lines 18-37) not expanded.
+- The three differences between the two independent drafts of 142 (see the cross-check section) to settle at 4-6x.
 
 ## Escalation
 
-- Next: transcribe MAP 72/170 cipher and gloss pairwise (lead 2308) and rebuild the sign table sign by sign; this
-  should split the merged classes and may give the code numerals (the sibling has "a Giovanni ...", "del papa").
-- Check MAP LXXII and LXXXIX neighbours for more letters in this system (same sender, Jan-Feb 1479).
-- Read the clear passages carefully; they carry the context for the open runs.
-- Higher resolution: the ASF server caps at 1272 px; a request to ASF for a high-resolution scan of 89/142 would
-  settle the sign classes if the sibling does not.
+- Siblings: LXXII 170 used as the key source; LXXII 169/171 and CXXXVII 251/253 fetched (171 is a different system).
+- Key rebuild: done from the 170 glosses (build_key.py) with a held-out test.

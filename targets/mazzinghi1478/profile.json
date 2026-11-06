@@ -5,9 +5,9 @@
  "documents": [
   {
    "id": "2307",
-   "read": "read in part",
+   "read": "not read",
    "shelfmark": "ASF, Mediceo avanti il Principato LXXXIX 142",
-   "date": "In Roma, 16 January 1478 st. fior.",
+   "date": "16 January 1478 st. fior. (\"In nome di Dio a dì xvj di gennaio 1478\"; place not stated, Rome by content)",
    "year": 1479,
    "country": "Florence",
    "route": "Giovanni Mazzinghi (Rome) -> the Medici (Florence)",
@@ -21,16 +21,15 @@
     "partial": false
    },
    "length": {
-    "tokens": 1051,
+    "tokens": "unknown",
     "unit": "symbols",
-    "measured": true,
-    "file": "reading_89_142.txt"
+    "measured": false
    },
    "transcription": {
     "by": "llm from images",
-    "source": "ASF IIIF A0000463, 1272 x 1837 (largest size served)",
+    "source": "in progress",
     "image_quality": "fair",
-    "notes": "Some sign pairs cannot be told apart at this resolution (o, 4, H, b/6)."
+    "notes": "Full-size ASF image, 1272 px."
    }
   },
   {
@@ -65,27 +64,26 @@
  ],
  "system": {
   "types": [
-   "monoalphabetic"
+   "homophonic"
   ],
-  "summary": "Letter substitution in letter-like signs with word division kept, numerals for persons and a barred p for per.",
+  "summary": "Homophonic letter substitution in letter-like signs, word by word with word division kept, clear words interspersed, numerals as code words for persons.",
   "symbol_kind": "letters and symbols",
   "distinct_symbols": "unknown",
   "diacritics": {
    "used": "unknown"
   },
   "homophones": {
-   "used": "unknown"
+   "used": true
   },
   "nomenclator": {
-   "present": "unknown"
+   "present": true
   },
   "nulls": {
    "present": "unknown"
   },
   "key_order": "unknown",
   "word_division": "kept",
-  "sibling_key": "MAP LXXII 170 (lead 2308), same sign set, glossed interlinear; not yet rebuilt sign by sign",
-  "notes": "29 sign classes seen at 1272 px; several classes probably hold two or three signs."
+  "sibling_key": "MAP LXXII 170, same signs, with a contemporary interlinear decipherment"
  },
  "conditions": {
   "prior_solution": {
@@ -95,20 +93,18 @@
    "used": false
   },
   "inputs": [
-   "images"
+   "images",
+   "cleartext context"
   ],
-  "attack": "ciphertext-only",
-  "human_role": "Daniel Bourdeau chose the target; the model does the work. A second session worked 2307 from the catalogue task prompt pasted into Claude Code; no target-specific intervention.",
+  "attack": "known plaintext",
+  "human_role": "Daniel Bourdeau chose the target; the model does the work. A second session worked 2307 from the catalogue task prompt (ciphertext only) at the same time; no target-specific intervention.",
   "models": [
    "claude-opus-5-5"
   ],
   "tools": [
    "solve.py (homophonic annealer, it-cinquecento order 5)",
    "measure.py"
-  ],
-  "sessions": 2,
-  "first_date": "2026-11-06",
-  "last_date": "2026-11-06"
+  ]
  },
  "solution": [
   {
@@ -126,7 +122,50 @@
   {
    "date": "2026-11-06",
    "kind": "transcription",
-   "what": "2307: First pass of 89/142, 29 sign classes, 1055 signs.",
+   "what": "Glyph inventory (glyphs.md, 45 tokens) and transcription of the glossed sibling MAP LXXII 170 with its interlinear decipherment (t170.tsv: 194 cipher words, 154 with a gloss, 73 of them h/m confidence); glosses drift left of their words and were assigned by word order.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "key from source",
+   "technique": [
+    "EM alignment"
+   ],
+   "what": "Key fitted on 69 confident cipher-word/gloss pairs of LXXII 170 by hard-EM monotone alignment (build_key.py, key.tsv): homophonic letter substitution with word division kept, e.g. + a, x/y e, s/5/1/3 i, r o, n n, H t, 6 r, o d, q u, {sg} c, 2+ l, p p, 4 s, 8 m, m g, = b; numerals are code words for persons. Held-out fifth over four splits: 57-74% of letters, limited by the glosses' legibility and alignment.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "transcription",
+   "what": "Sign-by-sign transcription of the two bare letters with the 170 token set plus new tokens (glyphs.md 'New in 252/142'): MAP CXXXVII 252 (t252.tsv: 14 lines, 121 cipher words, 595 signs, 7 clear words, 4 numerals) and MAP LXXXIX 142 (t142.tsv: 37 lines, 209 cipher words, 1109 signs, 132 clear words, 13 numerals). New tokens {dbar} {3bar} {eq3} {Hp} {B} {h} {pbar} {T} {nn} {phi} {/o/}; {Hp} is the form 170 transcribed # in 'letere'. No decipherment or gloss on either letter. The 142 dateline reads '+ In nom[e] d[i] d[io] a dì xvj di gennaio 1478', not 'In Roma'.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "transcription",
+   "what": "Bare letters transcribed with the same tokens: t252.tsv (121 cipher words, 595 signs) and t142.tsv (209 cipher words, 1,109 signs); new signs {Hp}, {dbar}, {pbar}, {T} and others added to glyphs.md.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "solver",
+   "technique": [
+    "language-model scoring",
+    "contextual inference"
+   ],
+   "what": "Signs absent from the glossed pairs given values by it-cinquecento 5-gram hill-climbing over both letters (refine.py), then fixed by word context where the LM chose badly: {pbar}/{dbar} p, {Hp} tt, b f, g ss, c e (key_refined.tsv).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "reading",
+   "what": "Draft decryption of both bare letters (draft252.txt, draft142.txt) reads as Italian through most words: 252 on a papal brief and fear that Antonio del Palagio, Pagolo Rucellai and Lionardo di Giunta will be seized; 142 (Mazzinghi) on a bull annulling privileges, a cruel process against the Medici, and Iacopo de' Rossi da Pistoia and a Pistoiese called Cola, with 'ordinò la morte di [30]'. Look-alike signs (o/q, #/h, t) still misread in places.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "transcription",
+   "what": "Parallel session (PR #301), 2307 without the sibling key: First pass of 89/142, 29 sign classes, 1055 signs.",
    "result": "partial"
   },
   {
@@ -135,7 +174,7 @@
    "technique": [
     "plaintext matching"
    ],
-   "what": "2307: Paired the 72/170 gloss with its cipher; only 'publichamente mostra lectere' aligned with confidence.",
+   "what": "Parallel session (PR #301), 2307 without the sibling key: Paired the 72/170 gloss with its cipher; only 'publichamente mostra lectere' aligned with confidence.",
    "result": "partial"
   },
   {
@@ -145,7 +184,7 @@
     "simulated annealing",
     "language-model scoring"
    ],
-   "what": "2307: Homophonic annealer on it-cinquecento; collapsed onto all-i.",
+   "what": "Parallel session (PR #301), 2307 without the sibling key: Homophonic annealer on it-cinquecento; collapsed onto all-i.",
    "result": "failed"
   },
   {
@@ -155,7 +194,7 @@
     "simulated annealing",
     "language-model scoring"
    ],
-   "what": "2307: Same with a letter-frequency KL penalty and swap moves; Italian came out (contra di voi molto crudele, molte volte, grandissimo).",
+   "what": "Parallel session (PR #301), 2307 without the sibling key: Same with a letter-frequency KL penalty and swap moves; Italian came out (contra di voi molto crudele, molte volte, grandissimo).",
    "result": "worked"
   },
   {
@@ -164,7 +203,7 @@
    "technique": [
     "simulated annealing"
    ],
-   "what": "2307: 537-sign Italian passage in a random 29-sign homophonic key: 655/667 letters right.",
+   "what": "Parallel session (PR #301), 2307 without the sibling key: 537-sign Italian passage in a random 29-sign homophonic key: 655/667 letters right.",
    "result": "worked"
   },
   {
@@ -174,41 +213,14 @@
     "contextual inference",
     "manual reconstruction"
    ],
-   "what": "2307: Second transcription pass in 3x crops and word-by-word reading; merged sign classes resolved from context.",
+   "what": "Parallel session (PR #301), 2307 without the sibling key: Second transcription pass in 3x crops and word-by-word reading; merged sign classes resolved from context.",
    "result": "partial"
   }
  ],
  "outcome": {
-  "method": "key recovered from ciphertext-only",
-  "method_basis": "The key came from a solver run on the ciphertext alone and was read out word by word; the one sibling gloss pair checked agrees but was not used to build it.",
-  "class": "read in part",
-  "key": "partial",
-  "fraction_read": 0.587,
-  "fraction_read_method": "measured",
-  "contribution": [
-   "transcription",
-   "decipherment with ambiguous key",
-   "sender or date identified"
-  ],
-  "verification": [
-   "matched control",
-   "historical consistency"
-  ],
-  "provenance": "project",
-  "notes": "2307: 111 of 189 cipher words read, 30 doubtful, 48 open (fraction_read is for 2307). 2320 not yet transcribed. In progress: sibling key rebuild from LXXII 170 next.",
-  "gaps": [
-   {
-    "item": "2320 (CXXXVII 252), whole letter",
-    "blocker": "not-attempted"
-   },
-   {
-    "item": "48 open cipher words and about 30 doubtful ones from merged sign classes",
-    "blocker": "not-attempted"
-   },
-   {
-    "item": "code numerals 2, 3, 10, 12, 30, 40 and groups olop, ov+, cop, oxP",
-    "blocker": "open-codes"
-   }
-  ]
+  "class": "not read",
+  "verification": [],
+  "method": "not solved",
+  "key": "none"
  }
 }
