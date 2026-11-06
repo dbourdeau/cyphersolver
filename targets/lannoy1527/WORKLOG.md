@@ -1,0 +1,25 @@
+# Work log — lannoy1527 (catalogue 1562)
+
+- 2026-11-06 images: IIIF manifest fetched; full-size leaves 0009r-0012v stitched from 1500-px tiles (server refuses larger regions); `img/`.
+- 2026-11-06 inspection: cipher on 9r (2 short runs), 9v (~40 lines), 10r (~22), 10v (~25), 11r (~11); the vetting note (10r, 11r only) corrected.
+- 2026-11-06 key search: soria1523 keys A and B compared by code groups: no fit (different group inventory).
+- 2026-11-06 key search: Kolosova 2017 thesis downloaded (RODERIC); Lannoy's Ko.5 letter table shares signs (11, 4, 3, 7, ∠, ff, g#, #, +), code table does not fit.
+- 2026-11-06 key search: BRAH 9/15 key book (R9815-R9832) re-checked for these groups: no match (Ferdinand-era keys).
+- 2026-11-06 key search: DECODE list/view dumps (Soria, Lannoy, RAH 9/29-9/41): no Lannoy-Soria record.
+- 2026-11-06 key search: Tomokiyo spanish2.htm (Galende 1992 summary): Soria keys with Charles V, Ferdinand, Sicily, Leyva; none with Lannoy.
+- 2026-11-06 crib search: CSP Spain III.2 Feb-Apr 1527 and Villa's Memorias index: no copy of this letter; Soria to the Emperor 15 Mar 1527 in Villa p. 71 not legible in the OCR.
+- 2026-11-06 transcription: sign legend written (transcription/LEGEND.md); two agents transcribing 9r/9v/11r and 10r/10v from full-resolution crops.
+- 2026-11-06 solver: cardona1517's wsa5 annealer copied to solve/ and compiled (WSL gcc); es.lm built from Villa + Danvila MHE 37 + Soria readings (2.64 M letters).
+- 2026-11-06 control: noisy matched control (Danvila MHE 38, 1001 tokens, 43 signs, 110 groups, 5% misread): 93-95% of sign tokens, 17-39% of group tokens (solve/control_noisy.log).
+- 2026-11-06 solver trial 1 (partial transcription, 687 tokens, 16 runs x 2M): top 3 runs agree on 96-99% of sign tokens; output reads as Spanish (platica, ciudad, parcialidades, republica, el papa, neutral). Key (unchecked): tz=a 4=o s=n o=e <=i 3=r 7=u d=t L=y j=d X=c tt=l 11=s +==p 5=m.
+- 2026-11-06 transcription fix: two 4-like signs split (closed 4 with descender = o; open tall 4-shape `4s` = s), found from c-o-s-a / o-d-i-o-s-a; agents told to revise.
+- 2026-11-06 hypothesis: 9r L02-03 'por via de 11 -o- E o V tz 3 tz 11 g#' = por via de Ferrara (E=f, V=rr) if 11 -o- / 11 g# are start/end marks (cf. Lannoy's markers, Kolosova p. 64).
+- 2026-11-06 transcription done (two agents): 9r 10 tokens, 9v 1008, 10r 624, 10v 596, 11r 260; new signs listed in each file header.
+- 2026-11-06 solver trial 2 (2494 tokens, 20 runs x 3M): top 7 runs agree on 97-100% of sign tokens.
+- 2026-11-06 transcription fix: agent A's 'z' (small z with a foot, 9v/11r) is a different sign from agent B's crossed 'z' (10r/10v, = d); renamed 'zu' (= u: nuestras, apuntamiento).
+- 2026-11-06 solver full run (2494 tokens, 22 runs x 6M, after fixing a comment-filter bug that dropped runs starting with '#'): top 4 runs agree on 100% of sign tokens.
+- 2026-11-06 code groups by context (solve/kwic.py): dri que, leb de, den no, lue es, ral con, lab las, fip galeras, muc/mur la, moc/mor los, mic/mir lo, lie esto, loe esta/este, gis haze, ges ha, cem para, zer muy, sem todo, sim toda, fib porque, dan si, pre su Magestad, lae el, nat papa, pof como, goq Francia, cam por, tin aqui, bil fab hasta aqui, dun aunque, zir mas, fob orden, zar mucho, pif assi, lee ello.
+- 2026-11-06 key: polyvalent signs to = g/a, # = e/q, ff = i/e (as P = a/g in Soria's key A); V = rr (Ferrara, Navarro); o^ = ie (qualquiera); 11, g#, -o- frame marks (g# = ha in text).
+- 2026-11-06 reading: reading_aligned.txt written run by run; images checked for 10r L07/L25/L29 (to = g in gasto, a in armada/buena) and 9v L08/L11 (the 4/4s split).
+- 2026-11-06 measure (solve/measure.py, difflib alignment to the decode): 2332/2441 cipher tokens read = 95.5%; open: 13 single code groups (names), blotted/faint spots (9v L25, L34), doubtful words marked [?].
+- 2026-11-06 verification: docs/_validate.py on validation.tsv (2325 read tokens): reading -1.917/letter, random keys -4.566 (z 7.0), shuffled refit -2.785 (z 79.4): pass.

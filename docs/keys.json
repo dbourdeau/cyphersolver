@@ -2441,7 +2441,8 @@
 {"id": "k-vaudreuil1757-272", "label": "Vaudreuil's first numerical sheet of 1757 (ANOM COL C11E 10, sheet e001295272)", "kind": "archive key", "by": "Vaudreuil (governor of New France)", "year": 1757, "note": "The other numerical sheet of the 1757 pair; it gives nonsense on the letter of August 1760."},
   {"id": "k-tomokiyo-este", "label": "Cardinal d'Este's Cipher 1584-1586 (Tomokiyo's table, built on BnF fr. 16041-16042)", "kind": "scholar's key", "by": "Satoshi Tomokiyo (Cryptiana)", "year": 1584, "note": "Homophonic symbol alphabet with nulls and a few code words (Roy, le pape, qui, Monsieur), reconstructed by Tomokiyo from Luigi d'Este's letters to Villeroy in fr. 16041-16042 (Cryptiana henryiii.htm). Applied by Brice Dudout to Colbert 338 p. 523 with new shape names and three changes (targets/este1585/key.tsv)."},
 {"id": "k-burr1804", "label": "Burr's stroke-and-figure cipher, July 1804 (GLC01523)", "kind": "rebuilt here", "by": "cyphersolver", "year": 1804, "note": "Simple substitution: a-f = 5 down to 0, g-i = 6-8, l = 10, m-u = Roman II-X, three odd signs for v, w, y; recovered from 132 signs of the letter."},
-{"id": "k-burr1808", "label": "Burr's number Vigenere, 1808 (period 6, shifts 6 18 22 7 24 8)", "kind": "rebuilt here", "by": "cyphersolver", "year": 1808, "note": "Vigenere over a=1 ... z=26, period 6, key running through the letters; recovered from 973 numbers of three letters to Theodosia."}
+{"id": "k-burr1808", "label": "Burr's number Vigenere, 1808 (period 6, shifts 6 18 22 7 24 8)", "kind": "rebuilt here", "by": "cyphersolver", "year": 1808, "note": "Vigenere over a=1 ... z=26, period 6, key running through the letters; recovered from 973 numbers of three letters to Theodosia."},
+{"id": "k-soria-lannoy1527", "label": "Lope de Soria - Charles de Lannoy cipher, Genoa 1527: homophonic signs and three-letter code, recovered ciphertext-only", "kind": "rebuilt here", "by": "cyphersolver (Claude Opus 5.5)", "year": 1527, "found": 2026, "note": "Letter signs recovered by joint annealing (wsa5 from cardona1517) on a 1520s Spanish model, no crib; 47 of 61 code groups valued by context (dri que, leb de, fip galeras, pre Su Magestad); polyvalent to g/a, # e/q, ff i/e; frame marks 11, g#, -o-. targets/lannoy1527/key.tsv."}
  ],
  "links": [
 {"key": "k-meister-poggio", "target": "farnese1541", "how": "adapted", "note": "Meister's key no. 2, \"Cifra ultima con Mons. Poggio\", read polyphonically and corrected on the letter: b/c = 02 (printed \"or\"), s/z/et = 1, null 11, ci = 24, co = 26 (not printed); key no. 1 as printed does not fit"},
@@ -3906,7 +3907,8 @@
 {"key": "k-vaudreuil1757", "target": "vaudreuil1760", "how": "adapted", "note": "Same volume as the key lead; 700 cells transcribed from the images and 33 corrected from the letter and the alphabetical sheet; reads 96.0% of the groups."},
 {"key": "k-tomokiyo-este", "target": "este1585", "how": "adapted", "note": "Tomokiyo's table applied to Colbert 338 p. 523 with our shape names, alpha with a tail = f, the large looped rho = a, the barred dumbbell = e (a null in his table, left open) and newt = nn added by reading; 88.5% of words read, key not validated by the glossed pages of the volume (held-out M5 0.457, partial)."},
 {"key": "k-burr1804", "target": "burr1804", "how": "rebuilt from", "note": "from the cipher lines of the letter alone"},
-{"key": "k-burr1808", "target": "burr1808", "how": "rebuilt from", "note": "index of coincidence and column frequencies on the cipher alone"}
+{"key": "k-burr1808", "target": "burr1808", "how": "rebuilt from", "note": "index of coincidence and column frequencies on the cipher alone"},
+{"key": "k-soria-lannoy1527", "target": "lannoy1527", "how": "rebuilt from", "note": "recovered from this letter's ciphertext alone (top annealing runs agree on 100% of sign tokens); 95.5% of cipher tokens read, 14 single code groups open"}
  ],
  "sources": [
   {
@@ -4559,7 +4561,8 @@
 {"source": "s-cyphersolver", "key": "k-dormer1694"},
 {"source": "s-tomokiyo", "key": "k-tomokiyo-este"},
 {"source": "s-cyphersolver", "key": "k-burr1804"},
-{"source": "s-cyphersolver", "key": "k-burr1808"}
+{"source": "s-cyphersolver", "key": "k-burr1808"},
+{"source": "s-cyphersolver", "key": "k-soria-lannoy1527"}
  ],
  "unlinked": {
   "kopp1921": "Not solved: no key recovered or identified.",
@@ -5470,6 +5473,10 @@
 {"key": "k-lasry-gl", "target": "raince", "note": "redundant: Raince's own GL.htm key already applied; the other tables are other correspondents' ciphers (23 Oct 2026)"},
 {"key": "k-thomson-we007-jay", "target": "livingston1781", "note": "the line's numbers looked up in Jay's numbering give twelve, into, el, en, sha, their, edge: the line is in the lost copy"},
 {"key": "k-vaudreuil1757-272", "target": "vaudreuil1760", "note": "the first numerical sheet of the pair; the commonest groups (235, 661, 642, 309) give nonsense"},
-{"key": "k-alfonso1576", "target": "ariosto1559", "note": "Este simple substitution of 1576; applied once to the training lines before any learning, it does not read the letter (also tried: the keys of ercole1559, francescoeste1546, bresegno1548)"}
+{"key": "k-alfonso1576", "target": "ariosto1559", "note": "Este simple substitution of 1576; applied once to the training lines before any learning, it does not read the letter (also tried: the keys of ercole1559, francescoeste1546, bresegno1548)"},
+{"key": "k-soria-a", "target": "lannoy1527", "note": "Soria's key A (1523): different code groups (cap que, lod de); does not fit"},
+{"key": "k-soria-b", "target": "lannoy1527", "note": "Soria's key B (1523-27): code initials z y x t s p (zog de, sub que); does not fit"},
+{"key": "k-kolosova", "target": "lannoy1527", "note": "Lannoy's cipher with Charles V (Kolosova Ko.5): several sign shapes shared, values and code not (11 is a there, a frame mark here; mnr con, mop en absent)"},
+{"key": "k-brah915-keybook", "target": "lannoy1527", "note": "BRAH 9/15 key book looked through for these groups: Ferdinand-era tables, no match"}
  ]
 }
