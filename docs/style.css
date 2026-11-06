@@ -1286,6 +1286,7 @@ body.pg-catalogue tr.e:hover td{background:color-mix(in srgb,var(--gold) 9%,tran
 body.pg-catalogue td.prio b{font-family:var(--display);font-size:1.35rem;color:var(--gold);font-weight:normal}
 body.pg-catalogue td.date{font-family:var(--mono);font-size:.76rem;color:var(--ink2)}
 body.pg-catalogue td.date .num{display:block;color:var(--muted);font-size:.7rem;margin-top:.2rem}
+body.pg-catalogue table.cat td.item{border-left:0;margin:0}
 body.pg-catalogue td.item a.t{color:var(--head);font-weight:600;border:0}
 body.pg-catalogue tr.e:hover td.item a.t{color:var(--gold2)}
 body.pg-catalogue td.item .sub{display:block;font-size:.84rem;color:var(--muted);margin-top:.2rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -1329,7 +1330,7 @@ body.pg-solve .dots.diff i.on{background:var(--red)}
 body.pg-solve .btns{display:flex;flex-wrap:wrap;gap:.6rem;margin:.8rem 0}
 body.pg-solve .btns a{font-family:var(--ui);font-size:.88rem;padding:.45rem .9rem;border:1px solid var(--gold);border-radius:8px}
 body.pg-solve .btns a.primary{background:var(--gold);color:var(--gold-ink)}
-@media (max-width:760px){body.pg-solve .facts{grid-template-columns:1fr}body.pg-solve .facts dt{padding-top:.5rem}body.pg-solve .agentbox .sticker{--sz:4.6rem;top:-2.2rem;right:-.3rem}body.pg-solve .agentbox .copy{right:4.6rem}}
+@media (max-width:760px){body.pg-solve .facts{grid-template-columns:1fr}body.pg-solve .facts dt{padding-top:.5rem}body.pg-solve .agentbox .sticker{--sz:4.6rem;top:-2.2rem;right:-.3rem}body.pg-solve .agentbox .copy{right:auto;left:1rem;top:.8rem}body.pg-solve .agentbox pre{padding-top:3.4rem}}
 /* further: the readings left partial (further.html) and one page per reading (docs/further/<slug>.html, also pg-solve) */
 body.pg-further .hero h1 .stk{white-space:nowrap}
 body.pg-further .hero h1 .stk .sticker{--sz:5.8rem;margin:-.5rem 0 -.9rem .7rem}
@@ -1397,6 +1398,7 @@ body.pg-further table.cat.fur col.c-date{width:10%}
 body.pg-further table.cat.fur col.c-item{width:52%}
 body.pg-further table.cat.fur col.c-gaps{width:30%}
 body.pg-further table.cat.fur td.date{font-family:var(--mono)}
+body.pg-further table.cat.fur td.item{border-left:0;margin:0}
 body.pg-further table.cat.fur td.prio b{font-size:1.15rem;white-space:nowrap}
 body.pg-further table.cat.fur .pill{color:var(--ink2);border-color:var(--rule)}
 body.pg-further td.gaps{line-height:1.9}
@@ -1409,6 +1411,34 @@ body.pg-further1 .gap.w{color:var(--gold-ink);background:var(--gold);border-colo
 body.pg-further1 ul.gaplist,body.pg-further1 ul.esc{padding-left:1.1rem}
 body.pg-further1 ul.gaplist li,body.pg-further1 ul.esc li{margin:.45rem 0;color:var(--ink2);font-size:.95rem}
 body.pg-further1 ul.esc{list-style:none;padding-left:0}
+/* further.html on a phone: cards in place of the table (as the catalogue), search and sort pinned under the nav */
+body.pg-further #msort{display:none}
+@media (max-width:760px){
+  body.pg-further .hero{overflow-wrap:anywhere}
+  body.pg-further .hero h1{font-size:2.3rem}
+  body.pg-further .steps{display:grid;grid-template-columns:1fr 1fr;gap:.55rem .8rem;font-size:.85rem}
+  body.pg-further .qbar{position:sticky;top:3.25rem;z-index:30;margin:1rem -1.2rem .8rem;padding:.55rem 1.2rem;background:var(--bg);border-bottom:1px solid var(--rule);gap:.4rem .8rem}
+  body.pg-further .qbar input[type=search]{flex:1 1 100%;min-width:0;max-width:none;padding:.3rem .8rem;border-radius:999px}
+  body.pg-further .qbar .only{font-size:.8rem;flex:1 1 auto}
+  body.pg-further .qbar #msort{display:inline-block;max-width:9rem;padding:.28rem .4rem;border:1px solid var(--rule);border-radius:999px;background:var(--bg);color:var(--ink2);font:inherit;font-size:.85rem}
+  body.pg-further .qbar .count{margin-left:auto;font-size:.75rem;white-space:nowrap}
+  body.pg-further .tw{overflow:visible;margin:0;border:0;border-radius:0;background:none;width:auto;left:auto;transform:none}
+  body.pg-further table.cat.fur{display:block;min-width:0;width:auto;font-size:.92rem}
+  body.pg-further table.cat.fur colgroup,body.pg-further table.cat.fur thead{display:none}
+  body.pg-further table.cat.fur tbody{display:block}
+  body.pg-further table.cat.fur tr.e{display:grid;grid-template-columns:auto 1fr;gap:.25rem .7rem;align-items:start;align-content:start;margin:0 0 .6rem;padding:.7rem .85rem;border:1px solid var(--rule);border-radius:var(--radius);background:var(--bg2);content-visibility:auto;contain-intrinsic-size:auto 150px}
+  body.pg-further table.cat.fur tr.e[hidden]{display:none}
+  body.pg-further table.cat.fur tr.e td{display:block;padding:0;border:0;background:none}
+  body.pg-further table.cat.fur td.prio{grid-area:1/1;text-align:left;line-height:1.1}
+  body.pg-further table.cat.fur td.date{grid-area:1/2;align-self:center}
+  body.pg-further table.cat.fur td.item{grid-area:2/1/auto/-1}
+  body.pg-further table.cat.fur td.item .sub{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;white-space:normal}
+  body.pg-further table.cat.fur td.gaps{grid-area:3/1/auto/-1;margin-top:.25rem;line-height:1.7}
+  body.pg-further .legend{flex-direction:column;gap:.35rem}
+  body.pg-further1 .hero h1{font-size:2rem}
+  body.pg-further1 .facts{grid-template-columns:1fr}
+  body.pg-further1 .btns a{flex:1 1 100%;text-align:center}
+}
 /* goldbar */
 body.pg-goldbar .freqchart{width:100%;max-width:760px;height:auto;color:var(--ink);margin:1rem 0;display:block}
 body.pg-goldbar .cg{font-family:var(--mono);font-size:0.8rem;line-height:1.85;color:var(--gold2,#e7c87a);word-break:break-all}
