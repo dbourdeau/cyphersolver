@@ -577,7 +577,11 @@
   {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): R9491 and R9494-96 re-read on the 5 Oct 2026 measured readings (kb_r9491.txt, kb_r9494.txt); the per-document grades had been given on the superseded read_r9491_b.md and read_r9494.md. Both build sentences with single code groups open; per-document C overturned to B twice. Claim unchanged.", "result": "worked", "technique": ["language-model scoring", "statistical test"]},
   {"date": "2026-10-23", "kind": "verification", "technique": ["language-model scoring", "contextual inference"], "what": "Verify v8: R9494 reading (R9494_reading.md) scored with v2_score.py: 0.583 explicit holes (7/12), 0.333 plain, hole rate 0.118; two of four sentences carry three code-group holes. Back to decoded, not read; class read -> read in part; fraction_read 0.966 -> 0.873.", "result": "failed"},
   {"date": "2026-10-23", "kind": "verification", "what": "Consistency pass (cl): outcome.gaps now mirrors the NOTES list (R9498 beyond block 1, not-attempted, added). 'Read in part' stays unjustified while R9498 is uncollated; NOTES already Status: in progress.", "result": "partial", "technique": ["statistical test"]},
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 4 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 4 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
+  {"date": "2026-11-06", "kind": "transcription", "what": "R9498 block 2 (f. 583v, five lines under block 1; img P2 left) transcribed sign by sign from the full-size image. It carries all of R9497's block 2 and f. 579r cipher; R9498 has no other cipher (ff. 581r-582v, 584r clear).", "result": "worked"},
+  {"date": "2026-11-06", "kind": "reading", "technique": ["plaintext matching", "manual reconstruction"], "what": "R9498 block 2 collated with R9497 block 2 and f. 579r: every spelled word agrees (apretado, Antonioto Adorno, pague, republica, deven, capitulacion, Leon, acometido, Martin Centurion, palar, nada). New: pac = sobre (R9497 spells it), tec = me, z = m (me, acometido in both copies), R9498 homophones n+ = p, two-ring sign = i; yic = -do confirmed. paf, sud, sab, xag, xob, tin, xa, pes are the same groups in both copies: no new evidence, so paf [tiempo] and sud [respuesta] stay context-only.", "result": "worked"},
+  {"date": "2026-11-06", "kind": "hypothesis", "technique": ["manual reconstruction", "key-structure hypothesis"], "what": "Block 1 l. 9: R9497 'xip 4qbz z7a yeb' against R9498 'xip 4qbzr tec a yeb'. With z = m established, z7a is m-e-a: 'y lo mismo me a dicho de parte del principe de Salerno', with yeb the participle; the context guess '[hara] el dicho' (z7a as a code group) withdrawn. The two signs read [y] [o] after Salerno are R9497's closer (long-tailed p flourish + gto; R9498 has only g+o and closer signs there).", "result": "worked"},
+  {"date": "2026-11-06", "kind": "verification", "technique": ["language-model scoring"], "what": "Re-measured (measure/measure.py): 13 Aug 1523 404/408 units = 99.0% (was 401/410 = 97.8%); overall 3,415/3,531 = 96.7%; fraction_read with R9494-96 counted unread 3,087/3,531 = 0.874 (was 0.873). The R9498 gap is closed; every remaining gap now has an outside blocker.", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "es-golden-age", "file": "validation.tsv", "tokens": 1804, "types": 39, "tokens_per_type": 46.26, "score": -2.005, "nulls": {"random keys": {"n": 200, "mean": -5.453, "sd": 0.384, "max": -4.552, "z": 9.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.472, "sd": 0.011, "max": -3.459, "z": 137.0, "p": 0.1429}}, "power": -1.999, "verdict": "pass", "notes": "claimed per-occurrence score -1.896; polyphony 0.023; 159 unread tokens left out; annealer on the real text from random keys reached -1.999"}, 
   "method": "key recovered from ciphertext-only",
@@ -588,7 +592,7 @@
    "sender or date identified"
   ],
   "class": "read in part",
-  "fraction_read": 0.873,
+  "fraction_read": 0.874,
   "grades": "unknown",
   "verification": ["key confirms", "historical consistency", "statistical test"],
   "notes": "Read under the 95% rule (5 Oct 2026, measured 96.6%). The two short key-B letters of 20 and 26 July stay at 90-92%: their open groups are single-occurrence key-B codes (taf, tu, zib, sib, tac, xif, tad, te, per, tep, zu, tol ...) with no attestation in the R9844 crib, the duplicates or print. Key-A codes rip (4x), pur (3x), qed (2x), dus (2x), cop (1x) unread: context suggests Venetians, V. Magestad, Swiss, but there is no second source.",
@@ -614,18 +618,13 @@
     "detail": "three copies collated; they spell the same groups; not in the R9844 crib (was open-codes)"
    },
    {
-    "item": "R9497 paf, sud, xuf, z7a (context-only values)",
+    "item": "R9497 paf, sud, xuf yic (context-only values)",
     "blocker": "no-key-material",
-    "detail": "R9498 collated; values bounded only by the code's alphabetical blocks"
-   },
-   {
-    "item": "R9498 beyond block 1 not collated",
-    "blocker": "not-attempted",
-    "detail": "block 2 and f. 579r of R9497 read without it"
+    "detail": "R9498 collated in full (block 1 30 Sept, block 2 6 Nov 2026) and writes the same groups; values bounded only by the code's alphabetical blocks"
    }
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "measure/measure.py over measure/r_june.txt, r_july.txt (aligned to keyA_june.txt, keyA_r9492_v2.txt) and measure/kb_r9491.txt, kb_r9492.txt, kb_r9494.txt, kb_r9497.txt: cipher units (one sign or one code group), read only if the word is unbracketed and passes the lexicon/LM sense test; context-only values count unread. 3,412/3,533 (5 Oct 2026). Per letter: June 99.5, July body 98.0, July post data 98.9, 20 July 90.0, 26 July 91.9, 13 Aug 97.8. 23 Oct 2026, verify v8: R9494-96 back to decoded, not read (0.583 clean sentences on explicit holes); 3,412 - 328 = 3,084 of 3,533 units in letters that read = 0.873. Withdrawn: 0.966.",
+  "fraction_read_source": "measure/measure.py over measure/r_june.txt, r_july.txt (aligned to keyA_june.txt, keyA_r9492_v2.txt) and measure/kb_r9491.txt, kb_r9492.txt, kb_r9494.txt, kb_r9497.txt: cipher units (one sign or one code group), read only if the word is unbracketed and passes the lexicon/LM sense test; context-only values count unread. 3,412/3,533 (5 Oct 2026). Per letter: June 99.5, July body 98.0, July post data 98.9, 20 July 90.0, 26 July 91.9, 13 Aug 97.8. 23 Oct 2026, verify v8: R9494-96 back to decoded, not read (0.583 clean sentences on explicit holes); 3,412 - 328 = 3,084 of 3,533 units in letters that read = 0.873. Withdrawn: 0.966. 6 Nov 2026, R9498 block 2 collated: 13 Aug 404/408 (z7∞ = 'me a'; two closer signs no longer counted); overall 3,415/3,531, less R9494-96's 328 = 3,087/3,531 = 0.874.",
   "key": "partial",
   "codes_open": {
    "open": 30,
