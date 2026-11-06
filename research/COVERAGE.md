@@ -1,6 +1,6 @@
 # Sweep coverage: what has not been swept
 
-As of 5 Nov 2026 (sweeps A, B and D of 4 Nov added at the end; Riksarkivet Turcica/Polonica and Calames rows updated 5 Nov). This is an index: each sweep's own README or `coverage.md` holds the detail, and the folder named on
+As of 5 Nov 2026 (sweeps A, B and D of 4 Nov added at the end; Riksarkivet Turcica/Polonica and Calames rows updated 5 Nov; BNP and KB swept 5 Nov). This is an index: each sweep's own README or `coverage.md` holds the detail, and the folder named on
 each row is the source. No archive was contacted to write this file, so a block is as the sweep recorded it, and may
 have lifted since. A sweep that closes a gap removes its row here.
 
@@ -26,7 +26,6 @@ done, and search with `research/archive_sweep_2026-10/known.py` before starting.
 | Italian state archives | Turin, Genoa | No shelfmarks |
 | Italian state archives | Naples, Palermo | Shelfmarks, but no sweep of the archives themselves |
 | German libraries | Wolfenbüttel HAB (Extravagantes; `diglib.hab.de` resets from this network, printed Heinemann catalogue grepped in `sweep_2026-11_german_portals_2`) | Almost nothing |
-| National libraries | Portuguese BNP, Dutch KB | No sweep |
 | Other | Africa | Little or nothing |
 
 ## Tried and blocked
@@ -78,6 +77,8 @@ permission (`chrome_pass_2026-11`).
 | DECODE Sforzesco | R5297-R5587: 13 thumbnails and one PDF of 169 records | `venice_milan_decode` |
 | JACAR | 144 undated volume hits not opened; `cands_raw.json` is git-ignored | `jacar` |
 | Abhilekh Patal | "cypher" paged to 691 of 4,505 | `asia_india` |
+| BNP Lisbon | Keyword search only for the COD./MSS./PBA. shelves (Tarouca, Forjaz, Fontes Pereira de Melo crawled whole); "sinais" stopped part-way on 503s (one request a second works); Correlo 1970 (Nisa ciphers), the printed Santarém correspondence and Cluny 2006 (Tarouca) unread | `sweep_2026-11_bnp_portugal` |
+| KB The Hague | Catalogue covered through SRU + OAI (4,040 manuscript records, ~200 read in full); `kb.on.worldcat.org` shows Cloudflare and was not tried in Chrome (adds nothing the SRU route lacks); Delpher full text of the KB annual reports and the Literatuurmuseum catalogue not reached. No KB cipher item has scans online | `sweep_2026-11_kb_netherlands` |
 | NARA M1194 | No search for "decipher" across all 261 rolls; only cards the bulk scan flagged were read | `nara_triage_c` |
 | QDL | No Arabic or Persian terms; 23,753 hit pages not screened as images | `qdl` |
 | BnF | Bellièvre papers not yet screened: fr. 15890, 15892-15905, 15907-15911; fr. 15900 (2) has no Gallica ark (15906, 15900 (1) and 15891 swept 5 Nov 2026) | `gallica_sweep` |
