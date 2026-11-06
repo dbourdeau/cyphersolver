@@ -49,7 +49,7 @@ MAP_ROWS += [
         year=1513, date='27 Oct 1513 ("In Vagliadulit", closing on the verso)',
         title='Francesco Guicciardini, Florentine ambassador in Spain, Valladolid, 27 October 1513: about 40 lines of sign cipher in three long blocks, bare, endorsed as deciphered',
         correspondents="Francesco Guicciardini (signed \"Fr. de Guicciardinis Dr. Ambasciator\"), Valladolid -> Lorenzo di Piero de' Medici",
-        place='Valladolid', language='Italian (sign cipher between clear passages)', region='Italy', period='16th century',
+        place='Valladolid', language='Italian (sign cipher between clear passages)', region='Italy', period='1497-1559',
         shelfmark='Archivio di Stato di Firenze, Mediceo avanti il Principato, filza CXXXVII, doc. 619 (c. 627)',
         folio_note='c. 627r: clear opening (5 lines), then three blocks of dense sign cipher (Greek-like and Latin-like letters, E, C, ω, '
                    'with superscript digits 1-3 over many signs), about 40 lines in all, separated by clear sentences ("V. M.tia che '
@@ -72,7 +72,7 @@ MAP_ROWS += [
         title='Giovanni Corsi, Florentine orator at the court of Ferdinand the Catholic, Valladolid and Madrid, Oct 1513 - Apr 1514: four letters and three contemporary copies with bare letter-and-figure cipher',
         correspondents="Giovanni Corsi (signed \"Jo. Cursius or.\", \"Joannes Cursius or. apud Cath. M.tem\", \"Giovanni Corsi\") -> Lorenzo di Piero de' Medici",
         place='Valladolid, Madrid', language='Italian (letter/figure cipher with superscript indices between clear words)',
-        region='Italy', period='16th century',
+        region='Italy', period='1497-1559',
         shelfmark='Archivio di Stato di Firenze, Mediceo avanti il Principato, filza CXXXVII, docs. 620 (c. 628 bis), 621 (c. 629, copy of 620), 622 (c. 630, copy of a letter of 29 Jan 1514), 623 (c. 631 bis), 627 (c. 635?), 628 (copy of 627), 633 (c. 641, copy)',
         folio_note='620 (Valladolid 27 Oct 1513): about 16 cipher lines in two blocks on c. 628 bis r, one on the verso; 621: "Copia di '
                    'lettera de 27 oct. 1513 da Vagliadulit", the same cipher text (about 18 lines); 622: copy of a letter of 29 Jan 1514 '
@@ -98,7 +98,7 @@ MAP_ROWS += [
         year=1514, date='26-27 [month?] 1514 ("a xxv del presente arrivai in corte del Re cath.co"; dated Valladolid ... MDXIIII on the verso)',
         title='A Florentine envoy newly arrived at the court of Ferdinand the Catholic, 1514: about 13 lines of letter-and-figure cipher, bare',
         correspondents="unidentified envoy (signature on the verso, read by the pager as \"Ant.o Pucci\"?, not checked) -> Lorenzo di Piero de' Medici",
-        place='Valladolid', language='Italian (letter/figure cipher between clear words)', region='Italy', period='16th century',
+        place='Valladolid', language='Italian (letter/figure cipher between clear words)', region='Italy', period='1497-1559',
         shelfmark='Archivio di Stato di Firenze, Mediceo avanti il Principato, filza CXXXVII, doc. 644 (cc. 652-652 bis)',
         folio_note='c. 652r: clear report of the audience, then about 13 lines of cipher (lower-case letters b, d, f, g, l, m, x and '
                    'digits, with numbers 22, 31, 42, 43, 92, 100 standing alone, probably code numbers) between clear words; the '
@@ -115,7 +115,7 @@ MAP_ROWS += [
         title='Francesco Pandolfini, Florentine orator, to the Otto di Pratica, September 1515 (contemporary copy): about 60 lines of sign cipher in a two-leaf letter, bare',
         correspondents='Francesco Pandolfini (signed "Franciscus Pandulphinus") -> the Otto di Pratica (copy for the Medici)',
         place='Vercelli? (with the papal orator and Raffaello Girolami)', language='Italian (sign cipher with superscript digits between clear words)',
-        region='Italy', period='16th century',
+        region='Italy', period='1497-1559',
         shelfmark='Archivio di Stato di Firenze, Mediceo avanti il Principato, filza CXXXVII, doc. 666 (cc. 674-674 bis)',
         folio_note='c. 674r headed "Copia della l(ette)ra del mag.co or(ato)re Franc.o Pandolphini a S(ignori) Otto di pratica": 9 clear '
                    'lines, then about 28 lines of sign cipher (3, y, g, t, 7, z, F, x with superscript digits 1-5 and bars); c. 674v: '
@@ -140,7 +140,7 @@ MAP_ROWS += [
         year=1521, date='11 Jan 1521 ("Ex Urbe die xj Januarii MDXXI"; 1522 if Florentine style)',
         title="Galeotto de' Medici, Florentine orator in Rome, 11 January 1521: seven lines of sign cipher, bare",
         correspondents="Galeotto de' Medici (signed \"Galeottus de Medicis orator\"), Rome -> \"Magnifici domini\" (the Medici government in Florence)",
-        place='Rome', language='Italian (sign cipher: Latin letters, digits, ÷, Δ, #, φ)', region='Italy', period='16th century',
+        place='Rome', language='Italian (sign cipher: Latin letters, digits, ÷, Δ, #, φ)', region='Italy', period='1497-1559',
         shelfmark='Archivio di Stato di Firenze, Mediceo avanti il Principato, filza CXXXVII, doc. 728 (cc. 736-736 bis)',
         folio_note='c. 736r: one clear line, then 7 lines of continuous cipher (z, #, 7, n, x, ÷, u, φ, Δ, 3, 4, 2, superscript o), '
                    'clear closing, date and signature; c. 736v blank; c. 736 bis v address "Mag.cis D.nis ... Florentie".',
@@ -157,7 +157,7 @@ MAP_ROWS += [
         year=1521, date='Florence, May 152[0 or 1] (733: "Florentiae ... Maij M.D.XX."; 734: "Floren. xv Maij MDXX.", last numeral unclear)',
         title="Cardinal Giulio de' Medici (the future Clement VII) to Galeotto de' Medici in Rome, May 1520/21: two letters wholly in two different sign ciphers, bare",
         correspondents="Card. Giulio de' Medici, vice-chancellor (large autograph signature \"V. Jul. vicecancell.\"; the same as on doc. 735, Rome 19 July 1523) -> Galeotto de' Medici, Rome",
-        place='Florence', language='Italian (two sign ciphers)', region='Italy', period='16th century',
+        place='Florence', language='Italian (two sign ciphers)', region='Italy', period='1497-1559',
         shelfmark='Archivio di Stato di Firenze, Mediceo avanti il Principato, filza CXXXVII, docs. 733 (c. 741) and 734 (c. 742)',
         folio_note='733 c. 741r: after "Ven. nobis dilect.", a whole page (about 28 lines) of geometric signs (squares, crosses, '
                    'T-shapes, circles, loops, dotted and double-dotted signs) evenly spaced; c. 741v: about 14 more lines, then clear '
@@ -179,7 +179,7 @@ MAP_ROWS += [
         year=1520, date='undated (filed among letters of 1520-23)',
         title='Two pages in a crude hand whose dot-separated words mostly do not read as Italian ("alpobbo", "farake", "z n s" for N.S.): possibly a word-preserving letter substitution, unglossed',
         correspondents='unidentified (signature on the next leaf read by the pager as "Fran.al ...", not checked)',
-        place='not stated', language='Italian? (disguised words, word division kept)', region='Italy', period='16th century',
+        place='not stated', language='Italian? (disguised words, word division kept)', region='Italy', period='1497-1559',
         shelfmark='Archivio di Stato di Firenze, Mediceo avanti il Principato, filza CXXXVII, doc. 747 (cc. 756-756 bis)',
         folio_note='c. 756r-v: two full pages, each word followed by a dot; many words are ordinary Italian ("amico", "molto", '
                    '"messo", "come", "papa"?), others are not ("alpobbo" repeated, "farake", "nasalji", "z n s" where "N. S." '
@@ -200,7 +200,7 @@ KEY_ROWS += [
         year=1513, date='11 Dec 1513 (626, "Ex Turegho xi x.bris") and May 1514 (636)',
         title='Two glossed letters of 1513-14 in letter-and-figure cipher with interlinear decipherment: a Medici agent with the Swiss (Zurich) and "Raffaello ..." (Rome? 1514)',
         correspondents="626: an agent at Zurich (signature read by the pager as \"S.tor ... Ghorus?\") -> Lorenzo di Piero de' Medici; 636: Raffaello [surname not read] -> a Medici patron",
-        place='Zurich; not stated', language='Italian', region='Italy', period='16th century',
+        place='Zurich; not stated', language='Italian', region='Italy', period='1497-1559',
         shelfmark='Archivio di Stato di Firenze, Mediceo avanti il Principato, filza CXXXVII, docs. 626 (cc. 634-634 bis) and 636 (c. 644)',
         folio_note='626 c. 634r: 4 cipher lines in the middle (lower-case letters, digits 2-9, H, KK, superscript indices) with '
                    'interlinear clear text in a second hand ("io ho ricercato cinque cantoni de suizeri"); c. 634v: '
