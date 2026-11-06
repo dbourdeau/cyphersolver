@@ -72,7 +72,9 @@
   function side(none){
     const sel=L.place();
     if(sel===null){
+      const top=dots.filter(d=>d.v).slice(0,8);   // draw() has sorted the dots, busiest first
       panel.innerHTML=`<p class="am-sub">Click a ring to list only the requests held in that town. The kind and source filters below change the rings too.</p>`+
+        (top.length?`<h3 class="am-h">Busiest towns</h3><ul class="am-ls">${top.map(d=>`<li><button type="button" class="linky" data-pl="${esc(d.n)}">${esc(d.n)}</button> <b>${d.v}</b></li>`).join('')}</ul>`:'')+
         (none?`<button type="button" class="am-only" data-pl="">Not on the map: ${plural(none,'request')}</button><p class="am-sub">A library or a database will do, or the archive is not yet identified.</p>`:'');
       return;
     }
