@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Read Further — 205 readings left partial</title>
 <meta name="description" content="205 historical cipher readings left partial, each with its open gaps and instructions to hand to an AI agent to take it further.">
-<link rel="stylesheet" href="style.css?v=db35c653">
+<link rel="stylesheet" href="style.css?v=a59641f6">
 <meta name="date" content="2026-10-26">
 <meta name="last-modified" content="2026-11-06">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -63,6 +63,7 @@
 <div class="qbar jsonly" id="list">
   <input type="search" id="q" placeholder="Search: name, place, year, kind of gap…" aria-label="Search the readings">
   <label class="only"><input type="checkbox" id="work"> only readings you can push further now</label>
+  <select id="msort" aria-label="Sort the readings"><option value="work">Most to do now</option><option value="frac">Most read</option><option value="y">Oldest first</option><option value="title">Title A–Z</option></select>
   <span class="count" id="count"></span>
 </div>
 <div class="tw"><table class="cat fur" id="cat">
@@ -88,13 +89,15 @@ function render(){var s=q.value.trim().toLowerCase(),n=0;rows.forEach(function(r
 rows.forEach(function(r){r.addEventListener('click',function(ev){if(ev.target.closest('a'))return;if(ev.ctrlKey||ev.metaKey)window.open(r.dataset.href);else location.href=r.dataset.href;});});
 var tb=document.querySelector('#cat tbody'),hs=[].slice.call(document.querySelectorAll('#cat th[data-sort]')),srt={k:'work',d:-1};
 function val(r,k){if(k==='title')return r.dataset.title;if(k==='work')return (+r.dataset.work)*1000+(+r.dataset.gaps);return +r.dataset[k];}
-function sortBy(k){srt.d=srt.k===k?-srt.d:(k==='title'||k==='y'?1:-1);srt.k=k;
+var ms=document.getElementById('msort');
+function sortBy(k,keep){srt.d=keep?(k==='title'||k==='y'?1:-1):srt.k===k?-srt.d:(k==='title'||k==='y'?1:-1);srt.k=k;ms.value=k;
  rows.slice().sort(function(a,b){if(k==='frac'&&(a.dataset.frac==='-1')!==(b.dataset.frac==='-1'))return a.dataset.frac==='-1'?1:-1;var x=val(a,k),y=val(b,k);return x<y?-srt.d:x>y?srt.d:(+b.dataset.frac)-(+a.dataset.frac);}).forEach(function(r){tb.appendChild(r);});
  hs.forEach(function(h){h.setAttribute('aria-sort',h.dataset.sort===k?(srt.d<0?'descending':'ascending'):'none');});}
 hs.forEach(function(h){h.addEventListener('click',function(){sortBy(h.dataset.sort);});});
+ms.addEventListener('change',function(){sortBy(ms.value,true);});
 q.addEventListener('input',render);w.addEventListener('change',render);render();
 })();
 </script>
-<script src="site.js?v=db35c653"></script>
+<script src="site.js?v=a59641f6"></script>
 </body>
 </html>
