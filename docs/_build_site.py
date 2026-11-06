@@ -416,6 +416,11 @@ PAGES = [
          blurb='Two Italian letters (DECODE R704, R721) in a third cipher of the SP 106/10 codebreaker&rsquo;s file: groups of a letter and one or two figures, with his syllables above them. Identified and separated from the file&rsquo;s other ciphers; not yet transcribed or deciphered. Split on 14 Oct 2026 from sp106box10.',
          quote='Z6 n54 m56 g42 n24 m62',
          rights='Manuscript rights: The National Archives, Kew, via DECODE'),
+    dict(slug='majesty1624', label='Report to a Majesty on Bethlen 1624', year='1624', y=1624.5, place='unknown &rarr; a Majesty', st='partial', stt='read in part',
+         title='Unsigned report to a Majesty on Gabriel Bethlen, filed with letters of 1624',
+         blurb='A German report on Bethlen, the peace with the Emperor and money for 24,000 men, in a mixed cipher deciphered between the lines at the time. Brice Dudout rebuilt the letter key from those glosses and read four of the six unglossed runs; there is no held-out part, so the key is not validated, and the addressee is probably not the Emperor.',
+         quote='the &ldquo;worthy lord&rdquo; who means next January to pursue the enemy to the utmost',
+         rights='Letter: Bayerische Staatsbibliothek M&uuml;nchen, Clm 10403 n. 65 (MDZ bsb00116451); key and reading by Brice Dudout, Europe chiffr&eacute;e'),
     dict(slug='pawel1624', label='Carl Pawel to Frederick V 1624', year='1624', y=1624.9, place='Carl Pawel &rarr; The Hague', st='solved', stt='key rebuilt',
          title='Carl Pawel to Frederick V, 25 November 1624: the key of the letter cipher',
          blurb='A report to the exiled King of Bohemia on Colonel Fuchs&rsquo;s recruiting in W&uuml;rttemberg, its cipher deciphered between the lines at the time. Brice Dudout found that its letter cipher is the alphabet of the Johann Casimir&ndash;Camerarius letters moved by three, fitted the shift on one page and tested it on the next (13 of 13 letters). The content is the period decipherment; the key and the family of keys are the new part.',
@@ -4404,6 +4409,7 @@ IMAGES['johnston1863'] = ('johnston1863_lead.jpg', 'The cipher lines of the tele
 IMAGES['milroy'] = None
 IMAGES['auckland1918'] = None
 IMAGES['deboli1788'] = None
+IMAGES['majesty1624'] = None
 IMAGES['deboli1787'] = None
 IMAGES['dahku1715'] = None
 IMAGES['delcarretto1576'] = None
