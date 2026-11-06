@@ -56572,7 +56572,8 @@
     },
     "key_check": "Riksarkivet SE/RA/202 Chifferklaver keys held on DECODE (R4282-R4341) are 17th-century Oxenstierna/Bremen keys, not for 1711 Charles XII to Funck; research/riksarkivet README lists no Funck key; none applies. Sibling volumes 6/9 (to the King) and 6/11 (drafts) are digitised but not yet opened.",
     "duplicates": "known.py on the shelfmark 'Diplomatica Turcica' and 'Charles XII' / Funck: only this sweep's candidates row; catalogue Charles XII hits are other items (Meyerfeldt Pomerania 1712-14, Bremen-Verden). No duplicate.",
-    "verdict": "open"
+    "verdict": "open",
+    "key_held": "Crib material for the same code (added 5 Nov 2026): lead 2257 (Turcica I/6/9, I/6/10, I/6/14, I/7/16; Funck, Perman, von Müllern 1710-14) carries contemporary decipherments written over the same number groups (290, 504, 204, 664, 746, 891 recur). Key not yet rebuilt from them or tested on this volume."
    },
    "access": "online",
    "repository": "riksarkivet"
@@ -67802,6 +67803,76 @@
     "verdict": "open"
    },
    "repository": "brooklyn"
+  },
+  {
+   "id": 2258,
+   "counted": true,
+   "year": 1657,
+   "date": "1657",
+   "title": "Clas Rålamb's despatches from Constantinople, 1657: number cipher, some letters glossed, others bare",
+   "correspondents": "Clas Rålamb and Gotthard Vellingk (envoys extraordinary) -> Charles X Gustav",
+   "place": "Constantinople",
+   "language": "Swedish (number code, groups 1-110 and a few in the 800s)",
+   "region": "Scandinavia",
+   "shelfmark": "Riksarkivet, Diplomatica Turcica, SE/RA/2119/2119.1/I/2/2 (E.o. ablegaterna Clas Rålamb och Gotthard Vellingk, 1657)",
+   "folio_note": "132 images (series 40008933). Cipher at image 23 (two pages of number runs with Swedish between the lines) and image 88 (letter of 12 June 1657 signed Clas Rålamb).",
+   "cls": "A",
+   "status": "Catalogue: the volume title only. Vetting 5 Nov 2026: bare number runs with no decipherment on images 104 and 114; other letters (18, 22-23, 74, 77, 87-88) carry a decipherment written over the numbers, so the code can be rebuilt from those pairs and applied to the bare passages.",
+   "why": "The Swedish embassy to Mehmed IV in 1657-58, sent to bind Transylvania into Charles X's Polish war; its ciphered reports and their decipherments give a dated 1650s Swedish chancery code.",
+   "importance": 3,
+   "solvability": 5,
+   "difficulty": 2,
+   "verify": "Page the volume for every cipher passage; rebuild the code from the interlinear pairs; compare with the Rákóczi cipher of 2119.5/4 (lead 2243) and Cantersten 1648.",
+   "links": [
+    {
+     "href": "https://sok.riksarkivet.se/arkiv/eWy9xynckH1kcXy2OkH6B5",
+     "label": "NAD record"
+    },
+    {
+     "href": "https://lbiiif.riksarkivet.se/arkis!40008933/manifest",
+     "label": "IIIF manifest"
+    },
+    {
+     "href": "https://sok.riksarkivet.se/bildvisning/40008933_00023",
+     "label": "image 23"
+    },
+    {
+     "href": "https://sok.riksarkivet.se/bildvisning/40008933_00088",
+     "label": "image 88"
+    }
+   ],
+   "source": "Riksarkivet Turcica/Polonica volume sweep (IIIF, Referer route), Nov 2026",
+   "score_note": "Scored from sampled images (24 per volume, suspects at 900 px) viewed during the Riksarkivet Turcica sweep, 5 Nov 2026 (research/sweep_2026-11_riksarkivet_turcica/)",
+   "access_note": "scans public on Riksarkivet (sok.riksarkivet.se), no login; scripts need the header Referer: https://sok.riksarkivet.se/ for the 4000xxxx image series",
+   "prior_art": "open as far as checked (5 Nov 2026): known.py finds nothing on the shelfmark or the correspondents; web search found no decipherment or edition of these letters; DECODE, Tomokiyo and Lasry not searched",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "period": "1651-1700",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-05",
+    "by": "Claude Opus 5.5, Riksarkivet Turcica vetting pass",
+    "seen": {
+     "kind": "scan",
+     "where": "Riksarkivet image series 40008933 (Diplomatica Turcica SE/RA/2119/2119.1/I/2/2, NAD https://sok.riksarkivet.se/arkiv/eWy9xynckH1kcXy2OkH6B5), contact sheets of 42 + 24 images and images 18, 22, 23, 24, 34, 68, 74, 77, 87, 88, 104, 114, 120, 126 at 760-900 px, 114 and 18 zoomed at 2400 px; Referer route, 5 Nov 2026",
+     "extent": "132 images. Number cipher in letters of Rålamb and Vellingk to Charles X Gustav, Constantinople 1657, on at least images 18, 22-23, 74, 77, 87-88, 104 and 114: runs of small groups (1-110, a few 800s and four-digit groups) inside clear Swedish, from a few groups to half-page blocks. Not paged leaf by leaf.",
+     "cipher": "Small-number code, dot-separated, in Swedish despatches. Image 114: about ten runs of 5-15 groups each (e.g. 71.6.80.8.16.70.84.34.37.17.32.36; 12.8.64.34.6; 4.40.10.41.34.37.74.34.102) with no interlinear writing, no gloss in the margin and no decipherment on the facing page, zoomed at 2400 px; image 104 shows the same bare runs at 760 px. Other letters carry a decipherment written over the numbers (22, 23, 74, 77, 87, 88; image 18 in faint lighter ink): those passages are cribs, not open text."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE: the harvested DECODE dump (research/catalogue_harvest/decode list.json and views*.jsonl, Oct 2026) has no record naming Rålamb, Vellingk, Turcica, Polonica or Tunisica; its Riksarkivet records are the Chifferklaver key boxes (låda II), Oxenstierna, Bremen and the Erik Brahe diary. Live DECODE not queried.",
+     "tomokiyo": "No entry: cryptiana's index (crypto.htm), unsolved.htm (whole page) and ai.htm fetched 5 Nov 2026 mention no Swedish diplomatic cipher of this period and none of Rålamb, Vellingk, Charles X Gustav; local unsolved.htm grepped too.",
+     "lasry": "No Lasry work: his publication list and searches on Lasry/Megyesi with Swedish, Charles XII, Christina, Charles X Gustav found nothing on these letters; local GL.htm (targets/gramont1529) has no match. DECODE itself not queried via the API.",
+     "edition": "Rålamb's diary is edited (C. Callmer, Diarium under resa till Konstantinopel 1657-1658, Historiska handlingar 37:3, 1963); not seen, appendices of despatches not confirmed. Babinger 1937 printed Hiltebrandt's narrative and Vellingk's memorandum to the Porte (secondary citation), not these despatches. No edition of the cipher despatches found.",
+     "literature": "HistoCrypt, Cryptologia and scholar searches on Swedish chancery ciphers (chiffer, chiffernyckel, Kanslikollegium, fältkansli) found no study of these letters; nearest Swedish cipher work is Waldispühl and Kopal on Heusner 1637 and the HistoCrypt key-corpus paper. Forss 2021 (Legatio, \"Knowledge and agency: the case of Claes Rålamb\") cites Turcica I vol. 3 and never mentions cipher; Turkish articles on the embassy and The Sultan's Procession (2006) say nothing on ciphers."
+    },
+    "key_check": "No printed or published key found for Swedish chancery codes of 1657. The interlinear glosses in the same volume give plaintext-cipher pairs from which the code can be rebuilt (not done).",
+    "key_in_volume": "Decipherments written over the number runs in several letters of the same volume (images 18, 22-23, 74, 77, 87-88): cribs for the same code; not a key table, not tested.",
+    "key_held": "Possible: DECODE R4201 (Riksarkivet Chifferklaver låda II 82, dated 1657, 4 pp., key record) and R4195 (låda II 76, 1658); the dump names no correspondent for either. Not tested.",
+    "duplicates": "known.py on Rålamb, Ralamb, Vellingk, Wellingk, the shelfmark 2119.1/I/2/2 and series 40008933: only this lead and its sweep files; Vellingk in catalogue 452 is Mauritz Vellingk at Hamburg 1714, another man and series. DECODE dump: no record.",
+    "verdict": "open"
+   },
+   "repository": "riksarkivet"
   },
   {
    "id": 2261,

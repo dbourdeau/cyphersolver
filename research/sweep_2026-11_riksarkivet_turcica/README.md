@@ -57,3 +57,19 @@ catches volumes where cipher is common: "no cipher seen" is not "no cipher".
 - Muscovitica, Gallica, Italica, Hollandica volumes: sweep D made sheets but never viewed them; they can now be rebuilt with
   `rik_sheet.py` (same Referer route if any are 4000xxxx).
 - DECODE, Tomokiyo and Lasry were not searched for these rows; web search found no edition or decipherment.
+
+## Vetting pass (5 Nov 2026, same day)
+
+`vet.py` writes the vetting blocks; prior art (DECODE dump, cryptiana, Lasry, editions, literature) found no decipherment,
+edition of the cipher letters or printed key for any of the five.
+
+| Lead | Outcome | Why |
+|---|---|---|
+| 2258 Rålamb 1657 | **promoted** to catalogue | bare number runs on images 104 and 114 beside glossed letters (18, 22-23, 74, 77, 87-88) |
+| 2257 Bender code | closed `read` | every passage seen is glossed; recorded as crib material on catalogue **#1769** (`vetting.key_held`) |
+| 2256 Poniatowski | closed `partly_read` | glossed throughout except 10-15 tail lines; cipher in images 253-335, May-Oct 1712, plus a letter cipher "de Mr de Grothus" |
+| 2259 Cantersten | closed `partly_read` | one glossed letter (images 9-11), a few bare rows |
+| 2260 Molinari | **held** (`vetting.pending`) | 16-18 pages of bare digit cipher, but image 365 is marked "Dubbletten dechifferad" and Jerad's 2015 edition (unseen) may print the text |
+
+Possible held keys, untested: DECODE R4201 (Chifferklaver låda II 82, 1657) and R4195 (1658) for Rålamb; R4160 and R4172
+(1648) for Cantersten.
