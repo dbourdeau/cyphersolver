@@ -38,7 +38,7 @@ def size(path):
                     while b == b'\xff': b = f.read(1)
                     if not b: break
                     if b[0] in (0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7, 0xC9, 0xCA, 0xCB, 0xCD, 0xCE, 0xCF):
-                        h, w = struct.unpack('>xHH', f.read(5)); out = (w, h); break
+                        _, _, h, w = struct.unpack('>HBHH', f.read(7)); out = (w, h); break  # length, precision, height, width
                     if b[0] in (0xD8, 0xD9, 0x01) or 0xD0 <= b[0] <= 0xD7: continue
                     f.seek(struct.unpack('>H', f.read(2))[0] - 2, 1)
     except (OSError, struct.error):
