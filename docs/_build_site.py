@@ -196,7 +196,7 @@ PAGES = [
          blurb='Catalogued as a ciphered letter of &ldquo;Augurellio&rdquo;, it is a report from the Bavarian agent J&ouml;rg Weinmeister, who signs in cipher, on King John&rsquo;s siege of Palota in 1533. The homophonic key of the volume&rsquo;s System A&prime; was recovered from contemporary glosses on a sibling letter and on this one (adjacent plaintext), and 96.7% of the letter&rsquo;s words are deciphered.',
          quote='&ldquo;er sol von solchen sachen des morgens, wan er nuechter sei, mit ime reden&rdquo;',
          rights='Bayerisches Hauptstaatsarchiv, via DECODE R9407'),
-    dict(slug='gonzaga1542', label='Charles V to Ferrante Gonzaga 1542', year='1542', y=1542.61, place='Mont&oacute;n &rarr; Palermo', st='partial', stt='read in part',
+    dict(slug='gonzaga1542', label='Charles V to Ferrante Gonzaga 1542', year='1542', y=1542.61, place='Monz&oacute;n &rarr; Palermo', st='partial', stt='read in part',
          title='Charles V to Ferrante Gonzaga, 11 August 1542',
          blurb='A letter of the Emperor to his viceroy of Sicily, catalogued as an unread numeric cipher: no money for the infantry, the galleys and La Goleta, the Turkish fleet, and the French effort coming to Perpignan. Prabal Gupta found the key from the sign statistics of the letter alone: a consonant sign with a small digit that adds the vowel. 94% of the cipher words read.',
          quote='&ldquo;el mayor esfuer&ccedil;o de los franceses viene a la frontera de Perpi&ntilde;&aacute;n&rdquo;',
@@ -3179,7 +3179,11 @@ def outcome_html(p):
     m = p.get('method')
     if not m: return ''
     ext = {'complete': 'complete', 'partial': 'partial', 'none': 'text not obtained', 'n/a': ''}[p['extent']]
-    if p['extent'] == 'partial' and p.get('frac'): ext += f' ({round(100 * p["frac"])}% of the cipher)'
+    if p['extent'] == 'partial' and p.get('frac'):
+        pct = 100 * p['frac']
+        # a partial reading must not round up to the bar or to 100% (94.7% shown as 95%, 99.5% as 100%)
+        shown = f'{pct:.1f}' if round(pct) != int(pct) and (round(pct) >= 95 > pct or round(pct) == 100 > pct) else str(round(pct))
+        ext += f' ({shown}% of the cipher)'
     if M.key_only(m, p['extent']): ext = 'none (key obtained, text not read)'   # George Lasry, 24 Oct 2026
     if p.get('parts') and len({x[1] for x in p['parts']}) > 1:      # several targets, several methods
         bits = [f'{f}: <a href="glossary.html#{M.KEY[pm]}">{pm}</a> ({pe})' for f, pm, pe in p['parts']]
