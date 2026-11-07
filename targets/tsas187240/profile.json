@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "target": "tsas187240",
+  "title": "Cairo Geniza bifolio with Hebrew-letter and glyph cipher blocks, Cambridge University Library T-S AS 187.240",
+  "documents": [
+    {
+      "id": "tsas187240",
+      "shelfmark": "Cambridge University Library, Taylor-Schechter Additional Series 187.240 (PGP 42435)",
+      "date": "unknown",
+      "country": "Egypt",
+      "route": "unknown",
+      "language": "unknown",
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No edition or reading found (Hebrew-script sweep, 6 Nov 2026)."
+      },
+      "length": {
+        "tokens": 28,
+        "distinct": 15,
+        "unit": "mixed",
+        "measured": true,
+        "file": "transcription_hebrew_block.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "https://images.lib.cam.ac.uk/iiif/MS-TS-AS-00187-00240-000-00002.jp2",
+        "image_quality": "poor",
+        "notes": "First pass of the Hebrew-letter block only, from a downsized crop, doubtful letters marked ?. The glyph block (about 120 signs) and the plain Hebrew lines are not transcribed. Counts cover the Hebrew-letter block only."
+      },
+      "read": "not read",
+      "year": "unknown"
+    }
+  ],
+  "system": {
+    "types": [
+      "unknown"
+    ],
+    "summary": "Hebrew-letter word groups in dotted words and a block of invented glyphs, probably one formula in two codes; system not established.",
+    "symbol_kind": "unknown",
+    "distinct_symbols": "unknown",
+    "diacritics": {
+      "used": "unknown"
+    },
+    "homophones": {
+      "used": "unknown"
+    },
+    "nomenclator": {
+      "present": "unknown"
+    },
+    "nulls": {
+      "present": "unknown"
+    },
+    "key_order": "unknown",
+    "word_division": "separator symbol",
+    "doubled_letters": "unknown",
+    "sibling_key": "unknown",
+    "notes": "Strings of 2-4 Hebrew letters that are not Hebrew words, repeated on several lines; the second glyph unit repeats the first."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "unknown",
+      "where": "No reading found in the Princeton Geniza Project, DECODE, Tomokiyo, Lasry or the sweep's literature check; Cambridge's catalogue and the Geniza researchers (Elbaum, Bohak) not yet asked. PGP record 42435 read 6 Nov 2026: pen-trial bifolio, no transcription, translation or bibliography.",
+      "found": "unknown",
+      "used": false
+    },
+    "inputs": [
+      "images"
+    ],
+    "attack": "ciphertext-only",
+    "human_role": "The user chose this target from the Arabic and Hebrew sweeps and asked for an attempt.",
+    "tools": [
+      "none"
+    ],
+    "models": [
+      "unknown"
+    ],
+    "sessions": "unknown",
+    "first_date": "2026-11-06",
+    "last_date": "2026-11-06"
+  },
+  "solution": [
+    {
+      "date": "2026-11-06",
+      "kind": "literature search",
+      "what": "Hebrew-script sweep: Princeton Geniza Project cipher tag, Bohak 2010, Cambridge Genizah blog, DECODE harvest, Tomokiyo, Schmeh; no reading of AS 187.240 found.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-06",
+      "kind": "access",
+      "what": "Fetched both Cambridge IIIF images by curl (2000 px); looked at crops of the glyph side.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-06",
+      "kind": "transcription",
+      "what": "First-pass transcription of the Hebrew-letter block (28 words, 15 distinct) from a downsized crop, with doubtful letters marked.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-06",
+      "kind": "access",
+      "what": "Fetched native-resolution IIIF tiles (5286 x 4628) of both sides; lines legible but cursive letters ambiguous.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-06",
+      "kind": "hypothesis",
+      "technique": [
+        "key-structure hypothesis"
+      ],
+      "what": "Recurring two- and three-letter groups compared by eye with the 72 trigrams of the Shem ha-Meforash as a possible known plaintext; not tested on a checked transcription.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-06",
+      "kind": "transcription",
+      "what": "Second pass at native resolution: ten lines of side 1, doubtful letters marked; letters ambiguous on crops.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-06",
+      "kind": "crib",
+      "technique": [
+        "plaintext matching"
+      ],
+      "what": "Eyeball comparison of recurring groups with the 72 trigrams and the 42-letter name; no run of three groups matched; not a computed test.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-11-06",
+      "kind": "statistics",
+      "technique": [
+        "statistical test",
+        "plaintext matching"
+      ],
+      "what": "Tokens of the repeated formula (final forms collapsed) tested as substrings of the 42-letter name and the 72 trigrams against shuffled baselines: 42-letter name 5 of 15 hits, P=0.002; 72 trigrams no signal. Post hoc, doubtful readings.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-06",
+      "kind": "transcription",
+      "what": "Three subagents transcribed side 1 blocks A-D, side 2 Hebrew lines and the glyph block (28 glyph codes); low to medium confidence.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-06",
+      "kind": "solver",
+      "technique": [
+        "exhaustive search",
+        "statistical test"
+      ],
+      "what": "Isomorph search of the 19-letter Hebrew frame (and halves) against every window of the 72 trigrams and the 42-letter name: no match; glyph formula checked for alignment with the Hebrew frame: 7 words vs 9, no parallel.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-11-06",
+      "kind": "solver",
+      "technique": [
+        "exhaustive search",
+        "key matching"
+      ],
+      "what": "All 21 alphabet shifts, atbash, albam, ayak-bekar and reversal applied to the 9-group frame; no running Hebrew.",
+      "result": "ruled out"
+    }
+  ],
+  "outcome": {
+    "method": "not solved",
+    "method_basis": "Not attempted beyond a first transcription: the usable ciphertext is small and the system is not yet identified.",
+    "contribution": [
+      "none"
+    ],
+    "class": "not read",
+    "fraction_read": 0,
+    "verification": [
+      "none"
+    ],
+    "notes": "In progress. Needs a clean transcription at native resolution, a reading of the plain Hebrew lines as cribs, and contact with Elbaum and Bohak."
+  }
+}
