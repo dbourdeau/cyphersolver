@@ -27,3 +27,14 @@ records (record_type 1, R5380, R5391, R5415-R5468, R5472-R5474). PDFs in `pdf/`,
 5447, 5457, 5467), F (R5459, 5460, 5463-5465), G (clear letters with cipher passages: R5422, 5436, 5440, 5442, 5446, 5451,
 5452, 5461, 5472-5474), H (R5448, 5449), I (R5453, 5462), J (R5380, 5391, 5439). R5421, R5423, R5431, R5432, R5468 are clear
 leaves or wrappers, not ciphers. Families are a proxy for keys: split further when a key sheet is matched.
+
+## 6 Nov 2026 (later): families F and E, key matching attempted, no match
+Viewed R5460 (cart. 153, family F) at 330 dpi. It is Italian, about 330 signs in 8 lines of continuous cipher with a few clear
+words inside (a line has "cum ... Re de Franza"), then a clear postscript: "Lo figliolo de lo signor Tiberto hogi e partito de
+qui, licentiato sotto pretensione de la fera che ritornera de qui a uno mese". So the language is fifteenth-century Italian and
+the clear tail names Tiberto (Brandolini, d. 1455) as the context. Sign inventory by eye: #, 8, infinity, o-bar-o, phi, perp, T,
+double-stroke "ff", "tt", "bb", barred q and p, slashes; some arabic numerals (12, 2, 8) are mixed in.
+Compared by eye with the alphabet rows of key sheets R5329-R5344 (Ottone del Carretto, Antonio da Trezzo, Bartolomeo da Recanati,
+Angelo de Amelia ...): the Angelo de Amelia keys (R5337, R5341) use tally-like bar and dot signs and a nomenclator of
+"o-bar-o" groups, close in kind to F but not shape-for-shape; nothing confirmed. The remaining ~85 key sheets were not
+compared in detail. A match needs a transcription of R5460 as sign tokens and a column-by-column check, not an eyeball scan.
