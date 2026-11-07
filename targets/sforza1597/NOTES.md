@@ -133,3 +133,20 @@ State at the end of this session: R5464 partly decoded (about 8 % of letters in 
 fixes by eye, key locking and editing, doubles and nulls marked), (2) hand-built key-sheet columns (read the sheets by eye, 23 letters x up
 to 5 signs) to test each of the 115 against the four alphabets properly, (3) the Milan inventory entry for cart. 1597 (fetch via Chrome)
 to learn sender and date and so which key sheet applies.
+
+## 7 Nov 2026 (end): shape-family check, coarse families, Chrome leads
+- **Independent check of the R5464 key.** The solver never sees sign shapes, yet its letter groups are visually coherent families
+  (`ctts/h64_keytable*.png`, medoid sign per cluster): all four V-clusters (V, V with dot, ...) -> e; the phi shapes -> o; the q/9 shapes -> n;
+  the R shapes -> s; the left-arrow shapes -> i; x-with-loop shapes -> a; perp-with-dot and = -> r; o-bar-o and = -> t. This is how the Sforza
+  keys are built (a letter's homophones are variants of one base sign), so the main letters of the key are very probably right.
+- Coarse tokenisations (22 / 26 / 30 / 36 shape families, 3 homophones, 180 s): dictionary coverage of the decryption 4.9 / 6.0 / 6.9 % against
+  8 % for 60 clusters: the true alphabet is not just the families. The remaining letters (c, v, d, h, p, m, g, f) are the weak part.
+- **Milan inventory (VS 2/1)**: the host resets the connection from this machine (curl, WebFetch and Chrome all fail), so it is not a bot check.
+- **Senatore and Tricarico, Dispacci sforzeschi da Napoli VIII/1 (2022)**, https://www.iris.unina.it/retrieve/4a7500c7-3240-42f4-922c-4a69ec731e6b/
+  (Cloudflare check passes by itself after about 8 s in Chrome; the PDF viewer gives no text, pages are read from screenshots, page box accepts a number):
+  inventory with regesti of the Sforza correspondence from Naples, 8 Sept 1451 - 31 Dec 1459 (ASMi, Sforzesco 195-201), says letters in cipher
+  without a contemporary decipherment "sono state tutte decifrate" and has a section of Tavole with the reconstructed ciphers (Antonio da Trezzo
+  and others; the 1597 box holds two late-19th-century reconstructions used for them). If R5464 and the other letters are Naples dispatches of
+  those years, their contents are summarised there and the key tables are printed there. Not yet matched (the Tavole section is near the end,
+  about pp. 340-363; not read).
+Open: read the Tavole of that inventory and compare with the four alphabets; hand-read key sheet columns; CTTS GUI iteration on R5464.
