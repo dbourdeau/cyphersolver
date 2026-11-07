@@ -202,3 +202,12 @@ Senatore and Tricarico, Dispacci sforzeschi da Napoli VIII/1 (2022), Tavole (PDF
 Pilot: lines 1-5 of R5464 P1 (numbered boxes + current cluster, `hand_lines.py`, ~210 boxes), judged by appearance only. About 10 % of boxes were doubtful and most of those were not wrong labels but: smudges and blots at line starts (1-3 boxes per line), two signs joined by a descender/ascender of a neighbouring line into one box (labelled as the double-circle cluster), the double-circle sign written with a gap and boxed as two circles (lines 4 and 5, three times), and shapes whose box width the features ignore (o-bar-o filed with the double-circle cluster, a "7" too).
 Automatic fixes tried from this: blind splitting of wide boxes (1.9x median: 17.4 %, 2.3x: 19.6 % against 19.9 %: no gain, many wide signs are genuine); hairline removal (no change in box counts); stronger aspect weight in the features (3.0: 20.3 %, 5.0: 21.4 %: no gain); **merging adjacent ring-shaped boxes** (`SR_RING=14`, both boxes with an interior hole, gap <= 14 px): 58 merges, coverage 19.9 -> 21.6 %, refined 27.1 -> 27.5 % with a lower word cost (19,324 -> 18,355). Adopted: `ctts/r5464_best/` and the CTTS project (2,031 + 1,248 symbols, loads in CTTS 3.7) and the review draft were regenerated with it.
 What remains is not systematic: smudges, descender joins between lines (a per-box judgement), faint or missing signs, and ambiguous shapes: that is the work left for a hand pass in CTTS. Estimate of its value: the errors I could name are about 10 % of the boxes; simulation says 8 % errors cost about 7 points of letter accuracy, so a clean transcription could lift the 27 % to the mid-30s, not to a full reading.
+
+## Hand correction pass on R5464 (7 Nov 2026)
+Every line of P1 (50) and P2 lines 1-3 viewed by eye against numbered boxes; edits (delete, merge, split, relabel) in `ctts/hand_edits.json`,
+applied by `apply_edits.py`, then `token_rules.py` pair rules (3,279 boxes -> 3,169 tokens). P1 line 50 is the archive stamp, not cipher (deleted).
+P2 lines 1-3 matched the page; the rest of P2 was not reviewed.
+Dictionary-word coverage of the solver decryption (5-12 letter words): ring-merge 0.216, rules only 0.232, edits lines 1-17 + rules 0.242,
+lines 1-31 + rules 0.250, lines 1-46 + rules 0.248, all edits + rules 0.242. The gain over rules only is about one point, inside run-to-run noise:
+the 15-25 px scan resolution, not the box list, is the limit. R5464 stays read in part; next step needs the ASMi high-resolution images
+(`asmi_request_draft.md`, unsent).
