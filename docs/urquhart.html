@@ -7,7 +7,7 @@
 <meta name="description" content="Thomas Urquhart's Cyphral Octastich of 1652 is a book cipher on his own Jewel: the k-th number indexes the first word of the needed initial on page k." data-full="Thomas Urquhart's Cyphral Octastich of 1652 is a book cipher on his own Jewel: the k-th number indexes the first word of the needed initial on page k. The rule, published by Vals AI in August 2026, was applied to a fresh transcription and tested without the plaintext (238 of 284 first-occurrence hits against 0.43 for controls); 274 of the 285 numbers give the letter the verse requires, including line 5, which that publication left open. The rule claimed for the companion distich does not reproduce.">
 <link rel="stylesheet" href="style.css?v=7fd9e8bc">
 <meta name="date" content="2026-09-16">
-<meta name="last-modified" content="2026-10-26">
+<meta name="last-modified" content="2026-11-07">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -60,7 +60,7 @@
 <p class="readjump"><a href="#texts">Go to the transcriptions &darr;</a></p><!-- /readjump -->
   <p class="sub"><em>The Jewel</em> (1652), final leaf · eight lines and a “Decagram”, 285 numbers to 201 · <em>Logopandecteision</em> (1653), “The Cyphral Distich”, 64 numbers to 70 · Schmeh’s Top 50, no. 28</p>
   <p class="sub">The rule Vals AI published on 31 August 2026 was applied to the EEBO-TCP text of <em>The Jewel</em> and a fresh transcription of the octastich&rsquo;s 285 numbers from the 1983 edition, without using their plaintext; 238 of 284 numbers are first-occurrence hits against 0.43 for both controls. 274 of the 285 numbers give the letter the verse requires, including line 5, which Vals left open; one letter of it is still open. The rule claimed for the distich does not reproduce.</p>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-16">16 September 2026</time> &middot; updated <time datetime="2026-10-26">26 October 2026</time></p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-16">16 September 2026</time> &middot; updated <time datetime="2026-11-07">7 November 2026</time></p>
 <p class="outcome">Method &middot; octastich book cipher on The Jewel (1652): number k -> first word with the needed initial on physical page k: <a href="glossary.html#known">read with known key</a> (complete) &middot; distich: construction unknown: <a href="glossary.html#notsolved">not solved</a> (none)</p><!-- /outcome -->
 <p class="credits">Credits &middot; <a href="contributors.html#valsai">Vals AI</a> (earlier solution) &middot; <a href="contributors.html#schmeh">Klaus Schmeh</a> (transcription) &middot; <a href="contributors.html#scheers">David Scheers</a> (transcription, pointer to a source)</p><!-- /credits -->
 <div class="seal partial" aria-hidden="true"><span>known key</span></div>
@@ -76,7 +76,7 @@
 <dt>The cipher</dt><dd>A book cipher on initials: the <em>k</em>-th number is a word index into page <em>k</em> of the 1652 <em>Jewel</em>, taking the first word on the page that begins with the wanted letter.</dd>
 <dt>How it was read</dt><dd>The habit makes the rule testable without plaintext: 238 of 284 numbers are first-occurrence hits, against 0.43 for the same numbers shuffled and 0.44 for random pages. The poem then decrypts as a prayer for Charles II and his reign.</dd>
 <dt>Credit</dt><dd>Vals AI published this rule and plaintext on 31 August 2026, with nine letters of line 5 unresolved. Here line 5 is decrypted except one letter.</dd>
-<dt>Still open</dt><dd>274 of the octastich&rsquo;s 285 numbers give the letter the verse requires; one letter of line 5 is open, and one falls on a page the digitised text lacks. The distich is not deciphered: 34 of 64 hits is chance, and no English.</dd>
+<dt>Still open</dt><dd>274 of the octastich&rsquo;s 285 numbers give the letter the verse requires; one letter of line 5 (position 149) is open; position 158, once thought to fall on a page the digitised text lacks, was resolved on 20 October 2026 from Scheers&rsquo;s photographs (it is printed page [158], used twice by Urquhart), which gives 275 of 285 (section 06). The distich is not deciphered: 34 of 64 hits is chance, and no English.</dd>
 </dl>
 </div>
 
@@ -245,7 +245,7 @@ scores &minus;2.94 per letter against &minus;2.72 to &minus;2.97 for shuffled nu
 <ul>
 <li>Measured against the verse (<code translate="no">measure_sense.py</code>, 5 October 2026), 274 of the octastich&rsquo;s 285 numbers give the required letter (96.1%): 233 exactly
 and 41 within two words of the first occurrence. The distich is another construction and is counted on its own: none of its 64 numbers is deciphered. (Pooled, the two would make 274 of 349, 78.5%, which is neither cryptogram&rsquo;s result.)</li>
-<li>Number 149, line 5: word 2 of p. 149 is &ldquo;Colonel&rdquo;, where the line wants a one-letter word. The 1652 page would show whether Urquhart&rsquo;s copy differs there.</li>
+<li>Number 149, line 5: word 2 of p. 149 is &ldquo;Colonel&rdquo;, where the line wants a one-letter word. David Scheers checked the EEBO page images (14 October 2026) and found &ldquo;Colonel&rdquo; there too, so 149 stands as a slip in the book.</li>
 <li>Number 158, line 5: resolved on 20 October 2026 from David Scheers&rsquo;s photographs of the 1652 pp. 156&ndash;159. No leaf is missing; Urquhart used printed
 page [158] for numbers 158 (<em>when</em>, W) and 159 (<em>hand</em>, H). Counting it, the octastich stands at 275 of 285 (96.5%).</li>
 <li>Nine numbers (55, 66, 106, 151, 207, 232, 239, 250, 283) point at a word that does not give the letter, and no word within two places does. Each was re-checked on
@@ -623,13 +623,13 @@ and David Scheers&#x27;s suggested variants (20 Oct 2026, `distich_scheers_varia
 </ul>
 <!-- cite:start -->
 <details class="cite" id="cite"><summary>Cite this page</summary>
-<p class="citetext">Daniel Bourdeau, David Scheers and Klaus Schmeh, “Urquhart’s Cyphral Octastich (1652) and Distich (1653)”, Cyphersolver, posted 16 September 2026, updated 26 October 2026, https://cyphersolver.com/urquhart.html.</p>
-<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau, David Scheers and Klaus Schmeh, “Urquhart’s Cyphral Octastich (1652) and Distich (1653)”, Cyphersolver, posted 16 September 2026, updated 26 October 2026, https://cyphersolver.com/urquhart.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-urquhart,
+<p class="citetext">Daniel Bourdeau, David Scheers and Klaus Schmeh, “Urquhart’s Cyphral Octastich (1652) and Distich (1653)”, Cyphersolver, posted 16 September 2026, updated 7 November 2026, https://cyphersolver.com/urquhart.html.</p>
+<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau, David Scheers and Klaus Schmeh, “Urquhart’s Cyphral Octastich (1652) and Distich (1653)”, Cyphersolver, posted 16 September 2026, updated 7 November 2026, https://cyphersolver.com/urquhart.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-urquhart,
   author = {Daniel Bourdeau and David Scheers and Klaus Schmeh},
   title = {Urquhart’s Cyphral Octastich (1652) and Distich (1653)},
   year = {2026},
   howpublished = {Cyphersolver},
-  note = {posted 16 September 2026, updated 26 October 2026},
+  note = {posted 16 September 2026, updated 7 November 2026},
   url = {https://cyphersolver.com/urquhart.html}
 }">Copy BibTeX</button></p>
 </details>

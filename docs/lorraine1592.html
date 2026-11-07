@@ -7,7 +7,7 @@
 <meta name="description" content="BnF Français 3621 no. 97, listed on DECODE as Non-decrypted, with no key published anywhere." data-full="BnF Français 3621 no. 97, listed on DECODE as Non-decrypted, with no key published anywhere. A contributor recovered a key from the ciphertext alone on 18 September 2026; a re-transcription against that key on 22 September showed the system to be a reciprocal letter-pair substitution in ordinary cursive letters, with doubling dots, a null and partly syllabic figures. 844 of 1,102 cipher tokens get a value, but the running text has a gap in almost every line: decoded, not read.">
 <link rel="stylesheet" href="style.css?v=7fd9e8bc">
 <meta name="date" content="2026-09-18">
-<meta name="last-modified" content="2026-10-26">
+<meta name="last-modified" content="2026-11-07">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -58,8 +58,8 @@
 <div class="parties"><figure class="party sender"><img src="portrait_charles-iii-of-lorraine.jpg" width="192" height="192" decoding="async" alt="Charles III of Lorraine" title="Charles III of Lorraine: Portrait, workshop of François Clouet, 16th century. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Charles III of Lorraine</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_comte-de-vaudemont.jpg" width="192" height="192" decoding="async" alt="Comte de Vaudémont" title="Comte de Vaudémont: Drawing, anonymous, 1530s (Gaignières collection, BnF). Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Comte de Vaudémont</figcaption></figure></div><!-- /parties -->
 <p class="readjump"><a href="#texts">Go to the transcriptions &darr;</a></p><!-- /readjump -->
   <p class="sub" data-term-ok>BnF Fran&ccedil;ais 3621 no. 97, f. 109 &middot; the Duke writes to his son in the field about promises not kept, pioneers and munitions, Chasteauvillain and the quarters of La Fauche &middot; DECODE record 9449 lists it as <em>Non-decrypted</em> and no key has been published, but Satoshi Tomokiyo reported reading it in 2025 (opening line only published; this reading is therefore an independent re-solution, not a first break; found after this reading)</p>
-  <p class="sub">Key recovered from the ciphertext alone on 18 September by a contributor &middot; re-transcribed from the page against that key on 22 September: every letter stands for its partner in eleven fixed pairs &middot; most cipher tokens get a value, but the running text has a gap in almost every line, so the letter is decoded, not read; special signs, eleven figures and four runs still open</p>
-  <p class="meta">Arya Sanketbhai Patel &middot; posted <time datetime="2026-09-18">18 September 2026</time> &middot; updated <time datetime="2026-10-26">26 October 2026</time></p>
+  <p class="sub">Key recovered from the ciphertext alone on 18 September by a contributor &middot; re-transcribed from the page against that key on 22 September: every letter stands for its partner in eleven fixed pairs &middot; most cipher tokens get a value, but the running text has a gap in almost every line, so the letter is decoded, not read; special signs, ten figures and three runs still open</p>
+  <p class="meta">Arya Sanketbhai Patel &middot; posted <time datetime="2026-09-18">18 September 2026</time> &middot; updated <time datetime="2026-11-07">7 November 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#ct">key recovered from ciphertext-only</a> &middot; Extent: none (key obtained, text not read)</p><!-- /outcome -->
 <p class="credits">With <a href="contributors.html#arya">Arya Sanketbhai Patel</a> (solution) &middot; Also credited &middot; <a href="contributors.html#tomokiyo">Satoshi Tomokiyo</a> (unpublished earlier solution)</p><!-- /credits -->
 <div class="seal stuck" aria-hidden="true"><span class="long">ciphertext-only</span></div>
@@ -74,7 +74,7 @@
 <dt>The cipher</dt><dd>A reciprocal letter-pair substitution (a/i, b/p, c/f &hellip;) in cursive letterforms, doubling dots, a looped &aelig; as null word-divider, and partly syllabic figures.</dd>
 <dt>How it was read</dt><dd>A contributor recovered a 44-symbol key from the ciphertext alone on 18 September 2026; a line-by-line re-transcription on 22 September gave the simpler key.</dd>
 <dt>Credit</dt><dd>The 18 September key recovery was contributed by aryasn2026 in pull request #4.</dd>
-<dt>Still open</dt><dd>Most special signs, 11 of the 14 figures and four garbled runs; no second letter in this cipher is known.</dd>
+<dt>Still open</dt><dd>Most special signs, 10 of the 14 figures and three garbled runs; no second letter in this cipher is known.</dd>
 </dl>
 </div>
 
@@ -223,7 +223,7 @@ At 71.5% the letter is below the 95% at which a text counts as complete, and the
 </table>
 
 <h2 id="residuals"><span class="num">07</span>What remains uncertain</h2>
-<p>315 tokens are not deciphered. Each open piece, with the reason it is open:</p>
+<p>258 tokens (1,102 less the 844 deciphered after the 5 October pass; 315 of 1,105 on the 22 September count) are not deciphered. Each open piece, with the reason it is open:</p>
 <ul>
 <li><b>Re-measured 5 October 2026.</b> After a further pass on 5 October 2026, <strong>844 of 1,102 tokens (76.6%)</strong> are deciphered (<code translate="no">measure_reread.py</code>); 787 (71.4%) also pass a lexicon check (<code translate="no">measure_sense.py</code>). These count tokens in recognised words, not sentences: read as a text, the decode has a gap in almost every line, and the letter is decoded, not read (reading audit, 22 October 2026). Settled: &lambda;, &gamma;, U, &pi; and m&#772; are nulls, and L18&rsquo;s run reads <i>l&rsquo;effect du dict</i>; <i>quelq</i>, <i>auld&hellip;is</i> and <i>promes</i> were downgraded to M because they fail the lexicon check. Open: the special signs &#359; (12 tokens), &#8857; where it is not s, &alpha;, &#42775;, E, the figure-4, a Z and V (about 60 tokens with their words); ten single figures (14 tokens; 98 = <i>ville</i> fits but so do other nouns); the garbled runs of L12, L13 and L20 (about 35 tokens), legible at full IIIF resolution but not decodable under the pair key.</li>
 <li><b>Re-read 23 October 2026.</b> The graded re-read of 5 October was written out as running text with the clear lines (<code translate="no">ct/no97_partial_reading.md</code>, with English), the standalone crossed t taken as a null (eight of eight places between complete words). One sign in five is still open, and only about one sentence in seven holds: the letter stays decoded, not read. DECODE R9449 and R9444 were opened again (one image, no attachment), and the DECODE record list and the BnF keys of 1580&ndash;1600 were searched for a key in this pair system; none was found (fr. 3623 no. 23, R9453, is the Bienvenut&ndash;Nevers key of 1590). A key or duplicate may survive in the Lorraine ducal archive (Archives d&eacute;partementales de Meurthe-et-Moselle), not consulted.</li>
@@ -608,13 +608,13 @@ Vous me [?promes] par delà pour […] l&#x27;effect du dict Chasteau[v]ilain, a
 <p class="muted">Transcriptions, key, scripts and controls: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/lorraine1592" rel="noopener">targets/lorraine1592/</a> in the repository.</p>
 <!-- cite:start -->
 <details class="cite" id="cite"><summary>Cite this page</summary>
-<p class="citetext">Arya Sanketbhai Patel, “Charles III of Lorraine to Vaudémont, 18 June 1592”, Cyphersolver, posted 18 September 2026, updated 26 October 2026, https://cyphersolver.com/lorraine1592.html.</p>
-<p class="citebtns"><button type="button" data-copy="Arya Sanketbhai Patel, “Charles III of Lorraine to Vaudémont, 18 June 1592”, Cyphersolver, posted 18 September 2026, updated 26 October 2026, https://cyphersolver.com/lorraine1592.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-lorraine1592,
+<p class="citetext">Arya Sanketbhai Patel, “Charles III of Lorraine to Vaudémont, 18 June 1592”, Cyphersolver, posted 18 September 2026, updated 7 November 2026, https://cyphersolver.com/lorraine1592.html.</p>
+<p class="citebtns"><button type="button" data-copy="Arya Sanketbhai Patel, “Charles III of Lorraine to Vaudémont, 18 June 1592”, Cyphersolver, posted 18 September 2026, updated 7 November 2026, https://cyphersolver.com/lorraine1592.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-lorraine1592,
   author = {Arya Sanketbhai Patel},
   title = {Charles III of Lorraine to Vaudémont, 18 June 1592},
   year = {2026},
   howpublished = {Cyphersolver},
-  note = {posted 18 September 2026, updated 26 October 2026},
+  note = {posted 18 September 2026, updated 7 November 2026},
   url = {https://cyphersolver.com/lorraine1592.html}
 }">Copy BibTeX</button></p>
 </details>

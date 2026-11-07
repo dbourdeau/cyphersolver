@@ -7,7 +7,7 @@
 <meta name="description" content="The coded telegram from 'Tanaka' at Swatow to Sun Yat-sen ('Rosamonde Tokio'), 3 April 1916, intercepted by the Japanese Foreign Ministry (JACAR B03050738800): standard Chinese telegraph code&hellip;" data-full="The coded telegram from 'Tanaka' at Swatow to Sun Yat-sen ('Rosamonde Tokio'), 3 April 1916, intercepted by the Japanese Foreign Ministry (JACAR B03050738800): standard Chinese telegraph code through a systematic letter condenser, whose table was recovered from the ciphertext alone. The text reports Mo Qingyu's independence at Chaozhou and the expulsion of Sun's men from the Swatow garrison headquarters.">
 <link rel="stylesheet" href="style.css?v=7fd9e8bc">
 <meta name="date" content="2026-09-15">
-<meta name="last-modified" content="2026-10-26">
+<meta name="last-modified" content="2026-11-07">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -60,7 +60,7 @@
 <p class="readjump"><a href="#texts">Go to the full text &darr;</a></p><!-- /readjump -->
   <p class="sub">Swatow, 3 April 1916, 6.05 pm, to "Rosamonde Tokio" · intercepted by the Japanese Foreign Ministry · JACAR B03050738800 (Gaimushō 680682)</p>
   <p class="sub">The condenser table was recovered from the ciphertext alone (177 letters) by testing every table of the systematic family known from Yamada Junzaburō&rsquo;s condensers. 42 of about 44 characters are decoded; the last word, about two code groups, is garbled in the received copy. S. Tomokiyo&rsquo;s attempts with Yamada&rsquo;s own tables had failed, and no other decipherment was found.</p>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-15">15 September 2026</time> &middot; updated <time datetime="2026-10-26">26 October 2026</time></p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-15">15 September 2026</time> &middot; updated <time datetime="2026-11-07">7 November 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#ct">key recovered from ciphertext-only</a> &middot; Extent: complete &middot; <a href="atlas.html#slug=sunyatsen">On the map</a></p><!-- /outcome -->
 <p class="credits">Credits &middot; <a href="contributors.html#dudout">Brice Dudout</a> (verification) &middot; <a href="contributors.html#tomokiyo">Satoshi Tomokiyo</a> (transcription)</p><!-- /credits -->
 <div class="seal solved" aria-hidden="true"><span class="long">ciphertext-only</span></div>
@@ -76,10 +76,10 @@
 <dt>The cipher</dt><dd>A code condenser: 20 consonants and 5 vowels give 100 syllables, two syllables to one four-figure Chinese telegraph code group. The two known condenser tables are both systematic, so the family is small: 57&thinsp;600 keys with additives.</dd>
 <dt>How it was read</dt><dd>One key, scored against a Chinese character model, stands eight standard deviations above the rest. The result matches the events of 27 to 30 March 1916.</dd>
 <dt>What it says</dt><dd>A field report from the revolutionaries&rsquo; side: Chaozhou city declared independent by Mo Qingyu, Swatow recovered, then Mo ordered the force out of the garrison headquarters.</dd>
-<dt>Still open</dt><dd>港 is restored from a Morse slip, the last word (about two codes) is garbled in the received copy, and one name is unresolved. The same keys later decoded some sixty more telegrams (<a href="sunintercepts.html">sequel</a>).</dd>
+<dt>Still open</dt><dd>港 is restored from a Morse slip, the last word (about two codes) is garbled in the received copy, and one name is unresolved. Keys of the same family (one per correspondent pair) later decoded about a hundred more telegrams (<a href="sunintercepts.html">sequel</a>).</dd>
 </dl>
 </div>
-<p class="muted">Sequel: the same family of keys decodes some sixty more telegrams of Sun&rsquo;s circle from the Ministry of Communications&rsquo; intercept files, 1916&ndash;17: <a href="sunintercepts.html">Sun Yat-sen&rsquo;s circle on the wire</a>.</p>
+<p class="muted">Sequel: the same family of keys (a different key for each correspondent pair) decodes about a hundred more telegrams of Sun&rsquo;s circle (99 in the tables below, 1914&ndash;16, plus the 1917 telegrams) from the Ministry of Communications&rsquo; intercept files, 1916&ndash;17: <a href="sunintercepts.html">Sun Yat-sen&rsquo;s circle on the wire</a>.</p>
 
 <h2 id="documents"><span class="num">01</span> The documents</h2>
 <p>JACAR B03050738800 is a Foreign Ministry file of 29 April – 11 May 1916 on Sun Yat-sen's cipher telegrams. It contains (i) five telegrams
@@ -101,7 +101,7 @@ decodes the Swatow telegram.</p>
 <li><strong>Alphabet.</strong> Consonants b c d f g h j k l m n p q r s t v x y z (twenty, no w) and vowels a e i o u: the 20 × 5 = 100 syllables of a
 two-digit code condenser: each syllable stands for a pair of digits, two syllables for one four-figure codebook group, and the syllables are run
 together and cut into ten-letter "words" to be charged as one word each. 177 letters → 88 syllables → 44 groups, one letter lost.</li>
-<li><strong>Vowel u is rare</strong> (7 of 89 syllables against ~20 each for the others). In a column-major table each vowel owns a block of twenty numbers;
+<li><strong>Vowel u is rare</strong> (7 of 89 vowels against ~20 each for the others). In a column-major table each vowel owns a block of twenty numbers;
 the block 81–99, 00 is almost never a <em>page</em> number in the codebook (which stops in the 80s), so u is the high block. That already fixes the layout type.</li>
 <li><strong>Known condensers.</strong> Yamada's Guoshiguan table runs x y z b c … v across rows and u o i e a down, numbered 01–99, 00 row by row; his Michigan
 table runs b … z alphabetically and o u a e i, numbered column by column from 00. Both are pure rule tables. The natural hypothesis for "table twelve" is
@@ -137,7 +137,7 @@ behind. The table is:</p>
 <tr><th>j</th><td class="doubt">19</td><td class="ok">39</td><td class="ok">59</td><td class="doubt">79</td><td class="dim">99</td></tr>
 <tr><th>k</th><td class="ok">20</td><td class="dim">40</td><td class="dim">60</td><td class="dim">80</td><td class="ok">00</td></tr>
 </table>
-<p class="muted"><span style="color:var(--green)">Green</span>: cell confirmed by a word that makes sense (41 cells). <span style="color:var(--amber)">Amber</span>: used only in a doubtful group.
+<p class="muted"><span style="color:var(--green)">Green</span>: cell confirmed by a word that makes sense (42 cells in the table above; the working notes count 46 of the 50 distinct syllables received as confirmed). <span style="color:var(--amber)">Amber</span>: used only in a doubtful group.
 Dim: not used in this telegram. Note the u-column: k-u = 00 is confirmed twice (亦 0076, 力 0500), fixing the whole column.</p>
 
 <h2 id="reading"><span class="num">04</span> The decipherment</h2>
@@ -1902,13 +1902,13 @@ I cannot go to Jin (金, Jinshan, San Francisco?); I am returning home at once. 
 
 <!-- cite:start -->
 <details class="cite" id="cite"><summary>Cite this page</summary>
-<p class="citetext">Daniel Bourdeau, Brice Dudout and Satoshi Tomokiyo, “The Swatow telegram to Sun Yat-sen, 1916”, Cyphersolver, posted 15 September 2026, updated 26 October 2026, https://cyphersolver.com/sunyatsen.html.</p>
-<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau, Brice Dudout and Satoshi Tomokiyo, “The Swatow telegram to Sun Yat-sen, 1916”, Cyphersolver, posted 15 September 2026, updated 26 October 2026, https://cyphersolver.com/sunyatsen.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-sunyatsen,
+<p class="citetext">Daniel Bourdeau, Brice Dudout and Satoshi Tomokiyo, “The Swatow telegram to Sun Yat-sen, 1916”, Cyphersolver, posted 15 September 2026, updated 7 November 2026, https://cyphersolver.com/sunyatsen.html.</p>
+<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau, Brice Dudout and Satoshi Tomokiyo, “The Swatow telegram to Sun Yat-sen, 1916”, Cyphersolver, posted 15 September 2026, updated 7 November 2026, https://cyphersolver.com/sunyatsen.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-sunyatsen,
   author = {Daniel Bourdeau and Brice Dudout and Satoshi Tomokiyo},
   title = {The Swatow telegram to Sun Yat-sen, 1916},
   year = {2026},
   howpublished = {Cyphersolver},
-  note = {posted 15 September 2026, updated 26 October 2026},
+  note = {posted 15 September 2026, updated 7 November 2026},
   url = {https://cyphersolver.com/sunyatsen.html}
 }">Copy BibTeX</button></p>
 </details>
