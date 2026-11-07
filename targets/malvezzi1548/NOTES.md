@@ -146,7 +146,7 @@ Without the 9 slip-corrected words: 500/514 = 0.973. Control: the reading with l
 scores 19/514 = 0.037 (the code words only). The old mark-count method applied to the new file gives 0.992.
 
 ## Remaining gaps
-- p. 5 l. 18, the banker's surname after *Gulielmo* (signs give *Semaslia*) - blocker: no-key-material; every sign read, the person is not identified; Austro-Turcica 1541-1552 would name him
+- p. 5 l. 18, the lender's surname after *Gulielmo* (signs give *Semaslia*) - blocker: no-key-material; every sign read, the person is not identified; Austro-Turcica 1541-1552 would name him
 - p. 6 l. 3, a two-sign group before *nominatione* (e-sign + 8) - blocker: illegible; fits no key value as written
 - p. 6 l. 24 and p. 7 l. 1, a lone *v* sign between words (*coercendos v compescendos*, *debitam v non aliam*) - blocker: no-key-material; v = f in the key, probably the clerk's mark for *uel*; not counted as read
 
@@ -154,6 +154,6 @@ scores 19/514 = 0.037 (the code words only). The old mark-count method applied t
 - [x] siblings: R367 (the key, same shelfmark), R386 (second key copy) and R368 (short ciphered slip, not a decipherment) opened
 - [ ] clear-pages: no clear registry copy online; the Vienna registry (HHStA Turcica) copy was not found digitised (21 Sept)
 - [x] known-keys: R367 Tabella I/II and R386 applied
-- [x] print: tried 2026-09-21 -- Austro-Turcica 1541-1552 not online; letter probably between nos. 62 and 68; would name the banker
+- [x] print: tried 2026-09-21 -- Austro-Turcica 1541-1552 not online; letter probably between nos. 62 and 68; would name the lender
 - [x] key-rebuild: 5 Oct 2026 -- added the hand's variant values (looped g = d, looped-foot circle = q/r, footed Pi = g, P with circle below = o, pointed cap = l) from the read pages
 - [x] retry: 5 Oct 2026 -- every [?] group of read_A/read_B re-transcribed from full-resolution crops; 509/514 plaintext words read as sense (measure_sense.py)

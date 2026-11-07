@@ -1,6 +1,6 @@
 # Banér to Stålhandske, Hof, 29 December 1640 — reading
 
-Key: `key.json` (value → letter, 70 two-digit values, recovered here; see NOTES). Ciphertext: `ct_neal.txt`
+Key: `key.json` (value → letter, 73 two-digit values, recovered here; see NOTES). Ciphertext: `ct_neal.txt`
 (Philip Neal's transcription). Word division, capitals and the [bracketed] clear context are mine.
 Unread or doubtful letters are marked `?`; three-digit numbers are code words, left as `[nnn]`.
 Emendations of the transcription or of the encipherer's slips are marked `{read: figure}`.

@@ -86,11 +86,11 @@ set out with the cash, and who is to take from Malvezzi an account of receipts a
 Justus he sends the 2,800 ducats Malvezzi wrote he had laid out there, not only for his own maintenance but
 also on other business of the King's, and a further 1,500 ducats for his upkeep for the coming year,
 reckoned from 1 March next: in all 4,300 ducats to be received from Justus at once.
-Besides that, Ferdinand is writing to a banker (Gulielmo S...; Malvezzi will see a copy of the letter, as
+Besides that, Ferdinand is writing to a lender (Gulielmo S...; Malvezzi will see a copy of the letter, as
 will Argento) so that in any sudden emergency, of which Malvezzi could not warn the court in time given the
-distance, the banker will lend him, at his request, in one or more instalments, up to 3,000 ducats in the
+distance, the lender will lend him, at his request, in one or more instalments, up to 3,000 ducats in the
 King's name, at an honest and reasonable rate of interest to be agreed between Malvezzi, Justus and the
-banker; the loan is to be repaid without fail at Venice against Malvezzi's bond, in the King's name.
+lender; the loan is to be repaid without fail at Venice against Malvezzi's bond, in the King's name.
 Ferdinand trusts his fidelity and enjoins him to spend this money only for real need or advantage, on any
 useful and timely matter that arises before the court can be consulted. A master/agent is to be found and
 brought out by the secretary with the money. The rest (last four lines) touches Rüstem Pasha's possible

@@ -8,7 +8,7 @@ Reading audit: "decoded, not read" (clean share of the old decrypt 0.145). Avail
 
 ## What was done
 
-1. **Despatch identified**: Kiewning 1897, Nr. 166 (heading "156. Pallotto an Barberini, 1629 August 10, dechiffr. 29.
+1. **Despatch identified**: Kiewning 1897, Nr. 156 (heading "156. Pallotto an Barberini, 1629 August 10, dechiffr. 29.
    August"; the running heads read "Nr. 166"), Nunz. di Germania 119 fol. 22-27, edition lines ~23369-23495. R289 is
    its first part; it ends "In questa conformità venne da me il giorno seguente", and R290 begins "‹i›l Questembergh, al
    quale ...". The sheet's head reads "Di Vienna 10 di Agosto 1629"; no register letter is written as on R288 ("B 24"),

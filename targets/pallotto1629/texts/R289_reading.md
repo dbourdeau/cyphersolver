@@ -2,7 +2,7 @@
 
 Reading, 22 Oct 2026 (reread batch b01, Claude Opus 5.5). What it rests on:
 
-* **The whole sheet** is printed in Italian by Kiewning, *Nuntiaturberichte* IV/2 (1897), Nr. 166 (heading Nr. 156,
+* **The whole sheet** is printed in Italian by Kiewning, *Nuntiaturberichte* IV/2 (1897), Nr. 156 (the OCR text's running heads read Nr. 166; heading Nr. 156,
   "dechiffr. 29. August"), pp. 286-288, Arch. Vat., Nunz. di Germania 119 fol. 22-27, from the Roman decipherment.
   The decode with the 6956 key (`reread_b01/R289_dec.txt`) aligns with the print chunk by chunk at 0.07-0.6 cost per
   letter (`reread_b01/R289_align.txt`; one chunk at 0.85, where the print's footnotes interrupt it), so the reading is

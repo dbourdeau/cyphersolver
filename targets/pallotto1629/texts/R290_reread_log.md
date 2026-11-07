@@ -13,7 +13,7 @@ Reading audit: "decoded, not read". The repository held only the unedited automa
    61 nomenclator groups missing from the 6956 key were added from alignments with Kiewning's print
    (`reread_b01/extra_groups.json`, each with its evidence), and two key entries corrected (776 = tutto, not "quanto";
    567 = occasione, not "ordinatione").
-2. **Existing text?** Kiewning 1897 Nr. 166 (10 Aug 1629), printed from the Roman decipherment. `reread_b01_match2.py`
+2. **Existing text?** Kiewning 1897 Nr. 156 (10 Aug 1629), printed from the Roman decipherment. `reread_b01_match2.py`
    located it (hits in edition lines 23480-23552); `reread_b01_align.py` aligned the decode with it chunk by chunk:
    the first two pages agree with the print at 0.05-0.6 cost per letter, so the reading of paragraphs 1-3 is the print,
    its OCR corrected (e.g. "tomato" -> "tornato", "nnmero" -> "numero", "conreniente" -> "conveniente").

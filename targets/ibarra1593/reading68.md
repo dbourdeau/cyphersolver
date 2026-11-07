@@ -10,8 +10,8 @@ applies it.
 
 The letter opens **in clear** and drops into cipher mid-sentence:
 
-> *&ldquo;… a la venida del mensagero que despache, porque espero que me dara V.S.a mas claridad de las
-> cossas, porque en la primera me dise V.S.a …&rdquo;*
+> *“… a la venida del mensagero que despache, porque espero que me dara V.S.a mas claridad de las
+> cossas, porque en la primera me dise V.S.a …”*
 
 | line | cipher | reading |
 |---|---|---|

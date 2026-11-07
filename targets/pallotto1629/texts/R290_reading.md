@@ -3,7 +3,7 @@
 Reading, 22 Oct 2026 (reread batch b01, Claude Opus 5.5). What it rests on:
 
 * **Paragraphs 1-3** (the first two pages, cipher with a few words in clear): Kiewning, *Nuntiaturberichte* IV/2 (1897),
-  Nr. 166, pp. 288-289, which prints this despatch from the Roman decipherment (Arch. Vat., Nunz. di Germania 119).
+  Nr. 156, pp. 288-289, which prints this despatch from the Roman decipherment (Arch. Vat., Nunz. di Germania 119).
   The decode of the sheet with the 6956 key (`reread_b01/R290_dec.txt`) aligns with the print chunk by chunk at 0.1-0.6
   cost per letter (`reread_b01/R290_align.txt`); the print's OCR is corrected here, its wording kept.
 * **Paragraph 4** (the third page and the last lines of the second): Kiewning gives only a German regest. Read here from

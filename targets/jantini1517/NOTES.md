@@ -1,6 +1,6 @@
 # Benedetto Fantini (DECODE "Jantini"), Buda/Eger 1517–1518 — catalogue 156 — NOTES
 
-Status: attempted, open (closed 22 Sept 2026: not read; no key material for this cipher exists anywhere found). Superseded on 28 Oct 2026 by Brice Dudout's key and reading of R1126 pp. 1-2, see dudout/README.md
+Status: read in part (84.3% of the words of R1126 pp. 1-2, Brice Dudout, 28 Oct 2026, strict recount 5 Nov 2026; the first attempt of 22 Sept 2026 closed unread, no key found). See dudout/README.md
 
 **Sender.** DECODE's "Benedetto Jantini" is a misreading of **Benedetto Fantini**, Ferrarese agent in Hungary in the
 household of Cardinal Ippolito d'Este (bishop of Eger). Vestigia holds his whole file, ASMo Ambasciatori, Ungheria
@@ -94,17 +94,17 @@ sibling, the cipher is not readable from the material available.
 
 ## Remaining gaps
 
-- R1126 cipher pp. 1–2 (43 lines, ~1,370 columns) - blocker: no-key-material; no decipherment, clear copy or key anywhere; Caprile's key does not fit; ciphertext-only syllabary anneal fails where controls succeed
+- R1126 cipher pp. 1–2: 77 of 492 words not counted as read under the strict count (54 restored by sense from the clear copy of pp. 3-4, 23 unresolved) - blocker: illegible; faint small upper signs and look-alike labels on the Vestigia images (residual transcription error 2-3%), these words rest on the period clear copy; a better ASMo image is the only route
 - R1127 cipher (5 lines, ~40 columns) - blocker: too-short; plus faded and torn, same unknown key
 
 ## Escalation
 
 - [x] siblings: Fantini nos. 1–7 (V1846–V1852) all opened; clear, no glosses; V1849 images duplicate the 6 pages
-- [x] clear-pages: R1126 pp. 3–6 are the letter's clear continuation, not a decipherment
-- [x] known-keys: Caprile 1519 values (R1130/4c) seeded: score collapses; Bonzagni 1512 alphabet is a different system; no Modena key on DECODE
+- [x] clear-pages: R1126 pp. 3–6 opened; pp. 3-4 are a period clear copy of the ciphered passage (Dudout, 28 Oct 2026), the rest of pp. 3-6 continues the letter in clear
+- [x] known-keys: Caprile 1519 values (R1130/4c) seeded: score collapses; Bonzagni 1512 alphabet is a different system; no Modena key on DECODE; superseded 28 Oct 2026: the full Caprile 1519 key (C05a), applied unchanged, fits (Dudout, dudout/README.md)
 - [x] print: web search, Vestigia bibliography fields empty; nothing printed
-- [x] key-rebuild: ciphertext-only syllabary anneal, control-validated (clean and 10 % noise), fails on R1126
-- [n/a] retry: nothing read, so nothing to regrade
+- [x] key-rebuild: ciphertext-only syllabary anneal, control-validated (clean and 10 % noise), fails on R1126; 28 Oct 2026 (Dudout): key K2 extended with cells learnt from the clear copy (key_K3v2_reading.json)
+- [x] retry: Dudout's reading graded word by word as sure, probable, restored or unresolved (strict recount 5 Nov 2026: 415 of 492 words read)
 
 ## Log
 
@@ -118,5 +118,5 @@ sibling, the cipher is not readable from the material available.
 R1126 is in the Caprile 1519 family: our Caprile key (C05a), applied unchanged, ranks 1/201 against shuffled keys on a portion
 designated in advance. Pages 3-4 of R1126 are a period clear copy of the ciphered passage (p. 3 opens with the cipher's first
 words); a key frozen before that copy was opened aligns with it at 0.765 / 0.667 (controls at most 0.35). The text is therefore not new; the contribution is the key and the identification of the copy. Reading of pp. 1-2:
-95.3% of words by sense (290 sure; probable and restored words rest on the copy). See `dudout/README.md`.
+84.3% of words read under the strict 95% rule (415 of 492: 290 sure, 125 probable; 95.3% if the 54 words restored by sense are counted); probable and restored words rest on the copy. See `dudout/README.md`.
 

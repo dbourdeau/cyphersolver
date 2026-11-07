@@ -1655,7 +1655,7 @@ PAGES = [
          rights='Archiwum Narodowe w Krakowie, via DECODE'),
     dict(slug='papai1706', label='P&aacute;pai to R&aacute;k&oacute;czi 1706&ndash;10', year='1706&ndash;10', y=1706.5, place='Constantinople &rarr; R&aacute;k&oacute;czi', st='partial', stt='read in part',
          title='J&aacute;nos P&aacute;pai to Ferenc R&aacute;k&oacute;czi II, 1706&ndash;1710',
-         blurb='Eleven numeric despatches of R&aacute;k&oacute;czi&rsquo;s envoy at the Porte, five of them filed under other senders, decrypted with the Hungarian syllabic nomenclator issued to him (DECODE R580), which DECODE had not linked to them: 99.7% of 16,698 groups. A twelfth letter, in a graphic-sign alphabet, has its own page.',
+         blurb='Eleven numeric despatches of R&aacute;k&oacute;czi&rsquo;s envoy at the Porte, five of them filed under other senders, decrypted with the Hungarian syllabic nomenclator issued to him (DECODE R580), which DECODE had not linked to them: 99.0% of 16,861 groups. A twelfth letter, in a graphic-sign alphabet, has its own page.',
          quote='&ldquo;legyen patientia &hellip; ne kellyen illy haszontalan k&ouml;lteni&rdquo; &middot; the Kiaya&rsquo;s answer, 2 January 1710',
          rights='Manuscript: Magyar Nemzeti Lev&eacute;lt&aacute;r; images not reproduced'),
     dict(slug='papai1710', label='P&aacute;pai, Belgrade 1710', year='1710', y=1710.18, place='Belgrade &rarr; R&aacute;k&oacute;czi', st='stuck', stt='not solved',
