@@ -288,6 +288,25 @@ def head_problems(slug, heads=None, titles=None):
         probs.append(f'the page links only to the folder of another write-up ({", ".join(sorted(folders))}), not targets/{slug}')
     return probs
 
+def link_problems(slug, heads=None):
+    """Dead links inside a page: a page, an anchor or a repository path that does not exist."""
+    from urllib.parse import unquote
+    heads = heads or page_heads()
+    if slug not in heads: return []
+    page = heads[slug][2]
+    own = set(re.findall(r'\bid="([^"]+)"', page))
+    probs = []
+    for f, a in re.findall(r'href="([^"#?:]+\.html)(?:#([^"]*))?"', page):
+        if not (HERE / f).exists():
+            probs.append(f'links docs/{f}, which does not exist')
+        elif a and '=' not in a and f[:-5] in heads and a not in set(re.findall(r'\bid="([^"]+)"', heads[f[:-5]][2])):
+            probs.append(f'links {f}#{a}, but that page has no such anchor')
+    for a in sorted(set(re.findall(r'href="#([^"=]+)"', page))):
+        if a not in own: probs.append(f'links #{a}, but the page has no such id')
+    for path in sorted(set(re.findall(r'github\.com/dbourdeau/cyphersolver/(?:tree|blob)/main/([^"#?\s<)]+)', page))):
+        if not (ROOT / unquote(path)).exists(): probs.append(f'links the repository path {path}, which does not exist on main')
+    return probs
+
 def check_slug(slug):
     pages, images, version = manifest()
     rows = readme_rows()
@@ -308,6 +327,8 @@ def check_slug(slug):
         item(bool(re.search(r'<title>.+</title>', page)) and 'name="description"' in page, 'title and meta description')
         for prob in head_problems(slug) or [None]:
             item(prob is None, prob or 'title, h1 and Sources belong to this page (not copied from another)')
+        for prob in link_problems(slug) or [None]:
+            item(prob is None, prob or 'every link on the page (pages, anchors, repository paths) resolves')
         item(bool(re.search(r'<h2[^>]*>.*?Sources', page, re.S)), 'a Sources section', warn=True)
         hero_end = page.find('</section>', page.find('<section class="hero">'))
         item(hero_end >= 0 and bool(re.match(r'\s*<main>', page[hero_end + 10:])),
@@ -589,6 +610,12 @@ def audit(brief=False):
     print(f'M. Page heads (title, h1, sources) that do not belong to the page: {len(wrong)}')
     for s, pr in wrong: print(f'   {s}.html: ' + '; '.join(pr))
     problems += len(wrong)
+    # 8c. dead links inside pages (a repository folder that was split or renamed leaves its links behind)
+    dead = [(s, link_problems(s, heads)) for s in sorted(html_slugs - SURVEYS) if s in pages]
+    dead = [(s, p) for s, p in dead if p]
+    print(f'N. Dead links inside pages (page, anchor or repository path): {len(dead)} pages')
+    for s, pr in dead: print(f'   {s}.html: ' + '; '.join(pr))
+    problems += len(dead)
     # 9. full texts (George Lasry, 22 Oct 2026): every reading lists its transcription and decryption per document
     import _texts
     notext, nosum = [], []
