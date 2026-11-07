@@ -1,0 +1,14 @@
+tokens 1173 gold occurrences 17 gold words 20
+LOOP 0 baseline (whole-word groups only, position+prior+bigram): 3/20 gold words  [0s]
+LOOP 1  H1 bracket hypothesis: a run between two beacons may be one spelled word
+    11/20 gold words (+8) -> KEPT   [5s]
+LOOP 2  H2 segmentation: any run may be cut into spelled chunks of up to 4 groups
+    11/20 gold words (+0) -> rejected   [66s]
+LOOP 3  H3 consistency: a group has one meaning everywhere (hard-EM voting, 3 passes)
+    10/20 gold words (-1) -> rejected   [7s]
+LOOP 4  H4 monotonicity: strings must follow the numeric order of the groups (neighbour bounds)
+    11/20 gold words (+0) -> rejected   [7s]
+STOP: 3 loops without progress
+
+FINAL: 11/20 gold words with config {'spelled_bracket': True, 'free_seg': False, 'consist': False, 'mono': False, 'N': 40, 'wu': 1.0, 'spell_pen': 1.0}
+finished
