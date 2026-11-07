@@ -1,0 +1,93 @@
+{
+ "1977": {
+  "unvetted": "Still no scan, and still no way to rule out interlinear decipherment. Re-fetched Arcinsys NLA HA Cal. Br. 15 Nr. 2225 (id 1680530, 'Bericht ueber den Uebertritt des Reichshofrats von Knorre zur katholischen Religion (z.T. in Chiffre verfasst)', 1738, ca. 11 Bl.) and Nr. 2233 (id 1684901, 1,000-ducat gift, 'z.T. in Chiffre', 1738-39) by curl 6 Nov 2026: both list only 'Original Akte', no Digitalisat. Four web searches (Knorre/Knoerr conversion 1738 Hannover, Geheime Raete Chiffre, Francke Halle person record for Georg Christian von Knoerr) found no edition, calendar or study of these two files and no decipherment; so no edition blocks it, but the leaf cannot be seen and the same Hanoverian Geheime Raete interlined decipherments in Hann. 9g (targets/mecklenburg1734). Unblock: NLA Hannover scan of Cal. Br. 15 Nr. 2225 (about 11 leaves) to see whether the cipher passages carry a decipherment."
+ },
+ "2021": {
+  "unvetted": "Still no scan and no ciphertext shown. Re-fetched Arcinsys NLA HA Cal. Br. 15 Nr. 3805 (id 1683898) by curl 6 Nov 2026: 'Beschlagnahme von chiffrierter Korrespondenz des Dr. Wilhelm Burchhard Sixtinus mit seinem Bruder zu Kassel', 1636-37, Criminalia sub lit. S 5b, 'Enthaelt: u.a. Berichte ueber die Belagerung und Beschaedigung des Hauses Coppenbruegge', only 'Original Akte'. Web searches (Sixtinus Coppenbruegge 1636 chiffrierte Korrespondenz; Sixtinus Calenberg Spion Chiffre; Deutsche Biographie entries for Wilhelm Burchard and Nicolaus Sixtinus) found biography only (jurist, Hessian and Schaumburg councillor, d. 1652 Hameln) and no edition or study of the seizure; the nearest cipher study, Waldispuehl/Kopal on a Kassel letter of 1637 to Oxenstierna, is a different correspondence. A seized-letters file of a spy case would normally hold the authorities' own decipherments, and nothing shows whether ciphertext or decipherment survives in it. Unblock: NLA Hannover scan of Nr. 3805; targets/malsburg1637 holds a Sixtinus key of Dec 1635 to try once a leaf is seen."
+ },
+ "2028": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch t05",
+  "seen": {
+   "kind": "scan",
+   "where": "Arcinsys Hessen digital images of HStAD D 4, 245/1 (https://digitalisate-he.arcinsys.de/hstad/d_4/245--1/hstad_d_4_nr_245--1_015.jpg to _027.jpg, 3500 x 2698 px; archival description https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=2406030), downloaded by curl 6 Nov 2026",
+   "extent": "Images 15-27 hold about a dozen letters of the mother's series with embedded symbol runs; image 020 (left letter, about 40 lines, plus a second letter on the right) was read in crops at full size. The other of the 234 images were not re-read at this scale, so the full extent of the cipher in the 220 letters is not measured.",
+   "cipher": "German Kurrent letters in which names or words are replaced by graphic symbols inside the plain text: an open square, a square with a cross, an asterisk, a bar and cross, circles with a dot, double crosses and small numeral groups, on most lines of the left letter of image 020. No decipherment, interlinear gloss or key sheet is written on these leaves or filed beside them (images 15-27 inspected; the leaves are microfilm-style scans with a note that the original is faded)."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump, repo, leads) on 'D 4, 245/1', 'Sophie Eleonore', 'Ludwig VI': only this lead's own rows and sweep files, plus catalogue 568 (Georg II's D 4 keys, a different group of documents); no DECODE record for these letters.",
+   "tomokiyo": "Web search for cryptiana on Hesse-Darmstadt, Georg II and Sophie Eleonore found no Tomokiyo page on this correspondence.",
+   "lasry": "Searched Lasry, HistoCrypt and DECRYPT for Sophie Eleonore, Ludwig VI and Hesse-Darmstadt nomenclators: nothing on these letters; the nearest hit is a Kassel 1637 letter study that could not recover its nomenclature; no GL.htm hit for the names in the repo copies.",
+   "edition": "No edition of the 1644-70 letters of Sophie Eleonore to Ludwig VI found in German-language web searches (Edition, Briefwechsel, Entzifferung); the Arcinsys description lists contents only and says 'Enthaelt zum Teil chiffrierte Briefe'.",
+   "literature": "HistoCrypt, Cryptologia and German archival-literature searches on Hesse-Darmstadt court letters of the 17th century found nothing on Sophie Eleonore's symbols."
+  },
+  "searches": [
+   {
+    "query": "Sophie Eleonore Hessen-Darmstadt Briefe an Ludwig VI. chiffrierte Briefe Geheimschrift Landgraefin 1644-1670",
+    "result": "Only biographical records and Arcinsys/DDB finding aids for D 4; no study or edition of the cipher letters."
+   },
+   {
+    "query": "Landgraefin Sophie Eleonore von Hessen-Darmstadt Ludwig VI. Briefwechsel Edition Chiffre Ziffern Entzifferung",
+    "result": "No edition; GND and DDB entries only; a cipher conference programme on France and Germany that does not name this correspondence."
+   },
+   {
+    "query": "Hessen-Darmstadt Landgraf Ludwig VI. Italienreise Stockholm Pomponne Briefe Mutter Sophie Eleonore Geheimschrift HistoCrypt OR Cryptologia",
+    "result": "No hit on the letters or any cipher study; only DDB/Archivportal travel files of Ludwig VI."
+   },
+   {
+    "query": "cryptiana Hesse-Darmstadt Georg II Sophie Eleonore nomenclator symbols letters Lasry decipherment Hessen-Darmstadt 17th century cipher",
+    "result": "Kassel 1637 Oxenstierna letter study (Waldispuehl/Kopal) and Lasry papal-cipher work; nothing on Hesse-Darmstadt family letters or these symbols."
+   }
+  ],
+  "key_check": "Hesse-Darmstadt keys held here: catalogue 568 (HStAD D 4 Nr. 141/2, Georg II / Friedrich alphabets of 1651-58, and 'Blaetter mit Aufloesung von Chiffren' of Ludwig VI, D 4 Nr. 239/1); none was tested against Sophie Eleonore's symbols in this pass, and no key for her letters was found in the volume or in print.",
+  "key_held": "catalogue 568 holds the D 4 Nr. 141/2 and 239/1 key material of the same house; untested against these symbols, and it does not block the lead.",
+  "duplicates": "known.py on 'D 4, 245/1', 'Sophie Eleonore', 'Ludwig VI': no catalogue entry or target covers these letters; catalogue 568 is Georg II's war correspondence (D 4 Nr. 7/6 etc.) and a different document group.",
+  "verdict": "open"
+ },
+ "2032": {
+  "unvetted": "Still cluster-level, no scan and no ciphertext shown. Re-fetched Arcinsys HStAD E 1 M 54/1 to 54/4 (ids 4321311, 1956849, 189900, 1729795) by curl 6 Nov 2026: four annual files 1673, 1674, 1675, 1676 titled 'Schriftwechsel des hessen-darmstaedtischen Agenten zu Wien, Nikolaus Martin Drach mit ... Ludwig VI., mit Schluessel zur Entzifferung diplomatischer Geheimschriften', each 'Original Akte' only, no Digitalisat. Two further web searches (Drach as Hessen-Darmstadt agent in Vienna; Drach cipher key HStAD E 1 M) found no edition, study or decipherment, only unrelated Drach families. The description names a key, not ciphertext, and a key can accompany plain reports. Unblock: HStAD scan of one of E 1 M 54/1-4 to see whether the dispatches contain cipher passages and whether decipherments are written on them."
+ },
+ "1387": {
+  "unvetted": "Still cannot tell code tables from coded messages, and the unit is not scanned. Re-fetched the Nationaal Archief inventory page 2.10.62 inv. nr. 2914 (curl 6 Nov 2026): 'Stukken betreffende door Bk. Makassar onderschepte, bij Republikeinse groeperingen gebruikte coderingen', 1946, 1 omslag, physical, no scan or transcription viewer content. Three web searches this pass (NA 2.10.62 inv. 2914 Makassar coderingen; Republican codes South Celebes 1946 NEFIS intercepts; 'Bk. Makassar' onderschepte coderingen) found no study, edition or digitised copy of these papers; only DFAT background on Dutch use of intercepted Republican traffic and on a Republican cypher in 1947. The description's 'coderingen' does not show ciphertext. Unblock: a Nationaal Archief scan order for inv. 2914 (or a reading-room look)."
+ },
+ "2372": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch t05",
+  "seen": {
+   "kind": "not online",
+   "where": "BAV manuscripts OPAC item records https://opac.vatlib.it/mss/detail/45722 (Barb.lat.9885, 1r-150r) and https://opac.vatlib.it/mss/detail/45723 (Barb.lat.9886, 1r-132r), re-read by curl 6 Nov 2026; the DigiVatLib IIIF manifests for 9885 and 9886 return 404 (not digitised)",
+   "extent": "Two volumes of signed letters, 150 and 132 folios, Madrid 6 Jan 1701 to 31 Dec 1704, Facini to Urbano Barberini (volume 9885 also holds the Valuta letters per the lead links).",
+   "cipher": "OPAC for both volumes: type of document 'Firme autografe.' and General note 'Cifre.' - the cataloguer records the letters as cipher and, unlike Facini's 1698-1700 volumes 9883-9884 ('Cifre e decifrati'), records no decipherments. No leaf of 9885-9886 is online, so none was inspected; the same Barberini-agent series is seen in digitised Barb.lat.9849 (Mancini, Madrid, 'Cifre e decifrati'), where f. 19r (Madrid 16 Jan 1655, https://digi.vatlib.it/view/MSS_Barb.lat.9849/0041) is a full page of numeric ciphertext with the letter clear around it."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump, repo, leads) on 'Barb. lat. 9885', 'Facini', 'Valuta': only this lead and the DigiVatLib sweep README; no DECODE record for any Barberini Madrid letter of 1701-04.",
+   "tomokiyo": "Web search for Tomokiyo cryptiana with Barberini, Madrid, Millanta, Facini and Barb. lat. found no page on the Barberini agents' Madrid ciphers.",
+   "lasry": "Searched Lasry, HistoCrypt and Cryptologia for Facini, Urbano Barberini and Madrid 1701-04: nothing on these letters (hits were a papal-cipher survey, a Jacobite key study and a Uceda 1700s ciphered-letters article); GL.htm copies in the repo have no hit for Facini.",
+   "edition": "No edition or calendar of Facini's letters found by Italian and English searches (Facini agente Barberini Madrid 1701 lettere); the OPAC summary 'Con notizie varie dalla Spagna' is the only description.",
+   "literature": "The only 1700s Spain-Rome cipher paper found is on the Duke of Uceda's ciphered letters (Philip V's ambassador); nothing on the Barberini agent in Madrid or on Facini's cipher."
+  },
+  "searches": [
+   {
+    "query": "Giovanni Battista Facini agente Barberini Madrid 1701 lettere Urbano Barberini Palestrina cifra decifrazione Barb. lat. 9885",
+    "result": "No page on Facini or Barb. lat. 9885; only unrelated cipher and Barberini hits (Huntington and BL Madrid cipher letters of other writers)."
+   },
+   {
+    "query": "Barberini agents Madrid cipher letters Spanish succession 1701 Facini Valuta Urbano Barberini Philip V correspondence Cryptologia OR HistoCrypt",
+    "result": "Nearest are the Uceda ciphered-correspondence article and a Jacobite key paper; nothing on Facini, Valuta or the Barberini Madrid series."
+   },
+   {
+    "query": "tomokiyo cryptiana Barberini Madrid Millanta Facini Vatican Barb. lat. cipher key",
+    "result": "Cryptiana blog and a Vatican 1628 cryptogram post only; no Facini or Barberini Madrid entry, no key."
+   }
+  ],
+  "key_check": "Facini's own volumes Barb.lat.9883-9884 (1698-1700) carry 'Cifre e decifrati' and so could give the key, but they are not digitised (manifest 404) and were not obtained; no Facini key is held in the repo, on DECODE (known.py) or in print.",
+  "duplicates": "known.py on 'Barb. lat. 9885', 'Facini', 'Valuta' (6 Nov 2026): only this lead and the sweep README; no catalogue entry or target for these volumes, and Barb. lat. 9886 has no other row.",
+  "verdict": "open"
+ },
+ "2373": {
+  "unvetted": "Re-read OPAC items 179010 (Barb.lat.9863 f. 479r, 'Copia.', General note 'Cifra.') and 178981 (ff. 505r-507r, 'Cifre.'), 6 Nov 2026; the volume-level records read 'Cifre e decifrati' and 9863 is not digitised (manifest 404), so a decipherment filed in the same volume cannot be excluded. New evidence this pass: the digitised sibling Barb.lat.9860 f. 5r (Borromeo to Millanta, Madrid 9 Nov 1669, OPAC 178903, 'Copia', no cipher note at all) is a clear letter with underlined numeric cipher groups and no decipherment on the leaf, so 'Cifra' items of this exact correspondence are real cipher; 9849 f. 19r likewise. Four web searches (Millanta/Borromeo cifra 1669, Barb. lat. 9863, Federico Borromeo nuncio Madrid) found no edition or study. Next DigiVatLib probing hit HTTP 429, stopped. Unblock: BAV photos of ff. 479r, 505r-507r and the neighbouring leaves of Barb.lat.9863 (to see whether decipherments sit beside them); Barb.lat.9860 f. 5r itself may be a separate lead."
+ },
+ "2270": {
+  "unvetted": "Ciphertext still not shown. The BNP record 2168524 (http://id.bnportugal.gov.pt/bib/catbnp/2168524, now loads, 6 Nov 2026) lists 13 maços of the autograph diary 1831-38 and 1842-45 and names n. 13 '[Cifra do diario]', Reservados 'sob autorizacao', nothing digitised and no statement that diary entries are enciphered. The printed edition now identified: 'Diario de Ribeiro Saraiva, 1831-1888' (Imprensa Nacional, Lisbon, vol. 1831-35 of 1915, a 1916 volume, and 1836-1845 of 1917; Google Books ids MaxBAQAAMAAJ and _qtBAQAAMAAJ, viewability 'no pages', so no snippet text; HathiTrust and the Eclectica listing sit behind a Cloudflare 'Just a moment' wall; archive.org holds only his Cartas Conspiradoras 1844 and pamphlets). Three web searches (the 1915 Diario, MSS 169 'Cifra do diario', Saraiva diary cipher) found no study of the diary's cipher. Unblock: needs Chrome for Google Books/HathiTrust full-text search of the 1915-17 volumes for 'cifra' (https://www.google.com/books/edition/_/_qtBAQAAMAAJ?gbpv=1&bsq=cifra), or a BNP scan of n. 13 and a sample year."
+ }
+}
