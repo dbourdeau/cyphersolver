@@ -1,0 +1,60 @@
+{
+ "1154": {
+  "unvetted": "Series-level and no surviving ciphertext folio identified. This pass listed every item SP 84/165/1-114 through the TNA Discovery API (C7306593-C7306706): the cipher mentions are all letters ABOUT ciphers (/1, /10, /35, /43, /45, /87, /114), keys or additions (/36, /54, /70), a decipherment (/22, f.35, of f.34 which is a plain Nicholas letter), and /75 f.122 'Partly in cipher' but flagged 'Missing at transfer'. The only described ciphertext is /112 f.187, already a catalogue entry. No digitisation (TNA 'digitised: false'); would need an image of a specific folio or Gale SPO."
+ },
+ "1157": {
+  "unvetted": "File-level only. beta.nationalarchives.gov.uk (curl works) shows 38M49/1/10/1-51 as 'Letters from Francis Drake, Genoa, Milan, Padua and Venice, 1795-1797 ... With enclosures, some in cipher' and 38M49/1/141/4 as 'Plan of a cypher, c1798' with no description; no item-level list of the Hampshire Archives catalogue is online through TNA. Opened this time: Wickham's printed Correspondence (1870, archive.org correspondencer00wickgoog, correspondencew00wickgoog, correspondencew01wickgoog) prints a few Drake letters and mentions 'cypher' in passing but no ciphertext or decipherment of this file. No single cipher document identified; would need the Hampshire Archives item list or a visit."
+ },
+ "1158": {
+  "unvetted": "Description shows no ciphertext. Discovery API (C6240940, C6241156) this pass: WO 1/923/115 f.115-118 is '[?Roznel] (signed in cipher) to Bouillon', a plain-language report whose only cipher is the signature; WO 1/924/499 f.499-502 is Bouillon to Cooke about 'an error in reading the cipher' (f.495 is a 'Transcript' of [?Bertin]'s Brest news), i.e. a letter about a cipher, not cipher. Neither record is digitised. Would need a Kew image of ff.115-118 and 495-502 to see whether any cipher groups exist beyond a signature."
+ },
+ "1159": {
+  "unvetted": "Aggregate cluster, no single document. Item list for PRO 30/57/4 read via the Discovery API this pass: dozens of telegrams 'in code', 'part in code', 'code and translation' (4/35, /67-68, /133, /208), 'decode' (4/49, /50, /53), plus Arabic-script cipher translations (4/26, /77-78); most come with translations or decodes, the descriptions say nothing on the system (War Office telegraph code vs cipher), and 4/119 (annotated 'cipher unknown (Gordon unable to decipher it)') is already a separate lead. Nothing digitised. Needs a chosen telegram sampled at Kew."
+ },
+ "872": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch t14",
+  "lead_updates": {
+   "access": "archive"
+  },
+  "seen": {
+   "kind": "not online",
+   "where": "https://beta.nationalarchives.gov.uk/catalogue/id/C9188928/ (TNA SP 87/13/85, ff. 174-175, read 6 Nov 2026 by curl; not digitised, order a copy at Kew)",
+   "extent": "ff. 174-175, one letter plus an enclosed letter to '101' (about two leaves).",
+   "cipher": "TNA catalogue: 'Newcastle to Carteret (private and particular, original in cipher), enclosing a letter to '101' [undeciphered]. Complicated state of affairs in the north.' The open item is the enclosure to '101', which the cataloguer calls undeciphered; the covering letter's sense is calendared. Leaf not seen."
+  },
+  "prior_art": {
+   "decode": "known.py on 'SP 87/13/85' and 'Newcastle to Carteret' hits only this lead and research/uk_tna files; not on DECODE (harvested dump; the lead status also says not on DECODE).",
+   "tomokiyo": "Search for Cryptiana plus Newcastle/Carteret 1743 and '101' returned only the TNA record and Cryptiana's Mary Stuart material; no post on SP 87/13.",
+   "lasry": "Search for Lasry/HistoCrypt with Newcastle, Carteret, 1743 and '101' found nothing relevant (only the Mary Queen of Scots work); no GL.htm item known for SP 87.",
+   "edition": "No printed edition of the Stair/Carteret/Newcastle 1743 correspondence found (searched Coxe/Pelham, 'private and particular'); sibling TNA descriptions SP 87/13/18, /29, /66 repeat '101 undeciphered', i.e. the catalogue itself records no decipherment. BL Add MS 22536 (Newcastle-Carteret 1743) has only a deciphered Frederick II letter, not the '101' series.",
+   "literature": "No HistoCrypt or Cryptologia item on the Dettingen-campaign ciphers or on '101' turned up in three web searches."
+  },
+  "searches": [
+   {
+    "query": "\"SP 87/13\" Newcastle Carteret 2 September 1743 cipher \"101\" Stair Dettingen deciphered",
+    "result": "Only TNA catalogue records of SP 87/13 (/18, /29, /66, /85 all mention '101' as undeciphered); no edition or decipherment."
+   },
+   {
+    "query": "Newcastle to Carteret 1743 \"private and particular\" cipher letter \"101\" Hanover campaign correspondence edition Coxe Pelham",
+    "result": "Only the TNA /85 and /66 records and the BL Add MS 22536 catalogue; no printed text of the '101' letters."
+   },
+   {
+    "query": "Tomokiyo cryptiana OR Lasry OR HistoCrypt Newcastle Carteret 1743 cipher letters Secretaries of State cipher '101' decipher",
+    "result": "Nothing on 1743 ciphers; only Lasry/Tomokiyo Mary Queen of Scots results and the TNA record."
+   }
+  ],
+  "key_check": "No key for the '101' correspondence located: SP 87/13 key sheets were not seen and nothing in the repo or DECODE holds one; a key would not block this lead.",
+  "duplicates": "known.py 'SP 87/13/85', 'SP 87/13', 'Newcastle to Carteret': only this lead and its sweep file. Siblings /18, /29, /66 mention '101' but are different folios, not in catalogue.json.",
+  "verdict": "open"
+ },
+ "1295": {
+  "unvetted": "Still only 'code' of unstated kind. MHS guide fa0549 (fetched 6 Nov 2026): Vol. 4 Miscellany 1865-1870 'Beginning in 1869, portions of the diary entries are written in code', and the pocket diaries 1863-1909 (Box 12-14) 'Some portions are written in code'; no word on cipher vs shorthand, no scan. The diaries have been published (Home Front Civil Wars: the Diaries of John C. Kimball, ed. William and Drusilla Vodra, 2 vols, Beverly 1860-70) but I could not open that edition or find what it says of the code; three web searches found nothing on a coded Kimball diary. Would need the Vodra volume 2 or the MHS volumes."
+ },
+ "2113": {
+  "unvetted": "Yale finding aid read in full this pass (ead-pdfs.library.yale.edu/946.pdf, p.1010 of 1122): 'b. 30, f. GROUP 577, F-47 / Notes on works of Bible commentators / 1 item ([2] leaves) / Unidentified AM written in an unidentified hand, mostly in cipher. n.d.' Nothing more (no date, hand, language), no digitisation found in collections.library.yale.edu searches, and archives.yale.edu returns a bot challenge to curl (HTTP 202). A cataloguer's 'cipher' on clerical notes is commonly shorthand, so ciphertext is not established. needs Chrome: https://archives.yale.edu/ (search 'Notes on works of Bible commentators'), or a Beinecke image."
+ },
+ "1998": {
+  "unvetted": "Description still does not separate ciphertext from keys. gda.bayern.de page for BayHStA Kasten blau 61/42 (curl, 6 Nov 2026) is a JavaScript tree: static HTML returns none of the unit text, which stays 'Enthaelt auch: Chiffren, Briefe von dem Karmelitenbruder Tiburtius von Sankt Valerian' (per the earlier note); the same describer writes 'nicht aufgeloeste Chiffren' for ciphertext elsewhere, so a bare 'Chiffren' is likely key sheets. Searches this pass (Schellerer + Philipp Wilhelm + Chiffren; Kasten blau 61/42) found only the OeAW Kaiserin Eleonora edition (Kasten blau 44/45 letters, Schellerer as Reichshofrat 1678-82) and nothing on this file; no scan online. Would need a BayHStA answer or reading-room visit."
+ }
+}

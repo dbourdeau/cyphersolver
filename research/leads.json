@@ -361,7 +361,7 @@
    "restored_from": "removed_2026-11-02 #521",
    "open": "P 1839 5 and the Rivals letter ('déchiffrement manque'). P 1839 21 carries clear text over the cipher and is a crib.",
    "needs": "Scans of both; neither has been seen.",
-   "vetting_note": "cluster of ciphered letters across two archives, none online. Kalliope P 1839 21 (fetched 3 Nov) says 'Der Klartext ist ueber den Chiffren notiert', so that letter is deciphered on its leaf; P 1839 5 has only 'im Nachtrag chiffrierte und nicht chiffrierte Tagesnachrichten'; AN 284AP/12 (FranceArchives needs JS, not fetchable by curl) lists many ciphered letters, the Rastatt ones printed in Montarlot & Pingaud, Le Congres de Rastadt (1912-13), which could not be found on archive.org and was not opened, so the edition question is open. Needs one identified document (e.g. the Rivals letter of 10 Oct 1798, 'dechiffrement manque') and the AN inventory or Montarlot & Pingaud text checked at that item."
+   "vetting_note": "Cluster of three documents, not one: P 1839 21 has clear text written over the cipher (Kalliope), so it is deciphered on the leaf; P 1839 5 (Berlin 17 Jul 1798, cipher postscript) and the Rivals letter (AN 284AP/12, Cassel 10 Oct 1798, 'dechiffrement manque') are unseen. This pass opened all three volumes of Montarlot and Pingaud, Le Congres de Rastatt (IA lecongrsderast01/02/03montuoft, full text): no Rivals, no Cassel Oct 1798 item and one 'en chiffre' mention, so the edition does not print the Rivals letter. FranceArchives 284AP/12 is behind a JS/cookie gate (curl returns a redirect stub), HathiTrust 102106173 behind Cloudflare, so the inventory line itself was not re-read. known.py: only this row. Needs Chrome: https://francearchives.gouv.fr/fr/facomponent/1136e85496902146877dddc1d3cfd9b284e913ff to quote the Rivals entry, then a split lead for the Rivals letter alone; also Marquant, Les archives Sieyes (1970) and Des manuscrits de Sieyes (Champion) unchecked."
   },
   {
    "id": 591,
@@ -910,41 +910,6 @@
     "verdict": "duplicate",
     "closed": "Duplicate of lead 1157 (Wickham papers, Hampshire 38M49), same items."
    }
-  },
-  {
-   "id": 872,
-   "counted": true,
-   "year": 1743,
-   "date": "2 Sep 1743",
-   "title": "Newcastle to Carteret, enclosing a letter to '101' [undeciphered]",
-   "correspondents": "Duke of Newcastle to Lord Carteret",
-   "place": "Whitehall",
-   "language": "English",
-   "region": "England",
-   "period": "1701-1800",
-   "shelfmark": "TNA SP 87/13/85",
-   "folio_note": "ff. 174-175; enclosure to '101' undeciphered",
-   "cls": "C",
-   "status": "Calendar says undeciphered; original in cipher. Not digitised. Not on DECODE.",
-   "why": "Dettingen campaign politics.",
-   "importance": 3,
-   "solvability": 2,
-   "difficulty": 3,
-   "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
-   "verify": "Check SP 87/13 for a key in the volume.",
-   "links": [
-    {
-     "label": "TNA Discovery record",
-     "href": "https://discovery.nationalarchives.gov.uk/details/r/C9188928"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "UK archives sweep (TNA Discovery)",
-   "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
-   "access": "archive",
-   "ark": "",
-   "scored": "sweep",
-   "vetting_note": "TNA SP 87/13/85 (ff. 174-175, not digitised; Discovery C9188928 blocked, read via search snippet): 'original in cipher' with the sense calendared, enclosing a letter to '101' [undeciphered]; siblings SP 87/13/18, /29, /66 use '101' as an agent name, so 'undeciphered' may only mean an unidentified code number. Needs the Kew image to show whether any ciphertext lacks a decipherment; no web decipherment found."
   },
   {
    "id": 873,
@@ -2271,7 +2236,7 @@
    "prior_art": "open (checked 28 Oct 2026: known.py, DECODE list; calendar note only, no web search)",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Aggregate lead, not one item. Opened CSP Dom. Commonwealth 1655 (archive.org cu31924091770424) and 1655-56 (cu31924091770440): Lamplugh letters to Williamson are plain-text entries; the 'italics in cypher, undecyphered' notes sit on separate entries (1655 vol. C, Sept 1655, 2.5 pp, court gossip about the Chancellor and Sir Edw. Hyde; and three 1655-56 entries marked 'cyphers undecyphered', 1-2 pp). Each needs its own lead (volume, number, date) and the MS images (TNA SP 18, not online)."
+   "vetting_note": "Aggregate, stays unvetted (no single document). This pass: opened CSP Dom. Commonwealth 1655 (IA cu31924091770424) p.326 and 1656-57 (cu31924091770440) full text. Single candidates found, each needing its own lead: 1655 Vol. C no. 99, Sec. Nicholas (Cologne) to Joseph Jane, Sept 1655, 2.5 pp, 'italics in cypher, undecyphered'; 1656 no. 64, 22 July 1656, Wm. Grove [Dick Pile] to [T. Ross], 1 p, 'italics are cyphers undecyphered'; 1656 no. 119, Aug 1656, T. Ross (Paris) to Nicholas, 2 pp, same note. Pile items already sit in research/hathitrust/candidates.json (known.py), so splitting would duplicate. Same-volume items marked 'cyphers decyphered' show the editor prints decipherments where he made them. Before any item is open, check the Cal. Clarendon State Papers vol. 3 (Ross-Nicholas) and Thurloe State Papers for a decipher; not opened. SP 18 images not online (TNA)."
   },
   {
    "id": 908,
@@ -6014,7 +5979,27 @@
    "prior_art": "open (checked 28 Oct 2026: known.py)",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "original not online and the editor's gloss is partial: Kirchhoff's list in Dittmar/Beitraege (IA beitrgezurgesch00dittgoog, full OCR searched) at no. 31 (2 Mar 1631) says only that from an unsigned letter 'grosstentheils in Ziffern' the Saxon marriage project emerges, i.e. the editor read the sense somehow; no. 33 (28 Mar) is 'leider nicht aufgeloest'. Riksarkivet original (Stockholm, Magdeburg letters to Gustavus Adolphus) not located online; known.py hits only the 1126/1127 rows and a Falkenberg key at VALA 02038 (different person); web search on Falkenberg cipher 1631 found nothing. Whether the editor or a contemporary decipherment accompanies the original is unknown; needs the Riksarkivet leaf."
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude leads review batch t09",
+    "seen": {
+     "kind": "transcription",
+     "where": "Dittmar, Beitraege zur Geschichte der Stadt Magdeburg (IA beitrgezurgesch00dittgoog, djvu text read), 'Zur Correspondenz Dietrich von Falkenbergs und Johann Stallmans mit Gustav Adolf', Kirchhoff's excerpts of the Riksarkivet letters (copied Stockholm, July 1871), p.363 no. 31",
+     "extent": "One unsigned letter, Magdeburg 2 March 1631, 'groesstentheils in Ziffern geschrieben'; the printed entry is a paraphrase with quoted phrases.",
+     "cipher": "Original not seen (Riksarkivet Stockholm, not online). The edition's entry says the letter is mostly in Ziffern and quotes phrases from it ('bei dieser occasion', 'loco dotis in casu matrimonii', 'beim Reich conservirt werden'), so the cipher part was resolved by Kirchhoff or a decipherment kept with the letter; the editor remarks that in this bundle ciphers are 'fast ueberall' deciphered."
+    },
+    "prior_art": {
+     "decode": "known.py 'Falkenberg', 'Gustavus Adolphus': only leads 1126/1127 and the VALA 02038 Falkenberg key (another person); no DECODE record.",
+     "tomokiyo": "No cryptiana entry found for Falkenberg or Magdeburg 1631 in the snapshot or by search.",
+     "lasry": "No Lasry paper or GL.htm item on Falkenberg/Magdeburg found.",
+     "edition": "Dittmar p.363 no. 31 prints the sense and fragments of the ciphered letter (Saxon marriage project, lands 'loco dotis'); sibling no. 33 (28 Mar 1631, lead 1126) is 'leider nicht aufgeloest' and no. 22 is 'dechiffrirt'.",
+     "literature": "Falkenberg letters also cited from the Arkiv (Oxenstierna series II, nos. 625, 641) and Cronholm; no further decipherment found."
+    },
+    "key_check": "No key held here for Falkenberg's 1631 figures; the VALA 02038 Falkenberg key was noted in research/scandinavia but not tested, since the letter is not online.",
+    "duplicates": "known.py on Falkenberg, Magdeburg 1631, Gustavus Adolphus: only sibling lead 1126 (28 Mar 1631, not resolved in print) and this row; no catalogue entry.",
+    "verdict": "partly_read",
+    "closed": "Dittmar's Beitraege p.363 no. 31 (Kirchhoff's Riksarkivet excerpt) paraphrases and quotes the deciphered content of this mostly-ciphered letter of 2 Mar 1631 (marriage project, lands loco dotis); the decipherment is on record in print in part, the figures themselves not reproduced."
+   }
   },
   {
    "id": 1128,
@@ -6048,7 +6033,7 @@
    "prior_art": "open (checked 28 Oct 2026: known.py; research/scandinavia/README.md notes the Gustav III green portfolio with a chiffre-klaver)",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "original not located online: Klinckowstroem, Le comte de Fersen (IA lecomtedefersen01klingoog, OCR read) p.156 note says the postscript of the Empress is added to Gustavus III's 'lettre en chiffre (non dechiffree)' to Fersen of 28 Feb 1792, and the editor's other cipher letters carry Fersen's own marginal decipherments, so this one may still exist undeciphered in the Fersen papers (Stafsund, now Riksarkivet). No repository reference, no scan; known.py gives only the lead's own rows and the unrelated duben1764 target. Web search (Gustav III Fersen 28 fevrier 1792 chiffre) found nothing on a decipherment. Needs Riksarkivet Fersen collection finding aid and image."
+   "vetting_note": "Original not online and the only description is the editor's note. Re-read Klinckowstroem vol. 1 p.155-156 n.1 (IA lecomtedefersen01klingoog): 'lettre en chiffre (non dechiffree) du roi de Suede Gustave III au comte de Fersen, datee de Stockholm, le 28 fevrier 1792', printed 1877, so a note, not an archive description. Fersen answered on 1 Apr 1792 (no. CLXVIII, minute) saying he had received it, so he read it at the time; no text of it printed in vol. 1-2, nor in the English Diary and Correspondence (IA diarycorrespond00fers). Tried: Riksarkivet/Stafsund digitisation (none found), Uppsala Gustav III archive (is the king's own, not Fersen's), Price 1999 Hist. J. (not opened, paywalled). Would unblock: Riksarkivet Fersen papers image or finding aid via Chrome, and Proschwitz, Gustave III par ses lettres (1986)."
   },
   {
    "id": 1131,
@@ -6211,7 +6196,7 @@
    "prior_art": "open (checked 28 Oct 2026: known.py)",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Not online and no ciphertext shown: BRAH 98 (IA boletindelareala98, djvu read) p.939 calendars Sinzendorf to Aloys Harrach, Paris 6 Sep 1699, 'En aleman y en parte indescifrable' (W.S.A. Span. Varia Fasz. 39) with a content summary, so the editor read it; Harrach (BRAH 99) says he could not decipher a Sinzendorf letter for lack of a key, but nothing shows what survives for this letter or whether 'indescifrable' means cipher or illegible. Needs HHStA Span. Varia Fasz. 39 and the catalogue Harrach entry."
+   "vetting_note": "Cipher not shown. Opened BRAH 98 (IA boletindelareala98madr) p.938-939 and BRAH 99 (boletindelareala99madr): Sinzendorf to Aloys Harrach, Paris 6 Sep 1699, 'En aleman y en parte indescifrable' (W.S.A. Span. Varia Fasz. 39) is summarised in full, and the same note heads Sinzendorf letters of 4 and 13 Dec 1699 (cluster, not one document). The editor uses 'ilegible' for bad handwriting elsewhere and Harrach writes on 10 Oct 1699 that he lacked the key for Sinzendorf's letter of 20 Sep, which hints at cipher, but nothing states that ciphertext survives in the 6 Sep letter. known.py: only the catalogue Harrach/Trautson entry (AIS 'teilweise verschluesselt') and this row. Needs the HHStA Span. Varia Fasz. 39 leaf or a Vienna finding aid saying 'Chiffre'."
   },
   {
    "id": 1135,
@@ -6321,7 +6306,7 @@
    "prior_art": "partly known (checked 28 Oct 2026: web search, TNA Discovery record text, Saberton 2010 and JAR 2019 exist; no per-letter check of which items are printed) Printed edition: partly in print (Ross 1859 vol. I (Rawdon 2 May 1781 cipher passage printed deciphered); the other cipher-marked items in PRO 30/11/3-6, 68-69, 81-87 not checked individually.).",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Umbrella record for 63 cipher-marked items in TNA PRO 30/11 (Cornwallis Papers), not one document. TNA Discovery API (e.g. PRO 30/11/3/6-7, 16 Aug 1780, 'Letters in number cipher taken from Baron de Kalb') confirms the items are catalogued as cipher but digitised=false, so no leaf can be seen; Saberton 2010 (The Cornwallis Papers, Naval & Military Press) and his JAR 2019 article are the edition that decodes the Common Cipher letters and are not online. Web search (Cornwallis Papers Saberton Common cipher) found only the JAR post 'Decoding British ciphers used in the South, 1780-81' and a Discovery record 'mostly in cipher, not deciphered', no per-item concordance. Needs splitting into single items and a Saberton check before any item can be vetted."
+   "vetting_note": "Aggregate: one record for 63 cipher-marked items across PRO 30/11/3-6, 68-69, 81-87 with no single document named, so it stays unvetted by the third-pass rule. This pass found that decipherment is on record for part of it: Saberton, 'Decoding British ciphers used in the South, 1780-81' (allthingsliberty.com, 2019) says he decoded the Rawdon-to-Watson cipher letter (printed deciphered in Gibbes, Documentary History of the American Revolution 3: 31-2) and cites his Cornwallis Papers (CP 4: 47-9, 4: 50, 5: 139, 2: 129) for Common- and Alternative-cipher letters; Ross 1859 prints a few. So many of the 63 are likely partly_read, and which are not cannot be told without Saberton's six volumes, which are not online (searches for Saberton Cornwallis Papers cipher decoded, JAR cipher articles and Clinton/Cornwallis Yorktown code found no per-item concordance). Unblock: Saberton's CP index per shelfmark, then split into per-letter leads."
   },
   {
    "id": 1137,
@@ -6367,7 +6352,7 @@
    "prior_art": "open (checked 28 Oct 2026: web search, TNA Discovery record text, nothing found; no per-item check)",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Series-level record for 25 items in TNA PRO 30/55 (Carleton Papers), not one document. TNA Discovery API confirms the item types but digitised=false: 55/16/147 is a 'Proposed Cypher' (Haldimand, 26 May 1779; a key, not a ciphertext), 55/19/98 is 'Clinton to Haldimand. Letter in cypher' (22 Oct 1779), 55/24/76 is a cipher letter noted as matching a British Museum copy (a decipherment exists). No Report on Canadian Archives (Haldimand) or Saberton check per item; web search for the Carleton/Haldimand cypher found no deciphering source. known.py PRO 30/55 found only the sweep rows. Needs splitting by item."
+   "vetting_note": "Aggregate: series-level record for 25 items in PRO 30/55 (Carleton Papers), so no single document; it stays unvetted. This pass read the Discovery records (API, 6 Nov 2026): 55/16/146 and /147 are Haldimand's proposed cypher of 26 May 1779 (a key, no ciphertext), 55/19/98 is 'Clinton to Haldimand. Letter in cypher' (22 Oct 1779, no content summary, a candidate single lead), and 55/24/76 is an undated cypher letter whose description gives the content (a French fleet bound for Canada, found by comparison with a British Museum copy), i.e. a decipherment is on record there. Not digitised. Searches (Clinton/Haldimand cypher 1779 PRO 30/55 deciphered; Report on Canadian Archives; Saberton) found no per-item decipherment or edition. Unblock: split by item, starting with 55/19/98, and check the Haldimand Papers (BL Add MS 21,000 series, Report on Canadian Archives 1886-89) for printed plaintexts."
   },
   {
    "id": 1138,
@@ -6554,41 +6539,7 @@
    "scored": "sweep",
    "access": "archive",
    "access_note": "not online (backfilled 28 Oct 2026 from the entry: ...6/273 (c.1639), 84/130/27 (c.Nov 1625), 77/28/643 (c.1638). Not digitised. Roe/Gerbier passages may already be read in Akkerman's edi...)",
-   "vetting_note": "Seven items from different archives and decades (SP 81/44/225 Roe July 1638 'postscript in cipher'; SP 81/46/273 c.1639 'Portion in cipher concerning Prince Palatine and France'; SP 84/130/27 c.Nov 1625 'Portion in cipher concerning Mansfelt'; SP 77/28/643 Gerbier c.1638 'cipher letter on Taylor's accusations'; plus SP 81/37/284, 81/38/250, 77/6/229), none digitised (TNA Discovery API, digitised=false), so no leaf seen. Akkerman, Correspondence of Elizabeth Stuart vol. II (OUP 2011; seven ciphers deciphered, Gerbier letterbook key reconstructed) is the edition most likely to print the Roe and Gerbier passages and is not online; a search for Akkerman's ciphers returned only reviews. known.py (SP 81/44) shows only the sweep rows. Needs splitting into single items and an Akkerman index check."
-  },
-  {
-   "id": 1149,
-   "counted": true,
-   "year": 1600,
-   "date": "14 Jan 1600",
-   "title": "Sir Henry Neville papers: letter partly in cipher",
-   "correspondents": "unknown to Neville",
-   "place": "unknown",
-   "language": "unknown",
-   "region": "France",
-   "period": "1598-1610",
-   "shelfmark": "TNA PRO 30/50/70/8",
-   "folio_note": "",
-   "cls": "C",
-   "status": "Catalogue: partly in cipher; enclosure to 70/7.",
-   "why": "Neville's Paris embassy 1599-1600.",
-   "importance": 2,
-   "solvability": 2,
-   "difficulty": 3,
-   "score_note": "Scored from the TNA Discovery description during the Oct 2026 TNA Discovery sweep (research/tna_discovery/); not viewed",
-   "verify": "Images: TNA Kew (order a copy) or State Papers Online (Gale, subscription); not free.",
-   "links": [
-    {
-     "label": "TNA Discovery PRO 30/50/70/8",
-     "href": "https://discovery.nationalarchives.gov.uk/details/r/C6744774"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "TNA Discovery sweep",
-   "prior_art": "open (checked 28 Oct 2026: known.py, web search).",
-   "ark": "",
-   "scored": "sweep",
-   "vetting_note": "Winwood, Memorials vol. I (1725), p. 145 (archive.org memorialsofaffai01winw, OCR read 3 Nov 2026) prints Sir Henry Neville to Cecil, 'Paris 14 January 1599 O.S.', the same day as this item (14 Jan 1600), with cipher groups left standing in the text ('x.tw&.st ktbpuq.gtudie ... Referendaries'). TNA gives no author for PRO 30/50/70/8 and it is not digitised, so whether it is this letter is unknown. If it is, it is partly_read. Needs the TNA leaf or a TNA description compared with Winwood I:145. HMC Salisbury X (opened) has no such letter; BHO redirected to its front page."
+   "vetting_note": "Aggregate: seven unrelated items from different series and decades (SP 81/44/225, 81/46/273, 84/130/27, 77/28/643, 81/37/284, 81/38/250, 77/6/229), none digitised, so no single document; it stays unvetted. Discovery API (6 Nov 2026) confirms the descriptions: 81/44/225 Roe July 1638 'postscript in cipher', 81/46/273 'Portion in cipher concerning Prince Palatine and France', 84/130/27 c.Nov 1625 'Portion in cipher concerning Mansfelt', 77/28/643 'Gerbier - cipher letter on Taylor's accusations', 81/37/284 'Duplicate of paper sent by Mr. Stanning in cipher', 81/38/250 Vane extracts in cipher, 77/6/229 Kendall to Cecil 1600 'in cipher'. Akkerman's edition of Elizabeth Stuart's correspondence (OUP 2011-15, cipher keys in an appendix) is not online and none of the searches (Akkerman Roe/Gerbier/Kendall; Roe 1638 postscript SP 81/44; known.py on each shelfmark, no hits) says whether these State Papers items are printed deciphered. Unblock: Akkerman vol. 2 index/appendix, then one lead per item (77/6/229 Kendall to Cecil is the cleanest)."
   },
   {
    "id": 1150,
@@ -6692,7 +6643,7 @@
    "scored": "sweep",
    "access": "archive",
    "access_note": "not online (backfilled 28 Oct 2026 from the entry: ...298: 3 Oct 1708); catalogue shows many 'Partly in cipher'. Not digitised. Interlinear/bound decipherments give cribs. BL Add MS 3735...)",
-   "vetting_note": "Series-level lead (SP 91/5, about 50 folios): Discovery notes decipherments bound in the volume (f.163 deciphered at f.180, f.298 duplicate of deciphered f.294), and the printed Sbornik of the Russian Historical Society vols. 39 and 50 (Whitworth despatches 1704-11) was not opened. No single undeciphered folio identified; sibling SP 91/5/298 and SP 91/6 are already in the catalogue."
+   "vetting_note": "Aggregate: series-level (SP 91/5, about 50 folios, Whitworth Moscow 1707-08) naming no single undeciphered folio, and it overlaps catalogue entries already held (863 for Whitworth's Russia despatches, and the entry for SP 91/6 plus SP 91/5/298), so it stays unvetted. This pass: Discovery search (6 Nov 2026) lists 48 Whitworth items 1707-08 in SP 91/5 with no per-item cipher flag in the description text; the Sbornik of the Russian Historical Society vol. 50 (1708-11) prints Whitworth's despatches with Russian translation and an earlier volume covers 1704-08 (volume number unconfirmed, not online in text), so printed versions may carry decipherments. Searches (Whitworth Moscow Sbornik cipher; Whitworth Harley/Boyle cipher; known.py SP 91/5 and Whitworth) found only the catalogue entries. Unblock: open the Sbornik volumes and split off any folio left undeciphered that is not already in 863 or the SP 91/6 entry."
   },
   {
    "id": 1152,
@@ -6779,7 +6730,7 @@
    "prior_art": "open (checked 28 Oct 2026: known.py, web search).",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Series-level lead: SP 84/165/1-114 (Chauran to Williamson, 1662) is a run of about 114 folios; Discovery shows keys ('Additions to the cipher' /36, 'Sends cipher' /54) beside letters, and /75 'Transmits ciphers... Missing at transfer. Partly in cipher' may not survive. No single surviving ciphertext folio identified; sibling folios (ff.187-317) already catalogued. Needs per-folio review of images (TNA or Gale SPO)."
+   "vetting_note": "Series-level and no surviving ciphertext folio identified. This pass listed every item SP 84/165/1-114 through the TNA Discovery API (C7306593-C7306706): the cipher mentions are all letters ABOUT ciphers (/1, /10, /35, /43, /45, /87, /114), keys or additions (/36, /54, /70), a decipherment (/22, f.35, of f.34 which is a plain Nicholas letter), and /75 f.122 'Partly in cipher' but flagged 'Missing at transfer'. The only described ciphertext is /112 f.187, already a catalogue entry. No digitisation (TNA 'digitised: false'); would need an image of a specific folio or Gale SPO."
   },
   {
    "id": 1155,
@@ -6875,7 +6826,7 @@
    "prior_art": "unknown (checked 28 Oct 2026: web search found nothing on cipher in 38M49)",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Series-level lead: Hampshire Archives 38M49/1/10/1-51 is described only as 'With enclosures, some in cipher' (Discovery, 3 Nov 2026) and 38M49/1/141/4 'Plan of a cypher' has no description; no cipher letter identified. The printed Correspondence of William Wickham (1870) was not opened. Needs the Hampshire Archives item list or a visit."
+   "vetting_note": "File-level only. beta.nationalarchives.gov.uk (curl works) shows 38M49/1/10/1-51 as 'Letters from Francis Drake, Genoa, Milan, Padua and Venice, 1795-1797 ... With enclosures, some in cipher' and 38M49/1/141/4 as 'Plan of a cypher, c1798' with no description; no item-level list of the Hampshire Archives catalogue is online through TNA. Opened this time: Wickham's printed Correspondence (1870, archive.org correspondencer00wickgoog, correspondencew00wickgoog, correspondencew01wickgoog) prints a few Drake letters and mentions 'cypher' in passing but no ciphertext or decipherment of this file. No single cipher document identified; would need the Hampshire Archives item list or a visit."
   },
   {
    "id": 1158,
@@ -6913,7 +6864,7 @@
    "prior_art": "open (checked 28 Oct 2026: known.py, web search).",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "No ciphertext seen. beta.nationalarchives.gov.uk C6240940 (WebFetch) gives only the description, 'signed in cipher', with no digitisation; the cipher may be a signature alone. Web search on Bouillon/Cooke/Roznel found only TNA catalogue entries, no edition or decipherment. Needs a Kew image (or Gale State Papers Online) before a block can be written."
+   "vetting_note": "Description shows no ciphertext. Discovery API (C6240940, C6241156) this pass: WO 1/923/115 f.115-118 is '[?Roznel] (signed in cipher) to Bouillon', a plain-language report whose only cipher is the signature; WO 1/924/499 f.499-502 is Bouillon to Cooke about 'an error in reading the cipher' (f.495 is a 'Transcript' of [?Bertin]'s Brest news), i.e. a letter about a cipher, not cipher. Neither record is digitised. Would need a Kew image of ff.115-118 and 495-502 to see whether any cipher groups exist beyond a signature."
   },
   {
    "id": 1159,
@@ -6951,7 +6902,7 @@
    "prior_art": "open (checked 28 Oct 2026: known.py, web search).",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Series-level cluster of 120 items (PRO 30/57/4/16-207B) with no single identifiable cipher document; TNA says decodes sit in a separate cover numbered with (b), 1884 telegrams may be War Office code, and nothing was viewed or digitised. Web search found no decipherment study. Needs sampling at Kew; 4/119 is already a separate lead."
+   "vetting_note": "Aggregate cluster, no single document. Item list for PRO 30/57/4 read via the Discovery API this pass: dozens of telegrams 'in code', 'part in code', 'code and translation' (4/35, /67-68, /133, /208), 'decode' (4/49, /50, /53), plus Arabic-script cipher translations (4/26, /77-78); most come with translations or decodes, the descriptions say nothing on the system (War Office telegraph code vs cipher), and 4/119 (annotated 'cipher unknown (Gordon unable to decipher it)') is already a separate lead. Nothing digitised. Needs a chosen telegram sampled at Kew."
   },
   {
    "id": 1161,
@@ -7082,7 +7033,7 @@
    "prior_art": "open (checked 28 Oct 2026: known.py)",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "no ciphertext identified: Kalliope DE-611-HS-2714700 and -2714980 (re-fetched) are only Kinkel's replies mentioning 'die Geheimschrift in Minnas Brief' and 'Dechiffrierung'; Minna Werner's letter of 11 Feb 1860 is '[nicht dokumentiert]'. Kinkel deciphered it, so a decipherment may exist. Searched Kalliope for Geheimschrift/Kinkel/Minna (7 hits, all replies) and the web: nothing."
+   "vetting_note": "No ciphertext in any record. Third pass (6 Nov): Kalliope DE-611-HS-2714700 and -2714980 re-read (only Kinkel's own replies, 13 and 17 Feb 1860, mentioning 'die Geheimschrift in Minnas Brief' and 'Zur Dechiffrierung von Minnas Geheimschrift'; addressee Minna 'nicht dokumentiert'). ULB Bonn Findbuch Gottfried und Johanna Kinkel (252-page PDF, text-searched for Geheimschrift/Chiffr/Dechiff/Schluessel: no hit) lists S 2667,1 <1> as 178 letters FROM Kinkel to Minna plus only 2 copies of letters from Minna, so Minna Werner's own letter of 11 Feb 1860 is not held in the Nachlass; ULB digital 'Minna Kinkel an Gottfried Kinkel' (S 2665) holds Zurich letters of 1870-1882 only. Three web searches (Kinkel Minna Werner Geheimschrift 1860; Nachlass Kinkel S 2667 Findbuch; Kinkel Minna Werner cipher) found no cipher text and no decipherment. Would need Kinkel's 14 or 16 Feb 1860 letters (digitised scans in the Bonn Bildarchiv, not seen) to show whether a key or cipher sample is written out."
   },
   {
    "id": 1167,
@@ -7119,7 +7070,7 @@
    "scored": "sweep",
    "access": "archive",
    "access_note": "not online (backfilled 28 Oct 2026 from the entry: ...the page. Checked 28 Oct 2026: Not re-verified this round: no images found, holder not established. (could not be verified: see...)",
-   "vetting_note": "Series-level LBC record only (MIBA01C525, Archivio Archinto, 21 vols 1683-1720); page fetched 3 Nov 2026: no holder, inventory or images linked, only 'si segnala la presenza di lettere cifrate'. Web searches (Archinto nuncio cifrate, ASMi Archinto) found no volume or letter with cipher. No individual ciphertext identifiable; needs the Archivio Archinto's own inventory."
+   "vetting_note": "Series-level record, no single ciphertext: re-fetched LBC MIBA01C525 (Archivio Archinto, Volumi di corrispondenza 1683-1720, 21 vols, 'Si segnala la presenza di lettere cifrate'; the page gives no holder address, volume list or images, and says consultation requests go to the owner). Searches this pass (Archivio Archinto nuncio volumes cifra; Giuseppe/Gerolamo Archinto nunciature ciphers; ASMi inventories) found no inventory and no decipherment. known.py: only this row and the Italian catalogues sweep README. Needs the Archivio Archinto's own inventory naming a volume with cipher."
   },
   {
    "id": 1168,
@@ -7154,7 +7105,7 @@
    "decode_ids": [],
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Series-level LBC record only (MIBA00359B, Comune di Milano Dicasteri Ambasciatori agenti, 125 units 1516-1751); page fetched 3 Nov 2026: 'frequente l'uso di un linguaggio cifrato' in the 17th c., no images, unit list not reachable by fetch. Web searches found nothing on Milan civic legates' ciphers. No individual ciphertext identifiable; needs the Archivio storico civico unit inventory (Santoro, Dicasteri)."
+   "vetting_note": "Series-level record, no single ciphertext: re-fetched LBC MIBA00359B (Comune di Milano, Dicasteri, Ambasciatori e agenti 1516-1751, 125 units): 17th-c. legates' letters in cipher 'per parti limitate o ampie', clear copy sometimes kept by the Milan offices, but no unit list or images on the page. Searches this pass (Milan civic legates Madrid cifra inventory, Santoro Dicasteri, Salomoni Memorie storico-diplomatiche) found no unit-level inventory and no decipherment. known.py: only this row. Needs the Archivio storico civico unit inventory to pick one legation with cipher and no clear copy."
   },
   {
    "id": 1171,
@@ -8866,7 +8817,7 @@
    "seen": "catalogue",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "BNP COD. 4417 / 1750 catalogue only, no images; neighbouring COD. 4419/6441 hold deciphered versions (possible printed/ms decipherment of same letters), and printed Cunha/Azevedo Coutinho editions (Instrucoes ineditas 1930; Cartas) not opened; web search found no decipherment but BL holds Azevedo Coutinho despatches 'partly in cipher'; needs BNP scans or the editions"
+   "vetting_note": "Re-tried this pass: the Manuscriptorium record for BNP COD. 4417 is a JavaScript shell that returns no description or images to curl, web searches for COD. 4417 / Cunha / Azevedo Coutinho cifra found no BNP, purl.pt or Cartas page, and archive.org has no copy of Instrucoes ineditas de D. Luis da Cunha (1930, ed. P. de Azevedo and A. Baiao) or Cartas de D. Luis da Cunha. So the cipher at COD. 4417 pp. 33-37 and COD. 1750 is not seen, the edition is unopened, and the lead spans two codices and several letters. Unblock: BNP scans via purl.pt or Chrome on the Manuscriptorium record, and the 1930 edition text."
   },
   {
    "id": 1243,
@@ -8903,7 +8854,7 @@
    "scored": "sweep",
    "access": "online",
    "access_note": "online (backfilled 28 Oct 2026 from the entry: ...not stated. Not on DECODE. Look at Tanner 1917 pp. 649-650 (digitised on e-rara / archive.org?) for a printed reading; if none, r...)",
-   "vetting_note": "Staatsarchiv Zurich catalogue page opened (A 225.1 Nr. 182, 'Chiffriertes Schreiben', microfilm only, no image online) and shows an edition with facsimile: Tanner, Der Kampf ums Eschental (1917) Beilagen pp. 649-650; book not online (web searches Turreo/Laveno/Tanner found nothing), so whether a decipherment is printed is unanswered; needs the book"
+   "vetting_note": "needs Chrome: https://books.google.fr/books?id=OHQ7AQAAMAAJ&newbks=0&q=Turreo (old UI snippets). Tried this pass: Tanner, Der Kampf ums Eschental (Leemann 1917, Schweizer Studien zur Geschichtswissenschaft IX.2, Google id OHQ7AQAAMAAJ) is snippet-only; the gdata feed gave only two snippets ('Laveno ... Roveredo ... Turreo' on the Turreo-Laveno pages) with no cipher text, jscmd SearchWithinVolume2 returns the about page by curl, archive.org and HathiTrust have no copy. Staatsarchiv Zurich A 225.1 Nr. 182 is microfilm only, no image. Whether Tanner's Beilagen pp. 649-650 print a decipherment or only a facsimile stays unanswered, so no open or read."
   },
   {
    "id": 1244,
@@ -8942,7 +8893,7 @@
    "seen": "catalogue",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Prior art on record but unread: Usteri, 'Ueber Chiffrierung in frueherer Zeit, insbes. Antistes Breitingers Geheimschrift ... Peblis', Zuercher Taschenbuch 1960 pp. 11-28 'm. Tab.' (confirmed in Buehner's Zuercher bibliography 1960, zop.zb.uzh.ch handle 2063, entry 121); volume itself not online (zop has only the Buehner offprints); the table is probably a key/decipherment; needs the article before open/partly_read; Staatsarchiv pages E II 399/400 are catalogue-only (microfilm)"
+   "vetting_note": "Usteri, Ueber Chiffrierung in fruherer Zeit ... Breitingers Geheimschrift ... Peblis, Zurcher Taschenbuch 80 (1960) pp. 11-28, is the printed analysis of exactly these folios (Staatsarchiv Zurich catalogue pages E II 399 ID 324946 and E II 400 ID 324948 both cite it under Auswertung, listing the same folio numbers) and is probably a key or reading, i.e. prior art. This pass: web searches (Usteri/Breitinger/Peblis, ZTB 1960 digitised) found no online copy; zop.zb.uzh.ch holds only Buehner bibliography offprints; the catalogue pages are text only with Mikrofilm copies. The lead is also a cluster of about 24 folios in two volumes. Unblock: the 1960 volume (ZB Zurich) to see whether the key and readings are printed."
   },
   {
    "id": 1246,
@@ -10673,7 +10624,7 @@
    "scored": "sweep",
    "access": "archive",
    "access_note": "MHS collection guide lists no digital copies (checked 28 Oct 2026)",
-   "vetting_note": "Kimball-Griswold (MHS fa0549): the guide only says 'Beginning in 1869, portions of the diary entries are written in code' and 'Some portions are written in code' in John C. Kimball's diaries; it does not say what kind of code (it could be shorthand) and no ciphertext, scan or volume is identified (the guide lists no digital copies), so the cipher is not shown to exist; a web search for a coded Kimball diary found nothing. Needs the diary volumes seen at MHS."
+   "vetting_note": "Still only 'code' of unstated kind. MHS guide fa0549 (fetched 6 Nov 2026): Vol. 4 Miscellany 1865-1870 'Beginning in 1869, portions of the diary entries are written in code', and the pocket diaries 1863-1909 (Box 12-14) 'Some portions are written in code'; no word on cipher vs shorthand, no scan. The diaries have been published (Home Front Civil Wars: the Diaries of John C. Kimball, ed. William and Drusilla Vodra, 2 vols, Beverly 1860-70) but I could not open that edition or find what it says of the code; three web searches found nothing on a coded Kimball diary. Would need the Vodra volume 2 or the MHS volumes."
   },
   {
    "id": 1296,
@@ -15731,7 +15682,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "Volume-level Aleph records only (bncatalogo.cl 000050868 fetched 3 Nov: 'Contiene: Oficios, circulares, telegramas y criptogramas reservados y confidenciales' for a whole 1926-27 volume, 1 v.); no individual cipher item is identified and nothing is digitised, so ciphertext cannot be shown. Web searches (Antofagasta criptogramas 1927, Chilean ministry ciphers 1920s) found no study. Needs item-level selection at the Archivo Nacional."
+   "vetting_note": "Blocker stands. Third pass (6 Nov): bncatalogo.cl Aleph records 000050868/000050871 re-read (volume-level: 'Contiene: Oficios, telegramas y criptogramas confidenciales' for whole volumes, 1 v. each); in Chilean usage 'criptograma' may simply mean a ciphered telegram, no item, count, key or image is identified, and nothing is digitised. The Archivo Nacional's own catalogue (sinarchile.archivonacional.gob.cl) returns a security-challenge page to scripts (needs Chrome: https://sinarchile.archivonacional.gob.cl/index.php/informationobject/browse?query=Intendencia+de+Antofagasta+criptogramas); not tried. Searches (Archivo Nacional Antofagasta criptogramas 1926-27; Interior Ministry cifrados Ibanez intendentes; Chilean diplomatic cipher 1920s Tacna-Arica) found no study of these volumes. A volume-level record is an aggregate, not a single cipher document."
   },
   {
    "id": 1530,
@@ -16477,7 +16428,7 @@
    "access_note": "online: BNCF scans in the Internet Culturale viewer (record linked); reuse conditions of BNCF not checked",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Edition not openable: Lorenzo de' Medici, Lettere XVI (Böninger, Giunti 2011), which covers 22 Jan 1490, is not on Internet Archive (only vols V, VI, VII found); vol. VI printed its Pandolfini slip deciphered (lead 1552), so XVI may do the same here. Marco Vito (Vienna) overlap also unchecked. Leaf: Internet Culturale showed a math CAPTCHA, https://www.internetculturale.it/it/16/search/detail?instance=magindice&case=&id=oai%3Abncf.firenze.sbn.it%3A21%3AFI0098%3AAutografiPalatini%3Avol_VI_n_62; not answered. 29 Oct note saw 7 lines of symbol cipher with about 30 words glossed."
+   "vetting_note": "Edition still unopened: Lorenzo de' Medici, Lettere XVI (Boninger, Giunti 2011, ISBN 9788809774186) covers 22 Jan 1490. Tried this pass: archive.org advancedsearch (no vol. XVI), Google Books feed (id ZlhaAQAACAAJ, view_no_pages; API quota exhausted), web search for the letter and for Marco Vito's work (no Pandolfini hit). Archive description does show cipher ('C. 3 e un postscriptum cifrato: in interlinea sono decifrate solo alcune parole'), but vol. VI printed its Pandolfini slip deciphered, so XVI may print this one. Leaf also unreachable: Internet Culturale magparser/objdownload route returns image URLs, but the BNCF image back end answers with a 404 placeholder image today (and teca.bncf viewer gives HTTP 500). Would unblock: a copy of Lettere XVI (letter no. for 22 Jan 1490), or a later retry of the BNCF images."
   },
   {
    "id": 1557,
@@ -22318,7 +22269,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "Description 'concerning the latter's intelligences, and submitting a reply in cipher' does not show ciphertext survives, and the Discovery record C7768715 carries the note 'missing.', so the leaf may be absent from SP 36/65; needs a Kew enquiry or Gale check of f. 17 before any verdict"
+   "vetting_note": "Discovery API record C7768715 (SP 36/65/17, f. 17, 7 Jan 1745) read this pass: description is 'Anon to John Smart, merchant, concerning the latter's intelligences, and submitting a reply in cipher' and the record carries the note 'missing.', so the folio may no longer exist in the piece; the description does not show ciphertext survives. A web search for John Smart / SP 36/65 found no calendar or edition. Unblock: a Kew enquiry whether f. 17 is present, or Gale State Papers Online."
   },
   {
    "id": 1780,
@@ -22355,7 +22306,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "Description 'St. Saphorin has sent a piece in cypher for decoding' does not show that ciphertext is on f. 38 (the piece may have been forwarded separately); SP 78/181/29 not digitised (Discovery digitised=false, API checked); needs a Kew or State Papers Online (Gale) look at the leaf"
+   "vetting_note": "Discovery API record C7333109 (SP 78/181/29, f. 38, Walpole to Delafaye, Paris, 10 Mar 1725) read this pass: 'St. Saphorin has sent a piece in cypher for decoding' names a piece sent on, not ciphertext on f. 38; the record has no image (digitised=false). Web search found only neighbouring Discovery entries and BL Add MS notes of decyphered Walpole/Robinson 1725 letters; Coxe's Memoirs of Horatio Walpole vol. 1 (archive.org) has no St Saphorin cipher passage for March 1725. Unblock: Kew or State Papers Online view of f. 38, and the neighbouring SP 78/181 leaves."
   },
   {
    "id": 1782,
@@ -22474,43 +22425,6 @@
     "closed": "TNA SP 87/4/133 (French letter from Mons, 20 Jul 1709, ff. 373-377, 'largely in numerical cipher') carries, per the catalogue itself, 'an extract of the enciphered material regarding the czar, the king of Sweden and the siege of Tournai', and its summary gives contents of the cipher part, so a contemporary reading of part sits on the file; not digitised, so it cannot be confirmed from here.",
     "date": "2026-11-04"
    }
-  },
-  {
-   "id": 1789,
-   "counted": true,
-   "year": 1712,
-   "date": "1712",
-   "title": "Series of intercepted letters from Namur, partly in cipher, on the Utrecht negotiations",
-   "correspondents": "unknown (Namur)",
-   "place": "Namur",
-   "language": "French",
-   "region": "Low Countries",
-   "period": "1701-1800",
-   "shelfmark": "TNA SP 87/4/234",
-   "folio_note": "ff. 645-671",
-   "cls": "C",
-   "status": "Catalogue: \"intercepted letters from Namur, partly in cipher\".",
-   "why": "Intercepts of the Utrecht year; about 27 folios.",
-   "importance": 3,
-   "solvability": 2,
-   "difficulty": 3,
-   "score_note": "Scored from the TNA Discovery catalogue description only (TNA State Papers sweep, 2 Nov 2026; research/sweep_2026-11_tna_state_papers/); not viewed",
-   "verify": "Order a copy from Kew or look in State Papers Online; check the same volume for a decipher or a key in SP 106.",
-   "links": [
-    {
-     "label": "TNA Discovery SP 87/4/234",
-     "href": "https://discovery.nationalarchives.gov.uk/details/r/C8951001"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "TNA Discovery API, State Papers sweep",
-   "prior_art": "open as far as checked (2 Nov 2026: known.py, incl. the removal file, on the shelfmark and the correspondents; Discovery text only; CSP calendars, Tomokiyo, Lasry and the SP 106 key volumes not searched for this item)",
-   "needs_archive_scan": "yes",
-   "access_note": "not digitised on Discovery (digitised=false); State Papers Online (Gale, subscription) or a Kew visit",
-   "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Intercept series (ff. 645-671) partly in cipher, catalogue only, not digitised; intercepts of 1712 were routinely deciphered by the Deciphering Branch and the file may hold the decipherments. Searches (SP 87/4/234, Namur 1712, CSPF Anne, Willes/Blencowe) found no edition; need Kew/SPO view of the leaves before any verdict."
   },
   {
    "id": 1790,
@@ -22689,7 +22603,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "Cluster of eight items (SP 87/16, /17, /21, /23), several 'duplicates' of other letters, none digitised; catalogue does not say which carry ciphertext without decipher. Lead itself says most were read at the time. Needs per-leaf viewing at Kew/SPO; searches found no edition."
+   "vetting_note": "Cluster of eight letters (SP 87/16/12, /13; 87/17/58, /122; 87/21/45; 87/23/41, /51, /70) by Harrington, Chesterfield and Cumberland, 1745-47, under at least three correspondents and years, so not one document and not one key. Discovery API records for all eight read this pass: each says 'partly in cipher' or 'original partly in cipher' (87/16/12 and /13 are 'duplicate (partly in cipher)' of 87/16/10 and /11), none mentions a decipher, none is digitised. Needs the cluster split into per-letter leads (87/17/58 Harrington to Cumberland 17 Jun 1745 and 87/23/70 Cumberland to Chesterfield 14 Aug 1747 are the plainest candidates) and Kew or State Papers Online views of the leaves."
   },
   {
    "id": 1795,
@@ -22726,7 +22640,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "SP 89/12/73 (f.123) 'Sends this in cipher' is only a mention; SP 89/12/74 (f.124) is catalogued 'Original of f.123', and f.123 has a full plain-text summary, so f.123 is probably the contemporary decipher. Kew/SPO view needed to confirm; likely partly_read or read."
+   "vetting_note": "TNA Discovery (API, read 6 Nov 2026) now settles part of the old note: SP 89/12/73 (f.123, 29 Jul/3 Aug 1672, Parry to Arlington) carries the catalogue note 'Deciphered copy. See f.124', and SP 89/12/74 (f.124) is 'Original of f.123' with note 'Partly in cipher'. So this lead's own shelfmark is the contemporary decipherment, and the ciphertext is f.124 (a separate document, not this lead). Verdict would be read/partly_read (or a reframe onto f.124), but no leaf has been seen: not digitised on Discovery, State Papers Online is Gale (subscription), no calendar covers SP 89 Portugal 1672. Three web searches this pass (Parry/Arlington/de Mello 1672 deciphered; Parry/Ferreira Rebello/Brazil Company; Tomokiyo/cryptiana/SP 106 Parry) found only the two TNA records, no edition and no cryptiana page. Unblock: a Kew or SPO view of ff.123-124 to confirm the decipher sits with the cipher, then close as read."
   },
   {
    "id": 1799,
@@ -22824,7 +22738,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "SP 84/161/83 f. 216 'Letter in cipher or shorthand' leaves open whether it is a cipher at all (could be shorthand, a not_cipher case); catalogue only, no content summary. Needs a view of the leaf at Kew/SPO."
+   "vetting_note": "Re-tried this pass: Discovery API record C7306165 for SP 84/161/83 (f.216, undated, 1656 volume) says only 'Letter in cipher or shorthand, mentioning Peter Refin of Middelburg'; no author, language or content summary, and the neighbouring folios (f.163 Admiralty report, f.167 Whittell to Dorislaus, f.231 Aizema extracts) give no context. Searches for 'Peter/Pieter Refin' Middelburg 1656, for SP 84/161 with cipher/shorthand, and for Thurloe State Papers vol. 5 Middelburg/Refin found no hit on this letter or person (Thurloe papers are SP 18/Rawlinson, not SP 84, and no calendar covers SP 84/161). The cataloguer's own 'cipher or shorthand' leaves open that it is shorthand (not a cipher), so ciphertext is not shown. Unblock: a Kew or SPO leaf view to tell cipher from shorthand."
   },
   {
    "id": 1803,
@@ -22918,7 +22832,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "SP 94/8/197 f. 197 'Cipher Marseilles'. In Italian is a bare title, possibly a key rather than a letter; no ciphertext shown by the description (neighbour f. 198 is a Spanish copy of instructions). Needs a view at Kew/SPO."
+   "vetting_note": "Re-tried this pass: Discovery API record C10687619 for SP 94/8/197 reads only 'Folio 197: Cipher Marseilles. In Italian', language Italian, undated; neighbours are f.195-196 (Spanish condemnations of royal finance officers, dated 1563 in the catalogue) and f.198-199 (Spanish copy of instructions for Henry Pranell), so the date, the writer and even the volume context are uncertain. 'Cipher Marseilles' reads like the title of a key or nomenclator, not a ciphertext, and nothing in the description shows ciphertext survives. known.py on SP 94/8 and 'Cipher Marseilles' found nothing, and web searches for SP 94/8 Marseilles Italian cipher and for the Pranell instructions turned up no edition or calendar. Unblock: a Kew or SPO view of f.197 to see whether it is a letter or a key."
   },
   {
    "id": 1805,
@@ -26799,7 +26713,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "SP 105/60/168 is Stepney's own letter to Kinsky of 8/18 Jan 1694 (TNA Discovery C6822068, read by curl: 'Gives contents of this letter which is entirely in cipher'); the cipher letter from Paget is only summarised, so no ciphertext is shown to survive on f. 168, and the item is not digitised. Needs an image of f. 168 (TNA Kew) or a neighbouring folio; not a not_cipher either, since the leaf was not seen. Lead 1150 (Stepney SP 105/58-60) tracks /60/121, /123, /135, not this folio."
+   "vetting_note": "TNA SP 105/60/168 is Stepney giving the contents of a cipher letter from Paget: the folio itself may carry no ciphertext, but the leaf is not digitised and has not been seen, so it cannot be closed as not_cipher (the earlier pass's reasoning: the scope note flags cipher passages on other folios of the volume, none on f. 168). known.py found no duplicate. Needs Kew or a digitised view of f. 168."
   },
   {
    "id": 1885,
@@ -26836,7 +26750,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "IOR/G/17/5 ff. 228-232 is described by the BL/TNA catalogue only as 'Copy of cipher letter from Sir Robert Ainslie to Peter Michell' (TNA Discovery record read by curl; not digitised); it does not show whether the copy holds cipher groups or is the deciphered text read in Court on 17 Aug 1779. Web searches (Ainslie Michell Suez 1779) found no print or decipherment. Needs the volume at the India Office reading room."
+   "vetting_note": "Blocker stands. Third pass (6 Nov): TNA Discovery record 8b987ccd (IOR/G/17/5 ff.228-232, 'Copy of cipher letter from Sir Robert Ainslie to Peter Michell ... Read in Court 17 August 1779', digitised: false) and BL record read by curl; the catalogue summarises the letter's content in full (tribute to the Porte, a 'proper agent' at Cairo), which shows the cataloguer read a plain text, so it is not shown whether ff.228-232 hold cipher groups or the deciphered copy read to the Court. Neighbouring items in G/17/5 (f.227 covering sheet, ff.306-310 Ainslie to Michell, ff.197-199) are catalogued as ordinary letters. Searched: Ainslie/Michell 1779 Suez; Ainslie cipher 1779 secret committee/Hoskins; no printed or deciphered text found. Only the India Office reading room (BL Asian and African Studies) can settle it; no BL digitisation exists."
   },
   {
    "id": 1886,
@@ -26873,7 +26787,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "IOR/G/17/6 Part 1 ff. 59-68 is catalogued only as 'Copy of cipher letter from Sir Robert Ainslie to the Marquis of Carmarthen ... Marked U.P.' (BL record 041-000176650 read by curl: Digitised Content blank, one item); ten folios may be a deciphered copy rather than ciphertext, and nothing shows which. Web search for Ainslie 1787 cipher found no print or decipherment. Needs the volume at the India Office reading room."
+   "vetting_note": "Blocker stands. Third pass (6 Nov): BL searcharchives record 041-000176650 (IOR/G/17/6 Part 1 ff.59-68, 'Copy of cipher letter ... Marked U.P.') has no digitised content (MDARK only, no images) and TNA Discovery f9335f74 says digitised: false. The catalogue summarises content (plague, Georgia, Cairo rebellion), so a readable text exists but nothing shows whether ten folios hold cipher groups or the clear copy. A TNA search for 'cipher letter' with Ainslie finds only this item and lead 1885. Web searches (Ainslie 1787 Carmarthen cipher; Ainslie cipher India Office) found no print or decipherment; Bagis 1988 on Ainslie's embassy not openable. Needs the India Office reading room or a BL image order."
   },
   {
    "id": 1887,
@@ -26947,7 +26861,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "TNA Discovery API record C6777006 reads only 'I.A. Turkey 200. Turkish ciphers. Volume 1' (frames 824-866 of a GFM 10 microfilm, not digitised); no description of ciphertext, tables or telegrams; known.py finds only this lead and the sweep file; web searches (German title, Bundesarchiv R 901, DDB) found no trace of the file's content or any decipherment; needs the film frames from TNA Kew"
+   "vetting_note": "Blocker stands. Third pass (6 Nov): TNA Discovery C6777006 (GFM 10/476/1, frames 824-866 of the German War Documents Project microfilm, digitised: false) reads only 'I.A. Turkey 200. Turkish ciphers. Volume 1', the German title 'Chiffres in der Tuerkei' is ambiguous (could be German or Turkish cipher practice), and no description shows ciphertext, tables or intercepts. A TNA search for 'Turkish ciphers' returns only this record; known.py finds no other record. Searches (German title and 1904 Auswaertiges Amt; GFM 10 'I.A. Turkey 200'; Ottoman diplomatic cipher before 1914) found no content description or decipherment; Bingoel's Cryptologia papers cover Ottoman ciphers to 1877 only. Needs the film frames at TNA Kew or the original in the Politisches Archiv des Auswaertigen Amts."
   },
   {
    "id": 1889,
@@ -30099,7 +30013,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "Needs an archive answer or scan: BayHStA Kasten blau 61/42. No scan online and gda.bayern.de gives only 'Enthält auch: Chiffren, Briefe von dem Karmelitenbruder Tiburtius', which does not separate ciphertext from key sheets. Search on Schellerer + Philipp Wilhelm + Chiffren found the VieCPro entry (Reichshofrat from 8 Mar 1677, d. 1701) and Kaiserin Eleonora edition letters that mention him, nothing printing or deciphering this file. known.py: only this lead and its sweep."
+   "vetting_note": "Description still does not separate ciphertext from keys. gda.bayern.de page for BayHStA Kasten blau 61/42 (curl, 6 Nov 2026) is a JavaScript tree: static HTML returns none of the unit text, which stays 'Enthaelt auch: Chiffren, Briefe von dem Karmelitenbruder Tiburtius von Sankt Valerian' (per the earlier note); the same describer writes 'nicht aufgeloeste Chiffren' for ciphertext elsewhere, so a bare 'Chiffren' is likely key sheets. Searches this pass (Schellerer + Philipp Wilhelm + Chiffren; Kasten blau 61/42) found only the OeAW Kaiserin Eleonora edition (Kasten blau 44/45 letters, Schellerer as Reichshofrat 1678-82) and nothing on this file; no scan online. Would need a BayHStA answer or reading-room visit."
   },
   {
    "id": 1999,
@@ -30140,7 +30054,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "Needs an archive answer or scan: BayHStA Kasten blau 59/3 and 59/5. No scan online and the finding aid gives only 'Enthält u.a.: Chiffren' in each, which does not separate ciphertext from key sheets. The two files have different correspondents (Louvignies 1677-82, Nesselrode 1685-89) and should be judged apart. Search on Louvignies + Nesselrode + Kasten blau 59 found no edition or decipherment of either. known.py: only this lead and its sweep."
+   "vetting_note": "Re-attempted 6 Nov (t15): fetched both gda.bayern.de records (59/3 Louvignies 1677-82, Laufzeit Duesseldorf/Bruessel/Diest/Wien; 59/5 Nesselrode 1685-89, Kurpfalz) and read the full entry; the only cipher wording is 'Enthaelt u.a.: Chiffren', Medium 'A = Analoges Archivale', no scan, no digital link. Searches (Kasten blau Chiffren Findbuch; Louvignies Osnabrueck Philipp Wilhelm chiffriert; Nesselrode 1685 Kurpfalz) found no edition or study: only the OeAW Eleonora Magdalena edition, which cites other Kasten blau units (44/45) and not these. known.py: only this lead, its sweep and an unrelated Nesselrode note in targets/malsburg1637. A bare 'Chiffren' in a mixed file may be key sheets, so ciphertext is not shown. Would unblock: BayHStA answer or scan of 59/3 and 59/5, judged as two separate files."
   },
   {
    "id": 2000,
@@ -30177,7 +30091,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "Needs an archive answer or scan: BayHStA Kasten blau 62/1 a. No scan online and the finding aid gives only 'Enthält u.a.: Chiffren, La Gazette (4. Mai 1686)', which does not separate ciphertext from key sheets. Search on Heiss + Paris + Philipp Wilhelm + Kasten blau 62/1 found no edition or study of this file. known.py: only this lead and its sweep."
+   "vetting_note": "Re-attempted 6 Nov (t15): fetched the gda.bayern.de record Kasten blau 62/1 a (Heiss, pfaelzischer Resident in Paris, 1673-88) in full; cipher wording is only 'Enthaelt u.a.: Chiffren, La Gazette (4. Mai 1686)', analogue only, no scan or link. Searches (Kasten blau Chiffren Findbuch; Heiss Resident Paris Philipp Wilhelm dechiffriert; Heiss Paris 1680er) found no edition, study or decipherment; the OeAW Eleonora edition covers other units. known.py: only this lead and its sweep. Description does not separate ciphertext from key sheets. Would unblock: BayHStA answer or scan of 62/1 a."
   },
   {
    "id": 2008,
@@ -30723,7 +30637,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "gda.bayern.de record Kasten blau 61/25 (fetched by curl) says only 'Enthält u.a.: Chiffren' in a mixed Schröder correspondence file 1664-73: no ciphertext shown, may be keys; no scan online; web search for Schröder/Philipp Wilhelm/Chiffren found nothing. Needs archive answer or scan."
+   "vetting_note": "Re-attempted 6 Nov (t15): fetched gda.bayern.de record Kasten blau 61/25 (Wilhelm von Schroeder, kaiserlicher Geheimer Sekretaer, 1664-73; places Regensburg, Wien, Duesseldorf, Luxemburg) in full; only 'Enthaelt u.a.: Chiffren', analogue, no scan. Searches (Schroeder Geheimer Sekretaer Philipp Wilhelm Chiffre; Kasten blau Chiffren Findbuch; Schroeder 1664-73 Neuburg) found no edition or decipherment. known.py hits only this lead and an unrelated Biermann 1675 Schroeder letter. Bare 'Chiffren' may mean keys, so ciphertext is not shown. Would unblock: BayHStA answer or scan of 61/25."
   },
   {
    "id": 2048,
@@ -30760,7 +30674,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "gda.bayern.de record Kasten blau 61/30 says only 'verschiedene Chiffren' in a Gise/Verjus correspondence file 1671-74: no ciphertext shown, fits keys (candidate key set for catalogue 2001/Gise entries); no scan online; web search Gise/Verjus found nothing. Needs archive answer or scan."
+   "vetting_note": "Re-attempted 6 Nov (t15): fetched gda.bayern.de record Kasten blau 61/30 (Oberkanzler Franz von Gise, 1671-74; Verjus and M.L.J. von Sinzig letters) in full; only 'Enthaelt auch: verschiedene Chiffren', analogue, no scan. Searches (Gise Verjus Neuburg Chiffren; Kasten blau Chiffren Findbuch; Gise Oberkanzler 1671-74) found no edition or decipherment. known.py: the catalogue already notes this unit only as a possible key source for the 1667 Gise letter (Grassegger 15280). 'Verschiedene Chiffren' fits a key set as well as ciphertext, so ciphertext is not shown. Would unblock: BayHStA answer or scan of 61/30."
   },
   {
    "id": 2050,
@@ -32490,7 +32404,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "Only the Yale finding aid line (GEN MSS MISC GROUP 577 F-47: 'Unidentified AM written in an unidentified hand, mostly in cipher', [2] leaves, undated); no scan, writer, language or date, so prior art cannot be searched for a specific document, and the cataloguer's 'cipher' may be shorthand. Searches on Beinecke GROUP 577 and Bible-commentator cipher notes found no record; needs a Yale image."
+   "vetting_note": "Yale finding aid read in full this pass (ead-pdfs.library.yale.edu/946.pdf, p.1010 of 1122): 'b. 30, f. GROUP 577, F-47 / Notes on works of Bible commentators / 1 item ([2] leaves) / Unidentified AM written in an unidentified hand, mostly in cipher. n.d.' Nothing more (no date, hand, language), no digitisation found in collections.library.yale.edu searches, and archives.yale.edu returns a bot challenge to curl (HTTP 202). A cataloguer's 'cipher' on clerical notes is commonly shorthand, so ciphertext is not established. needs Chrome: https://archives.yale.edu/ (search 'Notes on works of Bible commentators'), or a Beinecke image."
   },
   {
    "id": 2115,
@@ -34456,7 +34370,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "Images needed from Staatsbibliothek zu Berlin for Fragm. var. 575: the Handschriftenportal record (/api/kods and /api/tei read 4 Nov 2026) gives only 'Nicht entzifferte Geheimschrift (Fragm.)', 2 Bl., Pergament, with no date, no origin and no digitised copy (/api/digitizeds returned 0). Nobody has seen a leaf, so cipher versus an unidentified or constructed script cannot be settled. Web search on the shelfmark found nothing else; known.py hits only this lead's own sweep."
+   "vetting_note": "Blocker stands. Third pass (6 Nov): Handschriftenportal HSP-8c5ee335 re-read via /api/kods and /api/tei (only 'Nicht entzifferte Geheimschrift (Fragm.)', 2 Bl., Pergament, no date, no digitisation link); SBB digital collections (digital.staatsbibliothek-berlin.de) is a JavaScript-only Meteor app that returns an empty shell to curl (needs Chrome: https://digital.staatsbibliothek-berlin.de/suche?queryString=Fragm.%20var.%20575) and DDB search sits behind an Anubis proof-of-work page. WebSearches ('Fragm. var. 575' Geheimschrift; 'asiatisch anmutenden Zeichen' Geheimschrift; shelfmark variants) found nothing. The library itself says the Oriental department judged it not oriental, so cipher versus unidentified or constructed script is unsettled and no leaf has been seen. known.py: only this lead's own sweep."
   },
   {
    "id": 2174,
@@ -34549,7 +34463,7 @@
    "access_note": "no digitisation listed",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Images needed from Staatsbibliothek zu Berlin for Ms. theol. lat. oct. 184, ff. 264r and 265r: the Handschriftenportal shows no digitised copy (/api/digitizeds returned 0; record read via /api/kods and /api/tei: 266 + I Bl., Magdeburg, 1501-1510), and the library's own wording is hedged ('Geheimschrift (?)'), beside pen trials and an alphabet. Without seeing the leaves this may be pen trials rather than cipher. Web search on the shelfmark found nothing more."
+   "vetting_note": "Blocker stands. Third pass (6 Nov): Handschriftenportal HSP-2e408439 re-read via /api/tei (Gebet- und Andachtsbuch, Magdeburg, 1501-1510, 266+I Bl., Latin and German; no digitisation link, no description text of ff.264r-265r beyond the catalogue's hedged 'Geheimschrift (?)' beside pen trials and an alphabet). SBB digital collections is JavaScript-only (needs Chrome: https://digital.staatsbibliothek-berlin.de/suche?queryString=Ms.%20theol.%20lat.%20oct.%20184) and returned an empty shell to curl. WebSearches ('Ms. theol. lat. oct. 184' Gebetbuch Magdeburg Geheimschrift; shelfmark variants) found nothing. The leaves have not been seen, and the library's own wording is hedged, so cipher versus pen trials is unsettled. known.py: only this lead's own sweep."
   },
   {
    "id": 2177,
@@ -35465,7 +35379,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "Edition match needed before a verdict. Manus 750696 (JSON read 6 Nov 2026) confirms 'Presente testo cifrato alle pp. 172-173; p. 180' in APUG Concilio di Trento 242rec, 34 Contarini->Farnese letters 30 Mar-4 Jul 1541 'cop. dagli originali', with Pallavicino's marginalia; no images. But the despatches are printed: Pastor, 'Die Correspondenz des Cardinals Contarini waehrend seiner deutschen Legation (1541)', Historisches Jahrbuch 1 (1880) 321 ff. and 473 ff. (archive.org historischesjahr01gruoft, read), prints from Bibl. Pia 129 ff. 172-323 (copy 'tratta dal registro del Card. Contarini') the Regensburg letters to Farnese of April-July 1541 in clear, e.g. no. 99 of 19 June (pp. 483-486), which Dittrich, Regesten und Briefe des Cardinals Gasparo Contarini (1881; archive.org bub_gb_PrnQAAAAMAAJ, read) calls 'zum Theil chiffrirt' in all copies (Cod. 129, Cod. Trid. 98); Pastor also restores passages that Schulze (ZKG 3, 1879) lacked because the Naples copies left the cipher unsolved. So the plaintext of the APUG cipher passages is very probably in print, but pp. 172-180 cannot be assigned to a letter without the APUG pages (the volume ends 4 Jul; Pastor notes that Pallavicino cited a 4 Jul letter missing from the Vatican copies, which may be the one at p. 180). known.py (APUG, Contarini, Gregoriana, Ratisbona): no other copy of this volume; not on DECODE. Needs APUG pp. 170-181 to compare with Pastor nos. 99-108 and Dittrich."
+   "vetting_note": "Blocker stands after a real attempt, and prior art now looks likely rather than open. Manus 750696 shows ciphertext survives (pp. 172-173, p. 180) in a 17th-c. copy volume, but no images, so the leaf was not seen. This pass (6 Nov): in Pastor, Hist. Jahrbuch 1 (archive.org historischesjahr01gruoft) the Contarini->Farnese despatches of 27 Jun (no. 104), 28 Jun, 3 Jul (no. 107) and 5 Jul (no. 108) are printed in clear (from the Papal Archive register 'P.A.' 298-304), and Dittrich (bub_gb_PrnQAAAAMAAJ) calls the 19 Jun letter 'zum Theil chiffrirt' in every copy; by position (pp. 172-180 of 187, letters to 4 Jul) the APUG cipher passages fall among nos. 104-108, whose plaintext is printed, so a printed decipherment is probable but cannot be matched without the APUG pages. Searches run: Pastor/Schulze/Dittrich on the Regensburg despatches (only 19th-c. editions, none stating how cipher passages were solved); APUG Contarini/Gregoriana (nothing). Unblock: APUG scans of pp. 170-181, compared with Pastor nos. 104-108 and Schulze ZKG 3."
   },
   {
    "id": 2198,
@@ -35506,7 +35420,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "No ciphertext shown and the edition not opened. Manus 724628 (JSON read 6 Nov 2026): title 'Lettere in cifra intorno al C. di T. dal 1546 al 1547 (c. 1)'; 'Registro di lettere di Giambattista Cervini al card. Cervini; scritte da Roma a Trento 11. IV. 1546 - 30. VIII. 1547; cop. sec. XVII dalle Carte cerviniane. Al f. 83r vi e un elenco delle cifre usate'. A 17th-century register copied from the Cervini papers under that title is as likely to hold the deciphered texts of letters sent in cipher as the groups themselves; nothing in the record says groups are on the leaves, and Manus links no images (APUG, Rome). Concilium Tridentinum X (Epistularum pars prima, ed. Buschbell, 1916) covers the 1545-47 legation correspondence and is said to print the Cervini letters in part; the archive.org copy (conciliumtrident0010coun) is lending-only (djvu text 403 on 6 Nov 2026), so not opened. Web searches on Giambattista Cervini cipher letters and on Buschbell/Carte Cerviniane found nothing on this register. known.py (APUG 690, Cervini, cerviniane): only this lead. Needs APUG cc. 1-5 and 83r, and CT X opened at the G.B. Cervini letters."
+   "vetting_note": "Blocker stands. Manus 724628 gives only the title 'Lettere in cifra intorno al C. di T. 1546-47' and 'al f. 83r un elenco delle cifre usate' for a 17th-c. copy of G.B. Cervini's letters; it does not show cipher groups survive (the register may hold the deciphered texts), and no images. Tried this pass: Concilium Tridentinum X (Buschbell 1916, Epistularum pars prima) is the edition that would print these letters; archive.org conciliumtrident0010coun is lending-only (djvu text and inside-search both 'Item not available'), Google Books ids mY9QAQAAMAAJ, SOo6-VjlohoC, tqE7AQAAMAAJ are all view_no_pages, HathiTrust search is behind Cloudflare, Google Books API quota exhausted. Web searches (Giovanni Battista Cervini cifra letters; APUG 690; CT X full view) returned nothing on this register. Needs CT X opened at the G.B. Cervini letters (library copy, or Hathi/Google Books full view via Chrome) plus APUG cc. 1-5 and 83r."
   },
   {
    "id": 2199,
@@ -35547,7 +35461,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "No ciphertext shown. Manus 685212 (JSON read 6 Nov 2026) gives only titles copied from the volume's index ('Tutti i titoli sono stati riportati dall'indice ... senza che sia stata verificata la corrispondenza con i titoli interni'): c. 242 'Littera del Cardinal Borromeo ... al Vescovo di Ventimiglia in Concilio del primo di Luglio 1562. Littera del medesimo al medesimo di 4 Luglio con un'altra in Cifra', and cc. 243-253 'Altre litterae del medesimo al medesimo con li cifre a parte de li 18 di Luglio sino a li v settembre 1562'. So the correspondents are Carlo Borromeo -> Carlo Visconti, bishop of Ventimiglia, at Trent; 'con li cifre a parte' in a copy volume most often means the decrypts were copied after the clear letters. No images (APUG). Prior art also open: Visconti's side is printed (Lettere ... da Carlo Visconti; Aymon, Lettres anecdotes du nonce Visconti, 1719) and Susta, Die roemische Curie und das Concil von Trient unter Pius IV, vols 2-3 (1909-11), covers summer 1562; only Susta vol. 1 (1904, to early 1562) is on archive.org (diermischecurie00usgoog), so the volumes for July-Sept 1562 were not opened. known.py (APUG 588, Ventimiglia, Visconti, Borromeo): no copy of these letters. Needs APUG cc. 240-254 and Susta vols 2-3."
+   "vetting_note": "Blocker stands. Manus 685212 titles come from the volume index only; 'con li cifre a parte' and 'un'altra in Cifra' (cc. 242-253, Borromeo to Visconti at Trent, Jul-Sep 1562) do not show whether cipher groups or decrypts were copied, and no images. Tried this pass: archive.org search for Susta (Die roemische Curie und das Concil von Trient unter Pius IV., vols 2-3) finds only vol. 1 (diermischecurie00usgoog); Google Books feed returns Susta only as snippet/no-pages; Aymon's Lettres anecdotes du nonce Visconti not on archive.org; three web searches (Borromeo/Visconti 1562 cifra; Susta vol. 2; Concilium Tridentinum VIII) found only Sarpi, Penn Ms. Codex 678 and Bodleian Mendham 10 (Visconti's own letters), nothing deciphering these items. known.py had no other copy. Needs APUG cc. 240-254 and Susta vols 2-3 (library copy)."
   },
   {
    "id": 2200,
@@ -35588,7 +35502,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "No ciphertext shown. Manus 699266 (JSON read 6 Nov 2026), Osservazioni only: 'Cifre di lettere del Concilio di Trento; Cifra sopra il luogo del conte di Luna (ff. 31r-43r)' in a Trent miscellany (Pius IV, Borromeo, Delfino, Visconti). In curial copy volumes 'Cifra' as a heading is the usual label for the deciphered text of a cipher letter; nothing says groups are on ff. 31r-43r, and Manus links no images (APUG). Related item: catalogue 1343 (Ambrosiana Q 123 sup., 'Lettera cifrata sopra il dare il luoco al Conte di Luna', 1563) is very probably another copy of the same letter on the Count of Luna's precedence (June 1563); it too was promoted from titles only, so neither text has been seen. Web searches on the Count of Luna precedence 1563 + cifra/Borromeo found Sarpi's narrative and the Penn Ms. Codex 678 and St John's O.3 legate letter-books, no decipherment of this item; Susta vol. 4 (1914), which prints the legates' 1563 letters, is not on archive.org and was not opened. known.py (APUG 608, conte di Luna, Delfino): only catalogue 1343 as a probable parallel copy. Needs APUG ff. 28-44 and Susta vol. 4."
+   "vetting_note": "Blocker stands. Manus 699266 lists 'Cifre di lettere del Concilio di Trento' and 'Cifra sopra il luogo del conte di Luna' (ff. 31r-43r) by title only: nothing shows cipher groups are on the leaves rather than deciphered text, and Manus links no images. Tried this pass: searches on the exact title with APUG 608 and 'Res ad Concilium Tridentinum spectantes' (nothing; only Sarpi's Istoria VIII on Luna's precedence), on the Count of Luna precedence 1563 with cifra/Borromeo/legates (no decipherment; Susta vol. 4, 1914, not available on archive.org or Google Books full view), and the sibling catalogue 1343 (Ambrosiana, same letter probably, also unseen). Aggregate-like title, no folio of cipher shown. Needs APUG ff. 28-44 scanned and Susta vol. 4 opened."
   },
   {
    "id": 2201,
@@ -35632,7 +35546,7 @@
    "seen": "catalogue",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "No ciphertext shown and no scan. The only description is secondhand, in Rome BNC Vitt. Em. 1680/1-2 (Manus 596528, JSON read 6 Nov 2026): 'Copie di 8 lettere inviate in cifra tra il 16.6.1606 e il 12.11.1606 dal cardinale Roberto Ubaldini ... sono contenute nel ms. Vat.Lat.14673 ... cc. 122r-129v (cfr. Piazzoni-Vian, Manoscritti Vaticani Latini 14666-15203, 1989, p. 7)'. 'Copies of letters sent in cipher' is the wording for decrypts or clear copies as often as for groups. Vat. lat. 14673 is not digitised: the DigiVatLib IIIF manifest returns 404 and its detail page says 'No record match' (6 Nov 2026), while the neighbour Vat. lat. 14672 is online, so the earlier note that the site resets this network no longer applies. Piazzoni-Vian p. 7 not seen. Web searches on 'Vat. lat. 14673' Ubaldini and on Ubaldini 1606 cipher/Borghese found only his 1607-16 nunciature letter-books (BL Add MS 8721-8727), nothing on these copies. known.py ('Vat. lat. 14673', 'Ubaldini'): only this lead. Lead access should be 'archive'. Needs the Vatican Library reading room or a scan order for cc. 122r-129v."
+   "vetting_note": "Blocker stands. Only secondhand wording (Manus 596528, via Piazzoni-Vian p. 7): 'copie di 8 lettere inviate in cifra' by Ubaldini, Vat. lat. 14673 cc. 122r-129v, which does not say groups are on the leaves. Rechecked 6 Nov: digi.vatlib.it iiif manifest for Vat.lat.14673 still 404 (neighbour 14672 returns 200), detail page loads with no record, so no scan route. Searches run: 'Vat. lat. 14673' Ubaldini cifra 1606; Ubaldini 1606 cipher Borghese Piazzoni Vian; known.py earlier (only this lead). Results gave only his 1607-16 nunciature letter-books (BL Add MS 8721-8727, Folger, Berkeley), nothing on these copies. Needs the Vatican Library reading room or a scan, or Piazzoni-Vian 1989 p. 7 text."
   },
   {
    "id": 2202,
@@ -35721,7 +35635,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "Cannot be identified well enough to search prior art. Manus 588084 (JSON read 6 Nov 2026), element cc. 147r-197r of BNC Rome Ges. 204: 'Carteggio del Duca di Mantova con un suo invitato a Parigi in parte in cifra, con qualche altra lettera allo stesso duca' (title supplied from the Catalogo dei manoscritti Gesuitici p. 119), first incipit 'Ho poi fatta la mia corsa' (147r), last 'Siccome ho umilmente trasmesso a V. A. S.' (189r-197r), signed and dated letters; neither the Duke, the envoy nor any year is given (other items in the volume run 1656-1775). Cipher is reported by the old catalogue, but its form, and whether decrypts stand with it, are unknown. Ms.Ges.204 is not in the BNCR digital library (searchSignature 'Ms.Ges.204' returned 0; 18 Gesuitico manuscripts are online, 6 Nov 2026). A web search for a Mantua-Paris envoy cipher correspondence in BNCR Gesuitico found nothing. known.py ('Gesuitico 204', 'Duca di Mantova', 'Valenti Gonzaga'): no other copy. Needs BNC Rome cc. 147r-197r (or a scan order) to date the letters, name the envoy and see the cipher before editions (ASMn Gonzaga, Paris envoy series) can be checked."
+   "vetting_note": "Blocker stands. Manus 588084 (JSON re-read 6 Nov) gives only the catalogue title 'Carteggio del Duca di Mantova con un suo invitato a Parigi in parte in cifra' (Catalogo Gesuitici p. 119), with no duke, envoy or year (volume items run 1656-1775), so no document can be identified or searched for prior art; cipher is mentioned but its form and any decrypts are unknown. Tried this pass: web search on Gesuitico 204 / Mantua envoy Paris cipher (only other Gesuitico shelfmarks and Venice-Mantua studies), Manus JSON re-read, BNCR digital library has no Ms.Ges.204. Needs BNC Rome cc. 147r-197r to name the duke and envoy and see the cipher."
   },
   {
    "id": 2204,
@@ -35832,7 +35746,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "Series-level cluster, not one cipher document, and the lead's unit numbers are wrong. Inventory 41bis (Wayback PDF read 6 Nov 2026) lists 'Legation Genoise a Paris' units by cassa and number; the lead fused them ('2 18' read as 218). Units marked 'Contiene doc. in cifra/cifre' are nos. 5, 6, 7 (1730-34), 18, 20, 25, 26, 28, 29, 31, 34, 35, 37 (1746-55), 54, 57, 59, 62, 65, 72 (1759-68), 88 (1792) and 90 (1794); no. 47 (1757) 'La carta 166 contiene un decifrante' and no. 89 (1793-94) 'Le cc. 126-132 contengono un cifrario'. Each volume mixes originals, copies and minutes of despatches to and from the minister, so the cipher pieces may be incoming letters already deciphered by the legation; nothing says how many leaves are cipher or whether decipherments accompany them. No edition or study found (web search on the Legation genoise volumes found only the ASGe inventory and the Quai d'Orsay restitution list); known.py 'Legation genoise', 'Manoscritti restituiti', '41bis': no hits. Not online. Needs splitting into per-volume leads and ASGe scans (start with nos. 47 and 89 for the keys and one 'doc. in cifre' volume) before any can be vetted."
+   "vetting_note": "Aggregate: inventory 41bis lists about 22 Legation genoise volumes flagged 'doc. in cifra' (nos. 5-7, 18-37, 54-72, 88, 90) plus a decifrante (no. 47, c. 166) and a cifrario (no. 89, cc. 126-132); the lead's numbers are mis-read and no single cipher document is named, so none can be vetted without inventing one. Tried this pass: Wayback PDF of 41bis re-read, web search for the Legation genoise volumes and ASGe ciphers (only the inventory and other ASGe finding aids), known.py (no hits). Not online. Needs splitting into per-volume leads and ASGe scans, starting with no. 47 and no. 89."
   },
   {
    "id": 2209,
@@ -35955,7 +35869,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "Possible decipherment enclosed; no images. Manus 1846991 (JSON read 6 Nov 2026), Marsili 75/C item 45: '10 novembre 1708. Lettera in cifre c. 91rv. All'interno del bifoglio cifrato, forse allegata la sua decifrazione che riguarda la protezione di Roma e utilizzo di fondi economici'; the scripts are given as 'Corsive settecentesche, cifra'. The cataloguer read a clear sheet inside the cipher bifolio and summarised its content, so the letter may well be deciphered on the spot; that can only be settled on the leaf. Frati, Catalogo dei manoscritti Marsili (1928, BUB PDF read) p. 88 lists 75/C as 150+ letters signed by Paolucci with no note on cipher; Ms. 73 holds 'le attestazioni dei due segretari per la consegna delle cifre' (key handover) and AAV Segreteria di Stato registers would hold the clear minute. Web searches (Paolucci/Marsili 1708 cifra; Marsili 1708-09 papal army correspondence) found no edition or study; known.py 'Marsili 75', 'Paolucci', 'Marsili', 'Comacchio': no duplicate. Needs BUB scans of cc. 91-92 (not digitised, no image link in Manus)."
+   "vetting_note": "Blocker stands, and a decipherment on the leaf is likely. Manus 1846991 item 45 (re-read 6 Nov): 'Lettera in cifre c. 91rv. All'interno del bifoglio cifrato, forse allegata la sua decifrazione che riguarda la protezione di Roma e utilizzo di fondi economici'. The cataloguer summarised the content, which suggests a contemporary decipherment sheet inside the bifolio (that would make it read, not open); only the leaf can settle it, and Bologna BUB has no scan or image link. Searches run: BUB Marsili 75 digitised (no); Paolucci/Marsili 1708 cifra bifoglio decifrazione (nothing; only Lasry's 1721 papal cipher paper, unrelated); manus Marsili 75 Paolucci cifra (only Frati's 1928 catalogue and Marsili studies). known.py found no duplicate. Needs BUB scans of cc. 91-92."
   },
   {
    "id": 2212,
@@ -36447,7 +36361,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "Still no image of MNL OL E 190 43. doboz 5. tétel no. 597, so it cannot be compared with Szilagyi 1883 no. 10. Chrome search of the MNL AdatbázisokOnline E 190 database (Rákóczi család levelezése): \"Rácz Rákóczi\" gives only Rácz István to Rácz János 1644 (box 12 no. 3865), Rákóczi to Rácz János 1648 (box 17 no. 5076) and Rácz István to Kassay, Constantinople 30 May 1642 (box 10 no. 3001); no Rákóczi to Rácz cipher letter of 1642, and no image. Lang's \"43. doboz, 5. tétel\" numbering (the cipher set) is outside the database's box/serial numbering. Lang repertory row C.Rag.05 re-read: \"betűk, monoalf. | nincs feltörve | majdnem teljes\". Needs a reproduction of no. 597 from MNL OL."
+   "vetting_note": "Ciphertext of MNL OL E 190 43. doboz 5. tetel no. 597 still not seen (database has no image), and this pass found why a printed plaintext probably exists: I downloaded Szilagyi 1883 (REAL-EOD 6176, 000913208.pdf) and read PDF pp. 671-674: Rakoczi to Racz, Udvarhely 27 Apr 1642 (no. 10) says 'Az czifrakkal valo irast magyarra megfordittattuk, kit Kegdnek im megkuldtunk' and prints as enclosure the Hungarian text 'Ezeket irtuk volt Kegdnek czifrakkal ... Sebesben 19. Jan.', footnoted as taken from Rakoczi's draft and a contemporary copy of his secret writing. If no. 597 is that 19 Jan 1642 cipher letter (Racz returned it unread) it has a printed plaintext and would be read, not open; Lang's 'nincs feltorve' is not evidence against that. Unblock: an image of no. 597 from MNL OL to compare with Szilagyi pp. 667-668 (clavis and wording)."
   },
   {
    "id": 2235,
