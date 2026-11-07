@@ -23,7 +23,7 @@ done, and search with `research/archive_sweep_2026-10/known.py` before starting.
 | Northern and eastern Europe | Finland, Norway, Iceland, the Baltics, Ukraine, Belarus | Almost nothing |
 | Romania | Cluj, Sibiu | Only the DECODE-sourced shelfmarks |
 | Hungary, Slovakia | MNL; Slovak archives (no item-level portal found 6 Nov 2026) | Only through other sweeps |
-| Italian state archives | Turin (database behind a "Verifica del browser" check: Chrome, `archiviodistatotorino.cultura.gov.it/Patrimonio`); Genoa (Archivio Segreto inventory PDF lists five 1761-97 cipher bundles, not digitised) | `sweep_2026-11_italian_state_retry` |
+| Italian state archives | Turin and Genoa swept to the limit of what is online (6 Nov 2026, `sweep_2026-11_turin_chrome`; catalogue 2360, 2363-2365 promoted): the ASTo diplomatic series (Lettere Ministri) and the ASGe Archivio Segreto ministers' series are mazzo-level only and not digitised, so what is left needs the reading rooms or photo orders | `sweep_2026-11_turin_chrome` |
 | Italian state archives | Naples, Palermo | Shelfmarks, but no sweep of the archives themselves |
 | German libraries | Wolfenbüttel HAB (Extravagantes; `diglib.hab.de` resets from this network, printed Heinemann catalogue grepped in `sweep_2026-11_german_portals_2`) | Almost nothing |
 | Other | Africa | Little or nothing |
