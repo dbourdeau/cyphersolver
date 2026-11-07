@@ -1,0 +1,29 @@
+# Sforza chancery letters in cipher, ASMi Carteggio Sforzesco cart. 1597 (catalogue 1310; DECODE R5380-R5474)
+
+Status: in progress. Triage only (6 Nov 2026); nothing read yet.
+
+## Fetched (6 Nov 2026, via the DECODE cookie, `fetch_all.py`)
+All 174 cart. 1597 records: 115 key sheets (record_type 2, R5301-R5414, R5469-R5471, nos. 1-114, 169-171) and 59 ciphertext
+records (record_type 1, R5380, R5391, R5415-R5468, R5472-R5474). PDFs in `pdf/`, page renders in `png/`, contact sheets in
+`sheets/` (all git-ignored: DECODE images are not ours to republish). Record pages in `rec/`.
+
+## What the box holds
+- Keys (nos. 1-114): 18th-century style copies headed with correspondent names (Angelus cum cifra Vincentii, Cosimo de
+  Medici, Roberto de Malatestis a Sagramoro de Arimino 1468, Chiave di Antonio da Pistoia 1458, ...). Each is a letter
+  alphabet with homophones, nulls (insignificantes), doubles (ss, ll ...) and a few word signs. Signs are geometric.
+- Letters (nos. 115-168, 172-174): not one hand or one key. R5415-R5424 are whole letters in a cursive Greek-looking sign
+  alphabet, no word division (R5416 and R5419 are dense full pages); R5421 and R5423 are clear text; R5425/R5426 are dense
+  small-hand ciphers. R5430 (no. 130, ~15 lines) repeats one sign string four times (a name or title).
+- So this is a pool of many alphabets, each needing its own key, not one cipher.
+
+## Next steps
+1. Match each letter's sign shapes to a key sheet (the key sheets seen so far, nos. 1-60 sheets k00-k02, use geometric
+   signs unlike the R5415-R5419 Greek-looking letters; keys not yet viewed: sheets k03-k22).
+2. Transcribe the shortest unmatched letter (R5430) and run a homophonic solver if no key fits.
+
+## 6 Nov 2026: catalogue 1310 split into sign families (ids 2399-2408)
+`split1310.py` retired #1310 and promoted ten entries by sign hand, seen on the full PDFs: A (R5425-5430), B (R5420, 5434,
+5438, 5441, 5450, 5454, 5455, 5458, 5466), C (R5415, 5417, 5418, 5424), D (R5416, 5419, 5456), E (R5433, 5435, 5437, 5443-5445,
+5447, 5457, 5467), F (R5459, 5460, 5463-5465), G (clear letters with cipher passages: R5422, 5436, 5440, 5442, 5446, 5451,
+5452, 5461, 5472-5474), H (R5448, 5449), I (R5453, 5462), J (R5380, 5391, 5439). R5421, R5423, R5431, R5432, R5468 are clear
+leaves or wrappers, not ciphers. Families are a proxy for keys: split further when a key sheet is matched.
