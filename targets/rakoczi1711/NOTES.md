@@ -100,7 +100,7 @@ recipient is unnamed in the letter; probably Mihály Klement (see the 23 Oct blo
 
 ## Remaining gaps
 
-- R483 as a running text: closed 23 Oct 2026 (`R483_reading.md`, read, grade B)
+R483 as a running text is closed (23 Oct 2026, `R483_reading.md`, read, grade B); what is left:
 - R483 p. 1 clear opening, five words (*Supponimus redditas jam [...] ... abunde [...] [...]nistris*) - blocker: illegible; fast cursive not settled on the DECODE images at 2x, a higher-resolution MNL OL scan is the way on
 - R483, about a dozen doubtful words where the clerk's hand and the key decode disagree (*[?concludendam]*, *[?remediationis]*, *[?possidere]*, *[?commisso]*, *domino Jablonski [...]*) - blocker: no-key-material; the groups are seen once or not at all in the rebuilt key
 
