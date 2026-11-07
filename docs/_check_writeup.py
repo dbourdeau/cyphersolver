@@ -241,6 +241,53 @@ def image_problems(slug, images=None, skip=None):
                      'or record why none can be had in docs/_explore_skip.json "snip"')
     return bare, probs
 
+def _toks(s):
+    """Names and years of a heading: 4+ letter words (accents folded) and 4-digit years."""
+    import html, unicodedata
+    s = html.unescape(re.sub(r'<[^>]+>', ' ', s or '')).replace('\\', '')
+    s = unicodedata.normalize('NFKD', s).encode('ascii', 'ignore').decode().lower()
+    return set(re.findall(r'[a-z]{4,}|\d{4}', s))
+
+def manifest_titles():
+    """slug -> 'title label' of its PAGES entry (the text the page head must agree with)."""
+    s = uncommented(read(HERE / '_build_site.py'))
+    starts = [(m.start(), m.group(1)) for m in re.finditer(r"dict\(slug='([a-z0-9]+)'", s)]
+    out = {}
+    for i, (a, slug) in enumerate(starts):
+        entry = s[a:starts[i + 1][0] if i + 1 < len(starts) else len(s)]
+        bits = [m.group(1) for m in re.finditer(r"\b(?:title|label)='((?:[^'\\]|\\.)*)'", entry[:2500])]
+        out[slug] = ' '.join(bits)
+    return out
+
+def page_heads():
+    """slug -> (<title>, <h1>, page) of every docs/*.html page."""
+    heads = {}
+    for f in HERE.glob('*.html'):
+        t = read(f)
+        ti, h1 = re.search(r'<title>(.*?)</title>', t, re.S), re.search(r'<h1[^>]*>(.*?)</h1>', t, re.S)
+        heads[f.stem] = (ti.group(1).strip() if ti else '', h1.group(1).strip() if h1 else '', t)
+    return heads
+
+def head_problems(slug, heads=None, titles=None):
+    """A hand-written head (title, h1, sources) copied from another page and not replaced: the page then describes
+    one letter under another's heading. Checked against the manifest title, the other pages and the Sources links."""
+    heads = heads or page_heads()
+    titles = titles if titles is not None else manifest_titles()
+    if slug not in heads or slug not in titles: return []
+    title, h1, page = heads[slug]
+    if re.match(r'This page has (been split|moved)', h1): return []
+    probs, want = [], _toks(titles[slug])
+    for name, val in (('title', title), ('h1', h1)):
+        if want and val and not want & _toks(val):
+            probs.append(f'the {name} "{re.sub(r"<[^>]+>", "", val)[:50]}" shares no name or year with the manifest title: copied from another page?')
+    for other, (ot, oh, _) in heads.items():
+        if other != slug and title and ot == title and not re.match(r'This page has', oh):
+            probs.append(f'the <title> is the same as docs/{other}.html: copied from another page?')
+    folders = {f.lower() for f in re.findall(r'targets/([A-Za-z0-9_\-]+)', page)}
+    if folders and tdir(slug).is_dir() and slug.lower() not in folders and folders <= {s.lower() for s in titles}:
+        probs.append(f'the page links only to the folder of another write-up ({", ".join(sorted(folders))}), not targets/{slug}')
+    return probs
+
 def check_slug(slug):
     pages, images, version = manifest()
     rows = readme_rows()
@@ -259,6 +306,8 @@ def check_slug(slug):
         item('<section class="hero">' in page, 'page has a <section class="hero"> (kicker, h1, sub, meta)')
         item('<p class="meta">' in page, 'hero has the <p class="meta"> byline the builder stamps')
         item(bool(re.search(r'<title>.+</title>', page)) and 'name="description"' in page, 'title and meta description')
+        for prob in head_problems(slug) or [None]:
+            item(prob is None, prob or 'title, h1 and Sources belong to this page (not copied from another)')
         item(bool(re.search(r'<h2[^>]*>.*?Sources', page, re.S)), 'a Sources section', warn=True)
         hero_end = page.find('</section>', page.find('<section class="hero">'))
         item(hero_end >= 0 and bool(re.match(r'\s*<main>', page[hero_end + 10:])),
@@ -533,6 +582,13 @@ def audit(brief=False):
     if not brief:
         for s, n, nosnip in imgs:
             print(f'   {s}: ' + ', '.join(filter(None, [f'{n} uncredited' if n else '', 'no snip' if nosnip else ''])))
+    # 8b. page heads: title/h1/sources copied from another page (limantour1909 -> gonzaga1542, branicki1757, 7 Nov 2026)
+    heads, titles = page_heads(), manifest_titles()
+    wrong = [(s, head_problems(s, heads, titles)) for s in sorted(html_slugs - SURVEYS) if s in pages]
+    wrong = [(s, p) for s, p in wrong if p]
+    print(f'M. Page heads (title, h1, sources) that do not belong to the page: {len(wrong)}')
+    for s, pr in wrong: print(f'   {s}.html: ' + '; '.join(pr))
+    problems += len(wrong)
     # 9. full texts (George Lasry, 22 Oct 2026): every reading lists its transcription and decryption per document
     import _texts
     notext, nosum = [], []
