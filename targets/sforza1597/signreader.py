@@ -281,6 +281,12 @@ def segment_strip2(ink_strip, big_area=None, attach_dx=10, attach_dy=34):
     import os as _o
     big_area = int(_o.environ.get('SR_BIGAREA', 70)) if big_area is None else big_area
     ovl = float(_o.environ.get('SR_OVERLAP', 0.4))
+    hk = int(_o.environ.get('SR_HAIR', 0))
+    if hk:
+        thick = cv2.morphologyEx(ink_strip, cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (hk, hk)))
+        # keep thin pixels only where they touch a thick component's neighbourhood (dots and light strokes survive)
+        near = cv2.dilate(thick, np.ones((5, 5), np.uint8))
+        ink_strip = cv2.bitwise_or(thick, cv2.bitwise_and(ink_strip, cv2.bitwise_and(near, cv2.bitwise_not(cv2.dilate(thick, np.ones((1, 1), np.uint8))) if False else near)))
     n, lab, st, cen = cv2.connectedComponentsWithStats(ink_strip, 8)
     H = ink_strip.shape[0]
     big, small = [], []
@@ -319,6 +325,57 @@ def segment_strip2(ink_strip, big_area=None, attach_dx=10, attach_dy=34):
                 d = dx + dy
                 if best is None or d < best[0]: best = (d, c)
         if best: best[1][6].append((sx, sy, sw, sh)); best[1][5] = best[1][5] + s[5]
+    # merge neighbouring ring-shaped boxes (the double-circle sign written with a gap)
+    ring = float(_o.environ.get('SR_RING', 0))
+    if ring > 0 and comps:
+        def has_hole(c):
+            x, y, w, h = c[0], c[1], c[2], c[3]
+            m = np.isin(lab[y:y + h, x:x + w], c[5]).astype(np.uint8)
+            cnts, hier = cv2.findContours(m, cv2.RETR_CCOMP, cv2.CHAIN_APPROX_SIMPLE)
+            return hier is not None and any(hh[3] >= 0 for hh in hier[0])
+        comps.sort(key=lambda c: c[0]); out = []; k = 0
+        flags = [has_hole(c) for c in comps]
+        while k < len(comps):
+            c = comps[k]
+            if k + 1 < len(comps) and flags[k] and flags[k + 1]:
+                d = comps[k + 1]
+                gap = d[0] - (c[0] + c[2])
+                if gap <= ring and c[2] <= 36 and d[2] <= 36 and 0.7 <= c[3] / max(1, d[3]) <= 1.4 and abs((c[1] + c[3] / 2) - (d[1] + d[3] / 2)) <= 0.35 * max(c[3], d[3]):
+                    x0 = min(c[0], d[0]); y0 = min(c[1], d[1]); x1 = max(c[0] + c[2], d[0] + d[2]); y1 = max(c[1] + c[3], d[1] + d[3])
+                    out.append([x0, y0, x1 - x0, y1 - y0, c[4] + d[4], c[5] + d[5], c[6] + d[6]]); k += 2; continue
+            out.append(c); k += 1
+        comps = out
+    # split unusually wide boxes at the ink valley between two signs
+    fac = float(_o.environ.get('SR_SPLIT', 0))
+    if fac > 0 and comps:
+        medw = float(np.median([c[2] for c in comps]))
+        newc = []
+        for c in comps:
+            x, y, w, h = c[0], c[1], c[2], c[3]
+            if w > fac * medw and w >= 28:
+                m = np.isin(lab[y:y + h, x:x + w], c[5]).astype(np.uint8)
+                col = m.sum(0).astype(float); lo, hi = int(0.3 * w), int(0.7 * w)
+                if hi > lo:
+                    k = lo + int(np.argmin(col[lo:hi]))
+                    if col[k] <= 0.2 * col.max() or _o.environ.get('SR_SPLITFORCE'):
+                        nxt = int(lab.max()) + 1; sub = lab[y:y + h, x:x + w]; ids1 = []; ids2 = []
+                        for i in c[5]:
+                            msk = sub == i
+                            left = msk[:, :k].any(); right = msk[:, k:].any()
+                            if left and right:
+                                sub[:, k:][msk[:, k:]] = nxt; ids1.append(i); ids2.append(nxt); nxt += 1
+                            elif left: ids1.append(i)
+                            else: ids2.append(i)
+                        lab[y:y + h, x:x + w] = sub
+                        if ids1 and ids2:
+                            for ids, (xa, xb) in ((ids1, (x, x + k)), (ids2, (x + k, x + w))):
+                                mm = np.isin(lab[y:y + h, xa:xb], ids)
+                                ys_, xs_ = np.where(mm)
+                                if len(ys_) == 0: continue
+                                newc.append([xa + xs_.min(), y + ys_.min(), xs_.max() - xs_.min() + 1, ys_.max() - ys_.min() + 1, int(mm.sum()), ids, c[6]])
+                            continue
+            newc.append(c)
+        comps = sorted(newc, key=lambda c: c[0])
     keep = []
     for c in comps:
         if c[4] < 70 and c[3] < 22 and c[2] < 22: continue
@@ -339,7 +396,7 @@ def feat2(m, extra, box, S=32):
     below = sum(1 for (sx, sy, sw, sh) in extra if sy + sh / 2 > y + bh)
     inside = len(extra) - above - below
     flags = np.array([min(above, 2), min(below, 2), min(inside, 2)], np.float32) * 0.9
-    aspect = np.array([np.log((w + 1) / (h + 1))], np.float32) * 1.5
+    aspect = np.array([np.log((w + 1) / (h + 1))], np.float32) * float(__import__('os').environ.get('SR_ASP', 1.5))
     return np.concatenate([f * 3, aspect, flags])
 
 def extract_page2(png, outdir, tag, half=70):
