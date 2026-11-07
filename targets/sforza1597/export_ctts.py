@@ -5,11 +5,12 @@ from signreader import track_line_j, straighten, segment_strip2
 out = sys.argv[1]; keyf = sys.argv[2]
 os.makedirs(out + '/positions', exist_ok=True)
 colorset = [l.strip() for l in open('ctts/exp/colorset.txt') if l.strip()]
-recs_all, lab_all = pickle.load(open('ctts/h64.txt.pkl', 'rb'))
+PKL = os.environ.get('EXP_PKL', 'ctts/h64.txt.pkl'); SRP = os.environ.get('EXP_SRPREFIX', 'sr_')
+recs_all, lab_all = pickle.load(open(PKL, 'rb'))
 cnt = collections.Counter(lab_all); rank = {c: i for i, (c, _) in enumerate(cnt.most_common())}
 used = {}
 def boxes_for(tag, ncount):
-    d = f'sr_{tag}'; ink = cv2.imread(d + '/ink.png', 0); lj = json.load(open(d + '/lines.json')); ys = lj['lines']
+    d = f'{SRP}{tag}'; ink = cv2.imread(d + '/ink.png', 0); lj = json.load(open(d + '/lines.json')); ys = lj['lines']
     pitch = float(np.median(np.diff(ys))); jump = int(max(12, 0.4 * pitch)); half = int(min(70, round(0.55 * pitch)))
     res = []; centers = []
     for li, y in enumerate(ys):
@@ -41,7 +42,7 @@ for tag, imgname in (('R5464_P1_0', 'R5464_P1'), ('R5464_P2_0', 'R5464_P2')):
         txt.append('')
     pos += n
     open(f'{out}/positions/{imgname}_positions.txt', 'w', newline=chr(10)).write('\n'.join(txt) + '\n')
-    shutil.copy(f'sr_{tag}/gray.png', f'{out}/{imgname}.png')
+    shutil.copy(f'{SRP}{tag}/gray.png', f'{out}/{imgname}.png')
 # symbol types: colour i <-> cluster i, name "#i"
 with open(out + '/colors.txt', 'w', newline=chr(10)) as f:
     for i, c in enumerate(colorset):
