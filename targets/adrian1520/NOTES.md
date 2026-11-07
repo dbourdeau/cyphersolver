@@ -55,7 +55,7 @@ Re-checked on 2 Nov 2026: no modern edition of the decipherments; Höfler (1880)
 
 ## Remaining gaps
 
-- The first cipher word (six signs, p ‹?› u i c a; one uninventoried shape) and the group fud. - blocker: open-codes; the shape and the group have no value in K7
+- The first cipher word (six signs, p ‹?› u i c a; one uninventoried shape) and the group fud. - blocker: open-codes; the shape and the group have no value in K7. Lead, not yet tried (7 Nov 2026): the cipher sheet enclosed with the letter of 7 December 1521 (PTR,LEG,2,1,100, fol. 434) is the cipher original of paragraphs Danvila prints deciphered; if K7 was not trained on it, its cipher/plain pairs may carry the missing shapes (needs the PARES images and Danvila's text side by side)
 - Signs still outside the key: the first signs of [tales] and [juntar], the 2nd sign of [villas], ‹ro›, ‹qx›, ‹m.› - blocker: open-codes; no value in K7
 
 Not gaps of this reading: the struck-out cipher paragraph of 21 October 1520 (a different piece in the same code, not yet located on PARES), and the cipher sheet enclosed with the letter of 7 December 1521 (PTR,LEG,2,1,100, fol. 434), which is the cipher original of paragraphs Danvila prints deciphered (see Notes).

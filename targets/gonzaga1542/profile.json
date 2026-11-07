@@ -1,0 +1,201 @@
+{
+ "schema_version": 1,
+ "target": "gonzaga1542",
+ "title": "Charles V to Ferrante Gonzaga, viceroy of Sicily, 11 August 1542 (Biblioteca Estense, Lettera K, sfasc. IV, cc. 109-110): a cipher of consonants with vowel digits, found by Prabal Gupta",
+ "documents": [
+  {
+   "id": "estense-karl-v-1542",
+   "read": "read in part",
+   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera K, Karl V, Römisch-Deutsche Kaiser, sfasc. IV, cc. 109-110",
+   "date": "11 August 1542",
+   "year": 1542,
+   "country": "Spain",
+   "route": "Emperor Charles V -> Ferrante Gonzaga, viceroy of Sicily",
+   "language": "Spanish",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment or clear copy found; the chancery draft may survive in a Spanish archive (not searched).",
+    "partial": false
+   },
+   "length": {
+    "tokens": 702,
+    "unit": "symbols",
+    "measured": false,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "the contributor's transcription from the Estense scans, two passes agreeing on 96.3% of 702 signs; not compared with the scans by the project",
+    "image_quality": "fair",
+    "notes": "Sign shapes are given by labels, not values; a few rare shapes are described in brackets."
+   },
+   "places": {
+    "from": "Monzón",
+    "to": "Palermo"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "monoalphabetic"
+  ],
+  "summary": "Each base sign is a consonant and a small digit above it adds the vowel (1 to 5 and 6 to 0 each run a, e, i, o, u); a sign with no digit is a single letter; a further sign marks a doubled or palatal consonant.",
+  "symbol_kind": "digits and letters",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "The catalogue lists the letter as an unread numeric cipher; no earlier decipherment found by the contributor or the project.",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "transcription",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Prabal Gupta transcribed the letter, ran the solver and built the reading (issue #318, repository prabal-rje/branicki-1757). The project checked the files against each other and a control; it has not seen the scans.",
+  "models": [
+   "Claude",
+   "GPT"
+  ],
+  "first_date": "2026-11-07",
+  "last_date": "2026-11-07"
+ },
+ "solution": [
+  {
+   "date": "2026-11-07",
+   "kind": "transcription",
+   "what": "The contributor transcribed the cipher of the 1542 letter from the Estense scans in two passes that agree on 96.3% of 702 signs, and checked the clear lines and doubtful signs against enlarged scans.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-07",
+   "kind": "hypothesis",
+   "what": "The structure was inferred from the letter's own sign statistics: a base sign for a consonant with a small digit above it for the vowel, in two digit ranges, and some signs for single letters.",
+   "result": "worked",
+   "technique": [
+    "frequency analysis",
+    "key-structure hypothesis"
+   ]
+  },
+  {
+   "date": "2026-11-07",
+   "kind": "solver",
+   "what": "A solver on a Spanish letter model gave the letters: the key scores -2.21 per letter against -3.33 for shuffled signs, all six starts reach the same key, a key fitted on the first half agrees with the full key on 89.7% of tokens of the second half (about 350 tokens each), and a blind reader named the text Spanish and two shuffled controls noise.",
+   "result": "worked",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ]
+  },
+  {
+   "date": "2026-11-07",
+   "kind": "reading",
+   "what": "The decryption was read as Spanish by sense, rare signs fixed from context, with Spanish and English readings; about 1 sign in 15 is unread or uncertain; one clause stays open.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-07",
+   "kind": "control",
+   "what": "Project check: the table in key.tsv reproduces decryption.txt on 12 of 31 lines and 95.1% of the letters; a lexicon test (about 85 Spanish words) covers 0.605 of the letters against at most 0.296 for 300 tables with shuffled output letters. No scan compared (VERIFICATION.md).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-07",
+   "verdict": "not applicable",
+   "notes": "The statistical test needs the Spanish letter model (lang/, es-modern), whose corpus cannot be fetched from this environment (Gutenberg returns 403). The contributor's own scores under his model and a lexicon test against 300 shuffled tables were used instead (VERIFICATION.md); the project did not repeat the contributor's model scores."
+  },
+  "class": "read in part",
+  "verification": [
+   "key confirms",
+   "historical consistency"
+  ],
+  "method": "key recovered from ciphertext-only",
+  "key": "partial",
+  "method_basis": "Contributor's claim: the table was found from the sign statistics of the letter alone, with no key, sibling letter or crib, by a solver on a Spanish letter model; the project verified that the table reproduces the decryption and reads as Spanish, but did not repeat the search.",
+  "contribution": [
+   "key recovered",
+   "transcription"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "prabal",
+    "role": "solution",
+    "note": "key, transcription and reading of the letter of 11 August 1542; issue #318; repository prabal-rje/branicki-1757, CC BY 4.0",
+    "date": "2026-11-07"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "one clause after \"por las consideraciones que\"",
+    "blocker": "illegible",
+    "detail": "signs unread or uncertain"
+   },
+   {
+    "item": "about one sign in fifteen, mostly rare forms, fixed by sense, and three occurrences of \"caber\" read as \"haver\"",
+    "blocker": "illegible",
+    "detail": "rare shapes seen once or twice"
+   },
+   {
+    "item": "the name \"Novellara\" (a guess for niuilara)",
+    "blocker": "open-codes",
+    "detail": "a Gonzaga branch, not checked in a list of the family"
+   },
+   {
+    "item": "a human check of the transcription against the Estense scans, and the chancery's clear draft",
+    "blocker": "needs-physical-access",
+    "detail": "the Lodovico Media Library is not reachable from the project; the images are CC BY-NC-SA and are not copied; the draft may survive in a Spanish archive"
+   }
+  ],
+  "notes": "Key and reading by Prabal Gupta; checked by the project against his files and a lexicon control, not against the scans. About 94% of the cipher words read; the reading is emended by sense in places.",
+  "fraction_read": 0.943,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Counted from reading.md: 247 words in the cipher passages (the bold text), of which 14 are holes: 11 marked [?word], supplied [letters] or [...] and the 3 occurrences of \"caber\" read \"haver\" by sense: 233 of 247 = 94.3%.",
+  "key_file": "key.tsv",
+  "texts": [
+   {
+    "doc": [
+     "estense-karl-v-1542"
+    ],
+    "label": "Charles V to Ferrante Gonzaga, Monzón, 11 August 1542 (Estense, Lettera K, sfasc. IV, cc. 109-110)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.943,
+    "summary": "The Emperor tells his viceroy of Sicily that the island cannot pay for its infantry, its galleys and La Goleta without help and that none can come from his other kingdoms; that La Goleta must be provided for because of the Turkish fleet; that the spies report the main French effort coming to the frontier of Perpignan, with a threat to Navarre; and that the count of Novellara's pay and the Viscount Cicala's galleys must be paid.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (for the project)",
+     "date": "2026-11-07",
+     "note": "Read the decryption as Spanish sentences: the cipher passages build coherent clauses that join the clear text around them (Goleta, Perpiñán, Cigala); the decryption lines are unspaced and are normalised in the reading, and rare signs are fixed by sense."
+    }
+   }
+  ]
+ }
+}
