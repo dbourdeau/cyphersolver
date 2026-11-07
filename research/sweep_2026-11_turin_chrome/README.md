@@ -146,3 +146,9 @@ instruction found in Turin is already catalogued and was dropped).
 ## Not reached
 Images of any row (none online). The Trento keys were not opened in the viewer (descriptions only). DECODE, Tomokiyo and Lasry were not
 searched for the rows. ASTo Lettere Ministri vol. II has poor OCR; only a fuzzy grep was run.
+
+## Vetting and promotion (6 Nov 2026, later pass)
+Leads 2364 (Montebruni 1561-65) and 2365 (Lasagna 1519) were vetted (`not online`, quoting the ASGe inventory; DECODE, Cryptiana, GL.htm,
+edition and literature searched: nothing) and promoted to the catalogue. With 2360 (Gabaleone) and 2363 (Montebruni 1560) already
+promoted, the Turin/Genoa rows are 2360, 2361 (closed: Claretta 1868 printed the letter), 2363-2365. All are archive-only: no cipher
+leaf of Turin or Genoa is online.
