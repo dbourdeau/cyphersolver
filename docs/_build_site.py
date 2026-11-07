@@ -157,7 +157,7 @@ def stamp_finding(li):
 # slug, nav label, year label, sort year, place, status class, status text, title, blurb, quote, rights
 PAGES = [
     dict(slug='indus', label='Indus script', year='c. 2600&ndash;1900 BCE', y=-2300, place='Indus Valley', st='stuck', stt='attempted, not read',
-         title='The Indus script: Parpola&rsquo;s decipherment and 2,364 registered tests',
+         title='The Indus script: Parpola&rsquo;s decipherment and 3,400 registered tests',
          blurb='Asko Parpola&rsquo;s Dravidian readings checked on two independent corpora, then 2,364 hypotheses registered before testing (1,224 held, 1,140 failed), with Linear B and Ur III seal legends as controls. The grammar a reading must fit is set out: an ending slot chosen by the name&rsquo;s last sign, line breaks that never split a word unit, numerals fixed with what they count. Seal names are individual compositions, as Linear B personal names are. No sign value is established.',
          quote='255 435 690 740 &middot; 705 33 520 &middot; 2 + fish, not 6 + fish, is the commonest count',
          rights='CISI vol. 1 (Joshi and Parpola 1987); signs drawn in the indus-website font'),
