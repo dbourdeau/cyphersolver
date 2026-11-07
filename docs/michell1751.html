@@ -7,7 +7,7 @@
 <meta name="description" content="A numerical cipher letter of Frederick II of Prussia to his resident in London, Louis Michell, dated Berlin 28 December 1751 and intercepted in The Hague (Koninklijk Huisarchief, Prins Willem V inv." data-full="A numerical cipher letter of Frederick II of Prussia to his resident in London, Louis Michell, dated Berlin 28 December 1751 and intercepted in The Hague (Koninklijk Huisarchief, Prins Willem V inv. 198; DECODE R1957, listed with no decipherment). Its clear opening and signature, its length and the order of its repeated code groups identify it as no. 5263 of the Politische Correspondenz Friedrichs des Grossen, printed in 1882 from the minute. The text is taken from that print; the code was not rebuilt. The letter is the King's secret order to find out whether London knew of an Austro-Russian plan to put Prince Charles of Lorraine on the Polish throne.">
 <link rel="stylesheet" href="style.css?v=7fd9e8bc">
 <meta name="date" content="2026-09-19">
-<meta name="last-modified" content="2026-10-26">
+<meta name="last-modified" content="2026-11-07">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -59,8 +59,8 @@
 <div class="parties"><figure class="party sender"><img src="portrait_frederick-ii.jpg" width="192" height="192" decoding="async" alt="Frederick II" title="Frederick II: Portrait, Anton Graff. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Frederick II</figcaption></figure></div><!-- /parties -->
 <p class="readjump"><a href="#texts">Go to the full text &darr;</a></p><!-- /readjump -->
   <p class="sub">The Hague, Koninklijk Huisarchief, archive of Prince William V, inv. 198 &middot; two pages, French, 550 code groups between a clear opening and a clear date line &middot; DECODE R1957, <span data-term-ok>&ldquo;non-decrypted&rdquo;</span> (no decipherment on the record) &middot; catalogue item 215</p>
-  <p class="sub">The Dutch opened the Prussian King&rsquo;s post to London and copied the ciphered letters. The King&rsquo;s minute of this one was printed in Berlin in 1882. The text here is taken from that print, matched to the Hague copy by its clear opening, its length and the positions of repeated code groups. The code itself was not rebuilt.</p>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-19">19 September 2026</time> &middot; updated <time datetime="2026-10-26">26 October 2026</time></p>
+  <p class="sub">The Dutch opened the Prussian King&rsquo;s post to London and copied the ciphered letters. The King&rsquo;s minute of this one was printed in Berlin in 1882. The text here is taken from that print, matched to the Hague copy by its clear opening, its length and the positions of repeated code groups. The code itself was not rebuilt in that first pass; WAINUT later rebuilt the King&rsquo;s cabinet code for 179 values (section 04).</p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-19">19 September 2026</time> &middot; updated <time datetime="2026-11-07">7 November 2026</time></p>
 <p class="outcome">Method &middot; R1957 text, the printed concept matched to the Hague copy (Bourdeau): <a href="glossary.html#deciph">read from existing decipherment</a> (complete) &middot; The King-to-Michell cabinet code of 1751 (WAINUT): <a href="glossary.html#extpt">key recovered based on plaintext from external sources</a> (partial) &middot; <a href="atlas.html#slug=michell1751">On the map</a></p><!-- /outcome -->
 <p class="credits">With <a href="contributors.html#lccompany">WAINUT</a> (solution) &middot; Also credited &middot; <a href="contributors.html#politischecorrespondenz">Politische Correspondenz Friedrichs des Grossen</a> (key or decipherment used)</p><!-- /credits -->
 <div class="seal solved" aria-hidden="true"><span class="long">deciphered copy</span></div>
@@ -74,10 +74,10 @@
 <dt>The letter</dt><dd>Frederick II to his London resident Louis Michell, Berlin, 28 December 1751: a secret order to find out whether London knew of an Austro-Russian plan to make Prince Charles of Lorraine the next King of Poland, and to report to the King alone.</dd>
 <dt>Where</dt><dd>Koninklijk Huisarchief, The Hague, Prins Willem V inv. 198; DECODE R1957, listed with no decipherment. A second letter of that day, R1955, is the ministerial one.</dd>
 <dt>The cipher</dt><dd>A Prussian nomenclator of numbers: 550 groups for 438 words of print. R1955 uses a different code, the one of Michell&rsquo;s own reports to the King.</dd>
-<dt>How it was read</dt><dd>The clear opening is word for word no. 5263 in vol. 8 of the <em>Politische Correspondenz Friedrichs des Grossen</em> (1882). Repeated groups fall where the print&rsquo;s repeated words do: 1064 is <em>Vienne</em> at all four places, 4310 <em>Sardaigne</em> at all three.</dd>
+<dt>How it was read</dt><dd>The clear opening is word for word no. 5263 in vol. 8 of the <em>Politische Correspondenz Friedrichs des Grossen</em> (1882). Repeated groups fall where the print&rsquo;s repeated words do: 1064 is <em>Vienne</em> at all four places, 4310 (the phrase group <em>le roi de Sardaigne</em>, as the rebuilt key shows) at all three.</dd>
 <dt>What it says</dt><dd>The King accepts that Sardinia will join the Austro-Spanish treaty at Madrid and suspects Vienna&rsquo;s Italian neutrality clears the ground for the Polish plan.</dd>
-<dt>Still open</dt><dd>The cabinet code is rebuilt for 179 values; R1955 is deciphered in part, 95 of 360 groups (26.4%), and is not in print. The extended key has not been tested on a held-out letter.</dd>
-<dt>Credit</dt><dd>The cabinet key and the partial R1955 reading are the work of WAINUT, with Claude Opus 5.5, 11&ndash;12 October 2026 (pull request #29).</dd>
+<dt>Still open</dt><dd>The cabinet code is rebuilt for 179 values; 167 of R1957&rsquo;s 548 groups have no value in the extended key (most are one-off syllables of spelled words and names). The extended key has not been tested on a held-out letter. (R1955, deciphered in part, is on its own page.)</dd>
+<dt>Credit</dt><dd>The cabinet key is the work of WAINUT, with Claude Opus 5.5, 11&ndash;12 October 2026 (pull request #29); his partial R1955 reading is on that letter&rsquo;s own page.</dd>
 </dl>
 </div>
 <div class="callout">
@@ -879,13 +879,13 @@
 <p class="muted">The transcription of the 550 groups, the anchor script and the notes are in the repository folder <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/michell1751"><code translate="no">targets/michell1751/</code></a>. The DECODE images are not committed.</p>
 <!-- cite:start -->
 <details class="cite" id="cite"><summary>Cite this page</summary>
-<p class="citetext">Daniel Bourdeau and WAINUT, “Frederick II to Louis Michell, 28 December 1751”, Cyphersolver, posted 19 September 2026, updated 26 October 2026, https://cyphersolver.com/michell1751.html.</p>
-<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau and WAINUT, “Frederick II to Louis Michell, 28 December 1751”, Cyphersolver, posted 19 September 2026, updated 26 October 2026, https://cyphersolver.com/michell1751.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-michell1751,
+<p class="citetext">Daniel Bourdeau and WAINUT, “Frederick II to Louis Michell, 28 December 1751”, Cyphersolver, posted 19 September 2026, updated 7 November 2026, https://cyphersolver.com/michell1751.html.</p>
+<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau and WAINUT, “Frederick II to Louis Michell, 28 December 1751”, Cyphersolver, posted 19 September 2026, updated 7 November 2026, https://cyphersolver.com/michell1751.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-michell1751,
   author = {Daniel Bourdeau and WAINUT},
   title = {Frederick II to Louis Michell, 28 December 1751},
   year = {2026},
   howpublished = {Cyphersolver},
-  note = {posted 19 September 2026, updated 26 October 2026},
+  note = {posted 19 September 2026, updated 7 November 2026},
   url = {https://cyphersolver.com/michell1751.html}
 }">Copy BibTeX</button></p>
 </details>

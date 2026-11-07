@@ -7,7 +7,7 @@
 <meta name="description" content="Nine ciphered letters of the imperial vice-chancellor Ferdinand Sigmund Kurz von Senftenau from Hamburg and Glückstadt, January–April 1639 (SOA Plzeň, RA Trauttmansdorff, DECODE R3811–R4736)." data-full="Nine ciphered letters of the imperial vice-chancellor Ferdinand Sigmund Kurz von Senftenau from Hamburg and Glückstadt, January–April 1639 (SOA Plzeň, RA Trauttmansdorff, DECODE R3811–R4736). The cipher is homophonic, with a regular table of consonant–vowel syllables 41–100. The key was recovered from a contemporary interlinear decipherment on one page (Mírka did the same in 2012 but printed neither key nor text) and applied to all nine letters; they are deciphered in part, the gaps being transcription. Read as sentences, only the short runs of R4734 hold; the other eight letters are decoded, not read.">
 <link rel="stylesheet" href="style.css?v=7fd9e8bc">
 <meta name="date" content="2026-09-19">
-<meta name="last-modified" content="2026-10-26">
+<meta name="last-modified" content="2026-11-07">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -59,7 +59,7 @@
 <p class="readjump"><a href="#texts">Go to the full text &darr;</a></p><!-- /readjump -->
   <p class="sub">SOA Plze&#328;, pracovi&scaron;t&#283; Kl&aacute;&scaron;ter u Nepomuka, Rodinn&yacute; archiv Trauttmansdorff&#367;, inv. &#269;. 200, kart. 9 &middot; DECODE R3811&ndash;R3815, R4625, R4645, R4734, R4736 &middot; 73 images, about 23,000 cipher signs</p>
   <p class="sub">The key was recovered from a contemporary interlinear decipherment on one page, which shows a regular syllable table, and applied to all nine letters with a language model of early modern German. After two re-readings on the images in October 2026 all nine give German and Latin sentences, with scattered holes; measured on their words, eight reach the 95% bar, and the Gl&uuml;ckstadt letter of 14 April (R4736) builds coherent sentences but reads at 94.0%, under it. Jakub M&iacute;rka rebuilt the key from the same page in 2012 and summarised that one letter; his key table is on two of the DECODE records. No decipherment of the other eight was found.</p>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-19">19 September 2026</time> &middot; updated <time datetime="2026-10-26">26 October 2026</time></p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-19">19 September 2026</time> &middot; updated <time datetime="2026-11-07">7 November 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#adjpt">key recovered based on adjacent plaintext</a> &middot; Extent: partial (100% of the cipher) &middot; <a href="atlas.html#slug=kurtz1639">On the map</a></p><!-- /outcome -->
 <p class="credits">Credits &middot; <a href="contributors.html#mirka">Mírka</a> (earlier solution) &middot; <a href="contributors.html#contemporary">Contemporary key or decipherment</a> (key or decipherment used)</p><!-- /credits -->
 <div class="seal partial" aria-hidden="true"><span>adjacent text</span></div>
@@ -81,13 +81,13 @@
 
 <h2 id="the-letters"><span class="num">01</span>The letters</h2>
 <table>
-<thead><tr><th>DECODE</th><th>Date and place</th><th>To</th><th>Cipher signs</th></tr></thead>
+<thead><tr><th>DECODE</th><th>Date and place</th><th>To</th><th>Cipher signs (first transcription, 19 Sept; 56 cipher lines were restored later, so R3813 now has 7,997 and R3814 2,054)</th></tr></thead>
 <tbody>
 <tr><td>R3811</td><td>Hamburg, 17 Jan 1639</td><td>Trauttmansdorff</td><td>1,613 (p.&nbsp;1 glossed)</td></tr>
 <tr><td>R3813</td><td>Hamburg, 27 Jan 1639</td><td>Trauttmansdorff</td><td>7,799</td></tr>
 <tr><td>R3812</td><td>Hamburg, 3 Feb 1639 (DECODE: 1638)</td><td>Trauttmansdorff</td><td>5,526</td></tr>
 <tr><td>R3815</td><td>Hamburg, 6 Feb 1639</td><td>Ferdinand III</td><td>860</td></tr>
-<tr><td>R4625</td><td>endorsed 10 Feb 1639</td><td>Trauttmansdorff</td><td>2,077</td></tr>
+<tr><td>R4625</td><td>dated on p.&nbsp;6, Hamburg 10 Feb 1639</td><td>Trauttmansdorff</td><td>2,077</td></tr>
 <tr><td>R4645</td><td>Hamburg, 13 Feb 1639, with clear copies of two Ban&eacute;r letters</td><td>Trauttmansdorff</td><td>1,236</td></tr>
 <tr><td>R3814</td><td>undated, 1639</td><td>&ldquo;Hochedler Herr&rdquo;</td><td>1,919</td></tr>
 <tr><td>R4734</td><td>8 Apr 1639, copy</td><td>Schwarzenberg (per DECODE)</td><td>480</td></tr>
@@ -137,7 +137,7 @@
 
 <h2 id="method"><span class="num">04</span>Method</h2>
 <p>Agents transcribed all 73 DECODE images token by token, two at a time. Clear text went in braces and the glosses were attached to their numbers. Plain homophonic annealing with a German 5-gram model (Grimmelshausen and Gutenberg German, early spelling) collapsed into <em>enenen&hellip;</em>, even with a letter-frequency penalty. The glosses turned the problem into a structured one: one consonant per half-ten and one value per single sign, seeded with seventeen glossed values. That solver produced fluent German on the first run (<em>ich m&uuml;esse die Kranckheit beschreiben, damit man sich den remediis darnach zu richten&hellip;</em>). The irregular signs were then fixed by checking them in context and by ranking candidate values with the language model. Of the 22,913 transcribed cipher signs, 98.3&nbsp;% then had a value.</p>
-<p>A checked second pass followed on 21 September 2026. Agents compared every line of the 73 transcriptions with crops of the images, working from a printout of each sign&rsquo;s value, and changed a sign only where the image showed it. About 360 signs were corrected. The commonest slips were a plain <em>c</em> written for the looped sign worth <em>tu</em>, a bold 9 written for the hooked sign worth <em>w</em>, and 6 written for &phi; (<em>z</em>). In R3813 a crossed &fnof;-like sign worth <em>ta</em> had been merged with another sign. A script fault had also dropped 56 cipher lines that began with a graphic sign. The language-model score of the decipherment improved on eight of the nine letters. Of 23,699 cipher signs, 99.9&nbsp;% now have a value.</p>
+<p>A checked second pass followed on 21 September 2026. Agents compared every line of the 73 transcriptions with crops of the images, working from a printout of each sign&rsquo;s value, and changed a sign only where the image showed it. About 360 signs were corrected. The commonest slips were a plain <em>c</em> written for the looped sign worth <em>tu</em>, a bold 9 written for the hooked sign worth <em>w</em>, and 6 written for &phi; (<em>z</em>). In R3813 a crossed &fnof;-like sign worth <em>ta</em> had been merged with another sign. A script fault had also dropped 56 cipher lines that began with a graphic sign. The language-model score of the decipherment improved on eight of the nine letters. Of 23,699 cipher signs (the later token count in profile.json and the NOTES status line is 23,669), 99.9&nbsp;% now have a value.</p>
 
 <h2 id="what-remains-uncertain"><span class="num">05</span>What remains uncertain</h2>
 <ul>
@@ -4621,13 +4621,13 @@ Glückstadt, 14 April 1639. [Signature.]
 <p class="muted">Transcriptions, key, solver and decipherments: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/kurtz1639">targets/kurtz1639/</a> in the repository (<code translate="no">tr/</code>, <code translate="no">KEY.md</code>, <code translate="no">read/</code>, <code translate="no">read/SUMMARIES.md</code>).</p>
 <!-- cite:start -->
 <details class="cite" id="cite"><summary>Cite this page</summary>
-<p class="citetext">Daniel Bourdeau, “Kurz von Senftenau to Trauttmansdorff, Hamburg 1639”, Cyphersolver, posted 19 September 2026, updated 26 October 2026, https://cyphersolver.com/kurtz1639.html.</p>
-<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau, “Kurz von Senftenau to Trauttmansdorff, Hamburg 1639”, Cyphersolver, posted 19 September 2026, updated 26 October 2026, https://cyphersolver.com/kurtz1639.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-kurtz1639,
+<p class="citetext">Daniel Bourdeau, “Kurz von Senftenau to Trauttmansdorff, Hamburg 1639”, Cyphersolver, posted 19 September 2026, updated 7 November 2026, https://cyphersolver.com/kurtz1639.html.</p>
+<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau, “Kurz von Senftenau to Trauttmansdorff, Hamburg 1639”, Cyphersolver, posted 19 September 2026, updated 7 November 2026, https://cyphersolver.com/kurtz1639.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-kurtz1639,
   author = {Daniel Bourdeau},
   title = {Kurz von Senftenau to Trauttmansdorff, Hamburg 1639},
   year = {2026},
   howpublished = {Cyphersolver},
-  note = {posted 19 September 2026, updated 26 October 2026},
+  note = {posted 19 September 2026, updated 7 November 2026},
   url = {https://cyphersolver.com/kurtz1639.html}
 }">Copy BibTeX</button></p>
 </details>

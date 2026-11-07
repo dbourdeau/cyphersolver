@@ -7,7 +7,7 @@
 <meta name="description" content="Karl Joseph von Palm, the Emperor&rsquo;s resident in London, to Count Starhemberg, 1727 (BL Add MS 32270 ff. 16&ndash;17, DECODE R7927)." data-full="Karl Joseph von Palm, the Emperor&rsquo;s resident in London, to Count Starhemberg, 1727 (BL Add MS 32270 ff. 16&ndash;17, DECODE R7927). The German letter is mostly in clear, with fourteen passages in a homophonic cipher with a small nomenclator, and the Deciphering Branch glossed a few of the groups. The second catalogued record, R7930 (to Visconti), holds only a cover and a decipherer&rsquo;s worksheet for a French/Italian code. The key filed beside them, R7928, is Windischgr&auml;tz&rsquo;s and does not fit. At 162 letter tokens the text is too short to recover the key from the ciphertext alone, and the passages were not deciphered.">
 <link rel="stylesheet" href="style.css?v=7fd9e8bc">
 <meta name="date" content="2026-09-21">
-<meta name="last-modified" content="2026-10-26">
+<meta name="last-modified" content="2026-11-07">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -57,7 +57,7 @@
   <h1>Palm to Starhemberg and Visconti, 1727</h1>
 <div class="parties"><figure class="party recipient"><img src="portrait_gundaker-starhemberg.jpg" width="192" height="192" decoding="async" alt="Gundaker Starhemberg" title="Gundaker Starhemberg: Portrait, unknown artist, 18th century. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Gundaker Starhemberg</figcaption></figure></div><!-- /parties -->
   <p class="sub">British Library, Add MS 32270 ff. 16&ndash;18 and 41 (DECODE R7927&ndash;R7930). The two records behind the catalogue entry hold one German letter with ciphered passages and one decipherer&rsquo;s worksheet for another letter that is not imaged.</p>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-21">21 September 2026</time> &middot; updated <time datetime="2026-10-26">26 October 2026</time></p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-21">21 September 2026</time> &middot; updated <time datetime="2026-11-07">7 November 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#notsolved">not solved</a> &middot; Extent: text not obtained</p><!-- /outcome -->
 <p class="credits">Credits &middot; <a href="contributors.html#feyseel">Feyseel Nur</a> (verification)</p><!-- /credits -->
 <div class="seal stuck" aria-hidden="true"><span>not solved</span></div>
@@ -71,7 +71,7 @@
 <dt>Where</dt><dd>British Library, Add MS 32270, ff. 16&ndash;17; DECODE R7927. Related records R7928, R7929 and R7930 do not supply a usable key.</dd>
 <dt>The cipher</dt><dd>Numbers 2&ndash;79 for letters, about two per letter, and three-figure groups for words and syllables.</dd>
 <dt>How it was tried</dt><dd>The R7928 key contradicts the glosses. Annealing with a German 5-gram model on 162 letter tokens did not converge, with or without the gloss values fixed.</dd>
-<dt>Why it resists</dt><dd>A synthetic control of the same shape recovered only 44&ndash;50% of tokens, so a text this short cannot be deciphered without the key.</dd>
+<dt>Why it resists</dt><dd>A synthetic control of the same shape recovered only 44&ndash;50% of tokens with that letter-level solver. Feyseel Nur&rsquo;s word-level annealer (4 October 2026) recovers synthetic texts of this size at 99&ndash;100%, yet gives no German on R7927, probably because of the glosses or transcription errors.</dd>
 <dt>Still open</dt><dd>All 14 passages. Needed: Palm&rsquo;s key, the Deciphering Branch&rsquo;s clear copy, or images of R7929.</dd>
 </dl>
 </div>
@@ -94,12 +94,12 @@
 <ul>
 <li>The R7928 key applied to the passages: it gives 40&nbsp;=&nbsp;r and 23&nbsp;=&nbsp;u where the glosses have &#383; and n. Ruled out.</li>
 <li>Simulated annealing on the letter values (the project&rsquo;s <code translate="no">de-modern</code> 5-gram model), with the codes drawn from a list of German words and syllables and the clear context kept for scoring. With and without the gloss values fixed, the output was not German.</li>
-<li>A control on synthetic German of the same shape (162 letter tokens over 47 values), with the true values of the six commonest symbols fixed, recovered only 44&ndash;50% of the tokens. At that rate the text cannot be made out, so a text of this length cannot be deciphered without the key.</li>
+<li>A control on synthetic German of the same shape (162 letter tokens over 47 values), with the true values of the six commonest symbols fixed, recovered only 44&ndash;50% of the tokens. At that rate this letter-level solver cannot make the text out. A word-level annealer (Feyseel Nur, 4 October 2026) recovers synthetic German of this size at 99&ndash;100% but, on R7927, gives no German; the glosses or more than about 5% transcription error are the likely block.</li>
 <li>A web search for a printed decipherment of Palm&rsquo;s 1727 intercepts found nothing.</li>
 </ul>
 
 <h2 id="what-remains"><span class="num">04</span> What remains</h2>
-<p>None of the fourteen passages was deciphered. With about two homophones per letter and only 162 letter tokens, a ciphertext-only attack has too little to work on. What is needed: Palm&rsquo;s Imperial cipher (Vienna, HHStA, England, Berichte 1727), the Deciphering Branch&rsquo;s clear copy (other Willes volumes, SP 107), or images of R7929.</p>
+<p>None of the fourteen passages was deciphered. With about two homophones per letter and only 162 letter tokens, a letter-level ciphertext-only attack has too little to work on; a word-level annealer does not, but it gives no German on R7927 either (see section 03). What is needed: Palm&rsquo;s Imperial cipher (Vienna, HHStA, England, Berichte 1727), the Deciphering Branch&rsquo;s clear copy (other Willes volumes, SP 107), or images of R7929.</p>
 
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/palm1727.json"></figure>
@@ -111,13 +111,13 @@
 <p class="muted">Transcription, glosses and solver scripts: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/palm1727">targets/palm1727/</a>.</p>
 <!-- cite:start -->
 <details class="cite" id="cite"><summary>Cite this page</summary>
-<p class="citetext">Daniel Bourdeau and Feyseel Nur, “Palm to Starhemberg and Visconti, 1727”, Cyphersolver, posted 21 September 2026, updated 26 October 2026, https://cyphersolver.com/palm1727.html.</p>
-<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau and Feyseel Nur, “Palm to Starhemberg and Visconti, 1727”, Cyphersolver, posted 21 September 2026, updated 26 October 2026, https://cyphersolver.com/palm1727.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-palm1727,
+<p class="citetext">Daniel Bourdeau and Feyseel Nur, “Palm to Starhemberg and Visconti, 1727”, Cyphersolver, posted 21 September 2026, updated 7 November 2026, https://cyphersolver.com/palm1727.html.</p>
+<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau and Feyseel Nur, “Palm to Starhemberg and Visconti, 1727”, Cyphersolver, posted 21 September 2026, updated 7 November 2026, https://cyphersolver.com/palm1727.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-palm1727,
   author = {Daniel Bourdeau and Feyseel Nur},
   title = {Palm to Starhemberg and Visconti, 1727},
   year = {2026},
   howpublished = {Cyphersolver},
-  note = {posted 21 September 2026, updated 26 October 2026},
+  note = {posted 21 September 2026, updated 7 November 2026},
   url = {https://cyphersolver.com/palm1727.html}
 }">Copy BibTeX</button></p>
 </details>
