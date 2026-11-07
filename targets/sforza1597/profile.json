@@ -1,0 +1,142 @@
+{
+ "schema_version": 1,
+ "target": "sforza1597",
+ "title": "Sforza chancery letter in cipher, cart. 1597 (DECODE R5464)",
+ "documents": [
+  {
+   "id": "R5464",
+   "shelfmark": "Archivio di Stato di Milano, Carteggio Visconteo-Sforzesco, Potenze sovrane, Cancelleria segreta, Chiavi e cifrari, cart. 1597, stamped leaves 158-159",
+   "date": "unknown (Sforza chancery, 1450s-60s)",
+   "year": "unknown",
+   "country": "Italy",
+   "route": "unknown",
+   "language": "Italian",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment found; the key sheets in the box are 19th-century reconstructions."
+   },
+   "length": {
+    "tokens": 3279,
+    "distinct": 60,
+    "unit": "symbols",
+    "measured": true,
+    "file": "ctts/r5464_best/tokens.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "signreader.py: sign detection and clustering on the DECODE images (1,671 px wide)",
+    "image_quality": "poor",
+    "notes": "Signs 15-25 px tall; dots 2-3 px. About 10% of signs mis-read; hand pass on P1 (all 50 lines) and P2 lines 1-3."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Homophonic substitution with graphic signs (about 60 signs for the Italian alphabet), no word division; family of signs differs between letters of the box.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 60,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "none",
+  "notes": "Dots distinguish sign variants; the 115 key sheets of the box are 19th-century reconstructions and none was matched."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment found in DECODE, Tomokiyo or the literature checked.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: the user set the goals, approved downloads (CTTS) and asked for the hand pass.",
+  "tools": [
+   "CTTS (Lasry) run headless",
+   "signreader.py",
+   "keyrefine.py"
+  ],
+  "models": [
+   "unknown"
+  ],
+  "sessions": "unknown",
+  "first_date": "2026-11-06",
+  "last_date": "2026-11-07"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "Fetched all 174 cart. 1597 records from DECODE (115 key sheets, 59 ciphertexts).",
+   "result": "worked"
+  },
+  {
+   "kind": "transcription",
+   "what": "Built a sign reader (deskew, line strips, connected components, dot attachment, Ward clustering) after the CTTS reader failed on these scans.",
+   "result": "partial"
+  },
+  {
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "CTTS homophonic solver run headless on the sign tokens with period Italian, Latin and other corpora.",
+   "result": "partial"
+  },
+  {
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Shuffled-token runs and simulated Italian ciphers with 0, 8 and 15% sign noise: real/shuffled score ratio 1.65 for Italian against Latin 1.38, Spanish 1.36, French 1.32.",
+   "result": "worked"
+  },
+  {
+   "kind": "solver",
+   "technique": [
+    "key-structure hypothesis",
+    "manual reconstruction"
+   ],
+   "what": "Word-guided key refinement, token pair rules and a hand correction pass on P1 and P2 lines 1-3; dictionary-word coverage rose 10.9% to 24.2%.",
+   "result": "partial"
+  },
+  {
+   "kind": "reading",
+   "what": "Only short stretches build Italian words (dele letere, gravisima, tornare, desiderio); no sentence-level reading.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "Language is Italian (controls), but the sign reader and 60-homophone key give only 24% dictionary-word coverage; no sentences build.",
+  "contribution": [
+   "none"
+  ],
+  "class": "not read",
+  "fraction_read": 0,
+  "verification": [
+   "matched control"
+  ],
+  "notes": "Image resolution (15-25 px signs) is the limit; the unsent request to ASMi asks for 400 dpi images of leaves 158-159 and 164-165."
+ }
+}
