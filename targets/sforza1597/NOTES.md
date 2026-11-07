@@ -211,3 +211,11 @@ Dictionary-word coverage of the solver decryption (5-12 letter words): ring-merg
 lines 1-31 + rules 0.250, lines 1-46 + rules 0.248, all edits + rules 0.242. The gain over rules only is about one point, inside run-to-run noise:
 the 15-25 px scan resolution, not the box list, is the limit. R5464 stays read in part; next step needs the ASMi high-resolution images
 (`asmi_request_draft.md`, unsent).
+
+## Hypothesis loop, 7 Nov 2026 (stopped after 3 loops without progress)
+Benchmark `ctts/bench.py` (dictionary-word coverage of the solver decryption, 5-12 letter words) on `ctts/hfin_rules.txt`; progress = more than 1 point over the best.
+- Loop 1, solver settings: n-gram 4 0.214, **n-gram 6 0.257** (baseline n-gram 5: 0.242), homophone cap 3 0.059, cap 8 no output.
+- Loop 2: n-gram 6 repeated 0.257 (stable, not noise), 900 s run 0.257, n-gram 6 cap 6 0.252, n-gram 7 no output. No progress.
+- Loop 3, n-gram 6 on other tokens: ring-merge only 0.217, edits without rules 0.245, edits with rules 0.257, cap 4 0.214. The edits and rules are worth about 4 points under n-gram 6. No progress.
+- Loop 4, word-guided key refinement (`keyrefine.py`) on the decryptions: n-gram 6 0.344, n-gram 5 0.345. No gain from n-gram 6 after refinement. No progress.
+Best plain solver score 25.7% (n-gram 6); best refined 34.5% (hand edits + rules + refinement, own coverage measure). Settings are exhausted; the limit is sign accuracy.
