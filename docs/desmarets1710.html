@@ -7,7 +7,7 @@
 <meta name="description" content="A letter of Nicolas Desmarets, Controller General of Finances, dated Marly 4 June 1710 (DECODE R10198)." data-full="A letter of Nicolas Desmarets, Controller General of Finances, dated Marly 4 June 1710 (DECODE R10198). Its pages alternate clear French prose about the Geertruidenberg peace talks with lines of a numerical code, and end in 22 lines of code alone. Four alignment models show that the French is not the decipherment of the figures. The code, 471 groups of about 570 values, has no key on DECODE or in print and was not decoded.">
 <link rel="stylesheet" href="style.css?v=7fd9e8bc">
 <meta name="date" content="2026-09-21">
-<meta name="last-modified" content="2026-10-26">
+<meta name="last-modified" content="2026-11-07">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -59,7 +59,7 @@
 <p class="readjump"><a href="#texts">Go to the full text &darr;</a></p><!-- /readjump -->
   <p class="sub">DECODE R10198 (&ldquo;Desmaretz_1&rdquo;, contributed by Alexander Pillon): three pages, signed by Nicolas Desmarets, Controller General of Finances. The holding library is not named on the record.</p>
   <p class="sub">Deciphered with the table Satoshi Tomokiyo published on Cryptiana, as suggested in issue #28 by yuanyi-350: read as one continuous stream, 456 of the 471 groups (96.8%) are in the table and the letter reads as French. Twelve group types are open. Measured on the words of the reading, the letter builds coherent sentences but reads at 93.8%, under the 95% bar.</p>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-21">21 September 2026</time> &middot; updated <time datetime="2026-10-26">26 October 2026</time></p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-21">21 September 2026</time> &middot; updated <time datetime="2026-11-07">7 November 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#known">read with known key</a> &middot; Extent: partial (97% of the cipher)</p><!-- /outcome -->
 <p class="credits">Credits &middot; <a href="contributors.html#tomokiyo">Satoshi Tomokiyo</a> (key or decipherment used) &middot; <a href="contributors.html#pillon">Alexandre Pillon</a> (key or decipherment used) &middot; <a href="contributors.html#yuanyi">yuanyi-350</a> (pointer to a source) &middot; <a href="contributors.html#contemporary">Contemporary key or decipherment</a> (key or decipherment used)</p><!-- /credits -->
 <div class="seal partial" aria-hidden="true"><span>known key</span></div>
@@ -89,7 +89,7 @@
 <p>Tomokiyo&rsquo;s table (Cryptiana, <a href="https://cryptiana.web.fc2.com/code/louisxiv.htm">Cipher Used in Louis XIV&rsquo;s Reign</a>, 11B) is an image. I transcribed it into <code translate="no">targets/desmarets1710/tomokiyo_decode.py</code> and decoded the transcription of the 471 groups as one run, without line breaks. The result, with the words divided by hand (<code translate="no">reading.txt</code>):</p>
 <blockquote lang="fr" translate="no"><p>On a voulu tenter un evenement dans [l&rsquo;esper]ance qu&rsquo;il pourroit estre heureux, qu&rsquo;il feroit changer la face des affaires presentes. Soit prudence soit impossibilite, on n&rsquo;a rien fait, mais il y a grande apparence que ce qu&rsquo;on n&rsquo;a pas tente volontairement deviendra force &hellip; Peu de semaines feront connoistre ce qui en arrivera. C&rsquo;est cependant la raison qui a fait differer de renvoyer vostre courier. &hellip;</p>
 <p>Le pouvoir qu&rsquo;on vous envoie est assez estendu et on ne s&rsquo;y tiendra pas absolument. Si vous pouvez venir a bout d&rsquo;avoir des suretes et des eclaircissements sur les demandes ulterieures: on veut la paix, on la veut sure, mais on veut encores menager l&rsquo;honneur du gouvernement. Enfin pourvu que les demandes ulterieures n&rsquo;aillent pas a des demembrements entiers et qu&rsquo;on les borne a peu de chose au dela des preliminaires, on s&rsquo;y portera. &hellip; Il ne se [con]clura pas sans bien des explications et des conferences, mais voila au moins un relachement qui peut produire la paix, ce qui n&rsquo;aur[oit] pas este selon toutes les apparences si l&rsquo;on estoit demeure fermes dans les premieres resolutions.</p></blockquote>
-<p>The first part is the text already written between the figure lines; the last 22 lines of figures decipher to the second part, which has no French over it on the sheet. Tomokiyo notes the same: the secretary deciphered on a separate sheet and wrote the clean text on the original out of step with the figures, and the letter was printed in <em>L&rsquo;interm&eacute;diaire des curieux</em> 50 (1904), which remarked that the last lines carry no plaintext. The sense is the French position at Geertruidenberg: the King wants peace, a safe peace, but means to keep &ldquo;l&rsquo;honneur du gouvernement&rdquo;, and will agree if the Allies&rsquo; further demands stop short of &ldquo;demembrements entiers&rdquo;.</p>
+<p>The first part is the text already written between the figure lines; the last 22 lines of figures decipher to the second part, which has no French over it on the sheet. Tomokiyo notes the same: the secretary deciphered on a separate sheet and wrote the clean text on the original out of step with the figures, and the letter was printed in <em>L&rsquo;interm&eacute;diaire des curieux</em> 50 (1904), which remarked that the last lines carry no plaintext. The sense is the French position in the 1710 peace talks (the Geertruidenberg setting is not from the sources and was not checked here): the King wants peace, a safe peace, but means to keep &ldquo;l&rsquo;honneur du gouvernement&rdquo;, and will agree if the Allies&rsquo; further demands stop short of &ldquo;demembrements entiers&rdquo;.</p>
 <p>What is not clean. The decoded stream has local misfits that come from the table or from the transcription of it: for example &ldquo;heureux&rdquo; comes out with V and X for the last two letters, &ldquo;presentes&rdquo; as <em>pre</em> followed by letters that do not spell it, and &ldquo;le p&hellip;n qu&rsquo;on vous&hellip; envoie&rdquo; has an unread word. A few cells are queried in Tomokiyo&rsquo;s own table (463 &ldquo;temps?&rdquo;, 25 &ldquo;S?&rdquo;), and the 590-pixel images leave some digits doubtful. Twelve group types are not in the table at all: 94 (&ldquo;ce&rdquo;, three places), 539 (&ldquo;l&rsquo;esper&rdquo;) and 565 (&ldquo;oit&rdquo;) are fixed by the context; 179+534 (in &ldquo;differer&rdquo;), 133 (&ldquo;aplanir&rdquo;), 65 and 147 (&ldquo;renvoyer vostre courier&rdquo;), 189, 229, 23 and 559 are plausible readings only, and 559 may be a null.</p>
 
 <h2 id="alignment"><span class="num">03</span> Why the first attempt failed</h2>
@@ -277,13 +277,13 @@ not have happened if one had remained firm in the first resolutions.
 <p class="muted">Files: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/desmarets1710">targets/desmarets1710/</a> in the repository.</p>
 <!-- cite:start -->
 <details class="cite" id="cite"><summary>Cite this page</summary>
-<p class="citetext">Daniel Bourdeau, “Nicolas Desmarets to an unnamed correspondent, Marly, 4 June 1710”, Cyphersolver, posted 21 September 2026, updated 26 October 2026, https://cyphersolver.com/desmarets1710.html.</p>
-<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau, “Nicolas Desmarets to an unnamed correspondent, Marly, 4 June 1710”, Cyphersolver, posted 21 September 2026, updated 26 October 2026, https://cyphersolver.com/desmarets1710.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-desmarets1710,
+<p class="citetext">Daniel Bourdeau, “Nicolas Desmarets to an unnamed correspondent, Marly, 4 June 1710”, Cyphersolver, posted 21 September 2026, updated 7 November 2026, https://cyphersolver.com/desmarets1710.html.</p>
+<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau, “Nicolas Desmarets to an unnamed correspondent, Marly, 4 June 1710”, Cyphersolver, posted 21 September 2026, updated 7 November 2026, https://cyphersolver.com/desmarets1710.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-desmarets1710,
   author = {Daniel Bourdeau},
   title = {Nicolas Desmarets to an unnamed correspondent, Marly, 4 June 1710},
   year = {2026},
   howpublished = {Cyphersolver},
-  note = {posted 21 September 2026, updated 26 October 2026},
+  note = {posted 21 September 2026, updated 7 November 2026},
   url = {https://cyphersolver.com/desmarets1710.html}
 }">Copy BibTeX</button></p>
 </details>

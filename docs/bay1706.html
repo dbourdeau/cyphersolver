@@ -4,7 +4,7 @@
 <meta name="description" content="A ciphered despatch of Andr&aacute;s Bay to Ferenc R&aacute;k&oacute;czi II from the Moldavian court, 8 March 1706 (DECODE R478)." data-full="A ciphered despatch of Andr&aacute;s Bay to Ferenc R&aacute;k&oacute;czi II from the Moldavian court, 8 March 1706 (DECODE R478). Decrypting it with each of the 94 key transcriptions of R&aacute;k&oacute;czi&rsquo;s chancery on DECODE picked out the syllabic key R609, which DECODE had never linked to it; applied unchanged, it deciphers 97.6% of the groups as sense.">
 <link rel="stylesheet" href="style.css?v=7fd9e8bc">
 <meta name="date" content="2026-09-21">
-<meta name="last-modified" content="2026-10-26">
+<meta name="last-modified" content="2026-11-07">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -53,7 +53,7 @@
   <h1>András Bay to Rákóczi, from the Moldavian court, 1706</h1>
 <p class="readjump"><a href="#texts">Go to the full text &darr;</a></p><!-- /readjump -->
   <p class="sub">MNL OL G15 Caps. D. Fasc. 81. 5 (DECODE R478), two pages, catalogued as a homophonic letter with no decryption and no key. Each of the 94 Rákóczi chancery keys on DECODE was tried on it; one, DECODE R609, fits and was applied unchanged. 97.6% of the cipher groups decipher as sense; measured on the words of the reading, the letter builds coherent sentences but reads at 94.2%, under the 95% bar. No printed decipherment was found.</p>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-21">21 September 2026</time> &middot; updated <time datetime="2026-10-26">26 October 2026</time></p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-21">21 September 2026</time> &middot; updated <time datetime="2026-11-07">7 November 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#extkey">read after matching with key from external sources</a> &middot; Extent: partial (98% of the cipher)</p><!-- /outcome -->
 <p class="credits">Credits &middot; <a href="contributors.html#contemporary">Contemporary key or decipherment</a> (key or decipherment used)</p><!-- /credits -->
 <div class="seal partial" aria-hidden="true"><span>key matched</span></div>
@@ -83,7 +83,7 @@
 <p><b>In English.</b> As I wrote four days ago, Muscovite and Polish envoys have come here; the Pole has gone back, the Muscovite is still here. As far as I could fish it out, both said that the Tsar is asking the Swede for peace, promising the Swede all the fortresses he has taken and his expenses in this war, on condition that the Swede declare [war?] against&hellip; Whether the Muscovite envoy goes on to Constantinople or to Transylvania I cannot tell, because he talked to the voivode alone, in Greek. Yesterday I talked with the voivode&rsquo;s interpreter. Pekri had sent the voivode word through him that if only Your Highness can settle the Hungarian nation&rsquo;s affairs with the Germans [the Emperor] &hellip;, Your Highness&rsquo;s whole intention is war against the Turk. Knowing the friar to be the Porte&rsquo;s eyes and ears, the interpreter has not yet told him, and he made me swear on my soul not to give him away. The Swede has moved to Vilna, between Lithuania and Muscovy.</p>
 
 <h2 id="method"><span class="num">03</span> Method</h2>
-<p>The record, the DECODE transcription (AJ, 2020) and both images were fetched with the project&rsquo;s DECODE session. The transcriptions of the G15 key records R549&ndash;R646 were fetched too. <code translate="no">score_keys.py</code> decrypted R478 with each of them and ranked the results by coverage and a Hungarian 4-gram score: R609 came first at &minus;2.57 per letter, well clear of the unrelated keys, which scored below &minus;3.7. The transcription was then compared with the page images, and seven slips were corrected: <i>iv</i>&rarr;10 (<i>jöttek</i>), a clear accented <i>é</i> transcribed as 0, 1257&rarr;127 (<i>vajdától</i>), <i>l, i, 86, i</i>&rarr;6, 1, 86, 5, a dropped 74 (<i>fülének</i>), a dropped 63 (<i>lelkemre</i>) and the crossed-out signs after 300, 16. R609 gives 59 both as U and as <i>ho</i>; <i>ho</i> fits here (<i>Vilnához</i>). <code translate="no">decode.py</code> writes the decipherment.</p>
+<p>The record, the DECODE transcription (AJ, 2020) and both images were fetched with the project&rsquo;s DECODE session. The transcriptions of the G15 key records R549&ndash;R646 were fetched too. <code translate="no">score_keys.py</code> decrypted R478 with each of them and ranked the results by coverage and a Hungarian 4-gram score: R609 came first at &minus;2.57 per letter, well clear of the unrelated keys, which scored below &minus;3.7. The transcription was then compared with the page images, and seven slips were corrected: <i>iv</i>&rarr;10 (<i>jöttek</i>), a clear accented <i>é</i> transcribed as 0, 1257&rarr;127 (<i>tolmácsával</i>), <i>l, i, 86, i</i>&rarr;6, 1, 86, 5, a dropped 74 (<i>fülének</i>), a dropped 63 (<i>lelkemre</i>) and the crossed-out signs after 300, 16. R609 gives 59 both as U and as <i>ho</i>; <i>ho</i> fits here (<i>Vilnához</i>). <code translate="no">decode.py</code> writes the decipherment.</p>
 
 <h2 id="what-remains-uncertain"><span class="num">04</span> What remains uncertain</h2>
 <ul>
@@ -224,13 +224,13 @@ Swede has moved to Vilna, between Lithuania and Muscovy.</pre></details>
 <p class="muted">Transcription, key scorer and decoder: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/bay1706">targets/bay1706/</a> in the repository.</p>
 <!-- cite:start -->
 <details class="cite" id="cite"><summary>Cite this page</summary>
-<p class="citetext">Daniel Bourdeau, “András Bay to Rákóczi, Jászvásár, 8 March 1706”, Cyphersolver, posted 21 September 2026, updated 26 October 2026, https://cyphersolver.com/bay1706.html.</p>
-<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau, “András Bay to Rákóczi, Jászvásár, 8 March 1706”, Cyphersolver, posted 21 September 2026, updated 26 October 2026, https://cyphersolver.com/bay1706.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-bay1706,
+<p class="citetext">Daniel Bourdeau, “András Bay to Rákóczi, Jászvásár, 8 March 1706”, Cyphersolver, posted 21 September 2026, updated 7 November 2026, https://cyphersolver.com/bay1706.html.</p>
+<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau, “András Bay to Rákóczi, Jászvásár, 8 March 1706”, Cyphersolver, posted 21 September 2026, updated 7 November 2026, https://cyphersolver.com/bay1706.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-bay1706,
   author = {Daniel Bourdeau},
   title = {András Bay to Rákóczi, Jászvásár, 8 March 1706},
   year = {2026},
   howpublished = {Cyphersolver},
-  note = {posted 21 September 2026, updated 26 October 2026},
+  note = {posted 21 September 2026, updated 7 November 2026},
   url = {https://cyphersolver.com/bay1706.html}
 }">Copy BibTeX</button></p>
 </details>

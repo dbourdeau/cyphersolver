@@ -7,7 +7,7 @@
 <meta name="description" content="A letter wholly in cipher from an unnamed Gonzaga agent in Rome to Gianfrancesco Gonzaga, lord of Mantua, 9 August 1428 (Archivio di Stato di Mantova, DECODE R1854 image 2, a record catalogued as&hellip;" data-full="A letter wholly in cipher from an unnamed Gonzaga agent in Rome to Gianfrancesco Gonzaga, lord of Mantua, 9 August 1428 (Archivio di Stato di Mantova, DECODE R1854 image 2, a record catalogued as one letter of unknown sender). Its homophonic key of graphic signs was recovered from the ciphertext alone: 1,757 of 1,802 signs read, a marriage negotiation for the Gonzaga in which the bridegroom Carlo is found too young. The other three letters of the record are in other ciphers and have their own pages.">
 <link rel="stylesheet" href="style.css?v=7fd9e8bc">
 <meta name="date" content="2026-09-22">
-<meta name="last-modified" content="2026-10-23">
+<meta name="last-modified" content="2026-11-07">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -59,7 +59,7 @@
 <div class="parties"><figure class="party recipient"><img src="portrait_gianfrancesco-i-gonzaga.jpg" width="192" height="192" decoding="async" alt="Gianfrancesco I Gonzaga" title="Gianfrancesco I Gonzaga: Medal by Pisanello, c. 1439 (National Gallery of Art). Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Gianfrancesco I Gonzaga</figcaption></figure></div><!-- /parties -->
 <p class="readjump"><a href="#texts">Go to the full text &darr;</a></p><!-- /readjump -->
   <p class="sub">A letter wholly in signs, about a marriage for the Gonzaga, deciphered with a key recovered from the ciphertext alone.</p>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-22">22 September 2026</time> &middot; updated <time datetime="2026-10-23">23 October 2026</time></p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-22">22 September 2026</time> &middot; updated <time datetime="2026-11-07">7 November 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#ct">key recovered from ciphertext-only</a> &middot; Extent: complete &middot; <a href="atlas.html#slug=r1854">On the map</a></p><!-- /outcome -->
 <div class="seal solved" aria-hidden="true"><span class="long">ciphertext-only</span></div>
 </section>
@@ -87,7 +87,7 @@
 <figure class="creveal" data-src="reveal/r1854.json"></figure>
 <p>The whole letter is in cipher: 37 lines of graphic signs and digits, dated in clear &ldquo;Rome die viiii augusti&rdquo;. It uses about forty letter signs, a dozen nulls, syllable signs for <em>con</em>, <em>et</em> and <em>-rum</em>, and two word codes, one of them twice in &ldquo;in domo [&middot;] Senensis&rdquo; and &ldquo;cum prefato [&middot;]&rdquo;, that is, the cardinal of Siena. The opening, as deciphered:</p>
 <blockquote><p>Heri Iohannes de Orlandis, quam primum me vidit, dixit michi quod ser Victorius eomet die venit ad ipsum dicens dominam comitissam velle facere id totum quod placet et Iohanni predicto. Verum quia ipse incipiebat tunc prandere, dixit se ad eum reversurum et dicturum latius de ista materia. Postea cum heri sero plures essemus congregati in domo [cardinalis] Senensis pro quodam actu scolastico et cenaturi cum prefato [cardinali] &hellip;</p></blockquote>
-<p>Ser Vittorio goes on to report the countess&rsquo;s answer: as far as she is concerned she agrees to the match of her daughter, but her subjects are not content, &ldquo;quia dominatio vestra nimium distat, si ibi contingeret aliquod sinistrum; et quod Carolus est nimis iuvenis ad talia&rdquo;. The bridegroom under discussion is Gianfrancesco&rsquo;s son Carlo, then eleven. The cousins of <em>domina Palma</em> and Antonio Colonna, the pope&rsquo;s nephew, appear as parties to the negotiation. Line 28, read on 5 October 2026 from the re-fetched image: <i>persuaserat matri et filie ut vellent vendere terras ipsas</i>. The full text, with the doubtful spans marked, is in <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r1854/reading_p2.md">reading_p2.md</a>.</p>
+<p>Ser Vittorio goes on to report the countess&rsquo;s answer: as far as she is concerned she agrees to the match of her daughter, but her subjects are not content, &ldquo;quia dominatio vestra nimium distat, si ibi contingeret aliquod sinistrum; et quod Carolus est nimis iuvenis ad talia&rdquo;. The bridegroom under discussion is Gianfrancesco&rsquo;s son Carlo, then eleven. The cousins of <em>domina Palma</em> and Antonio Colonna, the pope&rsquo;s nephew, appear as parties to the negotiation. (The &ldquo;pope&rsquo;s nephew&rdquo; identification is background not from the sources and was not checked here.) Line 28, read on 5 October 2026 from the re-fetched image: <i>persuaserat matri et filie ut vellent vendere terras ipsas</i>. The full text, with the doubtful spans marked, is in <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r1854/reading_p2.md">reading_p2.md</a>.</p>
 
 <h2 id="method"><span class="num">03</span> Method</h2>
 <p>The transcription was made from the DECODE image, in crops at 4&ndash;13&times;. The triangle sign is followed by sign 17 in 21 of its 29 occurrences, which fixed q and u. A homophonic annealer on the project&rsquo;s shared Latin model then produced Latin words, and per-sign and per-occurrence rescoring separated nulls and look-alike glyphs, confirmed on the image: a bold &nabla; is s while a thin dotted &nabla; is a null, and a tailed circle is p while a plain circle is h. The key was tested against chance and overfitting with a letter model (<code translate="no">docs/_validate.py</code>, re-run on this letter alone on 14 October 2026): it passes.</p>
@@ -265,13 +265,13 @@ the countess herself will do what [you] shall order, whose will seems to be that
 <p class="muted">Transcriptions, keys, solver and reading are in the repository folder <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/r1854">targets/r1854/</a>; the shared solver there also served the other three letters of the record.</p>
 <!-- cite:start -->
 <details class="cite" id="cite"><summary>Cite this page</summary>
-<p class="citetext">Daniel Bourdeau, “A Gonzaga agent in Rome to Gianfrancesco Gonzaga, 9 August 1428”, Cyphersolver, posted 22 September 2026, updated 23 October 2026, https://cyphersolver.com/r1854.html.</p>
-<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau, “A Gonzaga agent in Rome to Gianfrancesco Gonzaga, 9 August 1428”, Cyphersolver, posted 22 September 2026, updated 23 October 2026, https://cyphersolver.com/r1854.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-r1854,
+<p class="citetext">Daniel Bourdeau, “A Gonzaga agent in Rome to Gianfrancesco Gonzaga, 9 August 1428”, Cyphersolver, posted 22 September 2026, updated 7 November 2026, https://cyphersolver.com/r1854.html.</p>
+<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau, “A Gonzaga agent in Rome to Gianfrancesco Gonzaga, 9 August 1428”, Cyphersolver, posted 22 September 2026, updated 7 November 2026, https://cyphersolver.com/r1854.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-r1854,
   author = {Daniel Bourdeau},
   title = {A Gonzaga agent in Rome to Gianfrancesco Gonzaga, 9 August 1428},
   year = {2026},
   howpublished = {Cyphersolver},
-  note = {posted 22 September 2026, updated 23 October 2026},
+  note = {posted 22 September 2026, updated 7 November 2026},
   url = {https://cyphersolver.com/r1854.html}
 }">Copy BibTeX</button></p>
 </details>
