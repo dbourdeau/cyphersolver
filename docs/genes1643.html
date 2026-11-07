@@ -7,7 +7,7 @@
 <meta name="description" content="Juan de Eraso, Spanish ambassador at Genoa, to Philip IV, 18 January 1643: a short cipher letter (AGS Estado leg. 3598 no." data-full="Juan de Eraso, Spanish ambassador at Genoa, to Philip IV, 18 January 1643: a short cipher letter (AGS Estado leg. 3598 no. 44) whose plain original is not online, read by Brice Dudout with a key learned on other Genoa letters of 1643. The Grand Duke of Tuscany holds back his troops.">
 <link rel="stylesheet" href="style.css?v=7fd9e8bc">
 <meta name="date" content="2026-10-30">
-<meta name="last-modified" content="2026-10-30">
+<meta name="last-modified" content="2026-11-07">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -58,7 +58,7 @@
 <div class="parties"><figure class="party recipient"><img src="portrait_philip-iv.jpg" width="192" height="192" decoding="async" alt="Philip IV" title="Philip IV: Portrait by Diego Velázquez, Fraga, 1644 (Frick Collection, New York). Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Philip IV</figcaption></figure></div><!-- /parties -->
 <p class="readjump"><a href="#texts">Go to the full text &darr;</a></p><!-- /readjump -->
   <p class="sub">Spain&rsquo;s ambassador at Genoa tells the King that the Grand Duke of Tuscany answers his request for troops by referring it to Madrid, a way of gaining time; the cipher was read with a key learned on other 1643 letters.</p>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-30">30 October 2026</time></p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-30">30 October 2026</time> &middot; updated <time datetime="2026-11-07">7 November 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#extpt">key recovered based on plaintext from external sources</a> &middot; Extent: partial (87% of the cipher) &middot; <a href="atlas.html#slug=genes1643">On the map</a></p><!-- /outcome -->
 <p class="credits">Contributed by <a href="contributors.html#dudout">Brice Dudout</a> (solution)</p><!-- /credits -->
 <div class="seal partial" aria-hidden="true"><span>external text</span></div>
@@ -73,7 +73,7 @@
   <dt>The cipher</dt><dd>The 1643 table of the Genoa embassy: syllabic series of five numbers (27 fa, 32 ta, 37 as, 42 na &hellip;), disguised bigrams and trigrams, single letters and code numbers (270 Vuestra Majestad, 223 rep&uacute;blica, 180 Francia).</dd>
   <dt>How it was read</dt><dd>Key K4b learned by EM alignment on the pairs 3598,38/37 and 41/40 and frozen. First held-out test (3598,15 against 14): 0.816 of characters, 0.750 of words, below the criterion fixed in advance and reported. Main test, 3598,291 against 290: 0.881 and 0.834, against 0.298 and 0.121 at the 99th percentile of 200 permuted keys.</dd>
   <dt>What it says</dt><dd>The Grand Duke defers to orders he will send his resident in Madrid; Eraso notes that he &ldquo;will enjoy the benefit of time&rdquo;.</dd>
-  <dt>Still open</dt><dd>Codes 149 and 210, found only here. Sixteen restored code words await a reproduction of the plain original.</dd>
+  <dt>Still open</dt><dd>Codes 149 and 210, found only here. Sixteen restored words await a reproduction of the plain original.</dd>
   <dt>Credit</dt><dd>Brice Dudout (<em>Europe chiffr&eacute;e</em>, with Claude): key, held-out tests, transcription, Spanish text and English translation. Contributed by email on 29 October 2026 (branch dudout/bundle-spain-italy).</dd>
 </dl>
 </div>
@@ -87,7 +87,7 @@
 
 <h2 id="reading"><span class="num">03</span> The reading</h2>
 <figure class="creveal" data-src="reveal/genes1643.json"></figure>
-<p>Of 137 enciphered words, 115 are certain, 4 probable, 16 restored from the sense and 2 unresolved: 135 read, 98.5%. The restored words are word codes seen nowhere else (<em>con que</em>, <em>&oacute;rdenes</em>, <em>Espa&ntilde;a</em>, <em>respuesta</em>, <em>cuenta</em>), fixed by syntax and by chancery formulas such as &ldquo;dar cuenta a V. M.&rdquo;; for 166 the same sense would follow from &ldquo;Madrid&rdquo; or &ldquo;la corte&rdquo;. The full text and translation are below. To our knowledge this is the first published decipherment.</p>
+<p>Of 137 enciphered words, 115 are certain, 4 probable, 16 restored from the sense and 2 unresolved: 135 read, 98.5% counting the restored words; without them 119 (86.9%) are read, the figure behind the badge and the 95% bar. Most of the restored words are word codes seen nowhere else (<em>con que</em>, <em>&oacute;rdenes</em>, <em>Espa&ntilde;a</em>, <em>respuesta</em>, <em>cuenta</em>), fixed by syntax and by chancery formulas such as &ldquo;dar cuenta a V. M.&rdquo;; for 166 the same sense would follow from &ldquo;Madrid&rdquo; or &ldquo;la corte&rdquo;. The full text and translation are below. To our knowledge this is the first published decipherment.</p>
 
 <h2 id="open"><span class="num">04</span> What remains uncertain</h2>
 <ul>
@@ -211,13 +211,13 @@ Despues de la perdida de Trin no ha hecho movimiento considerable el enemigo. Pe
 <p class="muted">Folder: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/genes1643">targets/genes1643/</a> (notes, transcription, line-by-line decryption, key K4b, validation files, Spanish text and English translation, as contributed by Brice Dudout).</p>
 <!-- cite:start -->
 <details class="cite" id="cite"><summary>Cite this page</summary>
-<p class="citetext">Brice Dudout and Daniel Bourdeau, “Juan de Eraso to Philip IV, Genoa, 18 January 1643”, Cyphersolver, posted 30 October 2026, https://cyphersolver.com/genes1643.html.</p>
-<p class="citebtns"><button type="button" data-copy="Brice Dudout and Daniel Bourdeau, “Juan de Eraso to Philip IV, Genoa, 18 January 1643”, Cyphersolver, posted 30 October 2026, https://cyphersolver.com/genes1643.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-genes1643,
+<p class="citetext">Brice Dudout and Daniel Bourdeau, “Juan de Eraso to Philip IV, Genoa, 18 January 1643”, Cyphersolver, posted 30 October 2026, updated 7 November 2026, https://cyphersolver.com/genes1643.html.</p>
+<p class="citebtns"><button type="button" data-copy="Brice Dudout and Daniel Bourdeau, “Juan de Eraso to Philip IV, Genoa, 18 January 1643”, Cyphersolver, posted 30 October 2026, updated 7 November 2026, https://cyphersolver.com/genes1643.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-genes1643,
   author = {Brice Dudout and Daniel Bourdeau},
   title = {Juan de Eraso to Philip IV, Genoa, 18 January 1643},
   year = {2026},
   howpublished = {Cyphersolver},
-  note = {posted 30 October 2026},
+  note = {posted 30 October 2026, updated 7 November 2026},
   url = {https://cyphersolver.com/genes1643.html}
 }">Copy BibTeX</button></p>
 </details>

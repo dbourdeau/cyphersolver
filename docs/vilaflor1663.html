@@ -7,7 +7,7 @@
 <meta name="description" content="Four cipher letters of Afonso VI, countersigned by the Count of Castelo Melhor, to the Count of Vila Flor, general of the Alentejo army, written in Lisbon on 13, 15 and 26 May 1663 while Don John of&hellip;" data-full="Four cipher letters of Afonso VI, countersigned by the Count of Castelo Melhor, to the Count of Vila Flor, general of the Alentejo army, written in Lisbon on 13, 15 and 26 May 1663 while Don John of Austria besieged and took Évora (ANTT, Luís de Miranda Pereira liv. 2). Brice Dudout recovered the substitution key from the ciphertext of one letter, froze it and tested it on another; duplicate copies and a sentence clear in one copy and enciphered in the other confirm it. The court orders the relief of Évora at all risk, even at the cost of a battle. Catalogued as 1660–61.">
 <link rel="stylesheet" href="style.css?v=7fd9e8bc">
 <meta name="date" content="2026-10-27">
-<meta name="last-modified" content="2026-10-27">
+<meta name="last-modified" content="2026-11-07">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -59,7 +59,7 @@
 <div class="parties"><figure class="party sender"><img src="portrait_afonso-vi-of-portugal.jpg" width="192" height="192" decoding="async" alt="Afonso VI of Portugal" title="Afonso VI of Portugal: Portrait, 17th century. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Afonso VI of Portugal</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_sancho-manuel-de-vilhena-count-of-vila-flor.jpg" width="192" height="192" decoding="async" alt="Sancho Manuel de Vilhena, Count of Vila Flor" title="Sancho Manuel de Vilhena, Count of Vila Flor: Portrait by Feliciano de Almeida, 1673-75 (Uffizi, Florence). Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Sancho Manuel de Vilhena, Count of Vila Flor</figcaption></figure></div><!-- /parties -->
 <p class="readjump"><a href="#texts">Go to the full text &darr;</a></p><!-- /readjump -->
   <p class="sub">Four cipher letters from the Lisbon court to the general of the Alentejo army during the siege of &Eacute;vora order him to relieve the city at all risk; Brice Dudout recovered the key from the cipher alone.</p>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-27">27 October 2026</time></p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-27">27 October 2026</time> &middot; updated <time datetime="2026-11-07">7 November 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#ct">key recovered from ciphertext-only</a> &middot; Extent: complete &middot; <a href="atlas.html#slug=vilaflor1663">On the map</a></p><!-- /outcome -->
 <p class="credits">Contributed by <a href="contributors.html#dudout">Brice Dudout</a> (solution)</p><!-- /credits -->
 <div class="seal solved" aria-hidden="true"><span class="long">ciphertext-only</span></div>
@@ -110,7 +110,7 @@
 <p>The other letters use a few more homophones, set on the 13 May letter itself (K2): 9 = c, a looped 9 (g) = e, e = q, 2 = f, p = a, Q = u/v, S = b, 53 = d, u = m, &amp; = e. The long letter of 15 May was deciphered with K3; the K2 and K3 files in the repository list the same forty values. No key has a symbol for <em>j</em>, <em>k</em> or <em>y</em>, or for the cedilla and the tilde, and <em>u</em> and <em>v</em> are not distinguished. Numbers of two or more figures are written in clear inside the cipher (<em>203 cavallos</em>, <em>56</em>, <em>55</em>), and so are some dates, which is a trap: in the 13 May letter <em>10</em> and <em>9</em> are days of the month, although 10 and 9 are also the symbols for <em>h</em> and <em>c</em>.</p>
 
 <h2 id="method"><span class="num">03</span> How the key was recovered</h2>
-<p><strong>One letter, no crib.</strong> The 26 May letter carries no decipherment, and no key survives in the volume. Brice Dudout transcribed it symbol by symbol (634 positions, one of them lost in a tear of the right margin) and recovered K1 from it alone, with Portuguese letter statistics and the words such a letter must contain: <em>que</em>, <em>exercito</em>, <em>cartas</em>, <em>risco</em>. The key was then frozen, its SHA-256 fingerprint recorded, before any test.</p>
+<p><strong>One letter, no outside key or plaintext.</strong> The 26 May letter carries no decipherment, and no key survives in the volume. Brice Dudout transcribed it symbol by symbol (634 positions, one of them lost in a tear of the right margin) and recovered K1 from it alone, with Portuguese letter statistics and the words such a letter must contain: <em>que</em>, <em>exercito</em>, <em>cartas</em>, <em>risco</em>. The key was then frozen, its SHA-256 fingerprint recorded, before any test.</p>
 <p><strong>A test fixed in advance.</strong> The 13 May letter, transcribed without the key (636 symbols), was decoded with the frozen K1 and scored with a Portuguese language model: &minus;2.61 per character. The same letter with its symbols shuffled scored at best &minus;4.52, and keys with permuted values at best &minus;5.52 in 200 trials, while a Portuguese text enciphered with K1 with 3% of simulated errors scores &minus;2.58. K1 covers 92.8% of the 13 May symbols; the extra homophones of K2 were then set on that letter.</p>
 <p><strong>The other copies.</strong> The second copy of 26 May (image 39) and the second copy of the 15 May note (image 71) are enciphered with other homophones and other line breaks; each gives the same text, and between them they settle every doubtful symbol of the first copies. The frozen K1 decodes the note at &minus;2.25 per character, against at best &minus;4.72 for the controls. Of the long 15 May letter both copies were deciphered with K3: they agree with the established text at 98.7% and 99.0%, and with each other at 0.927, against at best 0.131 when one copy&rsquo;s symbols are shuffled (20 trials).</p>
 <p><strong>A sentence in clear.</strong> Copy 1 of the long letter writes one sentence in clear that copy 2 enciphers (image 57, lines 20&ndash;26). The key gives 164 of its 166 characters; the two differences are spelling (<em>quasi</em> and <em>quazi</em>, <em>thenente</em> and <em>tenente</em>):</p>
@@ -441,13 +441,13 @@ Written in Lisbon on 26 May 1663. The King. — The Count of Castelo Melhor. —
 <p class="muted">The transcriptions, decryptions, Portuguese texts and translations of the four letters, the three key files and the validation data are in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/vilaflor1663"><code translate="no">targets/vilaflor1663/</code></a>.</p>
 <!-- cite:start -->
 <details class="cite" id="cite"><summary>Cite this page</summary>
-<p class="citetext">Brice Dudout and Daniel Bourdeau, “Afonso VI to the Count of Vila Flor, May 1663”, Cyphersolver, posted 27 October 2026, https://cyphersolver.com/vilaflor1663.html.</p>
-<p class="citebtns"><button type="button" data-copy="Brice Dudout and Daniel Bourdeau, “Afonso VI to the Count of Vila Flor, May 1663”, Cyphersolver, posted 27 October 2026, https://cyphersolver.com/vilaflor1663.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-vilaflor1663,
+<p class="citetext">Brice Dudout and Daniel Bourdeau, “Afonso VI to the Count of Vila Flor, May 1663”, Cyphersolver, posted 27 October 2026, updated 7 November 2026, https://cyphersolver.com/vilaflor1663.html.</p>
+<p class="citebtns"><button type="button" data-copy="Brice Dudout and Daniel Bourdeau, “Afonso VI to the Count of Vila Flor, May 1663”, Cyphersolver, posted 27 October 2026, updated 7 November 2026, https://cyphersolver.com/vilaflor1663.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-vilaflor1663,
   author = {Brice Dudout and Daniel Bourdeau},
   title = {Afonso VI to the Count of Vila Flor, May 1663},
   year = {2026},
   howpublished = {Cyphersolver},
-  note = {posted 27 October 2026},
+  note = {posted 27 October 2026, updated 7 November 2026},
   url = {https://cyphersolver.com/vilaflor1663.html}
 }">Copy BibTeX</button></p>
 </details>
