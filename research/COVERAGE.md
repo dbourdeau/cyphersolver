@@ -151,3 +151,4 @@ Folders: `sweep_2026-11_A_halfdone`, `sweep_2026-11_B_unswept_south`, `sweep_202
   Not reached: Barb. lat. 6000-9800 undescribed volumes, Chig. A.I.35-60, Ott./Urb./Ross./Ferr. letter volumes.
 - **Naples/Palermo** (`sweep_2026-11_naples_palermo`): leads 2397 (Maria Carolina, private collection, partial decodification noted) and 2398 (ASPa Misc. Arch. II n. 262);
   neither is vetted or promotable yet (2397 has a partial decodification of unknown extent; 2398 has no known access).
+- **PARES Naples/Sicily viceroy items** (`sweep_2026-11_pares_naples`): ten Estado Genoa items opened; 0 rows (clear, "descifrada" copies, or already inside catalogue 755 / `genes1643`; 3598,222/223 is a plain/cipher pair in the 1643 Genoa key family). Not opened: Osuna (Albornoz), Santa Cruz and Frías PARES hits.
