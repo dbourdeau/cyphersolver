@@ -11,6 +11,8 @@ Run from anywhere:
   python docs/_check_writeup.py --hook start    SessionStart hook: short audit as context for the session
   python docs/_check_writeup.py --hook stop     Stop hook: block the stop once when a target this session
                                                 worked on looks finished in its NOTES but has no write-up
+                                                (worked on = a tool call that writes into targets/<d>/; reading its notes,
+                                                or editing only docs/<d>.html, does not count)
 
 Exit code 1 from <slug> or --audit when something is missing; the hook modes always exit 0.
 
@@ -680,6 +682,49 @@ def hook_start():
             'reading: "read in part" is a stopping point only when every gap has an outside blocker.\n' + buf.getvalue())
     print(json.dumps({'hookSpecificOutput': {'hookEventName': 'SessionStart', 'additionalContext': text}}))
 
+# What counts as writing into a target folder, for the Stop hook. Python file writes anywhere in a command that names
+# the folder count; shell writes (a redirect, sed -i, tee, mv, cp, rm, touch, git add/commit...) count when they sit in
+# the same command segment as the folder, or the command first cd's into it. Reads, greps and git show of its notes
+# do not, and neither does a mention in a GitHub link or a link/code label of the HTML a script writes to a page.
+_PY_WRITE = re.compile(r"open\([^)]*['\"][wax]b?['\"]|write_text|write_bytes|\.write\(|json\.dump")
+_SH_WRITE = re.compile(r"\bsed\s+-i|\btee\b|\bmv\b|\bcp\b|\brm\b|\btouch\b|\bgit\s+(add|commit|apply|checkout|restore|rm|mv)\b")
+_REDIRECT = re.compile(r"(?<![<>=-])>(?![&=])")          # an output redirect, looked for outside quoted strings
+
+def _tool_uses(transcript):
+    """(tool name, input dict) of every tool call in a session transcript (JSON lines)."""
+    for line in transcript.splitlines():
+        if 'tool_use' not in line: continue
+        try: ev = json.loads(line)
+        except ValueError: continue
+        msg = ev.get('message') if isinstance(ev, dict) else None
+        content = msg.get('content') if isinstance(msg, dict) else None
+        for c in content if isinstance(content, list) else []:
+            if isinstance(c, dict) and c.get('type') == 'tool_use' and isinstance(c.get('input'), dict):
+                yield c.get('name') or '', c['input']
+
+def _shell_writes(seg):
+    seg = re.sub(r'\d?>\s*/dev/null|\d>&\d|&>\s*/dev/null', '', seg)
+    return bool(_SH_WRITE.search(seg) or _REDIRECT.search(re.sub(r"'[^']*'|\"[^\"]*\"", "''", seg)))
+
+def _writes_folder(d, name, inp):
+    """Does this tool call write into targets/<d>/? Edit/Write/NotebookEdit by file path; a shell command as above.
+    Wording fixes to docs/<d>.html alone leave the target untouched."""
+    folder = r'(?<!main/)targets/' + re.escape(d) + r'(?![\w-])(?!/?</)'
+    if name in ('Edit', 'Write', 'NotebookEdit', 'MultiEdit'):
+        path = str(inp.get('file_path') or inp.get('notebook_path') or '').replace('\\', '/')
+        return bool(re.search(folder, path))
+    if name in ('Bash', 'PowerShell'):
+        cmd = str(inp.get('command') or '').replace('\\', '/')
+        if not re.search(folder, cmd): return False
+        cd_in = bool(re.search(r'\bcd\s+\S*' + folder, cmd))
+        # Python that writes: the folder and the write must sit in the same code body (a heredoc), or the same line
+        bodies = [m.group(2) for m in re.finditer(r"<<-?\s*['\"]?(\w+)['\"]?[^\n]*\n(.*?)\n\s*\1\b", cmd, re.S)]
+        for body in bodies or cmd.split('\n'):
+            if _PY_WRITE.search(body) and (cd_in or re.search(folder, body)): return True
+        if cd_in and _shell_writes(cmd): return True
+        return any(re.search(folder, seg) and _shell_writes(seg) for seg in re.split(r';|&&|\|\||\n', cmd))
+    return False
+
 def hook_stop():
     try: inp = json.loads(sys.stdin.read() or '{}')
     except json.JSONDecodeError: inp = {}
@@ -693,11 +738,12 @@ def hook_stop():
     tpath = inp.get('transcript_path') or ''
     tpath = re.sub(r'^/([a-zA-Z])/', lambda m: m.group(1).upper() + ':/', tpath)     # Git Bash spelling on Windows
     transcript = read(tpath) if tpath else ''
-    tool_lines = [l for l in transcript.splitlines() if '"type":"tool_use"' in l or '"type": "tool_use"' in l]
+    uses = list(_tool_uses(transcript))
     status = git('status', '--porcelain')
     dirs = target_dirs()
     def touched(d):
-        if transcript: return any(re.search(rf'"input":.*\b{re.escape(d)}[/\\]', l) for l in tool_lines)
+        # worked on = a call that writes into the folder; reading its notes to check a page does not count
+        if transcript: return any(_writes_folder(d, name, inp) for name, inp in uses)
         return re.search(rf'[ /]{re.escape(d)}/', status) or time.time() - dirs[d]['mtime'] < 6 * 3600
     mine = [(d, why) for d, why in gaps if touched(d)]
     if mine:
