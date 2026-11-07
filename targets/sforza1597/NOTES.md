@@ -101,3 +101,21 @@ The solver locked 11 single-sign letters after matching 12-letter stretches of t
 agree on 40 of 60 cluster-to-letter assignments (chance would be about 1 in 20 each): `ctts/lock64_v1.txt`. HeadlessSolve now takes a
 lock file (cluster=letter) so the key can be refined the way Lasry does in the GUI. Status: R5464 partly decoded, not read.
 Also note: the pencil stamps show R5464 P1 and P2 may be two separate letters (nos. 158/159 vs 165); not yet checked.
+
+## 7 Nov 2026: reader v2 (dots kept), languages, R5464 and R5465 as separate keys
+- Language test on R5464 (same signs, real vs shuffled, 5 homophones, 300 s): Italian 6.68/4.06 = 1.65, Latin 1.38, Spanish 1.36,
+  French 1.32, German lowest (2.8 M raw). Italian it is.
+- Reader errors seen in the outlier montages: many signs differ only by a dot (V / V with dot, circle / circle with dot, perp / perp with
+  dot) and v1 threw the dots away as specks. v2 (`signreader.py extract2`, `segment_strip2`, `feat2`) attaches small components to the
+  nearest sign and adds dot-position flags. R5464: 6.68 M -> 8.13 M (per sign 2,088 -> 2,572); both seeds reach the identical optimum.
+  Simulation reference per sign (3,788 letters, 60 signs): clean 3,632; 8 % mis-read 2,760; 15 % 2,162, so the real reader sits near 10 %.
+- k-means refinement of the Ward clusters and 45/60/80/100 clusters made no difference (2,294 / 2,452 / 2,564 / 2,570 per sign).
+- Rejected: language-guided re-assignment of signs (`em_reader.py`): the same procedure on shuffled glyph order improves the letter model
+  as much (-3.8 to -2.4 against -3.4 to -2.3) and erases the real text's dictionary advantage. Do not use it.
+- Decryption of R5464: about 8 % of letters fall in Italian dictionary words (shuffled 1.6 %); fragments only (scrivere, tornare, amici,
+  venire, della, havea, atione). Not read. What is missing is probably not sign accuracy alone: doubled-letter signs, nulls, word signs and
+  abbreviations are outside the solver's model and cap the score even with perfect signs.
+- R5465 (v2, 80 clusters, 5,636 signs): 5.13 M vs 3.37 M shuffled (1.52). Catalogue: 2409 now R5464 alone, 2411 = R5465.
+- Tried and failed: ranking the 115 key sheets by shape against the sign clusters (no sharp winner: bars, circles and crosses occur in all of them).
+Next: model doubles and nulls explicitly (extend the wrapper's reference text with doubled-letter tokens), try the same on F1 (R5460, R5459),
+F3 (R5463), the geometric E family; test cribs from the standard salutation at the head of R5464 P1.

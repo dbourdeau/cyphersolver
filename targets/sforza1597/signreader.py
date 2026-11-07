@@ -269,3 +269,94 @@ def track_line_j(ink, y0, jump, win=240, step=60, floor=None):
 
 if __name__ == '__main__' and sys.argv[1] == 'extract':
     extract_page(sys.argv[2], sys.argv[3], sys.argv[4])
+
+# ---- v2: keep diacritic dots / small strokes and attach them to their sign ----
+def segment_strip2(ink_strip, big_area=70, attach_dx=10, attach_dy=34):
+    n, lab, st, cen = cv2.connectedComponentsWithStats(ink_strip, 8)
+    H = ink_strip.shape[0]
+    big, small = [], []
+    for i in range(1, n):
+        x, y, w, h, a = st[i]
+        if a < 12: continue
+        cy = y + h / 2
+        if abs(cy - H / 2) > 0.29 * H and h < 0.75 * H: continue
+        if a >= big_area or h >= 22 or w >= 22: big.append([x, y, w, h, a, [i]])
+        else: small.append([x, y, w, h, a, [i]])
+    # merge big comps by x overlap (as v1)
+    comps = sorted(big)
+    merged = True
+    while merged:
+        merged = False
+        comps.sort()
+        for i in range(len(comps)):
+            for j in range(i + 1, len(comps)):
+                a, b = comps[i], comps[j]
+                if b[0] > a[0] + a[2]: break
+                ov = min(a[0] + a[2], b[0] + b[2]) - b[0]
+                if ov >= 0.4 * min(a[2], b[2]):
+                    x0 = min(a[0], b[0]); y0 = min(a[1], b[1]); x1 = max(a[0] + a[2], b[0] + b[2]); y1 = max(a[1] + a[3], b[1] + b[3])
+                    comps[i] = [x0, y0, x1 - x0, y1 - y0, a[4] + b[4], a[5] + b[5]]; del comps[j]; merged = True; break
+            if merged: break
+    comps.sort()
+    comps = [c + [[]] for c in comps]   # extra: attached small comps (x, y, w, h)
+    for s in small:
+        sx, sy, sw, sh = s[0], s[1], s[2], s[3]; scx = sx + sw / 2; scy = sy + sh / 2
+        best = None
+        for c in comps:
+            x, y, w, h = c[0], c[1], c[2], c[3]
+            dx = max(x - scx, scx - (x + w), 0)
+            dy = max(y - scy, scy - (y + h), 0)
+            if dx <= attach_dx and dy <= attach_dy:
+                d = dx + dy
+                if best is None or d < best[0]: best = (d, c)
+        if best: best[1][6].append((sx, sy, sw, sh)); best[1][5] = best[1][5] + s[5]
+    keep = []
+    for c in comps:
+        if c[4] < 70 and c[3] < 22 and c[2] < 22: continue
+        keep.append(c)
+    return keep, lab
+
+def feat2(m, extra, box, S=32):
+    """shape feature of the full mask (dots included, little blur) + explicit dot position flags"""
+    h, w = m.shape
+    side = max(h, w) + 2
+    pad = np.zeros((side, side), np.uint8)
+    pad[(side - h) // 2:(side - h) // 2 + h, (side - w) // 2:(side - w) // 2 + w] = m
+    r = cv2.resize(pad, (S, S), interpolation=cv2.INTER_AREA).astype(np.float32) / 255
+    r = cv2.GaussianBlur(r, (0, 0), 1.1)
+    f = r.flatten(); f = f / (np.linalg.norm(f) + 1e-6)
+    x, y, bw, bh = box
+    above = sum(1 for (sx, sy, sw, sh) in extra if sy + sh / 2 < y)
+    below = sum(1 for (sx, sy, sw, sh) in extra if sy + sh / 2 > y + bh)
+    inside = len(extra) - above - below
+    flags = np.array([min(above, 2), min(below, 2), min(inside, 2)], np.float32) * 0.9
+    aspect = np.array([np.log((w + 1) / (h + 1))], np.float32) * 1.5
+    return np.concatenate([f * 3, aspect, flags])
+
+def extract_page2(png, outdir, tag, half=70):
+    ink = cv2.imread(os.path.join(outdir, 'ink.png'), 0)
+    lj = json.load(open(os.path.join(outdir, 'lines.json')))
+    ys = lj['lines']
+    pitch = float(np.median(np.diff(ys))) if len(ys) > 1 else 110.0
+    jump = int(max(12, 0.4 * pitch))
+    half = int(min(half, round(0.55 * pitch)))
+    recs = []; centers = []
+    for li, y in enumerate(ys):
+        fl = (centers[-1] + 0.6 * pitch) if centers else None
+        c = track_line_j(ink, y, jump, floor=fl)
+        if centers and np.mean(np.abs(c - centers[-1])) < 0.35 * pitch: continue
+        centers.append(c)
+        si = straighten(ink, c, half)
+        comps, lab = segment_strip2(si)
+        for k, (x, yy, w, h, a, ids, extra) in enumerate(comps):
+            # mask over the glyph box extended to include attached dots
+            x0 = min([x] + [e[0] for e in extra]); y0 = min([yy] + [e[1] for e in extra])
+            x1 = max([x + w] + [e[0] + e[2] for e in extra]); y1 = max([yy + h] + [e[1] + e[3] for e in extra])
+            m = glyph_mask(lab, ids, x0, y0, x1 - x0, y1 - y0)
+            recs.append(dict(page=tag, line=len(centers), k=k, x=int(x0), y=int(y0), w=int(x1 - x0), h=int(y1 - y0), mask=m,
+                             feat=feat2(m, extra, (x, yy, w, h)), nextra=len(extra)))
+    pickle.dump(recs, open(os.path.join(outdir, 'glyphs2.pkl'), 'wb'))
+    print(tag, 'lines', len(centers), 'glyphs', len(recs), 'with dots', sum(1 for r in recs if r['nextra']))
+
+if __name__ == '__main__' and sys.argv[1] == 'extract2':
+    extract_page2(sys.argv[2], sys.argv[3], sys.argv[4])
