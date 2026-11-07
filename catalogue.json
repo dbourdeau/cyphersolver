@@ -76378,16 +76378,16 @@
    "counted": true,
    "year": 1450,
    "date": "15th century (DECODE gives the placeholder 1450)",
-   "title": "Sforza chancery letters in cipher, ASMi Carteggio Sforzesco cart. 1597, sign family E (9 records)",
+   "title": "Sforza chancery letters in cipher, ASMi Carteggio Sforzesco cart. 1597, sign family E1 (R5437, R5443, R5444, R5445, R5447, R5467)",
    "correspondents": "unknown (Sforza ambassadors and agents → the Duke of Milan, to be identified from addresses)",
    "place": "unknown",
    "language": "Italian",
    "region": "Italy",
    "period": "15th century",
-   "shelfmark": "Archivio di Stato di Milano, Carteggio Visconteo-Sforzesco, cart. 1597 (Chiavi e cifrari), nos. 133, 135, 137, 143, 144, 145, 147, 157, 167 (DECODE R5433, R5435, R5437, R5443, R5444, R5445, R5447, R5457, R5467)",
-   "folio_note": "Sign hand: geometric bar-and-cross signs (plus, inverted T, circle, pi, infinity, comb, \"bus\" sign), the style of the geometric cart. 1597 key sheets; short letters and slips, several with clear Italian between runs. R5433 and R5435 are short letters wholly in signs; R5437, R5443-R5445, R5457 and R5467 interleave clear Italian (\"me pare\", \"mantova\") with sign runs.",
+   "shelfmark": "Archivio di Stato di Milano, Carteggio Visconteo-Sforzesco, cart. 1597 (Chiavi e cifrari), nos. 137, 143, 144, 145, 147, 167 (DECODE R5437, R5443, R5444, R5445, R5447, R5467)",
+   "folio_note": "Geometric bar-and-cross letters with clear Italian between sign runs (about 3,000 glyphs, part of them clear handwriting); the R5437, R5443, R5444, R5467 core shares one alphabet.",
    "cls": "A",
-   "status": "Split from catalogue 1310 on 6 Nov 2026 (targets/sforza1597/): the 59 cart. 1597 cipher records are not one cipher. Grouped here by sign hand on the full-page DECODE PDFs; the groups are a proxy for keys, not proven keys, and may split further once a key sheet is matched. DECODE: status N/A, no metadata, no decipherment on the leaves.",
+   "status": "Split from 2403 on 7 Nov 2026 after the sign reader (targets/sforza1597/signreader.py v2) clustered the glyphs of R5433, R5435, R5437, R5443, R5444, R5445, R5457 and R5467 together: cluster-share cosines R5437/R5443/R5444/R5467 0.79-0.89 (R5445 0.64-0.77), R5433/R5435 0.73, R5457 0.37-0.59 with all others. Three alphabets, taken as three keys; clustering evidence only. Solver test on the first group (about 1,800 signs incl. clear-text handwriting, CTTS Italian, period corpus): 10.64 M against 10.99 M shuffled, no signal. Split from catalogue 1310 on 6 Nov 2026 (targets/sforza1597/): the 59 cart. 1597 cipher records are not one cipher. Grouped here by sign hand on the full-page DECODE PDFs; the groups are a proxy for keys, not proven keys, and may split further once a key sheet is matched. DECODE: status N/A, no metadata, no decipherment on the leaves.",
    "why": "A large body of unread 15th-century Milanese diplomatic ciphers filed with the keys that should read them.",
    "importance": 4,
    "solvability": 4,
@@ -76396,34 +76396,31 @@
    "verify": "Compare with the geometric key sheets in nos. 1-114 (Cosimo, Antonio, Lancelotto, Raphael de Pugnellis and others); the clear words are cribs. Sibling pool: catalogue 1311 (cart. 1598 and 1591).",
    "links": [
     {
-     "label": "DECODE R5433",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/5433"
-    },
-    {
-     "label": "DECODE R5435",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/5435"
-    },
-    {
      "label": "DECODE R5437",
      "href": "https://de-crypt.org/decrypt-web/RecordsView/5437"
     },
     {
      "label": "DECODE R5443",
      "href": "https://de-crypt.org/decrypt-web/RecordsView/5443"
+    },
+    {
+     "label": "DECODE R5444",
+     "href": "https://de-crypt.org/decrypt-web/RecordsView/5444"
+    },
+    {
+     "label": "DECODE R5445",
+     "href": "https://de-crypt.org/decrypt-web/RecordsView/5445"
     }
    ],
    "seen": "image",
    "source": "DECODE Venice/Milan sweep",
    "prior_art": "open (checked 6 Nov 2026: DECODE N/A, no reading found in web search, Cerioni 1970 edits the keys only; the Milan inventory was not retrievable)",
    "decode_ids": [
-    5433,
-    5435,
     5437,
     5443,
     5444,
     5445,
     5447,
-    5457,
     5467
    ],
    "needs_archive_scan": "no",
@@ -76436,8 +76433,8 @@
     "by": "claude, split of catalogue 1310 and vetting pass",
     "seen": {
      "kind": "scan",
-     "where": "DECODE R5433, R5435, R5437, R5443, R5444, R5445, R5447, R5457, R5467: full-resolution PDFs fetched and viewed 6 Nov 2026 (login cookie)",
-     "extent": "9 records, 9 letters or slips of 1-4 pp.; geometric bar-and-cross signs (plus, inverted T, circle, pi, infinity, comb, \"bus\" sign), the style of the geometric cart. 1597 key sheets; short letters and slips, several with clear Italian between runs",
+     "where": "DECODE R5437, R5443, R5444, R5445, R5447, R5467: full-resolution PDFs viewed and processed 6-7 Nov 2026",
+     "extent": "Geometric bar-and-cross letters with clear Italian between sign runs (about 3,000 glyphs, part of them clear handwriting); the R5437, R5443, R5444, R5467 core shares one alphabet.",
      "cipher": "Sign-cipher text on the leaf; no decipherment written on or with it (the clear-text leaves in the box, R5421, R5423, R5468, are letters, not decipherments)."
     },
     "prior_art": {
@@ -76981,6 +76978,135 @@
      "kind": "scan",
      "where": "DECODE R5465: full-resolution PDF viewed and processed 6 Nov 2026",
      "extent": "Split from 2409 on 6 Nov 2026: R5465 and R5464 have different alphabets (cluster-share cosine 0.46-0.63 between them, 0.94 between R5465's own leaves). R5465 (three leaves, about 5,600 signs on the first two): CTTS Italian score 5.13 M against 3.37 M for the shuffled signs (ratio 1.52; 1.32 with the first reader). Not decoded.",
+     "cipher": "Sign-cipher text on the leaf; no decipherment written on or with it (the clear-text leaves in the box, R5421, R5423, R5468, are letters, not decipherments)."
+    },
+    "prior_art": {
+     "decode": "DECODE R5380-R5474 (owner Mark Knowles): status N/A, no metadata, no decipherment on the leaves or records; opened 6 Nov 2026 with the account cookie. Not Decrypted or Partially decrypted.",
+     "tomokiyo": "Not found: web searches of 6 Nov 2026 (Sforza cart. 1597, Chiavi e cifrari; Tomokiyo, Sforza, Simonetta) returned only Simonetta's rules, the Tranchedino codex and Cipher Mysteries pages; no reading of these letters.",
+     "lasry": "No Lasry reading of cart. 1597 letters found (web search 6 Nov 2026; his Sforza work is on BnF ital. 1583, repo targets/it1583, a different box).",
+     "edition": "Cerioni, La diplomazia sforzesca nella seconda meta del Quattrocento e i suoi cifrari segreti (1970), edits the keys and uses the 'Chiavi e cifrari' series (scatt. 1591, 1597-1598); no edition or reading of these cipher letters known. Not seen here.",
+     "literature": "Pelling, Cipher Mysteries 28 Jun 2011 ('Milanese enciphered letters: call for help') names scatt. 1597-1598 as a possible home of Sforza cipher letters, unconfirmed, and reports no reading; Meister 1902 cites 'Pot. Est. Cifre' bundles, not these. The Archivio di Stato di Milano inventory (Potenze sovrane e altre voci, VS 2-1) could not be fetched on 6 Nov 2026 (connection reset), so its description of cart. 1597 is unchecked."
+    },
+    "key_check": "All 115 key sheets of the same cartella (DECODE R5301-R5414, R5469-R5471) fetched and viewed as contact sheets (headers and alphabets) on 6 Nov 2026. They are copies of Sforza chancery keys of the 1450s-1480s headed with correspondent names (Cosimo de Medici, Ottone del Carretto, Bartolomeo da Recanati, Matteo di Capua 1461, Prothonotario Trincio, Francesco Tranchedino and others): a letter alphabet with homophones, doubled letters, nulls, a nomenclator list and in places a syllable table, all in geometric bar-and-cross signs. None uses the Greek-looking signs of the R5425-R5430 and cursive-letter families; for the geometric families a shape-by-shape match to a named key has not been made, so none is claimed.",
+    "duplicates": "Split from catalogue 1310 (retired). DECODE R5380-R5474 are in no other entry; known.py not rerun for the split. Sforza ciphers of BnF ital. 1583 (targets/it1583, visconti1446, tranchedini1446) use different alphabets and are separate entries.",
+    "verdict": "open",
+    "key_in_volume": "cart. 1597 nos. 1-114 and 169-171 (DECODE R5301-R5414, R5469-R5471); all viewed, none matched or tested against these letters yet."
+   },
+   "repository": "asmi",
+   "scored": "vetted"
+  },
+  {
+   "id": 2412,
+   "counted": true,
+   "year": 1450,
+   "date": "15th century (DECODE gives the placeholder 1450)",
+   "title": "Sforza chancery letters in cipher, ASMi Carteggio Sforzesco cart. 1597, sign family E2 (R5433, R5435)",
+   "correspondents": "unknown (Sforza ambassadors and agents → the Duke of Milan, to be identified from addresses)",
+   "place": "unknown",
+   "language": "Italian",
+   "region": "Italy",
+   "period": "15th century",
+   "shelfmark": "Archivio di Stato di Milano, Carteggio Visconteo-Sforzesco, cart. 1597 (Chiavi e cifrari), nos. 133, 135 (DECODE R5433, R5435)",
+   "folio_note": "Two short letters in geometric bar-and-cross signs (150-170 signs each), their own alphabet within the old family E.",
+   "cls": "A",
+   "status": "Split from 2403 on 7 Nov 2026 after the sign reader (targets/sforza1597/signreader.py v2) clustered the glyphs of R5433, R5435, R5437, R5443, R5444, R5445, R5457 and R5467 together: cluster-share cosines R5437/R5443/R5444/R5467 0.79-0.89 (R5445 0.64-0.77), R5433/R5435 0.73, R5457 0.37-0.59 with all others. Three alphabets, taken as three keys; clustering evidence only. Solver test on the first group (about 1,800 signs incl. clear-text handwriting, CTTS Italian, period corpus): 10.64 M against 10.99 M shuffled, no signal. Split from catalogue 1310 on 6 Nov 2026 (targets/sforza1597/): the 59 cart. 1597 cipher records are not one cipher. Grouped here by sign hand on the full-page DECODE PDFs; the groups are a proxy for keys, not proven keys, and may split further once a key sheet is matched. DECODE: status N/A, no metadata, no decipherment on the leaves.",
+   "why": "A large body of unread 15th-century Milanese diplomatic ciphers filed with the keys that should read them.",
+   "importance": 4,
+   "solvability": 4,
+   "difficulty": 3,
+   "score_note": "Scored from full-page PDFs of every record in the family, viewed 6 Nov 2026 (targets/sforza1597/)",
+   "verify": "Compare with the geometric key sheets in nos. 1-114 (Cosimo, Antonio, Lancelotto, Raphael de Pugnellis and others); the clear words are cribs. Sibling pool: catalogue 1311 (cart. 1598 and 1591).",
+   "links": [
+    {
+     "label": "DECODE R5433",
+     "href": "https://de-crypt.org/decrypt-web/RecordsView/5433"
+    },
+    {
+     "label": "DECODE R5435",
+     "href": "https://de-crypt.org/decrypt-web/RecordsView/5435"
+    }
+   ],
+   "seen": "image",
+   "source": "DECODE Venice/Milan sweep",
+   "prior_art": "open (checked 6 Nov 2026: DECODE N/A, no reading found in web search, Cerioni 1970 edits the keys only; the Milan inventory was not retrievable)",
+   "decode_ids": [
+    5433,
+    5435
+   ],
+   "needs_archive_scan": "no",
+   "access_note": "scans on DECODE (free login)",
+   "ark": "",
+   "access": "online",
+   "vetting_note": "Vetted 6 Nov 2026 on full DECODE PDFs (account cookie): ciphertext seen, all 115 cart. 1597 key sheets viewed, prior art searched; no key matched to this family yet.",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude, split of catalogue 1310 and vetting pass",
+    "seen": {
+     "kind": "scan",
+     "where": "DECODE R5433, R5435: full-resolution PDFs viewed and processed 6-7 Nov 2026",
+     "extent": "Two short letters in geometric bar-and-cross signs (150-170 signs each), their own alphabet within the old family E.",
+     "cipher": "Sign-cipher text on the leaf; no decipherment written on or with it (the clear-text leaves in the box, R5421, R5423, R5468, are letters, not decipherments)."
+    },
+    "prior_art": {
+     "decode": "DECODE R5380-R5474 (owner Mark Knowles): status N/A, no metadata, no decipherment on the leaves or records; opened 6 Nov 2026 with the account cookie. Not Decrypted or Partially decrypted.",
+     "tomokiyo": "Not found: web searches of 6 Nov 2026 (Sforza cart. 1597, Chiavi e cifrari; Tomokiyo, Sforza, Simonetta) returned only Simonetta's rules, the Tranchedino codex and Cipher Mysteries pages; no reading of these letters.",
+     "lasry": "No Lasry reading of cart. 1597 letters found (web search 6 Nov 2026; his Sforza work is on BnF ital. 1583, repo targets/it1583, a different box).",
+     "edition": "Cerioni, La diplomazia sforzesca nella seconda meta del Quattrocento e i suoi cifrari segreti (1970), edits the keys and uses the 'Chiavi e cifrari' series (scatt. 1591, 1597-1598); no edition or reading of these cipher letters known. Not seen here.",
+     "literature": "Pelling, Cipher Mysteries 28 Jun 2011 ('Milanese enciphered letters: call for help') names scatt. 1597-1598 as a possible home of Sforza cipher letters, unconfirmed, and reports no reading; Meister 1902 cites 'Pot. Est. Cifre' bundles, not these. The Archivio di Stato di Milano inventory (Potenze sovrane e altre voci, VS 2-1) could not be fetched on 6 Nov 2026 (connection reset), so its description of cart. 1597 is unchecked."
+    },
+    "key_check": "All 115 key sheets of the same cartella (DECODE R5301-R5414, R5469-R5471) fetched and viewed as contact sheets (headers and alphabets) on 6 Nov 2026. They are copies of Sforza chancery keys of the 1450s-1480s headed with correspondent names (Cosimo de Medici, Ottone del Carretto, Bartolomeo da Recanati, Matteo di Capua 1461, Prothonotario Trincio, Francesco Tranchedino and others): a letter alphabet with homophones, doubled letters, nulls, a nomenclator list and in places a syllable table, all in geometric bar-and-cross signs. None uses the Greek-looking signs of the R5425-R5430 and cursive-letter families; for the geometric families a shape-by-shape match to a named key has not been made, so none is claimed.",
+    "duplicates": "Split from catalogue 1310 (retired). DECODE R5380-R5474 are in no other entry; known.py not rerun for the split. Sforza ciphers of BnF ital. 1583 (targets/it1583, visconti1446, tranchedini1446) use different alphabets and are separate entries.",
+    "verdict": "open",
+    "key_in_volume": "cart. 1597 nos. 1-114 and 169-171 (DECODE R5301-R5414, R5469-R5471); all viewed, none matched or tested against these letters yet."
+   },
+   "repository": "asmi",
+   "scored": "vetted"
+  },
+  {
+   "id": 2413,
+   "counted": true,
+   "year": 1450,
+   "date": "15th century (DECODE gives the placeholder 1450)",
+   "title": "Sforza chancery letters in cipher, ASMi Carteggio Sforzesco cart. 1597, sign family E3 (R5457)",
+   "correspondents": "unknown (Sforza ambassadors and agents → the Duke of Milan, to be identified from addresses)",
+   "place": "unknown",
+   "language": "Italian",
+   "region": "Italy",
+   "period": "15th century",
+   "shelfmark": "Archivio di Stato di Milano, Carteggio Visconteo-Sforzesco, cart. 1597 (Chiavi e cifrari), nos. 157 (DECODE R5457)",
+   "folio_note": "One letter (about 500 signs) in geometric signs with clear Italian words between the runs, its own alphabet within the old family E.",
+   "cls": "A",
+   "status": "Split from 2403 on 7 Nov 2026 after the sign reader (targets/sforza1597/signreader.py v2) clustered the glyphs of R5433, R5435, R5437, R5443, R5444, R5445, R5457 and R5467 together: cluster-share cosines R5437/R5443/R5444/R5467 0.79-0.89 (R5445 0.64-0.77), R5433/R5435 0.73, R5457 0.37-0.59 with all others. Three alphabets, taken as three keys; clustering evidence only. Solver test on the first group (about 1,800 signs incl. clear-text handwriting, CTTS Italian, period corpus): 10.64 M against 10.99 M shuffled, no signal. Split from catalogue 1310 on 6 Nov 2026 (targets/sforza1597/): the 59 cart. 1597 cipher records are not one cipher. Grouped here by sign hand on the full-page DECODE PDFs; the groups are a proxy for keys, not proven keys, and may split further once a key sheet is matched. DECODE: status N/A, no metadata, no decipherment on the leaves.",
+   "why": "A large body of unread 15th-century Milanese diplomatic ciphers filed with the keys that should read them.",
+   "importance": 4,
+   "solvability": 4,
+   "difficulty": 3,
+   "score_note": "Scored from full-page PDFs of every record in the family, viewed 6 Nov 2026 (targets/sforza1597/)",
+   "verify": "Compare with the geometric key sheets in nos. 1-114 (Cosimo, Antonio, Lancelotto, Raphael de Pugnellis and others); the clear words are cribs. Sibling pool: catalogue 1311 (cart. 1598 and 1591).",
+   "links": [
+    {
+     "label": "DECODE R5457",
+     "href": "https://de-crypt.org/decrypt-web/RecordsView/5457"
+    }
+   ],
+   "seen": "image",
+   "source": "DECODE Venice/Milan sweep",
+   "prior_art": "open (checked 6 Nov 2026: DECODE N/A, no reading found in web search, Cerioni 1970 edits the keys only; the Milan inventory was not retrievable)",
+   "decode_ids": [
+    5457
+   ],
+   "needs_archive_scan": "no",
+   "access_note": "scans on DECODE (free login)",
+   "ark": "",
+   "access": "online",
+   "vetting_note": "Vetted 6 Nov 2026 on full DECODE PDFs (account cookie): ciphertext seen, all 115 cart. 1597 key sheets viewed, prior art searched; no key matched to this family yet.",
+   "vetting": {
+    "date": "2026-11-06",
+    "by": "claude, split of catalogue 1310 and vetting pass",
+    "seen": {
+     "kind": "scan",
+     "where": "DECODE R5457: full-resolution PDFs viewed and processed 6-7 Nov 2026",
+     "extent": "One letter (about 500 signs) in geometric signs with clear Italian words between the runs, its own alphabet within the old family E.",
      "cipher": "Sign-cipher text on the leaf; no decipherment written on or with it (the clear-text leaves in the box, R5421, R5423, R5468, are letters, not decipherments)."
     },
     "prior_art": {
