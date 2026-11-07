@@ -196,6 +196,11 @@ PAGES = [
          blurb='Catalogued as a ciphered letter of &ldquo;Augurellio&rdquo;, it is a report from the Bavarian agent J&ouml;rg Weinmeister, who signs in cipher, on King John&rsquo;s siege of Palota in 1533. The homophonic key of the volume&rsquo;s System A&prime; was recovered from contemporary glosses on a sibling letter and on this one (adjacent plaintext), and 96.7% of the letter&rsquo;s words are deciphered.',
          quote='&ldquo;er sol von solchen sachen des morgens, wan er nuechter sei, mit ime reden&rdquo;',
          rights='Bayerisches Hauptstaatsarchiv, via DECODE R9407'),
+    dict(slug='gonzaga1542', label='Charles V to Ferrante Gonzaga 1542', year='1542', y=1542.61, place='Mont&oacute;n &rarr; Palermo', st='partial', stt='read in part',
+         title='Charles V to Ferrante Gonzaga, 11 August 1542',
+         blurb='A letter of the Emperor to his viceroy of Sicily, catalogued as an unread numeric cipher: no money for the infantry, the galleys and La Goleta, the Turkish fleet, and the French effort coming to Perpignan. Prabal Gupta found the key from the sign statistics of the letter alone: a consonant sign with a small digit that adds the vowel. 94% of the cipher words read.',
+         quote='&ldquo;el mayor esfuer&ccedil;o de los franceses viene a la frontera de Perpi&ntilde;&aacute;n&rdquo;',
+         rights='Letter: Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera K, Karl V, sfasc. IV, cc. 109-110 (scans CC BY-NC-SA, not copied); key and reading by Prabal Gupta (CC BY 4.0)'),
     dict(slug='marignano1546', label='Marignano to Ferrante Gonzaga 1546', year='1546', y=1546.45, place='Ratisbon &rarr; Milan', st='solved', stt='existing decipherment',
          title='Marignano to Ferrante Gonzaga, 12 June 1546',
          blurb='Ten cipher lines in a letter from the imperial court at Ratisbon on the war against the Lutherans. A contemporary clear translation on the next leaf covers the whole passage, so WAINUT rebuilt the key from it and read all 62 words.',
@@ -1553,6 +1558,11 @@ PAGES = [
          blurb='SP 106/7 f. 33 (DECODE R597), catalogued as a partly decrypted letter, is an English instruction sheet for a syllabic code in two keys, used with Baron Stosch, the British spy at Rome and Florence. The syllable is written over every group of its worked example, and the whole sheet is transcribed.',
          quote='&ldquo;Les Adherens du Pretendant se donnent beaucoup de mouvement &agrave; Rome&rdquo;',
          rights='The National Archives, Kew, via DECODE R597'),
+    dict(slug='branicki1757', label='Branicki to Potocki 1757', year='1757', y=1757.22, place='Bia&#322;ystok, Lithuania', st='partial', stt='read in part',
+         title='Branicki to Potocki and three Lithuanian letters, 1756&ndash;57',
+         blurb='Four cipher letters of the Branicki family archive in Warsaw, listed as unsolved: Hetman Branicki&rsquo;s plan of a manifesto (22 March 1757), a field report from the Russian army, a fund of 146,000 francs to buy the Lithuanian dietines, and a bloody dietine at Brest. Prabal Gupta found a reciprocal alphabet of twelve pairs from the ciphertext of the first letter, and the same key reads the others; 97.5% of the cipher words read, 1398 only in part.',
+         quote='&ldquo;Quoique le projet concert&eacute; &agrave; Varsovie rencontre des obstacles&rdquo;',
+         rights='Letters: Archiwum G&#322;&oacute;wne Akt Dawnych, Warsaw, zesp. 338, 1/338/0/1/446, 1398, 1399, 1400; key and readings by Prabal Gupta (CC BY 4.0)'),
     dict(slug='bouille1778', label='Bouill&eacute; to the Navy 1778', year='1778', y=1778.7, place='Martinique &rarr; Versailles', st='solved', stt='known key applied',
          title='Bouill&eacute; to the minister of the Navy, 1778',
          blurb='Two cipher letters and two troop returns after the capture of Dominica, marked not decrypted in the ANOM inventory. Brice Dudout read them with a key rebuilt from the pencil glosses on the same governor&rsquo;s 1779 letters (0.894 of words on a held-out letter); 455 of 458 words are read.',
@@ -4436,6 +4446,8 @@ IMAGES['milroy'] = None
 IMAGES['auckland1918'] = None
 IMAGES['deboli1788'] = None
 IMAGES['limantour1909'] = None
+IMAGES['branicki1757'] = None
+IMAGES['gonzaga1542'] = None
 IMAGES['piccolomini1646'] = None
 IMAGES['mazzinghi1478'] = None
 IMAGES['majesty1624'] = None
