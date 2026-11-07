@@ -1,0 +1,63 @@
+{
+ "1865": {
+  "unvetted": "Chrome pass 6 Nov 2026 (tc05): fgurgia.ru/object/6207481 now opens in Chrome and shows only the catalogue card: RGIA Ф. 560 Оп. 29 Д. 260, 'Шифрованные телеграммы разных лиц Л. Ф. Давыдову по вопросам, относящимся к Русско-японской войне. Русский, английский языки', dates 1904; no leaf count, no scan link, no decipherment or key named. A ministry chancery case titled 'ciphered telegrams' may hold only the clear decoded copies, so the card does not show that ciphertext survives. Web searches (Russian: RGIA Ф. 560 Оп. 29 шифрованные телеграммы Давыдову; English: Pokotilov Davydov Witte cipher telegrams Cryptologia) found no edition or decipherment. Would unblock it: the case's digitised copy (RGIA reading-room request) or a leaf description naming code groups."
+ },
+ "1866": {
+  "unvetted": "Chrome pass 6 Nov 2026 (tc05): fgurgia.ru/object/6207483 opens in Chrome: RGIA Ф. 560 Оп. 29 Д. 261, 'Шифрованные телеграммы разных лиц Л. Ф. Давыдову, В. А. Орановскому и Н. П. Линевичу ... Русский, французский языки' (the language is French, not English as the lead says), dates 1905, 147 leaves, no scan link, no decipherment or key named. Only the case title says 'ciphered'; the card does not show whether the leaves are ciphertext or decoded copies, and no leaf could be opened. Searches (Russian RGIA Ф. 560 Оп. 29 and English Witte/Davydov cipher telegrams) found no edition or decipherment. Would unblock it: a scan of the case (RGIA copy request) showing code groups."
+ },
+ "2217": {
+  "date": "2026-11-06",
+  "by": "claude leads review batch tc05",
+  "seen": {
+   "kind": "scan",
+   "where": "BNCF teca TecaDigitale viewer, work idr BNCF0003827870 (Ginori Conti 29.137, cc. 1-39), thumbnail grid opened in Chrome 6 Nov 2026, then the c. 13r strip opened at viewer size; Manus record 611145 for the sheet description",
+   "extent": "c. 13r: a 40x209 mm paper strip with four full lines of symbol cipher, roughly 260-300 signs; c. 13v is only the BNCF stamp (inv. 3423197)",
+   "cipher": "Four lines of symbol cipher mixing letter-like and geometric signs (the first line opens with an h with an abbreviation stroke, then y, n with a stroke, c, q, a phi-like sign), with no sender, addressee, date or interlinear gloss on the strip; Manus says of c. 13: 'Il biglietto e in scrittura cifrata.'"
+  },
+  "prior_art": {
+   "decode": "known.py 'Ginori Conti', '29.137', 'Michelozzi' (harvested DECODE dump and repo): no DECODE record; the only Ginori Conti hit is catalogue entry 29.104 (Alamanni to Michelozzi 1492), a different document; the Medici/Florentine chancery keys on DECODE are key records, not this strip.",
+   "tomokiyo": "Web searches this pass (Ginori Conti 29.137 biglietto cifrato; Lorenzo de' Medici 1481 Michelozzi cipher) returned no Cryptiana page on Medici ciphers of 1481 or on this strip.",
+   "lasry": "No Lasry paper or GL.htm row on a Medici/Michelozzi cipher strip of 1481 turned up in the searches; nothing on Ginori Conti 29.137.",
+   "edition": "Lorenzo de' Medici, Lettere V (1480-81) and VI (1481-82): Lettere V p. 262 and VI no. 509 p. 26 (earlier Chrome/archive.org checks, 6 Nov) identify only cc. 20-21 and cc. 6-9 of GC 29.137; no snippet or index hit places c. 13 in any volume. This pass I re-ran the Censimento (1964, Google Books seEYGFQqM1kC) search 'GC, 137, c. 13': the single hit, p. 48, is an Anziani/Bentivoglio line, not this strip. So no edition known to me prints c. 13r, deciphered or not.",
+   "literature": "Web searches for Manus/BNCF inventory text and for Mallett's Lettere VI found only the BNCF topographic inventory (which sends to Manus) and Simonetta's Montefeltro Conspiracy (a different letter); no study of this biglietto."
+  },
+  "key_check": "No key tested here. Earlier (6 Nov, scratch tooling) c. 13r was transcribed to 263 tokens over 37 sign types and aligned against the clear strip c. 12r (BNCF0003827893, 261 letters: 'El conte Girolamo ha sollecitato l'andata di m. Ascanio a Roma ... el palavisino ... strasoldano ... ghibellini'): no consistent fit and no signal over unrelated Italian controls, so c. 12r is only a speculative possible contemporary clear, not a recorded decipherment.",
+  "key_held": "Florentine chancery key sheets on the same fund, Ginori Conti 29.114.a (Otto di Pratica, Dieci di Balia, BNCF), and the ASF Florentine keys on DECODE: possible fit, not tested on this strip.",
+  "duplicates": "known.py 'Ginori Conti', '29.137', 'Michelozzi': no catalogue entry or target for c. 13r; catalogue entry for Ginori Conti 29.104 (Alamanni 1492, cc. 5r-6v) is a different document in the same fund.",
+  "verdict": "open",
+  "searches": [
+   {
+    "query": "\"Ginori Conti 29.137\" biglietto cifrato Lorenzo de' Medici Michelozzi 1481",
+    "result": "No match for 29.137 or a cipher biglietto; only the BNCF topographic inventory stating the Michelozzi papers of Ginori Conti 29 are described in Manus Online, and unrelated Morgan/Pazzi catalogue items."
+   },
+   {
+    "query": "Lorenzo de' Medici Lettere VI 1481-1482 \"scrittura cifrata\" biglietto Michelozzi cifra decifrata Biblioteca nazionale centrale Ginori Conti",
+    "result": "Only the Lettere VI publisher listing, a Warwick prosopography of Michelozzi (Siena mission 1482) and Simonetta's Montefeltro Conspiracy; nothing printing or deciphering a Ginori Conti 29.137 strip."
+   },
+   {
+    "query": "DECODE Medici Lorenzo 1481 cipher Michelozzi Girolamo Riario ciphertext decipherment Florence Ginori Conti",
+    "result": "Returned only the Simonetta/Montefeltro decipherment story (a 1470s Montefeltro letter) and Michelozzi's Aug 1481 Forli mission; no decipherment of the c. 13r strip."
+   },
+   {
+    "query": "Censimento delle lettere di Lorenzo di Piero de' Medici (Google Books seEYGFQqM1kC) search \"GC, 137, c. 13\"",
+    "result": "One page, p. 48, matching an Anziani/Bentivoglio line (ASL/ASF refs), not a Ginori Conti 137 c. 13 entry; so no Censimento listing for this strip."
+   }
+  ],
+  "note": "Open with one caveat: c. 12r is a clear biglietto of the same bundle and may be the contemporary clear of c. 13r (similar length), untested beyond a failed alignment; a read of it would make this lead read-with-adjacent-plaintext rather than ciphertext-only."
+ },
+ "2219": {
+  "unvetted": "Chrome pass 6 Nov 2026 (tc05): Teleki Mihaly levelezese VIII (Gergely 1926) nos. 266 and 283 still not readable. HathiTrust catalog record 001966355 (Chrome, no Cloudflare challenge this time) lists every volume incl. v.8 as 'Limited (search only)' (no page text from here); Google Books FjzUAAAAMAAJ is snippet-only (Indiana copy); the REAL-EOD search for the title returned no Teleki volume in its first page; REAL-J holds Magyar Tortenelmi Tar but not the Teleki letters. New prior-art point: Hegedus Gyula, Nyelvvilag 23 (2020) pp. 60-65 says the edition's editors did not solve the number cipher and works only on the Jan 1678 letter (Gergely 1926 p. 40, catalogue 2218), concluding the 1666 key does not fit; it does not touch the 10 Oct 1678 Teleki to Rhedey letter. Lang 2015 p. 292 C.Tel.30 'szamok, valoszinuleg homof., megfejtetlen'. The ciphertext on pp. 291-292 has not been seen, so no open verdict. Would unblock it: a library copy or Arcanum ADT view of VIII pp. 290-292."
+ },
+ "2220": {
+  "unvetted": "Chrome pass 6 Nov 2026 (tc05): Teleki Mihaly levelezese II (1906) no. 417, pp. 614-616 still unreadable. HathiTrust catalog record 001966355 shows v.2 as 'Limited (search only)', Google Books PI7RAAAAMAAJ is snippet-only (heading on p. 614 only), REAL-EOD and REAL-J do not carry the Teleki volumes, archive.org has none. Lang 2015 p. 278 row C.Tel.81 (checked in the thesis PDF this pass): 'magyar | megfejtetlen | reszleges' for Teleki to Kaszoni 24 Sep 1663, system not stated; the neighbouring C.Tel.79 (Teleki 2 pp. 578-579) is 'a szovegkiadas megfejtve kozli'. Whether the edition prints digits, signs or only a placeholder for 417 is unknown, so ciphertext not seen. Would unblock it: a library copy or Arcanum ADT view of Teleki II pp. 614-616."
+ },
+ "2221": {
+  "unvetted": "Chrome pass 6 Nov 2026 (tc05): Teleki Mihaly levelezese IV (1908) no. 309, pp. 422-426 still unreadable. HathiTrust catalog record 001966355 lists v.4 as 'Limited (search only)', Google Books dY_RAAAAMAAJ/cnDAdxVEDSgC are snippet-only, not on REAL-EOD/REAL-J or archive.org. Lang 2015 repertory p. 281 C.Ken.01 'magyar, megfejtetlen, reszleges' and p. 139 n. 42 cites the letter among clear letters that carry a short enciphered address or name note, and the earlier Chrome pass found the letter itself ends on p. 424, so the cipher is probably a few groups, not five pages. No ciphertext seen, so no open verdict. Would unblock it: a library copy or Arcanum ADT view of Teleki IV pp. 422-426."
+ },
+ "2222": {
+  "unvetted": "Held back by the session, not for lack of ciphertext: p. 221 of Teleki I prints only four bare code groups plus one or two enciphered words (the agent re-read it in Chrome, 6 Nov 2026), too little to be a catalogue entry on its own; the agent's own recommendation is to fold it into a Teleki cluster. Her 1659 letter (Teleki I no. 354) is the stronger lead and is not in leads.json. Verdict would be open if the user wants it listed."
+ },
+ "2224": {
+  "unvetted": "Edition opened this pass: the full 1906 volume of Magyar Tortenelmi Tar (4th series, vol. 7) is free on REAL-J (real-j.mtak.hu/4115, MagyarTortenelmiTar_1906_54_4_07.pdf, downloaded to scratch and read). Komaromy's Kerecsenyi letters (pp. 130-132 and 249) print the signs only as the editor's placeholder: '(titkos jel)' occurs 2x in no. 25 (18 Sep 1555), 2x in no. 26 (23 Sep, e.g. 'az teb (titkos jel) kirol', 'jol erti (titkos jel)'), 2x in no. 27 (26 Sep, 'az egesz orszag (titkos jel) tebbet irnek, de (titkos jel)') and 1x in no. 36 (Celje, 7 May 1556, 'ha (titkos jel)'), seven single signs in all, no number groups and no decipherment printed. So the cipher survives only as a few sign-words in the originals (MNL OL E 185, Nadasdy archive), not seen or digitised here; Lang 2015 p. 248 C.Ker.01 'magyar jelek, megfejtetlen, reszleges'. Too little and not visible: no open verdict. Would unblock it: scans of the four MNL originals."
+ }
+}
