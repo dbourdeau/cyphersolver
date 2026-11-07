@@ -24,7 +24,7 @@ done, and search with `research/archive_sweep_2026-10/known.py` before starting.
 | Romania | Cluj, Sibiu | Only the DECODE-sourced shelfmarks |
 | Hungary, Slovakia | MNL; Slovak archives (no item-level portal found 6 Nov 2026) | Only through other sweeps |
 | Italian state archives | Turin and Genoa swept to the limit of what is online (6 Nov 2026, `sweep_2026-11_turin_chrome`; catalogue 2360, 2363-2365 promoted): the ASTo diplomatic series (Lettere Ministri) and the ASGe Archivio Segreto ministers' series are mazzo-level only and not digitised, so what is left needs the reading rooms or photo orders | `sweep_2026-11_turin_chrome` |
-| Italian state archives | Naples, Palermo | Shelfmarks, but no sweep of the archives themselves |
+| Italian state archives | Naples, Palermo | Swept 6 Nov 2026 (`sweep_2026-11_naples_palermo`): the archives' own hosts (ASNa TLS reset, Palermo SAASSIPA timeout, digital library no DNS) do not answer from this machine; Archivi Nazionali has no ASNa units; Palermo inventory PDFs read through Wayback (about 170 of 892). Not done: the other ~720 Palermo PDFs, the Palermo digital library, PARES Naples/Sicily viceroy items (`pares_ags/hits.jsonl`) |
 | German libraries | Wolfenbüttel HAB (Extravagantes; `diglib.hab.de` resets from this network, printed Heinemann catalogue grepped in `sweep_2026-11_german_portals_2`) | Almost nothing |
 | Other | Africa | Little or nothing |
 
@@ -138,3 +138,17 @@ Folders: `sweep_2026-11_A_halfdone`, `sweep_2026-11_B_unswept_south`, `sweep_202
 - **DigiVatLib** (`sweep_2026-11_digivatlib`): answers curl again with a browser User-Agent, cookie and Referer; the BAV OPAC
   (`opac.vatlib.it/mss/search`) indexes undigitised volumes too. Not reached: Barberini, Ottoboni and Chigi letter volumes with
   no item-level description.
+
+## Sweeps of 6 Nov 2026 (afternoon: Naples/Palermo, Archivi Nazionali digitised, DigiVatLib letters)
+
+- **Archivi Nazionali, digitised only** (`sweep_2026-11_an_digitised`): the filter is `&oggetti-digitali-un=on` on the unit search (exact-token match;
+  `true`/`1` ignored; it also passes parents that only have digitised descendants, so `data-uuid-manifest` on the record is the real test).
+  About 90 term runs gave 131 cipher-type units, 0 rows; the digitised ones are key sets (Trento Madruzzo, 17 keys), the Corriere italiano codebook
+  and Torino 1913-19 telegrams with transcriptions. Diplomatic series (ASVe Miscellanea turchi, Collegio/Senato Secreti, Genoa Archivio Segreto,
+  Milan Sforza) are digitised but need page-by-page work: the portal searches description text only.
+- **DigiVatLib letter volumes** (`sweep_2026-11_vatlib_letters`): 0 rows. Barb. lat. 9914-9915 "Cifre antiche" are undigitised keys; Chig. A.I.8, 20-22, 25
+  sampled and clear; Barb. lat. 9848 has "Cifre e decifrati". Manifest probing at 1 s intervals triggered a 15-minute 429: probe at 3 s or slower.
+  Not reached: Barb. lat. 6000-9800 undescribed volumes, Chig. A.I.35-60, Ott./Urb./Ross./Ferr. letter volumes.
+- **Naples/Palermo** (`sweep_2026-11_naples_palermo`): leads 2397 (Maria Carolina, private collection, partial decodification noted) and 2398 (ASPa Misc. Arch. II n. 262);
+  neither is vetted or promotable yet (2397 has a partial decodification of unknown extent; 2398 has no known access).
+- **PARES Naples/Sicily viceroy items** (`sweep_2026-11_pares_naples`): ten Estado Genoa items opened; 0 rows (clear, "descifrada" copies, or already inside catalogue 755 / `genes1643`; 3598,222/223 is a plain/cipher pair in the 1643 Genoa key family). Not opened: Osuna (Albornoz), Santa Cruz and Frías PARES hits.
