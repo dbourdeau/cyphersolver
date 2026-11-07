@@ -58,3 +58,14 @@ shuffled in order: 9.41, 9.08, 9.05, 9.14 M. Real beats every shuffle, z about 2
 NOT proven (run-to-run spread about 0.1 M, and shuffled text also yields Italian-looking fragments such as "questa", "altrimente").
 Fragments in the real decryption ("consilio", "mostra", "per", "persone") are not evidence on their own. Next: fix cluster
 errors, add R5459, R5463-R5465 (same family F) for power, test with a held-out check, treat "/" as a separate token.
+
+## 6 Nov 2026 (late): pooled clustering of family F, F2 solve, entry split
+`signreader.py extract` now processes any page (pitch-aware line finder, tracked and straightened strips); `pool.py` and
+`f2tokens.py` pool glyphs across pages. Results: R5464 and R5465 share clusters (about 40-60% each) and are one hand (F2, about
+4,100 signs on their first leaves); R5463 has its own clusters (59-73% of several come from it); R5459 and R5460 share with each
+other. Catalogue 2404 therefore keeps R5459+R5460 (F1) and gains 2409 (R5464, R5465) and 2410 (R5463).
+F2 through the CTTS Italian solver (5-grams, 4 homophones, 180 s): real 3.35 M, shuffled tokens 3.53 M, i.e. no language signal.
+Repeat test independent of the solver (3-, 4-, 5-gram repeats, real against shuffled, n = 20-300 clusters): real about equals
+shuffled everywhere. So either the clusters are too noisy or the key spreads each letter over many homophones. The earlier
+R5460 z of about 2.7 should be read as inconclusive. Not done: a held-out check (nothing to hold out while no key candidate
+passes), cluster errors still unmeasured (no hand-labelled ground truth).

@@ -32,17 +32,22 @@ def rotate(img, a):
     M = cv2.getRotationMatrix2D((w / 2, h / 2), a, 1)
     return cv2.warpAffine(img, M, (w, h), flags=cv2.INTER_LINEAR, borderValue=0 if img.ndim == 2 and img.max() == 255 and img.dtype == np.uint8 and False else 0)
 
-def find_lines(ink):
+def find_lines(ink, rel=0.25):
     prof = ink.sum(1).astype(float) / 255
     k = np.ones(25) / 25
     prof = np.convolve(prof, k, 'same')
     n = len(prof)
-    thr = prof.max() * 0.25
-    pk = [y for y in range(n) if prof[y] == prof[max(0, y - 30):min(n, y + 31)].max() and prof[y] > thr]
-    # merge peaks closer than 40 px
+    # line pitch from the autocorrelation of the profile
+    p0 = prof - prof.mean()
+    ac = np.correlate(p0, p0, 'full')[n - 1:]
+    lo, hi = 35, 200
+    pitch = lo + int(np.argmax(ac[lo:hi]))
+    win = max(15, int(pitch * 0.45))
+    thr = prof.max() * rel
+    pk = [y for y in range(n) if prof[y] == prof[max(0, y - win):min(n, y + win + 1)].max() and prof[y] > thr]
     out = []
     for y in pk:
-        if out and y - out[-1] < 40: continue
+        if out and y - out[-1] < 0.6 * pitch: continue
         out.append(y)
     return out, prof
 
@@ -56,7 +61,7 @@ if __name__ == '__main__':
     cv2.imwrite(os.path.join(outdir, 'ink.png'), ink)
     cv2.imwrite(os.path.join(outdir, 'gray.png'), g)
     ys, prof = find_lines(ink)
-    print('lines', ys, [ys[i + 1] - ys[i] for i in range(len(ys) - 1)])
+    print('pitch-lines', len(ys), 'lines', ys, [ys[i + 1] - ys[i] for i in range(len(ys) - 1)])
     json.dump(dict(angle=a, lines=ys), open(os.path.join(outdir, 'lines.json'), 'w'))
 
 def track_line(ink, y0, half=70, win=240, step=60):
@@ -216,3 +221,44 @@ def cluster(outdir, lines, thr):
 
 if __name__ == '__main__' and sys.argv[1] == 'cluster':
     cluster(sys.argv[3], [int(v) for v in sys.argv[4].split(',')], float(sys.argv[5]))
+
+import pickle
+
+def extract_page(png, outdir, tag, half=70):
+    """lines.json + ink/gray from `lines` -> list of glyph records (with masks) pickled to outdir/glyphs.pkl"""
+    ink = cv2.imread(os.path.join(outdir, 'ink.png'), 0)
+    lj = json.load(open(os.path.join(outdir, 'lines.json')))
+    ys = lj['lines']
+    pitch = float(np.median(np.diff(ys))) if len(ys) > 1 else 110.0
+    jump = int(max(12, 0.4 * pitch))
+    recs = []
+    for li, y in enumerate(ys):
+        c = track_line_j(ink, y, jump)
+        si = straighten(ink, c, half)
+        comps, lab = segment_strip(si)
+        for k, (x, yy, w, h, a, ids) in enumerate(comps):
+            m = glyph_mask(lab, ids, x, yy, w, h)
+            recs.append(dict(page=tag, line=li + 1, k=k, x=int(x), y=int(yy), w=int(w), h=int(h), mask=m, feat=feat(m)))
+    pickle.dump(recs, open(os.path.join(outdir, 'glyphs.pkl'), 'wb'))
+    print(tag, 'lines', len(ys), 'pitch', pitch, 'glyphs', len(recs))
+
+def track_line_j(ink, y0, jump, win=240, step=60):
+    h, w = ink.shape
+    xs = list(range(0, w - win, step)) + [w - win]
+    mid = len(xs) // 2
+    order = list(range(mid, len(xs))) + list(range(mid - 1, -1, -1))
+    res = {}; cur = y0
+    for k, i in enumerate(order):
+        if k == len(xs) - mid: cur = res[mid]
+        x = xs[i]
+        a0 = max(0, int(cur) - jump)
+        sub = ink[a0:int(cur) + jump + 1, x:x + win].sum(1).astype(float)
+        sub = np.convolve(sub, np.ones(9) / 9, 'same')
+        if sub.max() > 0: cur = a0 + int(np.argmax(sub))
+        res[i] = cur
+    cx = [xs[i] + win / 2 for i in range(len(xs))]
+    cy = [res[i] for i in range(len(xs))]
+    return np.interp(np.arange(w), cx, cy)
+
+if __name__ == '__main__' and sys.argv[1] == 'extract':
+    extract_page(sys.argv[2], sys.argv[3], sys.argv[4])
