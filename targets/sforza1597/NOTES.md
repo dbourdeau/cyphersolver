@@ -47,3 +47,14 @@ neighbours; boxes merged two to five signs. Lines were cut by an ink-projection 
 usable token transcription (about 330 signs, about 30 shapes, with the tall slash either part of a sign or a word mark) is a
 manual job; no tokens exist yet and no solver has been run. Do not treat R5460 as attempted-and-failed: it is not yet attempted
 as a solve.
+
+## 6 Nov 2026 (night): own sign reader + CTTS solver on R5460, first signal
+`signreader.py` (this folder): deskew, track and straighten each text line, segment glyphs (connected components merged by x
+overlap, neighbour-line fragments and specks dropped), cluster by shape (28x28 blurred bitmap + aspect, Ward, 45 clusters). On
+R5460 it finds 374 glyphs in lines 1-8; the cluster montages are mostly coherent (8, #, ff, infinity, o-bar-o, tt, T, two
+slash families, b-bar ...), with some mixing (b/d/h, 9/1/p-tail). `ctts/r5460_tokens_v1.txt` holds the tokens.
+CTTS solver (ITALIAN, 5-grams, max 4 homophones, 120 s): real tokens 9.54 M (first run 9.65 M); four runs on the same tokens
+shuffled in order: 9.41, 9.08, 9.05, 9.14 M. Real beats every shuffle, z about 2.7: suggestive of Italian under the clusters but
+NOT proven (run-to-run spread about 0.1 M, and shuffled text also yields Italian-looking fragments such as "questa", "altrimente").
+Fragments in the real decryption ("consilio", "mostra", "per", "persone") are not evidence on their own. Next: fix cluster
+errors, add R5459, R5463-R5465 (same family F) for power, test with a held-out check, treat "/" as a separate token.
