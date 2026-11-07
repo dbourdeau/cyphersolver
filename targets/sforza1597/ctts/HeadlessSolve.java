@@ -26,6 +26,13 @@ public class HeadlessSolve {
         CryptanalysisParameters p = new CryptanalysisParameters(lang);
         p.ngrams = ngrams;
         p.maxHomophones = maxHom;
+        if (a.length > 6) {
+            for (String row : Files.readAllLines(Paths.get(a[6]), StandardCharsets.UTF_8)) {
+                String[] kv = row.trim().split("=");
+                if (kv.length == 2) p.lockedHomophones.put(kv[0].trim(), kv[1].trim());
+            }
+            p.ignoreCurrentKey = false;
+        }
         p.readTokens();
         p.referenceSequences();
         Cryptanalysis.solve(toks, p, 8);

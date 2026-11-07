@@ -88,3 +88,16 @@ F2 result (no signal) was produced by the same bug.
 a nomenclator or syllabic key (the cart. 1597 keys have syllable tables and word signs), a language other than Italian or Latin.
 Next for F2: split the mixed clusters, test a syllabic hypothesis (pairs of signs as units), compare the repeated 4-grams with the
 syllable tables of the geometric keys.
+
+## 6 Nov 2026 (night, later): F2 splits again; R5464 converges
+Simulation (3,788 Italian letters, 60 signs, 0/8/15 % mis-read signs, CTTS solver 240 s): scores 13.8 / 10.5 / 8.2 M, accuracy
+86 / 79 / 75 % (limited by the 4-homophone cap). The pooled F2 score (4.26 M) was far below even the 15 % case, so noise alone did not
+explain it. Cluster-share cosines between leaves: R5465 P1/P2 0.94, R5464 P1/P2 0.86, R5464 vs R5465 only 0.46-0.63. So R5464 and
+R5465 are different alphabets and pooling them mixed two keys. Run separately (5 homophones, 300 s, real vs shuffled tokens):
+R5464 (P1+P2, 3,198 signs) 6.68 M vs 4.06 M (ratio 1.65); R5465 (P1+P2, 5,737 signs) 4.61 M vs 3.49 M (1.32).
+R5464 decryption: 36 Italian dictionary words of 5+ letters against 10 in the shuffled run ("impedito", "venire", "rotto", "certa",
+"senti"); variants (45 / 80 clusters, 6-grams, 6 homophones) keep finding "venire", "della", "etiam", "amici", "tornare", "havea".
+The solver locked 11 single-sign letters after matching 12-letter stretches of the Italian corpus. Three runs on the same tokens
+agree on 40 of 60 cluster-to-letter assignments (chance would be about 1 in 20 each): `ctts/lock64_v1.txt`. HeadlessSolve now takes a
+lock file (cluster=letter) so the key can be refined the way Lasry does in the GUI. Status: R5464 partly decoded, not read.
+Also note: the pencil stamps show R5464 P1 and P2 may be two separate letters (nos. 158/159 vs 165); not yet checked.
