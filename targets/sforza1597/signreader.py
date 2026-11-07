@@ -277,7 +277,10 @@ if __name__ == '__main__' and sys.argv[1] == 'extract':
     extract_page(sys.argv[2], sys.argv[3], sys.argv[4])
 
 # ---- v2: keep diacritic dots / small strokes and attach them to their sign ----
-def segment_strip2(ink_strip, big_area=70, attach_dx=10, attach_dy=34):
+def segment_strip2(ink_strip, big_area=None, attach_dx=10, attach_dy=34):
+    import os as _o
+    big_area = int(_o.environ.get('SR_BIGAREA', 70)) if big_area is None else big_area
+    ovl = float(_o.environ.get('SR_OVERLAP', 0.4))
     n, lab, st, cen = cv2.connectedComponentsWithStats(ink_strip, 8)
     H = ink_strip.shape[0]
     big, small = [], []
@@ -299,7 +302,7 @@ def segment_strip2(ink_strip, big_area=70, attach_dx=10, attach_dy=34):
                 a, b = comps[i], comps[j]
                 if b[0] > a[0] + a[2]: break
                 ov = min(a[0] + a[2], b[0] + b[2]) - b[0]
-                if ov >= 0.4 * min(a[2], b[2]):
+                if ov >= ovl * min(a[2], b[2]):
                     x0 = min(a[0], b[0]); y0 = min(a[1], b[1]); x1 = max(a[0] + a[2], b[0] + b[2]); y1 = max(a[1] + a[3], b[1] + b[3])
                     comps[i] = [x0, y0, x1 - x0, y1 - y0, a[4] + b[4], a[5] + b[5]]; del comps[j]; merged = True; break
             if merged: break
