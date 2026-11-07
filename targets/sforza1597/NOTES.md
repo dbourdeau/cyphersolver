@@ -161,3 +161,5 @@ Open: read the Tavole of that inventory and compare with the four alphabets; han
   amici, molto, rima, dio); no sentence reads. The corpus file is derived from lang/corpora (git-ignored) and is rebuilt by the two lines in this note.
 Conclusion for R5464: key partly right (families check), text not readable with the signs as read (about 10 % errors) and a solver without doubles,
 nulls or word signs. A full reading needs hand correction in the CTTS GUI.
+- Latin-only corpus (la-latlib-letters + 5 MB la-gutenberg) on R5464 v2 tokens: 14.18 M against 9.42 M shuffled (ratio 1.51), below the period Italian corpus (1.67) and the generic Italian one: the language is Italian (with Latin words in the chancery manner), not Latin.
+- Cloudflare "Verify you are human" appeared on the Naples inventory PDF (iris.unina.it) on 7 Nov; not clicked (policy). The Chrome tab is left open on it; once a person clears the box the Tavole (pp. ~340-363) can be read from screenshots (page box accepts a number).
