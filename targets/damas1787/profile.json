@@ -113,6 +113,24 @@
    ],
    "what": "463 groups read; 4 numbers unresolved.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-07",
+   "kind": "sibling key",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Searched every key table of the same cipher in the repository (bouille1778/key.tsv, grassebouille1779/key.tsv, martinique1778/key_bouille.tsv, tentative.tsv, validation.tsv) for the 16 open numbers. 269, 686 and 190 have no value in any of them. 464 = ar is attested but gives no sense here. 493 = chacun appears only in the Grasse-Bouille key, from the sense of 'cent chacun', not from a gloss. 300, 741 and 831 have values only in grassebouille1779/key_codeM_K6.tsv, a different cipher (code M, 'cipher of 1777'), so they do not apply. 762 occurs once in martinique1778 f. 19 as an unresolved '[762]' in 'exis-[762]-es'. No restored word could be raised to probable.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-07",
+   "kind": "literature search",
+   "technique": [
+    "other"
+   ],
+   "what": "Web search (7 Nov 2026) for a printed or online decipherment of the governor Damas's cipher letter of 2 November 1787 (ANOM COL C8 B 16 no. 61): nothing found; the only Damas hits concern 1790-91 (Hamilton College collection, a letter of La Luzerne of 12 June 1790).",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -169,13 +187,13 @@
   "gaps": [
    {
     "item": "codes 269, 464, 686, 190 (4 words, each once)",
-    "blocker": "open-codes",
-    "detail": "not glossed in K6"
+    "blocker": "no-key-material",
+    "detail": "not glossed in K6; no sibling key, print or DECODE record attests it (searched 7 Nov 2026), and a number that occurs once cannot be rebuilt from the text"
    },
    {
     "item": "12 words restored from the sense",
-    "blocker": "open-codes",
-    "detail": "numbers not attested in K6, forced by the syntax"
+    "blocker": "no-key-material",
+    "detail": "numbers not attested in K6, forced by the syntax; no sibling key, print or DECODE record attests it (searched 7 Nov 2026), and a number that occurs once cannot be rebuilt from the text"
    }
   ]
  }

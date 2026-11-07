@@ -38,15 +38,15 @@ Files: `transcription.txt`, `decryption.txt`, `reading.md`, `translation.md`, `k
 
 ## Remaining gaps
 
-- Codes 269, 464, 686 and 190 (4 words, each once) - blocker: open-codes; not glossed in the K6 key (464 = "ar" in a 1779 gloss gives no sense here)
-- The 12 words restored from the sense (guerre 300, Angleterre 741, tant 762, d' 808, lieu 644, et 244 four times, chacune 493.e, Tabago 831 twice) - blocker: open-codes; the numbers are not attested in K6 and are forced by the syntax
+- Codes 269, 464, 686 and 190 (4 words, each once) - blocker: no-key-material; not glossed in the K6 key (464 = "ar" in a 1779 gloss gives no sense here)
+- The 12 words restored from the sense (guerre 300, Angleterre 741, tant 762, d' 808, lieu 644, et 244 four times, chacune 493.e, Tabago 831 twice) - blocker: no-key-material; the numbers are not attested in K6 and are forced by the syntax
 
 ## Escalation
 
 - [x] siblings: the neighbouring leaves of COL C8 B 16 (the store return of 1 November and Foulquier's letter of 12 November) are in clear; no decipherment on the images or the neighbouring leaves
 - [x] clear-pages: same leaves; nothing that deciphers the cipher part
 - [x] known-keys: the margin names the "Chiffre du 25 avril 1778"; K6 of targets/bouille1778 covers 92% of the groups and was validated on Bouillé no. 415 (0.894 of words)
-- [n/a] print: the NOTES say only "first published decipherment, to our knowledge" and "nothing in Daniel Bourdeau's repository"; no search of printed editions is recorded
-- [n/a] key-rebuild: K6 was used frozen; no extension of the key is recorded in the NOTES
-- [n/a] retry: no retry of the unread groups with an extended key is recorded in the NOTES
+- [x] print: web search 7 Nov 2026 for a printed or online decipherment of this letter (ANOM COL C8 B 16 no. 61, 2 Nov 1787): nothing; the only Damas hits concern 1790-91; not in DECODE (not in the catalogue)
+- [x] key-rebuild: 7 Nov 2026, every key table of this cipher in the repository was searched for the 16 open numbers (bouille1778, grassebouille1779, martinique1778). 269, 686 and 190 have no value anywhere; 464 = ar gives no sense here; 493 = chacun is attested only from the sense of 'cent chacun' in the Grasse-Bouille letter, not from a gloss, so chacune stays restored; 300, 741 and 831 have values only in grassebouille1779's code M, a different cipher; 762 is itself unresolved in martinique1778 f. 19. No restored word could be raised to probable
+- [x] retry: nothing to retry with: the cross-check above gives the unread groups no new value, so the count stays at 286 of 302 (94.7%), one word short of the 95% bar
 
