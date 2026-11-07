@@ -142,7 +142,7 @@ def segment_strip(ink_strip, min_area=35, overlap=0.4):
     keep = []
     for c in comps:
         cy = c[1] + c[3] / 2
-        if abs(cy - H / 2) > 40 and c[3] < 0.75 * H: continue   # fragment of a neighbouring line
+        if abs(cy - H / 2) > 0.29 * H and c[3] < 0.75 * H: continue   # fragment of a neighbouring line
         if c[4] < 70 and c[3] < 22 and c[2] < 22: continue      # specks
         keep.append(c)
     return keep, lab
@@ -231,18 +231,24 @@ def extract_page(png, outdir, tag, half=70):
     ys = lj['lines']
     pitch = float(np.median(np.diff(ys))) if len(ys) > 1 else 110.0
     jump = int(max(12, 0.4 * pitch))
+    half = int(min(half, round(0.55 * pitch)))
     recs = []
+    centers = []
     for li, y in enumerate(ys):
-        c = track_line_j(ink, y, jump)
+        fl = (centers[-1] + 0.6 * pitch) if centers else None
+        c = track_line_j(ink, y, jump, floor=fl)
+        if centers and np.mean(np.abs(c - centers[-1])) < 0.35 * pitch:
+            print('duplicate line dropped', li + 1); continue   # tracker landed on the previous line
+        centers.append(c)
         si = straighten(ink, c, half)
         comps, lab = segment_strip(si)
         for k, (x, yy, w, h, a, ids) in enumerate(comps):
             m = glyph_mask(lab, ids, x, yy, w, h)
-            recs.append(dict(page=tag, line=li + 1, k=k, x=int(x), y=int(yy), w=int(w), h=int(h), mask=m, feat=feat(m)))
+            recs.append(dict(page=tag, line=len(centers), k=k, x=int(x), y=int(yy), w=int(w), h=int(h), mask=m, feat=feat(m)))
     pickle.dump(recs, open(os.path.join(outdir, 'glyphs.pkl'), 'wb'))
     print(tag, 'lines', len(ys), 'pitch', pitch, 'glyphs', len(recs))
 
-def track_line_j(ink, y0, jump, win=240, step=60):
+def track_line_j(ink, y0, jump, win=240, step=60, floor=None):
     h, w = ink.shape
     xs = list(range(0, w - win, step)) + [w - win]
     mid = len(xs) // 2
@@ -255,6 +261,7 @@ def track_line_j(ink, y0, jump, win=240, step=60):
         sub = ink[a0:int(cur) + jump + 1, x:x + win].sum(1).astype(float)
         sub = np.convolve(sub, np.ones(9) / 9, 'same')
         if sub.max() > 0: cur = a0 + int(np.argmax(sub))
+        if floor is not None: cur = max(cur, floor[int(x + win / 2)])
         res[i] = cur
     cx = [xs[i] + win / 2 for i in range(len(xs))]
     cy = [res[i] for i in range(len(xs))]

@@ -69,3 +69,22 @@ Repeat test independent of the solver (3-, 4-, 5-gram repeats, real against shuf
 shuffled everywhere. So either the clusters are too noisy or the key spreads each letter over many homophones. The earlier
 R5460 z of about 2.7 should be read as inconclusive. Not done: a held-out check (nothing to hold out while no key candidate
 passes), cluster errors still unmeasured (no hand-labelled ground truth).
+
+## 6 Nov 2026 (night): reader fixed, family A and F2 tested, no reading
+**Correction.** The 'strong repeats' in family A (42 repeated 8-sign strings, none in shuffles) were an artifact: the line tracker
+followed one line twice (R5425 lines 17-18, R5427 lines 2-4, R5429 lines 18-19), and on dense pages (pitch 55-70 px at 330 dpi)
+the strips were taller than the line spacing, so glyphs merged across lines (median glyph height 123 px). Fixed in `signreader.py`:
+strip half-height = 0.55 x pitch, each tracked line floored 0.6 pitch below the previous one, duplicate lines dropped. The earlier
+F2 result (no signal) was produced by the same bug.
+**After the fix** (`repeats.py`: repeated k-gram counts of the token stream, real against shuffled order):
+- Family A (R5425-R5430, tiny hand, glyphs about 17 x 23 px at 330 dpi): real equals shuffled, no sequence structure; the reader fails
+  on this hand (fragments in the clusters); needs a higher-dpi render and a finer segmenter before any test means anything.
+- F2 (R5464, R5465, 3,788 glyphs, 60 clusters): 3-gram repeats 183 vs 60 (shuffled), 4-gram 12 vs 2; at 90 clusters 106 vs 27 and 5 vs 1.
+  Real sequence structure. Hand check of 15 clusters (16 glyphs each): about 88 % pure, two mixed clusters (arc/L/q and a misc one).
+- CTTS solver on F2, 240 s, real vs shuffled tokens: Italian 4 homophones 4.26 M vs 3.53 / 3.57 M; Latin 4.42 vs 3.69 M; Italian 6
+  homophones 4.91 vs 4.01 M. A steady +20 % in both languages, which points to generic repetition structure, not to one language.
+  Decryptions are not readable; dictionary-fragment counts are close to the shuffled ones (89 vs 56 for Italian 6).
+**Status of F2:** sequence structure present, language not identified, no reading. Possible reasons: sign errors (about 12 %),
+a nomenclator or syllabic key (the cart. 1597 keys have syllable tables and word signs), a language other than Italian or Latin.
+Next for F2: split the mixed clusters, test a syllabic hypothesis (pairs of signs as units), compare the repeated 4-grams with the
+syllable tables of the geometric keys.
