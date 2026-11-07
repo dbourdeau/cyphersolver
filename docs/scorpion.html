@@ -7,7 +7,7 @@
 <meta name="description" content="The two public Scorpion ciphers of 1991, S1 (70 symbols, 53 distinct) and S5 (180 symbols, 145 distinct). Every S5 repeat falls at a multiple of 16 and S1 shows a weak period-5 signal." data-full="The two public Scorpion ciphers of 1991, S1 (70 symbols, 53 distinct) and S5 (180 symbols, 145 distinct). Every S5 repeat falls at a multiple of 16 and S1 shows a weak period-5 signal. Both carry more key information than the English behind them can determine, so no key was recovered, and none can be from the published text alone. A matched control and a test of the 2018 forum solution show why fluent output proves nothing here.">
 <link rel="stylesheet" href="style.css?v=7fd9e8bc">
 <meta name="date" content="2026-09-15">
-<meta name="last-modified" content="2026-10-26">
+<meta name="last-modified" content="2026-11-07">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -55,7 +55,7 @@
   <p class="kicker">Letters to John Walsh, United States &middot; homophonic symbol cipher, S5 in 16 rotating alphabets &middot; 1991</p>
   <h1>The Scorpion letters S1 and S5, 1991</h1>
   <p class="sub">Two of the five cipher passages sent to John Walsh in 1991 are public, and in both the key holds more information than the English redundancy of the text, so no ciphertext-only attack can single out a plaintext. S1 was transcribed here in September 2026 and both ciphers were analysed; no key was recovered. The three claimed solutions on record (2007, 2016, 2018) are unverified.</p>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-15">15 September 2026</time> &middot; updated <time datetime="2026-10-26">26 October 2026</time> &middot; sources: Schmeh, Top 50 no. 12; Oranchak&rsquo;s scans; Pelling, Cipher Mysteries 2014&ndash;2018; the Cipher Foundation; zodiackillerciphers.com forum transcription of S5</p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-15">15 September 2026</time> &middot; updated <time datetime="2026-11-07">7 November 2026</time> &middot; sources: Schmeh, Top 50 no. 12; Oranchak&rsquo;s scans; Pelling, Cipher Mysteries 2014&ndash;2018; the Cipher Foundation; zodiackillerciphers.com forum transcription of S5</p>
 <p class="outcome">Method: <a href="glossary.html#notsolved">not solved</a> &middot; Extent: text not obtained</p><!-- /outcome -->
 <div class="seal stuck" aria-hidden="true"><span>not solved</span></div>
 </section>
@@ -153,7 +153,7 @@
 <blockquote><b>S1.</b> &ldquo;A picture in collection of people: Bagel Bob&rsquo;s Old Dairy Frothy Late Cofee. Pour action.&rdquo;<br>
 <b>S5.</b> &ldquo;I am sending other picture of people for the collection of recent hybrid genders with edge, kept from artistic fee, if person of age has to purchase pick of university uglies. Espresso NYP cofee forces a cold enema review.&rdquo;</blockquote>
 
-<p>A homophonic key maps each symbol to one letter, so the one hard test is that every repeated symbol decodes to the same letter wherever it occurs. <code translate="no">claimed.py</code> lays each plaintext over the transcription and checks this; <code translate="no">results_claimed.txt</code> holds the output.</p>
+<p>A homophonic key maps each symbol to one letter, so the one hard test is that every repeated symbol decodes to the same letter wherever it occurs. <code translate="no">claimed.py</code> lays each plaintext over the transcription and checks this; <code translate="no">results_claimed.txt</code> holds the output; that file, like the other result files cited here, is a local file that is not in the repository, so the figures that only it holds (the symbol counts for E, O and I below, the dictionary-coverage column and the alternative-filling scores) cannot be re-checked from the repository. The 5-gram scores of the two claimed texts and the reference passage are in NOTES.md.</p>
 
 <table>
 <tr><th>cipher</th><th class="n">repeated symbols</th><th class="n">consistent</th><th>conflicts</th></tr>
@@ -188,8 +188,8 @@ same 5-gram letter model used above:</p>
 <tr><td>the 2018 claim: a picture in collection of people bagel bobs old dairy frothy late cofee pour action</td><td class="n">&minus;2.74</td></tr>
 </table>
 <p>They are nonsense, they are English, and they fit the ciphertext at least as well as the claim. The corpus bias (Moby Dick) is
-visible and does not matter: any English word list yields such fillings. The S5 run was still in progress when this page was
-built; its output goes to <code translate="no">targets/scorpion/results_alternatives.txt</code>.</p>
+visible and does not matter: any English word list yields such fillings. The S5 run had not finished when this page was
+built; the output of the alternatives runs goes to <code translate="no">results_alternatives.txt</code>, a local file that is not in the repository.</p>
 
 <h2 id="status"><span class="num">05</span> Status, and what would change it</h2>
 
@@ -211,7 +211,7 @@ built; its output goes to <code translate="no">targets/scorpion/results_alternat
 <tr><td><code translate="no">targets/scorpion/s1.txt</code></td><td>S1, 70 descriptive symbol names in 7 rows of 10, uncertain identifications marked in the notes</td></tr>
 <tr><td><code translate="no">targets/scorpion/s5.txt</code></td><td>S5, the forum numeric sequence, symbols 1&ndash;145, wrapped at 16</td></tr>
 <tr><td><code translate="no">targets/scorpion/unicity.py</code></td><td>the unicity table and the matched controls; needs the English model built by <code translate="no">targets/copenhagen/solve.py</code></td></tr>
-<tr><td><code translate="no">targets/scorpion/claimed.py</code></td><td>the consistency test and 5-gram scores of the 2018 reading; output in <code translate="no">results_claimed.txt</code></td></tr>
+<tr><td><code translate="no">targets/scorpion/claimed.py</code></td><td>the consistency test and 5-gram scores of the 2018 reading; output in <code translate="no">results_claimed.txt</code> (a local file, not in the repository)</td></tr>
 <tr><td><code translate="no">targets/scorpion/alternatives.py</code></td><td data-term-ok>beam search filling each cipher with dictionary words under the same-symbol-same-letter rule, scored with the same model</td></tr>
 </table>
 
@@ -220,13 +220,13 @@ built; its output goes to <code translate="no">targets/scorpion/results_alternat
 <!-- replay:end -->
 <!-- cite:start -->
 <details class="cite" id="cite"><summary>Cite this page</summary>
-<p class="citetext">Daniel Bourdeau, “The Scorpion letters S1 and S5, 1991”, Cyphersolver, posted 15 September 2026, updated 26 October 2026, https://cyphersolver.com/scorpion.html.</p>
-<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau, “The Scorpion letters S1 and S5, 1991”, Cyphersolver, posted 15 September 2026, updated 26 October 2026, https://cyphersolver.com/scorpion.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-scorpion,
+<p class="citetext">Daniel Bourdeau, “The Scorpion letters S1 and S5, 1991”, Cyphersolver, posted 15 September 2026, updated 7 November 2026, https://cyphersolver.com/scorpion.html.</p>
+<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau, “The Scorpion letters S1 and S5, 1991”, Cyphersolver, posted 15 September 2026, updated 7 November 2026, https://cyphersolver.com/scorpion.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-scorpion,
   author = {Daniel Bourdeau},
   title = {The Scorpion letters S1 and S5, 1991},
   year = {2026},
   howpublished = {Cyphersolver},
-  note = {posted 15 September 2026, updated 26 October 2026},
+  note = {posted 15 September 2026, updated 7 November 2026},
   url = {https://cyphersolver.com/scorpion.html}
 }">Copy BibTeX</button></p>
 </details>

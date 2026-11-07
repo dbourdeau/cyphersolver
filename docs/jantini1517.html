@@ -72,8 +72,8 @@
 <dt>The document</dt><dd>Ciphered letters of Benedetto Fantini (catalogued as &ldquo;Jantini&rdquo;), Ferrara, 1517&ndash;18. Vestigia has the whole file, nos. 1&ndash;7 (1515&ndash;1518); only nos. 5 and 6 carry cipher.</dd>
 <dt>Where</dt><dd>Two DECODE records catalogued &ldquo;partially decrypted&rdquo;, which reflects the clear passages. None of the seven items has a gloss or a contemporary decipherment; pages 3&ndash;4 of R1126 hold a clear copy of the ciphered passage (identified 28 October 2026).</dd>
 <dt>The cipher</dt><dd>Same family as Giuliano Caprile&rsquo;s 1519 letters from the household: a base stroke with a small sign above, plus bracket signs. Caprile&rsquo;s letter of 1 May 1519 and its 1882 decipherment show it to be syllabic: small sign for the consonant, base for the vowel, brackets for whole syllables.</dd>
-<dt>How it was tried</dt><dd>Fantini&rsquo;s two cipher pages (1,370 columns) were run through a syllabary solver (simulated annealing). It recovers a control text of the same length and structure even with a tenth of its signs corrupted, but on Fantini produces no Italian, and Caprile&rsquo;s values make the fit worse.</dd>
-<dt>Still open</dt><dd>The text. It needs a key or decipherment from the Este chancery, or a paired letter in Fantini&rsquo;s own key.</dd>
+<dt>How it was tried</dt><dd>Fantini&rsquo;s two cipher pages (1,370 columns) were run through a syllabary solver (simulated annealing). It recovers a control text of the same length and structure even with a tenth of its signs corrupted, but on Fantini produces no Italian, and the twenty or so Caprile values tried at first made the fit worse (Dudout's later use of the full Caprile 1519 key, applied unchanged, fitted; see section 03).</dd>
+<dt>Still open</dt><dd>Dudout's reading of pages 1&ndash;2 reaches 415 of 492 words (84.3%, strict count, under the 95% bar); the 54 further words restored by sense are not counted. The transcription was checked on the images only for the signs [o], [9] and [t]. The text itself is not new, since pages 3&ndash;4 give it in clear. The first attempt here, from the ciphertext alone, did not read it.</dd>
 </dl>
 </div>
 
@@ -97,11 +97,11 @@
 <li><b>A syllabary annealer</b> (<code translate="no">syl_anneal.py</code>: consonant for each upper sign, vowel for each base, a syllable for each bracket, scored with a sixteenth-century Italian 5-gram model). On a control of 2,200 letters from sixteenth-century Italian, enciphered in the same structure with two homophones per consonant, it recovers the text almost word for word once three base values are fixed. It still does so with 10% of the signs corrupted.</li>
 <li><b>On Fantini</b>, eight restarts of 150,000 moves each, on the raw transcription and with the frequent pairs -/7 -/y and -/7 -/g merged as ligatures. The result is Italian-looking syllable salad that differs from restart to restart, scoring &minus;2.37 per letter against &minus;1.77 for the control&rsquo;s true key. Seeding Caprile&rsquo;s values drops the score from about &minus;140 to &minus;1,250.</li>
 </ul>
-<p>The solver recovers the syllabic control at this length and noise, so the search itself is sound. A later check read Fantini&rsquo;s roughly 290 brackets as word codes, as they are in Caprile&rsquo;s letter R1133. A control of that shape recovers only 7% of its text, so a ciphertext-only attack cannot decipher this letter at any transcription quality. Fantini&rsquo;s key is not Caprile&rsquo;s.</p>
+<p>The solver recovers the syllabic control at this length and noise, so the search itself is sound. A later check read Fantini&rsquo;s roughly 290 brackets as word codes, as they are in Caprile&rsquo;s letter R1133. A control of that shape recovers only 7% of its text, so a ciphertext-only attack cannot decipher this letter at any transcription quality. That check supposed that the key is not Caprile&rsquo;s, from the twenty or so values tried; Dudout&rsquo;s later full Caprile 1519 key, applied unchanged, ranks 1st of 201 against shuffled keys, so Fantini&rsquo;s cipher is in the Caprile family.</p>
 
 <h2 id="finish"><span class="num">04</span> What would finish it</h2>
 <ul>
-<li>A key or decipherment in the Este chancery (ASMo, Cancelleria, Cifrari), or a letter to or from Fantini with its decipherment.</li>
+<li>Still wanted: a key or decipherment in the Este chancery (ASMo, Cancelleria, Cifrari), or a letter to or from Fantini with its decipherment. Dudout's reading used the Caprile 1519 key and the clear copy on pages 3&ndash;4, and its probable words (125 of 492) rest on that copy.</li>
 <li>A better image of R1126 from ASMo for the faint upper signs. Page 1 was transcribed twice (90% agreement) and page 2 three times, with an estimated error of 2&ndash;3%; the pairing of small signs to bases is sometimes doubtful.</li>
 <li>R1127 is too short and too damaged to attack on its own.</li>
 </ul>

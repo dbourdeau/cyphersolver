@@ -32,7 +32,7 @@ for Henri IV's absolution. Catalogue task: apply Tomokiyo's Nevers cipher no. 46
 
 Cipher no. 46 is the key of the **two letters to Pisany** (fr. 3985 no. 116 = f. 209, 8 Sept; fr. 3986 no. 81 = f. 168,
 14 Oct) and of nothing else in the set. Every figure of both letters resolves in the key (122/122 and 268/269 tokens).
-The 8 September letter reads continuously; the 14 October letter reads in long stretches with some passages still
+Both letters decode with the key but neither reads: the 8 September letter (f. 209) was demoted to decoded, not read in verification 3 (23 Oct 2026), and the 14 October letter decodes in long stretches with some passages still
 garbled by the copyist's figures. The **five letters to Revol** were written in a different key, the Court's symbol
 cipher (Tomokiyo's no. 60, "Montreau, août 1593", fr. 3995 f. 108–110), as Tomokiyo's Henri IV article already says:
 the 27 August copy (fr. 3985 f. 113–114v) turned out to be entirely in clear, the 9 October copy (fr. 3986 f. 157v)

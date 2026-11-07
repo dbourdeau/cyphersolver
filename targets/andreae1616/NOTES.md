@@ -15,8 +15,8 @@ English editions have printed them in clear since Foxcroft's translation (1690).
 | Page | Where in the story | Kind | Reading |
 |---|---|---|---|
 | p. 73 (Day IV) | under the Hermes Princeps fountain inscription, after *BIBITE FRATRES, ET VIVITE* | line of alchemical/numeral signs | a date; 1378 in the crcsite.org edition (footnote 12), graded C here |
-| p. 95 (Day V) | the copper door to Venus's vault | letter cipher, 70 letters | HIE LIGT BEGRABEN VENUS DIE SCHON[E] FRAW SO MANCHEN HOHEN MANN UMB GLUCK EHR SEGEN UND WOLFART GEBRACHT HATT |
-| p. 97 (Day V) | the tablet behind Venus's bed | letter cipher, 86 letters | WAN DIE FRUCHT MEINES BAUMS WIRT VOLLENDS VERSCHMELZEN WERDE ICH AUFWACHEN UND EIN MUTER SEIN EINES KONIGS |
+| p. 95 (Day V) | the copper door to Venus's vault | letter cipher, 78 letters | HIE LIGT BEGRABEN VENUS DIE SCHON[E] FRAW SO MANCHEN HOHEN MANN UMB GLUCK EHR SEGEN UND WOLFART GEBRACHT HATT |
+| p. 97 (Day V) | the tablet behind Venus's bed | letter cipher, 90 letters | WAN DIE FRUCHT MEINES BAUMS WIRT VOLLENDS VERSCHMELZEN WERDE ICH AUFWACHEN UND EIN MUTER SEIN EINES KONIGS |
 | p. 116 (Day VI) | after *Anno* on the urn inscription | line of signs | a date; 1459 in the crcsite.org edition (footnote 21), graded C here |
 
 On p. 95, *VENUS* and *HOHEN* are printed in Roman capitals above the cipher line and are not enciphered.
@@ -30,7 +30,7 @@ vnd sein ein Mutter eines Königs" (p. 98).
 
 A simple substitution in an invented alphabet, cut as type: one sign per letter, words divided, no nulls or code, and
 one capital form (the initial H). U and V share a sign. M, N and O are three dotted variants of one base shape, so
-they are hard to tell apart at DECODE's resolution. The sign table is in `key.tsv`; it uses 19 distinct signs in 156
+they are hard to tell apart at DECODE's resolution. The sign table is in `key.tsv`; it uses 20 signs (21 stand-in characters with the capital H) in 168
 letters (`python docs/_check_profile.py --measure targets/andreae1616/ciphertext.txt --letters`). `ciphertext.txt` is the
 transcription in stand-in letters, and `decode.py` reproduces `reading.txt` from it. Every sign that occurs has a value.
 Only 20 letters of the German alphabet occur (no J, P, Q, X, Y). The alphabet is Andreae's own; no historical key is

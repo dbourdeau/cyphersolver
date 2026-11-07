@@ -11,8 +11,8 @@ Catalogue 276. BnF fr. 3157 ("Recueil de lettres et de pièces originales", Mont
 gentleman of the Agenais, a neighbour of the sieur de Fumel, dated 12 December 1560, a week after the death of
 François II. It is entirely in cipher, ten pages, 1,715 cipher words. It had no decipherment and no known key.
 The cipher was broken here from the ciphertext alone: a homophonic substitution with two-stroke units and four
-code words. The reading covers 1,696 of the 1,715 cipher words (98.9%). 108 words are read with a marked
-emendation, and 16 scattered words are left unread.
+code words. The reading covers 1,700 of the 1,715 cipher words (99.1%; 98.9% before the retry resolved 3 more). 108 words are read with a marked
+emendation, and 15 scattered words are left unread.
 
 ## Where it is
 

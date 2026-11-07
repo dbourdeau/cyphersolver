@@ -1,7 +1,7 @@
 # Banér to Stålhandske, Hof, 29 December 1640 (intercepted copy, Kircher correspondence APUG 568 f. 239) — NOTES
 
 **Status: read in part — 246 of 275 cipher tokens (89.5%) inside words read as sense, measured (`python measure_sense.py`),
-5 Oct 2026** (was 246/274 by `decode.py`, which also counted a stray 'n' after code 513). First reading of the letter; key rebuilt here (`key.json`, 70 values) from context cribs. It reads: Banér
+5 Oct 2026** (was 246/274 by `decode.py`, which also counted a stray 'n' after code 513). First reading of the letter; key rebuilt here (`key.json`, 73 values after later additions such as 12 = p) from context cribs. It reads: Banér
 means "nach der Oberpfaltz und gegen die [442]" to march; the enemy will gather against him "und etwa auch die in
 Schlesien agirende [361] dazu ziehen"; Stålhandske is to "gute acht geben" and, when the enemy moves, follow "mit
 einer guten Fürsichtigkeit"; report "durch Espionen"; and tell Banér "wohin er seine Marche zu richten". Open: the

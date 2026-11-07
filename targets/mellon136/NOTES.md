@@ -57,7 +57,7 @@ from p. 83, but before any passage was transcribed.
   not read here.
 
 What this folder adds: a sign-level transcription of every passage in the book, read with the key and checked
-word by word against the images; the corrections above; five passages not read before; and corrections to the
+word by word against the images; the corrections above; four passages not read before (the ones Rieber misses, listed above); and corrections to the
 published p. 24 text ("Stöpsel", not "Stopfel"; "Löchlein"; "zu lit. b muss lutirt werden"; "arbeitet").
 
 ## The key (p. 83)

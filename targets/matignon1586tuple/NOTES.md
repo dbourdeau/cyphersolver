@@ -98,7 +98,7 @@ the same way (109 more rows in `glosses_multivalued.tsv`):
 | 238r | 18 | 12 | 1 | 0 | 5 | 3.0% |
 | 238v | 14 | 8 | 0 | 1 | 5 | 5.3% |
 
-- All ten pages now have every multi-valued group checked against the glosses: 216 groups, 114 of 2,135 groups
+- All ten pages now have every multi-valued group checked against the glosses: 216 groups, 114 of 2,152 groups
   (5.3%) unconfirmed. No page changes class: 238r is inside the 3% limit and 234v nearly fully confirmed, but both are
   under 95%.
 - Six contradictions, the reading following the gloss: 238r l. 20 *m* for *n*, so *m'a dit auoir charge* is now read
@@ -115,7 +115,7 @@ with 2,000 muids of salt or three Huguenot councillors' offices), Alincourt and 
 Roussière and of la Magdaleine.
 
 ## Remaining gaps
-- multi-valued labels on the nine pages other than 234r (E2, M30, QUI, N18, DA and others) - blocker: no-key-material; every multi-valued group on all ten pages checked against the glosses (issues #95, #99): 114 of 2,135 groups carry no gloss or an unclear one, and nothing else on the leaves settles them
+- multi-valued labels on the nine pages other than 234r (E2, M30, QUI, N18, DA and others) - blocker: no-key-material; every multi-valued group on all ten pages checked against the glosses (issues #95, #99): 114 of 2,152 groups are not confirmed by a gloss (104 none or unclear, 10 contradicted and followed in the readings), and nothing else on the leaves settles them
 - f. 236v, most of the page (read share 0.431) - blocker: illegible; show-through and faded ink, fragmentary glosses, verso subtraction failed to register
 - 234v l. 13 ('Cadarran(?)') and ll. 21-24; 236r l. 15, ll. 22-25; 238r ll. 20-22 ('la crois lartie'); 238v ll. 7-10 ('Bourg(?)') - blocker: illegible; re-read at full and upscaled resolution in the contributor's round 7
 - 41 rare 'open' labels (79 groups, 3.7%) with no shape recorded - blocker: no-key-material; once or twice each

@@ -175,7 +175,7 @@ different entries and give nothing.
 
 **Other leads closed this session**
 - R1035 (the 5 Aug 1803 book, Van Kampen's 1,849-entry `Nomenclator.csv`) was tested under all 2,520 assignments of
-  R2034's five marks to R1035's six. Coverage is at or below a random-mark baseline (natural mapping 22%, random
+  R2034's five marks to R1035's seven series (7x6x5x4x3 = 2,520). Coverage is at or below a random-mark baseline (natural mapping 22%, random
   28%). The best mapping's "met Zijne Keizerlijke Majesteit" is one phrase entry (324+) beside two empty cells: an
   artefact. None of the old 1801 values fits any R1035 series either. R1942 is also at chance against R1035
   (25% vs 26%), so its July 1803 dispatch is not in that book.

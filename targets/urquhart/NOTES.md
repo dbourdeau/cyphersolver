@@ -181,7 +181,7 @@ measure sense. `measure_sense.py` compares, for each of the 285 positions, the l
 word n of physical page k: *exact* (the word begins with that letter), *near* (it does not, but the first word with
 that letter is within ±2 of n, the tokenisation difference seen across the book), otherwise a gap. Per line:
 1.000, 0.943, 0.974, 1.000, 0.906, 0.970, 0.935, 0.971, 0.900; octastich **274/285 = 0.961** (233 exact, 41 near).
-The 11 gaps: 55, 66, 106, 149, 151, 158, 207, 232, 239, 250, 283; each was re-checked on the photographs and the
+The 11 gaps (158 was resolved on 20 Oct 2026, so 275/285 = 0.965 if counted; the measure above stays 274/285): 55, 66, 106, 149, 151, 158, 207, 232, 239, 250, 283; each was re-checked on the photographs and the
 1983 numbers stand, so they are Urquhart's or the 1652 compositor's slips (or 1652/TCP page differences) where the
 context fixes the letter. With the distich (64 numbers, unread) the target is 274/349 = **0.785**.
 

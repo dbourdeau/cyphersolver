@@ -199,7 +199,7 @@ p2 l2 51>55 (ind**i**en), l22 54>52 and 34>32 (onde**rn**ee[men]). 11 pairs.
 
 Counting I-grade values too: 1,866/1,954 = 95.5%. Tokens given a value: 1,889/1,954 (96.7%) strict. What got it over
 the line: the p1 re-transcription and slip emendations (+20 on p1) and the p2 fixes (l15, l22, l2, P = voor, the
-French closing scored in French: +22). The margin is thin (11 tokens), and p2 alone is 90.7%: its unread word signs
+French closing scored in French: +22). The margin is thin (about 4 tokens: 1,860 against 95% of 1,954 = 1,856.3), and p2 alone is 90.7%: its unread word signs
 (⊣H 9, hook 7, slash 5, cf 4, Y-cross 4 …) and line 24 are what remains. `outcome.class` is left "read in part"
 here (see R2242's note on the class change).
 

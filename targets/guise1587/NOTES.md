@@ -27,7 +27,7 @@ grammar in more than half its sentences (ll. 00-03, 11-13, 17-18, 25, 27, 30, 33
 ## Sources
 
 - Gallica fr. 15564 = `ark:/12148/btv1b9064027v`. **f. 119 = view 132, right half** (a full page wholly in cipher,
-  44 lines, dated below "Ce xxvij^e May 1587"). **f. 142 = view 155, right half** (a slip: seven clear lines, then
+  42 transcribed lines numbered 00-41 in f119_reading.txt and f119_glyphs.txt, an earlier count said 44; dated below "Ce xxvij^e May 1587"). **f. 142 = view 155, right half** (a slip: seven clear lines, then
   16 lines of cipher, dated "Ce xx^e Juing 1587").
 - Crops (git-ignored, in `img/`): re-fetch with
   `https://gallica.bnf.fr/iiif/ark:/12148/btv1b9064027v/f155/4400,4150,4535,1750/full/0/native.jpg` (f. 142 cipher)

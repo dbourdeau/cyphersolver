@@ -30,7 +30,7 @@ reader agents of the same model; `research/reading_audit/reread_b01.py` applied 
   `_corrections.tsv` (DECODE's clear-text transcriptions are mostly unusable; re-read on the scans). R286 translated
   (`texts/R286_en.md`). Clean-sentence shares 0.53-0.94 (target 0.81).
 * **Records and dates corrected**: the volume runs 4 Aug - 29 Sept 1629 ("7mbre" = September; DECODE's November dates and
-  "1627"/"1679" are misreadings). One despatch spread over several records: R286+R287 (Nr. 153), R289+R290 (Nr. 166),
+  "1627"/"1679" are misreadings). One despatch spread over several records: R286+R287 (Nr. 153), R289+R290 (Nr. 156),
   R292-R294 (Nr. 160), R297+R299 (Nr. 164), R302+R303 (Nr. 167), R306+R307 (Nr. 176), R311+R312 (Nr. 184). R298 is 11 Aug
   (Nr. 158), R304 28 Aug (Nr. 168), R309 = Nr. 178 (16 Sept in Kiewning). R300 p. 2 (image 2532) was never transcribed by
   DECODE: transcribed in `texts/R300_p2_digits.txt`. R301's continuation (register p. 78) and register pp. 81-82 are not

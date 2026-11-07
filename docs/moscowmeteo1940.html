@@ -7,7 +7,7 @@
 <meta name="description" content="Twelve top-secret reports of the Japanese Army Meteorological Department, 1938-1940, announce each Soviet change of key in the enciphered weather broadcasts and give the method to read it." data-full="Twelve top-secret reports of the Japanese Army Meteorological Department, 1938-1940, announce each Soviet change of key in the enciphered weather broadcasts and give the method to read it. Brice Dudout transcribed the method passages, the four Moscow tables of June 1940 (4,796 figures) and two October grids, and checked them: the key stream equals the one printed in the report and the worked example deciphers, 60 of 60 figures.">
 <link rel="stylesheet" href="style.css?v=7fd9e8bc">
 <meta name="date" content="2026-10-30">
-<meta name="last-modified" content="2026-10-30">
+<meta name="last-modified" content="2026-11-07">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -57,7 +57,7 @@
 <h1>Soviet weather ciphers read in Tokyo, 1938&ndash;1940</h1>
 <p class="readjump"><a href="#texts">Go to the full text &darr;</a></p><!-- /readjump -->
 <p class="sub">Japanese Army reports show how the Soviet Union&rsquo;s enciphered weather broadcasts were read, generation after generation; the key tables of 1940 are transcribed here and check against the reports&rsquo; own examples.</p>
-<p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-30">30 October 2026</time></p>
+<p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-30">30 October 2026</time> &middot; updated <time datetime="2026-11-07">7 November 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#deciph">read from existing decipherment</a> &middot; Extent: complete &middot; <a href="atlas.html#slug=moscowmeteo1940">On the map</a></p><!-- /outcome -->
 <p class="credits">Contributed by <a href="contributors.html#dudout">Brice Dudout</a> (new cipher with solution)</p><!-- /credits -->
 <div class="seal solved" aria-hidden="true"><span class="long">deciphered copy</span></div>
@@ -73,7 +73,7 @@
   <dt>How it was read</dt><dd>By the Japanese, in 1938&ndash;1940. Here the reports&rsquo; method passages were transcribed and translated, the tables of June&ndash;July 1940 transcribed cell by cell and frozen before any check, and the worked examples recomputed.</dd>
   <dt>What it shows</dt><dd>The eleven rows of each June 1940 table are one 109-figure cycle, shifted; the key group only gives a starting point, so the tables could be rebuilt from a few days of traffic. The figure 0 almost never occurs in a Soviet key.</dd>
   <dt>Still open</dt><dd>One figure too many in the October odd-day grid, not located; one key cell of 29 April 1940 probable (8, 6 possible). No enciphered Soviet broadcast of 1940 was found online to test the tables independently.</dd>
-  <dt>Credit</dt><dd>Brice Dudout (<em>Europe chiffr&eacute;e</em>) found the reports, transcribed and checked the tables and reviewed doubtful cells on the images; sent on 29 October 2026, working with Claude agents. The British side of the system is Brian Audric&rsquo;s (2000).</dd>
+  <dt>Credit</dt><dd>Brice Dudout (<em>Europe chiffr&eacute;e</em>) found the reports, set the rules (tables transcribed and frozen before any check, tests on the reports&rsquo; own held-out examples) and reviewed doubtful cells on the images; Claude agents did the transcription and checking; sent on 29 October 2026. The British side of the system is Brian Audric&rsquo;s (2000).</dd>
 </dl>
 </div>
 
@@ -87,7 +87,7 @@
 </ol>
 
 <h2 id="tables"><span class="num">02</span> The tables</h2>
-<p>Brice Dudout transcribed the four June&ndash;July 1940 tables cell by cell from the photographs (4 tables &times; 11 rows &times; 109 figures = 4,796 figures) and the two October grids, and froze them before any check. He then found the structure the Japanese had exploited: the eleven rows of each table are the same 109-figure cycle, shifted (<code translate="no">cycles_109.tsv</code>). Every station enciphered with another key yields another overlapping fragment, which is how the tables could be rebuilt from a few days of traffic. The October grids are the same thing condensed, one figure per key, the struck-out cell being the one duplicate of 110 keys for 109 positions.</p>
+<p>Claude agents run by Brice Dudout transcribed the four June&ndash;July 1940 tables cell by cell from the photographs (4 tables &times; 11 rows &times; 109 figures = 4,796 figures) and the two October grids, and froze them before any check. He then found the structure the Japanese had exploited: the eleven rows of each table are the same 109-figure cycle, shifted (<code translate="no">cycles_109.tsv</code>). Every station enciphered with another key yields another overlapping fragment, which is how the tables could be rebuilt from a few days of traffic. The October grids are the same thing condensed, one figure per key, the struck-out cell being the one duplicate of 110 keys for 109 positions.</p>
 
 <h2 id="example"><span class="num">03</span> The worked example</h2>
 <figure class="creveal" data-src="reveal/moscowmeteo1940.json"></figure>
@@ -199,13 +199,13 @@ code 20 force 2, total cloud code 3, pressure 1033.5 mb, temperature probably -6
 <p class="muted">Folder: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/moscowmeteo1940">targets/moscowmeteo1940/</a> (notes, the reports&rsquo; method passages with translations, the keys, the transcribed tables, the worked examples and <code translate="no">decode.py</code>, as contributed by Brice Dudout).</p>
 <!-- cite:start -->
 <details class="cite" id="cite"><summary>Cite this page</summary>
-<p class="citetext">Brice Dudout and Daniel Bourdeau, “Soviet weather ciphers read in Tokyo, 1938–1940”, Cyphersolver, posted 30 October 2026, https://cyphersolver.com/moscowmeteo1940.html.</p>
-<p class="citebtns"><button type="button" data-copy="Brice Dudout and Daniel Bourdeau, “Soviet weather ciphers read in Tokyo, 1938–1940”, Cyphersolver, posted 30 October 2026, https://cyphersolver.com/moscowmeteo1940.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-moscowmeteo1940,
+<p class="citetext">Brice Dudout and Daniel Bourdeau, “Soviet weather ciphers read in Tokyo, 1938–1940”, Cyphersolver, posted 30 October 2026, updated 7 November 2026, https://cyphersolver.com/moscowmeteo1940.html.</p>
+<p class="citebtns"><button type="button" data-copy="Brice Dudout and Daniel Bourdeau, “Soviet weather ciphers read in Tokyo, 1938–1940”, Cyphersolver, posted 30 October 2026, updated 7 November 2026, https://cyphersolver.com/moscowmeteo1940.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-moscowmeteo1940,
   author = {Brice Dudout and Daniel Bourdeau},
   title = {Soviet weather ciphers read in Tokyo, 1938–1940},
   year = {2026},
   howpublished = {Cyphersolver},
-  note = {posted 30 October 2026},
+  note = {posted 30 October 2026, updated 7 November 2026},
   url = {https://cyphersolver.com/moscowmeteo1940.html}
 }">Copy BibTeX</button></p>
 </details>

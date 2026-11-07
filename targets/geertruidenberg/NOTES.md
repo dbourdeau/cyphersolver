@@ -103,7 +103,7 @@ spaen1808). Villars: 173 groups, 106 types, too short for anything without a key
 
 
 
-BL Add MS 61575 ff. 38-41 (DECODE R8755, five pages, endorsed "M Blencow cannot decypher them") and f. 44
+BL Add MS 61575 ff. 38-41 (DECODE R8755, five pages, endorsed "Mr Blencowe cannot decypher them") and f. 44
 (DECODE R8756, two pages). Cryptiana entries "French Ministers at Geertruidenberg (1710)" and "Marshal Villars
 and Abbé de Polignac (1710)"; Tomokiyo's article `blencowe2.htm` gives only the high-frequency groups
 (Torcy: 50 x12, 42 x10, 122 x9, 451 x9, 5 x8, 107 x8, 236 x8, 77 x7, 135 x7, 175 x7, 269 x7, 411 x7, 821 x7;

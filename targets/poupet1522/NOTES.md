@@ -27,7 +27,7 @@ So the cipher was read in 1522. Nothing is unread in the sense of the catalogue.
 
 The decipherment was aligned against the first cipher line of A (img 2 right):
 `E o+ o φ 2 ꝑ 3 | m4 7 o | Ꝛc ꝭ | o+ ▷ c ɗo ʆ ɗ ꝑ ...` against *Combien | que | je | vouldroie ...*: seven
-signs for *combien*, three for *que*, two for *je*, e written with three different signs (homophones). The
+signs for *combien*, three for *que*, two for *je*, e written with three different signs (homophones; caveat: as typed here the glyph o stands for both m and e and o+ for both o and v, probably look-alike shapes typed alike, not rechecked on the image). The
 sign count and the letter repeats fit. The key was **not** rebuilt in full: that would need a careful
 transcription of ~1,500 signs from 1024-px scans, and the letter is read already.
 

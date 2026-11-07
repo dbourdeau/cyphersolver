@@ -31,7 +31,7 @@ Versailles (the Stanley–Bussy negotiation of 1761) feed endless conjecture in 
 Spain can no longer look on while France is beaten in America and England's gains and sea power grow; others,
 weighing Spain's army, navy and treasury, Charles III's peaceable temper and his ministers, think Spain will keep
 its neutrality. The first answer that necessity overrides princes' wishes, and foresee a union with "another
-court" to defend common interests — the Third Family Compact with France, signed 15 August 1761 and still secret.
+court" to defend common interests — the Third Family Compact with France, signed 15 August 1761 and still secret, as an identification of ours; the decipherment does not name it.
 Foscarini passes this on "stripped of any authority" but worth attention.
 
 ## Cipher

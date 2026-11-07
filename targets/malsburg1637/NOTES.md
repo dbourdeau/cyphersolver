@@ -72,7 +72,7 @@ common digraphs and a small code of three-digit groups for names and military no
 1. Transcription: f. 3 by hand from 2x line crops (`lines.py`, `crop.py`); the other pages by two transcription
    agents in the same format (`f0NN.txt`). The duplicate (ff. 30-31) was used to correct ff. 28-29.
 2. Homophonic annealing (`solve.py`, lang `de-1640s`, order 5, no spaces, letter signs and codes as breaks, a
-   letter-frequency penalty): f. 3 alone (455 groups) gave noise; ff. 3+12+18 (1,575 groups) converged in all four
+   letter-frequency penalty): f. 3 alone (455 groups) gave noise; ff. 3+12+18 (1,575 groups in the first transcription; 1,806 in the current one) converged in all four
    restarts on the same key and German text ("das ich auch noch nit weiss ... die garnisonen ... die contributiones
    vom platten lande").
 3. Letter signs read from context (noch, möglich = N; lassen = W; geschlossen = X; Statthalter Nesselrode = L, P;

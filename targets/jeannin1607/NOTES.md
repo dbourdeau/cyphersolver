@@ -91,7 +91,7 @@ deciphered passages 0.968. His status: 2/15 pages transcribed; 2 more in part; 2
 - [x] siblings: the volume belongs to Lasry's BnF survey; no sibling key on DECODE known (24 Oct 2026)
 - [x] clear-pages: the plaintext beside the cipher is the one he used (see his summary); no further decipherment known
 - [x] known-keys: Lasry's reconstructed key is the only key; shown on the page
-- [x] print: no edition of the deciphered passages known to this project (24 Oct 2026)
+- [x] print: the sampled passages are in the 1656, 1819 and 1875 editions of Jeannin's Négociations (see Passage verification and key additions; the 24 Oct 2026 entry here said no edition was known)
 - [n/a] key-rebuild: the key reconstruction is George Lasry's, not this project's work
 - [x] retry: his full Readable text (24 Oct 2026) read and measured; holes left as he marks them
 

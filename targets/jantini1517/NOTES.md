@@ -1,6 +1,6 @@
 # Benedetto Fantini (DECODE "Jantini"), Buda/Eger 1517–1518 — catalogue 156 — NOTES
 
-Status: attempted, open (closed 22 Sept 2026: not read; no key material for this cipher exists anywhere found)
+Status: attempted, open (closed 22 Sept 2026: not read; no key material for this cipher exists anywhere found). Superseded on 28 Oct 2026 by Brice Dudout's key and reading of R1126 pp. 1-2, see dudout/README.md
 
 **Sender.** DECODE's "Benedetto Jantini" is a misreading of **Benedetto Fantini**, Ferrarese agent in Hungary in the
 household of Cardinal Ippolito d'Este (bishop of Eger). Vestigia holds his whole file, ASMo Ambasciatori, Ungheria

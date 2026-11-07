@@ -7,7 +7,7 @@ Status: in progress. The 22 Oct 1529 opening is in print (Scheurer, snippet view
 **23 Oct 2026, re-read (b26):** fr. 3005 is Gallica ark `btv1b90599952`; ff. 165r-166r are canvases 259-261 (the signed original, 34 + 35 + 5 cipher lines, no decipherment on or near the leaf). Read sign by sign with `key_p21.tsv`: [`texts/22oct1529_reading.md`](texts/22oct1529_reading.md) (partial reading), English [`texts/22oct1529_en.md`](texts/22oct1529_en.md), value transcription `texts/22oct1529_transcription.txt`, sign values `texts/22oct1529_corrections.tsv`, log [`texts/22oct1529_reread_log.md`](texts/22oct1529_reread_log.md). The first five lines agree with Scheurer's snippets word for word. The first half reads as sentences: Wolsey's Italian servant asks du Bellay to intercede; Tuesday the seal was taken, his goods inventoried, those who handled his affairs for twenty years called to account; he chose the King over Parliament; the charges are the pilleries, lese-majesty, the legation, bringing Ferrara into the league at Amiens without the King's knowledge, a bond given to the King of France, the war on the Emperor; "ilz pretendent luy faict perdre la teste", and unless the King and Madame help him it stays there. The rest (f. 165v ll. 21-35, f. 166r ll. 1-5) keeps unread stretches. New sign values: cup = a, barred cup = s, ƕ = f, tall ϙ = m, barred triangle = l, x on a stem = e; R = faict, V = bien, 4 = madame confirmed; ꝑ (five places) and ℋ (two) are the two Kings by sense only (flagged). Score 0.51 (explicit holes 0.69): kept *decoded, not read*.
 
 Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026). This entry is Bayonne's cipher of 1529. The
-catalogue item's fifth letter, fr. 3077 no. 23 of 28 Oct 1528 (DECODE R4254; copy Clair. 328 f. 291, R2287), is in du
+catalogue item's sixth letter, fr. 3077 no. 23 of 28 Oct 1528 (DECODE R4254; copy Clair. 328 f. 291, R2287), is in du
 Bellay's *first* cipher, which Bourrilly and de Vaissière recovered (1905) and George Lasry solved again (2022): a
 different cipher, with its own entry, [`targets/dubellay1528/`](../dubellay1528/NOTES.md), page `dubellay1528.html`.
 Its DECODE queue records (R4254, R2287) and the Bourrilly and Lasry credits moved there. The sections below keep
@@ -43,8 +43,8 @@ years. Identification from Le Grand's *Histoire du divorce* t. III (1688, Preuve
 | fr. 3078 no. 17 "avec chiffre, XVIIe d'octobre" | 17 Oct 1529 (Wolsey's fall) | 6011 | pp. 369–375 (Béthune 8603 f. 113) | pp. 113–117 (DECODE R3691 "partially") | printed in clear; L&P's abstract includes the cipher passages |
 | fr. 3078 no. 19 "avec chiffre, XXVIIe d'octobre" | 27 Oct 1529 | 6030 | pp. 379–381 (f. 133) | pp. 133–134 (DECODE R3692 "Decrypted") | printed in clear |
 
-So the catalogue's "no decipherment noted" is Omont's inventory language. **All five letters of the catalogue item
-are in print in clear**: fr. 3078 nos. 5, 17, 19 and fr. 3077 no. 18 (15 June, 17 Oct, 27 Oct, 18 Sept 1529) in
+So the catalogue's "no decipherment noted" is Omont's inventory language. **All six letters of the catalogue item
+are in print in clear**: fr. 3078 nos. 5, 17, 19 and fr. 3077 nos. 18 and 20 (15 June, 17 Oct, 27 Oct, 18 Sept, 4 Oct 1529) in
 Le Grand 1688, from the Court's decipherments (Brewer 1875 abstracts them), and fr. 3077 no. 23 (28 Oct 1528) in
 Bourrilly 1905, whose editors recovered its key. The item is therefore closed as *found already solved*. What the
 sweep of the two volumes turned up beyond it: the whole cipher block of **16 June 1529** (fr. 3078 p. 21) has never

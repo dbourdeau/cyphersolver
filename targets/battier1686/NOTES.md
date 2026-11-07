@@ -1,6 +1,6 @@
 # Pieter Battier to Gaspar Fagel, Madrid, 1686–1688
 
-Status: in progress (21 Oct 2026; 23 Oct r2n: the located passages read on the scans, six decoded, not read): WAINUT's eight 1687 passages (PR #65, #67) wait on an eye check of 158 machine-read key rows.
+Status: in progress (21 Oct 2026; 23 Oct r2n: the located passages read on the scans, six decoded, not read): WAINUT's passages in seven 1687 letters (PR #65, #67; 67R lines 1-3 are in both) wait on an eye check of 158 machine-read key rows.
 **22 Oct 2026, reading audit** (George Lasry's test): the 4 December 1687 (92L) and 12 February 1688 (100R) cipher blocks have holes in most sentences and are now *decoded, not read* in profile.json, as the strict screen already said. fraction_read 55% -> about 49% (estimated; the two letters' 482 tokens no longer count).
 
 
@@ -28,7 +28,7 @@ aanhouden ..."); the third line gives no sense with the marks as read, so the ma
 Draft tokens for 102L in `tokens/s102L_r2j_draft.txt`. Each passage needs its marks read group by group and most codes
 looked up (the dict holds only codes used so far): workable with the key, not done in this pass.
 
-**23 Oct 2026, the thirteen located passages read on the scans (batch r2n).** Every group of 35R/36L, 54R, 55R, 67L,
+**23 Oct 2026, the thirteen located passages (fourteen when 54R and 55R are counted separately) read on the scans (batch r2n).** Every group of 35R/36L, 54R, 55R, 67L,
 69L, 73R, 78R, 80R, 93R, 94L, 94R after l. 5, 95R, 99L (scan 99 from the b17 download), 102L and 103R read on the
 full-resolution NA scans (1,046 groups, `tokens/s*_r2n.txt`); about 150 codes looked up on the key scans
 (`research/reading_audit/r2n_keylook.py`, `r2n_allblocks.py`), new rows in `key/dict/r2n.tsv`. 2 Jan 1687 aligned with its
@@ -44,7 +44,7 @@ Status: read in part; **read with known key**. Two letters pass the strict sense
 validation against contemporary plaintext on 32R. The volume is not a complete decipherment.
 Decipherment by **Feyseel Nur (with Claude and Codex)**; 4–5 October 2026.
 
-21 Oct 2026, PR #65 and #67 (WAINUT) merged: the folder key applied to eight 1687 passages listed as not read
+21 Oct 2026, PR #65 and #67 (WAINUT) merged: the folder key applied to passages in seven 1687 letters listed as not read
 (1,389 groups, 39 uncertain; sections "Contribution by WAINUT" at the end). They are contributed readings and are not
 counted in the figures above: 158 of their code values come from an unchecked machine read of the key, and the 4-gram
 control is not in the repository. Adopted from them: the 2 Jan 1687 letter has interlinear decipherment
@@ -276,7 +276,7 @@ Closed items (moved out of Remaining gaps):
 - [x] known-keys: Battier's named inv. 1209 key applied; DECODE R2794 shelfmark discrepancy recorded
 - [x] print: De Leeuw (2000), DECODE, Tomokiyo, editions and NA digitised series searched; no Battier edition found; see evidence/prior_art.md
 - [x] key-rebuild: dictionary transcription and correction overrides preserved; Codex identifies remaining variants and alphabetical reversals
-- [x] retry (23 Oct 2026, r2n): the thirteen located passages read group by group on the NA scans, every code looked up on the key scans, 35R/36L aligned with its interlinear; eight read, six decoded, not read with the blocker named (readings/r2n/r2n_log.md)
+- [x] retry (23 Oct 2026, r2n): the located passages (thirteen by letter, fourteen with 54R and 55R separate) read group by group on the NA scans, every code looked up on the key scans, 35R/36L aligned with its interlinear; eight read, six decoded, not read with the blocker named (readings/r2n/r2n_log.md)
 - [x] retry: 22-23 Oct 2026 (b17) 92L, 91R, 99R, 100R re-read on the NA scans group by group and every doubtful group checked on the key scans; two untranscribed cipher runs added; 4 Dec 1687 and 12 Feb 1688 read (readings/1687-12-04_1688-02-12_reread_log.md). Earlier: five focus letters re-decoded and screened for sense; unresolved readings recorded in semantic_adjustments.tsv and review_1687-04-24.md; unread letters not yet transcribed; workable with the same key
 
 ## Files and reproduction

@@ -73,7 +73,7 @@ justly reproach his conduct. But to impute to him…
 - Folio matches the report: yes; cipher present: yes
 - What we checked: f9r (canvas 24) after "ordres que vous avez receu": 36 60 33 n 39 x 21 , 6 28 ... -> de la co-n-du-i-te , que vo... = "de la conduite que vo(us)" with his table (36=de,60=la,33=co,39=du,21=te,6bar=que,28bar=vo); fits the f10r plaintext context. Excerpt f18r not imaged by me.
 - Verdict: **confirmed** (method key recovered based on adjacent plaintext, extent complete). The check is a sample, not a re-solution.
-- Notes: Clear copies of letters B and C in same volume (f10r, ff17r-v). 96.5% incl. 40 probable nulls; several nomenclator values marked ?. 1653 consistent (Bordeaux fell Jul/Aug 1653).
+- Notes: Clear copies of letters B and C in same volume (f10r, ff17r-v). 96.5% (1,308 of 1,356) excludes the 40 probable nulls, 3 unidentified and 5 cancelled elements; several nomenclator values marked ?. 1653 consistent (Bordeaux fell Jul/Aug 1653).
 
 ## Verification 4, 23 Oct 2026
 

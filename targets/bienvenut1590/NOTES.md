@@ -99,7 +99,7 @@ Gap closed: "n23, ff. 35r-v beyond the sample: not transcribed".
 ## Open
 
 * The dual entries 15 (villes de l'Union, or Provence & Dauphiné) and 17 (duc de Parme, or Picardie) are taken from
-  context. The recipient ("Vostre Altesse") is probably Nevers, not proven.
+  context. The recipient ("Vostre Altesse") is probably Charles-Emmanuel I of Savoy, not proven (see the Recipient entry and the Bienvenu note above).
 
 ## Files
 

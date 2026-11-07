@@ -30,7 +30,7 @@ passages as garbled figures ("vI9T#tw516p I 6", "[5]", "3", "H") without deciphe
 Burghley → Walsingham, 7 Nov 1572 (f. 367r):
 - "a person come, as he saith, from Florence **[9]**" (boxed 9)
 - "letters which the partie hath written to Rome **[9]**"
-- "The partie (L^ds) **776 + w5 ‡ 6 3 ∩ 6** remaineth here in London as in a …, and yet I doubt the P. will smell of him" — a letter-cipher run of about nine signs, probably a name.
+- "The partie (L^ds) **776 + w5 ‡ 6 3 ∩ 6** remaineth here in London as in a …, and yet I doubt the P. will smell of him" — a letter-cipher run of eleven signs (transcription.txt l. 3), probably a name.
 
 Walsingham → Burghley, 27 Nov 1572 (ff. 368v–369v):
 - "delivered to Steward, for that Glasgow **[7]** was not here"
@@ -44,12 +44,12 @@ Walsingham → Burghley, 27 Nov 1572 (ff. 368v–369v):
 ## Reading
 
 - **[3] = the Queen (Elizabeth)**: four occurrences, every one fits and no other value fits all four. Grade C.
-- [7], [9], H and the nine-sign run: unread.
+- [7], [9], H and the eleven-sign run: unread.
 
 Cipher tokens (measured, transcription.txt): 21; 4 read (19%).
 
 ## Remaining gaps
-- letter run "776 + w5 ‡ 6 3 ∩ 6" (f. 367r) - blocker: too-short; nine signs of an unknown alphabet, no key in print or on DECODE
+- letter run "776 + w5 ‡ 6 3 ∩ 6" (f. 367r) - blocker: too-short; eleven signs of an unknown alphabet, no key in print or on DECODE
 - standalone codes [7], [9], H (once each) and cover-names Glasgow/Florence - blocker: no-key-material; Walsingham–Burghley 1572 key not known to survive, contexts do not fix a single person
 
 ## Escalation
@@ -58,7 +58,7 @@ Cipher tokens (measured, transcription.txt): 21; 4 read (19%).
 - [x] known-keys: Tomokiyo's Elizabethan cipher page (Cecil–Norris, Throckmorton, Stafford) has no Walsingham 1570–73 key
 - [x] print: Digges 1655 prints all four letters, cipher left as figures; CSP Foreign x Nov 1572 does not calendar them
 - [x] key-rebuild: inventoried every boxed code in Digges 1655 (`digges_codes.txt`, 9 hits, 1572–73). Burghley's letter of Feb 1573 writes "Glasco [9]", "Glasco [g]", i.e. the same cover-word carries a box with varying digits: a box AFTER a word marks it as a cover-name (Florence, Rome, Glasgow = persons), not a separate code. So [9] after Florence/Rome and [7] after Glasgow are markers; the codes proper are [3] ×4 (the Queen), "the [9]" ×1, "[7] protested" ×1, H ×1. Cover-names Glasgow/Florence are not glossed anywhere in Digges.
-- [x] retry: regraded every token with the marker reading: [3] = Queen stays C; standalone [9], [7], H each occur once, no value fixed; the nine-sign run unchanged (too short)
+- [x] retry: regraded every token with the marker reading: [3] = Queen stays C; standalone [9], [7], H each occur once, no value fixed; the eleven-sign run unchanged (too short)
 
 ## Next leads
 - The originals Walsingham sent (Hatfield / SP 70/125) may carry Burghley's clerk's decipherment interlined.
