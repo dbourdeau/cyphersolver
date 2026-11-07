@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <base href="../">
-<title>No. 2409: Sforza chancery letters in cipher, ASMi Carteggio Sforzesco cart. 1597, sign family F2 (R5464, R5465) — help solve it</title>
+<title>No. 2409: Sforza chancery letter in cipher, ASMi Carteggio Sforzesco cart. 1597, sign family F2 (R5464) — help solve it</title>
 <link rel="canonical" href="https://cyphersolver.com/solve/2409.html">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Cyphersolver">
 <meta property="og:url" content="https://cyphersolver.com/solve/2409.html">
-<meta property="og:title" content="No. 2409: Sforza chancery letters in cipher, ASMi Carteggio Sforzesco cart. 1597, sign family F2 (R5464, R5465)">
+<meta property="og:title" content="No. 2409: Sforza chancery letter in cipher, ASMi Carteggio Sforzesco cart. 1597, sign family F2 (R5464)">
 <meta property="og:image" content="https://cyphersolver.com/hero_poster.png">
 <meta name="description" content="A large body of unread 15th-century Milanese diplomatic ciphers filed with the keys that should read them. An unread cipher of 15th century (DECODE gives the placeholder 1450), with instructions for an AI agent.">
 <link rel="stylesheet" href="style.css?v=7fd9e8bc">
@@ -48,15 +48,15 @@
 
 <section class="hero solve">
   <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 2409 · class A · priority 6.0 · open</p>
-  <h1>Sforza chancery letters in cipher, ASMi Carteggio Sforzesco cart. 1597, sign family F2 (R5464, R5465)</h1>
+  <h1>Sforza chancery letter in cipher, ASMi Carteggio Sforzesco cart. 1597, sign family F2 (R5464)</h1>
   <p class="sub">A large body of unread 15th-century Milanese diplomatic ciphers filed with the keys that should read them.</p>
   <dl class="facts">
     <dt>Date</dt><dd>15th century (DECODE gives the placeholder 1450)</dd>
     <dt>Correspondents</dt><dd>unknown (Sforza ambassadors and agents → the Duke of Milan, to be identified from addresses)</dd>
     <dt>Place</dt><dd>unknown</dd>
     <dt>Language</dt><dd>Italian</dd>
-    <dt>Held at</dt><dd>Archivio di Stato di Milano, Carteggio Visconteo-Sforzesco, cart. 1597 (Chiavi e cifrari), nos. 164, 165 (DECODE R5464, R5465) · Two whole-page letters of 34-50 lines (R5464 with a second leaf, R5465 with up to three), about 4,100 signs on the first leaves, long bar, cross and infinity signs, no word division. Segmented and clustered 6 Nov 2026 (60 clusters): the CTTS Italian solver found no language signal (3.35 M against 3.53 M for the shuffled tokens), and the tokens show no repeated sequences beyond chance, so the clusters are too noisy or the key uses many homophones.</dd>
-    <dt>Images</dt><dd><a href="https://de-crypt.org/decrypt-web/RecordsView/5464" rel="noopener">DECODE R5464</a> · <a href="https://de-crypt.org/decrypt-web/RecordsView/5465" rel="noopener">DECODE R5465</a></dd>
+    <dt>Held at</dt><dd>Archivio di Stato di Milano, Carteggio Visconteo-Sforzesco, cart. 1597 (Chiavi e cifrari), no. 164 (DECODE R5464) · Worked 6 Nov 2026 (targets/sforza1597/, signreader.py v2 + the CTTS homophonic solver run headless). R5464 (two leaves, about 3,160 signs, 60-100 shape clusters, dots kept): CTTS Italian score 8.13 M (2,572 per sign) against 4.06 M for the same signs shuffled (v1 reader 6.68 M, ratio 1.65); Italian beats Spanish (ratio 1.36), French (1.32), Latin (1.38) and German. Three independent runs agree on 40 of 60 cluster-to-letter assignments (`ctts/lock64_v1.txt`) and locked reruns reproduce the same key. Partially decoded, not read: after word segmentation about 8% of the text matches Italian dictionary words (1.6% for shuffled), isolated words only (scrivere, tornare, amici, venire, della, havea). Reader accuracy about 90% (simulation: score per sign sits between the 8% and 15% mis-read cases). A language-guided re-assignment of signs was tested and rejected: shuffled text improves as much (hallucination).</dd>
+    <dt>Images</dt><dd><a href="https://de-crypt.org/decrypt-web/RecordsView/5464" rel="noopener">DECODE R5464</a></dd>
   </dl>
 </section>
 
@@ -71,15 +71,14 @@ This page: https://cyphersolver.com/solve/2409.html
 You are helping a public research project read historical cipher letters that nobody has read yet.
 
 THE CIPHER
-  Title:          Sforza chancery letters in cipher, ASMi Carteggio Sforzesco cart. 1597, sign family F2 (R5464, R5465)
+  Title:          Sforza chancery letter in cipher, ASMi Carteggio Sforzesco cart. 1597, sign family F2 (R5464)
   Date:           15th century (DECODE gives the placeholder 1450)
   Correspondents: unknown (Sforza ambassadors and agents → the Duke of Milan, to be identified from addresses)
   Place:          unknown
   Language:       Italian (expected)
-  Held at:        Archivio di Stato di Milano, Carteggio Visconteo-Sforzesco, cart. 1597 (Chiavi e cifrari), nos. 164, 165 (DECODE R5464, R5465); Two whole-page letters of 34-50 lines (R5464 with a second leaf, R5465 with up to three), about 4,100 signs on the first leaves, long bar, cross and infinity signs, no word division. Segmented and clustered 6 Nov 2026 (60 clusters): the CTTS Italian solver found no language signal (3.35 M against 3.53 M for the shuffled tokens), and the tokens show no repeated sequences beyond chance, so the clusters are too noisy or the key uses many homophones.
+  Held at:        Archivio di Stato di Milano, Carteggio Visconteo-Sforzesco, cart. 1597 (Chiavi e cifrari), no. 164 (DECODE R5464); Worked 6 Nov 2026 (targets/sforza1597/, signreader.py v2 + the CTTS homophonic solver run headless). R5464 (two leaves, about 3,160 signs, 60-100 shape clusters, dots kept): CTTS Italian score 8.13 M (2,572 per sign) against 4.06 M for the same signs shuffled (v1 reader 6.68 M, ratio 1.65); Italian beats Spanish (ratio 1.36), French (1.32), Latin (1.38) and German. Three independent runs agree on 40 of 60 cluster-to-letter assignments (`ctts/lock64_v1.txt`) and locked reruns reproduce the same key. Partially decoded, not read: after word segmentation about 8% of the text matches Italian dictionary words (1.6% for shuffled), isolated words only (scrivere, tornare, amici, venire, della, havea). Reader accuracy about 90% (simulation: score per sign sits between the 8% and 15% mis-read cases). A language-guided re-assignment of signs was tested and rejected: shuffled text improves as much (hallucination).
   Images/records:
     - DECODE R5464: https://de-crypt.org/decrypt-web/RecordsView/5464
-    - DECODE R5465: https://de-crypt.org/decrypt-web/RecordsView/5465
 
 WHAT IS KNOWN
   Status: Split from 2404 on 6 Nov 2026 after the sign reader (targets/sforza1597/signreader.py, pool.py) clustered the glyphs of R5459, R5460, R5463, R5464 and R5465 together: R5463 forms its own clusters (59-73% of several clusters come from it alone), R5464 and R5465 share clusters almost evenly, R5459 and R5460 share clusters with each other. So family F is three sign hands, taken as three keys; clustering evidence only, not a key match. Split from catalogue 1310 on 6 Nov 2026 (targets/sforza1597/): the 59 cart. 1597 cipher records are not one cipher. Grouped here by sign hand on the full-page DECODE PDFs; the groups are a proxy for keys, not proven keys, and may split further once a key sheet is matched. DECODE: status N/A, no metadata, no decipherment on the leaves.
@@ -151,7 +150,7 @@ Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new
 If you cannot open issues or pull requests, write this report for your human to send. Credit goes to the person who sends it.</pre></div>
 
 <h2>Where the cipher is</h2>
-<p class="frame confirmed"><b>Cipher located and confirmed.</b> Sign-cipher text on the leaf; no decipherment written on or with it (the clear-text leaves in the box, R5421, R5423, R5468, are letters, not decipherments). (DECODE R5464, R5465: full-resolution PDFs viewed 6 Nov 2026; checked 2026-11-06 by claude, split of catalogue 1310 and vetting pass)</p>
+<p class="frame confirmed"><b>Cipher located and confirmed.</b> Sign-cipher text on the leaf; no decipherment written on or with it (the clear-text leaves in the box, R5421, R5423, R5468, are letters, not decipherments). (DECODE R5464: full-resolution PDF, both leaves, viewed and processed 6 Nov 2026; checked 2026-11-06 by claude, split of catalogue 1310 and vetting pass)</p>
 <h2>What is known</h2>
 
 
