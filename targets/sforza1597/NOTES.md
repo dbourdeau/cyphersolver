@@ -1,6 +1,6 @@
 # Sforza chancery letters in cipher, ASMi Carteggio Sforzesco cart. 1597 (catalogue 1310; DECODE R5380-R5474)
 
-Status: in progress. Triage only (6 Nov 2026); nothing read yet.
+Status: in progress. R5464 read in part (7 Nov 2026, 27 % of letters in 4+ letter words, key from the ciphertext alone); R5465, R5463 and family A show signals; the rest unread. Details at the end of this file.
 
 ## Fetched (6 Nov 2026, via the DECODE cookie, `fetch_all.py`)
 All 174 cart. 1597 records: 115 key sheets (record_type 2, R5301-R5414, R5469-R5471, nos. 1-114, 169-171) and 59 ciphertext
@@ -190,3 +190,5 @@ Same chain (sensitive detection block 41 / C 12 / big area 100, v2 features, War
 Pattern: the leaf with the largest clean text (R5464) reads best; the shorter or less legible ones give fragments only. Sign-detection recall was the common limit.
 - **Family A** (R5425-R5430, one alphabet: page cosines 0.80-0.95 with the sensitive detector, 13,473 signs, 70 clusters, `ctts/a_best/`): CTTS (period corpus, 540 s) 12.55 M against 7.65 M shuffled, ratio 1.64 (none with the first reader); coverage by 5+ letter words 6.1 % against 1.9 %; `keyrefine.py` lowers it (11.2 -> 10.2 % in its own metric). A signal but no words yet: the tiny hand (signs about 17 x 23 px) still costs too many signs, and 70 clusters on 13 k noisy glyphs are too coarse.
 Overall state at the end of 7 Nov: R5464 partly read (27 % of letters in words of 4+ letters, phrases such as "dele letere gravisima", "facto stamatina tornare", "sempre desiderat amici"), R5463, R5465 and family A show real signals, F1 and the E groups too little text; nothing read as continuous sentences.
+
+- Lasry-style loop on R5464 (lock the 20 signs with 70+ occurrences from the refined key, re-solve the other 40, refine again, two seeds): 25.8 % coverage (22.5 % before the second refinement) against 27.1 % for the single refinement: the chain saturates near 27 % with this reader. Further gain has to come from the signs (resolution, merged boxes, the 10 % still unread), not from the key search.
