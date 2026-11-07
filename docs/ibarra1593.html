@@ -4,7 +4,7 @@
 <meta name="description" content="BnF fr. 3984 no. 68, f. 145: Don Diego de Ibarra&rsquo;s letter from Paris of 10 July 1593 in the Feria&ndash;Mansfeld cipher, for which Satoshi Tomokiyo published a syllable table." data-full="BnF fr. 3984 no. 68, f. 145: Don Diego de Ibarra&rsquo;s letter from Paris of 10 July 1593 in the Feria&ndash;Mansfeld cipher, for which Satoshi Tomokiyo published a syllable table. Applied to a full transcription it gives Spanish against a shuffled-key control; a sibling letter in the same volume with its contemporary French decipherment (ff. 130-131) fixed six syllables and seven word codes, but most three-letter codes stay unread and only about a quarter of the sentences build: decoded, not read.">
 <link rel="stylesheet" href="style.css?v=7fd9e8bc">
 <meta name="date" content="2026-10-15">
-<meta name="last-modified" content="2026-10-23">
+<meta name="last-modified" content="2026-11-07">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -53,7 +53,7 @@
 <h1>Diego de Ibarra from Paris, 10 July 1593</h1>
 <p class="readjump"><a href="#texts">Go to the transcriptions &darr;</a></p><!-- /readjump -->
 <p class="sub">A Spanish letter from Paris during the Estates of the League, in the syllabic cipher of the Duke of Feria and the Count of Mansfeld: Tomokiyo&rsquo;s table gives its syllables, but its three-letter word codes are still unknown.</p>
-<p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-15">15 October 2026</time> &middot; updated <time datetime="2026-10-23">23 October 2026</time></p>
+<p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-15">15 October 2026</time> &middot; updated <time datetime="2026-11-07">7 November 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#known">read with known key</a> &middot; Extent: none (key obtained, text not read)</p><!-- /outcome -->
 <p class="credits">With <a href="contributors.html#tomokiyo">Satoshi Tomokiyo</a> (key or decipherment used) and <a href="contributors.html#arya">Arya Sanketbhai Patel</a> (identification)</p><!-- /credits -->
 </div></section>
@@ -82,7 +82,7 @@
 <h2 id="the-cipher"><span class="num">02</span> The cipher and the key</h2>
 <figure class="creveal" data-src="reveal/ibarra1593.json"></figure>
 <p>Satoshi Tomokiyo&rsquo;s page on the ciphers of Philip&nbsp;II&rsquo;s reign carries, as an image, a <em>Syllabic cipher for Duke of Feria and Count of Mansfeld (1593)</em>, cited at fr.&nbsp;3984 ff.&nbsp;130 and 145. This leaf bears it out: its values run far higher than in the office cipher of 1592&ndash;93 (97, 98, 800, 7243), and it carries the three-letter word codes he describes (<em>pra, rom, mon, xen, vul, cil</em>; he gives <em>vas</em> = <em>segnor</em> as an example).</p>
-<p>All twenty cipher lines were transcribed on 5 October 2026: 598 groups. Decoded with his table, they give Spanish: <em>a mi no me parece que puede</em>, <em>se [ha] de poner todo lo que se puede</em>, <em>lo que podemos</em>, <em>aliento, y si ella apareciera, y palabra</em>, <em>no estamos desesperados</em>, <em>peligro</em>, <em>espero</em>, <em>de acudir a lo que esta</em>, <em>pareceria que venia a ayudar &hellip; y la cavalleria</em>, <em>a lo menos no parece sino</em>. A Spanish character model of the period scores the decode at &minus;2.500 per character; 200 keys with the same values shuffled among the numbers score at most &minus;3.378. A free hill-climb over all numbers collapses onto <em>que</em> and was rejected; a constrained search for the numbers missing from the table fixed 57 = <em>li</em> (<em>peligro</em>, <em>aliento</em>). 64, probably <em>ha</em> by context, is not separated from <em>na</em> by the model and stays open.</p>
+<p>All twenty cipher lines were transcribed on 5 October 2026: 598 groups. Decoded with his table, they give Spanish: <em>a mi no me parece que puede</em>, <em>se [ha] de poner todo lo que se puede</em>, <em>lo que podemos</em>, <em>aliento, y si ella apareciera, y palabra</em>, <em>no estamos desesperados</em>, <em>peligro</em>, <em>espero</em>, <em>de acudir a lo que esta</em>, <em>pareceria que venia a ayudar &hellip; y la cavalleria</em>, <em>a lo menos no parece sino</em>. A Spanish character model of the period scores the decode at &minus;2.500 per character; 200 keys with the same values shuffled among the numbers score at most &minus;3.378. A free hill-climb over all numbers collapses onto <em>que</em> and was rejected; a constrained search for the numbers missing from the table fixed 57 = <em>li</em> (<em>peligro</em>, <em>aliento</em>). 64, probably <em>ha</em> by context, is not separated from <em>na</em> by the model and stayed open on 5 October 2026; the f. 131 decipherment fixed it as <em>ha</em> on 23 October (next section).</p>
 <p>Scored line by line for sense, 224 of the 598 groups (37.5%) give Spanish. The diacritic finals and doubling marks were left out of the transcription, so the words come out without their final consonant. Phrases scattered among unread word codes do not make sentences: read as a text, the letter is decoded, not read (reading audit, 22 October 2026), and the 37.5% is withdrawn as a reading figure.</p>
 
 <h2 id="crib"><span class="num">03</span> A crib in the same volume (23 October 2026)</h2>
@@ -212,13 +212,13 @@ not continue**; and **that he may have received his** …</pre></details>
 <p class="muted">Transcription, key, decoder, controls and the sense count: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/ibarra1593">targets/ibarra1593/</a> in the repository.</p>
 <!-- cite:start -->
 <details class="cite" id="cite"><summary>Cite this page</summary>
-<p class="citetext">Daniel Bourdeau and Arya Sanketbhai Patel, “Diego de Ibarra from Paris, 10 July 1593”, Cyphersolver, posted 15 October 2026, updated 23 October 2026, https://cyphersolver.com/ibarra1593.html.</p>
-<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau and Arya Sanketbhai Patel, “Diego de Ibarra from Paris, 10 July 1593”, Cyphersolver, posted 15 October 2026, updated 23 October 2026, https://cyphersolver.com/ibarra1593.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-ibarra1593,
+<p class="citetext">Daniel Bourdeau and Arya Sanketbhai Patel, “Diego de Ibarra from Paris, 10 July 1593”, Cyphersolver, posted 15 October 2026, updated 7 November 2026, https://cyphersolver.com/ibarra1593.html.</p>
+<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau and Arya Sanketbhai Patel, “Diego de Ibarra from Paris, 10 July 1593”, Cyphersolver, posted 15 October 2026, updated 7 November 2026, https://cyphersolver.com/ibarra1593.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-ibarra1593,
   author = {Daniel Bourdeau and Arya Sanketbhai Patel},
   title = {Diego de Ibarra from Paris, 10 July 1593},
   year = {2026},
   howpublished = {Cyphersolver},
-  note = {posted 15 October 2026, updated 23 October 2026},
+  note = {posted 15 October 2026, updated 7 November 2026},
   url = {https://cyphersolver.com/ibarra1593.html}
 }">Copy BibTeX</button></p>
 </details>

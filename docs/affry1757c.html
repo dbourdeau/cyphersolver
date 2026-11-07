@@ -4,7 +4,7 @@
 <meta name="description" content="DECODE R1071 (Koninklijk Huisarchief, Prins Willem V inv. 192): an intercepted code letter from the comte d’Affry, French ambassador at The Hague, to the Marquis de Stainville, ambassador at Vienna&hellip;" data-full="DECODE R1071 (Koninklijk Huisarchief, Prins Willem V inv. 192): an intercepted code letter from the comte d’Affry, French ambassador at The Hague, to the Marquis de Stainville, ambassador at Vienna, August 1757. It is in a code of its own: the key rebuilt for d’Affry’s letters to Rouillé and Bernis gives nonsense on it, no decipherment was imaged with it, and no key was found. Not solved.">
 <link rel="stylesheet" href="style.css?v=7fd9e8bc">
 <meta name="date" content="2026-10-15">
-<meta name="last-modified" content="2026-10-27">
+<meta name="last-modified" content="2026-11-07">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -52,8 +52,8 @@
 <p class="kicker">The Hague → Vienna · numerical code (not d’Affry’s 1757 code) · August 1757</p>
 <h1>The comte d’Affry to the Marquis de Stainville, August 1757</h1>
 <div class="parties"><figure class="party recipient"><img src="portrait_etienne-francois-de-choiseul-marquis-de-stainville.jpg" width="192" height="192" decoding="async" alt="Étienne François de Choiseul (Marquis de Stainville)" title="Étienne François de Choiseul (Marquis de Stainville): Portrait by Louis-Michel van Loo, 1763. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Étienne François de Choiseul (Marquis de Stainville)</figcaption></figure></div><!-- /parties -->
-<p class="sub">An intercepted letter from the French ambassador at The Hague to his colleague at Vienna, filed with ten letters to Paris but written in another code, for which no key or decipherment has been found.</p>
-<p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-15">15 October 2026</time> &middot; updated <time datetime="2026-10-27">27 October 2026</time></p>
+<p class="sub">An intercepted letter from the French ambassador at The Hague to his colleague at Vienna, filed with eighteen letters to Paris but written in another code, for which no key or decipherment has been found.</p>
+<p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-15">15 October 2026</time> &middot; updated <time datetime="2026-11-07">7 November 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#notsolved">not solved</a> &middot; Extent: text not obtained &middot; <a href="atlas.html#slug=affry1757c">On the map</a></p><!-- /outcome -->
 </div></section>
 <main>
@@ -71,14 +71,14 @@
 <p>This letter was filed with d’Affry’s letters to the foreign secretaries Rouillé and Bernis, which share one code whose key was rebuilt from the Dutch codebreaker Lyonet’s decipherments. It is in a different cipher; those letters have their own page: <a href="affry1757.html">the comte d’Affry’s intercepted letters, 1757–58</a>.</p>
 
 <h2 id="the-document"><span class="num">01</span> The document</h2>
-<p>D’Affry’s despatches went by the Dutch post, and the stadholder’s cabinet had them opened, copied and passed to Pierre Lyonet, the Republic’s cipher secretary. Inv. 192 of the Prins Willem V archive holds the copies of nineteen of them, catalogued on DECODE as R1052–R1076 and R2067. All but this one are to Rouillé and then Bernis at Versailles, January 1757 to January 1758. This one is to Stainville at Vienna, written days after the French victory at Hastenbeck (26 July), when France and Austria were fighting Prussia and Hanover together. The copy carries the number 485 and the date 4 August; DECODE gives 7 August.</p>
+<p>D’Affry’s despatches went by the Dutch post, and the stadholder’s cabinet had them opened, copied and passed to Pierre Lyonet, the Republic’s cipher secretary. Inv. 192 of the Prins Willem V archive holds the copies of nineteen of them, catalogued on DECODE as R1052–R1076 and R2067. All but this one are to Rouillé and then Bernis at Versailles, January 1757 to January 1758. This one is to Stainville at Vienna, written days after the French victory at Hastenbeck (26 July), when France and Austria were fighting Prussia and Hanover together. (This background is not from the sources and was not checked here.) The copy carries the number 485 and the date 4 August; DECODE gives 7 August.</p>
 <p>The three pages are photographed sideways and hold only figures, separated by dots. The groups used here are DECODE’s transcription, not re-read from the images. Comparing the first page with it for the figure above showed two differences: the image has 240 where DECODE has 24 in the first line, and 1116 and 1158 at the end of the seventh line are run together in the transcription.</p>
 
 <h2 id="how-it-was-tried"><span class="num">02</span> How it was tried</h2>
 <ul>
 <li>A comparison of group frequencies across all the inv. 192 letters set this one apart. The letters to Paris, first split into two codes the same way, turned out to share their common values: one code.</li>
 <li>The key of that code, 651 groups recovered by aligning Lyonet’s decipherments with their cipher, gives nonsense on R1071.</li>
-<li>On 27 October 2026 every machine-readable key of the period in this project was applied to R1071 and scored against shuffled copies of itself: d’Affry’s code, the Van Swieten–Cobenzl table, the Hanoverian army code of 1743, the Prussian code of the Michell letters (1751) and Croiset’s Dutch codebook of 1765. The same test picks out d’Affry’s key on one of his own letters at once; on R1071 none fits (<code translate="no">keytest_R1071.py</code>).</li>
+<li>On 27 October 2026 every machine-readable key of the period in this project was applied to R1071 and scored against shuffled copies of itself: d’Affry’s code, the Van Swieten–Cobenzl table, the Hanoverian army code of 1743, the Prussian code of the Michell letters (1751) and Croiset’s Dutch codebook of 1765. The same test picks out d’Affry’s key on one of his own letters at once; on R1071 none fits, although the Van Swieten&ndash;Cobenzl table and the Michell key cover only 13% and 9% of the groups and give scattered syllables, too sparse to judge (<code translate="no">keytest_R1071.py</code>).</li>
 <li>Eight of the sibling records carry Lyonet’s clear copy among their images. R1071 does not.</li>
 <li>The DECODE catalogue was searched for other records of d’Affry, Stainville or Choiseul: only the inv. 192 letters and a Choiseul record of 1763–64 in the British Library, and no key.</li>
 <li>Karl de Leeuw’s history of the Dutch black chamber (2000) says Lyonet broke d’Affry’s first code by June 1756 and “two more French ones”, and d’Affry’s code to Choiseul from December 1758 later. Bussemaker’s 1906 extracts of Lyonet’s decipherments do not give this letter’s text.</li>
@@ -99,13 +99,13 @@
 <p class="muted">Transcription and notes: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/affry1757c">targets/affry1757c/</a> in the repository.</p>
 <!-- cite:start -->
 <details class="cite" id="cite"><summary>Cite this page</summary>
-<p class="citetext">Daniel Bourdeau, “The comte d’Affry to the Marquis de Stainville at Vienna, August 1757”, Cyphersolver, posted 15 October 2026, updated 27 October 2026, https://cyphersolver.com/affry1757c.html.</p>
-<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau, “The comte d’Affry to the Marquis de Stainville at Vienna, August 1757”, Cyphersolver, posted 15 October 2026, updated 27 October 2026, https://cyphersolver.com/affry1757c.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-affry1757c,
+<p class="citetext">Daniel Bourdeau, “The comte d’Affry to the Marquis de Stainville at Vienna, August 1757”, Cyphersolver, posted 15 October 2026, updated 7 November 2026, https://cyphersolver.com/affry1757c.html.</p>
+<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau, “The comte d’Affry to the Marquis de Stainville at Vienna, August 1757”, Cyphersolver, posted 15 October 2026, updated 7 November 2026, https://cyphersolver.com/affry1757c.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-affry1757c,
   author = {Daniel Bourdeau},
   title = {The comte d’Affry to the Marquis de Stainville at Vienna, August 1757},
   year = {2026},
   howpublished = {Cyphersolver},
-  note = {posted 15 October 2026, updated 27 October 2026},
+  note = {posted 15 October 2026, updated 7 November 2026},
   url = {https://cyphersolver.com/affry1757c.html}
 }">Copy BibTeX</button></p>
 </details>
