@@ -14,6 +14,12 @@ def load_binary(path, bg_sigma=40):
     ink = (norm < 0).astype(np.uint8)  # placeholder
     _, ink = cv2.threshold(norm, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
     ink[page == 0] = 0
+    import os as _os
+    if _os.environ.get('SR_SENSITIVE'):
+        sm = cv2.GaussianBlur(g, (0, 0), 1.0)
+        ad = cv2.adaptiveThreshold(sm, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, int(_os.environ.get('SR_BLOCK', 41)), float(_os.environ.get('SR_C', 9)))
+        ad[page == 0] = 0
+        ink = cv2.morphologyEx(cv2.bitwise_or(ink, ad), cv2.MORPH_OPEN, np.ones((2, 2), np.uint8))
     return g, ink
 
 def best_angle(ink, lo=-4, hi=4, step=0.25):
