@@ -150,3 +150,14 @@ to learn sender and date and so which key sheet applies.
   those years, their contents are summarised there and the key tables are printed there. Not yet matched (the Tavole section is near the end,
   about pp. 340-363; not read).
 Open: read the Tavole of that inventory and compare with the four alphabets; hand-read key sheet columns; CTTS GUI iteration on R5464.
+
+## 7 Nov 2026 (final of session): key sheets vs R5464 families, period language model
+- Shape-family test of the 97 key sheets with enough glyphs (distance from the e/a/i/o/n/r/s/t/l families of the solver key to the nearest glyph
+  of each sheet): best sheets R5350, R5348, R5345 at mean distance 1.35-1.40 (median 1.65): no sheet contains these shapes. R5464's alphabet is
+  probably not among the surviving key sheets (or they are redrawn too freely to match).
+- Period language model (`ctts/lm_qc/italian.txt` = lang/corpora it-quattrocento-tuscan + 1.2 MB it-renaissance + 1.0 MB la-latlib-letters, replacing the
+  CTTS Italian corpus on the class path: `java -cp "lm_qc;headless/classes" ...`): R5464 v2 tokens 15.44 M against 9.23 M shuffled (ratio 1.67);
+  dictionary coverage of the decryption (6,000-word list from the same corpus) 10.9 % against 3.7 % shuffled. Fragments only (scrivere, tornare,
+  amici, molto, rima, dio); no sentence reads. The corpus file is derived from lang/corpora (git-ignored) and is rebuilt by the two lines in this note.
+Conclusion for R5464: key partly right (families check), text not readable with the signs as read (about 10 % errors) and a solver without doubles,
+nulls or word signs. A full reading needs hand correction in the CTTS GUI.
