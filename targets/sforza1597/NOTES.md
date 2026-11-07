@@ -119,3 +119,17 @@ Also note: the pencil stamps show R5464 P1 and P2 may be two separate letters (n
 - Tried and failed: ranking the 115 key sheets by shape against the sign clusters (no sharp winner: bars, circles and crosses occur in all of them).
 Next: model doubles and nulls explicitly (extend the wrapper's reference text with doubled-letter tokens), try the same on F1 (R5460, R5459),
 F3 (R5463), the geometric E family; test cribs from the standard salutation at the head of R5464 P1.
+
+## 7 Nov 2026 (later): alphabets of family F, small groups, key-column test
+Cluster-share cosines with the v2 reader (100 clusters, all F leaves): R5464 P1/P2 0.89, R5465 P1/P2 0.95, R5459/R5460 0.94, R5463 alone;
+between groups 0.24-0.49 (R5465 and R5459/R5460 are the closest pair, 0.44-0.48). Four alphabets, no further pooling possible.
+Small groups through the CTTS Italian solver, real vs shuffled: F1 (R5460 + R5459, 779 signs, includes by mistake the three clear lines
+of R5460) 6.85 vs 6.45 M (1.06); F3 (R5463, 988 signs) 6.98 vs 6.26 M (1.12): too little text for the solver to separate from chance.
+Key-column match (`keycols.py`): for the 23 key sheets whose letter header and columns could be extracted automatically, the solver's R5464
+cluster-to-letter assignments fit none of them beyond chance (best z 2.9 over 23 sheets, not significant); the column extractor finds only a
+fraction of each sheet's signs, so this does not exclude any key.
+State at the end of this session: R5464 partly decoded (about 8 % of letters in Italian dictionary words), R5465 shows a language signal
+(1.52) but no reading, nothing read. What would still move it: (1) Lasry-style manual iteration in the CTTS GUI on R5464 (transcription
+fixes by eye, key locking and editing, doubles and nulls marked), (2) hand-built key-sheet columns (read the sheets by eye, 23 letters x up
+to 5 signs) to test each of the 115 against the four alphabets properly, (3) the Milan inventory entry for cart. 1597 (fetch via Chrome)
+to learn sender and date and so which key sheet applies.
