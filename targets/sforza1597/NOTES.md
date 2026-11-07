@@ -38,3 +38,12 @@ Compared by eye with the alphabet rows of key sheets R5329-R5344 (Ottone del Car
 Angelo de Amelia ...): the Angelo de Amelia keys (R5337, R5341) use tally-like bar and dot signs and a nomenclator of
 "o-bar-o" groups, close in kind to F but not shape-for-shape; nothing confirmed. The remaining ~85 key sheets were not
 compared in detail. A match needs a transcription of R5460 as sign tokens and a column-by-column check, not an eyeball scan.
+
+## 6 Nov 2026 (later still): R5460 transcription attempt, stopped
+Automatic route failed: thresholding plus connected components (OpenCV, `seg5460.py` in the local checkout) cannot separate the
+signs, because the long slash, p and q tails run through neighbouring lines and the ligatures (ff, tt, bb, o-bar-o) touch their
+neighbours; boxes merged two to five signs. Lines were cut by an ink-projection profile (rows at y = 318, 428, 549, 672, 803,
+939, 1067, 1198 on the 330 dpi render; the clear postscript follows). Reading lines 1-2 by eye shows a clean enough hand, but a
+usable token transcription (about 330 signs, about 30 shapes, with the tall slash either part of a sign or a word mark) is a
+manual job; no tokens exist yet and no solver has been run. Do not treat R5460 as attempted-and-failed: it is not yet attempted
+as a solve.
