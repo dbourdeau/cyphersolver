@@ -74,3 +74,6 @@ Favre topic engine (T16): 628 = la before conference (p=0.004), 620/1908/1440 in
 
 ## [2026-11-07] loop | engine loop 3
 356 proposals, 0 accepted (none), 0 demoted; coverage 12.5% -> 12.5%.
+
+## [2026-11-08] ingest | second round: 12 page scans transcribed for the collector
+Transcription pilot 271/283 groups (95.8%). Three codes sorted by codebook decode and profile: R1 (24 Oct, 23 Oct Trochu blocks), R2 (13 Nov Tours, matches the printed Gambetta-Favre text), Favre/delegation code (profile only). Favre pool doubled to 17,658 positions: 628/1792, 620/1915, 1908/1915 replicate; 310/1915 passes; 1440 fails; date profile null; Chao1 about 2,200. Corrections: old 87-95% overlap figure wrong (mixed pool); 701119 Favre family; 701023 block 2 is R1; a seven-group run on 2emeS-2 does not exist. The collector's data, workbooks and repertoire entries are not in this wiki.

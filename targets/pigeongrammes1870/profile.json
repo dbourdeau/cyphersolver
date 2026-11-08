@@ -267,6 +267,106 @@
    "kind": "literature search",
    "what": "Searched for the Nantes and Rennes correspondents named in the last paragraph (Dagron, Steenackers 1883 on HathiTrust, the 1872 article, archive.org full text): none identified.",
    "result": "failed"
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "transcription",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Pilot of reading page scans with Claude, on one telegram the collector had already typed by hand: 271 of 283 groups exactly right (95.8%); every miss was one digit (3/8, 1/2, 9/0), 8 of the 12 flagged by the reader.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "transcription",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "At the collector's request, transcribed 12 untranscribed page scans (about 14,000 groups) by reading them with Claude. The transcriptions were made for the collector and are shared with him only; they are not in this repository.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Independent re-reads of the weak pages. Four spots cannot be read from these scans (one Favre block on the 23 Oct page, the top 14 lines of one page, the lower part of one small block, one blurry block) and one page is unreadable. A group-level quality note went to the collector with the workbook.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "key from source",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "what": "Codebook decode against the collector's R1 repertoire: the 24 Oct Gambetta-to-Favre telegram reads with R1 (word-pair test z=18.8 against shuffled order, coverage 94%); the Steenackers-to-Trochu blocks of the 23 Oct page are R1 by coverage (80-90%) and by group-frequency profile (cosine 0.83-0.90).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "key from source",
+   "technique": [
+    "key matching",
+    "plaintext matching"
+   ],
+   "what": "Codebook decode against the collector's R2 ('chiffre nouveau') repertoire: the 13 Nov Tours telegram decodes with R2 (z=4.1, coverage 89%) and is Gambetta to Favre of 13 Nov, printed in the Enquete parlementaire, Depeches telegraphiques officielles, tome II pp. 302-304 (first third also in Favre vol. 2 pp. 108-110). The decode matches the printed sentence on Thiers's double failure and the passages on the Russian pretensions, England and a general congress.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis",
+    "statistical test"
+   ],
+   "what": "Family classification of the new blocks by group-frequency profile and codebook coverage. Favre-addressed telegrams of 8, 10, 19 Nov and 5 Dec and the 23 Oct Favre block belong to the Favre/delegation code (cosine 0.53-0.75 to the pooled family; 701119 is 0.62); one block (7 Dec table, third) is unplaced. Cosine alone does not separate R2 from the Favre code (the R2 page scores 0.45 against the Favre family), so the codebook decode is the test. R2 and the Favre code are both frequency-ordered numberings with homophones (rank correlation of number with frequency -0.40 and -0.43); a rank-for-rank decode scores about zero.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "statistics",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Favre code topic run on the doubled pool (17,658 positions; 7,504 new usable groups; within-letter shuffle null, Bonferroni). Replicating on the new half alone: 628 with 1792 (la before conference) 3/15, p=0.027; 620 with 1915, 5/8, p=0.001; 1908 with 1915, 4/9, p=0.017. 1440 does not replicate; 310 with 1915 (13/51) passes and survives correction; 151/888 borderline and not claimed; 146 and 121 untestable. Date profile null (45 groups at p<0.05 against a 95th percentile of 52 under shuffled dates). No word values from topic clusters.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "statistics",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Codebook size of the Favre code: Chao1 lower bound about 2,200 (three per cent of tokens are groups seen once). Corrects the earlier statement that it was larger than 2,300, which it was not.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "literature search",
+   "what": "Searched printed texts for the other new telegrams: no match except 13 Nov. The 7 Dec table is probably Chaudordy's dispatch of 7 Dec (Favre vol. 2 p. 255 says it reached Paris 15 Dec); the full text is probably in the Quai d'Orsay papers (not checked).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "key from source",
+   "technique": [
+    "plaintext matching",
+    "manual reconstruction"
+   ],
+   "what": "Aligned the 13 Nov R2 decode with the printed text to fill gaps in the collector's R2 repertoire: twelve new R2 entries (sent to the collector, not listed here), and two transcription slips of ours exposed and corrected.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Cheap structure tests on the new pages (overlap, frequency order, rank-for-rank decode). Corrections found: an earlier overlap figure (87-95% 'same code') was wrong because the old pool mixes codes; 701119 is Favre-family, not a fourth family; 701023 block 2 is R1; a seven-group run first read on 2emeS-2 does not exist on the scan.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -283,7 +383,7 @@
   "verification": [
    "matched control"
   ],
-  "notes": "Not read. Structure found: alphabetical lexicon, spelled names (Steenackers, Mercadier, pigeons, Trochu) and a last paragraph of family news. Needs a second text in the inspectors' code or a printed copy of the circular; no such text is in the collection. Pillon's transcriptions and scans are not published here (DATA_NOT_INCLUDED.md). The work on the Favre / delegation code (Chaudordy letter, 18 Dec 1870) is a different cipher, still in progress, with no page of its own yet.",
+  "notes": "Not read. Structure found: alphabetical lexicon, spelled names (Steenackers, Mercadier, pigeons, Trochu) and a last paragraph of family news. Needs a second text in the inspectors' code or a printed copy of the circular; no such text is in the collection. Pillon's transcriptions and scans are not published here (DATA_NOT_INCLUDED.md). The work on the Favre / delegation code (Chaudordy letter, 18 Dec 1870) is a different cipher, still in progress, with no page of its own yet. Second round (8 Nov 2026): 12 further page scans transcribed for the collector; three codes identified in them (R1, R2, the Favre/delegation code); the 13 Nov Tours telegram decodes with the collector's R2 and matches its printed text. The inspectors' code itself has no second text, so this target's outcome is unchanged.",
   "credits": [
    {
     "who": "pillon",

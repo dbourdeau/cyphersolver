@@ -338,3 +338,18 @@ has a different ending or interpolations.
 2. Read the other pooled Favre letters with that codebook; look for the printed plaintext of Favre's letters of 28 Nov, 20-21 Dec,
 19 and 26 Jan (Favre's book vols 1-2, Chaper report). 3. Check whether the code is alphabetical like R1. 4. Fetch the scans needed (2emeS-15, 31, 38) by range request.
 5. profile.json once the work is more than a first pass.
+
+## Second round, 8 Nov 2026 (summary for the write-up; the collector's data is NOT in this folder)
+At the collector's request 12 untranscribed page scans (about 14,000 groups) were transcribed by reading them with Claude; the transcriptions, workbook and
+R1/R2/R3 contents stay outside the repo (`C:/Users/dbour/pigeon_dl`) and are shared with him only; the page names counts and percentages, never tables.
+- Pilot on one hand-typed telegram: 271/283 groups exact (95.8%), misses all one digit (3/8, 1/2, 9/0), 8 of 12 flagged. Re-reads: four spots unreadable
+  (one Favre block on the 23 Oct page, top 14 lines of one page, lower part of one small block, one blurry block); one page unreadable.
+- Codes: R1 (24 Oct Gambetta-Favre, coverage 94%, z=18.8; Steenackers-Trochu blocks of 23 Oct, coverage 80-90%, cosine 0.83-0.90); R2 (13 Nov Tours telegram,
+  coverage 89%, z=4.1; printed in Enquete parlementaire, Depeches telegraphiques officielles II pp. 302-304, Favre II pp. 108-110); Favre/delegation code
+  (8, 10, 19 Nov, 5 Dec, 23 Oct Favre block; cosine 0.53-0.75; 701119 = 0.62); 7 Dec table third block unplaced. R2 vs Favre not separable by cosine (0.45).
+- R2 gap alignment: twelve new R2 entries sent to the collector (not listed here); two transcription slips of ours found.
+- Favre code doubled pool (17,658 positions): 628/1792, 620/1915, 1908/1915 replicate on the new half; 310/1915 passes; 1440 fails; date profile null;
+  Chao1 about 2,200 (corrects "larger than 2,300"). No word values.
+- Printed-text search: no match except 13 Nov; 7 Dec table probably Chaudordy's dispatch of 7 Dec (Favre II p. 255); Quai d'Orsay papers not checked.
+- Corrections: old overlap figure 87-95% wrong (mixed pool); 701119 is Favre family; 701023 block 2 is R1; a seven-group run read on 2emeS-2 does not exist.
+- Open requests to the collector: beacon pairs, recipient 6819 3412, Nantes/Rennes names, other ciphertext, rescans of the four weak spots.
