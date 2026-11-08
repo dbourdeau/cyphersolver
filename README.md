@@ -891,6 +891,12 @@ cd richelieu && pip install requests && python build_ngrams.py && python solve.p
   design that the same solver does recover.
 - Before treating a catalogue item as unsolved, check the 19th-century printed editions (Avenel, Camden Society,
   Nuntiaturberichte) and the comment threads of the list posts. Six items so far were already solved in the open.
+- **Open items, and closing issues** (8 Nov 2026). It is fine to leave an item open or untried. A target is finished,
+  or an issue closed, with the open items recorded in the target's `NOTES.md` (`## Remaining gaps`, each with its
+  blocker, and the `## Escalation` list) and in `profile.json`; nothing has to stay open on GitHub to carry them. An
+  issue or pull request with no response from its author 4 days after our last comment is closed with a comment that
+  lists what is open and says it can be reopened at any time. Until then, a submission whose author says they will
+  refresh it is held, not written up, and falls under the same rule. A date already promised to a contributor is kept.
 - **Catalogue vetting bar** (28 Oct 2026). `catalogue.json` holds vetted leads only. What sweeps find goes to
   `research/leads.json` and enters the catalogue only when its `vetting` block records all of these: (1) **seen**: the
   ciphertext was looked at on a scan, facsimile or printed transcription, with where, how much cipher, and that no
