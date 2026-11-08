@@ -1,6 +1,6 @@
 # AGAD 1/338/0/1/446: lecture
 
-Code groups are read where `numbers.md` gives a value. `[?word]` is a doubtful reading, and `[480]` is a code group that stays open. Numbers that act as punctuation or nulls are left out, and the decryption keeps them.
+Code groups are read where `numbers.md` gives a value. `[480]` is a code group that stays open, and `[?word]` is a doubtful reading. A word in square brackets is supplied. Numbers that act as punctuation or nulls are left out, and the decryption keeps them.
 
 À Bialystok, ce 22 mars 1757.
 
@@ -14,7 +14,7 @@ J'ai reçu la lettre que Votre Excellence m'a fait l'honneur de m'écrire le 6 d
 
 Quoique le projet concerté à Varsovie rencontre des obstacles de la part de nos amis, je ne crois nullement que nous devions le perdre de vue.
 
-Je prévois même des [?événements] qui en rendront l'exécution indispensable.
+Je prévois même des événements qui en rendront l'exécution indispensable.
 
 Mais l'objet le plus pressant qui doit nous occuper dans ce moment est l'abus que fait Mr le [?Stolnik] [de] Lithuanie de sa mission.
 
@@ -24,11 +24,11 @@ N'est-il pas d'ailleurs très vraisemblable que la Russie fera valoir ce prétex
 
 Je crois donc, Monseigneur, qu'il n'y a pas de tems à perdre pour la publication du manifeste que je veux faire de concert avec vous et avec toute votre maison.
 
-J'en ai déjà prévenu Mr le Palatin [?de Kiovie] [?et le Czesnik] ; ce dernier est très résolu de se joindre à moi dans une affaire si intéressante pour la patrie, et je me flatte que d'autres bons patriotes se feront un devoir de suivre notre exemple.
+J'en ai déjà prévenu Mr le Palatin [de] Kiovie [et le] Czesnik ; ce dernier est très résolu de se joindre à moi dans une affaire si intéressante pour la patrie, et je me flatte que d'autres bons patriotes se feront un devoir de suivre notre exemple.
 
 J'en ai même des assurances très positives de quelques palatinats.
 
-Je suis donc convenu avec Mr le Palatin [?de Kiovie] [480] et avec [?le Czesnik] de la couronne de m'aboucher avec eux vers la fin du mois prochain, les priant de vouloir se rendre ici pour ce tems-là, ou bien m'indiquer un endroit où je puisse aller les joindre.
+Je suis donc convenu avec Mr le Palatin [de] Kiovie [480] et avec [le] Czesnik de la couronne de m'aboucher avec eux vers la fin du mois prochain, les priant de vouloir se rendre ici pour ce tems-là, ou bien m'indiquer un endroit où je puisse aller les joindre.
 
 Je prie votre Excellence de ne pas nous refuser sa présence dans une [?occasion] de cette importance, où nous pourrons en même tems nous arranger sur le parti à prendre suivant les conjonctures. [367]
 

@@ -1,31 +1,46 @@
-# Key of Charles V to Ferrante Gonzaga, 11 August 1542 (Biblioteca Estense), found by Prabal Gupta (issue #318, repository prabal-rje/branicki-1757, CC BY 4.0).
-# A base sign is a consonant; a small digit above it adds the vowel: 1-5 and 6-0 both run a, e, i, o, u. The label names the shape of the sign in transcription.txt, not a value.
-# Signs with no digit are single letters. The sign s marks a doubled or palatal consonant (de-s-e = desse; se-s-aladamente = señaladamente; Perpi-s-an = Perpiñan). A few rare signs are fixed by sense and are in decryption.txt only.
-sign	digit	value
-x	1-5	d
-x	none	n
-z	1-5	r
-z	6-0	b
-z	none	i
-q	6-0	n
-q	none	e
-t	1-5	f
-t	6-0	l
-t	none	y
-d	1-5	p
-n	1-5	m
-n	none	u
-g	1-5	h (rarely c)
-g	6-0	c
-b	6-0	s
-a	1-5	t
-a	none	m
-w	1-5	tr
-c	1-5	g
-c	6-0	qu
-c	none	l
-f	none	s
-h	none	e
-v	none	o
-y	none	a
-o	none	r
+# Key of Charles V to Ferrante Gonzaga, Monzón, 11 August 1542 (Biblioteca Estense, Lettera K, sfasc. IV, cc. 109-110), found by Prabal Gupta (repository prabal-rje/branicki-1757, CC BY 4.0).
+# A base sign is a consonant, and a small digit above it adds the vowel: 1 to 5 run a, e, i, o, u, and 6 to 9 and 0 run a, e, i, o, u again for a second consonant. A sign with no digit is a single letter.
+# The label names the shape of a sign in transcription.txt, not a value. "none" is a sign with no digit. The column uses gives the count in this letter.
+# g with 6 gives "ha", not "ca": its four uses are all in "haver", and no cipher word of the letter needs "ca". c with no digit gives d at the end of a syllable (seguridad, necesidad, podrá) and l elsewhere.
+# s marks a doubled or palatal consonant between two vowels: ss, ll, rr or ñ. X, and g with no digit, are nulls.
+sign	digit	value	uses	note
+x	1-5	d	73	
+x	none	n	43	
+z	1-5	r	32	
+z	none	n	2	
+d	1-5	p	28	
+n	1-5	m	28	
+n	none	u	5	
+a	1-5	t	36	
+w	1-5	tr	11	
+q	6-0	n	32	
+t	6-0	l	39	
+t	none	y	25	
+g	6	h	4	only in haver
+g	7-0	c	28	ce, ci, co, cu
+g	none	null	1	
+b	6-0	s	34	
+S	any	b	9	sigma
+I	any	b	4	short stroke
+F	2	b	1	
+F	none	f	1	
+P	any	f	7	hooked stem
+Q	any	pr	2	looped angle
+Q	none	r	1	
+c	1-5	g	9	
+c	6-0	qu	17	
+c	none	l	19	d at the end of a syllable
+C	none	c	3	arch
+E	none	p	2	slant with a dot
+M	none	m	1	
+G	none	f	1	triangle
+T	none	s	3	
+f	none	s	61	
+h	none	e	38	
+v	none	o	22	
+y	none	a	29	
+D	none	i	6	delta
+o	none	r	31	
+r	none	r	3	
+s	none	(doubling)	13	ss, ll, rr or ñ
+X	none	null	3	crossed loop
