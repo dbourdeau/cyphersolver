@@ -47,7 +47,9 @@ A write-up is written from the target's `NOTES.md` and `profile.json`, and goes 
 7 Nov 2026 review of all 559 pages found most pages carrying at least one error of this kind).
 
 - After changing a finished target's `NOTES.md` or `profile.json`, re-read its page against them, fix it, then run
-  `python docs/_check_writeup.py --reviewed <slug>` (`/writeup` section 4a). Audit section Q lists the pages owed; a split
+  `python docs/_check_writeup.py --reviewed <slug>` (`/writeup` section 4a). A **new** page also needs its claims review
+  (a separate read-only agent checks it against its sources, `.claude/skills/writeup/claims-review.md`), recorded with
+  `--reviewed <slug> --claims-reviewed`; the checker cannot judge whether a sentence is true, a second reader can. Audit section Q lists the pages owed; a split
   or merge makes every page involved owed. Facts on a page come from the sources, are stated once, and anything the
   sources do not carry is marked as not checked or cut. Credits never come from git authorship alone.
 - A page copied from another page must have its head, hero, glance box and Sources replaced (audit section M); markup

@@ -10,11 +10,13 @@ Run from anywhere:
   python docs/_check_writeup.py --audit         finished targets with no write-up, and other drift
   python docs/_check_writeup.py --gate          CI gate: fail on a head, link or markup violation that is not in the baseline
                                                 (docs/_audit_baseline.json; --gate --write-baseline refreshes it)
-  python docs/_check_writeup.py --reviewed <slug> [<slug> ...] | --all
+  python docs/_check_writeup.py --reviewed <slug> [<slug> ...] | --all  [--claims-reviewed]
                                                 record that the page was re-read against the current NOTES.md and
                                                 profile.json (docs/_page_sources.json); refuses a page that fails the
                                                 head, link or markup checks. Any later change to those sources shows
                                                 up in the audit (section Q) until the page is re-read and recorded again.
+                                                --claims-reviewed adds that a separate reviewer checked the page's claims
+                                                (.claude/skills/writeup/claims-review.md); a page with no record needs it.
   python docs/_check_writeup.py --hook start    SessionStart hook: short audit as context for the session
   python docs/_check_writeup.py --hook stop     Stop hook: block the stop once when a target this session
                                                 worked on looks finished in its NOTES but has no write-up
@@ -361,7 +363,8 @@ def ledger_problems(slug, ledger=None, rows=None):
     if d is None: return []                       # no target folder behind this page (surveys, tool pages)
     rec = (ledger if ledger is not None else load_ledger()).get(slug)
     if not rec:
-        return [f'no review record: check the page against its NOTES.md and profile.json, then run python docs/_check_writeup.py --reviewed {slug}']
+        return [f'no review record: have the page claims-checked against its sources (.claude/skills/writeup/claims-review.md), fix the findings, '
+                f'then run python docs/_check_writeup.py --reviewed {slug} --claims-reviewed']
     if rec.get('digest') != d:
         return [f'NOTES.md or profile.json changed since the page was last reviewed ({rec.get("reviewed", "?")}): re-read the page against them, '
                 f'fix what is stale (head, glance box, counts, Still open, credits), then run python docs/_check_writeup.py --reviewed {slug}']
@@ -422,20 +425,32 @@ def gate(write_baseline=False):
     for s in drift[:40]: print(f'  review needed: {s}')
     return 1 if bad else 0
 
-def mark_reviewed(slugs):
+def mark_reviewed(args):
     """Record the current NOTES.md/profile.json fingerprint for pages that have just been re-read against them.
-    Refuses a page whose head, links or markup fail, so recording is not a rubber stamp."""
+    Refuses a page whose head, links or markup fail, so recording is not a rubber stamp. --claims-reviewed says a
+    separate reviewer also checked the page's claims against its sources (.claude/skills/writeup/claims-review.md);
+    a page with no earlier record cannot be recorded without it."""
+    claims = '--claims-reviewed' in args
+    slugs = [a for a in args if a != '--claims-reviewed']
     pages = manifest()[0]
     rows, heads, titles = readme_rows(), page_heads(), manifest_titles()
     if slugs == ['--all']: slugs = sorted(s for s in pages if s not in SURVEYS and s in heads)
-    ledger, done, refused = load_ledger(), 0, 0
+    ledger, done, refused, today = load_ledger(), 0, 0, time.strftime('%Y-%m-%d')
     for s in slugs:
         if s not in pages: print(f'{s}: not a write-up in docs/_build_site.py'); refused += 1; continue
         d = source_digest(s, rows)
         if d is None: continue
         pr = head_problems(s, heads, titles) + link_problems(s, heads) + integrity_problems(s, heads)
         if pr: print(f'{s}: not recorded, fix first: ' + '; '.join(pr)); refused += 1; continue
-        ledger[s] = {'digest': d, 'reviewed': time.strftime('%Y-%m-%d')}; done += 1
+        prev = ledger.get(s)
+        if prev is None and not claims:
+            print(f'{s}: not recorded: a new page needs its claims review (.claude/skills/writeup/claims-review.md); '
+                  f'run it, fix the findings, then python docs/_check_writeup.py --reviewed {s} --claims-reviewed')
+            refused += 1; continue
+        rec = {'digest': d, 'reviewed': today}
+        if claims: rec['claims'] = today
+        elif prev and prev.get('claims'): rec['claims'] = prev['claims']
+        ledger[s] = rec; done += 1
     LEDGER.write_text(json.dumps(ledger, indent=1, sort_keys=True) + '\n', encoding='utf-8')
     print(f'recorded {done} page(s), refused {refused}'); return 0 if not refused else 1
 
@@ -493,6 +508,10 @@ def check_slug(slug):
             item(prob is None, prob or 'markup is sound (balanced tags, no damaged character entities)')
         for prob in ledger_problems(slug) or [None]:
             item(prob is None, prob or 'the page was reviewed against the current NOTES.md and profile.json (review ledger)')
+        rec = load_ledger().get(slug)
+        if rec is not None:
+            item(bool(rec.get('claims')), 'a separate reviewer checked the page\'s claims against its sources (python docs/_check_writeup.py '
+                 f'--reviewed {slug} --claims-reviewed; see .claude/skills/writeup/claims-review.md)', warn=True)
         item(bool(re.search(r'<h2[^>]*>.*?Sources', page, re.S)), 'a Sources section', warn=True)
         hero_end = page.find('</section>', page.find('<section class="hero">'))
         item(hero_end >= 0 and bool(re.match(r'\s*<main>', page[hero_end + 10:])),

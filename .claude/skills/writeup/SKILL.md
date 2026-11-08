@@ -357,11 +357,20 @@ PYTHONUTF8=1 python _build_stats.py
 PYTHONUTF8=1 python _build_site.py
 cd ..
 python docs/_check_writeup.py <slug>
-python docs/_check_writeup.py --reviewed <slug>     # after re-reading the page against NOTES.md and profile.json
+```
+
+**Claims review (required for a new page).** The checker cannot tell whether a sentence is true, so before the page
+is recorded a separate reviewer checks it against its sources: follow `.claude/skills/writeup/claims-review.md`
+(launch a read-only agent with that brief on the page, then fix every error and likely finding, choosing the
+wording the sources support). Then record it:
+
+```
+python docs/_check_writeup.py --reviewed <slug> --claims-reviewed
 ```
 
 `--reviewed` records a fingerprint of the target's `NOTES.md` and `profile.json` (docs/_page_sources.json) and
-refuses a page that fails the head, link or markup checks. The checker fails a page with no record, and the audit
+refuses a page that fails the head, link or markup checks; without `--claims-reviewed` it refuses a page that has
+no record yet (a page recorded earlier without one shows a warning on the per-page check). The checker fails a page with no record, and the audit
 (section Q) and the Stop hook flag any page whose sources changed after its record, so a stale page cannot sit
 unnoticed. CI runs `python docs/_check_writeup.py --gate` on every push and pull request: it fails on a head, link
 or markup violation that is not in `docs/_audit_baseline.json`.
@@ -391,7 +400,8 @@ sources no longer support. That is the commonest error found in the 7 Nov 2026 r
 
 - Whenever you change `NOTES.md` or `profile.json` of a finished target, re-read its page against them: the head and
   meta description, the glance box, "Still open", every count and percentage, credits, and the Full-texts
-  summary. Fix what changed, run `python docs/_check_writeup.py <slug>`, then `--reviewed <slug>`. The audit lists
+  summary. Fix what changed, run `python docs/_check_writeup.py <slug>`, then `--reviewed <slug>` (a small change needs a
+  careful re-read; after a large rewrite of the body, run the claims review again with `--claims-reviewed`). The audit lists
   the pages you still owe (section Q); the Stop hook asks once if you changed sources and left their page unreviewed.
 - When a target is split or merged, do this for **every** page involved, and remove the record's rows from the
   glance box and hero of the page that lost them (bergamo1585, windischgraetz1720, beatrice1482 and others kept
