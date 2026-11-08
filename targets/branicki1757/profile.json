@@ -39,32 +39,32 @@
   },
   {
    "id": "agad-338-1398",
-   "read": "read in part",
+   "read": "read",
    "shelfmark": "AGAD, zesp. 338, 1/338/0/1/1398",
-   "date": "24 July, probably 1757",
+   "date": "24 July 1757",
    "year": 1757,
    "country": "Poland-Lithuania",
-   "route": "Matusewic -> a patron (the \"Grand Général de la couronne\")",
+   "route": "Marcin Matuszewicz (signed Matusewic) -> a patron (the \"Grand Général de la couronne\")",
    "language": "French",
    "cleartext_in_document": "none",
    "plaintext": {
     "location": [
      "none"
     ],
-    "source": "No decipherment or clear copy of the cipher found. Two pages wholly in cipher; page 2 is rough.",
+    "source": "No decipherment or clear copy of the cipher found. Wholly in cipher over four pages.",
     "partial": false
    },
    "length": {
-    "tokens": 2442,
+    "tokens": 2507,
     "unit": "letters",
     "measured": false,
     "file": "transcription_1398.txt"
    },
    "transcription": {
     "by": "llm from images",
-    "source": "the contributor's transcription from the AGAD scans (two passes reconciled for 1398, 1399, 1400), with AI models reading the scans; not compared with the scans by the project",
+    "source": "the contributor's transcription from the AGAD scans: page 1 from one pass, pages 2 to 4 a reread checked against three blind passes; AI models read the scans; not compared with the scans by the project",
     "image_quality": "fair",
-    "notes": "Two pages wholly in cipher; page 2 is rough."
+    "notes": "Pages 2 to 4 reread with the key in view and compared with three blind passes on the enlarged scan (pass_1398/comparison.tsv)."
    },
    "places": {
     "from": "Kaunas",
@@ -75,7 +75,7 @@
    "id": "agad-338-1399",
    "read": "read",
    "shelfmark": "AGAD, zesp. 338, 1/338/0/1/1399",
-   "date": "probably June or July 1756",
+   "date": "1756, before August",
    "year": 1756,
    "country": "Poland-Lithuania",
    "route": "unknown (probably Boeven, Radziwiłł's secretary) -> a correspondent in the French interest",
@@ -89,7 +89,7 @@
     "partial": false
    },
    "length": {
-    "tokens": 3062,
+    "tokens": 3086,
     "unit": "letters",
     "measured": false,
     "file": "transcription_1399.txt"
@@ -123,7 +123,7 @@
     "partial": false
    },
    "length": {
-    "tokens": 2169,
+    "tokens": 2184,
     "unit": "letters",
     "measured": false,
     "file": "transcription_1400.txt"
@@ -223,6 +223,18 @@
    "kind": "control",
    "what": "Project check: the decryption of 446 follows from the transcription and key on every line; a lexicon test (about 140 French words) covers 0.53 to 0.59 of the letters of the four letters under the key against at most 0.27 for any of 300 shuffled keys. No scan compared (VERIFICATION.md).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-07",
+   "kind": "transcription",
+   "what": "Refresh from the contributor's repository at commit f465095, which carries his later corrections: the transcriptions were checked against the scans and Matuszewicz's memoirs, pages 2 to 4 of 1398 were reread and compared with three blind passes (37 signs changed), 1399 and 1400 and the number code were corrected, and every open group was searched in the other letters, Konopczyński and the memoirs.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-07",
+   "kind": "control",
+   "what": "Project re-check on the refreshed files: the decryption of 446 follows from the transcription and key on all 58 lines; the word-list test covers 0.54 to 0.60 of the letters of the four letters against at most 0.28 for any of 300 shuffled keys (VERIFICATION.md).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -231,7 +243,7 @@
    "verdict": "not applicable",
    "notes": "The statistical test needs a French letter model (lang/, fr-modern), whose corpus cannot be fetched from this environment (Gutenberg returns 403). A lexicon test against 300 shuffled keys was used instead (VERIFICATION.md, section 3); it is not the project's n-gram validation."
   },
-  "class": "read in part",
+  "class": "read",
   "verification": [
    "key confirms",
    "historical consistency"
@@ -254,25 +266,20 @@
   ],
   "gaps": [
    {
-    "item": "page 2 of letter 1398: rough transcription, reading repaired by sense",
-    "blocker": "illegible",
-    "detail": "the two transcription passes differ; the scans are not reachable from the project"
-   },
-   {
     "item": "number codes still open or guessed (195, 296, 367, 385, 386, 480, 496, 580, 775, 795, 841 and the names read as [?word])",
     "blocker": "open-codes",
-    "detail": "each occurs once or twice and no clear text fixes it"
+    "detail": "each occurs once or twice and no clear text fixes it; the contributor tried the other letters, Konopczyński and the memoirs on every one"
    },
    {
-    "item": "a human check of the transcriptions against the AGAD scans",
+    "item": "a human check of the transcriptions against the AGAD scans, including the fifth letter of the signature of 1398",
     "blocker": "needs-physical-access",
     "detail": "szukajwarchiwach.gov.pl is not reachable from the project and the images may not be redistributed"
    }
   ],
-  "notes": "Key and readings by Prabal Gupta; checked by the project against their own files and a lexicon control, not against the scans. Letters 446, 1399 and 1400 read at 0.97 to 0.99; 1398 at 0.955 with a rough second page. Letter 1401 of the same catalogue entry is not covered.",
-  "fraction_read": 0.975,
+  "notes": "Key and readings by Prabal Gupta, refreshed at his repository commit f465095; checked by the project against their own files and a lexicon control, not against the scans. All four letters read at 0.97 to 0.996.",
+  "fraction_read": 0.986,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Counted from the readings: cipher words of the four letters, 369 (446) + 552 (1398) + 722 (1399) + 472 (1400) = 2,115, of which 52 are holes (unread code groups, [?...] stretches and [?word] doubtful readings: 12 + 25 + 12 + 3): 2,063 of 2,115 = 97.5%. The reading of 1398 page 2 repairs a garbled decryption by sense, so its share is an upper bound.",
+  "fraction_read_source": "Counted from the reading files: cipher words of the four letters, 369 (446) + 584 (1398) + 725 (1399) + 472 (1400) = 2,150, of which 31 are holes (unread code groups, [?...] stretches and [?word] doubtful readings: 7 + 16 + 6 + 2): 2,119 of 2,150 = 98.6%. Pages 2 to 4 of 1398 were reread with the key in view, so its share is not a blind reading.",
   "key_file": "key.tsv",
   "texts": [
    {
@@ -286,33 +293,33 @@
     "translation": "translation_446.md",
     "language": "fr",
     "state": "read",
-    "read_share": 0.967,
+    "read_share": 0.981,
     "summary": "Branicki tells Potocki that the plan agreed at Warsaw meets obstacles but must not be lost from sight, that the most pressing matter is the abuse an envoy (probably the stolnik of Lithuania) makes of his mission, and proposes a manifesto to be published together with Potocki's house and other patriots, to meet at the end of the next month.",
     "reading_review": {
      "grade": "B",
      "by": "Claude (for the project)",
      "date": "2026-11-07",
-     "note": "Read the decryption as French sentences: the cipher paragraph builds coherent, well-formed clauses; the unspaced decryption is normalised in the reading and a few names are guessed (720 Stolnik, 275/273 Czesnik, 575 Palatin)."
+     "note": "Read the decryption as French sentences: the cipher paragraph builds coherent, well-formed clauses; the unspaced decryption is normalised in the reading and a few names are guessed (720 Stolnik, 270/273 Czesnik, 575 Palatin)."
     }
    },
    {
     "doc": [
      "agad-338-1398"
     ],
-    "label": "Matusewic, 24 July (1757?) (AGAD 1/338/0/1/1398)",
+    "label": "Marcin Matuszewicz (Matusewic), Jaswojnie, 24 July 1757 (AGAD 1/338/0/1/1398)",
     "transcription": "transcription_1398.txt",
     "decryption": "decryption_1398.txt",
     "reading": "reading_1398.md",
     "translation": "translation_1398.md",
     "language": "fr",
-    "state": "read in part",
-    "read_share": 0.955,
-    "summary": "A field report from the Russian army under Apraxin at the frontier of Prussia: famine and requisitions in Lithuania, deputies of the Prussian towns come to submit, an army of sixty thousand, rumours of poison in the flour; page 2 is rough.",
+    "state": "read",
+    "read_share": 0.973,
+    "summary": "A field report from the Russian army under Apraxin at the frontier of Prussia: famine and requisitions in Lithuania, deputies of the Prussian towns come to submit, an army of sixty thousand, rumours of poison in the flour.",
     "reading_review": {
      "grade": "B",
      "by": "Claude (for the project)",
      "date": "2026-11-07",
-     "note": "Page 1 builds coherent French sentences; page 2 is rough: the decryption has garbled stretches that the reading repairs by sense with the key and a French character model."
+     "note": "Read the decryption as French sentences, all four pages; pages 2 to 4 were reread by the contributor with the key in view and compared with three blind passes, so the reading is coherent but not blind; a few stretches stay doubtful."
     }
    },
    {
@@ -326,7 +333,7 @@
     "translation": "translation_1399.md",
     "language": "fr",
     "state": "read",
-    "read_share": 0.983,
+    "read_share": 0.992,
     "summary": "An insider reports on the party of the Lithuanian grand hetman: a congress at Iwie agrees to deposit 146,000 francs at Koydanow to buy the coming dietines and the Tribunal of 1757, five lords' shares are listed (they add up), and the writer proposes a direct correspondence with the French minister.",
     "reading_review": {
      "grade": "A",
@@ -346,7 +353,7 @@
     "translation": "translation_1400.md",
     "language": "fr",
     "state": "read",
-    "read_share": 0.994,
+    "read_share": 0.996,
     "summary": "A bloody dietine at Brest, with massacred gentlemen and brother against brother; the rival party has spent 200,000 francs in the palatinates and elected its own deputies; the palatine decides not to risk the party's own money; signed Boeven.",
     "reading_review": {
      "grade": "A",

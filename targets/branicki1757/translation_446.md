@@ -1,6 +1,6 @@
 # AGAD 1/338/0/1/446: English translation
 
-From `reading_446.md`, with the same holes. `[?word]` is a doubtful reading, and `[480]` is an unread code group.
+From `reading_446.md`, with the same holes. `[480]` is an unread code group, `[?word]` is a doubtful reading, and a word in square brackets is supplied.
 
 Białystok, 22 March 1757.
 
@@ -14,7 +14,7 @@ I have received the letter that Your Excellency did me the honour of writing to 
 
 Although the plan agreed at Warsaw meets obstacles from our friends, I do not at all believe that we should lose sight of it.
 
-I even foresee [?events] that will make carrying it out indispensable.
+I even foresee events that will make carrying it out indispensable.
 
 But the most pressing matter that must occupy us at this moment is the abuse that Mr the [?Stolnik] of Lithuania is making of his mission.
 
@@ -24,11 +24,11 @@ Is it not, besides, very likely that Russia will use this pretext to demand from
 
 So I believe, my lord, that there is no time to lose in publishing the manifesto that I want to make together with you and with your whole house.
 
-I have already told Mr the Palatine [?of Kiev] [?and the Czesnik]; the latter is firmly resolved to join me in an affair so important for the fatherland, and I flatter myself that other good patriots will make it their duty to follow our example.
+I have already told Mr the Palatine [of] Kiev [and the] Czesnik; the latter is firmly resolved to join me in an affair so important for the fatherland, and I flatter myself that other good patriots will make it their duty to follow our example.
 
 I even have very positive assurances of this from some palatinates.
 
-So I have agreed with Mr the Palatine [?of Kiev] [480] and with [?the Czesnik] of the Crown to confer with them toward the end of next month, asking them to come here at that time, or else to name a place where I can go and join them.
+So I have agreed with Mr the Palatine [of] Kiev [480] and with [the] Czesnik of the Crown to confer with them toward the end of next month, asking them to come here at that time, or else to name a place where I can go and join them.
 
 I beg Your Excellency not to refuse us your presence at an [?occasion] of this importance, where we can at the same time agree on the course to take according to events. [367]
 

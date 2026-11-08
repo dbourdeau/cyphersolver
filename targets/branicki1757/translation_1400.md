@@ -16,7 +16,7 @@ All of them, except a very small number, were of the opposite party, which arbit
 
 A dozen gentlemen, who will not fail to go to Warsaw as well to block the work of these illegally elected deputies, have solemnly protested against this act at the court of Bielsk in Podlachia.
 
-At the head of the mutineers was Mr [?Buchowiecki], territorial notary of that palatinate, once one of our friends, but who has since turned his coat. At this dietine he made plenty of work for Mr the Palatine.
+At the head of the mutineers was Mr Buchowiecki, territorial notary of that palatinate, once one of our friends, but who has since turned his coat. At this dietine he made plenty of work for Mr the Palatine.
 
 This troublemaker still claims he will bring this palatinate to a review [385] of the nobles, the first step toward a confederation. But Mr Wereszczaka, ensign of this palatinate, backed by Mr the Palatine, strongly opposes it.
 

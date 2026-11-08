@@ -16,7 +16,7 @@ Tous, excepté un fort petit nombre, étoient du parti contraire, qui a élu arb
 
 Une douzaine de gentilshommes, qui ne manqueront pas aussi de se rendre à Varsovie pour empêcher l'activité de ces nonces illégitimement élus, ayant protesté solennellement contre cet acte au grod de Bielsk en Podlachie.
 
-À la tête des mutins se trouvoit Mr [?Buchowiecki], notaire territorial dudit palatinat, autrefois de nos amis, mais qui depuis nous a tourné casaque. Celui-ci à cette diétine a bien taillé de la besogne à Mr le Palatin.
+À la tête des mutins se trouvoit Mr Buchowiecki, notaire territorial dudit palatinat, autrefois de nos amis, mais qui depuis nous a tourné casaque. Celui-ci à cette diétine a bien taillé de la besogne à Mr le Palatin.
 
 Ce turbulent prétend encore jusqu'à présent engager ce palatinat à une revue [385] de la noblesse, premier pas d'une confédération. Mais Mr Wereszczaka, enseigne de ce palatinat, soutenu de Mr le Palatin, s'y oppose fortement.
 
