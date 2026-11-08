@@ -1,0 +1,189 @@
+{
+ "schema_version": 1,
+ "target": "mexico1911",
+ "title": "A coded telegram to Federico González Garza on a mutiny feared after Díaz's resignation, 19 May 1911 (CEHM-Carso CMXV.18.1770.2-4): read with the fonds' key card by Prabal Gupta",
+ "documents": [
+  {
+   "id": "cmxv-18-1770",
+   "read": "read in part",
+   "shelfmark": "CEHM-Carso, Fondo CMXV (Archivo Federico González Garza), CMXV.18.1770.2-4",
+   "date": "19 May 1911",
+   "year": 1911,
+   "country": "Mexico",
+   "route": "Fausto E. Miranda and S. Herrera Moreno (Mexico City) -> Federico González Garza (El Paso, Texas), addressed to the alias W. Olliphant",
+   "language": "Spanish",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "The archive's record says \"Texto en clave y palabras descifradas\" but no decipherment stands on the sheet and the pencil notes do not touch the coded words.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 65,
+    "unit": "letters",
+    "measured": false,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "published",
+    "source": "the contributor's transcription of the CEHM scan; the project did not see the scan",
+    "image_quality": "unknown",
+    "notes": "A Western Union form; ten words are coded and the rest is clear Spanish."
+   },
+   "places": {
+    "from": "Mexico City",
+    "to": "El Paso"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "A shifted alphabet over the 26 letters of Spanish counting ch, ll and ñ as letters (cipher p q r s t u v x y z a b ch d e f g h i k l ll m ñ n o for plain a b c d e f g h i j k l m n ñ o p q r s t u v x y z); ten words of the telegram are coded, the rest is clear.",
+  "symbol_kind": "letters",
+  "distinct_symbols": 26,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The archive's own key card for the signer S. Herrera Moreno (CMXV.16.1557.1, scan 7) gives the alphabet; no decipherment of this telegram stands on the sheet and the contributor found none in print (Narváez 2019 and the recipients' papers not checked).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "transcription",
+   "key from archive"
+  ],
+  "attack": "key from archive",
+  "human_role": "Prabal Gupta transcribed the telegram, found the key card and built the reading (issue #330, repository prabal-rje/branicki-1757). The project re-ran the ten decryptions and the key checks; it has not seen the scans.",
+  "models": [
+   "unknown"
+  ],
+  "first_date": "2026-11-07",
+  "last_date": "2026-11-08"
+ },
+ "solution": [
+  {
+   "date": "2026-11-07",
+   "kind": "transcription",
+   "what": "The contributor transcribed the telegram from the CEHM scan; the project did not see the scan.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-07",
+   "kind": "key from source",
+   "what": "The contributor found the key card headed \"Herrera. Moreno.\" in the same fonds (CMXV.16.1557.1, scan 7; one signer is S. Herrera Moreno) and applied it to the ten coded words: nine make Spanish words and one, kineda, stays doubtful.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-07",
+   "kind": "control",
+   "what": "Contributor's check: the same card reads the next day's telegram by the same signers (CMXV.18.1777.5-6); all ten coded words agree with a pencil gloss of the time, one with a wrong letter.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-07",
+   "kind": "literature search",
+   "what": "The contributor looked at the four records of the file, all 45 images of the fonds' typed list of period decipherments (none for 19 May) and CEHM catalogue searches by the signers' names; Narváez (2019), the recipients' papers and González Garza's printed work were not searched.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "verification",
+   "what": "Project check: the 26-row key is one-to-one and a shifted alphabet; the ten coded words decrypted again with an own script agree with decryption.txt letter for letter (VERIFICATION.md). No scan compared.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-08",
+   "verdict": "not applicable",
+   "notes": "Ten coded words are too few for a language-model test, and the key is the archive's card, not a recovered key."
+  },
+  "class": "read in part",
+  "verification": [
+   "key confirms",
+   "historical consistency"
+  ],
+  "method": "read with known key",
+  "key": "not applicable",
+  "method_basis": "The key is the archive's own card for one of the signers (CMXV.16.1557.1); the contributor found it in the same fonds and applied it, and the project re-ran the ten decryptions. The key was not recovered from the ciphertext.",
+  "contribution": [
+   "transcription"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "prabal",
+    "role": "solution",
+    "note": "transcription, key card and reading of CMXV.18.1770.2-4; issue #330; repository prabal-rje/branicki-1757, CC BY 4.0",
+    "date": "2026-11-07"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "\"kineda\" (aydtsp): a name or word the card does not settle, \"Pineda\" a guess needing one wrong letter",
+    "blocker": "too-short",
+    "detail": "ten coded words give no second occurrence to fix it"
+   },
+   {
+    "item": "\"venfa\" read as \"venga\" with one wrong letter, and \"ono\" typed together (read as clear \"o no\")",
+    "blocker": "illegible",
+    "detail": "the typed copy is the only witness here"
+   },
+   {
+    "item": "a human check of the transcription and the key card against the CEHM scans",
+    "blocker": "needs-physical-access",
+    "detail": "cehm.org.mx is not reachable from the project and the images may not be redistributed"
+   },
+   {
+    "item": "Narváez's 2019 book, the recipients' papers and González Garza's printed work",
+    "blocker": "needs-physical-access",
+    "detail": "not searched by the contributor and not available to the project"
+   }
+  ],
+  "notes": "Transcription, key card and reading by Prabal Gupta; checked by the project against his files only, not against the scans. Nine of ten coded words make sense; the tenth, a name, stays open.",
+  "fraction_read": 0.908,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Counted from decryption.txt: 65 letters in ten coded words, of which the 6 letters of kineda do not settle: 59 of 65 = 90.8%. The clear Spanish words of the telegram are not counted.",
+  "key_file": "key.tsv",
+  "texts": [
+   {
+    "doc": [
+     "cmxv-18-1770"
+    ],
+    "label": "Telegram of 19 May 1911 to Federico González Garza (CEHM-Carso CMXV.18.1770.2-4)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading_text.md",
+    "translation": "translation.md",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.908,
+    "summary": "A coded telegram from Mexico City to \"W. Olliphant\", a pencil note adding Federico González Garza, at El Paso: go to Julio Peña for the translation; three agents left for the north the night before; General Huerta told one of the writers that a military mutiny against the addressee is feared in the capital on account of Díaz's resignation; precautions are advised, or do not come.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (for the project)",
+     "date": "2026-11-08",
+     "note": "Read the telegram as Spanish sentences: the ten coded words fill the gaps of the clear text and make coherent clauses; one name (kineda) is open and the clear text is the contributor's transcription."
+    }
+   }
+  ]
+ }
+}
