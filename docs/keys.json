@@ -2439,6 +2439,7 @@
 {"id": "k-limantour1909", "label": "López Portillo - Reyes numerical cipher, 1909 (key proposed by Alberto Garvía García)", "kind": "scholar's key", "by": "Alberto Garvía García", "year": 1909, "found": 2026, "note": "A numerical substitution with about three consecutive numbers per letter; 28 strict values from two telegrams with plaintext, 29 with 60 = Y, checked on the CEHM images and extended here with values fixed on the 15 July telegram and the letter's own words."},
 {"id": "k-branicki1757", "label": "Branicki letters 1756-57: reciprocal alphabet and number code (key found by Prabal Gupta)", "kind": "scholar's key", "by": "Prabal Gupta", "year": 1757, "found": 2026, "note": "A reciprocal alphabet of 12 pairs (a-h, b-q, c-r, d-s, e-l, f-t, g-z, i-m, k-x, n-o, p-u, w-y) found from the ciphertext of AGAD 446 by a count-matching algorithm, and a nomenclator of three-digit numbers built from clear text and alphabetical order; applied unchanged to 1398-1400."},
 {"id": "k-gonzaga1542", "label": "Charles V to Ferrante Gonzaga, 1542: consonant signs with vowel digits (key found by Prabal Gupta)", "kind": "scholar's key", "by": "Prabal Gupta", "year": 1542, "found": 2026, "note": "Each base sign is a consonant and a small digit above it adds the vowel, found from the sign statistics of the letter alone with a solver on a Spanish letter model."},
+{"id": "k-soviet1919", "label": "Seven courier letters, 1919-20: two columnar transposition keys (19 and 25 columns, found by George Lasry)", "kind": "rebuilt here", "by": "George Lasry", "year": 1919, "found": 2026, "note": "Column orders for indicators 27001 (19 columns) and 27003 (25 columns), recovered from the ciphertext alone by annealing on a German 4-gram score."},
 {"id": "k-exiles1736", "label": "Letter of the Polish exiles, 1736: one number for each letter (key found by Prabal Gupta)", "kind": "scholar's key", "by": "Prabal Gupta", "year": 1736, "found": 2026, "note": "A one-to-one number-for-letter key of 30 signs, found from the ciphertext of AGAD 1401 alone by a count-matching algorithm on Polish next-letter counts, with a few code groups for names."},
 {"id": "k-fossey1710", "label": "Fossey notebook, 1710-16: nine letters written as digits (key found by Harumi-Matsuba)", "kind": "scholar's key", "by": "Harumi-Matsuba", "year": 1713, "found": 2026, "note": "Digits 1 to 9 stand for a e i o u l m n r, read from a plain heading on image 18 repeated in cipher on image 19; every other letter stands as written."},
 {"id": "k-delcarretto1576", "label": "Del Carretto 1576 homophonic substitution, key K_T (recovered from the ciphertext)", "kind": "rebuilt here", "by": "cyphersolver (Brice Dudout)", "year": 1576, "note": "Italian, homophones for the vowels; broken by annealing on lines L01-L08, frozen, validated on L09-L11 against an independent machine break: 0.961 against 0.263."},
@@ -3914,6 +3915,7 @@
 {"key": "k-limantour1909", "target": "limantour1909", "how": "rebuilt from", "note": "inferred from the ciphertext, supported by the plaintexts of two sibling telegrams; extended on the letter's own words"},
 {"key": "k-branicki1757", "target": "branicki1757", "how": "rebuilt from", "note": "found by the contributor from the ciphertext of letter 446; the same key reads 1398, 1399 and 1400"},
 {"key": "k-gonzaga1542", "target": "gonzaga1542", "how": "rebuilt from", "note": "found by the contributor from the sign statistics of the letter alone"},
+{"key": "k-soviet1919", "target": "soviet1919", "how": "rebuilt from", "note": "recovered by George Lasry from the ciphertext of these letters alone"},
 {"key": "k-exiles1736", "target": "exiles1736", "how": "rebuilt from", "note": "found by the contributor from the ciphertext of this letter alone"},
 {"key": "k-fossey1710", "target": "fossey1710", "how": "rebuilt from", "note": "read from plaintext standing beside the cipher in the same notebook"},
 {"key": "k-delcarretto1576", "target": "delcarretto1576", "how": "rebuilt from", "note": "broken on L01-L08 and frozen before L09-L11 were decoded"},
@@ -3953,6 +3955,7 @@
   }
  ],
  "source_links": [
+{"source": "s-cyphersolver", "key": "k-soviet1919"},
 {"source": "s-cyphersolver", "key": "k-smolensk1633"},
 {"source": "s-cyphersolver", "key": "k-voikov1921"},
 {"source": "s-cyphersolver", "key": "k-lejava1921"},

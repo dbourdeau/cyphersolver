@@ -2352,6 +2352,11 @@ PAGES = [
          blurb='A cipher letter from a friend of General Reyes, governor of Nuevo Le&oacute;n, at the moment he was being pushed aside before the 1910 election. Alberto Garv&iacute;a Garc&iacute;a found the numerical key from two telegrams with plaintext (28 values), checked here on the images: the letter reads as Spanish (enemigo, te pronuncies, temor, calma y prudencia, clubs de Guadalajara) and the note of 29 July names Limantour. 88.8% of the groups read.',
          quote='&ldquo;Hay que tener calma y prudencia&rdquo;',
          rights='Letters: Centro de Estudios de Historia de M&eacute;xico (CEHM), Archivo del General Bernardo Reyes, DLI.39.7680.2 and DLI.39.7712.1; key by Alberto Garv&iacute;a Garc&iacute;a'),
+    dict(slug='soviet1919', label='Seven courier letters, Germany to Russia 1919&ndash;20', year='1919&ndash;20', y=1920.1, place='Germany &rarr; Russia', st='solved', stt='key from the ciphertext',
+         title='Seven courier letters from communists in Germany to Soviet officials in Russia, 1919&ndash;20',
+         blurb='Typed copies of seven German letters carried by couriers on an aeroplane forced down in Latvia in April 1920, in two columnar transpositions of German. George Lasry recovered both keys (19 and 25 columns) from the ciphertext alone; six parts read in full and one in part, and the State Department&rsquo;s 1920 translations of five parts agree.',
+         quote='&ldquo;Flugsendung gut angekommen. Material nicht wiederholen, neues senden.&rdquo;',
+         rights='National Archives and Records Administration, RG 59, M336 roll 75; keys and readings by George Lasry'),
     dict(slug='kopp1921', label='Kopp and Chicherin 1921', year='1921', y=1921.3, place='Berlin &rarr; Moscow', st='stuck', stt='not solved',
          title='The Kopp and Chicherin radiograms, 1921',
          blurb='Soviet radio telegrams intercepted at Constantinople and filed unread by the State Department (NARA M316 rolls 40&ndash;48). The file holds several systems. The small 4-figure table Kopp and Lutovinov used shows literal phrase repeats, but no group value was recovered and each hypothesis failed its control.',
@@ -4469,6 +4474,7 @@ IMAGES['branicki1757'] = None
 IMAGES['gonzaga1542'] = None
 IMAGES['exiles1736'] = None
 IMAGES['fossey1710'] = None
+IMAGES['soviet1919'] = None
 IMAGES['piccolomini1646'] = None
 IMAGES['mazzinghi1478'] = None
 IMAGES['majesty1624'] = None

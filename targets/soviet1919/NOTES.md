@@ -67,6 +67,12 @@ illegible. `decrypt.py` decrypts it and checks it against `plaintext.txt`:
 python decrypt.py --typed
 ```
 
+**Checked here (8 Nov 2026).** `reading.md` records how many letters of the typed copy are blotted or mistyped in each
+part (33, 89, 35, 3, 107, 36 and 115 for the seven parts in order; Fortsetzung 5, 107 of 340 letters, is the worst), mostly
+visual confusions of the blurred carbon (R for E, P for F, N and M). The project did not re-measure these counts and did
+not see the images. `decrypt.py` only decrypts the corrected ciphertext and compares it with the plaintext file written
+from it, so it is a consistency check of the files, not a test of the reading.
+
 ## 5. The readings
 
 `reading.md` has, for each part, a summary, the German as sentences, the English translation and the notes. In brief:
@@ -96,14 +102,21 @@ known to us.
 
 ## Remaining gaps
 
-- **Fortsetzung 2.** About 34 letters decrypt but do not read: the opening GALIEIE, OE after "verdächtig", the names
-  PEL…ZIERSKI and RELCW, and VILARDOVRRHAFEET before "jetzt frei". There is no contemporary translation of this part.
-- **Zusatz.** One letter of the name O?galski is illegible.
-- **Fortsetzung 3.** The 15 letters of the three groups missing from the copy are supplied from the sense and the
-  contemporary translation.
-- **Fortsetzung 5.** "Es geht schön vorwärts" rests on two letters corrected against the copy; it matches the 1920
-  translation ("Good progress is being made").
-- **Schlussmitteilungen.** "Auftrag auf Zürich [?]": the copy has ZURUCK; the 1920 translation has "Order on Zuruch".
+- Fortsetzung 2: about 34 letters decrypt but do not read (the opening GALIEIE, OE after "verdächtig", the names PEL…ZIERSKI and RELCW, VILARDOVRRHAFEET before "jetzt frei") - blocker: illegible; the blurred copy is the only witness and there is no contemporary translation of this part
+- Zusatz: one letter of the name O?galski - blocker: illegible; blotted on the copy
+- Fortsetzung 3: the 15 letters of three groups missing from the copy, supplied from the sense and the 1920 translation - blocker: illegible; the groups are not on the copy
+- Fortsetzung 5: "Es geht schön vorwärts" rests on two letters corrected against the copy and matches the 1920 translation - blocker: illegible; the copy is the only witness
+- Schlussmitteilungen: "Auftrag auf Zürich [?]", the copy has ZURUCK and the 1920 translation "Order on Zuruch" - blocker: illegible; the typed copy is the only witness
+- A human check of the corrected ciphertext against the NARA images beyond the places George Lasry compared by eye - blocker: needs-physical-access; the project's environment cannot reach the NARA images
+
+## Escalation
+
+- [x] siblings: the seven parts of the one file read together; no other leaf of M336 roll 75 carries a transposition
+- [x] clear-pages: none; the file's English memorandum (frames 0468-0470) is a translation of five parts, used afterwards to check the readings
+- [x] known-keys: no earlier key for these indicators is known; none found in the repository or in print on 8 Nov 2026
+- [x] print: repository and catalogue searched on 8 Nov 2026 (roll 75, Riga, the indicators, the names); no printed German text known
+- [x] key-rebuild: both keys recovered by annealing with a German 4-gram score, then every part re-enciphered and compared letter by letter with the copy
+- [n/a] retry: the remaining holes are blots on a single blurred carbon copy; a second pass on the images could not be made from here
 
 ## Files
 
