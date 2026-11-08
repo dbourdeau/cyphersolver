@@ -2442,6 +2442,7 @@
 {"id": "k-soviet1919", "label": "Seven courier letters, 1919-20: two columnar transposition keys (19 and 25 columns, found by George Lasry)", "kind": "rebuilt here", "by": "George Lasry", "year": 1919, "found": 2026, "note": "Column orders for indicators 27001 (19 columns) and 27003 (25 columns), recovered from the ciphertext alone by annealing on a German 4-gram score."},
 {"id": "k-cmxv-herreramoreno", "label": "Key card headed Herrera. Moreno., CEHM-Carso CMXV.16.1557.1: a shifted alphabet over the Spanish letters counting ch, ll and ñ", "kind": "archive key", "by": "", "year": 1911, "note": "One of the 21 manuscript keys of the González Garza papers; the signer S. Herrera Moreno of the telegram of 19 May 1911 shares its name."},
 {"id": "k-guastalla1717", "label": "Duke of Guastalla letter, 1717: two-digit numbers for letters (key found by Prabal Gupta)", "kind": "scholar's key", "by": "Prabal Gupta", "year": 1717, "found": 2026, "note": "Two-digit numbers in alphabet order from a = 30 to z = 67 with twins, single digits for a word's last vowel and a few code numbers, found from the ciphertext of the letter alone by count matching on Italian letter counts."},
+{"id": "k-carranza1915", "label": "Carranza's telegrams, 1915: number keys of four shifted alphabets and letter-pair tables (found by Prabal Gupta)", "kind": "scholar's key", "by": "Prabal Gupta", "year": 1915, "found": 2026, "note": "Six number telegrams: numbers 1-26, 27-52, 53-78 and 79-104 each run through the alphabet from their own start letter (three sets of start letters); four letter telegrams: thirteen swapped letter pairs. Reported found from the ciphertext alone; priority open, the key family may be in print."},
 {"id": "k-exiles1736", "label": "Letter of the Polish exiles, 1736: one number for each letter (key found by Prabal Gupta)", "kind": "scholar's key", "by": "Prabal Gupta", "year": 1736, "found": 2026, "note": "A one-to-one number-for-letter key of 30 signs, found from the ciphertext of AGAD 1401 alone by a count-matching algorithm on Polish next-letter counts, with a few code groups for names."},
 {"id": "k-fossey1710", "label": "Fossey notebook, 1710-16: nine letters written as digits (key found by Harumi-Matsuba)", "kind": "scholar's key", "by": "Harumi-Matsuba", "year": 1713, "found": 2026, "note": "Digits 1 to 9 stand for a e i o u l m n r, read from a plain heading on image 18 repeated in cipher on image 19; every other letter stands as written."},
 {"id": "k-delcarretto1576", "label": "Del Carretto 1576 homophonic substitution, key K_T (recovered from the ciphertext)", "kind": "rebuilt here", "by": "cyphersolver (Brice Dudout)", "year": 1576, "note": "Italian, homophones for the vowels; broken by annealing on lines L01-L08, frozen, validated on L09-L11 against an independent machine break: 0.961 against 0.263."},
@@ -3920,6 +3921,7 @@
 {"key": "k-soviet1919", "target": "soviet1919", "how": "rebuilt from", "note": "recovered by George Lasry from the ciphertext of these letters alone"},
 {"key": "k-cmxv-herreramoreno", "target": "mexico1911", "how": "read unchanged", "note": "all ten coded words of CMXV.18.1770.2-4 decrypt with the card; nine make sense and one name stays open"},
 {"key": "k-guastalla1717", "target": "guastalla1717", "how": "rebuilt from", "note": "found by the contributor from the ciphertext of this letter alone"},
+{"key": "k-carranza1915", "target": "carranza1915", "how": "rebuilt from", "note": "reported found by the contributor from the ciphertext of these telegrams alone"},
 {"key": "k-exiles1736", "target": "exiles1736", "how": "rebuilt from", "note": "found by the contributor from the ciphertext of this letter alone"},
 {"key": "k-fossey1710", "target": "fossey1710", "how": "rebuilt from", "note": "read from plaintext standing beside the cipher in the same notebook"},
 {"key": "k-delcarretto1576", "target": "delcarretto1576", "how": "rebuilt from", "note": "broken on L01-L08 and frozen before L09-L11 were decoded"},
@@ -3960,6 +3962,7 @@
  ],
  "source_links": [
 {"source": "s-cyphersolver", "key": "k-soviet1919"},
+{"source": "s-cyphersolver", "key": "k-carranza1915"},
 {"source": "s-cyphersolver", "key": "k-smolensk1633"},
 {"source": "s-cyphersolver", "key": "k-voikov1921"},
 {"source": "s-cyphersolver", "key": "k-lejava1921"},
