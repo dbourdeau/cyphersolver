@@ -217,3 +217,6 @@ put to him on the PR on 31 Oct and 1 Nov were not answered by the time of the me
 
 Jozef Krajčovič's token streams for f7r, f10r, f11r and f12r (issue #194) are in `kjfriedo/`, not checked against the scan.
 
+## Prince Napoléon dispatches: the f12 alignment checked (8 Nov 2026, issue #194)
+
+Jozef Krajčovič's alignment of the 135 groups of f12r with the prince's own minute (400AP/118 n° 59) and his dictionary of 149 codes (`kjfriedo/`, PR #285) were checked as far as the project can: the four images that carry decipherments of f7, f10, f11 (as received in Florence) and the Emperor's reply of 11 June were read at the size shipped and every value the issue lists is written over the groups; the 15 groups of f12 whose code has a value on those decipherments agree with the alignment (all in meaning, 10 in exact wording); and 18 of the 23 repeated-code pairs of f12 fall on the same plaintext unit, against at most 2 for any shifted alignment or shuffle of the units (`kjfriedo/PROJECT_CHECK.md`). Not checked: the BnF transcription of the groups against the scan (Gallica is not reachable), the tier B and C values, groups 87 to 97, 78 and 110. The Prince Napoléon key is **not** written up: it is a different key from Lasry's Emperor–Empress key and would be its own target, after the groups are compared with the scan and a stretch is held out.
