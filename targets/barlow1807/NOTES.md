@@ -219,6 +219,16 @@ The second independent check (end of `VERIFY.md`) asked for four reading changes
 The check also asked to name the target and its files consistently. The files are now named by the date of each letter
 (`*_12feb1807.*`, `*_15jun1807.*`), as in the other targets.
 
+## A second reading of the letter to Grenville, by Harumi-Matsuba (issue #253; recorded 8 Nov 2026)
+
+A separate transcription, key and reading of the cipher letter of 12 Feb 1807 (the same 19 pages in the same order) made by Harumi-Matsuba with Claude, without sight of WAINUT's, is in `matsuba/` (his repository `Harumi-Matsuba/barlow1807-public`, commit 9ee34ba; text and data CC BY 4.0, code MIT; `matsuba/README.en.md` and `matsuba/LICENSE`). It is kept **beside** this reading, not in place of it: neither has been judged against the images, which the project cannot reach, and **no human has checked either transcription**.
+
+What it says of itself (`matsuba/docs/COMPARISON.en.md`, `matsuba/docs/METHOD.en.md`): per cipher token 3,727 of 3,869 (96.3%), per word 3,575 of 3,869 (92.4%, under the read bar); the counts were added after the per-word result was seen and the word test has relaxations added after the reading; no held-out test; the key was set seeing the whole text, with 19 as a or e, 56 as y or w, and 10 and 12 sometimes skipped. A control of 1,000 shuffled keys: none reached the real key (516 of 703 against a best of 369). Second readings from the images alone: Claude Sonnet 93.3% and OpenAI Codex 91.0% before and 91.3% after corrections, against 93.4% and 91.2% for this folder's transcription: they do not separate the two. At the 49 one-to-one transcription differences the second readers side with this folder's more often (Sonnet 27 to 16, Codex 21 to 19). The transcriptions agree at 97.9% in values (of 3,934), with 75 differences (`matsuba/docs/comparison_transcription.tsv`).
+
+What it adds: a reading of p03 (this folder's "in effect not read"; uncertain words remain), readings of the words left as holes on p08 and p18 (or secret enemies, state [?might] be employed, facility of accomplishing), and a key set with the whole text in view (80 = c and 99 = b, which this folder lists as errors in its frozen key, and 58 = m). What this folder has and it lacks: the letter to Tierney in clear, the held-out test of a frozen key, and the blind reading of three pages.
+
+Where they disagree: 101 places in the reading (`matsuba/docs/comparison_reading.tsv`: 52 marked uncertain only here, 8 only there, 41 mixed; different words include elements / limits, privileges / prejudices, consecrated / inscribed, concerns / interests, purity / piety). They are recorded as disagreements and **not judged**. The project recounted the shared key signs from the two key files, letters only: of 79 signs carrying a letter in both, 58 agree and 21 differ (his count is 59 and 20; the signs where one key has a null or a code are left out). The project did not check the reading, the controls or the agreement figures.
+
 ## Files
 
 - **Letter 1:** `transcription_12feb1807.txt`, `decryption_12feb1807.txt` and `reading_12feb1807.md`, with
