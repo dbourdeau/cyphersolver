@@ -1538,6 +1538,11 @@ PAGES = [
          blurb='A full page of 141 code groups enclosed to the Duke of Newcastle in August 1729 and never deciphered on the leaf (Huntington, Blathwayt papers, mssBLA 191). The same agent&rsquo;s other letters in the file carry interlinear decipherments; 942 code/gloss pairs from them rebuilt an alphabetical one-part French code of 379 values. Applied to the page it decodes 134 of 141 groups: the agent complains that Keene leaves him without orders during the accommodation and asks for instructions.',
          quote='&ldquo;Mandez-moi donc quelque ordre pour ma conduite.&rdquo;',
          rights='Huntington Library, San Marino, William Blathwayt papers addenda, via the Huntington Digital Library'),
+    dict(slug='exiles1736', label='Polish exiles on the abdication 1736', year='1736', y=1736.1, place='Prussia, writer unknown', st='solved', stt='key from the ciphertext',
+         title='The Polish exiles on King Stanis&#322;aw&rsquo;s abdication, 4 February 1736',
+         blurb='An unsigned letter in Polish and Latin from the Polish exiles, in a cipher of one number for each letter, catalogued as partly in Polish and perhaps to Branicka: France has told them that she cannot keep Stanis&#322;aw Leszczy&#324;ski on the throne, and they answer with two conditions for his abdication. Prabal Gupta found the key from the letter alone; 98% of the cipher words read.',
+         quote='&ldquo;Orlik za tym&#380;e personaliter expedyowany&rdquo;',
+         rights='Letter: Archiwum G&#322;&oacute;wne Akt Dawnych, Warsaw, zesp. 338, 1/338/0/1/1401; key and reading by Prabal Gupta (CC BY 4.0)'),
     dict(slug='jones1753', label='Schaeblin to Mr Jones 1753', year='1753', y=1753.05, place='The Hague', st='found', stt='not a cipher',
          title='Schaeblin to Mr Jones, The Hague, 1753',
          blurb='DECODE R9218, catalogued as a numerical nomenclator letter, is a cleartext English letter from C. Ben. Schaeblin to Mr Jones about compiling a new French cipher of 3000 numbers, with ways to disguise the groups. The only figures are his worked examples. Transcribed in full.',
@@ -4457,6 +4462,7 @@ IMAGES['deboli1788'] = None
 IMAGES['limantour1909'] = None
 IMAGES['branicki1757'] = None
 IMAGES['gonzaga1542'] = None
+IMAGES['exiles1736'] = None
 IMAGES['piccolomini1646'] = None
 IMAGES['mazzinghi1478'] = None
 IMAGES['majesty1624'] = None
