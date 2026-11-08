@@ -341,7 +341,7 @@ has a different ending or interpolations.
 
 ## Second round, 8 Nov 2026 (summary for the write-up; the collector's data is NOT in this folder)
 At the collector's request 12 untranscribed page scans (about 14,000 groups) were transcribed by reading them with Claude; the transcriptions, workbook and
-R1/R2/R3 contents stay outside the repo (`C:/Users/dbour/pigeon_dl`) and are shared with him only; the page names counts and percentages, never tables.
+R1/R2/R3 contents stay outside the repo (local, not in the repo) and are shared with him only; the page names counts and percentages, never tables.
 - Pilot on one hand-typed telegram: 271/283 groups exact (95.8%), misses all one digit (3/8, 1/2, 9/0), 8 of 12 flagged. Re-reads: four spots unreadable
   (one Favre block on the 23 Oct page, top 14 lines of one page, lower part of one small block, one blurry block); one page unreadable.
 - Codes: R1 (24 Oct Gambetta-Favre, coverage 94%, z=18.8; Steenackers-Trochu blocks of 23 Oct, coverage 80-90%, cosine 0.83-0.90); R2 (13 Nov Tours telegram,
