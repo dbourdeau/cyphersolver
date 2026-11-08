@@ -1,0 +1,193 @@
+{
+ "schema_version": 1,
+ "target": "exiles1736",
+ "title": "A letter of the Polish exiles on King Stanisław Leszczyński's abdication, 4 February 1736 (AGAD 1/338/0/1/1401): a number-for-letter cipher read by Prabal Gupta",
+ "documents": [
+  {
+   "id": "agad-338-1401",
+   "read": "read",
+   "shelfmark": "AGAD, Zbiór Anny z Potockich Ksawerowej Branickiej (zesp. 338), 1/338/0/1/1401",
+   "date": "4 February 1736 (year inferred)",
+   "year": 1736,
+   "country": "Poland-Lithuania",
+   "route": "unknown writer (a Polish exile in Prussia) -> unknown (addressed Monseigneur; the card guesses Branicka)",
+   "language": "Polish",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment or clear copy found; the card says \"częściowo po polsku, może do Branickiej\" (partly in Polish) and offers none.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 2793,
+    "unit": "letters",
+    "measured": false,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "the contributor's transcription from the AGAD scans, two passes agreeing on 99.1% of 2,844 tokens with each of the 23 differences settled on the scan; AI models read the scans; not compared with the scans by the project",
+    "image_quality": "fair",
+    "notes": "Seven scans; letters joined by dots, words by dashes; code groups without dots."
+   },
+   "places": {
+    "from": "unknown",
+    "to": "unknown"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "nomenclator"
+  ],
+  "summary": "One number stands for one letter (30 signs, each letter one number), written with a dash between words, plus a few code groups for names (125 Stanisław, 455 Augustus III, 136 and 142 Warsaw, 675 probably Monti); the Khan is spelled in letters from key numbers.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 30,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "The card lists the letter as partly in Polish and perhaps to Branicka and offers no decipherment; the contributor found none in the ledger, the fonds cards or Konopczyński (1909).",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "transcription",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Prabal Gupta transcribed the letter, ran the solver and built the reading (issue #320, repository prabal-rje/branicki-1757). The project checked the files against each other and a control; it has not seen the scans.",
+  "models": [
+   "Claude",
+   "GPT"
+  ],
+  "first_date": "2026-11-07",
+  "last_date": "2026-11-07"
+ },
+ "solution": [
+  {
+   "date": "2026-11-07",
+   "kind": "transcription",
+   "what": "The contributor transcribed the seven scans in two passes that agree on 99.1% of 2,844 tokens; each of the 23 differences was settled on the scan, and one more group was split later.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-07",
+   "kind": "solver",
+   "what": "A count-matching algorithm on Polish next-letter counts deciphered 98.2% of the letter tokens on this letter alone, with no key, crib or other letter; a solver on a Polish letter model agrees with the key on 93.1% of tokens. Reading the numbers against the Polish settled the rare signs.",
+   "result": "worked",
+   "technique": [
+    "frequency analysis",
+    "language-model scoring",
+    "other"
+   ]
+  },
+  {
+   "date": "2026-11-07",
+   "kind": "reading",
+   "what": "The decryption was read as Polish with long Latin stretches; the code groups were valued from context (125 Stanisław, 455 Augustus III, 136 and 142 Warsaw) and nine stay unread; a blind reader named the text Polish with Latin and translated about 85% of the clauses.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-07",
+   "kind": "literature search",
+   "what": "The contributor searched the ledger, the cards of 1397, 1402 and 1403, a text comparison with 446, 1398, 1399 and 1400, a keyword scan of Konopczyński (1909) and one web search on the names: no reading of this letter found.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-07",
+   "kind": "control",
+   "what": "Project check: the 30-sign key is one-to-one; the 491 dotted words of the cipher, decrypted with it, are 31.2% in a word list built from the letter's own clear words and about 90 function words, against at most 5.7% for 300 shuffled keys (VERIFICATION.md). No scan compared.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-07",
+   "verdict": "not applicable",
+   "notes": "The statistical test needs a Polish letter model (lang/), whose corpus cannot be fetched from this environment, and the contributor notes his Polish model is of modern text while the letter has long Latin stretches. A word-list test against 300 shuffled keys was used instead (VERIFICATION.md); it is not the project's n-gram validation."
+  },
+  "class": "read",
+  "verification": [
+   "key confirms",
+   "historical consistency"
+  ],
+  "method": "key recovered from ciphertext-only",
+  "key": "partial",
+  "method_basis": "Contributor's claim: the key was found from the ciphertext of this letter alone by a count-matching algorithm, with no key, crib or other letter; the project verified that the key is one-to-one and makes Polish and Latin words, but did not repeat the search.",
+  "contribution": [
+   "key recovered",
+   "transcription"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "prabal",
+    "role": "solution",
+    "note": "key, transcription and reading of AGAD 1401; issue #320; repository prabal-rje/branicki-1757, CC BY 4.0",
+    "date": "2026-11-07"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "nine code groups unread (145, 156, 175, 195, 289, 505, 613, 715, 5455), [?Monti] for 675 a guess, and \"cza[s]\" written with 12 for 21",
+    "blocker": "open-codes",
+    "detail": "each occurs once or twice and no text fixes it"
+   },
+   {
+    "item": "the signature (a flourish), so the writer and the addressee, and the year digit",
+    "blocker": "illegible",
+    "detail": "the scan shows no readable name; 1736 is inferred from the contents"
+   },
+   {
+    "item": "a human check of the transcription against the AGAD scans",
+    "blocker": "needs-physical-access",
+    "detail": "szukajwarchiwach.gov.pl is not reachable from the project and the images may not be redistributed"
+   }
+  ],
+  "notes": "Key and reading by Prabal Gupta; checked by the project against his files and a word-list control, not against the scans. 518 of 530 cipher words read (97.7%).",
+  "fraction_read": 0.977,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Counted from reading.md: 530 words in the cipher passages (the bold text), of which 12 are holes: 9 unread code groups, 2 uses of [?Monti] and the supplied letter in cza[s]: 518 of 530 = 97.7%. About 20 further code groups are read as names from context and are not marked.",
+  "key_file": "key.tsv",
+  "texts": [
+   {
+    "doc": [
+     "agad-338-1401"
+    ],
+    "label": "Letter of the Polish exiles on Stanisław's abdication, 4 February 1736 (AGAD 1/338/0/1/1401)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "pl",
+    "state": "read",
+    "read_share": 0.977,
+    "summary": "An unsigned letter among the Polish exiles: France has agreed preliminaries with Vienna and an armistice and says it cannot keep King Stanisław on the throne; the courier Orlik brings it as good news and the exiles receive it in despair; they answer with two conditions, that Europe first recognise Stanisław as lawful king for life and that he call a Diet and abdicate only there; the estates refuse the haste; two lords leave for Warsaw; the writer asks what the Turks and the Khan plan.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (for the project)",
+     "date": "2026-11-07",
+     "note": "Read the decryption as Polish and Latin sentences: the cipher passages build coherent clauses that join the clear text around them; the unspaced decryption lines are normalised in the reading, and the Latin stretches and names are the contributor's working reading, not an edition."
+    }
+   }
+  ]
+ }
+}
