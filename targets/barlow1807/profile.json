@@ -183,6 +183,12 @@
    "kind": "literature search",
    "what": "One web search: SNAC/DPLA catalogue record, Buchanan's 1805 Memoir and the 1807 printed papers on the Bengal government; no edition or decipherment of these letters found.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "verification",
+   "what": "Harumi-Matsuba's separate reading of the same letter (issue #253), made with Claude without sight of this one, was added under matsuba/ (his repository commit 9ee34ba). It reads 92.4% per word (96.3% per cipher token) with no held-out test; the two transcriptions agree at 97.9% in values; the readings differ in 101 places and 21 of 79 shared letter-valued key signs differ (the project's recount; his count is 20), recorded and not judged. No human has checked either transcription.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -220,6 +226,12 @@
     "role": "verification",
     "note": "two independent AI readers, one blind on images 8, 16 and 19; no human palaeographer",
     "date": "2026-11-03"
+   },
+   {
+    "who": "harumi-matsuba",
+    "role": "verification",
+    "note": "a separate transcription, key and reading of the letter of 12 Feb 1807, made without sight of this one, recorded beside it in matsuba/ (issue #253); reproduces the result and adds a reading of p03 and of the holes of p08 and p18; 101 differences in the reading and 21 of 79 shared key signs differ, not judged",
+    "date": "2026-11-08"
    }
   ],
   "texts": [
