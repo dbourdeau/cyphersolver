@@ -1517,6 +1517,11 @@ PAGES = [
          blurb='Charles XII&rsquo;s letter from Bender to the Swedish Council of the Realm, with a second copy for his envoys in London and The Hague, in a Swedish nomenclator of about 1,100 numbers in alphabetical order (NLA Stade Rep. 5a Nr. 670). Brice Dudout rebuilt the key from a ciphered troop list and its clear draft in the same file, tested it on letters not used to build it, and deciphered both copies: 639 of 640 groups. After the Danish defeat at Helsingborg the King offers Denmark peace under the mediation of the Maritime Powers and gives the Council a free hand to agree an armistice, even for a whole year. Contributed by Brice Dudout.',
          quote='&ldquo;s&aring; &auml;re wi ben&auml;gne att inga med Konungen i B.B. en billig fred under Sj&ouml;makternas mediation&rdquo;',
          rights='Manuscript images: Nieders&auml;chsisches Landesarchiv, Abt. Stade (Public Domain Mark), via Archivportal-D'),
+    dict(slug='fossey1710', label='Fossey notebook of recipes 1710-16', year='1710&ndash;16', y=1713.0, place='England', st='solved', stt='key from adjacent plaintext',
+         title='Thomas Fossey&rsquo;s notebook of veterinary recipes, 1710&ndash;1716',
+         blurb='A Yale notebook of remedies for horses, cattle and dogs in which nine common letters (a e i o u l m n r) are written as the digits 1 to 9. Harumi-Matsuba read the key from a plain heading on one page that is written again in cipher on the next, transcribed all 38 cipher images with Claude, and had three other models read them independently (90&ndash;91% agreement); 95% of the cipher symbols read. No human has checked the transcription.',
+         quote='&ldquo;Six bushel of malt will brew four hogshead of small beer&rdquo;',
+         rights='Notebook: Beinecke Rare Book and Manuscript Library, Yale University, GEN MSS VOL 855 (images not reproduced); key and reading by Harumi-Matsuba (CC BY 4.0)'),
     dict(slug='dahku1715', label='Dahku, Cracow 1715', year='1715', y=1715.72, place='Cracow', st='partial', stt='read in part',
          title='&ldquo;Dahka&rdquo;, Cracow 1715: a sign cipher in a Polish letter',
          blurb='Seventeen lines of graphic signs in a Polish letter from Cracow, catalogued with no decipherment. Brice Dudout broke the substitution on the ciphertext alone and measured it on held-out lines (0.444 against 0.083, key partial): the Sandomierz deputies ask that the Crown army support their levée of 9 October 1715. 84% of 63 cipher words.',
@@ -4463,6 +4468,7 @@ IMAGES['limantour1909'] = None
 IMAGES['branicki1757'] = None
 IMAGES['gonzaga1542'] = None
 IMAGES['exiles1736'] = None
+IMAGES['fossey1710'] = None
 IMAGES['piccolomini1646'] = None
 IMAGES['mazzinghi1478'] = None
 IMAGES['majesty1624'] = None

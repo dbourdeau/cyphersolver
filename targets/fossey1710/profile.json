@@ -1,0 +1,201 @@
+{
+ "schema_version": 1,
+ "target": "fossey1710",
+ "title": "Thomas Fossey's notebook of veterinary recipes, 1710-1716 (Beinecke GEN MSS VOL 855): nine letters written as digits, read by Harumi-Matsuba",
+ "documents": [
+  {
+   "id": "beinecke-855",
+   "read": "read",
+   "shelfmark": "Beinecke Rare Book and Manuscript Library, Yale University, GEN MSS VOL 855 (notebook of veterinary recipes)",
+   "date": "1710-1716",
+   "year": 1713,
+   "country": "England",
+   "route": "Thomas Fossey's notebook of farm and veterinary recipes (a notebook, not a letter)",
+   "language": "English",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Plain words stand inside the cipher lines (242 words without digits against 1,295 with), and a plain heading on image 18 is written again in cipher on image 19.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 3490,
+    "unit": "symbols",
+    "measured": false,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "the contributor's transcription of 38 images (36 distinct) by Claude from the public IIIF images, with independent second readings by Claude Sonnet, Claude Fable and OpenAI Codex; not compared with the images by the project",
+    "image_quality": "fair",
+    "notes": "The digit 9 and the letter g are written alike (13 places), 1 and the long s are similar; two images show the same leaves with a pasted slip moved."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Nine common letters of English (a e i o u l m n r) are written as the digits 1 to 9; every other letter stands as written, w is written uu, and the substitution is not applied consistently (1,295 words with digits against 242 without).",
+  "symbol_kind": "digits",
+  "distinct_symbols": 9,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "unknown"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "The ledger entry of 28 Oct 2026 records the method (\"vowels replaced by digits, trivially readable\") but no key or reading; the contributor found no reading in the ledger, Tomokiyo, Cryptoole or on GitHub (1 Nov 2026).",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "crib",
+  "human_role": "Harumi-Matsuba directed the work and the checks (issue #204, repository Harumi-Matsuba/fossey1710-public); Claude did the transcription, the key, the control and the write-up, and three models of two families made independent second readings. No human has checked the transcription against the images.",
+  "models": [
+   "Claude",
+   "Claude Sonnet",
+   "Claude Fable",
+   "OpenAI Codex"
+  ],
+  "first_date": "2026-10-31",
+  "last_date": "2026-11-08"
+ },
+ "solution": [
+  {
+   "date": "2026-10-31",
+   "kind": "transcription",
+   "what": "Claude, directed by the contributor, transcribed the 38 images that carry cipher digits (36 distinct leaves, 625 lines) from the public IIIF images; the digit 9 and the letter g, 1 and the long s, 0 and d were separated at full resolution.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-31",
+   "kind": "hypothesis",
+   "what": "Digits sit inside otherwise ordinary English, only 1 to 9 occur and never 0, so they stand for letters; nine letters are replaced and the substitution is applied inconsistently.",
+   "result": "worked",
+   "technique": [
+    "key-structure hypothesis"
+   ]
+  },
+  {
+   "date": "2026-10-31",
+   "kind": "crib",
+   "what": "The plain heading on image 18 (\"for a blow in a horses eye to eat of ye Cell\") is written again in cipher on image 19 (\"f49 a b6455 38 a h49s2s ey2\"), which fixes seven values; \"18d\" = and and \"C9217\" = Cream fix a and m.",
+   "result": "worked",
+   "technique": [
+    "crib testing"
+   ]
+  },
+  {
+   "date": "2026-11-01",
+   "kind": "control",
+   "what": "1,000 shuffled keys against the real one: none reached it (real 96.8% of symbols in words that make sense, best shuffle 55.9%); no calibration exists (no contemporary decipherment, no printed edition).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-01",
+   "kind": "verification",
+   "what": "Independent second readings from the images alone, with no key and no sight of the first reading: Claude Sonnet agrees with 90.2% to 90.7% of the decoded characters over all 36 images and OpenAI Codex with 91.3%; image 70, in two columns, first agreed 66.7% and 87.5% to 91.7% once a column rule was added.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-01",
+   "kind": "literature search",
+   "what": "The contributor searched the ledger, Tomokiyo's unsolved list, Cryptoole and GitHub: only the ledger entry of 28 Oct 2026 that names the method; no reading.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "control",
+   "what": "Project check: the key applied to the transcription gives the reading on 547 of 553 lines (the other six are comment lines); 55.4% of the 1,107 tokens with a digit decode to words written in clear elsewhere in the notebook, against at most 22.0% for 1,000 shuffled keys (VERIFICATION.md). No image compared.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-08",
+   "verdict": "not applicable",
+   "notes": "The statistical test needs an English letter model (lang/, en-modern), whose corpus cannot be fetched from this environment (Gutenberg returns 403); it would also separate keys poorly when only nine letters of the text are replaced. The contributor's 1,000-shuffle control and a within-notebook vocabulary test against 1,000 shuffled keys were used instead (VERIFICATION.md)."
+  },
+  "class": "read",
+  "verification": [
+   "matched control",
+   "key confirms",
+   "statistical test"
+  ],
+  "method": "key recovered based on adjacent plaintext",
+  "key": "recovered",
+  "method_basis": "The key was read from plaintext standing beside the cipher in the same notebook: a plain heading on image 18 repeated in cipher on image 19, and the words \"and\" and \"Cream\" on the next lines.",
+  "contribution": [
+   "key recovered",
+   "transcription"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "harumi-matsuba",
+    "role": "solution",
+    "note": "key, transcription and reading of the Fossey notebook; issue #204; repository Harumi-Matsuba/fossey1710-public, CC BY 4.0",
+    "date": "2026-11-08"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "drug names, disease names and personal names whose spelling is not settled (131 symbols, 31 forms) and the 13 places where 9 and g are written alike",
+    "blocker": "illegible",
+    "detail": "the spellings are the writer's own and no reference text fixes them; the list is in contributor_open.md and open_tokens.tsv"
+   },
+   {
+    "item": "lines hidden under pasted slips (images 25 to 34) and struck-through lines",
+    "blocker": "needs-physical-access",
+    "detail": "only the original can settle them; they are not visible in any image"
+   },
+   {
+    "item": "a human check of the transcription against the Beinecke images, including the 9-or-g and 1-or-long-s places",
+    "blocker": "needs-physical-access",
+    "detail": "collections.library.yale.edu is not reachable from the project"
+   }
+  ],
+  "notes": "Key, transcription and reading by Harumi-Matsuba, with Claude and independent second readings by three models; checked by the project against the files and a within-notebook control, not against the images. No human has checked the transcription.",
+  "fraction_read": 0.954,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "The contributor's count over the transcription: 3,332 of 3,492 cipher symbols (95.4%) fall in words that make sense without resolving the 13 places where 9 and g are written alike in favour of the reading that makes a word; with that step 3,359 of 3,490 (96.2%). 131 symbols stay open.",
+  "key_file": "key.tsv",
+  "texts": [
+   {
+    "doc": [
+     "beinecke-855"
+    ],
+    "label": "Thomas Fossey's notebook of veterinary recipes, 1710-1716 (36 images with cipher)",
+    "transcription": "transcription.txt",
+    "decryption": "reading.txt",
+    "language": "en",
+    "state": "read",
+    "read_share": 0.954,
+    "summary": "Remedies for horses, cows and dogs, drinks, powders and a recipe for small beer, with drug names such as Crocus Metallorum and Diapente: 'a medicne for the Bite of a mad Dog', 'Six bushel of malt will Breuu four hogshead of Small Beer', 'beat it into uery fine pouder'.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (for the project)",
+     "date": "2026-11-08",
+     "note": "Read the decoded lines as English: recipes in the writer's own spelling form coherent clauses (for a blouu in a horses eye, fresh Cream and Bolarmery beat fine); drug and personal names stay open and the lines are short, so the review is of sense, not of grammar."
+    }
+   }
+  ]
+ }
+}
