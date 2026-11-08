@@ -34,7 +34,7 @@
     "by": "challenge setter",
     "source": "Alexandre Pillon (collector), transcription of his scan; digit strings of the key runs rechecked against the scan by the project",
     "image_quality": "good",
-    "notes": "736 four-digit coded groups (343 distinct) mixed with 437 clear words (names, addresses, ordinary words), counts from NOTES and the wiki, not re-measured here because the transcription file is not in the repository (third-party material, see DATA_NOT_INCLUDED.md). The clear words are in the original (Pillon). The scan was seen in chat only and is not in the repository."
+    "notes": "736 four-digit coded groups (343 distinct) mixed with 437 clear words (names, addresses, ordinary words), counts from NOTES and the wiki. The transcription file is now in the repository (inspecteurs_2nov_partial.txt, published with the collector's permission of 8 Nov 2026); a plain regex for four-digit strings finds 754 (349 distinct) in it, which includes four-digit numbers in clear text, so the 736/343 coded-group count has not been reconciled with the file and 'measured' stays false. The clear words are in the original (Pillon). Snips of his scan are on the site."
    },
    "read": "not read"
   }
@@ -367,6 +367,12 @@
    ],
    "what": "Cheap structure tests on the new pages (overlap, frequency order, rank-for-rank decode). Corrections found: an earlier overlap figure (87-95% 'same code') was wrong because the old pool mixes codes; 701119 is Favre-family, not a fourth family; 701023 block 2 is R1; a seven-group run first read on 2emeS-2 does not exist on the scan.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "access",
+   "what": "Publication: the collector agreed (relayed by the project owner) that his scans and the transcriptions of them are published on the site and in the repository. Published: his transcription files and the derived sequence and alignment outputs in the target folder, the AI transcriptions of the twelve page scans (workbook with reliability notes, per-page text zip) under docs/data/pigeongrammes1870/, and six cropped snips of the scans on the page. Not published (outside the permission): repertoires R1-R3, his Excel files, the R2 gap table (a count only), the zip. Re-ran alpha_test, spell_solver, apply_telegram and joint_loop on the published files and they reproduce the committed outputs; bench_loop needs his Repertoire1.xlsx.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -383,13 +389,19 @@
   "verification": [
    "matched control"
   ],
-  "notes": "Not read. Structure found: alphabetical lexicon, spelled names (Steenackers, Mercadier, pigeons, Trochu) and a last paragraph of family news. Needs a second text in the inspectors' code or a printed copy of the circular; no such text is in the collection. Pillon's transcriptions and scans are not published here (DATA_NOT_INCLUDED.md). The work on the Favre / delegation code (Chaudordy letter, 18 Dec 1870) is a different cipher, still in progress, with no page of its own yet. Second round (8 Nov 2026): 12 further page scans transcribed for the collector; three codes identified in them (R1, R2, the Favre/delegation code); the 13 Nov Tours telegram decodes with the collector's R2 and matches its printed text. The inspectors' code itself has no second text, so this target's outcome is unchanged.",
+  "notes": "Not read. Structure found: alphabetical lexicon, spelled names (Steenackers, Mercadier, pigeons, Trochu) and a last paragraph of family news. Needs a second text in the inspectors' code or a printed copy of the circular; no such text is in the collection. Pillon's scans and the transcriptions of them are published with his permission (8 Nov 2026; DATA_NOT_INCLUDED.md); his repertoires R1-R3 and Excel files are not. The work on the Favre / delegation code (Chaudordy letter, 18 Dec 1870) is a different cipher, still in progress, with no page of its own yet. Second round (8 Nov 2026): 12 further page scans transcribed for the collector; three codes identified in them (R1, R2, the Favre/delegation code); the 13 Nov Tours telegram decodes with the collector's R2 and matches its printed text. The inspectors' code itself has no second text, so this target's outcome is unchanged.",
   "credits": [
    {
     "who": "pillon",
     "role": "pointer",
     "note": "owns the collection and the scan of the telegram, sent the files and his transcription, confirmed that the clear words are in the original; suggested the beacon groups (0101, 0201, 0301) as brackets and that the table is almost alphabetical; offered readings that were tested (5926, 0603, 2215 failed; a Mercadier decomposition was withdrawn by him)",
     "date": "2026-11-07"
+   },
+   {
+    "who": "pillon",
+    "role": "transcription",
+    "note": "his hand transcription of the 2 November telegram and the group lists of the Chaudordy letter; the page scans (twelve of them were transcribed from images by Claude and checked against his hand transcription on a pilot); agreed on 8 Nov 2026 that his scans and the transcriptions are published",
+    "date": "2026-11-08"
    }
   ]
  }

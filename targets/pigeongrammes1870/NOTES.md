@@ -160,7 +160,7 @@ Sent by Dan (shortened draft); Pillon answered inline, in English. His answers:
 - The CLEAR WORDS in the inspectors' telegram ARE in the original (so it is a genuine mixed clear/coded telegram, and the clear
   words are fixed context). He sent the original scan: "Steenackers a Mercadier, rue de Grenelle St Germain 103, Paris. 2me Serie
   n 1. Tours 2 Novembre (chiffre des inspecteurs)", a pigeon dispatch, with a printed Gambetta proclamation "A L'ARMEE" and a
-  stamp "Cabinet du Directeur General" on the film print. (Image sent in chat; not in the repo.)
+  stamp "Cabinet du Directeur General" on the film print. (Image sent in chat; snips of the scan are now on the site, with his permission from 8 Nov 2026.)
 - His reading of the logic: like R1, with "beacons" 0101, 0201, 0301 that mark syllables.
 - No plaintext exists for any "A Jules Favre" page: every message in the unknown nomenclator is fully enciphered.
 R1 test (7 Nov): only 18% of the inspectors' groups are in R1's table (10% by chance) and the values make no sense in context:
@@ -339,9 +339,8 @@ has a different ending or interpolations.
 19 and 26 Jan (Favre's book vols 1-2, Chaper report). 3. Check whether the code is alphabetical like R1. 4. Fetch the scans needed (2emeS-15, 31, 38) by range request.
 5. profile.json once the work is more than a first pass.
 
-## Second round, 8 Nov 2026 (summary for the write-up; the collector's data is NOT in this folder)
-At the collector's request 12 untranscribed page scans (about 14,000 groups) were transcribed by reading them with Claude; the transcriptions, workbook and
-R1/R2/R3 contents stay outside the repo (local, not in the repo) and are shared with him only; the page names counts and percentages, never tables.
+## Second round, 8 Nov 2026 (summary for the write-up; scans and transcriptions published from 8 Nov, see below)
+At the collector's request 12 untranscribed page scans (about 14,000 groups) were transcribed by reading them with Claude; the R1/R2/R3 contents stay outside the repo and are his unpublished work; the page names counts and percentages, never tables. Update 8 Nov 2026 (later): the collector agreed that his scans and the transcriptions of them are published; the AI transcriptions (workbook and per-page texts), six snips and his transcription files are now on the site / in this folder (DATA_NOT_INCLUDED.md); repertoires, Excel files, R2 gap table and the zip stay unpublished.
 - Pilot on one hand-typed telegram: 271/283 groups exact (95.8%), misses all one digit (3/8, 1/2, 9/0), 8 of 12 flagged. Re-reads: four spots unreadable
   (one Favre block on the 23 Oct page, top 14 lines of one page, lower part of one small block, one blurry block); one page unreadable.
 - Codes: R1 (24 Oct Gambetta-Favre, coverage 94%, z=18.8; Steenackers-Trochu blocks of 23 Oct, coverage 80-90%, cosine 0.83-0.90); R2 (13 Nov Tours telegram,

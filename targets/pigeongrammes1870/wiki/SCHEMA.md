@@ -7,7 +7,7 @@ Added here: a fourth operation, **loop** (the hypothesis-testing engine, `tools/
 The wiki is the memory of the project: nothing the work learns lives only in a chat or a script output. It is a git repo of markdown (it lives in this repository).
 
 ## Layers
-1. **Raw sources** (never edited): Pillon's files (`C:/Users/dbour/pigeon_dl/`, third-party, unpublished), the books' OCR (`C:/Users/dbour/enquete/`, `pigeon_src/`), the repo's plain copies (`inspecteurs_2nov_partial.txt`,
+1. **Raw sources** (never edited): Pillon's files (`C:/Users/dbour/pigeon_dl/`, third-party; scans and transcriptions published with his permission from 8 Nov 2026, repertoires and Excel files unpublished), the books' OCR (`C:/Users/dbour/enquete/`, `pigeon_src/`), the repo's plain copies (`inspecteurs_2nov_partial.txt`,
    `chaudordy_nums.json`, `chaudordy_18dec_plain.txt`). The wiki holds a **source page** for each (`sources/S..`): where it is, what it is, how reliable, how to read it.
 2. **The wiki** (`wiki/`): markdown pages with front matter, linked by `[[ID]]`. Types: `source` (S), `entity` (E), `system` (Y), `claim` (C), `question` (Q), `test` (T), `synthesis` (Z: overview, filed answers and analyses). Plus machine state:
    `lexicon_inspectors.json`, `lexicon_favre.json` (group -> reading, status, claims).
@@ -30,7 +30,7 @@ A claim never goes up the ladder without a new test page or source page being ci
 ## Rules
 - Every number quoted in a page comes from a test page or a source page; cite it (`[[T05]]`).
 - Say what happened ('fits within 0.02', 'rank 30 of 30k'); do not write 'solved' or 'read' alone.
-- Third-party material (Pillon's files, his emails) is not published or sent anywhere without his agreement (`[[Q07]]`).
+- Third-party material (Pillon's files, his emails) is published or sent only as far as he agrees (`[[Q07]]`). From 8 Nov 2026 that covers his scans and the transcriptions of them; his repertoires R1-R3 and Excel files stay unpublished.
 - Names and readings that came from a guess, not a test, are `hypothesis`, whatever their plausibility.
 - Pages are short; one claim per page; link instead of repeating.
 
