@@ -1548,6 +1548,11 @@ PAGES = [
          blurb='A partly ciphered Italian letter of Antonio Ferdinando Gonzaga, Duke of Guastalla, catalogued with no decipherment and dated July: in a two-digit number cipher that Prabal Gupta reports finding from the letter alone, the duke refuses a condition that would be a silent abdication of his rights. About 90% of the cipher reads; ten code groups stay open.',
          quote='&ldquo;una tacita abdicazione delle mie ragioni, alla quale non sar&ograve; mai per aderire&rdquo;',
          rights='Letter: Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera A, cc. 15-16; key and reading by Prabal Gupta (CC BY 4.0)'),
+    dict(slug='carranza1915', label='Carranza telegrams 1915', year='1915', y=1915.4, place='Veracruz &rarr; generals and agents', st='solved', stt='key from the ciphertext',
+         title='Carranza&rsquo;s coded telegrams from Veracruz, May and June 1915',
+         blurb='Ten coded telegrams of Venustiano Carranza&rsquo;s headquarters to generals and buying agents, listed as open with no content on the CEHM cards: orders on ammunition, money and rifles, which the contributor places in the war against Villa. Six use number keys that run four times through the alphabet from varying start letters, four use swapped letter pairs; Prabal Gupta reports finding the keys from the ciphertext alone. The key family may already be in print.',
+         quote='&ldquo;Hoy salen de Nueva York doscientos mil cartuchos siete mm&rdquo;',
+         rights='Telegrams: CEHM-Carso, Fondo CDLXXX 1.17.1 to 1.42.1; keys and reading by Prabal Gupta (CC BY 4.0)'),
     dict(slug='exiles1736', label='Polish exiles on the abdication 1736', year='1736', y=1736.1, place='Prussia, writer unknown', st='solved', stt='key from the ciphertext',
          title='The Polish exiles on King Stanis&#322;aw&rsquo;s abdication, 4 February 1736',
          blurb='An unsigned letter in Polish and Latin from the Polish exiles, in a cipher of one number for each letter, catalogued as partly in Polish and perhaps to Branicka: France has told them that she cannot keep Stanis&#322;aw Leszczy&#324;ski on the throne, and they answer with two conditions for his abdication. Prabal Gupta found the key from the letter alone; 98% of the cipher words read.',
@@ -4530,6 +4535,7 @@ IMAGES['stade1710'] = ('stade1710_f85r.jpg', 'Fol. 85r, the copy for the envoys:
 IMAGES['vilaflor1663'] = ('vilaflor1663_26may.jpg', 'The letter of 26 May 1663: the greeting in clear, then the order to relieve &Eacute;vora in cipher', 'Arquivo Nacional Torre do Tombo, Lu&iacute;s de Miranda Pereira liv. 2 (PT/TT/LMP/0002), image m0037, via DigitArq')
 IMAGES['albornoz1648'] = ('albornoz1648_copyb.jpg', 'Copy B (image 5): the clear opening, sixteen lines of syllables and numbers, and the clear closing', 'Archivo Hist&oacute;rico de la Nobleza, OSUNA,CT.2,D.32 image 5 (copy B), via PARES (the copy published by Brice Dudout, Europe chiffr&eacute;e)')
 IMAGES['champigny1744'] = None
+IMAGES['carranza1915'] = None
 IMAGES['rubio1913'] = ('rubio1913_telegram.jpg', 'Rubio&rsquo;s telegram of 18 March 1914: the plain words &ldquo;con toda atenci&oacute;n que&rdquo; and the first runs of numbers', 'Centro de Estudios de Historia de M&eacute;xico (CEHM-Carso), fondo DLXXIII, DLXXIII.2.41.13-41 image 1, via the CEHM public viewer (crop; the viewer&rsquo;s watermark is partly visible)')
 IMAGES['portstemarie1729'] = ('portstemarie1729_lead.jpg', 'mssBLA 191 p. 5: the head of the coded report, no gloss', 'Huntington Library, William Blathwayt papers addenda, mssBLA 191 p. 5, via the Huntington Digital Library')
 IMAGES['napoleon'] = ('napoleon_plate.jpg', 'Page 3 of the dispatch: the archivist&rsquo;s notes, the salutation &ldquo;Sire,&rdquo; and the first lines of the cipher', 'J. Vilcoq, Revue historique de l&rsquo;Arm&eacute;e 1969 no. 4, plate after p. 24 (Archives nationales), via Pers&eacute;e')
