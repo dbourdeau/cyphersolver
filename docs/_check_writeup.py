@@ -8,6 +8,13 @@ Run from anywhere:
 
   python docs/_check_writeup.py <slug>          every surface for one write-up (slug = docs/<slug>.html)
   python docs/_check_writeup.py --audit         finished targets with no write-up, and other drift
+  python docs/_check_writeup.py --gate          CI gate: fail on a head, link or markup violation that is not in the baseline
+                                                (docs/_audit_baseline.json; --gate --write-baseline refreshes it)
+  python docs/_check_writeup.py --reviewed <slug> [<slug> ...] | --all
+                                                record that the page was re-read against the current NOTES.md and
+                                                profile.json (docs/_page_sources.json); refuses a page that fails the
+                                                head, link or markup checks. Any later change to those sources shows
+                                                up in the audit (section Q) until the page is re-read and recorded again.
   python docs/_check_writeup.py --hook start    SessionStart hook: short audit as context for the session
   python docs/_check_writeup.py --hook stop     Stop hook: block the stop once when a target this session
                                                 worked on looks finished in its NOTES but has no write-up
@@ -309,6 +316,157 @@ def link_problems(slug, heads=None):
         if not (ROOT / unquote(path)).exists(): probs.append(f'links the repository path {path}, which does not exist on main')
     return probs
 
+# ---------------------------------------------------------------------------
+# hardening (8 Nov 2026): the review ledger, the integrity check, the gate and the hooks' self-staleness test.
+#
+# Why these and not heuristics: a pass over all 559 pages found stale text (a page not updated after NOTES.md or
+# profile.json moved on), leftovers from splits, counts that drifted between the head, the body and the profile, and
+# broken markup. Commit times did not predict stale pages (sessions update NOTES and the page together and still miss
+# spots), "numbers in the head must appear in the sources" flagged half the site, and R-numbers in the head matched
+# the profiles even on the pages that had leftovers. What can be exact is: (1) a fingerprint of NOTES.md and the
+# profile taken when a person or agent has re-read the page against them, so any later change to those sources is
+# flagged until the page is re-read; (2) markup and entity damage; (3) the head and link checks above.
+
+LEDGER = HERE / '_page_sources.json'          # slug -> {digest, reviewed}: the sources as they were when the page was last reviewed
+BASELINE = HERE / '_audit_baseline.json'      # known violations of the gated checks; the gate fails only on new ones
+_DIGEST_KEYS = ('documents', 'system', 'conditions', 'outcome')     # not 'solution': steps are appended by every attempt
+
+def _page_folders(slug, rows=None):
+    rows = rows if rows is not None else readme_rows()
+    fs = {d.rstrip('/').split('/')[-1] for r in rows if slug in r['slugs'] for d in r['dirs']}
+    if not fs and tdir(slug).is_dir(): fs = {slug}
+    return sorted(f for f in fs if tdir(f).is_dir())
+
+def source_digest(slug, rows=None):
+    """Fingerprint of the sources a page is written from (NOTES.md, and the profile without its solution steps)."""
+    import hashlib
+    h, n = hashlib.sha1(), 0
+    for f in _page_folders(slug, rows):
+        notes = read(tdir(f) / 'NOTES.md')
+        if notes:
+            h.update(f.encode() + b'\0' + re.sub(r'[ \t]+\n', '\n', notes.replace('\r\n', '\n')).strip().encode('utf-8')); n += 1
+        try: prof = json.loads(read(tdir(f) / 'profile.json') or '{}')
+        except ValueError: prof = {}
+        if prof:
+            h.update(f.encode() + b'\1' + json.dumps({k: prof.get(k) for k in _DIGEST_KEYS}, sort_keys=True, ensure_ascii=False).encode('utf-8')); n += 1
+    return h.hexdigest() if n else None
+
+def load_ledger():
+    try: return json.loads(read(LEDGER) or '{}')
+    except ValueError: return {}
+
+def ledger_problems(slug, ledger=None, rows=None):
+    """A page whose NOTES.md or profile.json changed after the page was last reviewed (or never was recorded)."""
+    d = source_digest(slug, rows)
+    if d is None: return []                       # no target folder behind this page (surveys, tool pages)
+    rec = (ledger if ledger is not None else load_ledger()).get(slug)
+    if not rec:
+        return [f'no review record: check the page against its NOTES.md and profile.json, then run python docs/_check_writeup.py --reviewed {slug}']
+    if rec.get('digest') != d:
+        return [f'NOTES.md or profile.json changed since the page was last reviewed ({rec.get("reviewed", "?")}): re-read the page against them, '
+                f'fix what is stale (head, glance box, counts, Still open, credits), then run python docs/_check_writeup.py --reviewed {slug}']
+    return []
+
+_INTEGRITY_TAGS = frozenset('p li ul ol div details summary table tr td th section figure figcaption h2 h3 a em strong pre span blockquote dl dt dd main nav code'.split())
+_ENTITY_BARE = re.compile(r'(?<![&\w])(?:rsquo|lsquo|ldquo|rdquo|ndash|mdash|hellip|eacute|egrave|agrave);')
+_ENTITY_DOUBLE = re.compile(r'&amp;(?:rsquo|lsquo|ldquo|rdquo|ndash|mdash|hellip|eacute|egrave|agrave|nbsp);')
+
+def integrity_problems(slug, heads=None):
+    """Broken markup left by an edit: unbalanced tags, bare or double-escaped entities (cipher&rsquo;srsquo;s)."""
+    from html.parser import HTMLParser
+    heads = heads or page_heads()
+    if slug not in heads: return []
+    text = re.sub(r'<(script|style)[\s\S]*?</\1>', '', heads[slug][2])
+    class P(HTMLParser):
+        def __init__(s): super().__init__(); s.n = {}
+        def handle_starttag(s, t, a):
+            if t in _INTEGRITY_TAGS: s.n[t] = s.n.get(t, 0) + 1
+        def handle_endtag(s, t):
+            if t in _INTEGRITY_TAGS: s.n[t] = s.n.get(t, 0) - 1
+    p = P(); p.feed(text)
+    probs = [f'unbalanced <{t}> ({n:+d})' for t, n in sorted(p.n.items()) if n]
+    m = _ENTITY_BARE.search(text) or _ENTITY_DOUBLE.search(text)
+    if m: probs.append('damaged character entity near "' + re.sub(r'\s+', ' ', text[max(0, m.start() - 25):m.end() + 15]) + '"')
+    return probs
+
+def gate_violations():
+    """The checks that must not get worse: {check: {slug: [problems]}}."""
+    pages = manifest()[0]
+    heads, titles = page_heads(), manifest_titles()
+    out = {'heads': {}, 'links': {}, 'integrity': {}}
+    for s in sorted(pages):
+        if s in SURVEYS or s not in heads: continue
+        for check, fn in (('heads', lambda: head_problems(s, heads, titles)), ('links', lambda: link_problems(s, heads)),
+                          ('integrity', lambda: integrity_problems(s, heads))):
+            pr = fn()
+            if pr: out[check][s] = pr
+    return out
+
+def gate(write_baseline=False):
+    """Exit status for CI: 1 when a gated check fails on a page that is not in the baseline."""
+    cur = gate_violations()
+    if write_baseline:
+        BASELINE.write_text(json.dumps({c: sorted(v) for c, v in cur.items()}, indent=1) + '\n', encoding='utf-8')
+        print('baseline written: ' + ', '.join(f'{c} {len(v)}' for c, v in cur.items())); return 0
+    try: base = json.loads(read(BASELINE) or '{}')
+    except ValueError: base = {}
+    bad = 0
+    for c, v in cur.items():
+        for s, pr in v.items():
+            if s in base.get(c, []): continue
+            bad += 1; print(f'GATE {c}: docs/{s}.html: ' + '; '.join(pr))
+    ledger, rows = load_ledger(), readme_rows()
+    drift = [s for s in sorted(manifest()[0]) if s not in SURVEYS and ledger_problems(s, ledger, rows)]
+    print(f'gate: {bad} new violation(s); baseline holds ' + ', '.join(f'{c} {len(base.get(c, []))}' for c in cur)
+          + f'; {len(drift)} page(s) whose NOTES.md/profile.json changed since their last review (informational: run --reviewed <slug> after re-reading)')
+    for s in drift[:40]: print(f'  review needed: {s}')
+    return 1 if bad else 0
+
+def mark_reviewed(slugs):
+    """Record the current NOTES.md/profile.json fingerprint for pages that have just been re-read against them.
+    Refuses a page whose head, links or markup fail, so recording is not a rubber stamp."""
+    pages = manifest()[0]
+    rows, heads, titles = readme_rows(), page_heads(), manifest_titles()
+    if slugs == ['--all']: slugs = sorted(s for s in pages if s not in SURVEYS and s in heads)
+    ledger, done, refused = load_ledger(), 0, 0
+    for s in slugs:
+        if s not in pages: print(f'{s}: not a write-up in docs/_build_site.py'); refused += 1; continue
+        d = source_digest(s, rows)
+        if d is None: continue
+        pr = head_problems(s, heads, titles) + link_problems(s, heads) + integrity_problems(s, heads)
+        if pr: print(f'{s}: not recorded, fix first: ' + '; '.join(pr)); refused += 1; continue
+        ledger[s] = {'digest': d, 'reviewed': time.strftime('%Y-%m-%d')}; done += 1
+    LEDGER.write_text(json.dumps(ledger, indent=1, sort_keys=True) + '\n', encoding='utf-8')
+    print(f'recorded {done} page(s), refused {refused}'); return 0 if not refused else 1
+
+def _checkout_staleness():
+    """(commits this checkout is behind origin/main, whether its copy of this script differs from origin/main's);
+    (None, None) when that cannot be told (offline, no remote). A stale checkout runs stale checks and blocks wrongly."""
+    try:
+        subprocess.run(['git', 'fetch', '--quiet', 'origin', 'main'], cwd=ROOT, capture_output=True, timeout=8)
+        behind = int(subprocess.run(['git', 'rev-list', '--count', 'HEAD..origin/main'], cwd=ROOT, capture_output=True, text=True, timeout=8).stdout.strip() or 0)
+        theirs = subprocess.run(['git', 'show', 'origin/main:docs/_check_writeup.py'], cwd=ROOT, capture_output=True, timeout=8)
+        norm = lambda b: b.replace(b'\r\n', b'\n')
+        return behind, theirs.returncode == 0 and norm(theirs.stdout) != norm(pathlib.Path(__file__).read_bytes())
+    except Exception:
+        return None, None
+
+def _stale_note(behind):
+    return (f'WARNING: this checkout is {behind} commits behind origin/main and its docs/_check_writeup.py differs from origin/main\'s, '
+            'so the write-up audit and the Stop hook may be out of date (they can block on rules that main has since changed). '
+            'Update it: git stash (if generated files are modified), then git pull.')
+
+def _block_once(inp, reason, tag):
+    """Block the stop once per distinct reason and session (background agents must not re-block the same list)."""
+    import hashlib, tempfile
+    sid = re.sub(r'\W', '', inp.get('session_id') or 'nosession')
+    mark = pathlib.Path(tempfile.gettempdir()) / f'cypher_{tag}_{sid}.txt'
+    digest = hashlib.sha1(reason.encode('utf-8')).hexdigest()
+    if read(mark).strip() == digest: return False
+    try: mark.write_text(digest, encoding='utf-8')
+    except OSError: pass
+    print(json.dumps({'decision': 'block', 'reason': reason})); return True
+
 def check_slug(slug):
     pages, images, version = manifest()
     rows = readme_rows()
@@ -331,6 +489,10 @@ def check_slug(slug):
             item(prob is None, prob or 'title, h1 and Sources belong to this page (not copied from another)')
         for prob in link_problems(slug) or [None]:
             item(prob is None, prob or 'every link on the page (pages, anchors, repository paths) resolves')
+        for prob in integrity_problems(slug) or [None]:
+            item(prob is None, prob or 'markup is sound (balanced tags, no damaged character entities)')
+        for prob in ledger_problems(slug) or [None]:
+            item(prob is None, prob or 'the page was reviewed against the current NOTES.md and profile.json (review ledger)')
         item(bool(re.search(r'<h2[^>]*>.*?Sources', page, re.S)), 'a Sources section', warn=True)
         hero_end = page.find('</section>', page.find('<section class="hero">'))
         item(hero_end >= 0 and bool(re.match(r'\s*<main>', page[hero_end + 10:])),
@@ -618,6 +780,18 @@ def audit(brief=False):
     print(f'N. Dead links inside pages (page, anchor or repository path): {len(dead)} pages')
     for s, pr in dead: print(f'   {s}.html: ' + '; '.join(pr))
     problems += len(dead)
+    # 8d. broken markup; 8e. pages whose sources moved on after the last review (hardening, 8 Nov 2026)
+    broken = [(s, integrity_problems(s, heads)) for s in sorted(html_slugs - SURVEYS) if s in pages]
+    broken = [(s, p) for s, p in broken if p]
+    print(f'P. Broken markup in pages (unbalanced tags, damaged entities): {len(broken)} pages')
+    for s, pr in broken: print(f'   {s}.html: ' + '; '.join(pr))
+    problems += len(broken)
+    ledger = load_ledger()
+    drift = [(s, ledger_problems(s, ledger, rows)) for s in sorted(html_slugs - SURVEYS) if s in pages]
+    drift = [(s, p) for s, p in drift if p]
+    print(f'Q. Pages whose NOTES.md or profile.json changed since the page was last reviewed (review ledger): {len(drift)}')
+    for s, pr in drift: print(f'   {s}: ' + pr[0][:150])
+    problems += len(drift)
     # 9. full texts (George Lasry, 22 Oct 2026): every reading lists its transcription and decryption per document
     import _texts
     notext, nosum = [], []
@@ -675,9 +849,13 @@ def hook_start():
     import io, contextlib
     buf = io.StringIO()
     with contextlib.redirect_stdout(buf): problems, gaps = audit(brief=True)
-    if not problems:
+    behind, differs = _checkout_staleness()
+    stale = _stale_note(behind) + '\n' if behind and differs else ''
+    if not problems and not stale:
         print(json.dumps({'suppressOutput': True})); return
-    text = ('Write-up audit (docs/_check_writeup.py --audit). A finished cipher is not done until it is written up: '
+    if not problems:
+        print(json.dumps({'hookSpecificOutput': {'hookEventName': 'SessionStart', 'additionalContext': stale}})); return
+    text = stale + ('Write-up audit (docs/_check_writeup.py --audit). A finished cipher is not done until it is written up: '
             'run the /writeup skill for it. Section E lists partial readings that can still be pushed toward a full '
             'reading: "read in part" is a stopping point only when every gap has an outside blocker.\n' + buf.getvalue())
     print(json.dumps({'hookSpecificOutput': {'hookEventName': 'SessionStart', 'additionalContext': text}}))
@@ -730,6 +908,9 @@ def hook_stop():
     except json.JSONDecodeError: inp = {}
     if inp.get('stop_hook_active'):                     # we already blocked once this stop; never loop
         print(json.dumps({'suppressOutput': True})); return
+    behind, differs = _checkout_staleness()
+    if behind and differs:                              # a stale script blocks on rules main has changed: warn, do not block
+        print(json.dumps({'suppressOutput': True, 'systemMessage': _stale_note(behind)})); return
     import io, contextlib
     with contextlib.redirect_stdout(io.StringIO()): _, gaps = audit(brief=True)
     # only targets this session worked in: a tool call whose input names a path in the folder (a folder merely
@@ -753,6 +934,18 @@ def hook_stop():
                   f'`python docs/_check_writeup.py {mine[0][0]}` must print "complete"), or, if it is not finished, put '
                   f'"Status: in progress" at the top of targets/{mine[0][0]}/NOTES.md so the check stops asking.')
         print(json.dumps({'decision': 'block', 'reason': reason})); return
+    # a target this session wrote into whose NOTES.md or profile.json no longer matches its page's last review
+    rows = readme_rows()
+    ledger = load_ledger()
+    stale_pages = sorted({s for d in dirs if (touched(d) if transcript else False)
+                          for r in rows if d in {x.rstrip('/').split('/')[-1] for x in r['dirs']} for s in r['slugs']
+                          if s in manifest()[0] and ledger_problems(s, ledger, rows)})
+    if stale_pages:
+        reason = ('Review check: you changed the sources (NOTES.md or profile.json) of ' + ', '.join(stale_pages[:8])
+                  + ', so the write-up page may now say something the sources no longer support (stale counts, a Still open line, '
+                  'a glance box, credits). Re-read each page against its NOTES.md and profile.json, fix what changed, run '
+                  'python docs/_check_writeup.py <slug> and then python docs/_check_writeup.py --reviewed <slug>.')
+        if _block_once(inp, reason, 'review'): return
     # a partial reading this session worked on: push it further, or justify each gap
     part = []
     for d in dirs:
@@ -788,6 +981,10 @@ if __name__ == '__main__':
         elif args[:1] == ['--audit']:
             problems, _ = audit()
             sys.exit(1 if problems else 0)
+        elif args[:1] == ['--gate']:
+            sys.exit(gate(write_baseline='--write-baseline' in args))
+        elif args[:1] == ['--reviewed'] and len(args) > 1:
+            sys.exit(mark_reviewed(args[1:]))
         elif len(args) == 1 and re.fullmatch(r'[a-z0-9]+', args[0]):
             sys.exit(0 if check_slug(args[0]) else 1)
         else:

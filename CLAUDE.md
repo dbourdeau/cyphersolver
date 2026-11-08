@@ -41,6 +41,20 @@ reading. The checker and the Stop hook enforce the `## Remaining gaps` and `## E
 If a target is genuinely not finished, or deliberately not written up (found solved by others with nothing added
 here), put `Status: in progress` or `Status: no write-up` in the first forty lines of its `NOTES.md`.
 
+## Keeping write-ups true
+
+A write-up is written from the target's `NOTES.md` and `profile.json`, and goes stale when they change (the
+7 Nov 2026 review of all 559 pages found most pages carrying at least one error of this kind).
+
+- After changing a finished target's `NOTES.md` or `profile.json`, re-read its page against them, fix it, then run
+  `python docs/_check_writeup.py --reviewed <slug>` (`/writeup` section 4a). Audit section Q lists the pages owed; a split
+  or merge makes every page involved owed. Facts on a page come from the sources, are stated once, and anything the
+  sources do not carry is marked as not checked or cut. Credits never come from git authorship alone.
+- A page copied from another page must have its head, hero, glance box and Sources replaced (audit section M); markup
+  and links must stay sound (sections N and P). CI runs `python docs/_check_writeup.py --gate` and fails on a new violation.
+- The SessionStart and Stop hooks warn, and the Stop hook stops blocking, when this checkout is behind `origin/main`
+  with an older `_check_writeup.py`: `git pull` before trusting them.
+
 ## The catalogue holds vetted leads only
 
 New finds are leads, not catalogue entries. Sweeps write `research/<sweep>/candidates.json`, and

@@ -125,7 +125,17 @@ blocks once on any partial target the session worked on that is still unjustifie
 ## 1. The page: `docs/<slug>.html`
 
 Copy the skeleton of a recent page. The builder regenerates nav, footer, contents strip, lead figure, byline date
-and version stamps; you write everything else. Required parts, in order:
+and version stamps; you write everything else. **Copying a page copies its words too**: replace the `<title>`, the
+meta description, the kicker, the `<h1>`, the subtitle, the hero cipher strip, the glance box and the Sources
+section (gonzaga1542 and branicki1757 once shipped with the limantour1909 head). `_check_writeup.py` fails a page
+whose title or h1 shares no name or year with its manifest title, or whose title another page already uses.
+
+**Say each fact once, from the source.** A count, a percentage or a date typed into the head, the glance box and the
+body drifts apart when one of them is edited. Take every figure from `profile.json` or `NOTES.md` (recompute it
+from the file when you can) and, before you finish, grep the page for each number you used and make sure every
+place agrees. A claim about people or history that the target's sources do not carry ends with "(This background is
+not from the sources and was not checked here.)" or is cut. Credits follow `profile.json` and the contributor's own
+notes, never a guess from git authorship. Required parts, in order:
 
 1. `<head>`: `<title>Short name (dates) — Read / Read in part / Not a cipher / Attempted</title>`, a one-paragraph
    `<meta name="description">`, `<link rel="stylesheet" href="style.css">`.
@@ -347,7 +357,14 @@ PYTHONUTF8=1 python _build_stats.py
 PYTHONUTF8=1 python _build_site.py
 cd ..
 python docs/_check_writeup.py <slug>
+python docs/_check_writeup.py --reviewed <slug>     # after re-reading the page against NOTES.md and profile.json
 ```
+
+`--reviewed` records a fingerprint of the target's `NOTES.md` and `profile.json` (docs/_page_sources.json) and
+refuses a page that fails the head, link or markup checks. The checker fails a page with no record, and the audit
+(section Q) and the Stop hook flag any page whose sources changed after its record, so a stale page cannot sit
+unnoticed. CI runs `python docs/_check_writeup.py --gate` on every push and pull request: it fails on a head, link
+or markup violation that is not in `docs/_audit_baseline.json`.
 
 The builder prints `note: <slug>.html has no README row`, `note: README links <slug>.html, which is not in the
 manifest` and `note: <slug>.html has no hero section` when the surfaces drift; fix and rebuild. The checker must
@@ -365,6 +382,25 @@ Stage by explicit path: the new page and its images, `_build_site.py`, `_dates.j
 `Site: write-up for <who to whom>, <dates> (<shelfmark>)`, body listing what each surface got, as in `git log
 --grep='^Site:'`. Push to `main` (`git push origin HEAD:main` from a worktree) and confirm
 `https://dbourdeau.github.io/cyphersolver/<slug>.html` after the Pages build.
+
+## 4a. Keeping a finished page true
+
+A page is written from `NOTES.md` and `profile.json`; when either changes, the page may now say something the
+sources no longer support. That is the commonest error found in the 7 Nov 2026 review of all 559 pages (counts,
+"Still open" lines, glance boxes and credits left behind by a later update).
+
+- Whenever you change `NOTES.md` or `profile.json` of a finished target, re-read its page against them: the head and
+  meta description, the glance box, "Still open", every count and percentage, credits, and the Full-texts
+  summary. Fix what changed, run `python docs/_check_writeup.py <slug>`, then `--reviewed <slug>`. The audit lists
+  the pages you still owe (section Q); the Stop hook asks once if you changed sources and left their page unreviewed.
+- When a target is split or merged, do this for **every** page involved, and remove the record's rows from the
+  glance box and hero of the page that lost them (bergamo1585, windischgraetz1720, beatrice1482 and others kept
+  the old record's rows).
+- Generated parts are rebuilt from their source, so an edit in the page is undone by the next build: fix badges,
+  titles and cite lines in `docs/_build_site.py`, Full-texts summaries in `profile.json` (`outcome.texts[].summary`),
+  portrait cards in `docs/_portraits.json`, and the texts themselves in the target's `reading*`/`translation*` files.
+- Do not run scripts from a `targets/` folder to check a number on a page: several rewrite tracked files. Recount
+  with `python docs/_check_profile.py --measure <file>` or by hand.
 
 ## 5. If the target is not actually finished
 

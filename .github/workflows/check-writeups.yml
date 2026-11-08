@@ -1,0 +1,28 @@
+# Read-only gate for the write-ups: fails a push or pull request that brings a page head copied from another page,
+# a dead link inside a page, or broken markup (unbalanced tags, damaged character entities). It does not rebuild or
+# commit anything and uses no secrets, so it also runs on pull requests from forks. Known violations live in
+# docs/_audit_baseline.json (empty at the start); `python docs/_check_writeup.py --gate --write-baseline` refreshes it.
+# Pages whose NOTES.md or profile.json changed after their last review are listed in the log (informational).
+name: Check write-ups
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Gate
+        env:
+          PYTHONUTF8: '1'
+        run: python docs/_check_writeup.py --gate
