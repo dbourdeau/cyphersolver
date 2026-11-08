@@ -2490,6 +2490,11 @@ PAGES = [
          blurb='Three telegrams King Manuel II sent his mother from Bussaco to the Pena palace on 2 and 8 August 1910, two months before the revolution: clear greetings (&ldquo;Querida m&atilde;e &hellip; Tudo bem tempo lindo&rdquo;) around 93 five-figure code items. The telegrams share four groups and an opening run after the same clear words, so they are one code with a stock phrase. Count Sabugosa&rsquo;s code does not fit, and no decode or codebook has been found.',
          quote='&ldquo;Querida m&atilde;e Tudo bem Tempo lindo veio Sabugosa hoje&rdquo; &middot; 4965 37708 89864 97183 39644 06 93608',
          rights='Arquivo Nacional Torre do Tombo, PT/TT/CAM/M13, via DigitArq'),
+    dict(slug='mexico1911', label='Huerta warning telegram 1911', year='1911', y=1911.4, place='Mexico City &rarr; El Paso', st='solved', stt='known key',
+         title='A coded telegram to Federico Gonz&aacute;lez Garza warning of a mutiny, 19 May 1911',
+         blurb='A Spanish telegram of the Maderista correspondence with ten coded words, listed as partly read from the archive&rsquo;s record. Read with the key card the same fonds holds for one of the signers: General Huerta told one of the writers that a military mutiny against the addressee is feared in the capital on account of D&iacute;az&rsquo;s resignation. Nine of the ten coded words make sense; one name stays open.',
+         quote='&ldquo;ZENERAL HUERTA d&iacute;jome t&eacute;mese en &eacute;sta MOT&Iacute;N MILITAR CONTRA usted&rdquo;',
+         rights='Telegram: CEHM-Carso, Fondo CMXV, CMXV.18.1770.2-4; transcription and reading by Prabal Gupta (CC BY 4.0)'),
     dict(slug='rubio1913', label='Rubio Navarrete 1913&ndash;14', year='1913&ndash;14', y=1914.2, place='Lampazos, Zacatecas &rarr; Mexico City', st='solved', stt='read',
          title='General Rubio Navarrete&rsquo;s cipher telegrams to the Minister of War, 1913&ndash;1914',
          blurb='Three draft telegrams of a general of Huerta&rsquo;s federal army to the Minister of War, from Lampazos (18 July 1913) and Zacatecas (13 and 18 March 1914), in the numerical Clave n&uacute;m. 109 whose printed key sheet is filed with them (CEHM-Carso, fondo DLXXIII). Brice Dudout checked the sheet on a contemporary pencil pair (1.000 of words against 0.111 for permuted tables) and read the cipher passages, 67 words: the Laredo garrison courted by the Carrancistas, an old general at San Antonio in touch with revolutionaries, and a railway to Torre&oacute;n the rebels are destroying. The fonds&rsquo; other &ldquo;en clave&rdquo; pieces use other tables and stay unread. Contributed by Brice Dudout.',
@@ -4475,6 +4480,7 @@ IMAGES['gonzaga1542'] = None
 IMAGES['exiles1736'] = None
 IMAGES['fossey1710'] = None
 IMAGES['soviet1919'] = None
+IMAGES['mexico1911'] = None
 IMAGES['piccolomini1646'] = None
 IMAGES['mazzinghi1478'] = None
 IMAGES['majesty1624'] = None
