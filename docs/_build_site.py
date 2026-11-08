@@ -1543,6 +1543,11 @@ PAGES = [
          blurb='A full page of 141 code groups enclosed to the Duke of Newcastle in August 1729 and never deciphered on the leaf (Huntington, Blathwayt papers, mssBLA 191). The same agent&rsquo;s other letters in the file carry interlinear decipherments; 942 code/gloss pairs from them rebuilt an alphabetical one-part French code of 379 values. Applied to the page it decodes 134 of 141 groups: the agent complains that Keene leaves him without orders during the accommodation and asks for instructions.',
          quote='&ldquo;Mandez-moi donc quelque ordre pour ma conduite.&rdquo;',
          rights='Huntington Library, San Marino, William Blathwayt papers addenda, via the Huntington Digital Library'),
+    dict(slug='guastalla1717', label='Duke of Guastalla 1717', year='1717', y=1717.7, place='Guastalla, correspondent not named', st='solved', stt='key from the ciphertext',
+         title='The Duke of Guastalla on a &ldquo;lettera reversale&rdquo;, 24 September 1717',
+         blurb='A partly ciphered Italian letter of Antonio Ferdinando Gonzaga, Duke of Guastalla, catalogued with no decipherment and dated July: in a two-digit number cipher that Prabal Gupta reports finding from the letter alone, the duke refuses a condition that would be a silent abdication of his rights. About 90% of the cipher reads; ten code groups stay open.',
+         quote='&ldquo;una tacita abdicazione delle mie ragioni, alla quale non sar&ograve; mai per aderire&rdquo;',
+         rights='Letter: Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera A, cc. 15-16; key and reading by Prabal Gupta (CC BY 4.0)'),
     dict(slug='exiles1736', label='Polish exiles on the abdication 1736', year='1736', y=1736.1, place='Prussia, writer unknown', st='solved', stt='key from the ciphertext',
          title='The Polish exiles on King Stanis&#322;aw&rsquo;s abdication, 4 February 1736',
          blurb='An unsigned letter in Polish and Latin from the Polish exiles, in a cipher of one number for each letter, catalogued as partly in Polish and perhaps to Branicka: France has told them that she cannot keep Stanis&#322;aw Leszczy&#324;ski on the throne, and they answer with two conditions for his abdication. Prabal Gupta found the key from the letter alone; 98% of the cipher words read.',
@@ -4479,6 +4484,7 @@ IMAGES['branicki1757'] = None
 IMAGES['gonzaga1542'] = None
 IMAGES['exiles1736'] = None
 IMAGES['fossey1710'] = None
+IMAGES['guastalla1717'] = None
 IMAGES['soviet1919'] = None
 IMAGES['mexico1911'] = None
 IMAGES['piccolomini1646'] = None

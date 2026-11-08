@@ -1,0 +1,194 @@
+{
+ "schema_version": 1,
+ "target": "guastalla1717",
+ "title": "The Duke of Guastalla's letter on a \"lettera reversale\", 24 September 1717 (Biblioteca Estense, Autografoteca Campori, Lettera A, cc. 15-16): a two-digit number cipher read by Prabal Gupta",
+ "documents": [
+  {
+   "id": "campori-guastalla-1717",
+   "read": "read in part",
+   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera A, Antonio Ferdinando duca di Guastalla, cc. 15-16",
+   "date": "24 September 1717 (the catalogue says 24 July)",
+   "year": 1717,
+   "country": "Italy",
+   "route": "Antonio Ferdinando Gonzaga, Duke of Guastalla -> a correspondent who is not named",
+   "language": "Italian",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "The Estense record says \"Lettera parzialmente cifrata\" and mentions no decipherment; the contributor found no clear copy, key or draft in the folder.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 3095,
+    "unit": "symbols",
+    "measured": false,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "published",
+    "source": "the contributor's transcription, two passes agreeing on 92.0% of 3,064 digits with each difference settled on the scan; the project counted 3,095 digits in 556 groups in the transcription file and did not see the scan",
+    "image_quality": "fair",
+    "notes": "Four pages; 3 and 7 in the first digit of a pair are hard to tell apart and are written 3; clear parts in << >>."
+   },
+   "places": {
+    "from": "Guastalla",
+    "to": "unknown"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "nomenclator"
+  ],
+  "summary": "Letters are two-digit numbers in alphabet order from a = 30 to z = 67 (b = 25), with twins for some letters; a word may end in a single digit for its last vowel (5 a, 6 e, 7 i, 8 o, 9 u); a few short numbers stand for words (2 che, 18 non, 1 e) and about ten code groups for names and titles stay unread.",
+  "symbol_kind": "digits",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "alphabetical"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "The Estense record mentions no decipherment; the contributor found none in the folder, the ledger, the catalogue searches or Affò's history of Guastalla (recipients' papers and Vienna not searched).",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "transcription",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Prabal Gupta transcribed the letter, found the key and built the reading (issue #329, repository prabal-rje/branicki-1757). The project re-ran the decryption and a control; it has not seen the scans.",
+  "models": [
+   "unknown"
+  ],
+  "first_date": "2026-11-07",
+  "last_date": "2026-11-08"
+ },
+ "solution": [
+  {
+   "date": "2026-11-07",
+   "kind": "transcription",
+   "what": "The contributor transcribed the four pages in two passes agreeing on 92.0% of 3,064 digits, settling each difference on the scan.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-07",
+   "kind": "solver",
+   "what": "Count matching and a fit on Italian letter counts found the key from this letter alone, with no other letter, key or crib; a key from the first half alone agrees with the full key on 98.3% of the second half (contributor's figure).",
+   "result": "worked",
+   "technique": [
+    "frequency analysis",
+    "language-model scoring"
+   ]
+  },
+  {
+   "date": "2026-11-07",
+   "kind": "reading",
+   "what": "The decryption was read as Italian between a clear opening and closing; Trautson and Starhemberg were read as names in the cipher; about ten code groups stay unread; a blind reader named the text Italian and translated about 85% of the sense.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-07",
+   "kind": "literature search",
+   "what": "The contributor searched the ledger, the other 13 items in the Campori folder, two Campori catalogue searches, names and Affò's history of Guastalla vol. IV: no reading found.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "control",
+   "what": "Project check: the key decrypts the 1,668 letters of the cipher groups; 95.2% of them agree with the contributor's decryption; against 300 shuffled keys a word-list test gives 35.2% for the key, mean 17.7% and best 34.5% for the shuffles, a weak separation (VERIFICATION.md). No scan compared.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-08",
+   "verdict": "not applicable",
+   "notes": "The project's n-gram test needs an Italian model of the period (lang/) and the single letter is short; a word-list test against 300 shuffled keys was used instead (VERIFICATION.md) and separates the key from the average shuffle but not clearly from the best one."
+  },
+  "class": "read in part",
+  "verification": [
+   "key confirms"
+  ],
+  "method": "key recovered from ciphertext-only",
+  "key": "partial",
+  "method_basis": "Contributor's claim: the key was found from the ciphertext of this letter alone by count matching on Italian letter counts, with no other letter, key or crib; the project verified that the key decrypts the letter into Italian words and re-ran a weak shuffled-key control, but did not repeat the search.",
+  "contribution": [
+   "key recovered",
+   "transcription"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "prabal",
+    "role": "solution",
+    "note": "key, transcription and reading of the Guastalla letter; issue #329; repository prabal-rje/branicki-1757, CC BY 4.0",
+    "date": "2026-11-07"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "ten code groups (10, 11, 12, 13, 14, 16, 20, 26, 92, 93) unread or doubtful, probably names and titles",
+    "blocker": "open-codes",
+    "detail": "each occurs once to a few times and no text fixes it"
+   },
+   {
+    "item": "doubtful passages marked [?] in the reading (page 1 line 15, page 3 line 4, page 4 line 9, and single words)",
+    "blocker": "illegible",
+    "detail": "the shapes of 3 and 7 and some digits are ambiguous and only the sense chose between readings"
+   },
+   {
+    "item": "a human check of the transcription against the Estense scans",
+    "blocker": "needs-physical-access",
+    "detail": "the scans are not reachable from the project and are licensed CC BY-NC-SA"
+   },
+   {
+    "item": "the recipient's papers, the Gonzaga of Guastalla in Parma and Mantua and the imperial archives in Vienna",
+    "blocker": "needs-physical-access",
+    "detail": "not searched by the contributor and not available to the project"
+   }
+  ],
+  "notes": "Key, transcription and reading by Prabal Gupta; checked by the project against his files and a weak shuffled-key control, not against the scans. 322 of 356 cipher units read (90.4%).",
+  "fraction_read": 0.904,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Counted from reading.md: 356 units in the cipher part (words, a bracketed code group counted as one), of which 34 carry an unread code group or a [?] mark: 322 of 356 = 90.4%.",
+  "key_file": "key.tsv",
+  "texts": [
+   {
+    "doc": [
+     "campori-guastalla-1717"
+    ],
+    "label": "Letter of the Duke of Guastalla, 24 September 1717 (Estense, Autografoteca Campori, cc. 15-16)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.904,
+    "summary": "A letter of Antonio Ferdinando Gonzaga, Duke of Guastalla, to a correspondent not named, in the autumn of 1717: in the contributor's reading Trautson is back from his estates and Starhemberg and Trautson are expected the following week (names read in the cipher, not checked in print); the duke cannot answer until he is told whether the claim of a lettera reversale has been dropped, which he calls a tacit abdication of his rights, and he will take the land only in the form of the old investitures; the income is too small to justify a loss of rights; the clear close wishes the correspondent's son a return to health.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (for the project)",
+     "date": "2026-11-08",
+     "note": "Read the cipher part of the reading as Italian clauses: the clauses build coherent sentences with scattered holes at the unread code groups; the clear opening and closing and the names are the contributor's reading, not an edition."
+    }
+   }
+  ]
+ }
+}
