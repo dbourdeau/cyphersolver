@@ -106,6 +106,14 @@ the user's real Chrome) and continue the sweep there; read pages with `get_page_
 - Keep the request rate polite (no parallel tab floods); the user's own session is on the line.
 - Note in the sweep's notes which source needed Chrome, so the next sweep goes straight there.
 
+## Issues and pull requests
+
+It is fine to leave items open or untried, and to finish a target with them open: they go in `NOTES.md`
+(`## Remaining gaps` with blockers, `## Escalation`) and `profile.json`, not in a GitHub issue that stays open. An
+issue or pull request with no response from its author 4 days after our last comment is closed with a comment listing
+what is open and that it can be reopened (README Conventions, "Open items, and closing issues"). A submission whose
+author says they will refresh it is held until then, not written up; keep any date already promised to a contributor.
+
 ## Working in the shared checkout
 
 - Several sessions share this working tree and switch its branch. Run `git status -sb` before committing; if the
