@@ -37,6 +37,27 @@ later numbers are municipalities and 20th-century bodies), Gelders Archief 1 rec
 Outside Utrecht the only cipher components in these sets are modern. Not harvested: Haags GA (59), Noord-Hollands Archief (236), HC Overijssel (141),
 Groninger Archieven (5), Rotterdam (184), Rivierenland (102), Amstel-Gooi-Vecht (142), Westfries (136), Rijnland (319) and the small sets.
 
+## OAI sweep, second pass (coordinator's request, same day) - result: 0 new rows
+
+Recipe: `ListSets` for the sets; per set run `PYTHONUTF8=1 python oai_cipher.py oai_hX.jsonl Open_data_<n>` (resumes from
+`oai_hX.jsonl.progress.json`; several processes on different sets at once were fine, no 429). Regex now also covers gecijferd, cijfersleutel,
+secreet schrift, chiffres, en chiffre, cifrat, cifra. `show_hits.py` filters the hits (drops "in cijfers", "ongecodeerd", archive classification
+"gecodeerd", dates after 1900). Only sets in archieven.nl's open-data list can be reached; **Drents Archief, Tresoar, Stadsarchief Amsterdam,
+Erfgoed Leiden, BHIC (1 EAD), HC Overijssel (7 EADs) and Gelders Archief (1 EAD) hold almost nothing there**, so they were not covered in practice.
+
+Covered (EADs read, of set size): Het Utrechts Archief about 1550 of 1564 (done, apart from the last few big records); Zeeuws Archief about 1400 of 1543;
+Haags GA 1434 of 2386; Rivierenland 1259 of 1562; Westfries Archief 1237 of 2151; Noord-Hollands Archief 430 of 2726; Groninger Archieven about 450 of 2794;
+EC Achterhoek-Liemers 196 of 329. Not reached: Dordrecht (46), Rijnland (319) and the small sets. Order of EADs is by toegang number, so the early-modern
+family and state fonds come first and are covered best.
+
+Early-modern or 19th-century cipher components found, besides Amerongen/Hardenbroek above: Zeeuws Archief Catalogus 202.90 no. 4 (Van den Warck letters
+in cipher, Antwerp 1585: already lead in leads.json from the APE sweep); Groninger Archieven toegang 1109 inv. 487 "Aantekening in geheimschrift, z.j.,
+met mogelijke vertaling" (undated note, translation attached: not a row) and 3089 inv. 277 "Telegraph cipher for the tobacco trade, 1885" (commercial code
+book); Westfries Archief 0778 "Cijferschrift van Klaas Jansz Schuit, [1833]" (almost certainly a ciphering/arithmetic copybook: excluded);
+Maatschappij tot Nut "oud-letterschrift" (script primer). Noise: archive classification codes ("gecodeerd") and "ontcijferd" = "could not read the date".
+Nothing new of the Amerongen type turned up; the items flagged in these EADs are mostly keys, and the cipher letters of the Dutch 17th-18th century
+are catalogued without any cipher word (e.g. Doublet's letters in Hardenbroek inv. 989-990).
+
 ## Other seeds, what was tried
 
 | Seed | Route | Result |

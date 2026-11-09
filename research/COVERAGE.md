@@ -112,7 +112,7 @@ Folders: `sweep_2026-11_A_halfdone`, `sweep_2026-11_B_unswept_south`, `sweep_202
   registers, not a source of new ciphertexts. ICCU Manus Online API and the Wayback Machine work for Italian inventories.
 - **Still never swept:** Dubrovnik (no item-level catalogue online; ask the State Archives about "sifra" bundles), Malta
   (vHMML Turnstile), ARSI and Propaganda Fide (only the printed MHSI volumes), Slovakia, Russia, Belarus (Turin and the
-  Czech lands were swept 6 Nov 2026). About 6,000 Manus "cifre" records unscreened.
+  Czech lands were swept 6 Nov 2026). .
 - **Blocked:** Finna (Cloudflare), BOA (login with CAPTCHA), hrcak.srce.hr, Harvard hosts (403), Abhilekh Patal (403 on the
   user's network on 4 Nov; its 18 image leads stay unvetted).
 - **Not done:** ACA reg. 3225 (1435) not reached.
@@ -152,3 +152,27 @@ Folders: `sweep_2026-11_A_halfdone`, `sweep_2026-11_B_unswept_south`, `sweep_202
 - **Naples/Palermo** (`sweep_2026-11_naples_palermo`): leads 2397 (Maria Carolina, private collection, partial decodification noted) and 2398 (ASPa Misc. Arch. II n. 262);
   neither is vetted or promotable yet (2397 has a partial decodification of unknown extent; 2398 has no known access).
 - **PARES Naples/Sicily viceroy items** (`sweep_2026-11_pares_naples`): ten Estado Genoa items opened; 0 rows (clear, "descifrada" copies, or already inside catalogue 755 / `genes1643`; 3598,222/223 is a plain/cipher pair in the 1643 Genoa key family). Not opened: Osuna (Albornoz), Santa Cruz and Frías PARES hits.
+
+## Sweeps of 9 Nov 2026
+
+Folders: `sweep_2026-11_*` as named. 35 leads merged (2414-2448; see `merged.json`); 26 promoted to the catalogue the same day
+(1270, 1271, 2415, 2416, 2421-2425, 2427-2430, 2432, 2433, 2436, 2438-2441, 2443-2448; vetting blocks in `vetting_2026-11_nov9/`).
+
+- **Productive routes:** PARES full text with a century facet and `catalogo/contiene/<series id>` child listings on the Carlist and Peninsular
+  War series (`spain_nobility_aca`, `pares_diversos_19c`); Mírka's Crypto-World survey of the Plzeň family archives and Antal et al.
+  (HistoCrypt 2023) for Slovakia (`mirka_cryptoworld`); Landesarchiv NRW noble archives (`austria_german_states`); Daniel Tant's
+  ARCSI list of French cipher items, arcsi.fr/doc/Tant/420.pdf (`france_departmental`); the Utrecht Amerongen fonds through the
+  archieven.nl OAI-PMH feed, `harvest.archieven.nl/OAI/OAIHandler` (`siblings_nov9`).
+- **Closed with 0 rows:** HAB Wolfenbüttel and Swiss libraries (OPAC unreachable), Denmark and Sweden (Libris, KB Copenhagen,
+  Riksarkivet text terms), Slovak, Croatian and Slovenian finding aids (12 PDFs grepped), Ireland and UK universities (already swept),
+  Dutch regional archives (OAI route covers about 70% of the open sets), the published lists of undeciphered ciphers (HistoCrypt
+  2018-2023, Tomokiyo `unsolved.htm`, Klartext: every item already here), BSB/Bodleian metadata, Canada (Archives of Ontario, Manitoba, BAnQ
+  Advitam, McGill), Australia and New Zealand (DigitalNZ, Trove web search), Manus Online "cifre" (4,361 records; 99% noise),
+  PARES century full text (cipher vocabulary exhausted for the 16th to 18th centuries).
+- **Still blocked:** PANB, Archeion, UCalgary, McCord, BC Archives, SLNSW (human check); natlib.govt.nz and Archives NZ; archive.nrw.de and AD Gironde
+  Ligeo (Anubis since the afternoon); Digital Scriptorium, CUDL; dlib.si (JS); the Aube, Nord and Ardennes notices behind leads 2417-2420.
+- **Not done:** Bellièvre papers at 800 px (fr. 15905 second ark, 15911, 15904, 15903, 15894, 15902, 15897, 15898 online; about 6,000 canvases,
+  10 canvases a minute); Reuterholm E 5135-5141 and Stedingk E 6616/6617 sampling at Riksarkivet (image server slow); rest of the Dutch OAI sets
+  (Noord-Hollands 430 of 2726, Groninger 450 of 2794); Hungarian MNL (503).
+- **BNE Digital:** the lead-vetting agent opened BNE Digital in Chrome (single leaves, for leads 1270 and 1271) although this file says not to
+  retry it. It worked; nothing was fetched in bulk. Ask before any larger use.
