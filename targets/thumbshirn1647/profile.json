@@ -4,39 +4,6 @@
  "title": "The Saxe-Altenburg envoys at the Westphalian congress (Thumbshirn / Carpzov to J. F. von Brand), LATh - StA Altenburg, Schönbergische Sammlung Nr. 85: the 1647 homophonic key rebuilt and validated; a postscript of 1648/49 read with Thumbshirn's key",
  "documents": [
   {
-   "id": "nr85-1647-letters",
-   "read": "read",
-   "shelfmark": "Landesarchiv Thüringen - Staatsarchiv Altenburg, Schönbergische Sammlung Nr. 85, images 0547-0607 (letters of 13 Nov - 25 Dec 1647 with their decipherments of the time)",
-   "date": "13 Nov - 25 Dec 1647",
-   "year": 1647,
-   "country": "Germany",
-   "route": "Saxe-Altenburg envoys (Wolfgang Conrad von Thumbshirn, Dr August Carpzov) -> Johann Friedrich von Brand",
-   "places": {
-    "from": "Osnabrück",
-    "to": "Altenburg"
-   },
-   "language": "German, Latin",
-   "pages": 14,
-   "cleartext_in_document": "separate passages",
-   "plaintext": {
-    "location": [
-     "separate folio"
-    ],
-    "source": "decipherments of the time on separate slips for each letter (images 0549, 0559, 0571, 0581, 0599, 0605)"
-   },
-   "length": {
-    "tokens": "unknown",
-    "unit": "symbols",
-    "measured": false
-   },
-   "transcription": {
-    "by": "llm from images",
-    "source": "ThULB Jena digitisation (urn:nbn:de:urmel-stat-251122), CC BY 3.0",
-    "image_quality": "good",
-    "notes": "Held-out letter of 24 Dec transcribed and hashed before its decipherment was opened; one AI transcriber."
-   }
-  },
-  {
    "id": "nr85-0837",
    "read": "read",
    "shelfmark": "Landesarchiv Thüringen - Staatsarchiv Altenburg, Schönbergische Sammlung Nr. 85, fol. 399 (image 0837), postscript",
@@ -70,10 +37,9 @@
  ],
  "system": {
   "types": [
-   "homophonic",
    "monoalphabetic"
   ],
-  "summary": "Two systems: the 1647 letters use a homophonic substitution in numbers (2-3 numbers per letter, 5 to 90), not in the file; Thumbshirn's signed key (image 0003) is a simple substitution of 24 letters in numbers 1-52, written in a continuous run without word breaks, used in the postscript 0837.",
+  "summary": "Two systems: the 1647 letters use a homophonic substitution in numbers (2-3 numbers per letter, 1 to 90), not in the file; Thumbshirn's signed key (image 0003) is a simple substitution of 24 letters in numbers 1-52, written in a continuous run without word breaks, used in the postscript 0837.",
   "symbol_kind": "digits",
   "homophones": {
    "used": true
@@ -149,15 +115,13 @@
  ],
  "outcome": {
   "class": "read",
-  "key": "recovered",
+  "key": "not applicable",
   "method": "read with known key",
   "method_basis": "The postscript 0837 is read with Thumbshirn's own key sheet (image 0003), unchanged. The 1647 homophonic key was rebuilt from the decipherments of the time and validated on a held-out letter; the 1647 texts themselves are known from those decipherments.",
   "contribution": [
-   "transcription",
-   "key recovered"
+   "transcription"
   ],
   "verification": [
-   "statistical test",
    "contemporary decipherment",
    "key confirms"
   ],

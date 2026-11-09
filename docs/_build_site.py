@@ -1553,6 +1553,31 @@ PAGES = [
          blurb='Ten coded telegrams of Venustiano Carranza&rsquo;s headquarters to generals and buying agents, listed as open with no content on the CEHM cards: orders on ammunition, money and rifles, which the contributor places in the war against Villa. Six use number keys that run four times through the alphabet from varying start letters, four use swapped letter pairs; Prabal Gupta reports finding the keys from the ciphertext alone. The key family may already be in print.',
          quote='&ldquo;Hoy salen de Nueva York doscientos mil cartuchos siete mm&rdquo;',
          rights='Telegrams: CEHM-Carso, Fondo CDLXXX 1.17.1 to 1.42.1; keys and reading by Prabal Gupta (CC BY 4.0)'),
+    dict(slug='anker1814', label='Anker to Christian Frederik 1814', year='1814', y=1814.5, place='London &rarr; Christian Frederik', st='solved', stt='key from external plaintext',
+         title='Carsten Anker to Prince Christian Frederik, a leaf of 28 June 1814',
+         blurb='A leaf with no decipherment in the symbol cipher of 1811, whose key Brice Dudout rebuilt from the decipherment of an earlier letter and validated on a held-out part: Princess Charlotte of Wales will not marry the Prince of Orange, and Anker revives the idea of a match with Christian Frederik. 249 of 252 signs read.',
+         quote='&ldquo;Only let Your Royal Highness not bind yourself!&rdquo;',
+         rights='Leaf: Arkivverket / Riksarkivet, RA-EA-5938; key and reading by Brice Dudout'),
+    dict(slug='pandolfini1514', label='Pandolfini 1514-15', year='1514&ndash;15', y=1514.9, place='French court &rarr; Florence', st='partial', stt='key from external plaintext',
+         title='Pandolfini&rsquo;s cipher letters from the French court, 1514&ndash;15',
+         blurb='Six bare cipher letters of the Florentine orator in France, with no decipherment beside them: one read and five read in part by Brice Dudout, with a key learnt from cipher and decipherment pairs of the same filza. The key is partial. They report an ambassador to be sent to Rome and the King&rsquo;s request that Venice give back Monselice, Este and Montagnana.',
+         quote='&ldquo;pace et parentado fatto&rdquo;',
+         rights='Letters: Archivio di Stato di Firenze, Mediceo avanti il Principato LXXII; keys and readings by Brice Dudout'),
+    dict(slug='farnese1547', label='French ambassador at Rome 1547', year='1547', y=1547.6, place='Rome &rarr; Henri II', st='partial', stt='key from adjacent plaintext',
+         title='A letter from Rome on the French ambassador&rsquo;s advice, 10 August 1547',
+         blurb='A cipher copy of a chapter of a letter from Rome on the French ambassador&rsquo;s advice, with its decipherment of the time beside it: Brice Dudout rebuilt the key from it, partial on a held-out test, so 192 of 243 words read by the key alone. The content is known from the decipherment; the Farnese letter in the same gathering is not read.',
+         quote='&ldquo;Copia d&rsquo;un Cap.lo d&rsquo;una l(ette)ra di Roma de x d&rsquo;Agosto 1547&rdquo;',
+         rights='Letter: Archivio di Stato di Firenze, Mediceo del Principato 384, c. 76r; key and reading by Brice Dudout'),
+    dict(slug='thumbshirn1647', label='Thumbshirn postscript 1648-49', year='1648&ndash;49', y=1648.9, place='Osnabr&uuml;ck', st='solved', stt='known key',
+         title='A postscript of the envoy Thumbshirn, 1648/49',
+         blurb='An undated postscript with no decipherment in the correspondence of the Saxe-Altenburg envoys at the Westphalian congress, read with the envoy&rsquo;s own key sheet by Brice Dudout: a lament over the shameful servitude into which the envoys were led. The 1647 key of the same volume was rebuilt and validated.',
+         quote='&ldquo;O miseros nos servos&rdquo;',
+         rights='Postscript: Landesarchiv Th&uuml;ringen &ndash; Staatsarchiv Altenburg, Sch&ouml;nbergische Sammlung Nr. 85 (ThULB Jena, CC BY 3.0); reading by Brice Dudout'),
+    dict(slug='schoenberg1665', label='Sch&ouml;nberg journal 1665', year='1665', y=1665.9, place='Dresden', st='partial', stt='key from the ciphertext',
+         title='Sch&ouml;nberg&rsquo;s journal of the Dresden negotiations, December 1665',
+         blurb='A nine-line cipher passage in a journal of the negotiations over Erfurt, read in part with a regular substitution key that Brice Dudout recovered from the cipher: the Elector is said to have won thirty thousand thalers for the Erfurt rights. The key is partial on its held-out test.',
+         quote='&ldquo;er habe den seinen bey Teufel holen geschwohren&rdquo;',
+         rights='Journal: Landesarchiv Th&uuml;ringen &ndash; Staatsarchiv Altenburg, Sch&ouml;nbergische Sammlung Nr. 107 (ThULB Jena, CC BY 3.0); key and reading by Brice Dudout'),
     dict(slug='exiles1736', label='Polish exiles on the abdication 1736', year='1736', y=1736.1, place='Prussia, writer unknown', st='solved', stt='key from the ciphertext',
          title='The Polish exiles on King Stanis&#322;aw&rsquo;s abdication, 4 February 1736',
          blurb='An unsigned letter in Polish and Latin from the Polish exiles, in a cipher of one number for each letter, catalogued as partly in Polish and perhaps to Branicka: France has told them that she cannot keep Stanis&#322;aw Leszczy&#324;ski on the throne, and they answer with two conditions for his abdication. Prabal Gupta found the key from the letter alone; 98% of the cipher words read.',
@@ -4548,6 +4573,11 @@ IMAGES['vilaflor1663'] = ('vilaflor1663_26may.jpg', 'The letter of 26 May 1663: 
 IMAGES['albornoz1648'] = ('albornoz1648_copyb.jpg', 'Copy B (image 5): the clear opening, sixteen lines of syllables and numbers, and the clear closing', 'Archivo Hist&oacute;rico de la Nobleza, OSUNA,CT.2,D.32 image 5 (copy B), via PARES (the copy published by Brice Dudout, Europe chiffr&eacute;e)')
 IMAGES['champigny1744'] = None
 IMAGES['carranza1915'] = None
+IMAGES['anker1814'] = None
+IMAGES['pandolfini1514'] = None
+IMAGES['farnese1547'] = None
+IMAGES['thumbshirn1647'] = None
+IMAGES['schoenberg1665'] = None
 IMAGES['rubio1913'] = ('rubio1913_telegram.jpg', 'Rubio&rsquo;s telegram of 18 March 1914: the plain words &ldquo;con toda atenci&oacute;n que&rdquo; and the first runs of numbers', 'Centro de Estudios de Historia de M&eacute;xico (CEHM-Carso), fondo DLXXIII, DLXXIII.2.41.13-41 image 1, via the CEHM public viewer (crop; the viewer&rsquo;s watermark is partly visible)')
 IMAGES['portstemarie1729'] = ('portstemarie1729_lead.jpg', 'mssBLA 191 p. 5: the head of the coded report, no gloss', 'Huntington Library, William Blathwayt papers addenda, mssBLA 191 p. 5, via the Huntington Digital Library')
 IMAGES['napoleon'] = ('napoleon_plate.jpg', 'Page 3 of the dispatch: the archivist&rsquo;s notes, the salutation &ldquo;Sire,&rdquo; and the first lines of the cipher', 'J. Vilcoq, Revue historique de l&rsquo;Arm&eacute;e 1969 no. 4, plate after p. 24 (Archives nationales), via Pers&eacute;e')
