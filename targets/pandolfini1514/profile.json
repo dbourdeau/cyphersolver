@@ -1,0 +1,196 @@
+{
+ "schema_version": 1,
+ "target": "pandolfini1514",
+ "title": "Francesco Pandolfini's chancery, Florentines at the French court: copy of two chapters written to Rome, 20 Oct [1514], in cipher (ASF MAP LXXII 322), read in part; key partial (catalogue 2389)",
+ "documents": [
+  {
+   "id": "asf-map72-322",
+   "read": "read in part",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato LXXII, doc. 322, c. 401r",
+   "date": "20 Oct [1514]",
+   "year": 1514,
+   "country": "Italy",
+   "route": "[Francesco Pandolfini, Florentine orator at the court of Louis XII] -> Rome, copy",
+   "places": {
+    "from": "Paris",
+    "to": "Rome"
+   },
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "none: no decipherment of the time found (Daniel Bourdeau's vetting of the clear copies, 6 Nov 2026; neighbours pos. 797-804 checked); Desjardins-Canestrini vol. II has a gap from 16 Aug 1514 to 25 May 1515"
+   },
+   "length": {
+    "tokens": 420,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_322.txt",
+    "distinct": 102
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "ASF online images of MAP LXXII (magnified strips, not published)",
+    "image_quality": "fair",
+    "notes": "One pass by one AI agent, hashed before decoding with key v4; superscripts often sit one sign off and δ/d are hard to tell apart at this resolution (declared). No independent re-reading."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "Consonant signs with the vowel written as a superscript figure (1-5 = u, o, i, e, a), bare vowel signs, homophones, word signs (F = et, M = non, T = senza) and a numeric nomenclator between points (.2. papa, .4. Cristianissimo, .64. Santita), between clear passages.",
+  "symbol_kind": "digits and letters",
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "word_division": "none",
+  "sibling_key": "the cipher/decipherment pairs of the time in the same filza (345/346, 340/341, 342/343)",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "key_order": "partly alphabetical"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment of the time for 322 (Daniel Bourdeau's vetting of 6 Nov 2026; neighbours checked); not in Desjardins-Canestrini, Negociations diplomatiques de la France avec la Toscane, vol. II (1861), which has a gap from 16 Aug 1514 to 25 May 1515; catalogue 2389 open, no target or PR in this repository (re-checked 9 Nov 2026).",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "sibling key",
+   "known plaintext"
+  ],
+  "attack": "sibling key",
+  "human_role": "Daniel Bourdeau found the six bare letters and the pairs of the same system (lead 2389). Brice Dudout set the rules (protocols hashed before each held-out transcription, one measurement each, thresholds fixed in advance). AI agents transcribed, built the key, measured and read. No human palaeographer checked the transcriptions.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-11-08",
+  "last_date": "2026-11-09"
+ },
+ "solution": [
+  {
+   "date": "2026-11-09",
+   "kind": "sibling key",
+   "what": "Key v3 learnt from the cipher/decipherment pairs of the time 345/346 and 340/341 in MAP LXXII; frozen before each held-out part.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "P01 (346 vs 345): character agreement 0.788, control 0.338; P02 (340 vs 341): 0.691, control 0.341; both under the binary threshold 0.85: not validated.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "P03bis on 342 c. 433r first paragraph (247 tokens), Italian n-gram criterion calibrated before transcription: N = 0.613 between the partial (0.004) and validated (0.765) thresholds: partial; the partial threshold is lenient (declared).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "reading",
+   "what": "Bare letter 322 transcribed (hashed) and decoded with v3 and a derived key v4 (declared, not measured): about 168 cipher words, about 77% read by sense (block 1 about 92%), 0 restored; counts approximate.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on plaintext from external sources",
+  "method_basis": "The key was learnt from cipher/decipherment pairs of the time in the same filza, measured on held-out pairs (partial at best), then applied to the bare letter 322, which has no decipherment.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "verification": [
+   "statistical test",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-11-09",
+   "verdict": "weak",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered held-out tests (not docs/_validate.py): P01 0.788 and P02 0.691 under 0.85 (not validated); P03bis n-gram N 0.613, partial under a lenient threshold. Key v4 derived after measurement, not measured."
+  },
+  "fraction_read": 0.77,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "reading_322.md: about 168 cipher words, about 129 certain or probable (block 1 about 92%, block 2 about 54%, block 3 about 69%); word boundaries are not written, so the counts are approximate.",
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "key rebuilt from the pairs of the time and measured (partial); bare letter 322 transcribed and read in part (about 77%)",
+    "date": "2026-11-09"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "catalogue 2389: the six bare Pandolfini letters of MAP LXXII and the pairs of the same system (ASF Mediceo avanti il Principato sweep, Nov 2026)",
+    "date": "2026-11-06"
+   },
+   {
+    "who": "asf",
+    "role": "key or decipherment used",
+    "note": "MAP LXXII cipher letters with their decipherments of the time (345/346, 340/341, 342/343), from which the key was learnt; doc. 322 itself",
+    "date": "1514"
+   }
+  ],
+  "key_file": [
+   "key_v3.json",
+   "key_v4.json"
+  ],
+  "gaps": [
+   {
+    "item": "322: about 39 cipher words unresolved (code .51., marks T^n, T^x, L^c, and runs in blocks 2 and 3)",
+    "blocker": "open-codes",
+    "detail": "code .51. and several superscript marks are not in the key; HD images would settle shifted superscripts and δ/d"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "asf-map72-322",
+    "label": "MAP LXXII 322, c. 401r: \"Copia di ij cap.li scripti ad Roma sotto di 20 d'octobre\" [1514]",
+    "transcription": "transcription_322.txt",
+    "decryption": "reading_322.md",
+    "reading": "reading_322.md",
+    "translation": "translation_322.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.77,
+    "summary": "After Soliers' recall, an informant (code .51.) says the King will send an ambassador to Rome as soon as Rocciafort arrives, believed to be the bishop of 'Lancres', empowered to negotiate everything with the Pope, and foresees the same quarrel as the Pope's with the bishop of Marseille; after Alfonso Ariosti's visit for Ferrara, the King asked that the Venetian ambassador be approached so that Venice give back Monselice, Este and Montagnana, held by the Este as imperial fiefs.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Brice Dudout (with Claude)",
+     "date": "2026-11-09",
+     "note": "block 1 reads as sentences (about 92%), blocks 2 and 3 with real gaps; counts approximate; key partial"
+    }
+   }
+  ],
+  "notes": "New text: no decipherment of the time and no edition. Key partial (P03bis, lenient criterion, declared). The other bare letters of 2389 (307, 309, 310, 311, 333) follow. No ASF image is included."
+ }
+}

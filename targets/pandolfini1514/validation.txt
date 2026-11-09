@@ -1,0 +1,23 @@
+Held-out validation of the key (contributor's pre-registered tests, not docs/_validate.py), 8-9 Nov 2026. All protocols hashed
+before the held-out transcriptions (frozen/PROTOCOLE.md, frozen/PREREG-*.md with their .sha256).
+
+Key v3 (frozen/CLE_v3.json, SHA256 ae5f0b9f...4ff6): consonant + vowel-as-superscript alphabet with homophones, word signs and a
+nomenclator (.2. papa, .4. Cristianissimo, .5. Cattolico, .6. Inghilterra, .20. Svizzeri, .24. Milano, .26. Arciduca), learnt from
+the cipher/decipherment pairs of the time in MAP LXXII (345/346, 340/341), frozen 9 Nov 2026 02:31:58.
+
+Measurements (one each, held-out part never used for learning):
+  P01  H = 346 against its decipherment 345: character agreement 0.788, control 0.338 -> NOT VALIDATED (binary criterion >= 0.85).
+  P02  H2 = 340 against 341: 0.691 (words 0.583), control 0.341 -> NOT VALIDATED (no "partial" class in that protocol).
+  P03  342/343: no measurement (the pair was not established by its heading).
+  P03bis  H4 = 342 c. 433r first paragraph (247 tokens, frozen 36df3d6a...), Italian n-gram criterion calibrated before the
+       transcription (frozen/CALIB_P03bis.json): N = 0.613; thresholds N_V = 0.765 (validated), N_P = 0.004 (partial)
+       -> PARTIAL (frozen/RESULTAT_MESURE_P03bis.json).
+
+Declared reservations: N_P is very low, so "partial" is a lenient class; the control 340 (N = 1.107 for a character agreement of
+0.715) shows this criterion is more lenient than character agreement. After the measurement (no validation value), 343 c. 434r
+was confirmed as the clear of 342's first paragraph: character agreement 0.822 (control 0.381), words 0.714
+(frozen/DIAGNOSTIC_343_P03bis.json). The ceiling is the resolution of the MAP images; HD images were not available.
+
+Key v4 (frozen/CLE_v4.json, SHA256 1848f692...ad61) = v3 unchanged + values derived after P03bis from the 342/343 pair and the
+reading of 322 (2^4 = ce, bare 2 = o, .3. = imperadore, .64. = Santita; bare 5 = h and 2^5 = ca as alternatives), each with its
+attestations. Declared, not measured.
