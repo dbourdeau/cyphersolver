@@ -234,3 +234,5 @@ transcribed (key already frozen). The f. 78r gloss names three codes: **22 = Sir
 In R8490: "[22: Sir James Croft] is so forwarde yn the action that he promised Q[ueen] to send to [...] [27: Dr Dale] to
 begyn the openning of the [...]" (f. 80r) and "[22: Sir James Croft] hath a desire to retourne from theym" (f. 80v). The
 class is unchanged: R8490 is still decoded, not read.
+
+Second pass, 9 Nov 2026 (Brice Dudout, with Claude): every cipher word of R8490 ff. 80r-80v transcribed and hashed before decoding, then decoded with the frozen f. 78r key and a declared derived key: 35/43 cipher words read by sense (81%; 21 sure, 14 probable, 8 unresolved), 41/49 with the codes, below the 95% rule. New: Croft promised the Queen "to send to Bruges [27: Dr Dale]"; "yt will not be kept"; "treat of Breda"; "subiect". See `dudout/reading_R8490.md`.
