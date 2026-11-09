@@ -1,0 +1,192 @@
+{
+ "schema_version": 1,
+ "target": "farnese1547",
+ "title": "The French ambassador's letter from Rome, 10 Aug 1547, in cipher (ASF Mediceo del Principato 384 c. 76r) with its decipherment of the time (c. 79r); c. 78r (catalogue 2339) not read",
+ "documents": [
+  {
+   "id": "asf-mdp384-c76r",
+   "read": "read in part",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo del Principato 384, c. 76r (decipherment c. 79r)",
+   "date": "10 Aug 1547",
+   "year": 1547,
+   "country": "Italy",
+   "route": "[French ambassador at Rome] -> [Henri II], copied in Cosimo I's chancery",
+   "places": {
+    "from": "Rome",
+    "to": "Florence"
+   },
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "c. 79r, same heading: the decipherment of the time"
+   },
+   "length": {
+    "tokens": 1671,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_76r.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "ASF PAD (archividigitali), unit 969, 2000 px",
+    "image_quality": "good",
+    "notes": "One pass by one AI agent, without looking at c. 79r; no independent re-reading."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Homophonic substitution with a prefix code: 6, 8, 9 alone = e, o, a, other codes two digits (10 = che, 24 = et), dotted variants equal, nomenclature codes for names.",
+  "symbol_kind": "digits",
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "word_division": "none",
+  "sibling_key": "none",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "key_order": "unknown"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "c. 79r of the same filza is the decipherment of the time of c. 76r, so its content is not new. No edition or study of the gathering found (Daniel Bourdeau's vetting of 6 Nov 2026: Della Casa-Farnese correspondence ed. Comelli 2022 vol. II, DECODE, Cryptiana, Lasry); no target in this repository; re-checked 9 Nov 2026.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Daniel Bourdeau found and vetted the gathering (lead 2339). Brice Dudout set the rules (protocol hashed before transcription, one held-out measurement, thresholds fixed in advance). AI agents transcribed, aligned, built the key, measured and wrote up. No human palaeographer checked the transcriptions.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-11-08",
+  "last_date": "2026-11-09"
+ },
+ "solution": [
+  {
+   "date": "2026-11-08",
+   "kind": "key from source",
+   "what": "Known keys tried on c. 78r by criteria fixed in advance: Klee (targets/vatican5) M5 0.098; A. Meister, Die Geheimschrift im Dienste der paepstlichen Kurie (1906), pp. 176-177, tables no. 1 and no. 2 (as coded in targets/farnese1541) M5 0.174 and 0.183.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "sibling key",
+   "what": "c. 76r and c. 79r transcribed separately and hashed; L01-L13 of 76r aligned with 79r; key learnt from that alignment only.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One measurement on the held-out lines L14-L18 of 76r: character agreement 0.695 vs best of 200 shuffled keys 0.218; partial by the thresholds fixed in advance (validated >= 0.85).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "reading",
+   "what": "Whole of 76r decoded with the frozen key and checked word by word against 79r: 243 words, 131 certain, 61 probable, 51 restored, 0 unresolved (79.0% read by the key); divergences 76r/79r listed.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The key of c. 76r was learned from its decipherment of the time (c. 79r) on lines L01-L13 and measured once on L14-L18 (partial). The content is the decipherment's (existing); the key is the contribution.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "verification": [
+   "contemporary decipherment",
+   "statistical test"
+  ],
+  "validation": {
+   "date": "2026-11-09",
+   "verdict": "weak",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): one measurement on L14-L18 of 76r, 0.695 of characters vs best of 200 shuffled keys 0.218; thresholds fixed in advance (>= 0.85 validated, 0.60-0.85 with a 0.30 margin partial)."
+  },
+  "fraction_read": 0.79,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading_76r.md: 192 of 243 words certain or probable by the key alone; the 51 others restored from c. 79r.",
+  "provenance": "mixed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "c. 79r, the decipherment of the time of c. 76r (same heading); the key was learned from it",
+    "date": "1547"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "found and vetted the gathering (catalogue 2339, second ASF Florence pass, 6 Nov 2026), pointing at the c. 76 / c. 79 pair",
+    "date": "2026-11-06"
+   },
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "note": "c. 76r and c. 79r transcribed, aligned; key of c. 76r rebuilt from c. 79r, partial on a held-out part (key_76r.tsv, validation.txt); known keys (Klee, Meister 1906 nos. 1-2) tested negative on c. 78r",
+    "date": "2026-11-09"
+   }
+  ],
+  "key_file": "key_76r.tsv",
+  "gaps": [
+   {
+    "item": "c. 76r: 51 words restored from 79r (nomenclature and rare homophones)",
+    "blocker": "open-codes",
+    "detail": "complete the key from the restored words, then a targeted blind re-reading of doubtful figures"
+   },
+   {
+    "item": "c. 78r (catalogue 2339), the Farnese letter: not read",
+    "blocker": "no-key-material",
+    "detail": "Klee and Meister 1906 nos. 1-2 negative; the 76r key not applied (protocol: only if validated); 78r held-out lines L12-L18 untouched"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "asf-mdp384-c76r",
+    "label": "c. 76r (cipher) with c. 79r (decipherment of the time), Rome 10 Aug 1547",
+    "transcription": "transcription_76r.txt",
+    "contemporary": "cleartext_79r.txt",
+    "decryption": "reading_76r.md",
+    "reading": "reading_76r.md",
+    "translation": "translation_76r.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.79,
+    "summary": "The French ambassador at Rome reports that he advised his young King, Henri II, to keep what his father left him rather than seek glory in a war; but the King's ardour, encouraged by great men of France, cannot be held back, and the ambassador is urged to work for union with England.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Brice Dudout (with Claude)",
+     "date": "2026-11-09",
+     "note": "read as sentences against c. 79r: 79% of words by the key, the rest restored from the decipherment of the time; coherent but raw (divergences of wording listed)"
+    }
+   }
+  ],
+  "notes": "The text of c. 76r is known from its decipherment of the time (c. 79r); we claim no new reading. What is new is the key, partial by our protocol. c. 78r (the letter of catalogue 2339) is not read; Meister's tables were tried on it and failed."
+ }
+}

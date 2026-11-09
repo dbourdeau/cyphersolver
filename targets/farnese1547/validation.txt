@@ -1,0 +1,17 @@
+# Validation of the c. 76r key (farnese1547): ONE measurement on a held-out part, protocol fixed before.
+# Protocol (French working file PREREG-P02.md, SHA-256 331aa78e...), written 9 Nov 2026 BEFORE c. 76r and c. 79r were transcribed:
+# - Transcriptions of 76r (cipher) and 79r (clear) made separately and hashed before any alignment.
+# - Held out (H'): the last 5 cipher lines of 76r (L14-L18, about 23%), never aligned or decoded before the measurement.
+# - Training (T): L01-L13 aligned with the start of 79r; the end of that alignment fixed where H' starts in 79r; that rest of 79r
+#   (clair_79r_H, SHA-256 43d66e50...) was written and hashed before the measurement without looking at the figures of H'.
+# - Key KEY76 from the T alignment only (output kept if seen >= 2 times and >= 20%; prefix code: 6, 8, 9 alone, other codes two
+#   digits; dotted variants = same value), frozen (SHA-256 db6c515c...) before the measurement.
+# - Score = 1 - Levenshtein / length of the clear, letters only; 200 controls by permuting the values (seed 1547).
+# - Thresholds fixed in advance: VALIDATED if >= 0.85 and >= best control + 0.30; PARTIAL if 0.60 <= score < 0.85 with the margin.
+# Result as recorded (H_MESURE.txt):
+H' figures 421, reference letters 285
+character agreement 0.695 | best of 200 controls 0.218 | margin 0.477
+DECISION: PARTIAL
+# The shortfall comes from codes absent from T (rare homophones and the nomenclature: Ambasciatore, Francia, Inghilterra),
+# not from a doubt on the system. Lines 14-18 are now spent. c. 78r (the letter of catalogue 2339) was NOT touched: the
+# protocol allowed applying KEY76 to it only if the 76r key was validated.
