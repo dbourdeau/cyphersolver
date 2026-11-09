@@ -78,7 +78,7 @@
   ],
   "attack": "known plaintext",
   "first_date": "2026-10-28",
-  "last_date": "2026-10-28",
+  "last_date": "2026-11-09",
   "human_role": "Brice Dudout chose the target from the catalogue and set the rules (frozen key before validation, held-out checks, prior-work search the day of publication); AI agents transcribed, solved, checked and wrote up. Doubtful signs were settled by targeted visual review where stated.",
   "models": [
    "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
@@ -147,6 +147,15 @@
    ],
    "what": "K7, one measurement on the fresh pair 2,1,99 (2nd cipher passage, 10 lines frozen) vs Danvila MHE XXXVIII (5 Dec 1521): 0.882 of characters (n = 170) vs 200 controls max 0.176, rank 1/201; words 0.770.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "sibling key",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Daniel's lead of 7 Nov: fol. 434 of PTR,LEG,2,1,100 (cipher original of the paragraphs of 24 Oct 1521) transcribed by shape and frozen, decoded with frozen K7, then compared with Danvila's printed decipherment (MHE XXXVIII pp. 547-549): K7 reads it almost word for word. Existing pair, so used for training, not validation: derived key K7b (K7 + 18 entries, declared, not re-validated) gives three more words of 2,1,19 (quiça, quitar, villas).",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -158,9 +167,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.87,
+  "fraction_read": 0.935,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Daniel's rule: 46 cipher words, 28 certain, 12 probable, 4 restored (tales, vuestra, juntar, villas), 2 unresolved (first word, group fud.). Recount of 5 Nov 2026: words restored from the sense are not counted as read, so 40 of 46 = 87.0% (certain + probable; 95.7% with the restored words). Earlier value: 0.957.",
+  "fraction_read_source": "Daniel's rule, strict count (restored words not read): 46 cipher words, 28 certain, 15 probable, 2 restored (tales, vuestra), 1 unresolved (group fud.); 43 of 46 = 93.5% (97.8% with the restored words). Recount of 9 Nov 2026 after fol. 434 (key K7b): the first word {quiça} and {villas} are read, [juntar] is replaced by {quitar}. Earlier values: 0.87 (5 Nov, 40 of 46), 0.957.",
   "first_break": true,
   "verification": [
    "matched control",
@@ -177,18 +186,30 @@
     "role": "solution",
     "note": "key rebuilt from the Cardinal's other letters (K7, validated on held-out 2,1,99); sign shapes re-read blind by Brice Dudout; cipher paragraph of 9 Sep 1520 read",
     "date": "2026-11-02"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "lead of 7 Nov 2026 (Remaining gaps): fol. 434 of PTR,LEG,2,1,100 as the source of the missing shapes; followed on 9 Nov (key K7b)",
+    "date": "2026-11-07"
+   },
+   {
+    "who": "danvila",
+    "role": "key or decipherment used",
+    "note": "printed decipherment of the paragraphs of 24 Oct 1521, aligned with the cipher sheet fol. 434 to derive key K7b",
+    "source": "Danvila, Memorial Histórico Español XXXVIII, pp. 547-549"
    }
   ],
   "gaps": [
    {
-    "item": "first cipher word (six signs, one uninventoried shape) and the group fud.",
+    "item": "the group fud.",
     "blocker": "open-codes",
-    "detail": "no value in K7"
+    "detail": "no value in K7 or K7b; absent from fol. 434 (ful. = secreta is attested there, fud. is not)"
    },
    {
-    "item": "signs outside the key: first signs of [tales] and [juntar], 2nd sign of [villas], ro, qx, m.",
+    "item": "signs outside the key: first sign of [tales] (Zx), ro, and the two signs before mu. in [vuestra] (qx m.)",
     "blocker": "open-codes",
-    "detail": "no value in K7"
+    "detail": "no value in K7 or K7b; no identical shape in fol. 434 (which always writes cim. mu.)"
    }
   ],
   "texts": [
@@ -201,17 +222,20 @@
     "translation": "translation.md",
     "language": "es",
     "state": "read in part",
-    "read_share": 0.87,
+    "read_share": 0.935,
     "summary": "On 9 September 1520 Adrian of Utrecht – Cardinal of Tortosa, regent of Castile for Charles V, and sixteen months later Pope Adrian VI – wrote from Valladolid while the Junta of the Comunidades was settling at Ávila. In the middle of the letter are six lines in cipher. Danvila, who printed the letter in 1897, noted only: “Sigue un párrafo cifrado que no ha podido traducirse”. The cipher is the Cardinal’s dotted code; we rebuilt it from his other letters of 1520–1521 whose plain text is known, validated it on a letter held out, and applied it to this paragraph. It tells what the Junta meant to do to the grandees: take from them the alcabalas and the towns that had belonged to the Crown.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 (for Brice Dudout)",
-     "date": "2026-11-02",
-     "note": "Read as sentences 2 Nov 2026 except the first word (one unknown sign) and the group fud.; 44 of 46 words (28 certain, 12 probable, 4 restored, 2 unresolved), so grade B. Key K7 validated 2 Nov 2026 by one measurement on a fresh held-out pair (AGS PTR,LEG,2,1,99, 2nd cipher passage, vs Danvila MHE XXXVIII, 5 Dec 1521): characters 0.882 vs at best 0.176 for 200 shuffled keys (rank 1/201); words 0.770. Sign shapes re-read blind by Brice Dudout on plates."
+     "date": "2026-11-09",
+     "note": "Re-read as sentences 9 Nov 2026 with the derived key K7b (fol. 434, not re-validated): 43 of 46 words read (28 certain, 15 probable, 2 restored, 1 unresolved: fud.), so grade B. First reading 2 Nov 2026. Key K7 validated 2 Nov 2026 by one measurement on a fresh held-out pair (AGS PTR,LEG,2,1,99, 2nd cipher passage, vs Danvila MHE XXXVIII, 5 Dec 1521): characters 0.882 vs at best 0.176 for 200 shuffled keys (rank 1/201); words 0.770. Sign shapes re-read blind by Brice Dudout on plates."
     }
    }
   ],
-  "key_file": "key_K7.json",
+  "key_file": [
+   "key_K7.json",
+   "key_K7b.json"
+  ],
   "provenance": "contributed"
  }
 }
