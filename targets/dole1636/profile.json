@@ -145,6 +145,42 @@
     "measured": false,
     "file": "transcription.txt"
    }
+  },
+  {
+   "id": "ms1595-f389",
+   "read": "read",
+   "shelfmark": "Besançon, Bibliothèque municipale, Ms 1595 (Ms 1591-1595 vol. V, papers of Jean Girardot de Nozeroy), fols. 389r-v (cipher draft) and 397r (clear draft)",
+   "date": "29 June 1636",
+   "year": 1636,
+   "country": "France",
+   "route": "Marquis of Conflans and Girardot de Beauchemin -> Antoine Brun",
+   "places": {
+    "from": "Salins",
+    "to": "Dole"
+   },
+   "language": "French",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate folio",
+     "printed edition"
+    ],
+    "source": "Period clear draft fol. 397r; also É. Longin (ed.), Le siège de Dole..., 1912, no. CLX (pp. 253-255), from the original received by Brun (Brun papers vol. VII fols. 22-23) and Brun's decipherment (fols. 24-25)",
+    "partial": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Bibliothèque municipale de Besançon, Mémoire vive, Ms 1595 (images not reproduced)",
+    "image_quality": "good",
+    "notes": "Right and left edges eaten in places (23 words restored from the clear draft and the sense)."
+   },
+   "length": {
+    "tokens": 1292,
+    "unit": "symbols",
+    "measured": false,
+    "file": "transcription.txt"
+   }
   }
  ],
  "system": {
@@ -230,6 +266,21 @@
    ],
    "what": "Letter agreement with Longin 1912: 0.967 on fols. 191 + 127v; fol. 183 vs fol. 182 identical apart from vous/nous, ou/a.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Second held-out measurement on Ms 1595 fol. 389v (9 passages, 177 letters) against the period clear draft fol. 397, key relearnt on the first part of fol. 389 (71 passages): 0.955 vs 200 shuffled keys max 0.316; 18/18 shared numbers identical to key.tsv; w = 48 new.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "literature search",
+   "what": "Text of Ms 1595 fol. 389 found printed in Longin 1912 no. CLX (pp. 253-255) after the measurement; Longin does not use Ms 1595.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -268,6 +319,12 @@
     "role": "solution",
     "note": "transcription; key recovered from the period gloss and validated on held-out block; unglossed passages read (text already printed by Longin 1912, found after)",
     "date": "2026-11-04"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "Ms 1595 fol. 389 (Besançon BM, Mémoire vive): second independent key check, 0.955 vs 0.316; w = 48; minute read (261 words); text already printed by Longin 1912 no. CLX",
+    "date": "2026-11-09"
    }
   ],
   "gaps": [
@@ -337,6 +394,24 @@
      "date": "2026-11-04",
      "note": "fol. 183 read with the key and compared with the period clear copy fol. 182: identical apart from vous/nous and ou/a; 27 words, 21 certain, 6 probable."
     }
+   },
+   {
+    "doc": "ms1595-f389",
+    "label": "Conflans and Beauchemin to A. Brun, [Salins, 29 June 1636] (Ms 1595 fol. 389r-v, cipher draft; clear draft fol. 397r)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "language": "fr",
+    "state": "read",
+    "read_share": 0.877,
+    "summary": "The Marquis of Conflans and Girardot de Beauchemin tell Brun the state of their affairs in clear terms: they will forget nothing to relieve him and wait for a cavalry reinforcement (fifteen hundred horse, with Watteville), but they have no money, few horses and carts, little bread and lack arms, and need victuals for four days; Fribourg and Lucerne have agreed and they are working to gather carts and horses. Necessity will oblige them to act, but they will not put the stake on a bad throw: a single blow against both Brun and the country would be an irreparable crime. Code names: Engoulevant = Dole, Pluton = Besançon.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "date": "2026-11-09",
+     "note": "Passages read as French sentences from the mechanical decryption, checked against the period clear draft fol. 397 (which differs in places); 261 words, 229 certain, 9 probable, 23 restored (eaten edges), 0 unresolved = 87.7% certain (91.2% with probable); second held-out key check 0.955 vs 0.316. Text already printed (Longin 1912 no. CLX), found after the measurement."
+    },
+    "translation": "translation.md"
    }
   ],
   "key_file": "key.tsv"
