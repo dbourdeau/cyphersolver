@@ -24,7 +24,7 @@ record opens in the built-in browser, not curl). Images: IIIF manifest
 - Also tried: the full-alphabet Caesar shift of one (gives "lemoekqeo", no word).
 
 ## Prior art
-OPAC lists no decipherment. Web searches on the incipit and on lines of the poem found nothing (28 Oct and 9 Nov 2026).
+OPAC lists no decipherment. Web searches on the incipit and on lines of the poem found nothing (9 Nov 2026).
 
 ## Remaining gaps
 - first and seventh glyph of the heading word, reading of the whole word - blocker: illegible; the 1513-px IIIF image is the only copy, the glyphs are minim-ambiguous
@@ -34,7 +34,7 @@ OPAC lists no decipherment. Web searches on the incipit and on lines of the poem
 - [n/a] siblings: no sibling cipher leaves on this folio; the rest of the codex is plain
 - [n/a] clear-pages: the poem itself is the clear text
 - [x] known-keys: vowel shift read off the heading; full Caesar +1 tried and rejected
-- [x] print: OPAC, web searches on the incipit and lines of the poem, nothing
+- [x] print: OPAC and web searches on the incipit and lines of the poem, nothing; Walther and Mirabile not yet consulted
 - [n/a] key-rebuild: the key (five vowels) is not in doubt; the 9-letter ciphertext is
 - [n/a] retry: nothing to retry with a longer text
 
