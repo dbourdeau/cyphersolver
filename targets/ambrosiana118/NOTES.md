@@ -40,6 +40,9 @@ OPAC lists no decipherment. Web searches on the incipit and on lines of the poem
 - [n/a] key-rebuild: the key (five vowels) is not in doubt; the 9-letter ciphertext is
 - [n/a] retry: nothing to retry with a longer text
 
+## Lead found at the end, not followed up
+The same ballad ("Da poi che te pur piace darmi morte / Morte me day chel martiro e piu forte") is quoted in E. Franceschini, *Studi e note di filologia latina medievale* (1938), p. 74, in a passage on a codex of Seneca's tragedies with Trevet's arguments ("L'Ercole Furente manca dell'argomento ..."; Google Books snippet only). If A 118 inf. is related, the tyrant poem could be a verse argument to a Senecan tragedy (Hercules furens has a tyrant, Lycus). Unchecked; no source says so.
+
 ## Next step
 Compare the heading against attributions of the poem in other witnesses (Poetae latini aevi / Walther, *Initia
 carminum*, Mirabile) and against the glyph shapes of the codex's other headings.
