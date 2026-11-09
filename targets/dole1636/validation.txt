@@ -12,3 +12,11 @@ gloss:      encequenousvoyonsquelquelegerperilavostrearriveepouravoirestetropdif
 # After the reading (not pre-registered): letter agreement of the mechanical decryption of the unglossed passages with the clear
 # printed by É. Longin (1912) from Brun's drafts: fols. 191 + 127v 0.967 (584 vs 589 letters); all passages incl. fol. 181 0.963.
 # Second ciphered copy fol. 183 read with the key and compared with the period clear copy fol. 182: identical apart from vous/nous, ou/a.
+
+# Second independent check, on Ms 1595 fol. 389 (9 Nov 2026). Protocol written and hashed before the held-out part was read.
+# Training: first part of fol. 389r-v (71 passages) aligned with the period clear draft fol. 397 (39 aligned 1:1, 32 by dynamic programming); key = majority letter per number, frozen.
+# Held out: end of fol. 389v (9 passages, 177 letters) against the clear draft, letters only. Controls: 200 shuffled keys. Thresholds fixed in advance: >= 0.85 and >= max(controls) + 0.30.
+chars = 0.955   controls max = 0.316   controls mean = 0.187   margin = 0.638   coverage = 0.994   n = 177
+agreement of the relearnt key with key.tsv: 18/18 shared numbers identical; new value: 48 = w (once)
+decision: VALIDATED
+# Note: the key.tsv of this target was read before the protocol (declared in it). The two witnesses differ in a few places (the cipher has "vous secourir", "meilleur", "jeu"; the draft "nous trouver", "malheur", "dé").

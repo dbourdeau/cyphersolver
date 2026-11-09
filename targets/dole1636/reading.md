@@ -88,3 +88,95 @@ V2 pour {attaque} de {douze} cent hommes
 | fol. 181 + fol. 183 | 48 | 35 | 9 | 2 | 2 | 44 (91.7%) |
 
 fols. 181 + 183: fol. 183 alone (complete second copy) is 27 words, 21 certain, 6 probable (100%); fol. 181 has its right edge lost.
+
+## Ms 1595 fol. 389r-v (Mémoire vive views 612-613), Conflans and Beauchemin to A. Brun, [Salins, 29 June 1636]
+
+Cipher draft (minute) with the marginal note "Minute de lettre de messieurs le marquis de Conflans et conseiller de Beauchemin à Mr le procureur général"; the period clear draft is on fol. 397r. Tags as above; `~x` probable, `[x]` restored from the clear draft and the sense (eaten edge), `?x` unresolved.
+
+A01 [l'estat] de toutes nos affaires  
+A02 que vous en soyez informés  
+A03 selon cela attendre  
+A04 de vous en [termes] ~clairs et precis  
+A05 estes  
+A06 ne voulons rien oublier pour [vous] secourir  
+A07 a teste [baissee] des  
+A08 advis nous le [ferons]  
+A09 sans retardement  
+A10 [hazarderons]  
+A11 vous sauver  
+A12 si [vous] estes  
+A13 pressés  
+A14 l'ennemis  
+A15 de la necessité  
+A16 nous faille [hazarder]  
+A17 donnerés le temps d'attendre le renfort de cavallerie  
+A18 fait ~esperer  
+A19 quinze cent chevaux  
+A20 Watteville ameine  
+A21 ou [l'autre]  
+A22 venue  
+A23 assez fort  
+A24 mettre en l'estat  
+A25 [agir] aussitost  
+A26 difficulté [est] grande d'aller a  
+A27 l'ennemis  
+A28 [bruslé]  
+A29 et nous  
+A30 Roche  
+A31 cavallerie plus  
+A32 que la nostre  
+A33 bat  
+A34 les chemins  
+A35 [n'est] pas de mille chevaux  
+A36 que [nous] ayons donné  
+A37 d'environ sept a huict  
+A38 quoy qu'on [fasse] de tous costés tres difficile au iour le  
+A39 nous [commancent] seulement a venir  
+A40 n'avons aucun argent  
+A41 sept ~pieces de campagne  
+A42 l'estat qu'il conviendroit  
+A43 peine [d'assembler] des chevaux et chariots  
+A44 il faut avec nous des [vivres] au moins pour quatre iours  
+A45 que pour amasser tout [cela] remettre  
+A46 n'en pouvons [plus]  
+A47 couché  
+A48 sur la terre  
+A49 [sans] pain  
+A50 fatigués  
+A51 beaucoup ~attendre que  
+A52 en ~apparance  
+A53 peu d'effect  
+A54 reparer  
+A55 manquemans  
+A56 attendons  
+A57 Fribourg  
+A58 Lucerne  
+A59 ont accordé  
+A60 viennent  
+A61 Pontarlier  
+A62 l'on pourra  
+A63 Geneve et Berne  
+A64 envoyé pour avoir du grain  
+A65 du pain  
+A66 manque a nos levées sont ~les armes  
+A67 peine a quoy  
+A68 ~travaillons de toute façon  
+A69 amasser de chariots  
+A70 chevaux  
+A71 toute la diligence ~possible  
+T1 tarderons pas meshuy beaucoup  
+H1 en quel [estat] vous estes  
+H2 selon cela nous [faisions]  
+H3 la necessité nous obligera  
+H4 ne nous mettions pas au hazard  
+H5 perdre  
+H6 seul coup et vous et le ~pays tout ensemble  
+H7 nostre reste sur un mauvais jeu  
+H8 d'un meilleur  
+H9 un crime irreparable  
+
+| | words | certain | probable | restored | unresolved | certain + probable |
+|---|---|---|---|---|---|---|
+| fol. 389r-v (Ms 1595) | 261 | 229 | 9 | 23 | 0 | 238 (91.2%) |
+
+Where the cipher differs from the clear draft fol. 397r (the printed text follows the cipher): "vous secourir" (draft "nous trouver"), "meilleur" (draft "malheur"), "jeu" (draft "dé"), and "crime" (kept in the draft only under a blot). Code names (Engoulevant written over "Dole" in the clear draft; Pluton for Besançon, "de Pluton" in the cipher against "assistance de Besançon" in the draft): Engoulevant = Dole, Pluton = Besançon.
