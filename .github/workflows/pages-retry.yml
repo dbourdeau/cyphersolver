@@ -1,0 +1,33 @@
+# The Pages deploy of docs/ (the built-in "pages-build-deployment" run) sometimes times out, and a failed deploy
+# cannot be re-run for the same commit from the UI. When one fails, ask Pages for a new build of the same branch.
+# At most two retries per commit, so a deploy that fails for a real reason does not loop.
+name: Retry failed Pages deploy
+
+on:
+  workflow_run:
+    workflows: ['pages-build-deployment']
+    types: [completed]
+
+permissions:
+  pages: write
+  actions: read
+
+jobs:
+  retry:
+    if: github.event.workflow_run.conclusion == 'failure'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Request a new Pages build
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          SHA: ${{ github.event.workflow_run.head_sha }}
+          WORKFLOW_ID: ${{ github.event.workflow_run.workflow_id }}
+        run: |
+          failed=$(gh api "repos/$REPO/actions/workflows/$WORKFLOW_ID/runs?head_sha=$SHA&status=failure" -q '.total_count')
+          echo "failed deploys for $SHA: $failed"
+          if [ "$failed" -gt 2 ]; then
+            echo "::error::Pages deploy failed $failed times for $SHA; not retrying again"
+            exit 1
+          fi
+          gh api -X POST "repos/$REPO/pages/builds" -q '.status'
