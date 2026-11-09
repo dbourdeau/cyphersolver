@@ -24,6 +24,8 @@ record opens in the built-in browser, not curl). Images: IIIF manifest
 - Also tried: the full-alphabet Caesar shift of one (gives "lemoekqeo", no word).
 
 ## Prior art
+Annali della Facoltà di Lettere e Filosofia (Macerata) vols 22-23 (1989), p. 872 (Google Books snippet, found via a tbm=bks search of the incipit): "Carmina edita per [cipher] e altro gruppo di lettere criptografiche, non decifrate, e il testo che com: 'Altisono similis credit regnare tirampnus', ai quali segue il testo della ballata Da puoi che te pur piace darmi morte (nostro n. III)"; p. 887 prints the ballad. Article title and author not seen. Both cipher groups left undeciphered there. The second group is in the top-right corner of the leaf (three glyphs, faint, above the folio number 154); not read here. Google Books API quota was exhausted, Mirabile loads blank.
+
 OPAC lists no decipherment. Web searches on the incipit and on lines of the poem found nothing (9 Nov 2026).
 
 ## Remaining gaps
