@@ -40720,6 +40720,247 @@
    "access": "archive",
    "scored": "sweep",
    "vetting_note": "Tant's entry (AD Aube EE 1556, Fonds Xavier de Saxe, 1750-1760, 44 pieces, 'Correspondance du prince avec une maitresse. Ne comporte aucune mention du nom de l'auteur') contains no cipher claim at all: it describes an unsigned love correspondence, not a code. No aube notice reachable; cote unverified (searches show Aube EE 1486-1530 are daughters' letters; inventaire sommaire E* 1903-10 not consulted). known.py: nothing. WebSearch x3 (EE 1556; Xavier de Saxe/Lusace chiffre; Tomokiyo/Xavier cipher): no cipher, DECODE, Tomokiyo or Lasry hit. Cipher claim not real on the evidence seen; not closed as not_cipher because the pieces were not seen."
+  },
+  {
+   "id": 2426,
+   "counted": true,
+   "region": "Central Europe",
+   "cls": "B",
+   "seen": "catalogue",
+   "source": "Mírka survey (Crypto-World 11-12/2012, 1-2/2013, 3-4/2013) and SNA inventories, Nov 2026",
+   "score_note": "Scored from the survey text and the archive record, 9 Nov 2026 (research/sweep_2026-11_mirka_cryptoworld/); no image seen; inv. 694 itself was not found on ARON (only inv. 1403, 1435, 1437)",
+   "prior_art": "open as far as checked (9 Nov 2026): known.py on the shelfmark and correspondents finds nothing; web searches on the correspondents with cipher/decipher found no edition or decipherment; Mírka (2012-13) states the text is not deciphered or gives no reading; the Antal-Zajac-Mírka HistoCrypt papers (Rabenhaupt 2022, Marburg keys 2022, Slovakia 2023) do not cover it",
+   "needs_archive_scan": "yes",
+   "access_note": "description only (Mírka's survey; ARON gives folder level without a cipher note); no digital objects. Scans to order from SOA Plzeň, pracoviště Klášter u Nepomuka",
+   "year": 1720,
+   "date": "3 Feb 1720 (The Hague, 3 letters) and 1722 (Cambrai congress, 9 letters)",
+   "title": "Emperor Charles VI to Leopold Viktorin von Windischgrätz: twelve ciphered letters (The Hague 1720, Cambrai 1722)",
+   "correspondents": "Charles VI -> Leopold Viktorin von Windischgrätz (imperial envoy at The Hague, then at the Cambrai congress)",
+   "place": "Vienna",
+   "language": "unknown (German probable)",
+   "period": "1701-1800",
+   "shelfmark": "SOA Plzeň, pracoviště Klášter u Nepomuka, Rodinný archiv Windischgrätzů, karton 5, inv. č. 694, sign. 669A/III.b (originals); copies in Codex diplomaticus Windischgrätzianus, kniha č. 5, inv. č. 5, pp. 402-416",
+   "folio_note": "3 letters to The Hague (all ciphered, plain text predominates), 9 to Cambrai (one ciphered); the emperor instructs which news to cipher and orders a change of key after the first letter",
+   "status": "Mírka: 'the text is not deciphered, but the key collection holds nomenklators for both ciphers in use' (Crypto-World 1-2/2013 pp. 5-6, fig. 8: last page of the letter of 3 Feb 1720 with the emperor's signature). Two keys, so two systems; both keys are in the collection of keys (karton 164, inv. č. 1403, sign. 103).",
+   "why": "The emperor's own hand to his envoy at The Hague and the Cambrai congress, with his instructions on when to cipher: the ciphertext, a held key and the context (Cambrai 1722, Ostend Company) are all in one fonds.",
+   "importance": 4,
+   "solvability": 4,
+   "difficulty": 2,
+   "verify": "Order scans of inv. 694 and of the key collection inv. 1403 (sign. 103); match the two nomenklators to the 1720 and 1722 letters; compare the copies in the Codex.",
+   "links": [
+    {
+     "href": "http://crypto-world.info/casop15/crypto0102_13.pdf",
+     "label": "Mírka, Crypto-World 1-2/2013 (pp. 5-6, fig. 8)"
+    },
+    {
+     "href": "https://aron.soaplzen.cz/apu/66bb7756-a204-421a-ac63-e01b67e4980c",
+     "label": "ARON: key collection inv. 1403 (Říšská dvorní rada - miscellanea)"
+    }
+   ],
+   "ark": "",
+   "access": "archive",
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-09",
+    "by": "claude vetting agent v8",
+    "seen": {
+     "kind": "not online",
+     "where": "Mirka, Crypto-World 1-2/2013 pp. 5-6, fig. 8 (crypto-world.info/casop15/crypto0102_13.pdf); repo targets/windischgraetz1720 and windischgraetz1720b (DECODE R5019-R5024 images read there)",
+     "extent": "Four ciphered letters of Charles VI to Windischgratz: 3 Feb, 13 Apr, 24 Jul 1720 (The Hague) and 11 Apr 1722 (Cambrai); Mirka says all three Hague letters are ciphered with plain text predominating and only one of the nine Cambrai letters is ciphered.",
+     "cipher": "Mirka: 'the text is not deciphered, but the key collection holds nomenklators for both ciphers in use' (fig. 8 caption: not deciphered but can be read with one of the nomenklators in the key collection). Archive description only; no scan of inv. 694 itself seen by this agent. The same letters are already read in the repo."
+    },
+    "prior_art": {
+     "decode": "DECODE R5017-R5024: letters R5019-R5024 listed Non-decrypted, keys R5017 and R5018 on the record; repo targets/windischgraetz1720 (No. 1, key R5017) and windischgraetz1720b (Nos. 2, 3, 6, key R5018) read every cipher passage from those keys (NOTES: 221 of 223 tokens of No. 1).",
+     "tomokiyo": "Tomokiyo cryptiana blog 6 Oct 2025 (cryptiana.blogspot.com/2025/10/emperor-charles-vi.html) summarises Mirka 2012 on the Windischgratz letters, listing DECODE R5017-R5024; it does not give a decipherment.",
+     "lasry": "No Lasry item on these letters found; the repo split into 1720 and 1720b followed Lasry's one-key rule of 14 Oct 2026.",
+     "edition": "No printed decipherment found: Mirka prints none; web search 9 Nov 2026 (Karl VI Windischgraetz 1720 Haag Chiffre) found only the Tomokiyo post.",
+     "literature": "Mirka 2012/2013 states the letters are undeciphered (as far as his survey knew); the repo's own readings postdate that and cover exactly the four ciphered letters he describes."
+    },
+    "key_check": "Both keys are held and were applied: R5017 (Chancellery nomenclator) reads No. 1, R5018 (Emperor's private key) reads Nos. 2, 3, 6; fair copies are in inv. 5 book 5 pp. 401-417, the key collection is inv. 1403 sign. 103.",
+    "duplicates": "known.py on 'inv. 694' and 'Windischgr': hits targets/windischgraetz1720, windischgraetz1720b, SOLVED_CATALOGUE and README (catalogue item 69, DECODE R5019-R5024) with the same shelfmark inv. 694 / inv. 5 book 5. Mirka's three ciphered Hague letters plus the one ciphered Cambrai letter are exactly Nos. 1, 2, 3, 6. The other Cambrai letters are plain per Mirka.",
+    "verdict": "duplicate",
+    "closed": "Same letters as targets/windischgraetz1720 and windischgraetz1720b (DECODE R5019-R5024, catalogue 69): all four ciphered letters are already read with keys R5017/R5018; Mirka's 'not deciphered' predates this."
+   }
+  },
+  {
+   "id": 2431,
+   "counted": true,
+   "region": "Central Europe",
+   "cls": "B",
+   "seen": "catalogue",
+   "source": "Mírka survey (Crypto-World 11-12/2012, 1-2/2013, 3-4/2013) and SNA inventories, Nov 2026",
+   "score_note": "Scored from the survey text and the archive record, 9 Nov 2026 (research/sweep_2026-11_mirka_cryptoworld/); no image seen; a key-held series, so the unread letters are probably quick to read. ARON record for inv. 77/78 not located",
+   "prior_art": "open as far as checked (9 Nov 2026): known.py on the shelfmark and correspondents finds nothing; web searches on the correspondents with cipher/decipher found no edition or decipherment; Mírka (2012-13) states the text is not deciphered or gives no reading; the Antal-Zajac-Mírka HistoCrypt papers (Rabenhaupt 2022, Marburg keys 2022, Slovakia 2023) do not cover it",
+   "needs_archive_scan": "yes",
+   "access_note": "description only (Mírka's survey; ARON gives folder level without a cipher note); no digital objects. Scans to order from SOA Plzeň, pracoviště Klášter u Nepomuka",
+   "year": 1669,
+   "date": "1663, 1669-1671, 1673, 1681",
+   "title": "Schaffgotsch, Mayerberg and Zierowski to Johann Hartwig von Nostitz: letters in one simple digit cipher",
+   "correspondents": "Christoph Leopold von Schaffgotsch (1663, 1673); Augustin von Mayerberg, imperial envoy in Poland (1669-71, Italian); Jan Krzysztof Zierowski, imperial envoy in Poland (1681, Latin) -> Johann Hartwig von Nostitz (Chancellor of Bohemia)",
+   "place": "Poland / Silesia",
+   "language": "Italian, Latin, German",
+   "period": "1651-1700",
+   "shelfmark": "SOA Plzeň, pracoviště Klášter u Nepomuka, Rodinný archiv Nostitz-Rienecků, Sokolov, karton 13, inv. č. 77, sign. FF 8; karton 14, inv. č. 78, sign. FF 9",
+   "folio_note": "letters of three senders in the same two-digit substitution (Nostitz's personal key, used for at least 18 years)",
+   "status": "Mírka: a very simple substitution with two-digit numbers for letters, the same in all cases; plain text is written between the lines of Zierowski's letter of 15 Sep 1681 (fig. 10), which gives the key. Whether the Schaffgotsch and Mayerberg letters have been read is not stated.",
+   "why": "Polish politics around the election of Michał Wiśniowiecki (1669) and the Sobieski years, from the Bohemian chancellor's papers; the key is held, so a quick read is possible.",
+   "importance": 3,
+   "solvability": 5,
+   "difficulty": 1,
+   "verify": "Order scans of inv. 77 and 78; rebuild the substitution from the glossed Zierowski letter and apply it to the Schaffgotsch (1663, 1673) and Mayerberg (1669-71) letters.",
+   "links": [
+    {
+     "href": "http://crypto-world.info/casop15/crypto0102_13.pdf",
+     "label": "Mírka, Crypto-World 1-2/2013 (pp. 9-10, fig. 10, n. 30-33)"
+    }
+   ],
+   "ark": "",
+   "access": "archive",
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-09",
+    "by": "claude vetting batch v9",
+    "seen": {
+     "kind": "not online",
+     "where": "http://crypto-world.info/casop15/crypto0102_13.pdf (Mirka, Crypto-World 1-2/2013, pp. 9-10, fig. 10, n. 30-33; text read 9 Nov 2026); ARON aron.soaplzen.cz searched: Nostitz-Rieneck inv. 77/78 not item-indexed",
+     "extent": "letters of Schaffgotsch (1663, 1673), Mayerberg (1669-71, Italian), Zierowski (1681, Latin) in kartons 13 and 14, inv. 77 and 78; count not given",
+     "cipher": "Mirka: 'sifrovane dopisy tri ruznych odesilatelu, psane pomoci velice jednoduche a ve vsech pripadech stejne sifry' and Nostitz used 'jednoduche zameny pismen abecedy, ktera nahrazoval dvoucifernymi cislicemi'; fig. 10 caption for the Zierowski letter of 15 Sep 1681: 'Text desifrovan mezi radky' (deciphered between the lines). Only the Zierowski leaf is stated to carry a decipherment; none is stated for the Schaffgotsch and Mayerberg letters"
+    },
+    "prior_art": {
+     "decode": "known.py (9 Nov 2026, repo ledgers and harvested DECODE dump) on the shelfmark, correspondents and Nostitz: no DECODE record; web search 'DECODE database Nostitz Poland 1669 Mayerberg Schaffgotsch cipher key' found only the DECODE Version 2 papers, nothing on this series",
+     "tomokiyo": "WebSearch (Nostitz/Schaffgotsch/Mayerberg/Zierowski sifrovane dopisy; Mirka survey title) found no Cryptiana page; cryptiana.web.fc2.com not searched directly",
+     "lasry": "no Lasry paper or DECODE contribution found in the same searches; the Antal-Zajac-Mirka HistoCrypt papers (Rabenhaupt 2022, Marburg keys 2022, Slovakia 2023) do not cover Nostitz",
+     "edition": "no edition found; Mirka's Zapadoceske archivy 2012 print (pp. 44-73) is not online, the Crypto-World reprint was read",
+     "literature": "Mirka 2012-13 (three parts, read for Nostitz); part III n. 27 points to inv. 77-78 as letters in Nostitz's personal key; Mirka's own odds: about 70% of about 40 ciphers keyed from a deciphered letter in the file"
+    },
+    "key_check": "The Zierowski 1681 interlinear decipherment is the key source (untested here, no image). Nostitz's complex nomenklator (inv. 91 H3, about 300 codes, also Windischgraetz inv. 1403) is a different, more complex system and Mirka found no letters in it; not applied.",
+    "key_in_volume": "Zierowski 1681 letter, deciphered between the lines (inv. 77/78 series); untested, no image seen",
+    "duplicates": "known.py on 'Nostitz', 'Schaffgotsch', 'Mayerberg', 'Zierowski': only leads/sweep rows, the unrelated catalogue Nostitz Stockholm 1686 entry (MZA G 140 inv. 69) and an unrelated Mayerberg 1672 HHStA entry; no targets/ folder for these letters",
+    "verdict": "partly_read",
+    "closed": "Mirka's fig. 10 states the Zierowski 1681 letter was deciphered between the lines, so the series is not wholly unread; whether the Schaffgotsch (1663, 1673) and Mayerberg (1669-71) letters were read is not stated. Caller may narrow the entry to those letters and reopen."
+   }
+  },
+  {
+   "id": 2434,
+   "counted": true,
+   "region": "Central Europe",
+   "cls": "B",
+   "seen": "catalogue",
+   "source": "Mírka survey (Crypto-World 11-12/2012, 1-2/2013, 3-4/2013) and SNA inventories, Nov 2026",
+   "score_note": "Scored from the survey text and the archive record, 9 Nov 2026 (research/sweep_2026-11_mirka_cryptoworld/); no image seen",
+   "prior_art": "open as far as checked (9 Nov 2026): known.py on the shelfmark and correspondents finds nothing; web searches on the correspondents with cipher/decipher found no edition or decipherment; Mírka (2012-13) states the text is not deciphered or gives no reading; the Antal-Zajac-Mírka HistoCrypt papers (Rabenhaupt 2022, Marburg keys 2022, Slovakia 2023) do not cover it",
+   "needs_archive_scan": "yes",
+   "access_note": "not online; SNA Bratislava (finding aid PDF on minv.sk); the HistoCrypt authors hold photographs and plan to put them on HCPortal",
+   "year": 1744,
+   "date": "1744",
+   "title": "Maria Theresa and others to Count Nikolaus Esterházy: six ciphered documents (five French, one German), no plain text",
+   "correspondents": "Empress Maria Theresa -> Nikolaus Esterházy (envoy in Poland and Saxony); five further documents with unrecognised participants",
+   "place": "Vienna",
+   "language": "French (5), German (1)",
+   "period": "1701-1800",
+   "shelfmark": "Slovenský národný archív, Bratislava, Rod Esterházi - čeklíska vetva (fond 1252), karton 636, inv. č. 1621 (A-13: \"Reskripty cisárovny Márie Terézie adresované Mikulášovi Esterházimu, vyslancovi v Poľsku a Sasku, s prílohami\", 1744); inventory p. 194",
+   "folio_note": "one fully ciphered concept and five letters, one from Maria Theresa herself",
+   "status": "Antal et al., HistoCrypt 2023: 'the corresponding plain text parts are not available for these documents'; the keys held in the three fonds do not match the ciphertexts. The SNA inventory says only 'reskripty ... s prílohami' and does not mention cipher.",
+   "why": "Digit nomenklator letters of the empress at the start of the War of the Austrian Succession with no plain text kept.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 3,
+   "verify": "Ask SNA for scans of karton 636; the same fonds' box 634 (Kaunitz 1756-57, next row) has plain text in separate documents and could supply nomenklator habits; HCPortal is to publish the collection.",
+   "links": [
+    {
+     "href": "https://ecp.ep.liu.se/index.php/histocrypt/article/view/689",
+     "label": "Antal et al., HistoCrypt 2023 (boxes 631-636, fig. 6)"
+    },
+    {
+     "href": "https://www.minv.sk/swift_data/source/verejna_sprava/slovensky_narodny_archiv/archivne_pomocky/Esterhazi-cekliska_vetva_(1252)_1498-1939-inventar.pdf",
+     "label": "SNA inventory (inv. 1621, p. 194)"
+    }
+   ],
+   "ark": "",
+   "access": "archive",
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-09",
+    "by": "claude vetting batch v9",
+    "seen": {
+     "kind": "not online",
+     "where": "https://ecp.ep.liu.se/index.php/histocrypt/article/view/689 (Antal et al., HistoCrypt 2023, read 9 Nov 2026); SNA inventory on minv.sk, Esterhazi-cekliska_vetva (1252)",
+     "extent": "six encrypted documents of 1744, karton 636 (= inv. 1621)",
+     "cipher": "Antal et al.: 'Cardbox no. 636 contains six encrypted documents: one fully encrypted concept and five letters ... All of the documents are dated to 1744 ... The corresponding plain text parts are not available for these documents.'"
+    },
+    "prior_art": {
+     "decode": "same box is catalogue entry 344 (vetted 2 Nov 2026): not on DECODE or HCPortal",
+     "tomokiyo": "no Cryptiana page found; see catalogue 344",
+     "lasry": "no Lasry item found; web search 'Lasry Esterhazy Kaunitz nomenklator' found nothing",
+     "edition": "Antal et al. 2023 describe only; fig. 6 reproduced",
+     "literature": "Antal et al. 2023; Dorotheum blog 'The Empress's Code' on a sibling 31 July 1744 letter"
+    },
+    "key_check": "Keys in the three fonds do not match (Antal et al.); Vienna keys were tested in targets/esterhazy1744.",
+    "duplicates": "Duplicate of catalogue.json id 344 (SNA Esterhazy box 636, six cipher letters 1744, target esterhazy1744); inv. 1621 = karton 636",
+    "verdict": "duplicate",
+    "closed": "Same box (karton 636, inv. 1621) as catalogue entry 344; attempted in targets/esterhazy1744."
+   }
+  },
+  {
+   "id": 2435,
+   "counted": true,
+   "region": "Central Europe",
+   "cls": "B",
+   "seen": "catalogue",
+   "source": "Mírka survey (Crypto-World 11-12/2012, 1-2/2013, 3-4/2013) and SNA inventories, Nov 2026",
+   "score_note": "Scored from the survey text and the archive record, 9 Nov 2026 (research/sweep_2026-11_mirka_cryptoworld/); no image seen",
+   "prior_art": "open as far as checked (9 Nov 2026): known.py on the shelfmark and correspondents finds nothing; web searches on the correspondents with cipher/decipher found no edition or decipherment; Mírka (2012-13) states the text is not deciphered or gives no reading; the Antal-Zajac-Mírka HistoCrypt papers (Rabenhaupt 2022, Marburg keys 2022, Slovakia 2023) do not cover it",
+   "needs_archive_scan": "yes",
+   "access_note": "not online; the SNA inventory is a PDF on minv.sk; sample photographs in the HistoCrypt 2023 paper (fig. 1-3)",
+   "year": 1756,
+   "date": "1756-1757",
+   "title": "Prince Kaunitz to Count Nikolaus Esterházy (St Petersburg): imperial rescripts and ciphered letters, two nomenklators",
+   "correspondents": "Wenzel Anton von Kaunitz-Rietberg (State Chancellor) -> Nikolaus Esterházy (imperial ambassador in Russia); further letters from Colloredo and Maria Theresa",
+   "place": "Vienna",
+   "language": "German",
+   "period": "1701-1800",
+   "shelfmark": "Slovenský národný archív, Bratislava, Rod Esterházi - čeklíska vetva (fond 1252), karton 634, inv. č. 1612 (A-4: \"Cisárske reskripty a šifrované listy od ministra Kaunitza adresované Mikulášovi Esterházimu\", 1756-1757, old sign. \"Lit. BB, Num. 14\"); inventory p. 193",
+   "folio_note": "41 ciphered documents in the box; at least two keys, one with separator characters and special digit markups (fig. 1-2), one without (fig. 3)",
+   "status": "The SNA inventory itself names 'šifrované listy'. Antal et al. (HistoCrypt 2023): for most ciphered documents the plain text exists in separate documents (a decipherment of the time is in the box, not in print); the cipher keys kept in the fonds do not match.",
+   "why": "Kaunitz's instructions to the ambassador in the year of the Diplomatic Revolution: a large corpus with paired plain text allows rebuilding both nomenklators, and would give the Esterházy cipher habits for the 1744 box above.",
+   "importance": 3,
+   "solvability": 4,
+   "difficulty": 2,
+   "verify": "Obtain scans of karton 634 (SNA or the HistoCrypt authors); align cipher and clear texts; record as read from existing decipherment unless the key is rebuilt from the paired texts.",
+   "links": [
+    {
+     "href": "https://ecp.ep.liu.se/index.php/histocrypt/article/view/689",
+     "label": "Antal et al., HistoCrypt 2023 (fig. 1-3)"
+    },
+    {
+     "href": "https://www.minv.sk/swift_data/source/verejna_sprava/slovensky_narodny_archiv/archivne_pomocky/Esterhazi-cekliska_vetva_(1252)_1498-1939-inventar.pdf",
+     "label": "SNA inventory (inv. 1612, p. 193)"
+    }
+   ],
+   "ark": "",
+   "access": "archive",
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-09",
+    "by": "claude vetting batch v9",
+    "seen": {
+     "kind": "not online",
+     "where": "https://ecp.ep.liu.se/index.php/histocrypt/article/view/689 (Antal et al. 2023, fig. 1-3; read 9 Nov 2026); SNA inventory PDF, inv. 1612 p. 193",
+     "extent": "karton 634, 41 documents with encrypted content, Kaunitz-Esterhazy 1756-57, German",
+     "cipher": "Antal et al.: 'at least two different encryption keys ... one where the cipher text units are separated with a separator char ... and one without a separator ... For most of the encrypted documents in this box, the plain text is also available in separate documents.' SNA inventory title: 'Cisarske reskripty a sifrovane listy'"
+    },
+    "prior_art": {
+     "decode": "not on DECODE per Antal et al. (archive permissions); known.py on 'box 634', 'Kaunitz', 'Esterhazy': no record for this box (catalogue 344, 515, 1739 are other series)",
+     "tomokiyo": "no Cryptiana page found",
+     "lasry": "no Lasry item found",
+     "edition": "no edition; the plain text sits in separate documents in the box, unpublished",
+     "literature": "Antal et al. 2023 only"
+    },
+    "key_check": "Fonds keys do not match (Antal et al.); no key tried here.",
+    "duplicates": "known.py 'box 634', 'inv. 1612', 'Kaunitz': box 634 is not catalogued; targets/esterhazy1744 notes box 634 only as a sibling",
+    "verdict": "partly_read",
+    "closed": "Antal et al.: plain text of most of the 41 ciphered documents is kept in separate documents in the box (a contemporary decipherment, unpublished), so most are read from existing plain text; only those without a clear copy remain open."
+   }
   }
  ]
 }
