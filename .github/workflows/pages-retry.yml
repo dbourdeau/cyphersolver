@@ -1,6 +1,8 @@
-# The Pages deploy of docs/ (the built-in "pages-build-deployment" run) sometimes times out, and a failed deploy
-# cannot be re-run for the same commit from the UI. When one fails, ask Pages for a new build of the same branch.
-# At most two retries per commit, so a deploy that fails for a real reason does not loop.
+# The Pages deploy of docs/ (the built-in "pages-build-deployment" run) sometimes times out. A failed deploy cannot be
+# retried for the same commit: the deployment id is the commit SHA, and a new build of it fails at once with
+# "Deployment cancelled". A new commit on main clears it, so when the deploy of the tip of main fails this pushes an
+# empty commit. The push goes through the deploy key, as in rebuild-site.yml. At most two in a row, so a deploy that
+# fails for a real reason does not loop.
 name: Retry failed Pages deploy
 
 on:
@@ -9,25 +11,36 @@ on:
     types: [completed]
 
 permissions:
-  pages: write
-  actions: read
+  contents: read
+
+concurrency:
+  group: pages-retry
+  cancel-in-progress: false
 
 jobs:
   retry:
     if: github.event.workflow_run.conclusion == 'failure'
     runs-on: ubuntu-latest
     steps:
-      - name: Request a new Pages build
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 3
+          ssh-key: ${{ secrets.REBUILD_DEPLOY_KEY }}
+
+      - name: Push an empty commit if the failed deploy was the tip of main
         env:
-          GH_TOKEN: ${{ github.token }}
-          REPO: ${{ github.repository }}
           SHA: ${{ github.event.workflow_run.head_sha }}
-          WORKFLOW_ID: ${{ github.event.workflow_run.workflow_id }}
         run: |
-          failed=$(gh api "repos/$REPO/actions/workflows/$WORKFLOW_ID/runs?head_sha=$SHA&status=failure" -q '.total_count')
-          echo "failed deploys for $SHA: $failed"
-          if [ "$failed" -gt 2 ]; then
-            echo "::error::Pages deploy failed $failed times for $SHA; not retrying again"
+          if [ "$(git rev-parse HEAD)" != "$SHA" ]; then
+            echo "main has moved past $SHA; the newer push deploys the site"
+            exit 0
+          fi
+          if [ "$(git log -2 --format=%s | grep -c '^Pages: redeploy')" -ge 2 ]; then
+            echo "::error::two redeploy commits in a row already; the Pages deploy needs a look"
             exit 1
           fi
-          gh api -X POST "repos/$REPO/pages/builds" -q '.status'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898+github-actions[bot]@users.noreply.github.com'
+          git commit -q --allow-empty -m "Pages: redeploy after the failed deploy of ${SHA:0:10}"
+          git push origin HEAD:main
