@@ -1,0 +1,128 @@
+{
+ "schema_version": 1,
+ "target": "witham1250",
+ "title": "River Witham sword blade inscription (British Museum 1858,1116.5)",
+ "documents": [
+  {
+   "id": "blade",
+   "shelfmark": "British Museum 1858,1116.5",
+   "date": "c. 1250-1330",
+   "year": 1290,
+   "country": "England",
+   "route": "unknown (inlaid on one face of a sword blade found in the River Witham near Lincoln, 1825)",
+   "language": "unknown",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No reading exists that is accepted; Winter 2016/2026 is one unverified proposal."
+   },
+   "length": {
+    "tokens": 18,
+    "distinct": 11,
+    "unit": "letters",
+    "measured": true,
+    "file": "inscription.txt"
+   },
+   "transcription": {
+    "by": "published",
+    "source": "British Library Medieval manuscripts blog, 11 Aug 2015 (J. Harrison); Winter, Waffen- und Kostuemkunde 58/2 (2016)",
+    "image_quality": "unknown",
+    "notes": "Letters as published, between two crosses; no photograph was examined here."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "unknown"
+  ],
+  "summary": "Eighteen capital letters inlaid in gold wire between two crosses; no word division; system unknown (abbreviation or initials inscription is one proposal, not shown).",
+  "symbol_kind": "letters",
+  "distinct_symbols": 11,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "not applicable",
+  "sibling_key": "unknown",
+  "notes": "Vowels O, O, I are 3 of 18 letters (about 17%), far below Latin running text; fits initials or abbreviations, shown by count only. W is not a Latin letter."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Winter (Waffen- und Kostuemkunde 58/2, 2016, revised 2026-03-13) proposes an initials reading; the British Library (2015) called it indecipherable. Not accepted by a consensus.",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "transcription"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Set the goal \"solve the cipher from the Witham Sword\"; no target-specific intervention recorded.",
+  "tools": [
+   "web search",
+   "manual frequency count"
+  ],
+  "models": [
+   "unknown"
+  ],
+  "sessions": "unknown",
+  "first_date": "2026-11-09",
+  "last_date": "2026-11-09"
+ },
+ "solution": [
+  {
+   "date": "2026-11-09",
+   "kind": "literature search",
+   "what": "British Library appeal (2015), Language Log and Cipher Mysteries threads, Winter 2016/2026: about twenty proposals, none verified.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis"
+   ],
+   "what": "Letter counts: vowels 3 of 18, D x4, X x3; points to initials or abbreviations, not running text.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "literature search",
+   "what": "Sibling inscribed blades (Alphen aan den Rijn, Berlin, Swedish): their own readings are speculative, so none supplies a key.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "verification",
+   "what": "Judged Winter's initials reading: coherent but each expansion (X = CH, W a name) is chosen to fit; 18 letters cannot test it.",
+   "result": "ruled out"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "Eighteen letters with no key, clear copy or plaintext: any abbreviation expansion fits after the fact, and the sibling blades are themselves unread.",
+  "contribution": [
+   "none"
+  ],
+  "class": "not read",
+  "fraction_read": 0,
+  "verification": [
+   "none"
+  ],
+  "notes": "Only route: read the inscribed-sword family together (needs photographs and the Wagner/Worley catalogue).",
+  "credits": []
+ }
+}
