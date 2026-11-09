@@ -1,0 +1,138 @@
+{
+ "schema_version": 1,
+ "target": "ambrosiana118",
+ "title": "Vowel-shifted heading over a Latin poem, Ambrosiana A 118 inf. f. 154r (catalogue #1347)",
+ "documents": [
+  {
+   "id": "f154r-heading",
+   "shelfmark": "Milan, Biblioteca Ambrosiana, A 118 inf., unit 1, n. 6, f. 154r",
+   "date": "unknown (codex 1376-1425 per catalogue vetting)",
+   "year": "unknown",
+   "country": "Italy",
+   "route": "unknown",
+   "language": "Latin",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "none found"
+   },
+   "length": {
+    "tokens": 9,
+    "distinct": 6,
+    "unit": "letters",
+    "measured": true,
+    "file": "heading_cipher.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Ambrosiana digital library IIIF, canvas 319 (1513 x 2000 px); catalogue OPAC incipit",
+    "image_quality": "fair",
+    "notes": "First glyph a ligature (OPAC reads m); seventh glyph r or x; minim letters ambiguous."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Monoalphabetic vowel shift: each vowel written as the next letter (a>b, e>f, i>l, o>p, u>x), consonants unchanged; applied to one word of a heading.",
+  "symbol_kind": "letters",
+  "distinct_symbols": 6,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "not applicable",
+  "sibling_key": "none",
+  "notes": "Inferred from the nine letters and the catalogue's description; the ciphertext is too short to test it statistically."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "OPAC lists none; web searches on the incipit found nothing",
+   "found": "unknown",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Gave the catalogue number and asked for it to be solved and written up; no target-specific intervention.",
+  "tools": [
+   "IIIF image fetch",
+   "image crops"
+  ],
+  "models": [
+   "unknown"
+  ],
+  "sessions": "unknown",
+  "first_date": "2026-11-09",
+  "last_date": "2026-11-09"
+ },
+ "solution": [
+  {
+   "date": "2026-11-09",
+   "kind": "access",
+   "what": "Fetched f. 154r from the Ambrosiana IIIF manifest (canvas 319).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "transcription",
+   "what": "Read the heading and transcribed the 16-line poem; the body is plain Latin, only the heading word is enciphered.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "frequency analysis"
+   ],
+   "what": "Vowel shift to the next letter (a>b, e>f, i>l, o>p, u>x) from the absence of a, i, u and the repeated f, p, l.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "solver",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Undid the shift: ?-e-n-o-e-i-?-e-o with r or x in seventh place; also full Caesar +1 (no word).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "literature search",
+   "what": "Web searches on the incipit and lines of the poem; OPAC record read for an attribution.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "The vowel-shift mechanism fits the nine-letter heading word, but undoing it gives no Latin or Italian name, and the glyphs are ambiguous at the available image size.",
+  "contribution": [
+   "none"
+  ],
+  "class": "not read",
+  "fraction_read": 0,
+  "verification": [
+   "none"
+  ],
+  "notes": "Needs the poem's attribution from other manuscripts or a better image of the heading.",
+  "credits": []
+ }
+}
