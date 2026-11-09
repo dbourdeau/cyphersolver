@@ -77944,6 +77944,118 @@
     "verdict": "open"
    },
    "repository": "hstadd"
+  },
+  {
+   "id": 2443,
+   "counted": true,
+   "year": 1812,
+   "date": "14-25 Feb 1812",
+   "title": "Anonymous numeric cipher letter (about 2 pages) enclosed with a letter on the reward for drawing up accounts, Cadiz 1812 (Baena papers)",
+   "correspondents": "unnamed correspondent at Cadiz -> duke of Baena (letter mentions the ambassador and General Antonio Bayon)",
+   "place": "Cadiz",
+   "period": "1801-1900",
+   "shelfmark": "AHNOB, BAENA,C.38,D.267-268",
+   "folio_note": "6 images: plain letter images 1-3, numeric cipher on images 4-6 (2-digit numbers 1-28 joined by dots, no spaces)",
+   "cls": "A",
+   "status": "PARES: \"Acompana una carta cifrada\" (2 documents). Viewed images 1-5 on 9 Nov 2026: plain letter dated Cadiz 14 Feb 1812, then a \"No 2\" sheet and a second page of dotted numbers between 1 and 28 (alphabet-sized range, one value 1 or 14 very frequent, probably a simple substitution with nulls), no plaintext above or below. known.py finds nothing for BAENA,C.38 or the record id. Two web searches found nothing.",
+   "why": "A short simple-looking numeric substitution from Cadiz during the Cortes, a good ciphertext-only target; frequency of the repeated \"14\"/\"28\"/\"22\" groups suggests a monoalphabetic cipher over about 28 values.",
+   "importance": 2,
+   "solvability": 4,
+   "difficulty": 2,
+   "score_note": "Seen on PARES images 9 Nov 2026",
+   "verify": "Transcribe images 4-6 and attempt a monoalphabetic solve (Spanish, 28 symbols).",
+   "links": [
+    {
+     "href": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/6354614",
+     "label": "PARES 6354614 (BAENA,C.38,D.267-268)"
+    }
+   ],
+   "source": "PARES diversos 19th c sweep, 9 Nov 2026 (research/sweep_2026-11_pares_diversos_19c)",
+   "prior_art": "open as far as checked (9 Nov 2026): known.py nothing; 2 web searches nothing.",
+   "language": "Spanish",
+   "region": "Spain",
+   "access_note": "images online on PARES (free reuse, cite Ministerio de Cultura/PARES URL)",
+   "needs_archive_scan": "no",
+   "seen": "image",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-09",
+    "by": "claude vetting agent v12",
+    "seen": {
+     "kind": "scan",
+     "where": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/6354614 (images 1, 4, 5, 6 viewed 9 Nov 2026, zoom 10; 2-3 fetched)",
+     "extent": "Plain letter of 14 Feb 1812 (images 1-3), then 3 pages of dotted numeric cipher (images 4-6, about 18 lines each, roughly 55 lines, some 700 numbers), signed with a rubric on image 6.",
+     "cipher": "Handwritten numbers 1-28 joined by dots or hyphens in word-like runs, with frequent '14', '28', '22', '8', and groups like '9...' with a superscript number; looks like a monoalphabetic or homophone-light substitution with nulls and abbreviation marks. No plaintext, interlinear or marginal decipherment on any leaf viewed, no key in the unit."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE as far as web search shows (DECODE plus Peninsular War/Cadiz 1811-12 found nothing; known.py no record).",
+     "tomokiyo": "No Cryptiana post found on a Cadiz 1812 numeric letter.",
+     "lasry": "No Lasry work on this found (search Lasry Spanish Peninsular War cipher gave only Scovell/French material).",
+     "edition": "No edition found; searched 'Baena Bayon Cadiz 1812 carta cifrada' and PARES records, only an unrelated Baena letter surfaced.",
+     "literature": "Searches on Cortes de Cadiz 1812 cipher letters found only constitutional history; nothing on this letter."
+    },
+    "key_check": "No key found: none in the unit, none on DECODE or in the repo for a Baena/Cadiz 1812 nomenclator; nothing tried against it beyond reading the numbers.",
+    "duplicates": "known.py on 'BAENA,C.38', 'Cadiz 1812 Baena': only leads and sweep files. No target for Baena, Cadiz 1812 or Bayon in targets/ (grep of folder names).",
+    "verdict": "open"
+   },
+   "repository": "ahnob"
+  },
+  {
+   "id": 2444,
+   "counted": true,
+   "year": 1866,
+   "date": "Jan-Feb 1866",
+   "title": "Copybook of orders and reports to colonel Taulet during the January 1866 rising, with short numeric cipher passages in his reports",
+   "correspondents": "Lieutenant colonel Bernardo Taulet (Catalonia/Maestrazgo columns) -> captain general of Catalonia / chiefs of columns",
+   "place": "Barcelona / Tarragona province",
+   "period": "1801-1900",
+   "shelfmark": "AHN, DIVERSOS-COLECCIONES,193,N.99",
+   "folio_note": "53 pages; hyphenated 2-digit number groups seen in the reports on images 25-26 (also earlier)",
+   "cls": "A",
+   "status": "PARES: \"Hay algunos documentos cifrados\". Viewed images 1-6, 13-18, 25-30 on 9 Nov 2026: plain order-book copies and daily reports (Jalet/Abella/Villarroya) with short passages of hyphenated 2-digit groups (e.g. 61-64-22-...) set into the plaintext; no interlinear decipherment. Not in known.py (Taulet nothing). Web search: nothing on Taulet or this unit.",
+   "why": "19th-century Catalan military cipher in numbers, in an otherwise clear context, so cribs are available; no Carlist-war pair among those already read.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Seen on PARES images 9 Nov 2026; cipher passages are short",
+   "verify": "Transcribe the numeric passages (images 25-30 and others), compare with the plain context of each day report.",
+   "links": [
+    {
+     "href": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/5928106",
+     "label": "PARES 5928106 (DIVERSOS-COLECCIONES,193,N.99)"
+    }
+   ],
+   "source": "PARES diversos 19th c sweep, 9 Nov 2026 (research/sweep_2026-11_pares_diversos_19c)",
+   "prior_art": "open as far as checked (9 Nov 2026): known.py nothing; 1 web search nothing.",
+   "language": "Spanish",
+   "region": "Spain",
+   "access_note": "images online on PARES (free reuse, cite Ministerio de Cultura/PARES URL)",
+   "needs_archive_scan": "no",
+   "seen": "image",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-09",
+    "by": "claude vetting agent v12",
+    "seen": {
+     "kind": "scan",
+     "where": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/5928106 (images 1, 25, 26, 40 viewed 9 Nov 2026, zoom 10; 27 fetched)",
+     "extent": "Copybook of 53 images, Jan-Feb 1866, plain reports by a column commander with numeric passages: image 25 ends two reports with a 7-group string (61-64-38-92-29-60-64), image 26 has a block of about 9 lines of hyphenated 2-digit numbers inside a report, and short groups at the ends of reports on image 40; a few hundred numbers in all.",
+     "cipher": "Hyphenated 2-digit numbers (range seen 10-92), embedded in clear Spanish; same short groups recur at report ends (looks like a signature or code phrase). Contemporary clerk's copy; no decipherment, interlinear or marginal plaintext on any leaf viewed."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE as far as web search shows; known.py has no DECODE record.",
+     "tomokiyo": "No Cryptiana post found on a Spanish 1866 column-commander cipher.",
+     "lasry": "No Lasry work found on it.",
+     "edition": "No edition found; searched Taulet, Diversos-Colecciones 193, 1866 uprising in Catalonia.",
+     "literature": "Searches for Taulet and the January 1866 Prim rising in Catalonia found only general accounts of the Villarejo de Salvanes rising; nothing on this copybook or its cipher."
+    },
+    "key_check": "No key held or found (none in unit, DECODE or repo). Tests not run beyond reading.",
+    "duplicates": "known.py on 'DIVERSOS-COLECCIONES,193' and 'Taulet': only leads and sweep files. No 1866 Spanish military cipher target in targets/.",
+    "verdict": "open"
+   },
+   "repository": "ahn"
   }
  ]
 }

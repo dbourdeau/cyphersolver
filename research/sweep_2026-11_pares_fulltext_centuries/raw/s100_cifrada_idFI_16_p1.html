@@ -1,0 +1,1407 @@
+
+<!-- %@ page session="true" language="java" contentType="text/html; charset=ISO-8859-15"
+    pageEncoding="ISO-8859-15"% -->
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+   <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PTGT9SJ');</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P3XK6W8');</script>
+<!-- End Google Tag Manager -->
+      <title>PARES | Archivos Españoles</title>
+       
+      	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+       	<meta http-equiv="Expires" content="no-cache"/>
+       	<meta http-equiv="X-UA-Compatible" content="IE=7,8,9" />
+       	
+       	<meta property="og:title" content=""/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:url" content="https://pares.cultura.gob.es:443/ParesBusquedas20/catalogo/SearchController.do?nm=."/>
+		<meta property="og:image" content="https://pares.mcu.es/ParesBusquedas20/img/logoParesCuadrado.png"/>
+		<meta property="og:site_name" content="PARES"/>
+		<meta property="fb:admins" content="ArchivosEst"/>
+		<meta property="og:description" content=" "/>
+		<meta property="og:locale" content="es_ES" />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@ArchivosEst" />
+		<meta name="twitter:creator" content="@ArchivosEst" />
+		<meta name="twitter:title" content="" />
+		<meta name="twitter:description" content=" " />
+		<meta name="twitter:image" content="https://pares.mcu.es/ParesBusquedas20/img/logoParesTw.png" />
+	   
+      	<!-- <script type="text/javascript" src="/ParesBusquedas20/js/jquery-1.6.2.min.js"></script>-->
+      	<script type="text/javascript" src="/ParesBusquedas20/js/jquery.js"></script>
+	   <script type="text/javascript" src="/ParesBusquedas20/js/jquery-ui-1.8.6.custom.min.js"></script>
+	   <script type="text/javascript" src="/ParesBusquedas20/js/paresBusquedas.js"></script>
+	   <script type="text/javascript" src="/ParesBusquedas20/js/jquery.formalize.js" ></script>
+	   <script type="text/javascript" src="/ParesBusquedas20/js/resultados.js" ></script>
+	   <script type="text/javascript" src="/ParesBusquedas20/js/calendario.js"></script>
+	   	   	   
+	   	<link href="/ParesBusquedas20/css/estilo.css" rel="stylesheet" type="text/css" />
+		<link href="/ParesBusquedas20/css/formalize.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="/ParesBusquedas20/css/calendario.css" rel="stylesheet" type="text/css" />  	
+		<!-- /////////////////////////////ESTADÍSTICAS PARES/////////////////////////////////// -->
+		<!--  script type="text/javascript" src="https://pares.mcu.es/ParesBusquedas20/funciones/estadisticas_pares.js" ></script -->
+		<!--  script type="text/javascript" src="/ParesBusquedas20/js/analytics.js" ></script -->
+		<!-- /////////////////////////////FIN ESTADÍSTICAS PARES/////////////////////////////// -->
+   </head>
+   <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTGT9SJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3XK6W8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+      <div id="contenedor_pral">
+         <div id="header"><!-- cabecera.jsp -->
+            
+<!-- %@ page session="true" language="java" contentType="text/html; charset=ISO-8859-15"
+    pageEncoding="ISO-8859-15"% -->
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+
+
+
+	<link rel="stylesheet" media="screen" type="text/css" href="/ParesBusquedas20/css/ms-cultura-ap.css" />		
+<div id="divseguimiento" style="height:0px; width:0px; overflow:scroll;"></div>
+<div id="contenedor-cab">
+<div id="cabecera">
+	<div id="navegacion">
+		
+<!-- IDIOMAS BANDERAS -->
+		<!-- div id="idiomas-img">
+			<ul>
+			
+			
+				
+				
+				
+				
+				
+				
+					<li><img alt="Español" title="Español" src="/ParesBusquedas20/img/Castellano.gif"/></li>
+				
+				
+			
+			
+				<li><a href="/ParesBusquedas20/catalogo/CambiarIdioma.do?siteLanguage=en"><img alt="Inglés" title="Inglés" src="/ParesBusquedas20/img/Ingles.gif"/></a></li>
+			
+			
+				<li><a href="/ParesBusquedas20/catalogo/CambiarIdioma.do?siteLanguage=fr"><img alt="???boton.idioma.frances???" title="???boton.idioma.frances???" src="/ParesBusquedas20/img/Frances.gif"/></a></li>
+			
+			
+				<li><a href="/ParesBusquedas20/catalogo/CambiarIdioma.do?siteLanguage=gal"><img alt="Gallego" title="Gallego" src="/ParesBusquedas20/img/Gallego.gif"/></a></li>
+			
+			
+				<li><a href="/ParesBusquedas20/catalogo/CambiarIdioma.do?siteLanguage=eus"><img alt="Euskera" title="Euskera" src="/ParesBusquedas20/img/Euskera.gif"/></a></li>
+			
+			
+				<li><a href="/ParesBusquedas20/catalogo/CambiarIdioma.do?siteLanguage=cat"><img alt="Catalán" title="Catalán" src="/ParesBusquedas20/img/Catalan.gif"/></a></li>
+			
+			
+			</ul>
+		</div -->
+<!-- IDIOMAS BANDERAS -->	
+<!-- IDIOMAS TEXTO --
+		<div id="idiomas">
+			<ul>
+				<li><a href="/ParesBusquedas20/catalogo/CambiarIdioma.do?siteLanguage=es"><span xml:lang="es" lang="es">Bienvenido</span></a></li>
+				<li><a href="/ParesBusquedas20/catalogo/CambiarIdioma.do?siteLanguage=cat"><span lang="ca" xml:lang="ca">Benvingut</span></a></li>
+				<li><a href="/ParesBusquedas20/catalogo/CambiarIdioma.do?siteLanguage=gal"><span lang="gl" xml:lang="gl">Benvido</span></a></li>
+				<li><a href="/ParesBusquedas20/catalogo/CambiarIdioma.do?siteLanguage=eus"><span lang="eu" xml:lang="eu">Ongi etorri</span></a></li>
+				<li><a href="/ParesBusquedas20/catalogo/CambiarIdioma.do?siteLanguage=en"><span lang="en" xml:lang="en">Welcome</span></a></li>
+			</ul>
+		</div>
+-- IDIOMAS TEXTO -->
+
+		
+			<div class="opciones">
+				<ul>
+					<li>
+						
+						
+							<a title="Contacte con PARES" href="https://pares.cultura.gob.es/comunes/formularios/form-contacte-pares" class="contacto" target="_blank">
+								<span>Contacte con PARES</span>
+							</a>
+						
+					</li>
+					<li>
+						<a title="Facebook" rel="external" class="facebook" href="https://www.facebook.com/PortalArchivosEspanolesPARES">
+							<span>&nbsp;</span>
+						</a>
+					</li>
+					<li>
+						<a title="X (twitter)" rel="external" class="twitter" href="https://twitter.com/ArchivosEst">
+							<span>&nbsp;</span>
+						</a>
+					</li>
+					<li>
+						<a title="RSS" rel="external" class="rss" href="https://www.mecd.gob.es/rss/cul-archivos.xml">
+							<span>&nbsp;</span>
+						</a>				
+					</li>
+				</ul>
+			</div>
+		
+	</div>
+	
+		
+			<div id="escudo">
+				
+				
+					<a href="https://www.cultura.gob.es" title="Enlace a la página de inicio del Ministerio de Cultura" target="_blank">
+						<img title="Enlace a la página de inicio del Ministerio de Cultura" alt="Logotipo del Ministerio de Cultura" src="https://www.cultura.gob.es/.resources/templating/base/img/escudo-mcd.gif"/>
+					</a>
+				
+			    <!--  a href="https://www.eu2023.es/" target="_blank" title="Presidencia Española de la Unión Europea 2023">    
+			        <img id="logo-ue" src="/ParesBusquedas20/img/logo_presidencia_ue.png" alt="Acceso a web informativa sobre la Presidencia Española de la Unión Europea 2023" title="Presidencia Española de la Unión Europea 2023"/>
+			    </a -->
+			</div>
+			<div id="imagen-cabecera">
+				<img alt="Cabecera" title="Cabecera" src="/ParesBusquedas20/img/cabecera.jpg"/>
+			</div>
+			<div id="logotipo">
+				
+				
+					<a href="https://pares.cultura.gob.es">
+						<img alt="PARES|Archivos Españoles" title="Enlace a la página de Archivos Estatales" src="/ParesBusquedas20/img/logoPares.png"/>
+					</a>
+				
+			</div>
+		
+		
+	
+
+
+	<div class="menu">
+		<ul>
+			<li>
+			</li>
+<!-- @@@@ Comentado para prueba 
+			<li>
+				<a href="/ParesBusquedas20/inicio.html" title="Presentación">Presentación </a>
+			</li>
+-->
+			<li  class="seleccion">
+				<a href="/ParesBusquedas20/catalogo/search" title="Búsqueda">Búsqueda</a>
+				<form action="/ParesBusquedas20/catalogo/find" method="get" >
+					<input type="hidden" name="nm"/>
+					<input autocomplete="off" type="text" id="bext" name="texto" placeholder="Buscar documentos"/>
+					<input type="submit" value="" title="Buscar" class="btn_nav_buscar"/>
+				</form>
+			</li>
+
+<!--
+			<li  >
+				<a href="/ParesBusquedas20/catalogo/advsearch" title="Búsqueda Avanzada">Búsqueda Avanzada Documentos</a>
+			</li>
+-->
+			<li  >
+				<a href="/ParesBusquedas20/catalogo/autsearch" title="Búsqueda por Autoridades">Búsq. Autoridades</a>
+				<form action="/ParesBusquedas20/catalogo/autfind" method="get" >
+					<input type="hidden" name="nm"/>
+					<input autocomplete="off" type="text" id="baext" name="texto" placeholder="Buscar autoridades"/>
+					<input type="submit" value="" title="Buscar" class="btn_nav_buscar"/>
+				</form>
+			</li>
+			<li >
+				<a href="/ParesBusquedas20/catalogo/navigation" title="Navegar por el cuadro de clasificación">Inventario </a>
+			</li>
+<!-- @@@@ Comentado para prueba
+			<li>
+				<a href="https://magnolia.educacion.es/cultura-mecd/areas-cultura/archivos/mc/pares-portal-de-archivos-espanoles/monograficos.html" title="Monográficos">Monográficos </a>
+			</li>
+			<li>
+				<a href="https://magnolia.educacion.es/cultura-mecd/areas-cultura/archivos/mc/pares-portal-de-archivos-espanoles/recursos.html" title="Recursos">Recursos</a>
+			</li>
+-->		
+			
+			<li  >
+				<a href="/ParesBusquedas20/catalogo/notebook" title="Agenda">Agenda</a>
+			</li>
+			<li>
+				
+				
+					<a href="https://pares.cultura.gob.es/pares-htr/" title="Buscador HTR" target="_blank">Buscador HTR</a>
+				
+			</li>
+			<li class="nopestana">
+				
+				
+					<a href="https://pares.cultura.gob.es/preguntas-frecuentes.html" title="Preguntas frecuentes" target="_blank">Preguntas frecuentes</a>
+				
+			</li>
+		</ul>
+	</div>
+</div>
+</div>
+<!-- div id="sugerenciasExt" class="sugerenciasBusquedas" style="display: block; position: absolute; left: 800px;">kkk</div -->
+<!--
+<ul id="nav">
+   <li >
+      <a href="/ParesBusquedas20/inicio.html" title="Presentación">Presentación</a>
+   </li>
+   <li >
+      <a href="/ParesBusquedas20/catalogo/directorio" title="Listado de Archivos">Directorio</a>
+   </li>
+   <li class="menu_activo">
+      <a href="/ParesBusquedas20/catalogo/search" title="Búsqueda">Búsqueda</a>
+   </li>
+   <li >
+      <a href="/ParesBusquedas20/catalogo/navigation" title="Navegar por el cuadro de clasificación">Contiene</a>
+   </li>
+   <li >
+      <a href="/ParesBusquedas20/catalogo/statistics" title="Estadísticas">Estadísticas</a>
+   </li>
+   <li >
+      <a href="vacio.html" title="Contacte">Contacto</a>
+   </li>
+</ul>
+-->
+         </div> <!-- fin header -->
+         
+         <div id="contenedor"><!-- cuerpo de la página -->
+            <div id="contenido">
+               
+<!-- %@ page session="true" language="java" contentType="text/html; charset=ISO-8859-15"
+    pageEncoding="ISO-8859-15"% -->
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	<ul id="migas">
+		<li>
+			
+				<ul>
+				<li><a href="/ParesBusquedas20/catalogo/search">Búsqueda Documentos</a></li>
+				</ul>
+				
+			
+				<ul>
+				<li><a href="/ParesBusquedas20/catalogo/SearchController.do?nm=.">Resultados Documentos</a></li>
+				</ul>
+				
+			
+		</li>
+	</ul>
+
+
+
+<div id="contenido_resultados">
+	<h2>Página de Resultados</h2>
+   
+	<div class="mensajeError" id="validateError" style="display: none;">
+   		Por favor, seleccione al menos un registro
+	</div>
+	
+	
+      
+	<div id="texto_resultados">
+		
+		
+		<!-- c:set var="nombre" value="cifrada"/ -->
+				
+		
+			<div id="boton_compartir" title="Compartir">
+				<ul>
+					<li><img alt="Compartir" src="/ParesBusquedas20/img/compartir.png"/></li>
+						
+						
+						
+																		
+					<li><a href="https://twitter.com/intent/tweet?original_referer=%2fParesBusquedas20%2fcatalogo%2fSearchController.do%3fnm%3d.&source=tweetbutton&url=%2fParesBusquedas20%2fcatalogo%2fSearchController.do%3fnm%3d.&via=ArchivosEst&text=cifrada" target="_blank"><img alt="X (twitter)" title="X (twitter)" src="/ParesBusquedas20/img/twitter.png"/></a></li>
+					<li><a href="https://www.facebook.com/sharer.php?u=%2fParesBusquedas20%2fcatalogo%2fSearchController.do%3fnm%3d.&t=cifrada" target="_blank"><img alt="Facebook" title="Facebook" src="/ParesBusquedas20/img/facebook.png"/></a></li>
+					<li><a href="/ParesBusquedas20/catalogo/sendTelematics/busqueda/nm=."><img alt="Correo electrónico" title="Correo electrónico" src="/ParesBusquedas20/img/email.png"/></a></li>
+				</ul>
+			</div>
+			
+			<div id="enlace_agendar">
+				
+				<a href="notebook/add/bus/uds/nm=./cifrada">Añadir a Agenda</a>
+			</div>	
+		
+  		
+       		<form target="_blank" id="formAPE" name="formAPE" action="https://www.archivesportaleurope.net/advanced-search/search-in-archives" method="get"> 	
+				<input id="searchTerms" name="term" tabindex="1" type="hidden" value="cifrada" > 
+			</form> 
+       		<p>
+       			Resultados de la búsqueda con el texto: <span class="orden" title="Resultados de la búsqueda con el texto: cifrada">cifrada
+       			<a href="javascript:verAPE()" title="Buscar en APE"><img id="ape_img" src="/ParesBusquedas20/img/apex_min.jpg"/></a></span>
+       		</p>
+      	
+      	
+      	
+      	
+      	
+	   	
+	   	
+	   	
+	   	
+	   	
+	   	
+	   	
+	   	
+	   	
+	   	
+	   	
+	   
+	   	
+	   	
+	   	
+	   	
+      	
+      	
+      	
+	   
+	   
+	   
+		
+		
+		
+		
+		
+	</div>
+	   
+	
+      
+   	<div id="mensajeError" class="InfoResult-Null" style="display: none;">
+       	Por favor, seleccione al menos un registro
+   	</div>
+   	
+		<form id="formBusqueda" name="formBusqueda" action="SearchController.do?nm=." method="post">
+	      	<fieldset id="paginas_resultados">
+	    		<label for="tambloque">Resultados por página:</label>
+	        	<select name="tambloque" id="tambloque" onchange="javascript:changeOrder();return false;">
+	        		<option value="25" >25</option>
+	            	<option value="50" >50</option>
+	            	<option value="100" selected="selected">100</option>
+	      		</select>
+	     	</fieldset>
+	      
+	    	<fieldset id="ordenar_resultados">
+	      		<label for="orderBy">Ordenar por:</label>
+	         	<select name="orderBy" id="orderBy" onchange="javascript:changeOrder();return false;">
+	            	<option value="8">Nivel descriptivo</option>
+	            	<option value="4" >Relevancia</option>
+	            	<option value="0" >Título</option>
+	            	<option value="1" >Fecha</option>
+	            	<option value="2" >Archivo </option>
+	            	<option value="3" >Digitalizado</option>
+	            	<option value="7" >Signatura </option>
+	         	</select>
+	      	</fieldset>
+	      
+	      	<noscript>
+	      		<input id="ordenar_result" type="submit" name="ordenar" value="Actualizar" alt="Actualizar" title="Actualizar"/>
+	      	</noscript>
+	      	<!-- fieldset id="opciones_envio">
+	         	<label for="envCorreo">Enviar por correo:</label>
+	         	<select id="envCorreo" name="envCorreo" class="opciones_envio">
+	            	<option value="1">Resultados seleccionados</option>
+	            	<option value="2">Todos los resultados (330)</option>
+	         	</select>
+	         	<input type='hidden' name='cadenaId' value='' id='cadenaIdUDS'/>
+	         	<div id="btn_enviar_seleccion">
+            		<input type="submit" name="correo" value="Enviar" alt="Enviar Correo" title="Enviar Correo"
+            			onclick="return enviarCorreo('');"/>
+	         	</div>
+	      	</fieldset -->
+		</form>
+	
+	<form id="formVisualizaSelec" name="formVisualizaSelec" action="/ParesBusquedas20/catalogo/docuSel" method="get">
+	   	
+	      	<fieldset id="visualizar_seleccionados">
+	      		
+		      		<input type="hidden" name="nm">
+	      		
+	      		<input type="submit" id="visualiza_sel" value="Visualizar Seleccionados">
+	      	</fieldset>
+		
+	      	
+      
+      	<div id="caja_resultados">
+         	
+            	<div id="resultados">
+               		<div class="pagebanner nResul">Resultados <span class="azul">1</span> - <span class="azul">100</span> de <span class="azul">330</span></div><div class="pagelinks"><strong>1</strong>&#160;<a href="/ParesBusquedas20/catalogo/SearchController.do?tambloque=100&amp;orderBy=8&amp;d-2677838-p=2&amp;nm=." title="Ir a página 2">2</a>&#160;<a href="/ParesBusquedas20/catalogo/SearchController.do?tambloque=100&amp;orderBy=8&amp;d-2677838-p=3&amp;nm=." title="Ir a página 3">3</a>&#160;<a href="/ParesBusquedas20/catalogo/SearchController.do?tambloque=100&amp;orderBy=8&amp;d-2677838-p=4&amp;nm=." title="Ir a página 4">4</a>&nbsp;&nbsp;<a href="/ParesBusquedas20/catalogo/SearchController.do?tambloque=100&amp;orderBy=8&amp;d-2677838-p=2&amp;nm=.">&raquo;</a>&nbsp;&nbsp;<a href="/ParesBusquedas20/catalogo/SearchController.do?tambloque=100&amp;orderBy=8&amp;d-2677838-p=4&amp;nm=.">&raquo;|</a></div>
+<table cellspacing="0" class="displayTable" id="resultados">
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th></tr></thead>
+<tbody>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="13362975"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel19.gif" title="Unidad Documental Compuesta" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/13362975?nm">Correspondencia dirigida al duque de Frías sobre asuntos en el extranjero.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/13362975" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo Histórico de la Nobleza</p><p class="fecha"><em class="destacado">Fechas: </em>1581-07-24 / 1775-11-14</p><p class="signatura"><em class="destacado">Signatura: </em>FRIAS,C.1815,D.1-26</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/121902?nm" id="thumbnail121902"><img src="/ParesBusquedas20/catalogo/showthumbnail/121902" onError="sin_thumbnail('121902')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="121902"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel19.gif" title="Unidad Documental Compuesta" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/121902?nm">Documentos relativos al descubrimiento y población de Tierra Firme por parte de Pedrarias Dávila.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/121902" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Indias</p><p class="fecha"><em class="destacado">Fechas: </em>1515 / 1541</p><p class="signatura"><em class="destacado">Signatura: </em>PATRONATO,26,R.5</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3911378"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel19.gif" title="Unidad Documental Compuesta" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3911378?nm">Carta de Pedro Téllez Girón, I Duque de Osuna, V Conde de Ureña, a Felipe II sobre sucesión en Portugal y otros asuntos de aquel reino.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3911378" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo Histórico de la Nobleza</p><p class="fecha"><em class="destacado">Fechas: </em>1579-11-07</p><p class="signatura"><em class="destacado">Signatura: </em>OSUNA,CP.56,D.8   <a href="#" title="OSUNA,CP.16,D.8">[<b>Signaturas anteriores</b>]</a></p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3911374"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel19.gif" title="Unidad Documental Compuesta" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3911374?nm">Carta de Pedro Téllez Girón, I Duque de Osuna y V Conde de Ureña, a Felipe II, sobre asuntos de Portugal y sucesión de este reino.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3911374" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo Histórico de la Nobleza</p><p class="fecha"><em class="destacado">Fechas: </em>1579-06-28</p><p class="signatura"><em class="destacado">Signatura: </em>OSUNA,CP.56,D.4   <a href="#" title="OSUNA,CP.16,D.4">[<b>Signaturas anteriores</b>]</a></p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12743162?nm" id="thumbnail12743162"><img src="/ParesBusquedas20/catalogo/showthumbnail/12743162" onError="sin_thumbnail('12743162')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12743162"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel19.gif" title="Unidad Documental Compuesta" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12743162?nm">Cartas del rey Felipe II al I marqués de Santa Cruz, como Capitán General de las Galeras de España, relativas a la anexión de Portugal.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12743162" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo Histórico de la Nobleza</p><p class="fecha"><em class="destacado">Fechas: </em>1580-01-02 / 1581-08-26</p><p class="signatura"><em class="destacado">Signatura: </em>SANTA CRUZ,C.47,D.2</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/5612014?nm" id="thumbnail5612014"><img src="/ParesBusquedas20/catalogo/showthumbnail/5612014" onError="sin_thumbnail('5612014')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="5612014"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel19.gif" title="Unidad Documental Compuesta" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/5612014?nm" data-toggle='tooltip' data-placement='top' title='Correspondencia enviada a [Rodrigo Ponce de León, I] duque de Arcos, sobre asuntos relacionados con la situación política y social del momento.'>Correspondencia enviada a [Rodrigo Ponce de León, I] duque de Arcos, sobre asuntos relacionados con la situación política y social del momen...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/5612014" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo Histórico de la Nobleza</p><p class="fecha"><em class="destacado">Fechas: </em>1520-01-01 / 1521-12-31</p><p class="signatura"><em class="destacado">Signatura: </em>OSUNA,C.1635,D.162-164   <a href="#" title="OSUNA,LEG.1635,D.4(81)      OSUNA,LEG.1635,D.4(81)      OSUNA,LEG.1635,D.4(82)      OSUNA,LEG.1635,D.4(83)      OSUNA,C.1635,D.4(83)      OSUNA,C.1635,D.4(82)      OSUNA,C.1635,D.4(81)">[<b>Signaturas anteriores</b>]</a></p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/6063575?nm" id="thumbnail6063575"><img src="/ParesBusquedas20/catalogo/showthumbnail/6063575" onError="sin_thumbnail('6063575')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="6063575"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel19.gif" title="Unidad Documental Compuesta" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/6063575?nm" data-toggle='tooltip' data-placement='top' title='Correspondencia enviada por Francisco Idiáquez, embajador en Génova (Italia), entre otros citados, y dirigida al duque de Arcos, sobre asuntos políticos y militares.'>Correspondencia enviada por Francisco Idiáquez, embajador en Génova (Italia), entre otros citados, y dirigida al duque de Arcos, sobre asunt...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/6063575" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo Histórico de la Nobleza</p><p class="fecha"><em class="destacado">Fechas: </em>1574-11-12 / 1776-09-11</p><p class="signatura"><em class="destacado">Signatura: </em>OSUNA,C.1634,D.322-347   <a href="#" title="OSUNA,LEG.1634-243 a OSUNA,LEG.1634-268">[<b>Signaturas anteriores</b>]</a></p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/5608534?nm" id="thumbnail5608534"><img src="/ParesBusquedas20/catalogo/showthumbnail/5608534" onError="sin_thumbnail('5608534')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="5608534"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel19.gif" title="Unidad Documental Compuesta" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/5608534?nm" data-toggle='tooltip' data-placement='top' title='Correspondencia enviada por Pedro Muñoz de Córdoba a [Rodrigo Ponce de León, I] duque de Arcos, informándole sobre la situación política y militar del momento.'>Correspondencia enviada por Pedro Muñoz de Córdoba a [Rodrigo Ponce de León, I] duque de Arcos, informándole sobre la situación política y m...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/5608534" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo Histórico de la Nobleza</p><p class="fecha"><em class="destacado">Fechas: </em>1520-01-01 / 1521-12-31</p><p class="signatura"><em class="destacado">Signatura: </em>OSUNA,C.1635,D.130-134   <a href="#" title="OSUNA,LEG.1635,D.4(50)      OSUNA,LEG.1635,D.4(51)      OSUNA,LEG.1635,D.4(52)      OSUNA,LEG.1635,D.4(53)      OSUNA,LEG.1635,D.4(54)      OSUNA,C.1635,D.4(50-54)">[<b>Signaturas anteriores</b>]</a></p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/6063551?nm" id="thumbnail6063551"><img src="/ParesBusquedas20/catalogo/showthumbnail/6063551" onError="sin_thumbnail('6063551')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="6063551"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel19.gif" title="Unidad Documental Compuesta" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/6063551?nm">Correspondencia particular remitida por el comendador Navarro y dirigida al duque de Arcos, sobre asuntos particulares.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/6063551" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo Histórico de la Nobleza</p><p class="fecha"><em class="destacado">Fechas: </em>1520-12-25 / 1542-08-09</p><p class="signatura"><em class="destacado">Signatura: </em>OSUNA,C.1634,D.271-321   <a href="#" title="OSUNA,LEG.1634-192 a OSUNA,LEG.1634-242">[<b>Signaturas anteriores</b>]</a></p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/6063527?nm" id="thumbnail6063527"><img src="/ParesBusquedas20/catalogo/showthumbnail/6063527" onError="sin_thumbnail('6063527')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="6063527"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel19.gif" title="Unidad Documental Compuesta" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/6063527?nm">Correspondencia particular remitida por el jurado Ruy Sánchez y dirigida al duque de Arcos, sobre asuntos particulares.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/6063527" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo Histórico de la Nobleza</p><p class="fecha"><em class="destacado">Fechas: </em>1528-03-06</p><p class="signatura"><em class="destacado">Signatura: </em>OSUNA,C.1634,D.266-270   <a href="#" title="OSUNA,LEG.1634-187 a OSUNA,LEG.1634-191">[<b>Signaturas anteriores</b>]</a></p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/6063148?nm" id="thumbnail6063148"><img src="/ParesBusquedas20/catalogo/showthumbnail/6063148" onError="sin_thumbnail('6063148')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="6063148"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel19.gif" title="Unidad Documental Compuesta" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/6063148?nm" data-toggle='tooltip' data-placement='top' title='Correspondencia particular remitida por Íñigo Fernández de Velasco, condestable de Castilla, y enviada probablemente a Rodrigo Ponce de León, [I duque de Arcos], sobre la guerra con Francia en tierras navarras.'>Correspondencia particular remitida por Íñigo Fernández de Velasco, condestable de Castilla, y enviada probablemente a Rodrigo Ponce de León...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/6063148" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo Histórico de la Nobleza</p><p class="fecha"><em class="destacado">Fechas: </em>1521-07-05 / 1521-09-23</p><p class="signatura"><em class="destacado">Signatura: </em>OSUNA,C.1634,D.127-132   <a href="#" title="OSUNA,LEG.1634-52 a OSUNA,LEG.1634-57">[<b>Signaturas anteriores</b>]</a></p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/6063353?nm" id="thumbnail6063353"><img src="/ParesBusquedas20/catalogo/showthumbnail/6063353" onError="sin_thumbnail('6063353')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="6063353"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel19.gif" title="Unidad Documental Compuesta" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/6063353?nm" data-toggle='tooltip' data-placement='top' title='Correspondencia particular remitida por Luis Cerón y Pedro Pezuelo y dirigida a Rodrigo Ponce de León, [I duque de Arcos], sobre asuntos personales.'>Correspondencia particular remitida por Luis Cerón y Pedro Pezuelo y dirigida a Rodrigo Ponce de León, [I duque de Arcos], sobre asuntos per...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/6063353" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo Histórico de la Nobleza</p><p class="fecha"><em class="destacado">Fechas: </em>1522-10-12 / 1571-05-25</p><p class="signatura"><em class="destacado">Signatura: </em>OSUNA,C.1634,D.180-204   <a href="#" title="OSUNA,LEG.1634-102 a OSUNA,LEG.1634-126">[<b>Signaturas anteriores</b>]</a></p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/6063467?nm" id="thumbnail6063467"><img src="/ParesBusquedas20/catalogo/showthumbnail/6063467" onError="sin_thumbnail('6063467')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="6063467"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel19.gif" title="Unidad Documental Compuesta" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/6063467?nm">Correspondencia particular remitida por Luis Ponce y dirigida al duque de Arcos sobre asuntos particulares.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/6063467" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo Histórico de la Nobleza</p><p class="fecha"><em class="destacado">Fechas: </em>1524-07-23</p><p class="signatura"><em class="destacado">Signatura: </em>OSUNA,C.1634,D.234-237   <a href="#" title="OSUNA,LEG.1634-154 a OSUNA,LEG.1634-158">[<b>Signaturas anteriores</b>]</a></p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/6063516?nm" id="thumbnail6063516"><img src="/ParesBusquedas20/catalogo/showthumbnail/6063516" onError="sin_thumbnail('6063516')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="6063516"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel19.gif" title="Unidad Documental Compuesta" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/6063516?nm">Correspondencia particular remitida por Mateo Vázquez y dirigida al duque de Arcos, sobre asuntos particulares.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/6063516" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo Histórico de la Nobleza</p><p class="fecha"><em class="destacado">Fechas: </em>1571-02-24 / 1571-11-11</p><p class="signatura"><em class="destacado">Signatura: </em>OSUNA,C.1634,D.260-265   <a href="#" title="OSUNA,LEG.1634-181 a OSUNA,LEG.1634-186">[<b>Signaturas anteriores</b>]</a></p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12742603?nm" id="thumbnail12742603"><img src="/ParesBusquedas20/catalogo/showthumbnail/12742603" onError="sin_thumbnail('12742603')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12742603"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel19.gif" title="Unidad Documental Compuesta" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12742603?nm" data-toggle='tooltip' data-placement='top' title='Título de Capitán General de la Armada para la jornada de la isla Terceira (Azores) otorgado a favor del I marqués de Santa Cruz y otros documentos relativos a lo mismo.'>Título de Capitán General de la Armada para la jornada de la isla Terceira (Azores) otorgado a favor del I marqués de Santa Cruz y otros doc...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12742603" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo Histórico de la Nobleza</p><p class="fecha"><em class="destacado">Fechas: </em>1582-01-13 / 1582-08-29</p><p class="signatura"><em class="destacado">Signatura: </em>SANTA CRUZ,C.47,D.3</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987720?nm" id="thumbnail12987720"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987720" onError="sin_thumbnail('12987720')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987720"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987720?nm" data-toggle='tooltip' data-placement='top' title='Carta del cardenal de Tortosa al rey, adjuntando varias cartas, sobre provisión de mercedes a diversas personas por sus servicios en las guerras de las Comunidades y de Navarra.'>Carta del cardenal de Tortosa al rey, adjuntando varias cartas, sobre provisión de mercedes a diversas personas por sus servicios en las gue...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987720" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-12-07</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,100</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12990026?nm" id="thumbnail12990026"><img src="/ParesBusquedas20/catalogo/showthumbnail/12990026" onError="sin_thumbnail('12990026')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12990026"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12990026?nm" data-toggle='tooltip' data-placement='top' title='Carta de Francisco de Mendoza a monseñor de Chievres sobre las dificultades para cobrar las rentas eclesiásticas, enviar correspondencia y otros de sus cometidos en el arzobispado de Toledo durante las Comunidades.'>Carta de Francisco de Mendoza a monseñor de Chievres sobre las dificultades para cobrar las rentas eclesiásticas, enviar correspondencia y o...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12990026" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-03-12</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,86,2</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/13002542?nm" id="thumbnail13002542"><img src="/ParesBusquedas20/catalogo/showthumbnail/13002542" onError="sin_thumbnail('13002542')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="13002542"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/13002542?nm">Carta cifrada del cardenal de Tortosa, el almirante y el condestable de Castilla al rey.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/13002542" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-12-30 / 1521-12-30</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,8,150</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/13037853?nm" id="thumbnail13037853"><img src="/ParesBusquedas20/catalogo/showthumbnail/13037853" onError="sin_thumbnail('13037853')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="13037853"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/13037853?nm">Carta parcialmente cifrada de Carlos I al presidente del Consejo de Castilla en respuesta a una consulta sobre diferentes asuntos de Estado.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/13037853" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1529 / 1529</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,3,353</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12969702?nm" id="thumbnail12969702"><img src="/ParesBusquedas20/catalogo/showthumbnail/12969702" onError="sin_thumbnail('12969702')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12969702"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12969702?nm" data-toggle='tooltip' data-placement='top' title='Minuta de carta cifrada del marqués de Denia al rey sobre varias cuestiones en la que pide que no se divulguen y que se le responda de forma cifrada.'>Minuta de carta cifrada del marqués de Denia al rey sobre varias cuestiones en la que pide que no se divulguen y que se le responda de forma...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12969702" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,3,39,16</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987544?nm" id="thumbnail12987544"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987544" onError="sin_thumbnail('12987544')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987544"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987544?nm">Transcripción de la parte cifrada de dos cartas del cardenal de Tortosa al rey.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987544" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-03-15</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,69</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987492?nm" id="thumbnail12987492"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987492" onError="sin_thumbnail('12987492')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987492"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987492?nm">Transcripción de la parte cifrada de dos cartas del cardenal de Tortosa al rey.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987492" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-02-23</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,62</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987608?nm" id="thumbnail12987608"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987608" onError="sin_thumbnail('12987608')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987608"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987608?nm">Transcripción de la parte cifrada de tres cartas del cardenal de Tortosa al rey.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987608" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-08-08</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,81</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987557?nm" id="thumbnail12987557"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987557" onError="sin_thumbnail('12987557')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987557"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987557?nm">Transcripción de la parte cifrada de tres cartas del cardenal de Tortosa al rey.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987557" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-03-28</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,72</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3659695?nm" id="thumbnail3659695"><img src="/ParesBusquedas20/catalogo/showthumbnail/3659695" onError="sin_thumbnail('3659695')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3659695"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3659695?nm">Carta de Gómez Suárez de Figueroa, embajador en Génova, a Felipe, príncipe de Asturias.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3659695" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1553-05-28</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1383,213-214</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/6673554?nm" id="thumbnail6673554"><img src="/ParesBusquedas20/catalogo/showthumbnail/6673554" onError="sin_thumbnail('6673554')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="6673554"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/6673554?nm" data-toggle='tooltip' data-placement='top' title='Carta de Juan Andrea Doria, príncipe de Melfi, a Felipe II, rey de España, suplicando se le pague lo que se le debe de su sueldo por servir con las galeras.'>Carta de Juan Andrea Doria, príncipe de Melfi, a Felipe II, rey de España, suplicando se le pague lo que se le debe de su sueldo por servir ...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/6673554" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1580-05-07</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1413,19</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12988859?nm" id="thumbnail12988859"><img src="/ParesBusquedas20/catalogo/showthumbnail/12988859" onError="sin_thumbnail('12988859')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12988859"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12988859?nm" data-toggle='tooltip' data-placement='top' title='Carta de Lope Hurtado de Mendoza al rey sobre conversaciones con el condestable de Castilla y otros nobles en Nájera y con el cardenal de Tortosa en Valladolid.'>Carta de Lope Hurtado de Mendoza al rey sobre conversaciones con el condestable de Castilla y otros nobles en Nájera y con el cardenal de To...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12988859" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1520-09-23</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,36,2</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987551?nm" id="thumbnail12987551"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987551" onError="sin_thumbnail('12987551')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987551"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987551?nm" data-toggle='tooltip' data-placement='top' title='Carta del cardenal de Tortosa al rey informando sobre las victorias del prior don Antonio sobre el obispo de Zamora, dando novedades del conde de Salvatierra y adjuntando una carta del duque de Medina Sidonia.'>Carta del cardenal de Tortosa al rey informando sobre las victorias del prior don Antonio sobre el obispo de Zamora, dando novedades del con...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987551" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-03-18</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,70</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987199?nm" id="thumbnail12987199"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987199" onError="sin_thumbnail('12987199')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987199"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987199?nm">Carta del cardenal de Tortosa al rey sobre asuntos de gobierno y de la Guerra de las Comunidades.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987199" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1520-11-13</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,30</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987353?nm" id="thumbnail12987353"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987353" onError="sin_thumbnail('12987353')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987353"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987353?nm">Carta del cardenal de Tortosa al rey sobre asuntos de gobierno y de la Guerra de las Comunidades.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987353" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-01-08</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,50</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987654?nm" id="thumbnail12987654"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987654" onError="sin_thumbnail('12987654')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987654"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987654?nm">Carta del cardenal de Tortosa al rey sobre asuntos de gobierno y de la Guerra de las Comunidades.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987654" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-08-30</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,88</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987445?nm" id="thumbnail12987445"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987445" onError="sin_thumbnail('12987445')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987445"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987445?nm">Carta del cardenal de Tortosa al rey sobre asuntos de gobierno y de la Guerra de las Comunidades.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987445" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-02-11</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,58</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987515?nm" id="thumbnail12987515"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987515" onError="sin_thumbnail('12987515')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987515"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987515?nm">Carta del cardenal de Tortosa al rey sobre asuntos de gobierno y de la Guerra de las Comunidades.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987515" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-02-27</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,63</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987561?nm" id="thumbnail12987561"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987561" onError="sin_thumbnail('12987561')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987561"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987561?nm">Carta del cardenal de Tortosa al rey sobre asuntos de gobierno y de la Guerra de las Comunidades.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987561" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-04-03</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,74</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987222?nm" id="thumbnail12987222"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987222" onError="sin_thumbnail('12987222')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987222"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987222?nm">Carta del cardenal de Tortosa al rey sobre asuntos de gobierno y de la Guerra de las Comunidades.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987222" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1520-11-17</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,32</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987637?nm" id="thumbnail12987637"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987637" onError="sin_thumbnail('12987637')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987637"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987637?nm">Carta del cardenal de Tortosa al rey sobre asuntos de gobierno y de la Guerra de las Comunidades.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987637" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-08-08</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,85</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987425?nm" id="thumbnail12987425"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987425" onError="sin_thumbnail('12987425')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987425"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987425?nm">Carta del cardenal de Tortosa al rey sobre asuntos de gobierno y de la Guerra de las Comunidades.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987425" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-02-06</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,57</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987336?nm" id="thumbnail12987336"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987336" onError="sin_thumbnail('12987336')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987336"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987336?nm">Carta del cardenal de Tortosa al rey sobre asuntos de gobierno y de la Guerra de las Comunidades.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987336" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-01-04</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,49</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987563?nm" id="thumbnail12987563"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987563" onError="sin_thumbnail('12987563')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987563"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987563?nm">Carta del cardenal de Tortosa al rey sobre asuntos de gobierno y de la Guerra de las Comunidades.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987563" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-04-09</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,75</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987560?nm" id="thumbnail12987560"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987560" onError="sin_thumbnail('12987560')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987560"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987560?nm">Carta del cardenal de Tortosa al rey sobre asuntos de gobierno y de la Guerra de las Comunidades.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987560" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-03-28</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,73</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987556?nm" id="thumbnail12987556"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987556" onError="sin_thumbnail('12987556')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987556"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987556?nm">Carta del cardenal de Tortosa al rey sobre asuntos de gobierno y de la Guerra de las Comunidades.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987556" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-03-21</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,71</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987542?nm" id="thumbnail12987542"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987542" onError="sin_thumbnail('12987542')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987542"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987542?nm">Carta del cardenal de Tortosa al rey sobre asuntos de gobierno y de la Guerra de las Comunidades.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987542" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-03-15</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,68</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987535?nm" id="thumbnail12987535"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987535" onError="sin_thumbnail('12987535')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987535"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987535?nm">Carta del cardenal de Tortosa al rey sobre asuntos de gobierno y de la Guerra de las Comunidades.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987535" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-03-12</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,67</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987157?nm" id="thumbnail12987157"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987157" onError="sin_thumbnail('12987157')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987157"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987157?nm">Carta del cardenal de Tortosa al rey sobre asuntos de gobierno y de la Guerra de las Comunidades.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987157" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1520-10-08</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,23</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987402?nm" id="thumbnail12987402"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987402" onError="sin_thumbnail('12987402')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987402"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987402?nm">Carta del cardenal de Tortosa al rey sobre asuntos de gobierno y de la Guerra de las Comunidades.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987402" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-01-30</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,54</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987473?nm" id="thumbnail12987473"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987473" onError="sin_thumbnail('12987473')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987473"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987473?nm">Carta del cardenal de Tortosa al rey sobre asuntos de gobierno y de la Guerra de las Comunidades.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987473" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-02-21</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,60</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987122?nm" id="thumbnail12987122"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987122" onError="sin_thumbnail('12987122')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987122"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987122?nm">Carta del cardenal de Tortosa al rey sobre asuntos de gobierno y de la Guerra de las Comunidades.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987122" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1520-09-09</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,19</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987701?nm" id="thumbnail12987701"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987701" onError="sin_thumbnail('12987701')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987701"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987701?nm">Carta del cardenal de Tortosa al rey sobre asuntos de gobierno y de las guerras de las Comunidades y Navarra.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987701" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-12-05</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,99</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987592?nm" id="thumbnail12987592"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987592" onError="sin_thumbnail('12987592')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987592"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987592?nm">Carta del cardenal de Tortosa al rey sobre asuntos de gobierno y de las Guerras de Navarra y de las Comunidades.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987592" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-07-08</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,79</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/13002088?nm" id="thumbnail13002088"><img src="/ParesBusquedas20/catalogo/showthumbnail/13002088" onError="sin_thumbnail('13002088')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="13002088"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/13002088?nm">Carta del cardenal de Tortosa al rey sobre diversos asuntos de la Guerra de las Comunidades.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/13002088" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1520-07-28 / 1520-07-28</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,8,112</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987356?nm" id="thumbnail12987356"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987356" onError="sin_thumbnail('12987356')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987356"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987356?nm">Carta del cardenal de Tortosa al rey sobre diversos asuntos relativos al gobierno de Castilla y a la Guerra de las Comunidades.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987356" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-01-16</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,51</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987491?nm" id="thumbnail12987491"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987491" onError="sin_thumbnail('12987491')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987491"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987491?nm">Carta del cardenal de Tortosa al rey sobre el cerco de Torrelobatón por parte de los comuneros.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987491" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-02-23</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,61</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987527?nm" id="thumbnail12987527"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987527" onError="sin_thumbnail('12987527')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987527"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987527?nm" data-toggle='tooltip' data-placement='top' title='Carta del cardenal de Tortosa al rey sobre la toma de la fortaleza de Torrelobatón por los comuneros, la tregua negociada por el rey de Portugal y la toma de Alcalá por el obispo de Zamora.'>Carta del cardenal de Tortosa al rey sobre la toma de la fortaleza de Torrelobatón por los comuneros, la tregua negociada por el rey de Port...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987527" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-03-07</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,65</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987578?nm" id="thumbnail12987578"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987578" onError="sin_thumbnail('12987578')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987578"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987578?nm" data-toggle='tooltip' data-placement='top' title='Carta del cardenal de Tortosa al rey sobre la toma de San Juan de Pie de Puerto y Pamplona por parte de los franceses y otros asuntos relativos al gobierno de Castilla y las guerras de Navarra y de las Comunidades.'>Carta del cardenal de Tortosa al rey sobre la toma de San Juan de Pie de Puerto y Pamplona por parte de los franceses y otros asuntos relati...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987578" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-05-23</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,77</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987566?nm" id="thumbnail12987566"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987566" onError="sin_thumbnail('12987566')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987566"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987566?nm" data-toggle='tooltip' data-placement='top' title='Carta del cardenal de Tortosa al rey sobre la victoria de Villalar, la ejecución de Padilla, Bravo y Maldonado, el destino de los bienes de los comuneros y otros asuntos de gobierno y de la guerra de las Comunidades.'>Carta del cardenal de Tortosa al rey sobre la victoria de Villalar, la ejecución de Padilla, Bravo y Maldonado, el destino de los bienes de ...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987566" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-05-06</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,76</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987723?nm" id="thumbnail12987723"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987723" onError="sin_thumbnail('12987723')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987723"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987723?nm" data-toggle='tooltip' data-placement='top' title='Carta del cardenal de Tortosa al rey sobre las causas de la pérdida de Fuenterrabía, los capítulos de paz enviados, los poderes de los gobernadores y la conveniencia de solicitar ayuda militar a las ciudades en lugar de a los nobles.'>Carta del cardenal de Tortosa al rey sobre las causas de la pérdida de Fuenterrabía, los capítulos de paz enviados, los poderes de los gober...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987723" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-12-07</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,101</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987364?nm" id="thumbnail12987364"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987364" onError="sin_thumbnail('12987364')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987364"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987364?nm" data-toggle='tooltip' data-placement='top' title='Carta del cardenal de Tortosa al rey sobre las ventajas e inconvenientes de partir de Tordesillas a Burgos o Medina de Rioseco, la división de opiniones al respecto y otros asuntos de gobierno y de la Guerra de las Comunidades.'>Carta del cardenal de Tortosa al rey sobre las ventajas e inconvenientes de partir de Tordesillas a Burgos o Medina de Rioseco, la división ...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987364" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-01-22</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,52</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987379?nm" id="thumbnail12987379"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987379" onError="sin_thumbnail('12987379')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987379"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987379?nm" data-toggle='tooltip' data-placement='top' title='Carta del cardenal de Tortosa al rey sobre los atrasos en los pagos de los ejércitos, las negociaciones del nuncio y el embajador de Portugal con la Santa Junta y otros asuntos de gobierno y de la Guerra de las Comunidades.'>Carta del cardenal de Tortosa al rey sobre los atrasos en los pagos de los ejércitos, las negociaciones del nuncio y el embajador de Portuga...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987379" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-01-26</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,53</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987582?nm" id="thumbnail12987582"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987582" onError="sin_thumbnail('12987582')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987582"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987582?nm" data-toggle='tooltip' data-placement='top' title='Carta del cardenal de Tortosa al rey sobre los conciertos acordados con las ciudades antes rebeldes, el envío de tropas desde ellas y las disensiones existentes entre los grandes nobles.'>Carta del cardenal de Tortosa al rey sobre los conciertos acordados con las ciudades antes rebeldes, el envío de tropas desde ellas y las di...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987582" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-06-11</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,78</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3550891?nm" id="thumbnail3550891"><img src="/ParesBusquedas20/catalogo/showthumbnail/3550891" onError="sin_thumbnail('3550891')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3550891"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3550891?nm" data-toggle='tooltip' data-placement='top' title='Copia de carta cifrada de Paolo Sfondrato, barón de Valassina, a Sancho de Guevara y Padilla, gobernador de Milán, y de su respuesta también cifrada.'>Copia de carta cifrada de Paolo Sfondrato, barón de Valassina, a Sancho de Guevara y Padilla, gobernador de Milán, y de su respuesta también...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3550891" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1581-08-14</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1414,101</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/13002628?nm" id="thumbnail13002628"><img src="/ParesBusquedas20/catalogo/showthumbnail/13002628" onError="sin_thumbnail('13002628')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="13002628"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/13002628?nm" data-toggle='tooltip' data-placement='top' title='Relación de cartas de los marqueses de Denia y del cardenal de Tortosa relativas al estado de la reina y la infanta, sus respectivas casas, la provisión de sus oficios y la relación con los comuneros mientras estuvo la Santa Junta en Tordesillas.'>Relación de cartas de los marqueses de Denia y del cardenal de Tortosa relativas al estado de la reina y la infanta, sus respectivas casas, ...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/13002628" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-09 / 1521-09</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,8,164</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12987667?nm" id="thumbnail12987667"><img src="/ParesBusquedas20/catalogo/showthumbnail/12987667" onError="sin_thumbnail('12987667')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12987667"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12987667?nm">Transcripción de cartas cifradas del cardenal de Tortosa al rey del 24 de octubre de 1521.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12987667" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1521-10-24</p><p class="signatura"><em class="destacado">Signatura: </em>PTR,LEG,2,1,92</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/2319436?nm" id="thumbnail2319436"><img src="/ParesBusquedas20/catalogo/showthumbnail/2319436" onError="sin_thumbnail('2319436')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="2319436"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/2319436?nm">Asuntos de Indias.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/2319436" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1509-08-15</p><p class="signatura"><em class="destacado">Signatura: </em>CCA,CED,7,266,2</p></td>
+<td><a style='padding-top: 30px; text-decoration: none; text-align: center;' href="https://pares.cultura.gob.es/pares-htr/search.action?loteId=6&search=a" target='_blank'><p>Consulta en</p><img src="/ParesBusquedas20/img/PARES-Htr_P.PNG" onError="sin_transk('')"/></a></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3572428?nm" id="thumbnail3572428"><img src="/ParesBusquedas20/catalogo/showthumbnail/3572428" onError="sin_thumbnail('3572428')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3572428"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3572428?nm">Carta cifrada.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3572428" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1551</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1381,180</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3572274?nm" id="thumbnail3572274"><img src="/ParesBusquedas20/catalogo/showthumbnail/3572274" onError="sin_thumbnail('3572274')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3572274"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3572274?nm">Carta cifrada.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3572274" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1551-08-24</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1381,143</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3579214?nm" id="thumbnail3579214"><img src="/ParesBusquedas20/catalogo/showthumbnail/3579214" onError="sin_thumbnail('3579214')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3579214"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3579214?nm">Carta cifrada de Alejandro Farnesio y Habsburgo, príncipe de Parma, a Felipe II, rey de España.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3579214" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1580-06-07</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1416,225</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12751418?nm" id="thumbnail12751418"><img src="/ParesBusquedas20/catalogo/showthumbnail/12751418" onError="sin_thumbnail('12751418')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12751418"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12751418?nm">Carta cifrada de Fernando el Católico a Jerónimo de Vich&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12751418" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo Histórico Nacional</p><p class="fecha"><em class="destacado">Fechas: </em>1515-10-26</p><p class="signatura"><em class="destacado">Signatura: </em>ESTADO,8715,N.73</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12751405?nm" id="thumbnail12751405"><img src="/ParesBusquedas20/catalogo/showthumbnail/12751405" onError="sin_thumbnail('12751405')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12751405"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12751405?nm">Carta cifrada de Fernando el Católico a Jerónimo de Vich&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12751405" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo Histórico Nacional</p><p class="fecha"><em class="destacado">Fechas: </em>1512-09-01</p><p class="signatura"><em class="destacado">Signatura: </em>ESTADO,8715,N.60</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12751390?nm" id="thumbnail12751390"><img src="/ParesBusquedas20/catalogo/showthumbnail/12751390" onError="sin_thumbnail('12751390')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12751390"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12751390?nm">Carta cifrada de Fernando el Católico a Jerónimo de Vich.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12751390" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo Histórico Nacional</p><p class="fecha"><em class="destacado">Fechas: </em>1511-04-04</p><p class="signatura"><em class="destacado">Signatura: </em>ESTADO,8715,N.45</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/12751402?nm" id="thumbnail12751402"><img src="/ParesBusquedas20/catalogo/showthumbnail/12751402" onError="sin_thumbnail('12751402')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="12751402"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/12751402?nm">Carta cifrada de Fernando el Católico a Jerónimo de Vich.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/12751402" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo Histórico Nacional</p><p class="fecha"><em class="destacado">Fechas: </em>1512-06-05</p><p class="signatura"><em class="destacado">Signatura: </em>ESTADO,8715,N.57</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3566121?nm" id="thumbnail3566121"><img src="/ParesBusquedas20/catalogo/showthumbnail/3566121" onError="sin_thumbnail('3566121')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3566121"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3566121?nm" data-toggle='tooltip' data-placement='top' title='Carta cifrada de Gómez Suárez de Figueroa, embajador de España en Génova, a Felipe, príncipe de Asturias, sobre la entrega que hace Gabriel Ludovico del Vasto, marqués de Saluzzo, del castillo de Rivello a los franceses e inteligencias de Francia para atraerse a su servicio al corsario Dragut y a otros berberiscos.'>Carta cifrada de Gómez Suárez de Figueroa, embajador de España en Génova, a Felipe, príncipe de Asturias, sobre la entrega que hace Gabriel ...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3566121" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1548-04-25</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1380,37-38</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3564194?nm" id="thumbnail3564194"><img src="/ParesBusquedas20/catalogo/showthumbnail/3564194" onError="sin_thumbnail('3564194')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3564194"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3564194?nm" data-toggle='tooltip' data-placement='top' title='Carta cifrada de Gómez Suárez de Figueroa, embajador de España en Génova, a Fernando Álvarez de Toledo y Pimentel, duque de Alba, mayordomo mayor y del Consejo de Estado.'>Carta cifrada de Gómez Suárez de Figueroa, embajador de España en Génova, a Fernando Álvarez de Toledo y Pimentel, duque de Alba, mayordomo ...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3564194" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1548-06-10</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1380,9</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3563861?nm" id="thumbnail3563861"><img src="/ParesBusquedas20/catalogo/showthumbnail/3563861" onError="sin_thumbnail('3563861')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3563861"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3563861?nm" data-toggle='tooltip' data-placement='top' title='Carta cifrada de Gómez Suárez de Figueroa, embajador de España en Génova, a Fernando Álvarez de Toledo y Pimentel, duque de Alba, mayordomo mayor y del Consejo de Estado.'>Carta cifrada de Gómez Suárez de Figueroa, embajador de España en Génova, a Fernando Álvarez de Toledo y Pimentel, duque de Alba, mayordomo ...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3563861" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1548-08-20</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1380,7-8</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3564455?nm" id="thumbnail3564455"><img src="/ParesBusquedas20/catalogo/showthumbnail/3564455" onError="sin_thumbnail('3564455')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3564455"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3564455?nm" data-toggle='tooltip' data-placement='top' title='Carta cifrada de Gómez Suárez de Figueroa, embajador de España en Génova, a Fernando Álvarez de Toledo y Pimentel, duque de Alba, mayordomo mayor y del Consejo de Estado, sobre las medidas defensivas tomadas en Génova y presencia de Dragut en los mares de Italia.'>Carta cifrada de Gómez Suárez de Figueroa, embajador de España en Génova, a Fernando Álvarez de Toledo y Pimentel, duque de Alba, mayordomo ...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3564455" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1548-07-04</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1380,10-11</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3665816?nm" id="thumbnail3665816"><img src="/ParesBusquedas20/catalogo/showthumbnail/3665816" onError="sin_thumbnail('3665816')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3665816"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3665816?nm">Carta cifrada de Gómez Suárez de Figueroa, embajador en Génova, a Carlos V, emperador del Sacro Imperio Romano Germánico.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3665816" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1534-09-06</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1367,149-150</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3548085?nm" id="thumbnail3548085"><img src="/ParesBusquedas20/catalogo/showthumbnail/3548085" onError="sin_thumbnail('3548085')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3548085"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3548085?nm">Carta cifrada de Gómez Suárez de Figueroa, embajador en Génova, a Carlos V, emperador del Sacro Imperio Romano Germánico.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3548085" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1534-07-02</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1367,56-57</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3615615?nm" id="thumbnail3615615"><img src="/ParesBusquedas20/catalogo/showthumbnail/3615615" onError="sin_thumbnail('3615615')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3615615"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3615615?nm">Carta cifrada de Gómez Suárez de Figueroa, embajador en Génova, a Carlos V, emperador del Sacro Imperio Romano Germánico.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3615615" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1547-09-08</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1379,14-18</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3657704?nm" id="thumbnail3657704"><img src="/ParesBusquedas20/catalogo/showthumbnail/3657704" onError="sin_thumbnail('3657704')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3657704"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3657704?nm" data-toggle='tooltip' data-placement='top' title='Carta cifrada de Gómez Suárez de Figueroa, embajador en Génova, a Carlos V, emperador del Sacro Imperio Romano Germánico, sobre la necesidad de conservar a dicha República en el servicio de España y mercedes a los parciales; diferencias entre Andrea y Antonio Doria.'>Carta cifrada de Gómez Suárez de Figueroa, embajador en Génova, a Carlos V, emperador del Sacro Imperio Romano Germánico, sobre la necesidad...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3657704" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1553-07-05</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1383,20-22</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3556079?nm" id="thumbnail3556079"><img src="/ParesBusquedas20/catalogo/showthumbnail/3556079" onError="sin_thumbnail('3556079')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3556079"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3556079?nm" data-toggle='tooltip' data-placement='top' title='Carta cifrada de Gómez Suárez de Figueroa, embajador en Génova, a Carlos V, emperador del Sacro Imperio Romano Germánico, sobre los preparativos militares que están llevando a cabo el conde Guido Rangoni, César Fragoso y otros secuaces de Francia con la intención de atacar Génova; oposición de la condesa de Fiesco al paso por sus territorios de tropas y vituallas francesas.'>Carta cifrada de Gómez Suárez de Figueroa, embajador en Génova, a Carlos V, emperador del Sacro Imperio Romano Germánico, sobre los preparat...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3556079" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1536-08-20</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1369,232-233</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3663165?nm" id="thumbnail3663165"><img src="/ParesBusquedas20/catalogo/showthumbnail/3663165" onError="sin_thumbnail('3663165')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3663165"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3663165?nm">Carta cifrada de Gómez Suárez de Figueroa, embajador en Génova, a Felipe, príncipe de Asturias.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3663165" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1553-08-30</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1383,364</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3662788?nm" id="thumbnail3662788"><img src="/ParesBusquedas20/catalogo/showthumbnail/3662788" onError="sin_thumbnail('3662788')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3662788"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3662788?nm">Carta cifrada de Gómez Suárez de Figueroa, embajador en Génova, a Felipe, príncipe de Asturias.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3662788" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1553-10-27</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1383,351-353</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3562080?nm" id="thumbnail3562080"><img src="/ParesBusquedas20/catalogo/showthumbnail/3562080" onError="sin_thumbnail('3562080')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3562080"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3562080?nm">Carta cifrada de Gómez Suárez de Figueroa, embajador en Génova, a Felipe, príncipe de Asturias.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3562080" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1543-11-20</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1376,16-17</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3662298?nm" id="thumbnail3662298"><img src="/ParesBusquedas20/catalogo/showthumbnail/3662298" onError="sin_thumbnail('3662298')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3662298"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3662298?nm">Carta cifrada de Gómez Suárez de Figueroa, embajador en Génova, a Felipe, príncipe de Asturias.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3662298" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1553-09-20</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1383,312</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3662131?nm" id="thumbnail3662131"><img src="/ParesBusquedas20/catalogo/showthumbnail/3662131" onError="sin_thumbnail('3662131')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3662131"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3662131?nm" data-toggle='tooltip' data-placement='top' title='Carta cifrada de Gómez Suárez de Figueroa, embajador en Génova, a Felipe, príncipe de Asturias, sobre las actividades de orden económico que realiza: gestiones para concertar cambios.'>Carta cifrada de Gómez Suárez de Figueroa, embajador en Génova, a Felipe, príncipe de Asturias, sobre las actividades de orden económico que...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3662131" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1553-08-29</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1383,296</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3660079?nm" id="thumbnail3660079"><img src="/ParesBusquedas20/catalogo/showthumbnail/3660079" onError="sin_thumbnail('3660079')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3660079"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3660079?nm">Carta cifrada de Gómez Suárez de Figueroa, embajador en Génova, a Juan Vázquez de Molina, secretario del Consejo de Estado.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3660079" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1553-05-28</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1383,242</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3578948?nm" id="thumbnail3578948"><img src="/ParesBusquedas20/catalogo/showthumbnail/3578948" onError="sin_thumbnail('3578948')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3578948"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3578948?nm">Carta cifrada de Juan Andrea Doria a Felipe II, rey de España.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3578948" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1577-08-22</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1410,134</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3579006?nm" id="thumbnail3579006"><img src="/ParesBusquedas20/catalogo/showthumbnail/3579006" onError="sin_thumbnail('3579006')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3579006"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3579006?nm">Carta cifrada de Juan Andrea Doria, príncipe de Melfi, a Felipe II, rey de España.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3579006" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1582-10-29</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1416,190</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3582510?nm" id="thumbnail3582510"><img src="/ParesBusquedas20/catalogo/showthumbnail/3582510" onError="sin_thumbnail('3582510')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3582510"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3582510?nm">Carta cifrada de Juan Andrea Doria, príncipe de Melfi, a Felipe II, rey de España, sobre movimientos y servicios que prestan sus galeras.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3582510" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1585-12-21</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1418,77</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3554365?nm" id="thumbnail3554365"><img src="/ParesBusquedas20/catalogo/showthumbnail/3554365" onError="sin_thumbnail('3554365')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3554365"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3554365?nm">Carta cifrada de Juan Andrea Doria, príncipe de Melfi, a Francisco de Idiáquez, secretario de Italia del Consejo de Estado.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3554365" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1588-12-31</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1420,213</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/6691465?nm" id="thumbnail6691465"><img src="/ParesBusquedas20/catalogo/showthumbnail/6691465" onError="sin_thumbnail('6691465')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="6691465"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/6691465?nm">Carta cifrada de Juan Andrea Doria, príncipe de Melfi, a Juan de Borja.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/6691465" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1581-07-05</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1415,62</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/6688267?nm" id="thumbnail6688267"><img src="/ParesBusquedas20/catalogo/showthumbnail/6688267" onError="sin_thumbnail('6688267')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="6688267"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/6688267?nm">Carta cifrada de [Juan Andrea Doria, príncipe de Melfi], a [Juan de Zúñiga y Requesens, comendador mayor de Castilla].&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/6688267" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1581-08-01</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1415,43</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3577720?nm" id="thumbnail3577720"><img src="/ParesBusquedas20/catalogo/showthumbnail/3577720" onError="sin_thumbnail('3577720')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3577720"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3577720?nm" data-toggle='tooltip' data-placement='top' title='Carta cifrada de Juan de Idiáquez y Pedro de Mendoza, embajadores en Génova, a Felipe II, rey de España, sobre la llegada del tercio de Lope de Figueroa a Lombardía.'>Carta cifrada de Juan de Idiáquez y Pedro de Mendoza, embajadores en Génova, a Felipe II, rey de España, sobre la llegada del tercio de Lope...&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3577720" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1577-11-24</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1410,115</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3644642?nm" id="thumbnail3644642"><img src="/ParesBusquedas20/catalogo/showthumbnail/3644642" onError="sin_thumbnail('3644642')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3644642"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3644642?nm">Carta cifrada de Juan de Zúñiga y Requesens, comendador mayor de Castilla, a Felipe II, rey de España.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3644642" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1581-08-30</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1415,113</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3552745?nm" id="thumbnail3552745"><img src="/ParesBusquedas20/catalogo/showthumbnail/3552745" onError="sin_thumbnail('3552745')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3552745"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3552745?nm">Carta cifrada de Miguel de Oviedo, secretario de la embajada de España en Génova, a Felipe II, rey de España.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3552745" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1571-06-02</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1401,225</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3579177?nm" id="thumbnail3579177"><img src="/ParesBusquedas20/catalogo/showthumbnail/3579177" onError="sin_thumbnail('3579177')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3579177"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3579177?nm">Carta cifrada de Paolo Sfondrato, barón de Valassina, a Felipe II, rey de España.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3579177" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1582-12-04</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1416,221</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3665845?nm" id="thumbnail3665845"><img src="/ParesBusquedas20/catalogo/showthumbnail/3665845" onError="sin_thumbnail('3665845')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3665845"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3665845?nm">Carta cifrada de Pedro de Mendoza, embajador de España en Génova, a Felipe II, rey de España.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3665845" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1587-06-21</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1419,5</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3580524?nm" id="thumbnail3580524"><img src="/ParesBusquedas20/catalogo/showthumbnail/3580524" onError="sin_thumbnail('3580524')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3580524"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3580524?nm">Carta cifrada de Pedro de Mendoza, embajador de España en Génova, a Felipe II, rey de España, con noticias del regente danés.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3580524" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1576-12-30</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1408,159</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3549587?nm" id="thumbnail3549587"><img src="/ParesBusquedas20/catalogo/showthumbnail/3549587" onError="sin_thumbnail('3549587')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3549587"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3549587?nm">Carta cifrada de Pedro de Mendoza, embajador en Génova, a Felipe II, rey de España.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3549587" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1581-01-07</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1414,4</p></td>
+<td></td></tr>
+<tr class="odd">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3580653?nm" id="thumbnail3580653"><img src="/ParesBusquedas20/catalogo/showthumbnail/3580653" onError="sin_thumbnail('3580653')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3580653"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3580653?nm">Carta cifrada de Pedro de Mendoza, embajador en Génova, a Felipe II, rey de España.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3580653" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1585-01-31</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1418,2</p></td>
+<td></td></tr>
+<tr class="even">
+<td style="padding: 0.5em; min-width: 75px; text-align:center"><a href="/ParesBusquedas20/catalogo/show/3550877?nm" id="thumbnail3550877"><img src="/ParesBusquedas20/catalogo/showthumbnail/3550877" onError="sin_thumbnail('3550877')"></a></td>
+<td><p class="titulo"><input type="checkbox" name="sel" value="3550877"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple o Elemento de Descripción Asociado" />&nbsp;<a href="/ParesBusquedas20/catalogo/description/3550877?nm">Carta cifrada de Pedro de Mendoza, embajador en Génova, a Felipe II, rey de España.&nbsp;</a><a class="btn_ventana_nueva" target="_blank" href="/ParesBusquedas20/catalogo/description/3550877" ><img src="/ParesBusquedas20/img/flecha_ventana_nueva.jpg" width="20" height="15" alt="Abrir en ventana nueva" class="icono" /></a></p><p class="tipo_archivo"><em class="destacado">Archivo: </em>Archivo General de Simancas</p><p class="fecha"><em class="destacado">Fechas: </em>1581-08-06</p><p class="signatura"><em class="destacado">Signatura: </em>EST,LEG,1414,100</p></td>
+<td></td></tr></tbody></table><div class="pagebanner nResul">Resultados <span class="azul">1</span> - <span class="azul">100</span> de <span class="azul">330</span></div><div class="pagelinks"><strong>1</strong>&#160;<a href="/ParesBusquedas20/catalogo/SearchController.do?tambloque=100&amp;orderBy=8&amp;d-2677838-p=2&amp;nm=." title="Ir a página 2">2</a>&#160;<a href="/ParesBusquedas20/catalogo/SearchController.do?tambloque=100&amp;orderBy=8&amp;d-2677838-p=3&amp;nm=." title="Ir a página 3">3</a>&#160;<a href="/ParesBusquedas20/catalogo/SearchController.do?tambloque=100&amp;orderBy=8&amp;d-2677838-p=4&amp;nm=." title="Ir a página 4">4</a>&nbsp;&nbsp;<a href="/ParesBusquedas20/catalogo/SearchController.do?tambloque=100&amp;orderBy=8&amp;d-2677838-p=2&amp;nm=.">&raquo;</a>&nbsp;&nbsp;<a href="/ParesBusquedas20/catalogo/SearchController.do?tambloque=100&amp;orderBy=8&amp;d-2677838-p=4&amp;nm=.">&raquo;|</a></div>
+            	</div> <!-- resultados -->
+         	
+         
+         	
+      	</div> <!-- caja resultados -->
+   	</form>
+
+</div> <!-- fin contenido resultados -->
+
+<script type="text/javascript">
+  $(document).ready(function() {
+	  // Carga inicial cuando el dom esta preparado. Se asume que se va a inyectar sobre un div
+	  // con el id "resultados" que existe en la pagina
+	  resultados.onResultadoTableLoad();
+	  //$("#formBusquedas select#orderby").ajaxResultsSubmit();
+	  //$("#formBusquedas select#tambloque").ajaxResultsSubmit();
+	  
+  });
+  
+  
+  function verAPE(){ 
+	document.formAPE.submit() 
+  }  
+  function verAPE_exacta(){ 
+	document.formAPE_exacta.submit() 
+  }  
+</script>
+            </div>
+            <div id="sidebar"><!-- menu lateral - facetas -->
+               
+<!-- %@ page session="true" language="java" contentType="text/html; charset=ISO-8859-15"
+    pageEncoding="ISO-8859-15"% -->
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="facetas">
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+		
+
+		<h6>Filtrar por:</h6>
+		<ul id="lista_facetas">
+
+			
+			
+			
+				<li class="titulo_facetas"><strong>Archivos</strong></li>
+				
+					
+					<!---->
+					
+					<li>
+	         			
+	         				
+	         					<a href="/ParesBusquedas20/catalogo/find?nm=.&idA=10" title="Archivo General de Indias">Archivo General de Indias&nbsp;&nbsp;<em>(2)</em></a>
+	         				
+	         				
+	         			
+	      			</li>
+				
+					
+					<!---->
+					
+					<li>
+	         			
+	         				
+	         					<a href="/ParesBusquedas20/catalogo/find?nm=.&idA=2" title="Archivo General de Simancas">Archivo General de Simancas&nbsp;&nbsp;<em>(302)</em></a>
+	         				
+	         				
+	         			
+	      			</li>
+				
+					
+					<!---->
+					
+					<li>
+	         			
+	         				
+	         					<a href="/ParesBusquedas20/catalogo/find?nm=.&idA=3" title="Archivo Histórico de la Nobleza">Archivo Histórico de la Nobleza&nbsp;&nbsp;<em>(15)</em></a>
+	         				
+	         				
+	         			
+	      			</li>
+				
+					
+					<!---->
+					
+					<li>
+	         			
+	         				
+	         					<a href="/ParesBusquedas20/catalogo/find?nm=.&idA=9" title="Archivo Histórico Nacional">Archivo Histórico Nacional&nbsp;&nbsp;<em>(11)</em></a>
+	         				
+	         				
+	         			
+	      			</li>
+				  
+			
+			
+			
+			
+			
+				<li class="titulo_facetas"><strong>Digitalización</strong></li>
+				
+					
+						
+						
+						
+						<li>
+		         			
+		         				
+		         					<a href="/ParesBusquedas20/catalogo/find?nm=.&idD=N">No Digitalizadas&nbsp;&nbsp;<em>(4)</em></a>
+		         				
+		         				
+		         			
+		      			</li>
+	      			
+				
+					
+						
+						
+						
+						<li>
+		         			
+		         				
+		         					<a href="/ParesBusquedas20/catalogo/find?nm=.&idD=S">Digitalizadas&nbsp;&nbsp;<em>(326)</em></a>
+		         				
+		         				
+		         			
+		      			</li>
+	      			
+				
+				
+			
+			
+				<li class="titulo_facetas"><strong>Niveles descriptivos</strong></li>
+				
+					
+					
+					
+					<li>
+	         			
+	         				
+	         					<a href="/ParesBusquedas20/catalogo/find?nm=.&idN=19" title="Unidad Documental Compuesta"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel19.gif" title="Unidad Documental Compuesta">&nbsp;Unidad Documental Compuesta&nbsp;&nbsp;<em>(15)</em></a>
+	         				
+	         				
+	         			
+	      			</li>
+				
+					
+					
+					
+					<li>
+	         			
+	         				
+	         					<a href="/ParesBusquedas20/catalogo/find?nm=.&idN=20" title="Unidad Documental Simple"><img class="iconoNivel" src="/ParesBusquedas20/img/iconoNivel20.gif" title="Unidad Documental Simple">&nbsp;Unidad Documental Simple&nbsp;&nbsp;<em>(315)</em></a>
+	         				
+	         				
+	         			
+	      			</li>
+				  
+			
+			
+			
+				<li class="titulo_facetas"><strong>Fecha inicio</strong></li>
+				
+					
+					
+					
+					
+					<li>
+	         			
+	         				
+	         				
+	         					<p>&nbsp;S.XVI&nbsp;&nbsp;<em>(330)</em></p>
+	         				
+	         			
+	      			</li>
+	      			
+				  
+			
+			
+				<li>
+					<a href="/ParesBusquedas20/catalogo/find?nm=." title="Volver a todas las fechas de inicio">Todas las fechas de inicio</a>
+				</li>
+			
+			
+				<li class="titulo_facetas"><strong>Fecha fin</strong></li>
+				
+					
+					
+					
+					
+					<li>
+	         			
+	         				
+	         					<a href="/ParesBusquedas20/catalogo/find?nm=.&idFF=0">sin fecha&nbsp;&nbsp;<em>(307)</em></a>
+	         				
+	         				
+	         			
+	      			</li>
+	      			
+				
+					
+					
+					
+					
+					<li>
+	         			
+	         				
+	         					<a href="/ParesBusquedas20/catalogo/find?nm=.&idFF=16">S.XVI&nbsp;&nbsp;<em>(21)</em></a>
+	         				
+	         				
+	         			
+	      			</li>
+	      			
+				
+					
+					
+					
+					
+					<li>
+	         			
+	         				
+	         					<a href="/ParesBusquedas20/catalogo/find?nm=.&idFF=18">S.XVIII&nbsp;&nbsp;<em>(2)</em></a>
+	         				
+	         				
+	         			
+	      			</li>
+	      			
+				  
+			
+			
+			
+				<li class="titulo_facetas"><strong>Lengua</strong></li>
+				
+					
+					
+					
+					<li>
+	         			
+	         				
+	         					<a href="/ParesBusquedas20/catalogo/find?nm=.&idLP=338" >Español&nbsp;&nbsp;<em>(91)</em></a>
+	         				
+	         				
+	         			
+	      			</li>
+				
+					
+					
+					
+					<li>
+	         			
+	         				
+	         					<a href="/ParesBusquedas20/catalogo/find?nm=.&idLP=211" >Latín&nbsp;&nbsp;<em>(1)</em></a>
+	         				
+	         				
+	         			
+	      			</li>
+				
+					
+					
+					
+					<li>
+	         			
+	         				
+	         					<a href="/ParesBusquedas20/catalogo/find?nm=.&idLP=-1" >No informado&nbsp;&nbsp;<em>(238)</em></a>
+	         				
+	         				
+	         			
+	      			</li>
+				  
+			
+			
+			
+				<li class="titulo_facetas"><strong>Alfabeto</strong></li>
+				
+					
+					
+					
+					<li>
+	         			
+	         				
+	         					<a href="/ParesBusquedas20/catalogo/find?nm=.&idEP=215" >Alfabeto latino&nbsp;&nbsp;<em>(92)</em></a>
+	         				
+	         				
+	         			
+	      			</li>
+				
+					
+					
+					
+					<li>
+	         			
+	         				
+	         					<a href="/ParesBusquedas20/catalogo/find?nm=.&idEP=-1" >No informado&nbsp;&nbsp;<em>(238)</em></a>
+	         				
+	         				
+	         			
+	      			</li>
+				  
+			
+			
+			
+				<li class="titulo_facetas"><strong>Tipo de escritura</strong></li>
+				
+					
+					
+					
+					<li>
+	         			
+	         				
+	         					<a href="/ParesBusquedas20/catalogo/find?nm=.&idTP=14" >Cifrada&nbsp;&nbsp;<em>(2)</em></a>
+	         				
+	         				
+	         			
+	      			</li>
+				
+					
+					
+					
+					<li>
+	         			
+	         				
+	         					<a href="/ParesBusquedas20/catalogo/find?nm=.&idTP=3" >Gótica cortesana&nbsp;&nbsp;<em>(72)</em></a>
+	         				
+	         				
+	         			
+	      			</li>
+				
+					
+					
+					
+					<li>
+	         			
+	         				
+	         					<a href="/ParesBusquedas20/catalogo/find?nm=.&idTP=7" >Humanística&nbsp;&nbsp;<em>(6)</em></a>
+	         				
+	         				
+	         			
+	      			</li>
+				
+					
+					
+					
+					<li>
+	         			
+	         				
+	         					<a href="/ParesBusquedas20/catalogo/find?nm=.&idTP=15" >Impresa&nbsp;&nbsp;<em>(1)</em></a>
+	         				
+	         				
+	         			
+	      			</li>
+				
+					
+					
+					
+					<li>
+	         			
+	         				
+	         					<a href="/ParesBusquedas20/catalogo/find?nm=.&idTP=-1" >No informado&nbsp;&nbsp;<em>(250)</em></a>
+	         				
+	         				
+	         			
+	      			</li>
+				
+					
+					
+					
+					<li>
+	         			
+	         				
+	         					<a href="/ParesBusquedas20/catalogo/find?nm=.&idTP=8" >Procesal&nbsp;&nbsp;<em>(9)</em></a>
+	         				
+	         				
+	         			
+	      			</li>
+				  
+			
+			
+			<li class="titulo_facetas"><strong>Texto</strong></li>
+			
+			
+				<form action="/ParesBusquedas20/catalogo/find">
+					
+						
+							<input type="hidden" name="nm" value="."/>
+						
+					
+					
+				<!-- form action="/ParesBusquedas20/catalogo/SearchController.do" -->
+					<!--  c:if test="true" -->
+						<!-- input type="hidden" name="nm" value="" -->
+					<!-- /c:if -->
+					<li class="nobullet"><p>&nbsp;Campos:&nbsp;&nbsp;
+					<select name="idTC">
+						<option value="All">Todos</option>
+						<option value="Alc">Alcance y Contenido</option>
+						<option value="Tit">Título/s</option>
+					</select></p></li>
+					<li class="nobullet"><p>&nbsp;Texto:
+					<input type="text" name="idT"></input></p></li>
+					<li><button type="submit">&nbsp;Aplicar filtro de texto</button></li>
+				</form>
+			
+			
+		</ul>
+	
+</div>
+            </div>
+         </div><!-- fin contenedor -->
+         
+         <div id="footer"><!-- pie.jsp -->
+            
+<!-- %@ page session="true" language="java" contentType="text/html; charset=ISO-8859-15"
+    pageEncoding="ISO-8859-15"% -->
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="copy">&copy; Ministerio de Cultura - Gobierno de España</div>
+<div id="logos">
+<!--
+	<a href="/cultura-mecd/areas-cultura/archivos/mc/archivos/aca/contacte.html" class="contacto"  title="Contacte con el Archivo de la Corona de Aragón"> <span>Contacte con el Archivo de la Corona de Aragón</span></a>
+	<a title="Facebook" rel="external" class="facebook" href="https://www.facebook.com/MinisterioDeEducacionCulturaYDeporte"><span>Facebook</span></a>
+	<a title="Twitter" rel="external" class="twitter" href="https://twitter.com/culturagob"><span>Twitter</span></a>
+	<a title="RSS" rel="external" class="rss" href="https://www.mcu.es/centroInformacionCiudadano/RSS.html"><span>RSS</span></a>
+	<a rel="external" title="Este sitio web cumple con el nivel de accesibilidad doble A segun las pautas WCAG 1.0" class="aa" href="https://www.w3.org/WAI/WCAG1AA-Conformance"><span>Accesibilidad</span></a>
+-->
+	<ul class="comunes">
+		<li class="primero">
+			<a href="https://pares.cultura.gob.es/comunes/accesibilidad.html" rel="external" title="Enlace externo, se abre en ventana nueva">Accesibilidad</a>
+		</li>
+		<li> 
+			<a href="https://pares.cultura.gob.es/comunes/aviso-legal.html" rel="external" title="Enlace externo, se abre en ventana nueva">Aviso Legal</a>
+		</li>
+	</ul>
+	<a rel="external" title="Este sitio web cumple con el nivel de accesibilidad doble A segun las pautas WCAG 1.0, se abre en ventana nueva" class="aa" href="https://www.w3.org/WAI/WCAG1AA-Conformance"><span>Aviso Legal</span></a>
+</div>
+
+<!--
+<p>&copy; Ministerio de Cultura - Gobierno de España</p>
+<ul>
+   <li class="primer_enlace">
+      <a href="#" title="Aviso Legal">Aviso Legal</a>
+   </li>
+   <li>
+      <a href="#" title="Guía de Navegación">Guía de Navegación</a>
+   </li>
+   <li class="ultimo_enlace">
+      <a href="#" title="Accesibilidad">Accesibilidad</a>
+   </li>
+</ul>
+-->
+<!--
+<ul id="iconos_footer">
+   <li>
+      <a href="#" title="X (twitter)">
+      <img src="/ParesBusquedas20/img/ico_twitter.gif" width="22" height="23" alt="etiq.twitter" title="etiq.twitter"/></a>
+   </li>
+   <li>
+      <a href="https://www.w3.org/WAI/WCAG1AA-Conformance" title="Conformidad con el Nivel Doble-A del W3C-WAI" target="_blank">
+      <img src="/ParesBusquedas20/img/logo_wai_home_nr.gif" width="60" height="22" alt="Conformidad con el Nivel Doble-A del W3C-WAI" title="Conformidad con el Nivel Doble-A del W3C-WAI"/></a>
+   </li>
+   <li>
+      <a href="/centroInformacionCiudadano/RSS.html" title="Titulares RSS disponibles">
+      <img src="/ParesBusquedas20/img/logo_rss_home_nr.gif" width="84" height="22" alt="Titulares RSS disponibles" title="Titulares RSS disponibles"/></a>
+   </li>
+</ul>
+-->
+         </div><!-- fin pier -->
+         
+      </div> <!-- fin contenedor pral -->
+   </body>
+</html>

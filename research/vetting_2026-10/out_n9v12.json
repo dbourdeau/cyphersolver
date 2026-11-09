@@ -1,0 +1,65 @@
+{
+ "2442": {
+  "date": "2026-11-09",
+  "by": "claude vetting agent v12",
+  "seen": {
+   "kind": "scan",
+   "where": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/5040064 (images 1, 2, 3, 5, 6 viewed 9 Nov 2026, zoom 10; images 4, 7, 8 fetched, 9 returned empty)",
+   "extent": "Key sheet (image 1) plus about 6-8 pages of dispatches in invented-symbol cipher, dated Seville, 26 May 1811 at the end of image 3; solid symbol lines on every page, some hundreds of signs per page.",
+   "cipher": "Image 1: alphabet table (A, B/V/U, C/S/Z, D ... one geometric sign per letter, case and similar letters merged) plus 15 nomenclator symbols (Napoleon, King Jose, Massena, Victor, Mortier, Soult etc, Seville, Puerto de Santa Maria, Chiclana). Images 2, 3, 5, 6 carry the symbol cipher with a contemporary interlinear plaintext in Spanish written in ink above every line (e.g. image 2 begins 'ha reunido sobre veinte mil hombres de toda arma', image 6 'mandado sacar de la Isla...'). The dispatches are therefore already deciphered on the leaves; the symbols on images 2-6 are the same family as the key sheet, so they are readable with it. Lead text 'no interlinear plaintext' was wrong. Not decoded in full."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE as far as a web search for DECODE plus Peninsular War/Cadiz 1811 shows (database needs login; known.py has no DECODE record).",
+   "tomokiyo": "No Cryptiana post on a Seville 1811 confidant cipher found (searched Tomokiyo Cryptiana plus Soult Seville 1811 Archivo Historico Nacional).",
+   "lasry": "No Lasry paper or GL.htm entry on this file found; Peninsular War cipher literature found is the French Great Paris Cipher (Scovell), a different system.",
+   "edition": "No edition found (Spanish and English searches for the confidant dispatches and ESTADO,3010 gave nothing); PARES catalogues it as 'Criptograma y mensajes cifrados remitidos por un confidente en Sevilla'.",
+   "literature": "Searches on Soult/Seville 1811 spy reports and the Regency found only the Gaceta's intercepted Soult letters of May 1811 and general siege-of-Cadiz history; nothing on this cipher."
+  },
+  "key_check": "Key sheet is in the file (image 1), contemporary and matching the symbols on images 2-6 by visual comparison of glyph shapes and the named marshals; marginal 'Soult', 'Victor', 'Mortier' notes sit by the corresponding nomenclator signs. No other key needed.",
+  "key_in_volume": "Image 1 of the same unit: alphabet and 15-item nomenclator. Tested only by visual match of glyph family and marginal name notes; not transcribed or decoded.",
+  "key_held": "None held in the repo.",
+  "duplicates": "known.py on 'ESTADO,3010', 'Soult Sevilla 1811', 'Cadiz 1812 Baena': only the lead and sweep files. targets/ has marmont1812 and ompteda1811 (French army ciphers, different system and side); no target on Seville 1811.",
+  "verdict": "read",
+  "closed": "Contemporary interlinear decipherment is written above the symbol lines on the leaves (images 2, 3, 5, 6 viewed) and the key sheet is filed with them; nothing left to break. Crib/key material at most."
+ },
+ "2443": {
+  "date": "2026-11-09",
+  "by": "claude vetting agent v12",
+  "seen": {
+   "kind": "scan",
+   "where": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/6354614 (images 1, 4, 5, 6 viewed 9 Nov 2026, zoom 10; 2-3 fetched)",
+   "extent": "Plain letter of 14 Feb 1812 (images 1-3), then 3 pages of dotted numeric cipher (images 4-6, about 18 lines each, roughly 55 lines, some 700 numbers), signed with a rubric on image 6.",
+   "cipher": "Handwritten numbers 1-28 joined by dots or hyphens in word-like runs, with frequent '14', '28', '22', '8', and groups like '9...' with a superscript number; looks like a monoalphabetic or homophone-light substitution with nulls and abbreviation marks. No plaintext, interlinear or marginal decipherment on any leaf viewed, no key in the unit."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE as far as web search shows (DECODE plus Peninsular War/Cadiz 1811-12 found nothing; known.py no record).",
+   "tomokiyo": "No Cryptiana post found on a Cadiz 1812 numeric letter.",
+   "lasry": "No Lasry work on this found (search Lasry Spanish Peninsular War cipher gave only Scovell/French material).",
+   "edition": "No edition found; searched 'Baena Bayon Cadiz 1812 carta cifrada' and PARES records, only an unrelated Baena letter surfaced.",
+   "literature": "Searches on Cortes de Cadiz 1812 cipher letters found only constitutional history; nothing on this letter."
+  },
+  "key_check": "No key found: none in the unit, none on DECODE or in the repo for a Baena/Cadiz 1812 nomenclator; nothing tried against it beyond reading the numbers.",
+  "duplicates": "known.py on 'BAENA,C.38', 'Cadiz 1812 Baena': only leads and sweep files. No target for Baena, Cadiz 1812 or Bayon in targets/ (grep of folder names).",
+  "verdict": "open"
+ },
+ "2444": {
+  "date": "2026-11-09",
+  "by": "claude vetting agent v12",
+  "seen": {
+   "kind": "scan",
+   "where": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/5928106 (images 1, 25, 26, 40 viewed 9 Nov 2026, zoom 10; 27 fetched)",
+   "extent": "Copybook of 53 images, Jan-Feb 1866, plain reports by a column commander with numeric passages: image 25 ends two reports with a 7-group string (61-64-38-92-29-60-64), image 26 has a block of about 9 lines of hyphenated 2-digit numbers inside a report, and short groups at the ends of reports on image 40; a few hundred numbers in all.",
+   "cipher": "Hyphenated 2-digit numbers (range seen 10-92), embedded in clear Spanish; same short groups recur at report ends (looks like a signature or code phrase). Contemporary clerk's copy; no decipherment, interlinear or marginal plaintext on any leaf viewed."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE as far as web search shows; known.py has no DECODE record.",
+   "tomokiyo": "No Cryptiana post found on a Spanish 1866 column-commander cipher.",
+   "lasry": "No Lasry work found on it.",
+   "edition": "No edition found; searched Taulet, Diversos-Colecciones 193, 1866 uprising in Catalonia.",
+   "literature": "Searches for Taulet and the January 1866 Prim rising in Catalonia found only general accounts of the Villarejo de Salvanes rising; nothing on this copybook or its cipher."
+  },
+  "key_check": "No key held or found (none in unit, DECODE or repo). Tests not run beyond reading.",
+  "duplicates": "known.py on 'DIVERSOS-COLECCIONES,193' and 'Taulet': only leads and sweep files. No 1866 Spanish military cipher target in targets/.",
+  "verdict": "open"
+ }
+}
