@@ -1,0 +1,25 @@
+azuares1837 - validation (contributor's pre-registered held-out test, not docs/_validate.py), 9 Nov 2026
+
+Protocol 1 (frozen/PREREG-2421.md): tables K3 and K5 learnt on views 03 and 05; held-out set H = cipher of view 12,
+designated before transcription and hashed. One measurement (frozen/MESURE-2421.json): M5 0.198 vs best of 200 shuffled
+tables 0.198 -> NEGATIVE (view 12 is under another table). View 12 burned; it is read by sense only.
+
+Amendment 01 (frozen/AVENANT-01.md, SHA-256 108e48b2..., frozen before any new decoding; hashes in frozen/AVENANT-01.sha256):
+- new passages of views 04, 06-11 transcribed before decoding (frozen/TRANSCRIPTION-2421-AV01.txt, 28cd1de3...);
+- 5 passages of >= 100 units; for each, A = first ceil(n/2) lines (learning), H = the remaining lines (never decoded);
+- one table per passage learnt on A only (annealing on Spanish 4-grams + hand edits on A), frozen
+  (frozen/KEY-2421-AV01.json, e210b4b8...) before any H was decoded;
+- one measurement per passage (frozen/measure_2421_av01.py, 87757f26...): share of H letters covered by lexicon words
+  (lang/lexicons/es.json.gz, frequency >= 20, words >= 3 letters, folded to 19th-century spellings v/b, y/i, x/j, z/c, ge/je);
+  controls: 200 shuffled tables per passage (seed 2421); correction for multiple comparisons: reference = MAX of all 1,000
+  controls (0.508), common to the five measurements; VALIDATED if M5 >= 0.60 and margin >= 0.30.
+
+Result (frozen/MESURE-2421-AV01.json; re-run 9 Nov 2026, identical):
+  P063 (06.17-23, H = 06.21-23, 68 units): M5 0.882, margin 0.374 -> VALIDATED
+  P062 (06.09-14, H 59 units): 0.559 -> negative      P081 (08.03-09, H 71): 0.676 -> negative
+  P092 (09.17-10.02, H 51): 0.392 -> negative        P112 (11.04-09, H 63): 0.476 -> negative
+The four negatives have short held-out halves (51-71 units) against a high corrected reference; their readings stay
+probable. All H burned after measurement. Views 03 and 05 were wholly decoded during the first attempt and cannot be measured.
+
+Use in the reading: only the P063 table (T6) is verified. Applied unchanged it reads P062, 06.05 and view 07 (pages 6-7);
+this is NOT a further measurement (P062's H is burned), but words read by it letter for letter are counted certain.

@@ -1,0 +1,203 @@
+{
+ "schema_version": 1,
+ "target": "azuares1837",
+ "title": "Manuel Azuares to the Carlist Secretary of State, London, 8 Sep 1837 (AHN Diversos-Colecciones 161 N.2): one table validated by our protocol, read in part",
+ "documents": [
+  {
+   "id": "ahn-dc-161-n2",
+   "read": "read in part",
+   "shelfmark": "Madrid, Archivo Histórico Nacional, DIVERSOS-COLECCIONES,161,N.2 (PARES 3735838), letter no. 780 (duplicate), views 03-12",
+   "date": "8 September 1837",
+   "year": 1837,
+   "country": "Spain",
+   "route": "Manuel Azuares, Carlist agent in London -> the First Secretary of State of the pretender Carlos V",
+   "places": {
+    "from": "London",
+    "to": "Carlist court (Spain)"
+   },
+   "language": "Spanish",
+   "pages": 12,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaves; the cipher runs are set in clear Spanish.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 1500,
+    "unit": "letters",
+    "measured": false,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "PARES images (AHN; reproduction licence not found, not reproduced)",
+    "image_quality": "good",
+    "notes": "One AI transcription on enlarged crops, before any decoding; the passages of views 06-11 were hashed before decoding. No human palaeographer."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "nomenclator"
+  ],
+  "summary": "Letter-for-letter substitution of Spanish in cursive letters (long s, round r like z, ll and ñ as single units), one table per group of pages (K3, K5, T6, T8, T9); a group x + l/z/g/h announces each change of table; a few digit groups for names.",
+  "symbol_kind": "letters",
+  "distinct_symbols": 25,
+  "diacritics": {
+   "used": false,
+   "note": "ñ and ll are cipher units, not marks"
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "names"
+   ]
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "none",
+  "notes": "Several tables in one letter; only T6 (pages 6-7) is verified."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment on the leaves; PARES describes the letter as partly in cipher but gives no decipherment; catalogue 2421 open, no key held; no target, issue or PR for Azuares, 2421 or Carlist ciphers on origin/main (GitHub API, 9 Nov 2026); no edition found in the vetting searches.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "first_date": "2026-11-09",
+  "last_date": "2026-11-09",
+  "human_role": "Brice Dudout chose the target and set the rules (held-out sets, thresholds and the measuring script frozen before decoding, one measurement each). AI agents transcribed, learned the tables, measured, read and wrote up. No human checked the transcription or the reading.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-11-09",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Tables K3 and K5 learnt on views 03 and 05; one measurement on view 12 (designated and hashed beforehand): 0.198 vs 0.198.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Amendment 01: passages of views 04, 06-11 transcribed and hashed before decoding; for five passages a table learnt on the first half only and frozen.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One measurement per passage on its held-out half, reference = best of 1,000 shuffled tables (0.508): P063 M5 0.882, margin 0.374, validated; P062, P081, P092, P112 negative (held-out halves of 51-71 units).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "reading",
+   "what": "Read by sense: 361 cipher words, 70 certain (verified table T6), 215 probable, 67 restored, 9 unresolved (78.9% without restorations).",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Tables recovered here by annealing on the cipher, with the clear words of the letter as context only; one of five passage tables (T6) validated by a pre-registered measurement on held-out lines. Key 'partial': K3, K5, T8, T9 not validated, indicator and digit groups not resolved.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.789,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "Daniel's rule (certain + probable; restored words not counted), counted by hand on decryption.txt: 361 cipher words, 70 certain, 215 probable, 67 restored, 9 unresolved = 285/361 = 78.9%.",
+  "verification": [
+   "statistical test",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-11-09",
+   "verdict": "weak",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): transcription, tables and measuring script frozen by SHA-256 before any held-out line was decoded; one measurement per passage, corrected for multiple comparisons (reference = best of 1,000 shuffled tables, 0.508). P063 validated (M5 0.882, margin 0.374); four other passages negative; first protocol on view 12 negative. Verdict weak overall: pass for table T6 (P063) only, fail for the four other passages; only table T6 is verified."
+  },
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "transcription, tables recovered (one validated on held-out lines, M5 0.882 vs 0.508), letter read in part (78.9%), translation",
+    "date": "2026-11-09"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "catalogue entry 2421 (Spain sweep of PARES, AHN Diversos-Colecciones) and its vetting",
+    "date": "2026-11-09"
+   },
+   {
+    "who": "ahn",
+    "role": "pointer",
+    "note": "Archivo Histórico Nacional: the letter (DIVERSOS-COLECCIONES,161,N.2), described on PARES as partly in cipher, images online on PARES (3735838)",
+    "date": "2026-11-09"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Tables K3, K5, T8, T9 not verified (their readings are probable only)",
+    "blocker": "too-short",
+    "detail": "held-out halves of 51-71 units were too short against the corrected reference; fresh cipher under the same tables, or a second human reader of the images, would settle them"
+   },
+   {
+    "item": "Five indicator groups (x + l/z/g/h) and five digit groups (4607229, 5071574925, 5344727605, 507, 403710131); 04.02 (18 units)",
+    "blocker": "open-codes"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "ahn-dc-161-n2",
+    "label": "letter no. 780, views 03-12: cipher runs in a clear letter",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.789,
+    "summary": "Azuares reports talks with the Austrian chargé d'affaires in London: Austria and Britain contemplate making Maria II an absolute queen and reviving the old Portuguese Cortes, with General Goblet guiding Prince Ferdinand, at the cost of Dom Miguel's rights; Lisbon would treat with Don Carlos once he reached Madrid; Azuares objects that this would recognise the usurpation.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "date": "2026-11-09",
+     "note": "Read as sentences 9 Nov 2026 by one AI reader, reviewed before publication (words absent from the cipher removed, doubtful words moved to unresolved, certain limited to the verified table). The cipher words construe as Spanish sentences inside the clear letter: 70 certain, 215 probable, 67 restored, 9 unresolved of 361 (78.9% without restorations), so read in part."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "Only column T6_verified of key.tsv is validated (CC BY 4.0); the other tables are given as found, not validated. No image of the AHN/PARES letter is included (licence not found)."
+ }
+}
