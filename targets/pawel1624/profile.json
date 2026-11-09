@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "pawel1624",
- "title": "Carl Pawel to Frederick V, King of Bohemia, 25 Nov 1624 (BSB Clm 10382 n. 46): the letter cipher is the casimir1629 alphabet moved by 3, rebuilt from the contemporary glosses and tested on a held-out page",
+ "title": "Carl Pawel to Frederick V, King of Bohemia, 25 Nov 1624 (BSB Clm 10382 n. 46): the letter cipher is the casimir1629 alphabet moved by 3, rebuilt from the contemporary glosses and tested on a held-out page; second document, BSB Clm 10419 (Andreas Pawel to Rusdorf, 1622-24), read with the same key unchanged (second held-out test 0.909 vs 0.221)",
  "documents": [
   {
    "id": "clm10382-n46",
@@ -36,6 +36,41 @@
     "source": "MDZ bsb00112117 scans 181-182 (microfilm, 1334 px, Public Domain Mark 1.0)",
     "image_quality": "fair",
     "notes": "The 17 runs of two-digit numbers (letters) with their glosses only. The 3-4 digit code groups, the signs and the clear German text are not transcribed. Scan 181 = training, scan 182 = held out."
+   }
+  },
+  {
+   "id": "clm10419",
+   "read": "read in part",
+   "shelfmark": "Munich, Bayerische Staatsbibliothek, Clm 10419 (Collectio Camerariana), letters of Andreas Pawel to Johann Joachim von Rusdorf (MDZ bsb00116467, scans 131, 181, 225, 283-284; also looked at: 40, 98, 190, 231)",
+   "date": "1622-1624",
+   "year": 1623,
+   "country": "Germany",
+   "route": "Andreas Pawel -> Johann Joachim von Rusdorf (Palatine envoy in London)",
+   "places": {
+    "from": "not read",
+    "to": "Johann Joachim von Rusdorf"
+   },
+   "language": "French",
+   "pages": 6,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Contemporary interlinear glosses over most cipher groups (letter runs and code groups).",
+    "partial": true
+   },
+   "length": {
+    "tokens": 116,
+    "unit": "symbols",
+    "measured": true,
+    "file": "clm10419_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "MDZ bsb00116467 (microfilm, 1296 px, Public Domain Mark 1.0; credit: München, Bayerische Staatsbibliothek)",
+    "image_quality": "poor",
+    "notes": "The 22 runs of two-digit numbers (letters) of scans 131, 181, 225, 283 and 284, with their glosses. The French clear text and the 3-4 digit code groups are not transcribed (code values read from glosses are listed in NOTES.md). Scans 283-284 = second held-out test."
    }
   }
  ],
@@ -80,7 +115,7 @@
    "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
   ],
   "first_date": "2026-11-05",
-  "last_date": "2026-11-05"
+  "last_date": "2026-11-09"
  },
  "solution": [
   {
@@ -113,6 +148,21 @@
    "kind": "reading",
    "what": "The only unglossed run, 16 59 66 38 20 22 60 17 on scan 181, reads 'geritten' ('zu ruck geritten'), where the glossator wrote 'zu rückh kommen'.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Second held-out test on a second document, BSB Clm 10419 (Andreas Pawel to Rusdorf): protocol hashed, then the numbers of scans 283-284 transcribed and hashed before their glosses were read; key.tsv unchanged. 15 glossed runs, 77 letters: 0.909 (70/77) against 0.221 for the best of 200 shuffled keys (margin 0.688). Without 4 runs whose gloss was partly glimpsed while cropping: 0.879 on 58 letters.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "reading",
+   "what": "Unglossed letter runs of Clm 10419 read with the key: fust (scan 225), bon and ex[p]res (scan 284), ?ura (scan 283). Daniel's count: 15 letters certain, 0 probable, 1 restored, 1 unresolved.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -129,17 +179,17 @@
    "statistical test"
   ],
   "validation": {
-   "date": "2026-11-05",
+   "date": "2026-11-09",
    "verdict": "pass",
    "file": "validation.txt",
-   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): protocol and key hashed before scan 182 was looked at; one measurement on scan 182 (2 glossed runs, 13 letters): 1.000 vs best of 200 shuffled keys 0.154. Thresholds fixed in advance: >= 0.85 and >= 0.30 above the best control. Limit: the held-out part has only 13 letters. Two numbers on scan 181 (181.14, 181.15) were re-read after the measurement; the key did not change."
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): protocol and key hashed before scan 182 was looked at; one measurement on scan 182 (2 glossed runs, 13 letters): 1.000 vs best of 200 shuffled keys 0.154. Thresholds fixed in advance: >= 0.85 and >= 0.30 above the best control. Limit: the held-out part has only 13 letters. Two numbers on scan 181 (181.14, 181.15) were re-read after the measurement; the key did not change. Second held-out test (9 Nov 2026) on another document, BSB Clm 10419 scans 283-284, key.tsv unchanged: 70/77 = 0.909 vs best of 200 shuffled keys 0.221; protocol and numbers hashed before the glosses were read; 4 runs with partial gloss exposure during cropping, 0.879 on 58 letters without them; one reader; 1296-px images."
   },
   "provenance": "mixed",
   "credits": [
    {
     "who": "contemporary",
     "role": "prior solution",
-    "note": "the interlinear decipherment written on the letter at the time; the shift of the key was fitted on it",
+    "note": "the interlinear decipherment written on the letter at the time; the shift of the key was fitted on it; also the interlinear glosses on Pawel's letters to Rusdorf (Clm 10419), used for the second test",
     "date": "1624"
    },
    {
@@ -153,6 +203,12 @@
     "role": "pointer",
     "note": "leads review batch b70 (4 Nov 2026) located n. 46 on scans 181-182 and vetted lead 2179",
     "date": "2026-11-04"
+   },
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "note": "second document, BSB Clm 10419 (Andreas Pawel to Rusdorf): letter runs and glosses of scans 131, 181, 225, 283-284; second held-out test of key.tsv (0.909 vs 0.221); unglossed runs read; date anomaly of scan 40 reported",
+    "date": "2026-11-09"
    }
   ],
   "gaps": [
@@ -170,6 +226,10 @@
    },
    {
     "item": "one reader (an agent) on a 1334 px microfilm; no human palaeographic check",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "Clm 10419: the 3-4 digit code groups have no key (values only from glosses); most of the 300 scans not transcribed; images 1296 px wide, one reader",
     "blocker": "not-attempted"
    }
   ],
@@ -191,9 +251,27 @@
      "by": "Claude Opus 5.5 agent for Brice Dudout",
      "date": "2026-11-05"
     }
+   },
+   {
+    "doc": [
+     "clm10419"
+    ],
+    "label": "Clm 10419 (scans 131, 181, 225, 283-284): letter runs with their contemporary glosses",
+    "transcription": "clm10419_transcription.txt",
+    "decryption": "clm10419_decryption.txt",
+    "language": "fr",
+    "state": "not prose",
+    "note": "A word list, not a running text: each run of two-digit numbers with the gloss written above it at the time and our decode with key.tsv. The French clear text and the code groups are not transcribed.",
+    "summary": "Andreas Pawel sends Rusdorf news in French: Nancy, Spanish alarm, the King of England's war and Parliament, the Palatinate, Count Digby's recall (scan 131); the Duke of Bavaria and the Electoral College, Mainz, Dresden, the Papists (scan 181); on scan 284, a setback ('l'eschec') in January, resources, 'diplomata', something 'irreconcilable', the Swiss and the peace, troops on foot and on horse, and the King of England 'did the same'. Drawn from the glosses and the legible clear text.",
+    "reading_review": {
+     "grade": "B",
+     "note": "Letters glossed at the time checked against the key, run by run; bare runs: 15 letters certain, 1 restored, 1 unresolved; nomenclator codes unread; French clear text not transcribed. One reader.",
+     "by": "Claude Opus 5.5 agent for Brice Dudout",
+     "date": "2026-11-09"
+    }
    }
   ],
   "key_file": "key.tsv",
-  "notes": "The letter was deciphered at the time (interlinear glosses), so we claim no reading and no solution. New: the letter key as a reusable table; the finding that it is the casimir1629 alphabet moved by 3 (a family of Palatine keys with a movable origin); and one unglossed run read."
+  "notes": "The letter was deciphered at the time (interlinear glosses), so we claim no reading and no solution. New: the letter key as a reusable table; the finding that it is the casimir1629 alphabet moved by 3 (a family of Palatine keys with a movable origin); and one unglossed run read. Second document (9 Nov 2026): BSB Clm 10419, Andreas Pawel to Rusdorf, read with key.tsv unchanged; second held-out test 0.909 vs 0.221."
  }
 }
