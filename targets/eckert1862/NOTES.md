@@ -210,6 +210,14 @@ are not counted as read.
   detail, and gives one example from No. 12 (key word "Blonde").
 - The target stays in progress: pp. 8-400 are open, so this contribution does not make the target finished.
 
+### The February 1862 filling: eleven code words (William Echols, issue #352, 9 Nov 2026)
+
+William Echols (who worked with OpenAI's GPT-6.1 Sol in Codex) read two McClellan to Halleck telegrams of 14 Feb 1862 (2 PM and 11 PM, mssEC 15 pp. 27 and 28) by matching other ledger telegrams to the printed texts in the Official Records, series I, vol. VII. His values are in `key_1862_echols.tsv`: Alden = Halleck, Alvord = Buell, Saffron = Columbus, Andes = McClellan (already identified above), Myrtle = Cumberland, Mary = Tennessee, widow = reinforcements, Legend = Kentucky, Koran = Ohio, Bremen = Grant, Lonesome = Tennessee. His transcription of the two telegrams agrees with this folder's transcription of mssEC 15 (`transcription/mssEC15.txt`, pp. 26-28), which is the volunteers' text.
+
+Checked here, against that transcription only: applying the eleven values to pp. 26-28 reads as sense. The 2 PM telegram to Alvord (p. 26) is closely parallel to the one to Alden (p. 27) and, with the values, asks Buell what reinforcements have been sent from Kentucky "to the expeditions up the Cumberland and Tennessee" and reports that ten thousand muskets are ordered "to Columbus, Ohio"; the 11 PM pair (p. 27 and p. 28) asks for the position and "intentions in regard to Tennessee", "what have you from Columbus". The parallel wording supports the values, since two telegrams with different names but the same sentences decode with the same words. Not checked here: the printed Official Records pages he cites (archive.org and the Huntington images are not reachable from the project), and the telegrams outside 14-16 Feb 1862. The final words Sarah and Francis are kept as apparent transmission words, as he suggests; they also stand after the signature of the companion telegram.
+
+The class of the target does not change (still in progress; the 1864-65 Book #1 filling above is a different one from this February 1862 filling).
+
 ### Files (this contribution)
 
 - `transcription/mssEC19_p1-7.txt`: the volunteers' transcription of pp. 1-7, with page and telegram markers.
