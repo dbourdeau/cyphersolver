@@ -155,8 +155,8 @@ Folders: `sweep_2026-11_A_halfdone`, `sweep_2026-11_B_unswept_south`, `sweep_202
 
 ## Sweeps of 9 Nov 2026
 
-Folders: `sweep_2026-11_*` as named. 35 leads merged (2414-2448; see `merged.json`); 26 promoted to the catalogue the same day
-(1270, 1271, 2415, 2416, 2421-2425, 2427-2430, 2432, 2433, 2436, 2438-2441, 2443-2448; vetting blocks in `vetting_2026-11_nov9/`).
+Folders: `sweep_2026-11_*` as named. 50 leads merged (2414-2463; see `merged.json`); 34 promoted to the catalogue the same day
+(1270, 1271, 2415, 2416, 2421, 2422, 2423, 2424, 2425, 2427, 2428, 2429, 2430, 2432, 2433, 2436, 2438, 2439, 2440, 2441, 2443, 2444, 2445, 2446, 2447, 2448, 2450, 2451, 2455, 2457, 2458, 2459, 2460, 2463).
 
 - **Productive routes:** PARES full text with a century facet and `catalogo/contiene/<series id>` child listings on the Carlist and Peninsular
   War series (`spain_nobility_aca`, `pares_diversos_19c`); Mírka's Crypto-World survey of the Plzeň family archives and Antal et al.
@@ -176,3 +176,5 @@ Folders: `sweep_2026-11_*` as named. 35 leads merged (2414-2448; see `merged.jso
   (Noord-Hollands 430 of 2726, Groninger 450 of 2794); Hungarian MNL (503).
 - **BNE Digital:** the lead-vetting agent opened BNE Digital in Chrome (single leaves, for leads 1270 and 1271) although this file says not to
   retry it. It worked; nothing was fetched in bulk. Ask before any larger use.
+
+- **Late sweeps:** the cataloguers' own "undeciphered" notes (`undeciphered_phrases`: Hungaricana `sifrír* NOT Türkei`, 7 rows, 4 promoted) and a Chrome pass on Latvian, Estonian and Hungarian sources (`baltic_hungary_chrome`). Latvian State Historical Archive, Riga city archive, Tartu and DIGAR stay unreachable.
