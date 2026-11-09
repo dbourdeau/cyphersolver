@@ -23,3 +23,24 @@ DECISION: VALIDATED
 # a gloss written "victix" for victrix, and an added h in a gloss (rückh).
 # After the measurement (H spent): 181.14 re-read 78 30 63 20 61 (not 26) = solte, 181.15 re-read 64 59 38 25 (not 33) = leib; both now
 # agree with the glosses. Declared here and in transcription.txt; the frozen key and the measurement are unchanged.
+
+# ===== Second held-out test, 9 Nov 2026: another document, BSB Clm 10419 (Andreas Pawel to J. J. von Rusdorf, 1622-24) =====
+# Protocol (French working file PREREG-R2.md, SHA-256 a1d72c1d...), hashed before any crop of the held-out scans was made.
+# - Key: key.tsv as published here (SHA-256 5739da40...), with no change and no fitted parameter.
+# - Held out (H2): every run of two-digit numbers carrying a contemporary gloss on MDZ bsb00116467 scans 283-285 (285 has none).
+# - Order kept: numbers transcribed and hashed first (135f2882...), then the glosses read and hashed (4cabc0f0...), then ONE measurement.
+# - Normalisation: u=v, i=j=y; accents and case ignored. A number not in the key, or read "?", counts as wrong.
+#   Gloss letters illegible at 1296 px are excluded (13 positions: runs 284.12 and 283.03 entire, 3 single letters).
+# - Controls: 200 keys made by permuting the letters among the numbers of the key. Thresholds as before: >= 0.85 and >= 0.30 above the best control.
+# Result as recorded (H2_MESURE.json):
+H2 runs 15, letters 77
+key.tsv unchanged: characters 0.9091 (70/77)  (whole runs 0.60)
+best of 200 controls: characters 0.2208
+margin 0.688
+DECISION: VALIDATED
+# The 7 misses: 75 -> m glossed s (ressource); 78 -> s glossed i twice (diplo-, marice: probably 38 = i misread, 3 and 7 look alike at
+# this resolution); 37 -> c glossed n (irrecon-); 70 -> y glossed s (asse-); 17 -> n glossed e (faire); one illegible number.
+# The key was not changed after the measurement.
+# DECLARED LEAK: while the line bands were being cropped (before the numbers were transcribed), fragments of the gloss were glimpsed
+# on 4 runs (284.01, 284.03, 284.11, 284.14). Without those 4 runs: 11 runs, 58 letters, 0.879 -- still above 0.85.
+# LIMITS: one reader (an agent); native images 1296 px wide (digits about 12 px), slanting lines; the images are of a microfilm.
