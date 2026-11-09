@@ -1,0 +1,46 @@
+{
+ "2436": {
+  "date": "2026-11-09",
+  "by": "claude vetting batch v10",
+  "seen": {
+   "kind": "scan",
+   "where": "LWL scans of Ber.A M 20 (1998 microfilm), https://www.lwl.org/325dig-download/Lesesaal-Digitalisate/C_Adelsarchive/Ber/Ber.A/Ber.A_M%2020/Ber.A_M%2020_NNN.jpg, leaves 008, 009, 010, 011, 012 viewed (also 003, 030 by the sweep)",
+   "extent": "Leaf 008: about 2 lines of numeric groups (e.g. 143 181 114 190 196 ... 312 ... 216) above a French closing dated Paris 16 April 1801, signed 'le Baron de Reube/Neube' (reading uncertain), mentioning Cobenzl and Lucchesini. Leaf 009: about 9 lines of three-digit groups interleaved with German plaintext lines. Leaf 010 closes that letter, Paris, 2 June 1807. Rest of the 234 images not paged.",
+   "cipher": "Three-digit numeric groups from a small set (about 25 distinct values, 110-320, with 114, 190, 196, 312, 216 very frequent), i.e. a letter- or syllable-sized number substitution, written in lines that alternate with German plain text on leaf 009 (the German lines are an ordinary covering letter, not an interlinear decipherment). Leaves 011-012 are a plain French report to 'Madame' (Nr. 6, Portugal expedition, so 1807). No decipherment or key sheet written on or with the leaves seen. The file therefore runs at least 1801-1807, not only 1801-02."
+  },
+  "prior_art": {
+   "decode": "Searched DECODE/HistoCrypt pages by name (Berleburg, Wittgenstein, Paris 1801): no record found; DECODE itself not queried by shelfmark here (its search needs the cookie).",
+   "tomokiyo": "Web search for Tomokiyo/cryptiana with Berleburg, Wittgenstein, Paris 1801 cipher: nothing found.",
+   "lasry": "Web search (Lasry, Berleburg/Wittgenstein/Paris cipher 1801): nothing found.",
+   "edition": "Searched Berleburg 'Pariser Korrespondenz' Chiffren and the Reube/Neube writer with Lucchesini/Cobenzl: no edition or calendar entry found (Archivportal/DDB hits unrelated).",
+   "literature": "Three web searches (shelfmark/title, correspondent name, Wittgenstein Paris 1801): no study of this correspondence or its cipher found."
+  },
+  "key_check": "No key seen in leaves 008-012; none located for the Berleburg archive in the finding aid or online. The repo's Lucchesini key (AA 0606a) belongs to another correspondence and was not tested. Rest of the 234 images not paged for a key sheet.",
+  "duplicates": "known.py on 'Ber.A', 'Berleburg', 'Sayn-Wittgenstein', 'Paris' hits only this lead and the sweep files; Reube/Neube not in catalogue; no DECODE duplicate found.",
+  "verdict": "open"
+ },
+ "2437": {
+  "unvetted": "Leaf 001 and 003 of Cap.C.I S 1199,11 viewed: German salutation + two lines, then about 16-19 lines of 3-4 digit dot-separated groups (300-3100, many with dash/tick marks), no plaintext between, no decipherment on the leaves; verso 002 blank with 'Steinsches Archiv' stamp. But the printed-edition check could not be done: Botzenhart 'Briefwechsel' II (1931), Stein 'Briefe und amtliche Schriften' / 2015 De Gruyter 'Briefwechsel' (section Nov 1808), Pertz and Niebuhr 'Lebensnachrichten' are not online/readable here (web searches x4 found no text, DECODE/Tomokiyo/Lasry no hit). A printed decipherment is plausible, so not promotable until a volume is checked."
+ },
+ "2438": {
+  "date": "2026-11-09",
+  "by": "claude vetting batch v10",
+  "seen": {
+   "kind": "not online",
+   "where": "Landesarchiv NRW finding aid, Hin.A.Ak 2344 and key 2346 (links in lead); no digital object on either record",
+   "extent": "1751-1754 file; extent not stated in the finding aid",
+   "cipher": "Archive title: 'Briefwechsel Hermann Werners mit dem preussischen Minister von Podewils, teils chiffriert' (1751-1754); item 2346 'Chiffrenschluessel Hermann Werner von der Asseburg', 1751. No leaf seen."
+  },
+  "prior_art": {
+   "decode": "Searched DECODE/HistoCrypt pages for Asseburg, Podewils, Hinnenburg: no record found.",
+   "tomokiyo": "Web search Tomokiyo/cryptiana + Asseburg Podewils: nothing found.",
+   "lasry": "Web search Lasry + Asseburg Podewils cipher: nothing found.",
+   "edition": "Politische Correspondenz Friedrichs des Grossen (friedrich.uni-trier.de) lists only royal letters to H. von Podewils (1751, 1755); no Asseburg exchange or decipherment found. Asseburg's published memoirs not checked online.",
+   "literature": "Three searches (Asseburg+Podewils+chiffriert, Hinnenburg Findbuch, Chiffrenschluessel): only GStA Rep. 96 Nr. 435 A 5 (petition 1758-66) and unrelated Asseburg records in Sachsen-Anhalt; no study of the cipher."
+  },
+  "key_check": "Key 2346 is filed in the same fonds (Hinnenburg Akten) but is not digitised, so it was not tested; neither item has a known decipherment.",
+  "key_in_volume": "Hin.A.Ak 2346 'Chiffrenschluessel' (1751) in the same Bestand, not digitised, not tested.",
+  "duplicates": "known.py on 'Hin.A.Ak', 'Hinnenburg', 'Asseburg', 'Podewils': only this lead (catalogue Asseburg hit is the Brunswick Nr. 549 Strasser item, a different person/century); no DECODE duplicate found.",
+  "verdict": "open"
+ }
+}
