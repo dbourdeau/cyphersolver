@@ -12,7 +12,7 @@ Nr. 85: "Korrespondenz der Sachsen-Altenburgischen und Sachsen-Coburgischen Gesa
 Dr. August Carpzov mit Johann Friedrich von Brand und Herzog Friedrich Wilhelm II.", Osnabrück 1645-1651.
 - Image **0003**: "Chiffreschlüssel Thumbshirns", a signed key, simple substitution (24 letters, numbers 1-52), with the note
   that the numbers are written "continuirlich serie" so that words cannot be guessed (`key_0003.tsv`).
-- Letters of **13 Nov - 25 Dec 1647** with cipher passages in a homophonic system (2-3 numbers per letter, 5 to 90) and, for
+- Letters of **13 Nov - 25 Dec 1647** with cipher passages in a homophonic system (2-3 numbers per letter, 1 to 90) and, for
   each, a decipherment of the time on a slip (0549, 0559, 0571, 0581, 0599, 0605): existing.
 - **Image 0837 (fol. 399)**: an undated postscript (late 1648 / early 1649) with one cipher sentence in the key-0003 system and
   no decipherment: the new text.
@@ -20,7 +20,7 @@ Dr. August Carpzov mit Johann Friedrich von Brand und Herzog Friedrich Wilhelm I
 ## The keys
 
 `key_1647.tsv`: rebuilt from the decipherments of 13 Nov, 17 Nov, 22 Dec and 25 Dec 1647, aligned number by number
-(`frozen/BUILD-PAIRES.tsv`), 49 values, majority vote; no serious contradiction. `key_0003.tsv`: the period key sheet,
+(`frozen/BUILD-PAIRES.tsv`), 48 values, two of them (41 and 52) from key 0003, majority vote; no serious contradiction. `key_0003.tsv`: the period key sheet,
 transcribed and hashed before any decoding; it does not read the 1647 letters (0.13 on the held-out letter, chance level).
 
 ## Validation (`validation.txt`)
@@ -32,7 +32,7 @@ for 200 shuffled keys (margin 0.721), coverage 99.8%: **validated**. Remaining d
 ## Reading (`reading_0837.md`)
 
 "O miseros {nos} servos. Gott weis und hat meine {Zehr[e]n} {geseh[e]n}, die ich bereit viel vergos[s]en üb[e]r der
-schandlich[e]n Servitut, darein wier geführet." 23 words: 20 certain, 3 probable (two numbers under stains), 0 restored,
+schandlich[e]n Servitut, darein wier geführet." 23 words: 20 certain, 3 probable (three numbers marked uncertain in the transcription), 0 restored,
 0 unresolved. Declared deviation: read with key 0003 unchanged and by sense; the pre-registered test measured the other system.
 
 ## Prior work (re-checked 9 Nov 2026)
