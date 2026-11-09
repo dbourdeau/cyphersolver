@@ -233,7 +233,8 @@
    ],
    "what": "Lead from research/patterns/DEEPER.md: Stafford's Walsingham cipher of 1586 (harley1582r8500/key.tsv) compared with the R4844 sign words. Only 35 of 131 signs (26%) have a Stafford sign label, and the frequent word-initial signs (□, ≠, ÷) are absent from that alphabet. Ruled out at the label level; a glyph-by-glyph check needs the R4844 images (DECODE login).",
    "result": "ruled out"
-  }
+  },
+  {"date": "2026-11-09", "kind": "sibling key", "technique": ["statistical test"], "what": "Sign alphabet learnt on the glossed sign words of the deciphered pairs DECODE R4689, R4835, R4836 (Add MS 32657); one pre-registered held-out test on R4845 (29 words, 178 letters, transcribed blind and glossed by separate agents): 0.646 vs best of 200 shuffled keys 0.213, partial; R4844 sign words read in part (16 of 19 groups); name codes 3 (the Queen / England, not France), 14 (Leicester), 27 (the Secretary), 37 (Scotland) from the pairs' glosses (dudout/README.md; Brice Dudout / Claude).", "result": "partial"}
  ],
  "outcome": {
   "validation": {
@@ -284,7 +285,9 @@
     "role": "key or decipherment used",
     "note": "CSP Scotland viii (1914) glosses of the name code (19, 24, 39, 40; 20 Morton)",
     "date": "1914"
-   }
+   },
+   {"who": "dudout", "role": "transcription", "date": "2026-11-09", "source": "DECODE R4689, R4835, R4836, R4845, R4844", "note": "sign words of the deciphered pairs with their glosses; sign key partial on held-out R4845 (0.646 vs 0.213); R4844 sign words read in part, 16 of 19 groups (dudout/)"},
+   {"who": "dudout", "role": "key corrected", "date": "2026-11-09", "source": "glosses of DECODE R4689, R4835, R4836", "note": "name code: 3 = the Queen / England (was France, M), 14 = Earl of Leicester, 27 = the Secretary, 37 = Scotland (dudout/name_codes.md)"}
   ],
   "parts": [
    {
@@ -304,8 +307,9 @@
   ],
   "texts": [
    {"doc": "R4840", "label": "R4840, Add MS 32657 ff. 163-164, the Court, 21 Aug 1585", "transcription": "reading_R4840.txt", "decryption": ["reading_R4840.txt", "clear_gaps_pass2.md"], "summary": "Walsingham warns Edward Wotton, ambassador to James VI, that the Master of Gray [39] complains of Wotton's coldness and offers proof of his devotion if the banished lords join Maxwell [20] on the Borders, lest the King be carried away from England while the French party grows; Walsingham advises dealing warily with them all. The letter is clear English with a two-digit name code; clear_gaps_pass2.md holds the 14 Oct 2026 gap readings and nine corrections not yet merged.", "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading_R4840.txt reads as English sentences with the name codes glossed (39, the Master of Gray, complains of your countenance towards him ...; the King to be carried away from England; press the imprisonment of Farnihurst). The [..] are clear-text places illegible on the image, most resolved in clear_gaps_pass2.md, not cipher holes; two codes (27, 40) partly glossed. Audit grade C refined for R4840."}, "state": "read", "language": "en", "read_share": 0.957},
-   {"doc": "R4844", "label": "R4844, Add MS 32657 ff. 194-195, the Court, 10 Sep 1585", "transcription": ["reading_R4844.txt", "reading_R4844_r2.txt", "texts/R4844_sign_words.md"], "decryption": ["reading_R4844_r2.txt", "clear_gaps_pass2.md"], "summary": "Walsingham to Wotton on the articles set down by the Master of Gray, the banished lords and Arran, with about fourteen words in a separate sign alphabet that stay unread (Wotton's interlinear decipherment is blotted out); a postscript says a go-between [23] deals between the King and the Jesuits.", "note": "Re-read 22 Oct 2026 (texts/R4844_reread_log.md): no decipherment exists (Wotton’s interlinear one is blotted), CSP Scotland viii does not calendar the letter, and the DECODE images are behind the login and not in the checkout. The 14 Oct gap readings (clear_gaps_pass2.md) were merged into reading_R4844_r2.txt (_check_reading 0.45 -> 0.50), but every sentence of the body still carries a sign word (11 groups, about 120 signs, homophonic with nulls, no crib, no key: too short) or an open name code (13, 14, 23, 30, 32, 37). Fragments only.", "state": "decoded, not read", "language": "en"}
+   {"doc": "R4844", "label": "R4844, Add MS 32657 ff. 194-195, the Court, 10 Sep 1585", "transcription": ["reading_R4844.txt", "reading_R4844_r2.txt", "texts/R4844_sign_words.md"], "decryption": ["reading_R4844_r2.txt", "clear_gaps_pass2.md"], "summary": "Walsingham to Wotton on the articles set down by the Master of Gray, the banished lords and Arran, with about fourteen words in a separate sign alphabet that stay unread (Wotton's interlinear decipherment is blotted out); a postscript says a go-between [23] deals between the King and the Jesuits.", "note": "Re-read 22 Oct 2026 (texts/R4844_reread_log.md): no decipherment exists (Wotton’s interlinear one is blotted), CSP Scotland viii does not calendar the letter, and the DECODE images are behind the login and not in the checkout. The 14 Oct gap readings (clear_gaps_pass2.md) were merged into reading_R4844_r2.txt (_check_reading 0.45 -> 0.50), but every sentence of the body still carries a sign word (11 groups, about 120 signs, homophonic with nulls, no crib, no key: too short) or an open name code (13, 14, 23, 30, 32, 37). Fragments only.", "state": "decoded, not read", "language": "en"},
+   {"doc": "R4844", "label": "R4844 sign words read with the key from the deciphered pairs (Brice Dudout)", "transcription": "dudout/reading_R4844_signs.md", "decryption": "dudout/reading_R4844_signs.md", "state": "read in part", "language": "en", "read_share": 0.86, "summary": "Walsingham to Wotton, 10 Sep 1585: the Master of Gray's plot is to be judged; the Queen will not make herself a party; no violent course; Wotton is to be absent at the attempt, keep his train at Stirling and avoid suspicion; a postscript on Lord Scrope's letter about the secret plot, not kept secret enough.", "note": "16 of 19 sign groups read, 3 unresolved; about 86% of the sign letters read for sense (about 84% without the 2 restored letters); key partial by our protocol (0.646 vs 0.213 on held-out R4845).", "reading_review": {"grade": "B", "by": "Brice Dudout (with Claude)", "date": "2026-11-09", "note": "the sign words read as words in the clear sentences of R4844; coherent but with three gaps and several probable words"}}
   ],
-  "key_file": "texts/key.md"
+  "key_file": ["texts/key.md", "dudout/sign_key.tsv"]
  }
 }

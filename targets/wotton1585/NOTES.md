@@ -92,3 +92,9 @@ R4844) is in [walsingham1585](../walsingham1585/NOTES.md).
 - [x] print: CSP Scotland viii calendars the despatches (no. 106 for 1 Sep)
 - [n/a] key-rebuild: no cipher
 - [x] retry: 22 Oct 2026 (b16) the three drafts transcribed in full and read; DECODE records re-fetched (nothing new); CSP viii retried (unreachable)
+
+## Note, 9 Nov 2026 (Brice Dudout): name code 3
+
+The deciphered pairs in Add MS 32657 (DECODE R4689, R4835, R4836) gloss **3 as the Queen / England** ("Her Ma^tie", "the Q.",
+"Eng:"), not France; also 14 = Earl of Leicester, 27 = the Secretary, 37 = Scotland. Details in
+`../walsingham1585/dudout/name_codes.md`; texts/key.md not edited.

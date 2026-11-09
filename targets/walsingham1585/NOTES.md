@@ -148,3 +148,13 @@ with numbers glossed. R4838 and R4839 are left to CSP nos. 40 and 65, checked ag
 ## 2026-10-23: lead from the profile mining
 
 Lead from research/patterns/DEEPER.md: Stafford's Walsingham cipher of 1586 (harley1582r8500/key.tsv) compared with the R4844 sign words. Only 35 of 131 signs (26%) have a Stafford sign label, and the frequent word-initial signs (□, ≠, ÷) are absent from that alphabet. Ruled out at the label level; a glyph-by-glyph check needs the R4844 images (DECODE login).
+
+## Contribution, 9 Nov 2026 (Brice Dudout, with Claude): the sign alphabet and the name code from the deciphered pairs
+
+See `dudout/README.md` (text only, no image). The same sign alphabet is deciphered at the time in DECODE R4689, R4835,
+R4836, R4837 and R4845 (Add MS 32657). A key learnt on R4689, R4835 and R4836 scored 0.646 (best of 200 shuffled keys
+0.213) on held-out R4845: partial by the protocol fixed in advance. With it the R4844 sign words read in part: 16 of 19
+groups (plot, judgment, her selfe, violent course, absent, attempt, traine, Stirling, suspicion, Lorde, Scroupe, secreat,
+plot, secrecy), 3 unresolved (`dudout/reading_R4844_signs.md`). Name code from the pairs' glosses
+(`dudout/name_codes.md`): **3 = the Queen / England** (texts/key.md has "France", M), 14 = Earl of Leicester, 27 = the
+Secretary, 37 = Scotland.
