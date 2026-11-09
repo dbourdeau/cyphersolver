@@ -26,3 +26,9 @@ jobs:
         env:
           PYTHONUTF8: '1'
         run: python docs/_check_writeup.py --gate
+      - name: Smoke tests for the shared code (lang/, checkers, ledgers)
+        env:
+          PYTHONUTF8: '1'
+        run: |
+          pip install -q -r requirements.txt
+          python -m unittest discover tests
