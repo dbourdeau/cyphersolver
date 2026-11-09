@@ -1,0 +1,117 @@
+{
+ "schema_version": 1,
+ "target": "poinsett1811",
+ "title": "Joel R. Poinsett to the Secretary of State, Buenos Aires reports 'part(s) in cipher', 10 May, 25 Jul, 30 Jul 1811 (HSP Poinsett Papers)",
+ "documents": [
+  {
+   "id": "A",
+   "shelfmark": "Historical Society of Pennsylvania, Poinsett Papers (Gilpin collection), vol. 1 per the list heading (catalogue brief says vol. 4); list filmed in NARA M37 roll 2 frames 0020-0022",
+   "date": "1811-05-10; 1811-07-25; 1811-07-30",
+   "year": 1811,
+   "country": "United States",
+   "route": "Buenos Aires to Washington (Robert Smith, Secretary of State)",
+   "language": "English",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Only the typed list of report summaries (NARA M37-02 0022) is seen; no decipherment or clear copy known.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "good",
+    "notes": "Nothing transcribed: the cipher passages themselves are not online. Only the list was read; it marks the three entries 'Part in cipher' / 'Parts in cipher'."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "unknown: the cipher passages have not been seen.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "not applicable",
+  "notes": "symbol_kind and key_order are placeholders; nothing about the system is known."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "unknown",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [],
+  "attack": "none",
+  "human_role": "Pasted the catalogue task; then asked to close it as blocked on access.",
+  "tools": [
+   "NARA catalogue API (digitalObjects)",
+   "web search"
+  ],
+  "models": [
+   "claude-sonnet-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Two web searches (Poinsett 1811 despatch in cipher; Manning 1925 on copies returned to Poinsett 1818). No decipherment or edition found; Manning vol. 1 and HathiTrust full text not searched.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "NARA record 213803757 lists 1058 digital objects; downloaded M37-02 frames 0019-0023 and read 0020-0022: the typed list marks the three entries as partly in cipher. Heading says bound in vol. 1, not vol. 4. No cipher groups on the film.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "HSP vol. 1 not digitised that could be found; Department copies were returned to Poinsett in 1818 per the catalogue note. Closed as blocked on access.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "offline only",
+  "key": "none",
+  "method": "not applicable",
+  "verification": [
+   "none"
+  ],
+  "contribution": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "all three reports (10 May, 25 Jul, 30 Jul 1811)",
+    "blocker": "needs-physical-access",
+    "detail": "cipher passages are in HSP Poinsett Papers vol. 1, not digitised"
+   }
+  ],
+  "notes": "Not attempted on the ciphertext: it could not be reached. Next step is an HSP request for the three reports."
+ }
+}

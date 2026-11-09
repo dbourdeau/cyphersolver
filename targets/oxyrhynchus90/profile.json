@@ -1,0 +1,138 @@
+{
+ "schema_version": 1,
+ "target": "oxyrhynchus90",
+ "title": "P.Oxy. I 90 (BL Pap. 761), the two non-Greek lines under a granary receipt, 179-180 AD",
+ "documents": [
+  {
+   "id": "lines6-7",
+   "shelfmark": "London, British Library Pap. 761 (P.Oxy. I 90, P.Lond. III p. XXXII no. 761; TM 20749)",
+   "date": "179-180 AD (30 Aug 179 in Trismegistos)",
+   "year": 179,
+   "country": "Egypt",
+   "route": "Oxyrhynchus, sitologos receipt",
+   "language": "unknown",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No reading found. Grenfell and Hunt (1898): written in Greek letters but cannot be construed as Greek; Kenyon (1907) tried and failed. N. Litinas, 'A Riddle, Wrapped in a Mystery, Inside an Enigma', ZPE 227 (2023) 145-148, is listed under this papyrus in HGV; not seen (JSTOR does not carry it yet)."
+   },
+   "length": {
+    "tokens": 48,
+    "distinct": 17,
+    "unit": "letters",
+    "measured": true,
+    "file": "lines.txt"
+   },
+   "transcription": {
+    "by": "published",
+    "source": "Grenfell and Hunt, P.Oxy. I (1898) p. 153, as printed in the edition image on en.wikipedia (File:P.oxy.90.possible.cryptogram.png, public domain); lines.png",
+    "image_quality": "fair",
+    "notes": "Line 1 starts [.] . then dotted iota; line 2 starts [. .]. The ends of line 1 (rho, lambda, alpha, omega) are dotted, so uncertain. The 48 letters exclude the lacunae. The OCR of the 1898 volume gave a different, wrong letter string; the image is the source. No photograph of the papyrus was reached (BL viewer and manifest refused)."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "Two lines of Greek letters at the foot of a Greek receipt, no word division, which the editors could not construe as Greek and suggested might be a cryptogram.",
+  "symbol_kind": "letters",
+  "distinct_symbols": 17,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "none",
+  "notes": "Statistics point away from a substitution cipher: both lines score as Greek under an unshifted Greek bigram model, and every Caesar shift, Atbash and reversal scores worse. Whether the lines are Greek in idiosyncratic spelling, another language in Greek letters or a scribal exercise is open."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "where": "Litinas, ZPE 227 (2023) 145-148, may treat the lines; content not seen. Wikipedia and HGV record no decipherment.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "transcription"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Set the goal 'decipher Papyrus Oxyrhynchus 90'; no other intervention.",
+  "tools": [
+   "Greek bigram model (Homer and Xenophon from Perseus)",
+   "dynamic-programming word segmentation over the same corpus with itacism collapsed"
+  ],
+  "models": [
+   "claude-sonnet-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-09",
+  "last_date": "2026-11-09"
+ },
+ "solution": [
+  {
+   "date": "2026-11-09",
+   "kind": "literature search",
+   "what": "Papyri.info (HGV 20749, DDbDP), Wikipedia, archive.org OCR of P.Oxy. I: the current DDbDP edition omits the two lines; the 1898 edition calls them a possible cryptogram; Kenyon 1907 failed; Litinas ZPE 227 (2023) found only as a title in his CV.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "access",
+   "what": "Papyrus image from the BL viewer and the bl.digirati.io manifest (ark vdc_100147463086): both refused (403 AccessDenied; viewer error page).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "transcription",
+   "what": "Took the two lines from the edition image on en.wikipedia; the archive.org OCR of the volume had misread letters (plovoreperepoun...).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "statistics",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ],
+   "what": "Greek bigram score of the lines as written, all 24 Caesar shifts, Atbash and reversal, against a shuffled-letter baseline.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "hypothesis",
+   "technique": [
+    "beam/DP decoding",
+    "statistical test"
+   ],
+   "what": "Word segmentation over a Homer and Xenophon word list with itacism collapsed (ei/eta/iota, oi/upsilon, ai/epsilon, omega/omicron); control on shuffled letters: line 1 beats all 150 shuffles, line 2 beats 149 of 150.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "The lines behave statistically as Greek, not as a substituted text; the best segmentations (line 1 'hemeion hote me emoi isa para laoi', line 2 'hemon eti ek ate epe die tous') are not checked against any edition or reader and do not make sense yet.",
+  "contribution": [
+   "none"
+  ],
+  "class": "not read",
+  "fraction_read": 0,
+  "verification": [
+   "none"
+  ],
+  "notes": "Next: the Litinas article, a photograph of BL Pap. 761, and a papyrologist's reading of the hand."
+ }
+}

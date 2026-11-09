@@ -154,6 +154,10 @@ Charles: 13 May 1549 `0dbb01cc-7d7a-4aac-b3a8-0b6713c56416`; 14 Nov 1549 `bf3cf8
 
 The two blind decryption files are unrepaired decodings of a rough shape pass and keep that reader's errors.
 
+## Session of 6 Nov 2026 (no status change)
+
+Catalogue 1561 was reopened with the aim of reaching the read bar. Nothing moved. c. 10r lines A1-A4, B1-B2, B4-B5 and c. 28r D1-D4 were viewed again at 0.55-0.62 scale (tiled IIIF crops, left and right halves). On c. 10r every line compared with `transcription_1548_c10r.txt` agrees to the eye; that look came after the transcription, so it is not an independent pass and does not lift the status. A fresh sign-by-sign pass of the 1546 letter (cc. 5r-5v, about 23 cipher lines of about 28 signs) was started and stopped after line 1: several signs there are not in `key.tsv` (a barred pi-like sign, a cross with a loop), and the blind pass names do not map to them. The unread letters (1546, 1553, "1563") still need a named sign set built on the images before any decryption is worth reading.
+
 ## Remaining gaps
 
 - 14 Nov, three holes (A03 `5 a a`, A14 `lalgunte`, A16 `et ud y tu`) and 43 proposals, among them `[?inoue]` (E02) and the words touched by `9`, `c`, `vela`, `inta`, `nep` - blocker: open-codes; no key sheet found, context alone does not settle them.
@@ -168,7 +172,7 @@ The two blind decryption files are unrepaired decodings of a rough shape pass an
 
 - [x] siblings: all listed letters of both entries were fetched; the key was built on the siblings with a decipherment (c. 12r, cc. 9r-9v) and tested on c. 30r, 30 Sep and 20 Nov
 - [x] clear-pages: clear pages checked; marginal decipherments found on c. 28r and c. 64v that the catalogue does not list
-- [ ] known-keys: repo keys not tried in full; the 1556 key cannot express these signs; `charles1536`, `philip1574`, `gonzaga1590` are other letters
+- [x] known-keys (6 Nov 2026): the repo keys were checked for a same-family key. `mendoza1548/key_1548.md` is the same Spanish chancery syllabary (Bucuré 2025, reconstructed from Neapolitan letters of 1547; Bertomeu Masiá 2009 places it in the correspondence of Granvela, Mendoza and Ferrante Gonzaga). Two code groups agree with `key.tsv`: `dide` = Su Majestad, and `nego:` = franceses, against our `em` franceses and doubtful `nep` Francia. Not done: a value-by-value comparison of the two tables, which could settle the doubtful `9`, `c`, `vela`, `inta`, `nep`, and Bucuré 2025 and Masiá 2009 themselves, which are not opened. The 1556 key cannot express these signs; `charles1536` is a different syllable system; `philip1574` and `gonzaga1590` are other letters. `gonzaga1549/` holds separate work on catalogue 1560 (its own tables of 13 May, 14 Nov, 20 Nov 1549).
 - [ ] print: CSP Spain IX, CSP Venice V and the DBI opened; Corpus documental III, Druffel and the Simancas minutes not
 - [x] key-rebuild: table extended on 14 Nov from what reads, by context and on the images; each value marked
 - [ ] retry: done for the lines listed under "Blind checks of the readings"; not yet for A00-D13 as a whole
