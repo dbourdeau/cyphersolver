@@ -34,7 +34,7 @@ OPAC lists no decipherment. Web searches on the incipit and on lines of the poem
 - [n/a] siblings: no sibling cipher leaves on this folio; the rest of the codex is plain
 - [n/a] clear-pages: the poem itself is the clear text
 - [x] known-keys: vowel shift read off the heading; full Caesar +1 tried and rejected
-- [x] print: OPAC and web searches on the incipit and lines of the poem, nothing; Walther and Mirabile not yet consulted
+- [x] print: OPAC and web searches on the incipit and lines of the poem, nothing; two more searches on the incipit found nothing, all 25 Caesar shifts of the word give no word, and the Mirabile search page loaded as an empty shell (not searched); Walther not consulted
 - [n/a] key-rebuild: the key (five vowels) is not in doubt; the 9-letter ciphertext is
 - [n/a] retry: nothing to retry with a longer text
 
