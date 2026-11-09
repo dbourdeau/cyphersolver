@@ -720,7 +720,9 @@ def audit(brief=False):
     # 4. site pages / README / manifest drift
     drift = []
     for s in sorted(set(pages) - SURVEYS - listed_slugs): drift.append(f'docs/{s}.html is in the manifest but README has no row linking it')
-    for s in sorted(html_slugs - set(pages) - SURVEYS): drift.append(f'docs/{s}.html exists but has no PAGES entry in _build_site.py')
+    # a 'This page has moved' stub left where a target was split or renamed is not a write-up
+    moved = {s for s in html_slugs - set(pages) if '<title>Moved: ' in (HERE / f'{s}.html').read_text(encoding='utf-8', errors='replace')[:600]}
+    for s in sorted(html_slugs - set(pages) - SURVEYS - moved): drift.append(f'docs/{s}.html exists but has no PAGES entry in _build_site.py')
     for s in sorted(listed_slugs - html_slugs): drift.append(f'README links {s}.html, which does not exist in docs/')
     for s in sorted(set(pages) - set(images) - SURVEYS): drift.append(f'{s} has no IMAGES entry (add one, or None)')
     print(f'D. Manifest / README / docs drift: {len(drift)}')
