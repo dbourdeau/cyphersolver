@@ -1,0 +1,189 @@
+{
+ "schema_version": 1,
+ "target": "anker1814",
+ "title": "Carsten Anker (London) to Prince Christian Frederik, leaf of 28 June 1814 in the 1811 symbol cipher (Riksarkivet RA-EA-5938): the Princess Charlotte project",
+ "documents": [
+  {
+   "id": "ra-ea5938-1814-p59",
+   "read": "read",
+   "shelfmark": "Arkivverket / Riksarkivet (Oslo), RA-EA-5938 Christian Frederik, F/Fc/L0217/0002, PDF p. 59 (\"ad Anker C. 101a\")",
+   "date": "28 Jun 1814",
+   "year": 1814,
+   "country": "Norway",
+   "route": "Carsten Anker -> Prince Christian Frederik",
+   "places": {
+    "from": "London",
+    "to": "Christiania"
+   },
+   "language": "Danish",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "none: no decipherment of the time on or with the leaf, and the leaf is not in C. J. Anker's edition"
+   },
+   "length": {
+    "tokens": 252,
+    "distinct": 31,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_p59.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Arkivportalen PDF of RA-EA-5938 F/Fc/L0217/0002 (public download), rendered at 450 dpi",
+    "image_quality": "good",
+    "notes": "One pass by one AI agent, by sign shapes, after the key was validated and before any decoding; not blind (the Danish words show through the simple shapes). No independent re-reading."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Symbol substitution with homophones for the vowels and frequent letters (a = cross / big X / looped &; e = slashed circle / Z; o = dotted circle / cup), a few logograms (# = jeg, -- = Sverige, a hooked q = Deres Kongelige Hoihed), word gaps mostly kept, mixed with clear Danish and French. The alphabet of Anker's letter of 31 Dec 1811.",
+  "symbol_kind": "symbols",
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "word_division": "partial",
+  "sibling_key": "the 31 Dec 1811 letter (RA-EA-5938 F/Fc/L0216/0009), whose glosses and decipherment of the time gave the key",
+  "distinct_symbols": 31,
+  "diacritics": {
+   "used": false
+  },
+  "key_order": "random"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Not deciphered on the leaf or in the file; not in C. J. Anker's printed edition of the correspondence (full-text search of 254 letters; the clear letter of the same day, no. 88, and the code dispatch are printed, this leaf is not); nothing in this repository; re-checked 9 Nov 2026. The marriage project itself is known from the printed letters (Christian Frederik to Anker, 24 June, 11 Oct and 12 Dec 1814).",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "sibling key",
+   "known plaintext"
+  ],
+  "attack": "sibling key",
+  "human_role": "Brice Dudout set the rules (protocol hashed before the key was built, one held-out measurement, thresholds fixed in advance). AI agents triaged the file, transcribed, built the key, measured and read. No human palaeographer checked the transcriptions.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-11-09",
+  "last_date": "2026-11-09"
+ },
+ "solution": [
+  {
+   "date": "2026-11-09",
+   "kind": "literature search",
+   "what": "RA-EA-5938 triaged (200 pages: letters, key sheets, codebooks, grilles); C. J. Anker's edition (Royal Danish Library, Danmarks Breve, 254 letters) searched in full text: the 1811 letter (no. 32) and the 28 June 1814 code dispatch (no. 88) are printed in clear, the symbol leaf of 28 June 1814 is not.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "First pre-registered measurement: a pencil key card of the archive (KN-06) on 8 held-out lines of the 1811 letter: 0.025 vs best of 200 shuffled keys 0.018; a third of the signs have no value in it.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "sibling key",
+   "what": "New protocol (frozen/PREREG-2.md, hashed): homophonic key learnt on the 1811 letter p. 9 only, from its interlinear glosses and the decipherment of the time (p. 11) with printed letter no. 32; frozen before the held-out part.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One measurement on the held-out part (1811 p. 10, left column, 10 lines) against the decipherment of the time: character agreement 0.950 vs best of 200 shuffled keys 0.019 (margin 0.931); validated by thresholds fixed in advance (>= 0.85 and margin >= 0.30).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "reading",
+   "what": "Leaf of 28 June 1814 (PDF p. 59): applicability fixed in advance (share of signs with a 1811 value 0.937 vs Bergen 1814 alphabet 0.369); decoded with the frozen key: 252 cipher signs, 249 certain or probable (98.8%), 3 logograms restored [D.K.H.], one word (felv) of uncertain sense.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "method": "key recovered based on plaintext from external sources",
+  "method_basis": "The key was learnt from another letter in the same cipher (31 Dec 1811) and its decipherment of the time, validated on a held-out part of that letter, then applied to the leaf of 28 June 1814, which has no decipherment.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "verification": [
+   "statistical test",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-11-09",
+   "verdict": "pass",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): 0.950 of characters vs best of 200 shuffled keys 0.019 on the 1811 letter p. 10 left column; thresholds fixed in advance. Declared limit: printed letter no. 32 had been read before, so the held-out part was transcribed by shapes, not blind."
+  },
+  "fraction_read": 0.988,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading_p59.md: 249 of 252 cipher signs certain or probable; the 3 others are one logogram restored as [D.K.H.].",
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "1811 key rebuilt from the glosses and decipherment of the time, validated on a held-out part (0.950 vs 0.019); leaf of 28 June 1814 transcribed and read (98.8%)",
+    "date": "2026-11-09"
+   },
+   {
+    "who": "riksarkivet",
+    "role": "key or decipherment used",
+    "note": "RA-EA-5938 Christian Frederik: the 31 Dec 1811 letter with its interlinear glosses and decipherment of the time (F/Fc/L0216/0009), from which the key was learnt; the leaf itself (F/Fc/L0217/0002 p. 59); Arkivportalen",
+    "date": "1811"
+   },
+   {
+    "who": "anker_cj",
+    "role": "key or decipherment used",
+    "note": "printed letter no. 32 (31 Dec 1811, \"[i Chifre.]\") used with the decipherment of the time to align the key; the edition also gives the context (letters nos. 31, 39, 43 on the Princess Charlotte project, no. 88 of the same day)"
+   }
+  ],
+  "key_file": "key_1811.tsv",
+  "texts": [
+   {
+    "doc": "ra-ea5938-1814-p59",
+    "label": "Leaf \"fr. 28 Junii 1814\", Carsten Anker (London) to Christian Frederik",
+    "transcription": "transcription_p59.txt",
+    "decryption": "reading_p59.md",
+    "reading": "reading_p59.md",
+    "translation": "translation_p59.md",
+    "language": "da",
+    "state": "read",
+    "read_share": 0.988,
+    "summary": "The match between Princess Charlotte of Wales and the Prince of Orange is broken off for ever; Anker revives his old idea of marrying Christian Frederik to her, though she may not leave England, if the prince is not bound and Norway's horizon clears; the prince's engraved portrait will be published within a fortnight; the prince must not commit himself; Hardenberg agrees.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Brice Dudout (with Claude)",
+     "date": "2026-11-09",
+     "note": "read as Danish sentences joining the clear passages; the logogram restored [D.K.H.] fits all three places and the clear 'D. K. H.s'; one word (felv) unclear; one reader, no second reader"
+    }
+   }
+  ],
+  "notes": "New decipherment: the leaf is not in the printed edition and has no decipherment in the file. The marriage project it concerns is known from Christian Frederik's printed letters to Anker (24 June, 11 Oct, 12 Dec 1814); the leaf gives Anker's own proposal of 28 June. No image is included (Arkivverket gives no explicit reuse licence)."
+ }
+}

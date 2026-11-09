@@ -1,0 +1,24 @@
+Held-out validation of the 1811 key (contributor's pre-registered test, not docs/_validate.py), 9 Nov 2026.
+
+Protocol: frozen/PREREG-2.md (SHA256 51bb8ed7...ed59), hashed before the key was built. It declares the failure of a first
+measurement (frozen/PREREG.md, frozen/MESURE.txt: a modern-looking pencil key card "KN-06" from the same archive, 0.025 vs
+best shuffled 0.018, FAILED; a third of the signs had no value in it).
+
+Key (KEY-2, frozen 02:40, SHA256 21dda08a...f969): learnt on 1811 PDF p. 9 only (lines with interlinear glosses, then lines
+aligned with the decipherment of the time p. 11 and printed letter no. 32). Homophonic (a = + / X / &-loop; e = slashed circle
+/ Z; o = dotted circle / cup).
+Held-out part H2: 1811 PDF p. 10, left column, lines 1-10 (frozen/H2-CHIFFRE.txt, hashed 02:48:16 before decoding).
+Reference R: the decipherment of the time for H2 (p. 12, left column), transcribed after the freeze (frozen/R-CLAIR.txt).
+Metric: Smith-Waterman alignment of the decoded H2 against R, character agreement over all H2 positions.
+
+Result (frozen/MESURE-2.txt): 399 positions, 383 decoded letters, 16 "?".
+  character agreement (decisive, / positions) = 0.950   (0.990 on decoded letters)
+  200 shuffled keys, seed 1814: mean 0.010, max 0.019   -> margin 0.931
+Thresholds fixed in advance: char >= 0.85 and margin >= 0.30 -> VALIDATED.
+
+Declared limit: printed letter no. 32 (which covers H2) had been read in full before; H2 was transcribed by shapes, not blind.
+The shuffled-key control (0.019) shows the score does not come from that segmentation bias.
+
+Applicability to the target leaf (1814 PDF p. 59), criterion fixed in PREREG-2 sec. 5 before decoding (frozen/P59-APPLICABILITE.txt):
+  share of p. 59 signs with a 1811-key value C1811 = 0.937; share matching the Bergen 1814 alphabet's shapes CBergen = 0.369
+  (generous to Bergen); lexical share L = 0.788 -> the 1811 alphabet.
