@@ -1,0 +1,18 @@
+Held-out validation of the 1647 homophonic key (contributor's pre-registered test, not docs/_validate.py), 9 Nov 2026.
+
+Protocol: frozen/PREREG.md (SHA256 d667a634...8f49), written before any decoding, before any cipher letter was transcribed
+and before any decipherment of the time was opened.
+Learning pairs A: 13 Nov (images 0547, 0548, 0551 with decipherment 0549), 17 Nov (0557 / 0559), 22 Dec (0597 / 0599),
+25 Dec 1647 (0604, 0607 / 0605), aligned number by number (frozen/BUILD-PAIRES.tsv); key = majority value per number,
+key 0003 for numbers unseen; frozen (frozen/KEY.tsv, KEY.sha256) before the held-out decipherment was opened.
+Held-out part H: the letter of 24 Dec 1647 (cipher 0569, 0573, 0574; decipherment of the time 0571), cipher hashed
+(frozen/H-CHIFFRE.sha256, 7c586ce3...) before learning; glosses transcribed after the key freeze (frozen/H-GLOSES.txt).
+Metric (frozen/scripts/measure.py): difflib matching blocks between decoding and gloss, over 9 passages, 441 gloss letters.
+
+Result (frozen/MESURE.json):
+  character agreement 0.966; 200 shuffled keys (seed 1647): best 0.245, mean 0.188; margin 0.721; coverage 99.8%
+  words 57/70 (not decisive)
+Thresholds fixed in advance: char >= 0.85 and margin >= 0.30 -> VALIDATED.
+Descriptive only: key 0003 alone on H gives 0.13 (chance level): the 1647 letters use another system.
+
+The postscript 0837 is in the key-0003 system: its reading (reading_0837.md) is not covered by this test (declared).
