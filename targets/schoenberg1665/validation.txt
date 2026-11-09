@@ -1,0 +1,17 @@
+Held-out validation (contributor's pre-registered test, not docs/_validate.py), 9 Nov 2026.
+
+Chain of freezes (SHA256): frozen/H-CHIFFRE.txt be650ff1...4f66 (transcription of the whole passage, made before any key
+was tried) -> frozen/PREREG.md e41effd7... (written before any key or decoding; declares having noticed repeated short words)
+-> frozen/KEY.tsv 7239369c... (learnt on lines L1-L5 only) -> frozen/scripts/measure.py.
+Held-out part H: lines L6-L9 (16 words, 74 letters), never decoded before the key freeze.
+Metric: share of decoded H words found in the cyphersolver German lexicon (lang/lexicons/de.json.gz, frequency >= 5);
+200 shuffled keys (seed 1665).
+
+Result (frozen/MESURE.json): lexicon share 0.625 (10/16); shuffled keys max 0.3125, mean 0.061; margin 0.3125;
+coverage of H letters by the key 0.96 (m, o absent from L1-L5).
+Thresholds fixed in advance: share >= 0.70 and margin >= 0.30 -> validated; margin >= 0.30 alone -> PARTIAL. Verdict: PARTIAL,
+kept as is. Two of the "lexicon" hits come from word cuts at the binding edge.
+
+After the measurement (declared, does not change the verdict): key completed from its regular pattern (frozen/KEY-COMPLET.tsv);
+transcription errors corrected on re-reading the image (L1 A not L, L5 W not L, L4 q not g, L7 t not b, L9 w); the frozen
+H-CHIFFRE.txt was not modified. With these, the passage reads in full except one word (reading_0233.md).

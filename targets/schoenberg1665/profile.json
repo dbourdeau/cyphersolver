@@ -1,0 +1,178 @@
+{
+ "schema_version": 1,
+ "target": "schoenberg1665",
+ "title": "Schönberg's journal of the Dresden negotiations (Wettin houses / Electoral Mainz, Erfurt affair), Dresden, early December 1665: one cipher passage on Boyneburg and 30,000 thalers (LATh - StA Altenburg, Schönbergische Sammlung Nr. 107, fol. 114r)",
+ "documents": [
+  {
+   "id": "nr107-f114r",
+   "read": "read in part",
+   "shelfmark": "Landesarchiv Thüringen - Staatsarchiv Altenburg, Schönbergische Sammlung (1-99-0023), Nr. 107 (Acta Reiffenbergica), fol. 114r (image 0233)",
+   "date": "early Dec 1665",
+   "year": 1665,
+   "country": "Germany",
+   "route": "Schönberg's own journal (Saxe-Altenburg side), Dresden",
+   "places": {
+    "from": "Dresden",
+    "to": "Dresden"
+   },
+   "language": "German, Latin",
+   "pages": 1,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "none: no decipherment of the time in the volume (396 images checked)"
+   },
+   "length": {
+    "tokens": 180,
+    "distinct": 21,
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription_0233.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "ThULB Jena digitisation (urn:nbn:de:urmel-stat-262972), CC BY 3.0",
+    "image_quality": "good",
+    "notes": "One AI transcriber, frozen before any key was tried (frozen/H-CHIFFRE.txt); five sign errors corrected after the measurement on re-reading the image (A/W capitals read as L, q/g, t/b), the frozen file left unchanged."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Simple substitution in Latin letters with a regular key over a 24-letter alphabet: odd plaintext letters -> z y x w ... n (reversed), even -> a b c ... m. Word division kept.",
+  "symbol_kind": "letters",
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "word_division": "kept",
+  "sibling_key": "none",
+  "distinct_symbols": 22,
+  "diacritics": {
+   "used": false
+  },
+  "key_order": "partly alphabetical"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment of the time in Nr. 107; no edition of Schönberg's journal or of the passage found (LATh and ThULB records, web searches; printed histories of the Erfurt affair not checked volume by volume); nothing in this repository (catalogue, leads, key_leads, candidates, issues; re-checked 9 Nov 2026).",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Brice Dudout set the rules (protocol hashed after the transcription freeze and before any key, one held-out measurement, thresholds fixed in advance). AI agents transcribed, solved, measured and read. No human palaeographer checked the transcription.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-11-09",
+  "last_date": "2026-11-09"
+ },
+ "solution": [
+  {
+   "date": "2026-11-09",
+   "kind": "key from source",
+   "what": "Known keys tried first on the learning lines (Thumbshirn's key of Nr. 85, numeric; Dresden HStA nomenclators): none applies.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "solver",
+   "technique": [
+    "frequency analysis",
+    "repeat/pattern analysis",
+    "manual reconstruction"
+   ],
+   "what": "Simple substitution solved on lines L1-L5 only (German), key frozen before the held-out lines were decoded.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "One measurement on held-out lines L6-L9 (16 words): German lexicon share 0.625 vs best of 200 shuffled keys 0.3125 (margin 0.31); partial by thresholds fixed in advance (validated >= 0.70).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "reading",
+   "what": "Key completed from its regular pattern and five transcription errors corrected after the measurement (declared); 32 words: 25 certain, 4 probable, 2 restored at the binding edge, 1 unresolved; 29/32 = 90.6% read by sense without the restored words.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Simple substitution solved from the cipher alone on the learning lines; measured once on the held-out lines (partial); the key is regular and was completed from its pattern.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "verification": [
+   "statistical test"
+  ],
+  "validation": {
+   "date": "2026-11-09",
+   "verdict": "weak",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): lexicon share 0.625 vs best shuffled 0.3125 on 16 words; partial. Transcription errors corrected after the measurement (A/W read as L, q/g, t/b); the frozen transcription was not modified."
+  },
+  "fraction_read": 0.906,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading_0233.md: 29 of 32 words certain or probable (25 + 4); 2 restored at the binding edge and 1 unresolved are not counted.",
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "transcription, key recovered from the cipher (partial on held-out lines), reading 29/32 words; images LATh - StA Altenburg / ThULB Jena, CC BY 3.0",
+    "date": "2026-11-09"
+   }
+  ],
+  "key_file": "key.tsv",
+  "gaps": [
+   {
+    "item": "one word, 'diengs' (cipher buxswi), read letter by letter but of uncertain sense; two letters lost in the binding (ge[w]onnen, [T]eufel)",
+    "blocker": "open-codes",
+    "detail": "the letters are certain; the sense of 'diengs' (Dings? dienst?) and the two binding-edge letters need a reader of the original"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "nr107-f114r",
+    "label": "fol. 114r (image 0233), Dresden, early December 1665",
+    "transcription": "transcription_0233.txt",
+    "decryption": "reading_0233.md",
+    "reading": "reading_0233.md",
+    "translation": "reading_0233.md",
+    "language": "de",
+    "state": "read in part",
+    "read_share": 0.906,
+    "summary": "Boyneburg says a great deal: the Elector is said to have obtained 30,000 thalers 'pro iuribus Erfordensibus' (for the Erfurt rights); he swore to his people 'may the devil take me' and called people to witness it.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Brice Dudout (with Claude)",
+     "date": "2026-11-09",
+     "note": "reads as German sentences; 29/32 words by sense (90.6%), 2 restored at the binding edge, 1 unresolved word; key partial on its held-out test; transcription errors corrected after the measurement (A/W read as L, q/g, t/b), the frozen H file unchanged"
+    }
+   }
+  ],
+  "notes": "New text: no decipherment of the time, no edition found. Images: ThULB Jena digitisation, CC BY 3.0 (credit Landesarchiv Thüringen - Staatsarchiv Altenburg, Schönbergische Sammlung Nr. 107). Same archive as thumbshirn1647 (Nr. 85, another volume)."
+ }
+}
