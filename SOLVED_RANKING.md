@@ -366,6 +366,7 @@ The composite table holds 302 rows (24 taken out after the reading audit of 22�
 | 336 † | **C. Ben. Schaeblin (The Hague) to Mr Jones**, BL Add MS 32256 f. 235 (DECODE R9218) | 1753 | 1 | 1 | 1 | 1 | 3 | 4 | **1.50** | D 1: nothing enciphered; the letter is in clear. H 1: a proposal for a French cipher, of interest for how the Hague office built codes. |
 | 337 † | **Burghley → Walsingham (Walsingham letter-book)**, BL Harley MS 260 f. 395 (DECODE R8362) | 1573 | 1 | 1 | 1 | 1 | 3 | 3 | **1.40** | D 1: nothing enciphered; two boxed cover-name markers. H 1: a known printed letter. |
 | 338 † | **Unsigned writer → an unnamed 'Majesty', report on Gabriel Bethlen**, BSB Clm 10403 n. 65 (lead 2181) | 1624 | 1 | 2 | 1 | 2 | 1 | 1 | **1.35** | D 1: letter key read off the period glosses of one page. H 2: Bethlen, the peace with the Emperor and money for 24,000 men, from an unnamed writer. N 1: deciphered at the time on the leaf. R 2. F 1. V 1: not validated, no held-out part, 15 of 18 letters of the unglossed runs. |
+| 339 † | **The Rök runestone (carver Varinn), Östergötland**, Rundata Ög 136 | c. 800 | 1 | 1 | 1 | 1 | 1 | 4 | **1.30** | Already read before this project; the keys were checked against the published transcription by script and agree with the published reading. No new reading (D 1, H 1, N 1, R 1, F 1); V 4 because every layer checks against the stone's own resolutions. |
 
 Score = 0.25 D + 0.25 H + 0.20 N + 0.10 R + 0.10 F + 0.10 V. Equal scores share a rank; within a tie the order is by D, then H. † provisional (see above).
 
