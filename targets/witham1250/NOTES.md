@@ -6,8 +6,8 @@ Found 1825 near Lincoln, dated 1250-1330. Inscription, one blade face, gold wire
 
 ## What exists already (checked 9 Nov 2026)
 
-- British Library appeal 2015 (Julian Harrison): "as yet indecipherable"; Welsh floated.
-- Cipher Mysteries / Language Log threads (2016): about twenty commenter readings (Latin initials, "Christ reigns,
+- British Library appeal 11 Aug 2015 (Julian Harrison): "as yet indecipherable"; perhaps a religious invocation; Welsh floated.
+- Cipher Mysteries (Jan 2016, comments by Nick Pelling) / Language Log threads (2016): about twenty commenter readings (Latin initials, "Christ reigns,
   conquers, commands", gematria, Hebrew, Croats ...), none checkable. Parallels named: Alphen aan den Rijn sword,
   Berlin and Swedish swords (shared curved X, I-S ligature); Wagner/Worley 2009, 2013 on "talking" swords.
 - Harald Winter, Waffen- und Kostuemkunde 58/2 (2016), revised 2026-03-13, doi 10.71475/wkk.2016.2.115248:
@@ -18,7 +18,7 @@ Found 1825 near Lincoln, dated 1250-1330. Inscription, one blade face, gold wire
 ## Assessment
 
 - Letters: vowels O, O, I = 3 of 18 (17%), against about 40% in Latin text. That fits an abbreviation or initials
-  inscription, and does not fit running text in any language. D x4, X x3 repeat.
+  inscription, and does not fit running text in any language. D x3, X x3 repeat.
 - Nothing here can be tested. Every proposal picks the expansion of each letter after the fact, with X taken as
   Chi, cross or spacer at will. 18 letters under free abbreviation have no unicity: many Latin, Germanic and Welsh
   phrases fit equally. Winter's reading is internally coherent and period-plausible but unverified (X=CH, W as a
