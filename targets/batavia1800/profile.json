@@ -1,0 +1,188 @@
+{
+ "schema_version": 1,
+ "target": "batavia1800",
+ "title": "J. C. Smissaert (Raad der Aziatische Bezittingen) to C. J. Prediger at Batavia, 20 Nov 1800 (Nationaal Archief 2.01.27.02 inv. 209): key of the letter cipher rebuilt from the clear minute and validated",
+ "documents": [
+  {
+   "id": "na209-0002",
+   "read": "read",
+   "shelfmark": "The Hague, Nationaal Archief, 2.01.27.02 (Raad der Aziatische Bezittingen en Etablissementen), inv. 209, scan 0002 (right-hand page); clear minute on scans 0001, 0002 (left) and 0004",
+   "date": "20 Nov 1800",
+   "year": 1800,
+   "country": "Netherlands",
+   "route": "J. C. Smissaert, secretary of the Raad der Aziatische Bezittingen -> C. J. Prediger, Batavia",
+   "places": {
+    "from": "Amsterdam",
+    "to": "Batavia"
+   },
+   "language": "Dutch",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "The clear minute of the same letter, in the same file (scans 0001, 0002 left, 0004): the passages to encipher are underlined, with strokes counting their letters."
+   },
+   "length": {
+    "tokens": 375,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Nationaal Archief scans of inv. 209 (downloadable; no licence stated on the record)",
+    "image_quality": "good",
+    "notes": "Digit columns read top/bottom and noted before the clear was read (frozen/RAW-hauts-bas.txt); two copying slips in the learning part corrected from those notes (frozen/AMENDEMENT-01.md). One AI transcriber."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Simple substitution of letters for Dutch: each letter is a column of two digits, a top digit 1-7 over a bottom digit 1-4 (a 7 x 4 grid, 28 cells; i/j share one). Only the sensitive words are enciphered; word division kept.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 24,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "kept"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The clear minute of the same letter is filed with it (scans 0001, 0002 left, 0004), with the passages to encipher underlined; the archive's description names the encipherment ('overbrenging in cijfer'). So the content is existing. No key, edition or study found: nothing in this repository (catalogue.json and research/leads.json on main 1e974a24, targets, issue and PR search for Batavia, Smissaert, Prediger, 2.01.27.02, Aziatische; GitHub API, 9 Nov 2026); two web searches without result.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Brice Dudout set the rules (protocol hashed before the clear was read, one held-out measurement, thresholds fixed in advance). AI agents found the file in a sweep of the Nationaal Archief, transcribed, aligned, built the key, measured and read. No human palaeographer checked the transcription.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-11-09",
+  "last_date": "2026-11-09"
+ },
+ "solution": [
+  {
+   "date": "2026-11-09",
+   "kind": "transcription",
+   "what": "Cipher of scan 0002 transcribed as top/bottom digit columns and hashed before the clear minute was read.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Lines L01-L12 aligned word by word with the clear minute (frozen/A-ALIGN.tsv); key = majority letter per code, built by script, 23 codes, no conflict; frozen before the clear of the held-out lines was opened.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One measurement on lines L13-L14 (60 letters): 0.933 of characters against at best 0.433 for 200 shuffled keys (margin 0.500), coverage 0.983; thresholds 0.85 and 0.30 fixed in advance. Declared: the beginning of the held-out clear was glimpsed on the learning crop (frozen/AMENDEMENT-01.md).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "reading",
+   "what": "Whole cipher read with the key and checked against the minute: 60 cipher words, 54 certain, 3 probable, 3 restored, 0 unresolved.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "recovered",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The key was learned from the clear minute of the same letter, filed with it, and validated once on a held-out passage. The content is the minute's (existing); the key and the identification of the pair are the contribution.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "verification": [
+   "statistical test",
+   "contemporary decipherment"
+  ],
+  "validation": {
+   "date": "2026-11-09",
+   "verdict": "pass",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): 0.933 of characters vs best of 200 shuffled keys 0.433 (margin 0.500), coverage 0.983. Not blind on the held-out words (their clear was glimpsed before the freeze, declared); the key is built by script from the learning part only. 54 = f added after the measurement."
+  },
+  "fraction_read": 0.95,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.md: 60 cipher words, 54 certain + 3 probable = 57 read by sense; 3 restored (checked against the minute) excluded.",
+  "provenance": "mixed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "the clear minute of the letter, filed with it (scans 0001, 0002 left, 0004), with the passages to encipher underlined; the key was learned from it",
+    "date": "1800"
+   },
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "note": "cipher of scan 0002 transcribed; letter key rebuilt from the minute and validated on a held-out passage (key.tsv, validation.txt); pair identified",
+    "date": "2026-11-09"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "the rest of the clear minute and the postscript (scans 0004-0005) not transcribed",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "one reader (an agent) on the digit columns; no human palaeographic check",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "q unseen; 54 = f from one word only",
+    "blocker": "too-short"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "na209-0002",
+    "label": "Smissaert to Prediger, 20 Nov 1800, the letter as sent (scan 0002)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "reading.md",
+    "language": "nl",
+    "state": "read",
+    "read_share": 0.95,
+    "summary": "Besides the long-delayed troop shipment to the Indies, the Asiatic Council has been authorised to prepare a second, similar expedition to Batavia from another European port, which would considerably reinforce the military on Java; Prediger is to tell the Governor-General in secrecy.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Brice Dudout (with Claude)",
+     "date": "2026-11-09",
+     "note": "read as sentences against the clear minute of the same letter; 3 probable words and 3 restored letters, all confirmed by the minute; content existing (the minute)"
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "The letter has its clear minute in the same file, so we claim no new text and no solution; what is new is the key as a reusable table (7 x 4 grid of stacked digit pairs), validated on a held-out passage, and the identification of the pair. No images: the Nationaal Archief record states no licence."
+ }
+}
