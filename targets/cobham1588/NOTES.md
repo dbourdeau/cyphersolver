@@ -222,3 +222,15 @@ CSP Foreign vol. 21 pt 4 calendars Cobham letters of 1, 4, 9, 13, 24, 29 May and
 - [x] print: CSP Foreign vol. 21 pt 4 (Jan-June 1588): Harley 287 letters not calendared, no printed decipherment
 - [x] key-rebuild: candidate-set solver (solve.py, CSP 1588 word list) with solver loop 1: L = e, c = a, phi = p added
 - [x] retry (22 Oct 2026, b13): every run of ff. 80, 88, 92, 96v re-read on the 7,200 px images at 0.5-1.0x with the clear text transcribed round it; f. 80 relabelled (treaties, hostages, surety); f. 97r is blank, so nothing to add to runs.txt; partial readings in texts/
+
+## Contribution, 9 Nov 2026 (Brice Dudout, with Claude): held-out test of the key, codes 22, 26, 27 and the square
+
+See `dudout/README.md` (text only, no image). An alphabet learnt only on the glossed cipher words of f. 78r (DECODE
+R8489) was tested once on every glossed cipher word of f. 78v (349 letters): character agreement 0.917 against at best
+0.284 for 200 shuffled keys (criterion fixed in advance: 0.85 and best + 0.30), with the errors all on the shared signs
+(caret s/t, gamma r/y) and d = o. Declared deviation: the f. 78v crops showed the glosses while the held-out cipher was
+transcribed (key already frozen). The f. 78r gloss names three codes: **22 = Sir James Croft** ("Sr J: Croftes"),
+**27 = Dr Valentine Dale** and **26 = Dr John Rogers** ("D: Dale and D: Rogers revoked"), and the square = "ye States".
+In R8490: "[22: Sir James Croft] is so forwarde yn the action that he promised Q[ueen] to send to [...] [27: Dr Dale] to
+begyn the openning of the [...]" (f. 80r) and "[22: Sir James Croft] hath a desire to retourne from theym" (f. 80v). The
+class is unchanged: R8490 is still decoded, not read.
