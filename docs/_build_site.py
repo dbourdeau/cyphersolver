@@ -2500,6 +2500,16 @@ PAGES = [
          blurb='Three telegrams King Manuel II sent his mother from Bussaco to the Pena palace on 2 and 8 August 1910, two months before the revolution: clear greetings (&ldquo;Querida m&atilde;e &hellip; Tudo bem tempo lindo&rdquo;) around 93 five-figure code items. The telegrams share four groups and an opening run after the same clear words, so they are one code with a stock phrase. Count Sabugosa&rsquo;s code does not fit, and no decode or codebook has been found.',
          quote='&ldquo;Querida m&atilde;e Tudo bem Tempo lindo veio Sabugosa hoje&rdquo; &middot; 4965 37708 89864 97183 39644 06 93608',
          rights='Arquivo Nacional Torre do Tombo, PT/TT/CAM/M13, via DigitArq'),
+    dict(slug='hernandez1911', label='Villarreal telegram 1911', year='1911', y=1911.23, place='El Paso &rarr; Presidio', st='solved', stt='known key',
+         title='A telegram from Gonz&aacute;lez Garza to Braulio Hern&aacute;ndez, 27 March 1911',
+         blurb='A Spanish telegram of the Maderista junta with four coded words, listed as coded with no decipherment. Read with the five swapped pairs of letters on the recipient&rsquo;s key card in the same fonds, found by William Echols: Villarreal will leave Wednesday or Thursday, taking a cannon.',
+         quote='&ldquo;VILLARREAL SALDRA mi&eacute;rcoles &oacute; jueves, LLEVANDO CANON&rdquo;',
+         rights='Telegram: CEHM-Carso, Fondo CMXV, CMXV.15.1420.3-6; key and reading by William Echols'),
+    dict(slug='roosevelt1903', label='Roosevelt to Hay 1903', year='1903', y=1903.4, place='Roosevelt &rarr; Hay', st='solved', stt='external key',
+         title='Roosevelt to Hay on Britain&rsquo;s request and the trip to Kiel, 27 May 1903',
+         blurb='A coded telegram from Theodore Roosevelt to the Secretary of State, listed with no decoding. William Echols matched it to the State Department&rsquo;s Red Cipher of 1876, a codebook of page-and-entry groups: Roosevelt asks what Britain&rsquo;s request is and puts any call at an English port after the trip to Kiel. The codebook pages and the scan were not seen here.',
+         quote='&ldquo;if they touch at English port it should be after the trip to Kiel&rdquo;',
+         rights='Telegram: Library of Congress, Theodore Roosevelt Papers, reel 413, frame 0026; key identification and reading by William Echols'),
     dict(slug='mexico1911', label='Huerta warning telegram 1911', year='1911', y=1911.4, place='Mexico City &rarr; El Paso', st='solved', stt='known key',
          title='A coded telegram to Federico Gonz&aacute;lez Garza warning of a mutiny, 19 May 1911',
          blurb='A Spanish telegram of the Maderista correspondence with ten coded words, listed as partly read from the archive&rsquo;s record. Read with the key card the same fonds holds for one of the signers: General Huerta told one of the writers that a military mutiny against the addressee is feared in the capital on account of D&iacute;az&rsquo;s resignation. Nine of the ten coded words make sense; one name stays open.',
@@ -4492,6 +4502,8 @@ IMAGES['fossey1710'] = None
 IMAGES['guastalla1717'] = None
 IMAGES['soviet1919'] = None
 IMAGES['mexico1911'] = None
+IMAGES['hernandez1911'] = None
+IMAGES['roosevelt1903'] = None
 IMAGES['piccolomini1646'] = None
 IMAGES['mazzinghi1478'] = None
 IMAGES['majesty1624'] = None
