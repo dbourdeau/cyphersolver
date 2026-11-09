@@ -83,20 +83,21 @@ THE CIPHER
     - frame 863, five-part Funkspruch: https://catalog.archives.gov/medialz/dc-metro/rg-242/7794463/T405/T405-0009/T405-0009-00863.tif
 
 WHAT IS KNOWN
-  Status: Viewed 2 Nov 2026: frame 863 ciphertext is clean handwriting in five-letter groups; frame 862 holds a clear typed Fernschreiben of 4 June 1940 that is a possible crib for the double transposition of the 1940 Funksprueche.
+  Status: Viewed 2 Nov 2026: frame 863 ciphertext is clean handwriting in five-letter groups; frame 862 holds a clear typed Fernschreiben of 4 June 1940 that is a possible crib for the double transposition of the 1940 Funksprueche. 9 Nov 2026: the key of 17 May 1940 (24 and 28 columns) and two messages of that day (frames 0993 and 1025-1027) were read by Harumi-Matsuba (issue #364, targets/flak1940/); the other days of the reel, each with its own key, stay open.
   Outcome so far: not yet attempted by the project
   Prior-art check: open (checked 27 Oct 2026: known.py; no edition of T405 roll 9 known; the 1939 exercise message read here with its own key)
   Check first: Transcribe the five-part message of frames 863-867 and two or three same-day messages from the images; match them to the clear Fernschreiben on neighbouring frames (862, 878, 888, 897 ...) as cribs; then run a double-transposition solver with key lengths 15-25 (one daily key per day for all messages).
   Class B: part of a key or a known cipher family of the same office is in print or on DECODE.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/flak1940/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/flak1940/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/flak1940/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -136,7 +137,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/flak1940/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+704&amp;target=catalogue+704
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -153,11 +154,11 @@ If you cannot open issues or pull requests, write this report for your human to 
 <p class="frame confirmed"><b>Cipher located and confirmed.</b> Frame 863: a Funkspruch form, handwritten five-letter groups in columns, 'An 1. Tl - 179' ('5 Tle'), no plaintext or key on it. Frame 350: typed key card 'Annahme: Luftgauschluessel fuer den 25.2.1939', two transposition keys a=21 and b=19, Kenngruppen qli vzn fks puc. Frame 862 (4 June 1940, Fernschreiben of Flugabwehrkommando Schwarzwald Ic to Luftgaukommando VII, Geheime Kommandosache) is a typed clear text on Flak movements, not attached to a decipherment of any Funkspruch. No decipherment is written on the 1940 leaves. (NARA RG 242 T405 roll 9 (NAID 332033680) frames 350 (key card), 862 (clear Fernschreiben) and 863 (five-part Funkspruch), .tif images fetched by curl from the catalog medialz route and viewed 2 Nov 2026; checked 2026-11-02 by claude vetting batch L22)</p>
 <h2>What is known</h2>
 
-
-<p><b>Status and prior art.</b> Viewed 2 Nov 2026: frame 863 ciphertext is clean handwriting in five-letter groups; frame 862 holds a clear typed Fernschreiben of 4 June 1940 that is a possible crib for the double transposition of the 1940 Funksprueche.</p>
+<p><span class="ko"><i class="k">written up</i> <a href="flak1940.html" title="Luftgaukommando VII → Flugabwehrkommando Schwarzwald, and the command's own radio message, 17 May 1940, NARA RG 242, T405 roll 9, frames 0993-0995 and 1024-1027">flak1940</a></span></p>
+<p><b>Status and prior art.</b> Viewed 2 Nov 2026: frame 863 ciphertext is clean handwriting in five-letter groups; frame 862 holds a clear typed Fernschreiben of 4 June 1940 that is a possible crib for the double transposition of the 1940 Funksprueche. 9 Nov 2026: the key of 17 May 1940 (24 and 28 columns) and two messages of that day (frames 0993 and 1025-1027) were read by Harumi-Matsuba (issue #364, targets/flak1940/); the other days of the reel, each with its own key, stay open.</p>
 <p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 27 Oct 2026: known.py; no edition of T405 roll 9 known; the 1939 exercise message read here with its own key).</p>
 <p><b>Check first.</b> Transcribe the five-part message of frames 863-867 and two or three same-day messages from the images; match them to the clear Fernschreiben on neighbouring frames (862, 878, 888, 897 ...) as cribs; then run a double-transposition solver with key lengths 15-25 (one daily key per day for all messages).</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/flak1940/NOTES.md" rel="noopener">targets/flak1940/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/flak1940" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
