@@ -1,0 +1,180 @@
+{
+ "schema_version": 1,
+ "target": "puente1832",
+ "title": "Puente Nacional, military report 'en clave', 6 June 1832 (CEHM-Carso I-2.5.340.1, catalogue 1466)",
+ "documents": [
+  {
+   "id": "I-2.5.340.1",
+   "shelfmark": "CEHM-Carso, Fondo I-2 (Manuscritos de Luis Gutiérrez Cañedo), I-2.5.340.1",
+   "date": "6 Jun 1832",
+   "year": 1832,
+   "country": "Mexico",
+   "route": "Puente Nacional -> unknown",
+   "language": "Spanish",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": "unknown"
+   },
+   "length": {
+    "tokens": 147,
+    "distinct": "unknown",
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "CEHM viewer image 1290x2278 (visor.cehm.org.mx/assets/docx/fondos/jzd/I-2/5/340/1/I-2.5.340.1.0001.jpg)",
+    "image_quality": "good",
+    "notes": "Line-by-line from zoomed crops; 20 of 147 cipher words carry a [?]. Words, not letters, are counted: a few counted as read are partly restored (r[icurs]) and a few counted as unread are partly read (oc[?]). The file also holds a dateline line, so a whole-file token measure is larger."
+   },
+   "read": "read in part"
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Spanish with consonants written plain and the vowels replaced by marks (a = dash, e = i, i = x, o = dot, u unchanged).",
+  "symbol_kind": "letters",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "unknown",
+  "word_division": "kept",
+  "doubled_letters": "unknown",
+  "notes": "No key or decipherment on the page; the vowel marks were identified from the words (comunicacion, recibido, Jalapa, cinco o seis dias). The 'x' mark and a real letter x look alike (proximo)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Searched DECODE (known.py: no record), one web search and the catalogue on 9 Nov 2026: no reading found; Narvaez 2008/2022 not accessible",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project owner gave the catalogue number; no target-specific intervention.",
+  "tools": [
+   "Claude in Chrome",
+   "PIL",
+   "lang/lm.py"
+  ],
+  "models": [
+   "claude-sonnet-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-09",
+  "last_date": "2026-11-09"
+ },
+ "solution": [
+  {
+   "date": "2026-11-09",
+   "kind": "access",
+   "what": "CEHM catalogue image URL (visor.cehm.org.mx/jzd/...) returned 404; the viewer in Chrome loads /assets/docx/fondos/jzd/... which curl fetches with a Referer.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "transcription",
+   "what": "Transcribed the 22 cipher lines from enhanced crops; 20 words left unread.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference",
+    "key-structure hypothesis"
+   ],
+   "what": "Consonant skeletons matched Spanish words (comunicacion, recibido, movimiento, Jalapa, cinco o seis dias); fixed a = dash, e = i, i = x, o = dot, u = u.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "solver",
+   "technique": [
+    "language-model scoring"
+   ],
+   "what": "lm.best_language on the decode ranked es-modern first (-1.70 against -2.23 for the next).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "sibling key",
+   "what": "Checked CEHM records 33468-33472: I-2.5.341.1 is a letter of J. A. Facio, 15 June 1832, in clear; no key or sibling cipher.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "literature search",
+   "what": "One web search on the item and Plan of Veracruz 1832: no cipher literature found.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-09",
+   "verdict": "not applicable",
+   "notes": "Vowel substitution found by hand from word shapes; the transcription is by word, not aligned sign by sign to a key table, so the token-level test cannot run"
+  },
+  "class": "read in part",
+  "method": "key recovered from ciphertext-only",
+  "key": "recovered",
+  "verification": [
+   "historical consistency"
+  ],
+  "method_basis": "The vowel substitution was found from word shapes in the ciphertext alone and the decode ranks as Spanish; no external plaintext was used.",
+  "contribution": [
+   "key recovered"
+  ],
+  "fraction_read": 0.86,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "transcription.txt, cipher words of lines 1-22: 127 of 147 without a [?]",
+  "gaps": [
+   {
+    "item": "line 4 (about five words) and the words after 'que oc' in line 3",
+    "blocker": "illegible"
+   },
+   {
+    "item": "words in lines 5, 8, 10, 14, 17, 19 and the Sr. named in line 10",
+    "blocker": "illegible"
+   },
+   {
+    "item": "lines 18-22 (several words), signature",
+    "blocker": "illegible"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "I-2.5.340.1",
+    "transcription": "transcription.txt",
+    "decryption": "decode_out.txt",
+    "reading": "reading.txt",
+    "translation": "translation.txt",
+    "state": "read",
+    "summary": "A report sent from Puente Nacional, Veracruz, on the evening of 6 June 1832, to an officer styled V.E. (the text names Jalapa): a section was to leave at dawn, no movement has been made or planned in that direction, the writer hopes for a combination of these forces with those leaving Jalapa, and resources last five or six days. Setting in the 1832 civil conflict is the editor's inference.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Sonnet 5.5",
+     "date": "2026-11-09",
+     "note": "Read as sentences with holes: lines 1-2, 6-7, 9, 11-13, 15-16 and 20-21 read cleanly; lines 3-5, 8, 10, 14, 17-19 and 22 carry gaps. Self-review by the model, not an independent Spanish reader."
+    }
+   }
+  ],
+  "notes": "Partly read; the gaps are words the cursive does not settle at this scan resolution.",
+  "key_file": "key.tsv"
+ }
+}
