@@ -53,3 +53,20 @@ there stay hidden.
 - RAH (manuscript catalogue PDFs, Cifra nova Indiae Orientalis 1601 is a key), Archivos Historicos Provinciales: not reached.
 - Browse DIVERSOS-COLECCIONES 161 and 195 page by page (about 20 + 60 items) for further cipher letters of 1837-40.
 - AHNOB Osuna CT.13 (Infantado 1650) D.1-D.30 not all opened; only 4 items.
+
+## Second pass (9 Nov 2026): AHN Carlist-war series
+
+Coordinator merged rows 1-4 above as leads 2421-2424; they are **excluded from the new batch** (`candidates_batch2.json` holds only new rows;
+`candidates.json` keeps all five).
+
+- Route: PARES series listing `catalogo/contiene/<series id>` + displaytag pages (`series.py`), then `catalogo/description/<id>` for each child
+  (`descs.py`), then images on contact sheets (`sheet.py`). Series 3735630 "Correspondencia carlista" (1833-1837, 61 units: legajos 161, 168, 190)
+  and 3900022 "Correspondencia isabelina" (13 units, legajos 195, 167, 139, 205, 412, 415, 417). Legajos 160, 162, 194, 196 do not appear in either series
+  listing (not found as Carlist correspondence on PARES). No 429; PARES became slow on large images (about 15 s each).
+- All 74 unit descriptions read (`carlista_desc.json`, `isabelina_desc.json`). Only four say anything on cipher: 161,N.1 ("Varias cartas estan cifradas"),
+  161,N.2, 161,N.5 and 195,N.14. The rest are personal letters, covers and reports (cataloguer flags cipher when present, so unflagged items were not opened).
+- Opened and dropped: 161,N.3 (Gomez Labrador, Paris, Sept 1837, 13 images: clear), 167,N.19 (134 pp. of clear reserved letters of the Ejercito de Reserva de
+  Andalucia 1837-38; one letter sends a key: listed in `key_leads.json`).
+- **New row:** 161,N.1 Conde de Alcudia, Vienna 1837 (PARES 3735700): ciphertext on images 11-12 and 20-36+ of 61, many pages, no decipherment seen. known.py and
+  two web searches: nothing.
+- Not opened: 161,N.1 images 41-61; 161,N.4, N.9 (Ripoll), N.8 (a valise key letter), and the 168 units (unflagged).

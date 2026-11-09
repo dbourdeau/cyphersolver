@@ -7,6 +7,7 @@ for l in open('_dl/detail.jsonl', encoding='utf8'):
 KW = re.compile(r'(?i)(?<![a-z])(de|di)?c?[sz]?ifr\w*|zifr\w*|crittogra\w*|nomenclator\w*|segni convenzional\w*|caratteri convenzional\w*|scrittura segreta|alfabeto segreto')
 CIPH = re.compile(r'(?i)\b(in cifra|cifrat\w+|decifr\w+|discifr\w+|cifrario|cifrari|zifra|zifre|ziffr\w+|crittogr\w+|cifre? (segret|diplomatic)\w*|cifra (di|da|per|del|della|dei)\b|con cifra|a cifra|cifrate|senza cifra|in zifra|in cifre)\b')
 NUMER = re.compile(r'(?i)(cifre? (arabe|romane|arabiche|numeric\w*|decimal\w*|rosse|nere)|numeri e cifre|in cifre (arabe|romane)|cifre? (di|dei) (data|anno))')
+STRICT = re.compile(r'(?i)(\bin cifra\b|\bcifrat\w+|\bde?scifr\w+|\bdiscifr\w+|\bdecifr\w+|\bcifrari\w*|\bz[i]?ifr\w+|\bcrittogr\w+|\bnomenclator\w*|\bcifra\b(?=[^|]{0,60}(lettere|lettera|dispacci|corrisp|carteggi|scritt|segret|chiave|alfabet|nunzi|ambasc))|(lettere|lettera|dispacci|corrisp|carteggi|scritt\w+|segret\w*|chiave|alfabet\w+)\W{1,5}(\w+\W+){0,3}cifre?\b(?!\s+(arabe|romane))|\bcifre\b(?=[^|]{0,40}(lettere|dispacci|segret|diplomat)))')
 def clean(t):
     segs = []; seen = set()
     for s in t.split(' || '):
@@ -25,7 +26,7 @@ if __name__ == '__main__':
     res = []
     for k, t in D.items():
         c = clean(t)
-        cs = ctx(c, CIPH)
+        cs = ctx(c, STRICT)
         if cs: res.append((k, H[k]['title'], c, cs))
     print(len(D), 'fetched;', len(res), 'with cipher-context')
     json.dump([{'id': k, 'title': ti, 'ctx': cs} for k, ti, c, cs in res], open('_dl/screen.json', 'w', encoding='utf8'), ensure_ascii=False, indent=0)
