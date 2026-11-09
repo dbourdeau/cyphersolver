@@ -94,20 +94,21 @@ THE CIPHER
     - c. 26v: https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=614511&amp;ua=1010
 
 WHAT IS KNOWN
-  Status: Bare (900 px); adjacent carte (443 c. 314; 451 cc. 24, 27) are other writers' clear letters. Key material: 443 cc. 316-318 (Griffoli, 2 Feb 1555), partly in cipher, with its decipherment at c. 317 (inventory note 41); the key itself in ASF Cifrari II serie F. III.
+  Status: Independent check of WAINUT's targets/griffoli1555, done the same day (Brice Dudout, 6 Nov 2026). The system was rebuilt separately from 443 c. 316v against the period decipherment at c. 317r and agrees: 0 is a null/separator, two-digit codes between zeros, doubled letters written once, codes 12 che, 18 quanto, 85 V. Ecc.a, 15 con. Pre-registered measurement (key from 316v block 2 and the second paragraph of 317r; held out 318r, 4 lines): character agreement 0.899 against 0.273 for the best of 200 shuffled keys, so validated by the 0.85 / best + 0.30 rule. 443 cc. 316-318 are existing (c. 317). Our reading of 443 c. 315r-v (1 Feb 1555, bare): 186 words, 144 sure, 24 probable, 1 restored, 17 unresolved (nomenclator codes 86, 88, 91, 16) = 90.9 %, below 95 %, not published. The key itself (ASF Cifrari II serie F. III) is not online. ASF PAD images: no licence found, not shared. Earlier note: Bare (900 px); adjacent carte (443 c. 314; 451 cc. 24, 27) are other writers' clear letters. Key material: 443 cc. 316-318 (Griffoli, 2 Feb 1555), partly in cipher, with its decipherment at c. 317 (inventory note 41); the key itself in ASF Cifrari II serie F. III.
   Outcome so far: not yet attempted by the project
   Prior-art check: open as far as checked (6 Nov 2026): known.py finds nothing on the filza, the carta or the correspondent; the inventory notes no decipherment and none is written on or beside the page (neighbouring carte checked); ASF holds the chancery keys (Cifrari II serie, "Chiavi delle cifre del Carteggio di Cosimo I dal 1536 al 1573", 3 filze), not online; DECODE's ASFi "Governo Mediceo - cifre" volumes (R5687-R7459) are 17th-18th c.; Tomokiyo and Lasry not searched in this run.
   Check first: Rebuild the key from 443 cc. 316-318 (cipher and decipherment); apply to 443 c. 315 and 451 c. 25.
   Class A: a sibling letter with a decipherment is in the same volume or series, so matching it is the first move.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/griffoli1555/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/griffoli1555/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/griffoli1555/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -147,7 +148,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/griffoli1555/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+2346&amp;target=catalogue+2346
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -165,10 +166,10 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>What is known</h2>
 
 
-<p><b>Status and prior art.</b> Bare (900 px); adjacent carte (443 c. 314; 451 cc. 24, 27) are other writers' clear letters. Key material: 443 cc. 316-318 (Griffoli, 2 Feb 1555), partly in cipher, with its decipherment at c. 317 (inventory note 41); the key itself in ASF Cifrari II serie F. III.</p>
+<p><b>Status and prior art.</b> Independent check of WAINUT's targets/griffoli1555, done the same day (Brice Dudout, 6 Nov 2026). The system was rebuilt separately from 443 c. 316v against the period decipherment at c. 317r and agrees: 0 is a null/separator, two-digit codes between zeros, doubled letters written once, codes 12 che, 18 quanto, 85 V. Ecc.a, 15 con. Pre-registered measurement (key from 316v block 2 and the second paragraph of 317r; held out 318r, 4 lines): character agreement 0.899 against 0.273 for the best of 200 shuffled keys, so validated by the 0.85 / best + 0.30 rule. 443 cc. 316-318 are existing (c. 317). Our reading of 443 c. 315r-v (1 Feb 1555, bare): 186 words, 144 sure, 24 probable, 1 restored, 17 unresolved (nomenclator codes 86, 88, 91, 16) = 90.9 %, below 95 %, not published. The key itself (ASF Cifrari II serie F. III) is not online. ASF PAD images: no licence found, not shared. Earlier note: Bare (900 px); adjacent carte (443 c. 314; 451 cc. 24, 27) are other writers' clear letters. Key material: 443 cc. 316-318 (Griffoli, 2 Feb 1555), partly in cipher, with its decipherment at c. 317 (inventory note 41); the key itself in ASF Cifrari II serie F. III.</p>
 <p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open as far as checked (6 Nov 2026): known.py finds nothing on the filza, the carta or the correspondent; the inventory notes no decipherment and none is written on or beside the page (neighbouring carte checked); ASF holds the chancery keys (Cifrari II serie, "Chiavi delle cifre del Carteggio di Cosimo I dal 1536 al 1573", 3 filze), not online; DECODE's ASFi "Governo Mediceo - cifre" volumes (R5687-R7459) are 17th-18th c.; Tomokiyo and Lasry not searched in this run..</p>
 <p><b>Check first.</b> Rebuild the key from 443 cc. 316-318 (cipher and decipherment); apply to 443 c. 315 and 451 c. 25.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/griffoli1555/NOTES.md" rel="noopener">targets/griffoli1555/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/griffoli1555" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>

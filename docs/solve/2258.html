@@ -84,20 +84,21 @@ THE CIPHER
     - image 88: https://sok.riksarkivet.se/bildvisning/40008933_00088
 
 WHAT IS KNOWN
-  Status: Catalogue: the volume title only. Vetting 5 Nov 2026: bare number runs with no decipherment on images 104 and 114; other letters (18, 22-23, 74, 77, 87-88) carry a decipherment written over the numbers, so the code can be rebuilt from those pairs and applied to the bare passages.
+  Status: Images 104 and 114 belong to the duplicate series (Brice Dudout, 6 Nov 2026): image 100 is a folder titled 'Dupl. ... Cl. Rålambs o. Gotth. Vellings bref t. Kongl. Maj:t 1657' and images 101-132 are cipher duplicates of the letters on 5-99. 114 duplicates Rålamb's letter of 12 June 1657 (87-88, glossed); 104 duplicates the letter on 18 (glossed; its only run reads 'romerske keiserlige residentens tålk'); 102 duplicates the letter on 12, whose ciphered passages are written out in clear and underlined. Code: homophonic letter substitution 1-110 in Swedish, nomenclator/null groups from 105 and 109/309/320/692/905/1070/800. A key rebuilt from glosses on 18, 22, 23, 74 scored 0.850 on the held-out glosses of 87-88 (best of 200 shuffled keys 0.209). Suggested status: read (contemporary decipherment in the volume). WAINUT's targets/ralamb1657 treats 104 and 114 as bare; they are copies of glossed originals. Images: Public Domain Mark 1.0 per the IIIF manifest. Earlier note: Catalogue: the volume title only. Vetting 5 Nov 2026: bare number runs with no decipherment on images 104 and 114; other letters (18, 22-23, 74, 77, 87-88) carry a decipherment written over the numbers, so the code can be rebuilt from those pairs and applied to the bare passages.
   Outcome so far: not yet attempted by the project
   Prior-art check: open as far as checked (5 Nov 2026): known.py finds nothing on the shelfmark or the correspondents; web search found no decipherment or edition of these letters; DECODE, Tomokiyo and Lasry not searched
   Check first: Page the volume for every cipher passage; rebuild the code from the interlinear pairs; compare with the Rákóczi cipher of 2119.5/4 (lead 2243) and Cantersten 1648.
   Class A: a sibling letter with a decipherment is in the same volume or series, so matching it is the first move.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/ralamb1657/NOTES.md
   Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/gramont1529/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); targets/gramont1529/NOTES.md (everything
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/ralamb1657/NOTES.md (everything
    already tried on this cipher, with the files it used); and lang/README.md (shared language models).
-   Put all your work in targets/gramont1529/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   Put all your work in targets/ralamb1657/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
    under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
@@ -138,7 +139,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/gramont1529/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/ralamb1657/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+2258&amp;target=catalogue+2258
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -156,10 +157,10 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>What is known</h2>
 
 
-<p><b>Status and prior art.</b> Catalogue: the volume title only. Vetting 5 Nov 2026: bare number runs with no decipherment on images 104 and 114; other letters (18, 22-23, 74, 77, 87-88) carry a decipherment written over the numbers, so the code can be rebuilt from those pairs and applied to the bare passages.</p>
+<p><b>Status and prior art.</b> Images 104 and 114 belong to the duplicate series (Brice Dudout, 6 Nov 2026): image 100 is a folder titled 'Dupl. ... Cl. Rålambs o. Gotth. Vellings bref t. Kongl. Maj:t 1657' and images 101-132 are cipher duplicates of the letters on 5-99. 114 duplicates Rålamb's letter of 12 June 1657 (87-88, glossed); 104 duplicates the letter on 18 (glossed; its only run reads 'romerske keiserlige residentens tålk'); 102 duplicates the letter on 12, whose ciphered passages are written out in clear and underlined. Code: homophonic letter substitution 1-110 in Swedish, nomenclator/null groups from 105 and 109/309/320/692/905/1070/800. A key rebuilt from glosses on 18, 22, 23, 74 scored 0.850 on the held-out glosses of 87-88 (best of 200 shuffled keys 0.209). Suggested status: read (contemporary decipherment in the volume). WAINUT's targets/ralamb1657 treats 104 and 114 as bare; they are copies of glossed originals. Images: Public Domain Mark 1.0 per the IIIF manifest. Earlier note: Catalogue: the volume title only. Vetting 5 Nov 2026: bare number runs with no decipherment on images 104 and 114; other letters (18, 22-23, 74, 77, 87-88) carry a decipherment written over the numbers, so the code can be rebuilt from those pairs and applied to the bare passages.</p>
 <p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open as far as checked (5 Nov 2026): known.py finds nothing on the shelfmark or the correspondents; web search found no decipherment or edition of these letters; DECODE, Tomokiyo and Lasry not searched.</p>
 <p><b>Check first.</b> Page the volume for every cipher passage; rebuild the code from the interlinear pairs; compare with the Rákóczi cipher of 2119.5/4 (lead 2243) and Cantersten 1648.</p>
-<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gramont1529/NOTES.md" rel="noopener">targets/gramont1529/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/gramont1529" rel="noopener">the folder</a>)</li></ul>
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ralamb1657/NOTES.md" rel="noopener">targets/ralamb1657/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/ralamb1657" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gramont1529/NOTES.md" rel="noopener">targets/gramont1529/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/gramont1529" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>

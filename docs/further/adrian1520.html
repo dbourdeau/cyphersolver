@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <base href="../">
 <title>Adrian of Utrecht to Charles V, 9 September 1520 — read it further</title>
-<meta name="description" content="A cipher read in part (87.0%), with its open gaps and instructions for an AI agent to take it further.">
+<meta name="description" content="A cipher read in part (93.5%), with its open gaps and instructions for an AI agent to take it further.">
 <link rel="stylesheet" href="style.css?v=7fd9e8bc">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
@@ -41,12 +41,12 @@
 </div>
 
 <section class="hero">
-  <p class="kicker"><a href="further.html">Read further</a> · read 87.0% · key from external plaintext &middot; partial</p>
+  <p class="kicker"><a href="further.html">Read further</a> · read 93.5% · key from external plaintext &middot; partial</p>
   <h1>Adrian of Utrecht to Charles V, 9 September 1520</h1>
   <p class="sub">Six cipher lines in the regent of Castile&rsquo;s letter during the Comuneros revolt, printed in 1897 without them as not translatable. Brice Dudout rebuilt the Cardinal&rsquo;s dotted trigraph code from his other letters, validated it on a fresh pair (0.882 of characters), and read the paragraph: 44 of 46 words.</p>
   <dl class="facts">
     <dt>Date</dt><dd>1520</dd>
-    <dt>Read now</dt><dd>87.0% of the cipher tokens give sense</dd>
+    <dt>Read now</dt><dd>93.5% of the cipher tokens give sense</dd>
     <dt>Write-up</dt><dd><a href="adrian1520.html">adrian1520.html</a></dd>
     <dt>Files</dt><dd><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/adrian1520" rel="noopener">targets/adrian1520</a></dd>
     <dt>Open gaps</dt><dd><span class="gap w">code groups open ×2</span></dd>
@@ -68,12 +68,12 @@ THE READING
   Write-up:   https://dbourdeau.github.io/cyphersolver/adrian1520.html (read it first: how the text was read, the key, the reading)
   Date:       1520
   Outcome:    key from external plaintext · partial
-  Read now:   87.0% of the deciphered cipher tokens give sense (pieces below may be untouched)
+  Read now:   93.5% of the deciphered cipher tokens give sense (pieces below may be untouched)
   Files:      https://github.com/dbourdeau/cyphersolver/tree/main/targets/adrian1520 (NOTES.md, key, transcription, reading, scripts)
 
 OPEN GAPS (from NOTES.md, "## Remaining gaps")
-  1. [open-codes: doable now] The first cipher word (six signs, p ‹?› u i c a; one uninventoried shape) and the group fud. - blocker: open-codes; the shape and the group have no value in K7. Lead, not yet tried (7 Nov 2026): the cipher sheet enclosed with the letter of 7 December 1521 (PTR,LEG,2,1,100, fol. 434) is the cipher original of paragraphs Danvila prints deciphered; if K7 was not trained on it, its cipher/plain pairs may carry the missing shapes (needs the PARES images and Danvila's text side by side)
-  2. [open-codes: doable now] Signs still outside the key: the first signs of [tales] and [juntar], the 2nd sign of [villas], ‹ro›, ‹qx›, ‹m.› - blocker: open-codes; no value in K7
+  1. [open-codes: doable now] The group fud. - blocker: open-codes; no value in K7 or K7b, and absent from fol. 434 (ful. = secreta is attested there; fud. is not). The lead of 7 Nov 2026 (fol. 434) was followed on 9 Nov: it gave the first word {quiça}, {quitar} and {villas} (key K7b)
+  2. [open-codes: doable now] Signs still outside the key: the first sign of [tales] (Zx), ‹ro›, and the two signs before mu. in [vuestra] (‹qx› ‹m.›) - blocker: open-codes; no value in K7 or K7b; fol. 434 has no identical shape and always writes cim. mu.
 
 ALREADY TRIED (from NOTES.md, "## Escalation")
   [x] siblings: the Cardinal's other letters of 1520-21 in PTR,LEG,2,1 (23, 30, 32, 61, 68, 70, 71, 73, 85, 88, 92, 99, 100, 107) were opened as training and validation; the contemporary decipherment PTR,LEG,2,1,107 is not the text of this paragraph
@@ -81,6 +81,7 @@ ALREADY TRIED (from NOTES.md, "## Escalation")
   [x] known-keys: K3, K4 and K6 tried and failed (0.851/0.541 words, 0.783, 0.813); K7 validated on 2,1,99 (0.882 of characters); the code of adrian1521 (Estado 8,150) is a different one
   [x] print: Danvila 1897 (the paragraph "no ha podido traducirse"), Bergenroth's Supplement 1868 (does not include the letter), Höfler 1880-81 (wrong date, no Spanish plain text); nothing on Cryptiana; re-checked 2 Nov 2026
   [x] key-rebuild: K7 rebuilt from cipher/plain pairs of the Cardinal's other letters, with sign shapes re-read blind
+  [x] retry: 9 Nov 2026, the unread words retried with the derived key K7b (K7 + fol. 434 against Danvila MHE XXXVIII pp. 547-549, Daniel Bourdeau's lead of 7 Nov); three words gained, three left (fud., [tales], [vuestra])
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
@@ -120,8 +121,8 @@ If you cannot open issues or pull requests, write this report for your human to 
 
 <h2>Open gaps</h2>
 <p><span class="gap w">gold</span> can be done now: the images and the key are online, it needs only work. <span class="gap">grey</span> needs a new source first: a key, a better scan, an edition or the archive.</p>
-<ul class="gaplist"><li><span class="gap w">code groups open</span> The first cipher word (six signs, p ‹?› u i c a; one uninventoried shape) and the group fud. - blocker: open-codes; the shape and the group have no value in K7. Lead, not yet tried (7 Nov 2026): the cipher sheet enclosed with the letter of 7 December 1521 (PTR,LEG,2,1,100, fol. 434) is the cipher original of paragraphs Danvila prints deciphered; if K7 was not trained on it, its cipher/plain pairs may carry the missing shapes (needs the PARES images and Danvila's text side by side)</li><li><span class="gap w">code groups open</span> Signs still outside the key: the first signs of [tales] and [juntar], the 2nd sign of [villas], ‹ro›, ‹qx›, ‹m.› - blocker: open-codes; no value in K7</li></ul>
-<h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> the Cardinal's other letters of 1520-21 in PTR,LEG,2,1 (23, 30, 32, 61, 68, 70, 71, 73, 85, 88, 92, 99, 100, 107) were opened as training and validation; the contemporary decipherment PTR,LEG,2,1,107 is not the text of this paragraph</li><li>&#9745; <b>clear-pages</b> the sentence "por la cifra que va dentro desta" points to an enclosed sheet; 2,1,107 was checked and is not it</li><li>&#9745; <b>known-keys</b> K3, K4 and K6 tried and failed (0.851/0.541 words, 0.783, 0.813); K7 validated on 2,1,99 (0.882 of characters); the code of adrian1521 (Estado 8,150) is a different one</li><li>&#9745; <b>print</b> Danvila 1897 (the paragraph "no ha podido traducirse"), Bergenroth's Supplement 1868 (does not include the letter), Höfler 1880-81 (wrong date, no Spanish plain text); nothing on Cryptiana; re-checked 2 Nov 2026</li><li>&#9745; <b>key-rebuild</b> K7 rebuilt from cipher/plain pairs of the Cardinal's other letters, with sign shapes re-read blind</li></ul>
+<ul class="gaplist"><li><span class="gap w">code groups open</span> The group fud. - blocker: open-codes; no value in K7 or K7b, and absent from fol. 434 (ful. = secreta is attested there; fud. is not). The lead of 7 Nov 2026 (fol. 434) was followed on 9 Nov: it gave the first word {quiça}, {quitar} and {villas} (key K7b)</li><li><span class="gap w">code groups open</span> Signs still outside the key: the first sign of [tales] (Zx), ‹ro›, and the two signs before mu. in [vuestra] (‹qx› ‹m.›) - blocker: open-codes; no value in K7 or K7b; fol. 434 has no identical shape and always writes cim. mu.</li></ul>
+<h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> the Cardinal's other letters of 1520-21 in PTR,LEG,2,1 (23, 30, 32, 61, 68, 70, 71, 73, 85, 88, 92, 99, 100, 107) were opened as training and validation; the contemporary decipherment PTR,LEG,2,1,107 is not the text of this paragraph</li><li>&#9745; <b>clear-pages</b> the sentence "por la cifra que va dentro desta" points to an enclosed sheet; 2,1,107 was checked and is not it</li><li>&#9745; <b>known-keys</b> K3, K4 and K6 tried and failed (0.851/0.541 words, 0.783, 0.813); K7 validated on 2,1,99 (0.882 of characters); the code of adrian1521 (Estado 8,150) is a different one</li><li>&#9745; <b>print</b> Danvila 1897 (the paragraph "no ha podido traducirse"), Bergenroth's Supplement 1868 (does not include the letter), Höfler 1880-81 (wrong date, no Spanish plain text); nothing on Cryptiana; re-checked 2 Nov 2026</li><li>&#9745; <b>key-rebuild</b> K7 rebuilt from cipher/plain pairs of the Cardinal's other letters, with sign shapes re-read blind</li><li>&#9745; <b>retry</b> 9 Nov 2026, the unread words retried with the derived key K7b (K7 + fol. 434 against Danvila MHE XXXVIII pp. 547-549, Daniel Bourdeau's lead of 7 Nov); three words gained, three left (fud., [tales], [vuestra])</li></ul>
 
 
 <h2>Send a result</h2>
