@@ -1,0 +1,179 @@
+{
+ "schema_version": 1,
+ "target": "stgall1395",
+ "title": "St. Gall Incantations (Cod. Sang. 1395 p. 419): the cryptic colophon",
+ "documents": [
+  {
+   "id": "Cod. Sang. 1395 p. 419",
+   "shelfmark": "St. Gallen, Stiftsbibliothek, Cod. Sang. 1395, p. 419 (blank verso of the Matthew leaf, e-codices csg-1395)",
+   "date": "unknown (early medieval; the codex gathers fragments dated 5th-10th century)",
+   "year": "unknown",
+   "country": "Switzerland",
+   "route": "scribe -> readers of the codex",
+   "language": "Latin",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "Stokes and Strachan, Thesaurus Palaeohibernicus II (1903), p. 290: the line is read praedicent omnibus nationibus (cf. Matth. 28:19). Read here from the Wikisource scan and maryjones.us, not from the printed volume.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 3,
+    "distinct": 3,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "published",
+    "source": "Thesaurus Palaeohibernicus II p. 290 as on Wikisource and maryjones.us; letter count and word breaks checked against the e-codices image of p. 419 (not re-transcribed glyph by glyph)",
+    "corrections": 0,
+    "image_quality": "good",
+    "notes": "The line is in capital-like letters with Greek and odd forms (round e, phi, a pi-like glyph, lunate sigma). The printed transcription renders some glyphs with Greek letters; the image was read only for word breaks and the ending KHAATYONIBVS : FINIT."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "other"
+  ],
+  "summary": "A one-line cryptic colophon among the St. Gall Incantations: Latin written largely with substituted letter forms. In the printed reading, only the vowels (o, i, u) and s of omnibus differ from plain letters; the mapping for the rest was not worked out here.",
+  "symbol_kind": "letters",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "kept",
+  "doubled_letters": "unknown",
+  "sibling_key": "none",
+  "notes": "Printed forms prechnytosan / omnibus / nationibus: the two longer words show 12 glyphs for 10 letters, one for omnibus 7 for 7. No letter table was recovered here; the cipher type is open."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Stokes and Strachan, Thesaurus Palaeohibernicus II (1903), p. 290",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "transcription",
+   "images",
+   "published reading"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Set the goal 'solve The St. Gall Cryptograms' without naming a text, then described them as computus-manuscript strings (not found), and later asked for the write-up, commit and push.",
+  "tools": [
+   "WebSearch",
+   "WebFetch",
+   "built-in browser for e-codices IIIF crops"
+  ],
+  "models": [
+   "claude-sonnet-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-09",
+  "last_date": "2026-11-09"
+ },
+ "solution": [
+  {
+   "date": "2026-11-09",
+   "kind": "literature search",
+   "what": "Searched the repository, catalogue, leads and the web for a target called the St. Gall Cryptograms: none exists; the nearest St. Gallen cryptogram is the colophon of the St. Gall Incantations (Cod. Sang. 1395), already read by Stokes and Strachan.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "literature search",
+   "what": "Checked the user's description (short strings of non-standard letters in computus manuscripts) and one search-engine claim of a cipher on p. 58 of Cod. Sang. 459; neither exists (p. 58 is an Easter-table page).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "access",
+   "what": "Located the colophon on e-codices csg-1395 p. 419 (IIIF) and cropped the line at full resolution.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Compared the printed transcription with the image (word breaks, ending KHAATYONIBVS : FINIT) and tested the published reading letter by letter: omnibus is matched (o, i, u, s written as odd forms); nationibus fits with an extra leading K and a doubled A; praedicent does not align.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "solver",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Tried to derive the letter table from the 31-glyph line by word-length and glyph comparison; too short to test a key, none recovered.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "none",
+  "method": "read from existing decipherment",
+  "method_basis": "Stokes and Strachan (1903) printed the reading praedicent omnibus nationibus; here the printed transcription was matched to the e-codices image for word breaks and endings, and the reading was taken from the print without a recovered letter table.",
+  "contribution": [
+   "transcription"
+  ],
+  "first_break": false,
+  "fraction_read": 1.0,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "The whole colophon (three words and FINIT) is read in the printed edition; none of it was independently deciphered here.",
+  "codes_open": {
+   "open": 0,
+   "total": 0,
+   "tokens_open": 0
+  },
+  "verification": [
+   "independent clear copy"
+  ],
+  "notes": "Nothing is added to the published reading. The letter-level key is not recovered here: the first word does not align letter for letter with praedicent, and the leading K and doubled A of the last word are unexplained. Whether this line is what the user meant by the St. Gall Cryptograms is unknown.",
+  "credits": [
+   {
+    "who": "stokes-strachan",
+    "role": "key or decipherment used",
+    "note": "Read the cryptic line as praedicent omnibus nationibus (Thesaurus Palaeohibernicus II, p. 290), known here through Wikisource and maryjones.us, not from the printed volume",
+    "date": "1903",
+    "source": "Whitley Stokes and John Strachan, Thesaurus Palaeohibernicus II (1903), p. 290"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "Cod. Sang. 1395 p. 419",
+    "label": "Cryptic colophon among the St. Gall Incantations",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading_latin.txt",
+    "translation": "translation_en.txt",
+    "state": "read",
+    "reading_review": {
+     "grade": "A",
+     "by": "Stokes and Strachan (Thesaurus Palaeohibernicus)",
+     "date": "1903",
+     "note": "Published reading; not re-reviewed here."
+    },
+    "summary": "A closing line in cryptic letters among the Irish incantations, read in print as a Gospel commission: let them preach to all nations.",
+    "language": "la",
+    "read_share": 1.0
+   }
+  ]
+ }
+}
