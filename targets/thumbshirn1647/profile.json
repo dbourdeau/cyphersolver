@@ -1,0 +1,220 @@
+{
+ "schema_version": 1,
+ "target": "thumbshirn1647",
+ "title": "The Saxe-Altenburg envoys at the Westphalian congress (Thumbshirn / Carpzov to J. F. von Brand), LATh - StA Altenburg, Schönbergische Sammlung Nr. 85: the 1647 homophonic key rebuilt and validated; a postscript of 1648/49 read with Thumbshirn's key",
+ "documents": [
+  {
+   "id": "nr85-1647-letters",
+   "read": "read",
+   "shelfmark": "Landesarchiv Thüringen - Staatsarchiv Altenburg, Schönbergische Sammlung Nr. 85, images 0547-0607 (letters of 13 Nov - 25 Dec 1647 with their decipherments of the time)",
+   "date": "13 Nov - 25 Dec 1647",
+   "year": 1647,
+   "country": "Germany",
+   "route": "Saxe-Altenburg envoys (Wolfgang Conrad von Thumbshirn, Dr August Carpzov) -> Johann Friedrich von Brand",
+   "places": {
+    "from": "Osnabrück",
+    "to": "Altenburg"
+   },
+   "language": "German, Latin",
+   "pages": 14,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "decipherments of the time on separate slips for each letter (images 0549, 0559, 0571, 0581, 0599, 0605)"
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "ThULB Jena digitisation (urn:nbn:de:urmel-stat-251122), CC BY 3.0",
+    "image_quality": "good",
+    "notes": "Held-out letter of 24 Dec transcribed and hashed before its decipherment was opened; one AI transcriber."
+   }
+  },
+  {
+   "id": "nr85-0837",
+   "read": "read",
+   "shelfmark": "Landesarchiv Thüringen - Staatsarchiv Altenburg, Schönbergische Sammlung Nr. 85, fol. 399 (image 0837), postscript",
+   "date": "late 1648 / early 1649 (undated)",
+   "year": 1648,
+   "country": "Germany",
+   "route": "[Saxe-Altenburg envoy] -> Johann Friedrich von Brand",
+   "language": "Latin, German",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "none: no decipherment of the time found"
+   },
+   "length": {
+    "tokens": 112,
+    "distinct": 19,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_0837.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "ThULB Jena digitisation (urn:nbn:de:urmel-stat-251122), CC BY 3.0",
+    "image_quality": "good",
+    "notes": "One AI transcriber; two numbers under stains marked [x]."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "monoalphabetic"
+  ],
+  "summary": "Two systems: the 1647 letters use a homophonic substitution in numbers (2-3 numbers per letter, 5 to 90), not in the file; Thumbshirn's signed key (image 0003) is a simple substitution of 24 letters in numbers 1-52, written in a continuous run without word breaks, used in the postscript 0837.",
+  "symbol_kind": "digits",
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "word_division": "none",
+  "sibling_key": "Thumbshirn's key (image 0003) for the postscript; the 1647 key is rebuilt from the decipherments of the time",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "key_order": "random"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Every cipher passage of 1647 (and the note 0583) has its decipherment of the time in the file, so the 1647 texts are existing. No edition of the letters of Nr. 85 found (ThULB record, Acta Pacis Westphalicae, Meiern, Brunert); no target, lead or issue in this repository (re-checked 9 Nov 2026). The postscript 0837 has no decipherment of the time: new.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "key from archive",
+   "known plaintext"
+  ],
+  "attack": "key from archive",
+  "human_role": "Brice Dudout set the rules (protocol hashed before any decoding, one held-out measurement, thresholds fixed in advance). AI agents transcribed, aligned, built the key, measured and read. No human palaeographer checked the transcriptions.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-11-09",
+  "last_date": "2026-11-09"
+ },
+ "solution": [
+  {
+   "date": "2026-11-09",
+   "kind": "transcription",
+   "what": "Thumbshirn's signed key (image 0003) transcribed and hashed before decoding: simple substitution, 24 letters.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "key from source",
+   "what": "Key 0003 tried descriptively on the held-out letter of 24 Dec 1647: 0.13 (chance level): the 1647 letters use another system.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "sibling key",
+   "what": "1647 homophonic key rebuilt from the decipherments of the time of 13 Nov, 17 Nov, 22 Dec and 25 Dec 1647 (number-by-number alignments, majority value), frozen before the held-out decipherment was opened.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One measurement on the held-out letter of 24 Dec 1647 (9 passages, 441 gloss letters): character agreement 0.966 vs best of 200 shuffled keys 0.245 (margin 0.721); validated by thresholds fixed in advance.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "reading",
+   "what": "Postscript 0837 (fol. 399) decoded with key 0003 unchanged: 112 numbers, 23 words, 20 certain and 3 probable (100% read by sense); outside the measured system (declared).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "method": "read with known key",
+  "method_basis": "The postscript 0837 is read with Thumbshirn's own key sheet (image 0003), unchanged. The 1647 homophonic key was rebuilt from the decipherments of the time and validated on a held-out letter; the 1647 texts themselves are known from those decipherments.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "verification": [
+   "statistical test",
+   "contemporary decipherment",
+   "key confirms"
+  ],
+  "validation": {
+   "date": "2026-11-09",
+   "verdict": "pass",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py) of the 1647 homophonic key: 0.966 vs best of 200 shuffled keys 0.245. The postscript 0837 uses the other system (key 0003) and is not covered by this test."
+  },
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading_0837.md: 23 of 23 words read by sense (20 certain, 3 probable); the 1647 letters are read by their decipherments of the time.",
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "1647 homophonic key rebuilt from the decipherments of the time and validated on a held-out letter (0.966 vs 0.245); key 0003 transcribed; postscript 0837 read",
+    "date": "2026-11-09"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "Thumbshirn's key sheet (image 0003), used unchanged for the postscript 0837; the decipherments of the time of the 1647 letters, from which the homophonic key was learnt",
+    "date": "1647"
+   },
+   {
+    "who": "lath",
+    "role": "key or decipherment used",
+    "note": "Landesarchiv Thüringen - Staatsarchiv Altenburg, Schönbergische Sammlung Nr. 85; digitisation ThULB Jena (urn:nbn:de:urmel-stat-251122), licence CC BY 3.0",
+    "date": "1647"
+   }
+  ],
+  "key_file": [
+   "key_0003.tsv",
+   "key_1647.tsv"
+  ],
+  "texts": [
+   {
+    "doc": "nr85-0837",
+    "label": "Postscript, fol. 399 (image 0837), late 1648 / early 1649",
+    "transcription": "transcription_0837.txt",
+    "decryption": "reading_0837.md",
+    "reading": "reading_0837.md",
+    "translation": "reading_0837.md",
+    "language": "de",
+    "state": "read",
+    "read_share": 1.0,
+    "summary": "A personal lament put into cipher: 'O wretched servants that we are! God knows, and has seen the tears I have already shed so often over the shameful servitude into which we have been led.'",
+    "reading_review": {
+     "grade": "A",
+     "by": "Brice Dudout (with Claude)",
+     "date": "2026-11-09",
+     "note": "short text, full sense, 3 letters under stains; declared deviation: read with the period key 0003 unchanged and by sense, not covered by the pre-registered measurement (which tested the other, 1647 system)"
+    }
+   }
+  ],
+  "notes": "New text: the postscript 0837 only. The 1647 cipher passages are existing (decipherments of the time); what is new there is the rebuilt homophonic key. Images: ThULB digitisation under CC BY 3.0 (credit LATh - StA Altenburg / ThULB). Possibly related: catalogue 1639 (Magdeburg envoys at Osnabrück, LASA A 1 Nr. 530), not compared."
+ }
+}
