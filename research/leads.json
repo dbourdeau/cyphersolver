@@ -8854,7 +8854,7 @@
    "scored": "sweep",
    "access": "online",
    "access_note": "online (backfilled 28 Oct 2026 from the entry: ...not stated. Not on DECODE. Look at Tanner 1917 pp. 649-650 (digitised on e-rara / archive.org?) for a printed reading; if none, r...)",
-   "vetting_note": "needs Chrome: https://books.google.fr/books?id=OHQ7AQAAMAAJ&newbks=0&q=Turreo (old UI snippets). Tried this pass: Tanner, Der Kampf ums Eschental (Leemann 1917, Schweizer Studien zur Geschichtswissenschaft IX.2, Google id OHQ7AQAAMAAJ) is snippet-only; the gdata feed gave only two snippets ('Laveno ... Roveredo ... Turreo' on the Turreo-Laveno pages) with no cipher text, jscmd SearchWithinVolume2 returns the about page by curl, archive.org and HathiTrust have no copy. Staatsarchiv Zurich A 225.1 Nr. 182 is microfilm only, no image. Whether Tanner's Beilagen pp. 649-650 print a decipherment or only a facsimile stays unanswered, so no open or read."
+   "vetting_note": "Ciphertext not seen. 9 Nov 2026: Staatsarchiv Zuerich record ID=5421134 opens in Chrome (text only: 'Chiffriertes Schreiben', Geheimschrift, original on paper, Italian, scribe Michele di Casasco (?), Kopien: Mikrofilm; Publikationen: 'Edition: Karl Tanner, Der Kampf ums Eschental ... Zuerich 1917, Beilagen S. 649-650 (mit Abb.)', so a printed edition with facsimile exists and whether it prints a reading is unknown); no image offered. Tanner 1917 has no archive.org copy (advancedsearch 0 hits) and Google Books gdata gives snippets only; web search on Tanner/Turreo/Laveno found nothing. Needs the Tanner pages (library copy or e-rara/Google Books full view) or a microfilm copy; the printed edition may already decipher it, so no open."
   },
   {
    "id": 1244,
@@ -9890,92 +9890,6 @@
    }
   },
   {
-   "id": 1270,
-   "counted": true,
-   "seen": "catalogue",
-   "source": "BNE/Hispana sweep",
-   "prior_art": "partly read: Tomokiyo 2025 (AlonsoSanchez.htm) and Kolosova Ko.2 cover Juan Manuel's 1521-22 letters; 1497 letter is repo catalogue 1014 (read)",
-   "score_note": "Scored from the BNE catalogue description (via the Europeana record API) during the Oct 2026 BNE/Hispana sweep (research/bne_hispana/); not viewed",
-   "decode_ids": [],
-   "year": 1496,
-   "date": "Nov 1496 - Nov 1522",
-   "title": "Juan Manuel (Genoa, Rome) → Catholic Monarchs and Charles V: seven letters partly in cipher",
-   "correspondents": "Juan Manuel, imperial ambassador → Ferdinand and Isabella, Charles V",
-   "place": "Genoa / Rome",
-   "language": "Spanish",
-   "region": "Spain",
-   "period": "1497-1559",
-   "shelfmark": "Madrid, Biblioteca Nacional de España, Gayangos; BDH bdh0000186690",
-   "folio_note": "seven letters 1496-1522, 'parcialmente cifradas'",
-   "cls": "B",
-   "status": "BNE catalogue: partly ciphered. Tomokiyo (2025, cryptiana AlonsoSanchez.htm) covers Juan Manuel's 1521-22 correspondence, so the 1520-22 letters may be known; the 1496-1519 ones are earlier and possibly open. Not on DECODE. Checked 28 Oct 2026: Overlaps: 1521-22 letters read by Tomokiyo/Kolosova; 1497 letter duplicates catalogue 1014. Only other-dated letters in the seven may be open.",
-   "why": "Possibly late-15th-century Spanish diplomatic cipher (1496-1500) if early letters carry cipher; would bear on the repo's oldest-cipher search.",
-   "importance": 4,
-   "solvability": 3,
-   "difficulty": 3,
-   "verify": "Date the seven letters on BDH and keep only those outside 1497 and 1521-22.",
-   "links": [
-    {
-     "label": "BDH viewer",
-     "href": "http://bdh-rd.bne.es/viewer.vm?id=0000186690&page=1"
-    },
-    {
-     "label": "Europeana record",
-     "href": "https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000186690"
-    },
-    {
-     "label": "Tomokiyo, Sánchez and Juan Manuel",
-     "href": "https://cryptiana.web.fc2.com/code/AlonsoSanchez.htm"
-    }
-   ],
-   "ark": "",
-   "scored": "sweep",
-   "access": "online",
-   "access_note": "online (backfilled 28 Oct 2026 from the entry: link BDH viewer (http://bdh-rd.bne.es/viewer.vm?id=0000186690&page=1))",
-   "vetting_note": "BNE Digital blocked on 3 Nov 2026 in Chrome: no checkbox showed; the Crolope card loaded, then the viewer returned 'SE HA BLOQUEADO EL ACCESO POR PARTE DE LOS SISTEMAS DE SEGURIDAD' (Cloudflare 1000-series). Stopped on the host, nothing clicked through, no retry. Not opened this pass: BDH 0000186690, seven letters undated on the card; those outside 1497 and 1521-22 not identified."
-  },
-  {
-   "id": 1271,
-   "counted": true,
-   "seen": "catalogue",
-   "source": "BNE/Hispana sweep",
-   "prior_art": "open (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed; Mirabel not mentioned)",
-   "score_note": "Scored from the BNE catalogue description (via the Europeana record API) during the Oct 2026 BNE/Hispana sweep (research/bne_hispana/); not viewed",
-   "decode_ids": [],
-   "year": 1622,
-   "date": "1621-1624",
-   "title": "Marquis of Mirabel (Paris) → Count of Gondomar: letters, some in cipher",
-   "correspondents": "Antonio de Zúñiga y Dávila, Marquis of Mirabel → Diego Sarmiento de Acuña, Count of Gondomar",
-   "place": "Paris / Madrid",
-   "language": "Spanish",
-   "region": "Spain",
-   "period": "1611-1650",
-   "shelfmark": "Madrid, Biblioteca Nacional de España, Mss/18619 (Gayangos); BDH bdh0000141369",
-   "folio_note": "volume of originals and copies; 'algunas cifradas'",
-   "cls": "C",
-   "status": "BNE catalogue: some letters ciphered, on the Valtelline and European politics. No decipherment noted. Not on DECODE. Checked 28 Oct 2026: Verified 28 Oct: no reading found.",
-   "why": "Spanish ambassador in Paris on the Valtelline crisis, writing to Gondomar; a 1620s Spanish diplomatic cipher.",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 3,
-   "verify": "View ciphered letters; find Gondomar-era Spanish ambassador cipher.",
-   "links": [
-    {
-     "label": "BDH viewer",
-     "href": "http://bdh-rd.bne.es/viewer.vm?id=0000141369&page=1"
-    },
-    {
-     "label": "Europeana record",
-     "href": "https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000141369"
-    }
-   ],
-   "ark": "",
-   "scored": "sweep",
-   "access": "online",
-   "access_note": "online (backfilled 28 Oct 2026 from the entry: link BDH viewer (http://bdh-rd.bne.es/viewer.vm?id=0000141369&page=1))",
-   "vetting_note": "BNE Digital blocked on 3 Nov 2026 in Chrome: no checkbox showed; the Crolope card loaded, then the viewer returned 'SE HA BLOQUEADO EL ACCESO POR PARTE DE LOS SISTEMAS DE SEGURIDAD' (Cloudflare 1000-series). Stopped on the host, nothing clicked through, no retry. Not opened this pass: BDH 0000141369 (Mss/18619; check against Mss. 18428); ciphered letters not located."
-  },
-  {
    "id": 1273,
    "counted": true,
    "seen": "catalogue",
@@ -10484,7 +10398,7 @@
    "scored": "sweep",
    "access": "online",
    "access_note": "Houghton digital object urn-3:FHCL.HOUGH:38447771 (checked 28 Oct 2026)",
-   "vetting_note": "Harvard answers 403 in Chrome as well as to curl, a plain 403 with no CAPTCHA: https://hollisarchives.lib.harvard.edu/catalog/hou01430_hou01430c00499, and the digital object https://nrs.harvard.edu/urn-3:FHCL.HOUGH:38447771. Neither the record nor the leaf has been seen, so 'Part of text in code' is unverified and a decipherment on the leaf cannot be excluded. A Google Books search on Grantham, Thynne, 1778 and cipher found nothing. Repo note research/uk_tna says Grantham's Bedfordshire letters carry decoded text, unchecked for this one. Needs Harvard access from another network or a Houghton request."
+   "vetting_note": "Ciphertext not seen. 9 Nov 2026: Chrome again gets '403 Forbidden' from hollisarchives.lib.harvard.edu/catalog/hou01430_hou01430c00499 (plain 403, no CAPTCHA, nothing clicked), so the record and the Houghton digital object urn-3:FHCL.HOUGH:38447771 are unreachable; 'Part of text in code' is only the HOLLIS description. Repo notes (research/uk_tna, tna_discovery) say the sibling Grantham letters in Bedfordshire L 30/15 carry decoded text, so this duplicate may also carry a decipherment or be a copy of one. Needs Harvard access from another network or a Houghton scan request."
   },
   {
    "id": 1286,
@@ -11585,7 +11499,7 @@
    "ark": "",
    "scored": "sweep",
    "access": "online",
-   "vetting_note": "Re-checked 6 Nov 2026 on Gallica italien 1590 (btv1b10037390v, openapi.bnf.fr IIIF, 550 canvases): f.392 (canvas 393) is a slip of 9 lines of pure cipher signs signed Antonius with 'datum ut supra' and a seal, f.391 before it is a clear Italian letter of 7 Sept 1464, f.393 after it another clear letter, and no 'Traduzione' or interlinear gloss on or beside f.392; f.285 (canvas 286) is a short slip with a clear incipit and about six lines of cipher, no gloss. Cipher is therefore seen on both leaves. The covering edition is still unopened: Dispacci sforzeschi da Napoli vol. VI (1 Jan 1464 to 15 Jul 1465, Laveglia/Carlone; vols V 1462-63 and VII 1465-66 are listed by booksellers, vol. VI has no catalogue page or online text found), dispaccisforzeschi.it now redirects to an unrelated gambling domain and the core.ac.uk PDF returned a JavaScript wall. Three more searches (Dispacci vol. VI; Trezzo 8 Sept 1464 cifra; Trezzo 1464 Potenze Estere decifrazione) found no printed or filed decipherment, but without the volume a printed one cannot be excluded. Needs a library copy or index of Dispacci vol. VI to check 8 Sept 1464 and the undated slip."
+   "vetting_note": "9 Nov 2026: viewed Gallica ital. 1590 (btv1b10037390v, openapi.bnf.fr) canvas 393 = f.392: 9 lines of pure cipher signs signed Antonius, 'datum ut supra', seal, no gloss or Traduzione on or beside it; canvas 286 = f.285: short slip, clear incipit, ~6 lines of cipher, no gloss. known.py: no ledger/DECODE hit (only own leads, sforza1597 notes, venice_milan_print README which lists the 1463-64 Trezzo 'Traduzioni' as the Naples key; Trezzo key sheets among DECODE cart. 1597 R5329-R5344 not tested). Three more web searches (8 Sept 1464 Trezzo/Ferrante camp, Trezzo cifra Potenze Estere, Dispacci vol. VI) found nothing; Google Books feed lists vols for 1458-61 only, vol. VI (1464-65) not reachable. Blocker: Dispacci sforzeschi da Napoli vol. VI (1 Jan 1464-15 Jul 1465) unopened, so a printed decipherment of these two letters cannot be excluded; needs a library copy or index."
   },
   {
    "id": 1322,
@@ -16334,7 +16248,7 @@
    "access_note": "online: BNCF scans in the Internet Culturale viewer (record linked); reuse conditions of BNCF not checked",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "www.internetculturale.it now shows an error page in Chrome (another tab on that host showed a 'Firewall Captcha Authentication' page; not touched), so the scan could not be re-opened; the earlier note's view of BNCF0003856518 stands, about 5 signs for one name inside a clear letter. One more search found nothing on the cipher of 28 Dec 1509. Deciding editions not opened: Machiavelli, Opere III (UTET 1984) no. 181, pp.325-26, and Bausi 2022. Needs those volumes."
+   "vetting_note": "9 Nov 2026: known.py only own leads (no DECODE/ledger hit); Internet Culturale detail page loads in Chrome but the BNCF image back end fails ('Failed to load the image to display', checked on sister record VI/62 same day), so IV/104 leaf not viewed by me; web searches (Machiavelli 28 Dec 1509 'ubi sit' cifra, Bausi 2022, Carte Machiavelli IV/104) found no study of the cipher phrases. Blocker: BNCF images down and Machiavelli Opere III (UTET 1984) no. 181 pp. 325-26 / Bausi Lettere 2022 unopened, which may print the phrases resolved."
   },
   {
    "id": 1552,
@@ -16428,7 +16342,7 @@
    "access_note": "online: BNCF scans in the Internet Culturale viewer (record linked); reuse conditions of BNCF not checked",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Edition still unopened: Lorenzo de' Medici, Lettere XVI (Boninger, Giunti 2011, ISBN 9788809774186) covers 22 Jan 1490. Tried this pass: archive.org advancedsearch (no vol. XVI), Google Books feed (id ZlhaAQAACAAJ, view_no_pages; API quota exhausted), web search for the letter and for Marco Vito's work (no Pandolfini hit). Archive description does show cipher ('C. 3 e un postscriptum cifrato: in interlinea sono decifrate solo alcune parole'), but vol. VI printed its Pandolfini slip deciphered, so XVI may print this one. Leaf also unreachable: Internet Culturale magparser/objdownload route returns image URLs, but the BNCF image back end answers with a 404 placeholder image today (and teca.bncf viewer gives HTTP 500). Would unblock: a copy of Lettere XVI (letter no. for 22 Jan 1490), or a later retry of the BNCF images."
+   "vetting_note": "9 Nov 2026: opened VI/62 viewer in Chrome (7 images, c. 3r labelled) but the BNCF back end returns 'Failed to load the image to display' and shows only the cover, so c. 3 cipher postscript not seen by me; record text says only some words glossed interlinear (partial decipherment on the leaf itself). known.py: no DECODE/ledger hit for Pandolfini 1490. Web searches (Lettere XVI Boninger 2011 22 Jan 1490 Pandolfini; Marco Vito Medici ciphers) found nothing on this postscript; Lettere XVI (Giunti 2011) unopened and may print it deciphered. Blocker: BNCF images and Lettere XVI."
   },
   {
    "id": 1557,
@@ -16714,7 +16628,7 @@
    "access_note": "online: digitised on Gallica (ark in links); page-to-view mapping not done",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Re-checked 6 Nov 2026: Gallica manifest btv1b90007170 is labelled 'Lorraine 367' and carries the BAM description (1667-1670, 'deux dépêches chiffrées', relation cc34620f/cd0e55, 172 feuillets), but the 289 views are double-page openings of 16th-century German hands with foliation running past f.254 (view 150 = f.139 Reichstag appeal text, view 250 = f.254 German), so the images do not match the catalogue and no 1667 Lille despatch can be reached. Neighbouring Gallica arks carry other Lorraine numbers (257, 499, 222), so there is no obvious corrected ark; BAM (archivesetmanuscrits.bnf.fr) gives 403 to scripts. Three further searches (Lorraine 367 siège de Lille, Risaucourt 1667, volume title) found no edition or study. Needs Chrome on https://archivesetmanuscrits.bnf.fr/ark:/12148/cc34620f/cd0e194 for the folio mapping, or a BnF Manuscrits query about which ark holds Lorraine 367."
+   "vetting_note": "9 Nov 2026: BAM record opened in Chrome: Lorraine 367 'I - 1667-1670', fol. 148 'Lettres ... sur le siege de l'Ille ... ; deux depeches chiffrees' (Lorraine 367-372 grouped under Catalogue Philippe Lauer; Lorraine 372 fol. 139 is the 'Extract aus dem Regenssburg' item). Gallica btv1b90007170 is titled Lorraine 367 (172 ff.) but its 289 views I sampled (5, 100, 150, 250, 285) are double-page 16th-century German hands, so it matches Lorraine 372 or is mislabelled, and the 1667-69 French despatches cannot be reached; no other ark found. known.py: only own leads. Web search for Gallica Lorraine 367 and the siege of Lille despatches found no edition or study. Blocker: correct digitisation of Lorraine 367 (ask BnF Manuscrits which ark holds it)."
   },
   {
    "id": 1575,
@@ -40587,6 +40501,77 @@
    "access_note": "Palermo State Archive reading room; the Palermo digital library may hold scans (host not reachable from this machine)",
    "ark": "",
    "scored": "sweep"
+  },
+  {
+   "id": 2414,
+   "counted": true,
+   "region": "Low Countries",
+   "seen": "catalogue",
+   "needs_archive_scan": "yes",
+   "source": "Belgium KBR/archives sweep (second pass over the AGATHA EAD inventories of research/belgium_lux, wider terms), 9 Nov 2026",
+   "year": 1658,
+   "date": "1656-1660",
+   "title": "J. D'Uguarte, letters from Brussels to Ignace Whyte (later baron de Vicque, marquis d'Albeville), partly in cipher",
+   "correspondents": "J. D'Uguarte (Brussels) -> Ignace Whyte / Ignacio de Vicque",
+   "place": "Brussels",
+   "language": "French, part in cipher",
+   "period": "1651-1700",
+   "shelfmark": "Rijksarchief te Antwerpen (State Archives, Antwerp), Archief van de familie Whyte, de Vicq(ue) en d'Albyville, inv. 511 - Y21/004, no. 3 (EAD BE-A0511_106986_104982)",
+   "folio_note": "1 folder (omslag); the whole fonds is 15 items, 0.12 m",
+   "cls": "B",
+   "status": "Inventory note: 'Opgesteld deels in het Frans, deels in cijferschrift. Deze brieven handelen eveneens over militaire ontwikkelingen en diplomatieke onderhandelingen in het algemeen.' No key in the fonds (items 1-15 listed: personal letters, the 1660-61 London mission papers, Spanish letters 1665-72, accounts) and no decipherment mentioned.",
+   "why": "Whyte was in Brussels among the exiled-royalist and Spanish circle (a letter of his to Ormond, 12 June 1660, is in Bodleian MS Carte 30) and later served James II as envoy at The Hague. The folder sits next to papers on his mission to London to negotiate the return of imprisoned Spanish soldiers (1660-61), so the cipher is probably Spanish Netherlands or royalist-exile diplomatic traffic. A small, self-contained cipher folder from a little-studied fonds.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 3,
+   "score_note": "Scored from the item-level inventory description (EAD) only, 9 Nov 2026; not viewed. Solvability 2: no key in the fonds, probable nomenclator.",
+   "verify": "Order a scan or consult the folder at the Rijksarchief Antwerpen; check whether D'Uguarte is the Spanish Netherlands official Juan/Jean de Uguarte; compare with Spanish Netherlands ciphers of the 1650s (SEG 2 keys, DECODE R958-R965).",
+   "links": [
+    {
+     "href": "https://agatha.arch.be/en/data/ead/BE-A0511_106986_104982.ead.xml",
+     "label": "AGATHA EAD inventory (Whyte, de Vicq(ue), d'Albyville)"
+    }
+   ],
+   "access_note": "Description only; no images online (AGATHA shows no digital object for this fonds). Scan order or reading room at the Rijksarchief te Antwerpen (Beveren), or via the Rijksarchief's inventory PDF.",
+   "prior_art": "open as far as checked (9 Nov 2026): known.py (Whyte, Duguarte) finds nothing in catalogue, leads or DECODE; web search on Whyte/Vicque/Albyville with cipher and on D'Uguarte found no edition or decipherment; Lasry and Tomokiyo not found for it.",
+   "ark": "",
+   "access": "archive",
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-09",
+    "by": "claude vetting agent v3 (nov9)",
+    "seen": {
+     "kind": "not online",
+     "where": "AGATHA EAD https://agatha.arch.be/en/data/ead/BE-A0511_106986_104982.ead.xml, fetched 9 Nov 2026 (component F_00003_000, unitid 3, Rijksarchief Antwerpen 511 - Y21/004 - 3); the EAD has no dao/digital object",
+     "extent": "1 omslag (folder), letters of J. D'uguarte from Brussels, 1656-1660; number of leaves not stated",
+     "cipher": "EAD note quoted: 'Opgesteld deels in het Frans, deels in cijferschrift. Deze brieven handelen eveneens over militaire ontwikkelingen en diplomatieke onderhandelingen in het algemeen.' No key or decipherment is listed anywhere in the 15-item fonds."
+    },
+    "prior_art": {
+     "decode": "known.py (Whyte, Duguarte, Uguarte, Albyville, Vicque): no DECODE record; web search for DECODE Belgian 1656-60 records found none",
+     "tomokiyo": "No Tomokiyo/cryptiana page for Uguarte or Ignace Whyte found in web searches; the Thurloe White-brothers material in this repo (targets/dugard1656) is a different letter",
+     "lasry": "No Lasry paper or GL.htm entry on this item found",
+     "edition": "No edition of the Whyte papers found; only the 2002 Van Honacker inventory (the EAD)",
+     "literature": "No HistoCrypt/Cryptologia item found for Uguarte or the Whyte fonds in 3 web searches"
+    },
+    "key_check": "No key in the fonds (items 1-15 are personal letters, the 1660-61 London mission papers, Spanish letters 1665-72, accounts, 1687-88 letters). Related only by name: du Gard to White 1656 (targets/dugard1656, Thurloe) is a different, unsolved letter with no key.",
+    "duplicates": "DUPLICATE of catalogue entry 1958 (J. d'Uguarte, letters from Brussels partly in cipher, 1656-1660, same fonds BE-A0511_106986_104982, item 3; its record link carries the same eadid; its shelfmark 'file 448 item 3' is the Archives Portal Europe form of the same component). known.py 'Uguarte' hit 1958 in catalogue.json.",
+    "verdict": "duplicate",
+    "closed": "Same item as catalogue 1958 (BE-A0511_106986_104982, no. 3: Uguarte letters 1656-60); lead 2414 adds only the Antwerp shelfmark 511 - Y21/004 - 3 and the Whyte context",
+    "searches": [
+     {
+      "query": "Ignace Whyte Vicque Albyville D'Uguarte cipher letters Brussels 1656 Spanish soldiers London mission",
+      "result": "No source naming Uguarte or Whyte; only this repo's ledger (dugard1656, Thurloe intercepts) surfaced"
+     },
+     {
+      "query": "Uguarte OR Huguarte Brussels 1656 Whyte Spanish Netherlands Thurloe state papers cipher",
+      "result": "No Uguarte hit; Thurloe 1656 items on du Gard to White exist (different letter)"
+     },
+     {
+      "query": "DECODE database Spanish Netherlands 1656 1660 cipher Whyte Ignatius White Brussels",
+      "result": "No DECODE Belgian/Dutch 1656-60 record found; only the general DECODE paper"
+     }
+    ]
+   }
   }
  ]
 }

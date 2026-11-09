@@ -40212,6 +40212,137 @@
    "repository": "bne"
   },
   {
+   "id": 1270,
+   "counted": true,
+   "seen": "image",
+   "source": "BNE/Hispana sweep",
+   "prior_art": "partly read: Tomokiyo 2025 (AlonsoSanchez.htm) and Kolosova Ko.2 cover Juan Manuel's 1521-22 letters; 1497 letter is repo catalogue 1014 (read)",
+   "score_note": "Scored from the BNE catalogue description (via the Europeana record API) during the Oct 2026 BNE/Hispana sweep (research/bne_hispana/); not viewed",
+   "decode_ids": [],
+   "year": 1496,
+   "date": "Nov 1496 - Nov 1522",
+   "title": "Juan Manuel (Genoa, Rome) → Catholic Monarchs and Charles V: seven letters partly in cipher",
+   "correspondents": "Juan Manuel, imperial ambassador → Ferdinand and Isabella, Charles V",
+   "place": "Genoa / Rome",
+   "language": "Spanish",
+   "region": "Spain",
+   "period": "1497-1559",
+   "shelfmark": "Madrid, Biblioteca Nacional de España, MSS/20212/61/1-7 (Gayangos); BDH bdh0000186690",
+   "folio_note": "seven letters 1496-1522, 'parcialmente cifradas'",
+   "cls": "B",
+   "status": "BNE catalogue: partly ciphered. Tomokiyo (2025, cryptiana AlonsoSanchez.htm) covers Juan Manuel's 1521-22 correspondence, so the 1520-22 letters may be known; the 1496-1519 ones are earlier and possibly open. Not on DECODE. Checked 28 Oct 2026: Overlaps: 1521-22 letters read by Tomokiyo/Kolosova; 1497 letter duplicates catalogue 1014. Only other-dated letters in the seven may be open.",
+   "why": "Possibly late-15th-century Spanish diplomatic cipher (1496-1500) if early letters carry cipher; would bear on the repo's oldest-cipher search.",
+   "importance": 4,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "Date the seven letters on BDH and keep only those outside 1497 and 1521-22.",
+   "links": [
+    {
+     "label": "BDH viewer",
+     "href": "http://bdh-rd.bne.es/viewer.vm?id=0000186690&page=1"
+    },
+    {
+     "label": "Europeana record",
+     "href": "https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000186690"
+    },
+    {
+     "label": "Tomokiyo, Sánchez and Juan Manuel",
+     "href": "https://cryptiana.web.fc2.com/code/AlonsoSanchez.htm"
+    }
+   ],
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "access_note": "online (backfilled 28 Oct 2026 from the entry: link BDH viewer (http://bdh-rd.bne.es/viewer.vm?id=0000186690&page=1))",
+   "vetting_note": "BNE Digital blocked on 3 Nov 2026 in Chrome: no checkbox showed; the Crolope card loaded, then the viewer returned 'SE HA BLOQUEADO EL ACCESO POR PARTE DE LOS SISTEMAS DE SEGURIDAD' (Cloudflare 1000-series). Stopped on the host, nothing clicked through, no retry. Not opened this pass: BDH 0000186690, seven letters undated on the card; those outside 1497 and 1521-22 not identified.",
+   "vetting": {
+    "date": "2026-11-09",
+    "by": "claude vetting agent nov9 v1",
+    "seen": {
+     "kind": "scan",
+     "where": "BNE Digital card https://bnedigital.bne.es/bd/card?oid=0000186690&site=bdh (BDH 0000186690, signature MSS/20212/61/1-7, 25 h., 'Parcialmente cifradas'); Carta 1 viewer id=90578783-c3ff-4861-945c-010e13e679a2 pages 1-3 viewed in Chrome 9 Nov 2026",
+     "extent": "Viewed only Carta 1, Genoa 10 Nov 1496 (stamped '1496'): pp. 1-2 clear Spanish, then a spread (viewer page 3) with about 40 lines of continuous symbol cipher over two pages (about 20 lines per page). Letters 2-7 (to Nov 1522) not opened.",
+     "cipher": "Letter 1 carries a full-page-pair of a symbol/sign cipher (strokes, crosses, loops; not digits) written in long lines; zoomed: no interlinear or marginal plaintext and no decipherment bound with it, the cipher is not a show-through. Letters 2-7: whether and how they are ciphered is not checked."
+    },
+    "prior_art": {
+     "decode": "Local DECODE harvest (research/catalogue_harvest/decode batch_4/out_4) greps '20212/61' with no hit (only MSS/20212/39 R1187 is nearby); the lead has decode_ids empty. DECODE itself not searched online.",
+     "tomokiyo": "Cryptiana AlonsoSanchez.htm covers Juan Manuel's 1522 letters to Charles V at the RAH (BRAH 9/23-24, DECODE R9499-R9529), not BNE MSS/20212/61; Tomokiyo 2018 'Spanish ciphers 1470-1479' (academia 37751652) is paywalled and ends 1479; web search 'Tomokiyo Ferdinand Isabella 1490s Juan Manuel Belmonte 1496' found nothing on a 1496 Genoa cipher.",
+     "lasry": "Searched DECODE/DECRYPT/Lasry with Juan Manuel, Belmonte, Genoa 1496: nothing on Spanish ciphers of the 1490s; GL.htm entry not found for this shelfmark.",
+     "edition": "Three web searches (Spanish and English, shelfmark, 'Genoa 1496 carta cifrada Reyes Catolicos') found no edition or decipherment; Galende Diaz 1994 (digibug.ugr.es/handle/10481/30410) could not be opened (Anubis block), so whether it lists MSS/20212/61 is unchecked.",
+     "literature": "No study of the Genoa 1496 letter turned up; Wikipedia on Juan Manuel of Belmonte has nothing on a 1496 cipher; the 1497 Rome letter is a different holding (RAH, catalogue 1049)."
+    },
+    "key_check": "No key for this letter is known. Ferdinand-era keys in the repo (targets/ferdinand1473 key_1473/key_1474, MSS/20211) are for other correspondents and 20 years earlier; not tested here. 1522 Juan Manuel key (Tomokiyo, Sanchez) is a later, different system.",
+    "key_held": "Related only: targets/ferdinand1473 homophonic keys and Tomokiyo's Juan Manuel 1522 table; none tested on the 1496 symbols.",
+    "duplicates": "known.py on 'Juan Manuel', 'Gayangos', '186690': only the lead itself, bne_hispana candidates, and catalogue 1049 (RAH 23 Jun 1497, Rome, a different letter). Lead text says '1497 letter is catalogue 1014': wrong, 1014 is a TNA SP 29 entry; it is 1049. Correct shelfmark: MSS/20212/61/1-7 (not 'Gayangos' alone).",
+    "verdict": "open",
+    "note": "Applies to letter 1 (Genoa 10 Nov 1496) only; a pre-1497 cipher, relevant to the oldest-cipher search. Treat letters 2-7 as unviewed."
+   },
+   "repository": "bne"
+  },
+  {
+   "id": 1271,
+   "counted": true,
+   "seen": "image",
+   "source": "BNE/Hispana sweep",
+   "prior_art": "open (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed; Mirabel not mentioned)",
+   "score_note": "Scored from the BNE catalogue description (via the Europeana record API) during the Oct 2026 BNE/Hispana sweep (research/bne_hispana/); not viewed",
+   "decode_ids": [],
+   "year": 1622,
+   "date": "1621-1624",
+   "title": "Marquis of Mirabel (Paris) → Count of Gondomar: letters, some in cipher",
+   "correspondents": "Antonio de Zúñiga y Dávila, Marquis of Mirabel → Diego Sarmiento de Acuña, Count of Gondomar",
+   "place": "Paris / Madrid",
+   "language": "Spanish",
+   "region": "Spain",
+   "period": "1611-1650",
+   "shelfmark": "Madrid, Biblioteca Nacional de España, MSS/18428 (Gayangos); BDH bdh0000141369",
+   "folio_note": "volume of originals and copies; 'algunas cifradas'",
+   "cls": "C",
+   "status": "BNE catalogue: some letters ciphered, on the Valtelline and European politics. No decipherment noted. Not on DECODE. Checked 28 Oct 2026: Verified 28 Oct: no reading found.",
+   "why": "Spanish ambassador in Paris on the Valtelline crisis, writing to Gondomar; a 1620s Spanish diplomatic cipher.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "View ciphered letters; find Gondomar-era Spanish ambassador cipher.",
+   "links": [
+    {
+     "label": "BDH viewer",
+     "href": "http://bdh-rd.bne.es/viewer.vm?id=0000141369&page=1"
+    },
+    {
+     "label": "Europeana record",
+     "href": "https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000141369"
+    }
+   ],
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "access_note": "online (backfilled 28 Oct 2026 from the entry: link BDH viewer (http://bdh-rd.bne.es/viewer.vm?id=0000141369&page=1))",
+   "vetting_note": "BNE Digital blocked on 3 Nov 2026 in Chrome: no checkbox showed; the Crolope card loaded, then the viewer returned 'SE HA BLOQUEADO EL ACCESO POR PARTE DE LOS SISTEMAS DE SEGURIDAD' (Cloudflare 1000-series). Stopped on the host, nothing clicked through, no retry. Not opened this pass: BDH 0000141369 (Mss/18619; check against Mss. 18428); ciphered letters not located.",
+   "vetting": {
+    "date": "2026-11-09",
+    "by": "claude vetting agent nov9 v1",
+    "seen": {
+     "kind": "scan",
+     "where": "BNE Digital card https://bnedigital.bne.es/bd/card?oid=0000141369&site=bdh (signature MSS/18428, 108 h., 1621-1624; viewer id=e2ff5c2e-4a66-40f3-90e3-c2b5f1a8583f), viewer page 44 (spread) viewed and zoomed in Chrome 9 Nov 2026",
+     "extent": "Viewed one spread (viewer page 44, a Mirabel letter to Gondomar): about 4-5 lines of numeral cipher groups interlined in Spanish prose on the right leaf. Other ciphered letters in the 108 folios not individually located; the card summary says 'algunas cifradas'.",
+     "cipher": "Spanish ambassador's numeral nomenclator: groups of digits (two- and three-digit numbers, some with dots/marks) mixed with clear words (con, por, de) inside the text. No interlinear plaintext above the groups; a short marginal note on the left of the right leaf could be a contemporary clear (the coloma1622 notes treat marginal clears of this volume as a crib source, one margin on p.15 being only show-through). No decipherment is bound with it that I could confirm."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE per lead decode_ids empty and the local harvest; DECODE not searched online beyond that.",
+     "tomokiyo": "Cryptiana spanish2C.htm key list was checked on 28 Oct (no Mirabel); web search 'cryptiana Spanish ciphers 17th century Mirabel Coloma Gondomar Tomokiyo' returned nothing on Mirabel.",
+     "lasry": "Searched Lasry/DECRYPT with Mirabel Gondomar 1622 Valtelline: nothing found.",
+     "edition": "Searches (Spanish and English: 'Marques de Mirabel cartas Conde de Gondomar cifra descifrada MSS/18428', 'Mirabel Gondomar 1622 cipher Valtelline decipherment') found no edition or decipherment of these letters. Real Biblioteca Avisos articles (Herrero Garcia 2023 on the Mirabel marchioness letters; Rodriguez Gomez on the Gondomar ciphers and the 1625 general cipher) surfaced but were not read in full.",
+     "literature": "Rodriguez Gomez (Avisos) says plaintexts are usually kept as marginal notes or on adjoining folios in the Gondomar papers (Real Biblioteca), a different archive; nothing on BNE MSS/18428 found."
+    },
+    "key_check": "targets/coloma1622 (catalogue 1601, Mirabel to Coloma, Lyon 8 Dec 1622, same nomenclator family) rebuilt a key and tested it on MSS/18428 p.44 right: partial fit (0.814 vs best-of-200 controls 0.466), p.15 inconclusive; so a related key exists but did not read this volume.",
+    "key_held": "targets/coloma1622/key.tsv, a partial key of the same system, only partly tested on MSS/18428 p.44; not enough to count as a reading. No key for this volume published.",
+    "duplicates": "known.py 'Mirabel','Gondomar','141369': lead itself, bne_hispana candidates, catalogue 1601 / targets/coloma1622 (a different Mirabel letter, RES/227/122, which used MSS/18428 pages only as tests). Correct shelfmark is MSS/18428; 'Mss/18619' in the lead is the other volume named in the card note (Gayangos note), not this one.",
+    "verdict": "open"
+   },
+   "repository": "bne"
+  },
+  {
    "id": 1272,
    "counted": true,
    "seen": "image",
@@ -76733,6 +76864,78 @@
    },
    "repository": "asmi",
    "scored": "vetted"
+  },
+  {
+   "id": 2415,
+   "counted": true,
+   "region": "Low Countries",
+   "seen": "catalogue",
+   "needs_archive_scan": "yes",
+   "source": "Belgium KBR/archives sweep (second pass over the AGATHA EAD inventories of research/belgium_lux, wider terms), 9 Nov 2026",
+   "year": 1640,
+   "date": "1640",
+   "title": "Ferdinand of Bavaria, prince-bishop of Liège, letter to Jean de Merode, in cipher, with the code to decipher it",
+   "correspondents": "Ferdinand of Bavaria, elector of Cologne and prince-bishop of Liège (Bonn) -> Jean, baron de Merode, seigneur de Gotzenhofen",
+   "place": "Bonn",
+   "language": "unknown (French or German)",
+   "period": "1611-1650",
+   "shelfmark": "Archives générales du Royaume, Brussels, Archives de la famille de Merode Westerloo, I. Papiers personnels de la famille de Merode, no. 9750 (within 9749-9756, letters to Jean de Merode 1640-1646; old ref. 510 - I 571 - 9750; EAD BE-A0510_007179_006949)",
+   "folio_note": "1 piece; the code is filed with it",
+   "cls": "B",
+   "status": "Inventory: '1 pièce. Y joint le code pour déchiffrer la correspondance codée.' The piece and its key travel together; no decipherment mentioned.",
+   "why": "The elector-bishop wrote in 1640, the year of the Peace of Tongeren and the Liège troubles, to a Liège nobleman and colonel who had been a page of Archduke Albert. A cipher text with its key in the same piece gives a quick read with the code in hand; the key may also serve other letters in this correspondence block (9749-9756).",
+   "importance": 3,
+   "solvability": 4,
+   "difficulty": 2,
+   "score_note": "Scored from the item-level inventory description (EAD) only, 9 Nov 2026; not viewed. Solvability 4 because the key is in the same piece, difficulty 2 on the same ground.",
+   "verify": "Request a scan of no. 9750 from the AGR (Merode Westerloo); read the cipher with the attached code; check the neighbouring numbers 9749-9756 for more ciphered letters.",
+   "links": [
+    {
+     "href": "https://agatha.arch.be/en/data/ead/BE-A0510_007179_006949.ead.xml",
+     "label": "AGATHA EAD inventory (Merode Westerloo, papiers personnels)"
+    }
+   ],
+   "access_note": "Description only; no images online. Scan order or reading room at the AGR/ARA, Brussels.",
+   "prior_art": "open as far as checked (9 Nov 2026): known.py (Ferdinand de Bavière, Merode Westerloo 9750) finds nothing; web search for the item with chiffre/déchiffrer found only the inventory itself; no edition seen.",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-09",
+    "by": "claude vetting agent v3 (nov9)",
+    "seen": {
+     "kind": "not online",
+     "where": "AGATHA EAD https://agatha.arch.be/en/data/ead/BE-A0510_007179_006949.ead.xml, fetched 9 Nov 2026 (component F_09750_000, AGR Merode Westerloo I 571 no. 9750); this item has no dao/digital object (only unrelated items such as no. 122 do)",
+     "extent": "1 pièce (one piece), letter of 1640 from Ferdinand of Bavaria (Bonn) to Jean de Merode; length not stated",
+     "cipher": "EAD note quoted: 'Y joint le code pour déchiffrer la correspondance codée.' Unit title: 'Bavière, Ferdinand de, prince-évêque de Liège (Bonn), 1640.' The description does not say the letter itself is in cipher, only that a code for the coded correspondence is attached; no decipherment is mentioned."
+    },
+    "prior_art": {
+     "decode": "known.py (Merode Westerloo, 9750, Ferdinand de Bavière, Ferdinand of Bavaria, Gotzenhofen): no DECODE record for this piece; the only Ferdinand of Bavaria hits are the 1619 BayHStA letters to Maximilian (R9426, different)",
+     "tomokiyo": "No cryptiana page on a Ferdinand of Bavaria 1640 or Merode cipher found in web searches",
+     "lasry": "No Lasry paper or GL.htm entry found for this item",
+     "edition": "No edition found; the AGR guide (d'Hoore, Familiearchief de Merode Westerloo) is a finding aid, the EAD is the inventory",
+     "literature": "No HistoCrypt/Cryptologia item found; 3 web searches (French and English) returned only biographies and the inventory"
+    },
+    "key_check": "No key of Ferdinand's chancery held here beyond the 1619 BayHStA reading (targets/r8364 family, a different period and hand); not tested, since the 1640 piece is not seen",
+    "key_in_volume": "Yes, per the EAD: the same piece has 'le code pour déchiffrer la correspondance codée' attached. It is a key to the coded correspondence, whether to this letter only or to others in 9749-9756 is not stated; none of 9749, 9751-9756 carry a cipher or code note in the EAD. Not tested (not online).",
+    "duplicates": "known.py on Merode Westerloo / 9750 / Ferdinand de Bavière / Gotzenhofen: only this lead and its sweep file; no catalogue entry or target covers it; the 1619 Ferdinand letters are a separate record",
+    "verdict": "open",
+    "searches": [
+     {
+      "query": "Ferdinand de Bavière prince-évêque de Liège 1640 lettre à Jean de Merode chiffre code déchiffrer",
+      "result": "Only biography and coin pages; nothing on the letter"
+     },
+     {
+      "query": "Merode Westerloo archives générales du Royaume inventaire 9750 Bavière Ferdinand code déchiffrer correspondance codée",
+      "result": "Found the AGATHA/search.arch.be inventory and the d'Hoore guide only; no edition or reading"
+     },
+     {
+      "query": "Tomokiyo cryptiana Liège 1640 Ferdinand of Bavaria cipher letter Merode / Lasry Spanish Netherlands",
+      "result": "Nothing for 1640 Liège or Merode; unrelated Lasry/Tomokiyo work"
+     }
+    ]
+   },
+   "repository": "be-ar"
   }
  ]
 }

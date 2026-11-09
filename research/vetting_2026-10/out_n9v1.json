@@ -1,0 +1,51 @@
+{
+ "1270": {
+  "date": "2026-11-09",
+  "by": "claude vetting agent nov9 v1",
+  "seen": {
+   "kind": "scan",
+   "where": "BNE Digital card https://bnedigital.bne.es/bd/card?oid=0000186690&site=bdh (BDH 0000186690, signature MSS/20212/61/1-7, 25 h., 'Parcialmente cifradas'); Carta 1 viewer id=90578783-c3ff-4861-945c-010e13e679a2 pages 1-3 viewed in Chrome 9 Nov 2026",
+   "extent": "Viewed only Carta 1, Genoa 10 Nov 1496 (stamped '1496'): pp. 1-2 clear Spanish, then a spread (viewer page 3) with about 40 lines of continuous symbol cipher over two pages (about 20 lines per page). Letters 2-7 (to Nov 1522) not opened.",
+   "cipher": "Letter 1 carries a full-page-pair of a symbol/sign cipher (strokes, crosses, loops; not digits) written in long lines; zoomed: no interlinear or marginal plaintext and no decipherment bound with it, the cipher is not a show-through. Letters 2-7: whether and how they are ciphered is not checked."
+  },
+  "prior_art": {
+   "decode": "Local DECODE harvest (research/catalogue_harvest/decode batch_4/out_4) greps '20212/61' with no hit (only MSS/20212/39 R1187 is nearby); the lead has decode_ids empty. DECODE itself not searched online.",
+   "tomokiyo": "Cryptiana AlonsoSanchez.htm covers Juan Manuel's 1522 letters to Charles V at the RAH (BRAH 9/23-24, DECODE R9499-R9529), not BNE MSS/20212/61; Tomokiyo 2018 'Spanish ciphers 1470-1479' (academia 37751652) is paywalled and ends 1479; web search 'Tomokiyo Ferdinand Isabella 1490s Juan Manuel Belmonte 1496' found nothing on a 1496 Genoa cipher.",
+   "lasry": "Searched DECODE/DECRYPT/Lasry with Juan Manuel, Belmonte, Genoa 1496: nothing on Spanish ciphers of the 1490s; GL.htm entry not found for this shelfmark.",
+   "edition": "Three web searches (Spanish and English, shelfmark, 'Genoa 1496 carta cifrada Reyes Catolicos') found no edition or decipherment; Galende Diaz 1994 (digibug.ugr.es/handle/10481/30410) could not be opened (Anubis block), so whether it lists MSS/20212/61 is unchecked.",
+   "literature": "No study of the Genoa 1496 letter turned up; Wikipedia on Juan Manuel of Belmonte has nothing on a 1496 cipher; the 1497 Rome letter is a different holding (RAH, catalogue 1049)."
+  },
+  "key_check": "No key for this letter is known. Ferdinand-era keys in the repo (targets/ferdinand1473 key_1473/key_1474, MSS/20211) are for other correspondents and 20 years earlier; not tested here. 1522 Juan Manuel key (Tomokiyo, Sanchez) is a later, different system.",
+  "key_held": "Related only: targets/ferdinand1473 homophonic keys and Tomokiyo's Juan Manuel 1522 table; none tested on the 1496 symbols.",
+  "duplicates": "known.py on 'Juan Manuel', 'Gayangos', '186690': only the lead itself, bne_hispana candidates, and catalogue 1049 (RAH 23 Jun 1497, Rome, a different letter). Lead text says '1497 letter is catalogue 1014': wrong, 1014 is a TNA SP 29 entry; it is 1049. Correct shelfmark: MSS/20212/61/1-7 (not 'Gayangos' alone).",
+  "verdict": "open",
+  "note": "Applies to letter 1 (Genoa 10 Nov 1496) only; a pre-1497 cipher, relevant to the oldest-cipher search. Treat letters 2-7 as unviewed."
+ },
+ "1271": {
+  "date": "2026-11-09",
+  "by": "claude vetting agent nov9 v1",
+  "seen": {
+   "kind": "scan",
+   "where": "BNE Digital card https://bnedigital.bne.es/bd/card?oid=0000141369&site=bdh (signature MSS/18428, 108 h., 1621-1624; viewer id=e2ff5c2e-4a66-40f3-90e3-c2b5f1a8583f), viewer page 44 (spread) viewed and zoomed in Chrome 9 Nov 2026",
+   "extent": "Viewed one spread (viewer page 44, a Mirabel letter to Gondomar): about 4-5 lines of numeral cipher groups interlined in Spanish prose on the right leaf. Other ciphered letters in the 108 folios not individually located; the card summary says 'algunas cifradas'.",
+   "cipher": "Spanish ambassador's numeral nomenclator: groups of digits (two- and three-digit numbers, some with dots/marks) mixed with clear words (con, por, de) inside the text. No interlinear plaintext above the groups; a short marginal note on the left of the right leaf could be a contemporary clear (the coloma1622 notes treat marginal clears of this volume as a crib source, one margin on p.15 being only show-through). No decipherment is bound with it that I could confirm."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE per lead decode_ids empty and the local harvest; DECODE not searched online beyond that.",
+   "tomokiyo": "Cryptiana spanish2C.htm key list was checked on 28 Oct (no Mirabel); web search 'cryptiana Spanish ciphers 17th century Mirabel Coloma Gondomar Tomokiyo' returned nothing on Mirabel.",
+   "lasry": "Searched Lasry/DECRYPT with Mirabel Gondomar 1622 Valtelline: nothing found.",
+   "edition": "Searches (Spanish and English: 'Marques de Mirabel cartas Conde de Gondomar cifra descifrada MSS/18428', 'Mirabel Gondomar 1622 cipher Valtelline decipherment') found no edition or decipherment of these letters. Real Biblioteca Avisos articles (Herrero Garcia 2023 on the Mirabel marchioness letters; Rodriguez Gomez on the Gondomar ciphers and the 1625 general cipher) surfaced but were not read in full.",
+   "literature": "Rodriguez Gomez (Avisos) says plaintexts are usually kept as marginal notes or on adjoining folios in the Gondomar papers (Real Biblioteca), a different archive; nothing on BNE MSS/18428 found."
+  },
+  "key_check": "targets/coloma1622 (catalogue 1601, Mirabel to Coloma, Lyon 8 Dec 1622, same nomenclator family) rebuilt a key and tested it on MSS/18428 p.44 right: partial fit (0.814 vs best-of-200 controls 0.466), p.15 inconclusive; so a related key exists but did not read this volume.",
+  "key_held": "targets/coloma1622/key.tsv, a partial key of the same system, only partly tested on MSS/18428 p.44; not enough to count as a reading. No key for this volume published.",
+  "duplicates": "known.py 'Mirabel','Gondomar','141369': lead itself, bne_hispana candidates, catalogue 1601 / targets/coloma1622 (a different Mirabel letter, RES/227/122, which used MSS/18428 pages only as tests). Correct shelfmark is MSS/18428; 'Mss/18619' in the lead is the other volume named in the card note (Gayangos note), not this one.",
+  "verdict": "open"
+ },
+ "1243": {
+  "unvetted": "Ciphertext not seen. 9 Nov 2026: Staatsarchiv Zuerich record ID=5421134 opens in Chrome (text only: 'Chiffriertes Schreiben', Geheimschrift, original on paper, Italian, scribe Michele di Casasco (?), Kopien: Mikrofilm; Publikationen: 'Edition: Karl Tanner, Der Kampf ums Eschental ... Zuerich 1917, Beilagen S. 649-650 (mit Abb.)', so a printed edition with facsimile exists and whether it prints a reading is unknown); no image offered. Tanner 1917 has no archive.org copy (advancedsearch 0 hits) and Google Books gdata gives snippets only; web search on Tanner/Turreo/Laveno found nothing. Needs the Tanner pages (library copy or e-rara/Google Books full view) or a microfilm copy; the printed edition may already decipher it, so no open."
+ },
+ "1285": {
+  "unvetted": "Ciphertext not seen. 9 Nov 2026: Chrome again gets '403 Forbidden' from hollisarchives.lib.harvard.edu/catalog/hou01430_hou01430c00499 (plain 403, no CAPTCHA, nothing clicked), so the record and the Houghton digital object urn-3:FHCL.HOUGH:38447771 are unreachable; 'Part of text in code' is only the HOLLIS description. Repo notes (research/uk_tna, tna_discovery) say the sibling Grantham letters in Bedfordshire L 30/15 carry decoded text, so this duplicate may also carry a decipherment or be a copy of one. Needs Harvard access from another network or a Houghton scan request."
+ }
+}

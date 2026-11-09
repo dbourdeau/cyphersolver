@@ -1,0 +1,43 @@
+import json
+common = dict(region="Low Countries", seen="catalogue", needs_archive_scan="yes", source="Belgium KBR/archives sweep (second pass over the AGATHA EAD inventories of research/belgium_lux, wider terms), 9 Nov 2026")
+rows = [
+ dict(year=1658, date="1656-1660",
+  title="J. D'Uguarte, letters from Brussels to Ignace Whyte (later baron de Vicque, marquis d'Albeville), partly in cipher",
+  correspondents="J. D'Uguarte (Brussels) -> Ignace Whyte / Ignacio de Vicque",
+  place="Brussels", language="French, part in cipher", period="1651-1700",
+  shelfmark="Rijksarchief te Antwerpen (State Archives, Antwerp), Archief van de familie Whyte, de Vicq(ue) en d'Albyville, inv. 511 - Y21/004, no. 3 (EAD BE-A0511_106986_104982)",
+  folio_note="1 folder (omslag); the whole fonds is 15 items, 0.12 m",
+  cls="B",
+  status="Inventory note: 'Opgesteld deels in het Frans, deels in cijferschrift. Deze brieven handelen eveneens over militaire ontwikkelingen en diplomatieke onderhandelingen in het algemeen.' No key in the fonds (items 1-15 listed: personal letters, the 1660-61 London mission papers, Spanish letters 1665-72, accounts) and no decipherment mentioned.",
+  why="Whyte was in Brussels among the exiled-royalist and Spanish circle (a letter of his to Ormond, 12 June 1660, is in Bodleian MS Carte 30) and later served James II as envoy at The Hague. The folder sits next to papers on his mission to London to negotiate the return of imprisoned Spanish soldiers (1660-61), so the cipher is probably Spanish Netherlands or royalist-exile diplomatic traffic. A small, self-contained cipher folder from a little-studied fonds.",
+  importance=3, solvability=2, difficulty=3,
+  score_note="Scored from the item-level inventory description (EAD) only, 9 Nov 2026; not viewed. Solvability 2: no key in the fonds, probable nomenclator.",
+  verify="Order a scan or consult the folder at the Rijksarchief Antwerpen; check whether D'Uguarte is the Spanish Netherlands official Juan/Jean de Uguarte; compare with Spanish Netherlands ciphers of the 1650s (SEG 2 keys, DECODE R958-R965).",
+  links=[{"href":"https://agatha.arch.be/en/data/ead/BE-A0511_106986_104982.ead.xml","label":"AGATHA EAD inventory (Whyte, de Vicq(ue), d'Albyville)"}],
+  access_note="Description only; no images online (AGATHA shows no digital object for this fonds). Scan order or reading room at the Rijksarchief te Antwerpen (Beveren), or via the Rijksarchief's inventory PDF.",
+  prior_art="open as far as checked (9 Nov 2026): known.py (Whyte, Duguarte) finds nothing in catalogue, leads or DECODE; web search on Whyte/Vicque/Albyville with cipher and on D'Uguarte found no edition or decipherment; Lasry and Tomokiyo not found for it."),
+ dict(year=1640, date="1640",
+  title="Ferdinand of Bavaria, prince-bishop of Liège, letter to Jean de Merode, in cipher, with the code to decipher it",
+  correspondents="Ferdinand of Bavaria, elector of Cologne and prince-bishop of Liège (Bonn) -> Jean, baron de Merode, seigneur de Gotzenhofen",
+  place="Bonn", language="unknown (French or German)", period="1611-1650",
+  shelfmark="Archives générales du Royaume, Brussels, Archives de la famille de Merode Westerloo, I. Papiers personnels de la famille de Merode, no. 9750 (within 9749-9756, letters to Jean de Merode 1640-1646; old ref. 510 - I 571 - 9750; EAD BE-A0510_007179_006949)",
+  folio_note="1 piece; the code is filed with it",
+  cls="B",
+  status="Inventory: '1 pièce. Y joint le code pour déchiffrer la correspondance codée.' The piece and its key travel together; no decipherment mentioned.",
+  why="The elector-bishop wrote in 1640, the year of the Peace of Tongeren and the Liège troubles, to a Liège nobleman and colonel who had been a page of Archduke Albert. A cipher text with its key in the same piece gives a quick read with the code in hand; the key may also serve other letters in this correspondence block (9749-9756).",
+  importance=3, solvability=4, difficulty=2,
+  score_note="Scored from the item-level inventory description (EAD) only, 9 Nov 2026; not viewed. Solvability 4 because the key is in the same piece, difficulty 2 on the same ground.",
+  verify="Request a scan of no. 9750 from the AGR (Merode Westerloo); read the cipher with the attached code; check the neighbouring numbers 9749-9756 for more ciphered letters.",
+  links=[{"href":"https://agatha.arch.be/en/data/ead/BE-A0510_007179_006949.ead.xml","label":"AGATHA EAD inventory (Merode Westerloo, papiers personnels)"}],
+  access_note="Description only; no images online. Scan order or reading room at the AGR/ARA, Brussels.",
+  prior_art="open as far as checked (9 Nov 2026): known.py (Ferdinand de Bavière, Merode Westerloo 9750) finds nothing; web search for the item with chiffre/déchiffrer found only the inventory itself; no edition seen."),
+]
+out=[{**common, **r} for r in rows]
+json.dump(out, open('candidates.json','w',encoding='utf8'), ensure_ascii=False, indent=1)
+keys=[
+ dict(shelfmark="AGR Brussels, Audience 405 (PEA 405), Halewijn and Boisschot to Requesens, England 1573-75", note="Recueil of 245 ff. formed 1882: original ciphered and plain letters to Requesens, minutes of his replies; the key is at f. 245. Overlaps the existing belgium_lux row 'Audience 358, 367, 405/2, 1537 (England)': check whether 405/1 was covered.", link="https://agatha.arch.be/en/data/ead/BE-A0510_000799_003354.ead.xml"),
+ dict(shelfmark="AGR Brussels, Audience 161/A and 161/B, Margaret of Parma to Philip II 1565-67", note="Minute portfolio with 'quelques clefs de chiffres diplomatiques' (assembled c. 1890 after Gachard's death). Key-only; possible key for ciphered Margaret of Parma letters elsewhere.", link="https://agatha.arch.be/en/data/ead/BE-A0510_000799_003354.ead.xml"),
+ dict(shelfmark="AGR Brussels, Audience 124, Mary of Hungary and Nicolas Perrenot de Granvelle 1537-47", note="19th-century recueil of copies; 'deux clefs de la correspondance chiffrée dressées par MM. de Harneffe' (keys rebuilt by Harneffe; useful for Mary of Hungary/Granvelle ciphers).", link="https://agatha.arch.be/en/data/ead/BE-A0510_000799_003354.ead.xml"),
+]
+json.dump(keys, open('key_leads.json','w',encoding='utf8'), ensure_ascii=False, indent=1)
+print(len(out),len(keys))

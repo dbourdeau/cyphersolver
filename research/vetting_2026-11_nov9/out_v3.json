@@ -1,0 +1,72 @@
+{
+ "2414": {
+  "date": "2026-11-09",
+  "by": "claude vetting agent v3 (nov9)",
+  "seen": {
+   "kind": "not online",
+   "where": "AGATHA EAD https://agatha.arch.be/en/data/ead/BE-A0511_106986_104982.ead.xml, fetched 9 Nov 2026 (component F_00003_000, unitid 3, Rijksarchief Antwerpen 511 - Y21/004 - 3); the EAD has no dao/digital object",
+   "extent": "1 omslag (folder), letters of J. D'uguarte from Brussels, 1656-1660; number of leaves not stated",
+   "cipher": "EAD note quoted: 'Opgesteld deels in het Frans, deels in cijferschrift. Deze brieven handelen eveneens over militaire ontwikkelingen en diplomatieke onderhandelingen in het algemeen.' No key or decipherment is listed anywhere in the 15-item fonds."
+  },
+  "prior_art": {
+   "decode": "known.py (Whyte, Duguarte, Uguarte, Albyville, Vicque): no DECODE record; web search for DECODE Belgian 1656-60 records found none",
+   "tomokiyo": "No Tomokiyo/cryptiana page for Uguarte or Ignace Whyte found in web searches; the Thurloe White-brothers material in this repo (targets/dugard1656) is a different letter",
+   "lasry": "No Lasry paper or GL.htm entry on this item found",
+   "edition": "No edition of the Whyte papers found; only the 2002 Van Honacker inventory (the EAD)",
+   "literature": "No HistoCrypt/Cryptologia item found for Uguarte or the Whyte fonds in 3 web searches"
+  },
+  "key_check": "No key in the fonds (items 1-15 are personal letters, the 1660-61 London mission papers, Spanish letters 1665-72, accounts, 1687-88 letters). Related only by name: du Gard to White 1656 (targets/dugard1656, Thurloe) is a different, unsolved letter with no key.",
+  "duplicates": "DUPLICATE of catalogue entry 1958 (J. d'Uguarte, letters from Brussels partly in cipher, 1656-1660, same fonds BE-A0511_106986_104982, item 3; its record link carries the same eadid; its shelfmark 'file 448 item 3' is the Archives Portal Europe form of the same component). known.py 'Uguarte' hit 1958 in catalogue.json.",
+  "verdict": "duplicate",
+  "closed": "Same item as catalogue 1958 (BE-A0511_106986_104982, no. 3: Uguarte letters 1656-60); lead 2414 adds only the Antwerp shelfmark 511 - Y21/004 - 3 and the Whyte context",
+  "searches": [
+   {
+    "query": "Ignace Whyte Vicque Albyville D'Uguarte cipher letters Brussels 1656 Spanish soldiers London mission",
+    "result": "No source naming Uguarte or Whyte; only this repo's ledger (dugard1656, Thurloe intercepts) surfaced"
+   },
+   {
+    "query": "Uguarte OR Huguarte Brussels 1656 Whyte Spanish Netherlands Thurloe state papers cipher",
+    "result": "No Uguarte hit; Thurloe 1656 items on du Gard to White exist (different letter)"
+   },
+   {
+    "query": "DECODE database Spanish Netherlands 1656 1660 cipher Whyte Ignatius White Brussels",
+    "result": "No DECODE Belgian/Dutch 1656-60 record found; only the general DECODE paper"
+   }
+  ]
+ },
+ "2415": {
+  "date": "2026-11-09",
+  "by": "claude vetting agent v3 (nov9)",
+  "seen": {
+   "kind": "not online",
+   "where": "AGATHA EAD https://agatha.arch.be/en/data/ead/BE-A0510_007179_006949.ead.xml, fetched 9 Nov 2026 (component F_09750_000, AGR Merode Westerloo I 571 no. 9750); this item has no dao/digital object (only unrelated items such as no. 122 do)",
+   "extent": "1 pièce (one piece), letter of 1640 from Ferdinand of Bavaria (Bonn) to Jean de Merode; length not stated",
+   "cipher": "EAD note quoted: 'Y joint le code pour déchiffrer la correspondance codée.' Unit title: 'Bavière, Ferdinand de, prince-évêque de Liège (Bonn), 1640.' The description does not say the letter itself is in cipher, only that a code for the coded correspondence is attached; no decipherment is mentioned."
+  },
+  "prior_art": {
+   "decode": "known.py (Merode Westerloo, 9750, Ferdinand de Bavière, Ferdinand of Bavaria, Gotzenhofen): no DECODE record for this piece; the only Ferdinand of Bavaria hits are the 1619 BayHStA letters to Maximilian (R9426, different)",
+   "tomokiyo": "No cryptiana page on a Ferdinand of Bavaria 1640 or Merode cipher found in web searches",
+   "lasry": "No Lasry paper or GL.htm entry found for this item",
+   "edition": "No edition found; the AGR guide (d'Hoore, Familiearchief de Merode Westerloo) is a finding aid, the EAD is the inventory",
+   "literature": "No HistoCrypt/Cryptologia item found; 3 web searches (French and English) returned only biographies and the inventory"
+  },
+  "key_check": "No key of Ferdinand's chancery held here beyond the 1619 BayHStA reading (targets/r8364 family, a different period and hand); not tested, since the 1640 piece is not seen",
+  "key_in_volume": "Yes, per the EAD: the same piece has 'le code pour déchiffrer la correspondance codée' attached. It is a key to the coded correspondence, whether to this letter only or to others in 9749-9756 is not stated; none of 9749, 9751-9756 carry a cipher or code note in the EAD. Not tested (not online).",
+  "duplicates": "known.py on Merode Westerloo / 9750 / Ferdinand de Bavière / Gotzenhofen: only this lead and its sweep file; no catalogue entry or target covers it; the 1619 Ferdinand letters are a separate record",
+  "verdict": "open",
+  "searches": [
+   {
+    "query": "Ferdinand de Bavière prince-évêque de Liège 1640 lettre à Jean de Merode chiffre code déchiffrer",
+    "result": "Only biography and coin pages; nothing on the letter"
+   },
+   {
+    "query": "Merode Westerloo archives générales du Royaume inventaire 9750 Bavière Ferdinand code déchiffrer correspondance codée",
+    "result": "Found the AGATHA/search.arch.be inventory and the d'Hoore guide only; no edition or reading"
+   },
+   {
+    "query": "Tomokiyo cryptiana Liège 1640 Ferdinand of Bavaria cipher letter Merode / Lasry Spanish Netherlands",
+    "result": "Nothing for 1640 Liège or Merode; unrelated Lasry/Tomokiyo work"
+   }
+  ]
+ }
+}
