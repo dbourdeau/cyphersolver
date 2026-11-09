@@ -1,0 +1,30 @@
+# Letter cipher of the Raad der Aziatische Bezittingen, 1800 (Smissaert -> Prediger), Nationaal Archief 2.01.27.02 inv. 209.
+# Simple substitution: each letter = a column of two digits, top 1-7 over bottom 1-4 (a 7 x 4 grid); code = top digit then bottom digit.
+# Learnt from the clear minute of the same letter (scans 0001, 0002 left, 0004) on lines L01-L12, majority letter per code (frozen/A-ALIGN.tsv, frozen/scripts/build_key.py);
+# frozen before the held-out clear was opened (frozen/KEY.tsv, SHA-256 448e9c6e...cada1); validated once on L13-L14 (validation.txt). i and j share 23. Not seen: q, and f outside H; cells 13, 72, 73, 74 empty.
+# Grid (rows = top digit, columns = bottom digit): 1 h r - l | 2 v m i/j u | 3 y z c p | 4 t k s a | 5 b g o f | 6 e d w x | 7 n - - -
+code	letter	count_in_A	source
+11	h	3	frozen key (learning part A)
+12	r	29	frozen key (learning part A)
+14	l	7	frozen key (learning part A)
+21	v	10	frozen key (learning part A)
+22	m	3	frozen key (learning part A)
+23	i	16	frozen key (learning part A)
+24	u	5	frozen key (learning part A)
+31	y	2	frozen key (learning part A)
+32	z	4	frozen key (learning part A)
+33	c	2	frozen key (learning part A)
+34	p	7	frozen key (learning part A)
+41	t	22	frozen key (learning part A)
+42	k	5	frozen key (learning part A)
+43	s	7	frozen key (learning part A)
+44	a	25	frozen key (learning part A)
+51	b	4	frozen key (learning part A)
+52	g	13	frozen key (learning part A)
+53	o	23	frozen key (learning part A)
+54	f	1	after the measurement, from the held-out word "gelieft" only (probable)
+61	e	70	frozen key (learning part A)
+62	d	14	frozen key (learning part A)
+63	w	3	frozen key (learning part A)
+64	x	1	frozen key (learning part A)
+71	n	28	frozen key (learning part A)
