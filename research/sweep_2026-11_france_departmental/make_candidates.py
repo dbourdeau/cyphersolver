@@ -1,0 +1,60 @@
+"""Rows from Daniel Tant's ARCSI list 'Autres codes' (arcsi.fr/doc/Tant/420.pdf) of cipher items in French archives,
+plus AD Gironde G 919 art. 19 checked on the Ligeo notice. All seen: catalogue (item descriptions only)."""
+import json,os
+H=os.path.dirname(os.path.abspath(__file__))
+SRC='France departmental archives sweep (ARCSI/Tant list, AD Gironde Ligeo), Nov 2026'
+TANT={'href':'https://www.arcsi.fr/doc/Tant/420.pdf','label':'ARCSI, D. Tant, Autres codes (list entry)'}
+def row(**k):
+    b=dict(language='French',region='France',cls='B',difficulty=3,source=SRC,seen='catalogue',needs_archive_scan='yes',
+      score_note='Scored from a one-line archive description during the departmental-archives sweep, 9 Nov 2026; not viewed',
+      access_note='no images found online; consult the departmental archives (reading room or scan order)')
+    b.update(k);return b
+R=[
+row(year=1622,date='1622',title='Lettre chiffrée de M. Césis (Césy), ambassadeur du Roi à Constantinople, in the Bordeaux archbishopric miscellany',
+ correspondents='Philippe de Harlay, comte de Césy (French ambassador at Constantinople) -> unknown (the king or secretary of state)',
+ place='Constantinople',period='1611-1650',shelfmark='AD Gironde, G 919 (Archevêché de Bordeaux, Pièces diverses), art. 19',
+ folio_note='one item in a miscellany bundle; finding aid: "1622. Lettre chiffrée de M. Césis, ambassadeur du Roi à Constantinople"',
+ status='Gironde finding aid (Ligeo) calls it a ciphered letter; no decipherment mentioned. Also listed by D. Tant (ARCSI).',
+ why='A stray Césy dispatch of the first Constantinople years; Césy ciphers are held in the repo for 1637 (vizani1637 notes) and in BnF, so a key family may exist.',
+ importance=3,solvability=3,verify='Ask AD Gironde for a scan of G 919 art. 19; compare with BnF Césy ciphers (fr. 16158 family) and the Dutch/Venetian copies.',
+ links=[{'href':'https://archives.gironde.fr/archive/fonds/FRAD033_IR_G/view:490464','label':'AD Gironde notice G 907-910, 917, 919'},TANT],
+ prior_art='open as far as checked (9 Nov 2026): known.py nothing on G 919 or Césis; web search found only the Tant list; not searched in DECODE by hand'),
+row(year=1618,date='1618',title='Letter of Louis XIII to M. de Léon (Brûlart de Léon), ambassador at Venice, ciphered',
+ correspondents='Louis XIII -> Léon Brûlart de Léon (ambassador in Venice)',place='France -> Venice',period='1611-1650',
+ shelfmark='AD Aube, 8 J 166',folio_note='one letter; cote as given by Tant (not checked in the Aube finding aid)',
+ status='Listed by D. Tant as a ciphered Louis XIII letter at AD Aube; no decipherment mentioned. The repo reads two 1615/1617 Louis XIII letters to Léon (brulart1615, Tomokiyo key).',
+ why='Probably the same Brûlart de Léon embassy cipher of 1615-18 that Tomokiyo reconstructed, so likely readable with the key held in the repo: a short, high-solvability test.',
+ importance=3,solvability=4,verify='Find the 8 J finding aid on AD Aube; obtain scan; try the brulart1615 key.',
+ links=[TANT],prior_art='open as far as checked (9 Nov 2026): known.py nothing on 8 J 166; web search found no record outside Tant. Cote and content come from one secondary list'),
+row(year=1519,date='1519',title='Charles V: ciphered instructions on the imperial election',
+ correspondents='Charles V (or his Burgundian council) -> envoys, unknown',place='Netherlands / Germany',region='Low Countries',period='1497-1559',
+ shelfmark='AD Nord, Musée 205 (Lille, Chambre des comptes "Musée" collection)',folio_note='"Instructions chiffrées de Charles Quint sur l\'élection impériale" (Tant)',
+ status='Listed by D. Tant; no decipherment mentioned; description is one line.',
+ why='Cipher of the 1519 Imperial election year, among the oldest documents of this kind in a French departmental archive.',
+ importance=4,solvability=2,difficulty=4,verify='Check AD Nord finding aid for the "Musée" series; look for Maximilian/Charles V cipher alphabets (Walder, Innsbruck) as a key family.',
+ links=[TANT],prior_art='open as far as checked (9 Nov 2026): known.py nothing on Musée 205; one web search found only the Tant list; the Nord Musée series is not searched online'),
+row(year=1592,date='22 Oct 1592',title='Letter of Henri de la Tour d\'Auvergne (Turenne) to the prince of Anhalt on his successes against the Lorrains at Beaumont and Attigny',
+ correspondents='Henri de la Tour d\'Auvergne, vicomte de Turenne -> Christian I, prince of Anhalt',place='Sedan area / Ardennes',region='Germany',period='1589-1598',
+ shelfmark='AD Ardennes, 1 J 252',folio_note='one letter (cote and summary as given by Tant)',
+ status='Listed by D. Tant among cipher items; the summary does not say which part is ciphered. No decipherment mentioned.',
+ why='Huguenot-German correspondence of 1592 (Anhalt was Henri IV\'s ally); Turenne letters of this year exist in other collections that could supply cribs.',
+ importance=3,solvability=2,verify='Open the 1 J finding aid at AD Ardennes (archives.cd08.fr) and confirm that the letter carries cipher; Anhalt letters at LHASA Dessau (Anhalt) may hold the other side.',
+ links=[TANT],prior_art='open as far as checked (9 Nov 2026): known.py nothing; web search found no record of the letter'),
+row(year=1755,date='1750-1760',title='Prince Xavier of Saxony: correspondence with a mistress, 44 pieces, apparently ciphered, no author named',
+ correspondents='Prince Xavier of Saxony (comte de Lusace) <-> a woman, unknown',place='France',period='1701-1800',
+ shelfmark='AD Aube, EE 1556 (fonds de Saxe, as given by Tant)',folio_note='44 pieces; Tant gives "Ne comporte aucune mention du nom de l\'auteur"',
+ status='Listed by D. Tant among cipher items; the Saxe fonds has a printed inventory (Vernier and Veling, Inventaire sommaire, série E, 1903-10). Cote not checked there.',
+ why='A private 18th-century love correspondence in code; the fonds is large and well studied, so identification of the woman could give cribs.',
+ importance=2,solvability=2,cls='C',verify='Check the printed inventory for the cote; ask AD Aube for a scan; confirm whether the pieces are cipher or only unsigned.',
+ links=[TANT],prior_art='open as far as checked (9 Nov 2026): known.py nothing; web search could not confirm cipher; weak lead'),
+]
+KEY=[
+ {'shelfmark':'AD Vaucluse, 1 J 186','date':'18th c.','what':'Clef d\'une correspondance chiffrée of the vice-legate of Avignon\'s diplomatic relations','source':'Tant list','link':TANT['href']},
+ {'shelfmark':'Archives de Strasbourg, AA 890a V 110 (1619-20, also 1627)','date':'1619-1627','what':'Clef pour écriture chiffrée','source':'Tant list','link':TANT['href']},
+ {'shelfmark':'Archives de Strasbourg, 1 AST 100','date':'16th c.','what':"Chapitre Saint-Thomas: clef d'une correspondance chiffree",'source':'Tant list','link':TANT['href']},
+ {'shelfmark':'BNU Strasbourg, Ms 1175 (1-2)','date':'Restoration','what':'Papers of the agent Demouge: code to read messages to the marquis de Vaulchier, prefet du Bas-Rhin','source':'Tant list','link':TANT['href']},
+ {'shelfmark':'AD Nord, Musee 371','date':'17th c.','what':'Tables du chiffre de Louis XIV','source':'Tant list','link':TANT['href']},
+]
+json.dump(R,open(os.path.join(H,'candidates.json'),'w',encoding='utf8'),ensure_ascii=False,indent=1)
+json.dump(KEY,open(os.path.join(H,'key_leads.json'),'w',encoding='utf8'),ensure_ascii=False,indent=1)
+print(len(R),len(KEY))

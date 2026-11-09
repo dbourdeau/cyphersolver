@@ -1,0 +1,29 @@
+{
+ "2416": {
+  "date": "2026-11-09",
+  "by": "claude vetting batch v4",
+  "seen": {
+   "kind": "not online",
+   "where": "https://archives.gironde.fr/archive/fonds/FRAD033_IR_G/view:490464 (Ligeo notice read in Chrome 9 Nov 2026); also D. Tant, ARCSI https://www.arcsi.fr/doc/Tant/420.pdf",
+   "extent": "one item (art. 19) in the miscellany bundle G 919 (Archevêché de Bordeaux, Pièces diverses, 1379-1789); number of leaves not stated",
+   "cipher": "Not online: no images. Notice 'Divers - 19' lists among the bundle's contents: '1622. Lettre chiffrée de M. Césis, ambassadeur du Roi à Constantinople.' No decipherment is mentioned in the notice; Tant lists it without the word chiffrée ('lettre de M. Césis, ambassadeur à Constantinople') under his cipher list."
+  },
+  "prior_art": {
+   "decode": "known.py (G 919, Césy, Gironde) hits only this lead, the sweep README and targets/vizani1637; no Gironde record in the repo's DECODE dumps; DECODE web interface not searched by hand (login/cookie), so only repo dumps and web searches were used.",
+   "tomokiyo": "Fetched Tomokiyo's unsolved/solved list (cryptiana.web.fc2.com/code/unsolved.htm, first 100k chars): no Césy/Cesy entry; only a 1690 Castagnère (Constantinople) solved entry. Web search 'Césy Constantinople cipher Tomokiyo' found nothing.",
+   "lasry": "Web searches for Lasry/Césy and Lasry French embassy ciphers found nothing on Césy; GL.htm not specifically listing Césy in the repo's gl-sec4 notes (not re-read).",
+   "edition": "Web search for Halphen / Césy correspondence editions found no edition of the 1622 letter; the Gironde piece is a stray item in a Bordeaux clergy bundle, so no calendar is expected. Césy's embassy 1619-1640 is studied (1942 thesis, Turkish articles) but none mentions this letter.",
+   "literature": "Three web searches (Gironde G 919 Césis; Césy cipher; Halphen/Césy edition) found only the Tant list for this item."
+  },
+  "key_check": "No Césy code list is known: targets/vizani1637/NOTES.md records 'no Vizani or Césy code list known' and Césy's own minutes (BnF fr. 16154-16155) are microfilm only. Nothing held can be tried on a 1622 letter whose cipher is unseen.",
+  "key_held": "None held for Césy; vizani1637 (Prinkipo 1637, outside key) is a different correspondent's cipher and was not tested on this letter (unseen).",
+  "duplicates": "known.py 'G 919', 'Césy', 'Gironde' run; only this lead, the sweep files and vizani1637 (BnF fr. 16158, different letter). Gironde Ligeo search for the bundle shows a single ciphered item.",
+  "verdict": "open"
+ },
+ "2417": {
+  "unvetted": "Cipher presence unconfirmed: Tant's list (t_420.txt) gives only 'Période 1618, Cote 8j 166, AD Aube: Lettre adressée par Louis XIII à M. de Léon, ambassadeur à Venise' with no word chiffrée; archives-aube.fr opens in Chrome but its inventory search (J series, 8 J) was not reachable by URL guess, so the cote, content and whether it is ciphered are unverified. 'not online' needs the archive's own description quoting a cipher. Related: Tomokiyo's Brûlart de Léon key (cryptiana louisxiii.htm, held in targets/brulart1615, status 'read from existing decipherment', not re-applied) would be key_held if the leaf proves ciphered; known.py 'Léon','Brûlart' show no duplicate of 8 J 166; web searches found no Aube 8 J record. Needs Aube 8 J finding aid by hand."
+ },
+ "2418": {
+  "unvetted": "Nord cote Musee 205 rests on Tant's list only; archives.lenord.fr unreachable, so neither the item nor its cipher was confirmed (held back by coordinator, 9 Nov 2026); try Chrome on archives.lenord.fr"
+ }
+}
