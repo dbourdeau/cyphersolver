@@ -1,0 +1,179 @@
+{
+ "_source": "CLE v6 = FUSION DÉCLARÉE (09/11/2026, agent arbitrage) de CLE_v5a.json (16a6d2de…, agent 307/309) et CLE_v5b.json (9d5cf3d5…, agent 311/333), toutes deux dérivées déclarées de CLE_v4 (1848f692…) ; v3 (ae5f0b9f…, seule clé gelée), v4, v5a, v5b NON modifiées. Union des valeurs ; deux conflits tranchés par ARBITRAGE-v6.md (α, 4#) ; aucune valeur nouvelle hors arbitrage. AUCUNE valeur n'est validée par une mesure : statut de la clé = PARTIEL (P03bis). Construite par scripts/build_cle_v6.py.",
+ "vowels": {
+  "1": "u",
+  "2": "o",
+  "3": "i",
+  "4": "e",
+  "5": "a"
+ },
+ "base": {
+  "2": "b",
+  "0": "c",
+  "K": "c",
+  "D": "c",
+  "3": "d",
+  "J": "f",
+  "4": "g",
+  "x": "l",
+  "c": "l",
+  "5": "m",
+  "A": "m",
+  "y": "n",
+  "t": "n",
+  "L": "p",
+  "S": "qu",
+  "7": "r",
+  "d": "r",
+  "6": "s",
+  "r": "s",
+  "8": "t",
+  "Z": "t",
+  "9": "v",
+  "Q": "e",
+  "W": "i",
+  "O": "o",
+  "F": "et",
+  "M": "non",
+  "P": "per",
+  "B": "ancora",
+  "T": "senza",
+  "H": "ll",
+  "G": "g",
+  "p": "u"
+ },
+ "codes": {
+  "2": "papa",
+  "4": "cristianissimo",
+  "5": "cattolico",
+  "6": "inghilterra",
+  "24": "milano",
+  "26": "arciduca",
+  "20": "svizeri",
+  "3": "imperadore",
+  "64": "santita"
+ },
+ "tokens": {
+  "3": "a",
+  "r": "h",
+  "D": "che",
+  "D^n": "con",
+  "6^1": "pu",
+  "6^2": "po",
+  "6^3": "pi",
+  "6^4": "pe",
+  "6^5": "pa",
+  "L#": "ll",
+  "t#": "tt",
+  "r#": "rr",
+  "n#": "nn",
+  "y^1": "fu",
+  "y^2": "fo",
+  "y^3": "fi",
+  "y^4": "fe",
+  "y^5": "fa",
+  "qu": "piu",
+  "Ł": "volere",
+  "ql": "poi",
+  "c#": "cc",
+  "T^0": "secondo",
+  "T^m": "suamaesta",
+  "V^0": "",
+  "g#": "gg",
+  "2^2": "co",
+  "Q^0": "per",
+  "2^4": "ce",
+  "2^5": "ca",
+  "2": "o",
+  "4#": "ll",
+  "2^3": "ci",
+  "2^1": "cu",
+  "α": "per",
+  "m#": "mm",
+  "G#": "gg",
+  "T^2": "senza"
+ },
+ "_regles": "jeton = tokens[jeton] sinon base[signe] + vowels[chaque chiffre d'exposant] (+ n/m tels quels) ; signe ou chiffre d'exposant inconnu -> '?' ; code .N. -> codes[N] sinon '?'. Signe nu 3 = a, r nu = h, 6 nu = s mais 6 + voyelle = p + voyelle (T : questo/costoro/stato vs passate/pensava/puo/dispositione). v2 : y + voyelle = f + voyelle (tokens y^1..y^5) ; G (δ fermé) = g ; .4. -> 'maesta' si le décodé précédent finit par 'a', sinon codes['4']. v5b : appliquer _regles_contexte (contexte = jeton suivant) avant la valeur par défaut. v6 : appliquer _contexte_machine (scripts/decode_v6.py) avant la valeur par défaut.",
+ "codes_contexte": {
+  "4": {
+   "si_precedent_finit_par": "a",
+   "alors": "maesta"
+  }
+ },
+ "_contexte_machine": {
+  "O + r nu": "O suivi de r NU → c (digramme ch) (v5b)",
+  "2^5 y 3…": "2^5 devant « y 3^x » (bande/bandi) → ba ; ailleurs ca (v5a + v5b)",
+  ".4.": "maesta si le décodé précédent finit par « a » OU si les 3 jetons précédents sont « S^4 6 8 » / « S^4 6 8^5 » (questa) ; sinon cristianissimo (v2 + v5b)"
+ },
+ "_alternatives_non_appliquees": {
+  "0 + 8 = tt (règle v5b, NON reprise)": "ARBITRAGE-v6.md § 4 : 0 = c partout ; « c t » est la graphie latinisante de chancellerie (tucto, decto, mactina, lectera, intractengono ; cf. clairs 343 « effecti », « predecte », 341 « satisfactione ») : même mot, seule la graphie du décodé change",
+  "2^3 = bi": "bianca (311 A4), dubio (307 L18) ; défaut ci (amici, sollicitano)",
+  "2 + voyelle = b + voyelle": "signe 2 polyphone b/c (v5a + v5b) : bo dans bona/bono (311), bi dans dubio (307), bu dans buon (307) ; décision par le sens à la lecture",
+  "O + 8 = ct": "facto, auctorità (311) ; contre : « r^1 O 8^4 » = suo te(nessi) (v5b)",
+  "9^4 = ze": "Svizero, forze (307, note v5a) ; contre : 9^4 G# W 3 = veggia (309)",
+  "5 nu = h": "v4, non appliquée",
+  "A (Δ) nu = a": "v5a, non tranché",
+  "α = et": "REJETÉE (ARBITRAGE-v6.md) : α ≡ P = per, attesté par trois clairs d'époque ; aucune occurrence n'exige « et »",
+  "4# = gg": "REJETÉE (ARBITRAGE-v6.md) : 4# = ll (333 ↔ 332, 342 ↔ 343) ; 4# et G# sont deux signes distincts"
+ },
+ "_conflits_v5a_v5b": {
+  "4#": {
+   "v5a": "gg",
+   "v5b": "ll",
+   "v6": "ll"
+  },
+  "α": {
+   "v5a": "et",
+   "v5b": "per",
+   "v6": "per"
+  }
+ },
+ "_attestations": {
+  "2^4 = ce": "342 L1 6^5 2^4 (pace ↔ 343 « pace ») ; 342 L4 2^4 G 8^2 (certo ↔ 343 « certo ») ; 322 L11 3^3 2^4 D (dice che) ; 322 L13 x^3 2^4 (Monseli-ce). Probable (4 attestations, 2 avec clair d'époque).",
+  "2^5 = ba (gardé de T) / ca (alternative)": "T : bande. Alternative ca : 322 L7 y^3 2^5 7^4 (signifi-ca-re). Ambiguïté déclarée, non tranchée : décodage v4 garde ba.",
+  "2 nu = o": "342 L2 3 2 G (alla ora ↔ 343) ; 322 L10 L# O 2 7^5 8^2 7^4 (dello oratore) ; 322 L8 W y 2 O c# (in ? occasione). Probable.",
+  "4# = gg": "comme g#, c#, L# (doublement) : 322 L8 (non lu). Analogie seulement.",
+  ".3. = imperadore": "342 L5 « .3.? F .5. » ↔ 343 « consenso del cattolico et dello imperadore » (ordre inversé) ; 322 L14 « investiti di l .3. » (Monselice, Este et Montagnana, fiefs impériaux). Probable.",
+  ".64. = Santità": "322 L4 « T^n .64. » (negotiare il tutto con Sua Santità) ; 322 L6 « su a .64. et monsignore di Marsilia » (lettre à Rome ; Claude de Seyssel, év. de Marseille, ambassadeur de Louis XII auprès de Léon X). Probable (contexte seul, pas de clair d'époque).",
+  ".51. = ?": "322 L1 « et .51. ti/ci ha detto che … » ; L5 « .51. crede che invero … ». Personnage de la cour de France (informateur des Florentins) : IRRÉSOLU.",
+  "T^n, T^x, L^c, E barré, 9^0": "322 : non résolus (non ajoutés).",
+  "G / d (r) confondus": "342 (certo, poterne : G lu pour d=r) ; 322 L7 d^1 = g (significare). Pas une valeur : confusion de lecture δ fermé / d oncial à 1272 px, déclarée.",
+  "Décalage d'exposant": "Fréquent (exposant écrit entre deux signes) : 322 L2 r^3 5^5 y (si ma n-de-rà), L4 S^4 6^5 8 (questa). Lecture tolérante déclarée, transcription non retouchée.",
+  "5 nu = h (ALTERNATIVE, non appliquée)": "322 L3 D^n 5 3 9^4 7^4 (con havere) ; 322 L3 0 5 W 3 7^3 8^2 (chiarito). Contre : 322 L6 « 5 y r^2 G^3 … » (monsignore), L13 « 5 y r^4 x^3 2^4 » (Monselice), « 5 y 8 d t^5 t^5 » (Montagnana) où 5 nu = m(o). Non appliquée au décodage : alternative de lecture déclarée."
+ },
+ "_attestations_v5a": {
+  "2 + voyelle = c + voyelle (2^1 cu, 2^2 co [v3], 2^3 ci, 2^4 ce [v4], 2^5 ca)": "Série complète, plus économique que 2 = b. 2^5 = ca : 322 L7 signifi-ca-re ; 309 A3 du-ca (Valentino) ; 307 L13 et L14 la p-ra-ti-ca (×2). 2^3 = ci : 307 L1 a-mi-ci ; 307 L13 et L16 so-lli-ci-ta-no (×2) ; 322 L13 ci ricorda. 2^1 = cu : 307 L10 la s-cu-sa ; 307 L18, L19, L21, L23 al-cu-no/-na (×4). Probable.",
+  "2 + voyelle = b + voyelle (ALTERNATIVE, non appliquée)": "T : bande (2^5). 307 L18 du-bi-o (dubbio). Peut-être deux signes voisins (« 2 » et « ʒ ») confondus à 1272 px : déclaré, non tranché.",
+  "α = et": "309 A3 « del duca Valentino α vostra Magnificentia » (le parentado de la fille du duc de Valentinois ET de Lorenzo) ; 307 L23 « tregua con Spagna α ancora non s'intende » ; 307 L4 « secreta α il [pericolo] » ; 307 L10 « monstrando α questi ». Contre : 307 L22 « non vole α nulla » (sens peu clair). Probable.",
+  "m# = mm": "307 L16 fia-mm-inghi ; 307 L12 (non lu) ; 307 L22 a-mm-o pour « anno » (m/n). Analogie avec n#, c#, L#. Probable.",
+  "G# = gg": "309 B1 ve-gg-ia (veggia = vegga). Analogie avec g#, 4#. Probable.",
+  "T^2 = senza (T avec petit signe)": "307 L9 « T^2 salvocondocto » (senza salvocondotto). Probable.",
+  "Ł? (L surmonté d'une boucle) = Ł volere (v2)": "307 L20 « afferma Ł? con grossissime forze fare la impresa di Italia » ; L12 « Ł? il Cristianissimo ». Forme lue L^o au premier regard : identification probable, transcription laissée avec « ? ».",
+  "A (Δ) nu = a ? (NON appliquée)": "307 L15 « ma accerto A vostre Signorie », L18 « A fino al presente » ; contre : A = m dans la-i-m-presa (307 L20) et Angule-m (309 A1). Non tranché.",
+  ".48. = ?": "309 A1 « sopra il ragionamento del .48. » : IRRÉSOLU (personne ou affaire liée au mariage de Lorenzo).",
+  "Non résolus (non ajoutés)": "307 : D^1, 4^0, etc?, signe ▓ ; 309 : 4 nu (B1 « fino a 4 che »), « Q? u? », « . D . d : » après V^0 (aussi « . d . » en 307 L17 : marque de fin probable)."
+ },
+ "_attestations_v5b": {
+  "4# = ll (REMPLACE 4# = gg de v4, qui n’était qu’une analogie)": "333 L1 « 3^5 4# Q 2^5 y 3^4 3 S^5 » = dalle bande di qua ↔ 332 (copie claire aux Otto, même date) « dalle bande di qua » ; 333 L2 « 3^5 4# Q 7^4 r^2 x^1 8^3 O t^3 » = dalle resolutioni ; 333 L3 « 3^4 4# Q S^5 x^3 » = delle quali ; 322 L8 (même groupe « dalle bande di qua ») ; 311 A1 dello appuntamento, A3/A7 della, B3/B8/C3/C15 nella legha / nella capitulatione, B12 delli oratori, C7 dalle bande di costà, C8 alle spese. ≥ 15 attestations. Sûr.",
+  "α = per": "Signe nouveau (a fermé à queue, ∝). 311 B2/B5 « α (c) r^2 t^5 g# W O » = personaggio ; B10 « Q 7^5 α 0 7^4 3^4 d x^2 » = era per crederlo ; B11 « r^5 α Q » = sapere, « F α 9^3 3 » = et per via ; B12 « 2^2 α 9^3 3 » = manco per via, « F α 7^4 x^5 8 O t^4 » = et per relatione ; B14 « α 2^4 d 8^5 » = per certa ; C1/C2 per via ; C7 per havere ; C9 per natura, per accidente ; C16 per le cose ; A4 per moglie. Sûr.",
+  "2^1 = cu": "311 C1 et C4 « 6^5 d 8^3 2^1 x^5 7^4 » = particulare (×2) ; C3/C7 « 3 c 2^1 t^4/t^5 » = alcune/alcuna. Probable (homophone c du signe 2).",
+  "2^5 = ca (défaut v5b) / ba (bande)": "ca : 311 A3 « 3^1 2^5 3^3 » = duca di ; A5 « 3^3 2^5 r^5 » = di casa ; C4 « 3^1 2^5 8^3 » = ducati ; C15/C17 « 2^5 6^3 8^1 x^5 8^3 O t^4 » = capitulatione ; 322 L7 significare. ba : 333 L1, 322 L8, 311 C7 « 2^5 y 3^4 » = bande (toujours ce mot). Le signe 2 est polyphone b/c ; décision par le sens.",
+  "2^2 = co / bo": "co : costoro, costì, poco, corte, corona, cosa (311, 333). bo : 311 A5 et B2 « 3^3 2^2 t^5 S^5 x^3 8^5 » = di bona qualità ; B5 « 2^2 t^2 » = bono ; C11 « x^5 2^2 t^5 » = la bona. Alternative déclarée.",
+  "0 + 8 = tt": "333 L2 « 8^1 0 8^2 » = tutto ; 322 L1 « 3^4 0 8^2 » = detto ; 311 B4 « 5^5 0 8 t^5 » = mattina ; B13 « x^4 0 8^4 7^5 » = lettera ; B1 « x^4 0 0 8 7^4 » = lettere. Probable.",
+  "O + r = ch ; O + 8 = ct": "ch : 311 B6 « 7^3 O r W Q 6 8^5 » = richiesta ; B7 « S^5 c O r p t^2 » = qualchuno ; B14 « O r W » = chi ; B16 « O r W 3 7^2 » = chiaro ; 322 L9 richiese, L12 chi. ct : 311 C1/C12/C15 « y^5 O 8^2 » = facto ; C15 « 3 p O 8^2 7^3 8^5 » = auctorità. Probable.",
+  "Non résolus (311/333)": "F^n (311 A7, B11, C2), E (B11, cf. 322), J (C16), A (B5 « A c »), M^n, Q^n, 7^m (B7, Sua Maestà ?), R^0/F^0 (marques ?), codes .16. et .17. (311 C6 « dal papa, da .16. et .17. » ; C11 « verso le .16. »), T dans « havere T subscripti » (C3)."
+ },
+ "_regles_contexte_v5b": {
+  "0 + 8": "0 suivi de 8 → t (doublement tt) au lieu de c",
+  "O + r": "O suivi de r NU (r = h) → c (digramme ch) ; O devant r avec exposant (r^2 = so…) reste o",
+  "O + 8": "ALTERNATIVE NON APPLIQUÉE au décodage : O devant 8 = c (facto, auctorità) ; contre : « r^1 O 8^4 » = suo te(nessi)",
+  "2^5 dans bande": "2^5 y 3^4 (bande) → ba ; ailleurs ca",
+  "2^2": "co par défaut ; bo dans bona/bono (alternative non appliquée au décodage)"
+ },
+ "_arbitrage_v6": {
+  "α = per (≡ P)": "Le signe α (a fermé à queue, ∝) est le signe déjà noté « P » dans T (318 gloss « P D^n 8^2 = per conto »), 340, 342 et 346 (vérifié sur l'image 346 c. 441r : même forme ; note de forme de H4_342 : « α (signe « per ») = P comme en 340 »). Clairs d'époque : 346 ↔ 345 « per lo incontro de Svizeri », « per ancora non si tirono », « per aspettare », « per volersi », « per potere », « per sua parte » ; 342 ↔ 343 « per certo », « per intendere », « per succedere » ; 340 ↔ 341 « per le ultime ». Lettres nues : 311 ×18 (dont « et α » = « et per » ×3, et « sa-α-e » = sapere à l'intérieur d'un mot, qui excluent « et »), 307 ×6, 309 ×1, tous lisibles « per ». Pas d'homophonie démontrée (1 seul cas, 307 L16, où « et » se lirait mieux). Sûr.",
+  "4# = ll ; G# = gg (deux signes)": "4# (« 4 » anguleux + #) = ll : 333 ×3 ↔ 332 « dalle bande di qua » ; 342 L2 « 4? Q 2^5 y^4 » ↔ 343 « dalle bande » (# non vu, appui faible) ; 322 L8, 311 ×16 (dont 3 où « ll » ne donne pas le mot : C9 accidente, C12, C13 — confusion de forme ou gl, déclarée). G# (δ fermé + #) = gg : 309 B1 ve-gg-ia (1 attestation, forme vue sur l'image, ronde, distincte de 4#). v5a n'a jamais rencontré 4# (absent de 307/309) ; v5b n'a jamais rencontré G# (absent de 311/333) : pas de conflit réel, seulement l'héritage 4# = gg de v4.",
+  "0 + 8": "v5a : 0 = c ; v5b : 0 devant 8 = t. Tranché pour v5a (graphie ct = tt d'époque) ; aucun mot ne change.",
+  "2 = b ou c": "Accord v5a/v5b : défaut c (ca, ce, ci, co, cu) ; b par le sens (bande par règle de contexte ; bona, bono, buon, bon, dubio en lecture)."
+ }
+}
