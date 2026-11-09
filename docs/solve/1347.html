@@ -47,7 +47,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 1347 · class C · priority 6.0 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 1347 · class C · priority 6.0 · attempted, open</p>
   <h1>Ciphered Latin poem on a flyleaf ("Carmina edita per mfnpflrfp ...")</h1>
   <p class="sub">Minor: a monastic vowel-shift cipher; quick to read and an example of the type.</p>
   <dl class="facts">
@@ -82,20 +82,21 @@ THE CIPHER
     - A 118 inf. codex record (digitised): https://ambrosiana.comperio.it/opac/detail/view/ambro:catalog:25598
 
 WHAT IS KNOWN
-  Status: OPAC: "Carme cifrato, inc. Carmina edita per mfnpflrfp. Altisono similis credit regnare tirampnus ..."; the codex is digitised. Probably trivial to read.
-  Outcome so far: not yet attempted by the project
+  Status: Attempted 9 Nov 2026: only the heading word is enciphered (vowel shift, a&gt;b e&gt;f i&gt;l o&gt;p u&gt;x); the poem is plain Latin. The word did not decode to a name; see targets/ambrosiana118/.
+  Outcome so far: attempted, open
   Prior-art check: open (checked 28 Oct 2026: OPAC)
   Check first: Open A 118 inf. in the digital library at f. 154r and read it.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/ambrosiana118/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/ambrosiana118/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/ambrosiana118/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -135,7 +136,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/ambrosiana118/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+1347&amp;target=catalogue+1347
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -153,10 +154,10 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>What is known</h2>
 
 
-<p><b>Status and prior art.</b> OPAC: "Carme cifrato, inc. Carmina edita per mfnpflrfp. Altisono similis credit regnare tirampnus ..."; the codex is digitised. Probably trivial to read.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 28 Oct 2026: OPAC).</p>
+<p><b>Status and prior art.</b> Attempted 9 Nov 2026: only the heading word is enciphered (vowel shift, a&gt;b e&gt;f i&gt;l o&gt;p u&gt;x); the poem is plain Latin. The word did not decode to a name; see targets/ambrosiana118/.</p>
+<p><b>Outcome so far.</b> attempted, open Prior-art check: open (checked 28 Oct 2026: OPAC).</p>
 <p><b>Check first.</b> Open A 118 inf. in the digital library at f. 154r and read it.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ambrosiana118/NOTES.md" rel="noopener">targets/ambrosiana118/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/ambrosiana118" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
