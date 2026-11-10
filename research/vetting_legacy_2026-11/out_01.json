@@ -1,0 +1,126 @@
+{
+ "320": {
+  "date": "2026-11-09",
+  "by": "claude legacy vetting batch 01",
+  "seen": {
+   "kind": "transcription",
+   "where": "Zurlauben (ed.), Mémoires et lettres de Henri duc de Rohan sur la guerre de la Valteline (1758): archive.org MmoiresEtLettresDeHenriDucDeRoh1 (vol. II) and MemoiresEtLettresDeHenriDucDeRoha (vol. III), OCR text opened 9 Nov 2026",
+   "extent": "four letters in print in clear: d'Hémery 25 Jan 1636 with Rohan's reply (II, pp. 503-508); Savoy and Canisy 27 May 1636 (III, pp. 76-79). No manuscript ciphertext seen: the Gallica scan btv1b9059471x of Français 5190 ends at p. 80 (targets/rohan1636, emery1636).",
+   "cipher": "The print heads them 'Lettre en chiffres de M. d'Hemery, du 25 Janvier, reçue le 8 Février 1636', 'Lettre en chiffres de M. le duc de Savoye, à M. le duc de Rohan, du 27 Mai 1636, reçue le 6 Juin' and 'Lettre en chiffres de M. de Canisy', and gives each in plain French. Français 5190 is Rohan's register of despatches (copies), so the print rests on deciphered copies; no cipher sign of these letters has been seen by anyone here."
+  },
+  "prior_art": {
+   "decode": "known.py 'Français 5190' on the harvested DECODE dump and the repo: only this entry's own rows and targets rohan1636 / emery1636; no DECODE record.",
+   "tomokiyo": "No cryptiana page on these letters came back from the web search below; targets/rohan1636 records the 1637 Saint-Chamond cipher (Tomokiyo) as a structural parallel only.",
+   "lasry": "Web search 'Rohan Valteline 1636 \"d'Hémery\" lettre en chiffres 25 janvier 1636 Français 5190 déchiffrement' returned Lasry's BnF papers but none on fr. 5190; his fr. 3758 letters of 1635 are separate targets (louis1635, chatillon1635).",
+   "edition": "Zurlauben 1758 prints all four letters deciphered: vol. II pp. 503-508 (d'Hémery and Rohan's reply), vol. III pp. 76-79 (Savoy, Canisy). Checked in the archive.org OCR on 9 Nov 2026.",
+   "literature": "No modern study of these four letters found by the web search; the 2020 Vignal-Souleyreau edition concerns 1635 (targets/rohan1636 NOTES)."
+  },
+  "key_check": "No ciphertext in hand, so no key could be tried; no key for Rohan's 1636 ciphers is held in the repo.",
+  "duplicates": "known.py 'Français 5190': this entry and its two target folders (rohan1636, emery1636), both closed unread for want of images; no other entry holds these letters.",
+  "verdict": "read",
+  "closed": "Contemporary decipherments of all four letters are printed in Zurlauben, Mémoires et lettres de Henri duc de Rohan (1758), II pp. 503-508 and III pp. 76-79, taken from the register Français 5190 itself (anc. 9786); no surviving ciphertext has been shown."
+ },
+ "413": {
+  "date": "2026-11-09",
+  "by": "claude legacy vetting batch 01",
+  "seen": {
+   "kind": "not online",
+   "where": "https://www.agad.gov.pl/inwentarze/ZbPopiel12.xml (AGAD inventory of Zbiór Popielów, fetched by curl 9 Nov 2026); the scans are on szukajwarchiwach.gov.pl, which answers curl with an Imperva stub, so no leaf was looked at in this pass",
+   "extent": "82 pieces, k. 272 (inventory, sygn. 10: 'sztuk 82, k. 272')",
+   "cipher": "Inventory, sygn. 10: \"Deboli. 1784 (cyfry). Korespondencja polityczna tajna (pismo cyfrowe) przesyłana królowi Stanisławowi Augustowi z Petersburga przez Deboli'ego\"; note \"Listy zapisane szyfrem\". The inventory mentions no decipherment in the unit."
+  },
+  "prior_art": {
+   "decode": "known.py 'Deboli' and 'Zbiór Popielów' on the harvested DECODE dump and the repo: no DECODE record; hits are this entry, its sister entries 413-416 and targets deboli1787-1791.",
+   "tomokiyo": "Web search 'Tomokiyo cryptiana Polish ciphers Stanisław August Deboli OR Zabłocki cipher eighteenth century Poland diplomatic code' returned nothing on Deboli or on Stanisław August's codes.",
+   "lasry": "Nothing by Lasry on Polish 18th-century codes came back from the same search or from the HistoCrypt results it listed.",
+   "edition": "Unprinted for 1784: the IH PAN edition (Zielińska & Danilczyk) covers 1780-1782 only. Its introduction (Zielińska & Danilczyk (eds), Korespondencja polityczna Stanisława Augusta: Augustyn Deboli 1781 (IH PAN), Wstęp, RCIN PDF opened 9 Nov 2026) states that the Petersburg letters in the AKP books are mostly 'deszyfry' and that 'szyfrowane znajdują się w Zbiorze Popielów'.",
+   "literature": "Web search 'Deboli depesze 1784 1785 \"Archiwum Królestwa Polskiego\" 267 Stanisław August Petersburg korespondencja' found no study printing the 1784 despatches. The entry records (Brice Dudout, 5 Nov 2026) the cabinet's clear book AKP 267, 'Deboli' 2 Jan 1784 - 20 Dec 1785; it could not be reopened here (szukajwarchiwach needs Chrome)."
+  },
+  "key_check": "Keys of the time in the same fonds per the inventory: ZbPop 444 \"Cyfra polska posłana do Petersburga JW-o Deboli'emu ... 8. III 1783\" and ZbPop 451 \"Chiffre François Nouveau envoyé a Monsieur Deboli\" 1780. No reading with either key is on record for 1784; the entry notes a second table (2084, 1103, 509 frequent) with no key found.",
+  "key_in_volume": "Not in the unit; ZbPop 444 (1783) and 451 (1780) are in the same fonds, transcribed by Brice Dudout's session per the entry and targets/deboli1787/key.",
+  "duplicates": "known.py 'Deboli', 'Zbiór Popielów': the entry's own row; sister year-units 413-416 and targets deboli1787-1791 are other years or other pieces, not this unit.",
+  "verdict": "partly_read",
+  "closed": "The King's cabinet deciphered these despatches at the time: the deszyfry of 1784 are in AGAD, Archiwum Królestwa Polskiego 267 ('Deboli' 2 Jan 1784 - 20 Dec 1785), per the entry's status (Dudout, 5 Nov 2026) and the IH PAN edition's statement that the AKP Deboli books hold the decipherments of the Zbiór Popielów ciphers. Not matched piece by piece, and AKP 267 was not reopened in this pass (needs Chrome)."
+ },
+ "414": {
+  "date": "2026-11-09",
+  "by": "claude legacy vetting batch 01",
+  "seen": {
+   "kind": "not online",
+   "where": "https://www.agad.gov.pl/inwentarze/ZbPopiel12.xml (AGAD inventory of Zbiór Popielów, fetched by curl 9 Nov 2026); the scans are on szukajwarchiwach.gov.pl, which answers curl with an Imperva stub, so no leaf was looked at in this pass",
+   "extent": "88 pieces, k. 253 (inventory, sygn. 11, dated 1785: 'sztuk 88, k. 253')",
+   "cipher": "Inventory, sygn. 11: \"Deboli. (cyfry). Korespondencja polityczna tajna (pismo cyfrowe) przesyłana królowi Stanisławowi Augustowi z Petersburga przez Deboli'ego (depesze)\"; note \"Listy zapisane szyfrem\". The inventory mentions no decipherment in the unit."
+  },
+  "prior_art": {
+   "decode": "known.py 'Deboli' and 'Zbiór Popielów' on the harvested DECODE dump and the repo: no DECODE record; hits are this entry, its sister entries 413-416 and targets deboli1787-1791.",
+   "tomokiyo": "Web search 'Tomokiyo cryptiana Polish ciphers Stanisław August Deboli OR Zabłocki cipher eighteenth century Poland diplomatic code' returned nothing on Deboli or on Stanisław August's codes.",
+   "lasry": "Nothing by Lasry on Polish 18th-century codes came back from the same search or from the HistoCrypt results it listed.",
+   "edition": "Unprinted for 1785: the IH PAN edition (Zielińska & Danilczyk) covers 1780-1782 only. Its introduction (Zielińska & Danilczyk (eds), Korespondencja polityczna Stanisława Augusta: Augustyn Deboli 1781 (IH PAN), Wstęp, RCIN PDF opened 9 Nov 2026) states that the Petersburg letters in the AKP books are mostly 'deszyfry' and that 'szyfrowane znajdują się w Zbiorze Popielów'.",
+   "literature": "The same web search found nothing printing the 1785 despatches. The entry records AKP 267 (clear book to 20 Dec 1785), extracts of 10 May - 20 Sept 1785 in AKP 264 (a volume the edition's introduction names: 'Correspondance Deboli ... 1780 ad 12 maji 1789'), and a parallel French letter of 14 Oct 1785 in ZbPop 402."
+  },
+  "key_check": "Keys of the time in the same fonds per the inventory: ZbPop 444 \"Cyfra polska posłana do Petersburga JW-o Deboli'emu ... 8. III 1783\" and ZbPop 451 \"Chiffre François Nouveau envoyé a Monsieur Deboli\" 1780. No reading with either key is on record for 1785; the entry notes the second table (2084, 1103, 509) has no key of the time.",
+  "key_in_volume": "Not in the unit; ZbPop 444 (1783) and 451 (1780) are in the same fonds, transcribed by Brice Dudout's session per the entry and targets/deboli1787/key.",
+  "duplicates": "known.py 'Deboli', 'Zbiór Popielów': the entry's own row; sister year-units 413-416 and targets deboli1787-1791 are other years or other pieces, not this unit.",
+  "verdict": "partly_read",
+  "closed": "Contemporary decipherments exist: the cabinet's deszyfry of 1785 are in AGAD, Archiwum Królestwa Polskiego 267 (to 20 Dec 1785) with extracts in AKP 264, per the entry's status (Dudout, 5 Nov 2026) and the IH PAN edition's description of the AKP Deboli books as deszyfry of the Zbiór Popielów ciphers. Not matched piece by piece; AKP 267 not reopened in this pass (needs Chrome)."
+ },
+ "415": {
+  "date": "2026-11-09",
+  "by": "claude legacy vetting batch 01",
+  "seen": {
+   "kind": "not online",
+   "where": "https://www.agad.gov.pl/inwentarze/ZbPopiel12.xml (AGAD inventory of Zbiór Popielów, fetched by curl 9 Nov 2026); the scans are on szukajwarchiwach.gov.pl, which answers curl with an Imperva stub, so no leaf was looked at in this pass",
+   "extent": "88 pieces, k. 228 (inventory: 'sztuk 88, k. 228')",
+   "cipher": "Inventory, sygn. 2: \"Deboli. 1786 (cyfry). Korespondencja polityczna tajna (pismo cyfrowe) przesyłana przeważnie królowi Stanisławowi Augustowi z Petersburga przez Deboli'ego\"; note \"Listy zapisane szyfrem\". The inventory mentions no decipherment in the unit."
+  },
+  "prior_art": {
+   "decode": "known.py 'Deboli' and 'Zbiór Popielów' on the harvested DECODE dump and the repo: no DECODE record; hits are this entry, its sister entries 413-416 and targets deboli1787-1791.",
+   "tomokiyo": "Web search 'Tomokiyo cryptiana Polish ciphers Stanisław August Deboli OR Zabłocki cipher eighteenth century Poland diplomatic code' returned nothing on Deboli or on Stanisław August's codes.",
+   "lasry": "Nothing by Lasry on Polish 18th-century codes came back from the same search or from the HistoCrypt results it listed.",
+   "edition": "Unprinted for 1786: the IH PAN edition (Zielińska & Danilczyk) covers 1780-1782 only. Its introduction (Zielińska & Danilczyk (eds), Korespondencja polityczna Stanisława Augusta: Augustyn Deboli 1781 (IH PAN), Wstęp, RCIN PDF opened 9 Nov 2026) states that the Petersburg letters in the AKP books are mostly 'deszyfry' and that 'szyfrowane znajdują się w Zbiorze Popielów'.",
+   "literature": "Zielińska, Kwartalnik Historyczny 110/4 (2003), RCIN PDF opened 9 Nov 2026, cites Deboli's letters to the King of 1786 from AKP 269 throughout (13 I, 14 III, 7 and 14 IV, 12 VII, 3 X, 4 XI, 21 and 24 XI, 1 and 29 XII 1786) and notes copies of part of them in Zbiór Popielów."
+  },
+  "key_check": "Keys of the time in the same fonds per the inventory: ZbPop 444 \"Cyfra polska posłana do Petersburga JW-o Deboli'emu ... 8. III 1783\" and ZbPop 451 \"Chiffre François Nouveau envoyé a Monsieur Deboli\" 1780. targets/deboli1787 reads 1787 pieces in part with ZbPop 444 and lists ZbPop 2 (1786) as a sibling in the same code, not read there; a 12282 table at the opening of the first piece has no key.",
+  "key_in_volume": "Not in the unit; ZbPop 444 (1783) and 451 (1780) are in the same fonds, transcribed by Brice Dudout's session per the entry and targets/deboli1787/key.",
+  "duplicates": "known.py 'Deboli', 'Zbiór Popielów': the entry's own row; sister year-units 413-416 and targets deboli1787-1791 are other years or other pieces, not this unit.",
+  "verdict": "partly_read",
+  "closed": "Contemporary decipherments exist and are used in print: the cabinet's clear texts of 1786 are in AGAD, Archiwum Królestwa Polskiego 269, cited letter by letter in Zielińska, KH 110/4 (2003); targets/deboli1787 holds a header index of AKP 269 (140 clear letters, 3 Jan 1786 - 21 Dec 1787). The cipher leaves of ZbPop 2 have not been matched to them piece by piece."
+ },
+ "416": {
+  "date": "2026-11-09",
+  "by": "claude legacy vetting batch 01",
+  "seen": {
+   "kind": "transcription",
+   "where": "targets/deboli1787/transcription (Brice Dudout's transcriptions from the szukajwarchiwach scans of ZbPop 3) and https://www.agad.gov.pl/inwentarze/ZbPopiel12.xml; the scans themselves were not opened in this pass (Imperva)",
+   "extent": "83 pieces, k. 184 (inventory); targets/deboli1787 sorted 56 despatches and 4 Gołuchowski letters: code 444 = 22, table 9933 = 19, 3865 = 14, 12282 = 3, the 1789-91 code = 3, mostly clear = 3",
+   "cipher": "Inventory, sygn. 3: \"Deboli. 1787 (cyfry). Korespondencja polityczna tajna (pismo cyfrowe) przesyłana królowi Stanisławowi Augustowi z Petersburga przez Deboli'ego oraz listy pisane przez Gołuchowskiego do jednego z ministrów króla Stanisława Augusta, przy pomocy tego samego klucza cyfrowego\"; note \"Listy zapisane szyfrem\". The inventory mentions no decipherment in the unit."
+  },
+  "prior_art": {
+   "decode": "known.py 'Deboli' and 'Zbiór Popielów' on the harvested DECODE dump and the repo: no DECODE record; hits are this entry, its sister entries 413-416 and targets deboli1787-1791.",
+   "tomokiyo": "Web search 'Tomokiyo cryptiana Polish ciphers Stanisław August Deboli OR Zabłocki cipher eighteenth century Poland diplomatic code' returned nothing on Deboli or on Stanisław August's codes.",
+   "lasry": "Nothing by Lasry on Polish 18th-century codes came back from the same search or from the HistoCrypt results it listed.",
+   "edition": "Unprinted for 1787: the IH PAN edition (Zielińska & Danilczyk) covers 1780-1782 only. Its introduction (Zielińska & Danilczyk (eds), Korespondencja polityczna Stanisława Augusta: Augustyn Deboli 1781 (IH PAN), Wstęp, RCIN PDF opened 9 Nov 2026) states that the Petersburg letters in the AKP books are mostly 'deszyfry' and that 'szyfrowane znajdują się w Zbiorze Popielów'.",
+   "literature": "Zielińska, KH 110/4 (2003) cites AKP 269 for Deboli's letters of 5, 9 and 18 Jan 1787. targets/deboli1787 NOTES: the header index of AKP 269 gives a clear of the same date for 8 of its 14 pieces and none for 6; 25 and 28 Dec 1787 are deciphered in ZbPop 417."
+  },
+  "key_check": "Keys of the time in the same fonds per the inventory: ZbPop 444 \"Cyfra polska posłana do Petersburga JW-o Deboli'emu ... 8. III 1783\" and ZbPop 451 \"Chiffre François Nouveau envoyé a Monsieur Deboli\" 1780. targets/deboli1787 read 14 pieces in code 444 in part (81.8% of words; the key scored 0.837-0.874 against its 0.90 test); ZbPop 451, 445/452, 453/454 and the deboli1788/1789 keys were checked against tables 9933, 3865 and 12282 there and do not fit.",
+  "key_in_volume": "Not in the unit; ZbPop 444 (1783) and 451 (1780) are in the same fonds, transcribed by Brice Dudout's session per the entry and targets/deboli1787/key.",
+  "duplicates": "known.py 'Deboli', 'Zbiór Popielów': the entry's own row; sister year-units 413-416 and targets deboli1787-1791 are other years or other pieces, not this unit.",
+  "verdict": "partly_read",
+  "closed": "targets/deboli1787 (deboli1787.html) holds a partial reading of 14 pieces of this unit with the key of the time ZbPop 444, and the cabinet's clear texts of most 1787 despatches are in AGAD AKP 269 (to 21 Dec 1787) and ZbPop 417 (25, 28 Dec). The pieces in tables 9933, 3865, 12282 and the 1789-91 code have no reading here and are not matched to the AKP 269 clears."
+ },
+ "422": {
+  "unvetted": "needs Chrome: https://www.szukajwarchiwach.gov.pl (fonds 1/12 sygn. 20 for the leaves; fonds 1/11 Archiwum Królestwa Polskiego for the cabinet's Berlin books; curl gets an Imperva stub). The AGAD inventory (https://www.agad.gov.pl/inwentarze/ZbPopiel12.xml, fetched 9 Nov 2026) shows cipher: \"Zabłocki 1780, 1781 i 1783-1785 (cyfry). Korepospondencja tajna polityczna (pismo cyfrowe) przesyłana królowi Stanisławowi Augustowi z Berlina przez B. Zabłockiego\", 163 pieces, k. 348, \"Listy zapisane szyfrem\". known.py 'Zabłocki', 'Zablocki', 'Zbiór Popielów': only this entry and its sister units 422-426, no DECODE record. Prior art not settled: web searches 'Bernard Zabłocki rezydent polski w Berlinie depesze 1780 1781 1783 1785 Fryderyk II Stanisław August AGAD' and '\"Zabłocki\" Berlin 1782 korespondencja \"Zbiór Popielów\" 19 OR 20 szyfrowane depesze' found no edition or study of these despatches, only Franciszek and Antoni Zabłocki. The open question is whether the King's cabinet kept deszyfry of Zabłocki's Berlin despatches in AKP as it did for Deboli (AKP 262, 267, 269; the IH PAN Deboli edition says the AKP books are the decipherments of the Zbiór Popielów ciphers); the AKP inventory is not online outside szukajwarchiwach. Keys per the entry: ZbPop 445/452 'Chiffre François ancien avec Mr. Kwilecki ... allant a Berlin' 1772, not tested."
+ },
+ "423": {
+  "unvetted": "needs Chrome: https://www.szukajwarchiwach.gov.pl (fonds 1/12 sygn. 19 for the leaves; fonds 1/11 Archiwum Królestwa Polskiego for the cabinet's Berlin books; curl gets an Imperva stub). The AGAD inventory (https://www.agad.gov.pl/inwentarze/ZbPopiel12.xml, fetched 9 Nov 2026) shows cipher: \"Bilety króla do JP. Kicińskiego ...\"; \"fascykuł zawiera: korespondencję polityczną tajną (pismo cyfrowe), przesyłaną z Berlina królowi Stanisławowi Augustowi przez B. Zabłockiego\", 1782, 55 pieces, k. 140, \"Listy zapisane szyfrem\". known.py 'Zabłocki', 'Zablocki', 'Zbiór Popielów': only this entry and its sister units 422-426, no DECODE record. Prior art not settled: web searches '\"Zabłocki\" Berlin 1782 korespondencja \"Zbiór Popielów\" 19 OR 20 szyfrowane depesze Stanisław August' and 'Bańkowski \"Archiwum Stanisława Augusta\" \"Archiwum Królestwa Polskiego\" Zabłocki Berlin księga korespondencji deszyfry' found no edition and no AKP shelfmark for Berlin in 1782. The open question is whether the King's cabinet kept deszyfry of Zabłocki's Berlin despatches in AKP as it did for Deboli (AKP 262, 267, 269; the IH PAN Deboli edition says the AKP books are the decipherments of the Zbiór Popielów ciphers); the AKP inventory is not online outside szukajwarchiwach. Keys per the entry: ZbPop 445/452 'Chiffre François ancien avec Mr. Kwilecki ... allant a Berlin' 1772, not tested."
+ },
+ "424": {
+  "unvetted": "needs Chrome: https://www.szukajwarchiwach.gov.pl (fonds 1/12 sygn. 13 for the leaves; fonds 1/11 Archiwum Królestwa Polskiego for the cabinet's Berlin books; curl gets an Imperva stub). The AGAD inventory (https://www.agad.gov.pl/inwentarze/ZbPopiel12.xml, fetched 9 Nov 2026) shows cipher: \"Zabłocki 1786-1789 (cyfry). Korespondencja polityczna tajna (pismo cyfrowe) przesyłana z Berlina królowi Stanisławowi Augustowi przez Bern. Zabłockiego\", 161 pieces, k. 387, \"Listy zapisane szyfrem\". known.py 'Zabłocki', 'Zablocki', 'Zbiór Popielów': only this entry and its sister units 422-426, no DECODE record. Prior art not settled: web searches 'Zabłocki Berlin 1786 1787 1788 raporty \"Stanisław August\" \"Archiwum Królestwa Polskiego\" Zabłocki sygnatura deszyfry' and 'Tomokiyo cryptiana Polish ciphers Stanisław August Deboli OR Zabłocki' found no edition, no cryptiana page and no AKP shelfmark for Berlin (the AKP 94/269/378 hits concern Antoni Zabłocki at Kherson and Deboli). The open question is whether the King's cabinet kept deszyfry of Zabłocki's Berlin despatches in AKP as it did for Deboli (AKP 262, 267, 269; the IH PAN Deboli edition says the AKP books are the decipherments of the Zbiór Popielów ciphers); the AKP inventory is not online outside szukajwarchiwach. Keys per the entry: ZbPop 445/452 'Chiffre François ancien avec Mr. Kwilecki ... allant a Berlin' 1772, not tested."
+ },
+ "425": {
+  "unvetted": "needs Chrome: https://www.szukajwarchiwach.gov.pl (fonds 1/12 sygn. 423 for the leaves; fonds 1/11 Archiwum Królestwa Polskiego for the cabinet's Berlin books; curl gets an Imperva stub). The AGAD inventory (https://www.agad.gov.pl/inwentarze/ZbPopiel12.xml, fetched 9 Nov 2026) shows cipher: \"Zabłocki\". Korespondencja tajna ... z Berlina ... \"w części tajna 'cyfrowa' - szyfrowanana sztuk 111, oraz przesyłana przez króla i kancelarię z Warszawy do Berlina Zabłockiemu sztuk 81 (65)\", 1789, 192 pieces, \"Listy zapisane szyfrem\". known.py 'Zabłocki', 'Zablocki', 'Zbiór Popielów': only this entry and its sister units 422-426, no DECODE record. Prior art not settled: web searches 'Zabłocki Berlin depesze 1789 Stanisław August szyfr Zbiór Popielów 423 edycja korespondencja' and '\"Zabłocki\" Berlin \"AKP\" 1789 OR 1790 OR 1791 \"Zabłocki do Stanisława Augusta\"' found no edition. The unit also holds 81 (65) pieces from Warsaw to Zabłocki, which have not been seen. The open question is whether the King's cabinet kept deszyfry of Zabłocki's Berlin despatches in AKP as it did for Deboli (AKP 262, 267, 269; the IH PAN Deboli edition says the AKP books are the decipherments of the Zbiór Popielów ciphers); the AKP inventory is not online outside szukajwarchiwach. Keys per the entry: ZbPop 445/452 'Chiffre François ancien avec Mr. Kwilecki ... allant a Berlin' 1772, not tested."
+ },
+ "426": {
+  "unvetted": "needs Chrome: https://www.szukajwarchiwach.gov.pl (fonds 1/12 sygn. 14 for the leaves; fonds 1/11 Archiwum Królestwa Polskiego for the cabinet's Berlin books; curl gets an Imperva stub). The AGAD inventory (https://www.agad.gov.pl/inwentarze/ZbPopiel12.xml, fetched 9 Nov 2026) shows cipher: \"Zabłocki 1790-1792 (cyfry). Korespondencja polityczna tajna (pismo cyfrowe) przesyłana z Berlina królowi Stanisławowi Augustowi przez Bern. Zabłockiego\", 50 + 61 + 64 pieces (the inventory totals them as 185, the sum is 175), k. 428, \"Listy zapisane szyfrem\". known.py 'Zabłocki', 'Zablocki', 'Zbiór Popielów': only this entry and its sister units 422-426, no DECODE record. Prior art not settled: web searches 'Bernard Zabłocki chargé d'affaires Berlin 1790-1792 raporty do króla Stanisława Augusta wydanie źródłowe Zbiór Popielów 14' and '\"Zabłocki do króla\" OR \"Zabłocki do Stanisława Augusta\" Berlin 1790 \"Zb. Pop.\" 372 OR 373 OR 14' found no edition. ZbPop 372 and 373, 'Korespondencja B. Zabłockiego z Berlina i odpowiedzi króla' 1790 and 1791, are files in the same fonds, not marked as cipher, that could hold the clear side of the 1790-91 pieces; they have not been opened or matched. The open question is whether the King's cabinet kept deszyfry of Zabłocki's Berlin despatches in AKP as it did for Deboli (AKP 262, 267, 269; the IH PAN Deboli edition says the AKP books are the decipherments of the Zbiór Popielów ciphers); the AKP inventory is not online outside szukajwarchiwach. Keys per the entry: ZbPop 445/452 'Chiffre François ancien avec Mr. Kwilecki ... allant a Berlin' 1772, not tested."
+ }
+}

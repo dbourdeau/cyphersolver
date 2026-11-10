@@ -1,0 +1,243 @@
+{
+ "601": {
+  "date": "2026-11-09",
+  "by": "claude legacy vetting batch 04",
+  "seen": {
+   "kind": "scan",
+   "where": "NLA Osnabrück image server, whole file online (508 images): https://arcinsys-digitalisate.niedersachsen.de/nla_os/rep_100/abschnitt_1_nr._43/ ; fol. 493r is m_os_rep_100_abschnitt_1_nr._43_aufn_0500.jpg, fol. 493v-494 is aufn_0501.jpg (viewed at full size, 9 Nov 2026). The DDB/Archivportal-D viewer shows only 5 sample images, which is why the frame check of 30 Oct did not find the leaf.",
+   "extent": "One leaf: fol. 493r carries about 19 lines of symbol cipher in six or seven runs set between clear German phrases; the letter ends in clear on fol. 493v, dated 26 February 1632 (place not read with confidence).",
+   "cipher": "Symbol cipher (Greek-like and geometric signs with digits, monoalphabetic in look) in a German letter to Wartenberg. Each cipher run is marked with a letter (α, β, γ, δ, ε, ξ, H) and the left margin carries the matching plaintext in a contemporary hand, e.g. α 'deren Inhalt des Herrn Churfürsten in Bayern Dhlt. und Lbd. gebürlich zu communiciren', δ 'das sie auff der zu Brüssell abgelegte werbung und negotiation für eine endliche und zuverlessige resolution und erklerung erheben werde', ε 'das hauptwerck'. The decipherment is on the leaf."
+  },
+  "prior_art": {
+   "decode": "known.py on the harvested DECODE dump for \"Rep 100 Abschnitt 1 Nr. 43\", \"Wartenberg\", \"Hohenzollern-Sigmaringen\": no DECODE record.",
+   "tomokiyo": "Web search for cryptiana with Wartenberg, Osnabrück, 1632 and the Catholic League returned no Cryptiana page on this letter.",
+   "lasry": "No Lasry paper on Wartenberg or this file came back in the searches.",
+   "edition": "Forst, Politische Correspondenz des Grafen Franz Wilhelm von Wartenberg 1621-1631 (1897) stops a year before this letter; its archive.org text could not be downloaded in this session and was not opened.",
+   "literature": "No study of the cipher found; the contemporary marginal decipherment on the leaf makes the question moot."
+  },
+  "key_check": "No key needed: the plaintext of every cipher run stands in the margin of fol. 493r. The margin and the cipher runs together would give the key.",
+  "duplicates": "known.py \"Rep 100 Abschnitt 1 Nr. 43\" \"Wartenberg\" \"Hohenzollern-Sigmaringen\": only this entry's own rows (catalogue.json, CATALOGUE.md, research/archivportal_d) and mentions of it in other entries' duplicate notes. No target folder.",
+  "searches": [
+   {
+    "query": "Franz Wilhelm von Wartenberg Johann von Hohenzollern-Sigmaringen 1632 Briefwechsel Geheimschrift chiffriert entziffert",
+    "result": "Biography and Forst's 1621-1631 edition only; nothing on the 1632 cipher letter."
+   },
+   {
+    "query": "\"Wartenberg\" \"Hohenzollern\" 1632 chiffre Briefe und Akten zur Geschichte des Dreißigjährigen Krieges Osnabrück Rep 100 Geheimschrift",
+    "result": "General works on Thirty Years' War ciphers (Ernst); no mention of this file."
+   },
+   {
+    "query": "cryptiana Tomokiyo Wartenberg Osnabrück cipher 1632 Catholic League Maximilian Bavaria cipher Hohenzollern",
+    "result": "No Cryptiana page on a Wartenberg or Hohenzollern cipher."
+   }
+  ],
+  "verdict": "read",
+  "closed": "Contemporary decipherment on the leaf: fol. 493r (image aufn_0500 on the NLA Osnabrück image server) has the plaintext of each cipher run written in the left margin, keyed to the runs by the letters α, β, γ, δ, ε, ξ, H. Seen at full resolution on 9 Nov 2026. The entry's access is right (online), but the images are on arcinsys-digitalisate.niedersachsen.de, not in the DDB viewer."
+ },
+ "613": {
+  "date": "2026-11-09",
+  "by": "claude legacy vetting batch 04",
+  "lead_updates": {
+   "access": "archive"
+  },
+  "seen": {
+   "kind": "not online",
+   "where": "Paz, Catálogo IV (1914), full text at archive.org/details/catlogo4secret01spai, p. 391-392, entry K. 1550-51 (B. 47) and its footnote. PARES has no item-level record (catalogo/find for 'Vargas Mexía cifra' 1578-1579 returned 'No se han encontrado datos', 9 Nov 2026).",
+   "extent": "Not stated: 'algunos documentos cifrados' within two legajos; number, folios and dates not given.",
+   "cipher": "Not seen. Paz describes the legajos as \"Originales cifrados de la correspondencia de Vargas Mexía de que son descifradas las cartas de los legajos anteriores\" and adds in a footnote: \"Hay algunos documentos cifrados, con cifra distinta de la de Vargas, que están sin descifrar y carecen de toda indicación de procedencia.\" So the archive's own catalogue states that these pieces are in cipher and carry no decipherment; the system is not described."
+  },
+  "prior_art": {
+   "decode": "known.py on the harvested DECODE dump for \"K 1550\", \"K 1551\", \"Vargas Mex\": no DECODE record for AGS Estado K 1550-51; DECODE's Vargas Mexía records are the BnF esp. 132 letters.",
+   "tomokiyo": "Cryptiana 'Secret Letters to Juan de Vargas Mexia from Philip II and Antonio Perez in BnF es.132 (1577-1579)' and 'Will anyone decipher Philip II's secret letters' cover the four keys of Philip II's and Pérez's letters to Vargas in the BnF volume; the search results do not mention K 1550-51 or documents in another cipher.",
+   "lasry": "No Lasry paper on Vargas Mexía's Paris embassy or on AGS K 1550-51 came back in the searches.",
+   "edition": "No edition can be named for unattributed pieces. Paz's catalogue of 1914 calls them undeciphered. The Archivo Documental Español 'Negociaciones con Francia' stops at 1568; no later calendar of the K series for 1578-79 was found.",
+   "literature": "archive.org full-text search for \"K. 1550\" with Vargas Mexía found only Paz and a 1909 article citing a Philip II letter from K. 1550; the Estudios Románicos 34 (2025) articles on sixteenth-century Simancas ciphers that came back cover other embassies. No decipherment found."
+  },
+  "key_check": "Nothing could be tested: the documents are not online. Paz says the cipher is not Vargas's, so the Vargas keys (Cryptiana, BnF esp. 132; DECODE) are not expected to fit; the Genoa embassy syllabary used in targets/perez1578 and the Don John / Escobedo general cipher are other candidates of the same years, untested.",
+  "key_held": "Held but untested against these pieces: the four Philip II / Pérez - Vargas Mexía keys from BnF esp. 132 (Cryptiana, DECODE) and the numerical syllabary rebuilt in targets/perez1578. Paz states the cipher differs from Vargas's.",
+  "duplicates": "known.py \"K 1550\" \"K 1551\" \"Vargas Mex\": this entry's own rows (catalogue.json, CATALOGUE.md, research/pares_ags, archive_sweep access_uncertain.md) and the cryptoole snapshot of the Cryptiana BnF esp. 132 article, which is a different volume. No target folder and no lead holds these documents.",
+  "searches": [
+   {
+    "query": "Simancas Estado K 1550 K 1551 Vargas Mexía 1578 1579 documentos cifrados \"sin descifrar\" cifra desconocida París embajada",
+    "result": "No study of K 1550-51; only the Cryptiana BnF esp. 132 keys and general Estudios Románicos articles on other Simancas ciphers."
+   },
+   {
+    "query": "cryptiana Tomokiyo \"Vargas Mexia\" cipher BnF espagnol 132 Simancas K 1550 undeciphered other cipher 1578",
+    "result": "Cryptiana pages on the BnF esp. 132 keys (letters to Vargas); nothing on Simancas K 1550-51 or on pieces in another cipher."
+   },
+   {
+    "query": "archive.org full text: \"K. 1550\" Vargas Mexía cifra",
+    "result": "Paz's catalogue itself and a 1909 Vierteljahrschrift article citing Philip II to Vargas from K. 1550; no decipherment of the unattributed pieces."
+   },
+   {
+    "query": "PARES catalogo/find: Vargas Mexía cifra, 1578-1579",
+    "result": "No item-level record ('No se han encontrado datos'), so no image and no later archive description."
+   }
+  ],
+  "verdict": "open"
+ },
+ "614": {
+  "date": "2026-11-09",
+  "by": "claude legacy vetting batch 04",
+  "seen": {
+   "kind": "not online",
+   "where": "Paz, Catálogo IV (1914), full text at archive.org/details/catlogo4secret01spai, p. 13, K. 1639 (D. 3) no. 89. PARES has no item-level record (catalogo/find 'Clemente VII Liga 1524 cifra' and 'Puntos Papa Liga Francia', 1524: 'No se han encontrado datos', 9 Nov 2026).",
+   "extent": "One document of 4 leaves in folio, Latin, part of it in cipher; how much is cipher is not stated.",
+   "cipher": "Not seen. Paz: \"89. Puntos en que el Papa deseaba le complaciese Carlos V acerca de la Liga y negociaciones pendientes con Francia. — 8 Abril 1524. — Lat. — Parte en cifra. — 4 h. f.\" The catalogue names no decipherment; whether one is written on the leaves is not known until they are seen."
+  },
+  "prior_art": {
+   "decode": "known.py on the harvested DECODE dump for \"K 1639\" and \"Clement VII\": no DECODE record for this document; DECODE's Rome 1524 records are the RAH Salazar A-31 Sessa letters worked in targets/sessa1524.",
+   "tomokiyo": "The searches for this document with Sessa, Clement VII, 1524 and cryptiana returned no Cryptiana page on K 1639 or on a papal memorandum of April 1524.",
+   "lasry": "No Lasry paper on Clement VII's or Sessa's 1524 correspondence came back in the searches.",
+   "edition": "Bergenroth, CSP Spain II, opened on British History Online for March, April and May 1524: three pieces of K 1639 are calendared (no. 644, the Emperor's answer to the Archbishop of Capua's proposals, 'K. 1639. 50', April; no. 650 of 14 May and no. 653 of 25 May to La Roche), none of them the Pope's points of 8 April and none marked as cipher. The 8 April document is not in the calendar under those months.",
+   "literature": "archive.org full-text search for \"K. 1639\" with Clement VII, 1524 and cipher returned nothing; web searches found only general works (Di Meglio 1970 on Charles V and Clement VII, not opened). No printed text or decipherment found."
+  },
+  "key_check": "Nothing could be tested: the document is not online. The imperial Rome cipher of April 1524 rebuilt in targets/sessa1524 is the first key to try if the cipher part was written by Sessa's chancery; a papal cipher would need another key.",
+  "key_held": "targets/sessa1524 holds a partly rebuilt key for Sessa's Rome cipher of April 1524 (RAH Salazar A-31); not tested against K 1639 no. 89, which is not online.",
+  "duplicates": "known.py \"K 1639\" \"Clement VII\": this entry's own rows only; the Clement VII hit in research/leads.json is a 1527 despatch to Wolsey. targets/sessa1523 and sessa1524 work on RAH Salazar letters, not on this document.",
+  "searches": [
+   {
+    "query": "Clemente VII Carlos V 8 abril 1524 \"K 1639\" OR \"K. 1639\" Simancas puntos Liga Francia cifra arzobispo de Capua Schönberg",
+    "result": "No hit on the document; general pages on Clement VII and the Simancas archive."
+   },
+   {
+    "query": "Sessa 1524 Clement VII cipher Simancas deciphered Rome April 1524 league France Pope proposals Emperor cryptiana Bergenroth cipher key",
+    "result": "Estudios Románicos articles on other Simancas ciphers and the CSP Venice cipher appendix; nothing on the 8 April 1524 points."
+   },
+   {
+    "query": "British History Online, CSP Spain vol. 2, Spain: March, April and May 1524 (pages read for K. 1639 and for 8 April)",
+    "result": "K 1639 pieces nos. 644, 650, 653 calendared; the 8 April points are not among them."
+   },
+   {
+    "query": "archive.org full text: \"K. 1639\" Clemente VII 1524 cifra abril",
+    "result": "No result outside Paz's catalogue."
+   }
+  ],
+  "verdict": "open"
+ },
+ "619": {
+  "date": "2026-11-09",
+  "by": "claude legacy vetting batch 04",
+  "seen": {
+   "kind": "not online",
+   "where": "Paz, Catálogo IV (1914), full text at archive.org/details/catlogo4secret01spai, p. 302, K. 1498 (B. 15); PARES has no item-level record (frame check of 2 Nov 2026).",
+   "extent": "A whole legajo, July-December 1562; Decrue cites pieces numbered at least 5 to 35.",
+   "cipher": "Not seen. Paz: \"K. 1498. — (B. 15.) — Correspondencia cifrada del Embajador Chantonay con Felipe II. A. 1562 (Julio-Septiembre). — Carta de Carlos IX a sus principales Oficiales sobre las turbaciones del Reino. — Operaciones militares para el asalto de Bourges ... Octubre-Diciembre. — Sigue la misma correspondencia. — Ejecuciones de los herejes ... Toma y saqueo de Rouen\": the cataloguer summarises what the letters say."
+  },
+  "prior_art": {
+   "decode": "known.py on the harvested DECODE dump for \"K 1498\" and \"Chantonay\": no DECODE record.",
+   "tomokiyo": "Web search for cryptiana with Chantonay / Perrenot and the 1560s Paris embassy returned no Cryptiana page on Chantonay's cipher (only the 1549-1554 Perrenot / Renard cipher).",
+   "lasry": "No Lasry paper on Chantonay's 1562 despatches came back in the searches.",
+   "edition": "Archivo Documental Español, Negociaciones con Francia (RAH, 1950-), which Brice Dudout named on 27 Oct 2026, could not be opened online in this session; the Folger catalogue record gives the series as 1559-1568. Not verified leaf by leaf.",
+   "literature": "The letters of K 1498 were read and cited by number while the legajo was in Paris (Archives nationales): Decrue, Anne de Montmorency (1889), cites 'Correspondance de Chantonay (K. 1498, B. 15, 5)', 'juin (K. 1498, B. 15, 14)', '27 et 28 août (K. 1498, B. 15, 27-29)', '6 septembre (K. 1498, B. 15, 33)', 'K. 1498, B. 15, 31-35'; Kervyn de Lettenhove, Les Huguenots et les Gueux I (1883), cites Chantonay's letters of 3, 6, 9, 13, 14, 17 and 30 June 1562 from K. 1498. Both texts read on archive.org."
+  },
+  "key_check": "No key tried and none needed for the content: the despatches have been used in plaintext by historians since the 1880s, which means the contemporary decipherments are with the cipher letters.",
+  "duplicates": "known.py \"K 1498\" \"Chantonay\": this entry's own rows only. No target folder, no lead.",
+  "searches": [
+   {
+    "query": "\"Negociaciones con Francia\" Archivo Documental Español 1562 Chantonay Felipe II K 1498 cartas descifradas tomo IV",
+    "result": "Folger record of the series (1559-1568); no page-level confirmation for K 1498."
+   },
+   {
+    "query": "Chantonay cifra 1562 Felipe II embajador París \"K. 1498\" OR \"K 1498\" Simancas cifrada descifrado",
+    "result": "Devos, Les chiffres de Philippe II, and Estudios Románicos articles on other ciphers; nothing on K 1498 itself."
+   },
+   {
+    "query": "archive.org full text: \"K 1498\" Chantonay",
+    "result": "43 hits: Decrue 1889 and Kervyn de Lettenhove 1883 cite and use Chantonay's letters of June-September 1562 from K. 1498 by piece number."
+   },
+   {
+    "query": "cryptiana Tomokiyo Chantonay cipher Philip II ambassador France 1560s Perrenot key",
+    "result": "No Cryptiana page on Chantonay's Paris cipher."
+   }
+  ],
+  "verdict": "read",
+  "closed": "The despatches of K 1498 are on record in plaintext: Paz (Catálogo IV, p. 302) summarises their content, and Decrue (Anne de Montmorency, 1889: K. 1498, B. 15, nos. 5, 14, 27-29, 30, 31-35) and Kervyn de Lettenhove (Les Huguenots et les Gueux I, 1883) cite and use individual letters of June-September 1562 from this legajo. That is only possible from the contemporary decipherments kept with the cipher originals. The leaves were not seen and the RAH edition (Negociaciones con Francia) was not opened; if the entry is kept at all it is a key-rebuilding corpus, not an unread text."
+ },
+ "620": {
+  "date": "2026-11-09",
+  "by": "claude legacy vetting batch 04",
+  "seen": {
+   "kind": "not online",
+   "where": "Paz, Catálogo II (1912), p. 143-145 (archive.org/details/catalogo2secreta00spai), legajos 6446 and 6452. PARES catalogo/find 'Viana Eguiluz cifra' returns only the key record 12709762 (AHN Estado 193 Exp. 66), 9 Nov 2026.",
+   "extent": "Part of two legajos: the cipher correspondence of April-June 1729 in leg. 6446 and the 'avisos cifrados' of June-September 1730 in leg. 6452; number of letters not given.",
+   "cipher": "Not seen. Paz, leg. 6446: \"Correspondencia cifrada en que se queja de haber notado frialdad en aquella Corte, cuyos Ministros celebraban frecuentes conferencias sin consultarle como antes ... Mala disposición de aquel Ministerio para adelantar en la negociación reservada\"; leg. 6452: \"Avisos cifrados sobre la inquietud del Emperador y sus Ministros después del tratado de Sevilla\". The catalogue gives the content of the cipher letters."
+  },
+  "prior_art": {
+   "decode": "known.py on the harvested DECODE dump for \"6446\", \"Viana y Eguiluz\", \"Eguiluz\": no DECODE record.",
+   "tomokiyo": "The searches for Viana y Eguiluz, Vienna 1729-1730 and cipher returned no Cryptiana page.",
+   "lasry": "No Lasry paper on the Spanish Vienna embassy of 1729-1730 came back in the searches.",
+   "edition": "No edition of Viana's despatches found. Paz's catalogue itself summarises what the ciphered correspondence says, and its preface notes that ambassadors' cipher letters reached the Council as \"los descifrados hechos por los secretarios, ó copias de ellos\".",
+   "literature": "Only Ulibarri Orueta's study of Viana's letters partly in Basque to Barrenechea (a different correspondence) and Schop Soler's use of Viana's letters for Russia; nothing that deciphers the 1729-1730 despatches anew."
+  },
+  "key_check": "No key tried: the despatches are not online. The key exists and is digitised: 'Cifra para la correspondencia reservada del marqués de Castelar con José de Viana y Eguiluz', AHN Estado 193 Exp. 66 (PARES 12709762).",
+  "key_held": "AHN Estado 193 Exp. 66 (PARES 12709762), a cifra of Castelar with Viana y Eguiluz, online; not tested, and it may not be the cipher used with the Marqués de la Paz.",
+  "duplicates": "known.py \"6446\" \"Viana y Eguiluz\" \"Eguiluz\": this entry's own rows; the other 6446 hits are unrelated URLs (BSB, Lodovico). No target folder, no lead.",
+  "searches": [
+   {
+    "query": "\"Viana y Eguiluz\" Viena 1729 1730 correspondencia cifrada marqués de la Paz Simancas Estado 6446 6452 tratado de Sevilla cifra",
+    "result": "Ulibarri Orueta on Viana's Basque-language letters to Barrenechea; nothing on the cipher despatches to La Paz."
+   },
+   {
+    "query": "archive.org full text: \"Viana y Eguiluz\" cifra Viena 1729",
+    "result": "Paz's Catálogo II, Berwick's Relación de Moscovia, BNE inventories and Schop Soler 1984 (cites Viana's letters, leg. 6613); no new decipherment."
+   },
+   {
+    "query": "PARES catalogo/find: Viana Eguiluz cifra",
+    "result": "One record, 12709762, the Castelar - Viana key in AHN Estado 193; no record for AGS Estado 6446 or 6452."
+   }
+  ],
+  "verdict": "read",
+  "closed": "Paz, Catálogo II (1912), p. 143-145, summarises the content of the cipher letters themselves (leg. 6446: Viana complains of the coldness of the Vienna court and of delays in the reserved negotiation; leg. 6452: the Emperor's unease after the Treaty of Seville), so the secretariat's decipherments are in the legajos, as his preface says was the practice. The leaves were not seen; a key for Viana is also online (AHN Estado 193 Exp. 66). No unread text is shown to exist."
+ },
+ "621": {
+  "unvetted": "Series-level record, not seen: Paz, Catálogo III (Revue des bibliothèques 1912, p. 234) gives leg. 587 only as 'A. 1582-83. — Carta escrita en Amberes sobre la derrota de los franceses — Cartas en cifra del Príncipe de Parma. — Cartas de Margarita de Austria, Pedro de Paz, Mondragón ...', with no count and no word on decipherments; PARES has no item-level record (searched 2 and 9 Nov 2026). The calendar that covers this legajo was not opened: Lefèvre, Correspondance de Philippe II sur les affaires des Pays-Bas, 2e partie, t. II (1580-1584), is not online, and it normally summarises Parma's despatches from the secretaries' descifrados. Needs that volume, or AGS scans / an item list of Estado 587, to tell whether any letter is without a decipherment. known.py 'leg. 587', 'Príncipe de Parma': no DECODE record, no target. Searches run: web 'Alejandro Farnesio cartas cifradas Felipe II 1582 1583 Simancas Estado 587 ...' and archive.org full text 'Liasse 587 prince de Parme 1583', 'Príncipe de Parma cartas en cifra 1582 Simancas': nothing on these letters."
+ },
+ "622": {
+  "unvetted": "Series-level record, not seen, and at least part is in print: Paz, Catálogo III (Revue des bibliothèques 1912, p. 226) lists leg. 563 (1575) as '... Discurso del proveedor Juan de Isunza sobre la sal. — Cartas cifradas del Comendador mayor de Castilla', no count. Gachard, Correspondance de Philippe II, t. III (archive.org correspondancede03phil, opened) prints from 'Liasse 563' a letter of the grand commander to the King, Antwerp 14 March 1575 (no. 1455), with a troop statement and a letter of Count Altaemps from the same liasse, and elsewhere works from 'le déchiffrement qui en a été fait'; so contemporary decipherments exist for Requesens's letters, but which letters of leg. 563 are in cipher and whether any lacks a decipherment cannot be told from print. Leone's Requesens study (Estudios Románicos 34, 2025) concerns his Italian legajos 899-902. Needs an item list or scans of AGS Estado 563 (PARES has no item-level record). Likely outcome: read from the contemporary decipherments. known.py 'leg. 563', 'Requesens': no DECODE record, no target."
+ },
+ "623": {
+  "unvetted": "Series-level record, not seen, and the shelfmark and date in the entry are wrong: in Paz, Catálogo III (Revue des bibliothèques 1912, p. 200-201) the line 'Correspondencia cifrada del embajador en Francia Mr. de San Vicente con el Emperador, con Granvela, etc.' stands under legajo 498, A. 1540, before the section 'A. 1541-43' begins. 'Mr. de San Vicente' is François Bonvalot, abbot of Saint-Vincent of Besançon, imperial ambassador in France 1538-41. No count, no word on decipherments, no PARES item record. Opened: CSP Spain VI part 1 on British History Online, all of 1540: no piece from leg. 498 and no Saint-Vincent despatch calendared. Not opened: Weiss, Papiers d'État du cardinal de Granvelle, t. II (Bonvalot's 1540 correspondence from the Besançon copies), which may print the same despatches in clear; Ruble (Le mariage de Jeanne d'Albret, 1877) already cites Bonvalot's letters of 1540 from K. 1485. Needs Weiss II checked and scans or an item list of AGS Estado 498. known.py 'San Vicente', 'Saint-Vincent', 'Estado, leg. 499': no DECODE record, no target."
+ },
+ "624": {
+  "unvetted": "The description does not show that ciphertext survives, and the shelfmark is off by one: Paz, Catálogo III (Revue des bibliothèques 1913, p. 443-444) has, under legajo 2125, A. 1674 (not 2126), 'Instrucción que se ocupó al espía Francisco Vannó, cartas suyas, cifra de que se servía, interrogatorios hechos al mismo y sentencia de muerte contra él'. That names a seized key ('cifra de que se servía') and letters, but does not say the letters are enciphered. PARES catalogo/find for 'Vannó' and 'espía Vanno' 1673-1676 returns no record; a web search for the spy under Vannó / Vanno / François Vanno with Monterrey, 1674 and Estado 2125, and archive.org full text for \"Francisco Vannó\", found nothing. Needs scans or an item description of AGS Estado 2125 to see whether any letter is in cipher; with the key in the bundle it would be a key lookup. known.py 'Vannó', 'Vanno', 'leg. 2126': no DECODE record, no target."
+ },
+ "627": {
+  "date": "2026-11-09",
+  "by": "claude legacy vetting batch 04",
+  "lead_updates": {
+   "access": "archive"
+  },
+  "seen": {
+   "kind": "not online",
+   "where": "Paz, Catálogo V, Patronato Real (1912), no. 1521 (archive.org/details/catalogovpatrona124arch); PARES catalogo/find 'Cardenal de Trento instrucción' 1546: no record (9 Nov 2026).",
+   "extent": "8 leaves in folio, the whole text in cipher, signed by Charles V, with a seal.",
+   "cipher": "Not seen. Paz: \"1521 Instrucción de lo que vos el Reverendisimo Cardenal de Trento haveys de dezir negociar y tractar con [Vela] de nuestra parte. Ratisbona 10 Junio 1546. — Firma de Carlos V. — Sello de placa. — Toda en cifra. — 8 hoj. fol.\", footnote \"Lo subrayado en cifra. La palabra [Vela] no consta en la clave.\""
+  },
+  "prior_art": {
+   "decode": "known.py on the harvested DECODE dump for \"Cardenal de Trento\", \"Madruzzo\": no DECODE record; the Madruzzo hits in research/leads.json are a 1556 Reichsakten lead.",
+   "tomokiyo": "Not searched on Cryptiana by name; the printed decipherment below settles the question.",
+   "lasry": "No Lasry work on this instruction; not needed after Buschbell's publication.",
+   "edition": "Printed: G. Buschbell, 'Die Instruktion Karls V. für den Kardinal von Trient, Christoph Madruzzo, nach Rom (vom 11. Juni 1546), aus der Geheimschrift ohne Schlüssel entziffert', Archiv für Urkundenforschung 14 (1935/36), p. 188-210. The article itself was not opened; its title and content are given in Historische Zeitschrift 154 (1936), p. 203, and in Sánchez Alonso, Fuentes de la historia española, and the Revue d'histoire ecclésiastique 32 (1936).",
+   "literature": "Historische Zeitschrift 154 (1936), p. 203 (read on archive.org): the instruction, 'bisher schmerzlich vermißt, hat G. Buschbell in Simancas in der Abteilung Patronato Real gefunden und veröffentlicht sie in Arch. f. Urk. 14, 1935, gemeinsam mit R. Fuchs, dem die Entzifferung der Geheimschrift ohne Schlüssel gelang'."
+  },
+  "key_check": "No key tried. Paz's cataloguer had a key that read the title; Fuchs rebuilt the cipher without a key in 1935.",
+  "duplicates": "known.py \"Cardenal de Trento\" \"Madruzzo\" \"Madruzz\": this entry's own rows and an unrelated 1556 lead. No target folder.",
+  "searches": [
+   {
+    "query": "Carlos V instrucción Cardenal de Trento Madruzzo Ratisbona 10 junio 1546 Patronato Real cifra texto publicado Paulo III",
+    "result": "Biographical pages on Madruzzo only."
+   },
+   {
+    "query": "archive.org full text: Madruzzo \"Juni 1546\" Instruktion Kaisers Simancas \"Patronato\"",
+    "result": "Historische Zeitschrift 154 (1936), Revue d'histoire ecclésiastique 32 (1936) and Sánchez Alonso's Fuentes all cite Buschbell's edition, deciphered without a key."
+   },
+   {
+    "query": "archive.org full text: \"instruccion\" \"cardenal de Trento\" 1546 Maurenbrecher",
+    "result": "Maurenbrecher 1865 and Nuntiaturberichte X print or discuss the 1547 instruction, not that of June 1546."
+   }
+  ],
+  "verdict": "read",
+  "closed": "Deciphered and printed in 1935/36: G. Buschbell with R. Fuchs, 'Die Instruktion Karls V. für den Kardinal von Trient, Christoph Madruzzo, nach Rom (vom 11. Juni 1546), aus der Geheimschrift ohne Schlüssel entziffert', Archiv für Urkundenforschung 14, p. 188-210, from the Simancas Patronato Real original (notice in Historische Zeitschrift 154, 1936, p. 203). Buschbell dates it 11 June where Paz has 10 June; taken as the same document (an all-cipher instruction to Madruzzo for Rome of that week in Patronato Real). The article was not opened."
+ }
+}

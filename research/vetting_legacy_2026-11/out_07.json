@@ -1,0 +1,169 @@
+{
+ "722": {
+  "date": "2026-11-09",
+  "by": "claude legacy vetting batch 07",
+  "seen": {
+   "kind": "scan",
+   "where": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/show/2728864 (AHN, ESTADO,20,B), images 21, 22, 24, 25 fetched by curl on 9 Nov 2026; description read at https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/2728864",
+   "extent": "N.49 \"Carta cifrada, o de signos\" is images 21-23 (image 21: one page of about 40 lines); N.50 \"Llave o código para descifrar el mensaje anterior\" is images 24-29",
+   "cipher": "Image 21 is a full page of cursive Hebrew script (Ashkenazi cursive hand with long final strokes), not a cipher. Images 24-25 are a printed Hebrew-letter pocket calendar: month tables headed Nisan, Elul, Cheshvan with day columns, fair names in Hebrew letters and a note naming Napoleon; not a key. The letter's language and sense were not read here."
+  },
+  "prior_art": {
+   "decode": "known.py \"ESTADO,20,B\", \"Irún\", \"Lazán\" on the harvested DECODE dump and the repo: only this entry's own rows and the PARES sweep; no DECODE record.",
+   "tomokiyo": "Web search for the Irún courier papers of 1809 returned nothing on cryptiana for this file.",
+   "lasry": "Nothing by Lasry on this file; the 1809 Beauharnais-Marmont letter in the news (Oct 2026) is another document.",
+   "edition": "No edition of the intercepted papers found; the PARES description itemises N.40-N.50.",
+   "literature": "Web search (query below): no study. Michael Brackx (issue #176, 28 Oct 2026) identified N.49 as a Hebrew-cursive (probably Yiddish) letter and N.50 as a Jewish calendar for 5569 printed at Metz; the images seen here agree with that."
+  },
+  "key_check": "No key applies: the supposed key N.50 is a printed Jewish calendar, and the letter is ordinary Hebrew-script handwriting.",
+  "duplicates": "known.py \"ESTADO,20,B\", \"Irún\", \"Lazán\": this entry and its sweep rows only.",
+  "verdict": "not_cipher",
+  "closed": "Seen on PARES images 21 and 24-25: N.49 is a letter in cursive Hebrew script and N.50 a printed Hebrew calendar, which the Spanish staff of 1809 (Lazán's covering letter N.40) and the archive description took for a cipher and its key. The other ten pieces (N.40-N.48) are described as clear letters in French and Spanish. Confirms Brackx, issue #176.",
+  "searches": [
+   {
+    "query": "\"correo de gabinete\" francés Irún 1809 interceptada marqués de Lazán \"carta cifrada\" Estado 20 calendario hebreo",
+    "result": "No study or edition of this file; unrelated 1809 interceptions only."
+   }
+  ]
+ },
+ "748": {
+  "date": "2026-11-09",
+  "by": "claude legacy vetting batch 07",
+  "seen": {
+   "kind": "scan",
+   "where": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/show/6449321 (OSUNA,C.3456,D.102-103, images 1-5), show/6449341 (D.104-106, images 1-14), show/6449375 (D.107, images 1-6); all fetched by curl on 9 Nov 2026",
+   "extent": "D.102: 2 pages of cipher (Ronquillo, Rome 25 Apr 1646), D.103 its clear Spanish text. D.104: 4 or more pages of cipher (Ronquillo, undated, on the league with the Pope), D.105 its clear Spanish text (8 or more pages), D.106 a key sheet (2 pages). D.107: Ridolfi, Rome 8 May 1646, 5 pages of cipher (about 110 lines), docket \"Ludovico Ridolfi\".",
+   "cipher": "Ronquillo's two letters are a mixed system of numbers and syllable groups with points (e.g. \"ac. 15. bon. 26.\"), each with a contemporary clear version filed with it (PARES: \"Incluye traducción al castellano\"; D.105 begins \"Ayer por la mañana tuve audiencia ...\"). Ridolfi's letter D.107 is a different system: two-digit numbers 20-99 with three-digit groups 101-126, and no clear text on or with it. D.106 is an Italian key (\"Nulle ...\", a syllable table, and a nomenclator of cardinals and princes numbered 100-280): its number ranges fit D.107, not the Ronquillo letters."
+  },
+  "prior_art": {
+   "decode": "known.py \"C.3456\", \"Ronquillo\", \"Ridolfi\", \"duque de Arcos\" on the harvested DECODE dump and the repo: only this entry; the Ronquillo hits are Pedro Ronquillo 1676 (another man).",
+   "tomokiyo": "No cryptiana page on Arcos's Rome correspondence of 1646 came back from the two web searches.",
+   "lasry": "Nothing by Lasry on the Osuna/Arcos papers came back from the searches.",
+   "edition": "No edition found. Contemporary decipherments of D.102 and D.104 are in the unit itself (D.103, D.105).",
+   "literature": "Web searches (queries below) found only the 2023 Viella chapter on Arcos's information network 1646-47, not opened; nothing on a reading of the Ridolfi letter."
+  },
+  "key_check": "D.106 was not applied to D.107 here; the fit is judged from number ranges only. No key for it is held in the repo.",
+  "key_in_volume": "OSUNA,C.3456,D.106 (PARES 6449341, images 13-14): Italian key with nulls, syllables and a 100-280 nomenclator. PARES calls it the \"clave para descifrarla\" of D.104, but its figures match D.107. Not tested.",
+  "duplicates": "known.py \"C.3456\", \"Ronquillo\", \"Ridolfi\", \"duque de Arcos\": no other entry, lead or target holds these documents.",
+  "verdict": "partly_read",
+  "closed": "Two of the three cipher letters (Ronquillo, D.102 and D.104) have their contemporary clear versions filed with them as D.103 and D.105, seen on PARES. The third, Ridolfi's letter of 8 May 1646 (D.107, 5 pages of numeric cipher), has no decipherment on or with it and none was found; the key D.106 in the neighbouring unit appears to be its key. If the entry is kept it should be cut down to D.107 alone.",
+  "searches": [
+   {
+    "query": "Antonio Ronquillo 1646 duque de Arcos carta cifrada Roma liga con el Papa Osuna C.3456 descifrado",
+    "result": "No study of these letters; only the Viella 2023 chapter on Arcos's network."
+   },
+   {
+    "query": "Ludovico Ridolfi 1646 Roma cifra duca d'Arcos viceré Napoli lettera in cifra",
+    "result": "Nothing on Ridolfi's 1646 letter or a reading of it."
+   }
+  ]
+ },
+ "749": {
+  "date": "2026-11-09",
+  "by": "claude legacy vetting batch 07",
+  "seen": {
+   "kind": "scan",
+   "where": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/show/12879413 (AHNOB, SANTA CRUZ,C.53,D.6-7), images 1-6 fetched by curl on 9 Nov 2026",
+   "extent": "D.6: royal letter signed \"Yo el Rey\", Barbastro 22 Jan 1626, 2 pages, about 45 lines of cipher after a clear opening; D.7: clear text, 3 or more pages",
+   "cipher": "D.6 is a number-and-syllable cipher (e.g. \"36 el lin al an 95\") with a clear heading and dateline; D.7 is the full clear text in a secretary hand, opening with the same words (\"Marqués de Santa Cruz primo mi teniente general de la mar ... he recibido vuestras cartas de 2, 4, 7 y 18 de noviembre, 6 y 14 de diciembre\"). PARES: \"D.7 Es descifrado de D.6.\""
+  },
+  "prior_art": {
+   "decode": "known.py \"SANTA CRUZ,C.53\", \"C.53,D.6\", \"marqués de Santa Cruz\": no DECODE record; hits are this entry and targets/santacruz1635 (C.51, 1635, another key period).",
+   "tomokiyo": "Nothing on cryptiana for this letter in the web search.",
+   "lasry": "Nothing by Lasry on the Santa Cruz archive in the web search.",
+   "edition": "No edition found; the contemporary decipherment is D.7 of the same unit.",
+   "literature": "Web search (query below) found no study of this letter."
+  },
+  "key_check": "Not needed for a reading. D.6 with D.7 is a full cipher/clear pair and so a crib for the 1626 royal cipher; the 1635 key of targets/santacruz1635 was not compared.",
+  "duplicates": "known.py as above: no other entry holds C.53,D.6-7; targets/santacruz1635 covers C.51 of 1630-35.",
+  "verdict": "read",
+  "closed": "The contemporary decipherment is filed with the letter: SANTA CRUZ,C.53,D.7 is the full clear text of D.6 (PARES 12879413: \"D.7 Es descifrado de D.6\"), seen on images 4-6.",
+  "searches": [
+   {
+    "query": "Felipe IV marqués de Santa Cruz 1626 carta cifrada jornada del Piamonte Barbastro 22 enero 1626 descifrado",
+    "result": "No study or edition of this letter."
+   }
+  ]
+ },
+ "753": {
+  "unvetted": "Eight unrelated pieces under one entry, and for none could a prior-art search be made by sender. Seen on PARES 9 Nov 2026 (curl): EST,LEG,1418,47 (10 July 1585, 1.3 pages), 1418,50 (2 pages and 2 lines), 1418,81 (\"Copia\", Rome 10 May 1585, 20 lines) and 1418,82 (Rome 17 May 1585, to Juan de Idiáquez, 8 cipher lines in a clear letter) all show number/syllable cipher with no decipherment on the leaf; the frame check of 2 Nov saw the four of 1381 and 1410. But 1418,81-82 sit between 1418,80 and 1418,83, both \"Duplicado de carta cifrada de Enrique de Guzmán, conde de Olivares, embajador en Roma\" of 17 May 1585, so they are Olivares duplicates whose originals and decipherments would be in the Estado Roma legajos (not checked); and in these Genoa legajos the contemporary decipherment is filed as a separate neighbouring number under a plain \"Carta de ...\" title (1416,21 is headed \"Descifrada\" and is the clear text of 1416,22). Each of the eight needs its neighbouring numbers opened and, for 1418,81-82, the Roma legajos of May 1585. Split by item before vetting. Searches run: \"conde de Olivares Roma mayo 1585 carta cifrada Juan de Idiáquez Simancas Estado 1418\"; Tomokiyo Philip II Cifra general Genoa; known.py EST,LEG,1418 / 1381 (own rows only)."
+ },
+ "754": {
+  "date": "2026-11-09",
+  "by": "claude legacy vetting batch 07",
+  "seen": {
+   "kind": "scan",
+   "where": "PARES: all 58 descriptions read (catalogo/description/<id>) and images 1-4 of show/3576300 (EST,LEG,1416,20), 3576338 (1416,22), 3576326 (1416,21), 3665845 (1419,5), 3549587 (1414,4); curl, 9 Nov 2026. The frame check of 2 Nov saw 1401,41, 53, 54.",
+   "extent": "58 items of 1-4 leaves each; 7 seen in all (4 here, 3 in the frame check)",
+   "cipher": "1416,20 (Mendoza, 10 Feb 1582): 3 pages of number cipher with the clear Spanish written between the lines throughout. 1416,22 (11 Feb 1582): 1.2 pages of bare cipher; its clear text is the next number, 1416,21, headed \"Descifrada, de Don Pedro de Mendoza de Génova a xj de Hebrero 1582\" and catalogued only as \"Carta de Pedro González de Mendoza\". 1419,5 (21 June 1587) and 1414,4 (7 Jan 1581): cipher with clear passages, no interlinear text. PARES gives content summaries for 1401,41, 1401,53, 1401,54, 1408,159, 1410,115, 1416,11, 1416,20 and 1419,5/7."
+  },
+  "prior_art": {
+   "decode": "known.py \"EST,LEG,1416\", \"EST,LEG,1418\", \"leg. 1416\", \"Sancho de Padilla\", \"Binasco\": no DECODE record; only this entry, the removed Binasco 1592 row and targets/toledo1565 (leg. 1394).",
+   "tomokiyo": "Web search (Tomokiyo, Philip II Cifra general, Genoa, Padilla, Mendoza) returned his general pages on Philip II ciphers, nothing on the Genoa embassy letters.",
+   "lasry": "Nothing by Lasry on AGS Estado Génova in the searches.",
+   "edition": "No edition of the Genoa embassy despatches of 1571-1603 found; Documenti ispano-genovesi dell'Archivio di Simancas (1868) covers earlier years per the search result and was not opened.",
+   "literature": "Web search (first query below) found only the Estudios Románicos 2025 articles on other AGS letters (Naples 1547, Rome 1565-66)."
+  },
+  "key_check": "No key tried. The interlinear 1416,20 and the pair 1416,22/1416,21 give Mendoza's 1582 cipher with full plaintext; the targets/toledo1565 key (1565) was not compared.",
+  "duplicates": "known.py as above: no other entry or target holds these items; EST,LEG,1394,247 (toledo1565) was already taken out of the row.",
+  "verdict": "partly_read",
+  "closed": "Contemporary decipherments exist in the legajos themselves: 1416,20 is deciphered between the lines, and 1416,21 (\"Descifrada ...\", seen) is the clear text of 1416,22. The chancery's decipherments are filed as separate neighbouring numbers under plain \"Carta de\" titles, so the PARES title \"Carta cifrada\" does not show a letter is unread; duplicates of a deciphered original are read too. 51 of the 58 items were not opened and none of the rest was matched to a decipherment: any item kept as open needs its neighbouring numbers checked first.",
+  "searches": [
+   {
+    "query": "Pedro de Mendoza embajador Génova Felipe II cartas cifradas Simancas Estado 1414 1416 descifrado cifra general 1581 1582",
+    "result": "No study of the Genoa embassy ciphers."
+   },
+   {
+    "query": "Tomokiyo cryptiana Philip II ciphers \"Cifra general\" 1571 1582 Genoa ambassador Sancho de Padilla Mendoza cipher",
+    "result": "General Philip II cipher pages only."
+   }
+  ]
+ },
+ "770": {
+  "unvetted": "Not seen, and a clear copy may exist that could not be checked. The Clements finding aid (findingaids.lib.umich.edu, Cloudflare 403 to curl and WebFetch: needs Chrome) is quoted in the entry as \"In code [directs Joel Barlow ... to assist Henry Wilson. Wilson will secretly export arms ... from Ostend]\": the bracketed summary means the cataloguer had the sense, from a decipherment on or with the letter or from clear passages. The War Department file copy would be in NARA RG 107 letters sent (M6, or the confidential letters M7), not checked; Barlow's 1811 State Department code has an interlinear decipherment at NARA M34 vol. 16. Three web searches (Eustis Barlow 1812 \"Henry Wilson\" Ostend; Clements War of 1812 collection \"In code\"; Weber Diplomatic Codes Barlow 1812) found no printed text or study. Needs the 2-page scan from the Clements and a look at RG 107."
+ },
+ "772": {
+  "unvetted": "The finding aid gives a title only (\"Intercepted letters between French diplomats and French ministers, 1780-1783\", 60 items, Shelburne papers vol. 35) and does not show that any ciphertext is in the volume; British intercepts normally reached ministers as Deciphering Branch decrypts or plain copies. The finding aid page is behind Cloudflare (403 to curl/WebFetch: needs Chrome); the volume is closed for conservation, facsimile to be requested. Web search \"Shelburne papers Clements Library volume 35 intercepted letters French diplomats French ministers 1780-1783 deciphered\" found no description of its contents (only BL intercepted Luzerne letters of 1780, deciphered: a parallel to check). known.py \"Shelburne\": no duplicate."
+ },
+ "773": {
+  "unvetted": "Title-only record (\"Intercepted letters between French diplomats and French ministers, 1767-1768\", 24 items, Shelburne papers vol. 35): nothing shows ciphertext rather than decrypts or copies. Finding aid behind Cloudflare (needs Chrome); volume closed for conservation. Web search \"Shelburne papers Clements intercepted letters 1767-1768 French diplomats Choiseul Southern Department decipher\" found nothing on the volume; the parallel series at Kew (SP 107 intercepts, SP 78) was not checked. known.py \"Shelburne\": no duplicate."
+ },
+ "783": {
+  "unvetted": "No identifiable cipher document: the Friedman guide (p. 284, Item 796.8) says only \"work sheets and notes ... in connection with some uncompleted work done by ESF in 1952 on British revolutionary cryptographic systems found in the Clements Library\", without naming the messages or saying any stayed unread. Web searches (Elizebeth Friedman 1952 Clements Clinton Papers uncompleted work; Clements Clinton Papers undeciphered cipher letters) found no list; the Clements Spy Letters pages show Clinton Papers ciphers with their decipherments. Needs scans of Item 796.8 from the Marshall Library, then matching to Clinton Papers volumes. known.py \"796.8\", \"Clinton Papers\": own sweep rows only."
+ },
+ "784": {
+  "date": "2026-11-09",
+  "by": "claude legacy vetting batch 07",
+  "seen": {
+   "kind": "transcription",
+   "where": "Wharton, Revolutionary Diplomatic Correspondence (1889), vols. 4 and 5, archive.org revolutionarydip04unit and revolutionarydip05unit, OCR text grepped 9 Nov 2026; Founders Online pages (Jay 01-02-02-0254, -0272, -0280, -0296; Franklin 01-37-02-0475, 01-38-02-0079, -0096) read through the Wayback Machine (the live site answers scripts with a WAF challenge)",
+   "extent": "About 16 editorial notes of omitted cipher in vols. 4-5, in some nine letters of Oct 1781 - Nov 1782; no cipher groups are printed",
+   "cipher": "Wharton prints no ciphertext, only notes such as \"[Here follow 20 lines of cipher.]\" (Livingston to Jay, 28 Nov 1781), \"[Here follow two pages of cipher.]\" (13 Dec 1781), \"This letter is in cipher and the key has been lost\" (27 Apr 1782), \"[Here follow 12 lines of cipher.]\" (Livingston to Franklin, 9 Aug 1782), and six and five lines in Livingston to Lafayette, 2 Nov 1782. All are Secretary Livingston's outgoing letters."
+  },
+  "prior_art": {
+   "decode": "known.py \"Wharton\", \"Friedman Collection, Item 14\": no DECODE record; hits are this entry, its sweep row and other Wharton-related leads.",
+   "tomokiyo": "Not searched on cryptiana by name; the modern editions below settle the letters checked.",
+   "lasry": "Nothing by Lasry on these letters came up in the searches.",
+   "edition": "Selected Papers of John Jay, vol. 2 (Founders Online): Livingston to Jay 28 Nov 1781, \"Decoding based on Dft, with additional decoding by the editors\"; 13 Dec 1781, \"Encoded utilizing the 11 July 1781 Thomson code (WE007), decoded in part by JJ ... with additional decoding by the JJUP staff\"; 20 Oct 1781, \"Decoded passage taken from Dft\". Papers of Benjamin Franklin vols. 37-38: Livingston to Franklin 9 Aug 1782 printed from the triplicate with \"his decipher of the passages in code\"; 13-14 Sept 1782 \"We print BF's decipher\"; 18 Sept 1782 \"deciphered by WTF\".",
+   "literature": "Weber, United States Diplomatic Codes and Ciphers (1979) is the source of the code numbers the editions cite (WE007). Idzerda, Lafayette in the Age of the American Revolution, vol. 5, prints Livingston to Lafayette 2 Nov 1782 (web search); not opened, so its cipher passages are unconfirmed."
+  },
+  "key_check": "Keys are known and in print: the Thomson code of 11 July 1781 (WE007) and Livingston's office codes; the editions decode with them and with Livingston's drafts.",
+  "duplicates": "known.py \"Wharton\", \"Friedman Collection, Item 14\": no other entry holds these letters; targets/dana1783 is a vol. 6 letter.",
+  "verdict": "partly_read",
+  "closed": "The passages Wharton left out are printed decoded in the modern editions for every letter checked: Livingston to Jay 20 Oct, 28 Nov and 13 Dec 1781 (Selected Papers of John Jay, vol. 2) and Livingston to Franklin 9 Aug, 13-14 Sept and 18 Sept 1782 (Papers of Benjamin Franklin, vols. 37-38), read on Founders Online via the Wayback Machine. Not checked: Livingston to Jay 2 Feb and 27 Apr 1782 (same edition), Livingston to Lafayette 2 Nov 1782 (Idzerda vol. 5), and the notes in the letters near vol. 4 p. 814 and of 5 Sept 1782 in vol. 5. The entry is a list of editorial omissions, not a body of ciphertext.",
+  "searches": [
+   {
+    "query": "founders.archives.gov Robert R. Livingston to John Jay 28 November 1781 cipher \"Thomson\" code decoded Selected Papers of John Jay",
+    "result": "Jay Papers 01-02-02-0272 and -0280: decoded from the draft and by the editors."
+   },
+   {
+    "query": "founders.archives.gov \"To Benjamin Franklin from Robert R. Livingston\" 9 August 1782 cipher decoded italics",
+    "result": "Franklin Papers 01-37-02-0475: printed with Franklin's decipher."
+   },
+   {
+    "query": "Livingston to Lafayette 2 November 1782 cipher passages decoded Idzerda \"Lafayette in the Age of the American Revolution\" volume 5",
+    "result": "Letter is in Idzerda vol. 5; decoding not confirmed from the results."
+   }
+  ]
+ }
+}

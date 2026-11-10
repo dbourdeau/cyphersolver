@@ -9755,7 +9755,42 @@
     "date": "2026-11-02",
     "by": "claude frame check 12"
    },
-   "repository": "mnl"
+   "repository": "mnl",
+   "vetting": {
+    "date": "2026-11-09",
+    "by": "claude legacy vetting batch 03",
+    "seen": {
+     "kind": "transcription",
+     "where": "A. Patera (ed.), Jana Amosa Komenskeho korrespondence (Praha 1892) no. CLII p. 178, archive.org bub_gb_xnVMAAAAYAAJ (djvu text fetched and the passage read); also printed in MHH Diplomataria XXIII (1874) no. CIII pp. 178-179. The original, MNL OL E 190, is not online (frame check 2 Nov 2026).",
+     "extent": "One passage at the end of the English news: 50 letters and the numbers 7, 865 and 73.",
+     "cipher": "Printed as 'Lmqfxmyo. 7. Gpdlmuoyqnotlscs: Pnofeyprp 865, ap 73 pyf: pdyp: Xyopatus etc. etc.' (OCR of Patera; long s read as f). A letter cipher with a few numbers, word breaks kept. Patera's only note on the letter gives its location and the MHH printing; no decipherment is printed with it, unlike the 4 Aug 1655 sentence, which has his footnote."
+    },
+    "prior_art": {
+     "decode": "known.py 'Comenius', 'Klobusiczky' on the harvested DECODE dump and the repo: no DECODE record; the hits are this entry, its target folder comenius1655 and the Rakoczi key R4939 used for another target.",
+     "tomokiyo": "No Cryptiana page on Comenius's cipher in the web searches; the local unsolved.htm has no Comenius or Klobusiczky entry.",
+     "lasry": "Nothing by Lasry on Comenius or the Rakoczi letters of 1655 in the web searches or the local GL.htm copy.",
+     "edition": "Patera 1892 p. 178 read here: no decipherment. targets/comenius1655/NOTES.md records the same for MHH XXIII 1874 and Szilagyi 1890 I pp. 388-394 (page images). The critical edition of the correspondence (DJAK 26) has reached 1641 only (26/I 1628-1638, 26/II 1639-1641, per the reviews found), so 1655 is not yet edited. Blekastad 1969 was not checked.",
+     "literature": "Web searches in English, Czech and Hungarian found Lang's Real Life Cryptology and Karman's Acta Comeniana 18 letters (Comenius as 'Ulrich Neufeld', 1655-56), neither with a reading of this passage."
+    },
+    "key_check": "The printed Rakoczi envoys' table (MHH XXIII p. 740), which reads the 4 Aug 1655 sentence, was tried on this passage in targets/comenius1655 and gives no Latin, nor do shifts, keyword ciphers or annealing as a simple substitution (matched controls recovered). The cipher may be that of the English correspondent whose news Comenius quotes.",
+    "key_held": "MHH XXIII p. 740 table (in print; rebuilt in targets/comenius1655/key_1655-08-04.tsv): tested, does not read the 24 May passage.",
+    "duplicates": "known.py 'Comenius', 'Klobusiczky': catalogue 474 and its own target folder targets/comenius1655, whose NOTES close the 24 May passage as attempted and not deciphered (the 4 Aug sentence there was read from Patera's footnote). No other entry or lead.",
+    "verdict": "open",
+    "searches": [
+     {
+      "query": "Comenius Klobusiczky 24 May 1655 letter cipher passage deciphered Rakoczi \"Klobusiczky\" Comenius cryptogram",
+      "result": "Lang's work on Hungarian ciphers and Karman's Acta Comeniana letters; nothing on this letter or a decipherment."
+     },
+     {
+      "query": "Komensky korespondence 1655 Klobusicky sifra sifrovany text Lesno Rakoczi Schaum desifrovani DJAK 26",
+      "result": "Reviews of DJAK 26/I (1628-1638) and 26/II (1639-1641): the critical edition has not reached 1655."
+     },
+     {
+      "query": "Comenius 1655 Rakoczi Gyorgy levelezes Klobusiczky titkosiras megfejtes Comenius levele 1655 majus 24",
+      "result": "Szilagyi's studies citing Klobusiczky letters of 1655 and his 'Rejtelmes levelek'; no decipherment of the 24 May passage."
+     }
+    ]
+   }
   },
   {
    "id": 475,
@@ -10468,7 +10503,7 @@
    "prior_art": "open (checked 26 Oct 2026: repo known.py, web search)",
    "ark": "",
    "scored": "sweep",
-   "access": "online",
+   "access": "archive",
    "access_note": "online (backfilled 28 Oct 2026 from the entry: ...73-74 (no AIS images for carton 11-5); rebuild the key from digitised glossed siblings (e.g. 10-2-17, 10-3-40). open (checked 26...)",
    "frame_check": {
     "result": "not_found",
@@ -10479,7 +10514,42 @@
     "date": "2026-10-30",
     "by": "claude frame check 02"
    },
-   "repository": "oesta"
+   "repository": "oesta",
+   "vetting": {
+    "date": "2026-11-09",
+    "by": "claude legacy vetting batch 03",
+    "seen": {
+     "kind": "not online",
+     "where": "AIS record https://www.archivinformationssystem.at/detail.aspx?ID=7221953 (fetched): AT-OeStA/HHStA StAbt Tuerkei I 11-5-25, 28.05.1555, Amasya, Latin, fol. 73-74. No reproduction on the record (frame check 30 Oct 2026 found none either).",
+     "extent": "One despatch of two leaves, fol. 73-74.",
+     "cipher": "AIS, field Inhalt: 'chiffriert, keine Dechiffrierung vorhanden!' The archive records a ciphered despatch with no decipherment on or with it; its sibling despatches of 1553-57 are described as ciphered with interlinear decipherment."
+    },
+    "prior_art": {
+     "decode": "known.py 'Tuerkei I 11-5-25', 'Amasya', 'Busbecq' on the harvested DECODE dump and the repo: only this entry's own rows and an unrelated Busbecq lead (Paris reports); no DECODE record for this despatch.",
+     "tomokiyo": "No Cryptiana page on the Vrancic-Zay-Busbecq despatches in the web searches; the local unsolved.htm has no Vrancic, Busbecq or Amasya entry.",
+     "lasry": "Nothing by Lasry on the 1555 Amasya despatch in the web searches or the local GL.htm copy.",
+     "edition": "Szalay (ed.), Verancsics Antal osszes munkai vol. 4 (MHH Scriptores, 1859; archive.org verancsicsantal04vera, djvu text searched): between the letters of 9 March and 1 July 1555 it prints Ferdinand's letter received at Amasya on 21 May, Busbecq's narrative and Suleyman's letter, but no despatch of the envoys to Ferdinand dated Amasya 28 May 1555. The Graz digital edition of Vrancic's letters (gams.uni-graz.at, 1553-1568, in progress) has no item of that date (o:vrancic.l.15550528 returns 404).",
+     "literature": "Loncar and Soric, 'Using Script against undesirable Readers III: Vrancic's Coding Aids', Colloquia Maruliana 25 (2016), publish the code manuals; the Hungaricana 'BecsSeg' inventory describes sibling despatches as 'sifrir, sorkozi feloldassal'. No decipherment of the 28 May 1555 despatch found."
+    },
+    "key_check": "No key held in the repo. The embassy's code of 1553-57 is in print (see key_held) and the glossed siblings in Tuerkei I 10-13 would rebuild it; nothing could be tested because no image of fol. 73-74 is online.",
+    "key_held": "In print: the manual 'Ziffra, quae prior data fuit. Verantii, et Zaii' (Vrancic papers, National Szechenyi Library), edited in the appendix of Loncar and Soric 2016 (hrcak.srce.hr/clanak/232175), in use until March 1557. Not tested: the ciphertext has not been seen.",
+    "duplicates": "known.py 'Tuerkei I 11-5-25', 'Amasya', 'Busbecq': only catalogue 501 and its sweep rows (research/central_archives); no target folder and no other entry for this despatch.",
+    "verdict": "open",
+    "searches": [
+     {
+      "query": "Verancsics Antal osszes munkai Amasia 28 maii 1555 Ferdinando regi Zay Busbecq epistola \"Amasiae\" 1555",
+      "result": "Pointed to Szalay's vol. 4 (1555-57) and to Hungaricana records of sibling despatches with interlinear decipherment; vol. 4 was then opened and has no letter of 28 May 1555."
+     },
+     {
+      "query": "hungaricana \"Tuerkei I. Karton 11\" \"1555.05.28\" Amasya Verancsics Zay Busbeck I. Ferdinand sifrirozott",
+      "result": "Sibling records only (1 Apr 1554, 27 Mar 1556, ciphered with interlinear solution); no record of the Amasya despatch came up."
+     },
+     {
+      "query": "Vrancic Zay Busbecq Amasya 28 May 1555 report to Ferdinand cipher HHStA Turcica \"Amasya\" 1555 peace negotiations letter edition deciphered",
+      "result": "The Loncar-Soric article on Vrancic's code manuals and the Graz edition; no edition or decipherment of this despatch."
+     }
+    ]
+   }
   },
   {
    "id": 503,
@@ -11766,7 +11836,42 @@
     "date": "2026-10-30",
     "by": "claude frame check 05"
    },
-   "repository": "sbb"
+   "repository": "sbb",
+   "access": "archive",
+   "vetting": {
+    "date": "2026-11-09",
+    "by": "claude legacy vetting batch 03",
+    "seen": {
+     "kind": "not online",
+     "where": "Kalliope record https://kalliope-verbund.info/DE-611-HS-4027869 (fetched by curl and read): Staatsbibliothek zu Berlin, Nachlass Leopold von Ranke, 'Originale Quellen zur Reformationsgeschichte 1512-1554', Bl. 1. No digitisation link on the record.",
+     "extent": "One leaf, Bl. 1 of a folder of four documents (8 leaves).",
+     "cipher": "Kalliope: 'Bl.1 - Original unbekannter Herkunft: Chiffrierter Brief aus der Zeit der Drakenburger Schlacht bzw. Belagerung Bremens, unten eigens fuer Ranke zur Transcription eingefuegt \"P.S. dass die Huelfe eilig wegen der Verstarkung des Gegentheils erfolgen muesste. ad L 1547.[Freitag] Nach Laetar. a. Sen.\"' An original ciphered letter; the only text transcribed for Ranke is the one-line postscript and date, and the record mentions no decipherment of the body."
+    },
+    "prior_art": {
+     "decode": "known.py 'Drakenburg', 'Ranke' on the harvested DECODE dump and the repo: only this entry's own rows (catalogue, kalliope_ddb and central_archives sweeps); no DECODE record.",
+     "tomokiyo": "No Cryptiana page on a Bremen cipher of 1547 in the web searches; the local unsolved.htm has no Bremen, Drakenburg or Ranke entry.",
+     "lasry": "Nothing by Lasry on this leaf in the web searches or the local GL.htm copy (the 1547 cipher that came up is the Charles V letter at Nancy, Pierrot and Desenclos, unrelated).",
+     "edition": "Ranke, Deutsche Geschichte im Zeitalter der Reformation vol. 4 (Saemmtliche Werke 4, 1873; archive.org 11338444bsb, djvu text searched), pp. 391-393, the passage the record points to: the siege of Bremen and Drakenburg are told from Bremen archive letters, with no mention of a ciphered letter and no text from one. No edition of the leaf is known.",
+     "literature": "Web searches found H. Lucke, Bremen im Schmalkaldischen Bund 1540-1547 (1955, digitised at SuUB Bremen) and Beneke's account of Drakenburg; neither came up with a ciphered letter. Lucke's text was not read through."
+    },
+    "key_check": "No key known: sender and addressee are not identified, so no correspondent's key can be looked up; nothing held in the repo for Bremen or the Schmalkaldic League in 1547. The record suggests the leaf came from the Bremen Staatsarchiv (J. H. Smidt), where a key or the plain draft might lie.",
+    "duplicates": "known.py 'Drakenburg', 'Ranke': only catalogue 526 and its sweep rows; no target folder and no other entry or lead for this leaf.",
+    "verdict": "open",
+    "searches": [
+     {
+      "query": "Ranke Nachlass \"chiffrierter Brief\" Drakenburg Belagerung Bremen 1547 Staatsarchiv Bremen Geheimschrift entziffert Smidt",
+      "result": "Accounts of the battle and siege; nothing on the leaf in Ranke's papers or on a decipherment."
+     },
+     {
+      "query": "Bremen 1547 Belagerung Schmalkaldischer Krieg chiffriertes Schreiben Laetare 1547 Huelfe Bremer Rat Geheimschrift Bremisches Jahrbuch",
+      "result": "Lucke 1955 on Bremen in the Schmalkaldic League and a Bremisches Jahrbuch volume; no ciphered letter mentioned in what came back."
+     },
+     {
+      "query": "Schmalkaldic War 1547 Bremen siege cipher letter undeciphered cryptiana OR DECODE OR HistoCrypt \"Bremen\" 1547 ciphertext Oldenburg Mansfeld",
+      "result": "Only the Charles V letter of Feb 1547 solved by Pierrot and Desenclos (HistoCrypt), which has nothing to do with Bremen."
+     }
+    ]
+   }
   },
   {
    "id": 527,
@@ -16331,7 +16436,46 @@
    "scored": "sweep",
    "access": "archive",
    "as_of": "2026-10-27",
-   "repository": "ags"
+   "repository": "ags",
+   "vetting": {
+    "date": "2026-11-09",
+    "by": "claude legacy vetting batch 04",
+    "seen": {
+     "kind": "not online",
+     "where": "Paz, Catálogo IV (1914), full text at archive.org/details/catlogo4secret01spai, p. 13, K. 1639 (D. 3) no. 89. PARES has no item-level record (catalogo/find 'Clemente VII Liga 1524 cifra' and 'Puntos Papa Liga Francia', 1524: 'No se han encontrado datos', 9 Nov 2026).",
+     "extent": "One document of 4 leaves in folio, Latin, part of it in cipher; how much is cipher is not stated.",
+     "cipher": "Not seen. Paz: \"89. Puntos en que el Papa deseaba le complaciese Carlos V acerca de la Liga y negociaciones pendientes con Francia. — 8 Abril 1524. — Lat. — Parte en cifra. — 4 h. f.\" The catalogue names no decipherment; whether one is written on the leaves is not known until they are seen."
+    },
+    "prior_art": {
+     "decode": "known.py on the harvested DECODE dump for \"K 1639\" and \"Clement VII\": no DECODE record for this document; DECODE's Rome 1524 records are the RAH Salazar A-31 Sessa letters worked in targets/sessa1524.",
+     "tomokiyo": "The searches for this document with Sessa, Clement VII, 1524 and cryptiana returned no Cryptiana page on K 1639 or on a papal memorandum of April 1524.",
+     "lasry": "No Lasry paper on Clement VII's or Sessa's 1524 correspondence came back in the searches.",
+     "edition": "Bergenroth, CSP Spain II, opened on British History Online for March, April and May 1524: three pieces of K 1639 are calendared (no. 644, the Emperor's answer to the Archbishop of Capua's proposals, 'K. 1639. 50', April; no. 650 of 14 May and no. 653 of 25 May to La Roche), none of them the Pope's points of 8 April and none marked as cipher. The 8 April document is not in the calendar under those months.",
+     "literature": "archive.org full-text search for \"K. 1639\" with Clement VII, 1524 and cipher returned nothing; web searches found only general works (Di Meglio 1970 on Charles V and Clement VII, not opened). No printed text or decipherment found."
+    },
+    "key_check": "Nothing could be tested: the document is not online. The imperial Rome cipher of April 1524 rebuilt in targets/sessa1524 is the first key to try if the cipher part was written by Sessa's chancery; a papal cipher would need another key.",
+    "key_held": "targets/sessa1524 holds a partly rebuilt key for Sessa's Rome cipher of April 1524 (RAH Salazar A-31); not tested against K 1639 no. 89, which is not online.",
+    "duplicates": "known.py \"K 1639\" \"Clement VII\": this entry's own rows only; the Clement VII hit in research/leads.json is a 1527 despatch to Wolsey. targets/sessa1523 and sessa1524 work on RAH Salazar letters, not on this document.",
+    "searches": [
+     {
+      "query": "Clemente VII Carlos V 8 abril 1524 \"K 1639\" OR \"K. 1639\" Simancas puntos Liga Francia cifra arzobispo de Capua Schönberg",
+      "result": "No hit on the document; general pages on Clement VII and the Simancas archive."
+     },
+     {
+      "query": "Sessa 1524 Clement VII cipher Simancas deciphered Rome April 1524 league France Pope proposals Emperor cryptiana Bergenroth cipher key",
+      "result": "Estudios Románicos articles on other Simancas ciphers and the CSP Venice cipher appendix; nothing on the 8 April 1524 points."
+     },
+     {
+      "query": "British History Online, CSP Spain vol. 2, Spain: March, April and May 1524 (pages read for K. 1639 and for 8 April)",
+      "result": "K 1639 pieces nos. 644, 650, 653 calendared; the 8 April points are not among them."
+     },
+     {
+      "query": "archive.org full text: \"K. 1639\" Clemente VII 1524 cifra abril",
+      "result": "No result outside Paz's catalogue."
+     }
+    ],
+    "verdict": "open"
+   }
   },
   {
    "id": 615,
@@ -23796,7 +23940,46 @@
    "ark": "",
    "scored": "sweep",
    "access": "archive",
-   "repository": "beinecke"
+   "repository": "beinecke",
+   "vetting": {
+    "date": "2026-11-09",
+    "by": "claude legacy vetting batch 08",
+    "seen": {
+     "kind": "not online",
+     "where": "Yale finding aid PDF, Guide to the Carlingford Papers OSB MSS 5 (https://ead-pdfs.library.yale.edu/1079.pdf), b. 2, f. 58; and the printed text of both letters in Memoirs of the Family of Taaffe (Vienna 1856), pp. 177-179 (archive.org memoirsoffamilyo01taaf, full text read at the item). The manuscript itself was not seen: Yale's digital collections answer a bot check to scripts, and the earlier sweep found the folder not digitised.",
+     "extent": "2 LS; cipher in the first only (Madrid, 23 Sep 1666), one closing passage of unknown length; the second (12 Oct 1666) is clear",
+     "cipher": "Finding aid: 'Sandwich, Edward Montagu, 1st Earl of, 1625-1672. b. 2, f. 58. 2 LS to the Earl of Carlingford, Madrid. A large portion of the first letter is in cipher. 1666 Sep 23-Oct. 12'. The 1856 edition prints the first letter's clear opening and then 'Your Lordship may be pleased to decypher this by the Cypher you have with My Lord Arlington (Cypher) I am, My Lord, etc.', leaving the cipher passage out; no decipherment is mentioned by the finding aid or the edition."
+    },
+    "prior_art": {
+     "decode": "known.py 'Carlingford', 'Taaffe', 'Earl of Sandwich', 'OSB MSS 5' against the harvested DECODE dump and the repo: no DECODE record; hits are this entry's rows, the Beinecke sweep, and TNA lead 'Lord Arlington to Earl of Sandwich ... almost entirely in cypher' (a different letter).",
+     "tomokiyo": "Web search 'cryptiana Tomokiyo Arlington cipher 1666 Carlingford Taaffe Vienna Sandwich Madrid' returned only Cryptiana's Perwich 1670 pages; no Cryptiana treatment of a Sandwich-Carlingford or Arlington-Carlingford cipher found.",
+     "lasry": "No Lasry paper or GL.htm item on the Carlingford papers or Sandwich's Madrid embassy turned up in the three searches.",
+     "edition": "Memoirs of the Family of Taaffe (1856) pp. 177-179 opened: it prints both letters and replaces the cipher of 23 Sep 1666 with '(Cypher)', undeciphered; Arlington's letters to Carlingford in the same volume also carry '(Cypher)' gaps. Harris, Life of Edward Mountagu, first Earl of Sandwich (1912) vol. 2 full text grepped: no mention of Carlingford or Taaffe. Crist's 1974 edition covers only the Charles II letters of 1655-60.",
+     "literature": "Searches for the letter and for Sandwich's Madrid letter-books (9 Nov 2026) found no reading; Sandwich's own journal and letter-books at Mapperton (private, not online) could hold a clear draft and were not checked."
+    },
+    "searches": [
+     {
+      "query": "Sandwich to Carlingford Madrid September 1666 letter cipher deciphered Carlingford papers Beinecke OSB MSS 5",
+      "result": "Only TNA Discovery/NRA pointers to the Carlingford papers at Yale; no transcription or decipherment of the 23 Sep 1666 letter."
+     },
+     {
+      "query": "Earl of Sandwich Madrid embassy 1666 letter-book letters to Lord Carlingford Vienna Taaffe cipher Arlington \"Carlingford\" Sandwich journal Mapperton",
+      "result": "Sandwich's manuscript journal at Mapperton is cited in the literature; printed Sandwich letters (the 1720 collection) are embassy letters, not shown to include this one; nothing prints this letter's cipher passage."
+     },
+     {
+      "query": "cryptiana Tomokiyo Arlington cipher 1666 Carlingford Taaffe Vienna Sandwich Madrid English diplomatic cipher Charles II",
+      "result": "No page on this cipher; Cryptiana hits are for Perwich to Arlington 1670, a different cipher."
+     },
+     {
+      "query": "archive.org full text: Memoirs of the Family of Taaffe (1856), grep Sandwich / Cypher",
+      "result": "Letter of 23 Sep 1666 printed at p. 177 with the cipher passage replaced by '(Cypher)'; letter of 12 Oct 1666 at pp. 178-179 is clear ('to be short and avoid the trouble of Cyphering')."
+     }
+    ],
+    "key_check": "No key held. The letter names its key: 'the Cypher you have with My Lord Arlington', i.e. Carlingford's cipher with the Secretary of State for his 1665-67 Vienna mission. That key is not in the repo or on DECODE as far as known.py shows, and the Carlingford finding aid lists no cipher key. Nothing tested, since no ciphertext is in hand.",
+    "key_held": "None held. Related material for a rebuild: Arlington's letters to Carlingford of 1666 in the same papers and in the 1856 Memoirs have passages in the same cipher (printed as '(Cypher)'), and a TNA lead in research/leads.json has Arlington to Sandwich 'almost entirely in cypher'. Not tested.",
+    "duplicates": "known.py 'OSB MSS 5', 'Carlingford', 'Taaffe', 'Earl of Sandwich': this entry's own catalogue rows and its Beinecke sweep candidate only; no target folder, no other catalogue entry, no DECODE record for the letter.",
+    "verdict": "open"
+   }
   },
   {
    "id": 802,
@@ -25257,7 +25440,46 @@
    "needs_archive_scan": "no",
    "access": "online",
    "access_note": "online (backfilled 28 Oct 2026 from the entry: seen: images)",
-   "repository": "ags"
+   "repository": "ags",
+   "vetting": {
+    "date": "2026-11-09",
+    "by": "claude legacy vetting batch 09",
+    "seen": {
+     "kind": "scan",
+     "where": "PARES 3567239 (AGS EST,LEG,1380,151-154), images 1, 8, 15 and 16 of 16 fetched 9 Nov 2026 (ViewImage, zoom 10)",
+     "extent": "8 leaves; images 1, 8 and 15 are full pages of cipher, about 21-23 lines of about 25 signs each; image 16 is the endorsement. Twelve images not opened in this pass (the entry records all 16 viewed by Brice Dudout: 15 cipher pages).",
+     "cipher": "Headed 'copia'. One and a half lines in clear Italian: 'Per sodisfare ai quesiti che il S. Erasso mi ha fatti da parte di S. M.ta dico che', then continuous sign cipher to the end: letter-like signs with dots and strokes above and below, and syllable-like glyphs (mo, no, lo, as/ap, on, dide). No interlinear or marginal decipherment on the four images seen. Endorsement: 'Genova. Copia de la memoria data al Erasso a xxi di Gen.o ... per S. Alt.' and '1549'."
+    },
+    "prior_art": {
+     "decode": "known.py 'LEG,1380,151', '1380,151-154', 'Eraso' (harvested DECODE dump included): no DECODE record; hits are this entry's rows, research/pares_ags and the unrelated Juan de Eraso 1643 target (genes1643).",
+     "tomokiyo": "Web search (cryptiana Charles V imperial cipher 1549 Genoa Figueroa Doria Eraso): Cryptiana treats the Figueroa 1529 cipher and the Imperial Cipher of 1544-1554; nothing on this memorandum or on legajo 1380.",
+     "lasry": "No Lasry paper or GL.htm item on AGS Estado 1380 or an Eraso memorandum of 1549 in the searches; the Lasry/LORIA Charles V work concerns the 1547 Saint-Mauris letter.",
+     "edition": "Spinola, Belgrano and Podestà, Documenti ispano-genovesi dell'Archivio di Simancas (Genoa 1868), full text opened (digi.econbiz.de plaintext): it prints legajo 1380 items of Jan-Mar 1549 (docs CXLV-CLII: fols. 222, 223, 233-237, 78, 224-26, 63-67) on the fortress negotiation, but no document of 21 Jan 1549, no fol. 151-154, and no occurrence of Eraso/Erasso.",
+     "literature": "PARES text search 'Eraso' 1549 and 'memoria Eraso' 1548-1550: only this record for the memorandum; no clear copy catalogued. Neighbouring items 1380,149, 150, 155, 156 opened in the catalogue: unrelated letters (Doria, Ascoli, Girón), none a decipherment. Estudios Románicos articles on AGS cipher letters returned by the searches do not cover it."
+    },
+    "key_check": "Not tested. The glyph set seen (mo, no, lo, as/ap, dide, dotted vowel marks) matches what targets/gonzaga1549 NOTES describes for the Imperial Cipher of 1544-1554; if it is that cipher the plaintext here is Italian, where the gonzaga1549 work is Spanish.",
+    "key_held": "Imperial Cipher of 1544-1554: key in print (Meister p. 212; Bertomeu Masia 2009 reconstruction; Cryptiana code/spanish2.htm), copies noted in targets/gonzaga1549/ref. Identification with this cipher is from the look of the signs only; not tested on this text.",
+    "duplicates": "known.py 'LEG,1380,151', '1380,151-154', 'Eraso': own rows only. targets/eraso1549 exists with 16 placeholder image files (267 bytes each) and no NOTES: no work recorded. No other entry or lead for this unit.",
+    "searches": [
+     {
+      "query": "Eraso Génova enero 1549 memoria Andrea Doria fortaleza \"Erasso\" Simancas Estado 1380 cifra",
+      "result": "Led to the 1868 Documenti ispano-genovesi; no mention of Eraso or of a memorandum of 21 Jan 1549."
+     },
+     {
+      "query": "\"Documenti ispano-genovesi dell'Archivio di Simancas\" 1549 Erasso memoria gennaio cifra Figueroa Doria castello",
+      "result": "Edition located and its full text opened: January 1549 documents are Philip to Figueroa and to Charles V (23 Jan) and Figueroa's reply (29 Jan); this memorandum is not printed."
+     },
+     {
+      "query": "cryptiana Tomokiyo Charles V imperial cipher 1549 Genoa Figueroa Doria \"Eraso\" memorandum cipher undeciphered Simancas",
+      "result": "Cryptiana posts on Charles V ciphers and the 1529 Figueroa letter; nothing on this document."
+     },
+     {
+      "query": "PARES catalogo/find texto=memoria Eraso, 1548-1550",
+      "result": "Only record 3567239 for the memorandum; no plain copy or decipherment catalogued."
+     }
+    ],
+    "verdict": "open"
+   }
   },
   {
    "id": 841,

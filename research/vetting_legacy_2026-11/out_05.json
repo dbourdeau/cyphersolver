@@ -1,0 +1,96 @@
+{
+ "633": {
+  "date": "2026-11-09",
+  "by": "claude legacy vetting batch 05",
+  "seen": {
+   "kind": "not online",
+   "where": "Weber, Masked Dispatches (NSA 2013), govinfo PDF, ch. 17 text and notes 60-63, read in full for this item; E. C. Fishel, 'A Cable from Napoleon' (CIA Studies in Intelligence reprint of his NSA Technical Journal article of July 1958), https://cia.gov/resources/csi/static/A-Cable-from-Napoleon.pdf, text read in full. The CIA PDF carries the captions of the facsimiles but not the images, so no leaf of the cipher was seen.",
+   "extent": "one cable: Weber says '373-cable-word message'; Fishel says 'this one message of eighty-eight groups' on five pages of Western Union blanks",
+   "cipher": "Fishel: 'a copy of a coded telegram to Napoleon from Bazaine and Castelnau ... the message was in code and not cipher'; caption 'First and last pages of the five-page message to Napoleon III from his commanders in Mexico'. Weber n. 46 quotes the opening groups '2209 613 562 273 15 2214'."
+  },
+  "prior_art": {
+   "decode": "known.py run on Keefer, Bazaine, Castelnau against the harvested DECODE dump and the repo: hits only on this entry's own catalogue rows; not on DECODE.",
+   "tomokiyo": "Web searches on Keefer, Sheridan and the Bazaine-Castelnau cable returned no Cryptiana page; nothing found for this cable on Tomokiyo's site.",
+   "lasry": "No Lasry paper or GL.htm item on the French Mexican-expedition code turned up in the three searches; not a Lasry target as far as found.",
+   "edition": "The clear text of this same message is in print: Girard, La vie et les souvenirs du general Castelnau (Paris 1930), pp. 117-118 (Castelnau repeated it in his letter to Napoleon of 8 Dec 1866), reprinted in French and in English translation by Fishel 1958 ('L'empereur Maximilien parait vouloir rester au Mexique, mais on ne peut y compter ...'). Girard itself was not opened; the French text was read in Fishel's reprint.",
+   "literature": "Fishel 1958 and Weber 2013 (n. 61: 'The actual message is reprinted by E. C. Fishel') both conclude that Keefer never solved the code; neither reconstructs any code group. No later reconstruction of the French code found."
+  },
+  "searches": [
+   {
+    "query": "Fishel \"A Precursor of Modern Communications Intelligence\" NSA Technical Journal 1958 Keefer Bazaine Castelnau cipher",
+    "result": "Led to the CIA reprint 'A Cable from Napoleon', which prints the clear text of the 3/9 Dec message from Girard and says US cryptographers never read the code."
+   },
+   {
+    "query": "Keefer Sheridan 1866 intercepted French cipher cable Bazaine Castelnau Napoleon III deciphered \"Keefer\"",
+    "result": "CIA 'A Cable from Napoleon' and 'America's First Encrypted Cable'; no claim that the code groups were ever solved; ARCSI paper on French military cryptography mentions the Mexico cipher only in passing."
+   },
+   {
+    "query": "Girard \"souvenirs du général Castelnau\" 1930 dépêche chiffrée 3 décembre 1866 Bazaine Castelnau Napoléon",
+    "result": "Bibliographic records of Girard 1930 only; no online full text of pp. 117-118 found."
+   }
+  ],
+  "key_check": "No key to the French 1866 code is held in the repo, on DECODE or in print as far as found; Fishel thinks this was the only encrypted French cable of the intervention. Nothing tested: the code groups are not online beyond the six in Weber n. 46.",
+  "duplicates": "known.py 'Keefer' 'Bazaine' 'Castelnau': only catalogue 633 itself (catalogue.json, CATALOGUE.md); no target folder, no lead, no DECODE record.",
+  "verdict": "read",
+  "closed": "The content is on record: the sender's own clear text of this cable is printed by Girard 1930 pp. 117-118 and reprinted with a translation by Fishel 1958 (CIA 'A Cable from Napoleon'). What is unsolved is the code, not the message: no group has been matched to the clear text. If kept, it is a known-plaintext code rebuild, not an unread document. Ciphertext location per Fishel n. 35: National Archives, filed with telegrams sent from the military headquarters at New Orleans 1864-69 (besides Keefer to Grant, 17 Dec 1866, Seward Papers reel 98); not online."
+ },
+ "634": {
+  "unvetted": "No identifiable document: Weber, Masked Dispatches (PDF text re-read, ch. 16 and ch. 18 n. 4-5, 12) only quotes Haswell to Fish, 8 Jul 1873 (Fish Papers reel 95): a telegram from Vienna came as connected code letters and 'the latter one was never deciphered'. No date, sender, length or file is given, so nothing shows that the ciphertext survives. known.py (vienna1873, Haswell): this entry and targets/vienna1873, closed unread 27 Oct 2026 for the same reason. Three web searches (Haswell/Fish 1873 Vienna 'never deciphered'; the 1867 code full text; Haswell 'Secret Writing' Century 1912) found no copy of the telegram, no decipherment and no full 1867 codebook online. Needs the Fish Papers letter and NARA RG 59 telegrams received / M46 to locate the item before it can be vetted."
+ },
+ "635": {
+  "date": "2026-11-09",
+  "by": "claude legacy vetting batch 05",
+  "seen": {
+   "kind": "scan",
+   "where": "NARA M580 roll 191 image 0111 (file 841.857/244), catalog IIIF at 1400 px, viewed 9 Nov 2026; FRUS 1916 Supplement doc. 424",
+   "extent": "one page, Grew's covering telegram 4691; no code groups",
+   "cipher": "Typed 'Telegram Received', headed 'GREEN AND GERMAN CIPHER', Berlin via Copenhagen, 5 Dec 1916: '... the following cipher telegram ... Quote. (Quote German cipher). End quote. GREW.' The cipher itself is not copied; manuscript note 'delivered to Ambassador by direction of the Secy. 12/7/16'."
+  },
+  "prior_art": {
+   "decode": "known.py on 841.857/244 and arabia1916 against the DECODE dump and repo: only this entry, targets/arabia1916 and targets/bernstorff1917; not on DECODE.",
+   "tomokiyo": "No Cryptiana page on this telegram came back in the searches on Bernstorff, Arabia and December 1916.",
+   "lasry": "Nothing by Lasry on German 1916 diplomatic traffic over the US channel found in the searches run.",
+   "edition": "FRUS 1916 Supp. doc. 424 prints only the cover ('German cipher. Not printed'). Official German Documents relating to the World War, vol. 2 (Carnegie 1923), Internet Archive OCR searched for 'Arabia': it prints Bernstorff's nos. 154, 164 (1 Dec) and 169 (4 Dec) and the Foreign Office's no. 121 on the Marina, but no Foreign Office telegram of 5 Dec 1916 on the Arabia.",
+   "literature": "Searches for a Room 40 decrypt (TNA HW 7, ADM 223) of this telegram returned only Zimmermann-telegram literature; no decrypt or text of the 5 Dec telegram found."
+  },
+  "searches": [
+   {
+    "query": "Bernstorff telegram 5 December 1916 Arabia Zimmermann instructions settle Marina Arabia cases Washington \"Official German Documents\" OR \"Room 40\" decrypt",
+    "result": "FRUS 1916 Supp. docs 422 and 424 only; no printed text of the German telegram."
+   },
+   {
+    "query": "Room 40 decrypts German Foreign Office telegrams to Bernstorff via American embassy December 1916 Arabia Marina HW 7 OR \"ADM 223\" State Department cable route intercepted",
+    "result": "Zimmermann-telegram accounts of the State Department route; nothing on a 5 Dec 1916 intercept."
+   },
+   {
+    "query": "Grew telegram 4691 December 5 1916 \"German cipher\" Bernstorff Arabia Foreign Office text Zimmermann Arabia note Bernstorff Lansing December 1916",
+    "result": "FRUS docs for 4691 and 4692 again; the cipher text is nowhere printed."
+   }
+  ],
+  "key_check": "No groups exist to test. German codes 13040 and 0075 are the candidates by channel only (targets/arabia1916).",
+  "duplicates": "known.py: this entry's own rows plus targets/arabia1916 (closed 6 Nov 2026 as attempted, open: no groups in M580-191 frames 0109-0113) and targets/bernstorff1917 section 10. No other record of the document.",
+  "verdict": "not_cipher",
+  "closed": "A mention of a cipher with no ciphertext: the only known copy (NARA 841.857/244, M580-191 image 0111, seen at 1400 px) carries the placeholder '(Quote German cipher)' and a note that the cipher was delivered to the Ambassador on 7 Dec 1916. No source with the code groups is known; the Politisches Archiv draft and any British intercept were not checked and are not online."
+ },
+ "640": {
+  "unvetted": "Ciphertext not seen and the prior-art question cannot be closed without it. Seen (NARA M37 roll 2 image 0022, full JPEG, 9 Nov 2026): only the typed list of reports, with 'Part in cipher.' (10 May 1811) and 'Parts in cipher.' (25 and 30 Jul 1811); a pencilled word beside the 16 June entry may read 'Decoded'. These are the Department's received copies returned to Poinsett in 1818 (Manning vol. 1 preface, checked in the Internet Archive text), and the 1814 sibling of the same kind carries a clerk's decode over the groups (targets/poinsett1813), so the cipher parts may already be deciphered on the leaf. Manning vols. 1-2 (IA full text) print no Poinsett letter of 1811. The Heilman-Levin Calendar of the Poinsett papers in the Gilpin collection (1941, IA full text) covers a different HSP collection and has no 1811 report and no mention of cipher: the entry's 'Gilpin collection, vol. 4' is doubtful (the list says vol. 1 of the Poinsett Papers). Three web searches found no edition or decipherment. Entry access should be 'archive', not 'online'. Needs HSP images of the three reports."
+ },
+ "659": {
+  "unvetted": "Title-only record, contents unknown: 'Cryptographic Co-ordination and Records - Unsolved Problems - CCR - 1944' (naId 23891396) names a subject file, not a cipher document; nothing shows that it holds ciphertext or which systems. NARA catalog API checked 9 Nov 2026: file unit, paper, container 164, no scope note, no digital objects. known.py (47647A, 23891396, ccr1944): this entry and targets/ccr1944, blocked 27 Oct 2026. Three web searches (the file title; RG 457 historian's source files 'Unsolved Problems'; Bletchley CCR registers, TNA HW 50/HW 53) found no description of the file; TNA HW 53/46 'Code and Cypher Returns from CCR' is the nearest British record. Needs a copy from College Park."
+ },
+ "660": {
+  "unvetted": "Title-only record: 'Messages Studied for Hidden or Code Message', 18 Oct 1937 (NR 4568, naId 2811333) does not show that the messages hold any cipher, and the study's finding may be in the file. NARA catalog API checked 9 Nov 2026: file unit, paper, container 1413, no scope note, no digital objects. known.py (NR 4568, 2811333): this entry and its sweep row only. Three web searches (the file title with NR 4568; SIS 1937 hidden-message study; box 1413 ZEMA33/9027A) found no mention of the file. Needs the file from College Park."
+ },
+ "661": {
+  "unvetted": "File not seen, so neither the ciphertext nor the outcome is known: 'Coded Message from Raphael Pino Roca to Primitivo Yella', 13 Nov 1942 (NR 4407, naId 2811167) is a file of the Army cryptanalysts' collection and may hold their solution with the message. NARA catalog API checked 9 Nov 2026: file unit, paper, container 1384, no scope note, no digital objects. known.py (Pino Roca, NR 4407, 2811167): this entry and its sweep row only. Three web searches (both names with 1942; NR 4407 with the collection name; Primitivo Yela) found no mention of the message; they identify a Rafael Pino Roca (Guayaquil 1878-1963, Ecuadorian poet and diplomat) and a Primitivo Yela Montalvan of Vinces, Ecuador, neither tied to this file by any source. Needs the file from College Park."
+ },
+ "662": {
+  "unvetted": "Title-only record of an NSA historian's source file: '9122 American Civil War Letters, Messages, Information, Cipher Instructions, 1862-1865' (naId 23890756). It does not identify any cipher message, and such files are often copies of known material. NARA catalog API checked 9 Nov 2026: file unit, paper, container 100, no scope note, no digital objects. known.py (23890756, civilwar1862): this entry and targets/civilwar1862, blocked 27 Oct 2026. Three web searches (the file title; NSA Center for Cryptologic History Civil War holdings; item 9122 / naId) found no description of the contents; Gaddy's NSA paper on Rochford's cipher describes a different folder. Needs a copy from College Park."
+ },
+ "663": {
+  "unvetted": "Title-only record: 'Information on Code Messages Found in Ex-German Embassy Archives - Argentina', 16 Jun 1945 (NR 2054, naId 2808583) is a report about code messages; nothing shows that it reproduces them or whether they were read. Same for the related NR 1403 (naId 2807843, container 579). NARA catalog API checked 9 Nov 2026: file unit, paper, container 775, no scope note, no digital objects. known.py (NR 2054, 2808583, buenosaires1945): this entry and targets/buenosaires1945, blocked 27 Oct 2026. Three web searches (the file title; German embassy Buenos Aires archives 1945 code messages; NR 2054 / NR 1403) found only FRUS 1942-43 on the embassy's code traffic and the Argentine AGN 'Secretos y Reservados' series; no description of this file. Needs the file from College Park."
+ },
+ "665": {
+  "unvetted": "Title-only record: 'British Naval Officer's Request for U.S. Aid in Solving Ciphers', 20 Sep 1915 (NR 4841, naId 2811605) is a request; nothing shows that cipher specimens are enclosed. NARA catalog API checked 9 Nov 2026: file unit, paper, container 1439, no scope note, no digital objects. known.py (NR 4841, 2811605): this entry and its sweep row only. Three web searches (the file title; a 1915 British naval request to the US; Hitt / War Department 1915) found one citation of the file (RG 457, Entry 9032, Box 1439) in the notes of an article in Intelligence and National Security (doi 10.1080/02684527.2016.1270996), not opened here (publisher site); the search summary suggests the request went to Moorman, which would not fit 1915, so the date and content need checking. Open that article and the file before vetting."
+ }
+}

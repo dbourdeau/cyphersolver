@@ -1,0 +1,132 @@
+{
+ "835": {
+  "date": "2026-11-09",
+  "by": "claude legacy vetting batch 09",
+  "seen": {
+   "kind": "scan",
+   "where": "HDL IIIF, https://hdl.huntington.org/iiif/p16003coll14:1503/manifest.json (canvases f. 102v and f. 163r fetched 9 Nov 2026; crops at native detail)",
+   "extent": "isolated cipher words only: f. 102v has three (heading 'ffor to make won to seme A M3SEll', recipe 'Take C3R6SE', 'he shall seme m3sel'); targets/hm64 records one more each on ff. 163r and 111r; fewer than ten words in the volume",
+   "cipher": "f. 102v seen: plain letters with figure-like signs (3, 6) standing in for vowels inside English words; a later hand repeats 'a m3sell' in the lower margin without resolving it. f. 163r top of the right column seen: Latin charm with red hatched crosses, no cipher in that part. No key or gloss on the leaves seen."
+  },
+  "prior_art": {
+   "decode": "known.py 'HM 64', 'mssHM 64', 'hm64' (harvested DECODE dump included): no DECODE record; only this entry's rows, research/us_huntington and targets/hm64.",
+   "tomokiyo": "Web search (HM 64 Huntington cipher charm vowels numbers) returned nothing from Cryptiana; the manuscript is not in Tomokiyo's lists as far as the searches show.",
+   "lasry": "Not a diplomatic cipher; no Lasry paper or GL.htm item on HM 64 turned up in the searches.",
+   "edition": "No edition of HM 64. Dutschke's Guide (repeated on the HDL record) lists 'occasional words written in cipher (e.g. ff. 50, 102v, 111, 143, 163)' with no reading. Huntington Verso post 'Forbidden texts in medieval manuscripts' says the scribe swapped vowels for numbers (childbirth charm, f. 163r); search summary only, the page itself answered HTTP 429 and was not read.",
+   "literature": "Hannah Bower, Middle English Medical Recipes and Literary Play, 1375-1500 (OUP 2022, open access, PDF opened), p. 168 and n. 85: prints the f. 102v recipe as 'For to make won to seme A M3SELLE / Take C3R6SE ... he schalle seme m3sel' and reads it: 'ceruse, white lead ... partially obscured through the use of a simple code' (mesel = leper). She cites HM 64 at ff. 113, 144, 145, 170, 173 too, with no other cipher word."
+  },
+  "key_check": "No key needed beyond the vowel substitution Bower's reading implies (3 = e, 6 = u on f. 102v). Untested here against the words on ff. 111r and 163r; the 163r word as transcribed in targets/hm64 ('T R y 6 z l e t h') fits 6 = u.",
+  "key_held": "The substitution is in print by implication (Bower 2022 p. 168: C3R6SE = ceruse, M3SELLE = mesel). Not tested on the other words.",
+  "duplicates": "known.py 'HM 64', 'mssHM 64', 'hm64': the entry's own catalogue rows and targets/hm64 (Status: in progress, two words located on 163r and 111r, none read, f. 102v not fetched). No other entry or lead for this manuscript.",
+  "searches": [
+   {
+    "query": "Huntington Library \"HM 64\" manuscript cipher childbirth charm vowels numbers f. 163 medical astrological",
+    "result": "Huntington Verso post: simple cipher, vowels swapped for numbers, charm on f. 163r; no transcription or reading given in the summary."
+   },
+   {
+    "query": "\"HM 64\" Huntington Middle English medical recipes edition \"cipher\" OR \"cryptography\" \"written in cipher\" charm deciphered",
+    "result": "No edition; catalogue wording only; pointed to Bower 2022 (DOAB/OAPEN)."
+   },
+   {
+    "query": "Bower \"Middle English Medical Recipes and Literary Play\" \"HM 64\" cipher \"mesell\" OR \"ceruse\" OR \"numbers\" Huntington",
+    "result": "Book found; PDF downloaded from OAPEN and searched for 'HM 64': p. 168 prints and reads the f. 102v cipher words (ceruse, mesel)."
+   }
+  ],
+  "verdict": "partly_read",
+  "closed": "The f. 102v cipher words are read in print: Bower 2022, p. 168 (C3R6SE = ceruse; M3SELLE / m3sel = mesel, leper), seen in the open-access PDF. That is three of the handful of cipher words in the volume and it gives the system (vowels replaced by figures). No printed reading was found for the words on ff. 111r, 163r, or whatever is on ff. 50 and 143. What is left is a few single words in a known vowel substitution, not an open cipher."
+ },
+ "840": {
+  "date": "2026-11-09",
+  "by": "claude legacy vetting batch 09",
+  "seen": {
+   "kind": "scan",
+   "where": "PARES 3567239 (AGS EST,LEG,1380,151-154), images 1, 8, 15 and 16 of 16 fetched 9 Nov 2026 (ViewImage, zoom 10)",
+   "extent": "8 leaves; images 1, 8 and 15 are full pages of cipher, about 21-23 lines of about 25 signs each; image 16 is the endorsement. Twelve images not opened in this pass (the entry records all 16 viewed by Brice Dudout: 15 cipher pages).",
+   "cipher": "Headed 'copia'. One and a half lines in clear Italian: 'Per sodisfare ai quesiti che il S. Erasso mi ha fatti da parte di S. M.ta dico che', then continuous sign cipher to the end: letter-like signs with dots and strokes above and below, and syllable-like glyphs (mo, no, lo, as/ap, on, dide). No interlinear or marginal decipherment on the four images seen. Endorsement: 'Genova. Copia de la memoria data al Erasso a xxi di Gen.o ... per S. Alt.' and '1549'."
+  },
+  "prior_art": {
+   "decode": "known.py 'LEG,1380,151', '1380,151-154', 'Eraso' (harvested DECODE dump included): no DECODE record; hits are this entry's rows, research/pares_ags and the unrelated Juan de Eraso 1643 target (genes1643).",
+   "tomokiyo": "Web search (cryptiana Charles V imperial cipher 1549 Genoa Figueroa Doria Eraso): Cryptiana treats the Figueroa 1529 cipher and the Imperial Cipher of 1544-1554; nothing on this memorandum or on legajo 1380.",
+   "lasry": "No Lasry paper or GL.htm item on AGS Estado 1380 or an Eraso memorandum of 1549 in the searches; the Lasry/LORIA Charles V work concerns the 1547 Saint-Mauris letter.",
+   "edition": "Spinola, Belgrano and Podestà, Documenti ispano-genovesi dell'Archivio di Simancas (Genoa 1868), full text opened (digi.econbiz.de plaintext): it prints legajo 1380 items of Jan-Mar 1549 (docs CXLV-CLII: fols. 222, 223, 233-237, 78, 224-26, 63-67) on the fortress negotiation, but no document of 21 Jan 1549, no fol. 151-154, and no occurrence of Eraso/Erasso.",
+   "literature": "PARES text search 'Eraso' 1549 and 'memoria Eraso' 1548-1550: only this record for the memorandum; no clear copy catalogued. Neighbouring items 1380,149, 150, 155, 156 opened in the catalogue: unrelated letters (Doria, Ascoli, Girón), none a decipherment. Estudios Románicos articles on AGS cipher letters returned by the searches do not cover it."
+  },
+  "key_check": "Not tested. The glyph set seen (mo, no, lo, as/ap, dide, dotted vowel marks) matches what targets/gonzaga1549 NOTES describes for the Imperial Cipher of 1544-1554; if it is that cipher the plaintext here is Italian, where the gonzaga1549 work is Spanish.",
+  "key_held": "Imperial Cipher of 1544-1554: key in print (Meister p. 212; Bertomeu Masia 2009 reconstruction; Cryptiana code/spanish2.htm), copies noted in targets/gonzaga1549/ref. Identification with this cipher is from the look of the signs only; not tested on this text.",
+  "duplicates": "known.py 'LEG,1380,151', '1380,151-154', 'Eraso': own rows only. targets/eraso1549 exists with 16 placeholder image files (267 bytes each) and no NOTES: no work recorded. No other entry or lead for this unit.",
+  "searches": [
+   {
+    "query": "Eraso Génova enero 1549 memoria Andrea Doria fortaleza \"Erasso\" Simancas Estado 1380 cifra",
+    "result": "Led to the 1868 Documenti ispano-genovesi; no mention of Eraso or of a memorandum of 21 Jan 1549."
+   },
+   {
+    "query": "\"Documenti ispano-genovesi dell'Archivio di Simancas\" 1549 Erasso memoria gennaio cifra Figueroa Doria castello",
+    "result": "Edition located and its full text opened: January 1549 documents are Philip to Figueroa and to Charles V (23 Jan) and Figueroa's reply (29 Jan); this memorandum is not printed."
+   },
+   {
+    "query": "cryptiana Tomokiyo Charles V imperial cipher 1549 Genoa Figueroa Doria \"Eraso\" memorandum cipher undeciphered Simancas",
+    "result": "Cryptiana posts on Charles V ciphers and the 1529 Figueroa letter; nothing on this document."
+   },
+   {
+    "query": "PARES catalogo/find texto=memoria Eraso, 1548-1550",
+    "result": "Only record 3567239 for the memorandum; no plain copy or decipherment catalogued."
+   }
+  ],
+  "verdict": "open"
+ },
+ "841": {
+  "date": "2026-11-09",
+  "by": "claude legacy vetting batch 09",
+  "seen": {
+   "kind": "scan",
+   "where": "PARES 3588323 (AGS EST,LEG,3594,312), images 1 and 4 of 4; and PARES 3588338 (EST,LEG,3594,313), image 1, all fetched 9 Nov 2026",
+   "extent": "312: 2 leaves, about 3 1/3 pages; image 1 has 4 clear lines then about 27 lines of numeric cipher. 313: 6 leaves in clear.",
+   "cipher": "312 is headed 'El Rey', opens in clear 'Conde de Siruela Pariente ... Cinco cartas vuestras de 4 y 20 de octubre pasado deste año se han recibido y el Conde Duque de Sanlucar y Pedro de Arce me han dado quenta de lo que les escrivistes en otras dos de 24 de sett.e y 4 del mismo otubre', then numbers, letters and signs to the end; no interlinear decipherment. 313, the next item, is the chancery draft: headed 'Al Conde de Siruela. Por consulta de 19 de nov.e 638', marked 'Cifra' in the margin, and opens with the same sentence and goes on in clear ('que todas tratan del estado en que se hallavan las cosas de la Republica ... sacar mis galeras del Puerto de Genova ...')."
+  },
+  "prior_art": {
+   "decode": "known.py 'LEG,3594,312', '3594,312', 'Siruela' (harvested DECODE dump included): no DECODE record; hits are this entry's rows, research/pares_ags and targets/genes1638 (the 19 May 1638 letter, 3594,156).",
+   "tomokiyo": "Web search (conde de Siruela Génova 1638 cifra despacho Felipe IV): nothing from Cryptiana on this despatch or on legajo 3594.",
+   "lasry": "No Lasry item found for the Genoa embassy cipher of 1638 in the same search.",
+   "edition": "No printed edition found. The plaintext is in the archive itself: EST,LEG,3594,313 (PARES 3588338), 'Minuta de despacho a Juan de Velasco y la Cueva, conde de Siruela', same date 20 Nov 1638, 6 leaves.",
+   "literature": "Brice Dudout's Europe chiffrée documents page (downloaded and searched 9 Nov 2026) publishes 3594,156 only; 3594,312 is not on it. The entry records his unpublished 87-88 % reading of 312 with key K3k."
+  },
+  "key_check": "Key K3k / K3f of the Genoa 1638 system (targets/genes1638, Brice Dudout) is reported in the entry to read about 87-88 % of this despatch; not re-run here. The plain draft 313 makes the key unnecessary for the content and should give the 44 open nomenclator codes by alignment.",
+  "key_held": "targets/genes1638/key_K3f.tsv (Genoa embassy cipher 1638); reported, not tested in this pass.",
+  "duplicates": "known.py 'LEG,3594,312', '3594,312', 'Siruela': own rows; targets/siruela1638 holds 4 placeholder images and no NOTES; targets/genes1638 is a different letter (3594,156) of catalogue 755. Not a duplicate of 755, which lists the ambassador's letters, not this royal despatch.",
+  "verdict": "read",
+  "closed": "Contemporary plaintext on record next to it: AGS EST,LEG,3594,313 (PARES 3588338) is the chancery draft of this same despatch of 20 Nov 1638, marked 'Cifra', opening with the same sentence as the clear head of 312 (image 1 of each seen and compared; the rest of the two texts was not collated). The entry's 'no plain copy found in 3594-3595' is wrong. Dudout's 87-88 % reading is a second, independent one."
+ },
+ "842": {
+  "date": "2026-11-09",
+  "by": "claude legacy vetting batch 09",
+  "seen": {
+   "kind": "scan",
+   "where": "PARES 3583832 (AGS EST,LEG,1411,238), images 1 and 2 of 4; and PARES 3583817 (EST,LEG,1411,237), image 1, all fetched 9 Nov 2026",
+   "extent": "238: 2 leaves, 2 written pages; 4 clear lines then about 37 lines of numeric cipher with overlined and superscript marks. 237: 2 leaves in clear.",
+   "cipher": "238 is not a minute but the ciphered despatch itself (marked 'Dup.da'): 'Don Phelippe por la gracia de Dios Rey de España ...', clear opening 'Todas las cartas que me haveys escrito estos dias hasta la ultima de 9 del passado he recebido y os agradezco mucho el cuydado que teneys de avisarme de lo que entendeys convenir a mi servicio', then cipher to the dated close 'De Madrid a xij de Enero 1578', signed Yo el Rey; no interlinear decipherment. 237, the preceding item, is the draft: addressed 'A Juan Andrea Doria', marked 'Cifra toda' in the margin, same opening sentence, then in clear 'He visto lo que me escrivis sobre lo de la persona que los dessa republica han elegido por nuevo dux ... En lo que toca a las cosas de la conjuracion ...'."
+  },
+  "prior_art": {
+   "decode": "known.py 'LEG,1411,238', '1411,238', 'Juan Andrea Doria' (harvested DECODE dump included): no DECODE record; own rows and research/pares_ags only.",
+   "tomokiyo": "Web search (Juan Andrea Doria 1578 Felipe II minuta cifrada Génova): nothing from Cryptiana on this despatch; only the general Cifra General pages.",
+   "lasry": "No Lasry item on Philip II's correspondence with Gian Andrea Doria found in the same search.",
+   "edition": "Not found in print. Vargas-Hidalgo, Guerra y diplomacia en el Mediterráneo (correspondence of Philip II with Andrea and Gian Andrea Doria) came up in the search and was not opened. The plaintext is in the archive: EST,LEG,1411,237 (PARES 3583817), 'Minuta de despacho a Juan Andrea Doria', 12 Jan 1578, PARES summary 'Sobre la elección del nuevo dux. La conjura de Génova. Movimientos de sus galeras.'",
+   "literature": "Pacini's Hispania article on Philip II and the Genoese revolt appeared in the search; not opened, not needed for the verdict."
+  },
+  "key_check": "No key tried. The draft 237 gives the full plaintext, so the pair 237/238 is a known-plaintext source for the 1578 Doria cipher rather than an unread text.",
+  "duplicates": "known.py 'LEG,1411,238', '1411,238', 'Juan Andrea Doria': own rows only; the catalogue row for Doria, Sfondrato, Requesens 1572-88 lists incoming letters, not this despatch.",
+  "verdict": "read",
+  "closed": "Contemporary plaintext on record next to it: AGS EST,LEG,1411,237 (PARES 3583817) is the draft of the same despatch of 12 Jan 1578, marked 'Cifra toda', with the same opening sentence as the clear head of 238 (image 1 of each seen and compared; the full texts were not collated). The cipher passages of 238 are that draft enciphered."
+ },
+ "843": {
+  "unvetted": "Checked 9 Nov 2026 (legacy vetting batch 09). A cluster, not one cipher document, and it carries contemporary decipherments. PARES 3964726 (AHNOB FRIAS,C.28,D.1): bound register, 408 images, of letters of Oct-Dec 1645 from the Almirante de Castilla, the marqueses de los Vélez and Velada and other viceroys and ambassadors in Italy and England to the conde de Peñaranda at Münster (not to the duque de Frías, as the entry says); scope note 'Encuadernado en pergamino. Original y cifrada'. Sampled 19 openings (images 2-395, about every 25th): about a third show signed originals with passages or whole pages of numeric cipher (e.g. image 20, Palermo 24 Dec 1645, to the 'Conde de Peñaranda'; images 245, 270, 345), and beside at least two of them (images 20 and 245) a sheet in clear in a different, secretary's hand that looks like the decipherment bound in next to the letter. Which letters have a decipherment and which do not was not established: that needs all 408 images paged and each cipher letter paired with its neighbour. known.py (FRIAS,C.28,D.1; C.28,D.1; Velada): own rows only. Web search (Peñaranda Münster 1645 cartas Almirante Vélez Velada cifra Frías C.28) found nothing on the register; CODOIN 82-84 (Peñaranda's Münster correspondence) not opened. Missing: an item list of the cipher letters and whether each has its decipherment in the volume; split per key once known."
+ },
+ "844": {
+  "unvetted": "Checked 9 Nov 2026 (legacy vetting batch 09). Not digitised; title only. PARES 3948678 (AHNOB FRIAS,C.1442,D.2): 'Real cédula cifrada de Felipe IV a Iñigo Melchor Fernández de Velasco, VII Duque de Frias', Madrid 29 Apr 1664, scope note 'Firma de Felipe IV. Sello de placa.', index term 'Cifra'; no extent, no images. The title shows a ciphered original, but not whether the recipient's decipherment is written on it or filed with it, which is usual for a ciphered royal order kept in the addressee's archive; and the chancery draft in clear would be in a parallel series (AGS Estado or Guerra, AHN Estado) that could not be searched by date. Neighbours checked: C.1442,D.1 is a clear real cédula to the same duke of 30 Mar 1664 (levy of 2,000 soldiers for Flanders); D.3 and D.4 are unrelated 18th-century items. known.py (FRIAS,C.1442,D.2; C.1442,D.2; Melchor Fernández de Velasco): own rows only. Web search (real cédula cifrada Felipe IV 1664 Íñigo Melchor Fernández de Velasco) and a PARES text search for the duke in 1664 found nothing more. Missing: a scan from AHNOB (Toledo) to see the cipher, its length and any decipherment on the sheet."
+ },
+ "851": {
+  "unvetted": "Checked 9 Nov 2026 (legacy vetting batch 09). Not seen; box titles only, and no identifiable cipher document. NYPL MssCol 176 (Bacon cipher collection), box 15 'Riverbank Labs -- student exercises and lessons, Mexican codes' and box 16 'Riverbank Labs -- unsorted material concerning cryptography' (1982 accession sheet as quoted in the entry); not digitised. The titles do not show that any intercepted ciphertext survives, and the one account of the Riverbank boxes on record in the entry (NSA 'A great TDY') describes page proofs, student folders and exercises, with no intercepts. Riverbank and MI-8 solved the Mexican systems they worked on, so any message there would normally sit with its solution. known.py (MssCol 176; Riverbank; Mexican codes): own rows, research/chi_riverbank, and an unrelated lead (2145, Vázquez Gómez telegrams) for the words 'Mexican codes'. Web search (NYPL Bacon cipher collection Riverbank Mexican codes box 15 Friedman Fabyan intercepts 1917): NYPL catalogue record (30 linear feet, Baconian transcriptions and Riverbank publications) and Friedman lecture notes saying Riverbank worked mainly on Mexican messages; nothing on the contents of boxes 15-16. Missing: an item-level look at the two boxes (NYPL reading room) to see whether they hold message texts at all and whether each has its solution."
+ },
+ "852": {
+  "unvetted": "Checked 9 Nov 2026 (legacy vetting batch 09). Not seen; folder title only, and it does not show ciphertext. University of Chicago, Samuel N. Harper Papers, Box 61, Folder 19: 'Memoranda on translations and code messages found with the Sisson documents (1918-1920)' (finding aid as quoted in the entry); not digitised. Memoranda on code messages are discussion of them, most likely with their translations, not undeciphered text; whether any code groups are copied in the folder is not stated. The Sisson documents are forgeries (Kennan 1956), so any 'code messages' with them are of doubtful authenticity as cipher. known.py (Sisson; Harper Papers; Box 61): own rows and research/chi_uchicago only (the leads.json 'Box 61' hit is lead 1545, Newberry CB&Q Box 615, and chi_chrome_pass is likewise another collection). Web search (Sisson documents code messages Samuel Harper memoranda translations 1918 coded telegrams Kennan): general accounts of the documents and of the Jameson-Harper report; nothing on code messages or on this folder. The CPI pamphlet 'The German-Bolshevik Conspiracy' (1918) and Kennan's article were not opened. Missing: sight of the folder (Chicago reading room or a scan request) to see whether it holds any code text."
+ }
+}
