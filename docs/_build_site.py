@@ -2224,6 +2224,11 @@ PAGES = [
          blurb='A one-page military report sent from Puente Nacional, Veracruz, in June 1832, in Spanish with the consonants plain and every vowel replaced by a mark. The five-value key was recovered from the page itself and 127 of 147 cipher words read: a section was to leave at dawn, no movement has been made or planned in that direction, the writer hopes for a combination of these forces with those leaving Jalapa, and resources last five or six days. Line 4 and some words in lines 3, 5, 8, 10, 14, 17 and 18&ndash;22 are cursive the scan does not settle.',
          quote='&ldquo;solo hay recursos para cinco o seis d&iacute;as&rdquo;',
          rights='Manuscript image: CEHM-Carso (Fundaci&oacute;n Carlos Slim)'),
+    dict(slug='azuares1837', label='Azuares from London 1837', year='1837', y=1837.7, place='London &rarr; the Carlist Secretary of State', st='partial', stt='key from the ciphertext',
+         title='Azuares to the Carlist Secretary of State, London, 8 September 1837',
+         blurb='A Carlist agent&rsquo;s letter from London with runs of letter cipher inside clear Spanish, and no decipherment. Brice Dudout recovered letter tables from the cipher; one of five passage tables passed his held-out test (0.882 against 0.508 for the best shuffled table), the others did not. 285 of 361 cipher words are read without restorations: talks with the Austrian charg&eacute; d&rsquo;affaires on a change of regime in Portugal.',
+         quote='&ldquo;se apresure a tratar con el rey don Carlos&rdquo;',
+         rights='Letter: Archivo Hist&oacute;rico Nacional, DIVERSOS-COLECCIONES,161,N.2 (PARES); tables and reading by Brice Dudout'),
     dict(slug='ellis1839', label='Ellis from Mexico 1836&ndash;39', year='1836&ndash;1839', y=1836.8, place='Mexico City &rarr; Washington', st='found', stt='read at the time',
          title='Powhatan Ellis to John Forsyth, Mexico, 1836&ndash;1839',
          blurb='The American envoy in Mexico reported on the Texas war in John Quincy Adams&rsquo;s numerical code of 1811. The State Department deciphered every passage when it arrived, and the decipherments are filmed with the despatches; the one without, 26 October 1836, is printed by Bosch Garc&iacute;a. Michael Brackx and WAINUT transcribed the groups, which decode with the JQA table and confirm each text; three groups missed on frame 0324 and fourteen disputed groups of 1839 are settled here.',
@@ -4633,3 +4638,4 @@ IMAGES['portstemarie1729'] = ('portstemarie1729_lead.jpg', 'mssBLA 191 p. 5: the
 IMAGES['napoleon'] = ('napoleon_plate.jpg', 'Page 3 of the dispatch: the archivist&rsquo;s notes, the salutation &ldquo;Sire,&rdquo; and the first lines of the cipher', 'J. Vilcoq, Revue historique de l&rsquo;Arm&eacute;e 1969 no. 4, plate after p. 24 (Archives nationales), via Pers&eacute;e')
 IMAGES['marmont1812'] = ('marmont1812_n34.jpg', 'Jourdan&rsquo;s letter in the Spanish copy: the cipher passages left as numbers between the translated clear text', 'Archivo Hist&oacute;rico Nacional, DIVERSOS-COLECCIONES,134,N.34 image 2, via PARES (the copy published by Brice Dudout, Europe chiffr&eacute;e)')
 IMAGES['batavia1800'] = None
+IMAGES['azuares1837'] = None
