@@ -139,8 +139,17 @@
    "technique": [
     "key matching"
    ],
-   "what": "Neighbouring pieces n. 105 and 107-110 (scans 465-468, 471-482) opened for a key, a gloss or the same code: all in clear.",
+   "what": "Neighbouring pieces n. 105 and 107-112 (scans 465-490) opened for a key, a gloss or the same code: all in clear. Halm's catalogue searched as text: no other piece of the Rota correspondence is marked as cipher.",
    "result": "ruled out"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "literature search",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Halm 1874 searched through the MDZ text search ('Chiffern', 'chiffrirt', 'Rota', 'Hyacinth'): 13 pages mark cipher pieces, none of them another Rota or Hyacinth letter. n. 107, 108, 110, 111 read for names: g 27 may be Father Hyacinth and g 34 the Palatine or his house, from context only.",
+   "result": "partial"
   },
   {
    "date": "2026-11-09",
@@ -157,9 +166,30 @@
    "what": "docs/_validate.py on the 79 letter groups (model it-cinquecento): verdict too short (72 read tokens, 18 types).",
    "result": "partial"
   },
-  {"date": "2026-11-09", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 72 tokens, 18 types, it-cinquecento order 4: reading -2.45 per letter; Verdict: too short.", "result": "partial"}
+  {
+   "date": "2026-11-09",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 72 tokens, 18 types, it-cinquecento order 4: reading -2.45 per letter; Verdict: too short.",
+   "result": "partial"
+  }
  ],
- "outcome": {"validation": {"date": "2026-11-09", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 72, "types": 18, "tokens_per_type": 4.0, "score": -2.45, "nulls": {}, "verdict": "too short", "notes": "claimed per-occurrence score -2.45; polyphony 0.0; 7 unread tokens left out; annealer on the real text from random keys reached n/a"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-11-09",
+   "model": "it-cinquecento",
+   "file": "validation.tsv",
+   "tokens": 72,
+   "types": 18,
+   "tokens_per_type": 4.0,
+   "score": -2.45,
+   "nulls": {},
+   "verdict": "too short",
+   "notes": "claimed per-occurrence score -2.45; polyphony 0.0; 7 unread tokens left out; annealer on the real text from random keys reached n/a"
+  },
   "class": "read in part",
   "key": "partial",
   "method": "key recovered from ciphertext-only",
@@ -172,8 +202,14 @@
   "fraction_read": 0.625,
   "fraction_read_method": "measured",
   "fraction_read_source": "decode.py on transcription.txt: 144 cipher tokens (79 letter groups, 25 code numbers, 40 single signs); 72 letter groups and 18 signs read = 90/144.",
-  "codes_open": {"open": 22, "total": 22, "tokens_open": 25},
-  "verification": ["historical consistency"],
+  "codes_open": {
+   "open": 22,
+   "total": 22,
+   "tokens_open": 25
+  },
+  "verification": [
+   "historical consistency"
+  ],
   "provenance": "project",
   "key_file": "key.tsv",
   "credits": [

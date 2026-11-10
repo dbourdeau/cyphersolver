@@ -76,12 +76,23 @@ and 18 signs = 90 of 144 = 62.5%.
 
 ## Escalation
 
-- [x] siblings: scans 465-468 and 471-482 opened (n. 105, 107-110): all in clear, no cipher and no key; n. 107 is Rota to Camerarius, Brussels 29 April, n. 108 Giacinto's letter of 22 April
+- [x] siblings: scans 465-490 opened (n. 105, 107-112), 10 Nov 2026: all in clear, no cipher and no key. n. 107 is Rota to Camerarius, Brussels 29 April (scans 471, 473); n. 108 is Giacinto's letter of 22/23 April (475-479); n. 110 (483) is an extract of a letter of Rota's, written on Hyacinth's order, on German affairs and the Saxon declaration, so later than n. 106 and not a parallel of it; n. 111 (485) is Fra Jacinto's letter in Spanish, Brussels 2 July. Halm's catalogue was searched as text (MDZ search service, bsb11184610): 'Chiffern' marks 13 pages and 'chiffrirt' one, and n. 106 is the only piece of the Rota correspondence marked as cipher; the others are other systems (Anhalt, the Solms letters, Sultan Osman, Ragoczi, Pawel, Fegraeus); 'cifra', 'cifris', 'Zahlen', 'Ziffer' and other spellings gave nothing. So no second leaf in this code is known in the Camerarius volumes, going by Halm's wording only
 - [x] clear-pages: the verso (scan 470) is blank; no decipherment on or beside the leaf
 - [x] known-keys: camerarius1621 key.tsv does not fit (issue #254: German one-part code with groups to 3200; 3 of 104 groups have a value there)
 - [x] print: vetting of 4 Nov 2026 searched Rusdorf's Mémoires (1789), Goetz, Briefe und Akten N.F. II/1, Khevenhüller, Söltl, Gardiner, Krüner: the mission is described, this letter and Vatron are not; Schubert (1955) not online, not seen
 - [x] key-rebuild: letter key rebuilt here from the clear context, 16 values; the code numbers have no alphabetical order to bracket (too few, 1-3 uses)
 - [x] retry: every group decoded again with the 16 values (decode.py); 7 letter-run numbers and all code numbers stay open
+
+## Context from the clear siblings (10 Nov 2026): proposals, not readings
+
+The clear letters give the persons and the business, but no parallel text for n. 106. These are proposals for the code numbers, each from the context only and not counted in the 62.5%:
+
+- g 27 and g 27' = Father Hyacinth (grade M). The sentence before names him by his motto 'Non erubesco Evangelium', which Halm says Camerarius added to the signature of n. 108, and he is the one who writes from Brussels (n. 108 is dated Brussels).
+- g 34 = the Elector Palatine or his house (grade M). n. 107 and n. 108 are about the Palatine, 'la sua Ser.ma moglie' and 'la casa Palatina'; the sentence 'per grandezza della sua casa non vi è cosa migliore ... et la moglie ne ride' fits them. The number 34 also stands after m and c (m 34', c 34), so the prefix letter is not a class mark that fixes the meaning.
+- The Nuncio (Monsignor Nuncio, Bagni) and 'Mons. di Tillier' are written in clear in n. 106; n. 107 names a 'sig. Plessen' in clear. None of them is among the code numbers.
+- g 24, g 37, g 57, the ticked numbers and all the signs: no proposal; n. 107 and n. 108 name no one who fits.
+
+Nothing here was tested against a second passage, so none of it moves a token to 'read'.
 
 ## Prior art (contamination)
 
