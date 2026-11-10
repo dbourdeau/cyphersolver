@@ -1,6 +1,6 @@
 # Kopp ↔ Chicherin radiograms, 1921 (NARA M316 rolls 40–48; catalogue 669)
 
-Attempted, open: no group value recovered for the figure traffic. The letter traffic in the same file is split off per key: `lejava1921`, `voikov1921` (keys recovered, deciphered), `voikov1921b` (decoded, not read), `stomoniakov1921` (unbroken). The Karakhan table is in `karakhan1921`.
+Attempted, open: no group value recovered for the figure traffic. The letter traffic in the same file is split off per key: `lejava1921`, `voikov1921` (keys recovered, deciphered), `voikov1921b` (decoded, not read), `stomoniakov1921` (unbroken). The Karakhan table is in `karakhan1921`. Two figure messages in a different system (a digit-pair table in a square transposition), Krassin Nr 451 and Lutowinoff Nr 523 on roll 43, were deciphered by Harumi-Matsuba (issue #370, 10 Nov 2026) and split off into `krassin1921`; the four-figure table of Kopp and Nr 417 below is not that system.
 
 ## Source
 

@@ -2467,6 +2467,11 @@ PAGES = [
          blurb='A radio telegram intercepted at Constantinople and filed unread. A columnar transposition of Russian in Latin letters, 24 columns, key recovered from the ciphertext alone. It is a buying order for hardware for the goods-exchange fund, item by item with sizes.',
          quote='vily dlya sena i navoza: forks for hay and manure',
          rights='National Archives and Records Administration, RG 59, M316'),
+    dict(slug='krassin1921', label='Krassin and Lutowinoff 1921', year='1921', y=1921.45, place='Berlin &rarr; Moscow', st='solved', stt='key from the ciphertext',
+         title='Krassin&rsquo;s Nr 451 and Lutowinoff&rsquo;s Nr 523, Berlin to Moscow, 1921',
+         blurb='Two Soviet figure radiograms to Chicherin, intercepted at Constantinople and filed unread. Harumi-Matsuba recovered the 5 &times; 6 digit-pair table and its square transposition from the ciphertext alone. Krasin reports the audit of the Berlin trade mission; Lutovinov protests against keeping Kopp in Berlin as polpred.',
+         quote='&ldquo;облегчите заметание следов&rdquo;: make it easier to cover the traces',
+         rights='National Archives and Records Administration, RG 59, M316 (US government work); table and reading by Harumi-Matsuba'),
     dict(slug='spaen1808', label='Van Spaen 1808', year='1808', y=1808.0, place='D&uuml;sseldorf &rarr; The Hague', st='stuck', stt='key not found',
          title='Van Spaen to Van der Goes, 12 and 15 January 1808',
          blurb='A letter and its annex in a plain numerical code reaching at least 1339, 303 groups (DECODE R1941). The archive inventory places them with the commissioners for the districts ceded around Zevenaar, writing from D&uuml;sseldorf. No key was found on DECODE or in print, and the text is too short for a ciphertext-only attack; not solved.',
@@ -4655,6 +4660,7 @@ IMAGES['farnese1547'] = None
 IMAGES['thumbshirn1647'] = None
 IMAGES['schoenberg1665'] = None
 IMAGES['flak1940'] = None
+IMAGES['krassin1921'] = None
 IMAGES['rubio1913'] = ('rubio1913_telegram.jpg', 'Rubio&rsquo;s telegram of 18 March 1914: the plain words &ldquo;con toda atenci&oacute;n que&rdquo; and the first runs of numbers', 'Centro de Estudios de Historia de M&eacute;xico (CEHM-Carso), fondo DLXXIII, DLXXIII.2.41.13-41 image 1, via the CEHM public viewer (crop; the viewer&rsquo;s watermark is partly visible)')
 IMAGES['portstemarie1729'] = ('portstemarie1729_lead.jpg', 'mssBLA 191 p. 5: the head of the coded report, no gloss', 'Huntington Library, William Blathwayt papers addenda, mssBLA 191 p. 5, via the Huntington Digital Library')
 IMAGES['napoleon'] = ('napoleon_plate.jpg', 'Page 3 of the dispatch: the archivist&rsquo;s notes, the salutation &ldquo;Sire,&rdquo; and the first lines of the cipher', 'J. Vilcoq, Revue historique de l&rsquo;Arm&eacute;e 1969 no. 4, plate after p. 24 (Archives nationales), via Pers&eacute;e')
