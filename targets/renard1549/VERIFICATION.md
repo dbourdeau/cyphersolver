@@ -1,0 +1,5 @@
+# renard1549: project check of issue #373 (10 Nov 2026)
+
+- Key consistency: the 1,360 signs of `transcription.txt` (51 lines, label column dropped) were decoded with the key exactly as stated in the issue. 1,300 tokens (95.6%) equal `decryption.txt`. The 60 differences: syllables on 18 (v) written with u (32), bare 20 = v written u (10), bare 15 = ra, not in the issue's bare-numeral list but read as consonant + a (10), bare 18 read u, not in the list (2), `amo` and `gis.` formatting (3), two nulls left as `?`, one bare 8 left as `?`. No difference changes a word.
+- Counts, measured: 18 signs unread (`?`), 58 nulls, 33 code words with a context-only value (`decryption.txt`); 531 words with 28 holes or bracketed guesses in `reading.md` (read share 0.947).
+- Not checked here: the transcription against the images (edl-jarvis.cultura.gov.it was refused by the session network); the Calendar of State Papers Spain IX extracts and the Gioffredo text in Historiae Patriae Monumenta (archive.org and british-history.ac.uk refused). The identifications of the plotters, the ambassador and the informant rest on the contributor.

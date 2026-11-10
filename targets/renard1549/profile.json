@@ -1,0 +1,246 @@
+{
+ "schema_version": 1,
+ "target": "renard1549",
+ "title": "Copy of the imperial ambassador's dispatch from Paris, 12 July 1549, on a French plot against the castle of Nice (Biblioteca Estense, Karl V sfasc. IV c. 131): read in part by Ivan Sourvillo with the 1548 numeric syllabary corrected against c. 40-41",
+ "documents": [
+  {
+   "id": "estense-karlv-iv-131",
+   "read": "read in part",
+   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera K, Karl V, sfasc. IV, cc. 131-132",
+   "date": "12 July 1549",
+   "year": 1549,
+   "country": "France",
+   "route": "Paris -> Charles V (copy forwarded to Ferrante Gonzaga at Milan with the letter of 15 July 1549)",
+   "places": {
+    "from": "Paris",
+    "to": "unknown"
+   },
+   "language": "Spanish",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment of c.131 is in the file; the archival decipherment c.41 of the sibling letter of 15 July 1549 (same key) was used to correct the key and mentions this copy.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 1360,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "the contributor's transcription with Claude from deskewed native-resolution IIIF crops of c.131r-v (heading, 35 lines and 15 lines); the project did not see the images",
+    "image_quality": "unknown",
+    "notes": "Measured with --drop-first (line labels). Second-pass corrections from the issue comments (Q read as a va sign in de Navarra; navarro on c.131v) are applied in the reading, not in transcription.txt."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "A numeric syllabary (the 1548 Doria-Figueroa family): consonant numbers with vowel marks, bare numerals for single letters, special signs, nulls with superscript 13 or 12, and code words for syllables and names.",
+  "symbol_kind": "digits and letters",
+  "distinct_symbols": 119,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "The repo listed cc.131-132 as unread; the contributor found no printed text; the Calendar of State Papers Spain IX gives extracts of Renard's letters of 14, 18 and 28 July 1549 on the same plot but none of 12 July (contributor, not checked here).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "transcription",
+   "sibling key",
+   "published key"
+  ],
+  "attack": "sibling key",
+  "human_role": "Ivan Sourvillo set the task and directed the work (issue #373 and two comments, 10 Nov 2026); Claude, as his agent, aligned c.40r against c.41, transcribed c.131, ran a beam decoder and read the result. The project re-decoded his transcription with his stated key; it did not see the images.",
+  "models": [
+   "Claude"
+  ],
+  "first_date": "2026-11-10",
+  "last_date": "2026-11-10"
+ },
+ "solution": [
+  {
+   "date": "2026-11-09",
+   "kind": "sibling key",
+   "what": "Project, before the contribution: the 1548 key as described in gonzaga1549/NOTES.md, encoded literally, gave lexical coverage 0.783 on c.131r heading and lines 1-6 against 0.810 for the best of 200 shuffled keys; not validated (catalogue entry 1560).",
+   "result": "failed",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "key from source",
+   "what": "Contributor: aligned c.40r (15 Jul 1549) sign by sign against its archival decipherment c.41; fixed the vowel-mark rules, the nulls (superscript 13/12) and 14 code words.",
+   "result": "worked",
+   "technique": [
+    "plaintext matching",
+    "manual reconstruction"
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "transcription",
+   "what": "Contributor: transcribed c.131r-v from deskewed native-resolution IIIF crops, 51 lines, 1,360 signs.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "solver",
+   "what": "Contributor: beam decoder with a Witten-Bell 6-gram Spanish letter model, marked signs held to their key values, unknown code words as placeholders.",
+   "result": "partial",
+   "technique": [
+    "beam/DP decoding",
+    "language-model scoring"
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "reading",
+   "what": "Contributor: read the output as Spanish and rechecked the crops in three rounds (19 = u, 20 = v, e^9, &, XP, 2oo; context values of code words); the leaf reads as the copy of the ambassador's dispatch of 12 July 1549 on the Nice plot.",
+   "result": "partial",
+   "technique": [
+    "contextual inference"
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "literature search",
+   "what": "Contributor: Calendar of State Papers Spain IX (extracts of 14, 18, 28 July 1549, no 12 July) and Gioffredo in Historiae Patriae Monumenta Scriptores II (1543 garrison roll) identify the informant as the Navarrese and the plotters as probably Carra and Antonio de l'Eschaulx.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "reading",
+   "what": "Contributor's second pass: de Navarra (r2), navarro (v9), Care contrareleur (r6), fin = pri, hic = Duque, possible burlado (r35).",
+   "result": "worked",
+   "technique": [
+    "contextual inference"
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "control",
+   "what": "Project check: own script decoded the 1,360 signs with the stated key; 1,300 (95.6%) equal the contributor's decryption, the rest u/v spelling, bare 15 = ra and a few nulls (VERIFICATION.md). Images, Calendar and Gioffredo not reachable from the session.",
+   "result": "worked",
+   "technique": [
+    "key matching"
+   ]
+  }
+ ],
+ "outcome": {"validation": {"date": "2026-11-10", "verdict": "not applicable", "notes": "Contributed reading; the key is a syllabary with vowel marks and code words corrected on a sibling decipherment, and the project checked key consistency (95.6% token agreement on re-decoding) rather than fitting its own key; no n-gram test run."}, 
+  "class": "read in part",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Tomokiyo's description of the 1548 syllabary did not fit as written; the contributor corrected it by aligning c.40r of the same file against its archival decipherment c.41, then applied it to c.131 and fitted further code words from context.",
+  "contribution": [
+   "transcription",
+   "key extended or corrected",
+   "decipherment with ambiguous key",
+   "sender or date identified"
+  ],
+  "provenance": "contributed",
+  "key": "partial",
+  "verification": [
+   "key confirms",
+   "contemporary decipherment",
+   "historical consistency"
+  ],
+  "fraction_read": 0.947,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.md after the comment corrections: 531 words, 28 holes or bracketed guesses ([...], [?word], [office]); on decryption.txt 18 of 1,302 non-null signs read ? (98.6% given a value).",
+  "codes_open": {
+   "open": 8,
+   "tokens_open": 18
+  },
+  "key_file": "key.tsv",
+  "credits": [
+   {
+    "who": "sourvillo",
+    "role": "solution",
+    "note": "key correction against c.40/41, transcription, decryption, reading, translation and identifications; issue #373 and two comments; worked with Claude as his agent",
+    "date": "2026-11-10",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/373"
+   },
+   {
+    "who": "tomokiyo",
+    "role": "key or decipherment used",
+    "note": "Cryptiana description of the 1548 Doria-Figueroa numeric syllabary, the starting point of the key"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the imperial chancery's decipherment c.41 of the letter of 15 July 1549, used to correct the key"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "code word amo and the signs X, F, I, T°, 3^1, e^3",
+    "blocker": "open-codes",
+    "detail": "each occurs once or twice and the context does not fix it"
+   },
+   {
+    "item": "context-only values of code words (den, bas, ne, mi, oria/ocia/ning, rac, apud, allo, bit)",
+    "blocker": "open-codes",
+    "detail": "not in the c.40/41 alignment; no other text in this key in the file"
+   },
+   {
+    "item": "five short holes and the plotters' names spelled letter by letter (Chaulve-F)",
+    "blocker": "illegible",
+    "detail": "left unread on the contributor's crops; images not reachable from the project"
+   },
+   {
+    "item": "transcription not compared with the images by the project; Renard's original in Vienna and the Besançon decipherment",
+    "blocker": "needs-physical-access",
+    "detail": "Estense host refused by the session network; the Vienna and Besançon papers are not online"
+   }
+  ],
+  "notes": "Contributed by Ivan Sourvillo; the project checked that the decryption follows the stated key, not the transcription against the images.",
+  "texts": [
+   {
+    "doc": [
+     "estense-karlv-iv-131"
+    ],
+    "label": "Copy of the ambassador's dispatch, Paris, 12 July 1549 (sfasc. IV c. 131r-v)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.947,
+    "summary": "The imperial ambassador in France (Simon Renard, per the contributor) reports from Paris on 12 July 1549 a French plan, in the name of the Count of Tende, governor of Provence, to take the castle of Nice: 63 soldiers of the garrison bought through two inside men, twelve galleys and 300 soldiers to come under cover of the fort at Antibes. The informant is a Navarrese of Tende's following. Charles V sent this copy to Ferrante Gonzaga, governor of Milan, with his letter of 15 July 1549.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (for the project)",
+     "date": "2026-11-10",
+     "note": "Read the contributor's Spanish as sentences: they build a coherent dispatch with holes at unread signs and code words with context-only values; names and identifications are the contributor's."
+    }
+   }
+  ]
+ }
+}

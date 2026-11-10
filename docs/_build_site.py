@@ -624,6 +624,11 @@ PAGES = [
          blurb='BL Harley MS 286 f. 61, catalogued on DECODE as a letter of an unknown sender, is D&rsquo;Ewes&rsquo;s private Latin log of his infant son&rsquo;s convulsion fits, in the alphabet he invented at school. The key of this simple substitution was recovered from the slip alone, from probable words, and checked against weekdays, moon phases and his Autobiography. 96.5% of the words are deciphered.',
          quote='&ldquo;in quorum tertia os ipsius pene ad aurem dextram convulsum, quod ante numquam observavi&rdquo;',
          rights='Manuscript images: British Library, via DECODE R7759'),
+    dict(slug='renard1549', label='Ambassador in France to Charles V 1549', year='1549', y=1549.53, place='Paris &rarr; Charles V', st='partial', stt='key from adjacent plaintext',
+         title='The ambassador in France to Charles V, Paris, 12 July 1549',
+         blurb='An undated cipher leaf of the Charles V to Ferrante Gonzaga file, deciphered in part by Ivan Sourvillo as the copy of the imperial ambassador&rsquo;s dispatch that the Emperor forwarded on 15 July 1549. The 1548 numeric syllabary was corrected on the sibling letter and its contemporary decipherment. A Navarrese informant reveals a French plan, in the Count of Tende&rsquo;s name, to buy the castle of Nice from 63 of its soldiers and bring twelve galleys and 300 men under cover of the fort at Antibes.',
+         quote='&ldquo;vino a m&iacute; vno que se dize ser de Navarra, de la banda del se&ntilde;or de Tenda&rdquo;',
+         rights='Biblioteca Estense Universitaria, Modena, Autografoteca Campori, CC BY-NC-SA; transcription and reading by Ivan Sourvillo'),
     dict(slug='gonzaga1549', label='Charles V to Gonzaga 1549', year='1549', y=1549.87, place='Brussels &rarr; Milan', st='partial', stt='read in part',
          title='Charles V to Ferrante Gonzaga, Brussels, 14 November 1549, and four shorter passages',
          blurb='Charles V&rsquo;s orders to his governor of Milan on Parma, almost solid cipher from c. 60r to c. 62r, with no decipherment in the file. Deciphered with the Imperial Cipher of 1544&ndash;1554 as Bertomeu Masi&aacute; reconstructed it and Tomokiyo pictures it, extended by hand. Gonzaga is told not to make terms with Ottavio Farnese, and when he may still seize Parma. By eye, with the sense in view; 93% of the signs are firm; several code words are open, and &ldquo;the Pollo&rdquo; is very probably the Pope.',
@@ -3068,6 +3073,7 @@ IMAGES['camus1586'] = None
 IMAGES['smolensk1633'] = ('smolensk1633_lead.jpg', 'The besieged at Smolensk to Krzysztof Radziwi&#322;&#322;, 1 June 1633: the clear heading and the first lines of cipher', 'Archiwum G&#322;&oacute;wne Akt Dawnych, Warsaw, Archiwum Radziwi&#322;&#322;&oacute;w dz. II nr 1116 f. 1r, via szukajwarchiwach.gov.pl')
 IMAGES['malicorne1586'] = None
 IMAGES['este1585'] = ('este1585_lead.jpg', 'The first seven lines of p. 523, the cipher page of Colbert 338', 'Biblioth&egrave;que nationale de France, Cinq Cents de Colbert 338, p. 523, via Gallica (btv1b10033937d, view 275)')
+IMAGES['renard1549'] = None
 IMAGES['gonzaga1549'] = ('gonzaga1549_lead.jpg', 'c. 60v, lines 19-21 of the letter of 14 November 1549', 'Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera K, Karl V, sfasc. IV c. 60v, via the Estense Digital Library (CC BY-NC-SA)')
 IMAGES['vargas1552'] = ('vargas1552_lead.jpg', 'Archive image 0002: the struck-through cipher block with the decipherment in the left margin', 'Archivo General de Simancas, Estado leg. 1320 ff. 35-38, image 0002, via DECODE R9967')
 IMAGES['transylvania1645'] = ('transylvania1645_lead.jpg', 'R4937, 1646: running cipher letters with clear words such as Cum satisfactione Evangelicorum', 'Romanian National Archives, Cluj, Keresdi Bethlen 15 (1646), via DECODE R4937')
