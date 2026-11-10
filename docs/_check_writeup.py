@@ -66,9 +66,9 @@ def uncommented(s):
 
 
 def manifest():
-    """slug -> st for every PAGES entry, and the IMAGES keys, from _build_site.py (no import: it has side effects)."""
+    """slug -> st for every PAGES entry, and the IMAGES keys, from _manifest.py (read as text)."""
     # commented-out entries (unpublished pages) are not in the manifest
-    s = uncommented(read(HERE / '_build_site.py'))
+    s = uncommented(read(HERE / '_manifest.py'))
     pages = {m.group(1): m.group(2) for m in re.finditer(r"dict\(slug='([a-z0-9]+)'.*?st='([a-z]+)'", s)}
     im = re.search(r'^IMAGES = \{(.*)\}\s*$', s, re.M)
     images = {}
@@ -262,7 +262,7 @@ def _toks(s):
 
 def manifest_titles():
     """slug -> 'title label' of its PAGES entry (the text the page head must agree with)."""
-    s = uncommented(read(HERE / '_build_site.py'))
+    s = uncommented(read(HERE / '_manifest.py'))
     starts = [(m.start(), m.group(1)) for m in re.finditer(r"dict\(slug='([a-z0-9]+)'", s)]
     out = {}
     for i, (a, slug) in enumerate(starts):
@@ -372,7 +372,7 @@ def ledger_problems(slug, ledger=None, rows=None):
     return []
 
 _INTEGRITY_TAGS = frozenset('p li ul ol div details summary table tr td th section figure figcaption h2 h3 a em strong pre span blockquote dl dt dd main nav code'.split())
-_ENTITY_BARE = re.compile(r'(?<![&\w])(?:rsquo|lsquo|ldquo|rdquo|ndash|mdash|hellip|eacute|egrave|agrave);')
+_ENTITY_BARE = re.compile(r'(?<!&)(?:rsquo|lsquo|ldquo|rdquo|ndash|mdash|hellip|eacute|egrave|agrave);')
 _ENTITY_DOUBLE = re.compile(r'&amp;(?:rsquo|lsquo|ldquo|rdquo|ndash|mdash|hellip|eacute|egrave|agrave|nbsp);')
 
 def integrity_problems(slug, heads=None):
@@ -438,7 +438,7 @@ def mark_reviewed(args):
     if slugs == ['--all']: slugs = sorted(s for s in pages if s not in SURVEYS and s in heads)
     ledger, done, refused, today = load_ledger(), 0, 0, time.strftime('%Y-%m-%d')
     for s in slugs:
-        if s not in pages: print(f'{s}: not a write-up in docs/_build_site.py'); refused += 1; continue
+        if s not in pages: print(f'{s}: not a write-up in docs/_manifest.py'); refused += 1; continue
         d = source_digest(s, rows)
         if d is None: continue
         pr = head_problems(s, heads, titles) + link_problems(s, heads) + integrity_problems(s, heads)
@@ -526,8 +526,8 @@ def check_slug(slug):
         item(f'?v={version}' in page if version else True, 'page carries the current stylesheet version (else rebuild)', warn=True)
         item(bool(git('ls-files', f'docs/{slug}.html').strip()), 'page is tracked by git', warn=True)
     st = pages.get(slug)
-    item(st is not None, f'PAGES entry in docs/_build_site.py (st={st})')
-    item(slug in images, 'IMAGES entry in docs/_build_site.py (None is allowed, a lead figure is better)')
+    item(st is not None, f'PAGES entry in docs/_manifest.py (st={st})')
+    item(slug in images, 'IMAGES entry in docs/_manifest.py (None is allowed, a lead figure is better)')
     item(slug in dates(), 'docs/_dates.json has the page (created by the first build)')
     mine = [r for r in rows if slug in r['slugs']]
     item(bool(mine), f'README.md results row links {SITE}{slug}.html')
@@ -723,7 +723,7 @@ def audit(brief=False):
     for s in sorted(set(pages) - SURVEYS - listed_slugs): drift.append(f'docs/{s}.html is in the manifest but README has no row linking it')
     # a 'This page has moved' stub left where a target was split or renamed is not a write-up
     moved = {s for s in html_slugs - set(pages) if '<title>Moved: ' in (HERE / f'{s}.html').read_text(encoding='utf-8', errors='replace')[:600]}
-    for s in sorted(html_slugs - set(pages) - SURVEYS - INDEX_PAGES - moved): drift.append(f'docs/{s}.html exists but has no PAGES entry in _build_site.py')
+    for s in sorted(html_slugs - set(pages) - SURVEYS - INDEX_PAGES - moved): drift.append(f'docs/{s}.html exists but has no PAGES entry in _manifest.py')
     for s in sorted(listed_slugs - html_slugs): drift.append(f'README links {s}.html, which does not exist in docs/')
     for s in sorted(set(pages) - set(images) - SURVEYS): drift.append(f'{s} has no IMAGES entry (add one, or None)')
     print(f'D. Manifest / README / docs drift: {len(drift)}')
@@ -758,7 +758,7 @@ def audit(brief=False):
     import _methods as M
     paths = M.profile_paths()
     pages = {m.group(1): (m.group(2), m.group(3)) for m in re.finditer(
-        r"dict\(slug='([a-z0-9]+)'.*?st='([a-z]+)', stt='([^']*)'", uncommented(read(HERE / '_build_site.py')), re.S)}
+        r"dict\(slug='([a-z0-9]+)'.*?st='([a-z]+)', stt='([^']*)'", uncommented(read(HERE / '_manifest.py')), re.S)}
     drift = []
     for r in readme_rows():
         want = M.section_of(r['section'])

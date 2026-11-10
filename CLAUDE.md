@@ -18,7 +18,7 @@ Finishing a cipher (read, read in part, explained, found already solved, or atte
 evidence) is the first half of the job. The second half is the write-up, and it is done in the same session:
 
 1. Run the `/writeup <folder>` skill (`.claude/skills/writeup/SKILL.md`). It lists every surface a result must
-   reach: the `docs/<slug>.html` page, the `PAGES` and `IMAGES` manifest in `docs/_build_site.py`, the README
+   reach: the `docs/<slug>.html` page, the `PAGES` and `IMAGES` manifest in `docs/_manifest.py`, the README
    results row with its write-up link, the line at the top of `docs/findings.html`, the `unpublished/solved.html` row (optional while unpublished),
    `SOLVED_CATALOGUE.md`, `SOLVED_RANKING.md`, `catalogue.json`, `decode_updates/queue.json` (DECODE edits to send), and the rebuild.
 2. `python docs/_check_writeup.py <slug>` must print `result: complete` before the work is reported as done.
@@ -127,7 +127,8 @@ author says they will refresh it is held until then, not written up; keep any da
 - Build from `docs/` with `PYTHONUTF8=1` set; `_build_stats.py` crashes on the cp1252 console without it.
 - `.github/workflows/rebuild-site.yml` rebuilds `docs/` (catalogue included) on every push to main, every PR opened or
   closed, and daily, and commits the result as github-actions[bot]. Pull before pushing; on a conflict in a generated
-  file (`search-t.json`, `search-b/*`, `menu.json`, `feed.xml`, `sitemap.xml`, `_dates.json`, `*.html`) take main's copy and rebuild.
+  file (`_dates.json`, `*.html`) take main's copy and rebuild. The search index, `menu.json`, `feed.xml` and `sitemap.xml`
+  are git-ignored since 10 Nov 2026: the Pages deploy builds them, and a local build writes them for local use.
 - main has two rulesets. "no force-push or delete" has no bypass: never force-push main; on a rejected push, pull and
   merge. "require pull request" lets the repo admin and deploy keys push directly; the rebuild pushes with the
   `REBUILD_DEPLOY_KEY` deploy key, because GitHub Actions cannot bypass a ruleset on a personal repo.

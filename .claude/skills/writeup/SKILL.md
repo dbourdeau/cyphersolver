@@ -19,7 +19,7 @@ not from memory. The slug is the folder name unless a page already exists under 
 - `git status -sb`: know which branch the shared checkout is on. Other sessions switch it. If it is not `main`,
   work in your own worktree: `git worktree add <scratchpad>/wt-main -b writeup-<slug> origin/main`, do everything
   there, push `HEAD:main`, then `git worktree remove`. Never `git commit --amend` during a rebase.
-- `git fetch origin` and read `origin/main:docs/_build_site.py`, not the branch copy, if they differ: main's is newer.
+- `git fetch origin` and read `origin/main:docs/_manifest.py`, not the branch copy, if they differ: main's is newer.
 - Read one recent page for tone and structure: `docs/gramont1529.html` (solved), `docs/lorraine1592.html`
   (partly read), `docs/orpo1942.html` (attempted, not solved).
 - **One key, one entry.** Solutions are presented by key or cipher system (George Lasry, 14 Oct 2026). Never
@@ -206,7 +206,10 @@ by side with `docs/sweden4306.html` or `docs/toledo1565.html`.
 Write the HTML with the Write tool, not a Bash heredoc (long payloads fail to parse). HTML entities for accents
 in attribute and manifest strings (`&eacute;`, `&rsquo;`, `&mdash;`), plain UTF-8 in the body is fine.
 
-## 2. The manifest: `docs/_build_site.py`
+## 2. The manifest: `docs/_manifest.py`
+
+`PAGES` and `IMAGES` are data in `docs/_manifest.py` (they were in `_build_site.py` until 10 Nov 2026); the builder
+imports them and the checkers read the file as text, so keep one `dict(slug=...` per entry.
 
 - Add a `dict(slug=…, label=…, year=…, y=…, place=…, st=…, stt=…, title=…, blurb=…, quote=…, rights=…)` to
   `PAGES`, in chronological position. `y` is the sort year (float for a range), `stt` the badge text
@@ -386,7 +389,7 @@ centred text column with margins like any other write-up, the contents strip and
 cipher crop is there, and nothing scrolls sideways (`document.documentElement.scrollWidth` no wider than the window).
 Compare it with a recent page. This applies to every page you publish or merge, contributed ones included.
 
-Stage by explicit path: the new page and its images, `_build_site.py`, `_dates.json`, every regenerated
+Stage by explicit path: the new page and its images, `_manifest.py`, `_dates.json`, every regenerated
 `docs/*.html`, the ledgers touched, `decode_updates/queue.json`. Never `git add -A`: the shared tree carries other sessions' work. Commit subject
 `Site: write-up for <who to whom>, <dates> (<shelfmark>)`, body listing what each surface got, as in `git log
 --grep='^Site:'`. Push to `main` (`git push origin HEAD:main` from a worktree) and confirm
@@ -407,7 +410,7 @@ sources no longer support. That is the commonest error found in the 7 Nov 2026 r
   glance box and hero of the page that lost them (bergamo1585, windischgraetz1720, beatrice1482 and others kept
   the old record's rows).
 - Generated parts are rebuilt from their source, so an edit in the page is undone by the next build: fix badges,
-  titles and cite lines in `docs/_build_site.py`, Full-texts summaries in `profile.json` (`outcome.texts[].summary`),
+  titles and cite lines in `docs/_manifest.py`, Full-texts summaries in `profile.json` (`outcome.texts[].summary`),
   portrait cards in `docs/_portraits.json`, and the texts themselves in the target's `reading*`/`translation*` files.
 - Do not run scripts from a `targets/` folder to check a number on a page: several rewrite tracked files. Recount
   with `python docs/_check_profile.py --measure <file>` or by hand.

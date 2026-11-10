@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: read
+  pull-requests: read
   pages: write
   id-token: write
 
@@ -28,6 +29,21 @@ jobs:
         with:
           fetch-depth: 1
       - uses: actions/configure-pages@v5
+      # The search index, feed, sitemap and menu are not in git (.gitignore, 10 Nov 2026): build them here. The build
+      # is stdlib-only and idempotent; it also brings every page's furniture up to date, so the published site does
+      # not wait for the "Site: rebuild" commit. Nothing is committed from this job.
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build the site
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PYTHONUTF8: '1'
+        run: |
+          pip install -q pillow || true
+          python tools/make_thumbs.py || true
+          (cd docs && python _build_site.py > /tmp/build.log 2>&1) || { tail -40 /tmp/build.log; exit 1; }
+          test -s docs/search-t.json && test -s docs/menu.json && test -s docs/sitemap.xml
       - uses: actions/jekyll-build-pages@v1
         with:
           source: ./docs

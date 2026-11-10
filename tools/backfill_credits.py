@@ -51,7 +51,7 @@ PULLS = [
 
 
 def page_authors():
-    s = (ROOT / 'docs' / '_build_site.py').read_text(encoding='utf-8')
+    s = (ROOT / 'docs' / '_manifest.py').read_text(encoding='utf-8')
     body = s.split('PAGES = [', 1)[1].split('\nIMAGES', 1)[0]
     out = {}
     for b in re.split(r'\n    dict\(slug=', body):
