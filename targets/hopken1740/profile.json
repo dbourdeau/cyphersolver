@@ -1,19 +1,19 @@
 {
  "schema_version": 1,
  "target": "hopken1740",
- "title": "Höpken and Carlson, Constantinople, to the King of Sweden, January 1740: despatch in a second numerical code with the contemporary Swedish decipherment written over it (split from catalogue 1771); transcribed, key not yet built",
+ "title": "Höpken and Carlson, Pera, to the King of Sweden, despatch No. 2 of 15/26 January 1740: transcribed from the contemporary Swedish decipherment written over a second numerical code, code list rebuilt, digits checked against a bare second copy",
  "documents": [
   {
    "id": "despatch_jan1740",
-   "read": "not read",
-   "shelfmark": "Stockholm, Riksarkivet, Diplomatica Turcica, SE/RA/2119/2119.1/I/9/21 (image series R0003582), images 322-327",
-   "date": "January 1740",
+   "read": "read",
+   "shelfmark": "Stockholm, Riksarkivet, Diplomatica Turcica, SE/RA/2119/2119.1/I/9/21 (image series R0003582), images 321-331 (second copy 332-342)",
+   "date": "15/26 January 1740",
    "year": 1740,
    "country": "Sweden",
    "route": "Carl Fredrik Höpken and Edvard Carlson, Constantinople -> the King of Sweden",
    "language": "Swedish",
    "cleartext_in_document": "interspersed",
-   "pages": 6,
+   "pages": 11,
    "plaintext": {
     "location": [
      "interlinear"
@@ -21,7 +21,7 @@
     "source": "Contemporary decipherment in Swedish written over the struck-through groups by the chancery decipherer."
    },
    "length": {
-    "tokens": 2118,
+    "tokens": 3450,
     "unit": "code groups",
     "measured": true,
     "file": "transcription.txt"
@@ -30,7 +30,7 @@
     "by": "llm from images",
     "source": "Riksarkivet IIIF images, full size (lbiiif.riksarkivet.se, R0003582)",
     "image_quality": "good",
-    "notes": "Pass 1 only, by two AI agents with the Swedish gloss in view; no blind digit-only pass yet. Gloss column rough."
+    "notes": "Word-level pairs by five AI agents with the gloss in view; a bare second copy (332, 334-342) transcribed digits-only and blind by three agents, 2,987 of 3,082 groups identical; 116 digits taken from the bare copy; doubtful lines rechecked twice."
    },
    "places": {
     "from": "Constantinople",
@@ -43,25 +43,32 @@
    "code",
    "syllabic"
   ],
-  "summary": "Numerical code of four-digit groups seen between about 1004 and 1999, mainly syllables. Different from the code of images 255-261 (groups there stop at 1749; values clash).",
+  "summary": "Numerical code of four-digit groups seen between 1006 and 1915: a syllabary (a/å/ä, o/ö, i/j, u/v not distinguished) with word codes for names and terms. Different from the code of images 255-261 (hopken1739).",
   "symbol_kind": "digits",
-  "distinct_symbols": "unknown",
+  "distinct_symbols": 347,
   "digit_groups": {
-   "separation": "unknown"
+   "separation": "spaces"
   },
   "diacritics": {
    "used": false
   },
   "homophones": {
-   "used": "unknown"
+   "used": true
   },
   "nomenclator": {
-   "present": "unknown"
+   "present": true,
+   "kinds": [
+    "syllables",
+    "names",
+    "places",
+    "titles",
+    "common words"
+   ]
   },
   "nulls": {
-   "present": "unknown"
+   "present": false
   },
-  "key_order": "unknown",
+  "key_order": "random",
   "word_division": "none",
   "notes": "Seed values read by eye only; no key built."
  },
@@ -149,13 +156,40 @@
    "kind": "reading",
    "what": "Recheck of the 94 doubtful lines with the full key: 63 settled, 31 remain. Final key 190 confirmed / 23 mixed / 87 single. 2,027 of 2,119 groups (95.7%) in confident words. Swedish reading and English translation written.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "access",
+   "what": "Images 319-321 and 328-342 fetched: the despatch is No. 2 of 15/26 Jan 1740, images 321-331; images 332-342 are a second copy in the same encipherment (332-333 glossed, 334-342 bare).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "transcription",
+   "what": "Word-level pairs for 321 and 328-331 by two agents with key.tsv in view (1,331 groups).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Bare second copy transcribed digits-only by three agents told to open no other file: 3,082 groups, 2,987 identical in sequence to the glossed copy. 116 digits taken from the bare copy at one-for-one differences (scripts/apply_bare.py).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "reading",
+   "what": "Second recheck of the 63 doubtful lines against both copies: 51 settled, 11 remain. Final key 235 confirmed / 15 mixed / 78 single; 3,411 of 3,450 groups (98.9%) in confident words. Reading and translation extended to the whole despatch.",
+   "result": "worked"
   }
  ],
  "outcome": {
-  "class": "read in part",
+  "class": "read",
   "key": "partial",
   "method": "read from existing decipherment",
-  "method_basis": "The reading is the 18th-century Swedish decipherment written over the groups, transcribed word by word; the code list rebuilt from it was frozen on four pages and tested on the other two.",
+  "method_basis": "The text is the 18th-century Swedish decipherment written over the groups, transcribed word by word; the code list rebuilt from it was frozen on four pages and tested on two more, and the digits were checked against a blind transcription of a bare second copy.",
   "first_break": false,
   "contribution": [
    "transcription",
@@ -164,16 +198,59 @@
   "provenance": "project",
   "verification": [
    "contemporary decipherment",
-   "matched control"
+   "matched control",
+   "independent verification"
   ],
-  "fraction_read": 0.957,
+  "fraction_read": 0.989,
   "fraction_read_method": "measured",
-  "fraction_read_source": "2,027 of 2,119 groups on images 322-327 lie in words whose digits and reading are both confident (scripts/make_texts.py). The despatch continues on images 321 and 328, not transcribed.",
+  "fraction_read_source": "3,411 of 3,450 groups on images 321-331 lie in words whose digits and reading are both confident (scripts/make_texts.py).",
   "credits": [
    {
     "who": "contemporary",
     "role": "key or decipherment used",
     "note": "the chancery decipherer's Swedish written over the groups on images 322-327"
+   }
+  ],
+  "key_file": "key.tsv",
+  "codes_open": {
+   "open": 4,
+   "total": 328,
+   "tokens_open": 5
+  },
+  "gaps": [
+   {
+    "item": "7 words with a value conflict",
+    "blocker": "open-codes",
+    "detail": "both copies agree on the digits; the word reads from the gloss"
+   },
+   {
+    "item": "3 words where the split between groups is unknown (1640, 1689, 1771)",
+    "blocker": "open-codes"
+   },
+   {
+    "item": "gloss over 1313 on 323 l08 unread (a name)",
+    "blocker": "open-codes"
+   },
+   {
+    "item": "a few clear words doubtful in the hand",
+    "blocker": "illegible"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "despatch_jan1740",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading_sv.txt",
+    "translation": "translation_en.txt",
+    "state": "read",
+    "summary": "Höpken and Carlson report to the King how the Porte's dragoman brought the signed defensive alliance treaty and asked to delay its exchange and keep it secret, how they argued for a prompt exchange, and how the exemplars were exchanged on 14/25 January 1740 after a present to Ragib Efendi. They credit the King's firmness over the Russian frontier, note the French ambassador's late help, and ask for a provisional instruction and full powers.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (AI model), reading the Swedish text as sentences while translating it",
+     "date": "2026-11-10",
+     "note": "Coherent throughout; holes at 11 doubtful words and a few clear words."
+    }
    }
   ]
  }
