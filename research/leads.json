@@ -303,13 +303,13 @@
    "shelfmark": "Stadtarchiv Konstanz, Wessenberg correspondence P 1839 5; Archives nationales 284AP/12",
    "folio_note": "Konstanz: 1 ciphered letter (26 Oct 1798, 1 p.) and a postscript of ciphered news (17 Jul 1798); AN: letters of 10 and 14 Oct 1798 partly ciphered, decipherment missing",
    "cls": "B",
-   "status": "Kalliope: 'Chiffrierter Brief mit der Bitte um Auskunft über die Reaktionen in Berlin...'; AN inventory: 'partiellement chiffrée, le déchiffrement manque'. Another Konstanz letter (15 Sep 1798) mentions Grouvelle bringing 'la nouvelle chiffre' for Berlin-Hamburg-Copenhagen-Stockholm. Narrowed to the unread part and restored 2 Nov 2026.",
+   "status": "10 Nov 2026 (Brice Dudout, L'Europe chiffrée, issue #382, not checked by the project): Stadtarchiv Konstanz Wessenberg X XVII P16 1839/5 (Berlin 17 Jul 1798) is not an open cipher: the P.S. is a clear copy, with margin notes 'non chiffré' / 'Chiffré'. His test of 1839/21 against a page of clear did not hold (margin -0.05). What stays open is AN 284AP/12 (Rivals, Cassel, 10 Oct 1798, cited by Rivals as 'le déchiffrement manque'); the key to look for is the Berlin legation table in the AE archives. Earlier: Kalliope: 'Chiffrierter Brief mit der Bitte um Auskunft über die Reaktionen in Berlin...'; AN inventory: 'partiellement chiffrée, le déchiffrement manque'. Another Konstanz letter (15 Sep 1798) mentions Grouvelle bringing 'la nouvelle chiffre' for Berlin-Hamburg-Copenhagen-Stockholm. Narrowed to the unread part and restored 2 Nov 2026.",
    "why": "The Directory's secret Prussian policy during the Second Coalition, in Sieyès's own papers.",
    "importance": 4,
    "solvability": 2,
    "difficulty": 3,
    "score_note": "Scored from the archive description during the Oct 2026 Kalliope / FranceArchives sweep (research/central_archives/); not viewed",
-   "verify": "Ask Stadtarchiv Konstanz for P 1839 5/21 and consult AN 284AP/12; look for the 1798 Directory cipher (AE, Bazeries).",
+   "verify": "Consult AN 284AP/12; look for the 1798 Berlin legation cipher table in the AE archives.",
    "links": [
     {
      "label": "Kalliope P 1839 21",
@@ -359,7 +359,7 @@
     "duplicates": "known.py run 2 Nov 2026 on the shelfmark series and correspondents; no catalogue duplicate; the Konstanz letters A 33 11/12 (catalogue 523) are a different group. No duplicate."
    },
    "restored_from": "removed_2026-11-02 #521",
-   "open": "P 1839 5 and the Rivals letter ('déchiffrement manque'). P 1839 21 carries clear text over the cipher and is a crib.",
+   "open": "AN 284AP/12 (Rivals, 10 Oct 1798), decipherment missing. Konstanz 1839/5 is clear (Dudout, #382).",
    "needs": "Scans of both; neither has been seen.",
    "vetting_note": "Cluster of three documents, not one: P 1839 21 has clear text written over the cipher (Kalliope), so it is deciphered on the leaf; P 1839 5 (Berlin 17 Jul 1798, cipher postscript) and the Rivals letter (AN 284AP/12, Cassel 10 Oct 1798, 'dechiffrement manque') are unseen. This pass opened all three volumes of Montarlot and Pingaud, Le Congres de Rastatt (IA lecongrsderast01/02/03montuoft, full text): no Rivals, no Cassel Oct 1798 item and one 'en chiffre' mention, so the edition does not print the Rivals letter. FranceArchives 284AP/12 is behind a JS/cookie gate (curl returns a redirect stub), HathiTrust 102106173 behind Cloudflare, so the inventory line itself was not re-read. known.py: only this row. Needs Chrome: https://francearchives.gouv.fr/fr/facomponent/1136e85496902146877dddc1d3cfd9b284e913ff to quote the Rivals entry, then a split lead for the Rivals letter alone; also Marquant, Les archives Sieyes (1970) and Des manuscrits de Sieyes (Champion) unchecked."
   },
@@ -41372,6 +41372,45 @@
     "duplicates": "known.py 'Gerendi', 'Fasc. 431': only lead 2462 and the D-sweep note that Gerendi 1529 (C.Jel.02-06) is resolved. No catalogue or DECODE entry.",
     "verdict": "read",
     "closed": "Both letters are printed in Schuller, Archiv NF 28 (1898), pp. 453-463 with the cipher passages solved (some in the original beside the cipher, the rest by the editor) and a German translation. The language is Spanish, so the 'spanyol' in the regest is not a mis-regest."
+   }
+  },
+  {
+   "id": 2464,
+   "counted": true,
+   "year": 1785,
+   "date": "3 Dec 1785",
+   "title": "John Adams to John Jay, London 3 Dec 1785, partly in code",
+   "correspondents": "John Adams -> John Jay (Secretary for Foreign Affairs)",
+   "place": "London",
+   "language": "English",
+   "region": "North America",
+   "period": "1701-1800",
+   "shelfmark": "NARA M247 (Papers of the Continental Congress), PCC 84 vol. VI ff. 39-50",
+   "folio_note": "ff. 39-50",
+   "cls": "B",
+   "status": "Closed, existing (Brice Dudout, issue #382, 10 Nov 2026, not checked by the project): the clear text is printed in Papers of John Adams 18 (Founders Online ADMS-06-18-02-0005); the code is the known Jay-Adams code (Weber WE013); already decoded by Satoshi Tomokiyo (Fold3 annotation).",
+   "why": "Adams's London despatch to Jay after the peace.",
+   "importance": 2,
+   "solvability": 5,
+   "difficulty": 1,
+   "score_note": "Recorded from issue #382; not viewed by the project.",
+   "verify": "None needed: decipherment exists (Tomokiyo; clear in Papers of John Adams 18).",
+   "links": [
+    {
+     "label": "Founders Online ADMS-06-18-02-0005",
+     "href": "https://founders.archives.gov/documents/Adams/06-18-02-0005"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Issue #382 (Brice Dudout), 10 Nov 2026",
+   "prior_art": "existing: Satoshi Tomokiyo decoded it (Fold3 annotation on NARA M247); clear printed in Papers of John Adams 18; code Weber WE013.",
+   "ark": "",
+   "scored": "issue",
+   "vetting": {
+    "date": "2026-11-10",
+    "by": "claude (issue #382)",
+    "verdict": "read",
+    "closed": "Already decoded by Satoshi Tomokiyo (Fold3 annotation); clear text printed in Papers of John Adams 18 (ADMS-06-18-02-0005); known Jay-Adams code (Weber WE013). Nothing to add; not a catalogue candidate."
    }
   }
  ]
