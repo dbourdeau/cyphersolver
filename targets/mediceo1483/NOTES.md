@@ -39,7 +39,7 @@ before any decoding: Siena no. 11 96.4 %, MAP LXXII 183 65.3 %, Dieci 1414 49.4 
 - `key/K_SIENA11_D1.tsv` (SHA-256 e98d6e96...): the same plus **D1**, "PLUS ODAG" read as one sign = c. D1 was proposed **after**
   the failed test on 2309, from the decoding "hon / honte / hondutti" where "con / conte / condutti" is expected. It is a derived
   rule, declared as such, and is **not tested** (next section).
-- Signs absent from Lasry's key (DIV 8, TRI 6, OO 2, DPLUS 2 and nine single forms, 3.6 % of the tokens) produce nothing.
+- Signs absent from Lasry's key (DIV 8, TRI 6, OO 2, DPLUS 2, WAVE and nine single forms, 3.6 % of the tokens) produce nothing.
 
 ## Tests of the key (`validation.txt`)
 
@@ -73,6 +73,9 @@ an "intentione" of "el signore", "non potendo", "utile a questo", "in questo mod
 Addressee probably Lorenzo de' Medici; writer not identified. Date: hypothesis only. If conte Carlo is Carlo Fortebraccio
 (d. 1479) and conte Antonio is Antonio da Marsciano, about 1478-79 (Pazzi war); otherwise 1482-85 (War of Ferrara; the filza holds
 papers of 1482-83).
+
+Re-run at integration (10 Nov 2026): decoding the transcriptions with the key files again gives the same 313 letters for the
+XLVIII 294 test portion, and 672 letters for XLVIII 214 against the published 665; the differences are only signs written between dots.
 
 ## Remaining gaps
 
