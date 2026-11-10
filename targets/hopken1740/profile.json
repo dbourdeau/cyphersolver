@@ -119,20 +119,62 @@
    ],
    "what": "Hard-EM segmentation on the 23 K runs with 9 seeds: alignments are not usable (gloss extents too loose). Word-level re-pairing started.",
    "result": "failed"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "transcription",
+   "what": "Word-level pairs re-read from full-size crops by three agents (wordpairs_*.tsv): gloss word, groups under it, segmentation; 2,119 groups.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "solver",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Key from the K lines of 322-325 frozen (key_frozen_322_325.tsv): 147 confirmed, 15 mixed, 67 single.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Held-out test on 326-327: 457 of 598 groups give exactly the piece of the pairing (522 in key); shuffled-key control mean 3.5, max 33 of 500. Not strictly blind: the 326-327 agent had seeds.tsv and could have seen the 324-325 pairs. Rerun after the recheck of doubtful lines (more K lines on 326-327): 525 of 687.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "reading",
+   "what": "Recheck of the 94 doubtful lines with the full key: 63 settled, 31 remain. Final key 190 confirmed / 23 mixed / 87 single. 2,027 of 2,119 groups (95.7%) in confident words. Swedish reading and English translation written.",
+   "result": "worked"
   }
  ],
  "outcome": {
-  "class": "not read",
-  "key": "none",
-  "method": "not solved",
-  "method_basis": "Transcribed only; no key built yet.",
+  "class": "read in part",
+  "key": "partial",
+  "method": "read from existing decipherment",
+  "method_basis": "The reading is the 18th-century Swedish decipherment written over the groups, transcribed word by word; the code list rebuilt from it was frozen on four pages and tested on the other two.",
   "first_break": false,
   "contribution": [
-   "transcription"
+   "transcription",
+   "key recovered"
   ],
   "provenance": "project",
   "verification": [
-   "none"
+   "contemporary decipherment",
+   "matched control"
+  ],
+  "fraction_read": 0.957,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "2,027 of 2,119 groups on images 322-327 lie in words whose digits and reading are both confident (scripts/make_texts.py). The despatch continues on images 321 and 328, not transcribed.",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the chancery decipherer's Swedish written over the groups on images 322-327"
+   }
   ]
  }
 }
