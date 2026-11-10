@@ -4559,6 +4559,24 @@
    "year": 1866,
    "found": 2026,
    "note": "Rebuilt by sense from the cipher runs S01-S32 of AHN Diversos-Colecciones 193 N.99, with the clear words of the reports as context; partial by the contributor's protocol (held-out margins 0.277 and 0.261, under his 0.30 rule). targets/taulet1866/key.tsv."
+  },
+  {
+   "id": "k-army1901-grid",
+   "label": "Japanese General Staff two-digit kana grid, 1901 (Harumi-Matsuba)",
+   "kind": "scholar's key",
+   "by": "Harumi-Matsuba",
+   "year": 1901,
+   "found": 2026,
+   "note": "Tens digit the vowel row, units digit the consonant column; lower half 01-50, upper half 51-95 (p m y r), 55 wa, 65 n; rebuilt from three words guessed from the clear romaji of the 1901 drafts to Fukushima."
+  },
+  {
+   "id": "k-army1901-incoming",
+   "label": "Japanese Army serial kana table of the 1901 incoming telegrams (Harumi-Matsuba)",
+   "kind": "scholar's key",
+   "by": "Harumi-Matsuba",
+   "year": 1901,
+   "found": 2026,
+   "note": "Syllabary by vowel rows, voiced kana after the plain one, numbered 00 (a) to 67 (n); rebuilt from telegrams of officers in China whose translations were filed with them (issue #371)."
   }
  ],
  "links": [
@@ -7339,6 +7357,18 @@
    "target": "taulet1866",
    "how": "rebuilt from",
    "note": "rebuilt from the copybook's own cipher runs and tested once on a held-out run and once on new material (N.94); reads all 144 cipher words of both documents"
+  },
+  {
+   "key": "k-army1901-incoming",
+   "target": "army1901in",
+   "how": "rebuilt from",
+   "note": "Rebuilt by the contributor from five telegrams and their filed translations; re-implemented here (decode.py)."
+  },
+  {
+   "key": "k-army1901-grid",
+   "target": "army1901",
+   "how": "rebuilt from",
+   "note": "Rebuilt by the contributor from cribs in the clear romaji of the drafts; re-implemented here (decode.py)."
   }
  ],
  "sources": [
@@ -9770,6 +9800,21 @@
    "key": "k-brah915-keybook",
    "target": "lannoy1527",
    "note": "BRAH 9/15 key book looked through for these groups: Ferdinand-era tables, no match"
+  },
+  {
+   "key": "k-army1902-table",
+   "target": "army1901in",
+   "note": "does not read C09122806100 (army1902 NOTES; contributor)"
+  },
+  {
+   "key": "k-army1901-incoming",
+   "target": "army1901",
+   "note": "21 of 148 pairs out of range, the rest give no words (decode.py)"
+  },
+  {
+   "key": "k-army1902-table",
+   "target": "army1901",
+   "note": "does not read the 1901 drafts (contributor)"
   }
  ]
 }
