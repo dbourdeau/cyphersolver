@@ -1,0 +1,183 @@
+{
+ "schema_version": 1,
+ "target": "sega1591b",
+ "title": "Sega 1591b: Filippo Sega, Bishop of Piacenza, Paris, early January 1591, duplicate (AAV Francia 32, ff. 49v-54v), read in part with Meister key 65",
+ "documents": [
+  {
+   "id": "aav-francia32-f49v-54v",
+   "read": "read in part",
+   "shelfmark": "Archivio Apostolico Vaticano, Segreteria di Stato, Francia 32, ff. 49r-54v (enciphered part ff. 49v-54v)",
+   "date": "early January 1591",
+   "year": 1591,
+   "country": "France",
+   "route": "Paris -> Rome",
+   "places": {
+    "from": "Paris",
+    "to": "Rome"
+   },
+   "language": "Italian",
+   "pages": 12,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No contemporary decipherment of this letter in the DECODE records of Francia 32 (R5612-R5618, R5621)."
+   },
+   "length": {
+    "tokens": 5293,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE R5615 (images of AAV Francia 32)",
+    "image_quality": "fair",
+    "notes": "88 blocks, each frozen before decoding; pale ink and show-through on ff. 51v-54v; several signs not in the printed key (listed in reading.md)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "Meister key 65: letters as digit pairs, vowels as signs on the pair or on a single digit, nulls, code letters and symbols for common words, three-digit nomenclator",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": 22,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "common words",
+    "names",
+    "titles"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment of this letter in the Francia 32 records on DECODE; no edition of Sega's 1590-1591 dispatches found (checked 29 Oct 2026).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "published key",
+   "cleartext context"
+  ],
+  "attack": "published key",
+  "first_date": "2026-10-29",
+  "last_date": "2026-10-29",
+  "human_role": "Brice Dudout chose the target from the catalogue and set the rules (frozen key before validation, held-out checks, prior-work search the day of publication); AI agents transcribed, solved, checked and wrote up. Doubtful signs were settled by targeted visual review where stated.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10-29",
+   "kind": "key from source",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Meister key 65, as identified for Sega by Lasry (sega1591) and validated for sega1590 on the decifrato of 21 Dec 1590 (0.934 / 0.862 vs at most 0.551 / 0.492).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Whole enciphered part, ff. 49v-54v: 88 blocks, each transcribed and frozen before decoding with key 65 unchanged, read by sense; one final count at the end of the letter: 1,091 of 1,319 words read in their sense (82.7%).",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "not applicable",
+  "method": "read with known key",
+  "method_basis": "Published historical key (Meister 1906, no. 65) applied unchanged, validated on a held-out letter of the same series with a contemporary decipherment (see targets/sega1590).",
+  "contribution": [
+   "transcription"
+  ],
+  "fraction_read": 0.827,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.md: enciphered words of ff. 49v-54v, 1,319 words: 886 certain + 205 probable read in their sense (1,091), 3 restored and 225 unresolved counted unread.",
+  "first_break": true,
+  "verification": [
+   "contemporary decipherment",
+   "historical consistency"
+  ],
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "new cipher with solution",
+    "note": "duplicate of early Jan 1591 (Francia 32 ff. 49v-54v, DECODE R5615) transcribed in 88 frozen blocks and read in part with Meister key 65 (82.7%); English translation",
+    "date": "2026-11-10"
+   },
+   {
+    "who": "meister",
+    "role": "key or decipherment used",
+    "note": "Meister 1906, key no. 65 (pp. 435-436)",
+    "date": "1906"
+   },
+   {
+    "who": "lasry",
+    "role": "pointer",
+    "note": "identified Meister key 65 for Sega (targets/sega1591)"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "aav-francia32-f49v-54v",
+    "label": "Sega, Paris, early Jan 1591 (duplicate), enciphered part ff. 49v-54v",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "it",
+    "state": "read in part",
+    "summary": "Sega on League Paris under Navarre's blockade: passports that angered Navarre, Cardinal de Gondi refusing the oath, Brissac's mission, a request for troops and victuals, Saint-Denis, plots at Orleans, Nantes and Chalon, a divided Union and the plan to put Paris under the protection of the Holy See.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-11-10",
+     "note": "Read as sentences from reading.md and translation.md (not re-deciphered, not re-checked against the images): ff. 49v-51r read as continuous Italian sentences with scattered holes; from f. 51v the sentences keep their sense but holes are frequent and kept in place; translation bracketed where the cipher is not read."
+    }
+   }
+  ],
+  "gaps": [
+   {
+    "item": "225 unresolved words, mostly ff. 51v-54r",
+    "blocker": "needs-physical-access",
+    "detail": "pale ink and show-through on the DECODE study images; a better image or the original at the AAV is needed"
+   },
+   {
+    "item": "signs absent from Meister's printed key (long s with a crook x6, delta at the head of a clause, single marks)",
+    "blocker": "open-codes",
+    "detail": "kept unresolved rather than guessed"
+   },
+   {
+    "item": "end of the letter (copy stops at the foot of f. 54v)",
+    "blocker": "needs-physical-access",
+    "detail": "no original or decifrato of this letter among the DECODE records of Francia 32"
+   }
+  ],
+  "key_file": "key.tsv",
+  "provenance": "contributed"
+ }
+}
