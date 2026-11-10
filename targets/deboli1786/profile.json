@@ -1,0 +1,217 @@
+{
+ "schema_version": 1,
+ "target": "deboli1786",
+ "title": "Deboli to King Stanisław August, St Petersburg, 12 Sep 1786 (AGAD Zbiór Popielów 2, scan 146): first page in table 3865 read in part with our key K3 (partial; partial reading explained)",
+ "documents": [
+  {
+   "id": "zbpop2-146",
+   "read": "read in part",
+   "shelfmark": "AGAD Warsaw, Zbiór Popielów (zesp. 12), sygn. 2, scan 146 right",
+   "date": "12 Sep 1786 (received 22 Sep)",
+   "year": 1786,
+   "country": "Russia",
+   "route": "Antoni Augustyn Deboli, Polish envoy in St Petersburg -> King Stanisław August",
+   "places": {
+    "from": "St Petersburg",
+    "to": "Warsaw"
+   },
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "separate collection"
+    ],
+    "source": "AGAD AKP 1/11/0/-/269 ('Deboli' 1786-87), scans 253 right - 254: the cabinet's clear of the despatch, opened only after the decoding with the frozen key was hashed; used for the measurement and the restorations, not published here.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 227,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription/z2_146.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "AGAD scans (szukajwarchiwach; images not reproduced)",
+    "image_quality": "fair",
+    "notes": "Transcribed once on the scan after the protocol was hashed and before the clear was opened; a fair copy, no corrections; one mark under 1411 not noted; catchword and pencil margin numbers excluded."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code",
+   "nomenclator"
+  ],
+  "summary": "Table 3865: one-part code of 1-4 digit groups for letters, syllables, endings, words and names; openers 3865 and 9, nulls (7, 12 ...); suffixed variants (a, b, x, z) with their own values; alphabet without j, v, y. No key of the time found.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-4",
+   "separation": "spaces"
+  },
+  "distinct_symbols": 1287,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "syllables",
+    "word parts",
+    "common words",
+    "names",
+    "titles"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "random",
+  "word_division": "none",
+  "notes": "Used by Deboli in 1786-87 beside the older code ZbPop 444 (targets/deboli1787) and tables 9933 and 12282; in 1786 pieces opening '9933' are often 3865 after a heading of 30-55 groups."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The cabinet's clear texts of 1786-87 are in AGAD AKP 1/11/0/-/269 (scans 253-254 for this despatch). Unprinted: the IH PAN edition of Deboli's correspondence stops at 1782. No key of 3865 in this repository or elsewhere; catalogue 415 open, no target for it on origin/main (GitHub API, 10 Nov 2026).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Brice Dudout obtained the scans and set the rules (each round pre-registered and hashed, thresholds fixed in advance, one measurement per round, held-out ciphers hashed before their clears were opened, strict re-reading rule of 10 Nov 2026). AI agents transcribed, learnt the key, measured, read and summarised. No human palaeographer checked the transcription or the reading.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-11-06",
+  "last_date": "2026-11-10"
+ },
+ "solution": [
+  {
+   "date": "2026-11-06",
+   "kind": "transcription",
+   "what": "ZbPop 2 and 3 sorted by system; table 3865 identified; learning pieces transcribed and paired with their clears in AKP 269.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "solver",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Key learnt by script on the pairs (K1, K2, K3); held-out rounds R1 0.591, R2 0.598 (against 0.60), R3 0.519 (a corrected draft enciphered in its first state): failed.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "R4: key K3 unchanged, one measurement on the held-out fair copy Z2-146: 0.645 of the words of the clear, best of 200 shuffled keys 0.020 (margin 0.625); partial (validated needs 0.85).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "reading",
+   "what": "Strict re-reading group by group against the clear: 163 certain, 33 probable, 17 restored, 6 unresolved of 219 groups (89.5% without the restored).",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on plaintext from external sources",
+  "method_basis": "Key K3 learnt on pairs of cipher despatches and the cabinet's clears of the time (AKP 269); one held-out measurement on this page, partial by our protocol. The content is the cabinet's clear (existing); the system, the key table and the checked reading are the contribution.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "verification": [
+   "statistical test",
+   "contemporary decipherment"
+  ],
+  "validation": {
+   "date": "2026-11-10",
+   "verdict": "weak",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): 0.645 of words vs at most 0.020 for 200 shuffled keys (margin 0.625), under the 0.85 set in advance: partial. Earlier rounds 0.591, 0.598 and 0.519 failed; on clean copies K3 levels off at 0.63-0.65 (truncated values)."
+  },
+  "fraction_read": 0.895,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading/z2_146.md, counted by group: 163 certain + 33 probable = 196 of 219 groups; 17 restored from the clear and 6 unresolved not counted.",
+  "provenance": "mixed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "the King's cabinet: clear texts of 1786-87 in AGAD AKP 269 (this despatch: scans 253-254), from which K3 was learnt and against which it was measured",
+    "date": "1786"
+   },
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "note": "table 3865 identified; Z2-146 and the learning pieces transcribed; key K3 learnt on pairs (partial, 0.645 vs 0.020 held out); page read in part 89.5% with a strict group-by-group review",
+    "date": "2026-11-10"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "catalogue entries 415/416, the deboli1788-1791 targets and the leads on Deboli's despatches and AKP 269",
+    "date": "2026-10-21"
+   },
+   {
+    "who": "agad",
+    "role": "pointer",
+    "note": "Archiwum Główne Akt Dawnych: Zbiór Popielów (zesp. 12) sygn. 2 (the cipher, scan 146) and Archiwum Królestwa Polskiego (zesp. 11) 269 (the clear of the time); scans on szukajwarchiwach, not reproduced",
+    "date": "2026-11-10"
+   }
+  ],
+  "key_file": "key/key3865_K3.tsv",
+  "gaps": [
+   {
+    "item": "6 unresolved and 17 restored groups on the page",
+    "blocker": "open-codes",
+    "detail": "774, 3527, 77x, 1039, 2036a, 279 unresolved; restored values suggested by the clear (1647 ViceChancelier, 2255 so, 3551a uniformité, 3778 y ...) not added to K3"
+   },
+   {
+    "item": "K3 not validated (0.645 against 0.85)",
+    "blocker": "open-codes",
+    "detail": "truncated values cap the measure on clean copies at 0.63-0.65; a new key needs new pairs and a new held-out piece"
+   },
+   {
+    "item": "the rest of the despatch (scan 147) and the other 3865 pieces of ZbPop 2 and 3",
+    "blocker": "open-codes",
+    "detail": "K3 is partial; unread pieces are kept unopened as held-out material for the next key"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "zbpop2-146",
+    "label": "Deboli, 12 Sep 1786, first page (scan 146 right)",
+    "transcription": "transcription/z2_146.txt",
+    "decryption": "decryption/z2_146.txt",
+    "reading": "reading/z2_146.md",
+    "translation": "translation.md",
+    "language": "fr",
+    "state": "read in part",
+    "read_share": 0.895,
+    "summary": "Deboli has handed Vice-Chancellor Ostermann his written observations on Prince Czartoryski's memorandum and sends them to the King, with a passage added for Ambassador Stackelberg, whose agreement is the condition for success in St Petersburg; Sedler presented the memorandum only on the Sunday.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "date": "2026-11-10",
+     "note": "Re-read group by group as French sentences on 10 Nov 2026 against the clear of the time (AKP 269 scans 253-254), strict rule: certain = K3 value equals the clear letter by letter, sense-only readings probable; 163 certain, 33 probable, 17 restored, 6 unresolved of 219 groups (89.5%); read in part; key K3 partial (0.645 vs 0.020)."
+    }
+   }
+  ],
+  "notes": "Partial reading explained. Content existing (the cabinet's clear in AKP 269); no images (AGAD: private research only); the clear of the time is not reproduced, only the reading made with the key."
+ }
+}

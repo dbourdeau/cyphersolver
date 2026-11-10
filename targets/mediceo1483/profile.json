@@ -1,0 +1,217 @@
+{
+ "schema_version": 1,
+ "target": "mediceo1483",
+ "title": "Undated cipher letter, probably to Lorenzo de' Medici (ASF Mediceo avanti il Principato XLVIII 214r, catalogue 2309): the Siena no. 11 cipher identified, read in part with George Lasry's key (partial; partial reading explained)",
+ "documents": [
+  {
+   "id": "map-xlviii-214",
+   "read": "read in part",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza XLVIII, doc. 214 (old c. 222), recto; riproduzione id 60059",
+   "date": "undated (hypothesis from the content: about 1478-79 or 1482-85; the filza holds papers of 1482-83)",
+   "year": 1483,
+   "country": "Florence",
+   "route": "unknown writer -> probably Lorenzo de' Medici",
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaf or filed with it; one clear phrase 'Poi un altra volta' in line 3.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 787,
+    "distinct": 52,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription/xlviii214.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "ASF MAP image at 1272 px (IIIF maximum; images not reproduced)",
+    "image_quality": "fair",
+    "notes": "16 lines transcribed by shape with the sign names of targets/siena11/transcripts/no11.txt plus new names for 14 forms not in it; the transcriber had seen Lasry's key before transcribing (declared), shapes first, never the sense."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "The Siena no. 11 cipher (Florentine, Medici chancery): homophonic substitution with invented signs, letters and numerals, the same nulls 'g#', '31' and '87'; 52 sign types in 2309, 14 of them (3.6 % of the tokens) not in George Lasry's key.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 52,
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "sibling_key": "siena11 (George Lasry's key of Siena no. 11, Acciaiuoli 1478); the same sign family is used by Bernardo Rucellai in XLVIII 294 (Feb 1485)",
+  "notes": "Sign-set coverage of the 2309 tokens before decoding: Siena no. 11 96.4 %, MAP LXXII 183 65.3 %, Dieci 1414 49.4 %, CXIX 117 39.0 %."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment on the leaf or in the inventory; web search of 10 Nov 2026 found nothing on MAP XLVIII 214; Marco Vito's work concerns letters of 1486-1491; catalogue 2309 open, no target for it on origin/main.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "sibling key",
+   "published key"
+  ],
+  "attack": "sibling key",
+  "human_role": "Brice Dudout set the rules (each step pre-registered and hashed, thresholds fixed in advance, one measurement per test). AI agents compared the sign set with the known keys, transcribed, measured and read. No human palaeographer checked the transcription or the reading.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-11-10",
+  "last_date": "2026-11-10"
+ },
+ "solution": [
+  {
+   "date": "2026-11-10",
+   "kind": "transcription",
+   "what": "16 lines, 787 tokens transcribed by shape in the sign names of targets/siena11; the sign set and the nulls g#, 31, 87 identified as those of Siena no. 11.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Sign-set coverage by four keys (Siena no. 11 96.4 %, LXXII 183 65.3 %, Dieci 1414 49.4 %, CXIX 117 39.0 %); Siena no. 11 and LXXII 183 tried on lines 1-5 (M5 0.1593 against 0.0000); Lasry's key chosen and frozen unchanged.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One pre-registered measurement on lines 6-16 of 2309 (no clear exists): Italian word measure M5 0.2335 against at most 0.0719 for 200 shuffled keys, margin 0.16 under 0.30: not validated.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Held-out test on another letter of the family, XLVIII 294 c. 306v l. 1-9, against its clear of the time c. 276 (amendment A1 declared): letter agreement 0.6419 against at most 0.2045 for 200 shuffled keys, margin 0.437; partial (0.85 not reached). The portion contains no 'PLUS ODAG', so the derived rule D1 was not exercised.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "reading",
+   "what": "2309 read word by word with K_SIENA11_D1: 39 certain, 13 probable, 11 restored words, 45 unresolved stretches; about 35-40 % of the letter read.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "read after matching with key from external sources",
+  "method_basis": "The sign set of 2309 matches Siena no. 11; George Lasry's key of that letter (targets/siena11) was applied unchanged, plus one derived rule D1 that is declared and untested. The key failed a test on 2309 itself and is partial on a held-out letter of the same family (XLVIII 294 against its clear c. 276).",
+  "contribution": [
+   "transcription",
+   "decipherment with ambiguous key"
+  ],
+  "verification": [
+   "statistical test"
+  ],
+  "validation": {
+   "date": "2026-11-10",
+   "verdict": "weak",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered tests (not docs/_validate.py). On 2309 itself: M5 0.2335 vs at most 0.0719 for 200 shuffled keys, margin 0.16 under 0.30: not met (failed). Held out on XLVIII 294 c. 306v against its contemporary clear c. 276: 0.6419 vs at most 0.2045, margin 0.437, under the 0.85 set in advance: partial. D1 ('PLUS ODAG' = c) not exercised by either test."
+  },
+  "fraction_read": 0.35,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "reading/xlviii214.md: certain + probable words cover about 33 % of the 665 decoded letters, about 43 % with the restored words; stated as about 35-40 %.",
+  "provenance": "mixed",
+  "credits": [
+   {
+    "who": "lasry",
+    "role": "key or decipherment used",
+    "note": "George Lasry's key of Siena no. 11 (report of 17 Oct 2026, targets/siena11), applied unchanged to 2309 and to XLVIII 294; the key is his",
+    "date": "2026-10-17"
+   },
+   {
+    "who": "dudout",
+    "role": "identification",
+    "note": "the sign set of catalogue 2309 (MAP XLVIII 214) identified as the Siena no. 11 cipher; transcription (787 tokens); Lasry's key tested (failed on 2309 itself, partial 0.6419 vs 0.2045 on XLVIII 294 against c. 276); letter read in part, about 35-40 %",
+    "date": "2026-11-10"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "catalogue entry 2309 and its vetting (n08), and the note of vetting n18 that XLVIII 294 has its clear filed at c. 276 in the same sign family",
+    "date": "2026-11-06"
+   },
+   {
+    "who": "asf",
+    "role": "pointer",
+    "note": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza XLVIII (214; 294 and c. 276); images on the MAP site, not reproduced",
+    "date": "2026-11-10"
+   }
+  ],
+  "key_file": "key/K_SIENA11.tsv",
+  "gaps": [
+   {
+    "item": "about 60-65 % of the letter (45 unresolved stretches, 11 restored words)",
+    "blocker": "open-codes",
+    "detail": "the text decodes with Lasry's key but long stretches do not read as words; 14 sign forms of 2309 are not in his key"
+   },
+   {
+    "item": "D1 ('PLUS ODAG' = c) untested",
+    "blocker": "open-codes",
+    "detail": "needs a held-out portion of the family containing 'PLUS ODAG' with its clear (e.g. 294 c. 306r against the lower part of c. 276r, partly seen)"
+   },
+   {
+    "item": "key partial (0.6419 against 0.85); transcription at 1272 px",
+    "blocker": "needs-physical-access",
+    "detail": "a higher-resolution image of XLVIII 214 from the ASF would settle doubtful forms"
+   },
+   {
+    "item": "date, writer and addressee",
+    "blocker": "open-codes",
+    "detail": "nothing on the leaf; conte Antonio and conte Carlo do not settle the date (1478-79 or 1482-85)"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "map-xlviii-214",
+    "label": "ASF MAP XLVIII 214r, undated cipher letter (catalogue 2309)",
+    "transcription": "transcription/xlviii214.txt",
+    "decryption": "decryption/xlviii214_D1.txt",
+    "reading": "reading/xlviii214.md",
+    "translation": "translation.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.35,
+    "summary": "Fragments of a letter, probably to Lorenzo de' Medici, about condottieri and their contracts: Count Antonio and Count Carlo, dealings in Venice, a sum of 15,000 ducats, a 'liberation', an intention of 'the lord'; one clear phrase 'Poi un altra volta'.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "date": "2026-11-10",
+     "note": "Read word by word as Italian on 10 Nov 2026 on the decoding with K_SIENA11_D1: 39 certain, 13 probable, 11 restored words, 45 unresolved stretches, about 35-40 % read; read in part; key partial (failed on 2309, 0.6419 vs 0.2045 held out on XLVIII 294); D1 untested."
+    }
+   }
+  ],
+  "notes": "Partial reading explained. The key is George Lasry's; our part is the identification of the cipher of 2309, the transcription, the tests and the partial reading. No images (ASF): text only; the clear of c. 276 is not reproduced."
+ }
+}
