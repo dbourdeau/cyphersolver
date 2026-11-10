@@ -1,0 +1,41 @@
+taulet1866 - validation (contributor's pre-registered held-out test, not docs/_validate.py), 9 Nov 2026
+
+Result: CRITERION NOT MET. The key is "partial" by our own rule.
+
+Protocol P01 (frozen/PROTOCOLE.md, in French, SHA-256 499d1f02...; hashes in frozen/SHA256SUMS), written before any
+number was transcribed or tried:
+- units: a "run" = a continuous sequence of numbers between two clear passages; S01-S33 in the order of the views;
+- held-out set H = the run(s) of the telegram after its last clear "V.S." (S33, 51 numbers); learning set T = all other
+  runs (S01-S32); power floor: H >= 30 numbers;
+- transcription of all runs frozen by SHA-256 (frozen/transcription.txt, 0c211566...) before any key was built; H
+  transcribed last, mechanically, without any attempt to read it;
+- key K_T built on T only and frozen (frozen/KEY.tsv, 0f174dd7...) before H was decoded;
+- ONE measurement (frozen/measure.py, cc27e1cf..., hashed with the protocol before it was run):
+  car = share of the decoded letters of H covered by a maximum-coverage segmentation into words of
+  lang/lexicons/es.json.gz (count >= 2, length >= 2) plus {a, y, o, e} and a fixed list of place and person names;
+  controls = 200 keys made by permuting the values of K_T among its numbers (seed 2444); reference = best control;
+  VALIDATED if car >= 0.85 AND car >= best control + 0.30 AND H >= 30 numbers.
+
+Result (frozen/MESURE.txt, SHA-256 84bb1df8...):
+  H = S33, 51 numbers; decode "acambrilsconsuprimerbatallondecuentadehabersealojado"
+  car 0.981; best of 200 controls 0.704; margin 0.277 -> under 0.30: NOT VALIDATED (partial).
+  Word agreement 0.000 (reported, not decisive: the system has no word divider, so H is one "word").
+
+Why the margin is short: the controls permute a homophonic key rich in vowels, scored against a lexicon of short
+Spanish words, so a random key already covers 70% of the letters; and H is short (51 numbers). We report the rule as it
+was written: not met.
+
+H is burned. No other unseen cipher exists in this unit, so no further measurement is possible here.
+
+Declared leaks:
+- while transcribing T (S03-S04, S12-S17) the transcriber read some values by eye (21-70-64-27-21 "ahora",
+  25-11-81-70-21 "fecha") BEFORE the transcription was frozen. This affects T only; H was transcribed last, mechanically.
+- before transcription the transcriber saw that the end-of-report runs repeat (idea, not tested, that they code a
+  formula).
+
+External agreement (after the measurement, not decisive): a clear telegram of the same day (view 51, Tarragona, general
+Manso de Zúñiga) orders Taulet's battalion to Vilaseca, "donde quedará alojado"; the cipher telegram says "a Cambrils con su
+primer batallón, dé cuenta de haberse alojado". The 16 end-of-report runs all decode to the day of the week matching the
+1866 calendar (historical consistency, inside T).
+
+No new measurement was made for this pull request (10 Nov 2026).

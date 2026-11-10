@@ -1,0 +1,187 @@
+{
+ "schema_version": 1,
+ "target": "taulet1866",
+ "title": "Copybook of colonel Bernardo Taulet, Jalet (Falset), Jan-Mar 1866 (AHN Diversos-Colecciones 193 N.99): homophonic letter cipher, key partial by our protocol, read in part",
+ "documents": [
+  {
+   "id": "ahn-dc-193-n99",
+   "read": "read in part",
+   "shelfmark": "Madrid, Archivo Histórico Nacional, DIVERSOS-COLECCIONES,193,N.99 (PARES 5928106), views 25-42 (reports 18-55) and 52-53 (telegram)",
+   "date": "27 January - 7 March 1866",
+   "year": 1866,
+   "country": "Spain",
+   "route": "Lieutenant colonel Bernardo Taulet (Jalet canton, Priorato columns) -> military government of Tarragona; telegram from Reus to Taulet",
+   "places": {
+    "from": "Jalet (Falset), Tarragona province",
+    "to": "Tarragona"
+   },
+   "language": "Spanish",
+   "pages": 54,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaves; the cipher runs are set in clear Spanish reports.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 312,
+    "unit": "code groups",
+    "measured": false,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "PARES images (AHN), not reproduced",
+    "image_quality": "good",
+    "notes": "One AI transcription of all 33 runs, frozen by SHA-256 before any key was built; the held-out run S33 transcribed last, mechanically. No human palaeographer."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Homophonic substitution of letters by 2-digit numbers (10-92), 36 numbers, no word divider, set inside clear Spanish; ll and ñ have their own numbers; the run at the end of each report is the day of the week.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 36,
+  "diacritics": {
+   "used": false,
+   "note": "ñ and ll are cipher units"
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "none",
+  "notes": "Day-of-week check word at the end of each daily report, consistent with the 1866 calendar in all 16 cases."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment on the leaves; catalogue 2444 open (pointer in issue #367, 9 Nov 2026); 'Taulet' and '5928106' only in catalogue and sweep/vetting files; nothing in known.py; no edition found in two web searches.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "first_date": "2026-11-09",
+  "last_date": "2026-11-10",
+  "human_role": "Brice Dudout chose the target and set the rules (held-out set, threshold and measuring script frozen before decoding, one measurement) and approved publication as read in part although the margin rule was not met. AI agents transcribed, rebuilt the key, measured, read and wrote up. No human checked the transcription or the reading.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-11-09",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "contextual inference",
+    "repeat/pattern analysis",
+    "manual reconstruction"
+   ],
+   "what": "Key K_T rebuilt by sense on S01-S32 (clear context of each report, repeated end-of-report runs read as days of the week), frozen by SHA-256.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One pre-registered measurement on the held-out run S33 (51 numbers): lexicon coverage 0.981 vs best of 200 shuffled keys 0.704, margin 0.277; rule car >= 0.85 and margin >= 0.30: not met.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "reading",
+   "what": "Read by sense: 76 cipher words, 71 certain, 5 probable, 0 restored, 0 unresolved.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Key rebuilt here from the cipher, with the clear words of the reports as context; one pre-registered held-out measurement fell short of the contributor's margin rule (0.277 < 0.30), so the key is 'partial' although it reads every run.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.934,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "reading.md: 76 cipher words, 71 certain, 5 probable, 0 restored, 0 unresolved; 0.934 = certain only (76/76 = 1.0 with probable words, Daniel's rule). Classed 'read in part' because the key failed our own validation rule.",
+  "verification": [
+   "statistical test",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-11-09",
+   "verdict": "weak",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): transcription, key and measuring script frozen by SHA-256 before the held-out run S33 (51 numbers) was decoded; one measurement. car 0.981, best of 200 shuffled keys 0.704, margin 0.277. Criterion (car >= 0.85 and margin >= 0.30): NOT MET, key partial. H burned, no other unseen cipher in the unit. Declared leak: values of T read by eye before the transcription was frozen (T only)."
+  },
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "transcription, key rebuilt (partial by our protocol: held-out 0.981 vs 0.704, margin 0.277 < 0.30), all 76 cipher words read by sense (71 certain, 5 probable), translation",
+    "date": "2026-11-10"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "catalogue entry 2444 (PARES sweep of AHN Diversos-Colecciones) and its vetting",
+    "date": "2026-11-09"
+   },
+   {
+    "who": "ahn",
+    "role": "pointer",
+    "note": "Archivo Histórico Nacional: the copybook (DIVERSOS-COLECCIONES,193,N.99), described on PARES as containing cipher documents, images online on PARES (5928106)",
+    "date": "2026-11-09"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Key not validated (held-out margin 0.277 under the 0.30 rule)",
+    "blocker": "too-short",
+    "detail": "the held-out run has 51 numbers and no other unseen cipher remains in the unit; fresh cipher under the same key (other 1866 papers of the same command) would allow a new test"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "ahn-dc-193-n99",
+    "label": "reports 18-55 (27 Jan - 14 Feb 1866) and telegram from Reus (7 Mar 1866): cipher runs in clear reports",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.934,
+    "summary": "Taulet, hunting the rebels of the January 1866 rising in the Priorato, reports that the brother-in-law of the rebel Saguete has brought him a dispatch and that they have come to an understanding; most people say Sagueta has gone to Madrid or Barcelona to obtain a pardon. The end-of-report runs give the day of the week. A telegram of 7 Mar 1866 orders Taulet to march to Cambrils with his first battalion and report when quartered.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "date": "2026-11-10",
+     "note": "Read as sentences 9 Nov 2026 by one AI reader and rechecked 10 Nov 2026 before publication: every cipher run construes as Spanish inside the clear reports; 71 certain, 5 probable (one number corrected by sense each), 0 restored, 0 unresolved of 76. Grade B, read in part, because the key is partial by our own protocol (margin 0.277 < 0.30)."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "key.tsv (CC BY 4.0) is partial by our protocol; it reads all runs. No image of the AHN/PARES copybook is included."
+ }
+}
