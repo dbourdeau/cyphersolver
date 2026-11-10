@@ -2546,6 +2546,12 @@ PAGES = [
          blurb='Adams&rsquo;s coded despatches to Washington are not in Armstrong&rsquo;s code, as the Madison editors say, but in his own (the = 1385). Its key was recovered to 1,166 numbers from the State Department clerk&rsquo;s interlinear decodes on NARA M35 reel 3 and Ford&rsquo;s printed decipherments of other despatches. With it the passages of No. 88 that Ford printed as &ldquo;not decyphered&rdquo; decrypt, 380 of 390 groups: Rumyantsev&rsquo;s strokes at Wilna and Kurakin&rsquo;s note.',
          quote='&ldquo;such a proposal as France had never thought of making to Russia even after the battle of Friedland.&rdquo;',
          rights='Microfilm images: National Archives and Records Administration'),
+    dict(slug='taulet1866', label='Taulet copybook, Jalet 1866', year='1866', y=1866.1, place='Jalet (Falset) &rarr; Tarragona', st='solved', stt='key from the ciphertext',
+         title='Bernardo Taulet&rsquo;s copybook and letters received, Jalet (Falset), January&ndash;March 1866',
+         blurb='Short runs of two-digit numbers set inside the daily reports of a column commander hunting the rebels of the January 1866 rising in the Priorato, and inside letters he received. Brice Dudout rebuilt the homophonic letter key from the cipher and read all 144 cipher words; by his own pre-registered rule the key stays partial (held-out margins 0.277 and 0.261, under 0.30). The Minister of War orders that Escoda and Sagueta be taken at all costs.',
+         quote='&ldquo;se me presenta el cu&ntilde;ado de Saguete con el pliego&rdquo;',
+         author='Brice Dudout',
+         rights='Archivo Hist&oacute;rico Nacional, Madrid, DIVERSOS-COLECCIONES,193,N.99 and N.94 (PARES); no image reproduced'),
     dict(slug='pigeongrammes1870', label='Inspectors&rsquo; code, Paris siege 1870', year='1870', y=1870.84, place='Tours &rarr; Paris', st='stuck', stt='attempted, not read',
          title='The inspectors&rsquo; code of the Paris siege: Steenackers to Mercadier, 2 November 1870',
          blurb='A pigeon telegram from the director general of telegraphs at Tours to the director of telegraphs in besieged Paris, in the telegraph inspectors&rsquo; code mixed with clear words, from Alexandre Pillon&rsquo;s collection: 736 coded groups, 437 clear words. The table is an alphabetical lexicon (13 syllable values fit their positions to about 0.015, a random mapping 0.33) and names spelled between beacon groups decode (Steenackers, Mercadier, pigeons, Trochu), but only 20 hand-assigned entries are supported, 12.5% of 608 coded groups; an acceptance engine rolled back its false acceptances and accepted nothing, and no second text exists to test on.',
@@ -3038,6 +3044,12 @@ PAGES = [
          blurb='A religious book, Navarre at Christmas Mass, and plans for an undertaking at Tours.',
          quote="Che Lignerac è stato inuiato d'ordine di Umena in Poitu et Bretagna a solecitar la impresa",
          author='George Lasry'),
+    dict(slug='sega1591b', label='Filippo Sega, Paris, January 1591 (duplicate)', year='1591', y=1591.02, place='Paris &rarr; Rome', st='partial', stt='read in part',
+         title='Filippo Sega to Rome, Paris, early January 1591 (duplicate, Francia 32 ff. 49v&ndash;54v)',
+         blurb='The duplicate of a letter of the nuncio Filippo Sega from League Paris under Navarre&rsquo;s blockade, almost entirely in cipher over eight pages (AAV, Segreteria di Stato, Francia 32). Brice Dudout applied Meister&rsquo;s key no. 65 unchanged and read 1,091 of 1,319 enciphered words (82.7%); the denser pages and the end of the copy stay open.',
+         quote='&ldquo;Dio volese che questo solo fose il fondamento della sua speranza&rdquo;',
+         author='Brice Dudout',
+         rights='Archivio Apostolico Vaticano, Segreteria di Stato, Francia 32, via DECODE (no image reproduced)'),
     dict(slug='sessa1597', label='Philip II / Archduke Albert to Duke of&hellip;', year='1597', y=1597.0, place='BnF Français 23054', st='partial', stt='read in part',
          title='Philip II / Archduke Albert to Duke of Sessa / Philip II, 31 March 1597 / 25 August 1596',
          blurb='Philip II discusses Ottoman negotiations, aid to Transylvania and the Emperor, and the conversion of Condé’s mother. An earlier letter reports the capture of Hulst and payments to the army.',
@@ -4693,3 +4705,5 @@ IMAGES['batavia1800'] = None
 IMAGES['azuares1837'] = None
 IMAGES['toledo1479'] = None
 IMAGES['agad131'] = None
+IMAGES['taulet1866'] = None
+IMAGES['sega1591b'] = None

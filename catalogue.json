@@ -26798,7 +26798,7 @@
    "shelfmark": "AAV, Segreteria di Stato, Francia 32 (i. 1025, doss. 32), ff. 15-232 (letters and cifre of 26 Nov - 21 Dec 1590)",
    "folio_note": "DECODE R5612-R5621, ten records of 6-11 pp.; status N/A",
    "cls": "B",
-   "status": "DECODE R5612-R5621 'N/A'. CATALOGUE.md (line 61) mentions this as 'catalogue 297: Meister and morosini1588 keys to try', but catalogue.json has no live entry 297 and no R5612-R5621 anywhere else in the repo. Only R5617/R5621 are named in bagno1652 NOTES as unrelated neighbours. Unchecked as of 28 Oct 2026: the 'online' tag is inferred from the DECODE record (images not opened, DECODE needs a login); some N/A records may be key sheets or clear text.",
+   "status": "DECODE R5612-R5621 'N/A'. CATALOGUE.md (line 61) mentions this as 'catalogue 297: Meister and morosini1588 keys to try', but catalogue.json has no live entry 297 and no R5612-R5621 anywhere else in the repo. Only R5617/R5621 are named in bagno1652 NOTES as unrelated neighbours. Unchecked as of 28 Oct 2026: the 'online' tag is inferred from the DECODE record (images not opened, DECODE needs a login); some N/A records may be key sheets or clear text. Narrowed 10 Nov 2026: R5612 (26 Nov 1590) and R5616 (16 Jan 1591) are Filippo Sega's letters deciphered with Meister key 65 (targets/sega1590), and R5615 (duplicate of early Jan 1591, ff. 49v-54v) is read in part with the same key (targets/sega1591b), both contributed by Brice Dudout; the sender of those letters is Sega. The entry now covers the other records R5613-R5614, R5617-R5621.",
    "why": "Paris nunciature at the height of the Catholic League siege of Henri IV, in a cipher the Vatican of the 1580s-90s used elsewhere.",
    "importance": 4,
    "solvability": 3,
@@ -26807,21 +26807,18 @@
    "verify": "View R5612-R5621 images on DECODE; try the Morosini 1588 / Meister nunciature keys (targets/morosini1588) and the Lasry papal key set",
    "links": [
     {
-     "label": "DECODE R5612",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/5612"
-    },
-    {
      "label": "DECODE R5621",
      "href": "https://de-crypt.org/decrypt-web/RecordsView/5621"
+    },
+    {
+     "label": "DECODE R5613",
+     "href": "https://de-crypt.org/decrypt-web/RecordsView/5613"
     }
    ],
    "prior_art": "open (checked 28 Oct 2026: repo ledgers; Tomokiyo/Lasry papal-cipher paper lists keys but no Sega Paris 1590 reading found)",
    "decode_ids": [
-    5612,
     5613,
     5614,
-    5615,
-    5616,
     5617,
     5618,
     5619,
@@ -77761,62 +77758,6 @@
     "verdict": "open"
    },
    "repository": "ahnob"
-  },
-  {
-   "id": 2444,
-   "counted": true,
-   "year": 1866,
-   "date": "Jan-Feb 1866",
-   "title": "Copybook of orders and reports to colonel Taulet during the January 1866 rising, with short numeric cipher passages in his reports",
-   "correspondents": "Lieutenant colonel Bernardo Taulet (Catalonia/Maestrazgo columns) -> captain general of Catalonia / chiefs of columns",
-   "place": "Barcelona / Tarragona province",
-   "period": "1801-1900",
-   "shelfmark": "AHN, DIVERSOS-COLECCIONES,193,N.99",
-   "folio_note": "53 pages; hyphenated 2-digit number groups seen in the reports on images 25-26 (also earlier)",
-   "cls": "A",
-   "status": "9 Nov 2026 (Brice Dudout, issue #367, not checked by the project): read by sense (76 cipher words, 71 certain); held-out test 0.981 against 0.704 (margin 0.277, under the 0.30 bar), so the key is partial; no contemporary decipherment found. Earlier: PARES: \"Hay algunos documentos cifrados\". Viewed images 1-6, 13-18, 25-30 on 9 Nov 2026: plain order-book copies and daily reports (Jalet/Abella/Villarroya) with short passages of hyphenated 2-digit groups (e.g. 61-64-22-...) set into the plaintext; no interlinear decipherment. Not in known.py (Taulet nothing). Web search: nothing on Taulet or this unit.",
-   "why": "19th-century Catalan military cipher in numbers, in an otherwise clear context, so cribs are available; no Carlist-war pair among those already read.",
-   "importance": 2,
-   "solvability": 3,
-   "difficulty": 3,
-   "score_note": "Seen on PARES images 9 Nov 2026; cipher passages are short",
-   "verify": "Transcribe the numeric passages (images 25-30 and others), compare with the plain context of each day report.",
-   "links": [
-    {
-     "href": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/5928106",
-     "label": "PARES 5928106 (DIVERSOS-COLECCIONES,193,N.99)"
-    }
-   ],
-   "source": "PARES diversos 19th c sweep, 9 Nov 2026 (research/sweep_2026-11_pares_diversos_19c)",
-   "prior_art": "open as far as checked (9 Nov 2026): known.py nothing; 1 web search nothing.",
-   "language": "Spanish",
-   "region": "Spain",
-   "access_note": "images online on PARES (free reuse, cite Ministerio de Cultura/PARES URL)",
-   "needs_archive_scan": "no",
-   "seen": "image",
-   "ark": "",
-   "scored": "vetted",
-   "vetting": {
-    "date": "2026-11-09",
-    "by": "claude vetting agent v12",
-    "seen": {
-     "kind": "scan",
-     "where": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/5928106 (images 1, 25, 26, 40 viewed 9 Nov 2026, zoom 10; 27 fetched)",
-     "extent": "Copybook of 53 images, Jan-Feb 1866, plain reports by a column commander with numeric passages: image 25 ends two reports with a 7-group string (61-64-38-92-29-60-64), image 26 has a block of about 9 lines of hyphenated 2-digit numbers inside a report, and short groups at the ends of reports on image 40; a few hundred numbers in all.",
-     "cipher": "Hyphenated 2-digit numbers (range seen 10-92), embedded in clear Spanish; same short groups recur at report ends (looks like a signature or code phrase). Contemporary clerk's copy; no decipherment, interlinear or marginal plaintext on any leaf viewed."
-    },
-    "prior_art": {
-     "decode": "Not on DECODE as far as web search shows; known.py has no DECODE record.",
-     "tomokiyo": "No Cryptiana post found on a Spanish 1866 column-commander cipher.",
-     "lasry": "No Lasry work found on it.",
-     "edition": "No edition found; searched Taulet, Diversos-Colecciones 193, 1866 uprising in Catalonia.",
-     "literature": "Searches for Taulet and the January 1866 Prim rising in Catalonia found only general accounts of the Villarejo de Salvanes rising; nothing on this copybook or its cipher."
-    },
-    "key_check": "No key held or found (none in unit, DECODE or repo). Tests not run beyond reading.",
-    "duplicates": "known.py on 'DIVERSOS-COLECCIONES,193' and 'Taulet': only leads and sweep files. No 1866 Spanish military cipher target in targets/.",
-    "verdict": "open"
-   },
-   "repository": "ahn"
   },
   {
    "id": 2445,
