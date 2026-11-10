@@ -92,9 +92,9 @@ mean 25.5, maximum 36.)
 
 ## Remaining gaps
 
-- Only 4 glossed images were used. The glossed despatches at 258, 259 and 261 (and around 322-327) would confirm most of
-  the 66 single values and settle the mixed ones. They were not transcribed (tool budget).
-- The bare cipher pages (for example 264-266, 115-196, 389-470) are untouched. With 85 confirmed values and a syllabary of
+- The French-glossed leaves 258, 259 and 261 are now transcribed (10 Nov 2026, see Escalation) but the key built from them
+  is a draft, not adopted; 259 has had one pass only - blocker: not-attempted
+- The bare cipher pages in this code (264-266, about 115-196, 389-470; not sorted from those in the hopken1740 code) are untouched apart from a trial on 264 - blocker: not-attempted. With 85 confirmed values and a syllabary of
   probably about 750 elements, expect partial readings at best until more glossed pages are added.
 - Postscript 263: decoded (with the final key.tsv), not read. 15 of 55 groups are unknown; the language is unsettled
   (the clear Swedish word "angående" stands in the postscript). A small superscript "o" over the second digit of 1363
