@@ -1,0 +1,54 @@
+# coahuila1906 key, CC BY 4.0 (Brice Dudout, L'Europe chiffree, 2026). Status: PARTIAL by our protocol (held-out lexical
+# coverage 0.796 against at most 0.545 for 1,000 shuffled keys; pre-registered criterion > 0.80 NOT met, see validation.txt).
+# Two-digit homophonic letter substitution: the tens are paired (1 = 9, 3 = 7, 4 = 8: n and n +/- 80 or 40 give the same letter),
+# the unit is the place in one of three rows. K1 = values fixed on T36 + T104 only, frozen (SHA-256 of the extended dict
+# 9e58a2ceaedd5225...), extended by the pairing rule. 'after freeze' = read by sense on held-out telegrams, not measured.
+# Not used in T54 (Judge Valdes Llano, groups 0x/5x/6x: another key). Unknown: 86, 28 (one occurrence each).
+# Row A (tens 1/9): 0 d, 1 y, 3 a (13; 93 = q in T53/T124, a conflict), 5 h, 7 x, 8 n, 9 t
+# Row B (tens 3/7): 0 o, 2 g, 3 a, 4 c, 5 r, 6 v, 8 f, 9 l
+# Row C (tens 4/8): 0 e, 1 h (81 only), 2 u, 3 i, 4 m, 5 s, 8 b, 9 p
+group	value	row	status
+10	d	A	K1 (fixed on T36/T104)
+11	y	A	after freeze
+13	a	A	K1 (fixed on T36/T104)
+15	h	A	after freeze
+17	x	A	K1 (fixed on T36/T104)
+18	n	A	K1 (fixed on T36/T104)
+19	t	A	K1 (fixed on T36/T104)
+30	o	B	K1 (fixed on T36/T104)
+32	g	B	K1 (fixed on T36/T104)
+33	a	B	K1 (fixed on T36/T104)
+34	c	B	K1 (fixed on T36/T104)
+35	r	B	K1 (fixed on T36/T104)
+36	v	B	K1 pairing rule
+38	f	B	K1 (fixed on T36/T104)
+39	l	B	K1 (fixed on T36/T104)
+40	e	C	K1 (fixed on T36/T104)
+42	u	C	K1 (fixed on T36/T104)
+43	i	C	K1 (fixed on T36/T104)
+44	m	C	K1 (fixed on T36/T104)
+45	s	C	K1 (fixed on T36/T104)
+48	b	C	K1 (fixed on T36/T104)
+49	p	C	K1 (fixed on T36/T104)
+70	o	B	K1 (fixed on T36/T104)
+72	g	B	K1 (fixed on T36/T104)
+73	a	B	K1 (fixed on T36/T104)
+74	c	B	K1 (fixed on T36/T104)
+75	r	B	K1 (fixed on T36/T104)
+76	v	B	K1 (fixed on T36/T104)
+78	f	B	K1 pairing rule
+79	l	B	K1 (fixed on T36/T104)
+80	e	C	K1 pairing rule
+81	h	C	after freeze
+82	u	C	K1 pairing rule
+83	i	C	K1 (fixed on T36/T104)
+84	m	C	K1 (fixed on T36/T104)
+85	s	C	K1 (fixed on T36/T104)
+88	b	C	K1 pairing rule
+89	p	C	K1 (fixed on T36/T104)
+90	d	A	K1 (fixed on T36/T104)
+91	y	A	after freeze
+93	q	A	after freeze (K1 pairing gives a; q read in T53 and T124)
+97	x	A	K1 pairing rule
+98	n	A	K1 (fixed on T36/T104)
+99	t	A	K1 (fixed on T36/T104)

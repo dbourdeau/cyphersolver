@@ -15,8 +15,11 @@ ATLAS = ROOT / 'docs' / 'atlas.json'
 
 # places added with the 25 Oct 2026 backfill (lat, lon); names are what the atlas shows
 NEW_PLACES = {
+    'Beijing': [39.904, 116.407],  # army1901: Fukushima in Peking, 1901
+    'Taku': [38.970, 117.700], 'Hiroshima': [34.385, 132.455],  # army1901in: telegrams from Taku and Hiroshima, 1901
     'Białystok': [53.133, 23.164], 'Nieśwież': [53.222, 26.667], 'Kaunas': [54.899, 23.904],  # branicki1757 (Branicki's seat; the Radziwiłł seat; the Russian army's magazines, 1757)
     'Monzón': [41.910, 0.190], 'Palermo': [38.116, 13.361],  # gonzaga1542 (Charles V at Monzón, Ferrante Gonzaga viceroy of Sicily)
+    'Múzquiz': [27.879, -101.517], 'Saltillo': [25.423, -101.005],  # coahuila1906 (Jefe Político at Múzquiz, the Governor of Coahuila at Saltillo)
     'Galeana': [24.826, -100.073],  # limantour1909: Reyes, governor of Nuevo León, at Galeana, July 1909
     'Baltimore': [39.290, -76.612], 'The Oaks': [33.540, -79.090],  # burr1808 (Burr at Baltimore; the Alston plantation on the Waccamaw, S.C.)
     'Leeuwarden': [53.201, 5.799], 'Heidelberg': [49.399, 8.672], 'Dorsten': [51.660, 6.966], 'Puerto Asís': [0.507, -76.496], 'Bogotá': [4.711, -74.072],  # nassau1620, hatzfeldt1641, leticia1932

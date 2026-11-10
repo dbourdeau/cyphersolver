@@ -1,0 +1,286 @@
+{
+ "schema_version": 1,
+ "target": "krassin1921",
+ "title": "Krassin's Nr 451 and Lutowinoff's Nr 523, Soviet figure radiograms Berlin to Moscow, 1921 (NARA M316 roll 43, from catalogue 669): table recovered by Harumi-Matsuba",
+ "documents": [
+  {
+   "id": "m316-043-0427",
+   "read": "read",
+   "shelfmark": "NARA RG 59, 861.00, microfilm M316 roll 43 (NAID 604704577), frames 0427-0428",
+   "date": "30 May 1921 (repeat sent 14 June 1921)",
+   "year": 1921,
+   "country": "Soviet Russia",
+   "route": "Berlin -> Moscow",
+   "places": {
+    "from": "Berlin",
+    "to": "Moscow"
+   },
+   "language": "Russian",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "partial": false
+   },
+   "length": {
+    "tokens": 320,
+    "unit": "code groups",
+    "measured": true,
+    "file": "ciphertext_451.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "the contributor's transcription from the NARA catalogue OCR, one digit corrected from the image; a blind second transcription of the images by OpenAI Codex agrees on 1,598 of 1,600 digits (his figure); the project did not see the images and no human has checked",
+    "image_quality": "unknown",
+    "notes": "Five-digit groups, 1,600 digits = 40 x 40; the clear heading names Krassin to Tschitscherin, the indicator word SOROK (40); the catchword /21545/ at the head of frame 0428 is left out; digit 182 is overstruck (kept as 5)."
+   }
+  },
+  {
+   "id": "m316-043-0432",
+   "read": "read",
+   "shelfmark": "NARA RG 59, 861.00, microfilm M316 roll 43 (NAID 604704577), frame 0432",
+   "date": "14 June 1921",
+   "year": 1921,
+   "country": "Soviet Russia",
+   "route": "Berlin -> Moscow",
+   "places": {
+    "from": "Berlin",
+    "to": "Moscow"
+   },
+   "language": "Russian",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "partial": false
+   },
+   "length": {
+    "tokens": 115,
+    "unit": "code groups",
+    "measured": true,
+    "file": "ciphertext_523.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "the contributor's transcription from the NARA catalogue OCR; a blind second transcription by OpenAI Codex agrees on 575 of 575 digits (his figure); the project did not see the images and no human has checked",
+    "image_quality": "unknown",
+    "notes": "575 digits, one short of 24 x 24; the clear heading names Lutowinoff to Tschitscherin for Litvinov with copies to Chicherin, Molotov and Shlyapnikov, indicator words DWADZAT TCHETYRE (24); a stray '60' typed between lines 9 and 10 is not included."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "transposition",
+   "superencipherment"
+  ],
+  "summary": "Each Russian letter becomes a digit pair from a 5 x 6 table (first digit 6-9 or 0, second 0-5), the pairs are written row by row into an N x N digit square (N spelled out before the groups) and sent column by column.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 10,
+  "digit_groups": {
+   "separation": "spaces"
+  },
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "random",
+  "word_division": "none"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "None found by the contributor on 10 Nov 2026 (this ledger, its issues, GitHub, Cryptiana, Tiltman, Chernoperov, web search); the Soviet document editions (Sovetsko-germanskie otnosheniya vol. 2, DVP SSSR IV), TNA HW 12 and NARA RG 457 were not read and may hold the text.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "transcription",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Harumi-Matsuba directed the work and decided on publication; Anthropic Claude (Claude Fable 5.2) found the system, recovered the table, made the reading and the documents; OpenAI Codex transcribed the images blind as a second reader and, with Claude Sonnet, judged sampled digits. No human compared the images with the transcription. The project re-ran the decryption with its own code; it has not seen the images.",
+  "models": [
+   "Claude",
+   "GPT"
+  ],
+  "first_date": "2026-11-10",
+  "last_date": "2026-11-10"
+ },
+ "solution": [
+  {
+   "date": "2026-11-10",
+   "kind": "transcription",
+   "what": "Contributor: five-digit groups taken from the NARA catalogue OCR of M316 roll 43, I turned into 1, the catchword on frame 0428 dropped, one digit changed from the image; a blind second transcription of eight image strips by OpenAI Codex agrees on 1,598/1,600 and 575/575 digits.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "statistics",
+   "what": "Contributor: digit counts match the number word (1,600 = 40 x 40, 575 about 24 x 24); cut into runs of N, columns of high digits alternate with columns of low digits (94.9% and 95.1% of non-zero digits); paired columns give about 30 pair types with IC 0.0551 and 0.0490.",
+   "result": "worked",
+   "technique": [
+    "frequency analysis",
+    "repeat/pattern analysis"
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "hypothesis",
+   "what": "Contributor: digit pairs written row by row into an N x N square and sent by columns, columns not permuted (long repeats recur at different row positions); rows right to left in Nr 451 (text ends at the right edge before the 00 filler), mirror layout in Nr 523.",
+   "result": "worked",
+   "technique": [
+    "key-structure hypothesis"
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "solver",
+   "what": "Contributor: simulated annealing on the 764 pairs of Nr 451 alone, assigning Russian letters to the 32 commonest pairs, scored with Russian letter 4-grams, no crib; three runs reached the same score and the text read; three values (10, 33, 71) were then corrected on reading and 28 taken out.",
+   "result": "worked",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring",
+    "contextual inference"
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "prediction",
+   "what": "Contributor: the table from Nr 451, unchanged, applied to Nr 523, which was not used to build it: 279 of 288 pairs read as sense.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "control",
+   "what": "Contributor: 1,000 shuffles of the table's letter values; none reaches the real table's mean 4-gram score in either message (real -11.127 / -12.329, best shuffled -14.686 / -14.796); the same table with rows read the other way scores -13.889 / -14.282.",
+   "result": "worked",
+   "technique": [
+    "statistical test"
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "literature search",
+   "what": "Contributor: this ledger, its issues and pull requests, GitHub code search, Cryptiana, wenmi, Tiltman's Experiences 1920-1939, Chernoperov's article on Kopp, web searches in Russian and English: no decipherment or plaintext found; the Soviet document editions were not read.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "verification",
+   "what": "Project check: an own decoder written from the issue's description (verify.py) gives both texts identical pair for pair to the contributor's reading files; the Russian read through as sentences. NARA images not reachable from the project; docs/_validate.py has no Russian model.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "method": "key recovered from ciphertext-only",
+  "key": "recovered",
+  "method_basis": "Contributor's method: the table was recovered by annealing on the ciphertext of Nr 451 alone with no crib, and confirmed on Nr 523; the project re-ran the decryption with its own code but did not repeat the search or see the images.",
+  "contribution": [
+   "key recovered",
+   "transcription"
+  ],
+  "provenance": "contributed",
+  "first_break": true,
+  "verification": [
+   "matched control",
+   "key confirms"
+  ],
+  "validation": {"date": "2026-11-10", "verdict": "not applicable", "notes": "no Russian model in lang/; the contributor's 1,000-shuffle control and the reading of Nr 523, not used to build the table, stand in for it"},
+  "credits": [
+   {
+    "who": "harumi-matsuba",
+    "role": "solution",
+    "note": "system, table, transcriptions and reading of Krassin's Nr 451 and Lutowinoff's Nr 523; issue #370; repository Harumi-Matsuba/soviet1921-public",
+    "date": "2026-11-10",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/370"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "pairs 16 and 76 53 18 in Nr 523 (the day of a letter, a number of hours)",
+    "blocker": "too-short",
+    "detail": "numbers occur once each in two messages; how digits are written cannot be fixed"
+   },
+   {
+    "item": "off-table pairs 28 (x3), 77 (x2), 91 and 14 in Nr 451",
+    "blocker": "too-short",
+    "detail": "values from context only (комисс, раб, ц, an error for д); no further message in this table"
+   },
+   {
+    "item": "eleven single wrong letters (seven in Nr 451, four in Nr 523)",
+    "blocker": "illegible",
+    "detail": "sending or interception errors on the typed sheet; one digit overstruck"
+   },
+   {
+    "item": "a human check of the transcription against the NARA images",
+    "blocker": "needs-physical-access",
+    "detail": "the NARA catalogue is not reachable from the project"
+   },
+   {
+    "item": "Soviet document editions, HW 12 and RG 457 for a calibration text",
+    "blocker": "needs-physical-access",
+    "detail": "not online"
+   }
+  ],
+  "notes": "Table, transcriptions and reading by Harumi-Matsuba; checked by the project with its own decoder against his transcriptions, not against the images. 1,029 of 1,052 pairs read as sense.",
+  "fraction_read": 0.978,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Contributor's status column in reading_451.tsv (750 of 764 pairs read) and reading_523.tsv (279 of 288): 1,029 of 1,052 digit pairs, off-table pairs and wrong letters counted unread.",
+  "key_file": "key.tsv",
+  "texts": [
+   {
+    "doc": [
+     "m316-043-0427"
+    ],
+    "label": "Nr 451, Krassin to Chicherin, Berlin to Moscow, 30 May 1921",
+    "transcription": "ciphertext_451.txt",
+    "decryption": "decryption_451.txt",
+    "reading": "translation.md",
+    "translation": "translation.md",
+    "language": "ru",
+    "state": "read",
+    "read_share": 0.982,
+    "summary": "Krasin reports that the Berlin trade representation now works well, that the auditing commission has found damaging material on its previous period, asks for Kulyabko to be sent to Berlin and for no decisions to be taken before the commission reports.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (for the project)",
+     "date": "2026-11-10",
+     "note": "Read the decryption as Russian sentences with the contributor's word breaks: telegraphic but coherent throughout; holes are the off-table pairs (комисс, раб) and seven single wrong letters, none blocking the sense."
+    }
+   },
+   {
+    "doc": [
+     "m316-043-0432"
+    ],
+    "label": "Nr 523, Lutovinov to Chicherin for Litvinov, Berlin to Moscow, 14 June 1921",
+    "transcription": "ciphertext_523.txt",
+    "decryption": "decryption_523.txt",
+    "reading": "translation.md",
+    "translation": "translation.md",
+    "language": "ru",
+    "state": "read",
+    "read_share": 0.969,
+    "summary": "Lutovinov protests against Kopp being kept in Berlin as polpred before the audit ends, asks to whom he should hand over his duties and says he will hand over to Brodovsky within hours.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (for the project)",
+     "date": "2026-11-10",
+     "note": "Read the decryption as Russian sentences: coherent throughout; two numbers unread and four single wrong letters of a 4/5 confusion shape."
+    }
+   }
+  ]
+ }
+}

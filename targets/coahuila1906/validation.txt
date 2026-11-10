@@ -1,0 +1,27 @@
+coahuila1906 - key K1 and its single held-out test (round C01, 28 Oct 2026). Not re-run for this pull request.
+
+Protocol: frozen/PROTOCOL.md (in French), written at 07:36 CET on 28 Oct 2026, before the measurement was run.
+Learning material (the only text used to fix K1): T36 (Cardenas -> Guajardo, 25 Jun; anchor "para 40 76 43 99 73 75 quejas" =
+evitar, from the clear around it) and T104 (Guajardo -> Cardenas, 19 Jul). K1 = the values established on T36 + T104, extended by
+the pairing rule of the tens (1 = 9, 3 = 7, 4 = 8), seen on the same two texts; frozen, SHA-256 of the extended dict
+9e58a2ceaedd5225... (frozen/validate.py prints it).
+Held out (never used to fix K1): T35, T53, T67, T82, T99 (English), T124 - 319 decoded letters in the coded runs.
+T54 (Judge Valdes Llano, groups 0x/5x/6x) is outside the system and was left out of the test, as written in the protocol.
+Measure: lexical coverage = share of the decoded letters of the held-out runs covered by a segmentation into words of the
+repository's lexicon (lang/lexicons/es.json.gz; en.json.gz for T99; words of 2+ letters plus a, y, o, e); numbers outside K1
+count as uncovered.
+Controls: 1,000 shuffled keys (the letters of K1 permuted among the values, same homophone structure), seed 758.
+Criterion fixed in advance: key validated if coverage(K1) > max of the controls AND > 0.80.
+
+Result (frozen/validate.py, one run):
+    coverage K1 on the held-out runs : 0.796 (319 letters)
+    controls (1,000 shuffled keys)   : max 0.545, p99 0.508
+    margin over the best control     : 0.251
+    VERDICT: criterion NOT MET. 0.796 is far above every control but under the 0.80 fixed in advance (by 0.004); it is also
+    under the 0.85 used elsewhere in our work. K1 is therefore a PARTIAL key by our protocol.
+
+Seen after the verdict (not used to change it): the misses are mostly words cut by the translator (la-dron-es, campam-en-to,
+comi-si-onado: the coded pieces alone are not lexicon words), the values read later (y 11/91, h 15/81, q 93) that count as
+uncovered, and the unknown 86 and 28. The reading by sense (reading.md) is therefore higher than the measure, but it is not
+a validation. A new test would need new telegrams of Guajardo or Cardenas in this system (Archivo General del Estado de
+Coahuila, Saltillo; or the federal telegraph originals).

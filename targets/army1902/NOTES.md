@@ -36,7 +36,8 @@ or the numeric part of 特号 (Tokugō), is not settled (contributor's METHOD §
 
 Not included: C09122806100 (18 Feb 1901, Hiroshima, Manabe → Tamura), 15 pairs in four runs that the 1902 table does
 not read (the same ニ is 91 and 69). A different method, so by the one-key rule it is not part of this target; the
-contributor's OPEN.md lists what was tried. Unread.
+contributor's OPEN.md lists what was tried. Unread with this table. **10 Nov 2026:** decoded in part with the 1901
+serial table (issue #371): テンシヨク, ンチワ, フクム, with 91 and 69 off that table; see `targets/army1901in/`.
 
 ## How the table was found (contributor)
 

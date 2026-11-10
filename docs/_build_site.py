@@ -275,8 +275,8 @@ def texts_html(page):
             if t.get('summary'): out.append(f'<p>{html.escape(t["summary"])}</p>')
             if state == 'read in part':
                 rs = t.get('read_share')
-                out.append('<p class="muted">Builds coherent sentences, but ' + ('its word share is at or above the 95% read bar, and it stays read in part for another reason stated on this page' if isinstance(t.get('read_share'), (int, float)) and round(t['read_share'] * 100) >= 95 else 'under the read bar of 95% of words read as sense')
-                           + (f' ({rs * 100:.0f}% here)' if isinstance(rs, (int, float)) else '') + '; the holes are marked in the reading.</p>')
+                out.append('<p class="muted">Builds coherent sentences, but ' + ('its word share is at or above the 95% read bar, and it stays read in part for another reason stated on this page' if isinstance(t.get('read_share'), (int, float)) and t['read_share'] >= 0.95 else 'under the read bar of 95% of words read as sense')
+                           + (f' ({rs * 100:.1f}% here)' if isinstance(rs, (int, float)) and 0.945 <= rs < 0.95 else f' ({rs * 100:.0f}% here)' if isinstance(rs, (int, float)) else '') + '; the holes are marked in the reading.</p>')
             if state == 'decoded, not read':
                 out.append('<p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription '
                            'and the key can be checked and improved, not as a reading.</p>')
