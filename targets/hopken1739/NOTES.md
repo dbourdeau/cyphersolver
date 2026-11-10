@@ -112,6 +112,11 @@ mean 25.5, maximum 36.)
   261 fetched to scans/ (git-ignored). 258 and 261 are more glossed pages (French over the numbers, several hundred
   groups). Not yet transcribed: the owner is choosing the scope. Next: two-pass transcription of 258, 259, 261 and
   322-327, rebuild the key, then retry 263 and the bare pages 264-266.
+- [ ] key-rebuild (10 Nov 2026, in progress): 258 and 261 transcribed, pass 1 only (pairs_258_261.tsv, 63 runs, 10 kept
+  out as X). EM on all pairs gives key_v2_draft.tsv: 104 confirmed / 26 mixed / 68 single, against 85 / 18 / 62. 1097 = or
+  (4 of 5) and 1106 = pe (2 of 2) now look like real values, not fillers. The draft is not adopted: a blind digit-only
+  pass 2 of 258 and 261 comes first, then 259 and 322-327, then retry 263 and 264-266.
+- [ ] siblings, clear-pages, known-keys, print: not yet done this round.
 
 ## Catalogue 1772/1773 (Dorffler, Poland)
 
