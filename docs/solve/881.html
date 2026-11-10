@@ -56,7 +56,7 @@
     <dt>Place</dt><dd>Paris</dd>
     <dt>Language</dt><dd>Italian</dd>
     <dt>Held at</dt><dd>AAV, Segreteria di Stato, Francia 32 (i. 1025, doss. 32), ff. 15-232 (letters and cifre of 26 Nov - 21 Dec 1590) · DECODE R5612-R5621, ten records of 6-11 pp.; status N/A</dd>
-    <dt>Images</dt><dd><a href="https://de-crypt.org/decrypt-web/RecordsView/5612" rel="noopener">DECODE R5612</a> · <a href="https://de-crypt.org/decrypt-web/RecordsView/5621" rel="noopener">DECODE R5621</a></dd>
+    <dt>Images</dt><dd><a href="https://de-crypt.org/decrypt-web/RecordsView/5621" rel="noopener">DECODE R5621</a> · <a href="https://de-crypt.org/decrypt-web/RecordsView/5613" rel="noopener">DECODE R5613</a></dd>
   </dl>
 </section>
 
@@ -78,24 +78,26 @@ THE CIPHER
   Language:       Italian (expected)
   Held at:        AAV, Segreteria di Stato, Francia 32 (i. 1025, doss. 32), ff. 15-232 (letters and cifre of 26 Nov - 21 Dec 1590); DECODE R5612-R5621, ten records of 6-11 pp.; status N/A
   Images/records:
-    - DECODE R5612: https://de-crypt.org/decrypt-web/RecordsView/5612
     - DECODE R5621: https://de-crypt.org/decrypt-web/RecordsView/5621
+    - DECODE R5613: https://de-crypt.org/decrypt-web/RecordsView/5613
 
 WHAT IS KNOWN
-  Status: DECODE R5612-R5621 'N/A'. CATALOGUE.md (line 61) mentions this as 'catalogue 297: Meister and morosini1588 keys to try', but catalogue.json has no live entry 297 and no R5612-R5621 anywhere else in the repo. Only R5617/R5621 are named in bagno1652 NOTES as unrelated neighbours. Unchecked as of 28 Oct 2026: the 'online' tag is inferred from the DECODE record (images not opened, DECODE needs a login); some N/A records may be key sheets or clear text.
+  Status: DECODE R5612-R5621 'N/A'. CATALOGUE.md (line 61) mentions this as 'catalogue 297: Meister and morosini1588 keys to try', but catalogue.json has no live entry 297 and no R5612-R5621 anywhere else in the repo. Only R5617/R5621 are named in bagno1652 NOTES as unrelated neighbours. Unchecked as of 28 Oct 2026: the 'online' tag is inferred from the DECODE record (images not opened, DECODE needs a login); some N/A records may be key sheets or clear text. Narrowed 10 Nov 2026: R5612 (26 Nov 1590) and R5616 (16 Jan 1591) are Filippo Sega's letters deciphered with Meister key 65 (targets/sega1590), and R5615 (duplicate of early Jan 1591, ff. 49v-54v) is read in part with the same key (targets/sega1591b), both contributed by Brice Dudout; the sender of those letters is Sega. The entry now covers the other records R5613-R5614, R5617-R5621.
   Outcome so far: not yet attempted by the project
   Prior-art check: open (checked 28 Oct 2026: repo ledgers; Tomokiyo/Lasry papal-cipher paper lists keys but no Sega Paris 1590 reading found)
   Check first: View R5612-R5621 images on DECODE; try the Morosini 1588 / Meister nunciature keys (targets/morosini1588) and the Lasry papal key set
   Class B: part of a key or a known cipher family of the same office is in print or on DECODE.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/sega1590/NOTES.md
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/sega1591b/NOTES.md
   Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); targets/morosini1588/NOTES.md (everything
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/sega1590/NOTES.md (everything
    already tried on this cipher, with the files it used); and lang/README.md (shared language models).
-   Put all your work in targets/morosini1588/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   Put all your work in targets/sega1590/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
    under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
@@ -136,7 +138,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/morosini1588/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/sega1590/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+881&amp;target=catalogue+881
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -153,11 +155,11 @@ If you cannot open issues or pull requests, write this report for your human to 
 <p class="frame confirmed"><b>Cipher located and confirmed.</b> Digit cipher with diacritics (overlines, dots) set in the lines of Italian prose, a marginal vertical stroke beside the ciphered block; no interlinear or marginal decipherment seen on R5614-R5616. (DECODE full-size images via cookie, 2 Nov 2026: R5612-R5618 and R5621 first leaves viewed; R5614 (f.65) cropped at full size. R5619 and R5620 list no images through the helper (not seen); checked 2026-11-02 by claude vetting batch r01)</p>
 <h2>What is known</h2>
 
-
-<p><b>Status and prior art.</b> DECODE R5612-R5621 'N/A'. CATALOGUE.md (line 61) mentions this as 'catalogue 297: Meister and morosini1588 keys to try', but catalogue.json has no live entry 297 and no R5612-R5621 anywhere else in the repo. Only R5617/R5621 are named in bagno1652 NOTES as unrelated neighbours. Unchecked as of 28 Oct 2026: the 'online' tag is inferred from the DECODE record (images not opened, DECODE needs a login); some N/A records may be key sheets or clear text.</p>
+<p><span class="ko"><i class="k">written up</i> <a href="sega1591b.html" title="Filippo Sega, Bishop of Piacenza → Rome, Paris, duplicate (&quot;Dupp.ta&quot;) of early January 1591, AAV Segreteria di Stato, Francia 32 ff. 49v–54v">sega1591b</a></span></p>
+<p><b>Status and prior art.</b> DECODE R5612-R5621 'N/A'. CATALOGUE.md (line 61) mentions this as 'catalogue 297: Meister and morosini1588 keys to try', but catalogue.json has no live entry 297 and no R5612-R5621 anywhere else in the repo. Only R5617/R5621 are named in bagno1652 NOTES as unrelated neighbours. Unchecked as of 28 Oct 2026: the 'online' tag is inferred from the DECODE record (images not opened, DECODE needs a login); some N/A records may be key sheets or clear text. Narrowed 10 Nov 2026: R5612 (26 Nov 1590) and R5616 (16 Jan 1591) are Filippo Sega's letters deciphered with Meister key 65 (targets/sega1590), and R5615 (duplicate of early Jan 1591, ff. 49v-54v) is read in part with the same key (targets/sega1591b), both contributed by Brice Dudout; the sender of those letters is Sega. The entry now covers the other records R5613-R5614, R5617-R5621.</p>
 <p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 28 Oct 2026: repo ledgers; Tomokiyo/Lasry papal-cipher paper lists keys but no Sega Paris 1590 reading found).</p>
 <p><b>Check first.</b> View R5612-R5621 images on DECODE; try the Morosini 1588 / Meister nunciature keys (targets/morosini1588) and the Lasry papal key set</p>
-<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/NOTES.md" rel="noopener">targets/morosini1588/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/morosini1588" rel="noopener">the folder</a>)</li></ul>
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sega1590/NOTES.md" rel="noopener">targets/sega1590/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/sega1590" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sega1591b/NOTES.md" rel="noopener">targets/sega1591b/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/sega1591b" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morosini1588/NOTES.md" rel="noopener">targets/morosini1588/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/morosini1588" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>

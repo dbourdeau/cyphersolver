@@ -2467,6 +2467,7 @@
 {"id": "k-burr1804", "label": "Burr's stroke-and-figure cipher, July 1804 (GLC01523)", "kind": "rebuilt here", "by": "cyphersolver", "year": 1804, "note": "Simple substitution: a-f = 5 down to 0, g-i = 6-8, l = 10, m-u = Roman II-X, three odd signs for v, w, y; recovered from 132 signs of the letter."},
 {"id": "k-burr1808", "label": "Burr's number Vigenere, 1808 (period 6, shifts 6 18 22 7 24 8)", "kind": "rebuilt here", "by": "cyphersolver", "year": 1808, "note": "Vigenere over a=1 ... z=26, period 6, key running through the letters; recovered from 973 numbers of three letters to Theodosia."},
 {"id": "k-soria-lannoy1527", "label": "Lope de Soria - Charles de Lannoy cipher, Genoa 1527: homophonic signs and three-letter code, recovered ciphertext-only", "kind": "rebuilt here", "by": "cyphersolver (Claude Opus 5.5)", "year": 1527, "found": 2026, "note": "Letter signs recovered by joint annealing (wsa5 from cardona1517) on a 1520s Spanish model, no crib; 47 of 61 code groups valued by context (dri que, leb de, fip galeras, pre Su Magestad); polyvalent to g/a, # e/q, ff i/e; frame marks 11, g#, -o-. targets/lannoy1527/key.tsv."},
+{"id": "k-taulet1866", "label": "Taulet 1866 homophonic letter key (35 numbers, 10-92)", "kind": "scholar's key", "by": "Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents", "year": 1866, "found": 2026, "note": "Rebuilt by sense from the cipher runs S01-S32 of AHN Diversos-Colecciones 193 N.99, with the clear words of the reports as context; partial by the contributor's protocol (held-out margins 0.277 and 0.261, under his 0.30 rule). targets/taulet1866/key.tsv."},
 {"id": "k-puente1832", "label": "Puente Nacional 1832 vowel-mask key (a = dash, e = i, i = x, o = dot)", "kind": "rebuilt here", "by": "cyphersolver", "year": 1832, "note": "Recovered from word shapes in the ciphertext alone."}
  ],
  "links": [
@@ -2497,6 +2498,7 @@
 {"key": "k-dudout-asang1662", "target": "asang1662", "how": "rebuilt from", "note": "recovered from the ciphertext of the front of the letter alone, no crib; frozen and tested on the held-out reverse"},
 {"key": "k-dudout-perez1578-kp2", "target": "perez1578", "how": "rebuilt from", "note": "the 1577 Genoa embassy table rebuilt on AGS Estado 1410 cipher/descifrada pairs, adapted to Perez's variant and frozen before the fresh pair 1410,65-66 was opened"},
 {"key": "k-sega1591-lasry", "target": "sega1590", "how": "read unchanged", "note": "Meister's key no. 65, identified for Sega's letter of 9 January 1591 by George Lasry, applied unchanged to both letters here"},
+{"key": "k-sega1591-lasry", "target": "sega1591b", "how": "read unchanged", "note": "Meister's key no. 65, identified for Sega by George Lasry and validated on sega1590's held-out letter, applied unchanged by Brice Dudout to the duplicate of early January 1591; 82.7% of words read"},
 {"key": "k-r7501", "target": "wasowicz1662", "how": "read unchanged", "note": "all seven letters (R7503-R7510); numbers outside the table are the writer's slips (69/96, 36/63, 92/52), settled by sense"},
 {"key": "k-r367", "target": "huyson1547", "how": "adapted", "note": "Malvezzi's alphabet calibrated by Brice Dudout on HHStA Türkei I 7-3-20 f. 44 against its decipherment of the time (f. 45), frozen as K-C01 (targets/huyson1547/key_KC01.json) and tested blind on Türkei I 8-3-8; a few values added in the reading notes"},
 {"key": "k-ferducci1532-glosses", "target": "ferducci1532", "how": "rebuilt from", "note": "values from the sibling letters' glosses, frozen, then applied to the unglossed 2-2-19: 8 of 8 groups"},
@@ -3959,6 +3961,7 @@
 {"key": "k-burr1804", "target": "burr1804", "how": "rebuilt from", "note": "from the cipher lines of the letter alone"},
 {"key": "k-burr1808", "target": "burr1808", "how": "rebuilt from", "note": "index of coincidence and column frequencies on the cipher alone"},
 {"key": "k-soria-lannoy1527", "target": "lannoy1527", "how": "rebuilt from", "note": "recovered from this letter's ciphertext alone (top annealing runs agree on 100% of sign tokens); 95.5% of cipher tokens read, 14 single code groups open"},
+{"key": "k-taulet1866", "target": "taulet1866", "how": "rebuilt from", "note": "rebuilt from the copybook's own cipher runs and tested once on a held-out run and once on new material (N.94); reads all 144 cipher words of both documents"},
 {"key": "k-puente1832", "target": "puente1832", "how": "rebuilt from", "note": "Recovered from word shapes in the ciphertext alone."}
  ],
  "sources": [
