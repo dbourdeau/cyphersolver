@@ -44,6 +44,7 @@ def tdir(folder):
     return TARGETS / folder if (TARGETS / folder).is_dir() or not (ROOT / folder).is_dir() else ROOT / folder
 SITE = 'https://dbourdeau.github.io/cyphersolver/'
 SURVEYS = {'solved', 'highlights', 'top25'}
+INDEX_PAGES = {'siena1421'}   # a page that only lists the write-ups a split series became (Siena, Concistoro 2308)
 TOOL_PAGES = {'atlas', 'keys', 'secret', 'indus-bench', 'glossary', 'contributors', 'contribute', 'further', 'archives', 'findings', '404'}   # interactive and reference pages, not write-ups
 # The famous undeciphered targets (Indus script, Voynich, Beale, Kryptos ...) are written up on the site but keep no
 # profile.json and stay out of the LLM-performance paper data (owner's rule, 23 Sept 2026).
@@ -722,7 +723,7 @@ def audit(brief=False):
     for s in sorted(set(pages) - SURVEYS - listed_slugs): drift.append(f'docs/{s}.html is in the manifest but README has no row linking it')
     # a 'This page has moved' stub left where a target was split or renamed is not a write-up
     moved = {s for s in html_slugs - set(pages) if '<title>Moved: ' in (HERE / f'{s}.html').read_text(encoding='utf-8', errors='replace')[:600]}
-    for s in sorted(html_slugs - set(pages) - SURVEYS - moved): drift.append(f'docs/{s}.html exists but has no PAGES entry in _build_site.py')
+    for s in sorted(html_slugs - set(pages) - SURVEYS - INDEX_PAGES - moved): drift.append(f'docs/{s}.html exists but has no PAGES entry in _build_site.py')
     for s in sorted(listed_slugs - html_slugs): drift.append(f'README links {s}.html, which does not exist in docs/')
     for s in sorted(set(pages) - set(images) - SURVEYS): drift.append(f'{s} has no IMAGES entry (add one, or None)')
     print(f'D. Manifest / README / docs drift: {len(drift)}')
