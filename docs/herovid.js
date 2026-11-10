@@ -19,9 +19,12 @@
     let links=[]; try{ links=JSON.parse(hv.dataset.links||'[]'); }catch(e){}
     const during=links.filter(l=>l[1]!=null), end=links.filter(l=>l[1]==null), endAt=end.length?end[0][0]:Infinity;
     let played=false; try{ played=localStorage.getItem(KEY)==='1'; }catch(e){}
-    let held=still||played, mine=false, over=false;
+    // on a phone, or with data saving on, the poster waits for a tap and nothing of the video is fetched before it
+    const lite=matchMedia('(max-width:760px)').matches || !!(navigator.connection&&navigator.connection.saveData);
+    let held=still||played||lite, mine=false, over=false;
     v.controls=false;
     hv.classList.add('fresh');
+    if(lite){ v.preload='none'; hv.classList.add('lite'); const sh=snd.querySelector('.hv-short'); if(sh) sh.textContent='Play, with sound'; }
 
     // the link under the chapters, and the buttons over the end
     const goEl=document.createElement('p'); goEl.className='hv-go'; goEl.setAttribute('aria-live','polite');

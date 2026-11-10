@@ -411,9 +411,18 @@ document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent)
   if(qm && !document.getElementById('q')){ input.value=decodeURIComponent(qm[1].replace(/\+/g,' ')); open(); }
 })();
 // ledger timeline: drop-in entrance, year cursor, rich tooltip (hover, focus, tap to pin), legend filters
+// The drawing is in timeline.svg (_build_stats.py), fetched only where the screen is wide enough to show it: a phone
+// keeps the century columns beside it and never downloads the dots.
 (function(){
-  const svg=document.querySelector('svg.tl'); if(!svg) return;
-  const wrap=svg.parentNode, tip=wrap.querySelector('.tltip'), cur=svg.querySelector('.cursor'), curYr=cur&&cur.querySelector('.cur-yr');
+  const wrap=document.querySelector('.tlwrap[data-src]'); if(!wrap) return;
+  const wide=matchMedia('(min-width:761px)');
+  const boot=()=>{ if(!wide.matches || wrap.dataset.on) return; wrap.dataset.on='1';
+    fetch(wrap.dataset.src).then(r=>r.ok?r.text():Promise.reject()).then(t=>{
+      wrap.insertAdjacentHTML('afterbegin',t); wrap.style.aspectRatio=''; init(wrap.querySelector('svg.tl')); })
+    .catch(()=>{ wrap.hidden=true; const m=document.querySelector('.tl-mini'); if(m) m.style.display='flex'; }); };
+  boot(); wide.addEventListener('change',boot);
+  function init(svg){
+  const tip=wrap.querySelector('.tltip'), cur=svg.querySelector('.cursor'), curYr=cur&&cur.querySelector('.cur-yr');
   const pts=[...svg.querySelectorAll('.pt')];
   const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
   if(!reduce && 'IntersectionObserver' in window){
@@ -485,6 +494,7 @@ document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent)
         d.p.style.setProperty('--fall',(d.base-9-li*13-d.y)+'px');
       });
   });
+  }
 })();
 
 // Cursor trail: faint cipher letters drift up and fade behind the pointer.

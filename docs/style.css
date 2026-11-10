@@ -2283,3 +2283,87 @@ body.pg-archives #anone{margin:1.2rem 0}
   body.pg-archives .plchip{order:4}
   body.pg-archives .cfilters .fold{display:none}
 }
+
+/* ---------------------------------------------------------------- the home page on a phone (index.html)
+   Five screens rather than twelve: the hero's buttons sit above the fold, the video waits for a tap (herovid.js),
+   the timeline gives way to century columns (_build_stats.py; site.js fetches timeline.svg on wider screens), and the
+   long lists fold. .lg-only / .sm-only mark text for one side of the 760-px line. */
+.sm-only{display:none}
+.sb-big i.lg-only{font-style:normal}
+.tlwrap[data-src]{min-height:4rem}
+.tl-mini{display:none;gap:.35rem;margin:.5rem 0 0}
+.tl-mini a{flex:1;min-width:0;display:flex;flex-direction:column;border:0;text-decoration:none;text-align:center;font:500 .72rem/1.2 var(--ui);color:var(--muted)}
+.tl-mini .tmb{flex:1;display:flex;flex-direction:column;justify-content:flex-end}
+.tl-mini .n{color:var(--ink2);padding-bottom:.2rem}
+.tl-mini .col{display:flex;flex-direction:column-reverse;gap:1px;height:calc(var(--h) * .065rem);min-height:4px;border-radius:3px 3px 0 0;overflow:hidden}
+.tl-mini .col i{display:block;min-height:2px}
+.tl-mini .c{padding:.35rem 0 0;border-top:1px solid var(--rule);white-space:nowrap}
+.tl-mini a:active .n,.tl-mini a:hover .n{color:var(--head)}
+/* the poster with one button in its middle, wherever herovid.js holds the video back for a tap */
+.herovid.lite.fresh.paused .hv-sound{left:50%;top:50%;transform:translate(-50%,-50%);padding:.75rem 1.15rem;white-space:nowrap}
+.herovid.lite.fresh.paused .hv-ctl,.herovid.lite.fresh.paused .hv-ch,.herovid.lite.fresh.paused .hv-go{display:none}
+@media (max-width:760px){
+  .lg-only{display:none !important}
+  .sm-only{display:revert}
+  /* hero: one sentence, the three counts in a row, two full-width buttons; the dateline follows the video */
+  .hero:has(.hero-grid){padding-top:1.5rem;padding-bottom:1.4rem}
+  .hero:has(.hero-grid) .kicker{font-size:.7rem;letter-spacing:.16em}
+  .hero-grid{display:flex;flex-direction:column;align-items:stretch;gap:0}
+  .hero-lead{display:contents}
+  .hero-lead > .sub:first-child{font-size:1rem;line-height:1.5}
+  .herostats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.7rem;margin:1rem 0}
+  .herostats a{white-space:normal;line-height:1.3}
+  .herostats b{display:block;margin:0 0 .2rem;font-size:1.75rem;line-height:1}
+  .hero-cta{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin:.2rem 0 0}
+  .hero-cta .btn{display:flex;align-items:center;justify-content:center;min-height:3rem;padding:.4rem .5rem;text-align:center}
+  .hero-cta .randbtn{display:none}                /* the video's last frame offers it */
+  .hero-media{order:2;margin-top:1.3rem}
+  .hero-lead > .meta{order:3;margin:.9rem 0 0;font-size:.8rem}
+  .hv-ch button{min-height:2.75rem}
+  .hv-ctl button{width:44px;height:44px}
+  /* three ways to help: a row each, sticker, count and line */
+  .helpband{margin:1.4rem 0 2rem}
+  .hb-grid{gap:.5rem}
+  .hb-way{flex-direction:row;align-items:center;gap:.85rem;min-height:4.4rem;padding:.6rem 2.2rem .6rem .8rem}
+  .hb-way .sticker{position:static;flex:none;--sz:3.3rem}
+  .hb-way::after{content:"\2192";position:absolute;right:.9rem;top:50%;transform:translateY(-50%);font-family:var(--ui);color:var(--gold2)}
+  .hb-t{font-size:.92rem;line-height:1.3}
+  .hb-t b{display:inline;margin-right:.2rem;font-size:1.3rem;line-height:1}
+  .hb-d{display:none}
+  .hb-more{font-size:.85rem}
+  .hb-more .btn{display:block;margin:.8rem 0 0;padding:.85rem;text-align:center}
+  /* results: four tiles, the bar, the century columns */
+  .scoreboard{margin-bottom:1.6rem}
+  .scoreboard .sb-lede{margin-bottom:.9rem;font-size:.95rem}
+  .sb-grid{gap:.9rem 1rem;margin-bottom:1rem}
+  .sb-big span{font-size:.82rem;line-height:1.4}
+  .sb-big details summary,.sb-methods > summary{padding:.7rem 0}
+  .sb-big details{margin-top:0}
+  .sb-methods{margin:.2rem 0 .4rem}
+  .tlwrap[data-src]{display:none}
+  .tl-mini{display:flex}
+  .sb-foot{font-size:.75rem}
+  /* latest findings: the head line and two lines of the story */
+  ul.findings li[data-mirror] .fnd{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  ul.findings li[data-mirror] > a{display:inline-block;padding:.5rem 0 .2rem}
+  /* browse: a row of chips for each filter, swiped sideways like the featured cards */
+  .browse{margin:2rem 0}
+  .br-grid{gap:1.1rem}
+  .br-col ul{display:flex;gap:.45rem;border-top:0;overflow-x:auto;scrollbar-width:none;margin:0 -1.2rem;padding:0 1.2rem .2rem}
+  .br-col ul::-webkit-scrollbar{display:none}
+  .br-col li{flex:none}
+  .br-col a{align-items:center;gap:.55rem;white-space:nowrap;min-height:2.75rem;padding:.3rem .9rem;border:1px solid var(--rule);border-radius:999px;background:var(--panel)}
+  /* the catalogue: four rows of the queue, two lines each */
+  ul.list.cattop li:nth-child(n+5){display:none}
+  ul.list.cattop .t{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  #catalogue ~ p.muted{display:none}
+  /* contributors: the first five */
+  .contribstrip{margin:1.8rem 0}
+  .cs-people li:nth-child(n+6){display:none}
+  .cs-people a{align-items:center;min-height:2.75rem}
+  .cs-src{font-size:.85rem}
+  /* thumbs */
+  body:has(.hero-grid) .hlink{display:none}
+  body:has(.hero-grid) .allws a{display:inline-block;padding:.65rem 0}
+  .navtoggle{height:44px}
+}

@@ -831,7 +831,7 @@ anonymous, an office, or has no trustworthy portrait.
 
 Some of the build's furniture lives outside the pages, so that a new write-up rewrites only what it changes. The Write-ups
 menu's Latest and By outcome groups are in `docs/menu.json` (site.js fills them in), and the stylesheet and script stamps
-are a hash of their content, so there is no version to bump. The search texts are in `docs/search-b/NN.json`, sixteen shards
+are a hash of their content, so there is no version to bump. The scoreboard's timeline is `docs/timeline.svg`, written by `_build_stats.py`: site.js fetches it on screens wider than 760 px, and a phone gets the century columns in its place (the home page's phone layout is the last block of `style.css`). The search texts are in `docs/search-b/NN.json`, sixteen shards
 the palette fetches one at a time; a page always falls in the same shard. Every build also writes `feed.xml` and
 `sitemap.xml` ([`docs/_feeds.py`](docs/_feeds.py)), each page's share card and "Cite this page" block, and a short
 meta description (the hand-written one is kept in its `data-full`). [`docs/_images.py`](docs/_images.py) puts width, height

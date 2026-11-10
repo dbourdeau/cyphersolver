@@ -12,7 +12,7 @@ Categories are the README's own sections, one per outcome method (docs/_methods.
 Every number on the page is derived here, nothing is typed in. The Extent column (complete / partial) is counted too.
 Overrides: rows whose target text matches OVERRIDE are moved (none at present).
 """
-import json, re, pathlib, html, datetime
+import json, re, pathlib, html, datetime, hashlib
 
 HERE = pathlib.Path(__file__).parent
 README = HERE.parent / 'README.md'
@@ -130,7 +130,7 @@ def timeline_svg(items):
     hmax = max(h for _, _, h in placed)
     base = top + hmax + 2 * r + 12
     H = round(base + 30)
-    out = [f'<div class="tlwrap"><svg class="tl" viewBox="0 0 {W} {H}" role="img" aria-label="Every target placed by date and coloured by outcome" preserveAspectRatio="xMidYMid meet">']
+    out = [f'<svg xmlns="http://www.w3.org/2000/svg" class="tl" viewBox="0 0 {W} {H}" role="img" aria-label="Every target placed by date and coloured by outcome" preserveAspectRatio="xMidYMid meet">']
     out.append('<defs><filter id="tlglow" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="3.2"/></filter>'
                '<linearGradient id="tlfade" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="currentColor" stop-opacity="0"/>'
                '<stop offset="1" stop-color="currentColor" stop-opacity=".07"/></linearGradient></defs>')
@@ -166,7 +166,37 @@ def timeline_svg(items):
         else:
             out.append(f'<g class="pt {it["cat"]}" tabindex="0" aria-label="{title}"{attrs}{style}>{dot}</g>')
     (pathlib.Path(__file__).parent / 'timeline.json').write_text(json.dumps(tip_data, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
-    out.append('</svg><div class="tltip" role="tooltip" hidden></div></div>')
+    out.append('</svg>')
+    # The drawing is most of the page's weight and too small to use on a phone, so it lives in timeline.svg:
+    # site.js fetches it into the wrapper on a screen wide enough to show it, and a phone gets century_mini() instead.
+    svg = '\n'.join(out)
+    (pathlib.Path(__file__).parent / 'timeline.svg').write_text(svg, encoding='utf-8', newline='\n')
+    stamp = hashlib.sha1(svg.encode('utf-8')).hexdigest()[:8]
+    return (f'<div class="tlwrap" data-src="timeline.svg?v={stamp}" style="aspect-ratio:{W}/{H}"><div class="tltip" role="tooltip" hidden></div></div>\n'
+            '<noscript><style>.tlwrap{display:none}.tl-mini{display:flex}</style></noscript>')
+
+FAMILIES = [(('ct', 'extpt', 'adjpt'), 'var(--green)', 'keys recovered'), (('extkey', 'known', 'deciph'), 'var(--violet)', 'with an existing key or decipherment'),
+            (('notsolved',), 'var(--red)', 'not solved'), (('active', 'na'), 'var(--muted)', 'in progress or not a cipher')]
+
+def century_mini(items):
+    """The phone's stand-in for the timeline: one column per century, stacked by outcome family, each a link to
+    that century's write-ups (the keys are the Century filter's on writeups.html)."""
+    dated = [it for it in items if it['year'] and not it['name'].startswith(OFF_TIMELINE)]
+    key = lambda y: 'early' if y < 1400 else f'{y // 100}00s'
+    cols = [('early', 'before 1400', '&lt;1400')] + [(f'{c}00s', f'{c}00s', f'{c}00s') for c in range(14, 20)]
+    by = {k: [it for it in dated if key(it['year']) == k] for k, _, _ in cols}
+    top = max(len(v) for v in by.values())
+    out = ['<div class="tl-mini" role="group" aria-label="Entries by century and outcome">']
+    for k, name, label in cols:
+        its = by[k]
+        if not its: continue
+        fam = [(sum(1 for it in its if it['cat'] in cats), colour, what) for cats, colour, what in FAMILIES]
+        segs = ''.join(f'<i style="flex:{n};background:{colour}"></i>' for n, colour, _ in fam if n)
+        said = ', '.join(f'{n} {what}' for n, _, what in fam if n)
+        out.append(f'<a href="writeups.html#century={k}&amp;src=page" aria-label="{name}: {len(its)} entries; {said}">'
+                   f'<span class="tmb"><span class="n">{len(its)}</span><span class="col" style="--h:{100 * len(its) / top:.1f}">{segs}</span></span>'
+                   f'<span class="c">{label}</span></a>')
+    out.append('</div>')
     return '\n'.join(out)
 
 def build(items):
@@ -195,19 +225,21 @@ def build(items):
     lines.append('<!-- stats:start -->')
     lines.append('<section class="scoreboard" id="scoreboard" aria-labelledby="sb-h">')
     lines.append('<h2 id="sb-h">Results so far</h2>')
-    lines.append(f'<p class="sb-lede">{total} entries, one per row of the results tables, each classed by <a href="glossary.html">how its text was obtained</a>. {n["na"]} turned out not to be ciphers or could not be reached and {n["active"]} are in progress, which leaves {attacked} attempted; every percentage here is of those {attacked}.</p>')
+    lines.append(f'<p class="sb-lede">{total} entries<span class="lg-only">, one per row of the results tables</span>, each classed by <a href="glossary.html">how its text was obtained</a>. <span class="lg-only">{n["na"]} turned out not to be ciphers or could not be reached and {n["active"]} are in progress, which leaves {attacked} attempted; every percentage here is of those {attacked}.</span><span class="sm-only">Percentages are of the {attacked} attempted.</span></p>')
     lines.append('<div class="sb-grid">')
     by_contrib = sum(1 for it in items if it['cat'] in ('ct', 'extpt', 'adjpt') and it['outside'])
     who = f' {by_contrib} of them with <a href="contributors.html">outside contributors</a>.' if by_contrib else ''
     lines.append(f'<div class="sb-big fam-key"><b>{broke}</b><em>{pc(broke, attacked)} of attempts</em><span>keys recovered by cryptanalysis</span><details><summary>breakdown</summary><span>{n["ct"]} from the ciphertext alone, {n["adjpt"]} from plaintext beside the ciphertext, {n["extpt"]} from plaintext found elsewhere.{who}' + (f' In {ko_b} of them the key was recovered but the text does not yet read.' if ko_b else '') + '</span></details></div>')
     lines.append(f'<div class="sb-big fam-ext"><b>{applied}</b><em>{pc(applied, attacked)} of attempts</em><span>obtained with a key or decipherment that already existed</span><details><summary>breakdown</summary><span>{n["known"]} with a known key, {n["extkey"]} with a key matched here from another document, {n["deciph"]} from a complete existing decipherment.' + (f' In {ko_a} of them the key was applied but the text does not yet read.' if ko_a else '') + '</span></details></div>')
     lines.append(f'<div class="sb-big fam-no"><b>{n["notsolved"]}</b><em>{pc(n["notsolved"], attacked)} of attempts</em><span>closed without recovering the text; each write-up says why</span></div>')
-    lines.append(f'<div class="sb-big"><b>{silence:,}</b><em>years of silence ended</em><span>summed over the {len(read)} dated texts obtained in full ({part} more partial), each counted from its date to {YEAR_NOW}. The oldest is {oldest["name"].split(",")[0].split(" (")[0]} ({oldest["date"]}).</span></div>')
+    lines.append(f'<div class="sb-big"><b>{silence:,}</b><em>years of silence ended</em><span>summed over the {len(read)} dated texts obtained in full<i class="lg-only"> ({part} more partial), each counted from its date to {YEAR_NOW}. The oldest is {oldest["name"].split(",")[0].split(" (")[0]} ({oldest["date"]})</i>.</span></div>')
     lines.append('</div>')
     lines.append(f'<div class="sb-bar" role="img" aria-label="Outcomes of {total} entries by method">{bar}</div>')
     lines.append(f'<details class="sb-methods"><summary>All {sum(1 for c in order if n[c])} categories</summary><div class="sb-legend">{legend}</div></details>')
-    lines.append(f'<p class="sb-note">Every entry by date, {min(span)}&ndash;{max(span)}. Hover or tap a dot for the story; open the categories and click one to isolate it.</p>')
+    lines.append(f'<p class="sb-note lg-only">Every entry by date, {min(span)}&ndash;{max(span)}. Hover or tap a dot for the story; open the categories and click one to isolate it.</p>')
+    lines.append(f'<p class="sb-note sm-only">Entries by century, {min(span)}&ndash;{max(span)}. Tap a century for its write-ups.</p>')
     lines.append(timeline_svg(items))
+    lines.append(century_mini(items))
     lines.append(f'<p class="sb-foot">Counted from the results tables in the <a href="https://github.com/dbourdeau/cyphersolver#results">repository README</a> by <code>_build_stats.py</code>; regenerated {datetime.date.today():%d %B %Y}. Rows are documents, not correspondents.</p>')
     lines.append('</section>')
     lines.append('<!-- stats:end -->')
