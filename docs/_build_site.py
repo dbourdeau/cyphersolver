@@ -13,7 +13,7 @@ findings.html (add new entries at the top of its list and rebuild); index.html m
 It also stamps the dates: the hero dateline, the head meta tags, the index cards, the list rows and each line
 of findings.html all carry the day the finding landed, from _dates.json, which this script maintains.
 """
-import re, sys, pathlib, html, json, hashlib, datetime
+import os, re, sys, pathlib, html, json, hashlib, datetime
 import _images as IMG
 HERE = pathlib.Path(__file__).parent
 ICONS = ('<link rel="icon" href="favicon.svg" type="image/svg+xml">\n<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">\n'
@@ -4444,7 +4444,16 @@ def check_keys(meta):
     return len(kw['keys']), len(kw['links']), len(kw.get('tried', []))
 
 
+def shared_checkout_note():
+    """The main checkout is shared by several sessions. A build there rewrites about 2,000 generated files, which then
+    block every pull until someone discards them (9 Nov 2026 audit). Linked worktrees and CI are the places to build."""
+    if os.environ.get('GITHUB_ACTIONS') or not (HERE.parent / '.git').is_dir(): return ''
+    return ('note: this is the shared main checkout. Build in your own worktree (git worktree add) where you can; if you '
+            'build here, commit or restore every generated file you changed before you stop (git status -sb docs).')
+
+
 if __name__ == '__main__':
+    if shared_checkout_note(): print(shared_checkout_note())
     print('findings moved from index.html to findings.html:', absorb_findings())
     print('solution replays:', write_steps())
     import _catalogue_page as C                 # catalogue.html reads README results and open PRs too: rebuilt every time

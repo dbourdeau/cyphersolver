@@ -119,6 +119,11 @@ author says they will refresh it is held until then, not written up; keep any da
 - Several sessions share this working tree and switch its branch. Run `git status -sb` before committing; if the
   branch is not the one you mean, commit from your own worktree and push `HEAD:main`.
 - Stage by explicit path, never `git add -A`.
+- Build the site in your own worktree, not here: a build rewrites about 2,000 generated files, and left uncommitted
+  they block every pull. If you did build here, commit or restore each generated file you changed before you stop; do
+  not `git checkout -- docs` wholesale, another session's page may be in it.
+- Page images, crops and downloads in folders that hold nothing tracked are git-ignored (the 9 Nov 2026 block at the
+  end of `.gitignore`). Add a rule there for a new working folder; `git add -f <path>` commits one file on purpose.
 - Build from `docs/` with `PYTHONUTF8=1` set; `_build_stats.py` crashes on the cp1252 console without it.
 - `.github/workflows/rebuild-site.yml` rebuilds `docs/` (catalogue included) on every push to main, every PR opened or
   closed, and daily, and commits the result as github-actions[bot]. Pull before pushing; on a conflict in a generated
