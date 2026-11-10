@@ -447,3 +447,51 @@ Six new profile records carry measured cipher-only word shares and full candidat
 transcription/alignment/prose files. Navy and equipment have model-reviewed
 readings; Brent, Wirt and Richmond remain in part, Beauregard decoded not read.
 No independent human review or full-collection completion is claimed.
+
+## 9 November 2026 — continuation after PR205
+
+PR205 merged2November; repository checks found no later target changes or new
+catalogue681 discussion. The community snapshot and new work are in
+REPORT-2026-11-09.md. Continuing existing source alignments and unresolved
+readings locally; overall target remains in progress.
+
+### 9 November 2026 — six further local alignments
+
+PR205 merged2November; no later target change or new catalogue681 issue/PR
+found in repository-scoped checks. Overall target still in progress.
+
+Completed known-key checks of previously located15January OR I/45/2 p785
+(190/213 candidate letters; manuscript RODDY, print RODDEY) and13/14February
+finance OR I/49/1 pp978–979 (221/248; date and duplicated OF/CAN boundaries
+unresolved). No new plaintext recovery claimed for these existing editions.
+
+Added three provisional COME RETRIBUTION readings:13March Brandon/Tucker
+reserves command,13March expected troops for possible Mobile relief,17March
+attributed Orleans report about Selma/Montgomery. Added partial8March
+D.W.Adams COMPLETE VICTORY reading concerning boats/railway protection,
+aided by existing pencil decipherment (hand/date unknown). Eleven/ten-letter
+STEAMBOATS segmentation and one unread ten-letter group remain;17March final
+Montgomery group is also unequal. No full raw-continuous decipherment claimed.
+
+April11 convention/known-key/global-shift experiments recovered synthetic
+controls but no acceptable real text; all real outputs rejected. No different-key
+inference. Bounded primary-edition OCR/phrase negatives do not establish novelty.
+See REPORT-2026-11-09.md, nov9_alignment.json/.tsv, nov9_controls.txt, per-message
+readings/notes and nov9_apr11_conventions_results.txt. Six records added locally,
+with lexical measures and model reviews, not independent handwriting review.
+No new PR/public submission this session.
+
+Late8March follow-up: TLGAIIOKGS deciphers EACHENGINE exactly at COMPLETE
+key offset3, versus continuing offset5. Adjacent GA and final ENEMY/USING/THEM
+still fit their original phases. Saved as a strong local alternative with an
+unresolved two-letter phase conflict; not silently inserted into continuous
+alignment or counted as securely read.
+
+Late9March Adams follow-up: seventh conditional reconstruction now saved.
+Faint possibly cancelled R before ROAD accounts for one-letter phase gap;
+raw retains it. Native crop resolves joined M in ENGINES and PRETEXT. Exact
+ending ON PRETEXT OF helping Georgia Rail Roads replaces rejected PROPERTY/AS.
+123/135 equal-group candidate agreements;140 raw/139 reconstructed letters.
+Seven new records this session,23 total; inventory incomplete.
+
+- 2026-11-10 (submission follow-up): User authorized another PR covering all work since PR205. Prepared seven new cases, methods, prior-text attribution, source manifest, raw/reconstructed alignments, rejected April11 experiments and remaining gaps; target stays in progress. New submission based on latest upstream main; earlier contributions preserved.
