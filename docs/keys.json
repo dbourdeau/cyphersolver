@@ -1,5 +1,6 @@
 {
  "keys": [
+{"id": "k-coahuila1906", "label": "Coahuila state telegraph code 1906, key K1: two-digit homophonic, paired tens (rebuilt by Brice Dudout)", "kind": "rebuilt here", "by": "Brice Dudout", "year": 1906, "note": "Rebuilt from the clear context of telegrams T36 and T104 and frozen; held-out coverage 0.796 against at most 0.545 for shuffled keys, under the 0.80 set in advance (partial)."},
 {"id": "k-r5314", "label": "Angelus cum cifra Vincentij: the Venice envoys of 1446 (ASMi Carteggio Sforzesco cart. 1597 no. 14, DECODE R5314)", "kind": "DECODE key record", "by": "Sforza chancery (18th-century archive copy)", "year": 1446, "note": "Homophonic alphabet (two to five signs for the common letters), a vowel-consonant syllable table, fifteen word signs, a name column (stat = lo Duca de Milano) and nulls. Headed for Johannes de Stavolis, Augustinus, Baptista, Matheus and Vincentius. Reads Contucio's report of 7 Dec 1446 (BnF ital. 1583 f. 148) and Angelo Simonetta's letter of 30 Sept 1446 (f. 89, with its clear text f. 90)."},
 {"id": "k-smolensk1633", "label": "Smolensk siege cipher of June 1633 (marked digits)", "kind": "rebuilt here", "by": "cyphersolver", "year": 1633, "note": "Simple substitution on 24 signs, digits told apart by where a cross stroke sits; rebuilt from the letter of the besieged to Radziwill of 1 June 1633 with W.X.Mci of the clear close as first crib."},
 {"id": "k-imperial-1544", "label": "Imperial Cipher of 1544-1554 (Bertomeu Masiá's reconstruction, pictured by Tomokiyo)", "kind": "scholar's key", "by": "Bertomeu Masiá; Tomokiyo", "year": 1544, "found": 2009, "note": "Base shape for the consonant, mark for the vowel. Extended by hand from the Estense letters, Nov 2026 (targets/gonzaga1549/sign_values.tsv)."},
@@ -2471,6 +2472,7 @@
 {"id": "k-puente1832", "label": "Puente Nacional 1832 vowel-mask key (a = dash, e = i, i = x, o = dot)", "kind": "rebuilt here", "by": "cyphersolver", "year": 1832, "note": "Recovered from word shapes in the ciphertext alone."}
  ],
  "links": [
+{"key": "k-coahuila1906", "target": "coahuila1906", "how": "rebuilt from", "note": "rebuilt by the contributor from two telegrams with the clear context; 73 of 80 coded words read; T54 uses another key"},
 {"key": "k-meister-poggio", "target": "farnese1541", "how": "adapted", "note": "Meister's key no. 2, \"Cifra ultima con Mons. Poggio\", read polyphonically and corrected on the letter: b/c = 02 (printed \"or\"), s/z/et = 1, null 11, ci = 24, co = 26 (not printed); key no. 1 as printed does not fit"},
 {"key": "k-smolensk1633", "target": "smolensk1633", "how": "rebuilt from", "note": "pattern words (nieprzyiaciel, line 1) and the W.X.Mci formula of the clear close"},
 {"key": "k-imperial-1544", "target": "gonzaga1549", "how": "adapted", "note": "Key image read at low resolution, extended by hand from the letters; validated on 2,959 read signs."},
@@ -3991,6 +3993,7 @@
   }
  ],
  "source_links": [
+{"source": "s-cyphersolver", "key": "k-coahuila1906"},
 {"source": "s-cyphersolver", "key": "k-soviet1919"},
 {"source": "s-cyphersolver", "key": "k-carranza1915"},
 {"source": "s-cyphersolver", "key": "k-anker1811"},
