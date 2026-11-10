@@ -1,0 +1,20 @@
+deboli1786 - table 3865 (Deboli, St Petersburg 1786-87): key K3 and its held-out tests, in the order they were run
+Every round was pre-registered and hashed before the held-out ciphers were transcribed; the held-out ciphers were decoded with the
+frozen key and hashed BEFORE the clear of the time (AGAD AKP 269) was opened; one measurement per round; 200 shuffled-key controls.
+Measure: share of the words of the aligned clear read by the decoding (measure_r3, "joined words" rule). Thresholds fixed in advance:
+validated >= 0.85 with a margin >= 0.30 over the best control; PARTIAL = margin >= 0.30 but score under 0.85.
+
+R1 (key K1, held-out Z2-141 and Z2-173):              overall 0.591 against 0.60 then required: failed.
+R2 (key K2, held-out Z3-09 and Z3-10, 26/30 Jan 1787): Z3-10 0.579, Z3-09 0.600, overall 0.598: failed by a hair.
+R3 (key K3, held-out Z2-023 and Z2-119):               Z2-119 0.632, Z2-023 0.492, overall 0.519: failed. Main cause found after the
+                                                       verdict: Z2-023 is a heavily corrected draft whose cipher follows the FIRST
+                                                       state of the text, including passages struck out in the clear.
+R4 (key K3 unchanged, held-out Z2-146, 12 Sep 1786, a fair copy, no struck passages):
+    z2_146 : S = 129/200 = 0.645 ; controls 200/200, max 0.020 -> margin 0.625
+    VERDICT : PARTIAL (the margin passes, 0.85 is not reached). Seed 20261110. Z2-146 is now used up as a test piece.
+
+Ceiling: on clean copies K3 scores 0.63-0.65 (Z2-119 0.632, Z2-146 0.645). The misses are mostly truncated K3 values (reso, exe,
+uau ...) and variants (auoit/avois, idee/idées) that the measure does not join, not wrong values. K3 is therefore a PARTIAL key by
+our protocol: the reading of Z2-146 is offered as a partial reading explained, not as a validated key.
+Hashes (SHA-256): key K3 bcb2bfc2fd368fca...; transcription z2_146 2624993e1f784d5c...; decoding 11d163d85a3ec221...;
+clear of the time (not published, AGAD AKP 269 scans 253 right - 254) 2007cb956e7ca8e1...; verdict 96749bc8495c396d...

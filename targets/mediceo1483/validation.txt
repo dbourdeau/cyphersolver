@@ -1,0 +1,37 @@
+mediceo1483 - catalogue 2309 (ASF MAP XLVIII 214r): tests of George Lasry's Siena no. 11 key, in the order they were run (10 Nov 2026)
+Every step was pre-registered and hashed before the next (transcription, frozen key, decoding, clear, one measurement). Thresholds fixed
+in advance: VALIDATED = score >= threshold (0.60 for the word measure of test 1, 0.85 for the letter agreement of test 2) and margin
+>= 0.30 over the best of 200 shuffled-key controls; PARTIAL = margin >= 0.30 only; otherwise NOT VALIDATED. The key itself was never changed from Lasry's values (only the sign-name mapping of research/siena2308/verify_lasry.py).
+
+1. On 2309 itself (no clear exists): FAILED.
+   Key choice on lines 1-5 (portion A): K_SIENA11 M5 0.1593 against K_LXXII183 0.0000 -> K_SIENA11 chosen, unchanged (e1ef0955...).
+   One measurement on the rest of the page (portion H, 534 tokens, 459 letters), Italian word measure M5 (share of letters in
+   dictionary words of 5+ letters): M5 = 0.2335; best of 200 controls 0.0719 (mean 0.0183); margin 0.1617 < 0.30 -> NOT VALIDATED.
+   Calibration declared in advance: the same script on Siena no. 11 itself (Lasry's reading) gives 0.396 against 0.068 (margin 0.33),
+   so 0.60 was out of reach even for a solved piece; the verdict stands as NOT VALIDATED all the same. After this measurement the whole page has
+   been decoded and seen: 2309 has no fresh portion left for another test.
+
+2. Held out, on another letter of the same sign family: XLVIII 294 (Bernardo Rucellai, Feb 1485), c. 306v lines 1-9, against its
+   contemporary clear copy filed at c. 276 (Daniel's vetting n18: "decipherment filed at c. 276"): PARTIAL.
+   Key K_SIENA11_D1 = K_SIENA11 + D1 ("PLUS ODAG" = c, proposed after test 1 from "hon/honte" -> "con/conte").
+   The first portion chosen (c. 306 bis r) has no clear in c. 276; amendment A1, written before any transcription of the new portion,
+   moved the test to c. 306v l. 1-9 against the part of c. 276r never seen (y >= 880 px).
+   Measure: semi-global Levenshtein alignment of the decoding on the clear, cipher zone only; normalisation a-z, v=u, j/y=i, k=c.
+       339 cipher tokens, 313 decoded letters, clear 1431 letters, 111 operations / 310
+       ACCORD = 0.6419 ; best of 200 controls (letter values permuted between signs, seed 294) 0.2045, mean 0.0449 ; margin 0.4374
+       VERDICT : PARTIAL (the margin passes, 0.85 is not reached).
+   Control declared in advance: K_SIENA11 without D1 gives the same 0.6419 (best control 0.1993, margin 0.4426): the portion contains
+   no "PLUS ODAG", so **D1 was not exercised and remains untested**.
+   Deviations declared: the portion was chosen after a partial look at c. 276 (upper recto, verso); an interlinear gloss "a rendere"
+   above c. 306v l. 4 was seen while transcribing; the transcriber knew the key (shapes first, never the sense). c. 306v l. 1-9 is
+   now used up as a test portion for this key.
+
+Consequence: Lasry's key is PARTIAL by our protocol for this sign family, not validated; the reading of 2309 is offered as a partial
+reading explained (about 35-40 % read). The decoded test portion is in validation/ (transcription and decoding only; the clear of c. 276
+is not reproduced).
+
+Hashes (SHA-256): key K_SIENA11 e1ef0955b9732ddd...; key K_SIENA11_D1 e98d6e96a4553f05...; transcription 2309 e0c946933e333766...;
+measurement on 2309 736a94e0...; pre-registration of test 2 2984d502241ba210...; amendment A1 50e9879e7de71aba...;
+transcription 294 H2 99207daad9e8cc4d... (as frozen; the copy in validation/ differs only in header line 4, where a private
+image-folder path was removed for publication); decoding H2 bc926233f34e532d...; clear c. 276 R2 (not published) 2e5699c8ccae36b3...;
+verdict f31268c4ff882235...; control 7f8ff0f680ae2d3b...

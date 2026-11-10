@@ -1011,6 +1011,11 @@ PAGES = [
          blurb='A Florentine letter in the Sienese cipher file: the orator Donato Acciaiuoli writes from Rome to Lorenzo de&rsquo; Medici seven weeks after the Pazzi conspiracy (Concistoro 2308 fasc. 2 no. 11, DECODE R4800). George Lasry recovered the homophonic key of its two cipher blocks from the ciphertext alone with CTTS and Claude, about 90% certain: Forl&igrave; and Faenza to send two squadrons each, Gianfrancesco Gonzaga offers 80 men-at-arms for 7,000 ducats.',
          quote='&ldquo;volentieri vera a s?ervigi vostri con 80 huomini d&rsquo;arme il meno&rdquo;',
          rights='Manuscript images: Archivio di Stato di Siena, Concistoro 2308, via DECODE R4800'),
+    dict(slug='mediceo1483', label='Mediceo XLVIII 214, Siena no. 11 cipher', year='undated (about 1478&ndash;85)', y=1483.0, place='&rarr; Lorenzo de&rsquo; Medici (probably), Florence', st='partial', stt='read in part',
+         title='An undated cipher letter in the Mediceo avanti il Principato, XLVIII 214, in the Siena no. 11 cipher',
+         blurb='An unsigned, undated cipher letter in the Medici papers of Florence (MAP XLVIII 214, catalogue 2309) turns out to use the same signs and nulls as Donato Acciaiuoli&rsquo;s letter of 1478 (Siena no. 11). Brice Dudout transcribed it and applied George Lasry&rsquo;s key unchanged: about 35&ndash;40% reads, on condottieri, their contracts, Count Antonio, Count Carlo and a sum of 15,000 ducats.',
+         quote='uindici milia ducati',
+         rights='Manuscript: Archivio di Stato di Firenze, Mediceo avanti il Principato XLVIII 214; key by George Lasry; reading by Brice Dudout, Europe chiffr&eacute;e'),
     dict(slug='siena18', label='Siena no. 18, Maximilian I 1496', year='November 1496', y=1496.87, place='Maximilian I (Pisa) &harr; the orators of Siena', st='solved', stt='read',
          title='Siena no. 18: the League articles of Maximilian I',
          blurb='The articles Maximilian I put to the Sienese orators at Pisa in November 1496, subscribed by his secretary Niklas Ziegler, with every sensitive word in cipher (Concistoro 2308 fasc. 2 no. 18, DECODE R4806). The homophonic key was recovered from the ciphertext alone twice: here in September 2026 (87.1%), and independently by George Lasry with CTTS and Claude in October 2026, whose complete reading and dating the page gives; the two keys agree on 35 of his 38 letter signs. Siena to join the Holy League, lend the King 5,000 ducats and open war at Ponte a Valiano.',
@@ -1658,6 +1663,11 @@ PAGES = [
          blurb='Two cipher letters and two troop returns after the capture of Dominica, marked not decrypted in the ANOM inventory. Brice Dudout read them with a key rebuilt from the pencil glosses on the same governor&rsquo;s 1779 letters (0.894 of words on a held-out letter); 455 of 458 words are read.',
          quote='&ldquo;l&rsquo; et at de la situation des troupes&rdquo;',
          rights='Letters: Archives nationales d&rsquo;outre-mer, COL C8 A 77; reading by Brice Dudout, Europe chiffr&eacute;e'),
+    dict(slug='deboli1786', label='Deboli 1786, table 3865', year='12 September 1786', y=1786.7, place='St Petersburg &rarr; Warsaw', st='partial', stt='read in part',
+         title='Deboli to Stanis&#322;aw August, St Petersburg, 12 September 1786: a page in table 3865',
+         blurb='The first page of a despatch of Antoni Augustyn Deboli, Polish envoy at St Petersburg, to King Stanis&#322;aw August, in a numerical code (table 3865) for which no key of the time was found. Brice Dudout learnt a key from other despatches paired with the cabinet&rsquo;s clear texts, froze it, and read this page with it: 196 of 219 groups read by sense, on Deboli&rsquo;s observations on Prince Czartoryski&rsquo;s memorandum.',
+         quote='j&rsquo;ai suivi la dite resolution et l&rsquo;ai execut&eacute;e avant-hier',
+         rights='Despatch: AGAD Warsaw, Zbi&oacute;r Popiel&oacute;w 2 scan 146; reading by Brice Dudout, Europe chiffr&eacute;e'),
     dict(slug='deboli1787', label='Deboli 1787, the older code', year='1786&ndash;87', y=1787.5, place='St Petersburg &rarr; Warsaw', st='partial', stt='read in part',
          title='Deboli and Go&#322;uchowski, St Petersburg, 1787: the despatches in the older code',
          blurb='Fourteen cipher despatches of 1786&ndash;87 from the Polish legation at St Petersburg, in the one-part code of 1783 whose key survives in the same fonds. Brice Dudout transcribed the key and read the pieces blind, without opening the cabinet&rsquo;s clear texts: 81.8% of 7,040 words, on the Russian regiments in Poland and the Empress&rsquo;s journey to the Crimea.',
@@ -4608,6 +4618,8 @@ IMAGES['piccolomini1646'] = None
 IMAGES['mazzinghi1478'] = None
 IMAGES['majesty1624'] = None
 IMAGES['deboli1787'] = None
+IMAGES['deboli1786'] = None
+IMAGES['mediceo1483'] = None
 IMAGES['dahku1715'] = None
 IMAGES['delcarretto1576'] = None
 IMAGES['pawel1624'] = None
