@@ -366,7 +366,13 @@
         "language": "en",
         "state": "read",
         "summary": "Jones reports a long and confidential conversation that morning with the Pasha of Baghdad, who, after telling him of dispatches received from Constantinople on the 15th, openly regretted the alliance the Porte had been forced into with the Russians.",
-        "note": "The letter in code with its clear copy of the time, /51 ('Copy - Original in Cypher. Secret.', pt_51.txt). align_1798.tsv is align.py's group-by-group alignment of the two: 221 groups line up with one word each, 104 are letters of spelled names, 74 clear words match, 4 moves are skips. The plaintext is the contemporary copy's, not a new decipherment; the 1798 key (table_1798.tsv) was built from this pair. The summary is taken from the opening of pt_51.txt."
+        "note": "The letter in code with its clear copy of the time, /51 ('Copy - Original in Cypher. Secret.', pt_51.txt). align_1798.tsv is align.py's group-by-group alignment of the two: 221 groups line up with one word each, 104 are letters of spelled names, 74 clear words match, 4 moves are skips. The plaintext is the contemporary copy's, not a new decipherment; the 1798 key (table_1798.tsv) was built from this pair. The summary is taken from the opening of pt_51.txt.",
+        "reading_review": {
+          "grade": "A",
+          "by": "Claude Fable 5.2",
+          "date": "2026-11-10",
+          "note": "Read through as sentences in the group-by-group alignment (align_1798.tsv) beside the clear copy /51: continuous English with no holes, the Bacha's regret at the Porte's alliance with Russia."
+        }
       },
       {
         "doc": "212",
@@ -377,7 +383,13 @@
         "language": "en",
         "state": "read in part",
         "summary": "The Armenian informant Karapet writes to Jones from Erzeroum: he went in the suite of Abdullah Aga to Merdin, then Dearbekir and Madan, and reached Erzeroum. He reports the disputed succession to the Armenian Patriarchate at Etchmiadzin, a Russian General at Teflis with troops at Pambak, the flight of the Pasha of Akhaltsikhe to Teflis and the Russian threat to Erivan (content proposed, not a reading yet, per NOTES).",
-        "note": "decode_212.txt is ct_212.txt with the 1798 values only (apply.py), groups without a value left as [group:alphabet stretch]. reading_212.txt adds the letters fixed by the 1802 names and proposals.tsv (apply.py --retry): {word} = grade M, {word?} = grade L, [group] = no value. Over both 1802 letters 645 of 708 code groups (91%) read from the 1798 key, the 1802 letters or a grade-H proposal; 32 grade M, 25 grade L, 6 open."
+        "note": "decode_212.txt is ct_212.txt with the 1798 values only (apply.py), groups without a value left as [group:alphabet stretch]. reading_212.txt adds the letters fixed by the 1802 names and proposals.tsv (apply.py --retry): {word} = grade M, {word?} = grade L, [group] = no value. Over both 1802 letters 645 of 708 code groups (91%) read from the 1798 key, the 1802 letters or a grade-H proposal; 32 grade M, 25 grade L, 6 open.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude Fable 5.2",
+          "date": "2026-11-10",
+          "note": "reading_212.txt read through as sentences: coherent English narrative throughout (Karapet's journey, the Patriarch dispute, troops at Pumbec); raw apply.py output with scattered doubtful words in braces and a few unread groups ([48,75,3], [239,69], [443,48], [53,36]); the sense of each sentence holds."
+        }
       },
       {
         "doc": "217",
@@ -388,7 +400,13 @@
         "language": "en",
         "state": "read in part",
         "summary": "Karapet's second letter from Erzeroum: he sent a messenger fourteen days before and awaits orders; it is said 8000 troops have joined the 12000 at Pumbec, whose commander is called Altoon Iaak from having lost a leg in war and wearing a golden or gilt one in its place (content proposed, not a reading yet, per NOTES).",
-        "note": "decode_217.txt is ct_217.txt with the 1798 values only (apply.py); reading_217.txt adds the 1802 letters and proposals.tsv (apply.py --retry), marked as in reading_212.txt. The 91% share is measured over both 1802 letters together."
+        "note": "decode_217.txt is ct_217.txt with the 1798 values only (apply.py); reading_217.txt adds the 1802 letters and proposals.tsv (apply.py --retry), marked as in reading_212.txt. The 91% share is measured over both 1802 letters together.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude Fable 5.2",
+          "date": "2026-11-10",
+          "note": "reading_217.txt read through as sentences: coherent English (20,000 troops at Pumbec, the Patriarch seized, the khan of Erivan's answer); raw apply.py output with doubtful words in braces, most densely in the last sentence."
+        }
       }
     ]
   }
