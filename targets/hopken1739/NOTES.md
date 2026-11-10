@@ -120,7 +120,7 @@ mean 25.5, maximum 36.)
 - [x] siblings: leaves 258-261 (French gloss) and 322-327 (Swedish gloss) opened; 264-266 bare. **322-327 are a different
   code**: groups run to about 1915 (1774, 1800, 1825, 1868, 1869 clear on 326) and the values clash with this key (1532 =
   Suède here but falls inside Swedish words there). By "one key, one entry" they belong to a separate target; their raw
-  transcriptions (pairs_322_324.tsv, pairs_325_327.tsv, pass 1, rough gloss) are kept here until it is opened.
+  transcriptions moved to `targets/hopken1740/` (opened 10 Nov 2026), a different cipher with its own folder.
 - [x] known-keys: the only other Swedish chancery key in the repository (stade1710, 1710) is a one-part list below ~1100; no fit.
 - [x] print: web searches (Swedish and English) found only the Carleson-Höpken travel account (Stockholm 1768) and Görür 2021
   (citation only); no edition or decipherment of the despatches.
