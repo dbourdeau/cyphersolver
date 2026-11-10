@@ -105,6 +105,14 @@ mean 25.5, maximum 36.)
 - The 257 left-page dialogue breaks off ("Celle-ci fait ..."); its continuation was not located.
 - The speaker tags 1440 and 1529 are not decoded; B = Villeneuve is a proposal from the content.
 
+## Escalation
+
+- 10 Nov 2026 (key-rebuild, next step): Riksarkivet IIIF was blocked from the default cloud environment; a personal
+  environment "cyphersolver" allowing lbiiif.riksarkivet.se and sok.riksarkivet.se now reaches it. Images 258, 259 and
+  261 fetched to scans/ (git-ignored). 258 and 261 are more glossed pages (French over the numbers, several hundred
+  groups). Not yet transcribed: the owner is choosing the scope. Next: two-pass transcription of 258, 259, 261 and
+  322-327, rebuild the key, then retry 263 and the bare pages 264-266.
+
 ## Catalogue 1772/1773 (Dorffler, Poland)
 
 Not worked. Their catalogue descriptions give 2-3 digit numbers up to about 320, which is not this 4-digit code. They do not
