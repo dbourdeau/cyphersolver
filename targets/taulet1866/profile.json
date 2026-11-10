@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "taulet1866",
- "title": "Copybook of colonel Bernardo Taulet, Jalet (Falset), Jan-Mar 1866 (AHN Diversos-Colecciones 193 N.99): homophonic letter cipher, key partial by our protocol, read in part",
+ "title": "Copybook and letters received of colonel Bernardo Taulet, Jalet (Falset), Jan-Mar 1866 (AHN Diversos-Colecciones 193 N.99 and N.94): homophonic letter cipher, key partial by our protocol, read in part",
  "documents": [
   {
    "id": "ahn-dc-193-n99",
@@ -36,6 +36,40 @@
     "source": "PARES images (AHN), not reproduced",
     "image_quality": "good",
     "notes": "One AI transcription of all 33 runs, frozen by SHA-256 before any key was built; the held-out run S33 transcribed last, mechanically. No human palaeographer."
+   }
+  },
+  {
+   "id": "ahn-dc-193-n94",
+   "read": "read in part",
+   "shelfmark": "Madrid, Archivo Histórico Nacional, DIVERSOS-COLECCIONES,193,N.94 (PARES 5855640), views 26, 43, 78, 87",
+   "date": "January 1866",
+   "year": 1866,
+   "country": "Spain",
+   "route": "Letters and telegrams received by colonel Bernardo Taulet: a letter from Albarca (28 Jan 1866), a telegram of the Minister of War forwarded by the Captain General, an acknowledgement, a report of troop strength",
+   "places": {
+    "from": "Albarca and others (Tarragona province)",
+    "to": "Jalet (Falset), Tarragona province"
+   },
+   "language": "Spanish",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaves; the cipher runs are set in clear Spanish letters.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 325,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription_n94.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "PARES images (AHN), not reproduced",
+    "image_quality": "good",
+    "notes": "One mechanical AI transcription of the 17 runs of the four views chosen as held-out portion, frozen by SHA-256 before decoding (retest/). Two doubtful calls declared in validation.txt. No human palaeographer."
    }
   }
  ],
@@ -77,7 +111,7 @@
   "attack": "ciphertext-only",
   "first_date": "2026-11-09",
   "last_date": "2026-11-10",
-  "human_role": "Brice Dudout chose the target and set the rules (held-out set, threshold and measuring script frozen before decoding, one measurement) and approved publication as read in part although the margin rule was not met. AI agents transcribed, rebuilt the key, measured, read and wrote up. No human checked the transcription or the reading.",
+  "human_role": "Brice Dudout chose the target and set the rules (held-out set, threshold and measuring script frozen before decoding, one measurement; one re-test on new material N.94 pre-registered the same way) and approved publication as read in part although the margin rule was not met. AI agents transcribed, rebuilt the key, measured, read and wrote up. No human checked the transcription or the reading.",
   "models": [
    "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
   ]
@@ -109,36 +143,51 @@
    "kind": "reading",
    "what": "Read by sense: 76 cipher words, 71 certain, 5 probable, 0 restored, 0 unresolved.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One pre-registered re-test of the unchanged frozen key on new material, N.94 views 43, 87, 78, 26 (325 numbers, 17 runs): lexicon coverage 0.960 vs best of 200 shuffled keys 0.699, margin 0.261; rule car >= 0.85 and margin >= 0.30: not met again.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "reading",
+   "what": "N.94 read by sense: 68 cipher words, 54 certain, 14 probable, 0 restored, 0 unresolved; numbers 12 (= y) and 78 (= u), absent from the key, derived after the measure and not tested.",
+   "result": "partial"
   }
  ],
  "outcome": {
   "class": "read in part",
   "key": "partial",
   "method": "key recovered from ciphertext-only",
-  "method_basis": "Key rebuilt here from the cipher, with the clear words of the reports as context; one pre-registered held-out measurement fell short of the contributor's margin rule (0.277 < 0.30), so the key is 'partial' although it reads every run.",
+  "method_basis": "Key rebuilt here from the cipher, with the clear words of the reports as context; two pre-registered held-out measurements (S33 of N.99, then new material N.94) fell short of the contributor's margin rule (0.277 and 0.261 < 0.30), so the key is 'partial' although it reads every run.",
   "contribution": [
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.934,
+  "fraction_read": 0.868,
   "fraction_read_method": "estimated",
-  "fraction_read_source": "reading.md: 76 cipher words, 71 certain, 5 probable, 0 restored, 0 unresolved; 0.934 = certain only (76/76 = 1.0 with probable words, Daniel's rule). Classed 'read in part' because the key failed our own validation rule.",
+  "fraction_read_source": "reading.md and reading_n94.md: 144 cipher words in all (N.99 76: 71 certain, 5 probable; N.94 68: 54 certain, 14 probable), 0 restored, 0 unresolved; 0.868 = certain only, 125/144 (144/144 = 1.0 with probable words, Daniel's rule). Classed 'read in part' because the key failed our own validation rule twice.",
   "verification": [
    "statistical test",
    "historical consistency"
   ],
   "validation": {
-   "date": "2026-11-09",
+   "date": "2026-11-10",
    "verdict": "weak",
    "file": "validation.txt",
-   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): transcription, key and measuring script frozen by SHA-256 before the held-out run S33 (51 numbers) was decoded; one measurement. car 0.981, best of 200 shuffled keys 0.704, margin 0.277. Criterion (car >= 0.85 and margin >= 0.30): NOT MET, key partial. H burned, no other unseen cipher in the unit. Declared leak: values of T read by eye before the transcription was frozen (T only)."
+   "notes": "Contributor's pre-registered held-out tests (not docs/_validate.py), one measurement each, key and script frozen by SHA-256. (1) 9 Nov, H = S33 of N.99 (51 numbers): car 0.981, best of 200 shuffled keys 0.704, margin 0.277. (2) 10 Nov, re-test on new material N.94 views 43, 87, 78, 26 (325 numbers, 17 runs; retest/): car 0.960, best of 200 shuffled keys 0.699, margin 0.261. Criterion (car >= 0.85 and margin >= 0.30): NOT MET both times, key partial; both portions burnt. The shuffled-key controls sit near 0.70 whatever the length, so the 0.30 margin is structurally near unreachable for this system with this measure (a fact, reported with the rule as written). Declared leaks and deviations in validation.txt: values of T read by eye before freezing (N.99, T only); clear words of N.94 views 43 and 87 seen after the key was frozen; two doubtful transcription calls in N.94."
   },
   "provenance": "contributed",
   "credits": [
    {
     "who": "dudout",
     "role": "solution",
-    "note": "transcription, key rebuilt (partial by our protocol: held-out 0.981 vs 0.704, margin 0.277 < 0.30), all 76 cipher words read by sense (71 certain, 5 probable), translation",
+    "note": "transcription, key rebuilt (partial by our protocol: held-out 0.981 vs 0.704, margin 0.277; re-test on N.94 0.960 vs 0.699, margin 0.261; both < 0.30), all cipher words read by sense (N.99 76: 71 certain, 5 probable; N.94 68: 54 certain, 14 probable), translation",
     "date": "2026-11-10"
    },
    {
@@ -150,15 +199,20 @@
    {
     "who": "ahn",
     "role": "pointer",
-    "note": "Archivo Histórico Nacional: the copybook (DIVERSOS-COLECCIONES,193,N.99), described on PARES as containing cipher documents, images online on PARES (5928106)",
+    "note": "Archivo Histórico Nacional: the copybook (DIVERSOS-COLECCIONES,193,N.99, PARES 5928106) and the letters received (N.94, PARES 5855640), described on PARES as containing cipher documents, images online on PARES",
     "date": "2026-11-09"
    }
   ],
   "gaps": [
    {
-    "item": "Key not validated (held-out margin 0.277 under the 0.30 rule)",
+    "item": "Key not validated (held-out margins 0.277 on S33 and 0.261 on N.94, under the 0.30 rule)",
     "blocker": "too-short",
-    "detail": "the held-out run has 51 numbers and no other unseen cipher remains in the unit; fresh cipher under the same key (other 1866 papers of the same command) would allow a new test"
+    "detail": "no unseen cipher under the same key is left (both held-out portions burnt); length alone does not lift the margin because the shuffled-key controls stay near 0.70, so a further test needs fresh cipher of the same command (N.95, other 1866 units) and a pre-registered null other than lexicon coverage"
+   },
+   {
+    "item": "Two values derived from N.94 after the measure (12 = y, 78 = u, key_derived_n94.tsv) are untested",
+    "blocker": "too-short",
+    "detail": "derived from the measured portion itself; no fresh cipher under the same key in hand to test them"
    }
   ],
   "texts": [
@@ -179,9 +233,27 @@
      "date": "2026-11-10",
      "note": "Read as sentences 9 Nov 2026 by one AI reader and rechecked 10 Nov 2026 before publication: every cipher run construes as Spanish inside the clear reports; 71 certain, 5 probable (one number corrected by sense each), 0 restored, 0 unresolved of 76. Grade B, read in part, because the key is partial by our own protocol (margin 0.277 < 0.30)."
     }
+   },
+   {
+    "doc": "ahn-dc-193-n94",
+    "label": "letters and telegrams received, Jan 1866 (views 43, 87, 78, 26): the re-test portion, cipher runs in clear letters",
+    "transcription": "transcription_n94.txt",
+    "decryption": "decryption_n94.txt",
+    "reading": "reading_n94.md",
+    "translation": "translation_n94.md",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.794,
+    "summary": "A letter from Albarca (28 Jan 1866) promises to carry out a superior order and report the result, in answer to a dispatch received at 9 in the evening. A telegram of the Minister of War, forwarded by the Captain General, orders that no concession be made to the rebel Escoda, that he be judged according to the laws if arrested, that the prisoners be judged too, and that not only Escoda and Sagueta but all the other scattered men be arrested. An acknowledgement of the 28th, and a strength of 242 men, drummers included, so that each of three columns can only have 81.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "date": "2026-11-10",
+     "note": "Read as sentences 10 Nov 2026 by one AI reader after the single measurement: every cipher run construes as Spanish inside the clear letters; 54 certain, 14 probable (a number corrected by sense, or 12/78 absent from the key read by sense), 0 restored, 0 unresolved of 68. Grade B, read in part, because the key is partial by our own protocol (margin 0.261 < 0.30)."
+    }
    }
   ],
   "key_file": "key.tsv",
-  "notes": "key.tsv (CC BY 4.0) is partial by our protocol; it reads all runs. No image of the AHN/PARES copybook is included."
+  "notes": "key.tsv (CC BY 4.0) is partial by our protocol and unchanged; it reads all runs of N.99 and, with two numbers missing, of N.94. key_derived_n94.tsv gives 12 = y and 78 = u, derived after the measure, not tested. No image of the AHN/PARES documents is included."
  }
 }
