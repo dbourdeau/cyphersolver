@@ -20,16 +20,17 @@
    },
    "length": {
     "tokens": 18,
-    "distinct": 11,
+    "distinct": 10,
     "unit": "letters",
     "measured": true,
     "file": "inscription.txt"
    },
    "transcription": {
-    "by": "published",
-    "source": "British Library Medieval manuscripts blog, 11 Aug 2015 (J. Harrison); Winter, Waffen- und Kostuemkunde 58/2 (2016)",
-    "image_quality": "unknown",
-    "notes": "Letters as published, between two crosses; no photograph was examined here."
+    "by": "mixed",
+    "source": "British Library Medieval manuscripts blog, 3 Aug 2015 (J. Harrison); Winter, Waffen- und Kostuemkunde 58/2 (2016); checked 11 Nov 2026 (Brice Dudout) on two British Museum photographs: the BL blog inscription detail ('courtesy of the British Museum') and BM collection image 00296785 (not reproduced)",
+    "corrections": 2,
+    "image_quality": "good",
+    "notes": "#10 read as uncial N and #11 as C (BL 2015: R, G); the Stamford Mercury of 18 Aug 1826 (quoted by Rob Wheeler) and van Hasselt 2015 have N and C there. #17 V (or Y) and #18 I (or N, against the final cross) uncertain. Details: dudout/TRANSCRIPTION.md."
    },
    "read": "not read"
   }
@@ -40,7 +41,7 @@
   ],
   "summary": "Eighteen capital letters inlaid in gold wire between two crosses; no word division; system unknown (abbreviation or initials inscription is one proposal, not shown).",
   "symbol_kind": "letters",
-  "distinct_symbols": 11,
+  "distinct_symbols": 10,
   "diacritics": {
    "used": false
   },
@@ -57,7 +58,7 @@
   "word_division": "none",
   "doubled_letters": "not applicable",
   "sibling_key": "unknown",
-  "notes": "Vowels O, O, I are 3 of 18 letters (about 17%), far below Latin running text; fits initials or abbreviations, shown by count only. W is not a Latin letter."
+  "notes": "Vowels O, O, I are 3 of 18 letters (about 17%), far below Latin running text; fits initials or abbreviations, shown by count only. W is not a Latin letter. Letter order matches the SDX invocation family of Wagner et al. 2009: longest common subsequence with Fyris UMF/B 74 13 of 18 letters (p 0.0002 against 5000 shuffles, 0.004 after Bonferroni over 18 siblings), with Marburg 11 of 18 (p 0.0012, 0.02 corrected); controls null (dudout/README.md)."
  },
  "conditions": {
   "prior_solution": {
@@ -67,20 +68,23 @@
    "used": false
   },
   "inputs": [
-   "transcription"
+   "images",
+   "transcription",
+   "published reading"
   ],
   "attack": "ciphertext-only",
   "human_role": "Set the goal \"solve the cipher from the Witham Sword\"; no target-specific intervention recorded.",
   "tools": [
    "web search",
-   "manual frequency count"
+   "manual frequency count",
+   "Python (LCS, permutation tests)"
   ],
   "models": [
    "unknown"
   ],
   "sessions": "unknown",
   "first_date": "2026-11-09",
-  "last_date": "2026-11-09"
+  "last_date": "2026-11-11"
  },
  "solution": [
   {
@@ -109,20 +113,94 @@
    "kind": "verification",
    "what": "Judged Winter's initials reading: coherent but each expansion (X = CH, W a name) is chosen to fit; 18 letters cannot test it.",
    "result": "ruled out"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "transcription",
+   "what": "Read #10 as uncial N and #11 as C with curled upper terminal on two British Museum photographs (not reproduced); agrees with the Stamford Mercury of 18 Aug 1826 and with van Hasselt 2015. New reading +NDXOXCHWDNCHDXORVI+ (dudout/TRANSCRIPTION.md).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "sibling key",
+   "technique": [
+    "repeat/pattern analysis",
+    "statistical test"
+   ],
+   "what": "Longest common subsequence with 18 published sibling inscriptions (Wagner et al. 2009) against 5000 shuffles of the Witham letters: Fyris 74 13/18 p 0.0002, Marburg 11/18 p 0.0012 (Bonferroni x18: 0.004, 0.02); same with the BL 2015 reading (Fyris 74 p 0.0008); controls (Ulfberht, IN NOMINE DOMINI, GICELIN, HOMO DEI, INGELRII, St Benedict medal, laudes initials, Witham reversed) p 0.3-1.0. Shows family membership, not a reading.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "statistics",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Contiguous runs of initials / nomina sacra against 44 Latin prayers and formulas: best run 3 letters, p 0.73 against 1000 shuffles: not the acrostic of a known prayer.",
+   "result": "ruled out"
   }
  ],
  "outcome": {
   "method": "not solved",
   "method_basis": "Eighteen letters with no key, clear copy or plaintext: any abbreviation expansion fits after the fact, and the sibling blades are themselves unread.",
   "contribution": [
-   "none"
+   "transcription"
   ],
   "class": "not read",
   "fraction_read": 0,
   "verification": [
    "none"
   ],
-  "notes": "Only route: read the inscribed-sword family together (needs photographs and the Wagner/Worley catalogue).",
-  "credits": []
+  "notes": "Only route: read the inscribed-sword family together (needs photographs and the Wagner/Worley catalogue). 11 Nov 2026 (Brice Dudout): transcription corrected at #10-11 (removes the 'R(e)g(em)' / DRGHD basis of Winter 2016 and others); family membership measured; the expansions of the family elements (DX = Dominus Christus, O invocative, EH(R)) remain Wagner et al.'s conjecture, and no expansion of Witham is testable.",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "date": "2026-11-11",
+    "note": "#10 uncial N and #11 C read on two BM photographs; family match measured (LCS with Fyris 74 and Marburg against shuffles); prayer-acrostic fit ruled out (dudout/README.md)"
+   },
+   {
+    "who": "vanhasselt",
+    "role": "transcription",
+    "date": "2015-08-06",
+    "source": "https://blogs.bl.uk/digitisedmanuscripts/2015/08/help-us-decipher-this-inscription.html",
+    "note": "read +ND XOX CH WDN CH DXO RVI+ (N and C at #10-11) and placed the blade in the Alphen / Wagner-Worley family"
+   },
+   {
+    "who": "wheeler_r",
+    "role": "pointer",
+    "date": "2015-08-07",
+    "source": "https://blogs.bl.uk/digitisedmanuscripts/2015/08/help-us-decipher-this-inscription/comments/page/2/",
+    "note": "Stamford Mercury, 18 Aug 1826: an early printed copy, with N and C at #10-11"
+   },
+   {
+    "who": "wagner_tg",
+    "role": "key or decipherment used",
+    "date": "2009",
+    "source": "Waffen- und Kostuemkunde 51 (2009) 11-52, urn:nbn:se:uu:diva-113084",
+    "note": "sibling letter readings (Fyris 74, Marburg, W 879 ...) and letter forms used for the family test"
+   },
+   {
+    "who": "worley",
+    "role": "key or decipherment used",
+    "date": "2009",
+    "source": "Waffen- und Kostuemkunde 51 (2009); 55 (2013)",
+    "note": "sibling readings, as co-author with Wagner"
+   },
+   {
+    "who": "holstblennow",
+    "role": "key or decipherment used",
+    "date": "2009",
+    "source": "Waffen- und Kostuemkunde 51 (2009)",
+    "note": "sibling readings, as co-author with Wagner"
+   },
+   {
+    "who": "beckholmen",
+    "role": "key or decipherment used",
+    "date": "2009",
+    "source": "Waffen- und Kostuemkunde 51 (2009)",
+    "note": "sibling readings, as co-author with Wagner"
+   }
+  ]
  }
 }

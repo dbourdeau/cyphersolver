@@ -1,0 +1,134 @@
+== 1. initial-letter statistics (formula corpus, 44 texts, 447 words)
+  N  n= 35  nobis 11, nos 6, nomine 4, nomen 2, nunc 2
+  D  n= 52  deus 8, domini 6, dominus 6, domine 6, dei 5
+  X  n=  0  
+  O  n= 16  ora 4, osanna 2, o 2, omni 1, oderunt 1
+  C  n= 27  christus 6, christe 5, caeli 3, cum 2, caelum 1
+  H  n=  4  hoc 1, habitavit 1, hunc 1, hic 1
+  W  n=  0  
+  R  n=  7  rex 2, regina 2, regnat 1, regnum 1, radix 1
+  V  n= 11  venit 1, vincit 1, ventris 1, voluntas 1, verbum 1
+  I  n= 36  in 20, iesus 4, imperat 1, illorum 1, ibat 1
+  B  n= 10  benedictus 3, benedicat 2, benedictum 1, bellum 1, benedicta 1
+  E  n= 49  et 25, eleison 3, eum 3, excelsis 2, exaudi 2
+  S  n= 41  sanctus 6, sancte 3, spiritus 2, sicut 2, sancta 2
+  M  n= 35  miserere 3, me 3, mea 3, meus 2, manus 2
+  T  n= 26  tuum 3, tuo 3, tua 2, terra 2, tollis 2
+  F  n= 17  filii 1, fecit 1, fructus 1, fiat 1, filio 1
+  Z  n=  0  
+
+== 2. formula runs (contiguous; letter = initial or nomen-sacrum contraction)
+
+  witham_BL  NDXOXCHWDRGHDXORVI
+    max run: obs 2 / 18 letters; p(shuffled >= obs) = 1.000
+    coverage>=3: obs 0 / 18 letters; p(shuffled >= obs) = 1.000
+    max run without CH unit: obs 2; p = 1.000
+
+  witham_new  NDXOXCHWDNCHDXORVI
+    len 3  pos 9-12  christe_audi           nos christe
+    len 3  pos 10-13  ichthys                christus dei
+    max run: obs 3 / 18 letters; p(shuffled >= obs) = 0.725
+    coverage>=3: obs 4 / 18 letters; p(shuffled >= obs) = 0.368
+    max run without CH unit: obs 2; p = 1.000
+
+  alphen_A  BENEDOXOFTISSCSDRRISCDICECMTINIUSCSDNI
+    len 5  pos 11-16  sanctus                sanctus sanctus dominus
+    len 5  pos 18-23  ichthys                iesus christus dei
+    len 4  pos 11-15  sanctus                sanctus sanctus
+    len 4  pos 12-16  sanctus                sanctus dominus
+    len 4  pos 32-36  sanctus                sanctus dominus
+    len 4  pos 23-27  sanctus(mirror)        sanctus sanctus
+    len 4  pos 12-16  trisagion              sanctus deus
+    len 4  pos 32-36  trisagion              sanctus deus
+    len 4  pos 2-6  trisagion(mirror)      deus sanctus
+    len 4  pos 22-26  trisagion(mirror)      deus sanctus
+    len 4  pos 2-6  benedictio_ensis(mirror) deo servientium contra saevitiam
+    len 4  pos 22-26  benedictio_ensis(mirror) deo servientium contra saevitiam
+    len 3  pos 35-38  in_nomine_domini       domini
+    len 3  pos 0-3  in_nomine_domini(mirror) in nomine domini
+    len 3  pos 35-38  adiutorium             domini
+    len 3  pos 0-3  adiutorium(mirror)     in nomine domini
+    len 3  pos 35-38  sit_nomen              domini
+    len 3  pos 35-38  benedictus_qui_venit   domini
+    len 3  pos 0-3  benedictus_qui_venit(mirror) in nomine domini
+    len 3  pos 22-25  pater_noster           in caelo et
+    len 3  pos 12-15  sanctus                sanctus
+    len 3  pos 32-35  sanctus                sanctus
+    len 3  pos 3-6  sanctus(mirror)        sanctus
+    len 3  pos 23-26  sanctus(mirror)        sanctus
+    len 3  pos 1-4  gloria_patri           et nunc et
+    len 3  pos 34-37  gloria_patri(mirror)   et nunc et
+    len 3  pos 35-38  sancte_michael         defende nos in
+    len 3  pos 12-15  trisagion              sanctus
+    len 3  pos 32-35  trisagion              sanctus
+    len 3  pos 3-6  trisagion(mirror)      sanctus
+    len 3  pos 23-26  trisagion(mirror)      sanctus
+    len 3  pos 21-24  domine_iesu            domine iesu christe
+    len 3  pos 7-10  ps66_benedicat         omnes fines terrae
+    len 3  pos 1-4  ps66_benedicat(mirror) nos deus
+    len 3  pos 35-38  ecce_crucem            domini
+    len 3  pos 20-23  ichthys                christus dei
+    len 3  pos 18-21  dominus_iesus_christus iesus christus
+    len 3  pos 21-24  dominus_iesus_christus dominus iesus christus
+    len 3  pos 12-15  benedictio_ensis       servientium contra saevitiam
+    len 3  pos 19-22  benedictio_ensis       se circumcingi desiderat
+    len 3  pos 32-35  benedictio_ensis       servientium contra saevitiam
+    len 3  pos 3-6  benedictio_ensis(mirror) servientium contra saevitiam
+    len 3  pos 23-26  benedictio_ensis(mirror) servientium contra saevitiam
+    len 3  pos 35-38  benedicite             domini
+    len 3  pos 16-19  in_manus_tuas(mirror)  domine commendo spiritum
+    max run: obs 5 / 38 letters; p(shuffled >= obs) = 0.059
+    coverage>=3: obs 24 / 38 letters; p(shuffled >= obs) = 0.017
+    max run without CH unit: obs 5; p = 0.048
+
+  alphen_B  DIOXMTINIUSESDIOMTINIUSCSDICCCMTDICIIZISI
+    len 4  pos 22-26  sanctus                sanctus dominus
+    len 4  pos 22-26  trisagion              sanctus deus
+    len 4  pos 15-19  trisagion(mirror)      deus sanctus
+    len 4  pos 15-19  benedictio_ensis(mirror) deo servientium contra saevitiam
+    len 3  pos 22-25  sanctus                sanctus
+    len 3  pos 16-19  sanctus(mirror)        sanctus
+    len 3  pos 12-15  sancta_maria           sancta dei
+    len 3  pos 24-27  sancta_maria           sancta dei
+    len 3  pos 22-25  trisagion              sanctus
+    len 3  pos 16-19  trisagion(mirror)      sanctus
+    len 3  pos 25-28  domine_iesu            domine iesu christe
+    len 3  pos 32-35  domine_iesu            domine iesu christe
+    len 3  pos 27-30  ps67_exsurgat(mirror)  deus et
+    len 3  pos 27-30  ps66_benedicat(mirror) deus et
+    len 3  pos 14-17  magnificat(mirror)     in deo salutari
+    len 3  pos 26-29  magnificat(mirror)     in deo salutari
+    len 3  pos 25-28  dominus_iesus_christus dominus iesus christus
+    len 3  pos 32-35  dominus_iesus_christus dominus iesus christus
+    len 3  pos 22-25  benedictio_ensis       servientium contra saevitiam
+    len 3  pos 30-33  benedictio_ensis       maiestatis tuae dextera
+    len 3  pos 16-19  benedictio_ensis(mirror) servientium contra saevitiam
+    len 3  pos 30-33  in_manus_tuas          manus tuas domine
+    max run: obs 4 / 41 letters; p(shuffled >= obs) = 0.370
+    coverage>=3: obs 14 / 41 letters; p(shuffled >= obs) = 0.484
+    max run without CH unit: obs 4; p = 0.371
+
+== 3. family alignment (Witham vs published siblings; shuffle null n=1000)
+
+  witham_BL NDXOXCHWDRGHDXORVI
+    w879_a         LCSubstr 4 'HDXO'
+    marburg        LCSubstr 4 'HDXO'
+    stevensweert*  LCSubstr 3 'XOR'
+    distinct trigrams shared with sibling pool: 2; p(shuffled >= obs) = 0.0889
+    longest common substring with any sibling: 4; p = 0.0240
+
+  witham_new NDXOXCHWDNCHDXORVI
+    w879_a         LCSubstr 4 'HDXO'
+    marburg        LCSubstr 4 'HDXO'
+    stevensweert*  LCSubstr 3 'XOR'
+    distinct trigrams shared with sibling pool: 2; p(shuffled >= obs) = 0.1469
+    longest common substring with any sibling: 4; p = 0.0430
+
+  controls (same test):
+    ulfberht   VLFBERHT                                   trigrams  0 p=1.0000
+    innomine   INNOMINEDOMINI                             trigrams  3 p=0.0675
+    gicelin    GICELINMEFECIT                             trigrams  1 p=0.6772
+    homodei    HOMODEI                                    trigrams  0 p=1.0000
+    ingelrii   INGELRIIMEFECIT                            trigrams  1 p=0.7971
+    alphen_A   BENEDOXOFTISSCSDRRISCDICECMTINIUSCSDNI     trigrams 18 p=0.0005
+    alphen_B   DIOXMTINIUSESDIOMTINIUSCSDICCCMTDICIIZISI  trigrams 14 p=0.0005
