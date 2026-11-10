@@ -1,0 +1,138 @@
+{
+ "schema_version": 1,
+ "target": "hopken1740",
+ "title": "Höpken and Carlson, Constantinople, to the King of Sweden, January 1740: despatch in a second numerical code with the contemporary Swedish decipherment written over it (split from catalogue 1771); transcribed, key not yet built",
+ "documents": [
+  {
+   "id": "despatch_jan1740",
+   "read": "not read",
+   "shelfmark": "Stockholm, Riksarkivet, Diplomatica Turcica, SE/RA/2119/2119.1/I/9/21 (image series R0003582), images 322-327",
+   "date": "January 1740",
+   "year": 1740,
+   "country": "Sweden",
+   "route": "Carl Fredrik Höpken and Edvard Carlson, Constantinople -> the King of Sweden",
+   "language": "Swedish",
+   "cleartext_in_document": "interspersed",
+   "pages": 6,
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Contemporary decipherment in Swedish written over the struck-through groups by the chancery decipherer."
+   },
+   "length": {
+    "tokens": 2118,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Riksarkivet IIIF images, full size (lbiiif.riksarkivet.se, R0003582)",
+    "image_quality": "good",
+    "notes": "Pass 1 only, by two AI agents with the Swedish gloss in view; no blind digit-only pass yet. Gloss column rough."
+   },
+   "places": {
+    "from": "Constantinople",
+    "to": "Stockholm"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code",
+   "syllabic"
+  ],
+  "summary": "Numerical code of four-digit groups seen between about 1004 and 1999, mainly syllables. Different from the code of images 255-261 (groups there stop at 1749; values clash).",
+  "symbol_kind": "digits",
+  "distinct_symbols": "unknown",
+  "digit_groups": {
+   "separation": "unknown"
+  },
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "notes": "Seed values read by eye only; no key built."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The contemporary Swedish decipherment written over the groups on images 322-327. No edition or modern decipherment found (web searches, 10 Nov 2026).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "cleartext context"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Daniel Bourdeau set the task; AI language-model agents transcribed. No human palaeographer checked the text.",
+  "tools": [
+   "Riksarkivet IIIF images",
+   "scripts/build_key.py (hard-EM segmentation)"
+  ],
+  "models": [
+   "Claude (Anthropic), viewing the images"
+  ],
+  "first_date": "2026-11-10",
+  "last_date": "2026-11-10"
+ },
+ "solution": [
+  {
+   "date": "2026-11-10",
+   "kind": "access",
+   "what": "Images 322-327 of R0003582 fetched from the Riksarkivet IIIF service at full size.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "transcription",
+   "what": "Pass 1 by two AI agents with the Swedish gloss in view: 123 runs, 2118 groups (pairs_322_324.tsv, pairs_325_327.tsv); 23 runs K. Gloss column rough and loosely aligned.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Groups above 1749 (to about 1999) and value clashes with the French-glossed code of 255-261 show a second code; split from hopken1739.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "solver",
+   "technique": [
+    "EM alignment"
+   ],
+   "what": "Hard-EM segmentation on the 23 K runs with 9 seeds: alignments are not usable (gloss extents too loose). Word-level re-pairing started.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "key": "none",
+  "method": "not solved",
+  "method_basis": "Transcribed only; no key built yet.",
+  "first_break": false,
+  "contribution": [
+   "transcription"
+  ],
+  "provenance": "project",
+  "verification": [
+   "none"
+  ]
+ }
+}
