@@ -66,8 +66,8 @@ with leads review n09 (106, 108, 112, 114, 119, 121, 138, 140, 145, 160). 143 re
 
 ## Related
 
-Lead 2316 (Johan von Lilienthal, Diplomatica Muscovitica 1/36/82) is a different system (a nomenclator of about 390 values); work
-in progress, not part of this target.
+Lead 2316 (Johan von Lilienthal, Diplomatica Muscovitica 1/36/82) uses a different code: a homophonic German letter substitution
+in six series of 2-3 digit codes (23-390), not a nomenclator. Its key is in target `lilienthal1665` (PR #384).
 
 ## Limits
 
