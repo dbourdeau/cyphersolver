@@ -2324,6 +2324,11 @@ PAGES = [
          blurb='One page in William V&rsquo;s Grand Chiffre, decoded in full with the known key (DECODE R1024) and checked against a contemporary gloss over its first eight lines. It is a cover note: the real despatch is in lemon juice on the blank half-pages of the enclosure, and the last 21 figures are declared nulls.',
          quote='&ldquo;il y a du citron sur les quatre demi-pages blanches de l&rsquo;incluse&rdquo;',
          rights='Manuscript image: Koninklijk Huisarchief, The Hague, via DECODE R1057'),
+    dict(slug='batavia1800', label='Smissaert to Prediger 1800', year='1800', y=1800.9, place='Asiatic Council &rarr; Batavia', st='solved', stt='key from adjacent plaintext',
+         title='Smissaert to Prediger, 20 November 1800',
+         blurb='A letter of the Dutch Asiatic Council to Batavia with its sensitive words in a cipher of stacked digit pairs, filed beside its own clear minute. Brice Dudout rebuilt the letter key from the minute and validated it on two held-out lines (0.933 against at best 0.433 for shuffled keys). The content is the minute&rsquo;s: a second expedition to reinforce Java, to be told to the Governor-General in secrecy. The key is the new part.',
+         quote='&ldquo;Heer Gouverneur Generaal zulks in secretesse gelieft te communiceren&rdquo;',
+         rights='Letter: Nationaal Archief, The Hague, 2.01.27.02 inv. 209; key by Brice Dudout'),
     dict(slug='r1944', label='Bourdeaux 1801', year='1801', y=1801.1, place='Berlin &rarr; The Hague', st='found', stt='clear copy found',
          title='Bourdeaux to Van der Goes, Berlin 1801',
          blurb='Dispatch no. 16 of the Batavian charg&eacute; d&rsquo;affaires in Berlin, in a numerical code (DECODE R1944). The ministry&rsquo;s contemporary clear copy was found misfiled under R1946 and transcribed; the code groups were not decoded. It reports that a diplomat&rsquo;s cipher was stolen in St Petersburg.',
@@ -4627,3 +4632,4 @@ IMAGES['rubio1913'] = ('rubio1913_telegram.jpg', 'Rubio&rsquo;s telegram of 18 M
 IMAGES['portstemarie1729'] = ('portstemarie1729_lead.jpg', 'mssBLA 191 p. 5: the head of the coded report, no gloss', 'Huntington Library, William Blathwayt papers addenda, mssBLA 191 p. 5, via the Huntington Digital Library')
 IMAGES['napoleon'] = ('napoleon_plate.jpg', 'Page 3 of the dispatch: the archivist&rsquo;s notes, the salutation &ldquo;Sire,&rdquo; and the first lines of the cipher', 'J. Vilcoq, Revue historique de l&rsquo;Arm&eacute;e 1969 no. 4, plate after p. 24 (Archives nationales), via Pers&eacute;e')
 IMAGES['marmont1812'] = ('marmont1812_n34.jpg', 'Jourdan&rsquo;s letter in the Spanish copy: the cipher passages left as numbers between the translated clear text', 'Archivo Hist&oacute;rico Nacional, DIVERSOS-COLECCIONES,134,N.34 image 2, via PARES (the copy published by Brice Dudout, Europe chiffr&eacute;e)')
+IMAGES['batavia1800'] = None
