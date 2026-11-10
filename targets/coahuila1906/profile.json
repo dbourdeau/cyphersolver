@@ -1,0 +1,200 @@
+{
+ "schema_version": 1,
+ "target": "coahuila1906",
+ "title": "Coahuila state code telegrams on the Mexican Kickapoo affair, Múzquiz / Saltillo, 25 Jun - 27 Jul 1906 (NARA M862 roll 342): read in part with our key K1 (partial; partial reading explained)",
+ "documents": [
+  {
+   "id": "m862-342-0505-0513",
+   "read": "read in part",
+   "shelfmark": "NARA, RG 59, Numerical File 1906-1910, case 3706/35-45, microfilm M862 roll 342, frames 0505-0513 (file unit naId 19505183)",
+   "date": "25 Jun - 27 Jul 1906 (copies sent to the State Department 8 Nov 1907)",
+   "year": 1906,
+   "country": "Mexico",
+   "route": "L. A. Guajardo (Jefe Político, Múzquiz) and Judge F. Valdés Llano -> Governor Miguel Cárdenas (Saltillo); Cárdenas -> Guajardo; R. C. Conine -> Guajardo; Guajardo -> Ignacio E. Rivas",
+   "places": {
+    "from": "Múzquiz",
+    "to": "Saltillo"
+   },
+   "language": "Spanish",
+   "pages": 9,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No clear of the coded parts is known; the clear parts of each copy are the Senate translator's English of the same telegram (context only).",
+    "partial": false
+   },
+   "length": {
+    "tokens": 411,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA catalogue frames M862_Roll342-0505 to -0513 (images not reproduced here)",
+    "image_quality": "good",
+    "notes": "Typed copies, clean signs; transcribed once on 28 Oct 2026 before the key was fixed; T82 (frame 0510) is a second copy of T67 and is not counted in the 411 groups."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Two-digit homophonic letter substitution: tens paired (1 = 9, 3 = 7, 4 = 8), the unit gives the place in one of three rows (A: d y a h x n t; B: o g a c r v f l; C: e h u i m s b p); the Spanish 'le' left in clear. T54 (Judge Valdés Llano) uses another key (groups 0x/5x/6x).",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "2",
+   "separation": "spaces"
+  },
+  "distinct_symbols": 44,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "none",
+  "notes": "The coded runs sit inside clear text, and the Senate's translator turned pieces of coded words into English (la-dron-es: 'the' dron 'is'), so many words are part code, part translation."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Root to Teller, 14 Nov 1907 (M862 roll 342 f.0514-0517): the Mexican Embassy 'does not know the code and is unable to decipher it'; the printed Senate hearings (Affairs of the Mexican Kickapoo Indians, vol. 2 pp. 1006-1008) print the numbers without a decipherment; catalogue 758 open, no target on origin/main (10 Nov 2026).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "crib",
+  "human_role": "Brice Dudout chose the target, set the rules (protocol written and the key frozen before the single measurement; criterion fixed in advance) and decided to publish the partial reading on 10 Nov 2026. AI agents transcribed, rebuilt the key, measured, read and summarised. No human palaeographer checked the transcription or the reading.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-10-28",
+  "last_date": "2026-11-10"
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "transcription",
+   "what": "Frames 0505-0513 transcribed (411 coded groups without the second copy T82); prior art checked (Senate hearings, catalogue, known.py).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "key-structure hypothesis",
+    "contextual inference"
+   ],
+   "what": "Anchor 'para 40 76 43 99 73 75 quejas' = evitar in the governor's T36; key K1 rebuilt by hand on T36 + T104 with the pairing rule of the tens, then frozen.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Pre-registered held-out test (T35, T53, T67, T82, T99, T124; 319 letters): lexical coverage 0.796 against at most 0.545 for 1,000 shuffled keys (p99 0.508); criterion > 0.80 fixed in advance not met.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "reading",
+   "what": "Re-read word by word as sentences: 80 coded words, 42 certain, 31 probable, 3 restored, 4 unresolved (91.3% without the restored); by groups 386/411 (93.9%); T54 not read.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Key K1 rebuilt from the copies alone, with the clear context of the same telegrams (translated) as the only crib; one held-out measurement, partial by our protocol (0.796 against the 0.80 set in advance). No clear of the coded parts exists.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "verification": [
+   "statistical test",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-10-28",
+   "verdict": "weak",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): lexical coverage 0.796 vs at most 0.545 for 1,000 shuffled keys (margin 0.251); criterion '> best control and > 0.80' fixed in advance: NOT MET (by 0.004). Key partial. Not re-run."
+  },
+  "fraction_read": 0.913,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.md, counted by word: 42 certain + 31 probable = 73 of the 80 coded words of the Guajardo/Cárdenas system (3 restored and 4 unresolved not counted); T54 (14 groups, another key) unread and outside the count. By code groups: 386/411 = 0.939.",
+  "provenance": "project",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "transcription of M862 roll 342 f.0505-0513; key K1 rebuilt (partial: 0.796 vs 0.545 held out, criterion 0.80 not met); read in part, 73/80 coded words by sense (93.9% of the groups); T54 not read",
+    "date": "2026-11-10"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "catalogue entry 758: found in the slice L triage of NARA RG 59, frame check (30 Oct) and vetting (2 Nov 2026)",
+    "date": "2026-10-27"
+   }
+  ],
+  "key_file": "key.tsv",
+  "gaps": [
+   {
+    "item": "T54 (Judge Valdés Llano, 14 groups)",
+    "blocker": "no-key-material",
+    "detail": "another key (groups 0x/5x/6x), too short alone; needs other telegrams of the judge (Archivo General del Estado de Coahuila, Saltillo, or the federal telegraph originals)"
+   },
+   {
+    "item": "4 unresolved words: T35 a‹86›, 'aomang', 'any'; T67 ‹28›",
+    "blocker": "open-codes",
+    "detail": "86 and 28 occur once; the Spanish original of T35 would settle them"
+   },
+   {
+    "item": "K1 not validated (0.796 against 0.80 set in advance)",
+    "blocker": "too-short",
+    "detail": "a new held-out test needs fresh telegrams of Guajardo or Cárdenas in this system"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "m862-342-0505-0513",
+    "label": "Coahuila code telegrams, Múzquiz / Saltillo / Sabinas, 25 Jun - 27 Jul 1906 (T35-T124)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.913,
+    "summary": "Governor Cárdenas orders the Jefe Político of Múzquiz to act with prudence and impartiality towards the American commissioners; Guajardo reports that Bentley and another are accused by an Indian of forcing him at night, with blows, to sign an unknown document, that Bentley was arrested, that 'the ones abuse as much as the others', and a band of mule thieves (two of them Kickapoo) heading for the Río Bravo.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "date": "2026-11-10",
+     "note": "Re-read word by word as Spanish (T99 English) sentences on 10 Nov 2026: 42 certain, 31 probable, 3 restored, 4 unresolved of 80 coded words (91.3%); many words are part code, part the translator's English; T36 and T104 read in full; T54 not read; key K1 partial (0.796 vs 0.545, criterion 0.80 not met)."
+    }
+   }
+  ],
+  "notes": "Partial reading explained, published at Brice Dudout's request (10 Nov 2026). No images in this folder (text and key only)."
+ }
+}
