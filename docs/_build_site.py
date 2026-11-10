@@ -1613,6 +1613,16 @@ PAGES = [
          blurb='Two Luftwaffe radio messages in a double columnar transposition (24 and 28 columns), read after Harumi-Matsuba recovered the day&rsquo;s keys from the recipient&rsquo;s fair copy: platoons of Reserve Light Flak Battalion 932 handed over to the command. 1,016 of 1,023 letters are right as plaintext.',
          quote='&ldquo;GEHEIME KOMMANDOSACHE&rdquo;',
          rights='Messages: National Archives, RG 242, T405 roll 9 (US government work); keys and reading by Harumi-Matsuba'),
+    dict(slug='toledo1479', label='Cipher letter from Toledo 1479', year='1479', y=1479.7, place='Toledo &rarr; Florence', st='partial', stt='key from the ciphertext',
+         title='A cipher letter to Lorenzo de&rsquo; Medici from Toledo, 31 August 1479',
+         blurb='An unsigned letter &ldquo;De Spagna&rdquo; with no decipherment, read in part by Prabal Gupta with a 20-sign letter key found from the cipher and the clear words around it: a league for the defence of the states, a brother who is comendador mayor of Alc&aacute;ntara, a tithe on the clergy. About 60 code items for persons stay unread.',
+         quote='&ldquo;a difensione degli stati&rdquo;',
+         rights='Letter: Archivio di Stato di Firenze, Mediceo avanti il Principato LXXII 171; key and reading by Prabal Gupta (CC BY 4.0)'),
+    dict(slug='agad131', label='Wilno letter 1757', year='1757', y=1757.5, place='Wilno', st='partial', stt='external key matched',
+         title='A letter from Wilno, 11 July 1757',
+         blurb='A letter in clear Polish and French cipher, read in part by Prabal Gupta with the key of letter 446 applied unchanged: a request for protection and a subsidy for the Lithuanian Tribunal, and the killing of a Ciechanowiecki at the Brasław dietine.',
+         quote='&ldquo;obligowany s&#322;uga&rdquo;',
+         rights='Letter: AGAD Warsaw 1/338/0/1/131; transcription and reading by Prabal Gupta (CC BY 4.0)'),
     dict(slug='exiles1736', label='Polish exiles on the abdication 1736', year='1736', y=1736.1, place='Prussia, writer unknown', st='solved', stt='key from the ciphertext',
          title='The Polish exiles on King Stanis&#322;aw&rsquo;s abdication, 4 February 1736',
          blurb='An unsigned letter in Polish and Latin from the Polish exiles, in a cipher of one number for each letter, catalogued as partly in Polish and perhaps to Branicka: France has told them that she cannot keep Stanis&#322;aw Leszczy&#324;ski on the throne, and they answer with two conditions for his abdication. Prabal Gupta found the key from the letter alone; 98% of the cipher words read.',
@@ -4645,3 +4655,5 @@ IMAGES['napoleon'] = ('napoleon_plate.jpg', 'Page 3 of the dispatch: the archivi
 IMAGES['marmont1812'] = ('marmont1812_n34.jpg', 'Jourdan&rsquo;s letter in the Spanish copy: the cipher passages left as numbers between the translated clear text', 'Archivo Hist&oacute;rico Nacional, DIVERSOS-COLECCIONES,134,N.34 image 2, via PARES (the copy published by Brice Dudout, Europe chiffr&eacute;e)')
 IMAGES['batavia1800'] = None
 IMAGES['azuares1837'] = None
+IMAGES['toledo1479'] = None
+IMAGES['agad131'] = None

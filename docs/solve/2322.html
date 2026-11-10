@@ -83,20 +83,21 @@ THE CIPHER
     - image id 79511: https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79511
 
 WHAT IS KNOWN
-  Status: Not the January 1478 system (Brice Dudout, 6 Nov 2026): on the scan the sign set (f, long s, t, R/K forms, circle-on-stem, square, triangle, digits; no x/‡/H/σ runs) is a different one, as the c33 vetting also noted, so the key rebuilt from lead 2308 (MAP LXXII 170) does not apply. Compare with the key sheets LXXII 178-188 and CXIX 115-127. Earlier note: Bare: no interlinear or marginal decipherment (1000 px and full size). Its signs (Φ, ‡, H, =, dotted groups) are of the same family as the 1478 letters (leads 2307-2308); not yet compared sign by sign.
+  Status: 10 Nov 2026: read in part by Prabal Gupta (issue #332, targets/toledo1479/): 20-sign letter key found from the cipher, 88 of 113 cipher words read, about 60 code items for persons unread; the key is not the 1478 key. Open: the code items and doubtful signs (sharper images needed). Earlier: Not the January 1478 system (Brice Dudout, 6 Nov 2026): on the scan the sign set (f, long s, t, R/K forms, circle-on-stem, square, triangle, digits; no x/‡/H/σ runs) is a different one, as the c33 vetting also noted, so the key rebuilt from lead 2308 (MAP LXXII 170) does not apply. Compare with the key sheets LXXII 178-188 and CXIX 115-127. Earlier note: Bare: no interlinear or marginal decipherment (1000 px and full size). Its signs (Φ, ‡, H, =, dotted groups) are of the same family as the 1478 letters (leads 2307-2308); not yet compared sign by sign.
   Outcome so far: not yet attempted by the project
   Prior-art check: open as far as checked (6 Nov 2026): known.py finds nothing on the filza, document or correspondent; DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap for undated pieces.
   Check first: Transcribe; test the 72/170 key; if it does not fit, compare with the LXXII key sheets 178-188.
   Class A: a sibling letter with a decipherment is in the same volume or series, so matching it is the first move.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/toledo1479/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/toledo1479/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/toledo1479/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -136,7 +137,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/toledo1479/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+2322&amp;target=catalogue+2322
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -153,11 +154,11 @@ If you cannot open issues or pull requests, write this report for your human to 
 <p class="frame confirmed"><b>Cipher located and confirmed.</b> symbol cipher with clear words: signs f, long s, t, K/R-like, 8, z, digits and the symbols circle-on-stem, square, dotted circle and triangle; recto opens 'Mag.co ...', '1479' at the foot. Verso: 'Mag.co et generoso d(omi)no [Lo]renzo de Medici ... Firenze', endorsed '1479 / Di Spagna / a dì 31 d'agosto'. No interlinear, marginal or foot decipherment; neighbours 72/170 (1478 system) and 72/172 (1481, own gloss, different system) do not decipher it. The sign set differs from the January 1478 letters (x, double-dagger, H). (ASF MAP filza LXXII doc. 171 (old c. 203), IIIF https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100072/A0000401.ptif (recto) and A0000402 (verso), native 1272x1848, five 1.6x bands and 3x verso crops (batch n10, 6 Nov 2026); checked 2026-11-06 by claude leads review batch c33) <a href="https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100072/A0000401.ptif" rel="noopener">open that page</a></p>
 <h2>What is known</h2>
 
-
-<p><b>Status and prior art.</b> Not the January 1478 system (Brice Dudout, 6 Nov 2026): on the scan the sign set (f, long s, t, R/K forms, circle-on-stem, square, triangle, digits; no x/‡/H/σ runs) is a different one, as the c33 vetting also noted, so the key rebuilt from lead 2308 (MAP LXXII 170) does not apply. Compare with the key sheets LXXII 178-188 and CXIX 115-127. Earlier note: Bare: no interlinear or marginal decipherment (1000 px and full size). Its signs (Φ, ‡, H, =, dotted groups) are of the same family as the 1478 letters (leads 2307-2308); not yet compared sign by sign.</p>
+<p><span class="ko"><i class="k">written up</i> <a href="toledo1479.html" title="Unsigned letter &quot;De Spagna&quot; → Lorenzo de' Medici, Toledo, ASF Mediceo avanti il Principato LXXII 171">toledo1479</a></span></p>
+<p><b>Status and prior art.</b> 10 Nov 2026: read in part by Prabal Gupta (issue #332, targets/toledo1479/): 20-sign letter key found from the cipher, 88 of 113 cipher words read, about 60 code items for persons unread; the key is not the 1478 key. Open: the code items and doubtful signs (sharper images needed). Earlier: Not the January 1478 system (Brice Dudout, 6 Nov 2026): on the scan the sign set (f, long s, t, R/K forms, circle-on-stem, square, triangle, digits; no x/‡/H/σ runs) is a different one, as the c33 vetting also noted, so the key rebuilt from lead 2308 (MAP LXXII 170) does not apply. Compare with the key sheets LXXII 178-188 and CXIX 115-127. Earlier note: Bare: no interlinear or marginal decipherment (1000 px and full size). Its signs (Φ, ‡, H, =, dotted groups) are of the same family as the 1478 letters (leads 2307-2308); not yet compared sign by sign.</p>
 <p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open as far as checked (6 Nov 2026): known.py finds nothing on the filza, document or correspondent; DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap for undated pieces..</p>
 <p><b>Check first.</b> Transcribe; test the 72/170 key; if it does not fit, compare with the LXXII key sheets 178-188.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/toledo1479/NOTES.md" rel="noopener">targets/toledo1479/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/toledo1479" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
