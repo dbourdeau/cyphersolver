@@ -1,0 +1,236 @@
+{
+ "schema_version": 1,
+ "target": "ebers1664",
+ "title": "Commissary Adolf Ebers (Eberschildt) in Moscow, 1662-1666 (Riksarkivet, Diplomatica Muscovitica 3/b/602): key of the two-digit German letter code rebuilt from the contemporary glosses and validated",
+ "documents": [
+  {
+   "id": "r0003225-106-108",
+   "read": "read",
+   "shelfmark": "Stockholm, Riksarkivet, Diplomatica Muscovitica, SE/RA/2113/2113.1/3/b/602 (Kommissarien Adolf Ehbers (Eberschildt), Moskva, 1662-1666), images R0003225_00106 and R0003225_00108",
+   "date": "Moscow, 17 July 1664",
+   "year": 1664,
+   "country": "Sweden",
+   "route": "Adolf Ebers (Swedish commissary in Moscow) -> Charles XI (the Regency)",
+   "places": {
+    "from": "Moscow",
+    "to": "Stockholm"
+   },
+   "language": "German",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "A contemporary German decipherment is written above every code run on the pages checked."
+   },
+   "length": {
+    "tokens": 427,
+    "unit": "code groups",
+    "measured": true,
+    "file": "frozen/PAIRES-EBERS.tsv"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Riksarkivet IIIF, images 106 and 108 at 3000 px (public viewer, no login)",
+    "image_quality": "good",
+    "notes": "Training part of the key: 53 glossed words (cipher groups with the gloss above them). Image 108 is a second copy of the letter of image 106. The clear German text is not transcribed."
+   }
+  },
+  {
+   "id": "r0003225-138",
+   "read": "read",
+   "shelfmark": "Stockholm, Riksarkivet, Diplomatica Muscovitica, SE/RA/2113/2113.1/3/b/602, image R0003225_00138, left page",
+   "date": "1664-1666 (not fixed here)",
+   "year": 1665,
+   "country": "Sweden",
+   "route": "Adolf Ebers (Moscow) -> Charles XI (the Regency)",
+   "places": {
+    "from": "Moscow",
+    "to": "Stockholm"
+   },
+   "language": "German",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "A contemporary German decipherment is written above every code run."
+   },
+   "length": {
+    "tokens": 160,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Riksarkivet IIIF, image 138 at 3000 px",
+    "image_quality": "good",
+    "notes": "Held-out part of the key test: the first 160 cipher groups, transcribed after the key was frozen, then the gloss read; 5 groups cut in the binding."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "German letter substitution with homophones, two-digit groups 15-95 separated by dots, mixed with clear German; a few letters have two numbers (a 15/77, e 22/81, f 24/25, n 45/89, o 47/90, s 94/53, t 95/55) and doubled letters have their own numbers (ll 42, mm 44, ss 54). Arabic numerals are written in clear. 46 seen once, unresolved.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 34,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "partial"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The German glosses written over the code runs at the time are a decipherment, on every page checked (ours: 81, 98R, 101, 102R, 103, 106, 108, 124, 133, 138, 143; Daniel Bourdeau's leads review n09 of 6 Nov 2026: 106, 108, 112, 114, 119, 121, 138, 140, 145, 160), so the content is not new. No printed key or edition found (leads review n09: nothing on DECODE, at Cryptiana or in Lasry's lists); no target, branch or PR for Ebers or R0003225 in this repository (GitHub API, 10 Nov 2026).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Daniel Bourdeau's Riksarkivet sweep found the volume and his leads review n09 (6 Nov 2026) vetted it as lead 2315 ('read': glossed throughout). Brice Dudout set the rules (protocol and key frozen before a single held-out measurement, thresholds fixed in advance). AI agents transcribed, built the key, measured and wrote up. No human palaeographer checked the transcription.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-11-10",
+  "last_date": "2026-11-10"
+ },
+ "solution": [
+  {
+   "date": "2026-11-10",
+   "kind": "transcription",
+   "what": "Images 106 and 108: 53 glossed words (cipher groups with the gloss over them) read from the 3000 px IIIF images.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "crib",
+   "what": "Key of 31 codes learned from the glossed words of images 106 and 108 only; frozen by SHA-256 with the protocol before the held-out part was transcribed.",
+   "result": "worked",
+   "technique": [
+    "crib testing"
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One measurement on image 138 (first 160 groups, transcribed after the freeze, gloss read after the numbers): 0.909 of characters against 0.047 for the best of 200 shuffled keys (mean 0.021); margin 0.862; thresholds >= 0.85 and margin >= 0.30, fixed in advance.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "verification",
+   "what": "Gloss inventory on images 81, 98R, 101, 102R, 103, 106, 108, 124, 133, 138 and 143: a gloss over every run, no bare passage found (agrees with leads review n09). 108 is a second copy of 106; 143 repeats the letter of 138; the foot of 103/104 holds copies.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "recovered",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The key was learned from the contemporary interlinear decipherment (glosses) of images 106 and 108 and validated once on image 138. The content is the glosses' (existing); the key is the contribution.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "verification": [
+   "contemporary decipherment",
+   "statistical test"
+  ],
+  "validation": {
+   "date": "2026-11-10",
+   "verdict": "pass",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): protocol and key hashed before the held-out part was transcribed; one measurement on image 138 (160 groups, 165 decoded positions): 0.909 of characters vs best of 200 shuffled keys 0.047 (mean 0.021), margin 0.862. Threshold fixed in advance: >= 0.85 and margin >= 0.30. Later additions 53 = s and 55 = t are derived after the measurement and not tested; 46 unresolved."
+  },
+  "provenance": "mixed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "the German decipherment written over the code runs at the time; the key was learned from it",
+    "date": "1664"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "Riksarkivet western sweep found the volume; leads review n09 (6 Nov 2026) vetted lead 2315 as read (glossed throughout)",
+    "date": "2026-11-06"
+   },
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "note": "glossed words of images 106 and 108 and the first 160 groups of image 138 (transcription.txt, frozen/)",
+    "date": "2026-11-10"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "key rebuilt from the glosses (key.tsv, CC BY 4.0) and validated on a held-out page, 0.909 vs 0.047 (validation.txt); gloss inventory of 11 pages confirms the leads review",
+    "date": "2026-11-10"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "the code runs of images 81, 98-145 and 160 other than 106, 108 and 138 not transcribed; the clear German text not transcribed",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "53 = s and 55 = t added after the measurement (untested); 46 unresolved; 74 = ä from one word; numbers outside 15-95 and the few 4-digit groups not seen in the parts read",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "one reader (an agent) on 3000 px images; the gloss was visible while the held-out numbers were transcribed (declared bias); no human palaeographic check",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "date of the letter on image 138 not fixed",
+    "blocker": "not-attempted"
+   }
+  ],
+  "texts": [
+   {
+    "doc": [
+     "r0003225-138"
+    ],
+    "label": "Image 138, left page: the 160 held-out cipher groups with the contemporary gloss",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "language": "de",
+    "state": "not prose",
+    "note": "The cipher runs of the measured portion, broken by clear German that is not transcribed, so a sequence of phrases rather than a running text: our decode with key.tsv beside the gloss written at the time. The gloss is the reading of the time.",
+    "summary": "Ebers reports that something has been taken into consideration and decided here: envoys are to go to Poland for the boundary commission, with the voivodes at Smolensk, to treat with the Poles; Marselis and Nashchokin are named, and someone is in favour ('in gnade').",
+    "reading_review": {
+     "grade": "B",
+     "by": "Brice Dudout (with Claude)",
+     "date": "2026-11-10",
+     "note": "decode read against the contemporary gloss as German phrases; agrees except spellings (kluch/klug, gesanten/gesandten, naschokin/naskokin) and 5 groups cut in the binding; phrases only, the clear text between the runs not transcribed; one reader"
+    },
+    "translation": "translation.md"
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "The letters were deciphered at the time (interlinear glosses on every page checked), so we claim no reading and no solution; what is new is the key as a reusable table, validated on a held-out page. Lead 2316 (Lilienthal, Diplomatica Muscovitica 1/36/82) is a different system (nomenclator, about 390 values); work in progress, not included here."
+ }
+}
