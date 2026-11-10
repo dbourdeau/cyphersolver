@@ -1378,6 +1378,7 @@ Feuquières and Catinat); **B** partial key in print (Tomokiyo) or known family;
 
 ## Read or resolved here, and removed
 
+- **443 — Unknown correspondent, cipher letter, 31 July 1662, Kraków, Archiwum Sanguszków teka 134/8 (DECODE R7513)**: key recovered from ciphertext-only, 29 Oct 2026. Contributed by Brice Dudout; 71 of 71 words read. The entry stayed in the catalogue until 9 Nov 2026. See `targets/asang1662/`.
 - **1466 — Military report "en clave" from Puente Nacional during Santa Anna's 1832 rising, CEHM-Carso I-2.5.340.1**: key recovered from ciphertext-only, 9 Nov 2026. A five-value vowel mask found from word shapes; 127 of 147 cipher words read; the rest is cursive the single scan does not settle (`targets/puente1832/`)
 - **762 — Theodore Roosevelt → John Hay, coded telegram, 27 May 1903**: read after matching with key from external sources, 9 Nov 2026. Contributed by William Echols (issue #353): the State Department Red Cipher of 1876 identified as the key; 23 groups read; codebook pages and scan not seen here. See `targets/roosevelt1903/`.
 - **1464 — Venustiano Carranza's outgoing telegrams "en clave numérica" / "en clave de letras", CEHM-Carso Fondo CDLXXX 1.17.1 to 1.42.1**: key recovered from ciphertext-only, 8 Nov 2026. Contributed by Prabal Gupta (issue #321): six number telegrams in four shifted alphabets and four letter-pair telegrams of May and June 1915; priority open, the key family may be in print. See `targets/carranza1915/`.

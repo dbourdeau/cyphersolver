@@ -1,0 +1,70 @@
+[
+ {
+  "id": 443,
+  "counted": true,
+  "year": 1662,
+  "date": "31 Jul 1662",
+  "title": "Unknown correspondent, cipher letter, 31 July 1662 (Sanguszko archive)",
+  "correspondents": "unknown → unknown",
+  "place": "unknown",
+  "language": "unknown",
+  "region": "Poland-Lithuania",
+  "period": "1651-1700",
+  "shelfmark": "Archiwum Narodowe w Krakowie, ASang teka 134/8",
+  "folio_note": "2 pp.; symbols graphic + letters + numbers",
+  "cls": "C",
+  "status": "DECODE R7513 (status N/A, cipher type unknown, private ciphertext, uploaded by the Archiwum Narodowe w Krakowie 2023; no key or decryption file on the records). Not in repo (known.py on each R-number: no hits).",
+  "why": "Same month as the Lubomirski cipher slips (ASang 282/2); may share a key.",
+  "importance": 2,
+  "solvability": 2,
+  "difficulty": 4,
+  "score_note": "Scored from the DECODE metadata dump (research/catalogue_harvest/decode) during the Oct 2026 Polish archives sweep (research/polish_archives/); not viewed",
+  "verify": "Log in to DECODE and open the images; check sibling keys in the same teka.",
+  "links": [
+   {
+    "label": "DECODE R7513",
+    "href": "https://de-crypt.org/decrypt-web/RecordsView/7513"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "Polish archives sweep (DECODE, Archiwum Narodowe w Krakowie)",
+  "prior_art": "open (checked 26 Oct 2026: known.py, web search for Wąsowicz/Lubomirski cipher: nothing)",
+  "decode_ids": [
+   7513
+  ],
+  "ark": "",
+  "scored": "sweep",
+  "access": "online",
+  "access_note": "online (backfilled 28 Oct 2026 from the entry: link DECODE R7513 (https://de-crypt.org/decrypt-web/RecordsView/7513))",
+  "frame_check": {
+   "result": "confirmed",
+   "href": "https://de-crypt.org/decrypt-web/RecordsView/7513 page 2",
+   "frame": "R7513 pp.1-2",
+   "saw": "Both pages carry the same graphic-sign cipher as R7520-22: p.2 (marked 1, 'Ultimo Julii 1662', archive stamp, 'ASang 134/8') about 22 lines; p.1 (continuation) about 8 lines of signs then blank; no clear text, no decipherment.",
+   "date": "2026-10-30",
+   "by": "claude frame check d02"
+  },
+  "note": "same cipher as catalogue 442; consider merging when transcribed",
+  "vetting": {
+   "date": "2026-11-02",
+   "by": "claude vetting batch L02",
+   "seen": {
+    "kind": "scan",
+    "where": "DECODE R7513 pp.1-2 (images fetched and viewed 2 Nov 2026; also frame check d02)",
+    "extent": "2 pp.: about 22 lines plus 8 lines of graphic signs, 'Ultimo Julii 1662', stamp ASang 134/8",
+    "cipher": "Graphic-sign cipher with no clear text beyond the date; same signs as R7520-R7522; no decipherment."
+   },
+   "prior_art": {
+    "decode": "R7513 status 4 (N/A), no decryption.",
+    "tomokiyo": "Tomokiyo's Unsolved Historical Ciphers page (local copy unsolved.htm in the repo) grepped 2 Nov 2026: no Polish items.",
+    "lasry": "No Lasry entry found.",
+    "edition": "No edition found in web search (Polish).",
+    "literature": "Nothing found."
+   },
+   "key_check": "R7515 / R7460 / R7461 held, not applied (no transcription). Same sign set as 442, so one key would serve both.",
+   "duplicates": "known.py R7513 (2 Nov): no other record; 442 (R7520-R7522, Aug 1662) is a separate set in the same cipher.",
+   "verdict": "open"
+  },
+  "repository": "ank"
+ }
+]
