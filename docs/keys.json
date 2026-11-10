@@ -2329,6 +2329,8 @@
   {"id": "k-wainut-cabinet1751", "label": "WAINUT, Frederick II's cabinet code of 1751", "kind": "scholar's key", "by": "WAINUT", "year": 1751, "found": 2026, "note": "179 values rebuilt by aligning six King-to-Michell letters (Nationaal Archief 1.10.29 inv. 5177) and R1957 with their printed concepts in Politische Correspondenz 8; the first 72 values tested blind on R1957 (PR #29)."},
   {"id": "k-michell-envoy1751", "label": "Michell's envoy code, from the Dutch decipherments of R1050/R1051", "kind": "scholar's key", "by": "WAINUT", "year": 1751, "found": 2026, "note": "271 code values paired from DECODE's transcriptions of the contemporary Dutch decipherments written over Michell's reports of 12 Nov 1751 and 5 Sep 1752 (PR #29)."},
 {"id": "k-tomokiyo-threekana", "label": "Three-kana rule for the Chinese telegraph code (Tomokiyo, chinesecrypto_e2.htm)", "kind": "scholar's key", "by": "Satoshi Tomokiyo", "year": 1916, "found": 2026, "note": "Code c written as S1[c div 200], S2[(c-1) mod 10], S3[((c-1) div 10) mod 20] over the kana; found from the Huang Xing reply and the 1916 worksheets, 23 Sept 2026."},
+{"id": "k-army1901-grid", "label": "Japanese General Staff two-digit kana grid, 1901 (Harumi-Matsuba)", "kind": "scholar's key", "by": "Harumi-Matsuba", "year": 1901, "found": 2026, "note": "Tens digit the vowel row, units digit the consonant column; lower half 01-50, upper half 51-95 (p m y r), 55 wa, 65 n; rebuilt from three words guessed from the clear romaji of the 1901 drafts to Fukushima."},
+{"id": "k-army1901-incoming", "label": "Japanese Army serial kana table of the 1901 incoming telegrams (Harumi-Matsuba)", "kind": "scholar's key", "by": "Harumi-Matsuba", "year": 1901, "found": 2026, "note": "Syllabary by vowel rows, voiced kana after the plain one, numbered 00 (a) to 67 (n); rebuilt from telegrams of officers in China whose translations were filed with them (issue #371)."},
 {"id": "k-army1902-table", "label": "Japanese Army two-digit kana table, 1902-04 (Harumi-Matsuba)", "kind": "scholar's key", "by": "Harumi-Matsuba", "year": 1902, "found": 2026, "note": "First digit the vowel row (+5 voiced), second the consonant column in reverse gojuon order, n = 10; rebuilt from C09122909900 against its draft's furigana."},
 {"id": "k-brackx-matignon-tuple", "label": "Matignon tuple cipher key, 1586 (Brackx, from the contemporary glosses)", "kind": "scholar's key", "by": "Michael Brackx", "year": 1586, "found": 2026, "note": "136 group labels; taken from the interlinear glosses on BnF fr. 15572 ff. 234-238 and completed from the language; several labels carry two or more values."},
 {"id": "k-adrian1521-rebuilt", "label": "Adrian 1521, rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1521, "note": "Key recovered here from an outside plaintext (targets/adrian1521/NOTES.md)."},
@@ -3817,6 +3819,7 @@
    "note": "Ciphertext-only key recovery in CTTS, followed by manuscript and cleartext-context refinement; both pages deciphered, three code signs still open."
   },
 {"key": "k-tomokiyo-threekana", "target": "huangxing", "how": "read unchanged", "note": "Reply decoded from this project's transcription with one correction (O HI = CHI); the 20 May telegrams by Harumi-Matsuba, with spelling corrections to the romaji."},
+{"key": "k-army1901-grid", "target": "army1901", "how": "rebuilt from", "note": "Rebuilt by the contributor from cribs in the clear romaji of the drafts; re-implemented here (decode.py)."},
 {"key": "k-army1902-table", "target": "army1902", "how": "rebuilt from", "note": "Rebuilt by the contributor from C09122909900 and its outgoing draft; read C09122911500, C09123116600 and C03020059400; re-implemented here."},
 {"key": "k-brackx-matignon-tuple", "target": "matignon1586tuple", "how": "rebuilt from", "note": "Rebuilt by the contributor from the contemporary glosses on the letter itself; applied to all ten pages."},
 {"key": "k-adrian1521-rebuilt", "target": "adrian1521", "how": "rebuilt from", "note": "rebuilt from an outside plaintext"},
@@ -4731,6 +4734,8 @@
   "urquhart": "No cipher key: a rule-based word puzzle, read by applying the stated rule (see the write-up)."
  },
  "tried": [
+{"key": "k-army1901-incoming", "target": "army1901", "note": "21 of 148 pairs out of range, the rest give no words (decode.py)"},
+{"key": "k-army1902-table", "target": "army1901", "note": "does not read the 1901 drafts (contributor)"},
 {"key": "k-r5314", "target": "it1583", "note": "cart. 1597 no. 14: letter signs do not match ff. 68/70 (Sept 2026)"},
 {"key": "k-desnoyers1656", "target": "desnoyers1659", "note": "no sign of its alphabet in the glossed passages; 0 agreements in the 41 groups 3-39 (200 permuted controls: mean 0.001); a different table"},
 {"key": "k-r5324", "target": "visconti1446", "note": "its e signs are not the slips' e signs; does not fit the R5323 slips"},

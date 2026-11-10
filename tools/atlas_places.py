@@ -15,6 +15,7 @@ ATLAS = ROOT / 'docs' / 'atlas.json'
 
 # places added with the 25 Oct 2026 backfill (lat, lon); names are what the atlas shows
 NEW_PLACES = {
+    'Beijing': [39.904, 116.407],  # army1901: Fukushima in Peking, 1901
     'Białystok': [53.133, 23.164], 'Nieśwież': [53.222, 26.667], 'Kaunas': [54.899, 23.904],  # branicki1757 (Branicki's seat; the Radziwiłł seat; the Russian army's magazines, 1757)
     'Monzón': [41.910, 0.190], 'Palermo': [38.116, 13.361],  # gonzaga1542 (Charles V at Monzón, Ferrante Gonzaga viceroy of Sicily)
     'Galeana': [24.826, -100.073],  # limantour1909: Reyes, governor of Nuevo León, at Galeana, July 1909
