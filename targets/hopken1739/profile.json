@@ -266,6 +266,42 @@
    "kind": "reading",
    "what": "Fixes applied: ten word-crossing EM values demoted (key_demoted.tsv); 1532 = Suede aligned in 260 h04; 1601? marked; postscript note corrected; word counter now counts each gloss word inside a multi-word mark; readings regenerated, check_marks passes.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "transcription",
+   "what": "Images 258 and 261 (glossed despatches) fetched via IIIF and transcribed, pass 1 only, from 2000-px images with the gloss in view: 63 runs (pairs_258_261.tsv, 53 K, 10 X). EM rerun on all pairs with the same seeds gives a draft key (key_v2_draft.tsv): 104 confirmed, 26 mixed, 68 single (was 85/18/62). Two demoted fillers now read as clean values (1097 or, 4/5; 1106 pe, 2/2). Not adopted: needs a blind pass 2 first.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "control",
+   "what": "Blind digit-only pass 2 of 258/261 (pass2_258_261.txt) against pass 1: 263/278 and 229/236 groups agree; 21 single-group disagreements taken from pass 2 (3 of 3 checked on full-size crops favoured it); runs touched by omissions set to X.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "transcription",
+   "what": "Image 259 (French gloss) transcribed, pass 1: 12 runs, 327 groups, 9 K / 3 X (pairs_259.tsv).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "hypothesis",
+   "what": "Images 322-327 carry Swedish glosses. Their groups run to about 1915 (1774, 1800, 1825, 1868, 1869 seen clearly on 326), and values conflict with the French code (1532 inside Swedish words; 'Credit' = 1549 1006 against 1114? 1129 on 258). A second, different code: kept out of this key (pairs_325_327.tsv, pairs_322_324.tsv kept as raw transcriptions for a separate target).",
+   "result": "worked",
+   "technique": [
+    "key-structure hypothesis"
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "solver",
+   "what": "EM on the French pairs only (pairs.tsv + 258/261 settled + 259): 91 confirmed, 29 mixed, 84 single. Bare page 264, first four lines (55 groups, all <= 1750, the French code): 46 of 55 groups in the key, but the decode gives fragments (… ble … m mateus … alliance … sûreté?) and no sentence holds. Not read.",
+   "result": "failed",
+   "technique": [
+    "EM alignment"
+   ]
   }
  ],
  "outcome": {

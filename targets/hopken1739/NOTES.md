@@ -92,9 +92,9 @@ mean 25.5, maximum 36.)
 
 ## Remaining gaps
 
-- Only 4 glossed images were used. The glossed despatches at 258, 259 and 261 (and around 322-327) would confirm most of
-  the 66 single values and settle the mixed ones. They were not transcribed (tool budget).
-- The bare cipher pages (for example 264-266, 115-196, 389-470) are untouched. With 85 confirmed values and a syllabary of
+- The French-glossed leaves 258, 259 and 261 are now transcribed (10 Nov 2026, see Escalation) but the key built from them
+  is a draft, not adopted; 259 has had one pass only - blocker: not-attempted
+- The bare cipher pages in this code (264-266, about 115-196, 389-470; not sorted from those in the hopken1740 code) are untouched apart from a trial on 264 - blocker: not-attempted. With 85 confirmed values and a syllabary of
   probably about 750 elements, expect partial readings at best until more glossed pages are added.
 - Postscript 263: decoded (with the final key.tsv), not read. 15 of 55 groups are unknown; the language is unsettled
   (the clear Swedish word "angående" stands in the postscript). A small superscript "o" over the second digit of 1363
@@ -104,6 +104,29 @@ mean 25.5, maximum 36.)
   building (X).
 - The 257 left-page dialogue breaks off ("Celle-ci fait ..."); its continuation was not located.
 - The speaker tags 1440 and 1529 are not decoded; B = Villeneuve is a proposal from the content.
+
+## Escalation
+
+- 10 Nov 2026 (key-rebuild, next step): Riksarkivet IIIF was blocked from the default cloud environment; a personal
+  environment "cyphersolver" allowing lbiiif.riksarkivet.se and sok.riksarkivet.se now reaches it. Images 258, 259 and
+  261 fetched to scans/ (git-ignored). 258 and 261 are more glossed pages (French over the numbers, several hundred
+  groups). Not yet transcribed: the owner is choosing the scope. Next: two-pass transcription of 258, 259, 261 and
+  322-327, rebuild the key, then retry 263 and the bare pages 264-266.
+- [ ] key-rebuild (10 Nov 2026, in progress): 258 and 261 transcribed, pass 1 only (pairs_258_261.tsv, 63 runs, 10 kept
+  out as X). EM on all pairs gives key_v2_draft.tsv: 104 confirmed / 26 mixed / 68 single, against 85 / 18 / 62. 1097 = or
+  (4 of 5) and 1106 = pe (2 of 2) now look like real values, not fillers. The draft is not adopted: a blind digit-only
+  pass 2 of 258 and 261 comes first, then 259 and 322-327, then retry 263 and 264-266.
+- [x] control: blind digit-only pass 2 of 258/261 (pass2_258_261.txt); 21 single-group disagreements taken from pass 2.
+- [x] siblings: leaves 258-261 (French gloss) and 322-327 (Swedish gloss) opened; 264-266 bare. **322-327 are a different
+  code**: groups run to about 1915 (1774, 1800, 1825, 1868, 1869 clear on 326) and the values clash with this key (1532 =
+  Suède here but falls inside Swedish words there). By "one key, one entry" they belong to a separate target; their raw
+  transcriptions moved to `targets/hopken1740/` (opened 10 Nov 2026), a different cipher with its own folder.
+- [x] known-keys: the only other Swedish chancery key in the repository (stade1710, 1710) is a one-part list below ~1100; no fit.
+- [x] print: web searches (Swedish and English) found only the Carleson-Höpken travel account (Stockholm 1768) and Görür 2021
+  (citation only); no edition or decipherment of the despatches.
+- [ ] key-rebuild: French pairs only (pairs.tsv + 258/261 + 259) give 91 confirmed / 29 mixed / 84 single. On bare 264
+  (first 4 lines, 55 groups, French code) 46 groups are in the key but the decode is fragments; no sentence holds.
+- [ ] retry: 263 and 264-266 not yet regraded with the new key; most bare text needs many more code values first.
 
 ## Catalogue 1772/1773 (Dorffler, Poland)
 
