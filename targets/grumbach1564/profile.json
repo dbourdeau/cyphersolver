@@ -231,6 +231,12 @@
    ],
    "what": "Pass 2: gein = sein, Leuchtenburg, name sign = Herzog Johann Wilhelm; reading file measured: 381 signs, 86.1% give sense (64.0% firm).",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "verification",
+   "what": "Existing text files registered in outcome.texts for ff. 307r-v (f307): f307_runs.txt as transcription, f307_reading.tsv and f307_keyA.md as decryption, state 'read in part'. f. 304r is left without an entry: its transcription (f304r_transcription.txt) exists but the text is unread, so there is no decryption. No new transcription or reading was made.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -254,6 +260,22 @@
     "note": "key A, the alphabet Duke Johann Friedrich II, Grumbach and Matthes Ditmarsch 'miteinander genommen' (Loc. 4414/04 ff. 279r-280r, copies ff. 287r-288r, 305r-306r)",
     "date": "1566",
     "source": "HStA Dresden 10024 Loc. 04414/04 ff. 279-306"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "f307",
+    "label": "Ernst von Mandelslo, ff. 307r-v (scans 0380-0381), dated '...64', cipher runs",
+    "transcription": "f307_runs.txt",
+    "decryption": [
+     "f307_reading.tsv",
+     "f307_keyA.md"
+    ],
+    "language": "de",
+    "state": "read in part",
+    "read_share": 0.861,
+    "summary": "A clear letter with cipher runs, signed with key A's sign for Ernst von Mandelslo. The runs concern the Bestallung and the sealed Artikel for the Knechte, the Rittmeister 'beider irer aller namen darin benent', the names of the Obersten, Johann von Holle's Bestallung, Dornburg and Leuchtenburg.",
+    "note": "Cipher runs only; the clear text of the letter is not transcribed. f307_runs.txt is the pass-1 shape transcription of the runs; f307_reading.tsv is the pass-2 reading word by word with key A and f307_keyA.md the sign-level table run by run. Measured (measure307.py): 381 signs, nulls excluded; firm 244 (64.0%), tentative 84 (22.0%), open 53 (13.9%); 86.1% give sense. No running text and no translation exist."
    }
   ]
  }

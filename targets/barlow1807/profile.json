@@ -189,6 +189,12 @@
    "kind": "verification",
    "what": "Harumi-Matsuba's separate reading of the same letter (issue #253), made with Claude without sight of this one, was added under matsuba/ (his repository commit 9ee34ba). It reads 92.4% per word (96.3% per cipher token) with no held-out test; the two transcriptions agree at 97.9% in values; the readings differ in 101 places and 21 of 79 shared letter-valued key signs differ (the project's recount; his count is 20), recorded and not judged. No human has checked either transcription.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "verification",
+   "what": "Existing text files registered in outcome.texts for the clear letter of 15 June 1807 (jun15): transcription_15jun1807.txt, decryption_15jun1807.txt (states that there is no cipher) and reading_15jun1807.md. No new transcription or reading was made.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -252,6 +258,17 @@
      "date": "2026-11-03",
      "note": "Read as sentences 3 Nov 2026. The argument can be followed from start to end: Barlow opposes Buchanan's proposed ecclesiastical establishment because it risks religious alarm after the troubles on the coast, and proposes respectable clergymen with adequate allowances instead. Image 3 does not parse and is not read (grade C for that page). Holes of four or more words remain on images 8 and 18. Three words the review found wrong or doubtful against the sense ('convention' for 'conviction', 'or' for 'of', 'it' for 'with') have since been corrected and are counted as changed letters."
     }
+   },
+   {
+    "doc": "jun15",
+    "label": "Barlow to Tierney, Fort William, 15 June 1807, images 23-25 (26 docket)",
+    "transcription": "transcription_15jun1807.txt",
+    "decryption": "decryption_15jun1807.txt",
+    "reading": "reading_15jun1807.md",
+    "language": "en",
+    "state": "not prose",
+    "summary": "A separate letter written in clear (440 words, no cipher), not a decipherment of the letter to Grenville. Barlow refers Tierney to the government's dispatches sent by the Indus and reports that tranquillity continues, that the system of external relations is maintained, and that the Company's finances and public credit have improved, with a surplus revenue expected in 1808/9.",
+    "note": "No cipher: the letter is in clear, so the transcription is the letter as written and decryption_15jun1807.txt only states that there is nothing to decipher. Listed so the document is covered; it is not counted as a reading."
    }
   ],
   "key_file": "key.tsv",
