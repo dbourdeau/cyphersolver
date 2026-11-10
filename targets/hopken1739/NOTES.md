@@ -116,7 +116,17 @@ mean 25.5, maximum 36.)
   out as X). EM on all pairs gives key_v2_draft.tsv: 104 confirmed / 26 mixed / 68 single, against 85 / 18 / 62. 1097 = or
   (4 of 5) and 1106 = pe (2 of 2) now look like real values, not fillers. The draft is not adopted: a blind digit-only
   pass 2 of 258 and 261 comes first, then 259 and 322-327, then retry 263 and 264-266.
-- [ ] siblings, clear-pages, known-keys, print: not yet done this round.
+- [x] control: blind digit-only pass 2 of 258/261 (pass2_258_261.txt); 21 single-group disagreements taken from pass 2.
+- [x] siblings: leaves 258-261 (French gloss) and 322-327 (Swedish gloss) opened; 264-266 bare. **322-327 are a different
+  code**: groups run to about 1915 (1774, 1800, 1825, 1868, 1869 clear on 326) and the values clash with this key (1532 =
+  Suède here but falls inside Swedish words there). By "one key, one entry" they belong to a separate target; their raw
+  transcriptions (pairs_322_324.tsv, pairs_325_327.tsv, pass 1, rough gloss) are kept here until it is opened.
+- [x] known-keys: the only other Swedish chancery key in the repository (stade1710, 1710) is a one-part list below ~1100; no fit.
+- [x] print: web searches (Swedish and English) found only the Carleson-Höpken travel account (Stockholm 1768) and Görür 2021
+  (citation only); no edition or decipherment of the despatches.
+- [ ] key-rebuild: French pairs only (pairs.tsv + 258/261 + 259) give 91 confirmed / 29 mixed / 84 single. On bare 264
+  (first 4 lines, 55 groups, French code) 46 groups are in the key but the decode is fragments; no sentence holds.
+- [ ] retry: 263 and 264-266 not yet regraded with the new key; most bare text needs many more code values first.
 
 ## Catalogue 1772/1773 (Dorffler, Poland)
 
