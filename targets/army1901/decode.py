@@ -17,9 +17,9 @@ T['55'] = 'ワ'
 T['65'] = 'ン'
 
 # Issue #371: serial table of the incoming telegrams (00-67), tested here against the outgoing drafts.
-ROWS = ['ア カ ガ サ ザ タ ダ ナ ハ バ パ マ ヤ ラ ワ', 'イ キ ギ シ ジ チ ヂ ニ ヒ ビ ピ ミ リ',
-        'ウ ク グ ス ズ ツ ヅ ヌ フ ブ プ ム ユ ル', 'エ ケ ゲ セ ゼ テ デ ネ ヘ ベ ペ メ レ',
-        'オ コ ゴ ソ ゾ ト ド ノ ホ ボ ポ モ ヨ ロ ヲ ン']
+ROWS = ['ア カ ガ サ ザ タ ダ ナ ハ バ パ マ ヤ ラ ワ', 'イ キ ギ シ ジ チ ニ ヒ ビ ピ ミ リ',
+        'ウ ク グ ス ズ ツ ヌ フ ブ プ ム ユ ル', 'エ ケ ゲ セ ゼ テ デ ネ ヘ ベ ペ メ レ',
+        'オ コ ゴ ソ ゾ ト ド ノ ホ ボ ポ モ ヨ ロ ン']  # 00-67, as in issue #371 / READING1901.en.md
 INC = {}
 for r in ROWS:
     for k in r.split():

@@ -45,8 +45,9 @@ C09122806100). That table was tried on these drafts: 21 of 148 pairs fall outsid
 
 - `decode.py` written from the stated rule only (does not import the contributor's code). Over the first transcription
   `ct_outgoing1901.txt` (copied from the contributor's `data/outgoing1901.txt`): 23 runs, 0 odd, 148 pairs, 136 in the
-  table (`decode_out.txt`). The contributor's four re-read digits bring it to 138 in the table with 29->21 and 27->21,
-  both also read so by the blind second reader; 96->16 and 98->93 are not confirmed and give 〔チ〕 and 〔ヨ〕 only. Every
+  table (`decode_out.txt`). The contributor's four re-read digits bring it to 138 in the table: 29->21 and 27->21
+  (also read so by the blind second reader) change kana but not the count; 96->16 and 98->93 (not confirmed by the blind
+  reader, giving the doubtful 〔チ〕 and 〔ヨ〕) bring the out-of-table pairs 96 and 98 into the table. Every
   kana string agrees with the contributor's `outgoing1901.tsv`.
 - The names that come out unforced are historical and fit the dates: リコウシヨウ (Li Hongzhang), テウシドウ (Zhang Zhidong),
   セイアン (Xi'an), コウシウワン (Kiaochow Bay), ゲンスイ (the Field Marshal), ヒメジ, クスノセ, シバ, オオシマ, カミオ. Against

@@ -21,7 +21,7 @@
 .pair b{color:var(--gold2,#e7c87a);font-weight:600}
 </style>
 <meta name="date" content="2026-10-21">
-<meta name="last-modified" content="2026-11-07">
+<meta name="last-modified" content="2026-11-10">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -73,7 +73,7 @@
 <div class="parties"><figure class="party sender"><img src="portrait_oyama-iwao.jpg" width="192" height="192" decoding="async" alt="Ōyama Iwao" title="Ōyama Iwao: Photograph, before 1916. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Ōyama Iwao</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_terauchi-masatake.jpg" width="192" height="192" decoding="async" alt="Terauchi Masatake" title="Terauchi Masatake: Photograph, before 1919. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Terauchi Masatake</figcaption></figure></div><!-- /parties -->
 <p class="readjump"><a href="#texts">Go to the full text &darr;</a></p><!-- /readjump -->
   <p class="sub">Imperial Japanese Army telegrams of 1902&ndash;04 in which two digits stand for one kana on a fixed table; Harumi-Matsuba rebuilt the table from a filed translation and decoded four telegrams, checked here. Three give sentences, one of them through its filed contemporary translation; the fourth enciphers only a twelve-kana noun phrase, confirmed by its draft (61 of 73 pairs in telegrams that give sentences).</p>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-21">21 October 2026</time> &middot; updated <time datetime="2026-11-07">7 November 2026</time></p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-21">21 October 2026</time> &middot; updated <time datetime="2026-11-10">10 November 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#adjpt">key recovered based on adjacent plaintext</a> &middot; Extent: partial (96% of the cipher) &middot; <a href="atlas.html#slug=army1902">On the map</a></p><!-- /outcome -->
 <p class="credits">Contributed by <a href="contributors.html#harumi-matsuba">Harumi-Matsuba</a> (new cipher with solution) &middot; Also credited &middot; <a href="contributors.html#contemporary">Contemporary key or decipherment</a> (key or decipherment used)</p><!-- /credits -->
 <div class="seal partial" aria-hidden="true"><span>adjacent text</span></div>
@@ -90,7 +90,7 @@
   <dt>How it was solved</dt><dd>The table was inferred from one telegram&rsquo;s twelve pairs against the readings pencilled on its outgoing draft, then tested on telegrams found later, one of them with no translation at all.</dd>
   <dt>Credit</dt><dd>Harumi-Matsuba, with Claude, Codex and Sonnet (<a href="https://github.com/dbourdeau/cyphersolver/issues/58" rel="noopener">issue #58</a>, <a href="https://github.com/Harumi-Matsuba/kagigo1901-public" rel="noopener">kagigo1901-public</a>, October 2026).</dd>
   <dt>What it says</dt><dd>&ldquo;Until I return to Tokyo, please handle the business of the General Staff as you see fit&rdquo;; &ldquo;please lend the required maps of Korea&rdquo;.</dd>
-  <dt>Still open</dt><dd>C09122909900 enciphers a noun phrase, not prose. In C03020059400 pair 5 rests on Tomokiyo&rsquo;s reading of the image and pair 7 on taking ゼウ as 場, and three characters of its filed translation are illegible. One pair of C09122909900 is one digit off the draft, probably a slip by the writer; a 1901 telegram in another method; which Army cipher this table belongs to. No person has checked the transcriptions.</dd>
+  <dt>Still open</dt><dd>C09122909900 enciphers a noun phrase, not prose. In C03020059400 pair 5 rests on Tomokiyo&rsquo;s reading of the image and pair 7 on taking ゼウ as 場, and three characters of its filed translation are illegible. One pair of C09122909900 is one digit off the draft, probably a slip by the writer; a 1901 telegram in another method (now on <a href="army1901in.html">its own page</a>); which Army cipher this table belongs to. No person has checked the transcriptions.</dd>
 </dl>
 </div>
 
@@ -125,7 +125,7 @@
 <h2 id="method"><span class="num">03</span> How the table was found</h2>
 <p>Harumi-Matsuba&rsquo;s search began with two telegrams in the General Staff&rsquo;s 1901&ndash;02 files that mix clear kana with runs of digits. The outgoing draft of C09122909900 has furigana on the words that were to be enciphered, カイグン and エンシウ. Against them the twelve pairs show the pattern: ン is 10 three times; the first digit, modulo 5, follows the vowel; it reaches 5 or more only for voiced kana; and ア, カ, サ are 9, 8, 7. The rest of the table follows from that rule. Two telegrams found afterwards then read with it, C09122911500 against its translation and C09123116600 against its reply.</p>
 <p>The 35 of 35 is not a wholly independent test. The table&rsquo;s shape was completed with C09122911500 in view, and the バ column, 6, was fixed from its ブ = 76. The independent test is the Kokura telegram, which was found by searching the catalogue for runs of digits and has only thirteen pairs. A permutation control supports the table: with its row and column digits shuffled, 1,000 tables never come near the real agreement.</p>
-<p>A fifth telegram, Hiroshima, 18 February 1901 (C09122806100), has fifteen pairs that this table does not read: the same ニ is written 91 and 69. It uses another method and is not part of this entry. The contributor tried the 1902 table with periodic additives and other rules, and nothing fits.</p>
+<p>A fifth telegram, Hiroshima, 18 February 1901 (C09122806100), has fifteen pairs that this table does not read: the same ニ is written 91 and 69. It uses another method and is not part of this entry. The contributor tried the 1902 table with periodic additives and other rules, and nothing fits. It has since been decoded in part with the 1901 serial table (テンシヨク, ンチワ, フクム; 91 and 69 off that table): see <a href="army1901in.html">the 1901 serial kana table</a>.</p>
 
 <h2 id="checks"><span class="num">04</span> What was checked here</h2>
 <ul>
@@ -378,13 +378,13 @@ reported directly by the head of the branch depot.</pre></details>
 
 <!-- cite:start -->
 <details class="cite" id="cite"><summary>Cite this page</summary>
-<p class="citetext">Harumi-Matsuba and Daniel Bourdeau, “The Japanese Army’s numeric kana cipher, 1902–04”, Cyphersolver, posted 21 October 2026, updated 7 November 2026, https://cyphersolver.com/army1902.html.</p>
-<p class="citebtns"><button type="button" data-copy="Harumi-Matsuba and Daniel Bourdeau, “The Japanese Army’s numeric kana cipher, 1902–04”, Cyphersolver, posted 21 October 2026, updated 7 November 2026, https://cyphersolver.com/army1902.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-army1902,
+<p class="citetext">Harumi-Matsuba and Daniel Bourdeau, “The Japanese Army’s numeric kana cipher, 1902–04”, Cyphersolver, posted 21 October 2026, updated 10 November 2026, https://cyphersolver.com/army1902.html.</p>
+<p class="citebtns"><button type="button" data-copy="Harumi-Matsuba and Daniel Bourdeau, “The Japanese Army’s numeric kana cipher, 1902–04”, Cyphersolver, posted 21 October 2026, updated 10 November 2026, https://cyphersolver.com/army1902.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-army1902,
   author = {Harumi-Matsuba and Daniel Bourdeau},
   title = {The Japanese Army’s numeric kana cipher, 1902–04},
   year = {2026},
   howpublished = {Cyphersolver},
-  note = {posted 21 October 2026, updated 7 November 2026},
+  note = {posted 21 October 2026, updated 10 November 2026},
   url = {https://cyphersolver.com/army1902.html}
 }">Copy BibTeX</button></p>
 </details>
