@@ -1,0 +1,50 @@
+# Deploy docs/ to GitHub Pages from our own workflow (Pages source: "GitHub Actions"), in place of the built-in
+# "pages-build-deployment" run of "Deploy from a branch". The built-in deploy has a fixed 10-minute limit, and with a
+# site upload of about 180 MB it often sat at "syncing_files" until that limit and failed (five times on 10 Nov 2026).
+# Here the limit is 30 minutes. The build step is the same Jekyll build the branch deploy ran (docs/ has no .nojekyll),
+# so the published files are unchanged: names starting with "_" stay unpublished.
+name: Deploy site to Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deploy at a time; a newer push replaces a deploy still running, as the built-in deploy did.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/configure-pages@v5
+      - uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./docs
+          destination: ./_site
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          timeout: 1800000        # 30 minutes, in milliseconds (the default is 10)

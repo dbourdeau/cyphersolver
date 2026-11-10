@@ -1,4 +1,5 @@
-# The Pages deploy of docs/ (the built-in "pages-build-deployment" run) sometimes times out. A failed deploy cannot be
+# The Pages deploy of docs/ (deploy-pages.yml, "Deploy site to Pages"; until 10 Nov 2026 the built-in
+# "pages-build-deployment" run) sometimes times out. A failed deploy cannot be
 # retried for the same commit: the deployment id is the commit SHA, and a new build of it fails at once with
 # "Deployment cancelled". A new commit on main clears it, so when the deploy of the tip of main fails this pushes an
 # empty commit. The push goes through the deploy key, as in rebuild-site.yml. At most two in a row, so a deploy that
@@ -7,7 +8,7 @@ name: Retry failed Pages deploy
 
 on:
   workflow_run:
-    workflows: ['pages-build-deployment']
+    workflows: ['Deploy site to Pages']
     types: [completed]
 
 permissions:
