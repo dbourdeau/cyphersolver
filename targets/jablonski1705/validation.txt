@@ -1,0 +1,19 @@
+# Validation of the key, leads 2169 + 2170 (jablonski1705): ONE measurement on a held-out draft, protocol fixed before.
+# Contributor's pre-registered test (not docs/_validate.py). Protocol frozen/01_PREREG.md (SHA-256 cd119bef...7343),
+# written 10 Nov 2026 before any view of the portion:
+# - Training: figure/plaintext pairs only, SBB PPN1853543950 scans 23, 24, 37-39, 71, 72 (11,2/15 nos 8, 13, 33; 1705) and
+#   PPN1853544159 scans 86-87 (11,2/16 no 42, 7 Dec 1706): 350 pairs, 1,368 groups (pairs.tsv).
+# - Key: frozen/03_KEY.json (213 groups, 29 of them nulls; SHA-256 04901dec...04ef), frozen before the portion was transcribed.
+# - Held out: ALL numeric groups on PPN1853544159 scans 91-92 (11,2/16 no 44, 14 Feb 1707), letter body + P.S.
+#   (frozen/02_PORTION.txt, image hashes). Transcribed blind from red-ink-only renderings (the Latin under the groups masked),
+#   541 groups (frozen/04_TRANSCRIPTION.txt, 79921717...a313); decoded and frozen (frozen/05_DECODE.txt, 2f33a933...86f8);
+#   only then the Latin under the groups read and frozen (frozen/06_CLEAR.txt, 3e4cf96d...c5).
+# - Score = 1 - Levenshtein(decode, reference) / len(reference), on letters; normalisation lower case, j->i, v->u
+#   (the script also folds w->u and y->i, which the protocol does not name; declared). Unknown or illegible group = "?" (wrong).
+# - Controls: 200 keys made by shuffling the key's values over its groups (seed 20261110); best control.
+# - Thresholds fixed in advance: PASS if score >= 0.85 AND score >= best control + 0.30.
+# Result as recorded (frozen/07_MEASURE.txt, script frozen/scripts/measure.py; all hashes in frozen/HASHES.txt):
+groups 541; decoded as "?" 9 (2 illegible, 7 outside the frozen key: 215, 15, 61, 178, 113, 53, 40)
+accuracy=0.9296 decode_chars=958 ref_chars=952 best_control=0.2468 mean_control=0.1975
+margin 0.683
+DECISION: PASS (validated). The portion is burnt: nothing was re-measured, and the key was not changed after the measurement.
