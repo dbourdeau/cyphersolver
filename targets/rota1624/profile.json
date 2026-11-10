@@ -1,0 +1,242 @@
+{
+ "schema_version": 1,
+ "target": "rota1624",
+ "title": "'Francesco Rota' to 'Monsieur Vatron' in London, The Hague, 8 April 1624 (BSB Clm 10398 n. 106): letter key recovered from the leaf, code numbers open",
+ "documents": [
+  {
+   "id": "clm10398-n106",
+   "read": "read in part",
+   "shelfmark": "Munich, Bayerische Staatsbibliothek, Clm 10398 (Collectio Camerariana vol. 48), n. 106, fol. 233r (MDZ bsb00116447 scan 469)",
+   "date": "8 April 1624",
+   "year": 1624,
+   "country": "Germany",
+   "route": "The Hague -> London",
+   "places": {
+    "from": "The Hague",
+    "to": "London"
+   },
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaf or beside it; the verso is blank and the neighbouring pieces are in clear.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 144,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "MDZ IIIF image of the microfilm, bsb00116447 scan 469, 1216 x 1849 px, read on 4x crops",
+    "image_quality": "fair",
+    "notes": "One AI transcription, no second reader. 144 cipher tokens counted by decode.py (79 letter groups, 25 code numbers, 40 single signs); the --measure count of 294 includes the clear words."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "nomenclator"
+  ],
+  "summary": "Clear Italian with two-digit numbers for single letters, written together and mixed with clear letters inside words; numbers with a tick above and numbers after a prefix letter g, c or m for names and words; single letters (q, t, p, z, x, r, n) standing alone for short words.",
+  "symbol_kind": "digits and letters",
+  "distinct_symbols": 25,
+  "digit_groups": {
+   "separation": "contiguous"
+  },
+  "diacritics": {
+   "used": true,
+   "note": "a tick above some numbers and a bar above others; their meaning is not established"
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "names",
+    "common words"
+   ]
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "kept",
+  "notes": "distinct_symbols counts the two-digit letter numbers seen (25, of which 16 have a firm value). 20 and 70 may be second values for n and o (one use each), so homophones are not established."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Catalogue 2176 vetting of 4 Nov 2026: no DECODE record, nothing in Tomokiyo or Lasry, not printed in Rusdorf's Mémoires (1789), Goetz (Briefe und Akten N.F. II/1), Khevenhüller, Söltl, Gardiner or Krüner; Schubert, Ludwig Camerarius (1955) not online and not seen. Issue #254: an earlier attack by Brice Dudout did not beat its shuffled-key control.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "first_date": "2026-11-09",
+  "last_date": "2026-11-09",
+  "human_role": "Daniel Bourdeau chose the target (catalogue 2176) and asked for a solution. Claude fetched the scan, transcribed, recovered the letter key, read and wrote up. No human checked the transcription or the reading.",
+  "models": [
+   "Claude (Anthropic), Claude Code"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-11-09",
+   "kind": "access",
+   "what": "Scan 469 fetched from the MDZ IIIF server (bsb00116447), full size 1216 x 1849 px; scans 465-468 and 470-482 fetched to look for a key or a decipherment.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "transcription",
+   "what": "Line-by-line transcription from the scan and 4x crops; ticks and bars above numbers recorded; 4 and 7 told apart by form.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "contextual inference"
+   ],
+   "what": "The two-digit numbers written together are single letters, mixed with clear letters inside words; ticked numbers and numbers after g, c, m are code words.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "contextual inference",
+    "manual reconstruction"
+   ],
+   "what": "Words fixed by the clear text around them: discorre-32-do (n), peti-92 30 40-n (tio), 91 30 gli 40 22 90 (migliore), può 21 10 22 90 (fare), 10 81 92 22 40 (altro), 51 90 81 40 94 70 (geloso). Sixteen letter values decode 70 of 79 letter groups; 72 with 20 = n and 70 = o (one use each, plausible only).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Single signs from their sentences: q = che, t = non, p = per, p' = però, & = et; z = se plausible. x, r, n, m, pt and one more sign not resolved (x is a person or 'si').",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Neighbouring pieces n. 105 and 107-110 (scans 465-468, 471-482) opened for a key, a gloss or the same code: all in clear.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "reading",
+   "what": "Decode built into Italian sentences and translated; 25 code numbers, 7 unticked numbers and 22 single signs stay open. 90 of 144 cipher tokens read (62.5%).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "docs/_validate.py on the 79 letter groups (model it-cinquecento): verdict too short (72 read tokens, 18 types).",
+   "result": "partial"
+  },
+  {"date": "2026-11-09", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 72 tokens, 18 types, it-cinquecento order 4: reading -2.45 per letter; Verdict: too short.", "result": "partial"}
+ ],
+ "outcome": {"validation": {"date": "2026-11-09", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 72, "types": 18, "tokens_per_type": 4.0, "score": -2.45, "nulls": {}, "verdict": "too short", "notes": "claimed per-occurrence score -2.45; polyphony 0.0; 7 unread tokens left out; annealer on the real text from random keys reached n/a"}, 
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Sixteen letter values recovered here from the leaf alone, using the clear Italian around and inside the cipher words; no key, decipherment or parallel text was available. The code numbers are not recovered.",
+  "first_break": true,
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.625,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "decode.py on transcription.txt: 144 cipher tokens (79 letter groups, 25 code numbers, 40 single signs); 72 letter groups and 18 signs read = 90/144.",
+  "codes_open": {"open": 22, "total": 22, "tokens_open": 25},
+  "verification": ["historical consistency"],
+  "provenance": "project",
+  "key_file": "key.tsv",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "pointer",
+    "note": "found the letter in the Munich Camerariana sweep (PR #242) and described its signs",
+    "date": "2026-11-03"
+   },
+   {
+    "who": "dudout",
+    "role": "pointer",
+    "note": "showed that it is not the Camerarius 1621-22 code and that an attack on the numbers as a code fails (issue #254)",
+    "date": "2026-11-04"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "25 code numbers: ticked 49, 81, 28, 93, 68, 80, 64, 85, 51, 94 standing alone, the bare 64, and the numbers after g, c, m (g 34, g 37, g 24, g 27, g 57, c 94, c 85, c 34, c 84, m 34)",
+    "blocker": "no-key-material",
+    "detail": "no key or decipherment known; neighbouring leaves in clear; each code occurs once or twice on one page (the number 34 four times, after g, c and m)"
+   },
+   {
+    "item": "7 unticked numbers inside letter runs (72, 86, 87, 16, 24, 25, 11)",
+    "blocker": "too-short",
+    "detail": "once each, no word fixed around them"
+   },
+   {
+    "item": "single signs x (5 uses), r (2), n, m, pt and a reversed-2 sign",
+    "blocker": "too-short",
+    "detail": "x is a person or 'si'; the page does not decide"
+   },
+   {
+    "item": "values 20 (n?) and 70 (o?)",
+    "blocker": "too-short",
+    "detail": "one use each"
+   },
+   {
+    "item": "Hyacinth's and Alexander's cipher reports, Munich St.A. K. schw. 442/19 (cited by Goetz), possibly the same code",
+    "blocker": "needs-physical-access",
+    "detail": "not online"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "clm10398-n106",
+    "label": "the letter, fol. 233r",
+    "transcription": "transcription.txt",
+    "decryption": "decode_raw.txt",
+    "reading": "reading.txt",
+    "translation": "translation.txt",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.625,
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (Anthropic), for Daniel Bourdeau",
+     "date": "2026-11-09",
+     "note": "Read as sentences on 9 Nov 2026 by the AI that made the decode; no second reader. The clear text and the spelled words give sentences that construe as Italian and translate, but every sentence with cipher keeps at least one unread code number or sign, so the persons and subjects are missing: read in part, not read."
+    },
+    "summary": "The writer, delayed at The Hague by an errand for the Nuncio in Amsterdam, reports that he pressed a person in code (g 34) hard and brought him to admit that nothing better exists for the greatness of his house, while the wife laughs at it. He asks his correspondent in London to maintain that he did not come there for a purpose that is in code, but for something else, and sends greetings to Father Anderson, the Count and a gentleman with a Capuchin beard. The persons and subjects in code are not read."
+   }
+  ],
+  "notes": "Catalogue 2176. The catalogue's identifications (Rota = the Capuchin Alexander of Hales, from Goetz and Gardiner; Vatron perhaps Rusdorf) were not checked again here."
+ }
+}
