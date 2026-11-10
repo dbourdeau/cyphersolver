@@ -76,7 +76,7 @@ GENERATED = [
     r'<!-- lasry:start -->.*?<!-- lasry:end -->\n?',
     r'\n?<p class="outcome">.*?</p><!-- /outcome -->',
     r'\n?<p class="credits">.*?</p><!-- /credits -->', r'<!-- contrib:start -->.*?<!-- contrib:end -->\n?',
-    r'\n?<p class="readjump">.*?</p><!-- /readjump -->', r'<!-- cite:start -->.*?<!-- cite:end -->\n?', r'<!-- social:start -->.*?<!-- social:end -->\n?',
+    r'<link rel="stylesheet" href="pg-[a-z]+\.css[^"]*">\n?', r'\n?<p class="readjump">.*?</p><!-- /readjump -->',r'<!-- cite:start -->.*?<!-- cite:end -->\n?', r'<!-- social:start -->.*?<!-- social:end -->\n?',
 ]
 
 def normalise(s):
@@ -4044,6 +4044,9 @@ def browse_html():
             + f'</div>\n<p class="allws"><a href="writeups.html">All {len(PAGES)} write-ups, with filters and search &rarr;</a> &middot; '
               '<a href="atlas.html">the atlas</a> &middot; <a href="keys.html">the key web</a> &middot; <a href="glossary.html">what the methods mean</a></p>\n</section>\n<!-- browse:end -->')
 
+# The larger of them keep their rules in a sheet of their own, docs/pg-<slug>.css, linked after style.css on that page
+# alone (slug -> a hash of the file); the rest, and pg-solve, stay in style.css.
+PAGE_CSS = {f.stem[3:]: hashlib.sha1(f.read_bytes().replace(b'\r\n', b'\n')).hexdigest()[:8] for f in sorted(HERE.glob('pg-*.css'))}
 PAGE_STYLED = {'archives', 'atlas', 'catalogue', 'further', 'goldbar', 'highlights', 'huangxing', 'keys', 'roosevelt', 'secret', 'sunintercepts', 'sunyatsen'}
 SHARED_INLINE = ('.why', '.w-yes', '.w-no', '.w-lang', '.w-otp', '.w-short', '.w-fake', '.w-open', '.item', '.item h3', '.item .meta2', '.ct', '.callout', '.callout h3', '.tw')
 
@@ -4212,7 +4215,7 @@ def process(path):
         if rules and all(r.strip() in SHARED_INLINE for r in rules): return ''
         return m.group(0)
     s = re.sub(r'<style>(.*?)</style>\s*', strip_style, s, flags=re.S)
-    # page-specific rules live in style.css under body.pg-<slug>; a page keeps no <style> block of its own
+    # page-specific rules live under body.pg-<slug>, in style.css or in the page's own pg-<slug>.css (PAGE_CSS); a page keeps no <style> block of its own
     if slug in PAGE_STYLED: s = re.sub(r'<style[^>]*>.*?</style>\s*', '', s, flags=re.S)
     # dateline: when the finding landed, and when the page last really changed
     mm = re.search(r'<p class="meta">(.*?)</p>', s, re.S)
@@ -4284,6 +4287,9 @@ def process(path):
     # versions, anchor for "Top", script
     s = re.sub(r'<link rel="stylesheet" href="style.css[^"]*">', f'<link rel="stylesheet" href="style.css?v={VERSION}">', s)
     if 'href="style.css' not in s: s = s.replace('</head>', f'<link rel="stylesheet" href="style.css?v={VERSION}">\n</head>', 1)
+    s = re.sub(r'<link rel="stylesheet" href="pg-[a-z]+\.css[^"]*">\n?', '', s)
+    if slug in PAGE_CSS:
+        s = s.replace(f'<link rel="stylesheet" href="style.css?v={VERSION}">', f'<link rel="stylesheet" href="style.css?v={VERSION}">\n<link rel="stylesheet" href="pg-{slug}.css?v={PAGE_CSS[slug]}">', 1)
     # the tab icon: a wax seal with a key (favicon.svg, PNG fallbacks rendered from it)
     s = re.sub(r'<link rel="(?:icon|apple-touch-icon)"[^>]*>\n?', '', s)
     s = s.replace('</head>', ICONS + '</head>', 1)

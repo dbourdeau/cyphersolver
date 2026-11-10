@@ -538,7 +538,7 @@ def sources_html(E):
 '''
 
 
-# page rules live in style.css under body.pg-catalogue (the site build strips inline <style> from catalogue.html).
+# page rules live in pg-catalogue.css under body.pg-catalogue (the site build strips inline <style> from catalogue.html).
 # The page script: views, search, facets, reweighting, sort, paging; a row click opens the cipher's page. __GONE__ is
 # replaced by the numbers that have left the catalogue, so an old catalogue.html#eNN link still lands somewhere useful.
 CAT_JS = r'''
@@ -1053,7 +1053,7 @@ def build_solve_pages():
     """Run after _build_site.py: the nav, footer and scripts are taken from the built catalogue.html."""
     s = (HERE / 'catalogue.html').read_text(encoding='utf-8')
     shell = dict(
-        head='\n'.join(re.findall(r'<link rel="(?:stylesheet|icon|apple-touch-icon)"[^>]*>', s)),
+        head='\n'.join(re.findall(r'<link rel="(?:stylesheet|icon|apple-touch-icon)"(?![^>]*href="pg-)[^>]*>', s)),
         nav=re.search(r'<header class="nav">.*?</header>\n<div class="search" id="search".*?</div>\n</div>', s, re.S).group(0),
         footer=re.search(r'<footer>.*?</footer>', s, re.S).group(0),
         scripts='\n'.join(re.findall(r'<script src="[^"]+"></script>', s)))

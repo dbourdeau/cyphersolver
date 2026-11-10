@@ -328,7 +328,7 @@ def build_pages(pages):
     """Run after the site pages are processed: the nav, footer and scripts are taken from the built further.html."""
     s = (HERE / 'further.html').read_text(encoding='utf-8')
     shell = dict(
-        head='\n'.join(re.findall(r'<link rel="(?:stylesheet|icon|apple-touch-icon)"[^>]*>', s)),
+        head='\n'.join(re.findall(r'<link rel="(?:stylesheet|icon|apple-touch-icon)"(?![^>]*href="pg-)[^>]*>', s)),
         nav=re.search(r'<header class="nav">.*?</header>\n<div class="search" id="search".*?</div>\n</div>', s, re.S).group(0),
         footer=re.search(r'<footer>.*?</footer>', s, re.S).group(0),
         scripts='\n'.join(re.findall(r'<script src="[^"]+"></script>', s)))

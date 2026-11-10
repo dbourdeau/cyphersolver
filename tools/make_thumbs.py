@@ -1,7 +1,7 @@
 """Make the lighter copies of the site's images in docs/thumbs/: run before the build, on any machine with Pillow.
 
-A copy is a WebP, 480 px wide for an image shown small (a card, a list row, a highlight) and 960 px wide for a large
-one shown in a page. _images.py lists them in a srcset beside the original, which stays where it is for the deep-zoom
+A copy is a WebP, 480 px wide for an image shown small (a card, a list row, a highlight), 800 px as well when the
+source is wide enough (what a card on a dense phone screen draws), and 960 px wide for a large one shown in a page. _images.py lists them in a srcset beside the original, which stays where it is for the deep-zoom
 viewer. thumbs/index.json records each source's hash, so an unchanged image is not made again and a removed one loses
 its copies. Without Pillow the script says so and exits cleanly: the site serves the originals until someone runs it.
 
@@ -44,7 +44,7 @@ def main():
         digest = hashlib.sha1(raw).hexdigest()[:12]
         with Image.open(src) as im:
             width = im.width
-            want = [w for w, ok in ((480, small and len(raw) > SMALL_MIN and width > 600), (960, len(raw) > LARGE_MIN and width > 1100)) if ok]
+            want = [w for w, ok in ((480, small and len(raw) > SMALL_MIN and width > 600), (800, small and len(raw) > 2 * SMALL_MIN and width > 900), (960, len(raw) > LARGE_MIN and width > 1100)) if ok]
             if not want: continue
             new[name] = {'hash': digest, 'w': want}
             stem = pathlib.PurePosixPath(name).with_suffix('').as_posix()
