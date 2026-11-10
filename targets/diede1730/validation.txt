@@ -1,0 +1,52 @@
+# Validation of the key (diede1730): two pre-registered measurements. The first FAILED; the second, a single re-test of the
+# unchanged key on a new held-out page, passed. Working files are in French (frozen/); hashes below are those recorded at the time.
+#
+# == Key ==
+# Learned from the cipher of Relat. 16 (Hann. 9g Nr. 1687, aufn 060-065) aligned letter by letter with the contemporary clear
+# text of its P.S. (aufn 065R-068L), 13 cipher/clear segments, EM alignment (frozen/1687/scripts/lalign2.py). Frozen as
+# frozen/1687/KEY.tsv, SHA-256 4d83b4f794e64e551c82c089cb357af029d969871992e5390b4512a337e0d8df (frozen/1687/KEY.sha256):
+# 83 sure, 66 probable, 17 doubtful rows. Protocol: frozen/1687/PREREG.md, PREREG-2.md, PREREG-3.md (written before the
+# clear P.S. was read closely), PREREG-4.md (written after the key was frozen and before the held-out pages were opened).
+#
+# == Measurement 1: Nr. 1687 aufn 033-036 -> FAILED ==
+# Held out: aufn 033-036, the first 160 groups of the runs that carry a contemporary interlinear gloss (frozen/1687/H-CHIFFRE.txt,
+# SHA-256 1ebd38c7...51f4), transcribed by a separate agent without the key; then the gloss (frozen/1687/G-GLOSE.txt, 92ba8c9c...0ee7).
+# Score: ONE Smith-Waterman local alignment, characters, between the decode and the gloss / decoded positions; doubtful rows and
+# codes outside the key = "?"; 200 shuffled keys (values permuted among the codes present), seed 1730.
+# Thresholds fixed in advance: score >= 0.85 and margin over the best control >= 0.30.
+groups 160, positions 160, outside the key 10, gloss 616 letters
+score (characters) 0.244
+controls n=200: mean 0.028, best 0.050
+margin 0.194
+DECISION: FAILED (frozen/1687/MESURE.txt). Portion spent.
+# Cause as diagnosed afterwards: the 160 groups are 24 separate runs (struck blocks and bare runs skipped), and the gloss is also
+# discontinuous; a single local alignment counts only the longest common stretch (about 40 letters). A flaw of the measure's
+# design. Post hoc, NOT pre-registered, no verdict value (frozen/1687/DIAG-POSTHOC.txt): the same key aligned run by run gives
+# 0.738 against 0.412 for the best shuffled key (mean 0.336).
+#
+# == Measurement 2: Hann. 92 Nr. 1149/1 aufn 0004 -> VALIDATED ==
+# The only re-test allowed for the unchanged key. Protocol frozen/1149-1/PREREG-1730.md (SHA-256 318b1c22...b9be; the published
+# copy has one local file path redacted, so its hash differs) and amendment A1 (frozen/1149-1/PREREG-1730-A1.md, SHA-256
+# 7ff4481d...f5e4, which also hashes m5.py, mklex.py, LEX-M5.txt and calib/CALIB.txt), both written before aufn 0004 was viewed.
+# - Key: frozen/1687/KEY.tsv unchanged; sure + probable rows only. Nothing from aufn 0003 added.
+# - Held out: aufn 0004 (P.S. ad Relat. 1, Regensburg 2 Jan 1730), the first 160 groups in reading order, left page then right.
+#   The page has no gloss. Transcribed by a separate agent without the key (frozen/1149-1/H-0004.txt, 72c3eb3d...32e2fa;
+#   H-0004.codes 67cf3a70...f8dc), hashed before decoding. Declared context: the postscript begins on aufn 0003, which is glossed.
+# - Score M5 (dictionary coverage): share of decoded letter positions covered by the best segmentation (dynamic programming) into
+#   words of frozen/1149-1/LEX-M5.txt; a group outside the key = one "?" position, never covered. LEX-M5 = word forms of the
+#   chancery prose of Nr. 1687 (clear lines, clear P.S. 16, the spent gloss of measurement 1) + German Project Gutenberg texts
+#   (targets/adfgvx/corpus/de_*.txt, words seen >= 3 times); words of >= 3 letters plus a closed list of short words; nothing
+#   from Nr. 1149/1. NOTE: M5 measures dictionary coverage, not the character agreement with a known plaintext used in
+#   measurement 1; there is no plaintext for aufn 0004, so the 0.85 character criterion cannot be applied.
+# - Controls: 200 shuffled keys (values permuted among the codes present in H), seed 1730.
+# - Thresholds fixed in advance: VALIDATED if coverage >= 0.60 and coverage >= best control + 0.30; PARTIAL if only the margin.
+# - Calibration, made before, on non-held-out Nr. 1687 material (optimistic; frozen/1149-1/calib/CALIB.txt): real readings
+#   0.634-0.794, best controls 0.306-0.394. The 0.60 threshold lies under the lowest real calibration reading.
+groups 160, positions 160, outside the key 12
+coverage 0.656
+controls n=200: mean 0.196, best 0.325
+margin 0.331
+DECISION: VALIDATED (frozen/1149-1/MESURE-1730.txt; script frozen/1149-1/scripts/m5.py). Portion spent.
+# After the measurement: Daniel's count on the 160 groups, sure 106 / probable 39 / restored 12 / unresolved 3 (reading.md).
+# Groups 161-242 of aufn 0004 were decoded afterwards as exploration only; they are not measured.
+# No other measurement was made. The key was not changed after either measurement.

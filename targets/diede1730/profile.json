@@ -1,0 +1,294 @@
+{
+ "schema_version": 1,
+ "target": "diede1730",
+ "title": "Hanoverian envoys Diede and Reck at Regensburg, 1730 (NLA Hannover, Hann. 9g Nr. 1687 and Hann. 92 Nr. 1149/1): key of the type A letter cipher rebuilt from the chancery's plaintext of the time and validated on an unglossed page",
+ "documents": [
+  {
+   "id": "hann9g-1687",
+   "read": "read in part",
+   "shelfmark": "Hannover, Niedersächsisches Landesarchiv, Hann. 9g Nr. 1687 (chiffrierte Berichte aus Regensburg, 1730), aufn 004, 025-036, 056-057, 060-068",
+   "date": "Regensburg, January-March 1730",
+   "year": 1730,
+   "country": "Germany",
+   "route": "Wilhelm von Diede (zum Fürstenstein) and Reck, Hanoverian envoys at the Imperial Diet -> George II / the Geheimer Rat in Hannover",
+   "places": {
+    "from": "Regensburg",
+    "to": "Hannover"
+   },
+   "language": "German",
+   "pages": 40,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "separate folio"
+    ],
+    "source": "The clear text of the P.S. ad Relat. 16 written at the time on aufn 065R-068L (another hand) gives the plaintext of the cipher of Relat. 16 (aufn 060-065); partial interlinear decipherments of the time on aufn 027-031, 033-036 and 056-057; marginal summaries on 004 and 025."
+   },
+   "length": {
+    "tokens": 3636,
+    "unit": "code groups",
+    "measured": true,
+    "file": "frozen/1687/transcr/"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NLA Hannover via Arcinsys, full-resolution images (about 7600 px, Public Domain Mark)",
+    "image_quality": "good",
+    "notes": "All cipher runs of aufn 004, 025-036, 056-057 and 060-065 transcribed (3,636 groups) and the clear P.S. 16 (065R-068L); Relat. 17, 21, 25 (aufn 119-123, 142-144, 158-159, roughly 2,400 groups) and the Copenhagen letters (150-153, 165-166, another system) not transcribed."
+   }
+  },
+  {
+   "id": "hann92-1149-1-0004",
+   "read": "read in part",
+   "shelfmark": "Hannover, Niedersächsisches Landesarchiv, Hann. 92 Nr. 1149/1 (Einzelne Relationen aus Regensburg 1730-1731), aufn 0004",
+   "date": "Regensburg, 2 January 1730 (P.S. ad Relat. 1)",
+   "year": 1730,
+   "country": "Germany",
+   "route": "Diede and Reck (Regensburg) -> George II (London copy, Deutsche Kanzlei)",
+   "places": {
+    "from": "Regensburg",
+    "to": "London"
+   },
+   "language": "German",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No gloss on aufn 0004; the start of the same postscript (aufn 0003, 5 cipher lines) carries a full interlinear decipherment of the time."
+   },
+   "length": {
+    "tokens": 242,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NLA Hannover via Arcinsys, full-resolution image (Public Domain Mark)",
+    "image_quality": "good",
+    "notes": "242 groups, transcribed by one agent without the key and frozen before decoding; the first 160 are the held-out portion of measurement 2."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Homophonic substitution of German letters: dotted groups of 2-4 digits (5-1497), about one group per letter, 3-6 homophones for frequent letters, written in lines inside clear relations; a few word or syllable codes (Chur Mayntz 216.123.53, Chur Cölln 270.333; 841 = ich probably). 166 values in the rebuilt table.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 197,
+  "digit_groups": {
+   "separation": "dots"
+  },
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "syllables",
+    "titles"
+   ]
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "random",
+  "word_division": "none"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "In the archive: the clear text of the P.S. ad Relat. 16 of the time (Nr. 1687 aufn 065R-068L) and partial interlinear decipherments in Nr. 1687 and Nr. 1149/1 (aufn 0003, 0006-0008, 0102-0103). No key sheet found in either file. Lead 1659 vetting (2 Nov 2026): nothing on DECODE, Cryptiana or Lasry's lists; no edition. targets/mecklenburg1734 is another system. No target, branch or PR for Nr. 1687 or Nr. 1149/1 in this repository (main 6a94e2f0e, 11 Nov 2026).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Daniel Bourdeau's Archivportal-D sweep found Nr. 1687 (lead 1659). Brice Dudout chose the target and set the rules (protocols, key and held-out portions hashed before viewing; one measurement each; one re-test of an unchanged key) and approved publication. AI agents surveyed, transcribed, built the key, measured and wrote up. No human palaeographer checked the transcription.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-11-10",
+  "last_date": "2026-11-11"
+ },
+ "solution": [
+  {
+   "date": "2026-11-10",
+   "kind": "transcription",
+   "what": "Nr. 1687: cipher runs of aufn 004, 025-036, 056-057, 060-065 (3,636 groups) and the clear P.S. ad Relat. 16 (065R-068L).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "hypothesis",
+   "what": "Alignment of glosses line by line, then a nomenclator-with-nulls model: no stable key (the glosses run on as continuous text under the line).",
+   "result": "failed",
+   "technique": [
+    "EM alignment",
+    "key-structure hypothesis"
+   ]
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "crib",
+   "what": "Relat. 16 cipher (060-065) aligned letter by letter with its clear P.S. of the time: about one group per letter, homophonic letter substitution; key frozen by SHA-256 (83 sure, 66 probable, 17 doubtful).",
+   "result": "worked",
+   "technique": [
+    "EM alignment",
+    "plaintext matching"
+   ]
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Measurement 1 (pre-registered), Nr. 1687 aufn 033-036, 160 glossed groups: one Smith-Waterman alignment, 0.244 vs 0.050 for the best of 200 shuffled keys; thresholds >= 0.85 and margin >= 0.30 not met. Post hoc, run by run, no verdict value: 0.738 vs 0.412.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Measurement 2 (pre-registered single re-test of the unchanged key), Hann. 92 Nr. 1149/1 aufn 0004, 160 unglossed groups: dictionary coverage M5 0.656 vs 0.325 for the best of 200 shuffled keys (mean 0.196), margin 0.331; thresholds >= 0.60 and margin >= 0.30, calibrated and hashed beforehand.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "reading",
+   "what": "Aufn 0004, groups 1-160 read as German: sure 106, probable 39, restored 12, unresolved 3; agrees with the gloss of the time on aufn 0003. Groups 161-242 decoded as unmeasured exploration.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "access",
+   "what": "Survey of all 605 images of Hann. 92 Nr. 1149/1: type A cipher in three pieces of Jan-Feb 1730 (about 975 groups, about 685 glossed), a type B 4-digit system in a piece of 3 Aug 1730 (about 900 groups, pale gloss), not attacked.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The key was learned from the clear P.S. ad Relat. 16 written at the time (Nr. 1687 aufn 065R-068L) aligned with the cipher of Relat. 16, and validated once on an unglossed page of the London copies (Hann. 92 Nr. 1149/1 aufn 0004) after a first, failed measurement on Nr. 1687.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "verification": [
+   "contemporary decipherment",
+   "statistical test"
+  ],
+  "validation": {
+   "date": "2026-11-11",
+   "verdict": "pass",
+   "file": "validation.txt",
+   "tokens": 160,
+   "notes": "Contributor's pre-registered held-out tests (not docs/_validate.py). Measurement 1 (Nr. 1687 aufn 033-036, one Smith-Waterman character alignment against the gloss) FAILED: 0.244 vs 0.050, thresholds >= 0.85 and margin >= 0.30; post hoc run by run 0.738 vs 0.412, no verdict value. Measurement 2, the single re-test of the unchanged key (Hann. 92 Nr. 1149/1 aufn 0004, 160 unglossed groups, transcribed without the key and hashed): M5 dictionary coverage 0.656 vs best of 200 shuffled keys 0.325 (mean 0.196), margin 0.331; thresholds >= 0.60 and margin >= 0.30 calibrated on Nr. 1687 and hashed in advance -> pass. M5 measures dictionary coverage, not character agreement with a plaintext (there is none for aufn 0004)."
+  },
+  "provenance": "mixed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "the Hanoverian chancery's (Deutsche Kanzlei) clear text of the P.S. ad Relat. 16 and interlinear decipherments of 1730 (Nr. 1687, Nr. 1149/1); the key was learned from them",
+    "date": "1730"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "Archivportal-D sweep found Hann. 9g Nr. 1687 (lead 1659, with Diede's lead 1658); vetted 2 Nov 2026",
+    "date": "2026-11-02"
+   },
+   {
+    "who": "nla_hannover",
+    "role": "pointer",
+    "note": "Niedersächsisches Landesarchiv, Abt. Hannover: Hann. 9g Nr. 1687 and Hann. 92 Nr. 1149/1, digitised on Arcinsys under the Public Domain Mark",
+    "date": "2026-11-11"
+   },
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "note": "Nr. 1687 cipher runs (3,636 groups) and clear P.S. 16; Nr. 1149/1 aufn 0004 (242 groups); survey of the 605 images of Nr. 1149/1",
+    "date": "2026-11-11"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "key reconstructed from the chancery's plaintext of 1730 (key.tsv, CC BY 4.0); first measurement failed (0.244 vs 0.050), single re-test on an unglossed page passed (M5 0.656 vs 0.325, validation.txt)",
+    "date": "2026-11-11"
+   },
+   {
+    "who": "dudout",
+    "role": "pointer",
+    "note": "new source Hann. 92 Nr. 1149/1 (London copies 1730-31 of the same envoys): about 975 type A groups, mostly glossed, and a type B 4-digit system of about 900 groups, not attacked",
+    "date": "2026-11-11"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Nr. 1687 Relat. 17, 21, 25 (aufn 119-123, 142-144, 158-159; roughly 2,400 groups, almost without gloss) not transcribed",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "Nr. 1149/1 aufn 0004 groups 161-242 decoded only as unmeasured exploration; aufn 0006-0008 and 0102-0103 not transcribed",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "type B systems not attacked: Nr. 1149/1 aufn 0129-0132 (4-digit groups 1000-3400, about 900, pale gloss) and the Copenhagen letters of Schütz in Nr. 1687 (aufn 150-153, 165-166; dotted 4-digit groups 2000-4100, dense gloss)",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "17 doubtful key rows; word codes 281, 26, 279 (Nr. 1149/1 aufn 0003) and others not in the table",
+    "blocker": "open-codes"
+   },
+   {
+    "item": "one reader (an agent) per transcription; no human palaeographic check; measurement 2 is a dictionary measure, not a character comparison",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "sibling files not opened: Hann. 92 Nr. 1146/2 (1728), 1146/3 (1729), 1149/2 (1731); Hann. 9g Nr. 1424, 1491, 1673, 1676 (lead 1658), 1691",
+    "blocker": "not-attempted"
+   }
+  ],
+  "texts": [
+   {
+    "doc": [
+     "hann92-1149-1-0004"
+    ],
+    "label": "Hann. 92 Nr. 1149/1 aufn 0004, P.S. ad Relat. 1 (2 Jan 1730): groups 1-160, the held-out portion",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "de",
+    "state": "read in part",
+    "read_share": 0.906,
+    "summary": "Continuing the postscript of aufn 0003: someone's good and confidential friendship, in the Electoral College as well as in the Corpus Evangelicorum, is of no small importance, now above all, and daily gives occasion...",
+    "note": "Decode with the frozen key; 106 sure, 39 probable, 12 restored (outside the key, from context, after the measurement), 3 unresolved of 160 groups. Agrees word for word with the gloss of the time on aufn 0003 (not used). Groups 161-242 of the page are unmeasured exploration, not part of this text.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Brice Dudout (with Claude)",
+     "date": "2026-11-11",
+     "note": "decode read as German sentences, one passage that starts and ends mid-sentence; 145 of 160 groups read by the key, 12 restored from context, 3 unresolved (key value conflicts); agrees with the 0003 gloss; one reader"
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "Lead 1659 (Hann. 9g Nr. 1687, 1691) was closed as a duplicate of catalogue 598 without a cipher page opened; Nr. 1687 is dated 1730 and uses a dotted letter cipher, not the code of targets/mecklenburg1734. The chancery's own plaintext of 1730 covers much of the material, so we claim the key and its validation, not a solution. Hann. 92 Nr. 1149/1 is a new source for leads 1658/1659."
+ }
+}
