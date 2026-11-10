@@ -2570,6 +2570,11 @@ PAGES = [
          blurb='The head of the Portuguese government sent Queen Am&eacute;lie two code telegrams on her Mediterranean journey of spring 1903 (ANTT, CAM ma&ccedil;o 15; catalogued &ldquo;before 1907&rdquo;). The May telegram to Paris carries its decode under the strips: the peer Arroio had interpellated the Foreign Minister about her journey, and the minister called it a false rumour. Aligning the decode with the groups gives 24 values and a hypothesis on the order of the code, alphabetical within page blocks with the lower pages reversed. The April telegram to Naples has no decode; one of its 29 groups has a value.',
          quote='&ldquo;O Ministro dos Estrangeiros [veio] contestar, [ser] falso boato&rdquo;',
          rights='Arquivo Nacional Torre do Tombo, PT/TT/CAM/M15, via DigitArq'),
+    dict(slug='coahuila1906', label='Coahuila code telegrams 1906', year='1906', y=1906.5, place='M&uacute;zquiz &harr; Saltillo', st='partial', stt='key from adjacent plaintext, in part',
+         title='Coahuila code telegrams on the Kickapoo affair, 1906',
+         blurb='Nine telegrams of June and July 1906 between the Jefe Pol&iacute;tico of M&uacute;zquiz and the Governor of Coahuila, copied for a US Senate inquiry with the clear parts in English and the code numbers left as sent; the Mexican Embassy could not decipher them in 1907. Brice Dudout rebuilt the two-digit homophonic key from two telegrams and the clear context: 73 of 80 coded words read by sense. His held-out test scored 0.796 against a criterion of 0.80 set in advance, so the key is called partial; the judge&rsquo;s telegram T54 uses another key.',
+         quote='&ldquo;Conviene obre con toda prudencia para evitar quejas fundadas&rdquo;',
+         rights='Telegrams: National Archives, RG 59, M862 roll 342 (US government work); key and reading by Brice Dudout (CC BY 4.0)'),
     dict(slug='lima1909', label='Venceslau de Lima to Manuel II 1909', year='1909', y=1909.88, place='Lisbon &rarr; Madrid, Paris', st='solved', stt='existing decipherment',
          title='Venceslau de Lima to King Manuel II, November&ndash;December 1909',
          blurb='Eight code telegrams from the Portuguese head of government to the young King during his state visit to Spain, France and England. The receiver pencilled the meaning above nearly every group; transcribed from those decodes, 400 of 409 code items stand, with five corrections from a review against the scans. The glosses give 261 values of a two-part Portuguese code: the return route via Medina del Campo to avoid a stop at Luso, the King&rsquo;s toast in Paris, the Legion of Honour, the reception in Lisbon.',
@@ -4655,6 +4660,7 @@ IMAGES['farnese1547'] = None
 IMAGES['thumbshirn1647'] = None
 IMAGES['schoenberg1665'] = None
 IMAGES['flak1940'] = None
+IMAGES['coahuila1906'] = None
 IMAGES['rubio1913'] = ('rubio1913_telegram.jpg', 'Rubio&rsquo;s telegram of 18 March 1914: the plain words &ldquo;con toda atenci&oacute;n que&rdquo; and the first runs of numbers', 'Centro de Estudios de Historia de M&eacute;xico (CEHM-Carso), fondo DLXXIII, DLXXIII.2.41.13-41 image 1, via the CEHM public viewer (crop; the viewer&rsquo;s watermark is partly visible)')
 IMAGES['portstemarie1729'] = ('portstemarie1729_lead.jpg', 'mssBLA 191 p. 5: the head of the coded report, no gloss', 'Huntington Library, William Blathwayt papers addenda, mssBLA 191 p. 5, via the Huntington Digital Library')
 IMAGES['napoleon'] = ('napoleon_plate.jpg', 'Page 3 of the dispatch: the archivist&rsquo;s notes, the salutation &ldquo;Sire,&rdquo; and the first lines of the cipher', 'J. Vilcoq, Revue historique de l&rsquo;Arm&eacute;e 1969 no. 4, plate after p. 24 (Archives nationales), via Pers&eacute;e')
