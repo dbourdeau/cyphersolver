@@ -30,7 +30,7 @@ for i,c in sel:
     got.append((i,c['label'],fn))
 per=30; cols=6
 for k in range(0,len(got),per):
-    ch=got[k:k+per]; H=int(w*1.45)+16
+    ch=got[k:k+per]; _a=Image.open(ch[0][2]); H=int(w*(0.85 if _a.width>_a.height else 1.45))+16
     sh=Image.new('RGB',(cols*w,((len(ch)+cols-1)//cols)*H),'white'); d=ImageDraw.Draw(sh)
     for n,(i,lab,fn) in enumerate(ch):
         try: im=Image.open(fn).convert('RGB')
