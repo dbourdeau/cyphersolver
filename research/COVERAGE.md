@@ -205,3 +205,12 @@ reaches some hosts the earlier one did not and the reverse; each README has its 
 - **Abhilekh Patal:** record pages answer curl. The Document Viewer shows a human check to a browser; two vetting agents read file
   PDFs by posting its form with curl. Those eight verdicts (1355, 1356, 1360, 1363, 1364, 1367, 1368, 1371) are kept in
   `vetting_held` and not applied: Daniel to decide, or confirm in his own Chrome.
+- **Rigsarkivet TKUA, four paging rounds** (`tkua_paging` to `tkua_paging_4`): the 17th-century envoy archives and relations gave nine
+  catalogue entries (2520, 2527, 2528, 2530, 2540-2543, 2553); every cipher leaf opened from 1659 on is
+  deciphered between the lines. Not done: most 18th-century units of the 236, six enumerated series, 68 sheets made and not viewed, the
+  "Chiffer 1670-1709" key volume (unit 260610).
+- **Dutch round 2** (`dutch_2`): archieven.nl site search, about 80 terms; 8 leads, the Culemborg 1257 and Ewsum 595 leaf lists.
+- **Paused 11 Nov, unfinished, rows not merged:** `mnl_2` (MNL databases round 2; 5 draft rows in its `candidates.json`),
+  `bellievre_2` (fr. 15894, 15897, 15898, 15890: fetch scripts only), `alvin_waller` (paging Waller letters on Alvin by image: scripts
+  only). Resume from the scripts; none has a README yet.
+- **Result of the pass:** 36 leads promoted (catalogue 1210 to 1246: 32 of the 89 rows merged today and 4 older leads), 57 new leads left in `leads.json`, 9 leads closed as read, partly read or not cipher.
