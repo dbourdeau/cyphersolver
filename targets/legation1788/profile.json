@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "legation1788",
- "title": "Jefferson-era legation codes Nos. 10, 13 and 16: residual groups in Short 1792, Carmichael 1788 and Thomas Pinckney 1793 (catalogue 484)",
+ "title": "Jefferson-era legation codes Nos. 10, 13 and 16: residual groups in Short 1792, Carmichael 1788 and Thomas Pinckney 1793 (catalogue 484), with the other letters in Code No. 16 (Pinckney 1795, Eaton 1801-02, Lear 1813)",
  "documents": [
   {
    "id": "short_17920726",
@@ -67,7 +67,7 @@
   },
   {
    "id": "pinckney_17930828",
-   "read": "read in part",
+   "read": "read",
    "shelfmark": "NARA RG 59, Despatches from U.S. Ministers to Great Britain, M30 roll 2 frame 0140 (RC)",
    "date": "28 Aug 1793",
    "year": 1793,
@@ -79,7 +79,7 @@
     "location": [
      "none"
     ],
-    "source": "PTJ editors' partial decipherment; values checked against George Taylor's decodings of Pinckney's other letters",
+    "source": "PTJ editors' partial decipherment; values checked against George Taylor's decodings of Pinckney's other letters and, since PR #399, against Eaton's, Lear's and Pinckney's 1795 letters in the same code",
     "partial": true
    },
    "length": {
@@ -93,7 +93,207 @@
     "by": "llm from images",
     "source": "NARA RG 59, Despatches from U.S. Ministers to Great Britain, M30 roll 2 frame 0140 (RC)",
     "image_quality": "fair",
-    "notes": "58 groups in reading.tsv: 1 open, 4 conjectural."
+    "notes": "58 groups in reading.tsv: 2 open (447, ?55), 0 conjectural (regraded 11 Nov 2026 from the other letters of the code, PR #399)."
+   }
+  },
+  {
+   "id": "pinckney_179508",
+   "read": "read",
+   "shelfmark": "NARA RG 59, Despatches from U.S. Ministers to Spain, M31 roll 7 frames 0018-0021",
+   "date": "21 Jul - 1 Oct 1795",
+   "year": 1795,
+   "country": "United States",
+   "route": "Madrid -> Philadelphia",
+   "places": {
+    "from": "Madrid",
+    "to": "Philadelphia"
+   },
+   "language": "English",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "George Taylor Jr.'s interlinear decipherment",
+    "partial": true
+   },
+   "length": {
+    "tokens": 295,
+    "unit": "code groups",
+    "measured": false,
+    "file": "ct/pinckney_179508.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "NARA RG 59, Despatches from U.S. Ministers to Spain, M31 roll 7 frames 0018-0021",
+    "image_quality": "fair",
+    "notes": "Transcribed by the contributor (Andrew Beling, with AI agents, PR #399) from the images. 295 groups counted in ct/pinckney_179508.txt (the bundle's spans.tsv; 283 of them in the Cypher 2d enclosure); line starts of frame 0019 right lost in the gutter."
+   }
+  },
+  {
+   "id": "pinckney_179510",
+   "read": "read in part",
+   "shelfmark": "NARA RG 59, M31 roll 7 frames 0020, 0111, 0134-0135, 0177",
+   "date": "28 Oct - 18 Dec 1795",
+   "year": 1795,
+   "country": "United States",
+   "route": "San Lorenzo de El Escorial -> Philadelphia",
+   "places": {
+    "from": "Madrid",
+    "to": "Philadelphia"
+   },
+   "language": "English",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "a State Department clerk's interlinear and marginal decipherment",
+    "partial": true
+   },
+   "length": {
+    "tokens": 224,
+    "unit": "code groups",
+    "measured": false,
+    "file": "ct/pinckney_179510.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "NARA RG 59, M31 roll 7 frames 0020, 0111, 0134-0135, 0177",
+    "image_quality": "poor",
+    "notes": "Transcribed by the contributor (Andrew Beling, with AI agents, PR #399) from the images. 224 groups (bundle README); only the coded lines were transcribed; frame 0111 is a harsh exposure with the gutter hiding line ends; last line of 0177 in shadow."
+   }
+  },
+  {
+   "id": "eaton_18010525",
+   "read": "read",
+   "shelfmark": "NARA RG 59, Despatches from U.S. Consuls in Tunis, T303 roll 2 frames 0048-0049 (two copies)",
+   "date": "25 May 1801",
+   "year": 1801,
+   "country": "United States",
+   "route": "Tunis -> Washington",
+   "places": {
+    "from": "Tunis",
+    "to": "Washington"
+   },
+   "language": "English",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Jacob Wagner's interlinear decipherment on copy A (frame 0049)",
+    "partial": false
+   },
+   "length": {
+    "tokens": 196,
+    "unit": "code groups",
+    "measured": false,
+    "file": "ct/eaton_18010525.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "NARA RG 59, Despatches from U.S. Consuls in Tunis, T303 roll 2 frames 0048-0049 (two copies)",
+    "image_quality": "fair",
+    "notes": "Transcribed by the contributor (Andrew Beling, with AI agents, PR #399) from the images. 196 groups in each copy, same order (bundle README; counted again in ct/eaton_18010525.txt); 16 blotted groups of copy A filled from copy B."
+   }
+  },
+  {
+   "id": "eaton_18021009",
+   "read": "read",
+   "shelfmark": "NARA RG 59, T303 roll 2 frames 0299-0303",
+   "date": "8 Sep 1802 (enclosed 9 Oct 1802)",
+   "year": 1802,
+   "country": "United States",
+   "route": "Tunis -> Washington",
+   "places": {
+    "from": "Tunis",
+    "to": "Washington"
+   },
+   "language": "English",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "English translation printed in 1802 (American State Papers, Claims, p. 331; Naval Documents, Barbary Powers II:269) for the body; the Madison Papers editors' decipherment for the postscript",
+    "partial": false
+   },
+   "length": {
+    "tokens": 562,
+    "unit": "code groups",
+    "measured": false,
+    "file": "ct/eaton_18021009.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "NARA RG 59, T303 roll 2 frames 0299-0303",
+    "image_quality": "fair",
+    "notes": "Transcribed by the contributor (Andrew Beling, with AI agents, PR #399) from the images. 468 groups aligned to 322 words in the body, 94 groups in 59 words of the postscript (bundle span files); the alignment was made with the printed translation in view."
+   }
+  },
+  {
+   "id": "eaton_18021022",
+   "read": "read in part",
+   "shelfmark": "NARA RG 59, T303 roll 2 frame 0320",
+   "date": "22 Oct 1802",
+   "year": 1802,
+   "country": "United States",
+   "route": "Tunis -> Washington",
+   "places": {
+    "from": "Tunis",
+    "to": "Washington"
+   },
+   "language": "English",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "a contemporary interlinear decipherment on the page; the passage repeats the postscript of 9 Oct 1802",
+    "partial": false
+   },
+   "length": {
+    "tokens": 92,
+    "unit": "code groups",
+    "measured": false,
+    "file": "ct/eaton_18021022.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "NARA RG 59, T303 roll 2 frame 0320",
+    "image_quality": "fair",
+    "notes": "Transcribed by the contributor (Andrew Beling, with AI agents, PR #399) from the images. two blind transcriptions, 92 and 93 groups, agreeing on 85 (bundle result file)."
+   }
+  },
+  {
+   "id": "lear_181301",
+   "read": "read",
+   "shelfmark": "Library of Congress, James Monroe Papers, reel 5 (mss33217.005), images 981-982",
+   "date": "[Jan] 1813",
+   "year": 1813,
+   "country": "United States",
+   "route": "unknown",
+   "language": "English",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "John Graham's interlinear decipherment",
+    "partial": false
+   },
+   "length": {
+    "tokens": 354,
+    "unit": "code groups",
+    "measured": false,
+    "file": "ct/lear_181301.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "Library of Congress, James Monroe Papers, reel 5 (mss33217.005), images 981-982",
+    "image_quality": "good",
+    "notes": "Transcribed by the contributor (Andrew Beling, with AI agents, PR #399) from the images. 354 groups on 30 lines (bundle README); 12 doubtful digits listed there."
    }
   }
  ],
@@ -132,8 +332,8 @@
   "key_order": "random",
   "word_division": "none",
   "doubled_letters": "unknown",
-  "sibling_key": "No key sheet survives for Codes 10, 13 or 16. Code No. 16 values collected from George Taylor's interlinear decodings of Pinckney's other letters on M30 roll 2; Code No. 11 (jefferson1787) does not fit Code No. 13.",
-  "notes": "Three different codes in one record; distinct_symbols counts distinct groups across the three counted passages. Code No. 10 checked for alphabetical order: none. '+' after a Code No. 16 group marks a plural."
+  "sibling_key": "No key sheet is public for Codes 10, 13 or 16. Code No. 16 is the code Weber (1979, p. 155) calls the '663' code and lists as not located; the Madison Papers editors read Eaton and Lear with a key from the Lear family papers that was never printed. Values here: key.tsv (262 Code No. 16 values from George Taylor's decodings of Pinckney's 1793-94 letters) and beling/key/code16_key_v4.tsv (537 groups, Andrew Beling, PR #399). Code No. 11 (jefferson1787) does not fit Code No. 13.",
+  "notes": "Three different codes in one record; distinct_symbols counts distinct groups across the three counted passages. Code No. 10 checked for alphabetical order: none. '+' after a Code No. 16 group marks a plural. Six further letters in Code No. 16 (1795-1813) were added by PR #399; distinct_symbols does not count them."
  },
  "conditions": {
   "prior_solution": {
@@ -149,7 +349,7 @@
    "sibling key"
   ],
   "attack": "archive decipherment",
-  "human_role": "Pasted the catalogue no. 484 task brief (from the project's solve page) into the session; no target-specific intervention.",
+  "human_role": "Pasted the catalogue no. 484 task brief (from the project's solve page) into the session; no target-specific intervention. PR #399 (Andrew Beling, with AI agents) was reviewed and integrated on 11 Nov 2026 at the maintainer's request.",
   "tools": [
    "built-in browser (Founders Online, LoC item JSON)",
    "curl (tile.loc.gov, NARA catalog media)",
@@ -160,9 +360,9 @@
   "models": [
    "claude-opus-5-5"
   ],
-  "sessions": 1,
+  "sessions": 2,
   "first_date": "2026-10-26",
-  "last_date": "2026-10-27"
+  "last_date": "2026-11-11"
  },
  "solution": [
   {
@@ -260,6 +460,70 @@
    "technique": [
     "contextual inference"
    ]
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "transcription",
+   "what": "Contributor (Andrew Beling, with AI agents; PR #399): first transcription of Lear to Madison [Jan 1813] (LoC Monroe Papers reel 5, images 981-982); re-transcribed blind on 10 Nov, 36 numerals corrected (beling/witnesses/lear_1813-01/).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "crib",
+   "what": "Contributor: Eaton's coded copy of the Bey of Tunis to Jefferson (T303 roll 2 frames 0299-0303) aligned by hand to the English translation printed in 1802: 468 groups to 322 words; of 44 direct values also in key.tsv, 43 agree.",
+   "result": "worked",
+   "technique": [
+    "plaintext matching",
+    "manual reconstruction"
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "verification",
+   "what": "Contributor: key frozen (311 groups) and a test declared on Eaton 22 Oct 1802 before its transcription came back. First run scored 0 for real and shuffled keys alike (the truth text had been taken from a file header); extraction fixed and re-run: 0.898 (44 of 49), shuffled best 0.224. The passage proved to repeat the 9 Oct postscript, so it is not counted as new text.",
+   "result": "partial",
+   "technique": [
+    "statistical test"
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "verification",
+   "what": "Contributor: replacement tests declared before transcription, same frozen key. Pinckney 1795 (M31 roll 7 frames 0018-0021, Taylor's interlinear): 0.886 (93 of 105), shuffled best 0.105, pass. Eaton 25 May 1801 (Wagner's interlinear): 0.80 (48 of 60), shuffled best 0.10, below the 0.85 bar.",
+   "result": "partial",
+   "technique": [
+    "statistical test"
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "hypothesis",
+   "what": "Contributor: key built in grades: D direct (158), S1/S2 the only element of Weber's 1,600-element word list that fits (111/81), B from key.tsv (62), A by aligning bare Pinckney frames of pinckney_m30.tsv to the printed editions (125; 144 of 147 right when known values were hidden). 537 groups after corrections of 11 Nov (1505 = full stop kept from key.tsv, 1160 removed, 1258 and 1374 restored).",
+   "result": "worked",
+   "technique": [
+    "key-structure hypothesis",
+    "plaintext matching",
+    "manual reconstruction"
+   ]
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "reading",
+   "what": "Contributor: 28 Aug 1793 passage regraded from the other letters: 234 time, 501 secret, 923 are, 1328 1374 Si-r, 668 at, 1010 tin, 1181 ation, 675 ly now H; 672 = Charles alone; ?55 reopened ([Dunda]s is not ?55-at-s). H 30 to 39, C 4 to 0, O 1 to 2. Pinckney's frames without a contemporary decoding decoded with the key (1,982 groups, 81% covered): decoded, not read.",
+   "result": "partial",
+   "technique": [
+    "key matching"
+   ]
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "what": "Integration check of PR #399. Scripts read, then re-run: rescore_frozen_key.py gives 0.879 (94 of 107) and 0.797 (51 of 64), the README's figures; key v4 has 537 rows (D 158, S1 111, S2 81, A 125, B 62) and its sha256 matches; frozen key sha256 matches the preregistration; comparison and coverage tables regenerate unchanged; corrections/pinckney_17930828_points.tsv was stale by two cells (1374, 1258) and was regenerated. Same-code check made independently: single-group interlinear words of each new letter against key.tsv (Pinckney 1793-94 values only): Lear 61 of 70, Tunis 177 of 178, Eaton 1801 29 of 36, Pinckney 1795 66 of 70 and 42 of 44, Eaton 22 Oct 21 of 28, shuffled best 2 to 20. proposed_changes.patch applied. Readings assembled from the interlinears (make_code16_texts.py, texts/*_reading.txt) and read as sentences; four doubtful words in Eaton 1801 looked at on the NARA image. The Eaton 22 Oct 1802 score could not be re-run (edition text not in the bundle; Founders Online answered with a bot check).",
+   "result": "worked",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ]
   }
  ],
  "outcome": {
@@ -273,17 +537,17 @@
   "class": "already solved",
   "key": "partial",
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading.tsv: 737 counted code groups (one struck group excluded), 720 with a reading, 8 more by conjecture only (counted unread), 9 open",
-  "fraction_read": 0.977,
+  "fraction_read_source": "reading.tsv: 737 counted code groups of the three catalogue letters (one struck group excluded), 723 with a reading, 4 more by conjecture only (counted unread), 10 open. The six other Code No. 16 letters added by PR #399 carry contemporary decipherments and are not in this count; each has its own read_share.",
+  "fraction_read": 0.981,
   "codes_open": {
-   "open": 8,
+   "open": 9,
    "total": "unknown",
-   "tokens_open": 9
+   "tokens_open": 10
   },
   "grades": {
-   "H": 541,
-   "M": 179,
-   "I": 8
+   "H": 550,
+   "M": 173,
+   "I": 4
   },
   "verification": [
    "contemporary decipherment",
@@ -294,7 +558,7 @@
    {
     "who": "contemporary",
     "role": "key or decipherment used",
-    "note": "Jefferson's interlinear decoding of Short's letter; George Taylor Jr.'s State Department decodings of Pinckney's letters in Code No. 16"
+    "note": "Jefferson's interlinear decoding of Short's letter; George Taylor Jr.'s State Department decodings of Pinckney's letters in Code No. 16; Jacob Wagner's (Eaton 1801), John Graham's (Lear 1813) and unnamed clerks' interlinears on the letters added by PR #399"
    },
    {
     "who": "ptj-editors",
@@ -303,18 +567,46 @@
     "date": "1956-1995",
     "source": "The Papers of Thomas Jefferson vols. 13, 24, 26, via Founders Online",
     "published": true
+   },
+   {
+    "who": "ajbeling",
+    "role": "identification",
+    "note": "Code No. 16 (Weber's '663' code, 1979 p. 155, 'not located') found in T. Pinckney's 1795 letters from Spain and Paris, W. Eaton's Tunis letters of 1801-02 and T. Lear's of 1813; Weber had tied Pinckney's code to King and Livingston, and the Madison editors read Eaton and Lear with one unprinted key (beling/)",
+    "date": "2026-11-11",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/399"
+   },
+   {
+    "who": "ajbeling",
+    "role": "key corrected",
+    "note": "Code No. 16 key of 537 graded groups from those letters, tested with a key frozen beforehand; in the 28 Aug 1793 passage 234 = time, 501 = secret, 1328 1374 = Si-r, 668 = at, 675 = ly, 1010 = tin (beling/)",
+    "date": "2026-11-11",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/399"
+   },
+   {
+    "who": "ajbeling",
+    "role": "transcription",
+    "note": "six letters in Code No. 16 with their contemporary interlinear decipherments (Pinckney 1795, M31 roll 7; Eaton 25 May 1801, 8 Sep/9 Oct and 22 Oct 1802, T303 roll 2; Lear [Jan] 1813, LoC Monroe Papers), about 1,720 groups",
+    "date": "2026-11-11",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/399"
+   },
+   {
+    "who": "founders",
+    "role": "prior solution",
+    "note": "Eaton's postscript of 9 Oct 1802 and Lear's letter of [Jan] 1813 printed deciphered, 'using a key from the Lear family papers' (per the contributor's notes; the edition pages were not opened in the integration check)",
+    "source": "The Papers of James Madison, via Founders Online (Madison/02-04-02-0007, 03-05-02-0448)",
+    "published": true
    }
   ],
   "gaps": [
    {
     "item": "Pinckney 28 Aug 1793, group 447 (before \"regiments\")",
     "blocker": "too-short",
-    "detail": "single occurrence in all 15 coded Pinckney frames on M30 roll 2; no decoding; the editors printed it as 497"
+    "detail": "single occurrence in all 15 coded Pinckney frames on M30 roll 2 and in none of the six letters added by PR #399; the editors printed it as 497"
    },
    {
-    "item": "Pinckney 28 Aug 1793, 234 [time?], 501 [secret?], ?55 668 [Dunda-]",
-    "blocker": "too-short",
-    "detail": "single occurrences kept as the editors' conjectures; first digits of ?55 in the gutter"
+    "item": "Pinckney 28 Aug 1793, ?55 668 800 (a general's name ending -at-s)",
+    "blocker": "illegible",
+    "detail": "first digits of ?55 are in the binding gutter; 668 = at in Eaton 1801, Pinckney 1795 and the Bey's letter of 1802, so the editors' [Dunda]s is not what the groups spell"
    },
    {
     "item": "Short 26 Jul 1792, 401 (x2), 1083, 359, 199, 34, 724",
@@ -325,9 +617,24 @@
     "item": "Carmichael 14 Apr 1788, 597 and the context-only values of 108, 223, 273",
     "blocker": "no-key-material",
     "detail": "Code No. 13 survives in this letter only; no key"
+   },
+   {
+    "item": "Pinckney 28 Oct and 18 Dec 1795 (M31 roll 7 frames 0111, 0177): line ends and several groups",
+    "blocker": "illegible",
+    "detail": "binding gutter on 0111, last line of 0177 in shadow; the NARA JPEG is the only image"
+   },
+   {
+    "item": "Eaton 22 Oct 1802 (T303 roll 2 frame 0320): six interlinear words",
+    "blocker": "illegible",
+    "detail": "blotted on the film; the passage repeats the postscript of 9 Oct 1802, which reads"
+   },
+   {
+    "item": "Code No. 16 groups without a value (the code has about 1,600 elements; 537 are in the key, 125 of them grade A)",
+    "blocker": "no-key-material",
+    "detail": "the original key (Lear family papers) is unprinted and was sold in 2010 to an unnamed buyer, per the contributor's notes"
    }
   ],
-  "notes": "Everything readable was read before (TJ's interlinear; PTJ editors). Added: 447 for the printed 497; 30 of the 58 Pinckney groups confirmed from Taylor's decodings; Code No. 13 shown not to be Code No. 11; 'been' = 1700 in Code No. 10, so the editors could not have meant 401 = been without a homophone; full transcriptions of Short's 674 groups and of Pinckney's 15 coded frames.",
+  "notes": "Everything readable in the three catalogue letters was read before (TJ's interlinear; PTJ editors). Added by the project: 447 for the printed 497; Pinckney's 28 Aug 1793 groups checked against Taylor's decodings; Code No. 13 shown not to be Code No. 11; 'been' = 1700 in Code No. 10; full transcriptions of Short's 674 groups and of Pinckney's 15 coded frames. Added by Andrew Beling, with AI agents (PR #399, targets/legation1788/beling/): Code No. 16 identified as Weber's '663' code and found in six further letters (Pinckney 1795, Eaton 1801-02, Lear 1813), transcribed with their contemporary decipherments; a key of 537 graded groups; tests with a key frozen beforehand (Pinckney 1795 0.886 pass, Eaton 1801 0.80 below the 0.85 bar, Eaton 22 Oct 1802 0.898 on a repeated passage); nine regrades in the 28 Aug 1793 passage (H 30 to 39). Pinckney's frames on M30 roll 2 without a contemporary decoding (1,982 groups) are decoded with that key in beling/decodes/, 81% of groups covered: decoded, not read, and not listed in texts.",
   "texts": [
    {
     "doc": "short_17920726",
@@ -369,18 +676,124 @@
     "transcription": "ct/pinckney_17930828.txt",
     "decryption": "texts/pinckney_17930828_decryption.txt",
     "reading": "texts/pinckney_17930828_reading.txt",
-    "summary": "Three coded sentences: regiments are to embark shortly on a secret expedition under Sir Charles Grey with Generals Stuart and Dundas, generally thought to be for the West Indies; the number of regiments (447) stays open.",
+    "summary": "Three coded sentences: regiments are to embark shortly on a secret expedition under Sir Charles Grey with Generals Stuart and a second general whose name is not recovered (the editors conjectured Dundas), generally thought to be for the West Indies; the number of regiments (447) stays open.",
     "language": "en",
-    "read_share": 0.914,
-    "state": "read in part",
+    "read_share": 0.966,
+    "state": "read",
     "reading_review": {
      "grade": "A",
-     "by": "Claude Opus 5.5",
-     "date": "2026-10-27",
-     "note": "Three coherent sentences; the number of regiments (447) open and two words ([time], [secret]) conjectural."
+     "by": "integration review of PR #399 (AI agent)",
+     "date": "2026-11-11",
+     "note": "Three coherent sentences; two holes, the number of regiments (447) and the second general's name (?55 + at + s). time and secret are now attested in Lear's letter of 1813."
+    }
+   },
+   {
+    "doc": "pinckney_179508",
+    "label": "Thomas Pinckney to the Secretary of State, coded parts of 21 Jul and 11 Aug 1795 (re-enciphered, enclosed 27 Aug) and of 1 Oct 1795 (Code No. 16)",
+    "transcription": "ct/pinckney_179508.txt",
+    "decryption": "texts/pinckney_179508_decryption.txt",
+    "reading": "texts/pinckney_179508_reading.txt",
+    "summary": "The coded phrases of Pinckney's letters from Spain during his negotiation of the treaty of 1795, sent again in the Department's cipher (\"Cypher 2d\") with a covering letter of 27 August: Spain's wish for delay, a triple alliance with France, and a guarantee of her American possessions. The enclosure holds only the coded passages, so each stands apart from its clear sentence.",
+    "language": "en",
+    "read_share": 0.963,
+    "state": "read",
+    "reading_review": {
+     "grade": "B",
+     "by": "integration review of PR #399 (AI agent)",
+     "date": "2026-11-11",
+     "note": "Read as phrases: each passage is the coded part of a sentence whose clear part is in the letter, and they make sense as such (delay equivalent to a cession of our rights; a triple alliance; guarantee refused). Five line starts on frame 0019 right are lost in the gutter."
+    }
+   },
+   {
+    "doc": "pinckney_179510",
+    "label": "Thomas Pinckney to the Secretary of State, San Lorenzo 28 Oct 1795 (with notes on the treaty) and Paris 18 Dec 1795 (Code No. 16)",
+    "transcription": "ct/pinckney_179510.txt",
+    "decryption": "texts/pinckney_179510_decryption.txt",
+    "reading": "texts/pinckney_179510_reading.txt",
+    "summary": "Coded stretches from Pinckney's letter of 28 October 1795 with his notes on the treaty, and of 18 December from Paris: he had asked for his passports when an accommodation seemed impossible; Spain wished to keep her commercial advantages as the equivalent for a guarantee of her American possessions. Only the coded lines were transcribed, and the binding hides line ends, so the text is fragments.",
+    "language": "en",
+    "read_share": 0.941,
+    "state": "read in part",
+    "reading_review": {
+     "grade": "B",
+     "by": "integration review of PR #399 (AI agent)",
+     "date": "2026-11-11",
+     "note": "The 28 Oct stretch reads as two long sentences with holes at the gutter; the two treaty notes are single clauses; the 18 Dec lines are three fragments. Coherent, but pieces."
+    }
+   },
+   {
+    "doc": "eaton_18010525",
+    "label": "William Eaton to the Secretary of State, Tunis, 25 May 1801 (Code No. 16)",
+    "transcription": "ct/eaton_18010525.txt",
+    "decryption": "texts/eaton_18010525_decryption.txt",
+    "reading": "texts/eaton_18010525_reading.txt",
+    "summary": "Eaton reports Tripoli's declaration of war and proposes, in code, to seize the Tripolitan commodore Morad Rais (the renegade Peter Lisle) by approaching corsairs under English colours, and to go on board the American squadron himself, leaving Cathcart in charge at Tunis.",
+    "language": "en",
+    "read_share": 0.98,
+    "state": "read",
+    "reading_review": {
+     "grade": "A",
+     "by": "integration review of PR #399 (AI agent)",
+     "date": "2026-11-11",
+     "note": "Reads through as Eaton's letter, clear and coded parts together. Four words are doubtful where Wagner's interlinear is blotted or was doubtfully transcribed (is, Barbary, Bashaw, going); the NARA image of frame 0049 was looked at for them and does not settle the blotted ones."
+    }
+   },
+   {
+    "doc": "eaton_18021009",
+    "label": "Hammuda Bey of Tunis to Jefferson, 8 Sep 1802, in Eaton's coded copy, with Eaton's coded postscript (enclosed 9 Oct 1802; Code No. 16)",
+    "transcription": "ct/eaton_18021009.txt",
+    "decryption": "texts/eaton_18021009_decryption.txt",
+    "reading": "texts/eaton_18021009_reading.txt",
+    "summary": "The Bey thanks the President for the stores and jewels sent under the treaty and asks for a frigate of thirty-six guns. Eaton's own postscript, in the same code, proposes taking Porto Farina by surprise and destroying the Bey's arsenal and ships if the letter provokes resentment.",
+    "language": "en",
+    "read_share": 0.959,
+    "state": "read",
+    "reading_review": {
+     "grade": "A",
+     "by": "integration review of PR #399 (AI agent)",
+     "date": "2026-11-11",
+     "note": "Reads as the printed translation word for word, with the cipher's own variants (Sir for Mr. President, ship for vessel, good harmony). Sixteen words are marked doubtful: the date line, doubtful digits and four groups whose known value is not the printed word."
+    }
+   },
+   {
+    "doc": "eaton_18021022",
+    "label": "William Eaton to Madison, Tunis, 22 Oct 1802, the coded passage (Code No. 16)",
+    "transcription": "ct/eaton_18021022.txt",
+    "decryption": "texts/eaton_18021022_decryption.txt",
+    "reading": "texts/eaton_18021022_reading.txt",
+    "summary": "Eaton repeats in code, in a recapitulating letter, his proposal of 9 October to take Porto Farina and destroy the Bey's naval arsenal.",
+    "language": "en",
+    "read_share": 0.921,
+    "state": "read in part",
+    "reading_review": {
+     "grade": "B",
+     "by": "integration review of PR #399 (AI agent)",
+     "date": "2026-11-11",
+     "note": "Five sentences, the same as the postscript of 9 October; six interlinear words are blotted or read differently by the two transcribers."
+    }
+   },
+   {
+    "doc": "lear_181301",
+    "label": "Tobias Lear to James Madison, [January 1813] (Code No. 16)",
+    "transcription": "ct/lear_181301.txt",
+    "decryption": "texts/lear_181301_decryption.txt",
+    "reading": "texts/lear_181301_reading.txt",
+    "summary": "Lear reports that on 31 December the Spanish Regency laid before the Cortes an exposition of American conduct toward Spain (East Florida, agents in the Spanish colonies, the forces near Baton Rouge, Onis's correspondence) and would recommend war if Spain's circumstances allowed; it was referred in secret session to a commission. The sheet arrived under a blank cover and was read at the Department with 'Mr Lears Cypher'.",
+    "language": "en",
+    "read_share": 0.992,
+    "state": "read",
+    "reading_review": {
+     "grade": "A",
+     "by": "integration review of PR #399 (AI agent)",
+     "date": "2026-11-11",
+     "note": "Reads straight through as three paragraphs; one illegible opening word and one doubtful placement."
     }
    }
   ],
-  "key_file": "key.tsv"
+  "key_file": [
+   "key.tsv",
+   "beling/key/code16_key_v4.tsv"
+  ],
+  "provenance": "mixed"
  }
 }

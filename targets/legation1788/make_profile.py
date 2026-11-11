@@ -1,4 +1,7 @@
-"""Write ct/<letter>.txt, texts/<letter>_decryption.txt and profile.json for legation1788.
+"""NOTE (11 Nov 2026): profile.json has been edited by hand since this script last ran (Carmichael summary, the six Code
+No. 16 letters of PR #399, credits, gaps, texts). Do not re-run it without carrying those edits over.
+
+Write ct/<letter>.txt, texts/<letter>_decryption.txt and profile.json for legation1788.
 
 Lengths are measured with docs/_check_profile.py's measure(); counts come from reading.tsv (make_reading.py).
 Solution steps are kept here in order, failures included. Run after make_reading.py.
@@ -149,7 +152,13 @@ def main():
              'note': "Jefferson's interlinear decoding of Short's letter; George Taylor Jr.'s State Department decodings of Pinckney's letters in Code No. 16"},
             {'who': 'ptj-editors', 'role': 'prior solution',
              'note': 'the three letters printed decoded from partial reconstructions of Codes 10, 13 and 16, with the open groups named; used here as the reading',
-             'date': '1956-1995', 'source': 'The Papers of Thomas Jefferson vols. 13, 24, 26, via Founders Online', 'published': True}],
+             'date': '1956-1995', 'source': 'The Papers of Thomas Jefferson vols. 13, 24, 26, via Founders Online', 'published': True},
+            {'who': 'ajbeling', 'role': 'identification',
+             'note': "Code No. 16 (Weber's '663' code, 1979 p. 155) found in T. Pinckney's 1795 Madrid and Paris letters, W. Eaton's Tunis letters of 1801-02 and T. Lear's of 1813; Weber had tied Pinckney's code to King and Livingston, and the Madison editors read Eaton and Lear with one key (beling/)",
+             'date': '2026-11'},
+            {'who': 'ajbeling', 'role': 'key corrected',
+             'note': 'Code No. 16 key of 537 groups from those letters, with held-out tests; 234 = time, 501 = secret, 1328 1374 = Sir, 668 = at, 675 = ly, 1010 = tin in the 28 Aug 1793 passage (beling/)',
+             'date': '2026-11'}],
         'gaps': [
             {'item': 'Pinckney 28 Aug 1793, group 447 (before "regiments")', 'blocker': 'too-short',
              'detail': 'single occurrence in all 15 coded Pinckney frames on M30 roll 2; no decoding; the editors printed it as 497'},
