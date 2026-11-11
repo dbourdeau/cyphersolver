@@ -84,7 +84,7 @@
   ],
   "sessions": "unknown",
   "first_date": "2026-11-09",
-  "last_date": "2026-11-09"
+  "last_date": "2026-11-11"
  },
  "solution": [
   {
@@ -148,6 +148,16 @@
    ],
    "what": "Segmented both faces with the SDX-family expansions (SCS D = Sanctus Dominus, X = Christus, IS = Iesus, MTINIUS = Martinius): 56 of 79 (71%) letters fall in formula elements; the rest unexplained and the expansions are the sibling authors' tentative ones.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "sibling key",
+   "technique": [
+    "repeat/pattern analysis",
+    "statistical test"
+   ],
+   "what": "Longest common subsequence against shuffles of each face (3000): with Fyris 74 20/38 (A) p 0.033, 20/41 (B) p 0.026; with Marburg 14/38 p 0.008, 12/41 p 0.017; about 0.03-0.13 after Bonferroni over 2 references x 2 faces. Consistent with the SDX family, weaker than Witham. Two hypotheses, not checkable on the published images: the printed 7 is the Tironian et-sign, and face A ends in DNI = domini (witham1250/dudout/README.md).",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -162,6 +172,20 @@
    "none"
   ],
   "notes": "Formula-level parse from the SDX family; remaining groups need the conservation report and an agreed expansion of the formulae.",
-  "credits": []
+  "credits": [
+   {
+    "who": "vanhasselt",
+    "role": "transcription",
+    "date": "2014",
+    "source": "Madoc 28/2 (2014), afb. 1",
+    "note": "the transcription in inscription.txt (drawing from the photographs)"
+   },
+   {
+    "who": "dudout",
+    "role": "identification",
+    "date": "2026-11-11",
+    "note": "family test (LCS with Fyris 74 and Marburg against shuffles), prayer-fit test, Tironian-note and DNI hypotheses (targets/witham1250/dudout/)"
+   }
+  ]
  }
 }
