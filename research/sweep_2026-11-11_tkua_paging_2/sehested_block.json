@@ -1,0 +1,51 @@
+{
+ "vetting": {
+  "date": "2026-11-11",
+  "by": "claude cloud sweep 11 Nov tkua_paging_2",
+  "seen": {
+   "kind": "scan",
+   "where": "Rigsarkivet Arkivalieronline, epid 19852211, unit 260651 (TKUA Speciel del, Kejseren: Gesandtskabsrelationer med bilag 1630-58, laeg 'Relationer fra Christoffer Sehested 1657'), images 108-172. All 64 frames were downloaded at full size and viewed on 11 Nov 2026 by the tkua_paging pass (list in research/sweep_2026-11-11_tkua_paging/sehested_note.json); images 116 and 132 were opened again at full size for this block (api.rigsarkivet.dk/ao/v1/images/<id>).",
+   "extent": "About 25 letters and enclosures, 17/27 Jan to 2 May 1657, on 64 film frames. Wholly in cipher: to the king 17/27 Jan (images 116-117, 2 pages), 7/17 Feb (118-120) and 14/24 Feb (126-128); to the chancellor 17/27 Jan (109-111), 7/17 Feb (121-123), 14/24 Feb (129-132, four large pages), about 18/28 Feb (133-135), 21 Feb/3 Mar (136). Clear German with long cipher passages: 139-156 (4-21 March) and, shorter, 159-172 (24 March to 2 May). Image 116 alone has more than 20 full lines of about 100 numbers each.",
+   "cipher": "Black-and-white microfilm. Numbers 2-99 separated by colons, words divided by a dagger-shaped sign, and about twenty nomenclator signs (phi, psi, X, XX, ZZ, sigma, an omega-like bar, aa, cc, gg, xx, a fraction 12/22). Image 116 (king, 17/27 Jan) carries nothing but the cipher: no letters over or under the lines, no margin gloss, no attached leaf. Image 132 right (last page of the chancellor's letter of 14/24 Feb) is deciphered between the lines in a chancery hand, one letter over each number, with 'alliance' against XX and 'Conde de Rebolledo' and 'K.M.' against two signs in the margin. Decipherment in the volume covers only: chancellor 17/27 Jan (separate leaves, images 112-113), one letter to the king of late January whose cipher original was not found (114-115), chancellor 7/17 Feb (19th-century slips, images 124-125, signs left as signs), and interlinear parts of images 132, 138 and 140. The king's three letters of January-February, the chancellor's letters of 14/24 Feb (first three pages), 18/28 Feb and 21 Feb/3 Mar, and the cipher passages of March-May have no plaintext on or with them."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE. Live searches on 11 Nov 2026 at de-crypt.org/decrypt-web/RecordsList?search= for 'Sehested', 'Rigsarkivet' and 'Griffenfeld' returned 0 records; 'Copenhagen' 7 and 'Denmark' 20 records, all read through: Saxon keys and Dresden letters, BL Add MS 32284 (1730s-1830s), Danish freemasons' books, Brussels letters of 1674-77; none from TKUA and none of 1657 Vienna. '1657' returned 20 records, none Danish.",
+   "tomokiyo": "Not in Tomokiyo: the repo copy unsolved.htm has no 'Sehested', 'Danish' or 'Denmark' (grep count 0). His Cryptiana articles on Danish ciphers were not found by the web searches below.",
+   "lasry": "No Lasry, HistoCrypt or Cryptologia paper on these letters: the web search 'Sehested 1657 Vienna Danish envoy cipher letters deciphered Rigsarkivet TKUA Kejseren cryptology HistoCrypt OR Cryptologia OR DECODE' returned only the Ferdinand III letters (Ernst 2017), the Heusner-Oxenstierna letter of 1637 and Saxon material; nothing on Sehested.",
+   "edition": "No edition of the relations found. E. Gigas, Grev Bernardino de Rebolledo (1883; archive.org grevbernardinode00giga full text, opened by the tkua_paging pass; grep 'Cifferbreve' gives pp. 282-284 notes) cites 'Sehesteds Cifferbreve til Fred. III og den kgl. Kantsler' and quotes a few German phrases from the letters of 17 and 24 Feb; he prints no letter. J. A. Fridericia, Adelsvaeldens sidste Dage (1894; archive.org adelsvaeldenssid00frid full text, grep 'Dechifrering') cites the letters in note 62 (Oestrig 46) and thanks Gigas 'for en i sin Tid meddelt Dechifrering af Sehesteds Breve': a private decipherment of the 1880s, never printed. Whether it survives was not determined; the 19th-century slips at images 124-125, 137 and 138 may be part of it.",
+   "literature": "Web searches in Danish and German ('Christoffer Sehested Wien 1657 gesandt kejseren relationer chiffer dechifreret Frederik III'; 'Christoph Sehested daenischer Gesandter Wien 1657 Relationen Chiffre Buendnis Kaiser Daenemark Edition Aktenstuecke') found only the Danish foreign ministry's list of envoys in Vienna (Christoffer Sehested 1657-1658) and biographies of other Sehesteds; no article on the cipher and no printed text of the letters."
+  },
+  "key_check": "No key table for this cipher is held in the repo or on DECODE. The system was read at sight by the tkua_paging pass from the interlinear letters on image 132 (32=w 15=i 13=o 2=l 17=c 7=h 72=n 48=t 5=e 80=r 96=s 9=d 26=u/v 6=a 25=m 40=g 12=z 4=b 30=f), which gave the opening of the king's letter of 7/17 Feb on image 118 ('weiln ich E.K.M. bereits zu unterschiedenen mahlen von meiner hiesigen verrichtung ...'); that is one line, not a reading of the letters, and no transcription or decipherment of the undeciphered letters is on record here or in print.",
+  "key_in_volume": "Yes, as decipherments, not as a table: the chancery's interlinear decipherment on image 132 gives the letter values and three signs (XX = alliance, a sign = Conde de Rebolledo, a sign = K.M.), and images 112-113 give the full plaintext of the chancellor's letter of 17/27 Jan (cipher on 109-111). Tested on one line of image 118 only (above). The other nomenclator signs are not all resolved by these leaves.",
+  "key_held": "Rigsarkivet lists 'Christoffer Sehested keys 1650-70' (Daisy heid 1449582; research/scandinavia/README.md): not scanned, not seen, not tested. KB Copenhagen NKS 1416 4to (key lead of the Nordic sweep) is untested.",
+  "duplicates": "known.py 'Sehested', 'Kejseren: Gesandtskabsrelationer' (11 Nov 2026): only this lead's own row in research/leads.json and the two sweep folders of today (nordic, tkua_paging); no catalogue entry and no target. DECODE searched by name as above: no record.",
+  "verdict": "open",
+  "searches": [
+   {
+    "query": "de-crypt.org/decrypt-web/RecordsList?search=Sehested (also Rigsarkivet, Griffenfeld, Copenhagen, Denmark, 1657)",
+    "result": "Sehested 0, Rigsarkivet 0; Copenhagen 7 and Denmark 20 records, none from TKUA or of 1657; 1657: 20 records, none Danish"
+   },
+   {
+    "query": "WebSearch: \"Christoffer Sehested\" Wien 1657 gesandt kejseren relationer chiffer dechifreret Frederik III",
+    "result": "nothing on the letters or a decipherment; only biographies of Hannibal and Christen Thomesen Sehested and the Austro-Polish treaty of Vienna 1657"
+   },
+   {
+    "query": "WebSearch: \"Sehested\" 1657 Vienna Danish envoy cipher letters deciphered Rigsarkivet TKUA Kejseren cryptology HistoCrypt OR Cryptologia OR DECODE",
+    "result": "no paper on these letters (hits: Ferdinand III letters solved by T. Ernst, Heusner 1637, Saxon 'Cipher avec le Cour de Dennemarc')"
+   },
+   {
+    "query": "WebSearch: Christoph Sehested daenischer Gesandter Wien 1657 Relationen Chiffre Buendnis Kaiser Daenemark Edition Aktenstuecke",
+    "result": "no edition; the Danish foreign ministry list confirms Christoffer Sehested as envoy in Vienna 1657-1658"
+   },
+   {
+    "query": "grep 'Dechifrering' in Fridericia 1894 full text and 'Cifferbreve' in Gigas 1883 full text (archive.org)",
+    "result": "Fridericia note 62: thanks Gigas for a decipherment communicated privately; Gigas pp. 282-284: citations and short quotations, no letter printed"
+   },
+   {
+    "query": "known.py \"Sehested\" \"Kejseren: Gesandtskabsrelationer\"; grep -i sehested unsolved.htm",
+    "result": "only this lead and today's sweep folders; unsolved.htm 0 hits"
+   }
+  ],
+  "note": "A decipherment exists in part beside the letters (chancery 1657, about a quarter of the corpus) and Gigas made one privately in the 1880s that was never printed; under the rule of 3 Nov 2026 the letters without plaintext are open, with the key in the volume. The earlier note in research/sweep_2026-11-11_tkua_paging/sehested_note.json suggested 'read' because the cipher is a simple one; nothing new was found here that puts a text of those letters on record."
+ }
+}

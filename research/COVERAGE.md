@@ -178,3 +178,30 @@ Folders: `sweep_2026-11_*` as named. 50 leads merged (2414-2463; see `merged.jso
   retry it. It worked; nothing was fetched in bulk. Ask before any larger use.
 
 - **Late sweeps:** the cataloguers' own "undeciphered" notes (`undeciphered_phrases`: Hungaricana `sifrír* NOT Türkei`, 7 rows, 4 promoted) and a Chrome pass on Latvian, Estonian and Hungarian sources (`baltic_hungary_chrome`). Latvian State Historical Archive, Riga city archive, Tartu and DIGAR stay unreachable.
+
+## Sweeps of 11 Nov 2026 (cloud session, a different network)
+
+Folders: `sweep_2026-11-11_*`; brief in `_nov11/BRIEF.md`; lead re-vetting in `vetting_2026-11-11/` (seven batches). This network
+reaches some hosts the earlier one did not and the reverse; each README has its own table.
+
+- **Productive routes:** MNL `adatbazisokonline.mnl.gov.hu` (item database of G 15, Rákóczi's archive, marks about 100 letters as
+  undeciphered: `southeast`); Rigsarkivet Arkivalieronline by curl (`nordic`, `tkua_paging`, `_2`, `_3`: TKUA envoy archives and
+  Gesandtskabsrelationer, most units still unsheeted); Alvin through its OAI-PMH feed (`nordic`); the archieven.nl site search
+  and scan viewer in headless Chromium (`dutch_oai`, `dutch_2`); the GStA database at `archive.spk-berlin.de/actaproweb`
+  (`german`); BYU CONTENTdm API and IIIF (`us_uk_leftovers`); `digi.vatlib.it/mss/<Fondo>` lists a fondo's digitised shelfmarks (`vatlib`);
+  fgurgia.ru and vestigia.hu answer; FranceArchives renders in headless Chromium.
+- **Closed with 0 rows:** Official Records, Journals of the Continental Congress, Hardwicke, Wharton (`printed_series`; the Home Office
+  calendar has no volume after 1775); NARA M1194 word pass over all 262 rolls (nothing beyond `nara_triage_e`/`_l`); Riksarkivet
+  Skrivelser till konungen 1133.08/7-16 screened in full (cipher deciphered at the time; one washed-out gloss is a lead) and 40
+  sampled private-paper volumes; DigiVatLib Barb. lat. samples (cipher always beside its decifrato); Bellièvre fr. 15902-15905 and
+  15911 screened by detector (the Henri IV cipher letters of 1598 in fr. 15911 are printed in clear in Duplessis-Mornay VIII).
+- **Not done:** Bellièvre fr. 15894, 15897, 15898, 15890; Barb. lat. 5701-5781, 6024-6261, 7196-8015, 8725-9746 and the Ott./Ross./Ferr./Reg.
+  letter volumes; Abhilekh "cypher" from page 230 of 451 and its phrase queries; 59 JACAR volume titles; the Riksarkivet volumes listed
+  in `riksarkivet_paging/README.md`; GStA full records and HAB; the Politische Correspondenz for the Rexin leads.
+- **Blocked from this network:** gallica.bnf.fr (use openapi.bnf.fr), PARES, Hispana, BVPB (429), hungaricana, NLS, NLW, Lambeth, LAC,
+  HathiTrust, archivesportaleurope, europeana, QDL, Harvard, NYPL, NRS, TCD (403 or challenge), Calames, ASF, Sinica reader (no
+  connection), archivportal-d item pages and TARO (Anubis), handrit.is (captcha), and the Romanian, Croatian, Slovenian, Serbian,
+  Bulgarian, Greek and Maltese portals.
+- **Abhilekh Patal:** record pages answer curl. The Document Viewer shows a human check to a browser; two vetting agents read file
+  PDFs by posting its form with curl. Those eight verdicts (1355, 1356, 1360, 1363, 1364, 1367, 1368, 1371) are kept in
+  `vetting_held` and not applied: Daniel to decide, or confirm in his own Chrome.

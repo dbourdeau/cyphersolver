@@ -1,0 +1,128 @@
+{
+ "schema_version": 1,
+ "target": "figueroa1534",
+ "title": "Gómez Suárez de Figueroa, Genoa: cipher letters 1534-1557 (AGS Estado 1367-1386, catalogue 744): keys found in Tomokiyo for 18 of 20 items; no ciphertext in hand yet",
+ "documents": [
+  {
+   "id": "run",
+   "read": "not read",
+   "shelfmark": "AGS, Estado, legajos 1367-1386 (Génova), the 20 PARES records of catalogue 744 (list in prior_art.tsv)",
+   "date": "1534-1557",
+   "year": 1534,
+   "country": "Italy",
+   "route": "Gómez Suárez de Figueroa, Genoa -> Charles V, Prince Philip, the duke of Alba, Juan Vázquez de Molina",
+   "language": "Spanish",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "unknown"
+    ],
+    "source": "Not seen. Tomokiyo notes strike-outs suggesting separate decipherment sheets for some items and marks five as undeciphered."
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "unknown",
+    "measured": false
+   },
+   "transcription": {
+    "by": "unknown",
+    "image_quality": "no images",
+    "notes": "One entry for the whole run, because no item was in hand; to be split by letter once images are fetched."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "Not seen by this project; Tomokiyo assigns 18 of the 20 items to four ciphers (a simple substitution of 1529-1538 and three vowel-indicator syllabic ciphers of 1543, 1544-1554 and 1548).",
+  "symbol_kind": "unknown",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "notes": "System fields are unknown because no image was opened in the profiled session; see NOTES.md and prior_art.tsv."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Keys (not readings) reconstructed by S. Tomokiyo, cryptiana.web.fc2.com/code/spanish2.htm, for the four ciphers covering 18 of the 20 items; the 1544-1554 key after Meister (1906) and Bertomeu Masiá (2009). No printed reading of the letters found.",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [],
+  "attack": "none",
+  "human_role": "Set the task (the catalogue 744 solve page); no other input.",
+  "models": [
+   "unknown"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-11",
+  "last_date": "2026-11-11"
+ },
+ "solution": [
+  {
+   "date": "2026-11-11",
+   "kind": "access",
+   "what": "PARES record and image pages for the 20 items: connection reset and HTTP 429 from this machine; no image fetched.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "literature search",
+   "what": "Web search and Tomokiyo's 'Spanish Ciphers during the Reign of Emperor Charles V': 18 of the 20 PARES records are listed there under four ciphers with reconstructed keys (prior_art.tsv); the 2 Nov 2026 vetting had missed it.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "key from source",
+   "what": "Tomokiyo's key images (CharlesV1534.jpg, CharlesV1543.jpg, CharlesV2.jpg, CharlesV3.gif, CharlesV1548.jpg): direct download redirected, images not read.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "control",
+   "what": "Review of PR #392: prior_art.tsv compared with the raw HTML of Tomokiyo's spanish2.htm. All 18 PARES numbers, dates, recipients and cipher headings agree; the two 1557 records are absent. The five key images download with a browser user agent and referer (not transcribed). The page source holds Tomokiyo's short trial decipherments of eleven items as HTML comments.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "key": "none",
+  "method": "not applicable",
+  "method_basis": "No ciphertext was obtained (PARES unreachable), so nothing was attempted; keys exist in print (Tomokiyo) and were not in hand either.",
+  "contribution": [
+   "catalogue correction"
+  ],
+  "verification": [
+   "none"
+  ],
+  "credits": [
+   {
+    "who": "tomokiyo",
+    "role": "pointer",
+    "note": "His article lists 18 of the 20 records by PARES number, assigns each to a cipher and shows the reconstructed keys.",
+    "source": "http://cryptiana.web.fc2.com/code/spanish2.htm",
+    "published": true
+   }
+  ],
+  "gaps": [
+   {
+    "item": "All 20 letters",
+    "blocker": "not-attempted",
+    "detail": "No images: PARES refused this session's machine on 11 Nov 2026."
+   }
+  ],
+  "notes": "Status: in progress."
+ }
+}
