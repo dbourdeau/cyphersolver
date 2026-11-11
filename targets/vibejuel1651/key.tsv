@@ -1,0 +1,79 @@
+# vibejuel1651 key: the two ciphers of Peder Vibe's letters to Peder Juel, 1649-1655 (Rigsarkivet, TKUA Sverige, unit 261583), CC BY 4.0
+# (Brice Dudout, Europe chiffree, 2026). Recovered from the letters themselves: the partial interlinear decipherment of the time on
+# N. 319 (image 78) gave the system; the rest was read with it. Vibe names both ciphers in clear (image 62, 11 Jan 1649): the new
+# alphabet ("dett ny Alphabet") is to follow, and meanwhile he writes "wed woris forige gamble Ciffres".
+#
+# Both ciphers are shift ciphers with a shift chosen per word. A cipher word = OPENER + BODY. The opener (first number, 1-3 or 24-39)
+# gives a shift k; each body number n stands for the letter of rank n - k (1-based). In the body, 32/33/34 stand for 1/2/3.
+#
+# section G - "gamle Ciffres" (old cipher): letters of 1649-1650, the slip f. 318 (July 1651?) and N. 330 (20 Sep 1651).
+#   23 letters, i = j, u = v/w, CYCLIC (rank taken mod 23): a with k = -1 is written 23; a with k = -2 is 22.
+#   k = -(opener mod 3): openers 24 27 30 33 36 39 -> 0; 25 28 31 34 37 -> -1; 26 29 32 35 38 -> -2.
+#   The 21st letter is x (perplex, sex); the hand of 1649-51 has no w.
+# section N - "ny Alphabet" (new alphabet): N. 316, 319, 331-336 (1651-1654), N. 143/321 (1654), N. 167/337 (1655).
+#   25 letters a ... u w x y z oe (w = 21, x = 22, y = 23, z = 24, oe = 25), i = j, not cyclic.
+#   Opener table (the same in every letter read): 24-29 -> 0; 30-34 -> 1; 35-39 -> 2; 1-3 -> 3.
+#   A word may be split in pieces, each with its own opener (eders = 3.8.7 + 30.6.18.19).
+# section C - nomenclator: two- to four-digit numbers standing between the words (211, 228, 257, 422, 872 ...; in 1655 up to 1771).
+#   None is identified by any key. Two are defined in clear by Vibe (image 80, 6 Jan 1653): "sub N 349" and "N 561" are to be added
+#   to the cipher; the names that follow are hard to read (Wranghel? and Wranghel's mother?), so they are given here as probable only.
+#
+# Columns: section, cipher (letter value at k = 0, or opener range), value, note.
+section	cipher	value	note
+G	1	a	body value at k = 0; with shift k the letter of rank n - k (mod 23)
+G	2	b
+G	3	c
+G	4	d
+G	5	e
+G	6	f
+G	7	g
+G	8	h
+G	9	i
+G	10	k
+G	11	l
+G	12	m
+G	13	n
+G	14	o
+G	15	p
+G	16	q
+G	17	r
+G	18	s
+G	19	t
+G	20	u
+G	21	x
+G	22	y
+G	23	z
+G	opener 24 27 30 33 36 39	k=0
+G	opener 25 28 31 34 37	k=-1
+G	opener 26 29 32 35 38	k=-2
+N	1	a	body value at k = 0; with shift k the letter of rank n - k (not cyclic)
+N	2	b
+N	3	c
+N	4	d
+N	5	e
+N	6	f
+N	7	g
+N	8	h
+N	9	i
+N	10	k
+N	11	l
+N	12	m
+N	13	n
+N	14	o
+N	15	p
+N	16	q
+N	17	r
+N	18	s
+N	19	t
+N	20	u
+N	21	w
+N	22	x
+N	23	y
+N	24	z
+N	25	ø
+N	opener 24-29	k=0
+N	opener 30-34	k=1
+N	opener 35-39	k=2
+N	opener 1-3	k=3
+C	349	Wranghel (?)	defined in clear by Vibe, image 80 (6 Jan 1653); name read as probable only
+C	561	Wranghel's mother (?)	defined in clear by Vibe, image 80; name read as probable only
