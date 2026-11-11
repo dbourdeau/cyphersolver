@@ -1,0 +1,52 @@
+sehested1657 - validation (contributor's pre-registered test and checks against decipherments of the time; not docs/_validate.py)
+
+1. Key source. The letter values were read on the interlinear decipherment written over the cipher of img 132 (a hand of the
+   time; pairs number/letter relevé word by word), most of them already listed in research/sweep_2026-11-11_tkua_paging/
+   sehested_note.json. Additions from the pairs: 16 p, 36 x, 8 k, 90 s. Seen later: 24 y, 20 q.
+2. Check on a clear of the time. img 112 is a decipherment of the time of the letter img 110 (+ img 109). img 110 lines 1-5
+   (30 words, 152 numbers) decoded with the key give the text of img 112 word for word ("aus meinem [ ] an [a] werden Λ zu
+   ersehen haben beides den succes meiner reise als auch meiner verrichtung an hiesigem ohrte ..."); img 109 "fals zu
+   willfahren sich freundlich ... mochten" = img 112 lines 19-21. No contradiction.
+3. Pre-registered measurement (protocol written and hashed before the held-out part was transcribed):
+   PROTOCOLE.md SHA-256 525288c07fe4affa3ac35aceb23c4e954fe30df90b119805415ef0f5bedcc1f5, with mesure.py cdac0d86...,
+   lm_de.py 4c44d4e0..., the key CLE-132.txt 84b37263..., the German letter model lm_de.pkl a59f9910... (order-4 character model
+   and word list from Merian, Topographia Hassiae 1655, Wikisource, SHA-256 4ce9ab82...).
+   Held-out part: img 145 left page, lines 1-12 (318 numbers, 51 words), never opened before, no gloss; transcription frozen
+   before decoding (SHA-256 e2b4b59ee5f19f6ed85317b32f6b1652db60badc9ce5c72d0e38501dbff60f51).
+   Criteria: C1 score per character >= best of 900 controls + 0.30 (300 permuted keys, 300 random keys, 300 number shuffles,
+   seed 1657); C2 share of words in the word list >= 0.50 and >= best control + 0.25; C3 numbers outside the key <= 5%;
+   S at least two runs of 8 or more readable German words.
+   Single run (raw output):
+     mots 51 nombres 318 inconnus 1 (0.003)
+     M per_char -2.023  lexique 0.569
+     C perm: max per_char -3.693 max lexique 0.078
+     D aleat: max per_char -3.821 max lexique 0.078
+     E melange: max per_char -3.877 max lexique 0.059
+     C1 True (marge 1.669)  C2 True (marge 0.490)  C3 True
+   S (read with the completed key; the raw decode of the frozen key is in frozen/protocole/MESURE.out): "die ankunft des ragotzi dergestalt wider erholet ihre romische kayserliche wie auch ihre [ ] uon dennemark gleichsahm
+   uerpflichtet weren sich diser gelegenheit zubedihnen ..." -> PASS.
+   Reservation: the key was known to the agent while it transcribed the held-out lines (stated in the protocol beforehand).
+4. Independent transcriptions of the same letter. Five letters are in the volume twice or three times in cipher, written out
+   by Sehested or his clerk with other line breaks; they were transcribed by different agents in separate batches. Word
+   agreement of the decoded copies with the decoded originals (difflib alignment of word sequences):
+     L06 (img 132-134 vs copies img 129-130 and img 131, which overlap): 611 of 802 copy words aligned (76.2%; img 131 left is
+         cut by the binding and only half-lines are visible)
+     L11 (img 140-141 vs copy img 143): 150/166 (90.4%)
+     L14 (img 146 right vs copy img 148): 103/110 (93.6%)
+     L18 (img 155-157 vs copy img 158-160): 698/711 (98.2%)
+     L25 (img 167 vs copy img 168): 92/100 (92.0%)
+   Disagreements are mostly line-end words, struck groups, and clear words written inside the cipher in one copy only.
+5. Other decipherments of the time in the volume, consistent with our reading: img 157 right + 158 left (clear of L18, followed
+   phrase by phrase), img 169 right (clear of L25), interlinear words over img 136, 138, 140 ("includirung", "befal", "K.M.",
+   "offensif", "defensif", "plenipoten", "stabilirung", "Informationes", "tractaten", "satisfaction") and the letter-by-letter
+   gloss of the French cipher of img 171. These are also the source of the certain nomenclator values (key.tsv).
+6. Count (scripts of the contributor, fiche.py): 6,013 cipher words in the 27 original letters; 5,903 certain, 90 probable,
+   19 restored, 1 unresolved: certain + probable = 5,993 / 6,013 = 99.7%. A word is "certain" when its letters decode with no
+   correction into a German (or French, Latin) word that fits the sentence; the non-lexicon words of the decode (17th-century
+   spellings, names, Latin and French terms) were read one by one; "probable" = one figure read otherwise (list in reading.md
+   per letter); "restored" = an illegible or impossible figure supplied. Nomenclator symbols are not counted as words.
+7. Frozen files (frozen/, paths as in the hash files; check with "cd frozen && shasum -a 256 -c protocole/RESERVE.sha256"):
+   protocole/PROTOCOLE.md (in French), PROTOCOLE.sha256, RESERVE.sha256, MESURE.out (the single run), CLE-132.txt (the frozen
+   key), scripts/mesure.py, scripts/lm_de.py, working/transcr/reserve_145.txt (the held-out transcription). Not included:
+   protocole/lm_de.pkl (a pickle) and corpus/merian_ws_1655.txt (the Wikisource text of Merian 1655); their SHA-256 are in
+   PROTOCOLE.sha256, and lm_de.py rebuilds the model from the Wikisource text.
