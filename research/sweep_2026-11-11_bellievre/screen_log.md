@@ -39,3 +39,9 @@
   all), each with the contemporary interlinear decipherment above it ("necessité et danger", "au Palatin" ...). Not a candidate.
 - c0117: a clear letter (Vienna, July 1574) that speaks of having an article deciphered; no cipher on it.
 - Everything else viewed is clear (French, Italian, Latin; Swiss and Polish affairs).
+
+## fr. 15903, first ark btv1b10501677p (858 canvases, colour, one page per canvas)
+- A colour re-digitisation of the SAME volume as btv1b9064052x (c0087-c0089 = ff. 40-41, the Catherine decipherment and
+  cipher; c0497 = f. 244r, the interlinear-deciphered letter). Detector: 858 scored, 227 hits >= 24; crop sheets viewed for
+  hits c0071-c0148 and c0431-c0511 only (40 hits), which showed the same two cipher items and nothing else. Not read further
+  because the microfilm ark of the same leaves was screened in full.
