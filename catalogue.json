@@ -21244,7 +21244,7 @@
    "shelfmark": "AGS, EST,LEG,1367-1386 (Génova): EST,LEG,1367,56-57; EST,LEG,1367,149-150; EST,LEG,1369,232-233; EST,LEG,1376,16-17; EST,LEG,1379,14-18; EST,LEG,1380,7-8; EST,LEG,1380,9; EST,LEG,1380,10-11; EST,LEG,1380,37-38; EST,LEG,1382,23; EST,LEG,1383,20-22; EST,LEG,1383,242; EST,LEG,1383,265-266; EST,LEG,1383,296; EST,LEG,1383,308-311; EST,LEG,1383,312; EST,LEG,1383,351-353; EST,LEG,1383,364; EST,LEG,1386,1; EST,LEG,1386,92",
    "folio_note": "20 items; images online",
    "cls": "C",
-   "status": "PARES hits (27 Oct 2026, \"carta cifrada\"/\"cifrada\"), item titles \"Carta cifrada de Gómez Suárez de Figueroa ...\" or \"Duplicado de carta cifrada ...\". PARES full-text search matches words, not the phrase, so a term hit is a pointer; the hit-list title says the letter is in cipher, not whether a decipherment is filed with it. Not in the repo (known.py: no hits for the legajos; the Suárez de Figueroa hits are Lorenzo, Venice 1504). 28 Oct 2026: a further ciphered piece in the same legajo run, not in the list above, is catalogue 840 (EST,LEG,1380,151-154, 1549); its sender is not stated, so it may not be Figueroa.",
+   "status": "PARES hits (27 Oct 2026, \"carta cifrada\"/\"cifrada\"), item titles \"Carta cifrada de Gómez Suárez de Figueroa ...\" or \"Duplicado de carta cifrada ...\". PARES full-text search matches words, not the phrase, so a term hit is a pointer; the hit-list title says the letter is in cipher, not whether a decipherment is filed with it. Not in the repo (known.py: no hits for the legajos; the Suárez de Figueroa hits are Lorenzo, Venice 1504). 28 Oct 2026: a further ciphered piece in the same legajo run, not in the list above, is catalogue 840 (EST,LEG,1380,151-154, 1549); its sender is not stated, so it may not be Figueroa. 11 Nov 2026 (targets/figueroa1534/): prior art found. Tomokiyo, 'Spanish Ciphers during the Reign of Emperor Charles V' (cryptiana.web.fc2.com/code/spanish2.htm) lists 18 of the 20 records by PARES number under four ciphers with reconstructed keys: the Simple Cipher of 1529-1538 (1367,56-57; 1367,149-150; 1369,232-233), the Figueroa-Philip Cipher of 1543 (1376,16-17, the letter the key was rebuilt on), the Imperial Cipher of 1544-1554 (1379,14-18; 1380,7-8; 1382,23; the eight items of 1383) and the Doria-Figueroa-Philip Cipher of 1548 (1380,9; 1380,10-11; 1380,37-38). He gives keys, not readings; no printed text of the letters was found. Only the two 1557 items (1386,1; 1386,92) are not in his lists. So this is not a ciphertext-only target (class C stands only until the entry is split by cipher): the work left is transcription and applying the published keys. No image was fetched on 11 Nov 2026 (PARES refused the machine).",
    "why": "A long run of one ambassador's cipher letters (Doria, Corsica 1553, the Farnese and Vasto affairs): cipher originals with sibling clear copies or duplicates give cribs; any without a descifrado are open.",
    "importance": 3,
    "solvability": 3,
@@ -21360,14 +21360,15 @@
     },
     "prior_art": {
      "decode": "Not on DECODE: known.py on the shelfmark and correspondents found no DECODE record or key; no DECODE record for this archive series known in the repo dumps (2 Nov 2026).",
-     "tomokiyo": "Tomokiyo cryptiana: WebSearch of 2 Nov 2026 (Gomez Suarez de Figueroa cifra) found no page on Figueroa's Genoa ciphers.",
+     "tomokiyo": "Corrected 11 Nov 2026: Tomokiyo, 'Spanish Ciphers during the Reign of Emperor Charles V' (cryptiana.web.fc2.com/code/spanish2.htm) covers 18 of the 20 records by PARES number, under four ciphers with reconstructed keys (table in targets/figueroa1534/prior_art.tsv); keys only, no readings. The WebSearch of 2 Nov 2026 had found no page.",
      "lasry": "No Lasry or DECODE-team work on this series found: WebSearch of 2 Nov 2026 returned only Lasry papers on papal, Tenerife and 1520s Spanish syllabary ciphers.",
      "edition": "No edition of the cipher passages: Documenti ispano-genovesi (Genoa 1868) catalogues his letters without the ciphers; Levin 2013 covers the Fieschi conspiracy only.",
      "literature": "Estudios Romanicos 2025 reconstructs other Charles V ciphers (Aguilar 1543, Naples 1547) but not Genoa."
     },
     "key_check": "No Genoa 1534-57 key held in the repo; the Rome 1543 and Naples 1547 imperial ciphers of Estudios Romanicos (2025) were not tried because the sign sets differ on sight; Philip II's Cifra general (1556) not tried against the stroke alphabets.",
     "duplicates": "known.py 'Figueroa' and 'EST,LEG,1383' found only this entry (the other Figueroa hit is Lorenzo, Venice 1504); catalogue 840 (EST,LEG,1380,151-154) is a sibling, not a duplicate.",
-    "verdict": "open"
+    "verdict": "open",
+    "key_held": "In print, not held in the repo and not tested: Tomokiyo's reconstructed keys for the Simple Cipher 1529-1538 (partial), the Figueroa-Philip Cipher 1543, the Imperial Cipher 1544-1554 (after Meister 1906 and Bertomeu Masiá 2009) and the Doria-Figueroa-Philip Cipher 1548, shown as images on his page; for the two 1557 items he names the Imperial Cipher of 1555 (Meister) and Cg.1 of 1556 as Figueroa's ciphers of those years."
    },
    "repository": "ags"
   },
@@ -25286,7 +25287,7 @@
    "shelfmark": "AGS, EST,LEG,1380,151-154",
    "folio_note": "16 images online; 15 pages of symbol cipher",
    "cls": "C",
-   "status": "Swept 28 Oct 2026 (Brice Dudout's PARES sweep, facet filter idFI); \"cifrada\", 16th century: \"Copia cifrada de una memoria al secretario Francisco de Eraso.\" All 16 images viewed (zoom 10): 15 pages of pure symbol cipher (letters, digits and signs), no interlinear decipherment, no clear copy in the unit; endorsement on the last image. known.py: no hits for the signatura. Reported by Brice Dudout from his own look at the images; not yet checked here.",
+   "status": "Swept 28 Oct 2026 (Brice Dudout's PARES sweep, facet filter idFI); \"cifrada\", 16th century: \"Copia cifrada de una memoria al secretario Francisco de Eraso.\" All 16 images viewed (zoom 10): 15 pages of pure symbol cipher (letters, digits and signs), no interlinear decipherment, no clear copy in the unit; endorsement on the last image. known.py: no hits for the signatura. Reported by Brice Dudout from his own look at the images; not yet checked here. 11 Nov 2026: Tomokiyo, 'Spanish Ciphers during the Reign of Emperor Charles V' (cryptiana.web.fc2.com/code/spanish2.htm) lists this record (PARES 3567239, dated there 21 Jan 1549) among the letters in the Imperial Cipher of 1544-1554, whose key he gives after Meister and Bertomeu Masiá; not tested here (see targets/figueroa1534/NOTES.md).",
    "why": "A long run (15 pages) of mid-16th-century Spanish symbol cipher with no decipherment filed: enough text for a homophonic attack, and the Genoa cipher of 1549 can be cross-checked with the dated Genoa rows already here (Figueroa 1534-57).",
    "importance": 3,
    "solvability": 4,
