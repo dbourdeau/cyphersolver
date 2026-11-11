@@ -39,7 +39,7 @@ def parse(t):
         h = {}
         m = re.search(r'cmn-category-label__text">([^<]+)<', blk)
         h["level"] = m.group(1) if m else ""
-        m = re.search(r'result-header__title">\s*<a href="[^"]*/das/meta/([A-Z0-9]+)"[^>]*>(.*?)</a>', blk, re.S)
+        m = re.search(r'result-header__title">\s*<a href="[^"]*(?:/das/meta/|fond=)([A-Z0-9]+)"[^>]*>(.*?)</a>', blk, re.S)
         if not m:
             continue
         h["id"], h["title"] = m.group(1), clean(m.group(2))
