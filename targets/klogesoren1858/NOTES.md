@@ -1,6 +1,6 @@
 # klogesoren1858: "Kloge Søren" (Søren Christensen), his Cyprianus, a book of charms in his own cipher, c. 1858 (catalogue 2525)
 
-Status: read in part (Brice Dudout, 11 Nov 2026; partial reading explained: key validated on a held-out portion of 790 signs; that held-out portion is read 169/179 words = 94.41% after one blind re-reading sheet, under the 95% rule; the whole book reads about 95.2% of 8,055 words before any blind re-reading of the second session, an indicative figure only). Open: 9 pages read at low resolution only (90.6%), weak pages 064 left and 010 right, a second blind sheet not yet answered.
+Status: read in part (Brice Dudout, 11 Nov 2026; partial reading explained: key validated on a held-out portion of 790 signs; that held-out portion is read 169/179 words = 94.41% after one blind re-reading sheet, under the 95% rule; the whole book reads about 95.1% of 8,055 words after a targeted blind sheet (K3, 9 signs) on the second session, an indicative figure only). Open: 9 pages read at low resolution only (90.6%), weak pages 064 left and 010 right, a declared re-reading of the shapes flagged by K3.
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents (transcription, key, protocol and measurement, reading,
 write-up). Catalogue entry **2525**, found and vetted by Daniel Bourdeau on 11 Nov 2026 (KB Copenhagen Primo sweep, Nordic sweep of
@@ -63,19 +63,24 @@ apothecary units and seals are not counted; cipher headings ("Ottende Begreb") a
 | held-out portion (030, 031) after the blind sheet K1, result B (**retained**) | 3 | 133 / 36 / 1 / 9 | 179 | **94.41%** |
 | same, result A (the hashed integration rule taken literally) | 3 | 133 / 37 / 1 / 8 | 179 | 94.97% |
 | first session, low resolution (003 R - 008 L, except 007 R) | 9 | 292 / 93 / 0 / 40 | 425 | 90.6% |
-| second session, full resolution (007 R, 008 R - 079 R, 098) | 136 | 6,438 / 673 / 76 / 264 | 7,451 | 95.4% |
-| **whole book, indicative only** | 148 | 6,863 / 802 / 77 / 313 | 8,055 | 95.2% |
+| second session, full resolution (007 R, 008 R - 079 R, 098), after the blind sheet K3, result B (retained) | 136 | 6,441 / 668 / 76 / 266 | 7,451 | 95.4% |
+| **whole book, indicative only**, after K3, result B (retained) | 148 | 6,866 / 797 / 77 / 315 | 8,055 | **95.1%** |
+| same, result A (rule as written) | 148 | 6,866 / 796 / 77 / 316 | 8,055 | 95.1% |
+| whole book before K3 | 148 | 6,863 / 802 / 77 / 313 | 8,055 | 95.2% |
 
 - The figure we declare is the **held-out portion, 94.41%** (result B, retained at Brice Dudout's request; result A 94.97%). Both
   are under 95%, hence "read in part". See `BLIND-REREADING.md`.
-- The whole-book figure, 95.2%, is given **as an indication only**: it was counted before any blind re-reading of the second
-  session, and on the held-out portion the blind sheet K1 took the share down by 1.7 points (96.1% -> 94.41%). We do not claim 95%.
+- The whole-book figure, **95.1%** (95.13%, result B; A 95.12%; 95.16% before K3), is given **as an indication only**: the second
+  session was checked blind on nine targeted signs only (sheet K3: three probable words became certain, two became
+  unresolved, three by the rule as written; see `BLIND-REREADING.md`), and on the held-out portion the blind sheet K1 took the share down by 1.7 points (96.1% -> 94.41%). We do
+  not claim 95%. The held-out portion was not touched by K3.
 - **Nine pages of the first session were read at low resolution (4,115 px) and are still to be re-read at full resolution**: 003 R,
   004 L, 004 R, 005 L, 005 R, 006 L, 006 R, 007 L, 008 L (90.6%; 005 R 69.4% and 005 L 79.2% are the weakest).
-- Weakest pages of the second session: **064 L 62.9%** (a list of conjuration words, stained and faded), **010 R 77.2%** (end of a
-  fever litany), then 011 R 82.1%, 064 R 84.4%, 019 R 85.0%, 034 L 86.6%, 010 L 87.1%.
+- Weakest pages of the second session: **064 L 61.4%** (a list of conjuration words, stained and faded), **010 R 77.2%** (end of a
+  fever litany), then 011 R 82.1%, 019 R 82.5%, 064 R 84.4%, 034 L 86.6%, 010 L 87.1%.
 - The 136 full-resolution pages were read by 16 sub-agents (one batch each), each writing a fiche per page with a class per line
-  and a list of doubtful sign shapes (1,122 in all). Those doubts are the material of the pre-registered sheet K2.
+  and a list of doubtful sign shapes (1,122 in all). A random draw of them (sheet K2) was pre-registered and abandoned before it was shown; the targeted sheet K3 took 9 of them,
+  chosen for the words whose class depends on the answer (`BLIND-REREADING.md`).
 
 Content: about a hundred charms and recipes of a Danish cunning man (summary of each in `translation.md`, section 1). Cures
 (bleeding, wounds, colic, toothache, fever, chilblains, childbirth, warts, scrofula, rickets, bed-wetting, consumption), protection
@@ -104,8 +109,8 @@ so an old reading by a relative or the donor cannot be excluded, though none is 
 ## Remaining gaps
 
 - nine pages of the first session (003 R, 004 L-R, 005 L-R, 006 L-R, 007 L, 008 L; 425 words, 40 unresolved) - blocker: illegible; read on the 4,115 px images, where the dots of e, b/h and the bars u/n are often lost; a full-resolution re-reading is the next step (the second session reaches 95.4% at full resolution)
-- unresolved words of the second session (264 words, 76 restored), worst on 064 L (25 unresolved: conjuration words, stained and faded ink) and 010 R (13) - blocker: illegible; the doubtful shapes are listed and await the blind sheet K2
-- the second blind sheet K2 (36 points + 2 controls, pre-registered, SHA-256 c0bc50a7...) - blocker: illegible; built but not yet answered, so the whole-book figure is not blind
+- unresolved words of the second session (266 words, 76 restored, after K3), worst on 064 L (26 unresolved: conjuration words, stained and faded ink) and 010 R (13) - blocker: illegible; the doubtful shapes are listed; K3 checked nine of them
+- the shapes flagged by the blind sheet K3 (chevron with a foot on 034 R, closed loop on 073 R, 074 L, 075 L, the star-like sign of 064 L, dot confusions; and "fer / før" on 033 L) - blocker: illegible; a declared re-reading on the full-resolution images, its list hashed first; the rule forbids a further sheet on the same 11 signs
 - held-out portion: Kirkegaard, Jomfru, Kabbe, karlegravet, søn and four other words of 030-031 - blocker: illegible; the sheet K1 left them unresolved, and its rule forbids a second sheet on the same signs
 - circular seals (018 R, 019 R, 104) - blocker: illegible; in the same signs, written round a circle; not read
 - a sign-level transcription of the 136 full-resolution pages - blocker: illegible; these pages were read straight into letters with the key (decryption.txt, Part 3, with unresolved words given in sign shapes); no separate token transcription was made

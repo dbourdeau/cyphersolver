@@ -7,7 +7,8 @@ held-out pages; elsewhere the text runs as written (the scribe hardly punctuates
 trinitarian formula "I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen".
 
 Counts (Daniel Bourdeau's rule, restored and unresolved words are holes): held-out portion after the blind sheet K1
-**94.41%** (retained); whole grimoire before any blind re-reading of the second session 95.2% (indicative only, see NOTES.md).
+**94.41%** (retained); whole grimoire after the targeted blind sheet K3 95.1% (indicative only, see NOTES.md). The six words changed by K3
+are marked here as in BLIND-REREADING.md (three probable words now certain, two now unresolved, one kept doubtful).
 
 ## Part 1 - first session, low resolution (9 pages, 90.6%; to be re-read at full resolution)
 These texts are the readings by sense established on the low-resolution transcription in the first session. Here
@@ -96,7 +97,7 @@ Toogtyvende Begreb. Jeg saae Ild optændes og i Luften høit at brænde. Jomfru 
 #### [clear heading] at faae een Tyv til at hensvinde som Duk for Solen og död inden Aaret er omme
 Treogtyvende Begreb. Den som stjæler fra [dig]: tag med dine første 3 Fingre paa den høire Haand af de Saugspaaner som ligger ved Stabben. I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Og bær dem til en [?Kirkegaard] og nedgrav dem i det nord øverste Hjørne paa den sidste [?karlegravet]. Foretages en [?søn] efter Torsdags Aften efter Solens Nedgang stiltiende.
 
-## Part 3 - full resolution (136 pages, 95.4% before blind re-reading)
+## Part 3 - full resolution (136 pages, 95.4% after the targeted blind sheet K3)
 
 ### 007 right (96.1%)
 
@@ -190,7 +191,7 @@ Dette skal læses 3 Gange 3 for [?] [?] er [?]
 
 ### 016 right (92.9%)
 
-en Time efter Solens Nedgang Læg saa de før ste [første] 3 Fingr[e] paa den høire Haand paa Passient i Hoved mens du læser Bønnen de 3 benevnte [benævnte] Gange — Kjende tegn [Kjendetegn] paa denne Sygdom tag en nye Leer potte [Leerpotte] son [som] aldrig har været ved Jor den [Jorden] lad den Syge lade sit Vand deri og set [sæt] den der paa [derpaa] paastærk [paa stærk] Ild og lad den koge [h]vis V[a]ndet da koger reent at som om den var slikket da er der kast Ledn [?Trolddom] for hende og hun har da ingen [?Roe] og kan ej lide sin Ægtefelle [?] Vandet ej koge ater [atter] det at hendes [?] [?]
+en Time efter Solens Nedgang Læg saa de før ste [første] 3 Fingr[e] paa den høire Haand paa Passient i Hoved mens du læser Bønnen de 3 benevnte [benævnte] Gange — Kjende tegn [Kjendetegn] paa denne Sygdom tag en nye Leer potte [Leerpotte] som aldrig har været ved Jor den [Jorden] lad den Syge lade sit Vand deri og set [sæt] den der paa [derpaa] paastærk [paa stærk] Ild og lad den koge [h]vis V[a]ndet da koger reent at som om den var slikket da er der kast Ledn [?Trolddom] for hende og hun har da ingen [?Roe] og kan ej lide sin Ægtefelle [?] Vandet ej koge ater [atter] det at hendes [?] [?]
 
 ### 017 left (100.0%)
 
@@ -218,9 +219,9 @@ Femtende Begreb.
 #### mod Troldom hos Kreaturerne — No 1
 3 Gange. jeg søger at forhindre Dievelen og alle hans Apostles Gierninger i Navnet Gud Fader Gud Søn og Gud den Hellige Aand Amen Dette siges 3 Gange en Torsdag eller Søndags Aften efter Solen sNedgang [Solens Nedgang] og strøg [stryg] da med din høire Haand fra Næsen op ad Panden ud ad Ryggen [n]ed under Bugen tilbage til Næsen igen for [h]ver Gang du siger Ordene
 
-### 019 right (85.0%)
+### 019 right (82.5%)
 
-en Sedel at sette under Bunden paa Ankerne -ne eller et Ølkar og de[t] … med 9 Slags Træ at røge Karrene med [?reseft] paa Nedsætning mod alle Slags Trolddom hos Kreaturene [?dievelsabet] 8β Mesterrod 8β Rav 1℔ Surtkommen 8β [?søalt] [?tylom] [?grik] 8β Dyvelsdræk 2℔ Bavergæld 3℔ Dette [nedsedset ]
+en Sedel at sette under Bunden paa [?] -ne eller et Ølkar og de[t] … med 9 Slags Træ at røge Karrene med [?reseft] paa Nedsætning mod alle Slags Trolddom hos Kreaturene [?dievelsabet] 8β Mesterrod 8β Rav 1℔ Surtkommen 8β [?søalt] [?tylom] [?grik] 8β Dyvelsdræk 2℔ Bavergæld 3℔ Dette [nedsedset ]
 
 ### 020 left (91.4%)
 
@@ -325,7 +326,9 @@ som og er paa Himmelen og alt Sand som ligger paa Jorden lige saa lidet som saad
 ### 033 left (98.6%)
 
 i Himmelen saaledes og paa Jorden giv os idag vort daglige Brød og forlad os vor Skyld som vi og forlade vore Skyldnere led os ikke udi Fristelse men frels os fra det Onde thi Riget er dit Magten og Æren i Evighed Amen
-Gaae i een Rom [?Rum] paa en Torsdag i Aften at før Solen s Nedga[n]g 3 Gange om Stedet som du vil fristage [fritage] for Tyverie og sig det 3 Gange for hver Omgang
+Gaae i een Rom [?Rum] paa en Torsdag i Aften at [?før] Solen s Nedga[n]g 3 Gange om Stedet som du vil fristage [fritage] for Tyverie og sig det 3 Gange for hver Omgang
+
+Note (blind sheet K3, q09): "[?før]" is kept doubtful. The integration rule, with Brice Dudout's remark, gives "fer"; the sense requires "før" ("at før Solens Nedgang", before sunset). To be settled in the declared re-reading.
 
 ### 033 right (97.2%)
 
@@ -481,7 +484,7 @@ Hegn og over alle Vande saa kommer den kjære Dag igjen i mit Huus ✠✠✠ Ame
 ### 052 left (100.0%)
 
 #### Waabenstilling / No 1 / en Stridssedel at ingen kan beskadige dig
-i Guds Navn begynder jag [jeg] min ~~[?]~~ Frelser vil hjelpe mig paa den hellige Hjelp af Gud stoler jag [jeg] af mit ganske Hjerte Gud Fader er over mig Jesus Christus er foran mig og den hellige Aand
+i Guds Navn begynder jeg min ~~[?]~~ Frelser vil hjelpe mig paa den hellige Hjelp af Gud stoler jag [jeg] af mit ganske Hjerte Gud Fader er over mig Jesus Christus er foran mig og den hellige Aand
 
 ### 052 right (100.0%)
 
@@ -583,9 +586,9 @@ Rige skee din Villie som i Himmelen saaledes og paa Jorden Giv os idag vort dagl
 #### At prygle een Person hvorlangt han end er borte
 dette skeer ved at sig [?] [?] [?] [?] [?]
 
-### 064 left (62.9%)
+### 064 left (61.4%)
 
-paa en Tirsdag imod Fuld Maane gaae før Solopgang til en Stok og sig saaledes [?] jeg tager dig i Navnet [?] tag din Kniv og sig [?] jeg skjærer dig i Navnet [?] at du skal være [?] [?] [?] at jeg kan prygle hvem jeg [?vil] — [?] [?] [?] — [?] — [?] [?] — [?] [?] [?] [?] Exempel [?] [?] [?] [?] og [?] [?] [?] du vil [?] —
+paa en Tirsdag imod Fuld Maane gaae [?] Solopgang til en Stok og sig saaledes [?] jeg tager dig i Navnet [?] tag din Kniv og sig [?] jeg skjærer dig i Navnet [?] at du skal være [?] [?] [?] at jeg kan prygle hvem jeg [?vil] — [?] [?] [?] — [?] — [?] [?] — [?] [?] [?] [?] Exempel [?] [?] [?] [?] og [?] [?] [?] du vil [?] —
 
 ### 064 right (84.4%)
 

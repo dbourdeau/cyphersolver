@@ -35,7 +35,7 @@
     "by": "llm from images",
     "source": "KB Digitale samlinger / IIIF images, 4,115 px per opening (first session) and full size 4,115 x 6,804 px per page (second session); images not reproduced",
     "image_quality": "good",
-    "notes": "Claude Opus 5.5 agents, 11 Nov 2026. Training pages 003 R - 007 L and the held-out images 030-031 transcribed sign by sign (notation in transcription.txt; the held-out files frozen and hashed before decoding). The 136 full-resolution pages were read straight into letters with the validated key, unresolved words kept in sign shapes (decryption.txt, Part 3). One blind sheet of sign shapes (K1, image 031) answered by Brice Dudout. Length counted in cipher words by the reading rule (8,055); signs counted only for the training portion (1,591) and the held-out portion (790)."
+    "notes": "Claude Opus 5.5 agents, 11 Nov 2026. Training pages 003 R - 007 L and the held-out images 030-031 transcribed sign by sign (notation in transcription.txt; the held-out files frozen and hashed before decoding). The 136 full-resolution pages were read straight into letters with the validated key, unresolved words kept in sign shapes (decryption.txt, Part 3). Two blind sheets of sign shapes answered by Brice Dudout: K1 (image 031) and K3 (nine targeted signs of the rest of the book); K2 (a random draw) abandoned before it was shown. Length counted in cipher words by the reading rule (8,055); signs counted only for the training portion (1,591) and the held-out portion (790)."
    }
   }
  ],
@@ -74,7 +74,7 @@
    "known plaintext"
   ],
   "attack": "crib",
-  "human_role": "Brice Dudout chose the target and set the rules (every decipherment goes to Daniel; a partial reading may be published if explained; protocol hashed before one single measurement; blind re-reading by sign shapes), and answered the blind sheet K1. Claude Opus 5.5 agents transcribed, found and validated the key, read and wrote up.",
+  "human_role": "Brice Dudout chose the target and set the rules (every decipherment goes to Daniel; a partial reading may be published if explained; protocol hashed before one single measurement; blind re-reading by sign shapes), and answered the blind sheets K1 and K3. Claude Opus 5.5 agents transcribed, found and validated the key, read and wrote up.",
   "models": [
    "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout (transcription, key, annealing, protocol, measurement, reading by 16 sub-agents, write-up)"
   ],
@@ -128,6 +128,15 @@
    "kind": "reading",
    "what": "Second session: the rest of the book (007 R, 008 R - 079 R, 098) read at full resolution by 16 sub-agents, one fiche per page: 6,438/673/76/264 of 7,451 words = 95.4%. Image 091 left found to be the writer's table of the alphabet, confirming the key. Whole book 95.2% of 8,055 words, before any blind re-reading of this session.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Targeted blind re-reading by sign shapes of the second session (sheet K3: 9 signs chosen for the words whose class depends on the answer + 2 controls passed; rule hashed before the sheet, SHA-256 0400d3cf...; answers 4fbf5ec1...). Three probable words became certain, two unresolved; one ('før', 033 L) gives 'fer' by the rule with Brice Dudout's remark (result B, retained, declared deviation) but 'før' by sense, kept doubtful. Whole book 95.16% -> 95.13% (B; A 95.12%), indicative only; held-out portion untouched. The random sheet K2 was abandoned before it was shown.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -141,7 +150,7 @@
   ],
   "fraction_read": 0.9441,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Held-out portion (images 030-031) after the blind sheet K1, result B (retained): 133 certain + 36 probable = 169 of 179 words = 94.41%; result A (rule as written) 94.97%. Whole book 6,863 + 802 = 7,665 of 8,055 = 95.2%, before any blind re-reading of the second session: indicative only. Nine first-session pages (low resolution) 90.6%, still to re-read.",
+  "fraction_read_source": "Held-out portion (images 030-031) after the blind sheet K1, result B (retained): 133 certain + 36 probable = 169 of 179 words = 94.41%; result A (rule as written) 94.97%. Whole book after the targeted blind sheet K3, result B (retained): 6,866 + 797 = 7,663 of 8,055 = 95.1% (A 95.12%; 95.2% before K3): indicative only. Nine first-session pages (low resolution) 90.6%, still to re-read.",
   "verification": [
    "statistical test",
    "key confirms",
@@ -181,14 +190,14 @@
     "detail": "read at 4,115 px, where the dots of e, b/h and the bars u/n are often lost; to re-read at full resolution"
    },
    {
-    "item": "264 unresolved and 76 restored words of the second session, worst on 064 L (62.9%) and 010 R (77.2%)",
+    "item": "266 unresolved and 76 restored words of the second session (after K3), worst on 064 L (61.4%) and 010 R (77.2%)",
     "blocker": "illegible",
-    "detail": "doubtful shapes listed per page; the pre-registered blind sheet K2 is built and not yet answered"
+    "detail": "doubtful shapes listed per page; the targeted blind sheet K3 checked nine of them"
    },
    {
-    "item": "blind sheet K2 (36 points + 2 controls, PREREG SHA-256 c0bc50a7...)",
+    "item": "shapes flagged by the blind sheet K3 (chevron with a foot on 034 R, closed loop on 073 R, 074 L, 075 L, star-like sign of 064 L, dot confusions; 'fer / før' on 033 L)",
     "blocker": "illegible",
-    "detail": "not yet answered: the whole-book figure is not blind"
+    "detail": "a declared re-reading on the full-resolution images, its list hashed first; no further sheet on the same 11 signs"
    },
    {
     "item": "held-out words left unresolved by the sheet K1 (Kirkegaard, Jomfru, Kabbe, karlegravet, søn ...)",
@@ -227,7 +236,7 @@
      "grade": "B",
      "by": "Claude Opus 5.5 agent for Brice Dudout",
      "date": "2026-11-11",
-     "note": "Read as Danish sentences of the mid-19th century against decryption.txt: the charms construe (sacred precedent, 'saa sandt som ... saa sandt skal ...', trinitarian close, directions for use) and the English summaries follow; but the held-out portion is at 94.41% after one blind sheet (Brice Dudout answered the shapes), nine pages were read at low resolution only (90.6%), and the second session (95.4%) has had no blind re-reading yet; so grade B, read in part. No human read the whole reading."
+     "note": "Read as Danish sentences of the mid-19th century against decryption.txt: the charms construe (sacred precedent, 'saa sandt som ... saa sandt skal ...', trinitarian close, directions for use) and the English summaries follow; but the held-out portion is at 94.41% after one blind sheet (Brice Dudout answered the shapes), nine pages were read at low resolution only (90.6%), and the second session (95.4%) has had only one targeted blind sheet (K3, nine signs; whole book 95.1%, indicative); so grade B, read in part. No human read the whole reading."
     }
    }
   ],
