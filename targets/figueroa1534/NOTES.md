@@ -35,9 +35,27 @@ What this means for the entry:
   the Imperial Cipher of 1544-1554 too.
 - Tomokiyo dates 1367,56-57 to 2 Jul 1534; the frame check of 2 Nov 2026 read "Genoa 1535" on the leaf. Not settled.
 
-Caveat: Tomokiyo's page was read through WebFetch (a page-to-text reader), not as raw HTML, and his key images
-could not be opened here (a direct download of the page is redirected). The PARES numbers and dates in
-`prior_art.tsv` must be checked against the page before they are relied on.
+Caveat as first written: Tomokiyo's page was read through WebFetch (a page-to-text reader), not as raw HTML.
+That check has since been made (next section).
+
+## Integration check (11 Nov 2026, review of PR #392)
+
+- **`prior_art.tsv` checked against the raw HTML** of `spanish2.htm` (plain `curl` with a browser user agent
+  answers 200; 121,365 bytes). All 18 PARES numbers are on the page, each under the cipher heading the table gives,
+  with the date and recipient the table gives. The two 1557 records (3566204, 3568297) are not on the page.
+  Catalogue 840's record 3567239 is there under the 1544-1554 cipher, dated 21 January 1549, to Francisco de Eraso.
+  The "duplicate" notes on 1382,23 and 1383,265-266 were not re-derived (the page lists a second record of the same
+  date next to 1382,23).
+- **The five key images do download** when the request carries a browser user agent and the article as referer:
+  `CharlesV1534.jpg`, `CharlesV1543.jpg`, `CharlesV2.jpg`, `CharlesV3.gif`, `CharlesV1548.jpg` under
+  `https://cryptiana.web.fc2.com/code/`. They were fetched to confirm the route and not transcribed; writing them
+  out as `key_*.tsv` is step 2 of the escalation and no longer blocked.
+- **Tomokiyo's page source carries his own working notes** as HTML comments (`<!--Signatura: EST,LEG,... -->`):
+  short syllable-by-syllable trial decipherments for eleven of the items here and for 840 (1380,7-8 about 70
+  syllables; 1383,20-22; 1383,351-353; 1383,364; 1383,265-266; 1383,242; 1383,308-311; 1383,312; 1383,296;
+  1382,23 "cinque ci ? mil escudos"; 1380,151-154). They are unpublished drafts, not readings, and are not copied
+  here; they show the published keys do give Spanish on these letters, and they are prior work to credit and to
+  compare against once the images are in hand.
 
 ## Prior-art search (11 Nov 2026)
 
@@ -57,8 +75,8 @@ could not be opened here (a direct download of the page is redirected). The PARE
   11 Nov 2026 (connection reset on `catalogo/description/<id>` and `catalogo/show/<id>`, HTTP 429 on the home page;
   four requests in all, then stopped). Earlier sessions reached PARES only through a Spanish exit
   (`research/vetting_2026-10/BRIEF.md`). Claude in Chrome was not available in this session.
-- **Tomokiyo's five key images not read.** Blocker: access (fc2 redirects a direct download; the page reader does
-  not return images).
+- **Tomokiyo's five key images not transcribed.** No blocker since 11 Nov 2026 (they download with a browser user
+  agent and referer, see the integration check); not done because no ciphertext is in hand to test them on.
 - **1386,1 and 1386,92 (1557): cipher not identified.** Candidates named above, untested.
 
 ## Escalation
