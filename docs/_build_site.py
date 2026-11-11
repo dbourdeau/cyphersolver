@@ -73,7 +73,7 @@ GENERATED = [
     r'\n?<!-- bnx -->.*?<!-- /bnx -->', r' data-bnx="1"', r'<span class="fth">.*?</span><!-- /fth -->',
     r'<!-- cattop:start -->.*?<!-- cattop:end -->\n?',
     r'<!-- help:start -->.*?<!-- help:end -->\n?', r'<!-- browse:start -->.*?<!-- browse:end -->\n?', r' data-mirror',
-    r'<!-- lasry:start -->.*?<!-- lasry:end -->\n?',
+    r'<!-- lasry:start -->.*?<!-- lasry:end -->\n?', r'<!-- keyfig:start -->.*?<!-- keyfig:end -->\n?',
     r'\n?<p class="outcome">.*?</p><!-- /outcome -->',
     r'\n?<p class="credits">.*?</p><!-- /credits -->', r'<!-- contrib:start -->.*?<!-- contrib:end -->\n?',
     r'<link rel="stylesheet" href="pg-[a-z]+\.css[^"]*">\n?', r'\n?<p class="readjump">.*?</p><!-- /readjump -->',r'<!-- cite:start -->.*?<!-- cite:end -->\n?', r'<!-- social:start -->.*?<!-- social:end -->\n?',
@@ -232,6 +232,7 @@ FOLDER_PAGE = {f: p for p in PAGES for f in p['folders']}
 # Full texts (George Lasry, 22 Oct 2026): a reading shows the transcription and decryption of every document it reports
 # on, and the key when the project changed it, from profile outcome.texts / outcome.key_file (_texts.py).
 import _texts as TX
+import _keyfig as KF
 REPO_BLOB = 'https://github.com/dbourdeau/cyphersolver/blob/main/'
 TEXT_INLINE_MAX = 16000          # bytes: shorter files are shown on the page, longer ones linked
 def texts_html(page):
@@ -1069,6 +1070,11 @@ def process(path):
     if lr and 'id="verification"' not in s: lr = lr.replace('under <a href="#verification">Verification</a>', 'further down')
     if lr and '<main>' in s:
         s = re.sub(r'(<main>\n(?:<nav class="toc".*?</nav>\n)?)', lambda m: m.group(1) + lr, s, count=1, flags=re.S)
+    # the key as a table at the top of the body, as in George Lasry's write-ups (_keyfig.py)
+    s = re.sub(r'<!-- keyfig:start -->.*?<!-- keyfig:end -->\n?', '', s, flags=re.S)
+    kf = KF.key_figure_html(page, PROFILES, M.profile_paths(), HERE, HERE.parent) if page else ''
+    if kf and '<main>' in s:
+        s = re.sub(r'(<main>\n(?:<nav class="toc".*?</nav>\n)?)', lambda m: m.group(1) + kf, s, count=1, flags=re.S)
     # give every h2 an id so the contents strip and deep links work
     used = set(re.findall(r'<h2 id="([^"]+)"', s))
     def add_id(m):

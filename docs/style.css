@@ -1556,3 +1556,16 @@ html.fs-lock{overflow:hidden}
   body:has(.tabbar) footer{padding-bottom:4.2rem}
   @media (prefers-reduced-motion:reduce){.tabbar,.tabbar.on{transition:none}}
 }
+/* key table at the top of a write-up (_keyfig.py), after George Lasry's reports */
+.keyfig{margin:0 0 2rem}
+.keytable{margin:0;padding:1rem;border:1px solid var(--line,#ccc);border-radius:6px;background:color-mix(in srgb,var(--gold) 4%,transparent)}
+.keytable img{max-width:100%;height:auto}
+.kgrp+.kgrp{margin-top:1rem}
+.kh{font-family:var(--ui);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin:0 0 .4rem}
+.kgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(4rem,1fr));gap:2px}
+.kgrid.kn{grid-template-columns:repeat(auto-fill,minmax(6.5rem,1fr))}
+.kc{display:flex;flex-direction:column;align-items:center;padding:.25rem .15rem;border:1px solid color-mix(in srgb,var(--muted) 30%,transparent);font-family:var(--mono);font-size:.8rem;line-height:1.3;min-width:0;overflow-wrap:anywhere;text-align:center}
+.kc b{font-family:var(--ui);font-weight:600;color:var(--head);border-bottom:1px solid color-mix(in srgb,var(--muted) 30%,transparent);width:100%;margin-bottom:.15rem}
+.kc i{font-style:normal;color:var(--ink2)}
+.kc.kz i{color:var(--muted)}
+.keytable figcaption{font-size:.8rem;color:var(--muted);margin-top:.8rem}
