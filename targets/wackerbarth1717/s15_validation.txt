@@ -1,0 +1,36 @@
+wackerbarth1717 - validation of key K1715 and blind plate W1, letter of 20 October 1715 (Loc. 00712/05, ff. 307-314)
+
+Not docs/_validate.py: the contributor's own pre-registered test. Files in frozen/s1715/ (French originals, hashes alongside).
+Verdict recorded in profile.json for this letter: "pass" (one measurement, run once, passed by a wide margin).
+
+1. PREREG-1715.md (SHA-256 067350109723af244e51ec4b8c9d17e7d461c6cf3c8874b4afc05de55dc45295), written before any decoding of
+   views 0380-0387 and before the key was frozen; hashed with the training transcriptions, the calibration and the scripts
+   (PREREG-1715.sha256; the scripts stay in the private dossier, their hashes are listed).
+   - Training: views 0388-0390 only (extract of the countess's letter of 5 Oct. 1715 and its sequel, glossed at the time),
+     transcribed and aligned by the main agent (TRAIN-0388/0389/0390.txt, TRAIN.sha256).
+   - Target: views 0380-0387 transcribed BLIND by two other sub-agents, without glosses, keys or training views
+     (releves.sha256); control portion fixed before the transcription: view 0384 left page, 307 groups.
+   - Key K1715 = majority vote of the aligned pairs (57 numbers, 934 pairs), SHA-256 69bda731...268eb (KEY-1715.sha256).
+     No 1717 value in the decisive key.
+   - Criterion S = share of cipher groups covered by a lexicon word of >= 5 letters or spanning >= 2 groups (dynamic
+     programming). Witnesses: 200 permuted + 200 shuffled keys, seed 20261111. Threshold calibrated on the training views only
+     (leave-one-view-out, 11 windows of 150 groups: S min 0.867, key beats its 200 witnesses 11/11; CALIBRATION.txt):
+     theta = 0.867 - 0.10 = 0.77. Rule: PASS iff S > max of the 400 witnesses AND S >= 0.77. One run only.
+   - Result (MESURE-1715.json): S = 0.9446; max witnesses 0.7296 (permuted 0.7231, shuffled 0.7296), median 0.5147;
+     rank 1/401; PASS.
+   - Declared deviations: a thumbnail of view 0380 was seen at the start (nothing decoded); CIBLE-0384-g was displayed on screen
+     before PREREG-1715 was written (the key is a deterministic function of the training files, hashed before that display).
+
+2. Blind plate W1 (PREREG-PLANCHE-W1.md, SHA-256 463ae30674278151f9b0acee6fb8fb5fc541545c21862027ad12f3f7dcf16402, written and
+   hashed before the plate was built). Nine doubtful digit shapes (questions A-I) and two controls on different pages and option
+   positions (K1 view 0382-d L10, K2 view 0385-d L14). Shapes of digits only, no word and no key value shown. Answered by Brice
+   Dudout once (export 2026-11-11T21:50:19Z, SHA-256 4a81bc83...3510; kept in the private dossier with the plate, which embeds
+   crops of the In Copyright images). Integrated once, mechanically, by the rules written beforehand:
+   - controls first: K1 passed, K2 passed (2/2);
+   - six first readings confirmed (A 25, B 72, E 28, G 72, H 70, I 31), three corrected (C 28 -> 25, D 28 -> 25, F 16/26 -> 66),
+     each towards a coherent word: "embrasser", "mal", "beaucoup" become certain (CORRECTIONS-W1.tsv; frozen transcription
+     files unchanged);
+   - count v2 (COMPTE-v2.txt): 774 certain, 118 probable, 12 restored, 18 unresolved of 922 = 96.75% (v1: 96.64%).
+   - Declared: one frame of the plate (control K1) was re-set after the first build, before any export. No second plate on the
+     same signs (rule 6).
+   - The plate confirms how digits are written, not key values: 72 = ch (from S1/1717) and 96 = le (deduced here) stay probable.

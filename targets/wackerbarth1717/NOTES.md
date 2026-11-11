@@ -1,6 +1,6 @@
-# wackerbarth1717: Wackerbarth's cipher reports from Vienna, 1717 (Dresden, HStA 10026 Loc. 00713/01): Relation XXII to Augustus II, 14-16 June 1717, read in part; letter to Flemming of 24 April 1717 checked against its decipherment of the time
+# wackerbarth1717: Wackerbarth's cipher reports from Vienna, 1717 (Dresden, HStA 10026 Loc. 00713/01): Relation XXII to Augustus II, 14-16 June 1717, read in part; letter to Flemming of 24 April 1717 checked against its decipherment of the time; letter of 20 October 1715 from the camp before Stralsund (Wackerbarth to his wife in Vienna, copy), read
 
-Status: read in part (Brice Dudout, 11 Nov 2026; Relation XXII: 716 cipher words, 575 certain, 66 probable, 66 restored, 9 unresolved = 641/716 = 89.5% read by sense, under the 95% rule; key rebuilt from the glosses of the time in the same volume, passed a held-out language test (z = 11.5) but FAILED its ground-truth test, and the condition for reading was decided after the measurement). Open: nomenclator numbers absent from the key, and nine homophones seen only in this letter.
+Status: read in part (Brice Dudout, 11 Nov 2026; Relation XXII: 716 cipher words, 575 certain, 66 probable, 66 restored, 9 unresolved = 641/716 = 89.5% read by sense, under the 95% rule; key rebuilt from the glosses of the time in the same volume, passed a held-out language test (z = 11.5) but FAILED its ground-truth test, and the condition for reading was decided after the measurement). Open: nomenclator numbers absent from the key, and nine homophones seen only in this letter. Added 11 Nov 2026: the letter of 20 Oct. 1715 (Loc. 00712/05, same system S1) is read, 892/922 = 96.75% (774 certain, 118 probable, 12 restored, 18 unresolved), with its own key learnt from glosses and a pre-registered measurement that passed (see the section below).
 
 > **Simultaneous work: Anne-Simone Rous.** Anne-Simone Rous (SBG Sachsen, Dresden) is working on this cipher correspondence
 > of Wackerbarth and Flemming, 1700-1720 (about 6,500 folios; paper "The Keys of Diplomacy", University of Tartu repository,
@@ -91,6 +91,49 @@ agreement with the decipherment sheet of the time. **This is not blind**: the sh
 the reading. The 7 unresolved words are nomenclator codes that the sheet resolves. The letter covers the King of Sweden's
 designs on Poland (a landing near Danzig), the fear that Sweden might detach the Czar from the Northern League, and the
 exchange of the county of Hanau, for which the Electors' consents must be won directly and not through the Emperor.
+
+## Letter of 20 October 1715: Wackerbarth (camp before Stralsund) to his wife in Vienna, copy (`s15_*`)
+
+Dresden, HStA 10026 Geheimes Kabinett, Loc. 00712/05, ff. 307-314 (views 0380-0387), French, clear and cipher mixed.
+**Rous first:** Anne-Simone Rous reports a glossed simple substitution in 1715 in this correspondence; she may have read these
+folios. Our reading is independent and should be cited as simultaneous work alongside hers.
+
+**Title corrected.** The volume is catalogued as Flemming-Wackerbarth correspondence, and our own first working inventory
+(made from thumbnails) had "Flemming (camp before Stralsund) to Wackerbarth". The evidence points to **Wackerbarth writing to
+his wife, the Countess of Wackerbarth, in Vienna; the piece is a copy**:
+- heading of f. 307: "Reponse à la lettre de 306. au camp devant Stralsund le 20e 8bre 1715"; 306 = Vienna by a gloss of the
+  time (view 0389);
+- it answers "celle du 5me du courant": f. 315 (view 0388) is the "Extrait d'une lettre de 306.66.857 ... en date du 5 de 8bre
+  1715", on the same "raisonnement", and a hand of the time wrote above it "La Comtesse de Wa..." and "au C. de Wa...";
+- the cipher reads "Voilà, ma {chère} femme, de quoi répondre ..." ("ma" and "femme" certain);
+- f. 306 (view 0379) is a jesting "Pleinpouvoir" signed "Le Comte de Wackerbart" at the camp before Stralsund on 12 Oct. 1715,
+  naming Flemming in the third person;
+- the writer directs the siege batteries and writes to General Dücker and to Count Virmond.
+Against: a private letter is not expected in a cabinet volume. We take it for a copy sent on to a third party (clean secretary's
+hand, unsigned, marginal notes by a decipherer: "il sera delogé", "prisonnier", "le Roy"). Wackerbarth's command at Stralsund
+and the countess's stay in Vienna are general knowledge, still to be checked in the literature.
+
+**Key and measurement** (`s15_key.tsv`, CC BY 4.0; `s15_validation.txt`; `frozen/s1715/`). Key K1715 was learnt only from the
+glosses of the time on views 0388-0390 (57 numbers, 934 pairs, majority vote) and frozen. It is the same system as S1 of 1717:
+47 of 50 common numbers agree. The target was transcribed blind by two other sub-agents. One pre-registered measurement on the
+control portion (view 0384 left, 307 groups): S = 0.945 against at most 0.730 for 400 witness keys, rank 1/401, threshold 0.77
+calibrated on training only: **passed**.
+
+**Reading** (`s15_reading.md`, `s15_translation.md`): 922 cipher words, **774 certain, 118 probable, 12 restored, 18
+unresolved = 96.75%: read** by Daniel's rule. Brice Dudout answered a blind plate of nine doubtful digit shapes (W1; two
+controls, both passed): three words became certain (embrasser, mal, beaucoup), six first readings were confirmed.
+- **Probable, not certain:** **72 = ch** comes from S1/1717 (nine coherent contexts here); **96 = le** is deduced in this letter
+  (19 cases; in 0386-d L03 the 96 may be a 46). The plate checked how digits are written, not these values. Other values taken
+  from 1717 or deduced here (85 st, 70 x, 64 c, 284 comte, 75 s) are also counted probable.
+- **Deviations declared:** a thumbnail of view 0380 was seen before anything else (nothing decoded); the control portion
+  CIBLE-0384-g was displayed before the protocol was written (the key is a deterministic function of the hashed training files);
+  a transcriber wrote "roit-on" for "voit-on" in clear text (0382-d L06), noticed after hashing; the certain/probable
+  classification was made by a single reader; one plate frame (control K1) was re-set before any answer was exported.
+- **Content.** The fall of Stralsund and Wismar is near; Augustus II wants a general peace, not a separate one, and no total
+  ruin of the Crown of Sweden, as stipulated with his allies; the "reasoning" heard in Vienna is likened to the Count of
+  Croissy's letter at the start of the campaign; the remnants that could carry Charles XII back to Poland and to "our rebels"
+  are shut up with him in Stralsund and should be destroyed now; Wackerbarth will write to General Dücker and ask Count Virmond,
+  the Emperor's minister, to come, so that peace may be made under the Emperor's mediation.
 
 ## Historical context (general knowledge; to be checked in the literature)
 
