@@ -180,6 +180,11 @@ with a decipherment of the time on the page except Eaton's copy of the Bey's let
   586 918 134 [?going] (transcribed "& my gains"). The printed editions were not opened in this check.
 - `make_profile.py` was not re-run (it would drop hand edits); `profile.json` was edited directly.
 
+Claims review by a second reader (11 Nov 2026): the first coded line of Pinckney's 1 October 1795 letter (frame
+0020, ten groups) is in both `ct/pinckney_179508.txt` and `ct/pinckney_179510.txt`, so the 295 and 224 group counts
+overlap by ten (509 distinct, and about 1,710 rather than 1,720 in all); the two transcriptions differ on its first
+group (1521 against 1321), not settled. The Escalation line's "31 of 58" is 30, as everywhere else.
+
 ## Remaining gaps
 
 - Pinckney 28 Aug 1793, group 447 (first word of the passage, before "regiments") - blocker: too-short; single occurrence in all 15 coded Pinckney frames on M30 roll 2 and in none of the six other Code No. 16 letters, no decoding; Pinckney's own copy (PrC, Pinckney Family Papers, South Carolina Historical Society) not online
@@ -196,5 +201,5 @@ with a decipherment of the time on the page except Eaton's copy of the Bey's let
 - [x] clear-pages: TJ's "copy so far only" Tr omits the coded section; the 15 Aug 1793 clear Tr and the 25 Nov 1793 "Explication of the Cyphers" (frame 0179) used as cribs for Code No. 16 values; no clear copy of 28 Aug exists in RG 59
 - [x] known-keys: Code No. 11 table (jefferson1787) tried on Carmichael's Code No. 13: does not fit (597 freedom, 223 trouble)
 - [x] print: Founders Online (PTJ 13, 24, 26), Founders search for each number, web search for the size of Grey's force (Aug 1793): no number found
-- [x] key-rebuild: Code No. 16 values collected from seven decoded Pinckney letters and applied (31 of 58 groups of 28 Aug attested); Code No. 10 checked for alphabetical bracketing (none: two-part code)
+- [x] key-rebuild: Code No. 16 values collected from seven decoded Pinckney letters and applied (30 of 58 groups of 28 Aug attested); Code No. 10 checked for alphabetical bracketing (none: two-part code)
 - [x] retry: 447/497 re-read at 2x on frame 0140; Carmichael's blotted 108 re-read at 2x; every open group searched in all transcribed frames; 11 Nov 2026: the 28 Aug 1793 passage regraded with the six other Code No. 16 letters (PR #399), 447 and 672 searched in them (absent)
