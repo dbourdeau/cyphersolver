@@ -2070,6 +2070,16 @@ PAGES = [
          blurb='Three letters from a Hessian house-archive file of 39, partly in number pairs. Each pair is line and letter of a rhymed German Lord&rsquo;s Prayer (&ldquo;O Vatter aller frommen&rdquo;). A contemporary Latin outline filed with the longest letter gave the cribs, the key rows began to spell the verse, and all three letters are now deciphered: eight reasons why the count cannot leave his county.',
          quote='&ldquo;mercenariorum directioni oves suas submittere&rdquo;',
          rights='Hessisches Staatsarchiv Darmstadt, D 4 Nr. 248/3, via Arcinsys Hessen'),
+    dict(slug='ebers1664', footer_date='November 2026', label='Ebers in Moscow 1662&ndash;66', year='1662&ndash;66', y=1664.5, place='Moscow &rarr; Stockholm', st='solved', stt='key from the contemporary glosses',
+         title='Commissary Adolf Ebers in Moscow, 1662&ndash;1666: the key of his code',
+         blurb='The German letters of the Swedish commissary in Moscow to the Regency of Charles XI hide their key passages in two-digit numbers, and a clerk wrote the German decipherment over every run. Brice Dudout rebuilt the table from the glosses of one letter, froze it, and tested it once on a page he had not used: it gives 0.909 of the letters against 0.047 for the best shuffled key. The content is the glosses&rsquo;; the new thing is the key.',
+         quote='&ldquo;gesandten nach polen &hellip; die polen zu tractiren&rdquo;',
+         rights='Riksarkivet, Stockholm, SE/RA/2113/2113.1/3/b/602 (public domain mark)'),
+    dict(slug='lilienthal1665', footer_date='November 2026', label='Lilienthal in Moscow 1665&ndash;67', year='1665&ndash;67', y=1666.0, place='Moscow &rarr; Stockholm', st='solved', stt='key from the contemporary glosses',
+         title='Resident Johan von Lilienthal in Moscow, 1665&ndash;1667: the key of his code',
+         blurb='The Swedish resident in Moscow wrote to the Regency of Charles XI in German, with the sensitive passages in two- and three-digit numbers and the German decipherment written between the lines. The code is a homophonic letter substitution in six numbered series, not a nomenclator. Brice Dudout rebuilt 158 values from the glosses of two pages, froze them, and tested them once on a third: 0.887 of the letters against 0.047 for the best shuffled key.',
+         quote='&ldquo;bestehet feste auff seiner instruction&rdquo;',
+         rights='Riksarkivet, Stockholm, SE/RA/2113/2113.1/1/36/82 (public domain mark)'),
     dict(slug='thurloe', label='Beverning to Boreel 1653', year='1653', y=1653.66, place='Westminster &rarr; Paris', st='stuck', stt='key not found',
          title='Beverning and Vande Perre to Boreel, Westminster, 1653',
          blurb='A Dutch despatch from the peace talks with Cromwell, intercepted by Thurloe&rsquo;s office and printed by Birch in 1742: three cipher passages, 136 groups, figures 6&ndash;33 for letters and eight three-figure groups from a new word code. Every royalist and Commonwealth key of 1653&ndash;60 on Cryptiana fails, and a hill-climb in Dutch and French finds no reading. A matched control shows the solver would have read a letter cipher of this shape, so the system is not what it seems, or the print is corrupt. Not solved.',
@@ -3329,3 +3339,5 @@ IMAGES['toledo1479'] = None
 IMAGES['agad131'] = None
 IMAGES['taulet1866'] = None
 IMAGES['sega1591b'] = None
+IMAGES['ebers1664'] = ('ebers1664_lead.jpg', 'Image 138: code runs with the German gloss written above them', 'Riksarkivet, Stockholm, SE/RA/2113/2113.1/3/b/602, bildid R0003225_00138, via the Riksarkivet IIIF service')
+IMAGES['lilienthal1665'] = ('lilienthal1665_lead.jpg', 'Image 45, left page, lines 1&ndash;12: code with the gloss between the lines', 'Riksarkivet, Stockholm, SE/RA/2113/2113.1/1/36/82, bildid R0000814_00045, via the Riksarkivet IIIF service')
