@@ -14,7 +14,7 @@ for i,t in texts.items():
     run=[];start=None;last_end=0
     def flush():
         global run,start
-        if len(run)>=7: out.append({"id":i,"pos":start,"n":len(run),"kind":"letters","ctx":re.sub(r"\s+"," ",t[max(0,start-500):last_end+300])})
+        if len(run)>=5 and re.search(r"c[iy]pher|in code|key-?word",t[max(0,start-900):last_end+400],re.I): out.append({"id":i,"pos":start,"n":len(run),"kind":"letters","ctx":re.sub(r"\s+"," ",t[max(0,start-500):last_end+300])})
         run=[];start=None
     for m in tok.finditer(t):
         w=m.group(0)
