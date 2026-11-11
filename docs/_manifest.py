@@ -1609,6 +1609,11 @@ PAGES = [
          blurb='Three letters of the Polish envoy to the Porte (DECODE R7484, R7485, R7476), partly in a three-digit syllabary in alphabetical bands that a second hand glossed between the lines. Transcribed and checked token by token: R7485 complete, R7484 96.5%, R7476 94.9% after seven passes over its faint glosses. R7476 re-dated to May&ndash;August 1714. Split on 14 Oct 2026 from sieniawski1708.',
          quote='&ldquo;Seraskierowi Turcy wierzy&#263; nie chc&#261; i Hanowi&rdquo;',
          rights='Archiwum Narodowe w Krakowie, via DECODE'),
+    dict(slug='jablonski1705', footer_date='November 2026', label='Jablonski to R&aacute;day 1705&ndash;07', year='1705&ndash;07', y=1706.0, place='Berlin &rarr; P&aacute;l R&aacute;day', st='solved', stt='key rebuilt',
+         title='Jablonski to P&aacute;l R&aacute;day, 1705&ndash;1707: the key of the numeric syllabary',
+         blurb='Enciphering drafts of the Berlin court preacher Daniel Ernst Jablonski to P&aacute;l R&aacute;day, R&aacute;k&oacute;czi&rsquo;s envoy, with the red number groups written over the Latin they stand for. Brice Dudout rebuilt the key from 350 number-and-word pairs of four drafts and measured it once on a fifth, transcribed blind: 0.930 of characters against 0.247 for shuffled keys. The content is the drafts&rsquo; own Latin; the key is the new part.',
+         quote='nihil a milite Saxonico timendum esse ... sed metuenda esse arma Caesaris',
+         rights='Drafts: Staatsbibliothek zu Berlin &ndash; PK, Nachl. A. H. Francke 11,2/15 and 11,2/16 (Public Domain Mark 1.0); key by Brice Dudout, Europe chiffr&eacute;e (CC BY 4.0)'),
     dict(slug='papai1706', label='P&aacute;pai to R&aacute;k&oacute;czi 1706&ndash;10', year='1706&ndash;10', y=1706.5, place='Constantinople &rarr; R&aacute;k&oacute;czi', st='partial', stt='read in part',
          title='J&aacute;nos P&aacute;pai to Ferenc R&aacute;k&oacute;czi II, 1706&ndash;1710',
          blurb='Eleven numeric despatches of R&aacute;k&oacute;czi&rsquo;s envoy at the Porte, five of them filed under other senders, decrypted with the Hungarian syllabic nomenclator issued to him (DECODE R580), which DECODE had not linked to them: 99.0% of 16,861 groups. A twelfth letter, in a graphic-sign alphabet, has its own page.',
@@ -3260,6 +3265,7 @@ IMAGES['pawel1624'] = None
 IMAGES['rota1624'] = ('rota1624_lead.jpg', 'Lines 7&ndash;12 of the letter: clear Italian with two-digit numbers and ticked code numbers', 'Bayerische Staatsbibliothek M&uuml;nchen, Clm 10398 n. 106, fol. 233r, via MDZ (bsb00116447, scan 469)')
 IMAGES['dormer1694'] = None
 IMAGES['casimir1629'] = None
+IMAGES['jablonski1705'] = None
 IMAGES['leticia1932'] = None
 IMAGES['hatzfeldt1641'] = None
 IMAGES['olivares1626'] = None
