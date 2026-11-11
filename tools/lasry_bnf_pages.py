@@ -74,7 +74,7 @@ PAGE_JUNK = re.compile(r'^(BnF cipher research|\d+ / 134|Ciphertext-only|Deciphe
 
 
 def parse(md):
-    lines, pages, page = [], [], None
+    lines, page = [], None
     for ln in md.splitlines():
         s = ln.strip()
         m = re.match(r'--- PDF page (\d+)', s)

@@ -6,7 +6,7 @@ breaks of that reading give the word starts. Prints a report; --write saves the 
 
 Usage: python _reveal_words_auto.py [--write] [slug ...]
 """
-import difflib, json, pathlib, re, sys, unicodedata
+import difflib, json, pathlib, sys, unicodedata
 
 HERE = pathlib.Path(__file__).parent
 TARGETS = HERE.parent / 'targets'

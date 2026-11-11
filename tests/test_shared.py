@@ -11,6 +11,7 @@ import os
 import pathlib
 import subprocess
 import sys
+import tempfile
 import unittest
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -56,6 +57,29 @@ class Lang(unittest.TestCase):
         for f in files:
             with gzip.open(f, 'rt', encoding='utf-8') as fh:
                 self.assertTrue(json.load(fh), f.name)
+
+    def test_cache_follows_the_recipe(self):
+        # a model cached from one recipe is rebuilt when models.json names other sources or another norm
+        from lang import corpora
+        texts = {'a': 'le roi a escrit a son ambassadeur ' * 30, 'b': 'the king has written to his ambassador ' * 30}
+        spec = {'norm': 'modern', 'order': 3, 'sources': ['a']}
+        old = lm.CACHE, lm.registry, corpora.text
+        with tempfile.TemporaryDirectory() as tmp:
+            lm.CACHE, lm.registry = tmp, lambda: ({'t': spec}, {})
+            corpora.text = lambda sids: ' '.join(texts[s] for s in sids)
+            try:
+                first = lm.load('t')
+                self.assertEqual(lm.load('t').meta['chars'], first.meta['chars'])
+                corpora.text = None                                  # an unchanged recipe is served from the cache
+                self.assertEqual(lm.load('t').meta['sources'], ['a'])
+                corpora.text = lambda sids: ' '.join(texts[s] for s in sids)
+                spec['sources'] = ['b']
+                self.assertEqual(lm.load('t').meta['sources'], ['b'])
+                spec['norm'] = 'early'
+                m = lm.load('t')
+                self.assertEqual((m.meta['norm'], m.alpha), ('early', lm.alphabet('early', True)))
+            finally:
+                lm.CACHE, lm.registry, corpora.text = old
 
 
 class Ledgers(unittest.TestCase):

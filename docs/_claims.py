@@ -15,7 +15,7 @@ The folder's state is its Status line in the first forty lines (CLAUDE.md): 'in 
 import re, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-NUMS = r'(\d{1,3}(?:\s*(?:\+|,|and|&)\s*\d{1,3})*)\b'
+NUMS = r'(\d{1,4}(?:\s*(?:\+|,|and|&)\s*\d{1,4})*)\b'      # ids passed 999 in Oct 2026
 IN_TITLE = re.compile(r'(?i)\b(?:catalogue(?: items?| nos?\.?)?|cat\.) ?' + NUMS)
 AT_START = re.compile(r'(?:^[-*>\s]*|[.:;]\**\s+)(?:\**\s*)(?:Unsolved Catalogue|Catalogue|Target: catalogue)'
                       r'(?: items?| nos?\.?)? ?' + NUMS, re.M)

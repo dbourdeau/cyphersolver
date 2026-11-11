@@ -30,7 +30,7 @@ A partial outcome ("read in part") is a stopping point only when it is justified
 standard move done or marked n/a with a reason), and profile.json has outcome.fraction_read and outcome.gaps.
 See partial_problems() and the writeup skill, section 0a.
 """
-import sys, re, json, pathlib, subprocess, time
+import sys, re, json, pathlib, subprocess, time, functools
 
 sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 HERE = pathlib.Path(__file__).resolve().parent          # docs/
@@ -300,18 +300,23 @@ def head_problems(slug, heads=None, titles=None):
         probs.append(f'the page links only to the folder of another write-up ({", ".join(sorted(folders))}), not targets/{slug}')
     return probs
 
+@functools.lru_cache(maxsize=None)
+def _ids(page):
+    """The id attributes of a page, scanned once: every anchor link into the page asks for them."""
+    return frozenset(re.findall(r'\bid="([^"]+)"', page))
+
 def link_problems(slug, heads=None):
     """Dead links inside a page: a page, an anchor or a repository path that does not exist."""
     from urllib.parse import unquote
     heads = heads or page_heads()
     if slug not in heads: return []
     page = heads[slug][2]
-    own = set(re.findall(r'\bid="([^"]+)"', page))
+    own = _ids(page)
     probs = []
     for f, a in re.findall(r'href="([^"#?:]+\.html)(?:#([^"]*))?"', page):
         if not (HERE / f).exists():
             probs.append(f'links docs/{f}, which does not exist')
-        elif a and '=' not in a and f[:-5] in heads and a not in set(re.findall(r'\bid="([^"]+)"', heads[f[:-5]][2])):
+        elif a and '=' not in a and f[:-5] in heads and a not in _ids(heads[f[:-5]][2]):
             probs.append(f'links {f}#{a}, but that page has no such anchor')
     for a in sorted(set(re.findall(r'href="#([^"=]+)"', page))):
         if a not in own: probs.append(f'links #{a}, but the page has no such id')
@@ -647,8 +652,8 @@ def check_slug(slug):
     try: pics = json.loads(read(HERE / '_portraits.json') or '{}')
     except ValueError: pics = {}
     item(any(q.get('img') for q in pics.get(slug) or []) or slug in skip.get('portrait', {}),
-         f'a correspondent portrait in docs/_portraits.json (python docs/_add_portrait.py), '
-         f'or the reason there is none in docs/_explore_skip.json "portrait"')
+         'a correspondent portrait in docs/_portraits.json (python docs/_add_portrait.py), '
+         'or the reason there is none in docs/_explore_skip.json "portrait"')
     for prob in image_problems(slug, skip=skip)[1] or [None]:
         item(prob is None, prob or 'every image names its source (data-credit) and the page shows a snip of the cipher')
     item((HERE / 'reveal' / f'{slug}.json').exists() or slug in skip.get('reveal', {}),
@@ -683,23 +688,36 @@ def check_slug(slug):
 # ---------------------------------------------------------------------------
 # the audit
 
-def audit(brief=False):
-    pages, images, _ = manifest()
-    rows = readme_rows()
-    dirs = target_dirs()
-    listed_dirs = set().union(*(r['dirs'] for r in rows)) if rows else set()
-    listed_slugs = set().union(*(r['slugs'] for r in rows)) if rows else set()
-    html_slugs = {p.stem for p in HERE.glob('*.html')} - {'index', 'catalogue', 'writeups'} - TOOL_PAGES
-    problems = 0
+def _html_slugs():
+    return {p.stem for p in HERE.glob('*.html')} - {'index', 'catalogue', 'writeups'} - TOOL_PAGES
 
-    # 1. finished in the notes, nowhere else. The shared checkout is often on a stale branch, so a page that
-    #    exists on main counts as written up and is only mentioned.
+def finished_unwritten(pages=None, rows=None, dirs=None, html_slugs=None):
+    """(gaps, on_main): targets finished in their notes with no README row and no page, as (folder, why); and those
+    whose page exists on main only. The shared checkout is often on a stale branch, so a page that exists on main
+    counts as written up and is only mentioned. Audit section A, and all the Stop hook needs of the audit."""
+    pages = manifest()[0] if pages is None else pages
+    rows = readme_rows() if rows is None else rows
+    dirs = target_dirs() if dirs is None else dirs
+    html_slugs = _html_slugs() if html_slugs is None else html_slugs
+    listed_dirs = set().union(*(r['dirs'] for r in rows)) if rows else set()
     gaps, on_main = [], []
     for d, info in dirs.items():
         if not info['finished']: continue
         if d in listed_dirs or d in pages or d in html_slugs: continue
         if page_on_main(d): on_main.append(d)
         else: gaps.append((d, info['why']))
+    return gaps, on_main
+
+def audit(brief=False):
+    pages, images, _ = manifest()
+    rows = readme_rows()
+    dirs = target_dirs()
+    listed_slugs = set().union(*(r['slugs'] for r in rows)) if rows else set()
+    html_slugs = _html_slugs()
+    problems = 0
+
+    # 1. finished in the notes, nowhere else
+    gaps, on_main = finished_unwritten(pages, rows, dirs, html_slugs)
     print(f'A. Finished in NOTES.md, no README row and no site page: {len(gaps)}')
     for d, why in gaps: print(f'   {d}/   (notes say: "{why}")')
     if on_main: print(f'   (written up on main, not in this checkout: {", ".join(on_main)})')
@@ -757,8 +775,6 @@ def audit(brief=False):
     # every page whose target has a profile carries a method (the badge is derived from it by _build_site.py)
     import _methods as M
     paths = M.profile_paths()
-    pages = {m.group(1): (m.group(2), m.group(3)) for m in re.finditer(
-        r"dict\(slug='([a-z0-9]+)'.*?st='([a-z]+)', stt='([^']*)'", uncommented(read(HERE / '_manifest.py')), re.S)}
     drift = []
     for r in readme_rows():
         want = M.section_of(r['section'])
@@ -933,8 +949,8 @@ def hook_stop():
     behind, differs = _checkout_staleness()
     if behind and differs:                              # a stale script blocks on rules main has changed: warn, do not block
         print(json.dumps({'suppressOutput': True, 'systemMessage': _stale_note(behind)})); return
-    import io, contextlib
-    with contextlib.redirect_stdout(io.StringIO()): _, gaps = audit(brief=True)
+    dirs = target_dirs()
+    gaps, _ = finished_unwritten(dirs=dirs)             # section A alone: the rest of the audit is not used here
     # only targets this session worked in: a tool call whose input names a path in the folder (a folder merely
     # mentioned in prose, or in this script's own audit output, does not count); without a transcript, fall
     # back to uncommitted changes in the folder or notes edited in the last 6 h
@@ -943,7 +959,6 @@ def hook_stop():
     transcript = read(tpath) if tpath else ''
     uses = list(_tool_uses(transcript))
     status = git('status', '--porcelain')
-    dirs = target_dirs()
     def touched(d):
         # worked on = a call that writes into the folder; reading its notes to check a page does not count
         if transcript: return any(_writes_folder(d, name, inp) for name, inp in uses)
@@ -958,10 +973,10 @@ def hook_stop():
         print(json.dumps({'decision': 'block', 'reason': reason})); return
     # a target this session wrote into whose NOTES.md or profile.json no longer matches its page's last review
     rows = readme_rows()
-    ledger = load_ledger()
+    ledger, written = load_ledger(), manifest()[0]
     stale_pages = sorted({s for d in dirs if (touched(d) if transcript else False)
                           for r in rows if d in {x.rstrip('/').split('/')[-1] for x in r['dirs']} for s in r['slugs']
-                          if s in manifest()[0] and ledger_problems(s, ledger, rows)})
+                          if s in written and ledger_problems(s, ledger, rows)})
     if stale_pages:
         reason = ('Review check: you changed the sources (NOTES.md or profile.json) of ' + ', '.join(stale_pages[:8])
                   + ', so the write-up page may now say something the sources no longer support (stale counts, a Still open line, '
@@ -985,15 +1000,7 @@ def hook_stop():
               'and profile.json outcome.gaps. If the work genuinely has to stop now, put "Status: in progress" '
               'at the top of NOTES.md and say in your reply what is left.')
     # block once per distinct list: the same unchanged gaps do not re-block every stop (background agents)
-    import hashlib, tempfile
-    sid = re.sub(r'\W', '', inp.get('session_id') or 'nosession')
-    mark = pathlib.Path(tempfile.gettempdir()) / f'cypher_partial_{sid}.txt'
-    digest = hashlib.sha1(reason.encode('utf-8')).hexdigest()
-    if read(mark).strip() == digest:
-        print(json.dumps({'suppressOutput': True})); return
-    try: mark.write_text(digest, encoding='utf-8')
-    except OSError: pass
-    print(json.dumps({'decision': 'block', 'reason': reason}))
+    if not _block_once(inp, reason, 'partial'): print(json.dumps({'suppressOutput': True}))
 
 if __name__ == '__main__':
     args = sys.argv[1:]

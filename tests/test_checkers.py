@@ -19,6 +19,7 @@ import _check_catalogue as CC  # noqa: E402
 import _check_profile as CP    # noqa: E402
 import _check_terms as CT      # noqa: E402
 import _check_writeup as CW    # noqa: E402
+import _claims as CL           # noqa: E402
 import _images as IMG          # noqa: E402
 import _manifest as MF         # noqa: E402
 import _texts as TX            # noqa: E402
@@ -281,6 +282,58 @@ class Ledgers(unittest.TestCase):
     def test_gate_baseline_parses(self):
         f = ROOT / 'docs' / '_audit_baseline.json'
         if f.exists(): json.loads(f.read_text(encoding='utf-8'))
+
+
+class Claims(unittest.TestCase):
+    def test_four_digit_catalogue_numbers(self):
+        # catalogue ids passed 999 in Oct 2026; a claim on one must be seen like any other
+        self.assertEqual(CL.IN_TITLE.findall('# Catalogue 1245: Sir George Barlow to Thomas Grenville'), ['1245'])
+        self.assertEqual(CL.IN_TITLE.findall('# x1576: a letter (catalogue 1566)'), ['1566'])
+        self.assertEqual(CL.AT_START.findall('Catalogue 1563 and 450. Two letters.'), ['1563 and 450'])
+        self.assertEqual(CL.AT_START.findall('Catalogue 450. A letter.'), ['450'])
+
+    def test_mid_sentence_number_is_not_a_claim(self):
+        self.assertEqual(CL.AT_START.findall('then test the key of the other folder (catalogue 1385) as well'), [])
+
+
+class ProfileShapes(unittest.TestCase):
+    """"unknown" is allowed for any field: the checks after the schema must take it, not crash on it."""
+    def check(self, mutate):
+        src = next(p for p in sorted((ROOT / 'targets').glob('*/profile.json'))
+                   if CP.check(p.parent.name, quiet=True)[0] == 'valid')
+        prof = json.loads(src.read_text(encoding='utf-8'))
+        prof['target'] = 'tmpshape'
+        mutate(prof)
+        old = CW.TARGETS
+        with tempfile.TemporaryDirectory() as tmp:
+            (pathlib.Path(tmp) / 'tmpshape').mkdir()
+            (pathlib.Path(tmp) / 'tmpshape' / 'profile.json').write_text(json.dumps(prof), encoding='utf-8')
+            CW.TARGETS = pathlib.Path(tmp)
+            try: return CP.check('tmpshape', quiet=True)
+            finally: CW.TARGETS = old
+
+    def test_unknown_length(self):
+        def m(p): p['documents'][0]['length'] = 'unknown'
+        _, errors, gaps = self.check(m)
+        self.assertIn('documents[0].length', gaps)
+        self.assertFalse([e for e in errors if 'length' in e])
+
+    def test_unknown_documents(self):
+        def m(p): p['documents'] = 'unknown'
+        self.assertIn('documents', self.check(m)[2])
+
+
+class Links(unittest.TestCase):
+    def test_anchor_links(self):
+        heads = {'a': ('', '', '<a href="b.html#key">k</a> <a href="b.html#gone">g</a> <a href="#top">t</a> <a href="#none">n</a><p id="top">'),
+                 'b': ('', '', '<h2 id="key">Key</h2>')}
+        old = CW.HERE
+        with tempfile.TemporaryDirectory() as tmp:
+            for s in heads: (pathlib.Path(tmp) / f'{s}.html').write_text(heads[s][2], encoding='utf-8')
+            CW.HERE = pathlib.Path(tmp)
+            try: probs = CW.link_problems('a', heads)
+            finally: CW.HERE = old
+        self.assertEqual(probs, ['links b.html#gone, but that page has no such anchor', 'links #none, but the page has no such id'])
 
 
 if __name__ == '__main__':

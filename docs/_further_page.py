@@ -9,10 +9,9 @@ which carries a plain-text task to hand an agent with one URL (same pattern as t
 Called from _build_site.py: build_html(PAGES) before the pages are processed (so further.html gets the nav and
 footer like any page), build_pages(PAGES) after (the per-reading pages copy that shell from the built further.html).
 """
-import html, json, pathlib, re
+import html, pathlib, re
 from urllib.parse import urlencode
 import _check_writeup as CW
-import _methods as M
 
 HERE = pathlib.Path(__file__).parent
 SITE = 'https://dbourdeau.github.io/cyphersolver/'

@@ -39,7 +39,7 @@ TYPES = {'object': dict, 'array': list, 'string': str, 'integer': int, 'number':
 
 def validate(v, s, path, errors, gaps):
     if v == UNKNOWN and path:
-        gaps.append(path or '(root)'); return
+        gaps.append(path); return
     t = s.get('type')
     if t:
         ok = isinstance(v, TYPES[t]) and not (t in ('integer', 'number') and isinstance(v, bool))
@@ -109,8 +109,9 @@ def check(folder, quiet=False):
     if isinstance(v, list) and 'statistical test' in v and 'validation' not in prof['outcome']:
         errors.append('outcome.verification: "statistical test" needs outcome.validation (python docs/_validate.py <folder> --write)')
     errors += credit_errors(prof)
-    for i, d in enumerate(prof.get('documents', [])):          # a measured count must still match its file
-        ln = d.get('length', {}) if isinstance(d, dict) else {}
+    for i, d in enumerate(prof.get('documents') if isinstance(prof.get('documents'), list) else []):   # a measured count must still match its file
+        ln = d.get('length') if isinstance(d, dict) else None
+        if not isinstance(ln, dict): continue                # "unknown" (a gap, already listed) or a shape the schema refused
         if ln.get('measured') is True:
             if not ln.get('file'): errors.append(f'documents[{i}].length: measured is true but no file is named')
             elif ln['file'].startswith('withheld:'): pass    # file kept out of the public repo; count stands as measured

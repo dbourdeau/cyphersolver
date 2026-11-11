@@ -655,7 +655,6 @@ else if(location.hash.indexOf('=')>0||location.hash==='#gone')top.scrollIntoView
 def data_entry(e, k):
     """What the page script reads of an entry, under short keys (the page embeds all of them)."""
     rid = RP.of(e)
-    r = RP.info(rid)
     d = {'id': e['id'], 't': e['title'], 'd': e['date'], 'y': e['year'], 'w': e['why'], 's': e['shelfmark'],
          'i': e['importance'], 'so': e['solvability'], 'df': e['difficulty'], 'c': e['cls'], 'r': rid, 'k': help_kind(e),
          'o': short_outcome(e), 'f': k,

@@ -169,15 +169,17 @@ def load(model_id, order=None, spaces=None, rebuild=False):
     spaces = spec.get('spaces', True) if spaces is None else spaces
     alpha = alphabet(spec['norm'], spaces)
     path = _cache_name(model_id, order, spaces)
-    if not rebuild and os.path.exists(path + '.json'):
-        meta = json.load(open(path + '.json'))
+    meta = json.load(open(path + '.json')) if not rebuild and os.path.exists(path + '.json') else None
+    # a cache built from another recipe (sources or norm edited in models.json since) is stale: rebuild it.
+    # Caches written before 'norm' was recorded are judged on their sources alone.
+    if meta and meta.get('sources') == spec['sources'] and meta.get('norm', spec['norm']) == spec['norm']:
         if meta['engine'] == 'dense':
             return DenseLM(np.load(path + '.npy'), order, alpha, meta)
         import pickle
         return SparseLM(pickle.load(open(path + '.pkl', 'rb')), order, alpha, meta)
     from lang import corpora
     text = norm(corpora.text(spec['sources']), spec['norm'], spaces)
-    meta = dict(model=model_id, chars=len(text), sources=spec['sources'])
+    meta = dict(model=model_id, chars=len(text), sources=spec['sources'], norm=spec['norm'])
     m = (DenseLM if order <= 5 else SparseLM).build(text, order, alpha, meta)
     os.makedirs(CACHE, exist_ok=True)
     m.save(path)
@@ -195,9 +197,9 @@ def best_language(text, candidates=None, order=4):
 if __name__ == '__main__':
     if ROOT not in sys.path:
         sys.path.insert(0, ROOT)
-    mid = sys.argv[1] if len(sys.argv) > 1 else 'fr-1600-letters'
+    args = [a for a in sys.argv[1:] if a != '--rebuild']          # the flag may come anywhere, also first
+    mid = args[0] if args else 'fr-1600-letters'
     m = load(mid, rebuild='--rebuild' in sys.argv)
     print(mid, m.meta.get('chars'), 'chars, order', m.order)
-    for s in sys.argv[2:] or []:
-        if s != '--rebuild':
-            print(round(m.per_char(norm(s, registry()[0][mid]['norm'], ' ' in m.alpha)), 3), s)
+    for s in args[1:]:
+        print(round(m.per_char(norm(s, registry()[0][mid]['norm'], ' ' in m.alpha)), 3), s)

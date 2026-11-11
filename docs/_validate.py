@@ -171,7 +171,7 @@ def validate(folder, pairs=None, quick=False, seed=1, control=False):
     if not path.exists():
         return {'error': f'no pairs file {path.relative_to(ROOT) if path.is_absolute() else path}'}
     head, toks, vals = read_pairs(path)
-    doc0 = (prof or {}).get('documents', [{}])[0] if prof else {}
+    doc0 = ((prof or {}).get('documents') or [{}])[0]
     model_id = head.get('model') or default_model(doc0.get('language'), doc0.get('year'))
     if not model_id: return {'error': 'no model: add "# model: <id>" to the pairs file'}
     sc = Scorer(model_id, head.get('norm'))
@@ -307,7 +307,8 @@ def record(folder, res):
     sp = _span(out, 'validation')
     out = out[:sp[0]] + vj + out[sp[1]:] if sp else out[:1] + '"validation": ' + vj + ', ' + out[1:]
     sp = _span(out, 'verification')
-    out = out[:sp[0]] + json.dumps(ver, ensure_ascii=False) + out[sp[1]:]
+    vl = json.dumps(ver, ensure_ascii=False)
+    out = out[:sp[0]] + vl + out[sp[1]:] if sp else out[:1] + '"verification": ' + vl + ', ' + out[1:]
     text = text[:os_] + out + text[oe:]
     # solution: replace an earlier validation step, else append one
     n2 = res['nulls'].get('shuffled refit', {}); n1 = res['nulls'].get('random keys', {})
@@ -392,7 +393,7 @@ if __name__ == '__main__':
         record_na(folder, a[a.index('--na') + 1]); print(f'{folder}: recorded as not applicable'); sys.exit(0)
     pairs = a[a.index('--pairs') + 1] if '--pairs' in a else None
     res = validate(folder, pairs, quick='--quick' in a, control='--control' in a)
-    if '--control' in a: res['file'] += ' (negative control: fake reading fitted to shuffled ciphertext)'
+    if '--control' in a and 'error' not in res: res['file'] += ' (negative control: fake reading fitted to shuffled ciphertext)'
     if '--control' in a and '--write' in a: print('--control is never recorded'); a.remove('--write')
     show(folder, res)
     if 'error' in res: sys.exit(2)

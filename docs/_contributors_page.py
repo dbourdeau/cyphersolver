@@ -357,7 +357,6 @@ def page(pages, profiles, reg, dates, version, today):
     t = CR.tally(profiles, reg)
     pages_by_folder = {f: p for p in pages for f in p.get('folders', [])}
     ranked = CR.ranked(t, reg)
-    direct = [(w, ent) for w, ent in ranked if CR.direct_score(ent)]
     lead = leads(reg)
     n_people = len(ranked) + len(lead)
     n_credits = sum(len(ent['items']) for w, ent in t.items())
