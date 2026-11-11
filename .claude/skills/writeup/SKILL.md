@@ -53,6 +53,16 @@ not from memory. The slug is the folder name unless a page already exists under 
   section before the sources, short files inline; `_check_writeup.py` refuses a reading without it. A decryption is
   the deciphered text, with unread groups marked, not only a score or a sample. If a contributor's texts are
   missing, ask for them and keep the result as a pointer until they arrive.
+- **The key at the top of the page (11 Nov 2026, after George Lasry's reports).** Every write-up whose target has a
+  key (recovered, partial, matched or known) opens with it as a table: plaintext letter above, its cipher sign(s)
+  below, then the nomenclator, then the nulls. The builder draws it from the key file (`docs/_keyfig.py`), so give
+  the target a key file it can read: `outcome.key_file` pointing at a `key.tsv` (`sign<TAB>value`, `#` comments, a
+  header row naming the columns), `key.json` (`{sign: value}`) or a Markdown table, with an empty value or `null` for
+  nulls. A key kept only in a script or in prose gives no table; write it out. When the key is written in drawn
+  signs (not digits or letters) and a key sheet or clean page is at hand, add `key_signs/<letter>.png` (`et.png` for
+  &): one strip per plaintext letter cut from the manuscript, with a `key_signs/README.md` naming the leaf and how it
+  was cut (`targets/breves1603/key_signs/` is the model). After the build, open the page and check that the table
+  reads the right way round (plaintext above) and that no row is missing.
 - **A reading must read, and be translated (George Lasry, 22 Oct 2026, on matignon1586).** A mechanical decryption
   is not a reading. Before anything is called read or read in part, build the decode into coherent sentences in its
   own language and translate them into English; where a sentence will not form, go back to the image and the key

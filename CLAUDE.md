@@ -21,6 +21,8 @@ evidence) is the first half of the job. The second half is the write-up, and it 
    reach: the `docs/<slug>.html` page, the `PAGES` and `IMAGES` manifest in `docs/_manifest.py`, the README
    results row with its write-up link, the line at the top of `docs/findings.html`, the `unpublished/solved.html` row (optional while unpublished),
    `SOLVED_CATALOGUE.md`, `SOLVED_RANKING.md`, `catalogue.json`, `decode_updates/queue.json` (DECODE edits to send), and the rebuild.
+   Every page with a key opens with it as a table (Lasry's format), built from the target's key file; drawn-sign keys
+   get manuscript cut-outs in `key_signs/` where an image is at hand (writeup skill, "The key at the top of the page").
 2. `python docs/_check_writeup.py <slug>` must print `result: complete` before the work is reported as done.
 3. `python docs/_check_writeup.py --audit` lists finished targets that never got a write-up. The SessionStart hook
    shows it at the start of each session; the Stop hook blocks a stop once when a target this session worked on
