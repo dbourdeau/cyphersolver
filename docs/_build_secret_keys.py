@@ -2,7 +2,7 @@
 Run from anywhere:  python docs/_build_secret_keys.py   ->  docs/secret-keys.json
 Each key: id, name, who, year, slug (write-up), kind (letters | code | pigpen), enc {plain: [groups]}, dec {group: plain},
 and fold {letter: substitute} for letters the key has no sign for."""
-import json, re, pathlib, importlib.util
+import json, re, pathlib
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / 'docs' / 'secret-keys.json'
 

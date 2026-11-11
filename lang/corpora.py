@@ -96,7 +96,8 @@ def text(sids):
 
 if __name__ == '__main__':
     srcs = json.load(open(os.path.join(HERE, 'sources.json'), encoding='utf-8'))
-    for sid in sys.argv[1:] or sorted(srcs):
+    ids = [a for a in sys.argv[1:] if a != '--force']             # the flag is not a source id
+    for sid in ids or sorted(srcs):
         if len(sys.argv) > 1:
             p = fetch(sid, force='--force' in sys.argv)
             print(sid, os.path.getsize(p), 'bytes')

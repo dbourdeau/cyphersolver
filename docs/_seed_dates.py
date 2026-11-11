@@ -9,7 +9,7 @@ in "Recent findings" on index.html are dated the same way, by the commit that fi
 Run once:  python _seed_dates.py        After that _build_site.py keeps the file up to date on every build.
 Re-running is safe: dates already in the file are kept, only missing ones are filled in.
 """
-import subprocess, sys, pathlib, json, re
+import subprocess, sys, pathlib, re
 
 HERE = pathlib.Path(__file__).parent
 ROOT = HERE.parent

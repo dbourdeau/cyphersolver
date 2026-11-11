@@ -10,7 +10,6 @@ rather than a table, because the reasoning column had become prose crammed into 
 
 Run:  python _build_queue.py    (rewrites the section in index.html between the queue and blocked anchors)
 """
-import re
 
 CRYPTIANA = 'https://cryptiana.web.fc2.com/code/unsolved.htm'
 T50 = 'https://scienceblogs.de/klausis-krypto-kolumne/the-top-50-unsolved-encrypted-messages/'
