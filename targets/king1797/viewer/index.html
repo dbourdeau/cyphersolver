@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>King No. 29: image and reading</title>
+<meta name="description" content="Rufus King to Timothy Pickering, London, 13 April 1797 (despatch No. 29), in King's State Department code: the manuscript frames beside the reading.">
+<style>
+/* Frame image on the left (loaded from the National Archives catalog), the reading on the right; tabs pick the document. */
+:root{
+  --paper:#f4f3ef; --sheet:#ffffff; --ink:#1c222a; --muted:#5d6672; --rule:#d8d5cb; --well:#2b2f35;
+  --accent:#1f4e79;
+  --ci-bg:#e3eefa; --ci-ink:#0f3a63;          /* written in cipher */
+  --new-bg:#fde3cf; --new-ink:#7a3209;        /* cipher first deciphered now */
+  --fail:#a01d1d; --prop:#6a4c93; --diff:#1f4e79; --guess-bg:#fff0a8; --guess-ink:#4f3e00; --ok:#2f6b3a;
+  --serif:Georgia, "Times New Roman", serif;
+  --sans:system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono:ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --paper:#14171c; --sheet:#1b1f26; --ink:#e6e3db; --muted:#a2a9b3; --rule:#333944; --well:#0d0f12;
+  --accent:#8fb8e6; --ci-bg:#1d3550; --ci-ink:#cfe4ff; --new-bg:#4a2a14; --new-ink:#ffd1ad;
+  --fail:#f19393; --prop:#c6acf2; --diff:#8fb8e6; --guess-bg:#4b3f0f; --guess-ink:#ffe98f; --ok:#8fd19e; color-scheme:dark } }
+:root[data-theme="dark"]{
+  --paper:#14171c; --sheet:#1b1f26; --ink:#e6e3db; --muted:#a2a9b3; --rule:#333944; --well:#0d0f12;
+  --accent:#8fb8e6; --ci-bg:#1d3550; --ci-ink:#cfe4ff; --new-bg:#4a2a14; --new-ink:#ffd1ad;
+  --fail:#f19393; --prop:#c6acf2; --diff:#8fb8e6; --guess-bg:#4b3f0f; --guess-ink:#ffe98f; --ok:#8fd19e; color-scheme:dark }
+html,body{height:100%;margin:0}
+body{background:var(--paper);color:var(--ink);font:14px/1.5 var(--sans)}
+.app{height:100%;display:grid;grid-template-rows:auto 1fr;padding:10px max(12px,env(safe-area-inset-right,0px)) 10px max(12px,env(safe-area-inset-left,0px));gap:10px;box-sizing:border-box}
+.bar{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center}
+.bar h1{font:600 19px var(--serif);margin:0}
+.bar .src{font-size:12px;color:var(--muted);flex-basis:100%;margin:-4px 0 0}
+.bar .src a{color:var(--accent)}
+.tabs{display:flex;flex-wrap:wrap;gap:4px}
+.tab{font:500 13px var(--sans);border:1px solid var(--rule);background:var(--sheet);color:var(--ink);padding:5px 11px;border-radius:5px;cursor:pointer}
+.tab[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:var(--sheet)}
+.tab:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.split{display:grid;grid-template-columns:var(--left,56%) 8px minmax(0,1fr);min-height:0}
+.gutter{cursor:col-resize;background:transparent;border:0;padding:0;position:relative}
+.gutter::after{content:"";position:absolute;inset:40% 3px;border-radius:2px;background:var(--rule)}
+.viewer{display:grid;grid-template-rows:auto 1fr;min-height:0;background:var(--well);border-radius:6px;overflow:hidden}
+.vbar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:6px 8px;background:#1d2024;color:#dfe3e8}
+.vbar button{font:500 12px var(--sans);background:#3a414b;color:#eef1f4;border:1px solid #4b535e;border-radius:4px;padding:3px 8px;cursor:pointer}
+.vbar button[aria-pressed="true"]{background:#dfe9f5;color:#10263c;border-color:#dfe9f5}
+.vbar .sp{flex:1}
+.vbar a{color:#b9d4f2;font-size:12px}
+.stage{position:relative;overflow:hidden;cursor:grab;touch-action:none;min-height:240px}
+.stage.drag{cursor:grabbing}
+.stage img{position:absolute;left:0;top:0;transform-origin:0 0;user-select:none;-webkit-user-drag:none;max-width:none}
+.hint{position:absolute;right:8px;bottom:6px;font-size:11px;color:#c9ced6;background:#0008;padding:2px 6px;border-radius:3px;pointer-events:none}
+.status{position:absolute;left:50%;top:40%;transform:translate(-50%,-50%);max-width:80%;text-align:center;font-size:13px;color:#dfe3e8;background:#000a;padding:8px 12px;border-radius:5px}
+.status a{color:#b9d4f2}
+.status[hidden]{display:none}
+.panel{display:grid;grid-template-rows:auto 1fr;min-height:0;background:var(--sheet);border:1px solid var(--rule);border-radius:6px;overflow:hidden}
+.ptabs{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:8px 10px;border-bottom:1px solid var(--rule)}
+.ptabs:empty{display:none}
+.ptabs .filters{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
+.chipbtn{font:500 12px var(--sans);border:1px solid var(--rule);background:transparent;color:var(--muted);padding:3px 9px;border-radius:99px;cursor:pointer}
+.chipbtn[aria-pressed="true"]{color:var(--ink);border-color:var(--ink)}
+.scroll{overflow:auto;padding:12px 14px 40px;min-height:0}
+.intro{font-size:13px;color:var(--muted);margin:0 0 10px;max-width:72ch}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--muted);margin:0 0 12px}
+.ci{background:var(--ci-bg);color:var(--ci-ink);border-radius:3px;padding:0 3px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.ci.new{background:var(--new-bg);color:var(--new-ink);font-weight:600}
+.guess{background:var(--guess-bg);color:var(--guess-ink);border-bottom:1px dashed currentColor;border-radius:2px;padding:0 2px}
+.hole{font-family:var(--mono);font-size:.85em;color:var(--fail)}
+.sup{text-decoration:underline dotted;font-weight:600}
+.drop{text-decoration:line-through;opacity:.6}
+.mk{font:600 .7em var(--sans);margin-left:1px}
+.mk.fail{color:var(--fail)} .mk.never{color:var(--new-ink)} .mk.prop{color:var(--prop)} .mk.diff{color:var(--diff)}
+.card{border:1px solid var(--rule);border-radius:6px;padding:10px 12px;margin:0 0 10px;display:grid;gap:6px;cursor:pointer}
+.card.on{border-color:var(--accent);box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 25%,transparent)}
+.card.flag{border-left:4px solid var(--prop)}
+.card.never{border-left:4px solid var(--new-ink)}
+.ch{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.pid{font:600 13px var(--mono)}
+.st{font:500 11px var(--sans);padding:1px 7px;border-radius:99px;border:1px solid var(--rule);color:var(--muted)}
+.st.never{color:var(--new-ink);border-color:currentColor} .st.fail{color:var(--fail);border-color:currentColor}
+.st.prop{color:var(--prop);border-color:currentColor} .st.diff{color:var(--diff);border-color:currentColor}
+.st.ok{color:var(--ok);border-color:currentColor}
+.frm{margin-left:auto;font:500 12px var(--sans);background:transparent;border:1px solid var(--accent);color:var(--accent);border-radius:4px;padding:2px 8px;cursor:pointer}
+.row{display:grid;grid-template-columns:96px minmax(0,1fr);gap:8px;align-items:baseline}
+.lab{font:600 10.5px var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.mono{font:12.5px/1.45 var(--mono);word-break:break-word;font-variant-numeric:tabular-nums}
+.read{font:16px/1.5 var(--serif)}
+.why{font-size:13px;background:color-mix(in srgb,var(--prop) 10%,transparent);border-radius:4px;padding:6px 8px}
+.full{font:17px/1.75 var(--serif);max-width:66ch}
+.ci.old{background:var(--ci-bg);color:var(--ci-ink)}
+.ctx{font:15px/1.6 var(--serif);max-width:70ch;background:color-mix(in srgb,var(--rule) 22%,transparent);border-radius:6px;padding:10px 14px;margin:0 0 14px}
+.ctx p{margin:0 0 .6em}
+.sec{font:600 15px var(--serif);margin:22px 0 8px}
+.gp{margin:0 0 14px;max-width:100%}
+.gh{font-size:12.5px;color:var(--muted);margin:0 0 4px}
+.grid{display:flex;flex-wrap:wrap;gap:2px 0;font-variant-numeric:tabular-nums}
+.cell{display:grid;grid-template-rows:auto auto auto;text-align:center;min-width:26px;padding:2px 3px;border-right:1px solid var(--rule)}
+.cell .n{font:12px var(--mono);color:var(--ink)} .cell .k{font:10.5px var(--mono);color:var(--muted)} .cell .p{font:600 14px var(--mono);color:var(--new-ink)}
+.cell.g{min-width:44px} .cell.g .p{font:600 13px var(--mono)}
+.gr{font:15px/1.5 var(--serif);margin-top:4px}
+.full p{margin:0 0 1em}
+.doc h2,.doc h3{font-family:var(--serif)} .doc h2{font-size:20px;margin:6px 0 8px} .doc h3{font-size:16px;margin:16px 0 6px}
+.doc p,.doc li{max-width:72ch} .doc ol,.doc ul{padding-left:20px;display:grid;gap:8px}
+.doc .frm{margin-left:0}
+blockquote{margin:6px 0;padding:6px 10px;border-left:3px solid var(--rule);font:15px/1.5 var(--serif)}
+code{font:12px var(--mono);background:color-mix(in srgb,var(--rule) 50%,transparent);padding:1px 4px;border-radius:3px}
+@media (max-width:900px){
+  .app{height:auto}
+  .split{grid-template-columns:1fr;grid-template-rows:52vh auto auto}
+  .gutter{display:none}
+  .panel{min-height:60vh}
+}
+@media (prefers-reduced-motion:no-preference){.card{transition:border-color .12s}}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="bar">
+    <h1>King No. 29: image and reading</h1>
+    <div class="tabs" role="tablist" id="doctabs"></div>
+    <p class="src">Rufus King to Timothy Pickering, No. 29, London, 13 April 1797. Frames: National Archives, RG 59, M30 roll 4, loaded from <a href="https://catalog.archives.gov/" target="_blank" rel="noopener">catalog.archives.gov</a>.</p>
+  </div>
+  <div class="split" id="split">
+    <section class="viewer" aria-label="Frame image">
+      <div class="vbar">
+        <span id="framebtns" style="display:flex;gap:4px;flex-wrap:wrap"></span>
+        <span class="sp"></span>
+        <button id="zout" title="Zoom out">−</button><button id="zin" title="Zoom in">+</button>
+        <button id="fitw" title="Fit width">Fit width</button><button id="fitp" title="Whole page">Whole page</button>
+        <a id="orig" href="#" target="_blank" rel="noopener">original at NARA</a>
+      </div>
+      <div class="stage" id="stage"><img id="img" alt="Manuscript frame" referrerpolicy="no-referrer"><span class="status" id="status" hidden></span><span class="hint">drag to move · scroll or +/− to zoom · double-click to zoom in</span></div>
+    </section>
+    <button class="gutter" id="gutter" aria-label="Drag to resize"></button>
+    <section class="panel" aria-label="Reading">
+      <div class="ptabs" id="ptabs"></div>
+      <div class="scroll" id="body"></div>
+    </section>
+  </div>
+</div>
+<script src="data.js"></script>
+<script>
+(function(){
+const R = window.READINGS, $ = s => document.querySelector(s);
+/* Frames are not stored in the repository: they load from the National Archives catalog. */
+const NARA = f => f.startsWith('T164') ? `https://catalog.archives.gov/medialz/dc-metro/rg-059/302031/T164/T164-03/${f}.jpg`
+                                       : `https://catalog.archives.gov/medialz/dc-metro/rg-059/603720/M30/M30-004/${f}.jpg`;
+const VIEWKEY = 'cyphersolver-viewer:' + R.docs.map(d => d.key).join(',');   /* remembers only the open tab */
+const esc = s => String(s ?? '').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const rich = s => esc(s).replace(/\[\?([^\]]+)\]/g,'<span class="guess">$1</span>').replace(/\[([a-z]{1,3})\]/g,'<span class="sup">$1</span>');
+
+/* ---------- image viewer ---------- */
+const stage = $('#stage'), img = $('#img'), status = $('#status');
+let sc = 1, tx = 0, ty = 0, frame = null;
+function apply(){ img.style.transform = `translate(${tx}px,${ty}px) scale(${sc})`; }
+function fit(mode){ if(!img.naturalWidth) return; const W = stage.clientWidth, H = stage.clientHeight;
+  sc = mode === 'page' ? Math.min(W / img.naturalWidth, H / img.naturalHeight) : W / img.naturalWidth;
+  tx = (W - img.naturalWidth * sc) / 2; ty = mode === 'page' ? (H - img.naturalHeight * sc) / 2 : 0; apply(); }
+function zoom(f, cx, cy){ const r = stage.getBoundingClientRect(); cx ??= r.width/2; cy ??= r.height/2;
+  const ns = Math.max(0.05, Math.min(6, sc * f)); tx = cx - (cx - tx) * ns / sc; ty = cy - (cy - ty) * ns / sc; sc = ns; apply(); }
+function say(html){ status.innerHTML = html; status.hidden = !html; }
+function showFrame(f){ if(!f) return; const changed = f !== frame; frame = f;
+  document.querySelectorAll('#framebtns button').forEach(b => b.setAttribute('aria-pressed', b.dataset.f === f));
+  $('#orig').href = NARA(f);
+  if(changed){ const want = f; img.style.visibility = 'hidden';
+    say(`Loading frame ${esc(f.slice(-4))} from the National Archives…`);
+    img.onload = () => { if(frame !== want) return; img.style.visibility = ''; say(''); fit('width'); };
+    img.onerror = () => { if(frame !== want) return; say(`The frame could not be loaded from the National Archives. <a href="${NARA(f)}" target="_blank" rel="noopener">Open it at NARA</a>.`); };
+    img.src = NARA(f); } }
+stage.addEventListener('wheel', e => { e.preventDefault(); const r = stage.getBoundingClientRect(); zoom(e.deltaY < 0 ? 1.15 : 1/1.15, e.clientX - r.left, e.clientY - r.top); }, {passive:false});
+let drag = null;
+stage.addEventListener('pointerdown', e => { if(e.target.closest('a')) return; drag = {x:e.clientX, y:e.clientY, tx, ty}; stage.setPointerCapture(e.pointerId); stage.classList.add('drag'); });
+stage.addEventListener('pointermove', e => { if(!drag) return; tx = drag.tx + e.clientX - drag.x; ty = drag.ty + e.clientY - drag.y; apply(); });
+const end = () => { drag = null; stage.classList.remove('drag'); };
+stage.addEventListener('pointerup', end); stage.addEventListener('pointercancel', end);
+stage.addEventListener('dblclick', e => { const r = stage.getBoundingClientRect(); zoom(1.8, e.clientX - r.left, e.clientY - r.top); });
+$('#zin').onclick = () => zoom(1.25); $('#zout').onclick = () => zoom(1/1.25);
+$('#fitw').onclick = () => fit('width'); $('#fitp').onclick = () => fit('page');
+if('ResizeObserver' in window) new ResizeObserver(() => { if(img.naturalWidth && sc < 0.2) fit('width'); }).observe(stage);
+
+/* resizable split */
+const split = $('#split');
+$('#gutter').addEventListener('pointerdown', e => { const r = split.getBoundingClientRect(); const mv = ev => {
+  const p = Math.max(25, Math.min(75, (ev.clientX - r.left) / r.width * 100)); split.style.setProperty('--left', p + '%'); };
+  const up = () => { removeEventListener('pointermove', mv); removeEventListener('pointerup', up); };
+  addEventListener('pointermove', mv); addEventListener('pointerup', up); });
+
+/* ---------- documents ---------- */
+const ABOUT = {key:'about', label:'About the code', frame:'M30-004-0092'};
+const VIEWS = [...R.docs.map(d => ({key:d.key, label:d.label})), ABOUT];
+let cur = null, sub = 'letter', filt = 'all';
+const tabs = $('#doctabs');
+VIEWS.forEach(v => { const b = document.createElement('button'); b.className = 'tab'; b.setAttribute('role', 'tab'); b.textContent = v.label; b.dataset.k = v.key;
+  b.onclick = () => openView(v.key); tabs.appendChild(b); });
+
+function frameButtons(frames){ const fb = $('#framebtns'); fb.innerHTML = '';
+  frames.forEach(f => { const b = document.createElement('button'); b.dataset.f = f;
+    const lab = R.frameLabels[f]; b.textContent = f.slice(-4) + (lab ? ' · ' + lab : ''); b.onclick = () => showFrame(f); fb.appendChild(b); }); }
+
+function marksChips(p){ const out = []; const m = p.marks || '';
+  if(m.includes('‡')) out.push('<span class="st never">‡ not reached by the 1813 reader</span>');
+  if(m.includes('†')) out.push('<span class="st fail">† the 1813 reader failed here</span>');
+  if(m.includes('≠')) out.push('<span class="st diff">≠ differs from the 1813 reader</span>');
+  if(m.includes('§')) out.push('<span class="st prop">§ proposal</span>');
+  if(!m && ((p.clerk && p.clerk !== '(no clerk copy on film)') || (cur && cur.key === 'lee02'))) out.push('<span class="st ok">same as the 1813 clerk</span>');
+  return out.join(''); }
+
+function passageCard(p, doc){
+  const fr = doc.mode === 'lines' ? 'M30-004-0092' : 'T164-03-' + (String(p.frame).match(/\d+/) || ['0'])[0].padStart(4,'0');
+  const cls = (p.marks||'').includes('‡') ? 'never' : (p.marks ? 'flag' : '');
+  const zline = p.z ? ` · z ${esc(p.z)}` : '';
+  if(doc.mode === 'lines') return `<div class="card" data-f="${fr}">
+     <div class="ch"><span class="pid">line ${esc(p.id)}</span><span class="st">${p.n} code groups</span><button class="frm" data-f="${fr}">frame 0092</button></div>
+     <div class="row"><span class="lab">On the page</span><span class="mono">${esc(p.numerals)}</span></div>
+     <div class="row"><span class="lab">Key gives</span><span class="mono">${rich(p.mech)}</span></div>
+     <div class="row"><span class="lab">Reading</span><span class="read">${rich(p.read_as)}</span></div></div>`;
+  return `<div class="card ${cls}" data-f="${fr}">
+     <div class="ch"><span class="pid">${esc(p.id)}</span><span class="st">${p.n} figures${zline}</span>${marksChips(p)}<button class="frm" data-f="${fr}">frame ${esc(p.frame)}</button></div>
+     <div class="row"><span class="lab">Find it after</span><span class="read">“…${esc(p.before)}”</span></div>
+     <div class="row"><span class="lab">Figures</span><span class="mono">${esc(p.numerals)}</span></div>
+     <div class="row"><span class="lab">Key gives</span><span class="mono">${esc(p.mech)}</span></div>
+     <div class="row"><span class="lab">Reading</span><span class="read">${rich(p.read_as)}</span></div>
+     ${p.clerk && p.clerk !== '(no clerk copy on film)' ? `<div class="row"><span class="lab">Clerk 1813</span><span class="read">${esc(p.clerk)}</span></div>` : ''}
+     ${p.why ? `<div class="why">${esc(p.why)}</div>` : ''}</div>`; }
+
+const INTRO = {
+  lee01: 'No 1813 decipherment of this letter survives, so every cipher word below was first read now. Eight passages; the first follows “the intrigues of the” near the foot of frame 0099.',
+  lee02: 'The State Department clerk deciphered this letter in 1813 on separate sheets (frames 0104-0105, buttons above); The Papers of James Monroe prints his copy. Passages without marks read the same as his copy. The marked ones are where his copy fails, stops or differs; his sheets can be compared beside the figures.',
+  lee06: 'The 1813 reader pencilled the key letters (w i n c h e s t e r) above the figures and his words below them on pages 1-3, then stopped. Passages marked ‡ were never deciphered; that is most of the new text.',
+  king29: 'A clerk\'s copy received by the State Department; the code groups are bare (nothing written over them). Lines below are the manuscript lines that carry code, with the clear words in braces as on the page. Highlighted words rest on context alone.'};
+
+function render(){
+  const doc = R.docs.find(d => d.key === cur.key);
+  const nLook = doc.passages.filter(p=>/[†≠§]/.test(p.marks)).length, nNew = doc.passages.filter(p=>/[‡†]/.test(p.marks)).length;
+  $('#ptabs').innerHTML = `<button class="chipbtn" aria-pressed="${sub==='letter'}" data-s="letter">The letter</button>
+    <button class="chipbtn" aria-pressed="${sub==='passages'}" data-s="passages">${doc.mode==='lines'?'Line by line':'Passage by passage'}</button>
+    <button class="chipbtn" aria-pressed="${sub==='full'}" data-s="full">Full text</button>
+    ${doc.mode!=='lines' && sub==='passages' ? `<span class="filters"><button class="chipbtn" aria-pressed="${filt==='all'}" data-fl="all">all ${doc.passages.length}</button>
+      ${nLook ? `<button class="chipbtn" aria-pressed="${filt==='look'}" data-fl="look">proposals and differences ${nLook}</button>` : ''}
+      ${nNew ? `<button class="chipbtn" aria-pressed="${filt==='new'}" data-fl="new">first read now ${nNew}</button>` : ''}</span>` : ''}`;
+  document.querySelectorAll('#ptabs [data-s]').forEach(b => b.onclick = () => { sub = b.dataset.s; render(); });
+  document.querySelectorAll('#ptabs [data-fl]').forEach(b => b.onclick = () => { filt = b.dataset.fl; render(); });
+  const legend = `<div class="legend"><span><span class="ci">blue</span> written in cipher</span><span><span class="ci new">orange</span> cipher the 1813 clerk did not read</span><span><span class="guess">yellow</span> guessed from sense</span><span>misfo<span class="sup">r</span>tunes: letter supplied for Lee's slip</span><span><span class="hole">[…]</span> not read</span></div>`;
+  if(sub === 'letter'){
+    const oldLeg = doc.key === 'lee02' || doc.key === 'lee06';
+    const leg = `<div class="legend"><span>plain text: written in clear</span>${oldLeg?'<span><span class="ci old">blue</span> in cipher, deciphered in 1813</span>':''}<span><span class="ci new">orange</span> in cipher, first deciphered now</span><span><span class="guess">yellow</span> word guessed from sense</span><span>misfo<span class="sup">r</span>tunes: letter supplied</span><span><sup class="mk fail">†</sup> 1813 reader failed</span><span><sup class="mk diff">≠</sup> 1813 reader differs</span><span><sup class="mk prop">§</sup> proposal</span></div>`;
+    const grids = doc.passages.map(p => {
+      let cells = '';
+      if(doc.mode === 'lines'){ if(!p.pairs || !p.pairs.length) return `<div class="gp"><div class="gh">line ${esc(p.id)}</div><div class="mono">${esc(p.numerals)}</div><div class="gr">${rich(p.read_as)}</div></div>`;
+        cells = p.pairs.map(([g,v]) => `<span class="cell g"><span class="n">${esc(g)}</span><span class="k">&nbsp;</span><span class="p">${rich(v)}</span></span>`).join('');
+        return `<div class="gp"><div class="gh">line ${esc(p.id)} · ${p.pairs.length} code groups</div><div class="grid">${cells}</div><div class="gr">${rich(p.read_as)}</div></div>`; }
+      const ns = p.numerals.split(/\s+/).filter(x=>/\d/.test(x)), ks = (p.keyrow||'').split(''), ms = (p.mech||'').split('');
+      cells = ns.map((n,i) => `<span class="cell"><span class="n">${esc(n)}</span><span class="k">${esc(ks[i]||'')}</span><span class="p">${esc(ms[i]||'')}</span></span>`).join('');
+      return `<div class="gp"><div class="gh"><b>${esc(p.id)}</b> · after “…${esc(p.before.slice(-50))}” · frame ${esc(p.frame)}</div><div class="grid">${cells}</div><div class="gr">${rich(p.read_as)}</div></div>`; }).join('');
+    const how = doc.mode === 'lines' ? 'Each code group as written, with the word or syllable it stands for underneath.' : 'Top row: the figures as Lee wrote them. Middle: the keyword letter used for each (WINCHESTER, restarting at each passage unless Lee slipped). Bottom: the letter it gives, before any correction of Lee\'s slips.';
+    $('#body').innerHTML = `<div class="ctx">${doc.context}</div>${leg}<div class="full">${doc.letter}</div><h3 class="sec">The cipher, figure by figure</h3><p class="intro">${how}</p>${grids}`;
+    return; }
+  if(sub === 'full'){ $('#body').innerHTML = `<p class="intro">${INTRO[doc.key] || ''}</p>${legend}<div class="full">${doc.reading}</div>${doc.summary?`<h3 class="sec">Summary</h3><div class="full" style="font-size:15px">${doc.summary}</div>`:''}`; return; }
+  let ps = doc.passages; if(filt==='look') ps = ps.filter(p=>/[†≠§]/.test(p.marks)); if(filt==='new') ps = ps.filter(p=>/[‡†]/.test(p.marks));
+  $('#body').innerHTML = `<p class="intro">${INTRO[doc.key] || ''}</p>` + ps.map(p => passageCard(p, doc)).join('');
+  document.querySelectorAll('#body .card').forEach(c => c.onclick = () => { document.querySelectorAll('#body .card.on').forEach(x=>x.classList.remove('on')); c.classList.add('on'); showFrame(c.dataset.f); });
+}
+
+function openView(k){
+  document.querySelectorAll('#doctabs .tab').forEach(b => b.setAttribute('aria-selected', b.dataset.k === k));
+  cur = {key:k}; try{ localStorage.setItem(VIEWKEY, k); }catch(e){}
+  if(k === 'about'){ $('#ptabs').innerHTML = ''; $('#body').innerHTML = document.getElementById('tpl-about').innerHTML;
+    document.querySelectorAll('#body [data-goto]').forEach(b => b.onclick = () => { const [d, f] = b.dataset.goto.split('|'); openView(d); showFrame(f); });
+    frameButtons([ABOUT.frame]); showFrame(ABOUT.frame);
+    return; }
+  const doc = R.docs.find(d => d.key === k); frameButtons(doc.frames); sub = 'letter'; filt = 'all'; render(); $('#body').scrollTop = 0; showFrame(doc.frames[0]); }
+let start = R.docs[0].key; try{ start = localStorage.getItem(VIEWKEY) || start; }catch(e){}
+const boot = () => openView(VIEWS.some(v=>v.key===start) ? start : R.docs[0].key);
+if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
+})();
+</script>
+
+<template id="tpl-about">
+<div class="doc">
+  <h2>King's code</h2>
+  <p>King's despatches used a State Department code of about 1,600 numbered words and syllables (769 = the, 1410 = of, 644 = to). The codebook has not been found. The key in this folder (<code>key.tsv</code>, 764 groups, so a partial key) was rebuilt from the Department clerks' interlinear decipherments of King's other despatches on NARA M30 rolls 4-8 (1797-1803): on these copies a clerk wrote the plain word over each coded word. Of 57 coded despatch copies found on the film, 48 are interlined like this; 72 of their frames were transcribed group by group with no key in view. Before any value was added from a clear text, the key was frozen and tested once, as declared in advance, on No. 59, a despatch wholly in bare code: it agreed with the Department's clear copy at 0.946 of the groups it covers. <code>key_method.md</code> describes the sources, grades and checks.</p>
+  <h2>How No. 29 reads</h2>
+  <p>No decipherment of No. 29 was found, so every code word in it is read here from the rebuilt key. Of its 119 code groups (82 distinct), 108 have a value taken from the clerks' decipherments or from an aligned clear text, and all but one of them fit. The other 11 rest on eight values inferred from the context of this letter alone (717 dul, 389 lect, 1279 major, 1074 ock, 1490 hol, 507 wed, 1440 esteem, 269 “the?”); they are shown in yellow and remain doubtful until another occurrence or a clear text confirms them.</p>
+  <p>One group does not fit: in line 15, 769, normally “the”, stands where the sense needs “and”, and a slip is supposed. In line 14 the reading takes 269, a group with no value from the clerks, as “the” from the context. The marks ^ and v after some groups are the clerk's (plural or inflection); the + after “the” in line 8 may be a line-filler.</p>
+  <p>Words are shown as the code spells them: the code builds words from syllables (“oppose” + “ite” for opposite, “nation” + “all” for national).</p>
+  <p><button class="frm" data-goto="king29|M30-004-0092">Open No. 29 at frame 0092</button></p>
+  <h2>The images</h2>
+  <p>The frames are not stored with this viewer. Each one is loaded from the National Archives catalog (RG 59, microfilm M30 roll 4, frames 0092-0096); the “original at NARA” link opens the full-resolution file.</p>
+</div>
+</template>
+</body>
+</html>
