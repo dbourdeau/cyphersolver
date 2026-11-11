@@ -1,0 +1,12 @@
+const {chromium}=require('playwright');
+(async()=>{const b=await chromium.launch();const p=await b.newPage();
+await p.goto('https://archive.spk-berlin.de/actaproweb/search.xhtml',{waitUntil:'networkidle',timeout:60000});
+const ins=await p.$$eval('input:not([type=hidden]),button,select,textarea',els=>els.map(e=>e.tagName+' id='+(e.id||'')+' name='+(e.name||'')+' type='+(e.type||'')+' ph='+(e.placeholder||'')+' txt='+(e.innerText||e.value||'').slice(0,40)));
+console.log(ins.join('\n'));
+const inp=await p.$('input[type=text]');
+await inp.fill('chiffriert'); await inp.press('Enter');
+await p.waitForLoadState('networkidle'); await p.waitForTimeout(4000);
+console.log(p.url());
+console.log((await p.innerText('body')).slice(0,4000));
+await p.screenshot({path:process.argv[2],fullPage:false});
+await b.close();})();
