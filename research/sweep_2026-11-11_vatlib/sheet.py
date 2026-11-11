@@ -1,4 +1,4 @@
-"""python sheet.py <scratch> <Shelfmark> [--step N] [--w 280] [--from i] [--to j] : thumbnails of every Nth canvas, 2 s apart,
+"""python sheet.py <scratch> <Shelfmark> [--step N | --n COUNT] [--w 280] [--from i] [--to j] : thumbnails of every Nth canvas, 2 s apart,
 then contact sheets (6x5, labelled) in <scratch>/sheets/. Needs the manifest fetched by man.py."""
 import sys,json,os,urllib.request,time,urllib.error
 from PIL import Image,ImageDraw
@@ -8,9 +8,10 @@ def opt(n,d):
     if n in a:
         k=a.index(n); v=a[k+1]; del a[k:k+2]; return int(v)
     return d
-step=opt('--step',1); w=opt('--w',280); i0=opt('--from',0); i1=opt('--to',10**6)
+step=opt('--step',1); w=opt('--w',280); i0=opt('--from',0); i1=opt('--to',10**6); nn=opt('--n',0)
 S,sm=a[0],a[1]
 cv=json.load(open(f'{S}/m_{sm}.json',encoding='utf8'))['sequences'][0]['canvases']
+if nn: step=max(1,(len(cv)-i0)//nn)
 os.makedirs(f'{S}/th/{sm}',exist_ok=True); os.makedirs(f'{S}/sheets',exist_ok=True)
 sel=[(i,c) for i,c in enumerate(cv) if i0<=i<i1 and (i-i0)%step==0]
 got=[]

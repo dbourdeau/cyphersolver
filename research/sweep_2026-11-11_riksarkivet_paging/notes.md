@@ -31,3 +31,11 @@
 - E 6700 Petersburg papers (90003391, 419): 24 images 2-402 viewed at low resolution (paired sheet): clear French/Swedish/German copies, tables; image 367 is a table headed "Signe" (signal list?), not looked at closely. No cipher letter seen.
 - /15 R0001380 images 1-349 screened (digit-window sheets): no cipher seen; 249 has a row 'Ca Da Ea Fa Ga' to check.
 - /15 R0001380 350-381 and /16 R0001381 (393 img) screened: no cipher seen in either volume.
+- /13 R0001378 (402 img): 29-34, 37-39, 42, 146, 148, 187, 188, 191, 198, 199, 213, 214, 318, 319, 321: cipher with interlinear decipherment (struck on most).
+  4 (letter Mainz 13 Dec 1634): 12 lines of cipher not struck individually, cancelled by a vertical stroke, decipherment written down the left margin.
+- /14 R0001379 (397 img): no cipher seen.
+- 129-130 of /12: printed, per the HSH register (del 41), in Handlingar rörande Skandinaviens historia 30: 91 (Frankfurt a. M. 30 July 1634, on the convention's deliberations on Swedish satisfaction). Del 30 itself not found on archive.org (not opened).
+
+## Task 2 continued (12-image sheets, paired, low resolution ~330 px a tile)
+- Reuterholm E 5134 (R0003396) 12 img 2-226; E 5137 (R0003399) 12 img 2-533; E 5138 (R0003400) 12 img 2-426; E 5139 (R0003401) 12 img 2-532; E 5141 (R0003403) 12 img 2-311: Piranesi's Italian letters, clear, some print. No cipher.
+- Azzolino K 413 (R0003475) 12 img 2-142: dense Italian drafts, clear.
