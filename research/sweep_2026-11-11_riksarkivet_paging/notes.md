@@ -39,3 +39,12 @@
 ## Task 2 continued (12-image sheets, paired, low resolution ~330 px a tile)
 - Reuterholm E 5134 (R0003396) 12 img 2-226; E 5137 (R0003399) 12 img 2-533; E 5138 (R0003400) 12 img 2-426; E 5139 (R0003401) 12 img 2-532; E 5141 (R0003403) 12 img 2-311: Piranesi's Italian letters, clear, some print. No cipher.
 - Azzolino K 413 (R0003475) 12 img 2-142: dense Italian drafts, clear.
+- Azzolino K 413 second sheet (154-294) and K 420 (R0003796) 24 img 2-547: Italian drafts, French letters (1670s-80s), clear.
+- K 1041 (A0076354) first sheet 2-141: accounts and French letters, clear.
+- U. Scheffer 002/16 (40008926) 254-486 and C. F. Scheffer 001/I (40008907) 2-144: Swedish/French drafts, clear.
+- C. F. Scheffer 001/I (157-299), 001/II (40008908, 24 img 2-350), 001/III (40008909, 24 img 2-545), 001/IV (40008910, first 12 img 2-219): patents, Swedish/French letters, gazettes; all clear.
+- C. F. Scheffer 001/IV second sheet (239-456), 001/V (40008911, 24 img 2-342), 001/VI (40008912, 24 img 2-427): French letters, clear.
+- De la Gardie E 1330 (R7000027, 24 img 2-378): German/French letters 1650s, clear.
+- 1133.07/6 Jakob De la Gardie 1611-25 (R0000781, 12 img 2-307): Swedish, clear, damp-stained.
+- 1133.07/14 Gustaf Horn 1625-29 (R0000794, 12 img 2-252), 1133.07/25 Johan Casimir 1615-21 (R0002220, 12 img 2-272), 1133.08/2 D-K (R0001367, 12 img 2-268): clear Swedish/German.
+- Stedingk E 6589 Depescher 1792 (90003435, 24 img 2-212), E 6600 Depescher 1803-04 (90003446, 24 img 2-410): French drafts with deletions, clear (drafts of despatches "en chiffre"); no ciphertext.
