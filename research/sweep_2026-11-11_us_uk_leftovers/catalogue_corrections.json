@@ -1,0 +1,81 @@
+[
+ {
+  "id": 2077,
+  "what": "Catalogue 2077 (BYU Vault MSS 771) was promoted as \"not online\". The images are online and were viewed on 11 Nov 2026; several fields are wrong.",
+  "fields": {
+   "title": "Carlo d'Aragona Tagliavia, duke of Terranova (governor of Milan) → Paolo Sfondrati, Spanish ambassador in Savoy: 13 letters of Aug-Sep 1583 mostly or partly in cipher",
+   "correspondents": "Carlo d'Aragona Tagliavia, duke of Terranova → Paolo Sfondrati",
+   "place": "Milan",
+   "language": "Spanish",
+   "region": "Spain",
+   "period": "1560-1589",
+   "date": "14 Aug - 26 Sep 1583",
+   "folio_note": "13 of the 27 items carry cipher (items 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 25, 26: BYU notes \"Most of the letter is written in code\" on items 6, 9, 12, 14, 16, 21); 46 page images, roughly 30 with cipher",
+   "needs_archive_scan": "no",
+   "access": "(remove \"archive\")",
+   "seen": "image",
+   "access_note": "Images open on cdm15999.contentdm.oclc.org (IIIF, no login)",
+   "links_add": [
+    {
+     "label": "Item 6, 14 Aug 1583 (most in cipher)",
+     "href": "https://cdm15999.contentdm.oclc.org/digital/collection/SCMisc/id/50211"
+    },
+    {
+     "label": "Item 6 page 1 (IIIF)",
+     "href": "https://cdm15999.contentdm.oclc.org/digital/iiif/SCMisc/50207/full/1200,/0/default.jpg"
+    },
+    {
+     "label": "BYU CONTENTdm search: Sfondrati",
+     "href": "https://cdm15999.contentdm.oclc.org/digital/collection/SCMisc/search/searchterm/Vault%20MSS%20771"
+    }
+   ]
+  },
+  "items": {
+   "6": 50211,
+   "7": 50679,
+   "9": 50684,
+   "12": 50229,
+   "13": 50233,
+   "14": 50238,
+   "16": 50248,
+   "18": 50254,
+   "19": 50258,
+   "21": 50266,
+   "25": 50292,
+   "26": 50283
+  },
+  "vetting_seen": {
+   "kind": "scan",
+   "where": "BYU CONTENTdm SCMisc, the 12 compound objects listed in \"items\" (46 pages), all downloaded at 900 px and viewed on contact sheets; item 6 p. 1 (page 50207) read at full size",
+   "extent": "about 30 pages with cipher; item 6 alone is 2.5 pages of solid cipher (22 lines on p. 1)",
+   "cipher": "Spanish chancery cipher: numbers, letter signs with dots and strokes, two-letter groups and three-letter code words (hom, sim, cem, vil, hol, gal, roe). Letters open \"Muy Illustre Señor\" and are dated \"De Milan\"; addressed to the ambassador with the duke of Savoy. No marginal or interlinear decipherment on any page seen."
+  },
+  "vetting_note": "The earlier block called BL Add MS 28418 \"a different person's correspondence\": it is the same Paolo Sfondrati (ambassador at Turin), his letters to Philip II with decipherings, so it is a source for the cipher. DECODE R9318 is a \"Duca di Terranova\" key (Munich). Searches and prior_art as in this sweep's MSS 518 row.",
+  "searches": [
+   {
+    "query": "WebSearch: Sfondrati family letters 1583 Carlo d'Aragona Tagliavia Paolo Sfondrati cipher \"Vault MSS 771\" OR \"Brigham Young\" deciphered",
+    "result": "Nothing on the BYU letters: hits were Mary Stuart, Ferdinand of Aragon (CNI 2018), Valle de la Cerda and other unrelated decipherments."
+   },
+   {
+    "query": "WebSearch: duque de Terranova gobernador de Milán 1583 cartas cifradas Paolo Sfondrato embajador Saboya Turín cifra descifrado",
+    "result": "Scalisi, \"La correspondencia del duque de Terranova\" (Libros de la Corte, 2023: his government 1580-86, Escorial papers) and a 1583 instruction by Scipio di Castro; no decipherment of letters to Sfondrati. The Scalisi PDF sits behind an Anubis bot check on revistas.uam.es and was not opened."
+   },
+   {
+    "query": "WebSearch: \"Paolo Sfondrati correspondence\" BYU \"Vault MSS 518\" Carlo d'Aragona Tagliavia letter 1583 October code",
+    "result": "Only the SNAC stub for BYU \"Paolo Sfondrati correspondence\" and a CCFr record of a copy of Sfondrato to Philip II, 13 Dec 1582; no study, transcription or decipherment of the 5 Oct 1583 letter."
+   },
+   {
+    "query": "WebSearch: \"Add MS 28418\" Sfondrato embajador Saboya Felipe II cartas descifradas 1583 Terranova cifra",
+    "result": "BL Add MS 28418: \"copies and decipherings of letters from Paolo Sfondrato, Count of Riviera, Spanish ambassador at Turin, to Philip II and Juan de Idiaquez\", 1580-85. That is Sfondrati's own outgoing mail in the royal cipher, not Terranova's letters to him; a place to look for the same cipher, no reading of this letter."
+   },
+   {
+    "query": "DECODE RecordsList search (curl, cmd=search): Sfondrati; Terranova; Tagliavia; Brigham",
+    "result": "Sfondrati 0, Tagliavia 0, Brigham 0. Terranova 1: R9318, a key headed \"Duca di Terranova\" in Munich, BayHStA Kurbayern Äußeres Archiv 4591 f. 95 (no ciphertext, not these letters)."
+   },
+   {
+    "query": "cryptiana.web.fc2.com: spanish2, spanish2A-C, spanish3, savoy, savoy2, italian .htm fetched and grepped for Terranova / Sfondrat",
+    "result": "No occurrence of either name on any of the eight pages."
+   }
+  ]
+ }
+]
