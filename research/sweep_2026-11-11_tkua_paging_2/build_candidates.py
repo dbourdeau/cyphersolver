@@ -1,0 +1,66 @@
+"""Writes candidates.json for the second TKUA paging pass (11 Nov 2026). Row 2 is the 1673 lead of the first pass, updated."""
+import json
+V = "https://arkivalieronline.rigsarkivet.dk/da/billedviser?epid=%s#%s,%s"
+petkum = {
+ "year": 1665, "date": "about Dec 1664 to Feb 1666 (dated leaves seen: London 27 Jan 1665, 12 May 1665; Oxford 18 Nov 1665, 18 Jan 1666)",
+ "title": "Simon de Petkum (Danish resident in London and Oxford) → a minister in Copenhagen ('Monsieur'): letters with long passages in a number code, no decipherment; his parallel relations to Frederik III are deciphered between the lines",
+ "correspondents": "Simon de Petkum → Frederik III of Denmark; Simon de Petkum → an unnamed minister ('Monsieur')",
+ "place": "London; Oxford", "language": "French", "region": "Scandinavia", "period": "1651-1700",
+ "shelfmark": "Rigsarkivet (Copenhagen), Tyske Kancelli, Udenrigske Afdeling (TKUA), Speciel del, England: Gesandtskabsrelationer, til dels med bilag og andre beretninger, A III 52: 1653-66, Gesandtskabsrelationer fra Simon de Petkum",
+ "folio_note": "Arkivalieronline epid 19852633, unit 261267 (657 images). No cipher seen on images 1-333 (1653-64). Cipher on the sampled images 337, 341, 345, 353, 369, 377, 381, 385, 389, 401, 405, 409, 421, 429, 437, 441, 445, 449, 461, 469, 473, 477, 481, 485, 489, 501, 505, 513, 517, 537, 541, 553, 561, 565, 569, 573, 581, 597, 625, 633, 641 (every 4th image was sampled, so about four times as many). Without decipherment, seen at full size: 573 right (22 cipher lines), 641 left (18), 597 right (9), 569 right (3), 625 (3), 633 (3), 445 right (two groups). Deciphered between the lines (letters headed 'Sire'): 377 right (27 Jan 1665), 401, 477, 561, 565 left, 581.",
+ "cls": "A",
+ "status": "Viewed 11 Nov 2026: every 4th image of the unit on contact sheets; 15 frames at full size. Clear French with code passages: numbers 14-389 separated by full stops, mixed with signs (theta, lambda, beta, psi, a looped 'll', 'ct', a '4'-like sign, m with a tail, y, x, b, g). In the relations to the king the chancery wrote the French over the groups (image 377: 14 = 'a', 222.100.215 = 'faire', 201 = 'de', 266.236 = 'la garentye', 96 = 'M. le Chancelier', 120 = 'la Suede', 389.288 = 'Votre Majeste'). The letters to 'Monsieur' in the same code carry nothing over the groups. Not on DECODE; no edition of the relations found.",
+ "why": "Petkum's private reports during the Bergen affair of 1665 and the slide into the Anglo-Danish war of 1666; the passages he hid from the clerks are the ones left unread, and the king's letters give several hundred group values.",
+ "importance": 3, "solvability": 5, "difficulty": 2,
+ "score_note": "Scored from the scans during the second TKUA paging pass of 11 Nov 2026 (research/sweep_2026-11-11_tkua_paging_2/); 15 frames at full size",
+ "verify": "Page every image 337-657 (only 1 in 4 was seen) and list the letters to 'Monsieur'; identify him (Gabel or the chancery secretary). Build the table from the interlinear relations (377, 401, 477, 561, 565, 581) and read 573 and 641. Check TKUA 'Chiffer' 1670-1709 image 309 (wrapper 'Jens Juel or Petkum to Sweden 1670-71', a later key).",
+ "links": [{"label": "Arkivalieronline viewer, image 573 (22 cipher lines, no decipherment)", "href": V % ("19852633", "261267", "48873120")},
+           {"label": "Image 641 (1666, no decipherment)", "href": V % ("19852633", "261267", "48873188")},
+           {"label": "Image 377 (to the king, 27 Jan 1665, deciphered between the lines)", "href": V % ("19852633", "261267", "48872924")},
+           {"label": "Daisy series record", "href": "https://daisy.rigsarkivet.dk/arkivserie_detaljer?heid=11797113"}],
+ "seen": "image", "source": "Rigsarkivet Arkivalieronline paging (TKUA Gesandtskabsrelationer, 17th century)",
+ "prior_art": "open (checked 11 Nov 2026: DECODE, Tomokiyo, Danmark-Norges Traktater 6, Jørgensen, Vaupell, web)",
+ "needs_archive_scan": "no", "access_note": "free on Arkivalieronline, no login; full-size JPEGs at api.rigsarkivet.dk/ao/v1/images/<id> (ao.py, full.py in this folder)",
+ "vetting": {
+  "date": "2026-11-11", "by": "claude cloud sweep 11 Nov tkua_paging_2",
+  "seen": {"kind": "scan",
+   "where": "Arkivalieronline epid 19852633, unit 261267: every 4th image 1-657 on contact sheets; images 377, 401, 445, 477, 505, 561, 565, 569, 573, 581, 597, 613, 625, 633, 641 downloaded at full size (api.rigsarkivet.dk/ao/v1/images/48873120 etc.)",
+   "extent": "Cipher on 41 of the 81 sampled images from 337 to 641, so of the order of 150 images in all; undeciphered passages seen at full size: 22 lines (573), 18 lines (641), 9 lines (597), and three short ones; about 10 groups a line",
+   "cipher": "Black-and-white microfilm. Number code 14-389 with Greek and letter signs between the numbers, groups separated by full stops, inside clear French. Image 573 right and image 641 left have no writing over or beside the cipher. On the relations to the king (377, 401, 477, 561, 565, 581) a second hand wrote the French over each group."},
+  "prior_art": {
+   "decode": "Not on DECODE: live searches at de-crypt.org/decrypt-web/RecordsList?search= for 'Petkum' and 'Petcum' returned 0 records (11 Nov 2026); 'Copenhagen' 7 and 'Denmark' 20 records, none from Rigsarkivet. The Petkum on DECODE R8748-R8752 (BL Add MS 61575, 1709; key R8766) is Hermann Petkum, the Holstein resident at The Hague, forty years later.",
+   "tomokiyo": "Not in Tomokiyo: unsolved.htm has no 'Petkum'; his one Danish article (cryptiana danish.htm, opened) is the Haxthausen cipher printed by Lindenfels 1819, a different system (five alphabets with indices 9-15, 30-37).",
+   "lasry": "No Lasry or HistoCrypt paper found: the web search '\"Simon de Petkum\" OR \"Simon Petkum\" Danish resident London 1665 1666 relations cipher chiffre letters edition deciphered' returned only the English side (Clifford papers at the National Maritime Museum, CSP Domestic).",
+   "edition": "No edition of Petkum's relations found. Danmark-Norges Traktater 1523-1750, vol. 6 (1665-1675; Laursen 1923), opened on Arkivalieronline (epid 17287984, unit 214837): the index gives 'de Petkum, Simon, dansk Diplomat, 65, 198-202, 402, 556 f.'; pp. 197-198 read: narrative introductions with manuscript citations in the notes, no letter text. Jørgensen, Peter Schumacher Griffenfeld (1893-94) and Vaupell, Rigskansler Grev Griffenfeld (1880-82), archive.org full texts grepped for 'Petkum': his later career and the 1672 mission to Sweden only.",
+   "literature": "Web search 'Petkum London 1665 Bergen affair Talbot Frederik III relationer Rigsarkivet udgivet breve chiffer' returned accounts of the Bergen attack from the English papers (Talbot's narrative, Archaeologia; the Clifford letters) and nothing from Petkum's reports or on their cipher."},
+  "key_check": "No key table for this code is held here or on DECODE. The TKUA 'Chiffer' volume 1670-1709 (Daisy 2132747, used for targets/biermann1675) starts after these letters; its image 309 is a wrapper 'Jens Juel or Petkum to Sweden 1670-71' with a key too faint to use (biermann1675 NOTES). Not tested on these letters.",
+  "key_in_volume": "Yes, as cribs: the interlinear decipherments of the relations to the king in the same unit (images 377, 401, 477, 561, 565, 581 and their unsampled neighbours) give the values of several hundred groups. Not applied to the undeciphered letters.",
+  "duplicates": "known.py 'Petkum', 'England: Gesandtskabsrelationer' (11 Nov 2026): 'Petkum' hits are the 1709 Torcy-Petkum code (geertruidenberg, villars1710) and the biermann1675 key note; no catalogue entry, lead or target for these letters. Hannibal Sehested's Paris relations of 1662-65 (unit 261294) use the same code and are deciphered: not a duplicate, a sibling.",
+  "verdict": "open",
+  "searches": [
+   {"query": "de-crypt.org RecordsList?search=Petkum / Petcum", "result": "0 records each"},
+   {"query": "WebSearch: \"Simon de Petkum\" OR \"Simon Petkum\" Danish resident London 1665 1666 relations cipher chiffre letters edition deciphered", "result": "nothing on Petkum's letters; English-side catalogue entries only"},
+   {"query": "WebSearch: Petkum London 1665 Bergen affair Talbot Frederik III relationer Rigsarkivet \"Petkum\" udgivet breve chiffer", "result": "Bergen affair from English sources; no edition of the Danish relations"},
+   {"query": "Danmark-Norges Traktater vol. 6, index 'Petkum' and pp. 197-198 (Arkivalieronline unit 214837, images 199-200, 711)", "result": "narrative with archive citations; no text of the relations"},
+   {"query": "grep -i petkum in Jørgensen 1893-94 and Vaupell 1880-82 full texts (archive.org); known.py \"Petkum\"; grep unsolved.htm", "result": "no decipherment, no edition; no project entry"}]}}
+juel = {
+ "year": 1673, "date": "25 May 1673",
+ "title": "Christian V → envoys Jens Juel and Christoffer Lindenov in Stockholm: royal order in a three-digit code, closing passage without decipherment",
+ "correspondents": "Christian V of Denmark (countersigned Griffenfeld) → Jens Juel and Christoffer Lindenov",
+ "place": "Copenhagen", "language": "Danish", "region": "Scandinavia", "period": "1651-1700",
+ "shelfmark": "Rigsarkivet (Copenhagen), TKUA, Speciel del, Sverige: Jens Juels gesandtskabsarkiv (Daisy 1664-69; the scanned unit holds the 1673-74 embassy of Juel and Lindenov)",
+ "folio_note": "Arkivalieronline unit 261588 (62 images), images 7-11; closing cipher block on image 10 foot and image 11 (13 lines). Unchanged from research/sweep_2026-11-11_tkua_paging/candidates.json row 2.",
+ "cls": "A",
+ "status": "Editions opened on 11 Nov 2026 (second pass): none prints or quotes this order. Vaupell, Rigskansler Grev Griffenfeld vol. 1 (1880; archive.org rigskanslergrevg01vaup) prints the instructions for Lindenov (Dec 1672) and Juel (5 Apr 1673, 24 Aug 1673, 19 Feb 1674) from 'Svenske Acta' and the order of 3 Oct 1674, and tells of the proposal sent on 27 June 1673; nothing dated 25 May 1673. Jørgensen, Peter Schumacher Griffenfeld vol. 2 (1894; peterschumacherg02jruoft) pp. 85-87 summarises the instruction and cites Griffenfeld's private letter to Juel of 19 May 1673; no order of 25 May. Fryxell, Handlingar rörande Sverges historia (handlingarrrand01fryxgoog) gives abstracts of the envoys' relations of 14 and 17 May 1673, not the king's orders. Danske Samlinger 2. række III (danskesamlinger01smitgoog): Swedish envoys' reports from Copenhagen, not this order. Danmark-Norges Traktater vol. 6 was opened on Arkivalieronline (unit 214837) and its index pages viewed, but the 1673-74 Stockholm negotiation pages were not read through.",
+ "why": "Instructions on the Franco-Swedish alliance and the Dutch war at the opening of the Stockholm negotiation; a short passage that the 1674 sibling orders should read almost completely.",
+ "importance": 3, "solvability": 5, "difficulty": 2,
+ "score_note": "Scores of the first pass kept; this pass added the edition checks only",
+ "verify": "No vetting block: (1) the loose chancery decipherment leaf at image 9 may continue on a verso that was not filmed, so 'no decipherment' is not established without asking Rigsarkivet; (2) Danmark-Norges Traktater vol. 6 not read at the 1673 Stockholm negotiation. Otherwise the editions opened print nothing of it. Build the code table from images 33-43 and read image 11.",
+ "links": [{"label": "Arkivalieronline viewer, image 11 (closing cipher passage)", "href": V % ("19852825", "261588", "48964499")},
+           {"label": "Image 9 (cipher and the loose decipherment leaf)", "href": V % ("19852825", "261588", "48964497")},
+           {"label": "Daisy series record", "href": "https://daisy.rigsarkivet.dk/arkivserie_detaljer?heid=11960168"}],
+ "seen": "image", "source": "Rigsarkivet Arkivalieronline paging (TKUA envoys' archives)",
+ "prior_art": "largely read at the time (decipherment leaf in the unit); the closing 13 lines are not printed in Vaupell, Jørgensen, Fryxell or Danske Samlinger (opened 11 Nov 2026); DECODE 'Juel', 'Lindenov', 'Griffenfeld': 0 records",
+ "needs_archive_scan": "partly", "access_note": "free on Arkivalieronline; the verso of the loose leaf at image 9 needs a look at the original"}
+json.dump([petkum, juel], open("candidates.json", "w"), ensure_ascii=False, indent=1)
+print("rows", 2)
