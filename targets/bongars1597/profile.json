@@ -1,0 +1,219 @@
+{
+ "schema_version": 1,
+ "target": "bongars1597",
+ "title": "Jacques Bongars, two letters of 26 Jan 1597 from Strasbourg (Burgerbibliothek Bern, Cod. B 149 (A) 451-452): clear French with names in a small nomenclator, transcribed and names recovered in part from context",
+ "documents": [
+  {
+   "id": "bern-b149a-451",
+   "read": "read in part",
+   "shelfmark": "Burgerbibliothek Bern, Cod. B 149 (A) 451, f. 360r",
+   "date": "Strasbourg, 26 Jan 1597",
+   "year": 1597,
+   "country": "France",
+   "route": "Jacques Bongars (Henri IV's agent in Germany) -> unknown correspondent",
+   "places": {
+    "from": "Strasbourg",
+    "to": "unknown"
+   },
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaf; names recovered from the clear context."
+   },
+   "length": {
+    "tokens": 6,
+    "unit": "code groups",
+    "measured": true,
+    "file": "names.tsv"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Burgerbibliothek catalogue images, 200 dpi greyscale (public domain)",
+    "image_quality": "fair",
+    "notes": "Letter-book copy, one secretary hand. Whole leaf transcribed (transcription.txt); 6 nomenclator groups noted as written."
+   }
+  },
+  {
+   "id": "bern-b149a-452",
+   "read": "read in part",
+   "shelfmark": "Burgerbibliothek Bern, Cod. B 149 (A) 452, f. 360v",
+   "date": "Strasbourg, 26 Jan 1597",
+   "year": 1597,
+   "country": "France",
+   "route": "Jacques Bongars -> unknown correspondent (perhaps Guillaume Ancel)",
+   "places": {
+    "from": "Strasbourg",
+    "to": "unknown"
+   },
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaf; names recovered from the clear context."
+   },
+   "length": {
+    "tokens": 3,
+    "unit": "code groups",
+    "measured": true,
+    "file": "names.tsv"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Burgerbibliothek catalogue images, 200 dpi greyscale (public domain)",
+    "image_quality": "fair",
+    "notes": "Second letter of the same date; whole leaf transcribed; 3 nomenclator groups."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator"
+  ],
+  "summary": "Names only, inside clear French: 9 groups each used once (figures with marks above them, plain figures, single signs such as #, X, -o-, barred 4, 5 capped by a bar, barred Z). Probably one of Bongars's tables in BnF fr. 7129 (Cryptiana catalogue), not seen.",
+  "symbol_kind": "digits and symbols",
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "names",
+    "places"
+   ]
+  },
+  "key_order": "not applicable",
+  "word_division": "kept",
+  "distinct_symbols": 10,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  }
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Lead 2453 (Daniel Bourdeau, Swiss cantonal sweep; vetting v16 of 9 Nov 2026 closed it as not_cipher, no reading). Anquez 1887 cites other Cod. B 149 items but not these two in the OCR searched; the Bongars letter editions (1647, 1668-1695) are the Latin letters. Kohlndorfer-Fries 2009 and Hagen 1875 not checked.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "none",
+  "human_role": "Daniel Bourdeau's sweep found the leaves (lead 2453). Brice Dudout set the rules (levels fixed in a pre-registration before any identification; no key claimed without a period table). An AI agent transcribed, identified and wrote up. No human palaeographer checked the transcription.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agent run by Brice Dudout"
+  ],
+  "first_date": "2026-11-11",
+  "last_date": "2026-11-11"
+ },
+ "solution": [
+  {
+   "date": "2026-11-11",
+   "kind": "literature search",
+   "what": "Daniel's catalogue and lead vetting; Anquez 1887 (full-text OCR); web searches for the letter and for a Bongars nomenclator; Cryptiana catalogue of Bongars ciphers (BnF fr. 7125-7132).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "transcription",
+   "what": "Both leaves transcribed in full (about 690 words of clear French), the 9 nomenclator groups noted as written.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Names recovered from grammar and the history of Jan 1597 (Ancel's mission, the 1596 league, the Strasbourg bishopric quarrel): 3 probable (les Estats, the Spaniard, Queen Elizabeth), 2 restored (Cardinal de Lorraine, House of Austria), 4 open.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "none",
+  "method": "not applicable",
+  "method_basis": "No enciphered text to decode: the letters are clear French with single nomenclator groups for names. Names were inferred from context, not from a key.",
+  "contribution": [
+   "transcription"
+  ],
+  "verification": [
+   "historical consistency"
+  ],
+  "provenance": "project",
+  "credits": [
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "Swiss cantonal sweep (Burgerbibliothek scopeArchiv), lead 2453; vetting v16 (9 Nov 2026) described the leaves",
+    "date": "2026-11-09"
+   },
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "note": "both leaves in full, with the 9 nomenclator groups as written (transcription.txt)",
+    "date": "2026-11-11"
+   },
+   {
+    "who": "dudout",
+    "role": "identification",
+    "note": "names recovered from context: 3 probable, 2 restored, 4 open (names.tsv)",
+    "date": "2026-11-11"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "G1 (2~85 2'1'6^), G2 (#), G5 (barred 4), G7 (4 199877)",
+    "blocker": "no-key-material",
+    "detail": "Bongars's tables in BnF fr. 7129 (ff. 241, 262, 548) and fr. 7131 not seen; the received originals are not located"
+   },
+   {
+    "item": "three doubtful words of the clear text (d'escuté?, ma/sa, Firx?) and the tail of G3",
+    "blocker": "illegible"
+   },
+   {
+    "item": "Kohlndorfer-Fries 2009 and Hagen 1875 not checked for an edition or calendar entry",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "one reader (an agent) on 200 dpi greyscale images; no human palaeographic check",
+    "blocker": "not-attempted"
+   }
+  ],
+  "texts": [
+   {
+    "doc": [
+     "bern-b149a-451",
+     "bern-b149a-452"
+    ],
+    "label": "Cod. B 149 (A) 451-452, ff. 360r-v, two letters of 26 Jan 1597",
+    "transcription": "transcription.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "fr",
+    "state": "read in part",
+    "read_share": 0.99,
+    "summary": "Bongars urges that the States General write to the German princes Ancel is visiting, complains of the English Queen's servants, and corrects his report on Brandenburg; at Strasbourg the bishopric quarrel worsens, an envoy demands 70,000 florins, and he fears the see will fall to a third party.",
+    "note": "read_share counts words: about 690 clear words read; 4 nomenclator groups and 3 doubtful words open. The names, not the words, are the weak part: 3 probable, 2 restored, 4 open of 9.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Brice Dudout (with Claude)",
+     "date": "2026-11-11",
+     "note": "clear French read as sentences; group identifications by context only, levels fixed in advance; one reader"
+    }
+   }
+  ],
+  "notes": "A small contribution on a lead closed as not_cipher: full transcription and names recovered in part from context. No key and no decipherment claimed."
+ }
+}
