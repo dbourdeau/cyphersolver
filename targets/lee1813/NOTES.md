@@ -123,7 +123,7 @@ F6-01).
 |---|---|---|---|---|---|---|---|
 | 1 Feb | `reading_1813-02-01.md` | 19 | 0 | 0 | 0.994 | 1.000 | read |
 | 2 Feb | `reading_1813-02-02.md` | 216 | 42 | 1 | 0.896 | 0.792 | read in part |
-| 6 Feb | `reading_1813-02-06.md` | 293 | 53 | 6 | 0.928 | 0.802 | read in part |
+| 6 Feb | `reading_1813-02-06.md` | 293 | 52 | 6 | 0.928 | 0.805 | read in part |
 
 The "repo measure" is `research/reading_audit/v10_relabel.py` `share()` on the `## Reading` section, which includes
 Lee's clear text. The cipher-only share counts every word with a supplied or dropped letter as a hole, as the README
@@ -167,13 +167,26 @@ F6-74 from the frames in two passes (strips at 1.5x, then thirds at 2.3x, with 4
 identical. The one difference is F6-65 numeral 9: we read a re-inked 1, the second reader 17 (or 11, or a blotted
 1); "Duke Dalberg" needs 1. It skipped one written line, F6-51 numerals 20-33 (14 numerals), which so have one
 reading only. It divided two pairs of stretches differently (F6-61/62 and F6-73/74 as one each), which changes no
-numeral. Pages 1-3 (F6-01 to F6-42) and the 1 and 2 February letters have had no second reading of the numerals,
-apart from Andrew Beling's check of F1-H numerals 21 and 23 on frame 0101 (section 4).
+numeral. The 1 and 2 February letters have had no second reading of the numerals, apart from Andrew Beling's check
+of F1-H numerals 21 and 23 on frame 0101 (section 4).
+
+**F6-01 to F6-42 (11 Nov 2026).** A second agent read the numerals of pages 1-3 blind, from the same frame halves,
+and its reading was frozen by sha256 before ours was opened (`second_reading/blind_reading_F6-01_to_42.json`). It
+divided the stretches as we did (42) and read 854 numerals to our 853; 837 agree. Each of the 17 differences was
+re-checked on a crop and decoded both ways (`second_reading/comparison_F6-01_to_42.tsv`):
+- ours kept, 15: four blind readings of 26, which the 25-row table cannot have; an extra "5" at the end of F6-03 that is
+  Lee's clear capital S; three misreadings at strip scale (F6-20 twice, F6-25); seven look-alikes or blots where the
+  image allows our figure and the decode needs it;
+- blind reading taken, 1: **F6-40 numeral 11 is 8, not 3** (closed lower bowl like Lee's 8, against the open 3 of
+  13 two places before). The stretch now reads "have entered Berl[i]n" (was "entere[d]"); the 6 Feb count of
+  supplied letters goes from 60 to 59;
+- unresolved, 1: F6-33 numeral 11 leans 13 on the image, but CONFIDENCE needs 10. Kept as 10 and marked doubtful.
+These numerals were read with the clerk's pencil in view on the page, so neither reading is blind to it.
 
 ## 9. Lee's own enciphering errors
 
 Counted from the alignment of the mechanical text with the reading, outside the passages given only as proposals:
-60 letters supplied and 2 dropped in 6 February, 53 supplied and 1 dropped in 2 February, none in 1 February (recounted on
+59 letters supplied and 2 dropped in 6 February, 53 supplied and 1 dropped in 2 February, none in 1 February (recounted on
 11 November 2026 from the "read as" lines, after the new readings of J, L and N). The
 transcriber's earlier count for 6 February, "at least 47", was made over letters that align one to one and left out
 the omissions. Wherever a numeral behind a wrong letter was looked at again at zoom it was clear on the page, so
@@ -195,8 +208,8 @@ the numerals; they do not prove what Lee did. Across the three letters it finds:
   dots at all, is not counted: the transcription already divides it 9 23 1. Lee's dots are irregular, so this kind of mistake is easy to
   make and easy for a reader to miss. It is why the clerk failed at J and at the opening of 6 Feb.
 - **Single wrong figures**: off by one place (22), a tens figure added or lost, e.g. 17 for 7 (6), look-alike figures
-  that may be our misreading (8), and 52 others.
-- **The keyword's first letter, W.** 27 of the single wrong figures fall under W, 8.7% of the 310 figures enciphered with
+  that may be our misreading (7), and 52 others.
+- **The keyword's first letter, W.** 26 of the single wrong figures fall under W, 8.4% of the 310 figures enciphered with
   it, against 0.4-2.4% for I, N, H, E, S and R (C 6.4%, T 5.6%). Most fall where the keyword comes round to W again:
   13 at figure 11 of a stretch, 3 at figure 21, 5 at figure 1. In five of them (2 Feb D, V, X; 6 Feb F6-13, F6-29)
   Lee wrote the letter's place in the plain alphabet (E as 5, B as 2, I as 9, S as 18), as if he did not apply the key
@@ -317,7 +330,15 @@ The readings mark passages with †, ≠, ‡ and § (legend in each reading). T
   between them), F6-51 and F6-52 (letters left out while the key advances), F6-62 and F6-74 (key carried on from the
   stretch before, offsets 8 and 9).
 - F6-62 "A Mr de Bassagne(?)": thirteen letters, exact under the key run on from F6-61, but z 3.0, not clear of all
-  controls, and the man is not identified.
+  controls. Probably Philippe Panon Desbassayns de Richemont, whom Napoleon used as a go-between with London on the
+  exchange of prisoners (an inference; no source ties Lee's words to him by name). Coquelle, *Napoleon and England
+  1803-1813* (1904), pp. 267-69, cites Bassano's orders to him of 21 January 1813 to return to London with full
+  powers, and has him reach London on 15 February; Lee wrote on 6 February that he "has been sent to London with
+  proposals". A London report of 19 March 1813 (Bayreuther Zeitung 1813, p. 335, from the Oesterreichischer
+  Beobachter) has "Herr Desbassayns" sent from France with proposals for exchanging prisoners. The family name was
+  printed "Bassagne" in Paris (Nouvelles politiques 1806, on Mme de Bassagne's foundation of the Rosière de Suresnes,
+  which Suresnes histories give to the comtesse Panon Desbassyns de Richemont). Not searched: Gallica, the Times of
+  February 1813.
 - F6-65 "Duk[e] Dalberg told me" reads only if a thick, re-inked 1 (numeral 9) is kept; first taken for a deletion.
   The second reader read 17 there.
 - F6-56 "emprunt forcé": a forced loan, in French in the cipher.
@@ -351,7 +372,8 @@ Done by the project on merging pull request #397 (the contributor's files are ot
   letters and the second reading of F6-51 numerals 20-33 were done (above) and the items removed. "Mr de Bassagne" is
   a reading with exact letters whose doubt is its length (13 numerals, z 3.0), now listed as too short. The missing
   second reading of the numerals of 1 Feb, 2 Feb and 6 Feb F6-01 to F6-42 is a limit of the verification, not an
-  unread piece: it stays stated in section 8 and on the page.
+  unread piece: it stays stated in section 8 and on the page. (6 Feb F6-01 to F6-42 had a blind second reading on
+  11 Nov 2026, after this check: section 8.)
 - **Method.** The keyword is the clerk's, read off his pencil; the alphabet, the numeral rule, the restart and the
   slips were worked out here against his pencilled words. That is "key recovered based on adjacent plaintext" in the
   project's categories, kept as the contributor set it.
@@ -374,12 +396,13 @@ One line per open piece (detail in sections 4, 8, 9 and 12):
 - 6 Feb F6-47, last six numerals (2 3 4 23 6 1) - blocker: illegible; "but on" only if 2 and 3 are one numeral 23, and the page has a dot between them.
 - 6 Feb F6-26 "of an armed neutrality" - blocker: illegible; a proposal: the numerals, confirmed at zoom, give OFALARMERKEUTRATITY (four letters off and a key restart; z 3.5).
 - 6 Feb F6-01/F6-02 "I established ... a cipher, a copy", and 2 Feb J "indemnities through" - blocker: illegible; proposals: each rests on taking Lee's dots between figures as mistakes (1.2 as 12; 11 as 1 1; 17 as 1 7).
-- "Mr de Bassagne" (F6-62) - blocker: too-short; 13 numerals, letters exact under the key run on from F6-61, but z 3.0 does not clear all controls at this length, and the man is not identified.
+- "Mr de Bassagne" (F6-62) - blocker: too-short; 13 numerals, letters exact under the key run on from F6-61, but z 3.0 does not clear all controls at this length. The man is probably Desbassayns de Richemont (section 12), an inference.
 - 2 Feb Q, the word before "their policy" - blocker: illegible; "[?to]" is supplied from the sense, the figures between "favorable" and "their policy" do not give a clean word.
 
-Not gaps in the text, but limits of the checking: the numerals of 1 Feb, 2 Feb and 6 Feb F6-01 to F6-42 have one
-reader each (section 8), apart from the stretches compared on the frames in the integration check; the words in which
-a letter is supplied for one of Lee's wrong figures (60 letters supplied and 2 dropped in 6 Feb, 53 and 1 in 2 Feb)
+Not gaps in the text, but limits of the checking: the numerals of 1 Feb and 2 Feb have one
+reader each (section 8), apart from the stretches compared on the frames in the integration check (6 Feb F6-01 to
+F6-42 had a blind second reading on 11 Nov 2026); the words in which
+a letter is supplied for one of Lee's wrong figures (59 letters supplied and 2 dropped in 6 Feb, 53 and 1 in 2 Feb)
 are counted as holes in the measure (section 6).
 
 ## Escalation
