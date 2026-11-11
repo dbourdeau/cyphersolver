@@ -1,0 +1,78 @@
+# klogesoren1858 - key of Kloge Søren's cipher (simple substitution, one letter per sign, word spaces kept)
+# License: CC BY 4.0 (Brice Dudout, Europe chiffrée, with Claude Opus 5.5 agents), 11 Nov 2026.
+# Section A = the key as measured (frozen/KEY.json, SHA-256 40bf4b2d3da613cf1db2f0537ce30086cfcf5bf2de48ad3c14b4b8aa9404aefb), validated once on the held-out images 030-031.
+# Section B = refinements made AFTER the measurement (separation of the stroke-and-dot signs, full-resolution reading); not measured.
+# Section C = the writer's own alphabet table on image 091 left (a to ø), which confirms section A; letters from its alphabetical order.
+# Section D = ligatures and variants met in the second session; read by sense, not measured.
+section	notation	shape	letter	note
+A	A	∧ chevron	a
+A	eA	•∧ dotted chevron	e	the dot is often missed in small writing
+A	B1	bar under 1 dot	u
+A	B2	bar under 2 dots	n
+A	B3	bar under 3 dots	m
+A	T	† cross	t	also f (homophony t/f)
+A	Ae	✱ dotted X-cross	æ
+A	V	ν hook	d
+A	G	ʃ long hook	g
+A	Gy	ʃ with two dots	y
+A	Q	? hook	r
+A	L	L upright with foot	l
+A	O	Ω arch on a bar	v
+A	I	| bare stroke	s
+A	Id	| with a dot above	s
+A	Ik	| with two dots above	k
+A	I2	|: stroke and two dots	h
+A	Ir	|• stroke and one dot	b	in the measured key also read h, j, c by place of the dot (see B)
+A	J	ʝ hook	i	i/j
+A	Jd	ʝ̇ dotted hook	i	i/j
+A	Jy	ʝ with two dots	y
+A	E	! stroke over dot	p
+A	C1	• one dot	o	o/ø
+A	C2	: two dots	o	o/ø
+A	C4	⁘ three or four dots	ø
+A	K	•⅂ hook like 7 after a dot	c
+A	i	short dotted stroke	o
+B	Ir	|• stroke + 1 dot to the right	b	separated at full resolution (image 031)
+B	I2	| bare + 2 dots to the right	h
+B	Id+C2	| dotted above + :	s o	a trap: two signs, not h
+B	K	•⅂ hook like 7 + dot	c
+B	Ik	| + 2 dots above	k	the two dots often drift onto the next sign in this hand
+B	Ir+J	|• + ʝ	J	capital J (Jomfru, Jesus)
+C	A	∧	a	table 091 left, line 1
+C	Ir	|•	b
+C	•|•	stroke between two dots	c
+C	V	ν	d
+C	eA	•∧	e
+C	T	†	f	the same cross as t (homophony)
+C	G	ʃ	g	a second form ϟ written above it, probably by a later user
+C	I2	|:	h
+C	Jd	ʝ̇ curved	i	opposed to the straight dotted stroke for s
+C	Ik	|̈	k
+C	L	L	l	table 091 left, line 2
+C	B3	bar 3 dots	m
+C	B2	bar 2 dots	n
+C	C2	: large dot over small dot	o
+C	E	!	p
+C	#̇	dotted #	q
+C	Q	?	r
+C	Id	straight dotted stroke	s
+C	T	†	t
+C	B1	bar 1 dot	u
+C	O	Ω	v
+C	✗	X cross	x	table 091 left, line 3 (order of x y z æ ø assumed)
+C	Gy	ʃ̈	y
+C	7̇	dotted hook like 7	z
+C	4̈	4 with two dots	æ	variant of ✱
+C	‼̣	‼ over a large dot	ø
+D	∿ / ɲ	two linked chevrons	aa	frequent ligature; sometimes ad/da/ed/de by sense
+D	✗	X cross	x	Exempel, Sextende, strax; in places f (fem, Fuld)
+D	•|•	stroke between two opposed dots	c	Christus, Ischarioth
+D	ʃ barred	barred long hook	q	Qvinden, Qvægsølv
+D	#	hash	tt	dette; sometimes st
+D	B4	bar under 4 dots	nn
+D	B5/B6	bar under 5-6 dots	mm	sammen, Spidskommen
+D	ɔ	closed loop	j	gjør, Jesus, Jomfru
+D	‼ / ‥	double points	ø
+D	∩̲	loop on a bar	v	variant of Ω
+D	ʃ looped	long hook looped like 8 or 9	g
+D	ν closed	ν closed like 4	d
