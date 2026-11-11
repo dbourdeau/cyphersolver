@@ -10,9 +10,11 @@ const { chromium } = require('playwright'); const fs = require('fs');
   const a = p.locator('.mi_inv_searchresults a.mi_hyperlink').filter({ hasText: new RegExp('^\\s*' + uid.replace('.', '\\.') + '\\s') }).first();
   await a.click().catch(e => console.log('item not found')); await p.waitForTimeout(6000);
   await p.locator('img.mi_stripthumb_img').first().click().catch(e => console.log('no thumbs')); await p.waitForTimeout(6000);
-  const total = await p.evaluate(() => { const m = document.body.innerText.match(/Bestand\s*\/\s*(\d+)/); return m ? parseInt(m[1]) : 0; }); console.log('pages', total);
+  let fr = null, total = 0;
+  for (const f of p.frames()) { const m = await f.evaluate(() => { const m = document.body ? document.body.innerText.match(/\/\s*(\d+)/) : null; return m && document.querySelector('input') ? parseInt(m[1]) : 0; }).catch(() => 0); if (m) { fr = f; total = m; } }
+  console.log('pages', total, fr ? fr.url().slice(0, 120) : 'no frame');
   for (let i = first; i <= Math.min(last, total); i += step) {
-    if (i > 1) { const inp = p.locator('input').filter({ visible: true }).first(); await inp.fill(String(i)); await inp.press('Enter'); await p.waitForTimeout(1500); await p.waitForLoadState('networkidle').catch(() => {}); await p.waitForTimeout(2500); }
+    if (i > 1) { const inp = fr.locator('input').first(); await inp.fill(String(i)); await inp.press('Enter'); await p.waitForTimeout(1500); await p.waitForLoadState('networkidle').catch(() => {}); await p.waitForTimeout(2500); }
     await p.screenshot({ path: `${out}/p${String(i).padStart(4, '0')}.png`, clip: { x: 70, y: 100, width: 1245, height: 1700 } });
   }
   await b.close();
