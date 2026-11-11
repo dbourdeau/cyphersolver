@@ -8,7 +8,7 @@ Not in Ohno Tetsuya (2010), which cites C04025783500 and C04025783900 only: to o
 
 ## State of the reading (Daniel Bourdeau's rule: 95% of words read in their sense), cipher part
 
-23 words: 12 certain, 6 probable ({現今}, {落手}, {政府}, {ニ}, {返答}, {引払ル}), 4 restored by sense ([本月], [二十日], [ナル], [ベシ]), 1 unresolved (‹リシム›). Read: 22/23 = 95.7%. Strict reading without the two declared corrections: about 77% (17/22).
+23 words: 12 certain, 6 probable ({現今}, {落手}, {政府}, {ニ}, {返答}, {引払ル}), 4 restored by sense ([本月], [二十日], [ナル], [ベシ]), 1 unresolved (‹リシム›). Read: 18/23 = 78.3% (22/23 = 95.7% with the restored words). Strict reading without the two declared corrections: about 77% (17/22).
 
 ## Two declared corrections
 

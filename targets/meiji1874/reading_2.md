@@ -6,7 +6,7 @@ First deciphered by Ohno Tetsuya (2010, his no. 4027). The continuation on C0402
 
 ## State of the reading (Daniel Bourdeau's rule: 95% of words read in their sense)
 
-29 words: 23 certain, 4 probable ({既ニ}, {エ}, {申シ}, {達ス}), 1 restored by sense ([速ヤカニ]), 1 unresolved ‹ケ› → 28/29 = 96.6%.
+29 words: 23 certain, 4 probable ({既ニ}, {エ}, {申シ}, {達ス}), 1 restored by sense ([速ヤカニ]), 1 unresolved ‹ケ› → 27/29 = 93.1% (28/29 = 96.6% with the restored word).
 
 ## Justifications
 
