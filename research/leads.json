@@ -1090,7 +1090,7 @@
    "access": "archive",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "TNA Discovery opened in Chrome: SP 84/161/66, 'Folio 169: Letter in cipher (or shorthand.)', [1656] July 18, not digitised. The catalogue itself cannot say cipher or shorthand, and no writer or addressee is given. Thurloe vol. 5 July 1656 snippets show no Hague letter of 18 July, but those pages were not read through. Needs a TNA copy or State Papers Online (Gale, blocked)."
+   "vetting_note": "Leaf not seen, and cipher versus shorthand is undecided by the catalogue itself. discovery.nationalarchives.gov.uk retested from the cloud on 11 Nov 2026: curl gets HTTP 202 with an empty body, headless Chromium loads the record: SP 84/161/66, 'Folio 169: Letter in cipher (or shorthand.)', [1656] July 18, 'This record has not been digitised'. No writer or addressee. Needs a TNA copy of f. 169 or State Papers Online (Gale, not tried: subscription)."
   },
   {
    "id": 882,
@@ -7191,7 +7191,7 @@
    "verify": "View the table and the letters of the first months.",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "No ciphertext established: re-read Calames Calames-20240304154016920236 (curl 200): Chantilly Ms 1905, 355 ff., letters 25 Sep 1697 to 28 Dec 1698 'avec une table de déchiffrement et des pièces relatives à l'armée de Catalogne'; no enciphered letter itemised, no image link. Two web searches (Chantilly Ms 1905 digitisation; Vendôme Catalogne 1697-98 lettres chiffrées Campistron) found no digital copy or decipherment. Needs the volume viewed at Chantilly."
+   "vetting_note": "No ciphertext established: the notice only names 'une table de déchiffrement' in Chantilly Ms 1905 and itemises no enciphered letter. calames.abes.fr retested from the cloud on 11 Nov 2026: connection reset (curl exit 35) on the notice URL, so nothing new could be read. Needs the volume viewed at Chantilly."
   },
   {
    "id": 1180,
@@ -8783,7 +8783,27 @@
    "seen": "catalogue",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Cluster of ~24 folios (Staatsarchiv Zurich E II 399/400). Printed analysis exists: Usteri, Ueber Chiffrierung in frueherer Zeit ... Breitingers Geheimschrift ... Peblis, Zuercher Taschenbuch 80 (1960) pp.11-28 (e-periodica pid zut-001:1960:80::23, digitised, TOC confirmed) but its text is not readable by script. needs Chrome: https://www.e-periodica.ch/cntmng?pid=zut-001:1960:80::259 (returns a 'Verification required' page to curl). Read Usteri for key/readings before any verdict; likely prior art."
+   "vetting": {
+    "date": "2026-11-11",
+    "by": "claude cloud vetting 11 Nov 02",
+    "seen": {
+     "kind": "not online",
+     "where": "Leaves not seen (Staatsarchiv Zürich E II 399/400 are not digitised; catalogue records ID=324948 and 324946 answer). Seen instead: Usteri, 'Ueber Chiffrierung in frueherer Zeit, im besonderen ueber Breitingers Geheimschrift', Zuercher Taschenbuch 80 (1960) pp. 11-28, pp. 14-22 read as page images through the e-periodica viewer's IIIF (https://www.e-periodica.ch/digbib/view?pid=zut-001:1960:80::259; the PDF route still shows 'Verification required', not used)",
+     "extent": "Usteri p. 15 lists the same folios as the lead: second cipher in E II 399 fol. 128, 250, 287, 307, 360 and E II 400 fol. 8, 46, 76, 103, 122, 126, 278, 287, 295, 300, 305, 312, 329, 335, 337, 348; first cipher only in E II 399 fol. 105, 130, 137",
+     "cipher": "Per Usteri p. 15: two systems, one of letters only (four-letter groups with a shift by position), one of 'Buchstaben, Zeichen und Zahlen' with nulls (b d f h k m n p r t w y) and a nomenclator of nine three-digit numbers between points ('.235.' = Oxenstierna); Latin plaintext, mostly Peblis to Breitinger, 'der meist, aber nicht immer, die Aufloesung in Klarschrift an den Rand oder auf ein besonderes Blatt geschrieben hat'"
+    },
+    "prior_art": {
+     "decode": "not searched on de-crypt.org: settled by the printed study",
+     "tomokiyo": "not searched: settled by Usteri 1960",
+     "lasry": "not searched: settled by Usteri 1960",
+     "edition": "Usteri 1960 (Zuercher Taschenbuch 80, pp. 11-28): pp. 15-16 report the decipherment of the first cipher from the passage 'hoc in ipsius fore preiudicium' and give its alphabet, null list and nomenclator (Tabellen I-III); pp. 20-21 print deciphered passages of the second cipher ('Nostris interim diligenter cavendum est ne quid precipitanter faciam ...') with translation, noting a few groups that 'trotzen einer sicheren Aufloesung'",
+     "literature": "P. Schweizer, Geschichte der Schweizerischen Neutralitaet (1895) pp. 233-236, cited by Usteri p. 14-15 as the first notice of the secret correspondence and of Frau von Peblis keeping the key"
+    },
+    "key_check": "Both keys are reconstructed and printed by Usteri (Tabellen I-III); not re-tested here because no leaf is online",
+    "duplicates": "known.py 'Breitinger' 'Peblis' 'E II 399': only this lead's own row and sweep",
+    "verdict": "partly_read",
+    "closed": "Printed decipherment and keys: Usteri, Zuercher Taschenbuch 80 (1960) pp. 15-22 solves both of Peblis's ciphers for exactly these folios of E II 399/400, prints the alphabet, nulls and nomenclator and deciphered passages, and states that Breitinger wrote the plaintext in the margin or on a separate sheet for most letters; only a few garbled groups are left unresolved."
+   }
   },
   {
    "id": 1246,
@@ -10615,7 +10635,7 @@
    "prior_art": "not verified: inventory page host (bibliotheques-numeriques.defense.gouv.fr) not opened; web search only",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Inventory notice (Ministere des Armees, doc 2bc715e2) unreachable by script and no ciphertext seen. Prior art confirmed this pass: Pusch, 'Kerlerec's Cipher: the Code Book of Louisiana's Last French Governor', Louisiana History 49 (2008), reconstructs a decoding method for Kerlerec's coded letters 1752-63 (Scribd copy exists, not opened), so a reading of these 1758-59 despatches may already exist. Needs that article opened and the despatches located (Chrome/ANOM or defense.gouv.fr)."
+   "vetting_note": "Despatches not located and no ciphertext seen; Pusch, 'Kerlérec's Cipher', Louisiana History 49 (2008) not opened. Retested from the cloud on 11 Nov 2026: bibliotheques-numeriques.defense.gouv.fr resets the connection (curl exit 35), the Wayback Machine did not answer for that URL, jstor.org/stable/4234315 returns a 3 kB script shell, scribd search likewise; one web search for the Pusch article found only a Maggs listing of a Kerlérec cipher despatch. Needs the inventory notice (cote) and Pusch's article before any verdict."
   },
   {
    "id": 1300,
@@ -11703,7 +11723,7 @@
    "ark": "",
    "scored": "sweep",
    "access": "online",
-   "vetting_note": "needs a login-free route to Abhilekh Patal, which refuses Chrome too: on 6 Nov 2026 Claude in Chrome got a CloudFront '403 ERROR, The request could not be satisfied. Request blocked' on https://www.abhilekh-patal.in/ (home page), on the item URL https://www.abhilekh-patal.in/Category/ItemDetails/ItemDetails?itemId=9836e528-4a2d-4550-ab76-f6675b016b47 and on the jspui handle host https://abhilekh-patal.in/jspui/handle/123456789/4441902, so the block is on the host (not a login wall or CAPTCHA, nothing clicked) and no leaf could be seen. Web search (Mandalay Italy cipher telegrams 1879 Thibaw Genoa) found only background on the 1879 residency withdrawal, nothing on the telegrams or a decipherment. Ciphertext copying into the file is still not shown by the titles. Unblock: Abhilekh Patal access from a network the portal accepts (or a free reader account, which the brief forbids creating)."
+   "vetting_note": "Ciphertext still not shown: the three NAI items are 2-3 pages each and their titles are about the watch on the traffic ('Steps taken to decipher certain telegrams which have passed between Italy and Mandalay', Progs. Nov 1879 Nos. 233-34, 3 pp.; 'Cipher Telegrams between Italy and Mandalay', Nos. 276-78, 3 pp.; Notes C-983, 2 pp.: 'Cipher telegrams are passing between Mandalay and Italian and Swiss Agents probably refer to purchase of warlike material. Name of correspondent at Genoa is Durazzo Adorno'). Whether a telegram text is copied into the file is unknown. Abhilekh Patal retested from the cloud on 11 Nov 2026: curl with a browser User-Agent now gets the item page (HTTP 200, metadata only); the page images need a login, and headless Chromium got an AWS WAF 'Let's confirm you are human' CAPTCHA (not clicked), so no leaf was seen."
   },
   {
    "id": 1355,
@@ -11876,7 +11896,7 @@
    "ark": "",
    "scored": "sweep",
    "access": "online",
-   "vetting_note": "needs Chrome or another network: Abhilekh Patal item f5873b0c (Home Public 3 Jan 1812 No. 86) blocked at host. Title 'Undeciphered documents' most likely means illegible; no ciphertext shown by the description, so no basis for open."
+   "vetting_note": "No basis for cipher: NAI Home Public 3 Jan 1812 No. 86 is titled 'Undeciphered documents from early 19th century consultations' (3 pp., OCR keywords names only), which reads as an archivist's label for illegible papers. Abhilekh Patal retested from the cloud on 11 Nov 2026: curl with a browser User-Agent now gets the item page (HTTP 200, metadata only); the page images need a login, and headless Chromium got an AWS WAF 'Let's confirm you are human' CAPTCHA (not clicked), so no leaf was seen."
   },
   {
    "id": 1359,
@@ -12045,7 +12065,7 @@
    "ark": "",
    "scored": "sweep",
    "access": "online",
-   "vetting_note": "needs Chrome: https://www.abhilekh-patal.in/Category/ItemDetails/ItemDetails?itemId=be64f39e-da67-462c-a7ef-600490851022 ; Abhilekh Patal page images need a login, no account may be created (curl returns HTTP 202 with an empty body (bot shell)). known.py on the shelfmark found only this lead's own row. Web searches (Forrest Foreign Dept Selections 1772-85, 1777 Cypher Code Book, Elphinstone/Simon's Bay 1796) found no decipherment, but the title/OCR keyword 'cypher' alone does not show ciphertext exists in 'NAI, Foreign Department, Secret Consultations, 9 June 1788, No. 1'."
+   "vetting_note": "Ciphertext not shown: NAI Foreign Secret Cons. 9 June 1788 No. 1, 'Letter to the Fort st. George Dated 18 May and Recd 7 June', 3 pp., has only the OCR keyword 'Cypher'; a mention of a cypher is the likelier reading. Abhilekh Patal retested from the cloud on 11 Nov 2026: curl with a browser User-Agent now gets the item page (HTTP 200, metadata only); the page images need a login, and headless Chromium got an AWS WAF 'Let's confirm you are human' CAPTCHA (not clicked), so no leaf was seen."
   },
   {
    "id": 1363,
@@ -12214,7 +12234,7 @@
    "ark": "",
    "scored": "sweep",
    "access": "online",
-   "vetting_note": "needs Chrome: https://www.abhilekh-patal.in/Category/ItemDetails/ItemDetails?itemId=fa871cdf-6f23-4c96-b155-e4ea6bb88cf3 ; Abhilekh Patal page images need a login, no account may be created (curl returns HTTP 202 with an empty body (bot shell)). known.py on the shelfmark found only this lead's own row. Web searches (Forrest Foreign Dept Selections 1772-85, 1777 Cypher Code Book, Elphinstone/Simon's Bay 1796) found no decipherment, but the title/OCR keyword 'cypher' alone does not show ciphertext exists in 'NAI, Foreign Department, Secret Consultations, 1 February 1808, No. 2'."
+   "vetting_note": "Ciphertext not shown: NAI Foreign Secret Cons. 1 February 1808 No. 2, 'Letter to the Secy. Prince of Wales Island dated 13 December and Recd 1 February', 4 pp., has only the OCR keyword 'Cypher'. Abhilekh Patal retested from the cloud on 11 Nov 2026: curl with a browser User-Agent now gets the item page (HTTP 200, metadata only); the page images need a login, and headless Chromium got an AWS WAF 'Let's confirm you are human' CAPTCHA (not clicked), so no leaf was seen."
   },
   {
    "id": 1367,
@@ -12383,7 +12403,7 @@
    "ark": "",
    "scored": "sweep",
    "access": "online",
-   "vetting_note": "needs Chrome: https://www.abhilekh-patal.in/Category/ItemDetails/ItemDetails?itemId=3505b7f4-2c51-44ce-be91-138fa181b968 ; Abhilekh Patal page images need a login, no account may be created (curl returns HTTP 202 with an empty body (bot shell)). known.py on the shelfmark found only this lead's own row. Web searches (Forrest Foreign Dept Selections 1772-85, 1777 Cypher Code Book, Elphinstone/Simon's Bay 1796) found no decipherment, but the title/OCR keyword 'cypher' alone does not show ciphertext exists in 'NAI, Foreign Department, Persian Letters Received, No. 327 (issued 22 February 1808)'."
+   "vetting_note": "Ciphertext not shown: NAI Foreign, Persian Letters Received No. 327 (issued 22 Feb 1808), 2 pp.; the title is garbled machine text ('The circle of the car s hand is overwhelmed ...') and the keywords 'Deciphe', 'Broken' are OCR words, so nothing says the letter is enciphered. Abhilekh Patal retested from the cloud on 11 Nov 2026: curl with a browser User-Agent now gets the item page (HTTP 200, metadata only); the page images need a login, and headless Chromium got an AWS WAF 'Let's confirm you are human' CAPTCHA (not clicked), so no leaf was seen."
   },
   {
    "id": 1371,
@@ -12544,7 +12564,7 @@
    "access_note": "IMH archive system (archivesonline.mh.sinica.edu.tw) needs a reader account; whether this item is imaged online not determined",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Chrome pass 6 Nov 2026 (tc02): the Academia Sinica reader site archivesonline.mh.sinica.edu.tw is unreachable (Chrome error page on https and http, curl exit 35 connection reset); no page images beyond the single public cover thumbnail on catalog.digitalarchives.tw (image.digitalarchives.tw/ImageCache, one image per record; curl gets 404 there, Chrome loads it). Opened records 03-32-436-01-002 (5 pp.), 03-02-032-04-003 (5 pp.) and 03-02-041-01-005 (9 pp.); viewed cover thumbnails ImageCache/00/17/fb/66.jpg (Ministry of Communications letter, Chinese slip, 'inspect Russian-language cipher telegrams') and ImageCache/00/18/0c/ed.jpg (Chinese cursive routing slip on the Yurin/Far Eastern government and Tianjin Russians' foreign-language codes): chancery forms only, no cipher groups. FRUS 1920 (Peking telegram) records that China took the Russian minister's cipher right in Sep 1920: policy, not text. Searches on Yurin/FER/Harbin cipher traffic found no archive study. Unblock: reader-site images of the inner pages."
+   "vetting_note": "Inner pages still unseen, so no cipher groups established (cover slips only, per the 6 Nov Chrome pass). Retested from the cloud on 11 Nov 2026: archivesonline.mh.sinica.edu.tw resets the connection (curl exit 35); catalog.digitalarchives.tw answers (HTTP 200) but carries only the catalogue record and one cover thumbnail. Needs the Academia Sinica reader-site images."
   },
   {
    "id": 1375,
@@ -14088,7 +14108,7 @@
    "prior_art": "open (checked 28 Oct 2026: catalogue only)",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Cloudflare 'Verify you are human' checkbox in Chrome on historicpittsburgh.org and digital.library.pitt.edu; not clicked, user must clear it: https://historicpittsburgh.org/islandora/object/pitt%3A31735064659596. DPLA lists the records but only titles. Pitt's lesson 'Decoding the Homestead Strike' (homesteadstrike.library.pitt.edu PDF, read) uses a transcribed telegram and a decoding book, and search snippets gloss 'small plunge' = Homestead, so a decoding exists for at least July 1892; per-item status is unsettled."
+   "vetting_note": "Per-item state unsettled: Pitt's own lesson decodes at least the July 1892 Homestead telegrams with a code book, and the 19 items could not be opened. Retested from the cloud on 11 Nov 2026: historicpittsburgh.org and digital.library.pitt.edu return a 1.8 kB CAPTCHA page to curl (HTTP 200), dp.la returns 202 empty and api.dp.la 403. Needs the user's Chrome past the 'Verify you are human' check to read the item descriptions and any attached decodings."
   },
   {
    "id": 1427,
@@ -14878,7 +14898,27 @@
    "prior_art": "open (checked 28 Oct 2026: web search, Cipherbrain/Schmeh blog, catalogue description; no decipherment found)",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Cipher versus Shaker spirit script still unresolved, and the leaves are no longer reachable by script. This pass: iiif.quartexcollections.com manifest a1c5092e-... and digitalcollections.winterthur.org now return 403 even with a Referer header (needs Chrome: https://digitalcollections.winterthur.org/documents/detail/2310); the Winterthur page itself gives only the title (no 'code' wording); the ArchivesSpace item ASC 876 (winterthur.libraryhost.com archival_objects/69, dated 1830) describes a Shaker hymnal in letteral notation, and its 'Index - ASC 876' (Google Drive) is dead (404). Searches found that Era of Manifestations material contains 'spirit writing' characters and unknown-tongue songs (Andrews; ACSQ 2007.07 p.117 read, no mention of Buckingham or any code), with no source calling Buckingham's glyph lines a cipher and none deciphering them. The glyph lines on images 35 and 44 therefore match spirit script as well as a private substitution. Unblock: Chrome look at the leaves, and Patterson or Heavenly Visions on the characters."
+   "vetting": {
+    "date": "2026-11-11",
+    "by": "claude cloud vetting 11 Nov 02",
+    "seen": {
+     "kind": "scan",
+     "where": "https://digitalcollections.winterthur.org/documents/detail/2310 (answers from the cloud on 11 Nov; IIIF manifest iiif.quartexcollections.com/winterthur/iiif/a1c5092e-ccc6-4366-8cca-f993ddb54002/manifest with a Referer header); all 54 images viewed on contact sheets, images 32, 35 and 44 opened at 1300 px and a 3000 px-wide region of image 44",
+     "extent": "image 35 (876_037): 8 lines of signs under a longhand hymn; image 44 (876_046): 4 lines of signs set as the words under four staves of music; 2-4 sign groups at the end of about ten hymns (e.g. images 26, 31, 32, 33, 36, 38, 39)",
+     "cipher": "The signs are stenographic outlines, not cipher letters: joined geometric strokes, hooks, loops and detached vowel dots, one outline per word (6-9 outlines per verse line, spaced as words under the notes on image 44), and the last word on image 44 is finished in longhand ('savior'). The end-of-hymn marks are 2-4 such outlines where other hymns carry a longhand author name. No longhand transcription is written beside the two hymns."
+    },
+    "prior_art": {
+     "decode": "de-crypt.org RecordsList not searched for this item (an American Shaker hymnal of 1830 is outside its holdings); known.py 'Buckingham' 'ASC 876' 'Winterthur' gave only this lead's sweep row",
+     "tomokiyo": "cryptiana has no Shaker or Buckingham page; not relevant to shorthand",
+     "lasry": "no Lasry paper concerns Shaker manuscripts",
+     "edition": "Winterthur's record (ASC 876, Andrews Shaker Collection) says 'Two hymns are written in code, and something (a name?) is written in code at the end of some hymns' and gives no transcription",
+     "literature": "earlier passes found no study that reads Buckingham's two hymns; not searched again here because the leaves settle the system"
+    },
+    "key_check": "none tried: the writing is a shorthand system (to be identified among early American systems, e.g. Taylor or Gould derivatives), not a cipher with a key",
+    "duplicates": "known.py on Buckingham, ASC 876 and Winterthur: only this lead and its sweep row",
+    "verdict": "not_cipher",
+    "closed": "Shorthand, seen on the leaves: images 35 and 44 of Winterthur ASC 876 show two hymn texts in stenographic word outlines (joined strokes, loops, vowel dots, one outline per word; last word of image 44 completed in longhand 'savior'), and the 'code' signatures are the same shorthand. The catalogue's 'code' is shorthand, unread but not a cipher."
+   }
   },
   {
    "id": 1444,
@@ -17498,7 +17538,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "Re-checked 9 Nov 2026: archiveshub.jisc.ac.uk returns the Cloudflare 'Just a moment' page to curl, and library.soas.ac.uk was unreachable in the earlier pass. Only snippets exist (PP MS 1/EPRE/1/56/284 'Telegram in code. No translation'); most other telegrams are catalogued with their gist, so a commercial code is likely and no ciphertext leaf is seen. Needs the SOAS catalogue entries or the items."
+   "vetting_note": "No ciphertext leaf seen and the catalogue entries could not be re-read. Retested from the cloud on 11 Nov 2026: archiveshub.jisc.ac.uk returns the Cloudflare 'Just a moment' page (HTTP 403), archives.soas.ac.uk CalmView returns 202 with an empty body, library.soas.ac.uk resets, digital.soas.ac.uk 403. Earlier snippets ('Telegram in code. No translation', PP MS 1/EPRE/1/56/284) point to a commercial code. Needs the SOAS entries or the items."
   },
   {
    "id": 1617,
@@ -26106,7 +26146,7 @@
    "access_note": "description on fgurgia.ru (RGIA KAISA, open, no login); whether scans exist was not checked",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "blocked at the network level, not a bot check: https://fgurgia.ru/object/4787371 shows a Chrome error page (\"Frame with ID 0 is showing error page\", 3 Nov 2026), curl gives connection reset, rgia.su resets too, and the Wayback Machine holds no copy of this object. Record text and scans not seen. Only the sweep title \"ciphered telegrams\" (Timiryazev, Ф. 23 Оп. 31 Д. 27, date queried 1893) is known, so ciphertext is unshown. Needs another network (the 2 Nov sweep reached fgurgia.ru by script)."
+   "vetting_note": "Needs a scan: description only. fgurgia.ru retested from the cloud on 11 Nov 2026 and now answers (headless Chromium; curl gets the page frame only): РГИА Ф. 23 Оп. 31 Д. 27, 'Шифрованные телеграммы В. И. Тимирязева министру финансов', 1893 ?, 4 leaves, no scan attached. Whether the 4 leaves carry cipher groups or the chancery's decipherment is not stated, so ciphertext is unshown (same state as RGIA leads 1857-1866)."
   },
   {
    "id": 1870,
@@ -26293,7 +26333,7 @@
    "access_note": "description on fgurgia.ru (RGIA KAISA, open, no login); whether scans exist was not checked",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "blocked at the network level, not a bot check: https://fgurgia.ru/object/2428872694 shows a Chrome error page (\"Frame with ID 0 is showing error page\", 3 Nov 2026), curl gives connection reset, rgia.su resets too, and the Wayback Machine holds no copy of this object. Record text and scans not seen. Only the sweep title (Ф. 472 Оп. 67 Д. 640, \"telegrams set 640\") is known; this row's title does not itself say ciphered. Needs another network (the 2 Nov sweep reached fgurgia.ru by script)."
+   "vetting_note": "Needs a scan: bundle-level description only. fgurgia.ru retested from the cloud on 11 Nov 2026 and now answers (headless Chromium): РГИА Ф. 472 Оп. 67 Д. 640, 'Комплекты телеграмм членов дома Романовых и других, передававшихся главным управлением почт и телеграфов в Чрезвычайную следственную комиссию. Телеграммы разных лиц на высочайшее имя, изъяты Одесской центральной телеграфной конторы ... (большинство не расшифрованы). 1 связка', 1916-1917, no scan. 'Mostly not deciphered' may mean cipher telegrams or untranscribed telegraph tape; one bundle, no identifiable cipher document."
   },
   {
    "id": 1874,
@@ -26437,7 +26477,7 @@
    "access_note": "description on fgurgia.ru (RGIA KAISA, open, no login); whether scans exist was not checked",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "blocked at the network level, not a bot check: https://fgurgia.ru/object/2482789692 shows a Chrome error page (\"Frame with ID 0 is showing error page\", 3 Nov 2026), curl gives connection reset, rgia.su resets too, and the Wayback Machine holds no copy of this object. Record text and scans not seen. Only the sweep title (Ф. 472 Оп. 60 Д. 1977, Tashkent telegrams 1900) is known, so ciphertext is unshown. Needs another network (the 2 Nov sweep reached fgurgia.ru by script)."
+   "vetting_note": "Needs a scan: description only. fgurgia.ru retested from the cloud on 11 Nov 2026 and now answers (headless Chromium): РГИА Ф. 472 Оп. 60 Д. 1977, 'Канцелярия Министерства императорского двора. Шифрованные телеграммы из Ташкента по разным городам, на имя министра императорского двора', 1900, no leaf count, no scan. Whether cipher groups or decipherments are filed is not stated."
   },
   {
    "id": 1878,
@@ -27249,50 +27289,6 @@
     "verdict": "read",
     "closed": "Contemporary clear texts are on record for all four, seen in the Vestigia records on 11 Nov 2026: DF 295143 has DF 295143-a (Vestigia 2092, 'Nicolò Bartolini rejtjelezett levelének feloldása', 3 pp. of clear Italian opening 'Le vostre Excellentie farano deciferare more solito', image viewed); DF 295070 has the copy and extract Vestigia 591 and 592 (ms. 4936 nos. 73-74); DF 295073 has the clear copy DF 295073-a (Vestigia 2021) and Labancz no. 45; DF 295273 has the clear copy Vestigia 800 (ms. 4936 (1492) no. 62, image viewed, opens 'Ho receputo le littere'). DF 295070 and 295073 are also siblings already listed in targets/buda1489 (DECODE R1146, R1147). Whether each clear text covers every ciphered line was not collated."
    }
-  },
-  {
-   "id": 1897,
-   "counted": true,
-   "year": 1492,
-   "date": "18 Oct 1492 (DF 295776); others 15th c., undated",
-   "title": "Unidentified ciphered letters addressed to Maffeo da Treviglio, Buda 1492",
-   "correspondents": "unknown to Maffeo da Treviglio",
-   "place": "Buda (DF 295776); others sine loco",
-   "language": "Italian",
-   "region": "Central Europe",
-   "period": "15th century",
-   "shelfmark": "MNL OL X 10889, DF 295774, 295775, 295776",
-   "folio_note": "three records titled \"Rejtjelezett levél Maffeo da Treviglio részére\"; 295774 starts \"Nuperrime qua son stati rotti\"",
-   "cls": "C",
-   "status": "MNL: three ciphered letters, sender \"nincs adat\" (none given), subject titkosírás. Sender and date not established for 295774-75. known.py: no DF hit; the Maffeo letters on DECODE (R1146-R1158) are in targets/buda1489 and may include these under other numbers.",
-   "why": "Incoming cipher to Maffeo, the other side of the Milan-Hungary correspondence.",
-   "importance": 2,
-   "solvability": 3,
-   "difficulty": 3,
-   "score_note": "Scored from the archive description during the Nov 2026 Hungary/Czech sweep (research/sweep_2026-11_hungary_czech/); not viewed",
-   "verify": "Check against the buda1489 table of DECODE records before opening any image; they may be the same leaves.",
-   "links": [
-    {
-     "label": "DF 295774",
-     "href": "https://www.archivesportaleurope.net/advanced-search/search-in-archives/results-(archives)/?repositoryCode=HU-1&levelName=clevel&t=hg&recordId=11297&c=C1137513312"
-    },
-    {
-     "label": "DF 295775",
-     "href": "https://www.archivesportaleurope.net/advanced-search/search-in-archives/results-(archives)/?repositoryCode=HU-1&levelName=clevel&t=hg&recordId=11297&c=C1137513313"
-    },
-    {
-     "label": "DF 295776",
-     "href": "https://www.archivesportaleurope.net/advanced-search/search-in-archives/results-(archives)/?repositoryCode=HU-1&levelName=clevel&t=hg&recordId=11297&c=C1137513314"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "Hungary/Czech sweep, MNL OL via Archives Portal Europe",
-   "prior_art": "open as far as checked (2 Nov 2026: known.py on the names and the DF/P/R numbers, no hits; no web search by instruction: Tomokiyo, Lasry, the DECODE site search, editions and literature NOT searched)",
-   "needs_archive_scan": "no",
-   "access_note": "MNL OL photo collection (DF); the record carries a digital object, not opened; no login seen on the Archives Portal Europe record",
-   "ark": "",
-   "scored": "sweep",
-   "vetting_note": "Leaves unseen (Cloudflare on Archives Portal Europe, vestigia.hu 500 earlier). known.py 295774/295775/295776: only this lead and sweep rows. Overlap with DECODE R1146-R1158 (targets/buda1489) unsettled without Vestigia's archive_ref. needs Chrome: archivesportaleurope.net DF 295774-295776 or vestigia.hu."
   },
   {
    "id": 1898,
@@ -30712,7 +30708,7 @@
    "decode_ids": [],
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Gilder Lehrman GLC00537 scan is behind login/order (WebFetch 403, 9 Nov 2026); preview too dim. Searches on the Ingalls-Nesmith story (chinookjargon.com posts incl. Harrisburg Patriot 1882 retelling) describe a Chinook Jargon telegram, with no original text and no mention of this letter, so it may be Chinook, not cipher. Needs the scan (Chrome with Gilder Lehrman login, or a PDF order); not_cipher/open cannot be judged without it."
+   "vetting_note": "Scan still unseen, so Chinook Jargon versus cipher cannot be judged. gilderlehrman.org retested from the cloud on 11 Nov 2026: Cloudflare 'Just a moment' page (HTTP 403) on https://www.gilderlehrman.org/collection/glc00537; the Wayback Machine did not answer for it. Needs the GLC00537 image (Gilder Lehrman login or order)."
   },
   {
    "id": 2051,
@@ -31230,7 +31226,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "Possible printed text, to compare before any verdict. Chrome read ArchiveGrid 270477885: \"Autograph signature to letter (much of which is in cipher) : Marchaux, to the Bishop d'Angouleme, ambassador to the Vatican, 1558 Aug. 13\", 5 1/4 pages. Ribier II is complete on archive.org as bub_gb_qWTswSr32NYC (earlier note was wrong to call it partial): pp. 768-769 (leaf n735 image seen for p. 768; the close on p. 769 read from OCR) print \"Le Roy a M. l'Evesq. d'Angoulesme Ambassadeur a Rome\", on the Caraffa nephews, closing \"14. Aoust\" (1558), from the minute. One day off the Morgan date, same addressee: same letter or next-day sibling, undecided without the Morgan leaf. Morgan page blocked by a Cloudflare \"Verify you are human\" checkbox (themorgan.org), not clicked. If same, verdict is read (Ribier). Cryptiana henryii.htm lists only Babou to the King 11 Jun 1558 (BnF fr.3138 f.32, cipher with decipherment), which gives a key route."
+   "vetting_note": "Morgan leaf still unseen, so it is undecided whether the letter of 13 Aug 1558 is the one Ribier II pp. 768-769 prints from the minute (dated 14 Aug). Retested from the cloud on 11 Nov 2026: themorgan.org and corsair.themorgan.org return a Cloudflare challenge (HTTP 403), researchworks.oclc.org/archivegrid 403 with a CAPTCHA page. Needs the Morgan image or record text to compare with Ribier; if the same, the verdict is read."
   },
   {
    "id": 2072,
@@ -32578,7 +32574,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "Retried 6 Nov: Akkerman, Correspondence of Elizabeth Stuart II (OUP 2011) is not on archive.org (advancedsearch 0 hits), Google Books API 429 (quota), Morgan record 403 to WebFetch. Web search confirms vol. II prints 7 ciphers deciphered for the first time with a keys appendix, so the 6 Feb 1635 item may be printed deciphered; the Morgan letter itself is unseen. known.py 'Elizabeth of Bohemia': catalogue Craven entry and TNA SP leads only, no duplicate. Unblock: Akkerman vol. II at 6 Feb 1635 (or its Morgan letter list) via library or Google Books page view."
+   "vetting_note": "Akkerman, Correspondence of Elizabeth Stuart II (OUP 2011) not opened at 6 Feb 1635, and it prints deciphered letters with a key appendix, so prior art is unanswered. Retested from the cloud on 11 Nov 2026: Google Books API and books.google.com return 429, archive.org has no copy (advancedsearch run again), themorgan.org 403 Cloudflare, ArchiveGrid 403 CAPTCHA. Needs Akkerman vol. II (library copy) or the Morgan leaf."
   },
   {
    "id": 2123,
@@ -34464,7 +34460,7 @@
    "access_note": "no digitisation listed",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Blocker stands. Third pass (6 Nov): Handschriftenportal HSP-2e408439 re-read via /api/tei (Gebet- und Andachtsbuch, Magdeburg, 1501-1510, 266+I Bl., Latin and German; no digitisation link, no description text of ff.264r-265r beyond the catalogue's hedged 'Geheimschrift (?)' beside pen trials and an alphabet). SBB digital collections is JavaScript-only (needs Chrome: https://digital.staatsbibliothek-berlin.de/suche?queryString=Ms.%20theol.%20lat.%20oct.%20184) and returned an empty shell to curl. WebSearches ('Ms. theol. lat. oct. 184' Gebetbuch Magdeburg Geheimschrift; shelfmark variants) found nothing. The leaves have not been seen, and the library's own wording is hedged, so cipher versus pen trials is unsettled. known.py: only this lead's own sweep."
+   "vetting_note": "Leaves 264r-265r unseen and the catalogue's own wording is hedged ('Geheimschrift (?)'). digital.staatsbibliothek-berlin.de retested from the cloud on 11 Nov 2026 with headless Chromium (the page is JavaScript-only): the search for \"theol. lat. oct. 184\" gives 0 hits and the looser query only full-text hits in printed books, so Ms. theol. lat. oct. 184 is not digitised. Needs images of ff. 264r-265r from the Staatsbibliothek."
   },
   {
    "id": 2177,
@@ -37218,7 +37214,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "Ciphertext still not shown. The BNP record 2168524 (http://id.bnportugal.gov.pt/bib/catbnp/2168524, now loads, 6 Nov 2026) lists 13 maços of the autograph diary 1831-38 and 1842-45 and names n. 13 '[Cifra do diario]', Reservados 'sob autorizacao', nothing digitised and no statement that diary entries are enciphered. The printed edition now identified: 'Diario de Ribeiro Saraiva, 1831-1888' (Imprensa Nacional, Lisbon, vol. 1831-35 of 1915, a 1916 volume, and 1836-1845 of 1917; Google Books ids MaxBAQAAMAAJ and _qtBAQAAMAAJ, viewability 'no pages', so no snippet text; HathiTrust and the Eclectica listing sit behind a Cloudflare 'Just a moment' wall; archive.org holds only his Cartas Conspiradoras 1844 and pamphlets). Three web searches (the 1915 Diario, MSS 169 'Cifra do diario', Saraiva diary cipher) found no study of the diary's cipher. Unblock: needs Chrome for Google Books/HathiTrust full-text search of the 1915-17 volumes for 'cifra' (https://www.google.com/books/edition/_/_qtBAQAAMAAJ?gbpv=1&bsq=cifra), or a BNP scan of n. 13 and a sample year."
+   "vetting_note": "Ciphertext still not shown and the printed Diário (Imprensa Nacional 1915-17) not searched. Retested from the cloud on 11 Nov 2026: id.bnportugal.gov.pt/bib/catbnp/2168524 answers (record only, nothing digitised); Google Books returns 429 on the volume and the API; HathiTrust returns the Cloudflare 'Just a moment' page (403). Needs a full-text search of the 1915-17 volumes for 'cifra' or a BNP scan of MSS. 169 n. 13 and a sample year."
   },
   {
    "id": 2271,
@@ -39264,7 +39260,7 @@
    "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza or document; not flagged as cipher in the MAP inventory; DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap.",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Retry 6 Nov 2026 via Chrome (new tab) and curl: archiviodistatofirenze.cultura.gov.it unreachable. Chrome tab landed on its error page after 2 navigations (MAP filza search page, then riproduzione id=79574; get_page_text said 'Frame is showing error page'), curl exit 35 (connection reset). Leaf could not be re-viewed, so the earlier blocker (Dieci Responsive 118 c.139 plaintext not checked) stands. Unblock: retry when the ASF host answers, or from another network."
+   "vetting_note": "Leaf not re-viewed and the plaintext check against Dieci Responsive 118 c. 139 still not done. archiviodistatofirenze.cultura.gov.it retested from the cloud on 11 Nov 2026: connection reset on https (curl exit 35) and HTTP 503 on http for /map/riproduzione/?id=79574. Retry when the ASF host answers."
   },
   {
    "id": 2352,
@@ -40252,7 +40248,7 @@
    "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza and document; not flagged as cipher in the MAP inventory (vol. 3, archive.org OCR); DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap.",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Retry 6 Nov 2026 via Chrome (new tab) and curl: archiviodistatofirenze.cultura.gov.it unreachable. Chrome tab landed on its error page after 2 navigations (MAP filza search page, then riproduzione id=81858; get_page_text said 'Frame is showing error page'), curl exit 35 (connection reset). Leaf could not be re-viewed, so the earlier blocker (signature/date unread, entry scope undecided) stands. Unblock: retry when the ASF host answers, or from another network."
+   "vetting_note": "Leaf not re-viewed; signature, date and the scope of the entry still unread. archiviodistatofirenze.cultura.gov.it retested from the cloud on 11 Nov 2026: connection reset on https (curl exit 35), HTTP 503 on http, so /map/riproduzione/?id=81858 could not be opened. Retry when the ASF host answers."
   },
   {
    "id": 2386,
@@ -40738,7 +40734,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "Nord cote Musee 205 rests on Tant's list only; archives.lenord.fr unreachable, so neither the item nor its cipher was confirmed (held back by coordinator, 9 Nov 2026); try Chrome on archives.lenord.fr"
+   "vetting_note": "Item not identified in the archive's own finding aids, and the likely edition is unopened. Retested from the cloud on 11 Nov 2026: archives.lenord.fr gives a proxy 502, but archivesdepartementales.lenord.fr answers; its search returns 'Aucun résultat' for \"Musée 205\" and only the printed Série B inventory PDFs for 'instructions Charles Quint élection impériale 1519'. Tant's one line (arcsi.fr/doc/Tant/420.pdf, re-read) is still the only source. Next: find Musée 205's old B cote in the Série B inventory, then open Le Glay, Négociations diplomatiques entre la France et l'Autriche II (1845), which prints the Lille papers on the 1519 election and may give this instruction deciphered."
   },
   {
    "id": 2419,

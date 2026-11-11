@@ -38,6 +38,8 @@ def img(man, i, tw, rgb=False):
         try:
             r = S.get(u, timeout=90)
             if r.status_code == 200: return Image.open(io.BytesIO(r.content)).convert('RGB' if rgb else 'L')
+            if r.status_code == 400:   # narrower than tw: no upscaling on this server
+                u = f'https://lbiiif.riksarkivet.se/arkis!{man}_{i:05d}/full/max/0/default.jpg'; continue
         except Exception: pass
         time.sleep(2)
     return Image.new('L', (tw, int(tw * 0.75)), 255)
@@ -45,6 +47,7 @@ def crop(t):
     """Trim the copy-stand border (same lightness as the paper, different colour): bbox of pixels whose colour
     differs from the corner colour. Returns a greyscale crop."""
     import numpy as np
+    if t.mode != 'RGB': return t
     a = np.asarray(t).astype(int); h, w, _ = a.shape
     bg = np.median(np.concatenate([a[:6].reshape(-1, 3), a[-6:].reshape(-1, 3)]), axis=0)
     m = ((a[:, :, 0] - a[:, :, 2]) - (bg[0] - bg[2])) > 7   # paper is yellower than the stand
