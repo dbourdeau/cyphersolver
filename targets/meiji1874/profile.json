@@ -38,7 +38,7 @@
   },
   {
    "id": "jacar-c04025783500",
-   "read": "read in part",
+   "read": "read",
    "shelfmark": "JACAR C04025783500 frame 1811 + C04025783600 frame 1812 (NIDS, Army Ministry records)",
    "date": "8 November 1874",
    "year": 1874,
@@ -58,7 +58,7 @@
     "source": "no decipherment in the record"
    },
    "length": {
-    "tokens": 101,
+    "tokens": 100,
     "unit": "code groups",
     "measured": true,
     "file": "transcription_2.txt"
@@ -128,17 +128,17 @@
  "conditions": {
   "prior_solution": {
    "exists": "in print",
-   "where": "Ohno Tetsuya 大野哲弥, 「明治7年の陸軍省暗号の制定：佐賀の乱後の陸軍暗号電報利用状況」, 情報化社会・メディア研究 7 (2010) 37-44: describes the cipher and deciphers telegrams 1 (his no. 4031 = C04025783900) and 2 (no. 4027 = C04025783500), not C10071951300. The cipher is also described by Nagata Junko 長田順行, 『西南の役と暗号』 (1989) p. 170, and by Satoshi Tomokiyo, Cryptiana, meijiarmy.htm (2014; table meijiarmy1). Our own check of 28 Oct 2026 (web JA/EN, NDL column, this repository) missed them; Satoshi Tomokiyo pointed them out on 29 Oct and 10 Nov 2026.",
+   "where": "Ohno Tetsuya 大野哲弥, 「明治7年の陸軍省暗号の制定：佐賀の乱後の陸軍暗号電報利用状況」, 情報化社会・メディア研究 7 (2010) 37-44: describes the cipher and deciphers telegrams 1 (his no. 4031 = C04025783900) and 2 (no. 4027 = C04025783500), not C10071951300. The cipher is also described by Nagata Junko 長田順行, 『西南の役と暗号』 (1989) p. 170, and by Satoshi Tomokiyo, Cryptiana, meijiarmy.htm (2014; table meijiarmy1). Our own check of 28 Oct 2026 (web JA/EN, NDL column, this repository) missed them; Satoshi Tomokiyo pointed them out on 29 Oct and 10 Nov 2026. Ohno's reading コレ in telegram 2 row 8 was adopted on 11 Nov 2026, after Satoshi Tomokiyo checked it on the image; the rest of our readings was made without his article.",
    "found": "after reading",
-   "used": false
+   "used": true
   },
   "inputs": [
    "images"
   ],
   "attack": "ciphertext-only",
   "first_date": "2026-10-28",
-  "last_date": "2026-11-10",
-  "human_role": "Brice Dudout chose the documents and set the rules (protocol and key frozen before a held-out check); AI agents transcribed, read, checked and wrote up; doubtful signs were settled by Brice Dudout's targeted visual reviews (shapes only, no plaintext shown). Satoshi Tomokiyo pointed out the prior work (29 Oct and 10 Nov 2026).",
+  "last_date": "2026-11-11",
+  "human_role": "Brice Dudout chose the documents and set the rules (protocol and key frozen before a held-out check); AI agents transcribed, read, checked and wrote up; doubtful signs were settled by Brice Dudout's targeted visual reviews (shapes only, no plaintext shown). Satoshi Tomokiyo pointed out the prior work (29 Oct and 10 Nov 2026) and checked on the image the correction of telegram 2 row 8 (11 Nov 2026).",
   "models": [
    "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
   ]
@@ -161,6 +161,18 @@
    ],
    "what": "Frozen key on held-out telegram 2 (C04025783500, 63 pairs): 0 of 200 permuted control keys reach it (trigram score and lexicon). The key was later found to be already published (Nagata 1989, Ohno 2010, Tomokiyo 2014).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "transcription",
+   "what": "Contributed correction (Brice Dudout, PR #402): telegram 2 row 8 re-transcribed as 15 43 21 55 33 37 67. Satoshi Tomokiyo checked on the image that the signs read as commas are the repetition mark ゝ (5ゝ 3ゝ = 55 33), which gives コレ, Ohno Tetsuya's reading of 2010 (報知之無), in place of the unresolved pair 53 (ケ). Telegram 2 goes from 27/29 to 28/29 words, the target from 65/72 to 66/72. The image was not seen by the project.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "what": "Integration check of PR #402: decryption_2.txt re-derived from transcription_2.txt with key.tsv (55 = コ, 33 = レ; identical); word counts recounted from reading_2.md (24 certain + 4 probable of 29 = 0.966; target 20 + 28 + 18 = 66 of 72 = 0.917); telegram 2 measured at 100 pairs (the profile said 102).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -171,9 +183,9 @@
   "contribution": [
    "transcription"
   ],
-  "fraction_read": 0.903,
+  "fraction_read": 0.917,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Daniel's rule, certain + probable words, restored not counted: telegram 1 20/20, telegram 2 27/29, telegram 3 18/23; 65/72 = 90.3%.",
+  "fraction_read_source": "Daniel's rule, certain + probable words, restored not counted: telegram 1 20/20, telegram 2 28/29 (corrected 11 Nov 2026: コレ), telegram 3 18/23; 66/72 = 91.7%.",
   "first_break": false,
   "verification": [
    "key confirms",
@@ -183,7 +195,7 @@
    {
     "who": "ohno",
     "role": "prior solution",
-    "note": "first decipherment of telegrams 1 (no. 4031 = C04025783900) and 2 (no. 4027 = C04025783500), both in table meijiarmy1, and description of the 1874 army cipher",
+    "note": "first decipherment of telegrams 1 (no. 4031 = C04025783900) and 2 (no. 4027 = C04025783500), both in table meijiarmy1, and description of the 1874 army cipher; his reading コレ in telegram 2 row 8 (報知之無) is adopted here (11 Nov 2026)",
     "date": "2010",
     "source": "大野哲弥, 明治7年の陸軍省暗号の制定, 情報化社会・メディア研究 7 (2010) 37-44"
    },
@@ -209,9 +221,15 @@
    },
    {
     "who": "tomokiyo",
+    "role": "transcription",
+    "note": "corrected the transcription of telegram 2 row 8: checked on the image that the signs we read as commas are ゝ (repetition marks), so 5ゝ 3ゝ = 55 33 = コレ (Ohno's reading), resolving our only unresolved word ‹ケ› (personal communication, 11 Nov 2026)",
+    "date": "2026-11-11"
+   },
+   {
+    "who": "tomokiyo",
     "role": "identification",
-    "note": "deciphered Ohno's no. 4028, in the meijiarmy4 table of 30 Oct 1874; C04025783600 frame 1813 (not read here) is probably that telegram, to be confirmed (personal communication, 10 Nov 2026)",
-    "date": "2026-11-10"
+    "note": "deciphered Ohno's no. 4028, in the meijiarmy4 table of 30 Oct 1874, and confirmed that it is the second page of C04025783600, frame 1813 (not read here; same content as telegram 2) (personal communications, 10 and 11 Nov 2026)",
+    "date": "2026-11-11"
    },
    {
     "who": "tomokiyo",
@@ -258,14 +276,14 @@
     "reading": "reading_2.md",
     "translation": "translation_2.md",
     "language": "ja",
-    "state": "read in part",
-    "summary": "Newspapers report that the China negotiations have broken down, but the government has no word; sure news will follow; give no credence to rumours. 27/29 words certain or probable. First deciphered by Ohno (2010, no. 4027); continuation also read by Satoshi Tomokiyo.",
-    "read_share": 0.931,
+    "state": "read",
+    "summary": "Newspapers report that the China negotiations have broken down, but the government has no word; sure news will follow; give no credence to rumours. 28/29 words certain or probable (row 8 corrected to コレ on 11 Nov 2026, Ohno 2010 checked by Satoshi Tomokiyo). First deciphered by Ohno (2010, no. 4027); continuation also read by Satoshi Tomokiyo.",
+    "read_share": 0.966,
     "reading_review": {
      "grade": "B",
      "by": "Brice Dudout (with Claude)",
-     "date": "2026-10-28",
-     "note": "read as sentences, 27/29 words certain or probable; cursive 2/3 digits settled by plates C02, C03, C09 (Brice Dudout, shapes only); independent re-reading of Ohno 2010 no. 4027"
+     "date": "2026-11-11",
+     "note": "read as sentences, 28/29 words certain or probable; cursive 2/3 digits settled by plates C02, C03, C09 (Brice Dudout, shapes only); independent re-reading of Ohno 2010 no. 4027; row 8 corrected 11 Nov 2026 (コレ: Ohno 2010, checked on the image by Satoshi Tomokiyo)"
     }
    },
    {
@@ -291,7 +309,7 @@
   "provenance": "mixed",
   "gaps": [
    {
-    "item": "telegram 2: pair 53 (ケ) in 報知‹ケ›ナシ gives no word (probably the clerk's slip; no second copy known), and one restored word ([速ヤカニ], a single 6 where 66 is needed)",
+    "item": "telegram 2: one restored word ([速ヤカニ], a single 6 where 66 is needed; no second copy known); the former unresolved pair 53 (‹ケ›) is resolved as 55 33 = コレ (11 Nov 2026)",
     "blocker": "illegible"
    },
    {
@@ -308,8 +326,8 @@
     "label": "Telegrams 1-2 (C04025783900; C04025783500 + C04025783600 frame 1812)",
     "records": "JACAR C04025783900, C04025783500, C04025783600",
     "method": "read with known key",
-    "extent": "partial",
-    "basis": "Key meijiarmy1 already published (Nagata 1989, Ohno 2010, Tomokiyo 2014); both telegrams first deciphered by Ohno (2010, nos. 4031 and 4027); re-read here independently, his work found after reading and not used: telegram 1 20/20, telegram 2 27/29 words."
+    "extent": "complete",
+    "basis": "Key meijiarmy1 already published (Nagata 1989, Ohno 2010, Tomokiyo 2014); both telegrams first deciphered by Ohno (2010, nos. 4031 and 4027); re-read here independently, his work found after reading and used for one word only (コレ in telegram 2, 11 Nov 2026): telegram 1 20/20, telegram 2 28/29 words (row 8 コレ: Ohno 2010, checked on the image by Satoshi Tomokiyo, 11 Nov 2026)."
    },
    {
     "label": "Telegram 3 (C10071951300)",

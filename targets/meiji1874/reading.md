@@ -1,6 +1,6 @@
 # Established text (Japanese, katakana telegram style)
 
-First deciphered by Ohno Tetsuya (2010, his no. 4031). This is an independent re-reading, made before we knew of his article.
+First deciphered by Ohno Tetsuya (2010, his no. 4031). This is an independent re-reading, made before we knew of his article. According to Satoshi Tomokiyo (11 Nov 2026), Ohno reads it as we do, apart from the choice of kanji.
 
 シナダンパン ヘイヲンニ アイスミ、シナセイフヨリ シヤウキンヲ イダス ハヅニ ヤクヂヤウ ナシ{タ}ル ヲモムキ、タダイマ デンポウヲ ヱタリ。
 

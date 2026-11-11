@@ -1,6 +1,6 @@
 # Meiji 1874: three Army telegrams on the end of the Taiwan expedition (Oct-Nov 1874), army 1-7 coordinate square
 
-Status: read in part (Brice Dudout, 28 Oct 2026, credits corrected 10 Nov 2026; 65 of 72 cipher words certain or probable = 90.3%: telegram 1 20/20, telegram 2 27/29, telegram 3 18/23; telegrams 1 and 2 were first deciphered by Ohno Tetsuya in 2010 and are re-read here independently; telegram 3 is not in Ohno and is read here for the first time, to our knowledge).
+Status: read in part (Brice Dudout, 28 Oct 2026, credits corrected 10 Nov 2026; 66 of 72 cipher words certain or probable = 91.7%: telegram 1 20/20, telegram 2 28/29 (corrected 11 Nov 2026), telegram 3 18/23; telegrams 1 and 2 were first deciphered by Ohno Tetsuya in 2010 and are re-read here independently; telegram 3 is not in Ohno and is read here for the first time, to our knowledge).
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents. Not in the catalogue. Published on L'Europe chiffrée, https://bdudout.github.io/europe-chiffree/fr/documents.html#meiji-1874 (credits corrected 10 Nov 2026).
 
@@ -12,7 +12,8 @@ Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents. Not
   - Satoshi Tomokiyo, Cryptiana, https://cryptiana.web.fc2.com/code/meijiarmy.htm (2014), tables "meijiarmy1" to "meijiarmy9". Our key is his "meijiarmy1" (HO = 15).
   We found it independently on 28 Oct 2026 as the a-priori hypothesis of our protocol, before we knew of these works; we do not claim the key.
 - **Telegrams 1 and 2 were first deciphered by Ohno Tetsuya (2010)**: his no. 4031 = JACAR C04025783900 (telegram 1) and no. 4027 = C04025783500 (telegram 2), both in meijiarmy1. Our readings of them are independent re-readings (role here: verification).
-- **Satoshi Tomokiyo** read the continuation of telegram 2 in C04025783600 (frame 1812) with this key (personal communication, 30 Oct 2026) and confirmed two readings in telegram 3. He also deciphered Ohno's no. 4028, enciphered with the "meijiarmy4" table issued on 30 Oct 1874 (communication of 10 Nov 2026). C04025783600 frame 1813, which does not read with meijiarmy1, is probably that no. 4028 (to be confirmed). Frame 1813 is not included here.
+- **Satoshi Tomokiyo** read the continuation of telegram 2 in C04025783600 (frame 1812) with this key (personal communication, 30 Oct 2026) and confirmed two readings in telegram 3. He also deciphered Ohno's no. 4028, enciphered with the "meijiarmy4" table issued on 30 Oct 1874 (communication of 10 Nov 2026). C04025783600 frame 1813 (the second page of that item), which does not read with meijiarmy1, is that no. 4028: confirmed by Satoshi Tomokiyo on 11 Nov 2026. Its content is the same as telegram 2. Frame 1813 is not included here.
+- **Correction of 11 Nov 2026 (telegram 2, row 8).** We read 15 43 21 53 37 67 = ホウチ ‹ケ› ナシ, with one unresolved word. Ohno (2010) reads コレ; Satoshi Tomokiyo checked on the image that the signs we took for commas are ゝ (repetition marks): 5ゝ 3ゝ = 55 33 = コレ, so row 8 is 15 43 21 55 33 37 67 = ホウチ コレ ナシ. Credit: Ohno Tetsuya 2010 (reading), Satoshi Tomokiyo (check on the image and transcription). Minor notes from him, which change nothing here: Ohno's plaintext of no. 4028 is almost the same as our reading of no. 4027; Ohno omits the い of イマダ (まだ) although pair 11 is written and normalises エ to ヘ (政府へ); for no. 4031 (telegram 1) Ohno reads as we do, apart from the choice of kanji.
 - **Telegram 3** (Major Ōnuma, Nagasaki, 22 Oct 1874, JACAR C10071951300) is not in Ohno's article, which cites C04025783500 and C04025783900 only. To our knowledge this is its first reading (read in part).
 - Our own prior-work check of 28 Oct 2026 (web JA/EN, the NDL column on Meiji cipher tables, this repository) found none of this; it was incomplete. Satoshi Tomokiyo pointed out the descriptions of the cipher on 29 Oct 2026 and, having obtained Ohno's article, Ohno's decipherments on 10 Nov 2026. Thanks to him.
 
@@ -21,7 +22,7 @@ Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents. Not
 | telegram | shelfmark | date | first reader | here |
 |---|---|---|---|---|
 | 1 | JACAR C04025783900, frames 1819-1820 | 8 Nov 1874, Army Ministry to a garrison | Ohno 2010 (no. 4031) | re-read, 20/20 words |
-| 2 | JACAR C04025783500 frame 1811 + C04025783600 frame 1812 | 8 Nov 1874, Army Ministry to the garrisons | Ohno 2010 (no. 4027); frame 1812 also read by Tomokiyo | re-read, 27/29 words (read in part) |
+| 2 | JACAR C04025783500 frame 1811 + C04025783600 frame 1812 | 8 Nov 1874, Army Ministry to the garrisons | Ohno 2010 (no. 4027); frame 1812 also read by Tomokiyo | re-read, 28/29 words (read) |
 | 3 | JACAR C10071951300, frames 0712-0713 | 22 Oct 1874, Major Ōnuma, Nagasaki, to Yamagata | (none known) | first reading, 18/23 words (read in part) |
 
 Ministry of Defense, National Institute for Defense Studies, Army Ministry records. No images are included: JACAR images are "All rights reserved".
@@ -39,20 +40,33 @@ Key and transcription frozen (SHA-256) and then applied unchanged to telegram 2 
 ## Readings (Daniel Bourdeau's 95% rule: certain + probable words; restored words not counted)
 
 - Telegram 1 (`reading.md`): 支那談判平穏ニ相済ミ、支那政府ヨリ償金ヲ出ス筈ニ約定成シ{タ}ル趣、唯今電報ヲ得タリ。 20 words: 19 certain, 1 probable = 20/20.
-- Telegram 2 (`reading_2.md`): 支那ノ談判既ニ破レタル趣…尚確報アラバ速ヤカニ申シ達スベキニ付キ、浮説等信用スベカラズ. 29 words: 23 certain, 4 probable, 1 restored, 1 unresolved = 27/29 (93.1%; 28/29 with the restored word). Doubtful signs settled by targeted visual reviews by Brice Dudout (shapes only).
+- Telegram 2 (`reading_2.md`): 支那ノ談判既ニ破レタル趣…尚確報アラバ速ヤカニ申シ達スベキニ付キ、浮説等信用スベカラズ. 29 words: 24 certain, 4 probable, 1 restored, 0 unresolved = 28/29 (96.6%; 29/29 with the restored word). コレ in row 8: Ohno's reading, checked on the image by Satoshi Tomokiyo (11 Nov 2026). Doubtful signs settled by targeted visual reviews by Brice Dudout (shapes only).
 - Telegram 3 (`reading_3.md`): 北京ヨリ書翰ヲ落手セリ、支那政府ヨリ大久保全権…本月二十日マデニ返答スベシ、其ノ上ニ引払ルナルベシ. Cipher and clear text mixed, pairs not separated. 23 words: 12 certain, 6 probable, 4 restored, 1 unresolved = 18/23 (78.3%; 22/23 with the restored words, which depend on two declared cipher-clerk corrections; strict reading without them about 77%).
 
 Files: `transcription*.txt`, `decryption*.txt`, `reading*.md`, `translation*.md`, `key.tsv`.
 
 ## Scope and related targets
 
-- One key, one entry: all three telegrams use meijiarmy1. C04025783600 frame 1813 does not read with it and is probably Ohno's no. 4028 in Tomokiyo's meijiarmy4 table of 30 Oct 1874 (deciphered by Satoshi Tomokiyo, 10 Nov 2026); it would belong in its own target and is not included.
+- One key, one entry: all three telegrams use meijiarmy1. C04025783600 frame 1813 does not read with it: it is Ohno's no. 4028 in Tomokiyo's meijiarmy4 table of 30 Oct 1874 (deciphered by Satoshi Tomokiyo, 10 Nov 2026; identification confirmed 11 Nov 2026); it would belong in its own target and is not included.
 - Not the same system as `army1901`, `army1901in` or `army1902` (the Army's numeric kana ciphers of 1901-04, different tables and period); no overlap of documents.
-- Outcome by part: telegrams 1-2 read with known key, prior decipherment in print (Ohno 2010), found after reading and not used (contamination: none in the reading, but not a first break); telegram 3 read with known key, no prior reading known.
+- Outcome by part: telegrams 1-2 read with known key, prior decipherment in print (Ohno 2010), found after reading and used for one word only (コレ in telegram 2 row 8, adopted 11 Nov 2026 after Satoshi Tomokiyo checked it on the image; not a first break); telegram 3 read with known key, no prior reading known.
+
+## Integration check (11 Nov 2026)
+
+On integration of PR #402 (Brice Dudout): `decryption_2.txt` re-derived from `transcription_2.txt` with `key.tsv`
+(55 = コ, 33 = レ) agrees pair for pair, and row 8 reads ホウチ コレ ナシ. Counts recounted from `reading_2.md`:
+24 certain + 4 probable of 29 = 28/29 = 96.6%; whole target 20 + 28 + 18 = 66 of 72 = 91.7%. Telegram 2 now meets the
+95% bar and its one open word has an outside blocker, so its state is "read"; the target stays read in part because of
+telegram 3 (18/23). `python docs/_check_profile.py --measure transcription_2.txt` gives 100 pairs (99 before the
+correction); the profile said 102 (101 before) and is set to 100. The held-out check of 28 Oct is quoted as "63 pairs
+of frame 1811": the first nine rows are 63 pairs with the corrected row 8 and were 62 in the file as first merged; the
+check was not re-run here. The JACAR image was not seen by the project: that the signs in row 8 are ゝ rests on
+Satoshi Tomokiyo's check as reported by Brice Dudout, and the reading コレ on Ohno's article as reported by Tomokiyo.
+Page, README row and ledgers brought in line the same day.
 
 ## Remaining gaps
 
-- telegram 2, pair 53 (ケ) and the restored [速ヤカニ] - blocker: illegible; the written digits give no word (clerk's slip), no second copy known
+- telegram 2, the restored [速ヤカニ] (a single 6 where 66 is needed) - blocker: illegible; no second copy known (the former gap ‹ケ› is resolved: コレ, 11 Nov 2026)
 - telegram 3, group リシム and four restored words resting on two declared clerk corrections - blocker: illegible; no second copy known
 - word-by-word comparison with Ohno 2010 - blocker: needs-physical-access; the article is not online and was not seen here (content reported by Satoshi Tomokiyo)
 
