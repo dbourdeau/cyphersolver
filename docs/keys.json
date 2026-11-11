@@ -1,6 +1,14 @@
 {
  "keys": [
   {
+   "id": "k-king769",
+   "label": "Rufus King's despatch code, London 1797-1803 (the = 769): partial key rebuilt by Andrew Beling",
+   "kind": "rebuilt here",
+   "by": "Andrew Beling",
+   "year": 1797,
+   "note": "Numerical code of about 1,600 groups for words, syllables and letters; 764 groups rebuilt from the State Department clerks' interlinear decipherments on 72 frames of NARA M30 rolls 4-8 (targets/king1797/key.tsv). The 723 groups frozen first were tested once on the held-out despatch No. 59: 0.946 of covered groups against 0.165 for the best of 200 shuffled keys. Eight values rest on the context of No. 29 alone."
+  },
+  {
    "id": "k-lee1813",
    "label": "William Lee's WINCHESTER cipher, Paris 1813: numerals 1-25 over a 25-letter alphabet under a keyword (rule worked out by Andrew Beling)",
    "kind": "rebuilt here",
@@ -4638,6 +4646,12 @@
  ],
  "links": [
   {
+   "key": "k-king769",
+   "target": "king1797",
+   "how": "rebuilt from",
+   "note": "rebuilt by the contributor from the clerks' words over 13,603 groups of King's other despatches; applied to No. 29 of 13 Apr 1797, deciphered in part"
+  },
+  {
    "key": "k-lilienthal1665",
    "target": "lilienthal1665",
    "how": "rebuilt from",
@@ -7497,6 +7511,10 @@
   }
  ],
  "source_links": [
+  {
+   "source": "s-cyphersolver",
+   "key": "k-king769"
+  },
   {
    "source": "s-cyphersolver",
    "key": "k-lilienthal1665"

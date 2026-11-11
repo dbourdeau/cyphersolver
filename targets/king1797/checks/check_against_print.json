@@ -1,0 +1,48 @@
+{
+ "script": "scripts/check_against_print.py",
+ "key": "build/key_v1.tsv",
+ "key_sha256": "6a9a1d8cc91f70025acc95ebbded219d207afc7d240964061db6e1b4e2c9f064",
+ "key_groups": 723,
+ "inputs": {
+  "checks/bare_items.tsv": "3b7082264e19d4da11f5c39f4796edb366d67b71e5dbe51662b98ae6b35f7f54",
+  "checks/print_italics.tsv": "42493745bec2fe59734f34be658d61d1a44110fe4645f2d39c3c0624132c1046"
+ },
+ "shuffles": 1000,
+ "seed": 17970419,
+ "max_letters_unmatched_group": 14,
+ "results": {
+  "No30": {
+   "groups": 286,
+   "covered": 227,
+   "coverage": 0.794,
+   "agree": 201,
+   "score": 0.885,
+   "truth_letters": 921,
+   "shuffled_mean": 0.094,
+   "shuffled_best": 0.181,
+   "shuffled_at_least_score": 0
+  },
+  "1801-04-25": {
+   "groups": 124,
+   "covered": 100,
+   "coverage": 0.806,
+   "agree": 85,
+   "score": 0.85,
+   "truth_letters": 394,
+   "shuffled_mean": 0.083,
+   "shuffled_best": 0.21,
+   "shuffled_at_least_score": 0
+  },
+  "1801-06-08": {
+   "groups": 12,
+   "covered": 9,
+   "coverage": 0.75,
+   "agree": 9,
+   "score": 1.0,
+   "truth_letters": 28,
+   "shuffled_mean": 0.043,
+   "shuffled_best": 0.222,
+   "shuffled_at_least_score": 0
+  }
+ }
+}
