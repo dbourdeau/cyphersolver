@@ -1,0 +1,15 @@
+# lee1813: William Lee's WINCHESTER cipher, Paris, February 1813 (see key.md for the rule, the slips and how the key was obtained).
+# Tableau: one row per keyword position (0-9); the cell under numeral n is the plaintext letter it gives under that key letter.
+# plaintext = ALPHABET[(n - 1 + ALPHABET.index(key letter)) mod 25]; ALPHABET = ABCDEFGHIKLMNOPQRSTUVWXYZ (I/J one letter).
+# The key restarts at position 0 (W) at the start of every coded stretch; Lee's slips shift the position (key.md).
+position	key_letter	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23	24	25
+0	W	W	X	Y	Z	A	B	C	D	E	F	G	H	I	K	L	M	N	O	P	Q	R	S	T	U	V
+1	I	I	K	L	M	N	O	P	Q	R	S	T	U	V	W	X	Y	Z	A	B	C	D	E	F	G	H
+2	N	N	O	P	Q	R	S	T	U	V	W	X	Y	Z	A	B	C	D	E	F	G	H	I	K	L	M
+3	C	C	D	E	F	G	H	I	K	L	M	N	O	P	Q	R	S	T	U	V	W	X	Y	Z	A	B
+4	H	H	I	K	L	M	N	O	P	Q	R	S	T	U	V	W	X	Y	Z	A	B	C	D	E	F	G
+5	E	E	F	G	H	I	K	L	M	N	O	P	Q	R	S	T	U	V	W	X	Y	Z	A	B	C	D
+6	S	S	T	U	V	W	X	Y	Z	A	B	C	D	E	F	G	H	I	K	L	M	N	O	P	Q	R
+7	T	T	U	V	W	X	Y	Z	A	B	C	D	E	F	G	H	I	K	L	M	N	O	P	Q	R	S
+8	E	E	F	G	H	I	K	L	M	N	O	P	Q	R	S	T	U	V	W	X	Y	Z	A	B	C	D
+9	R	R	S	T	U	V	W	X	Y	Z	A	B	C	D	E	F	G	H	I	K	L	M	N	O	P	Q

@@ -1,0 +1,392 @@
+# lee1813: decryption of William Lee to James Monroe, Paris, 2 February 1813 ("Copy of Dispatch C"), NARA RG 59, T164 roll 3, frames 0106-0107; the 1813 State Department clerk's decipherment is on frames 0104-0105.
+# Key: keyword WINCHESTER over the 25-letter alphabet ABCDEFGHIKLMNOPQRSTUVWXYZ (I/J one letter); see key.md.
+#   plaintext letter = alphabet[(numeral - 1 + index(keyword[(i + offset) mod 10])) mod 25], i = 0-based position in the stretch.
+# Per stretch: the numerals; "baseline" = key restarted at W for the stretch, no slip (offset 0 throughout);
+# "decoder" = the offset path chosen by the phase-slip decoder (letter 4-gram model, 9.0 nats per offset change),
+# with z = (score - mean of 200 shuffled-numeral controls) / sd, and whether it beats all 200 controls. The z belongs to
+# the decoder's own path, whichever text is used. "used" = the path the reading rests on (baseline, decoder, or a
+# hand-chosen path, stated), with the key letter under each numeral and the mechanical text, UNREPAIRED.
+# "read as" = the words of reading_*.md for this stretch; [x] = letter supplied where the cipher gives a wrong letter
+# or none, <x> = letter Lee enciphered in excess, dropped. Runs are "first-last:offset", positions 1-based.
+
+A  frame 0106  7 numerals  z 1.5  beats all controls: False  decoder slips: 0
+  numerals  16 9 3 3 12 13 7
+  baseline  MRPETRY
+  decoder   MRPETRY   [1-7:0]
+  used      baseline [1-7:0]
+  key       WINCHES
+  mech      MRPETRY
+  read as   Mr Petry
+  note      z computed for this folder with the same decoder (the 2 Feb run skipped stretches under 10 numerals)
+
+B  frame 0106  13 numerals  z 6.9  beats all controls: True  decoder slips: 0
+  numerals  23 25 14 17 12 4 13 1 13 14 5 11 12
+  baseline  THATTHETREATY
+  decoder   THATTHETREATY   [1-13:0]
+  used      baseline [1-13:0]
+  key       WINCHESTERWIN
+  mech      THATTHETREATY
+  read as   that the Treaty
+
+C  frame 0106  20 numerals  z 9.3  beats all controls: True  decoder slips: 0
+  numerals  15 18 22 2 20 1 14 21 13 14 23 25 18 3 5 11 13 24 10 1
+  baseline  LAIDBEFORETHEEMPEROR
+  decoder   LAIDBEFORETHEEMPEROR   [1-20:0]
+  used      baseline [1-20:0]
+  key       WINCHESTERWINCHESTER
+  mech      LAIDBEFORETHEEMPEROR
+  read as   laid before the Emperor
+
+D  frame 0106  98 numerals  z 20.3  beats all controls: True  decoder slips: 2
+  numerals  1 25 2 6 19 25 21 21 15 8 5 11 6 3 23 9 17 1 22 22 8 11 21 24 12 4 13 1 4 23 24 24 21 17 12 4 13 4 4 23 15 22 2 4 2 15 5 21 16 20 8 5 18 16 19 9 11 1 5 23 17 9 21 18 21 21 1 23 1 15 17 5 11 3 24 10 15 25 12 7 10 23 1 1 3 12 10 17 20 25 14 16 6 22 18 2 1 1
+  baseline  WHOHADNOTYATSEENITANDTHATHETHOUGHTTHEWHOLEOFITWOULDNESANCTIONRHUCZSQEFNNXEFOGSQXFFNCKQBKYQKYSYZFST
+  decoder   WHOHADNOTYATSEENITANDTHATHETHOUGHTTHEWHOLEOFITWOULDNESANCTIONEDEXCEPTTHATPARTRELATINETOINDEMOIEDHE   [1-61:0 62-94:9 95-98:8]
+  used      hand-chosen path [1-61:0 62-98:9]
+  key       WINCHESTERWINCHESTERWINCHESTERWINCHESTERWINCHESTERWINCHESTERWWINCHESTERWINCHESTERWINCHESTERWINCHES
+  mech      WHOHADNOTYATSEENITANDTHATHETHOUGHTTHEWHOLEOFITWOULDNESANCTIONEDEXCEPTTHATPARTRELATINETOINDEMOIUIES
+  read as   who had not y[e]t seen it, and that he thought the whole of it would [b]e sanctioned except that part relatin[g] to indem[n]i[t]ies
+  note      hand path of 6 Nov 2026; the decoder path gives the same text to numeral 94 and a worse tail (INDEMOIEDHE)
+
+E  frame 0106  40 numerals  z 8.9  beats all controls: True  decoder slips: 0
+  numerals  13 5 17 3 5 9 17 1 5 15 22 14 2 18 4 25 10 12 5 22 22 1 6 17 23 25 22 20 23 8 24 10 14 16 2 9 3 15 22 3
+  baseline  INDEMNITIFSWOULDBEINSISTEDONBYUSASINUHAT
+  decoder   INDEMNITIFSWOULDBEINSISTEDONBYUSASINUHAT   [1-40:0]
+  used      baseline [1-40:0]
+  key       WINCHESTERWINCHESTERWINCHESTERWINCHESTER
+  mech      INDEMNITIFSWOULDBEINSISTEDONBYUSASINUHAT
+  read as   indemniti[e]s would be insisted on by us, as in [t]hat
+
+F  frame 0106  33 numerals  z 12.8  beats all controls: True  decoder slips: 0
+  numerals  8 1 19 4 2 24 3 18 15 8 13 5 16 12 5 5 21 14 15 23 5 5 14 15 10 22 21 14 1 21 9 5 7
+  baseline  DIFFICULTYINCOMINGTOANARRANGEMENT
+  decoder   DIFFICULTYINCOMINGTOANARRANGEMENT   [1-33:0]
+  used      baseline [1-33:0]
+  key       WINCHESTERWINCHESTERWINCHESTERWIN
+  mech      DIFFICULTYINCOMINGTOANARRANGEMENT
+  read as   difficulty in coming to an arrangement
+
+G  frame 0106  93 numerals  z 13.8  beats all controls: True  decoder slips: 7
+  numerals  18 7 22 11 2 10 21 21 10 17 8 9 21 18 11 23 9 20 25 23 25 14 17 15 5 5 2 15 10 4 23 22 11 22 1 20 20 5 3 13 22 6 17 1 1 23 7 1 2 13 21 18 11 12 18 22 10 7 13 17 6 7 16 19 9 11 1 5 23 17 11 21 3 12 13 13 8 15 8 23 25 18 25 13 6 13 11 22 20 6 22 5 5
+  baseline  OPINIONOOHDRHUSBANDOVWDRMITHOUTEXYHYMXGDSODCHBYTFDRAXOZABZRHBPCVQPSXBHGDPOURZHMOVAMPNRCPYWSNR
+  decoder   OPINIONOANDRHUSBANDTHATWIITHOUTENDEMNITIESTHEPLESIDENTWOCLDNOTSANCTIONTHETREATYTHEBUKEDALBERG   [1-8:0 9-10:1 11-19:0 20-25:1 26-32:0 33-46:1 47-47:2 48-93:1]
+  used      decoder [1-8:0 9-10:1 11-19:0 20-25:1 26-32:0 33-46:1 47-47:2 48-93:1]
+  key       WINCHESTRWWINCHESTEWINCHEESTERWICHESTERWINCHESEERWINCHESTERWINCHESTERWINCHESTERWINCHESTERWINC
+  mech      OPINIONOANDRHUSBANDTHATWIITHOUTENDEMNITIESTHEPLESIDENTWOCLDNOTSANCTIONTHETREATYTHEBUKEDALBERG
+  read as   opinion o[f] [he]r husband that wi<i>thout [i]ndemnities the P[r]esident wo[u]ld not sanction the Treaty. The [D]uke Dalberg
+
+H  frame 0106  33 numerals  z 6.6  beats all controls: True  decoder slips: 2
+  numerals  16 1 1 2 7 2 2 15 1 14 16 7 18 15 7 13 5 8 3 12 22 22 22 11 22 1 22 20 5 3 13 22 6
+  baseline  MINDOFTHEEMPERORWAGCSEINDEONITIES
+  decoder   MINDOFTHEEMPERORWAGEANSTICONITIES   [1-19:0 20-26:8 27-33:0]
+  used      baseline [1-33:0]
+  key       WINCHESTERWINCHESTERWINCHESTERWIN
+  mech      MINDOFTHEEMPERORWAGCSEINDEONITIES
+  read as   mind of the Emperor wa[s] [th]e inde[m]nities
+
+I  frame 0106  27 numerals  z 8.6  beats all controls: True  decoder slips: 0
+  numerals  10 9 14 11 21 1 5 8 14 23 18 11 1 12 15 5 21 8 14 18 23 12 14 17 2 10 21
+  baseline  FRANCEWASOOTNOWINASITUATION
+  decoder   FRANCEWASOOTNOWINASITUATION   [1-27:0]
+  used      baseline [1-27:0]
+  key       WINCHESTERWINCHESTERWINCHES
+  mech      FRANCEWASOOTNOWINASITUATION
+  read as   France was [n]ot now in a situation
+
+J  frame 0106  17 numerals  z 1.6  beats all controls: False  decoder slips: 1
+  numerals  16 9 13 9 4 17 12 5 13 25 15 17 21 6 18 25 4
+  baseline  MRZLLVDXRQLZHHZDV
+  decoder   INDEMDOMESTHROEBV   [1-8:7 9-17:8]
+  used      hand-chosen path [1-5:7 6-14:8 15-17:9]
+  key       TERWICHESTERWICHE
+  mech      INDEMTTIESTHROUGH
+  read as   indem[ni]ties through
+  note      read 11 Nov 2026. The key runs on from stretch I (27 numerals, so J starts at key letter 8, T). Numeral 6, written 17, is 1 and 7 run together (N, I); from there Lee's numerals match a correct encipherment of INDEMNITIESTHRO exactly, and UGH sits one key letter on. Decoder line and z computed on the earlier transcription (last numeral 14).
+
+K  frame 0106  25 numerals  z 8.7  beats all controls: True  decoder slips: 0
+  numerals  5 3 25 12 11 15 9 20 20 3 20 22 14 17 17 18 17 1 4 15 21 18 1 1 23
+  baseline  ALMOSTANYTQEATYWITHFRANCE
+  decoder   ALMOSTANYTQEATYWITHFRANCE   [1-25:0]
+  used      baseline [1-25:0]
+  key       WINCHESTERWINCHESTERWINCH
+  mech      ALMOSTANYTQEATYWITHFRANCE
+  read as   almost any T[r]eaty with France
+
+L  frame 0107  47 numerals  z 9.2  beats all controls: True  decoder slips: 1
+  numerals  2 15 1 18 24 14 10 23 9 22 4 5 2 23 6 6 13 2 9 22 2 15 3 12 22 13 25 10 2 16 10 3 13 6 1 16 12 5 19 18 2 10 21 11 21 3 10
+  baseline  XXNUFSBQNNZNOZNKEUNNXXPODRRCFGFLZHHUDXXIXSHNCGB
+  decoder   UTROGAMENOWISTOSPINOUTTHEZGOTIOTIONSTILLFARTHER   [1-26:7 27-47:8]
+  used      hand-chosen path [1-4:6 5-25:7 26-47:8]
+  key       STERINCHESTERWINCHESTERWICHESTERWINCHESTERWINCH
+  mech      THEIGAMENOWISTOSPINOUTTHEPGOTIOTIONSTILLFARTHER
+  read as   thei[r] game now is to spin out the [ne]goti[a]tion[s] still farther
+  note      hand path of 6 Nov 2026 (THEI...); the decoder path gives UTROGAME... and the same text from GAME on. 11 Nov 2026: the key step at numeral 5 is the R of THEIR left out with its key letter used up, so the first word is their
+
+M  frame 0107  7 numerals  z -1.0  beats all controls: False  decoder slips: 0
+  numerals  22 12 12 1 23 1 12
+  baseline  SUYCEED
+  decoder   SUYCEED   [1-7:0]
+  used      baseline [1-7:0]
+  key       WINCHES
+  mech      SUYCEED
+  read as   su[c]ceed
+  note      z computed for this folder with the same decoder (the 2 Feb run skipped stretches under 10 numerals)
+
+N  frame 0107  57 numerals  z 12.2  beats all controls: True  decoder slips: 3
+  numerals  9 24 19 12 10 15 1 1 4 14 17 18 7 7 7 9 17 25 9 23 1 4 14 8 2 9 15 15 17 9 16 10 7 4 7 2 24 20 3 18 21 22 1 12 22 2 12 15 14 21 4 6 17 7 20 22 2
+  baseline  EGFORTSTHENATIONISNOWMAKINGHVZMSTFOFQNGIRENODFDHSMZODIBAT
+  decoder   EGFORTSTHENATIONISAUGWMAKINGTHEYWILLTRYTODICTATETERMSTOYOU   [1-18:0 19-21:8 22-28:9 29-58:0]
+  used      hand-chosen path [1-27:0 28-57:1]
+  key       WINCHESTERWINCHESTERWINCHESERWINCHESTERWINCHESTERWINCHEST
+  mech      EGFORTSTHENATIONISNOWMAKINGTHEYWILLTRYTODICTATETERMSTOYOU
+  read as   e[f]forts the nation is now making, they will try to dictate terms to you
+  note      11 Nov 2026: Lee wrote 9231 with no dots; read as 9, 23, 1 (not 9, 2, 3, 1) the text gives NOW and needs one key step (after MAKING) instead of three. Decoder line and z computed on the earlier transcription (58 numerals).
+
+O  frame 0107  15 numerals  z 1.7  beats all controls: False  decoder slips: 1
+  numerals  23 25 18 22 22 10 21 24 15 2 24 20 16 23 25
+  baseline  THEYDONRTSUCCZG
+  decoder   THEYDONRTSUCCED   [1-13:0 14-15:1]
+  used      decoder [1-13:0 14-15:1]
+  key       WINCHESTERWINHE
+  mech      THEYDONRTSUCCED
+  read as   they do n[o]t succe[e]d
+
+P  frame 0107  26 numerals  z 8.1  beats all controls: True  decoder slips: 0
+  numerals  13 5 12 12 13 13 23 21 18 14 21 8 2 12 20 15 9 16 9 18 24 10 7 7 21 1
+  baseline  INYOURPOWERQOOBTAINIUSTICE
+  decoder   INYOURPOWERQOOBTAINIUSTICE   [1-26:0]
+  used      baseline [1-26:0]
+  key       WINCHESTERWINCHESTERWINCHE
+  mech      INYOURPOWERQOOBTAINIUSTICE
+  read as   in your power [t]o obtain justice
+
+Q  frame 0107  29 numerals  z 7.8  beats all controls: True  decoder slips: 1
+  numerals  19 9 2 19 23 14 14 8 17 23 21 18 15 3 16 1 5 22 1 4 14 13 9 3 12 4 5 11 6
+  baseline  PROVESFAVORABEXEWPEUKVVETHWDK
+  decoder   PROVESFAVORABESHIOTHEIRPOLICY   [1-14:0 15-29:9]
+  used      decoder [1-14:0 15-29:9]
+  key       WINCHESTERWINCCHESTERWINCHEST
+  mech      PROVESFAVORABESHIOTHEIRPOLICY
+  read as   proves favorab[l]e [?to] their policy
+
+R  frame 0107  15 numerals  z 2.0  beats all controls: False  decoder slips: 0
+  numerals  21 22 20 15 23 15 2 18 22 3 9 13 18 12 12
+  baseline  REGRETTLATEVEOT
+  decoder   REGRETTLATEVEOT   [1-15:0]
+  used      baseline [1-15:0]
+  key       WINCHESTERWINCH
+  mech      REGRETTLATEVEOT
+  read as   regret t[h]at eve[n]t
+
+S  frame 0107  11 numerals  z 5.6  beats all controls: True  decoder slips: 0
+  numerals  19 6 22 11 12 10 14 3 5 14 1
+  baseline  POINTOFVIEW
+  decoder   POINTOFVIEW   [1-11:0]
+  used      baseline [1-11:0]
+  key       WINCHESTERW
+  mech      POINTOFVIEW
+  read as   point of view
+
+T  frame 0107  11 numerals  z 1.8  beats all controls: False  decoder slips: 0
+  numerals  24 5 19 12 10 15 3 2 22 3 9
+  baseline  UNFORTUUATE
+  decoder   UNFORTUUATE   [1-11:0]
+  used      baseline [1-11:0]
+  key       WINCHESTERW
+  mech      UNFORTUUATE
+  read as   unfortu[n]ate
+
+U  frame 0107  17 numerals  z 6.7  beats all controls: True  decoder slips: 1
+  numerals  13 5 22 18 22 5 11 16 10 4 22 24 3 12 15 13 24
+  baseline  INIUDICIOUSGPOWRQ
+  decoder   INIUDICIOUSLETTER   [1-11:0 12-17:1]
+  used      decoder [1-11:0 12-17:1]
+  key       WINCHESTERWNCHEST
+  mech      INIUDICIOUSLETTER
+  read as   injudicious letter
+
+V  frame 0107  12 numerals  z 0.8  beats all controls: False  decoder slips: 1
+  numerals  12 1 6 17 7 7 9 1 13 23 2 22
+  baseline  HISTOLATROXE
+  decoder   HISTOLATREFO   [1-9:0 10-12:5]
+  used      baseline [1-12:0]
+  key       WINCHESTERWI
+  mech      HISTOLATROXE
+  read as   his to Latro[b]e
+  note      numeral 11 reads 2 (X); B would need 6
+
+W  frame 0107  7 numerals  z 1.6  beats all controls: False  decoder slips: 0
+  numerals  21 22 19 18 11 22 19
+  baseline  REFUSAL
+  decoder   REFUSAL   [1-7:0]
+  used      baseline [1-7:0]
+  key       WINCHES
+  mech      REFUSAL
+  read as   refusal
+  note      z computed for this folder with the same decoder (the 2 Feb run skipped stretches under 10 numerals)
+
+X  frame 0107  28 numerals  z 9.5  beats all controls: True  decoder slips: 0
+  numerals  5 21 25 7 12 15 16 12 11 1 9 5 16 7 8 7 13 21 2 18 7 21 18 10 6 5 2 6
+  baseline  ADMITTHEPRENCIPLEOFICDEMNITY
+  decoder   ADMITTHEPRENCIPLEOFICDEMNITY   [1-28:0]
+  used      baseline [1-28:0]
+  key       WINCHESTERWINCHESTERWINCHEST
+  mech      ADMITTHEPRENCIPLEOFICDEMNITY
+  read as   admit the pr[i]nciple of i[n]demnity
+
+Y  frame 0107  54 numerals  z 11.9  beats all controls: True  decoder slips: 1
+  numerals  16 9 6 24 10 7 22 4 14 11 21 13 1 9 10 3 12 6 25 13 20 24 14 1 1 7 6 12 4 13 11 16 19 9 10 2 4 20 22 1 25 22 22 18 18 1 2 22 22 19 9 1 1 11
+  baseline  MRSARLOWSBRVNLRGDYDDQGACHLXEHDGYFLRFVNARVEIUZETPAKEINN
+  decoder   MRSARLOWSCORRESPONDENCEWITHTHEDUKESOFBASSANOANDDALBERG   [1-9:0 10-54:7]
+  used      decoder [1-9:0 10-54:7]
+  key       WINCHESTESTERWINCHESTERWINCHESTERWINCHESTERWINCHESTERW
+  mech      MRSARLOWSCORRESPONDENCEWITHTHEDUKESOFBASSANOANDDALBERG
+  read as   Mr [B]arlow’s correspondence with the Dukes of Bassano and Dalberg
+  note      numeral 37 corrected 21 -> 4 on the frame (6 Nov 2026); numeral 3 reads 6 (S), B would need 15
+
+Z  frame 0107  12 numerals  z 3.4  beats all controls: True  decoder slips: 1
+  numerals  8 22 16 9 19 13 9 1 5 23 17 10
+  baseline  DECLARATIONS
+  decoder   MOINERATIONS   [1-5:5 6-12:0]
+  used      baseline [1-12:0]
+  key       WINCHESTERWI
+  mech      DECLARATIONS
+  read as   declarations
+  note      numeral 5 re-read on frame 0107 on 11 Nov 2026 as 19 (was 14); the decoder line and z above were computed on the earlier reading
+
+AA  frame 0107  20 numerals  z 8.9  beats all controls: True  decoder slips: 0
+  numerals  7 6 5 15 23 14 23 21 9 13 9 5 16 3 15 5 2 15 8 14
+  baseline  CORRESPONDENCEWITHME
+  decoder   CORRESPONDENCEWITHME   [1-20:0]
+  used      baseline [1-20:0]
+  key       WINCHESTERWINCHESTER
+  mech      CORRESPONDENCEWITHME
+  read as   correspondence with me
+
+AB  frame 0107  28 numerals  z 5.1  beats all controls: True  decoder slips: 2
+  numerals  19 6 22 11 12 23 18 7 8 8 21 22 18 11 15 13 11 23 14 22 14 18 3 6 15 16 12 8
+  baseline  POINTBKZMYREENWRCQSNKAPHWUDA
+  decoder   POINTELLYDDIUSTEDBESWEENTHEM   [1-5:0 6-6:9 7-28:1]
+  used      decoder [1-5:0 6-6:9 7-28:1]
+  key       WINCHHTERWINCHESTERWINCHESTE
+  mech      POINTELLYDDIUSTEDBESWEENTHEM
+  read as   point [fu]lly [a]djusted be[t]ween them
+
+AC  frame 0107  20 numerals  z 8.4  beats all controls: True  decoder slips: 0
+  numerals  7 6 25 10 23 13 11 16 22 20 5 21 9 24 6 15 9 14 1 2
+  baseline  COMMERCIALADVANTAGES
+  decoder   COMMERCIALADVANTAGES   [1-20:0]
+  used      baseline [1-20:0]
+  key       WINCHESTERWINCHESTER
+  mech      COMMERCIALADVANTAGES
+  read as   commercial advantages
+
+AD  frame 0107  33 numerals  z 11.3  beats all controls: True  decoder slips: 0
+  numerals  7 6 1 16 2 25 13 24 22 2 9 8 8 7 14 22 19 12 9 3 23 6 22 11 22 1 20 20 5 3 13 22 6
+  baseline  CONSIDERASEQUIVALENTTOINDEMNITIES
+  decoder   CONSIDERASEQUIVALENTTOINDEMNITIES   [1-33:0]
+  used      baseline [1-33:0]
+  key       WINCHESTERWINCHESTERWINCHESTERWIN
+  mech      CONSIDERASEQUIVALENTTOINDEMNITIES
+  read as   consider as equivalent to indemnities
+
+AE  frame 0107  32 numerals  z 12.6  beats all controls: True  decoder slips: 0
+  numerals  13 5 6 17 19 23 17 18 5 3 3 6 19 24 4 7 1 2 24 17 5 9 5 24 6 3 13 19 1 22 23 10
+  baseline  INSTABILITYOFALLSUCHARRANGEMENTS
+  decoder   INSTABILITYOFALLSUCHARRANGEMENTS   [1-32:0]
+  used      baseline [1-32:0]
+  key       WINCHESTERWINCHESTERWINCHESTERWI
+  mech      INSTABILITYOFALLSUCHARRANGEMENTS
+  read as   instability of all such arrangements
+
+AF  frame 0107  23 numerals  z 7.4  beats all controls: True  decoder slips: 0
+  numerals  8 1 6 17 10 22 13 1 1 13 22 11 14 17 23 10 14 12 16 1 18 7 18
+  baseline  DISTRAETEDSTATEOFEUROPE
+  decoder   DISTRAETEDSTATEOFEUROPE   [1-23:0]
+  used      baseline [1-23:0]
+  key       WINCHESTERWINCHESTERWIN
+  mech      DISTRAETEDSTATEOFEUROPE
+  read as   distra[c]ted state of Europe
+
+AG  frame 0107  23 numerals  z 6.3  beats all controls: True  decoder slips: 0
+  numerals  7 6 1 17 23 14 2 4 5 3 12 24 5 3 19 15 10 24 6 3 5 1 1
+  baseline  CONTESTWITHGREATBRKTAIN
+  decoder   CONTESTWITHGREATBRKTAIN   [1-23:0]
+  used      baseline [1-23:0]
+  key       WINCHESTERWINCHESTERWIN
+  mech      CONTESTWITHGREATBRKTAIN
+  read as   contest with Great Br[i]tain
+
+AH  frame 0107  26 numerals  z 9.4  beats all controls: True  decoder slips: 0
+  numerals  22 18 7 7 11 2 9 10 15 23 24 16 7 12 12 4 13 22 13 14 22 1 17 3 6 15
+  baseline  SATISFACTOUYTOTHEPRESIDENT
+  decoder   SATISFACTOUYTOTHEPRESIDENT   [1-26:0]
+  used      baseline [1-26:0]
+  key       WINCHESTERWINCHESTERWINCHE
+  mech      SATISFACTOUYTOTHEPRESIDENT
+  read as   satisfacto[r]y to the President
+
+AI  frame 0107  20 numerals  z 4.6  beats all controls: True  decoder slips: 1
+  numerals  23 6 7 6 23 7 17 10 1 22 7 22 6 22 11 5 13 18 5 2
+  baseline  TOTHELICENCESYSIELIS
+  decoder   TOTHELICENCESODIDONO   [1-13:0 14-20:3]
+  used      baseline [1-20:0]
+  key       WINCHESTERWINCHESTER
+  mech      TOTHELICENCESYSIELIS
+  read as   to the licence sys[t]e[m] is
+
+AJ  frame 0107  36 numerals  z 10.2  beats all controls: True  decoder slips: 0
+  numerals  13 5 17 18 21 1 7 21 16 3 18 18 16 1 23 25 13 1 16 3 12 22 6 1 19 13 25 8 9 16 9 4 18 11 12 14
+  baseline  INDUCEYOUTOACCEDETUTHESCARRANGEMENTS
+  decoder   INDUCEYOUTOACCEDETUTHESCARRANGEMENTS   [1-36:0]
+  used      baseline [1-36:0]
+  key       WINCHESTERWINCHESTERWINCHESTERWINCHE
+  mech      INDUCEYOUTOACCEDETUTHESCARRANGEMENTS
+  read as   induce you to accede t[o] thes[e] arrangements
+
+AK  frame 0107  14 numerals  z 6.7  beats all controls: True  decoder slips: 0
+  numerals  12 18 9 3 6 10 11 21 8 21 9 9 16 3
+  baseline  HAVENOCOMMERCE
+  decoder   HAVENOCOMMERCE   [1-14:0]
+  used      baseline [1-14:0]
+  key       WINCHESTERWINC
+  mech      HAVENOCOMMERCE
+  read as   have no commerce
+
+AL  frame 0107  10 numerals  z 4.7  beats all controls: True  decoder slips: 0
+  numerals  22 18 16 15 2 2 17 10 1 2
+  baseline  SACRIFICES
+  decoder   SACRIFICES   [1-10:0]
+  used      baseline [1-10:0]
+  key       WINCHESTER
+  mech      SACRIFICES
+  read as   sacrifices
+
+AM  frame 0107  15 numerals  z 4.6  beats all controls: True  decoder slips: 1
+  numerals  5 20 2 13 17 10 14 14 14 23 9 18 24 12 20
+  baseline  ACOPYOFGSOEALOB
+  decoder   ACOPYOFGETREATY   [1-8:0 9-15:1]
+  used      decoder [1-8:0 9-15:1]
+  key       WINCHESTRWINCHE
+  mech      ACOPYOFGETREATY
+  read as   a copy of [th]e Treaty
+
+AN  frame 0107  30 numerals  z 7.7  beats all controls: True  decoder slips: 1
+  numerals  23 25 18 10 2 9 17 25 15 14 21 10 24 24 11 15 7 6 5 15 23 14 23 21 9 13 9 5 16 3
+  baseline  THEMINISTERSLASTYYIFTWKXQRAXUT
+  decoder   THEMINYSTERSLASTCORRESPONDENCE   [1-16:0 17-30:4]
+  used      decoder [1-16:0 17-30:4]
+  key       WINCHESTERWINCHEWINCHESTERWINC
+  mech      THEMINISTERSLASTCORRESPONDENCE
+  read as   the ministers last correspondence
+  note      numeral 7 re-read on frame 0107 on 11 Nov 2026 as 17 (was 7); the decoder line and z above were computed on the earlier reading
+
+AO  frame 0107  13 numerals  z 5.5  beats all controls: True  decoder slips: 0
+  numerals  8 12 23 3 7 2 10 8 14 2 5 5 2
+  baseline  DUKEOFBASSANO
+  decoder   DUKEOFBASSANO   [1-13:0]
+  used      baseline [1-13:0]
+  key       WINCHESTERWIN
+  mech      DUKEOFBASSANO
+  read as   Duke of Bassano
+
+# letters supplied in the reading (wrong or missing in the cipher): 53; letters dropped as excess: 1 (counted from the "read as" lines, outside [?...] guesses; recounted 11 Nov 2026).
