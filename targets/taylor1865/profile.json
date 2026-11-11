@@ -742,6 +742,79 @@
         "image_quality": "fair",
         "notes": "Known-key aided candidates. Faint possibly cancelled R retained in raw but excluded from reconstructed phase; see reading_notes. Native crop resolves M joins in ENGINES and PRETEXT."
       }
+    },
+    {
+      "id": "v196-0030-maury",
+      "read": "read",
+      "shelfmark": "NARA RG 109, War Department Collection of Confederate Records, ch. II vol. 196 (Telegrams Sent, Dept. of Alabama, Mississippi and East Louisiana, Feb-Mar 1865; naId 45485022), frame 0030, MS p. 55",
+      "date": "21 Feb 1865",
+      "year": 1865,
+      "country": "Confederate States",
+      "route": "Meridian, Mississippi -> Mobile",
+      "places": {
+        "from": "Meridian",
+        "to": "Mobile"
+      },
+      "language": "English",
+      "pages": 1,
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "Not found in OR Ser. I vol. 49 pts. 1-2 or vol. 45 pt. 2 (OCR phrase searches, 12 Nov 2026); not proof of nonpublication."
+      },
+      "length": {
+        "tokens": 156,
+        "distinct": 26,
+        "unit": "letters",
+        "measured": true,
+        "file": "dudout/v196-0030-maury_cipher.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "https://catalog.archives.gov/medialive/22/4850/45485022/content/dc-metro/rg-109/596501-confederate-record-books/chapter-02-volume-196/chapter-2-volume-196-0030.jpg",
+        "corrections": 15,
+        "image_quality": "good",
+        "notes": "Blind transcription frozen by SHA-256 before any key was tried (dudout/blind_transcription_frozen.txt). 15 one-glyph corrections (barred E for F x6, W for U x3, Y/X for V x3, N for M, S for E, I for Z); key runs one place ahead from the seventh cipher word (one key letter skipped or a one-letter word not copied). See dudout/README.md."
+      }
+    },
+    {
+      "id": "v196-0032-dw",
+      "read": "read",
+      "shelfmark": "NARA RG 109, War Department Collection of Confederate Records, ch. II vol. 196 (Telegrams Sent, Dept. of Alabama, Mississippi and East Louisiana, Feb-Mar 1865; naId 45485022), frames 0031-0032, MS pp. 57-58 (cipher on p. 58)",
+      "date": "21 Feb 1865",
+      "year": 1865,
+      "country": "Confederate States",
+      "route": "Meridian, Mississippi -> Selma or Montevallo, Alabama",
+      "places": {
+        "from": "Meridian",
+        "to": "Selma"
+      },
+      "language": "English",
+      "pages": 2,
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "printed edition"
+        ],
+        "source": "OR Ser. I vol. 49 pt. 1 p. 1003 prints the clear parts and omits the whole cipher passage ('* * *'); the cipher part is not printed.",
+        "partial": true
+      },
+      "length": {
+        "tokens": 206,
+        "distinct": 26,
+        "unit": "letters",
+        "measured": true,
+        "file": "dudout/v196-0032-dw_cipher.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "https://catalog.archives.gov/medialive/22/4850/45485022/content/dc-metro/rg-109/596501-confederate-record-books/chapter-02-volume-196/chapter-2-volume-196-0032.jpg",
+        "corrections": 11,
+        "image_quality": "good",
+        "notes": "Blind transcription frozen by SHA-256 before any key was tried. 11 one-glyph corrections (J for I x3, Y for V x2, E for F, I for L, G for C, G for Q, C for Q, T for F). See dudout/README.md."
+      }
     }
   ],
   "system": {
@@ -1142,6 +1215,12 @@
         "role": "transcription",
         "date": "2026-11-09",
         "note": "Seven further aided image alignments with OpenAI Codex; existing OR and partial pencil decipherments explicitly credited per document; not independent plaintext recovery."
+      },
+      {
+        "who": "dudout",
+        "role": "solution",
+        "date": "2026-11-12",
+        "note": "Vol. 196 fr. 0030 (21 Feb, to Maury) and fr. 0031-0032 (21 Feb, to D. W. Adams), two open telegrams of the catalogue list, read with the known keys after a blind transcription and a pre-registration frozen by SHA-256 (dudout/). Keys, conventions and glyph list from WAINUT and bdpayne."
       }
     ],
     "texts": [
@@ -1545,6 +1624,42 @@
           "by": "OpenAI Codex, model review; not independent handwriting/human review",
           "date": "2026-11-09",
           "note": "Coherent English intent with exact PRETEXT OF ending. Awkward Mobile and Montgomery road wording and faint-R phase hypothesis retained as provisional; no full continuous raw reading claimed."
+        }
+      },
+      {
+        "doc": "v196-0030-maury",
+        "label": "21 Feb 1865, Taylor to Maury: Pensacola, forced reconnaissance, cavalry to the Selma and Montgomery line.",
+        "transcription": "dudout/v196-0030-maury_cipher.txt",
+        "decryption": "dudout/v196-0030-maury_decryption.txt",
+        "reading": "dudout/v196-0030-maury_reading.md",
+        "language": "en",
+        "state": "read",
+        "read_share": 1.0,
+        "summary": "The enemy has left Vicksburg without avowed intention of attacking Mobile; find out what he is doing at Pensacola, by a forced reconnaissance if need be; if no attack from Pensacola is likely, move most of the cavalry on the eastern shore to the Selma and Montgomery line against a movement on Central Alabama.",
+        "note": "COME RETRIBUTION; 29/29 cipher words, 141/156 letters as read. Fails the pre-registered offset-0 test; one-break check is post hoc (dudout/posthoc_T1_break_results.txt).",
+        "reading_review": {
+          "grade": "A",
+          "by": "Claude (Anthropic) model review for Brice Dudout; not an independent human review",
+          "date": "2026-11-12",
+          "note": "Reread as sentences against the clear text around each cipher passage: continuous English, every cipher word fits; MONTGOMERY split across a line end; one missing key place stated."
+        }
+      },
+      {
+        "doc": "v196-0032-dw",
+        "label": "21 Feb 1865, Taylor to D. W. Adams: public stores, Cahaba prisoners to Andersonville, Demopolis employees (cipher passage omitted in OR).",
+        "transcription": "dudout/v196-0032-dw_cipher.txt",
+        "decryption": "dudout/v196-0032-dw_decryption.txt",
+        "reading": "dudout/v196-0032-dw_reading.md",
+        "language": "en",
+        "state": "read",
+        "read_share": 1.0,
+        "summary": "Public stores in North Alabama to be put in fortified places or south of the Alabama River; send the Cahaba prisoners to Andersonville on first news of an enemy advance toward Central Alabama; organize the government employees at Demopolis without depriving the workshops.",
+        "note": "COMPLETE VICTORY at offset 0, pre-registered winner (rank 1 of 201); 44/44 cipher words, 195/206 letters as read.",
+        "reading_review": {
+          "grade": "A",
+          "by": "Claude (Anthropic) model review for Brice Dudout; not an independent human review",
+          "date": "2026-11-12",
+          "note": "Reread as sentences with the printed clear parts (OR I/49/1 p. 1003): continuous English, every cipher word fits."
         }
       }
     ],
