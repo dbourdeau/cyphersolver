@@ -250,6 +250,43 @@
    ],
    "what": "Taken in here: key no. 25's letter values checked against the alphabet bracketed from the glosses (all agree); Tomokiyo's catalogue entry for no. 25 confirmed in research/gallica_siblings/src/nevers.htm; no. 25 reading measured 0.925 (v10). Key sheet image not re-checked (Gallica bot check).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "what": "Beling: no. 24's two cipher runs found to carry contemporary interlinear letters, unused so far. Pre-registered check (beling/PREREG.md) of key no. 25 unchanged on the 14 legible glossed figures: 13 agree (0.929); 200 shuffled keys mean 0.053, best 0.357; margin 0.571. Pass, small sample.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "transcription",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Beling: key no. 25 sheet (fr. 3995 f. 51r) transcribed: names 1-51, words x-lvii, cities lviii-89, provinces a-z (beling/transcription/key25_*.tsv). Barred 22, 44, 51 in no. 24 confirmed as Guise, La Chastre, La Guiche; 84 not barred (plain s); l. 22 figures read 99 9b 56 93 35 (barred 9 = Roy); 'xlm' in l. 11 read xliij = 43 Intelligence.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "reading",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Beling: clear text of no. 24 (50 lines, about 15 doubtful words) and no. 60 (5 lines) transcribed and read with the runs (beling/results/n24_reading.md). No. 60's gloss over 64 is a dotted y: 'Launay'. Read share not measured.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Beling: second transcription of no. 25, hashed before Brackx's was opened (not fully blind). Of Brackx's 37 doubtful words, 14 agree, 13 read otherwise, 10 doubtful for both; about 18 other differences. The l. 34 run may end 38 93 9b 'du [Roy]', not B:39 La Noue; 'l'union' has 58 on the page, so 58->56 is an emendation (beling/results/n25_compare.md).",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -292,17 +329,17 @@
    {
     "item": "No. 25: 72 holes (doubtful clear words, abbreviation expansions) and the isolated figure 3 in the Soissons run",
     "blocker": "illegible",
-    "detail": "contrast-enhanced enlargements of the native scan did not resolve them (Brackx); no second palaeographic reader yet"
+    "detail": "contrast-enhanced enlargements did not resolve them (Brackx); a second reader (Beling, 11 Nov 2026) settles or re-reads 27 of the 37 marked words and leaves 10 doubtful for both; the l. 34 run's end (Roy or La Noue) needs a third look"
    },
    {
-    "item": "Nos. 24 and 60: clear text not transcribed; cipher runs decoded with key no. 25 except the no. 24 l. 22 join and its barred figures 22, 44, 51, 84",
-    "blocker": "not-attempted",
-    "detail": "transcribe both letters, check the barred figures on the image"
+    "item": "Nos. 24 and 60: transcribed and read by one reader (Beling, 11 Nov 2026); about 15 doubtful words in no. 24, two in no. 60; identities of Ludouic and Launay",
+    "blocker": "illegible",
+    "detail": "a second reader of the clear text is the next step; the names are not found in print or on the web (beling/names_check.md)"
    },
    {
-    "item": "Nevers key no. 25: only six barred entries transcribed",
+    "item": "Nevers key no. 25 sheet: the 'Mots' and 'Dames' blocks not transcribed (names, words, cities and provinces done, Beling 11 Nov 2026)",
     "blocker": "not-attempted",
-    "detail": "the rest of the nomenclator on fr. 3995 f. 51r would identify no. 24's barred figures"
+    "detail": "not needed by any run of nos. 24, 25 or 60"
    },
    {
     "item": "No. 78 (f. 111r), one group of about six mixed signs",
@@ -327,6 +364,12 @@
     "who": "tomokiyo",
     "role": "key or decipherment used",
     "note": "catalogue of the Nevers keys of fr. 3995 (cryptiana nevers.htm), the lead to key no. 25"
+   },
+   {
+    "who": "ajbeling",
+    "role": "verification",
+    "note": "held-out check of key no. 25 on no. 24's glosses; key sheet names, words and cities; nos. 24 and 60 transcribed and read; second reading of no. 25 (with AI agents)",
+    "date": "2026-11-11"
    }
   ],
   "texts": [
