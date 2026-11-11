@@ -127,3 +127,18 @@ h where the decipherment has *tous*); and the χ° sign, *q* in the table, stand
 - Outcome "read with known key" for contributed AI readings without human checks. The read fraction (86.1%) measures
   sense, not correctness; the calibrations (75-93% per sign on known text) are the only measure of correctness.
 - Did you read more of f. 385 than the fragment Tomokiyo prints?
+
+## Image round on f. 120, 12 Nov 2026 (Brice Dudout)
+
+The 16 lines of f. 120 that the b21 re-read left open (r c15-c19, c24-c31, v c03-c05) were checked sign by sign on
+Gallica views 246-247 at full resolution, against Harumi-Matsuba's transcription and with his sign names; the
+re-read transcription and the doubtful signs were frozen by SHA-256 before decoding with this target's key. Eight
+signs change (among them w -> w2 'il m'est tombé', 9 -> q+ 'spe[ci]alement', ls -> S 'au ser[v]ice', B -> 6b);
+the rest of those lines agree with his transcription. One pre-registered measure on those lines (key unchanged):
+0.903 against 0.909 for the earlier transcription, all 400 controls below: the corrections are neutral for the
+measure. With the 95% rule (sure + probable; restored and unresolved letters are holes) the letter goes from 88.3% to
+90.0%: r c15-c19 and v c03-c05 now read as sentences ("quelque [comme]ndement et coniuration que vous [luy]
+puissies faire de s'en aler ... si [tost] qu'il saura"; "L'on ne sauroit com{p}rendre l[e] tort que la rupture de
+ceste armée faict au ser[v]ice du [Roy]"), r c24-c31 in part. Values used only from context in this letter (vbar =
+comme, g8 = luy, Om = tost, I = Roy, Lp = p) are not added to the key. f. 385 was not attempted. Details:
+[`dudout/README.md`](dudout/README.md).
