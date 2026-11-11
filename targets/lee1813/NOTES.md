@@ -360,6 +360,13 @@ Done by the project on merging pull request #397 (the contributor's files are ot
 - `viewer/` loads only its own `data.js` and frame images from catalog.archives.gov. It also carries a URL pattern
   for another NARA film (M30 roll 4) that no document in `data.js` uses.
 
+Claims review by a second reader (11 Nov 2026): the clean-word count is 425 of 528 by the profile and by the
+cipher-only shares, but the hole columns of the table in section 6 sum to 426, and a recount of the readings gives
+423 to 425 depending on how "Bassagne(?)" and words split by a hyphen are counted (the "42" for 2 Feb looks stale: 44
+words with a supplied or dropped letter). The figure is about 0.80 either way; not recounted here.
+`error_accounts.txt` labels the stretch "necessary to support the Emperor to preserve" F6-16; the transcription and
+decryption call it F6-17.
+
 ## Remaining gaps
 
 One line per open piece (detail in sections 4, 8, 9 and 12):
