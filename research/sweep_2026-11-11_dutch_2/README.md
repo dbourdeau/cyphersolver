@@ -69,7 +69,8 @@ What the 16 named ones hold:
 The table view lists 477 inventories for "cijfer"; the first pass listed 315. `anl_list.js` (START=300) listed entries 300-477
 (`anl_list_cijfer.jsonl`, 177 inventories, none seen before). 110 are plainly modern by title (municipalities after 1850, firms,
 schools, NIOD, societies) and were not opened; the other 67 were queued in `jobs_cijfer2.tsv` and expanded into
-`anl_exp_cijfer2.jsonl` (see the note at the end of this file for how far that run got). In the 120 "cijfer" pairs re-run from the
+`anl_exp_cijfer2.jsonl` (all 67 done): "cijfer" is a number, a date figure or a mark in every one (charters, maps, music, one
+Groningen resolution on traitors' letters); no cipher item. In the 120 "cijfer" pairs re-run from the
 first pass the word means a number, a mark or a statistic every time (Eindhoven municipal classification codes are 60 of them); the
 only pre-1800 groups are the Gelderse Landdagsrecessen (Gelders 1707, 34 regests: "cijfer" as a figure) and town registers.
 
