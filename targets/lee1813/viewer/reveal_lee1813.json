@@ -1,0 +1,260 @@
+{
+ "slug": "lee1813",
+ "anchor": "reading",
+ "title": "Lee's own cipher, keyword WINCHESTER: the opening of 6 February 1813",
+ "caption": "The first three cipher passages of Lee's letter of 6 February 1813 (NARA RG 59, T164 roll 3, frame 0108), with his clear words between them: \"For the purposes of commerce I established with C. D. S. S. L and C. W. a cipher, a copy of which I have taken means to put in your hands\". Each tile shows the figure Lee wrote and the letter of the keyword WINCHESTER it was enciphered with (19/W is figure 19 under W); the keyword starts again at W at each passage. Lee's own mistakes are marked, never silently repaired. Red tiles are wrong figures, shown as the letter the figure gives → the letter Lee meant: 24 under C gives a where p needs 13 (pur-p-oses); 17 under W gives n where c needs 7 (c-ommerce, a stray tens figure); 2 under T gives u where e needs 12 (commerc-e, a lost tens figure); and in the second passage 1 under I gives i where c needs 20 (a c-ipher). Amber tiles are slips that read correctly once followed. Lee's key slipped once: he used T twice (\"16/T again\"), so from \"I\" on every key letter is one place back; followed that way the figures give \"I established\". And twice his dots between figures are wrong: he wrote 12 as \"1.2\" (the last letter but one of established), and the two figures 1 and 1 as \"11\" (the h and e of cipher). The 1813 reader pencilled \"purpose of commerce\" and \"in your hands\" but could not read the rest; \"I established\" and \"a cipher, a copy\" are first read here and rest on these slips (reading_1813-02-06.md, errors.py).",
+ "unit": "figures",
+ "key_note": "Key: the keyword WINCHESTER, written by the 1813 State Department reader over Lee's figures on frame 0108. Rule: the 25-letter alphabet (I and J one letter); figure n under key letter k gives the letter n-1 places after k (1 under W is W, 2 under W is X ...). Because the key letter changes at every figure, the same figure stands for different letters: each entry here is a figure with its key letter.",
+ "tokens": [
+  {
+   "g": "",
+   "p": "For the ",
+   "cls": "plain",
+   "w": 1
+  },
+  {
+   "g": "19/W",
+   "p": "p",
+   "w": 1
+  },
+  {
+   "g": "12/I",
+   "p": "u"
+  },
+  {
+   "g": "5/N",
+   "p": "r"
+  },
+  {
+   "g": "24/C",
+   "p": "a",
+   "cls": "inf",
+   "show": "a→p"
+  },
+  {
+   "g": "7/H",
+   "p": "o"
+  },
+  {
+   "g": "14/E",
+   "p": "s"
+  },
+  {
+   "g": "13/S",
+   "p": "e"
+  },
+  {
+   "g": "25/T",
+   "p": "s"
+  },
+  {
+   "g": "10/E",
+   "p": "o",
+   "w": 1
+  },
+  {
+   "g": "15/R",
+   "p": "f"
+  },
+  {
+   "g": "17/W",
+   "p": "n",
+   "cls": "inf",
+   "w": 1,
+   "show": "n→c"
+  },
+  {
+   "g": "6/I",
+   "p": "o"
+  },
+  {
+   "g": "25/N",
+   "p": "m"
+  },
+  {
+   "g": "10/C",
+   "p": "m"
+  },
+  {
+   "g": "23/H",
+   "p": "e"
+  },
+  {
+   "g": "13/E",
+   "p": "r"
+  },
+  {
+   "g": "11/S",
+   "p": "c"
+  },
+  {
+   "g": "2/T",
+   "p": "u",
+   "cls": "inf",
+   "show": "u→e"
+  },
+  {
+   "g": "16/T again",
+   "p": "i",
+   "w": 1,
+   "cls": "unc"
+  },
+  {
+   "g": "1/E",
+   "p": "e",
+   "w": 1
+  },
+  {
+   "g": "2/R",
+   "p": "s"
+  },
+  {
+   "g": "23/W",
+   "p": "t"
+  },
+  {
+   "g": "18/I",
+   "p": "a"
+  },
+  {
+   "g": "15/N",
+   "p": "b"
+  },
+  {
+   "g": "9/C",
+   "p": "l"
+  },
+  {
+   "g": "2/H",
+   "p": "i"
+  },
+  {
+   "g": "14/E",
+   "p": "s"
+  },
+  {
+   "g": "16/S",
+   "p": "h"
+  },
+  {
+   "g": "1.2→12/T",
+   "p": "e",
+   "cls": "unc"
+  },
+  {
+   "g": "25/E",
+   "p": "d"
+  },
+  {
+   "g": "",
+   "p": " with C. D. S. S. L and C. W. ",
+   "cls": "plain",
+   "w": 1
+  },
+  {
+   "g": "5/W",
+   "p": "a",
+   "w": 1
+  },
+  {
+   "g": "1/I",
+   "p": "i",
+   "cls": "inf",
+   "w": 1,
+   "show": "i→c"
+  },
+  {
+   "g": "22/N",
+   "p": "i"
+  },
+  {
+   "g": "13/C",
+   "p": "p"
+  },
+  {
+   "g": "11→1/H",
+   "p": "h",
+   "cls": "unc"
+  },
+  {
+   "g": "11→1/E",
+   "p": "e",
+   "cls": "unc"
+  },
+  {
+   "g": "25/S",
+   "p": "r"
+  },
+  {
+   "g": "8/T",
+   "p": "a",
+   "w": 1
+  },
+  {
+   "g": "24/E",
+   "p": "c",
+   "w": 1
+  },
+  {
+   "g": "23/R",
+   "p": "o"
+  },
+  {
+   "g": "19/W",
+   "p": "p"
+  },
+  {
+   "g": "16/I",
+   "p": "y"
+  },
+  {
+   "g": "",
+   "p": " of which I have taken means to put ",
+   "cls": "plain",
+   "w": 1
+  },
+  {
+   "g": "13/W",
+   "p": "i",
+   "w": 1
+  },
+  {
+   "g": "5/I",
+   "p": "n"
+  },
+  {
+   "g": "12/N",
+   "p": "y",
+   "w": 1
+  },
+  {
+   "g": "12/C",
+   "p": "o"
+  },
+  {
+   "g": "13/H",
+   "p": "u"
+  },
+  {
+   "g": "13/E",
+   "p": "r"
+  },
+  {
+   "g": "16/S",
+   "p": "h",
+   "w": 1
+  },
+  {
+   "g": "8/T",
+   "p": "a"
+  },
+  {
+   "g": "9/E",
+   "p": "n"
+  },
+  {
+   "g": "13/R",
+   "p": "d"
+  }
+ ]
+}

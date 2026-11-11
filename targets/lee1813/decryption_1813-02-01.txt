@@ -1,0 +1,85 @@
+# lee1813: decryption of William Lee to James Monroe, Hotel of the Legation, Paris, 1 February 1813 ("private"), NARA RG 59, Despatches from US Consuls in Bordeaux, microfilm T164 roll 3, frames 0099-0102 (coded stretches on 0099-0101).
+# Key: keyword WINCHESTER over the 25-letter alphabet ABCDEFGHIKLMNOPQRSTUVWXYZ (I/J one letter); see key.md.
+#   plaintext letter = alphabet[(numeral - 1 + index(keyword[(i + offset) mod 10])) mod 25], i = 0-based position in the stretch.
+# Per stretch: the numerals; "baseline" = key restarted at W for the stretch, no slip (offset 0 throughout);
+# "decoder" = the offset path chosen by the phase-slip decoder (letter 4-gram model, 9.0 nats per offset change),
+# with z = (score - mean of 200 shuffled-numeral controls) / sd, and whether it beats all 200 controls. The z belongs to
+# the decoder's own path, whichever text is used. "used" = the path the reading rests on (baseline, decoder, or a
+# hand-chosen path, stated), with the key letter under each numeral and the mechanical text, UNREPAIRED.
+# "read as" = the words of reading_*.md for this stretch; [x] = letter supplied where the cipher gives a wrong letter
+# or none, <x> = letter Lee enciphered in excess, dropped. Runs are "first-last:offset", positions 1-based.
+
+F1-A  frame 0099  12 numerals  z 4.5  beats all controls: True  decoder slips: 0
+  numerals  13 9 22 16 1 23 25 16 3 10 8 22
+  baseline  IRISHBRIGADE
+  decoder   IRISHBRIGADE   [1-12:0]
+  used      baseline [1-12:0]
+  key       WINCHESTERWI
+  mech      IRISHBRIGADE
+  read as   Irish Brigade
+
+F1-B  frame 0100/0101  16 numerals  z 3.4  beats all controls: True  decoder slips: 0
+  numerals  16 18 5 16 1 22 19 25 1 1 21 12 5 7 23 13
+  baseline  MARSHALSERRURIER
+  decoder   MARSHALSERRURIER   [1-16:0]
+  used      baseline [1-16:0]
+  key       WINCHESTERWINCHE
+  mech      MARSHALSERRURIER
+  read as   Marshal Serrurier
+
+F1-C  frame 0101  7 numerals  z 0.5  beats all controls: False  decoder slips: 1
+  numerals  15 18 7 15 7 23 13
+  baseline  LATROBE
+  decoder   RZLGIER   [1-4:3 5-7:9]
+  used      baseline [1-7:0]
+  key       WINCHES
+  mech      LATROBE
+  read as   Latrobe
+
+F1-D  frame 0101  16 numerals  z 6.0  beats all controls: True  decoder slips: 0
+  numerals  22 12 16 1 23 14 1 21 2 12 15 1 1 17 7 9
+  baseline  SUCCESSOFCLINTON
+  decoder   SUCCESSOFCLINTON   [1-16:0]
+  used      baseline [1-16:0]
+  key       WINCHESTERWINCHE
+  mech      SUCCESSOFCLINTON
+  read as   success of Clinton
+
+F1-E  frame 0101  5 numerals  z 0.0  beats all controls: False  decoder slips: 0
+  numerals  9 4 25 3 12
+  baseline  EMMET
+  decoder   LLDUE   [1-5:3]
+  used      baseline [1-5:0]
+  key       WINCH
+  mech      EMMET
+  read as   Emmet
+
+F1-F  frame 0101  14 numerals  z 6.0  beats all controls: True  decoder slips: 0
+  numerals  24 5 22 17 23 25 17 24 5 2 12 4 18 11
+  baseline  UNITEDIRISHMEN
+  decoder   UNITEDIRISHMEN   [1-14:0]
+  used      baseline [1-14:0]
+  key       WINCHESTERWINC
+  mech      UNITEDIRISHMEN
+  read as   United Irishmen
+
+F1-G  frame 0101  14 numerals  z 5.2  beats all controls: True  decoder slips: 0
+  numerals  5 21 22 16 12 5 21 10 15 24 5 9 7 22
+  baseline  ADISTINCTPARTY
+  decoder   ADISTINCTPARTY   [1-14:0]
+  used      baseline [1-14:0]
+  key       WINCHESTERWINC
+  mech      ADISTINCTPARTY
+  read as   a distinct party
+
+F1-H  frame 0101  26 numerals  z 6.8  beats all controls: True  decoder slips: 1
+  numerals  23 25 18 13 10 1 1 16 25 14 17 11 8 18 5 3 11 9 22 1 10 15 10 22 1 2
+  baseline  THEPRESIDENTUUMGCBARFXWYHF
+  decoder   THEPRESIDENTDARESNOTOFFEND   [1-12:0 13-26:8]
+  used      decoder [1-12:0 13-26:8]
+  key       WINCHESTERWIWINCHESTERWINC
+  mech      THEPRESIDENTDARESNOTOFFEND
+  read as   the President dares not offend
+  note      the key restarts at W after PRESIDENT; OFFEND rests on numerals 21 and 23 read 10 (as 16: UFMEND)
+
+# letters supplied in the reading (wrong or missing in the cipher): 0; letters dropped as excess: 0 (counted outside [?...] proposals).

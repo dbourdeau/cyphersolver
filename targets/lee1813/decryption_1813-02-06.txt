@@ -1,0 +1,684 @@
+# lee1813: decryption of William Lee to the Secretary of State (James Monroe), Hotel of the Legation, Paris, 6 February 1813 ("Second Copy"), NARA RG 59, T164 roll 3, frames 0108-0110.
+# Key: keyword WINCHESTER over the 25-letter alphabet ABCDEFGHIKLMNOPQRSTUVWXYZ (I/J one letter); see key.md.
+#   plaintext letter = alphabet[(numeral - 1 + index(keyword[(i + offset) mod 10])) mod 25], i = 0-based position in the stretch.
+# Per stretch: the numerals; "baseline" = key restarted at W for the stretch, no slip (offset 0 throughout);
+# "decoder" = the offset path chosen by the phase-slip decoder (letter 4-gram model, 9.0 nats per offset change),
+# with z = (score - mean of 200 shuffled-numeral controls) / sd, and whether it beats all 200 controls. The z belongs to
+# the decoder's own path, whichever text is used. "used" = the path the reading rests on (baseline, decoder, or a
+# hand-chosen path, stated), with the key letter under each numeral and the mechanical text, UNREPAIRED.
+# "read as" = the words of reading_*.md for this stretch; [x] = letter supplied where the cipher gives a wrong letter
+# or none, <x> = letter Lee enciphered in excess, dropped. Runs are "first-last:offset", positions 1-based.
+
+F6-01  frame 0108  31 numerals  z 6.0  beats all controls: True  decoder slips: 3
+  numerals  19 12 5 24 7 14 13 25 10 15 17 6 25 10 23 13 11 2 16 1 2 23 18 15 9 2 14 16 1 2 25
+  baseline  PURAOSESOFNOMMERCUURXFERQFFIESV
+  decoder   KHNLIVESOFNOMMERCUIESTABLISHTOB   [1-6:9 7-18:0 19-29:9 30-31:3]
+  used      hand-chosen path [1-18:0 19-31:9]
+  key       WINCHESTERWINCHESTTERWINCHESTER
+  mech      PURAOSESOFNOMMERCUIESTABLISHTFQ
+  read as   pur[p]oses of [c]ommerc[e] I established
+  note      hand path: the decoder scrambles the first six letters. Two errors of Lee's give ESTABLISHED: the key letter T is used twice (numerals 18 and 19), which steps the key back one place from numeral 19; and the last figures, written 1.2.25, are 12 and 25 with a stray dot (as three numerals 1, 2, 25 the end is TFQ). Numerals 11 (17 for 7) and 18 (2 for 12) are a tens figure added and lost.
+
+F6-02  frame 0108  11 numerals  z 2.8  beats all controls: True  decoder slips: 1
+  numerals  5 1 22 13 11 25 8 24 23 19 16
+  baseline  AIIPSDZRBKM
+  decoder   MEOFPRACOPY   [1-4:4 5-11:1]
+  used      baseline [1-11:0]
+  key       WINCHESTERW
+  mech      AIIPSDZRBKM
+  read as   a [c]ipher, a copy
+  note      as transcribed no path gives text; numeral 5, written 11, is two numerals 1 and 1 run together (no dot); then the baseline gives AIIPHERACOPY, with one wrong letter (numeral 2, 1, gives I where C needs 20)
+
+F6-03  frame 0108  10 numerals  z 4.4  beats all controls: True  decoder slips: 0
+  numerals  13 5 12 12 13 13 16 8 9 13
+  baseline  INYOURHAND
+  decoder   INYOURHAND   [1-10:0]
+  used      baseline [1-10:0]
+  key       WINCHESTER
+  mech      INYOURHAND
+  read as   in your hand
+
+F6-04  frame 0108  11 numerals  z 4.1  beats all controls: True  decoder slips: 0
+  numerals  8 1 6 17 10 1 1 25 5 22 11
+  baseline  DISTRESSING
+  decoder   DISTRESSING   [1-11:0]
+  used      baseline [1-11:0]
+  key       WINCHESTERW
+  mech      DISTRESSING
+  read as   distressing
+
+F6-05  frame 0108  38 numerals  z 8.6  beats all controls: True  decoder slips: 0
+  numerals  9 15 14 5 25 1 25 8 15 14 25 25 18 10 2 14 14 21 12 3 24 5 18 16 7 2 2 15 1 16 21 18 1 2 19 13 20 6
+  baseline  EXAGGERATEVHEMISFOQTUNESOFTHEGRANDARMY
+  decoder   EXAGGERATEVHEMISFOQTUNESOFTHEGRANDARMY   [1-38:0]
+  used      baseline [1-38:0]
+  key       WINCHESTERWINCHESTERWINCHESTERWINCHEST
+  mech      EXAGGERATEVHEMISFOQTUNESOFTHEGRANDARMY
+  read as   exaggerate [t]he misfo[r]tunes of the grand army
+
+F6-06  frame 0108  16 numerals  z 7.0  beats all controls: True  decoder slips: 0
+  numerals  23 6 7 24 4 7 7 11 1 2 23 9 2 22 23 25
+  baseline  TOTALLYDESTROYED
+  decoder   TOTALLYDESTROYED   [1-16:0]
+  used      baseline [1-16:0]
+  key       WINCHESTERWINCHE
+  mech      TOTALLYDESTROYED
+  read as   totally destroyed
+
+F6-07  frame 0108  8 numerals  z 4.7  beats all controls: True  decoder slips: 0
+  numerals  18 23 19 7 21 1 25 25
+  baseline  OFFICERS
+  decoder   OFFICERS   [1-8:0]
+  used      baseline [1-8:0]
+  key       WINCHEST
+  mech      OFFICERS
+  read as   officers
+
+F6-08  frame 0108  20 numerals  z 6.8  beats all controls: True  decoder slips: 0
+  numerals  23 18 23 3 6 10 25 15 22 5 9 21 22 3 22 10 14 13 23 8
+  baseline  TAKENORHAVEDIEDOFFBY
+  decoder   TAKENORHAVEDIEDOFFBY   [1-20:0]
+  used      baseline [1-20:0]
+  key       WINCHESTERWINCHESTER
+  mech      TAKENORHAVEDIEDOFFBY
+  read as   taken or have died off by
+
+F6-09  frame 0108  21 numerals  z 8.0  beats all controls: True  decoder slips: 0
+  numerals  22 22 9 3 10 5 2 6 10 15 10 11 21 3 21 7 17 19 22 3 9
+  baseline  SEVERITYOFFTHECLIMATE
+  decoder   SEVERITYOFFTHECLIMATE   [1-21:0]
+  used      baseline [1-21:0]
+  key       WINCHESTERWINCHESTERW
+  mech      SEVERITYOFFTHECLIMATE
+  read as   severity o<f>f the climate
+
+F6-10  frame 0108  7 numerals  z 2.1  beats all controls: False  decoder slips: 0
+  numerals  25 22 16 12 10 25 6
+  baseline  VECORDX
+  decoder   HISTORY   [1-7:1]
+  used      decoder [1-7:1]
+  key       INCHEST
+  mech      HISTORY
+  read as   History
+
+F6-11  frame 0108  35 numerals  z 7.9  beats all controls: True  decoder slips: 0
+  numerals  7 5 14 1 21 10 3 20 15 23 10 10 8 1 1 22 12 16 14 10 22 11 5 1 7 16 1 10 22 21 19 18 22 5 6
+  baseline  CNACCOUNTOFSUCHADISASTRCOUSCAMPAIGN
+  decoder   CNACCOUNTOFSUCHADISASTRCOUSCAMPAIGN   [1-35:0]
+  used      baseline [1-35:0]
+  key       WINCHESTERWINCHESTERWINCHESTERWINCH
+  mech      CNACCOUNTOFSUCHADISASTRCOUSCAMPAIGN
+  read as   [a]n account of such a disastr<c>ous campaign
+
+F6-12  frame 0108  10 numerals  z 4.6  beats all controls: True  decoder slips: 0
+  numerals  16 1 6 4 7 13 2 2 9 14
+  baseline  MISFORTUNE
+  decoder   MISFORTUNE   [1-10:0]
+  used      baseline [1-10:0]
+  key       WINCHESTER
+  mech      MISFORTUNE
+  read as   misfortune
+
+F6-13  frame 0108  24 numerals  z 8.2  beats all controls: True  decoder slips: 0
+  numerals  17 18 7 7 7 9 17 25 9 23 25 11 2 25 23 25 13 25 24 1 9 19 18 2
+  baseline  NATIONISNOVTOBEDESCREBED
+  decoder   NATIONISNOVTOBEDESCREBED   [1-24:0]
+  used      baseline [1-24:0]
+  key       WINCHESTERWINCHESTERWINC
+  mech      NATIONISNOVTOBEDESCREBED
+  read as   nation is no[t] to be descr[i]bed
+
+F6-14  frame 0108  18 numerals  z 7.3  beats all controls: True  decoder slips: 0
+  numerals  8 1 6 1 7 9 2 12 9 3 19 9 18 19 19 5 19 25
+  baseline  DISCONTENTPREVAILS
+  decoder   DISCONTENTPREVAILS   [1-18:0]
+  used      baseline [1-18:0]
+  key       WINCHESTERWINCHEST
+  mech      DISCONTENTPREVAILS
+  read as   discontent prevails
+
+F6-15  frame 0108  23 numerals  z 6.8  beats all controls: True  decoder slips: 1
+  numerals  23 25 5 3 19 15 13 20 14 22 25 18 2 23 14 2 24 16 22 23 1 2 11
+  baseline  THREATENSNVAOZVFQIAOWKX
+  decoder   THREATENSSHEDESTRUNTION   [1-9:0 10-23:1]
+  used      decoder [1-9:0 10-23:1]
+  key       WINCHESTEWINCHESTERWINC
+  mech      THREATENSSHEDESTRUNTION
+  read as   threatens [t]he destru[c]tion
+
+F6-16  frame 0108  10 numerals  z 7.5  beats all controls: True  decoder slips: 0
+  numerals  11 6 9 3 10 9 20 12 9 3
+  baseline  GOVERNMENT
+  decoder   GOVERNMENT   [1-10:0]
+  used      baseline [1-10:0]
+  key       WINCHESTER
+  mech      GOVERNMENT
+  read as   Government
+
+F6-17  frame 0108/0109  38 numerals  z 10.9  beats all controls: True  decoder slips: 1
+  numerals  18 22 16 1 11 14 9 24 20 3 18 16 8 13 8 10 25 1 15 17 9 22 25 13 23 13 22 24 15 23 19 9 18 16 23 13 4 12
+  baseline  OECCSSARYTOYUPPORTTHEEMPERORTOPRESERVE
+  decoder   WNMISSARYTOYUPPORTTHEEMPERORTOPRESERVE   [1-4:8 5-38:0]
+  used      baseline [1-38:0]
+  key       WINCHESTERWINCHESTERWINCHESTERWINCHEST
+  mech      OECCSSARYTOYUPPORTTHEEMPERORTOPRESERVE
+  read as   [n]ec[e]ssary to [s]upport the Emperor to preserve
+
+F6-18  frame 0109  17 numerals  z 6.0  beats all controls: True  decoder slips: 0
+  numerals  7 6 8 11 12 13 7 10 22 22 22 18 9 3 1 5 20
+  baseline  COUNTRYCANSAVEHIM
+  decoder   COUNTRYCANSAVEHIM   [1-17:0]
+  used      baseline [1-17:0]
+  key       WINCHESTERWINCHES
+  mech      COUNTRYCANSAVEHIM
+  read as   country can save him
+
+F6-19  frame 0109  16 numerals  z 4.8  beats all controls: True  decoder slips: 0
+  numerals  19 18 7 15 2 10 2 25 1 22 22 1 25 3 6 15
+  baseline  PATRIOTSENSIMENT
+  decoder   PATRIOTSENSIMENT   [1-16:0]
+  used      baseline [1-16:0]
+  key       WINCHESTERWINCHE
+  mech      PATRIOTSENSIMENT
+  read as   patriot sen[t]iment
+
+F6-20  frame 0109  21 numerals  z 8.4  beats all controls: True  decoder slips: 0
+  numerals  8 6 8 25 12 2 3 18 5 15 23 25 18 20 11 16 11 10 1 14 8
+  baseline  DOUBTFULIFTHEWSUCCEED
+  decoder   DOUBTFULIFTHEWSUCCEED   [1-21:0]
+  used      baseline [1-21:0]
+  key       WINCHESTERWINCHESTERW
+  mech      DOUBTFULIFTHEWSUCCEED
+  read as   doubtful if the[y] succeed
+
+F6-21  frame 0109  68 numerals  z 14.4  beats all controls: True  decoder slips: 1
+  numerals  7 6 1 16 2 25 13 24 1 13 13 10 24 3 11 14 13 5 4 16 24 10 7 3 22 15 16 8 9 10 17 16 2 4 12 4 13 20 22 3 15 6 1 16 7 9 2 15 1 7 6 1 17 2 9 13 20 15 18 23 1 6 4 23 22 25 12 25
+  baseline  CONSIDEREDISLESSEXHGUSTEDTHANANYOFTHENATLONSONTHEXBIDDQRMHWOWOQZDDDS
+  decoder   CONSIDEREDISLESSEXHGUSTEDTHANANYOFTHENATLONSONTHECONTINENTITISFEARED   [1-49:0 50-68:1]
+  used      decoder [1-49:0 50-68:1]
+  key       WINCHESTERWINCHESTERWINCHESTERWINCHESTERWINCHESTEWINCHESTERWINCHESTE
+  mech      CONSIDEREDISLESSEXHGUSTEDTHANANYOFTHENATLONSONTHECONTINENTITISFEARED
+  read as   considered is less exh[a]usted than any of the nat[i]ons on the continent, it is feared
+
+F6-22  frame 0109  46 numerals  z 10.4  beats all controls: True  decoder slips: 1
+  numerals  19 9 2 4 2 15 22 13 15 17 13 10 6 17 19 15 13 12 2 3 12 1 1 5 11 15 22 25 15 1 13 2 18 2 22 1 11 16 14 18 25 22 15 7 7 18
+  baseline  PROFITOFTHISSTATEEFTHINGSTOSTRIKEDDECISIVEBIOW
+  decoder   PROFITOFTHISSTATEEFTHINGSTOSTRIKEDDECISIVEBILI   [1-44:0 45-46:4]
+  used      baseline [1-46:0]
+  key       WINCHESTERWINCHESTERWINCHESTERWINCHESTERWINCHE
+  mech      PROFITOFTHISSTATEEFTHINGSTOSTRIKEDDECISIVEBIOW
+  read as   profit of this state [o]f things to strike [a] decisive b[l]ow
+
+F6-23  frame 0109  15 numerals  z 4.5  beats all controls: True  decoder slips: 0
+  numerals  5 9 16 6 22 16 18 12 24 17 5 9 23 3 11
+  baseline  ARCHDUKECHARKES
+  decoder   ARCHDUKECHARKES   [1-15:0]
+  used      baseline [1-15:0]
+  key       WINCHESTERWINCH
+  mech      ARCHDUKECHARKES
+  read as   Arch Duke Char[l]es
+
+F6-24  frame 0109  8 numerals  z 3.1  beats all controls: True  decoder slips: 0
+  numerals  12 1 6 13 19 13 2 6
+  baseline  HISPARTY
+  decoder   HISPARTY   [1-8:0]
+  used      baseline [1-8:0]
+  key       WINCHEST
+  mech      HISPARTY
+  read as   his party
+
+F6-25  frame 0109  29 numerals  z 6.0  beats all controls: True  decoder slips: 1
+  numerals  3 18 5 15 17 10 14 1 4 14 19 9 22 11 21 1 1 4 22 1 23 17 18 11 20 16 3 24 3
+  baseline  YARRYOFTHEPRINCESWARTZENBUURG
+  decoder   YARRYOFTHEPRINCESWARTZENBULLE   [1-26:0 27-29:5]
+  used      baseline [1-29:0]
+  key       WINCHESTERWINCHESTERWINCHESTE
+  mech      YARRYOFTHEPRINCESWARTZENBUURG
+  read as   [p]ar[t]y of the Prince Swartzenb[o]urg
+
+F6-26  frame 0109  19 numerals  z 3.5  beats all controls: False  decoder slips: 1
+  numerals  18 23 14 9 19 13 20 12 13 19 22 8 17 10 22 2 16 15 8
+  baseline  OFALARMERKSQDMDFHHM
+  decoder   OFALARMERKEUTRATITY   [1-10:0 11-19:1]
+  used      decoder [1-10:0 11-19:1]
+  key       WINCHESTERINCHESTER
+  mech      OFALARMERKEUTRATITY
+  read as   [?of an armed neutrality]
+  note      proposal only: OFALARMERKEUTRATITY read as "of an armed neutrality" (four letters off)
+
+F6-27  frame 0109  40 numerals  z 5.5  beats all controls: True  decoder slips: 1
+  numerals  17 22 4 12 12 5 9 1 5 23 1 10 19 12 10 22 15 11 9 14 21 18 24 11 23 22 11 12 22 1 9 6 3 3 10 22 2 15 9 16
+  baseline  NEQOTIATIOWSFORAGDNERALNEACEAREOPERATHNG
+  decoder   HSMOTIATIOWSFORAGDNERALNEACEAREOPERATHNG   [1-3:9 4-40:0]
+  used      baseline [1-40:0]
+  key       WINCHESTERWINCHESTERWINCHESTERWINCHESTER
+  mech      NEQOTIATIOWSFORAGDNERALNEACEAREOPERATHNG
+  read as   ne[g]otiatio[n]s for a g[e]neral [p]eace are operat[i]ng
+
+F6-28  frame 0109  21 numerals  z 6.6  beats all controls: True  decoder slips: 0
+  numerals  15 22 19 17 1 5 1 10 22 24 13 11 14 9 24 1 9 24 5 22 11
+  baseline  LEFTHISCAPITALFEARING
+  decoder   LEFTHISCAPITALFEARING   [1-21:0]
+  used      baseline [1-21:0]
+  key       WINCHESTERWINCHESTERW
+  mech      LEFTHISCAPITALFEARING
+  read as   left his capital fearing
+
+F6-29  frame 0109  21 numerals  z 5.7  beats all controls: True  decoder slips: 1
+  numerals  5 7 3 13 7 22 11 15 10 15 23 25 18 15 13 14 1 16 22 22 18
+  baseline  APPPOACHOFTHERUSSIANO
+  decoder   IYVROACHOFTHERUSSIANO   [1-4:5 5-21:0]
+  used      baseline [1-21:0]
+  key       WINCHESTERWINCHESTERW
+  mech      APPPOACHOFTHERUSSIANO
+  read as   app[r]oach of the Russian[s]
+
+F6-30  frame 0109  18 numerals  z 7.6  beats all controls: True  decoder slips: 0
+  numerals  9 6 25 13 4 1 2 12 7 8 9 15 21 24 13 14 2 12
+  baseline  EOMPLETELYEXHAUSTE
+  decoder   EOMPLETELYEXHAUSTE   [1-18:0]
+  used      baseline [1-18:0]
+  key       WINCHESTERWINCHEST
+  mech      EOMPLETELYEXHAUSTE
+  read as   [c]ompletely exhauste[d]
+
+F6-31  frame 0109  6 numerals  z 1.5  beats all controls: False  decoder slips: 0
+  numerals  19 6 24 24 6 25
+  baseline  POLAND
+  decoder   POLAND   [1-6:0]
+  used      baseline [1-6:0]
+  key       WINCHE
+  mech      POLAND
+  read as   Poland
+
+F6-32  frame 0109  15 numerals  z 6.5  beats all controls: True  decoder slips: 0
+  numerals  8 1 6 17 10 22 11 1 1 13 22 11 14 17 23
+  baseline  DISTRACTEDSTATE
+  decoder   DISTRACTEDSTATE   [1-15:0]
+  used      baseline [1-15:0]
+  key       WINCHESTERWINCH
+  mech      DISTRACTEDSTATE
+  read as   distracted state
+
+F6-33  frame 0109  27 numerals  z 10.1  beats all controls: True  decoder slips: 0
+  numerals  15 6 6 17 19 7 19 10 10 22 10 1 17 3 6 24 13 16 9 22 5 7 2 9 23 10 21
+  baseline  LOSTALLCONFIDENCEINNAPOLEON
+  decoder   LOSTALLCONFIDENCEINNAPOLEON   [1-27:0]
+  used      baseline [1-27:0]
+  key       WINCHESTERWINCHESTERWINCHES
+  mech      LOSTALLCONFIDENCEINNAPOLEON
+  read as   lost all confidence in Napoleon
+
+F6-34  frame 0109  12 numerals  z 4.4  beats all controls: True  decoder slips: 0
+  numerals  14 1 1 5 7 2 21 8 11 20 9 10
+  baseline  KINGOFNAPLES
+  decoder   KINGOFNAPLES   [1-12:0]
+  used      baseline [1-12:0]
+  key       WINCHESTERWI
+  mech      KINGOFNAPLES
+  read as   King of Naples
+
+F6-35  frame 0109  23 numerals  z 8.2  beats all controls: True  decoder slips: 0
+  numerals  23 25 18 15 23 8 21 8 15 23 16 11 21 3 25 13 9 20 25 10 21 4 12
+  baseline  THEREMNATOMTHEGRANDARMY
+  decoder   THEREMNATOMTHEGRANDARMY   [1-23:0]
+  used      baseline [1-23:0]
+  key       WINCHESTERWINCHESTERWIN
+  mech      THEREMNATOMTHEGRANDARMY
+  read as   the remna[n]t o[f] the grand army
+
+F6-36  frame 0109  7 numerals  z 2.3  beats all controls: True  decoder slips: 0
+  numerals  8 1 6 5 13 14 2
+  baseline  DISGUST
+  decoder   DISGUST   [1-7:0]
+  used      baseline [1-7:0]
+  key       WINCHES
+  mech      DISGUST
+  read as   disgust
+
+F6-37  frame 0109  10 numerals  z 1.0  beats all controls: False  decoder slips: 0
+  numerals  25 1 16 3 10 10 17 15 22 2
+  baseline  VICEROIHAS
+  decoder   VICEROIHAS   [1-10:0]
+  used      baseline [1-10:0]
+  key       WINCHESTER
+  mech      VICEROIHAS
+  read as   Vicero[y] has
+
+F6-38  frame 0109  10 numerals  z 5.9  beats all controls: True  decoder slips: 0
+  numerals  23 25 18 1 7 8 20 8 9 13
+  baseline  THECOMMAND
+  decoder   THECOMMAND   [1-10:0]
+  used      baseline [1-10:0]
+  key       WINCHESTER
+  mech      THECOMMAND
+  read as   the command
+
+F6-39  frame 0109  21 numerals  z 7.2  beats all controls: True  decoder slips: 0
+  numerals  12 6 6 23 22 12 23 16 10 21 11 18 15 11 22 2 22 10 2 9 5
+  baseline  HOSZDQPIOMGABNDFOCFZA
+  decoder   USHEADQUARTERSATPOSEN   [1-21:1]
+  used      decoder [1-21:1]
+  key       INCHESTERWINCHESTERWI
+  mech      USHEADQUARTERSATPOSEN
+  read as   [hi]s headquarters at Posen
+
+F6-40  frame 0109  17 numerals  z 5.1  beats all controls: True  decoder slips: 0
+  numerals  12 18 9 3 23 9 2 12 13 14 3 19 18 15 4 7 21
+  baseline  HAVEENTEREYBERLLN
+  decoder   HAVEENTEREYBERLLN   [1-17:0]
+  used      baseline [1-17:0]
+  key       WINCHESTERWINCHES
+  mech      HAVEENTEREYBERLLN
+  read as   have entere[d] Berl[i]n
+
+F6-41  frame 0109  9 numerals  z 3.6  beats all controls: True  decoder slips: 0
+  numerals  8 1 6 24 11 15 13 24 14
+  baseline  DISASTERS
+  decoder   DISASTERS   [1-9:0]
+  used      baseline [1-9:0]
+  key       WINCHESTE
+  mech      DISASTERS
+  read as   disasters
+
+F6-42  frame 0109  26 numerals  z 9.6  beats all controls: True  decoder slips: 1
+  numerals  11 9 18 24 12 25 13 22 13 14 22 10 1 2 11 7 2 2 15 1 22 5 11 22 12 6
+  baseline  GREATDEPRESSNDSLTUTRSNXYTK
+  decoder   GREATDEPRESSIONOFTHENATION   [1-12:0 13-26:9]
+  used      decoder [1-12:0 13-26:9]
+  key       WINCHESTERWIINCHESTERWINCH
+  mech      GREATDEPRESSIONOFTHENATION
+  read as   great depression of the nation
+
+F6-43  frame 0109  8 numerals  z 3.3  beats all controls: True  decoder slips: 0
+  numerals  21 22 16 12 13 13 1 12
+  baseline  RECOURSE
+  decoder   RECOURSE   [1-8:0]
+  used      baseline [1-8:0]
+  key       WINCHEST
+  mech      RECOURSE
+  read as   recourse
+
+F6-44  frame 0109  17 numerals  z 7.4  beats all controls: True  decoder slips: 0
+  numerals  23 6 19 12 10 24 13 11 25 23 17 18 7 7 7 9 1
+  baseline  TOFORCEDDONATIONS
+  decoder   TOFORCEDDONATIONS   [1-17:0]
+  used      baseline [1-17:0]
+  key       WINCHESTERWINCHES
+  mech      TOFORCEDDONATIONS
+  read as   to forced donations
+
+F6-45  frame 0109  11 numerals  z 3.8  beats all controls: True  decoder slips: 0
+  numerals  16 22 1 24 6 25 20 21 9 14 3
+  baseline  MENANDMONEY
+  decoder   MENANDMONEY   [1-11:0]
+  used      baseline [1-11:0]
+  key       WINCHESTERW
+  mech      MENANDMONEY
+  read as   men and money
+
+F6-46  frame 0109  31 numerals  z 11.8  beats all controls: True  decoder slips: 0
+  numerals  6 12 7 7 12 5 1 1 4 14 15 18 6 17 23 2 14 21 13 3 18 23 7 6 23 9 9 1 5 23 17
+  baseline  BUTITISTHELASTEFFORTOFTHENATION
+  decoder   BUTITISTHELASTEFFORTOFTHENATION   [1-31:0]
+  used      baseline [1-31:0]
+  key       WINCHESTERWINCHESTERWINCHESTERW
+  mech      BUTITISTHELASTEFFORTOFTHENATION
+  read as   but it is the last effort of the nation
+
+F6-47  frame 0109  23 numerals  z 1.4  beats all controls: False  decoder slips: 3
+  numerals  12 18 9 3 19 9 13 13 2 7 11 14 25 10 10 9 11 2 3 4 23 6 1
+  baseline  HAVEANEFFXGWMMRNCUGUTON
+  decoder   HAVEANEFFCTABROADFELTON   [1-9:0 10-18:1 19-20:5 21-23:0]
+  used      decoder [1-9:0 10-18:1 19-20:5 21-23:0]
+  key       WINCHESTEWINCHESTECHWIN
+  mech      HAVEANEFFCTABROADFELTON
+  read as   have an eff[e]ct abroad [?but on]
+  note      first 17 letters read (E of EFFECT not enciphered); the last six numerals do not read; with 2 3 taken as one numeral 23 and offset 1 the end is BUTON
+
+F6-48  frame 0109/0110  20 numerals  z 9.7  beats all controls: True  decoder slips: 0
+  numerals  17 6 1 3 24 10 25 1 4 14 19 22 2 13 4 1 18 20 10 6
+  baseline  NONEFORTHEPEOPLEKNOW
+  decoder   NONEFORTHEPEOPLEKNOW   [1-20:0]
+  used      baseline [1-20:0]
+  key       WINCHESTERWINCHESTER
+  mech      NONEFORTHEPEOPLEKNOW
+  read as   none, for the people know
+
+F6-49  frame 0110  12 numerals  z 6.7  beats all controls: True  decoder slips: 0
+  numerals  6 22 18 11 8 13 22 11 16 12 9 21
+  baseline  BEENPRODUCED
+  decoder   BEENPRODUCED   [1-12:0]
+  used      baseline [1-12:0]
+  key       WINCHESTERWI
+  mech      BEENPRODUCED
+  read as   been produced
+
+F6-50  frame 0110  29 numerals  z 10.9  beats all controls: True  decoder slips: 0
+  numerals  1 6 8 9 22 4 9 3 1 21 5 21 18 24 12 22 21 6 10 3 12 22 5 10 7 8 13 20 15
+  baseline  WOULDHAVEMADEATANYOTHERMOMENT
+  decoder   WOULDHAVEMADEATANYOTHERMOMENT   [1-29:0]
+  used      baseline [1-29:0]
+  key       WINCHESTERWINCHESTERWINCHESTE
+  mech      WOULDHAVEMADEATANYOTHERMOMENT
+  read as   would have made at any other moment
+
+F6-51  frame 0110  33 numerals  z 10.5  beats all controls: True  decoder slips: 1
+  numerals  6 12 7 24 12 15 16 16 14 3 13 4 18 7 5 1 20 10 3 23 25 2 18 25 4 2 21 2 6 12 1 24 3
+  baseline  BUTATTHISTIMEIMEMCGOVKEBLFNUKCWGP
+  decoder   BUTATTHISTIMEIISNOTTHOUGHTOFWHILE   [1-14:0 15-33:1]
+  used      decoder [1-14:0 15-33:1]
+  key       WINCHESTERWINCESTERWINCHESTERWINC
+  mech      BUTATTHISTIMEIISNOTTHOUGHTOFWHILE
+  read as   but at this time i[t] is not thought of, while
+
+F6-52  frame 0110  30 numerals  z 11.2  beats all controls: True  decoder slips: 1
+  numerals  10 1 6 1 7 9 3 22 1 1 16 7 8 13 21 2 3 12 22 17 3 8 22 25 1 8 14 17 11 6
+  baseline  FISCONUPERMPUPCFUEAHYQIBHMFKPW
+  decoder   FISCONTSINSOMEOFTHEDEPARTMENTS   [1-6:0 7-30:3]
+  used      decoder [1-6:0 7-30:3]
+  key       WINCHERWINCHESTERWINCHESTERWIN
+  mech      FISCONTSINSOMEOFTHEDEPARTMENTS
+  read as   [d]isco[nte]nts in some of the departments
+
+F6-53  frame 0110  9 numerals  z 1.2  beats all controls: False  decoder slips: 1
+  numerals  16 18 20 11 2 2 17 3 25
+  baseline  MAGNIFIVD
+  decoder   MAGNIFIUS   [1-7:0 8-9:9]
+  used      baseline [1-9:0]
+  key       WINCHESTE
+  mech      MAGNIFIVD
+  read as   magnifi[e]d
+
+F6-54  frame 0110  27 numerals  z 8.4  beats all controls: True  decoder slips: 0
+  numerals  9 15 21 24 13 14 2 12 25 2 23 18 7 1 7 2 2 15 1 15 13 5 14 6 21 1 1
+  baseline  EXHAUSTEDSTATCOFTHEFINAHCES
+  decoder   EXHAUSTEDSTATCOFTHEFINAHCES   [1-27:0]
+  used      baseline [1-27:0]
+  key       WINCHESTERWINCHESTERWINCHES
+  mech      EXHAUSTEDSTATCOFTHEFINAHCES
+  read as   exhausted stat[e] of the fina[n]ces
+
+F6-55  frame 0110  5 numerals  z 1.0  beats all controls: False  decoder slips: 0
+  numerals  8 9 18 24 22
+  baseline  DREAD
+  decoder   DREAD   [1-5:0]
+  used      baseline [1-5:0]
+  key       WINCH
+  mech      DREAD
+  read as   dread
+
+F6-56  frame 0110  12 numerals  z 3.4  beats all controls: True  decoder slips: 0
+  numerals  9 4 3 15 13 9 2 13 10 1 7 22
+  baseline  EMPRUNTFORCE
+  decoder   EMPRUNTFORCE   [1-12:0]
+  used      baseline [1-12:0]
+  key       WINCHESTERWI
+  mech      EMPRUNTFORCE
+  read as   emprunt forcé
+
+F6-57  frame 0110  10 numerals  z 3.2  beats all controls: True  decoder slips: 0
+  numerals  8 18 5 8 11 4 9 11 1 2
+  baseline  DARKSHADES
+  decoder   DARKSHADES   [1-10:0]
+  used      baseline [1-10:0]
+  key       WINCHESTER
+  mech      DARKSHADES
+  read as   dark shades
+
+F6-58  frame 0110  7 numerals  z 0.6  beats all controls: False  decoder slips: 0
+  numerals  19 1 16 17 8 13 13
+  baseline  PICTPRE
+  decoder   VHUIARD   [1-7:3]
+  used      baseline [1-7:0]
+  key       WINCHES
+  mech      PICTPRE
+  read as   pict[u]re
+
+F6-59  frame 0110  12 numerals  z 4.0  beats all controls: True  decoder slips: 0
+  numerals  11 1 9 3 2 15 25 12 7 18 9 23
+  baseline  GIVEITRELIEF
+  decoder   GIVEITRELIEF   [1-12:0]
+  used      baseline [1-12:0]
+  key       WINCHESTERWI
+  mech      GIVEITRELIEF
+  read as   give it relief
+
+F6-60  frame 0110  12 numerals  z 4.5  beats all controls: True  decoder slips: 0
+  numerals  23 22 5 10 11 10 14 22 1 10 7 22
+  baseline  TERMSOFPEACE
+  decoder   TERMSOFPEACE   [1-12:0]
+  used      baseline [1-12:0]
+  key       WINCHESTERWI
+  mech      TERMSOFPEACE
+  read as   Terms of peace
+
+F6-61  frame 0110  38 numerals  z 11.1  beats all controls: True  decoder slips: 0
+  numerals  18 23 19 3 10 1 12 1 10 14 17 24 24 24 6 25 17 13 14 17 9 14 22 9 4 22 10 8 9 13 18 5 5 18 11 14 17 8
+  baseline  OFFEREDTOENGLANDIFSHEWILLABANDONRUSSIA
+  decoder   OFFEREDTOENGLANDIFSHEWILLABANDONRUSSIA   [1-38:0]
+  used      baseline [1-38:0]
+  key       WINCHESTERWINCHESTERWINCHESTERWINCHEST
+  mech      OFFEREDTOENGLANDIFSHEWILLABANDONRUSSIA
+  read as   offered to England if she will abandon Russia
+
+F6-62  frame 0110  13 numerals  z 3.0  beats all controls: False  decoder slips: 0
+  numerals  22 21 21 21 18 25 19 14 1 8 3 22 9
+  baseline  SDHXZDLGEYYEV
+  decoder   AMRDEBASSAGNE   [1-13:8]
+  used      decoder [1-13:8]
+  key       ERWINCHESTERW
+  mech      AMRDEBASSAGNE
+  read as   A Mr de Bassagne(?)
+  note      key run on from F6-61 (offset 8); z 3.0
+
+F6-63  frame 0110  12 numerals  z 4.7  beats all controls: True  decoder slips: 0
+  numerals  22 22 1 17 12 10 19 21 9 13 18 5
+  baseline  SENTTOLONDON
+  decoder   SENTTOLONDON   [1-12:0]
+  used      baseline [1-12:0]
+  key       WINCHESTERWI
+  mech      SENTTOLONDON
+  read as   sent to London
+
+F6-64  frame 0110  9 numerals  z 3.6  beats all controls: True  decoder slips: 0
+  numerals  19 9 2 13 7 14 9 18 14
+  baseline  PROPOSALS
+  decoder   PROPOSALS   [1-9:0]
+  used      baseline [1-9:0]
+  key       WINCHESTE
+  mech      PROPOSALS
+  read as   proposals
+
+F6-65  frame 0110  17 numerals  z 2.5  beats all controls: True  decoder slips: 1
+  numerals  8 12 23 1 22 22 19 9 1 1 11 11 2 9 22 8 13
+  baseline  DUKCDALBERGTOLDME
+  decoder   QYZHAOMBERGTOLDME   [1-7:1 8-17:0]
+  used      baseline [1-17:0]
+  key       WINCHESTERWINCHES
+  mech      DUKCDALBERGTOLDME
+  read as   Duk[e] Dalberg told me
+  note      baseline; reads only with numeral 9 kept as 1 (second reader: 17)
+
+F6-66  frame 0110  6 numerals  z 2.7  beats all controls: True  decoder slips: 0
+  numerals  5 5 6 20 23 13
+  baseline  ANSWER
+  decoder   ANSWER   [1-6:0]
+  used      baseline [1-6:0]
+  key       WINCHE
+  mech      ANSWER
+  read as   answer
+
+F6-67  frame 0110  20 numerals  z 9.2  beats all controls: True  decoder slips: 0
+  numerals  19 9 2 13 7 14 17 1 5 23 17 10 19 12 10 11 13 8 24 14
+  baseline  PROPOSITIONSFORPEACE
+  decoder   PROPOSITIONSFORPEACE   [1-20:0]
+  used      baseline [1-20:0]
+  key       WINCHESTERWINCHESTER
+  mech      PROPOSITIONSFORPEACE
+  read as   propositions for peace
+
+F6-68  frame 0110  15 numerals  z 7.4  beats all controls: True  decoder slips: 0
+  numerals  22 25 2 15 12 7 7 12 19 24 9 20 7 3 22
+  baseline  SHORTLYEXPECTED
+  decoder   SHORTLYEXPECTED   [1-15:0]
+  used      baseline [1-15:0]
+  key       WINCHESTERWINCH
+  mech      SHORTLYEXPECTED
+  read as   shortly expected
+
+F6-69  frame 0110  30 numerals  z 7.1  beats all controls: True  decoder slips: 0
+  numerals  19 9 2 13 7 14 9 18 14 21 5 21 13 17 7 13 3 25 14 18 5 6 1 3 6 3 19 8 9 13
+  baseline  PROPOSALSMADZTORUSSIAONENGLAND
+  decoder   PROPOSALSMADZTORUSSIAONENGLAND   [1-30:0]
+  used      baseline [1-30:0]
+  key       WINCHESTERWINCHESTERWINCHESTER
+  mech      PROPOSALSMADZTORUSSIAONENGLAND
+  read as   proposals mad[e] to Russia o[r] England
+
+F6-70  frame 0110  39 numerals  z 10.0  beats all controls: True  decoder slips: 1
+  numerals  5 5 14 15 5 1 12 20 1 4 23 9 14 9 2 15 7 20 1 16 18 11 22 24 12 5 21 14 22 2 16 22 17 7 19 15 25 16 19
+  baseline  ANARMEDNEUTRALITYNEGOTIATINGASMEDIATRIX
+  decoder   ANARMEDNEUTRALITYNEGOTIATINGASMEDIATRIP   [1-38:0 39-39:2]
+  used      baseline [1-39:0]
+  key       WINCHESTERWINCHESTERWINCHESTERWINCHESTE
+  mech      ANARMEDNEUTRALITYNEGOTIATINGASMEDIATRIX
+  read as   an armed neutrality, negotiating as mediatrix
+
+F6-71  frame 0110  29 numerals  z 6.7  beats all controls: True  decoder slips: 0
+  numerals  22 12 16 1 23 14 1 13 16 20 13 5 7 6 23 14 12 20 1 16 18 11 22 18 12 5 22 21 14
+  baseline  SUCCESSFULINTHESDNEGOTIUTIOOS
+  decoder   SUCCESSFULINTHESDNEGOTIUTIOOS   [1-29:0]
+  used      baseline [1-29:0]
+  key       WINCHESTERWINCHESTERWINCHESTE
+  mech      SUCCESSFULINTHESDNEGOTIUTIOOS
+  read as   successful in thes[e] negoti[a]tio[n]s
+
+F6-72  frame 0110  20 numerals  z 8.2  beats all controls: True  decoder slips: 0
+  numerals  5 11 7 6 23 1 6 22 1 22 22 22 2 4 8 10 19 8 9 13
+  baseline  ATTHEEXPENSEOFPOLAND
+  decoder   ATTHEEXPENSEOFPOLAND   [1-20:0]
+  used      baseline [1-20:0]
+  key       WINCHESTERWINCHESTER
+  mech      ATTHEEXPENSEOFPOLAND
+  read as   at the expense of Poland
+
+F6-73  frame 0110  29 numerals  z 6.9  beats all controls: True  decoder slips: 2
+  numerals  18 5 7 6 2 14 25 3 14 3 22 11 21 1 1 10 23 12 14 23 10 25 22 16 21 10 3 24 15
+  baseline  ONTHISRVSTSTHCHOPESOFHISCOURT
+  decoder   ONTHISRESTSTHCHOPESOFHISCOURT   [1-7:0 8-8:6 9-29:0]
+  used      baseline [1-29:0]
+  key       WINCHESTERWINCHESTERWINCHESTE
+  mech      ONTHISRVSTSTHCHOPESOFHISCOURT
+  read as   on this r[e]sts th[e] hopes of his court
+
+F6-74  frame 0110  18 numerals  z 5.5  beats all controls: True  decoder slips: 0
+  numerals  17 13 10 16 15 7 18 21 8 9 13 11 1 6 4 19 8 13
+  baseline  NVWSWLKOMZITNHLXZF
+  decoder   HISCROWNANDGISFAME   [1-18:9]
+  used      decoder [1-18:9]
+  key       RWINCHESTERWINCHES
+  mech      HISCROWNANDGISFAME
+  read as   his crown and [h]is fame
+
+# letters supplied in the reading (wrong or missing in the cipher): 60; letters dropped as excess: 2 (counted from the "read as" lines, outside [?...] guesses; recounted 11 Nov 2026).
