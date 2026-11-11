@@ -7,7 +7,7 @@ for(const t of terms){
  await p.fill('#searchForm\\:searchTerm_input',t);
  try{await p.click('label[for="searchForm:j_idt249:4:item"]',{timeout:3000});}catch(e){await p.check('#searchForm\\:j_idt249\\:4\\:item',{force:true}).catch(()=>{});}
  if(digi) await p.check('#searchForm\\:onlyWithDigitalDocuments',{force:true}).catch(e=>console.error('digi fail'));
- await p.click('#searchForm\\:searchButton'); await p.waitForLoadState('networkidle'); await p.waitForTimeout(5000);
+ await p.click('#searchForm\\:searchButton'); await p.waitForLoadState('networkidle').catch(()=>{}); await p.waitForTimeout(5000);
  const txt=await p.innerText('body'); const m=txt.match(/(\d+) - (\d+) von (\d+) Dokumenten/);
  const i=txt.indexOf('Dokumenten angezeigt'); 
  res[t]={count:m?m[0]:'0', text: i>0?txt.slice(i+20):txt.slice(0,300)};
