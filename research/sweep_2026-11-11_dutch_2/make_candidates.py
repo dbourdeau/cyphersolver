@@ -1,0 +1,134 @@
+"""Builds candidates.json and key_leads.json for the 11 Nov 2026 second Dutch pass (archieven.nl site search).
+No row here carries a vetting block: for none of them could the printed edition or literature that might hold a
+reading be opened in this pass (see each row's `verify`). All are leads from the archive description; none viewed."""
+import json, os
+H = os.path.dirname(os.path.abspath(__file__))
+SRC = "archieven.nl sweep, second pass (site search, 11 Nov 2026)"
+NOTE = "Scored from the archive description during the 11 Nov 2026 archieven.nl sweep (research/sweep_2026-11-11_dutch_2/); not viewed"
+
+
+def link(adt, code, term, label):
+    return {"label": label, "href": f"https://www.archieven.nl/nl/zoeken?mivast=0&mizig=210&miadt={adt}&miview=inv2&milang=nl&micode={code}&mizk_alle={term}"}
+
+
+def row(**k):
+    k.setdefault("seen", "catalogue"); k.setdefault("source", SRC); k.setdefault("score_note", NOTE)
+    k.setdefault("needs_archive_scan", "yes")
+    return k
+
+
+rows = [
+    row(year=1787, date="1787", title="Orangist regents and Sir James Harris to Van Teylingen of Rotterdam, letters of 1787 with a number code for persons, bodies and places",
+        correspondents="J. Reigersman, A.J. Royer, W. van Citters, A.S. van der Hoop, F.J. de Larrey, W. van Lynden van Hemmen and J. Harris → Van Teylingen (member of the Rotterdam vroedschap, deputy to the States of Holland)",
+        place="The Hague and elsewhere", language="Dutch and French", region="Low Countries", period="1701-1800",
+        shelfmark="Stadsarchief Rotterdam, 37-01 Collectie Van Teylingen (Rotterdamse regentencollecties), inv. nr. 17",
+        folio_note="1 pak; the code is used in some of the letters only, for names", cls="C",
+        status="Inventory: \"In sommige brieven wordt een geheime cijfercode gebruikt ter aanduiding van personen, colleges en plaatsen.\" No scans online, no key or decipherment mentioned. Not on DECODE (searched Teylingen, Reigersman, Larrey, Van der Hoop: nothing).",
+        why="The Orangist side of the crisis of 1787 (the Prussian intervention), with the British envoy Harris among the writers; the code hides the names.",
+        importance=3, solvability=1, difficulty=3,
+        verify="Order scans. A names-only number code: look for the list in the Van Teylingen collection and in Van de Spiegel's and Harris's papers; compare with the 1787 Orangist codes on DECODE (KHA A31, NA 3.01.26). Colenbrander, De Patriottentijd III, not searched for these letters, so no vetting block.",
+        links=[link(184, "37-01", "cijfercode", "Stadsarchief Rotterdam 37-01 inv. 17 on archieven.nl")],
+        prior_art="not established (11 Nov 2026: DECODE search 0; cryptiana index, GL.htm and unsolved.htm 0 for teylingen, reigersman, larrey, citters; one web search found nothing on these letters; Colenbrander not opened)",
+        access_note="No scans (\"Bekijk gevonden bestanden (0)\"); reading room or scan order, Stadsarchief Rotterdam."),
+    row(year=1781, date="1781 and undated", title="Hudig family of Rotterdam: two letter books written in a hard-to-read secret script, partly English",
+        correspondents="a member of the Hudig family (merchants, Rotterdam) → business correspondents", place="Rotterdam", language="Dutch and English",
+        region="Low Countries", period="1701-1800",
+        shelfmark="Stadsarchief Rotterdam, 412-01 Familiearchief Hudig, inv. nrs. 57-58 (Brievenboeken; 57 is 1781, 58 undated)",
+        folio_note="2 volumes (the series 57-840 is 3 volumes, 1765-1781)", cls="C",
+        status="Inventory: \"Nr. 57-58 zijn geschreven in een moeilijk leesbaar geheimschrift, deels in het Engels. De jaren zijn, op een uitzondering na, bij de brieven niet vermeld.\" Not viewed. It may be a shorthand rather than a cipher (an Anglo-Dutch merchant house of the 1780s); if so it falls outside the project.",
+        why="Two whole merchant letter books of the Fourth Anglo-Dutch War years in a private script: a long text.",
+        importance=2, solvability=1, difficulty=3,
+        verify="Order one opening of inv. 57 and decide cipher or shorthand (Byrom, Gurney, Taylor) before anything else.",
+        links=[link(184, "412-01", "geheimschrift", "Stadsarchief Rotterdam 412-01 inv. 57-58 on archieven.nl")],
+        prior_art="not established (11 Nov 2026: DECODE search 'Hudig' 0; cryptiana 0; one web search found only a Leiden thesis on Ferrand Whaley Hudig's funds, which does not mention the script in its abstract)",
+        access_note="No scans online; Stadsarchief Rotterdam."),
+    row(year=1596, date="1595-1597", title="Everard van Reyd with Diederich Wier, agent of the States General, on the Jülich-Cleves succession: some words in a number code",
+        correspondents="Everard van Reyd (councillor and secretary of Willem Lodewijk, deputy of Gelderland to the States General) ↔ Diederich Wier (Wyer)",
+        place="The Hague / Jülich-Cleves", language="Latin, French and German", region="Low Countries", period="1589-1598",
+        shelfmark="Tresoar (Leeuwarden), 7 Stadhouderlijk archief: het archief in Tresoar, inv. nr. 808",
+        folio_note="1 pak; code limited to single words", cls="B",
+        status="Inventory: \"In de brieven komen soms enige woorden in cijfercode voor\"; it adds that the Resolutiën der Staten-Generaal 1593-1595 and 1596-1597 refer to pieces of the bundle \"die overigens niet worden afgedrukt\". No scans online.",
+        why="Dutch policy on the Jülich succession in the 1590s; a sibling of the Van Reyd and Stöver cipher letters already in the project (catalogue 1950, 1953; leads 1951-1956).",
+        importance=3, solvability=1, difficulty=2,
+        verify="Order scans; try the Willem Lodewijk key lists Tresoar 323 inv. 5592.52 and 5535 (key leads of the first pass) and the casimir1618 material. The RGP Resolutiën volumes were not opened, so no vetting block.",
+        links=[link(36, "7", "cijfercode", "Tresoar 7 inv. 808 on archieven.nl")],
+        prior_art="not established (11 Nov 2026: DECODE search 'Reyd', 'Wier' 0; cryptiana 0; inventory says the pieces are not printed in the Resolutiën; no web search run)",
+        access_note="No scans online; Tresoar reading room or scan order."),
+    row(year=1590, date="1589, 1590, 1593 and undated", title="Stadholder Willem Lodewijk to the Frisian deputies Boner and Juckema and to the captains at Bourtange: three letters partly in cipher",
+        correspondents="Willem Lodewijk of Nassau → Albert Everts Boner; → Boner and Epe Jacobs Juckema; → the captains at Bourtange (copy)",
+        place="Friesland / in the field", language="Dutch", region="Low Countries", period="1589-1598",
+        shelfmark="Tresoar (Leeuwarden), 323 Familie Van Eysinga-Vegelin van Claerbergen, inv. nrs. 5592.23, 5592.45 and 5592.51",
+        folio_note="3 pieces: 5592.23 (1589 or 1590), 5592.45 (1593 or undated), 5592.51 (copy of a letter of 1593)", cls="A",
+        status="Inventory: \"nr. 5592-23 is gedeeltelijk in geheimschrift\"; \"Inv. nr. 5592-45 is voor een deel in geheimschrift\"; 5592.51 \"Voor een deel in geheimschrift\". The same bundle holds inv. 5592.52, a list explaining the cipher used by Willem Lodewijk and the Gedeputeerde Staten (key lead of the first pass). No scans online.",
+        why="The stadholder's field orders in the campaigns of 1589-1593, with the key list in the same bundle: a quick, checkable reading once scanned.",
+        importance=3, solvability=2, difficulty=1,
+        verify="Order scans of 5592.23, .45, .51 with 5592.52 and inv. 5535. Check whether the inventory maker or an edition of Willem Lodewijk's letters already gives the text; none was opened, so no vetting block.",
+        links=[link(36, "323", "geheimschrift", "Tresoar 323 inv. 5592 on archieven.nl")],
+        prior_art="not established (11 Nov 2026: DECODE search 0 for Boner, Juckema; cryptiana 0; no edition opened)",
+        access_note="No scans online; Tresoar."),
+    row(year=1787, date="3 Sept 1787", title="Unsigned cipher letter asking for troops to support the Orangists, in William V's Frisian papers",
+        correspondents="unknown (Frisian Orangist) → Prince William V or his court", place="Friesland", language="Dutch or French (unknown)",
+        region="Low Countries", period="1701-1800",
+        shelfmark="Koninklijk Huisarchief, The Hague, archive of Prince Willem V, papers on Friesland; described at Tresoar as toegang 7-14, inv. nr. 713 (file \"1788\")",
+        folio_note="one letter in a file of correspondence with the States and Gedeputeerde Staten of Friesland", cls="C",
+        status="Inventory: \"Op 3 september 1787 een ongesigneerde brief in geheimschrift met het verzoek om troepen ter ondersteuning van de prinsgezinden\". The original is at the Koninklijk Huisarchief (the Tresoar inventory describes KHA holdings). No scans online.",
+        why="A call for military help from Friesland days before the Prussian invasion of September 1787 (the Franeker Patriot rising).",
+        importance=3, solvability=1, difficulty=3,
+        verify="Ask the KHA for a scan; compare with the 1787 Orangist ciphers on DECODE (KHA A31 inv. 205, NA 3.01.26 inv. 190). Colenbrander and the Frisian literature on 1787 not opened, so no vetting block.",
+        links=[link(36, "7-14", "geheimschrift", "Tresoar 7-14 inv. 713 on archieven.nl")],
+        prior_art="not established (11 Nov 2026: known.py and DECODE searches show other 1787 Orangist cipher letters, none from Friesland of 3 Sept 1787; no literature opened)",
+        access_note="Koninklijk Huisarchief, written request; no scans."),
+    row(year=1656, date="draft undated, with a report of [1638] in the papers of Jacobus de la Torre (vicar apostolic 1651-1661)",
+        title="Holland Mission: draft, partly in number cipher, on the new missions and the intrusion of the Jesuits, with the report to Propaganda Fide",
+        correspondents="J. de la Torre, A. de Brienen and N. Heynot → Congregation de Propaganda Fide", place="Utrecht / Rome", language="Latin",
+        region="Low Countries", period="1651-1700",
+        shelfmark="Het Utrechts Archief, 1003 Apostolische Vicarissen van de Hollandse zending, inv. nr. 191",
+        folio_note="1 omslag, 63 scan files online; the cipher is in the draft (\"concept, gedeeltelijk in cijfers\")", cls="B",
+        status="Inventory: \"Hierbij concept, gedeeltelijk in cijfers, over de nieuwe missies en het indringen van de jezuïeten\"; note \"Gedrukt AAU, 12 (1884) 189-213, 414-433 ... Over geheimschrift cf. Cornelissen, Romeinsche bronnen, I, blz. 643, noot 2.\" Scans are online but were not viewed in this pass. The report is printed and the cipher is discussed in print, so the draft may well be read already.",
+        why="The secular clergy's case against the Jesuits in the Dutch mission; the cipher of the vicars apostolic recurs in their Roman correspondence.",
+        importance=2, solvability=3, difficulty=2,
+        verify="Open AAU 12 (1884) and Cornelissen, Romeinsche bronnen I (RGP 77) p. 643 n. 2 first: if they give the key or the text of the draft, close this lead. Then view the 63 scans. Neither book could be opened here (not on archive.org under the titles searched), so no vetting block.",
+        links=[link(39, "1003", "geheimschrift", "Het Utrechts Archief 1003 inv. 191 on archieven.nl (scans)")],
+        prior_art="probably treated in print (inventory cites AAU 12 and Cornelissen on the cipher); not opened 11 Nov 2026",
+        needs_archive_scan="no", access_note="63 scan files in the archieven.nl / Het Utrechts Archief viewer (JavaScript; anl_view.js)."),
+    row(year=1517, date="19 Aug 1517; 22 Aug (1508); one undated", title="Charles of Guelders: three letters in or partly in cipher with no solution noted in the inventory",
+        correspondents="Guillaume Quynon, Jehan Willot and Peter van den Bosch (envoys to the King of France) → Duke Charles; Reinier, bastard of Guelders → Duke Charles; N.N. → Hendrik van Salsborch",
+        place="France; Guelders", language="French and Dutch", region="Low Countries", period="1497-1559",
+        shelfmark="Gelders Archief, 0001 Graven en hertogen van Gelre, regest nrs. 1703.1-0062 (original inv. 1703, red no. 1025), 1738.01-0059 (inv. 1738 no. 2505) and 1738.01-0057 (inv. 1738 no. 2504-2)",
+        folio_note="3 letters: 1517 \"Deels in geheimschrift\"; 1508 \"Deels geheimschrift\"; undated \"In geheimschrift\"", cls="A",
+        status="Inventory notes as quoted; for the 1517 letter also \"Druk: Nijhoff, Gedenkwaardigheden VI 2, 867\". Two sister items in the same series are noted as solved (1703.1-0160 of 1532, \"opgelost door I.A. Nijhoff, sleutel en transcriptie van diens hand toegevoegd\"; 1733.1-0071, transcription written above) and are left out. No scans online.",
+        why="Guelders diplomacy with France against the Habsburgs; Nijhoff's key for the 1532 letter may read the others.",
+        importance=3, solvability=1, difficulty=2,
+        verify="Open Nijhoff, Gedenkwaardigheden VI part 2 no. 867: if it prints the cipher passages in clear, drop the 1517 letter. Only VI part 3 and the earlier volumes are on archive.org (opened: no Quynon or Willot), so no vetting block. Order scans of the three letters and of Nijhoff's key with 1703.1-0160.",
+        links=[link(37, "0001", "geheimschrift", "Gelders Archief 0001, items found for 'geheimschrift' on archieven.nl")],
+        prior_art="not established (11 Nov 2026: Nijhoff VI/2 not found online; DECODE and cryptiana not searched for these)",
+        access_note="No scans online; Gelders Archief scan on demand."),
+    row(year=1850, date="undated, 19th century", title="Sister Padentiana to the parish priest of Harlingen: an invitation to tea, written in secret script",
+        correspondents="Sister Padentiana → the pastor of Harlingen", place="Harlingen", language="Dutch", region="Low Countries", period="1801-1900",
+        shelfmark="Tresoar (Leeuwarden), 273-03 Rooms-Katholieke parochie Harlingen, inv. nr. 311",
+        folio_note="1 piece", cls="C",
+        status="Inventory: \"De brief is gesteld in geheimschrift\"; the archivist gives the content (an invitation to tea with the mother superior on St Clare's day), so it has probably been read or carries its clear text. No scan online.",
+        why="A convent pastime cipher; of interest only as a quick exercise.", importance=1, solvability=1, difficulty=1,
+        verify="Ask Tresoar whether a transcription lies with the letter; the inventory summary suggests it was read.",
+        links=[link(36, "273-03", "geheimschrift", "Tresoar 273-03 inv. 311 on archieven.nl")],
+        prior_art="probably read by the inventory maker (content summarised); nothing searched beyond DECODE 'Harlingen' (0)",
+        access_note="No scans online; Tresoar."),
+]
+keys = [
+    {"shelfmark": "Huis Bergh ('s-Heerenberg; via Erfgoedcentrum Achterhoek en Liemers), 0214 Huis Bergh, inv. nr. 1154",
+     "note": "Minute book of Count Willem van den Bergh for Jan-Nov 1574: \"Bevat afschriften van brieven en oorkonden, benevens een aantal sleutels voor cijferschrift\". Scans online in the archieven.nl viewer (not viewed). Keys of William of Orange's brother-in-law in the year of Mookerheide: try on the Orange-Nassau cipher letters of 1572-1576.",
+     "href": link(26, "0214", "cijferschrift", "")["href"]},
+    {"shelfmark": "Tresoar, 319 Familie Van Beyma thoe Kingma, inv. nr. 2419",
+     "note": "\"Een 'tafel' voor geheim schrift. Met een gebruiksaanwijzing\", 1 piece, undated (a Patriot family of the 1780s). No scan.",
+     "href": link(36, "319", "geheim%20schrift", "")["href"]},
+    {"shelfmark": "Historisch Centrum Leeuwarden, 1759 Beucker Andreae c.a., inv. nr. 87",
+     "note": "\"Register met aantekeningen van Daniël Hermannus Beucker Andreae betreffende codes voor het schrijven van geheime brieven, (18de-19e eeuws)\". Not opened.",
+     "href": link(76, "1759", "geheime%20brieven", "")["href"]},
+]
+json.dump(rows, open(os.path.join(H, "candidates.json"), "w", encoding="utf8"), indent=1, ensure_ascii=False)
+json.dump(keys, open(os.path.join(H, "key_leads.json"), "w", encoding="utf8"), indent=1, ensure_ascii=False)
+req = "year date title correspondents place language region period shelfmark folio_note cls status why importance solvability difficulty score_note verify links seen source prior_art needs_archive_scan access_note".split()
+for r in rows:
+    miss = [k for k in req if k not in r]
+    assert not miss, (r["shelfmark"], miss)
+print(len(rows), "rows;", len(keys), "key leads")
