@@ -323,5 +323,37 @@ R.append(row(1646, "about 1646-1647",
  L([("A1 Fasc. 11 fol. 87-92", 13669)]),
  "not vetted: Szilagyi's editions not opened. Lang 2015 C.Rag rows are E 190 letters, not this one; DECODE 'Rákóczi György': no record."))
 
+
+# ---- Greece: General State Archives fonds-level inventory (greekarchivesinventory.gak.gr, AtoM). Leads only. ----
+GAK = "https://greekarchivesinventory.gak.gr/index.php/"
+def grow(year, date, title, corr, place, period, shelf, folio, status, why, imp, sol, dif, verify, slug, label):
+    r = row(year, date, title, corr, place, "Greek", period, shelf, folio, "C", status, why, imp, sol, dif, verify,
+            [{"label": label, "href": GAK + slug}], "not vetted: fonds-level description only; no edition or literature search done (11 Nov 2026)")
+    r["region"] = "Other"; r["source"] = "GAK Greek Archives Inventory sweep, 11 Nov 2026"
+    r["score_note"] = "Scored from the fonds-level description in the GAK Greek Archives Inventory during the 11 Nov 2026 sweep (research/sweep_2026-11-11_southeast/); not viewed"
+    r["access_note"] = "Fonds-level record only; the GAK image portal (arxeiomnimon.gak.gr) did not answer from this network. Ask GAK Central Service, Athens, for the item list and scans."
+    r["needs_archive_scan"] = "unknown"
+    return r
+R.append(grow(1904, "1904", "Letters to Pavlos Melas on organising the Macedonian Struggle, 1904, 'many written in a cryptographic alphabet'",
+ "Georgios Tsontos, Konstantinos Mazarakis-Ainian, Konstantinos Rammos, Louisa Riancourt, I. Markou, Germanos Karavangelis and others → Pavlos Melas",
+ "Macedonia / Athens (not stated)", "1901-1950", "GAK (General State Archives of Greece), Central Service, Archive of Pavlos and Natalia Melas, Ar. Eis. 176",
+ "Number of cipher letters not stated ('polles').",
+ "GAK inventory: letters of 1904 to Pavlos Melas on the organisation of the Macedonian Struggle, 'πολλές από αυτές είναι γραμμένες με κρυπτογραφικό αλφάβητο'. No decipherment is mentioned. Not on DECODE (search 'Greece', 'Athens': one unrelated record each).",
+ "The officers' and the bishop of Kastoria's secret correspondence in the year Melas was killed.", 4, 4, 2,
+ "Lead only: check Natalia Mela's 'Pavlos Melas' (1926) and the Macedonian Struggle editions for printed texts and the alphabet; ask GAK for the item list.",
+ "wwxf-4cee-dx67", "GAK inventory, Archive of Pavlos and Natalia Melas"))
+R.append(grow(1944, "1941-1946", "Petimezas family archive: EDES resistance 'cryptographic notes' (1941-44) and 'cryptograms' of 1945-46",
+ "EDES-EOEA organisation; Iraklis Petimezas, Ministry of Press and Information", "Greece", "1901-1950",
+ "GAK (General State Archives of Greece), Central Service, Archive of the Petimezas family, Ar. Eis. 387",
+ "Extent not stated.", "GAK inventory: EDES-EOEA papers with 'κρυπτογραφικά σημειώματα'; papers of Iraklis Petimezas's service at the Ministry of Press and Information with 'κρυπτογραφήματα' (1945-1946). No decipherment mentioned.",
+ "Wartime resistance cipher traffic of EDES.", 2, 2, 4, "Lead only: ask GAK whether the cryptograms have plaintexts filed with them.",
+ "u-1197", "GAK inventory, Petimezas family archive"))
+R.append(grow(1800, "between 1715 and 1869", "Ioannis Chotzis collection: a 'cryptographic document' in a folder of 18th-19th century private papers",
+ "unknown", "unknown (Epirus context: a declaration of loyalty to Ali Pasha is in the same folder)", "1701-1800",
+ "GAK (General State Archives of Greece), Central Service, Collection of Ioannis Chotzis (K48ιζ), GRGSA-CA COL155.02",
+ "One document.", "GAK inventory: the folder holds, among others, 'Κρυπτογραφικό έγγραφο'. Date, writer and system not given.",
+ "An unexplained cipher document among Epirote merchants' papers.", 2, 2, 3, "Lead only: ask GAK for a scan; it may be a Filiki Eteria alphabet document (known system).",
+ "48-10", "GAK inventory, Chotzis collection"))
+
 json.dump(R, open(__file__.rsplit("/", 1)[0] + "/candidates.json", "w"), ensure_ascii=False, indent=1)
 print(len(R), "rows;", sum(1 for r in R if "vetting" in r), "with vetting")

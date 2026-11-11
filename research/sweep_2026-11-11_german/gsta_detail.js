@@ -8,7 +8,7 @@ for(let i=0;i<a.length;i+=2){const term=a[i],sig=a[i+1]; if(res[sig]&&!res[sig].
  try{
  await p.goto('https://archive.spk-berlin.de/actaproweb/search.xhtml',{waitUntil:'domcontentloaded',timeout:90000});
  await p.waitForSelector('#searchForm\\:searchTerm_input',{timeout:60000});
- await p.fill('#searchForm\\:searchTerm_input',term);
+ await p.waitForTimeout(4000); await p.fill('#searchForm\\:searchTerm_input',term);
  await p.click('label[for="searchForm:j_idt249:4:item"]',{timeout:3000}).catch(()=>{});
  await p.click('#searchForm\\:searchButton'); await p.waitForTimeout(7000);
  const idx=await p.$$eval('a',(els,sig)=>els.findIndex(e=>e.textContent.replace(/\s+/g,' ').includes(sig+' -')),sig);
