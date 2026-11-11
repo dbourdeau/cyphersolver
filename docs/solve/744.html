@@ -47,7 +47,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 744 · class C · priority 5.0 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 744 · class C · priority 5.0 · in progress</p>
   <h1>Gomez Suarez de Figueroa, Genoa: cipher letters to Charles V and Prince Philip 1534-1557 (20 items, several systems, no decipherments seen)</h1>
   <p class="sub">A long run of one ambassador's cipher letters (Doria, Corsica 1553, the Farnese and Vasto affairs): cipher originals with sibling clear copies or duplicates give cribs; any without a descifrado are open.</p>
   <dl class="facts">
@@ -61,6 +61,7 @@
 </section>
 
 <main>
+<div class="callout blue"><p><strong>In progress here.</strong> <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/figueroa1534/NOTES.md" rel="noopener">targets/figueroa1534</a> is working on this cipher (status: in progress). Read its NOTES.md before you start, and hand it to your agent with this page: it records what was transcribed, tried and ruled out, and the next step.</p></div>
 <h2>Hand this page to your AI agent</h2>
 <p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
 <p class="urlline">https://cyphersolver.com/solve/744.html</p>
@@ -69,6 +70,10 @@
 This page: https://cyphersolver.com/solve/744.html
 
 You are helping a public research project read historical cipher letters that nobody has read yet.
+
+START HERE: the project is already working on this cipher. Read these notes before anything else and
+build on them; they record what was transcribed, tried and ruled out, and the next step:
+  https://github.com/dbourdeau/cyphersolver/blob/main/targets/figueroa1534/NOTES.md  (status: in progress)
 
 THE CIPHER
   Title:          Gomez Suarez de Figueroa, Genoa: cipher letters to Charles V and Prince Philip 1534-1557 (20 items, several systems, no decipherments seen)
@@ -100,20 +105,21 @@ THE CIPHER
     - PARES 3568297 (EST,LEG,1386,92): https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/3568297
 
 WHAT IS KNOWN
-  Status: PARES hits (27 Oct 2026, "carta cifrada"/"cifrada"), item titles "Carta cifrada de Gómez Suárez de Figueroa ..." or "Duplicado de carta cifrada ...". PARES full-text search matches words, not the phrase, so a term hit is a pointer; the hit-list title says the letter is in cipher, not whether a decipherment is filed with it. Not in the repo (known.py: no hits for the legajos; the Suárez de Figueroa hits are Lorenzo, Venice 1504). 28 Oct 2026: a further ciphered piece in the same legajo run, not in the list above, is catalogue 840 (EST,LEG,1380,151-154, 1549); its sender is not stated, so it may not be Figueroa.
-  Outcome so far: not yet attempted by the project
+  Status: PARES hits (27 Oct 2026, "carta cifrada"/"cifrada"), item titles "Carta cifrada de Gómez Suárez de Figueroa ..." or "Duplicado de carta cifrada ...". PARES full-text search matches words, not the phrase, so a term hit is a pointer; the hit-list title says the letter is in cipher, not whether a decipherment is filed with it. Not in the repo (known.py: no hits for the legajos; the Suárez de Figueroa hits are Lorenzo, Venice 1504). 28 Oct 2026: a further ciphered piece in the same legajo run, not in the list above, is catalogue 840 (EST,LEG,1380,151-154, 1549); its sender is not stated, so it may not be Figueroa. 11 Nov 2026 (targets/figueroa1534/): prior art found. Tomokiyo, 'Spanish Ciphers during the Reign of Emperor Charles V' (cryptiana.web.fc2.com/code/spanish2.htm) lists 18 of the 20 records by PARES number under four ciphers with reconstructed keys: the Simple Cipher of 1529-1538 (1367,56-57; 1367,149-150; 1369,232-233), the Figueroa-Philip Cipher of 1543 (1376,16-17, the letter the key was rebuilt on), the Imperial Cipher of 1544-1554 (1379,14-18; 1380,7-8; 1382,23; the eight items of 1383) and the Doria-Figueroa-Philip Cipher of 1548 (1380,9; 1380,10-11; 1380,37-38). He gives keys, not readings; no printed text of the letters was found. Only the two 1557 items (1386,1; 1386,92) are not in his lists. So this is not a ciphertext-only target (class C stands only until the entry is split by cipher): the work left is transcription and applying the published keys. No image was fetched on 11 Nov 2026 (PARES refused the machine).
+  Outcome so far: In progress here, in targets/figueroa1534/.
   Prior-art check: not searched (title screening only). Check first: Estudios Románicos 34 (2025) and Luo (2021) for 16th-century AGS Estado ciphers; Tomokiyo, cryptiana, for Philip II Italian ciphers; CODOIN prints some Genoa despatches.
   Check first: Open a sample of the descriptions; check whether descifrados are filed with them (likely for originals read in Spain); split off the undeciphered items.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/figueroa1534/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/figueroa1534/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/figueroa1534/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -153,7 +159,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/figueroa1534/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+744&amp;target=catalogue+744
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -171,10 +177,10 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>What is known</h2>
 
 
-<p><b>Status and prior art.</b> PARES hits (27 Oct 2026, "carta cifrada"/"cifrada"), item titles "Carta cifrada de Gómez Suárez de Figueroa ..." or "Duplicado de carta cifrada ...". PARES full-text search matches words, not the phrase, so a term hit is a pointer; the hit-list title says the letter is in cipher, not whether a decipherment is filed with it. Not in the repo (known.py: no hits for the legajos; the Suárez de Figueroa hits are Lorenzo, Venice 1504). 28 Oct 2026: a further ciphered piece in the same legajo run, not in the list above, is catalogue 840 (EST,LEG,1380,151-154, 1549); its sender is not stated, so it may not be Figueroa.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: not searched (title screening only). Check first: Estudios Románicos 34 (2025) and Luo (2021) for 16th-century AGS Estado ciphers; Tomokiyo, cryptiana, for Philip II Italian ciphers; CODOIN prints some Genoa despatches..</p>
+<p><b>Status and prior art.</b> PARES hits (27 Oct 2026, "carta cifrada"/"cifrada"), item titles "Carta cifrada de Gómez Suárez de Figueroa ..." or "Duplicado de carta cifrada ...". PARES full-text search matches words, not the phrase, so a term hit is a pointer; the hit-list title says the letter is in cipher, not whether a decipherment is filed with it. Not in the repo (known.py: no hits for the legajos; the Suárez de Figueroa hits are Lorenzo, Venice 1504). 28 Oct 2026: a further ciphered piece in the same legajo run, not in the list above, is catalogue 840 (EST,LEG,1380,151-154, 1549); its sender is not stated, so it may not be Figueroa. 11 Nov 2026 (targets/figueroa1534/): prior art found. Tomokiyo, 'Spanish Ciphers during the Reign of Emperor Charles V' (cryptiana.web.fc2.com/code/spanish2.htm) lists 18 of the 20 records by PARES number under four ciphers with reconstructed keys: the Simple Cipher of 1529-1538 (1367,56-57; 1367,149-150; 1369,232-233), the Figueroa-Philip Cipher of 1543 (1376,16-17, the letter the key was rebuilt on), the Imperial Cipher of 1544-1554 (1379,14-18; 1380,7-8; 1382,23; the eight items of 1383) and the Doria-Figueroa-Philip Cipher of 1548 (1380,9; 1380,10-11; 1380,37-38). He gives keys, not readings; no printed text of the letters was found. Only the two 1557 items (1386,1; 1386,92) are not in his lists. So this is not a ciphertext-only target (class C stands only until the entry is split by cipher): the work left is transcription and applying the published keys. No image was fetched on 11 Nov 2026 (PARES refused the machine).</p>
+<p><b>Outcome so far.</b> In progress here, in targets/figueroa1534/. Prior-art check: not searched (title screening only). Check first: Estudios Románicos 34 (2025) and Luo (2021) for 16th-century AGS Estado ciphers; Tomokiyo, cryptiana, for Philip II Italian ciphers; CODOIN prints some Genoa despatches..</p>
 <p><b>Check first.</b> Open a sample of the descriptions; check whether descifrados are filed with them (likely for originals read in Spain); split off the undeciphered items.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/figueroa1534/NOTES.md" rel="noopener">targets/figueroa1534/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/figueroa1534" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
