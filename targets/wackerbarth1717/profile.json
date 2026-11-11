@@ -1,0 +1,280 @@
+{
+ "schema_version": 1,
+ "target": "wackerbarth1717",
+ "title": "Wackerbarth's cipher reports from Vienna, 1717 (HStA Dresden 10026 Loc. 00713/01): Relation XXII to Augustus II, 14-16 June 1717, read in part with a key rebuilt from the glosses of the time; letter to Flemming of 24 April 1717 checked against its decipherment of the time (simultaneous work: A.-S. Rous)",
+ "documents": [
+  {
+   "id": "hstad-10026-loc00713-01-rel22-1717-06-16",
+   "read": "read in part",
+   "shelfmark": "Dresden, Sächsisches Hauptstaatsarchiv, 10026 Geheimes Kabinett, Loc. 00713/01, ff. 71-80v (digitised views 0089-0099)",
+   "date": "14-16 June 1717",
+   "year": 1717,
+   "country": "Saxony / Holy Roman Empire",
+   "route": "August Christoph von Wackerbarth (Saxon minister at Vienna) -> King Augustus II of Poland, Elector of Saxony (Relation XXII, copy)",
+   "places": {
+    "from": "Vienna",
+    "to": "Dresden"
+   },
+   "language": "French",
+   "pages": 11,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment of the time: no interlinear gloss and no separate sheet for Relation XXII in the volume.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 2939,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "archiv.sachsen.de digitised views of Loc. 00713/01 (In Copyright); images not reproduced",
+    "image_quality": "good",
+    "notes": "Transcribed by Claude Opus 5.5 agents (main agent views 0089-0090, three sub-agents 0091-0099), 11 Nov 2026, each part hashed before any decoding of it and never corrected from the sense. Three numbers are probably misread (0097 G07 174 for 177, 0097 G15 4 for 7, 0098 G03 184 for 187): noted in reading.md, left as frozen. No blind re-reading yet."
+   }
+  },
+  {
+   "id": "hstad-10026-loc00713-01-w-f-1717-04-24",
+   "read": "read in part",
+   "shelfmark": "Dresden, Sächsisches Hauptstaatsarchiv, 10026 Geheimes Kabinett, Loc. 00713/01, ff. 29-32 (views 0037-0040); decipherment of the time ff. 33-33v (views 0042-0043)",
+   "date": "24 April 1717",
+   "year": 1717,
+   "country": "Saxony / Holy Roman Empire",
+   "route": "August Christoph von Wackerbarth (Vienna) -> Jacob Heinrich von Flemming, letter no. 15",
+   "places": {
+    "from": "Vienna",
+    "to": "Dresden"
+   },
+   "language": "French",
+   "pages": 4,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "Decipherment sheet of the time, ff. 33-33v (views 0042-0043), headed 'Le C.te de Wackerbarth du 24. d'avril 1717'; it renders the whole cipher of ff. 29-32, from its first words.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 1274,
+    "unit": "code groups",
+    "measured": true,
+    "file": "a24_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "archiv.sachsen.de digitised views (In Copyright); images not reproduced",
+    "image_quality": "good",
+    "notes": "Views 0037-0039 by a Claude Opus 5.5 sub-agent, view 0040 by the main agent, 11 Nov 2026, hashed before decoding. The sheet of the time was transcribed by the main agent (frozen/releves/A-FEUILLE-0042-0043.txt; 'em:barasser' doubtful)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Saxon system S1 of Wackerbarth's Vienna mission (March-June 1717): homophonic substitution of French letters in 1-2 digit numbers (e 2/10, i 9, o 16/22/33, t 28/52 ...), polygrams and a nomenclator in 3-digit numbers (154 Votre Excellence, 177 le Czar, 217 le roi d'Angleterre, 252 le roi de Prusse, 292 la Pologne, 355 premier), 4-digit nulls (50xx and others), clear words interspersed. The volume's Nov.-Dec. 1717 letters use another system, S2 = the Flemming key K0 of Loc. 00675/10.",
+  "symbol_kind": "digits",
+  "distinct_symbols": "unknown",
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "names",
+    "common words",
+    "syllables"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "word_division": "none",
+  "diacritics": {
+   "used": false
+  },
+  "key_order": "unknown",
+  "notes": "S1 is not the Flemming key K0 (Loc. 00675/10, view 0080), nor its shifted variant, nor Wackerbarth's 1703 key. A.-S. Rous (The Keys of Diplomacy) describes the 1717 system as substitution in 1-3 digit numbers, mostly 2, with 355 and 1000 in the nomenclator."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Many S1 passages of the volume carry interlinear decipherments of the time (the key was rebuilt from them); the letter of 24 April 1717 has a full decipherment sheet of the time (ff. 33-33v). Relation XXII has none. A.-S. Rous (The Keys of Diplomacy, University of Tartu repository) works on this corpus and lists the 1717 letter as not deciphered.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Brice Dudout chose the target and set the rules (protocols hashed before each single measurement; a partial reading may be published if explained); on 11 Nov 2026, after the second measurement, he decided to accept the held-out language test alone as the condition for reading Relation XXII (post hoc, declared). Claude Opus 5.5 agents transcribed, built the key, wrote and ran the protocols, read and wrote up. No human read the reading against the scans.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout (transcription, key, protocols, measurements, reading, write-up)"
+  ],
+  "first_date": "2026-11-11",
+  "last_date": "2026-11-11"
+ },
+ "solution": [
+  {
+   "date": "2026-11-11",
+   "kind": "transcription",
+   "what": "Glossed S1 views (training) and their glosses, Relation XXII views 0089-0099 and the letter of 24 April 1717 (views 0037-0040) transcribed, each part hashed before decoding; the decipherment sheet of the time 0042-0043 transcribed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "key from source",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Key rebuilt by aligning cipher groups on the interlinear decipherments of the time of the glossed S1 views (keys KEY-W1717, then b and c by a mechanical rule written beforehand).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Protocol 1 (hashed): test A (view 0040 vs the sheet of the time) 0.204 vs 0.086 for 200 permuted keys, under threshold; test B (lexical cover, 360 groups of Rel. XXII) 0.9375 vs 0.9231. Both failed; instrument at fault (diagnosed afterwards).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Protocol 2 (hashed): A' ground truth (letter of 28 May 1717 held out) 0.339 exact vs max 0.128, margin 0.21 < 0.30: failed. B' held-out language test (view 0091, 353 groups, criterion L7 calibrated on training): z = 11.5, gap 0.74: passed. The protocol's rule required both.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "reading",
+   "what": "Under Avenant 3 (post hoc: B' alone accepted, 95% as final check), Relation XXII read by sense with frozen key c: 716 cipher words, 575 certain, 66 probable, 66 restored, 9 unresolved = 89.5%. A variant counting nine recurring homophones absent from c (about 97.9%) is not adopted. Letter of 24 April read against its sheet (not blind): 90.8%.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The key was rebuilt from the interlinear decipherments of the time on other letters of the same volume and system (S1), then applied to Relation XXII, which has no decipherment.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.895,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.md, Relation XXII cipher words: 575 certain + 66 probable = 641 of 716 = 89.5% (frozen/scripts/compte_lecture.py); 66 restored not counted (98.7% with them).",
+  "verification": [
+   "statistical test",
+   "contemporary decipherment",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-11-11",
+   "verdict": "weak",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered tests, not docs/_validate.py. Held-out language test B' passed (view 0091, z = 11.54, gap 0.742, criterion L7 calibrated on training only); the ground-truth test A' FAILED (0.339 vs 0.128, margin 0.21 < 0.30) and the protocol required both. Accepting B' alone was decided after the measurement (Avenant 3, SHA-256 7b0ee565...c151). A first protocol (tests A and B) also failed. Hence 'weak', not 'pass'."
+  },
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "rous",
+    "role": "identification",
+    "note": "simultaneous work: Anne-Simone Rous (The Keys of Diplomacy, University of Tartu repository) works on the Wackerbarth-Flemming cipher correspondence 1700-1720 and describes the structure of the 1717 system of Loc. 00713/01 (1-3 digit numbers, 355 and 1000 in the nomenclator); she lists the 1717 letter as not deciphered. Our reading was made independently and is to be cited with her work.",
+    "date": "2024"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the interlinear decipherments of the time on the glossed S1 letters of Loc. 00713/01 (views 0017, 0057-0062, 0071-0072, 0080-0081, 0086-0088), from which key c was rebuilt",
+    "date": "1717"
+   },
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "the decipherment sheet of the time ff. 33-33v (views 0042-0043) of the letter of 24 April 1717, which renders its whole cipher",
+    "date": "1717"
+   },
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "transcription of Relation XXII and of the training views; key c rebuilt from the glosses of the time; Relation XXII read in part (641/716 = 89.5%) and translated; validation mixed and declared (B' passed, A' failed, condition decided post hoc); Claude Opus 5.5 agents for Brice Dudout",
+    "date": "2026-11-11"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "letter of 24 April 1717 decoded with the independent key c (90.8%, not blind) and found to agree with the decipherment sheet of the time, which covers the whole cipher (not only its last passage); S2 letters checked against the Flemming key K0",
+    "date": "2026-11-11"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "66 restored and 9 unresolved words of Relation XXII (numbers 4, 38, 40, 73, 76, 79, 89, 92, 1000 and single cases; codes 306, 4527, 289, 172, 169, 184, 1900205)",
+    "blocker": "open-codes",
+    "detail": "absent from key c (glossed nowhere in the training views); key.tsv section B proposes values that fit, found after the measurement and not counted"
+   },
+   {
+    "item": "three probable misreadings (0097 G07, 0097 G15, 0098 G03) and 0089 M03",
+    "blocker": "illegible",
+    "detail": "to be re-read blind on the images; left as frozen"
+   },
+   {
+    "item": "a ground-truth test of key c",
+    "blocker": "no-key-material",
+    "detail": "no other glossed S1 letter of 300+ groups left in the volume; Rous's corpus may hold one"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "hstad-10026-loc00713-01-rel22-1717-06-16",
+    "label": "Relation XXII, Wackerbarth to Augustus II, Vienna 14-16 June 1717",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "fr",
+    "state": "read in part",
+    "read_share": 0.895,
+    "summary": "Chancellor Sinzendorf, by order of Charles VI, proposes to Wackerbarth (and the day before to Saint-Saphorin) a concert of the Emperor, the King of Poland and the King of England to restore the tranquillity of the Empire and an entire peace in the North on a just balance, possibly a triple alliance; the stay of the Russians in the Empire is referred to the Diet of Ratisbon and the directors of the Circles; George I wants the same measures regarding Poland and nothing returned to the King of Sweden; strict secrecy.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 agent for Brice Dudout",
+     "date": "2026-11-11",
+     "note": "Read as French sentences of 1717 against decryption.txt: the cipher words construe with the clear words around them over the whole letter, and the translation follows; but 66 words are restored (numbers absent from the key), 9 unresolved and 66 only probable, so 89.5%: grade B, read in part. The condition for reading was decided after the measurement (A' failed). AI agents only; no human read the reading; not re-checked blind on the images."
+    }
+   },
+   {
+    "doc": "hstad-10026-loc00713-01-w-f-1717-04-24",
+    "label": "Wackerbarth to Flemming, Vienna 24 April 1717 (checked against the decipherment of the time)",
+    "transcription": "a24_transcription.txt",
+    "decryption": "a24_decryption.txt",
+    "reading": "a24_reading.md",
+    "translation": "a24_translation.md",
+    "language": "fr",
+    "state": "read in part",
+    "read_share": 0.908,
+    "summary": "The King of Sweden's designs on Poland (a landing near Danzig); the fear that Sweden may detach the Czar from the Northern League, which Vienna should thwart; the Hanau exchange: the Electors' consents must be won directly, not through the Emperor (promise of Ferdinand II to John George I); request for full power and a draft treaty.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 agent for Brice Dudout",
+     "date": "2026-11-11",
+     "note": "Key c reads 188/207 cipher words of views 0037-0039 as French sentences agreeing in sense with the decipherment sheet of the time (ff. 33-33v), which renders the whole letter; 7 unresolved nomenclator codes are resolved by the sheet. Not blind: the sheet had been transcribed before. The translation follows the sheet. Grade B."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "New partial reading of Relation XXII, which has no decipherment of the time; to be cited as simultaneous work with A.-S. Rous. The letter of 24 April 1717, listed by Rous as not deciphered, is rendered in full by the sheet of the time at ff. 33-33v. key.tsv section A = frozen key c (CC BY 4.0); section B = proposals after the measurement, not counted. No image or derivative of the Dresden scans (In Copyright) is included."
+ }
+}
