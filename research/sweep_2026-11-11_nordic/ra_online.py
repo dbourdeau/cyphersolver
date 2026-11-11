@@ -3,7 +3,10 @@ import sys, json, time, urllib.request
 URL = 'https://soeg.rigsarkivet.dk/api/v1/Search/arkivalier'
 def post(b):
     r = urllib.request.Request(URL, data=json.dumps(b).encode(), headers={'Content-Type': 'application/json', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) Chrome/126.0 Safari/537.36'})
-    return json.load(urllib.request.urlopen(r, timeout=120))
+    for a in range(6):
+        try: return json.load(urllib.request.urlopen(r, timeout=120))
+        except Exception as e: print('retry', e, flush=True); time.sleep(8)
+    raise SystemExit('gave up')
 page = 0; n = 0
 with open(sys.argv[2], 'w') as f:
     while True:
@@ -13,4 +16,4 @@ with open(sys.argv[2], 'w') as f:
         print(page, d.get('totalCount'), n, flush=True)
         page += 1
         if not res or n >= d.get('totalCount', 0): break
-        time.sleep(1)
+        time.sleep(3)

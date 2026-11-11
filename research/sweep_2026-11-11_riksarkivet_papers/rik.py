@@ -41,6 +41,15 @@ def img(man, i, tw):
         except Exception: pass
         time.sleep(2)
     return Image.new('L', (tw, int(tw * 0.75)), 255)
+def crop(t):
+    """Trim the grey copy-stand border: bbox of pixels that differ from the corner tone by more than 14 levels."""
+    import numpy as np
+    a = np.asarray(t).astype(int); h, w = a.shape
+    bg = int(np.median(np.concatenate([a[:8, :].ravel(), a[-8:, :].ravel()])))
+    m = abs(a - bg) > 14
+    rows = np.where(m.mean(1) > 0.08)[0]; cols = np.where(m.mean(0) > 0.08)[0]
+    if len(rows) < h * 0.2 or len(cols) < w * 0.2: return t
+    return t.crop((max(0, cols[0] - 4), max(0, rows[0] - 4), min(w, cols[-1] + 4), min(h, rows[-1] + 4)))
 def grid(tiles, labels, cols, tw, path):
     cap = int(tw * 0.78)
     tiles = [t if t.size[1] <= cap else t.resize((max(1, int(t.size[0] * cap / t.size[1])), cap)) for t in tiles]
@@ -53,7 +62,8 @@ def grid(tiles, labels, cols, tw, path):
 def sheets(man, idx, tag, tw=520, per=12):
     for a in range(0, len(idx), per):
         ch = idx[a:a + per]; tiles = []
-        for i in ch: tiles.append(img(man, i, tw)); time.sleep(0.5)
+        for i in ch:
+            t = crop(img(man, i, 900)); tiles.append(t.resize((tw, max(1, int(t.size[1] * tw / t.size[0]))))); time.sleep(0.5)
         print(grid(tiles, ch, 3, tw, f'{SP}/{man}_{tag}_{ch[0]}-{ch[-1]}.jpg'), flush=True)
 if __name__ == '__main__':
     c = sys.argv[1]
