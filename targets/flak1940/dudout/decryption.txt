@@ -1,0 +1,38 @@
+# Decryption of frames 0863-0867 with the key of 4 June 1940 (key_0604.txt), part by part, against transcription.txt.
+# CT = ciphertext without the indicator group; PT = decryption as it comes out (X = word separator, CH written Q,
+# numbers spelled out); WD = word division, [?...] = probable word (the decryption differs from it by one or two
+# letters that are doubtful in the transcription).  Reproduce with: python solver/decrypt.py transcription.txt
+
+P1 indicator rlehs, 174 letters of text
+  CT ennnrixuxexnavheeiaeqilbjeenivnnnfoxxniqshmrhsrevxgunzukxgerqixloqttioeesoxbuoatuaxeeroimneiaogsrsthzldahgxdnmnsqeuiuemnzxwrgzlidnamauzgxxstkeelsrvhoonoesnexnfdnanemwmwmoghet
+  PT GEHEIMEKOMMANDOSAQEXZUMSQUTZEVONHEERESAUSLADUNGENGEHENINSTELLUNGAMXDREIXJUNIXVIERNULLXROEMXZWOXSTRIQXZWOXSTRIQXNEUNVIERZWOXVONBAHNHOFXIMMENDINGENXNAQBAHNHOFXSANKTGEORGENXSEIT
+  WD GEHEIME KOMMANDOSAQE X ZUM SQUTZE VON HEERESAUSLADUNGEN GEHEN IN STELLUNG AM X DREI X JUNI X VIERNULL X ROEM X ZWO X STRIQ X ZWO X STRIQ X NEUNVIERZWO X VON BAHNHOF X IMMENDINGEN X NAQ BAHNHOF X SANKT GEORGEN X SEIT
+  letters of PT differing from WD: 0
+
+P2 indicator jktqd, 185 letters of text
+  CT rrnxlwffegxuelnbsxxduvhxeqdourtoerwxxsiinrxaisevnfgtrqffxixmrxswltxureoeqrbenunoeeauunienbfzuuieteeitzoenolxierviterufxeoqqaoinentsriernwtxhoberizxenrnxxsexheirrsxtitezrnvnxswafqmexwzio
+  PT XEINSNEUNVIERFUENFXUHRFEUERBEREITXROEMZWOXSTRIQXZWOXAQTFUENFEINSXVONXBODERSWEIERXNAQXTRIBERGXSEITXZWONULLDREINULLXUHRFEUERBEREITXROEMXZWOXSTRIQXVIERXSTRIQXZWOFUENFEINSXVONXHATTINGENXNAQ
+  WD X EINSNEUNVIERFUENF X UHR FEUERBEREIT X ROEM ZWO X STRIQ X ZWO X AQTFUENFEINS X VON X BODERSWEIER X NAQ X TRIBERG X SEIT X ZWONULLDREINULL X UHR FEUERBEREIT X ROEM X ZWO X STRIQ X VIER X STRIQ X ZWOFUENFEINS X VON X HATTINGEN X NAQ
+  letters of PT differing from WD: 0
+
+P3 indicator hyvxz, 189 letters of text
+  CT entfxnxfxelrudlretaziuxliwxfkfixublsafrlnnfrhthexrxxetxrrlrenqixaueeintexnevzoxelurgrtuxeiexeeuzeszmtmsnfvttxuifererrnocbxeteqeheevlioboqaoernisixhnponexetlieirqerswiwxttqeszareeisvhslxrfus
+  PT PETERZELLXSEITXZWONULLVIERFUENFXUHRFEUERBEREITXROEMXZWOXSTRIQXZEHNXSTRIQXDREIFUENFEINSXVONXETTLINGENXNAQXHASLACHXSEITXZWONULLVIERFUENFXUHRFEUERBEREITXROEMXEINSXSTRIQXLEIQTERESERVEFLAKBATTRX
+  WD PETERZELL X SEIT X ZWONULLVIERFUENF X UHR FEUERBEREIT X ROEM X ZWO X STRIQ X ZEHN X STRIQ X DREIFUENFEINS X VON X ETTLINGEN X NAQ X HASLACH X SEIT X ZWONULLVIERFUENF X UHR FEUERBEREIT X ROEM X EINS X STRIQ X LEIQTE RESERVE FLAKBATTR X
+  letters of PT differing from WD: 0
+
+P4 indicator abexb, 181 letters of text
+  CT nnnxeieilircrtornicewxebruneuxlnsqtemsoilbxxhrhenceuxtlveuxnewilezffuensinvrohoaneemqfexibxuoflasfrnexliraioxsaorisnnnhturxdxgothefhfeiblqxrmxxavbternrehuxdhqsixsxeiaquxrxubtzrihnre
+  PT XVIERFUENFDREIXVONXHORBXNAQXMARBACHXSCITXZWOEINSNULLNULLXUHRFEUERBEREITXROEMXEINSXSTRIQXDREIXSTRIQXAQTFUENFEINSXVONXICHENHEIMXNAQBAHNHOFXHORNBERGXSEITXZWOEINSNULLNULLXUHRFEUERBEREIT
+  WD X VIERFUENFDREI X VON X HORB X NAQ X MARBACH X [?SEIT] X ZWOEINSNULLNULL X UHR FEUERBEREIT X ROEM X EINS X STRIQ X DREI X STRIQ X AQTFUENFEINS X VON X ICHENHEIM X NAQ BAHNHOF X HORNBERG X SEIT X ZWOEINSNULLNULL X UHR FEUERBEREIT
+  note: SCIT for SEIT: letter 4 of group 5 is transcribed c (not re-read on the image).
+  letters of PT differing from WD: 1
+
+P5 indicator abhvy, 199 letters of text
+  CT rranwrixoevexfgwnxlmnxxiteesujirxosdioimlugxenenizengnerzviraiusrkeexllfelxebwxrsxqvexuwxrzreairxftlbaxuxmiluokenvroxtlnvfxcatueoitrkmfkonxmvidexmufeevmlggiieelideaxsnuiofgieiirdssfrxxrhxuersnxnhxzrl
+  PT XVIERXSTRIQXDREIZWOEINSXKLAMMERXEISXKLAMMERVONXHUEFINGENXMAGXVILLINGENXSEITXVIERXJUMIXVIERNULLXNULLVIERDREIFUENFXUHRFEUERBEREITXFLUGABWXKDOXROEMXEINSXCAESARXNROXFRITZXZWOZWOFUENFXSTRIGXVIERNULLXGKDOS
+  WD X VIER X STRIQ X DREIZWOEINS X KLAMMER X EIS X KLAMMER VON X HUEFINGEN X [?NAQ] X VILLINGEN X SEIT X VIER X [?JUNI] X VIERNULL X NULLVIERDREIFUENF X UHR FEUERBEREIT X FLUGABW X KDO X ROEM X EINS X CAESAR X [?NRO] X FRITZ X ZWOZWOFUENF X [?STRIQ] X VIERNULL X GKDOS
+  note: MAG for NAQ: group 9 letter 5 m or n, group 12 letter 3 g or q; JUMI for JUNI: group 31 letter 1 m or n; STRIG for STRIQ: group 36 letter 2 g or q (g and q look alike in this hand); NRO: the o (group 29 letter 2) is clearly written, a slip of the sender; taken as NR.
+  letters of PT differing from WD: 4
+
+# Words (X not counted): 129; certain 124; probable 5; restored 0; unresolved 0.
