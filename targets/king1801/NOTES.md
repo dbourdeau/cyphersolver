@@ -52,8 +52,25 @@ is unknown.
 
 ## Remaining gaps
 
-- the code groups of both duplicates (NARA RG 59 M30 roll 9) - blocker: needs-physical-access; microfilm not online
-- King's code key - blocker: needs-physical-access; rebuildable from the printed crib once the code groups are seen
+- none left open here. Both gaps recorded on 26 Oct 2026 (the code groups of the duplicates, said to be on "M30 roll 9, not
+  online"; King's code key) were closed on 11 Nov 2026 by `../king1797` (Andrew Beling, pull request #398): see the update below.
+
+## Update, 11 Nov 2026: the code is King's 769 code, and the duplicates are online
+
+From `../king1797` (contributed by Andrew Beling, pull request #398; checked on integration):
+
+- Despatches vol. 9 (1801) is NARA M30 **roll 7** (NAID 188513785), not roll 9, and it is online. The duplicate of 25 Apr 1801
+  is frame 007-0142 R (124 code groups among clear); the 8 Jun 1801 run is frame 007-0162 R, lines 2-3 (12 groups).
+- The code is the one King used in all his despatches from 14 Jan 1797 to 2 Apr 1803 (the = 769). Its key was rebuilt in
+  `../king1797` from the State Department clerks' interlinear decipherments and tested on a held-out despatch.
+- The code groups of both duplicates are transcribed in `../king1797/checks/bare_items.tsv`. With the key frozen for that test
+  they agree with the italic words of the print: 85 of 100 covered groups for 25 Apr, 9 of 9 for 8 Jun ("Lord Hawkesbury and Mr
+  Addington"), against at best 0.21 and 0.222 for 1,000 permuted keys (`../king1797/NOTES.md`, section 6).
+- The Madison Papers abstract of No. 21 has "Swedes and Danes" where King's print and the coded run have "Lord Hawkesbury and Mr
+  Addington" (noted by the contributor; the abstract was not re-read here).
+
+The verdict of this folder is unchanged: both texts were already in print, and it keeps no page. The key and its write-up are
+under `../king1797` (one key, one entry).
 
 ## Escalation
 

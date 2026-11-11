@@ -228,6 +228,12 @@
       "kind": "literature search",
       "what": "Prior art: Weber 1979, Tomokiyo's Cryptiana, Madison Papers, King's Life vols. 2-4, ASP FR 1-2, Founders Online, DECODE, this repository: no key of the 769 code; No. 29 not found in print. Weber assigns a King to Pickering letter of 13 Apr 1797 to WE025 (Adams Papers reel 392): not this code; that copy not seen.",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "verification",
+      "what": "Integration check by the project (pull request #398): key v1, the No. 59 score, key v2 and the print checks rebuilt byte for byte from the corpus; No. 59, No. 29 and No. 30 confirmed absent from the 72 corpus frames; frame 0092 fetched from NARA and all 119 groups read again with the transcription in view (all stand); the eight context-only groups searched in the corpus and the bare items (no occurrence under a clear word); key.tsv compared with Codes 10 and 16 (legation1788) and the WE028 sheet (morris1813): no value shared. The time of the test declaration rests on the contributor's statement (single commit).",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -263,7 +269,7 @@
       "verdict": "pass",
       "file": "test_no59/heldout_result.json",
       "tokens": 302,
-      "notes": "Contributor's declared held-out test (test_no59/PREREGISTRATION.md, not docs/_validate.py): key v1 (sha256 6a9a1d8c...9f064, 723 groups) on No. 59 against the Department's clear text; 0.946 of covered groups in order, coverage 0.742, 200 shuffled keys best 0.165; thresholds 0.85 and 0.30 fixed in advance. Reproduced byte for byte by scripts/king_code.py on 11 Nov 2026."
+      "notes": "Contributor's declared held-out test (test_no59/PREREGISTRATION.md, not docs/_validate.py): key v1 (sha256 6a9a1d8c...9f064, 723 groups) on No. 59 against the Department's clear text; 0.946 of covered groups in order, coverage 0.742, 200 shuffled keys best 0.165; thresholds 0.85 and 0.30 fixed in advance. Reproduced byte for byte by scripts/king_code.py on 11 Nov 2026, by the contributor and again by the project on integration."
     },
     "provenance": "contributed",
     "credits": [
@@ -271,7 +277,8 @@
         "who": "ajbeling",
         "role": "new cipher with solution",
         "note": "Andrew Beling, with AI agents: King's 769 code identified and rebuilt from 72 interlined NARA M30 frames (key.tsv, 764 groups), tested on No. 59; No. 29 of 13 Apr 1797 read in part",
-        "date": "2026-11-11"
+        "date": "2026-11-11",
+        "source": "https://github.com/dbourdeau/cyphersolver/pull/398"
       },
       {
         "who": "ajbeling",
@@ -293,32 +300,14 @@
     ],
     "gaps": [
       {
-        "item": "No. 29: eight values from context only (717, 389, 1279, 1074, 1490, 507, 1440, 269) and 769 written where 'and' is needed",
+        "item": "No. 29: eight values from context only (717, 389, 1279, 1074, 1490, 507, 1440, 269), behind nine words, and 769 written where 'and' is needed (ten marked words in all)",
         "blocker": "open-codes",
-        "detail": "a clear copy (King's letterbook, N-YHS; Adams Papers reel 392; Pickering Papers) or further occurrences in untranscribed coded frames would settle them"
-      },
-      {
-        "item": "No. 29: digits read once (blind), three groups re-checked with the decode in view; no second blind reading",
-        "blocker": "not-attempted",
-        "detail": "a second blind reading of frame 0092 is workable"
-      },
-      {
-        "item": "the key: about 830 of 1,600 groups without a value; D values may still carry the 'word over its first group' error (550 'case' suspected); 48 OCR code frames on rolls 5-6 and about eight small items on roll 6 not opened",
-        "blocker": "not-attempted"
+        "detail": "none occurs under a clerk's word in the 72 transcribed frames, No. 59 or the print checks (retry on integration, 11 Nov 2026); a clear copy (King's letterbook, N-YHS; Pickering Papers) or an occurrence in the coded frames not yet transcribed would settle them"
       },
       {
         "item": "Adams Papers reel 392, King to Pickering 13 Apr 1797, which Weber assigns to WE025",
         "blocker": "needs-physical-access",
         "detail": "MHS microfilm; would show whether it is a copy of No. 29"
-      },
-      {
-        "item": "Pickering's instruction to King of 17 Sept 1796 on Engeström's propositions, and King's letter of 5 June 1797 (the overture itself is identified: Pickering to John Adams, 24 Sept 1798, Founders Online, Adams Papers 99-02-02-3023)",
-        "blocker": "not-attempted",
-        "detail": "NARA RG 59 M77 roll 1 (instructions) and M30 roll 4"
-      },
-      {
-        "item": "no human palaeographic check of any transcription",
-        "blocker": "not-attempted"
       }
     ],
     "texts": [
@@ -337,7 +326,7 @@
           "grade": "A",
           "by": "Andrew Beling",
           "date": "2026-11-11",
-          "note": "Read as sentences against frame 0092; signed off, including the ten context-only words (marked [?word]) and the supposed encoder's slip (769 for 'and')."
+          "note": "Read as sentences against frame 0092; signed off, including the ten context-only words (marked [?word]) and the supposed encoder's slip (769 for 'and'). On integration (11 Nov 2026) the project read it again as sentences against no29_decryption.txt and frame 0092: coherent English, the ten marked words and the supplied letter its only holes."
         }
       },
       {
@@ -353,6 +342,6 @@
       }
     ],
     "key_file": "key.tsv",
-    "notes": "Contributed by Andrew Beling (with AI agents). The key is new; most of King's coded despatches are in print (Life and Correspondence), so the texts are not, except No. 29, not found in print. Related: ../king1801 (closed 26 Oct 2026 as already in print), whose coded duplicates are on M30 roll 7 frames 0142 and 0162, not roll 9 (NOTES.md, 'For king1801'). key.tsv = build/key_v2.tsv plus 15 R and 8 I rows of 11 Nov 2026."
+    "notes": "Contributed by Andrew Beling (with AI agents). The key is new; most of King's coded despatches are in print (Life and Correspondence), so the texts are not, except No. 29, not found in print. Related: ../king1801 (closed 26 Oct 2026 as already in print), whose coded duplicates are on M30 roll 7 frames 0142 and 0162, not roll 9 (NOTES.md, 'For king1801'). key.tsv = build/key_v2.tsv plus 15 R and 8 I rows of 11 Nov 2026. Integration (11 Nov 2026): rebuild, test and print checks reproduced; the key's unvalued groups, the unopened frames, Pickering's instruction of 17 Sept 1796 and the lack of a blind second transcription are recorded in NOTES.md under 'Further work', not as gaps in the reading of No. 29."
   }
 }

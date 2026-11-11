@@ -1,6 +1,7 @@
 # Rufus King (London) to the Secretary of State, 1797-1803: King's State Department code (the = 769) rebuilt from the Department's interlinear decipherments; No. 29 of 13 April 1797 read in part
 
-Status: contributed (Andrew Beling, with AI agents), 11 Nov 2026; no write-up yet. The key is partial: 764 of about 1,600
+Status: written up 11 Nov 2026 (`docs/king1797.html`). Contributed by Andrew Beling, with AI agents (pull request #398, 11 Nov 2026);
+checked on integration the same day (section "Integration check" below). The key is partial: 764 of about 1,600
 groups. It was tested once, on a held-out despatch, before any value was added from clear texts. Of the one coded passage with no
 decipherment on the film and no text found in print (No. 29, on Sweden), every sentence reads, and 10 words rest on context alone.
 
@@ -204,14 +205,57 @@ king1801's NOTES and profile are left unchanged. Suggested changes for the maint
 - The Madison Papers abstract of No. 21 says "Swedes and Danes" where King's print and the coded run have "Lord Hawkesbury and
   Mr Addington". That suggests the editors did not have the coded words read.
 
+## Integration check (11 Nov 2026)
+
+Done by the project when pull request #398 was integrated. Nothing in the key, the transcriptions or the reading was changed.
+
+- **Rebuild.** `scripts/king_code.py build` with Weber's union list gives `build/key_v1.tsv` byte for byte (723 groups, sha256
+  `6a9a1d8c...9f064`, the hash recorded for the test); `score` gives `test_no59/heldout_result.json` exactly (212 of 224 covered
+  groups, 0.946, coverage 0.742, shuffled mean 0.108 and best 0.165, pass); `align` gives `build/key_v2.tsv` byte for byte (747
+  groups, calibration 92 of 94). With the WE028 sheet of `../morris1813/beling/key/` instead: 736 groups, 0.948 at coverage 0.772,
+  as section 4 says. `scripts/check_against_print.py` rewrites `checks/check_against_print.json` and the alignment table byte for
+  byte (201 of 227, 85 of 100, 9 of 9). `decode --key key.tsv no29_transcription.txt` gives the D lines of `no29_decryption.txt`.
+- **The Weber list is not in this folder.** `../legation1788/beling/key/weber_1600_family_vocab.txt` arrives with pull request #399
+  (Code No. 16); until that is merged the byte-for-byte rebuild needs that file from the pull request. The check above used it.
+- **Was the key frozen before the test?** What can be checked: the v1 build reads only `corpus/interlined_spans.tsv` and the element
+  list, never `test_no59/`; frames 0272 and 0273 are not among the 72 corpus frames; no run of four consecutive groups of No. 59
+  recurs in the corpus more than three times on any frame (common phrases only), so no other copy of No. 59 is in the corpus; the
+  same holds for No. 29, No. 30 and the 25 Apr 1801 duplicate (the 8 Jun 1801 run is two ministers' names, which recur). What
+  cannot be checked from the repository: the time of the declaration (`test_no59/PREREGISTRATION.md`, 10 Nov 2026 19:43 -0500) and
+  that there was one run. The folder arrived in a single commit of 11 Nov 2026 02:46 -0500, so these rest on the contributor's statement.
+- **Counts.** `no29_transcription.txt`: 119 code groups, 82 distinct. By key grade: 69 D, 18 S (15 S2, 3 S1), 2 A, 19 R, 11 I.
+  The frozen key v1 covers 94 of the 119, and 87 of those have the value they have in `key.tsv` (the other 7 are the corrected D
+  values). No. 59: 297 groups plus five dashes on the code lines (302 tokens in the score).
+- **Second reading of frame 0092.** The frame was fetched from the NARA catalogue and all 119 groups of lines 7-21 were read again
+  on crops at full resolution, with the transcription in view (so not blind). Every group stands as transcribed, including 1051
+  (twice), 269 (line 14) and 769 (line 15). The marks stand too: the caret after 1556, 529 and 709, the small v after 1494 and 406.
+- **Retry of the open values.** Each of the eight grade-I groups (717, 389, 1279, 1074, 1490, 507, 1440, 269) was searched in
+  the 13,603 groups of the corpus, in No. 59 and in the bare items. None occurs under a clerk's word. 1074 occurs once more, in the
+  faint No. 30 triplicate (0118 R11), where the print has "immediate" and 1075 = im is likely meant (already noted in `key.tsv`).
+  So nothing in the folder confirms or refutes them, and they stay doubtful.
+- **One key, one entry.** `key.tsv` was compared number by number with the other United States code tables here: Codes No. 10 and
+  No. 16 of `../legation1788` (83 and 128 numbers in common, no value the same), the WE028 sheet of `../morris1813` in both block
+  orders (757 and 752 in common, none the same, no constant offset), and the commonest groups of the others (the = 972 Armstrong,
+  1385 `../jqa`, 1651 Pinckney, 536 `../murray1801`, 798 Sumter). It is a different code from all of them. The two despatches of
+  `../king1801` are in this code; that folder is closed with no page (texts already in print) and now points here.
+- **The reading** was read as sentences against `no29_decryption.txt` and the frame: it holds as English throughout, with the ten
+  marked words and the supplied letter as its only holes.
+- **Gaps list.** The four items the contributor marked "not attempted" were sorted: the second reading of the digits was done
+  (above); the others are not unread pieces of No. 29 and moved to "Further work".
+
 ## Remaining gaps
 
-- No. 29: the eight grade-I values (717, 389, 1279, 1074, 1490, 507, 1440, 269) and the 769-for-"and" slip - blocker: open-codes; a clear copy (King's letterbook at N-YHS, the Adams Papers copy, the Pickering Papers) or further occurrences in the untranscribed coded frames would settle them
-- No. 29: one blind reading of the digits; three groups looked at again with the decode in view (1051 twice, 269, 769) - blocker: not-attempted; a second blind reading of frame 0092 is workable
-- the key: about 830 of 1,600 groups without a value; D values may still carry the error of section 4 (550 suspected); 48 OCR code frames on rolls 5-6 and about eight small coded items on roll 6 not opened - blocker: not-attempted
+- No. 29: the eight grade-I values (717, 389, 1279, 1074, 1490, 507, 1440, 269), behind nine words, and the 769 written where "and" is needed (ten marked words in all) - blocker: open-codes; none occurs under a clerk's word in the 72 transcribed frames, No. 59 or the print checks (retry, 11 Nov 2026); a clear copy (King's letterbook at N-YHS, the Pickering Papers) or an occurrence in the coded frames not yet transcribed would settle them
 - Adams Papers reel 392, King to Pickering 13 Apr 1797 (Weber's WE025 attribution) - blocker: needs-physical-access; MHS microfilm, would show whether it is a copy of No. 29
-- Pickering's instruction to King of 17 Sept 1796 on Engeström's propositions (the overture is identified, section 7), and King's letter of 5 June 1797 - blocker: not-attempted; NARA RG 59 M77 roll 1 (instructions) and M30 roll 4
-- no human palaeographic check of any transcription - blocker: not-attempted
+
+## Further work (not gaps in the reading of No. 29)
+
+- The key: about 830 of 1,600 groups have no value. D values may still carry the error of section 4 (550 suspected). 48 OCR code
+  frames on rolls 5-6 and about eight small coded items on roll 6 were not opened. `outcome.key` is "partial" for this reason.
+- Pickering's instruction to King of 17 Sept 1796 on Engeström's propositions (the overture is identified, section 7) and King's
+  letter of 5 June 1797 were not read: NARA RG 59 M77 roll 1 (instructions) and M30 roll 4.
+- No blind second transcription of frame 0092 and no human palaeographic check of any transcription. The integration reading
+  above had the transcription in view.
 
 ## Escalation
 
@@ -219,8 +263,8 @@ king1801's NOTES and profile are left unchanged. Suggested changes for the maint
 - [x] clear-pages: No. 59's clear triplicate is used as the test truth; No. 29 has no clear copy on 0092-0104; its clear pages (0093-0096) are transcribed in `reading_no29.md`
 - [x] print: King, *Life* vols. 2-3 (No. 30, 1801 items) used as checks; No. 29 not found in *Life* 2, ASP FR 1-2 or Founders Online
 - [x] key-rebuild: done (key.tsv), tested once on a held-out despatch
-- [x] known-keys: Weber's nine 1600/1700 tables tested on 40 values from 004-0249, none fits (not this code)
-- [ ] retry: a second blind transcription of 0092, and the Adams Papers copy
+- [x] known-keys: Weber's nine 1600/1700 tables tested on 40 values from 004-0249, none fits (not this code); on integration, Codes 10 and 16 and the WE028 sheet compared number by number, no value shared
+- [x] retry: 11 Nov 2026, on integration: the eight context-only groups searched in the corpus, No. 59 and the bare items (no occurrence under a clear word); frame 0092 read a second time against the transcription (all 119 groups stand)
 
 ## Method and tools
 
