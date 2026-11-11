@@ -4,7 +4,8 @@ Status: new cipher with its solution, contributed. Key: keyword WINCHESTER over 
 restarted at each coded stretch, with Lee's frequent slips. 1 February read (8 stretches, 110 numerals, no
 contemporary decipherment known); 2 February read in part (41 stretches, 1,097 numerals; seven passages the 1813 clerk
 did not read are read here, one of them, J, as a proposal); 6 February read in part (74 stretches, 1,456
-numerals; the last 32 stretches, 603 numerals, were never deciphered at the time and are read here). "In part" is
+numerals; the last 32 stretches, 603 numerals, carry no decipherment on this copy, none was found elsewhere, and
+they are deciphered here). "In part" is
 the README read bar applied strictly: every word in which we supply a letter Lee mis-enciphered counts as a hole.
 
 Contributed by Andrew Beling, with AI agents (Claude Fable 5.2 and Claude Opus 5.5 subagents, run by Andrew Beling),
@@ -321,6 +322,44 @@ The readings mark passages with †, ≠, ‡ and § (legend in each reading). T
   The second reader read 17 there.
 - F6-56 "emprunt forcé": a forced loan, in French in the cipher.
 
+## Integration check (11 Nov 2026)
+
+Done by the project on merging pull request #397 (the contributor's files are otherwise as sent).
+
+- **The key decrypts the 603 numerals.** A decoder written separately from `decode.py` (same rule, from `key.md`)
+  was run on `transcription_1813-02-06.txt`: F6-43 to F6-74 are 32 stretches and 603 numerals; 27 of the 32 give
+  English under the key restarted at W with no change of position (RECOURSE, TOFORCEDDONATIONS, MENANDMONEY,
+  BUTITISTHELASTEFFORTOFTHENATION, EMPRUNTFORCE, OFFEREDTOENGLANDIFSHEWILLABANDONRUSSIA,
+  ANARMEDNEUTRALITYNEGOTIATINGASMEDIATRIX, ATTHEEXPENSEOFPOLAND ...), and in five the key position changes inside the
+  stretch or runs on from the stretch before (F6-47, F6-51, F6-52, F6-62, F6-74), as section 12 says. `python decode.py`: result ok, 123 stretches, 110 + 1,097
+  + 1,456 numerals. The three readings were read here as sentences; they hold.
+- **Numerals checked on the frames.** NARA frames 0108-0110 were fetched and these stretches compared with the
+  transcription at full resolution: F6-15, F6-21, F6-22, F6-25, F6-30, F6-51 (second line, numerals 20-33), F6-65 to
+  F6-69, F6-70 (first 13 numerals), F6-73 (second and third lines) and F6-74. Every numeral agrees with the
+  transcription (about 300 numerals). So the single wrong letters in F6-15, F6-21, F6-22, F6-25, F6-30 and F6-69 are on the page (Lee's,
+  not the transcriber's); in F6-73 numeral 14 was seen here and numeral 8 rests on the transcriber's zoom note. F6-51
+  numerals 20-33, skipped by the second reader, now have a second reading.
+- **"Never deciphered at the time" is narrowed.** What the frames show: the clerk's pencil (key letters above, words
+  below) runs on frame 0108 and 0109 to "depression of the" (F6-42) and stops; from "recourse" (F6-43) to the end of
+  frame 0110 there is no pencil. The contributor found no separate decipherment on frames 0095-0115 and no printing.
+  But the letter is headed "Second Copy": another copy was sent, it was not looked for (for example among the
+  despatches from the legation in France), and a decipherment could exist on it. The statement supported by the
+  sources is: no contemporary decipherment of these 603 numerals is on this copy, and none was found. The Status
+  line, the profile title, the 6 Feb summary and the head of `reading_1813-02-06.md` were reworded to say that; the
+  phrase "never attempted by the clerk" in section 12 is about this copy.
+- **Gaps.** Three items were listed with the blocker "not-attempted". The zoom re-read of the seven single wrong
+  letters and the second reading of F6-51 numerals 20-33 were done (above) and the items removed. "Mr de Bassagne" is
+  a reading with exact letters whose doubt is its length (13 numerals, z 3.0), now listed as too short. The missing
+  second reading of the numerals of 1 Feb, 2 Feb and 6 Feb F6-01 to F6-42 is a limit of the verification, not an
+  unread piece: it stays stated in section 8 and on the page.
+- **Method.** The keyword is the clerk's, read off his pencil; the alphabet, the numeral rule, the restart and the
+  slips were worked out here against his pencilled words. That is "key recovered based on adjacent plaintext" in the
+  project's categories, kept as the contributor set it.
+- Checkers: `docs/_check_profile.py lee1813` valid; `docs/_check_reading.py lee1813` 0.935 / 0.846 / 0.811, as in
+  CHECKS.txt; `docs/_check_terms.py lee1813` 0 hits. Not in `catalogue.json` or `research/leads.json`; not on DECODE.
+- `viewer/` loads only its own `data.js` and frame images from catalog.archives.gov. It also carries a URL pattern
+  for another NARA film (M30 roll 4) that no document in `data.js` uses.
+
 ## Remaining gaps
 
 One line per open piece (detail in sections 4, 8, 9 and 12):
@@ -328,9 +367,13 @@ One line per open piece (detail in sections 4, 8, 9 and 12):
 - 6 Feb F6-47, last six numerals (2 3 4 23 6 1) - blocker: illegible; "but on" only if 2 and 3 are one numeral 23, and the page has a dot between them.
 - 6 Feb F6-26 "of an armed neutrality" - blocker: illegible; a proposal: the numerals, confirmed at zoom, give OFALARMERKEUTRATITY (four letters off and a key restart; z 3.5).
 - 6 Feb F6-01/F6-02 "I established ... a cipher, a copy", and 2 Feb J "indemnities through" - blocker: illegible; proposals: each rests on taking Lee's dots between figures as mistakes (1.2 as 12; 11 as 1 1; 17 as 1 7).
-- "Mr de Bassagne" (F6-62) - blocker: not-attempted; letters exact under the key run on from F6-61 (z 3.0); the man is not identified.
-- Lee's enciphering errors (60 letters supplied and 2 dropped in 6 Feb, the transcriber's one-to-one count "at least 47"; 53 and 1 in 2 Feb) - blocker: not-attempted; seven single wrong letters (F6-15, F6-21, F6-22, F6-25, F6-30, F6-69, F6-73) rest on the strip reading only and need a zoom re-read.
-- Second reading of 1 Feb, 2 Feb and 6 Feb F6-01 to F6-42, and of F6-51 numerals 20-33 - blocker: not-attempted.
+- "Mr de Bassagne" (F6-62) - blocker: too-short; 13 numerals, letters exact under the key run on from F6-61, but z 3.0 does not clear all controls at this length, and the man is not identified.
+- 2 Feb Q, the word before "their policy" - blocker: illegible; "[?to]" is supplied from the sense, the figures between "favorable" and "their policy" do not give a clean word.
+
+Not gaps in the text, but limits of the checking: the numerals of 1 Feb, 2 Feb and 6 Feb F6-01 to F6-42 have one
+reader each (section 8), apart from the stretches compared on the frames in the integration check; the words in which
+a letter is supplied for one of Lee's wrong figures (60 letters supplied and 2 dropped in 6 Feb, 53 and 1 in 2 Feb)
+are counted as holes in the measure (section 6).
 
 ## Escalation
 

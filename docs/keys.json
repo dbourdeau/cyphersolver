@@ -1,6 +1,14 @@
 {
  "keys": [
   {
+   "id": "k-lee1813",
+   "label": "William Lee's WINCHESTER cipher, Paris 1813: numerals 1-25 over a 25-letter alphabet under a keyword (rule worked out by Andrew Beling)",
+   "kind": "rebuilt here",
+   "by": "Andrew Beling",
+   "year": 1813,
+   "note": "Keyword WINCHESTER, pencilled by the State Department clerk of 1813 above the numerals of Lee's letter of 6 February 1813 (NARA T164 roll 3 frames 0108-0109). Alphabet (I/J one letter), rule (numeral n under a key letter is the letter n-1 places after it), restart at W for each coded stretch and Lee's kinds of slip worked out against the clerk's pencilled words; 104 of 123 stretches beat all 200 shuffled-numeral controls. targets/lee1813/key.md."
+  },
+  {
    "id": "k-lilienthal1665",
    "label": "Lilienthal code, Moscow 1665-1667: homophonic German letter substitution in six 2-3 digit series (rebuilt by Brice Dudout)",
    "kind": "rebuilt here",
@@ -7440,6 +7448,12 @@
    "target": "jablonski1705",
    "how": "rebuilt from",
    "note": "learnt from the Latin under the numbers of 11,2/15 nos 8, 13, 33 and 11,2/16 no 42, frozen, measured once on 11,2/16 no 44"
+  },
+  {
+   "key": "k-lee1813",
+   "target": "lee1813",
+   "how": "rebuilt from",
+   "note": "keyword read from the clerk's pencil on the 6 February letter; rule and slips rebuilt by the contributor against his pencilled words, then applied to the letters of 1, 2 and 6 February"
   }
  ],
  "sources": [
@@ -8664,6 +8678,10 @@
   {
    "source": "s-cyphersolver",
    "key": "k-jablonski1705"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-lee1813"
   }
  ],
  "unlinked": {

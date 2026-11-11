@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "target": "lee1813",
-  "title": "William Lee to James Monroe, Paris, 1, 2 and 6 February 1813 (NARA T164 roll 3): Lee's own numerical cipher, keyword WINCHESTER over a 25-letter alphabet; 1 Feb read, 2 and 6 Feb read in part, including 603 numerals of 6 Feb never deciphered at the time",
+  "title": "William Lee to James Monroe, Paris, 1, 2 and 6 February 1813 (NARA T164 roll 3): Lee's own numerical cipher, keyword WINCHESTER over a 25-letter alphabet; 1 Feb read, 2 and 6 Feb read in part, including 603 numerals of 6 Feb that carry no decipherment on this copy",
   "documents": [
     {
       "id": "1813-02-01",
@@ -263,6 +263,12 @@
       "kind": "literature search",
       "what": "Andrew Beling contribution: Weber 1979, Masked Dispatches, Cryptiana (293 pages), this repository's issues and pull requests, Papers of James Monroe vol. 6, web searches, and M. L. Mann, A Yankee Jeffersonian (1958), searched in full at HathiTrust (uc1.b4437374): no earlier identification of the cipher or keyword, no printing of the 1 or 6 Feb letters found; Mann does not mention the cipher.",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "verification",
+      "what": "Integration check by the project on merging PR #397: a decoder written separately from decode.py gives English for the 32 stretches F6-43 to F6-74 (603 numerals; 27 with the key restarted at W, 5 with a changed or carried-on key position); the three readings read as sentences; frames 0108-0110 fetched from the NARA catalogue and F6-15, F6-21, F6-22, F6-25, F6-30, F6-51 numerals 20-33, F6-65 to F6-69, part of F6-70 and F6-73, and F6-74 compared with the transcription at full resolution: all agree, so the single wrong letters there are on the page. The clerk's pencil is seen to stop at F6-42. The claim 'never deciphered at the time' narrowed: the letter is a Second Copy and no other copy was looked for.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -297,7 +303,7 @@
         "label": "6 Feb 1813 (74 stretches, 1,456 numerals), clerk's pencil to F6-42 only",
         "method": "key recovered based on adjacent plaintext",
         "extent": "partial",
-        "basis": "reading_1813-02-06.md: the 32 stretches never deciphered (603 numerals) read; F6-26 and F6-01/02 proposals, F6-47 tail unread; read_share 0.928 whole reading, 0.802 over cipher words with supplied letters as holes"
+        "basis": "reading_1813-02-06.md: the 32 stretches with no decipherment on this copy (603 numerals) deciphered; F6-26 and F6-01/02 proposals, F6-47 tail unread; read_share 0.928 whole reading, 0.802 over cipher words with supplied letters as holes"
       }
     ],
     "fraction_read": 0.805,
@@ -321,8 +327,9 @@
       {
         "who": "ajbeling",
         "role": "new cipher with solution",
-        "note": "Andrew Beling, with AI agents: William Lee's WINCHESTER cipher identified and its rule and slips described; the letters of 1, 2 and 6 Feb 1813 decoded and read, including the 603 numerals of 6 Feb never deciphered at the time and seven passages of 2 Feb the clerk did not read",
-        "date": "2026-11-11"
+        "note": "Andrew Beling, with AI agents: William Lee's WINCHESTER cipher identified and its rule and slips described; the letters of 1, 2 and 6 Feb 1813 decoded and read, including the 603 numerals of 6 Feb left without a decipherment on the film and seven passages of 2 Feb the clerk did not read",
+        "date": "2026-11-11",
+        "source": "https://github.com/dbourdeau/cyphersolver/pull/397"
       },
       {
         "who": "ajbeling",
@@ -356,17 +363,13 @@
       },
       {
         "item": "'Mr de Bassagne' (F6-62)",
-        "blocker": "not-attempted",
-        "detail": "letters exact under the key run on from F6-61 (z 3.0); the man is not identified"
+        "blocker": "too-short",
+        "detail": "13 numerals, letters exact under the key run on from F6-61, but z 3.0 does not clear all controls at this length; the man is not identified"
       },
       {
-        "item": "Lee's enciphering errors: 60 letters supplied and 2 dropped in 6 Feb (the transcriber's one-to-one count: at least 47), 53 and 1 in 2 Feb",
-        "blocker": "not-attempted",
-        "detail": "single wrong letters in F6-15, F6-21, F6-22, F6-25, F6-30, F6-69, F6-73 rest on the strip reading only; a zoom re-read may turn some into transcription errors"
-      },
-      {
-        "item": "second reading of 1 Feb, 2 Feb and 6 Feb F6-01 to F6-42; F6-51 numerals 20-33",
-        "blocker": "not-attempted"
+        "item": "2 Feb Q, the word before 'their policy'",
+        "blocker": "illegible",
+        "detail": "'[?to]' is supplied from the sense; the figures between 'favorable' and 'their policy' give SHIO"
       }
     ],
     "texts": [
@@ -414,7 +417,7 @@
         "language": "en",
         "state": "read in part",
         "read_share": 0.928,
-        "summary": "France after the Russian disaster: the Grand Army destroyed, discontent, conscription and forced donations as the last effort of the nation, Austria's armed neutrality and possible mediation, Prussia's king fleeing the Russians, terms of peace offered to England if she abandons Russia, and Napoleon's hopes resting on the coming campaign. The last 32 stretches were never deciphered at the time.",
+        "summary": "France after the Russian disaster: the Grand Army destroyed, discontent, conscription and forced donations as the last effort of the nation, Austria's armed neutrality and possible mediation, Prussia's king fleeing the Russians, terms of peace offered to England if she abandons Russia, and Napoleon's hopes resting on the coming campaign. The last 32 stretches carry no decipherment on this copy, and none was found.",
         "reading_review": {
           "grade": "A",
           "by": "Andrew Beling",
@@ -427,7 +430,7 @@
       "key.md",
       "key.tsv"
     ],
-    "notes": "Contributed by Andrew Beling with AI agents. The 2 Feb letter is printed (Papers of James Monroe vol. 6) from the clerk's decipherment; 1 and 6 Feb were not found in print. Andrew Beling read the three readings as sentences against the images on 11 Nov 2026 (reading_review). read_share is the repo measure on the whole reading (clear text included); NOTES.md section 6 gives the cipher-only figures.",
+    "notes": "Contributed by Andrew Beling with AI agents. The 2 Feb letter is printed (Papers of James Monroe vol. 6) from the clerk's decipherment; 1 and 6 Feb were not found in print. Andrew Beling read the three readings as sentences against the images on 11 Nov 2026 (reading_review). read_share is the repo measure on the whole reading (clear text included); NOTES.md section 6 gives the cipher-only figures. Integration check, 11 Nov 2026 (NOTES.md): decryption of the 603 numerals re-derived with a separate decoder; about 300 numerals compared on frames 0108-0110; 'never deciphered at the time' narrowed to 'no decipherment on this copy, none found' because the letter is a Second Copy and no other copy was looked for.",
     "human_check": {
       "date": "2026-11-11",
       "by": "Andrew Beling",
