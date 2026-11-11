@@ -426,6 +426,11 @@ PAGES = [
          blurb='A short cipher letter of Spain&rsquo;s ambassador at Genoa (AGS Estado leg. 3598 no. 44) whose plain original is not online. Brice Dudout learned the 1643 table on other letters of the bundle and tested it on a held-out pair (0.881 of characters, 0.834 of words; a first test fell below the criterion and is reported), then read 135 of 137 words. The Grand Duke of Tuscany answers the request for troops by referring it to his resident in Madrid, which Eraso calls a way of gaining time. Contributed by Brice Dudout.',
          quote='&ldquo;gozar&aacute; del beneficio del tiempo&rdquo;',
          rights='Archivo General de Simancas (PARES); text and translation: Brice Dudout, CC BY 4.0'),
+    dict(slug='ridolfi1646', footer_date='November 2026', label='Ridolfi to Arcos, Rome 1646', year='1646', y=1646.35, place='Rome &rarr; Naples', st='partial', stt='key from the ciphertext',
+         title='Ludovico Ridolfi to the duque de Arcos, Rome, 8 May 1646',
+         blurb='A five-page Italian letter to the viceroy of Naples written all in numbers, with no decipherment and no edition. Brice Dudout contributed a key proposed from the cipher of pages 1&ndash;4 and tested once on the fifth page, held out from the start (0.817 against 0.487 and 0.600 for the controls). 405 of 431 words are read without restorations: the Pope refuses passage to the cavalry sent to help the Grand Duke of Tuscany, and Bouillon may come to terms with the French.',
+         quote='&ldquo;il Cardinale Mazarino senpre gli fara doppiar le oferte&rdquo;',
+         rights='Letter: Archivo Hist&oacute;rico de la Nobleza, OSUNA,C.3456,D.107 (PARES); key, transcription and reading contributed by Brice Dudout, CC BY 4.0'),
     dict(slug='piccolomini1646', label='Two letters to Piccolomini c. 1646', year='c. 1646', y=1646.9, place='unknown &rarr; Ottavio Piccolomini', st='attempted', stt='decoded, not read',
          title='Two Italian cipher letters to Ottavio Piccolomini, c. 1646',
          blurb='Two letters in a cipher whose vowels are odd digits, never read: a student thesis of 2017 deciphered their neighbour and printed the key. WAINUT applied it unchanged to the other two, from photographs of a microfilm-reader screen: about 65% of the words decode verbatim, but most sentences have holes, so neither letter counts as read.',
@@ -3354,6 +3359,7 @@ IMAGES['azuares1837'] = None
 IMAGES['toledo1479'] = None
 IMAGES['agad131'] = None
 IMAGES['taulet1866'] = None
+IMAGES['ridolfi1646'] = None
 IMAGES['sega1591b'] = None
 IMAGES['bongars1597'] = ('bongars1597_lead.jpg', 'f. 360v: the second letter opens; the third line begins with the group that spells Brunswick', 'Burgerbibliothek Bern, Cod. B 149 (A) 452, f. 360v, via the Burgerbibliothek online catalogue (public domain)')
 IMAGES['ebers1664'] = ('ebers1664_lead.jpg', 'Image 138: code runs with the German gloss written above them', 'Riksarkivet, Stockholm, SE/RA/2113/2113.1/3/b/602, bildid R0003225_00138, via the Riksarkivet IIIF service')

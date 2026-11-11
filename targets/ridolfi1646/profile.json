@@ -1,0 +1,232 @@
+{
+ "schema_version": 1,
+ "target": "ridolfi1646",
+ "title": "Ludovico Ridolfi to the duque de Arcos, viceroy of Naples, Rome, 8 May 1646 (catalogue 748, AHNOB OSUNA,C.3456,D.107): numbered Italian cipher, key recovered and validated on a held-out page, read in part",
+ "documents": [
+  {
+   "id": "osuna-c3456-d107",
+   "read": "read in part",
+   "shelfmark": "Toledo, Archivo Histórico de la Nobleza, OSUNA,C.3456,D.107 (PARES description 6449375)",
+   "date": "8 May 1646",
+   "year": 1646,
+   "country": "Italy",
+   "route": "Ludovico Ridolfi -> Rodrigo Ponce de León, IV duque de Arcos, viceroy of Naples",
+   "places": {
+    "from": "Rome",
+    "to": "Naples"
+   },
+   "language": "Italian",
+   "pages": 5,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "none: no decipherment of the time with the letter or in the other items of catalogue 748; only the date is in clear",
+    "partial": false
+   },
+   "length": {
+    "tokens": 1412,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "PARES images of OSUNA,C.3456,D.107 (description 6449375); images not reproduced",
+    "image_quality": "good",
+    "notes": "Transcription v1: sign by sign by AI agents on enlarged strips (four passes, 28 Oct 2026), with doubtful groups noted a/b; frozen before any key existed. No human palaeographer checked it. Most of the 19 restorations of pp. 1-4 are one-digit confusions of this hand (2/3/7 in the tens, 1/2, 3/4, 6/8 in the units)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "Numbered Italian cipher: 20-24 = a e i o u and 25-44 = the alphabet a ... u (so two codes per vowel); syllables in series of five (b 49-53, m 54-58, l 59-63, n 65-69, d 70-74, t 75-79, g 80-84, f 85-90, z 91-95), 64/97 = che, 98 = chi; nomenclator 100-243; a barred X is punctuation; a superscript dot marks a doubled consonant.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 78,
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "word_division": "none",
+  "diacritics": {
+   "used": true
+  },
+  "key_order": "alphabetical",
+  "notes": "The superscript dot (23 occurrences) is read as a doubled consonant: 15 of 21 dots on pp. 1-4 and both dots of p. 5 fall on a double written single. The D.106 table of the same file is not this cipher (ruled out analytically)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment with D.107 or in D.102-106; catalogue 748 notes 'Not in the repo' (known.py: no hits for C.3456 or 'duque de Arcos'); no target, PR or issue for Ridolfi or C.3456 on origin/main (11 Nov 2026); PARES search of OSUNA found no other Ridolfi cipher (28 Oct 2026). Not checked: AGS Estado (Rome / Genoa 1645-46) and ASFi Mediceo del Principato for Ridolfi's papers or key.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Brice Dudout chose the target and set the rules (page 5 held out from the start; protocol, calibration and thresholds hashed before page 5 was decoded; one measurement). AI agents transcribed; an earlier series of agent attempts (homophonic and nomenclator solvers, cribs) failed; the key was then proposed by Claude Fable 5.2 in one API run on pages 1-4; Claude Opus 5.5 agents measured, read page 5 and wrote up. No human palaeographer checked the transcription or the reading.",
+  "models": [
+   "Claude Fable 5.2 (Anthropic), one API run on pages 1-4 (key proposal and reading of pp. 1-4)",
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout (transcription, validation, reading of p. 5, write-up)"
+  ],
+  "first_date": "2026-10-27",
+  "last_date": "2026-11-11"
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "transcription",
+   "what": "Transcription v1 of pp. 1-5 (1,412 groups), sign by sign, frozen; page 5 (99 groups) held out from then on.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing"
+   ],
+   "what": "Homophonic letter solver and a nomenclator-of-frequent-words solver on pp. 1-4; the D.106 table of the same file and the 1645 Frías key tested.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "simulated annealing"
+   ],
+   "what": "15 probable words at 4,514 compatible positions of pp. 1-4, propagated by annealing; no word retained (z max 2.73 < 4).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "language-model scoring",
+    "contextual inference"
+   ],
+   "what": "Claude Fable 5.2 (one API run, pages 1-4 only) proposed the structure (two vowel series, alphabet 25-44, syllable series of five, nomenclator 100-243) and the key; in-sample cover 0.876 vs 0.388 for shuffled keys. Key frozen.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One pre-registered measurement on held-out page 5 (99 groups, never sent to the model): lexical cover 0.817 vs best of 200 shuffled keys 0.487 and best of 200 group shuffles 0.600; thresholds calibrated beforehand on pp. 1-4 (>= 0.75, +0.25, +0.08) all held; the pre-registered sense check held (p. 5 closes the sentence of p. 4).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "reading",
+   "what": "pp. 1-5 read by sense: 431 words, 378 certain, 27 probable, 21 restored, 5 unresolved nomenclator codes = 94.0% (98.8% with restorations).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Integration of PR #403: frozen/scripts/mesure.py re-run on the frozen files with lang/lexicons/it.json.gz decompressed (SHA-256 f4d2f270..., as listed in FREEZE.sha256) gives the same output byte for byte (COV 0.817; 200 shuffled keys max 0.487, mean 0.251; 200 group shuffles max 0.600, mean 0.415); calib.py and decompte.py also reproduce their outputs (51 windows, minima 0.783 / 0.256 / 0.098; 44 of 51 rejected by the 0.85 / +0.30 rule); FREEZE.sha256 and POST-MESURE.sha256 check out; key.tsv carries the frozen proposal unchanged plus the marked additions; decoding transcription.txt (1,412 groups, same as frozen/transcr) reproduces decryption.txt line for line; reading.md recounted: 378 certain, 27 probable, 21 restored, 5 unresolved of 431. Not verifiable from the repository: that page 5 was withheld from the model run and that the hashes predate the decoding (one commit; the contributor's statement).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "what": "Retry at integration, on the texts only (the PARES images answered HTTP 429 to the integrating session): each of the 21 restored words checked against the frozen transcription and key. The 19 of pp. 1-4 are those of frozen/EMENDATIONS.tsv, hashed before page 5 was decoded; 3 of them take the transcription's own second reading (1.17 22/27, 3.20 243/23, 4.19 68/67), 1 supplies an omitted group, 15 change one digit (74 for 34 three times, 24 for 34 twice); on p. 5, 47 lies outside the key and 26 is read as 76. None contradicts a certain letter; none can be confirmed without the images, so all 21 stay restored.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Key proposed by Claude Fable 5.2 from pages 1-4 alone (no clear of the time, no parallel text), frozen, and validated once on page 5, held out from the start and never seen by the model.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.94,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.md, words (each nomenclator group one word): 378 certain + 27 probable = 405 of 431 = 94.0%; the 21 restored words and the 5 unresolved codes are not counted (426/431 = 98.8% with the restored words). Recounted at integration. 21 of the 27 probable words are nomenclator values given by the sense only; with those also left out, as the README formula for read_share would have every guessed word, the share is 384/431 = 89.1%. Under the 95% bar on either count.",
+  "verification": [
+   "statistical test",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-11-11",
+   "verdict": "pass",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): PREREG SHA-256 ce607b24705b4ed2b6106e5a77395f3832429bdcae8c2eae902a42a8f9c2691d; single measurement on p. 5: lexical cover 0.817 vs 0.487 (200 shuffled keys) and 0.600 (200 group shuffles); thresholds calibrated on 51 in-sample windows of 99 groups before the measure. Reservations: small held-out part (99 groups); the reference is a lexical cover, not a clear of the time; nomenclator values not tested. Re-run at integration (PR #403) with identical output. By the contributor's usual rule (>= 0.85 and >= best control + 0.30) page 5 would not pass (0.817; +0.217 over the best group shuffle); the rule applied was calibrated for 99 groups on pp. 1-4 before the measure."
+  },
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "transcription; key proposed by Claude Fable 5.2 (Anthropic) on pp. 1-4 and validated by us once on held-out p. 5 (0.817 vs 0.487 / 0.600, thresholds fixed in advance); letter read in part (94.0%, 98.8% with restorations) and translated",
+    "date": "2026-11-11",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/403"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "catalogue entry 748 (PARES sweep of 27 Oct 2026)",
+    "date": "2026-10-27"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "21 restored words (19 on pp. 1-4: 15 one-digit changes, 3 second readings of the transcription, 1 omitted group; 47 = z and 26 for 76 on p. 5)",
+    "blocker": "open-codes",
+    "detail": "not nomenclator codes but doubtful figures of transcription v1; retried on the texts at integration (11 Nov 2026), none contradicted, none confirmed; a blind re-reading on the PARES images would settle each (PARES answered HTTP 429 to the integrating session, and no image is in the repository); still workable"
+   },
+   {
+    "item": "nomenclator: 5 codes open (103, 110, 115, 116, 136) and 21 values given by the sense only",
+    "blocker": "open-codes",
+    "detail": "single or rare codes; no nomenclator of Ridolfi known; another letter of his in this cipher (AGS Estado, ASFi Mediceo) would test them"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "osuna-c3456-d107",
+    "label": "D.107, pp. 1-5, Ridolfi to Arcos, Rome 8 May 1646",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.94,
+    "summary": "The Pope has refused Don Antonio Ronquillo passage for 500 horse sent by the viceroy to help the Grand Duke of Tuscany, but would grant it towards Milan; Ridolfi advises accepting, since from Forlì the cavalry can turn into Tuscany if the French attack. News of the French fleet near La Spezia; a landing towards the Val di Taro and the Parmesan is more likely; Souvré's talks with 'that Duke'; Vendôme and the Huguenots' plan to rise; the Almirante would pay Vendôme 12,000 ducats; the Bouillon negotiation is stuck and Ridolfi fears Bouillon will come to terms with the French, Mazarin always doubling his offers.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Brice Dudout's AI agents (pp. 1-4 the key proposer, p. 5 a Claude Opus 5.5 agent); re-read at integration by Claude for the project",
+     "date": "2026-11-11",
+     "note": "Contributor: read as Italian sentences by AI agents only; the reading of pp. 1-4 was not redone word by word by a second reader, and no human read it. Integration (PR #403): reading.md read clause by clause against decryption.txt and translation.md; every clause construes and the translation follows it, p. 5 continues p. 4; 21 words are restored and 26 nomenclator groups rest on the sense or are open, so grade B. Not checked against the images."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "New decipherment: no decipherment of the time and no edition known. The key is reusable (key.tsv, CC BY 4.0). Model credit: the key was proposed by Claude Fable 5.2 (Anthropic) in one API run; the held-out validation, the reading of p. 5 and the write-up are ours. No image is included.",
+  "codes_open": {
+   "open": 5,
+   "total": 12,
+   "tokens_open": 5
+  }
+ }
+}
