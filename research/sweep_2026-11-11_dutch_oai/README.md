@@ -3,7 +3,7 @@
 Brief: `research/_nov11/BRIEF.md`. Continues `research/sweep_2026-11_siblings_nov9` (OAI harvest left unfinished) and
 `research/sweep_2026-11_netherlands_regional` (routes blocked from the desktop).
 
-**Result: 8 candidate rows (`candidates.json`), 5 with a complete `open` vetting block, 3 of them with the cipher seen on the
+**Result: 8 candidate rows (`candidates.json`), 6 with a complete `open` vetting block, 4 of them with the cipher seen on the
 scans; 8 key-only items (`key_leads.json`).** Both files are built by `make_candidates.py`.
 
 | Row | Shelfmark | Seen | Block |
@@ -15,7 +15,7 @@ scans; 8 key-only items (`key_leads.json`).** Both files are built by `make_cand
 | Van Meeteren to the Dordrecht Patriots, 14 Oct 1783 | RA Dordrecht 325 inv. 44 | not online | open |
 | Arent van Wassenaer with Helvetius, Mesnager, Portland, 1707-1711 | Gelders Archief 0525 Rosendael inv. 1240 | not online | none (bundle; Heinsius edition not opened) |
 | Duke George of Saxony to Cesar Pflug, 29 cipher letters of 1514 | HStA Dresden Loc. 8183 / Tresoar toegang 1 (microfilm) | not online | none (inventory maker summarises most letters) |
-| Waldeck's register 1654-55, cipher letters with the Elector | Gelders Archief 0370 Culemborg inv. 1257 | 60 of 856 scans, cipher not located | none |
+| Elector Frederick William to Waldeck, number cipher, Cöslin 4/14 Sept 1655 (and more in the volume) | Gelders Archief 0370 Culemborg inv. 1257 | 86 of 856 scans; cipher on scans 715, 795 | open (Urkunden und Actenstücke VII opened: not printed) |
 
 ## Routes from this network
 
@@ -41,14 +41,15 @@ Note: the `id` field is the first `unitid`, which in several sets is the GUID, n
 
 | Set | EADs read here | Notes |
 |---|---|---|
-| 236 Noord-Hollands Archief | 2,243 (records 431-2,673 of the id list) on the first pass | finishes the set left at 430 on 9 Nov; see "Re-read" below |
+| 236 Noord-Hollands Archief | 2,243 (records 431-2,673 of the id list) on the first pass | finishes the set left at 430 on 9 Nov; the first 463 re-read too (below) |
 | 5 Groninger Archieven | 2,327 (records 441 on) | finishes the set left at about 450 |
 | 59 Haags Gemeentearchief | 2,352, the whole set | was 1,434 of 2,386 |
 | 136 Westfries Archief | 2,113, the whole set | was 1,237 of 2,151 |
 | 46 RA Dordrecht | 1,170, whole set (new) | one find: 325 inv. 44 |
 | 2231 NIMH | 295, whole set (new) | all hits 20th century (Nuboer's cryptography papers, WW2 codes) |
 | 128 Langstraat Heusden Altena 763, 137 Zaanstad 629, 126 Voorne-Putten 491, 386 Noordwest Utrecht 370, 319 Rijnland 278 of 289, 434 NoVA 53, 150 Schieland 47, 111 Sittard-Geleen 23, 28 Eemland 3 | whole sets (new) | no early-modern cipher item |
-| 102 Rivierenland, 239 Zeeuws Archief, 26 Achterhoek-Liemers, 142, 184 | see "Re-read" | |
+| 102 RA Rivierenland 1,369; 239 Zeeuws Archief 1,495 of 1,543; 26 EC Achterhoek-Liemers 321 of 329; 142 Amstel-Gooi-Vecht 6; 184 Rotterdam 6 of 10 | whole sets re-read with the wider regex | nothing new (Zeeuws 202.90 no. 4 again = lead 1947) |
+| 236 and 5 again | the first 463 (NHA) and 1,072 (Groningen) records, which the first pass had skipped as "done on 9 Nov" | so both sets are now read whole with the wider regex; this is where Ewsum 595 (toegang 696) turned up in the OAI data |
 
 Sets that are empty or nearly so in the feed (45 Deventer, 131 Waterland, 103 Roermond, 105 Alphen, 35 Flevoland, 1950, 62, 72, 1949, 15,
 2557, 2803, 2801, 1648): nothing to read. Gelders Archief (37), HC Overijssel (141), BHIC (235) and Het Utrechts Archief (39) were done
@@ -58,7 +59,7 @@ Early-modern cipher components in the OAI sets read here: RA Dordrecht 325 inv. 
 cipher papers and undated notes "in geheimschrift" of the lodge La Flamboyante: excluded, lodge alphabet, no date); Noord-Hollands
 Archief 3248 Penninck Hoofd inv. 141 ("Briefje in geheimschrift (met codering) en tekeningetje, z.d.": undated note with its key,
 not a row); Groninger Archieven 696 inv. 595 (row), 561 inv. 439 (key lead), 623 inv. 1597 ("Datering in geheimschrift": a date only),
-1109 inv. 487 and 2393 inv. 353 (already excluded on 9 Nov). Everything else is modern: classification codes, grade lists, code books of firms.
+1109 inv. 487 and 2393 inv. 353 (already excluded on 9 Nov), 2100 Stadsbestuur, letter of 7 Dec 1581 to the envoys Ubbena and De Gouda with a note by Alting "gedeeltelijk in cijferschrift. Het vercijferde woord is door De Gouda opgelost en gelezen als 'Drentsche'" (one word, solved at the time: excluded). Everything else is modern: classification codes, grade lists, code books of firms.
 
 ## archieven.nl site search: terms and hit counts (inventories holding the term)
 
@@ -83,8 +84,7 @@ introduction or in file names): Tresoar 2 (microfiches of the Saxon government p
   Reede's key, before 1747: try on the Goslinga row and on catalogue 2446), Waardenburg 782I-II (Merode's embassy to Spain 1660-62),
   Tresoar 323 inv. 5592.52 and 5535 (Willem Lodewijk's cipher explained: try on catalogue 1950, 1953), Drents Archief 0185 inv. 496 and
   0617 inv. 724, Van Lynden van Hoevelaken 12, Groningen 561 inv. 439.
-- **Excluded**: Gelders 0001 nos. 1738.01-0055 and 1735.1-0078 (letters that *mention* a cipher letter, Charles of Guelders), Gelders
-  0370/1257 kept only as a lead (cipher not found in the sample), KZGW 3864 (notes of 1837 *about* cipher letters), Groningen 835 inv. 256
+- **Excluded**: Gelders 0001 nos. 1738.01-0055 and 1735.1-0078 (letters that *mention* a cipher letter, Charles of Guelders), KZGW 3864 (notes of 1837 *about* cipher letters), Groningen 835 inv. 256
   (Julsing's diary: printed 2006), Westfries 0778 inv. 374 and the music "cijferschrift" items, the IMOE guide entries to RGADA (Matveev to
   Golovin 1703, "in cipher code": Moscow holdings described in a Dutch guide, outside this sweep), all 20th-century items (NIMH, NIOD,
   burgomasters' "geheimschrift" circulars of 1919-1967).
@@ -102,7 +102,7 @@ and 183 (Burmania's and Buys's "cijffer": key-only). No new ciphertext item. Not
 
 ## What remains
 
-1. Page through Gelders Archief 0370 inv. 1257 (856 scans) for the Waldeck cipher leaves; open Erdmannsdörffer before vetting.
+1. Page through Gelders Archief 0370 inv. 1257 (770 of 856 scans not viewed) and list every cipher leaf; Erdmannsdörffer's Waldeck biography (1869) could not be searched (Fraktur OCR).
 2. Order scans: Rosendael 577 and 1240, RA Dordrecht 325 inv. 44, Bentinck 3973 (key), Bingerden 144/518 (keys).
 3. Saxon dukes 1514: ask Tresoar how Baks summarised the cipher-only despatches (key rebuilt?), and HStA Dresden for images of Loc. 8183.
 4. Ewsum 595: 158 of 199 scans not viewed. Goslinga 3889: pair the decipherment slips with their letters.

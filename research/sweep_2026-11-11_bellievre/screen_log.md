@@ -29,3 +29,13 @@
 ## fr. 15904, btv1b9064051h (480 canvases, microfilm openings, ff. 1-463; 1576-77)
 - Detector: 480 scored, 63 hits viewed, all clear (French, Latin, one Italian notarial act c0450; Casimir/Condé affair).
 - Result: no cipher seen.
+
+## fr. 15903, second ark btv1b9064052x (436 canvases, microfilm openings, ff. 1-c. 420; 1574-75)
+- Detector: 436 scored, 112 hits viewed; 3x3 sheets read for canvases 42-50 and 250-258.
+- c0047 right (f. 41r): Catherine de Médicis to Bellièvre (in Poland), April 1574, signed Caterine: two blocks of letter/sign
+  cipher (c. 6 + 6 lines) around two clear lines. Its decipherment is filed before it: c0046 right - c0047 left (ff. 40r-v),
+  headed "Deschiffrement de la l[ett]re de la Reine mere du mois d'Avril 1574". Deciphered in the volume: not a candidate.
+- c0254 right (f. 244r): letter to Bellièvre, 1575, clear with four short cipher passages (letters and figures, c. 6 lines in
+  all), each with the contemporary interlinear decipherment above it ("necessité et danger", "au Palatin" ...). Not a candidate.
+- c0117: a clear letter (Vienna, July 1574) that speaks of having an article deciphered; no cipher on it.
+- Everything else viewed is clear (French, Italian, Latin; Swiss and Polish affairs).
