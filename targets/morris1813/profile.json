@@ -108,7 +108,10 @@
    {"who": "lccompany", "role": "transcription", "note": "650, frame 0039 (554 groups) from NARA M31 roll 14", "date": "2026-10-27"},
    {"who": "lccompany", "role": "verification", "note": "blind re-reading of 144 groups (three corrections); independent re-test of the block order", "date": "2026-10-27"},
    {"who": "contemporary", "role": "key or decipherment used", "note": "the State Department clerk's interlinear decodes (NARA M35 reel 3) from which targets/jqa/code_table.tsv was rebuilt in this repository; that table is applied here under Morris's block order"},
-   {"who": "ford", "role": "key or decipherment used", "note": "printed decipherments in Writings of John Quincy Adams vols 3-4, aligned in targets/jqa to rebuild the table; also the bigram source of the per-block control", "source": "Ford, Writings of John Quincy Adams, vols 3-4"}
+   {"who": "ford", "role": "key or decipherment used", "note": "printed decipherments in Writings of John Quincy Adams vols 3-4, aligned in targets/jqa to rebuild the table; also the bigram source of the per-block control", "source": "Ford, Writings of John Quincy Adams, vols 3-4"},
+   {"who": "ajbeling", "role": "solution", "note": "PR #200: five more letters read in part (4 and 11 Apr, 11 May 1814; 27 Jan 1815, No. 26; 24 Mar 1815)", "date": "2026-11-01", "source": "https://github.com/dbourdeau/cyphersolver/pull/200"},
+   {"who": "ajbeling", "role": "transcription", "note": "PR #200: working transcription of a surviving State Department copy of the code (NARA M97 roll 13 frames 1056-1057; printed by Weber as WE028; not Morris's own copy), used as the key under the block reversal in beling/; numerals of the five letters, two readers on the first four", "date": "2026-11-01", "source": "https://github.com/dbourdeau/cyphersolver/pull/200"},
+   {"who": "ajbeling", "role": "identification", "note": "PR #200: frame 0039 dated to 4 Jan 1814 and read with its clear copies", "date": "2026-11-01"}
   ],
   "gaps": [
    {"item": "frames 0036-0038, 0050, 0052-0057, 0124-0125 and 0191-0192 (about 2,500 groups)", "blocker": "not-attempted", "detail": "not transcribed; 0191-0192 are two copies of one despatch and would check readings and transcription"},
@@ -131,6 +134,6 @@
    }
   ],
   "key_file": ["../jqa/code_table.tsv", "block_map.tsv"],
-  "notes": "Contributed by WAINUT (catalogue 650). Same code as ../jqa (a one-line pointer added to ../jqa/NOTES.md; the table there is not changed); Morris's block order is in block_map.tsv. Only frame 0039 of the despatches is worked: fraction_read is over the whole catalogue item, read_share on texts is over frame 0039. The 364 = full stop argument rests on PR #107 (Ellis 1839), so #107 merges first."
+  "notes": "Contributed by WAINUT (catalogue 650, PR #114) and Andrew Beling, with AI agents (PR #200). Same code as ../jqa (a one-line pointer added to ../jqa/NOTES.md; the table there is not changed); Morris's block order is in block_map.tsv. Only frame 0039 of the despatches is worked: fraction_read is over the whole catalogue item, read_share on texts is over frame 0039. The 364 = full stop argument rests on PR #107 (Ellis 1839), so #107 merges first."
  }
 }

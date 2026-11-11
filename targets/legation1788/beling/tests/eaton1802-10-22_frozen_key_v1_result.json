@@ -1,0 +1,21 @@
+{
+ "key_sha256": "e88b2c7f792e0759a38b56f9f14a8809aeaa3f464f06db687edfde379f7e55f4",
+ "A_groups": 92,
+ "B_groups": 93,
+ "agree": 85,
+ "agree_share": 0.914,
+ "consensus_groups": 85,
+ "truth": "Not reproduced here: the Madison Papers editors' decipherment of the passage (https://founders.archives.gov/documents/Madison/02-91-02-0526, note 2; it repeats the postscript of 9 Oct 1802, https://founders.archives.gov/documents/Madison/02-04-02-0007). The same words are interlined over the code on NARA T303 roll 2 frame 0320 in a contemporary hand.",
+ "result": {
+  "groups": 85,
+  "covered": 49,
+  "coverage": 0.576,
+  "matched": 44,
+  "score": 0.898,
+  "shuffled_mean": 0.119,
+  "shuffled_max": 0.224
+ },
+ "pass_rule": true,
+ "caveat": "The coded passage of 22 Oct 1802 turned out to be Eaton's repetition of his 9 Oct postscript (the edition says so in note 2). It is therefore not new text: its plaintext was already known to us from the 9 Oct edition. None of the postscript's group-to-word alignment went into the frozen key (key sources: Tunis letter body, Pinckney 1793, Lear 1813), and the numerals here were read blind from a third manuscript copy.",
+ "first_run_note": "The first run returned 0 matched for the real and the shuffled keys alike: the truth text had been taken from the file header's explanation of the [[CIPHER> ... <CIPHER]] convention, which contains no letters. The extraction was corrected to the tagged passage and the measure re-run unchanged."
+}

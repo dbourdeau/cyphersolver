@@ -1,0 +1,587 @@
+CHECKS for targets/legation1788/beling (prepared 2026-11-10/11 on a worktree of dbourdeau/cyphersolver at origin/main 6897c12b;
+re-run at origin/main ebb365f, the current base, in the last section)
+Python: Python 3.9.6
+
+### BEFORE (origin/main 6897c12b, targets/legation1788 untouched)
+$ python3 docs/_check_profile.py legation1788
+legation1788: profile.json
+  [gap ] system.homophones.used = "unknown"
+  [gap ] system.nomenclator.entries = "unknown"
+  [gap ] system.nulls.present = "unknown"
+  [gap ] system.doubled_letters = "unknown"
+  [gap ] outcome.codes_open.total = "unknown"
+  result: valid, 5 unknown field(s)
+exit 0
+
+$ python3 docs/_check_reading.py legation1788
+not a reading  0.0  0/114 sentences  holes 0.381  en reading  tr=y  texts/short_17920726_decryption.txt
+readable       0.973  72/74 sentences  holes 0.021  en reading  tr=y  texts/short_17920726_reading.txt
+not a reading  0.0  0/1 sentences  holes 0.357  en reading  tr=y  texts/carmichael_17880414_decryption.txt  [read in part]
+readable       1.0  3/3 sentences  holes 0.025  en reading  tr=y  texts/carmichael_17880414_reading.txt  [read in part]
+not a reading  0.0  0/10 sentences  holes 0.39  en reading  tr=y  texts/pinckney_17930828_decryption.txt  [read in part]
+readable       1.0  3/3 sentences  holes 0.024  en reading  tr=y  texts/pinckney_17930828_reading.txt  [read in part]
+target: clean share 0.973, worst short_17920726 0.973, shapes {'reading': 1}, translated 1/1
+exit 0
+
+$ (reading-check.yml step) _texts.reading_problems(targets/legation1788)
+== legation1788: ok
+exit 0
+
+### AFTER (proposed_changes.patch applied to targets/legation1788 at 6897c12b)
+$ python3 docs/_check_profile.py legation1788
+legation1788: profile.json
+  [gap ] system.homophones.used = "unknown"
+  [gap ] system.nomenclator.entries = "unknown"
+  [gap ] system.nulls.present = "unknown"
+  [gap ] system.doubled_letters = "unknown"
+  [gap ] outcome.codes_open.total = "unknown"
+  result: valid, 5 unknown field(s)
+exit 0
+
+$ python3 docs/_check_reading.py legation1788
+not a reading  0.0  0/114 sentences  holes 0.381  en reading  tr=y  texts/short_17920726_decryption.txt
+readable       0.973  72/74 sentences  holes 0.021  en reading  tr=y  texts/short_17920726_reading.txt
+not a reading  0.0  0/1 sentences  holes 0.357  en reading  tr=y  texts/carmichael_17880414_decryption.txt  [read in part]
+readable       1.0  3/3 sentences  holes 0.025  en reading  tr=y  texts/carmichael_17880414_reading.txt  [read in part]
+not a reading  0.0  0/10 sentences  holes 0.39  en reading  tr=y  texts/pinckney_17930828_decryption.txt  [read in part]
+readable       1.0  3/3 sentences  holes 0.024  en reading  tr=y  texts/pinckney_17930828_reading.txt  [read in part]
+target: clean share 0.973, worst short_17920726 0.973, shapes {'reading': 1}, translated 1/1
+exit 0
+
+$ (reading-check.yml step) _texts.reading_problems(targets/legation1788)
+== legation1788: ok
+exit 0
+
+$ (cd targets/legation1788 && python3 make_reading.py)
+short_17920726 674 {'E': 156, 'T': 511, 'O': 7} read incl. C 99.0% excl. C 99.0%
+pinckney_17930828 58 {'O': 2, 'E': 17, 'H': 39} read incl. C 96.6% excl. C 96.6%
+carmichael_17880414 5 {'C': 4, 'O': 1} read incl. C 80.0% excl. C 0.0%
+ALL 737 {'E': 173, 'T': 511, 'O': 10, 'H': 39, 'C': 4} read incl. C 98.64% excl. C 98.10%
+
+### AFTER, in a scratch copy (git archive of 6897c12b + git apply proposed_changes.patch)
+$ python3 docs/_check_profile.py legation1788
+legation1788: profile.json
+  [gap ] system.homophones.used = "unknown"
+  [gap ] system.nomenclator.entries = "unknown"
+  [gap ] system.nulls.present = "unknown"
+  [gap ] system.doubled_letters = "unknown"
+  [gap ] outcome.codes_open.total = "unknown"
+  result: valid, 5 unknown field(s)
+exit 0
+
+$ python3 docs/_check_reading.py legation1788
+not a reading  0.0  0/114 sentences  holes 0.381  en reading  tr=y  texts/short_17920726_decryption.txt
+readable       0.973  72/74 sentences  holes 0.021  en reading  tr=y  texts/short_17920726_reading.txt
+not a reading  0.0  0/1 sentences  holes 0.357  en reading  tr=y  texts/carmichael_17880414_decryption.txt  [read in part]
+readable       1.0  3/3 sentences  holes 0.025  en reading  tr=y  texts/carmichael_17880414_reading.txt  [read in part]
+not a reading  0.0  0/10 sentences  holes 0.39  en reading  tr=y  texts/pinckney_17930828_decryption.txt  [read in part]
+readable       1.0  3/3 sentences  holes 0.024  en reading  tr=y  texts/pinckney_17930828_reading.txt  [read in part]
+target: clean share 0.973, worst short_17920726 0.973, shapes {'reading': 1}, translated 1/1
+exit 0
+
+$ (reading-check.yml step) _texts.reading_problems(targets/legation1788)
+== legation1788: ok
+exit 0
+
+$ (cd targets/legation1788 && python3 make_reading.py)   # reading.tsv in the patch is this script's output
+short_17920726 674 {'E': 156, 'T': 511, 'O': 7} read incl. C 99.0% excl. C 99.0%
+pinckney_17930828 58 {'O': 2, 'E': 17, 'H': 39} read incl. C 96.6% excl. C 96.6%
+carmichael_17880414 5 {'C': 4, 'O': 1} read incl. C 80.0% excl. C 0.0%
+ALL 737 {'E': 173, 'T': 511, 'O': 10, 'H': 39, 'C': 4} read incl. C 98.64% excl. C 98.10%
+
+### INFORMATION ONLY: patched state, then targets/legation1788/make_profile.py re-run (NOT part of the patch)
+$ (cd targets/legation1788 && python3 make_profile.py)
+3 documents; 723/737 read (0.981), 727/737 incl. conjecture; grades {'E': 173, 'T': 511, 'O': 10, 'C': 4, 'H': 39}
+profile.json changes it makes: Pinckney 28 Aug read_share 0.914 -> 0.966 and state 'read in part' -> 'read'; fraction_read 0.977 -> 0.981; grades H 541 -> 550, M 179 -> 173, I 8 -> 4; codes_open 8 -> 9 (?55 becomes open);
+and it REVERTS the Carmichael summary edit of commit 44eeed68 (make_profile.py does not carry it). texts/pinckney_17930828_decryption.txt is rewritten from reading.tsv.
+
+$ python3 docs/_check_profile.py legation1788
+legation1788: profile.json
+  [gap ] system.homophones.used = "unknown"
+  [gap ] system.nomenclator.entries = "unknown"
+  [gap ] system.nulls.present = "unknown"
+  [gap ] system.doubled_letters = "unknown"
+  [gap ] outcome.codes_open.total = "unknown"
+  result: valid, 5 unknown field(s)
+exit 0
+
+$ python3 docs/_check_reading.py legation1788
+not a reading  0.0  0/114 sentences  holes 0.381  en reading  tr=y  texts/short_17920726_decryption.txt
+readable       0.973  72/74 sentences  holes 0.021  en reading  tr=y  texts/short_17920726_reading.txt
+not a reading  0.0  0/1 sentences  holes 0.357  en reading  tr=y  texts/carmichael_17880414_decryption.txt  [read in part]
+readable       1.0  3/3 sentences  holes 0.025  en reading  tr=y  texts/carmichael_17880414_reading.txt  [read in part]
+not a reading  0.0  0/10 sentences  holes 0.395  en reading  tr=y  texts/pinckney_17930828_decryption.txt
+readable       1.0  3/3 sentences  holes 0.024  en reading  tr=y  texts/pinckney_17930828_reading.txt
+target: clean share 0.974, worst short_17920726 0.973, shapes {'reading': 2}, translated 2/2
+exit 0
+
+### git apply --check proposed_changes.patch (on 6897c12b)
+ok: applies cleanly
+
+### Bundle scripts (run from targets/legation1788/beling; key v4 before the 11 Nov corrections, 536 groups: README sections 5-6)
+$ python3 tests/rescore_frozen_key.py
+{
+ "Pinckney 1795, M31 roll 7 frames 0018-0021": {
+  "tested": 107,
+  "fit": 94,
+  "share": 0.879,
+  "shuffled_mean": 0.01,
+  "shuffled_max": 0.065,
+  "pass_rule": true,
+  "misfits": [
+   [
+    411,
+    "compliance",
+    "complied"
+   ],
+   [
+    1571,
+    "structions",
+    "instruct"
+   ],
+   [
+    541,
+    "another",
+    "anxious"
+   ],
+   [
+    1122,
+    "we",
+    "anxious"
+   ],
+   [
+    1226,
+    "for",
+    "fo"
+   ],
+   [
+    373,
+    "vasion",
+    "cession"
+   ],
+   [
+    936,
+    "accede",
+    "acquiesce"
+   ],
+   [
+    420,
+    "purposes",
+    "stipulations"
+   ],
+   [
+    936,
+    "accede",
+    "accomodation"
+   ],
+   [
+    1008,
+    "self",
+    "ourselves"
+   ],
+   [
+    541,
+    "another",
+    "an"
+   ],
+   [
+    982,
+    "arrangements",
+    "guarantee"
+   ],
+   [
+    1075,
+    "part",
+    "guarantee"
+   ]
+  ],
+  "recorded": {
+   "tested": 105,
+   "fit": 93,
+   "share": 0.886,
+   "shuffled_max": 0.105,
+   "pass_rule": true
+  }
+ },
+ "Eaton 25 May 1801, T303 roll 2 frame 0049": {
+  "tested": 64,
+  "fit": 51,
+  "share": 0.797,
+  "shuffled_mean": 0.013,
+  "shuffled_max": 0.125,
+  "pass_rule": false,
+  "misfits": [
+   [
+    1521,
+    "ad",
+    "morad"
+   ],
+   [
+    1453,
+    "said",
+    "corsaires"
+   ],
+   [
+    886,
+    "sh",
+    "barbary"
+   ],
+   [
+    541,
+    "another",
+    "an"
+   ],
+   [
+    1521,
+    "ad",
+    "the"
+   ],
+   [
+    800,
+    "answered",
+    "tunis"
+   ],
+   [
+    1144,
+    "com",
+    "our"
+   ],
+   [
+    1112,
+    "c",
+    "distinguish"
+   ],
+   [
+    1005,
+    "te",
+    "the"
+   ],
+   [
+    1279,
+    "mer",
+    "the"
+   ],
+   [
+    1490,
+    "to",
+    "occasion"
+   ],
+   [
+    312,
+    "sense",
+    "send"
+   ],
+   [
+    957,
+    "dis",
+    "not"
+   ]
+  ],
+  "recorded": {
+   "tested": 60,
+   "fit": 48,
+   "share": 0.8,
+   "shuffled_max": 0.1,
+   "pass_rule": false
+  }
+ }
+}
+
+$ python3 comparison/compare_with_legation1788_key.py
+{
+ "his_code16_rows": 262,
+ "v4_groups": 536,
+ "v4_groups_not_in_his_key": 329,
+ "tally": {
+  "abbreviation": 3,
+  "his only": 61,
+  "ours from his key": 61,
+  "agree": 84,
+  "his is a piece": 3,
+  "ours is a piece": 33,
+  "differ": 13,
+  "not a word": 4
+ },
+ "by_our_grade": {
+  "A abbreviation": 3,
+  "A differ": 3,
+  "A his is a piece": 2,
+  "A not a word": 1,
+  "A ours is a piece": 7,
+  "B ours from his key": 61,
+  "D agree": 64,
+  "D ours is a piece": 4,
+  "S1 agree": 8,
+  "S1 differ": 4,
+  "S1 his is a piece": 1,
+  "S1 not a word": 2,
+  "S1 ours is a piece": 8,
+  "S2 agree": 12,
+  "S2 differ": 6,
+  "S2 not a word": 1,
+  "S2 ours is a piece": 14
+ },
+ "ours_is_a_piece": {
+  "total": 33,
+  "he_marked_missing_letters": 14,
+  "unmarked_whole_words": [
+   [
+    "218",
+    "ships",
+    "ship",
+    "S2",
+    ""
+   ],
+   [
+    "312",
+    "sense",
+    "sen",
+    "S2",
+    "his alt lists ours"
+   ],
+   [
+    "348",
+    "yette",
+    "yet",
+    "A",
+    ""
+   ],
+   [
+    "373",
+    "vasion",
+    "sion",
+    "S2",
+    ""
+   ],
+   [
+    "420",
+    "purposes",
+    "pu",
+    "S1",
+    ""
+   ],
+   [
+    "450",
+    "politi",
+    "poli",
+    "A",
+    ""
+   ],
+   [
+    "523",
+    "full",
+    "ful",
+    "S2",
+    "his alt lists ours"
+   ],
+   [
+    "541",
+    "another",
+    "an",
+    "D",
+    "his alt lists ours"
+   ],
+   [
+    "700",
+    "friendly",
+    "fri",
+    "S2",
+    ""
+   ],
+   [
+    "850",
+    "import",
+    "im",
+    "S1",
+    ""
+   ],
+   [
+    "916",
+    "advanced",
+    "adv",
+    "A",
+    ""
+   ],
+   [
+    "982",
+    "arrangements",
+    "ar",
+    "S2",
+    ""
+   ],
+   [
+    "1107",
+    "request",
+    "re",
+    "S2",
+    "his alt lists ours"
+   ],
+   [
+    "1123",
+    "goods",
+    "good",
+    "D",
+    ""
+   ],
+   [
+    "1196",
+    "sists",
+    "sist",
+    "S1",
+    ""
+   ],
+   [
+    "1264",
+    "oca",
+    "oc",
+    "A",
+    ""
+   ],
+   [
+    "1425",
+    "probable",
+    "pro",
+    "S1",
+    "his alt lists ours"
+   ],
+   [
+    "1453",
+    "said",
+    "sa",
+    "A",
+    "his alt lists ours"
+   ],
+   [
+    "1571",
+    "structions",
+    "struct",
+    "S1",
+    ""
+   ]
+  ]
+ },
+ "differ": [
+  [
+   "146",
+   "expen[ses]",
+   "res",
+   "S2",
+   ""
+  ],
+  [
+   "640",
+   "in",
+   "es",
+   "S2",
+   ""
+  ],
+  [
+   "675",
+   "information",
+   "ly",
+   "S2",
+   ""
+  ],
+  [
+   "706",
+   "your",
+   "inter",
+   "A",
+   ""
+  ],
+  [
+   "963",
+   "should",
+   "id",
+   "A",
+   "his alt lists ours"
+  ],
+  [
+   "1005",
+   "is",
+   "te",
+   "S2",
+   ""
+  ],
+  [
+   "1064",
+   "livres",
+   "ou",
+   "S1",
+   ""
+  ],
+  [
+   "1075",
+   "part",
+   "ant",
+   "S2",
+   ""
+  ],
+  [
+   "1116",
+   "taking",
+   "en",
+   "S1",
+   ""
+  ],
+  [
+   "1122",
+   "we",
+   "x",
+   "S2",
+   ""
+  ],
+  [
+   "1166",
+   "en[joyment]",
+   "een",
+   "S1",
+   ""
+  ],
+  [
+   "1223",
+   "to?",
+   "ras",
+   "A",
+   ""
+  ],
+  [
+   "1402",
+   "[im]",
+   "p",
+   "S1",
+   ""
+  ]
+ ]
+}
+
+$ python3 corrections/pinckney_17930828_points.py
+now {'O': 1, 'E': 23, 'H': 30, 'C': 4} proposed {'O': 2, 'E': 17, 'H': 39} changed rows 12
+
+$ python3 decodes/decode_undecoded_frames.py
+frame	groups	covered_all	share_all	covered_no_A	share_no_A	covered_no_A_no_B	share_no_A_no_B
+0106	169	137	0.811	118	0.698	103	0.609
+0107	93	74	0.796	53	0.570	52	0.559
+0135	421	363	0.862	310	0.736	284	0.675
+0136	621	496	0.799	395	0.636	365	0.588
+0148	15	7	0.467	5	0.333	5	0.333
+0178	352	270	0.767	248	0.705	225	0.639
+0196	121	97	0.802	76	0.628	70	0.579
+0305	177	143	0.808	122	0.689	115	0.650
+0317	13	10	0.769	8	0.615	6	0.462
+all	1982	1597	0.806	1335	0.674	1225	0.618
+
+
+### RE-RUN, 2026-11-11 02:11 local, origin/main ebb365f (only docs/_check_*.py changed since 6897c12b), with proposed_changes.patch applied and then reverted
+$ git apply --check proposed_changes.patch: applies cleanly
+$ python3 docs/_check_profile.py legation1788
+  result: valid, 5 unknown field(s)
+$ python3 docs/_check_reading.py legation1788
+target: clean share 0.973, worst short_17920726 0.973, shapes {'reading': 1}, translated 1/1
+
+### RE-RUN of the bundle scripts on the corrected v4 (537 groups), 2026-11-11 02:40 local; supersedes the bundle-script output above, which was on v4 before the 11 Nov corrections
+$ python3 comparison/compare_with_legation1788_key.py   (tally)
+{"abbreviation": 3, "his only": 60, "ours from his key": 62, "agree": 84, "his is a piece": 3, "ours is a piece": 34, "differ": 13, "not a word": 3}
+$ python3 decodes/decode_undecoded_frames.py   (all frames)
+all	1982	1605	0.810	1358	0.685	1230	0.621
+$ git apply --check proposed_changes.patch: applies cleanly (patch text now says 537-group key)
