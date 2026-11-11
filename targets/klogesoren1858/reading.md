@@ -10,6 +10,10 @@ Counts (Daniel Bourdeau's rule, restored and unresolved words are holes): held-o
 **94.41%** (retained); whole grimoire after the targeted blind sheet K3 95.1% (indicative only, see NOTES.md). The six words changed by K3
 are marked here as in BLIND-REREADING.md (three probable words now certain, two now unresolved, one kept doubtful).
 
+Prior reading: an earlier, unpublished decipherment by Ferdinand Ohrt is recorded in the 1977 inventory of the
+collection ("Afskrevet og tydet af Ohrt. = kop 79.4", quoted at https://fynhistorie.dk/node/16123). It has not been
+consulted; this reading is independent of it (see NOTES.md, Prior art).
+
 ## Part 1 - first session, low resolution (9 pages, 90.6%; to be re-read at full resolution)
 These texts are the readings by sense established on the low-resolution transcription in the first session. Here
 [...] marks a passage not carried into the first-session summary: partly unresolved words, partly words read but not

@@ -20,10 +20,9 @@
    "cleartext_in_document": "interspersed",
    "plaintext": {
     "location": [
-     "none"
+     "separate collection"
     ],
-    "source": "no decipherment exists; the writer's own table of the cipher alphabet is on image 091 left",
-    "partial": false
+    "source": "Ferdinand Ohrt's copy and decipherment, recorded in the 1977 inventory of the collection (G. Henningsen; quoted by H. Nørgaard 2008, fynhistorie.dk/node/16123): 'Afskrevet og tydet af Ohrt. = kop 79.4'. Not consulted; not used. The writer's own table of the cipher alphabet is on image 091 left."
    },
    "length": {
     "tokens": 8055,
@@ -64,9 +63,9 @@
  },
  "conditions": {
   "prior_solution": {
-   "exists": "no",
-   "where": "Catalogue 2525 vetting (Daniel Bourdeau, 11 Nov 2026): DECODE, Tomokiyo, Lasry nothing; no edition. Known: the book and its 'kodeskrift' (lex.dk, B. Rørbye; heuschkel.dk), not read. Rørbye, Kloge folk og skidtfolk (1976) not seen.",
-   "found": "before attempt",
+   "exists": "unpublished",
+   "where": "Ferdinand Ohrt's copy and decipherment ('Afskrevet og tydet af Ohrt. = kop 79.4'), recorded in G. Henningsen's 1977 inventory of the collection, quoted by H. Nørgaard (2008) on fynhistorie.dk/node/16123; not consulted, publication not checked. Catalogue 2525 vetting (Daniel Bourdeau, 11 Nov 2026): DECODE, Tomokiyo, Lasry nothing; no edition found. Known: the book and its 'kodeskrift' (lex.dk, B. Rørbye; heuschkel.dk). Rørbye, Kloge folk og skidtfolk (1976) not seen.",
+   "found": "after reading",
    "used": false
   },
   "inputs": [
@@ -181,6 +180,12 @@
     "role": "pointer",
     "note": "Det Kgl. Bibliotek, Dansk Folkemindesamling: DFS 1997/020 (Kloge Sørens samling), described as 'Størstedelen i lønskrift', imaged on Digitale samlinger and marked out of copyright",
     "date": "2026-11-11"
+   },
+   {
+    "who": "ohrt",
+    "role": "prior solution",
+    "note": "copied and deciphered the book ('Afskrevet og tydet af Ohrt. = kop 79.4', G. Henningsen's 1977 inventory, quoted on fynhistorie.dk/node/16123); found after our reading, not consulted, not used",
+    "date": "2026-11-11"
    }
   ],
   "gaps": [
@@ -215,9 +220,9 @@
     "detail": "read straight into letters with the key; unresolved words kept in sign shapes"
    },
    {
-    "item": "prior art on paper: Rørbye, Kloge folk og skidtfolk (1976); DFS accession record 1997/020",
+    "item": "prior art on paper: Ferdinand Ohrt's copy and decipherment ('kop 79.4', DFS); Rørbye, Kloge folk og skidtfolk (1976); DFS accession record 1997/020",
     "blocker": "needs-physical-access",
-    "detail": "not online; would show whether an earlier reading exists"
+    "detail": "not online; Ohrt's decipherment is known to exist (1977 inventory) but has not been seen: a comparison with our reading is still to do"
    }
   ],
   "texts": [
@@ -231,16 +236,16 @@
     "language": "da",
     "state": "read in part",
     "read_share": 0.9441,
-    "summary": "The working book of a Danish cunning man of Funen: about a hundred charms and recipes against bleeding, wounds, colic, toothache, fever and other ills; protection of cattle, horses, poultry, butter and milk against witchcraft; pests summoned to the Thing; guns bound and men made proof against shot; fire conjured; winning at cards; and a long series against thieves. The directions for use, hidden in the cipher, are new.",
+    "summary": "The working book of a Danish cunning man of Funen: about a hundred charms and recipes against bleeding, wounds, colic, toothache, fever and other ills; protection of cattle, horses, poultry, butter and milk against witchcraft; pests summoned to the Thing; guns bound and men made proof against shot; fire conjured; winning at cards; and a long series against thieves. The directions for use were held by the cipher. An earlier decipherment by Ferdinand Ohrt is recorded in the archive (not consulted).",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent for Brice Dudout",
      "date": "2026-11-11",
-     "note": "Read as Danish sentences of the mid-19th century against decryption.txt: the charms construe (sacred precedent, 'saa sandt som ... saa sandt skal ...', trinitarian close, directions for use) and the English summaries follow; but the held-out portion is at 94.41% after one blind sheet (Brice Dudout answered the shapes), nine pages were read at low resolution only (90.6%), and the second session (95.4%) has had only one targeted blind sheet (K3, nine signs; whole book 95.1%, indicative); so grade B, read in part. No human read the whole reading."
+     "note": "Read as Danish sentences of the mid-19th century against decryption.txt: the charms construe (sacred precedent, 'saa sandt som ... saa sandt skal ...', trinitarian close, directions for use) and the English summaries follow; but the held-out portion is at 94.41% after one blind sheet (Brice Dudout answered the shapes), nine pages were read at low resolution only (90.6%), and the second session (95.4%) has had only one targeted blind sheet (K3, nine signs; whole book 95.1%, indicative); so grade B, read in part. No human read the whole reading. An earlier, unpublished decipherment by Ferdinand Ohrt is recorded (1977 inventory) but was not consulted: this reading is independent of it, and the grade is unchanged (B)."
     }
    }
   ],
   "key_file": "key.tsv",
-  "notes": "New reading: no earlier reading or key of this cipher is known. The key is reusable (key.tsv, CC BY 4.0). No image or derivative of the KB scans is included. A private 20th-century piece, not part of the grimoire, is excluded."
+  "notes": "Independent reading: an earlier decipherment by Ferdinand Ohrt (1873-1938) is recorded in the archive ('Afskrevet og tydet af Ohrt. = kop 79.4', G. Henningsen's 1977 inventory, quoted by H. Nørgaard 2008, fynhistorie.dk/node/16123); it has not been consulted and was not used. What we add is the key (key.tsv, CC BY 4.0), its validation on a held-out portion and the probable text, published. No image or derivative of the KB scans is included. A private 20th-century piece, not part of the grimoire, is excluded."
  }
 }

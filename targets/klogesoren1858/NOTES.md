@@ -88,7 +88,7 @@ of cattle, horses, poultry, geese, butter and milk against witchcraft, pests sum
 dogs and bulls held at bay, guns bound and men made proof against shot and blades, fire conjured (Mary's cloak; the SATOR square),
 winning at cards, and a long series against thieves (to make one stand still, bring back what he took, or suffer). The charm types
 are the classic ones of Danish tradition (Ohrt's "Danmarks Trylleformler": the Longinus charm, "Gud sætter sin Stav for Flod",
-the impossible condition "førend Jomfru Maria føder en Søn"); what is new is their text in this book, and above all the written
+the impossible condition "førend Jomfru Maria føder en Søn"); what this book holds is their text, and above all the written
 directions for use, which only the cipher held.
 
 Numbering: the cipher Begreb numbers run 1 to 23, the 23rd twice (031 R and 036 L, "Treogtyvende"); the 24th is never read; one
@@ -96,15 +96,22 @@ Begreb (butter, 020 R) has no number read; no Begreb number appears after 036 L.
 
 ## Prior art
 
-Known before this reading: the existence of the book, its author and its "kodeskrift" (lex.dk, article "folkemedicin" by B.
+**An earlier decipherment exists, in the archive (found on 11 Nov 2026, after our reading).** The inventory of Kloge Søren's
+collection made in 1977 by Gustav Henningsen, quoted by Hans Nørgaard (comment of 6 Nov 2008 on fynhistorie.dk,
+https://fynhistorie.dk/node/16123), describes item no. 4, "Et Ulæg af 9de, 10de og 11te Bøger i Cyprianus ... 1858" (the title
+of this volume in the KB record; images DFS_1997_020_4_*; "Ohrt Hskr. 4"), as **"Afskrevet og tydet af Ohrt. = kop 79.4"**:
+copied and deciphered by the folklorist Ferdinand Ohrt (1873-1938). **That copy has not been consulted**, and whether Ohrt
+published any of it (for instance in *Danmarks Trylleformler* I-II, 1917-1921) has not been checked. **Our reading is
+independent**: it was made from the KB images alone, without Ohrt's copy, and the key was validated on our own held-out portion.
+What we add is the key, its validation and the probable text, published. An earlier version of this note said that Ohrt could
+not have seen a manuscript that entered the DFS in 1997: that was wrong (Ohrt listed Kloge Søren's manuscripts, DFS 1909/3b).
+
+Also known before this reading: the existence of the book, its author and its "kodeskrift" (lex.dk, article "folkemedicin" by B.
 Rørbye; heuschkel.dk, "Cyprianus: De sorte bøger", reproduces an opening without reading it); the KB description "Størstedelen i
 lønskrift". Daniel Bourdeau's vetting (11 Nov 2026) found nothing on DECODE ("Cyprianus", "Kloge", "lønskrift": 0 records), in
-Tomokiyo or Lasry, and no edition. Our own textual searches (Danish) found no study that publishes the cipher or its key. Ohrt,
-"Danmarks Trylleformler" I-II (1917-1921), cannot have used a manuscript that entered the DFS in 1997; his "Lønformler" are secret
-formulas, not a cipher. **Not verified on paper:** B. Rørbye, *Kloge folk og skidtfolk. Kvaksalveriets epoke i Danmark*
-(1976), which deals with cypriani; no full text or table of contents is online, so whether it cites or reads this book is not
-known. The DFS accession record of 1997/020 is not online either. The writer's own table (091 L) shows the key existed on paper,
-so an old reading by a relative or the donor cannot be excluded, though none is published to our knowledge.
+Tomokiyo or Lasry, and no edition. The same 1977 inventory lists other key material in the collection (item 3, "tavle med
+opløsning af kodeskrift"; item 47, "et blad med en kode og alfabetisk opløsning heraf"), not seen. **Not verified on paper:**
+B. Rørbye, *Kloge folk og skidtfolk. Kvaksalveriets epoke i Danmark* (1976), which deals with cypriani.
 
 ## Remaining gaps
 
@@ -120,7 +127,7 @@ so an old reading by a relative or the donor cannot be excluded, though none is 
 
 - [x] siblings: all 109 images of DFS 1997/020 opened (contact sheet, then 173 half-openings at full resolution); cipher on 003 R - 079 R, 091 L (alphabet table), 098 and 104 (loose leaves); the other leaves are blank or binding
 - [x] clear-pages: clear headings used as cribs; no clear copy of the charms in the volume; the table on 091 L is a key, not a decipherment
-- [x] known-keys: no key on DECODE or in print (Daniel's vetting); the only key material is the writer's own table (091 L), which confirms ours
-- [x] print: lex.dk / Rørbye, heuschkel.dk, KB record, Ohrt (charm types only); Rørbye 1976 not seen (not online)
+- [x] known-keys: no key on DECODE or in print (Daniel's vetting); the writer's own table (091 L) confirms ours; an unpublished decipherment by F. Ohrt is recorded in the archive (1977 inventory, 'kop 79.4'), not consulted
+- [x] print: lex.dk / Rørbye, heuschkel.dk, KB record, fynhistorie.dk (1977 inventory: Ohrt's decipherment), Ohrt (charm types only, not compared); Rørbye 1976 not seen (not online)
 - [x] key-rebuild: stroke-and-dot signs separated at full resolution; ligatures aa, tt, nn, mm and variants added (key.tsv B, D); table 091 L adds q, s, z, æ, ø
 - [x] retry: image 031 right lines 16-26 re-read at full resolution (85.8% -> 96.1% on the held-out portion before the blind sheet, 94.41% after); the whole book re-read at full resolution except the nine first-session pages
