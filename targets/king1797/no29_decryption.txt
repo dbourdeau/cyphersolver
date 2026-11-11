@@ -1,0 +1,164 @@
+# Rufus King to the Secretary of State, No. 29, London, 13 April 1797 (NARA M30 roll 4, frame 0092 right page): decryption, line by line.
+# T = transcription (no29_transcription.txt); D = each code group replaced by its value in key.tsv (python3 scripts/king_code.py decode
+#     --key key.tsv no29_transcription.txt), clear words in {}; W = the line as words, with spelling and word division normalised.
+# Marks: [?x] = value read from the context of this letter only (key grade I), doubtful until another occurrence or a clear text
+# confirms it; [769 = the: ?and] = the group's key value does not fit and a slip is supposed; [e] = letter supplied; marks ^ v + after a
+# group are the clerk's (plural or inflection); + after 'the' in line 8 may be a line-filler. Values of grade R (read here on 11 Nov 2026
+# from the clerks' multi-group words, see key.tsv source column) are given without a mark: reg 986, par 587, ty 548, pre 1097,
+# nature 1209, ite 1407, s 29, er 926, ap 461, pro 246, dec 1338, li 287, ne 1210, m 128.
+# Counts over the 119 code groups of the letter (82 distinct): 108 have a key value of grade D, S, A or R (69 D, 18 S, 2 A, 19 R),
+# and all but one fit (769 in line 15); 11 rest on the eight grade-I values (717, 389, 1279, 1074 x2, 1490 x2, 507 x2, 1440, 269).
+# With the key as frozen for the test (build/key_v1.tsv) 94 of the 119 groups (79%) have a value; with build/key_v2.tsv 96.
+
+004-0092 L01
+  T: {[docket, rotated, of preceding despatch] No. 28. R. King Esqr. / March 12. 1797. recd. May 6. / Recorded page 112 [?]; further faint pencil/ink notes illegible; rest of page is bleed-through}
+  W: (docket of No. 28 on the left page; not part of No. 29)
+
+004-0092 R01
+  T: {No. 29.}
+  W: No. 29.
+
+004-0092 R02
+  T: {London Apr. 13th 1797.}
+  W: London Apr. 13th 1797.
+
+004-0092 R03
+  T: {Dear Sir,}
+  W: Dear Sir,
+
+004-0092 R04
+  T: {There are several Subjects mentioned in different Letters}
+  W: There are several Subjects mentioned in different Letters
+
+004-0092 R05
+  T: {that I have received from you, concerning which I should make you}
+  W: that I have received from you, concerning which I should make you
+
+004-0092 R06
+  T: {some Report: I will take notice of them as they occur to my recollection,}
+  W: some Report: I will take notice of them as they occur to my recollection,
+
+004-0092 R07
+  T: {beginning with} 1090 {– During the} 1516. 986. 911. {it is well understood that the}
+  D: {beginning with} sweden {– During the} late reg ency {it is well understood that the}
+  W: beginning with Sweden. – During the late regency it is well understood that the
+
+004-0092 R08
+  T: 1194. 1189. 986. 1009. 321. 717. 1312. 10. 587. 641. 1105. 107. 548. 532. 255. 710. 769. +
+  D: du ke reg ent in [?dul] ged a par ti all i ty for france and the +
+  W: Duke Regent in[?dul]ged a partiality for France, and the
+
+004-0092 R09
+  T: 1556^. 1410. 769. 762. 409 {were consequently in some degree} 321. 613. 1134
+  D: measure^ of the govern ment {were consequently in some degree} in flu en
+  W: measures of the government were consequently in some degree influen-
+
+004-0092 R10
+  T: 686. 200. 95. 1097. 325. 389. 766. 769. 529^ 1167. 1388. 1279. 107. 548. {is supposed}
+  D: ced by this pre di [?lect] ion the king^ since his [?major] i ty {is supposed}
+  W: ced by this pre-di[?lect]ion. The King, since his [?major]ity, is supposed
+
+004-0092 R11
+  T: {to entertain sentiments, which if not of an} 1481. 1407. 1209. {are more}
+  D: {to entertain sentiments, which if not of an} oppose ite nature {are more}
+  W: to entertain sentiments, which, if not of an oppos(e)ite nature, are more
+
+004-0092 R12
+  T: {exclusively} 316. 1105. 710. 1099. 321. 613. 1031. 353. 1493. 618. 1051. 1074. 1490.
+  D: {exclusively} nation all and french in flu ence is less at st [?ock] [?hol]
+  W: exclusively national, and French influence is less at St[?ock][?hol]-
+
+004-0092 R13
+  T: 128. 881 {During the} 986. 911. 769. 345. 654. 926. 273. 769. 1586. 321. 1494v. 346
+  D: m than {During the} reg ency the an sw er which the president in structv me
+  W: m than during the regency. The answer which the President instructed me
+
+004-0092 R14
+  T: {to return to the Overtures which had been made} 644. 506. 200. 269.
+  D: {to return to the Overtures which had been made} to us by [?the]
+  W: to return to the Overtures which had been made to us by [?the]
+
+004-0092 R15
+  T: 29. 507. 1308. 762. 409 {will therefore in my opinion be} 819. 406v. 769.
+  D: s [?wed] ish govern ment {will therefore in my opinion be} well receivev the
+  W: S[?wed]ish government will therefore in my opinion be well received, [769 = the: ?and]
+
+004-0092 R16
+  T: 461. 246. 592. 618. 1051. 1074. 1490. 128. –
+  D: ap pro ved at st [?ock] [?hol] m –
+  W: approved at St[?ock][?hol]m. –
+
+004-0092 R17
+  T: {It has been my aim on this occasion to manifest}
+  W: It has been my aim on this occasion to manifest
+
+004-0092 R18
+  T: 808. 1440. 532. 769. 29. 507. 1308. 316. {to shew likewise the friendly light}
+  D: our [?esteem] for the s [?wed] ish nation {to shew likewise the friendly light}
+  W: our [?esteem] for the S[?wed]ish nation, to shew likewise the friendly light
+
+004-0092 R19
+  T: {in which} 709^ 406v 769. 629. 1105. 147. 333. 890. 1208. 644. 506 {and to}
+  D: {in which} we^ receivev the propose all that had been made to us {and to}
+  W: in which we received the proposal that had been made to us, and to
+
+004-0092 R20
+  T: {state in a candid manner the motives that have influenced the}
+  W: state in a candid manner the motives that have influenced the
+
+004-0092 R21
+  T: {President for the present} 644. 1338. 287. 1210. 769. 998. 918. –
+  D: {President for the present} to dec li ne the over tur –
+  W: President for the present to decline the overtur[e]. –
+
+004-0092 R22
+  T: {[heading] Maryland Bank Stock}
+  W: Maryland Bank Stock
+
+004-0092 R23
+  T: {I have omitted saying any thing respecting this Subject,}
+  W: I have omitted saying any thing respecting this Subject,
+
+004-0092 R24
+  T: {because I could say nothing that would amount to such information} {[catchword] as}
+  W: because I could say nothing that would amount to such information [as]
+
+004-0092 R25
+  T: {[foot] Secretary of State &c. &c. &c.}
+  W: Secretary of State &c. &c. &c.
+
+004-0093 L1-20
+  T: {as would authorise a satisfactory opinion concerning the result of the endeavours ... [Maryland Bank Stock continued: Lord Chancellor, Secretary of Foreign Affairs, Accomptant General of the Court of Chancery, claim of Russell] ... considered and satisfied. –}
+  W: (clear text, summarised here; in full in reading_no29.md)
+
+004-0093 R1-22
+  T: {I will continue to resist the impolicy as well as the injustice of such a condition ... [heading Captain Home: complaint against the offensive conduct of this officer, Lord Grenville, Mr. Adet] ... [heading Seamen: protections, Mr. Pinckney] ... the Enquiries that had / been}
+  W: (clear text, summarised here; in full in reading_no29.md)
+
+# ## Notes on the holes
+#
+# - *[?indulged]* (717 = dul), *[?predilection]* (389 = lect), *[?majority]* (1279 = major): one syllable in each word comes from
+#   context. The other groups are known (in, ged; pre, di, ion; i, ty). Each of the three values is on the printed element list,
+#   and no other group has it.
+# - *[?Stockholm]*, twice: 1051 = St and 128 = m are established. 1074 = ock and 1490 = hol come from context. "hol" is not on
+#   Weber's list, so the split of "ockhol" between the two groups is a guess. The place is not in doubt: King is contrasting the
+#   Swedish court under the regency with the court under the King.
+# - *[?Swedish]*, twice: 29 = s and 1308 = ish are established, and 507 = wed comes from context. Sweden itself is 1090, read in
+#   clear by a clerk elsewhere.
+# - *[?the]* (269): the sense requires "the", but "the" is 769 (437 times in the corpus). The group reads clearly as 269 on the
+#   frame, so it is either the encoder's slip or a second number for "the".
+# - *[?and]*: the group is 769 (the), clearly written, where "and" (710) is needed. An encoder's slip is supposed.
+# - *[?esteem]* (1440): a word of this sense is certain, but which word is not. Respect, consider(ation), regard and friendship
+#   have other numbers in this code.
+# - "opposite" is oppose (1481) + ite (1407), spelt as the encoder built it. "national" and "partiality" use the group 1105, which
+#   the clerks write as "all" and as "al". Neither is counted as a hole.
+# - The despatch goes on beyond this page in clear, on other subjects, to King's signature on frame 0096 R, with no further code.
+#   It is transcribed in full in reading_no29.md and is not counted here.
+#
+# ## Count
+#
+# Code groups: 119 (82 distinct). 108 have a key value established from the clerks' decipherments, the print checks or the
+# alignments, and 107 of those fit. 11 rest on context only, plus the 769 slip. On the reading of the whole despatch in reading_no29.md
+# (frames 0092-0096, clear words included), the read share measured by the project's rule is 0.994; on the decoded words alone
+# it is 0.855 (65 of 76; profile.json).
+# On the decoded words, the holes are the 10 `[?word]` marks of the Sweden paragraph and the supplied [e].
