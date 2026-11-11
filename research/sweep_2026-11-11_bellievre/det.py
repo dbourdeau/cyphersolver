@@ -8,7 +8,9 @@ def comps(fn, scale=1.0):
     if scale != 1.0: im = im.resize((int(im.width * scale), int(im.height * scale)), Image.LANCZOS)
     A = np.asarray(im, dtype=np.int16)
     bg = np.asarray(im.filter(ImageFilter.MedianFilter(9)).filter(ImageFilter.BoxBlur(5)), dtype=np.int16)
-    ink = ((bg - A) > 40) & (bg > 105)
+    D = bg - A; paper = bg > 105
+    thr = max(10.0, min(40.0, 0.45 * float(np.percentile(D[paper], 99.5)))) if paper.any() else 40.0
+    ink = (D > thr) & paper
     lab, n = ndi.label(ink, structure=np.ones((3, 3)))
     sl = ndi.find_objects(lab)
     out = []
