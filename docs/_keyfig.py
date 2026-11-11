@@ -62,7 +62,11 @@ def parse_md(text):
         if len(cells) < 2: continue
         if HEAD_SIGN.match(cells[0]): flip = False; continue
         if re.match(r'^(pt|plain|letter|value|meaning|clear|word|plaintext)\b', cells[0], re.I): flip = True; continue
-        out.append((cells[1], cells[0]) if flip else (cells[0], cells[1]))
+        # side-by-side tables (code | word | code | word): every pair of columns is one entry
+        step = 2 if len(cells) >= 4 and len(cells) % 2 == 0 else len(cells)
+        for i in range(0, len(cells) - 1, step):
+            a, b = cells[i], cells[i + 1]
+            if a or b: out.append((b, a) if flip else (a, b))
     return out
 
 
@@ -124,18 +128,42 @@ def _cell(sign, val, cls=''):
     return (f'<span class="kc{cls}"><b>{html.escape(val)}</b><i>{html.escape(sign)}</i></span>')
 
 
-def table_html(pairs):
+def sign_images(base, folder, docs_dir):
+    """targets/<folder>/key_signs/<letter>.png: cut-outs from the manuscript, one per plaintext letter (& = et.png).
+    Copied to docs/keyfig/<folder>/ and returned as {letter: src}."""
+    d = base / 'key_signs'
+    if not d.is_dir(): return {}
+    out = {}
+    for f in sorted(d.glob('*.png')) + sorted(d.glob('*.jpg')):
+        dst = docs_dir / 'keyfig' / folder / f.name
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        if not dst.is_file() or dst.stat().st_mtime < f.stat().st_mtime: shutil.copyfile(f, dst)
+        out[{'et': '&'}.get(f.stem, f.stem.lower())] = f'keyfig/{folder}/{f.name}'
+    return out
+
+
+def table_html(pairs, imgs=None):
+    imgs = imgs or {}
     alpha, nomen, nulls = {}, [], []
     for s, v in pairs:
         low = v.lower()
         if low in NULL_WORDS: nulls.append(s)
         elif re.fullmatch(r'[^\W\d_]', v): alpha.setdefault(low, []).append(s)
+        elif v == '&' and '&' in imgs: alpha.setdefault('&', []).append(s)
         else: nomen.append((s, v))
     parts = []
     if alpha:
-        cells = ''.join(f'<span class="kc"><b>{html.escape(l.upper() if len(l) == 1 else l)}</b>'
-                        + ''.join(f'<i>{html.escape(s)}</i>' for s in alpha[l]) + '</span>' for l in sorted(alpha))
-        parts.append(f'<div class="kgrp"><p class="kh">Alphabet</p><div class="kgrid">{cells}</div></div>')
+        for l in imgs:
+            if l not in alpha and len(l) == 1: alpha[l] = []
+        def signs(l):
+            if l in imgs:
+                return (f'<img src="{imgs[l]}" alt="{html.escape(l)}: ' + html.escape(', '.join(alpha[l]) or 'as written')
+                        + ' (cut from the manuscript)" loading="lazy">')
+            return ''.join(f'<i>{html.escape(s)}</i>' for s in alpha[l])
+        cls = ' kimg' if imgs else ''
+        cells = ''.join(f'<span class="kc"><b>{html.escape(l.upper() if len(l) == 1 else l)}</b>' + signs(l) + '</span>'
+                        for l in sorted(alpha, key=lambda x: (x == '&', x)))
+        parts.append(f'<div class="kgrp"><p class="kh">Alphabet</p><div class="kgrid{cls}">{cells}</div></div>')
     if nomen:
         more = len(nomen) - NOMEN_MAX
         cells = ''.join(_cell(s, v) for s, v in nomen[:NOMEN_MAX])
@@ -168,7 +196,11 @@ def key_figure_html(page, profiles, profile_paths, docs_dir, repo_root):
             if pairs:
                 cap = (f'The key{" of " + html.escape(f) if len(page.get("folders") or []) > 1 else ""}: plaintext above, '
                        f'cipher sign(s) below. Signs are given as transcribed; from {link}, where its status and sources are recorded.')
-                figs.append(table_html(pairs) + f'\n<figcaption>{cap}</figcaption>')
+                imgs = sign_images(base, f, docs_dir)
+                if imgs:
+                    cap = cap.replace('cipher sign(s) below. Signs are given as transcribed;',
+                                      'cipher signs below, cut from the manuscript key where shown (sources in key_signs/README.md); the rest as transcribed,')
+                figs.append(table_html(pairs, imgs) + f'\n<figcaption>{cap}</figcaption>')
                 break
     if not figs: return ''
     return ('<!-- keyfig:start -->\n<section class="keyfig" aria-labelledby="key">\n<h2 id="key">The key</h2>\n'

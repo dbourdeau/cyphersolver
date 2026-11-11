@@ -1569,3 +1569,6 @@ html.fs-lock{overflow:hidden}
 .kc i{font-style:normal;color:var(--ink2)}
 .kc.kz i{color:var(--muted)}
 .keytable figcaption{font-size:.8rem;color:var(--muted);margin-top:.8rem}
+.kgrid.kimg{grid-template-columns:repeat(auto-fill,minmax(4.6rem,1fr))}
+.kc img{border-radius:0;box-shadow:none;border:0;width:100%;height:auto;max-height:11rem;object-fit:contain;mix-blend-mode:multiply;margin-top:.1rem}
+@media (prefers-color-scheme:dark){.kc img{mix-blend-mode:normal;filter:invert(1);opacity:.9}}
