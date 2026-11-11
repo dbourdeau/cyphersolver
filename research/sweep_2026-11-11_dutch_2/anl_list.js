@@ -4,7 +4,7 @@ const out = process.argv[2], terms = process.argv.slice(3); const adt = process.
 (async () => {
   const b = await chromium.launch(); const p = await b.newPage();
   for (const t of terms) {
-    let invs = [], start = 0, total = null;
+    let invs = [], start = parseInt(process.env.START || "0"), total = null;
     while (true) {
       let ok = false;
       for (let k = 0; k < 3 && !ok; k++) { try { const r = await p.goto(`https://www.archieven.nl/nl/zoeken?mivast=0&mizig=0&miadt=${adt}&miview=tbl&milang=nl&mif3=4&mistart=${start}&mizk_alle=${encodeURIComponent(t)}`, { waitUntil: 'networkidle', timeout: 90000 }); if (r && [403, 429].includes(r.status())) { console.log('STOP', r.status()); process.exit(1); } await p.waitForTimeout(2000); ok = true; } catch (e) { await p.waitForTimeout(8000); } }
