@@ -1,0 +1,311 @@
+{
+ "schema_version": 1,
+ "target": "jablonski1705",
+ "title": "Daniel Ernst Jablonski to Pál Ráday, enciphering drafts 1705 and 1706-07 (SBB Berlin, Nachl. Francke 11,2/15 and 11,2/16): key of the numeric syllabary rebuilt from the drafts and validated on a held-out draft",
+ "documents": [
+  {
+   "id": "francke-11-2-15-8-13-33",
+   "read": "read",
+   "shelfmark": "Berlin, Staatsbibliothek zu Berlin - PK, Nachl. August Hermann Francke 11,2/15 : 8, 13, 33 (Briefkonzeptbuch Jablonski 1705), PPN1853543950 scans 23-25, 37-39, 71-72",
+   "date": "Berlin, 13 Mar, 18 Apr and 11 Sep 1705",
+   "year": 1705,
+   "country": "Prussia",
+   "route": "Daniel Ernst Jablonski (Berlin court preacher) -> Pál Ráday (Rákóczi's envoy, later chancellor)",
+   "places": {
+    "from": "Berlin",
+    "to": "Hungary"
+   },
+   "language": "Latin",
+   "pages": 8,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Enciphering drafts: Jablonski's clear Latin, with the red number groups written above the words to be enciphered."
+   },
+   "length": {
+    "tokens": 1368,
+    "unit": "code groups",
+    "measured": true,
+    "file": "pairs.tsv"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "SBB Digitalisierte Sammlungen, 'max' images (PDM 1.0)",
+    "image_quality": "good",
+    "notes": "Training part of the key: figure groups with the Latin under them (pairs.tsv; 1,368 groups counted with 11,2/16 no 42). The clear text around the groups is not transcribed. Scan 72 holds two unglossed runs quoted from Ráday's letter ('ex aliena Cifra'), not read."
+   }
+  },
+  {
+   "id": "francke-11-2-16-42",
+   "read": "read",
+   "shelfmark": "Berlin, Staatsbibliothek zu Berlin - PK, Nachl. August Hermann Francke 11,2/16 : 42 (Briefkonzeptbuch Jablonski 1706-1707), PPN1853544159 scans 86-87",
+   "date": "Berlin, 7 Dec 1706",
+   "year": 1706,
+   "country": "Prussia",
+   "route": "Daniel Ernst Jablonski -> Pál Ráday",
+   "places": {
+    "from": "Berlin",
+    "to": "Hungary"
+   },
+   "language": "Latin",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Enciphering draft: numbers written over the Latin line by line."
+   },
+   "length": {
+    "tokens": 1368,
+    "unit": "code groups",
+    "measured": true,
+    "file": "pairs.tsv"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "SBB Digitalisierte Sammlungen, 'max' images (PDM 1.0)",
+    "image_quality": "good",
+    "notes": "Training part of the key (pairs.tsv, scans 86-87; the 1,368 groups are counted with 11,2/15)."
+   }
+  },
+  {
+   "id": "francke-11-2-16-44",
+   "read": "read",
+   "shelfmark": "Berlin, Staatsbibliothek zu Berlin - PK, Nachl. August Hermann Francke 11,2/16 : 44, PPN1853544159 scans 91-92",
+   "date": "Berlin, 14 Feb 1707",
+   "year": 1707,
+   "country": "Prussia",
+   "route": "Daniel Ernst Jablonski (signing as 'Ernesto Petersonio') -> Pál Ráday",
+   "places": {
+    "from": "Berlin",
+    "to": "Hungary"
+   },
+   "language": "Latin",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Enciphering draft: numbers written over the Latin; read only after the decode was frozen."
+   },
+   "length": {
+    "tokens": 541,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "SBB 'max' images, red-ink-only renderings (the Latin masked)",
+    "image_quality": "good",
+    "notes": "Held-out part of the key test: all 541 numeric groups of the letter body and P.S., transcribed blind before the Latin was read; 2 illegible."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "One-part numeric syllabary in alphabetical order: single letters with homophones (30-70 and round numbers 110-300), syllables in alphabetical order (84 ab ... 223 ut), a few code words (225 imperator/Caesar, 226 Hungaria, 227 Prussia, 228 Polonia, 229 Suecia, 231 Anglia, 232/237 Gallia, 233 Hispania, 234 Italia, 236 Elector, 241 Rex), nulls below 30 and 301-310, 390, 401. Groups separated by dots. Same system in 1705 and 1706-07.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 213,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "alphabetical",
+  "word_division": "partial"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The drafts carry Jablonski's own Latin under the numbers (Daniel Bourdeau's leads review c26, 4 Nov 2026: leads 2169/2170 'read', key not built). The received letter of 3 Aug 1705 (glossed by Ráday) is reproduced in Révay Zoltán, II. Rákóczi Ferenc és korának rejtjelezése (Budapest, MNHF, 1974; Wikimedia Commons scan); whether Révay prints the key could not be checked (no open text found, 10 Nov 2026). Benda, Levéltári Közlemények 25 (1954) cites a clavis for the Jablonski correspondence in the Ráday archive (not seen). No target, branch or PR on these drafts in this repository; R483 (rakoczi1711) is another system.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Daniel Bourdeau's SBB/Kalliope sweep found the drafts (leads 2168-2171) and his leads review c26 (4 Nov 2026) vetted them as 'read' (enciphering drafts). Brice Dudout set the rules (protocol and key frozen before a single held-out measurement, thresholds fixed in advance). AI agents transcribed, built the key, measured and wrote up. No human palaeographer checked the transcription.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-11-10",
+  "last_date": "2026-11-10"
+ },
+ "solution": [
+  {
+   "date": "2026-11-10",
+   "kind": "transcription",
+   "what": "350 figure/plaintext pairs (1,368 groups) from 11,2/15 nos 8, 13, 33 and 11,2/16 no 42 (pairs.tsv).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "crib",
+   "what": "Key rebuilt from the pairs only (iterated segmentation, then corrections along the alphabetical order), 213 groups; frozen by SHA-256 with the protocol before the held-out draft was transcribed.",
+   "result": "worked",
+   "technique": [
+    "crib testing"
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One measurement on 11,2/16 no 44 (scans 91-92, 541 groups transcribed blind from red-ink-only renderings, Latin read after the decode was frozen): 0.930 of characters against 0.247 for the best of 200 shuffled keys (mean 0.198); margin 0.683; thresholds >= 0.85 and margin >= 0.30, fixed in advance.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "verification",
+   "what": "The received letter of 3 Aug 1705 (Wikimedia Commons scan from Révay 1974): its groups and Ráday's glosses agree with the key (191 ra, 208 vi, 203 ti, 170 o, 'bello gallico', 'armorum', 'principes'). Checked, not measured.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "hypothesis",
+   "technique": [
+    "crib testing"
+   ],
+   "what": "The two unglossed runs quoted on scan 72 from Ráday's letter ('ex aliena Cifra', 25 groups) do not read with this key.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Integration check (Daniel Bourdeau's session, PR #385): frozen/scripts/measure.py re-run on frozen/03_KEY.json, frozen/04_TRANSCRIPTION.txt and frozen/06_CLEAR.txt; SHA-256 of every frozen file recomputed against frozen/HASHES.txt. Confirmed: accuracy 0.9296 (958 decoded / 952 reference letters), best of 200 shuffled keys 0.2468, mean 0.1975, PASS; all seven hashes match.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The key was learned from the Latin written under the numbers in Jablonski's enciphering drafts (11,2/15 nos 8, 13, 33; 11,2/16 no 42) and validated once on a held-out draft (11,2/16 no 44). The content is the drafts' own (existing); the key is the contribution.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "verification": [
+   "contemporary decipherment",
+   "statistical test"
+  ],
+  "validation": {
+   "date": "2026-11-10",
+   "verdict": "pass",
+   "file": "validation.txt",
+   "tokens": 541,
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): protocol (frozen/01_PREREG.md) and key (frozen/03_KEY.json) hashed before the held-out draft 11,2/16 no 44 (scans 91-92) was transcribed; 541 groups transcribed blind; one measurement: 0.930 of characters (958 decoded / 952 reference letters) vs best of 200 shuffled keys 0.247 (mean 0.198), margin 0.683. Thresholds fixed in advance: >= 0.85 and margin >= 0.30. The script also folds w->u, y->i (not named in the protocol; declared). Key not changed after the measurement."
+  },
+  "provenance": "mixed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "Jablonski's own Latin written under the number groups in his enciphering drafts; the key was learned from it",
+    "date": "1705"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "SBB/Kalliope sweep (3 Nov 2026) found the drafts, leads 2168-2171; leads review c26 (4 Nov 2026) vetted 2169/2170 as read (enciphering drafts) and located the scans",
+    "date": "2026-11-04"
+   },
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "note": "350 figure/plaintext pairs (pairs.tsv) and the 541 held-out groups of 11,2/16 no 44 (transcription.txt, frozen/)",
+    "date": "2026-11-10"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "key rebuilt from the drafts (key.tsv, CC BY 4.0) and validated on a held-out draft, 0.930 vs 0.247 (validation.txt); agrees with the received letter of 3 Aug 1705. If Révay 1974 prints this key, the key is his and this credit is the verification",
+    "date": "2026-11-10"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "the two runs 'ex aliena Cifra' quoted on 11,2/15 no 33, scan 72 (204.155.275.30.147.111.18.213.8.205.7 and 95.137.112.15.48.137.12.178.144.187.16.90.85.45, 25 groups): do not read with this key",
+    "blocker": "no-key-material",
+    "detail": "perhaps Ráday's own key to Jablonski (clavis in the Ráday archive, Benda 1954; not seen)"
+   },
+   {
+    "item": "171 and 278 unresolved; 15, 40, 53, 61, 113, 178, 215 not in the table; 38 values seen once",
+    "blocker": "too-short"
+   },
+   {
+    "item": "Révay 1974 not seen (no open text found): whether it prints this key is open",
+    "blocker": "needs-physical-access"
+   }
+  ],
+  "texts": [
+   {
+    "doc": [
+     "francke-11-2-15-8-13-33",
+     "francke-11-2-16-42"
+    ],
+    "label": "Training drafts (11,2/15 nos 8, 13, 33, 1705; 11,2/16 no 42, 1706): 350 figure/plaintext pairs",
+    "transcription": "pairs.tsv",
+    "decryption": "pairs.tsv",
+    "language": "la",
+    "state": "not prose",
+    "summary": "The number groups of four enciphering drafts with the Latin words Jablonski wrote under them, the material the key was learnt from: Prussian mediation between Rákóczi's Hungarians and the Emperor in 1705-06.",
+    "note": "A table of figure groups and the plaintext written under each (scan, Latin as written, groups, note); the clear text between the enciphered words is not transcribed. Shown as the key's training material, not as a reading."
+   },
+   {
+    "doc": [
+     "francke-11-2-16-44"
+    ],
+    "label": "11,2/16 no 44, 14 Feb 1707, scans 91-92: the 541 held-out groups",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "la",
+    "state": "read",
+    "read_share": 0.955,
+    "summary": "Ilgen, in the King of Prussia's name, urges the Hungarians to make peace with the Emperor before the coming Franco-Imperial peace frees the Emperor's armies; P.S. on two casks of noble wine from Ráday passed on to the King, and on sending more via Cracow or Breslau.",
+    "note": "The enciphered runs of the draft (the clear words between them are not part of the portion). Decode with the frozen key, word-divided, beside the Latin Jablonski wrote under the groups; the draft's Latin is the plaintext of the time.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Brice Dudout (with Claude)",
+     "date": "2026-11-10",
+     "note": "decode read as Latin sentences against the draft's Latin; agrees except 8 words with a hole (9 groups illegible or outside the key) and clerk's slips (paax, grandm, uile, exse, notu li; 225 imperator for Caesar); raw decode unspaced, word-divided and normalised in reading.md; one reader"
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "The drafts carry their own plaintext, so we claim no reading and no solution; what is new is the key as a reusable table, rebuilt from 350 pairs and validated on a held-out draft. Révay 1974, which reproduces the received letter of 3 Aug 1705, could not be checked for a printed key.",
+  "parts": [
+   {
+    "label": "key of the numeric syllabary (rebuilt from four drafts, validated on a fifth)",
+    "method": "key recovered based on adjacent plaintext",
+    "extent": "partial",
+    "basis": "outcome.key is partial: 171 and 278 unresolved, 15, 40, 53, 61, 113, 178, 215 not in the table, 38 values seen once; the scan-72 runs do not read"
+   }
+  ]
+ }
+}
