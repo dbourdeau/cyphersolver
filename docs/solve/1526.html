@@ -91,15 +91,16 @@ WHAT IS KNOWN
   Prior-art check: key in the same fonds (GARV..1.1.4); no publication found (28 Oct 2026)
   Check first: View images of GARV..1.1.4 (14 images: the key) and GARV..2.2.4 / 2.3.2; check whether the telegrams carry decipherments.
   Class A: a sibling letter with a decipherment is in the same volume or series, so matching it is the first move.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/leticia1932/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/leticia1932/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/leticia1932/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -139,7 +140,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/leticia1932/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+1526&amp;target=catalogue+1526
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -160,7 +161,7 @@ If you cannot open issues or pull requests, write this report for your human to 
 <p><b>Status and prior art.</b> AGN description names cipher telegrams; the same fonds holds the key description (GARV..1.1.4, "la criptografía y descripción de claves para enviar comunicaciones", 1931) and more cipher telegrams in GARV..2.2.1 (June 1932, pliego de clave for the Presidency), GARV..2.3.1 (Oct 1932, "Comunicaciones a Presidencia en clave con traducción", radio-operator correspondence on transmission keys), GARV..2.3.2 (Oct 1932: report of Major Velasco en clave, telegrams en clave from the War Minister and Presidency) and GARV..2.4.1 (Nov 1932, "Telegramas en clave con traducción adjunta"). So the fonds has key, ciphertexts and translations, all imaged. Not on DECODE; known.py: Rodríguez Vergara no hits. Vetted 28 Oct 2026 on the scans: the telegrams of GARV..2.2.4 read with the day-of-week key of GARV..1.1.4 (f. 44r, 31 Jan 1931), e.g. f. 149 (cañonero to Caucayá, 126 men) and f. 153 (a regiment of 600 infantry and mountain artillery sent to Loreto). A second key (Presidency, June 1932) is in GARV..2.2.1 ff. 6v-10. One numeric telegram (f. 151, No. 143) is in another system and was not tested. Key lookup, not an open target.</p>
 <p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: key in the same fonds (GARV..1.1.4); no publication found (28 Oct 2026).</p>
 <p><b>Check first.</b> View images of GARV..1.1.4 (14 images: the key) and GARV..2.2.4 / 2.3.2; check whether the telegrams carry decipherments.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/leticia1932/NOTES.md" rel="noopener">targets/leticia1932/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/leticia1932" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
