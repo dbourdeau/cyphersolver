@@ -1,11 +1,11 @@
-# wackerbarth1717 - English translation of the letter of 20 October 1715 (camp before Stralsund)
+# wackerbarth1717 - English translation of the letter of 20 November 1715 (camp before Stralsund)
 
 Wackerbarth to his wife, the Countess of Wackerbarth, in Vienna (copy; see `s15_reading.md` for the attribution). Translation of
 `s15_reading.md` (v2), the clear and the cipher words together, as one text. Marks: [x] = restored word; <...> = unresolved
 (number given); (...) = our gloss; "…" = clear text not transcribed in full. Probable words are not marked here (see
 `s15_reading.md`). Read at 96.75% by Daniel's rule.
 
-**[view 0380, f. 307]** (Heading:) Answer to the letter from Vienna. At the camp before Stralsund, 20 October 1715.
+**[view 0380, f. 307]** (Heading:) Answer to the letter from Vienna. At the camp before Stralsund, 20 November 1715 ("9bre"; first transcribed "8bre", see NOTES.md).
 I have seen by yours of the 5th of this month … a line of reasoning that was put to you on the interest of the allies of the
 North with regard to the King of Sweden. There is in truth much that is solid in it … on a closer look it appears quite plainly
 that it is only in so far as the King of Sweden finds his account in it. But let that pass, provided that we too really find our

@@ -1,4 +1,4 @@
-# wackerbarth1717 - reading of the letter of 20 October 1715 (French): Wackerbarth (camp before Stralsund) to his wife in Vienna, copy
+# wackerbarth1717 - reading of the letter of 20 November 1715 (French): Wackerbarth (camp before Stralsund) to his wife in Vienna, copy
 
 Status: **read** by Daniel's rule: 922 words of the cipher passages, 774 certain, 118 probable, 12 restored, 18 unresolved =
 892/922 = **96.75%** (reading v2, after the blind plate W1). Dresden, HStA 10026 Loc. 00712/05, ff. 307-314 (views 0380-0387).
@@ -13,19 +13,20 @@ Status: **read** by Daniel's rule: 922 words of the cipher passages, 774 certain
 The volume is catalogued as Flemming-Wackerbarth correspondence, and our own first working inventory of it (made from
 thumbnails) had labelled this letter "Flemming (camp before Stralsund) to Wackerbarth". We think it is **Wackerbarth (camp before
 Stralsund) to his wife, the Countess of Wackerbarth, in Vienna: a copy**. The attribution is probable and strong:
-- the heading of f. 307 reads "Reponse à la lettre de 306. au camp devant Stralsund le 20e 8bre 1715", and 306 = Vienna by a gloss
+- the heading of f. 307 reads "Reponse à la lettre de 306. au camp devant Stralsund le 20e 9bre 1715" (first transcribed "8bre": see the date note below), and 306 = Vienna by a gloss
   of the time (view 0389 L31, "la cour de 306" glossed "la cour de Vienne");
 - the letter answers "celle du 5me du courant"; the next piece, f. 315 (view 0388), is the "Extrait d'une lettre de 306.66.857 ...
-  en date du 5 de 8bre 1715", reporting the same "raisonnement", and a hand of the time wrote above it "La Comtesse de Wa..." and
+  en date du 5 de 9bre 1715", reporting the same "raisonnement", and a hand of the time wrote above it "La Comtesse de Wa..." and
   "au C. de Wa...";
 - the cipher reads "Voilà, ma {chère} femme, de quoi répondre ..." (view 0387 g L12: "ma" and "femme" certain, "chère" probable);
 - f. 306 (view 0379), just before, is a jesting "Pleinpouvoir" signed "Le Comte de Wackerbart", "fait au camp devant Stralsund le
-  12. [8]bre 1715", which names Flemming in the third person;
+  12. ?bre 1715" (month hard to read), which names Flemming in the third person;
 - the writer directs the siege batteries and writes to General Dücker and to Count Virmond, the Emperor's minister.
 Against: a private letter to the countess is not expected in this cabinet volume. We take ff. 307-314 for a copy sent on to a third
 party: a clean secretary's copy, unsigned ("Je suis" only), with marginal notes of a decipherer in another hand ("il sera delogé",
-"prisonnier", "le Roy"). Wackerbarth's command at Stralsund in October 1715 and the countess's stay in Vienna come from general
-knowledge and are still to be checked in the literature.
+"prisonnier", "le Roy"). Wackerbarth's command of the Saxon corps at Stralsund is confirmed in the literature (NOTES.md, Historical context).
+
+**Date corrected (11 Nov 2026 update): 20 November 1715, not 20 October.** The heading of f. 307 and the title of f. 315 write the month as "9bre" (November), not "8bre": the figure is a 9 with a long descender, the same shape as the 9s in the cipher of view 0388 (e.g. "9.14" = i n in L01). Our first transcription read "8bre"; the frozen transcription files keep that reading unchanged (see the note at the head of `s15_transcription.txt`). The content agrees with November: the letter speaks of the Swedish entrenchment taken before Stralsund (night of 4-5 November 1715) and of the capture of Rügen (landing at Stresow, 15-16 November 1715), while the guns are not yet all in battery. The countess's letter answered is therefore of 5 November 1715. The month of the jesting full power at f. 306 (view 0379, "le 12. ?bre 1715") is hard to read and is left open.
 
 ## Marking (cipher words only)
 

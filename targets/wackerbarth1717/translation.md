@@ -88,8 +88,9 @@ myself ready about that time to go and meet whatever it may please the King to o
 Wackerbarth reports that the Imperial Court, which had been waiting for the outcome of the Hungarian campaign, has at last
 spoken. The Chancellor Count Sinzendorf, by order of Charles VI, proposes a concert between the Emperor, the King of Poland
 (Augustus II) and the King of England (George I). Its aim is to restore the tranquillity of the Empire and an entire peace in
-the North on a "just balance", in keeping with the laws of the Empire. He may go as far as a triple alliance. The same overture
-was made the day before to Saint-Saphorin, George I's minister. The stay of the Russian troops in the Empire goes to the Diet of
+the North on a "just balance", in keeping with the laws of the Empire. The same overture
+was made the day before to Saint-Saphorin, George I's minister, who thinks (in Wackerbarth's report: "Selon lui") that it might
+go as far as a triple alliance; the triple alliance is his opinion, not part of Sinzendorf's proposal. The stay of the Russian troops in the Empire goes to the Diet of
 Ratisbon and to the directors of the Circles. The Emperor is determined to get the Russians out and perhaps to guarantee against
 their return. George I wants the same measures "regarding Poland" and will give back to the King of Sweden no part of his lost
 German provinces. Strict secrecy: the conference was held without even a referendary. Wackerbarth will take the waters at

@@ -1,6 +1,6 @@
-# wackerbarth1717: Wackerbarth's cipher reports from Vienna, 1717 (Dresden, HStA 10026 Loc. 00713/01): Relation XXII to Augustus II, 14-16 June 1717, read in part; letter to Flemming of 24 April 1717 checked against its decipherment of the time; letter of 20 October 1715 from the camp before Stralsund (Wackerbarth to his wife in Vienna, copy), read
+# wackerbarth1717: Wackerbarth's cipher reports from Vienna, 1717 (Dresden, HStA 10026 Loc. 00713/01): Relation XXII to Augustus II, 14-16 June 1717, read in part; letter to Flemming of 24 April 1717 checked against its decipherment of the time; letter of 20 November 1715 from the camp before Stralsund (Wackerbarth to his wife in Vienna, copy), read
 
-Status: read in part (Brice Dudout, 11 Nov 2026; Relation XXII: 716 cipher words, 575 certain, 66 probable, 66 restored, 9 unresolved = 641/716 = 89.5% read by sense, under the 95% rule; key rebuilt from the glosses of the time in the same volume, passed a held-out language test (z = 11.5) but FAILED its ground-truth test, and the condition for reading was decided after the measurement). Open: nomenclator numbers absent from the key, and nine homophones seen only in this letter. Added 11 Nov 2026: the letter of 20 Oct. 1715 (Loc. 00712/05, same system S1) is read, 892/922 = 96.75% (774 certain, 118 probable, 12 restored, 18 unresolved), with its own key learnt from glosses and a pre-registered measurement that passed (see the section below).
+Status: read in part (Brice Dudout, 11 Nov 2026; Relation XXII: 716 cipher words, 575 certain, 66 probable, 66 restored, 9 unresolved = 641/716 = 89.5% read by sense, under the 95% rule; key rebuilt from the glosses of the time in the same volume, passed a held-out language test (z = 11.5) but FAILED its ground-truth test, and the condition for reading was decided after the measurement). Open: nomenclator numbers absent from the key, and nine homophones seen only in this letter. Added 11 Nov 2026: the letter of 20 Nov. 1715 (Loc. 00712/05, same system S1) is read, 892/922 = 96.75% (774 certain, 118 probable, 12 restored, 18 unresolved), with its own key learnt from glosses and a pre-registered measurement that passed (see the section below).
 
 > **Simultaneous work: Anne-Simone Rous.** Anne-Simone Rous (SBG Sachsen, Dresden) is working on this cipher correspondence
 > of Wackerbarth and Flemming, 1700-1720 (about 6,500 folios; paper "The Keys of Diplomacy", University of Tartu repository,
@@ -79,8 +79,10 @@ Every protocol was hashed before its run, and each run was made once. The record
   Czar), 0097 G15 4 → 7 (g), 0098 G03 184 → 187 (le roi de Suède). They are left as frozen and counted as they stand.
 - **Content.** The chancellor Count Sinzendorf, by order of Charles VI, makes Wackerbarth an overture. The Emperor proposes a
   concert with the King of Poland and the King of England to restore the tranquillity of the Empire and an "entire peace" in
-  the North on a "just balance", in keeping with the laws of the Empire. A triple alliance of the three is foreseen. The same
-  overture was made the day before to Saint-Saphorin, George I's minister, who might act as a third party. The stay of the
+  the North on a "just balance", in keeping with the laws of the Empire. The same overture was made the day before to Saint-Saphorin,
+  George I's minister. **The "triple alliance" is Saint-Saphorin's opinion, not Sinzendorf's proposal**: Wackerbarth reports
+  that, according to Saint-Saphorin ("Selon lui"), the affair might even be carried as far as a triple alliance of the Emperor,
+  the King of England and the King, and that he, as a third party, could smooth the question of who should explain himself first. The stay of the
   Russian troops in the Empire goes to the Diet of Ratisbon and to the directors of the Circles, to get them out and perhaps
   guarantee against their return. George I wants the same measures "regarding Poland", and no German province given back
   to the King of Sweden. Secrecy is strict: there was no referendary at the conference. Wackerbarth will take the waters at
@@ -92,7 +94,7 @@ the reading. The 7 unresolved words are nomenclator codes that the sheet resolve
 designs on Poland (a landing near Danzig), the fear that Sweden might detach the Czar from the Northern League, and the
 exchange of the county of Hanau, for which the Electors' consents must be won directly and not through the Emperor.
 
-## Letter of 20 October 1715: Wackerbarth (camp before Stralsund) to his wife in Vienna, copy (`s15_*`)
+## Letter of 20 November 1715: Wackerbarth (camp before Stralsund) to his wife in Vienna, copy (`s15_*`)
 
 Dresden, HStA 10026 Geheimes Kabinett, Loc. 00712/05, ff. 307-314 (views 0380-0387), French, clear and cipher mixed.
 **Rous first:** Anne-Simone Rous reports a glossed simple substitution in 1715 in this correspondence; she may have read these
@@ -101,17 +103,19 @@ folios. Our reading is independent and should be cited as simultaneous work alon
 **Title corrected.** The volume is catalogued as Flemming-Wackerbarth correspondence, and our own first working inventory
 (made from thumbnails) had "Flemming (camp before Stralsund) to Wackerbarth". The evidence points to **Wackerbarth writing to
 his wife, the Countess of Wackerbarth, in Vienna; the piece is a copy**:
-- heading of f. 307: "Reponse à la lettre de 306. au camp devant Stralsund le 20e 8bre 1715"; 306 = Vienna by a gloss of the
+- heading of f. 307: "Reponse à la lettre de 306. au camp devant Stralsund le 20e 9bre 1715" (first transcribed "8bre", see below); 306 = Vienna by a gloss of the
   time (view 0389);
-- it answers "celle du 5me du courant": f. 315 (view 0388) is the "Extrait d'une lettre de 306.66.857 ... en date du 5 de 8bre
+- it answers "celle du 5me du courant": f. 315 (view 0388) is the "Extrait d'une lettre de 306.66.857 ... en date du 5 de 9bre
   1715", on the same "raisonnement", and a hand of the time wrote above it "La Comtesse de Wa..." and "au C. de Wa...";
 - the cipher reads "Voilà, ma {chère} femme, de quoi répondre ..." ("ma" and "femme" certain);
-- f. 306 (view 0379) is a jesting "Pleinpouvoir" signed "Le Comte de Wackerbart" at the camp before Stralsund on 12 Oct. 1715,
+- f. 306 (view 0379) is a jesting "Pleinpouvoir" signed "Le Comte de Wackerbart" at the camp before Stralsund in 1715 (day 12, month hard to read),
   naming Flemming in the third person;
 - the writer directs the siege batteries and writes to General Dücker and to Count Virmond.
 Against: a private letter is not expected in a cabinet volume. We take it for a copy sent on to a third party (clean secretary's
-hand, unsigned, marginal notes by a decipherer: "il sera delogé", "prisonnier", "le Roy"). Wackerbarth's command at Stralsund
-and the countess's stay in Vienna are general knowledge, still to be checked in the literature.
+hand, unsigned, marginal notes by a decipherer: "il sera delogé", "prisonnier", "le Roy"). Wackerbarth's command of the Saxon corps at Stralsund is confirmed in the literature (see Historical context); a study of the
+countess as an unofficial Saxon envoy in Vienna (Pons 2006, cited by Rous) supports the attribution; we have not read it.
+
+**Date corrected (11 Nov 2026 update): 20 November 1715, not 20 October.** The heading of f. 307 and the title of f. 315 write the month as "9bre" (November), not "8bre": the figure is a 9 with a long descender, the same shape as the 9s in the cipher of view 0388 (e.g. "9.14" = i n in L01). Our first transcription read "8bre"; the frozen transcription files keep that reading unchanged (see the note at the head of `s15_transcription.txt`). The content agrees with November: the letter speaks of the Swedish entrenchment taken before Stralsund (night of 4-5 November 1715) and of the capture of Rügen (landing at Stresow, 15-16 November 1715), while the guns are not yet all in battery. The countess's letter answered is therefore of 5 November 1715. The month of the jesting full power at f. 306 (view 0379, "le 12. ?bre 1715") is hard to read and is left open.
 
 **Key and measurement** (`s15_key.tsv`, CC BY 4.0; `s15_validation.txt`; `frozen/s1715/`). Key K1715 was learnt only from the
 glosses of the time on views 0388-0390 (57 numbers, 934 pairs, majority vote) and frozen. It is the same system as S1 of 1717:
@@ -135,9 +139,19 @@ controls, both passed): three words became certain (embrasser, mal, beaucoup), s
   are shut up with him in Stralsund and should be destroyed now; Wackerbarth will write to General Dücker and ask Count Virmond,
   the Emperor's minister, to come, so that peace may be made under the Emperor's mediation.
 
-## Historical context (general knowledge; to be checked in the literature)
+## Historical context (checked on 11 Nov 2026 against reference works; specialist studies not read)
 
-These points come from general historical knowledge, not from a search of the literature on this volume:
+A historical article on both letters, with sources, is published at
+https://bdudout.github.io/europe-chiffree/fr/stralsund-1715.html (also /en/ and /ja/). Checked points:
+- Wackerbarth commanded the Saxon corps at the siege of Stralsund (July-December 1715) and led the attack of 4-5 November on
+  the entrenchment (de.wikipedia, "Belagerung von Stralsund (1715)"; H. Voges 1922 not read).
+- Damian Hugo von Virmont was the Emperor's envoy at the court of the King of Sweden in Stralsund in 1715 (de.wikipedia).
+- The countess was born Caterina di Balbiano (de.wikipedia, "August Christoph von Wackerbarth"); R. Pons, MIÖG 114 (2006),
+  65-95, studies her as an unofficial Saxon envoy in Vienna (cited by Rous; not read).
+- L. R. Lewitter, "Poland, Russia and the Treaty of Vienna of 5 January 1719", Historical Journal 13/1 (1970), 3-30: Augustus II
+  decided for an alliance with the Emperor and George I at the end of August 1717 (full power to Flemming, 6 August), while
+  Charles VI was refusing new engagements before the end of the Turkish war.
+General knowledge, not re-checked:
 - Wackerbarth (1662-1734) was a Saxon cabinet minister and general.
 - Flemming (1667-1728) was the first minister of Augustus II.
 - Philipp Ludwig von Sinzendorf (1671-1742) was Hofkanzler of Charles VI.
@@ -145,8 +159,9 @@ These points come from general historical knowledge, not from a search of the li
 - The Russian troops of Peter I had been in Mecklenburg in 1716-17.
 - The Hungarian campaign of 1717 is the Turkish war; Belgrade fell in August 1717.
 **Hypothesis, not established:** the overture of June 1717 may be an early step towards the Treaty of Vienna of 5 January
-1719 between Charles VI, George I (as Elector of Hanover) and Augustus II. We have not checked this against the
-historiography.
+1719 between Charles VI, George I (as Elector of Hanover) and Augustus II (as Elector of Saxony). Relation XXII would then show
+Vienna sounding out Saxony and Hanover two months before the decision Lewitter dates to August 1717. A direct link is not
+established.
 
 ## Prior art
 
@@ -158,7 +173,8 @@ historiography.
 - A quick web search (text only) found no edition of Wackerbarth's Relations of 1717. We have not searched printed
   collections (Sbornik RIO, Urkunden und Actenstücke, Saxon or Austrian state papers). An edition may exist that we do not
   know of.
-- `catalogue.json` and `leads.json` are not touched. Neither has an entry for Loc. 00713/01.
+- `catalogue.json` and `leads.json` are not touched. Neither has an entry for Loc. 00712/05 or Loc. 00713/01: **both volumes
+  came to us from Anne-Simone Rous's paper, not from this catalogue.**
 
 ## Remaining gaps
 
