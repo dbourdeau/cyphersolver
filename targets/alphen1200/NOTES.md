@@ -83,3 +83,26 @@ Unexplained groups above; no key exists because nothing is substituted: the invo
 and name-like groups. Outside blocker for a full reading: the Restaura conservation report and Provincial Depot
 photographs (not online), and an agreed expansion of the SDX/DIC/NED formulae, which Wagner et al., Gumbert and
 several Latinists (Jan-Apr 2014) have not reached.
+
+## Family test and two hypotheses (Brice Dudout, with Claude, 11 Nov 2026)
+
+Class unchanged: **not read**. Scripts, results and sources are in `../witham1250/dudout/` (the two blades were
+studied together). The transcription is not changed: the only images reachable (Madoc 2014 afb. 1 at 72 ppi, Worley
+& Wagner 2013 picture 1) are too small to re-read the 79 letters; they confirm SCS with a curled mark over C, DIC and
+BENE. No image is reproduced.
+
+- **Same family, by the same test as Witham.** LCS of each face with Fyris UMF/B 74 and Marburg (Wagner et al. 2009),
+  against 3000 shuffles of the face: Fyris 74 20/38 (A) p = 0.033, 20/41 (B) p = 0.026; Marburg 14/38 p = 0.008,
+  12/41 p = 0.017. After Bonferroni over 2 references x 2 faces: 0.03 (A, Marburg) to 0.13. Consistent with the
+  sibling alignment above, but weaker than Witham.
+- **Prayer fit.** Coverage of face A by runs of 3 or more initials / nomina sacra from 44 Latin formulas: p = 0.017
+  (1000 shuffles), carried by SCS, IS, D, C (nomina sacra already in the family parse); face B p = 0.48. Weak; not a
+  prayer acrostic either.
+- **Hypothesis 1 (not checkable on the published images).** The sign printed "7" on face B (read Z in
+  `inscription.txt`) has the shape of the Tironian note ⁊ (= et), common in 12th-13th century Latin, rather than Z.
+- **Hypothesis 2 (not checkable either).** Face A's final "...CSDNI" ends with DNI, the standard contraction of
+  domini (as DNS = dominus).
+
+Both need the Restaura conservation report or the Provincial Depot Zuid-Holland photographs. Credits: Marc van
+Hasselt (Madoc 28/2, 2014: transcription and photographs), Wagner, Worley, Holst Blennow, Beckholmen (WKK 51, 2009;
+WKK 55, 2013).
