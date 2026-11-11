@@ -6,7 +6,7 @@ Found 1825 near Lincoln, dated 1250-1330. Inscription, one blade face, gold wire
 
 ## What exists already (checked 9 Nov 2026)
 
-- British Library appeal 11 Aug 2015 (Julian Harrison): "as yet indecipherable"; perhaps a religious invocation; Welsh floated.
+- British Library appeal 3 Aug 2015 (Julian Harrison): "as yet indecipherable"; perhaps a religious invocation; Welsh floated.
 - Cipher Mysteries (Jan 2016, comments by Nick Pelling) / Language Log threads (2016): about twenty commenter readings (Latin initials, "Christ reigns,
   conquers, commands", gematria, Hebrew, Croats ...), none checkable. Parallels named: Alphen aan den Rijn sword,
   Berlin and Swedish swords (shared curved X, I-S ligature); Wagner/Worley 2009, 2013 on "talking" swords.
