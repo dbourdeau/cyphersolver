@@ -11,9 +11,12 @@ for(let i=0;i<a.length;i+=2){const term=a[i],sig=a[i+1]; if(res[sig]) continue;
  const link=p.locator('a',{hasText:sig}).first();
  if(await link.count()==0){res[sig]={err:'not found'};console.error(sig,'not found');continue;}
  await link.click(); await p.waitForLoadState('networkidle').catch(()=>{}); await p.waitForTimeout(5000);
- const txt=await p.innerText('body'); const imgs=await p.$$eval('img',e=>e.map(x=>x.src).filter(s=>!/resource|logo|icon/.test(s)));
+ const n=p.locator('text='+sig.split(', ').pop()+' -').first(); await n.scrollIntoViewIfNeeded().catch(()=>{}); await n.click().catch(()=>{}); await p.waitForTimeout(5000);
+ let txt=await p.innerText('body'); const j=txt.indexOf('Vollansicht'); txt=j>=0?txt.slice(j,j+6000):'NO DETAIL '+txt.slice(0,300);
+ const k=txt.indexOf('\n \n'); if(k>0) txt=txt.slice(0,k);
+ const imgs=await p.$$eval('img',e=>e.map(x=>x.src).filter(s=>!/javax.faces.resource|logo|icon/.test(s)));
  const links=await p.$$eval('a',e=>e.map(x=>x.href).filter(s=>/document|permalink|digital|viewer|dfg|iiif/i.test(s)));
- res[sig]={url:p.url(),text:txt.slice(0,9000),imgs:imgs.slice(0,10),links:[...new Set(links)].slice(0,10)};
+ res[sig]={url:p.url(),text:txt,imgs:imgs.slice(0,10),links:[...new Set(links)].slice(0,10)};
  console.error(sig,'ok',txt.length,imgs.length);
  }catch(e){res[sig]={err:String(e).slice(0,200)};console.error(sig,'ERR')}
  fs.writeFileSync(out,JSON.stringify(res,null,1)); await p.waitForTimeout(2000);
