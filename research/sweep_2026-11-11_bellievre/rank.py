@@ -12,6 +12,7 @@ for f in sorted(glob(d + '/c*.jpg')):
     if k not in sc:
         try: s = det.score(f, SC); sc[k] = [s[0], s[3][0], s[3][1]]
         except Exception as e: print('err', f, e)
+        if len(sc) % 40 == 0: json.dump(sc, open(cf, 'w'))
 json.dump(sc, open(cf, 'w'))
 done_f = d + '_viewed.json'; done = set(json.load(open(done_f))) if os.path.exists(done_f) else set()
 hits = sorted([k for k, v in sc.items() if v[0] >= thr and k not in done], key=lambda k: int(k))

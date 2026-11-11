@@ -20,8 +20,12 @@
   - c0569-c0577 (ff. 281-285): cipher on c0572 (f. 282v, c. 5 lines), c0575 (f. 284r, c. 9 lines), c0576 (f. 284v, c. 5 lines),
     c0577 (f. 285r, c. 6 lines). Letter of 9 April 1598 (Angers).
   - c0611-c0615 (ff. 302-304): cipher on c0611 (f. 302r, c. 14 lines), c0612 (f. 302v, nearly the whole page, c. 30 lines),
-    c0615 (f. 304r, 10 lines). April 1598 (Nantes; date not read).
+    c0615 (f. 304r, 10 lines). Letter of 14 April 1598 (Nantes).
   All three are PRINTED IN CLEAR from the Court's copies: Mémoires et correspondance de Duplessis-Mornay, t. VIII (1824),
   archive.org mmoiresetcorresp08morn (14 March: pp. 162-175, the enciphered passage on the château d'If is on p. 173-174;
-  9 April: pp. 290-304). So they are not open: known-plaintext material, listed in not_candidates.json.
+  9 April: pp. 290-304; 14 April: pp. 317-320). So they are not open: known-plaintext material, listed in not_candidates.json.
 - Everything else viewed is clear (French, Italian, Spanish, Latin, German-hand letters; Spanish intercepts c0071-c0087 in clear).
+
+## fr. 15904, btv1b9064051h (480 canvases, microfilm openings, ff. 1-463; 1576-77)
+- Detector: 480 scored, 63 hits viewed, all clear (French, Latin, one Italian notarial act c0450; Casimir/Condé affair).
+- Result: no cipher seen.
