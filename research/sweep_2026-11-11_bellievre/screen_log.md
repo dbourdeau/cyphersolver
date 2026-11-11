@@ -45,3 +45,13 @@
   cipher; c0497 = f. 244r, the interlinear-deciphered letter). Detector: 858 scored, 227 hits >= 24; crop sheets viewed for
   hits c0071-c0148 and c0431-c0511 only (40 hits), which showed the same two cipher items and nothing else. Not read further
   because the microfilm ark of the same leaves was screened in full.
+
+## fr. 15902, btv1b9063602s (627 canvases, microfilm openings, ff. 1-613; 1571-73)
+- Detector: 627 scored, 143 hits viewed (7 of 8 crop sheets: hits c0002-c0608; the last sheet, hits c0613-c0626, not viewed).
+- c0238 (f. 228v, Charles IX to Bellièvre, Dec 1572) opened at 1300 px: the dense block is a clear postscript in a
+  secretary hand, signed Charles; not cipher.
+- Result: no cipher seen (French, Italian, Latin; 17th-century copies of the king's letters c0206-c0225).
+
+## Not reached
+- fr. 15894 (btv1b525216318, 1168 canvases): 125 canvases fetched, none screened (fetch died twice on container restarts).
+- fr. 15897, 15898 (two arks), 15890: not fetched.
