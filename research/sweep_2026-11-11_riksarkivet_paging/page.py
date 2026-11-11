@@ -9,7 +9,7 @@ man = sys.argv[1]; d = f'{rik.SP}/pg/{man}'; o = f'{rik.SP}/ps'; os.makedirs(o, 
 fs = sorted(glob.glob(d + '/*.jpg')); ids = [int(os.path.basename(f)[:5]) for f in fs]
 a = int(sys.argv[2]) if len(sys.argv) > 2 else ids[0]; b = int(sys.argv[3]) if len(sys.argv) > 3 else ids[-1]
 sel = [(i, f) for i, f in zip(ids, fs) if a <= i <= b]
-TW, COLS, PER = 312, 5, 25
+TW, COLS, PER = 260, 6, 36
 def ink(im):
     g = im.convert('L'); bg = g.filter(ImageFilter.GaussianBlur(12))
     x = np.asarray(bg).astype(int) - np.asarray(g).astype(int)
