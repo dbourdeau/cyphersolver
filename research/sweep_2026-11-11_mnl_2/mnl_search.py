@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Harvest adatbazisokonline.mnl.gov.hu search results (inline `var searchResults = [...]` JSON).
-usage: mnl_search.py OUTDIR term [term ...]   -> OUTDIR/mnl_hits.jsonl (appended), counts on stdout"""
+usage: mnl_search.py OUTDIR term [term ...]   -> OUTDIR/mnl_hits.jsonl (appended), counts on stdout
+Copied from sweep_2026-11-11_southeast; page cap raised from 60 to 150 (the site now returns 20 hits a page)."""
 import sys, json, base64, re, time, html, urllib.request, urllib.parse, os
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
 def get(url):
@@ -26,7 +27,7 @@ for term in sys.argv[2:]:
                     "date": r.get("date"), "attr": strip(r.get("itemAttribute")), "url": "https://adatbazisokonline.mnl.gov.hu" + r.get("datasheetURL", "").split("?")[0],
                     "doc": r.get("docSRC"), "img": r.get("imgURL")}, ensure_ascii=False) + "\n")
         n += len(rows); p += 1
-        if p > 60: break
+        if p > 150: break
         time.sleep(2)
     print(term, "total", total, "fetched", n, flush=True)
     time.sleep(2)
