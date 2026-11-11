@@ -60,3 +60,8 @@ Show-through from the reverse side mixes in, so glosses alone will not rebuild t
 3. Transcribe R5006–R5008. The German letters use the same code; the cipher in R5008 sits inside a known sentence
    frame, and R5006's cipher follows a clear acknowledgement of Seebach's reports.
 4. A syllabary annealer with a proper French/German syllable model, seeded with the seven values above.
+
+
+## Segmentation (Brice Dudout, 11 Nov 2026)
+
+R5005 is not in pairs: groups are 2, 3 or 4 digits long, the length set by the first digit(s), and run on across lines. The rule was proposed by Fable 5.2 on R5005 without blocks a3 and a7, then measured once on a3+a7: 98.3% of groups in form, against at most 70% for controls. Structure only, no reading. Details in `dudout/`.
