@@ -26,7 +26,9 @@ def top(ep): return json.loads(get("https://api.rigsarkivet.dk/ao/v1/billedviser
 def refs(bsid): return [g.split(",")[1] for g in json.loads(get("https://api.rigsarkivet.dk/ao/v1/billedviser/billed-reference-lister?bsid=%s" % bsid))["SA_GUIDs"]]
 def image(bid, width=None):
     from PIL import Image
-    im = Image.open(io.BytesIO(get("https://api.rigsarkivet.dk/ao/v1/images/%s" % bid, True))).convert("RGB")
+    im = Image.open(io.BytesIO(get("https://api.rigsarkivet.dk/ao/v1/images/%s" % bid, True)))
+    if width: im.draft("RGB", (width * 2, width * 2))   # decode at reduced scale: much faster for sheets
+    im = im.convert("RGB")
     if width: im = im.resize((width, int(im.height * width / im.width)))
     return im
 def sheet(bsid, out, stride=15, width=620, cols=4, rows=3, start=0):

@@ -17,3 +17,17 @@
 - K 1020 (A0076333, 294): 24 sample images 2-282 viewed: clear French/English royal letters (George PR 1813, Louis-Philippe, Bavaria 1832), envelopes. No cipher.
 - K 1033 (A0076346, 511): first sheet (12 images 2-235) viewed: clear French letters. No cipher.
 - K 1033 second sheet (12 images 256-490) viewed: clear French/German letters (Thornton 1814, reports 1825). No cipher.
+- /11 R0001376 (333 img): 57, 58: struck/glossed. 130-132 are a dense German "Informatio oder Discurs" (clear). No bare cipher.
+- /12 R0001377 (328 img, damp-damaged): 125, 308, 313, 314, 319-324: struck/glossed (ink faded on 308/313 but interlinear Swedish visible).
+  325 (fol. 901, letter to the Queen 6 Dec 1634): 8 lines of cipher not struck line by line, but the block is cancelled with one
+  diagonal stroke and the decipherment is written in the left margin and continued below ("+ så gitt man i denne ... formerande ...").
+  129-130 (fol. 713-714, to the Queen, Frankfurt am Main 30 July 1634): four cipher passages (129: 3 lines + 2 lines; 130 verso: 5 lines + 3 lines),
+  digits NOT struck through; at full resolution a faint interlinear decipherment in a weaker ink is visible above the bottom passage of 129
+  and between the lines of the top passage of 130, mostly washed out by the damp; above the first passage of 129 and the second of 130
+  nothing legible survives. = deciphered at the time, gloss now largely lost on the leaf. AOSB check needed.
+
+## Task 3: Stedingk
+- E 6588 Depescher 1790-91 (90003434, 293): 12 images 2-135 viewed: Stedingk's own French drafts to the King, several headed "chiffre" / "apostille chiffre" = the clear drafts of despatches sent in cipher. No ciphertext. (second sheet 148-281 not viewed)
+- E 6700 Petersburg papers (90003391, 419): 24 images 2-402 viewed at low resolution (paired sheet): clear French/Swedish/German copies, tables; image 367 is a table headed "Signe" (signal list?), not looked at closely. No cipher letter seen.
+- /15 R0001380 images 1-349 screened (digit-window sheets): no cipher seen; 249 has a row 'Ca Da Ea Fa Ga' to check.
+- /15 R0001380 350-381 and /16 R0001381 (393 img) screened: no cipher seen in either volume.
