@@ -6583,27 +6583,28 @@
   "zeschau1841": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/zeschau1841.html",
    "key": {
-    "none": "no key on DECODE or in print; 7 values from the rubbed-out interlinear pencil (11 la, 70 pre, 82 m, 34 i, 29 er, 40 e, 46 que)"
+    "none": "no key on DECODE or in print; five values proposed from the rubbed-out interlinear pencil, on whole groups (711 la, 708 pre, 234 mi, 294 er, 746 que), not tested"
    },
    "fields": {
-    "cipher_types": "syllabic (two-digit table of letters and syllables), not homophonic/simple substitution"
+    "cipher_types": "syllabic: a table of letters and syllables in groups of 2, 3 and 4 digits written without separators, the length set by the first digit(s) (0x/1x and [3468]x = 2 digits; [2579]xx = 3; 00xx/55xx/77xx = 4); not homophonic/simple substitution, and not two-digit pairs"
    },
    "records": {
     "R5005": {
      "decode_status": "Partially decrypted",
      "proposed": "Partially decrypted",
-     "note": "Not read. The erased pencil decipherment is faintly visible in places; it shows a two-digit syllabary (la pre m i er e over 11 70 82 34 29 40). Full transcription attached (70 lines, 3,969 digits).",
+     "note": "Not read. The erased pencil decipherment is faintly visible in places; it shows a table of letters and syllables (la pre mi er over 711 708 234 294). The digits fall into groups of 2, 3 and 4 (segmentation by Brice Dudout, L'Europe chiffrée, 11 Nov 2026: 1,309 groups, about 190 types; 98.3% of groups in form on held-out blocks against about 70% for shuffled controls). Full transcription attached (70 lines, 3,764 digits) with the same text cut into groups.",
      "reading": null,
      "sent": false,
      "reading_not_needed": true,
      "transcription": [
-      "targets/zeschau1841/ct_R5005.txt"
+      "targets/zeschau1841/ct_R5005.txt",
+      "targets/zeschau1841/dudout/R5005_groups.txt"
      ]
     },
     "R5006": {
      "decode_status": "Partially decrypted",
      "proposed": "Partially decrypted",
-     "note": "Not read; same two-digit syllabary as R5005 (see targets/zeschau1841/NOTES.md).",
+     "note": "Not read; cipher passages not transcribed. Taken to be in the same table as R5005 (groups of 2, 3 and 4 digits; see targets/zeschau1841/NOTES.md), which is not yet tested on these letters.",
      "reading": null,
      "sent": false,
      "reading_not_needed": true
@@ -6611,7 +6612,7 @@
     "R5008": {
      "decode_status": "Partially decrypted",
      "proposed": "Partially decrypted",
-     "note": "Not read; same two-digit syllabary as R5005 (see targets/zeschau1841/NOTES.md).",
+     "note": "Not read; cipher passages not transcribed. Taken to be in the same table as R5005 (groups of 2, 3 and 4 digits; see targets/zeschau1841/NOTES.md), which is not yet tested on these letters.",
      "reading": null,
      "sent": false,
      "reading_not_needed": true
@@ -6619,7 +6620,7 @@
     "R5007": {
      "decode_status": "Partially decrypted",
      "proposed": "Partially decrypted",
-     "note": "Not read; same two-digit syllabary as R5005 (see targets/zeschau1841/NOTES.md).",
+     "note": "Not read; cipher passages not transcribed. Taken to be in the same table as R5005 (groups of 2, 3 and 4 digits; see targets/zeschau1841/NOTES.md), which is not yet tested on these letters.",
      "reading": null,
      "sent": false,
      "reading_not_needed": true,

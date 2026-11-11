@@ -28,7 +28,7 @@
     "by": "llm from images",
     "source": "DECODE images IMG_R5005_I28858_P1-P6, line strips",
     "image_quality": "good",
-    "notes": "3,969 digits in 70 lines. The measure splits each line into pairs, so odd line tails count as one-digit tokens (hence 107 distinct)."
+    "notes": "3,764 digits in 70 lines (the 3,969 recorded until 11 Nov 2026 was a miscount). The measure splits each line into pairs, so odd line tails count as one-digit tokens (hence 107 distinct); pairs are not the cipher's unit: segmented by the rule of 11 Nov 2026 (dudout/R5005_groups.txt) the text is 1,309 groups of 2, 3 and 4 digits, 190 types."
    }
   },
   {
@@ -60,9 +60,9 @@
  ],
  "system": {
   "types": ["syllabic"],
-  "summary": "Unseparated two-digit groups for letters and syllables (11=la, 70=pre, 82=m, 34=i, 29=er, 40=e, 46=que from the erased glosses).",
+  "summary": "Unseparated digits in groups of 2, 3 and 4, the length set by the first digit(s) (0x/1x and [3468]x = 2; [2579]xx = 3; 00xx/55xx/77xx = 4), standing for letters and syllables; about 190 group types in R5005. Proposed values from the erased glosses, re-aligned on whole groups and not tested: 711 la, 708 pre, 234 mi, 294 er, 746 que. Until 11 Nov 2026 the text was taken as two-digit groups.",
   "symbol_kind": "digits",
-  "distinct_symbols": 96,
+  "distinct_symbols": 190,
   "diacritics": {"used": "unknown"},
   "homophones": {"used": "unknown"},
   "nomenclator": {"present": "unknown"},
@@ -71,7 +71,7 @@
   "word_division": "none",
   "doubled_letters": "unknown",
   "sibling_key": "none",
-  "notes": "About a third of the lines have odd length, so groups may be split across lines. No 1840s Saxon key on DECODE."
+  "notes": "Groups run on across line ends. 15 of the 1,309 groups of R5005 (1.1%) fall outside the forms and are to be checked on the images. No immediate repetition of a group. No 1840s Saxon key on DECODE."
  },
  "conditions": {
   "prior_solution": {
@@ -82,34 +82,38 @@
   },
   "inputs": ["images"],
   "attack": "ciphertext-only",
-  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded. 11 Nov 2026: Brice Dudout (contributor, PR #401) had an LLM propose a segmentation rule on R5005 without blocks a3 and a7 and had a second agent measure it once on those blocks under a pre-registered protocol (dudout/validation.md).",
   "tools": ["hsolve.py (homophonic annealer, French 4-gram)", "syll.py/syll2.py/syll3.py (syllabary annealers)", "gl.py (gloss enhancement)"],
   "models": ["claude-opus-5"],
-  "sessions": 1,
+  "sessions": 2,
   "first_date": "2026-09-21",
-  "last_date": "2026-09-21"
+  "last_date": "2026-11-11"
  },
  "solution": [
   {"kind": "access", "what": "Fetched R5005-R5008 images from DECODE with the session cookie.", "result": "worked", "date": "2026-09-21"},
   {"kind": "literature search", "what": "Listed every Dresden key record on DECODE; latest is 1799-1806, none for the 1840s. No printed edition found.", "result": "failed", "date": "2026-09-21"},
-  {"kind": "transcription", "what": "Hand-transcribed R5005 in full from line strips (70 lines, 3,969 digits).", "result": "worked", "date": "2026-09-21"},
+  {"kind": "transcription", "what": "Hand-transcribed R5005 in full from line strips (70 lines, 3,764 digits; recorded as 3,969 until 11 Nov 2026, a miscount).", "result": "worked", "date": "2026-09-21"},
   {"kind": "statistics", "technique": ["EM alignment", "frequency analysis"], "what": "Pair counts, null-digit sets, prefix-code lengths, per-line phase by EM.", "result": "partial", "date": "2026-09-21"},
   {"kind": "control", "what": "Homophonic annealer on a synthetic 1,800-letter French text.", "result": "worked", "date": "2026-09-21"},
   {"kind": "solver", "technique": ["simulated annealing"], "what": "Homophonic letter annealer on pairs (both phases) and two prefix codes.", "result": "failed", "date": "2026-09-21"},
   {"kind": "crib", "technique": ["crib testing", "plaintext matching"], "what": "Enhanced the rubbed pencil glosses: 'la pre m i er e' over 11 70 82 34 29 40, 'que' over 46.", "result": "partial", "date": "2026-09-21"},
-  {"kind": "solver", "technique": ["simulated annealing", "plaintext matching"], "what": "Syllabary annealers seeded with the gloss values (free, one-cell, length-neutral).", "result": "failed", "date": "2026-09-21"}
+  {"kind": "solver", "technique": ["simulated annealing", "plaintext matching"], "what": "Syllabary annealers seeded with the gloss values (free, one-cell, length-neutral).", "result": "failed", "date": "2026-09-21"},
+  {"kind": "hypothesis", "technique": ["key-structure hypothesis", "repeat/pattern analysis"], "what": "Contributed by Brice Dudout (PR #401): variable-length segmentation of R5005, proposed by an LLM on the text without blocks a3 and a7: the first digit(s) set the group length (0x/1x and [3468][13468] = 2 digits; [2579]x[13468] = 3; 00xx/55xx/77xx = 4), groups run on across lines. 1,309 groups, 190 types, 15 outside the forms.", "result": "worked", "date": "2026-11-11"},
+  {"kind": "control", "technique": ["statistical test"], "what": "Contributor's pre-registered single measure on the held-out blocks a3+a7 (859 digits): 291 of 296 groups in the forms (0.983, bar 0.95), against maxima of about 0.70 for digits shuffled within lines, pairs shuffled, and a synthetic true-pair homophonic cipher. Structure only; no value tested.", "result": "worked", "date": "2026-11-11"},
+  {"kind": "verification", "technique": ["statistical test"], "what": "Integration check: segment.py re-run (output identical); held-out share recomputed with an independent script (291/296 = 0.983; secondary checks as stated); shuffle controls re-drawn (means 0.64 and 0.62, maxima 0.71 and 0.69 of 1,000). Not checkable: the blindness of the proposer and the pre-registration hashes. Digit count of R5005 corrected from 3,969 to 3,764; repeat counts corrected.", "result": "worked", "date": "2026-11-11"}
  ],
  "outcome": {
   "method": "not solved",
-  "method_basis": "R5005 was transcribed and attacked ciphertext-only; the syllabary was identified and seven values recovered from the rubbed-out pencil glosses, but no key reading resulted and no 1840s Dresden key exists on DECODE.",
+  "method_basis": "R5005 was transcribed and attacked ciphertext-only; the rubbed-out pencil glosses show a table of letters and syllables and give a few values, and the digits were segmented into groups of 2, 3 and 4 (Brice Dudout, 11 Nov 2026, confirmed on held-out blocks), but no key and no reading resulted and no 1840s Dresden key exists on DECODE.",
   "contribution": ["transcription", "sender or date identified"],
   "class": "not read",
   "fraction_read": 0,
   "verification": ["matched control"],
-  "notes": "System identified and seven values recovered; needs the key, imaging of the erased pencil, or the sibling letters transcribed.",
+  "provenance": "mixed",
+  "notes": "Structure identified (groups of 2, 3 and 4 digits; letters and syllables) and five values proposed from the glosses; the September solvers ran on pairs and did not test this segmentation. Needs a solver on the groups, the key, imaging of the erased pencil, or the sibling letters transcribed.",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "rubbed-out interlinear pencil decipherment (seven values)"},
-    {"who": "dudout", "role": "identification", "note": "R5005 segmented in variable-length groups of 2, 3 and 4 digits (rule proposed by Fable 5.2), confirmed by one pre-registered measure on held-out blocks a3+a7 (98.3% in form vs 70% controls); see dudout/"}
+    {"who": "dudout", "role": "identification", "note": "R5005 segmented in variable-length groups of 2, 3 and 4 digits (rule proposed by Fable 5.2), confirmed by one pre-registered measure on held-out blocks a3+a7 (98.3% in form vs 70% controls); see dudout/", "date": "2026-11-11", "source": "https://github.com/dbourdeau/cyphersolver/pull/401"}
   ]
  }
 }

@@ -51,6 +51,19 @@ Files: `transcription*.txt`, `decryption*.txt`, `reading*.md`, `translation*.md`
 - Not the same system as `army1901`, `army1901in` or `army1902` (the Army's numeric kana ciphers of 1901-04, different tables and period); no overlap of documents.
 - Outcome by part: telegrams 1-2 read with known key, prior decipherment in print (Ohno 2010), found after reading and used for one word only (コレ in telegram 2 row 8, adopted 11 Nov 2026 after Satoshi Tomokiyo checked it on the image; not a first break); telegram 3 read with known key, no prior reading known.
 
+## Integration check (11 Nov 2026)
+
+On integration of PR #402 (Brice Dudout): `decryption_2.txt` re-derived from `transcription_2.txt` with `key.tsv`
+(55 = コ, 33 = レ) agrees pair for pair, and row 8 reads ホウチ コレ ナシ. Counts recounted from `reading_2.md`:
+24 certain + 4 probable of 29 = 28/29 = 96.6%; whole target 20 + 28 + 18 = 66 of 72 = 91.7%. Telegram 2 now meets the
+95% bar and its one open word has an outside blocker, so its state is "read"; the target stays read in part because of
+telegram 3 (18/23). `python docs/_check_profile.py --measure transcription_2.txt` gives 100 pairs (99 before the
+correction); the profile said 102 (101 before) and is set to 100. The held-out check of 28 Oct is quoted as "63 pairs
+of frame 1811": the first nine rows are 63 pairs with the corrected row 8 and were 62 in the file as first merged; the
+check was not re-run here. The JACAR image was not seen by the project: that the signs in row 8 are ゝ rests on
+Satoshi Tomokiyo's check as reported by Brice Dudout, and the reading コレ on Ohno's article as reported by Tomokiyo.
+Page, README row and ledgers brought in line the same day.
+
 ## Remaining gaps
 
 - telegram 2, the restored [速ヤカニ] (a single 6 where 66 is needed) - blocker: illegible; no second copy known (the former gap ‹ケ› is resolved: コレ, 11 Nov 2026)

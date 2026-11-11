@@ -58,7 +58,7 @@
     "source": "no decipherment in the record"
    },
    "length": {
-    "tokens": 102,
+    "tokens": 100,
     "unit": "code groups",
     "measured": true,
     "file": "transcription_2.txt"
@@ -160,6 +160,18 @@
     "statistical test"
    ],
    "what": "Frozen key on held-out telegram 2 (C04025783500, 63 pairs): 0 of 200 permuted control keys reach it (trigram score and lexicon). The key was later found to be already published (Nagata 1989, Ohno 2010, Tomokiyo 2014).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "transcription",
+   "what": "Contributed correction (Brice Dudout, PR #402): telegram 2 row 8 re-transcribed as 15 43 21 55 33 37 67. Satoshi Tomokiyo checked on the image that the signs read as commas are the repetition mark ゝ (5ゝ 3ゝ = 55 33), which gives コレ, Ohno Tetsuya's reading of 2010 (報知之無), in place of the unresolved pair 53 (ケ). Telegram 2 goes from 27/29 to 28/29 words, the target from 65/72 to 66/72. The image was not seen by the project.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "what": "Integration check of PR #402: decryption_2.txt re-derived from transcription_2.txt with key.tsv (55 = コ, 33 = レ; identical); word counts recounted from reading_2.md (24 certain + 4 probable of 29 = 0.966; target 20 + 28 + 18 = 66 of 72 = 0.917); telegram 2 measured at 100 pairs (the profile said 102).",
    "result": "worked"
   }
  ],
