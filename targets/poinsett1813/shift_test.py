@@ -28,7 +28,8 @@ def tsv(p, ki, vi):
     return d
 
 T = {'jqa': tsv('jqa/code_table.tsv', 0, 1), 'pinckney': tsv('erving1807aug/key_pinckney.tsv', 0, 1),
-     'legation1788': tsv('legation1788/key.tsv', 1, 2), 'jefferson1787': tsv('jefferson1787/key.tsv', 0, 1)}
+     'legation1788': tsv('legation1788/key.tsv', 1, 2), 'pinckney1793': tsv('pinckney1793/key.tsv', 1, 2),  # Codes No. 10 and No. 16, one file until 11 Nov 2026
+     'jefferson1787': tsv('jefferson1787/key.tsv', 0, 1)}
 a = json.load(open(R / 'armstrong/code972_partial.json'))
 T['armstrong'] = {int(k): re.sub(r'[^a-z]', '', v[0].lower()) for k, v in a.items() if re.sub(r'[^a-z]', '', v[0].lower())}
 

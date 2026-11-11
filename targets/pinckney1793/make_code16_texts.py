@@ -1,5 +1,5 @@
 """Build the transcription (ct/) and decryption (texts/*_decryption.txt) files of the other Code No. 16 letters from
-Andrew Beling's witness files in beling/witnesses/ (PR #399). Run from targets/legation1788:
+Andrew Beling's witness files in beling/witnesses/ (PR #399). Run from targets/pinckney1793:
 
     python make_code16_texts.py
 

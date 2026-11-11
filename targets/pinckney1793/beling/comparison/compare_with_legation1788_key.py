@@ -1,6 +1,6 @@
 """Compare key/code16_key_v4.tsv with the Code No. 16 rows of ../key.tsv (Bourdeau, built by make_key.py).
 
-Run from targets/legation1788/beling:   python3 comparison/compare_with_legation1788_key.py
+Run from targets/pinckney1793/beling:   python3 comparison/compare_with_legation1788_key.py
 Writes comparison/v4_vs_legation1788_key.tsv and comparison/v4_vs_legation1788_key.json.
 
 Classes, per Code No. 16 group of ../key.tsv:
@@ -49,7 +49,7 @@ for r in csv.DictReader(open(B.parent / 'key.tsv'), delimiter='\t'):
                      ours=o['value'] if o else '', grade=o['grade'] if o else '', our_n=o['n'] if o else '',
                      our_sources=o['sources'] if o else '', his_on_list='y' if hv in vocab else 'n', cls=c))
 with open(B / 'comparison' / 'v4_vs_legation1788_key.tsv', 'w') as f:
-    f.write('# key/code16_key_v4.tsv against the Code No. 16 rows of targets/legation1788/key.tsv; see the script for the classes\n')
+    f.write('# key/code16_key_v4.tsv against the Code No. 16 rows of targets/pinckney1793/key.tsv (targets/legation1788/key.tsv until the split of 11 Nov 2026); see the script for the classes\n')
     cols = list(rows[0])
     f.write('\t'.join(cols) + '\n')
     for r in rows: f.write('\t'.join(str(r[k]) for k in cols) + '\n')

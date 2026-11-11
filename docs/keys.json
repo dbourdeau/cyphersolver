@@ -465,7 +465,7 @@
    "kind": "rebuilt here",
    "by": "Andrew Beling (537 groups); cyphersolver (262 values)",
    "year": 1793,
-   "note": "No key sheet is public. key.tsv: 262 values from George Taylor's decodings of Pinckney's 1793-94 letters (27 Oct 2026). beling/key/code16_key_v4.tsv: 537 graded groups from the interlinear decipherments of Pinckney 1795, Eaton 1801-02 and Lear 1813 and from Weber's 1,600-element word list (PR #399, 11 Nov 2026); tested with a key frozen beforehand, 0.886 on Pinckney 1795 and 0.80 on Eaton 1801."
+   "note": "No key sheet is public. targets/pinckney1793/key.tsv: 262 values from George Taylor's decodings of Pinckney's 1793-94 letters (27 Oct 2026). beling/key/code16_key_v4.tsv: 537 graded groups from the interlinear decipherments of Pinckney 1795, Eaton 1801-02 and Lear 1813 and from Weber's 1,600-element word list (PR #399, 11 Nov 2026); tested with a key frozen beforehand, 0.886 on Pinckney 1795 and 0.80 on Eaton 1801."
   },
   {
    "id": "k-murray1797",
@@ -4986,9 +4986,9 @@
   },
   {
    "key": "k-legation-code16",
-   "target": "legation1788",
+   "target": "pinckney1793",
    "how": "rebuilt from",
-   "note": "values rebuilt from the decipherments of the time on Pinckney's, Eaton's and Lear's letters; used to check the editors' reading of 28 Aug 1793 (39 of 58 groups attested). Codes 10 and 13 on the same page have no key."
+   "note": "values rebuilt from the decipherments of the time on Pinckney's, Eaton's and Lear's letters; used to check the editors' reading of 28 Aug 1793 (39 of 58 groups attested)."
   },
   {
    "key": "k-murray1797",
@@ -8766,6 +8766,7 @@
   }
  ],
  "unlinked": {
+  "legation1788": "Read from Jefferson's interlinear decoding and the Jefferson Papers editors' printed decodings; no key sheet of Code No. 10 or Code No. 13 is known, and key.tsv only lists the 171 values Jefferson wrote over Short's groups. Code No. 16, linked here until 11 Nov 2026, is on pinckney1793.",
   "witham1250": "Not solved: no key exists (an initials / abbreviation invocation); the sibling blades' published readings (Wagner et al. 2009) were used only to measure family membership (letter order), not to read it.",
   "alphen1200": "Not solved: no key exists (an invocation in abbreviations); the sibling blades' published readings (Wagner et al. 2009) were used for a formula-level parse only.",
   "rok800": "Cipher runes read by Bugge (1878) and Wessen (1958); the three keys are re-derived here from the stone's own text but not stored as a key table.",

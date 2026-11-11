@@ -80,7 +80,7 @@ excludes rows with an ambiguous placement, a doubtful digit or no word above.
 | I | 8 | from No. 29's context only, doubtful |
 
 `scripts/king_code.py` rebuilds `build/key_v1.tsv` (the tested key) and `build/key_v2.tsv` byte for byte from the corpus,
-given Weber's list. The list is not repeated here: it is in the Code 16 folder, `../legation1788/beling/key/weber_1600_family_vocab.txt`
+given Weber's list. The list is not repeated here: it is in the Code 16 folder, `../pinckney1793/beling/key/weber_1600_family_vocab.txt`
 (pass it as `--elements`). With the WE028 sheet already in this repository instead (`../morris1813/beling/key/`), 715 of the
 723 v1 values come out the same.
 
@@ -215,7 +215,7 @@ Done by the project when pull request #398 was integrated. Nothing in the key, t
   groups, calibration 92 of 94). With the WE028 sheet of `../morris1813/beling/key/` instead: 736 groups, 0.948 at coverage 0.772,
   as section 4 says. `scripts/check_against_print.py` rewrites `checks/check_against_print.json` and the alignment table byte for
   byte (201 of 227, 85 of 100, 9 of 9). `decode --key key.tsv no29_transcription.txt` gives the D lines of `no29_decryption.txt`.
-- **The Weber list is not in this folder.** `../legation1788/beling/key/weber_1600_family_vocab.txt` arrives with pull request #399
+- **The Weber list is not in this folder.** `../pinckney1793/beling/key/weber_1600_family_vocab.txt` arrives with pull request #399
   (Code No. 16); until that is merged the byte-for-byte rebuild needs that file from the pull request. The check above used it.
 - **Was the key frozen before the test?** What can be checked: the v1 build reads only `corpus/interlined_spans.tsv` and the element
   list, never `test_no59/`; frames 0272 and 0273 are not among the 72 corpus frames; no run of four consecutive groups of No. 59
@@ -234,7 +234,7 @@ Done by the project when pull request #398 was integrated. Nothing in the key, t
   faint No. 30 triplicate (0118 R11), where the print has "immediate" and 1075 = im is likely meant (already noted in `key.tsv`).
   So nothing in the folder confirms or refutes them, and they stay doubtful.
 - **One key, one entry.** `key.tsv` was compared number by number with the other United States code tables here: Codes No. 10 and
-  No. 16 of `../legation1788` (83 and 128 numbers in common, no value the same), the WE028 sheet of `../morris1813` in both block
+  No. 16 (`../legation1788/key.tsv` and, since the split of 11 Nov 2026, `../pinckney1793/key.tsv`; 83 and 128 numbers in common, no value the same), the WE028 sheet of `../morris1813` in both block
   orders (757 and 752 in common, none the same, no constant offset), and the commonest groups of the others (the = 972 Armstrong,
   1385 `../jqa`, 1651 Pinckney, 536 `../murray1801`, 798 Sumter). It is a different code from all of them. The two despatches of
   `../king1801` are in this code; that folder is closed with no page (texts already in print) and now points here.

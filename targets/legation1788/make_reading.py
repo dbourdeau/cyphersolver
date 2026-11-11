@@ -1,6 +1,7 @@
-"""Build reading.tsv for the three letters and print the measure.
-Grades: T = TJ's interlinear over the group (Short); H = value attested by a decoding in another letter of the same code
-(Pinckney); E = the PTJ editors' reading, not attested elsewhere; C = editors' or context conjecture; O = open."""
+"""Build reading.tsv for the two letters (Short, Carmichael) and print the measure.
+Grades: T = TJ's interlinear over the group (Short); E = the PTJ editors' reading, not attested elsewhere; C = editors' or
+context conjecture; O = open. Until 11 Nov 2026 this also took in Pinckney's 28 Aug 1793 passage (grade H = attested in
+another letter of the same code); that letter is now in targets/pinckney1793/ (reading_pinckney_17930828.tsv)."""
 import csv, collections
 OPEN_SHORT = {'401', '1083', '359', '199', '34', '724'}
 out = []
@@ -11,11 +12,6 @@ for r in csv.DictReader(open('transcription/short_17920726_full.tsv', encoding='
     il = (r.get('interlinear') or '').strip()
     grade = 'O' if g in OPEN_SHORT else ('T' if il else 'E')
     out.append(('short_17920726', r['frame'], r['line'], r['pos'], g, il, grade))
-for r in csv.reader(l for l in open('reading_pinckney_17930828.tsv', encoding='utf-8') if not l.startswith('#')):
-    pass
-rows = [l.rstrip('\n').split('\t') for l in open('reading_pinckney_17930828.tsv', encoding='utf-8') if not l.startswith('#')][1:]
-for line, pos, g, reading, grade, *_ in rows:
-    out.append(('pinckney_17930828', 'M30-002-0140', line, pos, g, reading, grade))
 carm = [('009_0224', '108', 'Maryland', 'C'), ('009_0230', '108', 'Maryland', 'C'), ('009_0230', '223', 'Massachusetts', 'C'),
         ('009_0230', '273', 'majority', 'C'), ('009_0230', '597', '—', 'O')]
 for i, (f, g, w, gr) in enumerate(carm, 1):

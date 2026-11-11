@@ -10,7 +10,7 @@ random to its groups, 200 shuffles.
 The original scoring runs of 10 Nov 2026 were not kept as a script; this is a re-implementation written for the
 bundle. Its numbers are printed next to the recorded ones (tests/*_frozen_key_v1_result.json) so any difference shows.
 
-    python3 tests/rescore_frozen_key.py        (from targets/legation1788/beling)
+    python3 tests/rescore_frozen_key.py        (from targets/pinckney1793/beling)
 """
 import csv, json, random, re
 from pathlib import Path

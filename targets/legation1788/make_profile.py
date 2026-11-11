@@ -1,5 +1,7 @@
-"""NOTE (11 Nov 2026): profile.json has been edited by hand since this script last ran (Carmichael summary, the six Code
-No. 16 letters of PR #399, credits, gaps, texts). Do not re-run it without carrying those edits over.
+"""NOTE (11 Nov 2026): DO NOT RE-RUN. This script built the profile of the folder when it held three letters (Short,
+Carmichael, Pinckney 28 Aug 1793). Code No. 16 was split out to targets/pinckney1793/ on 11 Nov 2026: the Pinckney
+files it reads and writes are no longer here, and profile.json has been edited by hand since (Carmichael summary, the
+split). It is kept as the record of how the first profile and the ct/ and texts/ files were made.
 
 Write ct/<letter>.txt, texts/<letter>_decryption.txt and profile.json for legation1788.
 

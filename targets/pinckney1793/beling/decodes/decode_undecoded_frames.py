@@ -2,7 +2,7 @@
 interlinear decoding (frames 0106, 0107, 0135, 0136, 0148 foot, 0178, 0196 ll. 5-10, 0305, 0317; 0140 is handled
 in corrections/). "Decoded, not read": a stream of key values with no word division and no editing.
 
-Run from targets/legation1788/beling:   python3 decodes/decode_undecoded_frames.py
+Run from targets/pinckney1793/beling:   python3 decodes/decode_undecoded_frames.py
 Writes decodes/m30_undecoded_v4.txt and decodes/coverage.tsv.
 
 Coverage is given three ways, because key v4 is not independent of these frames:

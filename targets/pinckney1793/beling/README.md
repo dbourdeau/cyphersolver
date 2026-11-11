@@ -5,6 +5,13 @@ It adds to `targets/legation1788/` (Code No. 16, Thomas Pinckney's London code o
 outside this folder. The small edits it proposes to the target's own files are in `proposed_changes.patch`, to apply
 or not.
 
+Moved on 11 Nov 2026: when Code No. 16 was split out of `targets/legation1788/` into its own target, this bundle went
+with it to `targets/pinckney1793/beling/`. `../` in this file and in the scripts now means `targets/pinckney1793/`, which
+holds `key.tsv` (the 262 Code No. 16 rows only; the Code No. 10 rows stayed in `targets/legation1788/key.tsv`),
+`reading_pinckney_17930828.tsv` and `transcription/pinckney_m30.tsv`. File names with `legation1788` in them, `CHECKS.txt`
+and `proposed_changes.patch` (applied on 11 Nov 2026, against the old paths) are kept as they were; `reading.tsv`, `NOTES.md`,
+`profile.json` and `make_profile.py` named below are the files of the folder as it then was.
+
 Paths such as `output/...`, `sources/raw/...` or `scripts/...` inside the copied READMEs and the scripts in `key/scripts/`
 refer to our working folders, not to this bundle. Those scripts are included to show the method and do not run here.
 The scripts in `tests/`, `comparison/`, `corrections/` and `decodes/` read only this bundle and `../` and do run

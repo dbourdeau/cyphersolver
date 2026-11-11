@@ -33,7 +33,7 @@ Rough correspondence with the README grades: D, S2, A and R correspond to C (fro
 The 1600-element list (`on_element_list`) is the union of the elements of Weber's WE023-WE028 (R. E. Weber, *United States
 Diplomatic Codes and Ciphers 1775-1938*, 1979), taken from the text layer of the book. Weber prints the same alphabetical list
 with different numberings for several State Department codes. The list is not repeated here: it is bundled once, in
-`../legation1788/beling/key/weber_1600_family_vocab.txt` (pass it as `--elements`). King's code was assumed to be built on the
+`../pinckney1793/beling/key/weber_1600_family_vocab.txt` (pass it as `--elements`). King's code was assumed to be built on the
 same printed form, and 382 of the 411 single-group values read directly from the clerks are on the list. The prior-art check found
 no outside source that confirms this (NOTES.md, Prior work).
 

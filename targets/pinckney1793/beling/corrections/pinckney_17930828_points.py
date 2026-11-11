@@ -2,7 +2,7 @@
 the other witnesses of the code. Checks that this repository's reading still says what the proposal assumes
 (it stops if a row has changed), then writes corrections/pinckney_17930828_points.tsv.
 
-Run from targets/legation1788/beling:   python3 corrections/pinckney_17930828_points.py
+Run from targets/pinckney1793/beling:   python3 corrections/pinckney_17930828_points.py
 """
 import csv, sys
 from pathlib import Path
