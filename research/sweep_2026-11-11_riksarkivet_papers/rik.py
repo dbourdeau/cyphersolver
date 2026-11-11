@@ -91,4 +91,4 @@ if __name__ == '__main__':
     elif c == 'pick':
         man, px = sys.argv[2], int(sys.argv[3])
         for i in sys.argv[4:]:
-            p = f'{SP}/{man}_{int(i):05d}_{px}.jpg'; img(man, int(i), px).save(p, quality=80); print(p); time.sleep(0.5)
+            p = f'{SP}/{man}_{int(i):05d}_{px}.jpg'; crop(img(man, int(i), px, True)).save(p, quality=80); print(p); time.sleep(0.5)

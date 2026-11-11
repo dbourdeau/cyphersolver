@@ -19,5 +19,52 @@
   "duplicates": "known.py on Buckingham, ASC 876 and Winterthur: only this lead and its sweep row",
   "verdict": "not_cipher",
   "closed": "Shorthand, seen on the leaves: images 35 and 44 of Winterthur ASC 876 show two hymn texts in stenographic word outlines (joined strokes, loops, vowel dots, one outline per word; last word of image 44 completed in longhand 'savior'), and the 'code' signatures are the same shorthand. The catalogue's 'code' is shorthand, unread but not a cipher."
+ },
+ "1897": {
+  "date": "2026-11-11",
+  "by": "claude cloud vetting 11 Nov 02",
+  "seen": {
+   "kind": "scan",
+   "where": "vestigia.hu (answers curl from the cloud, 11 Nov): https://www.vestigia.hu/documents/2807 (DF 295774, ASMi Sforzesco, Ungheria, sc. 645 no. 22), /documents/2808 (DF 295775, no. 23) and /documents/2809 (DF 295776, no. 24); the web_url page images of all three downloaded to scratch, contact sheets and 1500 px crops of 2807 p. 1 and 2809 p. 1 read",
+   "extent": "DF 295774: 2 written pages (recto about 45 lines, verso 26), about two thirds cipher; DF 295775: 4 written pages, mixed clear and cipher; DF 295776: 1 page of about 40 lines, most of it cipher, plus a 3-line ciphered address on the back",
+   "cipher": "One hand and one system on all three: runs of digits (3 4 5 8 9 0), Latin letters (y w g p q n m z) and a few signs (a crossed circle, #, a triple stroke, Greek-like ε), written continuously without word breaks and alternating with clear Italian (DF 295774 opens 'Nuperrime qua son stati rotti quelli bohemi del serenissimo quondam re Matthia'; DF 295776 has 'Vegno a Milano cum mancho de ducati sei' in clear). No decipherment is written between the lines or in the margins of any page; only later archivists' dates (1491?, 1492, '1491. 18. 8bris Buda')."
+  },
+  "prior_art": {
+   "decode": "de-crypt.org RecordsView opened for R1146-R1160 (curl, 11 Nov): R1158 'SAMi_Sf_Ung_b_645_7_23' (to Maffeo Trevigliano, 1492, 4 pp.) is DF 295775 and R1159 'SAMi_Sf_Ung_b_645_7_24' (18 Oct, 1 p., there dated 1491 and guessed 'Tamás Bakócz?') is DF 295776; both carry images only, 'Inline Plaintext: No', no transcription or key attached. No record for 645/7, 22 (DF 295774) among R1146-R1160. The DECODE dump is not in this checkout, so known.py did not cover it.",
+   "tomokiyo": "repo copy unsolved.htm (Tomokiyo's list) searched for Maffeo, Treviglio and Lanteri: no hit at all, so cryptiana lists neither Maffeo's nor Lanterio's Buda letters",
+   "lasry": "no Lasry paper on the Milan-Buda correspondence found; web search 'Paolo Lanterio Maffeo da Treviglio 1492 cifra lettera Buda decifrata Somogyi' returned only Somogyi 2016 and the MNL exhibition page, both on Maffeo's own cipher",
+   "edition": "Vestigia 852 opened (https://www.vestigia.hu/documents/852, MTA ms. 4936 no. 86, the 19th-century copy of DF 295776): it gives only the clear passages with dots for the cipher and the copyist's note 'E quasi tutta in cifra senza spiegazione. Si riportano soltanto le parti scritte, segnando le cifra con puntini. Si capisce che e dal Lanterio da' caratteri'. Labancz's thesis (targets/buda1489/labancz_1491.txt) covers 1491 only and prints none of the three.",
+   "literature": "Somogyi, Verbum 2016 (targets/buda1489/somogyi2016.txt) grepped for Lanterio: no hit, her key is Maffeo's; mnl.gov.hu/mnl/ol/encryption read: shows Maffeo's letters of 2 and 6 Apr 1490 with their Milan extracts, not these; web search 'Lanterio Maffeo Treviglio 1492 Ungheria cifra Sforzesco 645' found no study"
+  },
+  "key_check": "Maffeo's key (targets/buda1489/key.json, Somogyi 2016, ASMi cart. 1597 no. 111) not tried on these leaves in this pass; the sign set here (digit-heavy, 0 and 3 frequent) differs from Maffeo's letter-like alphabet, and targets/buda1489/NOTES.md already calls R1158 'a third system (0-heavy)'",
+  "key_held": "No key held. A crib exists: DECODE R1155 = Vestigia 2239 (Lanterio to Maffeo, Buda 14 Sep 1492) has a 7-page contemporary clear copy, Vestigia 2240 (targets/buda1489/NOTES.md); if R1155 is in the same cipher, that pair rebuilds the key. Not tested here.",
+  "duplicates": "known.py 'R1158' 'R1159' 'Lanterio' '645/7' and the DF numbers: no catalogue entry. targets/buda1489 (catalogue 1235) lists R1158 (= DF 295775) among its siblings as 'unread, other cipher, not part of this reading'; R1159 and DF 295774 appear nowhere in the repo. So the three letters overlap DECODE R1158/R1159 but no read target.",
+  "verdict": "open",
+  "lead_updates": {
+   "access": "online",
+   "correspondents": "Paolo Lanterio (by the hand, per the note on Vestigia 852; DF 295776 dated Buda 18 Oct 1492) to Maffeo da Treviglio"
+  },
+  "searches": [
+   {
+    "query": "vestigia.hu /api/search?search=Nuperrime and ?search=295774",
+    "result": "Vestigia 2807 'Rejtjelezett levél Maffeo da Treviglio részére', DF 295774, ASMi sc. 645 no. 22, 3 pages, incipit 'Nuperrime qua son stati rotti'; neighbours 2808 (DF 295775, no. 23) and 2809 (DF 295776, no. 24, Buda 18 Oct 1492, linked copy 852)"
+   },
+   {
+    "query": "de-crypt.org/decrypt-web/RecordsView/1146 ... /1160 (each record opened)",
+    "result": "R1158 = Sf. Ung. b. 645/7, 23 and R1159 = Sf. Ung. b. 645/7, 24, images only, no plaintext; no record named 645_7_22"
+   },
+   {
+    "query": "Paolo Lanterio Maffeo da Treviglio 1492 cifra lettera Buda decifrata Somogyi",
+    "result": "Somogyi's Verbum 2016 article and the MNL 'encryption' page on Maffeo's cipher; nothing naming Lanterio or a letter of 18 Oct 1492"
+   },
+   {
+    "query": "\"Lanterio\" \"Maffeo\" Treviglio 1492 Ungheria cifra Sforzesco 645 Vestigia titkosírás megfejtés",
+    "result": "no relevant hit: Sforza-period art and archive guides only, no decipherment of the 1492 Lanterio letters"
+   },
+   {
+    "query": "known.py \"R1158\" \"R1159\" \"Lanterio\" \"645/7\"",
+    "result": "targets/buda1489 NOTES name R1158 as an unread sibling in another cipher; R1159 only in sweep lists; no catalogue row"
+   }
+  ]
  }
 }
