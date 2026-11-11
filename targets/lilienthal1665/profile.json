@@ -1,0 +1,255 @@
+{
+ "schema_version": 1,
+ "target": "lilienthal1665",
+ "title": "Resident Johan von Lilienthal in Moscow, 1665-1667 (Riksarkivet, Diplomatica Muscovitica 1/36/82): key of the homophonic German letter code rebuilt from the contemporary glosses and validated",
+ "documents": [
+  {
+   "id": "r0000814-42-47",
+   "read": "read",
+   "shelfmark": "Stockholm, Riksarkivet, Diplomatica Muscovitica, SE/RA/2113/2113.1/1/36/82 (Residenten Johan von Lilienthal, brev till Kungl. Maj:t, 1665-1667), images R0000814_00042 (left and right) and R0000814_00047 (left)",
+   "date": "1665-1667 (not fixed here)",
+   "year": 1666,
+   "country": "Sweden",
+   "route": "Johan von Lilienthal (Swedish resident in Moscow) -> Charles XI (the Regency)",
+   "places": {
+    "from": "Moscow",
+    "to": "Stockholm"
+   },
+   "language": "German",
+   "pages": 3,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "A contemporary German decipherment is written above every code run on the pages checked."
+   },
+   "length": {
+    "tokens": 1128,
+    "unit": "code groups",
+    "measured": true,
+    "file": "frozen/PAIRES-LILIENTHAL.tsv"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Riksarkivet IIIF, images 42 and 47 at 3000 px (public viewer, no login)",
+    "image_quality": "good",
+    "notes": "Training part of the key: 97 glossed runs (cipher groups with the gloss above them, aligned letter by letter; 1116 groups aligned, 12 left unassigned). The clear German text is not transcribed."
+   }
+  },
+  {
+   "id": "r0000814-45",
+   "read": "read",
+   "shelfmark": "Stockholm, Riksarkivet, Diplomatica Muscovitica, SE/RA/2113/2113.1/1/36/82, image R0000814_00045, left page, lines 1-10",
+   "date": "1665-1667 (not fixed here)",
+   "year": 1666,
+   "country": "Sweden",
+   "route": "Johan von Lilienthal (Moscow) -> Charles XI (the Regency)",
+   "places": {
+    "from": "Moscow",
+    "to": "Stockholm"
+   },
+   "language": "German",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "A contemporary German decipherment is written above every code run; it is selective and in places summarises."
+   },
+   "length": {
+    "tokens": 185,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Riksarkivet IIIF, image 45 at 3000 px",
+    "image_quality": "good",
+    "notes": "Held-out part of the key test: lines 1-10 of the left page (185 groups), transcribed after the key was frozen, then the gloss read; the first 160 groups were measured."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "German letter substitution with homophones, 2-3 digit groups separated by dots, mixed with clear German; numbers also for ch, sch, st, ss, ll, ff and tz; u = v = w. Six code series (23-59, 63-100, 103-150, 153-190, 293-349, 353-390), each in alphabetical order; numbers ending in 1 or 2 do not occur; 293-349 repeats the order of 23-59 and 353-390 that of 63-100. 107-120 and 303-320 never seen.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 164,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "alphabetical",
+  "word_division": "partial"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The German glosses written between the lines over the code runs at the time are a decipherment, on every page checked (ours: bands through 28-49, 38, 42, 45 and 47 more fully; Daniel Bourdeau's leads review n09 of 6 Nov 2026: 31, 42, 45 at 2600 px, after the sweep's 38 and 47), so the content is not new. No printed key or edition found (leads review n09: nothing on DECODE, at Cryptiana or in Lasry's lists); no target, branch or PR for Lilienthal or R0000814 in this repository (GitHub API, 10 Nov 2026).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Daniel Bourdeau's Riksarkivet sweep found the volume and his leads review n09 (6 Nov 2026) vetted it as lead 2316 ('read': glossed group by group). Brice Dudout set the rules (protocol and key frozen before a single held-out measurement, thresholds fixed in advance). AI agents transcribed, built the key, measured and wrote up. No human palaeographer checked the transcription.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-11-10",
+  "last_date": "2026-11-10"
+ },
+ "solution": [
+  {
+   "date": "2026-11-10",
+   "kind": "transcription",
+   "what": "Images 42 (both pages) and 47 (left): 97 glossed runs (cipher groups with the gloss over them) read from the 3000 px IIIF images.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "crib",
+   "what": "Key of 158 codes learned from the glossed runs of images 42 and 47 only, without a conflict on 1116 aligned groups; frozen by SHA-256 with the amended protocol before the held-out page was looked at closely. (A first protocol, which took the code for a nomenclator and held out image 42, was amended before any measurement.)",
+   "result": "worked",
+   "technique": [
+    "crib testing"
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One measurement on image 45, left page (first 160 groups of lines 1-10, transcribed after the freeze, gloss read after the numbers): 0.887 of characters against 0.047 for the best of 200 shuffled keys (mean 0.024); margin 0.840; thresholds >= 0.85 and margin >= 0.30, fixed in advance.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "verification",
+   "what": "Gloss inventory: bands at 3000 px through the middle of every page 28-49 and 38 right in full: a gloss over every run seen (the Latin words of 38 are enciphered letter by letter and glossed); no bare passage found (agrees with leads review n09). The decode of image 45 shows the gloss sometimes summarises (cipher 'haten auch etliche', gloss 'und welche').",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Integration of PR #384: frozen/scripts/measure.py re-run on the frozen files gives the same output (0.887, best control 0.047, mean 0.024, margin 0.840); the SHA-256 files in frozen/ check out; decoding transcription.txt with key.tsv reproduces decryption.txt.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "recovered",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The key was learned from the contemporary interlinear decipherment (glosses) of images 42 and 47 and validated once on image 45. The content is the glosses' (existing); the key is the contribution.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "verification": [
+   "contemporary decipherment",
+   "statistical test"
+  ],
+  "validation": {
+   "date": "2026-11-10",
+   "verdict": "pass",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): amended protocol and key hashed before the held-out page was looked at closely; one measurement on image 45 left (160 groups, 168 decoded positions): 0.887 of characters vs best of 200 shuffled keys 0.047 (mean 0.024), margin 0.840. Threshold fixed in advance: >= 0.85 and margin >= 0.30. Later additions (89 st, 27 ff, 64 c, 54 tz, 348 z and rows from the table's order) are derived after the measurement and not tested."
+  },
+  "provenance": "mixed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "the German decipherment written between the lines over the code runs at the time; the key was learned from it",
+    "date": "1665"
+   },
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "note": "glossed runs of images 42 and 47 and lines 1-10 of image 45 left (transcription.txt, frozen/)",
+    "date": "2026-11-10"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "key rebuilt from the glosses (key.tsv, CC BY 4.0) and validated on a held-out page, 0.887 vs 0.047 (validation.txt); gloss inventory of pages 28-49 confirms the leads review",
+    "date": "2026-11-10"
+   },
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "key rebuilt from the contemporary glosses and validated on a held-out page; sent as a pull request",
+    "date": "2026-11-10",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/384",
+    "published": true
+   }
+  ],
+  "gaps": [
+   {
+    "item": "the post rows of key.tsv (89 st, 27 ff, 64 c, 54 tz, 348 z; from structure alone 379 st, 344 tz, 75/365 k, 378 sch, 68/358 ff): each rests on one or two words of image 45 or on the order of the table; the one held-out page is spent",
+    "blocker": "too-short"
+   },
+   {
+    "item": "codes 107-120 and 303-320: no occurrence in the runs read",
+    "blocker": "no-key-material"
+   },
+   {
+    "item": "a held-out test with the gloss out of view: every code run seen carries its gloss on the same leaf (declared bias)",
+    "blocker": "no-key-material"
+   }
+  ],
+  "texts": [
+   {
+    "doc": [
+     "r0000814-42-47"
+    ],
+    "label": "Images 42 and 47: the glossed runs the key was learned from",
+    "transcription": "frozen/PAIRES-LILIENTHAL.tsv",
+    "decryption": "frozen/PAIRES-LILIENTHAL.tsv",
+    "language": "de",
+    "state": "not prose",
+    "note": "Cipher groups and the gloss of the time side by side (one row per glossed word or run); the table the key was learned from.",
+    "summary": "The training pairs: 97 glossed runs of images 42 (both pages) and 47 (left), cipher groups aligned letter by letter under the gloss written at the time, e.g. \"von allen zollen sein mogen\" and \"commercien\"."
+   },
+   {
+    "doc": [
+     "r0000814-45"
+    ],
+    "label": "Image 45, left page, lines 1-10: the held-out cipher groups with the contemporary gloss",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "language": "de",
+    "state": "not prose",
+    "note": "A cipher passage from mid-sentence to mid-sentence, broken by two short clear insertions that are not transcribed: our decode with key.tsv beside the gloss written at the time. The gloss is the reading of the time, but it summarises in places.",
+    "summary": "Someone holds firmly to his instruction and secret propositions; some of the great boyars, Dolgoruka, Ilia Danielewitz and Almasi, talked it over together after yesterday's conference and let it be known that ...",
+    "reading_review": {
+     "grade": "B",
+     "by": "Brice Dudout (with Claude)",
+     "date": "2026-11-10",
+     "note": "decode read against the contemporary gloss as German phrases; agrees except where the gloss summarises (haten auch etliche / und welche; feste auff / hatte auf), gehanen/geheimen and spellings; a fragment of a letter, the clear text between the runs not transcribed; one reader"
+    },
+    "translation": "translation.md"
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "The letters were deciphered at the time (interlinear glosses on every page checked), so we claim no reading and no solution; what is new is the key as a reusable table, validated on a held-out page. Sibling target ebers1664 (lead 2315, PR #383) is the code of the commissary Adolf Ebers, a different code."
+ }
+}

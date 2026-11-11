@@ -1,0 +1,22 @@
+# Validation of the key, lead 2315 (ebers1664): ONE measurement on a held-out part, protocol fixed before.
+# Protocol (French working file frozen/PREREG.md, SHA-256 0d67cc26...07d3c), written 10 Nov 2026 after reading a few pairs on
+# image 106 and before any transcription of the held-out part:
+# - Training: R0003225 images 106 and 108 only (53 glossed words, frozen/PAIRES-EBERS.tsv).
+# - Key K_E: 31 codes, frozen in frozen/KEY-EBERS.tsv (SHA-256 15a63f9b...1c18) before the held-out part was transcribed.
+# - Held out (H): image 138, the first 160 cipher groups in reading order, clear text excluded; cipher groups transcribed and
+#   frozen first (frozen/H_E-CHIFFRE.txt, 53d9f22a...4edf), then the gloss above them read and frozen
+#   (frozen/G_E-GLOSE.txt, 341b8d3f...0d80), with no decoding by script in between. Declared bias: the gloss is on the same
+#   image and was visible while the numbers were transcribed.
+# - Normalisation: lower case, j->i, v->u, w->u, y->i, sharp s -> ss, umlauts folded; groups outside the key = "?" (wrong).
+# - Score = Smith-Waterman aligned matches (+1/-1/-1) between the decode of H and the normalised gloss, divided by the number
+#   of decoded positions of H (letters produced + "?").
+# - Controls: 200 permutations of the K_E values among the codes present in H (seed 1664). Margin = score - best control.
+# - Thresholds fixed in advance: VALIDATED if score >= 0.85 and margin >= 0.30.
+# Result as recorded (frozen/MESURE-E.txt, script frozen/scripts/measure.py):
+H groups 160, decoded positions 165, groups outside the key 9 (codes 53, 55), gloss 168 letters
+score (characters) 0.909
+controls n=200: mean 0.021, best 0.047
+margin 0.862
+DECISION: VALIDATED
+# After the measurement (H spent): 53 = s and 55 = t added from the glosses of images 101, 103 and 138 (key.tsv rows "post");
+# they are outside this test. 46 stays unresolved. No other measurement was made.

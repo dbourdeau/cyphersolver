@@ -1,0 +1,27 @@
+# Validation of the key, lead 2316 (lilienthal1665): ONE measurement on a held-out part, protocol fixed before.
+# Protocol: the first plan (frozen/PREREG.md, in French, SHA-256 0d67cc26...07d3c) held out image 42; it was amended, before any
+# measurement, by frozen/PREREG-L2.md (SHA-256 a3199fb6...d9a3), written before image 45 was looked at closely (not even as a
+# thumbnail). The amendment was needed because the first plan wrongly took the system for a nomenclator; image 42 had been seen
+# as a thumbnail and in one crop of its first five lines, so it was moved to training.
+# - Training: R0000814 glossed pages 28-49 except 31 and 44-46; the key was in fact learned from images 42 (left and right) and
+#   47 (left) only: 97 glossed runs, 1116 aligned groups, no conflict (frozen/PAIRES-LILIENTHAL.tsv, frozen/scripts/lkey.py).
+# - Key K_L: 158 codes, frozen in frozen/KEY-LILIENTHAL.tsv (SHA-256 81f56ea7...dbca) before image 45 was looked at closely.
+# - Held out (H): image 45, left page, the first 160 cipher groups in reading order (lines 1-10 are all glossed), clear text
+#   excluded; the numbers transcribed and frozen first (frozen/H_L-CHIFFRE.txt, e769ed16...314b), then the gloss above them
+#   read and frozen (frozen/G_L-GLOSE.txt, 27f32f15...68dd), no decoding by script in between. Declared bias: the gloss is on the
+#   same image and was visible while the numbers were transcribed.
+# - Normalisation: lower case, j->i, v->u, w->u, y->i, sharp s -> ss, umlauts folded; groups outside the key = "?" (wrong).
+# - Score = Smith-Waterman aligned matches (+1/-1/-1) between the decode of H and the normalised gloss, divided by the number
+#   of decoded positions of H (letters produced + "?").
+# - Controls: 200 permutations of the K_L values among the codes present in H (seed 1666). Margin = score - best control.
+# - Thresholds fixed in advance: VALIDATED if score >= 0.85 and margin >= 0.30.
+# Limit stated in advance: the gloss is selective and in places summarises, which lowers the score.
+# Result as recorded (frozen/MESURE-L.txt, script frozen/scripts/measure.py, run "measure.py <folder> L"):
+H groups 160, decoded positions 168, groups outside the key 5 (codes 89, 27, 64, 54, 348), gloss 201 letters
+score (characters) 0.887
+controls n=200: mean 0.024, best 0.047
+margin 0.840
+DECISION: VALIDATED
+# After the measurement (H spent): rows "post" in key.tsv, from the order of the table and from sense: 89 st (feste), 27 ff (auff),
+# 64 c (instruction), 54 tz (Danielewitz), 348 z (zusammen), and 379 st, 344 tz, 75/365 k, 378 sch, 68/358 ff from structure
+# alone. They are outside this test. No other measurement was made.
