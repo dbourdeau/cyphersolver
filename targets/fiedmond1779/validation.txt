@@ -1,0 +1,67 @@
+fiedmond1779 - validation of key K-Guy1780c (contributor's pre-registered held-out test, not docs/_validate.py)
+
+Everything is declared, including the earlier failures of the previous key K-Guy1780b. French originals and hashes in frozen/.
+
+1. Earlier key K-Guy1780b (29 Oct 2026, 401 values aligned on the two pairs of the time: C14 51 ff. 102-111 cipher with its
+   clear copy ff. 98-101, and C14 52 ff. 15-16 cipher of 29 Apr 1780 with its "Déchiffrement" ff. 17-19v).
+   - V1 (last 47 lines of f102 held out, against the clear copy): characters 0.758, words 0.647; best of 200 permuted keys
+     0.105 / 0.145. Thresholds 0.85 / 0.75 -> FAILED. Incident declared then: the groups of V1 had been displayed by a `tail`
+     before the freeze (no alignment, no inference).
+   - V2 (end of the 1780 pair, never seen): characters 0.805, words 0.707; controls 0.291 / 0.166 -> FAILED (same thresholds).
+   - C09 of 29 Oct (paraphrase of f16 v023 against La Serre's memoir of 19 Jul 1779): counted cover 0.024 < 0.50 -> NULL
+     measurement (the passage is not a version of the memoir).
+   - Applicability on f9 + f16 (outside the held-out portion): rank 1/201 against permuted keys, top-30 groups 100% covered:
+     the code is the right one; the losses come from groups absent from the key and syllable cuts (le/les, il/ils, finals not
+     enciphered), not from a wrong code.
+
+2. Key K-Guy1780c (frozen/K-Guy1780c.tsv, SHA-256 ae615f456bdca66965de8e07cf206d64628e93c60c9d94537185c2640dedd57c).
+   Proposed by Claude Fable 5.2 (Anthropic) in one API run ("guyane1779-fiedmond-f09-f16", 11 Nov 2026 13:19 CET): K-Guy1780b
+   unchanged (225 sure values) plus corrections and restorations read from the context of f9/f16 (454 entries). Frozen at
+   14:07 CET. The model was sent copies of f9 and f16 from which the held-out portion had been physically removed
+   ("# [BLOC RETIRÉ pour l'envoi]"); this was checked by grep of the 13 held-out group sequences and line ids in the package
+   sent, the model's transcript and all its outputs, and in our whole folder: the portion had never been decoded or sent.
+   Incident declared: during that check (about 21:05 CET) a `diff` between f09.txt and the copy sent DISPLAYED the cipher groups
+   of the 13 held-out lines. They were not decoded or aligned and nothing was inferred; the key had been frozen since 14:07.
+
+3. Protocol: frozen/AVENANT-C09.md (SHA-256 4307c904b9ff65c6b03d608161b327115f2810bcf9cde334be498578544aa442), hashed with the
+   key, the scripts and the calibration at 21:18:04 CET (frozen/SHA256-AVENANT-C09.txt) BEFORE the measurement (21:18:10).
+   - Held-out portion, fixed on 28 Oct 2026 (before any key existed): f9 v014g l11-l18 (the postscript, 64 groups) + f16
+     v025d l27-l31 (last 5 cipher lines, 54 groups) = 118 groups, 335 digits.
+   - No clear of the time exists for this portion, so the usual rule (characters >= 0.85 and >= best control + 0.30) cannot be
+     applied. Measure S (strict lexical reading, frozen/common.py): decode, cut at clear passages and keyless groups, segment
+     into words of the lexicon (this repo's French lexicon plus the words of the training clears) with maximal cover; S = share
+     of GROUPS whose letters all fall in a word spanning >= 2 groups or of >= 5 letters; keyless groups count in the
+     denominator.
+   - Controls (seed 20261111): 200 permuted keys (values of K-c redistributed over its groups) + 200 keys shuffled within each
+     class of value length (same number of letters per group: harder controls).
+   - Calibration BEFORE the measure, on training only (frozen/calibrate_result.txt: 54 windows of >= 118 groups of f9/f16
+     outside the portion; K-Guy1780b, never fitted on f9/f16, as the model of a good key on a new text): S of K-b min 0.602,
+     q10 0.656, median 0.718; median of the best control 0.639; K-b beats all its controls in 52 of 54 windows. A fixed margin
+     of +0.30 was reached in 0 of 54 windows (+0.15 in 1 of 54), so the rule is by rank. Power: K-b passes in 48 of 54
+     windows; K-c (in sample, optimistic) 53 of 54.
+   - Decision rule (single, decisive): PASS iff S(K-c) > max of the 400 controls (rank 1/401) AND S(K-c) >= theta = 0.656.
+     One run only (measure.py refuses to run if its output exists).
+
+4. Result (frozen/measure_result.txt, SHA-256 987e8e6f6119ec30ff75c1c5d7b06ed20d58ac133660cac2da987a9b7b0723a0):
+   S(K-c) = 0.703 (83/118 groups); permuted keys max 0.576 (mean 0.446); length-shuffled keys max 0.644 (mean 0.511); rank 1/401;
+   S >= 0.656 -> PASS. Not decisive, reported: language-model score -0.898 vs best controls -0.972 / -1.178 (rank 1/401);
+   K-Guy1780b on the same portion S = 0.653 (just under theta).
+
+5. Limits, declared:
+   - The portion is small: 118 groups. Brice Dudout's rule of 10 Nov 2026 asks for at least 300 cipher characters or 150
+     groups; only the "300 characters" branch is met (335 digits, 297 decoded letters), not the 150 groups. It was the only
+     untouched 1779 portion left, fixed on 28 Oct, and it is the portion named in the action he approved.
+   - The margin over the best control is only +0.059.
+   - The reference is a lexical cover, not a clear of the time: the test says the key reads a new text of the same code better
+     than 400 controls and at least as well as a good out-of-sample key; it does not check each restored value.
+   - Reading of the portion afterwards (reading.md): the restored values 134 Monseigneur, 149 isle, 453 pli, 717 vu, 26 g and
+     138 quelques give the right sense on this new text; one prob value, 398 = "ils", is contradicted (reads "ap").
+   - The portion is now used up.
+   For these reasons profile.json records the verdict as "weak", not "pass".
+
+6. Files in frozen/ (French): AVENANT-C09.md, SHA256-AVENANT-C09.txt, K-Guy1780c.tsv, common.py, measure.py, calibrate.py,
+   calibrate2.py and their outputs. Two files have storage locations removed for publication and so no longer match their
+   hashes in SHA256-AVENANT-C09.txt: AVENANT-C09.md (three mentions of our working folders, §1-2) and common.py (two paths to
+   this repo's French lexicon and to a French text corpus, now "REDACTED-storage-location"). All other files match.
+   K-Guy1780c.tsv, measure.py, calibrate.py, calibrate_result.txt, calibrate2.py and calibrate2_result.txt are byte for byte
+   the hashed files.
