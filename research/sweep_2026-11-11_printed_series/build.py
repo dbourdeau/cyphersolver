@@ -27,8 +27,8 @@ S_W5 = {"query": "Lisola Königsberg 4 September 1657 Bericht Leopold Wehlau Gon
 def lisola(year, date, place, no, page, karton, ais_id, krange, extent, quote, subject, searches, imp, vet=True, extra_verify=""):
     row = {
         "year": year, "date": date,
-        "title": "Franz Paul von Lisola → Emperor %s, %s: report with cipher the editor found not deciphered (Pribram no. %s)" % (
-            "Ferdinand III" if (year, date) < (1657, "z") and year == 1656 else "Leopold I (King of Hungary and Bohemia)", place, no),
+        "title": "Franz Paul von Lisola → %s, %s: report with cipher the editor found not deciphered (Pribram no. %s)" % (
+            {1656: "Ferdinand III", 1657: "Leopold, King of Hungary and Bohemia"}.get(year, "Leopold I"), place, no),
         "correspondents": "Franz Paul von Lisola (imperial envoy) → the Emperor / court of Vienna",
         "place": place, "language": "Latin", "region": "Central Europe", "period": "1651-1700",
         "shelfmark": "Vienna, ÖStA HHStA, Staatenabteilungen, Polen I (Polonica), Karton %s (%s): Lisola's report of %s; printed in part by Pribram, Archiv für österreichische Geschichte 70 (1887), no. %s" % (karton, krange, date, no),
@@ -151,7 +151,7 @@ rows += [
          "Guillaume Millet de Jeurs (French envoy in Berlin) → Hugues de Lionne", "Berlin", "French", "France",
          "Paris, Archives du ministère des Affaires étrangères, Correspondance politique, Brandebourg (Prusse), 1667: Millet's despatches of 27 July and 24 Aug 1667; volume not given by the edition (Urkunden und Actenstücke II, 1865, pp. 460, 468)",
          "Two despatches; 'grösstentheils undechiffrirt' and 'zum grossen Theil nicht dechiffrirt'",
-         "Editor (Simson, UA II): 27 July 1667 \"Grösstentheils undechiffrirt\"; 24 Aug 1667 \"Zum grossen Theil nicht dechiffrirt. Vgl. Mignet II p. 285\". The printed text is the clear part only. Lionne's office normally deciphered incoming despatches, so a decipherment may lie elsewhere in the volume.",
+         "Editor (Simson, UA II): 27 July 1667 \"Grösstentheils undechiffrirt\"; 24 Aug 1667 \"Zum grossen Theil nicht dechiffrirt. Vgl. Mignet II p. 285\". The printed text is the clear part only. Lionne's office normally deciphered incoming despatches, so a decipherment may lie elsewhere in the volume. DECODE has two Millet letters of 1665 from Poland (R2679, R2681, Mélanges de Colbert), a different mission.",
          "French soundings of the Great Elector during the War of Devolution (Rhine alliance, the offer of Guelders, the Polish crown).", 3, 2,
          "Check the AAE volume (Correspondance politique Brandebourg vol. for 1667; many CP volumes are online at the AAE reading-room site) for a marginal decipherment; Mignet, Négociations relatives à la succession d'Espagne II p. 285 prints an extract.",
          [{"label": "UA II (archive.org), search 'dechiffrirt'", "href": UA % "urkundenundacten02berluoft" + "?q=dechiffrirt"}],
