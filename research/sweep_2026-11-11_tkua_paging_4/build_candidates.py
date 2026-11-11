@@ -45,7 +45,7 @@ rows.append({
     "region": "Scandinavia",
     "period": "1611-1650",
     "shelfmark": "Rigsarkivet (Copenhagen), Tyske Kancelli, Udenrigske Afdeling (TKUA), Speciel del, Sverige: Resident Peder Juels og Mogens Høegs gesandtskabsarkiver, Ekstraktprotokol over relationer, indlæg og andre udgående skrivelser 1647-49 (film label C.195)",
-    "folio_note": "Arkivalieronline epid 19852819, unit 261585 (94 images). Cipher seen on image 5 (book pp. 4-5: about 4 lines on p. 4 and 15 lines on p. 5), image 6 (p. 6: 4 lines), image 7 and image 61 (p. 115: 10 lines). Images 1-60 were seen one by one at 400 px, images 5, 6 and 61 as full-size crops; 62-94 only 1 image in 4.",
+    "folio_note": "Arkivalieronline epid 19852819, unit 261585 (94 images). Cipher seen on image 5 (book pp. 4-5: about 4 lines on p. 4 and 15 lines on p. 5), image 6 (p. 6: 4 lines), image 7 and image 61 (p. 115: 10 lines). All 94 images were seen one by one at 400 px, images 5, 6 and 61 as full-size crops; a short passage elsewhere can be missed at that size.",
     "cls": "A",
     "status": "Viewed 11 Nov 2026. A bound register ('Extract offver alle afgangne Missiver Breffve de anno 1647') in which the resident's secretary summarised each outgoing letter in Danish. Where the letter had a secret passage the register gives it in cipher, in dotted runs of numbers with nothing written over or beside them. Three number sets occur: to the chancellor, 20 Nov 1647, numbers 8-64 with 123, 124, 129, 158 and a few signs (p. 5); to Hannibal Sehested, 20 Nov 1647, numbers 3-32 with 86, 208 (p. 6); to Peder Vibe, 2 Sep 1648, numbers 1-32 with 212, 277, 339, 351, 401, 412, 426, 442, 446 (p. 115). Juel's original letters to the chancellor of 1648-49 in the same 8-64 cipher are deciphered between the lines (TKUA Sverige, Relationer 1645-60, unit 261575, images 115-135; image 117, 4 March 1648, seen), so that set should read by key lookup; no deciphered sibling was seen for the other two sets. Fryxell (1836) printed a Swedish abstract of this register from a copy in the Royal Library and says the letters themselves could not be found; he gives nothing for the cipher passages.",
     "why": "The resident's secret remarks on Queen Christina's court and the Swedish council in 1647-48, for letters whose originals are in part lost.",
@@ -53,7 +53,7 @@ rows.append({
     "solvability": 4,
     "difficulty": 2,
     "score_note": "Scored from the scan during the fourth TKUA paging pass of 11 Nov 2026 (research/sweep_2026-11-11_tkua_paging_4/); three pages at full size",
-    "verify": "Build the 8-64 table from the glossed originals of 1648-49 (unit 261575, images 115-135) and read p. 5; test the same table shifted on the 3-32 and 1-32 sets (they may be the same alphabet with another start). Page every image of 62-94 for more cipher, and check whether the letters of 20 Nov 1647 and 2 Sep 1648 survive among the originals.",
+    "verify": "Build the 8-64 table from the glossed originals of 1648-49 (unit 261575, images 115-135) and read p. 5; test the same table shifted on the 3-32 and 1-32 sets (they may be the same alphabet with another start). Check whether the letters of 20 Nov 1647 and 2 Sep 1648 survive among the originals.",
     "links": [
         {"label": "Arkivalieronline viewer, image 5 (pp. 4-5)", "href": V2 + "48964105"},
         {"label": "Image 6 (p. 6, to Hannibal Sehested)", "href": V2 + "48964106"},
@@ -70,8 +70,8 @@ rows.append({
         "by": "claude cloud sweep 11 Nov tkua_paging_4",
         "seen": {
             "kind": "scan",
-            "where": "Arkivalieronline epid 19852819, unit 261585: images 1-60 each at 400 px; images 5, 6 and 61 as full-size crops (api.rigsarkivet.dk/ao/v1/images/48964105, 48964106, 48964161)",
-            "extent": "About 33 lines of cipher on the four pages opened (pp. 4, 5, 6, 115), each line some 15 number groups; more on image 7; images 62-94 sampled only",
+            "where": "Arkivalieronline epid 19852819, unit 261585: images 1-94 each at 400 px; images 5, 6 and 61 as full-size crops (api.rigsarkivet.dk/ao/v1/images/48964105, 48964106, 48964161)",
+            "extent": "About 33 lines of cipher on the four pages opened (pp. 4, 5, 6, 115), each line some 15 number groups; more on image 7",
             "cipher": "Black-and-white microfilm of a narrow bound register. Danish summaries in a secretary hand; inside them dotted runs of one- and two-digit numbers with occasional three-digit numbers and a few signs. Nothing is written over the numbers and the wide outer column is empty beside them."
         },
         "prior_art": {
