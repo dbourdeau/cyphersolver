@@ -1993,6 +1993,11 @@ PAGES = [
          blurb='Two short cipher passages in a mostly clear Spanish letter, BnF espagnol 336 no. 99, which Tomokiyo lists as undeciphered. The key of this homophonic cipher was recovered from the ciphertext alone after joined signs were separated in transcription. Every symbol has a proposed value, six of them tentative: a report that the world would end or the king die around September, after a comet.',
          quote='&ldquo;dizen que el mundo se acabar&aacute; o morir&aacute; el rey por setiembre&rdquo;',
          rights='Manuscript: Biblioth&egrave;que nationale de France, via Wikimedia Commons'),
+    dict(slug='bongars1597', footer_date='November 2026', label='Bongars at Strasbourg 1597', year='1597', y=1597.07, place='Strasbourg &rarr; unknown', st='partial', stt='external key matched, partial',
+         title='Jacques Bongars at Strasbourg, 26 January 1597: the names in cipher',
+         blurb='Two letters of Henri IV&rsquo;s agent in Germany, copied into his letter-book in Bern, are in clear French with nine names in cipher. Brice Dudout transcribed them and proposed names from the context. A cipher table in Bongars&rsquo;s papers in Paris, BnF fr. 7131 f. 548, was then found to fit: it gives four of the nine groups, among them Brunswick, spelled out, and the King of Spain. Two names rest on context only and three are open, because the catalogue image is too small to tell the marks apart.',
+         quote='&ldquo;C&rsquo;est [Brunswick] qui l&rsquo;a fort honor&eacute;&rdquo;',
+         rights='Burgerbibliothek Bern, Cod. B 149 (A) 451&ndash;452 (public domain); Biblioth&egrave;que nationale de France, fr. 7131 (Gallica)'),
     dict(slug='sp106r927', label='SP 106/10 pigpen letter', year='17th c.', y=1650, place='Nancy &rarr; &ldquo;Monsieur&rdquo;', st='partial', stt='read in part',
          title='A French letter in a homophonic pigpen cipher, SP 106/10',
          blurb='TNA SP 106/10 ff. 241&ndash;243 (DECODE R927), catalogued as an undeciphered letter in the masonic alphabet. The pencilled pigpen key on its flap does not fit; the cipher is homophonic, and its key was recovered from the ciphertext alone after a hand transcription of the last page. With all three pages transcribed, the letter runs f. 243 to f. 241, f. 242 is a second copy of f. 243, and after a sign-by-sign re-reading 95.6% of its symbols read as sense, the rest under blots or name signs: a client at Nancy writing in December to a patron, about a gentleman&rsquo;s marriage and an envoy to congratulate His Majesty on his recovery.',
@@ -3350,6 +3355,7 @@ IMAGES['toledo1479'] = None
 IMAGES['agad131'] = None
 IMAGES['taulet1866'] = None
 IMAGES['sega1591b'] = None
+IMAGES['bongars1597'] = ('bongars1597_lead.jpg', 'f. 360v: the second letter opens; the third line begins with the group that spells Brunswick', 'Burgerbibliothek Bern, Cod. B 149 (A) 452, f. 360v, via the Burgerbibliothek online catalogue (public domain)')
 IMAGES['ebers1664'] = ('ebers1664_lead.jpg', 'Image 138: code runs with the German gloss written above them', 'Riksarkivet, Stockholm, SE/RA/2113/2113.1/3/b/602, bildid R0003225_00138, via the Riksarkivet IIIF service')
 IMAGES['lilienthal1665'] = ('lilienthal1665_lead.jpg', 'Image 45, left page, lines 1&ndash;12: code with the gloss between the lines', 'Riksarkivet, Stockholm, SE/RA/2113/2113.1/1/36/82, bildid R0000814_00045, via the Riksarkivet IIIF service')
 IMAGES['lee1813'] = ('lee1813_lead.jpg', 'Lee to Monroe, 6 February 1813, head of page 2: numerals with the clerk&rsquo;s pencilled key letters and words', 'US National Archives, RG 59, Despatches from US Consuls in Bordeaux, microfilm T164 roll 3, frame 0109 (NAID 211586337), via the National Archives Catalog')
