@@ -134,6 +134,21 @@
    "kind": "reading",
    "what": "pp. 1-5 read by sense: 431 words, 378 certain, 27 probable, 21 restored, 5 unresolved nomenclator codes = 94.0% (98.8% with restorations).",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Integration of PR #403: frozen/scripts/mesure.py re-run on the frozen files with lang/lexicons/it.json.gz decompressed (SHA-256 f4d2f270..., as listed in FREEZE.sha256) gives the same output byte for byte (COV 0.817; 200 shuffled keys max 0.487, mean 0.251; 200 group shuffles max 0.600, mean 0.415); calib.py and decompte.py also reproduce their outputs (51 windows, minima 0.783 / 0.256 / 0.098; 44 of 51 rejected by the 0.85 / +0.30 rule); FREEZE.sha256 and POST-MESURE.sha256 check out; key.tsv carries the frozen proposal unchanged plus the marked additions; decoding transcription.txt (1,412 groups, same as frozen/transcr) reproduces decryption.txt line for line; reading.md recounted: 378 certain, 27 probable, 21 restored, 5 unresolved of 431. Not verifiable from the repository: that page 5 was withheld from the model run and that the hashes predate the decoding (one commit; the contributor's statement).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "what": "Retry at integration, on the texts only (the PARES images answered HTTP 429 to the integrating session): each of the 21 restored words checked against the frozen transcription and key. The 19 of pp. 1-4 are those of frozen/EMENDATIONS.tsv, hashed before page 5 was decoded; 3 of them take the transcription's own second reading (1.17 22/27, 3.20 243/23, 4.19 68/67), 1 supplies an omitted group, 15 change one digit (74 for 34 three times, 24 for 34 twice); on p. 5, 47 lies outside the key and 26 is read as 76. None contradicts a certain letter; none can be confirmed without the images, so all 21 stay restored.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -147,7 +162,7 @@
   ],
   "fraction_read": 0.94,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Daniel's rule (certain + probable; restored words not counted), counted on reading.md by frozen/scripts/decompte.py: 431 words, 378 certain, 27 probable, 21 restored, 5 unresolved = 405/431 = 94.0% (426/431 = 98.8% with restorations).",
+  "fraction_read_source": "reading.md, words (each nomenclator group one word): 378 certain + 27 probable = 405 of 431 = 94.0%; the 21 restored words and the 5 unresolved codes are not counted (426/431 = 98.8% with the restored words). Recounted at integration. 21 of the 27 probable words are nomenclator values given by the sense only; with those also left out, as the README formula for read_share would have every guessed word, the share is 384/431 = 89.1%. Under the 95% bar on either count.",
   "verification": [
    "statistical test",
    "historical consistency"
@@ -156,7 +171,7 @@
    "date": "2026-11-11",
    "verdict": "pass",
    "file": "validation.txt",
-   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): PREREG SHA-256 ce607b24705b4ed2b6106e5a77395f3832429bdcae8c2eae902a42a8f9c2691d; single measurement on p. 5: lexical cover 0.817 vs 0.487 (200 shuffled keys) and 0.600 (200 group shuffles); thresholds calibrated on 51 in-sample windows of 99 groups before the measure. Reservations: small held-out part (99 groups); the reference is a lexical cover, not a clear of the time; nomenclator values not tested."
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): PREREG SHA-256 ce607b24705b4ed2b6106e5a77395f3832429bdcae8c2eae902a42a8f9c2691d; single measurement on p. 5: lexical cover 0.817 vs 0.487 (200 shuffled keys) and 0.600 (200 group shuffles); thresholds calibrated on 51 in-sample windows of 99 groups before the measure. Reservations: small held-out part (99 groups); the reference is a lexical cover, not a clear of the time; nomenclator values not tested. Re-run at integration (PR #403) with identical output. By the contributor's usual rule (>= 0.85 and >= best control + 0.30) page 5 would not pass (0.817; +0.217 over the best group shuffle); the rule applied was calibrated for 99 groups on pp. 1-4 before the measure."
   },
   "provenance": "contributed",
   "credits": [
@@ -164,7 +179,8 @@
     "who": "dudout",
     "role": "solution",
     "note": "transcription; key proposed by Claude Fable 5.2 (Anthropic) on pp. 1-4 and validated by us once on held-out p. 5 (0.817 vs 0.487 / 0.600, thresholds fixed in advance); letter read in part (94.0%, 98.8% with restorations) and translated",
-    "date": "2026-11-11"
+    "date": "2026-11-11",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/403"
    },
    {
     "who": "bourdeau",
@@ -175,9 +191,9 @@
   ],
   "gaps": [
    {
-    "item": "21 restored words (19 one-digit misreadings or an omitted group on pp. 1-4, 47 = z and 26 for 76 on p. 5)",
-    "blocker": "not-attempted",
-    "detail": "a blind re-reading of those groups on the PARES images would confirm or reject each correction"
+    "item": "21 restored words (19 on pp. 1-4: 15 one-digit changes, 3 second readings of the transcription, 1 omitted group; 47 = z and 26 for 76 on p. 5)",
+    "blocker": "open-codes",
+    "detail": "not nomenclator codes but doubtful figures of transcription v1; retried on the texts at integration (11 Nov 2026), none contradicted, none confirmed; a blind re-reading on the PARES images would settle each (PARES answered HTTP 429 to the integrating session, and no image is in the repository); still workable"
    },
    {
     "item": "nomenclator: 5 codes open (103, 110, 115, 116, 136) and 21 values given by the sense only",
@@ -199,13 +215,18 @@
     "summary": "The Pope has refused Don Antonio Ronquillo passage for 500 horse sent by the viceroy to help the Grand Duke of Tuscany, but would grant it towards Milan; Ridolfi advises accepting, since from Forlì the cavalry can turn into Tuscany if the French attack. News of the French fleet near La Spezia; a landing towards the Val di Taro and the Parmesan is more likely; Souvré's talks with 'that Duke'; Vendôme and the Huguenots' plan to rise; the Almirante would pay Vendôme 12,000 ducats; the Bouillon negotiation is stuck and Ridolfi fears Bouillon will come to terms with the French, Mazarin always doubling his offers.",
     "reading_review": {
      "grade": "B",
-     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "by": "Brice Dudout's AI agents (pp. 1-4 the key proposer, p. 5 a Claude Opus 5.5 agent); re-read at integration by Claude for the project",
      "date": "2026-11-11",
-     "note": "Read as Italian sentences on 11 Nov 2026 by AI agents only (pp. 1-4 by the key proposer, Claude Fable 5.2; p. 5 by an Opus agent); the reading of pp. 1-4 was not redone word by word by a second reader, and no human read it. The letter construes as sentences throughout and p. 5 continues p. 4, but 21 words are restored and 26 nomenclator groups rest on the sense, so grade B."
+     "note": "Contributor: read as Italian sentences by AI agents only; the reading of pp. 1-4 was not redone word by word by a second reader, and no human read it. Integration (PR #403): reading.md read clause by clause against decryption.txt and translation.md; every clause construes and the translation follows it, p. 5 continues p. 4; 21 words are restored and 26 nomenclator groups rest on the sense or are open, so grade B. Not checked against the images."
     }
    }
   ],
   "key_file": "key.tsv",
-  "notes": "New decipherment: no decipherment of the time and no edition known. The key is reusable (key.tsv, CC BY 4.0). Model credit: the key was proposed by Claude Fable 5.2 (Anthropic) in one API run; the held-out validation, the reading of p. 5 and the write-up are ours. No image is included."
+  "notes": "New decipherment: no decipherment of the time and no edition known. The key is reusable (key.tsv, CC BY 4.0). Model credit: the key was proposed by Claude Fable 5.2 (Anthropic) in one API run; the held-out validation, the reading of p. 5 and the write-up are ours. No image is included.",
+  "codes_open": {
+   "open": 5,
+   "total": 12,
+   "tokens_open": 5
+  }
  }
 }

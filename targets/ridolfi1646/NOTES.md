@@ -1,6 +1,6 @@
 # ridolfi1646: Ludovico Ridolfi to the duque de Arcos, viceroy of Naples, Rome, 8 May 1646 (catalogue 748, AHNOB OSUNA,C.3456,D.107)
 
-Status: read in part (Brice Dudout, 11 Nov 2026; 405 of 431 words certain or probable = 94.0%, 98.8% with 21 restored words; 5 nomenclator codes open; key validated on held-out page 5 by our pre-registered test, COV 0.817 vs 0.487 / 0.600). Next step: a blind re-reading on the images of the 21 restored groups, which would bring the letter over the 95% bar.
+Status: read in part (Brice Dudout, 11 Nov 2026; 405 of 431 words certain or probable = 94.0%, 98.8% with 21 restored words; 5 nomenclator codes open; key validated on held-out page 5 by our pre-registered test, COV 0.817 vs 0.487 / 0.600). Open: a blind re-reading on the images of the 21 restored groups, which on this count would bring the letter over the 95% bar.
 
 Contributed by Brice Dudout (Europe chiffrée). Key proposed by Claude Fable 5.2 (Anthropic) from pages 1-4; held-out
 validation, page 5 reading and write-up by Claude Opus 5.5 agents. Catalogue entry **748** (PARES sweep, "Not in the repo");
@@ -59,9 +59,43 @@ thousand ducats once ordered by the King. The Bouillon negotiation is stuck; Rid
 come to terms with the French, Mazarin always doubling his offers. (May 1646 is the month of the French expedition against
 the Tuscan presidios.)
 
+## Integration check (11 Nov 2026)
+
+On integration (PR #403) the project re-ran the contributor's frozen scripts and recounted the texts.
+
+- `frozen/scripts/mesure.py`, run on the frozen files with `lang/lexicons/it.json.gz` decompressed as the lexicon (SHA-256
+  f4d2f270..., the value in `FREEZE.sha256`), gives the same output as `frozen/scripts/mesure.out`, byte for byte: COV 0.817;
+  200 shuffled keys max 0.487, mean 0.251; 200 group shuffles max 0.600, mean 0.415. The script checks every hash of
+  `FREEZE.sha256` first; `POST-MESURE.sha256` also checks out.
+- `calib.py` reproduces `calib.out` (51 windows of 99 groups; minima 0.783, 0.256, 0.098; the 0.85 / +0.30 rule rejects 44
+  of 51), and `decompte.py` reproduces `decompte.out`.
+- `key.tsv` carries the frozen proposal unchanged, plus the rows marked as added (47 = z, the nomenclator values, the dot).
+  Decoding `transcription.txt` (1,412 groups, identical to `frozen/transcr/`) with it reproduces `decryption.txt` line for line.
+- `reading.md` recounted: 378 certain, 27 probable, 21 restored, 5 unresolved of 431 words, so 405/431 = 94.0%. The count
+  takes words as its unit and leaves out restored and unresolved words, as the README read bar does. It counts as read
+  the 21 nomenclator values given by the sense alone; with those left out too (the README formula leaves out every
+  guessed word) the share is 384/431 = 89.1%, and the image check of the restored words would then bring it to 94.0%, not
+  over the bar. The letter is under 95% on either count: read in part.
+- By the contributor's usual rule (>= 0.85 and >= best control + 0.30) page 5 would not pass: 0.817, and +0.217 over the best
+  group shuffle. The rule applied was calibrated for 99 groups on pages 1-4 and hashed before the measure, as declared
+  above. The reading itself is the stronger evidence: five pages of connected Italian, and page 5 closing the sentence of page 4.
+- Not verifiable from the repository: that page 5 was withheld from the model run, and that the hashes predate the
+  decoding of page 5 (the folder arrived in one commit). Both are the contributor's statement.
+- Reading read clause by clause against `decryption.txt` and `translation.md`: every clause construes and the translation
+  follows it. Not checked against the images: PARES answered HTTP 429 to the integrating session and no image is in the folder.
+- The nomenclator range "100-243" above is wider than what the letter shows: the twelve codes that occur lie between 100 and
+  136; 243 is only the first reading of a doubtful group (3.20, 243/23) that the reading takes as 23.
+- DECODE: `research/archive_sweep_2026-10/known.py` (harvested DECODE dump and repository) on "C.3456" and "Ridolfi" finds only
+  catalogue entry 748 for this letter; no DECODE record. The live database was not queried.
+- Retry on the texts (the escalation step, as far as it goes without images): the 19 restored words of pages 1-4 are those of
+  `frozen/EMENDATIONS.tsv`, hashed before page 5 was decoded. Three of them take the second reading the transcription itself
+  carries (1.17 22/27, 3.20 243/23, 4.19 68/67; `reading.md` lists the last as a 7/8 confusion), one supplies an omitted
+  group, fifteen change one digit (74 for 34 three times, 24 for 34 twice). On page 5, 47 lies outside the key and 26 is
+  read as 76. None contradicts a certain letter and none can be confirmed without the images, so all 21 stay restored.
+
 ## Remaining gaps
 
-- 21 restored words, mostly one-digit misreadings of transcription v1 - blocker: not-attempted; a blind re-reading of those groups on the PARES images would turn them into certain or probable readings (or not)
+- 21 restored words, mostly one-digit misreadings of transcription v1 - blocker: open-codes; not nomenclator codes but doubtful figures of the transcription, retried on the texts on 11 Nov 2026 (none contradicted, none confirmed); a blind re-reading of those groups on the PARES images would settle each, and stays workable (PARES answered HTTP 429 to the integrating session; no image is in the repository)
 - 5 nomenclator codes (103, 110, 115, 116, 136) and the 21 nomenclator values given by the sense - blocker: open-codes; each code occurs once or a few times, and no nomenclator of Ridolfi is known; a second letter of his in this cipher (AGS Estado, Rome / Genoa 1645-46; ASFi Mediceo del Principato) would test them
 
 ## Escalation
@@ -71,7 +105,7 @@ the Tuscan presidios.)
 - [x] known-keys: the D.106 table is ruled out analytically (40 = q is incompatible with it); the 1645 Frías key (KV2) does not read D.104 and was not applicable here
 - [x] print: no edition found; nothing in this repository for C.3456 or Ridolfi
 - [x] key-rebuild: key proposed ciphertext-only on pp. 1-4, frozen, validated once on held-out p. 5
-- [ ] retry: blind re-reading of the 21 restored groups on the images (next step)
+- [x] retry: every restored group run again against the frozen transcription and the key on 11 Nov 2026 (integration check above) and regraded: no class changed; the image re-reading of the 21 groups is still to do
 
 ## Files
 
