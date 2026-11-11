@@ -1,0 +1,65 @@
+christianv1673 - validation (contributor's pre-registered held-out test against ground truth, not docs/_validate.py)
+Summary: key VALIDATED. Decoded with the frozen key, 0.849 of the gloss segments (659/776) of a held-out order of 1674 come out
+exactly as the decipherment written between its lines at the time; the best of 200 permuted keys gets 0.144 and the best of 20
+shifted glosses 0.035. A first test of a different kind, on the 1673 block itself, had failed by 0.006 (point 2); it is reported.
+
+Files: frozen/ (protocols in French, hashes, scripts, key, transcriptions of the glosses). Reproduce from frozen/:
+  python3 scripts/mesure2.py mesure     -> TENU A L'ECART (42-43) exact=0.849 (659/776) ; max 200 cles permutees=0.144 (moy. 0.033) ; max 20 decalages=0.035
+  python3 scripts/mesure2.py calib      -> the calibration below
+  shasum -a 256 -c FREEZE-2.sha256      (skip the last line, a timestamp)
+
+The volume. Arkivalieronline unit 261588 (62 images, all checked on contact sheets) holds cipher only on images 8-11 (the order of
+25 May 1673: a first block deciphered on a loose chancery leaf at image 9 right, and the closing block, the target, with no
+decipherment) and 32-43 (three orders of 1674 in the same code, deciphered between the lines): A = images 32-37 (21 July 1674),
+B = images 39-41 (3 Oct 1674 with a postscript), C = images 42-43 (6 Oct 1674, signed Christian / Griffenfeld).
+
+1. Pairs. Four Claude Opus 5.5 sub-agents transcribed the cipher groups and the interlinear glosses of images 32-43
+   (frozen/working/pairs/1674_img*.tsv, about 3,640 groups; frozen 11 Nov 2026 15:07 in FREEZE.sha256). A sign table
+   (frozen/working/notation/TABLE-SIGNES.tsv) maps each transcriber's labels to one canonical sign; it was made from images
+   8-11 and 32-41 by a sub-agent that did not open images 42-43 or their files.
+
+2. First protocol (PROTOCOLE.md, hashed 15:07) - FAILED, reported. Key v1 (1674 glosses of all images + the 1673 leaf) applied
+   once to the closing block of 1673, scored by Danish lexical cover: COV 0.722 (C1 >= 0.70 passed), best of 200 permuted keys
+   0.668 (C2 needs +0.06: FAILED by 0.006), best of 200 group shuffles 0.648 (C3 passed) (scripts/mesure.out). Likely cause: the
+   code is syllabic, so keys with syllables swapped still give Danish-looking strings; the lexical score cannot separate them.
+   The closing block is therefore spent as a test; it was read afterwards, never measured again.
+
+3. Second protocol (PROTOCOLE-2.md, SHA-256 9db1cf5e243d213ec80fa596880df77aeb6682f23ab2b4a4a7b500ae44784434), written and
+   hashed before the measurement with the key KEY-v2.json (5334c7aa...), the scorer mesure2.py (3ab278c2...), the sign table,
+   the corrections file and the held-out files (FREEZE-2.sha256, 11 Nov 2026 15:34).
+   - Held out: order C (images 42-43), files as frozen at 15:07, not corrected since.
+   - KEY-v2 (222 entries) = orders A and B only (images 32-41), with 13 transcription corrections (all on images 33-41), plus
+     three-digit groups of the 1673 leaf not glossed in 32-41. No pair of C. Value of a group = weighted majority of its glosses.
+   - Unit = gloss segment: one cipher group with its gloss, plus the following groups glossed "+" (continuation). Excluded:
+     empty, "-", bracketed, doubtful ("?") glosses. Exact = normalised decode equals normalised gloss (w=v, ø=o, æ=e, ck/c/q=k,
+     ff=f, y/j=i, doubled letters reduced).
+   - Controls: 200 keys with values permuted among three-digit groups and, separately, among the other signs (seed 20261111);
+     20 shifts of the glosses (segment i scored against the gloss of segment i+d, d = 1..20).
+   - Criteria (all required): C0 >= 300 segments; C1 exact >= 0.65; C2 exact >= best permuted key + 0.40; C3 exact >= best shift
+     + 0.40.
+   - Calibration before, without C: key A -> test B exact 0.769 (536/697), best of 50 permuted keys 0.109, best shift 0.032;
+     key B -> test A exact 0.706 (1224/1734), best permuted 0.141, best shift 0.032.
+
+4. Single measurement (scripts/mesure2.out): 776 segments (C0 passed); exact 0.849 = 659/776 (C1 passed); best of 200 permuted
+   keys 0.144, mean 0.033 (C2: margin 0.705, passed); best of 20 shifts 0.035 (C3: margin 0.814, passed). Key v2 validated.
+   The metric is strict: a segment counts only if the whole decoded word or syllable string equals the gloss of the time.
+
+What had been seen of C before the measurement (declared in PROTOCOLE-2.md):
+   a. C's pairs had been transcribed that day by one sub-agent; they went into the earlier key files (key_1674_v0.json,
+      KEY-v1.json) and per-group aggregates over all images, which the main agent and sub-agents read.
+   b. Before choosing C as held out, the main agent displayed an inventory of sign labels per transcriber that included 42-43
+      (for instance that transcriber's "3" glossed i 21 times, "m" glossed u 6 times, "Z" glossed n 80 times). The protocol states
+      that these were not used for the sign table or the rules for labels with two shapes; the table came from 8-11 and 32-41.
+   c. The main agent saw image 43 whole at reduced size (glosses visible) and a strip at the top of image 42, to fix where the
+      orders begin and end.
+   d. The sub-agents who made the sign table and searched for the missing groups opened neither images 42-43 nor their files.
+   e. The rules for labels with two canonical signs were fixed before the measurement: in C, the first listed canon is used.
+   So C was not unseen: its glosses were known in aggregate. The key itself (KEY-v2) was rebuilt from A and B only, and the
+   margin over the controls (+0.70) is far larger than what such exposure could explain; but the test is not blind in the strict
+   sense, and we say so.
+
+Scope. The measurement validates the code as rebuilt from the 1674 glosses (hands of 1674). Carrying it to the hand of 1673
+rests in addition on the loose leaf: with the same key the first block of 1673 decodes almost word for word into the leaf's
+text, and the leaf gives the values of the 1673 hand for single signs (some differ from 1674: barred m = k in 1673, u in 1674).
+After the measurement, three values were added for the reading of 1673 and are not measured: 486 du and 534 fu (from the
+syllable blocks), 590 huis (gloss of image 43, seen after the measurement; KEY-v2 has "sind" from one gloss of image 41).

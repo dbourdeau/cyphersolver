@@ -1,0 +1,223 @@
+{
+ "schema_version": 1,
+ "target": "christianv1673",
+ "title": "Christian V to the envoys Jens Juel and Christoffer Lindenov in Stockholm, Copenhagen, 25 May 1673, closing cipher block (catalogue 2528 = lead 2531, Rigsarkivet TKUA Sverige): syllabic code rebuilt from the 1674 interlinear decipherments, validated on a held-out order, read in part",
+ "documents": [
+  {
+   "id": "ra-tkua-sverige-juel-261588-1673-05-25",
+   "read": "read in part",
+   "shelfmark": "Copenhagen, Rigsarkivet, TKUA, Speciel del, Sverige, Jens Juels gesandtskabsarkiv; Arkivalieronline unit 261588, images 7-11 (closing cipher block: image 10 foot and image 11)",
+   "date": "25 May 1673",
+   "year": 1673,
+   "country": "Denmark",
+   "route": "Christian V of Denmark (countersigned Griffenfeld) -> Jens Juel and Christoffer Lindenov, envoys in Stockholm",
+   "places": {
+    "from": "Copenhagen",
+    "to": "Stockholm"
+   },
+   "language": "Danish",
+   "pages": 5,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "loose chancery leaf (image 9 right): decipherment of the first cipher block only; its filmed side ends with that block, its verso was not filmed. The closing block has no decipherment.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 197,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Arkivalieronline images of unit 261588 (api.rigsarkivet.dk, full size); images not reproduced",
+    "image_quality": "fair",
+    "notes": "Closing block transcribed by a Claude Opus 5.5 agent (11 Nov 2026) before any key was applied to it, and frozen; sign shapes later sorted on a sign sheet (TABLE-SIGNES.tsv): our label Q covers q barred (i) and a hooked 4 (r). No blind re-reading yet."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code",
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "Danish royal chancery code of 1673-74: three-digit groups in alphabetical blocks (five syllables per initial, e.g. 417-421 ba be bi bo bu, 482-486 da ... du, then words of that initial: 585 haffuer, 595 hvor); names and countries in 2xx-3xx (284 Sverig, 309 Holland, 321 Franckrig); small numbers and signs for single letters (4 t, 5 e, 18 r, ff n, S t, Z n); many Danish words left in clear.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": "unknown",
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "syllables",
+    "common words",
+    "names",
+    "places"
+   ]
+  },
+  "nulls": {
+   "present": false
+  },
+  "word_division": "partial",
+  "diacritics": {
+   "used": false
+  },
+  "key_order": "partly alphabetical",
+  "notes": "Some signs change value between the hand of 1673 and the hands of 1674 (barred m = k in 1673, u in 1674; 3 = u in 1673). Groups of the closing block with no value anywhere in the volume: 32, 320, 348, 384, 646, 906."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "The first cipher block of the same order is deciphered on a loose chancery leaf (image 9 right); three sibling orders of 1674 in the same code (images 32-43) are deciphered between the lines. The closing block has no decipherment. Catalogue 2528 vetting (Daniel Bourdeau, 11 Nov 2026): DECODE, Tomokiyo, Lasry nothing; Danmark-Norges Traktater 6 does not print the order; lead 2531: Vaupell, Jørgensen, Fryxell, Danske Samlinger nothing.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Brice Dudout chose the target and set the rules (every decipherment goes to Daniel; a partial reading may be published if explained; protocol hashed before each single measurement). Claude Opus 5.5 agents transcribed the cipher and the 1674 glosses, made the sign table, rebuilt the key, wrote and ran the protocols, read and wrote up. No human read the reading.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout (transcription, sign table, key, protocols, measurement, reading, write-up)"
+  ],
+  "first_date": "2026-11-11",
+  "last_date": "2026-11-11"
+ },
+ "solution": [
+  {
+   "date": "2026-11-11",
+   "kind": "transcription",
+   "what": "Both cipher blocks of 25 May 1673 transcribed (closing block 197 tokens, frozen before any key was applied); the loose leaf of image 9 read; four sub-agents transcribed the cipher groups and interlinear glosses of the three orders of 1674 (images 32-43, about 3,640 groups).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "key from source",
+   "technique": [
+    "plaintext matching",
+    "key-structure hypothesis"
+   ],
+   "what": "Key rebuilt from the 1674 glosses (weighted majority per group) and the 1673 leaf; sign labels of the different transcribers mapped to canonical signs on a sign sheet; alphabetical syllable blocks of five recognised (14 initials).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Protocol 1 (hashed): Danish lexical cover of the 1673 closing block with key v1, COV 0.722 vs best of 200 permuted keys 0.668: C2 failed by 0.006 (syllabic code). Reported; the block was not measured again.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Protocol 2 (hashed): key v2 rebuilt from orders A and B only, decoded once against the glosses of the held-out order C (6 Oct 1674, images 42-43): 0.849 of 776 gloss segments exact vs best of 200 permuted keys 0.144 and best of 20 shifts 0.035; all criteria met. What had been seen of C is declared in validation.txt.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "reading",
+   "what": "Closing block read by sense with key v2 (+ 486 du, 534 fu, 590 huis added after the measurement): 68 cipher words, 49 certain, 10 probable, 3 restored, 6 unresolved = 86.8%.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "recovered",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The key was rebuilt from the decipherments of the time written between the lines of two sibling orders of 1674 in the same unit and from the chancery leaf deciphering the first block of 1673; it was validated on a third glossed order held out, then applied to the closing block of 1673, which has no decipherment.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.868,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.md, words from cipher groups: 49 certain + 10 probable = 59 of 68 = 86.8%; 3 restored words not counted (91.2% with them). The working fiche gave 46/10/3/6 of 65 = 86.2%; three certain words were missing from its list.",
+  "verification": [
+   "statistical test",
+   "contemporary decipherment",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-11-11",
+   "verdict": "pass",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered held-out test against ground truth (not docs/_validate.py): PROTOCOLE-2 SHA-256 9db1cf5e243d213ec80fa596880df77aeb6682f23ab2b4a4a7b500ae44784434, hashed with KEY-v2 (5334c7aa...) and the scorer before the single run; held-out order of 6 Oct 1674 (images 42-43): exact 0.849 (659/776 gloss segments), best of 200 permuted keys 0.144, best of 20 shifts 0.035; criteria >= 0.65 and +0.40 over each control met. Not blind in the strict sense: the held-out pairs had been seen in aggregate and image 43 at reduced size (declared). An earlier lexical test on the 1673 block failed by 0.006 (reported)."
+  },
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the Danish chancery decipherments of the time: interlinear glosses of the orders of 21 July, 3 Oct and 6 Oct 1674 (images 32-43) and the loose leaf deciphering the first block of 25 May 1673 (image 9 right); the key was rebuilt from them and validated on the third order",
+    "date": "1673-1674"
+   },
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "transcription of the 1673 order and of the 1674 glosses; key rebuilt from the 1674 interlinear decipherments and the 1673 leaf, validated on the held-out order of 6 Oct 1674 (0.849 vs 0.144); closing block of 25 May 1673 read in part (59/68 words = 86.8%) and translated; Claude Opus 5.5 agents for Brice Dudout",
+    "date": "2026-11-11"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "catalogue entry 2528 (lead 2531): TKUA paging pass and vetting of 11 Nov 2026, pointing to the 1674 orders deciphered between the lines and to the loose decipherment leaf",
+    "date": "2026-11-11"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "groups 32, 320, 348, 384 (x2), 646, 906 of the closing block (6 unresolved words, 3 restored)",
+    "blocker": "open-codes",
+    "detail": "glossed nowhere in images 32-43; the syllable blocks give only the initial of 384 (a-) and 646 (k-); another order in the same code would fill them"
+   },
+   {
+    "item": "la·g·ge·n·s (T05)",
+    "blocker": "illegible",
+    "detail": "every group has a value but the word does not construe; probably a misread sign (Flaggens would need an f), to check on the original image"
+   },
+   {
+    "item": "verso of the loose decipherment leaf (image 9)",
+    "blocker": "needs-physical-access",
+    "detail": "not filmed; it might carry the decipherment of the closing block; only Rigsarkivet can say"
+   },
+   {
+    "item": "blind re-reading of the doubtful signs of the closing block (T02 Q, T07 768 lam, T04 841?)",
+    "blocker": "illegible",
+    "detail": "seen at the resolution served online; not yet re-read blind"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "ra-tkua-sverige-juel-261588-1673-05-25",
+    "label": "Christian V to Juel and Lindenov, Copenhagen 25 May 1673, closing cipher block",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "da",
+    "state": "read in part",
+    "read_share": 0.868,
+    "summary": "On the salute at sea in the Sound: if the Swedes ask that their warships pass the Danish castles without striking, the envoys are to answer that any exemption is only a temporary indulgence, on the footing already laid down that other crowned heads and Sweden itself, whose example they allege, claim no such salute; and that the king will never give up a right his ancestors held unchallenged for so many years.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 agent for Brice Dudout",
+     "date": "2026-11-11",
+     "note": "Read as Danish sentences of 1673 against decryption.txt: the cipher words construe with the clear words around them and the translation follows, but 6 words are unresolved and 3 restored (seven code groups glossed nowhere in the volume), and 10 words are only probable; so grade B, read in part. AI agents only; no human read the reading; not re-checked blind on the images."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "New partial reading: the closing block of 25 May 1673 had no decipherment. The key is reusable (key.tsv, CC BY 4.0) for the other orders of this code. No image or derivative of the Rigsarkivet scans is included."
+ }
+}
