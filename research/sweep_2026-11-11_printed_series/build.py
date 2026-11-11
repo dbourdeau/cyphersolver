@@ -8,10 +8,18 @@ PRIB_TXT = "https://archive.org/download/bub_gb_oIkJAAAAIAAJ/bub_gb_oIkJAAAAIAAJ
 SRC = "printed series sweep (archive.org full text)"
 AIS = "https://www.archivinformationssystem.at/detail.aspx?ID=%d"
 
-S_DECODE = {"query": "DECODE RecordsList search 'Lisola'; 'Polen I'; 'Polonica'",
-            "result": "Lisola: R1915-R1918 and R2040 only (Geheime Staatsregistratur 61 fasc. 46, 1669-74); 'Polen I' and 'Polonica': 0 records."}
 S_AIS = {"query": "AIS (archivinformationssystem.at) full text: 'Lisola 1657', 'Lisola Polen', 'Lisola 1656', 'Lisola Chiffre', 'Lisola Chiffrenschlüssel'",
          "result": "No item-level record of these reports and no key under Lisola's name; StAbt Polen I is described by Karton only (IDs 227463-227553 walked)."}
+D_LX = {"query": "DECODE RecordsList search 'Dankow'; 'Lisola'", "result": "Dankow: 0 records. Lisola: R1915-R1918 and R2040 only (Geheime Staatsregistratur 61 fasc. 46, 1669-74)."}
+D_75 = {"query": "DECODE RecordsList search 'Königsberg'; 'Wehlau'", "result": "Königsberg: one 1911 postcard (R3282); Wehlau: 0 records."}
+D_76 = {"query": "DECODE RecordsList search 'Polen I'; 'Polonica'; 'Karl Gustav'", "result": "0 records for each: no HHStA Polen I material on DECODE."}
+D_56 = {"query": "DECODE RecordsList search 'Warschau'; '1656'", "result": "Warschau: 0 records; 1656: five records (Florence, BL Add MS 4166 Cromwell, Beinecke), none from Vienna."}
+S_W6 = {"query": "Lisola 11 September 1657 Königsberg Tapiau Bericht Kurfürst Gonsiewski Thorn \"Lisola\" Geheimschrift OR Chiffre OR cipher",
+        "result": "Treaty of Wehlau pages and a Polish article printing Gosiewski's own account of the Wehlau talks (ceeol 1214990); nothing on Lisola's report of 11 Sept or its cipher."}
+S_W7 = {"query": "cryptiana Tomokiyo Habsburg imperial envoy cipher 1657 Lisola OR \"Leopold I\" Poland Sweden despatches undeciphered",
+        "result": "cryptiana blog 2025 (Le Tellier 1657, Habsburg letters of 1711 and 1720), Maximilian II 1575, Ferdinand III; no Lisola or imperial envoy in Poland 1655-60."}
+S_W8 = {"query": "Pribram \"Lisola\" 1894 \"Politik seiner Zeit\" Chiffre Berichte 1656 Warschau schwedisches Lager nicht entziffert Staatsarchiv Suecica",
+        "result": "No relevant result (unrelated 1890s texts); no sign that Pribram's 1894 biography supplied the missing report."}
 S_W1 = {"query": "Lisola Berichte 1657 chiffriert \"nicht dechiffrirt\" Pribram Chiffre entziffert Polonica Haus-, Hof- und Staatsarchiv",
         "result": "NDB entry and Pribram's 1887 edition only; HistoCrypt and Cryptologia hits concern other Habsburg ciphers (Ferdinand III, key instructions); no decipherment of a Lisola report."}
 S_W2 = {"query": "Lisola 1657 Königsberg Wehlau relation cipher deciphered Leopold \"Lisola\" cryptology HistoCrypt OR Cryptologia OR cryptiana",
@@ -24,7 +32,7 @@ S_W5 = {"query": "Lisola Königsberg 4 September 1657 Bericht Leopold Wehlau Gon
         "result": "Nothing on the Königsberg reports of September 1657; the same Cryptologia citation of an unnamed 1657 HHStA key."}
 
 
-def lisola(year, date, place, no, page, karton, ais_id, krange, extent, quote, subject, searches, imp, vet=True, extra_verify=""):
+def lisola(year, date, place, no, page, karton, ais_id, krange, extent, quote, subject, searches, imp, vet=True, extra_verify="", tag=""):
     row = {
         "year": year, "date": date,
         "title": "Franz Paul von Lisola → %s, %s: report with cipher the editor found not deciphered (Pribram no. %s)" % (
@@ -55,11 +63,11 @@ def lisola(year, date, place, no, page, karton, ais_id, krange, extent, quote, s
                      "extent": extent,
                      "cipher": "No archive description at item level exists (AIS lists the Karton only). The editor, who worked from the original, describes it: \"%s\". Cipher system not stated; Pribram marks ciphered passages of sibling reports with asterisks and prints their decipherments." % quote},
             "prior_art": {
-                "decode": "DECODE RecordsList searched for Lisola, 'Polen I' and Polonica on 11 Nov 2026: only R1915-R1918 and R2040 (Lisola 1669-74, Geheime Staatsregistratur); no record of this %s report." % date,
-                "tomokiyo": "cryptiana index and variable3.htm read: Lisola appears only as a name inside a c. 1657-59 Porcia key (Chirtulov's reading); no page on Lisola's own reports of %d." % year,
-                "lasry": "No Lasry paper on Lisola or the imperial envoys' ciphers of 1655-60 came up in the web searches; nothing in the repo's notes (known.py 'Lisola').",
+                "decode": "DECODE RecordsList searched 11 Nov 2026 for the %s (%s): %s The only Lisola records are R1915-R1918 and R2040 (1669-74)." % (tag, [x for x in searches if x["query"].startswith("DECODE")][0]["query"][26:], [x for x in searches if x["query"].startswith("DECODE")][0]["result"]),
+                "tomokiyo": "cryptiana index and variable3.htm read: Lisola appears only as a name inside a c. 1657-59 Porcia key (Chirtulov's reading); no page on the %s or on Lisola's cipher of %d." % (tag, year),
+                "lasry": "No Lasry paper came up in the web searches run for the %s (%s); known.py 'Lisola' shows no Lasry item in the repo." % (tag, "; ".join(x["query"][:45] for x in searches if not x["query"].startswith(("DECODE", "AIS")))),
                 "edition": "Pribram 1887 is the edition and was opened at no. %s: it prints the readable text and states the passage is not deciphered. Urkunden und Actenstücke VIII (cited by Pribram for the same weeks) prints Brandenburg and French papers, not this report." % no,
-                "literature": "Web searches on the report (place, date, cipher) returned only Pribram's edition and his 1894 biography; no HistoCrypt or Cryptologia study of Lisola's 1655-60 cipher."},
+                "literature": "For the %s: %s" % (tag, " / ".join(x["result"] for x in searches if not x["query"].startswith(("DECODE", "AIS"))))},
             "key_check": "No key for Lisola's 1655-60 cipher is held in the repo or named on DECODE. Nothing could be tested because no ciphertext is online.",
             "key_held": "Imperial keys of the period exist on DECODE (HHStA Staatskanzlei Interiora Chiffrenschlüssel, e.g. R1280, undated homophonic key with nomenclator) and Lisola's own later ciphers (R1915-R1918, R2040); none identified as his 1655-60 key, none tested.",
             "duplicates": "known.py 'Lisola', 'Pribram', 'Polen I', 'Polonica': catalogue entries for Lisola 1643 and 1667 (Spanien Varia / 20-4-10) and DECODE 1669-74 only; no entry, lead or target for the 1655-60 reports.",
@@ -74,22 +82,22 @@ rows = [
            "About one and a half pages and two lines of cipher without decipherment, in three places of the report",
            "Zum Theile nicht dechiffrirt ... Folgt eine halbe Seite nicht dechiffrirt ... Folgt ungefähr eine nicht dechiffrirte Seite ... Folgen zwei Zeilen nicht dechiffrirt",
            "Lisola's assessment of Charles X Gustav's plans after the Danish declaration of war, days after the Austro-Polish alliance: the unread passages follow his forecast of a Swedish strike through Silesia.",
-           [S_W1, S_W3, S_DECODE, S_AIS], 4),
+           [S_W3, D_LX, S_W1, S_AIS], 4, tag="Dankow report of 3 June 1657"),
     lisola(1657, "4 Sep 1657", "Königsberg", "LXXV", "316", "70", 227535, "09.1657-03.1658",
            "Two and a half pages of cipher without decipherment",
            "2 1/2 Seiten nicht dechiffrirt",
            "Lisola's mediation of the Treaty of Wehlau between Poland and Brandenburg, in the last days before signature (the treaty gave the Elector sovereignty in Ducal Prussia).",
-           [S_W5, S_W2, S_W1, S_DECODE, S_AIS], 4, extra_verify="; the Königsberg reports may be filed with Brandenburgica"),
+           [S_W5, D_75, S_W1, S_W7], 4, tag="Königsberg report of 4 Sept 1657", extra_verify="; the Königsberg reports may be filed with Brandenburgica"),
     lisola(1657, "11 Sep 1657", "Königsberg", "LXXVI", "317", "70", 227535, "09.1657-03.1658",
            "One further page of cipher without decipherment at the end of the report",
            "Folgt noch eine nicht dechiffrirte Seite",
            "Report on the conclusion of the Wehlau treaty (8 Sept.) and the war plans agreed with the Elector and Gosiewski; the last page is unread.",
-           [S_W5, S_W2, S_W1, S_DECODE, S_AIS], 4, extra_verify="; the Königsberg reports may be filed with Brandenburgica"),
+           [S_W6, S_W2, D_76, S_AIS], 4, tag="Königsberg report of 11 Sept 1657", extra_verify="; the Königsberg reports may be filed with Brandenburgica"),
     lisola(1656, "3 Mar 1656", "Warsaw", "XXIX (note)", "148", "66", 227531, "12.1655-04.1656",
            "A whole report, length not given",
            "Ein Bericht vom 3. März ist nicht dechiffrirt",
            "Lisola with Charles X Gustav in occupied Warsaw during the imperial mediation attempt; the report of the day before the printed one of 4 March was left out because it is in cipher.",
-           [S_W4, S_W1, S_DECODE, S_AIS], 3, extra_verify="; Lisola was accredited to the Swedish king, so Suecica is possible"),
+           [S_W4, S_W8, D_56, S_W7], 3, tag="Warsaw report of 3 March 1656", extra_verify="; Lisola was accredited to the Swedish king, so Suecica is possible"),
     lisola(1660, "6 Feb 1660", "Danzig", "CLX", "547", "74", 227539, "07.1659-02.1660",
            "One passage of cipher without decipherment, length not given",
            "Folgt eine nicht dechiffrirte Stelle",
