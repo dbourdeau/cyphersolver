@@ -56,6 +56,7 @@ contact sheets (10 to 40 frames each, cipher-looking frames then opened at 1000-
 | **Barb. lat. 8404** | cipher sheets and decifrati (shelved with the Spain series; correspondent not read); ff. 27v-28r are two full pages of digits, about 28 lines each | cifre + decifrati |
 | Barb. lat. 8615, 8616, 8618, 8625, 8626 | England: royal letters, clear | none in sample |
 | Barb. lat. 6563-6565, 6649-6654 | Carlo Barberini's Polish papers, clear | none in sample |
+| Barb. lat. 6744, 6764, 6767, 6728, 6812, 6906, 6521 | Cologne and Low Countries (Pasture's volumes): clear letters, minutes, French letters | none in sample |
 | Barb. lat. 9848 | Francesco Mancini, Madrid 1654: frames 30-179 (ff. 14r-88v) of 448 viewed one by one | cifre + decifrati (below) |
 | Chig. A.I.23, A.II.27, 28, 33, 34, 35, 38, 44, 47 | Fabio Chigi's Cologne and Münster papers: registers, van der Veken's Latin letters, Barberini's signed letters | none in sample |
 
@@ -101,3 +102,11 @@ the vatican_rome sweep.
 - Ott. lat., Ross., Ferr., Reg. lat. letter volumes: still no handle. The fondo lists give the digitised shelfmarks, but
   nothing says which are letters; the handwritten Sala Cons. inventories were not read.
 - Undigitised: Chig. A.I.35-60, and the Barberini France, Spain and Germania cifre volumes between the digitised ones.
+
+## Where the last queue stopped
+
+`run_k.sh` sampled Barb. lat. 6744, 6764, 6767, 6728, 6812, 6906 and 6521 (all clear) and stopped on a network error at
+6261 when the session was wrapped up. Not sampled from its list: Barb. lat. 6260, 6261, 6207, 6099, 6024 (Low
+Countries) and the 16th-century letter volumes 5701, 5708 (Carafa, 1550s), 5713, 5717, 5721, 5723, 5724 (Frangipani,
+France), 5726, 5744, 5781 (Aldobrandini). These are the next volumes to sheet; the Carafa and Frangipani ones are the
+likeliest to hold cipher of a period whose Roman decifrati are less systematic.
