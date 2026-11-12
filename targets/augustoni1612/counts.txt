@@ -1,0 +1,46 @@
+# counts.txt: made by scripts/build.py from timestamps/repair/stamped/ and review.tsv. Every figure is a full count over units.tsv, shown with its parts.
+== CHECK 1: cipher words in transcription.txt equal the stamped consensus words (WORDS.tsv), line by line
+   lines with cipher 30; cipher words 112; lines that differ 0; cipher in an unknown line 0  -> PASS
+
+== TALLIES ON THE LEDGER AS STAMPED 11 NOV 2026 (S = key and label aliases give the letter read; E = emended or supplied; N = unread)
+   unit classes: cipher signs 583 (of which "?" placeholders 3), clear-script letters inside cipher words 4, abbreviation sign & 6, codes 7; all 600
+   A. issue, unit rule, cipher signs only            : S 562 + E 6 + N 15 = 583; strict S/T = 562/583 = 96.40%; S+E = 568/583 = 97.43%
+   B. issue, "conservative", cipher signs only (94.0%): S 548 + E 20 + N 15 = 583; strict S/T = 548/583 = 94.00%; S+E = 568/583 = 97.43%
+   C. reviewer's rule on his 587 units, our count     : S 538 + E 34 + N 15 = 587; strict S/T = 538/587 = 91.65%; S+E = 572/587 = 97.44%
+   D. reviewer's own count                            : S 537 + E 35 + N 15 = 587; 537/587 = 91.48%
+   E. as C, the 8 rounded-u alias units also emended  : S 530 + E 42 + N 15 = 587; strict S/T = 530/587 = 90.29%; S+E = 572/587 = 97.44%
+
+== RECONCILIATION B -> C -> D, unit by unit
+   denominator: 583 cipher units + 4 clear-script letters inside cipher words (L04 6osp: o, s; L14 4v: 4, v) = 587  [reviewer: 584 signs + 3 "?" = 587; ours: 580 + 4 = 584 signs, + 3 "?"]
+   S: 548 - 10 units of the three words that were still counted S (COSI 2, CONSCESSO 8) = 538
+   E: 20 + 10 (those units) + 4 (the clear-script letters, not in the 583 at all) = 34
+   N: 15 (L10 1, L16 5, L17-18 7, L19 2), unchanged
+   ours C = 538 + 34 + 15 = 587; reviewer D = 537 + 35 + 15 = 587. Difference: 1 unit, S 538 against 537.
+   Probable source of the 1 unit [derived, not confirmed by the reviewer]: CONSCESSO has 9 units, of which the blot sign
+   (L14 word 1 sign 6) was already one of the 20 emended units of B. Taking all 9 off the 548 gives 548 - 2 - 9 = 537;
+   taking the 8 that were still S gives 538. We adopt the reviewer's 537/587 = 91.5% as the stated figure; our own count is 538/587 = 91.65%.
+
+== BLIND SECOND TRANSCRIPTION (transcription_blind.txt), same ledger
+   G. issue, "conservative", cipher signs only (90.2%): S 526 + E 40 + N 17 = 583; strict S/T = 526/583 = 90.22%; S+E = 566/583 = 97.08%
+   H. reviewer's rule, clear-script letters included  : S 517 + E 53 + N 17 = 587; strict S/T = 517/587 = 88.07%; S+E = 570/587 = 97.10%
+   (the blind reader wrote 2 signs that are not on the sheet, counted N, and left out 2, not in the total; with those 2 as unread the base is 589: 517/589 = 87.78%)
+
+== AFTER THE IMAGE REVIEW OF 12 NOV 2026 (review.tsv). Not blind: every change was made with the proposed word known.
+   I. unit rule (only the changed or supplied unit is E)       : S 573 + E 14 + N 1 = 588; strict S/T = 573/588 = 97.45%; S+E = 587/588 = 99.83%
+   J. whole-word rule (every word with any emendation wholly E): S 534 + E 53 + N 1 = 588; strict S/T = 534/588 = 90.82%; S+E = 587/588 = 99.83%
+   base: 587 + 1 sign added on L16 = 588. Unread after review: 1 unit (L10, the sign in the gutter).
+   units changed by the review (stamped status -> status now): E->E 1, N->E 3, N->S 11, new->E 1
+   J is lower than C although more is read: three more words (INGANO, SCR[I]TURA, ASTUTIA) are now read with an emendation, and J counts
+   every unit of such a word as emended (ASTUTIA had 4 units counted S). No unit entered S on the strength of a relabelled sign.
+
+== CIPHER WORDS (codes and the & sign apart)
+   word rows written in cipher signs: 99 (SCR-TURA, split over L17-L18, is two rows). The reviewer has 99 cipher words, 83 literal.
+   rows whose every unit is S and that need no supplied letter, ledger as stamped: 85 of 99 = 85.9%
+   of those, rows that end at the torn edge and are completed in the reading (PREVOST<O>, PREVOS<TO>): 2; without them 83 of 99 = 83.8%, the reviewer's 83
+   not literal: 14 rows = L04 cosi, L09 acordo, L10 ?e, L12 quassi, L14 conscesso, L14 av, L16 ul4oc (unread), L17 n6y (unread), L18 gq74 (unread), L19 a??utia, L21 feudi, L22 hone{s}tare, L23 habb{i}no, L24 far
+   after the review the same 14 rows are not literal: the three re-read words are read, each with an emendation.
+
+== WHAT RESTS ON THE KEY TABLE, WHAT ON ALIASES, WHAT ON OVERRIDES (ledger as stamped, 600 units)
+   S units 562: by a key sign under its own label 535; by a renamed label of the same sign (R = K, D = z) 19; by the rounded-u split (υ = the n sign o) 8
+   coordinate overrides 13: CIPHER E 6, CIPHER N 3, CLEAR E 4
+   no key value at all: the & sign (6 units), the codes I. x5, PP., 25. (7 units), the Z form (1 unit, q from context)
