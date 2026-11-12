@@ -19,8 +19,24 @@ if "\nCHIFFRE" in texte:
     texte = texte[texte.index("\nCHIFFRE"):]
 texte = re.split(r"\n(GLOSES|DOUTES|NOTES|DESACCORDS)", texte)[0]
 
+def _bloc(m):
+    """Un bloc de consensus {A:… | B:…} est UN groupe lu différemment par les deux lectures (correction du
+    12 nov. 2026 : il était découpé en plusieurs faux groupes, d'où 481 au lieu de 465 pour le n° 131).
+    On le ramène à un seul groupe à candidats : les nombres entre crochets s'il y en a, sinon le nombre lu ;
+    les mots en clair cités entre guillemets et les remarques sont écartés."""
+    cands = []
+    for cote in m.group(1).split(" | "):
+        cote = re.sub(r"«[^»]*»|\"[^\"]*\"", " ", re.sub(r"^\s*[AB]:", "", cote))
+        alt = re.search(r"\[([^\]]*)\]", cote)
+        for n in re.findall(r"\d+", alt.group(1) if alt else cote):
+            if n not in cands:
+                cands.append(n)
+    return "?[" + "|".join(cands) + "]"
+
+
 surs = total = 0
 for l in texte.splitlines():
+    l = re.sub(r"\{(A:[^{}]*)\}", _bloc, l)
     m = re.match(r"\s*(f\d+[rv]?)\s+(L\d+)\s*:\s*(.*)$", l)
     if not m:
         continue
