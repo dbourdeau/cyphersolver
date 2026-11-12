@@ -1,0 +1,15 @@
+# Anonymous to Cristiano Pagni, undated (ASF, Mediceo del Principato 444, c. 315r-v): English translation
+
+The same holes as `reading.md`. `[?Pope]`, `[?Duke]`, `[?Siena]`, `[?Cardinal]`, `[?Emperor]`, `[?and]` are values proposed from context for code signs; `[d]` `[Q]` `[D]` `[m]` `[n]` are code signs with no value; `[...]` is not read. A word followed by `[?]` rests on a letter the key does not give (see `holes.md`). The translation is interpretive where the Italian is loose.
+
+## Translation
+
+[c. 315r; in clear] I wrote to you the day before yesterday, informing you of what was happening here. By this letter you [?will learn] how [in cipher from here] [d] I have stayed on [?] and [...] until now at the request [?] of the Marquis [?] of Sarria [Q], to see where the negotiation with this [?Pope] was heading. In short, although there seems to be some agreement, that friend who knows part of the secrets of France [?] tells me plainly [?] that our side will be [?] deceived [?].
+
+Even so, a league [?] is being negotiated, and the pledging of Cervia and Ravenna [...] to the [?] [?Duke] of Ferrara [?] in order to raise [?] money. The same Monsieur de Lansac [?], who [d] who came yesterday evening [?], is pressing it hard. The [?] [?Cardinal] of Lorraine will come; I wrote to him. Although these French [?] ministers have let it be understood [?] that they have sent [?] to meet him and let him know that his [?] coming [?] is no longer needed, [D] it may well be that they have [?] settled with the [?Pope] in such a way that nothing more would be [?] needed, and that he is delaying his coming to lull our side for some days, to see whether [?Duke] Ottavio, with the troops they have [?] thought of putting together, would be in a position to put [?Siena] in straits [?], so that it would have to come to an accord and make [?] the [?Pope] its depositary, in the belief [?] that the [?Duke] would like such a scheme [?]; and meanwhile [?] to give orders for a fresh [?] effort in the new season [?], whatever becomes of [?Siena].
+
+And know [?] that in these past days [?and] the [?Pope] has let himself be understood so openly, both [?] with [...] hard words [?] and [?] with visible demonstrations and preparations, that the French [?] were displeased [?], it seeming to them that they would see [m] flooded by [?] the Imperial troops [?] before they had [?] made [?] their preparations [?]. In short [?], the [?Pope] is the bitterest enemy of the [?] [?Emperor] and of the [?] [?Duke], [...] [D] he will use all his power [?]; already one sees money [?] being spent [?], and a large sum, so reckon this up for me. Horse are coming from Mirandola, and likewise from Parma [?]. The [?Pope], I say, will disarm [?], and [?] the French [?] will make use [?] of those soldiers.
+
+I do not know when [?] [...] to be [...] allowed to go to [n]. I wish you to keep me in the good [?] grace of the [?Duke] and to give me your commands.
+
+[c. 315v; in clear, below the cipher] The 20th day of m[...] (the month is one letter m under a bar; no year).
