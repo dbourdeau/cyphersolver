@@ -148,6 +148,15 @@
    "kind": "reading",
    "what": "Fixes from the review: L06 'dan' (signs q oo o-) marked doubtful as [?man], since the first sign may be d (m) not q (d) on the halftone; translation follows; sign conventions brought into line with the tokens used; the reading-file checker figure corrected. Now 98 of 102 words verbatim, 1 guess, 3 holes; check_marks.py passes.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Integration check (12 Nov 2026) by a reader who took no part: sha256 of key_frozen.tsv matches FROZEN.sha256; heldout.py re-run 373/377 = 98.9%; check_marks.py 18 lines, 0 unmarked; a separate decoder written from key_frozen.tsv reproduces decryption_p1461.txt line by line; the EPA PDF fetched again and the plate (p. 57) and printed table (p. 58) looked at (opening words and the clear date and subscription agree; no sign-by-sign recheck at high zoom). 98 of 102 = 96.1% recounted. Catalogue 2236 corrected (Hofkriegsrat to Kuefstein). No change to the texts.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -230,6 +239,10 @@
     "blocker": "needs-physical-access",
     "detail": "Only the Donath 1964 halftone plate was seen; the clear heading and subscription, and the doubtful signs, need ELTE's original or a better image."
    }
-  ]
+  ],
+  "codes_open": {
+   "open": 2,
+   "tokens_open": 2
+  }
  }
 }

@@ -96,6 +96,23 @@ readings and the unused second cipher copy are recorded as open points. No sign,
   evidence for the letter-1 key, not a decoded document.
 - The letters on images 9-11, 13-15 and 17-26 (lists and accounts) were not transcribed.
 
+## Integration check (12 Nov 2026)
+
+Checked by a reader who did not take part; nothing was changed in the texts, and no page was written (the target is
+not finished: see Escalation and Remaining gaps).
+
+- **Scores re-run** (`python scripts/em.py key_frozen.tsv P1,P2`, `P3,P4n`, `P4`): P1 651, P2 473, P3 260, P4n 187, P4 140
+  matched letters, so training 1124/1408 = 79.8%, held out 447/587 = 76.1% and 400/535 = 74.8%, as stated.
+  `scripts/check_marks.py`: 39 lines, 0 failures. The scorer is a global letter alignment of the decryption against the
+  copy, so it is generous: the wrong part of the copy scores 0.39-0.41 and shuffled keys 0.38 (reviewer's figures, not
+  re-run), against 0.76 held out.
+- **What the held-out test is.** The key was frozen before P3-P4 were scored (by the contributor's record, one commit);
+  the clear copy is of the same letter, so the test validates the key against the known text, not a reading.
+- **Images.** PARES answered HTTP 429 to curl twice (20 s apart); the transcription was not compared with the scans.
+- **Why no page.** `Status: in progress` stays: four Escalation boxes are open and five gaps are not-attempted (second cipher
+  copy, signs without a value, letter 2, letters 3-5, Lohmann Villena), and a page needs a cipher snip from the scans.
+  Catalogue 2192 stays an open lead.
+
 ## Remaining gaps
 
 - Sign readings at 864 px, letter 1 - blocker: illegible; dots above and below are hard to see, and lines 1.01-1.28 and

@@ -4,8 +4,8 @@ WAINUT, 12 Nov 2026. Work done with AI language-model agents viewing the images;
 text. An independent AI language-model agent that took no part in the solve reviewed the folder blind (see
 "Independent review" below).
 
-Status: in progress (not yet written up). Read in part, 12 Nov 2026: 17 of 18 words read as sense; the one hole is
-the boxed code word VIVILA, which is not on the filed code list. No site page or README row.
+Written up (integration, 12 Nov 2026) as docs/goulart1946.html. Read in part, 12 Nov 2026: 17 of 18 words read as sense; the one hole is
+the boxed code word VIVILA, which is not on the filed code list.
 
 ## Document
 
@@ -92,6 +92,30 @@ no transcription error and asked for no change to the texts. Its points: complet
 checker's word list (done above), give the preamble reading as a suggestion (done above), and keep the held-out claim
 worded as resting on a single code word. It reads the faint pencil name after Bartolomeu on the code list as
 'Ferreira', 'Ferraz' or 'Teixeira', unclear; none of the ink or pencil additions looks like VIVILA or NEGOCIO.
+
+## Integration check (12 Nov 2026)
+
+Checked before the write-up, by a reader who did not take part. Everything below was reproduced or looked at again; the
+contributor's figures stand.
+
+- **Image.** The telegram (CorrespGV3 pagfis 521) fetched again with `scripts/fetch_docreader.py` (no login, no captcha): the 20 text
+  words, the address, the preamble and the service line agree with `transcription_goulart1946.txt`, as do the
+  boxed VIVILA and the pencil notes. The typed list (pagfis 1852) fetched too: 25 typed pairs, spellings agree with
+  `key_frozen.tsv`. The ink and pencil additions were not re-read (they are not used in the decryption).
+- **Scripts.** `scripts/decrypt.py` and `scripts/check_marks.py` re-run: same decryption, PASS (18 words, 1 marked
+  repair). With one code word the decoder is a one-line lookup; the integration did not write a second one.
+- **Count.** 17 of 18 words = 94.4% by the read bar (BARTOLOMEU is on the list, so it counts as read; SAUDS is an
+  abbreviation written out, not a supplied word; VIVILA is a hole). Under 95%: read in part. The same count holds if NEGOCIO
+  is read as plain.
+- **Key and test.** The list is headed 'Cifra (Ladislau para João Goulart)', the two correspondents of the
+  telegram, in the other direction; its date is only known as 1946-1950. The key was not built from the telegram, so the
+  whole telegram is held out, but the only test is one code-looking word of two (50%); the match of a common first name to
+  a list entry rests on the sense. The page says so.
+- **Catalogue.** Entry 1488 gave the telegram as 'Goulart -> Getulio Vargas'. The form is addressed to Ladislau Abreu (Rio,
+  Av. Presidente Wilson 113); the entry leaves the catalogue with the correction (CATALOGUE.md). It carries no
+  `decode_ids`, so there is no DECODE record to correct.
+- **Not done here.** The ink and pencil additions of the list, the OCR searches of CorrespGV3 (taken from the notes), and a
+  reading by a person who reads Portuguese.
 
 ## Remaining gaps
 

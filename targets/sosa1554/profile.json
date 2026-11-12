@@ -11,12 +11,17 @@
    "year": 1554,
    "country": "Panama",
    "route": "Álvaro de Sosa, Nombre de Dios -> officials at Seville",
-   "places": {"from": "Nombre de Dios", "to": "Seville"},
+   "places": {
+    "from": "Nombre de Dios",
+    "to": "Seville"
+   },
    "language": "Spanish",
    "pages": 2,
    "cleartext_in_document": "none",
    "plaintext": {
-    "location": ["separate collection"],
+    "location": [
+     "separate collection"
+    ],
     "source": "Clear copy of the same letter in AGI Panama 29 R.6 N.23 (PARES 381859), images 1-2, named in the PARES description of Indiferente 737 N.171 (transcribed in clear_panama29_R6_N23.txt). The same file holds a second clear copy (image 5) and a second cipher copy (images 8-9); neither was used."
    },
    "length": {
@@ -35,14 +40,25 @@
   }
  ],
  "system": {
-  "types": ["homophonic"],
+  "types": [
+   "homophonic"
+  ],
   "summary": "Letter substitution in Latin-looking signs, word gaps kept. A consonant sign takes a dot above for a following a and a dot below for a following e; other vowels have their own signs (e = s, i = a free dot, o = B/ah, u = o/w/3h, a = nh/g). D with a dot, above or below, is que. A few homophones (n = m/N, c = x/r, l = L/1). Numbers are written out in words.",
   "symbol_kind": "symbols",
   "distinct_symbols": 34,
-  "diacritics": {"used": true, "note": "dot above = following a, dot below = following e, two dots above = following a; D with a dot = que"},
-  "homophones": {"used": true},
-  "nomenclator": {"present": false},
-  "nulls": {"present": false},
+  "diacritics": {
+   "used": true,
+   "note": "dot above = following a, dot below = following e, two dots above = following a; D with a dot = que"
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
   "key_order": "random",
   "word_division": "kept",
   "notes": "distinct_symbols: the 34 identified base shapes in the transcription of letter 1 (marks not counted apart; ? and ?? left out). key_frozen.tsv has 36 entries plus the mark rules. Five shapes (2, b, d, e, p) have no value yet: 49 tokens, besides the 7 unidentified ones. No nulls or code words were found in letter 1; D' and D, = que is the only sign for a word. Letters 2-5 of the unit are in other hands; the second hand forms several signs differently."
@@ -54,14 +70,19 @@
    "found": "before attempt",
    "used": true
   },
-  "inputs": ["images", "known plaintext"],
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
   "attack": "known plaintext",
   "human_role": "WAINUT set the task (catalogue 2192) and the rules; AI language-model agents transcribed, built and froze the key, decrypted and checked. No target-specific human intervention. No human palaeographer checked the text.",
   "tools": [
    "PARES images of Indiferente 737 N.171 and Panama 29 R.6 N.23 at 864 px",
    "scripts in this folder (mechanical decryption, letter alignment and held-out score, marked reading and mark check)"
   ],
-  "models": ["AI language-model agents (WAINUT), viewing the images"],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
   "first_date": "2026-11-12",
   "last_date": "2026-11-12"
  },
@@ -87,7 +108,10 @@
   {
    "date": "2026-11-12",
    "kind": "key from source",
-   "technique": ["manual reconstruction", "EM alignment"],
+   "technique": [
+    "manual reconstruction",
+    "EM alignment"
+   ],
    "what": "Draft key from word pairs of paragraphs 1-2 against the clear copy, refined by letter-alignment tallies (scripts/em.py, Needleman-Wunsch); frozen as key_frozen.tsv (36 entries plus the two mark rules) before the held-out paragraphs were scored.",
    "result": "worked"
   },
@@ -100,7 +124,9 @@
   {
    "date": "2026-11-12",
    "kind": "control",
-   "technique": ["plaintext matching"],
+   "technique": [
+    "plaintext matching"
+   ],
    "what": "Frozen key on held-out paragraphs 3-4: 447 of 587 copy letters matched (76.1%), with the copy's numerals written out; 400 of 535 (74.8%) against the copy as written. Training paragraphs 1-2: 1124 of 1408 (79.8%). The two-line heading, never used for the key, decrypts to the copy's title.",
    "result": "worked"
   },
@@ -119,9 +145,20 @@
   {
    "date": "2026-11-12",
    "kind": "verification",
-   "technique": ["statistical test"],
+   "technique": [
+    "statistical test"
+   ],
    "what": "Independent blind review by an AI language-model agent that did not take part: 4 lines copied from the scans before the transcription was opened (roughly 85% of base shapes agree; differences in dots and a few sign identities); decryption and mark check re-run; held-out score re-measured; no key token occurs only in the held-out lines; the correct decryption against the wrong part of the copy scores 0.39-0.41 and 20 shuffled keys 0.384 on average (0.419 at most), against 0.761. State 'decoded, not read' confirmed; letter 2 judged an attempt, not a separate text.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Integration check (12 Nov 2026) by a reader who took no part: em.py re-run (training 1124/1408, held out 447/587 = 76.1%, P4 against the copy as written 400/535) and check_marks.py (39 lines, 0 failures) reproduce the figures; the transcription could not be compared with the PARES scans (HTTP 429 twice). No page written: escalation open, five gaps not-attempted.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -129,8 +166,15 @@
   "key": "partial",
   "method": "key recovered based on plaintext from external sources",
   "method_basis": "Key built from paragraphs 1-2 of letter 1 (Indiferente 737 N.171) against the contemporary clear copy of the same letter filed in another bundle (Panama 29 R.6 N.23), frozen, and tested on held-out paragraphs 3-4 and on the heading.",
-  "contribution": ["transcription", "key recovered"],
-  "verification": ["independent verification", "matched control", "key confirms"],
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "verification": [
+   "independent verification",
+   "matched control",
+   "key confirms"
+  ],
   "provenance": "contributed",
   "credits": [
    {

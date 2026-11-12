@@ -4798,6 +4798,31 @@
    "year": 1814,
    "found": 2026,
    "note": "A surviving sheet of the State Department's numerical code, NARA M97 roll 13 frames 1056-1057, printed by Weber (1979) as WE028; working transcription in targets/morris1813/beling/key/codebook_M97_13_transcription.csv (seven entries blank, eleven disputed). The same code as the table rebuilt in targets/jqa (k-jqa1385)."
+  },
+  {
+   "id": "k-goulart-cifra",
+   "label": "Cifra (Ladislau para João Goulart): typed list of 25 cover words, GV c 1946/1950.00.00/5",
+   "kind": "archive key",
+   "by": "unknown typist, filed in the Arquivo Getúlio Vargas",
+   "year": 1946,
+   "note": "25 typed pairs written 'meaning -code' (P.T.B. -Sociedade, H.Borghi -Bartolomeu, Dutra -Manoel, Getulio Vargas -Varela ...), later ink and pencil additions, and stock phrases for weekly telegrams to Alzira; CPDOC DocReader CorrespGV3 page 1852. The date of the list is given only as 1946-1950. targets/goulart1946/key_frozen.tsv."
+  },
+  {
+   "id": "k-goulart-1950",
+   "label": "Code of first names and car makes, GV c 1950.02.00/1 (Amaral Peixoto)",
+   "kind": "archive key",
+   "by": "",
+   "year": 1950,
+   "note": "Three pages (CorrespGV3 pages 4665-4667): first names for politicians, car makes with assessments, notes on the 1950 succession; transcribed in part in targets/goulart1946/key_1950.tsv."
+  },
+  {
+   "id": "k-kuefstein-donath",
+   "label": "Kuefstein's letter alphabet (graphic signs, two for each vowel), printed in Donath 1964 p. 58",
+   "kind": "scholar's key",
+   "by": "Regina Donath",
+   "year": 1629,
+   "found": 1964,
+   "note": "Rebuilt by Donath from the glossed drafts in ELTE G. 4 Fol. Tom. V and printed in Magyar Könyvszemle 80 (1964) no. 1; targets/hofkriegsrat1629/key_frozen.tsv maps it to the shapes of the plate and adds two nulls fixed from the plate."
   }
  ],
  "links": [
@@ -7734,6 +7759,18 @@
    "target": "morris1813",
    "how": "adapted",
    "note": "The block reversal was first found on frame 0039 by fitting this table (WAINUT, 27 Oct 2026): function-word share 0.353 against at most 0.297 for 20,000 random block orders; the later readings use the code sheet itself (k-we028)"
+  },
+  {
+   "key": "k-goulart-cifra",
+   "target": "goulart1946",
+   "how": "read unchanged",
+   "note": "the list gives BARTOLOMEU = H. Borghi, one of the two code words of the telegram; VIVILA is on no list"
+  },
+  {
+   "key": "k-kuefstein-donath",
+   "target": "hofkriegsrat1629",
+   "how": "adapted",
+   "note": "Donath's printed alphabet mapped to the plate shapes and frozen; two nulls and the shape of k fixed from the plate; 98 of 102 words read"
   }
  ],
  "sources": [
@@ -10296,6 +10333,11 @@
    "key": "k-we028",
    "target": "king1797",
    "note": "the WE028 sheet in both block orders against King's key: 757 and 752 numbers in common, none with the same value, no constant offset (targets/king1797/NOTES.md)"
+  },
+  {
+   "key": "k-goulart-1950",
+   "target": "goulart1946",
+   "note": "the 1950 list matches none of the 20 words of the telegram"
   }
  ]
 }

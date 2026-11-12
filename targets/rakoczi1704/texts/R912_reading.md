@@ -1,5 +1,5 @@
 <!-- Reading of R912 built 23 Oct 2026 by Claude Opus 5.5 (REREAD_BRIEF, batch b22). Page 1 follows the contemporary interlinear decipherment (read on IMG_R912_I4877_P1; DECODE's PLAINTEXT copy of it is garbled) checked against the figures of tr/R912_p1.txt decoded with the corrected Bonac-Groffey table R639 (decode_tr.py); the three lines the decipherer left (l. 16 end to l. 18) and pages 2-3 (interlinear over the first line or two only) rest on the figures alone (tr/R912_p2.txt, p3.txt; scaffold research/reading_audit/b22_rk_lines.py). Word division, apostrophes and punctuation added; spelling as the groups give it. Table syllables used for their sound as in R922 (161 con, 160 com, 395 son, 188 dont, 343 pre, 170 che, 129 av, 341 pouvoi, 400 'secret' = ti, 127 'arme' = ar, 252 'interets' = inte). Look-alike readings and figure corrections against tr/: texts/R912-R922_corrections.tsv. [?word] = partly carried; [word] = supplied by the sense; [...] = unread; [93] = an unidentified group. -->
-<!-- 12 Nov 2026 (lccompany, fuller reading of pp. 2-3): fifteen holes worked from the figures of tr/R912_p2.txt and p3.txt with the same table (texts/R912_fills_2026-11-12.tsv, each row checked against tr/ and decode_tr.py); five rest on a look-alike alternate, listed in texts/R912-R922_corrections.tsv and not re-read on the image (the DECODE images need a login); those five words are marked [?word] (blind review, 12 Nov 2026). -->
+<!-- 12 Nov 2026 (lccompany, fuller reading of pp. 2-3): fifteen holes worked from the figures of tr/R912_p2.txt and p3.txt with the same table (texts/R912_fills_2026-11-12.tsv, each row checked against tr/ and decode_tr.py); five rest on a look-alike alternate, listed in texts/R912-R922_corrections.tsv and not re-read on the image (the DECODE images need a login); those five words are marked [?word] (blind review, 12 Nov 2026). Integration check, 12 Nov 2026: four more places that rest on sense alone are marked too ([?procédé], [?dire], j'[?ay], [?escrivant]; NOTES.md) and counted as holes. -->
 
 # R912, an agent with the Swedish army to Ferenc Rákóczi II, 5 November 1707 (MNL OL G15 Caps. C. Fasc. 39, pp. 312-314)
 
@@ -33,10 +33,10 @@ ministre, pour expliquer les motifs de vostre commerce avec le Czar, dans le [..
 La Cour de Pologne [?est] plus retirée. Le Roy Stanislas prétend que vous [...] pas encore, Monseigneur, [...] du retour de
 vostre amitié capables d'effacer les impressions qu'une démarche pareille à [...] a faites sur son esprit, et croit ne
 devoir pas estre satisfait du renvoy des [?enfans] de Monsieur le Palatin de Russie, à cause que Vostre Altesse, en
-escrivant sur ce sujet à leur père, l'a en mesme temps fait ressouvenir de la perte [?de] son régiment de
-[?Bielck]. Je ne vous arresteray point, Monseigneur, par le récit de tout ce que j'ay représenté sur ce sujet, ni à vous
+[?escrivant] sur ce sujet à leur père, l'a en mesme temps fait ressouvenir de la perte [?de] son régiment de
+[?Bielck]. Je ne vous arresteray point, Monseigneur, par le récit de tout ce que j'[?ay] représenté sur ce sujet, ni à vous
 faire remarquer ce qui paroit de soy mesme, à scavoir que le Roy Stanislas [...] les Allemans [...] obligez pour ne pas
-satisfaire Vostre Altesse au sujet du régiment. J'auray seulement l'honneur de vous dire que, lorsque j'ay demandé
+satisfaire Vostre Altesse au sujet du régiment. J'auray seulement l'honneur de vous [?dire] que, lorsque j'ay demandé
 quelles preuves on souhaitoit que vous donnassiez, Monseigneur, pour persuader le Roy de Pologne de la sincérité de vos
 sentimens, [...] vous attendre sur le dédommagement du régiment, on m'a répondu au premier de ces [?deux] [?points] qu'il falloit que
 Vostre Altesse s'abandonnât [...] le Palatin et [...] la Palatine de Belz [...].
@@ -46,7 +46,7 @@ bonne intelligence [...] que le Roy son maître demandoit une [?lettre] de la pa
 vous dire, Monseigneur, [...] les obligations qu'il vous a [...] de retraitte que vous avez donnée à Tekeli [...] qu'il
 ne vous en doit aucune [...].
 
-Ne pourroit-on pas dire que la Cour de Pologne suit dans son procédé, tant [?à] l'égard de Vostre Altesse que de Monsieur le Palatin
+Ne pourroit-on pas dire que la Cour de Pologne suit dans son [?procédé], tant [?à] l'égard de Vostre Altesse que de Monsieur le Palatin
 de Belz, son attachement pour les intérêts de l'Empereur? Je ne scavois mesme si elle ne scauroit pas [...] le Roy de Suède à
 chagriner Vostre Altesse par le motif de ses liaisons avec Monsieur le Palatin de Belz. Je puis me tromper, mais je
 croi ne devoir pas cacher ma pensée à Vostre Altesse, afin qu'elle prenne les mesures qui luy seront convenables. Je

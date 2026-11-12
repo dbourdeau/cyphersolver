@@ -107,6 +107,30 @@ and borders, and whether they have dispersed or are still together; the Council 
   2024 on the preparation of the embassy was seen in the search results only, not opened.
 - A printed decipherment of this page was not found; the key is printed (Donath p. 58) and was used as such.
 
+## Integration check (12 Nov 2026)
+
+Checked before the write-up, by a reader who did not take part; the contributor's figures stand.
+
+- **Key and scripts.** `sha256sum key_frozen.tsv` equals `FROZEN.sha256` (6799b8a3...). `scripts/heldout.py` re-run: 373/377 =
+  98.9% (615: 69/70, 1069: 165/167, 755: 139/140). `scripts/check_marks.py`: 18 lines, 0 unmarked departures.
+  A separate decoder written from `key_frozen.tsv` and `transcription_p1461.txt` gives a decryption identical to
+  `decryption_p1461.txt`, line by line.
+- **Source.** The EPA article PDF was fetched again (HTTP 200): the plate of p. 1461 is on journal p. 57 (PDF page 11) and
+  the alphabet table on p. 58. The table is a full letter alphabet in Donath's hand (a-z, two signs for each vowel); the
+  opening words of the plate (g e n e d i g i s t e r, 'Wien den', the date and the subscription) agree with the transcription at
+  the resolution seen (110 dpi); individual signs were not re-checked at high zoom.
+- **Count.** 98 of 102 = 96.1% (3 holes and the guess [?man]); over the read bar. The three values fixed on the plate
+  (gx, & as nulls, the dotted circle as k) are counted as read because the words they sit in read as German; the page says
+  they rest on position and are outside the held-out test.
+- **Test.** The held-out specimens are Donath's own glossed drafts, from the same author and volume as the table, so the
+  test shows the mapping of printed types to plate shapes, not an independent key; the freeze order is by the
+  contributor's record (single commit).
+- **Catalogue.** Entry 2236 (title, correspondents, place) is corrected: the page is a letter from the Hofkriegsrat in Vienna to
+  Kuefstein, not a despatch of Kuefstein from Constantinople to Ferdinand III; it leaves the catalogue (CATALOGUE.md).
+  There is no DECODE record (`decode_ids` empty).
+- **Not done here.** The manuscript (not digitised, as far as found), a human palaeographer, a second image of the
+  doubtful signs.
+
 ## Remaining gaps
 
 - The opening group `[1] [2]` and `[3]` before "herrn" are unread; a sheet of code words for this cipher (if the

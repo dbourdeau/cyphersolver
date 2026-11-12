@@ -139,6 +139,15 @@
    ],
    "what": "Blind review by an independent AI language-model agent: it read the image before opening the transcription (20 of 20 text words agree), re-ran decrypt.py and check_marks.py, ran its own tamper test, and read the text as sentences against the translation (grade A, read in part). It found no transcription error; the checker word-list gaps and a suggested reading of the preamble figures were added to NOTES.md.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Integration check (12 Nov 2026) by a reader who took no part: the telegram (pagfis 521) and the typed code list (pagfis 1852) fetched again from the CPDOC DocReader (no captcha); all 20 text words, address, preamble and service line agree with the transcription, and the 25 typed pairs agree with key_frozen.tsv; decrypt.py and check_marks.py re-run (PASS, 1 marked repair); 17 of 18 = 94.4% recounted by the read bar. The test of the key rests on one name (1 of 2 code words); catalogue 1488's addressee corrected (Ladislau Abreu, not Vargas). No change to the texts.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -223,6 +232,10 @@
     "blocker": "too-short",
     "detail": "No second text in this code was found; both rest on one telegram and on a single code word (BARTOLOMEU)."
    }
-  ]
+  ],
+  "codes_open": {
+   "open": 1,
+   "tokens_open": 1
+  }
  }
 }

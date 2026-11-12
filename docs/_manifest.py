@@ -362,6 +362,12 @@ PAGES = [
          blurb='Twenty-eight ciphered passages in the register of the nuncio at Vienna (BAV Barb.lat. 6960, DECODE R286&ndash;R313). Their contents were printed in 1897 from the Roman decipherments. The key is Biermann and Bosbach&rsquo;s of 2018 for the sibling volume 6956, which George Lasry found also fits 6960; applied here, it gives running Italian in every record, with about 1,750 code groups open. Earlier attacks made before the key was known are recorded.',
          quote='&ldquo;&hellip;con che il demonio resteria ingannato e burlato.&rdquo;',
          rights='Manuscript rights: Biblioteca Apostolica Vaticana'),
+    dict(slug='hofkriegsrat1629', footer_date='November 2026', label='Hofkriegsrat to Kuefstein 1629', year='1629', y=1629.8, place='Vienna &rarr; Kuefstein', st='solved', stt='known key',
+         title='The Imperial War Council writes to Kuefstein in cipher, Vienna, 27 October 1629',
+         blurb='A cipher letter on p. 1461 of the Kuefstein volume in Budapest, listed as a despatch of Kuefstein to Ferdinand III. Its clear heading, date and subscription show it is a letter from the Hofkriegsrat in Vienna to Kuefstein, the imperial orator. WAINUT read it with the alphabet Regina Donath printed in 1964: 98 of 102 words, asking on the Emperor&rsquo;s order what troops were the 3,000 Turks who received him at Buda. The opening code group, a two-sign group and one word stay open; only a halftone plate was seen.',
+         quote='&ldquo;von drey taussent man starckh, empfangen worden&rdquo;',
+         author='WAINUT',
+         rights='ELTE University Library, Budapest, Manuscripts, G. 4 Fol. Tom. V, p. 1461; plate in Donath, Magyar K&ouml;nyvszemle 80 (1964), p. 57, via EPA'),
     dict(slug='santacruz1630', label='Philip IV to Santa Cruz 1630', year='1630', y=1630.93, place='Madrid &rarr; Milan', st='solved', stt='read',
          title='Philip IV to the Marquis of Santa Cruz, Madrid, 6 December 1630',
          blurb='A seven-page royal cipher letter to the governor of Milan, marked &ldquo;sin descifrar&rdquo; in the Archivo Hist&oacute;rico de la Nobleza (SANTA CRUZ C.50 D.213). Brice Dudout rebuilt the key from fourteen cipher and decipherment pairs of the same correspondence and tested it on a held-out letter (0.752 of words, 0.857 of characters), then read 1,162 of 1,171 words. The King approves the Casale agreement obtained by Mazarini, wants peace by March and orders a secret inquiry into the army. Contributed by Brice Dudout.',
@@ -2739,6 +2745,12 @@ PAGES = [
          blurb='Message A115 from the Higher SS and Police Leader Russia Centre at Mogilev, in the double-box cipher under the daily key of 16 June 1942, published by Frode Weierud in 2020. Bletchley decrypted it at the time and Hanyok reproduced the decrypt: sixteen men of Police Battalion 51 killed, and the village of Borki razed and its inhabitants &ldquo;liquidated&rdquo;. The decrypt could not be aligned letter by letter with the 223 cipher letters, so the key was not recovered here.',
          quote='&ldquo;Das Dorf BORKI &hellip; wurde dem Erdboden gleichgemacht. Die Einwohnerschaft liquidiert.&rdquo;',
          rights='Images: NARA, RG 457 (HCC), via Weierud 2020 and Hanyok 2005'),
+    dict(slug='goulart1946', footer_date='November 2026', label='Goulart to Ladislau Abreu 1946', year='1946', y=1946.18, place='S&atilde;o Borja &rarr; Rio de Janeiro', st='partial', stt='read in part',
+         title='A coded telegram from Jo&atilde;o Goulart to Ladislau Abreu, March 1946',
+         blurb='A 20-word Portuguese telegram signed Jango, in an open code of cover words. The code list filed in the same archive, headed &ldquo;Cifra (Ladislau para Jo&atilde;o Goulart)&rdquo;, gives BARTOLOMEU as H. Borghi, so the telegram tells Ladislau Abreu to let him deal with the matter without any commitment. 17 of 18 words read; the last code word, VIVILA, boxed in ink, is on no list. The catalogue had the addressee as Get&uacute;lio Vargas.',
+         quote='&ldquo;avise Bartolomeu pode tratar assunto sem assumir compromisso&rdquo;',
+         author='WAINUT',
+         rights='CPDOC/FGV, Arquivo Get&uacute;lio Vargas, GV c 1946.03.09/2 and GV c 1946/1950.00.00/5, via the CPDOC DocReader'),
     dict(slug='feynman', label='Feynman ciphers 2 and 3', year='undated', y=1953, place='United States', st='solved', stt='known key applied',
          title='Feynman ciphers nos. 2 and 3, undated',
          blurb='Two English ciphers attributed to Feynman, a stanza of Housman and the opening of his paper on liquid helium, enciphered with two substitution alphabets alternating word by word, even-length words reversed and word boundaries dropped. David Vierra solved them in May 2023; re-enciphering his plaintexts here matches 228 of 231 letters of no. 3.',
@@ -3438,3 +3450,5 @@ IMAGES['fiedmond1779'] = ('fiedmond1779_lead.jpg', 'The letter of 19 July 1779 o
 IMAGES['peking1912'] = None
 IMAGES['nanking1930'] = None
 IMAGES['vanhalen1840'] = None
+IMAGES['hofkriegsrat1629'] = ('hofkriegsrat1629_lead.jpg', 'The clear heading and the first cipher lines of p. 1461, from the 1964 halftone plate', 'Donath Regina, Magyar K&ouml;nyvszemle 80 (1964) no. 1, p. 57, plate of ELTE G. 4 Fol. Tom. V p. 1461, via EPA (epa.oszk.hu)')
+IMAGES['goulart1946'] = ('goulart1946_lead.jpg', 'The text strips of the telegram; VIVILA is boxed in ink', 'CPDOC/FGV, Arquivo Get&uacute;lio Vargas, GV c 1946.03.09/2 (CorrespGV3, page 521), via the CPDOC DocReader')
