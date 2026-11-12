@@ -139,7 +139,7 @@
   "conditions": {
     "prior_solution": {
       "exists": "partial",
-      "where": "A contemporary hand deciphered about 55% of the cipher on the letters themselves (234 of 426 units: the foot of c. 17r, and between the lines on cc. 1 and 13v). For the rest, priority is NOT established: Lindgren, Il Saggiatore musicale 23/2 (2016), 277-374, uses this file and treats Riva's recruiting of singers; it was not seen (not open access) and may quote the Borosini passage. Lindgren and Timms 2003 (searched): not these letters.",
+      "where": "A contemporary hand glossed 267 of the 426 units (about 63%) on the letters themselves (the foot of c. 17r, and between the lines on cc. 1 and 13v); 234 of those are read here. For the rest, priority is NOT established: Lindgren, Il Saggiatore musicale 23/2 (2016), 277-374, uses this file and treats Riva's recruiting of singers; it was not seen (not open access) and may quote the Borosini passage. Lindgren and Timms 2003 (searched): not these letters.",
       "found": "before attempt",
       "used": true
     },
@@ -314,21 +314,21 @@
       {
         "who": "contemporary",
         "role": "key or decipherment used",
-        "note": "the decipherment written at the time on the letters (foot of c. 17r; between the lines on cc. 1 and 13v): the source of every key value and of about 55% of the plaintext",
+        "note": "the decipherment written at the time on the letters (foot of c. 17r; between the lines on cc. 1 and 13v): the source of every key value; it covers 267 of the 426 groups (about 63%), and the 159 groups without a gloss are the new part",
         "date": "1721",
         "source": "Estense IIIF images"
       },
       {
         "who": "mcbratney",
         "role": "solution",
-        "note": "lead 1568: key K21 from the gloss and the unglossed parts of three letters read in part, with Claude; issue #432",
+        "note": "lead 1568: key K21 from the gloss and the unglossed parts of three letters read in part, with AI agents; issue #432",
         "date": "2026-11-11",
         "source": "https://github.com/dbourdeau/cyphersolver/issues/432"
       },
       {
         "who": "mcbratney",
         "role": "transcription",
-        "note": "three letters from the Estense images, with Claude; two of them not tagged as cipher in the catalogue",
+        "note": "three letters from the Estense images, with AI agents; two of them not tagged as cipher in the catalogue",
         "date": "2026-11-11"
       },
       {
@@ -378,15 +378,15 @@
         "translation": "translations/starhemberg_1720-12-21.md",
         "language": "it",
         "state": "read in part",
-        "read_share": 0.857,
-        "summary": "A two-line postscript in cipher: 'Lei continui di scrivermi in ziffere spesso', keep writing to me in cipher, often. The earliest dated use of this cipher in the file; the writer asks Riva to use it.",
+        "read_share": 0.909,
+        "summary": "A two-line postscript in cipher: 'Lei continui di scrivermi in ziffere spesso', keep writing to me in cipher, often. The earliest dated use of this cipher among the leaves examined (cc. 3-12 and 15-16 of the file were not examined); the writer asks Riva to use it.",
         "reading_review": {
           "grade": "B",
           "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (the session that prepared these files). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
           "date": "2026-11-12",
           "note": "Read as sentences against the translation. Connected Italian; holes marked in place (codes, the q/e group, doubled letters emended, words read by sense)."
         },
-        "note": "read_share is our count of the README word rule on the reading file (6 words, 1 holes, 0 doubtful); the clear text is counted with the cipher. By cipher units: 30 of 33; without a gloss 10 of 13."
+        "note": "read_share is the strict share of cipher units read (counts.txt): 30 of 33 (90.9%); without a gloss 10 of 13. An earlier count by words is not used."
       },
       {
         "doc": "starhemberg_1721-05-31",
@@ -397,7 +397,7 @@
         "translation": "translations/starhemberg_1721-05-31.md",
         "language": "it",
         "state": "read in part",
-        "read_share": 0.886,
+        "read_share": 0.894,
         "summary": "His return to England is certain, as Ambassador. In cipher: the Duke of Modena does well to continue his devotion to the House of Austria, the more so as examples show that those who have been faithful to it have gained very great advantages; he will say more on this point when he arrives. The second half is not covered by the contemporary gloss.",
         "reading_review": {
           "grade": "B",
@@ -405,7 +405,7 @@
           "date": "2026-11-12",
           "note": "Reads as one Italian sentence (\"suo Ser[enissimo] Duca fa bene di continuare la sua divotione verso l augusta Casa d Austria, tanto piu che gli essempi mostrano che [quelli che] sono stati fedeli ... hanno acquistati grandissimi vantaggi\"), the first half the gloss own text."
         },
-        "note": "read_share is our count of the README word rule on the reading file (62 words, 8 holes, 0 doubtful); the clear text is counted with the cipher. By cipher units: 93 of 104; without a gloss 31 of 36."
+        "note": "read_share is the strict share of cipher units read (counts.txt): 93 of 104 (89.4%); without a gloss 31 of 36. An earlier count by words is not used."
       },
       {
         "doc": "starhemberg_1721-06-14",
@@ -416,15 +416,15 @@
         "translation": "translations/starhemberg_1721-06-14.md",
         "language": "it",
         "state": "read in part",
-        "read_share": 0.869,
-        "summary": "He asks about the South Sea affair and whether an opera company will be formed in London this year. In cipher: Borosini, in Vienna, sings tenor and has no equal in Europe; he would join the company if asked for in the name of the King or of the company, and a letter of request to Starhemberg would do. A certain Colman has arrived to serve under St Saphorin, the British minister: is he the son of 'Hoffman'? He wants all the talk of court and nation in London on Vienna's conduct towards 'Sig. Cnigt' (Robert Knight of the South Sea Company, by sense). Context: the Royal Academy of Music's recruiting of singers; Francesco Borosini did sing in London in 1724-25.",
+        "read_share": 0.862,
+        "summary": "He asks about the South Sea affair and whether an opera company will be formed in London this year. In cipher: Borosini, in Vienna, sings tenor and has no equal in Europe; he would join the company if asked for in the name of the King or of the company, and a letter of request to Starhemberg would do. A certain Colman has arrived to serve under St Saphorin, the British minister: is he the son of 'Hoffman'? He wants all the talk of court and nation in London on Vienna's conduct towards 'Sig. Cnigt' (Robert Knight of the South Sea Company, by sense). Context: the Royal Academy of Music's recruiting of singers; (Borosini's London engagement of 1724-25 is not checked here.)",
         "reading_review": {
           "grade": "B",
           "by": "integration reviewer (an AI reader, 12 Nov 2026), reading the decryption as sentences against the translation; not a person",
           "date": "2026-11-12",
           "note": "Builds Italian sentences about Borosini, Colman and Hoffman with holes in about a fifth of the cipher words; the glossed sentences are the glossator, the rest is model reading."
         },
-        "note": "read_share is our count of the README word rule on the reading file (276 words, 38 holes, 3 doubtful); the clear text is counted with the cipher. By cipher units: 249 of 289; without a gloss 97 of 110."
+        "note": "read_share is the strict share of cipher units read (counts.txt): 249 of 289 (86.2%); without a gloss 97 of 110. An earlier count by words is not used."
       }
     ],
     "key_file": [

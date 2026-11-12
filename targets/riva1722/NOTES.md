@@ -125,7 +125,7 @@ Full Italian with holes in place: `readings/`. English: `translations/`.
   first transcription right or probably right in 29, unclear 1, blind right 3 (tick marks only). Olivazzi: pass B blind,
   349 of 379 groups the same as pass A (92.08%); 27 places adjudicated on crops (14 for A, 11 for B, 2 neither);
   that adjudication was key-aware. No second transcription: 20 Mar 1726, 19 Feb 1727, the two undated letters (for
-  those two, another contributor's passes in `targets/selvatico1719/work/` agree at 159/176 and 45/48 groups).
+  those two, another contributor's passes of the two undated letters in `targets/selvatico1719/work/` agree at 159/176 and 45/48 groups; comparison only).
 - The reviewer's spot check of 87 groups of the 1726 letter against the image: 87 of 87, one accent tick missed.
 - The repository's checker scripts were not run by us (we treat downloaded repositories as data). The checks they make
   were verified by reading them; see the pull request text.
@@ -138,14 +138,14 @@ Full Italian with holes in place: `readings/`. English: `translations/`.
 - the K2 rows read off the two glossed letters of 1726 (27 Feb, 6 Mar) - blocker: no-key-material; only 10 gloss pairs and a rough group reading of c. 5r were written down, and the two letters are not transcribed in full, so K2 itself cannot be re-derived from the files (the pair behind 8_ = E, replaced by PER in K3, is not among the ten)
 - Olivazzi 17 Apr 1725: four stretches not read, the right edge of 2v under the facing leaf; 2v is decoded, not read - blocker: illegible
 - Lindgren 2016 (Il Saggiatore musicale 23/2) not seen - blocker: needs-physical-access; sold by the publisher's platform, needs a library copy; the Modena-side records (Archivio di Stato, cifrari) are the other place a key may survive
-- Other Riva correspondents: 398 of 535 further records viewed in full, no other letter in this table; 111 not checked - blocker: needs-physical-access; records not reachable from here
+- Other Riva correspondents: 398 of 535 further records viewed in full, no other letter in this table; 111 recorded as not checked (the folder's figures leave 26 of 535 unaccounted for) - blocker: needs-physical-access; records not reachable from here
 
 ## Further work (outside this target's texts)
 
 - Clear text of all letters: one reader (the model), abridged in places.
 - Transcriptions against the images: apart from the contributor's own two passes and blind second transcriptions, the
   checks are by AI readers only (the 12 Nov reviewer: 87 of 87 groups of 20 Mar 1726; the integration check below: all 104
-  groups of the 31 May 1721 letter in `targets/starhemberg1721` and all 97 groups of 19 Feb 1727). No person has compared them.
+  groups of the 31 May 1721 letter in `targets/starhemberg1721` and all 97 groups of 19 Feb 1727). No person has compared any transcription with the images.
 
 ## Integration check (12 Nov 2026)
 
@@ -166,7 +166,8 @@ What was checked, from the files, before the page was written (full report in th
 - Counting: the figures count cipher units (a syllable or a word sign), the strict rule of this folder. A word with one open
   syllable still counts its other syllables as read. A rough count by words (the words inside the asterisks of
   `readings/`, a word with any bracket or `?` as open) gives about 74% for the nine letters, 60% for Olivazzi: an estimate
-  made at integration, not a measurement. Neither figure is near the 95% bar.
+  made at integration, not a measurement, and not used for any figure on the page or in `profile.json`, where every
+  `read_share` is the strict unit share (it was a word-rule count until the claims review of 12 Nov 2026). Neither figure is near the 95% bar.
 - Images: 19 Feb 1727 c. 23r, all 97 groups and the underlines agree with the transcription on the 1,400-px image.
 - Keys: K3 applied to the 31 May 1721 letter gives no language (`lm.best_language`), K21 gives Italian: the Starhemberg
   letters of 1720-21 are another key and are in `targets/starhemberg1721`. K21 is related to the 1719 table of
@@ -175,7 +176,7 @@ What was checked, from the files, before the page was written (full report in th
 
 ## Escalation
 
-- [x] siblings: the Estense file for Starhemberg, Selvatico and Olivazzi viewed; the two glossed 1726 letters are the key source; 398 of 535 further Riva records viewed, no other letter in this table
+- [x] siblings: the Estense file for Starhemberg, Selvatico and Olivazzi viewed; the two glossed 1726 letters are the key source; 398 of 535 further Riva records viewed (111 recorded as not checked; 26 unaccounted for), no other letter in this table
 - [x] clear-pages: no clear copy of any of the nine letters; the dates written in clear inside the cipher lines of 20 Mar 1726 taken out of the cipher
 - [x] known-keys: the 1719 table of `selvatico1719` (its contributor found that it does not read the 1722 letters); K21 of `starhemberg1721` and K3 tried on each other's letters: neither fits
 - [x] print: Lindgren and Timms 2003 and Stefani searched in open copies (no cipher); Lindgren 2016 not seen (paywalled), recorded as a gap
@@ -209,3 +210,17 @@ What was checked, from the files, before the page was written (full report in th
 - `decryptions/`: line by line against the transcription. `units.tsv`: every unit with its mark. `counts.txt`.
 - `readings/`, `translations/`, `holes.md`.
 - `timestamps/`: seven stamps of 11 Nov 2026 with the stamped files, second transcriptions among them.
+
+## Claims review by a second reader (12 Nov 2026)
+
+An independent reader checked the page against this folder. Changed:
+
+- `read_share` of every letter in `profile.json` is now the strict unit share (83.3, 84.7, 85.3, 90.9, 89.2, 86.0, 73.7, 86.5, 86.6%); it had been a word-rule count (93, 78, 90, 84, 85, 83, 79, 82, 78%) that clashed with the unit figures on the same page.
+- Hero strip: the 80 of `23r.L1` unit 7 is raw `30|80` (transcription doubt, value d, mark E) and 51 is mark E: both shown with a question mark.
+- "Where" row: the 27 Feb and 6 Mar 1726 letters carry a decipherment in the file; none of the nine does.
+- Reconnaissance sweep: 398 viewed + 111 not checked = 509 of 535; 26 unaccounted for, stated.
+- Comparison passes of `selvatico1719` cover the two undated letters only.
+- Image checks named as model checks; no person has compared any transcription with the images.
+- Held-out paragraph completed (90 of 2,175 read units use a K3-changed row; the pooled 85.6% includes 1,273 units of the in-sample letters).
+- Section 04: proposed values marked as such; the household and children in London (1727 letter) rests on the clear text this folder does not carry.
+- Inferences about Riva's own table and the shape of row 5 marked as such; the 20 Mar 1726 control not re-run after the date fix is stated on the page.

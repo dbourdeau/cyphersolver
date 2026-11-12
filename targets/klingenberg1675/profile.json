@@ -351,7 +351,7 @@
       "syllabic",
       "nomenclator"
     ],
-    "summary": "Three layers used together inside one word. (1) About 25 letter signs, one per letter (c is a large double-barred sign, g a small single-bar one). (2) A syllable table in alphabetical order, 432-525: a row of five for the vowels (434 is a stop or null) and for each consonant b c f g h j k l m n p r s t v w z (ba 437 ... zu 525); the d row has four (447 de to 450 du; da is the word code 158). (3) Numbers 1-430: words, names and frequent syllables (78 ge, 117 be, 389 ver, 290 lich, 210 Schweden, 326 Churfürst). 106 of them have a value in map v4; well over a hundred seen in the letters have none. Clear text and cipher alternate within the sentence. Not the image-55 key (K55) of the Høeg and Meyercron letters in targets/biermann1675.",
+    "summary": "Three layers used together inside one word. (1) 29 letter signs, one per letter (c is a large double-barred sign, g a small single-bar one). (2) A syllable table in alphabetical order, 432-525: a row of five for the vowels (434 is a stop or null) and for each consonant b c f g h j k l m n p r s t v w z (ba 437 ... zu 525); the d row has four (447 de to 450 du; da is the word code 158). (3) Numbers 1-430: words, names and frequent syllables (78 ge, 117 be, 389 ver, 290 lich, 210 Schweden, 326 Churfürst). 106 of them have a value in map v4; well over a hundred seen in the letters have none. Clear text and cipher alternate within the sentence. Not the image-55 key (K55) of the Høeg and Meyercron letters in targets/biermann1675.",
     "symbol_kind": "digits and symbols",
     "distinct_symbols": 0,
     "diacritics": {
@@ -566,14 +566,14 @@
       {
         "who": "mcbratney",
         "role": "solution",
-        "note": "catalogue 465, the Klingenberg cipher of the Biermann copybook: signs, syllable table and 106 word-code values rebuilt from the ciphertext, the 4 May 1675 letter and three July drafts read in part, with Claude; issue #424",
+        "note": "catalogue 465, the Klingenberg cipher of the Biermann copybook: signs, syllable table and 106 word-code values rebuilt from the ciphertext, the 4 May 1675 letter and three July drafts read in part, with AI agents; issue #424",
         "date": "2026-11-11",
         "source": "https://github.com/dbourdeau/cyphersolver/issues/424"
       },
       {
         "who": "mcbratney",
         "role": "transcription",
-        "note": "27 letters to Klingenberg (24 from the copybook, 3 drafts) from the Rigsarkivet images, with Claude",
+        "note": "27 letters to Klingenberg (24 from the copybook, 3 drafts) from the Rigsarkivet images, with AI agents",
         "date": "2026-11-11"
       },
       {
@@ -852,6 +852,6 @@
       "maps/words_v4.json",
       "emendations.tsv"
     ],
-    "notes": "Filed as read in part. One count of record: 3,648 of 4,709 tokens (77.5%) over eleven letters, by letter in counts.txt; no letter but the short 1 June one reaches 95%. Checked at integration (12 Nov 2026): count.py reproduces every line of counts.txt; an independent decoder reproduces the decryption of the 4 May letter token for token; the transcription hashes and the three stamps match their files (map v3 is in the first stamp, before the seven letters appear in any stamp; map v4 is first stamped before the three drafts; the order of the transcriptions is by the contributor's record); 62 groups of 1 June and 63 of the 28 June draft were compared with the images by the verifier, all agree, and 331 of 333 groups of 4 May; docs/_validate.py on the tokens read under the maps of record gives pass (with a partial German corpus). The 77.5% is the contributor's strict count; counting only tokens in words built from signs and syllables with no word code gives 28.3%. The image-55 key (K55) and its letters to Hoeg and Meyercron in targets/biermann1675 are the work of the repository and of Brice Dudout; nothing in this folder uses K55 and nothing here claims those letters. The contributor id mcbratney is in contributors.json."
+    "notes": "Filed as read in part. One count of record: 3,648 of 4,709 tokens (77.5%) over eleven letters, by letter in counts.txt; no letter but the short 1 June one reaches 95%. Checked at integration (12 Nov 2026): count.py reproduces every line of counts.txt; an independent decoder reproduces the decryption of the 4 May letter token for token; the transcription hashes and the three stamps match their files (map v3 is in the first stamp, before the seven letters appear in any stamp; map v4 is first stamped before the three drafts; the order of the transcriptions is by the contributor's record); 62 groups of 1 June and 63 of the 28 June draft were compared with the images by the verifier, all agree, and 331 of 333 groups of 4 May; docs/_validate.py on the tokens read under the maps of record gives pass (with a partial German corpus). The 77.5% is the contributor's strict count; counting only tokens in words built from signs and syllables with no word code gives 28.3%. The image-55 key (K55) and its letters to Høeg and Meyercron in targets/biermann1675 are the work of the repository and of Brice Dudout; nothing in this folder uses K55 and nothing here claims those letters. The contributor id mcbratney is in contributors.json."
   }
 }
