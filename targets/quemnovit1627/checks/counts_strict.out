@@ -1,0 +1,15 @@
+READER 1 (b97, breaker; tx md5 836d644f, frozen 02:18:36 UTC 12 Nov 2026)
+  units 103 = S 93 + E 10 + N 0; strict 93/103 = 90.29%  [filed on #450, now WITHDRAWN as the headline]
+  lines 01-10: 30/35 = 85.71%
+  lines 11-19: 63/68 = 92.65%
+  held-out (key signs seen in lines 01-10 only, on lines 11-19): 65 of 66 cipher words decode in full; strict 63/68 = 92.65% (not blind: key not fitted on 01-10 alone)
+  key: 23 signs with a value (H L P S Z a b c d e f g h i k l m o p q r s t); 1 sign (n) without
+READER 2 (b129, blind; tx frozen md5 de87c01d 09:49:43 UTC; label erratum md5 6e25e08b)
+  units 104 = S 62 + E 33 + N 9; strict 62/104 = 59.62%; S+E 95/104 = 91.35%
+  E units that differ from reader 1 only by the q/g or pi/Z sign class: 13 (gu~zu, nodh~noch, sidh~sich, madhen~machen, nodh~noch, gu~zu, ausgahlen~auszahlen, sidh~sich, sidh~sich, nodh~noch, nidhts~nichts, sidh~sich, modhten~mochten)
+  if those were counted S: 75/104 = 72.12%  [arithmetic only, as filed on #450]
+READER 3 (b137, blind; tx md5 6d642c8b frozen 11:22:40 UTC)
+  units 110 = S 49 + E 38 + N 23 (code units in E: 9); strict 49/110 = 44.55%
+ADJUDICATED (majority, >=2 of 3 readers per sign; decoded once, 13:17:19 UTC): S 70 + E 21 + N 12 = 103; strict 70/103 = 67.96%
+ADJUDICATED (unanimous, all 3 readers per sign; decoded once, 13:17:19 UTC): S 47 + E 6 + N 50 = 103; strict 47/103 = 45.63%
+reader-1 sign occurrences (24 signs, 557 tokens): H:29 L:28 P:20 S:3 Z:4 a:26 b:13 c:64 d:24 e:14 f:36 g:16 h:7 i:26 k:90 l:15 m:29 n:1 o:1 p:42 q:19 r:7 s:10 t:33
