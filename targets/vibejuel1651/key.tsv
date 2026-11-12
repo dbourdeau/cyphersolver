@@ -1,0 +1,49 @@
+# vibejuel1651 key: the NEW alphabet ("ny Alphabet") of Peder Vibe's letters to Peder Juel, 1651-1655 (Rigsarkivet, TKUA Sverige,
+# unit 261583, images 77-93), CC BY 4.0 (Brice Dudout, Europe chiffree, 2026; PR #410).
+# Recovered from the letters themselves: the partial interlinear decipherment of the time on N. 319 (image 78) gave the system
+# and the opener table; the rest was read with it. Vibe announces the new alphabet in clear on image 62 (11 Jan 1649): "dett ny
+# Alphabet" is to follow. The old cipher he used until then has its own key in targets/vibejuel1649/key.tsv.
+#
+# A cipher word = OPENER + BODY. The opener (first number, 1-3 or 24-39) gives a shift k; each body number n stands for the letter
+# of rank n - k (1-based, not cyclic). In the body, 32/33/34 stand for 1/2/3.
+#   25 letters a ... u w x y z oe (w = 21, x = 22, y = 23, z = 24, oe = 25), i = j.
+#   Opener table (the same in every letter read): 24-29 -> 0; 30-34 -> 1; 35-39 -> 2; 1-3 -> 3.
+#   A word may be split in pieces, each with its own opener (eders = 3.8.7 + 30.6.18.19).
+# Nomenclator: two- to four-digit numbers between the words (49 different ones in these letters; in 1655 up to 1771). None is
+#   identified by any key; none occurs in the old-cipher letters. Two are defined in clear by Vibe (image 80, 6 Jan 1653): "sub N
+#   349" and "N 561" are to be added to the cipher; the names that follow are hard to read (Wranghel? and Wranghel's mother?), so
+#   they are given here as probable only and are not used in the reading.
+#
+# Columns: section, cipher (letter value at k = 0, or opener range), value, note.
+section	cipher	value	note
+N	1	a	body value at k = 0; with shift k the letter of rank n - k (not cyclic)
+N	2	b
+N	3	c
+N	4	d
+N	5	e
+N	6	f
+N	7	g
+N	8	h
+N	9	i
+N	10	k
+N	11	l
+N	12	m
+N	13	n
+N	14	o
+N	15	p
+N	16	q
+N	17	r
+N	18	s
+N	19	t
+N	20	u
+N	21	w
+N	22	x
+N	23	y
+N	24	z
+N	25	ø
+N	opener 24-29	k=0
+N	opener 30-34	k=1
+N	opener 35-39	k=2
+N	opener 1-3	k=3
+C	349	Wranghel (?)	defined in clear by Vibe, image 80 (6 Jan 1653); name read as probable only
+C	561	Wranghel's mother (?)	defined in clear by Vibe, image 80; name read as probable only

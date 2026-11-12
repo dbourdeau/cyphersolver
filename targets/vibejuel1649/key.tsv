@@ -1,0 +1,44 @@
+# vibejuel1649 key: the OLD cipher ("gamle Ciffres") of Peder Vibe's letters to Peder Juel, 1649-1651 (Rigsarkivet, TKUA Sverige,
+# unit 261583, images 62-74), CC BY 4.0 (Brice Dudout, Europe chiffree, 2026; PR #410).
+# Recovered from the letters themselves: the shift-per-word system was found on N. 319 (image 78, new alphabet, in
+# targets/vibejuel1651) from its partial interlinear decipherment of the time; the old cipher's own alphabet and opener rule
+# were then worked out on N. 330 (image 74) and the letters of 1649-50, which carry no gloss. Vibe names the cipher in clear on
+# image 62 (11 Jan 1649): "wed woris forige gamble Ciffres".
+#
+# A cipher word = OPENER + BODY. The opener (first number, 24-39) gives a shift k; each body number n stands for the letter of
+# rank n - k (1-based, taken mod 23). In the body, 32/33/34 stand for 1/2/3.
+#   23 letters, i = j, u = v/w, CYCLIC: a with k = -1 is written 23; a with k = -2 is 22.
+#   k = -(opener mod 3): openers 24 27 30 33 36 39 -> 0; 25 28 31 34 37 -> -1; 26 29 32 35 38 -> -2.
+#   The 21st letter is x (perplex, sex); the hand of 1649-51 has no w.
+# Nomenclator: two- and three-digit numbers between the words (22 different ones in these letters: 35, 44, 46, 109, 211, 212, 228,
+#   233, 235, 236, 257, 261, 301, 351, 354, 363, 370, 401, 402, 420, 422, 423). None has a value; none of them occurs in the letters
+#   in the new alphabet.
+#
+# Columns: section, cipher (letter value at k = 0, or opener list), value, note.
+section	cipher	value	note
+G	1	a	body value at k = 0; with shift k the letter of rank n - k (mod 23)
+G	2	b
+G	3	c
+G	4	d
+G	5	e
+G	6	f
+G	7	g
+G	8	h
+G	9	i
+G	10	k
+G	11	l
+G	12	m
+G	13	n
+G	14	o
+G	15	p
+G	16	q
+G	17	r
+G	18	s
+G	19	t
+G	20	u
+G	21	x
+G	22	y
+G	23	z
+G	opener 24 27 30 33 36 39	k=0
+G	opener 25 28 31 34 37	k=-1
+G	opener 26 29 32 35 38	k=-2
