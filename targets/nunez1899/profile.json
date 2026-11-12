@@ -1,0 +1,190 @@
+{
+ "schema_version": 1,
+ "target": "nunez1899",
+ "title": "Roberto Núñez to José Y. Limantour, Mexico, 26 August 1899 (catalogue 1461, part): word-code telegram catalogued 'sin traducción'; its contemporary translation is filed as the next two records (CDLIV.1a.1883.38.9927-9928); code checked against a key frozen from three other glossed telegrams of the same code",
+ "documents": [
+  {
+   "id": "9926",
+   "read": "read",
+   "shelfmark": "CEHM-Carso, Fondo CDLIV (Colección José Y. Limantour), CDLIV.1a.1883.38.9926 (code telegram); translation CDLIV.1a.1883.38.9927 (draft) and 9928 (fair copy)",
+   "date": "26 August 1899",
+   "year": 1899,
+   "country": "Mexico",
+   "route": "Roberto Núñez, under-secretary of Finance, Mexico City -> José Y. Limantour, Minister of Finance, 16 avenue Friedland, Paris",
+   "places": {
+    "from": "Mexico City",
+    "to": "Paris"
+   },
+   "language": "Spanish",
+   "pages": 5,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "Contemporary translation in the next two CEHM records: CDLIV.1a.1883.38.9927 (pencil draft, 2 images) and 9928 ('Traducción', fair copy signed Núñez, 1 image). The CEHM record of 9926 says 'Texto codificado. Sin traducción' and does not point to them."
+   },
+   "length": {
+    "tokens": 114,
+    "distinct": "unknown",
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription_9926.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "CEHM viewer JPEG files (visor.cehm.org.mx, about 1500x2000 px)",
+    "image_quality": "good",
+    "notes": "Two passes (whole page, then grey-scale crops at 1.2x-3x), reconciled on the image; three code words not certain (curadela, torrejones, pareciendo.. with the ending under the watermark). No human palaeographer checked the text."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code"
+  ],
+  "summary": "A word code in Spanish dictionary words mixed with clear Spanish: only some words are coded (cotorro = Banco, remero = Presidente, sabio = que, crimenes = Bonos, garlopas abocados = E.U.). Code words keep Spanish endings (jirpeo = indicó, jirpee = indique; impulsarlo = hacerlo, impulsa = hacer). Used by Núñez and Limantour in August 1899 (CDLIV.1a.1883.38.9922, 9926, 9929, 9930).",
+  "symbol_kind": "letters",
+  "distinct_symbols": 130,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "word_division": "kept",
+  "key_order": "unknown",
+  "nomenclator": {
+   "present": true,
+   "entries": 130,
+   "kinds": [
+    "common words",
+    "titles",
+    "places",
+    "phrases"
+   ]
+  },
+  "notes": "No codebook found. key_frozen.tsv: 90 code words from 9922, 9929 and 9930; key.tsv: the 54 distinct code words of 9926 (one of them the pair garlopas abocados, one the hole ampida); 37 of the 65 code tokens are valued only from the contemporary translation (36) or left open (1). Together the two key files hold 130 distinct code words. Code words are Spanish dictionary words written in ordinary letters."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Contemporary translation CDLIV.1a.1883.38.9927 and 9928 (CEHM), filed after the telegram. No edition or modern reading found (web search 12 Nov 2026); catalogue 1461 and its vetting (2 Nov 2026) had it as 'sin traducción'.",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "cleartext context"
+  ],
+  "attack": "known plaintext",
+  "human_role": "WAINUT set the task (catalogue 1461) and the rules; AI language-model agents fetched the images, transcribed, froze the key, ran the held-out test, aligned the translation and wrote the reading. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "CEHM viewer image files",
+   "scripts in this folder (decrypt, heldout, check_marks, count_words)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-12",
+  "last_date": "2026-11-12"
+ },
+ "solution": [
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "CEHM viewer files for 9922, 9926-9930 and the Speyer records of 1905 fetched by script, one at a time, 2 s apart, no login.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "Sign conventions written; 9926 transcribed in two passes without key or translation in view, reconciled on the image.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "sibling key",
+   "what": "key_frozen.tsv built from the glossed telegrams 9922 and 9930 and Limantour's line-by-line draft 9929; frozen before 9926 was compared with 9927/9928.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "what": "Frozen key applied to the 65 code-word tokens of 9926: 28 covered (23 exact, 5 by code root), 28/28 agree with the contemporary translation at the same place.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Remaining 37 code values set by aligning 9926 with 9928; reading with marks; check_marks.py passes (22 lines, 0 mismatches).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "partial",
+  "method": "read from existing decipherment",
+  "method_basis": "The telegram's own contemporary translation (9927/9928, filed separately), checked against a code key frozen from three other glossed telegrams of the same code (held-out 28/28).",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction"
+  ],
+  "fraction_read": 0.97,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "111 of 114 telegraphed word units have sense (43 clear words, 4 numbers, 28 code words valued by the frozen key, 36 code words valued only from the contemporary translation); 1 hole (ampida) and 2 words not rendered (te se).",
+  "verification": [
+   "contemporary decipherment",
+   "matched control",
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the translation of 9926 (9927 draft, 9928 fair copy) and the glossed telegrams 9922, 9929, 9930 used for the frozen key",
+    "date": "1899",
+    "source": "CEHM-Carso, CDLIV.1a.1883.38.9922, 9927, 9928, 9929, 9930"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "translation located for a record catalogued 'sin traducción'; code key frozen from three other glossed telegrams and tested on 9926 (28/28); reading with marks",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "9926 in two passes and the key pairs of 9922, 9929, 9930, from the CEHM images",
+    "date": "2026-11-12"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "9926",
+    "label": "Núñez to Limantour, 26 Aug 1899: loan of the Banco de Londres, Bank of England deposit, printing of the bonds in the U.S.",
+    "transcription": "transcription_9926.txt",
+    "decryption": "decryption_9926.txt",
+    "reading": "reading_9926.md",
+    "translation": "translation_9926.md",
+    "language": "es",
+    "state": "read",
+    "summary": "The President has agreed a loan of 4 millions from the Banco de Londres, paying 2 1/4 on deposits once the Government can dispose of them freely; surplus funds, in an amount Limantour is to name, are to go in gold to the Bank of England (exchange today 23 13/16; at 24 or more cash could be converted here into gold and sent to Camacho to be kept at the English bank), Limantour to say how; Camacho asks authority to have the bonds of the new loan printed in the U.S.; the President asks whether unfinished, unsigned bonds in the U.S. might lead to something like an injunction against Morgan. Please decide.",
+    "note": "Read through the contemporary translation filed as 9927/9928, which the CEHM record does not mention. 36 code-word values come only from that translation; 28 are confirmed by the independent frozen key. Words: 43 clear verbatim, 4 numbers, 28 code (frozen key), 36 code (translation only), 1 hole (ampida, blank in the translation too, guess [?depositen]), 2 telegraphed words not rendered (te se). Reading checker clean share: running Spanish 0.50, translation 0.60; the checker counts the numbers and Ud./E.U. as holes.",
+    "reading_review": {
+     "grade": "A",
+     "by": "independent AI language-model agent (blind review)",
+     "date": "2026-11-12",
+     "note": "The contemporary translation 9928 matches the reading word for word and leaves a blank exactly where ampida stands; all 10 Spanish sentences read as coherent Spanish, one with a hole. Lines L01-L07 and L14-L22 were checked on the scans with no disagreement that affects the reading, and the held-out 28/28 was reproduced from key_frozen.tsv alone."
+    }
+   }
+  ],
+  "key_file": "key.tsv"
+ }
+}
