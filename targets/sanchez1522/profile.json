@@ -149,6 +149,26 @@
         "image_quality": "good",
         "notes": "r2o: transcribed sign by sign, 53 lines (f. 27r 33, f. 27v 20); 1,248 tokens of which 520 code groups, counted on the sign lines of R9593_signs.txt (nulls and clear words excluded)."
       }
+    },
+    {
+      "id": "R9607",
+      "read": "read in part",
+      "shelfmark": "RAH, Signatura 9/24, f. 65-68 (DECODE R9607)",
+      "date": "14 May 1522",
+      "year": 1522,
+      "country": "Spain",
+      "route": "Venice -> imperial court",
+      "language": "Spanish",
+      "pages": 7,
+      "cleartext_in_document": "none",
+      "plaintext": {"location": ["none"], "partial": false},
+      "length": {"tokens": 3530, "unit": "mixed", "measured": true, "file": "dudout/R9607_signs.txt"},
+      "transcription": {
+        "by": "llm from images",
+        "source": "DECODE images collected 2026-11-12 (lot 1)",
+        "image_quality": "good",
+        "notes": "dudout: transcribed blind by sign shape, 146 lines (ff. 65r-67v), frozen by SHA-256 before decoding; 3,530 tokens (about 1,280 code groups) counted on the sign lines, nulls and clear words excluded; only the date line of f. 67v is in clear."
+      }
     }
   ],
   "system": {
@@ -498,6 +518,20 @@
       "what": "r2o: the other 48 Sánchez records (R9594 onward in date order) not read in this pass; gap stays not-attempted with the list.",
       "result": "failed",
       "technique": ["other"]
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": ["key matching", "other"],
+      "what": "Brice Dudout (Claude Opus 5.5): one pre-registered measure of this folder's key (key_codes.tsv unchanged) on a held-out passage, R9632 f. 200r ll. 7-25 (386 tokens transcribed blind; R9632 used for no key adjustment), PREREG frozen by SHA-256 before decoding (dudout/protocol/). Mean 4-gram log-probability per character (Don Quijote model) 593 decoded characters: -2.471 against 400 controls (200 permuted keys, 200 token shuffles) mean -3.106, sd 0.112, best -2.766; z = 5.68; pre-set thresholds (>= 300 characters, above every control, z >= 5) met: PASS. The decode reads the matter of CSP 473 (the Signoria's answer to Sánchez and the English ambassador).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "reading",
+      "technique": ["key matching", "contextual inference"],
+      "what": "Brice Dudout (Claude Opus 5.5): R9607 (14 May 1522, Salazar 9/24 ff. 65r-67v, uncalendared, no decipherment imaged) transcribed blind by sign shape (146 lines, dudout/R9607_signs.txt, frozen by SHA-256), decoded with the key unchanged and read by sense (dudout/R9607_reading.md, English dudout/R9607_en.md): 1,121 sure + 116 probable, 2 restored, 316 unresolved of 1,555 words = 79.5 %, read in part. Unresolved: mostly spelled runs mis-transcribed on look-alike signs; 63 code groups absent from the key, listed, none added. Lot-1 triage of 11 records in dudout/TRIAGE_lot1.md.",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -550,7 +584,10 @@
     "credits": [
       {"who": "tomokiyo", "role": "key or decipherment used", "note": "reconstruction of Sánchez's 1522 cipher (alphabet, ~177 code groups) from R9605, extended here", "date": "2025-09-06", "source": "https://cryptiana.web.fc2.com/code/AlonsoSanchez.htm"},
       {"who": "contemporary", "role": "key or decipherment used", "note": "clerk's full decipherment of R9605 (calibration) and the interlinear glosses on R9635"},
-      {"who": "bergenroth", "role": "key or decipherment used", "note": "CSP Spain 2 no. 476 abstract (from the contemporary deciphering) confirms R9635 and fills the gist of unread lines", "date": "1866", "source": "G. A. Bergenroth, Calendar of State Papers, Spain, vol. 2 (1866), no. 476"}
+      {"who": "bergenroth", "role": "key or decipherment used", "note": "CSP Spain 2 no. 476 abstract (from the contemporary deciphering) confirms R9635 and fills the gist of unread lines", "date": "1866", "source": "G. A. Bergenroth, Calendar of State Papers, Spain, vol. 2 (1866), no. 476"},
+      {"who": "tomokiyo", "role": "prior solution", "note": "R9607: opening line deciphered and printed in 2025 ('A la carta de vuestra magestad de [xxix?] de abril ...'); the dudout/ reading of the letter agrees with it", "date": "2025-09-06", "source": "https://cryptiana.web.fc2.com/code/AlonsoSanchez.htm"},
+      {"who": "dudout", "role": "transcription", "note": "R9607 (14 May 1522) transcribed blind sign by sign and read in part with the folder key, 79.5 % of 1,555 words; triage of DECODE lot 1 (11 records) (dudout/)", "date": "2026-11-12"},
+      {"who": "dudout", "role": "verification", "note": "one pre-registered measure of the folder key on a held-out passage of R9632 (f. 200r ll. 7-25): PASS, z = 5.68 against 400 controls (dudout/protocol/)", "date": "2026-11-12"}
     ],
     "texts": [
       {
@@ -651,6 +688,24 @@
         "translation": "R9593_en.md",
         "state": "decoded, not read",
         "note": "r2o (23 Oct 2026): no decipherment bound or imaged and not in CSP Spain 2; read sign by sign with Tomokiyo's key (R9593_signs.txt, log R9593_reread_log.md). The opening paragraph, the Val Camonica audience and the Caravaggio news build sentences; f. 27r ll. 26-33 and f. 27v ll. 11-13 do not (about twenty open groups). v2_score 0.614 explicit holes (27/44), plain 0.136, hole rate 0.13 above one in ten; look-alike letters ~2.5%. Blocker: no-key-material (groups absent from the published key, mostly single contexts)."
+      },
+      {
+        "doc": "R9607",
+        "label": "R9607, Venice, 14 May 1522 (RAH Salazar 9/24 ff. 65r-67v)",
+        "transcription": ["dudout/R9607_signs.txt"],
+        "decryption": ["dudout/R9607_reading.md", "dudout/R9607_text_es.md"],
+        "summary": "Sánchez to Charles V: Venice's armament after the French defeat in Lombardy (galleys at Venice and in Candia, French soldiers come from Milan to Padua); Cremona, Lautrec and Prospero Colonna; his demand that the Signoria declare itself released from its capitulation with France; news of the Turk's fleet from Corfu (letters of 5 April) and of the King of France coming in person; the Hungarian ambassador's departure; the Signoria's minute of its answer. Uncalendared; opening line printed by Tomokiyo (2025).",
+        "language": "es",
+        "reading": "dudout/R9607_text_es.md",
+        "translation": "dudout/R9607_en.md",
+        "state": "read in part",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude Opus 5.5 for Brice Dudout",
+          "date": "2026-11-12",
+          "note": "dudout/R9607_reading.md read as Spanish sentences, line by line, from a blind sign transcription decoded with key_codes.tsv unchanged: 1,121 sure, 116 probable (look-alike signs r/y, s/t, f/s, m/r, d/e resolved by sense), 2 restored, 316 unresolved of 1,555 words = 79.5 % (Daniel's 95 % rule: read in part). Sentences build on every page (e.g. 'Arman todavia galeras y hasta agora han armado aqui ... sin las que arman en Candia'; 'los de esta republica me han enbiado ... la minuta de lo que han escrito ...; esta bien conforme a aquello'); the unresolved runs are scattered, mostly spelled words mis-transcribed on look-alike signs."
+        },
+        "note": "Key validated on a held-out passage of R9632 by one pre-registered measure (PASS, z = 5.68, dudout/protocol/). No decipherment imaged on the record; not in CSP Spain 2."
       }
     ],
     "key_file": [

@@ -434,3 +434,21 @@ Closed items (moved out of Remaining gaps):
 - [x] key-rebuild: 23 Oct 2026 (r2o) - gim = suyos and fef = toda adopted on every occurrence; ril = lansquenetes? flagged
 - [x] retry: 23 Oct 2026 (r2o) - R9593 read sign by sign on line crops at 2-3.5x (decoded, not read, 0.614)
 - [x] retry: 23 Oct 2026 (r2i) - R9635 tear read in the cipher of f. 20r; all 52 Sánchez records of R9593-R9657 fetched and every image opened; decipherments of R9613 (ff. 206-207) and R9641 (ff. 187-188, under R9642) found and read
+
+## R9607 read in part, and the key measured on a held-out passage, 12 Nov 2026 (Brice Dudout)
+
+DECODE lot 1 (R9594, R9607, R9616, R9617, R9626, R9631, R9632, R9633, R9636, R9639, R9651; 55 images) was triaged
+(`dudout/TRIAGE_lot1.md`): R9616/R9617 are one letter in two copies, R9626 has its copy in R9627, DECODE serves R9632's
+P2 twice (one opening missing), R9636 and R9651 are mixed with full clear passages, R9594 (= CSP 396) has a surviving
+contemporary decipherment; only R9607 and R9633 are uncalendared. Before any decoding, a PREREG was frozen by SHA-256
+with one measure on a held-out passage, R9632 f. 200r ll. 7-25 (386 tokens transcribed blind, R9632 used for no key
+adjustment): this folder's key, unchanged, scores 593 decoded characters at -2.471 per character (4-gram, Don Quijote)
+against 400 controls (permuted keys and token shuffles) with mean -3.106 and best -2.766, z = 5.68: PASS on the pre-set
+thresholds (`dudout/protocol/`). R9607 (14 May 1522, 9/24 ff. 65r-67v, 146 cipher lines, no decipherment imaged) was then
+transcribed blind by sign shape, frozen, decoded with the key unchanged and read by sense: 1,121 sure, 116 probable,
+2 restored, 316 unresolved of 1,555 words = 79.5 %, read in part (`dudout/R9607_reading.md`, `_text_es.md`, `_en.md`):
+Venice arming galleys after the French defeat, French soldiers from Milan at Padua, Cremona, Lautrec and Prospero
+Colonna, Sánchez's demand that the Signoria declare itself released from its French capitulation, the Turk's fleet
+reported from Corfu, the Hungarian ambassador's departure. Tomokiyo's printed opening line agrees. Most unresolved words
+are spelled runs mis-transcribed on look-alike signs; 63 code groups absent from the key are listed there, none added.
+For the gap list: R9607 moves from not-attempted to read in part; the other ten lot-1 records are triaged, not read.
