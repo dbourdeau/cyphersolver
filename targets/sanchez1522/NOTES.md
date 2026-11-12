@@ -452,3 +452,21 @@ Colonna, Sánchez's demand that the Signoria declare itself released from its Fr
 reported from Corfu, the Hungarian ambassador's departure. Tomokiyo's printed opening line agrees. Most unresolved words
 are spelled runs mis-transcribed on look-alike signs; 63 code groups absent from the key are listed there, none added.
 For the gap list: R9607 moves from not-attempted to read in part; the other ten lot-1 records are triaged, not read.
+
+## Lot 2 triaged, R9610 read in part, R9607 re-checked, 12 Nov 2026 (Brice Dudout)
+
+DECODE lot 2 (17 records, 43 images) was triaged (`dudout/TRIAGE_lot2.md`): every Sánchez letter in it is uncalendared
+and carries no imaged decipherment, except R9624, marked "triplicada", a third copy of the 7 Aug letter (R9626/R9627,
+CSP 462); R9628 is a copy of R9629; R9612 is mixed with long clear passages; R9623 is dated in clear 7 [?] Aug (not
+19 July) and calls itself a triplicate, and its last paragraph, given by Tomokiyo as decrypted, is in clear in the
+letter; R9657 is not Sánchez but Lope Hurtado de Mendoza, in another cipher. R9606, R9637 and R9655 have no image
+online. A second PREREG (`dudout/protocol/PREREG_lot2.md`) was frozen before decoding: key unchanged, nothing added, so
+no new measure. R9610 (2 June 1522, 9/24 ff. 132r-134r, 130 cipher lines) was transcribed blind, frozen, decoded with
+the key unchanged and read by sense: 691 sure, 211 probable, 2 restored, 233 unresolved of 1,137 words = 79.3 %, read
+in part (`dudout/R9610_reading.md`, `_text_es.md`, `_en.md`); 96 of the unresolved read only after correcting a sign
+label and are not counted. Content: 24,000 ducats sent by the Viceroy of Naples for Prospero Colonna through Venetian
+lands with an escort from Verona, safe-conducts for the Viceroy, the King of France's letters from Lyon (he blames
+Lautrec and sends the Admiral), Lautrec leaving for France, Cremona, the Turk's ambassador as a spy and the Turk arming
+a hundred sails, the Turks before Knin. R9607's unresolved runs were re-checked by a rule frozen in that PREREG:
+5 words accepted, 79.5 % -> 79.9 %, still read in part (`dudout/R9607_recheck.md`). Proposed codes, none added:
+dud = vino, sod = govierno, lud = presente, cid = xxii. For the gap list: R9610 moves from not-attempted to read in part.

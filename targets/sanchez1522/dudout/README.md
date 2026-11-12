@@ -1,9 +1,9 @@
 # sanchez1522 — dudout/ (Brice Dudout, 12 Nov 2026)
 
-Status: read in part (R9607, 14 May 1522: 1,237 of 1,555 words read by sense = 79.5 %, 1,121 sure + 116 probable, 2 restored, 316 unresolved; the folder key validated on a held-out passage of R9632). Next step: second letter-by-letter pass on R9607's unresolved spelled runs, then R9633.
+Status: read in part (R9607, 14 May 1522: 79.9 % of 1,555 words after the frozen re-check of lot 2, was 79.5 %; R9610, 2 June 1522: 691 sure + 211 probable, 2 restored, 233 unresolved of 1,137 words = 79.3 %; the folder key validated on a held-out passage of R9632 and unchanged since). Next step: R9614, R9640 and R9647 (the longest letters left), and a second letter-by-letter pass on the label errors of R9607 and R9610.
 
 Daniel's Status line in `../NOTES.md` is untouched. Work by Claude Opus 5.5 for Brice Dudout, from DECODE images of
-lot 1 (R9594, R9607, R9616, R9617, R9626, R9631, R9632, R9633, R9636, R9639, R9651). **No image is reproduced here**;
+lot 1 (R9594, R9607, R9616, R9617, R9626, R9631, R9632, R9633, R9636, R9639, R9651) and lot 2 (R9603, R9604, R9608-R9612, R9614, R9618, R9620, R9623, R9624, R9628, R9630, R9640, R9647, R9657). **No image is reproduced here**;
 cite DECODE R… (<https://de-crypt.org/decrypt-web/RecordsView/9607> etc.). Originals: Real Academia de la Historia,
 Colección Salazar y Castro.
 
@@ -36,5 +36,27 @@ reading agrees with it.
 Count per page in `R9607_reading.md`: 79.5 % read (S + P), so **read in part**. Most unresolved words are spelled runs
 mis-transcribed on look-alike signs; 63 code groups absent from the key are listed, none added to the key.
 
+## 4. Lot 2 triage — `TRIAGE_lot2.md`
+17 records: all Sánchez letters uncalendared and without imaged decipherment, except R9624, a third copy ("triplicada")
+of the 7 Aug letter (R9626/R9627, CSP 462). R9628 is a copy of R9629. R9623 is dated in clear 7 [?] Aug, not 19 July,
+and its last paragraph, which Tomokiyo gives as decrypted, is in clear in the letter. R9612 is mixed. R9657 is not
+Sánchez but Lope Hurtado de Mendoza (another cipher). R9606, R9637, R9655 have no image online.
+
+## 5. R9610 read in part — `R9610_signs.txt`, `R9610_decode.txt`, `R9610_reading.md`, `R9610_text_es.md`, `R9610_en.md`
+`protocol/PREREG_lot2.md` was frozen before decoding: key unchanged, no value added, so **no new measure** (the R9632
+held-out passage is spent and not reused); declared look-alikes; the R9607 re-check rule; the counting rule. R9610
+(2 June 1522, 9/24 ff. 132r-134r, 130 cipher lines) was transcribed blind, frozen, decoded (`scripts/decode_lot2.py`)
+and read by sense: 691 S + 211 P, 2 R, 233 I of 1,137 words = **79.3 %, read in part** (`scripts/count_reading.py`).
+Of the unresolved, 96 words (marked †) read only if a sign label is corrected after decoding (my q for the l-sign, oo
+for OO = g, Z for ∂ = d, P for the m-sign); with them 87.8 %, but they are not counted. Content: the 24,000 ducats for
+Prospero Colonna through Venetian lands, safe-conducts, the King of France's letters from Lyon, Lautrec leaving for
+France, Cremona, the Turk's ambassador and armament, the Turks before Knin. Tomokiyo's opening line agrees.
+
+## 6. R9607 re-check — `R9607_recheck.md`, `R9607_recheck_output.txt`, `scripts/recheck_r9607.py`
+By the frozen rule (PREREG_lot2 s. 3): 625 unresolved runs, 268 unique, 49 ambiguous, 308 without fit; 5 words accepted
+(ahi, ayer, toma, tener, tenian). R9607: 79.5 % -> **79.9 %**, still read in part. Code proposals from both letters
+(dud = vino, sod = govierno, lud = presente, cid = xxii) are listed with their contexts; none is added to the key.
+
 ## Not done
-The other ten lot-1 records are triaged, not read. No new key value is proposed.
+R9603, R9604, R9608, R9609, R9611, R9612, R9614, R9618, R9620, R9623, R9628, R9630, R9640, R9647 are triaged, not read;
+so are the ten lot-1 records other than R9607. No new key value is applied.

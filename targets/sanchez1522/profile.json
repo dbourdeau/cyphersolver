@@ -169,6 +169,26 @@
         "image_quality": "good",
         "notes": "dudout: transcribed blind by sign shape, 146 lines (ff. 65r-67v), frozen by SHA-256 before decoding; 3,530 tokens (about 1,280 code groups) counted on the sign lines, nulls and clear words excluded; only the date line of f. 67v is in clear."
       }
+    },
+    {
+      "id": "R9610",
+      "read": "read in part",
+      "shelfmark": "RAH, Signatura 9/24, f. 132-134 (DECODE R9610)",
+      "date": "2 June 1522",
+      "year": 1522,
+      "country": "Spain",
+      "route": "Venice -> imperial court",
+      "language": "Spanish",
+      "pages": 5,
+      "cleartext_in_document": "interspersed",
+      "plaintext": {"location": ["none"], "partial": false},
+      "length": {"tokens": 2722, "unit": "mixed", "measured": true, "file": "dudout/R9610_signs.txt"},
+      "transcription": {
+        "by": "llm from images",
+        "source": "DECODE images collected 2026-11-12 (lot 2)",
+        "image_quality": "good",
+        "notes": "dudout: transcribed blind by sign shape, 130 cipher lines (ff. 132r-134r), frozen by SHA-256 before decoding (dudout/protocol/SHA256SUMS); 2,722 tokens counted on the sign lines, nulls and clear words excluded."
+      }
     }
   ],
   "system": {
@@ -532,6 +552,20 @@
       "technique": ["key matching", "contextual inference"],
       "what": "Brice Dudout (Claude Opus 5.5): R9607 (14 May 1522, Salazar 9/24 ff. 65r-67v, uncalendared, no decipherment imaged) transcribed blind by sign shape (146 lines, dudout/R9607_signs.txt, frozen by SHA-256), decoded with the key unchanged and read by sense (dudout/R9607_reading.md, English dudout/R9607_en.md): 1,121 sure + 116 probable, 2 restored, 316 unresolved of 1,555 words = 79.5 %, read in part. Unresolved: mostly spelled runs mis-transcribed on look-alike signs; 63 code groups absent from the key, listed, none added. Lot-1 triage of 11 records in dudout/TRIAGE_lot1.md.",
       "result": "partial"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "reading",
+      "technique": ["key matching", "contextual inference"],
+      "what": "Brice Dudout (Claude Opus 5.5): DECODE lot 2 (17 records) triaged (dudout/TRIAGE_lot2.md); key unchanged, so no new measure (dudout/protocol/PREREG_lot2.md, frozen first). R9610 (2 June 1522, Salazar 9/24 ff. 132r-134r, uncalendared, no decipherment imaged) transcribed blind by sign shape (130 lines, frozen), decoded with key_codes.tsv unchanged (dudout/scripts/decode_lot2.py) and read by sense (dudout/R9610_reading.md, English dudout/R9610_en.md): 691 sure + 211 probable, 2 restored, 233 unresolved of 1,137 words = 79.3 %, read in part. 96 of the unresolved are words that read only if a transcription label is corrected after decoding (e.g. my q for the l-sign); with them 87.8 %, not counted. Code proposals (dud = vino, sod = govierno, lud = presente, cid = xxii) listed, none added.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "reading",
+      "technique": ["plaintext matching", "contextual inference"],
+      "what": "Brice Dudout (Claude Opus 5.5): R9607's unresolved spelled runs re-checked by a rule frozen before the run (PREREG_lot2 s. 3: declared look-alike alternatives, minimal segmentation over a Quijote lexicon, accepted only if unique or the only fit by sense; sure and probable words never changed). 625 runs: 268 unique, 49 ambiguous, 308 without fit; 5 words accepted (ahi, ayer, toma, tener, tenian). R9607 moves from 79.5 % to 79.9 % (1,121 S + 121 P, 2 R, 311 I of 1,555), still read in part (dudout/R9607_recheck.md).",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -587,7 +621,9 @@
       {"who": "bergenroth", "role": "key or decipherment used", "note": "CSP Spain 2 no. 476 abstract (from the contemporary deciphering) confirms R9635 and fills the gist of unread lines", "date": "1866", "source": "G. A. Bergenroth, Calendar of State Papers, Spain, vol. 2 (1866), no. 476"},
       {"who": "tomokiyo", "role": "prior solution", "note": "R9607: opening line deciphered and printed in 2025 ('A la carta de vuestra magestad de [xxix?] de abril ...'); the dudout/ reading of the letter agrees with it", "date": "2025-09-06", "source": "https://cryptiana.web.fc2.com/code/AlonsoSanchez.htm"},
       {"who": "dudout", "role": "transcription", "note": "R9607 (14 May 1522) transcribed blind sign by sign and read in part with the folder key, 79.5 % of 1,555 words; triage of DECODE lot 1 (11 records) (dudout/)", "date": "2026-11-12"},
-      {"who": "dudout", "role": "verification", "note": "one pre-registered measure of the folder key on a held-out passage of R9632 (f. 200r ll. 7-25): PASS, z = 5.68 against 400 controls (dudout/protocol/)", "date": "2026-11-12"}
+      {"who": "dudout", "role": "verification", "note": "one pre-registered measure of the folder key on a held-out passage of R9632 (f. 200r ll. 7-25): PASS, z = 5.68 against 400 controls (dudout/protocol/)", "date": "2026-11-12"},
+      {"who": "tomokiyo", "role": "prior solution", "note": "R9610 and the other Sánchez letters of lot 2 (R9603-R9630): opening lines deciphered and printed in 2025; the dudout/ reading of R9610 agrees with its opening line", "date": "2025-09-06", "source": "https://cryptiana.web.fc2.com/code/AlonsoSanchez.htm"},
+      {"who": "dudout", "role": "transcription", "note": "R9610 (2 June 1522) transcribed blind sign by sign and read in part with the folder key, 79.3 % of 1,137 words; triage of DECODE lot 2 (17 records); R9607 re-check to 79.9 % (dudout/)", "date": "2026-11-12"}
     ],
     "texts": [
       {
@@ -703,9 +739,27 @@
           "grade": "B",
           "by": "Claude Opus 5.5 for Brice Dudout",
           "date": "2026-11-12",
-          "note": "dudout/R9607_reading.md read as Spanish sentences, line by line, from a blind sign transcription decoded with key_codes.tsv unchanged: 1,121 sure, 116 probable (look-alike signs r/y, s/t, f/s, m/r, d/e resolved by sense), 2 restored, 316 unresolved of 1,555 words = 79.5 % (Daniel's 95 % rule: read in part). Sentences build on every page (e.g. 'Arman todavia galeras y hasta agora han armado aqui ... sin las que arman en Candia'; 'los de esta republica me han enbiado ... la minuta de lo que han escrito ...; esta bien conforme a aquello'); the unresolved runs are scattered, mostly spelled words mis-transcribed on look-alike signs."
+          "note": "dudout/R9607_reading.md read as Spanish sentences, line by line, from a blind sign transcription decoded with key_codes.tsv unchanged: 1,121 sure, 116 probable (look-alike signs r/y, s/t, f/s, m/r, d/e resolved by sense), 2 restored, 316 unresolved of 1,555 words = 79.5 % (Daniel's 95 % rule: read in part); after the frozen re-check of 12 Nov (dudout/R9607_recheck.md) 121 probable, 311 unresolved = 79.9 %. Sentences build on every page (e.g. 'Arman todavia galeras y hasta agora han armado aqui ... sin las que arman en Candia'; 'los de esta republica me han enbiado ... la minuta de lo que han escrito ...; esta bien conforme a aquello'); the unresolved runs are scattered, mostly spelled words mis-transcribed on look-alike signs."
         },
         "note": "Key validated on a held-out passage of R9632 by one pre-registered measure (PASS, z = 5.68, dudout/protocol/). No decipherment imaged on the record; not in CSP Spain 2."
+      },
+      {
+        "doc": "R9610",
+        "label": "R9610, Venice, 2 June 1522 (RAH Salazar 9/24 ff. 132r-134r)",
+        "transcription": ["dudout/R9610_signs.txt"],
+        "decryption": ["dudout/R9610_reading.md", "dudout/R9610_text_es.md"],
+        "summary": "Sánchez to Charles V: 24,000 ducats sent by the Viceroy of Naples for Prospero Colonna to pass through Venetian lands (the Signoria refuses a safe-conduct but has the rectors of Verona escort it); a safe-conduct for the Viceroy and his company; letters of the King of France from Lyon (he will not leave the enterprise, blames Lautrec, sends the Admiral); Lautrec, Cremona and Andrea Gritti; Lautrec leaves for France; the Turk's ambassador as a spy, the Turk arming a hundred sails, Venice's fifty galleys; a procurator of San Marco made for money; the Turks before Knin. Uncalendared; opening line printed by Tomokiyo (2025).",
+        "language": "es",
+        "reading": "dudout/R9610_text_es.md",
+        "translation": "dudout/R9610_en.md",
+        "state": "read in part",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude Opus 5.5 for Brice Dudout",
+          "date": "2026-11-12",
+          "note": "dudout/R9610_reading.md read as Spanish sentences, line by line, from a blind sign transcription decoded with key_codes.tsv unchanged: 691 sure, 211 probable (declared look-alikes resolved by sense), 2 restored, 233 unresolved (137 plus 96 that read only after a label correction) of 1,137 words = 79.3 % (Daniel's 95 % rule: read in part). Sentences build on every page (e.g. 'respondieron me que no me podian dar salvo conduto pero que escrivirian a los rectores de Verona'; 'que perderia a Francia y la vida antes que dexar esta enpresa'). 96 of the unresolved words read if a sign label is corrected after decoding (q for the l-sign, oo/OO, Z for d); they are not counted."
+        },
+        "note": "Key unchanged (no new measure, dudout/protocol/PREREG_lot2.md). No decipherment imaged on the record; not in CSP Spain 2."
       }
     ],
     "key_file": [
