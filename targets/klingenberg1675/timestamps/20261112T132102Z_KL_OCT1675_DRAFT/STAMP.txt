@@ -1,0 +1,8 @@
+LABEL: KL_OCT1675_DRAFT
+Local UTC: 20261112T132102Z
+Files: 5
+Manifest SHA-256: 04232a7b37fbd23ebbc33a0b5b6d1d6a49a520606cdf210fc23e28e882e2223b
+RFC3161 TSA (Sectigo Public Time Stamping Signer): status=Granted. time=Nov 12 13:21:03 2026 GMT
+OpenTimestamps: submitted (pending Bitcoin; ots upgrade later)
+Verify RFC3161: openssl ts -reply -in MANIFEST.sha256.tsr -text ; openssl ts -verify -data MANIFEST.sha256 -in MANIFEST.sha256.tsr -CAfile <Sectigo chain>
+Verify OTS: ots verify MANIFEST.sha256.ots
