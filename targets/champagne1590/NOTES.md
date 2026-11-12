@@ -145,11 +145,30 @@ matching no. 60's glossed *Ludouic*; no. 24 l. 22 gives *le [barred 9 = Roy] ...
 no. 60's second run gives *de launan*, not identified. The clear text of nos. 24 and 60 is not transcribed here, so
 neither letter has a reading.
 
+## 11 Nov 2026: nos. 24 and 60 read, key no. 25 checked, a second reader for no. 25 (Andrew Beling, `beling/`)
+
+Contributed with AI agents; details, files and the figures behind each point in `beling/README.md`. Our page line numbers for
+no. 24 run one ahead of this file's (page line 9 = l. 8 here).
+
+- **Held-out check of key no. 25.** Both runs of no. 24 carry contemporary letters over the figures, not used before. Key
+  no. 25 unchanged, test pre-registered (`beling/PREREG.md`): 13 of 14 glossed figures agree (0.929); 200 shuffled keys
+  best 0.357, mean 0.053. Pass, on a small sample.
+- **Key sheet.** Names 1-51, words x-lvii, cities lviii Paris to 89 Laon (80-89 written "iiij^xx" + units), provinces a-z.
+- **No. 24** transcribed and read (about 15 doubtful words): a camp newsletter of 11-15 June 1590. Barred 22, 44, 51 are
+  Guise, La Chastre, La Guiche; **84 is not barred** (plain s). L. 22 is **99 9̄ 56 93 35** on the image, not 99 95 93 35:
+  "le [Roy] lu[y] au[o]it refuzé ceste commission". L. 11 "Les xlm 84" is xliij = 43 "Intelligence" + s.
+- **No. 60** read (two doubtful words). The gloss over 64 at the end of the second run is a dotted y: "Launay".
+- **No. 25, second reader.** Transcribed and hashed before Brackx's was opened (not fully blind). Of his 37 doubtful words,
+  14 agree, 13 read otherwise, 10 doubtful for both; about 18 other differences, 7 of them settled in his favour. The l. 34
+  run may end **38 93 9̄ "du [Roy]"**, not barred 39 "du M. de La Noue": needs a third look. "l'union" has **58** on the page;
+  the sheet gives l = 56 only, so 58 -> 56 is an emendation of the encipherer's slip.
+- Not found: who Ludouic and Launay were (`beling/names_check.md`). Read shares not measured; class unchanged.
+
 ## Remaining gaps
 
-- No. 25: 72 holes in the reading (doubtful clear words such as [?poix] [?doigt], [?Lamour], [?balliages] [?de] [?flandre], the besieged town in K) and the isolated figure 3 in the Soissons run - blocker: illegible; contrast-enhanced enlargements of the native scan did not resolve them (Brackx); a second palaeographic reader is the next step
-- Nos. 24 and 60: the clear text not transcribed, so no reading of either letter; their cipher runs decode with key no. 25 except the no. 24 l. 22 join and the barred figures 22, 44, 51, 84 - blocker: not-attempted; transcribe both letters and check the barred figures on the image
-- Nevers key no. 25 sheet (fr. 3995 f. 51r): only six barred entries transcribed - blocker: not-attempted; the rest of the nomenclator would identify no. 24's barred figures
+- No. 25: 72 holes in the reading (doubtful clear words such as [?poix] [?doigt], [?Lamour], [?balliages] [?de] [?flandre], the besieged town in K) and the isolated figure 3 in the Soissons run - blocker: illegible; contrast-enhanced enlargements of the native scan did not resolve them (Brackx); a second reader (Beling, 11 Nov 2026) settles or re-reads 27 of the 37 marked words and leaves 10 doubtful for both; the l. 34 run's end (Roy or La Noue) needs a third look
+- Nos. 24 and 60: transcribed and read by one reader (Beling, 11 Nov 2026); about 15 doubtful words in no. 24, two in no. 60; who Ludouic and Launay were - blocker: illegible; a second reader of the clear text is the next step; the names are not found in print or on the web (beling/names_check.md)
+- Nevers key no. 25 sheet (fr. 3995 f. 51r): the 'Mots' and 'Dames' blocks not transcribed (names, words, cities and provinces done, Beling 11 Nov 2026) - blocker: not-attempted; not needed by any run of nos. 24, 25 or 60
 - No. 78 (f. 111r), one group of about six mixed signs - blocker: too-short; a single group, probably a name, in a different mixed code
 - Nos. 24/25/60 runs tried with key no. 57 (words57.tsv, syllables): no sense ('qui pi bo ni lo fi ...'); a different, alphabetical two-digit system; bracketed exhaustive LM search (anneal_twodigit.py) proposes 52 i, 62 n, 92 u/v, 95 y but none verifies on a second occurrence - blocker: no-key-material; no key or gloss for the code numbers, single-occurrence letter values cannot be checked
 

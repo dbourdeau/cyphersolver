@@ -1,0 +1,41 @@
+# champagne1590/beling: checker output and script runs, 2026-11-11T20:01Z, in a worktree of dbourdeau/cyphersolver on branch champagne1590-beling, cut from origin/main ddd7e02b, plus this folder and the NOTES.md / profile.json edits (uncommitted). Scripts run from targets/champagne1590/beling with python3 -I.
+
+$ shasum -a 256 -c results/frozen_inputs.sha256
+transcription/n24_figures.tsv: OK
+transcription/n24_glosses.tsv: OK
+PREREG.md: OK
+key/key25.md: OK
+scripts/key25.py: OK
+scripts/check_n24.py: OK
+transcription/n24_n60_runs.tsv: OK
+transcription/key25_noms_propres.tsv: OK
+scripts/decrypt_runs.py: OK
+transcription/n25_second_reading.md: OK
+
+$ python3 -I scripts/check_n24.py   (rewrites results/check_n24_result.json; identical to the first run)
+{'n_glossed': 14, 'score': 0.9286, 'best_shuffled': 0.3571, 'mean_shuffled': 0.0532, 'margin': 0.5714, 'pass': True}
+
+$ python3 -I scripts/decrypt_runs.py | diff - results/runs_mechanical.txt
+identical
+
+$ python3 docs/_check_profile.py champagne1590
+champagne1590: profile.json
+  [gap ] system.nomenclator.entries = "unknown"
+  [gap ] system.nulls.present = "unknown"
+  [gap ] system.nulls.count = "unknown"
+  [gap ] outcome.codes_open.open = "unknown"
+  [gap ] outcome.codes_open.tokens_open = "unknown"
+  [gap ] outcome.grades = "unknown"
+  result: valid, 6 unknown field(s)
+(exit 0)
+
+$ python3 docs/_check_writeup.py champagne1590   (differences from the same run on origin/main)
+<   [ok  ] the page was reviewed against the current NOTES.md and profile.json (review ledger)
+>   [MISS] NOTES.md or profile.json changed since the page was last reviewed (2026-11-07): re-read the page against them, fix what is stale (head, glance box, counts, Still open, credits), then run python docs/_check_writeup.py --reviewed champagne1590
+<          - gap marked not-attempted: - Nos. 24 and 60: the clear text not transcribed, so no reading of either letter; their ci
+<          - gap marked not-attempted: - Nevers key no. 25 sheet (fr. 3995 f. 51r): only six barred entries transcribed - blocker
+>          - gap marked not-attempted: - Nevers key no. 25 sheet (fr. 3995 f. 51r): the 'Mots' and 'Dames' blocks not transcribed
+
+$ python3 docs/_check_reading.py champagne1590
+target: clean share 0.595, worst n24-25-60 0.385, shapes {'reading': 3}, translated 1/3, plus 2 decoded, not read
+(the checker reads the profile's texts in texts/, none of which this pull request changes)
