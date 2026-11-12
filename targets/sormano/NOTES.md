@@ -174,3 +174,27 @@ Closed (taken out of the open list, 23 Oct 2026): no. 66's own cipher stretches 
 - [x] print: Molini, Documenti di storia italiana II, does not print nos. 63, 65, 66 (Patel); Tomokiyo lists them without decipherment; fr. 2974 f. 94 (Molini's printed decipherment of Sormano's 13 April letter) not digitised, and no longer needed for the key
 - [x] key-rebuild: the null, the duca sign and four letter forms added to Lasry's table (KEY.md); Patel's independent 22 values agree on 20
 - [x] retry: 23 Oct 2026, IIIF full-resolution master tested (same as raw/); no. 66 re-read sign by sign and read, new values null/rr/z; no. 63 f. 115r lines 1-27 re-read, the rest not yet
+
+## 12 Nov 2026 — no. 63 f. 115r (line 28)-116v re-read (Brice Dudout, Claude Opus 5.5)
+
+The first remaining gap was worked in `dudout/`. Every cipher sign from f. 115r line 28 to the foot of f. 116v was
+transcribed on Gallica views 119-121, and the transcription was frozen by SHA-256 before decoding with Lasry's key
+and no. 66's values. One pre-registered measure on the stretch (3787 cipher-sign tokens, the matignon1586c3 rule,
+lexicon it-cinquecento) gave 0.919, against 0.717 for `n63_transcription.md`; all 400 controls fell below (shuffled
+text max 0.853). The continuous reading, `dudout/no63_reading_reread.md`, has 97.3% of cipher letters and 94.5% of
+cipher words sure or probable, with 25 groups unresolved.
+
+Points to check:
+- The curled saltire is *Venetiani* (f. 116v gloss).
+- Я and Ф are probably *Fiorentini* and *Imperatore*, from sense only.
+- The looped b-sign reads z in this stretch (Abruzzo, importanza, sicurezza), against rr in no. 66.
+
+The no. 65 gap was not attempted in that pass. The state of no. 63 is left to the maintainer.
+
+## 12 Nov 2026 — no. 65 gaps re-read (Brice Dudout, Claude Opus 5.5)
+
+The cipher runs left open in `n65_reading.md` (foot of f. 119r, foot of f. 119v, f. 120r) were re-read sign by sign
+on Gallica views 123-124 in `dudout/`, frozen before decoding, and measured once (1904 cipher-sign tokens): 0.990
+against 0.874 for `n65_transcription.md`, all 400 controls below (shuffled text max 0.901). `dudout/no65_reading_reread.md`
+has 99.3% of the cipher words sure or probable and no unresolved word. The looped b-sign reads rr twice (Ferrara,
+arrivò) and z once (contenteza) in these lines. The state of no. 65 is left to the maintainer.
