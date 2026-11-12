@@ -36,7 +36,7 @@
     },
     {
       "id": "1675-05-08",
-      "read": "not read",
+      "read": "read in part",
       "shelfmark": "Rigsarkivet, Tyske Kancelli, Udenrigske Afdeling, Almindelig del: Conrad Biermanns kopibog over udgaaede skrivelser til danske ministre i udlandet, 1675 (Daisy heid 2130515, unit S-1418), images 174-175",
       "date": "8 May 1675",
       "year": 1675,
@@ -67,7 +67,7 @@
     },
     {
       "id": "1675-05-11",
-      "read": "not read",
+      "read": "read in part",
       "shelfmark": "Rigsarkivet, Tyske Kancelli, Udenrigske Afdeling, Almindelig del: Conrad Biermanns kopibog over udgaaede skrivelser til danske ministre i udlandet, 1675 (Daisy heid 2130515, unit S-1418), images 179-181",
       "date": "11 May 1675",
       "year": 1675,
@@ -98,7 +98,7 @@
     },
     {
       "id": "1675-06-01",
-      "read": "not read",
+      "read": "read in part",
       "shelfmark": "Rigsarkivet, Tyske Kancelli, Udenrigske Afdeling, Almindelig del: Conrad Biermanns kopibog over udgaaede skrivelser til danske ministre i udlandet, 1675 (Daisy heid 2130515, unit S-1418), images 209",
       "date": "1 June 1675",
       "year": 1675,
@@ -129,7 +129,7 @@
     },
     {
       "id": "1675-06-05",
-      "read": "not read",
+      "read": "read in part",
       "shelfmark": "Rigsarkivet, Tyske Kancelli, Udenrigske Afdeling, Almindelig del: Conrad Biermanns kopibog over udgaaede skrivelser til danske ministre i udlandet, 1675 (Daisy heid 2130515, unit S-1418), images 211-212",
       "date": "5 June 1675",
       "year": 1675,
@@ -160,7 +160,7 @@
     },
     {
       "id": "1675-06-08",
-      "read": "not read",
+      "read": "read in part",
       "shelfmark": "Rigsarkivet, Tyske Kancelli, Udenrigske Afdeling, Almindelig del: Conrad Biermanns kopibog over udgaaede skrivelser til danske ministre i udlandet, 1675 (Daisy heid 2130515, unit S-1418), images 228-229",
       "date": "8 June 1675",
       "year": 1675,
@@ -191,7 +191,7 @@
     },
     {
       "id": "1675-06-12",
-      "read": "not read",
+      "read": "read in part",
       "shelfmark": "Rigsarkivet, Tyske Kancelli, Udenrigske Afdeling, Almindelig del: Conrad Biermanns kopibog over udgaaede skrivelser til danske ministre i udlandet, 1675 (Daisy heid 2130515, unit S-1418), images 238-239",
       "date": "12 June 1675",
       "year": 1675,
@@ -222,7 +222,7 @@
     },
     {
       "id": "1675-06-24",
-      "read": "not read",
+      "read": "read in part",
       "shelfmark": "Rigsarkivet, Tyske Kancelli, Udenrigske Afdeling, Almindelig del: Conrad Biermanns kopibog over udgaaede skrivelser til danske ministre i udlandet, 1675 (Daisy heid 2130515, unit S-1418), images 255-256",
       "date": "24 June 1675",
       "year": 1675,
@@ -546,9 +546,9 @@
         "detail": "Our reader wrote every hash-like sign as # (c). 96 failed tokens sit in words that differ from the intended word only by c for g. A blind re-reading of those glyphs is not done; no figure that assumes it is quoted."
       },
       {
-        "item": "Seven copybook letters (8 May to 24 June) without a full English translation",
+        "item": "English translations of the eleven letters by a model",
         "blocker": "not-attempted",
-        "detail": "Rule-built German readings are given; recorded as decoded, not read."
+        "detail": "Translations by Claude, not checked by a German-reading person. The punctuation and word division of the German readings are ours (the cipher marks neither); no decoded letter was changed."
       },
       {
         "item": "Sixteen further letters (6 February to 21 June) used to build the key",
@@ -603,10 +603,17 @@
         "decryption": "texts/1675-05-08_klingenberg_decryption.txt",
         "reading": "texts/1675-05-08_klingenberg_reading.md",
         "language": "de",
-        "state": "decoded, not read",
+        "state": "read in part",
         "read_share": 0.8,
         "note": "read_share is our count of the README word rule on the cipher passages of the reading file (20 words, 5 holes); the clear passages (lines beginning >) are not counted. By cipher tokens under the map of record the figure is in counts.txt.",
-        "summary": "Decoded with the key and given as a rule-built German word reading with every hole in place (reading file); no full English translation has been written, so it is recorded as decoded, not read. Subject, from the reading: the same business as the 4 May letter (subsidies, Anritzgelder, the fleet, the rupture with Sweden, the allies at The Hague)."
+        "translation": "texts/1675-05-08_klingenberg_translation.md",
+        "summary": "Chancellor Brandt, the Elector of Brandenburg's envoy, has arrived in Copenhagen and handed in his commission in writing; Biermann expects him to get a written resolution soon, with all possible and [?reasonable] satisfaction. The King will not enter into rupture with Sweden before the allies have performed their side of the treaties, of which there is [21] likelihood or possibility. The Swedish ambassador extraordinary has handed in a new paper, which is to rest until the secretary sent to Sweden returns.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (a session of the same project as the key and the gloss). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
+          "date": "2026-11-12",
+          "note": "Read as sentences against the translation. The argument can be followed from start to end, with holes in most sentences: codes with no value, words that decode wrongly and are given as [?word], and syllable runs not made into words. The reading file keeps the rule-built text and adds a punctuated copy; the punctuation is ours, no decoded letter or word division is changed."
+        }
       },
       {
         "doc": "1675-05-11",
@@ -617,10 +624,17 @@
         "decryption": "texts/1675-05-11_klingenberg_decryption.txt",
         "reading": "texts/1675-05-11_klingenberg_reading.md",
         "language": "de",
-        "state": "decoded, not read",
+        "state": "read in part",
         "read_share": 0.873,
         "note": "read_share is our count of the README word rule on the cipher passages of the reading file (275 words, 40 holes); the clear passages (lines beginning >) are not counted. By cipher tokens under the map of record the figure is in counts.txt.",
-        "summary": "Decoded with the key and given as a rule-built German word reading with every hole in place (reading file); no full English translation has been written, so it is recorded as decoded, not read. Subject, from the reading: the same business as the 4 May letter (subsidies, Anritzgelder, the fleet, the rupture with Sweden, the allies at The Hague)."
+        "translation": "texts/1675-05-11_klingenberg_translation.md",
+        "summary": "The King has read the reports on the allies' conclusion at The Hague, which Klingenberg and Høeg accepted; though it is not in accordance with his instructions and in many points contrary, he will not disavow them, and he awaits the particulars. They are to press for prompt payment of the remaining and fleet subsidies and the arrears of Anritzgelder, for ships manned for landings and put at the King's disposal, and to divert the allies' plan to send the Lüneburg troops to Flanders: they are needed on the Elbe, and without them the King will hardly proceed to the rupture. [413] [385] salt ships from Lisbon are said to be on the way, whose capture could open the war.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (a session of the same project as the key and the gloss). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
+          "date": "2026-11-12",
+          "note": "Read as sentences against the translation. The argument can be followed from start to end, with holes in most sentences: codes with no value, words that decode wrongly and are given as [?word], and syllable runs not made into words. The reading file keeps the rule-built text and adds a punctuated copy; the punctuation is ours, no decoded letter or word division is changed."
+        }
       },
       {
         "doc": "1675-06-01",
@@ -631,10 +645,17 @@
         "decryption": "texts/1675-06-01_klingenberg_decryption.txt",
         "reading": "texts/1675-06-01_klingenberg_reading.md",
         "language": "de",
-        "state": "decoded, not read",
+        "state": "read in part",
         "read_share": 0.852,
         "note": "read_share is our count of the README word rule on the cipher passages of the reading file (23 words, 4 holes); the clear passages (lines beginning >) are not counted. By cipher tokens under the map of record the figure is in counts.txt.",
-        "summary": "Decoded with the key and given as a rule-built German word reading with every hole in place (reading file); no full English translation has been written, so it is recorded as decoded, not read. Subject, from the reading: the same business as the 4 May letter (subsidies, Anritzgelder, the fleet, the rupture with Sweden, the allies at The Hague)."
+        "translation": "texts/1675-06-01_klingenberg_translation.md",
+        "summary": "Klingenberg's report was laid before the Privy Council, and Biermann sends the list of regiments and companies of the stipulated [16] thousand men. The King agrees that the three thousand boatmen be taken on with his commissaries' billets and pay, as far as possible from his own subjects who are still free [?] (ledig). Høeg's mission to the Elector is not yet decided but will probably go ahead; 6,000 Swedish men are said to stand ready to cross to Germany.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (a session of the same project as the key and the gloss). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
+          "date": "2026-11-12",
+          "note": "Read as sentences against the translation. The argument can be followed from start to end, with holes in most sentences: codes with no value, words that decode wrongly and are given as [?word], and syllable runs not made into words. The reading file keeps the rule-built text and adds a punctuated copy; the punctuation is ours, no decoded letter or word division is changed."
+        }
       },
       {
         "doc": "1675-06-05",
@@ -645,10 +666,17 @@
         "decryption": "texts/1675-06-05_klingenberg_decryption.txt",
         "reading": "texts/1675-06-05_klingenberg_reading.md",
         "language": "de",
-        "state": "decoded, not read",
+        "state": "read in part",
         "read_share": 0.86,
         "note": "read_share is our count of the README word rule on the cipher passages of the reading file (147 words, 24 holes); the clear passages (lines beginning >) are not counted. By cipher tokens under the map of record the figure is in counts.txt.",
-        "summary": "Decoded with the key and given as a rule-built German word reading with every hole in place (reading file); no full English translation has been written, so it is recorded as decoded, not read. Subject, from the reading: the same business as the 4 May letter (subsidies, Anritzgelder, the fleet, the rupture with Sweden, the allies at The Hague)."
+        "translation": "texts/1675-06-05_klingenberg_translation.md",
+        "summary": "Nothing is added on the Lüneburg troops beyond the dispatch of 25 May. The Swedish ambassador Count Niels Brahe has formally presented his king's marriage suit, and after long delay the King has declared through [193] that it is not contrary to him, with the express rider that the marriage shall not prejudice his treaties with the allies or their execution; Klingenberg is to remove any umbrage the States and the allies take. The King goes to Holstein next week to inspect his troops at Rendsburg and will propose a meeting to the Duke of Gottorp. Context (general knowledge, not from a source here): probably Charles XI of Sweden's suit for the Danish princess Ulrika Eleonora, 1675.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (a session of the same project as the key and the gloss). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
+          "date": "2026-11-12",
+          "note": "Read as sentences against the translation. The argument can be followed from start to end, with holes in most sentences: codes with no value, words that decode wrongly and are given as [?word], and syllable runs not made into words. The reading file keeps the rule-built text and adds a punctuated copy; the punctuation is ours, no decoded letter or word division is changed."
+        }
       },
       {
         "doc": "1675-06-08",
@@ -659,10 +687,17 @@
         "decryption": "texts/1675-06-08_klingenberg_decryption.txt",
         "reading": "texts/1675-06-08_klingenberg_reading.md",
         "language": "de",
-        "state": "decoded, not read",
+        "state": "read in part",
         "read_share": 0.806,
         "note": "read_share is our count of the README word rule on the cipher passages of the reading file (75 words, 18 holes); the clear passages (lines beginning >) are not counted. By cipher tokens under the map of record the figure is in counts.txt.",
-        "summary": "Decoded with the key and given as a rule-built German word reading with every hole in place (reading file); no full English translation has been written, so it is recorded as decoded, not read. Subject, from the reading: the same business as the 4 May letter (subsidies, Anritzgelder, the fleet, the rupture with Sweden, the allies at The Hague)."
+        "translation": "texts/1675-06-08_klingenberg_translation.md",
+        "summary": "The King's departure for Holstein is put off to Monday, and the allied ministers, especially Brandenburg's, have been assured again that the Swedish marriage will not keep him from his obligations. Klingenberg's report of the 11th shows the remaining subsidies, Anritzgelder and fleet money unpaid (the province [327] has made a beginning), only [98] [...] of the stipulated warships at sea and the Lüneburg troops marching to the Netherlands, though the whole work rests on these points. Chancellor Brandt's paper argues that the sooner the allies are done with Sweden the sooner they will [189] to a [?reasonable] [34]; Høeg's dispatch for his journey to the Elector should be ready soon.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (a session of the same project as the key and the gloss). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
+          "date": "2026-11-12",
+          "note": "Read as sentences against the translation. The argument can be followed from start to end, with holes in most sentences: codes with no value, words that decode wrongly and are given as [?word], and syllable runs not made into words. The reading file keeps the rule-built text and adds a punctuated copy; the punctuation is ours, no decoded letter or word division is changed."
+        }
       },
       {
         "doc": "1675-06-12",
@@ -673,10 +708,17 @@
         "decryption": "texts/1675-06-12_klingenberg_decryption.txt",
         "reading": "texts/1675-06-12_klingenberg_reading.md",
         "language": "de",
-        "state": "decoded, not read",
+        "state": "read in part",
         "read_share": 0.778,
         "note": "read_share is our count of the README word rule on the cipher passages of the reading file (112 words, 32 holes); the clear passages (lines beginning >) are not counted. By cipher tokens under the map of record the figure is in counts.txt.",
-        "summary": "Decoded with the key and given as a rule-built German word reading with every hole in place (reading file); no full English translation has been written, so it is recorded as decoded, not read. Subject, from the reading: the same business as the 4 May letter (subsidies, Anritzgelder, the fleet, the rupture with Sweden, the allies at The Hague)."
+        "translation": "texts/1675-06-12_klingenberg_translation.md",
+        "summary": "The King has read Klingenberg's report on the six points. Although the declaration of war will not be made in the name of all the allies at The Hague but by a [251] in his own territory, the points still unsettled must be negotiated according to the King's [377], above all payment of all outstanding moneys and of the [233] subsidies, since he has his troops together and needs the large subsidies for their keep. The Swedish ambassador takes his leave as the King leaves for Holstein, and Frantz Möller is to report fleet money to Guldensparre and land subsidies to von Stöcken by every post.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (a session of the same project as the key and the gloss). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
+          "date": "2026-11-12",
+          "note": "Read as sentences against the translation. The argument can be followed from start to end, with holes in most sentences: codes with no value, words that decode wrongly and are given as [?word], and syllable runs not made into words. The reading file keeps the rule-built text and adds a punctuated copy; the punctuation is ours, no decoded letter or word division is changed."
+        }
       },
       {
         "doc": "1675-06-24",
@@ -687,10 +729,17 @@
         "decryption": "texts/1675-06-24_klingenberg_decryption.txt",
         "reading": "texts/1675-06-24_klingenberg_reading.md",
         "language": "de",
-        "state": "decoded, not read",
+        "state": "read in part",
         "read_share": 0.793,
         "note": "read_share is our count of the README word rule on the cipher passages of the reading file (142 words, 37 holes); the clear passages (lines beginning >) are not counted. By cipher tokens under the map of record the figure is in counts.txt.",
-        "summary": "Decoded with the key and given as a rule-built German word reading with every hole in place (reading file); no full English translation has been written, so it is recorded as decoded, not read. Subject, from the reading: the same business as the 4 May letter (subsidies, Anritzgelder, the fleet, the rupture with Sweden, the allies at The Hague)."
+        "translation": "texts/1675-06-24_klingenberg_translation.md",
+        "summary": "The King cannot see what the [377] given by the States General to their ambassador bound for [?Moscow], on peace between the [?Grand Duke] and the Turks, can serve but to unsettle the [244]; a peace might free the [258] to turn on the [100], so the [244] should rather be brought into action against Sweden by any means. The King declines to pay a share of the present for the [244]'s [?chancellor], having already spent heavily without repayment; the 16,000 stipulated men stand ready for muster, and Spain and the States are to pay the [233] subsidies from the month the troops were ready. The Swedish marriage will not keep him from his obligations; deputies from Gottorp have arrived.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (a session of the same project as the key and the gloss). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
+          "date": "2026-11-12",
+          "note": "Read as sentences against the translation. The argument can be followed from start to end, with holes in most sentences: codes with no value, words that decode wrongly and are given as [?word], and syllable runs not made into words. The reading file keeps the rule-built text and adds a punctuated copy; the punctuation is ours, no decoded letter or word division is changed."
+        }
       },
       {
         "doc": "1675-06-28",

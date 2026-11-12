@@ -34,10 +34,10 @@ Limits of these figures: the intended words (the gloss files) were written after
 ## What each letter gets
 
 - 4 May 1675 and the three drafts: transcription, decryption, gloss, German reading with every hole in place, full English with the same holes. State: read in part.
-- The seven copybook letters of 8 May to 24 June: transcription, decryption, glosses (v3 and v4), rule-built German reading. No full English yet, so they are recorded as decoded, not read.
+- The seven copybook letters of 8 May to 24 June: transcription, decryption, glosses (v3 and v4), rule-built German reading with a punctuated copy, full English with the same holes. State: read in part. The English was added on 12 Nov 2026 at the reviewer's request; it adds no read token, and every count in this file is unchanged.
 - Sixteen further letters (6 February to 21 June) on which the key was built: transcription and decryption only, as evidence for the key. No count of record.
 
-The German readings are built by rule (`[?word]`, `[n]`, `[...]`; see the head of each file), not polished: no punctuation or capitals of ours in the cipher passages.
+The German readings are built by rule (`[?word]`, `[n]`, `[...]`; see the head of each file), not polished: no punctuation or capitals of ours in the cipher passages. The readings of the seven copybook letters also carry a second section, `Punctuated reading`: the punctuation there is ours; the word division is the rule-built one from the gloss, also ours, since the cipher marks none; no decoded letter, capital or hole is changed (checked by stripping our marks and comparing token for token).
 
 ## Emendations and overrides, all declared
 
