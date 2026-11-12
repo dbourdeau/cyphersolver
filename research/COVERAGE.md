@@ -132,6 +132,7 @@ Folders: `sweep_2026-11_A_halfdone`, `sweep_2026-11_B_unswept_south`, `sweep_202
 - **ASF Florence** (`sweep_2026-11_asf_florence`, `_2`, `asf_map_paging`): MAP inventory vol. 4 OCR'd, every unopened "in cifra"
   item of the PAD Mediceo del Principato filze 330-460 opened. Not online: Mediceo del Principato 461-659 (the appendix filze
   with the most cipher), Dieci di Balìa. The MAP inventory misses cipher letters: page filze, do not trust it.
+- **ASF MAP backfill, 13 Nov 2026** (`sweep_2026-11-13_b169_backfill`, 12 leads 2554-2565): MAP filze XLIII, XLIX, LI-LIII, MdP 385 and one Rigsarkivet Pentz unit. Still unpaged: MAP XXXIX, XL, XLIV, LVI-LIX (LVI stopped at disk limit); Pentz unit 274999 images 137-503; the notes of Lettere di Lorenzo VII-IX (not online) before the ten MAP leads are promoted.
 - **Turin and Archivi Nazionali** (`sweep_2026-11_turin_chrome`): the Turin browser check is a cookie printed in the page (curl
   works); Archivi Nazionali has JSON endpoints (`keywords=`). Lettere ministri are inventoried only by bundle and not
   digitised. Milan ICAR's certificate expired 6 Nov 2026.
