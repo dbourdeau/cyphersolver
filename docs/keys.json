@@ -4798,6 +4798,46 @@
    "year": 1814,
    "found": 2026,
    "note": "A surviving sheet of the State Department's numerical code, NARA M97 roll 13 frames 1056-1057, printed by Weber (1979) as WE028; working transcription in targets/morris1813/beling/key/codebook_M97_13_transcription.csv (seven entries blank, eleven disputed). The same code as the table rebuilt in targets/jqa (k-jqa1385)."
+  },
+  {
+   "id": "k-mundic1912",
+   "label": "Letter substitution of the \"Mundic\" telegrams, Mexico to Paris, 1912 (key recovered from the ciphertext)",
+   "kind": "rebuilt here",
+   "by": "WAINUT",
+   "year": 1912,
+   "note": "21 cipher letters for Spanish, the same in X-1.3.207.1 and X-1.3.239.1; two cipher letters stand for two plain letters (n = t or u, u = n or w). Recovered from the ciphertext by annealing with Spanish 4-grams and finished by hand; frozen on the first telegram it read 58 of the 60 covered letters of the second, none wrong (key partial: values t = z and l = h rest on one or two occurrences)."
+  },
+  {
+   "id": "k-delabarra1913",
+   "label": "Letter substitution of the De la Barra telegram, New York, 11 August 1913 (key recovered from the ciphertext)",
+   "kind": "rebuilt here",
+   "by": "WAINUT",
+   "year": 1913,
+   "note": "20 cipher letters for Spanish; W written as two v, r = h or t. Recovered by annealing with Spanish 4-grams guided by the clear words of the telegram; frozen on lines 1-6 it read 110 of the 112 letters of lines 7-13, none wrong (key partial: s = x and l = f rest on one word each)."
+  },
+  {
+   "id": "k-warministry1885",
+   "label": "War Ministry two-digit key (\"clave antigua\") of the Reyes-Revueltas correspondence, 1885-86 (rebuilt from DLI.3.524.1)",
+   "kind": "rebuilt here",
+   "by": "WAINUT",
+   "year": 1885,
+   "note": "Homophonic substitution, one two-digit group per letter, 41 groups rebuilt from the cipher letter DLI.3.524.1 (9 Dec 1885) and its contemporary translation (245 letter pairs, no conflicts), frozen. It reads 91 of 91 covered letters of two further translated telegrams (DLI.4.631.1, DLI.3.416.1) with none wrong; seven groups of DLI.4.634.1 are not in it (partial)."
+  },
+  {
+   "id": "k-nunez1899code",
+   "label": "Word code of Roberto Nunez and Limantour, August 1899 (rebuilt from glossed telegrams)",
+   "kind": "rebuilt here",
+   "by": "WAINUT",
+   "year": 1899,
+   "note": "A code of Spanish dictionary words for words and phrases; 97 values frozen from telegrams 9922, 9929 and 9930 (each with its plain text), 28 of them confirmed on telegram 9926 by its contemporary translation; the other 36 values of 9926 come from that translation only. No codebook found."
+  },
+  {
+   "id": "k-x15466",
+   "label": "Key sheet \"Abecedario y su clave\", CEHM-Carso Fondo X-1, X-1.5.466.1",
+   "kind": "archive key",
+   "by": "Secretaria Particular del Presidente (typed sheet addressed to Francisco L. de la Barra)",
+   "year": null,
+   "note": "A typed key sheet in the Francisco Leon de la Barra papers, tested both ways on the 1912 and 1913 telegrams of the same fonds: no Spanish. Date not established."
   }
  ],
  "links": [
@@ -7734,6 +7774,30 @@
    "target": "morris1813",
    "how": "adapted",
    "note": "The block reversal was first found on frame 0039 by fitting this table (WAINUT, 27 Oct 2026): function-word share 0.353 against at most 0.297 for 20,000 random block orders; the later readings use the code sheet itself (k-we028)"
+  },
+  {
+   "key": "k-mundic1912",
+   "target": "mundic1912",
+   "how": "rebuilt from",
+   "note": "recovered from the ciphertext of both telegrams, frozen on X-1.3.207.1 and tested on X-1.3.239.1"
+  },
+  {
+   "key": "k-delabarra1913",
+   "target": "delabarra1913",
+   "how": "rebuilt from",
+   "note": "recovered from the ciphertext, frozen on lines 1-6 and tested on lines 7-13"
+  },
+  {
+   "key": "k-warministry1885",
+   "target": "reyes1886",
+   "how": "rebuilt from",
+   "note": "rebuilt from the translated cipher letter DLI.3.524.1, frozen, applied to DLI.4.634.1 and tested on DLI.4.631.1 and DLI.3.416.1"
+  },
+  {
+   "key": "k-nunez1899code",
+   "target": "nunez1899",
+   "how": "rebuilt from",
+   "note": "frozen from three other glossed telegrams; 28 of 65 code words of 9926 confirmed by its contemporary translation, 36 values from the translation only"
   }
  ],
  "sources": [
@@ -8998,6 +9062,22 @@
   {
    "source": "s-cyphersolver",
    "key": "k-wackerbarth-s1"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-mundic1912"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-delabarra1913"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-warministry1885"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-nunez1899code"
   }
  ],
  "unlinked": {
@@ -10296,6 +10376,16 @@
    "key": "k-we028",
    "target": "king1797",
    "note": "the WE028 sheet in both block orders against King's key: 757 and 752 numbers in common, none with the same value, no constant offset (targets/king1797/NOTES.md)"
+  },
+  {
+   "key": "k-x15466",
+   "target": "mundic1912",
+   "note": "tested in both directions (scripts/keysheet_test.py): no Spanish; a different key"
+  },
+  {
+   "key": "k-x15466",
+   "target": "delabarra1913",
+   "note": "tested in both directions (scripts/keysheet_test.py): no Spanish; a different key"
   }
  ]
 }

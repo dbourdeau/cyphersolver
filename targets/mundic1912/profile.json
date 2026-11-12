@@ -1,0 +1,334 @@
+{
+ "schema_version": 1,
+ "target": "mundic1912",
+ "title": "'Mundic', Mexico, to Luis León de la Barra, Paris, two cipher telegrams of 13 Feb and 15 Mar 1912 (catalogue 1463): letter substitution solved from the ciphertext, key frozen on one telegram and tested on the other; both read in part",
+ "documents": [
+  {
+   "id": "X-1.3.207.1",
+   "read": "read in part",
+   "shelfmark": "CEHM-Carso, Fondo X-1 (Manuscritos de Francisco León de la Barra), X-1.3.207.1",
+   "date": "13 Feb 1912 (Paris Bourse stamp)",
+   "year": 1912,
+   "country": "Mexico",
+   "route": "'Mundic', Mexico -> Luis L. de la Barra, 9 rue Alfred de Vigny, Paris (telegraphic address Barradella)",
+   "places": {
+    "from": "Mexico City",
+    "to": "Paris"
+   },
+   "language": "Spanish",
+   "cleartext_in_document": "none",
+   "pages": 2,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the form. Key recovered from the ciphertext of this telegram and X-1.3.239.1."
+   },
+   "length": {
+    "tokens": 75,
+    "distinct": 19,
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription_207.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "http://visor.cehm.org.mx/assets/docx/fondos/jzd/X-1/3/207/1/X-1.3.207.1.0001.jpg",
+    "image_quality": "good",
+    "notes": "Two passes (about 0.75x, then 2x crops); two letters disagreed and were settled on the crops. Pass 2 was not blind to a first solve."
+   }
+  },
+  {
+   "id": "X-1.3.239.1",
+   "read": "read in part",
+   "shelfmark": "CEHM-Carso, Fondo X-1, X-1.3.239.1",
+   "date": "15 Mar 1912 (Paris Bourse stamp)",
+   "year": 1912,
+   "country": "Mexico",
+   "route": "'Mundic', Mexico -> Luis L. de la Barra, Paris",
+   "places": {
+    "from": "Mexico City",
+    "to": "Paris"
+   },
+   "language": "Spanish",
+   "cleartext_in_document": "none",
+   "pages": 2,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the form."
+   },
+   "length": {
+    "tokens": 75,
+    "distinct": 17,
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription_239.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "http://visor.cehm.org.mx/assets/docx/fondos/jzd/X-1/3/239/1/X-1.3.239.1.0001.jpg",
+    "image_quality": "good",
+    "notes": "Two passes (about 0.7x, then 2x-3x crops); three letters disagreed and were settled on the crops; the f of fwxov is the weakest sign. Pass 2 was not blind to a first solve."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Lower-case letter substitution of Spanish, 21 cipher letters seen. Two cipher letters stand for two plain letters each: n = t and u (both in situación), u = n and w (necesario, Wilson). Single exceptions read as slips: o = o once (embajador; i elsewhere), e = l once (vuelvas; d elsewhere), one l dropped (resuelvas). 207 keeps word division; 239 is in groups of five. The key sheet in the same fondo (X-1.5.466.1) is a different key.",
+  "symbol_kind": "letters",
+  "distinct_symbols": 21,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "random",
+  "word_division": "partial"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment on the forms; CEHM catalogue: 'En clave', no translation. Two web searches (12 Nov 2026: 'León de la Barra August 1913 New York Boaz Long telegram recognition Huerta'; '\"Mundic\" León de la Barra telegrama 1912 clave') found no edition or decipherment of these telegrams; the vetting of 2 Nov 2026 found nothing in DECODE, Tomokiyo or Lasry. Narváez 2019 (SRE book) not read.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "WAINUT set the task (catalogue 1463) and the rules; AI language-model agents transcribed, solved, froze the key, ran the held-out test, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "CEHM-Carso viewer images (visor.cehm.org.mx)",
+   "scripts in this folder (decryption, held-out test, mark check)",
+   "simulated-annealing substitution solver with Spanish 4-gram statistics (Project Gutenberg texts)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-12",
+  "last_date": "2026-11-12"
+ },
+ "solution": [
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "Images of X-1.3.207.1 and X-1.3.239.1 and the key sheet X-1.5.466.1 fetched from visor.cehm.org.mx (direct JPG), one at a time, at least 1.6 s apart, no login.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "what": "Key sheet X-1.5.466.1 ('Abecedario y su clave', Secretaría Particular del Presidente, to F. L. de la Barra) applied in both directions: no Spanish (scripts/keysheet_test.py).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring",
+    "manual reconstruction"
+   ],
+   "what": "Simulated annealing on the 150 letters of both telegrams with Spanish 4-grams gave fragments (considera, necesario, situación incierta, tendencia); finished by hand with the word division of 207 and checked on the crops.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "what": "Key frozen from telegram 207 alone (19 letters), applied to 239: 72 of 75 letters right (96.0%), 0 wrong, 3 not in the frozen key (l twice, t once). Weakness: 239 had been looked at during the first joint machine solve.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Both decrypted mechanically and read with every departure marked; scripts/check_marks.py passes.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Independent blind review by an AI language-model agent that did not take part in the solve: signs re-read from the scans before opening the transcriptions, scripts re-run, held-out count reproduced, texts read as sentences against the translations. One sign of 207 (L2 g1, 8th letter) may be b rather than o; every other sign agrees. 207 grade B, 239 grade A.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 149 tokens, 21 types, es-modern order 4: reading -2.899 per letter; random keys -7.181 (z 5.9); key annealed onto shuffled ciphertext best -3.68 (mean -3.828, z 6.7); annealer on the real text -2.94. Verdict: pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "what": "Integration check (12 Nov 2026), own decoder from key_frozen.tsv: telegram 239 decodes to 'aclaraciones buena impresion situacion incierta tendencia general vivo anhelo de paz'; held-out count reproduced (58 of 60 on lines 2-4 by heldout.py, line 1 by hand; 0 wrong). Own control with the lang es-modern 4-gram model: frozen-key decode of 239 -2.317 per letter against 2000 keys with the same plain values shuffled over the cipher letters, mean -6.91, best -3.99 (z 5.1). The freezing order rests on the contributor's record (single commit); both telegrams had been solved together before.",
+   "result": "worked",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ]
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Integration check (12 Nov 2026): images X-1.3.207.1.0001 and X-1.3.239.1.0001 fetched from the CEHM viewer (no refusal) and compared with the transcriptions at full resolution: all groups agree at that reading; the doubtful signs the contributor names stay doubtful. Read share recounted strictly: 207 0.70, 239 0.917, together 0.818: read in part confirmed.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-12",
+   "model": "es-modern",
+   "file": "validation.tsv",
+   "tokens": 149,
+   "types": 21,
+   "tokens_per_type": 7.1,
+   "score": -2.899,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -7.181,
+     "sd": 0.725,
+     "max": -5.377,
+     "z": 5.9,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -3.828,
+     "sd": 0.139,
+     "max": -3.68,
+     "z": 6.7,
+     "p": 0.1429
+    }
+   },
+   "power": -2.94,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.236; polyphony 0.047; 1 unread tokens left out; annealer on the real text from random keys reached -2.94"
+  },
+  "class": "read in part",
+  "key": "partial",
+  "key_file": [
+   "key.tsv",
+   "key_frozen.tsv"
+  ],
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Ciphertext-only solve of the two telegrams together (same sender, same key), frozen on 207 and tested on 239.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.818,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Strict count by the README read bar, from the reading files: cipher words verbatim from the signs, a word with a marked repair or not read counts as not read. 207: 7 of 10 (0.70); 239: 11 of 12 (0.917); together 18 of 22 = 0.818. (The contributor's earlier field gave 1.0 as the share of cipher letters with a key value; that is key coverage, not reading.)",
+  "verification": [
+   "independent verification",
+   "matched control",
+   "historical consistency",
+   "statistical test"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "letter substitution recovered from the ciphertext of both telegrams; key frozen on 207 and tested on 239; both read in part",
+    "date": "2026-11-12",
+    "source": "PR #466"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "two passes from the CEHM images; see the transcription files",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "one independent AI language-model agent, blind from the scans: sign check, scripts re-run, reading read as sentences against the translation; no human palaeographer",
+    "date": "2026-11-12"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "X-1.3.207.1",
+    "label": "Telegram of 13 Feb 1912",
+    "transcription": "transcription_207.txt",
+    "decryption": "decryption_207.txt",
+    "reading": "reading_207.md",
+    "translation": "translation_207.md",
+    "language": "es",
+    "state": "read in part",
+    "summary": "Mundic applauds Luis de la Barra's decision to return: Ambassador (Henry Lane) Wilson considers it necessary that he come back soon to help.",
+    "note": "10 cipher words: 7 verbatim, 3 with a marked one-letter repair; no holes. Reading checker on reading_207_sentences.txt: clean share 0.5 (1 of 2 sentences).",
+    "reading_review": {
+     "grade": "B",
+     "by": "independent AI language-model agent (blind review)",
+     "date": "2026-11-12",
+     "note": "Read as sentences against the translation: two coherent telegraphic sentences with 3 marked one-letter repairs and no holes. Signs re-read blind from the scan agree except one (L2 g1, 8th letter), which may be b rather than o and would then remove one repair."
+    },
+    "read_share": 0.7
+   },
+   {
+    "doc": "X-1.3.239.1",
+    "label": "Telegram of 15 Mar 1912",
+    "transcription": "transcription_239.txt",
+    "decryption": "decryption_239.txt",
+    "reading": "reading_239.md",
+    "translation": "translation_239.md",
+    "language": "es",
+    "state": "read in part",
+    "summary": "Explanations given, good impression; the situation uncertain; the general tendency a keen desire for peace.",
+    "note": "12 cipher words: 11 verbatim, the opening h not read. Reading checker on reading_239_sentences.txt: clean share 1.0 (2 of 2 sentences).",
+    "reading_review": {
+     "grade": "A",
+     "by": "independent AI language-model agent (blind review)",
+     "date": "2026-11-12",
+     "note": "Read as sentences against the translation: coherent, with only the opening h unread. Signs re-read blind from the scan agree in full, and the held-out count (72/75 letters, 0 wrong) is reproduced."
+    },
+    "read_share": 0.917
+   }
+  ],
+  "gaps": [
+   {
+    "item": "X-1.3.239.1: the opening letter (h)",
+    "blocker": "too-short",
+    "detail": "one letter before 'aclaraciones'; nothing on the form decides the word (perhaps 'Hechas')."
+   },
+   {
+    "item": "X-1.3.207.1 L2 g1, 8th letter (Embajad{i/o}r)",
+    "blocker": "illegible",
+    "detail": "the blind review found the sign may be this hand's b (= o), which would make 'embajador' verbatim; not settled on a 5x crop, so the repair stays marked."
+   },
+   {
+    "item": "X-1.3.239.1 group 4, first sign (buena)",
+    "blocker": "illegible",
+    "detail": "an unusual f (pass 1 f, pass 2 t); the blind review also reads f."
+   },
+   {
+    "item": "X-1.3.207.1: three one-letter slips read from sense (embajador, resuelvas, vuelvas)",
+    "blocker": "too-short",
+    "detail": "ten cipher words give no second place for any of them."
+   },
+   {
+    "item": "key values t (z) and l (h)",
+    "blocker": "too-short",
+    "detail": "one and two occurrences."
+   }
+  ]
+ }
+}
