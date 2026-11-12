@@ -437,11 +437,43 @@
    "kind": "verification",
    "what": "Split from legation1788, one key per entry: the Code No. 16 files (28 Aug 1793 reading, the M30 transcription, the six later letters, beling/, the Code No. 16 rows of key.tsv) moved here; Short (Code No. 10) and Carmichael (Code No. 13) stay in legation1788. Counts taken again from the files: 58 groups in the 1793 passage (H 39, E 17, O 2); 295, 224, 196, 562, 92 and 354 groups in the later letters (1,723, or 1,713 with the line shared by the two Pinckney files counted once); the seven reading files hold 1,384 words read and 51 holes (0.964). The bundle's comparison, decode and re-scoring scripts re-run from the new place give the same tables and scores.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "transcription",
+   "what": "Contributor (Andrew Beling, with AI agents), after PR #399: Pinckney 28 Jan 1794 (M30 roll 2 frame 0196, 247 groups) and 26 Feb 1794 postscript (frame 0208, 55 groups) transcribed blind by agents with no key, and aligned with the clerk's interlinear and Explication (frame 0195) (beling/round_2026-11-11/).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching",
+    "EM alignment"
+   ],
+   "what": "Contributor: key v5 built from v4 with the 1794 letters (549 groups; 13 added incl. 1160 = comma; 1366 g, 631 sixth, 598 es changed; 640 dropped), frozen by sha256 before testing (beling/round_2026-11-11/code16_key_v5.tsv, key_v5_changes.tsv). Readings in texts/ not rebuilt with it; no changed value occurs in the 28 Aug 1793 passage.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "plaintext matching"
+   ],
+   "what": "Contributor: declared test (PREREGISTRATION_0178.md) on frame 0178, Pinckney 25 Nov 1793, transcribed blind (353 groups; 290 agree with transcription/pinckney_m30.tsv): frozen key v1 minus Bourdeau's 35 values read partly from 0178, against ASP Foreign Relations 1:328: 0.724 (126/174), shuffled best 0.264, below the 0.85 bar. ASP omits the Explication's last paragraph (found after the run). Post hoc, against the clerk's full Explication on 0179: 0.948 (shuffled best 0.287), not the declared test.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Integration of the follow-up (PR #413) after an independent verification. Reproduced: key v5 549 rows and hash; K1 rebuilt byte for byte from key.tsv and frozen_key_v1.tsv; 290 of 299 certain groups of 0178 agree; declared score 0.724 (126/174, shuffled best 0.264) and post hoc 0.948 (165/174, shuffled best 0.287). The declared test on frame 0178 failed (bar 0.85) and is published as failed; cause found after the run: the ASP print (committed OCR extract) lacks the last paragraph of the clerk's Explication, seen on frame 0179; 39 of the 48 unmatched groups match once it is present. The 0.948 is post hoc, not a passed test. No key value changed on it. Conflicts between key.tsv, v4 and v5 recorded, not resolved: 640 (in / es / no value, and ju in 'prejudices'); 598 (the clerk's 'fourth' on M31 frame 0111, where the group was seen on the frame to read 598, against v5's 'es' from three words); 1160 n (16 in the frozen row, 14 in the changes file). 631: v5 'sixth' agrees with key.tsv '6th'; v4 'th' was a wrong import. Two stale targets/legation1788 paths annotated. Not checked: the 0196 and 0208 transcriptions against the images, the alignments, the ASP print.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "read from existing decipherment",
-  "method_basis": "Six of the seven documents carry a decipherment of the time between the lines or, for the Bey's letter, a translation printed in 1802; the 28 Aug 1793 passage was printed deciphered in part by the Jefferson Papers editors. The work transcribed the groups and the words over them, rebuilt values of the code from those decipherments (262 here, 537 by Andrew Beling) and used them to check the editors' reading of 1793 group by group; no text shown here was first obtained with the rebuilt key.",
+  "method_basis": "Six of the seven documents carry a decipherment of the time between the lines or, for the Bey's letter, a translation printed in 1802; the 28 Aug 1793 passage was printed deciphered in part by the Jefferson Papers editors. The work transcribed the groups and the words over them, rebuilt values of the code from those decipherments (262 here, 537 by Andrew Beling in his key v4, 549 in his v5) and used them to check the editors' reading of 1793 group by group; no text shown here was first obtained with the rebuilt key.",
   "contribution": [
    "transcription",
    "key extended or corrected",
@@ -536,7 +568,7 @@
     "detail": "the original key (Lear family papers) is unprinted and was sold in 2010 to an unnamed buyer, per the contributor's notes"
    }
   ],
-  "notes": "The 28 Aug 1793 passage was read before by the Jefferson Papers editors, and the six later letters by the clerks of the time. Added by the project: 447 for the printed 497; the 1793 groups checked against Taylor's decodings (30 of 58 attested); a full transcription of Pinckney's 15 coded frames on M30 roll 2. Added by Andrew Beling, with AI agents (PR #399, beling/): Code No. 16 identified as Weber's '663' code and found in six further letters (Pinckney 1795, Eaton 1801-02, Lear 1813), transcribed with their contemporary decipherments; a key of 537 graded groups; tests with a key frozen beforehand (Pinckney 1795 0.886 pass, Eaton 1801 0.80 below the 0.85 bar, Eaton 22 Oct 1802 0.898 on a repeated passage); nine regrades in the 28 Aug 1793 passage (H 30 to 39). Pinckney's frames on M30 roll 2 without a contemporary decoding (1,982 groups) are decoded with that key in beling/decodes/, 81% of groups covered: decoded, not read, and not listed in texts. Until 11 Nov 2026 this was part of the record legation1788, which keeps Short's Code No. 10 and Carmichael's Code No. 13, different codes.",
+  "notes": "The 28 Aug 1793 passage was read before by the Jefferson Papers editors, and the six later letters by the clerks of the time. Added by the project: 447 for the printed 497; the 1793 groups checked against Taylor's decodings (30 of 58 attested); a full transcription of Pinckney's 15 coded frames on M30 roll 2. Added by Andrew Beling, with AI agents (PR #399, beling/): Code No. 16 identified as Weber's '663' code and found in six further letters (Pinckney 1795, Eaton 1801-02, Lear 1813), transcribed with their contemporary decipherments; a key of 537 graded groups (v4, the key behind the texts; v5 of the follow-up, PR #413, has 549 and changes 1366, 631 and 598 and drops 640; 598 and 640 carry conflicting values across key.tsv, v4 and v5, NOTES integration check of 12 Nov 2026); tests with a key frozen beforehand (Pinckney 1795 0.886 pass, Eaton 1801 0.80 below the 0.85 bar, Eaton 22 Oct 1802 0.898 on a repeated passage; a fourth, declared on Pinckney's frame 0178 of 25 Nov 1793, failed at 0.724 against the 0.85 bar: the printed text used as truth lacks the last paragraph of the clerk's Explication, and the 0.948 against the full Explication is post hoc); nine regrades in the 28 Aug 1793 passage (H 30 to 39). Pinckney's frames on M30 roll 2 without a contemporary decoding (1,982 groups) are decoded with that key in beling/decodes/, 81% of groups covered: decoded, not read, and not listed in texts. Until 11 Nov 2026 this was part of the record legation1788, which keeps Short's Code No. 10 and Carmichael's Code No. 13, different codes.",
   "texts": [
    {
     "doc": "pinckney_17930828",
@@ -660,7 +692,8 @@
   ],
   "key_file": [
    "key.tsv",
-   "beling/key/code16_key_v4.tsv"
+   "beling/key/code16_key_v4.tsv",
+   "beling/round_2026-11-11/code16_key_v5.tsv"
   ],
   "provenance": "mixed"
  }

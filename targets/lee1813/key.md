@@ -43,7 +43,7 @@ changes inside the stretch or does not restart. The kinds of fault, each seen wh
 page (`errors.py` gives one account per stretch, in `error_accounts.txt`):
 
 1. **A wrong letter.** Usually a numeral one to three off, so a neighbouring letter: V for T, Q for R, N for C, C for
-   E. 60 letters in the 6 February letter and 53 in the 2 February letter are supplied in the readings (`[x]`),
+   E. 59 letters in the 6 February letter and 53 in the 2 February letter are supplied in the readings (`[x]`),
    counting wrong and missing letters together, outside the passages given only as proposals. They cluster under
    the key letter W (NOTES.md section 9).
 2. **A plaintext letter left out while the key still advances** (offset +1 from that point): F6-39 (the I of HIS),

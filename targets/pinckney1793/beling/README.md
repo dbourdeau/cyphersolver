@@ -102,7 +102,7 @@ grade, n, sources, on_element_list.
   solved, so the real error rate of the A values is likely higher.
 - Known weak values, found while preparing this bundle: 1505 = ceive (S1) was wrong; `key.tsv`'s 1505 = "." (full stop)
   is right: in the decodes it falls at sentence ends again and again. 1160 = ry (A) sits in the same places and is
-  suspect. 1258 = y and 1374 = r are attested (see section 5) but were missing. All four are corrected in v4 (last section).
+  suspect (11 Nov follow-up: 1160 is the comma; `round_2026-11-11/`). 1258 = y and 1374 = r are attested (see section 5) but were missing. All four are corrected in v4 (last section).
 
 ## 4. Tests (`tests/`)
 
@@ -156,6 +156,7 @@ script stops if a row no longer says what the proposal assumes):
   (1228 1010 1181).
 - 447 is in none of the witnesses and stays open.
 - Flagged only: 1064 = ou in Tunis (w-ou-nd, one word), which would make 1565 1064 942 St-ou-rt, not St-ua-rt.
+  (Weakened 11 Nov: 1064 fits "Toulon" on M30 frame 0196 as u; `round_2026-11-11/`.)
 
 ## 6. Pinckney frames without a decoding (`decodes/`)
 
@@ -208,3 +209,14 @@ In `key/code16_key_v4.tsv` (now 537 groups): 1505 = "." (your value; our "ceive"
 (suspect); 1258 = y and 1374 = r restored (both attested in the Tunis letter: Bey = 1517-1258, Sir = 1328-1374, Mr = 1018-1374).
 The frozen test key (`tests/frozen_key_v1.tsv`) and the test results are unchanged. The comparison (section 5) and the
 decodes (section 6) were made before these corrections and were not regenerated.
+
+## Follow-up of 11 Nov 2026 (after PR #399 was merged)
+
+`round_2026-11-11/` (its README gives the detail) adds:
+- blind transcriptions and alignments of Pinckney's coded letter of 28 Jan 1794 (M30 frame 0196) and postscript of 26 Feb
+  1794 (frame 0208);
+- key v5, 549 groups: 13 values added, among them 1160 = comma; 3 changed (1366 g, 631 sixth, 598 es); 640 dropped.
+  This corrects four values of v4 above: 598, 640, 1366 and 631. v4 stays as it is, because the readings were made with it;
+- a declared test on frame 0178 (25 Nov 1793) that **failed**: 0.724, against a shuffled best of 0.264. A post hoc check
+  against the clerk's full Explication on 0179 gives 0.948.
+
