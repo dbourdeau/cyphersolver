@@ -118,6 +118,14 @@ column of the table (below).
 - **Not reproduced:** Brackx's key search itself (`crib_anneal.py`, `lm_anneal.py`). `lm_anneal.py` needs a 5-gram table
   built from Montaigne that is not in the gist. What is reproduced is the decode from his key and transcription.
 
+### Claims review by a second reader (12 Nov 2026)
+
+- Title corrected from "Attempted" to "Read in part".
+- Block A carries four tentative signs (the r, r, e of ordre and the last e of pauurete); the sign between peu and conduitte is a firm v that makes no word. By block: A one clause with its last four signs unread (14 words, 4 holes), C a sentence with three open stretches (25 words, 28 holes), B fragments, decoded and not read (12 words, 10 holes).
+- The second "unclear" sign of the transcription check is a v-like stroke in line C4, not a sign in a blot.
+- `reading.md` prints "ordre" unmarked though its signs are tentative; with it as a hole the strict share is 0.538 instead of 0.548. Not re-measured here.
+- Brackx's 0.75 / 0.84 are from his first post, with the earlier key.
+
 ## Remaining gaps
 - start of each marginal gloss line on f. 60r, and with it the five large signs that open block B and the four after "affaires" in block A - blocker: needs-physical-access; swallowed by the binding; needs the page opened flat
 - f. 60v C2, C4, C5 unread groups: Beling's cribs from the outer gloss (11 Nov 2026, `beling/README.md` section 5) give tentative `+o` z, `Ob` r, `lp` ost, but C2 "u l", C4 "e r o" and C5 "t h ?" do not meet the gloss as read - blocker: open-codes; open work, not only an image limit: the cribs exist and the decode does not yet meet them; next is a re-reading of gloss lines 4-8 (soft at Gallica's native resolution; a sharper image from the BnF would help) together with a re-look at the signs of those three stretches

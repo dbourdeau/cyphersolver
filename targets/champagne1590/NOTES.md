@@ -228,6 +228,12 @@ line 8 fifth figure 56, line 22 "99 9b 56 93 35", the barred 22, 51, 44, the pla
 **Class.** Read in part; method unchanged (read after matching with key from external sources); provenance mixed
 (Brackx's match and reading, Beling's readings and check, the project's first alphabet and this check).
 
+### Claims review by a second reader (12 Nov 2026)
+
+- The key sheet (fr. 3995 f. 51r) was not re-checked here; xliij = Intelligence is Beling's reading alone.
+- The verifier's looser count (about 0.98 and 0.956 without the bracketed expansions) is not published: one rule per page.
+- "25 of 25" figures agreeing for no. 24: the two runs hold 24 figures, 29 with the five single figures; not reconciled.
+
 ## Remaining gaps
 
 - No. 25: 72 holes in the reading (doubtful clear words such as [?poix] [?doigt], [?Lamour], [?balliages] [?de] [?flandre], the besieged town in K, and the bracketed expansions) and the isolated figure 3 in the Soissons run - blocker: illegible; contrast-enhanced enlargements of the native scan did not resolve them (Brackx); the second reader (Beling, 11 Nov 2026) agrees on 14 of the 37 marked words, reads 13 otherwise and leaves 10 doubtful for both; a reader of 16th-century French hands is needed
