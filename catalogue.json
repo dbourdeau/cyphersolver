@@ -9202,7 +9202,7 @@
    "shelfmark": "Rigsarkivet, Tyske Kancelli, Udenrigske Afdeling, Almindelig del, \"Conrad Biermanns kopibog over udgående skrivelser til danske ministre i udlandet\" 1675 (Daisy heid 2130515, unit S-1418)",
    "folio_note": "255 images online (Arkivalieronline epid 15552891; image ids from 48573952). Image 109 (pp. 104-105): French letter with long runs of a numeric nomenclator (2-3 digit numbers 10-672) mixed with letters and symbols (X, #, pi-like signs), no interlinear decipherment.",
    "cls": "B",
-   "status": "Daisy (new search): \"En stor del af de indførte skrivelser er i chifre.\" Viewed one opening (image 109): ciphertext copied into the register, clear text around it, no decipherment. Not on DECODE, not in the repo. Key lead: Tyske Kancelli \"Chiffer\" 1670-1709 (heid 2132747, \"a mix of many different cipher keys\"), fully scanned (epid 15553654). 27 Oct 2026, Brice Dudout (email): Copenhagen to Just Høeg at The Hague, 2, 5 and 9 January 1675, read: 841 of 849 groups, key = the untitled sheet at image 55 of the TKUA 'Chiffer' volume 1670-1709, checked on letters to Meyercrone in Paris in the same key. The rest of the copybook not reported. Extended 27 Oct 2026 (Europe chiffrée, documents.html#hoeg-1675, #meyercrone-1675): 37 letters read with key K55, 18 to Høeg (2 Jan-5 June 1675) and 19 to Meyercrone (16 Feb-21 June; 6,103 groups, 99.4%). Still open: the letters to Lilienkron (German, numbers 14-707 with the signs Δ θ), to Gioë and Schröder (K55 family, untested) and the letter of 2 Jan to Meyercrone (another key); see the survey in targets/biermann1675/. Merged 27 Oct 2026 (pull request #133): with the eleven Høeg letters of 2 Jan-9 Feb and the 23 March letter read in targets/biermann1675 on 26 Oct, every image-55 letter to Høeg and Meyercrone is now read there. Narrowed to the unread part and restored 2 Nov 2026.",
+   "status": "Daisy (new search): \"En stor del af de indførte skrivelser er i chifre.\" Viewed one opening (image 109): ciphertext copied into the register, clear text around it, no decipherment. Not on DECODE, not in the repo. Key lead: Tyske Kancelli \"Chiffer\" 1670-1709 (heid 2132747, \"a mix of many different cipher keys\"), fully scanned (epid 15553654). 27 Oct 2026, Brice Dudout (email): Copenhagen to Just Høeg at The Hague, 2, 5 and 9 January 1675, read: 841 of 849 groups, key = the untitled sheet at image 55 of the TKUA 'Chiffer' volume 1670-1709, checked on letters to Meyercrone in Paris in the same key. The rest of the copybook not reported. Extended 27 Oct 2026 (Europe chiffrée, documents.html#hoeg-1675, #meyercrone-1675): 37 letters read with key K55, 18 to Høeg (2 Jan-5 June 1675) and 19 to Meyercrone (16 Feb-21 June; 6,103 groups, 99.4%). Still open: the letters to Lilienkron (German, numbers 14-707 with the signs Δ θ), to Gioë and Schröder (K55 family, untested) and the letter of 2 Jan to Meyercrone (another key); see the survey in targets/biermann1675/. Merged 27 Oct 2026 (pull request #133): with the eleven Høeg letters of 2 Jan-9 Feb and the 23 March letter read in targets/biermann1675 on 26 Oct, every image-55 letter to Høeg and Meyercrone is now read there. Narrowed to the unread part and restored 2 Nov 2026. 12 Nov 2026, Malcolm McBratney (PR #455, issue #424): the German letters to Paul von Klingenberg at The Hague (24 in the copybook, 6 Feb - 24 June 1675, and 3 drafts in the Koncepter unit that follows, images 267-280) use a different key from K55, rebuilt from the letters alone (letter signs, syllable table 432-525, 106 word codes) and read in part, 3,648 of 4,709 tokens (77.5%) in eleven letters; see targets/klingenberg1675/. Sheet 94/95 is not that key as it stands.",
    "why": "Danish foreign policy at the start of the Scanian War (Gottorp, France, Sweden, Niels Brahe's mission) in the chancery's own outgoing ciphers; clear context and probable keys online.",
    "importance": 4,
    "solvability": 5,
@@ -9232,7 +9232,7 @@
    "prior_art": "partial: 37 letters to Høeg and Meyercron read with key K55 (Dudout, Europe chiffrée; targets/biermann1675); image 109 viewed 2 Nov 2026 with no decipherment on the leaf",
    "ark": "",
    "scored": "vetted",
-   "as_of": "2026-10-27",
+   "as_of": "2026-11-12",
    "access": "online",
    "access_note": "online (backfilled 28 Oct 2026 from the entry: seen: image)",
    "vetting": {
@@ -9271,9 +9271,10 @@
     ]
    },
    "restored_from": "removed_2026-11-02 #465",
-   "open": "Letters to Lilienkron, Gioë, Schröder, Reetz, Lindenow, Klingenberg, Lincker and Lente, in other number families (targets/biermann1675).",
-   "needs": "Whether these are key lookups: the chancery key volume has further keys naming these envoys (images 145-147, 305-308), not fully applied. May be more than one key; split when known.",
-   "repository": "rigsarkivet"
+   "open": "Letters to Lilienkron, Gioë, Schröder, Reetz, Lindenow, Lincker and Lente, in other number families (targets/biermann1675); the Klingenberg letters are read in part in targets/klingenberg1675/ and no longer belong to this entry.",
+   "needs": "Whether these are key lookups: the chancery key volume has further keys naming these envoys (images 145-147, 305-308), not fully applied. May be more than one key; split when known. Klingenberg: done in part (targets/klingenberg1675/).",
+   "repository": "rigsarkivet",
+   "outcome": "attempted, open: the Klingenberg letters read in part (targets/klingenberg1675/, 12 Nov 2026); the other families (Lilienkron, Gioë, Reetz, Lindenow, Lincker, Lente) not read"
   },
   {
    "id": 467,
@@ -72861,88 +72862,6 @@
     "key_in_volume": "443 c. 317, the inventory-recorded decipherment of Griffoli's cipher passages on cc. 316 and 318 (2 Feb 1555), in the same filza as c. 315; not tested against c. 315 or 451 c. 25.",
     "key_held": "ASF Cifrari II serie, Chiavi delle cifre del Carteggio di Cosimo I 1536-1573, F. III (Griffoli's cipher), named by inventory vol. VII note 40; in the archive, not online, not tested. No reading of these two pieces is on record.",
     "duplicates": "known.py on 'Griffoli', 'Mediceo del Principato 451', '443, c. 315': only this lead and its sweep files; no DECODE, catalogue or target duplicate.",
-    "verdict": "open"
-   },
-   "repository": "asf"
-  },
-  {
-   "id": 2348,
-   "counted": true,
-   "year": 1555,
-   "date": "s.d. [late March 1555]",
-   "title": "Anonymous full-page cipher to Cristiano Pagni, March 1555: mixed figures and letters (A, S, x as markers), bare",
-   "correspondents": "[...] -> Cristiano Pagni, secretary, Florence",
-   "place": "[...]",
-   "language": "unknown (cipher of digits mixed with letters and signs)",
-   "region": "Italy",
-   "period": "1497-1559",
-   "shelfmark": "Archivio di Stato di Firenze, Mediceo del Principato 444, c. 315",
-   "folio_note": "c. 315r: about 30 lines of cipher mixing digits with letters (A, S, x, Q-like signs) and a short clear opening line; c. 315v address to Cristiano Pagni. Inventory vol. VII p. 396: \"[...] a Cristiano Pagni segr., Firenze, [...], s.d., c. 315\", note 38 \"In cifra\".",
-   "cls": "A",
-   "status": "Bare (900 px); cc. 314 and 316 are unrelated clear letters. The system differs from the figure ciphers of Babbi, Griffoli and Nucci.",
-   "why": "A full page in a distinct mixed cipher addressed to Cosimo I's first secretary, sender suppressed; unread.",
-   "importance": 2,
-   "solvability": 3,
-   "difficulty": 3,
-   "verify": "Transcribe at full size; read the verso for any endorsement; compare with 427 c. 237 / c. 48 (lead 2330).",
-   "links": [
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/unita-archivistica/?id=444",
-     "label": "PAD unit 444 (Mediceo del Principato 444)"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=603543&ua=444",
-     "label": "c. 315r"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/archividigitali/riproduzione/?id=603544&ua=444",
-     "label": "c. 315v"
-    }
-   ],
-   "source": "ASF Mediceo del Principato, Carteggio universale (PAD images) + Carteggio universale di Cosimo I inventory PDFs (ASF Inventari on-line), second ASF Florence pass, Nov 2026",
-   "score_note": "Scored from the images viewed during the second ASF Florence pass, 6 Nov 2026 (research/sweep_2026-11_asf_florence_2/)",
-   "access_note": "scans public on ASF PAD (archividigitali), no login, curl works: unit page /archividigitali/unita-archivistica/?id=<ua> lists carte; each /archividigitali/riproduzione/?id=<id>&ua=<ua> names the ptif; IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mdp_carteggio_universale/<filza>/<seq>_C_<carta>_<R|V>.ptif (2000 px). PAD holds filze 330-460 only (1537-1557).",
-   "seen": "image",
-   "needs_archive_scan": "no",
-   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza, the carta or the correspondent; the inventory notes no decipherment and none is written on or beside the page (neighbouring carte checked); ASF holds the chancery keys (Cifrari II serie, \"Chiavi delle cifre del Carteggio di Cosimo I dal 1536 al 1573\", 3 filze), not online; DECODE's ASFi \"Governo Mediceo - cifre\" volumes (R5687-R7459) are 17th-18th c.; Tomokiyo and Lasry not searched in this run.",
-   "ark": "",
-   "scored": "vetted",
-   "vetting": {
-    "date": "2026-11-06",
-    "by": "claude leads review batch n14",
-    "seen": {
-     "kind": "scan",
-     "where": "ASF PAD via curl/iipsrv, 6 Nov 2026: Mediceo del Principato 444 cc. 313-317 recto and verso at 1400 px (https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mdp_carteggio_universale/444/0636_C_315_R.ptif and 0637_C_315_V.ptif)",
-     "extent": "c. 315r: about 30 lines, the first line and a half clear, the rest cipher; c. 315v: about 11 more lines of cipher at the head of the page, the rest show-through. About 40 lines of cipher.",
-     "cipher": "Clear opening 'Scrissi l'altro hieri a V.S. ragguagliandola di quel che passava per ... con questa intendera come' and then digits run together with letters and signs (x, A, S, q, u, h, a crossed g, a bracket sign) as separate tokens. No interlinear or marginal decipherment on either side. Neighbours: c. 313 Cesare Guerrini (clear, signed), c. 314 Lodovico Rasponi (clear, signed, March 1555), c. 316 a clear letter of March 1555 with its own signature, c. 317 blank with an endorsement; none is a decipherment slip."
-    },
-    "prior_art": {
-     "decode": "known.py (harvested DECODE dump plus repo ledgers) on '444, c. 315' and 'Cristiano Pagni': only this lead, candidates.json, the sweep README and leads 2325/2338 (other letters to or from Pagni); no DECODE record of any 1555 Mediceo del Principato item.",
-     "tomokiyo": "cryptiana italian.htm and crypto.htm fetched 6 Nov 2026 and grepped for Pagni, Florence, Cosimo: nothing on a mixed digit-letter cipher of Cosimo I's chancery (only the Guicciardini 1590s page).",
-     "lasry": "Local GL.htm (targets/gramont1529) grepped for Pagni, Mediceo, Cosimo: no hit; no Lasry paper on this piece.",
-     "edition": "Carteggio universale inventory vol. VII (1982) p. 396 lists '[...] a Cristiano Pagni segr., Firenze, [...], s.d., c. 315', note 38 'In cifra' (note page seen, p. 398); sender unknown, so no edition prints it.",
-     "literature": "Web search on Cristiano Pagni and a 1555 cipher letter in filza 444 found only the inventory and unrelated Pagni items (Lorenzo Pagni 1557); Google Books feed '\"a Cristiano Pagni\" \"in cifra\" 1555' returns only the inventory volumes."
-    },
-    "searches": [
-     {
-      "query": "\"Cristiano Pagni\" lettera in cifra 1555 Mediceo del Principato 444",
-      "result": "Bollettino AIB review of inventory VII and Regione Toscana inventory PDFs; a Lorenzo Pagni letter of 1557; nothing on c. 315"
-     },
-     {
-      "query": "Google Books feed: \"a Cristiano Pagni\" \"in cifra\" 1555",
-      "result": "only the Carteggio universale inventories (1982, 1998); no edition or decipherment of a cipher letter to Pagni"
-     },
-     {
-      "query": "Google Books feed: \"Cristiano Pagni\" cifra 1555 decifrata",
-      "result": "no entries returned"
-     },
-     {
-      "query": "known.py '444, c. 315'; 'Cristiano Pagni'",
-      "result": "only this lead, its sweep and leads 2325/2338 (different letters); no DECODE record"
-     }
-    ],
-    "key_check": "No key identified: the sender is unknown and the mixed digit-letter system differs from the Babbi, Griffoli and Nucci figure ciphers; ASF Cifrari II serie (keys of Cosimo I's correspondence 1536-1573) is not online. Not tested.",
-    "duplicates": "known.py on '444, c. 315', 'Cristiano Pagni', 'Mediceo del Principato 444': only this lead and its sweep files; leads 2325 and 2338 are other documents.",
     "verdict": "open"
    },
    "repository": "asf"

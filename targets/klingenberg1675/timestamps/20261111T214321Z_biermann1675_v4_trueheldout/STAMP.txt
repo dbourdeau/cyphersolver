@@ -1,0 +1,8 @@
+LABEL: biermann1675_v4_trueheldout
+Local UTC: 20261111T214321Z
+Files: 150
+Manifest SHA-256: c04cd914b7cdf0c0cad20bef88a57e1ce6ab73834cf9a7521bc809b844d326e8
+RFC3161 TSA (Sectigo Public Time Stamping Signer): status=Granted. time=Nov 11 21:43:21 2026 GMT
+OpenTimestamps: submitted (pending Bitcoin; ots upgrade later)
+Verify RFC3161: openssl ts -reply -in MANIFEST.sha256.tsr -text ; openssl ts -verify -data MANIFEST.sha256 -in MANIFEST.sha256.tsr -CAfile <Sectigo chain>
+Verify OTS: ots verify MANIFEST.sha256.ots

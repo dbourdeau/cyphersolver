@@ -1,0 +1,385 @@
+{
+  "schema_version": 1,
+  "target": "pagni444",
+  "title": "Anonymous to Cristiano Pagni, undated, a full-page cipher letter (ASF, Mediceo del Principato 444, c. 315; catalogue 2348): read in part",
+  "documents": [
+    {
+      "id": "c315",
+      "read": "read in part",
+      "shelfmark": "Archivio di Stato di Firenze, Mediceo del Principato 444, c. 315r-v",
+      "date": "undated: 'el dj xx. m' with a bar, no year; late 1555 to early 1557 on the content, not established (catalogue: s.d. [late March 1555])",
+      "year": 1555,
+      "country": "Italy",
+      "route": "sender not named (no signature; not identified) to Cristiano Pagni, secretary of Cosimo I, Florence (the archive's inventory; c. 318v, probably the address leaf, is addressed to him)",
+      "language": "Italian",
+      "pages": 2,
+      "cleartext_in_document": "separate passages",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment on c. 315r-v, on c. 318 or noted in the inventory (images and inventory VII seen)."
+      },
+      "length": {
+        "tokens": 1514,
+        "distinct": 53,
+        "unit": "symbols",
+        "measured": false,
+        "file": "transcription.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "ASF IIIF images (archiviodistatofirenze.cultura.gov.it, mdp_carteggio_universale/444/0636_C_315_R.ptif and 0637_C_315_V.ptif), 2000 x 2829 px, the largest size served",
+        "image_quality": "fair",
+        "notes": "Counted by scripts/build.py (units.tsv), not by docs/_check_profile.py --measure, so measured is false. 1,514 units in 36 lines (26 recto, 10 verso); distinct counts the sign labels of transcription.txt. year is the catalogue's and the lower end of our range, not a finding. Four transcriptions: pass 1 (passes/), pass 2 by the same reader without reopening pass 1 (frozen and stamped), pass 3 not blind, and a blind third transcription by another session (transcription_blind.txt). The 138 units where pass 3 and the blind transcription differ were adjudicated on label-hidden crops (adjudication.tsv); transcription.txt is pass 3 after that. The dots decide most letters and are the weak point at this resolution. The clear text (a line and a half at the head, the dateline) was read by the blind reader and checked by one more reader on 12 Nov 2026."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "monoalphabetic",
+      "nomenclator"
+    ],
+    "summary": "Paired figure alphabet: a bare figure and the same figure with one dot are neighbouring letters (1 a, 1' b; 2 c, 2. d; 3 e, 3' f; 4 g, 4' h; 5 i, 5' l; 6 m, 6' n; 7 o, 7' p; 8 q, 8' r; 9 s, 9' t; x u/v, x' z). A repeat sign doubles the letter before it. Three word signs: che, in, per. Nulls: figures with two dots, a dot above the 2, a barred sign and a pi-like sign. Capital letters and a few small letters are codes for persons and places; none has a fixed value. Written without word division. The pairing is not shown for h (the dotted 4 is never read; h is the bare 4 by context) and is weak for b; 62 single-dotted signs between words are dropped as nulls by context.",
+    "symbol_kind": "digits and letters",
+    "distinct_symbols": 53,
+    "diacritics": {
+      "used": true,
+      "note": "one dot turns a figure into the next letter of the alphabet; two dots make a null; a dot above the 2 is a null, a dot beside it is d"
+    },
+    "homophones": {
+      "used": true,
+      "max_per_vowel": 2,
+      "max_per_consonant": 2,
+      "per_letter": {
+        "e": 2,
+        "t": 2,
+        "z": 2
+      }
+    },
+    "nomenclator": {
+      "present": true,
+      "entries": 11,
+      "kinds": [
+        "names",
+        "titles",
+        "places"
+      ],
+      "unread_groups": 11
+    },
+    "nulls": {
+      "present": true,
+      "count": 120
+    },
+    "key_order": "alphabetical",
+    "word_division": "none",
+    "doubled_letters": "written with a repeat sign after the letter (49 units)",
+    "notes": "nulls.count is 58 read as nulls by the key plus 62 dropped as nulls by context (counted not read). homophones: a hooked form of the 3 is also e; 9 with two dots is t in some places; x with one or two dots is z. nomenclator.entries counts the 11 code signs (A L S G B D Q m n d and an ampersand), 23 units; proposed values for five of them are from context only. distinct_symbols counts labels, including one sign seen once and not in the key (0), one heavy B-like sign and the doubtful variants."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "no",
+      "where": "None found; priority not established. Checked on 11-12 Nov 2026: this repository (catalogue row 2348 open, no target folder); ASF inventory VII pp. 385-398 (no decipherment noted); archive.org full text of Sauze, Correspondance politique de Lanssac, Romier, Les origines politiques II, Serristori's Legazioni and Desjardins III (OCR, not page by page); Calendar of State Papers Venice VI nos. 418-431; web searches. Not checked: the Medici Archive Project database (login), Cantagalli, Ancel, the Cifrari series of the Florence archive (not digitised).",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": [
+      "images"
+    ],
+    "attack": "ciphertext-only",
+    "human_role": "Malcolm McBratney directed the work, set the rules (every attempt recorded, transcriptions frozen before decoding, a blind transcription by a separate session, shuffled-key controls, an outside red-team review, no claim without its check) and sent the result; Claude sessions picked the letter from the catalogue, transcribed, solved, read and checked. No reading by a person without AI.",
+    "tools": [
+      "own Python: per-unit ledger and counters; scripts/build.py, standard library",
+      "own annealer with Italian quadgrams (used for controls; the key itself was read off repeats)",
+      "shuffled-key baseline, 5,000 keys; five frequency-preserving null controls",
+      "ASF IIIF images, line strips and label-hidden crops (PIL)"
+    ],
+    "models": [
+      "Claude (Anthropic), several sessions of 11 Nov 2026 (model ids not recorded)",
+      "claude-fable-5-2 (session of 12 Nov 2026 that prepared this folder)"
+    ],
+    "sessions": 7,
+    "first_date": "2026-11-11",
+    "last_date": "2026-11-12"
+  },
+  "solution": [
+    {
+      "date": "2026-11-11",
+      "kind": "transcription",
+      "what": "Pass 1 of c. 315r-v from the IIIF images: 1,560 sign tokens (passes/).",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "solver",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring"
+      ],
+      "what": "Own annealer with Italian quadgrams on pass 1: the vowels came out (1 a, 3 e, 5 i, 7 o) but no reading; -4.397 against -4.854 for shuffled order. Cause found later: about 18% of signs differ between two passes of the same reader (dots), the repeat sign was treated as a letter, m and n were merged.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "transcription",
+      "what": "Pass 2 by the same reader from new crops, pass 1 not reopened; 1,521 signs, frozen (md5) before alignment and before any decoding. Pass 1 and pass 2 agree on 1,282 of 1,564 aligned positions (82.0%).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "hypothesis",
+      "technique": [
+        "key-structure hypothesis"
+      ],
+      "what": "From repeats in pass 2 on the recto ('8 x 3 9 9' 7' questo, '8 x 3 5'' quel, '2 7 6'' con): a bare figure and its dotted form are neighbouring letters. The whole key follows; the verso, not used for it, read on sight. No crib and no gloss.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "control",
+      "technique": [
+        "language-model scoring"
+      ],
+      "what": "Frozen pass 2 under the key against 5,000 shuffled keys: 0 of 5,000 as good. Key taken from the first 80% of units and applied to V04-V10: 0 of 5,000. First count 1,364 of 1,521 (89.7%), a measure since withdrawn.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "reading",
+      "technique": [
+        "manual reconstruction",
+        "contextual inference"
+      ],
+      "what": "Pass 3, not blind: every flagged unit re-viewed on tiles (309 verdicts). Rule for m and n from the image (plain 6, dotted 6); a dot above the 2 is a null. Count with the codes as read 1,391 of 1,521 (91.5%), since withdrawn.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "verification",
+      "technique": [
+        "other"
+      ],
+      "what": "Outside red-team review (four agents, not Anthropic models) of the claim: recovery plausible, 'read' weak, date unresolved, priority not established. Accepted: codes are not read unless fixed by a clear duplicate (1,368 of 1,521, 89.94%); literal layer and per-unit ledger built; meaning-critical words checked on crops (lansa without c, disrmara without a).",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "control",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring"
+      ],
+      "what": "Unaided solver run on the pass-3 signs against five frequency-preserving permutations, same budget: real -4.300, best control -5.082; the unaided key matches the hand key on 1,172 of 1,345 single-letter units (87.1%).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "verification",
+      "technique": [
+        "other"
+      ],
+      "what": "Blind third transcription by another session that opened only the two images: same sign as pass 3 at 1,395 of 1,521 units (91.72%); under the same key and rule 1,347 of 1,521 (88.56%).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "reading",
+      "technique": [
+        "manual reconstruction"
+      ],
+      "what": "Adjudication of the 138 units where pass 3 and the blind transcription differ, on crops with the label hidden: pass 3 right at 60, the blind reader at 41, both possible at 34, neither at 3; seven units of pass 3 have no sign on the image. 'fino a adesso' became 'fino adesso', 'sabere' 'sapere', 'poser' 'poter'. Count 1,369 of 1,514 (90.42%).",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "reading",
+      "technique": [
+        "contextual inference"
+      ],
+      "what": "Date from the content: scored late Oct 1555, 20 Nov 1555 and 20 Mar 1556 against Romier, Sauze, Serristori and the Venetian calendar; late October 1555 favoured, but the dateline month begins with m.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "literature search",
+      "what": "Looked for Serristori's letter of 24 Oct 1555 (Mediceo 3274 c. 460) and the Florence cipher registers: not online. Found that the pledging of Cervia and Ravenna recurs (Ribier, June 1554; Duruy p. 212, January 1557), so the date was widened to late 1555 to early 1557, unresolved.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "other"
+      ],
+      "what": "Check by Daniel Bourdeau on issue 426: a decoder written from the key agrees with the decryption on all 1,514 units; strict 1,368 or 1,369 of 1,514 (90.4%); 0 of 5,000 shuffled keys; images not reached. He points out 69 signs dropped as nulls by context, that the pairing is not supported for g/h and is weak for a/b, and that the code values are from context.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "reading",
+      "technique": [
+        "manual reconstruction"
+      ],
+      "what": "For this folder: the three corrected words checked again on the image (they hold); the clear opening re-read (our pass-3 version of the second line was wrong); fr[an]zesi and a doubled a found undeclared; the dropped signs tallied by position (61 of 62 at word boundaries); every unit not read listed.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "literature search",
+      "what": "Searches for an edition or decipherment: the repository, the inventory, archive.org full text of four printed collections, the Venetian calendar, the web. Nothing found. The Medici Archive Project database, Cantagalli and Ancel were not searched.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "statistical test",
+        "language-model scoring"
+      ],
+      "what": "Statistical validation (docs/_validate.py): 1320 tokens, 37 types, it-cinquecento order 4: reading -1.866 per letter; random keys -4.989 (z 5.5); key annealed onto shuffled ciphertext best -2.959 (mean -3.007, z 30.8); annealer on the real text -1.866. Verdict: pass.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "manual reconstruction"
+      ],
+      "what": "Independent verification before the write-up: scripts/build.py re-run in a copy (all outputs identical); own decoder from key.tsv agrees with the key on 1,369 of 1,369 read units; Sectigo token and 28 stamped files checked; ASF images fetched (HTTP 200) and lines R03-R04 compared (about 100 signs, digits agree, dots not decidable at 2000 px); shuffled-key control 0 of 5,000 by the first verifier.",
+      "result": "worked"
+    }
+  ],
+  "outcome": {
+    "validation": {
+      "date": "2026-11-12",
+      "model": "it-cinquecento",
+      "file": "validation.tsv",
+      "tokens": 1320,
+      "types": 37,
+      "tokens_per_type": 35.68,
+      "score": -1.866,
+      "nulls": {
+        "random keys": {
+          "n": 200,
+          "mean": -4.989,
+          "sd": 0.566,
+          "max": -3.682,
+          "z": 5.5,
+          "p": 0.005
+        },
+        "shuffled refit": {
+          "n": 6,
+          "mean": -3.007,
+          "sd": 0.037,
+          "max": -2.959,
+          "z": 30.8,
+          "p": 0.1429
+        }
+      },
+      "power": -1.866,
+      "verdict": "pass",
+      "notes": "claimed per-occurrence score -1.866; polyphony 0.0; 194 unread tokens left out; annealer on the real text from random keys reached -1.866"
+    },
+    "class": "read in part",
+    "key": "partial",
+    "method": "key recovered from ciphertext-only",
+    "method_basis": "The key was read off repeated groups in a frozen transcription (questo, quel, con) with no crib and no gloss; the leaf carries no decipherment, and an unaided annealer run on the signs recovers 87% of the same key.",
+    "contribution": [
+      "transcription",
+      "key recovered",
+      "catalogue correction"
+    ],
+    "fraction_read_method": "measured",
+    "fraction_read_source": "units.tsv and counts.txt (scripts/build.py): of 1,514 cipher units, 1,369 give the accepted value by the key from every sign the image allows (letters, repeat sign, word signs, key nulls); 137 are not read (52 letters by context or left open by the image, 62 signs dropped as nulls by context, 23 code signs); 8 are unread. The reviewer's figure is the same (1,368 or 1,369). The blind third transcription alone gives 1,347 of 1,521 (88.56%).",
+    "fraction_read": 0.904,
+    "codes_open": {
+      "open": 11,
+      "total": 11,
+      "tokens_open": 23
+    },
+    "verification": [
+      "key confirms",
+      "statistical test"
+    ],
+    "provenance": "contributed",
+    "credits": [
+      {
+        "who": "mcbratney",
+        "role": "solution",
+        "note": "catalogue 2348, MdP 444 c. 315: key and reading in part, with Claude; issue #426",
+        "date": "2026-11-11",
+        "source": "https://github.com/dbourdeau/cyphersolver/issues/426"
+      },
+      {
+        "who": "mcbratney",
+        "role": "transcription",
+        "note": "c. 315r-v: four transcriptions (one blind, by a separate session) and an adjudication of 138 units, from the ASF images, with Claude",
+        "date": "2026-11-11"
+      },
+      {
+        "who": "bourdeau",
+        "role": "pointer",
+        "note": "the tally of 69 signs dropped as nulls; the pairing unsupported for g/h and weak for a/b; code values to stay [?word]; the catalogue date",
+        "date": "2026-11-12",
+        "source": "https://github.com/dbourdeau/cyphersolver/issues/426"
+      }
+    ],
+    "gaps": [
+      {
+        "item": "8 unread signs, among them a looped sign three times at the start of a clause",
+        "blocker": "illegible",
+        "detail": "holes.md 1; no image larger than 2000 px."
+      },
+      {
+        "item": "11 code signs, 23 units: A, L, S, G, B, D, Q, m, n, d and an ampersand",
+        "blocker": "no-key-material",
+        "detail": "Proposed from context only (A Papa, L Duca, S Siena, G Cardinale, B Imperatore); none is fixed by a duplicate. A dated letter in the same cipher or the key register would fix them."
+      },
+      {
+        "item": "h, and 62 signs dropped as nulls by context (mostly single-dotted t, l and b between words)",
+        "blocker": "illegible",
+        "detail": "61 of 62 stand at word boundaries like the key nulls: a separator class, or two-dot nulls with a dot not visible at 2000 px. The pairing g/h is not shown by this text."
+      },
+      {
+        "item": "The date and the writer",
+        "blocker": "no-key-material",
+        "detail": "Dateline 'el dj xx. m' with a bar, no year; content points to late 1555 to early 1557. Serristori's letter of 24 Oct 1555 (Mediceo 3274 c. 460) is not online."
+      },
+      {
+        "item": "Whether c. 318 is the address leaf of this letter",
+        "blocker": "needs-physical-access",
+        "detail": "Probable from the nesting of the neighbouring bifolia; no image shows the two leaves joined."
+      }
+    ],
+    "texts": [
+      {
+        "doc": "c315",
+        "label": "Anonymous to Cristiano Pagni, undated, MdP 444 c. 315r-v",
+        "transcription": [
+          "transcription.txt",
+          "transcription_blind.txt"
+        ],
+        "decryption": "decryption.txt",
+        "reading": "reading.md",
+        "translation": "translation.md",
+        "language": "it",
+        "state": "read in part",
+        "read_share": 0.904,
+        "summary": "A report to Cosimo I's secretary, probably from Rome. The writer has stayed on at the request of the Marquis of Sarria to watch a negotiation with a person hidden as A (the Pope, if the proposed value holds). A friend who knows French secrets says 'ours' will be deceived. A league is being negotiated, with Cervia and Ravenna to be pledged to L 'of Ferrara' for money; 'Monsignor di Lansa', arrived the evening before, presses it, and G 'of Lorraine' is expected. The writer suspects the French have already settled with A and are playing for time, to see whether L 'Ottavio' and his troops can force S to an accord with A as depositary. A is the bitter enemy of B and of L and has shown it openly; money is being spent, horse are coming from Mirandola and Parma, and when A disarms the French will take on the soldiers. The writer asks leave to go to n and to be kept in the good grace of L. Context: Franco-papal dealings against the Imperial side and Florence under Paul IV, between late 1555 and early 1557; the date is not established.",
+        "reading_review": {
+          "grade": "B",
+          "by": "integration reviewer (a model session, not a person), 12 Nov 2026",
+          "date": "2026-11-12",
+          "note": "Read as sentences against the translation. The letter runs as connected Italian from start to end and the argument can be followed. Holes: code signs in most sentences (five with a value proposed from context, six with none), 8 unread signs, and about forty words that hold a letter the key does not give from the sign on the image; all are marked in place. The contributor's own review (Claude, the session that prepared the files) is not independent and is replaced by this one."
+        },
+        "note": "read_share is the share of the 1,514 cipher units read by the key from every sign the image allows (units.tsv, counts.txt): the one rule of this folder. A word count of reading.md that the folder gave (279 words, 95 holes, 0.746) does not add up and is not used. transcription_blind.txt is the blind third transcription in its own sign names; pass 1 is in passes/, pass 2 and pass 3 in timestamps/stamped/."
+      }
+    ],
+    "key_file": [
+      "key.tsv",
+      "overrides.tsv",
+      "dropped_signs.tsv"
+    ],
+    "notes": "Filed as read in part, at 1,369 of 1,514 units (90.4%). The 89.7% and 91.5% of the first day are withdrawn and 91.72% is a sign-agreement figure, not a share read (counts.txt). contribution 'catalogue correction' is for the date only: the catalogue's 'late March 1555' does not fit the content and nothing firmer is put in its place. Checked at integration (12 Nov 2026): build.py reproduces every file and figure; an independent decoder agrees on all 1,369 read units; the stamp matches its files (the order of events is by the contributor's record); two lines of the ASF image were compared by the verifier (agree); docs/_validate.py gives pass on the units read by the key. The solver run and the optimised null controls were not re-run. The contributor id mcbratney is in contributors.json."
+  }
+}

@@ -1,0 +1,38 @@
+units 1521; b43 classes {'KEY': 1275, 'NULL-CTX': 74, 'NULL-KEY': 52, 'KEY-P2ONLY': 41, 'CODE': 23, 'CTX-LETTER': 15, 'CTX-UNC': 13, 'CTX-MN': 11, 'UNREAD': 8, 'CTX-GH': 7, 'CTX-P1': 2}
+red-team classes: S 1368, E 145, N 8 (sum 1521)
+COMMON RULE strict = S = KEY 1275 + KEY-P2ONLY 41 + NULL-KEY 52 = 1368; 1368/1521 = 89.94%
+E = context letters 48 (CTX-LETTER 15 + CTX-UNC 13 + CTX-MN 11 + CTX-GH 7 + CTX-P1 2) + context nulls 74 + codes 23 = 145; 145/1521 = 9.53%
+N = unread 8; 8/1521 = 0.53%
+check: b43 strict 1391 - 23 codes = 1368
+sensitivity: credit L (Duca, 5 occurrences incl. L di Ferrara, L Ottavio) as fixed -> 1373/1521 = 90.27%
+sensitivity: KEY-P2ONLY 41 demoted to E -> 1327/1521 = 87.25%
+nulls excluded both sides (key nulls only; context nulls stay as E in denominator): 1316/1469 = 89.58%
+nulls excluded both sides (key AND context nulls; NB removes 74 editorial decisions): 1316/1395 = 94.34%
+letters-only (single-letter signs incl. context letters and unread; excl. nulls, codes, word signs, repeat sign): S 1224, E 48, N 7 of 1279 -> 1224/1279 = 95.70%
+word signs + repeat sign units: 95 (S 92)
+letters + word/repeat signs (all plaintext-bearing non-code units): 1316/1374 = 95.78%
+READ bar (>=95% strict) met: NO
+code occurrences (all E under common rule):
+  R01 u1 d -> CODE:? (open)
+  R02 u50 Q -> CODE:? (open)
+  R03 u39 A -> CODE:Papa? (probable)
+  R08 u17 L -> CODE:Duca (context)
+  R09 u31 d -> CODE:? (open)
+  R10 u36 G -> CODE:Cardinale? (probable)
+  R14 u4 D -> CODE:pero? (candidate)
+  R15 u1 A -> CODE:Papa? (probable)
+  R17 u27 L -> CODE:Duca (context)
+  R19 u26 S -> CODE:Siena? (probable)
+  R20 u33 A -> CODE:Papa? (probable)
+  R21 u14 L -> CODE:Duca (context)
+  R23 u21 S -> CODE:Siena? (probable)
+  R24 u15 & -> CODE:et? (probable)
+  R24 u16 A -> CODE:Papa? (probable)
+  V01 u34 m -> CODE:? (open)
+  V03 u20 A -> CODE:Papa? (probable)
+  V03 u37 B -> CODE:Imperatore? (probable)
+  V03 u42 L -> CODE:Duca (context)
+  V04 u2 D -> CODE:pero? (candidate)
+  V07 u5 A -> CODE:Papa? (probable)
+  V09 u20 n -> CODE:? (open)
+  V10 u27 L -> CODE:Duca (context)

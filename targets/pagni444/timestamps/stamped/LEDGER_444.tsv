@@ -1,0 +1,1525 @@
+# MdP 444 c.315r-v per-unit ledger (b62). unit = ONE-BASED position in line; idx0 = zero-based (b43 units3.tsv idx). word = one-based word no. from b35 consensus breaks.
+# sign_cons = b35 consensus token (blind pass 2 + 6 pass-1 tokens); sign_final = b43 pass-3 adjudicated token (sign as seen). key_value = KEY_pass3 value of sign_final, literal.
+# rt_class: S strict (key from sign), E editorial (context letter, context null, code value), N unread. literal: key value, no smoothing (~ = repeat sign, ° = key null, {X} code). normalised = b43 output.
+line	unit	idx0	word	sign_cons	sign_final	changed	key_value	b43_class	basis	rt_class	reason	literal	normalised
+R01	1	0	1	d	d		CODE:? (open)	CODE	-	E	code sign; value proposed from context only, not fixed by a clear duplicate (common rule: E)	{d}	{d}
+R01	2	1	2	5'	5	Y	i	NULL-CTX	UNC	E	single-dot/bare letter sign present but dropped as null by sense (editorial) [pass-3 note: UNC]	i	
+R01	3	2	3	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+R01	4	3	3	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R01	5	4	4	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R01	6	5	4	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R01	7	6	4	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R01	8	7	4	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R01	9	8	5	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R01	10	9	5	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R01	11	10	5	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R01	12	11	5	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R01	13	12	5	8'	8'		r	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	r	r
+R01	14	13	5	9'	9'		t	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	t	t
+R01	15	14	5	3	3		e	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	e	e
+R01	16	15	5	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R01	17	16	5	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R01	18	17	5	9"	9	Y	s	CTX-LETTER	IMGX	E	sign as seen gives another letter by key; letter supplied by sense (editorial) [pass-3 note: IMGX]	s	T
+R01	19	18	6	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R01	20	19	6	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R01	21	20	7	8	8		q	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	q	q
+R01	22	21	7	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R02	1	0	1	x"	x"		z	UNREAD	UNC	N	sign not read / no value [pass-3 note: UNC]	<x"?>	<?>
+R02	2	1	1	2"	2"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R02	3	2	2	3'	3'		f	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	f	f
+R02	4	3	2	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R02	5	4	2	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R02	6	5	2	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R02	7	6	3	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R02	8	7	4	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R02	9	8	4	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R02	10	9	4	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R02	11	10	4	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R02	12	11	4	b	b		REPEAT	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	~	s
+R02	13	12	4	1	7	Y	o	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	o	o
+R02	14	13	5	#	#		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R02	15	14	5	3"	3"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R02	16	15	6	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R02	17	16	7	8'	8'		r	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	r	r
+R02	18	17	7	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R02	19	18	7	5	5		i	NULL-CTX	UNC	E	single-dot/bare letter sign present but dropped as null by sense (editorial) [pass-3 note: UNC]	i	
+R02	20	19	7	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R02	21	20	7	4	4		g	CTX-GH	IMGX	E	bare 4 (=g by key) read h by sense (editorial) [pass-3 note: IMGX]	g	H
+R02	22	21	7	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R02	23	22	7	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R02	24	23	7	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R02	25	24	7	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R02	26	25	7	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R02	27	26	8	9'	9'		t	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	t	
+R02	28	27	8	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R02	29	28	8	3'	3	Y	e	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	e	e
+R02	30	29	8	5	5'	Y	l	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	l	l
+R02	31	30	9	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+R02	32	31	9	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R02	33	32	9	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R02	34	33	9	1	1		a	NULL-CTX	NULLP	E	single-dot/bare letter sign present but dropped as null by sense (editorial) [pass-3 note: NULLP]	a	
+R02	35	34	9	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R02	36	35	9	4	4		g	CTX-GH	IMGX	E	bare 4 (=g by key) read h by sense (editorial) [pass-3 note: IMGX]	g	H
+R02	37	36	9	3	3		e	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	e	e
+R02	38	37	9	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R02	39	38	9	3'	3	Y	e	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	e	e
+R02	40	39	10	3"	3"		NULL	NULL-KEY	IMG	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0) [pass-3 note: IMG]	°	
+R02	41	40	10	N	N		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R02	42	41	11	2.	2.		d	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	d	d
+R02	43	42	11	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R02	44	43	12	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R02	45	44	12	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R02	46	45	12	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R02	47	46	12	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	r
+R02	48	47	12	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R02	49	48	12	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R02	50	49	13	Q	Q		CODE:? (open)	CODE	-	E	code sign; value proposed from context only, not fixed by a clear duplicate (common rule: E)	{Q}	{Q}
+R03	1	0	1	l	l		(per)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(per)	per
+R03	2	1	2	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R03	3	2	2	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R03	4	3	2	2.	2.		d	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	d	d
+R03	5	4	2	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R03	6	5	2	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R03	7	6	2	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R03	8	7	3	8'	8'		r	NULL-CTX	NULLP	E	single-dot/bare letter sign present but dropped as null by sense (editorial) [pass-3 note: NULLP]	r	
+R03	9	8	4	a	a		(in)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(in)	in
+R03	10	9	5	u	u		(che)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(che)	che
+R03	11	10	6	7"	7"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R03	12	11	6	7'	7'		p	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	p	p
+R03	13	12	6	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R03	14	13	6	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R03	15	14	6	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R03	16	15	6	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R03	17	16	6	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R03	18	17	7	#	#		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R03	19	18	8	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R03	20	19	8	5	5		i	CTX-LETTER	UNC	E	sign as seen gives another letter by key; letter supplied by sense (editorial) [pass-3 note: UNC]	i	L
+R03	21	20	9	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R03	22	21	9	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R03	23	22	9	4	4		g	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	g	g
+R03	24	23	9	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R03	25	24	9	9"	9"		t	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	t	t
+R03	26	25	9	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R03	27	26	9	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R03	28	27	10	5"	5"		NULL	NULL-KEY	IMG	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0) [pass-3 note: IMG]	°	
+R03	29	28	11	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R03	30	29	11	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R03	31	30	11	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R03	32	31	12	9'	9'		t	NULL-CTX	NULLP	E	single-dot/bare letter sign present but dropped as null by sense (editorial) [pass-3 note: NULLP]	t	
+R03	33	32	13	8	8		q	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	q	q
+R03	34	33	13	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R03	35	34	13	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R03	36	35	13	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R03	37	36	13	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R03	38	37	13	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R03	39	38	14	A	A		CODE:Papa? (probable)	CODE	-	E	code sign; value proposed from context only, not fixed by a clear duplicate (common rule: E)	{A}	{A}
+R04	1	0	1	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R04	2	1	2	a	a		(in)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(in)	in
+R04	3	2	3	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R04	4	3	3	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R04	5	4	3	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+R04	6	5	3	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	m
+R04	7	6	3	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R04	8	7	4	7"	7"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R04	9	8	5	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R04	10	9	5	3'	3	Y	e	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	e	e
+R04	11	10	6	1'	1'		b	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	b	b
+R04	12	11	6	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R04	13	12	6	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R04	14	13	7	7'	7'		p	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	p	p
+R04	15	14	7	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R04	16	15	7	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R04	17	16	7	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R04	18	17	8	3'	3'		f	NULL-CTX	NULLP	E	single-dot/bare letter sign present but dropped as null by sense (editorial) [pass-3 note: NULLP]	f	
+R04	19	18	9	u	u		(che)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(che)	che
+R04	20	19	10	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R04	21	20	10	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R04	22	21	11	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R04	23	22	11	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R04	24	23	11	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R04	25	24	12	5'	5'		l	NULL-CTX	NULLP	E	single-dot/bare letter sign present but dropped as null by sense (editorial) [pass-3 note: NULLP]	l	
+R04	26	25	13	8	8		q	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	q	q
+R04	27	26	13	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R04	28	27	13	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R04	29	28	13	5'	5'		l	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	l	l
+R04	30	29	13	u	u		(che)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(che)	che
+R04	31	30	14	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R04	32	31	14	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R04	33	32	14	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R04	34	33	14	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R04	35	34	14	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R04	36	35	14	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R04	37	36	14	2.	2.		d	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	d	d
+R04	38	37	14	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R04	39	38	14	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R04	40	39	15	7"	7"		NULL	NULL-KEY	IMG	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0) [pass-3 note: IMG]	°	
+R04	41	40	16	8	8		q	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	q	q
+R04	42	41	16	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R04	43	42	16	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R04	44	43	16	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+R05	1	0	1	3'	3'		f	NULL-CTX	NULLP	E	single-dot/bare letter sign present but dropped as null by sense (editorial) [pass-3 note: NULLP]	f	
+R05	2	1	2	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R05	3	2	2	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+R05	4	3	2	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R05	5	4	2	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R05	6	5	2	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R05	7	6	3	u	u		(che)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(che)	che
+R05	8	7	4	9'	9'		t	NULL-CTX	NULLP	E	single-dot/bare letter sign present but dropped as null by sense (editorial) [pass-3 note: NULLP]	t	
+R05	9	8	5	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R05	10	9	5	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R05	11	10	5	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R05	12	11	5	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R05	13	12	5	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R05	14	13	5	2.	2.		d	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	d	d
+R05	15	14	5	J	J		e	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	e	e
+R05	16	15	6	7'	7'		p	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	p	p
+R05	17	16	6	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R05	18	17	6	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R05	19	18	6	9'	9'		t	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	t	t
+R05	20	19	6	3	3		e	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	e	e
+R05	21	20	7	2.	2.		d	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	d	d
+R05	22	21	7	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R05	23	22	7	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+R05	24	23	7	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	l
+R05	25	24	7	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R05	26	25	8	1'	1'		b	NULL-CTX	NULLP	E	single-dot/bare letter sign present but dropped as null by sense (editorial) [pass-3 note: NULLP]	b	
+R05	27	26	8	#	#		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R05	28	27	9	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R05	29	28	9	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R05	30	29	9	4	4		g	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	g	g
+R05	31	30	9	8'	8'		r	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	r	r
+R05	32	31	9	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R05	33	32	9	9'	9'		t	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	t	t
+R05	34	33	9	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R05	35	34	10	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R05	36	35	10	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R05	37	36	11	3	3		e	CTX-LETTER	UNC	E	sign as seen gives another letter by key; letter supplied by sense (editorial) [pass-3 note: UNC]	e	F
+R05	38	37	11	8'	8'		r	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	r	r
+R05	39	38	11	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R05	40	39	11	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R05	41	40	11	x	x'	Y	z	CTX-UNC	UNC	E	key letter fits but pass-3 image could not confirm the sign/dot (editorial) [pass-3 note: UNC]	z	Z
+R05	42	41	11	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R06	1	0	1	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R06	2	1	1	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R06	3	2	2	9'	9'		t	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	t	
+R06	4	3	3	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+R06	5	4	3	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R06	6	5	4	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R06	7	6	4	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R06	8	7	4	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R06	9	8	4	3	3		e	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	e	e
+R06	10	9	5	2'	2'		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R06	11	10	6	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R06	12	11	6	4	4		g	CTX-GH	IMGX	E	bare 4 (=g by key) read h by sense (editorial) [pass-3 note: IMGX]	g	H
+R06	13	12	6	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R06	14	13	6	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R06	15	14	6	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R06	16	15	6	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R06	17	16	6	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+R06	18	17	6	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R06	19	18	6	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R06	20	19	6	9'	9'		t	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	t	t
+R06	21	20	6	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R06	22	21	7	u	u		(che)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(che)	che
+R06	23	22	8	5'	5'		l	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	l	l
+R06	24	23	8	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R06	25	24	9	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R06	26	25	9	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R06	27	26	9	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R06	28	27	9	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R06	29	28	9	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R06	30	29	9	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R06	31	30	10	5	5		i	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	i	
+R06	32	31	10	9'	9'		t	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	t	
+R06	33	32	11	8'	8'		r	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	r	r
+R06	34	33	11	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R06	35	34	11	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R06	36	35	11	9'	9'		t	CTX-P1	-	E	pass 1 and pass 2 disagree; not re-checked on image; chosen by sense (editorial)	t	T
+R06	37	36	11	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R06	38	37	11	8'	8'		r	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	r	r
+R06	39	38	11	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R06	40	39	11	6	6		m	CTX-MN	UNC	E	m/n chosen by sense; dot not seen or contradicts (editorial) [pass-3 note: UNC]	m	N
+R06	41	40	11	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	n
+R06	42	41	11	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R06	43	42	12	a	a		(in)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(in)	in
+R07	1	0	1	5'	5'		l	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	l	
+R07	2	1	1	4	4		g	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	g	g
+R07	3	2	1	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R07	4	3	1	6	6		m	CTX-MN	IMGX	E	m/n chosen by sense; dot not seen or contradicts (editorial) [pass-3 note: IMGX]	m	N
+R07	5	4	1	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	n
+R07	6	5	1	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R07	7	6	1	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R07	8	7	1	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R07	9	8	2	0	0		NULL	NULL-CTX	NULLP	E	single-dot/bare letter sign present but dropped as null by sense (editorial) [pass-3 note: NULLP]	°	
+R07	10	9	3	9	9'	Y	t	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	t	t
+R07	11	10	3	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R07	12	11	3	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R07	13	12	3	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	t
+R07	14	13	3	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R07	15	14	3	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R07	16	15	3	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R07	17	16	3	1	1		a	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	a	a
+R07	18	17	4	1'	1'		b	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	b	
+R07	19	18	5	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R07	20	19	5	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R07	21	20	6	9'	9'		t	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	t	t
+R07	22	21	6	8'	8'		r	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	r	r
+R07	23	22	6	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R07	24	23	6	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R07	25	24	6	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	t
+R07	26	25	6	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R07	27	26	7	5"	5"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R07	28	27	8	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R07	29	28	8	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R07	30	29	8	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R07	31	30	9	5	5'	Y	l	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	l	l
+R07	32	31	9	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R07	33	32	9	4	4		g	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	g	g
+R07	34	33	9	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R07	35	34	10	3	3		e	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	e	e
+R07	36	35	11	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R07	37	36	11	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R07	38	37	11	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+R07	39	38	11	7'	7'		p	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	p	p
+R07	40	39	11	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R07	41	40	11	4	4		g	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	g	g
+R07	42	41	11	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R07	43	42	11	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R07	44	43	11	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R07	45	44	11	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R07	46	45	12	4'	4'		h	NULL-CTX	NULLP	E	single-dot/bare letter sign present but dropped as null by sense (editorial) [pass-3 note: NULLP]	h	
+R07	47	46	13	2.	2	Y	c	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	c	c
+R07	48	47	13	3	3		e	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	e	e
+R07	49	48	13	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R08	1	0	1	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R08	2	1	1	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R08	3	2	1	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R08	4	3	2	J	J		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R08	5	4	3	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R08	6	5	3	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R08	7	6	3	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R08	8	7	3	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R08	9	8	3	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R08	10	9	3	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	n
+R08	11	10	3	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R08	12	11	4	3"	3"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R08	13	12	4	&	&		CODE:et? (probable)	UNREAD	UNC	N	sign not read / no value [pass-3 note: UNC]	<&?>	<?>
+R08	14	13	4	x'	x'		z	UNREAD	UNC	N	sign not read / no value [pass-3 note: UNC]	<x'?>	<?>
+R08	15	14	5	1'	1	Y	a	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	a	a
+R08	16	15	5	5	5'	Y	l	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	l	l
+R08	17	16	6	L	L		CODE:Duca (context)	CODE	-	E	code sign; value proposed from context only, not fixed by a clear duplicate (common rule: E)	{L}	{L}
+R08	18	17	7	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R08	19	18	7	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R08	20	19	8	2'	2'		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R08	21	20	9	3	3		e	CTX-LETTER	UNC	E	sign as seen gives another letter by key; letter supplied by sense (editorial) [pass-3 note: UNC]	e	F
+R08	22	21	9	J	J		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R08	23	22	9	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R08	24	23	9	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	r
+R08	25	24	9	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R08	26	25	9	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R08	27	26	9	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R08	28	27	10	4"	4"		NULL	NULL-KEY	IMG	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0) [pass-3 note: IMG]	°	
+R08	29	28	11	l	l		(per)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(per)	per
+R08	30	29	12	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R08	31	30	12	J	J		e	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	e	e
+R08	32	31	12	6	6		m	CTX-MN	UNC	E	m/n chosen by sense; dot not seen or contradicts (editorial) [pass-3 note: UNC]	m	N
+R08	33	32	12	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R08	34	33	12	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R08	35	34	12	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R08	36	35	13	a	a		(in)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(in)	in
+R08	37	36	14	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R08	38	37	14	J	J		e	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	e	e
+R08	39	38	14	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R08	40	39	14	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R08	41	40	14	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R08	42	41	14	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R09	1	0	1	J	J		e	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	e	e
+R09	2	1	1	5'	5'		l	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	l	l
+R09	3	2	2	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+R09	4	3	2	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R09	5	4	2	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R09	6	5	2	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R09	7	6	2	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R09	8	7	2	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R09	9	8	2	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+R09	10	9	2	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R09	11	10	3	5"	5"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R09	12	11	4	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+R09	13	12	4	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R09	14	13	4	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R09	15	14	4	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R09	16	15	4	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R09	17	16	4	4	4		g	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	g	g
+R09	18	17	4	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R09	19	18	4	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R09	20	19	4	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R09	21	20	5	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R09	22	21	5	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R09	23	22	6	7'	7'		p	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	p	
+R09	24	23	7	5'	5'		l	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	l	l
+R09	25	24	7	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R09	26	25	7	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R09	27	26	7	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R09	28	27	7	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R09	29	28	8	u	u		(che)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(che)	che
+R09	30	29	9	5'	5'		l	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	l	
+R09	31	30	9	d	d		CODE:? (open)	CODE	-	E	code sign; value proposed from context only, not fixed by a clear duplicate (common rule: E)	{d}	{d}
+R09	32	31	10	u	u		(che)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(che)	che
+R09	33	32	11	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R09	34	33	11	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R09	35	34	11	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R09	36	35	11	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	n
+R09	37	36	11	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R09	38	37	12	3'	3'		f	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	f	
+R09	39	38	13	4	4		g	CTX-GH	UNC	E	bare 4 (=g by key) read h by sense (editorial) [pass-3 note: UNC]	g	H
+R09	40	39	13	5'	5	Y	i	CTX-UNC	UNC	E	key letter fits but pass-3 image could not confirm the sign/dot (editorial) [pass-3 note: UNC]	i	I
+R09	41	40	13	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R09	42	41	13	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R09	43	42	13	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R09	44	43	13	1'	1'		b	NULL-CTX	UNC	E	single-dot/bare letter sign present but dropped as null by sense (editorial) [pass-3 note: UNC]	b	
+R10	1	0	1	J	J		e	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	e	e
+R10	2	1	1	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R10	3	2	1	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R10	4	3	2	2'	2'		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R10	5	4	3	5'	5'		l	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	l	l
+R10	6	5	3	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R10	7	6	4	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R10	8	7	4	8'	8'		r	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	r	r
+R10	9	8	4	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R10	10	9	4	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R10	11	10	4	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	t
+R10	12	11	4	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R10	13	12	5	1"	1"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R10	14	13	6	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R10	15	14	6	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R10	16	15	6	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R10	17	16	7	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+R10	18	17	7	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R10	19	18	7	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+R10	20	19	7	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R10	21	20	7	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R10	22	21	8	1	1		a	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	a	
+R10	23	22	9	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R10	24	23	9	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R10	25	24	9	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R10	26	25	9	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R10	27	26	9	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R10	28	27	9	9'	9'		t	CTX-UNC	UNC	E	key letter fits but pass-3 image could not confirm the sign/dot (editorial) [pass-3 note: UNC]	t	T
+R10	29	28	9	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R10	30	29	9	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R10	31	30	10	1'	1'		b	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	b	
+R10	32	31	10	#	#		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R10	33	32	10	x'	x'		z	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	z	
+R10	34	33	11	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R10	35	34	11	5	5'	Y	l	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	l	l
+R10	36	35	12	G	G		CODE:Cardinale? (probable)	CODE	-	E	code sign; value proposed from context only, not fixed by a clear duplicate (common rule: E)	{G}	{G}
+R10	37	36	13	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R10	38	37	13	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R10	39	38	14	1'	1'		b	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	b	
+R10	40	39	15	5'	5'		l	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	l	l
+R10	41	40	15	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R10	42	41	15	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R10	43	42	15	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R10	44	43	15	6	6		m	CTX-MN	UNC	E	m/n chosen by sense; dot not seen or contradicts (editorial) [pass-3 note: UNC]	m	N
+R10	45	44	15	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R10	46	45	16	9'	9'		t	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	t	
+R11	1	0	1	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R11	2	1	1	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R11	3	2	1	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R11	4	3	1	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	r
+R11	5	4	1	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R11	6	5	2	3"	3"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R11	7	6	3	l	l		(per)	NULL-CTX	UNC	E	single-dot/bare letter sign present but dropped as null by sense (editorial) [pass-3 note: UNC]	(per)	
+R11	8	7	4	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R11	9	8	4	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R11	10	9	5	4	4		g	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	g	g
+R11	11	10	5	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+R11	12	11	5	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R11	13	12	6	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R11	14	13	6	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R11	15	14	6	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R11	16	15	6	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R11	17	16	6	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R11	18	17	6	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	s
+R11	19	18	6	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R11	20	19	7	1"	1"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R11	21	20	7	l	l		(per)	NULL-CTX	UNC	E	single-dot/bare letter sign present but dropped as null by sense (editorial) [pass-3 note: UNC]	(per)	
+R11	22	21	8	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R11	23	22	8	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R11	24	23	9	1'	1'		b	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	b	b
+R11	25	24	9	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R11	26	25	9	6	6		m	CTX-MN	UNC	E	m/n chosen by sense; dot not seen or contradicts (editorial) [pass-3 note: UNC]	m	N
+R11	27	26	10	8	8		q	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	q	q
+R11	28	27	10	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R11	29	28	10	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R11	30	29	10	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R11	31	30	10	9'	9'		t	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	t	t
+R11	32	31	10	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R11	33	32	11	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+R11	34	33	11	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R11	35	34	11	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R11	36	35	11	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R11	37	36	11	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R11	38	37	11	9'	9'		t	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	t	t
+R11	39	38	11	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R11	40	39	11	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R11	41	40	12	9'	9'		t	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	t	
+R11	42	41	13	3'	3'		f	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	f	f
+R11	43	42	13	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R12	1	0	1	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R12	2	1	1	x'	x'		z	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	z	z
+R12	3	2	1	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R12	4	3	1	9	9		s	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	s	s
+R12	5	4	1	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R12	6	5	2	9"	9"		t	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	t	
+R12	7	6	3	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R12	8	7	3	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R12	9	8	4	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R12	10	9	4	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R12	11	10	4	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R12	12	11	5	5'	5'		l	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	l	l
+R12	13	12	5	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R12	14	13	5	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R12	15	14	5	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	s
+R12	16	15	5	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R12	17	16	5	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R12	18	17	5	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R12	19	18	6	a	a		(in)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(in)	in
+R12	20	19	6	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R12	21	20	6	7	7		o	CTX-LETTER	UNC	E	sign as seen gives another letter by key; letter supplied by sense (editorial) [pass-3 note: UNC]	o	E
+R12	22	21	6	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R12	23	22	6	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R12	24	23	6	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R12	25	24	6	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R12	26	25	6	7	7		o	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	o	
+R12	27	26	6	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R12	28	27	7	u	u		(che)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(che)	che
+R12	29	28	8	3"	3"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R12	30	29	9	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R12	31	30	9	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R12	32	31	9	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	n
+R12	33	32	9	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R12	34	33	10	a	a		(in)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(in)	in
+R12	35	34	10	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R12	36	35	10	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R12	37	36	10	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R12	38	37	10	9'	9'		t	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	t	t
+R12	39	38	10	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R12	40	39	11	5"	5"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R12	41	40	12	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R12	42	41	13	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R12	43	42	13	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R12	44	43	13	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R12	45	44	13	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R12	46	45	13	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R12	47	46	13	9'	9'		t	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	t	t
+R12	48	47	13	8'	8'		r	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	r	r
+R13	1	0	1	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R13	2	1	1	8'	8'		r	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	r	r
+R13	3	2	1	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+R13	4	3	1	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R13	5	4	2	1'	1'		b	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	b	
+R13	6	5	3	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R13	7	6	3	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R13	8	7	3	6	6		m	CTX-MN	UNC	E	m/n chosen by sense; dot not seen or contradicts (editorial) [pass-3 note: UNC]	m	N
+R13	9	8	4	3'	3'		f	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	f	f
+R13	10	9	4	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R13	11	10	4	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R13	12	11	4	5'	5'		l	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	l	l
+R13	13	12	4	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R13	14	13	5	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R13	15	14	5	1	1		a	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	a	a
+R13	16	15	5	1'	1'		b	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	b	b
+R13	17	16	5	J	J		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R13	18	17	5	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R13	19	18	5	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R13	20	19	6	8"	8"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R13	21	20	7	u	u		(che)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(che)	che
+R13	22	21	8	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R13	23	22	8	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R13	24	23	8	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R13	25	24	9	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R13	26	25	9	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R13	27	26	9	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	c
+R13	28	27	9	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R13	29	28	9	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R13	30	29	9	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R13	31	30	10	1'	1'		b	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	b	b
+R13	32	31	10	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R13	33	32	10	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R13	34	33	11	5"	5"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R13	35	34	12	5	5'	Y	l	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	l	l
+R13	36	35	12	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R13	37	36	13	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R13	38	37	13	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R13	39	38	13	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R13	40	39	14	1	1		a	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	a	
+R13	41	40	14	N	N		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R13	42	41	15	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R13	43	42	15	7	7		o	CTX-LETTER	IMGX	E	sign as seen gives another letter by key; letter supplied by sense (editorial) [pass-3 note: IMGX]	o	E
+R13	44	43	15	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R13	45	44	15	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R14	1	0	1	9'	9'		t	CTX-UNC	UNC	E	key letter fits but pass-3 image could not confirm the sign/dot (editorial) [pass-3 note: UNC]	t	T
+R14	2	1	1	1	1		a	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	a	a
+R14	3	2	2	5'	5'		l	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	l	
+R14	4	3	3	D	D		CODE:pero? (candidate)	CODE	-	E	code sign; value proposed from context only, not fixed by a clear duplicate (common rule: E)	{D}	{D}
+R14	5	4	4	7'	7'		p	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	p	p
+R14	6	5	4	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R14	7	6	4	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R14	8	7	4	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R14	9	8	4	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R14	10	9	4	1'	1'		b	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	b	b
+R14	11	10	4	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	b
+R14	12	11	4	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R14	13	12	5	9'	9'		t	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	t	
+R14	14	13	6	1'	1'		b	CTX-UNC	UNC	E	key letter fits but pass-3 image could not confirm the sign/dot (editorial) [pass-3 note: UNC]	b	B
+R14	15	14	6	3	3		e	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	e	e
+R14	16	15	6	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R14	17	16	7	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R14	18	17	7	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R14	19	18	7	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	s
+R14	20	19	7	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R14	21	20	7	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R14	22	21	7	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R14	23	22	8	u	u		(che)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(che)	che
+R14	24	23	9	4	4		g	CTX-GH	UNC	E	bare 4 (=g by key) read h by sense (editorial) [pass-3 note: UNC]	g	H
+R14	25	24	9	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R14	26	25	9	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R14	27	26	9	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R14	28	27	9	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R14	29	28	9	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	s
+R14	30	29	9	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R14	31	30	9	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R14	32	31	9	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R14	33	32	10	9'	9'		t	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	t	
+R14	34	33	11	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R14	35	34	11	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R14	36	35	11	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R14	37	36	11	1'	1'		b	CTX-UNC	UNC	E	key letter fits but pass-3 image could not confirm the sign/dot (editorial) [pass-3 note: UNC]	b	B
+R14	38	37	11	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R14	39	38	11	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+R14	40	39	11	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R14	41	40	11	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R14	42	41	11	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R14	43	42	12	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R14	44	43	12	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R14	45	44	12	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+R15	1	0	1	A	A		CODE:Papa? (probable)	CODE	-	E	code sign; value proposed from context only, not fixed by a clear duplicate (common rule: E)	{A}	{A}
+R15	2	1	2	7"	7"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R15	3	2	3	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R15	4	3	3	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R15	5	4	4	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+R15	6	5	4	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R15	7	6	4	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R15	8	7	4	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R15	9	8	4	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R15	10	9	4	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R15	11	10	4	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R15	12	11	5	u	u		(che)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(che)	che
+R15	13	12	6	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R15	14	13	6	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R15	15	14	6	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R15	16	15	7	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R15	17	16	7	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R15	18	17	8	7'	7'		p	CTX-LETTER	UNC	E	sign as seen gives another letter by key; letter supplied by sense (editorial) [pass-3 note: UNC]	p	F
+R15	19	18	8	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R15	20	19	8	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R15	21	20	8	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	s
+R15	22	21	8	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R15	23	22	9	1'	1'		b	CTX-UNC	UNC	E	key letter fits but pass-3 image could not confirm the sign/dot (editorial) [pass-3 note: UNC]	b	B
+R15	24	23	9	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R15	25	24	9	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R15	26	25	9	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R15	27	26	9	4	4		g	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	g	g
+R15	28	27	9	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R15	29	28	9	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R15	30	29	10	9'	9'		t	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	t	
+R15	31	30	10	#	#		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R15	32	31	11	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R15	33	32	12	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R15	34	33	12	1'	1'		b	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	b	
+R15	35	34	12	5	5		i	CTX-LETTER	UNC	E	sign as seen gives another letter by key; letter supplied by sense (editorial) [pass-3 note: UNC]	i	L
+R15	36	35	12	9'	9'		t	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	t	t
+R15	37	36	12	8'	8'		r	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	r	r
+R15	38	37	12	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R15	39	38	13	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R15	40	39	13	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R15	41	40	13	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R15	42	41	13	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R16	1	0	1	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R16	2	1	2	8'	8'		r	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	r	r
+R16	3	2	2	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R16	4	3	2	9'	9'		t	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	t	t
+R16	5	4	2	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R16	6	5	2	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R16	7	6	2	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R16	8	7	2	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R16	9	8	2	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R16	10	9	2	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	s
+R16	11	10	2	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R16	12	11	3	1'	1'		b	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	b	
+R16	13	12	4	5'	5'		l	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	l	l
+R16	14	13	4	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R16	15	14	5	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R16	16	15	5	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R16	17	16	5	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R16	18	17	5	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R16	19	18	5	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R16	20	19	5	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R16	21	20	6	l	l		(per)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(per)	per
+R16	22	21	7	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R16	23	22	7	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R16	24	23	7	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R16	25	24	7	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R16	26	25	7	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+R16	27	26	7	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R16	28	27	7	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R16	29	28	7	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R16	30	29	7	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R16	31	30	7	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R16	32	31	7	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R16	33	32	8	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+R16	34	33	8	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R16	35	34	9	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R16	36	35	9	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R16	37	36	9	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R16	38	37	9	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R16	39	38	9	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R16	40	39	9	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R17	1	0	1	l	l		(per)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(per)	per
+R17	2	1	2	J"	J"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R17	3	2	3	8	8		q	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	q	q
+R17	4	3	3	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R17	5	4	3	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R17	6	5	3	5'	5'		l	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	l	l
+R17	7	6	3	u	u		(che)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(che)	che
+R17	8	7	4	4	4		g	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	g	g
+R17	9	8	4	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R17	10	9	4	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R17	11	10	4	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R17	12	11	4	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R17	13	12	4	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R17	14	13	5	5'	5'		l	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	l	
+R17	15	14	6	l	l		(per)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(per)	per
+R17	16	15	7	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R17	17	16	7	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R17	18	17	7	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R17	19	18	7	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R17	20	19	7	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R17	21	20	7	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R17	22	21	8	2'	2'		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R17	23	22	9	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R17	24	23	9	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R17	25	24	10	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R17	26	25	10	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+R17	27	26	11	L	L		CODE:Duca (context)	CODE	-	E	code sign; value proposed from context only, not fixed by a clear duplicate (common rule: E)	{L}	{L}
+R17	28	27	12	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R17	29	28	12	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R17	30	29	12	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	t
+R17	31	30	12	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R17	32	31	12	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R17	33	32	12	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R17	34	33	12	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R17	35	34	13	5"	5"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R17	36	35	14	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R17	37	36	14	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R17	38	37	14	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R18	1	0	1	8	8		q	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	q	q
+R18	2	1	1	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R18	3	2	1	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R18	4	3	1	5'	5'		l	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	l	l
+R18	5	4	1	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	l
+R18	6	5	1	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R18	7	6	2	x'	x'		z	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	z	
+R18	8	7	3	4	4		g	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	g	g
+R18	9	8	3	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R18	10	9	3	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R18	11	10	3	9'	9'		t	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	t	t
+R18	12	11	3	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R18	13	12	4	u	u		(che)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(che)	che
+R18	14	13	5	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R18	15	14	5	6	6		m	CTX-MN	UNC	E	m/n chosen by sense; dot not seen or contradicts (editorial) [pass-3 note: UNC]	m	N
+R18	16	15	5	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	n
+R18	17	16	5	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R18	18	17	6	7'	7'		p	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	p	p
+R18	19	18	6	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R18	20	19	6	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R18	21	20	6	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R18	22	21	6	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R18	23	22	6	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R18	24	23	6	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R18	25	24	7	1'	1'		b	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	b	
+R18	26	25	8	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+R18	27	26	8	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R18	28	27	8	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R18	29	28	8	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	t
+R18	30	29	8	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R18	31	30	8	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R18	32	31	8	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R18	33	32	9	a	a		(in)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(in)	in
+R18	34	33	9	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R18	35	34	9	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R18	36	35	9	3	3		e	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	e	e
+R18	37	36	9	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+R18	38	37	9	J	J		e	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	e	e
+R18	39	38	10	3"	3"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R18	40	39	11	3'	3'		f	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	f	f
+R18	41	40	11	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R18	42	41	11	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R18	43	42	11	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	s
+R18	44	43	11	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R19	1	0	1	8'	8'		r	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	r	
+R19	2	1	2	7'	7'		p	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	p	p
+R19	3	2	2	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R19	4	3	2	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R19	5	4	2	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R19	6	5	2	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R19	7	6	3	l	l		(per)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(per)	per
+R19	8	7	4	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+R19	9	8	4	J	J		e	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	e	e
+R19	10	9	4	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R19	11	10	4	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	t
+R19	12	11	4	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R19	13	12	4	8'	8'		r	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	r	r
+R19	14	13	4	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R19	15	14	5	1'	1'		b	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	b	
+R19	16	15	6	a	a		(in)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(in)	in
+R19	17	16	7	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R19	18	17	7	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R19	19	18	7	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R19	20	19	7	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R19	21	20	7	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R19	22	21	7	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	s
+R19	23	22	7	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R19	24	23	7	9'	9'		t	CTX-UNC	UNC	E	key letter fits but pass-3 image could not confirm the sign/dot (editorial) [pass-3 note: UNC]	t	T
+R19	25	24	7	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R19	26	25	8	S	S		CODE:Siena? (probable)	CODE	-	E	code sign; value proposed from context only, not fixed by a clear duplicate (common rule: E)	{S}	{S}
+R19	27	26	9	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+R19	28	27	9	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R19	29	28	10	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R19	30	29	10	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R19	31	30	10	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R19	32	31	10	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R19	33	32	11	x"	x"		z	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	z	
+R19	34	33	12	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R19	35	34	13	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R19	36	35	13	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R19	37	36	13	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R19	38	37	13	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R19	39	38	13	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	s
+R19	40	39	13	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R19	41	40	14	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R19	42	41	15	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R19	43	42	15	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R19	44	43	15	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R20	1	0	1	J	J		e	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	e	e
+R20	2	1	1	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R20	3	2	1	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R20	4	3	2	a	a		(in)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(in)	in
+R20	5	4	3	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R20	6	5	3	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R20	7	6	3	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R20	8	7	4	3'	3'		f	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	f	
+R20	9	8	5	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R20	10	9	5	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R20	11	10	5	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R20	12	11	5	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R20	13	12	5	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R20	14	13	5	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R20	15	14	6	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R20	16	15	7	3'	3'		f	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	f	f
+R20	17	16	7	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R20	18	17	7	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R20	19	18	7	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R20	20	19	7	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R20	21	20	8	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R20	22	21	8	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R20	23	22	8	7'	7'		p	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	p	p
+R20	24	23	8	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R20	25	24	8	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R20	26	25	8	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R20	27	26	8	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R20	28	27	8	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R20	29	28	8	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R20	30	29	8	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R20	31	30	8	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R20	32	31	9	5"	5"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R20	33	32	10	A	A		CODE:Papa? (probable)	CODE	-	E	code sign; value proposed from context only, not fixed by a clear duplicate (common rule: E)	{A}	{A}
+R20	34	33	11	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R20	35	34	11	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R20	36	35	11	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R20	37	36	12	8	8		q	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	q	q
+R20	38	37	12	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R20	39	38	12	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R20	40	39	12	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+R21	1	0	1	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	
+R21	2	1	1	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R21	3	2	2	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R21	4	3	2	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R21	5	4	2	3	3		e	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	e	e
+R21	6	5	2	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R21	7	6	2	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R21	8	7	2	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R21	9	8	2	x'	x'		z	CTX-UNC	UNC	E	key letter fits but pass-3 image could not confirm the sign/dot (editorial) [pass-3 note: UNC]	z	Z
+R21	10	9	2	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R21	11	10	3	u	u		(che)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(che)	che
+R21	12	11	4	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R21	13	12	4	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+R21	14	13	5	L	L		CODE:Duca (context)	CODE	-	E	code sign; value proposed from context only, not fixed by a clear duplicate (common rule: E)	{L}	{L}
+R21	15	14	6	7'	7'		p	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	p	p
+R21	16	15	6	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R21	17	16	6	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R21	18	17	6	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R21	19	18	6	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	c
+R21	20	19	6	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R21	21	20	6	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R21	22	21	7	5'	5'		l	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	l	
+R21	23	22	8	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R21	24	23	8	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R21	25	24	8	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+R21	26	25	8	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R21	27	26	8	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+R21	28	27	9	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R21	29	28	9	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R21	30	29	9	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R21	31	30	9	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R21	32	31	9	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R21	33	32	9	4	4		g	CTX-GH	IMGX	E	bare 4 (=g by key) read h by sense (editorial) [pass-3 note: IMGX]	g	H
+R21	34	33	9	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R21	35	34	10	2'	2'		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R21	36	35	11	J	J		e	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	e	e
+R21	37	36	12	a	a		(in)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(in)	in
+R21	38	37	12	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R21	39	38	12	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R21	40	39	12	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R21	41	40	12	9	9		s	CTX-LETTER	IMGX	E	sign as seen gives another letter by key; letter supplied by sense (editorial) [pass-3 note: IMGX]	s	T
+R21	42	41	12	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R21	43	42	13	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R21	44	43	13	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R22	1	0	1	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R22	2	1	1	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R22	3	2	2	2'	2'		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R22	4	3	3	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R22	5	4	3	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R22	6	5	3	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R22	7	6	3	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R22	8	7	3	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R22	9	8	3	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R22	10	9	4	l	l		(per)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(per)	per
+R22	11	10	5	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R22	12	11	6	9'	9'		t	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	t	t
+R22	13	12	6	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R22	14	13	6	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+R22	15	14	6	7'	7'		p	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	p	p
+R22	16	15	6	u"	u"		NULL	UNREAD	UNC	N	sign not read / no value [pass-3 note: UNC]	<u"?>	<?>
+R22	17	16	7	6	6		m	CTX-MN	UNC	E	m/n chosen by sense; dot not seen or contradicts (editorial) [pass-3 note: UNC]	m	N
+R22	18	17	7	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R22	19	18	7	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R22	20	19	7	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R22	21	20	7	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R22	22	21	8	1'	1'		b	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	b	
+R22	23	22	9	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R22	24	23	9	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R22	25	24	10	3'	3'		f	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	f	f
+R22	26	25	10	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R22	27	26	10	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R22	28	27	10	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R22	29	28	11	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+R22	30	29	11	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R22	31	30	11	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R22	32	31	11	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R22	33	32	12	5"	5"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R22	34	33	13	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R22	35	34	13	3'	3'		f	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	f	f
+R22	36	35	13	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R22	37	36	13	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R22	38	37	13	x'	x'		z	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	z	z
+R22	39	38	13	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R23	1	0	1	a	a		(in)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(in)	in
+R23	2	1	2	3"	3"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R23	3	2	3	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R23	4	3	3	4	4		g	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	g	g
+R23	5	4	3	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R23	6	5	3	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R23	7	6	4	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R23	8	7	4	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R23	9	8	4	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R23	10	9	4	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R23	11	10	5	9'	9'		t	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	t	
+R23	12	11	6	u	u		(che)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(che)	che
+R23	13	12	7	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R23	14	13	7	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R23	15	14	7	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R23	16	15	7	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R23	17	16	7	4	4		g	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	g	g
+R23	18	17	7	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R23	19	18	8	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R23	20	19	8	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R23	21	20	9	S	S		CODE:Siena? (probable)	CODE	-	E	code sign; value proposed from context only, not fixed by a clear duplicate (common rule: E)	{S}	{S}
+R23	22	21	10	J	J		e	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	e	e
+R23	23	22	10	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+R23	24	23	11	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R23	25	24	11	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R23	26	25	11	7'	7'		p	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	p	p
+R23	27	26	11	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	p
+R23	28	27	11	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R23	29	28	11	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R23	30	29	11	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R23	31	30	11	3	3		e	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	e	e
+R23	32	31	12	u	u		(che)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(che)	che
+R23	33	32	13	3"	3"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R23	34	33	14	8	8		q	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	q	q
+R23	35	34	14	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R23	36	35	14	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R23	37	36	14	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R23	38	37	14	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R23	39	38	14	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R24	1	0	1	x"	x"		z	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	z	
+R24	2	1	2	4	4		g	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	g	g
+R24	3	2	2	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R24	4	3	2	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R24	5	4	2	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R24	6	5	2	6'	6'		n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R24	7	6	2	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R24	8	7	3	7'	7'		p	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	p	p
+R24	9	8	3	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R24	10	9	3	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R24	11	10	3	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	s
+R24	12	11	3	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R24	13	12	3	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R24	14	13	3	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R24	15	14	4	&	&		CODE:et? (probable)	CODE	-	E	code sign; value proposed from context only, not fixed by a clear duplicate (common rule: E)	{&}	{&}
+R24	16	15	5	A	A		CODE:Papa? (probable)	CODE	-	E	code sign; value proposed from context only, not fixed by a clear duplicate (common rule: E)	{A}	{A}
+R24	17	16	6	1"	1"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R24	18	17	7	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R24	19	18	7	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R24	20	19	8	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+R24	21	20	8	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R24	22	21	8	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R24	23	22	8	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	s
+R24	24	23	8	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R24	25	24	8	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R24	26	25	8	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R24	27	26	9	a	a		(in)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(in)	in
+R24	28	27	9	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R24	29	28	9	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R24	30	29	9	6'	6'		n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R24	31	30	9	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R24	32	31	9	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R24	33	32	9	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R24	34	33	9	3	3		e	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	e	e
+R24	35	34	10	6"	6"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R24	36	35	11	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R24	37	36	11	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R24	38	37	11	6'	6'		n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R24	39	38	11	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R24	40	39	11	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R24	41	40	12	5'	5'		l	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	l	
+R24	42	41	12	#	#		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R25	1	0	1	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R25	2	1	1	7'	7'		p	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	p	p
+R25	3	2	1	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R25	4	3	1	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R25	5	4	1	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R25	6	5	1	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R25	7	6	1	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+R25	8	7	1	3	3		e	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	e	e
+R25	9	8	1	6'	6'		n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R25	10	9	1	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R25	11	10	1	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R25	12	11	2	1'	1'		b	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	b	
+R25	13	12	3	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R25	14	13	4	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R25	15	14	4	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R25	16	15	4	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R25	17	16	5	5'	5'		l	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	l	l
+R25	18	17	6	9	9		s	UNREAD	UNC	N	sign not read / no value [pass-3 note: UNC]	<9?>	<?>
+R25	19	18	6	2"	2"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+R25	20	19	7	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+R25	21	20	7	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R25	22	21	7	5'	5'		l	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	l	l
+R25	23	22	7	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R25	24	23	8	7'	7'		p	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	p	p
+R25	25	24	8	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R25	26	25	8	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R25	27	26	8	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R25	28	27	8	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+R25	29	28	8	3	3		e	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	e	e
+R25	30	29	9	7'	7'		p	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	p	
+R25	31	30	10	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R25	32	31	11	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+R25	33	32	11	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R25	34	33	11	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R25	35	34	12	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R25	36	35	13	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R25	37	36	13	7'	7'		p	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	p	p
+R25	38	37	13	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	p
+R25	39	38	13	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R25	40	39	13	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R25	41	40	13	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R25	42	41	13	6'	6'		n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R25	43	42	13	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R25	44	43	13	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R26	1	0	1	7'	7'		p	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	p	
+R26	2	1	2	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R26	3	2	2	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R26	4	3	2	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+R26	5	4	2	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R26	6	5	2	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R26	7	6	2	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R26	8	7	2	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R26	9	8	2	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R26	10	9	2	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+R26	11	10	2	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R26	12	11	2	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R26	13	12	2	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R26	14	13	2	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R26	15	14	3	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R26	16	15	4	7'	7'		p	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	p	p
+R26	17	16	4	8'	8'		r	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	r	r
+R26	18	17	4	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R26	19	18	4	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+R26	20	19	4	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R26	21	20	4	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R26	22	21	4	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R26	23	22	4	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+R26	24	23	4	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R26	25	24	4	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R26	26	25	5	5'	5'		l	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	l	
+R26	27	26	6	u	u		(che)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(che)	che
+R26	28	27	7	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R26	29	28	7	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+R26	30	29	7	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	l
+R26	31	30	7	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R26	32	31	8	3	3'	Y	f	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	f	f
+R26	33	32	8	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+R26	34	33	8	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+R26	35	34	8	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+R26	36	35	8	x"	x"		z	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	z	z
+R26	37	36	8	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+R26	38	37	8	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+R26	39	38	8	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R26	40	39	9	9'	9'		t	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	t	
+R26	41	40	10	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+R26	42	41	10	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+R26	43	42	10	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+V01	1	0	1	7'	7'		p	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	p	p
+V01	2	1	1	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V01	3	2	1	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V01	4	3	1	8	8		q	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	q	q
+V01	5	4	1	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+V01	6	5	1	3	3		e	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	e	e
+V01	7	6	1	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+V01	8	7	2	7'	7'		p	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	p	p
+V01	9	8	2	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V01	10	9	2	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+V01	11	10	2	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V01	12	11	2	6'	6'		n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+V01	13	12	2	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+V01	14	13	2	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+V01	15	14	2	5'	5'		l	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	l	l
+V01	16	15	2	5	5		i	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	i	i
+V01	17	16	3	5	5		i	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	i	
+V01	18	17	4	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+V01	19	18	4	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V01	20	19	5	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+V01	21	20	5	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V01	22	21	5	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+V01	23	22	5	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V01	24	23	5	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+V01	25	24	5	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V01	26	25	6	3'	3'		f	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	f	
+V01	27	26	7	a	a		(in)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(in)	in
+V01	28	27	7	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+V01	29	28	7	6'	6'		n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+V01	30	29	7	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+V01	31	30	7	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V01	32	31	7	8'	8'		r	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	r	r
+V01	33	32	7	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V01	34	33	8	m	m		CODE:? (open)	CODE	-	E	code sign; value proposed from context only, not fixed by a clear duplicate (common rule: E)	{m}	{m}
+V01	35	34	9	2.	2.		d	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	d	d
+V01	36	35	9	1	1		a	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	a	a
+V01	37	36	9	5	5		i	CTX-LETTER	UNC	E	sign as seen gives another letter by key; letter supplied by sense (editorial) [pass-3 note: UNC]	i	L
+V01	38	37	9	1	1		a	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	a	a
+V01	39	38	10	4	4		g	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	g	g
+V01	40	39	10	1	3	Y	e	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	e	e
+V01	41	40	10	6'	6'		n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+V01	42	41	10	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+V01	43	42	10	J	J		e	CTX-P1	-	E	pass 1 and pass 2 disagree; not re-checked on image; chosen by sense (editorial)	e	E
+V01	44	43	11	9'	9'		t	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	t	
+V02	1	0	1	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V02	2	1	1	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+V02	3	2	1	7'	7'		p	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	p	p
+V02	4	3	1	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V02	5	4	1	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+V02	6	5	1	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V02	7	6	1	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V02	8	7	1	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+V02	9	8	1	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V02	10	9	2	5'	5'		l	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	l	
+V02	11	10	3	7'	7'		p	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	p	p
+V02	12	11	3	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+V02	13	12	3	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V02	14	13	3	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+V02	15	14	3	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V02	16	15	4	u	u		(che)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(che)	che
+V02	17	16	5	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V02	18	17	5	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+V02	19	18	5	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	s
+V02	20	19	5	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V02	21	20	6	9"	9"		t	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	t	
+V02	22	21	7	4	4		g	CTX-GH	UNC	E	bare 4 (=g by key) read h by sense (editorial) [pass-3 note: UNC]	g	H
+V02	23	22	7	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V02	24	23	7	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+V02	25	24	7	3	3		e	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	e	e
+V02	26	25	7	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+V02	27	26	7	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	s
+V02	28	27	7	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V02	29	28	7	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+V02	30	29	7	7	7		o	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	o	o
+V02	31	30	8	7"	7"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+V02	32	31	8	5"	5"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+V02	33	32	9	3'	3'		f	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	f	f
+V02	34	33	9	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V02	35	34	9	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+V02	36	35	9	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	t
+V02	37	36	9	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V02	38	37	10	1'	1'		b	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	b	
+V02	39	38	11	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+V02	40	39	11	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V02	41	40	12	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+V02	42	41	12	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+V02	43	42	12	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+V02	44	43	12	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+V02	45	44	13	1"	1"		NULL	CTX-LETTER	UNC	E	sign as seen gives another letter by key; letter supplied by sense (editorial) [pass-3 note: UNC]	°	P
+V02	46	45	13	8'	8'		r	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	r	r
+V02	47	46	13	7	7		o	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	o	o
+V03	1	0	1	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+V03	2	1	1	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V03	3	2	1	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+V03	4	3	1	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V03	5	4	1	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+V03	6	5	1	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+V03	7	6	1	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V03	8	7	2	9"	9"		t	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	t	
+V03	9	8	3	1	1'	Y	b	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	b	b
+V03	10	9	3	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+V03	11	10	3	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V03	12	11	3	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+V03	13	12	3	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V03	14	13	3	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+V03	15	14	3	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V03	16	15	3	6'	6'		n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+V03	17	16	3	9'	9'		t	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	t	t
+V03	18	17	3	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V03	19	18	4	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+V03	20	19	5	A	A		CODE:Papa? (probable)	CODE	-	E	code sign; value proposed from context only, not fixed by a clear duplicate (common rule: E)	{A}	{A}
+V03	21	20	6	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V03	22	21	7	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V03	23	22	7	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+V03	24	23	7	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V03	25	24	7	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+V03	26	25	7	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V03	27	26	7	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+V03	28	27	7	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V03	29	28	7	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+V03	30	29	7	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	s
+V03	31	30	7	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V03	32	31	7	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+V03	33	32	7	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+V03	34	33	8	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+V03	35	34	8	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V03	36	35	8	5	5		i	CTX-LETTER	UNC	E	sign as seen gives another letter by key; letter supplied by sense (editorial) [pass-3 note: UNC]	i	L
+V03	37	36	9	B	B		CODE:Imperatore? (probable)	CODE	-	E	code sign; value proposed from context only, not fixed by a clear duplicate (common rule: E)	{B}	{B}
+V03	38	37	10	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V03	39	38	11	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+V03	40	39	11	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V03	41	40	11	5	5		i	CTX-LETTER	UNC	E	sign as seen gives another letter by key; letter supplied by sense (editorial) [pass-3 note: UNC]	i	L
+V03	42	41	12	L	L		CODE:Duca (context)	CODE	-	E	code sign; value proposed from context only, not fixed by a clear duplicate (common rule: E)	{L}	{L}
+V04	1	0	1	&	&		CODE:et? (probable)	UNREAD	-	N	sign not read / no value	<&?>	<?>
+V04	2	1	2	D	D		CODE:pero? (candidate)	CODE	-	E	code sign; value proposed from context only, not fixed by a clear duplicate (common rule: E)	{D}	{D}
+V04	3	2	3	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+V04	4	3	3	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+V04	5	4	3	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V04	6	5	3	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+V04	7	6	3	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V04	8	7	4	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+V04	9	8	4	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+V04	10	9	4	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+V04	11	10	4	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	t
+V04	12	11	4	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+V04	13	12	5	9'	9'		t	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	t	
+V04	14	13	6	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V04	15	14	6	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+V04	16	15	7	7'	7'		p	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	p	p
+V04	17	16	7	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+V04	18	17	7	9'	9	Y	s	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	s	s
+V04	19	18	7	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V04	20	19	7	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+V04	21	20	8	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+V04	22	21	8	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+V04	23	22	8	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+V04	24	23	9	4	4		g	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	g	g
+V04	25	24	9	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V04	26	25	9	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V04	27	26	10	5'	5'		l	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	l	
+V04	28	27	11	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+V04	29	28	11	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V04	30	29	12	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+V04	31	30	12	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V04	32	31	12	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+V04	33	32	12	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V04	34	33	12	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+V04	35	34	12	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+V04	36	35	13	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+V04	37	36	13	7'	7'		p	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	p	p
+V04	38	37	13	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V04	39	38	13	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+V04	40	39	13	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+V04	41	40	13	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V04	42	41	13	8'	8'		r	CTX-UNC	UNC	E	key letter fits but pass-3 image could not confirm the sign/dot (editorial) [pass-3 note: UNC]	r	R
+V05	1	0	1	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+V05	2	1	1	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V05	3	2	1	6'	6'		n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+V05	4	3	1	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V05	5	4	1	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+V05	6	5	1	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V05	7	6	2	J	J		e	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	e	e
+V05	8	7	3	4	4		g	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	g	g
+V05	9	8	3	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+V05	10	9	3	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+V05	11	10	3	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+V05	12	11	3	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	s
+V05	13	12	3	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V05	14	13	4	5'	5'		l	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	l	
+V05	15	14	5	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+V05	16	15	5	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+V05	17	16	5	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+V05	18	17	5	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	m
+V05	19	18	5	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V05	20	19	6	9'	9'		t	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	t	
+V05	21	20	7	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+V05	22	21	7	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V05	23	22	8	u	u		(che)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(che)	che
+V05	24	23	9	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+V05	25	24	9	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V05	26	25	9	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+V05	27	26	9	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V05	28	27	9	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+V05	29	28	9	3	3		e	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	e	e
+V05	30	29	10	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+V05	31	30	10	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V05	32	31	11	5"	5"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+V05	33	32	12	9'	9'		t	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	t	
+V05	34	33	13	8	8		q	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	q	q
+V05	35	34	13	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+V05	36	35	13	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V05	37	36	13	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+V05	38	37	13	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+V05	39	38	13	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+V05	40	39	14	5'	5'		l	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	l	
+V05	41	40	15	2	2		c	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	c	c
+V05	42	41	15	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+V05	43	42	15	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+V05	44	43	15	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+V05	45	44	15	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+V06	1	0	1	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+V06	2	1	1	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V06	3	2	2	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+V06	4	3	2	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V06	5	4	3	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+V06	6	5	3	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V06	7	6	3	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+V06	8	7	3	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V06	9	8	3	6'	6'		n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+V06	10	9	3	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+V06	11	10	3	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+V06	12	11	3	5'	5'		l	CTX-UNC	UNC	E	key letter fits but pass-3 image could not confirm the sign/dot (editorial) [pass-3 note: UNC]	l	L
+V06	13	12	3	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V06	14	13	4	2'	2'		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+V06	15	14	4	#	#		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+V06	16	15	5	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+V06	17	16	5	3	3		e	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	e	e
+V06	18	17	5	6'	6'		n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+V06	19	18	5	4	4		g	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	g	g
+V06	20	19	5	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V06	21	20	5	6'	6'		n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+V06	22	21	5	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+V06	23	22	6	7'	7'		p	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	p	
+V06	24	23	7	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+V06	25	24	7	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V06	26	25	7	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+V06	27	26	7	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V06	28	27	7	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+V06	29	28	7	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	l
+V06	30	29	7	5	5		i	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	i	i
+V06	31	30	8	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+V06	32	31	8	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V06	33	32	9	7"	7"		NULL	CTX-LETTER	UNC	E	sign as seen gives another letter by key; letter supplied by sense (editorial) [pass-3 note: UNC]	°	P
+V06	34	33	9	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V06	35	34	9	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+V06	36	35	9	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+V06	37	36	9	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V06	38	37	10	7"	7'	Y	p	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	p	p
+V06	39	38	10	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V06	40	39	10	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+V06	41	40	10	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V06	42	41	10	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+V06	43	42	10	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V06	44	43	10	6'	6'		n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+V07	1	0	1	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+V07	2	1	1	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V07	3	2	2	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V07	4	3	2	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+V07	5	4	3	A	A		CODE:Papa? (probable)	CODE	-	E	code sign; value proposed from context only, not fixed by a clear duplicate (common rule: E)	{A}	{A}
+V07	6	5	4	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+V07	7	6	4	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V07	8	7	4	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+V07	9	8	4	7	7		o	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	o	o
+V07	10	9	5	J	J		e	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	e	
+V07	11	10	6	u	u		(che)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(che)	che
+V07	12	11	7	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+V07	13	12	7	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V07	14	13	7	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+V07	15	14	7	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+V07	16	15	7	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+V07	17	16	7	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V07	18	17	7	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+V07	19	18	7	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V07	20	19	8	1'	1'		b	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	b	
+V07	21	20	9	3	3		e	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	e	e
+V07	22	21	10	5'	5'		l	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	l	l
+V07	23	22	10	5	5		i	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	i	i
+V07	24	23	11	3'	3'		f	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	f	f
+V07	25	24	11	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+V07	26	25	11	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V07	27	26	11	6	6		m	CTX-MN	UNC	E	m/n chosen by sense; dot not seen or contradicts (editorial) [pass-3 note: UNC]	m	N
+V07	28	27	11	x'	x'		z	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	z	z
+V07	29	28	11	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V07	30	29	11	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+V07	31	30	11	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V07	32	31	12	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+V07	33	32	12	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V07	34	33	13	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+V07	35	34	13	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V07	36	35	13	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+V07	37	36	13	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	r
+V07	38	37	13	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V07	39	38	13	6	6		m	CTX-MN	UNC	E	m/n chosen by sense; dot not seen or contradicts (editorial) [pass-3 note: UNC]	m	N
+V07	40	39	13	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	n
+V07	41	40	13	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+V08	1	0	1	2.	2.		d	CTX-UNC	UNC	E	key letter fits but pass-3 image could not confirm the sign/dot (editorial) [pass-3 note: UNC]	d	D
+V08	2	1	1	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V08	3	2	2	2"	2"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+V08	4	3	3	8	8		q	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	q	q
+V08	5	4	3	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+V08	6	5	3	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V08	7	6	3	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+V08	8	7	3	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	l
+V08	9	8	3	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V08	10	9	4	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+V08	11	10	4	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+V08	12	11	4	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+V08	13	12	4	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+V08	14	13	4	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V08	15	14	4	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+V08	16	15	4	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V08	17	16	5	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V08	18	17	5	7	7		o	KEY-P2ONLY	-	S	sign from blind pass 2 with no aligned pass-1 sign; value by key; not re-checked on image in pass 3	o	o
+V08	19	18	6	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+V08	20	19	6	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+V08	21	20	6	6'	6'		n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+V08	22	21	7	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+V08	23	22	7	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+V08	24	23	8	8	8		q	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	q	q
+V08	25	24	8	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+V08	26	25	8	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V08	27	26	8	6	6		m	CTX-MN	UNC	E	m/n chosen by sense; dot not seen or contradicts (editorial) [pass-3 note: UNC]	m	N
+V08	28	27	8	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+V08	29	28	8	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+V08	30	29	9	#	#		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+V08	31	30	10	9'	9'		t	UNREAD	UNC	N	sign not read / no value [pass-3 note: UNC]	<9'?>	<?>
+V08	32	31	11	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+V08	33	32	11	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V08	34	33	11	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+V08	35	34	11	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+V08	36	35	11	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V08	37	36	11	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+V08	38	37	12	l	l		(per)	UNREAD	UNC	N	sign not read / no value [pass-3 note: UNC]	<l?>	<?>
+V09	1	0	1	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+V09	2	1	1	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V09	3	2	1	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+V09	4	3	1	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+V09	5	4	1	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V09	6	5	1	9"	9"		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+V09	7	6	1	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+V09	8	7	2	u	u		(che)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(che)	che
+V09	9	8	3	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+V09	10	9	3	2	3	Y	e	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	e	e
+V09	11	10	4	6'	6'		n	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	n	n
+V09	12	11	4	J	J		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V09	13	12	5	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+V09	14	13	5	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V09	15	14	5	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+V09	16	15	5	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V09	17	16	6	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V09	18	17	7	5"	5"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+V09	19	18	8	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V09	20	19	9	n	n		CODE:? (open)	CODE	-	E	code sign; value proposed from context only, not fixed by a clear duplicate (common rule: E)	{n}	{n}
+V09	21	20	10	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+V09	22	21	10	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V09	23	22	10	9	9		s	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	s	s
+V09	24	23	10	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V09	25	24	10	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+V09	26	25	10	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V09	27	26	10	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+V09	28	27	10	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+V09	29	28	11	u	u		(che)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(che)	che
+V09	30	29	12	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+V09	31	30	12	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V09	32	31	13	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+V09	33	32	13	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V09	34	33	13	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+V09	35	34	13	9"	9"		t	CTX-UNC	UNC	E	key letter fits but pass-3 image could not confirm the sign/dot (editorial) [pass-3 note: UNC]	t	T
+V09	36	35	13	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V10	1	0	1	b'	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+V10	2	1	1	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V10	3	2	1	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V10	4	3	1	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+V10	5	4	1	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V10	6	5	2	6'	6'		n	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	n	n
+V10	7	6	2	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V10	8	7	2	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+V10	9	8	2	b	b		REPEAT	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	~	l
+V10	10	9	2	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V10	11	10	3	5'	5'		l	NULL-CTX	-	E	single-dot/bare letter sign present but dropped as null by sense (editorial)	l	
+V10	12	11	4	1	1		a	CTX-LETTER	UNC	E	sign as seen gives another letter by key; letter supplied by sense (editorial) [pass-3 note: UNC]	a	B
+V10	13	12	4	x	x		u	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	u	u
+V10	14	13	4	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+V10	15	14	4	6'	6'		n	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	n	n
+V10	16	15	4	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V10	17	16	5	7"	7"		NULL	NULL-KEY	-	S	sign is in the key null set (double-dot digit, 2-dot-above, N, #, 0)	°	
+V10	18	17	6	4	4		g	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	g	g
+V10	19	18	6	8'	8'		r	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	r	r
+V10	20	19	6	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V10	21	20	6	9'	9'		t	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	t	t
+V10	22	21	6	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V10	23	22	6	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V10	24	23	7	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+V10	25	24	7	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V10	26	25	7	5'	5'		l	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	l	l
+V10	27	26	8	L	L		CODE:Duca (context)	CODE	-	E	code sign; value proposed from context only, not fixed by a clear duplicate (common rule: E)	{L}	{L}
+V10	28	27	9	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e
+V10	29	28	10	u	u		(che)	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	(che)	che
+V10	30	29	11	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+V10	31	30	11	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V10	32	31	12	2	2		c	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	c	c
+V10	33	32	12	7	7		o	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	o	o
+V10	34	33	12	6	6		m	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	m	m
+V10	35	34	12	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V10	36	35	12	6	6'	Y	n	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	n	n
+V10	37	36	12	2.	2.		d	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	d	d
+V10	38	37	12	5	5		i	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	i	i
+V10	39	38	12	1	1		a	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	a	a
+V10	40	39	12	9"	9"		t	KEY	IMG	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key [pass-3 note: IMG]	t	t
+V10	41	40	12	3	3		e	KEY	-	S	sign read on image (pass 2 blind, pass 1 agrees or pass-3 image check) and value given by key	e	e

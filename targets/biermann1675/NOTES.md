@@ -91,7 +91,7 @@ IV, 1640s-50s) or later (1680s-1730s). The 1670s keys tested and ruled out for t
 Lead: image 94/95, a German key of 1675 (endorsed "reçu le 18 ... 1675 à Stargard"). Its declared null row
 is the sign set of the Klingenberg letters, and 9 of 22 numbers in the 6 Feb Klingenberg letter (image 43R)
 fall on filled entries that fit (327 Nach, 117 durch, 220 Herzog, 393 Rath Biermann ...); the other 13 fall
-on slots left blank on the sheet. Not proven; the sheet may be an incomplete copy of the Klingenberg key.
+on slots left blank on the sheet. Not proven; the sheet may be an incomplete copy of the Klingenberg key. The Klingenberg key was later rebuilt from the letters themselves in `targets/klingenberg1675/` (12 Nov 2026) and is not this sheet as it stands: 117, 140, 200 and 224 differ.
 
 Not testable: 309 (wrapper "Jens Juel or Petkum to Sweden 1670-71", key too faint), 083/091 rotated,
 096/098, 092 (pre-1672), 281-284 and 287-290 (large later keys).
@@ -122,7 +122,7 @@ gap), and a comparison of the twelve letters read on both sides. Catalogue 465 n
 ## Remaining gaps
 
 - Letters under the image-55 key to Gioë in England and Schröder - blocker: not-attempted; every Høeg and Meyercron letter of this family is read (eleven here, 26 more in `dudout/`), so these are what is left of it.
-- Letters without a surviving key (Lilienkron, Gioë in Moscow, Reetz in Spain, Lindenow in Sweden, Klingenberg, Lincker, Meyercron 2 Jan, Høeg 21 June, Lente 21 June) - blocker: not-attempted; the whole key volume was swept and nothing fits (keyhunt.md), so the next move is a key rebuild from the ciphertext (large volumes per family) plus the cribs listed above.
+- Letters without a surviving key (Lilienkron, Gioë in Moscow, Reetz in Spain, Lindenow in Sweden, Klingenberg (since read in part with a rebuilt key: `targets/klingenberg1675/`), Lincker, Meyercron 2 Jan, Høeg 21 June, Lente 21 June) - blocker: not-attempted; the whole key volume was swept and nothing fits (keyhunt.md), so the next move is a key rebuild from the ciphertext (large volumes per family) plus the cribs listed above.
 - 23 March letter to Meyercron, p105.24: one open-square sign, most likely "l" - blocker: open-codes; one occurrence; Dudout's reading of the same letter (`dudout/texts/1675-03-23_meyercrone_reading.md`) and his 19 Paris letters are the retry material.
 
 ## Escalation

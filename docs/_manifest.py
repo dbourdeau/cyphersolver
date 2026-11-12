@@ -692,6 +692,11 @@ PAGES = [
          blurb='Four despatches from the Spanish envoy at Stockholm, each cipher passage with a contemporary decipherment in the margin (Brussels SEG 2559, DECODE R1012&ndash;R1015). The syllabic nomenclator key rebuilt earlier for the Balbases letters in the same volume was applied unchanged; it confirms the margins and supplies their illegible words, giving values to all but one of 1,716 groups. Sweden on the eve of the Scanian War.',
          quote='se tomar&aacute; resoluci&oacute;n en &eacute;l sobre el asistir o no a la Francia a mano armada',
          rights='Archives g&eacute;n&eacute;rales du Royaume, Brussels, via DECODE R1012&ndash;R1015'),
+    dict(slug='klingenberg1675', label='Biermann to Klingenberg 1675', year='1675', y=1675.3, place='Copenhagen &rarr; The Hague', st='partial', stt='read in part',
+         title='Biermann to Klingenberg: German cipher letters, 1675',
+         blurb='The Danish chancery secretary Conrad Biermann wrote to Paul von Klingenberg at The Hague in German, mixing clear text with a three-layer cipher of letter signs, a syllable table and numbered word codes. Malcolm McBratney, working with Claude, rebuilt the key from the letters alone and read eleven of them in part: 3,648 of 4,709 cipher tokens (77.5%) under maps frozen before each letter. It is a different key from the one that reads Biermann&rsquo;s letters to H&oslash;eg and Meyercron.',
+         quote='&ldquo;ohne flotte nicht zu practicieren stehet&rdquo;',
+         rights='Rigsarkivet, Copenhagen, TKUA, Tyske Kancelli, Conrad Biermanns kopibog 1675 and the Koncepter unit that follows it (Arkivalieronline); key, transcriptions and readings contributed by Malcolm McBratney with Claude'),
     dict(slug='beuningen1676', label='Van Beuningen to Fagel', year='1676', y=1676.4, place='London &rarr; Gaspar Fagel', st='partial', stt='key from adjacent plaintext, partial',
          title='Coenraad van Beuningen to Gaspar Fagel, 23 May/2 June 1676',
          blurb='First partial reading of a letter without a contemporary decipherment. The key was rebuilt from sibling interlinear glosses in Nationaal Archief inv. 248, 249 and 250. The French plan against Den Briel and Hellevoetsluis, Du Plat and a doubtful informer emerge; strict coverage is 264/278 (94.96%), with 265/278 (95.32%) only conditionally.',
@@ -3015,6 +3020,11 @@ PAGES = [
          blurb='Renard reports papal negotiations with the Duke of Alba and French military preparations.',
          quote='[de Sel]va et de Lansac. Sur lequel advis led[it] s[ieu]r Roy manda querir le nonce du pap',
          author='George Lasry'),
+    dict(slug='pagni444', label='Anonymous to Pagni', year='c. 1555&ndash;57', y=1556.1, place='[not given] &rarr; Florence', st='partial', stt='read in part',
+         title='Anonymous cipher letter to Cristiano Pagni, c. 1555&ndash;57',
+         blurb='One leaf of cipher in the Medici archive, addressed to Cosimo I&rsquo;s secretary Cristiano Pagni, with no signature, place or year. Malcolm McBratney, working with Claude, recovered a paired figure alphabet from the ciphertext alone and read 1,369 of its 1,514 signs (90.4%): a report on Franco-papal dealings, a league and the pledging of Cervia and Ravenna. All eleven capital codes stay without a value, and the date is open between late 1555 and early 1557.',
+         quote='&ldquo;per vedere in che parava il negotio&rdquo;',
+         rights='Archivio di Stato di Firenze, Mediceo del Principato 444, c. 315r-v; key, transcription and reading contributed by Malcolm McBratney with Claude'),
     dict(slug='rondinelli1590', label='Ercole Rondinelli to Duke of Nevers, 11&hellip;', year='1590', y=1590.0, place='BnF Français 3613', st='solved', stt='read',
          title='Ercole Rondinelli to Duke of Nevers, 11 November 1590',
          blurb='Rondinelli describes Catholic dissatisfaction, preparations against Paris, and doubts about the Duke of Mena protecting the city.',
@@ -3474,3 +3484,5 @@ IMAGES['fiedmond1779'] = ('fiedmond1779_lead.jpg', 'The letter of 19 July 1779 o
 IMAGES['peking1912'] = None
 IMAGES['nanking1930'] = None
 IMAGES['vanhalen1840'] = None
+IMAGES['pagni444'] = ('pagni444_lead.jpg', 'c. 315r: the clear opening lines and the first lines of cipher, which begin &ldquo;mi sono intertenut&hellip;&rdquo;', 'Archivio di Stato di Firenze, Mediceo del Principato 444, c. 315r, via the archive&rsquo;s IIIF server')
+IMAGES['klingenberg1675'] = ('klingenberg1675_lead.jpg', 'Image 209R (p. 205), letter of 1 June 1675, lines 2&ndash;9 of the cipher: letter signs and numbers between clear German', 'Rigsarkivet, Copenhagen, TKUA, Tyske Kancelli, Conrad Biermanns kopibog 1675, image 209 (Arkivalieronline, api.rigsarkivet.dk)')

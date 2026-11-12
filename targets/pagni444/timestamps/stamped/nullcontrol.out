@@ -1,0 +1,26 @@
+== MdP 444: hs3.py (b34 annealer), Italian quad.pkl, 4 restarts x 800,000 iters, lam 0.3, seed 11, identical for every stream ==
+perm1  restarts 4  tot/n per restart [-5.113, -5.144, -5.094, -5.105]  quad/n per restart [-4.917, -4.963, -4.866, -4.889]  BEST tot/n -5.094  best-run quad/n -4.866  text: uostaiaunaituussaueniaisouoeaiutoasiostutauuuneeinanniooaniatoeusaioii
+perm2  restarts 4  tot/n per restart [-5.152, -5.141, -5.111, -5.136]  quad/n per restart [-4.873, -4.966, -4.816, -4.83]  BEST tot/n -5.111  best-run quad/n -4.816  text: nnnoiiinuaniunouniunuountaaaiaiioniostiiitiuonuuinistnauainionuoaaaaan
+perm3  restarts 4  tot/n per restart [-5.129, -5.134, -5.143, -5.165]  quad/n per restart [-4.943, -4.928, -4.939, -4.982]  BEST tot/n -5.129  best-run quad/n -4.943  text: tiinoieettioeuuiriitoonuiinnnueeeiiruiosiiuruouaaurniennuuiinrnuntiuot
+perm4  restarts 4  tot/n per restart [-5.136, -5.158, -5.082, -5.089]  quad/n per restart [-4.965, -4.944, -4.889, -4.821]  BEST tot/n -5.082  best-run quad/n -4.889  text: uaiieasurataeeioiantiioreeerinitietunaitaitieatruranriniretuturriuietr
+perm5  restarts 4  tot/n per restart [-5.156, -5.157, -5.119, -5.105]  quad/n per restart [-4.972, -4.973, -4.891, -4.792]  BEST tot/n -5.105  best-run quad/n -4.792  text: naauuniiauuinuiusiinandioooiiiiisiosuuiiaiuoiiiniauiiiiiniiidiniiiuiii
+real   restarts 4  tot/n per restart [-4.3, -4.508, -4.495, -4.571]  quad/n per restart [-4.196, -4.377, -4.326, -4.349]  BEST tot/n -4.3  best-run quad/n -4.196  text: linisonointertenusetaunotinoaadestoilariicuiestatdelnaracueselidisarti
+real best tot/n -4.300 (quad/n -4.196); control bests tot/n [-5.094, -5.111, -5.129, -5.082, -5.105]; best control -5.082; real minus best control = 0.782 tot/n; controls >= real: 0 of 5
+real best key vs hand key: 1172/1345 single-letter units decode identically (87.1%)
+
+== Muzio c.3r pass 2 (861 tokens, 45 types): hom.c (b44), quad.bin from wave14 quad.pkl, 12 restarts x 400,000 iters, T0 0.4, seed 7; lam 0.3 (b44 setting) and 0.05 ==
+lam 0.3 perm1  best score/char -4.8859  quad-only/char -4.749  iieluireesanotteatiiettoieuallellaauitenteeanoaruiolauretrinuiluidreet
+lam 0.3 perm2  best score/char -4.9282  quad-only/char -4.809  seaatoaooiaaieroeeseailleneniinioisiilueluelriioaoaidiedionnieaanieart
+lam 0.3 perm3  best score/char -4.8718  quad-only/char -4.750  aoiiootraleeailrenereerniaeunotutiierunioneteuorauueneraeleialtristree
+lam 0.3 perm4  best score/char -4.8738  quad-only/char -4.755  tiunuieaiaaudidiaoitreuaatenuasaeineieolaueitetliintenaoneniiedeiderdo
+lam 0.3 perm5  best score/char -4.8530  quad-only/char -4.726  nrreedininattateuuiteineaiuiuseannsaeauunisuolteiuisealsusaireeaorunur
+lam 0.3 real   best score/char -4.0491  quad-only/char -4.013  dalacorteetornaitouncosierdiailqualsointendechietuespeditopersualicara
+lam 0.3: real -4.0491 vs best control -4.8530 (gap 0.804); quad-only real -4.013 vs best control -4.726 (gap 0.713); controls >= real: 0 of 5
+lam 0.05 perm1  best score/char -4.7350  quad-only/char -4.620  nnnoioiiiinuiuainunonaaiinintinoonuiuaniainniinuiiionioiuoiiiiiiosonna
+lam 0.05 perm2  best score/char -4.7333  quad-only/char -4.630  iuianuiuuoiiounuiiiiaoinininoorauaiaoinuiuunnaouiuionoinaunnooianouann
+lam 0.05 perm3  best score/char -4.7241  quad-only/char -4.631  uunnuuiouiinnoinnaioinoeiniaeuaiainnoiaiuoianiuouiinonouninnuiaondainn
+lam 0.05 perm4  best score/char -4.7008  quad-only/char -4.617  uiunoniiiiiudidiaonuiiuaauenuitaainiiauuiuanuiutinluinionininatiidiido
+lam 0.05 perm5  best score/char -4.7017  quad-only/char -4.606  iiinnoeianniininoouinuenuioioaguiiaunuooiualiainuoiinuaioauuinnniioioi
+lam 0.05 real   best score/char -4.0296  quad-only/char -4.011  dalacorteetornaetouncorierdiailqualsointendecheetuespeditopersualicara
+lam 0.05: real -4.0296 vs best control -4.7008 (gap 0.671); quad-only real -4.011 vs best control -4.606 (gap 0.595); controls >= real: 0 of 5
+Muzio real best decode vs b44 hand key (single-letter and doubled-letter key values, 796 units): lam 0.3 774/796 = 97.2%; lam 0.05 777/796 = 97.6% (inline python, see LOG). Caveat: the pass-2 sign split was made by a reader who already knew the key, so the token stream itself carries that knowledge.
