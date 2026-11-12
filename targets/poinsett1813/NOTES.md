@@ -85,6 +85,16 @@ this country ..."; P4 "... of this govern-ment [901] the ..."; P6 "... re-[12]-p
 [428] of ... the govern-ment". No sentence reads yet, so nothing is claimed as read.
 (Superseded 11 Nov 2026: with Weber's WE025 the letter reads in part; see the section "WE025 (Beling, 11 Nov 2026)".)
 
+### Claims review by a second reader (12 Nov 2026)
+
+- The committed key file has 341 lines, 339 of them rows of the table (1800 and 1885 are out of range).
+- 293 word places: "B. Ayres" is one place, and the "the" of "[?to the]" has no group and is not a place.
+- The separate decoder used the contributor's table rows on the project's earlier transcription: it shows the reading
+  does not depend on his transcription, not that the table is confirmed apart from him.
+- The Full-texts decryption of the 1814 letter is the earlier alignment file (462 = should, group 39 blank); the
+  WE025 decode (39 = should, 462 1495 = dra-w) is `beling/tests/heldout_1814_result.txt`.
+- The contributor's reading header and the profile step of 11 Nov keep "pp. 470-480" and 0.916: his text, see above.
+
 ## Remaining gaps
 - P0, f. 37r (frame 0092), about three lines of groups - blocker: illegible; the microfilm frame is nearly black;
   needs a new scan of the original (NARA RG 59) or the 1813 duplicate if one survives
