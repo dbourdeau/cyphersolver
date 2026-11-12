@@ -53,6 +53,7 @@ NEW_PLACES = {
     'Regensburg': [49.013, 12.102], 'Wolfenbüttel': [52.162, 10.537], 'Antwerp': [51.219, 4.402], 'Darmstadt': [49.873, 8.651], 'Münster': [51.962, 7.626],
     'Leszno': [51.8457, 16.5753], 'Sárospatak': [48.3188, 21.5683], 'Tortosa': [40.812, 0.521], 'Almazán': [41.486, -2.531],
     'Nanjing': [32.060, 118.797], 'Lhasa': [29.652, 91.172],  # nanking1930: Nanking to the Dalai Lama at Lhasa, 1930
+    'Manila': [14.5995, 120.9842], 'Fort Leavenworth': [39.3558, -94.9170],  # mauborgne1915: Manila to the Army Signal School, 1915
 }
 # words in a route that stand for a gazetteer place
 ALIASES = {

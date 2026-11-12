@@ -5075,6 +5075,15 @@
    "by": "Malcolm McBratney, with AI agents",
    "year": 1676,
    "note": "Homophonic number table; v3 from the 1675 gloss and 14 training lines of image 324, frozen and applied to nine pages of the French memorial (546 of 764 word units strict); v9, the same table corrected and extended by 36 rows, applied to one Swedish despatch (24 of 30). 43.5% of the letter values on the memorial's held-out pages come from context, not the gloss."
+  },
+  {
+   "id": "k-mauborgne1915-fieldmanual",
+   "label": "Odd-shift running key from Engineer Field Manual (Professional Papers of the Corps of Engineers No. 29) Part V, paragraphs 1-2, p. 357 (499 letters, 'Field fortification' replaced by 'It'), with the rule c = p - (2(k mod 13)+1) mod 26",
+   "kind": "scholar's key",
+   "by": "Jacob Houtrouw, with an AI model",
+   "year": 1915,
+   "found": 2026,
+   "note": "Found on 11 Nov 2026 by search over candidate texts from the ciphertext's odd-shift signal (contributor's record); the key text is also in the third (1909) edition, p. 357, checked here. Reproduces 489 of 499 letters; ten slips unexplained."
   }
  ],
  "links": [
@@ -8197,6 +8206,12 @@
    "target": "bonde1676",
    "how": "rebuilt from",
    "note": "key v3 applied unchanged to the memorial of 1676, key v9 to the despatch of 1677; read in part"
+  },
+  {
+   "key": "k-mauborgne1915-fieldmanual",
+   "target": "mauborgne1915",
+   "how": "rebuilt from",
+   "note": "key text and rule recovered from the ciphertext by the contributor, applied here with an independent decoder (489 of 499 letters, 495 odd-shift positions)"
   }
  ],
  "sources": [
