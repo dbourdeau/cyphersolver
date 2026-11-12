@@ -44373,6 +44373,948 @@
    "scored": "sweep",
    "repository": "estense",
    "as_of": "2026-11-12"
+  },
+  {
+   "id": 2554,
+   "counted": true,
+   "year": 1486,
+   "date": "22 Jun 1486",
+   "title": "Piero Capponi, Florentine commissario with the League army, to Lorenzo de' Medici, 22 Jun 1486: letter largely in sign cipher, bare (MAP XLIII doc. 8)",
+   "correspondents": "Piero Capponi -> Lorenzo de' Medici",
+   "place": "League camp near Rome (Barons' War)",
+   "language": "Italian (sign cipher)",
+   "region": "Italy",
+   "period": "15th century",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza XLIII, doc. 8 (cc. 18r-19v)",
+   "folio_note": "Image positions 30, 31, 32, 33 (viewer id 56217 on). 3.3 pages: pos 30 and 31 each a full page of about 32 lines of continuous sign cipher, pos 32-33 the rest; about 110 lines in all, opening with a short clear salutation.",
+   "cls": "A",
+   "status": "Bare on the images viewed 13 Nov 2026 (no interlinear, marginal or foot decipherment). Filza XLIII holds the Capponi camp letters of 1486: docs 6 and 13 are glossed between the lines and were printed from their glosses by Pontieri; doc 4 carries a partial gloss and is not included. Date: Lettere di Lorenzo IX (ed. Butters) cites \"P. Capponi a Lorenzo, 22 giugno, MAP, XLIII, 8\" for the camp at Porcareccia (Google Books snippet, trackB wave33). Hold before promotion to catalogue.json (R4 check, 12 Nov 2026): the notes of the printed Lettere di Lorenzo VII-IX (ed. Fubini, Rubinstein, Mallett, Butters), which cite incoming MAP letters, were not reachable, so the edition and prior-art claim is not complete until they are checked.",
+   "why": "The Florentine commissario's secret reports from the papal-war camp in summer 1486, the climax of the Barons' War; the glossed sisters show the content is military and diplomatic.",
+   "importance": 4,
+   "solvability": 4,
+   "difficulty": 2,
+   "score_note": "Scored from the images viewed during the b169 backfill pass, 13 Nov 2026 (first found by the Code Breaking project's sweep5 paging of 11 Nov 2026)",
+   "verify": "Transcribe doc. 8 at 1272 px; test the doc 6/13 gloss key and Vito's Capponi key; check the Dieci di Balia Responsive 37 (Capponi's parallel public letters) for overlap.",
+   "links": [
+    {
+     "label": "MAP filza XLIII doc. 8 (viewer)",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=56217"
+    },
+    {
+     "label": "IIIF image pos 30",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100043/A0000030.ptif/full/1272,/0/default.jpg"
+    },
+    {
+     "label": "filza search",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=43&d=8&c="
+    }
+   ],
+   "seen": "image",
+   "source": "ASF Mediceo avanti il Principato images (MAP filza paging), b169 backfill, Nov 2026",
+   "prior_art": "open as far as checked (13 Nov 2026): DECODE live search 'Capponi' 0 records; Tomokiyo italian.htm nothing; Vito 2025 deciphers no letter; Pontieri prints only the glossed docs.",
+   "needs_archive_scan": "no",
+   "access_note": "scans public on the ASF MAP site, no login, curl works; IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (1272 px max)",
+   "vetting": {
+    "date": "2026-11-13",
+    "by": "claude cloud sweep 13 Nov b169_backfill",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP filza XLIII pos 30, 31, 32, 33 via IIIF (e.g. https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100043/A0000030.ptif), viewed at 450-700 px on 13 Nov 2026; doc 8 also at 700 px side by side",
+     "extent": "3.3 pages: pos 30 and 31 each a full page of about 32 lines of continuous sign cipher, pos 32-33 the rest; about 110 lines in all, opening with a short clear salutation",
+     "cipher": "line-sign cipher of Latin-letter-like signs, digits and marks, no word division visible. Nothing is written above, below or beside the cipher lines; no decipherment slip is filed next to it (neighbours doc 7 and 9 checked on the sweep5 sheets)."
+    },
+    "prior_art": {
+     "decode": "de-crypt.org/decrypt-web/RecordsList?search=Capponi returned 0 records and search='Mediceo avanti' 0 (13 Nov 2026); search='Firenze' lists only ASFi Cifrari serie II vol. 9 keys (17th-18th c.). [Checked for filza XLIII, doc. 8 (cc. 18r-19v), 22 Jun 1486.]",
+     "tomokiyo": "cryptiana.web.fc2.com/code/italian.htm fetched 13 Nov 2026 (50,193 bytes) and grepped: no 'Capponi'; its 1480s Italian items are Ferrara-Hungary letters (Sadoleto, Beatrice) and the Forlì 1428 informant, nothing from MAP filza XLIII. Repo copy unsolved.htm: no 'Capponi'. [Checked for filza XLIII, doc. 8 (cc. 18r-19v), 22 Jun 1486.]",
+     "lasry": "Repo docs/lasry/ (56 folders) has no Florentine 15th-c. item; web search 'George Lasry Medici cipher letters 1480s ... Archivio di Stato di Firenze' returned the Mary Stuart papers and HistoCrypt items, nothing on MAP filza XLIII. [Checked for filza XLIII, doc. 8 (cc. 18r-19v), 22 Jun 1486.]",
+     "edition": "No edition prints the letters to Lorenzo: Lettere di Lorenzo (ed. Fubini, Rubinstein, Mallett, Butters) prints his own letters and cites incoming ones in notes. Lettere IX (1485-86) is not online; Google Books snippets (trackB wave33, 11 Nov 2026) show it citing MAP XLIII 3, 6, 8 (dateline only) and 13, and quoting only the glossed doc 6. Pontieri 1970-77 prints XLIII cc. 3, 14, 23, 29, 34 (glossed letters) from their interlinear decipherments; snippet probes for filza 43 c. 18 returned nothing. Lettere IX notes were not opened on paper. [Checked for filza XLIII, doc. 8 (cc. 18r-19v), 22 Jun 1486.]",
+     "literature": "Vito, 'A Florentine polyalphabetic cipher in the 15th century', HistoCrypt 2025: one Capponi key (Misc. Repubblicana 11, fasc. 292), no letters deciphered (fetch summary; the PDF host reset the connection on 13 Nov and was not retried). Web searches on Capponi, the 1486 camp and MAP XLIII found no decipherment. [Checked for filza XLIII, doc. 8 (cc. 18r-19v), 22 Jun 1486.]"
+    },
+    "key_check": "Same sign set as the glossed sisters doc 6 (pos 24-26, 7 Jun 1486) and doc 13 (pos 48-49) in the same filza. This project (trackB wave37, 11 Nov 2026) rebuilt 22 signs from doc 13 and the control on doc 6 matched the gloss on 511 of 561 letters (91.1%); not yet applied to doc 8 in full.",
+    "duplicates": "Searched catalogue.json, research/leads.json, SOLVED_CATALOGUE.md and targets/*/NOTES.md for 'Capponi', 'XLIII', 'f=43&d=', '00100043': Capponi hits are other letters (Luigi Capponi 1550 lead 2326; Vespucci and Capponi 1494 lead 2383; MAP LXXII entries); filza XLIII is in no row or research sweep.",
+    "verdict": "open",
+    "searches": [
+     {
+      "query": "Piero Capponi Lorenzo de' Medici 1486 lettera cifra decifrata \"XLIII\"",
+      "result": "Vito HistoCrypt 2025 PDF, Warwick 'Italian elites' prosopography pages, Perrens history; nothing deciphering a Capponi 1486 letter"
+     },
+     {
+      "query": "Capponi commissario campo 1486 guerra dei baroni lettere cifrate Lorenzo Mediceo avanti il Principato",
+      "result": "Wikipedia Piero Capponi, Warwick intro (a prosopography, no texts), Uniud 'La congiura' PDF; no transcription of the camp letters"
+     },
+     {
+      "query": "Marco Vito Florentine polyalphabetic cipher 15th century Capponi HistoCrypt",
+      "result": "the HistoCrypt 2025 paper record (dspace.ut.ee); per wave33's summary it cites only Misc. Repubblicana 11 and reads no letter"
+     },
+     {
+      "query": "wave33 (11 Nov 2026) Google Books probes 'filza 43' with the carte of doc. 8 and its date",
+      "result": "no hit; only cc. 3, 14, 23, 29, 34 (glossed) cited by Pontieri"
+     }
+    ]
+   },
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 2555,
+   "counted": true,
+   "year": 1486,
+   "date": "2 Aug 1486",
+   "title": "Piero Capponi, Florentine commissario with the League army, to Lorenzo de' Medici, 2 Aug 1486: letter largely in sign cipher, bare (MAP XLIII doc. 10)",
+   "correspondents": "Piero Capponi -> Lorenzo de' Medici",
+   "place": "League camp near Rome (Barons' War)",
+   "language": "Italian (sign cipher)",
+   "region": "Italy",
+   "period": "15th century",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza XLIII, doc. 10 (c. 22r-v)",
+   "folio_note": "Image positions 36, 37 (viewer id 56223 on). c. 22r about 35 lines: clear opening, then sign cipher in long runs between clear phrases; verso shorter.",
+   "cls": "B",
+   "status": "Bare on the images viewed 13 Nov 2026 (no interlinear, marginal or foot decipherment). Filza XLIII holds the Capponi camp letters of 1486: docs 6 and 13 are glossed between the lines and were printed from their glosses by Pontieri; doc 4 carries a partial gloss and is not included. Date: date read on the leaf by trackB sweep5 (11 Nov 2026). Hold before promotion to catalogue.json (R4 check, 12 Nov 2026): the notes of the printed Lettere di Lorenzo VII-IX (ed. Fubini, Rubinstein, Mallett, Butters), which cite incoming MAP letters, were not reachable, so the edition and prior-art claim is not complete until they are checked.",
+   "why": "The Florentine commissario's secret reports from the papal-war camp in summer 1486, the climax of the Barons' War; the glossed sisters show the content is military and diplomatic.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Scored from the images viewed during the b169 backfill pass, 13 Nov 2026 (first found by the Code Breaking project's sweep5 paging of 11 Nov 2026)",
+   "verify": "Transcribe doc. 10 at 1272 px; test the doc 6/13 gloss key and Vito's Capponi key; check the Dieci di Balia Responsive 37 (Capponi's parallel public letters) for overlap.",
+   "links": [
+    {
+     "label": "MAP filza XLIII doc. 10 (viewer)",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=56223"
+    },
+    {
+     "label": "IIIF image pos 36",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100043/A0000036.ptif/full/1272,/0/default.jpg"
+    },
+    {
+     "label": "filza search",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=43&d=10&c="
+    }
+   ],
+   "seen": "image",
+   "source": "ASF Mediceo avanti il Principato images (MAP filza paging), b169 backfill, Nov 2026",
+   "prior_art": "open as far as checked (13 Nov 2026): DECODE live search 'Capponi' 0 records; Tomokiyo italian.htm nothing; Vito 2025 deciphers no letter; Pontieri prints only the glossed docs.",
+   "needs_archive_scan": "no",
+   "access_note": "scans public on the ASF MAP site, no login, curl works; IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (1272 px max)",
+   "vetting": {
+    "date": "2026-11-13",
+    "by": "claude cloud sweep 13 Nov b169_backfill",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP filza XLIII pos 36, 37 via IIIF (e.g. https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100043/A0000036.ptif), viewed at 450-700 px on 13 Nov 2026; doc 8 also at 700 px side by side",
+     "extent": "c. 22r about 35 lines: clear opening, then sign cipher in long runs between clear phrases; verso shorter",
+     "cipher": "sign cipher with small superscript letters over many signs, a different look from doc 8. Nothing is written above, below or beside the cipher lines; no decipherment slip is filed next to it (neighbours doc 9 and 11 checked on the sweep5 sheets)."
+    },
+    "prior_art": {
+     "decode": "de-crypt.org/decrypt-web/RecordsList?search=Capponi returned 0 records and search='Mediceo avanti' 0 (13 Nov 2026); search='Firenze' lists only ASFi Cifrari serie II vol. 9 keys (17th-18th c.). [Checked for filza XLIII, doc. 10 (c. 22r-v), 2 Aug 1486.]",
+     "tomokiyo": "cryptiana.web.fc2.com/code/italian.htm fetched 13 Nov 2026 (50,193 bytes) and grepped: no 'Capponi'; its 1480s Italian items are Ferrara-Hungary letters (Sadoleto, Beatrice) and the Forlì 1428 informant, nothing from MAP filza XLIII. Repo copy unsolved.htm: no 'Capponi'. [Checked for filza XLIII, doc. 10 (c. 22r-v), 2 Aug 1486.]",
+     "lasry": "Repo docs/lasry/ (56 folders) has no Florentine 15th-c. item; web search 'George Lasry Medici cipher letters 1480s ... Archivio di Stato di Firenze' returned the Mary Stuart papers and HistoCrypt items, nothing on MAP filza XLIII. [Checked for filza XLIII, doc. 10 (c. 22r-v), 2 Aug 1486.]",
+     "edition": "No edition prints the letters to Lorenzo: Lettere di Lorenzo (ed. Fubini, Rubinstein, Mallett, Butters) prints his own letters and cites incoming ones in notes. Lettere IX (1485-86) is not online; Google Books snippets (trackB wave33, 11 Nov 2026) show it citing MAP XLIII 3, 6, 8 (dateline only) and 13, and quoting only the glossed doc 6. Pontieri 1970-77 prints XLIII cc. 3, 14, 23, 29, 34 (glossed letters) from their interlinear decipherments; snippet probes for filza 43 c. 22 returned nothing. Lettere IX notes were not opened on paper. [Checked for filza XLIII, doc. 10 (c. 22r-v), 2 Aug 1486.]",
+     "literature": "Vito, 'A Florentine polyalphabetic cipher in the 15th century', HistoCrypt 2025: one Capponi key (Misc. Repubblicana 11, fasc. 292), no letters deciphered (fetch summary; the PDF host reset the connection on 13 Nov and was not retried). Web searches on Capponi, the 1486 camp and MAP XLIII found no decipherment. [Checked for filza XLIII, doc. 10 (c. 22r-v), 2 Aug 1486.]"
+    },
+    "key_check": "No glossed sister with this superscript-letter system seen in the filza. Vito (HistoCrypt 2025) prints a partly preserved Capponi key of c. 1487 (ASF Miscellanea Repubblicana 11, fasc. 292) with three substitutes per letter; not tested here.",
+    "duplicates": "Searched catalogue.json, research/leads.json, SOLVED_CATALOGUE.md and targets/*/NOTES.md for 'Capponi', 'XLIII', 'f=43&d=', '00100043': Capponi hits are other letters (Luigi Capponi 1550 lead 2326; Vespucci and Capponi 1494 lead 2383; MAP LXXII entries); filza XLIII is in no row or research sweep.",
+    "verdict": "open",
+    "searches": [
+     {
+      "query": "Piero Capponi Lorenzo de' Medici 1486 lettera cifra decifrata \"XLIII\"",
+      "result": "Vito HistoCrypt 2025 PDF, Warwick 'Italian elites' prosopography pages, Perrens history; nothing deciphering a Capponi 1486 letter"
+     },
+     {
+      "query": "Capponi commissario campo 1486 guerra dei baroni lettere cifrate Lorenzo Mediceo avanti il Principato",
+      "result": "Wikipedia Piero Capponi, Warwick intro (a prosopography, no texts), Uniud 'La congiura' PDF; no transcription of the camp letters"
+     },
+     {
+      "query": "Marco Vito Florentine polyalphabetic cipher 15th century Capponi HistoCrypt",
+      "result": "the HistoCrypt 2025 paper record (dspace.ut.ee); per wave33's summary it cites only Misc. Repubblicana 11 and reads no letter"
+     },
+     {
+      "query": "wave33 (11 Nov 2026) Google Books probes 'filza 43' with the carte of doc. 10 and its date",
+      "result": "no hit; only cc. 3, 14, 23, 29, 34 (glossed) cited by Pontieri"
+     }
+    ]
+   },
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 2556,
+   "counted": true,
+   "year": 1486,
+   "date": "13 Aug 1486",
+   "title": "Piero Capponi, Florentine commissario with the League army, to Lorenzo de' Medici, 13 Aug 1486: letter largely in sign cipher, bare (MAP XLIII doc. 12)",
+   "correspondents": "Piero Capponi -> Lorenzo de' Medici",
+   "place": "League camp near Rome (Barons' War)",
+   "language": "Italian (sign cipher)",
+   "region": "Italy",
+   "period": "15th century",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza XLIII, doc. 12 (cc. 26r-27r)",
+   "folio_note": "Image positions 44, 45, 46 (viewer id 56231 on). c. 26r mostly clear (about 25 lines), then about 8 lines of sign cipher at the foot; further cipher on 26v-27r (about 55 cipher lines in all by the sweep count).",
+   "cls": "B",
+   "status": "Bare on the images viewed 13 Nov 2026 (no interlinear, marginal or foot decipherment). Filza XLIII holds the Capponi camp letters of 1486: docs 6 and 13 are glossed between the lines and were printed from their glosses by Pontieri; doc 4 carries a partial gloss and is not included. Date: dated \"apud pontem ...\", 13 Aug 1486, read on the leaf by trackB sweep5. Hold before promotion to catalogue.json (R4 check, 12 Nov 2026): the notes of the printed Lettere di Lorenzo VII-IX (ed. Fubini, Rubinstein, Mallett, Butters), which cite incoming MAP letters, were not reachable, so the edition and prior-art claim is not complete until they are checked.",
+   "why": "The Florentine commissario's secret reports from the papal-war camp in summer 1486, the climax of the Barons' War; the glossed sisters show the content is military and diplomatic.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Scored from the images viewed during the b169 backfill pass, 13 Nov 2026 (first found by the Code Breaking project's sweep5 paging of 11 Nov 2026)",
+   "verify": "Transcribe doc. 12 at 1272 px; test the doc 6/13 gloss key and Vito's Capponi key; check the Dieci di Balia Responsive 37 (Capponi's parallel public letters) for overlap.",
+   "links": [
+    {
+     "label": "MAP filza XLIII doc. 12 (viewer)",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=56231"
+    },
+    {
+     "label": "IIIF image pos 44",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100043/A0000044.ptif/full/1272,/0/default.jpg"
+    },
+    {
+     "label": "filza search",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=43&d=12&c="
+    }
+   ],
+   "seen": "image",
+   "source": "ASF Mediceo avanti il Principato images (MAP filza paging), b169 backfill, Nov 2026",
+   "prior_art": "open as far as checked (13 Nov 2026): DECODE live search 'Capponi' 0 records; Tomokiyo italian.htm nothing; Vito 2025 deciphers no letter; Pontieri prints only the glossed docs.",
+   "needs_archive_scan": "no",
+   "access_note": "scans public on the ASF MAP site, no login, curl works; IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (1272 px max)",
+   "vetting": {
+    "date": "2026-11-13",
+    "by": "claude cloud sweep 13 Nov b169_backfill",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP filza XLIII pos 44, 45, 46 via IIIF (e.g. https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100043/A0000044.ptif), viewed at 450-700 px on 13 Nov 2026; doc 8 also at 700 px side by side",
+     "extent": "c. 26r mostly clear (about 25 lines), then about 8 lines of sign cipher at the foot; further cipher on 26v-27r (about 55 cipher lines in all by the sweep count)",
+     "cipher": "superscript-letter sign cipher as in doc 10. Nothing is written above, below or beside the cipher lines; no decipherment slip is filed next to it (neighbours doc 11 and 13 checked on the sweep5 sheets)."
+    },
+    "prior_art": {
+     "decode": "de-crypt.org/decrypt-web/RecordsList?search=Capponi returned 0 records and search='Mediceo avanti' 0 (13 Nov 2026); search='Firenze' lists only ASFi Cifrari serie II vol. 9 keys (17th-18th c.). [Checked for filza XLIII, doc. 12 (cc. 26r-27r), 13 Aug 1486.]",
+     "tomokiyo": "cryptiana.web.fc2.com/code/italian.htm fetched 13 Nov 2026 (50,193 bytes) and grepped: no 'Capponi'; its 1480s Italian items are Ferrara-Hungary letters (Sadoleto, Beatrice) and the Forlì 1428 informant, nothing from MAP filza XLIII. Repo copy unsolved.htm: no 'Capponi'. [Checked for filza XLIII, doc. 12 (cc. 26r-27r), 13 Aug 1486.]",
+     "lasry": "Repo docs/lasry/ (56 folders) has no Florentine 15th-c. item; web search 'George Lasry Medici cipher letters 1480s ... Archivio di Stato di Firenze' returned the Mary Stuart papers and HistoCrypt items, nothing on MAP filza XLIII. [Checked for filza XLIII, doc. 12 (cc. 26r-27r), 13 Aug 1486.]",
+     "edition": "No edition prints the letters to Lorenzo: Lettere di Lorenzo (ed. Fubini, Rubinstein, Mallett, Butters) prints his own letters and cites incoming ones in notes. Lettere IX (1485-86) is not online; Google Books snippets (trackB wave33, 11 Nov 2026) show it citing MAP XLIII 3, 6, 8 (dateline only) and 13, and quoting only the glossed doc 6. Pontieri 1970-77 prints XLIII cc. 3, 14, 23, 29, 34 (glossed letters) from their interlinear decipherments; snippet probes for filza 43 c. 26 returned nothing. Lettere IX notes were not opened on paper. [Checked for filza XLIII, doc. 12 (cc. 26r-27r), 13 Aug 1486.]",
+     "literature": "Vito, 'A Florentine polyalphabetic cipher in the 15th century', HistoCrypt 2025: one Capponi key (Misc. Repubblicana 11, fasc. 292), no letters deciphered (fetch summary; the PDF host reset the connection on 13 Nov and was not retried). Web searches on Capponi, the 1486 camp and MAP XLIII found no decipherment. [Checked for filza XLIII, doc. 12 (cc. 26r-27r), 13 Aug 1486.]"
+    },
+    "key_check": "As doc 10: no glossed sister seen; Vito 2025 Capponi key (c. 1487) is the nearest printed family, not tested.",
+    "duplicates": "Searched catalogue.json, research/leads.json, SOLVED_CATALOGUE.md and targets/*/NOTES.md for 'Capponi', 'XLIII', 'f=43&d=', '00100043': Capponi hits are other letters (Luigi Capponi 1550 lead 2326; Vespucci and Capponi 1494 lead 2383; MAP LXXII entries); filza XLIII is in no row or research sweep.",
+    "verdict": "open",
+    "searches": [
+     {
+      "query": "Piero Capponi Lorenzo de' Medici 1486 lettera cifra decifrata \"XLIII\"",
+      "result": "Vito HistoCrypt 2025 PDF, Warwick 'Italian elites' prosopography pages, Perrens history; nothing deciphering a Capponi 1486 letter"
+     },
+     {
+      "query": "Capponi commissario campo 1486 guerra dei baroni lettere cifrate Lorenzo Mediceo avanti il Principato",
+      "result": "Wikipedia Piero Capponi, Warwick intro (a prosopography, no texts), Uniud 'La congiura' PDF; no transcription of the camp letters"
+     },
+     {
+      "query": "Marco Vito Florentine polyalphabetic cipher 15th century Capponi HistoCrypt",
+      "result": "the HistoCrypt 2025 paper record (dspace.ut.ee); per wave33's summary it cites only Misc. Repubblicana 11 and reads no letter"
+     },
+     {
+      "query": "wave33 (11 Nov 2026) Google Books probes 'filza 43' with the carte of doc. 12 and its date",
+      "result": "no hit; only cc. 3, 14, 23, 29, 34 (glossed) cited by Pontieri"
+     }
+    ]
+   },
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 2557,
+   "counted": true,
+   "year": 1486,
+   "date": "Jul-Aug 1486 (date not read)",
+   "title": "Piero Capponi, Florentine commissario with the League army, to Lorenzo de' Medici, Jul-Aug 1486 (date not read): letter largely in sign cipher, bare (MAP XLIII doc. 14)",
+   "correspondents": "Piero Capponi -> Lorenzo de' Medici",
+   "place": "League camp near Rome (Barons' War)",
+   "language": "Italian (sign cipher)",
+   "region": "Italy",
+   "period": "15th century",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza XLIII, doc. 14 (cc. 32r-33v)",
+   "folio_note": "Image positions 50, 51, 52, 53 (viewer id 56237 on). pos 50 a full page of about 34 lines of sign cipher with some clear words; pos 51-53 continue; 2-4 pages.",
+   "cls": "C",
+   "status": "Bare on the images viewed 13 Nov 2026 (no interlinear, marginal or foot decipherment). Filza XLIII holds the Capponi camp letters of 1486: docs 6 and 13 are glossed between the lines and were printed from their glosses by Pontieri; doc 4 carries a partial gloss and is not included. Date: filed among Capponi letters of June-August 1486; day not read. Hold before promotion to catalogue.json (R4 check, 12 Nov 2026): the notes of the printed Lettere di Lorenzo VII-IX (ed. Fubini, Rubinstein, Mallett, Butters), which cite incoming MAP letters, were not reachable, so the edition and prior-art claim is not complete until they are checked.",
+   "why": "The Florentine commissario's secret reports from the papal-war camp in summer 1486, the climax of the Barons' War; the glossed sisters show the content is military and diplomatic.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Scored from the images viewed during the b169 backfill pass, 13 Nov 2026 (first found by the Code Breaking project's sweep5 paging of 11 Nov 2026)",
+   "verify": "Transcribe doc. 14 at 1272 px; test the doc 6/13 gloss key and Vito's Capponi key; check the Dieci di Balia Responsive 37 (Capponi's parallel public letters) for overlap.",
+   "links": [
+    {
+     "label": "MAP filza XLIII doc. 14 (viewer)",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=56237"
+    },
+    {
+     "label": "IIIF image pos 50",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100043/A0000050.ptif/full/1272,/0/default.jpg"
+    },
+    {
+     "label": "filza search",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=43&d=14&c="
+    }
+   ],
+   "seen": "image",
+   "source": "ASF Mediceo avanti il Principato images (MAP filza paging), b169 backfill, Nov 2026",
+   "prior_art": "open as far as checked (13 Nov 2026): DECODE live search 'Capponi' 0 records; Tomokiyo italian.htm nothing; Vito 2025 deciphers no letter; Pontieri prints only the glossed docs.",
+   "needs_archive_scan": "no",
+   "access_note": "scans public on the ASF MAP site, no login, curl works; IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (1272 px max)",
+   "vetting": {
+    "date": "2026-11-13",
+    "by": "claude cloud sweep 13 Nov b169_backfill",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP filza XLIII pos 50, 51, 52, 53 via IIIF (e.g. https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100043/A0000050.ptif), viewed at 450-700 px on 13 Nov 2026; doc 8 also at 700 px side by side",
+     "extent": "pos 50 a full page of about 34 lines of sign cipher with some clear words; pos 51-53 continue; 2-4 pages",
+     "cipher": "a third-looking sign set (signs, digits, some Latin letters) with clear phrases inside. Nothing is written above, below or beside the cipher lines; no decipherment slip is filed next to it (neighbours doc 13 and 15 checked on the sweep5 sheets)."
+    },
+    "prior_art": {
+     "decode": "de-crypt.org/decrypt-web/RecordsList?search=Capponi returned 0 records and search='Mediceo avanti' 0 (13 Nov 2026); search='Firenze' lists only ASFi Cifrari serie II vol. 9 keys (17th-18th c.). [Checked for filza XLIII, doc. 14 (cc. 32r-33v), Jul-Aug 1486 (date not read).]",
+     "tomokiyo": "cryptiana.web.fc2.com/code/italian.htm fetched 13 Nov 2026 (50,193 bytes) and grepped: no 'Capponi'; its 1480s Italian items are Ferrara-Hungary letters (Sadoleto, Beatrice) and the Forlì 1428 informant, nothing from MAP filza XLIII. Repo copy unsolved.htm: no 'Capponi'. [Checked for filza XLIII, doc. 14 (cc. 32r-33v), Jul-Aug 1486 (date not read).]",
+     "lasry": "Repo docs/lasry/ (56 folders) has no Florentine 15th-c. item; web search 'George Lasry Medici cipher letters 1480s ... Archivio di Stato di Firenze' returned the Mary Stuart papers and HistoCrypt items, nothing on MAP filza XLIII. [Checked for filza XLIII, doc. 14 (cc. 32r-33v), Jul-Aug 1486 (date not read).]",
+     "edition": "No edition prints the letters to Lorenzo: Lettere di Lorenzo (ed. Fubini, Rubinstein, Mallett, Butters) prints his own letters and cites incoming ones in notes. Lettere IX (1485-86) is not online; Google Books snippets (trackB wave33, 11 Nov 2026) show it citing MAP XLIII 3, 6, 8 (dateline only) and 13, and quoting only the glossed doc 6. Pontieri 1970-77 prints XLIII cc. 3, 14, 23, 29, 34 (glossed letters) from their interlinear decipherments; snippet probes for filza 43 c. 32 returned nothing. Lettere IX notes were not opened on paper. [Checked for filza XLIII, doc. 14 (cc. 32r-33v), Jul-Aug 1486 (date not read).]",
+     "literature": "Vito, 'A Florentine polyalphabetic cipher in the 15th century', HistoCrypt 2025: one Capponi key (Misc. Repubblicana 11, fasc. 292), no letters deciphered (fetch summary; the PDF host reset the connection on 13 Nov and was not retried). Web searches on Capponi, the 1486 camp and MAP XLIII found no decipherment. [Checked for filza XLIII, doc. 14 (cc. 32r-33v), Jul-Aug 1486 (date not read).]"
+    },
+    "key_check": "No key held: its sign set does not match the glossed doc 6/13 system by eye; Vito 2025 key not tested.",
+    "duplicates": "Searched catalogue.json, research/leads.json, SOLVED_CATALOGUE.md and targets/*/NOTES.md for 'Capponi', 'XLIII', 'f=43&d=', '00100043': Capponi hits are other letters (Luigi Capponi 1550 lead 2326; Vespucci and Capponi 1494 lead 2383; MAP LXXII entries); filza XLIII is in no row or research sweep.",
+    "verdict": "open",
+    "searches": [
+     {
+      "query": "Piero Capponi Lorenzo de' Medici 1486 lettera cifra decifrata \"XLIII\"",
+      "result": "Vito HistoCrypt 2025 PDF, Warwick 'Italian elites' prosopography pages, Perrens history; nothing deciphering a Capponi 1486 letter"
+     },
+     {
+      "query": "Capponi commissario campo 1486 guerra dei baroni lettere cifrate Lorenzo Mediceo avanti il Principato",
+      "result": "Wikipedia Piero Capponi, Warwick intro (a prosopography, no texts), Uniud 'La congiura' PDF; no transcription of the camp letters"
+     },
+     {
+      "query": "Marco Vito Florentine polyalphabetic cipher 15th century Capponi HistoCrypt",
+      "result": "the HistoCrypt 2025 paper record (dspace.ut.ee); per wave33's summary it cites only Misc. Repubblicana 11 and reads no letter"
+     },
+     {
+      "query": "wave33 (11 Nov 2026) Google Books probes 'filza 43' with the carte of doc. 14 and its date",
+      "result": "no hit; only cc. 3, 14, 23, 29, 34 (glossed) cited by Pontieri"
+     }
+    ]
+   },
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 2558,
+   "counted": true,
+   "year": 1485,
+   "date": "31 Jul 1485",
+   "title": "\"Loisius\", Rome, to Lorenzo de' Medici, 31 July 1485: about 14 lines of sign cipher between clear phrases, bare (MAP LII doc. 11)",
+   "correspondents": "\"Loisius\" (signs 'Loisius') -> Lorenzo de' Medici",
+   "place": "Rome",
+   "language": "Italian (sign cipher)",
+   "region": "Italy",
+   "period": "15th century",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza LII, doc. 11",
+   "folio_note": "Image position(s) 23, 25 (viewer id 64575). pos 23 (c. 12): about 14 lines, roughly 600 signs, opening \"Mco Lorenzo\" with clear words between cipher runs; pos 25 (c. 12 bis) a 4-line cipher slip.",
+   "cls": "A",
+   "status": "Bare on the image viewed 13 Nov 2026. Found by the Code Breaking project's MAP paging (sweep5, 11 Nov 2026); filza LII was not paged by the repo's ASF passes (research/sweep_2026-11_asf_map_paging covers LXXII-LXXV, XLVIII, CXXXVII). Hold before promotion to catalogue.json (R4 check, 12 Nov 2026): the notes of the printed Lettere di Lorenzo VII-IX (ed. Fubini, Rubinstein, Mallett, Butters), which cite incoming MAP letters, were not reachable, so the edition and prior-art claim is not complete until they are checked.",
+   "why": "A Roman informant writing to Lorenzo in summer 1485, months before the Barons' War broke out; the glossed sister talks of Genoese affairs and Terrasanta.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 4,
+   "score_note": "Scored from the images viewed during the b169 backfill pass, 13 Nov 2026",
+   "verify": "Transcribe at 1272 px; look for a glossed letter by the same writer in the filza; compare with the LXXII 178-188 key sheets.",
+   "links": [
+    {
+     "label": "MAP filza LII doc. 11 (viewer)",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=64575"
+    },
+    {
+     "label": "IIIF image pos 23",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100052/A0000023.ptif/full/1272,/0/default.jpg"
+    },
+    {
+     "label": "filza search",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=52&d=11&c="
+    }
+   ],
+   "seen": "image",
+   "source": "ASF Mediceo avanti il Principato images (MAP filza paging), b169 backfill, Nov 2026",
+   "prior_art": "open as far as checked (13 Nov 2026): DECODE live search 0 for 'Loisius' and 'Mediceo avanti'; Tomokiyo italian.htm nothing; no edition prints letters to Lorenzo/Piero.",
+   "needs_archive_scan": "no",
+   "access_note": "scans public on the ASF MAP site, no login, curl works; IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (1272 px max)",
+   "vetting": {
+    "date": "2026-11-13",
+    "by": "claude cloud sweep 13 Nov b169_backfill",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP filza LII pos 23, 25 via IIIF (https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100052/A0000023.ptif), viewed at 450-600 px on 13 Nov 2026",
+     "extent": "pos 23 (c. 12): about 14 lines, roughly 600 signs, opening \"Mco Lorenzo\" with clear words between cipher runs; pos 25 (c. 12 bis) a 4-line cipher slip",
+     "cipher": "Sign cipher of Latin letters, digits and marks; the glossed sister doc 13 (pos 29, 22 Aug 1485, same hand and sign set) has its decipherment written under the cipher lines, doc 11 has none."
+    },
+    "prior_art": {
+     "decode": "de-crypt.org/decrypt-web/RecordsList?search=Loisius returned 0 records; search='Mediceo avanti' 0 and search='Firenze' only ASFi Cifrari serie II vol. 9 keys (17th-18th c.), 13 Nov 2026. [Checked for filza LII, doc. 11, 31 Jul 1485.]",
+     "tomokiyo": "cryptiana.web.fc2.com/code/italian.htm fetched 13 Nov 2026 (50,193 bytes) and grepped: no 'Loisius'; its 1480s Italian items are Ferrara-Hungary letters (Sadoleto, Beatrice) and the Forlì 1428 informant, nothing from MAP filza LII. Repo copy unsolved.htm: no 'Loisius'. [Checked for filza LII, doc. 11, 31 Jul 1485.]",
+     "lasry": "Repo docs/lasry/ (56 folders) has no Florentine 15th-c. item; web search 'George Lasry Medici cipher letters 1480s ... Archivio di Stato di Firenze' returned the Mary Stuart papers and HistoCrypt items, nothing on MAP filza LII. [Checked for filza LII, doc. 11, 31 Jul 1485.]",
+     "edition": "No edition of letters to the Medici for this item: Lettere di Lorenzo prints Lorenzo's own letters (incoming ones only cited in notes; the volume for 1485 is not online and its notes were not opened). The Warwick 'Italian elites' companion (opened 13 Nov 2026) is a prosopography of names in the correspondence 1480-86, with no texts or decipherments. [Checked for filza LII, doc. 11, 31 Jul 1485.]",
+     "literature": "Web searches naming \"Loisius\" (signs 'Loisius'), 31 Jul 1485 and MAP LII (below) returned Warwick prosopography pages and general studies; no transcription or decipherment of this document. [Checked for filza LII, doc. 11, 31 Jul 1485.]"
+    },
+    "key_check": "Glossed sister doc 13 (pos 29) in the same filza. This project tried it (trackB b2_map, 12 Nov 2026): the gloss runs about 50 letters over 27 signs, so the system has syllable and code signs and is not letter for letter; trackB b42 ciphertext-only solves on 440 frozen signs failed.",
+    "duplicates": "Searched catalogue.json, research/leads.json, SOLVED_CATALOGUE.md, targets/*/NOTES.md and research/ for 'filza LII', 'f=52&d=', '00100052' and the writer: no row, target or sweep holds filza LII.",
+    "verdict": "open",
+    "searches": [
+     {
+      "query": "\"Loisius\" OR \"Aloisius\" Roma 31 luglio 1485 lettera a Lorenzo de' Medici cifra Mediceo avanti il Principato LII",
+      "result": "Warwick prosopography pages, Romei documents PDF, Newberry MS 101.1; nothing on this letter"
+     },
+     {
+      "query": "\"MAP, LII, 11\" OR \"Mediceo avanti il Principato, LII, 11\" Lorenzo 1485",
+      "result": "ASF 'archivi carteggio Lorenzo' guide and general studies; no citation of doc. 11"
+     },
+     {
+      "query": "de-crypt.org RecordsList?search=Loisius",
+      "result": "0 records"
+     }
+    ]
+   },
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 2559,
+   "counted": true,
+   "year": 1483,
+   "date": "Apr 1483",
+   "title": "Pierfilippo Pandolfini, Florentine orator in Rome, to Lorenzo de' Medici, April 1483: full page of sign cipher, bare (MAP LIII doc. 13)",
+   "correspondents": "Pierfilippo Pandolfini -> Lorenzo de' Medici",
+   "place": "Rome",
+   "language": "Italian (sign cipher)",
+   "region": "Italy",
+   "period": "15th century",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza LIII, doc. 13",
+   "folio_note": "Image position(s) 36 (viewer id 65099). pos 36: one full page, about 22 lines, roughly 650 signs, no clear text except the heading.",
+   "cls": "C",
+   "status": "Bare on the image viewed 13 Nov 2026. Found by the Code Breaking project's MAP paging (sweep5, 11 Nov 2026); filza LIII was not paged by the repo's ASF passes (research/sweep_2026-11_asf_map_paging covers LXXII-LXXV, XLVIII, CXXXVII). Hold before promotion to catalogue.json (R4 check, 12 Nov 2026): the notes of the printed Lettere di Lorenzo VII-IX (ed. Fubini, Rubinstein, Mallett, Butters), which cite incoming MAP letters, were not reachable, so the edition and prior-art claim is not complete until they are checked.",
+   "why": "Pandolfini's secret reports from Sixtus IV's Rome during the War of Ferrara (1482-84).",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Scored from the images viewed during the b169 backfill pass, 13 Nov 2026",
+   "verify": "Transcribe at 1272 px; look for a glossed letter by the same writer in the filza; compare with the LXXII 178-188 key sheets.",
+   "links": [
+    {
+     "label": "MAP filza LIII doc. 13 (viewer)",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=65099"
+    },
+    {
+     "label": "IIIF image pos 36",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100053/A0000036.ptif/full/1272,/0/default.jpg"
+    },
+    {
+     "label": "filza search",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=53&d=13&c="
+    }
+   ],
+   "seen": "image",
+   "source": "ASF Mediceo avanti il Principato images (MAP filza paging), b169 backfill, Nov 2026",
+   "prior_art": "open as far as checked (13 Nov 2026): DECODE live search 0 for 'Pandolfini' and 'Mediceo avanti'; Tomokiyo italian.htm nothing; no edition prints letters to Lorenzo/Piero.",
+   "needs_archive_scan": "no",
+   "access_note": "scans public on the ASF MAP site, no login, curl works; IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (1272 px max)",
+   "vetting": {
+    "date": "2026-11-13",
+    "by": "claude cloud sweep 13 Nov b169_backfill",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP filza LIII pos 36 via IIIF (https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100053/A0000036.ptif), viewed at 450-600 px on 13 Nov 2026",
+     "extent": "pos 36: one full page, about 22 lines, roughly 650 signs, no clear text except the heading",
+     "cipher": "Dense sign cipher (letters, digits, crossed and looped signs) without word division; no gloss above, below or beside the lines."
+    },
+    "prior_art": {
+     "decode": "de-crypt.org/decrypt-web/RecordsList?search=Pandolfini returned 0 records; search='Mediceo avanti' 0 and search='Firenze' only ASFi Cifrari serie II vol. 9 keys (17th-18th c.), 13 Nov 2026. [Checked for filza LIII, doc. 13, Apr 1483.]",
+     "tomokiyo": "cryptiana.web.fc2.com/code/italian.htm fetched 13 Nov 2026 (50,193 bytes) and grepped: no 'Pandolfini'; its 1480s Italian items are Ferrara-Hungary letters (Sadoleto, Beatrice) and the Forlì 1428 informant, nothing from MAP filza LIII. Repo copy unsolved.htm: no 'Pandolfini'. [Checked for filza LIII, doc. 13, Apr 1483.]",
+     "lasry": "Repo docs/lasry/ (56 folders) has no Florentine 15th-c. item; web search 'George Lasry Medici cipher letters 1480s ... Archivio di Stato di Firenze' returned the Mary Stuart papers and HistoCrypt items, nothing on MAP filza LIII. [Checked for filza LIII, doc. 13, Apr 1483.]",
+     "edition": "No edition of letters to the Medici for this item: Lettere di Lorenzo prints Lorenzo's own letters (incoming ones only cited in notes; the volume for 1483 is not online and its notes were not opened). The Warwick 'Italian elites' companion (opened 13 Nov 2026) is a prosopography of names in the correspondence 1480-86, with no texts or decipherments. [Checked for filza LIII, doc. 13, Apr 1483.]",
+     "literature": "Web searches naming Pierfilippo Pandolfini, Apr 1483 and MAP LIII (below) returned Warwick prosopography pages and general studies; no transcription or decipherment of this document. [Checked for filza LIII, doc. 13, Apr 1483.]"
+    },
+    "key_check": "This project rebuilt Pandolfini's January 1487 key from glossed letters in the same filza (trackB wave17, held-out control 94%); its values did not fit this 1483 slip. No other key held.",
+    "duplicates": "Searched catalogue.json, research/leads.json, SOLVED_CATALOGUE.md, targets/*/NOTES.md and research/ for 'filza LIII', 'f=53&d=', '00100053' and the writer: no row, target or sweep holds filza LIII.",
+    "verdict": "open",
+    "searches": [
+     {
+      "query": "Pierfilippo Pandolfini Roma aprile 1483 Lorenzo de' Medici lettera cifra Mediceo avanti il Principato LIII",
+      "result": "Warwick prosopography pages and Fubini's ISIME article; no transcription of an April 1483 cipher"
+     },
+     {
+      "query": "\"MAP, LIII, 13\" OR \"MAP LIII 13\" Pandolfini 1483 Lorenzo Lettere VII",
+      "result": "Warwick pages and BL/Riccardiana catalogues; no citation"
+     },
+     {
+      "query": "de-crypt.org RecordsList?search=Pandolfini",
+      "result": "0 records"
+     }
+    ]
+   },
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 2560,
+   "counted": true,
+   "year": 1489,
+   "date": "c. 1489-90 (from neighbours)",
+   "title": "Unsigned letter from the Naples file of MAP XLIX, c. 1489-90: a full page of sign cipher and verso, bare (MAP XLIX doc. 11)",
+   "correspondents": "unknown (Naples file) -> Lorenzo de' Medici",
+   "place": "Naples (filed with Naples letters)",
+   "language": "Italian (sign cipher)",
+   "region": "Italy",
+   "period": "15th century",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza XLIX, doc. 11",
+   "folio_note": "Image position(s) 28, 29 (viewer id 60445). pos 28 (c. 18r): full page, about 38 lines, nearly all cipher, right edge torn away; pos 29 verso continues.",
+   "cls": "C",
+   "status": "Bare on the image viewed 13 Nov 2026. Found by the Code Breaking project's MAP paging (sweep5, 11 Nov 2026); filza XLIX was not paged by the repo's ASF passes (research/sweep_2026-11_asf_map_paging covers LXXII-LXXV, XLVIII, CXXXVII). Hold before promotion to catalogue.json (R4 check, 12 Nov 2026): the notes of the printed Lettere di Lorenzo VII-IX (ed. Fubini, Rubinstein, Mallett, Butters), which cite incoming MAP letters, were not reachable, so the edition and prior-art claim is not complete until they are checked.",
+   "why": "Florentine intelligence from Naples in the years after the Barons' War, when Lorenzo mediated between Ferrante and Innocent VIII.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Scored from the images viewed during the b169 backfill pass, 13 Nov 2026",
+   "verify": "Transcribe at 1272 px; look for a glossed letter by the same writer in the filza; compare with the LXXII 178-188 key sheets.",
+   "links": [
+    {
+     "label": "MAP filza XLIX doc. 11 (viewer)",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=60445"
+    },
+    {
+     "label": "IIIF image pos 28",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100049/A0000028.ptif/full/1272,/0/default.jpg"
+    },
+    {
+     "label": "filza search",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=49&d=11&c="
+    }
+   ],
+   "seen": "image",
+   "source": "ASF Mediceo avanti il Principato images (MAP filza paging), b169 backfill, Nov 2026",
+   "prior_art": "open as far as checked (13 Nov 2026): DECODE live search 0 for 'XLIX' and 'Mediceo avanti'; Tomokiyo italian.htm nothing; no edition prints letters to Lorenzo/Piero.",
+   "needs_archive_scan": "no",
+   "access_note": "scans public on the ASF MAP site, no login, curl works; IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (1272 px max)",
+   "vetting": {
+    "date": "2026-11-13",
+    "by": "claude cloud sweep 13 Nov b169_backfill",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP filza XLIX pos 28, 29 via IIIF (https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100049/A0000028.ptif), viewed at 450-600 px on 13 Nov 2026",
+     "extent": "pos 28 (c. 18r): full page, about 38 lines, nearly all cipher, right edge torn away; pos 29 verso continues",
+     "cipher": "Sign cipher in its own sign set (letters, digits, Greek-like signs); no interlinear or marginal decipherment; most other cipher pages in filza XLIX are glossed, this one is not."
+    },
+    "prior_art": {
+     "decode": "de-crypt.org/decrypt-web/RecordsList?search=XLIX returned no MAP record; search='Mediceo avanti' 0 and search='Firenze' only ASFi Cifrari serie II vol. 9 keys (17th-18th c.), 13 Nov 2026. [Checked for filza XLIX, doc. 11, c. 1489-90 (from neighbours).]",
+     "tomokiyo": "cryptiana.web.fc2.com/code/italian.htm fetched 13 Nov 2026 (50,193 bytes) and grepped: no 'XLIX'; its 1480s Italian items are Ferrara-Hungary letters (Sadoleto, Beatrice) and the Forlì 1428 informant, nothing from MAP filza XLIX. Repo copy unsolved.htm: no 'XLIX'. [Checked for filza XLIX, doc. 11, c. 1489-90 (from neighbours).]",
+     "lasry": "Repo docs/lasry/ (56 folders) has no Florentine 15th-c. item; web search 'George Lasry Medici cipher letters 1480s ... Archivio di Stato di Firenze' returned the Mary Stuart papers and HistoCrypt items, nothing on MAP filza XLIX. [Checked for filza XLIX, doc. 11, c. 1489-90 (from neighbours).]",
+     "edition": "No edition of letters to the Medici for this item: Lettere di Lorenzo prints Lorenzo's own letters (incoming ones only cited in notes; the volume for 1489 is not online and its notes were not opened). The Warwick 'Italian elites' companion (opened 13 Nov 2026) is a prosopography of names in the correspondence 1480-86, with no texts or decipherments. [Checked for filza XLIX, doc. 11, c. 1489-90 (from neighbours).]",
+     "literature": "Web searches naming unknown (Naples file), c. 1489-90 (from neighbours) and MAP XLIX (below) returned Warwick prosopography pages and general studies; no transcription or decipherment of this document. [Checked for filza XLIX, doc. 11, c. 1489-90 (from neighbours).]"
+    },
+    "key_check": "No key held; its sign set matches neither the glossed Naples orators' letters nor key sheet LXXII 183 by eye (trackB sweep5).",
+    "duplicates": "Searched catalogue.json, research/leads.json, SOLVED_CATALOGUE.md, targets/*/NOTES.md and research/ for 'filza XLIX', 'f=49&d=', '00100049' and the writer: no row, target or sweep holds filza XLIX.",
+    "verdict": "open",
+    "searches": [
+     {
+      "query": "Lorenzo de' Medici Naples orators 1489 1490 cipher letters deciphered Lanfredini Mediceo avanti il Principato XLIX",
+      "result": "Senatore (Filologia), Fupress ASI article, Warwick pages; nothing on an unsigned cipher letter"
+     },
+     {
+      "query": "\"MAP, XLIX\" Napoli oratori fiorentini 1485 1489 Lorenzo lettere cifra duca di Calabria Lanfredini Lettere IX",
+      "result": "general studies of Florentine-Neapolitan diplomacy; no decipherment"
+     },
+     {
+      "query": "de-crypt.org RecordsList?search=Napoli 148 / Firenze",
+      "result": "no MAP record (Cremona, BL and ASFi key volumes only)"
+     }
+    ]
+   },
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 2561,
+   "counted": true,
+   "year": 1485,
+   "date": "Nov 1485",
+   "title": "Copy of a letter of the Florentine orator with the Duke of Calabria to Lorenzo de' Medici, November 1485: three blocks of sign cipher in a clear letter, bare (MAP XLIX doc. 8)",
+   "correspondents": "Florentine orator with the Duke of Calabria (signature not read) -> Lorenzo de' Medici (copy)",
+   "place": "with the army of the Duke of Calabria",
+   "language": "Italian (sign cipher)",
+   "region": "Italy",
+   "period": "15th century",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza XLIX, doc. 8",
+   "folio_note": "Image position(s) 17 (viewer id 60434). pos 17: headed \"Copia\", clear text with three cipher blocks of about 3, 5 and 1 lines (about 9 lines in all).",
+   "cls": "C",
+   "status": "Bare on the image viewed 13 Nov 2026. Found by the Code Breaking project's MAP paging (sweep5, 11 Nov 2026); filza XLIX was not paged by the repo's ASF passes (research/sweep_2026-11_asf_map_paging covers LXXII-LXXV, XLVIII, CXXXVII). Hold before promotion to catalogue.json (R4 check, 12 Nov 2026): the notes of the printed Lettere di Lorenzo VII-IX (ed. Fubini, Rubinstein, Mallett, Butters), which cite incoming MAP letters, were not reachable, so the edition and prior-art claim is not complete until they are checked.",
+   "why": "News from Alfonso of Calabria's camp at the start of the Barons' War, autumn 1485.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 3,
+   "score_note": "Scored from the images viewed during the b169 backfill pass, 13 Nov 2026",
+   "verify": "Transcribe at 1272 px; look for a glossed letter by the same writer in the filza; compare with the LXXII 178-188 key sheets.",
+   "links": [
+    {
+     "label": "MAP filza XLIX doc. 8 (viewer)",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=60434"
+    },
+    {
+     "label": "IIIF image pos 17",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100049/A0000017.ptif/full/1272,/0/default.jpg"
+    },
+    {
+     "label": "filza search",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=49&d=8&c="
+    }
+   ],
+   "seen": "image",
+   "source": "ASF Mediceo avanti il Principato images (MAP filza paging), b169 backfill, Nov 2026",
+   "prior_art": "open as far as checked (13 Nov 2026): DECODE live search 0 for 'Calabria' and 'Mediceo avanti'; Tomokiyo italian.htm nothing; no edition prints letters to Lorenzo/Piero.",
+   "needs_archive_scan": "no",
+   "access_note": "scans public on the ASF MAP site, no login, curl works; IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (1272 px max)",
+   "vetting": {
+    "date": "2026-11-13",
+    "by": "claude cloud sweep 13 Nov b169_backfill",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP filza XLIX pos 17 via IIIF (https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100049/A0000017.ptif), viewed at 450-600 px on 13 Nov 2026",
+     "extent": "pos 17: headed \"Copia\", clear text with three cipher blocks of about 3, 5 and 1 lines (about 9 lines in all)",
+     "cipher": "Sign and digit cipher inserted in a clear letter about the Duke of Calabria's camp; nothing written over or beside the cipher."
+    },
+    "prior_art": {
+     "decode": "de-crypt.org/decrypt-web/RecordsList?search=Calabria returned no MAP record; search='Mediceo avanti' 0 and search='Firenze' only ASFi Cifrari serie II vol. 9 keys (17th-18th c.), 13 Nov 2026. [Checked for filza XLIX, doc. 8, Nov 1485.]",
+     "tomokiyo": "cryptiana.web.fc2.com/code/italian.htm fetched 13 Nov 2026 (50,193 bytes) and grepped: no 'Calabria'; its 1480s Italian items are Ferrara-Hungary letters (Sadoleto, Beatrice) and the Forlì 1428 informant, nothing from MAP filza XLIX. Repo copy unsolved.htm: no 'Calabria'. [Checked for filza XLIX, doc. 8, Nov 1485.]",
+     "lasry": "Repo docs/lasry/ (56 folders) has no Florentine 15th-c. item; web search 'George Lasry Medici cipher letters 1480s ... Archivio di Stato di Firenze' returned the Mary Stuart papers and HistoCrypt items, nothing on MAP filza XLIX. [Checked for filza XLIX, doc. 8, Nov 1485.]",
+     "edition": "No edition of letters to the Medici for this item: Lettere di Lorenzo prints Lorenzo's own letters (incoming ones only cited in notes; the volume for 1485 is not online and its notes were not opened). The Warwick 'Italian elites' companion (opened 13 Nov 2026) is a prosopography of names in the correspondence 1480-86, with no texts or decipherments. [Checked for filza XLIX, doc. 8, Nov 1485.]",
+     "literature": "Web searches naming Florentine orator with the Duke of Calabria (signature not read), Nov 1485 and MAP XLIX (below) returned Warwick prosopography pages and general studies; no transcription or decipherment of this document. [Checked for filza XLIX, doc. 8, Nov 1485.]"
+    },
+    "key_check": "No key held for this writer; not compared with key sheets LXXII 178-188.",
+    "duplicates": "Searched catalogue.json, research/leads.json, SOLVED_CATALOGUE.md, targets/*/NOTES.md and research/ for 'filza XLIX', 'f=49&d=', '00100049' and the writer: no row, target or sweep holds filza XLIX.",
+    "verdict": "open",
+    "searches": [
+     {
+      "query": "oratore fiorentino presso il duca di Calabria novembre 1485 lettera cifra copia Lorenzo de' Medici Mediceo XLIX",
+      "result": "MAES Bologna article, Cesura, Warwick pages; nothing on this copy"
+     },
+     {
+      "query": "\"MAP, XLIX\" Napoli oratori fiorentini 1485 1489 Lorenzo lettere cifra duca di Calabria Lanfredini Lettere IX",
+      "result": "no citation of XLIX doc. 8"
+     },
+     {
+      "query": "de-crypt.org RecordsList?search=Mediceo avanti",
+      "result": "0 records"
+     }
+    ]
+   },
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 2562,
+   "counted": true,
+   "year": 1482,
+   "date": "2 Dec 1482",
+   "title": "Letter from Ferrara to Lorenzo de' Medici, 2 December 1482: closing passage of about 9 lines of sign cipher, bare (MAP LI doc. 349)",
+   "correspondents": "unknown writer, Ferrara -> Lorenzo de' Medici",
+   "place": "Ferrara",
+   "language": "Italian (sign cipher)",
+   "region": "Italy",
+   "period": "15th century",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza LI, doc. 349",
+   "folio_note": "Image position(s) 710, 711 (viewer id 64016). pos 710: clear letter of about 30 lines, then about 9 lines of sign cipher at the foot (6 continuous lines per trackB wave19); date read on pos 711.",
+   "cls": "C",
+   "status": "Bare on the image viewed 13 Nov 2026. Found by the Code Breaking project's MAP paging (sweep5, 11 Nov 2026); filza LI was not paged by the repo's ASF passes (research/sweep_2026-11_asf_map_paging covers LXXII-LXXV, XLVIII, CXXXVII). Hold before promotion to catalogue.json (R4 check, 12 Nov 2026): the notes of the printed Lettere di Lorenzo VII-IX (ed. Fubini, Rubinstein, Mallett, Butters), which cite incoming MAP letters, were not reachable, so the edition and prior-art claim is not complete until they are checked.",
+   "why": "A report from besieged Ferrara in the first winter of the War of Ferrara, when Florence backed Ercole d'Este against Venice.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Scored from the images viewed during the b169 backfill pass, 13 Nov 2026",
+   "verify": "Transcribe at 1272 px; look for a glossed letter by the same writer in the filza; compare with the LXXII 178-188 key sheets.",
+   "links": [
+    {
+     "label": "MAP filza LI doc. 349 (viewer)",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=64016"
+    },
+    {
+     "label": "IIIF image pos 710",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100051/A0000710.ptif/full/1272,/0/default.jpg"
+    },
+    {
+     "label": "filza search",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=51&d=349&c="
+    }
+   ],
+   "seen": "image",
+   "source": "ASF Mediceo avanti il Principato images (MAP filza paging), b169 backfill, Nov 2026",
+   "prior_art": "open as far as checked (13 Nov 2026): DECODE live search 0 for 'Ferrara' and 'Mediceo avanti'; Tomokiyo italian.htm nothing; no edition prints letters to Lorenzo/Piero.",
+   "needs_archive_scan": "no",
+   "access_note": "scans public on the ASF MAP site, no login, curl works; IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (1272 px max)",
+   "vetting": {
+    "date": "2026-11-13",
+    "by": "claude cloud sweep 13 Nov b169_backfill",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP filza LI pos 710, 711 via IIIF (https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100051/A0000710.ptif), viewed at 450-600 px on 13 Nov 2026",
+     "extent": "pos 710: clear letter of about 30 lines, then about 9 lines of sign cipher at the foot (6 continuous lines per trackB wave19); date read on pos 711",
+     "cipher": "Sign cipher with digits and crossed signs closing a clear letter; no gloss."
+    },
+    "prior_art": {
+     "decode": "de-crypt.org/decrypt-web/RecordsList?search=Ferrara returned no MAP record; search='Mediceo avanti' 0 and search='Firenze' only ASFi Cifrari serie II vol. 9 keys (17th-18th c.), 13 Nov 2026. [Checked for filza LI, doc. 349, 2 Dec 1482.]",
+     "tomokiyo": "cryptiana.web.fc2.com/code/italian.htm fetched 13 Nov 2026 (50,193 bytes) and grepped: no 'Ferrara'; its 1480s Italian items are Ferrara-Hungary letters (Sadoleto, Beatrice) and the Forlì 1428 informant, nothing from MAP filza LI. Repo copy unsolved.htm: no 'Ferrara'. [Checked for filza LI, doc. 349, 2 Dec 1482.]",
+     "lasry": "Repo docs/lasry/ (56 folders) has no Florentine 15th-c. item; web search 'George Lasry Medici cipher letters 1480s ... Archivio di Stato di Firenze' returned the Mary Stuart papers and HistoCrypt items, nothing on MAP filza LI. [Checked for filza LI, doc. 349, 2 Dec 1482.]",
+     "edition": "No edition of letters to the Medici for this item: Lettere di Lorenzo prints Lorenzo's own letters (incoming ones only cited in notes; the volume for 1482 is not online and its notes were not opened). The Warwick 'Italian elites' companion (opened 13 Nov 2026) is a prosopography of names in the correspondence 1480-86, with no texts or decipherments. [Checked for filza LI, doc. 349, 2 Dec 1482.]",
+     "literature": "Web searches naming unknown writer, Ferrara, 2 Dec 1482 and MAP LI (below) returned Warwick prosopography pages and general studies; no transcription or decipherment of this document. [Checked for filza LI, doc. 349, 2 Dec 1482.]"
+    },
+    "key_check": "Key sheet LXXII 183 probed on line 2 by this project (trackB wave19_li, 10 Nov 2026): no Italian (\"calsuchefora...\"), so a different key. No other key held.",
+    "duplicates": "Searched catalogue.json, research/leads.json, SOLVED_CATALOGUE.md, targets/*/NOTES.md and research/ for 'filza LI', 'f=51&d=', '00100051' and the writer: no row, target or sweep holds filza LI.",
+    "verdict": "open",
+    "searches": [
+     {
+      "query": "Ferrara 2 dicembre 1482 lettera a Lorenzo de' Medici guerra di Ferrara cifra Mediceo avanti il Principato filza LI",
+      "result": "Warwick pages, Prisciani studies, Sanudo-related items; nothing on this letter"
+     },
+     {
+      "query": "\"MAP, LI\" 1482 Ferrara guerra Lorenzo de' Medici lettera dicembre 1482 cifra Lettere VII",
+      "result": "ASF guide and general studies; no citation of doc. 349"
+     },
+     {
+      "query": "de-crypt.org RecordsList?search=Ferrari / Forli (Ferrara-area records)",
+      "result": "Milan Sforza-Hungary 1491-92 records and ÖNB CVP 2398 only; no Florentine 1482 letter"
+     }
+    ]
+   },
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 2563,
+   "counted": true,
+   "year": 1493,
+   "date": "1 Aug 1493",
+   "title": "Francesco Cappelli (?) to Piero de' Medici, 1 August 1493: three and a half lines of word-spaced sign cipher in a clear letter, bare (MAP XLIX doc. 223)",
+   "correspondents": "Francesco Cappelli (? signature doubtful) -> Piero de' Medici",
+   "place": "Naples (?)",
+   "language": "Italian (sign cipher)",
+   "region": "Italy",
+   "period": "15th century",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza XLIX, doc. 223",
+   "folio_note": "Image position(s) 693 (viewer id 61106). pos 693 (c. 362): clear letter of about 25 lines; about 3.5 lines of word-spaced sign cipher, about 90 signs in 15 words, with the clear words \"che no bisogna\" inside.",
+   "cls": "C",
+   "status": "Bare on the image viewed 13 Nov 2026. Found by the Code Breaking project's MAP paging (sweep5, 11 Nov 2026); filza XLIX was not paged by the repo's ASF passes (research/sweep_2026-11_asf_map_paging covers LXXII-LXXV, XLVIII, CXXXVII). Hold before promotion to catalogue.json (R4 check, 12 Nov 2026): the notes of the printed Lettere di Lorenzo VII-IX (ed. Fubini, Rubinstein, Mallett, Butters), which cite incoming MAP letters, were not reachable, so the edition and prior-art claim is not complete until they are checked.",
+   "why": "A short secret passage to Piero de' Medici in 1493, the year before the French invasion; low weight unless the writer is confirmed.",
+   "importance": 1,
+   "solvability": 2,
+   "difficulty": 3,
+   "score_note": "Scored from the images viewed during the b169 backfill pass, 13 Nov 2026",
+   "verify": "Transcribe at 1272 px; look for a glossed letter by the same writer in the filza; compare with the LXXII 178-188 key sheets.",
+   "links": [
+    {
+     "label": "MAP filza XLIX doc. 223 (viewer)",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=61106"
+    },
+    {
+     "label": "IIIF image pos 693",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100049/A0000693.ptif/full/1272,/0/default.jpg"
+    },
+    {
+     "label": "filza search",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=49&d=223&c="
+    }
+   ],
+   "seen": "image",
+   "source": "ASF Mediceo avanti il Principato images (MAP filza paging), b169 backfill, Nov 2026",
+   "prior_art": "open as far as checked (13 Nov 2026): DECODE live search 0 for 'Cappelli' and 'Mediceo avanti'; Tomokiyo italian.htm nothing; no edition prints letters to Lorenzo/Piero.",
+   "needs_archive_scan": "no",
+   "access_note": "scans public on the ASF MAP site, no login, curl works; IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (1272 px max)",
+   "vetting": {
+    "date": "2026-11-13",
+    "by": "claude cloud sweep 13 Nov b169_backfill",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP filza XLIX pos 693 via IIIF (https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100049/A0000693.ptif), viewed at 450-600 px on 13 Nov 2026",
+     "extent": "pos 693 (c. 362): clear letter of about 25 lines; about 3.5 lines of word-spaced sign cipher, about 90 signs in 15 words, with the clear words \"che no bisogna\" inside",
+     "cipher": "Word-spaced sign cipher (b, y, sigma, omega, theta, crossed q, L, 3); a struck-through clear line stands before it; no decipherment on the leaf."
+    },
+    "prior_art": {
+     "decode": "de-crypt.org/decrypt-web/RecordsList?search=Cappelli returned no MAP record; search='Mediceo avanti' 0 and search='Firenze' only ASFi Cifrari serie II vol. 9 keys (17th-18th c.), 13 Nov 2026. [Checked for filza XLIX, doc. 223, 1 Aug 1493.]",
+     "tomokiyo": "cryptiana.web.fc2.com/code/italian.htm fetched 13 Nov 2026 (50,193 bytes) and grepped: no 'Cappelli'; its 1480s Italian items are Ferrara-Hungary letters (Sadoleto, Beatrice) and the Forlì 1428 informant, nothing from MAP filza XLIX. Repo copy unsolved.htm: no 'Cappelli'. [Checked for filza XLIX, doc. 223, 1 Aug 1493.]",
+     "lasry": "Repo docs/lasry/ (56 folders) has no Florentine 15th-c. item; web search 'George Lasry Medici cipher letters 1480s ... Archivio di Stato di Firenze' returned the Mary Stuart papers and HistoCrypt items, nothing on MAP filza XLIX. [Checked for filza XLIX, doc. 223, 1 Aug 1493.]",
+     "edition": "No edition of letters to the Medici for this item: Lettere di Lorenzo prints Lorenzo's own letters (incoming ones only cited in notes; the volume for 1493 is not online and its notes were not opened). The Warwick 'Italian elites' companion (opened 13 Nov 2026) is a prosopography of names in the correspondence 1480-86, with no texts or decipherments. [Checked for filza XLIX, doc. 223, 1 Aug 1493.]",
+     "literature": "Web searches naming Francesco Cappelli (? signature doubtful), 1 Aug 1493 and MAP XLIX (below) returned Warwick prosopography pages and general studies; no transcription or decipherment of this document. [Checked for filza XLIX, doc. 223, 1 Aug 1493.]"
+    },
+    "key_check": "Sign set does not match key sheet LXXII 183 by eye (trackB b2_map, 12 Nov 2026). No other key held. Short.",
+    "duplicates": "Searched catalogue.json, research/leads.json, SOLVED_CATALOGUE.md, targets/*/NOTES.md and research/ for 'filza XLIX', 'f=49&d=', '00100049' and the writer: no row, target or sweep holds filza XLIX.",
+    "verdict": "open",
+    "searches": [
+     {
+      "query": "Francesco Cappelli Napoli agosto 1493 lettera a Piero de' Medici cifra",
+      "result": "Warwick pages, Cesura volume on Aragonese Naples, Guicciardini; nothing on this letter"
+     },
+     {
+      "query": "\"MAP, XLIX\" Napoli oratori fiorentini 1485 1489 Lorenzo lettere cifra duca di Calabria Lanfredini Lettere IX",
+      "result": "no citation of XLIX doc. 223"
+     },
+     {
+      "query": "de-crypt.org RecordsList?search=Medici",
+      "result": "20 records: Naples 1823 and Niccolini 1538-39; nothing from MAP"
+     }
+    ]
+   },
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 2564,
+   "counted": true,
+   "year": 1547,
+   "date": "14 Oct 1547",
+   "title": "Copy of a letter of Cardinal Giovanni Salviati to Francesco Olivo, Ferrara, 14 October 1547: figure-cipher lines in a clear copy, bare",
+   "correspondents": "Cardinal Giovanni Salviati -> Francesco Olivo (copy in Cosimo I's papers)",
+   "place": "Ferrara",
+   "language": "Italian (figure cipher)",
+   "region": "Italy",
+   "period": "1497-1559",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo del Principato 385, c. 49",
+   "folio_note": "PAD image 385/0106_C_049_R (recto; verso 0107_C_049_V clear). Heading 'Copia d'una l[ette]ra dell'Ill.mo et R.mo Salviati de 14 d'ottobre 1547 data in Ferrara a m. Francesco Olivo ...'; two lines of figure cipher near the top, about 70 tokens, then clear text. Inventory (Carteggio universale di Cosimo I, vol. III): 'Copia. Parzialmente in cifra'.",
+   "cls": "B",
+   "status": "Bare at 450 px and on the sweep4 1000 px check (10 Nov 2026). Salviati was the anti-Medici cardinal; Cosimo's chancery kept this copy, so it may be an intercept. Tried by this project with two held keys (below): not Italian.",
+   "why": "An anti-Medici cardinal's secret line to his agent in 1547, held by Cosimo I: a short window on Salviati-Farnese politics after the Fieschi plot.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 3,
+   "score_note": "Scored from the image viewed during the b169 backfill pass, 13 Nov 2026 (found by the Code Breaking project's sweep4 of the printed inventories)",
+   "verify": "Transcribe the cipher lines at 2000 px; test Lasry's Salviati 1525 key (targets/salviati1525) and the Cifrari keys if they become available.",
+   "links": [
+    {
+     "label": "PAD IIIF c. 49r",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mdp_carteggio_universale/385/0106_C_049_R.ptif/full/1000,/0/default.jpg"
+    },
+    {
+     "label": "PAD IIIF c. 49v",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mdp_carteggio_universale/385/0107_C_049_V.ptif/full/1000,/0/default.jpg"
+    }
+   ],
+   "seen": "image",
+   "source": "ASF Mediceo del Principato, Carteggio universale (PAD images) + Carteggio universale inventory PDFs, b169 backfill, Nov 2026",
+   "prior_art": "open as far as checked (13 Nov 2026): DECODE 'Salviati' 2 unrelated records; Tomokiyo nothing; Lasry's Salviati item is the 1525 letter in BnF fr. 2933; inventory notes no decipherment.",
+   "needs_archive_scan": "no",
+   "access_note": "scans public on ASF PAD (archividigitali), no login, curl works; IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mdp_carteggio_universale/<filza>/<seq>_C_<carta>_<R|V>.ptif (2000 px)",
+   "vetting": {
+    "date": "2026-11-13",
+    "by": "claude cloud sweep 13 Nov b169_backfill",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF PAD IIIF mdp_carteggio_universale/385/0106_C_049_R at 450 px (13 Nov 2026) and 1000 px (trackB sweep4, 10 Nov 2026); verso 0107_C_049_V",
+     "extent": "two lines of figure cipher under the copy's heading, about 70 tokens (trackB wave19_forli count); the rest of recto and the verso clear",
+     "cipher": "Runs of Arabic figures with dots and strokes, continuous across the line; nothing written over or beside them; the copyist gives no decipherment and the inventory entry says only 'Parzialmente in cifra'."
+    },
+    "prior_art": {
+     "decode": "de-crypt.org RecordsList?search=Salviati (13 Nov 2026): 2 records, ANC Niccolini 1538 and the 1574 nuncio Salviati (ASV), neither this letter; search 'Mediceo' gives no Mediceo del Principato 385 record. [Checked for 385, c. 49, 14 Oct 1547.]",
+     "tomokiyo": "cryptiana italian.htm (13 Nov 2026): its only 1547 item is Mario Bandini's Sienese cipher (R4803); no Salviati 1547; repo unsolved.htm no 'Salviati'. [Checked for 385, c. 49, 14 Oct 1547.]",
+     "lasry": "Repo docs/lasry/salviati1525 and targets/salviati1525: Lasry's partial decipherment of Cardinal Giovanni Salviati's letter of 16 Oct 1525 (BnF fr. 2933), a different letter 22 years earlier; web search 'Salviati cardinal cipher 1547 decipherment Lasry OR Tomokiyo' found nothing for 1547. [Checked for 385, c. 49, 14 Oct 1547.]",
+     "edition": "Carteggio universale di Cosimo I inventory vol. III (ASF Inventari on-line PDF, text-extracted by trackB sweep4): 'Copia. Parzialmente in cifra', no decipherment noted. No printed edition of the letter found. [Checked for 385, c. 49, 14 Oct 1547.]",
+     "literature": "Searches on Salviati, Francesco Olivo, Ferrara 1547 and the cipher found biographies and unrelated inventories only (queries below). [Checked for 385, c. 49, 14 Oct 1547.]"
+    },
+    "key_check": "Tried by this project with held keys, unchanged: Babbi KEY_v2 (strict 0/111 = 0.00%) and Pagni MdP 444 key (0/141 = 0.00%), both not Italian (trackB b150, 12 Nov 2026). Not tested: Lasry's Salviati 1525 key.",
+    "key_held": "Lasry's Salviati 1525 key (targets/salviati1525, 704/838 elements) is held in the repo; not tested on this 1547 copy.",
+    "duplicates": "Searched catalogue.json, leads.json, SOLVED_CATALOGUE.md and targets for 'Mediceo del Principato 385', 'Salviati', 'Olivo': hits are lead 2158 (Lodron 1549) and catalogue 1118 (Salvi 1592) and salviati1525 (BnF); none is this copy.",
+    "verdict": "open",
+    "searches": [
+     {
+      "query": "cardinale Giovanni Salviati Francesco Olivo Ferrara 1547 lettera cifra Mediceo del Principato 385",
+      "result": "Wikipedia Salviati, Francesco I inventories, Turchi (Unimore); nothing on this copy"
+     },
+     {
+      "query": "Giovanni Salviati cardinale 1547 Ferrara \"Olivo\" lettera copia cifra Cosimo intercettata",
+      "result": "biographies and ASF 'carte di donne' PDF; no decipherment"
+     },
+     {
+      "query": "Salviati cardinal cipher 1547 decipherment Lasry OR Tomokiyo Salviati cipher key",
+      "result": "HistoCrypt papal cipher papers; nothing for a 1547 Salviati letter"
+     }
+    ]
+   },
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 2565,
+   "counted": true,
+   "year": 1630,
+   "date": "c. Feb 1630 (1629/30, undated letter)",
+   "title": "Christian Pentz, governor of Glückstadt, to Christian IV, c. 1629/30: a whole page of two-digit number cipher, no decipherment",
+   "correspondents": "Christian Pentz (Glückstadt) -> Christian IV of Denmark",
+   "place": "Glückstadt",
+   "language": "German (number cipher)",
+   "region": "Scandinavia",
+   "period": "1611-1650",
+   "shelfmark": "Rigsarkivet (Copenhagen), Christian rigsgreve Pentz, guvernør i Glückstadt: relationer til kongen 1629-45 (SHLK A IV 89), Arkivalieronline unit 274999",
+   "folio_note": "Unit 274999 (503 images). Image 2: full page, about 30 lines of two-digit numbers (range about 14-37) with a few code groups; image 3 (left page) continues; image 4 the address panel to the King. Images 1-136 were viewed by this project (8-up, about 650 px): only images 2-3 are in cipher. Images 137-503 (1639-45) not viewed.",
+   "cls": "B",
+   "status": "Bare: no interlinear or marginal decipherment at 700 px (13 Nov) or on the 750 px sheets (12 Nov). Decoded once by this project with Pentz's 1636 table unchanged: 25 of 68 word units read (36.8%), clearly German (Hamburg, Admiral, Norwegen, Proviant, Constables, Feuerwerker, Vestung) but below any read bar; figure 28 stands where o is expected, a homophone outside the 1636 table. Not read.",
+   "why": "The Glückstadt governor's secret report to Christian IV in the winter after the Peace of Lübeck: fortress, artillery crews, provisions, Hamburg and the fleet, at the start of the Elbe toll quarrel.",
+   "importance": 3,
+   "solvability": 4,
+   "difficulty": 2,
+   "score_note": "Scored from the scan during the b169 backfill pass, 13 Nov 2026 (found by the Code Breaking project's b157 sweep, 12 Nov 2026)",
+   "verify": "Transcribe image 2 and 3 in full; extend the 1636 table (catalogue 2543's cipher family) with the o-homophone and other gaps; check whether the Christian IV letter-books answer it.",
+   "links": [
+    {
+     "label": "Rigsarkivet image 2 (full size JPEG)",
+     "href": "https://api.rigsarkivet.dk/ao/v1/images/52788770"
+    },
+    {
+     "label": "image 3",
+     "href": "https://api.rigsarkivet.dk/ao/v1/images/52788771"
+    },
+    {
+     "label": "Fridericia, Danmarks ydre politiske Historie 1629-1660, vol. 1 (1876)",
+     "href": "https://archive.org/details/danmarksydrepoli01frid"
+    }
+   ],
+   "seen": "image",
+   "source": "Rigsarkivet Arkivalieronline (Pentz Glückstadt relations), b169 backfill, Nov 2026",
+   "prior_art": "open (checked 13 Nov 2026: DECODE 'Pentz' 0, Tomokiyo nothing, Fridericia vol. 1 full text opened, web)",
+   "needs_archive_scan": "no",
+   "access_note": "free on Arkivalieronline, no login; image list via api.rigsarkivet.dk/ao/v1/billedviser/billed-reference-lister?bsid=274999; full-size JPEG at api.rigsarkivet.dk/ao/v1/images/52788770",
+   "vetting": {
+    "date": "2026-11-13",
+    "by": "claude cloud sweep 13 Nov b169_backfill",
+    "seen": {
+     "kind": "scan",
+     "where": "Rigsarkivet unit 274999, image 2 (api.rigsarkivet.dk/ao/v1/images/52788770) at 700 px on 13 Nov 2026; images 1-136 on 650-750 px sheets and image 2 at full size by trackB b157 on 12 Nov 2026",
+     "extent": "Image 2: one full page, about 30 lines of two-digit numbers (about 68 word units decoded in the trial); image 3 left page continues",
+     "cipher": "Black-and-white microfilm of a single leaf: spaced two-digit numbers (about 14-37) in Pentz's chancery hand, a few larger code numbers, no clear text except the archive's later note at the foot; nothing written between the lines or in the margin."
+    },
+    "prior_art": {
+     "decode": "de-crypt.org/decrypt-web/RecordsList?search=Pentz returned 0 records (13 Nov 2026); 'Gluckstadt' 3 records, all Trauttmansdorff papers at Klášter, not this letter; 'Christian IV' 0. [Checked for unit 274999, c. Feb 1630 (1629/30, undated letter).]",
+     "tomokiyo": "Repo copy unsolved.htm: no 'Pentz' or 'Glückstadt'; web search 'site:cryptiana.web.fc2.com Danish cipher Christian IV' returned no Tomokiyo page on a Pentz or 1630 Danish cipher. [Checked for unit 274999, c. Feb 1630 (1629/30, undated letter).]",
+     "lasry": "Repo docs/lasry/ (56 folders) has no Danish item; web search 'George Lasry Danish 17th century cipher Rigsarkivet Christian IV' returned his papal and Mary Stuart papers only. [Checked for unit 274999, c. Feb 1630 (1629/30, undated letter).]",
+     "edition": "Fridericia, Danmarks ydre politiske Historie 1629-1660 vol. 1 (1629-35; archive.org danmarksydrepoli01frid full text opened 13 Nov 2026): cites Pentz's reports (e.g. 6 July 1629 on Krempe) from the Danske Kancelli files but prints no text, and 'chiff'/'ziffer' occur nowhere in the volume. Christian IV's own letters (Bricka and Fridericia) print the King's outgoing letters, not Pentz's reports. [Checked for unit 274999, c. Feb 1630 (1629/30, undated letter).]",
+     "literature": "Web searches on Pentz, Glückstadt 1629-30, cipher and Christian IV returned lex.dk biography, coin pages and Christian IV letter files; no study or decipherment of Pentz's cipher. Klaus Schmeh's page on Norbert Biermann's solves (opened) concerns Louvois-Lauzun 1690, not Pentz. [Checked for unit 274999, c. Feb 1630 (1629/30, undated letter).]"
+    },
+    "key_check": "Pentz's 1636 cipher table (the two-digit cipher of catalogue 2543, Vienna 1636, as rebuilt by this project) tried unchanged on image 2: 25/68 = 36.8% of word units, German but incomplete; the Zobel index key is ruled out by structure (no figure below 14). Not a reading on record.",
+    "key_held": "Pentz 1636 table: held in this project's trackB b157 work (not in the repo); tested as above, reads German fragments only.",
+    "duplicates": "Searched catalogue.json, leads.json, SOLVED_CATALOGUE.md and targets for '274999', '52788770', 'Pentz', 'Glückstadt': only catalogue 2543 (Pentz in Vienna 1636, unit 260651, a different letter and unit) and unrelated Glückstadt entries (lead 1653 Stade 1683).",
+    "verdict": "open",
+    "searches": [
+     {
+      "query": "Christian Pentz Glückstadt 1629 1630 chiffre Brief Christian IV entziffert",
+      "result": "coin pages, Hanse documents, lex.dk biography, KB letter PDFs of Christian IV; no decipherment"
+     },
+     {
+      "query": "Christian Pentz governor Glückstadt cipher letters Christian IV 1630 Hamburg Admiral Norway",
+      "result": "Christian IV letter files and biographies; nothing on Pentz's cipher"
+     },
+     {
+      "query": "\"Pentz\" cryptiana OR \"Kong Christian den Fjerdes egenhændige breve\" chiffer Pentz 1630",
+      "result": "tekster.kb.dk King's letters and the archive.org edition of Christian IV's letters (the King's side only)"
+     },
+     {
+      "query": "grep 'Pentz' and 'chiff|ziffer' in Fridericia vol. 1 djvu text",
+      "result": "Pentz cited about 30 times, no text printed, no cipher mentioned"
+     }
+    ]
+   },
+   "ark": "",
+   "scored": "sweep"
   }
  ]
 }
