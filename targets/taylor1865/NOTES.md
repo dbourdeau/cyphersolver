@@ -504,3 +504,13 @@ ending ON PRETEXT OF helping Georgia Rail Roads replaces rejected PROPERTY/AS.
 Seven new records this session,23 total; inventory incomplete.
 
 - 2026-11-10 (submission follow-up): User authorized another PR covering all work since PR205. Prepared seven new cases, methods, prior-text attribution, source manifest, raw/reconstructed alignments, rejected April11 experiments and remaining gaps; target stays in progress. New submission based on latest upstream main; earlier contributions preserved.
+
+## 12 November 2026 — two telegrams of 21 February read (Brice Dudout, `dudout/`)
+
+Vol. 196 fr. 0030 (MS p. 55, to Maury) and fr. 0031-0032 (MS pp. 57-58, to D. W. Adams), both 21 Feb 1865 and both on the
+catalogue's open list, are read in full: the Maury telegram with COME RETRIBUTION (29/29 cipher words, 141/156 letters as
+read; the key runs one place ahead from the seventh word), the Adams telegram with COMPLETE VICTORY (44/44, 195/206). OR
+I/49/1 p. 1003 prints the Adams telegram with its cipher passage left out; the Maury telegram was not found in OR. Blind
+transcription and pre-registration frozen by SHA-256 before any key was tried; the pre-registered measure picks COMPLETE
+VICTORY for the Adams telegram and fails at offset 0 for the Maury one (its break is checked post hoc). Details, controls
+and readings: `dudout/README.md`. Both keys on the same day fit the recipient-specific chronology above.
