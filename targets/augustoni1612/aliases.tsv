@@ -1,0 +1,11 @@
+# Label aliases, as stamped 11 Nov 2026 (timestamps/repair/stamped/ALIASES.tsv; crop names only, the crops are not in the repository). An alias says that a label in one transcription is the same written sign as a key label.
+# kind: rename = the same sign under another name, no reading decision. split = ONE label of the blind transcription divided in two AFTER decoding (a reading decision; see NOTES.md).
+transcript	label	key_label	kind	units	scope	visual_basis	crop
+R2	R	K	rename	4	all R2 'R' (L02 L12 L19 L29)	R2 header 'R' = capital p-form; b48 key 'K' = capital K-like p-sign; same form, rename only	L12_R.jpg
+R2	D	z	rename	16	all R2 'D' except misreads listed in WORDS (L11 'Dm', L12 'Dm' = nn)	R2 'D' = smooth reversed-c curve with tail; b48 'z' = tailed e-form; R2 split tailed-e from 3 (both e) so R2 class is a subset of key e-signs	L11_left_x2.jpg
+R2	x	g	rename	3	all R2 'x' except L14 (x = n with lead-in, R2 misread)	R2 'x' = s-like top, crossing stroke, loop bottom-left = looped t-sign; R2 split it from its own 'g'; subset of key g	L17_qcmygc_c4.jpg
+R2	z	Z	namespace fix, no key value	1	L12 only (one instance)	R2 'z' = 7-form with foot running right (Z-form). NOT the key's 'z' (tailed e). Namespace collision fixed: maps to new label Z, which has no KEY value	L12_zq4nnp_x4.jpg
+R2	u	u	no alias: decodes literally	15	all R2 'u'; NO alias to o	R2 header lumps plain two-minim u (key f) and rounded single-bowl form (key o = n). R2 label cannot be split after the fact, so R2 'u' decodes literally to f; at rounded-form positions R2 is scored E	L09_right_x2.jpg
+CONS	υ	o	split, made after decoding	8	every υ token in WORDS.tsv (8 positions: L06 L07 L12x2 L13 L16x2 L23)	rounded single-stroke V-bowl with top-right curl; same family as closed o (= n) (see L23 'oco': o and υ variants side by side); distinct from plain u = two angular minims (L09 u3qtp, L17 uc764 u47)	L12_canc_x3.jpg;L12_L74o_x3.jpg;L13_amp_negotiato_c3.jpg;L23_ocu_c4.jpg;L17_right_x2.jpg
+CONS	D	z	rename	15	all CONS 'D'	as R2 D (consensus keeps R2 label for tailed e)	L05_47tp7D_x3.jpg
+CONS	R	K	rename	4	all CONS 'R'	as R2 R	L12_R.jpg

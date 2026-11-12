@@ -1,0 +1,346 @@
+{
+  "schema_version": 1,
+  "target": "augustoni1612",
+  "title": "Girolamo Augustoni (as catalogued), 9 Oct 1612, a letter in clear with words in cipher (Biblioteca Estense, Campori A, Augustoni c. 1; catalogue 1569): read in part",
+  "documents": [
+    {
+      "id": "c1r",
+      "read": "read in part",
+      "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera A, Augustoni, Girolamo, c. 1",
+      "date": "9 Oct 1612",
+      "year": 1612,
+      "country": "Italy",
+      "route": "Girolamo Augustoni (the library's attribution; signature not read by us) to a correspondent not named on the page",
+      "language": "Italian",
+      "pages": 1,
+      "cleartext_in_document": "mostly clear",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment on c. 1r or c. 1v (seen on the images)."
+      },
+      "length": {
+        "tokens": 600,
+        "distinct": 32,
+        "unit": "symbols",
+        "measured": false,
+        "file": "transcription.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Estense Digital Library IIIF images (edl-jarvis.cultura.gov.it), record 516e565f-7451-43fe-a2fc-533c0b5efeee",
+        "image_quality": "good",
+        "notes": "Counted by scripts/build.py (units.tsv), not by docs/_check_profile.py --measure, so measured is false. 600 units in 30 lines: 580 cipher signs, 3 signs not legible, 4 clear-script letters inside cipher words, 6 of an abbreviation sign, 7 codes. distinct counts the labels of the consensus transcription: 26 sign labels, the abbreviation sign, the mark for a sign not legible, 1 clear-script letter that is not also a sign label (s) and 3 codes. Cipher words: a consensus of the first reader's second transcription (not blind) and a blind second transcription by another session (transcription_blind.txt), frozen and stamped 11 Nov 2026. Clear text: one reader, 12 Nov 2026, after the key was known. The page begins in mid-sentence."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "homophonic"
+    ],
+    "summary": "Simple substitution with letter-like signs, 25 signs for 19 letters, a few letters having two or three signs; u and v are one letter and there is no sign for q or z. Only single words and phrases are in cipher, inside a letter in clear, with word division kept. Persons are also hidden by codes written in clear script with points (I., PP., 25., .50.), which the key does not touch. One abbreviation compound is written as a single sign.",
+    "symbol_kind": "symbols",
+    "distinct_symbols": 26,
+    "diacritics": {
+      "used": false
+    },
+    "homophones": {
+      "used": true,
+      "max_per_vowel": 2,
+      "max_per_consonant": 3,
+      "per_letter": {
+        "a": 2,
+        "c": 2,
+        "e": 2,
+        "g": 2,
+        "p": 3,
+        "u": 2
+      }
+    },
+    "nomenclator": {
+      "present": true,
+      "entries": 4,
+      "kinds": [
+        "names"
+      ],
+      "unread_groups": 4
+    },
+    "nulls": {
+      "present": false
+    },
+    "key_order": "random",
+    "word_division": "kept",
+    "doubled_letters": "written twice (rissolse, quassi, tottal, habbno); single in rochetta, acordo, letera, scritura",
+    "notes": "distinct_symbols counts the sign labels of the consensus transcription: 24 of the 25 key signs occur (the b-form does not; two carry the blind reader's names, R for K and D for z), plus the rounded u-form (label υ, read as the n sign: a split made after decoding, 8 units) and the Z form (once, no key value) = 26. The four codes are counted under nomenclator as names; none is identified, and .50. stands in the clear text, not among the cipher units."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "no",
+      "where": "None found; priority not established. Checked on 11 Nov 2026: this repository (catalogue row 1569 open, no target folder), the catalogue vetting, web searches, the Archivio di Stato di Modena inventory of the Cancelleria ducale, Ambasciatori, Milano (no Augustoni 1600-1620). Not checked: Biblioteca comunale di Correggio (notes on the Augustoni family); Archivio di Stato di Milano, Carteggio delle cancellerie dello Stato; the printed Campori catalogue; the Este agents' series page by page.",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": [
+      "images",
+      "cleartext context"
+    ],
+    "attack": "ciphertext-only",
+    "human_role": "Malcolm McBratney directed the work, set the rules (every attempt recorded, a transcription frozen before decoding, a blind second transcription, a shuffled-key control, no claim without its check) and sent the result; Claude sessions picked the letter from the catalogue, transcribed, solved, read and checked. No reading by a person without AI.",
+    "tools": [
+      "own Python annealer with Italian quadgrams",
+      "shuffled-key baseline, 5,000 keys",
+      "single decoder with alias and override files and a per-unit ledger (timestamps/repair/stamped/contract.py); scripts/build.py, standard library",
+      "Estense IIIF images: 1,024 px tiles stitched at full resolution, line bands and crops"
+    ],
+    "models": [
+      "Claude (Anthropic), several sessions of 11-12 Nov 2026 (model ids not recorded)",
+      "claude-fable-5-2 (session of 12 Nov 2026 that prepared this folder)"
+    ],
+    "sessions": 4,
+    "first_date": "2026-11-11",
+    "last_date": "2026-11-12"
+  },
+  "solution": [
+    {
+      "date": "2026-11-11",
+      "kind": "transcription",
+      "what": "First transcription of the cipher words of c. 1r from the IIIF images (pass 1), frozen. It merged two pairs of signs (the a sign with one u sign, the t sign with the other).",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "solver",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring"
+      ],
+      "what": "Own annealer with Italian quadgrams on pass 1, four restarts of 20,000 steps, no crib and no gloss: two restarts gave Italian words (rimetendolo, volessero, dubitiamo, li feudi, compromesso, negotiato, la causa).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "transcription",
+      "what": "Second transcription by the same reader at full width (pass 2), not blind: made after the solver output, which showed the two merged pairs. Key frozen from it: 25 signs, 19 letters.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "control",
+      "technique": [
+        "language-model scoring"
+      ],
+      "what": "Pass 2 under the key against 5,000 shuffled keys: 301 of 607 signs in Italian dictionary words against a best of 40; none of the 5,000 as good. First strict count on pass 2: 462 of 607 units (76.1%).",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "verification",
+      "technique": [
+        "other"
+      ],
+      "what": "Blind second transcription by another session that opened only the page images, frozen before it opened the key or any decode. Under the key: 394 of 587 signs in dictionary words against a best of 60 for 5,000 shuffled keys. It showed that one of its labels covered two forms (plain u and a rounded form).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "reading",
+      "technique": [
+        "manual reconstruction",
+        "contextual inference"
+      ],
+      "what": "Consensus of pass 2 and the blind transcription on crops; single decoder with a file of label aliases and 13 coordinate overrides; ledger of one row per unit. Issue 427 gave 548 of 583 cipher units (94.0%).",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "reading",
+      "technique": [
+        "contextual inference"
+      ],
+      "what": "Two words tried and not adopted: l'[i]ngano on L16 and scr[i]tura on L17-18. A third left open between argutia and astutia (L19).",
+      "result": "failed"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "other"
+      ],
+      "what": "Check by Daniel Bourdeau on issue 427: his decoder reproduces the literal lines; 0 of 5,000 shuffled keys; about 200 signs agree with the image. His recount is 537 of 587 (91.5%): our total left out 4 clear-script letters and our count kept 10 units of two emended words as read. He offered INGANO, ASTUTIA, SCR[I]TURA, CONSCENSO and 'sia'.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "reading",
+      "technique": [
+        "manual reconstruction",
+        "contextual inference"
+      ],
+      "what": "For this folder: the five readings checked on the image and adopted (one sign added, two relabelled, one emended, one value changed; not blind); the clear text read in full for the first time, which also showed that 'S.S.' in the issue is a code, .50.; every emendation listed. One cipher unit is left unread.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "literature search",
+      "what": "Web searches for an edition or decipherment; the repository; the Modena inventory of the Milan ambassadors' series. Nothing found. Correggio, the Milan state archive and the printed Campori catalogue were not searched.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "other"
+      ],
+      "what": "Integration check: a decoder written separately (key, aliases R=K, D=z, x=g, rounded u=n) reproduces the K lines of decryption.txt for all 30 cipher lines (112 words); word figure recounted (355 words, 53 holes, 0.851; the contributor's 0.849 kept); unit tallies reconciled; stamped-file hashes and RFC 3161 imprints checked.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "statistical test",
+        "language-model scoring"
+      ],
+      "what": "Statistical validation (docs/_validate.py): 583 tokens, 27 types, it-cinquecento order 4: reading -2.179 per letter; random keys -4.981 (z 5.6); key annealed onto shuffled ciphertext best -2.979 (mean -3.005, z 32.5); annealer on the real text -2.179. Verdict: pass.",
+      "result": "worked"
+    }
+  ],
+  "outcome": {
+    "validation": {
+      "date": "2026-11-12",
+      "model": "it-cinquecento",
+      "file": "validation.tsv",
+      "tokens": 583,
+      "types": 27,
+      "tokens_per_type": 21.59,
+      "score": -2.179,
+      "nulls": {
+        "random keys": {
+          "n": 200,
+          "mean": -4.981,
+          "sd": 0.498,
+          "max": -3.654,
+          "z": 5.6,
+          "p": 0.005
+        },
+        "shuffled refit": {
+          "n": 6,
+          "mean": -3.005,
+          "sd": 0.025,
+          "max": -2.979,
+          "z": 32.5,
+          "p": 0.1429
+        }
+      },
+      "power": -2.179,
+      "verdict": "pass",
+      "notes": "claimed per-occurrence score -2.15; polyphony 0.009; 1 unread tokens left out; annealer on the real text from random keys reached -2.179"
+    },
+    "class": "read in part",
+    "key": "partial",
+    "method": "key recovered from ciphertext-only",
+    "method_basis": "An annealer with Italian quadgrams on the first transcription of the cipher words gave Italian without any crib; the leaf carries no decipherment. The key was completed by reading. The clear text around the cipher words was used afterwards, for the 13 overrides and to settle doubtful words, not to find the key.",
+    "contribution": [
+      "transcription",
+      "key recovered"
+    ],
+    "fraction_read_method": "measured",
+    "fraction_read_source": "reading.md, README word rule: 314 words read and 56 holes (370 in all), 0.849; clear text and cipher counted together, doubtful clear words, codes and every word with a supplied or emended letter are holes; recounted at integration: 355 words, 53 hole groups, 0.851. By cipher units, the reviewer's strict rule on the transcription frozen on 11 Nov 2026: 537 of 587 = 91.5% (the contributor's count 538); with the 8 rounded-u units also emended 530 (90.3%); the blind transcription 517 (88.1%). The issue's 94.0% is withdrawn.",
+    "fraction_read": 0.849,
+    "verification": [
+      "key confirms",
+      "statistical test"
+    ],
+    "provenance": "contributed",
+    "credits": [
+      {
+        "who": "mcbratney",
+        "role": "solution",
+        "note": "catalogue 1569, Augustoni 9 Oct 1612: key and reading, with Claude; issue #427",
+        "date": "2026-11-11",
+        "source": "https://github.com/dbourdeau/cyphersolver/issues/427"
+      },
+      {
+        "who": "mcbratney",
+        "role": "transcription",
+        "note": "c. 1r: cipher words three times (one blind) and the clear text, from the Estense images, with Claude",
+        "date": "2026-11-11"
+      },
+      {
+        "who": "bourdeau",
+        "role": "pointer",
+        "note": "from the image: INGANO (L16), ASTUTIA (L19), SCR[I]TURA (L17-18), CONSCENSO (L14), 'sia' (L04); the recount 537 of 587",
+        "date": "2026-11-12",
+        "source": "https://github.com/dbourdeau/cyphersolver/issues/427"
+      }
+    ],
+    "gaps": [
+      {
+        "item": "Codes for persons: I. (five times), PP., 25., .50. (twice, in the clear text)",
+        "blocker": "open-codes",
+        "detail": "Not identified. No other letter of the correspondence has been looked for."
+      },
+      {
+        "item": "The abbreviation sign & (6 units)",
+        "blocker": "too-short",
+        "detail": "'per' from context at four places; not read at L13 and L16."
+      },
+      {
+        "item": "One cipher unit unread: the sign in the gutter at the start of L10",
+        "blocker": "illegible",
+        "detail": "Proposed 've' ('se ve ne ha') from the sense. Needs the original or a better image of the fold."
+      },
+      {
+        "item": "Signs under blots (L14, L19) and one sign emended against its shape (L19 sign 2)",
+        "blocker": "illegible",
+        "detail": "Values from the word. On L19 the reviewer and the contributor read the blots differently."
+      },
+      {
+        "item": "The rounded u-form read as n: a split of one blind label made after decoding (8 units)",
+        "blocker": "illegible",
+        "detail": "The two forms are told apart only by a reader who knows the word; a blind re-transcription is the test."
+      },
+      {
+        "item": "Clear text: doubtful words in the body; the postscript read in part; signature, place and names not established",
+        "blocker": "illegible",
+        "detail": "One reader with the key known, in a fast hand. A person who reads the hand should go over transcription.txt."
+      },
+      {
+        "item": "Prior art not checked at Correggio, in the Milan state archive or in the printed Campori catalogue",
+        "blocker": "needs-physical-access",
+        "detail": "Not online as far as searched."
+      }
+    ],
+    "texts": [
+      {
+        "doc": "c1r",
+        "label": "Augustoni, 9 Oct 1612, c. 1r",
+        "transcription": [
+          "transcription.txt",
+          "transcription_blind.txt"
+        ],
+        "decryption": "decryption.txt",
+        "reading": "reading.md",
+        "translation": "translation.md",
+        "language": "it",
+        "state": "read in part",
+        "read_share": 0.849,
+        "summary": "Part of a report to a correspondent addressed as 'Sig.r mio', on a negotiation over fiefs; Rochetta is named. A person hidden as 50 said nothing and referred the matter to the Provost, and it was settled through a person hidden as I. The writer doubts this: the other side wanted something else and lost their nerve. The ministers pressed harder than I. for the fiefs not to be excluded from the 'compromesso', and the Grand Chancellor and the Provost were agreed. By cunning the writer's side has got a letter of the Provost saying that a certain addition can only mean the total exclusion of the fiefs. I. was very low and tried in vain to visit PP. The reader is to keep informed, not show his hand without need, and take care in writing to the Provost. Postscript: the Governor of Milan has offered to write to the King and has written to the Spanish ambassador.",
+        "reading_review": {
+          "grade": "B",
+          "by": "the integration reader (a Claude model, 12 Nov 2026): a model reading, not a person; it replaces the contributor's own entry and is not independent of the model-assisted work",
+          "date": "2026-11-12",
+          "note": "Read as sentences against the translation. The body runs as connected Italian and its argument can be followed. Holes: four unidentified codes for persons in most sentences, an abbreviation sign read 'per' from context or not at all, one unread cipher sign, eleven words with a supplied or emended letter, and about a dozen doubtful clear words. The end of the postscript is read only in part and is set apart."
+        },
+        "note": "read_share 0.849 is our count of the README word rule on reading.md (314 words read and 56 holes, 370 in all): codes, doubtful words and every word with a supplied or emended letter count as holes, and the clear text is counted with the cipher. By cipher units the reviewer's figure is 91.5%. transcription_blind.txt is the blind second transcription in its own sign names."
+      }
+    ],
+    "key_file": [
+      "key.tsv",
+      "aliases.tsv",
+      "overrides.tsv"
+    ],
+    "notes": "Filed as read in part: 0.849 of the page by the README word rule (clear text and cipher together), under the 95% bar; by cipher units the reviewer's strict 537 of 587 = 91.5%. The 94.0% of issue 427 is withdrawn: it left 4 clear-script letters out of the total and kept 10 units of two emended words as read. The decode rests on 25 key values, two renamed labels, one split of a blind label made after decoding (8 units) and 13 overrides by coordinate, all in the key files. Order of events (key frozen on 11 Nov, blind transcription before the key was opened) is by the contributor's record; the RFC 3161 imprints and stamped files agree with it. Statistical test (docs/_validate.py): pass. The repository's checker scripts were not run by the contributor."
+  }
+}

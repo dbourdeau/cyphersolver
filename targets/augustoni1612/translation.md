@@ -1,0 +1,15 @@
+# Augustoni, 9 Oct 1612: English translation
+
+Same holes as `reading.md`: `[...]` not read; `[?word]` doubtful; `[I.]`, `[PP.]`, `[25]`, `[50]` unidentified codes for persons. "Compromesso" is an agreement to go to arbitration; "ragioni" are rights or claims; "scritura" is a deed.
+
+## Translation
+
+[c. 1r; the page begins in mid-sentence] of many things, such as that they wanted, but [...] Rochetta and the like; but by [50] nothing at all was said, the matter being referred to the Provost, and in the end the whole was settled [?by] [I.]. But we doubt very much whether the thing is [?so]; rather we believe that they wanted something else, but have since thought better of it, or have not had the nerve, because, my lord, they kept us so much in suspense that they [?seemed] spellbound themselves, and [?would have] put the points in doubt.
+
+And even if the true cause has been [?through] [I.], we doubt very much that they are [?agreed] [?...] to admit his claims [?to] the fiefs, if he has [?any], because the ministers who pressed for the fiefs not to be shut out of the arbitration have [?written] more than [I.] himself; and the Grand Chancellor and the Provost were agreed, [?and] have [?all but] [...] negotiated the whole, and so they had some fear that [?it would be] [?we] who sought the [?consent] of [?Your Highness]; and therefore [25] [?will be] on the watch whether she hears anything of this about opposing, and to uncover the [?deceit], because [?those people] [...] have said that an impertinence of [I.]; all the same they wanted, as if by force, to make the [?deed] general, as far as they were able.
+
+We have however by [?cunning] [?got out] a letter of the [?Provost], where he says that for certain that addition can mean nothing other than the total exclusion of the [?fiefs], and that those last words are [?to] [?put a decent face on] the cause. It may also be that they [?have] no such thought, from the many signs that point that way, such as [?making] only a private deed without a penalty, and the more so as he is a minor; and besides [I.] was very melancholy, and has tried hard to visit [PP.], but has never been willing. And so [?it is well that] you be informed and [?stay] on your guard, but do not show your hand without need, and also [?be] careful in writing to the Provost.
+
+I had then forgotten to say that the Governor of Milan at [?once] offered to write to the King so that he should write to [...] for the [...], and that he [?will write] again; and he has also already written to that Ambassador of Spain to [?the same] effect. I doubt very much whether [50] speaks in earnest of [?Prima]; [?they] [?make a show] of yes, but [?I take it] for pretence; all the same may [?God] be the one to help us.
+
+> [clear only, the end of the postscript and the close; read in part] [...] Nicolò [?Franchetti], [...] and his son the Rosso [...], [...], and there have been [?many] sick. [...] we have been at Milan. No other news, but being [?tired] I kiss your hands. From [?Carpi], 9 [?October] 1612. Your [...] [?servant] [...] that the letter has been sent to Milan [signature not read] and will [?be sent] to [...]
