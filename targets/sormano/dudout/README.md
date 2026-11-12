@@ -69,6 +69,55 @@ old spellings (dificulta, Firensa, ofendere) count as holes in the word list.
   - f. 116r, the reason of the duke of Calabria's claim, "[?] [?] ragion di [?]";
   - f. 116r, "[?] il marchese di Mantoa";
   - f. 116v, "mantener gli [?] oficio".
-- **Not attempted here**: the no. 65 gap.
+- **No. 65 gap**: done in a second pass, below.
+
+# no. 65 — foot of f. 119r, foot of f. 119v, f. 120r re-read (second pass, 12 Nov 2026)
+
+The cipher runs that `n65_reading.md` leaves as «…», (?) or "only partly legible": f. 119r L32-36, f. 119v from the end
+of L23 to L37, f. 120r L01-L11, L13-L20, L22-L23 (your line numbers).
+
+## Method
+- Same as for no. 63: Gallica views 123-124, IIIF full resolution, every cipher sign transcribed line by line
+  (`no65_signs_reread.txt`, same alias alphabet, plus `D` = the DUCA circle). Doubts in `DOUTES65.md`.
+- Key: Lasry's with no. 66's values; the looped b-shaped sign is decoded **z**, as in the no. 63 pass, and declared.
+- `no65_signs_reread.txt` (SHA-256 `98b4099f190b6f75e76d5113e47c4b0154c3aa194d7484bdccd1d65909827234`) and
+  `DOUTES65.md` (`ae73d6f7cdb4930cdd3a8ed4f283eb1f7f6d253bc5adb570a58028b97924043c`) frozen before decoding (02:43 CET).
+- `PREREG65.md` (`a828cd9663d613479b22cc78b75f53558a288d78f65eb900e34788e17ebeb476`), `scripts/measure65.py`
+  (`9fd5d034…e5a4`) and `scripts/decode65.py` (`619fd85a…f08f0d`) frozen before the measure (02:44 CET). One run.
+
+## Measure (one run, output copied unchanged: `measure65_result.txt`)
+```
+portion: 1904 cipher-sign tokens, 1902 with a letter value
+M re-read = 1885/1904 = 0.990
+M old     = 1716/1964 = 0.874  (n65_transcription.md, same lines)
+key: n=200 median 0.156 p99 0.603 max 0.685
+shuf: n=200 median 0.842 p99 0.884 max 0.901
+controls >= M re-read: 0/400 ; p = 0.0025
+```
+Same rule and lexicon as the no. 63 measure. Both pre-registered criteria are held. As before, the honest margin is
+against the shuffled text (0.990 vs 0.901).
+
+Run it with `python3 scripts/measure65.py <worktree> no65_signs_reread.txt ../n65_transcription.md`.
+
+## Reading with the 95% rule (`no65_reading_reread.md`)
+- **Before** (`n65_reading.md`, same passages): 315 deciphered words, one marked (?) (*concedeva*), 33 gaps "…" and
+  3 unread stretches «…» (f. 119r L32-36, f. 119v L35-37).
+- **After, by words** (422): 397 sure, 22 probable, 2 restored (*c[o]sì*, *sign[o]r*), 0 unresolved, 1 code sign
+  (DUCA). Sure + probable = **99.3 %**.
+- **After, by letters** (1904 cipher-sign tokens): 1880 sure, 22 probable (19 doubtful signs and the 2 looped
+  b-signs read rr, below), 1 unidentified, 1 code sign. Sure + probable = **99.9 %** of the letter signs.
+
+## Points for you
+- **Looped b-shaped sign**: here it is **rr** by sense in *Fe-rr-ara* (f. 119r L33-34) and *a-rr-ivò* (f. 120r L03),
+  and **z** in *contente-z-a* (f. 119v L26). Together with no. 63 (z) and no. 66 (rr), the sign seems to carry both
+  values, or two close forms are merged. Decoded z here by protocol.
+- Gaps filled, among others: f. 119r *in cosa d'honor, d'utile, stabilimento et esaltation del nome, casa et stato
+  di Ferrara, che da mo' suo si poseva dire* and *ci habi prestato ogni sua opera et uficio. Non contenti di questa
+  opera*; f. 119v *si per stabilire il suo stato, esaltar con suo poco et picolo pericolo et minor spesa la sua casa
+  et sucesione, come per liberar Italia* and *io Sormano una altra volta mi trovase, come mi trovai, solo con il Duca
+  per avertirlo di novo*; f. 120r *poco apreso noi arrivò eso signor don Hercole, che ci confirmò come el signor Duca
+  in alcun modo intendere non voleva al regno per sé*.
+- Corrections: f. 119v L26 *cedeva* (not *concedeva(?)*); L29 *operando* (not *sperando*); L23 *la sua* (not
+  *questa sua*); f. 120r L23 *causa* (not *cosa*). *Duca* and *Papa* are spelled out in cipher on f. 120r.
 
 Based on Lasry's key, Arya Patel's identification of f. 123, and your no. 66 re-read and transcriptions.

@@ -189,4 +189,12 @@ Points to check:
 - Я and Ф are probably *Fiorentini* and *Imperatore*, from sense only.
 - The looped b-sign reads z in this stretch (Abruzzo, importanza, sicurezza), against rr in no. 66.
 
-The no. 65 gap was not attempted. The state of no. 63 is left to the maintainer.
+The no. 65 gap was not attempted in that pass. The state of no. 63 is left to the maintainer.
+
+## 12 Nov 2026 — no. 65 gaps re-read (Brice Dudout, Claude Opus 5.5)
+
+The cipher runs left open in `n65_reading.md` (foot of f. 119r, foot of f. 119v, f. 120r) were re-read sign by sign
+on Gallica views 123-124 in `dudout/`, frozen before decoding, and measured once (1904 cipher-sign tokens): 0.990
+against 0.874 for `n65_transcription.md`, all 400 controls below (shuffled text max 0.901). `dudout/no65_reading_reread.md`
+has 99.3% of the cipher words sure or probable and no unresolved word. The looped b-sign reads rr twice (Ferrara,
+arrivò) and z once (contenteza) in these lines. The state of no. 65 is left to the maintainer.
