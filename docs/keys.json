@@ -4838,6 +4838,30 @@
    "by": "Secretaria Particular del Presidente (typed sheet addressed to Francisco L. de la Barra)",
    "year": null,
    "note": "A typed key sheet in the Francisco Leon de la Barra papers, tested both ways on the 1912 and 1913 telegrams of the same fonds: no Spanish. Date not established."
+  },
+  {
+   "id": "k-cmxv-clavega",
+   "label": "Key card \"Clave G.A. (una de las usadas en San Antonio)\", CEHM-Carso CMXV.16.1557.1 scans 12-13: a digraphic table of 2 rows x 15 columns",
+   "kind": "archive key",
+   "by": "signed \"Dr. V.G.\"",
+   "year": 1911,
+   "note": "A plain letter is one of five row letters (W Z C T G or M V P K I) followed by its column letter (B L R A F Q E N H D X Y O S J). Tested before use on eight sibling telegrams with period decipherments: 0.866 on 769 cipher letters against at most 0.257 for 400 controls."
+  },
+  {
+   "id": "k-setembrino-mftdbsj",
+   "label": "Eight-letter Vigenère key MFTDBSJV (Ministry of War telegrams to Fortaleza, March-April 1914), restarted at every word",
+   "kind": "rebuilt here",
+   "by": "Daniel Bourdeau, Brice Dudout",
+   "year": 1914,
+   "note": "Rebuilt from the contemporary pencil decipherment on the sheet of 14 March 1914; its pre-registered held-out test failed (0.733 against 0.85; 0.865 only with a lexicon enlarged afterwards). Near variants LETCARIV (10 March) and OVHXZIRF (20 May, found from the ciphertext) are provisional."
+  },
+  {
+   "id": "k-nuevaclave-grille",
+   "label": "8 x 8 turning grille (Fleissner) of the \"nueva clave\", April 1911",
+   "kind": "rebuilt here",
+   "by": "an AI model (one API run), checked by Brice Dudout",
+   "year": 1911,
+   "note": "16 holes derived from the nulls x/z of CMXV.16.1551.3-4; blocks of 64 letters, quarter turns clockwise. Not validated: the pre-registered measure on a held-out telegram failed (0.520 against 0.70)."
   }
  ],
  "links": [
@@ -7798,6 +7822,24 @@
    "target": "nunez1899",
    "how": "rebuilt from",
    "note": "frozen from three other glossed telegrams; 28 of 65 code words of 9926 confirmed by its contemporary translation, 36 values from the translation only"
+  },
+  {
+   "key": "k-cmxv-clavega",
+   "target": "mccarty1911",
+   "how": "read unchanged",
+   "note": "all ten coded words of CMXV.15.1432.1-4 and 16.1561.7-13 decrypt with the card; two words need a faulty or lost pair repaired by the sense"
+  },
+  {
+   "key": "k-setembrino-mftdbsj",
+   "target": "setembrino1914",
+   "how": "rebuilt from",
+   "note": "rebuilt from the pencil decipherment of 14 March 1914, fixed on that sheet alone and measured on 731 held-out letters (pre-registered test failed; amended lexicon 0.865)"
+  },
+  {
+   "key": "k-nuevaclave-grille",
+   "target": "nuevaclave1911",
+   "how": "rebuilt from",
+   "note": "proposed from the ciphertext of three telegrams with a fourth held out; five 64-letter blocks read; the held-out measure failed"
   }
  ],
  "sources": [
@@ -9078,6 +9120,14 @@
   {
    "source": "s-cyphersolver",
    "key": "k-nunez1899code"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-setembrino-mftdbsj"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-nuevaclave-grille"
   }
  ],
  "unlinked": {
@@ -10386,6 +10436,11 @@
    "key": "k-x15466",
    "target": "delabarra1913",
    "note": "tested in both directions (scripts/keysheet_test.py): no Spanish; a different key"
+  },
+  {
+   "key": "k-cmxv-clavega",
+   "target": "nuevaclave1911",
+   "note": "the Clave G.A. card and the other cards of CMXV.16.1557.1, tried group by group on the three grille telegrams: none reads them (best coverage 0.50 < 0.70)"
   }
  ]
 }

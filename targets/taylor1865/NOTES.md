@@ -514,3 +514,14 @@ I/49/1 p. 1003 prints the Adams telegram with its cipher passage left out; the M
 transcription and pre-registration frozen by SHA-256 before any key was tried; the pre-registered measure picks COMPLETE
 VICTORY for the Adams telegram and fails at offset 0 for the Maury one (its break is checked post hoc). Details, controls
 and readings: `dudout/README.md`. Both keys on the same day fit the recipient-specific chronology above.
+
+### Integration check of the 21 February telegrams (12 Nov 2026)
+
+Done by an independent session after PR #438 was merged into the branch; the contributor's files in `dudout/` are unchanged.
+
+- `prereg_measure.py` on the frozen transcription gives `measure_results.json` unchanged; the SHA-256 of the frozen transcription, the pre-registration and the script match; `posthoc_T1_break.py` and `align.py` give the stated figures (-1.2707 against a control maximum of -1.4633; 141/156 and 195/206 letters). An own decoder written from the two keys reproduces both decryptions, differing only at the corrected places.
+- The NARA images (SHA-256 of fr. 0030 and 0032 as stated) were compared with the transcription: 28 of the 29 cipher words of fr. 0030 and 30 of the 44 of fr. 0032 viewed agree (EWELR: W or U), none disagrees. The rest of fr. 0032 was not compared.
+- **The Maury telegram failed the pre-registered test at offset 0** (COME RETRIBUTION rank 10 of 201); the one-place key shift from the seventh word was found afterwards, so its check is post hoc. For the Adams telegram COMPLETE VICTORY is the winner, but COME RETRIBUTION also ranks 1 there; the measure alone does not separate related keys, and the reading is the evidence. The keys are known ones (WAINUT, Bryan Payne), so this is a reading with a known key (method: read with known key), not a recovery; the cipher passage of the Adams telegram is not printed in OR I/49/1 p. 1003, so it is not read from an existing decipherment.
+- Words: 73 of 73 cipher words give English that fits the clear context; 21 of them (Maury 10, Adams 11) carry a one-glyph correction in the clerk's documented confusions and count as read. Counted as holes the shares would be 19 of 29 and 33 of 44.
+- The order of events (blind transcription 00:45 CET, pre-registration 00:50 CET, single commit) is by the contributor's record, as is the claim that no key was tried before.
+- The target as a whole is unchanged: read in part, `fraction_read` unknown (the three volumes are not inventoried); the two telegrams are two more read documents. There is still no page for this target; `docs/_check_writeup.py --audit` listed it before this contribution.

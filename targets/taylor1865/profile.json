@@ -862,7 +862,8 @@
     ],
     "models": [
       "AI language-model agents (WAINUT)",
-      "OpenAI Codex (GPT-6)"
+      "OpenAI Codex (GPT-6)",
+      "Claude (Anthropic) agents run by Brice Dudout (blind transcription, pre-registration, measure and readings of vol. 196 fr. 0030 and 0031-0032)"
     ],
     "sessions": 4,
     "first_date": "2026-10-27",
@@ -1096,6 +1097,44 @@
       "kind": "control",
       "what": "Maintainer integration of PR #388 (bdpayne): re-ran nov9_analysis.py; it reproduced nov9_alignment.tsv, nov9_controls.txt and the seven per-message cipher/decryption files byte for byte (equal-length agreements 190/213, 221/248, 65/72, 80/87, 68/76, 132/144, 124/135; NOTES' 123/135 for 9 March is superseded by the script's 124/135). nov9_apr11_conventions.py not re-run (en-modern corpus not available offline here).",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "transcription",
+      "what": "Brice Dudout: blind transcription of the cipher words of vol. 196 fr. 0030 (to Maury) and fr. 0031-0032 (to D. W. Adams) from the NARA images, frozen by SHA-256 before any key was tried (dudout/blind_transcription_frozen.txt, 10984ebe...); the clear text around each passage was written next to it.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "control",
+      "technique": [
+        "statistical test",
+        "key matching"
+      ],
+      "what": "Pre-registered measure (dudout/prereg_fr.md, prereg_measure.py, frozen by hash): mean log10 English letter probability at offset 0 against 200 random 15-letter keys, closed list of five keys. Adams telegram: COMPLETE VICTORY -1.296, rank 1 of 201 (COME RETRIBUTION also rank 1). Maury telegram: FAILED at offset 0 (COME RETRIBUTION rank 10 of 201, -1.572 against a control maximum of -1.517).",
+      "result": "failed"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "control",
+      "technique": [
+        "statistical test",
+        "key-structure hypothesis"
+      ],
+      "what": "Post hoc (found after the test, not pre-registered): the Maury telegram reads with COME RETRIBUTION at offset 0 for its first six words and one place ahead from the seventh (one key letter skipped, or the one-letter word 'a' not copied); with one break and free offsets for every key, COME RETRIBUTION scores -1.271 against -1.463 at most for 200 random keys.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "reading",
+      "what": "Both telegrams read word by word: 29 of 29 and 44 of 44 cipher words give English that fits the clear text around them; 26 letters in 21 words (Maury 15 letters in 10 words, Adams 11 in 11) needed a one-glyph correction of the kinds already listed for this clerk. The cipher passage of the Adams telegram is not in OR I/49/1 p. 1003 ('* * *').",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "what": "Integration check by an independent session: the measure, the post hoc check and align.py were re-run and agree with the contributor's files (measure_results.json identical; frozen hashes match); an own decoder from the keys reproduces both decryptions; the NARA images (SHA-256 of fr. 0030 and 0032 as stated) were compared with the transcription: 28 of 29 cipher words of fr. 0030 and 30 of 44 of fr. 0032 viewed, no disagreement.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -1221,6 +1260,13 @@
         "role": "solution",
         "date": "2026-11-12",
         "note": "Vol. 196 fr. 0030 (21 Feb, to Maury) and fr. 0031-0032 (21 Feb, to D. W. Adams), two open telegrams of the catalogue list, read with the known keys after a blind transcription and a pre-registration frozen by SHA-256 (dudout/). Keys, conventions and glyph list from WAINUT and bdpayne."
+      },
+      {
+        "who": "dudout",
+        "role": "verification",
+        "note": "vol. 196 fr. 0030 and 0031-0032 (21 Feb 1865) read; blind transcription, pre-registered measure (the Maury telegram failed it at offset 0), post hoc key break; order of events by the contributor's record",
+        "date": "2026-11-12",
+        "source": "https://github.com/dbourdeau/cyphersolver/pull/438"
       }
     ],
     "texts": [
@@ -1636,7 +1682,7 @@
         "state": "read",
         "read_share": 1.0,
         "summary": "The enemy has left Vicksburg without avowed intention of attacking Mobile; find out what he is doing at Pensacola, by a forced reconnaissance if need be; if no attack from Pensacola is likely, move most of the cavalry on the eastern shore to the Selma and Montgomery line against a movement on Central Alabama.",
-        "note": "COME RETRIBUTION; 29/29 cipher words, 141/156 letters as read. Fails the pre-registered offset-0 test; one-break check is post hoc (dudout/posthoc_T1_break_results.txt).",
+        "note": "COME RETRIBUTION; 29/29 cipher words, 141/156 letters as read. Fails the pre-registered offset-0 test; one-break check is post hoc (dudout/posthoc_T1_break_results.txt). Integration check: counted in cipher words (29 of 29); 10 of them carry a one-glyph correction, which is counted as read (a correction of the image reading within the clerk's documented confusions, the key being known); counted as holes the share would be 19/29.",
         "reading_review": {
           "grade": "A",
           "by": "Claude (Anthropic) model review for Brice Dudout; not an independent human review",
@@ -1654,7 +1700,7 @@
         "state": "read",
         "read_share": 1.0,
         "summary": "Public stores in North Alabama to be put in fortified places or south of the Alabama River; send the Cahaba prisoners to Andersonville on first news of an enemy advance toward Central Alabama; organize the government employees at Demopolis without depriving the workshops.",
-        "note": "COMPLETE VICTORY at offset 0, pre-registered winner (rank 1 of 201); 44/44 cipher words, 195/206 letters as read.",
+        "note": "COMPLETE VICTORY at offset 0, pre-registered winner (rank 1 of 201); 44/44 cipher words, 195/206 letters as read. Integration check: counted in cipher words (44 of 44); 11 of them carry a one-glyph correction, which is counted as read (a correction of the image reading within the clerk's documented confusions, the key being known); counted as holes the share would be 33/44.",
         "reading_review": {
           "grade": "A",
           "by": "Claude (Anthropic) model review for Brice Dudout; not an independent human review",
