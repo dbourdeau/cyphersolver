@@ -1,0 +1,8 @@
+LABEL: rossi1537_blindtall
+Local UTC: 20261111T211036Z
+Files: 6
+Manifest SHA-256: 5dccbdf7fc22f251d76b0820f3cebbd604bc91138156d05c38319ed443f67fc8
+RFC3161 TSA (Sectigo Public Time Stamping Signer): status=Granted. time=Nov 11 21:10:37 2026 GMT
+OpenTimestamps: submitted (pending Bitcoin; ots upgrade later)
+Verify RFC3161: openssl ts -reply -in MANIFEST.sha256.tsr -text ; openssl ts -verify -data MANIFEST.sha256 -in MANIFEST.sha256.tsr -CAfile <Sectigo chain>
+Verify OTS: ots verify MANIFEST.sha256.ots

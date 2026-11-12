@@ -1,0 +1,151 @@
+labels file: b68_rossi_blindtall/blind_set/blind_set_labels.tsv ; ids labelled 358 of 358 ; missing 0 ; unknown ids 0
+blind class totals: {'B': 163, 'A': 179, 'D': 15, 'C': 1}
+cross-tab (pass-1 label, b64 verdict, blind class): count
+   ('D', '?', 'A') 1
+   ('D', '?', 'B') 1
+   ('D', 'd', 'A') 1
+   ('D', 'd', 'D') 1
+   ('D', 'l', 'A') 73
+   ('D', 'l', 'B') 6
+   ('D', 'l', 'D') 4
+   ('D', 'not_sheeted', 'A') 10
+   ('D', 'not_sheeted', 'B') 1
+   ('D', 'not_sheeted', 'C') 1
+   ('D', 't', 'B') 3
+   ('P', '?', 'A') 6
+   ('P', '?', 'B') 3
+   ('P', 'd', 'A') 64
+   ('P', 'd', 'B') 20
+   ('P', 'd', 'D') 1
+   ('P', 'l', 'A') 4
+   ('P', 'not_sheeted', 'A') 3
+   ('P', 'not_sheeted', 'B') 15
+   ('P', 't', 'A') 17
+   ('P', 't', 'B') 114
+   ('P', 't', 'D') 9
+AGREEMENT on units where blind gave A/B/C AND b64 gave firm-or-leaning d/t/l: 182 agree / 302 = 60.26%
+BLIND CONSENSUS strict: S 2115 + E 180 + N 73 = 2368 ; strict 2115/2368 = 89.32%
+   letter A (c31r+c31v): S 1429 + E 137 + N 47 = 1613 ; 1429/1613 = 88.59%
+   letter B (c33r): S 686 + E 43 + N 26 = 755 ; 686/755 = 90.86%
+   key changes applied by blind classes (pass-1 code, key letter, blind letter): {('D', 'l', 'd'): 85, ('P', 't', 'd'): 94, ('D', 'l', 't'): 11}
+DISAGREEMENTS blind vs b64 (120):
+   T5316  B01 unit 1  p1=D b64=l blind=A conf=high
+   T3217  B01 unit 7  p1=D b64=l blind=A conf=high
+   T4257  B02 unit 3  p1=D b64=l blind=A conf=medium
+   T1252  B02 unit 6  p1=D b64=l blind=A conf=high
+   T6832  B03 unit 1  p1=P b64=d blind=B conf=medium
+   T9486  B03 unit 4  p1=D b64=l blind=B conf=medium
+   T6234  B04 unit 4  p1=D b64=l blind=A conf=high
+   T5706  B05 unit 3  p1=D b64=l blind=A conf=low
+   T6156  B05 unit 4  p1=D b64=l blind=B conf=low
+   T6739  B05 unit 6  p1=P b64=d blind=B conf=low
+   T2606  B06 unit 3  p1=P b64=t blind=A conf=low
+   T6897  B06 unit 5  p1=D b64=l blind=A conf=high
+   T2681  B07 unit 2  p1=D b64=l blind=B conf=medium
+   T8690  B08 unit 2  p1=D b64=l blind=A conf=medium
+   T1231  B08 unit 6  p1=D b64=l blind=A conf=high
+   T3521  B09 unit 7  p1=D b64=l blind=A conf=high
+   T3644  B10 unit 4  p1=D b64=l blind=A conf=high
+   T5407  B10 unit 5  p1=D b64=l blind=A conf=medium
+   T1227  B10 unit 6  p1=P b64=l blind=A conf=medium
+   T2537  B10 unit 7  p1=D b64=l blind=A conf=high
+   T8155  B11 unit 3  p1=D b64=l blind=A conf=high
+   T3004  B11 unit 5  p1=D b64=l blind=A conf=high
+   T6077  B11 unit 7  p1=D b64=l blind=A conf=medium
+   T8226  B11 unit 8  p1=D b64=l blind=A conf=high
+   T1622  B12 unit 4  p1=D b64=l blind=A conf=high
+   T3115  B12 unit 5  p1=P b64=d blind=B conf=medium
+   T7379  B12 unit 6  p1=P b64=t blind=A conf=low
+   T4274  B12 unit 8  p1=D b64=l blind=A conf=high
+   T8600  B12 unit 11  p1=P b64=t blind=A conf=high
+   T3806  B13 unit 3  p1=P b64=d blind=B conf=medium
+   T4318  B13 unit 4  p1=D b64=l blind=A conf=high
+   T1151  B14 unit 3  p1=D b64=l blind=A conf=high
+   T5752  B14 unit 4  p1=D b64=l blind=A conf=medium
+   T7622  B15 unit 3  p1=D b64=l blind=A conf=high
+   T3568  B16 unit 1  p1=P b64=t blind=A conf=low
+   T6762  B16 unit 3  p1=D b64=l blind=A conf=high
+   T1741  B16 unit 4  p1=D b64=l blind=A conf=high
+   T9955  B17 unit 5  p1=D b64=l blind=A conf=medium
+   T8144  L01 unit 2  p1=P b64=d blind=B conf=medium
+   T7897  L01 unit 4  p1=D b64=l blind=A conf=high
+   T2951  L02 unit 4  p1=D b64=l blind=A conf=low
+   T1550  L03 unit 4  p1=D b64=l blind=A conf=high
+   T9318  L03 unit 5  p1=D b64=l blind=A conf=high
+   T1186  L03 unit 6  p1=P b64=t blind=A conf=low
+   T9638  L03 unit 7  p1=D b64=l blind=A conf=high
+   T8498  L03 unit 8  p1=D b64=l blind=A conf=medium
+   T9508  L05 unit 2  p1=D b64=l blind=A conf=high
+   T9595  L05 unit 3  p1=D b64=l blind=A conf=high
+   T7539  L05 unit 4  p1=D b64=l blind=A conf=high
+   T5762  L07 unit 2  p1=D b64=l blind=A conf=medium
+   T1335  L07 unit 3  p1=P b64=d blind=B conf=medium
+   T7975  L07 unit 7  p1=D b64=l blind=A conf=high
+   T8402  L07 unit 9  p1=D b64=l blind=A conf=high
+   T4067  L07 unit 10  p1=D b64=l blind=A conf=high
+   T1041  L08 unit 7  p1=D b64=l blind=A conf=high
+   T2138  L09 unit 5  p1=D b64=l blind=A conf=high
+   T9520  L10 unit 2  p1=D b64=l blind=A conf=low
+   T1229  L10 unit 6  p1=D b64=l blind=A conf=high
+   T9939  L11 unit 2  p1=P b64=t blind=A conf=low
+   T9045  L13 unit 1  p1=P b64=d blind=B conf=medium
+   T7166  L13 unit 2  p1=D b64=l blind=A conf=low
+   T9269  L13 unit 4  p1=D b64=l blind=A conf=low
+   T7064  L13 unit 6  p1=P b64=d blind=B conf=high
+   T3535  L13 unit 7  p1=D b64=l blind=A conf=low
+   T5951  L14 unit 1  p1=P b64=l blind=A conf=low
+   T5713  L14 unit 4  p1=P b64=d blind=B conf=medium
+   T2525  L16 unit 1  p1=P b64=d blind=B conf=low
+   T6224  L16 unit 2  p1=P b64=d blind=B conf=medium
+   T6685  L16 unit 3  p1=P b64=t blind=A conf=medium
+   T2469  L16 unit 5  p1=P b64=t blind=A conf=medium
+   T9145  L16 unit 7  p1=P b64=t blind=A conf=low
+   T3308  L18 unit 3  p1=D b64=l blind=A conf=low
+   T2737  L18 unit 4  p1=P b64=t blind=A conf=low
+   T2814  L18 unit 5  p1=D b64=l blind=B conf=low
+   T7587  L18 unit 7  p1=P b64=t blind=A conf=low
+   T1921  L18 unit 8  p1=D b64=l blind=A conf=high
+   T4234  L19 unit 5  p1=P b64=d blind=B conf=low
+   T7160  L20 unit 4  p1=D b64=l blind=B conf=low
+   T9333  L20 unit 5  p1=P b64=t blind=A conf=low
+   T9869  L21 unit 5  p1=D b64=l blind=A conf=medium
+   T8375  L21 unit 6  p1=D b64=l blind=B conf=medium
+   T2738  L22 unit 1  p1=P b64=d blind=B conf=low
+   T7523  L22 unit 2  p1=D b64=l blind=A conf=low
+   T9060  V01 unit 1  p1=D b64=l blind=A conf=high
+   T8104  V01 unit 2  p1=D b64=l blind=A conf=medium
+   T5322  V01 unit 3  p1=D b64=l blind=A conf=low
+   T7804  V01 unit 9  p1=D b64=l blind=A conf=high
+   T2979  V02 unit 3  p1=D b64=l blind=A conf=high
+   T4532  V02 unit 8  p1=D b64=l blind=A conf=low
+   T9967  V02 unit 9  p1=D b64=l blind=A conf=low
+   T9882  V03 unit 4  p1=P b64=t blind=A conf=low
+   T6178  V03 unit 5  p1=P b64=l blind=A conf=low
+   T5196  V03 unit 6  p1=D b64=l blind=A conf=high
+   T2844  V03 unit 9  p1=D b64=l blind=A conf=low
+   T1955  V04 unit 1  p1=D b64=l blind=A conf=high
+   T9513  V05 unit 2  p1=D b64=l blind=A conf=medium
+   T1003  V05 unit 5  p1=P b64=d blind=B conf=medium
+   T8846  V05 unit 7  p1=D b64=l blind=A conf=high
+   T5786  V06 unit 1  p1=P b64=d blind=B conf=medium
+   T2549  V06 unit 2  p1=P b64=t blind=A conf=low
+   T4853  V06 unit 4  p1=D b64=l blind=A conf=medium
+   T9362  V07 unit 2  p1=D b64=l blind=A conf=medium
+   T3397  V09 unit 4  p1=P b64=l blind=A conf=low
+   T8554  V09 unit 5  p1=P b64=d blind=B conf=low
+   T5610  V09 unit 8  p1=P b64=d blind=B conf=high
+   T4822  V11 unit 1  p1=D b64=l blind=A conf=medium
+   T5828  V11 unit 4  p1=D b64=l blind=A conf=medium
+   T5237  V12 unit 1  p1=D b64=l blind=A conf=medium
+   T1789  V12 unit 7  p1=P b64=t? blind=A conf=low
+   T8507  V13 unit 1  p1=P b64=d blind=B conf=medium
+   T6013  V13 unit 2  p1=D b64=l blind=A conf=high
+   T8471  V13 unit 5  p1=P b64=d blind=B conf=medium
+   T1919  V13 unit 6  p1=D b64=l blind=A conf=medium
+   T4583  V13 unit 9  p1=D b64=l blind=A conf=high
+   T8484  V13 unit 10  p1=D b64=l blind=A conf=medium
+   T5823  V13 unit 11  p1=D b64=l blind=A conf=high
+   T9820  V13 unit 12  p1=P b64=t blind=A conf=medium
+   T6800  V14 unit 3  p1=D b64=l blind=A conf=medium
+   T1188  V14 unit 5  p1=P b64=d blind=B conf=medium
+   T9895  V14 unit 7  p1=P b64=t blind=A conf=medium

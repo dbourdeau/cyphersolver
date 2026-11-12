@@ -1,0 +1,71 @@
+labels file: b68_rossi_blindtall/blind_set_labels_Ponly.tsv ; ids labelled 358 of 358 ; missing 0 ; unknown ids 0
+blind class totals: {'B': 152, 'C': 102, 'A': 94, 'D': 10}
+cross-tab (pass-1 label, b64 verdict, blind class): count
+   ('D', '?', 'C') 2
+   ('D', 'd', 'C') 2
+   ('D', 'l', 'C') 83
+   ('D', 'not_sheeted', 'C') 12
+   ('D', 't', 'C') 3
+   ('P', '?', 'A') 6
+   ('P', '?', 'B') 3
+   ('P', 'd', 'A') 64
+   ('P', 'd', 'B') 20
+   ('P', 'd', 'D') 1
+   ('P', 'l', 'A') 4
+   ('P', 'not_sheeted', 'A') 3
+   ('P', 'not_sheeted', 'B') 15
+   ('P', 't', 'A') 17
+   ('P', 't', 'B') 114
+   ('P', 't', 'D') 9
+AGREEMENT on units where blind gave A/B/C AND b64 gave firm-or-leaning d/t/l: 261 agree / 307 = 85.02%
+BLIND CONSENSUS strict: S 2204 + E 91 + N 73 = 2368 ; strict 2204/2368 = 93.07%
+   letter A (c31r+c31v): S 1487 + E 79 + N 47 = 1613 ; 1487/1613 = 92.19%
+   letter B (c33r): S 717 + E 12 + N 26 = 755 ; 717/755 = 94.97%
+   key changes applied by blind classes (pass-1 code, key letter, blind letter): {('P', 't', 'd'): 94}
+DISAGREEMENTS blind vs b64 (46):
+   T6832  B03 unit 1  p1=P b64=d blind=B conf=medium
+   T6739  B05 unit 6  p1=P b64=d blind=B conf=low
+   T2606  B06 unit 3  p1=P b64=t blind=A conf=low
+   T1227  B10 unit 6  p1=P b64=l blind=A conf=medium
+   T3115  B12 unit 5  p1=P b64=d blind=B conf=medium
+   T7379  B12 unit 6  p1=P b64=t blind=A conf=low
+   T8600  B12 unit 11  p1=P b64=t blind=A conf=high
+   T3806  B13 unit 3  p1=P b64=d blind=B conf=medium
+   T3568  B16 unit 1  p1=P b64=t blind=A conf=low
+   T8144  L01 unit 2  p1=P b64=d blind=B conf=medium
+   T1186  L03 unit 6  p1=P b64=t blind=A conf=low
+   T3069  L06 unit 1  p1=D b64=d blind=C conf=high
+   T1387  L06 unit 4  p1=D b64=t blind=C conf=medium
+   T1335  L07 unit 3  p1=P b64=d blind=B conf=medium
+   T9953  L09 unit 3  p1=D b64=t blind=C conf=low
+   T9939  L11 unit 2  p1=P b64=t blind=A conf=low
+   T9045  L13 unit 1  p1=P b64=d blind=B conf=medium
+   T7064  L13 unit 6  p1=P b64=d blind=B conf=high
+   T5951  L14 unit 1  p1=P b64=l blind=A conf=low
+   T5713  L14 unit 4  p1=P b64=d blind=B conf=medium
+   T2525  L16 unit 1  p1=P b64=d blind=B conf=low
+   T6224  L16 unit 2  p1=P b64=d blind=B conf=medium
+   T6685  L16 unit 3  p1=P b64=t blind=A conf=medium
+   T2469  L16 unit 5  p1=P b64=t blind=A conf=medium
+   T9145  L16 unit 7  p1=P b64=t blind=A conf=low
+   T2737  L18 unit 4  p1=P b64=t blind=A conf=low
+   T7587  L18 unit 7  p1=P b64=t blind=A conf=low
+   T8580  L19 unit 1  p1=D b64=t blind=C conf=medium
+   T4234  L19 unit 5  p1=P b64=d blind=B conf=low
+   T9333  L20 unit 5  p1=P b64=t blind=A conf=low
+   T2738  L22 unit 1  p1=P b64=d blind=B conf=low
+   T9882  V03 unit 4  p1=P b64=t blind=A conf=low
+   T6178  V03 unit 5  p1=P b64=l blind=A conf=low
+   T8955  V03 unit 7  p1=D b64=d blind=C conf=low
+   T1003  V05 unit 5  p1=P b64=d blind=B conf=medium
+   T5786  V06 unit 1  p1=P b64=d blind=B conf=medium
+   T2549  V06 unit 2  p1=P b64=t blind=A conf=low
+   T3397  V09 unit 4  p1=P b64=l blind=A conf=low
+   T8554  V09 unit 5  p1=P b64=d blind=B conf=low
+   T5610  V09 unit 8  p1=P b64=d blind=B conf=high
+   T1789  V12 unit 7  p1=P b64=t? blind=A conf=low
+   T8507  V13 unit 1  p1=P b64=d blind=B conf=medium
+   T8471  V13 unit 5  p1=P b64=d blind=B conf=medium
+   T9820  V13 unit 12  p1=P b64=t blind=A conf=medium
+   T1188  V14 unit 5  p1=P b64=d blind=B conf=medium
+   T9895  V14 unit 7  p1=P b64=t blind=A conf=medium
