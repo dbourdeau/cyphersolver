@@ -1,11 +1,12 @@
 # Champagne news-letters to the duc de Nevers, June 1590 (BnF fr. 3623 nos. 24, 25, 60; catalogue no. 30)
 
-Status: in progress (25 Oct 2026). No. 25 is read in part with Tomokiyo's Nevers key no. 25, matched by Michael Brackx
-(issue #96); nos. 24 and 60 have their cipher runs decoded with the same key but no reading of the letters yet; no. 78
-is unread. See "25 Oct 2026: Nevers key no. 25" below. Earlier status: not read (23 Oct 2026). The two-digit alphabet of nos. 24, 25 and 60 (June 1590, one hand), rebuilt from a few letters
-glossed over the figures and from the alphabetical order of its values: 63 of 104 figures read, ten of the twelve
-cipher passages in whole or in part. No. 78 (1591), one group of about six mixed signs in another code, is listed
-here unread, with no claim that it shares the key.
+Status (12 Nov 2026): read in part, with Tomokiyo's Nevers key no. 25, matched by Michael Brackx (issue #96). No. 25
+is read in part (Brackx; a second reading by Andrew Beling differs in about 30 places); nos. 24 and 60 are transcribed
+and deciphered by Beling (PR #422), one reader; no. 78 is unread. See "25 Oct 2026", "11 Nov 2026" and "Integration check
+(12 Nov 2026)" below. The sections before those are kept as written and describe the earlier state: the two-digit
+alphabet rebuilt from a few letters glossed over the figures and from the alphabetical order of its values (63 of 104
+figures, to 23 Oct 2026). No. 78 (1591), one group of about six mixed signs in another code, is listed here unread, with
+no claim that it shares the key.
 
 Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026). Until then this target also held two other
 ciphers, each now with its own folder and page (a different cipher, with its own page):
@@ -162,24 +163,90 @@ no. 24 run one ahead of this file's (page line 9 = l. 8 here).
   14 agree, 13 read otherwise, 10 doubtful for both; about 18 other differences, 7 of them settled in his favour. The l. 34
   run may end **38 93 9̄ "du [Roy]"**, not barred 39 "du M. de La Noue": needs a third look. "l'union" has **58** on the page;
   the sheet gives l = 56 only, so 58 -> 56 is an emendation of the encipherer's slip.
-- Not found: who Ludouic and Launay were (`beling/names_check.md`). Read shares not measured; class unchanged.
+- Not found: who Ludouic and Launay were (`beling/names_check.md`). Read shares not measured by the contributor (measured at the integration check, below); class unchanged.
+
+## Integration check (12 Nov 2026) of PR #422
+
+PR #422 was verified independently before it was taken in; this section records what the verification found and what
+was changed here. The contributor's files in `beling/` are unchanged.
+
+**Reproduced.** The ten frozen hashes; 13 of 14 glossed figures of no. 24 agree with key no. 25 (0.929), 200 shuffled
+keys mean 0.053, best 0.357; a wider control (3 x 2,000 shuffles) gives a best of 0.357 to 0.429; a second parser and
+scorer give 13 of 14; `runs_mechanical.txt` is identical. On the Gallica images (script route:
+`https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b525245007/f83/full/max/0/default.jpg`, which answers curl; take
+`max` and enlarge locally, a region upscale returns 400) the run figures agree 25 of 25 in no. 24 and 17 of 17 in no. 60.
+
+**Qualifications.**
+- The order of work (pre-registration, then transcription, then script) is by the contributor's record: the pull request
+  is a single commit.
+- Two of the 14 glossed figures are not independent of the figure correction: the glosses l and u sit over the figures
+  Beling re-read ("95 93" to barred 9, 56, 93). The image supports him (five digits 9-5-6-9-3, an arch over the first 9).
+- The sample is 14 figures. The check adds to Brackx's match and does not stand alone.
+- No. 24 line 9: the fifth figure is 36 or 56 on the image; 56 is read (Ludouic), and it is not one of the 14.
+- Not checked by anyone but Beling: the key sheet names 1-51, words, cities and provinces, xliij = "Intelligence", the
+  clear text of no. 24 beyond the run lines, and the 30-odd word differences in no. 25.
+
+**No. 25 l. 34: two readings, both kept.** Brackx reads the run's end 38 93 and a barred 39, "il se defie du M[onsieu]r de
+la noue". Beling reads 38 93 and a barred 9, "il se defie du [Roy]": five digits after 43, the bar over the last 9 only,
+"d u" glossed over 38 93. The verifier's own look at Gallica f85 agrees with Beling. Brackx's reading stays in
+`texts/n25_reading.md` and `texts/n25_en.md` as he wrote it; the page and the profile show both readings and who reads
+which. **To do: ask Michael Brackx to look at the run again** (issue #96 is the place; nothing has been posted). Beling's
+other alternatives in no. 25 are one reader's and are listed as such: "elle demeura a Gonnesse" for "d'ille derechef a
+Compiegne" (l. 2), "d'Auvergne" for "d'Arques" (l. 30), "a la puissance" for "a la misericorde" (l. 49), and the division
+of the l. 41-42 sentence. "l'union" has 58 on the page (both readers); 56 is an emendation of the encipherer's figure.
+
+**Texts added.** `texts/n24_reading.md` and `texts/n60_reading.md` are Beling's French reading copied from
+`beling/results/n24_reading.md` (two marked changes in no. 24, below); `texts/n24_en.md` and `texts/n60_en.md` are English
+translations written here from his French, sentence by sentence with the same holes. Both letters were read as
+sentences here (reading_review grade A, one reader's transcription). Read shares, measured with
+`research/reading_audit/v10_relabel.py` (the measure used for no. 25: doubtful words, supplied words and bracketed
+abbreviation expansions all count as holes):
+
+| Letter | Words | Holes | Share | Without the bracketed expansions (the verifier's count) |
+|---|---|---|---|---|
+| no. 24 | 761 | 34 | 0.957 | about 0.98 |
+| no. 60 | 45 | 3 | 0.938 | about 0.956 |
+| no. 25 (Brackx) | 892 | 72 | 0.925 | not counted |
+| together | 1,698 | 109 | 0.940 | |
+
+No. 24 is over the 95% bar on one reader; no. 60 and no. 25 are under it. The target stays read in part.
+
+**Two changes to Beling's text of no. 24, both marked in the file.** (1) The margin sign before "Les" in line 12 (his
+"1 Lbm.", possibly lviij = Paris) is set as the doubtful word [?Paris] that ends the sentence of line 11. (2) In line
+20 the figure 17 carries a clear overbar on the image (Gallica f83, one look at the integration check), so it is set as
+the barred 17 of key no. 25, the comte de Soissons: "ayant envoyé devant {comte de Soissons} des com[pagnies]". Beling
+has the number 17. This needs a second look like every other single reading here.
+
+**No. 60, a candidate.** At the verification the words before the second run seemed to be "au s^r" (the same abbreviation
+as in line 1), which would give "ce qu'il en est au s[ieu]r de Launay" rather than "en est aussi de Launan". One look; not
+adopted, recorded in `texts/n60_reading.md`.
+
+**Figures file.** `ct_3623_twodigit.txt` now carries the corrected figures (110 tokens, 43 distinct, measured): no. 24
+line 8 fifth figure 56, line 22 "99 9b 56 93 35", the barred 22, 51, 44, the plain 84 and the barred 17. The table in
+"Nos. 24, 25, 60: the two-digit alphabet" above keeps the figures as first read.
+
+**Class.** Read in part; method unchanged (read after matching with key from external sources); provenance mixed
+(Brackx's match and reading, Beling's readings and check, the project's first alphabet and this check).
 
 ## Remaining gaps
 
-- No. 25: 72 holes in the reading (doubtful clear words such as [?poix] [?doigt], [?Lamour], [?balliages] [?de] [?flandre], the besieged town in K) and the isolated figure 3 in the Soissons run - blocker: illegible; contrast-enhanced enlargements of the native scan did not resolve them (Brackx); a second reader (Beling, 11 Nov 2026) settles or re-reads 27 of the 37 marked words and leaves 10 doubtful for both; the l. 34 run's end (Roy or La Noue) needs a third look
-- Nos. 24 and 60: transcribed and read by one reader (Beling, 11 Nov 2026); about 15 doubtful words in no. 24, two in no. 60; who Ludouic and Launay were - blocker: illegible; a second reader of the clear text is the next step; the names are not found in print or on the web (beling/names_check.md)
-- Nevers key no. 25 sheet (fr. 3995 f. 51r): the 'Mots' and 'Dames' blocks not transcribed (names, words, cities and provinces done, Beling 11 Nov 2026) - blocker: not-attempted; not needed by any run of nos. 24, 25 or 60
+- No. 25: 72 holes in the reading (doubtful clear words such as [?poix] [?doigt], [?Lamour], [?balliages] [?de] [?flandre], the besieged town in K, and the bracketed expansions) and the isolated figure 3 in the Soissons run - blocker: illegible; contrast-enhanced enlargements of the native scan did not resolve them (Brackx); the second reader (Beling, 11 Nov 2026) agrees on 14 of the 37 marked words, reads 13 otherwise and leaves 10 doubtful for both; a reader of 16th-century French hands is needed
+- No. 25 l. 34: the run ends 'du M. de La Noue' (barred 39, Brackx) or 'du [Roy]' (barred 9, Beling; the independent verifier's look at the Gallica image agrees with Beling) - blocker: illegible; two readers disagree on the same strokes; Michael Brackx is to be asked to look again (not yet asked, see the integration check); both readings are shown until then
+- Nos. 24 and 60: one reader (Beling, 11 Nov 2026); 15 doubtful places and one unread passage in no. 24, two doubtful words in no. 60; the barred 17 in no. 24 line 20 and 'au s[ieu]r de Launay' in no. 60 are single looks; who Ludouic and Launay were - blocker: illegible; a second reader of the clear text is the next step; the names are not found on the web (beling/names_check.md, four searches)
 - No. 78 (f. 111r), one group of about six mixed signs - blocker: too-short; a single group, probably a name, in a different mixed code
-- Nos. 24/25/60 runs tried with key no. 57 (words57.tsv, syllables): no sense ('qui pi bo ni lo fi ...'); a different, alphabetical two-digit system; bracketed exhaustive LM search (anneal_twodigit.py) proposes 52 i, 62 n, 92 u/v, 95 y but none verifies on a second occurrence - blocker: no-key-material; no key or gloss for the code numbers, single-occurrence letter values cannot be checked
+
+Not a gap in the reading, and not done: the 'Mots' and 'Dames' blocks of the key no. 25 sheet (fr. 3995 f. 51r) are not
+transcribed. No run of nos. 24, 25 or 60 uses an entry of those blocks. Beling's transcription of the names 1-51, the
+words, cities and provinces has had no second reader.
 
 ## Escalation
 
 - [x] siblings: DECODE siblings R9456/R9457 (nos. 26, 27) checked, another key; fr. 3623 nos. 23-27 and 60 viewed
-- [x] clear-pages: the interlinear glosses on nos. 25 and 60 used as anchors; no clear copy of nos. 24/25/60
+- [x] clear-pages: the interlinear glosses on nos. 25 and 60 used as anchors; those on no. 24, found by Beling on 11 Nov 2026, used as a check of key no. 25 (13 of 14); no clear copy of nos. 24/25/60
 - [x] known-keys: **Nevers key no. 25 fits** (Brackx, issue #96, 24 Oct 2026; keys 28, 30, 38 compared and rejected); earlier: Nevers keys of fr. 3995 (Tomokiyo nevers.htm) reviewed; no. 46 tested against the two-digit table and does not fit; no. 57 tried on no. 78's group (no sense) and on the two-digit runs (3 Oct 2026, no sense); no. 23's name key conflicts with the alphabet
 - [x] print: Tomokiyo nevers.htm and GL.htm, Memoires de Nevers index: no printed decipherment
 - [x] key-rebuild: table bracketed by alphabetical order, the anchored slots filled; 3 Oct 2026 exhaustive LM search of the bracketed values (anneal_twodigit.py), none verifies on a second occurrence; the code numbers have no gloss to fit
-- [x] retry: all ten runs re-scored with the bracketed candidates (3 Oct 2026); no change in the count
+- [x] retry: all ten runs re-scored with the bracketed candidates (3 Oct 2026); no change in the count; with key no. 25 every run of nos. 24, 25 and 60 now deciphers (25 Oct and 11 Nov 2026), one isolated figure 3 excepted
 
 ## 23 Oct 2026: no document reads (translation wave)
 - Nos. 24, 25, 60: the repository holds a table of 10 short cipher runs, 6 of them with codes that have no key value or unread; no. 78: its one cipher group is unread. Both entries are **decoded, not read**; class not read, method not solved, fraction 0.

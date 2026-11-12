@@ -1,6 +1,6 @@
 # No. 25, BnF fr. 3623 f. 38r, 5 June 1590: reading
 
-> Michael Brackx (issue #96, 24 Oct 2026), with Codex, from the native Gallica scan of BnF fr. 3623 f. 38r (canvas 85). Original spelling; editorial punctuation and paragraph letters A-K; `[?word]` doubtful, `[word]` supplied, `[?]` one unread word or group; expansions bracketed. Cipher runs read with Tomokiyo's Nevers key no. 25 (BnF fr. 3995 f. 51r). Not checked by a second reader.
+> Michael Brackx (issue #96, 24 Oct 2026), with Codex, from the native Gallica scan of BnF fr. 3623 f. 38r (canvas 85). Original spelling; editorial punctuation and paragraph letters A-K; `[?word]` doubtful, `[word]` supplied, `[?]` one unread word or group; expansions bracketed. Cipher runs read with Tomokiyo's Nevers key no. 25 (BnF fr. 3995 f. 51r). A second reading (Andrew Beling, 11 Nov 2026, `beling/transcription/n25_second_reading.md`, compared in `beling/results/n25_compare.md`) differs in about 30 places. The text below is Brackx's, unchanged. The difference that changes the sense is in G: Beling reads the run's end as 38 93 and a barred 9, "il se defie du [Roy]", where this reading has barred 39, "du M[onsieu]r de la noue"; the independent verifier's look at the image (12 Nov 2026) agrees with Beling, and Brackx has not yet been asked. In `l'union` the page has 58; 56 is an emendation of the encipherer.
 
 ### A
 
