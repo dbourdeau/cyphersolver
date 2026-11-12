@@ -255,7 +255,8 @@
    "result": "partial",
    "technique": ["statistical test"]
   },
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
+  {"date": "2026-11-12", "kind": "verification", "technique": ["key matching", "contextual inference"], "what": "Brice Dudout (Claude Opus 5.5): f. 120 r c15-c19, c24-c31, v c03-c05 re-read sign by sign on Gallica views 246-247 (full resolution), transcription frozen by SHA-256 before decoding: 8 signs changed (w -> w2 'il m'est', 9 -> q+ 'spe[ci]alement', ls -> S 'au ser[v]ice', B -> 6b, two v-with-bar signs, an 8-shaped g), 13 doubtful signs listed. One pre-registered measure on the 16 lines (453 tokens, key unchanged): 0.903 vs 0.909 for the earlier transcription, every one of 400 controls below (permuted keys max 0.428, shuffled text max 0.695): corrections neutral for the measure. Reading counted with the 95% rule: 88.3% -> 90.0% of letters sure or probable (dudout/README.md).", "result": "partial"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -376,6 +377,12 @@
     "who": "contemporary",
     "role": "key or decipherment used",
     "note": "decipherments of the time on fr. 15573 ff. 103v-104r, 7v-8r, 32r-33r, 97r and 149r-150r, used by Burford to check and extend the key"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "fr. 15573 f. 120: the 16 lines left open by the b21 re-read checked sign by sign on the images (8 signs corrected, transcription frozen before decoding, one pre-registered measure), and the stretches re-read with letter classes: 88.3% -> 90.0% by the 95% rule (dudout/)",
+    "date": "2026-11-12"
    }
   ],
   "texts": [
@@ -417,7 +424,8 @@
     "summary": "\"This prince\" is more vexed than ever; the treasurer Bilart wrote that thirty thousand écus in gold have been ready for ten days, the Cardinal of Guise writes that five thousand are coming, but not even a hundred and five thousand would set the army right. Biron cannot be kept; deputies of the army have come; papers of the secretary La Marsilière have fallen into \"our\" hands.",
     "language": "fr",
     "state": "decoded, not read",
-    "reading": "f120_harumi/f120_reading.md"
+    "reading": "f120_harumi/f120_reading.md",
+    "reading_review": {"grade": "B", "by": "Brice Dudout (Claude Opus 5.5)", "date": "2026-11-12", "note": "12 Nov 2026, Brice Dudout (Claude Opus 5.5): r c15-c19 and v c03-c05 now read as sentences, r c24-c31 in part; whole letter 90.0% of letters sure or probable (dudout/f120_reading_reread_annotated.txt); state left to the maintainer"}
    },
    {
     "doc": "fr15573-f385",
