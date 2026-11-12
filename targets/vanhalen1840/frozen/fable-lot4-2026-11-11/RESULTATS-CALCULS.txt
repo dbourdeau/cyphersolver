@@ -1,0 +1,44 @@
+### check.py (cribs isomorphes, structure alphabétique, score LM)
+S1 ueiramontblancfuerza
+S2 custbdiardichoscaudales
+S3 seabocaseconmigoen
+S4 oncedadocasodequela
+S5 delcomboidebarcelonano
+S6 encontactoantesde
+crib encontacto: fenetres isomorphes dans T = 1; textes melanges avec >=1 fenetre: 0/5000
+crib conmigoen: fenetres isomorphes dans T = 1; textes melanges avec >=1 fenetre: 269/5000
+crib caudales: fenetres isomorphes dans T = 1; textes melanges avec >=1 fenetre: 3401/5000
+crib barcelona: fenetres isomorphes dans T = 0; textes melanges avec >=1 fenetre: 2287/5000
+crib montblanc: fenetres isomorphes dans T = 3; textes melanges avec >=1 fenetre: 2390/5000
+paires consecutives alphabetiques: cle = 16 sur 16 ; temoins (100000 cles permutees): max = 6 moyenne = 0.78
+score LM (meme echelle que le recuit) du clair propose : -326.77  par lettre -2.746
+temoins cles permutees (2000): max -490.75 mediane -664.63
+
+### recuit injectif, 70 retiré, 300 graines (3 meilleurs) — témoins mélangés : -367 à -407 ; contrôles positifs espagnols : -252 / -278
+-390.10 grdmihaystnyexgumpl egcstodimodefacegoinrc critaelcueayhdvary ayeroibaezcaorwgun orneahtadortimernayzya uyeaysiesalysucor  | 9=g 16=
+-390.10 grdmihaystnyexgumpl egcstodimodefacegoinrc critaelcueayhdvary ayeroibaezcaorwgun orneahtadortimernayzya uyeaysiesalysucor  | 9=g 16=
+-392.41 huiyapenflbnszhoywt shrflmiaymisvershmabur rualestrosenpideun ensumajesgremuchob mubsepleimulaysubengne onsenfasfetnformu  | 9=h 16=
+
+### recuit homophone libre + pénalité chi2, 70 = signe, 400 graines (optimum = charabia, meilleur que la clé proposée à -336,6 sur le même objectif)
+-258.26 rioledantomansarelre srntodoeldoscansardemin nieoasenesandolain ansiderasanadierema dimsadoaodioelsimanana ensantestaentendi  | 9=r 
+-258.26 rioledantomansarelre srntodoeldoscansardemin nieoasenesandolain ansiderasanadierema dimsadoaodioelsimanana ensantestaentendi  | 9=r 
+
+### recuit homophone amorcé par le seul crib « encontacto »
+-267.95 ueilamontarancruella custasialsicioscausares seaaocaseconmigoen oncesarocesosefuera sercomaoiseaalceroneno encontactoantesse  | 9=u 
+
+### measure.py --part T (INDICATIF : clé construite sur T, ce n'est pas une validation)
+-- KEY-PROPOSAL.tsv / transcription-T-envoi-lot4.txt
+part T nombres hors 70 : 118
+decode : ueiramontblancfuerza / custbdiardichoscaudales / seabocaseconmigoen / oncedadocatsodequela / delcomboidebarcelonatno / encontactoantesde
+car = 0.926 ; mots = 0.000 ; meilleur temoin = 0.719 ; marge = 0.207
+VERDICT : NON VALIDEE -> PARTIELLE au mieux
+-- KEY-PROPOSAL.tsv / T-58.txt
+part T nombres hors 70 : 116
+decode : ueiramontblancfuerza / custbdiardichoscaudales / seabocaseconmigoen / oncedadocasodequela / delcomboidebarcelonano / encontactoantesde
+car = 0.941 ; mots = 0.000 ; meilleur temoin = 0.706 ; marge = 0.235
+VERDICT : NON VALIDEE -> PARTIELLE au mieux
+-- KEY-PROPOSAL.tsv / T-58-emend.txt
+part T nombres hors 70 : 116
+decode : ueiramontblancfuerza / custodiardichoscaudales / seabocaseconmigoen / oncedadocasodequela / delcomboidebarcelonano / encontactoantesde
+car = 0.975 ; mots = 0.000 ; meilleur temoin = 0.697 ; marge = 0.277
+VERDICT : NON VALIDEE -> PARTIELLE au mieux

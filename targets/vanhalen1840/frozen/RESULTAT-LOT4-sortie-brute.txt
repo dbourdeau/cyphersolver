@@ -1,0 +1,24 @@
+# sortie brute de scripts/mesure_lot4.py (execution unique)
+gel verifie (AVENANT-LOT4.sha256)
+--- P01 (scripts/measure.py, inchange) sur H, passe 1 ---
+part H nombres hors 70 : 22
+decode : lacaretera / dicbosacaretera
+car = 0.880 ; mots = 0.000 ; meilleur temoin = 0.760 ; marge = 0.120
+VERDICT : NON VALIDEE -> PARTIELLE au mieux
+--- LOT4 : decodage brut H, passe 1 (cle gelee KEY.tsv, aucune correction) ---
+S7	34=l 70=a 14=c 12=a 6=r 16=e 8=t 28=e 6=r 70=a
+S7	lacaretera
+S8	15=d 20=i 14=c 13=b 3=o 7=s 12=a 14=c 24=a 6=r 28=e 8=t 16=e 6=r 70=a
+S8	dicbosacaretera
+H : 25 nombres (22 hors 70)
+car = 0.880 ; lm/lettre = -1.048
+200 cles melangees : max car 0.760 ; max lm -1.359
+200 permutations de groupes : max car 0.920 ; max lm -1.101
+C1 car>=0.75 : True ; C2 lm>=-1.139 : True ; C3 lm>=-1.021 : False
+MESURE LOT4 : NON VALIDEE
+--- information : H passe 2 (non decisive) ---
+S7	34=l 70=a 14=c 12=a 6=r 16=e 8=t 28=e 6=r 70=a
+S7	lacaretera
+S8	15=d 20=i 14=c 18=g 3=o 7=s 12=a 14=c 24=a 6=r 28=e 8=t 16=e 6=r 70=a
+S8	dicgosacaretera
+passe 2 : car = 0.840 ; lm/lettre = -1.033

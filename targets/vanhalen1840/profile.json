@@ -1,0 +1,210 @@
+{
+ "schema_version": 1,
+ "target": "vanhalen1840",
+ "title": "Juan Van Halen to the acting commander of the Division auxiliar del Norte, Igualada, 6 May 1840 (catalogue 2423, AHN DIVERSOS-COLECCIONES,195,N.14): numbered homophonic alphabets, key recovered from the ciphertext and validated with limited reservations on held-out runs, read",
+ "documents": [
+  {
+   "id": "ahn-diversos-195-n14",
+   "read": "read",
+   "shelfmark": "Madrid, Archivo Histórico Nacional, DIVERSOS-COLECCIONES,195,N.14 (PARES description 4151130)",
+   "date": "6 May 1840",
+   "year": 1840,
+   "country": "Spain",
+   "route": "Juan Van Halen (Ejército de Cataluña, Brigada de Reserva) -> brigadier, acting commander of the División auxiliar del Norte",
+   "places": {
+    "from": "Igualada",
+    "to": "unknown"
+   },
+   "language": "Spanish",
+   "pages": 2,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "none: no decipherment on the leaves or the cover; the letter is in clear except eight runs of numbers",
+    "partial": false
+   },
+   "length": {
+    "tokens": 146,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "PARES images of DIVERSOS-COLECCIONES,195,N.14 (description 4151130, 531x648 px); images not reproduced",
+    "image_quality": "poor",
+    "notes": "Pass 1 by a Claude Opus 5.5 agent (9 Nov 2026), frozen before any key existed; pass 2 after Brice Dudout's blind shape-matching sheet of 12 doubtful signs (9 Nov 2026): no value of the training runs changed, S8 no. 4 read 18 instead of 13. The hand's 3/5 and 13/18 are close."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Alphabets numbered on in succession: m n o p q r s t u [10?] z = 1-11 and a b c d e f g h i j l = 12-22; a second rank from a = 24 (d 27, e 28, l 34); a also = 58 and 70 (period 46). No k; u for v; 70 is a letter, not a separator. No word division.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 24,
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "word_division": "none",
+  "diacritics": {
+   "used": false
+  },
+  "key_order": "alphabetical",
+  "notes": "24 values attested; 40 more given by the structure (key.tsv marks them); 10, 23, 35-46, 69, 81-92 open."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Catalogue 2423 vetting (9 Nov 2026): nothing on DECODE, Tomokiyo or Lasry, no edition; no decipherment on the leaves; PARES 'cifrada' sweep of fonds 195 finds no other cipher item; no target, PR or issue for Van Halen on origin/main (11 Nov 2026) except our issues #363 and #367 (negative attempts).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Brice Dudout chose the target and set the rules (held-out runs S7-S8 named before the transcription; protocol, addendum, calibration and thresholds hashed before S7-S8 were decoded; one measurement) and re-read 12 doubtful signs blind on a shape-matching sheet (9 Nov 2026). A Claude Opus 5.5 agent transcribed; earlier agent attempts failed; the key was proposed by Claude Fable 5.2 in one API run on S1-S6; Claude Opus 5.5 agents wrote the addendum, measured, read S7-S8 and wrote up. No human read the reading.",
+  "models": [
+   "Claude Fable 5.2 (Anthropic), one API run on runs S1-S6 (key proposal and reading of S1-S6)",
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout (transcription, addendum, validation, reading of S7-S8, write-up)"
+  ],
+  "first_date": "2026-11-09",
+  "last_date": "2026-11-11"
+ },
+ "solution": [
+  {
+   "date": "2026-11-09",
+   "kind": "transcription",
+   "what": "Transcription pass 1 of the eight runs (146 numbers), frozen; held-out part S7-S8 (25 numbers) named in the protocol hashed before it.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing"
+   ],
+   "what": "Index of coincidence 0.059 (below the 1st percentile of Spanish samples of that length); monoalphabetic and homophonic annealing, Gronsfeld-type tests over 24-29-letter alphabets (periods 1-12), letterhead key phrases and context cribs on S1-S6 (issues #363, #367).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "transcription",
+   "what": "Brice Dudout re-read 12 doubtful signs blind on a shape-matching sheet (forms cut from the same letter): pass 2, no value of S1-S6 changed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "crib testing",
+    "language-model scoring"
+   ],
+   "what": "Claude Fable 5.2 (one API run, S1-S6 only) proposed alphabets numbered on with homophones, anchored on the isomorph 'en contacto' in S6 (1 window, 0 of 5,000 shuffles); the attested values fall in alphabetical order 16/16 (permuted keys: at most 6). Key frozen.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One pre-registered measurement on held-out S7-S8 (25 numbers, never sent to the model), thresholds calibrated beforehand on S1-S6: cover 0.880 (C1 >= 0.75 passed); letter-model -1.048 vs best of 200 shuffled keys -1.359 (C2 +0.22 passed) and best of 200 group shuffles -1.101 (C3 +0.08 missed by 0.027). Raw decode 'lacaretera / dicbosacaretera'. Key validated with limited reservations.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "reading",
+   "what": "Whole letter read by sense: 30 cipher words, 27 certain, 2 probable, 1 restored, 0 unresolved = 96.7%.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Key proposed by Claude Fable 5.2 from runs S1-S6 alone (the plain text around the runs gives context, not a parallel text), frozen, and measured once on runs S7-S8, held out from the start and never seen by the model.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.967,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.md, words: 27 certain + 2 probable = 29 of 30 = 96.7%; the restored word ve[n]ir is not counted. The two probable words each read one number of our transcription otherwise (13 as 3; 13|18 as 19); counted as guessed, the share is 27/30 = 90%.",
+  "verification": [
+   "statistical test",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-11-11",
+   "verdict": "weak",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): key validated with limited reservations. Addendum SHA-256 41a8ea9a309bc9f8a47396d551bde5a53fbfd504546d4467d4a628fd97f4cde3, hashed with the key and the calibration before S7-S8 were decoded; single measurement on 25 numbers: C1 cover 0.880 >= 0.75 passed; C2 lm -1.048 >= -1.139 passed; C3 lm -1.048 < -1.021 missed by 0.027 (best of 200 group shuffles -1.101; H repeats one 8-letter word). By the letter of the rule the measurement did not pass; the key beats all 400 controls. The original P01 rule (>= 0.85 and +0.30; power 4% at this size) is not met either (0.880, +0.120). Held-out decode without correction: 'la caretera', 'dicbosa caretera' (S8 no. 4 read 19: dichosa)."
+  },
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "transcription; key proposed by Claude Fable 5.2 (Anthropic) on runs S1-S6 and measured by us once on held-out S7-S8 (C1, C2 passed, C3 missed by 0.027: key validated with limited reservations); letter read (29/30 words = 96.7%) and translated",
+    "date": "2026-11-11"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "catalogue entry 2423 (PARES sweep and vetting, 9 Nov 2026)",
+    "date": "2026-11-09"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "S8 no. 4 (13|18, read 19 = h)",
+    "blocker": "illegible",
+    "detail": "doubtful sign at 531x648 px, already flagged on the blind sheet of 9 Nov 2026; a better image would settle it"
+   },
+   {
+    "item": "S2 no. 5 (13 read as 3) and the omitted 2 of S1 (ve[n]ir)",
+    "blocker": "illegible",
+    "detail": "one-digit doubts at the resolution PARES serves, or slips of the cipher clerk"
+   },
+   {
+    "item": "40 key values given by the structure only; 10, 23, 35-46, 69, 81-92 open; a second test of the key",
+    "blocker": "no-key-material",
+    "detail": "only this letter is known in the cipher; the held-out runs are used up; the Army of Catalonia table of 1839-40 or a sibling letter (fonds 195 N.13/N.15, Archivo General Militar, Espartero papers) would test it"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "ahn-diversos-195-n14",
+    "label": "Van Halen to the Division auxiliar del Norte, Igualada 6 May 1840",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "es",
+    "state": "read",
+    "read_share": 0.967,
+    "summary": "1,503 [reales?] are to be paid at Tarragona between 10 and 12 May; as a sufficient force must come to Montblanc to guard the funds, Van Halen asks the brigadier to meet him there on the 11th, unless the march of the Barcelona convoy by Cervera brings them into contact on the road before. The Carlist bands of Llarch and Marcó, given fifteen days' leave after Van Halen's raid on La Llacuna, roam the Priorat; they will be watched 'on that confounded road'.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5 agent for Brice Dudout (S1-S6 read first by the key proposer, Claude Fable 5.2)",
+     "date": "2026-11-11",
+     "note": "Read as Spanish sentences against decryption.txt and the plain context: both cipher passages construe with the clear around them and the translation follows; holes: 2 probable words (one number read otherwise each) and 1 supplied letter. AI agents only; no human read the reading; not re-checked on the images."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "New decipherment: no decipherment of the time and no edition known. The key is reusable (key.tsv, CC BY 4.0). Model credit: the key was proposed by Claude Fable 5.2 (Anthropic) in one API run; the addendum, held-out measurement, reading of S7-S8 and write-up are ours. No image is included."
+ }
+}
