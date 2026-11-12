@@ -35,3 +35,34 @@ measurement on 2309 736a94e0...; pre-registration of test 2 2984d502241ba210...;
 transcription 294 H2 99207daad9e8cc4d... (as frozen; the copy in validation/ differs only in header line 4, where a private
 image-folder path was removed for publication); decoding H2 bc926233f34e532d...; clear c. 276 R2 (not published) 2e5699c8ccae36b3...;
 verdict f31268c4ff882235...; control 7f8ff0f680ae2d3b...
+
+3. Held out again, 12 Nov 2026: D1 and the candidate values for signs missing from Lasry's key, on XLVIII 294 c. 306r (lines 1-16,
+   never transcribed, decoded or measured before) against the upper part of its clear copy c. 276r (from the top to y = 880 px,
+   i.e. up to "Smilcondo", where the clear used in test 2 begins).
+   Pre-registered and hashed before any transcription (PREREG-306R ed9ebd2294a25707...; script cf9ee4b5cd0272b8...; keys
+   K_SIENA11 e1ef0955..., K_SIENA11_D1 e98d6e96..., K_C cbb527f3654fb514... = K_SIENA11_D1 + candidates TRI = che, PIBAR = n,
+   PLUS alone = o, nulls DIV/OO/ST). The script was checked first on synthetic data (a "true" world: D1 10/10 held; a "false" world
+   where PLUS ODAG stands for h: 7/16, not held). Transcription frozen (d223d9fafd6803d7...) before decoding; three decodings frozen
+   (K_SIENA11_D1 6b31bd8fe42dc858..., K_SIENA11 d50770e921de9059..., K_C 1d22c96d16e63332...) before the clear was read; clear R3
+   frozen (106809c566dfa7cc..., not published); one run of the measurement (aed26cbb789399a3...).
+   Statistics and thresholds fixed in advance:
+   - S1-S3 = the letter agreement of test 2 (same code, unchanged), 200 controls per key (letter values permuted between signs, seed 306).
+   - S4 (D1): PLUS ODAG is made to emit a sign that matches nothing; the clear letter aligned on each occurrence is read. 200 controls =
+     the same number of cipher positions drawn at random (seed 3060). D1 HOLDS if n >= 3, hits ("c") >= 2n/3 and p <= 0.05.
+   - S5 (each candidate): same, with the other candidates active; n >= 2, hits >= 2n/3, p <= 0.05. Nulls cannot be tested this way.
+   Result (411 cipher tokens, 376 decoded letters, clear 1278 letters):
+       S1 K_SIENA11_D1  ACCORD 0.6519 ; best of 200 controls 0.1854 ; margin 0.4666 -> PARTIAL (as in test 2)
+       S2 K_SIENA11     ACCORD 0.6390 ; best 0.2057 ; margin 0.4333 -> PARTIAL (control)
+       S3 K_C           ACCORD 0.6701 ; best 0.2310 ; margin 0.4391 -> PARTIAL (secondary)
+       S4 D1 "PLUS ODAG" = c : n = 6, 5 aligned on "c" (the sixth on nothing), p = 0.005 -> HOLDS
+       S5 TRI = che : n = 5, 4 aligned on "che" (the fifth on nothing), p = 0.005 -> HOLDS
+          PLUS alone = o : n = 3, 0 hits (two align on "c") -> DOES NOT HOLD
+          PIBAR = n : no occurrence -> NOT TESTABLE ; DIV, OO, ST = nulls : not testable by this statistic
+   Consequence: D1 and TRI = che enter the key (key/K_SIENA11_D1_TRI.tsv, 0dcd95f6919297f6...); nothing else. The key as a whole stays
+   PARTIAL (0.65 against 0.85). 2309 was decoded again with it (decryption/xlviii214_D1_TRI.txt) and re-read: 39 -> 46 certain words.
+   Deviations declared: the upper part of c. 276r had been looked at (0.75x, for anchors only) on 10 Nov, by the earlier agent, not
+   read word by word and never used in a measurement; the transcriber of c. 306r knew the key and the candidates (shapes first, never
+   the sense; doubtful shapes are listed in the transcription header, frozen before decoding); the candidates were drawn from material
+   already seen (2309, c. 306 bis r, c. 306v). The published copy of the transcription lacks one header line (a private image-folder
+   path). That "PLUS alone" aligns on "c" twice is an observation made after the measurement, not a result.
+   After this test XLVIII 294 c. 306r and the whole of c. 276r are used up; no unused portion of 294 with a clear is left.
