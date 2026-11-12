@@ -1,345 +1,503 @@
 {
- "schema_version": 1,
- "target": "bonde1676",
- "title": "Carl Bonde and Nils Lillieroot's ciphered French memorial to Louis XIV, Paris, 6/16 Oct 1676 (Riksarkivet, Diplomatica Gallica; catalogue 2317): read in part",
- "documents": [
-  {
-   "id": "memorial_1676-10-06",
-   "read": "read in part",
-   "shelfmark": "Stockholm, Riksarkivet, Diplomatica Gallica, SE/RA/2105/I/A/24/54 (Envoyén Carl Bonde, Brev till Kungl. Maj:t 1674-1678; image series R0003797), f.306r-311r, images 321R-326R",
-   "date": "headed '6 Oct: 1676' (Old Style; 16 Oct New Style); the enclosure to Bonde and Lillieroot's despatch of 6/16 Oct 1676 (image 321L)",
-   "year": 1676,
-   "country": "Sweden",
-   "route": "Carl Bonde and Nils Lillieroot, Swedish envoys (Paris) to Louis XIV (Paris); the copy in the file went to Charles XI in Stockholm",
-   "places": {
-    "from": "Paris",
-    "to": "Paris"
-   },
-   "language": "French",
-   "pages": 11,
-   "cleartext_in_document": "interspersed",
-   "plaintext": {
-    "location": [
-     "none"
-    ],
-    "source": "No decipherment on these leaves. The key was rebuilt from the chancery's interlinear decipherment of Bonde's despatch of 11/21 Nov 1675 in the same volume (image 102R; gloss/)."
-   },
-   "length": {
-    "tokens": 4302,
-    "distinct": 142,
-    "unit": "code groups",
-    "measured": false,
-    "file": "transcriptions/"
-   },
-   "transcription": {
-    "by": "llm from images",
-    "source": "Riksarkivet IIIF, full-size images (about 5,660 x 4,450 px), strips and gutter crops",
-    "image_quality": "good",
-    "notes": "Counted by our scripts, not by the repository's measure, so measured is false: 4,302 cipher numbers in the eleven transcription files (96 cut at the gutter), 142 distinct full numbers. Each page frozen (md5 logged) before its single decode. Second transcription of f.307v and f.309v (b103) blind to the first: 860 of 863 full numerals the same. Second transcription of the image-324 test lines (b101) not blind."
-   }
-  }
- ],
- "system": {
-  "types": [
-   "homophonic",
-   "nomenclator"
-  ],
-  "summary": "Homophonic substitution on numbers 19-178, one number a letter (a few for ss, st, ff), up to seven homophones a letter (e, f, n), with word codes from about 240 (314 = Danmarck) and probable nulls 173-178; the same table serves Bonde's Swedish despatches.",
-  "symbol_kind": "digits",
-  "digit_groups": {
-   "width": "1-3",
-   "separation": "dots"
-  },
-  "distinct_symbols": 142,
-  "diacritics": {
-   "used": false
-  },
-  "homophones": {
-   "used": true,
-   "max_per_vowel": 7,
-   "max_per_consonant": 7
-  },
-  "nomenclator": {
-   "present": true,
-   "entries": 6,
-   "kinds": [
-    "names",
-    "common words"
-   ],
-   "unread_groups": 6
-  },
-  "nulls": {
-   "present": false
-  },
-  "key_order": "partly alphabetical",
-  "word_division": "none",
-  "doubled_letters": "written twice, or one sign for ss, st, ff, ll",
-  "sibling_key": "Bonde's Swedish despatches of 1675-1678 in the same volume use the same table; targets/bonde1677 reads one of them with key v9, a later state of the same key lineage (v3 + values from glosses and context).",
-  "notes": "distinct_symbols counts the distinct full numbers in the transcriptions. nulls.present is false because the signs 173-178 and the single digits 3, 4, 8 are only probable nulls (no gloss shows them); they are counted not read. key_order: 19-24 run h g f e d and 27-45 run a i k l m n o r s t u w y, so the first homophone of each letter is partly alphabetical; the higher numbers are not."
- },
- "conditions": {
-  "prior_solution": {
-   "exists": "no",
-   "where": "Not found as far as checked (12 Nov 2026): LIBRIS; archive.org metadata and full text (32 queries); Google Books feed; Runeberg; Litteraturbanken; Recueil des instructions II, Suede (1885); Varenius on Trolle-Bonde D.2 (Historisk tidskrift 1901); Wimarson, Historisk tidskrift 1903, and Sveriges krig i Tyskland II (complete OCR: no citation of the 6/16 Oct 1676 despatch or memorial). NOT seen: Trolle-Bonde, Kongliga radet och ambassadoren grefve Carl Bonde D.1 (Lund 1910), no online copy; Archives des Affaires etrangeres, Correspondance politique Suede 1676, where the clear original handed to the French court may be. Priority not established.",
-   "found": "not found",
-   "used": false
-  },
-  "inputs": [
-   "images",
-   "known plaintext",
-   "cleartext context"
-  ],
-  "attack": "known plaintext",
-  "human_role": "Malcolm McBratney directed the work and set the rules (every attempt recorded, transcriptions frozen before decoding, shuffled-key controls, blind second transcriptions by separate sessions, no claim without its check) and filed the issues; Claude sessions found the bare pages, transcribed, rebuilt the key, read and checked. No reading by a person without AI.",
-  "tools": [
-   "EM alignment of cipher numbers against the interlinear gloss (scripts/original/em4.py)",
-   "own Python decoder and per-unit tally (scripts/build.py, standard library)",
-   "shuffled-key control, 5,000 keys, French 4-gram model with a language-header guard (scripts/shuffle_control.py)",
-   "Riksarkivet IIIF images, strips and crops (PIL)"
-  ],
-  "models": [
-   "Claude (Anthropic), sessions b99, b101, b103, b104 of 12 Nov 2026 (model ids not recorded)",
-   "claude-opus-5-5 (b154, the session that prepared this folder)"
-  ],
-  "sessions": 5,
-  "first_date": "2026-11-12",
-  "last_date": "2026-11-12"
- },
- "solution": [
-  {
-   "date": "2026-11-12",
-   "kind": "access",
-   "what": "Volume R0003797 surveyed for catalogue row 2317. The 'bare' leaves of the lead (images 107-109) are the cipher tail of the despatch of 11/21 Nov 1675, already deciphered in the chancery gloss on images 102-106. The real unread matter: a French memorial in cipher, images 321R-326R.",
-   "result": "worked"
-  },
-  {
-   "date": "2026-11-12",
-   "kind": "key from source",
-   "technique": [
-    "EM alignment",
-    "plaintext matching"
-   ],
-   "what": "Key v1 rebuilt from the gloss on image 102R (488 cipher numbers against 566 gloss letters, one letter a number) by EM alignment; v2 corrected from 107L/105L and given values 100-176 from 14 training lines of image 324L (tier F).",
-   "result": "worked"
-  },
-  {
-   "date": "2026-11-12",
-   "kind": "control",
-   "technique": [
-    "plaintext matching"
-   ],
-   "what": "Control: 10 rows of image 107L transcribed and frozen, decoded once with v1, then found word for word in the gloss on image 105L. Catalogue correction: 107-109 are not unread.",
-   "result": "worked"
-  },
-  {
-   "date": "2026-11-12",
-   "kind": "verification",
-   "technique": [
-    "statistical test"
-   ],
-   "what": "First test: 30 held-out lines of image 324 frozen and decoded once with v2: strict 44/103 = 42.72%, S+E 88.35%, 0 of 5,000 shuffled keys (two seeds). Below the 65% bar set for ourselves.",
-   "result": "partial"
-  },
-  {
-   "date": "2026-11-12",
-   "kind": "hypothesis",
-   "technique": [
-    "contextual inference"
-   ],
-   "what": "Key v3 = v2 + tier-P values read off the image-324 test lines after the test, and 88 corrected to m; frozen 02:55:22 UTC (md5 8e1d93d1) before any other page of the memorial was transcribed. Image 324 is therefore in-sample for v3.",
-   "result": "worked"
-  },
-  {
-   "date": "2026-11-12",
-   "kind": "transcription",
-   "what": "Six pages (f.307v-311r) transcribed and each frozen before one decode with v3 unchanged: strict 358/486 = 73.66% as filed in #453; 346/486 = 71.19% after the correction in overrides.tsv.",
-   "result": "worked"
-  },
-  {
-   "date": "2026-11-12",
-   "kind": "transcription",
-   "what": "Opening found on f.306r (image 321R; image 322 is not the start). f.306r-307r transcribed, frozen and decoded once with v3 unchanged: strict 200/278 = 71.94%.",
-   "result": "worked"
-  },
-  {
-   "date": "2026-11-12",
-   "kind": "control",
-   "technique": [
-    "statistical test",
-    "language-model scoring"
-   ],
-   "what": "5,000 shuffled keys per page and pooled, French 4-gram model (Language header asserted): 0 of 5,000 on every page; all nine pages pooled, true -2.1534 against best -4.6480 (seed 20261112) and -4.5698 (seed 7).",
-   "result": "worked"
-  },
-  {
-   "date": "2026-11-12",
-   "kind": "verification",
-   "what": "Blind second transcription of f.307v and f.309v (b103): 860 of 863 full numerals the same; two disputes settled for the first transcription on crops, one open. Its decode with v3: 122/182 against 123/182.",
-   "result": "worked"
-  },
-  {
-   "date": "2026-11-12",
-   "kind": "reading",
-   "technique": [
-    "contextual inference"
-   ],
-   "what": "French reading with supplied letters bracketed and English translation (readings/, translations/).",
-   "result": "partial"
-  },
-  {
-   "date": "2026-11-12",
-   "kind": "literature search",
-   "what": "Prior art: see conditions.prior_solution. Trolle-Bonde D.1 (1910) not seen.",
-   "result": "partial"
-  },
-  {
-   "date": "2026-11-12",
-   "kind": "verification",
-   "what": "Folder rebuild (b154): every filed figure reproduced by scripts/build.py, compare_blind.py and run_controls.py; 12 units counted S in the filing read 66 as the Swedish value a-ring where French needs y; downgraded in overrides.tsv.",
-   "result": "worked"
-  }
- ],
- "outcome": {
-  "class": "read in part",
-  "key": "partial",
-  "method": "key recovered based on adjacent plaintext",
-  "method_basis": "The key was rebuilt from the Swedish chancery's interlinear decipherment of Bonde's despatch of 11/21 Nov 1675 in the same volume (image 102R), finished on 14 training lines and one test of image 324, frozen, and applied unchanged to nine pages of the memorial, which carry no gloss.",
-  "contribution": [
-   "transcription",
-   "key recovered",
-   "catalogue correction",
-   "sender or date identified"
-  ],
-  "fraction_read_method": "measured",
-  "fraction_read_source": "units.tsv and counts.txt (scripts/build.py): 546 of 764 word units of the nine held-out pages are spelt by frozen key-v3 letter values; codes, cut, unvalued, weak and emended units never count. Unit = a word of the plaintext, not a cipher number.",
-  "fraction_read": 0.715,
-  "codes_open": {
-   "open": 6,
-   "total": 6,
-   "tokens_open": 7
-  },
-  "verification": [
-   "key confirms",
-   "statistical test"
-  ],
-  "validation": {
-   "date": "2026-11-12",
-   "file": "controls/shuffle.txt",
-   "verdict": "not applicable",
-   "notes": "Contributor's own shuffled-key control (not docs/_validate.py, which was not run): 5,000 shuffled keys per page and pooled, French 4-gram model (Language header asserted): 0 of 5,000 on every page; all nine pages pooled, true -2.1534 against best -4.6480 (seed 20261112) and -4.5698 (seed 7)."
-  },
-  "provenance": "contributed",
-  "credits": [
-   {
-    "who": "contemporary",
-    "role": "key or decipherment used",
-    "note": "the Swedish chancery's interlinear decipherment of Bonde's despatch of 11/21 Nov 1675 (R0003797 images 102-106), from which the key was rebuilt",
-    "date": "1675",
-    "source": "https://sok.riksarkivet.se/bildvisning/R0003797_00102"
-   },
-   {
-    "who": "mcbratney",
-    "role": "solution",
-    "note": "catalogue 2317: key v3 rebuilt from the 1675 gloss, the 1676 memorial read in part, with AI agents; issue #453",
-    "date": "2026-11-12",
-    "source": "https://github.com/dbourdeau/cyphersolver/issues/453"
-   },
-   {
-    "who": "mcbratney",
-    "role": "transcription",
-    "note": "eleven page transcriptions from the Riksarkivet images and a blind second transcription of two pages by a separate session, with AI agents",
-    "date": "2026-11-12"
-   },
-   {
-    "who": "mcbratney",
-    "role": "identification",
-    "note": "the memorial's opening on f.306r and its date (enclosure to the despatch of 6/16 Oct 1676); images 107-109 shown to be glossed cipher tails",
-    "date": "2026-11-12",
-    "source": "https://github.com/dbourdeau/cyphersolver/issues/453"
-   }
-  ],
-  "gaps": [
-   {
-    "item": "Word codes 240, 245, 267, 324, 463 and 314 (7 units); 314 = Danmarck by the 1675 gloss but counted not read by rule",
-    "blocker": "open-codes",
-    "detail": "holes.md 2; senses from context: 267 alliance, 324 discours, 463 reputation (not read)"
-   },
-   {
-    "item": "Numbers with no value in v3 (99, 44, 109, 120, 129, 76, 124, 145, 162, 111, 115, 123, 130, 134, 139, 155, 157): values proposed after the test, never counted",
-    "blocker": "no-key-material",
-    "detail": "a further key state would need fresh held-out text in this table; the volume's bare French text is used up"
-   },
-   {
-    "item": "Numerals cut at the gutter (68 units hold one)",
-    "blocker": "illegible",
-    "detail": "lost in the binding; full IIIF resolution does not recover them"
-   },
-   {
-    "item": "Probable nulls 173-178, 3, 4, 8",
-    "blocker": "no-key-material",
-    "detail": "no gloss shows them"
-   },
-   {
-    "item": "Image 324 (f.308v-309r) is in-sample for key v3; its reading is b99's (key v2 and context)",
-    "blocker": "not-attempted",
-    "detail": "no count for 324 under v3 is given"
-   },
-   {
-    "item": "Trolle-Bonde, Anteckningar om Bondeslakten D.1 (Lund 1910); AAE Correspondance politique Suede 1676",
-    "blocker": "needs-physical-access",
-    "detail": "no online copy; a library request was sent by the contributor on 12 Nov 2026"
-   }
-  ],
-  "texts": [
-   {
-    "doc": "memorial_1676-10-06",
-    "label": "Bonde and Lillieroot to Louis XIV, memorial, [Paris, 6/16 Oct 1676], f.306r-311r",
-    "transcription": [
-     "transcriptions/f306r_321R.txt",
-     "transcriptions/f306v_322L.txt",
-     "transcriptions/f307r_322R.txt",
-     "transcriptions/f307v_323L.txt",
-     "transcriptions/f308r_323R.txt",
-     "transcriptions/f308v_324L_lines1-14_training.txt",
-     "transcriptions/f308v-309r_324_heldout_v2.txt",
-     "transcriptions/f309v_325L.txt",
-     "transcriptions/f310r_325R.txt",
-     "transcriptions/f310v_326L.txt",
-     "transcriptions/f311r_326R.txt"
-    ],
-    "decryption": [
-     "decryptions/f306r_321R.txt",
-     "decryptions/f306v_322L.txt",
-     "decryptions/f307r_322R.txt",
-     "decryptions/f307v_323L.txt",
-     "decryptions/f308r_323R.txt",
-     "decryptions/f308v_324L_lines1-14_training.txt",
-     "decryptions/f308v-309r_324_v3_insample.txt",
-     "decryptions/f309v_325L.txt",
-     "decryptions/f310r_325R.txt",
-     "decryptions/f310v_326L.txt",
-     "decryptions/f311r_326R.txt"
-    ],
-    "reading": "readings/memorial_1676-10-06.md",
-    "translation": "translations/memorial_1676-10-06.md",
-    "language": "fr",
-    "state": "read in part",
-    "read_share": 0.715,
-    "summary": "The Swedish envoys thank Louis XIV for declaring war on Denmark under the guarantee of the Northern treaties and report Charles XI's victory at Halmstad, then press him: turn his arms on Denmark and send troops and ships under the treaty; as Pomponne says that cannot be done, ready a squadron to reach Gothenburg early in spring 1677 and join the ten ships there; the allies will make no peace until France returns its conquests and count on taking Pomerania; any French peace must restore Sweden's lost places; pay an extraordinary subsidy for stores from England and Holland for Stralsund and Gothenburg and for Pomerania; win Hamburg with free trade. Context: the Scanian War (1675-79), with Sweden's German provinces under attack, while the Nijmegen peace talks went on.",
-    "reading_review": {
-     "grade": "B",
-     "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (sessions of the same project). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
-     "date": "2026-11-12",
-     "note": "Read as sentences against the translation. Connected French whose argument can be followed through all nine held-out pages; holes are marked in place."
+  "schema_version": 1,
+  "target": "bonde1676",
+  "title": "Carl Bonde and Nils Lillieroot's ciphered French memorial to Louis XIV (6/16 Oct 1676) and Bonde's Swedish despatch of 24 Nov/4 Dec 1677: one number table (Riksarkivet, Diplomatica Gallica; catalogue 2317), read in part",
+  "documents": [
+    {
+      "id": "memorial_1676-10-06",
+      "read": "read in part",
+      "shelfmark": "Stockholm, Riksarkivet, Diplomatica Gallica, SE/RA/2105/I/A/24/54 (Envoyén Carl Bonde, Brev till Kungl. Maj:t 1674-1678; image series R0003797), f.306r-311r, images 321R-326R",
+      "date": "headed '6 Oct: 1676' (Old Style; 16 Oct New Style); the enclosure to Bonde and Lillieroot's despatch of 6/16 Oct 1676 (image 321L)",
+      "year": 1676,
+      "country": "Sweden",
+      "route": "Carl Bonde and Nils Lillieroot, Swedish envoys (Paris) to Louis XIV (Paris); the copy in the file went to Charles XI in Stockholm",
+      "places": {
+        "from": "Paris",
+        "to": "Paris"
+      },
+      "language": "French",
+      "pages": 11,
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment on these leaves. The key was rebuilt from the chancery's interlinear decipherment of Bonde's despatch of 11/21 Nov 1675 in the same volume (image 102R; gloss/)."
+      },
+      "length": {
+        "tokens": 4302,
+        "distinct": 142,
+        "unit": "code groups",
+        "measured": false,
+        "file": "transcriptions/"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Riksarkivet IIIF, full-size images (about 5,660 x 4,450 px), strips and gutter crops",
+        "image_quality": "good",
+        "notes": "Counted by our scripts, not by the repository's measure, so measured is false: 4,302 cipher numbers in the eleven transcription files (96 cut at the gutter), 142 distinct full numbers. Each page frozen (md5 logged) before its single decode. Second transcription of f.307v and f.309v (b103) blind to the first: 860 of 863 full numerals the same. Second transcription of the image-324 test lines (b101) not blind."
+      }
     },
-    "note": "read_share is the strict share of word units read on the nine held-out pages after overrides.tsv: 546 of 764 (71.5%). The filed #453 figure, 358/486 on six pages, counted 12 units with a wrong key letter as read; see NOTES.md."
-   }
+    {
+      "id": "despatch_1677-11-24",
+      "read": "read in part",
+      "shelfmark": "Stockholm, Riksarkivet, Diplomatica Gallica, SE/RA/2105/I/A/24/54 (Envoyén Carl Bonde, Brev till Kungl. Maj:t 1674-1678; image series R0003797), despatch on images 488R-490L, cipher on 489R only (folio 474 by the hand number, as read by b127)",
+      "date": "Paris d. 24 Novemb./4 Decemb. 1677 (on image 490L)",
+      "year": 1677,
+      "country": "Sweden",
+      "route": "Carl Bonde, Swedish envoy (Paris) to Charles XI (Stockholm)",
+      "places": {
+        "from": "Paris",
+        "to": "Stockholm"
+      },
+      "language": "Swedish",
+      "pages": 1,
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No gloss on this despatch (the chancery's glossing in this volume appears to stop about Nov 1677). Key v9 was built from glosses of other despatches and from context; see despatch1677/gloss/."
+      },
+      "length": {
+        "tokens": 169,
+        "distinct": 73,
+        "unit": "code groups",
+        "measured": false,
+        "file": "despatch1677/transcriptions/despatch_1677-11-24_489R.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Riksarkivet IIIF, full-size image of 489 (5,558 x 4,356 px), strips",
+        "image_quality": "good",
+        "notes": "169 cipher numbers in 17 runs, frozen before one decode (b119). Clear text transcribed only next to the cipher runs. Truly blind second transcription by a separate session (b127): 168 of 169 numbers the same (61 against 67 in 'alarme'). Counted by our scripts, so measured is false."
+      }
+    }
   ],
-  "key_file": [
-   "key.tsv",
-   "overrides.tsv",
-   "gloss/KEY_v2.tsv"
+  "system": {
+    "types": [
+      "homophonic",
+      "nomenclator"
+    ],
+    "summary": "Homophonic substitution on numbers 19-178, one number a letter (a few for ss, st, ff), up to seven homophones a letter (e, f, n), with word codes from about 240 (314 = Danmarck; 335 E.K.M:t, 397 Konung, 418, 435 in the Swedish despatch) and probable nulls 173-178. One table serves the French memorial of 1676 (read with key v3) and Bonde's Swedish despatch of 1677 (read with key v9, a later state of the same table: v3 corrected at 66, 89, 21, 103, 131, 176, 335 and extended by 36 rows).",
+    "symbol_kind": "digits",
+    "digit_groups": {
+      "width": "1-3",
+      "separation": "dots"
+    },
+    "distinct_symbols": 142,
+    "diacritics": {
+      "used": false
+    },
+    "homophones": {
+      "used": true,
+      "max_per_vowel": 7,
+      "max_per_consonant": 7
+    },
+    "nomenclator": {
+      "present": true,
+      "entries": 6,
+      "kinds": [
+        "names",
+        "common words"
+      ],
+      "unread_groups": 6
+    },
+    "nulls": {
+      "present": false
+    },
+    "key_order": "partly alphabetical",
+    "word_division": "none",
+    "doubled_letters": "written twice, or one sign for ss, st, ff, ll",
+    "sibling_key": "Bonde's other despatches of 1675-1678 in the same volume use the same table; the memorial (key v3) and the 1677 despatch (key v9) are both read here, one key lineage.",
+    "notes": "distinct_symbols counts the distinct full numbers in the transcriptions. nulls.present is false because the signs 173-178 and the single digits 3, 4, 8 are only probable nulls (no gloss shows them); they are counted not read. key_order: 19-24 run h g f e d and 27-45 run a i k l m n o r s t u w y, so the first homophone of each letter is partly alphabetical; the higher numbers are not."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "no",
+      "where": "Not found as far as checked (12 Nov 2026): LIBRIS; archive.org metadata and full text (32 queries); Google Books feed; Runeberg; Litteraturbanken; Recueil des instructions II, Suede (1885); Varenius on Trolle-Bonde D.2 (Historisk tidskrift 1901); Wimarson, Historisk tidskrift 1903, and Sveriges krig i Tyskland II (complete OCR: no citation of the 6/16 Oct 1676 despatch or memorial). NOT seen: Trolle-Bonde, Kongliga radet och ambassadoren grefve Carl Bonde D.1 (Lund 1910), no online copy; Archives des Affaires etrangeres, Correspondance politique Suede 1676, where the clear original handed to the French court may be. Priority not established. Despatch of 24 Nov/4 Dec 1677: Wimarson, Sveriges krig i Tyskland 1675-1679 I-III (vols II and III by KB OCR) cites Bonde's despatches up to 21/31 Jul 1677 and from 12/22 Jan 1678, not this one; not seen: Hojer 1875, Grauers 1926.",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": [
+      "images",
+      "known plaintext",
+      "cleartext context"
+    ],
+    "attack": "known plaintext",
+    "human_role": "Malcolm McBratney directed the work and set the rules (every attempt recorded, transcriptions frozen before decoding, shuffled-key controls, blind second transcriptions by separate sessions, no claim without its check) and filed the issues; Claude sessions found the bare pages, transcribed, rebuilt the key, read and checked. No reading by a person without AI.",
+    "tools": [
+      "EM alignment of cipher numbers against the interlinear gloss (scripts/original/em4.py)",
+      "own Python decoder and per-unit tally (scripts/build.py, standard library)",
+      "shuffled-key control, 5,000 keys, French 4-gram model with a language-header guard (scripts/shuffle_control.py)",
+      "Riksarkivet IIIF images, strips and crops (PIL)",
+      "shuffled-key control, 5,000 keys, Swedish 4-gram model with a language-header guard (scripts/shuffle_control.py)",
+      "Riksarkivet IIIF images, strips (PIL)"
+    ],
+    "models": [
+      "Claude (Anthropic), sessions b99, b101, b103, b104 of 12 Nov 2026 (model ids not recorded)",
+      "claude-opus-5-5 (b154, the session that prepared this folder)",
+      "Claude (Anthropic), sessions b117, b118, b119, b120, b127 of 12 Nov 2026 (model ids not recorded)"
+    ],
+    "sessions": 11,
+    "first_date": "2026-11-12",
+    "last_date": "2026-11-12"
+  },
+  "solution": [
+    {
+      "date": "2026-11-12",
+      "kind": "access",
+      "what": "Volume R0003797 surveyed for catalogue row 2317. The 'bare' leaves of the lead (images 107-109) are the cipher tail of the despatch of 11/21 Nov 1675, already deciphered in the chancery gloss on images 102-106. The real unread matter: a French memorial in cipher, images 321R-326R.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "key from source",
+      "technique": [
+        "EM alignment",
+        "plaintext matching"
+      ],
+      "what": "Key v1 rebuilt from the gloss on image 102R (488 cipher numbers against 566 gloss letters, one letter a number) by EM alignment; v2 corrected from 107L/105L and given values 100-176 from 14 training lines of image 324L (tier F).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "control",
+      "technique": [
+        "plaintext matching"
+      ],
+      "what": "Control: 10 rows of image 107L transcribed and frozen, decoded once with v1, then found word for word in the gloss on image 105L. Catalogue correction: 107-109 are not unread.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "statistical test"
+      ],
+      "what": "First test, FAILED: 30 held-out lines of image 324 frozen and decoded once with key v2: strict 44/103 = 42.72% (S+E 88.35%), under the 65% bar the contributor had set for this test; 0 of 5,000 shuffled keys (two seeds). Key v3 was then built from the same lines, so image 324 is in-sample for v3 and gets no count.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "hypothesis",
+      "technique": [
+        "contextual inference"
+      ],
+      "what": "Key v3 = v2 + tier-P values read off the image-324 test lines after the test, and 88 corrected to m; frozen 02:55:22 UTC (md5 8e1d93d1) before any other page of the memorial was transcribed. Image 324 is therefore in-sample for v3. (By the contributor's record; the stamped manifest of 02:54:07 GMT holds a file byte-identical to key v3, before any stamp that holds a held-out page.)",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "transcription",
+      "what": "Six pages (f.307v-311r) transcribed and each frozen before one decode with v3 unchanged: strict 358/486 = 73.66% as filed in #453; 346/486 = 71.19% after the correction in overrides.tsv.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "transcription",
+      "what": "Opening found on f.306r (image 321R; image 322 is not the start). f.306r-307r transcribed, frozen and decoded once with v3 unchanged: strict 200/278 = 71.94%.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "control",
+      "technique": [
+        "statistical test",
+        "language-model scoring"
+      ],
+      "what": "5,000 shuffled keys per page and pooled, French 4-gram model (Language header asserted): 0 of 5,000 on every page; all nine pages pooled, true -2.1534 against best -4.6480 (seed 20261112) and -4.5698 (seed 7).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "what": "Blind second transcription of f.307v and f.309v (b103): 860 of 863 full numerals the same; two disputes settled for the first transcription on crops, one open. Its decode with v3: 122/182 against 123/182.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "reading",
+      "technique": [
+        "contextual inference"
+      ],
+      "what": "French reading with supplied letters bracketed and English translation (readings/, translations/).",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "literature search",
+      "what": "Prior art: see conditions.prior_solution. Trolle-Bonde D.1 (1910) not seen.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "what": "Folder rebuild (b154): every filed figure reproduced by scripts/build.py, compare_blind.py and run_controls.py; 12 units counted S in the filing read 66 as the Swedish value a-ring where French needs y; downgraded in overrides.tsv.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "key from source",
+      "technique": [
+        "plaintext matching"
+      ],
+      "what": "Key v3 extended for Swedish text: v4-v7 add values read from context in the despatches of 6/16 and 13/23 Oct 1676 and the post-hoc values of the memorial (tiers Q, T); v8 and v9 add only values read off the chancery's interlinear glosses of 1676-1677 (images 331, 334, 336, 341, 346, 395, 429, 430; tiers G, H). v9 frozen 06:08:58 UTC, md5 af29e81f (by the contributor's record: the stamp of 06:25:27 came after the decode).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "access",
+      "what": "Survey of images 379-557: glossing stops about Nov 1677; the bare despatches of late 1677 are the held-out pool. 489R carries cipher and no gloss.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "transcription",
+      "what": "489R transcribed (169 numbers in 17 runs), frozen 06:24:26 UTC with a doubts file, then decoded once with v9 unchanged: strict 24/30 = 80.00%.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "control",
+      "technique": [
+        "statistical test",
+        "language-model scoring"
+      ],
+      "what": "5,000 shuffled keys, Swedish 4-gram model (Language header asserted): 0 reach the true score (true -3.1451; best -4.0151 seed 20261112, -3.9637 seed 7).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "literature search",
+      "what": "Wimarson I-III screened for this despatch: not cited. Höjer 1875, Trolle-Bonde D.1, Grauers 1926 not reached.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "what": "Truly blind second transcription (b127; nothing of b118-b120 or the key opened before its freeze at 09:35:28 UTC): 168 of 169 numbers the same; its decode with v9 23/30 = 76.67%, 0 of 5,000 shuffled keys.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "what": "Folder rebuild (b154): every filed figure reproduced; the source of each key value used in the read units counted (counts.txt): 22 of the 24 read units use at least one value read from context, not from a gloss.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "plaintext matching"
+      ],
+      "what": "Integration check (R4, AI agent): own decoder written from key.tsv alone; all 284 cipher lines of the nine held-out memorial pages and of 489R decode identically to the contributor's decryptions. About 400 groups compared with the Riksarkivet images (489R all 17 runs; f.307r lines 1-6 and 18-22; f.309v lines 4-12): 0 disagreements. Strict counts recomputed from units.tsv: 546/764 and 24/30.",
+      "result": "worked"
+    }
   ],
-  "notes": "No docs/_validate.py run (repository scripts not run by the contributor). The shuffled-key control here is the contributor's own (controls/shuffle.txt)."
- }
+  "outcome": {
+    "class": "read in part",
+    "key": "partial",
+    "method": "key recovered based on adjacent plaintext",
+    "method_basis": "The key was rebuilt from the Swedish chancery's interlinear decipherments of Bonde's despatches in the same volume (the memorial's key v3 from image 102R of 11/21 Nov 1675; the 1677 despatch's key v9 from further glosses of 1676-1677), finished with values read from context (52 of v3's 119 letter rows from image 324 of the memorial itself; 58 of the 149 numbers in the read units of 489R), frozen, and applied unchanged to pages that carry no gloss. Context-derived values are marked on the page.",
+    "contribution": [
+      "transcription",
+      "key recovered",
+      "key extended or corrected",
+      "catalogue correction",
+      "sender or date identified"
+    ],
+    "fraction_read_method": "measured",
+    "fraction_read_source": "units.tsv and counts.txt of the two folders (scripts/build.py): 546 of 764 word units of the nine held-out memorial pages (key v3) and 24 of 30 of the 489R despatch (key v9) are spelt by frozen letter values; codes, cuts, unvalued, weak and emended units never count. 570 of 794 together (71.8%). Unit = a word of the plaintext.",
+    "fraction_read": 0.718,
+    "codes_open": {
+      "open": 8,
+      "total": 8,
+      "tokens_open": 10
+    },
+    "verification": [
+      "key confirms",
+      "statistical test",
+      "historical consistency"
+    ],
+    "validation": {
+      "date": "2026-11-12",
+      "file": "controls/shuffle.txt",
+      "verdict": "not applicable",
+      "notes": "Contributor's own shuffled-key controls (not docs/_validate.py): memorial, French 4-gram model, 0 of 5,000 on every page and pooled (true -2.1534 against best -4.6480 seed 20261112, -4.5698 seed 7); 489R, Swedish 4-gram model, 0 of 5,000 (true -3.1451 against best -4.0151 and -3.9637; weaker, 165 scored numbers)."
+    },
+    "provenance": "contributed",
+    "credits": [
+      {
+        "who": "contemporary",
+        "role": "key or decipherment used",
+        "note": "the Swedish chancery's interlinear decipherment of Bonde's despatch of 11/21 Nov 1675 (R0003797 images 102-106), from which the key was rebuilt",
+        "date": "1675",
+        "source": "https://sok.riksarkivet.se/bildvisning/R0003797_00102"
+      },
+      {
+        "who": "mcbratney",
+        "role": "solution",
+        "note": "catalogue 2317: key v3 rebuilt from the 1675 gloss, the 1676 memorial read in part, with AI agents; issue #453",
+        "date": "2026-11-12",
+        "source": "https://github.com/dbourdeau/cyphersolver/issues/453"
+      },
+      {
+        "who": "mcbratney",
+        "role": "transcription",
+        "note": "eleven page transcriptions from the Riksarkivet images and a blind second transcription of two pages by a separate session, with AI agents",
+        "date": "2026-11-12"
+      },
+      {
+        "who": "mcbratney",
+        "role": "identification",
+        "note": "the memorial's opening on f.306r and its date (enclosure to the despatch of 6/16 Oct 1676); images 107-109 shown to be glossed cipher tails",
+        "date": "2026-11-12",
+        "source": "https://github.com/dbourdeau/cyphersolver/issues/453"
+      },
+      {
+        "who": "mcbratney",
+        "role": "solution",
+        "note": "catalogue 2317: Bonde's despatch of 24 Nov/4 Dec 1677 read in part with key v9, with AI agents; issue #476",
+        "date": "2026-11-12",
+        "source": "https://github.com/dbourdeau/cyphersolver/issues/476"
+      },
+      {
+        "who": "contemporary",
+        "role": "key or decipherment used",
+        "note": "the Swedish chancery's interlinear decipherments of Bonde's despatches of 1675-1677 (images 102-106, 331-346, 395, 429-430) from which values of key v9 were read",
+        "date": "1675-1677",
+        "source": "https://lbiiif.riksarkivet.se/arkis!R0003797/manifest"
+      },
+      {
+        "who": "mcbratney",
+        "role": "transcription",
+        "note": "489R from the Riksarkivet image, with a truly blind second transcription by a separate session, with AI agents",
+        "date": "2026-11-12"
+      }
+    ],
+    "gaps": [
+      {
+        "item": "Word codes 240, 245, 267, 324, 463 and 314 (7 units); 314 = Danmarck by the 1675 gloss but counted not read by rule",
+        "blocker": "open-codes",
+        "detail": "holes.md 2; senses from context: 267 alliance, 324 discours, 463 reputation (not read)"
+      },
+      {
+        "item": "Numbers with no value in v3 (99, 44, 109, 120, 129, 76, 124, 145, 162, 111, 115, 123, 130, 134, 139, 155, 157): values proposed after the test, never counted",
+        "blocker": "no-key-material",
+        "detail": "a further key state would need fresh held-out text in this table; the volume's bare French text is used up"
+      },
+      {
+        "item": "Numerals cut at the gutter (68 units hold one)",
+        "blocker": "illegible",
+        "detail": "lost in the binding; full IIIF resolution does not recover them"
+      },
+      {
+        "item": "Probable nulls 173-178, 3, 4, 8",
+        "blocker": "no-key-material",
+        "detail": "no gloss shows them"
+      },
+      {
+        "item": "Trolle-Bonde, Anteckningar om Bondeslakten D.1 (Lund 1910); AAE Correspondance politique Suede 1676",
+        "blocker": "needs-physical-access",
+        "detail": "no online copy; a library request was sent by the contributor on 12 Nov 2026"
+      },
+      {
+        "item": "Word codes 418 (twice, '-en') and 435 (once)",
+        "blocker": "open-codes",
+        "detail": "a later key state (v10, glosses) gives 418 = march and 435 = Preussen; not used here because v10 was made after this decode"
+      },
+      {
+        "item": "illa, inställa (spelt short by the key), Paez (46 a weak value)",
+        "blocker": "open-codes",
+        "detail": "counted not read; holes.md"
+      },
+      {
+        "item": "Short text: 30 word units, 169 numbers",
+        "blocker": "too-short",
+        "detail": "the shuffle test is weaker on a short text"
+      },
+      {
+        "item": "Hojer 1875, Grauers 1926 (despatch of 1677), Trolle-Bonde D.1 (1910) and AAE Correspondance politique Suede 1676-77 not seen",
+        "blocker": "needs-physical-access",
+        "detail": "priority not established"
+      }
+    ],
+    "texts": [
+      {
+        "doc": "memorial_1676-10-06",
+        "label": "Bonde and Lillieroot to Louis XIV, memorial, [Paris, 6/16 Oct 1676], f.306r-311r",
+        "transcription": [
+          "transcriptions/f306r_321R.txt",
+          "transcriptions/f306v_322L.txt",
+          "transcriptions/f307r_322R.txt",
+          "transcriptions/f307v_323L.txt",
+          "transcriptions/f308r_323R.txt",
+          "transcriptions/f308v_324L_lines1-14_training.txt",
+          "transcriptions/f308v-309r_324_heldout_v2.txt",
+          "transcriptions/f309v_325L.txt",
+          "transcriptions/f310r_325R.txt",
+          "transcriptions/f310v_326L.txt",
+          "transcriptions/f311r_326R.txt"
+        ],
+        "decryption": [
+          "decryptions/f306r_321R.txt",
+          "decryptions/f306v_322L.txt",
+          "decryptions/f307r_322R.txt",
+          "decryptions/f307v_323L.txt",
+          "decryptions/f308r_323R.txt",
+          "decryptions/f308v_324L_lines1-14_training.txt",
+          "decryptions/f308v-309r_324_v3_insample.txt",
+          "decryptions/f309v_325L.txt",
+          "decryptions/f310r_325R.txt",
+          "decryptions/f310v_326L.txt",
+          "decryptions/f311r_326R.txt"
+        ],
+        "reading": "readings/memorial_1676-10-06.md",
+        "translation": "translations/memorial_1676-10-06.md",
+        "language": "fr",
+        "state": "read in part",
+        "read_share": 0.715,
+        "summary": "The Swedish envoys thank Louis XIV for declaring war on Denmark under the guarantee of the Northern treaties and report Charles XI's victory at Halmstad, then press him: turn his arms on Denmark and send troops and ships under the treaty; as Pomponne says that cannot be done, ready a squadron to reach Gothenburg early in spring 1677 and join the ten ships there; the allies will make no peace until France returns its conquests and count on taking Pomerania; any French peace must restore Sweden's lost places; pay an extraordinary subsidy for stores from England and Holland for Stralsund and Gothenburg and for Pomerania; win Hamburg with free trade. Context: the Scanian War (1675-79), with Sweden's German provinces under attack, while the Nijmegen peace talks went on.",
+        "reading_review": {
+          "grade": "B",
+          "by": "integration reviewer (an AI agent, R4), not a person and not independent of the project",
+          "date": "2026-11-12",
+          "note": "Read as sentences against the translation; connected French diplomacy through the nine held-out pages, holes marked in place (check_reading 0.753)."
+        },
+        "note": "read_share is the strict share of word units read on the nine held-out pages after overrides.tsv: 546 of 764 (71.5%). The filed #453 figure, 358/486 on six pages, counted 12 units with a wrong key letter as read; see NOTES.md."
+      },
+      {
+        "doc": "despatch_1677-11-24",
+        "label": "Carl Bonde (Paris) to Charles XI, 24 Nov/4 Dec 1677, cipher on 489R",
+        "transcription": [
+          "despatch1677/transcriptions/despatch_1677-11-24_489R.txt"
+        ],
+        "decryption": [
+          "despatch1677/decryptions/despatch_1677-11-24_489R.txt"
+        ],
+        "reading": "despatch1677/readings/despatch_1677-11-24.md",
+        "translation": "despatch1677/translations/despatch_1677-11-24.md",
+        "language": "sv",
+        "state": "read in part",
+        "read_share": 0.8,
+        "summary": "Bonde reports that the French court is much displeased: someone coming to Livonia, learning of Pac's opposition, means to delay and hold back the [418] (march?) until the matter with Pac is settled, in the form of a vain negotiation, which has alarmed the court. The French want nothing more than the plans, with a prompt diversion into [435] (Prussia?), carried out, and the King's Field Marshal to bring the [418] to ripeness as soon as possible so that the suspicions are dropped. Context (our inference): French-backed plans of late 1677 for a Swedish diversion from Livonia, with the passage of Lithuanian troops, which the despatch of 3/13 Nov 1677 also concerns.",
+        "reading_review": {
+          "grade": "B",
+          "by": "integration reviewer (an AI agent, R4), not a person and not independent of the project",
+          "date": "2026-11-12",
+          "note": "Read as sentences against the translation; one coherent Swedish passage with the open codes bracketed; the clear Swedish between the runs, checked on the image, agrees with the decode (check_reading 0.5, clear text only partly transcribed)."
+        },
+        "note": "read_share is the strict share of word units read: 24 of 30 (80.0%). Short text; clear text only partly transcribed."
+      }
+    ],
+    "key_file": [
+      "key.tsv",
+      "overrides.tsv",
+      "gloss/KEY_v2.tsv",
+      "despatch1677/key.tsv",
+      "despatch1677/gloss/gloss_pairs.tsv"
+    ],
+    "notes": "No docs/_validate.py run by the contributor; the shuffled-key controls are the contributor's own (controls/shuffle.txt, despatch1677/controls/shuffle.txt). Folded from two pull requests (#486 memorial, #485 despatch) under one key, one entry."
+  }
 }

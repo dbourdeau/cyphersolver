@@ -1,6 +1,13 @@
-# Bonde and Lillieroot to Louis XIV, 6/16 Oct 1676: the ciphered French memorial (Riksarkivet, Diplomatica Gallica; catalogue 2317)
+# Bonde and Lillieroot to Louis XIV (6/16 Oct 1676) and Bonde to Charles XI (24 Nov/4 Dec 1677): one number table (Riksarkivet, Diplomatica Gallica; catalogue 2317)
 
 Status: read in part, contributed. No claim of a first reading (see Prior art).
+
+**Two documents, one key (decided at integration, 12 Nov 2026).** The contributor filed two folders (PR #486 `bonde1676`, the
+French memorial, read with key v3; PR #485 `bonde1677`, a Swedish despatch, read with key v9). v9 is the same number table as
+v3, corrected (66, 89, 21, 103, 131, 176, 335) and extended by 36 rows (none dropped), so under one key, one entry they are one
+target. The memorial is the main text (this file, top level); the 1677 despatch sits in `despatch1677/` with its own key state,
+decoder, controls and the contributor's original notes (`despatch1677/CONTRIBUTOR_NOTES.md`). Both are counted by the same strict
+rule: memorial 546 of 764 units (71.47%), despatch 24 of 30 (80.00%), together 570 of 794 (71.79%). Neither reaches the 95% bar.
 
 Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic). Issue #453 and its two comments. This folder
 answers the request on that issue for the transcription, the frozen key, the decoder, the decryption, the reading and
@@ -68,10 +75,27 @@ Method class: key recovered from the decipherment of a glossed sibling despatch 
 the memorial's own image 324, then applied to nine pages held out from it. Not a ciphertext-only break. About two fifths of
 the key's letter rows (F 29 + P 23 = 52 of 119 letter rows) come from context in image 324, not from the gloss.
 
-Key lineage: `targets/bonde1677` reads a Swedish despatch of Nov/Dec 1677 with key v9 (md5 af29e81f). v9 is a later state of
+Key lineage: `despatch1677/` reads a Swedish despatch of Nov/Dec 1677 with key v9 (md5 af29e81f). v9 is a later state of
 this same key: v3, then v4-v7 (values from context in the 1676 despatches and the post-hoc values of this memorial),
 v8-v9 (values from chancery glosses of 1676-1677), with 131 changed from q to r. v9 was made for Swedish text; this French
 memorial is read with v3 only, and no v4-v10 value is used here.
+
+## The 1677 despatch (folded in from PR #485)
+
+Carl Bonde (Paris) to Charles XI, "Paris d. 24 Novemb./4 Decemb. 1677" (image 490L), Swedish; the only cipher is on image 489R
+(hand folio 474): 17 runs, 169 numbers inside clear sentences, no gloss. Key v9 (`despatch1677/key.tsv`, md5
+af29e81f99e96f03663d94dea392e672, 164 rows), by the contributor's record frozen at 06:08:58 UTC, before 489R was transcribed;
+first transcription frozen 06:24:26 and decoded once: **24 of 30 word units = 80.00%** strict; the blind second transcription
+(b127, 168 of 169 numbers the same, 61 against 67 in "alarme") 23 of 30 = 76.67%. Not read: ila (illa) and instäla
+(inställa) spelt short by the key, paeE (46 weak), <418>en twice, <435>. Of the 149 numbers inside the 24 read units 90 have a
+value from the 1675 gloss, 1 from a 1676-77 gloss and 58 from context (F 36, P 16, Q 5, T 1); 22 of the 24 read units use at
+least one context value. The contributor's issue text said the key was "built only from the chancery's glosses": it is not.
+A 30-unit test is too short to say much about the key (blocker too-short): shuffled keys 0 of 5,000 (true -3.1451, best
+-4.0151 and -3.9637), but the test is weak. The clear Swedish between the runs agrees with the decode, which is the stronger
+evidence: "man här wid Hofwet mycket [illa tilfredt]", "kommandes till Lijfland och förnimmandes [Paez' opposition] skulle
+willia [dröya och inställa]". Reading: `despatch1677/readings/`, translation: `despatch1677/translations/`; the contributor's
+own notes: `despatch1677/CONTRIBUTOR_NOTES.md`. The despatch of 17/27 Nov 1677 (images 479R-481R), decoded in the same
+session with v9 at 62/100 = 62.00%, is under the contributor's threshold and not filed.
 
 ## Corrections to our issue figures
 
@@ -133,16 +157,18 @@ All re-run for this folder with `python3 -I` (standard library):
 
 ## Remaining gaps
 
-- Word codes 240, 245, 267, 324, 463 (one unit each) and 314 (two units) - blocker: open-codes; senses from context only
-  (267 alliance, 324 discours, 463 reputation?)
-- Seventeen numbers with no value in v3, values proposed after the decodes (99 st, 44 x, 109 ff, 120 q, 129 y ...;
-  `holes.md` 2) - blocker: no-key-material; testing them needs fresh text in this table, and the volume's bare French
-  cipher is used up
+- Word codes 240, 245, 267, 324, 463 (one unit each) and 314 (two units) - blocker: open-codes; senses from context only (267 alliance, 324 discours, 463 reputation?)
+- Seventeen numbers with no value in v3, values proposed after the decodes (99 st, 44 x, 109 ff, 120 q, 129 y ...; `holes.md` 2) - blocker: no-key-material; testing them needs fresh text in this table, and the volume's bare French cipher is used up
 - Numerals cut at the gutter: 68 units hold one - blocker: illegible; lost in the binding
 - Probable nulls 173-178, 3, 4, 8 - blocker: no-key-material
-- Image 324: in-sample for v3; reading is b99's under v2 - blocker: not-attempted
-- No person has compared any transcription with the images; all checks are by model sessions - blocker: not-attempted
-- Trolle-Bonde D.1 (1910) and the French side (AAE) not seen - blocker: needs-physical-access
+- Trolle-Bonde D.1 (1910), Höjer 1875, Grauers 1926 and the French side (AAE) not seen - blocker: needs-physical-access
+- Despatch of 1677: word codes 418 (twice, "<418>en") and 435 (once); v10, made later from glosses, gives 418 = march and 435 = Preussen, not used - blocker: open-codes
+- Despatch of 1677: "illa", "inställa" (spelt short by the key), "Paez" (46 a weak value), counted not read - blocker: open-codes
+- Despatch of 1677: 30 word units only - blocker: too-short
+
+Not gaps in the unread cipher, but limits of the evidence: no person has compared any transcription with the images (the
+contributor's second transcriptions and the integration sample are by AI agents); image 324 is in-sample for v3 and its
+reading is the first-test reading under v2; the clear text of 488R-490L is transcribed only next to the cipher runs.
 
 ## Prior art (checked 12 Nov 2026): priority not established
 
@@ -157,6 +183,36 @@ All re-run for this folder with `python3 -I` (standard library):
   clear. Either could hold the text.
 - Wimarson (Sveriges krig II, p. 6 n.) notes that some of Horn's ciphered letters of autumn 1675 were left wholly
   undeciphered. Our inference: historians used this volume from its clear text and glosses.
+
+## Integration check (12 Nov 2026)
+
+By an AI agent for the maintainer, not a person. Reproduced with `python3 -I` from the folders: `scripts/build.py` in both
+(546/764, 24/30, every filed figure), `compare_blind.py` (860 of 863 and 168 of 169), shuffle outputs. An own decoder written
+from `key.tsv` alone decodes all 284 cipher lines of the nine held-out memorial pages and of 489R identically to the
+contributor's decryptions. On the Riksarkivet images (IIIF `full/max` via curl; region requests return 501, so crops are made
+locally) about 400 groups were compared: all 17 runs of 489R, f.307r lines 1-6 and 18-22, f.309v lines 4-12: 0 disagreements.
+Not sampled: the other seven memorial pages and image 324. On the nine held-out pages 94.7% of cipher numbers (3,407 of
+3,599) carry a letter value, of which 56.5% come from the gloss (tiers A, B) and 43.5% from context (F, P).
+
+The one external time fact: an RFC 3161 stamp of 02:54:07 GMT 12 Nov 2026 covers a file byte-identical to key v3 (md5 8e1d93d1),
+before any stamp that holds a held-out page (03:10:20, 03:53:21). Everything else about the order of events (that pages were
+transcribed after the key, decoded once; key v9 and the 489R transcription before the decode, the stamp of 06:25:27 being after
+it; the blind transcriptions) is by the contributor's record.
+
+The first test of the memorial (key v2 on 30 lines of image 324) **failed** the contributor's own bar: 44 of 103 = 42.72%
+strict against the 65% set beforehand. Key v3 was then made with 23 more values read off those very lines, so image 324 is
+in-sample for v3 and carries no count. The result of v3 is the nine held-out pages, 546 of 764 = 71.47%.
+
+Catalogue 2317 narrowed (not removed): images 327-330 (the Swedish letter with Lillieroot), 114 left (a different code) and
+other bare leaves remain unread.
+
+## Escalation
+- [x] siblings: the neighbouring leaves of R0003797 opened; 107-109 are the cipher tail of the 1675 despatch (glossed on 105-106); the 1677 despatch of 17/27 Nov (479R-481R) decoded at 62%, not filed; 327-330 (Swedish letter with Lillieroot) not attempted here
+- [x] clear-pages: the clear Swedish and French between the cipher runs read and used as context
+- [x] known-keys: no other Swedish 1670s table is known to this repository; the glosses of the volume are the key source
+- [x] print: LIBRIS, archive.org full text, Runeberg, Wimarson I-III, Varenius, Recueil des instructions: nothing on these two texts; Trolle-Bonde D.1, Hojer 1875, Grauers 1926 not seen
+- [x] key-rebuild: key v3 from the 1675 gloss, v4-v9 from glosses and context; further values proposed after the decodes are not counted
+- [n/a] retry: a rerun of the memorial with v9 was not made; v3 is the frozen test, and values proposed after it are listed in holes.md
 
 ## Files
 

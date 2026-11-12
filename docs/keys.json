@@ -5043,6 +5043,22 @@
    "by": "Daniel Bourdeau's project, WAINUT",
    "year": 1740,
    "note": "A syllabary with word codes, 235 confirmed values, frozen and tested on a glossed French page of 1741 (222 of 282 groups); extended by 24 values and 2 corrections from that gloss to read two bare French documents."
+  },
+  {
+   "id": "k-bonde-gloss-1675",
+   "label": "Swedish chancery's interlinear decipherment of Bonde's despatch of 11/21 Nov 1675 (R0003797 images 102-106) and later glosses of 1676-1677",
+   "kind": "contemporary key",
+   "by": "the Swedish chancery",
+   "year": 1675,
+   "note": "Swedish plaintext written over the coded runs of Bonde's despatches; the source of the A, B, G and H rows of the number table."
+  },
+  {
+   "id": "k-bonde1676",
+   "label": "Carl Bonde's number table (numbers 19-178, word codes from about 240), keys v3 (1676) and v9 (1677), rebuilt from the glosses and from context",
+   "kind": "rebuilt here",
+   "by": "Malcolm McBratney, with AI agents",
+   "year": 1676,
+   "note": "Homophonic number table; v3 from the 1675 gloss and 14 training lines of image 324, frozen and applied to nine pages of the French memorial (546 of 764 word units strict); v9, the same table corrected and extended by 36 rows, applied to one Swedish despatch (24 of 30). 43.5% of the letter values on the memorial's held-out pages come from context, not the gloss."
   }
  ],
  "links": [
@@ -8141,6 +8157,18 @@
    "target": "hopken1740",
    "how": "rebuilt from",
    "note": "rebuilt from the Swedish gloss of the despatch of January 1740, tested on Lit. A (1741) and applied, extended, to the bare Castellane letter and reply"
+  },
+  {
+   "key": "k-bonde-gloss-1675",
+   "target": "bonde1676",
+   "how": "rebuilt from",
+   "note": "the table was first read off the 1675 gloss of image 102R by EM alignment, then extended from glosses of 1676-1677"
+  },
+  {
+   "key": "k-bonde1676",
+   "target": "bonde1676",
+   "how": "rebuilt from",
+   "note": "key v3 applied unchanged to the memorial of 1676, key v9 to the despatch of 1677; read in part"
   }
  ],
  "sources": [
@@ -9477,6 +9505,10 @@
   {
    "source": "s-cyphersolver",
    "key": "k-hopken1740"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-bonde1676"
   }
  ],
  "unlinked": {
