@@ -124,6 +124,12 @@
    "kind": "reading",
    "what": "Only short stretches build Italian words (dele letere, gravisima, tornare, desiderio); no sentence-level reading.",
    "result": "failed"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Outside check of issue 492 (prabal-rje): their own keys for R5464 and R5465, found from the ciphertext alone on our sign tokens, were re-applied to the tokens; the shown-letter shares (86.4% of 3,249 signs; 68.0% of 5,828 signs) reproduce, and their R5464 letters equal our refined key's letters on 89.7% of the shown signs (they state 86.6% of all signs). The sense-reading by two blind language models (65-70% of shown letters for R5464) was not re-run; it is the contributor's figure and is not counted here.",
+   "result": "partial"
   }
  ],
  "outcome": {

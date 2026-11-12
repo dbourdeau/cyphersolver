@@ -219,3 +219,16 @@ Benchmark `ctts/bench.py` (dictionary-word coverage of the solver decryption, 5-
 - Loop 3, n-gram 6 on other tokens: ring-merge only 0.217, edits without rules 0.245, edits with rules 0.257, cap 4 0.214. The edits and rules are worth about 4 points under n-gram 6. No progress.
 - Loop 4, word-guided key refinement (`keyrefine.py`) on the decryptions: n-gram 6 0.344, n-gram 5 0.345. No gain from n-gram 6 after refinement. No progress.
 Best plain solver score 25.7% (n-gram 6); best refined 34.5% (hand edits + rules + refinement, own coverage measure). Settings are exhausted; the limit is sign accuracy.
+
+## 12 Nov 2026: an outside partial read of R5464 and R5465 (issue 492, prabal-rje)
+Contributor prabal-rje (issue 492, files at github.com/prabal-rje/branicki-1757, folder `sforza-1597`) built their own keys for R5464 and R5465 from the
+ciphertext alone, on our sign tokens (`ctts/r5464_best/tokens.txt`, `ctts/r5465_best/tokens.txt`), with a letter model of the printed Milanese
+dispatches of the 1460s-70s. They state: R5464 shows a letter on 86% of the signs, two blind language-model readers found sense in 65-70% of the shown
+letters (56-61% of all signs); R5465 shows a letter on 68%, sense in about 55% of those (37% of all signs); no key sheet or clear text checks either;
+their key equals ours on 87% of the R5464 signs; a records 5425-5430 read is held in an encrypted file with its passphrase to be published later.
+Checked here (own script on their `key.tsv` and our tokens): the shown shares reproduce (2,808 of 3,249 signs; 3,961 of 5,828), and their R5464
+shown letters equal our refined key's letters on 2,520 of 2,808 (89.7%). Not checked: the blind-reader sense figures, the translation, the 90-95% simulation figures.
+By the README read bar nothing here is a reading: shown letters and sense judged by language models are not 95% of tokens read, and the key is not
+confirmed by an outside plaintext. Both records stay "read in part" at most, by the contributor's record, and the folder stays `Status: in progress`.
+Prior work credited: the sign transcription and the first key are ours; their key is independent in the letter model (published dispatches rather than our word list), so its 87-90% agreement with ours is partial support for the main letters, not an independent proof (same tokens, same errors).
+Open: their key, decode and `check.md` are not copied into this folder (the contributor offered the keys in our sign labels); the tokens' ~10% error limit is unchanged.
