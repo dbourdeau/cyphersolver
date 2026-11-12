@@ -17,7 +17,7 @@
     "location": [
      "none"
     ],
-    "source": "No decipherment with the letter; Manning 1925 prints the clear text with '(undeciphered cipher)'."
+    "source": "No decipherment with the letter; Manning 1925 prints the clear text with '(undeciphered cipher)'. Read in part on 11 Nov 2026 with the printed code table WE025 (beling/)."
    },
    "length": {
     "tokens": 437,
@@ -30,7 +30,7 @@
     "by": "llm from images",
     "source": "NARA catalogue JPEGs of M37 roll 2 frames 0093-0094",
     "image_quality": "fair",
-    "notes": "P1-P9 transcribed; P0 on frame 0092 (f. 37r) not transcribed, the frame is nearly black."
+    "notes": "P1-P9 transcribed (437 groups, 256 distinct in ciphertext_1813.txt); P0 on frame 0092 (f. 37r) not transcribed, the frame is nearly black. A second transcription of the numerals by Andrew Beling, frozen 1 Nov 2026 (beling/transcription/; 245 distinct numbers as used in the reading), is the one the reading works from; it was made after seeing the first decode, so it is not independent."
    },
    "places": {
     "from": "Santiago",
@@ -53,7 +53,7 @@
      "interlinear",
      "printed edition"
     ],
-    "source": "Clerk's decode written over the groups on the RC (frame 0098); the same text printed in Manning 1925 vol. 1 doc. 201, pp. 335-336, from MS. Consular Letters, Buenos Aires I. Group 39 left blank in both."
+    "source": "Clerk's decode written over the groups on the RC (frame 0098); the same text printed in Manning 1925 vol. 1 doc. 201, pp. 335-336, from MS. Consular Letters, Buenos Aires I. Group 39 left blank in both; it is 'should' in WE025."
    },
    "length": {
     "tokens": 123,
@@ -79,7 +79,7 @@
   "types": [
    "code"
   ],
-  "summary": "Numbered code of 1,592 elements, Weber's WE025 (Weber 1979, pp. 470-480): common words as single groups, longer words spelled from syllable groups; a circle or diamond over a group adds -s.",
+  "summary": "Numbered code of 1,592 elements, the table Weber prints as WE025 (Weber 1979; page numbers not checked here): common words as single groups, longer words spelled from syllable groups, in no alphabetical order; a circle or diamond over a group adds -s.",
   "symbol_kind": "digits",
   "distinct_symbols": 256,
   "diacritics": {
@@ -104,12 +104,12 @@
   "word_division": "none",
   "doubled_letters": "unknown",
   "sibling_key": "Poinsett to Monroe, Buenos Aires 14 June 1814 (catalogue 651; M37 roll 2 frame 0098, Duplicate 0100), same code with a clerk's interlinear decode, printed by Manning 1925 vol. 1 doc. 201.",
-  "notes": "Identified as WE025 on 11 Nov 2026 (beling/README.md). 1315, written where 'a' is wanted three times in the 1814 letter, is 'hu' in Weber (not explained); 1215 = a. Cross and caret read from use only: the cross doubles a letter, the caret adds -ed."
+  "notes": "Identified as WE025 on 11 Nov 2026 by Andrew Beling (beling/README.md). That the table is Weber's could not be checked from the repository (341 of 1,592 rows are in it, 10 marked as checked on the page image); the numbering is confirmed apart from Weber by the clerk's 1814 decipherment, Dudout's 1811 values and the 1813 text. 1315, written where 'a' is wanted three times in the 1814 letter, is 'hu' in the table (not explained); 1215 = a. Cross and caret read from use only: the cross doubles a letter, the caret adds -ed. distinct_symbols 256 is the count of the first transcription (ciphertext_1813.txt); the second transcription has 245 distinct numbers."
  },
  "conditions": {
   "prior_solution": {
    "exists": "no",
-   "where": "1813: Manning 1925 vol. 2 doc. 442 prints the cipher places as '(undeciphered cipher)'; no decipherment found. 1814 (catalogue 651): the clerk's interlinear decode on the RC, printed in Manning 1925 vol. 1 doc. 201 (found 27 Oct 2026). The code table: Weber 1979 prints WE025 in full (pp. 470-480); no reading of the 1813 letter with it found (Weber, this repository, Tomokiyo's Cryptiana, Manning; searched 11 Nov 2026).",
+   "where": "1813: Manning 1925 vol. 2 doc. 442 prints the cipher places as '(undeciphered cipher)'; no decipherment found. 1814 (catalogue 651): the clerk's interlinear decode on the RC, printed in Manning 1925 vol. 1 doc. 201 (found 27 Oct 2026). The code table: Weber 1979 prints WE025 in full; no reading of the 1813 letter with it found (the contributor's search of Weber, this repository, Tomokiyo's Cryptiana and Manning, 11 Nov 2026; not repeated at integration).",
    "found": "not found",
    "used": false
   },
@@ -117,7 +117,7 @@
    "images"
   ],
   "attack": "sibling key",
-  "human_role": "Pasted the catalogue 639 task page.",
+  "human_role": "Pasted the catalogue 639 task page. The WE025 identification and the 1813 reading were contributed by Andrew Beling, with AI agents (pull request 414); the project verified and integrated them.",
   "tools": [
    "NARA catalogue API",
    "python",
@@ -128,9 +128,9 @@
   "models": [
    "claude-opus-5-5"
   ],
-  "sessions": 1,
+  "sessions": 3,
   "first_date": "2026-10-27",
-  "last_date": "2026-10-27"
+  "last_date": "2026-11-12"
  },
  "solution": [
   {
@@ -292,19 +292,29 @@
    "kind": "literature search",
    "what": "Beling contribution: prior art for a tie between Poinsett's code and WE025 searched in Weber 1979, this repository (files, open and closed pull requests and issues, commits of 9-11 Nov 2026), Tomokiyo's Cryptiana and Manning 1925. Nothing found.",
    "result": "failed"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "key matching",
+    "plaintext matching",
+    "statistical test"
+   ],
+   "what": "Integration of pull request 414 after a separate read-only verification: hashes, status counts (D 385, A 21, R 4, I 20, H 7) and the 1814 score (0.935, 376 of 401 letters; 0.954 with two rereads) reproduce; a decoder written separately, applied to the first transcription (transcription.tsv), gives 432 of 437 groups a value and the same English; 73 of 73 groups on frame 0093 agree with the frozen numerals; 485 and 1315 (three times) confirmed on frame 0100. Not reproducible from the repository: the 200-shuffle control (full table absent; a shuffle of the committed rows gives mean 0.194, best 0.307) and the identity of the table with Weber's print (book absent; page numbers 470-480 against 443-453 unresolved). The 1814 test is not blind and had no threshold. Read share restated by the read bar: 248 of 293 coded word places (0.846; 264 with the 16 choice words; contributor's 0.916 includes Manning's clear words); groups 385 of 437 as first frozen (0.881; 406 with the choices). outcome.key recovered -> partial; contribution 'key extended or corrected' removed. One pass over eleven of the twenty assumed misreads on frame 0093: none settled on the high-contrast film (P7.4 reads ?517, which supports 1517).",
+   "result": "worked"
   }
  ],
  "outcome": {
   "class": "read in part",
-  "key": "recovered",
+  "key": "partial",
   "method": "read after matching with key from external sources",
   "contribution": [
-   "transcription",
-   "key extended or corrected"
+   "transcription"
   ],
-  "fraction_read": 0.929,
+  "fraction_read": 0.881,
   "fraction_read_method": "measured",
-  "fraction_read_source": "beling/groups_1813-02-20.tsv: 406 of 437 groups of the 1813 letter read with WE025 as frozen (statuses D and A); 410 with the four image rereads (R); P0 not counted. 1814 letter 122/123 in reading_1814.txt.",
+  "fraction_read_source": "Groups of the 1813 letter (beling/groups_1813-02-20.tsv): 385 of 437 read with WE025 from the first frozen reading of the number, no choice or reread (status D). With the 21 choices between two frozen readings (A) 406 of 437 = 0.929, the contributor's figure; with the four rereads (R) 410. P0 not counted. This is a count of groups; the count of words is read_share on the text entry (0.846).",
   "codes_open": {
    "open": 5,
    "total": 245,
@@ -313,38 +323,62 @@
   "verification": [
    "contemporary decipherment"
   ],
-  "notes": "1813: read in part with WE025 (Weber 1979), contributed by Andrew Beling with AI agents (beling/README.md); 92.9% of groups, under the 95% read bar; reading_review pending. codes_open counts the 1813 holes: 5 distinct groups whose WE025 value makes no sense at any of their places (7 tokens), among the 245 distinct numbers of our transcription. The 1814 letter (651) is complete from the existing decipherment.",
+  "notes": "1813: read in part with the printed table WE025, contributed by Andrew Beling with AI agents (beling/README.md), verified and integrated 12 Nov 2026 (NOTES, Integration check). A printed key was matched; nothing was recovered by cryptanalysis, and outcome.key is partial because seven groups have no usable value. codes_open: five numbers (55, 502, 487, 122, 1261) occur once each and give no sense; 12 and 774 give sense elsewhere but not at one place each (7 tokens), among the 245 distinct numbers of the second transcription (the first has 256). The 1814 letter (651) is complete from the existing decipherment; with WE025 its group 39 is 'should'; 1315 (three times, where 'a' is wanted) is not explained.",
   "parts": [
    {
     "label": "20 Feb 1813, Santiago (catalogue 639)",
     "records": "M37 roll 2 frames 0092-0094",
     "method": "read after matching with key from external sources",
     "extent": "partial",
-    "basis": "WE025 (Weber 1979, pp. 470-480), frozen before decoding: 406 of 437 groups read as frozen (92.9%); all nine coded passages read in part (beling/reading_1813-02-20.md)."
+    "basis": "The printed table WE025 (Weber 1979), by the contributor's record frozen before decoding: 385 of 437 groups read from the first frozen reading (0.881), 406 with the choices (0.929); 248 of 293 coded word places read (0.846); all nine coded passages join Manning's clear text (beling/reading_1813-02-20.md)."
    },
    {
     "label": "14 June 1814, Buenos Aires (catalogue 651)",
     "records": "M37 roll 2 frames 0097-0100",
     "method": "read from existing decipherment",
     "extent": "complete",
-    "basis": "Clerk's interlinear decode, printed by Manning 1925 vol. 1 doc. 201; checked against both copies, 122/123 groups (0.992), group 39 open."
+    "basis": "Clerk's interlinear decode, printed by Manning 1925 vol. 1 doc. 201; checked against both copies (122 of 123 groups, 0.992, in the first alignment); with WE025 every group has a value and group 39 is 'should'; 1315, three times where 'a' is wanted, is not explained."
    }
   ],
-  "method_basis": "1813 letter: Weber's printed table WE025, not tied to Poinsett in Weber or this repository, found to fit his code (1355 the, 1397 of), checked on the clerk's 1814 decipherment (0.935 of letters; shuffled keys best 0.306), then applied to a transcription of the 1813 numerals frozen before the code was tried; 1814 letter: existing decipherment, 122 of 123 groups.",
+  "method_basis": "1813 letter: the printed table WE025, not tied to Poinsett in this repository (nor in Weber, by the contributor's search), found by Andrew Beling to fit his code (1355 the, 1397 of); it reproduces the clerk's 1814 decipherment (0.935 of letters; not a blind test) and reads the 1813 numerals in part. 1814 letter: existing decipherment.",
   "key_file": "beling/key/we025_poinsett.tsv",
   "provenance": "mixed",
   "texts": [
    {
     "doc": "1813-02-20",
-    "label": "Poinsett to Monroe, Santiago, 20 Feb 1813, M37 roll 2 frames 0092-0094 (catalogue 639), read with WE025",
+    "label": "Poinsett to Monroe, Santiago, 20 Feb 1813, M37 roll 2 frames 0092-0094 (catalogue 639), with the table WE025",
     "transcription": "transcription.tsv",
     "decryption": "beling/decryption_1813-02-20.txt",
     "reading": "beling/reading_1813-02-20.md",
     "language": "en",
     "state": "read in part",
-    "read_share": 0.916,
+    "read_share": 0.846,
     "summary": "Writing from Santiago while the Carreras governed Chile and Lima's cruisers blockaded Valparaiso and Conception (Manning's clear text), Poinsett reports in code that he has taken a part in the revolution beyond his instructions, that a small naval force with five thousand stand of arms would insure the fall of Lima, that his journey to Arauco is really to leave the militia in patriot hands before independence is declared, and that the new governor of the bishopric, proposed by him, is at his disposal.",
-    "note": "Contributed by Andrew Beling with AI agents (beling/README.md). read_share is the repo measure on the reading, Manning's clear words before each passage included; 406 of 437 groups (92.9%) read as frozen. The decryption is laid out against Daniel Bourdeau's transcription.tsv; the reading uses our own frozen transcription (beling/transcription/). P0 (frame 0092) not read. reading_review pending."
+    "note": "Contributed by Andrew Beling with AI agents (beling/README.md). read_share is the strict count of the coded words only: 248 of 293 word places whose every group is a first frozen reading used as the table gives it; choice, reread, assumed-misread, hole and supplied words are not counted (264 with the 16 choice words). The contributor's 0.916 also counts Manning's clear words. The reading file marks the reread and assumed-misread words [?word]; the 16 choice words are listed in NOTES (Integration check). The decryption is laid out against Daniel Bourdeau's transcription.tsv. P0 (frame 0092) not read.",
+    "reading_review": {
+     "grade": "A",
+     "by": "integration reader for the project, after the contributor's AI agents",
+     "date": "2026-11-12",
+     "note": "Read as English sentences against decryption_1813-02-20.txt and Manning's clear text on both sides of each passage: all nine passages construe and join the clear text; holes are marked and scattered, thickest in P7 (court of Brasil, B. Ayres), where four words rest on assumed misreads. Frame 0093 looked at for eleven doubtful groups; no human has read the reading."
+    }
+   },
+   {
+    "doc": "1814-06-14",
+    "label": "Poinsett to Monroe, Buenos Aires, 14 June 1814, M37 roll 2 frames 0097-0100 (catalogue 651), from the clerk's decipherment",
+    "transcription": "transcription_1814.tsv",
+    "decryption": "reading_1814.txt",
+    "reading": "reading_1814.md",
+    "language": "en",
+    "state": "read",
+    "read_share": 0.965,
+    "summary": "From Buenos Aires Poinsett reports in code that the government there will seek British protection at any price if Britain and Spain break, though the people will never let the English gain a permanent footing; and that British trade is exposed to retaliation with seldom more than a single frigate to protect it, two sloops of war being better than a frigate in waters where a ship should draw eighteen feet at most.",
+    "note": "The words are the State Department clerk's of 1814, printed by Manning 1925 (vol. 1 doc. 201). read_share: 83 of 86 coded word places; the three places where Poinsett wrote 1315 and the sense wants 'a' are not counted (the clerk wrote nothing there; WE025 has 'hu').",
+    "reading_review": {
+     "grade": "A",
+     "by": "integration reader for the project",
+     "date": "2026-11-12",
+     "note": "Both passages read as English sentences against the clerk's words (reading_1814.txt) and the WE025 line-by-line decode (beling/tests/heldout_1814_result.txt); they join the clear text Manning prints."
+    }
    }
   ],
   "credits": [
@@ -358,8 +392,9 @@
    {
     "who": "ajbeling",
     "role": "solution",
-    "note": "Andrew Beling, with AI agents: Poinsett's code identified as Weber's WE025 and the 20 Feb 1813 letter read in part with it (406 of 437 groups as frozen); WE025 checked on the clerk's decipherment of 14 June 1814 (beling/)",
-    "date": "2026-11-11"
+    "note": "Andrew Beling, with AI agents: Poinsett's code identified as the table Weber prints as WE025 and the 20 Feb 1813 letter read in part with it (385 of 437 groups from the first frozen reading, 406 with the choices); WE025 checked on the clerk's decipherment of 14 June 1814 (beling/)",
+    "date": "2026-11-11",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/414"
    },
    {
     "who": "ajbeling",
@@ -370,7 +405,7 @@
    {
     "who": "contemporary",
     "role": "key or decipherment used",
-    "note": "WE025, the code table as printed by Ralph E. Weber, United States Diplomatic Codes and Ciphers, 1775-1938 (1979), pp. 470-480; only the rows for groups in these letters are in beling/key/we025_poinsett.tsv",
+    "note": "WE025, the code table as printed by Ralph E. Weber, United States Diplomatic Codes and Ciphers, 1775-1938 (1979), in the contributor's transcription; only the rows for groups in these letters are in beling/key/we025_poinsett.tsv, and the book was not seen at integration",
     "date": "1979"
    },
    {
@@ -378,6 +413,48 @@
     "role": "key or decipherment used",
     "note": "the clerk's interlinear decipherment of the 14 June 1814 letter (frame 0098), used to check WE025",
     "date": "1814"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "P0, f. 37r (frame 0092), about three lines of groups",
+    "blocker": "illegible",
+    "detail": "the microfilm frame is nearly black; needs a new scan of the original or the 1813 duplicate if one survives"
+   },
+   {
+    "item": "20 Feb 1813, 7 groups whose WE025 value gives no sense where they stand (55, 12, 502, 774, 487, 122, 1261)",
+    "blocker": "open-codes",
+    "detail": "a misread digit, a slip of the encoder or a wrong row of the copy of the table cannot be told apart from these frames"
+   },
+   {
+    "item": "20 Feb 1813, 20 groups read only by assuming a digit misread",
+    "blocker": "illegible",
+    "detail": "high-contrast film, filled blots and the gutter; eleven looked at again on frame 0093 on 12 Nov 2026, none settled; needs a new scan"
+   },
+   {
+    "item": "20 Feb 1813, 25 groups whose number was fixed after the decode was seen (21 choices between two frozen readings, 4 rereads)",
+    "blocker": "illegible",
+    "detail": "same film; one transcriber, no second reader of the numerals"
+   },
+   {
+    "item": "1315, three times in the 14 June 1814 letter where 'a' is wanted",
+    "blocker": "open-codes",
+    "detail": "WE025 has 'hu'; 1315 is clear on frame 0100, not a misreading of 1215; not explained"
+   },
+   {
+    "item": "210 in Brice Dudout's 1811 line (form; WE025 has cur at 210, form at 216)",
+    "blocker": "needs-physical-access",
+    "detail": "his photograph of the HSP leaf is not published"
+   },
+   {
+    "item": "that the table is the one Weber prints as WE025, row for row",
+    "blocker": "needs-physical-access",
+    "detail": "neither the book nor the full transcription is in the repository; 341 of 1,592 rows are, 10 marked as checked on the page image; page numbers 470-480 against 443-453 unresolved"
+   },
+   {
+    "item": "the marks (circle, diamond, cross, caret)",
+    "blocker": "no-key-material",
+    "detail": "meaning read from use only"
    }
   ]
  }

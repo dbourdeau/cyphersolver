@@ -4091,6 +4091,15 @@
    "note": "95 values from the clerk's interlinear decipherment of Poinsett to Monroe, 14 June 1814 (NARA M37 roll 2 frame 0098); targets/poinsett1813/key_1814.tsv."
   },
   {
+   "id": "k-weber-we025",
+   "label": "US State Department code WE025 (1,592 elements), as printed by Ralph E. Weber",
+   "kind": "scholar's key",
+   "by": "Ralph E. Weber (table); transcribed by Andrew Beling",
+   "year": 1811,
+   "found": 1979,
+   "note": "The table Weber prints as WE025 in United States Diplomatic Codes and Ciphers, 1775-1938 (1979), in Andrew Beling's transcription of the book's text layer; the 341 rows for numbers in Poinsett's letters of 1811-1814 are in targets/poinsett1813/beling/key/we025_poinsett.tsv. The book was not seen by the project; year is the earliest Poinsett letter known in the code."
+  },
+  {
    "id": "k-ferdinand1473",
    "label": "Ferdinand to John II, Hostalric 1473 (BNE MSS/20211/64): homophonic letter key",
    "kind": "rebuilt here",
@@ -7097,7 +7106,13 @@
    "key": "k-poinsett1814",
    "target": "poinsett1813",
    "how": "partial",
-   "note": "95 values cover 161 of 437 groups of the 20 Feb 1813 letter; no sentence reads"
+   "note": "95 values cover 161 of 437 groups of the 20 Feb 1813 letter; no sentence formed with them (superseded 11 Nov 2026 by the printed table)"
+  },
+  {
+   "key": "k-weber-we025",
+   "target": "poinsett1813",
+   "how": "read unchanged",
+   "note": "identified by Andrew Beling; reproduces the clerk's decipherment of 14 June 1814 (0.935 of letters) and reads the 20 Feb 1813 passages in part: 385 of 437 groups from the first reading of the number, seven groups give no sense"
   },
   {
    "key": "k-ferdinand1473",
@@ -10092,6 +10107,26 @@
    "key": "k-rakoczi1711",
    "target": "jablonski1705",
    "note": "R483's rebuilt syllabic key compared: of 81 groups valued in both keys, 2 agree (160, 280); a different system"
+  },
+  {
+   "key": "k-jqa1385",
+   "target": "poinsett1813",
+   "note": "applied directly and under every constant shift to the 1813 groups: best z 4.3 among about 9,000 settings, junk decodes (shift_test.py)"
+  },
+  {
+   "key": "k-armstrong972",
+   "target": "poinsett1813",
+   "note": "applied directly and under shifts to the 1813 groups: no fit (NOTES section 2)"
+  },
+  {
+   "key": "k-pinckney-legation",
+   "target": "poinsett1813",
+   "note": "applied directly and under shifts to the 1813 groups: no fit (NOTES section 2)"
+  },
+  {
+   "key": "k-mountflorence1801",
+   "target": "poinsett1813",
+   "note": "applied directly and under shifts to the 1813 groups: no fit (NOTES section 2)"
   }
  ]
 }
