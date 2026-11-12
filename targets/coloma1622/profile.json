@@ -35,7 +35,7 @@
     "by": "llm from images",
     "source": "BNE Digital (CC BY 4.0; one crop on the site write-up)",
     "image_quality": "good",
-    "notes": "Re-read on the image twice; 16 places settled by a blind shape sheet answered by Brice Dudout; three marked signs (barred 4, q with a stroke below, x with two dots below) have no value."
+    "notes": "Re-read on the image twice; 16 places settled by a blind shape sheet answered by Brice Dudout (5 Nov), then two more blind sheets (FL2-C, 15 questions; FS1, 6 questions; 11 Nov): four signs re-read (1v.05 for, 1v.10 4, 1v.14 88, 1v.18 84). Marked signs (barred 4, q with a stroke below, x with two dots below, and those seen on FL2-C) have no value."
    }
   }
  ],
@@ -84,10 +84,11 @@
   ],
   "attack": "known plaintext",
   "first_date": "2026-11-02",
-  "last_date": "2026-11-05",
-  "human_role": "Brice Dudout chose the target, set the rules (protocols and amendments hashed before each computation, one measurement per held-out passage, thresholds fixed in advance) and answered the blind shape sheet (shapes only). AI agents transcribed, rebuilt the key, measured, read and wrote up. No palaeographer checked the letter.",
+  "last_date": "2026-11-11",
+  "human_role": "Brice Dudout chose the target, set the rules (protocols and amendments hashed before each computation, one measurement per held-out passage, thresholds fixed in advance) and answered the three blind shape sheets (shapes only; M16, FL2-C, FS1). AI agents transcribed, rebuilt the key, measured, read and wrote up. No palaeographer checked the letter.",
   "models": [
-   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout",
+   "Claude Fable 5.2 (Anthropic), one text-only run (code-value proposals, 11 Nov 2026)"
   ]
  },
  "solution": [
@@ -136,6 +137,16 @@
    "kind": "reading",
    "what": "Letter read word by word, all 969 tokens covered in order; blind shape sheet of 16 questions applied: 425 words, 338 certain, 37 probable, 29 restored, 21 unresolved (88.2%).",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "reading",
+   "technique": [
+    "plaintext matching",
+    "key-structure hypothesis"
+   ],
+   "what": "141 = ello and 318 = oficio from the clear copy of MSS/18428 fol. 31; code values proposed by sense and the alphabetical order of the nomenclator (text-only Claude Fable 5.2 run); blind shape sheets FL2-C (controls 2/2) and FS1 (controls 2/2, 4 of 4 conjectures confirmed; position bias declared, answers confirmed by shape by Brice Dudout). No new key measurement. 421 words: 337 certain, 47 probable, 31 restored, 6 unresolved (91.2%). See BLIND-REREADING.md.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -147,9 +158,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.882,
+  "fraction_read": 0.912,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Daniel's rule (certain + probable; restored not counted), counted by script on the word table of reading.md, which covers all 969 tokens in order: 425 words, 338 certain, 37 probable, 29 restored, 21 unresolved = 375/425 = 88.2%.",
+  "fraction_read_source": "Daniel's rule (certain + probable; restored not counted), counted by script on the word table of reading.md, which covers the transcription in order: 421 words, 337 certain, 47 probable, 31 restored, 6 unresolved = 384/421 = 91.2% (11 Nov 2026; 88.2% on 5 Nov). Stricter count (M16 pre-registration for the xe words, two-place proposals restored): 378/421 = 89.8%.",
   "verification": [
    "statistical test",
    "historical consistency"
@@ -165,13 +176,13 @@
    {
     "who": "dudout",
     "role": "solution",
-    "note": "transcription, key rebuilt from Feria's margin clears and tested on held-out clears (partial by our protocol), letter read in part (88.2%), translation",
-    "date": "2026-11-05"
+    "note": "transcription, key rebuilt from Feria's margin clears and tested on held-out clears (partial by our protocol), letter read in part (88.2% on 5 Nov, 91.2% on 11 Nov after three blind shape sheets), translation",
+    "date": "2026-11-11"
    },
    {
     "who": "contemporary",
     "role": "key or decipherment used",
-    "note": "the margin clears of the Duke of Feria's letters to Coloma (RES/227/127-129) and of MSS/18428 p. 44, used to build and test the key",
+    "note": "the margin clears of the Duke of Feria's letters to Coloma (RES/227/127-129) and of MSS/18428 p. 44, used to build and test the key; the clear copy of MSS/18428 fol. 31 (141 = ello, 318 = oficio)",
     "date": "1622"
    },
    {
@@ -183,11 +194,11 @@
   ],
   "gaps": [
    {
-    "item": "21 unresolved words; code words 141, 48, 39, 295, 2, 127, 40, 264, 52 (second place), L/54/y",
+    "item": "6 unresolved words: code 39 (two places), bo, code 2, [ge]ia, z cer zan",
     "blocker": "open-codes"
    },
    {
-    "item": "Marked signs 4‡, q̲, x̤ (no value) and 29 restored words",
+    "item": "Marked signs 4‡, q̲, x̤ and those seen on FL2-C (no value); 31 restored words, among them the code values at one place (127, 40, 264, 295, 35, 53, K, 68, 81, 139, 317, R, 62, L/54/y)",
     "blocker": "open-codes",
     "detail": "a new letter of the system with a contemporary clear is needed"
    }
@@ -202,13 +213,13 @@
     "translation": "translation.md",
     "language": "es",
     "state": "read in part",
-    "read_share": 0.882,
-    "summary": "Louis XIII's proposals to the Duke of Savoy (Valtellina, help in case of rupture, Geneva), the French answer and the Duke's return from Avignon; Mirabel's talk with the Queen Mother on the deposit of the Valtellina forts, a Lorraine garrison and the capitulations of Aranjuez; Richelieu, not of the King's Council, governs the Queen Mother.",
+    "read_share": 0.912,
+    "summary": "Louis XIII's proposals to the Duke of Savoy (Valtellina, help in case of rupture, Geneva), the French answer and the Duke's return from Avignon; Mirabel's talk with the Queen Mother on the deposit of the Valtellina forts, a Lorraine garrison and the capitulations of Aranjuez, the Catholic religion to be kept there; Richelieu, not of the King's Council, governs the Queen Mother.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 (for Brice Dudout)",
-     "date": "2026-11-05",
-     "note": "Read as sentences 5 Nov 2026 by one AI reader; Brice Dudout answered the shape sheet only. The letter construes as Spanish sentences throughout, with gaps: 338 certain, 37 probable, 29 restored, 21 unresolved of 425 words (88.2%), so read in part."
+     "date": "2026-11-11",
+     "note": "Read again as sentences 11 Nov 2026 by one AI reader after the blind sheets FL2-C and FS1 (Brice Dudout answered the shape sheets only; FS1 position bias declared, answers confirmed by shape). The letter construes as Spanish sentences throughout, with gaps: 337 certain, 47 probable, 31 restored, 6 unresolved of 421 words (91.2%), so read in part. Most new code values are machine proposals by sense and key order (restored at one place)."
     }
    }
   ],

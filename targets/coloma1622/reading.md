@@ -1,44 +1,53 @@
 # coloma1622 - reading of the Marquis of Mirabel to Carlos Coloma, Lyon, 8 December 1622 (BNE RES/227/122)
 
-Read in part (5 Nov 2026). Counted by script on the word table below (cipher words only; the clear opening and close are not counted), with a check that the table covers all 969 cipher tokens of the transcription in order: **425 words: 338 certain, 37 probable, 29 restored, 21 unresolved**, so 375 = **88.2% without the restored words** (95.1% with them). Under 95%: read in part.
+Read in part (11 Nov 2026; first version 5 Nov 2026, PR #279). Counted by script on the word table below (cipher words only; the clear opening and close are not counted), with a check that the table covers the transcription in order (969 cipher tokens and the 3 clear groups = 972 units; plus the two tokens read on the image, "20 se"): **421 words: 337 certain, 47 probable, 31 restored, 6 unresolved**, so 384 = **91.2% without the restored words** (98.6% with them). Under 95%: read in part. The word total moves from 425 to 421 only because some groups are segmented differently (e.g. "a que aqui" -> "aqui", "no veda" -> "novedad"); see `BLIND-REREADING.md`.
 
-Classes: **certain** = values of the key, or a code word held by a contemporary clear of Feria's letters; **probable** = a code word placed by sense and held at two or more places, or a near spelling; **restored** = a value placed by sense alone (one place, or against the key; counted as a hole); **unresolved**; "surplus token" = a token with no word.
+Classes: **certain** = values of the key, or a code word held by a contemporary clear (Feria's letters, MSS/18428 fol. 31); **probable** = a code word placed by sense and held at two or more places, a near spelling, or a sign re-read blind on the image (at best probable); **restored** = a value placed by sense alone (one place, or against the key; counted as a hole); **unresolved**; "surplus token" = a token with no word.
 
 ## The letter, normalised (Spanish)
 
 Unmarked = certain; `{x}` = probable; `[x]` = restored; `‹…›` = unresolved; *italic* = clear in the manuscript.
 
 *De Miñón os escribí a los 21 del pasado […] de las proposiciones que ha hecho el Rey al Duque de Saboya, que fueron:*
-{el} acomodamiento y restitución de la Valtelina; las conveniencias que a este Rey y sus aliados se le seguirían de ‹…›os,
-[recibiendo]le su asistencia en {caso} de no [acomodarse] a su satisfacción. Asimesmo ‹…› de las diferencias del Duque,
-[deseando] que el Rey [Cristianísimo] lo acomode, o ‹…› en {caso} de rompimiento favorezca su causa como lo hizo en lo pasado.
+{el} acomodamiento y restitución de la Valtelina; las conveniencias que a este Rey y sus aliados se le seguirían de ello,
+{ofreciéndole} su asistencia en {caso} de no {acomodarse} a su satisfacción. Asimesmo {trata} de las diferencias del Duque,
+{deseando} que el Rey {Cristianísimo} lo acomode, o ‹…› en {caso} de rompimiento favorezca su causa como lo hizo en lo pasado.
 *También* [hizo] [grande] instancia en que se le diese permisión y asistencia para la {empresa} de {Ginebra}.
-A la primera {proposición} se le respondió que de presente ‹…› vale [este] Rey de medios para las cosas de la Valtelina con
+A la primera {proposición} se le respondió que de presente {trataba} [este] Rey de medios para las cosas de la Valtelina con
 el Rey {nuestro señor}, bien que esperaba se tomaría algún acuerdo a satisfacción de todos; que si no [llegase] a [efecto],
 se valdría de las ofertas [que] le hacía, *agradeciéndoselas mucho*. En [lo] demás se remitió la [respuesta] para esta
 [ciudad] de [León], para dar cuenta a la {Reina} madre de estos negocios. *Con esto* se volvió el {Duque} a su casa desde
-Aviñón, y él la ‹…› ‹…› en de ‹…› desta ‹…›.
+Aviñón, y el ‹…› [Cardenal] ‹…›e en de[manda] desta ‹…›.
 
-En llegando a que {aquí} di cuenta a la {Reina} madre del {estado} de los negocios, diciendo[la] que le corría {igual}
-[obligación] en desear y procurar que estas cosas se acomodasen en {buena} [correspondencia] de las dos coronas, pues en
-ambas tenía tales prendas, aseguróme ‹…› ‹…› que así lo ‹…›. Parecióme dar cuenta deste [Cardenal] de [Richelieu], que
-aunque no es del [Consejo] deste Rey, es por el que se gobierna la {Reina} madre, y con los demás {ministros} tiene
-autoridad, que {puede} [hacer] {buenos} y malos [oficios]. Y ‹…› se le no veda el reparar en la guarnición lorenesa, no
-siendo {caso} {cosa} de que se habla en las {capitulaciones} de Aranjuez, pareciéndola era hacer poca {confianza} del de
-Lorena; y que [gustaría], para {terminar} esta ‹…›, que de ‹…› y de palabra y ‹…› del {Duque} de que podría[n] loreneses,
-se admitiese. Díjele que nunca el Rey {nuestro señor} [había] [dudado] de la {confianza} que se debe tener del {Duque},
-pero que era [razón] que, queriendo [deste] Rey tomar esta parte de las {capitulaciones} de Aranjuez, fuese conviniendo
-en los demás puntos dellas. Díjome que, {terminado} esto del depósito de los {fuertes}, ‹…› se acomodaría lo demás, que era
-mantenerlos hasta que estos dos Reyes se acordasen en lo que [toca] a materias del {estado}, y que la ‹…› se [conservase]
-en el que hoy tiene, y se tendría el paso [libre] para todos los {casos} ‹…›. No {resolvió} con él {nada} de estos puntos
-*hasta dar cuenta a Su Majestad. Guarde os Dios como deseo. De León, a 8 de diciembre 1622. El Marqués [de Mirabel].*
+En llegando aquí di cuenta a la {Reina} madre del {estado} de los negocios, diciendo a ‹²⁰› que le corría igual
+[obligación] en desear y procurar que estas cosas se acomodasen en {buena} [amistad] de las dos coronas, pues en ambas tenía
+tales prendas. Aseguróme [que] lo {deseaba}, [y] que así lo ‹…›ía. Parecióme dar cuenta deste [Cardenal] de [Richelieu],
+que aunque no es del [Consejo] deste Rey, es por el que se {gobierna} la {Reina} madre, y con los demás {ministros} tiene
+autoridad, que {puede} [hacer] {buenos} y malos oficios. {Hízo}sele novedad el reparar en la guarnición lorenesa, no siendo
+{caso} {cosa} de que se habla en las {capitulaciones} de Aranjuez, pareciéndola era hacer poca {confianza} del de Lorena; y
+que {bastaría}, para {allanar} esta [dificultad], que de[bajo] y de palabra y [honra] del {Duque} de que podría[n] loreneses,
+se admitiese. Díjele que nunca el Rey {nuestro señor} [había] [dudado] de la {confianza} que se debe tener del {Duque}, pero
+que era [razón] que, queriendo {este} Rey tomar esta parte de las {capitulaciones} de Aranjuez, fuese conviniendo en los demás
+puntos dellas. Díjome que, {allanado} esto del depósito de los {fuertes}, ‹…› se acomodaría lo demás, que era mantenerlos
+hasta que estos dos Reyes se acordasen en lo que [toca] a materias del {estado}, y que la [religión católica romana] se
+{conservase} en el que hoy tiene, y se tendría el paso [libre] para todos los {casos}. {Cristianos} no {resolvió} con él
+{nada} de estos puntos *hasta dar cuenta a Su Majestad. Guarde os Dios como deseo. De León, a 8 de diciembre 1622. El Marqués [de Mirabel].*
 
 
-Notes. "la ‹L 54 y›na" (last paragraph) may be "la Valtelina" or "la religión católica": not settled. The woman who speaks after "díjome" is probably the Queen Mother (the leísmo "pareciéndola"), not certain. "Capitulaciones de Aranjuez" stands as such in the cipher (twice); we have not identified that text.
+Notes. Changes since PR #279 (all in `BLIND-REREADING.md`): "de ‹141›os, [recibiendo]le" -> "de ello, {ofreciéndole}";
+"‹48› vale [este] Rey" -> "{trataba} [este] Rey"; "{terminar}" -> "{allanar}" (code 30 = ALLA by the order of the
+nomenclator); "aseguróme ‹…› ‹…›" -> "aseguróme [que] lo {deseaba}"; "y ‹…› se le no veda" -> "{hízo}sele novedad"; "[gustaría]"
+-> "{bastaría}"; "{terminar} esta ‹…›, que de ‹…› y de palabra y ‹…›" -> "{allanar} esta [dificultad], que de[bajo] y de
+palabra y [honra]"; "[deste] Rey" -> "{este} Rey"; "la ‹L 54 y›na" -> "la [religión católica romana]". The code values proposed
+by sense and the order of the nomenclator (48, 52, 30, 127, 40, 264, 295, 35, 53, L/54/y) are proposals of a text-only
+Claude Fable 5.2 run; only 141 = ello and 318 = oficio rest on a contemporary clear (MSS/18428 fol. 31). "{Cristianos} no
+resolvió" makes a word but not a clear sense ("el Cristianísimo no resolvió" would be expected). "‹²⁰›" (a 20 with a raised
+sign, possibly 20ʳ = Su Majestad) is not counted. The woman who speaks after "díjome" is probably the Queen Mother (the leísmo
+"pareciéndola"), not certain. "Capitulaciones de Aranjuez" stands as such in the cipher (twice); we have not identified that text.
 
 ## Word table (as counted)
 
-| tokens | word | class | note (restored words) |
+| tokens | word | class | note |
 |---|---|---|---|
 | `img:20 se` | el | probable |  |
 | `30 sor os 93 ii 57 tt fo` | acomodamiento | certain |  |
@@ -60,30 +69,30 @@ Notes. "la ‹L 54 y›na" (last paragraph) may be "la Valtelina" or "la religi�
 | `79` | le | certain |  |
 | `xir y 66 ss cir 40 tt` | siguerian | certain |  |
 | `94` | de | certain |  |
-| `_141_ 62 Δ` | [141]os | unresolved |  |
-| `cer sir 56 z 96 79` | recibiendole | restored | mechanical "reciendole": syllable bi missing |
+| `_141_` | ello | certain | 141 = ELLO, held by the contemporary clear of MSS/18428 fol. 31 ("cabo dellos") |
+| `62 Δ cer sir 56 z 96 79` | ofreciendole | probable | Fable 2b: "ello, ofreciendole" (one sign off: the triangle = s where f is expected) |
 | `xur` | su | certain |  |
 | `20 xir Δ fe tt sir t` | asistencia | certain |  |
 | `56 z` | en | certain |  |
 | `_60_` | caso | probable |  |
 | `94` | de | certain |  |
 | `xo` | no | certain |  |
-| `t sor os 93 7 xe` | acomodarse | restored | mechanical "acomodarne"; xe confirmed on the sheet, xer (= se) expected |
+| `t sor os 93 7 xe` | acomodarse | probable | xe (confirmed on M16) for xer = se; probable under the literal rule (3 places), restored under the M16 pre-registration |
 | `30` | a | certain |  |
 | `xur` | su | certain |  |
 | `xar fi f cha sir 62 z` | satisfacion | certain |  |
 | `t xir es os` | asimesmo | certain |  |
-| `48` | [48] | unresolved |  |
+| `48` | trata | probable | 48 = TRATA by sense and key order, two places (here and "trataba"); USA not excluded |
 | `for` | de | certain |  |
 | `78 f` | las | certain |  |
 | `95 che cer z sir 83` | diferencias | certain |  |
 | `fur R` | del | certain |  |
 | `_121_` | Duque | certain |  |
-| `for xe 20 tt 96` | deseando | restored | mechanical "deneando"; xe confirmed, xer expected |
+| `for xe 20 tt 96` | deseando | probable | xe for xer, as above |
 | `faz` | que | certain |  |
 | `se` | el | certain |  |
 | `tu` | Rey | certain |  |
-| `_52_ + xir os` | Cristianisimo | restored | "el Rey ___simo", title of the King of France; code 52 does not fit its second place |
+| `_52_ + xir os` | Cristianisimo | probable | _52_ = CRISTIAN by sense and key order, two places; + = i held by the Feria Rosetta |
 | `81` | lo | certain |  |
 | `40 sor os 94` | acomode | certain |  |
 | `62` | o | certain |  |
@@ -102,8 +111,8 @@ Notes. "la ‹L 54 y›na" (last paragraph) may be "la Valtelina" or "la religi�
 | `81` | lo | certain |  |
 | `san xar 96` | pasado | certain |  |
 | `[Tambien]` | Tambien | clear |  |
-| `V 60 sor` | hizo | restored | 60 = i by sense (one place); 60 confirmed on the sheet |
-| `4‡ car z 94` | grande | restored | 4 = h in the key, y = g expected; the reader saw a barred 4 ("4+"), value not established |
+| `V 60 sor` | hizo | restored | 60 = i by sense (one place); 60 confirmed on M16 |
+| `4‡ car z 94` | grande | restored | 4 = h in the key, y = g expected; barred 4 seen on M16 ("4+"), value not established |
 | `61 tt Δ fa z sir 20` | instancia | certain |  |
 | `ss tt` | en | certain |  |
 | `faz` | que | certain |  |
@@ -128,9 +137,8 @@ Notes. "la ‹L 54 y›na" (last paragraph) may be "la Valtelina" or "la religi�
 | `faz` | que | certain |  |
 | `fur` | de | certain |  |
 | `q cer xer tt fe` | presente | certain |  |
-| `48` | [48] | unresolved |  |
-| `88 79` | vale | certain |  |
-| `fe` | este | restored | "te": es omitted |
+| `48 88` | trataba | probable | 48 88 = TRATA-ba, "de presente trataba este Rey de medios" |
+| `79 fe` | este | restored | mechanical "le-te"; FL2-C: 79 seen, not 84 |
 | `tu` | Rey | certain |  |
 | `fur` | de | certain |  |
 | `es 95 64 Δ` | medios | certain |  |
@@ -159,30 +167,30 @@ Notes. "la ‹L 54 y›na" (last paragraph) may be "la Valtelina" or "la religi�
 | `faz` | que | certain |  |
 | `xir` | si | certain |  |
 | `xo` | no | certain |  |
-| `x̤ ss fra xer` | llegase | restored | + = ll by sense; the reader saw an x with two dots below, value not established |
+| `x̤ ss fra xer` | llegase | restored | + = ll by sense; x with two dots below seen on M16, value not established |
 | `40` | a | certain |  |
-| `_139_` | efecto | restored | code 139, one place: "si no llegase a efecto" |
+| `_139_` | efecto | restored | code 139, one place; value in the alphabetical window of its code |
 | `xer` | se | certain |  |
 | `88 x n cir 40` | valdria | certain |  |
 | `for` | de | certain |  |
 | `78 Δ` | las | certain |  |
 | `64 che 7 fa Δ` | ofertas | certain |  |
-| `fri` | que | restored | fri (= gi elsewhere) confirmed on the sheet; malformed que ligature? |
+| `fri` | que | restored | fri (= gi elsewhere) confirmed on M16; malformed que ligature? |
 | `79` | le | certain |  |
 | `4 20 sir 30` | hacia | certain |  |
 | `[agradeciendose las mucho]` | agradeciendose las mucho | clear |  |
 | `56 tt` | en | certain |  |
-| `80` | lo | restored | 80 = li elsewhere (three places); 80 confirmed |
+| `80` | lo | restored | 80 = li elsewhere (three places); 80 confirmed on M16 |
 | `fur as Δ` | demas | certain |  |
 | `xer` | se | certain |  |
 | `cer is fi 62` | remitio | certain |  |
 | `78` | la | certain |  |
-| `_K_` | respuesta | restored | code K, one place |
+| `_K_` | respuesta | restored | code K, one place; key-order window |
 | `fan 20` | para | certain |  |
 | `84 fa` | esta | certain |  |
-| `_68_` | ciudad | restored | code 68 (underlined), one place |
+| `_68_` | ciudad | restored | code 68 (underlined), one place; key-order window |
 | `94` | de | certain |  |
-| `7 56 64 z` | Leon | restored | mechanical "reon"; the clear date has "De Leon" (Lyon); R = l expected |
+| `7 56 64 z` | Leon | restored | mechanical "reon"; the clear date has "De Leon" (Lyon) |
 | `fan 30` | para | certain |  |
 | `93 7` | dar | certain |  |
 | `faz tt fa` | quenta | certain |  |
@@ -205,20 +213,18 @@ Notes. "la ‹L 54 y›na" (last paragraph) may be "la Valtelina" or "la religi�
 | `t 90 xo z` | Avinon | certain |  |
 | `71` | i | certain |  |
 | `se` | el | certain |  |
-| `bo` | la | certain |  |
-| `_53_` | [53] | unresolved |  |
+| `bo` | [bo] | unresolved |  |
+| `_53_` | Cardenal | restored | code 53, Richelieu; key-order window (CA- group 53-62) |
 | `_39_ 55` | [39]e | unresolved |  |
 | `so tt` | en | certain |  |
 | `94` | de | certain |  |
-| `295` | [295] | unresolved |  |
+| `295` | manda | restored | 295 = MANDA by sense, window M (294 MUY, 296 MARQ); "en demanda desta"; one place |
 | `fur 84 fa` | desta | certain |  |
 | `_2_` | [2] | unresolved |  |
 | `²⁰` | — | surplus token |  |
 | `so tt` | en | certain |  |
 | `R 57 fra z 96` | llegando | certain |  |
-| `20` | a | certain |  |
-| `faz` | que | certain |  |
-| `+` | aqui | probable |  |
+| `20 faz +` | aqui | certain | + = i held by the clear of the Feria Rosetta ("que aqui") |
 | `95` | di | certain |  |
 | `faz tt fa` | quenta | certain |  |
 | `30` | a | certain |  |
@@ -236,8 +242,8 @@ Notes. "la ‹L 54 y›na" (last paragraph) may be "la Valtelina" or "la religi�
 | `fuz` | que | certain |  |
 | `79` | le | certain |  |
 | `sor cir 30` | corria | certain |  |
-| `71 fru sa` | igual | probable |  |
-| `317` | obligacion | restored | code 317, one place |
+| `71 fru sa` | igual | certain | sa = al held by the clear of RES/227/128 (4 places) |
+| `317` | obligacion | restored | code 317, one place; key-order window |
 | `ss tt` | en | certain |  |
 | `94 xer 40 7` | desear | certain |  |
 | `75` | i | certain |  |
@@ -249,7 +255,7 @@ Notes. "la ‹L 54 y›na" (last paragraph) may be "la Valtelina" or "la religi�
 | `40 _71_ 93 xer z` | acomodasen | certain |  |
 | `so tt` | en | certain |  |
 | `_49_` | buena | probable |  |
-| `_35_` | correspondencia | restored | code 35, one place |
+| `_35_` | amistad | restored | code 35, one place; AMISTAD replaces CORRESPONDENCIA, which is outside the A-B window of code 35 |
 | `for` | de | certain |  |
 | `78 Δ` | las | certain |  |
 | `96 f` | dos | certain |  |
@@ -262,18 +268,20 @@ Notes. "la ‹L 54 y›na" (last paragraph) may be "la Valtelina" or "la religi�
 | `▽ cer z 93 Δ` | prendas | certain |  |
 | `40 xir fru cor` | asiguro | certain |  |
 | `es` | me | certain |  |
-| `fu 81 fro` | [tulogo] | unresolved |  |
-| `xer 40 88 7i` | [seabai] | unresolved |  |
+| `fu>fuz` | que | restored | fu read as the ligature fuz; FL2-C saw fu, not fuz |
+| `81` | lo | certain |  |
+| `fro>for xer 40 88` | deseaba | probable | FS1 S2: for seen blind (not fro) -> de-se-a-ba |
+| `7i>71` | i | restored | 7i read 71 (= y); FL2-C saw 71 with a dot; not applied (rule FS1, point 8) |
 | `faz` | que | certain |  |
 | `20 xvi` | asi | certain |  |
 | `81` | lo | certain |  |
-| `ge 58 40` | [s58a] | unresolved |  |
+| `ge 58 40` | [ge]ia | unresolved |  |
 | `fan 50 sir 62 es` | pareciome | certain |  |
 | `93 7` | dar | certain |  |
 | `faz tt fa` | quenta | certain |  |
 | `94 Δ fe` | deste | certain |  |
 | `fa` | — | surplus token |  |
-| `_53_` | Cardenal | restored | code 53: "el Cardenal de Richelieu ... govierna la Reina madre" |
+| `_53_` | Cardenal | restored | code 53, Richelieu; key-order window (CA- group 53-62) |
 | `for` | de | certain |  |
 | `7 62 50 61 80 66` | Richelieu | restored | mechanical "roeiliu" |
 | `faz` | que | certain |  |
@@ -281,7 +289,7 @@ Notes. "la ‹L 54 y›na" (last paragraph) may be "la Valtelina" or "la religi�
 | `xo` | no | certain |  |
 | `84` | es | certain |  |
 | `fur x` | del | certain |  |
-| `_81_` | Consejo | restored | code 81: "no es del Consejo deste Rey" |
+| `_81_` | Consejo | restored | code 81, one place; key-order window |
 | `94 84 fe` | deste | certain |  |
 | `tu` | Rey | certain |  |
 | `84` | es | certain |  |
@@ -302,19 +310,15 @@ Notes. "la ‹L 54 y›na" (last paragraph) may be "la Valtelina" or "la religi�
 | `40 4 68 fo cir 93 m` | ahutoridad | certain |  |
 | `faz` | que | certain |  |
 | `sun 50 94` | puede | probable |  |
-| `V 20 99 ss` | hazer | restored | last token illegible; ss chosen on the sheet; mechanical "hazee" |
+| `V 20 99 ss` | hazer | restored | last token illegible; ss chosen on M16; mechanical "hazee" |
 | `_49_ Δ` | buenos | probable |  |
 | `71` | i | certain |  |
 | `as 81 Δ` | malos | certain |  |
-| `318 f` | oficios | restored | code 318, one place |
-| `z` | — | surplus token |  |
-| `61` | i | certain |  |
-| `sor` | [co] | unresolved |  |
+| `318 f` | oficios | certain | 318 = OFICIO, held by the contemporary clear of MSS/18428 fol. 31 |
+| `z>4 61 sor` | hizo | probable | FS1 S1: 4 seen blind (not z) -> h-i-co, as "lo hizo" 1r.07 |
 | `xer` | se | certain |  |
 | `79` | le | certain |  |
-| `xo` | no | certain |  |
-| `89 93` | veda | certain |  |
-| `n` | — | surplus token |  |
+| `xo 89 93 n` | novedad | certain | no-ve-da-d (key C04); "hizosele novedad" |
 | `se` | el | certain |  |
 | `cer san car 7` | reparar | certain |  |
 | `50 z` | en | certain |  |
@@ -345,19 +349,19 @@ Notes. "la ‹L 54 y›na" (last paragraph) may be "la Valtelina" or "la religi�
 | `81 cer xa` | Lorena | certain |  |
 | `71` | i | certain |  |
 | `faz` | que | certain |  |
-| `68 Δ fa cir 40` | gustaria | restored | mechanical "ustaria" |
+| `68>88 Δ fa cir 40` | bastaria | probable | FS1 S3: 88 seen blind (not 68) -> ba-s-ta-ri-a (the conjecture came from a non-blind zoom; the blind answer decided) |
 | `fan 30` | para | certain |  |
-| `_30_ xa 7` | terminar | probable |  |
+| `_30_ xa 7` | allanar | probable | _30_ = ALLA by key order (was TERMI, outside the window of code 30), two places |
 | `84 fa` | esta | certain |  |
-| `_127_` | [127] | unresolved |  |
+| `_127_` | dificultad | restored | 127 = DIFICULTAD by sense, window D-E (123 DUQUE, 136 ENEMIGO); one place |
 | `faz` | que | certain |  |
 | `for` | de | certain |  |
-| `_40_` | [40] | unresolved |  |
+| `_40_` | bajo | restored | _40_ = BAJO, window A-B; "de-bajo de palabra"; one place |
 | `I` | y | certain |  |
 | `94` | de | certain |  |
 | `san 78 H car` | palabra | certain |  |
 | `75` | i | certain |  |
-| `264` | [264] | unresolved |  |
+| `264` | honra | restored | 264 = HONRA, window H-I (261 HEREGE, 267 INDIAS); one place |
 | `fur x` | del | certain |  |
 | `_123_` | Duque | probable |  |
 | `94` | de | certain |  |
@@ -373,7 +377,7 @@ Notes. "la ‹L 54 y›na" (last paragraph) may be "la Valtelina" or "la religi�
 | `se` | el | certain |  |
 | `tu` | Rey | certain |  |
 | `308` | nuestro señor | probable |  |
-| `34 40 90 30` | havia | restored | mechanical "biavia"; 34 confirmed on the sheet |
+| `34 40 90 30` | havia | restored | mechanical "biavia"; 34 confirmed on M16 |
 | `97 93 96` | dudado | restored | 97 = du, one place |
 | `94` | de | certain |  |
 | `78` | la | certain |  |
@@ -387,10 +391,10 @@ Notes. "la ‹L 54 y›na" (last paragraph) may be "la Valtelina" or "la religi�
 | `fen 62` | pero | certain |  |
 | `faz` | que | certain |  |
 | `_140_` | era | certain |  |
-| `_R_` | razon | restored | code R (underlined), one place |
+| `_R_` | razon | restored | code R (underlined), one place; key-order window |
 | `fuz` | que | certain |  |
 | `faz cir so tt 96` | queriendo | certain |  |
-| `94 fe` | deste | restored | "de te": s omitted |
+| `94>84 fe` | este | probable | FS1 S4: 84 seen blind (not 94) -> es-te; the left digit is under a stain |
 | `tu` | Rey | certain |  |
 | `fo as 8` | tomar | certain |  |
 | `es` | — | surplus token |  |
@@ -410,7 +414,7 @@ Notes. "la ‹L 54 y›na" (last paragraph) may be "la Valtelina" or "la religi�
 | `for x 83` | dellas | certain |  |
 | `95 73 62 es` | dijome | certain |  |
 | `faz` | que | certain |  |
-| `_30_ xa 96` | terminado | probable |  |
+| `_30_ xa 96` | allanado | probable | _30_ = ALLA, as above |
 | `84 fo` | esto | certain |  |
 | `for x` | del | certain |  |
 | `94 son xvi fo` | deposito | certain |  |
@@ -444,9 +448,9 @@ Notes. "la ‹L 54 y›na" (last paragraph) may be "la Valtelina" or "la religi�
 | `71` | i | certain |  |
 | `faz` | que | certain |  |
 | `78` | la | certain |  |
-| `_L_ _54_ _y_ xa` | [L 54 y na] | unresolved |  |
+| `_L_ _54_ _y_ xa` | religion catolica romana | restored | _54_ in the CA- group -> CATOLICA; _L_ = RELIGION (FL2-C: the sign in 1r.16 is _A_, so _L_ is free); sense alone |
 | `xer` | se | certain |  |
-| `sor tt xer 7 88 xe` | conservase | restored | mechanical "conserbane"; xe confirmed, xer expected |
+| `sor tt xer 7 88 xe` | conservase | probable | xe for xer, as above |
 | `50 z` | en | certain |  |
 | `se` | el | certain |  |
 | `faz` | que | certain |  |
@@ -457,12 +461,12 @@ Notes. "la ‹L 54 y›na" (last paragraph) may be "la Valtelina" or "la religi�
 | `fe z m cir 20` | tendria | certain |  |
 | `se` | el | certain |  |
 | `san xor` | paso | certain |  |
-| `80 q̲ cer` | libre | restored | mechanical "linre"; the reader saw a q with an extra stroke below, value not established |
+| `80 q̲ cer` | libre | restored | mechanical "linre"; q with an extra stroke below seen on M16, value not established |
 | `fan 20` | para | certain |  |
 | `fo 96 Δ` | todos | certain |  |
 | `81 Δ` | los | certain |  |
 | `_60_ Δ` | casos | probable |  |
-| `_52_ xo Δ` | [52]nos | unresolved |  |
+| `_52_ xo Δ` | cristianos | probable | _52_ = CRISTIAN; local sense uncertain ("el Cristianisimo no resolvio" expected?); FL2-C: xo, not + |
 | `xo` | no | certain |  |
 | `cer xor x 91` | resolvio | probable |  |
 | `sor tt` | con | certain |  |
