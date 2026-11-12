@@ -1,11 +1,11 @@
 {
  "schema_version": 1,
  "target": "sehested1657",
- "title": "Christoffer Sehested's cipher letters from Vienna, January-May 1657 (catalogue 2520, Rigsarkivet TKUA Kejseren, unit 260651): German simple substitution in numbers with a nomenclator, 27 letters read",
+ "title": "Christoffer Sehested's cipher letters from Vienna, January-May 1657 (catalogue 2520, Rigsarkivet TKUA Kejseren, unit 260651): German simple substitution in numbers with a nomenclator; 27 letters deciphered with the key of the contemporary gloss, 95.3% of tokens by the strict count",
  "documents": [
   {
    "id": "l01",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Copenhagen, Rigsarkivet, TKUA Kejseren (Østrig 46 b), unit 260651, img 110, 109",
    "date": "Vienna 17/27 Jan. 1657 (with P.S.)",
    "year": 1657,
@@ -40,7 +40,7 @@
   },
   {
    "id": "l02",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Copenhagen, Rigsarkivet, TKUA Kejseren (Østrig 46 b), unit 260651, img 116, 117 g",
    "date": "Vienna 17/27 Jan. 1657",
    "year": 1657,
@@ -110,7 +110,7 @@
   },
   {
    "id": "l04",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Copenhagen, Rigsarkivet, TKUA Kejseren (Østrig 46 b), unit 260651, img 121, 122 g",
    "date": "Vienna 7/17 Feb. 1657 (with P.S.)",
    "year": 1657,
@@ -145,7 +145,7 @@
   },
   {
    "id": "l05",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Copenhagen, Rigsarkivet, TKUA Kejseren (Østrig 46 b), unit 260651, img 126, 127 g",
    "date": "Vienna 14/24 Feb. 1657",
    "year": 1657,
@@ -180,7 +180,7 @@
   },
   {
    "id": "l06",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Copenhagen, Rigsarkivet, TKUA Kejseren (Østrig 46 b), unit 260651, img 132 d, 133, 134 g",
    "date": "Vienna 14/24 Feb. 1657 (glossed original; two cipher copies)",
    "year": 1657,
@@ -250,7 +250,7 @@
   },
   {
    "id": "l08",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Copenhagen, Rigsarkivet, TKUA Kejseren (Østrig 46 b), unit 260651, img 136 d",
    "date": "Vienna 21 Feb./3 Mar. 1657",
    "year": 1657,
@@ -285,7 +285,7 @@
   },
   {
    "id": "l09",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Copenhagen, Rigsarkivet, TKUA Kejseren (Østrig 46 b), unit 260651, img 138 d",
    "date": "Vienna 28 Feb./10 Mar. 1657 (mostly clear)",
    "year": 1657,
@@ -320,7 +320,7 @@
   },
   {
    "id": "l10",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Copenhagen, Rigsarkivet, TKUA Kejseren (Østrig 46 b), unit 260651, img 139 d",
    "date": "Vienna 4/14 Mar. 1657",
    "year": 1657,
@@ -390,7 +390,7 @@
   },
   {
    "id": "l12",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Copenhagen, Rigsarkivet, TKUA Kejseren (Østrig 46 b), unit 260651, img 142 d, 143 g l. 1-2",
    "date": "March 1657 (pencil 7/3)",
    "year": 1657,
@@ -460,7 +460,7 @@
   },
   {
    "id": "l14",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Copenhagen, Rigsarkivet, TKUA Kejseren (Østrig 46 b), unit 260651, img 146 d",
    "date": "Vienna 11/21 Mar. 1657 (with P.S.)",
    "year": 1657,
@@ -670,7 +670,7 @@
   },
   {
    "id": "l20",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Copenhagen, Rigsarkivet, TKUA Kejseren (Østrig 46 b), unit 260651, img 162",
    "date": "Vienna 28 Mar./7 Apr. 1657",
    "year": 1657,
@@ -775,7 +775,7 @@
   },
   {
    "id": "l23",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Copenhagen, Rigsarkivet, TKUA Kejseren (Østrig 46 b), unit 260651, img 165",
    "date": "Vienna 8/18 Apr. 1657",
    "year": 1657,
@@ -1020,21 +1020,32 @@
    "kind": "reading",
    "what": "Decoded mechanically and read by sense: 6013 cipher words, 5903 certain, 90 probable, 19 restored, 1 unresolved; copies agree with originals at 76-98% of words.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "language-model scoring",
+    "statistical test",
+    "plaintext matching"
+   ],
+   "what": "Project verification and integration of PR #412. Hashes of the five frozen files match; the held-out lines (318 numbers, 51 words, 1 outside the key) decode to the same string with an independent decoder; all 27 letters and 5 copies re-decoded (1,707 of 1,793 lines identical, the rest differ only in printing); about 300 numbers on img 116 and 145 compared with the images: 0 number disagreements, one symbol corrected (img 145 line 3, Φ not Ψ). The contributor's C1/C2 figures could not be re-run (model pickle and corpus not sent); own controls with the repository's de-modern model: -2.615 vs -6.861 (500 permuted keys). Strict recount from reading.md with symbols counted: 6,267 of 6,573 tokens = 95.3%, 12 letters under 95%: class set to read in part, key partial. Three probable words of L01 seen on img 110 as transcribed. The 'Sehested keys 1650-70' (Daisy heid 1449582) recorded as untested.",
+   "result": "worked"
   }
  ],
  "outcome": {
-  "class": "read",
-  "key": "recovered",
+  "class": "read in part",
+  "key": "partial",
   "method": "key recovered based on adjacent plaintext",
-  "method_basis": "Letter values taken from the interlinear decipherment of the time on img 132 and confirmed on the clear of the time img 112; nomenclator values from glosses and clears of the time, the rest by the sense.",
+  "method_basis": "The 25 letter values come from the interlinear decipherment of the time on img 132 (19 of the first 23 were already in the project's sweep note of 11 Nov 2026; the contributor added 8 k, 16 p, 36 x, 90 s from the same gloss, then 20 q and 24 y) and were confirmed on the clear of the time img 112. Nomenclator values: 13 from glosses and clears of the time, about 25 by the sense or one attestation, about 26 symbol forms open. L01, L18 and L25 have clears of the time and L27 a full letter-by-letter gloss: for these four the text is in effect read from an existing decipherment, checked against the decode.",
   "contribution": [
    "transcription",
    "key extended or corrected"
   ],
   "first_break": "unpublished prior",
-  "fraction_read": 0.997,
+  "fraction_read": 0.953,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading.md, cipher words of the 27 original letters (nomenclator symbols not counted): 5903 certain + 90 probable = 5993 of 6013 = 99.7%; 19 restored and 1 unresolved word not counted. Counted by the contributor's script (fiche.py).",
+  "fraction_read_source": "reading.md, strict count of 12 Nov 2026 (strict_count.py): tokens = cipher words + nomenclator symbols of the 27 original letters = 6573; read = 5,903 certain words + 364 symbols whose value a gloss or clear of the time gives = 6267 (95.3%). Holes: 90 probable words, 19 restored, 1 unresolved, 152 symbol values given by the sense, 44 open symbols. The contributor's own figure, 99.7%, counts cipher words only (certain + probable of 6,013) and leaves the symbols out.",
   "verification": [
    "contemporary decipherment",
    "independent clear copy",
@@ -1045,20 +1056,21 @@
    "date": "2026-11-11",
    "verdict": "pass",
    "file": "validation.txt",
-   "notes": "Contributor's pre-registered held-out test (protocol SHA-256 525288c0...; held-out transcription SHA-256 e2b4b59e...). Reservation: the agent knew the key while transcribing the held-out lines."
+   "notes": "Contributor's pre-registered held-out test (protocol SHA-256 525288c0...; held-out transcription SHA-256 e2b4b59e...): pass by its own criteria. Reservations: the agent knew the key while transcribing the held-out lines; the order of events is by the contributor's record (one commit, no outside timestamp); the letter-model pickle and the Merian corpus were not sent, so the C1 and C2 figures (-2.023 vs -3.693; 0.569 vs 0.078) could not be re-run. The project's verification of 12 Nov 2026 re-decoded the held-out lines (identical string) and scored them with the repository's de-modern model: -2.615 vs -6.861 (best of 500 permuted keys) and -6.588 (best of 300 shuffles). The key comes from a contemporary gloss, so the test confirms it rather than establishes it."
   },
-  "provenance": "contributed",
+  "provenance": "mixed",
   "credits": [
    {
     "who": "dudout",
     "role": "solution",
-    "note": "transcription of 27 letters, key checked and completed, held-out measurement, reading (99.7%) and summaries: Brice Dudout with Claude Opus 5.5 agents",
-    "date": "2026-11-11"
+    "note": "transcription of 27 letters, key extended (8 k, 16 p, 36 x, 90 s, 20 q, 24 y; about 25 nomenclator values by the sense), held-out measurement, reading and per-letter summaries: Brice Dudout with AI agents (his NOTES name them)",
+    "date": "2026-11-11",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/412"
    },
    {
     "who": "bourdeau",
     "role": "pointer",
-    "note": "catalogue entry 2520 (TKUA sweep of 11 Nov 2026), with a first list of letter values from img 132",
+    "note": "catalogue entry 2520 and the sweep note of 11 Nov 2026 (research/sweep_2026-11-11_tkua_paging/sehested_note.json), which already gave 19 letter values from the gloss on img 132 and the opening line of L03",
     "date": "2026-11-11"
    },
    {
@@ -1072,14 +1084,29 @@
   ],
   "gaps": [
    {
-    "item": "about 20 nomenclator symbols open or given by the sense only (b, H, bb, cc, Γ, EE, O, R, M, N, Q, F, J, ∂ ...)",
-    "blocker": "open-codes",
-    "detail": "single or rare uses; a nomenclator table of Sehested's mission was not found in the unit"
+    "item": "152 nomenclator tokens whose value is given by the sense or by one attestation (about 25 symbols: Ψ, Ω, ii, a, L, Y, xx, A, B, Z, hh, mm ...) and 44 tokens of open symbols (b, H, bb, cc, Γ, EE, O, R, M, N, Q, F, J, ∂, ww, yy ...)",
+    "blocker": "no-key-material",
+    "detail": "No nomenclator table is in the unit, on DECODE or in print; the glosses and clears of the time give only 13 values. Counted as holes by the strict rule; this is what puts 12 letters under 95%."
    },
    {
-    "item": "19 restored words and 1 unresolved word",
+    "item": "Rigsarkivet 'Christoffer Sehested keys 1650-70' (Daisy heid 1449582), possibly the nomenclator table: not tested",
+    "blocker": "needs-physical-access",
+    "detail": "Listed by the archive, not scanned on Arkivalieronline; not seen by the contributor or the project."
+   },
+   {
+    "item": "90 probable words (one figure off, e.g. grssem for grossem), 19 restored words and 1 unresolved word (copeilig, L14)",
     "blocker": "illegible",
-    "detail": "blots, binding, numbers outside the key; a human check on the images would settle most"
+    "detail": "Blots, binding and figures that give a non-word. Three of the probable words of L01 were looked at on img 110 at integration (beidis, miiner, auftrkgen): the figures stand on the page as transcribed, so they are the encipherer's slips, emended by the sense. The rest were not rechecked on the images."
+   },
+   {
+    "item": "L03 date (read 28/7, probably 7/17 Feb.) and Kurz or Auersperg as the minister of the 17 March talk",
+    "blocker": "illegible",
+    "detail": "The clear of the time (img 157 right) gives Kurz; Fridericia 1894, from the Vienna protocols, gives Auersperg. Not settled."
+   },
+   {
+    "item": "The contributor's exact C1 and C2 figures of the held-out test (-2.023 vs -3.693; 0.569 vs 0.078) are not re-run",
+    "blocker": "no-key-material",
+    "detail": "The letter-model pickle (lm_de.pkl) and the Merian corpus are not in the pull request, only their hashes. The verification pass ran its own controls with the repository's model instead."
    }
   ],
   "texts": [
@@ -1088,17 +1115,17 @@
     "label": "L01, to the chancellor, Vienna 17/27 Jan. 1657 (with P.S.)",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L01_reading.md",
+    "translation": "letters/L01_en.md",
     "language": "de",
-    "state": "read",
-    "read_share": 1.0,
+    "state": "read in part",
+    "read_share": 0.936,
     "summary": "Sehested refers to his letter to the king; Kurz, at first surprised that no one came with full powers, took the matter up seriously on 14/24 Jan after conferring with La Fuente and gave the enclosed answer; Sehested asks the chancellor for the promised papers. P.S.: a breach between the Emperor and France is expected; forced levies; the French army put at 50,000; Rákóczi already in Poland, for himself rather than for Sweden; rumour of a Saxon marriage for the young king; Kurz flatters Sehested and has attached Windischgrätz to him to sound him out.",
     "reading_review": {
      "grade": "B",
-     "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
-     "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "by": "project (the project's verification pass), after the contributor's own reader",
+     "date": "2026-11-12",
+     "note": "Read end to end as sentences: coherent chancery German (French in L27) that matches the contributor's summary. Grade B: no punctuation, period spelling, transcription by AI agents with no human check, and 20 of 314 tokens are holes by the strict count (probable or restored words, symbol values given by the sense, open symbols). The English text is a summary, not a translation."
     }
    },
    {
@@ -1106,17 +1133,17 @@
     "label": "L02, to the king, Vienna 17/27 Jan. 1657",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L02_reading.md",
+    "translation": "letters/L02_en.md",
     "language": "de",
-    "state": "read",
-    "read_share": 0.997,
+    "state": "read in part",
+    "read_share": 0.935,
     "summary": "To the king: Sehested greeted Kurz on the alliance and the 'secret'; Kurz took it ad referendum, then reported that the Emperor is not averse to the defensive alliance proposed by the king but expects the draft and conditions from Denmark; the 'secret' once mentioned to Castel Rodrigo no longer matters. On 14/24 Jan Kurz asked for haste and for the inclusion of the States General.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
      "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open. Integration note (12 Nov 2026): not re-read end to end by the project; the verification pass scored every letter as German with the key and re-decoded it. Strict count: 347 of 371 tokens read. The English text is a summary, not a translation."
     }
    },
    {
@@ -1124,17 +1151,17 @@
     "label": "L03, to the king, Vienna 7/17 Feb. 1657 (date read 28/7; Gigas: 17 Feb.)",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L03_reading.md",
+    "translation": "letters/L03_en.md",
     "language": "de",
     "state": "read",
-    "read_share": 1.0,
+    "read_share": 0.957,
     "summary": "To the king: nothing new; spirits in Vienna raised by Rebolledo's favourable report on Danish armaments, passed to the Emperor by La Fuente on 2/12 Feb; passage through Friuli refused to the Turk; the Swiss rejected France's threefold proposal (Alsace); birth of an archduke on 1/11 Feb; Rákóczi advancing in Poland, Danzig seeking neutrality.",
     "reading_review": {
      "grade": "B",
-     "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
-     "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "by": "project (the integration pass), after the contributor's own reader",
+     "date": "2026-11-12",
+     "note": "Read end to end as sentences: coherent chancery German (French in L27) that matches the contributor's summary. Grade B: no punctuation, period spelling, transcription by AI agents with no human check, and 11 of 255 tokens are holes by the strict count (probable or restored words, symbol values given by the sense, open symbols). The English text is a summary, not a translation (a full translation of this letter was added to translation.md at integration)."
     }
    },
    {
@@ -1142,17 +1169,17 @@
     "label": "L04, to the chancellor, Vienna 7/17 Feb. 1657 (with P.S.)",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L04_reading.md",
+    "translation": "letters/L04_en.md",
     "language": "de",
-    "state": "read",
-    "read_share": 1.0,
+    "state": "read in part",
+    "read_share": 0.926,
     "summary": "To the chancellor: the ministers await the resolution and full powers; ciphering has worn out his eyes, so no duplicates; news as in the letter to the king; his reports to Kurz confirmed by Rebolledo. P.S.: talks in Paris with the cardinal; a Franco-Swedish offensive and defensive alliance is believed concluded.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
      "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open. Integration note (12 Nov 2026): not re-read end to end by the project; the verification pass scored every letter as German with the key and re-decoded it. Strict count: 238 of 257 tokens read. The English text is a summary, not a translation."
     }
    },
    {
@@ -1160,17 +1187,17 @@
     "label": "L05, to the king, Vienna 14/24 Feb. 1657",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L05_reading.md",
+    "translation": "letters/L05_en.md",
     "language": "de",
-    "state": "read",
-    "read_share": 0.987,
+    "state": "read in part",
+    "read_share": 0.901,
     "summary": "To the king: the Emperor has consented orally to the cession of Bremen; should Sehested press for a written promise, and claim Bremen as a see or as a secularised duchy (better: hereditary)? The Turkish danger is played up; new patents for 7,000 men; an envoy is sent to [H].",
     "reading_review": {
      "grade": "B",
-     "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
-     "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "by": "project (the project's verification pass), after the contributor's own reader",
+     "date": "2026-11-12",
+     "note": "Read end to end as sentences: coherent chancery German (French in L27) that matches the contributor's summary. Grade B: no punctuation, period spelling, transcription by AI agents with no human check, and 17 of 172 tokens are holes by the strict count (probable or restored words, symbol values given by the sense, open symbols). The English text is a summary, not a translation."
     }
    },
    {
@@ -1178,17 +1205,17 @@
     "label": "L06, to the chancellor, Vienna 14/24 Feb. 1657 (glossed original; two cipher copies)",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L06_reading.md",
+    "translation": "letters/L06_en.md",
     "language": "de",
-    "state": "read",
-    "read_share": 0.989,
+    "state": "read in part",
+    "read_share": 0.948,
     "summary": "To the chancellor: Kurz would discuss Bremen only after the alliance; Sehested argues that Danish preparations are ready and that general peace is impossible while Sweden holds Pomerania, Mecklenburg and Bremen. On 11/21 Feb the Emperor, Kurz and La Fuente conferred: the king will be satisfied; the Danish minister at The Hague should block ratification of the Swedish-Dutch treaty and bring the States General into the alliance. Kurz then announced the Emperor's consent to the transfer of Bremen. P.S. at nine o'clock: the Emperor resolves on an offensive alliance and awaits the full powers urgently.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
      "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open. Integration note (12 Nov 2026): not re-read end to end by the project; the verification pass scored every letter as German with the key and re-decoded it. Strict count: 771 of 813 tokens read. The English text is a summary, not a translation."
     }
    },
    {
@@ -1196,17 +1223,17 @@
     "label": "L07, proposition to Emperor Ferdinand III (audience of 18/28 Feb. 1657), copy",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L07_reading.md",
+    "translation": "letters/L07_en.md",
     "language": "de",
     "state": "read",
-    "read_share": 0.996,
+    "read_share": 0.958,
     "summary": "Proposition to Emperor Ferdinand III (audience of 18/28 Feb): Swedish possession of the duchies of Pomerania and Bremen endangers the Empire and Denmark and threatens the peace of Westphalia; if the king must carry his arms against Bremen, he hopes the Emperor will not oppose it and will support it with a diversion in Pomerania; he will wait for the Emperor's resolution and asks his advice and how far he may count on his help.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
      "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open. Integration note (12 Nov 2026): not re-read end to end by the project; the verification pass scored every letter as German with the key and re-decoded it. Strict count: 546 of 570 tokens read. The English text is a summary, not a translation."
     }
    },
    {
@@ -1214,17 +1241,17 @@
     "label": "L08, to the chancellor, Vienna 21 Feb./3 Mar. 1657",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L08_reading.md",
+    "translation": "letters/L08_en.md",
     "language": "de",
-    "state": "read",
-    "read_share": 0.993,
+    "state": "read in part",
+    "read_share": 0.933,
     "summary": "To the chancellor: on 18/28 Feb he presented to the Emperor the points of his new instruction (copy enclosed); the cession of Bremen was already granted; an answer on the diversion and effective cooperation is promised; the proposition goes to the privy council. P.S.: inclusion of the States General pressed; La Fuente wavers.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
      "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open. Integration note (12 Nov 2026): not re-read end to end by the project; the verification pass scored every letter as German with the key and re-decoded it. Strict count: 153 of 164 tokens read. The English text is a summary, not a translation."
     }
    },
    {
@@ -1232,17 +1259,17 @@
     "label": "L09, to the chancellor, Vienna 28 Feb./10 Mar. 1657 (mostly clear)",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L09_reading.md",
+    "translation": "letters/L09_en.md",
     "language": "de",
-    "state": "read",
-    "read_share": 1.0,
+    "state": "read in part",
+    "read_share": 0.918,
     "summary": "To the chancellor, mostly in clear: the king's full powers for an offensive and defensive alliance are eagerly awaited.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
      "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open. Integration note (12 Nov 2026): not re-read end to end by the project; the verification pass scored every letter as German with the key and re-decoded it. Strict count: 45 of 49 tokens read. The English text is a summary, not a translation."
     }
    },
    {
@@ -1250,17 +1277,17 @@
     "label": "L10, to the chancellor, Vienna 4/14 Mar. 1657",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L10_reading.md",
+    "translation": "letters/L10_en.md",
     "language": "de",
-    "state": "read",
-    "read_share": 0.993,
+    "state": "read in part",
+    "read_share": 0.935,
     "summary": "To the chancellor: the Emperor has resolved to conclude the offensive and defensive alliance quickly; Bremen better in Danish hands; send the full powers at once. Colonel Garnier secretly seeks help for Poland against Rákóczi; a secret imperial envoy urges Rákóczi to withdraw; the Emperor will act this summer, where is not yet known.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
      "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open. Integration note (12 Nov 2026): not re-read end to end by the project; the verification pass scored every letter as German with the key and re-decoded it. Strict count: 143 of 153 tokens read. The English text is a summary, not a translation."
     }
    },
    {
@@ -1268,17 +1295,17 @@
     "label": "L11, to the chancellor, Vienna 7/17 Mar. 1657",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L11_reading.md",
+    "translation": "letters/L11_en.md",
     "language": "de",
     "state": "read",
-    "read_share": 1.0,
+    "read_share": 0.954,
     "summary": "To the chancellor: Kurz says the Emperor now wants a general offensive and defensive alliance binding both sides; Sehested took it ad referendum. The States General should come later as an accessory. Questions: should Denmark insist on 'Königliche Majestät' instead of 'Königliche Würden', on a recredential, and on a written promise for Bremen?",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
      "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open. Integration note (12 Nov 2026): not re-read end to end by the project; the verification pass scored every letter as German with the key and re-decoded it. Strict count: 185 of 194 tokens read. The English text is a summary, not a translation."
     }
    },
    {
@@ -1286,17 +1313,17 @@
     "label": "L12, to the king, March 1657 (pencil 7/3)",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L12_reading.md",
+    "translation": "letters/L12_en.md",
     "language": "de",
-    "state": "read",
-    "read_share": 0.993,
+    "state": "read in part",
+    "read_share": 0.93,
     "summary": "To the king: the Emperor stands by his first answer: nothing further before the king sends absolute full powers and an instruction for an offensive and defensive alliance; Bremen preferred in the king's hands; renewed advice on the States General, Poland, Danzig and other princes.",
     "reading_review": {
      "grade": "B",
-     "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
-     "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "by": "project (the project's verification pass), after the contributor's own reader",
+     "date": "2026-11-12",
+     "note": "Read end to end as sentences: coherent chancery German (French in L27) that matches the contributor's summary. Grade B: no punctuation, period spelling, transcription by AI agents with no human check, and 11 of 158 tokens are holes by the strict count (probable or restored words, symbol values given by the sense, open symbols). The English text is a summary, not a translation."
     }
    },
    {
@@ -1304,17 +1331,17 @@
     "label": "L13, memorial handed to Kurz, ?/9 Mar. 1657",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L13_reading.md",
+    "translation": "letters/L13_en.md",
     "language": "de",
     "state": "read",
-    "read_share": 0.997,
+    "read_share": 0.968,
     "summary": "Memorial handed to Kurz (?/9 March): Denmark can hold the Baltic and act on land; the Emperor is asked to declare himself on general peace while Sweden holds Pomerania and Bremen, on transferring Bremen to the king after its occupation, and on effective cooperation. If Sweden made peace in Poland it would recoup itself from Pomerania and Bremen 'mit den spoliis des armen Teutschlandes'. Sweden's attack on the city of Bremen against the imperial avocatoria has nearly forfeited the fief.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
      "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open. Integration note (12 Nov 2026): not re-read end to end by the project; the verification pass scored every letter as German with the key and re-decoded it. Strict count: 779 of 805 tokens read. The English text is a summary, not a translation."
     }
    },
    {
@@ -1322,17 +1349,17 @@
     "label": "L14, to the chancellor, Vienna 11/21 Mar. 1657 (with P.S.)",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L14_reading.md",
+    "translation": "letters/L14_en.md",
     "language": "de",
-    "state": "read",
-    "read_share": 0.991,
+    "state": "read in part",
+    "read_share": 0.944,
     "summary": "To the chancellor: under the new order he handed Kurz a detailed memorial yesterday; an answer is promised by the next post. P.S.: should he ask Kurz for written full powers, and is it enough that both sides show theirs and keep the originals?",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
      "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open. Integration note (12 Nov 2026): not re-read end to end by the project; the verification pass scored every letter as German with the key and re-decoded it. Strict count: 118 of 125 tokens read. The English text is a summary, not a translation."
     }
    },
    {
@@ -1340,17 +1367,17 @@
     "label": "L15, \"Monsieur\", March 1657 (pencil 14/3)",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L15_reading.md",
+    "translation": "letters/L15_en.md",
     "language": "de",
     "state": "read",
-    "read_share": 1.0,
+    "read_share": 0.969,
     "summary": "No answer yet; Vienna seems to wait until the king has actually broken with Sweden to bargain better; the king cannot keep his army long without acting.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
      "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open. Integration note (12 Nov 2026): not re-read end to end by the project; the verification pass scored every letter as German with the key and re-decoded it. Strict count: 63 of 65 tokens read. The English text is a summary, not a translation."
     }
    },
    {
@@ -1358,17 +1385,17 @@
     "label": "L16, memoir to a prince (\"Ewere fürstliche Gnaden\"), 16/26 Mar. 1657",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L16_reading.md",
+    "translation": "letters/L16_en.md",
     "language": "de",
     "state": "read",
-    "read_share": 0.997,
+    "read_share": 0.954,
     "summary": "Memoir to a prince (Auersperg?): the king cannot decide until the Emperor declares himself; the Danish fleet can hold the Baltic and the army is ready; the king offers a treaty for the security of the Baltic and against the Swedish provinces, at first for one year, to be extended later with the States General; he asks the prince to further the matter.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
      "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open. Integration note (12 Nov 2026): not re-read end to end by the project; the verification pass scored every letter as German with the key and re-decoded it. Strict count: 333 of 349 tokens read. The English text is a summary, not a translation."
     }
    },
    {
@@ -1376,17 +1403,17 @@
     "label": "L17, to the chancellor, Vienna 18/28 Mar. 1657 (mostly clear)",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L17_reading.md",
+    "translation": "letters/L17_en.md",
     "language": "de",
     "state": "read",
-    "read_share": 1.0,
+    "read_share": 0.971,
     "summary": "Mostly in clear; cipher: on his last instance the Emperor will send the king of Poland some thousand men under Hatzfeldt, already in Silesia.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
      "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open. Integration note (12 Nov 2026): not re-read end to end by the project; the verification pass scored every letter as German with the key and re-decoded it. Strict count: 34 of 35 tokens read. The English text is a summary, not a translation."
     }
    },
    {
@@ -1394,17 +1421,17 @@
     "label": "L18, to the chancellor, Vienna 21/31 Mar. 1657",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L18_reading.md",
+    "translation": "letters/L18_en.md",
     "language": "de",
     "state": "read",
-    "read_share": 1.0,
-    "summary": "To the chancellor (cipher copy and clear of the time in the volume): Kurz explains that the Emperor renewed the family pacts with Poland and promised troops, solely to second Denmark against Sweden, and calls this a sufficient diversion; on Bremen he advises the king to attack Sweden itself first so that Sweden opens hostilities from Bremen; Sehested answers 'praevenire melius quam praeveniri'; Kurz: 'multa fiunt et cogitantur quae non dicuntur'. The Emperor is gravely ill; the privy council asked to see Sehested's full powers.",
+    "read_share": 0.982,
+    "summary": "To the chancellor (cipher copy and clear of the time in the volume): Kurz explains that the Emperor renewed the family pacts with Poland and promised troops, solely to second Denmark against Sweden, and calls this a sufficient diversion; on Bremen he advises the king to attack Sweden itself first so that Sweden opens hostilities from Bremen; Sehested answers 'praeuenire melius als das praeueniri'; Kurz: 'multa fiunt et cogitantur quae non dicuntur'. The Emperor is gravely ill; the privy council asked to see Sehested's full powers.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
      "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open. Integration note (12 Nov 2026): not re-read end to end by the project; the verification pass scored every letter as German with the key and re-decoded it. Strict count: 744 of 758 tokens read. The English text is a summary, not a translation."
     }
    },
    {
@@ -1412,17 +1439,17 @@
     "label": "L19, to the chancellor, Vienna 25 Mar./4 Apr. 1657 (death of the Emperor)",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L19_reading.md",
+    "translation": "letters/L19_en.md",
     "language": "de",
     "state": "read",
-    "read_share": 1.0,
+    "read_share": 0.955,
     "summary": "To the chancellor: his hopes ended on Sunday with the Emperor's unexpected death; the help for Poland under Hatzfeldt is uncertain; his full powers and instruction expire; should he stay or leave? He asks for a recredential and the return of his written memorials.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
      "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open. Integration note (12 Nov 2026): not re-read end to end by the project; the verification pass scored every letter as German with the key and re-decoded it. Strict count: 107 of 112 tokens read. The English text is a summary, not a translation."
     }
    },
    {
@@ -1430,17 +1457,17 @@
     "label": "L20, to the king, Vienna 28 Mar./7 Apr. 1657",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L20_reading.md",
+    "translation": "letters/L20_en.md",
     "language": "de",
-    "state": "read",
-    "read_share": 1.0,
+    "state": "read in part",
+    "read_share": 0.923,
     "summary": "To the king: his instructions and full powers expire with the Emperor's death; should he continue if Kurz, as a well-disposed imperial councillor told him, makes important proposals in the name of the new government?",
     "reading_review": {
      "grade": "B",
-     "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
-     "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "by": "project (the project's verification pass), after the contributor's own reader",
+     "date": "2026-11-12",
+     "note": "Read end to end as sentences: coherent chancery German (French in L27) that matches the contributor's summary. Grade B: no punctuation, period spelling, transcription by AI agents with no human check, and 5 of 65 tokens are holes by the strict count (probable or restored words, symbol values given by the sense, open symbols). The English text is a summary, not a translation."
     }
    },
    {
@@ -1448,17 +1475,17 @@
     "label": "L21, copy of a letter to the chancellor, Vienna 28 Mar./7 Apr. 1657",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L21_reading.md",
+    "translation": "letters/L21_en.md",
     "language": "de",
     "state": "read",
-    "read_share": 1.0,
+    "read_share": 0.966,
     "summary": "Copy to the chancellor: Kurz intends to make him an important overture once the new government is set up; he will take it ad referendum.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
      "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open. Integration note (12 Nov 2026): not re-read end to end by the project; the verification pass scored every letter as German with the key and re-decoded it. Strict count: 57 of 59 tokens read. The English text is a summary, not a translation."
     }
    },
    {
@@ -1466,17 +1493,17 @@
     "label": "L22, to the chancellor, Vienna 4/14 Apr. 1657 (with P.S.)",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L22_reading.md",
+    "translation": "letters/L22_en.md",
     "language": "de",
     "state": "read",
-    "read_share": 1.0,
+    "read_share": 0.964,
     "summary": "To the chancellor: Hatzfeldt ordered into Poland with 12,000 men; his negotiation, which presupposed the late Emperor, is suspended; the news of 17/27 March was only meant to feed Denmark with light hopes, everything having long been concerted with Poland; an imperial councillor (Cridel or Lützow) may be sent secretly to Denmark to inspect the troops; 18,000 men decided for Poland. P.S. on the Swedish resident's insinuations.",
     "reading_review": {
      "grade": "B",
-     "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
-     "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "by": "project (the project's verification pass), after the contributor's own reader",
+     "date": "2026-11-12",
+     "note": "Read end to end as sentences: coherent chancery German (French in L27) that matches the contributor's summary. Grade B: no punctuation, period spelling, transcription by AI agents with no human check, and 12 of 335 tokens are holes by the strict count (probable or restored words, symbol values given by the sense, open symbols). The English text is a summary, not a translation."
     }
    },
    {
@@ -1484,17 +1511,17 @@
     "label": "L23, to the chancellor, Vienna 8/18 Apr. 1657",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L23_reading.md",
+    "translation": "letters/L23_en.md",
     "language": "de",
-    "state": "read",
-    "read_share": 1.0,
+    "state": "read in part",
+    "read_share": 0.927,
     "summary": "Partly in clear: the Swedish resident claims that Denmark and Sweden have settled and that the king will give Sweden 4,000 men; Sehested has reported otherwise.",
     "reading_review": {
      "grade": "B",
-     "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
-     "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "by": "project (the project's verification pass), after the contributor's own reader",
+     "date": "2026-11-12",
+     "note": "Read end to end as sentences: coherent chancery German (French in L27) that matches the contributor's summary. Grade B: no punctuation, period spelling, transcription by AI agents with no human check, and 6 of 82 tokens are holes by the strict count (probable or restored words, symbol values given by the sense, open symbols). The English text is a summary, not a translation."
     }
    },
    {
@@ -1502,17 +1529,17 @@
     "label": "L24, to the chancellor, Vienna 15/25 Apr. 1657",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L24_reading.md",
+    "translation": "letters/L24_en.md",
     "language": "de",
     "state": "read",
-    "read_share": 1.0,
+    "read_share": 0.99,
     "summary": "Partly in clear: his merchants have betrayed his name, mission and bills of exchange to the Swedish resident; the nuncio and the Spanish ambassador urge the young king to war on Sweden; the resident belittles Danish armaments and claims a Danish-Swedish treaty.",
     "reading_review": {
      "grade": "B",
-     "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
-     "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "by": "project (the project's verification pass and the integration pass), after the contributor's own reader",
+     "date": "2026-11-12",
+     "note": "Read end to end as sentences: coherent chancery German (French in L27) that matches the contributor's summary. Grade B: no punctuation, period spelling, transcription by AI agents with no human check, and 1 of 98 tokens are holes by the strict count (probable or restored words, symbol values given by the sense, open symbols). The English text is a summary, not a translation."
     }
    },
    {
@@ -1520,17 +1547,17 @@
     "label": "L25, to the chancellor, Vienna 18/28 Apr. 1657",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L25_reading.md",
+    "translation": "letters/L25_en.md",
     "language": "de",
     "state": "read",
-    "read_share": 1.0,
+    "read_share": 0.96,
     "summary": "To the chancellor: Hatzfeldt ordered to join the king of Poland with 15,000 men; the ministers want to carry out with Denmark the alliance begun under the late Emperor; Sehested's full powers have lapsed, so a draft will be made in Vienna and sent on.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
      "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open. Integration note (12 Nov 2026): not re-read end to end by the project; the verification pass scored every letter as German with the key and re-decoded it. Strict count: 121 of 126 tokens read. The English text is a summary, not a translation."
     }
    },
    {
@@ -1538,17 +1565,17 @@
     "label": "L26, to the chancellor, Vienna 9/19 May 1657",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L26_reading.md",
+    "translation": "letters/L26_en.md",
     "language": "de",
     "state": "read",
-    "read_share": 1.0,
+    "read_share": 0.979,
     "summary": "Partly in clear: Vienna now wishes to conclude a defensive alliance quickly, offering help in money or troops if the king is attacked.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
      "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open. Integration note (12 Nov 2026): not re-read end to end by the project; the verification pass scored every letter as German with the key and re-decoded it. Strict count: 46 of 47 tokens read. The English text is a summary, not a translation."
     }
    },
    {
@@ -1556,26 +1583,26 @@
     "label": "L27, to the chancellor, in French, Prague 3/13 Oct. 1657",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
-    "reading": "reading.md",
-    "translation": "translation.md",
+    "reading": "letters/L27_reading.md",
+    "translation": "letters/L27_en.md",
     "language": "fr",
     "state": "read",
-    "read_share": 1.0,
+    "read_share": 0.976,
     "summary": "French letter, Prague 3/13 Oct 1657, same cipher: the court will resolve either on full cooperation or on a strong diversion in Pomerania by the Poles, who will be given German troops after these are disbanded.",
     "reading_review": {
      "grade": "B",
-     "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
-     "date": "2026-11-11",
-     "note": "Decoded text read letter by letter as German sentences; the words outside the period word list were checked one by one; five letters are confirmed by a second cipher copy and two by a clear of the time. Grade B: no human reader, transcription by AI agents only, and some 20 nomenclator symbols rest on the sense or are open."
+     "by": "project (the project's verification pass and the integration pass), after the contributor's own reader",
+     "date": "2026-11-12",
+     "note": "Read end to end as sentences: coherent chancery German (French in L27) that matches the contributor's summary. Grade B: no punctuation, period spelling, transcription by AI agents with no human check, and 1 of 42 tokens are holes by the strict count (probable or restored words, symbol values given by the sense, open symbols). The English text is a summary, not a translation (a full translation of this letter was added to translation.md at integration)."
     }
    }
   ],
   "key_file": "key.tsv",
-  "notes": "The text and the key only: no Rigsarkivet image or derivative is included. The German text of the cipher passages is not printed in Gigas 1883 or Fridericia 1894, which summarise the mission in Danish from Gigas's private decipherment. Prior decipherment: Edvard Gigas deciphered the letters privately before 1894 (Fridericia 1894, n. 62); his work was not printed.",
+  "notes": "The text and the key only: no Rigsarkivet image or derivative is included. The German text of the cipher passages is not printed in Gigas 1883 or Fridericia 1894, which summarise the mission in Danish from Gigas's private decipherment. Prior decipherment: Edvard Gigas deciphered the letters privately before 1894 (Fridericia 1894, n. 62); his work was not printed. Integration (12 Nov 2026): a crop of img 132 was made for the site by the project; the contributor's files contain no image. The English texts are per-letter summaries, not translations, except L03 and L27. The per-letter files in letters/ are cut from reading.md and translation.md, which remain the sources.",
   "codes_open": {
-   "open": 20,
-   "total": 60,
-   "tokens_open": "unknown"
+   "open": 26,
+   "total": 64,
+   "tokens_open": 44
   }
  }
 }

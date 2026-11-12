@@ -75,7 +75,7 @@ Mostly in clear; cipher: on his last instance the Emperor will send the king of 
 
 ## L18 — to the chancellor, Vienna 21/31 Mar. 1657
 
-To the chancellor (cipher copy and clear of the time in the volume): Kurz explains that the Emperor renewed the family pacts with Poland and promised troops, solely to second Denmark against Sweden, and calls this a sufficient diversion; on Bremen he advises the king to attack Sweden itself first so that Sweden opens hostilities from Bremen; Sehested answers 'praevenire melius quam praeveniri'; Kurz: 'multa fiunt et cogitantur quae non dicuntur'. The Emperor is gravely ill; the privy council asked to see Sehested's full powers.
+To the chancellor (cipher copy and clear of the time in the volume): Kurz explains that the Emperor renewed the family pacts with Poland and promised troops, solely to second Denmark against Sweden, and calls this a sufficient diversion; on Bremen he advises the king to attack Sweden itself first so that Sweden opens hostilities from Bremen; Sehested answers 'praeuenire melius als das praeueniri'; Kurz: 'multa fiunt et cogitantur quae non dicuntur'. The Emperor is gravely ill; the privy council asked to see Sehested's full powers.
 
 ## L19 — to the chancellor, Vienna 25 Mar./4 Apr. 1657 (death of the Emperor)
 
@@ -113,3 +113,18 @@ Partly in clear: Vienna now wishes to conclude a defensive alliance quickly, off
 
 French letter, Prague 3/13 Oct 1657, same cipher: the court will resolve either on full cooperation or on a strong diversion in Pomerania by the Poles, who will be given German troops after these are disbanded.
 
+
+## Full translations made at integration (12 Nov 2026): L03 and L27 only
+
+The texts above are summaries. No full English translation of the 27 letters exists yet. Two letters were translated in full at
+integration, to judge the reading; square brackets mark nomenclator values that rest on the sense (holes by the strict count).
+
+### L03, to the king, Vienna 7/17 Feb. 1657
+
+Since I have already several times given Your Royal Majesty a full and [most humble] report of my business here, I now rightly refrain from troubling Your Royal Majesty with repeating it once more, the more so as nothing particular has happened in it since and His Imperial Majesty only awaits your resolution with the greatest longing. Otherwise I find spirits here not a little raised, because by the last [post] [Rebolledo] sent [La Fuente] a wholly favourable report of Your Royal Majesty's armament and great preparations, and the said [La Fuente] at once laid it before His Imperial Majesty on the 2/12 of this month, whereby my news, which I had shortly before given to Kurz, was in good part confirmed. Passage through Friuli has indeed been refused to the Turk, but it is feared that he may all the same use the sabre instead of the keys and seek the passage by force. The Swiss have answered [France]'s threefold proposal (namely that they should not press so hard for payment, should submit without any excuse to the [symbol L] he would set them, and thirdly should take upon themselves the protection of Alsace) with a refusal; hence the talk is that the old alliance has been denounced to them by [France]. Her Majesty the Roman Empress was delivered of a young prince on the 1/11 of this month, at which there was great joy at [court], and the carnival ended the merrier. From Poland nothing has come in this time except that Rákóczi has already advanced a good way into it and that the city of [Danzig] is minded to seek neutrality. Whereupon I will detain Your Royal Majesty no longer, but in closing [most humbly] assure you that I am, from deepest duty, ...
+
+(Symbol L is given as "Staaten", the States General, in key.tsv by the sense of another letter; that value does not fit this sentence, where the Swiss are to submit to something France "would set them".)
+
+### L27, to the chancellor, in French, Prague 3/13 Oct. 1657 (cipher passages only)
+
+... this court will resolve in the end either on a full cooperation or else on a powerful [diversion] in Pomerania by the Poles, to whom for this purpose a quantity of German troops will be given, after these have first been disbanded ... put in another memorial ...
