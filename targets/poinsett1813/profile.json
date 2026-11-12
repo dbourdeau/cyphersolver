@@ -301,7 +301,16 @@
     "plaintext matching",
     "statistical test"
    ],
-   "what": "Integration of pull request 414 after a separate read-only verification: hashes, status counts (D 385, A 21, R 4, I 20, H 7) and the 1814 score (0.935, 376 of 401 letters; 0.954 with two rereads) reproduce; a decoder written separately, applied to the first transcription (transcription.tsv), gives 432 of 437 groups a value and the same English; 73 of 73 groups on frame 0093 agree with the frozen numerals; 485 and 1315 (three times) confirmed on frame 0100. Not reproducible from the repository: the 200-shuffle control (full table absent; a shuffle of the committed rows gives mean 0.194, best 0.307) and the identity of the table with Weber's print (book absent; page numbers 470-480 against 443-453 unresolved). The 1814 test is not blind and had no threshold. Read share restated by the read bar: 248 of 293 coded word places (0.846; 264 with the 16 choice words; contributor's 0.916 includes Manning's clear words); groups 385 of 437 as first frozen (0.881; 406 with the choices). outcome.key recovered -> partial; contribution 'key extended or corrected' removed. One pass over eleven of the twenty assumed misreads on frame 0093: none settled on the high-contrast film (P7.4 reads ?517, which supports 1517).",
+   "what": "Integration of pull request 414 after a separate read-only verification: hashes, status counts (D 385, A 21, R 4, I 20, H 7) and the 1814 score (0.935, 376 of 401 letters; 0.954 with two rereads) reproduce; a decoder written separately, applied to the first transcription (transcription.tsv), gives 432 of 437 groups a value and the same English; 73 of 73 groups on frame 0093 agree with the frozen numerals; 485 and 1315 (three times) confirmed on frame 0100. Not reproducible from the repository: the 200-shuffle control (full table absent; a shuffle of the committed rows gives mean 0.194, best 0.307) and the identity of the table with Weber's print (book absent; page numbers 470-480 against 443-453 unresolved). The 1814 test is not blind and had no threshold. Read share restated by the read bar: 248 of 294 coded word places (0.844; 264 with the 16 choice words; contributor's 0.916 includes Manning's clear words); groups 385 of 437 as first frozen (0.881; 406 with the choices). outcome.key recovered -> partial; contribution 'key extended or corrected' removed. One pass over eleven of the twenty assumed misreads on frame 0093: none settled on the high-contrast film (P7.4 reads ?517, which supports 1517).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "The contributor's follow-up commit c0538294 to pull request 414 (after the integration above): his own reading review of the 1813 reading (grade A), and the reading file now marks two supplied words ([the] in [?to] [the]; marke[12] for the word that had a hole) and two reread groups ([?the] in on [?the] part, [?seas]) that the project's write-up already marked. Checked against the file and the page: no figure of the groups moves; the supplied [the] is counted like [be], so the strict count is 248 of 294 word places (0.844; was 248 of 293, 0.846).",
    "result": "worked"
   }
  ],
@@ -314,7 +323,7 @@
   ],
   "fraction_read": 0.881,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Groups of the 1813 letter (beling/groups_1813-02-20.tsv): 385 of 437 read with WE025 from the first frozen reading of the number, no choice or reread (status D). With the 21 choices between two frozen readings (A) 406 of 437 = 0.929, the contributor's figure; with the four rereads (R) 410. P0 not counted. This is a count of groups; the count of words is read_share on the text entry (0.846).",
+  "fraction_read_source": "Groups of the 1813 letter (beling/groups_1813-02-20.tsv): 385 of 437 read with WE025 from the first frozen reading of the number, no choice or reread (status D). With the 21 choices between two frozen readings (A) 406 of 437 = 0.929, the contributor's figure; with the four rereads (R) 410. P0 not counted. This is a count of groups; the count of words is read_share on the text entry (0.844).",
   "codes_open": {
    "open": 5,
    "total": 245,
@@ -330,7 +339,7 @@
     "records": "M37 roll 2 frames 0092-0094",
     "method": "read after matching with key from external sources",
     "extent": "partial",
-    "basis": "The printed table WE025 (Weber 1979), by the contributor's record frozen before decoding: 385 of 437 groups read from the first frozen reading (0.881), 406 with the choices (0.929); 248 of 293 coded word places read (0.846); all nine coded passages join Manning's clear text (beling/reading_1813-02-20.md)."
+    "basis": "The printed table WE025 (Weber 1979), by the contributor's record frozen before decoding: 385 of 437 groups read from the first frozen reading (0.881), 406 with the choices (0.929); 248 of 294 coded word places read (0.844); all nine coded passages join Manning's clear text (beling/reading_1813-02-20.md)."
    },
    {
     "label": "14 June 1814, Buenos Aires (catalogue 651)",
@@ -352,14 +361,14 @@
     "reading": "beling/reading_1813-02-20.md",
     "language": "en",
     "state": "read in part",
-    "read_share": 0.846,
+    "read_share": 0.844,
     "summary": "Writing from Santiago while the Carreras governed Chile and Lima's cruisers blockaded Valparaiso and Conception (Manning's clear text), Poinsett reports in code that he has taken a part in the revolution beyond his instructions, that a small naval force with five thousand stand of arms would insure the fall of Lima, that his journey to Arauco is really to leave the militia in patriot hands before independence is declared, and that the new governor of the bishopric, proposed by him, is at his disposal.",
-    "note": "Contributed by Andrew Beling with AI agents (beling/README.md). read_share is the strict count of the coded words only: 248 of 293 word places whose every group is a first frozen reading used as the table gives it; choice, reread, assumed-misread, hole and supplied words are not counted (264 with the 16 choice words). The contributor's 0.916 also counts Manning's clear words. The reading file marks the reread and assumed-misread words [?word]; the 16 choice words are listed in NOTES (Integration check). The decryption is laid out against Daniel Bourdeau's transcription.tsv. P0 (frame 0092) not read.",
+    "note": "Contributed by Andrew Beling with AI agents (beling/README.md). read_share is the strict count of the coded words only: 248 of 294 word places (292 words and the supplied be and the) whose every group is a first frozen reading used as the table gives it; choice, reread, assumed-misread, hole and supplied words are not counted (264 with the 16 choice words). The contributor's 0.916 also counts Manning's clear words. The reading file marks the reread and assumed-misread words [?word]; the 16 choice words are listed in NOTES (Integration check). The decryption is laid out against Daniel Bourdeau's transcription.tsv. P0 (frame 0092) not read.",
     "reading_review": {
      "grade": "A",
      "by": "integration reader for the project, after the contributor's AI agents",
      "date": "2026-11-12",
-     "note": "Read as English sentences against decryption_1813-02-20.txt and Manning's clear text on both sides of each passage: all nine passages construe and join the clear text; holes are marked and scattered, thickest in P7 (court of Brasil, B. Ayres), where four words rest on assumed misreads. Frame 0093 looked at for eleven doubtful groups; no human has read the reading."
+     "note": "Read as English sentences against decryption_1813-02-20.txt and Manning's clear text on both sides of each passage: all nine passages construe and join the clear text; holes are marked and scattered, thickest in P7 (court of Brasil, B. Ayres), where four words rest on assumed misreads. Frame 0093 looked at for eleven doubtful groups; no human has read the reading. The contributor recorded his own review of the same file on 12 Nov 2026 (grade A, with two independent AI-agent readings): P1-P9 coherent, five unexplained groups and about twenty marked guesses scattered, P0 unread; on that review he marked two supplied words and two reread groups in the reading."
     }
    },
    {

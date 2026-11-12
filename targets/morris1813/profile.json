@@ -666,6 +666,15 @@
   },
   {
    "date": "2026-11-12",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "The contributor's follow-up commit c84e484c to PR 415, after the integration: his own reading reviews (grade A) of the five catalogue 650 letters, 'actu[al]' marked as supplied in No. 28, 'office' noted as read by the stroke rule in No. 19, and the opening 593.813 of No. 24 left as numbers. Checked against the files: No. 28 now has one hole in 71 coded words (0.986, was 1.000), so the thirteen texts have 87 holes in 2,631 words (0.967); the earlier profile figure of 85 holes and the 96.8% in the ledgers did not match the NOTES recount (86 before this commit) and are corrected to 87 and 96.7%. His 593.813 stays a hole as the integration's [?Sir]; his reviews are recorded with the integration reviews.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
    "kind": "transcription",
    "what": "Integration: the two coded pieces PR #415 left unread were transcribed from full-resolution crops: frames 0115-0116 (621 groups) and the three lines on frame 0111 (53 groups with the heading on 0107). The clerk's words on the copy 0169-0170 had been seen at reduced size first, so the first is not blind.",
    "result": "worked"
@@ -697,7 +706,7 @@
    "key extended or corrected"
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "Over the thirteen texts worked: 2,631 coded words in the readings, 85 of them holes (word_share.py for the twelve letters in beling/letters/, and the same rule by hand for frame 0039: 353 words, 13 holes). A hole is an unread group, a guessed [?word] or a word with supplied letters. This is a share of words, not of groups, and it does not cover the other coded frames of the roll, which are further copies or carry a clerk's decipherment and were not worked here.",
+  "fraction_read_source": "Over the thirteen texts worked: 2,631 coded words in the readings, 87 of them holes (word_share.py for the twelve letters in beling/letters/, and the same rule by hand for frame 0039: 353 words, 13 holes). A hole is an unread group, a guessed [?word] or a word with supplied letters. This is a share of words, not of groups, and it does not cover the other coded frames of the roll, which are further copies or carry a clerk's decipherment and were not worked here.",
   "fraction_read": 0.967,
   "parts": [
    {
@@ -722,7 +731,7 @@
     "label": "Nos. 18, 19 and 28 (20 September and 27 October 1814, 12 May 1815): no decipherment on the frames",
     "method": "read after matching with key from external sources",
     "extent": "partial",
-    "basis": "word shares 0.958, 0.943 and 1.000 (word_share.py); all groups reproduce with an independent decoder; one reader; Woolfley (2013) quotes parts of Nos. 18 and 19"
+    "basis": "word shares 0.958, 0.943 and 0.986 (word_share.py); all groups reproduce with an independent decoder; one reader; Woolfley (2013) quotes parts of Nos. 18 and 19"
    },
    {
     "label": "Nos. 24 and 25 (30 December 1814, 6 January 1815) and the Cevallos note of 20 November 1814: a clerk's decipherment on another copy",
@@ -977,7 +986,7 @@
      "grade": "A",
      "by": "integration review of PR #415 (a model reading, not a person)",
      "date": "2026-11-12",
-     "note": "Read as sentences against the line-by-line decode: coherent with scattered holes. 'liberal' and 'liberality' (li-er-al) are now marked as inferences, with the two supplied words already marked."
+     "note": "Read as sentences against the line-by-line decode: coherent with scattered holes. 'liberal' and 'liberality' (li-er-al) are now marked as inferences, with the two supplied words already marked. Andrew Beling recorded his own review of the same file on 12 Nov 2026 (grade A, with two independent AI-agent readings): every sentence coherent, the holes a few marked inferences and Morris's stop sign, one choice between copies (1363 'understanding') disclosed."
     }
    },
    {
@@ -994,7 +1003,7 @@
      "grade": "A",
      "by": "integration review of PR #415 (a model reading, not a person)",
      "date": "2026-11-12",
-     "note": "Three coherent sentences, but six of 106 coded words are holes once 'approbation' (ap-pro-bat-ad) is marked as inferred: under the 95% bar, so read in part."
+     "note": "Three coherent sentences, but six of 106 coded words are holes once 'approbation' (ap-pro-bat-ad) is marked as inferred: under the 95% bar, so read in part. Andrew Beling recorded his own review on 12 Nov 2026 (grade A, with two independent AI-agent readings): three coherent sentences, three marked spots (actual, carefully, the unread adverb 575.1060); he added a note that 'office' in 'post office' is read by the stroke rule, with no clerk's check."
     }
    },
    {
@@ -1030,7 +1039,7 @@
      "grade": "A",
      "by": "integration review of PR #415 (a model reading, not a person)",
      "date": "2026-11-12",
-     "note": "Read as sentences against the decode and the clerk's words on frame 0196: coherent. 'United States' is group 1569 (December in the key) and stays marked as inferred."
+     "note": "Read as sentences against the decode and the clerk's words on frame 0196: coherent. 'United States' is group 1569 (December in the key) and stays marked as inferred. Andrew Beling recorded his own review on 12 Nov 2026 (grade A, with two independent AI-agent readings): reads in full and agrees with the clerk's decipherment on frame 0196, which was read after the decode, so the agreement supports and is not independent; he leaves the opening groups 593.813 as numbers, where this reading has [?Sir] (593 probably a slip for 598) and counts it as a hole."
     }
    },
    {
@@ -1048,7 +1057,7 @@
      "grade": "A",
      "by": "integration review of PR #415 (a model reading, not a person)",
      "date": "2026-11-12",
-     "note": "Read as sentences against the decode and the clerk's decipherment on frame 0174: coherent, no holes."
+     "note": "Read as sentences against the decode and the clerk's decipherment on frame 0174: coherent, no holes. Andrew Beling recorded his own review on 12 Nov 2026 (grade A, with two independent AI-agent readings): coherent, word for word the clerk's decipherment on frame 0174, which he saw before the figures were transcribed."
     }
    },
    {
@@ -1093,13 +1102,13 @@
     "reading": "beling/letters/1815-05-12_No28/reading.txt",
     "language": "en",
     "state": "read",
-    "read_share": 1.0,
+    "read_share": 0.986,
     "summary": "Things stand as on 24 March; with no communication with the government since Erving's letters he has had no talks with the secretary of state, but the result at New Orleans must have changed the court's views.",
     "reading_review": {
      "grade": "A",
      "by": "integration review of PR #415 (a model reading, not a person)",
      "date": "2026-11-12",
-     "note": "Read as sentences against the decode: coherent, no holes."
+     "note": "Read as sentences against the decode: coherent; one hole, the supplied al of actu[al] (marked by the contributor after integration). Andrew Beling recorded his own review on 12 Nov 2026 (grade A, with two independent AI-agent readings) and marked 'actu[al]' as supplied (10.1151.1255 is act + UV + non; nothing gives -al); counted here as a hole, so 70 of 71 coded words (0.986) read; his figure stays 1.000 by groups."
     }
    }
   ],
