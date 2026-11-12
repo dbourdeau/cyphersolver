@@ -40,7 +40,7 @@
   "types": [
    "homophonic"
   ],
-  "summary": "The Siena no. 11 cipher (Florentine, Medici chancery): homophonic substitution with invented signs, letters and numerals, the same nulls 'g#', '31' and '87'; 52 sign types in 2309, 14 of them (3.6 % of the tokens) not in George Lasry's key.",
+  "summary": "The Siena no. 11 cipher (Florentine, Medici chancery): homophonic substitution with invented signs, letters and numerals, the same nulls 'g#', '31' and '87'; 52 sign types in 2309, 14 of them (3.6 % of the tokens) not in George Lasry's key; one of them, TRI (a triangle), held as 'che' on a fresh portion on 12 Nov 2026, which leaves 13 (2.8 %).",
   "symbol_kind": "letters and symbols",
   "distinct_symbols": 52,
   "diacritics": {
@@ -78,7 +78,7 @@
    "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
   ],
   "first_date": "2026-11-10",
-  "last_date": "2026-11-10"
+  "last_date": "2026-11-12"
  },
  "solution": [
   {
@@ -119,13 +119,28 @@
    "kind": "reading",
    "what": "2309 read word by word with K_SIENA11_D1: 39 certain, 13 probable, 11 restored words, 45 unresolved stretches; about 35-40 % of the letter read.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Third pre-registered test, on a portion never used before: XLVIII 294 c. 306r lines 1-16 (411 cipher tokens) against the upper part of its clear c. 276r. Letter agreement 0.6519 against at most 0.1854 for 200 shuffled keys (partial again). Derived rule D1 ('PLUS ODAG' = c): 5 of its 6 occurrences align on 'c' in the clear, p = 0.005 against 200 random-position controls: held. Candidate values: TRI = 'che' held (4 of 5, p = 0.005); PLUS alone = o did not hold (0 of 3); PIBAR = n not testable (no occurrence).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "2309 decoded again with K_SIENA11_D1_TRI (Lasry's key + D1 + TRI = che) and re-read: 46 certain, 13 probable, 11 restored words, 46 unresolved stretches (was 39 / 13 / 11 / 45); about 35-45 % of the letter read.",
+   "result": "partial"
   }
  ],
  "outcome": {
   "class": "read in part",
   "key": "partial",
   "method": "read after matching with key from external sources",
-  "method_basis": "The sign set of 2309 matches Siena no. 11; George Lasry's key of that letter (targets/siena11) was applied unchanged, plus one derived rule D1 that is declared and untested. The key failed a test on 2309 itself and is partial on a held-out letter of the same family (XLVIII 294 against its clear c. 276).",
+  "method_basis": "The sign set of 2309 matches Siena no. 11; George Lasry's key of that letter (targets/siena11) was applied unchanged, plus two single values derived later and held on a fresh portion (D1 'PLUS ODAG' = c, TRI = che). The key failed a test on 2309 itself and is partial on two held-out portions of a letter of the same family (XLVIII 294 against its clear c. 276).",
   "contribution": [
    "transcription",
    "decipherment with ambiguous key"
@@ -134,14 +149,14 @@
    "statistical test"
   ],
   "validation": {
-   "date": "2026-11-10",
+   "date": "2026-11-12",
    "verdict": "weak",
    "file": "validation.txt",
-   "notes": "Contributor's pre-registered tests (not docs/_validate.py). On 2309 itself: M5 0.2335 vs at most 0.0719 for 200 shuffled keys, margin 0.16 under 0.30: not met (failed). Held out on XLVIII 294 c. 306v against its contemporary clear c. 276: 0.6419 vs at most 0.2045, margin 0.437, under the 0.85 set in advance: partial. D1 ('PLUS ODAG' = c) not exercised by either test."
+   "notes": "Contributor's pre-registered tests (not docs/_validate.py). On 2309 itself: M5 0.2335 vs at most 0.0719 for 200 shuffled keys, margin 0.16 under 0.30: not met (failed). Held out on XLVIII 294 c. 306v against its contemporary clear c. 276: 0.6419 vs at most 0.2045, margin 0.437, under the 0.85 set in advance: partial. Third test 12 Nov 2026 on c. 306r (fresh) against c. 276r: 0.6519 vs at most 0.1854, partial; D1 ('PLUS ODAG' = c) held 5/6 and TRI = che 4/5 (p = 0.005 each, 200 random-position controls)."
   },
   "fraction_read": 0.35,
   "fraction_read_method": "estimated",
-  "fraction_read_source": "reading/xlviii214.md: certain + probable words cover about 33 % of the 665 decoded letters, about 43 % with the restored words; stated as about 35-40 %.",
+  "fraction_read_source": "reading/xlviii214.md (12 Nov 2026): certain + probable words cover about 35 % of the 683 decoded letters, about 45 % with the restored words (10 Nov: 33 % and 43 % of 665); stated as about 35-45 %.",
   "provenance": "mixed",
   "credits": [
    {
@@ -153,8 +168,8 @@
    {
     "who": "dudout",
     "role": "identification",
-    "note": "the sign set of catalogue 2309 (MAP XLVIII 214) identified as the Siena no. 11 cipher; transcription (787 tokens); Lasry's key tested (failed on 2309 itself, partial 0.6419 vs 0.2045 on XLVIII 294 against c. 276); letter read in part, about 35-40 %",
-    "date": "2026-11-10"
+    "note": "the sign set of catalogue 2309 (MAP XLVIII 214) identified as the Siena no. 11 cipher; transcription (787 tokens); Lasry's key tested (failed on 2309 itself, partial 0.6419 vs 0.2045 and 0.6519 vs 0.1854 on two portions of XLVIII 294 against c. 276); D1 ('PLUS ODAG' = c) and TRI = che held on a fresh portion (12 Nov); letter read in part, about 35-45 %",
+    "date": "2026-11-12"
    },
    {
     "who": "bourdeau",
@@ -172,17 +187,17 @@
   "key_file": "key/K_SIENA11.tsv",
   "gaps": [
    {
-    "item": "about 60-65 % of the letter (45 unresolved stretches, 11 restored words)",
+    "item": "about 55-65 % of the letter (46 unresolved stretches, 11 restored words)",
     "blocker": "open-codes",
-    "detail": "the text decodes with Lasry's key but long stretches do not read as words; 14 sign forms of 2309 are not in his key"
+    "detail": "the text decodes with the key but long stretches do not read as words; 13 sign forms of 2309 are not in the key (TRI now is); PIBAR = n and the nulls DIV, OO, ST are untested proposals"
    },
    {
-    "item": "D1 ('PLUS ODAG' = c) untested",
+    "item": "PLUS alone (aligned twice on 'c' in the 12 Nov test, after the pre-registered 'o' failed)",
     "blocker": "open-codes",
-    "detail": "needs a held-out portion of the family containing 'PLUS ODAG' with its clear (e.g. 294 c. 306r against the lower part of c. 276r, partly seen)"
+    "detail": "needs another letter of the '##' family with a clear; XLVIII 294 is used up and XLVIII 158 is too short"
    },
    {
-    "item": "key partial (0.6419 against 0.85); transcription at 1272 px",
+    "item": "key partial (0.6419 and 0.6519 against 0.85); transcription at 1272 px",
     "blocker": "needs-physical-access",
     "detail": "a higher-resolution image of XLVIII 214 from the ASF would settle doubtful forms"
    },
@@ -197,7 +212,7 @@
     "doc": "map-xlviii-214",
     "label": "ASF MAP XLVIII 214r, undated cipher letter (catalogue 2309)",
     "transcription": "transcription/xlviii214.txt",
-    "decryption": "decryption/xlviii214_D1.txt",
+    "decryption": "decryption/xlviii214_D1_TRI.txt",
     "reading": "reading/xlviii214.md",
     "translation": "translation.md",
     "language": "it",
@@ -207,8 +222,8 @@
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 (for Brice Dudout)",
-     "date": "2026-11-10",
-     "note": "Read word by word as Italian on 10 Nov 2026 on the decoding with K_SIENA11_D1: 39 certain, 13 probable, 11 restored words, 45 unresolved stretches, about 35-40 % read; read in part; key partial (failed on 2309, 0.6419 vs 0.2045 held out on XLVIII 294); D1 untested."
+     "date": "2026-11-12",
+     "note": "Read word by word as Italian on 10 Nov 2026 with K_SIENA11_D1 (39 certain, 13 probable, 11 restored, 45 unresolved) and again on 12 Nov 2026 with K_SIENA11_D1_TRI: 46 certain, 13 probable, 11 restored words, 46 unresolved stretches, about 35-45 % read; read in part; key partial (failed on 2309; 0.6419 vs 0.2045 and 0.6519 vs 0.1854 held out on XLVIII 294); D1 and TRI = che held on a fresh portion."
     }
    }
   ],
