@@ -6,7 +6,7 @@ import csv, re, json, hashlib, difflib
 ROOT = Path(__file__).resolve().parents[3]
 OUT = ROOT / 'output/code16_pinckney_2026-11-11'
 FROZEN = ROOT / 'output/code16_merged_2026-11-10/frozen_key_v1.tsv'
-LEG = ROOT / 'output/push_2026-11-11/cyphersolver/targets/legation1788'
+LEG = ROOT / 'output/push_2026-11-11/cyphersolver/targets/legation1788'  # integration note, 12 Nov 2026: in the repository these files are now targets/pinckney1793/key.tsv and transcription/pinckney_m30.tsv
 
 
 def bourdeau_0178_groups():

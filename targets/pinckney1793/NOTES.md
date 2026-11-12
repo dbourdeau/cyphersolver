@@ -233,13 +233,70 @@ Andrew Beling, with AI agents. Everything is in `beling/round_2026-11-11/`.
 - Pinckney's coded letter of 28 Jan 1794 (M30 roll 2 frame 0196, Explication on 0195) and his postscript of 26 Feb 1794
   (frame 0208) are transcribed blind and aligned with the clerk's interlinear.
 - Key v5 has 549 groups. It adds 1160 = comma and 12 other values, changes 1366, 631 and 598, and drops 640. Four of
-  these correct values in v4. The readings in `texts/` still rest on v4, and none of these values occurs in the
+  these correct values in v4 by the contributor's account (the open conflicts are in the integration check below). The readings in `texts/` still rest on v4, and none of these values occurs in the
   28 Aug 1793 passage.
 - **Test on frame 0178** (Pinckney, 25 Nov 1793), written down first: the frozen key v1, without the 35 values Bourdeau
   read partly from 0178, scored against the ASP text (1:328). Result **0.724**, shuffled best 0.264: below the 0.85
-  bar. Afterwards it was found that ASP leaves out the Explication's last paragraph, about a third of the coded text.
+  bar. **The test failed.** Afterwards it was found that ASP leaves out the Explication's last paragraph, about a third of the coded text.
   Post hoc, against the clerk's full Explication on 0179, the score is 0.948, but that is not the declared test.
 - Group 447 does not occur in 0178, 0196 or 0208.
+
+### Integration check of the follow-up (12 Nov 2026, pull request #413)
+
+The follow-up was verified independently before integration; this records the result and what was corrected here.
+- **Reproduced:** key v5 has 549 rows and its sha256 matches; v4 to v5 is 13 added, 3 changed, 640 dropped, 5 raised
+  from B to D; `beling/SHA256SUMS.txt` checked 94 of 94 before the two notes below were added; the test key K1 rebuilds
+  byte for byte from `key.tsv` and `beling/tests/frozen_key_v1.tsv`; the two transcriptions of 0178 agree on 290 of the
+  299 certain groups (0.970); the declared score 0.724 (126 of 174; shuffled mean 0.155, best 0.264), the post hoc 0.948
+  (165 of 174; shuffled best 0.287) and the K0, K2 and K5 runs are all as in the result files.
+- **The declared test on frame 0178 failed, and is published as failed.** Declared in `PREREGISTRATION_0178.md`: key =
+  frozen v1 less the 35 values read here partly from 0178; truth = the letter of 25 Nov 1793 as printed in ASP Foreign
+  Relations 1:327-28; pass at 0.85 or more and 0.30 over the best shuffle. Score 0.724. The margin over the best shuffle
+  (0.46) is met; the bar is not. The declaration's fallback ("print does not cover 0178") was not invoked, rightly,
+  since ASP does print the "posts" and "nine years" matter. That the declaration was written before the texts were
+  opened is the contributor's record (its timestamps; everything arrived in one commit).
+- **The cause, found after the run.** The clerk's Explication on frame 0179 ends with a paragraph ("In case I should be
+  directed by you to withdraw from hence ... frigate ... consuls ... british in america") that the committed ASP OCR
+  extract does not have; the verifier saw it on frame 0179. Of the 48 groups unmatched against ASP, 39 match once that
+  paragraph is present. Against the full Explication the same key scores 0.948. That figure is **post hoc**: the truth
+  text was changed after the result was known, so it is not a passed test. The ASP print itself was not opened, only the
+  committed OCR extract.
+- **What it means for the key.** The failed test does not show that any key value is wrong, and no value was changed on
+  the strength of it. It also does not count as a passed test of the key. What makes the key credible is separate: the
+  1795 test that passed (0.886), the clerk-attested values (grade D), and the shuffled controls here (best 0.264 and
+  0.287 against 0.724 and 0.948).
+- **v4 and v5.** v4 (537 groups: D 158, S1 111, S2 81, A 125, B 62) is still the key behind `texts/`. v5 has 549 (D 163,
+  S1 110, S2 80, A 140, B 56). The texts show the clerks' words, not key values, so no sentence of a reading changes.
+  None of 598, 640, 1366, 631 or 1160 occurs in the 28 Aug 1793 passage.
+- **Open conflicts between the key files** (none resolved here):
+  - **631.** `key.tsv` has 631 = "6th" (frame 0196). v4's "th" (B, taken from the October table) was a wrong import; v5's
+    "sixth" agrees with `key.tsv`. Settled.
+  - **640, three ways.** `key.tsv` has 640 = "in" (frames 0180 and 0183, with "justi" once); v4 has "es" (S2); v5 enters
+    no value, because three words want "iv", which is not on Weber's element list. v5's own rows for 941 = pre and
+    1501 = di put 640 at "ju" in "prejudices" (941 640 1501 1369+ on M31 frame 0111). No value fits all of these.
+  - **598.** The clerk wrote "fourth" over 598 on M31 roll 7 frame 0111 ("the twenty fourth of October", 663 1493 598
+    1518 237). v5 replaces it with "es" (grade A: ac-qui-es-ce on 0019L, ti-es and Regenci-es in the Tunis letters),
+    calling the middle digit on 0111 doubtful (598 or 508). The frame was fetched on integration: the middle digit has
+    the descender of this hand's 9, as in the 1493 beside it, and the group reads 598 with "fourth" over it. So the
+    clerk's "fourth" stays the primary value for that group and for the reading of 0111; "es" is the alternative, with
+    three words behind it. One number carrying both is not explained (a slip by the encoder on 0111, or misread digits
+    in the words that want "es", which were not re-checked on the images).
+  - **1160 = comma.** The frozen v5 row gives n = 16 ("lear tick x14; m30-0196 x2"); `key_v5_changes.tsv` says twelve
+    strokes of 15 occurrences and that n should be 14. The count is unsettled; the value is not in doubt on that account.
+  - Listed by the contributor as unresolved: 1162 = va against "fluctuation"; 1368 "stead" against "avoided"; 1064 u or
+    ou; and the pairs 1501/1496 (di), 1435/1438 (ent), 380/38, 1524/1521.
+  - Post hoc, the uncorrected key K0 (with the 35 values read here from 0178) scores lower than K1 (0.898 against
+    0.948): about 14 of the values in `key.tsv` read from 0178 do not match in order. Whether that is the scorer's
+    strictness or wrong values in `key.tsv` was not looked into.
+- **Stale paths.** `PREREGISTRATION_0178.md` and `scripts/make_test_keys_0178.py` named `targets/legation1788/...`, the
+  layout before the split. A bracketed integration note with the present path was added to each (the declared text is
+  otherwise untouched) and their two lines in `beling/SHA256SUMS.txt` were updated; the hashes before the notes were
+  ...0a7cd7c3 and ...5222c2e8. The round's scripts point to the contributor's own `output/` folders and do not run
+  from the repository; the scorer they import is `beling/key/scripts/eaton_heldout_score_2026_11_10.py`.
+- **Not checked:** the transcriptions of frames 0196 and 0208 against the images (no sample taken), the 1794 and 1795
+  alignments, and the ASP print.
+- Group 447 is absent from 0178, 0196 and 0208 (searched in the three transcription folders).
+- Class and method are unchanged (already solved; read from existing decipherment; key partial).
 
 ## Remaining gaps
 
@@ -247,7 +304,7 @@ Andrew Beling, with AI agents. Everything is in `beling/round_2026-11-11/`.
 - Pinckney 28 Aug 1793, ?55 668 800 (a general's name ending -at-s; the editors' [Dunda]s) - blocker: illegible; the first digits of ?55 are in the binding gutter, and 668 = at in Eaton 1801, Pinckney 1795 and the Bey's letter of 1802, so the groups do not spell Dundas (234 time and 501 secret are closed: attested in Lear 1813)
 - Pinckney 28 Oct and 18 Dec 1795 (M31 roll 7 frames 0111, 0177), line ends and several groups - blocker: illegible; binding gutter and a shadowed last line, the NARA JPEG is the only image
 - Eaton 22 Oct 1802 (T303 roll 2 frame 0320), six interlinear words - blocker: illegible; blotted on the film; the passage repeats the 9 Oct postscript, which reads
-- Code No. 16 groups without a value (about 1,600 elements; 537 in key v4, 549 in v5) - blocker: no-key-material; the original key (Lear family papers) is unprinted and was sold in 2010 to an unnamed buyer (contributor's notes)
+- Code No. 16 groups without a value (about 1,600 elements; 537 in key v4, 549 in v5; 598 and 640 carry conflicting values, see the integration check of 12 Nov 2026) - blocker: no-key-material; the original key (Lear family papers) is unprinted and was sold in 2010 to an unnamed buyer (contributor's notes)
 
 ## Escalation
 

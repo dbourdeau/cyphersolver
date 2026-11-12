@@ -113,7 +113,7 @@
     "word_division": "none",
     "doubled_letters": "unknown",
     "sibling_key": "Weber's WE023-WE028 share the element list but not the numbering (40 values of frame 004-0249 tested against WE016, WE018, WE022-WE028 and constant offsets: no match). Not the 663 code (Pinckney, King to Livingston 1802).",
-    "notes": "distinct_symbols = the size of the number range (1-1600); entries = groups with a value in key.tsv (764, of which 8 are grade I). homophones unknown: 269 stands where 'the' (769) is wanted in No. 29, a slip or a second number."
+    "notes": "distinct_symbols = the size of the number range (1-1600); entries = groups with a value in key.tsv (764, of which 8 are grade I). homophones unknown: 269 stands where 'the' (769) is wanted in No. 29, a slip or a second number; a second, doubtful sighting of 269 under 'the' is on M30 roll 6 frame 0013 (first digit possibly a corrected 7)."
   },
   "conditions": {
     "prior_solution": {
@@ -233,6 +233,12 @@
       "date": "2026-11-11",
       "kind": "verification",
       "what": "Integration check by the project (pull request #398): key v1, the No. 59 score, key v2 and the print checks rebuilt byte for byte from the corpus; No. 59, No. 29 and No. 30 confirmed absent from the 72 corpus frames; frame 0092 fetched from NARA and all 119 groups read again with the transcription in view (all stand); the eight context-only groups searched in the corpus and the bare items (no occurrence under a clear word); key.tsv compared with Codes 10 and 16 (legation1788; Code 16 is in pinckney1793 since the split of 11 Nov 2026) and the WE028 sheet (morris1813): no value shared. The time of the test declaration rests on the contributor's statement (single commit).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "what": "Follow-up by Andrew Beling (PR #413), verified and integrated: in corpus/interlined_spans.tsv 769 stands alone under a clerk's word 465 times, 453 as 'the' and never as 'and'; 710 is 'and' or '&' 164 of 168 times and never 'the'; so the 769 of No. 29 line 15 has no parallel, and with one copy on the film it cannot be told whose slip it was. 269 found a second time under an interlined 'the' on M30 roll 6 frame 0013 (10 Jan 1799); on the frame the first digit could be 2 or a corrected 7, so it stays grade I. key.tsv row for 269 corrected (n 2, second sighting doubtful). No reading changes.",
       "result": "worked"
     }
   ],

@@ -275,6 +275,12 @@
       "kind": "verification",
       "what": "Andrew Beling contribution (follow-up to PR #397): blind second reading of the 6 Feb numerals F6-01 to F6-42 by a separate agent, frozen by sha256 before comparison (second_reading/). 837 of 853 numerals agree; of 17 differences, 15 keep our figure on a crop, 1 is taken (F6-40 numeral 11 = 8, not 3: 'have entered Berl[i]n'), 1 is left doubtful (F6-33 numeral 11, 10 or 13). 6 Feb supplied letters 60 -> 59; error_accounts.txt regenerated. 'Mr de Bassagne' (F6-62) probably identified as Desbassayns de Richemont from Coquelle 1904 pp. 267-69 (inference).",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "what": "Integration of the follow-up (PR #413) after an independent verification: decode.py ok on 123 stretches, errors.py W 26/310 = 0.084 and error_accounts.txt regenerated identically, second-reading hash matches, 837 of 853 numerals agree on a separate comparison. F6-40 numeral 11 seen on frame 0109: 8 is the better reading, not certain; 'have entered Berl[i]n' accepted. The second reading had the clerk's pencil in view and its freeze before comparison is the contributor's record. Corrected: CHECKS.txt regenerated, NOTES section 6 table, _check_reading 6 Feb 0.813, 6 Feb read_share 0.929. Cipher-word measure kept at the contributor's 426 of 528 (0.807); a mechanical recount gives 428 (0.811). The Bassagne citations (Coquelle 1904, Bayreuther Zeitung) were not opened.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -309,7 +315,7 @@
         "label": "6 Feb 1813 (74 stretches, 1,456 numerals), clerk's pencil to F6-42 only",
         "method": "key recovered based on adjacent plaintext",
         "extent": "partial",
-        "basis": "reading_1813-02-06.md: the 32 stretches with no decipherment on this copy (603 numerals) deciphered; F6-26 and F6-01/02 proposals, F6-47 tail unread; read_share 0.928 whole reading, 0.805 over cipher words with supplied letters as holes"
+        "basis": "reading_1813-02-06.md: the 32 stretches with no decipherment on this copy (603 numerals) deciphered; F6-26 and F6-01/02 proposals, F6-47 tail unread; read_share 0.929 whole reading, 0.805 over cipher words with supplied letters as holes"
       }
     ],
     "fraction_read": 0.807,
@@ -422,7 +428,7 @@
         "reading": "reading_1813-02-06.md",
         "language": "en",
         "state": "read in part",
-        "read_share": 0.928,
+        "read_share": 0.929,
         "summary": "France after the Russian disaster: the Grand Army destroyed, discontent, conscription and forced donations as the last effort of the nation, Austria's armed neutrality and possible mediation, Prussia's king fleeing the Russians, terms of peace offered to England if she abandons Russia, and Napoleon's hopes resting on the coming campaign. The last 32 stretches carry no decipherment on this copy, and none was found.",
         "reading_review": {
           "grade": "A",

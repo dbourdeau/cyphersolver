@@ -122,8 +122,16 @@ F6-01).
 | letter | file | coded words (about) | words with a supplied letter | words guessed or unread | read_share (repo measure, whole reading) | read_share, cipher words only | state |
 |---|---|---|---|---|---|---|---|
 | 1 Feb | `reading_1813-02-01.md` | 19 | 0 | 0 | 0.994 | 1.000 | read |
-| 2 Feb | `reading_1813-02-02.md` | 216 | 42 | 1 | 0.896 | 0.792 | read in part |
-| 6 Feb | `reading_1813-02-06.md` | 293 | 52 | 6 | 0.928 | 0.805 | read in part |
+| 2 Feb | `reading_1813-02-02.md` | 216 | 44 | 1 | 0.896 | 0.792 | read in part |
+| 6 Feb | `reading_1813-02-06.md` | 293 | 52 | 6 (see below) | 0.929 | 0.805 | read in part |
+
+Table corrected on 12 Nov 2026 (integration of the follow-up): 2 Feb has 44 words with a supplied or dropped letter, not
+42 (44 + 1 = 45 holes, 171 of 216 = 0.792). The 6 Feb whole-reading share is 0.929 after the F6-40 correction (799 words,
+60 holes, 1 doubtful; 0.928 before). The 6 Feb hole columns, 52 and 6, sum to 58, one more than the 57 holes behind 0.805
+(236 of 293), and were already one over before this change (53 and 6 against 0.802). A mechanical recount on integration
+(a word with a square or angle bracket is repaired; `[?word]`, `[...]` and `(?)` are guessed or unread) gives 52 and 3 for
+6 Feb, 238 of 293, and 428 of 528 (0.811) over the three letters; the contributor's count, which is the stricter one and
+the one published, is 236 and **426 of 528 (0.807)**. The two-word difference is a counting convention inside 6 Feb.
 
 The "repo measure" is `research/reading_audit/v10_relabel.py` `share()` on the `## Reading` section, which includes
 Lee's clear text. The cipher-only share counts every word with a supplied or dropped letter as a hole, as the README
@@ -135,7 +143,7 @@ supplied letters; Andrew Beling, reviewing on 11 Nov 2026, kept that label.
 The readings mark, passage by passage, what the clerk read (italics), what he did not (bold italics, † failed,
 ‡ never attempted, ≠ differs), and what rests on a hypothesised slip or a proposed division of numerals (§); the
 notes on each marked passage are in section 12. Each reading ends with a summary. The plaintext is English, so no
-translation is needed. `docs/_check_reading.py lee1813` scores the readings 0.935, 0.846 and 0.811 clean sentences
+translation is needed. `docs/_check_reading.py lee1813` scores the readings 0.935, 0.846 and 0.813 clean sentences
 (readable); the weak sentences in 2 and 6 February are those where a bracketed repair splits a word (CHECKS.txt).
 
 ## 7. What the 1813 clerk read and missed
@@ -170,8 +178,8 @@ reading only. It divided two pairs of stretches differently (F6-61/62 and F6-73/
 numeral. The 1 and 2 February letters have had no second reading of the numerals, apart from Andrew Beling's check
 of F1-H numerals 21 and 23 on frame 0101 (section 4).
 
-**F6-01 to F6-42 (11 Nov 2026).** A second agent read the numerals of pages 1-3 blind, from the same frame halves,
-and its reading was frozen by sha256 before ours was opened (`second_reading/blind_reading_F6-01_to_42.json`). It
+**F6-01 to F6-42 (11 Nov 2026).** A second agent read the numerals of pages 1-3 without our transcription, from the same frame halves,
+and, by the contributor's record (everything arrived in one commit; the hash proves the file, not the order), its reading was frozen by sha256 before ours was opened (`second_reading/blind_reading_F6-01_to_42.json`). It
 divided the stretches as we did (42) and read 854 numerals to our 853; 837 agree. Each of the 17 differences was
 re-checked on a crop and decoded both ways (`second_reading/comparison_F6-01_to_42.tsv`):
 - ours kept, 15: four blind readings of 26, which the 25-row table cannot have; an extra "5" at the end of F6-03 that is
@@ -338,7 +346,8 @@ The readings mark passages with †, ≠, ‡ and § (legend in each reading). T
   Beobachter) has "Herr Desbassayns" sent from France with proposals for exchanging prisoners. The family name was
   printed "Bassagne" in Paris (Nouvelles politiques 1806, on Mme de Bassagne's foundation of the Rosière de Suresnes,
   which Suresnes histories give to the comtesse Panon Desbassyns de Richemont). Not searched: Gallica, the Times of
-  February 1813.
+  February 1813. These citations are the contributor's; Coquelle, the Bayreuther Zeitung and the Nouvelles politiques
+  were not opened on integration (12 Nov 2026), so they are not checked here.
 - F6-65 "Duk[e] Dalberg told me" reads only if a thick, re-inked 1 (numeral 9) is kept; first taken for a deletion.
   The second reader read 17 there.
 - F6-56 "emprunt forcé": a forced loan, in French in the cipher.
@@ -377,10 +386,32 @@ Done by the project on merging pull request #397 (the contributor's files are ot
 - **Method.** The keyword is the clerk's, read off his pencil; the alphabet, the numeral rule, the restart and the
   slips were worked out here against his pencilled words. That is "key recovered based on adjacent plaintext" in the
   project's categories, kept as the contributor set it.
-- Checkers: `docs/_check_profile.py lee1813` valid; `docs/_check_reading.py lee1813` 0.935 / 0.846 / 0.811, as in
-  CHECKS.txt; `docs/_check_terms.py lee1813` 0 hits. Not in `catalogue.json` or `research/leads.json`; not on DECODE.
+- Checkers: `docs/_check_profile.py lee1813` valid; `docs/_check_reading.py lee1813` 0.935 / 0.846 / 0.813 (0.811 before the F6-40
+  correction of the follow-up), as in CHECKS.txt; `docs/_check_terms.py lee1813` 0 hits. Not in `catalogue.json` or `research/leads.json`; not on DECODE.
 - `viewer/` loads only its own `data.js` and frame images from catalog.archives.gov. It also carries a URL pattern
   for another NARA film (M30 roll 4) that no document in `data.js` uses.
+
+### Integration check of the follow-up (12 Nov 2026, pull request #413)
+
+Andrew Beling's follow-up (second reading of F6-01 to F6-42, the F6-40 correction, the Bassagne identification) was
+verified independently before integration; this records the result and the corrections made here.
+- **Reproduced:** `decode.py` ok on 123 stretches (110 / 1,097 / 1,456 numerals); `errors.py` gives W 26 of 310 = 0.084
+  and 7 look-alikes, and regenerates `error_accounts.txt` byte for byte; the sha256 of the second reading matches; a
+  separate comparison of the second reading with `transcription_1813-02-06.txt` as it stood gives 837 of 853 agreeing,
+  16 substitutions and one extra numeral (the second reader has 854).
+- **F6-40 numeral 11 on frame 0109:** the glyph has a closed lower bowl and an open, 3-like top; the 3 of "13" two places
+  before is open at the bottom, and the clerk's pencil under the line reads "have entred Berlin". 8 is the better
+  reading, not a certain one. "have entered Berl[i]n" is accepted.
+- **Not fully independent.** The second reading had the clerk's pencil in view on the page, as the first did, and the
+  order "frozen, then compared" is the contributor's record.
+- **Corrected here:** `CHECKS.txt` regenerated (it still showed W 27/310 = 0.087, 8 look-alikes and 6 Feb 0.811); the
+  table in section 6 (2 Feb 44 not 42; the 6 Feb columns annotated; whole-reading share 0.929); `_check_reading` for
+  6 Feb is 0.813 (100 of 123 sentences), not 0.811; the profile's 6 Feb `read_share` 0.928 -> 0.929.
+- **The measure** stays the contributor's 426 of 528 cipher words (0.807); a mechanical recount gives 428 (0.811). Class
+  (read in part for 2 and 6 Feb) and method are unchanged.
+- **"Bassagne" = Desbassayns de Richemont** stays an inference; its citations were not opened (section 12).
+- Checkers: `_check_profile.py lee1813` valid, 0 unknown; `_check_writeup.py lee1813` `result: complete` after
+  the page was brought into line and rebuilt; `_check_terms.py lee1813` lists only lines the builder writes.
 
 Claims review by a second reader (11 Nov 2026): the clean-word count is 425 of 528 by the profile and by the
 cipher-only shares, but the hole columns of the table in section 6 sum to 426, and a recount of the readings gives

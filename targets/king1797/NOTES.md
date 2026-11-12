@@ -148,7 +148,7 @@ print checks or the alignments, and 107 of those fit. 11 tokens rest on eight gr
 majority (1279), Stockholm twice (1074, 1490), Swedish twice (507), esteem (1440) and "the" (269, a slip or a second number). The
 group 769 (the) stands where "and" is needed (line 15), and an encoder's slip is supposed. (Checked 11 Nov 2026,
 after PR #398: the frame shows a clear 769; across the interlined batches 769 is never written over "and", and 710 is
-"and" 156 times and never "the". Only one copy of No. 29 is on the film, so whose slip it was cannot be told. 269 has a
+"and" and never "the" (155 of 157 single-group observations in `key.tsv`; 164 of 168 counting "&", on the recount of 12 Nov 2026; the contributor's "156 times" matches neither count, and the point holds). Only one copy of No. 29 is on the film, so whose slip it was cannot be told. 269 has a
 second occurrence, interlined "the", on M30 roll 6 frame 0013 left, 10 Jan 1799; see `key.tsv`. Neither changes the
 reading.) Read share over the page's reading
 (clear and decoded words, the project's rule, `research/reading_audit/v10_relabel.py`) is **0.994** over the whole despatch,
@@ -246,6 +246,18 @@ Done by the project when pull request #398 was integrated. Nothing in the key, t
   marked words and the supplied letter as its only holes.
 - **Gaps list.** The four items the contributor marked "not attempted" were sorted: the second reading of the digits was done
   (above); the others are not unread pieces of No. 29 and moved to "Further work".
+
+### Integration check of the follow-up (12 Nov 2026, pull request #413)
+
+Verified independently before integration. In `corpus/interlined_spans.tsv` 769 stands alone under a clerk's word 465
+times, 453 of them "the" and none "and"; 710 is "and" or "&" 164 times of 168 and never "the". So the 769 of line 15 of
+No. 29, where "and" is wanted, has no parallel in the corpus, and with one copy of No. 29 on the film it cannot be told
+whether the slip is the encoder's or the copyist's. Frame M30 roll 6 frame 0013 was fetched: the clerk's "the" stands over
+the group after 1410.1056, and the first digit of that group is a looped or overwritten figure that could be 2 or a
+corrected 7. 269 = "the" therefore has a second, doubtful, sighting and stays grade I. The `key.tsv` row for 269 said
+n = 1 and "No. 29 only" while describing the second occurrence; corrected here (n = 2, the second marked doubtful).
+No. 29 (frame 0092) was not fetched again; it was checked at the integration of pull request #398. No reading changes;
+class and method are unchanged.
 
 ## Remaining gaps
 

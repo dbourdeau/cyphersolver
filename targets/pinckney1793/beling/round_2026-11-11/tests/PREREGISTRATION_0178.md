@@ -23,7 +23,7 @@ from it ("relinquish the posts", "for nine years", "retire to France", "a frigat
 
 Primary: groups of the blind transcription (`transcriptions/M30-002-0178/groups.tsv`) that carry no `?`, no `_`, are not
 `___` and not struck, AND that are identical (digits only) to the corresponding group of Bourdeau's transcription
-(`targets/legation1788/transcription/pinckney_m30.tsv`, frame 0178) after a longest-common-subsequence alignment of the two
+(`targets/legation1788/transcription/pinckney_m30.tsv`, frame 0178; [integration note, 12 Nov 2026: since the split of 11 Nov 2026 this file is `targets/pinckney1793/transcription/pinckney_m30.tsv`; nothing else in this declaration is touched]) after a longest-common-subsequence alignment of the two
 sequences. Groups not meeting this are dropped (counted as absent, not as uncovered). Reported first: share of identical
 groups between the two transcriptions. Secondary: all certain groups of the blind transcription alone.
 
