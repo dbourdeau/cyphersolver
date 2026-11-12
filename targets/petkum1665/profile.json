@@ -22,7 +22,7 @@
    "length": {
     "tokens": 726,
     "unit": "mixed",
-    "measured": true,
+    "measured": false,
     "file": "transcriptions/petkum_1665-11-30_p2-3_R1.txt + transcriptions/petkum_1665-11-30_p1-p4_R1_heldout.txt"
    },
    "transcription": {
@@ -51,7 +51,7 @@
    "length": {
     "tokens": 143,
     "unit": "mixed",
-    "measured": true,
+    "measured": false,
     "file": "transcriptions/petkum_1665-03-24.txt"
    },
    "transcription": {
@@ -80,7 +80,7 @@
    "length": {
     "tokens": 229,
     "unit": "mixed",
-    "measured": true,
+    "measured": false,
     "file": "transcriptions/petkum_1665-11-23.txt"
    },
    "transcription": {
@@ -109,7 +109,7 @@
    "length": {
     "tokens": 198,
     "unit": "mixed",
-    "measured": true,
+    "measured": false,
     "file": "transcriptions/petkum_1665-12-10.txt"
    },
    "transcription": {
@@ -138,7 +138,7 @@
    "length": {
     "tokens": 206,
     "unit": "mixed",
-    "measured": true,
+    "measured": false,
     "file": "transcriptions/petkum_1666-04-13.txt"
    },
    "transcription": {
@@ -167,7 +167,7 @@
    "length": {
     "tokens": 70,
     "unit": "mixed",
-    "measured": true,
+    "measured": false,
     "file": "transcriptions/petkum_1665-04-28.txt"
    },
    "transcription": {
@@ -196,7 +196,7 @@
    "length": {
     "tokens": 70,
     "unit": "mixed",
-    "measured": true,
+    "measured": false,
     "file": "transcriptions/petkum_1665-06-23.txt"
    },
    "transcription": {
@@ -225,7 +225,7 @@
    "length": {
     "tokens": 59,
     "unit": "mixed",
-    "measured": true,
+    "measured": false,
     "file": "transcriptions/petkum_1665-09-17.txt"
    },
    "transcription": {
@@ -254,7 +254,7 @@
    "length": {
     "tokens": 128,
     "unit": "mixed",
-    "measured": true,
+    "measured": false,
     "file": "transcriptions/petkum_1666-01-18.txt"
    },
    "transcription": {
@@ -283,7 +283,7 @@
    "length": {
     "tokens": 60,
     "unit": "mixed",
-    "measured": true,
+    "measured": false,
     "file": "transcriptions/petkum_1666-04-06.txt"
    },
    "transcription": {
@@ -312,7 +312,7 @@
    "length": {
     "tokens": 76,
     "unit": "mixed",
-    "measured": true,
+    "measured": false,
     "file": "transcriptions/paulmyer_1664-04-25.txt"
    },
    "transcription": {
@@ -341,7 +341,7 @@
    "length": {
     "tokens": 116,
     "unit": "mixed",
-    "measured": true,
+    "measured": false,
     "file": "transcriptions/paulmyer_1664-05-02.txt"
    },
    "transcription": {
@@ -370,7 +370,7 @@
    "length": {
     "tokens": 145,
     "unit": "mixed",
-    "measured": true,
+    "measured": false,
     "file": "transcriptions/paulmyer_1664-05-16.txt"
    },
    "transcription": {
@@ -399,7 +399,7 @@
    "length": {
     "tokens": 103,
     "unit": "mixed",
-    "measured": true,
+    "measured": false,
     "file": "transcriptions/paulmyer_1664-06-19.txt"
    },
    "transcription": {
@@ -627,6 +627,12 @@
    "key confirms",
    "statistical test"
   ],
+  "validation": {
+   "date": "2026-11-12",
+   "file": "controls.txt",
+   "verdict": "not applicable",
+   "notes": "Contributor's own shuffled-key control (not docs/_validate.py, which was not run): First shuffled-key control let code-word values count as text: 1/5,000 at or above true. Rejected as a test and replaced by a control on spelled values only: 0/5,000 (two seeds). For this folder every count and control re-run from the folder files; all filed figures reproduce. New: seed 7 for every control; 28 Apr 1665 alone gives 1/5,000 at seed 7 (0/5,000 at the filed seed)."
+  },
   "provenance": "contributed",
   "credits": [
    {
@@ -939,6 +945,6 @@
    "gloss/KEY_v1_gloss_377_401.tsv",
    "gloss/KEY_v2.tsv"
   ],
-  "notes": "Repository scripts (docs/_check_reading.py, docs/_validate.py, docs/_check_profile.py) were not run by the contributor; checks were made with the folder's own scripts and by hand. No validation block."
+  "notes": "Repository scripts (docs/_check_reading.py, docs/_validate.py, docs/_check_profile.py) were not run by the contributor; checks were made with the folder's own scripts and by hand."
  }
 }
