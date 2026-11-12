@@ -1,0 +1,7 @@
+# Girolamo Muzio to Ferrante Gonzaga, Rome, 11 Jan 1550, c. 3r: the cipher block
+
+<!-- Marks and notes: editorial.md. word° = sign corrected on the image; fo[ss]e = emended; [?word] = from context only; [13] = code with no value; [Cardinale] = code confirmed by the c. 5v margin; (?) = doubtful word; ⟦ ⟧ = deciphered from cipher. -->
+
+## Reading
+
+Dalla corte è tornato un corrier di [13], il qual si° intende che fu espedito per supplicar a [?Sua Maestà] che fo[ss]e contenta che si crea[ss]e [?o] Santa Croce o Monte; che questa pratica è stata aiutata dal [?Duca di] Firenze. Costui par che habia portato che [?Sua Maestà] si contenta di Monte. La qual novella parendomi che importi° a [V. Ecc.], non ho voluto tardar di dargliene notitia. A me ha detta questa cosa il Prior di [24], conformando° questo con quello che per una altra mia, che vien con questa, le scrivo della cedula del [Cardinale] de Medici. Entro in opinione che debia e[ss]er vero. Pur questa è reputata pratica [m]olto difficile°, da non risolversi così tosto. Io, considerata la autorità del [Cardinale] nostro, la congiuntion sua con Ferrara, la aut[o]rità di Ferrara co°[?n gli] Francesi, mi persuado che la cosa non habia a riuscire, salvo se da tutto° il mondo non siamo abandonati. Né so° come gli Imperiali, che a Monte non hanno affettione particolare, per questa nova resolutione habiano da condiscendere a dargli i voti°, sapendo che questa non è la vera intentione di [?Sua Maestà], ma un segnale di voler compiacere altrui.
