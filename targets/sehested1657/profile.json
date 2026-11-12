@@ -430,7 +430,7 @@
    "date": "?/9 Mar. 1657",
    "year": 1657,
    "country": "Austria",
-   "route": "Christoffer Sehested -> Ferdinand Sigmund Kurz (copy kept by Sehested)",
+   "route": "Christoffer Sehested -> the prince of Auersperg (sign X; copy kept by Sehested)",
    "places": {
     "from": "Vienna",
     "to": "Vienna"
@@ -954,7 +954,7 @@
    "monoalphabetic",
    "nomenclator"
   ],
-  "summary": "Simple substitution of German in numbers 2-96, one number per letter (90 and 96 both s; 26 = u/v; 15 = i/j), numbers separated by colons and words by a cross; a nomenclator of capital, Greek and doubled letters (Λ Eure Excellenz, Φ Königliche Majestät, Σ Kaiserliche Majestät, XX alliance, ZZ defensiv, YY offensiv, X Kurz, W Bremen, m Pommern ...), sometimes with figures as suffix. The same key enciphers French in the Prague letter of October 1657.",
+  "summary": "Simple substitution of German in numbers 2-96, one number per letter (90 and 96 both s; 26 = u/v; 15 = i/j), numbers separated by colons and words by a cross; a nomenclator of capital, Greek and doubled letters (Λ Eure Excellenz, Φ Königliche Majestät, Σ Kaiserliche Majestät, XX alliance, ZZ defensiv, YY offensiv, X Auersperg, W Bremen, m Pommern ...), sometimes with figures as suffix. The same key enciphers French in the Prague letter of October 1657.",
   "symbol_kind": "digits and symbols",
   "distinct_symbols": 105,
   "homophones": {
@@ -1031,13 +1031,22 @@
    ],
    "what": "Project verification and integration of PR #412. Hashes of the five frozen files match; the held-out lines (318 numbers, 51 words, 1 outside the key) decode to the same string with an independent decoder; all 27 letters and 5 copies re-decoded (1,707 of 1,793 lines identical, the rest differ only in printing); about 300 numbers on img 116 and 145 compared with the images: 0 number disagreements, one symbol corrected (img 145 line 3, Φ not Ψ). The contributor's C1/C2 figures could not be re-run (model pickle and corpus not sent); own controls with the repository's de-modern model: -2.615 vs -6.861 (500 permuted keys). Strict recount from reading.md with symbols counted: 6,267 of 6,573 tokens = 95.3%, 12 letters under 95%: class set to read in part, key partial. Three probable words of L01 seen on img 110 as transcribed. The 'Sehested keys 1650-70' (Daisy heid 1449582) recorded as untested.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Claims review by a second reader, settled on the images. The sign X had been given as Kurz from a reading 'H: von Kurtz' of the clear copy img 157 right. Images 157 (id 48703448), 112-113 (48703403-4), 132 (48703423), 158 and 169 were fetched and read: img 157 right line 2 has 'hatt mihr der F: von Auersp: eine weitlaufftige deduction'; img 112 line 5 and img 113 lines 4 and 9-10 have 'Fürst von Aursberg' at the three places where L01 has X; the gloss over X on img 132 right line 1 is a ducal title ('Hertzog von S...', last word not read with certainty). No 'Kurtz' was found on img 112-113, 157-158 or 169. X = Auersperg in key.tsv, reading.md, the summaries and the profile. Recount: [gg]:96 of L13 is an attested symbol (was uncounted), X of L08 (feminine) is diversion by the sense, X of L21 (masculine, marked diversion) is Auersperg: 6,268 of 6,574 tokens = 95.3% (was 6,267 of 6,573); L08 92.7% (was 93.3%), L21 98.3% (was 96.6%).",
+   "result": "worked"
   }
  ],
  "outcome": {
   "class": "read in part",
   "key": "partial",
   "method": "key recovered based on adjacent plaintext",
-  "method_basis": "The 25 letter values come from the interlinear decipherment of the time on img 132 (19 of the first 23 were already in the project's sweep note of 11 Nov 2026; the contributor added 8 k, 16 p, 36 x, 90 s from the same gloss, then 20 q and 24 y) and were confirmed on the clear of the time img 112. Nomenclator values: 13 from glosses and clears of the time, about 25 by the sense or one attestation, about 26 symbol forms open. L01, L18 and L25 have clears of the time and L27 a full letter-by-letter gloss: for these four the text is in effect read from an existing decipherment, checked against the decode.",
+  "method_basis": "The 25 letter values come from the interlinear decipherment of the time on img 132 (19 of the first 23 were already in the project's sweep note of 11 Nov 2026; the contributor added 8 k, 16 p, 36 x, 90 s from the same gloss, then 20 q and 24 y) and were confirmed on the clear of the time img 112. Nomenclator values: 13 from glosses and clears of the time, about 25 by the sense or one attestation, about 26 symbol forms open. L01, L18 and L25 have clears of the time and L27 a full letter-by-letter gloss: for these four the text is in effect read from an existing decipherment, checked against the decode. Stated plainly: the key was extended here, not recovered. No value was obtained by analysis of the ciphertext; the alphabet was copied from the gloss and six letters and the sign values were added to what the sweep note had. The category is the one the README gives for a key taken from plaintext lying beside the cipher. The sign X is Auersperg: the clear copies of the time write \"Fürst von Aursberg\" three times where L01 has X (img 112-113) and \"der F: von Auersp:\" where L18 has it (img 157 right), seen on the images on 12 Nov 2026; the contributor had read the place as \"H: von Kurtz\".",
   "contribution": [
    "transcription",
    "key extended or corrected"
@@ -1045,7 +1054,7 @@
   "first_break": "unpublished prior",
   "fraction_read": 0.953,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading.md, strict count of 12 Nov 2026 (strict_count.py): tokens = cipher words + nomenclator symbols of the 27 original letters = 6573; read = 5,903 certain words + 364 symbols whose value a gloss or clear of the time gives = 6267 (95.3%). Holes: 90 probable words, 19 restored, 1 unresolved, 152 symbol values given by the sense, 44 open symbols. The contributor's own figure, 99.7%, counts cipher words only (certain + probable of 6,013) and leaves the symbols out.",
+  "fraction_read_source": "reading.md, strict count of 12 Nov 2026 (strict_count.py): tokens = cipher words + nomenclator symbols of the 27 original letters = 6574; read = 5,903 certain words + 365 symbols whose value a gloss or clear of the time gives = 6268 (95.3%). Holes: 90 probable words, 19 restored, 1 unresolved, 152 symbol values given by the sense, 44 open symbols. The contributor's own figure, 99.7%, counts cipher words only (certain + probable of 6,013) and leaves the symbols out. Recount of 12 Nov 2026 after the claims review: [gg]:96 of L13 counted as an attested symbol (it was in neither class), the X of L08 moved to diversion (by the sense) and the X of L21 to Auersperg (attested); before that the figures were 6,267 of 6,573.",
   "verification": [
    "contemporary decipherment",
    "independent clear copy",
@@ -1099,9 +1108,9 @@
     "detail": "Blots, binding and figures that give a non-word. Three of the probable words of L01 were looked at on img 110 at integration (beidis, miiner, auftrkgen): the figures stand on the page as transcribed, so they are the encipherer's slips, emended by the sense. The rest were not rechecked on the images."
    },
    {
-    "item": "L03 date (read 28/7, probably 7/17 Feb.) and Kurz or Auersperg as the minister of the 17 March talk",
+    "item": "L03 date (read 28/7, probably 7/17 Feb.)",
     "blocker": "illegible",
-    "detail": "The clear of the time (img 157 right) gives Kurz; Fridericia 1894, from the Vienna protocols, gives Auersperg. Not settled."
+    "detail": "The date on the page reads 28/7; Gigas gives 17 Feb. Not settled from the film. (The other half of this item, Kurz or Auersperg for the talk of 17 March, was settled on the images on 12 Nov 2026: the clear copies write Auersperg, as Fridericia has it.)"
    },
    {
     "item": "The contributor's exact C1 and C2 figures of the held-out test (-2.023 vs -3.693; 0.569 vs 0.078) are not re-run",
@@ -1120,7 +1129,7 @@
     "language": "de",
     "state": "read in part",
     "read_share": 0.936,
-    "summary": "Sehested refers to his letter to the king; Kurz, at first surprised that no one came with full powers, took the matter up seriously on 14/24 Jan after conferring with La Fuente and gave the enclosed answer; Sehested asks the chancellor for the promised papers. P.S.: a breach between the Emperor and France is expected; forced levies; the French army put at 50,000; Rákóczi already in Poland, for himself rather than for Sweden; rumour of a Saxon marriage for the young king; Kurz flatters Sehested and has attached Windischgrätz to him to sound him out.",
+    "summary": "Sehested refers to his letter to the king; Auersperg, at first surprised that no one came with full powers, took the matter up seriously on 14/24 Jan after conferring with La Fuente and gave the enclosed answer; Sehested asks the chancellor for the promised papers. P.S.: a breach between the Emperor and France is expected; forced levies; the French army put at 50,000; Rákóczi already in Poland, for himself rather than for Sweden; rumour of a Saxon marriage for the young king; Auersperg flatters Sehested and has attached Windischgrätz to him to sound him out.",
     "reading_review": {
      "grade": "B",
      "by": "project (the project's verification pass), after the contributor's own reader",
@@ -1138,7 +1147,7 @@
     "language": "de",
     "state": "read in part",
     "read_share": 0.935,
-    "summary": "To the king: Sehested greeted Kurz on the alliance and the 'secret'; Kurz took it ad referendum, then reported that the Emperor is not averse to the defensive alliance proposed by the king but expects the draft and conditions from Denmark; the 'secret' once mentioned to Castel Rodrigo no longer matters. On 14/24 Jan Kurz asked for haste and for the inclusion of the States General.",
+    "summary": "To the king: Sehested greeted Auersperg on the alliance and the 'secret'; Auersperg took it ad referendum, then reported that the Emperor is not averse to the defensive alliance proposed by the king but expects the draft and conditions from Denmark; the 'secret' once mentioned to Castel Rodrigo no longer matters. On 14/24 Jan Auersperg asked for haste and for the inclusion of the States General.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
@@ -1174,7 +1183,7 @@
     "language": "de",
     "state": "read in part",
     "read_share": 0.926,
-    "summary": "To the chancellor: the ministers await the resolution and full powers; ciphering has worn out his eyes, so no duplicates; news as in the letter to the king; his reports to Kurz confirmed by Rebolledo. P.S.: talks in Paris with the cardinal; a Franco-Swedish offensive and defensive alliance is believed concluded.",
+    "summary": "To the chancellor: the ministers await the resolution and full powers; ciphering has worn out his eyes, so no duplicates; news as in the letter to the king; his reports to Auersperg confirmed by Rebolledo. P.S.: talks in Paris with the cardinal; a Franco-Swedish offensive and defensive alliance is believed concluded.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
@@ -1210,7 +1219,7 @@
     "language": "de",
     "state": "read in part",
     "read_share": 0.948,
-    "summary": "To the chancellor: Kurz would discuss Bremen only after the alliance; Sehested argues that Danish preparations are ready and that general peace is impossible while Sweden holds Pomerania, Mecklenburg and Bremen. On 11/21 Feb the Emperor, Kurz and La Fuente conferred: the king will be satisfied; the Danish minister at The Hague should block ratification of the Swedish-Dutch treaty and bring the States General into the alliance. Kurz then announced the Emperor's consent to the transfer of Bremen. P.S. at nine o'clock: the Emperor resolves on an offensive alliance and awaits the full powers urgently.",
+    "summary": "To the chancellor: Auersperg would discuss Bremen only after the alliance; Sehested argues that Danish preparations are ready and that general peace is impossible while Sweden holds Pomerania, Mecklenburg and Bremen. On 11/21 Feb the Emperor, Auersperg and La Fuente conferred: the king will be satisfied; the Danish minister at The Hague should block ratification of the Swedish-Dutch treaty and bring the States General into the alliance. Auersperg then announced the Emperor's consent to the transfer of Bremen. P.S. at nine o'clock: the Emperor resolves on an offensive alliance and awaits the full powers urgently.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
@@ -1245,7 +1254,7 @@
     "translation": "letters/L08_en.md",
     "language": "de",
     "state": "read in part",
-    "read_share": 0.933,
+    "read_share": 0.927,
     "summary": "To the chancellor: on 18/28 Feb he presented to the Emperor the points of his new instruction (copy enclosed); the cession of Bremen was already granted; an answer on the diversion and effective cooperation is promised; the proposition goes to the privy council. P.S.: inclusion of the States General pressed; La Fuente wavers.",
     "reading_review": {
      "grade": "B",
@@ -1300,7 +1309,7 @@
     "language": "de",
     "state": "read",
     "read_share": 0.954,
-    "summary": "To the chancellor: Kurz says the Emperor now wants a general offensive and defensive alliance binding both sides; Sehested took it ad referendum. The States General should come later as an accessory. Questions: should Denmark insist on 'Königliche Majestät' instead of 'Königliche Würden', on a recredential, and on a written promise for Bremen?",
+    "summary": "To the chancellor: Auersperg says the Emperor now wants a general offensive and defensive alliance binding both sides; Sehested took it ad referendum. The States General should come later as an accessory. Questions: should Denmark insist on 'Königliche Majestät' instead of 'Königliche Würden', on a recredential, and on a written promise for Bremen?",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
@@ -1328,7 +1337,7 @@
    },
    {
     "doc": "l13",
-    "label": "L13, memorial handed to Kurz, ?/9 Mar. 1657",
+    "label": "L13, memorial handed to Auersperg, ?/9 Mar. 1657",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
     "reading": "letters/L13_reading.md",
@@ -1336,7 +1345,7 @@
     "language": "de",
     "state": "read",
     "read_share": 0.968,
-    "summary": "Memorial handed to Kurz (?/9 March): Denmark can hold the Baltic and act on land; the Emperor is asked to declare himself on general peace while Sweden holds Pomerania and Bremen, on transferring Bremen to the king after its occupation, and on effective cooperation. If Sweden made peace in Poland it would recoup itself from Pomerania and Bremen 'mit den spoliis des armen Teutschlandes'. Sweden's attack on the city of Bremen against the imperial avocatoria has nearly forfeited the fief.",
+    "summary": "Memorial handed to Auersperg (?/9 March): Denmark can hold the Baltic and act on land; the Emperor is asked to declare himself on general peace while Sweden holds Pomerania and Bremen, on transferring Bremen to the king after its occupation, and on effective cooperation. If Sweden made peace in Poland it would recoup itself from Pomerania and Bremen 'mit den spoliis des armen Teutschlandes'. Sweden's attack on the city of Bremen against the imperial avocatoria has nearly forfeited the fief.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
@@ -1354,7 +1363,7 @@
     "language": "de",
     "state": "read in part",
     "read_share": 0.944,
-    "summary": "To the chancellor: under the new order he handed Kurz a detailed memorial yesterday; an answer is promised by the next post. P.S.: should he ask Kurz for written full powers, and is it enough that both sides show theirs and keep the originals?",
+    "summary": "To the chancellor: under the new order he handed Auersperg a detailed memorial yesterday; an answer is promised by the next post. P.S.: should he ask Auersperg for written full powers, and is it enough that both sides show theirs and keep the originals?",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
@@ -1426,7 +1435,7 @@
     "language": "de",
     "state": "read",
     "read_share": 0.982,
-    "summary": "To the chancellor (cipher copy and clear of the time in the volume): Kurz explains that the Emperor renewed the family pacts with Poland and promised troops, solely to second Denmark against Sweden, and calls this a sufficient diversion; on Bremen he advises the king to attack Sweden itself first so that Sweden opens hostilities from Bremen; Sehested answers 'praeuenire melius als das praeueniri'; Kurz: 'multa fiunt et cogitantur quae non dicuntur'. The Emperor is gravely ill; the privy council asked to see Sehested's full powers.",
+    "summary": "To the chancellor (cipher copy and clear of the time in the volume): Auersperg explains that the Emperor renewed the family pacts with Poland and promised troops, solely to second Denmark against Sweden, and calls this a sufficient diversion; on Bremen he advises the king to attack Sweden itself first so that Sweden opens hostilities from Bremen; Sehested answers 'praeuenire melius als das praeueniri'; Auersperg: 'multa fiunt et cogitantur quae non dicuntur'. The Emperor is gravely ill; the privy council asked to see Sehested's full powers.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
@@ -1462,7 +1471,7 @@
     "language": "de",
     "state": "read in part",
     "read_share": 0.923,
-    "summary": "To the king: his instructions and full powers expire with the Emperor's death; should he continue if Kurz, as a well-disposed imperial councillor told him, makes important proposals in the name of the new government?",
+    "summary": "To the king: his instructions and full powers expire with the Emperor's death; should he continue if Auersperg, as a well-disposed imperial councillor told him, makes important proposals in the name of the new government?",
     "reading_review": {
      "grade": "B",
      "by": "project (the project's verification pass), after the contributor's own reader",
@@ -1479,8 +1488,8 @@
     "translation": "letters/L21_en.md",
     "language": "de",
     "state": "read",
-    "read_share": 0.966,
-    "summary": "Copy to the chancellor: Kurz intends to make him an important overture once the new government is set up; he will take it ad referendum.",
+    "read_share": 0.983,
+    "summary": "Copy to the chancellor: Auersperg intends to make him an important overture once the new government is set up; he will take it ad referendum.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",

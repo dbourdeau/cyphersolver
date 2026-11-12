@@ -1,9 +1,10 @@
 # klogesoren1858: "Kloge Søren" (Søren Christensen), his Cyprianus, a book of charms in his own cipher, c. 1858 (catalogue 2525)
 
 Status: read in part (Brice Dudout, 11 Nov 2026; integration check 12 Nov 2026). The key is right: the writer's own alphabet table on
-image 091 left gives the same values. On the held-out images 030-031 the contributor classed 169 of 179 words as read (94.41%); the
-integration check found eight of those 169 misread on the image, so 161 of 179 (89.9%) stood as delivered; corrected, 172 of 176 words
-of these pages are read. 136 of the 148 pages have no sign-level transcription: their reading (the contributor's classification, 95.4%)
+image 091 left gives the same values. Measured share, certain words only, on the one sample graded word by word on the image (the
+held-out images 030-031, about 2% of the book): **130 of 176 words = 73.9%**; with the probable words 172 of 176. The contributor classed
+169 of his 179 words there as certain or probable (94.41%); eight of those were misread, so 161 stood. No whole-book share is given
+(see "Claims review by a second reader"). 136 of the 148 pages have no sign-level transcription: their reading (the contributor's classification, 95.4%)
 cannot be re-derived from the files. Open: those 136 pages unchecked, seven doubtful words on the first nine pages, the seals.
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents (transcription, key, protocol and measurement, reading,
@@ -46,11 +47,11 @@ after the measurement; C = the writer's table on image 091 left; D = ligatures a
 
 ## Validation (`frozen/`)
 
-**Key validated (the contributor's run; see the Integration check for the re-run and what the figures measure).** One measurement, pre-registered and hashed before the held-out portion was ever looked at:
+**Key validated (the contributor's run; see the Integration check for the re-run and what the figures measure).** One measurement; by the contributor's record it was pre-registered and hashed before the held-out portion was looked at:
 `frozen/PROTOCOLE.md` SHA-256 106f10c69168ee2aa1c5a1390c040351b512f40bb461b426f3984fd2292a7329, `frozen/KEY.json` 40bf4b2d...,
 scorer `mesure.py` 530a86e5..., Danish word list 5c295d99... (`frozen/FREEZE.sha256`; the scorer and the word list are not
 included: the scorer holds a local path, the list is built from Gutenberg texts). Held-out portion = image 030, then image 031
-added by the protocol's rule because 030 has fewer than 300 signs; both transcribed and hashed before any decoding
+added by the protocol's rule because 030 has fewer than 300 signs; by the same record both were transcribed and hashed before any decoding
 (`frozen/RESERVE-p030.txt` d56aef4d..., `frozen/RESERVE-p031.txt` d2d93503...). Result (`frozen/MESURE.out`), on 790 signs
 (185 words): lexical cover **COV 0.4025** (C1 >= 0.40: met, narrowly); best of 200 permuted keys 0.1089 (C2 threshold 0.359: met);
 best of 200 shuffles of the signs 0.1038 (C3 threshold 0.354: met); S (two consecutive lines read as Danish without correction):
@@ -124,8 +125,8 @@ DECODE line as `frozen/MESURE.out`. Held-out size: 790 signs plus the numeral 3,
 | cover of the training portion | 0.575 | 0.555 |
 
 The protocol asked for a margin of +0.25 over the best control. The contributor's run has 0.294 over the permuted keys and 0.299
-over the shuffles: met. With the verifier's lexicon the margin over the best permuted key is 0.247, a hair under the declared 0.25,
-and 0.287 over the shuffles. Both runs are reported; a cover of 0.40 against 0.16 or less is not chance either way. The annealing
+over the shuffles: met. With the verifier's lexicon the margin over the best permuted key is 0.247, so the declared margin of 0.25 is not met
+in the re-run (it is met, at 0.294, in the contributor's pre-registered run); over the shuffles it is 0.287, met. Both runs are reported; a cover of 0.40 against 0.16 or less is not chance either way. The annealing
 script is not in the PR: the verifier's own crude blind annealer on the training transcription reached 19 of 29 sign values in the
 best of 6 restarts, which supports a ciphertext-only attack but does not reproduce "6 of 10 restarts converge".
 
@@ -160,16 +161,18 @@ Also: "Mari[a]" (030 l. 3) was counted restored, but the final a is on the page;
 at full size; "[?ssyon]" is "skjøn" (the two dots of k stand over the next sign), which gives the rhyme "Jomfru skjøn / een Søn".
 "beholdt", "bestandig", "seer", "skeer" and "skjøn" appear nowhere in the PR.
 
-So, on the held-out pages: **161 of the contributor's 179 words stood as delivered (89.9%)**. After correction the pages hold 176
-words (030: 63; 031 left: 52; 031 right: 61), of which 172 are read, 1 is supplied (paa) and 3 stay doubtful (Kabbe, for Kaabe;
-karlegravet; søn). That second figure is the integration reader's classification, made with the key and the table in hand: it is
+So, on the held-out pages: 161 of the contributor's 179 words stood as delivered (89.9%, a figure that counts his probable words).
+After correction the pages hold 176 words (030: 63; 031 left: 52; 031 right: 61): 130 certain, 42 probable, 1 supplied (paa) and 3
+doubtful (Kabbe, for Kaabe; karlegravet; søn). **Certain words only: 130 of 176 = 73.9%**, the figure used as the headline since the
+claims review; with the probable words 172 of 176. That second figure is the integration reader's classification, made with the key and the table in hand: it is
 not blind and not an independent measurement. The frozen files are unchanged; the corrected signs are in `transcription.txt`,
 Part 2b, and `decryption.txt`, Part 2.
 
 **The first nine pages re-read.** Pages 003 right to 008 left (the contributor's low-resolution session, 385 of 425 words classed
 read, 90.6%, delivered as a summary with gaps) were re-read on the full-size images; the complete text is in `reading.md`, Part 1.
-Counted with the cipher headings and each "gange": 447 words, 437 read, 1 supplied, 9 doubtful (Aanmanden; saa Blodet staar; vaadne,
-badne, kølne; blødne; vaade). Same caveat: one reader, with the key. Words changed include "bløde" (was flyde), "denne Mand" (was
+Counted by the rule of the held-out pages (see the claims review; the first count here, 447 words and 437 read, did not follow it):
+459 words, 9 doubtful (Aanmanden; saa Blodet staar; vaadne, badne, kølne; blødne; vaade), 1 supplied (i), 449 without a doubt mark, of
+which 4 have one letter supplied (ell[er], di[n], svig[e], de[r]for). The re-reading was not graded certain or probable. Same caveat: one reader, with the key. Words changed include "bløde" (was flyde), "denne Mand" (was
 "den [?]"), "svige" (was [?værke]), "træskelig bedrog" (was "[?fræselig] bed"), "de[r]for vover" (was "det [?orv] over"). The cipher
 heading at the top of 003 right, "Første Begreb", was not in the first transcription.
 
@@ -194,6 +197,34 @@ Ferdinand Ohrt's unpublished copy and decipherment is prior work.
 Trylleformler* was not checked; that matters, because the agents read 136 pages into charm formulas that may be in print (the
 verifier's sample of 013 agreed sign by sign, and the errors found on 030 run against memorised formulas). Items 3 and 47 of the
 1977 inventory (other key material) were not seen.
+
+## Claims review by a second reader (12 Nov 2026)
+
+An independent reader checked the page against these notes and the profile. What changed:
+
+1. **The headline counts certain words only.** `decryption.txt` says read = s + p (certain + probable), and the figures "161 of 179
+   (89.9%)", "172 of 176" and "437 of 447" all counted probable words as read. By the read bar as applied in this round the headline
+   is the certain words of the one sample graded on the image: **130 of 176 = 73.9%** on the held-out images 030-031. The figures with
+   the probable words are given once, labelled: 172 of 176 (97.7%) after correction; 161 of the contributor's 179 stood (89.9%).
+   "Probable" here means a word whose signs give a period or irregular spelling, or whose word spacing or one sign is in doubt, read by
+   the sense.
+2. **One counting rule.** Each cipher word is one word ("I" and "Navnet" are two; each cipher "gange" is one); numerals and clear
+   headings are not counted; cipher headings are. The held-out pages were already counted so (63 + 52 + 61 = 176, recounted from
+   `reading.md`). Part 1 of `reading.md` holds 459 words by that rule (43, 65, 65, 43, 40, 43, 53, 58, 49 on the nine pages), not 447:
+   9 doubtful, 1 supplied, 449 without a doubt mark (97.8%), 4 of these with one letter supplied. That re-reading was not graded
+   certain or probable, so it gives no certain-only figure; 445 of 459 (the words with no bracket at all) is an upper bound for one.
+   The contributor's own low-resolution grading of these pages had 292 certain of 425 words (68.7%).
+3. **No whole-book percentage.** `outcome.fraction_read` was 0.899 "measured", which the site printed as "partial (90% of the
+   cipher)". It was a figure for two images, about 2% of the book. It is now "unknown"; the sample figure 0.739 stays in the text
+   entry's `read_share`, and the entry's summary says what it covers.
+4. **Order of events.** That the protocol was written and hashed before the held-out pages were looked at, and that these were
+   transcribed and hashed before decoding, is by the contributor's record (commits of one evening); said so here and on the page.
+5. **The margin.** In the verifier's re-run the margin over the best permuted key is 0.247: the declared 0.25 is not met in the
+   re-run. It is met, at 0.294, in the contributor's pre-registered run. "A hair under" is gone.
+6. **The table.** Not "every value of the recovered key": the 19 letter values of the measured key that the table carries fall at
+   their places; the table adds q, s, z, æ and ø.
+7. **Page details.** The clear heading on image 030 is "dölge en Bösse" (no "at"); the line-break mark is called the writer's
+   hyphen mark throughout; Sources now name image 013 (the verifier's sample) among the images used.
 
 ## Prior art
 
@@ -230,4 +261,4 @@ B. Rørbye, *Kloge folk og skidtfolk. Kvaksalveriets epoke i Danmark* (1976), wh
 - [x] known-keys: no key on DECODE or in print (Daniel's vetting); the writer's own table (091 L, a key in the volume) confirms ours; an unpublished decipherment by F. Ohrt is recorded in the archive (1977 inventory, 'kop 79.4'), not consulted
 - [x] print: lex.dk / Rørbye, heuschkel.dk, KB record, fynhistorie.dk (1977 inventory: Ohrt's decipherment), Ohrt (charm types only, not compared); Rørbye 1976 not seen (not online)
 - [x] key-rebuild: stroke-and-dot signs separated at full resolution; ligatures aa, tt, nn, mm and variants added (key.tsv B, D); table 091 L adds q, s, z, æ, ø
-- [x] retry: image 031 right lines 16-26 re-read at full resolution (85.8% -> 96.1% on the held-out portion before the blind sheet, 94.41% after); at the integration (12 Nov 2026) images 030-031 and the nine first-session pages re-read at full size against the writer's table (eight misread words corrected on 030-031; 437 of 447 words on 003 R - 008 L)
+- [x] retry: image 031 right lines 16-26 re-read at full resolution (85.8% -> 96.1% on the held-out portion before the blind sheet, 94.41% after); at the integration (12 Nov 2026) images 030-031 and the nine first-session pages re-read at full size against the writer's table (eight misread words corrected on 030-031; 449 of 459 words without a doubt mark on 003 R - 008 L)

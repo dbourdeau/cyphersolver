@@ -6,4 +6,4 @@
 # Probable: negociaton→negociation. Restored: none. Unresolved: none.
 
 # img 163 left
-… als were der [diversion, prob.] intentioniret so balt ehr nur die newe formam regiminis recht eingerichtet hette mihr einige im portante ouuerture meine uorige {negociation} betreffend anzutragen … solches ad referendum anzunehmen … … aus hofligkeit nicht wol abschlagen und sonsten uilleigt die hisige determinirte entschlissung uber die itzige beschaffenheit der zeiten dadurch erfahren konte … recreditif noch die extradition meiner eingegebenen memorialen uerwilligen
+… als were der [Auersperg] intentioniret so balt ehr nur die newe formam regiminis recht eingerichtet hette mihr einige im portante ouuerture meine uorige {negociation} betreffend anzutragen … solches ad referendum anzunehmen … … aus hofligkeit nicht wol abschlagen und sonsten uilleigt die hisige determinirte entschlissung uber die itzige beschaffenheit der zeiten dadurch erfahren konte … recreditif noch die extradition meiner eingegebenen memorialen uerwilligen

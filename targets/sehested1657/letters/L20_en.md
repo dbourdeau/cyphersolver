@@ -2,4 +2,4 @@
 
 Summary only, not a translation (Brice Dudout, 11 Nov 2026). No full English translation of this letter exists yet.
 
-To the king: his instructions and full powers expire with the Emperor's death; should he continue if Kurz, as a well-disposed imperial councillor told him, makes important proposals in the name of the new government?
+To the king: his instructions and full powers expire with the Emperor's death; should he continue if Auersperg, as a well-disposed imperial councillor told him, makes important proposals in the name of the new government?
