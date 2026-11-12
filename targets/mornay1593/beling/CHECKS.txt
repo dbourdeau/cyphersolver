@@ -1,0 +1,154 @@
+# mornay1593/beling: checks, 2026-11-11T21:33:35Z, local folder output/repo_help_2026-11-11/mornay1593/beling (not in a repo checkout). Scripts run from beling/ with python3 -I.
+
+$ shasum -a 256 -c results/frozen_inputs.sha256
+PREREG.md: OK
+key/key_dudout.tsv: OK
+key/rohan1594_key.tsv: OK
+transcription/repo/lomenie1595.txt: OK
+transcription/repo/duplessis1597.txt: OK
+transcription/repo/ciphertext.txt: OK
+transcription/v7v8_figures.tsv: OK
+transcription/v7v8_context.tsv: OK
+scripts/test_folded.py: OK
+
+$ shasum -a 256 <corpus>  (results/external_inputs.sha256)
+204906c76677ba3a5186e87dc4cd713015c8536d8edfe433a6b8ce6c33125574
+
+$ python3 -I scripts/test_folded.py <corpus>   (second run, to check it reproduces)
+results/test_result.json identical to the first run
+results/mechanical.txt identical to the first run
+verdict_T1 inconclusive
+verdict_T2 fits
+
+$ python3 -I scripts/scan_shift.py <corpus>
+# best coverage, c>0: c=1 0.374; best language (>=40 letters), c>0: c=1 -3.002
+
+# Round 2 checks, 2026-11-12T00:08:06Z. Scripts run from beling/ with python3 -I.
+
+$ shasum -a 256 PREREG_round2.md  (against results/prereg_round2_initial.sha256, written before any vols. 9-12 image was read)
+PREREG_round2.md: unchanged
+
+$ shasum -a 256 -c results/frozen_inputs_round2.sha256
+PREREG_round2.md: OK
+key/rohan1594_key.tsv: OK
+key/key_dudout.tsv: OK
+transcription/v9v12_figures.tsv: OK
+transcription/v9v12_context.tsv: OK
+transcription/v8_namecode.tsv: OK
+scripts/test_round2.py: OK
+scripts/find_figures.py: OK
+
+$ shasum -a 256 -c results/frozen_inputs.sha256   (round 1 inputs still unchanged)
+PREREG.md: OK
+key/key_dudout.tsv: OK
+key/rohan1594_key.tsv: OK
+transcription/repo/lomenie1595.txt: OK
+transcription/repo/duplessis1597.txt: OK
+transcription/repo/ciphertext.txt: OK
+transcription/v7v8_figures.tsv: OK
+transcription/v7v8_context.tsv: OK
+scripts/test_folded.py: OK
+
+$ shasum -a 256 <corpus>  (same as results/external_inputs.sha256)
+204906c76677ba3a5186e87dc4cd713015c8536d8edfe433a6b8ce6c33125574
+
+$ python3 -I scripts/test_round2.py <corpus>   (second run, to check it reproduces)
+results/round2_result.json identical to the first run
+results/round2_mechanical.txt identical to the first run
+verdict_T3 does not fit
+T4_inferred_values {... 'letters_scored': 65, 'lang_score_base_key': -2.6948, 'null_mean': -2.7074, 'null_best': -2.6501, 'beats': 130, 'ties_or_better_in_null': 70, 'verdict': 'not supported'}
+
+$ python3 -I scripts/explore_system.py   (run twice)
+results/explore_system.txt identical on the second run
+
+$ python3 -I scripts/find_figures.py <vol. 9-12 OCR>   (hit lines; every candidate was then checked on the images or ruled out as a date or sum)
+vol. 09: 107 lines
+vol. 10: 97 lines
+vol. 11: 137 lines
+vol. 12: 133 lines
+
+$ (cd sources/raw/.../mornay1593/round2_v9v12 && shasum -a 256 -c SHA256SUMS), same for round2_v8_namecode, round2_other
+round2_v9v12: 88 files OK
+round2_v8_namecode: 36 files OK
+round2_other: 4 files OK
+
+# PR build checks, 2026-11-12T02:09:44Z, in a worktree of dbourdeau/cyphersolver on branch mornay1593-beling, cut from origin/main 08f07fb7 (targets/mornay1593 unchanged since 4337f026), plus this folder and the NOTES.md / profile.json edits (uncommitted). Scripts run from targets/mornay1593/beling with python3 -I.
+
+$ shasum -a 256 -c results/frozen_inputs.sha256
+PREREG.md: OK
+key/key_dudout.tsv: OK
+key/rohan1594_key.tsv: OK
+transcription/repo/lomenie1595.txt: OK
+transcription/repo/duplessis1597.txt: OK
+transcription/repo/ciphertext.txt: OK
+transcription/v7v8_figures.tsv: OK
+transcription/v7v8_context.tsv: OK
+scripts/test_folded.py: OK
+(exit 0)
+
+$ shasum -a 256 -c results/frozen_inputs_round2.sha256
+PREREG_round2.md: OK
+key/rohan1594_key.tsv: OK
+key/key_dudout.tsv: OK
+transcription/v9v12_figures.tsv: OK
+transcription/v9v12_context.tsv: OK
+transcription/v8_namecode.tsv: OK
+scripts/test_round2.py: OK
+scripts/find_figures.py: OK
+(exit 0)
+
+$ shasum -a 256 <corpus>   (<corpus> = archive.org mmoiresetcorre06morn_djvu.txt, outside the repo; same as results/external_inputs.sha256)
+204906c76677ba3a5186e87dc4cd713015c8536d8edfe433a6b8ce6c33125574  <corpus>
+
+$ python3 -I scripts/test_folded.py <corpus>
+extra_folded_on_Rohan1597 {'name': 'extra_folded_on_Rohan1597', 'groups': 50, 'read': 24, 'coverage': 0.48, 'letters_scored': 37, 'lang_score': -3.6314, 'lang_null_mean': -3.9487, 'lang_null_best': -3.1159, 'lang_beats': 162, 'lang_sign': False, 'cov_null_mean': 0.3, 'cov_null_best': 0.6, 'cov_margin': -0.12, 'cov_pass': False}
+extra_rohan_on_A {'name': 'extra_rohan_on_A', 'groups': 203, 'read': 95, 'coverage': 0.468, 'letters_scored': 82, 'lang_score': -2.7225, 'lang_null_mean': -2.6278, 'lang_null_best': -2.1641, 'lang_beats': 64, 'lang_sign': False}
+extra_rohan_on_B {'name': 'extra_rohan_on_B', 'groups': 79, 'read': 28, 'coverage': 0.3544, 'letters_scored': 31, 'lang_score': -3.1448, 'lang_null_mean': -2.6303, 'lang_null_best': -2.0275, 'lang_beats': 5, 'lang_sign': False}
+verdict_T1 inconclusive
+verdict_T2 fits
+lm {'corpus_letters': 654360, 'alphabet': 24}
+
+$ python3 -I scripts/test_round2.py <corpus>
+extra_folded_on_Duplessis_1599 {'name': 'extra_folded_on_Duplessis_1599', 'groups': 30, 'read': 5, 'coverage': 0.1667, 'letters_scored': 7, 'lang_score': -2.9582, 'lang_null_mean': -3.6467, 'lang_null_best': -2.6089, 'lang_beats': 181, 'lang_sign': False}
+extra_rohan_on_Duplessis_1599 {'name': 'extra_rohan_on_Duplessis_1599', 'groups': 30, 'read': 12, 'coverage': 0.4, 'letters_scored': 24, 'lang_score': -2.1698, 'lang_null_mean': -2.6483, 'lang_null_best': -1.8545, 'lang_beats': 176, 'lang_sign': False}
+extra_rohan_on_unsigned_1612 {'name': 'extra_rohan_on_unsigned_1612', 'groups': 9, 'read': 4, 'coverage': 0.4444, 'letters_scored': 4, 'lang_score': -2.618, 'lang_null_mean': -2.576, 'lang_null_best': -1.7424, 'lang_beats': 89, 'lang_sign': False}
+verdict_T3 does not fit
+T4_inferred_values {'occurrences_in_runs': [('R20', '38')], 'lang_score_extended': -2.6951, 'letters_scored': 65, 'lang_score_base_key': -2.6948, 'null_mean': -2.7074, 'null_best': -2.6501, 'beats': 130, 'ties_or_better_in_null': 70, 'verdict': 'not supported'}
+lm {'corpus_letters': 654360, 'alphabet': 24}
+
+$ python3 -I scripts/explore_system.py
+   53 98: C2, C7
+   64 33: M14, M9
+   81 63: M8, N01, N03, N04, N05, N06, N07, N08, N09, N10, N11, N12
+
+## First figure of each passage of 2+ groups (source: figure)
+   81x13, 810x5, 40x5, 153x5, 92x3, 910x2, 77x2, 58x2, 84x1, 87x1, 410x1, 100x1, 69x1, 105x1, 109x1
+
+$ diff -r <this folder before the runs above> <this folder after>   (each script rewrote its outputs)
+identical: every output byte-identical to the committed file
+
+$ python3 docs/_check_profile.py mornay1593
+mornay1593: profile.json
+  result: valid, 0 unknown field(s)
+(exit 0)
+
+$ python3 docs/_check_writeup.py mornay1593   (differences from the same run on origin/main's NOTES.md and profile.json)
+12c12
+<          - documents without texts: Lomenie-1595-02-24, Duplessis-1597-01
+---
+>          - documents without texts: Lomenie-1595-02-24, Duplessis-1597-01, Duplessis-1597-1598, Duplessis-1599, Rohan-1599, Rohan-1611-1612, Anon-1612
+23,25d22
+<          - gap marked not-attempted: - Loménie 1595 (95 groups) and Duplessis Jan 1597 (90 groups): transcribed, a different sy
+<          - gap marked not-attempted: - Later 1597 letters in vol. 7 (pp. ~169, 305, 335, 347) and vol. 8 (1598) - blocker: not-
+<          - escalation step "siblings" not done (neighbouring and sibling DECODE records, and leaves next to the cipher in the volume, opened)
+35c32
+<   [warn] docs/atlas.json maps the letters of mornay1593 (4 documents have a route): give each document "places": {"from", "to"} with gazetteer names (tools/atlas_places.py) and rebuild
+---
+>   [warn] docs/atlas.json maps the letters of mornay1593 (10 documents have a route): give each document "places": {"from", "to"} with gazetteer names (tools/atlas_places.py) and rebuild
+
+$ python3 docs/_check_reading.py mornay1593
+not a reading  0.0  0/2 sentences  holes 0.44  en reading  tr=n  reading_dudout.txt
+not a reading  0.0  0/2 sentences  holes 0.44  en reading  tr=n  reading_dudout.txt
+not a reading  0.045  1/22 sentences  holes 0.462  de reading  tr=n  beling/results/mechanical.txt  [not prose]
+not a reading  0.278  5/18 sentences  holes 0.307  fr decode  tr=n  beling/results/rohan1597_reading.md  [not prose]
+target: clean share 0.0, worst DuMaurier-1593-06 0.0, shapes {'reading': 2}, translated 0/2
