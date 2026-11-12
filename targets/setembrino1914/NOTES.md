@@ -7,7 +7,7 @@ file (1440 letters); it is kept here once, labelled his, and the status he propo
 
 Reserves: (a) the formal pre-registered test of MFTDBSJV FAILED: S = 0.733 against the 0.85 criterion, because the pre-registered
 lexicon was too small; the 0.865 comes from amendment A1, a larger lexicon chosen after that result, which is a changed rule and not a pass;
-the controls stay below 0.13 either way, and the key is credible on other evidence (the pencil decipherment on the sheet agrees at every key position; the held-out telegrams read as
+the controls stay below 0.13 either way, and the key is credible on other evidence (the pencil decipherment on the sheet agrees at every key position except one conflict at a letter already marked doubtful; the held-out telegrams read as
 continuous Portuguese). (b) 10 March (LETCARIV, 82.8% of letters) and 20 May (OVHXZIRF, 95.1% of letters, 15 restored) are provisional: their keys are not validated.
 (c) Two groups remain unread: MRELDTKRIMV (pagfis 1326) and SUQHSJU (pagfis 1328). The order of events (hashes frozen before the trials, single commits) is by the contributor's record.
 

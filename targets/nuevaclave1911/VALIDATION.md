@@ -15,7 +15,7 @@ Cause: the held-out telegram has 127 letters instead of 128; one letter is lost 
 A post-hoc trial with the model's own rule for a short group (written before the measure, but kept out of the key it submitted) gives a readable second block. It was run after the measure and is **not counted**; the held-out telegram is spent.
 
 ## What supports the grille instead (not a preregistered validation)
-- Five blocks of 64 letters read as fluent Spanish with no repair at all: both blocks of 1551.3-4, the first block of 1561.5-13, the first two of 1569.3-10 (`decryption_grille.txt`), with one grille unchanged across three telegrams, two days and both directions.
+- Five blocks of 64 letters read as fluent Spanish with no repair at all: both blocks of 1551.3-4, the first block of 1561.5-13, the first two of 1569.3-10 (`decryption_grille.txt`), with one grille unchanged across three telegrams, 18 to 20 April and both directions.
 - The nulls fall where a grille puts them: the 17 X/Z of the second block of 1551.3-4 cover the 16 rotation orbits (in the model's own simulation, 17 random cells do so 15 times in 200,000; not rerun by us); 1569.3-10 ends with xxxzzz and the run a b c d e f g h i j.
 - On the held-out telegram, the first block, the only part not shifted by the lost letter, came out as Spanish, while 200 random grilles score at most 0.402 on the whole text.
 - Two repairs are needed, both declared and both chosen while looking at the text: one letter deleted in 1561.5-13 (129 letters), one restored in 1569.3-10 (191 letters).
