@@ -1,0 +1,46 @@
+quemnovit1627: the arithmetic of every figure on issue #450 and in this folder. Each line is printed by a script here
+(stdlib Python, run as python3 -I); outputs in checks/ and alignment/. Strict = S/(S+E+N).
+
+A. THE READ-SHARE STATEMENT (corrected; replaces 90.29% as the headline)
+   Adjudicated transcription: every sign of reader 1's 103 cipher units takes the value at least two of the three
+   readers give (rule and files frozen 13:17:09 UTC 12 Nov 2026, transcriptions/ADJUDICATION_FROZEN.md5), decoded ONCE
+   (13:17:19 UTC) with key_B.txt, labelled by the frozen rule (transcriptions/adjudication_rule.md).
+     S 70 + E 21 + N 12 = 103                              strict 70/103 = 67.96%     scripts/decode_adjudicated.py
+   Not read, by cause (scripts/holes.py): g/q class 13 + reader 1's emendations 7 + pi/Z/n class 4 + c/e class 3
+     + code numbers 3 + other single signs 3 = 33;  70 + 33 = 103.
+   Stricter variant, all three readers must agree on every sign of the unit:
+     S 47 + E 6 + N 50 = 103                               strict 47/103 = 45.63%
+
+B. THE THREE READERS (their own labels; reported beside A, never replaced by it)       scripts/counts.py
+   reader 1 (b97, the breaker)  S 93 + E 10 + N 0  = 103   93/103 = 90.29%   FILED, WITHDRAWN as the headline
+                                lines 01-10 30/35 = 85.71%; lines 11-19 63/68 = 92.65%
+                                held-out (key signs seen in 01-10 only): 65 of 66 cipher words of 11-19 decode in full;
+                                63/68 = 92.65% (not a blind forecast: the key was not fitted on 01-10 alone)
+   reader 2 (b129, blind)       S 62 + E 33 + N 9  = 104   62/104 = 59.62%   S+E 95/104 = 91.35%
+                                13 E units differ from reader 1 only by the q/g or pi/Z class: (62 + 13)/104 = 75/104
+                                = 72.12% if counted S (arithmetic only)
+   reader 3 (b137, blind)       S 49 + E 38 + N 23 = 110   49/110 = 44.55%   (9 code units in E)
+   Unit totals differ (103, 104, 110) because each reader divided units and treated the clear abbreviations H., E., W.
+   in their own way; A uses reader 1's division.
+
+C. SIGN AGREEMENT                                                                         scripts/align.py
+   reader 2 vs 1 (b129 method)            511/565 = 90.44%;  q/g and pi/Z/n collapsed 530/565 = 93.81%
+   reader 3 vs 1 (b137 method)            497/564 = 88.12% of reader 3 (497/557 = 89.23% of reader 1);
+                                          look-alikes collapsed 539/564 = 95.57%
+   reader 3 vs 2 (b137 method)            484/564 = 85.82% (484/563 = 85.97%); collapsed 550/564 = 97.52%
+   three-way, reader-1 frame, KEY_B labels (L=l, S=h merged as value-identical), 557 reader-1 signs:
+     R1=R2 521 (93.54%); R1=R3 503 (90.31%); R2=R3 510 (91.56%); all three 495 (88.87%); at least two 544 (97.67%)
+
+D. SHUFFLED-KEY CONTROL (German character 4-grams, 4 Gutenberg texts each asserted 'Language: German', 550,863
+   characters; 5,000 keys made by shuffling the key's values over its 23 signs)            scripts/shuffle_control.py
+                  true      seed 20261112            seed 7
+   reader 1     -2.0134    0/5000 (best -3.6069)    0/5000 (best -3.6904)
+   reader 2     -2.4816    0/5000 (best -3.6536)    0/5000 (best -3.7004)
+   reader 3     -2.6172    0/5000 (best -3.6773)    0/5000 (best -3.6829)
+   adjudicated  -2.3496    0/5000 (best -3.6296)    0/5000 (best -3.6928)
+   b97 dec_B.py rerun on the copies here (seed 20261112): output byte-identical to the stamped decode_B.out, including
+   random-value keys 0/5000 (best -3.4160).                                                checks/dec_B_rerun.out
+
+E. KEY
+   23 signs with a value for 21 plain letters; 1 sign (n, 1 occurrence) without. 24 sign labels, 557 sign tokens in
+   reader 1's cipher words. key_B.txt md5 224da5d5d7fea3c20ef63e1efe655b2e, sha256 fd3b7b4a... = stamped manifest line.

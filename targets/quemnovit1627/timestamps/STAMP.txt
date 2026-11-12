@@ -1,0 +1,8 @@
+LABEL: schultetus_2541
+Local UTC: 20261112T022509Z
+Files: 21
+Manifest SHA-256: fbce8c883a4ea11e7f5dafbaebdf7f47c9e31ac2bc51108fad5f20235b7e1353
+RFC3161 TSA (Sectigo Public Time Stamping Signer): status=Granted. time=Nov 12 02:25:10 2026 GMT
+OpenTimestamps: submitted (pending Bitcoin; ots upgrade later)
+Verify RFC3161: openssl ts -reply -in MANIFEST.sha256.tsr -text ; openssl ts -verify -data MANIFEST.sha256 -in MANIFEST.sha256.tsr -CAfile <Sectigo chain>
+Verify OTS: ots verify MANIFEST.sha256.ots
