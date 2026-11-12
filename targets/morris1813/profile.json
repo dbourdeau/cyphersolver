@@ -33,6 +33,181 @@
     "image_quality": "good",
     "notes": "26 written lines. 554 groups (552 numbers 1-1600, one group 5127 out of range, one group cut by the frame edge), counted by decode.py (groups joined by dots are counted one by one; python docs/_check_profile.py --measure counts words, not groups). Lines 1-6 and 10-12 read in a first pass, the rest in a second. A second agent re-read 144 groups blind (lines 3, 7, 9, 13, 18, 24 in full, parts of 12 and 17): 140 agree. Its three clear corrections (L9 721 for 724, L9 13 for 131, L24 608 for 108) are applied; L24 518 may be 548. About 74% of the groups were read once only."
    }
+  },
+  {
+   "id": "1814-09-20_No18",
+   "read": "read",
+   "shelfmark": "NARA RG 59, Despatches from US Ministers to Spain vol. 12, microfilm M31 roll 14 (naId 188606645), frames 0112-0113 ('No 18 Duplicate', the base text), 0117-0118 (Triplicate) and 0129 (a copy headed 'No 19'; its continuation on 0130 is too dark); catalogue 650",
+   "date": "20 September 1814",
+   "year": 1814,
+   "country": "United States",
+   "route": "Anthony Morris, Seville -> James Monroe, Secretary of State, Washington",
+   "places": {
+    "from": "Seville",
+    "to": "Washington"
+   },
+   "language": "English",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "partial": true,
+    "source": "No contemporary decipherment on the copies. Woolfley, A Quaker Goes to Spain (2013), Ebook Central pp. 98-99, quotes three coded passages (the arrests; the king and 'those two classes'; the understanding between the Spanish and English cabinets) and paraphrases the Inquisition passage; found after the reading. Differences from the decode: 'those' for 'these', 'sufficient' for 'sufficiently good', 'on this ...' for 'on these or any other subjects'."
+   },
+   "length": {
+    "tokens": 486,
+    "distinct": 263,
+    "unit": "code groups",
+    "measured": true,
+    "file": "beling/letters/1814-09-20_No18/transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA M31 roll 14 frames 0112-0113; Triplicate 0117-0118 collated in full, 0129 at the disputed places (collation_other_copies.txt)",
+    "image_quality": "good",
+    "notes": "Transcribed 11 Nov 2026 from full-resolution crops before decoding, with no key open; the hashes were frozen before decoding (beling/SHA256SUMS.txt). One reader. Groups counted by beling/scripts/read_share.py (heading, body and signature; groups joined by dots counted one by one)."
+   }
+  },
+  {
+   "id": "1814-10-27_No19",
+   "read": "read",
+   "shelfmark": "NARA RG 59, Despatches from US Ministers to Spain vol. 12, microfilm M31 roll 14 (naId 188606645), frames 0137 (page 1, in clear; filmed again on 0138, copies on 0146 and 0148) and 0139 (the coded passage, which catalogue 650 groups with No. 18), with copies of the coded passage on 0147 and 0149",
+   "date": "27 October 1814",
+   "year": 1814,
+   "country": "United States",
+   "route": "Anthony Morris, Madrid -> James Monroe, Secretary of State, Washington",
+   "places": {
+    "from": "Madrid",
+    "to": "Washington"
+   },
+   "language": "English",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "partial": true,
+    "source": "No contemporary decipherment on the copies. Woolfley (2013), Ebook Central p. 100, quotes the sentence on the duke's reception word for word as decoded (his note 74); found after the reading."
+   },
+   "length": {
+    "tokens": 156,
+    "distinct": 106,
+    "unit": "code groups",
+    "measured": true,
+    "file": "beling/letters/1814-10-27_No19/transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA M31 roll 14 frames 0139, 0147 and 0149, collated",
+    "image_quality": "good",
+    "notes": "Transcribed 11 Nov 2026 from full-resolution crops before decoding, with no key open; the hashes were frozen before decoding (beling/SHA256SUMS.txt). One reader. Groups counted by beling/scripts/read_share.py (heading, body and signature; groups joined by dots counted one by one)."
+   }
+  },
+  {
+   "id": "1814-12-30_No24",
+   "read": "read",
+   "shelfmark": "NARA RG 59, Despatches from US Ministers to Spain vol. 12, microfilm M31 roll 14 (naId 188606645), frame 0220 (top, base text), with copies on 0205 and 0196 (the last with a clerk's interlinear decipherment); catalogue 650",
+   "date": "30 December 1814",
+   "year": 1814,
+   "country": "United States",
+   "route": "Anthony Morris, Madrid -> James Monroe, Secretary of State, Washington",
+   "places": {
+    "from": "Madrid",
+    "to": "Washington"
+   },
+   "language": "English",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "printed edition"
+    ],
+    "partial": true,
+    "source": "A clerk's decipherment between the lines of the copy on frame 0196 (very dark film; beling/letters/1814-12-30_No24/clerk_decipherment_0196.txt, with the words not made out left out). It was not read before transcribing, but the frame was seen at low resolution while frames were identified and a few words were glimpsed; the clerk's text was read after decoding. Woolfley (2013), Ebook Central p. 106, quotes the Council of State sentence word for word as decoded (with 'United States' and 'relative', marked inferred in our reading) and summarizes the rest; found after the reading."
+   },
+   "length": {
+    "tokens": 205,
+    "distinct": 136,
+    "unit": "code groups",
+    "measured": true,
+    "file": "beling/letters/1814-12-30_No24/transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA M31 roll 14 frame 0220, with the copy on 0205 for the gutter and variants",
+    "image_quality": "good",
+    "notes": "Transcribed 11 Nov 2026 from full-resolution crops before decoding, with no key open; the hashes were frozen before decoding (beling/SHA256SUMS.txt). One reader. Groups counted by beling/scripts/read_share.py (heading, body and signature; groups joined by dots counted one by one)."
+   }
+  },
+  {
+   "id": "1815-01-06_No25",
+   "read": "read",
+   "shelfmark": "NARA RG 59, Despatches from US Ministers to Spain vol. 12, microfilm M31 roll 14 (naId 188606645), frames 0220 (foot) and 0221 (top), headed 'No 25 Duplicate'; another copy on 0174 deciphered by a clerk",
+   "date": "6 January 1815",
+   "year": 1815,
+   "country": "United States",
+   "route": "Anthony Morris, Madrid -> James Monroe, Secretary of State, Washington",
+   "places": {
+    "from": "Madrid",
+    "to": "Washington"
+   },
+   "language": "English",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "partial": false,
+    "source": "The copy on frame 0174 is deciphered in full by a clerk (beling/letters/1815-01-06_No25/clerk_decipherment_0174.txt). It was viewed before the numerals on 0220-0221 were transcribed. The coded sentences were not found in Woolfley (2013) (full-text search, Ebook Central)."
+   },
+   "length": {
+    "tokens": 98,
+    "distinct": 69,
+    "unit": "code groups",
+    "measured": true,
+    "file": "beling/letters/1815-01-06_No25/transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA M31 roll 14 frames 0220-0221",
+    "image_quality": "good",
+    "notes": "Transcribed 11 Nov 2026 from full-resolution crops before decoding, with no key open; the hashes were frozen before decoding (beling/SHA256SUMS.txt). One reader. Groups counted by beling/scripts/read_share.py (heading, body and signature; groups joined by dots counted one by one). Not blind: the clerk's decipherment on 0174 had been viewed before transcribing; the digits were read from 0220-0221 only, and none was changed for sense."
+   }
+  },
+  {
+   "id": "1815-05-12_No28",
+   "read": "read",
+   "shelfmark": "NARA RG 59, Despatches from US Ministers to Spain vol. 12, microfilm M31 roll 14 (naId 188606645), frames 0209 ('No 28 Duplicate', the base text) and 0210 (Triplicate); catalogue 650",
+   "date": "12 May 1815",
+   "year": 1815,
+   "country": "United States",
+   "route": "Anthony Morris, Madrid -> James Monroe, Secretary of State, Washington",
+   "places": {
+    "from": "Madrid",
+    "to": "Washington"
+   },
+   "language": "English",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No contemporary decipherment on either copy. Not found in Woolfley (2013) (full-text search, Ebook Central)."
+   },
+   "length": {
+    "tokens": 90,
+    "distinct": 69,
+    "unit": "code groups",
+    "measured": true,
+    "file": "beling/letters/1815-05-12_No28/transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA M31 roll 14 frames 0209 and 0210, collated",
+    "image_quality": "good",
+    "notes": "Transcribed 11 Nov 2026 from full-resolution crops before decoding, with no key open; the hashes were frozen before decoding (beling/SHA256SUMS.txt). One reader. Groups counted by beling/scripts/read_share.py (heading, body and signature; groups joined by dots counted one by one)."
+   }
   }
  ],
  "system": {
@@ -58,9 +233,9 @@
  },
  "conditions": {
   "prior_solution": {
-   "exists": "no",
-   "where": "None found: the catalogue calls the code unidentified; no decipherment on the frame; one web search found no printed decipherment. Not checked: W. R. Manning, Diplomatic Correspondence of the United States concerning the Independence of the Latin-American Nations (1925) vol. 3, part XIII 'Communications from Spain', which may print the despatch in clear if the Department deciphered it; C. Woolfley, A Quaker Goes to Spain (2012/13), and the Anthony Morris family papers at the Historical Society of Pennsylvania, which may hold Morris's drafts in clear.",
-   "found": "not found",
+   "exists": "partial",
+   "where": "No contemporary decipherment on frame 0039. H. L. Dufour Woolfley, A Quaker Goes to Spain (2013), quotes the coded passages of 4 and 11 April 1814 (Ebook Central p. 78; PR #200) and, by full-text search on 11 Nov 2026, parts of Nos. 18, 19 and 24 (Ebook Central pp. 98-99, 100 and 106); all found after the readings. The clerks' decipherments of Nos. 24 and 25 are on other copies (M31 roll 14 frames 0196 and 0174). W. R. Manning, Diplomatic Correspondence ... Latin-American Nations (1925) vol. 3 searched: none of these passages found. Not checked: American State Papers, Foreign Relations; Papers of James Monroe vol. 7; the Anthony Morris Family Papers at the Historical Society of Pennsylvania (2018-A), which may hold Morris's drafts in clear.",
+   "found": "after reading",
    "used": false
   },
   "inputs": ["images", "sibling key", "cleartext context"],
@@ -84,7 +259,12 @@
   {"date": "2026-10-27", "kind": "verification", "what": "WAINUT contribution: a second agent re-read 144 groups blind from the image (140 agree) and re-applied the method with its own code. The three clear misreadings it found (L9 724 -> 721 dem, L9 131 -> 13 ad, L24 108 -> 608 or) each turn a broken syllable into the expected one (democratic, administration, ambassador). It corrected overstated counts of the first round: 76.285 'of the' 15x (not 25x); 'territory' and 'insurrection' 2x each as identical group strings (not 3x).", "result": "worked"},
   {"date": "2026-10-27", "kind": "control", "technique": ["statistical test", "exhaustive search"], "what": "WAINUT contribution: decode.py --controls on the 552 groups: block_map.tsv coverage 0.917, function words 0.353; identity 0.630 / 0.058; 20,000 random orders of the 16 blocks: function words median 0.062, 99.9th percentile 0.250, max 0.297. Per block, against word bigrams of Ford, Writings of JQA vols 3-4, the block_map.tsv block ranks first (one tie) for 15 of 16 Morris blocks; Morris 1501-1600 ranks second (3 bigrams against 4) and is kept from the pattern and from context (should, United States, Minister).", "result": "worked"},
   {"date": "2026-10-27", "kind": "reading", "technique": ["contextual inference", "manual reconstruction"], "what": "WAINUT contribution: frame 0039 written out as sentences (morris1813_reading.md): 506 of 554 groups have a table value; read_share 0.678 (research/reading_audit/v2_score.py hole rate 0.322); 670 read [?Floridas] from context at all five occurrences; names Jefferson, Madison, Baton Rouge from the table syllables.", "result": "partial"},
-  {"date": "2026-10-27", "kind": "literature search", "what": "WAINUT contribution: one web search and two by the verifier found no printed decipherment and no record of the code with reversed blocks. Manning (1925) vol. 3, Woolfley and the HSP Morris papers not checked.", "result": "partial"}
+  {"date": "2026-10-27", "kind": "literature search", "what": "WAINUT contribution: one web search and two by the verifier found no printed decipherment and no record of the code with reversed blocks. Manning (1925) vol. 3, Woolfley and the HSP Morris papers not checked.", "result": "partial"},
+  {"date": "2026-11-11", "kind": "access", "what": "Andrew Beling, with AI agents: 68 frames of M31 roll 14 fetched around the coded frames catalogue 650 left open; the copies identified as Nos. 18, 19, 24, 25 and 28 (frame 0139 is the coded part of No. 19, not of No. 18); a wholly coded document on 0115-0116 and three coded lines on 0111 found and not read.", "result": "worked"},
+  {"date": "2026-11-11", "kind": "transcription", "what": "Andrew Beling, with AI agents: numerals of the five letters (1,035 groups) transcribed from full-resolution crops before decoding, with no key open, and their hashes frozen; copies collated where they exist. The No. 25 numerals were transcribed after the clerk's decipherment of another copy (frame 0174) had been seen.", "result": "worked"},
+  {"date": "2026-11-11", "kind": "reading", "technique": ["key matching", "contextual inference"], "what": "Andrew Beling, with AI agents: decoded with beling/key/codebook_M97_13_transcription.csv under the block reversal (beling/scripts/decode650.py) and written out as sentences with the mark rules of PR #200. Read share over coded groups: No. 18 0.981, No. 19 0.955, No. 24 0.980, No. 25 1.000, No. 28 1.000 (beling/scripts/read_share.py). Context readings: 145 = relative, 131 = re, 1569 = United States; 593.813, 575.1060 and [370] unread.", "result": "worked"},
+  {"date": "2026-11-11", "kind": "control", "technique": ["statistical test"], "what": "Andrew Beling, with AI agents: key-only decode against clerks' decipherments on other copies (share of the clerk's letters matched in order; 200 shuffled keys, seed 650; beling/scripts/score_interlinear.py): No. 24 vs frame 0196 0.904 (shuffled best 0.342, median 0.215); No. 25 vs frame 0174 0.945 (best 0.343, median 0.201). Neither is blind: 0196 was glimpsed at low resolution before transcribing and its dark text read after decoding; 0174 was seen before transcribing.", "result": "worked"},
+  {"date": "2026-11-11", "kind": "literature search", "what": "Andrew Beling, with AI agents: Woolfley (2013) searched for the five letters, first by Google Books snippets, then in full text on Ebook Central: coded passages of Nos. 18, 19 and 24 are quoted (Ebook Central pp. 98-100, 106), agreeing with the decode apart from three word differences in No. 18; Nos. 25 and 28 not found. Manning vol. 3 and two web searches found nothing. American State Papers and Papers of James Monroe vol. 7 not checked.", "result": "partial"}
  ],
  "outcome": {
   "class": "read in part",
@@ -98,10 +278,11 @@
   "parts": [
    {"label": "Code identification: the JQA table with Morris's sixteen blocks of 100 in reverse order (block_map.tsv)", "method": "read after matching with key from external sources", "extent": "complete", "basis": "decode.py --controls: function-word share 0.353 under block_map.tsv against a maximum of 0.297 over 20,000 random block orders; Ford bigrams put the block_map.tsv block first for 15 of 16 Morris blocks; confirmed with independent code by the maintainer's review (0.348 / max 0.288)"},
    {"label": "Text of frame 0039 (554 groups)", "method": "read after matching with key from external sources", "extent": "partial", "basis": "morris1813_reading.md: 0.965 of the words read as sense, with non-blind rereads and clear copies; beling/frame39/frame0039_rereads.md"},
-   {"label": "Text of the other coded frames (0036-0038, 0050, 0052-0057, 0124-0125, 0191-0192; about 2,500 groups)", "method": "read after matching with key from external sources", "extent": "none", "basis": "not transcribed (gap not-attempted)"}
+   {"label": "Text of catalogue 650 letters Nos. 18, 19, 24, 25 and 28 (20 Sep 1814 - 12 May 1815; 1,035 groups)", "method": "read after matching with key from external sources", "extent": "partial", "basis": "beling/letters/: read share over coded groups 0.955-1.000 per letter (beling/scripts/read_share.py); one reader; reading review pending; key-only decode against clerks' decipherments on other copies 0.904 (No. 24) and 0.945 (No. 25), shuffled keys at most 0.343"},
+   {"label": "Text of the coded frames still open (0036-0038 and 0050-0057, copies of the 4 Jan 1814 letter and proposal with clear copies; 0111; 0115-0116)", "method": "read after matching with key from external sources", "extent": "none", "basis": "not transcribed (gap not-attempted); 0124-0125 and 0191-0192, first listed here, are the letter of 24 March 1815 (beling/letters/1815-03-24/, PR #200)"}
   ],
   "codes_open": {"open": 36, "total": 288, "tokens_open": 48},
-  "verification": ["independent verification", "matched control", "historical consistency"],
+  "verification": ["independent verification", "matched control", "historical consistency", "contemporary decipherment"],
   "provenance": "contributed",
   "credits": [
    {"who": "lccompany", "role": "solution", "note": "PR: catalogue 650 (Anthony Morris 1813-15): code identified as the State Department code of targets/jqa with its sixteen blocks in reverse order; frame 0039 read in part", "date": "2026-10-27"},
@@ -112,12 +293,20 @@
    {"who": "ajbeling", "role": "solution", "note": "PR #200: five more letters read in part (4 and 11 Apr, 11 May 1814; 27 Jan 1815, No. 26; 24 Mar 1815)", "date": "2026-11-01", "source": "https://github.com/dbourdeau/cyphersolver/pull/200"},
    {"who": "ajbeling", "role": "transcription", "note": "PR #200: working transcription of a surviving State Department copy of the code (NARA M97 roll 13 frames 1056-1057; printed by Weber as WE028; not Morris's own copy), used as the key under the block reversal in beling/; numerals of the five letters, two readers on the first four", "date": "2026-11-01", "source": "https://github.com/dbourdeau/cyphersolver/pull/200"},
    {"who": "ajbeling", "role": "identification", "note": "PR #200: frame 0039 dated to 4 Jan 1814 and read with its clear copies", "date": "2026-11-01"}
+,
+   {"who": "ajbeling", "role": "solution", "note": "Catalogue 650 letters Nos. 18, 19, 24, 25 and 28 (20 Sep 1814 - 12 May 1815) read with the WE028 key under the block reversal", "date": "2026-11-11"},
+   {"who": "ajbeling", "role": "transcription", "note": "Numerals of Nos. 18, 19, 24, 25 and 28 (1,035 groups, M31 roll 14), one reader, with collations of the copies", "date": "2026-11-11"},
+   {"who": "ajbeling", "role": "identification", "note": "Frame 0139 identified as the coded part of No. 19 (27 Oct 1814), not of No. 18", "date": "2026-11-11"},
+   {"who": "contemporary", "role": "prior solution", "note": "the State Department clerks' decipherments of No. 24 (frame 0196, between the lines) and No. 25 (frame 0174), on other copies; compared with the key-only decode", "date": "1815"}
   ],
   "gaps": [
-   {"item": "frames 0036-0038, 0050, 0052-0057, 0124-0125 and 0191-0192 (about 2,500 groups)", "blocker": "not-attempted", "detail": "not transcribed; 0191-0192 are two copies of one despatch and would check readings and transcription"},
+   {"item": "frames 0036-0038 and 0050-0057", "blocker": "not-attempted", "detail": "further copies of the 4 Jan 1814 letter and its proposal, which have clear copies; numerals not in the repository (working numerals for 0050 and 0052-0057 still have misreads; 0051 not transcribed). 0124-0125 and 0191-0192, first listed here, are the 24 March 1815 letter (beling/letters/1815-03-24/)"},
+   {"item": "frames 0115-0116 (a wholly coded document; deciphered copies on 0169-0170 and 0201) and three coded lines on 0111", "blocker": "not-attempted", "detail": "not transcribed or read"},
+   {"item": "catalogue 650 letters Nos. 18, 19, 24, 25 and 28: [370] after full stops; 593.813 (No. 24) and 575.1060 (No. 19) unread; 1457, 1040, 572.1101, 1150 misfit and read from context; 1569 both December and United States", "blocker": "open-codes", "detail": "one reader only; reading review pending"},
    {"item": "36 distinct groups (48 tokens) on frame 0039 with no table value, e.g. 670 (5x, [?Floridas]), 904, 1149, 1311, 163, the figure groups 655, 657 and 659", "blocker": "open-codes", "detail": "open slots in ../jqa/code_table.tsv; more Morris text would test them"},
    {"item": "digit rereads on frame 0039 made with the clear text in view", "blocker": "not-attempted", "detail": "a blind reread is still open"},
-   {"item": "Anthony Morris Family Papers, HSP Collection 2018-A: copybook of letters 1813-1816", "blocker": "needs-physical-access", "detail": "may hold clear copies; not seen"}
+   {"item": "Anthony Morris Family Papers, HSP Collection 2018-A: copybook of letters 1813-1816", "blocker": "needs-physical-access", "detail": "may hold clear copies; not seen"},
+   {"item": "print not checked for the catalogue 650 letters: American State Papers, Foreign Relations; Papers of James Monroe vol. 7", "blocker": "not-attempted", "detail": "Woolfley searched in full text (Ebook Central) on 11 Nov 2026: parts of Nos. 18, 19 and 24 quoted"}
   ],
   "texts": [
    {
@@ -131,9 +320,69 @@
     "read_share": 0.965,
     "reading_review": {"grade": "A", "by": "Andrew Beling", "date": "2026-10-31", "note": "Read as sentences: coherent with scattered holes. The page starts and ends mid-sentence, and the digit rereads behind it were made by agents with the clear text in view (beling/frame39/frame0039_rereads.md)."},
     "summary": "The end of Morris's cover letter of 4 January 1814, signed in code: the US should keep a force near Florida against the British, and a change in the Regency would help them. Then the start of the proposal he enclosed, whose allegations are its author's: that Jefferson and Madison worked to separate Spain's American colonies, instigated the West Florida insurrection, seized Baton Rouge and encouraged the revolutionaries of Caracas."
+   },
+   {
+    "doc": "1814-09-20_No18",
+    "label": "No. 18, Seville, 20 September 1814, M31 roll 14 frames 0112-0113 (copies 0117-0118, 0129), catalogue 650",
+    "transcription": [
+     "beling/letters/1814-09-20_No18/transcription.txt",
+     "beling/letters/1814-09-20_No18/collation_other_copies.txt"
+    ],
+    "decryption": "beling/letters/1814-09-20_No18/line_by_line_decode.txt",
+    "reading": "beling/letters/1814-09-20_No18/reading.txt",
+    "language": "en",
+    "state": "read",
+    "read_share": 0.981,
+    "summary": "The Inquisition restored in July against the wishes of all the ministers, through the king's confessor and the papal nuncio; the Cortes' decrees on the tobacco and other monopolies repealed; arrests, discontent and disturbances at Cadiz; benevolences and forced loans; the king in the arms of the nobility and clergy; no change on Florida and Louisiana; Casa Yrujo reported as the next secretary of state."
+   },
+   {
+    "doc": "1814-10-27_No19",
+    "label": "No. 19, Madrid, 27 October 1814, M31 roll 14 frame 0139 (copies 0147, 0149; page 1 in clear on 0137), catalogue 650",
+    "transcription": "beling/letters/1814-10-27_No19/transcription.txt",
+    "decryption": "beling/letters/1814-10-27_No19/line_by_line_decode.txt",
+    "reading": "beling/letters/1814-10-27_No19/reading.txt",
+    "language": "en",
+    "state": "read",
+    "read_share": 0.955,
+    "summary": "After calling on the Duke de San Carlos on the 13th (page 1, in clear), Morris reports in code that the duke received him without cordiality and has not answered, and that the press and the post office are guarded against anything unfavourable to the government or to Britain and against foreign papers."
+   },
+   {
+    "doc": "1814-12-30_No24",
+    "label": "No. 24, Madrid, 30 December 1814, M31 roll 14 frame 0220 (copies 0205, 0196), catalogue 650",
+    "transcription": "beling/letters/1814-12-30_No24/transcription.txt",
+    "decryption": "beling/letters/1814-12-30_No24/line_by_line_decode.txt",
+    "reading": "beling/letters/1814-12-30_No24/reading.txt",
+    "contemporary": "beling/letters/1814-12-30_No24/clerk_decipherment_0196.txt",
+    "language": "en",
+    "state": "read",
+    "read_share": 0.98,
+    "summary": "From a source he trusts: the Council of State is preparing a report to the king recommending a declaration of war on the United States over Louisiana and Florida; 47,000 soldiers and 5,000 officers back from France, at least 160,000 under arms, and two expeditions of ten thousand fitting out at Cadiz for Mexico and Buenos Aires, to sail early in January."
+   },
+   {
+    "doc": "1815-01-06_No25",
+    "label": "No. 25, Madrid, 6 January 1815, M31 roll 14 frames 0220-0221 (copy 0174), catalogue 650",
+    "transcription": "beling/letters/1815-01-06_No25/transcription.txt",
+    "decryption": "beling/letters/1815-01-06_No25/line_by_line_decode.txt",
+    "reading": "beling/letters/1815-01-06_No25/reading.txt",
+    "contemporary": "beling/letters/1815-01-06_No25/clerk_decipherment_0174.txt",
+    "language": "en",
+    "state": "read",
+    "read_share": 1.0,
+    "summary": "Forwarding Erving's news of the peace (in clear), Morris writes in code that the news, received with great surprise, may change the intended measures of his last letter, that new powers are to be sent to Onis, and that on Erving's instructions he has had no communication with the authorities on it."
+   },
+   {
+    "doc": "1815-05-12_No28",
+    "label": "No. 28, Madrid, 12 May 1815, M31 roll 14 frames 0209-0210, catalogue 650",
+    "transcription": "beling/letters/1815-05-12_No28/transcription.txt",
+    "decryption": "beling/letters/1815-05-12_No28/line_by_line_decode.txt",
+    "reading": "beling/letters/1815-05-12_No28/reading.txt",
+    "language": "en",
+    "state": "read",
+    "read_share": 1.0,
+    "summary": "Things stand as on 24 March; with no communication with the government since Erving's letters he has had no talks with the secretary of state, but the result at New Orleans must have changed the court's views."
    }
   ],
-  "key_file": ["../jqa/code_table.tsv", "block_map.tsv"],
-  "notes": "Contributed by WAINUT (catalogue 650, PR #114) and Andrew Beling, with AI agents (PR #200). Same code as ../jqa (a one-line pointer added to ../jqa/NOTES.md; the table there is not changed); Morris's block order is in block_map.tsv. Only frame 0039 of the despatches is worked: fraction_read is over the whole catalogue item, read_share on texts is over frame 0039. The 364 = full stop argument rests on PR #107 (Ellis 1839), so #107 merges first."
+  "key_file": ["../jqa/code_table.tsv", "block_map.tsv", "beling/key/codebook_M97_13_transcription.csv"],
+  "notes": "Contributed by WAINUT (catalogue 650, PR #114) and Andrew Beling, with AI agents (PR #200). Same code as ../jqa (a one-line pointer added to ../jqa/NOTES.md; the table there is not changed); Morris's block order is in block_map.tsv. fraction_read is over the whole catalogue item and has not been recomputed for the letters added on 11 Nov 2026. read_share on the frame 0039 text is Andrew Beling's word count (PR #200); on the five catalogue 650 letters (Nos. 18, 19, 24, 25, 28; Andrew Beling, with AI agents, 11 Nov 2026) it is the share of coded groups read, from beling/scripts/read_share.py, not a v2_score.py figure. Their reading_review is pending. The five PR #200 letters are in beling/letters/ but not yet in documents or texts. The 364 = full stop argument rests on PR #107 (Ellis 1839), so #107 merges first."
  }
 }
