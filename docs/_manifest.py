@@ -1535,6 +1535,12 @@ PAGES = [
          blurb='Ten coded telegrams of Venustiano Carranza&rsquo;s headquarters to generals and buying agents, listed as open with no content on the CEHM cards: orders on ammunition, money and rifles, which the contributor places in the war against Villa. Six use number keys that run four times through the alphabet from varying start letters, four use swapped letter pairs; Prabal Gupta reports finding the keys from the ciphertext alone. The key family may already be in print.',
          quote='&ldquo;Hoy salen de Nueva York doscientos mil cartuchos siete mm&rdquo;',
          rights='Telegrams: CEHM-Carso, Fondo CDLXXX 1.17.1 to 1.42.1; keys and reading by Prabal Gupta (CC BY 4.0)'),
+    dict(slug='mauborgne1915', footer_date='November 2026', label='Mauborgne challenge cipher 1915', year='1915', y=1915.8, place='Manila &rarr; Army Signal School, Fort Leavenworth', st='partial', stt='key from the ciphertext',
+         title='J. O. Mauborgne&rsquo;s 1915 challenge cipher, Manila, 21 October 1915',
+         blurb='A 499-letter challenge cipher that a lieutenant sent from Manila to the Army Signal School, never solved in print and with its sealed answers lost. Jacob Houtrouw and an AI model found, by his record, a running key of odd shifts taken from the Engineer Field Manual, and a plaintext, Article 29 of the Hague Convention on spies. The rule reproduces 489 of 499 letters; 89 of the 97 words read uncorrected, 8 carry one wrong letter, and the ten slips are not explained.',
+         quote='&ldquo;A person can only be considered a spy when acting clandestinely&rdquo;',
+         author='Jacob Houtrouw',
+         rights='Original sheet lost (found by Louis Kruh in the New York Public Library); ciphertext as printed by Kruh (Cryptologia, 1993) and reproduced by Futility Closet and Altifina; key text from the Engineer Field Manual, 1909, a U.S. government publication; no image reproduced'),
     dict(slug='anker1814', label='Anker to Christian Frederik 1814', year='1814', y=1814.5, place='London &rarr; Christian Frederik', st='solved', stt='key from external plaintext',
          title='Carsten Anker to Prince Christian Frederik, a leaf of 28 June 1814',
          blurb='A leaf with no decipherment in the symbol cipher of 1811, whose key Brice Dudout rebuilt from the decipherment of an earlier letter and validated on a held-out part: Princess Charlotte of Wales will not marry the Prince of Orange, and Anker revives the idea of a match with Christian Frederik. 249 of 252 signs read.',
@@ -3586,6 +3592,7 @@ IMAGES['fiedmond1779'] = ('fiedmond1779_lead.jpg', 'The letter of 19 July 1779 o
 IMAGES['peking1912'] = None
 IMAGES['nanking1930'] = None
 IMAGES['vanhalen1840'] = None
+IMAGES['mauborgne1915'] = None
 IMAGES['hofkriegsrat1629'] = ('hofkriegsrat1629_lead.jpg', 'The clear heading and the first cipher lines of p. 1461, from the 1964 halftone plate', 'Donath Regina, Magyar K&ouml;nyvszemle 80 (1964) no. 1, p. 57, plate of ELTE G. 4 Fol. Tom. V p. 1461, via EPA (epa.oszk.hu)')
 IMAGES['goulart1946'] = ('goulart1946_lead.jpg', 'The text strips of the telegram; VIVILA is boxed in ink', 'CPDOC/FGV, Arquivo Get&uacute;lio Vargas, GV c 1946.03.09/2 (CorrespGV3, page 521), via the CPDOC DocReader')
 IMAGES['rossi1537'] = ('rossi1537_lead.jpg', 'Letter B, 8 November 1537: the first four of the 17 cipher lines of c. 33r', 'Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera R, Rossi (conte di San Secondo), c. 33r, via the Lodovico Media Library (CC BY-NC-SA)')
