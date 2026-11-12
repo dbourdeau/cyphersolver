@@ -1,6 +1,6 @@
 # Petkum 1665-66 and Paulmyer 1664: unglossed letters in the Danish chancery's French syllabary, read with a key rebuilt from the chancery's own glosses (catalogue 2530; issues #443, #444)
 
-Status: read in part. Key rebuilt from the interlinear decipherments of sister leaves (no key sheet). Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic); issues #443 and #444 and the comments on them. Folder prepared 12 Nov 2026 in answer to the maintainer's note on both issues ("held, not rejected: the issue gives the results but not the files").
+Status: in progress (integration check, 12 Nov 2026: every letter is read in part, none reaches 95%; not written up yet because the gaps below that are not-attempted can still be worked, see Integration check). Key rebuilt from the interlinear decipherments of sister leaves (no key sheet). Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic); issues #443 and #444 and the comments on them. Folder prepared 12 Nov 2026 in answer to the maintainer's note on both issues ("held, not rejected: the issue gives the results but not the files").
 
 ## What this folder is, and why one folder
 
@@ -112,11 +112,10 @@ Not filed before, computed here from the same files: the eleven letters filed as
 
 ## Remaining gaps
 
-- Code numbers with no value: 35 in the Petkum letters (`holes.md` 2), mostly names and titles seen one to four times - blocker: open-codes; the glossed sister leaves not yet read in full would settle most of them.
+- Code numbers with no value: 35 in the Petkum letters (`holes.md` 2), mostly names and titles seen one to four times - blocker: not-attempted; the glossed Petkum leaves 477, 561, 565L, 581 and Sehested's glossed relations in unit 261294 (images 5-141) would settle most of them.
 - Signs not in the key: plain q, crossed d, PF, FF; in Paulmyer's hand also plain m (= h) and an 8-like sign (= m) - blocker: open-codes.
 - The four letters of #444 and the four Paulmyer letters have no blind second reading - blocker: not-attempted.
 - The other bare Petkum pages of the unit (12 letters, 13 pages, decoded once with KEY_v3, pooled below our filing line, not filed) and 7 bare Paulmyer passages (18 Apr, 23 May, 26 Jun 1664, leaf 150 right, three of 1665; 6 of them tried only with the unadopted KEY_v4) - blocker: not-attempted as far as this folder goes.
-- Clear text around the cipher passages, quoted only for context - blocker: not-attempted.
 - A contemporary decipherment of these very letters may exist unfilmed (the chancery read the code) - blocker: needs-physical-access.
 
 ## Escalation
@@ -139,3 +138,17 @@ From any directory: `python3 -I scripts/decode.py key.tsv transcriptions/<id>.tx
 ## Files
 
 `key.tsv` (KEY_v3); `gloss/` (key history and the gloss evidence); `transcriptions/` (frozen, as decoded; `_blind` = second reader; the 30 Nov R1 is in two files, p2-3 and the held-out pp.1, 4); `decryptions/` (one per transcription); `units/` (`*.seg` word division, `*.units.tsv` labels, two files written by `count.py`); `readings/` (French reading with holes and English, one per letter, copied from our working files); `counts.txt`, `controls.txt`, `agreement.txt` (script outputs); `holes.md`; `scripts/`; `timestamps/` (six RFC 3161 and OpenTimestamps stamps, `timestamps/README.md` maps the files of this folder to them).
+
+## Integration check (12 Nov 2026)
+
+Verified from the files by the integrating reader (an AI reader, not a person); the full report is the coordinator's `R4_petkum.md`.
+
+- Reproduced: `python3 -I scripts/count.py` and `scripts/compare_blind.py` give every figure in the table above to the unit; key md5 ddc02e4a9408e8ead7d51b5135a1ae82; 21 of 21 decryptions are byte-identical to `scripts/decode.py` (the 30 Nov R2 file through its keynames file). A second decoder written from `key.tsv` without importing the contributor's code gives the same letters for all 22 transcriptions. `docs/_check_profile.py petkum1665`: valid; `docs/_check_catalogue.py`: valid; `docs/_check_terms.py petkum1665`: 0 hits.
+- Images (Rigsarkivet, `api.rigsarkivet.dk/ao/v1/images/<id>`, no bot check): 435R all 70 tokens, 573 right page lines R01-R12 (about 150 tokens), 641L lines 09-21 (about 100), Paulmyer 147L all 76: about 390 tokens compared by eye, 0 disagreements. Not compared: the other nine Petkum letters and the three Paulmyer sister letters.
+- Control of ours: 300 key-level shuffles (the values of all tier A and B rows shuffled among the signs, French 4-gram, `lang` model fr-1600-letters) on the eight letters other than 30 Nov, the blind copies and Paulmyer: true -3.80, best shuffle -5.33, 0 of 300 at or above.
+- Held-out test: pp.1 and 4 of 30 Nov (67.57%) against the pages the key was tried on first (68.07%), no drop. The order (key v2 frozen 01:35:14 before pp.1 and 4 were transcribed) is by the contributor's record: the only external stamp (RFC 3161, 01:36:39 GMT, imprint checked) is of one manifest that holds keys v1 and v2, the held-out transcription and its decode together, so it shows they existed by then, not in what order. No pass bar was declared for the held-out pages; the 65% filing line applies to pools. The 574R glosses are on the page next to p.4, and 574R is the relation to the king of 10 Dec 1665, the same affair as the bare letter of 10 Dec 1665 (arrest of ships in Norway): the code words 115, 386, 289, 314, 350 read in that letter come from its glossed twin. They are E, so the strict share is unaffected.
+- Selection: twelve more bare Petkum letters (13 pages) were decoded with KEY_v3 and left out because they fell under the 65% line, which was applied after the results were seen. The pool of the eleven filed letters (562/819 = 68.62%) therefore leaves out the worse ones; with those 121/190 = 63.68% (the contributor's log figure, not in this folder) the pool of every decoded bare passage would be 683/1009 = 67.69% [derived]. Use the per-letter figures, not the pool, as the headline.
+- Own line: on the blind reading the five-letter pool is 63.69%, under the contributor's own 65% line; that test is published as failed. Single letters at 53.85% (6 Apr 1666), 61.54%, 62.07% and 62.77% are below the three Paulmyer sister letters' best (63.89%) in some cases, so no threshold separates "read in part" from "decoded, not read" for the Petkum letters. Under the project's rule (strict share, under 95% = read in part) they are read in part, each at its own figure; the Paulmyer sisters stay decoded, not read and key support only.
+- Not checked: the certificate chains of the stamps, the OpenTimestamps proofs, `scripts/shuffle_control.py` (needs four Gutenberg files), the images of the other ten letters.
+
+Why the status is "in progress": the repository allows "read in part" as a stopping point only when each unread piece has an outside blocker. These do not: (1) the glossed Petkum leaves 477, 561, 565 left and 581, and Sehested's own Paris relations in unit 261294 (images 5-141, same code, glossed between the lines throughout, per the 11 Nov TKUA sweep) were not used to extend the key, and would settle most of the 35 open code numbers; (2) the twelve unfiled letters, and the blind second readings of the four letters of #444 and the four Paulmyer letters, were not made. When these are done, or each has a real blocker, the status line goes and `/writeup petkum1665` is run (page, ledgers, catalogue 2530 narrowed to the unread leaves, key web entry for the Petkum/Paulmyer key, atlas places, portraits of Petkum and Biermann if any exist).
