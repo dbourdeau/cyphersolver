@@ -1,0 +1,21 @@
+# The turning grille: preregistered measure on a held-out telegram (FAILED)
+
+## Protocol (fixed before the cipher was sent to the model)
+- Held out, never sent: the whole telegram CMXV.16.1561.3-13 (Adolfo González, San Antonio, to Olliphant, 19 April 1911, 127 letters = 24 groups of 5 + 4 + 3, no gloss, no clear, not in the typed list CMXV.18.1795.1). File hashed (SHA-256 4a43a131...); a leak check (its groups and every 7-letter run of its cipher) found nothing in the files sent.
+- Sent to Claude Fable 5.2 in one API run: the cipher of 1551.3-4, 1561.5-13 and 1569.3-10, the earlier failed attempts, context, and the fonds' key cards.
+- Statistic car4: share of the letters of the clear produced that a maximal segmentation covers with Spanish words of four letters or more (period lexicon plus names of the traffic). The simpler statistic with short words was rejected in advance: shuffled letters of a transposition already reach 0.77.
+- Controls: 200 random grilles of the same family (8 x 8, one hole per rotation orbit, random direction and order) and 200 shufflings of the held-out letters deciphered with the proposed grille.
+- Pass: car4 >= 0.70 and car4 >= best control + 0.30, one run.
+
+## Result (12 Nov 2026, one run)
+car4 = 0.520; random grilles at most 0.402 (mean 0.166); shuffled letters at most 0.299 (mean 0.139); margin +0.118. **Not validated**: both thresholds missed.
+
+Cause: the held-out telegram has 127 letters instead of 128; one letter is lost in the group of four, YPXB (20th group). The model had fixed in advance where the missing letter would be padded (at letter 64), so the first block of 64 came out intact and the second block shifted. The first block reads, with no repair: "opino armisticio equivaldria destruccion fuerzas insurgentes deben atac..." ("I think an armistice would amount to destroying the insurgent forces; they must attack ..."). The model had warned before the measure that a lost letter would put the threshold out of reach in about nine cases out of ten.
+
+A post-hoc trial with the model's own rule for a short group (written before the measure, but kept out of the key it submitted) gives a readable second block. It was run after the measure and is **not counted**; the held-out telegram is spent.
+
+## What supports the grille instead (not a preregistered validation)
+- Five blocks of 64 letters read as fluent Spanish with no repair at all: both blocks of 1551.3-4, the first block of 1561.5-13, the first two of 1569.3-10 (`decryption_grille.txt`), with one grille unchanged across three telegrams, two days and both directions.
+- The nulls fall where a grille puts them: the 17 X/Z of the second block of 1551.3-4 cover the 16 rotation orbits (in the model's own simulation, 17 random cells do so 15 times in 200,000; not rerun by us); 1569.3-10 ends with xxxzzz and the run a b c d e f g h i j.
+- On the held-out telegram, the first block, the only part not shifted by the lost letter, came out as Spanish, while 200 random grilles score at most 0.402 on the whole text.
+- Two repairs are needed, both declared and both chosen while looking at the text: one letter deleted in 1561.5-13 (129 letters), one restored in 1569.3-10 (191 letters).
