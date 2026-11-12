@@ -4945,6 +4945,23 @@
    "year": 1612,
    "found": 2026,
    "note": "Recovered from the ciphertext alone and frozen on 11 Nov 2026; the decode also uses two renamed labels, a split of the rounded u made after decoding and 13 overrides by coordinate. The codes I., PP., 25. and .50. and the sign & have no value. targets/augustoni1612/key.tsv, aliases.tsv, overrides.tsv."
+  },
+  {
+   "id": "k-zobel1629",
+   "label": "Zobel to Christian IV, Paris 1629: four number alphabets chosen by an index figure 28-39 (found by Malcolm McBratney with Claude)",
+   "kind": "rebuilt here",
+   "by": "Malcolm McBratney",
+   "year": 1629,
+   "note": "Found from the ciphertext of the letter itself: 28-30 straight (a = 4 ... z = 27), 31-33 reversed (a = 27 ... z = 4), 34-36 and 37-39 from word fits, values only for letters seen. Partial. targets/zobel1629/key.tsv."
+  },
+  {
+   "id": "k-kohn-ms309",
+   "label": "Kohn's key of 1889 to Gerlach's Occulta scripta chymica (Wellcome MS.309 pp.260-261)",
+   "kind": "scholar's key",
+   "by": "Julius Kohn",
+   "year": 1572,
+   "found": 1889,
+   "note": "Rows of sign groups, Z to A, with no letters written beside them; set up as a table of 52 sign labels by Malcolm McBratney (three groups re-aligned: u, t, s). targets/gerlach1252/key.tsv."
   }
  ],
  "links": [
@@ -7971,6 +7988,18 @@
    "target": "augustoni1612",
    "how": "rebuilt from",
    "note": "annealed from the ciphertext of the first transcription and completed by reading, with aliases and overrides listed in the folder"
+  },
+  {
+   "key": "k-zobel1629",
+   "target": "zobel1629",
+   "how": "partial",
+   "note": "recovered by the contributor from the ciphertext alone; 15 of 19 cipher words read without correction, two of the four alphabets only partly known"
+  },
+  {
+   "key": "k-kohn-ms309",
+   "target": "gerlach1252",
+   "how": "adapted",
+   "note": "Kohn's sheet carries signs without letters; the contributor read the order of the groups as letters and moved the u, t and s groups one step; about 90% of the words of 17 pages read"
   }
  ],
  "sources": [
@@ -9279,6 +9308,10 @@
   {
    "source": "s-cyphersolver",
    "key": "k-fuerstenberg1659"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-zobel1629"
   }
  ],
  "unlinked": {

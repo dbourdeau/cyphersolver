@@ -1,0 +1,241 @@
+{
+ "schema_version": 1,
+ "target": "zobel1629",
+ "title": "Johan Zobel to Christian IV, Paris, 20 Sept 1629 (catalogue 2540, Rigsarkivet TKUA Frankrig B.31): index-switched four-alphabet number cipher, key found from the ciphertext, 15 of 19 cipher words read without emendation (read in part)",
+ "documents": [
+  {
+   "id": "tkua-frankrig-b31-241",
+   "read": "read in part",
+   "shelfmark": "Copenhagen, Rigsarkivet, TKUA Speciel del, Frankrig B.31 (Gesandtskabsrelationer fra Johan Zobel 1627-31), unit 261292, images 241 (right page) and 242 (left page); Arkivalieronline epid 19852643",
+   "date": "20 Sept 1629 (new style)",
+   "year": 1629,
+   "country": "France",
+   "route": "Paris -> Copenhagen (Johan Zobel to Christian IV)",
+   "places": {
+    "from": "Paris",
+    "to": "Copenhagen"
+   },
+   "language": "German",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on or beside the leaves (images 234-250 viewed for the catalogue, 11 Nov 2026).",
+    "partial": false
+   },
+   "length": {
+    "tokens": 134,
+    "distinct": 23,
+    "unit": "symbols",
+    "measured": false,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Rigsarkivet Arkivalieronline images 48879224 and 48879225 (api.rigsarkivet.dk/ao/v1/images/<id>, 4550 x 3436 px)",
+    "image_quality": "good",
+    "notes": "134 letter figures in 19 cipher words plus 19 index figures, counted from the contributor's word table (issue #456); distinct is the number of different letter-figure values 4-27 seen (23 of 24), counted by hand from the table, not by docs/_check_profile.py --measure, so measured is false. First reading frozen 12 Nov 2026 (md5 5f3df4a8, by the contributor's record); two further readers (second not fully blind, third blind) agree on 97.4% and 98.7% of the figures (contributor's comments). At integration all 19 index figures and all 134 figures were compared with both images: agree, except the figures the contributor himself marks doubtful (the added 9 above the line in word 3, the third figure of KRIEG in word 4 (8 or 4), the blot in word 7, the overwritten third figure of STALL in word 19)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "polyalphabetic",
+   "other"
+  ],
+  "summary": "Each cipher word begins with an index number 28-39 that selects one of four number alphabets for the 24 letters (straight 4-27, reversed 27-4, and two tables with partly rising, partly falling values); the letters are the figures 4-27.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-2",
+   "separation": "dots"
+  },
+  "distinct_symbols": 24,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "kept",
+  "notes": "Tables 28-30 (a=4 ... z=27) and 31-33 (a=27 ... z=4) are rule-fixed. Table 34-36 rises from a=15 (with f and g changed over) and falls from o=12 (z=14); table 37-39 has values for e g i k l n r only, from three words. Letters not seen in a table have no value: the key is partial. Zobel's cover letters D., H., G., B., Bp., Bo. in the clear text are not part of this cipher and are not solved."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "None found by the contributor (12 Nov 2026): Fridericia (1876) uses neighbouring letters of 16-19 Sept 1629, not this one; Danske Magazin, Danske Samlinger, Historisk Tidsskrift, DECODE, Cryptiana checked; the Rigsarkivet finding aids note that ciphered legation relations are unsolved. Not reached: Danmark-Norges Traktater, Opel, Lindenfels, Franksen. Priority not established.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "transcription"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Malcolm McBratney directed the work, set the rules (transcription frozen before the scripted decode, second and blind third transcriptions, shuffled-key and random-key controls) and sent the result as GitHub issue #456; Claude sessions transcribed, found the key and checked. The catalogue entry 2540 is the project's (Daniel Bourdeau, sweep of 11 Nov 2026).",
+  "tools": [
+   "own Python decoder dec_zobel.py and shift.py (not sent)",
+   "German 4-gram model from four Project Gutenberg texts (the contributor's)",
+   "Pillow crops",
+   "RFC 3161 and OpenTimestamps through the contributor's stamp script"
+  ],
+  "models": [
+   "Claude (Anthropic), sessions of 12 Nov 2026 (model ids not recorded)"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-12",
+  "last_date": "2026-11-12"
+ },
+ "solution": [
+  {
+   "date": "2026-11-11",
+   "kind": "access",
+   "what": "Catalogue 2540 (sweep of 11 Nov 2026): images 241 and 242 of unit 261292 viewed at full size; 19 words in number cipher, each introduced by an index number 28-39; no decipherment on or beside the leaves.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "First reading of the figures from the images, frozen (md5 5f3df4a8bf2142faef091c1cf373d316, 12 Nov 2026 04:05:57 UTC, by the contributor's record, RFC 3161 token 04:14:03 UTC): 19 index figures and 134 letter figures.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "key-structure hypothesis"
+   ],
+   "what": "Words seen while transcribing (WAFFEN, ZOBELN, WALLENSTEINS, FRIDRICHEN) gave the straight table a=4 for index 28-30; a test of all 48 straight and reversed 24-letter alphabets gave the reversed table for 31-33 (protec, friden, investitur, stifter); the tables for 34-36 and 37-39 came from word fits (zobel, herzog, vornembsten, stralsunt; krieg, eingewilligt). The key was found while reading, before the freeze.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ],
+   "what": "German 4-gram score of the decode: true -2.9761; 0 of 5,000 shuffled keys and 0 of 5,000 random keys reach it (best -3.5974 and -3.5204; seed 20261112). Rule test over 48 rule alphabets: a=4 straight the only one giving words for 28-30 (-2.4637 against -3.4688), reversed the only one for 31-33. No held-out part (19 words).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "A second reader transcribed both pages (not fully blind: had seen one line of plaintext words): 149 of 153 figures identical, decode of it 14 of 19 words; a third, fully blind reader (md5 d5b53ed8...): 150 of 152 aligned figures identical, strict 16 of 19 words. Both are the contributor's comments.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "The German read with the cipher words and translated (the contributor's working reading of the clear text, 'three words unread'). By the README read bar 15 of 19 cipher words read without emendation = 78.9%; the contributor's own harder count (every value rule-fixed or seen in another word) is 11 of 19 = 57.9%. Cover letters D., H., G., B., Bp., Bo. not solved.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Integration after an independent check from the issue text: own decoder from the four stated alphabet rules reproduces all 19 words and the 134-figure count; both images compared at full size (api.rigsarkivet.dk): all index figures and letter figures agree with the table; German language model puts the decode first, 0 of 2,000 random letter relabellings reach it. Not re-run: the contributor's own scorer (not sent).",
+   "result": "worked"
+  },
+  {"date": "2026-11-12", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 133 tokens, 90 types, de-1500s order 4: reading -2.655 per letter; random keys -5.542 (z 9.2); key annealed onto shuffled ciphertext best -2.14 (mean -2.17, z -15.3); annealer on the real text -2.238. Verdict: underdetermined.", "result": "partial"}
+ ],
+ "outcome": {"validation": {"date": "2026-11-12", "model": "de-1500s", "file": "validation.tsv", "tokens": 133, "types": 90, "tokens_per_type": 1.48, "score": -2.655, "nulls": {"random keys": {"n": 200, "mean": -5.542, "sd": 0.312, "max": -4.845, "z": 9.2, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.17, "sd": 0.032, "max": -2.14, "z": -15.3, "p": 1.0}}, "power": -2.238, "verdict": "underdetermined", "notes": "claimed per-occurrence score -2.655; polyphony 0.0; 1 unread tokens left out; annealer on the real text from random keys reached -2.238"}, 
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Key found by the contributor from the ciphertext of the letter itself (repeated words ZOBEL, KRIEG, rule tests over 48 alphabets, word fits), with no decipherment on or beside the leaf; the clear text around the cipher words and the history (Stralsund, Wallenstein's investiture with Mecklenburg) are context, not a parallel text. Two tables are rule-fixed and explain nine words; the other two rest on single words.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.789,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "decryption.txt, 19 cipher words: 15 read without emendation (S) = 78.9%; the 4 emended words (STAS for STAT with an added figure, KRIEG with a doubtful figure, EINGE?IL with a blot, STLL for STALL) count as holes. Contributor's own figure, with the same classes: 15/19 (strict) and 11/19 (harder rule: auf, krieg, vornembsten, herzog also hold a value fitted from a single word).",
+  "codes_open": {
+   "open": 0,
+   "total": 0,
+   "tokens_open": 0
+  },
+  "verification": ["key confirms", "independent verification"],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "mcbratney",
+    "role": "new cipher with solution",
+    "note": "catalogue 2540: index-switched four-alphabet key found from the ciphertext, the 19 cipher words read in part, with Claude; two further transcriptions (one blind) in the issue comments; issue #456",
+    "date": "2026-11-12",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/456"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "catalogue entry 2540 (Rigsarkivet TKUA sweep, 11 Nov 2026): the leaf, its two images and the finding that no decipherment lies beside it",
+    "date": "2026-11-11"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Letters not seen in tables 34-36 (c d i k p q w x y) and 37-39 (all but e g i k l n r)",
+    "blocker": "no-key-material",
+    "detail": "only 19 cipher words are known in this cipher; no other leaf with the key; a longer letter by Zobel in the same cipher would fill them."
+   },
+   {
+    "item": "Four emended words: STA[T] STRALSUNT (added figure 9 = s), KR[I]EG (third figure 4 or 8), EINGE[W]IL (blot), ST[A]LL (overwritten figure)",
+    "blocker": "illegible",
+    "detail": "single-figure doubts on the image; a better image or the original would settle them."
+   },
+   {
+    "item": "Cover letters D., H., G., B., Bp., Bo. in the clear text",
+    "blocker": "no-key-material",
+    "detail": "G. = Christian IV from context; the rest are the contributor's guesses (D. France, H. Sweden, B. the Emperor). The clear letters of 16-19 Sept 1629 (images 231-240) may settle it; not examined here."
+   },
+   {
+    "item": "Three words in the clear text at 'ZOBEL hette bey wehrendem KRIEG dem G. ...' and several clear words marked (?)",
+    "blocker": "illegible",
+    "detail": "clear German, not cipher; read by the contributor from the scan only, not checked here beyond the cipher lines."
+   },
+   {
+    "item": "Priority and the printed record",
+    "blocker": "needs-physical-access",
+    "detail": "Danmark-Norges Traktater, Opel, Lindenfels and Franksen were not reached by the contributor; the packet 'Chiffer' (no. 112) is in the archive."
+   }
+  ],
+  "texts": [
+   {
+    "doc": "tkua-frankrig-b31-241",
+    "label": "Zobel to Christian IV, Paris, 20 Sept 1629",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "de",
+    "state": "read in part",
+    "read_share": 0.789,
+    "summary": "Johan Zobel, Danish resident in Paris, tells Christian IV in cipher that 'D.' has an eye on 'H.', whose arms are fortunate; that he handed over the letters on the protection of the town of Stralsund; that the king should call Zobel home for a talk; that the investiture of Wallenstein with Mecklenburg cannot please the king; and that good people would risk a black eye to put Duke Frederick back in his bishoprics. Written four months after the peace of Lubeck; the cover letters are not solved.",
+    "reading_review": {
+     "grade": "A",
+     "by": "integration reader for the project (a model session, not a person), 12 Nov 2026",
+     "date": "2026-11-12",
+     "note": "Read as German sentences against decryption.txt and translation.md: every cipher word sits in a clause that construes (waffen, protection, Stralsund, krieg, Zobeln, Wallensteins, Meklenburg, Herzog Fridrichen, Stifter). Four emended words in 19; three clear words unread. The clear text is the contributor's reading of the scan, checked here only on the cipher lines of 241 and 242."
+    }
+   }
+  ],
+  "key_file": [
+   "key.tsv"
+  ]
+ }
+}
