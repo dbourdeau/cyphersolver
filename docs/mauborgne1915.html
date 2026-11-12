@@ -4,23 +4,70 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mauborgne&rsquo;s challenge cipher (1915) &mdash; Read in part</title>
-<meta name="description" content="J. O. Mauborgne&rsquo;s 499-letter challenge cipher, Manila, 21 October 1915: a running key of odd shifts from the Engineer Field Manual, found by Jacob Houtrouw, reads as Article 29 of the Hague Convention on spies.">
-<link rel="stylesheet" href="style.css">
+<meta name="description" content="J. O. Mauborgne&rsquo;s 499-letter challenge cipher, Manila, 21 October 1915: a running key of odd shifts from the Engineer Field Manual, found by Jacob Houtrouw, reads as Article 29 of the Hague&hellip;" data-full="J. O. Mauborgne&rsquo;s 499-letter challenge cipher, Manila, 21 October 1915: a running key of odd shifts from the Engineer Field Manual, found by Jacob Houtrouw, reads as Article 29 of the Hague Convention on spies.">
+<link rel="stylesheet" href="style.css?v=b6cbdd6a">
+<meta name="date" content="2026-11-12">
+<meta name="last-modified" content="2026-11-12">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- social:start -->
+<link rel="canonical" href="https://cyphersolver.com/mauborgne1915.html">
+<link rel="alternate" type="application/atom+xml" title="Cyphersolver: new write-ups" href="https://cyphersolver.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Cyphersolver">
+<meta property="og:url" content="https://cyphersolver.com/mauborgne1915.html">
+<meta property="og:title" content="Mauborgne&rsquo;s challenge cipher (1915) &mdash; Read in part">
+<meta property="og:description" content="J. O. Mauborgne&rsquo;s 499-letter challenge cipher, Manila, 21 October 1915: a running key of odd shifts from the Engineer Field Manual, found by Jacob Houtrouw, reads as Article 29 of the Hague&hellip;">
+<meta property="og:image" content="https://cyphersolver.com/hero_poster.png">
+<meta name="twitter:card" content="summary_large_image">
+<!-- social:end -->
 </head>
-<body>
-<!-- site:nav -->
+<body id="top">
+<header class="nav"><a class="skip" href="#content">Skip to content</a><div class="in">
+  <a class="brand" href="index.html"><span class="glyph">972</span><span>Cyphersolver</span></a>
+  <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
+  <nav id="sitemenu" class="links" aria-label="Site">
+    <details class="menu"><summary class="active">Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel wp"><div class="foot"><a class="all" href="writeups.html">All write-ups, with filters &rarr;</a><a href="findings.html">All findings, newest first</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+    <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="top25.html"><b>Top 25 unsolved ciphers</b><span class="d">Twenty-five ciphers with no accepted reading, ranked</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key opened which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
+    <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
+    <a class="navcat" href="further.html">Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>
+    <a class="navcat" href="archives.html">To the archive<span class="sticker arc" aria-hidden="true"><span><b>Go<br>Look!</b></span></span></a>
+    <a href="contributors.html">Contributors</a>
+    <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
+    <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
+  </nav>
+</div><span id="content" tabindex="-1"></span></header>
+<div class="search" id="search" hidden>
+  <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
+    <form class="sform" role="search" onsubmit="return false">
+      <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input type="search" id="sq" placeholder="Search names, places, shelfmarks, words of the cipher&hellip;" autocomplete="off" spellcheck="false" aria-label="Search" aria-controls="sres">
+      <button type="button" class="sclose" aria-label="Close search">Esc</button>
+    </form>
+    <div class="sres" id="sres" role="listbox" aria-label="Results"></div>
+    <div class="shint"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> move</span><span><kbd>&crarr;</kbd> open</span><span><kbd>Esc</kbd> close</span><span class="sn" id="sn"></span></div>
+  </div>
+</div>
 <section class="hero">
-<div class="cipherstrip" translate="no">P M V E B D W X Z A &nbsp; X K K H Q R N F M J<br>a p e r s o n c a n &nbsp; o n l y b e c o n<br>key letters F O R T I F I C A T &nbsp; I O N I S T H E A R &middot; shift = 2(k mod 13) + 1</div>
+<div class="cipherstrip" translate="no">P M V E B D W X Z A<br>a p e r s o n c a n<br>key F O R T I F I C A T &middot; shift = 2(k mod 13) + 1</div>
 <p class="kicker">Manila &rarr; the Army Signal School, Fort Leavenworth &middot; running key of odd shifts &middot; 21 October 1915 &middot; key text and plaintext found by a contributor, read in part</p>
 <h1>J. O. Mauborgne&rsquo;s 1915 challenge cipher, Manila, 21 October 1915</h1>
+<p class="readjump"><a href="#texts">Go to the full text &darr;</a></p><!-- /readjump -->
 <p class="sub">A lieutenant&rsquo;s 499-letter challenge to the Army Signal School, with no solution on record until now, reads as Article 29 of the Hague Convention on spies under a running key from the Engineer Field Manual, with ten slips unexplained.</p>
-<p class="meta">Daniel Bourdeau</p>
+<p class="meta">Jacob Houtrouw &middot; posted <time datetime="2026-11-12">12 November 2026</time></p>
+<p class="outcome">Method: <a href="glossary.html#ct">key recovered from ciphertext-only</a> &middot; Extent: partial (92% of the cipher)</p><!-- /outcome -->
+<p class="credits">Contributed by <a href="contributors.html#kruh">Louis Kruh</a> (new cipher) and <a href="contributors.html#houtrouw">Jacob Houtrouw</a> (new cipher with solution)</p><!-- /credits -->
+<div class="seal partial" aria-hidden="true"><span class="long">ciphertext-only</span></div>
 </section>
 <main>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#document">The document</a><a href="#cipher">The cipher</a><a href="#method">How the key was found</a><a href="#checked">What was checked here</a><a href="#reading">The reading</a><a href="#open">What remains uncertain</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout glance">
-<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Ciphertext-only break &middot; partial (89 of 97 words)</span></p>
+<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Ciphertext-only break &middot; partial (92% of the cipher)</span></p>
 <dl>
-  <dt>The cipher</dt><dd>A challenge cipher of 499 letters in 100 groups, sent from Manila on 21 October 1915 by First Lieutenant J. O. Mauborgne, 8th Infantry, to the Director of the Army Signal School at Fort Leavenworth, who had it posted there on 13 December 1915. Two sealed envelopes, the plaintext and the method, were to be opened months later; neither is known.</dd>
+  <dt>The cipher</dt><dd>A challenge cipher of 499 letters in 100 groups, sent from Manila on 21 October 1915 by First Lieutenant J. O. Mauborgne, 8th Infantry, to the Director of the Army Signal School at Fort Leavenworth; the school circulated it on 13 December 1915. Two sealed envelopes, the plaintext and the method, were to be opened months later; neither is known.</dd>
   <dt>Where</dt><dd>The original sheet is lost. Louis Kruh found it among Army Signal School papers in the New York Public Library and printed it in 1993; the library could not find it again. No image is known.</dd>
   <dt>The system</dt><dd>A running key with odd shifts: each plaintext letter is moved back by an odd number of places set by the key letter under it, so every cipher letter has the opposite alphabet parity to its plaintext letter. The key text is the first two paragraphs of Part V, p. 357, of the Engineer Field Manual, with &ldquo;Field fortification&rdquo; replaced by &ldquo;It&rdquo;.</dd>
   <dt>How it was deciphered</dt><dd>By the contributor&rsquo;s record, an AI model working at his direction found the key text and the plaintext from the ciphertext alone on 11 November 2026. Checked here with a second decoder: the rule reproduces 489 of 499 letters, and 495 positions have an odd shift.</dd>
@@ -33,7 +80,7 @@
 <h2 id="document"><span class="num">01</span> The document</h2>
 <p>The cipher is dated Manila, 21 October 1915, with a covering letter of 23 October, from First Lieutenant J. O. Mauborgne of the 8th Infantry to the Director of the Army Signal School at Fort Leavenworth. It has 499 letters, 99 groups of five and a last group of four, with a dash printed after it. Mauborgne meant two sealed envelopes: the plaintext was to be opened after three months, the method a month later. The school circulated the challenge on 13 December 1915; no record of a submitted solution has been found, and the school&rsquo;s report for 1915&ndash;16 does not mention the envelopes (Altifina).</p>
 <p>The sheet itself is lost. Louis Kruh found it, with the covering letter, among Army Signal School papers in the New York Public Library around 1991 and printed it in <i>The Cryptogram</i> (1991) and <i>Cryptologia</i> 17(2), 1993, pp. 172&ndash;174; when Craig Bauer later asked for a scan for <i>Unsolved!</i> (2017, pp. 351&ndash;352), the library could not find it. <strong>No image of the original is known, so none is shown here.</strong> The ciphertext used is the text of Futility Closet (14 March 2022), which follows Kruh&rsquo;s printing and is the same 499 letters as on Altifina&rsquo;s research page (checked letter for letter). The contributor says two AI sessions found it identical to Bauer&rsquo;s printing; neither he nor anyone here compared the printed letters of Kruh or Bauer by eye.</p>
-<p>Altifina&rsquo;s page (25 August 2026) found the letter frequencies flat for English text (index of coincidence 4.30%, measured as 0.043 here; R occurs 47 times and Z 33 times) and called the cipher unsolved; its hypotheses did not include a running key.</p>
+<p>Altifina&rsquo;s page (25 August 2026) reports an index of coincidence of 4.30% (0.043 measured here), far below the 6.7% of English, with R occurring 47 times and Z 33 times, and reports that no solution is known; by the contributor, its hypotheses did not include a running key.</p>
 
 <h2 id="cipher"><span class="num">02</span> The cipher</h2>
 <p>With A = 0, a plaintext letter p is enciphered as c = p &minus; (2 (k mod 13) + 1) mod 26, where k is the key letter. The shift is always odd: the key letters A and N give 1, B and O give 3, and so on up to M and Z, which give 25. To decipher, add the shift. Because every shift is odd, a cipher letter always lies on the opposite side of the alphabet&rsquo;s even/odd split from the plaintext letter; in the ciphertext, 333 of the 498 neighbouring pairs of letters alternate in that way (about 249 are expected by chance).</p>
@@ -46,7 +93,7 @@
 <h2 id="method"><span class="num">03</span> How the key was found</h2>
 <p>This account is the contributor&rsquo;s. Its order of events rests on his record only (one issue, his own timestamps and screenshots, nothing from outside seen here).</p>
 <p>Jacob Houtrouw had an AI model work at his direction on 11 November 2026. A test plan the model drafted and he approved was sealed before any decryption code touched the ciphertext (a SHA-256 hash of the plan, sealed at 15:28:38 UTC by the session&rsquo;s own clock). The model&rsquo;s own forecast of success was 2%. Exploratory statistics showed adjacent cipher letters alternating in alphabet parity, which points to shifts that are always odd. A search for an English plaintext and an English key text through 338 candidate tables ranked the real text first of 41, about 20 standard deviations above the average of the decoys, and planted controls were recovered. The key text was traced afterwards to the manual and the plaintext to Hague Convention IV. He sent the result to Craig Bauer that afternoon and published it at 5:01 PM US Mountain time the same day (the platform dates the post 12 November); his screenshot of the live post is his record of the time. The hash list of his files is said to be anchored by OpenTimestamps in a Bitcoin block (not checked here), and the language-model data files of the search (about 60 MB) are available on request and were not seen, so the search was not re-run here.</p>
-<p>The ciphertext supplied the only link: no plaintext, crib or key for this item was known beforehand and neither text had been tied to this cipher before, so the method is recorded as <a href="glossary.html#ct">key recovered from ciphertext-only</a>. The search drew on a set of candidate texts, which is why the page says the key text and the plaintext were found by search, not derived.</p>
+<p>The ciphertext supplied the only link: by the contributor&rsquo;s account no plaintext, crib or key for this item was known beforehand, and neither this project&rsquo;s searches nor his found either text tied to this cipher before, so the method is recorded as <a href="glossary.html#ct">key recovered from ciphertext-only</a>. The search drew on a set of candidate texts, which is why the page says the key text and the plaintext were found by search, not derived.</p>
 
 <h2 id="checked"><span class="num">04</span> What was checked here</h2>
 <p>The project wrote its own decoder from the rule (<code translate="no">decode.py</code> in the target folder, standard library only) and ran it on the strings in the issue. Before the strings were sent, the project had already tried the public Altifina text against Article 29 and found an odd shift at 495 of 499 positions, with the implied key beginning &ldquo;FORTIFICATION IS THE ART&rdquo;.</p>
@@ -78,7 +125,7 @@
 <tr><td>443</td><td>the</td><td>she</td><td>F</td><td>G</td><td>S</td><td>no</td></tr>
 <tr><td>462</td><td>dispatches</td><td>dispatthes</td><td>S</td><td>A</td><td>T</td><td>no</td></tr>
 </table>
-<p><strong>The count.</strong> The plaintext has 97 words. 89 come out of the key with no correction, 91.8%. Eight words each carry one wrong letter read from the sense, so by this site&rsquo;s rule they do not count as read: 8.2% are holes. The two spelling differences (positions 69 and 457) are not holes, because the cipher letters give pretenses and dispatches and the words read as printed. 91.8% is under the 95% needed for a complete extent, so the extent is partial and the class is read in part. The contributor&rsquo;s own figure is by letters: 489 of 499 (98.0%), or 491 of 499 with the two American spellings; by letters with those spellings the same count gives 98.4%. This page uses the word count only.</p>
+<p><strong>The count.</strong> The plaintext has 97 words. 89 come out of the key with no correction, 91.8%. Eight words each carry one wrong letter read from the sense, so by this site&rsquo;s rule they do not count as read: 8.2% are holes. The two spelling differences (positions 69 and 457) are not holes, because the cipher letters give pretenses and dispatches and the words read as printed. 91.8% is under the 95% needed for a complete extent, so the extent is partial (89 of 97 words). The contributor&rsquo;s own figure is by letters: 489 of 499 (98.0%), or 491 of 499 with the two American spellings; by letters with those spellings the same count gives 98.4%. This page uses the word count only.</p>
 
 <h2 id="open"><span class="num">06</span> What remains uncertain</h2>
 <ul>
@@ -87,13 +134,134 @@
 <li><b>The key edit.</b> &ldquo;Field fortification&rdquo; replaced by &ldquo;It&rdquo; is a contributor choice. The second envelope is lost, so Mauborgne&rsquo;s own rule and key text are not confirmed; the 1912 page number rests on the contributor&rsquo;s screenshot, and the 1909 edition (checked here) carries the same wording on its p. 357.</li>
 <li><b>The search</b> that found the texts was not re-run here: the language-model data files were not seen. The order of events (sealed plan, forecast, hash anchor, release at 5:01 PM MT on 11 November 2026) rests on the contributor&rsquo;s record. What the project checked is the result, not the discovery.</li>
 <li><b>The printing of Article 29.</b> &ldquo;a hostile party&rdquo; and &ldquo;who having penetrated&rdquo; are not the wording of the Avalon copy; which English printing Mauborgne used was not looked at.</li>
-<li><b>Prior art.</b> Kruh, Bauer, the Chaocipher Clearing House and Altifina treat the cipher as unsolved, and a short web search here found no earlier solution; Kruh&rsquo;s and Bauer&rsquo;s books were not read.</li>
+<li><b>Prior art.</b> Kruh, Bauer, the Chaocipher Clearing House and Altifina report no solution, and a short web search here found no earlier solution; Kruh&rsquo;s and Bauer&rsquo;s books were not consulted.</li>
 </ul>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>Mauborgne&#x27;s challenge cipher, Manila 21 Oct 1915 <span class="st partial">read in part</span></h3>
+<p>The first 499 letters of Article 29 of the Regulations annexed to Hague Convention IV (1907) on who is a spy, in the spelling the cipher letters give, stopping mid-sentence at &#x27;for&#x27; where the key text ends; the contents say nothing about Mauborgne&#x27;s own business, the choice of a legal text and a field-manual key are the contributor&#x27;s finding. Mauborgne meant sealed envelopes with the plaintext and the method to be opened after three months; they are lost.</p>
+<p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (92% here); the holes are marked in the reading.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mauborgne1915/cipher.txt">cipher.txt</a></p><pre translate="no">PMVEB DWXZA XKKHQ RNFMJ VATAD YRJON FGRKD TSVWF TCRWC
+RLKRW ZCNBC FCONW FNOEZ QLEJB HUVLY OPFIN ZMHWC RZULG
+BGXLA GLZCZ GWXAH RITNW ZCQYR KFWVL CYGZE NQRNI JFEPS
+RWCZV TIZAQ LVEYI QVZMO RWQHL CBWZL HBPEF PROVE ZFWGZ
+RWLJG RANKZ ECVAW TRLBW URVSP KXWFR DOHAR RSRJJ NFJRT
+AXIJU RCRCP EVPGR ORAXA EFIQV QNIRV CNMTE LKHDC RXISG
+RGNLE RAFXO VBOBU CUXGT UEVBR ZSZSO RZIHE FVWCN OBPED
+ZGRAN IFIZD MFZEZ OVCJS DPRJH HVCRG IPCIF WHUKB NHKTV
+IVONS TNADX UNQDY PERRB PNSOR ZCLRE MLZKR YZNMN PJMQB
+RMJZL IKEFV CDRRN RHENC TKAXZ ESKDR GZCXD SQFGD CXSTE
+ZCZNI GFHGN ESUNR LYKDA AVAVX QYVEQ FMWET ZODJY RMLZJ
+QOBQ-</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mauborgne1915/decryption.txt">decryption.txt</a></p><pre translate="no"># mauborgne1915 - mechanical decryption of cipher.txt with key.txt, no correction: p = c + (2*(k mod 13)+1) mod 26, A=0.
+# Columns: first position (1-based), then cipher letters / key letters / deciphered letters, 10 letters per line. The dash after the last cipher group of the print is not a letter.
+# Raw output: positions 69 and 457 give the American spellings (pretenses, dispatches); eight positions give a wrong letter (see reading.md).
+001	PMVEBDWXZA	FORTIFICAT	apersoncan
+011	XKKHQRNFMJ	IONISTHEAR	onlybecons
+021	VATADYRJON	TOFINCREAS	ideredaspy
+031	FGRKDTSVWF	INGBYENGIN	whenacting
+041	TCRWCRLKRW	EERINGDEVI	clandestin
+051	ZCNBCFCONW	CESTHEFIGH	elyoronfal
+061	FNOEZQLEJB	TINGPOWERO	sepretense
+071	HUVLYOPFIN	FTROOPSOCC	sheobtains
+081	ZMHWCRZULG	UPYINGAPOS	orendeazor
+091	BGXLAGLZCZ	ITIONTHESE	stoobtaini
+101	GWXAHRITNW	DEVICESHAV	nformation
+111	ZCQYRKFWVL	EFORTHEIRO	inthezoneo
+121	CYGZENQRNI	BJECTTOINC	frperation
+131	JFEPSRWCZV	REASETHEEF	sofabellig
+141	TIZAQLVEYI	FECTOFTHEF	erentwitht
+151	QVZMORWQHL	IREACTIONO	heintentio
+161	CBWZLHBPEF	FTROOPSPRO	nofcommuni
+171	PROVEZFWGZ	TECTEDBYTH	catingitto
+181	RWLJGRANKZ	EFORTIFICA	ahostilepa
+191	ECVAWTRLBW	TIONSANDTH	rtybhussol
+201	URVSPKXWFR	EIRMOBILIT	diersnotwe
+211	DOHARRSRJJ	YONTHEFIEL	aringadisg
+221	NFJRTAXIJU	DORTODIMIN	uisewhohav
+231	RCRCPEVPGR	ISHTHEEFFE	ingpeneara
+241	ORAXAEFIQV	CTOFTHEFIR	tedintothe
+251	QNIRVCNMTE	EACTIONOFT	zonemfoper
+261	LKHDCRXISG	HEASSAILAN	ationsofth
+271	RGNLERAFXO	TANDHISMOB	ehostilear
+281	VBOBUCUXGT	ILITYITDEA	myforthepu
+291	UEVBRZSZSO	LSWITHTHEP	rposeofobt
+301	RZIHEFVWCN	REPARATION	aininginfo
+311	OBPEDZGRAN	OFSUCHDEVI	rmationare
+321	IFIZDMFZEZ	CESOFATEMP	notconside
+331	OVCJSDPRJH	ORARYCHARA	redspiessi
+341	HVCRGIPCIF	CTERFORIMM	milarlythe
+351	WHUKBNHKTV	EDIATENOTP	followinga
+361	IVONSTNADX	ERMANENTUS	renotconsi
+371	UNQDYPERRB	EINAPOSITI	deredspies
+381	PNSORZCLRE	ONWHICHDER	soldiersan
+391	MLZKRYZNMN	IVESITSTAC	dcivilkans
+401	PJMQBRMJZL	TICALVALUE	carryingou
+411	IKEFVCDRRN	FROMTHEINC	ttheirmiss
+421	RHENCTKAXZ	IDENTSOFAP	ionopenlye
+431	ESKDRGZCXD	ENDINGCAMP	ntrustedwi
+441	SQFGDCXSTE	AIGNANDWHI	thshedeliv
+451	ZCZNIGFHGN	CHMAYLOSET	eryofdispa
+461	ESUNRLYKDA	HATVALUEAT	tthesinten
+471	AVAVXQYVEQ	ORBEFORETH	dedeitherf
+481	FMWETZODJY	ECLOSEOFTH	ortheirown
+491	RMLZJQOBQ	ECAMPAIGN	armyorfor</pre></details>
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mauborgne1915/reading.md">reading.md</a></p><pre translate="no"># mauborgne1915 - reading of the cipher (English, spelling given by the cipher letters)
+
+Marks: plain = every letter of the word comes out of `key.txt` with the rule, uncorrected; {x} = one letter of the word
+was read from the sense because the key and the printed cipher letter disagree (a restored word, a hole under the README
+read bar). Word division and punctuation are ours: the cipher has none. The spellings are those the cipher letters give
+(pretenses, dispatches), not the British ones of the treaty text.
+
+## Reading
+
+A person can only be considered a spy when acting clandestinely or on false pretenses, he obtains or {endeavors} to
+obtain information in the zone of {operations} of a belligerent, with the intention of communicating it to a hostile
+party. {Thus}, soldiers not wearing a disguise who having {penetrated} into the zone of operations of the hostile army,
+for the purpose of obtaining information, are not considered spies. Similarly, the following are not considered spies:
+soldiers and {civilians}, carrying out their mission openly, entrusted with {the} delivery of {dispatches} intended
+either for their own army or for ...
+
+The cipher stops here: 499 letters, mid-sentence, where the key text ends. In the text of Article 29 of the Regulations
+annexed to Hague Convention IV (1907) the sentence goes on &quot;the enemy&#x27;s army&quot;; that continuation is not in the cipher.
+
+## Holes: the eight words with a wrong letter (positions 1-based)
+
+| Position | Word (read from the sense) | Raw decryption of the word | Cipher letter | Key letter | Rule gives (plain) | Can any key letter give the printed cipher letter? |
+|---|---|---|---|---|---|---|
+| 88 | endeavors | endeazors | U | P | Z | yes |
+| 122 | operations | rperations | Y | J | R | no (parity) |
+| 194 | Thus | bhus | A | N | B | yes |
+| 238 | penetrated | penearated | P | F | A | no (parity) |
+| 255 | of | mf | V | I | M | yes |
+| 397 | civilians | civilkans | Z | S | K | yes |
+| 443 | the | she | F | G | S | no (parity) |
+| 462 | dispatches | dispatthes | S | A | T | no (parity) |
+
+&quot;Rule gives (plain)&quot; is the letter the rule deciphers the printed cipher letter to. The word at 255 is &quot;of&quot; in &quot;the zone of
+operations&quot;; in the list above the word is the one at that position of the plaintext (a two-letter word, so one wrong letter
+makes it a hole).
+
+## Count (97 words)
+
+- 97 words in the 499 letters. 89 words come out of the key with no correction (91.8%). 8 words each need one letter read
+  from the sense (8 holes, 8.2%). The two spelling differences (positions 69 and 457) are not holes: the cipher letters
+  give pretenses and dispatches, and the words read as printed (the word &quot;dispatches&quot; is a hole for position 462 alone).
+- By the README read bar (95% of the words read as sense, no restored word counted) this is 89 of 97 = 91.8%: read in part.
+- The contributor&#x27;s count is by letters: 489 of 499 reproduced by the rule against the plaintext with the treaty&#x27;s British
+  spellings, 491 with the two American spellings. Counted by letters with the American spellings as the cipher gives
+  them, 491 of 499 = 98.4%. The word count is the one this target uses.</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mauborgne1915/key.txt">key.txt</a></p>
+<!-- texts:end -->
+<!-- replay:start -->
+<figure class="sreplay" data-src="steps/mauborgne1915.json"></figure>
+<!-- replay:end -->
 <h2 id="sources"><span class="num">07</span> Sources</h2>
 <ul>
 <li>Jacob Houtrouw, issue #487 of the project repository (12 November 2026): the strings, the audit script, the screenshot of p. 357 and the account of how the key was found.</li>
-<li>Louis Kruh, &ldquo;A 77-Year Old Challenge Cipher&rdquo;, <i>Cryptologia</i> 17(2), 1993, pp. 172&ndash;174; Craig P. Bauer, <i>Unsolved!</i> (Princeton University Press, 2017), ch. 8, pp. 351&ndash;352; neither was read here.</li>
+<li>Louis Kruh, &ldquo;A 77-Year Old Challenge Cipher&rdquo;, <i>Cryptologia</i> 17(2), 1993, pp. 172&ndash;174; Craig P. Bauer, <i>Unsolved!</i> (Princeton University Press, 2017), ch. 8, pp. 351&ndash;352; neither book was consulted here.</li>
 <li><a href="https://www.altifina.com/en/research/mauborgne-1915/">Altifina, &ldquo;The Shadow of the One-Time Pad&rdquo;</a> (25 August 2026): the transcription of Kruh&rsquo;s printing and the history of the challenge; Futility Closet, 14 March 2022.</li>
 <li><a href="https://chaocipher.com/chaocipher-027.htm">Chaocipher Clearing House</a>: its account of Bauer&rsquo;s chapter 8: the message was said to be in a new system invented by Mauborgne, no solution was ever submitted by a solver, and Kruh may have introduced errors into his transcription.</li>
 <li><i>Engineer Field Manual</i>, Professional Papers of the Corps of Engineers No. 29, third (revised) edition, 1909, Part V, p. 357 (<a href="https://archive.org/details/ad-1117984">Internet Archive ad-1117984</a>); fourth edition 1912 (<a href="https://books.google.com/books?id=GLUmAQAAIAAJ&amp;pg=PA357">Google Books</a>, as given by the contributor).</li>
@@ -101,7 +269,26 @@
 </ul>
 
 <p class="muted">The notes, the key text, the plaintext, the decoder, the raw decryption and the reading are in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/mauborgne1915">targets/mauborgne1915</a>.</p>
+<!-- cite:start -->
+<details class="cite" id="cite"><summary>Cite this page</summary>
+<p class="citetext">Louis Kruh and Jacob Houtrouw, “J. O. Mauborgne’s 1915 challenge cipher, Manila, 21 October 1915”, Cyphersolver, posted 12 November 2026, https://cyphersolver.com/mauborgne1915.html.</p>
+<p class="citebtns"><button type="button" data-copy="Louis Kruh and Jacob Houtrouw, “J. O. Mauborgne’s 1915 challenge cipher, Manila, 21 October 1915”, Cyphersolver, posted 12 November 2026, https://cyphersolver.com/mauborgne1915.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-mauborgne1915,
+  author = {Louis Kruh and Jacob Houtrouw},
+  title = {J. O. Mauborgne’s 1915 challenge cipher, Manila, 21 October 1915},
+  year = {2026},
+  howpublished = {Cyphersolver},
+  note = {posted 12 November 2026},
+  url = {https://cyphersolver.com/mauborgne1915.html}
+}">Copy BibTeX</button></p>
+</details>
+<!-- cite:end -->
 </main>
-<!-- site:footer -->
+<footer><div class="in">
+  <span>Jacob Houtrouw, November 2026 &middot; Text released under CC BY 4.0 &middot; Original sheet lost (found by Louis Kruh in the New York Public Library); ciphertext as printed by Kruh (Cryptologia, 1993) and reproduced by Futility Closet and Altifina; key text from the Engineer Field Manual, 1909, a U.S. government publication; no image reproduced</span>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="rosamonde1915.html" rel="prev">&larr; Rosamonde telegrams 1915&ndash;16</a><a href="sunyatsen.html" rel="next">Sun Yat-sen 1916 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="feed.xml">Feed</a><a href="#top">Top &uarr;</a></nav>
+</div></footer>
+<script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
+<script src="solve-replay.js?v=b6cbdd6a" defer></script>
+<script src="site.js?v=b6cbdd6a"></script>
 </body>
 </html>

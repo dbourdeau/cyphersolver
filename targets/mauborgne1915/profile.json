@@ -146,7 +146,7 @@
     "statistical test",
     "key matching"
    ],
-   "what": "Independent check here from the issue's strings and a second decoder (targets/mauborgne1915/decode.py, python3 -I): lengths 499/499/499, hash matches, 489 of 499 reproduced, the ten misses at the stated positions, 495 of 499 positions with an odd shift; plaintext shifted one place 11 of 498, key shifted one place 37 of 498; 2,000 shuffles of the ciphertext give at most 37 exact matches and at most 287 odd-shift positions. The odd-shift count alone (495 against at most 287) was found before the strings were sent from the public Altifina text and Article 29.",
+   "what": "Independent check here from the issue's strings and a second decoder (targets/mauborgne1915/decode.py, python3 -I): lengths 499/499/499, hash matches, 489 of 499 reproduced, the ten misses at the stated positions, 495 of 499 positions with an odd shift; plaintext shifted one place 11 of 498, key shifted one place 37 of 498; 2,000 shuffles of the ciphertext give at most 37 exact matches and at most 287 odd-shift positions. Before the strings were sent, the project had found the odd shift at 495 of 499 positions (at most 291 in 2,000 shuffles of its first run) from the public Altifina text and Article 29, with the implied key beginning FORTIFICATION IS THE ART.",
    "result": "worked"
   },
   {
@@ -168,7 +168,12 @@
    "result": "partial"
   }
  ],
- "outcome": {"validation": {"date": "2026-11-12", "verdict": "not applicable", "notes": "docs/_validate.py scores a cipher-token-to-reading key; here the key is a running key (book text), every position has its own key letter and no cipher type carries one value. The check run instead is the control in decode.py: the rule applied with the right texts reproduces 489 of 499 letters, against at most 37 in 2,000 shuffles of the ciphertext, 11 and 37 with the plaintext or the key shifted one place, and 495 odd-shift positions against at most 287 in 2,000 shuffles."}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-11-12",
+   "verdict": "not applicable",
+   "notes": "docs/_validate.py scores a cipher-token-to-reading key; here the key is a running key (book text), every position has its own key letter and no cipher type carries one value. The check run instead is the control in decode.py: the rule applied with the right texts reproduces 489 of 499 letters, against at most 37 in 2,000 shuffles of the ciphertext, 11 and 37 with the plaintext or the key shifted one place, and 495 odd-shift positions against at most 287 in 2,000 shuffles."
+  },
   "class": "read in part",
   "key": "recovered",
   "method": "key recovered from ciphertext-only",
@@ -198,15 +203,9 @@
    },
    {
     "who": "kruh",
-    "role": "transcription",
-    "note": "found the sheet in the New York Public Library and printed it (Cryptologia 17(2), 1993); the ciphertext used follows his printing via Futility Closet and Altifina",
+    "role": "new cipher",
+    "note": "found the 1915 sheet in the New York Public Library and printed it (The Cryptogram, 1991; Cryptologia 17(2), 1993); the ciphertext used follows his printing via Futility Closet, the same 499 letters as on Altifina's research page",
     "date": "1993-04"
-   },
-   {
-    "who": "altifina",
-    "role": "transcription",
-    "note": "research page reproducing Kruh's 499-letter printing (25 Aug 2026), used here for the public check before the contributor's strings arrived",
-    "date": "2026-08-25"
    }
   ],
   "gaps": [
