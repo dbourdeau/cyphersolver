@@ -1,0 +1,31 @@
+# noailles1558/beling: checker output, 2026-11-11T20:03Z, in a worktree of dbourdeau/cyphersolver on branch noailles1558-beling, cut from origin/main ddd7e02b, plus this folder and the NOTES.md / profile.json edits (uncommitted). No scripts: the work here is image reading and a text search.
+
+$ python3 docs/_check_profile.py noailles1558
+noailles1558: profile.json
+  [gap ] documents[0].length.tokens = "unknown"
+  [gap ] documents[0].length.distinct = "unknown"
+  [gap ] system.distinct_symbols = "unknown"
+  [gap ] system.diacritics.used = "unknown"
+  [gap ] system.homophones.used = "unknown"
+  [gap ] system.nomenclator.present = "unknown"
+  [gap ] system.nulls.present = "unknown"
+  [gap ] system.key_order = "unknown"
+  [gap ] system.word_division = "unknown"
+  [gap ] system.doubled_letters = "unknown"
+  result: valid, 10 unknown field(s)
+(exit 0)
+
+$ python3 docs/_check_writeup.py noailles1558   (differences from the same run on origin/main)
+<   [ok  ] the page was reviewed against the current NOTES.md and profile.json (review ledger)
+>   [MISS] NOTES.md or profile.json changed since the page was last reviewed (2026-11-07): re-read the page against them, fix what is stale (head, glance box, counts, Still open, credits), then run python docs/_check_writeup.py --reviewed noailles1558
+<   result: complete
+>   result: INCOMPLETE - see MISS lines
+
+$ python3 docs/_check_terms.py noailles1558
+noailles1558: 0 hit(s)
+
+$ cut -f5 transcription_check.tsv | sort | uniq -c
+ 270 agree
+   1 check
+   2 extra?
+   2 unclear

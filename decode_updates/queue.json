@@ -4399,20 +4399,19 @@
   "champagne1590": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/champagne1590.html",
    "key": {
-    "file": "targets/champagne1590/NOTES.md",
+    "file": "targets/champagne1590/texts/key25.md",
     "lang": "French",
-    "how": "nos. 24/25/60: alphabetical two-digit table rebuilt from interlinear glosses (NOTES, table under 'Nos. 24, 25, 60')"
+    "how": "Nevers key no. 25 (BnF fr. 3995 f. 51r, October 1589; Tomokiyo's catalogue of the Nevers keys), matched to these letters by Michael Brackx; names, words and cities of the sheet transcribed by Andrew Beling (targets/champagne1590/beling/transcription/)"
    },
-   "cite": null,
+   "cite": "Key: BnF fr. 3995 f. 51r (Gallica btv1b525085665, view 104), Nevers key no. 25 in S. Tomokiyo, cryptiana code/nevers.htm",
    "fields": {},
    "records": {
     "R9454": {
      "decode_status": "Decrypted",
-     "proposed": "Non-decrypted",
-     "note": "Two short two-digit runs; the alphabet is rebuilt from no. 25 (R9455) but both runs stay open. Status stays Non-decrypted.",
-     "reading": null,
+     "proposed": "Partially decrypted",
+     "note": "Newsletter of 15 June 1590 from the royal camp before Paris, clear French with two cipher runs and five single figures in Nevers key no. 25 (BnF fr. 3995 f. 51r): 'de Ludouic', 'le Roy lu[y] au[o]it', barred names Guise, La Guiche, La Chastre, Soissons. Transcribed and deciphered by Andrew Beling (one reader, 15 doubtful places); contemporary letters are written over both runs.",
+     "reading": "decode_updates/decryptions/R9454.txt",
      "sent": false,
-     "reading_not_needed": true,
      "transcription": [
       "targets/champagne1590/ct_3623_twodigit.txt"
      ]
@@ -4420,14 +4419,14 @@
     "R9455": {
      "decode_status": "Decrypted",
      "proposed": "Partially decrypted",
-     "note": "Two-digit alphabetical homophonic key rebuilt from interlinear glosses; most runs read.",
+     "note": "Newsletter of 5 June 1590, clear French with six cipher runs in Nevers key no. 25 (BnF fr. 3995 f. 51r), transcribed and deciphered by Michael Brackx: 63 of 64 groups. The end of one run is disputed: 'du M. de la noue' (barred 39, Brackx, given here) or 'du Roy' (barred 9, Andrew Beling's second reading).",
      "reading": "decode_updates/decryptions/R9455.txt",
      "sent": false
     },
     "R9459": {
      "decode_status": "Non-decrypted",
      "proposed": "Partially decrypted",
-     "note": "Same key as R9455; 'du sr Ludovic' read, one name open.",
+     "note": "Slip of five lines, same hand and key (Nevers key no. 25): 'du sieur Ludouic', 'de Launan' (the decipherer of the time wrote Launay). Transcribed and deciphered by Andrew Beling; neither person identified.",
      "reading": "decode_updates/decryptions/R9459.txt",
      "sent": false
     },
@@ -14547,6 +14546,12 @@
   },
   "morris1813": {
    "skip": "Not on DECODE: NARA RG 59 M31 roll 14 (Morris's despatches from Spain) has no DECODE record (catalogue vetting of 3 Nov 2026: known.py on the harvested DECODE dump found none); transcriptions, key and readings are in targets/morris1813/."
+  },
+  "caulaincourt1814": {
+   "skip": "Not a DECODE record: Archives nationales AF/IV/1676 nos. 130, 131, 170-171; no DECODE record was found for the shelfmark or the writer (catalogue vetting, 2 Nov 2026), so there is nothing on DECODE to correct."
+  },
+  "noailles1558": {
+   "skip": "No DECODE record: BnF fr. 3151 no. 33 is on Gallica; the repository's DECODE harvest (research/catalogue_harvest/decode/, searched 12 Nov 2026) has no record for fr. 3151, so there is nothing on DECODE to correct."
   }
  }
 }

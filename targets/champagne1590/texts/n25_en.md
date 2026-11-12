@@ -1,6 +1,6 @@
 # No. 25, BnF fr. 3623 f. 38r, 5 June 1590: English
 
-> Michael Brackx (issue #96, 24 Oct 2026), with Codex; uncertainty marks match the French.
+> Michael Brackx (issue #96, 24 Oct 2026), with Codex; uncertainty marks match the French. In G, "distrusts M[onsieu]r de La Noue" is disputed: a second reader (Andrew Beling, 11 Nov 2026) reads "distrusts the [King]" (barred 9, not barred 39); see the note at the head of the French reading.
 
 ### A
 

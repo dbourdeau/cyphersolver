@@ -1,0 +1,341 @@
+{
+ "schema_version": 1,
+ "target": "caulaincourt1814",
+ "title": "Caulaincourt to Napoleon, Congress of Châtillon, February-March 1814: the undeciphered letter of 25 Feb 1814 (AN AF/IV/1676 no. 131) and its keyed siblings nos. 130 and 170-171 (catalogue 534)",
+ "documents": [
+  {
+   "id": "n131",
+   "shelfmark": "Archives nationales, AF/IV/1676, plaquette 4/III no. 131, ff. 890-892 (served on microfilm, Pierrefitte)",
+   "date": "25 Feb 1814",
+   "year": 1814,
+   "country": "France",
+   "route": "Armand de Caulaincourt, duke of Vicenza, Châtillon-sur-Seine -> Napoleon I",
+   "language": "French",
+   "pages": 5,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "AN inventory: 'Lettre en grande partie chiffrée (et sans le déchiffrement)'. No decipherment on or with the leaves (checked on the microfilm, 7 Nov 2026). The opening (f. 890r) and the closing formula are in clear."
+   },
+   "length": {
+    "tokens": 465,
+    "distinct": 252,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcriptions/n131_consensus.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Phone photographs of the microfilm reader screen taken by Jean-Loko, 7 Nov 2026 (14 photos); not committed, held by the contributor",
+    "image_quality": "fair",
+    "notes": "Two readings by the contributor's AI agents (his NOTES name them), reconciled by scripts/consensus.py from cipher-only extracts of the two readings that are not in the pull request (the committed readings include the clear text and number the f. 890v lines one apart, so the script run on them does not give this file; the count was confirmed by an independent counter). 465 groups: 440 identical in both readings (94.6%), 23 with a candidate set and 2 kept as {A | B} blocks; 22 are real digit disagreements. Reading B says f. 891v and f. 892 were read from low-resolution views only. No image has been seen by the project or by the verifier: the figure is agreement between two readings, not accuracy. Distinct: 229 different numbers among the 440 firm groups, plus 23 candidate sets and blocks (252 different tokens as written)."
+   },
+   "read": "not read"
+  },
+  {
+   "id": "n130",
+   "shelfmark": "Archives nationales, AF/IV/1676, plaquette 4/III no. 130, f. 884r-v (continues on f. 885, not photographed)",
+   "date": "25 Feb 1814",
+   "year": 1814,
+   "country": "France",
+   "route": "Armand de Caulaincourt, Châtillon-sur-Seine -> Napoleon I",
+   "language": "French",
+   "pages": 2,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Contemporary decipherment written under each cipher line (not mentioned by the AN inventory, which describes no. 130 as a letter)",
+    "partial": true
+   },
+   "length": {
+    "tokens": 273,
+    "distinct": 190,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcriptions/n130_merged.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Phone photographs of the microfilm reader screen, Jean-Loko, 7 Nov 2026 (6 photos)",
+    "image_quality": "fair",
+    "notes": "Two readings by the contributor's AI agents, 260 of 273 groups firm (95.2%), 12 open; interlinear text (T lines) and word positions (P lines) from reading A. The interlinear decipherment is transcribed as far as the foot of f. 884v, where it breaks off mid-sentence (f. 885 not photographed), with about 15 doubtful places. 12 Nov 2026: P lines f884 P02 and f884v P03-P04 corrected by one group around 669 (by inference from the no. 170 glosses, not on the image). Not checked against images."
+   },
+   "read": "read in part"
+  },
+  {
+   "id": "n170",
+   "shelfmark": "Archives nationales, AF/IV/1676, plaquette 4/IV no. 170, ff. 969-973 (the inventory gives f. 968)",
+   "date": "6 Mar 1814",
+   "year": 1814,
+   "country": "France",
+   "route": "Armand de Caulaincourt, Châtillon-sur-Seine -> Napoleon I",
+   "language": "French",
+   "pages": 10,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "separate folio",
+     "interlinear"
+    ],
+    "source": "No. 171 (ff. 974-976) is its contemporary decipherment; a pale pencil decipherment, word by word, also runs under most cipher lines (not mentioned by the inventory)"
+   },
+   "length": {
+    "tokens": 1346,
+    "distinct": 510,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcriptions/n170_consensus.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Phone photographs of the microfilm reader screen, Jean-Loko, 7 Nov 2026 (28 photos)",
+    "image_quality": "poor",
+    "notes": "Two readings by the contributor's AI agents: 1,120 of 1,353 aligned slots firm (82.8%), 207 open; the moiré of the screen confuses 2/7, 4/8 and 3/5. 443 pencil glosses read with their group (transcriptions/n170_gloss_anchors.tsv), 379 of them on a firm group. No. 171, its complete contemporary decipherment (949 words on 110 text lines, 7 doubtful marks and 1 illegible word), is transcribed in transcriptions/n171_decipherment.txt. Not checked against images."
+   },
+   "read": "read"
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator",
+   "syllabic"
+  ],
+  "summary": "Numeric nomenclator to about 1200, groups separated by dots, some underlined. Whole words (paix, que, les, pour, dans), syllables (Bassano = 952 959/663 395) and some letters; homophones for frequent words (que = 264, 669, 1191); nulls likely. The same key serves no. 130 (25 Feb) and no. 170 (6 Mar): about 33 of 48 numbers that carry a decipherer's word in both documents give the same word or stem. That no. 131 is in it too is presumed from its date.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 581,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "common words",
+    "syllables",
+    "names"
+   ]
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "random",
+  "digit_groups": {
+   "separation": "dots"
+  },
+  "sibling_key": "Nos. 130 (interlinear decipherment) and 170-171 (separate decipherment) in the same carton; plaquettes 4/III-4/IV hold further pairs (161-169, 173-177) and interlinear decipherments (169bis, 179, 185, 187) not yet photographed",
+  "notes": "distinct_symbols counts the different numbers met in nos. 130 and 170 together. Key order: frequent words get unrelated numbers (que 264/669/1191, de 574, les 788), so the table is not alphabetical as far as checked."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Contemporary decipherments of nos. 130 (interlinear) and 170 (no. 171, and pencil glosses) in the same carton; none known for no. 131. Fain, Manuscrit de 1814 (1823), appendix no. 29 prints a different letter of 6 Mar 1814 in clear (candidate for no. 172).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Contributed: Jean-Loko consulted AF/IV/1676 on microfilm at the Archives nationales (Pierrefitte) on 7 Nov 2026 and photographed the reader screen; the transcriptions (two independent readings per cipher), their reconciliation and the key alignment were done with Claude Code.",
+  "tools": [
+   "scripts/consensus.py",
+   "scripts/aligner_multi.py",
+   "scripts/dechiffrer.py"
+  ],
+  "models": [
+   "claude-opus-5-5",
+   "claude-sonnet-5-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-11-07",
+  "last_date": "2026-11-12"
+ },
+ "solution": [
+  {
+   "date": "2026-11-07",
+   "kind": "access",
+   "what": "AF/IV/1676 consulted on microfilm at Pierrefitte; nos. 130, 131, 170 and 171 photographed from the reader screen (the call number comes from the AN inventory FRAN_IR_003828: plaquettes 4/III and 4/IV are both in AF/IV/1676).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-07",
+   "kind": "transcription",
+   "what": "Each cipher read twice from the photographs and reconciled group by group: no. 130 95.2% of groups firm (260 of 273), no. 131 94.6% (440 of 465), no. 170 82.8% (1,120 of 1,353 slots). No. 171 (949 words) and the clear opening of no. 131 transcribed. The figures are agreement between two readings by AI agents; no image is available to check them.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-31",
+   "kind": "literature search",
+   "what": "Fain, Manuscrit de 1814, appendix no. 29 prints a Caulaincourt letter of 6 Mar 1814 ('La question qui va se décider...'), not the text of no. 171. Houssaye, 1814 (1888) quotes Caulaincourt's letters of 24 and 27 Feb and 1, 11 and 13 Mar from 'Arch. des Affaires étrangères, fonds France, 668'.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "solver",
+   "what": "Shared key rebuilt by soft EM alignment of no. 170 with no. 171 (pencil glosses as anchors) and of no. 130 line by line with its interlinear text (word positions as anchors), uncertain readings kept as candidate sets (scripts/aligner_multi.py).",
+   "technique": [
+    "EM alignment",
+    "beam/DP decoding"
+   ],
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "what": "One key for 25 Feb and 6 Mar: of 48 numbers that carry a word written by the decipherer both in no. 130 (interlinear, single-group positions) and in no. 170 (pencil glosses), about 33 give the same word or stem (18 et, 264 que, 669 que, 744 il, 84 en, 101 paix, 414 nous, 996 dit, 544 and 798 par, 12 ne, 16 la, 1191 que). 800 (a in no. 130; its one gloss in no. 170 reads 'ont') and 910 (lettre in no. 130; no gloss in no. 170) rest in no. 170 on the gloss-anchored alignment only. As first written this step said the no. 130 values were found independently by aligning 170 with 171; without the glosses that alignment gives 798 attendre, 800 ce, 910 que.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "reading",
+   "what": "Partial key applied to no. 131 (key/n131_trial_decode.txt): 132 of 465 groups (28.4%) take a firm value where both readings agree on the group, 140 of 465 (30.1%) when a firm candidate is picked among uncertain readings; fragments only, no sentence. (First reported as 140 of 481: scripts/dechiffrer.py split the two {A | B} blocks of the consensus into 16 false groups; fixed 12 Nov 2026.)",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "EM alignment",
+    "statistical test"
+   ],
+   "what": "Integration of PR #411 after an independent verification. Reproduced from the committed files: the three consensus files, the key table and alignment (aligner_multi.py, 2 minutes), the trial decode. No image exists outside the contributor's phone, so no transcription could be checked. Corrections: no. 131 has 465 groups, not 481 (tokenizer fixed); 443 glosses, not 440; no. 171 has 949 words, not 970; the no. 130 position lines around 669 corrected by one group and the aligner rerun: 581 numbers aligned, 108 with a firm value (582 and 105 as sent). Of the 108, 45 are seen exactly twice and 21 are contradicted by the only direct evidence there is (a pencil gloss or a no. 130 position); on the table as sent the verifier found 82 of 105 surviving a 170-only run with anchors and 25 of 105 a run without the glosses, so the key is carried by the glosses and positions, and a realistic firm core is about 40 to 60 numbers, mostly function words. Nos. 130 and 170-171 recorded as existing decipherments transcribed, not as readings made here. Catalogue entry 534 and archive requests ar-240 to ar-242 updated with what the visit found, marked as from the contributor's visit and not checked here.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "No. 131, the target, is not read. A partial key (581 numbers aligned, 108 with a firm value, 21 of those contradicted by a gloss and 45 seen only twice) was rebuilt by the contributor from the contemporary decipherments of nos. 130 and 170 in the same key; applied to no. 131 it gives firm values for 132 of 465 groups (28.4%) and no sentence. Nos. 130 and 170 are read from their existing decipherments, which were transcribed, not deciphered here.",
+  "contribution": [
+   "catalogue correction"
+  ],
+  "class": "not read",
+  "fraction_read": 0,
+  "key": "partial",
+  "verification": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "No. 131, the whole cipher (465 groups)",
+    "blocker": "needs-physical-access",
+    "detail": "the partial key covers too little: 85.6% of its groups show a number met in nos. 130 or 170, but only 28.4% take a firm value; more decipherments in the same key are in the carton (169bis, 179, 185, 187 interlinear; pairs 161-169, 173-177; f. 885 of no. 130)"
+   },
+   {
+    "item": "The photographs: every transcription here (nos. 130, 131, 170, 171) is unverified",
+    "blocker": "needs-physical-access",
+    "detail": "no image exists outside the contributor's phone (48 photographs of the microfilm reader screen, not committed; the AN record has no public images). The contributor is to be asked for the photographs, or for reader exports at the next visit, so that at least a sample of groups can be checked"
+   },
+   {
+    "item": "The no. 131 consensus does not rebuild from the committed files",
+    "blocker": "needs-physical-access",
+    "detail": "it was made from cipher-only extracts of the two readings (n131_lecture_A_chiffre.txt, n131_lecture_B_chiffre.txt) that are not in the pull request; on the committed readings consensus.py gives 647 groups and 51.9%. The 465 groups were confirmed by an independent counter. The extracts are with the contributor"
+   },
+   {
+    "item": "No. 172, 6 Mar 1814, 'le déchiffrement manque'",
+    "blocker": "needs-physical-access",
+    "detail": "not photographed; it follows no. 171, so it starts at f. 977 (the inventory's ff. 974-981 include no. 171). Compare with Fain no. 29 (print/fain1823_no29_6mar1814.txt)"
+   },
+   {
+    "item": "Nos. 191-192, mid-March 1814",
+    "blocker": "needs-physical-access",
+    "detail": "not photographed"
+   },
+   {
+    "item": "Clear copies of the Châtillon letters",
+    "blocker": "needs-physical-access",
+    "detail": "Houssaye's 'Affaires étrangères, fonds France, 668' (probably Mémoires et documents, France 668, La Courneuve) may hold the clear texts"
+   },
+   {
+    "item": "Digit readings of no. 170",
+    "blocker": "illegible",
+    "detail": "phone photographs of the reader screen; 17% of slots uncertain (2/7, 4/8, 3/5). Exporting images from the reader should settle most"
+   }
+  ],
+  "notes": "In progress: archive request ar-240. Nothing of no. 131 is read.",
+  "credits": [
+   {
+    "who": "jean-loko",
+    "role": "transcription",
+    "note": "archive visit and photographs of AF/IV/1676 nos. 130, 131, 170 and 171 (Archives nationales, 7 Nov 2026); double transcription and partial key (with the AI agents his NOTES name)",
+    "date": "2026-11-07",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/411"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the interlinear decipherment of no. 130, the pencil glosses of no. 170 and its separate decipherment no. 171 (AF/IV/1676), transcribed by the contributor"
+   }
+  ],
+  "provenance": "mixed",
+  "parts": [
+   {
+    "label": "No. 131, 25 Feb 1814 (the target)",
+    "records": "AF/IV/1676 no. 131, ff. 890-892",
+    "method": "not solved",
+    "extent": "none",
+    "basis": "465 groups transcribed twice; the partial key gives firm values for 132 (28.4%) and no sentence"
+   },
+   {
+    "label": "No. 170, 6 Mar 1814, with its decipherment no. 171",
+    "records": "AF/IV/1676 nos. 170-171, ff. 969-976",
+    "method": "read from existing decipherment",
+    "extent": "complete",
+    "basis": "no. 171 is the complete contemporary plaintext of no. 170 (949 words through signature and postscript), transcribed from the contributor's photographs; not deciphered here, and not checked against images"
+   },
+   {
+    "label": "No. 130, 25 Feb 1814",
+    "records": "AF/IV/1676 no. 130, f. 884r-v",
+    "method": "read from existing decipherment",
+    "extent": "partial",
+    "basis": "the interlinear decipherment of the time transcribed to the foot of f. 884v, where it breaks off mid-sentence (f. 885 not photographed); about 15 doubtful places"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "n170",
+    "label": "No. 170, 6 Mar 1814, with no. 171, its decipherment of the time",
+    "transcription": "transcriptions/n170_consensus.txt",
+    "decryption": "transcriptions/n171_decipherment.txt",
+    "language": "fr",
+    "state": "read",
+    "read_share": 0.99,
+    "summary": "Caulaincourt reports to Napoleon that Floret has read him a letter from Metternich: complaints about Napoleon's letter to the Emperor of Austria, a warning that if the negotiation breaks no one in England will treat with him, regret that no counter-project was handed over after Blücher's defeat, and that Paris will be placed as Dresden was; Antwerp is an absolute condition for England. Postscript: the armistice talks are said to be broken off.",
+    "note": "An existing decipherment transcribed, not a reading made here: no. 171 is the contemporary plaintext of no. 170, complete through signature and postscript (949 words; 7 doubtful marks and 1 illegible word, hence about 0.99). Transcribed by the contributor's AI agents from phone photographs of the microfilm screen; no image was available to check it. No English translation yet.",
+    "reading_review": {
+     "grade": "A",
+     "by": "project (integration check of PR #411)",
+     "date": "2026-11-12",
+     "note": "Read end to end as French sentences: a complete, coherent letter. The transcription itself is unverified (no images)."
+    }
+   },
+   {
+    "doc": "n130",
+    "label": "No. 130, 25 Feb 1814, with the decipherment of the time between the lines",
+    "transcription": "transcriptions/n130_consensus.txt",
+    "decryption": "transcriptions/n130_merged.txt",
+    "language": "fr",
+    "state": "read in part",
+    "summary": "Caulaincourt to Napoleon: Bassano, answering on the 23rd a private letter of the 19th, quoted it inexactly, turning 'peace would always be honourable if it were truly reasonable' into an assurance that a truly reasonable peace depends only on the French, and asks by what overtures Caulaincourt knows which allied conditions are firm. The text breaks off mid-sentence at the foot of f. 884v.",
+    "note": "An existing decipherment transcribed, not a reading made here: the interlinear text written under each cipher line (the T lines of the file). Incomplete: f. 885 was not photographed; about 15 doubtful places. No image was available to check it. No English translation yet."
+   },
+   {
+    "doc": "n131",
+    "label": "No. 131, 25 Feb 1814: trial decode with the partial key",
+    "transcription": "transcriptions/n131_consensus.txt",
+    "decryption": "key/n131_trial_decode.txt",
+    "language": "fr",
+    "state": "decoded, not read",
+    "summary": "The clear opening reports the Austrian post leaving Châtillon and the orders given to the mayor for the safety of the Congress; the 465 cipher groups that follow are not read. The partial key gives fragments only ('d une', 'mouvement de la n').",
+    "note": "132 of 465 groups (28.4%) take a firm value where both readings agree; no sentence forms."
+   }
+  ],
+  "key_file": "key/key_partial.tsv"
+ }
+}

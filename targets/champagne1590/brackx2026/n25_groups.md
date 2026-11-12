@@ -1,5 +1,7 @@
 # No. 25 cipher groups: word alignment and group audit (Michael Brackx, issue #96, 24 Oct 2026)
 
+> Note added 12 Nov 2026 (integration of PR #422; the tables below are Brackx's, unchanged). Two rows are affected by Andrew Beling's second reading of the page: `n25_union` (the page has 58, as both readers see it; 56 is an emendation of the encipherer's figure, so the "awaits independent confirmation" is answered) and `n25_soissons_lanoue` (Beling reads the last group as a barred 9, Roy, not B:39, M. de La Noue; the independent verifier's look agrees with Beling; Brackx has not yet been asked).
+
 ## Word-to-group alignment
 
 | Run | Reading word | First group | Last group | Cipher figures | Evidence |
