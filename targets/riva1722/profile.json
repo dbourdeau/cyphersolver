@@ -462,9 +462,64 @@
       "kind": "literature search",
       "what": "Lindgren 2016 (Il Saggiatore musicale 23/2) looked for: not open, not seen; known at second hand to cite a Starhemberg letter of 13 Mar 1726. Lindgren and Timms 2003 and Stefani searched through a fetch tool: no cipher passage and none of these letters. Modena-side archives not checked.",
       "result": "partial"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "statistical test",
+        "language-model scoring"
+      ],
+      "what": "Statistical validation (docs/_validate.py): 2175 tokens, 96 types, it-modern order 4: reading -1.96 per letter; random keys -4.179 (z 11.0); key annealed onto shuffled ciphertext best -2.705 (mean -2.71, z 128.6); annealer on the real text -2.479. Verdict: pass.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "other"
+      ],
+      "what": "Integration check: scripts/build.py rerun, every count reproduces (2175 of 2540; per letter as filed); a second decoder written from key.tsv and the transcriptions alone agrees on 97 of 97 groups (19 Feb 1727) and 406 of 406 (20 Mar 1726); RFC 3161 replies read (K3 21:30 GMT, 1727 22:04, Olivazzi 22:13, 11 Nov); all 97 groups of c. 23r agree with the Estense image; K3 gives no language on the 31 May 1721 letter, so the 1720-21 letters are a separate target (starhemberg1721). Rough word-level count from the readings: about 74% (estimate, not the headline).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "what": "Limits found at integration: K3's 15 rows were made on the four 1722 letters (their 88.7% is in-sample; 90 of the 2175 counted groups use a K3-changed row); K2 cannot be re-derived from the files (ten gloss pairs kept, the two glossed letters not transcribed); row 5 (plain 51 and 52) unsettled; the order of events is shown by the time stamps, which cannot show that nobody looked earlier.",
+      "result": "partial"
     }
   ],
   "outcome": {
+    "validation": {
+      "date": "2026-11-12",
+      "model": "it-modern",
+      "file": "validation.tsv",
+      "tokens": 2175,
+      "types": 96,
+      "tokens_per_type": 22.66,
+      "score": -1.96,
+      "nulls": {
+        "random keys": {
+          "n": 200,
+          "mean": -4.179,
+          "sd": 0.201,
+          "max": -3.802,
+          "z": 11.0,
+          "p": 0.005
+        },
+        "shuffled refit": {
+          "n": 6,
+          "mean": -2.71,
+          "sd": 0.006,
+          "max": -2.705,
+          "z": 128.6,
+          "p": 0.1429
+        }
+      },
+      "power": -2.479,
+      "verdict": "pass",
+      "notes": "claimed per-occurrence score -1.967; polyphony 0.073; 365 unread tokens left out; annealer on the real text from random keys reached -2.479"
+    },
     "class": "read in part",
     "key": "partial",
     "method": "key recovered based on adjacent plaintext",
@@ -484,7 +539,8 @@
     },
     "verification": [
       "key confirms",
-      "historical consistency"
+      "historical consistency",
+      "statistical test"
     ],
     "provenance": "contributed",
     "credits": [
@@ -750,9 +806,9 @@
         "summary": "French clear text about a Baron d'Eisenberg's courtship is cover. The cipher begins where the lady's name should stand: everything so far is feigned; His Excellency asks Riva to watch closely what passes in affairs, particularly with Palm (the Emperor's resident in London), as to his conduct now and later, and what measures the British court takes. Palm was expelled from London the next month.",
         "reading_review": {
           "grade": "B",
-          "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (the session that prepared these files). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
+          "by": "integration reviewer (an AI reader, 12 Nov 2026), reading the decryption as sentences against the translation; not a person",
           "date": "2026-11-12",
-          "note": "Read as sentences against the translation. Connected Italian whose argument can be followed; holes are marked in place: codes (with or without a proposed value), words with a supplied or emended letter, groups not read."
+          "note": "A short run of sentences: \"Tutto sin qua e finta, ma Sua [264] prega [V.S.] di osservare [276] diligentemente adesso tutto [quel] che si passera ... particolarmente con Palm ... e [228] misure piglierebbe...\" builds Italian and agrees with the French cover text; open: five codes and supplied letters."
         },
         "note": "read_share is our count of the README word rule on the reading file (43 words, 12 holes, 0 doubtful): every code and every word with a supplied or emended letter counts as a hole, and the clear text is counted with the cipher. By cipher units: 84 of 97 (86.6%)."
       }

@@ -70,3 +70,23 @@ ALL NINE LETTERS
   E 356, N 9; 2175 + 356 + 9 = 2540; struck 4
   strict 2175/2540 = 85.63% (pooled only as a sum; each letter is counted on its own above)
   not read, by kind: code 201; downgraded on reading 93; illegible 9; not in the key 22; transcription doubt 40 (sum 365)
+
+RECONCILIATION WITH THE FIGURES IN THE ISSUES (12 Nov 2026)
+- Issue 425 (Starhemberg, 20 Mar 1726): 344/409 = 84.11% was a count under K2, with three clear dates (19_, 22_, 6_) taken
+  as cipher and with three groups (10_, 70_, 30_) decoded by a fallback that the stated rules did not have. WITHDRAWN.
+  Redone here: the three dates are clear text (409 - 3 = 406 units); one decode with K3 as frozen on 11 Nov; no fallback.
+  Before reading: S 371, E 35, N 0 (371 + 35 = 406). 20 units downgraded on reading (overrides.tsv), none upgraded:
+  351 + 55 + 0 = 406; strict 351/406 = 86.45%. The 55: codes 32, downgraded 20, not in the key 1, doubt 2 (32+20+1+2 = 55).
+  The shuffled-key control was NOT re-run on this notation (K3 on the old notation: 0 of 5,000, b70 regression).
+- Issue 429 (Selvatico, four letters of 1722): 128/150, 279/307, 675/757, 191/222; 128 + 279 + 675 + 191 = 1,273;
+  150 + 307 + 757 + 222 = 1,436; 1,273/1,436 = 88.65%. Reproduced by scripts/build.py. The blind second transcription
+  (timestamps/selvatico1722_blind2) under the same key and rule: 124/150, 278/307, 649/755, 186/220; 1,237/1,432 = 86.38%.
+  '56 repairs' corrected: 15 key rows (key.tsv header).
+- Issue 430 (Selvatico, two letters without a year): first decode 149/179 and 40/48, 189/227 = 83.26%. Three units of
+  the 179 were bracket notes split by the parser, not groups; with the notation fixed and no digit changed:
+  149/176 and 40/48, 189/224 = 84.38%. This folder uses the fixed notation.
+- Issue 432 (Starhemberg, 19 Feb 1727): 84/97 = 86.60%. Reproduced. (The 1721 letters are in targets/starhemberg1721.)
+- Issue 433 (Olivazzi, 17 Apr 1725): the issue printed pass A, 259/376 = 68.88%. Blind pass B: 268/378 = 70.90%.
+  Consensus of the two after adjudication of 27 places: 278/377 = 73.74%. This folder carries the consensus, and the
+  reading and the English were made on the consensus decode.
+- Pooled sum of the nine letters: 2,175/2,540 = 85.63%. Not a claim about any one letter.

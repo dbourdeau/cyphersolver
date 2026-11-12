@@ -230,9 +230,64 @@
       "kind": "literature search",
       "what": "Lindgren 2016 not open and not seen; Lindgren and Timms 2003 searched through a fetch tool: these letters are not printed there.",
       "result": "partial"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "statistical test",
+        "language-model scoring"
+      ],
+      "what": "Statistical validation (docs/_validate.py): 372 tokens, 22 types, it-modern order 4: reading -2.584 per letter; random keys -5.658 (z 5.7); key annealed onto shuffled ciphertext best -3.383 (mean -3.507, z 11.5); annealer on the real text -3.003. Verdict: pass.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "other"
+      ],
+      "what": "Integration check: scripts/build.py rerun, every count reproduces (372 of 426; 138 of 159 without gloss); a second decoder written from key.tsv and the transcriptions alone agrees on 33 of 33, 104 of 104 and 282 of 289 groups; RFC 3161 replies read (K21 22:07 GMT, 21 Dec 23:09, 14 Jun 23:29, 11 Nov); all 104 groups of c. 17r agree with the Estense image; the Riva table K3 gives no language on the 31 May letter. Rough word-level count: about 57% (estimate, not the headline).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "what": "Limits found at integration: the glossed groups of 31 May are the key's own source; the 14 Jun and 21 Dec transcriptions were not compared with any image (only short record ids known); the value of 20 and the group 23 in 'acquistati' are unsettled.",
+      "result": "partial"
     }
   ],
   "outcome": {
+    "validation": {
+      "date": "2026-11-12",
+      "model": "it-modern",
+      "file": "validation.tsv",
+      "tokens": 372,
+      "types": 22,
+      "tokens_per_type": 16.91,
+      "score": -2.584,
+      "nulls": {
+        "random keys": {
+          "n": 200,
+          "mean": -5.658,
+          "sd": 0.536,
+          "max": -4.241,
+          "z": 5.7,
+          "p": 0.005
+        },
+        "shuffled refit": {
+          "n": 6,
+          "mean": -3.507,
+          "sd": 0.08,
+          "max": -3.383,
+          "z": 11.5,
+          "p": 0.1429
+        }
+      },
+      "power": -3.003,
+      "verdict": "pass",
+      "notes": "claimed per-occurrence score -2.584; polyphony 0.0; 54 unread tokens left out; annealer on the real text from random keys reached -3.003"
+    },
     "class": "read in part",
     "key": "partial",
     "method": "key recovered based on adjacent plaintext",
@@ -251,7 +306,8 @@
     },
     "verification": [
       "contemporary decipherment",
-      "key confirms"
+      "key confirms",
+      "statistical test"
     ],
     "provenance": "contributed",
     "credits": [
@@ -345,9 +401,9 @@
         "summary": "His return to England is certain, as Ambassador. In cipher: the Duke of Modena does well to continue his devotion to the House of Austria, the more so as examples show that those who have been faithful to it have gained very great advantages; he will say more on this point when he arrives. The second half is not covered by the contemporary gloss.",
         "reading_review": {
           "grade": "B",
-          "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (the session that prepared these files). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
+          "by": "integration reviewer (an AI reader, 12 Nov 2026), reading the decryption as sentences against the translation; not a person",
           "date": "2026-11-12",
-          "note": "Read as sentences against the translation. Connected Italian; holes marked in place (codes, the q/e group, doubled letters emended, words read by sense)."
+          "note": "Reads as one Italian sentence (\"suo Ser[enissimo] Duca fa bene di continuare la sua divotione verso l augusta Casa d Austria, tanto piu che gli essempi mostrano che [quelli che] sono stati fedeli ... hanno acquistati grandissimi vantaggi\"), the first half the gloss own text."
         },
         "note": "read_share is our count of the README word rule on the reading file (62 words, 8 holes, 0 doubtful); the clear text is counted with the cipher. By cipher units: 93 of 104; without a gloss 31 of 36."
       },
@@ -364,9 +420,9 @@
         "summary": "He asks about the South Sea affair and whether an opera company will be formed in London this year. In cipher: Borosini, in Vienna, sings tenor and has no equal in Europe; he would join the company if asked for in the name of the King or of the company, and a letter of request to Starhemberg would do. A certain Colman has arrived to serve under St Saphorin, the British minister: is he the son of 'Hoffman'? He wants all the talk of court and nation in London on Vienna's conduct towards 'Sig. Cnigt' (Robert Knight of the South Sea Company, by sense). Context: the Royal Academy of Music's recruiting of singers; Francesco Borosini did sing in London in 1724-25.",
         "reading_review": {
           "grade": "B",
-          "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (the session that prepared these files). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
+          "by": "integration reviewer (an AI reader, 12 Nov 2026), reading the decryption as sentences against the translation; not a person",
           "date": "2026-11-12",
-          "note": "Read as sentences against the translation. Connected Italian; holes marked in place (codes, the q/e group, doubled letters emended, words read by sense)."
+          "note": "Builds Italian sentences about Borosini, Colman and Hoffman with holes in about a fifth of the cipher words; the glossed sentences are the glossator, the rest is model reading."
         },
         "note": "read_share is our count of the README word rule on the reading file (276 words, 38 holes, 3 doubtful); the clear text is counted with the cipher. By cipher units: 249 of 289; without a gloss 97 of 110."
       }

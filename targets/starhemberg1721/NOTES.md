@@ -67,9 +67,46 @@ ziffere, notizia, nazione). This is derived, not seen in a key sheet, and no cou
 
 ## Remaining gaps
 
-See `holes.md`. In short: every 20 to be re-read at full scale; "acquistati"; four places of the 14 Jun letter; codes
-59, 9, 62, 85, 236, 301; the glosses not transcribed diplomatically; clear text mostly not transcribed; no second
-transcription or reader; cc. 3-12 and 15-16 of the file not examined by us for more of this cipher.
+- every 20 re-read at full scale (20 = e in "verso", "essempi"; q in "quelli", "qui"); "acquistati" (31 May, 17r.L6-L7), where the table-order reading of 20 as q leaves 23 to be u in one place and t in the others - blocker: illegible; the 1,400-px image shows clean figures but no separate sign for the two values of 20, and no key sheet of the writer is known
+- codes 59, 9, 62, 85, 236, 301 and four places of the 14 Jun 1721 letter (`holes.md`) - blocker: open-codes; each occurs once or twice with no context that decides it
+- the glosses of 14 Jun 1721 and 21 Dec 1720 are not transcribed diplomatically, and the clear text of the letters mostly not - blocker: needs-physical-access; the full record ids of these two letters are known only as short ids (4f2940f8, 7667c7b4), the short-id manifests give 404 and the library's catalogue pages were not reachable, so the images could not be fetched at integration
+- Lindgren 2016 not seen - blocker: needs-physical-access; Il Saggiatore musicale 23/2, pp. 277-374, paywalled, a library copy is needed; the Borosini passage of 14 Jun 1721 is the most exposed
+- cc. 3-12 and 15-16 of the Starhemberg file, not examined for more of this cipher - blocker: needs-physical-access; not reachable from here
+
+## Further work (outside this target's texts)
+
+- No second transcription and no second reader of the three letters. At integration all 104 groups of the 31 May 1721
+  letter (c. 17r) were compared with the image by an AI reader: all agree; the 14 Jun and 21 Dec transcriptions were
+  not compared with any image by anyone but their transcriber.
+
+## Integration check (12 Nov 2026)
+
+- `scripts/build.py` rerun on a copy: 30 of 33, 93 of 104, 249 of 289 (372 of 426 = 87.32%); unglossed 10 of 13, 31 of 36,
+  97 of 110 (138 of 159 = 86.79%); `units.tsv` and `decryptions/` regenerate identically. A second decoder written from
+  `key.tsv` and the transcriptions alone agrees on 33 of 33, 104 of 104 and 282 of 289 groups (the seven differences are
+  trailing doubt marks and the sign for an illegible group).
+- Timestamps: RFC 3161 replies (Sectigo) of 11 Nov 2026: 31 May 1721 22:07:00 GMT (it holds `KEY_K21.tsv`, md5
+  0bbf709160237928df5c7390547d7183), 21 Dec 1720 23:09:47, 14 Jun 1721 23:29:11. The key file is byte-identical in the
+  three stamps and the SHA-256 of every stamped file in the repository equals its manifest line, so the key was fixed before
+  the other two letters were transcribed. The glossed units of 31 May (68 of 104) are the key's own source and prove nothing;
+  the glossed units of 14 Jun (179) are a check that was not used to build the key but is not counted as a test either.
+- Image: c. 17r of 31 May 1721, all eight cipher lines, 104 groups: the transcription agrees throughout, and the foot gloss
+  ends "mostrano che [struck] e vel:" as quoted.
+- The Riva table K3 applied to the 31 May letter gives no language; K21 gives Italian. Two keys, two folders: the Riva table
+  is in `targets/riva1722`. K21 is related to the 1719 table of `targets/selvatico1719` (b c d f g at 11-15, n at 18, q or qu
+  at 20) but r s t z (21-24 here, 25-27 and 29 there) differ.
+- Counting: the figures count cipher units under the strict rule of this folder (codes, the doubling mark, doubts and emended
+  units are not read). A rough count by words, from the asterisk spans of `readings/` (a word with a bracket or `?` as
+  open), gives about 57% for the three letters (14 Jun 1721 54%): an estimate, not a measurement. Neither is near 95%.
+
+## Escalation
+
+- [x] siblings: the Estense Starhemberg file swept; two more letters in this cipher found (14 Jun 1721, 21 Dec 1720); the other letters of the file are in the Riva table (`targets/riva1722`)
+- [x] clear-pages: the foot gloss of c. 17r is the contemporary decipherment of the first half of the 31 May letter and the key's only source; the glosses of 14 Jun and 21 Dec read between the lines
+- [x] known-keys: the Riva table K3 (597 and 3,435 of 5,000 shuffled keys as good: it does not read these letters) and the 1719 table of `selvatico1719` (r s t z differ) tried
+- [x] print: Lindgren and Timms 2003 searched in an open copy (no cipher); Lindgren 2016 not seen (paywalled), recorded as a gap
+- [x] key-rebuild: K21 is the gloss values only (22 letters, one code); the table-order structure (b c d f g l m n p q r s t z from 11, vowels again at 10 to 50) explains the second value of 20 and is not used for any count
+- [x] retry: every unit not read is in `units.tsv` with its reason; the places of the 14 Jun letter and the 20s are listed in `holes.md`
 
 ## Prior art (checked 11-12 Nov 2026): priority not established
 

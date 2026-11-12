@@ -132,16 +132,55 @@ Full Italian with holes in place: `readings/`. English: `translations/`.
 
 ## Remaining gaps
 
-- Codes: 201 units, 74 different numbers; none is counted read. `holes.md` 2 lists each with the proposed value, if any.
-- 8 plain/underlined conflicts in the 1726 letter, and the words "n-ma-na-r-la" (21r.L11), "di centena da" (21v.L01),
-  "su fi" (21v.L09): the image has to be looked at again.
-- The two glossed letters of 1726 are not transcribed; the gloss pairs behind K2 are recorded only in part.
-- Olivazzi: four stretches not read, the right edge of 2v under the facing leaf, clear text only roughly read.
-- Clear text of all letters: one reader; abridged in places.
-- No person has compared the transcriptions with the images.
-- 51 and 52 plain (ra/ga? re/ge?), 5_ (chi), 30_ (esser), 50_, 0_, 9_, 9: proposed or open, not in the key.
-- Other Riva correspondents: 398 of 535 further records were viewed in full and no other letter in this table was
-  found; 111 records were not checked.
+- Codes: 201 units, 74 different numbers; none is counted read - blocker: open-codes; `holes.md` 2 lists each with the proposed value, if any (only 288 V.S. and 214 Olanda have a gloss of the time)
+- 8 plain/underlined conflicts in the 20 Mar 1726 letter, and the words "n-ma-na-r-la" (21r.L11), "di centena da" (21v.L01), "su fi" (21v.L09) - blocker: illegible; whether a stroke runs under a group is not settled on the 1,400-px images; the full-resolution crops were not re-viewed for this folder
+- row 5 of the table: plain 51/52 (ra/ga? re/ge?) against plain 53/54/55 = g (K3); 5_ (chi), 30_ (esser), 50_, 0_, 9_, 9 - blocker: no-key-material; the gloss pairs recorded (`gloss/gloss_pairs.tsv`, 10 pairs) do not decide them; "ingegnarsi", "diligente" and "regenti" need plain 52 = ge
+- the K2 rows read off the two glossed letters of 1726 (27 Feb, 6 Mar) - blocker: no-key-material; only 10 gloss pairs and a rough group reading of c. 5r were written down, and the two letters are not transcribed in full, so K2 itself cannot be re-derived from the files (the pair behind 8_ = E, replaced by PER in K3, is not among the ten)
+- Olivazzi 17 Apr 1725: four stretches not read, the right edge of 2v under the facing leaf; 2v is decoded, not read - blocker: illegible
+- Lindgren 2016 (Il Saggiatore musicale 23/2) not seen - blocker: needs-physical-access; sold by the publisher's platform, needs a library copy; the Modena-side records (Archivio di Stato, cifrari) are the other place a key may survive
+- Other Riva correspondents: 398 of 535 further records viewed in full, no other letter in this table; 111 not checked - blocker: needs-physical-access; records not reachable from here
+
+## Further work (outside this target's texts)
+
+- Clear text of all letters: one reader (the model), abridged in places.
+- Transcriptions against the images: apart from the contributor's own two passes and blind second transcriptions, the
+  checks are by AI readers only (the 12 Nov reviewer: 87 of 87 groups of 20 Mar 1726; the integration check below: all 104
+  groups of the 31 May 1721 letter in `targets/starhemberg1721` and all 97 groups of 19 Feb 1727). No person has compared them.
+
+## Integration check (12 Nov 2026)
+
+What was checked, from the files, before the page was written (full report in the integrator's verification notes):
+
+- `scripts/build.py` rerun on a copy: every count in the table above reproduces (2,175 of 2,540; per letter as listed);
+  `units.tsv` and `decryptions/` regenerate identically. `counts.txt` as filed lacked the reconciliation block that
+  `build.py` appends from `counts_notes.txt`; regenerated.
+- A second decoder written from `key.tsv` and the transcriptions alone: 19 Feb 1727 97 of 97 groups, 20 Mar 1726 406 of 406
+  (the other letters, the same except for marks of illegibility).
+- Timestamps: the RFC 3161 replies (Sectigo) of 11 Nov 2026 were read: 20 Mar 1726 pass 21:08 GMT, K3 21:30, blind second
+  transcription 21:43, undated letters 21:55, 1727 22:04, Olivazzi 22:13 and 22:25. The SHA-256 of every stamped file that is
+  in the repository equals its manifest line (one file, the log, changed afterwards, as declared); md5 of `KEY_K3.tsv` is
+  65b083be69e3a4c6219c65566aee20fc as stated. So the order K3, then the 1727 and Olivazzi letters, is shown by the stamps;
+  what they cannot show is that no one looked at those letters earlier.
+- Not held out: the 15 K3 rows were made on the four 1722 letters, so their 88.65% is in-sample; 90 of the 2,175 read units
+  use a row that K3 changed (2 to 30 per letter). Held out from K3: 20 Mar 1726, 19 Feb 1727, Olivazzi, the two undated letters.
+- Counting: the figures count cipher units (a syllable or a word sign), the strict rule of this folder. A word with one open
+  syllable still counts its other syllables as read. A rough count by words (the words inside the asterisks of
+  `readings/`, a word with any bracket or `?` as open) gives about 74% for the nine letters, 60% for Olivazzi: an estimate
+  made at integration, not a measurement. Neither figure is near the 95% bar.
+- Images: 19 Feb 1727 c. 23r, all 97 groups and the underlines agree with the transcription on the 1,400-px image.
+- Keys: K3 applied to the 31 May 1721 letter gives no language (`lm.best_language`), K21 gives Italian: the Starhemberg
+  letters of 1720-21 are another key and are in `targets/starhemberg1721`. K21 is related to the 1719 table of
+  `targets/selvatico1719` (b c d f g at 11-15, n at 18, q at 20) but r s t z and the vowel rows differ.
+- `selvatico1719` lists the 1722 and undated Selvatico letters and the Starhemberg letters as not solved or not worked: they are here.
+
+## Escalation
+
+- [x] siblings: the Estense file for Starhemberg, Selvatico and Olivazzi viewed; the two glossed 1726 letters are the key source; 398 of 535 further Riva records viewed, no other letter in this table
+- [x] clear-pages: no clear copy of any of the nine letters; the dates written in clear inside the cipher lines of 20 Mar 1726 taken out of the cipher
+- [x] known-keys: the 1719 table of `selvatico1719` (its contributor found that it does not read the 1722 letters); K21 of `starhemberg1721` and K3 tried on each other's letters: neither fits
+- [x] print: Lindgren and Timms 2003 and Stefani searched in open copies (no cipher); Lindgren 2016 not seen (paywalled), recorded as a gap
+- [x] key-rebuild: K2 rebuilt to K3 from context in the 1722 letters (15 rows), 7 unglossed rows dropped; remaining values proposed in `holes.md` 2 and not counted
+- [x] retry: every unit not read is listed in `units.tsv` with its reason; the underline conflicts of 20 Mar 1726 left for the full-resolution images (gap above)
 
 ## Prior art (checked 11-12 Nov 2026): priority not established
 
