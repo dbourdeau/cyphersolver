@@ -1,0 +1,8 @@
+LABEL: bonde_memorial_opening
+Local UTC: 20261112T035321Z
+Files: 109
+Manifest SHA-256: dacc238e0ff924bf71428319aa49520353675d6ebaab9d6577974446952b8921
+RFC3161 TSA (Sectigo Public Time Stamping Signer): status=Granted. time=Nov 12 03:53:21 2026 GMT
+OpenTimestamps: submitted (pending Bitcoin; ots upgrade later)
+Verify RFC3161: openssl ts -reply -in MANIFEST.sha256.tsr -text ; openssl ts -verify -data MANIFEST.sha256 -in MANIFEST.sha256.tsr -CAfile <Sectigo chain>
+Verify OTS: ots verify MANIFEST.sha256.ots
