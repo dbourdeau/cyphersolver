@@ -108,7 +108,7 @@ h where the decipherment has *tous*); and the χ° sign, *q* in the table, stand
 - ff. 218-219: stretches that do not read (f. 218r ll. 10-12, 22, 25-26; f. 218v ll. 9-10, 21-22; f. 219r ll. 1-5, 12-17) - blocker: no-key-material; one AI reading pass calibrated at 74.8%; a voted second pass with Burford's sign sheet and image checks is the next step
 - f. 385: 36 short stretches not read, 41 doubtful words - blocker: no-key-material; misread signs, names and abbreviations; Burford's planned second image round not yet made
 - f. 120: short stretches and three values inferred in this letter only (ooo = *escus*, struck gg = *nous*, curled stroke = *o*) - blocker: no-key-material; no person has checked the transcription
-- fr. 15573 f. 120: decoded, not read - blocker: not-attempted; partial reading f120_harumi/f120_reading.md (b21, 23 Oct 2026: 0.50 / explicit holes 0.647); r c15-c19, c24-c31, v c03-c05 to re-read sign by sign on views 246-247 (its 12 code signs with no value are in the code-signs line above)
+- fr. 15573 f. 120: decoded, not read (90.0% of letters by the 95% rule after the 12 Nov 2026 image round, 89.4% sure only) - blocker: illegible; r c24-c31 read in part, 13 signs still doubtful between forms the hand does not separate (dudout/README.md), and the code signs with no value are in the code-signs line above
 - fr. 15573 f. 385: decoded, not read - blocker: not-attempted; normalised partial reading f385_burford/f385_reading.md (b21, 23 Oct 2026: 0.222); the v0.2 unread stretches need the signs re-read on views 752-753
 
 ## Escalation
@@ -127,3 +127,19 @@ h where the decipherment has *tous*); and the χ° sign, *q* in the table, stand
 - Outcome "read with known key" for contributed AI readings without human checks. The read fraction (86.1%) measures
   sense, not correctness; the calibrations (75-93% per sign on known text) are the only measure of correctness.
 - Did you read more of f. 385 than the fragment Tomokiyo prints?
+
+## Image round on f. 120, 12 Nov 2026 (Brice Dudout)
+
+The 16 lines of f. 120 that the b21 re-read left open (r c15-c19, c24-c31, v c03-c05) were checked sign by sign on
+Gallica views 246-247 at full resolution, against Harumi-Matsuba's transcription and with his sign names; the
+re-read transcription and the doubtful signs were frozen by SHA-256 before decoding with this target's key. Eight
+signs change (among them w -> w2 'il m'est tombé', 9 -> q+ 'spe[ci]alement', ls -> S 'au ser[v]ice', B -> 6b);
+the rest of those lines agree with his transcription. One pre-registered measure on those lines (key unchanged):
+0.903 against 0.909 for the earlier transcription, all 400 controls below. The second pre-registered criterion
+(re-read at least equal to the earlier transcription) **failed** (0.903 < 0.909): the corrections rest on the sign forms and
+not on a score. With the 95% rule (sure + probable; restored and unresolved letters are holes) the letter goes from 88.3% to
+90.0% (1,335 sure + 9 probable of 1,493; 89.4% with the sure letters only; both under 95%): r c15-c19 and v c03-c05 now read as sentences ("quelque [comme]ndement et coniuration que vous [luy]
+puissies faire de s'en aler ... si [tost] qu'il saura"; "L'on ne sauroit com{p}rendre l[e] tort que la rupture de
+ceste armée faict au ser[v]ice du [Roy]"), r c24-c31 in part. Values used only from context in this letter (vbar =
+comme, g8 = luy, Om = tost, I = Roy, Lp = p) are not added to the key. f. 385 was not attempted. Details:
+[`dudout/README.md`](dudout/README.md).

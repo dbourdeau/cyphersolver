@@ -70,6 +70,40 @@
     "from": "Black Forest",
     "to": "unknown"
    }
+  },
+  {
+   "id": "t405r9-0863",
+   "read": "read",
+   "shelfmark": "NARA RG 242, T405 roll 9 (NAID 332033680), frames 0863-0867 (teleprinter copy frame 0862)",
+   "date": "4 June 1940",
+   "year": 1940,
+   "country": "Germany",
+   "route": "Flugabwehrkommando Schwarzwald Ic -> Luftgaukommando VII (Ia op 2), per the teleprinter copy on frame 0862",
+   "language": "German",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "The teleprinter copy of the same message (frame 0862, Fernschreiben of 4 June 1940, 11.45, file 249/6) is in the same file.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 928,
+    "unit": "letters",
+    "measured": false,
+    "file": "dudout/transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Brice Dudout's transcription of the NARA frame images by a Claude Opus agent (28 Oct 2026, before any key was known; dudout/frozen/T863-867.txt), six doubtful letters checked on the images on 12 Nov 2026; no human has checked the whole; it differs from Harumi-Matsuba's transcription in 7 of 953 letters (dudout/README.md)",
+    "image_quality": "fair",
+    "notes": "A hand-written radio form in five parts (179, 190, 194, 186 and 204 letters with indicator groups), one per frame; parts 1-4 in ink, part 5 in pencil in another hand. 928 letters of text without the five indicator groups, from the stated part lengths (each part checked against them)."
+   },
+   "places": {
+    "from": "Black Forest",
+    "to": "Munich"
+   }
   }
  ],
  "system": {
@@ -112,7 +146,7 @@
    "GPT"
   ],
   "first_date": "2026-11-09",
-  "last_date": "2026-11-09"
+  "last_date": "2026-11-12"
  },
  "solution": [
   {
@@ -157,6 +191,86 @@
    "kind": "verification",
    "what": "Project check: an own double-transposition implementation applied to the contributor's transcriptions and keys gives the six plaintexts identical, letter for letter, to his plaintext.txt (1,023 letters); a trigram count of 66 against a mean of 8.9 and a best of 19 for 300 random key pairs (VERIFICATION.md). No image compared.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "transcription",
+   "what": "Brice Dudout: frames 0863-0867 transcribed from the NARA images by a Claude Opus agent, before any key was known (dudout/frozen/T863-867.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "solver",
+   "what": "Brice Dudout: joint annealing of both keys on quadgrams and IDP-type scores, without a crib, tried on synthetic messages of the same lengths: no key recovered, so not run on the real message.",
+   "result": "failed",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ]
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "solver",
+   "what": "Harumi-Matsuba: the key of 4 June 1940 for frames 0863-0867 (19 and 22 columns) from his known-plaintext tools on a candidate plaintext from frame 0862, reported on issue #364 and in his repository (commit de8efa9).",
+   "result": "worked",
+   "technique": [
+    "crib testing",
+    "simulated annealing",
+    "hill climbing"
+   ]
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "solver",
+   "what": "Brice Dudout: the problem sent to another model (Claude Fable 5.2, through the API) with part 4 kept back: the request was refused and nothing came back.",
+   "result": "failed",
+   "technique": [
+    "other"
+   ]
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "crib",
+   "what": "Brice Dudout: plaintext of parts 1 and 2 taken from frame 0862 with the 17 May conventions and fitted to the letter counts of the parts (dudout/solver/in12b.txt).",
+   "result": "worked",
+   "technique": [
+    "plaintext matching"
+   ]
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "solver",
+   "what": "Brice Dudout, independently of Harumi-Matsuba's result: K2 by annealing on the k1-apart letter pairs (the idea of his kpb.c; own code dudout/solver/kpw.c) over k1 15-30 and k2 15-32 on parts 1-2, control on shuffled plaintext: (19, 22) alone, margin 0.174 against sd 0.019; then K1 by quadgram annealing (k1s.c) over parts 1, 2, 3 and 5. Same keys as Harumi-Matsuba's.",
+   "result": "worked",
+   "technique": [
+    "crib testing",
+    "simulated annealing",
+    "language-model scoring"
+   ]
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "control",
+   "what": "Brice Dudout: one pre-registered test of the frozen keys on part 4, held out (dudout/frozen/): quadgrams -4.993 per letter against -6.643 for the best of 400 controls; agreement with the plaintext predicted from frame 0862 0.989 against 0.227; pass. Declared: the raw NARA OCR of frame 0866 had been printed once before the protocol was frozen, not used.",
+   "result": "worked",
+   "technique": [
+    "statistical test"
+   ]
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Brice Dudout: six doubtful letters checked on the images (three n in part 1, two r and one o in part 5); the decryption reads 129 of 129 words as German sentences, 5 probable (g/q and m/n ambiguous, one letter not checked); compared letter by letter with Harumi-Matsuba's transcription: 7 differences in 953 letters.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Integration check (12 Nov 2026): an own decoder written from dudout/key_0604.txt gives the contributor's strings letter for letter on all five parts (928 letters); the frozen files' SHA-256 match; all 179 letters of frame 0863 (part 1) agree with the NARA image (parts 2-5 not compared). The read share is recounted by the README rule, which counts the 5 probable words as guessed: 124 of 129 = 0.961 (the contributor's figure, 129 of 129, is his own). The order of events (key public 11 Nov 08:28 UTC, test 23:24 CET the same day, comment found 12 Nov) rests on the contributor's record.",
+   "result": "worked",
+   "technique": [
+    "key matching"
+   ]
   }
  ],
  "outcome": {
@@ -168,7 +282,8 @@
   "class": "read",
   "verification": [
    "independent clear copy",
-   "matched control"
+   "matched control",
+   "independent verification"
   ],
   "method": "key recovered based on adjacent plaintext",
   "key": "recovered",
@@ -190,6 +305,38 @@
     "role": "prior solution",
     "note": "the recipient's fair copy of frame 0993 (frames 0994-0995) and the teleprinter original of frames 1025-1027 (frame 1024), used for the plaintext",
     "source": "https://catalog.archives.gov/id/332033680"
+   },
+   {
+    "who": "harumi-matsuba",
+    "role": "prior solution",
+    "note": "the key of 4 June 1940 and the decryption of frames 0863-0867, published before Brice Dudout's independent recovery of the same keys (the same day)",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/364",
+    "published": true,
+    "date": "2026-11-11"
+   },
+   {
+    "who": "harumi-matsuba",
+    "role": "pointer",
+    "note": "the plaintext conventions of the 17 May messages and the second-key-side search of his kpb.c, used for frames 0863-0867 in dudout/",
+    "date": "2026-11-11"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "catalogue 704: pointed to frames 863-867 and to the teleprinter copy on frame 862 as a crib; the 17 May key recorded and checked in this target",
+    "date": "2026-11-02"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "frames 0863-0867 (4 June 1940): Harumi-Matsuba's key recovered independently the same day from frame 0862 and tested once on part 4, held out, under a pre-registered protocol; reading 129 of 129 words; see dudout/README.md (Brice Dudout with Claude Opus agents)",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "note": "frames 0863-0867 transcribed from the NARA images before any key was known (28 Oct 2026), six letters checked on the images (12 Nov 2026); dudout/transcription.txt",
+    "date": "2026-11-12"
    }
   ],
   "gaps": [
@@ -212,8 +359,11 @@
   "notes": "Keys, transcriptions and reading by Harumi-Matsuba; checked by the project with its own decryption against his transcriptions, not against the images. 1,016 of 1,023 letters make sense as plaintext.",
   "fraction_read": 0.993,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Contributor's count: 7 of the 1,023 letters of text are wrong as plaintext (contributor_reading.md); 1,016 of 1,023 = 99.3%.",
-  "key_file": "key.txt",
+  "fraction_read_source": "Contributor's count: 7 of the 1,023 letters of text are wrong as plaintext (contributor_reading.md); 1,016 of 1,023 = 99.3%. With frames 0863-0867 (dudout/decryption.txt): 6 of their 928 letters are wrong as plaintext (5 doubtful in the transcription, 1 a slip of the sender), so 1,938 of 1,951 = 99.3%.",
+  "key_file": [
+   "key.txt",
+   "dudout/key_0604.txt"
+  ],
   "texts": [
    {
     "doc": [
@@ -253,6 +403,26 @@
      "by": "Claude (for the project)",
      "date": "2026-11-09",
      "note": "Read the decryption as German sentences: the two parts divide into words and match the teleprinter original in content; two hand-written letters (e or R, h or k) cannot be settled and no human has checked the transcription."
+    }
+   },
+   {
+    "doc": [
+     "t405r9-0863"
+    ],
+    "label": "Frames 0863-0867: Flugabwehrkommando Schwarzwald Ic, 4 June 1940",
+    "transcription": "dudout/transcription.txt",
+    "decryption": "dudout/decryption.txt",
+    "reading": "dudout/reading.md",
+    "translation": "dudout/translation.md",
+    "language": "de",
+    "state": "read",
+    "read_share": 0.961,
+    "summary": "A secret command message: to protect army unloadings, seven Flak units of Flugabwehrkommando Schwarzwald moved into position on 3-4 June 1940 at railway stations and towns of the Black Forest (Sankt Georgen, Triberg, Peterzell, Haslach, Marbach, Hornberg, Villingen) and report the hour from which each was ready to fire; signed Flugabw.Kdo. Ic Nr. F 225/40 g.Kdos. The text is that of the teleprinter copy on frame 0862; the key of the day is the new result.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
+     "date": "2026-11-12",
+     "note": "Read the decryption as German sentences: all five parts divide into words with the 17 May conventions and agree with the teleprinter copy on frame 0862 entry by entry (places, units, hours), differing only in spelling (Sankt, zehn, ditto marks written out, a file number). 124 words certain, 5 probable on single doubtful letters (g/q, m/n, one c for e); by the README rule the probable words count as guessed, so 124 of 129 words (0.961) read. Grade A: the text builds sentences with no hole; reservation: AI transcription, no human reader, and the text was known from the teleprinter copy on frame 0862."
     }
    }
   ]
