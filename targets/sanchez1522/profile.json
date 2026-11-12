@@ -530,9 +530,16 @@
       "date": "2026-11-12",
       "kind": "reading",
       "technique": ["key matching", "contextual inference"],
-      "what": "Brice Dudout (Claude Opus 5.5): R9607 (14 May 1522, Salazar 9/24 ff. 65r-67v, uncalendared, no decipherment imaged) transcribed blind by sign shape (146 lines, dudout/R9607_signs.txt, frozen by SHA-256), decoded with the key unchanged and read by sense (dudout/R9607_reading.md, English dudout/R9607_en.md): 1,121 sure + 116 probable, 2 restored, 316 unresolved of 1,555 words = 79.5 %, read in part. Unresolved: mostly spelled runs mis-transcribed on look-alike signs; 63 code groups absent from the key, listed, none added. Lot-1 triage of 11 records in dudout/TRIAGE_lot1.md.",
+      "what": "Brice Dudout (Claude Opus 5.5): R9607 (14 May 1522, Salazar 9/24 ff. 65r-67v, uncalendared, no decipherment imaged) transcribed blind by sign shape (146 lines, dudout/R9607_signs.txt, frozen by SHA-256), decoded with the key unchanged and read by sense (dudout/R9607_reading.md, English dudout/R9607_en.md): 1,121 sure + 116 probable, 2 restored, 316 unresolved of 1,555 words: 72.1 % sure only by the README rule (79.5 % sure + probable, the contributor's count; probable = look-alike signs resolved by sense), read in part. Unresolved: mostly spelled runs mis-transcribed on look-alike signs; 63 code groups absent from the key, listed, none added. Lot-1 triage of 11 records in dudout/TRIAGE_lot1.md.",
       "result": "partial"
-    }
+    },
+  {
+    "date": "2026-11-12",
+    "kind": "verification",
+    "technique": ["statistical test"],
+    "what": "Integration check of PR #479: the held-out measure re-run unchanged (593 characters, -2.4714, controls mean -3.1056 max -2.7660, z 5.68, PASS), four frozen hashes match, key_codes.tsv and alpha.py unchanged since the PREREG. R9607 counts re-stated: 72.1% sure only by the README rule (79.5% in the contributor's sure + probable count). DECODE images not re-fetched (login).",
+    "result": "worked"
+  }
   ],
   "outcome": {
     "method": "read from existing decipherment",
@@ -571,7 +578,7 @@
         "detail": "r2o (23 Oct 2026): read sign by sign with Tomokiyo's key (R9593_signs.txt, partial reading R9593_reading.md, 0.614 explicit holes, hole rate 0.13): xe, vub, lud, fug, la, lif, ni, fu, sag, nif, ram, tag, zom, fag, pil, dug, nad, mug, tem, nog, ca, ce absent from or not fitting the published key, mostly met once; no decipherment bound or imaged, not in CSP Spain 2"
       },
       {
-        "item": "the other Sánchez records of 9/23-9/26 (R9594, R9595, R9596, R9597, R9598, R9599, R9600, R9601, R9602, R9603, R9604, R9606, R9607, R9608, R9609, R9610, R9611, R9612, R9614, R9615, R9616, R9617, R9618, R9619, R9620, R9621, R9622, R9623, R9624, R9625, R9626, R9627, R9628, R9629, R9630, R9631, R9632, R9633, R9636, R9637, R9638, R9639, R9640, R9643, R9647, R9651, R9655, R9657; 48 records, some duplicates: R9626/R9627, R9628/R9629; R9625 and R9638 mostly clear)",
+        "item": "the other Sánchez records of 9/23-9/26 (R9594, R9595, R9596, R9597, R9598, R9599, R9600, R9601, R9602, R9603, R9604, R9606, R9608, R9609, R9610, R9611, R9612, R9614, R9615, R9616, R9617, R9618, R9619, R9620, R9621, R9622, R9623, R9624, R9625, R9626, R9627, R9628, R9629, R9630, R9631, R9632, R9633, R9636, R9637, R9638, R9639, R9640, R9643, R9647, R9651, R9655, R9657; 48 records, some duplicates: R9626/R9627, R9628/R9629; R9625 and R9638 mostly clear)",
         "blocker": "not-attempted",
         "detail": "r2i (23 Oct 2026): every DECODE record of the run fetched and every image opened (163 images, scratchpad reread/r2i): apart from R9605 (decipherment ff. 42-43, Tomokiyo's source), R9613, R9635 and R9641/R9642 none carries a decipherment; DECODE's 'Inline Cleartext: Yes' marks clear opening or closing paragraphs and postscripts ('Somos a ... es treslado de otra enbiada por via de Genova'), not decipherments (R9625 f. 137r is a clear letter to the Chancellor, R9628 f. 157r and R9630 f. 180r clear postscripts). The court decipherments Bergenroth abstracted (CSP Spain 2, 14 letters) are not imaged. r2o (23 Oct 2026): the CSP Spain 2 check was redone entry by entry (nos. 380-515): calendared are R9594 = no. 396 (15 March; Bergenroth abstracted a contemporary decipherment in the Gayangos papers and called the cipher 'not extant'), R9613 = 429, R9615? = 436 (20 June, A.24 ff. 213-216), R9616 = 439?, R9617/R9618 = 440, R9619 = 444, R9621 = 447, R9622 = 450, R9625 = 464, R9626/R9627 = 462, R9631 = 470, R9632 = 473, R9636 = 482, R9639 = 488/489, R9643 = 491, R9651 = 500; the rest are not calendared. In date order R9593 was read sign by sign in r2o and R9594 (5 pp. of dense cipher) is next. Each letter is readable sign by sign with Tomokiyo's key (the method of R9635 f. 20r and R9653), 2-15 pages of cipher apiece: workable, not done"
       },
@@ -586,7 +593,7 @@
       {"who": "contemporary", "role": "key or decipherment used", "note": "clerk's full decipherment of R9605 (calibration) and the interlinear glosses on R9635"},
       {"who": "bergenroth", "role": "key or decipherment used", "note": "CSP Spain 2 no. 476 abstract (from the contemporary deciphering) confirms R9635 and fills the gist of unread lines", "date": "1866", "source": "G. A. Bergenroth, Calendar of State Papers, Spain, vol. 2 (1866), no. 476"},
       {"who": "tomokiyo", "role": "prior solution", "note": "R9607: opening line deciphered and printed in 2025 ('A la carta de vuestra magestad de [xxix?] de abril ...'); the dudout/ reading of the letter agrees with it", "date": "2025-09-06", "source": "https://cryptiana.web.fc2.com/code/AlonsoSanchez.htm"},
-      {"who": "dudout", "role": "transcription", "note": "R9607 (14 May 1522) transcribed blind sign by sign and read in part with the folder key, 79.5 % of 1,555 words; triage of DECODE lot 1 (11 records) (dudout/)", "date": "2026-11-12"},
+      {"who": "dudout", "role": "transcription", "note": "R9607 (14 May 1522) transcribed blind sign by sign and read in part with the folder key, 72.1 % of 1,555 words sure (79.5 % in his count with probable words); triage of DECODE lot 1 (11 records) (dudout/)", "date": "2026-11-12"},
       {"who": "dudout", "role": "verification", "note": "one pre-registered measure of the folder key on a held-out passage of R9632 (f. 200r ll. 7-25): PASS, z = 5.68 against 400 controls (dudout/protocol/)", "date": "2026-11-12"}
     ],
     "texts": [
@@ -699,11 +706,12 @@
         "reading": "dudout/R9607_text_es.md",
         "translation": "dudout/R9607_en.md",
         "state": "read in part",
+        "read_share": 0.721,
         "reading_review": {
           "grade": "B",
           "by": "Claude Opus 5.5 for Brice Dudout",
           "date": "2026-11-12",
-          "note": "dudout/R9607_reading.md read as Spanish sentences, line by line, from a blind sign transcription decoded with key_codes.tsv unchanged: 1,121 sure, 116 probable (look-alike signs r/y, s/t, f/s, m/r, d/e resolved by sense), 2 restored, 316 unresolved of 1,555 words = 79.5 % (Daniel's 95 % rule: read in part). Sentences build on every page (e.g. 'Arman todavia galeras y hasta agora han armado aqui ... sin las que arman en Candia'; 'los de esta republica me han enbiado ... la minuta de lo que han escrito ...; esta bien conforme a aquello'); the unresolved runs are scattered, mostly spelled words mis-transcribed on look-alike signs."
+          "note": "dudout/R9607_reading.md read as Spanish sentences, line by line, from a blind sign transcription decoded with key_codes.tsv unchanged: 1,121 sure, 116 probable (look-alike signs r/y, s/t, f/s, m/r, d/e resolved by sense), 2 restored, 316 unresolved of 1,555 words: 72.1 % sure only by the README rule, 79.5 % in the contributor's sure + probable count (read in part either way). Sentences build on every page (e.g. 'Arman todavia galeras y hasta agora han armado aqui ... sin las que arman en Candia'; 'los de esta republica me han enbiado ... la minuta de lo que han escrito ...; esta bien conforme a aquello'); the unresolved runs are scattered, mostly spelled words mis-transcribed on look-alike signs."
         },
         "note": "Key validated on a held-out passage of R9632 by one pre-registered measure (PASS, z = 5.68, dudout/protocol/). No decipherment imaged on the record; not in CSP Spain 2."
       }

@@ -18,7 +18,7 @@ L7 {sequenti} li dinari per uno {terzo} de tuta questa gente
 L8 che ‹cum› minore numero lui non {vol} torre la impresa [perche]
 ```
 
-76 cipher words: 52 sure, 14 probable, 8 restored, 2 unresolved. Read by sense 74/76 = 97.4%; sure + probable 66/76 = 86.8%.
+76 cipher words: 52 sure, 14 probable, 8 restored, 2 unresolved. Contributor's count (restored words counted as read) 74/76 = 97.4%; README rule (restored and unresolved are holes) sure + probable 66/76 = 86.8%, sure only 52/76 = 68.4%.
 
 ## 7a, the same passage (ll. 1-6, abbreviations expanded in brackets)
 

@@ -1,4 +1,4 @@
-Status: in progress (R9660 ff. 141v-146v re-read sign by sign; 78.7% of tokens sure or probable by the 95% rule, up from 72.0%; still under the bar, R9660 stays decoded, not read). Next step: the ~100 unattested code groups (no-key-material) and the doubtful signs listed below.
+Status: in progress (R9660 ff. 141v-146v re-read sign by sign; 73.4% of tokens sure by the README rule, up from 69.7% (78.7% from 72.0% in the contributor's count, which adds the words that use context-only values); still under the bar, R9660 stays decoded, not read). Next step: the ~100 unattested code groups (no-key-material) and the doubtful signs listed below.
 
 # R9660 ff. 141v-146v: sign-by-sign re-read (Brice Dudout, 12 Nov 2026)
 
@@ -57,7 +57,7 @@ is not worse and carries the Spanish; the gain is in the readings below. `measur
 
 ## Reading, 95% rule
 
-Sure + probable count as read; restored and unresolved are holes (`count95.txt`, word test of
+Contributor's count: sure + probable count as read (his figures in the table). By the README rule a probable word, which holds a value used from context only, is a hole: sure only is 69.7% (b34) -> 73.4% (this re-read) of ff. 141v-146v, see the integration check in NOTES for a recount (74.0% on the shipped reading file). Restored and unresolved are holes (`count95.txt`, word test of
 `../../sessa1524/measure_read.py`). No letters were restored.
 
 | | tokens | sure | probable | unresolved | read |

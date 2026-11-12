@@ -1,6 +1,6 @@
 # sanchez1522 — dudout/ (Brice Dudout, 12 Nov 2026)
 
-Status: read in part (R9607, 14 May 1522: 1,237 of 1,555 words read by sense = 79.5 %, 1,121 sure + 116 probable, 2 restored, 316 unresolved; the folder key validated on a held-out passage of R9632). Next step: second letter-by-letter pass on R9607's unresolved spelled runs, then R9633.
+Status: read in part (R9607, 14 May 1522: 1,121 of 1,555 words sure = 72.1 % by the README rule; 79.5 % in the contributor's count with 116 probable words resolved by sense on look-alike signs; 2 restored, 316 unresolved; the folder key validated on a held-out passage of R9632). Next step: second letter-by-letter pass on R9607's unresolved spelled runs, then R9633.
 
 Daniel's Status line in `../NOTES.md` is untouched. Work by Claude Opus 5.5 for Brice Dudout, from DECODE images of
 lot 1 (R9594, R9607, R9616, R9617, R9626, R9631, R9632, R9633, R9636, R9639, R9651). **No image is reproduced here**;
@@ -33,7 +33,7 @@ Colonna; Sánchez's demand that the Signoria declare itself released from its ca
 Turk's fleet from Corfu (letters of 5 April) and of the King of France coming in person; the Hungarian ambassador's
 departure; the Signoria's minute of its answer, "esta bien conforme a aquello". Tomokiyo printed the first line; our
 reading agrees with it.
-Count per page in `R9607_reading.md`: 79.5 % read (S + P), so **read in part**. Most unresolved words are spelled runs
+Count per page in `R9607_reading.md`: 79.5 % (S + P, the contributor's count; 72.1 % sure only by the README rule), so **read in part**. Most unresolved words are spelled runs
 mis-transcribed on look-alike signs; 63 code groups absent from the key are listed, none added to the key.
 
 ## Not done

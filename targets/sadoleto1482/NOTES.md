@@ -149,7 +149,7 @@ non lassasse pretermittere questa opportunità laquale mai più fo, né forse se
 - R1103 decoded, not read (one word from the faded block; re-cropped 23 Oct 2026, nothing more accepted) - blocker: illegible; see the R1103 line below
 - R1102, unresolved U labels, connective words, code 494 and group 3ί2ии - blocker: no-key-material; no clear copy of R1102 found; repeats in nos. 18-28 not yet checked
 - R1103, 4-line faded block on p. 2 - blocker: illegible; badly faded, fragments only; UV/multispectral imaging or the ASMo original needed
-- R1101, whole-letter word-by-word collation with 7a - blocker: not-attempted; local passages agree; full collation unfinished
+- R1101, whole-letter word-by-word collation with 7a - blocker: not-attempted; local passages agree; full collation unfinished (12 Nov 2026: page 1 ll. 2-8 collated, 66 of 76 words sure or probable; the rest of page 1, page 2 outside the queen passage, page 3 and the final page outside its opening are not)
 - R1106, internal completeness against 26a/26b - blocker: illegible; 26a collated in full (R1106_reading.md), 26b's right half faded
 
 ## Escalation
@@ -166,9 +166,21 @@ The first original page of R1101 (Vestigia 1284 photograph (103)) had not been r
 blind with `key_working.md` and frozen by SHA-256 before any look at 7a; lines 2-8 (79 words, 306 cipher letters,
 outside every passage aligned so far) were pre-registered as a held-out portion. One measure against 7a (Vestigia 1283
 photograph (101)): character agreement 0.764, word agreement 0.608, all 500 controls lower (random keys max 0.178,
-shuffled 7a max 0.295). The criterion (>= 0.85) is not met, so this does not re-validate the key: read blind, a new page
-still loses about a quarter of its letters on look-alike signs and uncovered groups. Collated word by word with 7a,
-the seven lines read 52 sure, 14 probable, 8 restored and 2 unresolved words of 76 (97.4% by sense): the King's terms,
+shuffled 7a max 0.295). The pre-registered criterion (>= 0.85) FAILED (0.764; only the margin criterion, +0.30 over the
+best control, held), so this test does not re-validate the key: read blind, a new page still loses about a quarter of its
+letters on look-alike signs and uncovered groups. The order of events (blind transcription frozen before 7a was looked at;
+the portion chosen after looking at page 1 to transcribe it) is by the contributor's record. Collated word by word with 7a,
+the seven lines read 52 sure, 14 probable, 8 restored and 2 unresolved words of 76: by the README rule (restored and
+unresolved words are holes) 66 of 76 = 86.8% sure or probable, 52 of 76 = 68.4% sure only; the contributor's 97.4% counts
+the 8 words restored from 7a as read and is his figure, not this project's. Read in part, and only ll. 2-8 of a four-page letter: the King's terms,
 money from the League for half of 10,000 horse and 10,000 foot for the first year, then a third for two years.
 Proposed and not added to the key: a tt sign ("attendere"), a c variant ("dece" twice), a con/cum sign, and a single
 group for the royal title. The rest of the letter is still to collate. Files: `dudout/`.
+
+### Integration check (12 Nov 2026)
+
+Reproduced: `dudout/protocol/mesure_r1101.py` gives 0.7638 / 0.6076, controls 0.1778 / 0.2945, margin 0.4694, criterion
+0.85 not met; the four frozen SHA-256 values match the files. The 76-word counts add up. Corrections made: the failed
+criterion is stated as failed (not "validated"), the read share is the strict 86.8% (97.4% kept once, labelled the
+contributor's), and the collation is described as a reading supported by the contemporary clear copy 7a, not as a test of
+the key. Not checked: the sign-by-sign transcription against the Vestigia photographs (needs a human reader of the hand).

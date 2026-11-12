@@ -1,4 +1,4 @@
-Status: read in part (Brice Dudout, 12 Nov 2026: system B key rebuilt from the 5 Oct 1764 contemporary clear and validated on 328 held-out groups, 0.563 vs 400 controls max 0.083; 121-124L about 70% of word tokens sure or probable).
+Status: in progress overall (system A open). System B (Brice Dudout, 12 Nov 2026): key rebuilt from the 5 Oct 1764 contemporary clear, passed its pre-registered held-out test (328 groups, 0.563 vs 400 controls max 0.083); 121-124L read in part, 59.4% of word tokens sure by the README rule (about 70% in the contributor's count with probable words).
 
 # duben1764 / dudout: system B ("Chiffer n:o 2"), catalogue 450
 
@@ -16,7 +16,7 @@ tx/p1764-10-05.final.txt, tx/c-chiffer2-121-124.txt) and on our system A work (i
 121-124L hold 1,247 groups with no contemporary decipherment, so the outcome is not "existing decipherment".
 124R-126 are system A (catalogue 1616, issue #437).
 
-## The 5 Oct 1764 clear on 120 is the decipherment of 118-119
+## The 5 Oct 1764 clear on 120 is the plaintext of 118-119
 
 NOTES says the 120 text is a draft, not a decipherment, and that "repeats do not line up". They do line up:
 the repeats of the cipher fall where the clear repeats a word, at the same relative position.
@@ -58,7 +58,7 @@ It is unrelated to key_c01 (system A) and to the tables at 218-220.
 | Permuted keys, max / mean | 0.083 / 0.043 |
 | Shuffled text, max / mean | 0.076 / 0.044 |
 | Margin over the max control | 0.480 |
-| Verdict | **validated** |
+| Verdict | **pre-registered criteria met** |
 
 The held-out decode runs past the end of the 120 clear with the closing formula
 "le tres [humble] et tres ob[eissa]nt ser[vite]ur", which the clear page omits (`measure_result.json`, field D).
@@ -70,7 +70,7 @@ The held-out decode runs past the end of the 120 clear with the closing formula
   - 290 Comte and 20 ter (twice "du Comte Os-ter-ma-n");
   - 217 vous, 116 sa, 129 pour, 733 lui, 224 is, 101 nu, 121 ble, 792 lettre, 325 pas, 526 est.
 - **Reading.** `reading_121-124L_fr.md`, with English in `reading_121-124L_en.md`.
-  - A mechanical count of the word tokens gives 442 sure and 77 probable out of 744, about 70%. That is under 95%, so the state is **read in part**.
+  - A mechanical count of the word tokens gives 442 sure and 77 probable out of 744, about 70% in the contributor's count. By the README rule the probable words (they use the 25 context values or restored letters) are holes: 442/744 = 59.4% sure. Under 95% either way, so the state is **read in part**.
   - About 105 values (215 groups) stay unresolved; most of them occur once or twice.
 - **Content.** Düben writes to "mon cher Comte" (Gyldenstolpe) on:
   - the King's orders about Count Osterman (the Russian minister in Stockholm) and the marks of the Empress's favour sought for him;

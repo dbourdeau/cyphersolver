@@ -1,4 +1,4 @@
-Status: in progress (Brice Dudout, 12 Nov 2026: R1101 first page ll. 2-8 collated word by word with 7a, 97.4% of words read by sense; the rest of the letter not yet collated). Next step: collate the rest of page 1 and pages 2-3 the same way.
+Status: in progress (Brice Dudout, 12 Nov 2026: R1101 first page ll. 2-8 collated word by word with 7a; 86.8% of 76 words sure or probable by the README rule, 97.4% in the contributor's count that includes the 8 words restored from 7a; the pre-registered key test failed; the rest of the letter not yet collated). Next step: collate the rest of page 1 and pages 2-3 the same way.
 
 # sadoleto1482 / dudout: R1101 against its clear copy 7a, first page
 
@@ -31,8 +31,8 @@ The first original page had not been read before (it was only searched by image 
 - Counts on ll. 2-8:
   - before this work: page not read (0 of 76 words);
   - blind reading alone, judged against 7a: 48 sure + 10 probable of 79 words (73.4%);
-  - after the collation: 52 sure, 14 probable, 8 restored, 2 unresolved of 76 words: **97.4% read by sense**,
-    86.8% sure or probable.
+  - after the collation: 52 sure, 14 probable, 8 restored, 2 unresolved of 76 words: 97.4% in the contributor's count (the 8
+    restored words counted as read, not the README rule); **86.8% sure or probable**, 68.4% sure only.
 - Reading and English: `r1101_p1_reading.md`. The passage gives the King's terms: money from the League for the first
   year for half of 10,000 horse and 10,000 foot, then for a third of them for two more years.
 
