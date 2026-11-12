@@ -14,7 +14,7 @@ R9655 have no image online (DECODE notices list pages, none is served); they are
 | R9610 | 9/24 ff. 132r-134r | 2 June (clear date) | 3 | cipher 5 pp, a few clear phrases inline | — | Tomokiyo opening; not in CSP | **read in part here** |
 | R9611 | 9/24 f. 139r-v | 4 June (clear date) | 2 | cipher 2 pp; the facing leaf is an Italian clear enclosure, "Nova del Turco di Constantinopoli" | — | Tomokiyo opening; not in CSP | short |
 | R9612 | 9/24 ff. 167-169 | 11 June (clear date) | 3 | **mixed**: cipher with two long clear passages (f. 167r, the Turks at Knin and Scardona) and clear lines on f. 168v | — | Tomokiyo opening; not in CSP | mixed |
-| R9614 | 9/24 ff. 208-210 | 18 June (clear date) | 4 | cipher ~5.5 pp, clear postscript; P4 left is a separate clear letter | — | Tomokiyo opening; not in CSP | **longest left** |
+| R9614 | 9/24 ff. 208-210 | 18 June (clear date) | 4 | cipher ~5.5 pp, clear postscript; P4 left is a separate clear letter | **second copy of R9613** (18 June; clear postscript "es treslado de otra embiada con las postas a Ingalaterra ... por via de genova remetida a geronimo adorno"); same text as R9613's contemporary decipherment (corrected C04) | via R9613 = CSP 429 (read by Daniel from the decipherment) | read blind in C04 as a check |
 | R9618 | 9/24 f. 246r-v | 26 and 30 June (clear) | 2 | to the Chancellor: clear first paragraph, then cipher ~1.5 pp, clear dating ("hecha a xxvi de junio y hase detenido hasta xxx") | — | Tomokiyo opening; not in CSP | short |
 | R9620 | 9/25 ff. 24-25 | 10 July (clear) | 2 | to the Chancellor: cipher ~1.5 pp, clear closing; heavy water stain across both pages | — | Tomokiyo opening; not in CSP | short |
 | R9623 | 9/25 ff. 133-134r | **vij (?) Aug** (clear, f. 133v; DECODE says 19 July) | 2 | cipher ~2.5 pp; clear notes "Somos a viij del dicho y es treslado de otra enbiada por via de Genova" and "Es esta triplicada de otras"; the last paragraph (f. 134r) is **in clear in the letter itself** | a triplicate (its own note); its first line is not the opening of R9624/R9626/R9627, so a different letter of the same week or the tail of a copy | Tomokiyo opening and last paragraph (which he gives as decrypted: it is Sánchez's own clear) | check against R9626 |
@@ -28,3 +28,7 @@ R9655 have no image online (DECODE notices list pages, none is served); they are
 No record of lot 2 carries an imaged decipherment. Strips of clear text visible at the right edge of the R9608-R9612
 images belong to other leaves bound in the volume, not to these letters. So none is "existing decipherment"; all
 Sánchez letters here are uncalendared, except R9624, a copy of the calendared 7 Aug letter.
+
+**Correction (C04, 12 Nov 2026).** R9614 is not an uncalendared letter: it is the copy sent via Genoa of the 18 June
+letter R9613 (CSP 429), whose contemporary decipherment Daniel read. Its blind reading is kept as an independent check
+(`R9614_vs_R9613.txt`). R9647 is dated in clear "a vij de noviembre" (DECODE: 6 Nov).
