@@ -145,6 +145,15 @@ The PR (#420) was verified independently on 11 Nov 2026 and integrated on 12 Nov
   La Serre's papers of July-August 1779 (ff. 251-256, views 302-314) are clear texts on the same matters but not versions of
   f9/f16. The minister's answers (series B) were not seen.
 
+### Claims review by a second reader (12 Nov 2026)
+
+- The statements above and in the transcription header that no image is included were the contributor's. The site page
+  now shows three crops cut from the ANOM views (head of f. 5, a passage of f. 5, a passage of f. 16), credited to
+  ANOM, as the site does for its other ANOM targets.
+- Of the 636 probable words, 497 contain a "prob" key value; the rest are probable through a corrected pair value, a
+  doubtful group, a word division or an omitted letter.
+- `reading.md` keeps the contributor's count line (certain + probable); the published figure is certain words only.
+
 ## Remaining gaps
 
 - 75 unresolved words (24 in f9, 51 in f16): numbers absent from the key (552, 444, 403, 626, 778, 723, 430, 652, 441, 582, 192, 132, 219, 188, 256, 605, 695, 71, 189; in f16 576, 375, 289, 126, 112, 698, 765, 255, 155, 118, 245, 472, 274, 800, 740, 727 ...) and the river names 102, 515, 271, 720 - blocker: open-codes; most occur once or twice in the corpus and no table of this code is known

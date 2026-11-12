@@ -75,8 +75,8 @@
   <dt>The code</dt><dd>The Chinese standard telegraph code, four digits for each character, with no encipherment. The digits were sent in groups of five, so the codes run across the groups.</dd>
   <dt>How it was decoded</dt><dd>The copy lays the 25 groups out in four columns. Read by rows, the 125 digits cut into 31 four-digit codes and one filler digit, and the public code table gives the text.</dd>
   <dt>What it says</dt><dd>大總統早經允准復回達賴名號: the President has long since approved restoring the Dalai Lama's title, and allows him to come to the capital.</dd>
-  <dt>Credit</dt><dd>Read by Brice Dudout with an AI agent (pull request #431). The General Staff at Simla made an approximate English translation on 8 October 1912; the file holds no Chinese text. Lead found in Daniel Bourdeau's Abhilekh Patal sweep.</dd>
-  <dt>Still open</dt><dd>One code is emended (徇 as copied, read 待). The transcription has not been checked against the image by a second reader. The sender and the addressee are not identified. Chinese printed collections were not searched for the text.</dd>
+  <dt>Credit</dt><dd>Read by Brice Dudout with an AI agent (pull request #431). The General Staff at Simla made an approximate English translation on 8 October 1912; the file holds no Chinese text. Lead found in Daniel Bourdeau's Abhilekh Patal sweep; the lead suggested trying the standard telegraph code.</dd>
+  <dt>Still open</dt><dd>The Chinese reading was made by the contributor&rsquo;s agent and re-read at integration; no sinologist has re-read it. One code is emended (徇 as copied, read 待). The transcription has not been checked against the image by a second reader. The sender and the addressee are not identified. Chinese printed collections were not searched for the text.</dd>
 </dl>
 </div>
 
@@ -125,7 +125,7 @@ col. 4: 04827 21788 25714 92706 71770 56643</pre>
 <p>The telegram speaks of the President (大總統) in the third person, so the sender is an official at Peking and not the President, Yuan Shikai, as the lead first had it. "Yaoshikinan" in the record title may be Yao Xiguang (姚錫光); that is a suggestion made when the pull request was verified and it was not checked against any source.</p>
 
 <h2 id="checks"><span class="num">04</span> Checks</h2>
-<p>The contributor wrote a protocol before the attack and recorded its SHA-256 hash (<code translate="no">frozen/PREREG.md</code>). It fixed the crib words taken from the 1912 translation, the hypotheses and the criteria of success. The order of events rests on the contributor's record: the pull request is a single commit. The plain code read by rows was the first hypothesis and worked at once; the others (a five-digit additive, Campbell's "transparency" relation, the General Staff's column formula of 1908, a four-digit additive) were not run.</p>
+<p>The contributor wrote a protocol before the attack and recorded its SHA-256 hash (<code translate="no">frozen/PREREG.md</code>). It fixed the crib words taken from the 1912 translation, the hypotheses and the criteria of success. The order of events rests on the contributor's record: the pull request is a single commit. The plain code read by rows was the first hypothesis and worked at once; the others (a five-digit additive, Campbell's "transparency" relation, the General Staff's column formula, a four-digit additive) were not run.</p>
 <table>
 <tr><th>Control</th><th>Crib score</th></tr>
 <tr><td>Groups read by rows</td><td>19</td></tr>
