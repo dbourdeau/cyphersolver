@@ -1,6 +1,6 @@
 # christianv1673: Christian V to the envoys Jens Juel and Christoffer Lindenov in Stockholm, Copenhagen, 25 May 1673, closing cipher block (catalogue 2528 = lead 2531)
 
-Status: read in part (Brice Dudout, 11 Nov 2026; integration check 12 Nov 2026). 49 of the 68 cipher words are read with certainty = 72.1%, under the 95% bar (11 more are probable, 2 restored, 6 unresolved). Key recovered in part: six code groups of the text (seven occurrences) have no value. The key's three-digit groups were tested against the decipherment of the time of a held-out order of 6 Oct 1674: 0.849 of gloss segments exact vs at most 0.144 for 200 permuted keys. An earlier pre-registered test on the 1673 block itself failed. The values of the 1673 signs rest on the loose leaf, not on the test.
+Status: read in part (Brice Dudout, 11 Nov 2026; integration check 12 Nov 2026). 48 of the 68 cipher words are read with certainty = 70.6%, under the 95% bar (11 more are probable, 2 restored, 6 unresolved). Key recovered in part: six code groups of the text (seven occurrences) have no value. The key's three-digit groups were tested against the decipherment of the time of a held-out order of 6 Oct 1674: 0.849 of gloss segments exact vs at most 0.144 for 200 permuted keys. An earlier pre-registered test on the 1673 block itself failed. The values of the 1673 signs rest on the loose leaf, not on the test.
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents (transcription, sign table, key, protocols,
 measurement, reading and write-up). Catalogue entry **2528** (lead **2531** is the same order from the second TKUA pass), found
@@ -57,7 +57,7 @@ is by the contributor's record: the pull request is a single commit and the time
 
 ## Reading (`reading.md`, `translation.md`)
 
-68 words come from cipher groups: 49 certain, 11 probable, 2 restored, 6 unresolved. **Read share 49/68 = 72.1%**: read in
+68 words come from cipher groups: 48 certain, 12 probable, 2 restored, 6 unresolved. **Read share 48/68 = 70.6%**: read in
 part. Only the certain words count as read (README read bar: a guessed word, a supplied word and a hole are not read; the
 probable words each rest on an inferred value, a single attestation or a doubtful sign). The contributor's count in the pull
 request took certain and probable together, 59/68 = 86.8%, with Exempel still among three restored words; that is his figure
@@ -79,6 +79,18 @@ Fryxell and Danske Samlinger without finding it. A quick web search of ours foun
 volumes ourselves nor searched Rigsarkivet's inventories of the Juel and Lindenov instructions, so an edition we do not know of
 remains possible.
 
+### Claims review by a second reader (12 Nov 2026)
+
+- "permitteris" moved from certain to probable: the measured key has 686 = mis, and the reading takes it as mi, as
+  its syllable block requires. Certain words are now 48 of 68 (70.6%), probable 12.
+- "HØYloflige" is certain (every group has a value); the braces in the running text were a slip.
+- The files disagree on which "strygen" has the doubtful sign: `reading.md` marks T12, while `transcription.txt`
+  carries the two-shape label Q at T02 and a plain q at T12, and `decryption.txt` calls T02 probable. One of the two
+  is counted probable either way, so the count does not move; not settled on the image.
+- Test 2 was re-run at the independent verification and test 1 at the integration check; both gave the filed figures.
+- 847 is glossed forlader four times and saaledes twice in 1674; the weighting chose saaledes.
+- `codes_open.total` 57 counts "841?" apart from 841 (56 distinct groups otherwise).
+
 ## Remaining gaps
 
 - five of the six unresolved words and the two restored ones of the closing block (groups 32, 320, 348, 384 twice, 646, 906) - blocker: open-codes; the letter reads but these code groups do not: none is glossed in images 32-43, and the syllable blocks give only the initial of 384 (a-) and 646 (k-); another order in the same code would fill them
@@ -86,7 +98,7 @@ remains possible.
 - the verso of the loose decipherment leaf (image 9) - blocker: needs-physical-access; it was not filmed and might carry the decipherment of the closing block; only Rigsarkivet can say
 - the overwritten group in T04 (image 11 line 1), 841 or 541 - blocker: illegible; the last digit is blotted and the first is drawn like this hand's 5 as much as its 8; the full-size online image does not decide between "Indulgencien, tid" and "indulgence for en tid"
 - a blind re-reading of the other doubtful signs of the closing block (T02 Q, T07 768 lam) - blocker: illegible; seen at the resolution served online, not yet re-read blind
-- the eleven probable words (Indulgencien, udstirkelse, saaledes, Sammentegn, aldre, Kronede, strygen in T12, upaakieret, huis, Fundament, Exempel) - blocker: no-key-material; each rests on a value inferred from the syllable blocks, on a single gloss or leaf attestation, or on a doubtful sign, and the unit holds no other text in the 1673 hand to confirm them
+- the twelve probable words (Indulgencien, udstirkelse, saaledes, Sammentegn, aldre, Kronede, strygen in T12, upaakieret, huis, Fundament, Exempel) - blocker: no-key-material; each rests on a value inferred from the syllable blocks, on a single gloss or leaf attestation, or on a doubtful sign, and the unit holds no other text in the 1673 hand to confirm them
 - prior art outside the repository (an edition of the order, Rigsarkivet's inventories) - blocker: needs-physical-access; the printed volumes named under Prior art were opened in Daniel Bourdeau's vetting passes, not by the contributor or at the integration check, and the inventories are not online
 
 ## Escalation
@@ -96,7 +108,7 @@ remains possible.
 - [x] known-keys: the only key material known for this code is in the unit itself (1674 glosses and the 1673 leaf); DECODE, Tomokiyo and Lasry have nothing (Daniel's vetting); no printed key found
 - [x] print: Danmark-Norges Traktater 6, Vaupell, Jørgensen, Fryxell and Danske Samlinger (Daniel's two passes, 11 Nov 2026): the order is not printed; our web search found no edition
 - [x] key-rebuild: key extended by the alphabetical syllable blocks (486 du, 534 fu inferred; 590 huis from the h block and a gloss); 384 and 646 bracketed to an initial; nothing else can be inferred for 32, 320, 348, 906
-- [x] retry: every unread group searched in all glosses of images 32-43 (42-43 after the measurement) and in the leaf; the reading regraded with key v2 and the sign table (working fiches 84.6% with key v1, then 86.2% with key v2 on a list short of three certain words; recount 86.8%; all three by the contributor's count of certain + probable words, which the integration check replaced by 72.1%, certain words only)
+- [x] retry: every unread group searched in all glosses of images 32-43 (42-43 after the measurement) and in the leaf; the reading regraded with key v2 and the sign table (working fiches 84.6% with key v1, then 86.2% with key v2 on a list short of three certain words; recount 86.8%; all three by the contributor's count of certain + probable words, which the integration check replaced by 70.6%, certain words only)
 
 ## Integration check (12 Nov 2026)
 
@@ -117,7 +129,7 @@ Reproduced:
 - The reading was read as Danish sentences against the translation: it is coherent on the salute in the Sound.
 
 Corrected:
-- **Read share.** Headline changed from 86.8% (certain + probable) to 72.1% (certain only), by the README read bar applied as
+- **Read share.** Headline changed from 86.8% (certain + probable) to 70.6% (certain only), by the README read bar applied as
   written. The class does not change.
 - **Key state.** `outcome.key` changed from "recovered" to "partial": six groups of the text have no value (32, 320, 348, 384,
   646, 906; seven tokens). `outcome.codes_open` filled.

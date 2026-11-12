@@ -18,7 +18,7 @@ AT DET ICKUN ER en {Indulgencien}, tid som med <la·g·ge·n·s> {udstirkelse} {
 ved SAMMEN{tegn} permitteris, OG AT DET ENDDA ICKE SKEER paa {aldre} wilkaar END PAA DET foresatte {Fundament},
 AT DE af andre {Kronede} Hoveder OG I SAER Kron Sverig SELF, {huis} {Exempel} de ATSKILLIGE GANGE
 allegeret haffuer, <32·re> bewises, AT AF DEM ingen {strygen} begieren, OG ER langt fra AT WI NOGEN
-tid den ret DE HAFDE wilde frasige som WI OG woris HØY{loflige} forfædre i saa MANGE aar {u}PAA{kieret} HAFFT HAFDE.
+tid den ret DE HAFDE wilde frasige som WI OG woris HØYloflige forfædre i saa MANGE aar {u}PAA{kieret} HAFFT HAFDE.
 
 (T04: the group after 448 is overwritten on image 11 and was transcribed 841?. If it is 541 = for, the words are "en {Indulgence}
 {for} en tid", an indulgence for a time, which is better Danish than "Indulgencien, tid"; the image does not decide it, see NOTES.md,
@@ -34,12 +34,12 @@ the original with cipher: høy- and paa- are written in clear, -loflige and u-/-
 
 | class | n | words |
 |---|---|---|
-| certain | 49 | wi (T01); haffuer, strygen (T02, q barred = i), woris (T02); at, med, deris, krigskibe, haffuer, J (T03, q barred); at, swaare, en (T04); tid, som, med, til (T05); som, ellers, ved, permitteris (T06); paa, wilkaar (T07); foresatte (T08); af, andre, Hoveder (T09); Kron, Sverig, de (T10); allegeret, haffuer, bewises (T11); ingen, begieren, langt, fra (T12); tid, den, ret, wilde, frasige, som, woris (T13); høyloflige, forfædre, i, saa, aar (T14) |
-| probable | 11 | Indulgencien (486 = du inferred from the syllable block; ending -sien doubtful); udstirkelse; saaledes (847, one gloss in 1674); Sammentegn; aldre (or andre); Kronede (Kro·ni·de); strygen (T12, q doubtful); upaakieret; huis = hvis (590: gloss "huis" in 1674 and the h block 580-596, KEY-v2 has "sind"); Fundament (534 = fu inferred from the syllable block); Exempel (e·29·e·m·pe·l; 29 = x rests on one word of the leaf, "extenderes" in the first block, and was added to the key at the integration check of 12 Nov 2026; the PR had it as restored) |
+| certain | 48 | wi (T01); haffuer, strygen (T02, q barred = i), woris (T02); at, med, deris, krigskibe, haffuer, J (T03, q barred); at, swaare, en (T04); tid, som, med, til (T05); som, ellers, ved (T06); paa, wilkaar (T07); foresatte (T08); af, andre, Hoveder (T09); Kron, Sverig, de (T10); allegeret, haffuer, bewises (T11); ingen, begieren, langt, fra (T12); tid, den, ret, wilde, frasige, som, woris (T13); høyloflige, forfædre, i, saa, aar (T14) |
+| probable | 12 | permitteris (T06; the key gives 686 = mis, read mi as its syllable block 684-688 requires); Indulgencien (486 = du inferred from the syllable block; ending -sien doubtful); udstirkelse; saaledes (847, one gloss in 1674); Sammentegn; aldre (or andre); Kronede (Kro·ni·de); strygen (T12, q doubtful); upaakieret; huis = hvis (590: gloss "huis" in 1674 and the h block 580-596, KEY-v2 has "sind"); Fundament (534 = fu inferred from the syllable block); Exempel (e·29·e·m·pe·l; 29 = x rests on one word of the leaf, "extenderes" in the first block, and was added to the key at the integration check of 12 Nov 2026; the PR had it as restored) |
 | restored | 2 | befalt (320; doubt: the verb befale has its own group 425 in 1674); Slotte (906) |
 | unresolved | 6 | e·384·r·o·i·jo·ce·ri·s (T01); 384 (T02); co·n·r·e·348·r·t (T02); 646 (a word in k-, before "krigskibe"); la·g·ge·n·s (T05; "Flaggens" is tempting but needs an f); 32·re (T11) |
 
-**Read share: 49/68 = 72.1%.** Only the certain words count as read: the rule in the README (95% of the cipher gives sense)
+**Read share: 48/68 = 70.6%.** Only the certain words count as read: the rule in the README (95% of the cipher gives sense)
 counts a guessed word, a supplied word and a hole as not read, and the probable words here each rest on an inferred value, a single attestation or a
 doubtful sign. Under 95%: a partial reading.
 

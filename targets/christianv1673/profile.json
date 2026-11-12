@@ -127,7 +127,7 @@
   {
    "date": "2026-11-11",
    "kind": "reading",
-   "what": "Closing block read by sense with key v2 (+ 486 du, 534 fu, 590 huis added after the measurement): 68 cipher words, 49 certain, 10 probable, 3 restored, 6 unresolved (the contributor's count of certain + probable: 86.8%).",
+   "what": "Closing block read by sense with key v2 (+ 486 du, 534 fu, 590 huis added after the measurement): 68 cipher words, 48 certain, 10 probable, 3 restored, 6 unresolved (the contributor's count of certain + probable: 86.8%).",
    "result": "partial"
   },
   {
@@ -136,7 +136,7 @@
    "technique": [
     "statistical test"
    ],
-   "what": "Integration check of pull request #409 after an independent verification. Both measurement scripts re-run in a scratch copy: test 2 gives 0.849 (659/776), 0.144, 0.035 again and KEY-v2 rebuilds byte-identical; test 1 re-run with the repository's lang/lexicons/da.json.gz (same SHA-256 as the missing working/da.json.gz) gives 0.722 / 0.668 / 0.648 again, a failure. 196 of 197 tokens agree with images 10-11; T04 841? looked at again at full size: overwritten, 541 at least as likely, left open. Corrections: read share set to 49/68 = 0.721 (certain words only, README read bar); outcome.key partial with codes_open; 29 = x (1673 hand, from the leaf's 'extenderes') added to key.tsv, decryption.txt made to agree with reading.md, Exempel moved from restored to probable.",
+   "what": "Integration check of pull request #409 after an independent verification. Both measurement scripts re-run in a scratch copy: test 2 gives 0.849 (659/776), 0.144, 0.035 again and KEY-v2 rebuilds byte-identical; test 1 re-run with the repository's lang/lexicons/da.json.gz (same SHA-256 as the missing working/da.json.gz) gives 0.722 / 0.668 / 0.648 again, a failure. 196 of 197 tokens agree with images 10-11; T04 841? looked at again at full size: overwritten, 541 at least as likely, left open. Corrections: read share set to 48/68 = 0.706 (certain words only, README read bar); outcome.key partial with codes_open; 29 = x (1673 hand, from the leaf's 'extenderes') added to key.tsv, decryption.txt made to agree with reading.md, Exempel moved from restored to probable.",
    "result": "worked"
   }
  ],
@@ -206,7 +206,7 @@
     "detail": "seen at the resolution served online; not yet re-read blind"
    },
    {
-    "item": "the eleven probable words (Indulgencien, udstirkelse, saaledes, Sammentegn, aldre, Kronede, strygen in T12, upaakieret, huis, Fundament, Exempel)",
+    "item": "the twelve probable words (Indulgencien, udstirkelse, saaledes, Sammentegn, aldre, Kronede, strygen in T12, upaakieret, huis, Fundament, Exempel)",
     "blocker": "no-key-material",
     "detail": "each rests on a value inferred from the syllable blocks, on a single gloss or leaf attestation, or on a doubtful sign; the unit holds no other text in the 1673 hand to confirm them"
    },
@@ -226,13 +226,13 @@
     "translation": "translation.md",
     "language": "da",
     "state": "read in part",
-    "read_share": 0.721,
+    "read_share": 0.706,
     "summary": "On the salute at sea in the Sound: if the Swedes ask that their warships pass the Danish castles without striking, the envoys are to answer that any exemption is only a temporary indulgence, on the footing already laid down that other crowned heads and Sweden itself, whose example they allege, claim no such salute; and that the king will never give up a right his ancestors held unchallenged for so many years.",
     "reading_review": {
      "grade": "B",
      "by": "integration check (AI agent, for the project), after the contributor's agent",
      "date": "2026-11-12",
-     "note": "Read as Danish sentences against decryption.txt and translation.md: coherent on the salute in the Sound from 'uden strygen woris Slotte at passere' to the end, and the translation follows; the first line and a half (groups 384, 348, 320) does not form. 49 of 68 cipher words certain, 11 probable, 2 restored, 6 unresolved: read in part. No human has read it."
+     "note": "Read as Danish sentences against decryption.txt and translation.md: coherent on the salute in the Sound from 'uden strygen woris Slotte at passere' to the end, and the translation follows; the first line and a half (groups 384, 348, 320) does not form. 48 of 68 cipher words certain, 12 probable, 2 restored, 6 unresolved: read in part. No human has read it."
     }
    }
   ],
@@ -243,6 +243,6 @@
    "total": 57,
    "tokens_open": 7
   },
-  "fraction_coherent": 0.721
+  "fraction_coherent": 0.706
  }
 }
