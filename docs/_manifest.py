@@ -2150,6 +2150,12 @@ PAGES = [
          blurb='The American envoy in Mexico reported on the Texas war in John Quincy Adams&rsquo;s numerical code of 1811. The State Department deciphered every passage when it arrived, and the decipherments are filmed with the despatches; the one without, 26 October 1836, is printed by Bosch Garc&iacute;a. Michael Brackx and WAINUT transcribed the groups, which decode with the JQA table and confirm each text; three groups missed on frame 0324 and fourteen disputed groups of 1839 are settled here.',
          quote='&ldquo;A war with Texas under such circumstances will be decidedly popular with a large portion of the Mexican people&rdquo;',
          rights='Microfilm images: National Archives and Records Administration'),
+    dict(slug='vanhalen1840', footer_date='November 2026', label='Van Halen from Igualada 1840', year='1840', y=1840.35, place='Igualada &rarr; the Divisi&oacute;n auxiliar del Norte', st='partial', stt='key from the ciphertext',
+         title='Juan Van Halen to the acting commander of the Divisi&oacute;n auxiliar del Norte, Igualada, 6 May 1840',
+         blurb='A general&rsquo;s letter in clear Spanish with eight runs of numbers, 144 in all, hiding the arrangements for guarding army funds at Montblanc. Brice Dudout contributed a key of numbered alphabets proposed from the cipher of six runs; 27 of the 30 cipher words decode without correction. His pre-registered test on the two held-out runs failed (one of three conditions missed by 0.027), so the key stays partial, and the transcription was not checked against the images.',
+         quote='&ldquo;se abocase conmigo en dicha Ciudad el once&rdquo;',
+         author='Brice Dudout',
+         rights='Archivo Hist&oacute;rico Nacional, Madrid, DIVERSOS-COLECCIONES,195,N.14 (PARES); no image reproduced'),
     dict(slug='zeschau1841', label='Zeschau 1841&ndash;43', year='1841&ndash;1843', y=1841.5, place='Dresden &rarr; St Petersburg', st='stuck', stt='key not found',
          title='Zeschau to Seebach, Dresden to St Petersburg, 1841&ndash;1843',
          blurb='Four Saxon despatches (DECODE R5005&ndash;R5008); the 1841 one was transcribed in full, 3,764 unseparated digits. Traces of an erased contemporary pencil decipherment show a table of letters and syllables, and Brice Dudout found that its groups are two, three or four digits long. No key survives on DECODE, and the solvers run so far, on pairs, produced no French; not solved.',
@@ -3371,3 +3377,4 @@ IMAGES['bongars1597'] = ('bongars1597_lead.jpg', 'f. 360v: the second letter ope
 IMAGES['ebers1664'] = ('ebers1664_lead.jpg', 'Image 138: code runs with the German gloss written above them', 'Riksarkivet, Stockholm, SE/RA/2113/2113.1/3/b/602, bildid R0003225_00138, via the Riksarkivet IIIF service')
 IMAGES['lilienthal1665'] = ('lilienthal1665_lead.jpg', 'Image 45, left page, lines 1&ndash;12: code with the gloss between the lines', 'Riksarkivet, Stockholm, SE/RA/2113/2113.1/1/36/82, bildid R0000814_00045, via the Riksarkivet IIIF service')
 IMAGES['lee1813'] = ('lee1813_lead.jpg', 'Lee to Monroe, 6 February 1813, head of page 2: numerals with the clerk&rsquo;s pencilled key letters and words', 'US National Archives, RG 59, Despatches from US Consuls in Bordeaux, microfilm T164 roll 3, frame 0109 (NAID 211586337), via the National Archives Catalog')
+IMAGES['vanhalen1840'] = None

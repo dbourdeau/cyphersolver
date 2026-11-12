@@ -1,0 +1,21 @@
+T : 119 nombres ; fenetres 65 (10) x 35 (15) -> 1869 paires, 300 pseudo-H tirees (graine 1840)
+
+== Cle gelee KEY.tsv (etendue), 300 pseudo-H de 10+15 nombres ==
+car cle : min 0.600 p05 0.760 p10 0.800 p20 0.880 mediane 0.920
+car temoins (tous) : cles melangees p50 0.320 p99 0.720 ; permutations p50 0.640 p99 0.840
+lm/lettre cle : min -1.265 p10 -1.165 mediane -1.049
+ecart lm - max(200 cles melangees) : min -0.032 p05 0.166 p10 0.220 p20 0.259 mediane 0.343
+ecart lm - max(200 permutations)   : min -0.094 p05 0.039 p10 0.081 p20 0.115 mediane 0.189
+critere P01 d'origine (car>=0.85 et car>=max temoin+0.30) : puissance 0.043
+  essai q=0.20 : c1=0.75 dK=0.25 dG=0.11 -> puissance 0.703 ; faux positifs cles 0.0000 permutations 0.0000
+  essai q=0.15 : c1=0.75 dK=0.23 dG=0.09 -> puissance 0.793 ; faux positifs cles 0.0000 permutations 0.0000
+  essai q=0.10 : c1=0.75 dK=0.22 dG=0.08 -> puissance 0.820 ; faux positifs cles 0.0000 permutations 0.0000
+  essai q=0.05 : c1=0.75 dK=0.16 dG=0.03 -> puissance 0.900 ; faux positifs cles 0.0002 permutations 0.0015
+  essai q=0.00 : c1=0.75 dK=0.00 dG=0.00 -> puissance 0.940 ; faux positifs cles 0.0003 permutations 0.0038
+
+SEUILS RETENUS : C1 car >= 0.75 ; C2 lm >= max(cles melangees) + 0.22 ; C3 lm >= max(permutations) + 0.08
+  puissance (cle juste, pseudo-H intactes) = 0.820 ; faux positifs : cles melangees 0.0000, permutations 0.0000 (6000 candidats chacun)
+  part des temoins passant C1 seul : cles 0.0064 permutations 0.1326
+  robustesse : 1 nombre(s) faux dans la pseudo-H -> puissance 0.590
+  robustesse : 2 nombre(s) faux dans la pseudo-H -> puissance 0.427
+  comparaison cle stricte (100 pseudo-H, memes seuils, info) : puissance 0.590
