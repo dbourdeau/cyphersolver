@@ -1,13 +1,18 @@
 # wackerbarth1717 - reading of the letter of 20 November 1715 (French): Wackerbarth (camp before Stralsund) to his wife in Vienna, copy
 
-Status: **read in part. 841 of 922 cipher words = 91.2%** under the one rule applied to the whole target at integration (12 Nov
-2026, `integration_recount.py`): a word counts when every number under it has a value from a gloss of the time, in either
-volume. The contributor's own count (774 certain, 118 probable, 12 restored, 18 unresolved = 892/922 = 96.75%, reading v2, after
+**Project count (strict, 12 Nov 2026): 741 of 922 cipher words = 80.4%, read in part** (`integration_recount.py`: a word
+counts only when every letter of it as read is given by the gloss value of the number under it, in either volume). The
+96.75% below is the contributor's own count, not the project's.
+
+Status: read in part. The contributor's own count (774 certain, 118 probable, 12 restored, 18 unresolved = 892/922 = 96.75%, reading v2, after
 the blind plate W1) also counts 51 words that rest on a value deduced inside this letter or taken from the non-blind reading of
 24 April 1717: 96 = le (19 words), 72 = ch (8), 1000 = et (6), 85 = st (4), 64 = c (3), 70 = x (3), 73 (3), 284 = comte (2),
 40 = b (2), 609 and 11 (1 each; "boucher" has two of these numbers); two of them ("alliés" in view 0381 right, "ministre" in view 0386 right) are printed below as
 certain. In Relation XXII the same kind of word was marked restored and not counted. The marks in the text are the
-contributor's and are unchanged. Dresden, HStA 10026 Loc. 00712/05, ff. 307-314 (views 0380-0387).
+contributor's and are unchanged. The project's count also leaves out 98 words where the reading gives a gloss-valued
+number other letters ({devant} on "desant", {assaut} on "attaut", {triste} on "tuiste"), passes one over ({Poel} on "poeh",
+{puisque} on "suque") or supplies letters with no number under them (36 of these are words whose cipher stops short of the
+end, possibly the clerk's abbreviations: réellem, allem, Strals ...). Dresden, HStA 10026 Loc. 00712/05, ff. 307-314 (views 0380-0387).
 
 > **Simultaneous work: Anne-Simone Rous.** Anne-Simone Rous (SBG Sachsen, Dresden; "The Keys of Diplomacy", University of Tartu
 > repository) works on the Wackerbarth-Flemming cipher correspondence 1700-1720 and reports a glossed simple substitution in 1715.
