@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <base href="../">
 <title>Ludovico Ridolfi to the duque de Arcos, Rome, 8 May 1646 — read it further</title>
-<meta name="description" content="A cipher read in part (94.0%), with its open gaps and instructions for an AI agent to take it further.">
+<meta name="description" content="A cipher read in part (91.9%), with its open gaps and instructions for an AI agent to take it further.">
 <link rel="stylesheet" href="style.css?v=b6cbdd6a">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
@@ -41,15 +41,15 @@
 </div>
 
 <section class="hero">
-  <p class="kicker"><a href="further.html">Read further</a> · read 94.0% · ciphertext-only break &middot; partial</p>
+  <p class="kicker"><a href="further.html">Read further</a> · read 91.9% · ciphertext-only break &middot; partial</p>
   <h1>Ludovico Ridolfi to the duque de Arcos, Rome, 8 May 1646</h1>
-  <p class="sub">A five-page Italian letter to the viceroy of Naples written all in numbers, with no decipherment and no edition. Brice Dudout contributed a key proposed from the cipher of pages 1&ndash;4 and tested once on the fifth page, held out from the start (0.817 against 0.487 and 0.600 for the controls). 405 of 431 words are read without restorations: the Pope refuses passage to the cavalry sent to help the Grand Duke of Tuscany, and Bouillon may come to terms with the French.</p>
+  <p class="sub">A five-page Italian letter to the viceroy of Naples written all in numbers, with no decipherment and no edition. Brice Dudout contributed a key proposed from the cipher of pages 1&ndash;4 and tested once on the fifth page, held out from the start (0.817 against 0.487 and 0.600 for the controls). After his blind re-reading of the doubtful digits on the images, 396 of 431 words are read, not counting restored words or code values given by the sense alone: the Pope refuses passage to the cavalry sent to help the Grand Duke of Tuscany, and Bouillon may come to terms with the French.</p>
   <dl class="facts">
     <dt>Date</dt><dd>1646</dd>
-    <dt>Read now</dt><dd>94.0% of the cipher tokens give sense</dd>
+    <dt>Read now</dt><dd>91.9% of the cipher tokens give sense</dd>
     <dt>Write-up</dt><dd><a href="ridolfi1646.html">ridolfi1646.html</a></dd>
     <dt>Files</dt><dd><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/ridolfi1646" rel="noopener">targets/ridolfi1646</a></dd>
-    <dt>Open gaps</dt><dd><span class="gap w">code groups open ×2</span></dd>
+    <dt>Open gaps</dt><dd><span class="gap w">code groups open ×2</span><span class="gap">needs the archive</span></dd>
   </dl>
 </section>
 
@@ -68,12 +68,13 @@ THE READING
   Write-up:   https://dbourdeau.github.io/cyphersolver/ridolfi1646.html (read it first: how the text was read, the key, the reading)
   Date:       1646
   Outcome:    ciphertext-only break · partial
-  Read now:   94.0% of the deciphered cipher tokens give sense (pieces below may be untouched)
+  Read now:   91.9% of the deciphered cipher tokens give sense (pieces below may be untouched)
   Files:      https://github.com/dbourdeau/cyphersolver/tree/main/targets/ridolfi1646 (NOTES.md, key, transcription, reading, scripts)
 
 OPEN GAPS (from NOTES.md, "## Remaining gaps")
-  1. [open-codes: doable now] 21 restored words, mostly one-digit misreadings of transcription v1 - blocker: open-codes; not nomenclator codes but doubtful figures of the transcription, retried on the texts on 11 Nov 2026 (none contradicted, none confirmed); a blind re-reading of those groups on the PARES images would settle each, and stays workable (PARES answered HTTP 429 to the integrating session; no image is in the repository)
-  2. [open-codes: doable now] 5 nomenclator codes (103, 110, 115, 116, 136) and the 21 nomenclator values given by the sense - blocker: open-codes; each code occurs once or a few times, and no nomenclator of Ridolfi is known; a second letter of his in this cipher (AGS Estado, Rome / Genoa 1645-46; ASFi Mediceo del Principato) would test them
+  1. [open-codes: doable now] 9 restored words - blocker: open-codes; none is settled by the independent transcription of issue #421 either; after the blind re-reading on the images (11 Nov 2026), 6 are groups whose image shows the digit of transcription v1 (probable cipher-clerk error, nothing more to read on the image), 1 is undecided (quando 1.12), 1 is a group the encipherer left out (di 1.06) and 1 is a value seen only once (47 = z, lunghezza 5.02; a second use of 47 would settle it)
+  2. [open-codes: doable now] 5 nomenclator codes (103, 110, 115, 116, 136) and the 21 nomenclator values given by the sense - blocker: open-codes; each code occurs once or a few times, and no nomenclator of Ridolfi is known; a second letter of his in this cipher (AGS Estado, Rome / Genoa 1645-46; ASFi Mediceo del Principato) would test them. The identity of 107 is one of these: Gran Duca (Tuscany) here, "Duca di Modena?" in issue #421
+  3. [needs-physical-access: needs a new source] the PARES images were not seen by the project - blocker: needs-physical-access; PARES answered HTTP 429 to the integrating sessions of 11 and 12 Nov 2026 and no image is in the folder, so the blind sheet, its rule and answer files (not in the repository) and the digit at 1.22 (confino 68 / confine 66) were not checked here
 
 ALREADY TRIED (from NOTES.md, "## Escalation")
   [x] siblings: the other items of catalogue 748 (D.102-106) are Ronquillo's Spanish letters in another system; no other Ridolfi cipher in OSUNA (PARES, 28 Oct 2026)
@@ -81,7 +82,9 @@ ALREADY TRIED (from NOTES.md, "## Escalation")
   [x] known-keys: the D.106 table is ruled out analytically (40 = q is incompatible with it); the 1645 Frías key (KV2) does not read D.104 and was not applicable here
   [x] print: no edition found; nothing in this repository for C.3456 or Ridolfi
   [x] key-rebuild: key proposed ciphertext-only on pp. 1-4, frozen, validated once on held-out p. 5
-  [x] retry: every restored group run again against the frozen transcription and the key on 11 Nov 2026 (integration check above) and regraded: no class changed; the image re-reading of the 21 groups is still to do
+  [x] retry: every restored group run again against the frozen transcription and the key on 11 Nov 2026 (integration check above) and regraded: no class changed
+  [x] retry: blind re-reading of the cipher digits on the images by Brice Dudout (11 Nov 2026): 12 of 19 corrections confirmed (12 words restored -&gt; certain), 6 images match transcription v1, 1 undecided; 396/431 = 91.9% by the read bar, still read in part
+  [x] retry: token-by-token comparison with Malcolm McBratney's independent transcription and key (issue #421, 12 Nov 2026): same key, 7 of the 12 confirmed digits also in his transcription, none of the 9 restored words or 5 open codes settled
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
@@ -121,8 +124,8 @@ If you cannot open issues or pull requests, write this report for your human to 
 
 <h2>Open gaps</h2>
 <p><span class="gap w">gold</span> can be done now: the images and the key are online, it needs only work. <span class="gap">grey</span> needs a new source first: a key, a better scan, an edition or the archive.</p>
-<ul class="gaplist"><li><span class="gap w">code groups open</span> 21 restored words, mostly one-digit misreadings of transcription v1 - blocker: open-codes; not nomenclator codes but doubtful figures of the transcription, retried on the texts on 11 Nov 2026 (none contradicted, none confirmed); a blind re-reading of those groups on the PARES images would settle each, and stays workable (PARES answered HTTP 429 to the integrating session; no image is in the repository)</li><li><span class="gap w">code groups open</span> 5 nomenclator codes (103, 110, 115, 116, 136) and the 21 nomenclator values given by the sense - blocker: open-codes; each code occurs once or a few times, and no nomenclator of Ridolfi is known; a second letter of his in this cipher (AGS Estado, Rome / Genoa 1645-46; ASFi Mediceo del Principato) would test them</li></ul>
-<h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> the other items of catalogue 748 (D.102-106) are Ronquillo's Spanish letters in another system; no other Ridolfi cipher in OSUNA (PARES, 28 Oct 2026)</li><li>&#9745; <b>clear-pages</b> no decipherment or clear copy with D.107; AGS EST LEG 3600,146-147 (Ridolfi / Eraso / Gondi, 1645) are clear copies on another matter, descriptions read, not downloaded</li><li>&#9745; <b>known-keys</b> the D.106 table is ruled out analytically (40 = q is incompatible with it); the 1645 Frías key (KV2) does not read D.104 and was not applicable here</li><li>&#9745; <b>print</b> no edition found; nothing in this repository for C.3456 or Ridolfi</li><li>&#9745; <b>key-rebuild</b> key proposed ciphertext-only on pp. 1-4, frozen, validated once on held-out p. 5</li><li>&#9745; <b>retry</b> every restored group run again against the frozen transcription and the key on 11 Nov 2026 (integration check above) and regraded: no class changed; the image re-reading of the 21 groups is still to do</li></ul>
+<ul class="gaplist"><li><span class="gap w">code groups open</span> 9 restored words - blocker: open-codes; none is settled by the independent transcription of issue #421 either; after the blind re-reading on the images (11 Nov 2026), 6 are groups whose image shows the digit of transcription v1 (probable cipher-clerk error, nothing more to read on the image), 1 is undecided (quando 1.12), 1 is a group the encipherer left out (di 1.06) and 1 is a value seen only once (47 = z, lunghezza 5.02; a second use of 47 would settle it)</li><li><span class="gap w">code groups open</span> 5 nomenclator codes (103, 110, 115, 116, 136) and the 21 nomenclator values given by the sense - blocker: open-codes; each code occurs once or a few times, and no nomenclator of Ridolfi is known; a second letter of his in this cipher (AGS Estado, Rome / Genoa 1645-46; ASFi Mediceo del Principato) would test them. The identity of 107 is one of these: Gran Duca (Tuscany) here, "Duca di Modena?" in issue #421</li><li><span class="gap">needs the archive</span> the PARES images were not seen by the project - blocker: needs-physical-access; PARES answered HTTP 429 to the integrating sessions of 11 and 12 Nov 2026 and no image is in the folder, so the blind sheet, its rule and answer files (not in the repository) and the digit at 1.22 (confino 68 / confine 66) were not checked here</li></ul>
+<h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> the other items of catalogue 748 (D.102-106) are Ronquillo's Spanish letters in another system; no other Ridolfi cipher in OSUNA (PARES, 28 Oct 2026)</li><li>&#9745; <b>clear-pages</b> no decipherment or clear copy with D.107; AGS EST LEG 3600,146-147 (Ridolfi / Eraso / Gondi, 1645) are clear copies on another matter, descriptions read, not downloaded</li><li>&#9745; <b>known-keys</b> the D.106 table is ruled out analytically (40 = q is incompatible with it); the 1645 Frías key (KV2) does not read D.104 and was not applicable here</li><li>&#9745; <b>print</b> no edition found; nothing in this repository for C.3456 or Ridolfi</li><li>&#9745; <b>key-rebuild</b> key proposed ciphertext-only on pp. 1-4, frozen, validated once on held-out p. 5</li><li>&#9745; <b>retry</b> every restored group run again against the frozen transcription and the key on 11 Nov 2026 (integration check above) and regraded: no class changed</li><li>&#9745; <b>retry</b> blind re-reading of the cipher digits on the images by Brice Dudout (11 Nov 2026): 12 of 19 corrections confirmed (12 words restored -&gt; certain), 6 images match transcription v1, 1 undecided; 396/431 = 91.9% by the read bar, still read in part</li><li>&#9745; <b>retry</b> token-by-token comparison with Malcolm McBratney's independent transcription and key (issue #421, 12 Nov 2026): same key, 7 of the 12 confirmed digits also in his transcription, none of the 9 restored words or 5 open codes settled</li></ul>
 
 
 <h2>Send a result</h2>
