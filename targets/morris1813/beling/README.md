@@ -13,3 +13,35 @@ Accompanies a contribution to catalogue 650 of dbourdeau/cyphersolver. Methods a
 - `tests/`: the clerk-word test (`reversal_test_226_spans.csv`, `reversal_test.py`), the stroke test, and the blind test. The scripts expect our working folders and are included to show the method. The blind test's clear text (M31 roll 14 frames 40-45) and numerals (`literal_reviewed_v4`) are not bundled.
 
 The 1,679-row alignment of the proposal is left out because it still has misread numbers.
+
+## Catalogue 650: five more letters (11 November 2026)
+
+Nos. 18, 19, 24, 25 and 28 (Seville and Madrid, September 1814 to May 1815), from the frames catalogue 650 left open on M31 roll 14. The key is `key/codebook_M97_13_transcription.csv` under the block reversal, as above. One reader for all five; no second reader yet.
+
+- `letters/1814-09-20_No18/`, `1814-10-27_No19/`, `1814-12-30_No24/`, `1815-01-06_No25/`, `1815-05-12_No28/`, each with:
+  - `transcription.txt`: the numerals, made from full-resolution crops before decoding, with no key open. The hashes were frozen before decoding (11 Nov 2026, 10:43 UTC) and the files are unchanged since; `SHA256SUMS.txt` lists them. Notation is in each file's header: `[c]` hook, `[3]`/`[5]` strokes, `<` angle, `^` triangle, `|...|` words in clear, `{copy:reading}` variants. Headers that mention "REPORT.md" refer to our working notes, not to this bundle.
+  - `line_by_line_decode.txt`: output of `scripts/decode650.py` on that transcription. Key values only: no mark rules, no context. No. 18 is decoded with one override, `112.10:69<[?]=69^`, the reading of two of its three copies.
+  - `reading.txt`: the letter as sentences, with a summary. `*italic*` = Morris's words in clear, `[370]` = the unidentified sign after full stops, `[575.1060]` = groups left unread, `[?word]` = inference, `[word]` = supplied with no group for it. Notes on single readings follow the text.
+  - No. 18 also has `collation_other_copies.txt` (Triplicate 0117-0118 and the copy on 0129 against the Duplicate, made before decoding).
+  - No. 24 and No. 25 also have a clerk's decipherment from another copy (`clerk_decipherment_0196.txt`, `clerk_decipherment_0174.txt`) and the test against it (`test_vs_clerk_*.txt`).
+- `scripts/` (Python standard library; run from any folder):
+  - `decode650.py TRANSCRIPTION [LINE:OLD=NEW ...]` writes the line-by-line decode.
+  - `score_interlinear.py TRANSCRIPTION CLERKTEXT PREFIXES` scores the key-only decode against a clerk's words, with 200 shuffled keys as the control. The commands for Nos. 24 and 25 are in its header.
+  - `read_share.py` gives each letter's read share (`tests/catalogue650_read_share.txt`).
+
+**Tests against the clerks' decipherments** (share of the clerk's letters matched in order by the key-only decode; 200 shuffled keys):
+
+| Letter | Clerk's copy | Real key | Shuffled best | Shuffled median |
+|---|---|---|---|---|
+| No. 24, 30 Dec 1814 | frame 0196 | 0.904 | 0.342 | 0.215 |
+| No. 25, 6 Jan 1815 | frame 0174 | 0.945 | 0.343 | 0.201 |
+
+Neither test is fully blind:
+- No. 24: the 0196 decipherment was not read before transcribing, but the frame was seen at low resolution while frames were being identified, and a few words were glimpsed. The clerk's text, on very dark film, was read after the decode was made, so its reading may lean toward the decode.
+- No. 25: the 0174 decipherment had been viewed before the numerals on 0220-0221 were transcribed. The digits were read from 0220-0221 only, and none was changed for sense.
+
+**Read share** (`scripts/read_share.py`: coded groups minus groups unread or read only by inference, over all coded groups): No. 18 0.981 (486 groups), No. 19 0.955 (156), No. 24 0.980 (205), No. 25 1.000 (98), No. 28 1.000 (90). The lists of unread and inferred groups are a judgment, set by hand from the readings.
+
+**Reading review pending.** No `reading_review` is recorded for these five letters. A person has to read each `reading.txt` as sentences and record it in `profile.json`.
+
+**Prior print.** Woolfley (2013) quotes or summarizes parts of Nos. 18, 19 and 24. What was searched, and with what result, is in `../NOTES.md`, section "Catalogue 650: five more letters".
