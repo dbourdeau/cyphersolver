@@ -2,7 +2,7 @@
 
 Status: in progress. Not yet written up: no site page or README row. Read in part, or not read, with escalation steps still open (see its status below, Remaining gaps and Escalation). The status below is the contributor's.
 
-Status, 3 Nov 2026: key confirmed on a contemporary decipherment; neither letter is read. cc. 78r-79r and cc. 174r, 174v, 175v are read in part. c. 175r is decoded, not read. The seven letters of catalogue 1554 are decoded, not read (section below). Prior art is open: see below. Nothing here is claimed as new.
+Status, 3 Nov 2026: key confirmed on a contemporary decipherment; neither letter is read. cc. 78r-79r and cc. 174r, 174v, 175v are read in part. c. 175r is decoded, not read. Of the seven letters of catalogue 1554, letter 2 (c. 114r) is read in part (Brice Dudout, 12 Nov 2026, last section) and six are decoded, not read (section below). Prior art is open: see below. Nothing here is claimed as new.
 
 Contributed by WAINUT. The work was done with AI language-model agents. An independent agent made the blind check and the final check named below.
 
@@ -17,7 +17,7 @@ Shelfmark: Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lett
 | c. 175r | 332 | **decoded, not read** | 61 (18%) | 61 (18%) | 297 (89%) |
 | cc. 174r-175v together | 1,355 | | 260 (19%) | 697 (51%) | 1,240 (92%) |
 | cc. 103r, 109r-v | | transcription jobs, not breaks: contemporary decipherments on cc. 104r and 107r-v cover them | | | |
-| catalogue 1554, cc. 113-120, seven letters | 2,224 | **decoded, not read** | see section | see section | 1,182 (53%) |
+| catalogue 1554, cc. 113-120, seven letters | 2,224 | six **decoded, not read**; c. 114r read in part, 50 of 117 words sure (42.7%, dudout/) | see section | see section | 1,182 (53%) |
 
 Neither letter meets the 95% rule. Counts for cc. 78-79 and 174-175 are from `scripts/count_words.py`, run on the third state of the files.
 
@@ -41,16 +41,16 @@ Per leaf (a block counts on the leaf where it starts):
 
 Doubtful words: 22 and 43. Unread stretches: 16 and 23. Unknown codes: 6 and 10.
 
-## Catalogue 1554: seven letters in the same cipher, decoded, not read
+## Catalogue 1554: seven letters in the same cipher, six decoded not read, c. 114r read in part
 
 Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera G, Gonzaga, Ercole (cardinale), sfasc. I, cc. 113-120. Each of the seven pieces starts on a fresh recto, in cipher from the first sign. No leaf has a docket, address, signature, date or clear word. cc. 113v-116v, 118v and 119v show only show-through and the library stamp.
 
-**All seven are decoded, not read, and no reading is claimed.** Parts make sense, but almost no sentence is free of holes: **only 1 of 51 sentence blocks has no hole**, the heading of c. 113r ("Copia di auisi della duchessa di Castro al conte di Pitigliano suo fratello di sette di nouembre"). This folder holds the transcriptions and decryptions. The working block-by-block readings behind the counts below are not finished and are not included.
+**Six of the seven are decoded, not read, and no reading is claimed for them; letter 2 (c. 114r) is read in part, see the last section.** The counts below are WAINUT's, made before that second transcription. Parts make sense, but almost no sentence is free of holes: **only 1 of 51 sentence blocks has no hole**, the heading of c. 113r ("Copia di auisi della duchessa di Castro al conte di Pitigliano suo fratello di sette di nouembre"). This folder holds the transcriptions and decryptions. The working block-by-block readings behind the counts below are not finished and are not included.
 
 | letter | leaf | signs | words (est.) | plain words, ceiling | in runs of 8+ between holes or doubts | holes and codes | status |
 |---|---|---|---|---|---|---|---|
 | 1 | c. 113r | 1,216 | 327 | 220 (67%) | 67 (20%) | 29 | decoded, not read |
-| 2 | c. 114r | 422 | 117 | 77 (66%) | 25 (21%) | 15 | decoded, not read |
+| 2 | c. 114r | 422 | 117 | 77 (66%) | 25 (21%) | 15 | read in part (Dudout: 50 of 117 words sure, 42.7%; WAINUT's counts here predate it) |
 | 3 | c. 115r | 753 | 189 | 69 (37%) | 22 (12%) | 17 | decoded, not read |
 | 4 | c. 116r | 601 | 171 | 75 (44%) | 0 | 18 | decoded, not read |
 | 5 | cc. 117r-118r | 2,919 | 787 | 342 (43%) | 115 (15%) | 74 | decoded, not read |
@@ -215,7 +215,7 @@ Sources: Mantua inventory of Ercole's letterbooks, https://inventari-san.cultura
 
 ## Neighbours in the catalogue
 
-- **Catalogue 1554** (seven cipher letters, cc. 113-120, sfasc. I). Same table; decoded, not read. See the section above.
+- **Catalogue 1554** (seven cipher letters, cc. 113-120, sfasc. I). Same table; letter 2 read in part, the other six decoded, not read. See the section above.
 - **Catalogue 1555** (Capilupi to Ferrante, cc. 80a-80h). Four leaves viewed as a contact sheet. All digits with clear words mixed in; a different system, and this table does not fit.
 
 ## Images
@@ -245,7 +245,7 @@ The server rejects outputs above about 2 megapixels. Use `/full/,1900/0/default.
 - Date of cc. 174-175: proposal only - blocker: not-attempted; needs the history of late 1543 checked against the letter.
 - Prior art: Murphy, Furlotti, Solmi not opened - blocker: not-attempted; budget. Mantua copialettere not opened - blocker: needs-physical-access; no images found online.
 - cc. 103r, 109r-v are transcription jobs; cc. 88-92 and 93-98, with their decipherments, not tested - blocker: not-attempted; not needed for the key.
-- Catalogue 1554, all seven letters: decoded, not read; most holes come from look-alike signs, and a full settling pass of the 429 pass disagreements has not been done - blocker: not-attempted; budget.
+- Catalogue 1554, letters 1 and 3-7: decoded, not read; letter 2 (c. 114r): 46 probable and 21 unread words, the 128 differences between the two transcriptions not settled on crops (blocker: not-attempted; budget); most holes come from look-alike signs, and a full settling pass of the 429 pass disagreements has not been done - blocker: not-attempted; budget.
 - Catalogue 1554, error rate: 20.6% of signs wrong on five lines of the worst page, the five lines then corrected; the other 193 lines are unchecked - blocker: not-attempted; budget.
 - Catalogue 1554, codes: 13, 26, 29, 36, L^3, L^7, L^8, the shared 43, 46, 95, L^22, L^54, the group z5 and the blot `L^?` at A08 - blocker: open-codes; no key sheet found.
 - Catalogue 1554, sender, dates, the year of letter 1 and the order of the seven pieces: proposals only - blocker: not-attempted.
@@ -259,3 +259,16 @@ The server rejects outputs above about 2 megapixels. Use `/full/,1900/0/default.
 - [ ] print: web searches only; Murphy, Furlotti, Solmi and the Mantua copialettere not opened
 - [x] key-rebuild: table rebuilt with no table as input, 19 of 20 signs agree; working key recounted on the third state
 - [ ] retry: third pass done for g against z, n/u after p, the superscripts and each repair site; not a fresh pass of c. 175r or G02-G07
+
+## Catalogue 1554, c. 114r: second transcription and reading in part (Brice Dudout, 12 Nov 2026)
+
+Brice Dudout, with Claude Opus 5.5, made a second transcription of c. 114r (letter 2) from the full-resolution
+tiles, without opening the transcription or decryption above; like WAINUT's transcribers he knew the table. A
+measure frozen in advance (`dudout/PREREG_0114r.md`) applied `key_frozen.tsv` unchanged to it: 0.605 of the
+decoded letters fall in Italian words, against at most 0.416 for 200 shuffled tables, so the key holds on new
+text and on another reader's signs. The two transcriptions agree on 72.8% of 470 aligned positions before
+settling, a first measure of the transcription error on a whole 1554 page. Read from both: 117 words, 50 sure,
+46 probable, 21 unread (42.7% sure, 82.1% sure + probable): **c. 114r is read in part**; the other six letters
+are unchanged. The letter concerns count Giovan Tommaso (Pico), don Diego and the Mirandola dispute: he is
+resolved to come to court and disturb the negotiation. Files and the open places: `dudout/README.md`. Key and
+first transcription: WAINUT.
