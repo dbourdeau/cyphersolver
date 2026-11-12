@@ -159,3 +159,16 @@ non lassasse pretermittere questa opportunità laquale mai più fo, né forse se
 - [x] print: Vestigia 3 (Mátyus, Somogyi), MDE, Cremonini 2017, Tomokiyo: no decipherment printed
 - [x] key-rebuild: key_working.md from 7a/13a; ff and z controls, repeated K, dom/X verified
 - [ ] retry: not done — sweep nos. 18-28 for repeats of 494 and 3ί2ии, then rerun R1102's U labels
+
+## R1101 first page against 7a, 12 Nov 2026 (Brice Dudout)
+
+The first original page of R1101 (Vestigia 1284 photograph (103)) had not been read. Its lines 1-8 were transcribed
+blind with `key_working.md` and frozen by SHA-256 before any look at 7a; lines 2-8 (79 words, 306 cipher letters,
+outside every passage aligned so far) were pre-registered as a held-out portion. One measure against 7a (Vestigia 1283
+photograph (101)): character agreement 0.764, word agreement 0.608, all 500 controls lower (random keys max 0.178,
+shuffled 7a max 0.295). The criterion (>= 0.85) is not met, so this does not re-validate the key: read blind, a new page
+still loses about a quarter of its letters on look-alike signs and uncovered groups. Collated word by word with 7a,
+the seven lines read 52 sure, 14 probable, 8 restored and 2 unresolved words of 76 (97.4% by sense): the King's terms,
+money from the League for half of 10,000 horse and 10,000 foot for the first year, then a third for two years.
+Proposed and not added to the key: a tt sign ("attendere"), a c variant ("dece" twice), a con/cum sign, and a single
+group for the royal title. The rest of the letter is still to collate. Files: `dudout/`.
