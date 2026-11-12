@@ -186,8 +186,7 @@ The first remaining gap was worked in `dudout/`. Every cipher sign from f. 115r 
 transcribed on Gallica views 119-121, and the transcription was frozen by SHA-256 before decoding with Lasry's key
 and no. 66's values. One pre-registered measure on the stretch (3787 cipher-sign tokens, the matignon1586c3 rule,
 lexicon it-cinquecento) gave 0.919, against 0.717 for `n63_transcription.md`; all 400 controls fell below (shuffled
-text max 0.853). The continuous reading, `dudout/no63_reading_reread.md`, has 97.3% of cipher letters and 94.5% of
-cipher words sure or probable, with 25 groups unresolved.
+text max 0.853). The continuous reading, `dudout/no63_reading_reread.md`, has 88.4% of cipher words sure only (743 of 841; 94.5% with the 52 probable) and 97.3% of cipher letters sure + probable (89.0% sure only), with 25 groups unresolved.
 
 Points to check:
 - The curled saltire is *Venetiani* (f. 116v gloss).

@@ -2,7 +2,7 @@
 
 Translation of `no63_reading_reread.md` made at integration (12 Nov 2026) for this repository; it follows the Italian
 closely and keeps its holes. [...] = a stretch that is not read; <...> = a code sign; words the reading marks as probable
-are translated without a mark. It is a translation of a reading that covers 94.5% of the words of its stretch, not of the whole
+are translated without a mark. It is a translation of a reading that covers 88.4% of the words of its stretch sure only (94.5% with the probable words), not of the whole
 letter. Sormano and de Passano write to François I from Ferrara, 27 February 1529; the stretch begins mid-sentence.
 
 [... better] to settle, part of the difficulties raised by the said lord we shall not hide.

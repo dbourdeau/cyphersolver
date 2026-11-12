@@ -137,8 +137,8 @@ signs change (among them w -> w2 'il m'est tombé', 9 -> q+ 'spe[ci]alement', ls
 the rest of those lines agree with his transcription. One pre-registered measure on those lines (key unchanged):
 0.903 against 0.909 for the earlier transcription, all 400 controls below. The second pre-registered criterion
 (re-read at least equal to the earlier transcription) **failed** (0.903 < 0.909): the corrections rest on the sign forms and
-not on a score. With the 95% rule (sure + probable; restored and unresolved letters are holes) the letter goes from 88.3% to
-90.0% (1,335 sure + 9 probable of 1,493; 89.4% with the sure letters only; both under 95%): r c15-c19 and v c03-c05 now read as sentences ("quelque [comme]ndement et coniuration que vous [luy]
+not on a score. With the 95% rule (sure + probable; restored and unresolved letters are holes) the letter stands at
+89.4% with the sure letters only (1,335 of 1,493), 90.0% with the 9 probable letters; the earlier sure + probable count was 88.3%; all under 95%: r c15-c19 and v c03-c05 now read as sentences ("quelque [comme]ndement et coniuration que vous [luy]
 puissies faire de s'en aler ... si [tost] qu'il saura"; "L'on ne sauroit com{p}rendre l[e] tort que la rupture de
 ceste armée faict au ser[v]ice du [Roy]"), r c24-c31 in part. Values used only from context in this letter (vbar =
 comme, g8 = luy, Om = tost, I = Roy, Lp = p) are not added to the key. f. 385 was not attempted. Details:

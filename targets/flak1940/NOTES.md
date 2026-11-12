@@ -1,6 +1,6 @@
 # flak1940: radio messages of Flugabwehrkommando Schwarzwald, 17 May 1940, and the key of the day (NARA RG 242, T405 roll 9)
 
-Status: read (9 Nov 2026). Contributed by Harumi-Matsuba (issue #364; repository `Harumi-Matsuba/flak1940-public`, commit a181cd7, per the contributor's licence file), who worked with Anthropic Claude (Claude Fable 5.1) and used OpenAI Codex as a blind second reader and Claude Sonnet for image judgements. **No human has checked the transcriptions**, and the project has not seen the images (NARA is not reachable from here); what the project checked is the keys against the contributor's own transcriptions (`VERIFICATION.md`).
+Status: read (9 Nov 2026). Contributed by Harumi-Matsuba (issue #364; repository `Harumi-Matsuba/flak1940-public`, commit a181cd7, per the contributor's licence file), who worked with AI agents (one a blind second reader, another for image judgements). **No human has checked the transcriptions**; the project has seen no 17 May image, and of the 4 June message only frame 0863 was compared with the NARA image (parts 2-5 not); what the project checked is the keys against the contributor's own transcriptions (`VERIFICATION.md`).
 
 ## The documents
 
