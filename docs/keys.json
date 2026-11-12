@@ -4798,6 +4798,22 @@
    "year": 1814,
    "found": 2026,
    "note": "A surviving sheet of the State Department's numerical code, NARA M97 roll 13 frames 1056-1057, printed by Weber (1979) as WE028; working transcription in targets/morris1813/beling/key/codebook_M97_13_transcription.csv (seven entries blank, eleven disputed). The same code as the table rebuilt in targets/jqa (k-jqa1385)."
+  },
+  {
+   "id": "k-pagni444",
+   "label": "Anonymous to Pagni, MdP 444 c. 315: paired figure alphabet with unvalued codes (rebuilt by Malcolm McBratney with Claude)",
+   "kind": "rebuilt here",
+   "by": "Malcolm McBratney",
+   "year": 1555,
+   "note": "Read off the repeated groups of a frozen transcription, no crib and no gloss; a bare figure and the same figure with one dot are neighbouring letters (not shown for g/h, weak for a/b), a repeat sign, three word signs, nulls; eleven capital or small-letter codes have no value. Year is the catalogue's, the date of the letter is not established (late 1555 to early 1557 on the content). targets/pagni444/key.tsv."
+  },
+  {
+   "id": "k-klingenberg1675",
+   "label": "Biermann to Klingenberg 1675: letter signs, syllable table 432-525 and word codes (rebuilt by Malcolm McBratney with Claude)",
+   "kind": "rebuilt here",
+   "by": "Malcolm McBratney",
+   "year": 1675,
+   "note": "Letter signs from a probable word and repeats, the syllable table from its alphabetical structure, 106 word values from repeated contexts, in four maps frozen before the letters they were tested on. Not the image-55 key (K55) and not, as it stands, the sheet at images 94/95. targets/klingenberg1675/key.tsv."
   }
  ],
  "links": [
@@ -7734,6 +7750,18 @@
    "target": "morris1813",
    "how": "adapted",
    "note": "The block reversal was first found on frame 0039 by fitting this table (WAINUT, 27 Oct 2026): function-word share 0.353 against at most 0.297 for 20,000 random block orders; the later readings use the code sheet itself (k-we028)"
+  },
+  {
+   "key": "k-pagni444",
+   "target": "pagni444",
+   "how": "partial",
+   "note": "recovered by the contributor from the ciphertext alone; 1,369 of 1,514 signs read, all code values open"
+  },
+  {
+   "key": "k-klingenberg1675",
+   "target": "klingenberg1675",
+   "how": "partial",
+   "note": "recovered by the contributor from the letters alone; eleven letters counted at 77.5% of tokens, word values by context"
   }
  ],
  "sources": [
@@ -8998,6 +9026,14 @@
   {
    "source": "s-cyphersolver",
    "key": "k-wackerbarth-s1"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-pagni444"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-klingenberg1675"
   }
  ],
  "unlinked": {

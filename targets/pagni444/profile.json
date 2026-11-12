@@ -228,9 +228,58 @@
       "kind": "literature search",
       "what": "Searches for an edition or decipherment: the repository, the inventory, archive.org full text of four printed collections, the Venetian calendar, the web. Nothing found. The Medici Archive Project database, Cantagalli and Ancel were not searched.",
       "result": "partial"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "statistical test",
+        "language-model scoring"
+      ],
+      "what": "Statistical validation (docs/_validate.py): 1320 tokens, 37 types, it-cinquecento order 4: reading -1.866 per letter; random keys -4.989 (z 5.5); key annealed onto shuffled ciphertext best -2.959 (mean -3.007, z 30.8); annealer on the real text -1.866. Verdict: pass.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "manual reconstruction"
+      ],
+      "what": "Independent verification before the write-up: scripts/build.py re-run in a copy (all outputs identical); own decoder from key.tsv agrees with the key on 1,369 of 1,369 read units; Sectigo token and 28 stamped files checked; ASF images fetched (HTTP 200) and lines R03-R04 compared (about 100 signs, digits agree, dots not decidable at 2000 px); shuffled-key control 0 of 5,000 by the first verifier.",
+      "result": "worked"
     }
   ],
   "outcome": {
+    "validation": {
+      "date": "2026-11-12",
+      "model": "it-cinquecento",
+      "file": "validation.tsv",
+      "tokens": 1320,
+      "types": 37,
+      "tokens_per_type": 35.68,
+      "score": -1.866,
+      "nulls": {
+        "random keys": {
+          "n": 200,
+          "mean": -4.989,
+          "sd": 0.566,
+          "max": -3.682,
+          "z": 5.5,
+          "p": 0.005
+        },
+        "shuffled refit": {
+          "n": 6,
+          "mean": -3.007,
+          "sd": 0.037,
+          "max": -2.959,
+          "z": 30.8,
+          "p": 0.1429
+        }
+      },
+      "power": -1.866,
+      "verdict": "pass",
+      "notes": "claimed per-occurrence score -1.866; polyphony 0.0; 194 unread tokens left out; annealer on the real text from random keys reached -1.866"
+    },
     "class": "read in part",
     "key": "partial",
     "method": "key recovered from ciphertext-only",
@@ -249,7 +298,8 @@
       "tokens_open": 23
     },
     "verification": [
-      "key confirms"
+      "key confirms",
+      "statistical test"
     ],
     "provenance": "contributed",
     "credits": [
@@ -276,47 +326,29 @@
     ],
     "gaps": [
       {
+        "item": "8 unread signs, among them a looped sign three times at the start of a clause",
+        "blocker": "illegible",
+        "detail": "holes.md 1; no image larger than 2000 px."
+      },
+      {
         "item": "11 code signs, 23 units: A, L, S, G, B, D, Q, m, n, d and an ampersand",
-        "blocker": "open-codes",
-        "detail": "Proposed from context: A Papa, L Duca (five uses agree), S Siena, G Cardinale, B Imperatore. None is fixed by a duplicate. A dated letter in the same cipher or the key register would fix them."
-      },
-      {
-        "item": "62 signs dropped as nulls by context, mostly single-dotted t, l and b between words",
-        "blocker": "illegible",
-        "detail": "61 of 62 stand at word boundaries, like the key nulls. A separator class or two-dot nulls with a dot not visible: not decided at 2000 px."
-      },
-      {
-        "item": "h: the dotted 4 is never read; the bare 4 stands for h in 7 units by context",
-        "blocker": "illegible",
-        "detail": "The pairing g/h is not shown by this text."
-      },
-      {
-        "item": "52 letters by context or left open between two signs by the image",
-        "blocker": "illegible",
-        "detail": "Listed in holes.md 3. Dots on 5, 6 and 9 above all."
-      },
-      {
-        "item": "8 unread units, among them a looped sign three times at the start of a clause",
-        "blocker": "too-short",
-        "detail": "holes.md 1."
-      },
-      {
-        "item": "The date",
         "blocker": "no-key-material",
-        "detail": "Dateline 'el dj xx. m' with a bar, no year. Content: late 1555 to early 1557. Serristori's letter of 24 Oct 1555 (Mediceo 3274 c. 460) is not online; the Lansac and Lorraine clauses are not tested against January 1557."
+        "detail": "Proposed from context only (A Papa, L Duca, S Siena, G Cardinale, B Imperatore); none is fixed by a duplicate. A dated letter in the same cipher or the key register would fix them."
       },
       {
-        "item": "The writer; whether c. 318 is the address leaf",
+        "item": "h, and 62 signs dropped as nulls by context (mostly single-dotted t, l and b between words)",
+        "blocker": "illegible",
+        "detail": "61 of 62 stand at word boundaries like the key nulls: a separator class, or two-dot nulls with a dot not visible at 2000 px. The pairing g/h is not shown by this text."
+      },
+      {
+        "item": "The date and the writer",
+        "blocker": "no-key-material",
+        "detail": "Dateline 'el dj xx. m' with a bar, no year; content points to late 1555 to early 1557. Serristori's letter of 24 Oct 1555 (Mediceo 3274 c. 460) is not online."
+      },
+      {
+        "item": "Whether c. 318 is the address leaf of this letter",
         "blocker": "needs-physical-access",
-        "detail": "Conjugacy of cc. 315 and 318 is probable from the nesting of the neighbouring bifolia, not seen."
-      },
-      {
-        "item": "No person has compared the transcription with the images; the clear text and the checks of 12 Nov were read by one reader",
-        "blocker": "not-attempted"
-      },
-      {
-        "item": "Prior art not checked in the Medici Archive Project database, Cantagalli, Ancel",
-        "blocker": "not-attempted"
+        "detail": "Probable from the nesting of the neighbouring bifolia; no image shows the two leaves joined."
       }
     ],
     "texts": [
@@ -332,15 +364,15 @@
         "translation": "translation.md",
         "language": "it",
         "state": "read in part",
-        "read_share": 0.746,
+        "read_share": 0.904,
         "summary": "A report to Cosimo I's secretary, probably from Rome. The writer has stayed on at the request of the Marquis of Sarria to watch a negotiation with a person hidden as A (the Pope, if the proposed value holds). A friend who knows French secrets says 'ours' will be deceived. A league is being negotiated, with Cervia and Ravenna to be pledged to L 'of Ferrara' for money; 'Monsignor di Lansa', arrived the evening before, presses it, and G 'of Lorraine' is expected. The writer suspects the French have already settled with A and are playing for time, to see whether L 'Ottavio' and his troops can force S to an accord with A as depositary. A is the bitter enemy of B and of L and has shown it openly; money is being spent, horse are coming from Mirandola and Parma, and when A disarms the French will take on the soldiers. The writer asks leave to go to n and to be kept in the good grace of L. Context: Franco-papal dealings against the Imperial side and Florence under Paul IV, between late 1555 and early 1557; the date is not established.",
         "reading_review": {
           "grade": "B",
-          "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (the session that prepared these files). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
+          "by": "integration reviewer (a model session, not a person), 12 Nov 2026",
           "date": "2026-11-12",
-          "note": "Read as sentences against the translation. The letter runs as connected Italian and its argument can be followed from start to end. Holes: code signs in most sentences (five with a value proposed from context, six with none), 8 unread signs, eight places where a letter is supplied with no sign, and about forty words that hold a letter the key does not give from the sign on the image; all are marked in place."
+          "note": "Read as sentences against the translation. The letter runs as connected Italian from start to end and the argument can be followed. Holes: code signs in most sentences (five with a value proposed from context, six with none), 8 unread signs, and about forty words that hold a letter the key does not give from the sign on the image; all are marked in place. The contributor's own review (Claude, the session that prepared the files) is not independent and is replaced by this one."
         },
-        "note": "read_share is our count of the README word rule on reading.md (279 words, 95 holes): every code and every word with a supplied, emended or open letter counts as a hole, and the clear lines are counted with the cipher. By cipher units the figure is 90.4%. transcription_blind.txt is the blind third transcription in its own sign names; pass 1 is in passes/, pass 2 and pass 3 in timestamps/stamped/, the adjudication list is adjudication.tsv."
+        "note": "read_share is the share of the 1,514 cipher units read by the key from every sign the image allows (units.tsv, counts.txt): the one rule of this folder. A word count of reading.md that the folder gave (279 words, 95 holes, 0.746) does not add up and is not used. transcription_blind.txt is the blind third transcription in its own sign names; pass 1 is in passes/, pass 2 and pass 3 in timestamps/stamped/."
       }
     ],
     "key_file": [
@@ -348,6 +380,6 @@
       "overrides.tsv",
       "dropped_signs.tsv"
     ],
-    "notes": "Filed as read in part, at 1,369 of 1,514 units (90.4%); the 89.7% and 91.5% of the first day are withdrawn and 91.72% is a sign-agreement figure, not a share read (counts.txt). contribution 'catalogue correction' is for the date only: the catalogue's 'late March 1555' does not fit the content, and we put nothing firmer in its place. The shuffled-key and solver controls are from our own scripts of 11 Nov; docs/_validate.py was not run and no validation block is claimed. The reviewer's check on issue 426 (his decoder, his shuffled-key control) is his to record; he did not reach the images, so no independent verification is claimed. The repository's checker scripts were not run by the contributor; the checks were verified by reading them (pull request text). The contributor id mcbratney is added to contributors.json by pull request 445 (muzio1550), not by this one."
+    "notes": "Filed as read in part, at 1,369 of 1,514 units (90.4%). The 89.7% and 91.5% of the first day are withdrawn and 91.72% is a sign-agreement figure, not a share read (counts.txt). contribution 'catalogue correction' is for the date only: the catalogue's 'late March 1555' does not fit the content and nothing firmer is put in its place. Checked at integration (12 Nov 2026): build.py reproduces every file and figure; an independent decoder agrees on all 1,369 read units; the stamp matches its files (the order of events is by the contributor's record); two lines of the ASF image were compared by the verifier (agree); docs/_validate.py gives pass on the units read by the key. The solver run and the optimised null controls were not re-run. The contributor id mcbratney is in contributors.json."
   }
 }

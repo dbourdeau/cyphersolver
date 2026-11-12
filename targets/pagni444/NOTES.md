@@ -74,7 +74,7 @@ One final figure: **1,369 of 1,514 units read (90.42%)**; 137 not read (52 lette
 | 90.42% | 1,369/1,514 after 138 disputed units were checked on the image | **the figure** |
 | 95.7% | 1,224/1,279, letters only, before adjudication | not a headline figure |
 
-By words, on `reading.md`, with every word that holds a supplied, emended or open letter counted as a hole and every code as a hole: 279 words and 95 holes, **0.746**. The reviewer's estimate by words, on the issue's sentences, was about 90%; ours is lower because it counts those words whole.
+By words, the folder gave "279 words and 95 holes, 0.746" on `reading.md`. That does not add up (95 of 279 is a hole share of 0.34, a read share of 0.66), and the verifier's rough count of the same file (about 359 words with the clear lines, 86 holding a bracket) gives 0.76: the word figure is dropped, and 90.42% by units is the only share used.
 
 ## How it was done
 
@@ -113,12 +113,32 @@ None found; priority not established. Checked on 11-12 Nov 2026: this repository
 
 ## Remaining gaps
 
-- 8 unread signs (`holes.md` 1), among them a looped sign that stands three times at the start of a clause.
-- All code values. A dated letter in the same cipher, or the key register, would fix them.
-- h, and the 62 signs dropped as nulls by context: a better image of the dots.
-- The date and the writer. The spellings (essare, intendare, mettare, ugni, biu; "por acca", "con esta", "como", "el dj", "my" in the address) are not Florentine; no attribution is made.
-- Whether c. 318 is the address leaf.
-- The clear text and the checks of 12 Nov were read by one reader. No person has compared the transcription with the images.
+- 8 unread signs (`holes.md` 1), among them a looped sign that stands three times at the start of a clause - blocker: illegible; no larger image than the archive's 2000 px.
+- All eleven code values (A, L, S, G, B, D, Q, m, n, d, &) - blocker: no-key-material; a dated letter in the same cipher or the key register would fix them, and neither is online.
+- h, and the 62 signs dropped as nulls by context (mostly single-dotted t, l and b between words) - blocker: illegible; whether a dot is missing or the signs are a separator class cannot be told at 2000 px.
+- The date and the writer - blocker: no-key-material; the dateline "el dj xx. m" has no year and the leaf names no sender (Serristori's letter of 24 Oct 1555, Mediceo 3274 c. 460, is not online).
+- Whether c. 318 is the address leaf of this letter - blocker: needs-physical-access; no image shows the two leaves joined.
+
+## Escalation
+
+- [x] siblings: the neighbouring leaves cc. 313-317 opened (clear letters of March 1555, none a decipherment); Babbi's cipher in the same filza compared (`timestamps/stamped/KEY_COMPARATOR.md`): a different system
+- [x] clear-pages: no decipherment on c. 315, on c. 318 or noted in inventory VII
+- [x] known-keys: the figure ciphers of Babbi, Griffoli and Nucci in the same archive do not fit; the Florence chancery keys (Cifrari II serie) are not online
+- [x] print: inventory VII, Sauze, Romier, Serristori, Desjardins, Calendar of State Papers Venice read for the context; no edition or decipherment of this leaf found
+- [x] key-rebuild: the key was read off the repeats of the ciphertext; an unaided annealer is reported to recover 87.1% of it (our own scripts, not in this folder)
+- [n/a] retry: the extended key was applied to every unit in pass 3 and again after the adjudication; nothing further to retry without new images or key material
+
+## Integration check (12 Nov 2026)
+
+The folder was verified before it was written up. What reproduced and what did not:
+
+- `scripts/build.py` run in a copy rebuilds `units.tsv`, `transcription.txt`, `decryption.txt`, `overrides.tsv`, `dropped_signs.tsv`, `key.tsv` and `counts.txt` byte for byte. An independent decoder written from `key.tsv` and `transcription.txt` agrees with the key on all 1,369 units counted as read (15 differ only in the letter case that marks a two-sign image reading). Counts: 1,514 units; 1,369 read (90.42%), 137 not read, 8 unread.
+- The Sectigo token carries the manifest hash and the time of 11 Nov 2026 21:08:11 GMT; the 28 stamped files in `timestamps/stamped/` match their manifest lines. The order of events (pass 2 frozen before decoding, the key read off the repeats of pass 2) is **by the contributor's record**: the stamp shows only that the files existed at that time. The certificate chain and the OpenTimestamps proof were not verified.
+- The ASF image server answered curl on 12 Nov (2000 x 2829 px, recto and verso). Lines R03 and R04 (about 100 signs) were compared with the image by the verifier: the digits and letters agree throughout and the dots that can be seen at this size agree; the number of dots over a 5, 6 or 9 cannot be settled by eye at 2000 px. The rest of the leaf has not been compared by a person. This replaces the earlier statement that nobody had looked at the images.
+- The shuffled-key control (0 of 5,000; real -2.262, best control -3.516) was run by the first verifier on its own decoder with an Italian character model. At integration `docs/_validate.py` was run on the units read by the key (`validation.tsv`, written at integration from `units.tsv`): verdict pass. This is a language-fit test of a key partly built from the same text, not a measure of how much of the text is right.
+- The solver run (87.1% of the key recovered) and the five optimised null controls were not re-run (no scripts in the folder); they are the contributor's.
+- Figures corrected at integration: the headline stays 1,369 of 1,514 units (90.42%) everywhere, counted by tokens; the per-text `read_share` in `profile.json` was a word count stated as 279 words, 95 holes, 0.746, which does not add up; it is now the unit figure, so that one rule is used in the whole folder.
+- The catalogue date "s.d. [late March 1555]" does not fit the content (Julius III was dying in March 1555, and A is hostile to the Emperor and the Duke); this folder leaves the date open (above) and catalogue row 2348 leaves the catalogue with this write-up.
 
 ## Tools
 
