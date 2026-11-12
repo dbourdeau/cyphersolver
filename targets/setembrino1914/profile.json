@@ -1,0 +1,212 @@
+{
+ "schema_version": 1,
+ "target": "setembrino1914",
+ "title": "Cipher telegrams to Setembrino de Carvalho, Ceará 1914 (catalogue 1470): key MFTDBSJV telegrams read, 10 March and 20 May provisional",
+ "documents": [
+  {
+   "id": "fsc_pce_1914_03_10_4",
+   "read": "read in part",
+   "shelfmark": "CPDOC/FGV, Arquivo Fernando Setembrino de Carvalho, FSC pce 1914.03.10/4 (DocReader FSC_PACEARA pagfis 1317-1332)",
+   "date": "10 March - 20 May 1914",
+   "year": 1914,
+   "country": "Brazil",
+   "route": "Rio de Janeiro (Vespasiano de Albuquerque, Rego Barros, E. Pamplona) -> Fernando Setembrino de Carvalho, Fortaleza",
+   "places": {
+    "from": "Rio de Janeiro",
+    "to": "Fortaleza"
+   },
+   "language": "Portuguese",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Contemporary pencil decipherment of the 14 March telegram (pagfis 1319) and a failed pencil attempt on pagfis 1326; none for the others.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 1440,
+    "unit": "letters",
+    "measured": true,
+    "file": "reading_count.md"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "CPDOC DocReader images (not reproduced)",
+    "image_quality": "good"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "polyalphabetic"
+  ],
+  "summary": "Vigenère, standard 26-letter alphabet, key of eight letters restarted at every word; MFTDBSJV (14 Mar - 17 Apr 1914), LETCARIV (10 Mar, provisional), OVHXZIRF (20 May, provisional).",
+  "symbol_kind": "letters",
+  "distinct_symbols": 26,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "unknown",
+  "word_division": "kept"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Contemporary pencil decipherment of the 14 March telegram; Daniel Bourdeau's vetting (research/latam_vetting/1470_sample.txt, 28 Oct and 3 Nov 2026): system, key MFTDBSJV, LETCARIV, trial readings of most March-April telegrams.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "crib"
+  ],
+  "attack": "archive decipherment",
+  "first_date": "2026-11-12",
+  "last_date": "2026-11-12",
+  "human_role": "Brice Dudout chose the target from the catalogue and set the rules (blind transcription, pre-registration frozen by hash before any key trial, held-out measurement against controls, prior-work search the day of publication); AI agents transcribed, solved, checked and wrote up.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "sibling key",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Daniel Bourdeau finds the system and rebuilds MFTDBSJV from the pencil decipherment of pagfis 1319; trial readings of six telegrams; LETCARIV for 10 March (research/latam_vetting/1470_sample.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Blind transcription and pre-registration frozen by hash; MFTDBSJV fixed on pagfis 1319 alone, measured on 731 held-out letters: 0.733 with the pre-registered lexicon (criterion 0.85 not met), 0.865 with the declared post-hoc lexicon amendment, vs max 0.129 for 2000 controls.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "All telegrams in key MFTDBSJV read: 1043 cipher letters, 97.2%; 10 March (LETCARIV) and 20 May (new key OVHXZIRF, ciphertext-only) read provisionally; whole file 1440 letters, 95.8%.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Integration check by an independent session: own decoder from key.tsv gives 242 of 243 mechanical groups identical (the one difference is OJTUB, shown from the sheet's service note); strict count by cipher group from reading_count.md: key MFTDBSJV 168 of 182 = 92.3%, file 201 of 240 = 83.8%; MRELDTKRIMV and SUQHSJU tried under every rotation of the four known keys (MFTDBSJV, LETCARIV, OVHXZIRF, LBQPOHVJ): no word. The pre-registered test result (0.733, failed) is kept as failed.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Key MFTDBSJV rebuilt from the contemporary pencil decipherment on the sheet of 14 March 1914 (pagfis 1319): first by Daniel Bourdeau, then re-derived by the contributor on that sheet alone; the 20 May key OVHXZIRF was found from the ciphertext alone and 10 March uses a near variant of the same key (both provisional).",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction"
+  ],
+  "fraction_read": 0.838,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Integration count by cipher group (the README unit is words), from the markers in reading_count.md: 240 cipher groups, 201 read without a restored letter, a probable letter or an unresolved group = 83.8%. Key MFTDBSJV telegrams: 182 groups, 168 sure = 92.3% (93% with the one probable group). The contributor's own count is by cipher letter: 1440 letters, 1377 sure + 3 probable = 95.8%; key MFTDBSJV 1043 letters, 97.2%.",
+  "verification": [
+   "matched control",
+   "contemporary decipherment",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-11-12",
+   "verdict": "fail",
+   "notes": "The contributor's pre-registered held-out test of MFTDBSJV FAILED: fixed on pagfis 1319, measured on 731 held-out letters (18 March + 17 April), S = 0.733 against the 0.85 criterion (controls at most 0.097). A larger lexicon chosen by rule after that result (amendment A1, declared post hoc) gives 0.865 against at most 0.129 for 2000 controls; that is a changed rule, not a pass of the test. The key is credible on other evidence: the contemporary pencil decipherment on pagfis 1319 agrees at every key position, and the held-out telegrams read as continuous Portuguese. LETCARIV (93 letters) and OVHXZIRF (held-out 152 letters, S = 0.546) did not reach the criterion either. Contributor's own test, not docs/_validate.py; the scripts and the lexicon are not in the repository."
+  },
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "pencil decipherment of the 14 March 1914 telegram on the sheet (pagfis 1319)",
+    "date": "1914",
+    "published": false
+   },
+   {
+    "who": "bourdeau",
+    "role": "key or decipherment used",
+    "note": "system, key MFTDBSJV, LETCARIV and trial readings, vetting 28 Oct / 3 Nov 2026 (research/latam_vetting/1470_sample.txt)",
+    "date": "2026-10-28"
+   },
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "blind transcription of the 16 images, key MFTDBSJV validated on held-out telegrams, all its telegrams read (1043 letters, 97.2%), including the full no. 52414; 20 May key OVHXZIRF found and 10 March text read (provisional); builds on Daniel Bourdeau's vetting",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "14 March telegram checked against its contemporary pencil decipherment",
+    "date": "2026-11-12"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "pagfis 1326, second group MRELDTKRIMV after 'complot' (11 letters)",
+    "blocker": "too-short",
+    "detail": "no value under any rotation of MFTDBSJV, LETCARIV, OVHXZIRF or LBQPOHVJ; a transmission slip is likely and 11 letters give nothing to test it on; the contemporary pencil attempt stops at 'complot amli...'"
+   },
+   {
+    "item": "pagfis 1328, SUQHSJU after 'teme ataque' (7 letters)",
+    "blocker": "too-short",
+    "detail": "same: no word under any rotation of the four known keys; 'general' would need three slips"
+   },
+   {
+    "item": "10 March (LETCARIV) and 20 May (OVHXZIRF) keys not validated; 93 and 304 letters",
+    "blocker": "too-short",
+    "detail": "held-out parts of 34 and 152 letters; many one-step and Morse slips, so their readings are provisional"
+   },
+   {
+    "item": "transcription against the CPDOC images, and the typed clear copies FSC pce 1914.02.19/2 (cribs)",
+    "blocker": "needs-physical-access",
+    "detail": "the DocReader pages load their images by JavaScript, so a browser session is needed; no image was compared in the integration"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "fsc_pce_1914_03_10_4",
+    "label": "Cipher telegrams Rio de Janeiro -> Fortaleza, 10 March - 20 May 1914 (FSC pce 1914.03.10/4)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "pt",
+    "state": "read in part",
+    "read_share": 0.838,
+    "summary": "Telegrams to Col./Gen. Setembrino de Carvalho, federal commander at Fortaleza during the Juazeiro sedition, from the Minister of War Vespasiano de Albuquerque, his aide-de-camp and son-in-law Rego Barros, and E. Pamplona: reports that Governor Franco Rabelo's palace was mined and the engineer's account of the works under it, Ceará faction politics (Thomaz Cavalcanti, Liberato), telegraph staff, the Pernambuco judge and the Supreme Court, and a reserved warning on 20 May that the Minister was displeased by a cipher telegraph conversation.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "date": "2026-11-12",
+     "note": "Read as sentences 12 Nov 2026 against translation.md: coherent telegraphic Portuguese of 1914 throughout the MFTDBSJV telegrams (palace mining report, no. 52414 in full, Pinheiro, Andrade Fortuna, Gonçalo Souto, Pernambuco judge). Unresolved: MRELDTKRIMV (1326), SUQHSJU (1328). Grade B because 10 March and 20 May rest on keys not validated and need many slip corrections. Integration check: the sentences read; by cipher groups 83.8% of the file and 92.3% of the MFTDBSJV telegrams, so read in part."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "provenance": "contributed",
+  "notes": "Read in part (corrected 12 Nov 2026; the PR said read with limited reserves). By the README rule, in cipher groups, the telegrams in key MFTDBSJV are 92.3% (the contributor's 97.2% is a letter count) and the file 83.8%; the contributor's letter counts are kept once, labelled theirs. (a) The pre-registered test of MFTDBSJV failed (0.733 < 0.85); the 0.865 comes from a larger lexicon chosen after the result. (b) 10 March (LETCARIV) and 20 May (OVHXZIRF) are provisional. (c) Two groups are unread: MRELDTKRIMV and SUQHSJU. Order of events (frozen hashes, single commits) is by the contributor's record."
+ }
+}

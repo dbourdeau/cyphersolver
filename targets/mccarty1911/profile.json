@@ -1,0 +1,294 @@
+{
+ "schema_version": 1,
+ "target": "mccarty1911",
+ "title": "González Garza and \"Adolfo González\" (Gustavo A. Madero), El Paso - San Antonio, March-April 1911 (CEHM-Carso CMXV): two telegrams read with the archive's \"Clave G.A.\" card",
+ "documents": [
+  {
+   "id": "cmxv-15-1432-1",
+   "read": "read in part",
+   "shelfmark": "CEHM-Carso, Fondo CMXV (Archivo Federico González Garza), CMXV.15.1432.1-4",
+   "date": "29 March 1911",
+   "year": 1911,
+   "country": "United States",
+   "route": "Federico González Garza (El Paso, Texas) -> \"John McCarty\" = Adolfo González (San Antonio, Texas)",
+   "language": "Spanish",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the sheet; not in the typed list of period decipherments CMXV.18.1795.1; the CEHM record says \"en clave\".",
+    "partial": false
+   },
+   "length": {
+    "tokens": 62,
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Brice Dudout, from the CEHM viewer image (study copy, not redistributed)",
+    "image_quality": "good",
+    "notes": "Typed sender's copy on a Texas Telegraph Company form; six coded words, the rest clear Spanish."
+   },
+   "places": {
+    "from": "El Paso",
+    "to": "San Antonio"
+   }
+  },
+  {
+   "id": "cmxv-16-1561-7",
+   "read": "read",
+   "shelfmark": "CEHM-Carso, Fondo CMXV (Archivo Federico González Garza), CMXV.16.1561.7-13",
+   "date": "19 April 1911",
+   "year": 1911,
+   "country": "United States",
+   "route": "Federico González Garza (El Paso) -> Adolfo González (San Antonio)",
+   "language": "Spanish",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the sheet; not in the typed list of period decipherments CMXV.18.1795.1.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 38,
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription_1561-7-13.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Brice Dudout, from the CEHM viewer image (study copy, not redistributed)",
+    "image_quality": "good",
+    "notes": "Typed copy; four coded words (38 letters) in clear Spanish; Clave G.A."
+   },
+   "places": {
+    "from": "El Paso",
+    "to": "San Antonio"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "polygraphic"
+  ],
+  "summary": "The \"Clave G.A.\" card (CMXV.16.1557.1 scans 12-13): a digraphic table of 2 rows x 15 columns; a plain letter is one of five row letters (WZCTG or MVPKI) followed by its column letter (BLRAFQENHDXYOSJ); the coded groups of a run are read together, two letters at a time. A different cipher from the \"nueva clave\" grille of 18-20 April (nuevaclave1911).",
+  "symbol_kind": "letters",
+  "distinct_symbols": 25,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "not applicable"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The key card \"Clave G.A. (una de las usadas en San Antonio)\", CMXV.16.1557.1 scans 12-13, in the same fonds; no decipherment of this telegram on the sheet or in CMXV.18.1795.1.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "transcription",
+   "key from archive"
+  ],
+  "attack": "key from archive",
+  "human_role": "Brice Dudout directed the work and decided what to publish. Claude (Opus) agents transcribed the card and the telegrams from the CEHM viewer images, ran the preregistered measure of the card and wrote the readings. An AI model (Claude Fable 5.2, one API run) pointed out that the coded groups of 1561.7-13 must be joined before they are cut into pairs. No human palaeographer checked the transcriptions.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout (transcription, validation of the card, readings, write-up)",
+   "Claude Fable 5.2 (Anthropic), one API run (pointed out the joined groups of 1561.7-13)"
+  ],
+  "first_date": "2026-11-11",
+  "last_date": "2026-11-12"
+ },
+ "solution": [
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "Telegram and key card transcribed from the CEHM viewer images; hashed before any key was tried.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "key from source",
+   "what": "The \"Clave G.A.\" card (CMXV.16.1557.1 scans 12-13) selected among the fonds' cards on the first half of the coded letters; it decodes all six coded words (Galeana, Dr, Ag, Guerrero, Chih, Encinillas), two pairs faulty in transmission.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "what": "First held-out measure on two telegrams: 30 letters, car 0.833 vs best control 0.667: too short, not validated.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Preregistered measure run once: the card as is against the period decipherments of eight sibling telegrams, cipher transcribed blind; agreement 0.866 on 769 cipher letters vs at most 0.257 for 400 controls (VALIDATION.md).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Reading checked as Spanish sentences: 19 of 20 words read as sense; Ag not identified.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "1561.7-13 (19 April 1911) decoded with the same card once the coded groups are joined before cutting into pairs (an earlier group-by-group attempt failed): DR, CLAVE, FONDOS, PARQUE; all four coded words read.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Integration check by an independent session: own decoder from key.tsv reproduces the decryptions of both telegrams; the validation table of 28 segments gives A = 0.8655 (all 28 edit distances right), the contributor's 0.866; the scripts and the clear/cipher files of that test are kept outside the repository, so it was not re-run. Strict count by words (restored words not counted): 1432.1-4 18 of 20 = 90% (GALEANA and GUERRERO each need a faulty or lost pair repaired by the sense), 1561.7-13 21 of 21.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "Housekeeping: The three telegrams in the turning grille moved out to nuevaclave1911 (one key, one entry): the card and the grille are different systems.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-12",
+   "verdict": "not applicable",
+   "notes": "The key is the archive's own card, not recovered here, so docs/_validate.py does not apply. The contributor's preregistered test of the card passed: A = 0.866 on 769 cipher letters of eight sibling telegrams against at most 0.257 for 400 controls (VALIDATION.md; recomputed from its table at 0.8655; the scripts are not in the repository)."
+  },
+  "class": "read in part",
+  "verification": [
+   "key confirms",
+   "contemporary decipherment",
+   "statistical test"
+  ],
+  "method": "read with known key",
+  "key": "recovered",
+  "method_basis": "Both telegrams are read with the archive's own card \"Clave G.A.\" (CMXV.16.1557.1 scans 12-13), applied unchanged and validated beforehand against the period decipherments of eight sibling telegrams (A = 0.866 on 769 cipher letters, controls at most 0.257; thresholds fixed in advance, passed).",
+  "contribution": [
+   "transcription"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "transcription of the card and of two telegrams, validation of the card on eight sibling telegrams, readings of 1432.1-4 and 1561.7-13",
+    "date": "2026-11-12",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/442"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "catalogue 1462; the key cards CMXV.16.1557.1 and the typed list of period decipherments 1795.1",
+    "date": "2026-10-28"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the card \"Clave G.A. (una de las usadas en San Antonio)\", CMXV.16.1557.1 scans 12-13, and the period decipherments of eight sibling telegrams used to validate it",
+    "date": "1911",
+    "published": false
+   }
+  ],
+  "gaps": [
+   {
+    "item": "identity of \"Ag\"",
+    "blocker": "needs-physical-access",
+    "detail": "the letters are certain; the recipients' papers and Narváez 2011 and 2019 were not searched"
+   },
+   {
+    "item": "whether the telegram is in print",
+    "blocker": "needs-physical-access",
+    "detail": "the books are not available to the project"
+   },
+   {
+    "item": "a second reader's check of the transcriptions and of the card against the CEHM images",
+    "blocker": "needs-physical-access",
+    "detail": "the images may not be redistributed"
+   },
+   {
+    "item": "1432.1-4: GALEANA and GUERRERO each rest on a faulty or lost pair repaired by the sense",
+    "blocker": "needs-physical-access",
+    "detail": "the typed copy is the only text; the original telegram form would show whether the error is the sender's or the typist's"
+   },
+   {
+    "item": "transcriptions against the CEHM images",
+    "blocker": "needs-physical-access",
+    "detail": "visor.cehm.org.mx failed TLS verification in the integrating session; no image was compared"
+   }
+  ],
+  "notes": "Two telegrams read with the archive's Clave G.A. card; the card was validated beforehand on period decipherments of eight sibling telegrams (A = 0.866, passed). By the README rule (words) 39 of 41 = 95.1% over both, but 1432.1-4 alone is 18 of 20 = 90% (two words repaired by the sense), so the target is read in part; 1561.7-13 is read in full. The card's transcription is the contributor's, checked by no second reader. The three telegrams in the turning grille are on nuevaclave1911, a different cipher with its own page.",
+  "fraction_read": 0.951,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Integration count by words (README rule), from reading.md and reading_1561-7-13.md: 41 words, 39 read = 95.1% (1432.1-4 18 of 20 = 90%, GALEANA and GUERRERO restored by the sense; 1561.7-13 21 of 21). The contributor counts 19 of 20 for 1432.1-4.",
+  "key_file": "key.tsv",
+  "texts": [
+   {
+    "doc": [
+     "cmxv-15-1432-1"
+    ],
+    "label": "Telegram of 29 March 1911 to John McCarty (CEHM-Carso CMXV.15.1432.1-4)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.9,
+    "summary": "González Garza at El Paso to Adolfo González at San Antonio: on the 13th Dr (probably Madero) and Ag separated at Galeana, one towards Guerrero, the other towards Chihuahua, camping on the 23rd at Encinillas.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (Opus), for Brice Dudout",
+     "date": "2026-11-12",
+     "note": "Read as Spanish sentences: the six decoded words fill the gaps of the clear text; two faulty pairs corrected by the sense, so by the README rule 18 of 20 words (90%)."
+    }
+   },
+   {
+    "doc": [
+     "cmxv-16-1561-7"
+    ],
+    "label": "Telegram of 19 April 1911 to Adolfo González, Clave G.A. (CEHM-Carso CMXV.16.1561.7-13)",
+    "transcription": "transcription_1561-7-13.txt",
+    "decryption": "decryption_1561-7-13.txt",
+    "reading": "reading_1561-7-13.md",
+    "translation": "translation_1561-7-13.md",
+    "language": "es",
+    "state": "read",
+    "read_share": 1.0,
+    "summary": "González Garza to Adolfo González: Dr wants Elías to come too; keep using the old key while the crisis lasts, it is quicker; send funds and ammunition of all kinds at once.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (Opus), for Brice Dudout",
+     "date": "2026-11-12",
+     "note": "All four coded words decode letter for letter with the validated card and complete the clear sentences."
+    }
+   }
+  ],
+  "parts": [
+   {
+    "label": "Clave G.A. telegrams (1432.1-4, 1561.7-13)",
+    "records": "cmxv-15-1432-1, cmxv-16-1561-7",
+    "method": "read with known key",
+    "extent": "partial",
+    "basis": "the archive's key card, validated on period decipherments of eight sibling telegrams (VALIDATION.md)"
+   }
+  ]
+ }
+}

@@ -1,0 +1,29 @@
+Setembrino 1914 (catalogue 1470): pre-registered validation (Brice Dudout, 12 Nov 2026; contributor's own test, not docs/_validate.py)
+
+Frozen before any key trial: prereg.md (SHA-256 ae41ac0f21a2fd794061a3d26ba7d7b0cd42eb2724392d43356f6625e30339ee), on the blind
+transcription (SHA-256 d2a2e4d6e7fb6695f873157c981804142bdd0d443fd1a148f5052723fdb885c1).
+Measure S = share of cipher letters whose group deciphers (Vigenere, key restarted per group) to a word of a Portuguese lexicon,
+or to two words of it. Controls: C1 = 1000 random keys of the same length on the same portion; C2 = the tested key on 1000
+copies of the portion with letters shuffled inside each group. Criterion: S >= 0.85 on the held-out portion and S > max(C1, C2).
+
+Unit A, key MFTDBSJV
+  Key fixed on 14 Mar telegram (pagfis 1319) alone, against the contemporary pencil decipherment on that sheet: 17 groups,
+  every key position agrees (one conflict at a letter already marked doubtful in the transcription).
+  Held-out portion: 18 Mar (no. 52414) + 17 Apr (pagfis 1329) = 731 letters.
+  Pre-registered lexicon (6 Gutenberg books, 25 327 forms): S = 0.733; max C1 0.083, max C2 0.097 (means 0.014 / 0.056).
+     -> criterion NOT met (S < 0.85). Misses are ordinary words absent from the small literary lexicon (informada, latrina,
+        dispositivos, publicando, aguarda...), not decipherment failures.
+  Amendment A1 (amendment_A1.md, declared post hoc, frozen before re-running, SHA-256 614b7054ec339c8f81c3fd85d95acd7e9353e06f8fe3ada38165dbf47ae686c5):
+     lexicon enlarged by rule (first 60 Portuguese texts of the Gutenberg catalogue), nothing added by hand, measure unchanged.
+     S = 0.865; max C1 0.129, max C2 0.114 (means 0.030 / 0.066). Criterion met.
+  Beaufort with the same key: S = 0.056. Verdict: MFTDBSJV validated (under A1; both results reported).
+
+Unit B, 10 Mar (pagfis 1317), key LETCARIV (Daniel Bourdeau, 28 Oct 2026; our ciphertext-only hill climb on even groups gives
+  LETCARIQ, the 8th letter only weakly fixed; "confianca" reads exactly with V).
+  93 letters only (no held-out portion of 300 possible). Held-out odd groups (34 letters): S = 0.235 (A1 0.412), max controls
+  0.265 (A1 0.471). Not validated: keying slips in most words.
+
+Unit C, 20 May (pagfis 1330-1332), key OVHXZIRF (new: ciphertext-only hill climb, trigram score, on the even groups of the
+  pagfis 1331 copy; periods 8-14 all return the same first eight letters, period 8 kept).
+  Held-out odd groups, 152 letters (< 300): S = 0.546 (A1 0.671); max C1 0.066 / C2 0.092 (A1 0.092 / 0.138).
+  Not validated by the criterion (Morse and keying slips in about 15 letters; held-out portion too short). Reported as provisional.

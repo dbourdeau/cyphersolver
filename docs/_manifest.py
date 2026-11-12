@@ -2652,6 +2652,16 @@ PAGES = [
          blurb='A coded telegram from Theodore Roosevelt to the Secretary of State, listed with no decoding. William Echols matched it to the State Department&rsquo;s Red Cipher of 1876, a codebook of page-and-entry groups: Roosevelt asks what Britain&rsquo;s request is and puts any call at an English port after the trip to Kiel. The codebook pages and the scan were not seen here.',
          quote='&ldquo;if they touch at English port it should be after the trip to Kiel&rdquo;',
          rights='Telegram: Library of Congress, Theodore Roosevelt Papers, reel 413, frame 0026; key identification and reading by William Echols'),
+    dict(slug='mccarty1911', label='Gonz&aacute;lez Garza to McCarty 1911', year='1911', y=1911.24, place='El Paso &rarr; San Antonio', st='partial', stt='read in part',
+         title='Gonz&aacute;lez Garza to &ldquo;John McCarty&rdquo;, El Paso, March&ndash;April 1911',
+         blurb='Two coded telegrams of the Maderista junta in Texas, listed as coded with no decipherment, read with the archive&rsquo;s own &ldquo;Clave G.A.&rdquo; digraphic card, which was first tested on eight telegrams deciphered at the time (0.866 on 769 letters against at most 0.257). Dr and Ag separated at Galeana, one for Guerrero and one for Chihuahua; later, the old key stays in use while the crisis lasts, and funds and ammunition are wanted. Read in part: 39 of 41 words, but 18 of 20 in the first telegram.',
+         quote='&ldquo;Mientras pasa crisis sigan usando por m&aacute;s r&aacute;pida CLAVE antigua&rdquo;',
+         rights='Telegrams and key card: CEHM-Carso, Fondo CMXV, CMXV.15.1432.1-4, 16.1561.7-13 and 16.1557.1 (images not reproduced); transcription, test and reading by Brice Dudout'),
+    dict(slug='nuevaclave1911', label='The nueva clave 1911', year='1911', y=1911.3, place='San Antonio &harr; El Paso', st='partial', stt='read in part',
+         title='The &ldquo;nueva clave&rdquo;: three Maderista telegrams of April 1911',
+         blurb='Three telegrams of 18&ndash;20 April 1911 in a new cipher announced by the clear words &ldquo;nueva clave&rdquo;, read in part with an 8 x 8 turning grille that an AI model proposed from the ciphertext. The pre-registered measure on a held-out telegram failed (0.520 against 0.70), so the key is not validated; five blocks of 64 letters read as Spanish. Dr is before Ju&aacute;rez, ready to attack, and an American officer advises against an assault on the mined town. Read in part (48 of 60 words).',
+         quote='&ldquo;Dividiendo ej&eacute;rcito tres paradas ocho horas cada una&rdquo;',
+         rights='Telegrams: CEHM-Carso, Fondo CMXV, CMXV.16.1551.3-4, 16.1561.5-13 and 16.1569.3-10 (images not reproduced); transcription, test and reading by Brice Dudout'),
     dict(slug='mexico1911', label='Huerta warning telegram 1911', year='1911', y=1911.4, place='Mexico City &rarr; El Paso', st='solved', stt='known key',
          title='A coded telegram to Federico Gonz&aacute;lez Garza warning of a mutiny, 19 May 1911',
          blurb='A Spanish telegram of the Maderista correspondence with ten coded words, listed as partly read from the archive&rsquo;s record. Read with the key card the same fonds holds for one of the signers: General Huerta told one of the writers that a military mutiny against the addressee is feared in the capital on account of D&iacute;az&rsquo;s resignation. Nine of the ten coded words make sense; one name stays open.',
@@ -2667,6 +2677,11 @@ PAGES = [
          blurb='Three draft telegrams of a general of Huerta&rsquo;s federal army to the Minister of War, from Lampazos (18 July 1913) and Zacatecas (13 and 18 March 1914), in the numerical Clave n&uacute;m. 109 whose printed key sheet is filed with them (CEHM-Carso, fondo DLXXIII). Brice Dudout checked the sheet on a contemporary pencil pair (1.000 of words against 0.111 for permuted tables) and read the cipher passages, 67 words: the Laredo garrison courted by the Carrancistas, an old general at San Antonio in touch with revolutionaries, and a railway to Torre&oacute;n the rebels are destroying. The fonds&rsquo; other &ldquo;en clave&rdquo; pieces use other tables and stay unread. Contributed by Brice Dudout.',
          quote='&ldquo;urge sobemanera el envia de fuerzas a esta plza&rdquo; &middot; 2-86-74-37-147-34-46-60-149',
          rights='Manuscript image: CEHM-Carso (Fundaci&oacute;n Carlos Slim), public viewer; text and translation: Brice Dudout, CC BY 4.0'),
+    dict(slug='setembrino1914', label='Setembrino de Carvalho 1914', year='1914', y=1914.25, place='Rio de Janeiro &rarr; Fortaleza', st='partial', stt='read in part',
+         title='Cipher telegrams to Setembrino de Carvalho, Fortaleza, 1914',
+         blurb='Telegrams of March to May 1914 from the Minister of War and his aide-de-camp to the federal commander in Cear&aacute; during the Juazeiro rising, in a Vigen&egrave;re cipher with an eight-letter key restarted at every word. The key was rebuilt from a pencil decipherment on one sheet; its pre-registered test failed (0.733 against 0.85). The palace of Fortaleza was reported mined, with an engineer&rsquo;s account of the works under it. Read in part (92% of the main key&rsquo;s cipher groups, 84% of the file).',
+         quote='&ldquo;o palacio acha-se cuidadosamente minado&rdquo;',
+         rights='Telegrams: CPDOC/FGV, Arquivo Fernando Setembrino de Carvalho, FSC pce 1914.03.10/4 (images not reproduced); transcription and reading by Brice Dudout; vetting by Daniel Bourdeau'),
     dict(slug='sunyatsen', label='Sun Yat-sen', year='1916', y=1916, place='Swatow &rarr; Tokyo', st='solved', stt='solved',
          title='The Swatow telegram to Sun Yat-sen, 1916',
          blurb='A telegram intercepted by the Japanese Foreign Ministry, in the Chinese telegraph code through a letter condenser. The condenser table was recovered from the ciphertext alone by testing every table of the systematic family known from Yamada&rsquo;s condensers. 41 of about 44 characters are decoded; they report Mo Qingyu&rsquo;s rising at Chaozhou.',
@@ -3440,6 +3455,9 @@ IMAGES['guastalla1717'] = None
 IMAGES['soviet1919'] = None
 IMAGES['mexico1911'] = None
 IMAGES['hernandez1911'] = None
+IMAGES['mccarty1911'] = None
+IMAGES['nuevaclave1911'] = None
+IMAGES['setembrino1914'] = None
 IMAGES['roosevelt1903'] = None
 IMAGES['piccolomini1646'] = None
 IMAGES['mazzinghi1478'] = None

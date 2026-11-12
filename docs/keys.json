@@ -4978,6 +4978,30 @@
    "by": "Andrew Beling",
    "year": 1593,
    "note": "Tomokiyo's Cipher 2 table corrected (the pi-shaped sign is o, the zeta-shaped sign is et) and extended by 13 signs, rebuilt from 6,238 transcribed signs of ff. 406 and 410-411 against the clear copies; key v2 (round-1 lines only) scored 0.894 on 84 held-out lines, the full key gives 0.908 of letters (in-sample); 72 signs have no value and about 200 are not reliably told apart."
+  },
+  {
+   "id": "k-cmxv-clavega",
+   "label": "Key card \"Clave G.A. (una de las usadas en San Antonio)\", CEHM-Carso CMXV.16.1557.1 scans 12-13: a digraphic table of 2 rows x 15 columns",
+   "kind": "archive key",
+   "by": "signed \"Dr. V.G.\"",
+   "year": 1911,
+   "note": "A plain letter is one of five row letters (W Z C T G or M V P K I) followed by its column letter (B L R A F Q E N H D X Y O S J). Tested before use on eight sibling telegrams with period decipherments: 0.866 on 769 cipher letters against at most 0.257 for 400 controls."
+  },
+  {
+   "id": "k-setembrino-mftdbsj",
+   "label": "Eight-letter Vigenère key MFTDBSJV (Ministry of War telegrams to Fortaleza, March-April 1914), restarted at every word",
+   "kind": "rebuilt here",
+   "by": "Daniel Bourdeau, Brice Dudout",
+   "year": 1914,
+   "note": "Rebuilt from the contemporary pencil decipherment on the sheet of 14 March 1914; its pre-registered held-out test failed (0.733 against 0.85; 0.865 only with a lexicon enlarged afterwards). Near variants LETCARIV (10 March) and OVHXZIRF (20 May, found from the ciphertext) are provisional."
+  },
+  {
+   "id": "k-nuevaclave-grille",
+   "label": "8 x 8 turning grille (Fleissner) of the \"nueva clave\", April 1911",
+   "kind": "rebuilt here",
+   "by": "an AI model (one API run), checked by Brice Dudout",
+   "year": 1911,
+   "note": "16 holes derived from the nulls x/z of CMXV.16.1551.3-4; blocks of 64 letters, quarter turns clockwise. Not validated: the pre-registered measure on a held-out telegram failed (0.520 against 0.70)."
   }
  ],
  "links": [
@@ -8028,6 +8052,24 @@
    "target": "maisse1593",
    "how": "rebuilt from",
    "note": "rebuilt by the contributor against the Brienne 13 copies; held-out score 0.894 by the contributor's record"
+  },
+  {
+   "key": "k-cmxv-clavega",
+   "target": "mccarty1911",
+   "how": "read unchanged",
+   "note": "all ten coded words of CMXV.15.1432.1-4 and 16.1561.7-13 decrypt with the card; two words need a faulty or lost pair repaired by the sense"
+  },
+  {
+   "key": "k-setembrino-mftdbsj",
+   "target": "setembrino1914",
+   "how": "rebuilt from",
+   "note": "rebuilt from the pencil decipherment of 14 March 1914, fixed on that sheet alone and measured on 731 held-out letters (pre-registered test failed; amended lexicon 0.865)"
+  },
+  {
+   "key": "k-nuevaclave-grille",
+   "target": "nuevaclave1911",
+   "how": "rebuilt from",
+   "note": "proposed from the ciphertext of three telegrams with a fourth held out; five 64-letter blocks read; the held-out measure failed"
   }
  ],
  "sources": [
@@ -9340,6 +9382,14 @@
   {
    "source": "s-cyphersolver",
    "key": "k-maisse2-beling"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-setembrino-mftdbsj"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-nuevaclave-grille"
   }
  ],
  "unlinked": {
@@ -10672,6 +10722,11 @@
    "key": "k-goulart-1950",
    "target": "goulart1946",
    "note": "the 1950 list matches none of the 20 words of the telegram"
+  },
+  {
+   "key": "k-cmxv-clavega",
+   "target": "nuevaclave1911",
+   "note": "the Clave G.A. card and the other cards of CMXV.16.1557.1, tried group by group on the three grille telegrams: none reads them (best coverage 0.50 < 0.70)"
   }
  ]
 }
