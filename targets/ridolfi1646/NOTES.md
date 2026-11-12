@@ -1,6 +1,6 @@
 # ridolfi1646: Ludovico Ridolfi to the duque de Arcos, viceroy of Naples, Rome, 8 May 1646 (catalogue 748, AHNOB OSUNA,C.3456,D.107)
 
-Status: read in part (Brice Dudout, 11 Nov 2026; 405 of 431 words certain or probable = 94.0%, 98.8% with 21 restored words; 5 nomenclator codes open; key validated on held-out page 5 by our pre-registered test, COV 0.817 vs 0.487 / 0.600). Open: a blind re-reading on the images of the 21 restored groups, which on this count would bring the letter over the 95% bar.
+Status: read (Brice Dudout, 11 Nov 2026; after the blind re-reading on the images, 417 of 431 words certain or probable = 96.8%, 98.8% with 9 restored words; 5 nomenclator codes open; key validated on held-out page 5 by our pre-registered test, COV 0.817 vs 0.487 / 0.600). Before the re-reading: 405/431 = 94.0%, read in part. On the stricter count that also leaves out the 21 nomenclator values given by the sense (integration check below): 396/431 = 91.9%.
 
 Contributed by Brice Dudout (Europe chiffrée). Key proposed by Claude Fable 5.2 (Anthropic) from pages 1-4; held-out
 validation, page 5 reading and write-up by Claude Opus 5.5 agents. Catalogue entry **748** (PARES sweep, "Not in the repo");
@@ -44,10 +44,29 @@ Reservation: the held-out page is small (99 groups), below the 150 groups we now
 
 ## Reading (`reading.md`, `translation.md`)
 
-431 words: 378 certain, 27 probable, 21 restored, 5 unresolved. **405/431 = 94.0% read by sense** (Daniel's rule,
-restored words not counted): **read in part**; 98.8% with the restored words. Of the restored words, 19 are one-digit
-confusions of transcription v1 between shapes of this hand (2/3/7, 1/2, 3/4, 6/8...) or a group omitted, and 2 are on
-page 5 (47 = z, 26 for 76); 21 of the 27 probable words are nomenclator values given by the sense.
+431 words: 390 certain, 27 probable, 9 restored, 5 unresolved. **417/431 = 96.8% read by sense** (Daniel's rule,
+restored words not counted): **read**; 98.8% with the restored words; 91.9% if the 21 nomenclator values given by the
+sense are also left out. Before the blind re-reading (below): 378 / 27 / 21 / 5 = 94.0%, read in part. The 21 restored
+words were 19 one-digit confusions of transcription v1 between shapes of this hand (2/3/7, 1/2, 3/4, 6/8...), second
+readings or a group omitted, and 2 on page 5 (47 = z, 26 for 76); 12 are now confirmed on the images. 21 of the 27
+probable words are nomenclator values given by the sense.
+
+## Blind re-reading on the images (11 Nov 2026)
+
+Brice Dudout re-read on the PARES images, blind, the doubtful digit of the 19 groups whose correction a shape can settle
+(frozen/BLIND-REREADING.md). For each, the sheet showed the line, the group enlarged and two reference shapes from certain
+words elsewhere in the letter, in random order, without values or glosses; two controls with known answers were mixed in.
+The integration rule was written and hashed before the sheet was opened (SHA-256 b61a4fd7446559b170195e52c46cb8a83b4834f01e17565350137fba5dfe3adf);
+answers SHA-256 c692c679177bdabd9cd9b80d22018233ade6b89b80eedd90b395aa94f0c46ee6. Both controls passed, so the rule was applied.
+- 12 corrections confirmed, so 12 words pass from restored to certain: il (1.01), atacatto (1.16), lontano and miglia (1.21),
+  perche (2.13), risolutione (3.19), al and Signor (4.02), al (4.04), mandero (4.11), termini (4.17), oferte (5.05).
+- 6 images match transcription v1 (still restored: probable cipher-clerk error): il (1.16), Bologna and Milano (2.03),
+  quando and al (3.08), loro (4.01).
+- 1 undecided: quando (1.12), answer "other" with the remark "5 or 9" (recorded, not a confirmation).
+- 2 not on the sheet: di (1.06, a group left out, normal space on the image) and lunghezza (5.02, 47 = z is a value, not a shape).
+- Recount with the same script on a copy of the readings where the 12 words lost their marks (frozen/v2/): 390 / 27 / 9 / 5.
+- Reservation: one reader; "certain" for the 12 words follows the hashed rule (the word then reads entirely with the frozen
+  key); no image or thumbnail is included.
 
 Content: the Pope has refused Don Antonio Ronquillo passage for the five hundred horse the viceroy is sending to help the
 Grand Duke of Tuscany, but would grant it towards the State of Milan; Ridolfi advises accepting, since from Forlì the
@@ -95,7 +114,7 @@ On integration (PR #403) the project re-ran the contributor's frozen scripts and
 
 ## Remaining gaps
 
-- 21 restored words, mostly one-digit misreadings of transcription v1 - blocker: open-codes; not nomenclator codes but doubtful figures of the transcription, retried on the texts on 11 Nov 2026 (none contradicted, none confirmed); a blind re-reading of those groups on the PARES images would settle each, and stays workable (PARES answered HTTP 429 to the integrating session; no image is in the repository)
+- 9 restored words - blocker: open-codes; after the blind re-reading on the images (11 Nov 2026), 6 are groups whose image shows the digit of transcription v1 (probable cipher-clerk error, nothing more to read on the image), 1 is undecided (quando 1.12), 1 is a group the encipherer left out (di 1.06) and 1 is a value seen only once (47 = z, lunghezza 5.02; a second use of 47 would settle it)
 - 5 nomenclator codes (103, 110, 115, 116, 136) and the 21 nomenclator values given by the sense - blocker: open-codes; each code occurs once or a few times, and no nomenclator of Ridolfi is known; a second letter of his in this cipher (AGS Estado, Rome / Genoa 1645-46; ASFi Mediceo del Principato) would test them
 
 ## Escalation
@@ -105,7 +124,8 @@ On integration (PR #403) the project re-ran the contributor's frozen scripts and
 - [x] known-keys: the D.106 table is ruled out analytically (40 = q is incompatible with it); the 1645 Frías key (KV2) does not read D.104 and was not applicable here
 - [x] print: no edition found; nothing in this repository for C.3456 or Ridolfi
 - [x] key-rebuild: key proposed ciphertext-only on pp. 1-4, frozen, validated once on held-out p. 5
-- [x] retry: every restored group run again against the frozen transcription and the key on 11 Nov 2026 (integration check above) and regraded: no class changed; the image re-reading of the 21 groups is still to do
+- [x] retry: every restored group run again against the frozen transcription and the key on 11 Nov 2026 (integration check above) and regraded: no class changed
+- [x] retry: blind re-reading of the cipher digits on the images by Brice Dudout (11 Nov 2026): 12 of 19 corrections confirmed (12 words restored -> certain), 6 images match transcription v1, 1 undecided; 417/431 = 96.8%, read
 
 ## Files
 
@@ -117,4 +137,4 @@ On integration (PR #403) the project re-ran the contributor's frozen scripts and
 | `reading.md` | the reading (Italian, spelling of the letter), marks, count, restored words |
 | `translation.md` | English translation |
 | `validation.txt` | protocol order, the single measurement and its reservations |
-| `frozen/` | the hashed working files (French): PREREG.md, FREEZE.sha256, POST-MESURE.sha256, RESULTAT.md, the proposer's key and readings, our decoder, metric, calibration and measure scripts with their outputs, transcription v1. The lexicon `lexique-it-cyphersolver.json` listed in FREEZE.sha256 is `lang/lexicons/it.json.gz` of this repository, decompressed (same SHA-256). |
+| `frozen/` | the hashed working files (French): PREREG.md, FREEZE.sha256, POST-MESURE.sha256, RESULTAT.md, the proposer's key and readings, our decoder, metric, calibration and measure scripts with their outputs, transcription v1; BLIND-REREADING.md (the blind re-reading of 11 Nov 2026, in English) and v2/ (the readings with the 12 confirmed words unmarked, the counting script and its output). The lexicon `lexique-it-cyphersolver.json` listed in FREEZE.sha256 is `lang/lexicons/it.json.gz` of this repository, decompressed (same SHA-256). |
