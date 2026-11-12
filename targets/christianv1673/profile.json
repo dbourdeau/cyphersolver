@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "christianv1673",
- "title": "Christian V to the envoys Jens Juel and Christoffer Lindenov in Stockholm, Copenhagen, 25 May 1673, closing cipher block (catalogue 2528 = lead 2531, Rigsarkivet TKUA Sverige): syllabic code rebuilt from the 1674 interlinear decipherments, validated on a held-out order, read in part",
+ "title": "Christian V to the envoys Jens Juel and Christoffer Lindenov in Stockholm, Copenhagen, 25 May 1673, closing cipher block (catalogue 2528 = lead 2531, Rigsarkivet TKUA Sverige): syllabic code rebuilt from the 1674 interlinear decipherments and tested on a held-out order, read in part",
  "documents": [
   {
    "id": "ra-tkua-sverige-juel-261588-1673-05-25",
@@ -68,7 +68,7 @@
    "used": false
   },
   "key_order": "partly alphabetical",
-  "notes": "Some signs change value between the hand of 1673 and the hands of 1674 (barred m = k in 1673, u in 1674; 3 = u in 1673). Groups of the closing block with no value anywhere in the volume: 32, 320, 348, 384, 646, 906."
+  "notes": "Some signs change value between the hand of 1673 and the hands of 1674 (barred m = k in 1673, u in 1674; 3 = u in 1673; 29 = x in 1673, i in 1674). Groups of the closing block with no value anywhere in the volume: 32, 320, 348, 384, 646, 906."
  },
  "conditions": {
   "prior_solution": {
@@ -112,7 +112,7 @@
    "technique": [
     "statistical test"
    ],
-   "what": "Protocol 1 (hashed): Danish lexical cover of the 1673 closing block with key v1, COV 0.722 vs best of 200 permuted keys 0.668: C2 failed by 0.006 (syllabic code). Reported; the block was not measured again.",
+   "what": "Protocol 1 (hashed beforehand): key v1 applied once to the 1673 closing block, scored by Danish lexical cover. Declared bar: COV >= 0.70, and at least 0.06 above the best of 200 permuted keys and of 200 group shuffles. Result: COV 0.722, best permuted key 0.668 (margin 0.054, bar 0.06: failed by 0.006), best shuffle 0.648. The test failed; the block was not measured again.",
    "result": "failed"
   },
   {
@@ -121,28 +121,37 @@
    "technique": [
     "statistical test"
    ],
-   "what": "Protocol 2 (hashed): key v2 rebuilt from orders A and B only, decoded once against the glosses of the held-out order C (6 Oct 1674, images 42-43): 0.849 of 776 gloss segments exact vs best of 200 permuted keys 0.144 and best of 20 shifts 0.035; all criteria met. What had been seen of C is declared in validation.txt.",
+   "what": "Protocol 2 (hashed beforehand; a different test, on other material): key v2 rebuilt from orders A and B only, decoded once against the glosses of the held-out order C (6 Oct 1674, images 42-43): 0.849 of 776 gloss segments exact vs best of 200 permuted keys 0.144 and best of 20 shifts 0.035; bar >= 0.65 and +0.40 over each control, met. It covers the three-digit code groups; the 1673 values of signs and small numbers rest on the loose leaf. What had been seen of C is declared in validation.txt.",
    "result": "worked"
   },
   {
    "date": "2026-11-11",
    "kind": "reading",
-   "what": "Closing block read by sense with key v2 (+ 486 du, 534 fu, 590 huis added after the measurement): 68 cipher words, 49 certain, 10 probable, 3 restored, 6 unresolved = 86.8%.",
+   "what": "Closing block read by sense with key v2 (+ 486 du, 534 fu, 590 huis added after the measurement): 68 cipher words, 49 certain, 10 probable, 3 restored, 6 unresolved (the contributor's count of certain + probable: 86.8%).",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Integration check of pull request #409 after an independent verification. Both measurement scripts re-run in a scratch copy: test 2 gives 0.849 (659/776), 0.144, 0.035 again and KEY-v2 rebuilds byte-identical; test 1 re-run with the repository's lang/lexicons/da.json.gz (same SHA-256 as the missing working/da.json.gz) gives 0.722 / 0.668 / 0.648 again, a failure. 196 of 197 tokens agree with images 10-11; T04 841? looked at again at full size: overwritten, 541 at least as likely, left open. Corrections: read share set to 49/68 = 0.721 (certain words only, README read bar); outcome.key partial with codes_open; 29 = x (1673 hand, from the leaf's 'extenderes') added to key.tsv, decryption.txt made to agree with reading.md, Exempel moved from restored to probable.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "class": "read in part",
-  "key": "recovered",
+  "key": "partial",
   "method": "key recovered based on adjacent plaintext",
-  "method_basis": "The key was rebuilt from the decipherments of the time written between the lines of two sibling orders of 1674 in the same unit and from the chancery leaf deciphering the first block of 1673; it was validated on a third glossed order held out, then applied to the closing block of 1673, which has no decipherment.",
+  "method_basis": "The key was rebuilt from the decipherments of the time written between the lines of two sibling orders of 1674 in the same unit and from the chancery leaf deciphering the first block of 1673; its three-digit groups were tested on a third glossed order held out, then it was applied to the closing block of 1673, which has no decipherment.",
   "contribution": [
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.868,
+  "fraction_read": 0.964,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading.md, words from cipher groups: 49 certain + 10 probable = 59 of 68 = 86.8%; 3 restored words not counted (91.2% with them). The working fiche gave 46/10/3/6 of 65 = 86.2%; three certain words were missing from its list.",
+  "fraction_read_source": "decryption.txt: cipher tokens with a value in key.tsv, 190 of 197 (the seven tokens of groups 32, 320, 348, 384 twice, 646, 906 have none). Share of words read as sense is lower, see fraction_coherent.",
   "verification": [
    "statistical test",
    "contemporary decipherment",
@@ -152,7 +161,7 @@
    "date": "2026-11-11",
    "verdict": "pass",
    "file": "validation.txt",
-   "notes": "Contributor's pre-registered held-out test against ground truth (not docs/_validate.py): PROTOCOLE-2 SHA-256 9db1cf5e243d213ec80fa596880df77aeb6682f23ab2b4a4a7b500ae44784434, hashed with KEY-v2 (5334c7aa...) and the scorer before the single run; held-out order of 6 Oct 1674 (images 42-43): exact 0.849 (659/776 gloss segments), best of 200 permuted keys 0.144, best of 20 shifts 0.035; criteria >= 0.65 and +0.40 over each control met. Not blind in the strict sense: the held-out pairs had been seen in aggregate and image 43 at reduced size (declared). An earlier lexical test on the 1673 block failed by 0.006 (reported)."
+   "notes": "Contributor's pre-registered tests against ground truth (not docs/_validate.py), both re-run at integration with the same figures. The verdict is that of test 2 (PROTOCOLE-2, SHA-256 9db1cf5e..., hashed with KEY-v2 5334c7aa... and the scorer before the single run): held-out order of 6 Oct 1674 (images 42-43), exact 0.849 (659/776 gloss segments), best of 200 permuted keys 0.144, best of 20 shifts 0.035; bar >= 0.65 and +0.40 over each control, met. It covers the three-digit code groups (94 of the 197 tokens of the 1673 block); the 1673 values of signs and small numbers rest on the loose leaf. Not blind in the strict sense: the held-out pairs had been seen in aggregate and image 43 at reduced size (declared). Test 1 (PROTOCOLE.md), Danish lexical cover on the 1673 block itself, FAILED: 0.722 against 0.668 for the best permuted key, margin 0.054 where 0.06 was required. Order of events by the contributor's record (single commit, his own timestamps)."
   },
   "provenance": "contributed",
   "credits": [
@@ -165,19 +174,14 @@
    {
     "who": "dudout",
     "role": "solution",
-    "note": "transcription of the 1673 order and of the 1674 glosses; key rebuilt from the 1674 interlinear decipherments and the 1673 leaf, validated on the held-out order of 6 Oct 1674 (0.849 vs 0.144); closing block of 25 May 1673 read in part (59/68 words = 86.8%) and translated; Claude Opus 5.5 agents for Brice Dudout",
-    "date": "2026-11-11"
-   },
-   {
-    "who": "bourdeau",
-    "role": "pointer",
-    "note": "catalogue entry 2528 (lead 2531): TKUA paging pass and vetting of 11 Nov 2026, pointing to the 1674 orders deciphered between the lines and to the loose decipherment leaf",
-    "date": "2026-11-11"
+    "note": "transcription of the 1673 order and of the 1674 glosses; key rebuilt from the 1674 interlinear decipherments and the 1673 leaf, tested on the held-out order of 6 Oct 1674 (0.849 vs 0.144); closing block of 25 May 1673 read in part and translated; with AI agents",
+    "date": "2026-11-11",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/409"
    }
   ],
   "gaps": [
    {
-    "item": "groups 32, 320, 348, 384 (x2), 646, 906 of the closing block (6 unresolved words, 3 restored)",
+    "item": "groups 32, 320, 348, 384 (x2), 646, 906 of the closing block (5 of the 6 unresolved words, 2 restored)",
     "blocker": "open-codes",
     "detail": "glossed nowhere in images 32-43; the syllable blocks give only the initial of 384 (a-) and 646 (k-); another order in the same code would fill them"
    },
@@ -192,9 +196,24 @@
     "detail": "not filmed; it might carry the decipherment of the closing block; only Rigsarkivet can say"
    },
    {
-    "item": "blind re-reading of the doubtful signs of the closing block (T02 Q, T07 768 lam, T04 841?)",
+    "item": "overwritten group in T04 (image 11 line 1), 841 or 541",
+    "blocker": "illegible",
+    "detail": "last digit blotted, first digit drawn like this hand's 5 as much as its 8; the online image does not decide between 'Indulgencien, tid' and 'indulgence for en tid'"
+   },
+   {
+    "item": "blind re-reading of the other doubtful signs of the closing block (T02 Q, T07 768 lam)",
     "blocker": "illegible",
     "detail": "seen at the resolution served online; not yet re-read blind"
+   },
+   {
+    "item": "the eleven probable words (Indulgencien, udstirkelse, saaledes, Sammentegn, aldre, Kronede, strygen in T12, upaakieret, huis, Fundament, Exempel)",
+    "blocker": "no-key-material",
+    "detail": "each rests on a value inferred from the syllable blocks, on a single gloss or leaf attestation, or on a doubtful sign; the unit holds no other text in the 1673 hand to confirm them"
+   },
+   {
+    "item": "prior art outside the repository (an edition of the order, Rigsarkivet's inventories)",
+    "blocker": "needs-physical-access",
+    "detail": "the printed volumes were opened in the catalogue vetting passes, not by the contributor or at the integration check; the inventories are not online"
    }
   ],
   "texts": [
@@ -207,17 +226,23 @@
     "translation": "translation.md",
     "language": "da",
     "state": "read in part",
-    "read_share": 0.868,
+    "read_share": 0.721,
     "summary": "On the salute at sea in the Sound: if the Swedes ask that their warships pass the Danish castles without striking, the envoys are to answer that any exemption is only a temporary indulgence, on the footing already laid down that other crowned heads and Sweden itself, whose example they allege, claim no such salute; and that the king will never give up a right his ancestors held unchallenged for so many years.",
     "reading_review": {
      "grade": "B",
-     "by": "Claude Opus 5.5 agent for Brice Dudout",
-     "date": "2026-11-11",
-     "note": "Read as Danish sentences of 1673 against decryption.txt: the cipher words construe with the clear words around them and the translation follows, but 6 words are unresolved and 3 restored (seven code groups glossed nowhere in the volume), and 10 words are only probable; so grade B, read in part. AI agents only; no human read the reading; not re-checked blind on the images."
+     "by": "integration check (AI agent, for the project), after the contributor's agent",
+     "date": "2026-11-12",
+     "note": "Read as Danish sentences against decryption.txt and translation.md: coherent on the salute in the Sound from 'uden strygen woris Slotte at passere' to the end, and the translation follows; the first line and a half (groups 384, 348, 320) does not form. 49 of 68 cipher words certain, 11 probable, 2 restored, 6 unresolved: read in part. No human has read it."
     }
    }
   ],
   "key_file": "key.tsv",
-  "notes": "New partial reading: the closing block of 25 May 1673 had no decipherment. The key is reusable (key.tsv, CC BY 4.0) for the other orders of this code. No image or derivative of the Rigsarkivet scans is included."
+  "notes": "New partial reading: the closing block of 25 May 1673 had no decipherment. The key is reusable (key.tsv, CC BY 4.0) for the other orders of this code. The contributor sent no image; one crop of image 11 was added to the site at integration, credited to Rigsarkivet.",
+  "codes_open": {
+   "open": 6,
+   "total": 57,
+   "tokens_open": 7
+  },
+  "fraction_coherent": 0.721
  }
 }
