@@ -176,6 +176,12 @@
    "statistical test",
    "historical consistency"
   ],
+  "validation": {
+   "date": "2026-11-12",
+   "file": "controls/shuffle.txt",
+   "verdict": "not applicable",
+   "notes": "Contributor's own shuffled-key control (not docs/_validate.py, which was not run): 5,000 shuffled keys, Swedish 4-gram model (Language header asserted): 0 reach the true score (true -3.1451; best -4.0151 seed 20261112, -3.9637 seed 7)."
+  },
   "provenance": "contributed",
   "credits": [
    {
