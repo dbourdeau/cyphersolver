@@ -124,6 +124,34 @@
    "kind": "access",
    "what": "Brackx's crib_anneal.py (joint search of sign values and alignment with the marginal gloss) and lm_anneal.py (French 5-gram fill of free values), added to his gist on 28 Oct 2026 (revision d819ac655347), copied unchanged into brackx/ (MIT, credited). Not run here: lm_anneal.py needs numpy and a 5-gram table that is not in the gist, so the key recovery (246/262 valued in his first post) is still not reproduced.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Beling: Brackx's 272 sign tokens checked one by one on Gallica views 61-62 against his legend, shape only: 270 agree, 2 unclear, 0 differ; two pale possible extra signs (C4, A3). No decoded letter changes (beling/transcription_check.tsv).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "literature search",
+   "technique": [
+    "other"
+   ],
+   "what": "Beling: Charrière, Négociations dans le Levant II (Internet Archive OCR) searched: Venice letters of 7 and 15 Nov 1558 printed, not this one of 13 Nov; no printed plaintext. The parallel cited as II 505 is in the letter of 7/20 Oct 1558, said of Ferdinand I (beling/charriere_check.md).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "contextual inference"
+   ],
+   "what": "Beling: f. 60v C2, C4, C5 retried against the outer gloss (read 'ilz ont d'autruy les', '[vi]ennent p[ou]r a hazard'): tentative +o = z, Ob = r, lp = ost, ag possibly 'ay' in clear; C2 'u l', C4 'e r o' and C5 't h ?' still do not meet the gloss. No held-out test possible (key r5 used all glosses).",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -147,14 +175,14 @@
     "detail": "swallowed by the binding; needs the page opened flat"
    },
    {
-    "item": "Brackx's reading of blocks A, B and C (262 signs)",
+    "item": "Brackx's key recovery (crib_anneal.py, lm_anneal.py) not reproduced; his transcription checked on the images (Beling, 11 Nov 2026: 270 of 272 agree, 0 differ)",
     "blocker": "not-attempted",
-    "detail": "not yet reproduced here: files requested (issue #113)"
+    "detail": "lm_anneal.py needs a 5-gram table that is not in the gist"
    },
    {
-    "item": "f. 60v C2, C4, C5 unread groups",
-    "blocker": "not-attempted",
-    "detail": "the outer gloss is legible there (a crib), so this is work left, not an outside blocker"
+    "item": "f. 60v C2, C4, C5 unread groups: retried against the outer gloss (Beling, 11 Nov 2026); tentative +o z, Ob r, lp ost; C2 'u l', C4 'e r o', C5 't h ?' still unmatched",
+    "blocker": "needs-physical-access",
+    "detail": "gloss lines 4-8 are ambiguous at Gallica's native resolution; a sharper image of the f. 60v outer margin is needed from the BnF"
    }
   ],
   "notes": "Attempted only to the point of finding the contemporary decipherment; Status: in progress in NOTES.md.",
@@ -171,6 +199,12 @@
     "date": "2026-10-27",
     "source": "https://github.com/dbourdeau/cyphersolver/issues/113",
     "published": true
+   },
+   {
+    "who": "ajbeling",
+    "role": "verification",
+    "note": "Brackx's transcription checked sign by sign on the images; Charrière II searched; f. 60v gaps retried against the gloss (with AI agents)",
+    "date": "2026-11-11"
    }
   ]
  }

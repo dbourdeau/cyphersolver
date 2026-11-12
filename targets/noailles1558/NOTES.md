@@ -49,10 +49,23 @@ requested.** As he reports it:
 - A parallel, not a source of plaintext: Charrière, *Négociations de la France dans le Levant* II, 505 (letter of
   7 Nov 1558, "donne encore mauvais ordre à ses affaires"). Not checked here.
 
+## 11 Nov 2026: transcription checked on the images, Charrière II searched, f. 60v gaps retried (Andrew Beling, `beling/`)
+
+Contributed with AI agents; details in `beling/README.md`.
+- Brackx's 272 sign tokens checked one by one on views 61-62 against his `legend.md`: **270 agree, 2 unclear, 0 differ**;
+  two pale possible extra signs (C4, A3), perhaps show-through. No decoded letter changes (`beling/transcription_check.tsv`).
+- Charrière II prints Noailles's Venice letters of 7 and 15 Nov 1558, not this one, so there is no printed plaintext.
+  **Correction:** the parallel "donne encore mauvais ordre à ses affaires" (p. 505) is in the letter of **7/20 Oct 1558**,
+  not 7 Nov, and is said of the emperor Ferdinand I (`beling/charriere_check.md`).
+- No held-out test is possible: key r5 used all three glosses.
+- f. 60v gaps, all tentative: outer gloss line 4 read "ilz ont d'autruy les", line 6 "[vi]ennent p[ou]r a hazard";
+  candidates `+o` = z, `Ob` = r (may be a blot), `lp` = "ost"; `ag` is cursive letters, perhaps "ay" written in clear.
+  C2's trailing "u l" is in the cipher (`al 5` is clear). C4 "e r o" and C5 "t h ?" still do not meet the gloss.
+
 ## Remaining gaps
 - start of each marginal gloss line on f. 60r - blocker: needs-physical-access; swallowed by the binding; needs the page opened flat
-- Brackx's reading of A, B and C (262 signs) - blocker: not-attempted; not yet reproduced here: files requested (issue #113): transcription with positions and legend, key with the basis of each value, raw decode aligned, readings with holes marked
-- f. 60v C2, C4, C5 unread groups where the outer gloss is legible ("ilz ont dû commun…", "… pour a hazard", "… ravitaillez") - blocker: not-attempted; a crib exists, so this is work left, not an outside blocker; values fixed there may also close A3 and B1
+- Brackx's key recovery (crib_anneal.py, lm_anneal.py) not reproduced here; his transcription checked on the images by Beling, 11 Nov 2026 (270 of 272 agree, 0 differ) - blocker: not-attempted; lm_anneal.py needs a 5-gram table that is not in the gist
+- f. 60v C2, C4, C5 unread groups: retried against the outer gloss by Beling, 11 Nov 2026 (`beling/README.md` section 5); tentative values `+o` z, `Ob` r, `lp` ost; C2 "u l", C4 "e r o" and C5 "t h ?" still do not meet the gloss - blocker: needs-physical-access; gloss lines 4-8 are ambiguous at Gallica's native resolution, a sharper image of the f. 60v outer margin is needed from the BnF
 
 ## Escalation
 - [x] siblings: fr. 3151 searched; the Seure letters (nos. 39-44) are a different cipher; fr. 3151 no. 14 (Noailles to the King, 17 Oct 1558) is in clear (Brackx, issue #113)
