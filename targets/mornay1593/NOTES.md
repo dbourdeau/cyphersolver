@@ -76,6 +76,7 @@ Context cribs:
    `reading_dudout.txt`: 93/93 groups give letters, three groups split two ways (219 me/al, 213 an/na, 215 ah/mc),
    the sense decides each. Readings:
    - P1 "l'arrest estoit adressé contre le duc de Guise pour le tirer à quatre chevaux"
+     (12 Nov 2026: the figures give "estoit ia dressé", already drawn up; see beling/reading_1593.md)
    - P2 "Touraine" (244 = a + x/y: "Tour{ay}ne"); P3 "Montrichart"; P4 "Vautorneuf" (unidentified)
    - P5 "la duchesse d'Angolesme"; P6 "[le] conte de Gramont ne soit de la partie"
    - S1 "le chancelier et Sourdis font l'entreprinse"; S2 "le roy est trahi"
