@@ -4684,6 +4684,14 @@
    "year": 1840,
    "found": 2026,
    "note": "Proposed from the cipher of runs S1-S6 of AHN Diversos-Colecciones 195 N.14 alone and frozen. The contributor's pre-registered test on held-out runs S7-S8 failed (C1 and C2 passed, C3 missed by 0.027), so the key is partial by his protocol. 24 values attested in the letter; the 40 other rows of the file are conjecture from the structure. targets/vanhalen1840/key.tsv."
+  },
+  {
+   "id": "k-ctc-standard",
+   "label": "Chinese standard telegraph code (four-digit codes), public code book",
+   "kind": "contemporary key",
+   "by": "",
+   "year": 1912,
+   "note": "The public four-digit code of the Chinese telegraphs, one number for each character, used here without encipherment. Table taken from the Unicode Unihan database (kTaiwanTelegraph and kMainlandTelegraph); the codes used are in targets/peking1912/key.tsv and targets/nanking1930/key.tsv. The same table reads the 20 plain telegrams of targets/ctcplain1913."
   }
  ],
  "links": [
@@ -7542,6 +7550,18 @@
    "target": "vanhalen1840",
    "how": "rebuilt from",
    "note": "proposed from runs S1-S6 of the letter; decodes 27 of its 30 cipher words without correction; the pre-registered test on held-out runs S7-S8 failed"
+  },
+  {
+   "key": "k-ctc-standard",
+   "target": "peking1912",
+   "how": "read unchanged",
+   "note": "plain code in five-digit groups read by rows; 30 of 31 codes give the character as written, one emended by one digit"
+  },
+  {
+   "key": "k-ctc-standard",
+   "target": "nanking1930",
+   "how": "read unchanged",
+   "note": "plain code in four-digit groups; 221 of 230 codes give the character as written, six emended by one digit, three unresolved"
   }
  ],
  "sources": [

@@ -50,6 +50,7 @@ NEW_PLACES = {
     'Lima': [-12.046, -77.043], 'Valparaíso': [-33.047, -71.613], 'Rio de Janeiro': [-22.907, -43.173], 'Buenos Aires': [-34.604, -58.382], 'Cayenne': [4.922, -52.313],  # open catalogue letters
     'Regensburg': [49.013, 12.102], 'Wolfenbüttel': [52.162, 10.537], 'Antwerp': [51.219, 4.402], 'Darmstadt': [49.873, 8.651], 'Münster': [51.962, 7.626],
     'Leszno': [51.8457, 16.5753], 'Sárospatak': [48.3188, 21.5683], 'Tortosa': [40.812, 0.521], 'Almazán': [41.486, -2.531],
+    'Nanjing': [32.060, 118.797], 'Lhasa': [29.652, 91.172],  # nanking1930: Nanking to the Dalai Lama at Lhasa, 1930
 }
 # words in a route that stand for a gazetteer place
 ALIASES = {

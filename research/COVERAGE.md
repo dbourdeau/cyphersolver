@@ -204,7 +204,11 @@ reaches some hosts the earlier one did not and the reverse; each README has its 
   Bulgarian, Greek and Maltese portals.
 - **Abhilekh Patal:** record pages answer curl. The Document Viewer shows a human check to a browser; two vetting agents read file
   PDFs by posting its form with curl. Those eight verdicts (1355, 1356, 1360, 1363, 1364, 1367, 1368, 1371) are kept in
-  `vetting_held` and not applied: Daniel to decide, or confirm in his own Chrome.
+  `vetting_held` and not applied: Daniel to decide, or confirm in his own Chrome. Lead 1359 (NAI Sikkim (Political) 1930 File 5-P)
+  was vetted on 11 Nov 2026 by the same route (its `vetting_note`: the viewer "opened without a login" from the cloud); that vetting
+  is superseded: the lead was closed on 12 Nov 2026 on Brice Dudout's reading of the file in his own logged-in session (PR #434,
+  `targets/nanking1930`), and nothing rests on the cloud reading. Lead 2465 was closed the same day on his logged-in reading
+  (PR #431, `targets/peking1912`); the project has not seen the images of either file.
 - **Rigsarkivet TKUA, four paging rounds** (`tkua_paging` to `tkua_paging_4`): the 17th-century envoy archives and relations gave nine
   catalogue entries (2520, 2527, 2528, 2530, 2540-2543, 2553); every cipher leaf opened from 1659 on is
   deciphered between the lines. Not done: most 18th-century units of the 236, six enumerated series, 68 sheets made and not viewed, the
