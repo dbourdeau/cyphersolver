@@ -44,8 +44,8 @@ onto the shuffled ciphertext (z 12.2). Verdict: pass.
 
 ## Reading
 
-reading_310.md, translation_310.md. In short: Boaz W. Long, chief of the Latin American affairs section of the State
-Department, came from Washington to see De la Barra, surely sent by Wilson and Bryan; De la Barra would gladly confer
+reading_310.md, translation_310.md. In short: "Señor Long, jefe sección asuntos latino-americanos departamento estado" (the contributor identifies him as
+Boaz W. Long; the telegram does not give the first name), came from Washington to see De la Barra, surely sent by Wilson and Bryan; De la Barra would gladly confer
 with them if formally invited; if invited he leaves for Europe next Saturday, if not invited by tomorrow, on Wednesday;
 the ministry is to set out the reasons of justice and expediency for immediate recognition (of the Huerta government).
 
@@ -65,7 +65,7 @@ gives 110 of 112 on lines 7-13, 0 wrong. Own control (lang es-modern, 4-grams): 
 letter against -6.47 for 2000 shuffled-value keys (best -4.00, z 5.6); the full key -2.412 against best -4.87 (z 6.9).
 The clear words around the cipher words guided the key (stated above); the held-out lines have their own clear words.
 Image X-1.4.310.1.0001 (the pencil copy) was fetched from the CEHM viewer (no host refused) and compared line by line
-with transcription_310.txt: all groups agree; the typed copy was fetched and not re-compared letter by letter. The
+with transcription_310.txt on the images: all groups agree (number of letters compared not recorded); the typed copy was fetched and not re-compared letter by letter. The
 freezing of key_frozen.tsv before the held-out count rests on the contributor's record (one commit, no external
 timestamp). The profile's earlier fraction_read of 1.0 was key coverage; the strict word share is 0.889.
 
@@ -77,7 +77,7 @@ timestamp). The profile's earlier fraction_read of 1.0 was key coverage; the str
 
 Not reading gaps: the CEHM catalogue summary of X-1.4.310.1 was not compared with this reading. There is no blind
 transcription by a second reader beyond the typed copy (an independent witness of the letters) and the review below,
-which re-read both copies and agreed in full.
+which checked all 7 typed lines and pencil lines L03, L06, L07 and L13 and found no difference.
 
 ## Prior art (checked 12 Nov 2026)
 
@@ -90,7 +90,7 @@ and a Boaz Long memorandum cited in the literature, but not this telegram or its
 
 An AI language-model agent that did not take part in the solve read the scans before opening any transcription,
 re-ran every script, and read the text as sentences against the translation. Its sign check of all 7 typed lines and
-the pencil lines L03, L06, L07 and L13 agreed in full with both copies. It reproduced the held-out count (110/112,
+the pencil lines L03, L06, L07 and L13 found no difference between the images and the transcription. It reproduced the held-out count (110/112,
 0 wrong; 14 of 16 groups wholly right) and the mark check, found six coherent sentences with no holes, and agreed with
 read in part on the strict count, 24/27 = 88.9% (grade A). Its grade is recorded as `reading_review` in profile.json.
 

@@ -27,7 +27,7 @@ One value takes two code words (*garlopas abocados* = E.U.). Numbers are mostly 
 
 ## Key source and held-out test
 
-1. `key_frozen.tsv` (90 entries) was built first from three **other** telegrams of the same code, each with its
+1. `key_frozen.tsv` (90 entries; 97 lines in the file: 6 comment lines and 1 header row) was built first from three **other** telegrams of the same code, each with its
    plain text on the same sheet (`key_sources.md`): 9922 (Núñez, 10 Aug, code + translation), 9929 (Limantour's
    draft of 28 Aug with plain and code words line by line, his answer to 9926) and 9930 (Núñez, 31 Aug, code +
    "Traducción").

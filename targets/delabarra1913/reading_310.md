@@ -31,7 +31,7 @@ Manifiéstele que gustoso iría [a] conferenciar [con] estos señores si recibí
 justicia [y] conveniencia [del] inmediato reconocimiento. Delabarra.
 
 Notes
-- Long is Boaz W. Long, chief of the Division of Latin American Affairs of the State Department in 1913.
+- The telegram says only "Señor Long"; the contributor identifies him as Boaz W. Long, chief of the Division of Latin American Affairs of the State Department in 1913.
 - W is written as two v (qq) in Washington and Wilson: the key has no W. Marked {vv/W}; not a misreading.
 - Br{hh/y}an: the group xgrroz gives b-r-r-r-a-n, the second and third r for the y of Bryan. r is h in Washington and t
   in latino and reconocimiento; for y it has no support. Marked as a repair; the sense (Wilson and Bryan) is not in doubt.

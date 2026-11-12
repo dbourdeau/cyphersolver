@@ -66,8 +66,8 @@ estrechado nuestras relaciones." ("... how useful his journey to the capital was
 than a politician, I shall keep watch on the conduct of that gentleman, without ceasing for that reason to draw our
 relations closer.")
 
-Word counts (cipher words): 12; 5 verbatim from the signs (su, miedo, conducta, dejar, eso); 7 with one letter
-filled from context on a group not in the frozen key (provechoso, viaje, capital, ranchero, pendiente, dicho,
+Word counts (cipher words): 12; 5 verbatim from the signs (su, miedo, conducta, dejar, eso); 7 with letters
+filled from context on groups not in the frozen key (eight groups, two of them in provechoso: provechoso, viaje, capital, ranchero, pendiente, dicho,
 señor), one of them (ranchero) also with an added letter; 0 holes; 0 from a gloss. The clear text (about 115 words)
 is read from the image; in the reading the abbreviations Sr, Gral and compº are written out and the struck word is
 left out.
@@ -109,8 +109,8 @@ relativo á colocación del Sr. Lozano"): 47 letters right, 0 wrong, 14 on group
 "debe decir á la autoridad legal y legítimamente constituída"): 44 right, 0 wrong, 5 not in the key. Together 91 right,
 0 wrong, 19 unknown. They also give 23 = n (twice) and 65 = ñ, two of the seven context-only groups of 634.1, so five
 remain on context alone (12, 20, 40, 53, 82); the other new values (for example 24 = m, 28 = l, 95 = t) are not used here.
-Strict share: the read bar counts a group valued by the sense alone as not read, so the 7 words with one such letter
-each count as not read: 5 of 12 = 41.7%; the profile's earlier fraction_read of 1.0 is replaced by 0.417. The state
+Strict share: the read bar counts a group valued by the sense alone as not read, so the 7 words with such letters
+(eight groups) count as not read: 5 of 12 = 41.7%; the profile's earlier fraction_read of 1.0 is replaced by 0.417. The state
 "not prose" for the runs stands (the sentence is carried by the clear text), as for ralamb1657.
 Not checked: the full set of signs of 524.1 against its image (only the first rows); the order of events (the first
 context reading before the key) rests on the contributor's record.
