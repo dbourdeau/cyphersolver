@@ -20,56 +20,59 @@
     "partial": true
    },
    "length": {
-    "tokens": "unknown",
-    "distinct": "unknown",
+    "tokens": 272,
+    "distinct": 76,
     "unit": "symbols",
-    "measured": false
+    "measured": true,
+    "file": "brackx/transcription_f60r_f60v.txt"
    },
    "transcription": {
     "by": "mixed",
     "source": "Gallica views 61-62",
     "image_quality": "good",
-    "notes": "By Michael Brackx (issue #113), with the tools he states. Three blocks, 262 signs (contributor's count; not yet measured here, files requested): A and B, three lines each on f. 60r; C, seven lines on f. 60v. The earlier 'two blocks, about 150 signs' was an estimate by eye that missed C."
+    "notes": "By Michael Brackx (issue #113), with the tools he states. Three blocks, 272 sign tokens of 76 distinct labels, counted here from his file without the 'pre:' line and the two bracketed clear words (Comme, tant): A and B, three lines each on f. 60r; C, seven lines on f. 60v. Checked sign by sign on the images by Andrew Beling (11 Nov 2026): 270 agree, 2 unclear, 0 differ; about 80 signs sampled again at the independent verification. The earlier 'two blocks, about 150 signs' was an estimate by eye that missed C; '262' in earlier notes was a count at another round."
    },
-   "read": "not read"
+   "read": "read in part"
   }
  ],
  "system": {
   "types": [
-   "undetermined"
+   "homophonic"
   ],
-  "summary": "A symbol cipher different from La Guiche's, three blocks of 262 signs; as Brackx reports it (unverified here), a homophonic symbol alphabet with nulls and two word signs (qui, et).",
+  "summary": "A homophonic alphabet of invented signs (76 distinct labels in 272 tokens) with three null signs and two word signs (qui, et), as recovered by Michael Brackx from the marginal decipherment of the time; a different alphabet from La Guiche's of 1551.",
   "symbol_kind": "symbols",
-  "distinct_symbols": "unknown",
+  "distinct_symbols": 76,
   "diacritics": {
    "used": "unknown"
   },
   "homophones": {
-   "used": "unknown"
+   "used": true
   },
   "nomenclator": {
    "present": "unknown"
   },
   "nulls": {
-   "present": "unknown"
+   "present": true,
+   "count": 3
   },
   "key_order": "unknown",
-  "word_division": "unknown",
+  "word_division": "none",
   "doubled_letters": "unknown",
   "sibling_key": "none",
-  "notes": "Split from guiche1551 on 14 Oct 2026; a different symbol alphabet from La Guiche (1551)."
+  "notes": "Split from guiche1551 on 14 Oct 2026. Homophones in key r5: e has q, z, v and two tentative signs; a has T, t, r, k; u has W, al; i has #, dag and two single signs. Whether the five large signs that open block B are code signs is not known."
  },
  "conditions": {
   "prior_solution": {
    "exists": "in archive",
-   "where": "Contemporary decipherment in the inner margin of f. 60r, partly lost in the gutter, and in the outer margin of f. 60v (block C), nearly complete.",
+   "where": "Contemporary decipherment in the inner margin of f. 60r, partly lost in the gutter, and in the outer margin of f. 60v (block C), nearly complete. The key was recovered from it.",
    "found": "before attempt",
-   "used": false
+   "used": true
   },
   "inputs": [
-   "images"
+   "images",
+   "known plaintext"
   ],
-  "attack": "none",
+  "attack": "known plaintext",
   "human_role": "Project-level: set up Claude Code with Opus 5 and posed the problem with /goal. No target-specific intervention recorded.",
   "tools": [
    "none"
@@ -79,7 +82,7 @@
   ],
   "sessions": 2,
   "first_date": "2026-09-21",
-  "last_date": "2026-10-27"
+  "last_date": "2026-11-12"
  },
  "solution": [
   {
@@ -115,7 +118,10 @@
   {
    "date": "2026-10-27",
    "kind": "solver",
-   "technique": ["plaintext matching", "language-model scoring"],
+   "technique": [
+    "plaintext matching",
+    "language-model scoring"
+   ],
    "what": "Key recovered from the three marginal glosses and a French 5-gram model (Montaigne): 246 of 262 tokens valued, 16 tentative; about 0.75 of words read on firm values (Brackx, issue #113; contributor step). Not reproduced here: no files attached; transcription, key, aligned decode and readings requested. His negative checks: fr. 3151 no. 14 in clear, Ribier II, fr. 20974 (31 Guise alphabets) none fits.",
    "result": "partial"
   },
@@ -152,40 +158,102 @@
    ],
    "what": "Beling: f. 60v C2, C4, C5 retried against the outer gloss (read 'ilz ont d'autruy les', '[vi]ennent p[ou]r a hazard'): tentative +o = z, Ob = r, lp = ost, ag possibly 'ay' in clear; C2 'u l', C4 'e r o' and C5 't h ?' still do not meet the gloss. No held-out test possible (key r5 used all glosses).",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Brackx's gist (revision a026501dcb23) copied into brackx/ and his decode rebuilt here from his transcription and key r5 by our own check_brackx.py: all 272 sign tokens give the value in his decode file (the 2 differences of 274 are the bracketed clear words). 12 nulls, 260 non-null sign tokens, 244 with a value (93.8%), 12 of those on tentative values. His key recovery (crib_anneal.py, lm_anneal.py) was not rerun: the 5-gram table is not in the gist.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring",
+    "manual reconstruction"
+   ],
+   "what": "Integration of PR #423 after an independent verification: Beling's table has 274 rows (270 agree, 2 unclear, 2 possible extra signs) and its sequence matches Brackx's transcription 272 of 272; about 80 signs sampled on Gallica views 61-62 match their labels; the Charriere OCR hash and the p. 505 phrase (in the letter of 7 and 20 Oct 1558, about the emperor) confirmed; no letter of 13 Nov 1558 in Charriere II. Corrected here: the old Charriere citation in NOTES, and the '?' shown for '#' (= i) in nine rows of beling/transcription_check.tsv. Counts recounted from the files: 272 sign tokens, 76 labels, 12 nulls, 260 non-null, 244 valued (93.8%), 232 on firm values (89.2%), 12 tentative; legend.md's '256 valued' counts the 12 nulls. Profile brought into line with NOTES: the key was recovered by Brackx from the marginal decipherment (key recovered based on adjacent plaintext, contributed), text read in part. Read share measured on his reading with research/reading_audit/v10_relabel.py: 0.548 (51 words, 42 holes; every letter listed inside an unread stretch counts as a hole); with each unread stretch counted once, 51 words and 21 holes, 0.708. Statistical validation (docs/_validate.py, fr-1600-letters): reading -2.171 per letter, 200 random keys best -3.712, shuffled refit mean -2.447 and best -2.356: pass. The C2, C4 and C5 gaps stay open work: Beling's cribs from the gloss do not yet meet the decode.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 256 tokens, 61 types, fr-1600-letters order 4: reading -2.171 per letter; random keys -4.597 (z 7.0); key annealed onto shuffled ciphertext best -2.356 (mean -2.447, z 4.0); annealer on the real text -2.424. Verdict: pass.",
+   "result": "worked"
   }
  ],
  "outcome": {
-  "method": "not solved",
-  "method_basis": "Contemporary marginal decipherments exist (f. 60r cut by the binding; f. 60v nearly complete); the cipher (three blocks, 262 signs) has not been transcribed or attacked here. A contributor reports a key from the glosses (issue #113), not yet reproduced, so no text is obtained yet.",
+  "validation": {
+   "date": "2026-11-12",
+   "model": "fr-1600-letters",
+   "file": "validation.tsv",
+   "tokens": 256,
+   "types": 61,
+   "tokens_per_type": 4.2,
+   "score": -2.171,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -4.597,
+     "sd": 0.349,
+     "max": -3.712,
+     "z": 7.0,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -2.447,
+     "sd": 0.069,
+     "max": -2.356,
+     "z": 4.0,
+     "p": 0.1429
+    }
+   },
+   "power": -2.424,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.171; polyphony 0.0; 16 unread tokens left out; annealer on the real text from random keys reached -2.424"
+  },
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Michael Brackx (issue #113, 27-28 Oct 2026) transcribed the three blocks and recovered the key by aligning the signs with the court's marginal decipherment (f. 60r inner margin, f. 60v outer margin) and filling the remaining values with a French 5-gram model. Here his decode was rebuilt from his transcription and key (272 of 272 sign tokens), his transcription was checked on the images by Andrew Beling (270 of 272 agree, 0 differ), and the reading passes the statistical validation; his key search itself was not rerun.",
   "contribution": [
    "catalogue correction"
   ],
-  "class": "not read",
-  "key": "none",
-  "fraction_read": 0,
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "Nothing transcribed or deciphered; the legible gloss words are not counted.",
+  "class": "read in part",
+  "key": "partial",
+  "fraction_read": 0.548,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.md (Brackx's reading of the three blocks, unchanged), research/reading_audit/v10_relabel.py share: 51 words, 42 holes: 0.548. Tentative values, supplied letters and every letter listed inside an unread stretch count as holes. With each unread stretch counted once: 51 words, 21 holes, 0.708. Brackx's own figures: about 0.75 of words on firm values, 0.84 with the tentative ones. By signs: 244 of 260 non-null sign tokens have a value (93.8%), 232 on firm values (89.2%).",
   "verification": [
-   "none"
+   "contemporary decipherment",
+   "statistical test",
+   "independent verification"
   ],
   "gaps": [
    {
-    "item": "Start of each marginal gloss line",
+    "item": "Start of each marginal gloss line on f. 60r, and with it the five large signs that open block B and the four after 'affaires' in block A",
     "blocker": "needs-physical-access",
     "detail": "swallowed by the binding; needs the page opened flat"
    },
    {
-    "item": "Brackx's key recovery (crib_anneal.py, lm_anneal.py) not reproduced; his transcription checked on the images (Beling, 11 Nov 2026: 270 of 272 agree, 0 differ)",
-    "blocker": "not-attempted",
-    "detail": "lm_anneal.py needs a 5-gram table that is not in the gist"
+    "item": "f. 60v C2, C4, C5 unread groups: Beling's cribs from the outer gloss (11 Nov 2026) give tentative +o z, Ob r, lp ost, but C2 'u l', C4 'e r o' and C5 't h ?' do not meet the gloss as read",
+    "blocker": "open-codes",
+    "detail": "open work, not only an image limit: the cribs exist and the decode does not yet meet them; next is a re-reading of gloss lines 4-8 (soft at Gallica's native resolution; a sharper image from the BnF would help) together with a re-look at the signs of those three stretches"
    },
    {
-    "item": "f. 60v C2, C4, C5 unread groups: retried against the outer gloss (Beling, 11 Nov 2026); tentative +o z, Ob r, lp ost; C2 'u l', C4 'e r o', C5 't h ?' still unmatched",
-    "blocker": "needs-physical-access",
-    "detail": "gloss lines 4-8 are ambiguous at Gallica's native resolution; a sharper image of the f. 60v outer margin is needed from the BnF"
+    "item": "16 sign tokens of 15 labels without a value, and 12 tokens on tentative values (11 labels)",
+    "blocker": "too-short",
+    "detail": "each open label occurs once (zb twice) and each tentative value rests on one context; 272 signs give no second occurrence to test them"
    }
   ],
-  "notes": "Attempted only to the point of finding the contemporary decipherment; Status: in progress in NOTES.md.",
+  "notes": "Key recovered by Michael Brackx from the marginal decipherment of the time; text read in part (block A a full clause, block C a sentence with holes, block B fragments). No held-out test is possible: the key used all three glosses.",
   "credits": [
    {
     "who": "contemporary",
@@ -194,8 +262,8 @@
    },
    {
     "who": "brackx",
-    "role": "transcription",
-    "note": "found the f. 60v cipher block and its gloss; corrected the f. 60r gloss readings; transcription, key from the glosses and partial reading (tools as he states; to be checked when the files arrive). Role to become solution once the reading is reproduced and graded",
+    "role": "solution",
+    "note": "found the f. 60v cipher block and its gloss; corrected the f. 60r gloss readings; transcription of the three blocks, key recovered from the glosses, reading and English (with the AI tools he states)",
     "date": "2026-10-27",
     "source": "https://github.com/dbourdeau/cyphersolver/issues/113",
     "published": true
@@ -204,8 +272,36 @@
     "who": "ajbeling",
     "role": "verification",
     "note": "Brackx's transcription checked sign by sign on the images; Charrière II searched; f. 60v gaps retried against the gloss (with AI agents)",
-    "date": "2026-11-11"
+    "date": "2026-11-11",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/423"
    }
-  ]
+  ],
+  "provenance": "contributed",
+  "codes_open": {
+   "open": 15,
+   "tokens_open": 16
+  },
+  "texts": [
+   {
+    "doc": "noailles1558",
+    "label": "The three cipher blocks, ff. 60r-60v",
+    "transcription": "brackx/transcription_f60r_f60v.txt",
+    "decryption": "brackx/decode_tvd_r5.txt",
+    "reading": "reading.md",
+    "translation": "brackx/translation_en.md",
+    "language": "fr",
+    "state": "read in part",
+    "read_share": 0.548,
+    "summary": "Three short passages in cipher inside a clear letter of Francois de Noailles, ambassador at Venice, to the Cardinal de Lorraine. Block A blames someone's 'bad order and poverty, or little conduct, that he gives to his affairs'; the subject is not in the cipher. Block B has someone who 'undertakes on him' and All Saints' Day; its opening signs are unread. Block C doubts that, for the singular pleasure and profit they have, 'they' come any bolder or better victualled; three stretches of it are open.",
+    "note": "Brackx's reading (issue #113), rebuilt here from his key and transcription. Read share 0.548 by v10_relabel (51 words, 42 holes), 0.708 with each unread stretch counted once; his own count is about 0.75 on firm values. The fuller file with the glosses and his notes is brackx/reading_original.md.",
+    "reading_review": {
+     "grade": "B",
+     "by": "project (integration check of PR #423)",
+     "date": "2026-11-12",
+     "note": "Read as French: block A is one coherent clause that the gloss confirms word for word where it is legible (maulvaise, pauur[ete], [cond]uitte qu'il donne a ... affaires); block C builds one sentence with three unread stretches (C2, C4, C4-C5) and a doubtful end; block B is fragments around 'entreprand', 'sur luy et le' and 'le iour [de] la Toussaint'. Raw: the writer's spelling, no punctuation, line-broken. Not a full reading of any block but A."
+    }
+   }
+  ],
+  "key_file": "brackx/key_r5.tsv"
  }
 }
