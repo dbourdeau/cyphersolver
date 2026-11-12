@@ -143,3 +143,14 @@ The folder was verified before it was written up. What reproduced and what did n
 ## Tools
 
 Claude (Anthropic) models for the transcriptions, the solving, the scripts, the image checks and these files; own Python (standard library and PIL). The repository's scripts were not run by us.
+
+## Claims review by a second reader (12 Nov 2026)
+
+An independent reader checked the page against this folder. Changed:
+
+- Cut the page's dialect judgement on the spellings of the clear lines ("not Florentine"): no source carries it, and it was not checked here.
+- The second decoder is said to agree with the key on all 1,369 units counted as read; it did not recompute the 137 not read or the 8 unread.
+- The dateline "with a bar" (marzo or maggio), not "over the last two marks"; "order 4" of the character model cut (not in these notes).
+- The word-count figure the folder gave is no longer quoted; the page says only that it did not add up and is not used.
+- The glance box counts ten capital or small-letter codes and the ampersand (et), not eleven codes for persons and places.
+- Prior publication: the archive's Cifrari series (not digitised) added to the list of what was not checked.
