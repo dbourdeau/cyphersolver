@@ -222,6 +222,12 @@
    "key confirms",
    "statistical test"
   ],
+  "validation": {
+   "date": "2026-11-12",
+   "file": "controls/shuffle.txt",
+   "verdict": "not applicable",
+   "notes": "Contributor's own shuffled-key control (not docs/_validate.py, which was not run): 5,000 shuffled keys per page and pooled, French 4-gram model (Language header asserted): 0 of 5,000 on every page; all nine pages pooled, true -2.1534 against best -4.6480 (seed 20261112) and -4.5698 (seed 7)."
+  },
   "provenance": "contributed",
   "credits": [
    {
