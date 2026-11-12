@@ -302,10 +302,10 @@ record: the pull request is a single commit.
   | No. 25, 6 January 1815 | 74 | 0 | 1.000 | read |
   | No. 26, 27 January 1815 | 46 | 2 | 0.957 | read |
   | 24 March 1815 | 779 | 18 | 0.977 | read |
-  | No. 28, 12 May 1815 | 71 | 0 | 1.000 | read |
+  | No. 28, 12 May 1815 | 71 | 1 | 0.986 | read |
 
   Frame 0039 stays at 0.965 (Andrew Beling's count by the same rule, PR #200; a recount here gives 353 words, 13
-  holes, 0.963). All thirteen texts: 2,631 coded words, 86 holes, 0.967. The contributor's figures for the five
+  holes, 0.963). All thirteen texts: 2,631 coded words, 87 holes, 0.967. The contributor's figures for the five
   PR #415 letters, 0.981, 0.955, 0.980, 1.000 and 1.000, are shares of groups (`beling/scripts/read_share.py`), not of
   words. The verifier's word count before the three inferences were marked was 0.965, 0.953, 0.978, 1.000, 1.000.
   The target as a whole is read in part: three texts are under 0.95 and the open places are listed under Remaining gaps.
@@ -362,7 +362,7 @@ in the table (a slot inference); it fits here (democratic).
 ### Claims review by a second reader (12 Nov 2026)
 
 - "relative" in No. 24 (145 with a stroke; the key value is "June") is now marked [?relative] and counted as a hole,
-  as the same group is in No. 18: No. 24 is 131 words, 4 holes, 0.969; all thirteen texts 2,631 words, 86 holes, 0.967.
+  as the same group is in No. 18: No. 24 is 131 words, 4 holes, 0.969; all thirteen texts 2,631 words, 87 holes, 0.967.
 - Frame 0039: the recount used in the total is 353 words, 13 holes, 0.963; 0.965 is the contributor's count.
 - The mechanical decode of frame 0039 shown on the page is the first one, of 27 October, made with the rebuilt Adams
   table; the letter decodes use the code sheet file.
@@ -444,3 +444,28 @@ These are not gaps in the reading (12 Nov 2026):
 - `beling/letters/1814-11-20_Cevallos/` and `beling/letters/1814-06-21_No17/` (added at integration, 12 Nov 2026):
   `transcription.txt`, `line_by_line_decode.txt`, `reading.txt`; the first also `translation.txt`
 - `word_share.py`, `word_share.txt`: the share of coded words read in each letter reading, by one rule
+
+## Follow-up commit of the contributor (12 Nov 2026, c84e484c of PR 415)
+
+After the integration above Andrew Beling pushed one more commit: reading reviews (grade A, with two independent
+AI-agent readings) of Nos. 18, 19, 24, 25 and 28, recorded in `profile.json` next to the integration reader's review
+(the profile holds one review per text, so his is added to the note of ours), and three changes in the readings:
+
+- **No. 28, "actu[al]".** 10.1151.1255 is act + UV + non; nothing gives "-al", so the contributor marks it supplied.
+  Under the strict rule it is a hole: No. 28 has 1 hole in 71 coded words, **0.986** (was 1.000; `word_share.py`, output
+  in `word_share.txt`). All thirteen texts: 2,631 coded words, **87 holes**, 0.967 (the share does not move to three
+  places). The profile figure of 85 holes and the 96.8% in README, SOLVED_CATALOGUE and the site blurb did not agree with
+  the 86 holes counted here before this commit (frame 0039 at its recount of 13 holes); all now say 87 holes, 96.7%.
+  His own group figure for No. 28 stays 1.000 (90 groups) and is his, not ours. The same word in No. 19 was already
+  marked `[?actual]` here.
+- **No. 24, 593.813.** He now writes the opening groups as numbers, `[593.813]`, where our reading has `[?Sir]`
+  (the letter of 24 March 1815 opens 598.813, si-R, so 593 is probably a slip for 598). Both count as one hole; the
+  integration's `[?Sir]` is kept because it says what the sense wants; his version of that line is not taken.
+- **No. 19, "post office".** A note: 458 post, 367 dash, 76 of, 1231 "ficent" with strokes, "office" read by the stroke
+  rule used in the other letters; no clerk's check. The word is not marked; it counts as read by the mark rule, and the
+  stroke rule is itself inferred from use, not from an instruction.
+
+His reviews: No. 18 and No. 19 as above in the profile notes; the clerk's decipherment on frames 0196 and 0174 was read
+before the figures were transcribed (No. 25) or after the decode (No. 24), so the agreement with it supports the
+reading and is not an independent test. `beling/SHA256SUMS.txt` carries the new hashes (No. 19 reading changed by his
+note and the integration's mark, No. 28).
