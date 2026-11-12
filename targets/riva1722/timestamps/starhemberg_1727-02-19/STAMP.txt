@@ -1,0 +1,8 @@
+LABEL: starhemberg_1727-02-19
+Local UTC: 20261111T220428Z
+Files: 10
+Manifest SHA-256: 77cc6460343dee145ad83c72534ed6bc1d1c5961ada8ea052918ab7d07763b60
+RFC3161 TSA (Sectigo Public Time Stamping Signer): status=Granted. time=Nov 11 22:04:28 2026 GMT
+OpenTimestamps: submitted (pending Bitcoin; ots upgrade later)
+Verify RFC3161: openssl ts -reply -in MANIFEST.sha256.tsr -text ; openssl ts -verify -data MANIFEST.sha256 -in MANIFEST.sha256.tsr -CAfile <Sectigo chain>
+Verify OTS: ots verify MANIFEST.sha256.ots

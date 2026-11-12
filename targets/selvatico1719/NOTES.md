@@ -18,6 +18,8 @@ These letters are not in Dan's `catalogue.json`. The four 1722 letters are the l
 Estense file. This target is about the 1719 letters only; the 1722 and undated letters are listed as not read.
 Lead 1568 also lists five Starhemberg letters to Riva (1721-1727); they were not worked.
 
+Update 12 Nov 2026: the 1722 letters, the two undated letters and the Starhemberg letters are now read in part in other targets: the nine letters in the Riva table (K3, which differs from the 1719 table) are in `targets/riva1722`, and the Starhemberg letters of 1720-21 (another key, K21, related to this 1719 table in b c d f g and n) in `targets/starhemberg1721`.
+
 ## The 1719 system and key
 
 Small homophonic alphabet with syllable signs and a nomenclator. Vowels 1-5 (a e i o u/v), consonants 6-15

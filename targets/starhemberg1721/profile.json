@@ -1,0 +1,437 @@
+{
+  "schema_version": 1,
+  "target": "starhemberg1721",
+  "title": "Starhemberg to Giuseppe Riva, Vienna 1720-1721: three letters in a letter-number cipher, partly deciphered at the time (Biblioteca Estense, Autografoteca Campori; lead 1568): the unglossed parts read in part",
+  "documents": [
+    {
+      "id": "starhemberg_1720-12-21",
+      "read": "read in part",
+      "shelfmark": "Modena, Biblioteca Estense Universitaria, Autografoteca Campori, S, Starhemberg (von), Guido, cc. 13-14 (postscript on 13v)",
+      "date": "21 December 1720 (date not checked at full scale)",
+      "year": 1720,
+      "country": "Austria",
+      "route": "Count Starhemberg (Vienna; filed under Guido, content fits Conrad Sigmund) to Giuseppe Riva (London)",
+      "language": "Italian",
+      "pages": 1,
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "interlinear"
+        ],
+        "source": "Contemporary decipherment in another hand, interlinear over the first line. 13 of the 33 cipher units carry no gloss."
+      },
+      "length": {
+        "tokens": 33,
+        "distinct": 17,
+        "unit": "mixed",
+        "measured": false,
+        "file": "transcriptions/starhemberg_1720-12-21.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Estense IIIF images (edl-jarvis.cultura.gov.it), mosaics of 1,024 px tiles",
+        "image_quality": "good",
+        "notes": "Counted by scripts/build.py, not by the repository's measure, so measured is false. Strict: 30 of 33 units; units with no gloss 10 of 13. One transcription, not blind (the key and the glosses were visible)."
+      }
+    },
+    {
+      "id": "starhemberg_1721-05-31",
+      "read": "read in part",
+      "shelfmark": "Modena, Biblioteca Estense Universitaria, Autografoteca Campori, S, Starhemberg (von), Guido, cc. 17-18 (cipher on 17r)",
+      "date": "31 May 1721",
+      "year": 1721,
+      "country": "Austria",
+      "route": "Count Starhemberg (Vienna; filed under Guido, content fits Conrad Sigmund) to Giuseppe Riva (London)",
+      "language": "Italian",
+      "pages": 1,
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "interlinear"
+        ],
+        "source": "Contemporary decipherment in another hand, at the foot of c. 17r, first half only, breaking off in mid-word. 36 of the 104 cipher units carry no gloss."
+      },
+      "length": {
+        "tokens": 104,
+        "distinct": 25,
+        "unit": "mixed",
+        "measured": false,
+        "file": "transcriptions/starhemberg_1721-05-31.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Estense IIIF images (edl-jarvis.cultura.gov.it), mosaics of 1,024 px tiles",
+        "image_quality": "good",
+        "notes": "Counted by scripts/build.py, not by the repository's measure, so measured is false. Strict: 93 of 104 units; units with no gloss 31 of 36. One transcription, not blind (the key and the glosses were visible)."
+      }
+    },
+    {
+      "id": "starhemberg_1721-06-14",
+      "read": "read in part",
+      "shelfmark": "Modena, Biblioteca Estense Universitaria, Autografoteca Campori, S, Starhemberg (von), Guido, cc. 1-2",
+      "date": "14 June 1721",
+      "year": 1721,
+      "country": "Austria",
+      "route": "Count Starhemberg (Vienna; filed under Guido, content fits Conrad Sigmund) to Giuseppe Riva (London)",
+      "language": "Italian",
+      "pages": 2,
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "interlinear"
+        ],
+        "source": "Contemporary decipherment in another hand, interlinear over about 62% of the cipher units. 110 of the 289 cipher units carry no gloss."
+      },
+      "length": {
+        "tokens": 289,
+        "distinct": 41,
+        "unit": "mixed",
+        "measured": false,
+        "file": "transcriptions/starhemberg_1721-06-14.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Estense IIIF images (edl-jarvis.cultura.gov.it), mosaics of 1,024 px tiles",
+        "image_quality": "good",
+        "notes": "Counted by scripts/build.py, not by the repository's measure, so measured is false. Strict: 249 of 289 units; units with no gloss 97 of 110. One transcription, not blind (the key and the glosses were visible)."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "monoalphabetic",
+      "homophonic",
+      "nomenclator"
+    ],
+    "summary": "One number per letter, separated by dots. Vowels 1-5 (a e i o u) and again 10 20 30 40 50; consonants in alphabetical order from 11 (b c d f g l m n p q r s t z = 11-24), so 20 is both e and q. A double stroke after a group doubles the consonant. Numbers from 80 up are codes for common words and names.",
+    "symbol_kind": "digits",
+    "distinct_symbols": 42,
+    "digit_groups": {
+      "separation": "dots"
+    },
+    "diacritics": {
+      "used": true,
+      "note": "a double stroke after a group doubles the consonant"
+    },
+    "homophones": {
+      "used": true,
+      "max_per_vowel": 2,
+      "max_per_consonant": 1
+    },
+    "nomenclator": {
+      "present": true,
+      "entries": 14,
+      "kinds": [
+        "common words",
+        "names",
+        "titles"
+      ],
+      "unread_groups": 21
+    },
+    "nulls": {
+      "present": false
+    },
+    "key_order": "alphabetical",
+    "word_division": "none",
+    "doubled_letters": "marked by a double stroke after the group",
+    "notes": "Not the Riva table of targets/riva1722. The alphabetical order of the consonants is derived from the values, not seen in a key sheet. nomenclator.entries counts the distinct numbers of 80 and over; ten have a value from the glosses, none is counted read."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "partial",
+      "where": "A contemporary hand deciphered about 55% of the cipher on the letters themselves (234 of 426 units: the foot of c. 17r, and between the lines on cc. 1 and 13v). For the rest, priority is NOT established: Lindgren, Il Saggiatore musicale 23/2 (2016), 277-374, uses this file and treats Riva's recruiting of singers; it was not seen (not open access) and may quote the Borosini passage. Lindgren and Timms 2003 (searched): not these letters.",
+      "found": "before attempt",
+      "used": true
+    },
+    "inputs": [
+      "images",
+      "cleartext context"
+    ],
+    "attack": "archive decipherment",
+    "human_role": "Malcolm McBratney directed the work, set the rules (every attempt recorded, transcriptions frozen before decoding, controls, no claim without its check) and sent the result; Claude sessions found the letters, transcribed, took the key from the gloss, read and checked. No reading by a person without AI.",
+    "tools": [
+      "own Python: decoder and per-unit ledger (scripts/build.py, standard library)",
+      "shuffled-key baseline, 5,000 keys, Italian quadgrams",
+      "Estense IIIF images, tile mosaics and crops (PIL)"
+    ],
+    "models": [
+      "Claude (Anthropic), sessions of 11 Nov 2026 (model ids not recorded)",
+      "claude-fable-5-2 (session of 12 Nov 2026 that prepared this folder)"
+    ],
+    "sessions": 4,
+    "first_date": "2026-11-11",
+    "last_date": "2026-11-12"
+  },
+  "solution": [
+    {
+      "date": "2026-11-11",
+      "kind": "solver",
+      "technique": [
+        "simulated annealing"
+      ],
+      "what": "Ciphertext-only annealing on the 31 May 1721 letter (104 groups): no reading. The foot gloss was not noticed.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "sibling key",
+      "technique": [
+        "key matching",
+        "language-model scoring"
+      ],
+      "what": "The Riva table (K3) tried on the 31 May letter as a control: 597 of 5,000 shuffled keys as good. Not that table.",
+      "result": "ruled out"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "key from source",
+      "technique": [
+        "plaintext matching"
+      ],
+      "what": "Key K21 (22 letters and one code) taken from the contemporary gloss at the foot of c. 17r, which covers the first half of the 31 May letter. Applied to the second half, which has no gloss: 31 of 36 units; whole letter 93 of 104.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "access",
+      "what": "Sweep of the Starhemberg file and of Riva's other correspondents: two more letters in this cipher found (14 Jun 1721, 21 Dec 1720), neither tagged as cipher in the catalogue, both partly glossed between the lines.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "sibling key",
+      "technique": [
+        "key matching",
+        "language-model scoring"
+      ],
+      "what": "K21 unchanged, one decode each: 14 Jun 1721, 249 of 289 units, 97 of 110 without a gloss, 0 of 5,000 shuffled keys; 21 Dec 1720, 31 of 33 as first counted.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "other"
+      ],
+      "what": "Check by Daniel Bourdeau on issue 432: the 31 May figures hold (104 units, 93 read, held-out 31 of 36); the two letters of the comment could not be checked without files; 20 = e needs a full-scale recheck, since the 1719 table has 20 = qu; this cipher to have its own entry.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "hypothesis",
+      "technique": [
+        "key-structure hypothesis"
+      ],
+      "what": "For this folder: the consonants are in alphabetical order from 11, which makes 20 = q by position as well as e among the tens, and gives 11 = b and 24 = z. One unit of the 1720 letter downgraded (ziffere): 30 of 33. One crop of the 31 May letter looked at for the form of 20: no clear separate sign. Full-scale recheck not done.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "literature search",
+      "what": "Lindgren 2016 not open and not seen; Lindgren and Timms 2003 searched through a fetch tool: these letters are not printed there.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "statistical test",
+        "language-model scoring"
+      ],
+      "what": "Statistical validation (docs/_validate.py): 372 tokens, 22 types, it-modern order 4: reading -2.584 per letter; random keys -5.658 (z 5.7); key annealed onto shuffled ciphertext best -3.383 (mean -3.507, z 11.5); annealer on the real text -3.003. Verdict: pass.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "other"
+      ],
+      "what": "Integration check: scripts/build.py rerun, every count reproduces (372 of 426; 138 of 159 without gloss); a second decoder written from key.tsv and the transcriptions alone agrees on 33 of 33, 104 of 104 and 282 of 289 groups; RFC 3161 replies read (K21 22:07 GMT, 21 Dec 23:09, 14 Jun 23:29, 11 Nov); all 104 groups of c. 17r agree with the Estense image; the Riva table K3 gives no language on the 31 May letter. Rough word-level count: about 57% (estimate, not the headline).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "what": "Limits found at integration: the glossed groups of 31 May are the key's own source; the 14 Jun and 21 Dec transcriptions were not compared with any image (only short record ids known); the value of 20 and the group 23 in 'acquistati' are unsettled.",
+      "result": "partial"
+    }
+  ],
+  "outcome": {
+    "validation": {
+      "date": "2026-11-12",
+      "model": "it-modern",
+      "file": "validation.tsv",
+      "tokens": 372,
+      "types": 22,
+      "tokens_per_type": 16.91,
+      "score": -2.584,
+      "nulls": {
+        "random keys": {
+          "n": 200,
+          "mean": -5.658,
+          "sd": 0.536,
+          "max": -4.241,
+          "z": 5.7,
+          "p": 0.005
+        },
+        "shuffled refit": {
+          "n": 6,
+          "mean": -3.507,
+          "sd": 0.08,
+          "max": -3.383,
+          "z": 11.5,
+          "p": 0.1429
+        }
+      },
+      "power": -3.003,
+      "verdict": "pass",
+      "notes": "claimed per-occurrence score -2.584; polyphony 0.0; 54 unread tokens left out; annealer on the real text from random keys reached -3.003"
+    },
+    "class": "read in part",
+    "key": "partial",
+    "method": "key recovered based on adjacent plaintext",
+    "method_basis": "Every key value comes from the contemporary decipherment written at the foot of the 31 May 1721 letter. The unglossed parts of the three letters were then read with that key unchanged.",
+    "contribution": [
+      "transcription",
+      "key recovered"
+    ],
+    "fraction_read_method": "measured",
+    "fraction_read_source": "units.tsv and counts.txt (scripts/build.py): 372 of 426 cipher units over the three letters give the key value as transcribed. Of the 159 units with no contemporary gloss, 138 (86.8%). Codes, the doubling mark, doubts and emended units are not counted.",
+    "fraction_read": 0.873,
+    "codes_open": {
+      "open": 6,
+      "total": 14,
+      "tokens_open": 3
+    },
+    "verification": [
+      "contemporary decipherment",
+      "key confirms",
+      "statistical test"
+    ],
+    "provenance": "contributed",
+    "credits": [
+      {
+        "who": "contemporary",
+        "role": "key or decipherment used",
+        "note": "the decipherment written at the time on the letters (foot of c. 17r; between the lines on cc. 1 and 13v): the source of every key value and of about 55% of the plaintext",
+        "date": "1721",
+        "source": "Estense IIIF images"
+      },
+      {
+        "who": "mcbratney",
+        "role": "solution",
+        "note": "lead 1568: key K21 from the gloss and the unglossed parts of three letters read in part, with Claude; issue #432",
+        "date": "2026-11-11",
+        "source": "https://github.com/dbourdeau/cyphersolver/issues/432"
+      },
+      {
+        "who": "mcbratney",
+        "role": "transcription",
+        "note": "three letters from the Estense images, with Claude; two of them not tagged as cipher in the catalogue",
+        "date": "2026-11-11"
+      },
+      {
+        "who": "bourdeau",
+        "role": "pointer",
+        "note": "the q question (20 = qu in the 1719 table), a separate entry for this cipher, Conrad Sigmund not Guido",
+        "date": "2026-11-12",
+        "source": "https://github.com/dbourdeau/cyphersolver/issues/432"
+      }
+    ],
+    "gaps": [
+      {
+        "item": "20 = e and q: every 20 to be re-read at full scale",
+        "blocker": "not-attempted",
+        "detail": "The table order explains both values; one crop gave no separate sign. holes.md."
+      },
+      {
+        "item": "Lindgren 2016 not seen; priority not established, the Borosini passage most at risk",
+        "blocker": "not-attempted",
+        "detail": "Il Saggiatore musicale 23/2, pp. 277-374: paywalled. Needs a library copy."
+      },
+      {
+        "item": "Codes 59, 9, 62, 85, 236, 301 and four places of the 14 Jun letter",
+        "blocker": "open-codes",
+        "detail": "holes.md."
+      },
+      {
+        "item": "Glosses not transcribed diplomatically; clear text mostly not transcribed; date of the 1720 letter read on show-through",
+        "blocker": "not-attempted"
+      },
+      {
+        "item": "One transcription, not blind; no person has compared it with the images",
+        "blocker": "not-attempted"
+      },
+      {
+        "item": "The 1720 letter is 33 units",
+        "blocker": "too-short"
+      }
+    ],
+    "texts": [
+      {
+        "doc": "starhemberg_1720-12-21",
+        "label": "Starhemberg to Riva, 21 December 1720",
+        "transcription": "transcriptions/starhemberg_1720-12-21.txt",
+        "decryption": "decryptions/starhemberg_1720-12-21.txt",
+        "reading": "readings/starhemberg_1720-12-21.md",
+        "translation": "translations/starhemberg_1720-12-21.md",
+        "language": "it",
+        "state": "read in part",
+        "read_share": 0.857,
+        "summary": "A two-line postscript in cipher: 'Lei continui di scrivermi in ziffere spesso', keep writing to me in cipher, often. The earliest dated use of this cipher in the file; the writer asks Riva to use it.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (the session that prepared these files). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
+          "date": "2026-11-12",
+          "note": "Read as sentences against the translation. Connected Italian; holes marked in place (codes, the q/e group, doubled letters emended, words read by sense)."
+        },
+        "note": "read_share is our count of the README word rule on the reading file (6 words, 1 holes, 0 doubtful); the clear text is counted with the cipher. By cipher units: 30 of 33; without a gloss 10 of 13."
+      },
+      {
+        "doc": "starhemberg_1721-05-31",
+        "label": "Starhemberg to Riva, 31 May 1721",
+        "transcription": "transcriptions/starhemberg_1721-05-31.txt",
+        "decryption": "decryptions/starhemberg_1721-05-31.txt",
+        "reading": "readings/starhemberg_1721-05-31.md",
+        "translation": "translations/starhemberg_1721-05-31.md",
+        "language": "it",
+        "state": "read in part",
+        "read_share": 0.886,
+        "summary": "His return to England is certain, as Ambassador. In cipher: the Duke of Modena does well to continue his devotion to the House of Austria, the more so as examples show that those who have been faithful to it have gained very great advantages; he will say more on this point when he arrives. The second half is not covered by the contemporary gloss.",
+        "reading_review": {
+          "grade": "B",
+          "by": "integration reviewer (an AI reader, 12 Nov 2026), reading the decryption as sentences against the translation; not a person",
+          "date": "2026-11-12",
+          "note": "Reads as one Italian sentence (\"suo Ser[enissimo] Duca fa bene di continuare la sua divotione verso l augusta Casa d Austria, tanto piu che gli essempi mostrano che [quelli che] sono stati fedeli ... hanno acquistati grandissimi vantaggi\"), the first half the gloss own text."
+        },
+        "note": "read_share is our count of the README word rule on the reading file (62 words, 8 holes, 0 doubtful); the clear text is counted with the cipher. By cipher units: 93 of 104; without a gloss 31 of 36."
+      },
+      {
+        "doc": "starhemberg_1721-06-14",
+        "label": "Starhemberg to Riva, 14 June 1721",
+        "transcription": "transcriptions/starhemberg_1721-06-14.txt",
+        "decryption": "decryptions/starhemberg_1721-06-14.txt",
+        "reading": "readings/starhemberg_1721-06-14.md",
+        "translation": "translations/starhemberg_1721-06-14.md",
+        "language": "it",
+        "state": "read in part",
+        "read_share": 0.869,
+        "summary": "He asks about the South Sea affair and whether an opera company will be formed in London this year. In cipher: Borosini, in Vienna, sings tenor and has no equal in Europe; he would join the company if asked for in the name of the King or of the company, and a letter of request to Starhemberg would do. A certain Colman has arrived to serve under St Saphorin, the British minister: is he the son of 'Hoffman'? He wants all the talk of court and nation in London on Vienna's conduct towards 'Sig. Cnigt' (Robert Knight of the South Sea Company, by sense). Context: the Royal Academy of Music's recruiting of singers; Francesco Borosini did sing in London in 1724-25.",
+        "reading_review": {
+          "grade": "B",
+          "by": "integration reviewer (an AI reader, 12 Nov 2026), reading the decryption as sentences against the translation; not a person",
+          "date": "2026-11-12",
+          "note": "Builds Italian sentences about Borosini, Colman and Hoffman with holes in about a fifth of the cipher words; the glossed sentences are the glossator, the rest is model reading."
+        },
+        "note": "read_share is our count of the README word rule on the reading file (276 words, 38 holes, 3 doubtful); the clear text is counted with the cipher. By cipher units: 249 of 289; without a gloss 97 of 110."
+      }
+    ],
+    "key_file": [
+      "key.tsv",
+      "overrides.tsv",
+      "unglossed.tsv"
+    ],
+    "notes": "Filed as read in part. No first reading is claimed: more than half of the cipher was deciphered at the time, and the article most likely to quote these letters has not been seen. codes_open counts the codes with no value from a gloss (59, 9, 62, 85, 236, 301); tokens_open counts 85, 236 and 301 only, since 59, 9 and 62 are numbers under 80 that the script classes as not in the key. The shuffled-key controls are from our own scripts; docs/_validate.py was not run. The repository's checker scripts were not run by the contributor; the checks were verified by reading them (pull request text). The contributor id mcbratney is added to contributors.json by pull request 445 (muzio1550), not by this one."
+  }
+}

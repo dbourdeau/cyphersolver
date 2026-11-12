@@ -4838,6 +4838,46 @@
    "by": "Secretaria Particular del Presidente (typed sheet addressed to Francisco L. de la Barra)",
    "year": null,
    "note": "A typed key sheet in the Francisco Leon de la Barra papers, tested both ways on the 1912 and 1913 telegrams of the same fonds: no Spanish. Date not established."
+  },
+  {
+   "id": "k-riva-k3",
+   "label": "The Riva table K3, 1721-1727 (rebuilt by Malcolm McBratney): syllabic numbers 1-95 with a nomenclator",
+   "kind": "rebuilt here",
+   "by": "Malcolm McBratney",
+   "year": 1726,
+   "note": "Read off the contemporary interlinear decipherment of two Starhemberg letters of 1726 (K2), then changed or added in 15 rows from context in the 1722 letters (K3, md5 65b083be...). Nine letters read in part with it. targets/riva1722/key.tsv."
+  },
+  {
+   "id": "k-starhemberg-k21",
+   "label": "Starhemberg's number cipher K21, 1720-1721 (rebuilt by Malcolm McBratney from the foot gloss)",
+   "kind": "rebuilt here",
+   "by": "Malcolm McBratney",
+   "year": 1721,
+   "note": "22 letter values and 210 = Duca read off the contemporary gloss at the foot of c. 17r of the letter of 31 May 1721 (md5 0bbf7091...), then applied unchanged to the rest of that letter and to two more. Not the Riva table (K3 gives no language on these letters). targets/starhemberg1721/key.tsv."
+  },
+  {
+   "id": "k-estense-riva-gloss-1726",
+   "label": "Interlinear decipherment of Starhemberg's letters to Riva of 27 Feb and 6 Mar 1726 (Biblioteca Estense, Campori S, Starhemberg cc. 5-10, 19-20)",
+   "kind": "contemporary key",
+   "by": "",
+   "year": 1726,
+   "note": "Decipherment written between the lines at the time; only ten pairs and a rough group reading of c. 5r were recorded here, from which K2 was built."
+  },
+  {
+   "id": "k-estense-starhemberg-gloss-1721",
+   "label": "Foot gloss of Starhemberg's letter of 31 May 1721 (Biblioteca Estense, Campori S, Starhemberg cc. 17-18, c. 17r)",
+   "kind": "contemporary key",
+   "by": "",
+   "year": 1721,
+   "note": "A contemporary hand deciphered the first half of the cipher passage at the foot of the page and broke off in mid-word."
+  },
+  {
+   "id": "k-selvatico-1719",
+   "label": "Selvatico to Riva key of 1719 (rebuilt by WAINUT from the glosses of the 2 Oct 1719 letter)",
+   "kind": "rebuilt here",
+   "by": "WAINUT",
+   "year": 1719,
+   "note": "Vowels 1-5, consonants 6-15, 21-24 la le li lo, 25 r, 26 s, 27 t; a different table from the Riva table of 1721-27 and from K21, with which it shares b c d f g at 11-15 and n at 18. targets/selvatico1719/key.tsv."
   }
  ],
  "links": [
@@ -7798,6 +7838,30 @@
    "target": "nunez1899",
    "how": "rebuilt from",
    "note": "frozen from three other glossed telegrams; 28 of 65 code words of 9926 confirmed by its contemporary translation, 36 values from the translation only"
+  },
+  {
+   "key": "k-estense-riva-gloss-1726",
+   "target": "riva1722",
+   "how": "rebuilt from",
+   "note": "the table K2 was read off these glosses, then K3 corrected from context"
+  },
+  {
+   "key": "k-riva-k3",
+   "target": "riva1722",
+   "how": "rebuilt from",
+   "note": "K2 read off the 1726 glosses, K3 corrected from context in the 1722 letters; nine letters read in part"
+  },
+  {
+   "key": "k-estense-starhemberg-gloss-1721",
+   "target": "starhemberg1721",
+   "how": "rebuilt from",
+   "note": "the only source of the 22 letter values of K21"
+  },
+  {
+   "key": "k-starhemberg-k21",
+   "target": "starhemberg1721",
+   "how": "rebuilt from",
+   "note": "22 letter values and one code from the foot gloss of c. 17r; three letters read in part"
   }
  ],
  "sources": [
@@ -9078,6 +9142,18 @@
   {
    "source": "s-cyphersolver",
    "key": "k-nunez1899code"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-riva-k3"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-starhemberg-k21"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-selvatico-1719"
   }
  ],
  "unlinked": {
@@ -10386,6 +10462,21 @@
    "key": "k-x15466",
    "target": "delabarra1913",
    "note": "tested in both directions (scripts/keysheet_test.py): no Spanish; a different key"
+  },
+  {
+   "key": "k-riva-k3",
+   "target": "starhemberg1721",
+   "note": "tried on the 31 May 1721 letter as a control: no language, so the 1720-21 letters are another key"
+  },
+  {
+   "key": "k-selvatico-1719",
+   "target": "riva1722",
+   "note": "the 1719 table of targets/selvatico1719 does not read the 1722 letters (that contributor's finding; not re-run here)"
+  },
+  {
+   "key": "k-selvatico-1719",
+   "target": "starhemberg1721",
+   "note": "related (b c d f g at 11-15, n at 18) but r s t z and the vowel rows differ; not the key of these letters"
   }
  ]
 }
