@@ -1,0 +1,185 @@
+{
+ "schema_version": 1,
+ "target": "mccarty1911",
+ "title": "González Garza to \"John McCarty\" (Adolfo González), El Paso, 29 March 1911 (CEHM-Carso CMXV.15.1432.1-4): read with the archive's \"Clave G.A.\" card, validated on period decipherments",
+ "documents": [
+  {
+   "id": "cmxv-15-1432-1",
+   "read": "read",
+   "shelfmark": "CEHM-Carso, Fondo CMXV (Archivo Federico González Garza), CMXV.15.1432.1-4",
+   "date": "29 March 1911",
+   "year": 1911,
+   "country": "United States",
+   "route": "Federico González Garza (El Paso, Texas) -> \"John McCarty\" = Adolfo González (San Antonio, Texas)",
+   "language": "Spanish",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the sheet; not in the typed list of period decipherments CMXV.18.1795.1; the CEHM record says \"en clave\".",
+    "partial": false
+   },
+   "length": {
+    "tokens": 62,
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Brice Dudout, from the CEHM viewer image (study copy, not redistributed)",
+    "image_quality": "good",
+    "notes": "Typed sender's copy on a Texas Telegraph Company form; six coded words, the rest clear Spanish."
+   },
+   "places": {
+    "from": "El Paso",
+    "to": "San Antonio"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "polygraphic",
+   "homophonic"
+  ],
+  "summary": "Digraphic table of 2 rows x 15 columns (the \"Clave G.A.\" card): a plain letter is one of five row letters (WZCTG or MVPKI) followed by its column letter (BLRAFQENHDXYOSJ).",
+  "symbol_kind": "letters",
+  "distinct_symbols": 25,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "not applicable"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The key card \"Clave G.A. (una de las usadas en San Antonio)\", CMXV.16.1557.1 scans 12-13, in the same fonds; no decipherment of this telegram on the sheet or in CMXV.18.1795.1.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "transcription",
+   "key from archive"
+  ],
+  "attack": "key from archive",
+  "human_role": "Brice Dudout directed the work and decided what to publish; Claude (Opus) transcribed the card and the telegrams from the CEHM viewer images, ran the preregistered measure and wrote the reading.",
+  "models": [
+   "Claude"
+  ],
+  "first_date": "2026-11-11",
+  "last_date": "2026-11-12"
+ },
+ "solution": [
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "Telegram and key card transcribed from the CEHM viewer images; hashed before any key was tried.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "key from source",
+   "what": "The \"Clave G.A.\" card (CMXV.16.1557.1 scans 12-13) selected among the fonds' cards on the first half of the coded letters; it decodes all six coded words (Galeana, Dr, Ag, Guerrero, Chih, Encinillas), two pairs faulty in transmission.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "what": "First held-out measure on two telegrams: 30 letters, car 0.833 vs best control 0.667: too short, not validated.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Preregistered measure run once: the card as is against the period decipherments of eight sibling telegrams, cipher transcribed blind; agreement 0.866 on 769 cipher letters vs at most 0.257 for 400 controls (VALIDATION.md).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Reading checked as Spanish sentences: 19 of 20 words read as sense; Ag not identified.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-12",
+   "verdict": "not applicable",
+   "notes": "Six coded words are too few for the letter-model test. The key is the archive's card, validated separately against period decipherments of eight sibling telegrams (A = 0.866 on 769 cipher letters, controls at most 0.257; VALIDATION.md)."
+  },
+  "class": "read",
+  "verification": [
+   "key confirms",
+   "contemporary decipherment"
+  ],
+  "method": "read with known key",
+  "key": "not applicable",
+  "method_basis": "The key is the archive's own card, applied unchanged; its fit to this traffic was tested against the period decipherments of sibling telegrams, not recovered from the ciphertext.",
+  "contribution": [
+   "transcription"
+  ],
+  "provenance": "project",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "transcription of CMXV.15.1432.1-4 and of the Clave G.A. card, reading, and validation of the card on eight sibling telegrams",
+    "date": "2026-11-12"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "identity of \"Ag\"",
+    "blocker": "needs-physical-access",
+    "detail": "the letters are certain; the recipients' papers and Narváez 2011 and 2019 were not searched"
+   },
+   {
+    "item": "whether the telegram is in print",
+    "blocker": "needs-physical-access",
+    "detail": "the books are not available to the project"
+   },
+   {
+    "item": "a second reader's check of the transcriptions and of the card against the CEHM images",
+    "blocker": "needs-physical-access",
+    "detail": "the images may not be redistributed"
+   }
+  ],
+  "notes": "Read with the archive's Clave G.A. card; card validated on period decipherments of siblings. Earlier readings in the fonds with other cards: hernandez1911 (Echols), mexico1911 (Prabal Gupta).",
+  "fraction_read": 0.95,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Counted from reading.md: 19 of 20 words read as sense (16 sure, 3 with one faulty pair or an abbreviation resolved); Ag read as letters, not identified.",
+  "key_file": "key.tsv",
+  "texts": [
+   {
+    "doc": [
+     "cmxv-15-1432-1"
+    ],
+    "label": "Telegram of 29 March 1911 to John McCarty (CEHM-Carso CMXV.15.1432.1-4)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "es",
+    "state": "read",
+    "read_share": 0.95,
+    "summary": "González Garza at El Paso to Adolfo González at San Antonio: on the 13th Dr (probably Madero) and Ag separated at Galeana, one towards Guerrero, the other towards Chihuahua, camping on the 23rd at Encinillas.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (Opus), for Brice Dudout",
+     "date": "2026-11-12",
+     "note": "Read as Spanish sentences: the six decoded words fill the gaps of the clear text (place names on the Galeana-Chihuahua road, Dr, Ag) and make coherent clauses; two faulty pairs corrected by the sense."
+    }
+   }
+  ]
+ }
+}
