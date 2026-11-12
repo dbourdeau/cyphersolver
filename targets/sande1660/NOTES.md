@@ -236,6 +236,29 @@ Contributed by Andrew Beling with AI agents. Details in `beling/README.md`; each
 - `beling/key/key.txt` and `beling/key/transcription_build.txt` are unchanged copies of `key.txt` and
   `transcription.txt`, and `beling/lexicon/pt.json.gz` of `lang/lexicons/pt.json.gz`, frozen by sha256 for the tests.
 
+## Integration check (12 Nov 2026)
+
+- Re-run: hash lists (`frozen_inputs.sha256`, `frozen_inputs_round2.sha256`, `prereg_round2_written.sha256`) all check;
+  `test_m0271.py`, `test_round2.py`, `posthoc_round2.py`, `decode_all.py`, `cipherB_glosses.py` and `collate_m0271.py`
+  give the committed outputs: m0271 0.7824 against 0.6284 (margin 0.4162), round 2 on 96 lines 0.709 (margin 0.317, bar
+  0.30), post hoc on 167 lines 0.728 (margin 0.341), 1,202 of 1,225 tokens identical between the two m0271 readings,
+  cipher B 48 of 53 groups on m0062. The round-2 exclusion rule is a flaw its author states; 0.317 is the
+  pre-registered result and is only just above the bar.
+- Own decoder written from `key.txt`: `m0272.txt` reads as Portuguese ("cousa de grande ... isto digo a vossa
+  excelencia"). DigitArq m0272 fetched (sha256 equals `beling/images.txt`); lines 2-5, about 150 numbers, compared with
+  the transcription: all agree, one doubtful reading (28*) is marked as doubtful.
+- The test score is the share of letters inside Portuguese words of three or more letters (a language score), not a
+  read share. Strict recount: 7,374 tokens take a letter, at least 127 of them doubtful (counted as holes): 0.950; the
+  contributor's 0.966 counts every token that takes a letter. Neither is a measure of words read as sense, so the class
+  stays read in part.
+- Order of events (round-2 pages transcribed by agents given only the scan, files hashed before the scoring script)
+  is by the contributor's record.
+- No page yet: the key (ciphertext-only) holds on three held-out passes and part of the text reads, but the open items
+  (second reading of the six round-2 pages, the doubtful signs, the m0271 disagreements) are not-attempted, not
+  blocked from outside, so this is not a stopping point (CLAUDE.md). A page is warranted once they are done.
+- Overlap: ANTT LMP liv. 1 appears only here (`vilaflor1663` is liv. 2); catalogue 385 (Teles de Faro) stays the
+  sibling to test.
+
 ## Remaining gaps
 
 - Cipher A, the 168 lines transcribed in Nov 2026 (m0265.19-43, m0266.01 and 06-42, m0267, m0269.01-02 and 13-38, m0272, m0273.01-17) have one blind reader each (180 doubtful, 76 unread signs, most unread at the binding) - blocker: not-attempted (second reading). m0271 has two readings; 4 differences open.
