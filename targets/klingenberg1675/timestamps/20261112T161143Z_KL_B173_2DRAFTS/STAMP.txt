@@ -1,0 +1,8 @@
+LABEL: KL_B173_2DRAFTS
+Local UTC: 20261112T161143Z
+Files: 9
+Manifest SHA-256: cdecd1861f80cdcc9d73b2781c31f3fb7e52891e18e74e83c10c4cf9c8d17f6a
+RFC3161 TSA (Sectigo Public Time Stamping Signer): status=Rejected. time=
+OpenTimestamps: submitted (pending Bitcoin; ots upgrade later)
+Verify RFC3161: openssl ts -reply -in MANIFEST.sha256.tsr -text ; openssl ts -verify -data MANIFEST.sha256 -in MANIFEST.sha256.tsr -CAfile <Sectigo chain>
+Verify OTS: ots verify MANIFEST.sha256.ots
