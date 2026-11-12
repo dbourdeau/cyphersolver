@@ -1,6 +1,11 @@
 # Cipher telegrams to Setembrino de Carvalho, federal commander in Ceará (Juazeiro sedition), March-May 1914 (catalogue 1470)
 
-Status: read in part (Brice Dudout, 12 Nov 2026; the seven telegrams in key MFTDBSJV are read, 1043 cipher letters, 97.2%; 10 March and 20 May are read provisionally, their keys not validated).
+Status: read, with limited reserves (Brice Dudout, 12 Nov 2026; the seven telegrams in key MFTDBSJV are read, 1043 cipher letters, 97.2%; whole file 1440 letters, 95.8%).
+
+Reserves: (a) the formal pre-registered test of MFTDBSJV scored 0.733, under its 0.85 threshold, because the pre-registered
+lexicon was too small; the 0.865 comes from amendment A1, frozen after that first result; the controls stay below 0.13 either
+way. (b) 10 March (LETCARIV, 82.8%) and 20 May (OVHXZIRF, 95.1%) are provisional: their keys are not validated. (c) Two groups
+remain unread: MRELDTKRIMV (pagfis 1326) and SUQHSJU (pagfis 1328).
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents, building on Daniel Bourdeau's vetting of 28 Oct and
 3 Nov 2026 (`research/latam_vetting/1470_sample.txt`): he found the system (Vigenère, key of eight restarted at every word),

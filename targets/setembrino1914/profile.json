@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "fsc_pce_1914_03_10_4",
-   "read": "read in part",
+   "read": "read",
    "shelfmark": "CPDOC/FGV, Arquivo Fernando Setembrino de Carvalho, FSC pce 1914.03.10/4 (DocReader FSC_PACEARA pagfis 1317-1332)",
    "date": "10 March - 20 May 1914",
    "year": 1914,
@@ -100,12 +100,12 @@
   {
    "date": "2026-11-12",
    "kind": "reading",
-   "what": "All telegrams in key MFTDBSJV read: 1043 cipher letters, 97.2%; 10 March (LETCARIV) and 20 May (new key OVHXZIRF, ciphertext-only) read provisionally.",
-   "result": "partial"
+   "what": "All telegrams in key MFTDBSJV read: 1043 cipher letters, 97.2%; 10 March (LETCARIV) and 20 May (new key OVHXZIRF, ciphertext-only) read provisionally; whole file 1440 letters, 95.8%.",
+   "result": "worked"
   }
  ],
  "outcome": {
-  "class": "read in part",
+  "class": "read",
   "key": "partial",
   "method": "read with known key",
   "method_basis": "Key MFTDBSJV rebuilt by Daniel Bourdeau from the contemporary pencil decipherment, re-derived and validated on held-out telegrams; 20 May key found ciphertext-only (provisional).",
@@ -187,6 +187,7 @@
    }
   ],
   "key_file": "key.tsv",
-  "provenance": "contributed"
+  "provenance": "contributed",
+  "notes": "Read, with three reserves (Brice Dudout, 12 Nov 2026). (a) The formal pre-registered held-out test of MFTDBSJV scored 0.733, under its 0.85 threshold, because the pre-registered lexicon was too small; the 0.865 comes from amendment A1, declared and frozen after that first result; the 2000 controls stay below 0.13 either way (max 0.097 and 0.129). (b) 10 March (LETCARIV, 93 letters, 82.8%) and 20 May (OVHXZIRF, 304 letters, 95.1%) are provisional: their keys are not validated. (c) Two groups remain unread: MRELDTKRIMV (pagfis 1326) and SUQHSJU (pagfis 1328). The seven MFTDBSJV telegrams are read (97.2%)."
  }
 }
