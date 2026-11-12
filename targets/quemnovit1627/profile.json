@@ -53,8 +53,7 @@
     "homophones": {
       "used": true,
       "max_per_vowel": 1,
-      "max_per_consonant": 2,
-      "note": "L/l (s) and S/h (k) may be variant forms of one sign each rather than true homophones"
+      "max_per_consonant": 2
     },
     "nomenclator": {
       "present": true,
@@ -70,7 +69,7 @@
     },
     "key_order": "partly alphabetical",
     "word_division": "kept",
-    "notes": "key_order: plain l m n o are cipher a b c d (derived from the key; the rest shows no order). distinct_symbols counts reader 1's 24 sign labels, n included."
+    "notes": "key_order: plain l m n o are cipher a b c d (derived from the key; the rest shows no order). distinct_symbols counts reader 1's 24 sign labels, n included. homophones: L/l (s) and S/h (k) may be variant forms of one sign each rather than true homophones."
   },
   "conditions": {
     "prior_solution": {
@@ -207,6 +206,12 @@
       "statistical test",
       "key confirms"
     ],
+    "validation": {
+      "date": "2026-11-12",
+      "file": "checks/shuffle_control.out",
+      "verdict": "not applicable",
+      "notes": "Contributor's own shuffled-key control (not docs/_validate.py, which was not run): Adjudication for this folder: each reader-1 sign takes the value at least two of three readers give (frozen 13:17:09 UTC, decoded once 13:17:19 UTC): 70 of 103 units S (67.96%); all three agreeing: 47 of 103 (45.63%). 0 of 5,000 shuffled keys for every reading, seeds 20261112 and 7. The filed 90.29% is withdrawn as the headline; the key stands."
+    },
     "provenance": "contributed",
     "credits": [
       {
