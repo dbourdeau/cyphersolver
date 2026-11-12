@@ -1,6 +1,8 @@
 # wackerbarth1717 - reading of the letter of 24 April 1717 (French), Wackerbarth to Flemming, Vienna
 
-Status: read in part by our key (188 of 207 cipher words = 90.8%). The decipherment of the time renders the whole cipher.
+Status: read from the decipherment of the time, which renders the whole cipher. The reading below is the check of that sheet
+with the rebuilt key on views 0037-0039: 193 of 207 cipher words = 93.2% under the one rule applied to the whole target at
+integration (12 Nov 2026, `integration_recount.py`); 188 of 207 = 90.8% by the contributor's count.
 **This reading is not blind**: we had seen the decipherment sheet before reading.
 
 Letter no. 15 ("Monsieur") of Wackerbarth to Jacob Heinrich von Flemming, Vienna, 24 April 1717. Dresden, HStA 10026 Loc.

@@ -1444,6 +1444,11 @@ PAGES = [
          blurb='A full page of 141 code groups enclosed to the Duke of Newcastle in August 1729 and never deciphered on the leaf (Huntington, Blathwayt papers, mssBLA 191). The same agent&rsquo;s other letters in the file carry interlinear decipherments; 942 code/gloss pairs from them rebuilt an alphabetical one-part French code of 379 values. Applied to the page it decodes 134 of 141 groups: the agent complains that Keene leaves him without orders during the accommodation and asks for instructions.',
          quote='&ldquo;Mandez-moi donc quelque ordre pour ma conduite.&rdquo;',
          rights='Huntington Library, San Marino, William Blathwayt papers addenda, via the Huntington Digital Library'),
+    dict(slug='wackerbarth1717', footer_date='November 2026', label='Wackerbarth 1715&ndash;17', year='1715&ndash;17', y=1716.5, place='Stralsund and Vienna &rarr; Vienna and Dresden', st='partial', stt='read in part',
+         title='Wackerbarth&rsquo;s cipher letters, 1715&ndash;1717',
+         blurb='Two French letters of the Saxon minister August Christoph von Wackerbarth hide their substance in numbers: one from the siege of Stralsund in November 1715, one from Vienna in June 1717. Brice Dudout rebuilt the key from the decipherments written between the lines of neighbouring letters and read both in part, 91.2% and 92.7% of the cipher words. The key&rsquo;s declared ground-truth test failed; each volume&rsquo;s key reads the other volume&rsquo;s letter. Anne-Simone Rous works on the same correspondence.',
+         quote='&ldquo;au point d&rsquo;en venir &agrave; une triple alliance entre l&rsquo;Empereur le Roy d&rsquo;Angleterre et le Roy&rdquo;',
+         rights='S&auml;chsisches Staatsarchiv, Hauptstaatsarchiv Dresden, 10026 Geheimes Kabinett, Loc. 00712/05 and 00713/01 (scans not reproduced)'),
     dict(slug='guastalla1717', label='Duke of Guastalla 1717', year='1717', y=1717.7, place='Guastalla, correspondent not named', st='solved', stt='key from the ciphertext',
          title='The Duke of Guastalla on a &ldquo;lettera reversale&rdquo;, 24 September 1717',
          blurb='A partly ciphered Italian letter of Antonio Ferdinando Gonzaga, Duke of Guastalla, catalogued with no decipherment and dated July: in a two-digit number cipher that Prabal Gupta reports finding from the letter alone, the duke refuses a condition that would be a silent abdication of his rights. About 90% of the cipher reads; ten code groups stay open.',
@@ -3368,6 +3373,7 @@ IMAGES['taulet1866'] = None
 IMAGES['ridolfi1646'] = None
 IMAGES['sega1591b'] = None
 IMAGES['bongars1597'] = ('bongars1597_lead.jpg', 'f. 360v: the second letter opens; the third line begins with the group that spells Brunswick', 'Burgerbibliothek Bern, Cod. B 149 (A) 452, f. 360v, via the Burgerbibliothek online catalogue (public domain)')
+IMAGES['wackerbarth1717'] = None
 IMAGES['ebers1664'] = ('ebers1664_lead.jpg', 'Image 138: code runs with the German gloss written above them', 'Riksarkivet, Stockholm, SE/RA/2113/2113.1/3/b/602, bildid R0003225_00138, via the Riksarkivet IIIF service')
 IMAGES['lilienthal1665'] = ('lilienthal1665_lead.jpg', 'Image 45, left page, lines 1&ndash;12: code with the gloss between the lines', 'Riksarkivet, Stockholm, SE/RA/2113/2113.1/1/36/82, bildid R0000814_00045, via the Riksarkivet IIIF service')
 IMAGES['lee1813'] = ('lee1813_lead.jpg', 'Lee to Monroe, 6 February 1813, head of page 2: numerals with the clerk&rsquo;s pencilled key letters and words', 'US National Archives, RG 59, Despatches from US Consuls in Bordeaux, microfilm T164 roll 3, frame 0109 (NAID 211586337), via the National Archives Catalog')

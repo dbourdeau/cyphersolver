@@ -53,3 +53,19 @@ What this does and does not show
   mechanical rule).
 - Letter of 24 April 1717: its reading is a check against the sheet of the time, not blind. The sheet had been transcribed
   (for test A) before the reading.
+
+Integration check, 12 Nov 2026 (PR #418; independent verification, then integration)
+- Stated plainly: the declared ground-truth test A' FAILED (0.339 against a bar of 0.60, margin 0.21 against 0.30). The
+  protocol required A' and B' both. Reading on B' alone (Avenant 3) is a rule changed after the result. The verdict stays
+  "weak". A' could not be re-run (lexicon and corpora are not in the folder); its figures match MESURE2.json.
+- Reproduced: frozen hashes (PROTOCOLE.md excepted, as declared); keys b and c rebuild byte for byte from the glossed views;
+  a second decoder gives the same Relation XXII; view 0091 with an own scorer and the project's French model: z = 7.3,
+  above all 200 permuted keys (the PR's own criterion gave 11.5).
+- New evidence, separate from the failed test and not claimed in the PR: the cross-volume check. K1715, learnt only from
+  the 1715 glosses of Loc. 00712/05, turns Relation XXII (Loc. 00713/01) into French: 90% coverage, z = 8.8 over all 2,939
+  groups. Key c likewise decodes the 1715 letter (z = 5.6). Every permuted-key control is beaten on every document with
+  either key. K1715's glosses confirm three section-B proposals (4 = x, 76 = st, 20 = b) and give 306 = Vienne.
+- The order of events (hash before run, amendment before the remaining transcriptions) rests on the contributor's record:
+  all commits and timestamps are of 11 Nov 2026.
+- Counts: one rule for the whole target, integration_recount.py (Relation XXII 664/716 = 92.7%; 24 April key check
+  193/207 = 93.2%; 20 Nov. 1715 841/922 = 91.2%).

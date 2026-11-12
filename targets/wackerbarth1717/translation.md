@@ -2,7 +2,8 @@
 
 Translation of `reading.md`, the clear and the cipher words together, as one text. Marks: [x] = restored word; <...> = unresolved
 (number given); (...) = our gloss; "…" = clear text not transcribed in full. Probable words are not marked here (see
-`reading.md`). The reading is partial (89.5%), so this translation is of a partial reading.
+`reading.md`). The reading is partial (92.7% under the target's one rule; 89.5% by the contributor's count), so this translation is of a partial reading.
+Integration note (12 Nov 2026): <306> in view 0090 is Vienna, by a gloss of the time in the 1715 volume (Loc. 00712/05, view 0389).
 
 **[view 0089]** Although I have so far told Your [Majesty] that, to all appearances, the Imperial Court would try to gain time,
 which might enlighten it on the outcome of the campaign in Hungary, before it made known its true sentiments regarding the

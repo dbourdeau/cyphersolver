@@ -1,6 +1,11 @@
 # wackerbarth1717 - reading of Relation XXII (French, spelling of the copy), Vienna 14-16 June 1717
 
-Status: read in part (641 of 716 cipher words read by sense = 89.5%, under the 95% rule).
+Status: read in part. **664 of 716 cipher words = 92.7%** under the one rule applied to the whole target at integration
+(12 Nov 2026, `integration_recount.py`): a word counts when every number under it has a value from a gloss of the time, in
+either volume. The contributor's own count below (641 of 716 = 89.5%) is stricter on one point: it leaves out the 23 words
+marked [restored] whose only missing value is 4 = x, 76 = st or 306 = Vienne, which the glosses of the 1715 volume supply
+(so "à ‹306›" in view 0090 reads "à Vienne"). It also counts {Czar} in view 0097, which rests on a number probably misread;
+the one rule does not. The marks in the text are the contributor's and are unchanged.
 
 Relation XXII of August Christoph von Wackerbarth to King Augustus II ("Sire"), copy, Vienna, 14-16 June 1717. Dresden,
 Sächsisches Hauptstaatsarchiv, 10026 Geheimes Kabinett, Loc. 00713/01, ff. 71-80v (views 0089-0099). The letter mixes clear

@@ -1705,6 +1705,22 @@
    }
   },
   {
+   "id": "k-wackerbarth-s1",
+   "label": "Wackerbarth cipher S1, 1715-1717: French letters in 1-2 digit numbers with a 3-digit nomenclator (rebuilt by Brice Dudout from the glosses of the time)",
+   "kind": "rebuilt here",
+   "by": "Brice Dudout",
+   "year": 1717,
+   "note": "Rebuilt twice from interlinear glosses only: key c from Dresden HStA 10026 Loc. 00713/01 (1717) and K1715 from Loc. 00712/05 (1715); 43 of their 47 common numbers agree and each reads the other volume's letter. The declared ground-truth test of key c failed (0.339 against a bar of 0.60); a held-out language test and the 1715 letter's own test passed. targets/wackerbarth1717/key.tsv and s15_key.tsv."
+  },
+  {
+   "id": "k-flemming-k0",
+   "label": "Flemming key K0 (Dresden HStA 10026 Loc. 00675/10, view 0080)",
+   "kind": "archive key",
+   "by": "",
+   "year": 1717,
+   "note": "By Brice Dudout's check it decodes the glossed Nov.-Dec. 1717 letters of Loc. 00713/01 as glossed; a different key from Wackerbarth's S1."
+  },
+  {
    "id": "k-kurtz",
    "label": "R3811 glosses",
    "kind": "contemporary key",
@@ -5783,6 +5799,12 @@
    "note": "one-to-one annealing"
   },
   {
+   "key": "k-wackerbarth-s1",
+   "target": "wackerbarth1717",
+   "how": "rebuilt from",
+   "note": "rebuilt by the contributor from the interlinear glosses of the time in both volumes; Relation XXII and the letter of 20 Nov. 1715 read in part with it"
+  },
+  {
    "key": "k-kurtz",
    "target": "kurtz1639",
    "how": "rebuilt from",
@@ -7567,6 +7589,10 @@
   {
    "source": "s-cyphersolver",
    "key": "k-ebers1664"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-wackerbarth-s1"
   },
   {
    "source": "s-cyphersolver",
@@ -9442,6 +9468,11 @@
    "key": "k-lasry-gl",
    "target": "memoire1560",
    "note": "Lasry's GL.htm Henri II / Charles IX tables checked: different symbol sets"
+  },
+  {
+   "key": "k-flemming-k0",
+   "target": "wackerbarth1717",
+   "note": "compared by the contributor with S1, with its shifted variant: not the key of the 1715 and spring 1717 letters (NOTES)"
   },
   {
    "key": "k-lasry-gl",
