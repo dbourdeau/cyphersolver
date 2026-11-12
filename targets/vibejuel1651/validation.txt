@@ -1,0 +1,76 @@
+vibejuel1651 - validation (contributor's pre-registered held-out test, not docs/_validate.py)
+Summary: system VALIDATED by the second test. On a held-out set never opened before (5 images, 55 words, 339 numbers), the
+decode scores M1 = -2.713 (mean log-probability per character under a 4-gram model of old Danish), against at most -3.555 for 300
+controls that get exactly the same per-letter optimisation: margin 0.841 over the required +0.30. A first test had failed
+(margin 0.21); its cause was found and is given below. Reading counts (reading.md) are separate from the measurements.
+
+Files: frozen/ (protocols in French, hashes, scripts, the held-out transcriptions as frozen, the outputs).
+  frozen/protocole/PROTOCOLE.md, PROTOCOLE.sha256, RESERVE.sha256, MESURE.out, RESERVE-dechiffrement-brut.txt   (test 1)
+  frozen/protocole/PROTOCOLE-2.md, PROTOCOLE-2.sha256, RESERVE-2.sha256, MESURE-2.out                        (test 2)
+  frozen/scripts/vdec.py, lm.py, mesure.py, mesure2.py, build_lex.py; frozen/protocole/lexique.txt
+  frozen/working/transcr/ (version-0 transcriptions: img078 = development, res074/077/079 + reserve.txt = held-out set 1,
+  r2_081/083/084/087/090 = held-out set 2)
+Reproduce from frozen/ (the corpus is not included, see below):
+  python3 scripts/mesure2.py corpus working/transcr/r2_081.txt working/transcr/r2_083.txt working/transcr/r2_084.txt \
+      working/transcr/r2_087.txt working/transcr/r2_090.txt
+  python3 scripts/mesure.py corpus protocole/lexique.txt working/transcr/reserve.txt
+  shasum -a 256 -c protocole/PROTOCOLE-2.sha256 protocole/RESERVE-2.sha256   (skip the last line of each file, a timestamp)
+Corpus of the language model (corpus/, 11 files, SHA-256 in protocole/PROTOCOLE.sha256; not included, about 12 MB): the
+archive.org full texts danskemagazin00unkngoog, danskemagazin01unkngoog, danskemagazin02unkngoog, bub_gb_5btDAQAAMAAJ (Danske
+Magazin, 1745-52) and kongchristianden01chriuoft ... kongchristianden07chriuoft (Kong Christian den Fjerdes egenhaendige Breve).
+
+The unit. Arkivalieronline unit 261583 (95 images; all images 57-95 checked): letters of Peder Vibe to Peder Juel 1649-1655 with
+cipher on images 62-93, and three letters of [O.] Krag of 1648 (images 57, 58, 60) in another system. Only one letter carries a
+decipherment of the time: N. 319 (image 78), faint interlinear letters over about a third of its words.
+
+0. System, found on image 78 (development set, before any test): each cipher word = opener + body; body number = rank of the
+   letter + k; the opener gives k; three-digit numbers between the words are a nomenclator. The gloss of the time on image 78
+   agrees with the mechanical decode wherever it is legible (desbau-scheret, dreng, brefue, kunde, forscha[ffe], charles ...).
+
+1. First test (PROTOCOLE.md, hashed 11 Nov 2026 14:44) - FAILED, reported.
+   - Hypothesis frozen: ONE opener table for the whole unit, the one of N. 319 (24-29 -> 0, 30-34 -> 1, 35-39 -> 2, 1-3 -> 3), and
+     a 23-letter alphabet without w.
+   - Held out: images 74 (N. 330), 77 (N. 316) and 79 right (N. 334), never opened before; transcribed number by number before any
+     decryption and hashed (RESERVE.sha256, 14:52): 54 words, 335 numbers.
+   - Criterion C1: M1 >= best of 600 controls + 0.30 (A opener tables shuffled, B random k per word, C body alphabet permuted).
+   - Result (MESURE.out): M1 -3.068; best control -3.281 (A): margin 0.21 < 0.30, C1 FAILED (the lexical C2 failed too).
+   - Cause, found after the measurement and outside it: N. 316 and N. 334 read with the frozen table ("til at faa ... signet ret
+     udstucket", "deris instruction"), but N. 330 does not. N. 330 (20 Sep 1651) is in the OLD cipher, which Vibe names himself on
+     image 62 ("woris forige gamble Ciffres"): a cyclic 23-letter alphabet with k = -(opener mod 3). The hypothesis "one table for
+     the whole unit" was wrong, not the shift-per-word system. Set 1 was not measured again.
+
+2. Second test (PROTOCOLE-2.md, SHA-256 62f533215e6f50db2f83079607851d27a68007e8821f46fff3076ab889d8ce4c, hashed 14:54 with
+   mesure2.py 53cd0968..., before the set was opened).
+   - Hypothesis: shift per word, k given by the opener through a table PROPER TO EACH LETTER, learned on the letter itself
+     (k in -4..4 for each opener value, maximum likelihood under the language model); 23-letter alphabet.
+   - Controls, 100 draws each, with EXACTLY the same per-letter optimisation (seed 20261112): C body alphabet permuted; D body
+     numbers shuffled within each word; E bodies replaced by random numbers 1-23 of the same length.
+   - Calibration on data already seen (image 78 + set 1): M1 -2.442, best control -3.685.
+   - Held out: images 81, 83, 84, 87 of unit 261583, never opened by us, one letter per image; image 90 added because 81-87 gave
+     only 261 numbers (< 300). Transcribed number by number before any decryption, hashed (RESERVE-2.sha256, 14:59).
+   - Criteria: C1 M1 >= best control + 0.30; S the raw decode gives at least two connected Danish sentences. VALIDATED if C1 and S.
+   - Result (MESURE-2.out, one run): 55 words, 339 numbers; M1 -2.713; best controls C -3.729, D -3.555, E -3.655:
+     **C1 passed, margin 0.841**. S passed (image 83: "... til persuadere [454] att [770] hafuer resolueret [463] mod [217]. Der
+     sigis dog for wiss att hand skal were n? igen nobiliteret aff [222] udi [770] och faaet gods ..."; image 90: "... effter den
+     befalung [397] derom bekom[met] haffuer ... huad [879] bref som blef opbrut indholt").
+   - The opener tables learned blind were those of N. 319 in four letters of five (30-34 -> 1, 35-37 -> 2, 1-3 -> 3).
+
+What had been seen of set 2 before the measurement (declared in the working notes):
+   a. One word of image 87 (30.19.11.18.10.7.20, "skrift") was deciphered in the head while transcribing, before the hash; it is
+      noted in the frozen file r2_087.txt.
+   b. Daniel Bourdeau's catalogue entry had described the unit from contact sheets; we had not opened images 81-90.
+   c. Set 1 had been seen and decoded after test 1; it was used for calibration only, not in the measured set.
+
+After the measurements (not measured; reading only):
+   - Re-reading at native zoom showed that the new alphabet has w and ø: a ... u w x y z ø (w = 21 ... ø = 25). The measured
+     23-letter alphabet confused w/x/y/z, hence "xil", "xere", "xurtx" in the raw decode of set 2 (wil, were, Würtz).
+   - The openers "out of table" (4, 12, 22, 26) of set 2 are division errors (2.21... skibe, 30.14.24.12... nyligen); with them
+     corrected the table of N. 319 holds without exception in every letter of the new alphabet (1651-1655).
+   - The old cipher (N. 330 and the letters of 1649-1650) was read with k = -(opener mod 3) on the cyclic alphabet: 24/24 words
+     of N. 330.
+   - Set 2 re-read: 51 words, 46 certain, 4 probable, 1 restored = 98.0% (71% before the re-reading). Set 1: 55/55 = 100%.
+   - Every correction is listed with its reason in reading.md; the frozen transcriptions are unchanged, the corrected ones are
+     transcription.txt.
+
+Scope. The measurement validates the system (shift per word chosen by the opener). The two fixed tables of key.tsv rest on the
+measurement plus the reading of all 21 letters or pages. The nomenclator is not covered: none of its 143 codes is identified.
