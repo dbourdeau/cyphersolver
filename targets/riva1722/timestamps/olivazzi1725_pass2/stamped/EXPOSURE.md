@@ -1,0 +1,11 @@
+# EXPOSURE LOG b77 Olivazzi pass 2 (times UTC, from date -u)
+- 2026-11-11 22:14:41 start. Listed folder names only (b70, b76, stamps).
+- 22:14 dedup.tsv: Olivazzi row (line 21) and header only.
+- 22:15 b76 LOG.md: grep for URL/manifest lines only, cut to 400 chars. Incidental exposure: line 18 ("about 55 groups, never attacked: CANDIDATE") and line 28 (Starhemberg code numbers 264/288/276/229/228, no values). No Olivazzi transcription, reading or key content seen.
+- 22:15 b70 PARSER.md read in full (permitted). stamps/stamp.sh read.
+- 22:15 b76 scripts/fetch.py read (tile fetch pattern only). Not run; own copy written in b77/scripts.
+- 22:15 IIIF manifest fetched (edl-jarvis); 22:16 2r and 2v fetched at full scale, 1,024 px tiles, 0 failed tiles.
+- 22:17 to freeze: images only (line crops in crops/ and crops2/, 1:1; six 2x zooms). No b76 L1725 file, no KEY, no READING opened.
+- FREEZE: see work/FREEZE.txt (md5 + UTC time of tx/olivazzi1725_passB.txt).
+- 22:20:36 (after freeze) KEY_K3.tsv, b70 scripts dec.py/ledger.py/baseline.py/agree.py.
+- 22:22:15 (after freeze and after the single pass B decode) b76 L1725 tx/olivazzi_17apr1725_passA.txt, tx/FROZEN.md5, tail of work/LEDGER_K3.txt (totals lines). b76 L1725 READING.md never opened.

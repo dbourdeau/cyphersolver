@@ -1,0 +1,37 @@
+# READING b77: Giorgio Olivazzi to Giuseppe Riva, Milan 17 Apr 1725 (Estense, Autografoteca Campori, O, Olivazzi, cc.1-2; cipher 2r-2v). Consensus text, key K3 unchanged (md5 65b083be69e3a4c6219c65566aee20fc).
+Not a new break: K3 is the existing Riva-Vienna key. This is a second, blind transcription and a consensus reading. Clear text is only roughly read. [..] = code or unread. Training only: nothing here is counted S beyond the ledger.
+
+## Figures [measured]
+- Pass B blind (frozen md5 c4cc509ac0bf5823f1944e56b4b9e0f9, 2026-11-11 22:20:30 UTC): S 268 + E 104 + N 6 = 378; strict 268/378 = 70.90%; 1 struck excluded. E = 45 codes + 34 overrides + 13 doubts + 12 unkeyed = 104.
+- Consensus (md5 95845a8ebde2da401f4fd9fe65248ac2): 2r S 142 + E 37 + N 0 = 179 (79.33%); 2v S 136 + E 57 + N 5 = 198 (68.69%); ALL S 278 + E 94 + N 5 = 377; strict 278/377 = 73.74%; 1 struck excluded. E = 42 codes + 40 syllables (27 overrides + 13 doubts) + 11 unkeyed + 1 word doubt = 94. Codes with a K3 value counted S (labelled, not strict): 283/377 = 75.07%.
+- Pass A (b76) for comparison: 259/376 = 68.88%.
+- Shuffled keys, seed 1725, b70 quadgram scorer: consensus real -3.910; shuffled mean -4.724, max -4.290; 0/5000 shuffles reach real. Pass B: real -3.939; mean -4.724; max -4.293; 0/5000.
+
+## Italian reading (cipher in bold sense, clear text plain; editorial word division)
+2r: di [259] e di me, e secondo l'ordine delle cause comincio da chi dovrebbe per altre ragioni esser l'ultimo ... direbbe buoni uomini, cioè [i re-re-n-mi] e [359] han tirato dal loro partito [l'Ar-cu-292] e tutt'uniti han sempre pensato a farmi contrasto; e perché chi si regola con giustizia non si obbliga se non i galantuomini, e questi son po[chi], e fa contrarj quelli che non lo sono, che son molti, così ho [179] [chi] poterle far male, e non mi è stato sin [50_][5_] [178] seguito far bene, massimamente perché Confalonieri non è stato assistito che da [341], che ha buon cuore per me ma non poteva far certe figure. Dopo aver provate tutte le strade possibili in un anno e mezo, ora la [181] nostra mi ha fatto raccomandare, e saprò in breve con qual frutto. Il contrasto che mi si fa non ha per oggetto quelle mercedi delle quali si tratta: questo è la scusa; il vero disegno è di tenermi(?) in mal concetto perché [to] non possa pretendere avanzamento né [178] autorità; e preso il [300] per farmelo contrario, [352] e [354] si sono serviti dell'inquisizione che [do] sarei stato il relatore [di] [259] il Padrone [143]; non li è voluto di più per farmi [177] mille e poi mille torti ogni giorno, che mi sono [0_] penosi [ma u] degna cagione.
+2v: Vengo a [259] Serenissimo, e distinguo tre interessi. Per [121] si è torna[ta ..] [130] esibire al [219] sotto certe condizioni che non sono [..] una piazza che tratti e donne che ascolti per il [300] [e bu-to se di ..]. Il male è [360] lo seconda, parte per suo fratello, con il [219] e [..], per sostenersi unito [16] [300]. Non ho altra speranza se non che Dio assista la ragione ... Se cotesto [233] [236] scrivesse forse gioverebbe. L'altro è del [170] [196] e [de] il [300], e così [a-rra 131 to] che [te]mendo di doverlo lasciare per toglier[lo] al Padrone [..] ha sino proposto sotto mano di mandare una Arciduchessa [..] [300] [50_]va in [164], e qualche amico mi scrive che vi possa resta[r] [77] [341]; non ne dice [80_], né mi parlano poi di chi debba venire. Il 3o interesse è per le a[que] [160], di e quest[..] [309] fanno il diavolo [con]tro del Padrone. Gran caso pare che sia un [uno?] [208] riconciliato [a] cui si voglia far sovvenire le vendette transversali: mal esempio. Mi resta ancora questo poco sito, me ne approfitto: [334] sì bestia e sempre [..] talento, [341] sempre onorato [..] e conosciuto, freddo, [359] [si-ma-to] ma opera in ciò che può.
+
+## English gist [derived]
+Olivazzi tells Riva that a party of opponents ("good men", he says with irony, naming coded persons) has drawn others to its side and has always worked together to obstruct him. Whoever acts justly obliges only honest men, and those are few. Confalonieri got help only from [341], who is well disposed but could not go far. After a year and a half of trying every road, a coded patron has now had him recommended and he will soon know the result. The dispute is not really about the payments at issue: that is the pretext. The real aim is to keep him in bad repute so that he cannot claim promotion or authority; they turned [300] against him and used the Inquisition, alleging he was the informant of the Duke's side ("il Padrone"); he suffers a thousand wrongs a day.
+He then sets out three interests. First, an offer to [219] under conditions, a post "that negotiates, and women who listen", with [300] involved and seconded partly for his brother's sake. Second, an affair of [170][196]: fearing to lose something to "the Padrone", someone has gone as far as proposing under hand to send an Archduchess; a friend writes about who might stay; nobody tells him who is to come. Third, the waters (if 02 = que): certain people "raise hell against the Padrone". He closes with remarks on a reconciled person and "cross vendettas: a bad example", and a short character note on [334], [341] and [359].
+
+## Proposed identifications (training only, never counted S)
+| token | proposal | contexts | status |
+|---|---|---|---|
+| 5_ | CHI | "son po[5_]" (2r.L6); "di [5_] debba venire" (2v.L14); also 2r.L7, 2r.L8 | [derived] 2 firm contexts |
+| x1 / x4 | ha / ho (PARSER x rule holds in this hand, sign written +) | "che ha buon cuore" (2r.L9); "mi ha fatto raccomandare" (2r.L12); "ha sino proposto" (2v.L12); "così ho" (2r.L7) | [derived] |
+| 142 | PADRONE (already K3.1) | "il 142 [143]" (2r.L18); "al 142" (2v.L11); "[con]tro del 142" (2v.L16) | [derived] consistent in 3 contexts |
+| 259 | the Duke / His Highness (Duca, S.A.) | "di 259 e di me" (2r.L1); "relatore di 259 il Padrone" (2r.L18); "Vengo a 259 Serenissimo" (2v.L3) | [unverified] hypothesis |
+| 341 | a named friend or patron (person) | "assistito che da 341 che ha buon cuore per me" (2r.L9); "341 non ne dice" (2v.L14); "341 sempre onorato" (2v.L19) | [unverified] class only |
+| 300 | a person in authority (governor or minister) | "preso il 300 per farmelo contrario" (2r.L16); "per il 300" (2v.L5); "unito .. 300" (2v.L7); "il 300" (2v.L10) | [unverified] class only |
+| 219 | a person or body receiving the offer | "esibire al 219 sotto certe condizioni" (2v.L4); "con il 219" (2v.L6) | [unverified] class only |
+| 178 | a quantifier or adjective (e.g. maggior/alcuna) | "sin .. 178 seguito far bene" (2r.L8); "né 178 autorità" (2r.L16) | [unverified] |
+| 02 | que (crossed 0 q-row, by analogy with K3.1 01 = qua) | "le a-02" = acque (2v.L15) | [unverified] 1 context only: below the 2-context bar |
+| 50_ | gio | "50_ va" = giova (2v.L13); "sin 50_ 5_" (2r.L8) does not fit | [unverified] fails the 2-context bar |
+
+## Limits
+- Adjudication was key-aware (done after the pass B decode). Blindness holds only for the frozen pass B.
+- 2v right edge runs under the facing leaf: 5 units lost (N), and several line-end words are incomplete.
+- Clear text was read roughly and is not a diplomatic transcription; "Confalonieri" and "Arciduchessa" come from cipher units, each read identically by both passes except 2v.L12 units 16-18 (adjudicated for B).
+- Unread stretches: 2r.L3 "i re re n mi", 2r.L4 "l a r cu 292", 2v.L5 "e bu to se di", 2v.L10 "a ra 131 to".
+- Code identities for people are classes, not names. No external sources were consulted.
