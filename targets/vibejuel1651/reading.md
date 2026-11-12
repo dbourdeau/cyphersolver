@@ -80,7 +80,7 @@ for the whole target.
 | **Total** | 11 letters or pages | **149** | **132** | **14** | **1** | **2** | **98.0%** | **73** |
 
 - **Cipher words given a value (certain + probable): 146/149 = 98.0%.**
-- **Read share, every code counted as a hole: 146/(149 + 73) = 65.8%.** Under 95%: read in part.
+- **Read share, every code counted as a hole: 132/(149 + 73) = 59.5% (certain words only); with the 14 probable words 146/222 = 65.8%.** Under 95%: read in part.
 - Held-out set of test 2 (images 81, 83, 84, 87, 90), re-read after the measurement: 50/51 = 98.0% (the 55 units of the
   measurement become 51 words once split words are joined).
 - Integration recount (12 Nov 2026): image 77 has 22 cipher words, not 23; image 93 has 24 codes, not 26; the code 545 that opens

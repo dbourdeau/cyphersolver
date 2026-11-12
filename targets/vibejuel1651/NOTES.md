@@ -63,13 +63,13 @@ timestamps are self-declared.
 ## Reading (`reading.md`, `translation.md`)
 
 - 149 cipher words in letters: 132 certain, 14 probable, 1 restored, 2 unresolved. Given a value: 146/149 = **98.0%**.
-- 73 nomenclator codes (49 different) have no value. Counted as holes, the read share is **146/222 = 65.8%**: read in part.
+- 73 nomenclator codes (49 different) have no value. Counted as holes, the read share is **132/222 = 59.5%** on certain words only (146/222 = 65.8% with the 14 probable words): read in part.
   (The pull request gave one figure for both ciphers together, 390/543 = 71.8%, with 143 codes; see the recount below.)
 - Re-read after the measurements: held-out set 2, 50/51 = 98.0%.
 - Content, 1651-1655: a seal of #876 to be copied from wax impressions (N. 316); a servant debauched to get a packet of letters,
   and work to intercept letters of #872 (N. 319); #353 and #397 leaving for #770 with an instruction, and a border meeting (N. 334, 1653); Würtz said to
   be ennobled by #222 in #770 (image 83); fireships built by #222 (N. 333); an opened letter of #879 (N. 336, 1654); whom #879
-  trusts most (N. 143/321, 1654); a design that leaves the States General perplexed, and ships to lie in the Sound (N. 167, 1655).
+  trusts most (N. 143/321, 1654); a design that leaves the States General perplexed, and something to lie in the Sound (N. 167, 1655).
   Who does what is mostly behind the codes.
 
 ## Prior art
@@ -122,6 +122,13 @@ and 83 fetched from api.rigsarkivet.dk). What that found, and what was changed h
   with the valet of #254, who is to debauch the servant (the page had the valet); "an embassy" for #353 and #397 was more than
   the reading says; the gloss is "of the time", not "a clerk's"; N. 316 and N. 319 are dated 1651 by the contributor only; the
   codes stand for people and places by the sense only. An independent reader is still owed.
+
+### Claims review by a second reader (12 Nov 2026)
+
+- The published read share now counts certain words only: 132 of 149 (59.5% with codes as holes). The 14 probable words (a corrected number, a
+  re-divided tick, a supplied letter or an unusual spelling) are not counted, by the rule used for every target of
+  this round; the figure with them is given once.
+- Wording corrected on the page from this review; see the commit of 12 Nov 2026.
 
 ## Remaining gaps
 

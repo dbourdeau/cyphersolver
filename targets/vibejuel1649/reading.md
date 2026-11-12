@@ -80,7 +80,7 @@ for the whole target.
 | **Total** | 10 letters or pages | **250** | **212** | **32** | **1** | **5** | **97.6%** | **68** |
 
 - **Cipher words given a value (certain + probable): 244/250 = 97.6%.**
-- **Read share, every code counted as a hole: 244/(250 + 68) = 76.7%.** Under 95%: read in part.
+- **Read share, every code counted as a hole: 212/(250 + 68) = 66.7% (certain words only); with the 32 probable words 244/318 = 76.7%.** Under 95%: read in part.
 - Integration change (12 Nov 2026): the last word of image 62 was unresolved in the PR (7 certain, 1 unresolved of 8) and is now
   probable, MALCONTANT (see the list). The PR's totals for these letters were 250 words, 212 certain, 31 probable, 1 restored,
   6 unresolved, and 68 codes.

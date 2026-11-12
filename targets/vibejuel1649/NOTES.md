@@ -60,7 +60,7 @@ Vibe's remark on image 62. No gloss of the time exists for this cipher.
 ## Reading (`reading.md`, `translation.md`)
 
 - 250 cipher words in letters: 212 certain, 32 probable, 1 restored, 5 unresolved. Given a value: 244/250 = **97.6%**.
-- 68 nomenclator codes (22 different) have no value. Counted as holes, the read share is **244/318 = 76.7%**: read in part.
+- 68 nomenclator codes (22 different) have no value. Counted as holes, the read share is **212/318 = 66.7%** on certain words only (244/318 = 76.7% with the 32 probable words): read in part.
   (The pull request gave one figure for both ciphers together, 390/543 = 71.8%.)
 - Per letter, on cipher words alone, images 64 (93.3%) and 69 (92.0%) are under 95%.
 - Content, the Danish court seen from Copenhagen, 1649-1651: who obtains what from #211 and who is reconciled with whom (image
@@ -121,6 +121,13 @@ and 83 fetched from api.rigsarkivet.dk). What that found, and what was changed h
   writing 32-34 for 1-3 was not from the sources and was cut; the gloss on N. 319 is "of the time", not "a clerk's"; the number
   compared with the image at verification (image 74) is a certain word, not one of the 32 probable ones; Fryxell is cited as the
   contributor cites him; the codes stand for people and places by the sense only. An independent reader is still owed.
+
+### Claims review by a second reader (12 Nov 2026)
+
+- The published read share now counts certain words only: 212 of 250 (66.7% with codes as holes). The 32 probable words (a corrected number, a
+  re-divided tick, a supplied letter or an unusual spelling) are not counted, by the rule used for every target of
+  this round; the figure with them is given once.
+- Wording corrected on the page from this review; see the commit of 12 Nov 2026.
 
 ## Remaining gaps
 
