@@ -55,6 +55,8 @@ was a count coincidence and is withdrawn.)
 
 ## The clear pages do not decipher the ciphers (as far as tested)
 
+*Withdrawn for system B and the 5 Oct 1764 letter on 12 Nov 2026 (see the last two sections): the clear on 120 is the plaintext of 118-119R, and a key built from it passes a held-out test. Still standing for system A (6 Mar 1764 and 15 Nov 1765): issue #437 reports the opposite, but its key and scripts are not in the repository (see below).*
+
 Two pairs transcribed in full:
 
 | Pair | Cipher | Clear | Ratio |
@@ -165,3 +167,48 @@ identify which K 259 images hold the 3 March 1765 letter and compare them with t
 ## Bryan Payne / Codex contribution, 28 October 2026
 
 Additional research is preserved in [payne2026/NOTES.md](payne2026/NOTES.md), with a concise [report](payne2026/REPORT.md). It adds the 870-group preliminary May transcription, preliminary tables 218–220, samples of the 162–168 vocabulary key, the public F474 page map and archival leads. Key 219 positively matches the separate printed February 1771 fragment cited on the sheet: [source and literal readings](payne2026/KEY219_PROVENANCE.md). This supplies a fragment decode only; neither the May letter nor the whole 1771 letter is claimed read. Existing research above is preserved; the contribution's provisional 126 pairing does not replace the positioned-gloss work above. Failed-control outputs remain unaccepted.
+
+## 12 Nov 2026 — system B key rebuilt and passed a held-out test; 121-124L read in part (Brice Dudout, Claude Opus 5.5)
+
+Worked in `dudout/` (see `dudout/README.md`). The 120 clear is the plaintext of the 5 Oct 1764 cipher (118-119R)
+(it carries struck and rewritten phrases and omits the closing formula, so it is a draft of the letter, not certainly a
+clerk's decipherment; the contributor calls it the decipherment): the cipher's repeats fall at the clear's repeats (155.453 = Votre Majesté at 0.36/0.52/0.90/0.97 vs 0.34/0.52/0.93/1.00;
+403.240.709 = dis-po-si- at 0.21/0.73 vs 0.21/0.74). System B is a fixed two-part syllabic nomenclator with homophones
+(614 n, 119 r, 354 e, 136 de, 453 majesté, 54 interet; 549 = apostrophe, 9 = j; not all groups under 100 are nulls).
+A key built by anchored EM alignment on 118.00-119L.06 only was measured once, as pre-registered, on the held-out
+119L.07-119R.05 (328 groups): 0.563 against 400 controls (max 0.083). With 25 values added afterwards from context,
+121-124L (to "mon cher Comte": Count Osterman, the Empress's support for the King at the coming Diet, Düben's failure
+"ce n'est assurément pas ma faute") is read in part: 442 of 744 word tokens sure (59.4% by the README rule: the 77 probable
+words use the 25 context values or restored letters and are holes); the contributor's sure + probable count is about 70%.
+This withdraws, for system B, "the clear pages do not decipher the ciphers" and the 5 Oct "not a decipherment" verdict above
+(the draft is the cipher's plaintext).
+
+### System A claim of issue #437 (Brice Dudout, 11 Nov 2026), not verifiable here
+
+The issue says that both system A letters (6 Mar 1764; 15 Nov 1765) were deciphered at the time, that the gloss of 15 Nov
+1765 runs ahead of the cipher by one to three lines, and that one fixed key (key_c01, 217 values, rebuilt from image 96 and
+the clear 97R-99L) reads both (coverage 0.544 against controls max 0.061; 0.261 against 0.043). Its key, its transcription of
+101 d and its scripts are not in the repository nor in PR #477. Not checked: the key, the coverage figures, the 28 anchors, the
+offset beyond six printed lines, the "unglossed lines". Checked on this repository's own transcriptions, without his key
+(12 Nov 2026): over the whole 15 Nov 1765 letter, of 450 pairs (cipher group seen 6 times or more against a gloss word seen
+4 times or more, by position in the text), the two best are exactly the issue's values, 540 = que and 218 = de (mean position
+gap 0.0103 and 0.0114; 100 shuffles of the cipher give a best of 0.0122 or worse), so these two groups behave as fixed
+values through the letter; for 6 Mar 1764, 107 = a ranks third and 218 = de, 540 = que are not distinguishable from shuffles;
+the six decoded lines printed in the issue use one table without a conflict (19 values used two or three times) and
+124R.07 decodes "de rien ajouter a ce que j'ai eu l'honneur" where the gloss line 124R.07G begins "a ce que", the direction
+of the claimed offset. This is support for "values do not vary" on two values, not a decipherment. The statement "values
+vary through the text" above is left as written until the key is shared; catalogue 1616 is not changed to "existing
+decipherment".
+
+### Integration check (12 Nov 2026)
+
+Reproduced: `dudout/scripts/measure.py` (seed 450, start 978) gives M 0.5633 on 328 held-out groups (255 known), controls
+max 0.0833 (permuted keys) and 0.0756 (shuffled text), margin 0.480; my own decoder gives the same decoded string as
+`measure_result.json`. The frozen SHA-256 values match all ten present files (the clear on 120 is Daniel's file, unchanged).
+No held-out group uses a key value that is absent from the build part (0 of 255). The order of events (hash list before the
+measure) is by the contributor's record. anchors_final.json holds 29 entries, not 26. Corrections made: the 120 clear is a
+draft (above); 121-124L strict share 59.4% (70% labelled the contributor's); the contributor's own "Status: read in part"
+line in `dudout/README.md` was reworded; the target status stays **in progress** because system A and 40% of 121-124L are open
+without an outside blocker. Not checked: the held-out and build transcriptions against the Riksarkivet images; the 121-124L
+reading beyond the sample read. No write-up page is written until system A or the escalation steps are done (a system-B page
+is owed if the maintainer wants one). The 25 post-measure values are not validated by a second held-out text.

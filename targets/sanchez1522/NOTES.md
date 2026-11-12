@@ -420,7 +420,7 @@ Closed items (moved out of Remaining gaps):
 - R9635 four uncertain words of the decipherment ([?bastar], [?tenido], [?Menorami], [?Lucerna]) - blocker: illegible; cramped court hand at DECODE's resolution
 - R9613 and R9641: three and two uncertain words of their decipherments ([?nescia], [?nemora], [?sus pagos]; [?conversacion], [?vera]) - blocker: illegible; fast cursive at DECODE's resolution
 - R9593 (5 March 1522) f. 27r ll. 26-33, f. 27v ll. 11-13 and about twenty open code groups (xe, vub, lud, fug, la, lif, ni, fu, sag, nif, ram, tag, zom, fag, pil, dug, nad, mug, tem, nog, ca, ce) - blocker: no-key-material; read sign by sign 23 Oct 2026 (r2o), groups absent from the published key and mostly met once, no decipherment bound or imaged, not in CSP Spain 2
-- the other Sánchez records of 9/23-9/26, 48 records (some duplicates: R9626/R9627, R9628/R9629; R9625 and R9638 mostly clear): R9594, R9595, R9596, R9597, R9598, R9599, R9600, R9601, R9602, R9603, R9604, R9606, R9607, R9608, R9609, R9610, R9611, R9612, R9614, R9615, R9616, R9617, R9618, R9619, R9620, R9621, R9622, R9623, R9624, R9625, R9626, R9627, R9628, R9629, R9630, R9631, R9632, R9633, R9636, R9637, R9638, R9639, R9640, R9643, R9647, R9651, R9655, R9657 - blocker: not-attempted; no decipherment imaged (r2i); R9594 is next in date order (5 pp., = CSP 396, whose decipherment is in the Gayangos papers); each readable sign by sign with the key as R9593 was
+- the other Sánchez records of 9/23-9/26, 47 records not read (R9607 read in part 12 Nov 2026; R9594, R9616, R9617, R9626, R9631, R9632, R9633, R9636, R9639, R9651 triaged only) (some duplicates: R9626/R9627, R9628/R9629; R9625 and R9638 mostly clear): R9594, R9595, R9596, R9597, R9598, R9599, R9600, R9601, R9602, R9603, R9604, R9606, R9608, R9609, R9610, R9611, R9612, R9614, R9615, R9616, R9617, R9618, R9619, R9620, R9621, R9622, R9623, R9624, R9625, R9626, R9627, R9628, R9629, R9630, R9631, R9632, R9633, R9636, R9637, R9638, R9639, R9640, R9643, R9647, R9651, R9655, R9657 - blocker: not-attempted; no decipherment imaged (r2i); R9594 is next in date order (5 pp., = CSP 396, whose decipherment is in the Gayangos papers); each readable sign by sign with the key as R9593 was
 - Lope Hurtado records R9634, R9644-R9646, R9648-R9650, R9652, R9656 - blocker: no-key-material; a third cipher, finals p/z absent from Sánchez's key; groups not in Tomokiyo's Juan Manuel table (see the lopehurtado1522 target)
 
 ## Escalation
@@ -434,3 +434,36 @@ Closed items (moved out of Remaining gaps):
 - [x] key-rebuild: 23 Oct 2026 (r2o) - gim = suyos and fef = toda adopted on every occurrence; ril = lansquenetes? flagged
 - [x] retry: 23 Oct 2026 (r2o) - R9593 read sign by sign on line crops at 2-3.5x (decoded, not read, 0.614)
 - [x] retry: 23 Oct 2026 (r2i) - R9635 tear read in the cipher of f. 20r; all 52 Sánchez records of R9593-R9657 fetched and every image opened; decipherments of R9613 (ff. 206-207) and R9641 (ff. 187-188, under R9642) found and read
+
+## R9607 read in part, and the key measured on a held-out passage, 12 Nov 2026 (Brice Dudout)
+
+DECODE lot 1 (R9594, R9607, R9616, R9617, R9626, R9631, R9632, R9633, R9636, R9639, R9651; 55 images) was triaged
+(`dudout/TRIAGE_lot1.md`): R9616/R9617 are one letter in two copies, R9626 has its copy in R9627, DECODE serves R9632's
+P2 twice (one opening missing), R9636 and R9651 are mixed with full clear passages, R9594 (= CSP 396) has a surviving
+contemporary decipherment; only R9607 and R9633 are uncalendared. Before any decoding, a PREREG was frozen by SHA-256
+with one measure on a held-out passage, R9632 f. 200r ll. 7-25 (386 tokens transcribed blind, R9632 used for no key
+adjustment): this folder's key, unchanged, scores 593 decoded characters at -2.471 per character (4-gram, Don Quijote)
+against 400 controls (permuted keys and token shuffles) with mean -3.106 and best -2.766, z = 5.68: PASS on the pre-set
+thresholds (`dudout/protocol/`; by the contributor's record the transcription was frozen before decoding; the score is a
+language-model score, so it shows the key turns the passage into Spanish, not that every word is right). R9607 (14 May 1522, 9/24 ff. 65r-67v, 146 cipher lines, no decipherment imaged) was then
+transcribed blind by sign shape, frozen, decoded with the key unchanged and read by sense: 1,121 sure, 116 probable,
+2 restored, 316 unresolved of 1,555 words. By the README rule (a letter chosen by sense on a look-alike sign is not read on
+the signs) 1,121 sure = 72.1 %; the contributor's sure + probable is 79.5 %. Read in part either way (`dudout/R9607_reading.md`, `_text_es.md`, `_en.md`):
+Venice arming galleys after the French defeat, French soldiers from Milan at Padua, Cremona, Lautrec and Prospero
+Colonna, Sánchez's demand that the Signoria declare itself released from its French capitulation, the Turk's fleet
+reported from Corfu, the Hungarian ambassador's departure. Tomokiyo's printed opening line agrees. Most unresolved words
+are spelled runs mis-transcribed on look-alike signs; 63 code groups absent from the key are listed there, none added.
+For the gap list: R9607 moves from not-attempted to read in part; the other ten lot-1 records are triaged, not read.
+
+### Integration check (12 Nov 2026)
+
+Reproduced: `dudout/protocol/measure.py` on the frozen held-out file and `key_codes.tsv` gives 593 characters, S -2.4714,
+controls mean -3.1056, sd 0.1116, max -2.7660, z 5.68, PASS (run with a Gutenberg Don Quijote text fetched for the check, not
+the contributor's file, whose hash 27f5064a... I could not match; the figures agree to four decimals). The four frozen
+SHA-256 values match the files, and `key_codes.tsv` and `alpha.py` still hash to the values the PREREG quotes, so the key
+was unchanged. R9607 per-page counts in `dudout/R9607_reading.md` sum to 117 probable and 315 unresolved (total row 116 and
+316); my own tokenization of the reading lines gives about 1,267 sure, 167 probable, 2 restored, 317 unresolved (fragments
+counted apart), the same band. Corrections: strict share 72.1 % (sure only) as the headline, 79.5 % labelled the
+contributor's; the order of events is by the contributor's record. Not checked: the blind transcription of R9607 and of
+the held-out passage against the DECODE images (login). R9607 is read in part and the other ten lot-1 records are triaged,
+not read; no other Sánchez record is attempted by this PR.

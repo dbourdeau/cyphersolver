@@ -102,3 +102,33 @@ Outcome class: an audit on 21 Sept 2026 set this target to "already solved" beca
 letters at the time. That applies to R9661-R9664 and to R9665's short runs, but not to R9660: it has no decipherment
 bound with it and is not in Bergenroth. Its reading here (section 5, ~57%) is this project's own, so the class
 stays "read in part".
+
+## Sign-by-sign re-read of R9660 ff. 141v-146v, 12 Nov 2026 (Brice Dudout)
+
+The gap "R9660 spelled runs that do not form words as transcribed, ff. 141v-146v" was attempted: the six pages were
+re-read sign by sign on DECODE R9660 at full size against the b34 (a) lines. Part 1's sign written ꝍ is two signs
+(a 6 with a top bar = r; a z-hook over o = s, part 2's ꝛo); a flat-topped g with a flag is d (pudiera, pedir, sin
+duda, auditor); a reversed c with a stroke is q (conquistar, asiento que, ynquietud); the angle sign is ñ (compañia,
+engañados, cuñado, dañaria); part 2's "ges" is qes = es (es justo, escusa, esperanças, restitucion). 124 lines change;
+the transcription and 25 doubtful signs were frozen by SHA-256 before decoding. One pre-registered measure on those
+lines, with one fixed key built from b34's own values: -2.423 against -2.453 per character for b34 (a), all 400
+controls below (a quote-tracking bug in the frozen script skipped about half the portion; fixed, -2.507 vs -2.518,
+controls below; the fix was made after the first result, and the frozen run itself passed both pre-set criteria; the gain over
+b34 under one key is small, 0.03 and 0.01 per letter: the measure shows the re-read is not worse and carries Spanish, not an
+improvement of substance). By the README rule a word that holds a value used from context only (x = r in resolve / restante /
+Volterra, ε = i in hizieron, 9 = d, xir = cardenal) is a hole, not read: ff. 141v-146v go from 2,479 to 2,634 of the tokens sure
+(69.7% -> 73.4% of 3,556 / 3,587), and 82 -> 188 more are "probable" with a context-only value; the contributor's own figure,
+sure + probable, is 72.0% -> 78.7% (re-read lines 70.5% -> 80.0%). Either way R9660 stays under the bar
+(`_check_reading` clean share unchanged, 0.175 -> 0.167); most of what is left is the ~100 unattested code groups. The
+context-only values are not added to the key. Order of events (frozen hashes dated 12:16-12:18) by the contributor's record;
+the check of signs was made with b34's (b) readings in view, so it is not a blind reading. Details: [`dudout/README.md`](dudout/README.md).
+
+### Integration check (12 Nov 2026)
+
+Reproduced: `scripts/measure_reread.py` (-2.4227 vs -2.4533, controls max -2.7277, p 0.0025) and
+`measure_reread_fix.py --per-line-quotes` (-2.5066 vs -2.5181) give the stated figures; the frozen SHA-256 prefixes match.
+`scripts/count95.py` on the shipped reading file gives 2,656 sure + 190 probable + 741 unresolved of 3,587 (79.3% sure or
+probable, 74.0% sure only), not the 2,634 + 188 + 765 (78.7%) of `count95.txt`: the committed figures are kept, the
+difference (0.6 point) is noted. Corrections: strict share used as the headline (sure only; probable = context-only values
+are holes), the quote bug named as a change made after the result. Not checked: the sign changes against the DECODE
+images (login).
