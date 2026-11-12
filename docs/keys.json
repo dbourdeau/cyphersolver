@@ -5002,6 +5002,23 @@
    "by": "an AI model (one API run), checked by Brice Dudout",
    "year": 1911,
    "note": "16 holes derived from the nulls x/z of CMXV.16.1551.3-4; blocks of 64 letters, quarter turns clockwise. Not validated: the pre-registered measure on a held-out telegram failed (0.520 against 0.70)."
+  },
+  {
+   "id": "k-zobel1629",
+   "label": "Zobel to Christian IV, Paris 1629: four number alphabets chosen by an index figure 28-39 (found by Malcolm McBratney with Claude)",
+   "kind": "rebuilt here",
+   "by": "Malcolm McBratney",
+   "year": 1629,
+   "note": "Found from the ciphertext of the letter itself: 28-30 straight (a = 4 ... z = 27), 31-33 reversed (a = 27 ... z = 4), 34-36 and 37-39 from word fits, values only for letters seen. Partial. targets/zobel1629/key.tsv."
+  },
+  {
+   "id": "k-kohn-ms309",
+   "label": "Kohn's key of 1889 to Gerlach's Occulta scripta chymica (Wellcome MS.309 pp.260-261)",
+   "kind": "scholar's key",
+   "by": "Julius Kohn",
+   "year": 1572,
+   "found": 1889,
+   "note": "Rows of sign groups, Z to A, with no letters written beside them; set up as a table of 52 sign labels by Malcolm McBratney (three groups re-aligned: u, t, s). targets/gerlach1252/key.tsv."
   }
  ],
  "links": [
@@ -8070,6 +8087,18 @@
    "target": "nuevaclave1911",
    "how": "rebuilt from",
    "note": "proposed from the ciphertext of three telegrams with a fourth held out; five 64-letter blocks read; the held-out measure failed"
+  },
+  {
+   "key": "k-zobel1629",
+   "target": "zobel1629",
+   "how": "partial",
+   "note": "recovered by the contributor from the ciphertext alone; 15 of 19 cipher words read without correction, two of the four alphabets only partly known"
+  },
+  {
+   "key": "k-kohn-ms309",
+   "target": "gerlach1252",
+   "how": "adapted",
+   "note": "Kohn's sheet carries signs without letters; the contributor read the order of the groups as letters and moved the u, t and s groups one step; about 90% of the words of 17 pages read"
   }
  ],
  "sources": [
@@ -9390,6 +9419,10 @@
   {
    "source": "s-cyphersolver",
    "key": "k-nuevaclave-grille"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-zobel1629"
   }
  ],
  "unlinked": {
