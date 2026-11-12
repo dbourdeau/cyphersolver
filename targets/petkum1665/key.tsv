@@ -1,0 +1,159 @@
+# Petkum 1665 code. Tier A = read from the chancery interlinear glosses on images 377 (27 Jan 1665) and 401 only. token<TAB>value<TAB>tier<TAB>source
+14	a	A	377 'a faire'; 401 'a l'advantage'
+ct	a	A	377 'a la Haye', opini-a-stre; 401 negoti-a-teur, a-mys
+18	e	A	377 fini-e
+LL	e	A	401 e-n, employ-e-r, croy-e-nt
+19	f	A	401 cof-f-res
+22	i	A	377 mo-i-ns, ma-i-ntenir
+B	i	A	377 mauva-i-s, i-cy; 401 ma-i-s
+24	l	A	401 l'argent, qu'i-l-s, Ta-l-bot
+X	l	A	401 a l'advantage
+26	n	A	377 mai-n-tenir; 401 croye-n-t, factio-n
+PSI	n	A	377 moi-n-s, esta-n-t; 401 e-n, so-n-t, da-n-s
+30	r	A	377 procure-r, mainteni-r
+BET	r	A	401 employe-r, se-r-vice, negotiateu-r, pa-r-t
+31	s	A	377 mauvai-s, pa-s, moin-s
+MT	s	A	377 de-s, project-s; 401 se-s, qu'il-s, dan-s
+32	t	A	377 projec-t, opinias-t-re; 401 son-t, Talbo-t
+QX	t	A	401 es-t-rangeres
+LAM	u	A	377 ma-u-vais; 401 a-u, pe-u, negotiate-u-r
+36	y	A	377 celu-y; 401 emplo-y-er
+T	y	A	401 cro-y-ent
+Y	c	A	377 proje-c-t; 401 c-royent, fa-c-tion
+G	p	A	377 p-roject, p-rocurer; 401 em-p-loyer
+TH	m	A	401 e-m-ployer
+HSH	o	A	401 facti-o-n
+38	et	A	377 'et les avantages'
+100	et	A	377 'faire et executer'; 401 'et a l'advantage'
+51	le Roy de Danemark (V. M.)	A	401 gloss 'de Dannemarc'; 574R gloss 'et V. M.' (corrected 12 Nov after decoding; v1/v2 had 'la France' by misreading)
+92	le Roy d'Angleterre	A	377; 401
+96	M. le Chancelier	A	377
+107	Mrs les Estats	A	377
+119	l'Angleterre	A	401
+120	la Suede	A	377
+145	la Haye	A	377
+161	affaire	A	401 affaire-s
+162	affection	A	401 affection-ne
+166	argent	A	401
+169	avantage	A	377; 401
+172	bi	A	401 ha-bi-le
+173	bo	A	401 Tal-bo-t
+183	ce	A	377 ce-luy; 401 servi-ce
+184	ci	A	377 i-cy; 401 nego-ti-ateur
+185	co	A	401 co-ffres
+186	cu	A	377 pro-cu-rer
+196	contre	A	377
+200	da	A	401 da-ns
+201	de	A	377; 401
+215	executer	A	377
+217	fa	A	401 fa-ction
+219	fi	A	377 fi-nie
+222	faire	A	377; 401
+227	fort	A	401 (twice)
+230	ge	A	401 estran-ge-res
+232	go	A	401 ne-go-tiateur
+236	garantie	A	377 (twice)
+240	guerre	A	377
+241	ha	A	401 ha-bile
+253	je	A	377 pro-je-ct
+266	la	A	377; 401
+267	le	A	377 le-s; 401 habi-le
+269	lo	A	401 emp-lo-yer
+270	lu	A	377 ce-lu-y
+276	ma	A	377 ma-uvais; 401 ma-is
+278	mi	A	401 a-mi-s
+279	mo	A	377 mo-ins
+288	majeste	A	377
+299	ne	A	401 ne-gotiateur, 'ne sont'
+300	ni	A	377 opi-ni-astre, mainte-ni-r, fi-ni-e
+316	pa	A	377 pa-s; 401 pa-rt
+317	pe	A	401 pe-u
+318	pi	A	377 o-pi-niastre
+320	pu	A	401 pu-t
+335	que	A	377
+336	qui	A	401 qu'i-ls (gloss 'quil')
+339	ra	A	401 est-ra-ngeres
+340	re	A	377; 401
+342	ro	A	377 p-ro-ject; 401 c-ro-yent
+353	se	A	401 se-s, se-rvice
+355	so	A	377 so-piniastre; 401 so-nt
+364	ta	A	377 es-ta-nt; 401 Ta-lbot
+365	te	A	377 main-te-nir; 401 negotia-te-ur
+366	ti	A	401 fac-ti-on
+380	va	A	377 mau-va-is
+382	vi	A	401 ser-vi-ce
+389	votre	A	377
+# Tier B = structure rule, fixed before decoding: (1) letters 14-38 run a b c d e f g h i k l m n o p q r s t u v x y z & (11 gloss anchors fit: 14 18 19 22 24 26 30 31 32 36 38); (2) each consonant row runs Ca Ce Ci Co Cu on consecutive numbers; only rows with >= 2 gloss anchors.
+15	b	B	alphabet
+16	c	B	alphabet
+17	d	B	alphabet
+20	g	B	alphabet
+21	h	B	alphabet
+23	k	B	alphabet
+25	m	B	alphabet
+27	o	B	alphabet
+28	p	B	alphabet
+29	q	B	alphabet
+33	u	B	alphabet
+34	v	B	alphabet
+35	x	B	alphabet
+37	z	B	alphabet
+170	ba	B	row b (172,173)
+171	be	B	row b
+174	bu	B	row b
+182	ca	B	row c (183-186)
+202	di	B	row d (200,201)
+203	do	B	row d
+204	du	B	row d
+218	fe	B	row f (217,219)
+220	fo	B	row f
+221	fu	B	row f
+229	ga	B	row g (230,232)
+231	gi	B	row g
+233	gu	B	row g
+268	li	B	row l
+277	me	B	row m (276,278,279)
+280	mu	B	row m
+298	na	B	row n (299,300)
+301	no	B	row n
+302	nu	B	row n
+319	po	B	row p
+334	qua	B	row q (335,336)
+337	quo	B	row q
+341	ri	B	row r
+343	ru	B	row r
+352	sa	B	row s (353,355)
+354	si	B	row s
+356	su	B	row s
+367	to	B	row t
+368	tu	B	row t
+381	ve	B	row v (380,382)
+383	vo	B	row v
+384	vu	B	row v
+# Tier C = rows with one anchor (position in the row assumed): counted N in the strict tally.
+242	he	C	row h (241)
+243	hi	C	row h
+244	ho	C	row h
+245	hu	C	row h
+252	ja	C	row j (253)
+254	ji	C	row j
+255	jo	C	row j
+256	ju	C	row j
+# Additions for KEY v2, read from the chancery glosses on image 574 right (relation to the king, Oxford 10 Dec 1665). Seen AFTER leaf 573 was decoded; not used in the 573 tally.
+U4	x	A2	574R vaisseau-x, au-x, e-x-poser
+HB	z	A2	574R arreste-z, rappele-z, asseure-z
+61	le Roy T.C.	A2	574R (twice)
+74	l'Empereur	A2	574R
+88	l'Espagne	A2	574R
+115	Norvegue	A2	574R
+116	la France	A2	574R 'de la france'
+152	Suedois	A2	574R
+153	Anglois	A2	574R 'aux anglois'
+157	Hollandois	A2	574R
+164	alliance	A2	574R
+165	Ambassade	A2	574R 'Ambassadeurs' = 165.LAM.30.31
+209	estre	A2	574R
+289	mer	A2	574R
+314	ordre	A2	574R
+350	Royaume	A2	574R Royaume-s
+386	vaisseau	A2	574R
