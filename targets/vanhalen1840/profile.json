@@ -1,11 +1,11 @@
 {
  "schema_version": 1,
  "target": "vanhalen1840",
- "title": "Juan Van Halen to the acting commander of the Division auxiliar del Norte, Igualada, 6 May 1840 (catalogue 2423, AHN DIVERSOS-COLECCIONES,195,N.14): numbered homophonic alphabets, key recovered from the ciphertext and validated with limited reservations on held-out runs, read",
+ "title": "Juan Van Halen to the acting commander of the Division auxiliar del Norte, Igualada, 6 May 1840 (catalogue 2423, AHN DIVERSOS-COLECCIONES,195,N.14): numbered homophonic alphabets, key proposed from the ciphertext; the pre-registered held-out test failed (key partial); read in part, 27 of 30 cipher words",
  "documents": [
   {
    "id": "ahn-diversos-195-n14",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Madrid, Archivo Histórico Nacional, DIVERSOS-COLECCIONES,195,N.14 (PARES description 4151130)",
    "date": "6 May 1840",
    "year": 1840,
@@ -26,7 +26,7 @@
     "partial": false
    },
    "length": {
-    "tokens": 146,
+    "tokens": 144,
     "unit": "symbols",
     "measured": true,
     "file": "transcription.txt"
@@ -35,7 +35,7 @@
     "by": "llm from images",
     "source": "PARES images of DIVERSOS-COLECCIONES,195,N.14 (description 4151130, 531x648 px); images not reproduced",
     "image_quality": "poor",
-    "notes": "Pass 1 by a Claude Opus 5.5 agent (9 Nov 2026), frozen before any key existed; pass 2 after Brice Dudout's blind shape-matching sheet of 12 doubtful signs (9 Nov 2026): no value of the training runs changed, S8 no. 4 read 18 instead of 13. The hand's 3/5 and 13/18 are close."
+    "notes": "Pass 1 by a Claude Opus 5.5 agent (9 Nov 2026), frozen before any key existed; pass 2 after Brice Dudout's blind shape-matching sheet of 12 doubtful signs (9 Nov 2026): no value of the training runs changed, S8 no. 4 read 18 instead of 13. The hand's 3/5 and 13/18 are close. Count: 144 numbers (119 in S1-S6, 25 in S7-S8), 24 distinct, counted from transcription.txt at integration (12 Nov 2026); the contributor's 146 holds only if the two '58' are read '5.8', which the key does not do. Not checked against the images at integration (PARES answered HTTP 429)."
    }
   }
  ],
@@ -60,7 +60,7 @@
    "used": false
   },
   "key_order": "alphabetical",
-  "notes": "24 values attested; 40 more given by the structure (key.tsv marks them); 10, 23, 35-46, 69, 81-92 open."
+  "notes": "24 values attested (the 24 distinct numbers of the letter). The 40 other rows of key.tsv are conjecture: given by the structure, none occurs in the letter, untested; ranks 3-4 (period 46) rest on 58 and 70 only. 10, 23, 35-46, 69, 81-92 open."
  },
  "conditions": {
   "prior_solution": {
@@ -85,7 +85,7 @@
   {
    "date": "2026-11-09",
    "kind": "transcription",
-   "what": "Transcription pass 1 of the eight runs (146 numbers), frozen; held-out part S7-S8 (25 numbers) named in the protocol hashed before it.",
+   "what": "Transcription pass 1 of the eight runs (144 numbers; the contributor counted 146, reading the two '58' as '5.8'), frozen; held-out part S7-S8 (25 numbers) named in the protocol hashed before it.",
    "result": "worked"
   },
   {
@@ -120,45 +120,54 @@
    "technique": [
     "statistical test"
    ],
-   "what": "One pre-registered measurement on held-out S7-S8 (25 numbers, never sent to the model), thresholds calibrated beforehand on S1-S6: cover 0.880 (C1 >= 0.75 passed); letter-model -1.048 vs best of 200 shuffled keys -1.359 (C2 +0.22 passed) and best of 200 group shuffles -1.101 (C3 +0.08 missed by 0.027). Raw decode 'lacaretera / dicbosacaretera'. Key validated with limited reservations.",
-   "result": "partial"
+   "what": "One pre-registered measurement on held-out S7-S8 (25 numbers, never sent to the model). Declared: original rule P01 (cover >= 0.85 and >= best control + 0.30), replaced by an addendum with thresholds calibrated on S1-S6 (C1 cover >= 0.75; C2 letter model >= best of 200 shuffled keys + 0.22; C3 >= best of 200 shuffles of the held-out numbers + 0.08; all three needed). Score: cover 0.880 (C1 passed; P01 margin 0.120, not met); letter model -1.048 vs -1.359 (C2 passed) and vs -1.101 (C3 failed, short by 0.027). Test failed; by the frozen addendum the key is partial. Raw decode 'lacaretera / dicbosacaretera'. The order of events (addendum hashed before S7-S8 were decoded) is the contributor's record: file timestamps, one commit.",
+   "result": "failed"
   },
   {
    "date": "2026-11-11",
    "kind": "reading",
-   "what": "Whole letter read by sense: 30 cipher words, 27 certain, 2 probable, 1 restored, 0 unresolved = 96.7%.",
+   "what": "Whole letter read by sense: 30 cipher words, 27 with no correction, 2 probable (one number read otherwise each), 1 restored (one number supplied), 0 unresolved. By the README read bar 27/30 = 90.0% (contributor's count with the probable words: 96.7%).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Integration of pull request #408 after an independent read-only verification: SHA-256 of all frozen files match; a second decoder from key.tsv reproduces decryption.txt (0 differences); P01 re-run identical (0.880, 0.760, margin 0.120); C1 0.880, C2 -1.051 vs -1.357, C3 -1.051 vs -1.102 (missed by 0.029; other Quijote text); calibration re-run 0.75/0.21/0.08, power 82.7%. Larger controls: 0 of 6,000 shuffled keys and 5 of 6,000 group shuffles score as well as the key. With transcription pass 2 (S8 no. 4 = 18) C3 would pass by 0.004; C3 passes in 3 to 6 of 30 seed blocks. Corrections applied: test recorded as failed, key partial, class read in part (27/30 = 0.90), 144 numbers not 146, the 40 structural key values labelled conjecture. Transcription not checked on the images (PARES HTTP 429).",
    "result": "worked"
   }
  ],
  "outcome": {
-  "class": "read",
-  "key": "recovered",
+  "class": "read in part",
+  "key": "partial",
   "method": "key recovered from ciphertext-only",
-  "method_basis": "Key proposed by Claude Fable 5.2 from runs S1-S6 alone (the plain text around the runs gives context, not a parallel text), frozen, and measured once on runs S7-S8, held out from the start and never seen by the model.",
+  "method_basis": "Key proposed by a language model from runs S1-S6 alone (the plain text around the runs gives context, not a parallel text) and frozen. The one pre-registered measurement on runs S7-S8, held out and never sent to the model, failed (C3 short by 0.027; original rule not met), so the key is partial under the contributor's frozen protocol; the 24 attested values read all eight runs, the 40 structural values are conjecture.",
   "contribution": [
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.967,
+  "fraction_read": 0.9,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading.md, words: 27 certain + 2 probable = 29 of 30 = 96.7%; the restored word ve[n]ir is not counted. The two probable words each read one number of our transcription otherwise (13 as 3; 13|18 as 19); counted as guessed, the share is 27/30 = 90%.",
+  "fraction_read_source": "reading.md, cipher words: 27 of 30 read with no correction = 90.0% (README read bar: the 2 probable words, one number read otherwise each, count as guessed and the 1 restored word, ve[n]ir, as supplied). Contributor's count with the probable words: 29/30 = 96.7%. Recounted at integration, 12 Nov 2026.",
   "verification": [
-   "statistical test",
    "historical consistency"
   ],
   "validation": {
    "date": "2026-11-11",
    "verdict": "weak",
    "file": "validation.txt",
-   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): key validated with limited reservations. Addendum SHA-256 41a8ea9a309bc9f8a47396d551bde5a53fbfd504546d4467d4a628fd97f4cde3, hashed with the key and the calibration before S7-S8 were decoded; single measurement on 25 numbers: C1 cover 0.880 >= 0.75 passed; C2 lm -1.048 >= -1.139 passed; C3 lm -1.048 < -1.021 missed by 0.027 (best of 200 group shuffles -1.101; H repeats one 8-letter word). By the letter of the rule the measurement did not pass; the key beats all 400 controls. The original P01 rule (>= 0.85 and +0.30; power 4% at this size) is not met either (0.880, +0.120). Held-out decode without correction: 'la caretera', 'dicbosa caretera' (S8 no. 4 read 19: dichosa)."
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): FAILED. Declared: P01 (cover >= 0.85 and >= best control + 0.30), then an addendum (SHA-256 41a8ea9a309bc9f8a47396d551bde5a53fbfd504546d4467d4a628fd97f4cde3) with C1 cover >= 0.75, C2 lm >= best of 200 shuffled keys + 0.22, C3 lm >= best of 200 group shuffles + 0.08, all three needed. Single measurement on 25 numbers: C1 0.880 passed; C2 -1.048 >= -1.139 passed; C3 -1.048 < -1.021 failed, short by 0.027; P01 not met (0.880, margin 0.120). The frozen addendum (section 5) and result file call this 'mesure non validée, clé partielle'. The PR's 'validated with limited reservations' was a relabelling after the result and is withdrawn. By the contributor's record (file timestamps, one commit, no outside timestamp) the addendum was hashed before S7-S8 were decoded. Other evidence, apart from the test: the 24 attested values run in alphabetical order; S1-S6 give continuous Spanish fitting the clear context; S7 decodes without correction to 'la caretera'; in verification controls 0 of 6,000 shuffled keys and 5 of 6,000 group shuffles score as well. Verdict 'weak' kept: the key is clearly not chance, but its one pre-registered test failed and the held-out runs are used up."
   },
   "provenance": "contributed",
   "credits": [
    {
     "who": "dudout",
     "role": "solution",
-    "note": "transcription; key proposed by Claude Fable 5.2 (Anthropic) on runs S1-S6 and measured by us once on held-out S7-S8 (C1, C2 passed, C3 missed by 0.027: key validated with limited reservations); letter read (29/30 words = 96.7%) and translated",
-    "date": "2026-11-11"
+    "note": "transcription; key proposed by a language model run once by the contributor on runs S1-S6 (the model is named in his NOTES); one pre-registered measurement on held-out S7-S8, which failed (C1, C2 passed, C3 missed by 0.027: key partial by his protocol); letter read in part (27 of 30 cipher words without correction) and translated",
+    "date": "2026-11-11",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/408"
    },
    {
     "who": "bourdeau",
@@ -169,19 +178,29 @@
   ],
   "gaps": [
    {
-    "item": "S8 no. 4 (13|18, read 19 = h)",
+    "item": "S8 no. 4 (13|18, read 19 = h for 'dichosa')",
     "blocker": "illegible",
-    "detail": "doubtful sign at 531x648 px, already flagged on the blind sheet of 9 Nov 2026; a better image would settle it"
+    "detail": "doubtful sign at 531x648 px, already flagged on the blind sheet of 9 Nov 2026; a better image would settle it; PARES refused scripted access (HTTP 429) on 12 Nov 2026"
    },
    {
-    "item": "S2 no. 5 (13 read as 3) and the omitted 2 of S1 (ve[n]ir)",
+    "item": "S2 no. 5 (13 read as 3 for 'custodiar') and the omitted 2 of S1 (ve[n]ir)",
     "blocker": "illegible",
-    "detail": "one-digit doubts at the resolution PARES serves, or slips of the cipher clerk"
+    "detail": "one-digit doubts at the resolution PARES serves, or slips of the cipher clerk; not checked on the image"
    },
    {
-    "item": "40 key values given by the structure only; 10, 23, 35-46, 69, 81-92 open; a second test of the key",
+    "item": "the transcription of all eight runs against the images",
+    "blocker": "illegible",
+    "detail": "made by an AI agent from 531x648 px images with one blind human check of 12 signs; not checked at integration (PARES HTTP 429, no browser available)"
+   },
+   {
+    "item": "40 key values given by the structure only (conjecture); 10, 23, 35-46, 69, 81-92 open",
     "blocker": "no-key-material",
-    "detail": "only this letter is known in the cipher; the held-out runs are used up; the Army of Catalonia table of 1839-40 or a sibling letter (fonds 195 N.13/N.15, Archivo General Militar, Espartero papers) would test it"
+    "detail": "only this letter is known in the cipher and none of those numbers occurs in it"
+   },
+   {
+    "item": "a second test of the key",
+    "blocker": "no-key-material",
+    "detail": "the held-out runs are used up and the one pre-registered test failed; the Army of Catalonia table of 1839-40 or a sibling letter (fonds 195 N.13/N.15, Archivo General Militar, Espartero papers) would test it"
    }
   ],
   "texts": [
@@ -193,18 +212,23 @@
     "reading": "reading.md",
     "translation": "translation.md",
     "language": "es",
-    "state": "read",
-    "read_share": 0.967,
-    "summary": "1,503 [reales?] are to be paid at Tarragona between 10 and 12 May; as a sufficient force must come to Montblanc to guard the funds, Van Halen asks the brigadier to meet him there on the 11th, unless the march of the Barcelona convoy by Cervera brings them into contact on the road before. The Carlist bands of Llarch and Marcó, given fifteen days' leave after Van Halen's raid on La Llacuna, roam the Priorat; they will be watched 'on that confounded road'.",
+    "state": "read in part",
+    "read_share": 0.9,
+    "summary": "1,503 [reales?] are to be at the paymaster's disposal at Tarragona between 10 and 12 May; as a sufficient force must come to Montblanc to guard the funds, Van Halen asks the brigadier to meet him there on the 11th, unless the march of the Barcelona convoy by Cervera brings them into contact on the road before. The forces of Llarch (Carlist bands, by the contributor's notes) have been given fifteen days' leave and Llarch and Marcó roam the Priorat; the letter ends 'on that confounded road', after clear words that are uncertain on the images.",
     "reading_review": {
      "grade": "A",
-     "by": "Claude Opus 5.5 agent for Brice Dudout (S1-S6 read first by the key proposer, Claude Fable 5.2)",
-     "date": "2026-11-11",
-     "note": "Read as Spanish sentences against decryption.txt and the plain context: both cipher passages construe with the clear around them and the translation follows; holes: 2 probable words (one number read otherwise each) and 1 supplied letter. AI agents only; no human read the reading; not re-checked on the images."
+     "by": "integration reader for the project, after the contributor's AI agents",
+     "date": "2026-11-12",
+     "note": "reading.md read as Spanish sentences against decryption.txt, the plain context (frozen/clair.txt) and translation.md: both cipher passages construe with the clear around them and the translation follows. Three marked holes in 30 words: {custodiar} and {dichosa} each need one number read otherwise, ve[n]ir one number supplied. No human has read the reading; not checked on the images (PARES HTTP 429)."
     }
    }
   ],
   "key_file": "key.tsv",
-  "notes": "New decipherment: no decipherment of the time and no edition known. The key is reusable (key.tsv, CC BY 4.0). Model credit: the key was proposed by Claude Fable 5.2 (Anthropic) in one API run; the addendum, held-out measurement, reading of S7-S8 and write-up are ours. No image is included."
+  "notes": "New decipherment: no decipherment of the time and no edition known. The 24 attested values of key.tsv (CC BY 4.0) are the recovered key; its 40 structural rows are conjecture. The key was proposed by a language model in one API run by the contributor, who names it in NOTES.md; the addendum, held-out measurement, reading of S7-S8 and first notes are the contributor's. The pre-registered test failed; class and wording corrected at integration (12 Nov 2026). No image is included.",
+  "codes_open": {
+   "open": 0,
+   "total": 0,
+   "tokens_open": 0
+  }
  }
 }

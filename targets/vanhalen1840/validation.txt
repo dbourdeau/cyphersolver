@@ -1,14 +1,19 @@
 vanhalen1840 - validation (contributor's pre-registered held-out test, not docs/_validate.py)
-Summary: key validated with limited reservations. Our pre-registered test on the held-out runs passes C1 and C2;
-C3 is missed by 0.027, so by the letter of the rule fixed in advance the measurement did not pass. The held-out runs
-decode without any correction to "la caretera" and "dic{h}osa caretera" (one number read otherwise), and the letter
-reads by sense at 29/30 = 96.7% (27 certain, 2 probable, 1 restored).
+Summary (corrected at integration, 12 Nov 2026): the pre-registered test FAILED. On the held-out runs C1 and C2
+passed and C3 was missed by 0.027; the measure needed all three. The original rule P01 was not met either. Under the
+frozen addendum (section 5) a failed measure makes the key PARTIAL, whatever the sense. The earlier summary line
+"key validated with limited reservations" was a relabelling made after the result and is withdrawn.
+The held-out runs decode without any correction to "la caretera" and "dicbosa caretera" (read "dic{h}osa" with one
+number read otherwise). The letter has 30 cipher words: 27 read with no correction, 2 probable, 1 restored; by the
+README read bar 27/30 = 90.0%, read in part (contributor's count, probable words included: 29/30 = 96.7%).
+The order of operations below is the contributor's record: timestamps written in the files, one commit, no outside
+timestamp.
 
 Order of operations (contributor's folder; files and SHA-256 in frozen/, protocols in French):
 1. 9 Nov 2026: protocol P01 (frozen/PROTOCOLE.md, SHA-256 92cf8f5a...) and its scorer frozen/scripts/measure.py
    (8b82c31d...) hashed BEFORE the transcription. It names the held-out part H in advance: the last run of image 2
    (S7, after "dicha fecha sobre") and the run of image 3 (S8). Declared leak: the shape of S7 was seen by eye before
-   the protocol, no value tried. Training part T = S1-S6 (119-121 numbers).
+   the protocol, no value tried. Training part T = S1-S6 (119 numbers; 121 if the two "58" are read "5.8").
 2. 9 Nov 2026: transcription pass 1 of S1-S8 frozen (frozen/transcription.txt, 66f920a6...). Attacks on T alone
    (annealing, Gronsfeld, cribs) failed; H untouched. Pass 2 after Brice Dudout's blind shape-matching sheet
    (frozen/transcription-p2.txt, d99dc675...): no value of T changed.
@@ -43,7 +48,7 @@ script itself; a dry run on T had been done first, no change to the script):
   P01 (unchanged rule): car 0.880, best control 0.760, margin 0.120 < 0.30 -> not validated (power of this rule 4%)
   addendum: car 0.880 >= 0.75 (C1 yes); lm -1.048 >= -1.139 = best of 200 shuffled keys -1.359 + 0.22 (C2 yes);
             lm -1.048 < -1.021 = best of 200 group shuffles -1.101 + 0.08 (C3 no, short by 0.027)
-  Measure: not passed by the letter of the rule. The key beats all 400 controls (by 0.31 and 0.053 in lm), but the
+  Measure: NOT PASSED (failed). The key beats all 400 controls (by 0.31 and 0.053 in lm), but the
   group shuffle margin is under the 0.08 fixed in advance.
   Why C3 is close: H is very repetitive (the same 8-letter word twice; 6 a, 4 r, 4 e in 25 letters), so shuffles of
   its own numbers still give plausible Spanish letter strings.
@@ -51,10 +56,21 @@ script itself; a dry run on T had been done first, no change to the script):
   "dic{h}osa caretera" agrees with "la" and closes the sentence, but needs S8 no. 4 (13 or 18) read as 19, a confusion
   outside the declared classes - not met in the strict sense; this is the sign already flagged as doubtful on 9 Nov.
 
-Reservations (limited), declared:
+Reservations, declared by the contributor (the test failed; these are not "limited"):
 - C3 missed by 0.027 on 22 letters; P01's own rule not met (it has no power at this size).
 - One number of H (S8 no. 4) is read otherwise; it should be checked on the image.
 - The held-out part is small (25 numbers), below our later rule of 150 groups; the letter has no other cipher.
 - Transcription by an AI agent from images of 531x648 px, with one blind human check of 12 doubtful signs (Brice
   Dudout, 9 Nov 2026); no palaeographer.
 - H is now used up: nothing was re-run on it (key, thresholds, lexicon, model, transcription unchanged).
+
+Independent verification before integration (read-only re-run; the Don Quijote extract is not in the pull request, the
+Gutenberg text was used, hence third-decimal differences):
+- P01 with frozen/scripts/measure.py unchanged: cover 0.880, best control 0.760, margin 0.120 (identical).
+- C1 0.880 passed; C2 -1.051 against -1.357 passed; C3 -1.051 against -1.102, missed by 0.029.
+- Calibration re-run: thresholds 0.75 / 0.21 / 0.08, power 82.7%; power of the original rule 4.3%.
+- With pass 2 of the transcription (S8 no. 4 = 18) C3 would pass by 0.004; pass 1 was declared decisive, the failure stands.
+- C3 depends on the seed: it passes in 3 to 6 of 30 blocks of 200 shuffles.
+- Larger controls: 0 of 6,000 shuffled keys and 5 of 6,000 shuffles of H's numbers score as well as the key.
+- The transcription was not checked against the images (PARES answered HTTP 429).
+- H has 25 numbers; the letter has 144 (119 + 25), not 146.

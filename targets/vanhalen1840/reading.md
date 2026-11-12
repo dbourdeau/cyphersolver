@@ -35,7 +35,9 @@ of the images (frozen/clair.txt), ends "sobre la" and the cipher gives "{dichosa
 | restored | 1 | 3.3% |
 | unresolved | 0 | 0% |
 
-- **Certain + probable: 29/30 = 96.7%** (restored word not counted, as in the README read bar). With the restored word: 30/30.
+- **Read by the README read bar: 27/30 = 90.0%** (a probable word is a guessed word and a restored word a supplied one;
+  neither counts as read). Class: read in part. Corrected at integration, 12 Nov 2026.
+- Contributor's count, probable words included: 29/30 = 96.7%. With the restored word: 30/30.
 - Probable:
   - {custodiar} (S2 no. 5): transcribed 13 (b, "custbdiar"); read 3 (o). A 13/3 confusion of the transcription or a
     slip of the cipher clerk.
