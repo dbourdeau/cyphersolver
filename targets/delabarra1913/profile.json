@@ -1,0 +1,203 @@
+{
+ "schema_version": 1,
+ "target": "delabarra1913",
+ "title": "Francisco León de la Barra, New York, to the Secretaría de Relaciones Exteriores, 11 Aug 1913 (catalogue 1463): cipher words in a clear telegram, letter substitution solved from the ciphertext, key frozen on the first half and tested on the second; read in part",
+ "documents": [
+  {
+   "id": "X-1.4.310.1",
+   "read": "read in part",
+   "shelfmark": "CEHM-Carso, Fondo X-1 (Manuscritos de Francisco León de la Barra), X-1.4.310.1",
+   "date": "11 Aug 1913",
+   "year": 1913,
+   "country": "Mexico",
+   "route": "F. León de la Barra, New York -> Secretaría de Relaciones Exteriores, Mexico",
+   "places": {
+    "from": "New York",
+    "to": "Mexico City"
+   },
+   "language": "Spanish",
+   "cleartext_in_document": "interspersed",
+   "pages": 2,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on either copy. The CEHM catalogue has a summary of the telegram (not compared here)."
+   },
+   "length": {
+    "tokens": 216,
+    "distinct": 20,
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription_310.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "http://visor.cehm.org.mx/assets/docx/fondos/jzd/X-1/4/310/1/X-1.4.310.1.0001.jpg and .0002.jpg",
+    "image_quality": "good",
+    "notes": "Pass 1 from the pencil copy (image 0001); pass 2 from the typed copy (image 0002), an independent witness regrouped by the typist. They agree on 215 of 216 cipher letters; the typist dropped one h (kept from the pencil copy)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Clear Spanish with cipher words; lower-case letter substitution, 20 cipher letters seen. W is written vv (qq). r stands for h (Washington) and t (latino, reconocimiento); n is t elsewhere. In Bryan rr stands for y. Not the key of the 1912 Mundic telegrams nor of the key sheet X-1.5.466.1.",
+  "symbol_kind": "letters",
+  "distinct_symbols": 20,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "kept"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment on the forms; CEHM catalogue: 'En clave', no translation. Two web searches (12 Nov 2026: 'León de la Barra August 1913 New York Boaz Long telegram recognition Huerta'; '\"Mundic\" León de la Barra telegrama 1912 clave') found no edition or decipherment of these telegrams; the vetting of 2 Nov 2026 found nothing in DECODE, Tomokiyo or Lasry. Narváez 2019 (SRE book) not read.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "WAINUT set the task (catalogue 1463) and the rules; AI language-model agents transcribed, solved, froze the key, ran the held-out test, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "CEHM-Carso viewer images (visor.cehm.org.mx)",
+   "scripts in this folder (decryption, held-out test, mark check)",
+   "simulated-annealing substitution solver with Spanish 4-gram statistics (Project Gutenberg texts)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-12",
+  "last_date": "2026-11-12"
+ },
+ "solution": [
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "Images of X-1.4.310.1 and the key sheet X-1.5.466.1 fetched from visor.cehm.org.mx (direct JPG), one at a time, at least 1.6 s apart, no login.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "what": "Key sheet X-1.5.466.1 ('Abecedario y su clave', Secretaría Particular del Presidente, to F. L. de la Barra) applied in both directions: no Spanish (scripts/keysheet_test.py).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring",
+    "manual reconstruction"
+   ],
+   "what": "Simulated annealing on the 216 cipher letters with Spanish 4-grams converged on most restarts to 'long seccion asuntos latinoamericanos departamento estado ...'; the rare letters q, l, s, r settled by hand from the words.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "what": "Key frozen from the cipher words of lines 1-6 (18 letters), applied to lines 7-13: 110 of 112 letters right (98.2%), 0 wrong, 2 not in the frozen key (l and s, one each); 14 of 16 groups wholly right.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Decrypted mechanically and read with every departure marked; scripts/check_marks.py passes.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Independent blind review by an AI language-model agent that did not take part in the solve: signs re-read from the scans before opening the transcriptions, scripts re-run, held-out count reproduced, texts read as sentences against the translations. Full agreement with both copies; grade A.",
+   "result": "worked"
+  },
+  {"date": "2026-11-12", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 214 tokens, 20 types, es-modern order 4: reading -2.275 per letter; random keys -6.85 (z 7.5); key annealed onto shuffled ciphertext best -3.665 (mean -3.782, z 12.2); annealer on the real text -2.194. Verdict: pass.", "result": "worked"}
+ ],
+ "outcome": {"validation": {"date": "2026-11-12", "model": "es-modern", "file": "validation.tsv", "tokens": 214, "types": 20, "tokens_per_type": 10.7, "score": -2.275, "nulls": {"random keys": {"n": 200, "mean": -6.85, "sd": 0.611, "max": -5.201, "z": 7.5, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.782, "sd": 0.123, "max": -3.665, "z": 12.2, "p": 0.1429}}, "power": -2.194, "verdict": "pass", "notes": "claimed per-occurrence score -2.284; polyphony 0.005; 2 unread tokens left out; annealer on the real text from random keys reached -2.194"}, 
+  "class": "read in part",
+  "key": "partial",
+  "key_file": [
+   "key.tsv",
+   "key_frozen.tsv"
+  ],
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Ciphertext-only solve of the cipher words, guided by the clear words around them; frozen on lines 1-6 and tested on lines 7-13.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Counted from the transcription and key.tsv: all 216 cipher letters have a value (scripts/check_marks.py rebuilds the decryption).",
+  "verification": ["independent verification", "matched control", "historical consistency", "statistical test"],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "letter substitution recovered from the ciphertext; key frozen on lines 1-6 and tested on lines 7-13; read in part (strict)",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "two passes from the CEHM images; see the transcription files",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "one independent AI language-model agent, blind from the scans: sign check, scripts re-run, reading read as sentences against the translation; no human palaeographer",
+    "date": "2026-11-12"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "X-1.4.310.1",
+    "label": "Telegram of 11 Aug 1913",
+    "transcription": "transcription_310.txt",
+    "decryption": "decryption_310.txt",
+    "reading": "reading_310.md",
+    "translation": "translation_310.md",
+    "language": "es",
+    "state": "read in part",
+    "summary": "Boaz Long, chief of Latin American affairs at the State Department, came from Washington to see De la Barra, surely sent by Wilson and Bryan; De la Barra would confer with them on a formal invitation, otherwise he leaves for Europe on Saturday or Wednesday; the ministry should press the case for immediate recognition.",
+    "note": "27 cipher words: 24 verbatim (88.9%), 3 marked repairs (vv for W twice, rr for y in Bryan); 26 of 27 if vv for W is taken as the encoder's spelling. No holes. Reading checker on reading_310_sentences.txt: clean share 0.5 (3 of 6 sentences; the holes are names and modern words missing from the period word list).",
+    "reading_review": {
+     "grade": "A",
+     "by": "independent AI language-model agent (blind review)",
+     "date": "2026-11-12",
+     "note": "Read as sentences against the translation: six coherent sentences with no holes; the marked repairs vv = W (twice) and rr = y (Bryan) stand in the typed copy too. Signs re-read from both copies agree in full, and the held-out count (110/112 letters, 0 wrong) is reproduced."
+    }
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Bryan: rr for y in the group xgrroz",
+    "blocker": "too-short",
+    "detail": "no other y in the telegram; the typed copy has the same letters, so it is the encoder's spelling. Marked as a repair."
+   },
+   {
+    "item": "key values s = x and l = f",
+    "blocker": "too-short",
+    "detail": "one word each (próximo, conferenciar)."
+   }
+  ]
+ }
+}
