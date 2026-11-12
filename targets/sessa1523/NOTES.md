@@ -102,3 +102,18 @@ Outcome class: an audit on 21 Sept 2026 set this target to "already solved" beca
 letters at the time. That applies to R9661-R9664 and to R9665's short runs, but not to R9660: it has no decipherment
 bound with it and is not in Bergenroth. Its reading here (section 5, ~57%) is this project's own, so the class
 stays "read in part".
+
+## Sign-by-sign re-read of R9660 ff. 141v-146v, 12 Nov 2026 (Brice Dudout)
+
+The gap "R9660 spelled runs that do not form words as transcribed, ff. 141v-146v" was attempted: the six pages were
+re-read sign by sign on DECODE R9660 at full size against the b34 (a) lines. Part 1's sign written ꝍ is two signs
+(a 6 with a top bar = r; a z-hook over o = s, part 2's ꝛo); a flat-topped g with a flag is d (pudiera, pedir, sin
+duda, auditor); a reversed c with a stroke is q (conquistar, asiento que, ynquietud); the angle sign is ñ (compañia,
+engañados, cuñado, dañaria); part 2's "ges" is qes = es (es justo, escusa, esperanças, restitucion). 124 lines change;
+the transcription and 25 doubtful signs were frozen by SHA-256 before decoding. One pre-registered measure on those
+lines, with one fixed key built from b34's own values: -2.423 against -2.453 per character for b34 (a), all 400
+controls below (a quote-tracking bug in the frozen script skipped about half the portion; fixed, -2.507 vs -2.518,
+controls below). With the 95% rule ff. 141v-146v go from 72.0% to 78.7% of tokens sure or probable (re-read lines
+70.5% -> 80.0%), so R9660 stays under the bar (`_check_reading` clean share unchanged, 0.175 -> 0.167); most of what is left is the ~100 unattested code groups. Values used
+only from context (x = r in resolve / restante / Volterra, ε = i in hizieron) are marked probable, not added to the
+key. Details: [`dudout/README.md`](dudout/README.md).
