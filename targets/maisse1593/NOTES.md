@@ -130,7 +130,7 @@ the doubtful signs listed under Remaining gaps.
 
 - [x] siblings: f. 404 (twin of f. 406, partial interlinear) and f. 412 (twin of f. 410) identified
 - [x] clear-pages: Brienne 13 fol. 171r and 193v located
-- [x] known-keys: Tomokiyo's key for this cipher (src/henryiv_Maisse2.png) applied unchanged to six stretches (128 signs) of ff. 404, 406, 410 on 27 Oct 2026; it gives the copies' text (wainut/decode_check.py). The rest of the cipher is not yet transcribed; 11-12 Nov 2026 tested on both whole blocks (`beling/`)
+- [x] known-keys: Tomokiyo's key for this cipher (src/henryiv_Maisse2.png) applied unchanged to six stretches (128 signs) of ff. 404, 406, 410 on 27 Oct 2026; it matches the copies on all six, at 0.79 to 1.00 of signs per stretch (wainut/decode_check.py). The rest of the cipher is not yet transcribed; 11-12 Nov 2026 tested on both whole blocks (`beling/`)
 - [x] print: Berger de Xivrey used to locate the copies
 - [n/a] key-rebuild: the key exists (Tomokiyo); corrected and extended from the leaves (`beling/key/key_full.tsv`, 12 Nov 2026)
 - [x] retry: 11-12 Nov 2026, both blocks transcribed; Tomokiyo's key 0.818 (fail); rebuilt key 0.894 on held-out lines (pass)
@@ -181,7 +181,7 @@ in full: only six stretches (128 signs) of ff. 404, 406 and 410.
    of Rome; the advice not yet to let Cardinal de Gondi and the marquis de Pisany come back, so as to keep the Pope
    from extremes; leaving their moves to the Grand Duke's advice; Gondi's promises; and probably more (see below).
    The repository's summary of f. 410 covers only the part in clear.
-3. **Tomokiyo's key reads these leaves.** Applied unchanged, it gives the copy's text on every stretch: f. 410 cipher
+3. **Tomokiyo's key reads these leaves.** Applied unchanged, it matches the copy on all six stretches (0.79 to 1.00 of signs per stretch; a short test, not whole blocks): f. 410 cipher
    ll. 1-2 (ratio 0.94 and 0.93 against the copy), f. 404 l. 3 (1.00), f. 406 cipher l. 1 (0.91) and two pieces of
    l. 2 (1.00 and 0.79). With 2000 random permutations of the key values no stretch gets above 0.67, and none of the
    four longest (13 to 39 signs) above 0.53. Values confirmed include 27/e, 29/x, 14/p, to/r, 19/i, 23/c, 24/g, 26/n,

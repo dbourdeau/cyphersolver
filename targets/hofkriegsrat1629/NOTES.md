@@ -92,9 +92,9 @@ the writer's spelling: hole rate 0.041 (98 words), so a read share of 0.96.
 Proposed state: **read** (96% of words from the signs; all sentences coherent German; the holes and the one doubtful
 word are in the first sentence).
 
-Content in brief: the Emperor has learned from Kuefstein's letter how he was received at Ofen (Buda) by some 3,000
+Content in brief: the sender (probably the Emperor, the subject being the open opening group) has learned from Kuefstein's letter how he was received at Ofen (Buda) by some 3,000
 Turks, and wants exact information on what troops these were, whether they came from Ofen or from other Turkish places
-and borders, and whether they have dispersed or are still together; the Council writes on his order.
+and borders, and whether they have dispersed or are still together; the Council writes, apparently on the Emperor's order (the subject is the open opening group).
 
 ## Prior art (checked 12 Nov 2026)
 
