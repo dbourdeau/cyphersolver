@@ -1,0 +1,287 @@
+{
+ "schema_version": 1,
+ "target": "waldeck1655",
+ "title": "Count Georg Friedrich of Waldeck to Elector Frederick William, 7 and 14 Sept 1655 (catalogue 2539): cipher passages read with the Elector's key",
+ "documents": [
+  {
+   "id": "w787",
+   "read": "read in part",
+   "shelfmark": "Gelders Archief (Arnhem), 0370 Heren en graven van Culemborg, inv. nr. 1257, scans 787-789",
+   "date": "7 Sept 1655",
+   "year": 1655,
+   "country": "Germany",
+   "route": "Georg Friedrich of Waldeck -> Elector Frederick William",
+   "places": {
+    "from": "unknown",
+    "to": "unknown"
+   },
+   "language": "German",
+   "cleartext_in_document": "interspersed",
+   "pages": 3,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment; register copy with marginal summaries of the clear text."
+   },
+   "length": {
+    "tokens": 238,
+    "distinct": 21,
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription_w787.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "archieven.nl viewer screenshots (headless Chromium, device scale 2, about 2490 x 3400 px)",
+    "image_quality": "good",
+    "notes": "Two passes from crops; the key became evident during pass 1 of scans 793/795, so pass 1 of the other scans and pass 2 were made with the key known. No blind second reader yet."
+   }
+  },
+  {
+   "id": "w813",
+   "read": "read in part",
+   "shelfmark": "Gelders Archief (Arnhem), 0370 Heren en graven van Culemborg, inv. nr. 1257, scans 813-814",
+   "date": "14 Sept 1655",
+   "year": 1655,
+   "country": "Germany",
+   "route": "Georg Friedrich of Waldeck -> Elector Frederick William",
+   "places": {
+    "from": "Königsberg",
+    "to": "unknown"
+   },
+   "language": "German",
+   "cleartext_in_document": "interspersed",
+   "pages": 2,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment."
+   },
+   "length": {
+    "tokens": 282,
+    "distinct": 24,
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription_w813.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "archieven.nl viewer screenshots (headless Chromium, device scale 2, about 2490 x 3400 px)",
+    "image_quality": "good",
+    "notes": "Two passes from crops; the key became evident during pass 1 of scans 793/795, so pass 1 of the other scans and pass 2 were made with the key known. No blind second reader yet."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Simple substitution of single letters by the numbers 1-23 and 33, written dot-separated (\"5.7.\"), with clear German words between the runs and word division kept. a 5, b 10, c 12, d 11, e 4, f 13, g 14, h 17, i 2, k 15, l 16, m 6, n 7, o 1, p 22, r 8, s 9, t 23, u/v 3, w 33 (also written 3.3), x 18, y 19, z 20. A diaeresis over 3 or 1 gives ü or ö; a bar over a number doubles the letter.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-2",
+   "separation": "dots"
+  },
+  "distinct_symbols": 24,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "kept",
+  "notes": "distinct_symbols is the 24 numbers of the two letters: the Elector's 22 letter values, 18 = x (from 'Weixel', 813.c) and 51 (twice, 813.a and 814.12), which is not a letter and from context stands for a person, perhaps the Elector; it may be a code word and is left as [51]. 33 and 3.3 are the same letter w."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment on the register copies. One web search (12 Nov 2026) and the catalogue vetting of 11 Nov 2026 found no edition or decipherment. Erdmannsdörffer, Graf Georg Friedrich von Waldeck (1869), not opened; it draws on the Arolsen archive and may quote the Waldeck side of this correspondence.",
+   "found": "not found"
+  },
+  "inputs": [
+   "images",
+   "sibling key",
+   "cleartext context"
+  ],
+  "attack": "sibling key",
+  "human_role": "WAINUT set the task (catalogue 2539) and the rules; AI language-model agents transcribed, applied the key recovered in targets/friedrichwilhelm1655, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "archieven.nl viewer screenshots (headless Chromium)",
+   "scripts in this folder (viewer capture, crops, mechanical decryption, mark check and word count)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-12",
+  "last_date": "2026-11-12"
+ },
+ "solution": [
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "Scans 787-789 and 813-814 captured from the archieven.nl viewer, as for targets/friedrichwilhelm1655.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "The cipher passages and the clear words next to them transcribed in two passes from crops and reconciled; pass 2 was made with the key known. The clear text between the passages is not transcribed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "sibling key",
+   "what": "The key frozen from the Elector's letter c793 (targets/friedrichwilhelm1655) applied unchanged. These letters were not used to build it: every number in them is in the frozen key except 18 (x, from 'Weixel', added after the freeze) and 51 (twice).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Both letters decrypted mechanically and read as German with every departure marked; scripts/check_marks.py passes.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Independent review by an AI language-model agent: blind spot-check of cipher lines 813.a, 813.b, 787.a, 787.b, 814.05 and 814.07 (with nine lines of the Elector's letters) against the scans, all agreeing; mark check reproduced; reading review grade B for both letters. It found four line ends of 814 where a binding hole was dropped from the reading without a mark.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Fixes after the review: 814.05, 814.07, 814.08 and 814.10 marked {[...]/} (nothing is lost; the word runs on); w813 verbatim falls from 67 to 64 words, repairs rise from 2 to 5. scripts/reading.py now fails on any unmarked dropped hole. Sentence texts shipped in work/.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "recovered",
+  "method": "read with known key",
+  "method_basis": "The key recovered for the Elector's letters (targets/friedrichwilhelm1655, frozen on c793) applied unchanged; number 51 is outside it (a code word for a person).",
+  "contribution": [
+   "transcription"
+  ],
+  "fraction_read": 0.9,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "All cipher passages of the two letters; the clear text between them is not transcribed.",
+  "verification": [
+   "independent verification",
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "cipher passages read with the frozen key of friedrichwilhelm1655",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "cipher of the scans named, from viewer screenshots",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "independent AI language-model agent, blind to the solver's transcription: 15 cipher lines (about 190 numbers) copied from the scans, all agree; mark check, frozen key and held-out test reproduced; reading review per document. No human palaeographer.",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "key or decipherment used",
+    "note": "the key recovered and frozen in targets/friedrichwilhelm1655 (same contributor)",
+    "date": "2026-11-12"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "w787",
+    "label": "7 Sept 1655, six passages",
+    "transcription": "transcription_w787.txt",
+    "decryption": "decryption_w787.txt",
+    "reading": "reading_w787.md",
+    "translation": "translation_w787.md",
+    "language": "de",
+    "state": "read in part",
+    "summary": "Conditions with Sweden could hardly be worse; letters sent to Jacob Weiher, Elbing and Danzig; will speak to the Bishop of Ermland; Danzig offers ships; vivres against cartage money or security; news to General Sparr.",
+    "note": "Passages only. 106 words (about 63 clear), 99 verbatim (93.4%), 1 repair, 6 fills, 4 holes; clean share 0.889.",
+    "reading_review": {
+     "grade": "B",
+     "by": "independent AI language-model agent (blind review)",
+     "date": "2026-11-12",
+     "note": "Only the cipher passages are edited and the clear text between them is left out, so several passages are fragments; 788.20-24 has 4 holes."
+    }
+   },
+   {
+    "doc": "w813",
+    "label": "Königsberg, 14 Sept 1655",
+    "transcription": "transcription_w813.txt",
+    "decryption": "decryption_w813.txt",
+    "reading": "reading_w813.md",
+    "translation": "translation_w813.md",
+    "language": "de",
+    "state": "read in part",
+    "summary": "Weiher offers help; Vistula boats ordered at Marienwerder; Magnus reports that Thorn resolves to defend itself and plans a meeting with Danzig, Elbing and the three voivodes on the Vistula, and is not unwilling to help [51].",
+    "note": "72 words, 64 verbatim (88.9%), 5 marked repairs (four of them line ends in the binding where nothing is lost, marked {[...]/}), 3 fills, 2 holes ([51] twice); checker clean share 0.833 on the sentence text.",
+    "reading_review": {
+     "grade": "B",
+     "by": "independent AI language-model agent (blind review)",
+     "date": "2026-11-12",
+     "note": "The sentences hold. [51] (twice) is unresolved; reading it as the Elector is a guess."
+    }
+   }
+  ],
+  "key_file": [
+   "key.tsv",
+   "key_frozen.tsv"
+  ],
+  "gaps": [
+   {
+    "item": "Clear text of both letters",
+    "blocker": "not-attempted",
+    "detail": "Only the cipher passages and the clear words next to them are edited; several passages of w787 are fragments for this reason."
+   },
+   {
+    "item": "Number 51 (813.a, 814.12)",
+    "blocker": "open-codes",
+    "detail": "Not a letter; from context a person, perhaps the Elector. Reading it as the Elector is a guess."
+   },
+   {
+    "item": "788.20-788.24 and the line ends of 788",
+    "blocker": "needs-physical-access",
+    "detail": "Four holes; letters lost in the binding."
+   },
+   {
+    "item": "787.a 'S{i/c}hweden'",
+    "blocker": "illegible",
+    "detail": "2 or 12 not settled on the image."
+   },
+   {
+    "item": "'Magnus' (814.01)",
+    "blocker": "not-attempted",
+    "detail": "Not identified with certainty."
+   },
+   {
+    "item": "Prior art: Erdmannsdörffer, Graf Georg Friedrich von Waldeck (1869)",
+    "blocker": "not-attempted",
+    "detail": "May quote the Waldeck side of this correspondence; no usable full text found (12 Nov 2026)."
+   },
+   {
+    "item": "Blind second reading of the cipher",
+    "blocker": "not-attempted",
+    "detail": "Pass 2 was made with the key known; the independent review's blind spot-check of six lines agrees fully."
+   }
+  ]
+ }
+}
