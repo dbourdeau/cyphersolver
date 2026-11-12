@@ -1,0 +1,5 @@
+# Translation: P.S. to the letter of Cöslin, 4 September 1655 (scans 797-798)
+
+English of `reading_ps797.md`, with the same holes.
+
+Also, worthy and well-born councillor, especially dear and faithful: it is Our most gracious order to you that, as soon as you have arrived there as ordered, you send out some fifty horsemen, who are to find out where Our march is going and, if they meet Us, bring you a report; and in case We are already ahead of them, they are to follow Us. You are also to send out small parties of five or six horsemen with the same order, each of which is to reconnoitre and bring back sure news of all parties. You are also to have a work or entrenchment built on this side of the Vistula [...] for about five hundred foot, so that We can in any case stay there. Should some danger appear there, you can have the troops [...] in ships, which you are to take care to provide, and s[...] have them ready at once at [...], quickly [...] have them put across. As in the letter: Cöslin, 4 Sept. [...]
