@@ -37,6 +37,7 @@ hdl.huntington.org (page ids below).
 | mssBLA 188, copies of 3 letters, 29 June 1729 | 60924 | 60917, 60918 (left leaf), 60919, 60920 |
 | letter of 14 July 1729 | 60892 | 60887 (extracts); 60886 is the clear text of the same letter |
 | letter of 4 Aug 1729 (enclosure "not sent") | 60914 | 60907, 60908, 60909 |
+| mssBLA 194, 1729, undated (code letter with decipherment) | 60898 | 60893, 60894 (`beling/transcription/sib194_*.txt`) |
 
 Images: `https://hdl.huntington.org/iiif/2/p15150coll7:<page id>/full/3000,/0/default.jpg` (wider than about 3000 px is
 refused); region crops `.../pct:x,y,w,h/1800,/0/default.jpg`. Page lists:
@@ -115,19 +116,63 @@ L05-L07 now give "comme je [285]is agir après le départ du [214], car Monsieur
 des se[711]s pour moi, Monsieur, dans l'affaire passée". Context proposals (805 obligation, 1210 six, 585 ig, 1152 vos,
 222 conduite, 285 do) stay in the list above and in `decryption/open_groups_slots.txt`, not in the reading.
 
+## Sibling pages read and a held-out check, 11 Nov 2026 (Andrew Beling, `beling/`)
+
+Contributed by Andrew Beling with AI agents. Details in `beling/README.md`; the plan was written first in
+`beling/PREREG.md`. [V] = checked on the image or in output, [I] = inference.
+
+- The unread pages (60915, 60916, 60921, 60922, 60903-60906, 60910-60912, 60961, 60962, 60964) carry no new glossed
+  code [V] (`beling/transcription/pages_survey.tsv`). 60916's code strip is the edge of 60917. None of the 15 open
+  groups occurs in the five transcribed siblings (but see round 2: 1118 in mssBLA 194).
+- **60903-60904 is the clear copy of the coded 4 Aug letter**: the passages coded on 60907-60908 are written out in
+  square brackets [V] (`beling/transcription/clear_4aug_brackets.tsv`).
+- Held-out check (pre-registered): the table rebuilt without the 4 Aug glosses, aligned to that clear copy, matches
+  158 of 170 tokens (0.929); 200 shuffled tables best 0.171, margin 0.759: pass [V]. The full table: 205/214.
+- Table values the clear copy settles [V], none in the report: 701 mo and 594 is ("j'aimois"), 191 c'est (60907 L19),
+  791 ois ("faisois"), 869 perdu, 880 plustot, 829 pl, 169 com, 900 pris. 12 = a stands (60917 L14, a clear 2) [V].
+  974 stands alone for "répondu" on 60907 L05, as in the report's "j'y ai [974] ce" [V there, I in the report].
+- Dating: 60916 names Cesnok's letter "of the 5. of May", and 60917 L05 answers "votre lettre du cinq ma-y" [V];
+  the report's "votre lettre du [6]" follows that style [I].
+- Open groups, value-finding only, all [I] (`beling/results/open_group_values.md`): strong 585 ig, 1152 vos, 285 do,
+  1210 six (1206-1213 run deux to neuf without a break); good 222 conduite, 805 obligation; fair 689 m (a second m,
+  like the two l and l' groups), 1052 servi(ce), 836 pr ("à l'accommodement près"), 214 comte; weak 726 (the leaf
+  reads 726 [V], the sense wants 926 que), 460, 1118 (see round 2); open 711, 6. Nothing is promoted; the report
+  stays decoded, not read.
+- Round 2 (plan in `beling/PREREG_round2.md`, inputs frozen first):
+  - Print search: no clear text of the report or of any coded passage found. HMC *Polwarth* (Marchmont's papers)
+    vols I-IV stop in 1725; vol. V (1725-80) searched inside on HathiTrust has no hit for "Port St. Mary", "cipher" or
+    "Cadiz" (3 for "Pareti") [V]; Coxe's *Kings of Spain* and *Walpole* have nothing [V]. The covering letters from
+    "Cesnok" are Marchmont's; his note of 8 Aug 1729 (61001) says the two letters he forwarded were of 14 and 21 July
+    [V]. [I] The report is probably the coded part of the 21 July letter; the correspondent may be the Abbé Pareti.
+  - mssBLA 194 (60893-60894), a code letter with full interlinear decipherment, transcribed in full
+    (`beling/transcription/sib194_*.txt`). The table without any 194 gloss matches 89 of 93 firm 194 glosses
+    (0.957; 200 shuffled tables best 0.065; pass) [V].
+  - **1118 is glossed "tain"** in 194 (60893 L14, "974 163 1118" = "reponse cer-tain"; gloss retouched in darker
+    ink) [V]: the only glossed occurrence of an open group. It was seen before the round-2 plan was written, so it is
+    an observation, not a test. In the report it gives "je lui ai fait [tain] bon [?servi]ce", which does not read;
+    "tant" is the nearest sense [I, weak].
+  - 60917 L02 and L17 read **369** (e), not 869 [V, full-resolution crops]: the first figure has this hand's
+    flat-topped 3, not its two-loop 8 (870, 1268 on the same lines). 869 = perdu is glossed in 194 too. 60917 L16
+    "880" reads **830** (plus, "plus-ie-u-r-s") [V].
+  - 60909 is the code part of a later letter dated 3 Nov 1729, on its own leaf, filed with the 4 Aug letter (whose
+    catalogue entry counts 2 cipher pages, 60907-60908) [V leaf and catalogue; I placement]: it asks for 250 pounds,
+    a bill drawn three months before having come back unaccepted, and the 4 Aug letter had asked on whom to draw.
+    No letter of that date is in the Huntington file [V].
+  - `beling/results/full_table.tsv`: the full construction, one row per group (439) with every gloss and
+    clear-copy attestation and a conflict flag (20 rows); `codetable.tsv` is not changed.
+
 ## Remaining gaps
 
-- code groups 805, 6, 1210, 689, 460, 285, 214, 711, 1118, 1052, 726, 836, 585, 1152, 222
-  (16 tokens; 84, 65, 816, 937 and 1019 were filled from issue #189) - blocker: open-codes; each occurs once or twice, no parallel text; only the alphabetical bracket narrows them
+- code groups 805, 6, 1210, 689, 460, 285, 214, 711, 1118, 1052, 726, 836, 585, 1152, 222 (16 tokens; 84, 65, 816, 937 and 1019 were filled from issue #189) - blocker: open-codes; only 1118 occurs elsewhere (mssBLA 194, glossed "tain", which does not give sense in the report); the unread sibling pages have no new code and no printed clear text was found (11 Nov 2026, `beling/`); slot-and-context proposals in `beling/results/open_group_values.md`, all [?]
 - the 3 doubtful values 974 (répon-: répondu/répondez/réponse), 666 (lu/eu) and 122 (bon?) - blocker: open-codes
 - the English translation of the reading is not written yet
 
 ## Escalation
 
-- [x] siblings: five letters of the same file transcribed (187, 188, 14 July, 4 Aug); 188's 60916 and the 4 Aug clear pages 60903-60905, 60910-60912 not yet read for further coded passages
+- [x] siblings: five letters of the same file transcribed (187, 188, 14 July, 4 Aug); the remaining pages (188's 60915-60916, 60921-60922; 4 Aug 60903-60906, 60910-60912; 187's 60961-60962, 60964) read 11 Nov 2026: no new code; 60903-60904 is the clear copy of the 4 Aug code, used as a held-out check of the table (`beling/`)
 - [x] clear-pages: 21 July letter and 14 July clear text checked; nothing from the report
 - [n/a] known-keys: no other key of this series is known; the siblings are the key source
-- [ ] print: not searched (Calendar of State Papers, Coxe's Memoirs of the Kings of Spain, Keene/Patiño/Stanhope editions)
+- [x] print: searched 11 Nov 2026 (`beling/README.md` section 5): HMC Polwarth I-V, Coxe (Kings of Spain, Walpole), TNA and BL catalogues; no clear text of the report or of any coded passage. Left: the 3 "Pareti" pages of HMC Polwarth V (search-only online), and the forwarded originals in SP 94 / the Newcastle papers (manuscript)
 - [x] key-rebuild: alphabetical bracketing done (`slots.py`); no annealing run
 - [x] retry: decode re-run after every table change; reading re-checked with `reading.py`
 
@@ -137,11 +182,8 @@ des se[711]s pour moi, Monsieur, dans l'affaire passée". Context proposals (805
    (expect: 121 firm, 3 doubtful, 16 open; "reading consistent with the table").
 2. Re-zoom the doubtful digits on the scans (list below), then fix `transcription/*.txt` and re-run step 1.
 3. Compare the clear 14 July text (HDL 60886) with the extracts on 60887 line by line, to promote glosses to firm.
-4. Read the unread leaves for more coded passages: HDL 60916 (188 first leaf), 60903-60905 and 60910-60912 (4 Aug
-   clear pages), 60961-60962 (187 clear pages), and add them as `transcription/sib*.txt`; then
-   `python3 build_table.py && python3 decode.py && python3 slots.py > decryption/open_groups_slots.txt`.
-5. Print search for the three correspondents (Keene, Patiño, Stanhope) and the Port Sainte-Marie reports in
-   State Papers Foreign Spain 1729; a printed extract could give plaintext for the open groups.
+4. Done 11 Nov 2026 (`beling/`): no new code on the unread pages.
+5. Done 11 Nov 2026 (`beling/`): nothing printed found; next, HMC Polwarth V in a library (index: Pareti) and SP 94 for 1729.
 6. Run the validation where the corpora are reachable: `PYTHONUTF8=1 python3 docs/_validate.py newcastle1729 --write`.
 7. Write the English translation (`decryption/report_61005_en.txt`), add it to `outcome.texts[0].translation`, add the
    `decode_updates/queue.json` entry (report not on DECODE: `new_records`, key file `codetable.tsv`), then
@@ -162,7 +204,11 @@ session (johonn opens it); mark unconfirmed values `[?word]`.
   are June to August. The date after "du [6]" and "ce [?six] de [689]ars" decides it.
 - 945 vs 947: which is "ri" and which "re/ra" (adresse, mariage); the copyists' 5 and 7 are easily confused.
 - 6 (single digit, numeral block): six? the date of the letter answered.
-- Whether the 188 hand's "3" (descending tail) is read as 8 in any line I took as 869 (e): check 60917 L02, L17.
+- [settled 11 Nov 2026] 60917 L02 and L17 read 369, not 869 (full-resolution crops; `beling/results/table_notes.md`).
+  Proposed transcription fix: sib188_60917.txt L02 and L17 869=e -> 369=e; L16 880=plus -> 830=plus.
+- [settled 11 Nov 2026, I] 60909 is the code part of a letter of 3 Nov 1729 on its own leaf, filed with the 4 Aug letter.
+- 1118 is glossed "tain" in mssBLA 194 (L14, "cer-tain"; retouched): what does it mean in the report's "fait [1118] bon"?
+- 60887 L15: a clear 880 glossed "plus"; 880 = plustot in the 4 Aug clear copy. Check against the clear 14 July text 60886.
 
 ## Checker output (docs/_check_writeup.py newcastle1729, 28 Oct 2026)
 
