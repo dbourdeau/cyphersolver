@@ -1,13 +1,13 @@
 {
  "schema_version": 1,
  "target": "vibejuel1651",
- "title": "Peder Vibe to Peder Juel, Danish resident in Stockholm, 1649-1655, cipher passages of 21 letters or pages (catalogue 2527, Rigsarkivet TKUA Sverige): shift-per-word cipher with two alphabets recovered and validated on a held-out set; cipher words read, nomenclator open: read in part",
+ "title": "Peder Vibe to Peder Juel, Danish resident in Stockholm, 1651-1655, cipher passages in the new alphabet (\"ny Alphabet\") of 11 letters or pages (part of catalogue 2527, Rigsarkivet TKUA Sverige): shift-per-word alphabet and opener table recovered from a gloss of the time, nomenclator open: read in part",
  "documents": [
   {
-   "id": "ra-tkua-sverige-juel-261583-vibe-1649-1655",
+   "id": "ra-tkua-sverige-juel-261583-vibe-1651-1655",
    "read": "read in part",
-   "shelfmark": "Copenhagen, Rigsarkivet, TKUA, Speciel del, Sverige, Resident Peder Juels og Mogens Hoegs gesandtskabsarkiver, Ordrer og breve m.m. 1648-55 (leaves stamped Ny kongl. Saml. Fol. 1299 e); Arkivalieronline unit 261583, images 62-93 (Vibe); images 57, 58, 60 hold three letters of [O.] Krag of 1648, not read",
-   "date": "11 Jan 1649 to 6 May 1655",
+   "shelfmark": "Copenhagen, Rigsarkivet, TKUA, Speciel del, Sverige, Resident Peder Juels og Mogens Hoegs gesandtskabsarkiver, Ordrer og breve m.m. 1648-55 (leaves stamped Ny kongl. Saml. Fol. 1299 e); Arkivalieronline unit 261583, images 77-93",
+   "date": "1651 to 6 May 1655",
    "year": 1651,
    "country": "Denmark",
    "route": "Peder Vibe (Copenhagen; later Bierreds and Flensborg) -> Peder Juel, Danish resident in Stockholm",
@@ -16,7 +16,7 @@
     "to": "Stockholm"
    },
    "language": "Danish",
-   "pages": 21,
+   "pages": 11,
    "cleartext_in_document": "interspersed",
    "plaintext": {
     "location": [
@@ -26,7 +26,7 @@
     "partial": true
    },
    "length": {
-    "tokens": 543,
+    "tokens": 222,
     "unit": "mixed",
     "measured": true,
     "file": "transcription.txt"
@@ -35,7 +35,7 @@
     "by": "llm from images",
     "source": "Arkivalieronline images of unit 261583 (full size); images not reproduced",
     "image_quality": "fair",
-    "notes": "543 tokens in Vibe's letters = 400 cipher words in letters + 143 nomenclator codes (the Krag letters, 29 groups + 5 codes, apart). Transcribed number by number by Claude Opus 5.5 agents (11 Nov 2026); the two held-out sets were transcribed and hashed before any decryption (frozen/working/transcr/); everything was re-read at native zoom after the measurements (transcription.txt). No human re-reading."
+    "notes": "222 units = 149 cipher words in letters (split words joined) + 73 nomenclator code tokens (49 different numbers), counted at integration from transcription.txt and reading.md (the PR's table had 150 words and 75 codes for these letters; image 77 has 22 words, image 93 has 24 codes, and the code 545 on image 78 is now a C token). Transcribed number by number by the contributor's AI agents (11 Nov 2026); the held-out sets were transcribed and hashed before any decryption (frozen/working/transcr/); everything was re-read at native zoom after the measurements. At verification about 95 numbers of image 83 left agreed with the image. No human re-reading."
    }
   }
  ],
@@ -44,7 +44,7 @@
    "polyalphabetic",
    "nomenclator"
   ],
-  "summary": "Shift cipher with the shift chosen per word: each cipher word is an opener (1-3 or 24-39) giving a shift k, then body numbers = rank of the letter + k. Old cipher (gamle Ciffres, 1649-51): 23 letters, cyclic mod 23, k = -(opener mod 3). New alphabet (ny Alphabet, 1651-55): 25 letters a...u w x y z oe, not cyclic, openers 24-29 -> 0, 30-34 -> 1, 35-39 -> 2, 1-3 -> 3. Two- to four-digit nomenclator codes between the words; clear Danish between the cipher passages.",
+  "summary": "Shift cipher with the shift chosen per word: each cipher word is an opener (1-3 or 24-39) giving a shift k (24-29 -> 0, 30-34 -> 1, 35-39 -> 2, 1-3 -> 3), then body numbers = rank of the letter + k in a 25-letter alphabet a...u w x y z ø, not cyclic; two- to four-digit nomenclator codes between the words; clear Danish between the cipher passages.",
   "symbol_kind": "digits",
   "distinct_symbols": "unknown",
   "homophones": {
@@ -65,12 +65,12 @@
    "used": false
   },
   "key_order": "alphabetical",
-  "notes": "Vibe names both ciphers in clear (image 62, 11 Jan 1649: 'dett ny Alphabet' to come, meanwhile 'woris forige gamble Ciffres'). Numbers are marked off by small ticks below the line; a word may be split in pieces with their own openers. In 1655 (N. 167) a new nomenclator runs to 1771. Nomenclator kinds are inferred from context only; no code is identified. Letter numbers run 1-39 (openers 1-3 and 24-39); codes are two to four digits."
+  "notes": "Vibe announces the new alphabet in clear (image 62, 11 Jan 1649: 'dett ny Alphabet' is to be sent). Numbers are marked off by small ticks below the line; a word may be split in pieces with their own openers; 32/33/34 in the body stand for 1/2/3. 49 different code numbers, none identified and none shared with the old-cipher letters; in 1655 (N. 167) a new list runs to 1771. Nomenclator kinds are inferred from context only."
  },
  "conditions": {
   "prior_solution": {
    "exists": "partial",
-   "where": "Partial interlinear decipherment of the time on N. 319 (image 78) only. Catalogue 2527 vetting (Daniel Bourdeau, 11 Nov 2026): DECODE, Tomokiyo, Lasry nothing. Fryxell 1836 gives a Swedish abstract of Juel's register of outgoing letters without the cipher passages. Our web search of 11 Nov 2026 found no edition.",
+   "where": "Partial interlinear decipherment of the time on N. 319 (image 78) only. Catalogue 2527 vetting (Daniel Bourdeau, 11 Nov 2026): DECODE, Tomokiyo, Lasry nothing. Fryxell 1836 gives a Swedish abstract of Juel's register of outgoing letters without the cipher passages. The contributor's web search of 11 Nov 2026 found no edition. Not searched again at verification or integration.",
    "found": "before attempt",
    "used": true
   },
@@ -79,18 +79,18 @@
    "crib"
   ],
   "attack": "crib",
-  "human_role": "Brice Dudout chose the target and set the rules (every decipherment goes to Daniel; a partial reading may be published if explained; protocol hashed before each single measurement). Claude Opus 5.5 agents transcribed, found the system, wrote and ran the protocols, read and wrote up. No human read the reading.",
+  "human_role": "Brice Dudout chose the target and set the rules (protocol hashed before each single measurement; a partial reading may be published if explained). His AI agents transcribed, found the system, wrote and ran the protocols, read and wrote up. No human read the reading. At integration (12 Nov 2026) the project re-ran the scripts, split the target by key and recounted.",
   "models": [
    "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout (transcription, system, protocols, measurements, reading, write-up)"
   ],
   "first_date": "2026-11-11",
-  "last_date": "2026-11-11"
+  "last_date": "2026-11-12"
  },
  "solution": [
   {
    "date": "2026-11-11",
    "kind": "transcription",
-   "what": "Cipher passages of images 57-93 transcribed number by number; the held-out sets hashed before any decryption; all re-read at native zoom afterwards.",
+   "what": "Cipher passages of images 77-93 transcribed number by number by the contributor's agents; the held-out sets hashed before any decryption; all re-read at native zoom afterwards.",
    "result": "worked"
   },
   {
@@ -110,7 +110,7 @@
     "statistical test",
     "language-model scoring"
    ],
-   "what": "Test 1 (hashed protocol): one opener table for the whole unit, held-out images 74, 77, 79 right (54 words, 335 numbers): M1 -3.068 vs best of 600 controls -3.281, margin 0.21 < 0.30: failed. Cause found after: N. 330 is in the old cipher (cyclic alphabet, k = -(opener mod 3)).",
+   "what": "Test 1 (pre-registered; protocol hashed before the set was opened, by the contributor's record): one opener table for the whole unit, that of N. 319, 23-letter alphabet; held-out images 74 (N. 330), 77 (N. 316), 79 right (N. 334), 54 words, 335 numbers. M1 -3.068 against a best of 600 controls of -3.281: margin 0.21, under the bar of 0.30. FAILED; not measured again. Cause found afterwards: N. 330 is in the old cipher.",
    "result": "failed"
   },
   {
@@ -120,7 +120,7 @@
     "statistical test",
     "language-model scoring"
    ],
-   "what": "Test 2 (hashed protocol): opener table learned per letter, controls with the same optimisation, new held-out images 81, 83, 84, 87, 90 (55 words, 339 numbers): M1 -2.713 vs best of 300 controls -3.555, margin 0.841; readable Danish sentences: passed.",
+   "what": "Test 2 (pre-registered after test 1 failed, with the rule changed: opener table learned on each letter, controls with the same optimisation): new held-out images 81, 83, 84, 87, 90 (55 words, 339 numbers, all in the new alphabet). M1 -2.713 against a best of 300 controls of -3.555: margin 0.841 over the bar of 0.30; readable Danish sentences. Passed. It validates the shift-per-word system, not a fixed table.",
    "result": "worked"
   },
   {
@@ -129,46 +129,64 @@
    "technique": [
     "contextual inference"
    ],
-   "what": "All 21 letters or pages read with the two fixed tables (new alphabet with w and oe added after the test): 400 cipher words, 345 certain, 45 probable, 2 restored, 8 unresolved = 97.5%; 143 nomenclator codes not identified (71.8% all counted). Krag letters of 1648: other system, not solved.",
+   "what": "After the measurements: the alphabet found to have 25 letters with w and ø; openers that looked out of table shown to be word-division errors; the 11 letters or pages read with the one fixed table: 149 cipher words (132 certain, 14 probable, 1 restored, 2 unresolved); 73 nomenclator codes not identified.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Independent verification of PR #410 before integration: tests 1 and 2 re-run from frozen/ with the 11 archive.org corpus texts, identical figures including the learned tables; all frozen hashes match; a second decoder gives the same decryption; about 95 numbers of image 83 left agree with the transcription. Later controls, after the fact: the fixed new table with no fitting on held-out set 2 scores M1 -2.611 against a best control of -3.174 (margin 0.563); it scores -1.987 against a best of -2.568 for 200 random opener tables on the final transcription; the three images of test 1 scored separately give -3.980 vs -3.125 (image 74, old cipher), -2.353 vs -2.961 (77) and -2.632 vs -3.094 (79); a per-letter refit of k agrees with the fixed tables for 383 of 403 words of both ciphers.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Integration: target split by key (new alphabet here; the old cipher of 1649-1651 to vibejuel1649; the unsolved Krag letters of 1648 to a lead); eval() replaced by ast.literal_eval in scripts/decode.py with byte-identical output; counts taken again from the files (149 words, 73 code tokens; the PR had 150 and 75); the code 545 opening N. 319 made a C token; outcome.key set to partial, fraction_read 0.980, codes_open 73, read_share 0.658; validation restated (test 1 failed, test 2 on a changed rule validates the system only); reading read as sentences against the translation (grade B).",
+   "result": "worked"
   }
  ],
  "outcome": {
   "class": "read in part",
-  "key": "recovered",
+  "key": "partial",
   "method": "key recovered based on adjacent plaintext",
-  "method_basis": "The system was found on the one letter with a partial interlinear decipherment of the time (N. 319), validated on a held-out set of five letters never opened before, and applied to every letter; the old cipher was then identified from Vibe's own remark (image 62) and read on its letters. The nomenclator is not recovered.",
+  "method_basis": "The system and the opener table were found on the one letter with a partial interlinear decipherment of the time (N. 319, image 78) and applied to every letter in the new alphabet; a pre-registered test of the shift-per-word system passed on five letters never opened before, after a first test had failed. The nomenclator is not recovered.",
   "contribution": [
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.718,
+  "fraction_read": 0.98,
+  "fraction_coherent": 0.658,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading.md: 390 of 543 tokens (400 cipher words in letters + 143 nomenclator codes counted as holes) = 71.8%. Cipher words in letters alone: 345 certain + 45 probable = 390/400 = 97.5% (2 restored, 8 unresolved). Held-out set 2 re-read after the measurement: 50/51 = 98.0%.",
+  "fraction_read_source": "reading.md: 146 of 149 cipher words in letters given a value (132 certain + 14 probable; 1 restored and 2 unresolved are holes) = 98.0%. The 73 nomenclator code tokens are counted apart (codes_open); with them as holes the read share is 146/222 = 65.8% (texts[].read_share).",
   "verification": [
    "statistical test",
    "contemporary decipherment",
    "historical consistency"
   ],
   "validation": {
-   "date": "2026-11-11",
-   "verdict": "pass",
+   "date": "2026-11-12",
+   "verdict": "weak",
    "file": "validation.txt",
-   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): PROTOCOLE-2 SHA-256 62f533215e6f50db2f83079607851d27a68007e8821f46fff3076ab889d8ce4c, hashed with the scorer before the set was opened; held-out images 81, 83, 84, 87, 90 (55 words, 339 numbers): M1 -2.713 vs best of 300 controls -3.555, margin 0.841 (criterion +0.30); sense criterion met. One word of image 87 had been deciphered mentally before the hash (declared). Test 1 (one table for the unit) failed with margin 0.21; cause given in validation.txt."
+   "notes": "Contributor's pre-registered held-out tests (not docs/_validate.py). Test 1 FAILED: one opener table (that of N. 319) for the whole unit, M1 -3.068 against a best of 600 controls of -3.281, margin 0.21 under the bar of 0.30; one of its three held-out letters (N. 330) is in the old cipher. The rule was then changed (declared): test 2 learns the opener table on each letter; on five new-alphabet letters never opened (PROTOCOLE-2 SHA-256 62f533215e6f50db2f83079607851d27a68007e8821f46fff3076ab889d8ce4c) M1 -2.713 against a best of 300 controls of -3.555, margin 0.841: PASSED. Test 2 validates the shift-per-word system, not the fixed table of key.tsv. One word of image 87 had been deciphered mentally before the hash (declared). Both results reproduce exactly. Later control at verification, after the fact: the fixed table with no fitting on held-out set 2, M1 -2.611 against -3.174. Order of events by the contributor's record."
   },
   "provenance": "contributed",
   "credits": [
    {
     "who": "contemporary",
     "role": "key or decipherment used",
-    "note": "the partial interlinear decipherment of the time on N. 319 (image 78), from which the system was found",
+    "note": "the partial interlinear decipherment of the time on N. 319 (image 78), from which the system and the opener table were found",
     "date": "1651"
    },
    {
     "who": "dudout",
     "role": "solution",
-    "note": "transcription of images 57-93; shift-per-word system with its two alphabets and opener tables recovered and validated on a held-out set (margin 0.841); 21 letters or pages read in part (cipher words 97.5%, 71.8% with the codes as holes) and translated; Claude Opus 5.5 agents for Brice Dudout",
-    "date": "2026-11-11"
+    "note": "transcription of images 77-93; the new alphabet (25 letters, opener table) recovered from the gloss of N. 319; two pre-registered tests, the first failed and reported, the second passed (margin 0.841); 11 letters or pages read in part and translated; the work was done by his AI agents",
+    "date": "2026-11-11",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/410"
    },
    {
     "who": "bourdeau",
@@ -179,42 +197,52 @@
   ],
   "gaps": [
    {
-    "item": "143 nomenclator codes of Vibe's letters (211, 228, 257, 422, 872 ...; the 1655 list up to 1771)",
-    "blocker": "open-codes",
-    "detail": "no code list in the unit; only 349 and 561 defined in clear (image 80); Juel's replies, the rest of NKS 1299 e at the Royal Library or a code list in the Juel papers could give them"
+    "item": "73 nomenclator code tokens (49 numbers: 222, 353, 397, 770, 872, 876, 879 ...; the 1655 list up to 1771)",
+    "blocker": "no-key-material",
+    "detail": "no code list in the unit and the gloss of N. 319 covers letters only; 349 and 561 are defined in clear (image 80) but their names are read as probable only; Juel's replies, the rest of NKS 1299 e at the Royal Library or a code list in the Juel papers could give them"
    },
    {
-    "item": "eight unresolved cipher words (images 62, 64, 69 x2, 71, 72, 78, 93)",
+    "item": "two unresolved cipher words (image 78: 31.34.26.13.20; image 93: 30.?.9.2.14=5.6.20)",
     "blocker": "illegible",
-    "detail": "blots, tears and confused ticks at the resolution served online; listed in reading.md"
+    "detail": "a blot after the opener on image 93; a word read clearly but glossed only \"°m t\" on image 78"
    },
    {
-    "item": "three letters of [O.] Krag, 1648 (images 57, 58 left, 60 right; 29 groups, 5 codes)",
-    "blocker": "too-short",
-    "detail": "another system (dotted numbers 1-36); about 160 numbers, too few for a homophonic solve; other Krag letters would be needed"
+    "item": "14 probable words not checked against the images at verification",
+    "blocker": "illegible",
+    "detail": "each correction rests on a single number at the limit of the microfilm scans served online; listed with its reason in reading.md"
+   },
+   {
+    "item": "prior art outside the repository not searched again at verification",
+    "blocker": "needs-physical-access",
+    "detail": "the Royal Library's NKS 1299 e fol. and the Danish printed collections are not online in full"
    }
   ],
   "texts": [
    {
-    "doc": "ra-tkua-sverige-juel-261583-vibe-1649-1655",
-    "label": "Peder Vibe to Peder Juel, 1649-1655, cipher passages of 21 letters or pages",
+    "doc": "ra-tkua-sverige-juel-261583-vibe-1651-1655",
+    "label": "Peder Vibe to Peder Juel, 1651-1655, cipher passages in the new alphabet of 11 letters or pages",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
     "reading": "reading.md",
     "translation": "translation.md",
     "language": "da",
     "state": "read in part",
-    "read_share": 0.718,
-    "summary": "News of the Danish court from Copenhagen, 1649-1655: rivalries to win #211, discontent of sailors and people over assignments on the revenues, the High Steward kept away by discontent, a quarrel over an arrest and an alleged murder plot, the Norwegian fleet; a seal to be copied, servants debauched to get letters of #872, how to win #370 from #422; Würtz ennobled in Sweden, fireships built by #222, a border meeting; an opened letter, and ships to lie in the Sound (1655). The codes are not identified.",
+    "read_share": 0.658,
+    "summary": "Secret passages of Vibe's letters from Copenhagen, Bierreds and Flensborg, 1651 to May 1655: a seal of #876 to be copied from wax impressions; a servant debauched to get a packet of letters, and work to intercept letters of #872; #353 and #397 leaving for #770 with an instruction, and a border meeting (1653); Würtz said to be ennobled by #222; fireships built by #222; an opened letter of #879 (1654); a design that leaves the States General perplexed, and ships to lie in the Sound (1655). The 49 code numbers that name the actors are not identified.",
     "reading_review": {
      "grade": "B",
-     "by": "Claude Opus 5.5 agent for Brice Dudout",
-     "date": "2026-11-11",
-     "note": "Read as Danish sentences of 1649-1655 against decryption.txt: the cipher words construe with the clear words around them and the translation follows; 97.5% of cipher words read (45 only probable, 2 restored, 8 unresolved), but the 143 nomenclator codes are not identified, so who does what is often open; grade B, read in part. AI agents only; no human read the reading; not re-checked blind on the images."
+     "by": "Brice Dudout's AI agents; re-read at integration by an AI agent for the project",
+     "date": "2026-11-12",
+     "note": "Contributor: read as Danish sentences by AI agents only; no human read it. Integration (PR #410): reading.md read letter by letter against decryption.txt and translation.md; the cipher words construe with the clear words around them and the translation follows; but 73 code tokens stand for the persons and places, so who does what is mostly open; images 87 and 93 are fragments; 14 words are only probable, 1 restored, 2 unresolved: grade B, read in part. Not re-checked against the images at integration apart from the head of N. 319."
     }
    }
   ],
   "key_file": "key.tsv",
-  "notes": "New reading: no decipherment of these letters was known beyond the partial gloss of N. 319. The key (both alphabets and opener tables) is reusable (key.tsv, CC BY 4.0), e.g. for p. 115 of Juel's register (lead 2553, not part of this target), which is in the old cipher. If codes are counted apart, the cipher words read at 97.5%; we leave the class to you. No image or derivative of the Rigsarkivet scans is included."
+  "notes": "Split by key on 12 Nov 2026 (one key, one entry): the old cipher of 1649-1651 is targets/vibejuel1649. frozen/ holds the files of both tests. No decipherment of these letters was known beyond the partial gloss of N. 319. Prior art was not searched again at verification or integration.",
+  "codes_open": {
+   "open": 49,
+   "total": 49,
+   "tokens_open": 73
+  }
  }
 }

@@ -12,7 +12,7 @@ line; "C<n>" = nomenclator code (left as {n}); [ ... ] = clear text of the lette
 (decoded all the same). A line "#A <alphabet>" selects the alphabet (B = ny Alphabet, A23x = gamle Ciffres) and
 "#K {opener: k, ...}" the opener table; "#S <label>" starts a new section. Other "#" lines are comments.
 usage: python3 scripts/decode.py transcription.txt > decryption.txt"""
-import re, sys
+import ast, re, sys
 
 ALPHS = {'B': ('abcdefghiklmnopqrstuwxyzø', False), 'A23x': ('abcdefghiklmnopqrstuxyz', True)}
 
@@ -37,7 +37,7 @@ def main(path):
         if line.startswith('#A '):
             alph, cyc = ALPHS[line.split()[1]]; continue
         if line.startswith('#K'):
-            tab = eval(line[2:]); continue
+            tab = ast.literal_eval(line[2:].strip()); continue
         if line.startswith('#') or not line.strip():
             continue
         res = []

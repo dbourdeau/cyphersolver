@@ -1,0 +1,29 @@
+vibejuel1649 - validation (old cipher, "gamle Ciffres", 1649-1651)
+
+Verdict: the rule of this cipher has NO pre-registered held-out test, and the one pre-registered test that included a letter in
+it FAILED. The files of both tests are in targets/vibejuel1651/frozen/ (protocols in French, hashes, scripts, held-out
+transcriptions, outputs); the contributor's full record is targets/vibejuel1651/validation.txt.
+
+1. Test 1 (PROTOCOLE.md, by the contributor's record hashed 11 Nov 2026 14:44, before the set was opened) - FAILED.
+   - Declared: ONE opener table for the whole unit, that of N. 319 (24-29 -> 0, 30-34 -> 1, 35-39 -> 2, 1-3 -> 3), 23-letter
+     alphabet. Held out: images 74 (N. 330), 77 (N. 316), 79 right (N. 334); 54 words, 335 numbers.
+   - Criterion: M1 (mean log-probability per character, 4-gram model of old Danish) >= best of 600 controls + 0.30.
+   - Result (MESURE.out): M1 -3.068; best control -3.281; margin 0.21 < 0.30. FAILED. Not measured again.
+   - Cause, found after the measurement: N. 330 (image 74, 20 Sep 1651) is in the old cipher, which the frozen table cannot read.
+2. The old-cipher rule (cyclic alphabet of 23 letters, k = -(opener mod 3)) was worked out on N. 330 after test 1, that is on a
+   set already measured and opened. It was then applied to the letters of 1649-50. It was never frozen and tested on unseen
+   letters.
+3. Test 2 (PROTOCOLE-2.md; rule changed after test 1, declared) passed with a margin of 0.841, but its held-out set (images 81,
+   83, 84, 87, 90) is all in the new alphabet, and it learns the opener table per letter. It supports the shift-per-word system
+   that both ciphers share. It says nothing on the old cipher's alphabet or opener rule.
+
+Other evidence (not pre-registered):
+   - Vibe writes in clear on image 62 (11 Jan 1649) that he is using "woris forige gamble Ciffres" until the new alphabet comes.
+   - One fixed rule decodes all eleven sections into Danish words that construe with the clear text around them: 244 of 250
+     cipher words given a value (reading.md).
+   - Later controls made at verification (12 Nov 2026, after the fact):
+       image 74 scored alone with the frozen table of test 1: -3.980 against a best control of -3.125 (worse than chance);
+       the fixed old-cipher rule against 200 random opener tables on the final transcription: -1.926 against a best of -2.536;
+       a per-letter refit of k on all 22 sections of both ciphers agrees with the fixed tables for 383 of 403 words;
+       image 74 against the image: about 110 numbers agree; frychter and at read off directly.
+Scope. The nomenclator is not covered: none of the 68 code tokens (22 numbers) has a value.

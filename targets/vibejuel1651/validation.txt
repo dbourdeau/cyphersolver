@@ -1,3 +1,21 @@
+vibejuel1651 - validation (new alphabet, 1651-1655)
+
+INTEGRATION PREFACE (12 Nov 2026). The contributor's record follows unchanged below the line; it was written when the old cipher
+and the new alphabet were one target. Read it with these four points:
+  1. Test 1 FAILED: declared, one opener table (that of N. 319) for the whole unit; M1 -3.068 against a best control of -3.281,
+     margin 0.21, bar 0.30.
+  2. The rule was changed after that result (declared by the contributor): test 2 learns the opener table on each letter.
+  3. Test 2 PASSED (M1 -2.713, best control -3.555, margin 0.841, bar 0.30) on five letters in the new alphabet. It validates the
+     shift-per-word system, not the fixed table of key.tsv, and not the old cipher (targets/vibejuel1649), whose rule never had
+     a pre-registered test. The "Summary: system VALIDATED" line below is to be read in that sense.
+  4. Both results reproduce exactly (verification, 12 Nov 2026). Later controls made at verification, after the fact: the fixed
+     new table with no fitting on held-out set 2 scores M1 -2.611 against a best control of -3.174 (margin 0.563); against 200
+     random opener tables on the final transcription it scores -1.987 against -2.568; the three images of test 1 scored
+     separately with the frozen table give -3.980 vs -3.125 (image 74, old cipher), -2.353 vs -2.961 (77), -2.632 vs -3.094 (79).
+  The order of events (hash before opening) is by the contributor's record: one commit, self-declared timestamps.
+  Counts after the split and recount: 149 cipher words, 146 given a value; 73 code tokens (see reading.md). The figures 400, 143
+  and "21 letters or pages" below are the contributor's for both ciphers together.
+--------------------------------------------------------------------------------------------------------------------------------
 vibejuel1651 - validation (contributor's pre-registered held-out test, not docs/_validate.py)
 Summary: system VALIDATED by the second test. On a held-out set never opened before (5 images, 55 words, 339 numbers), the
 decode scores M1 = -2.713 (mean log-probability per character under a 4-gram model of old Danish), against at most -3.555 for 300
