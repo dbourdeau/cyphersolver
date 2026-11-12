@@ -65,3 +65,16 @@ Everything is declared, including the earlier failures of the previous key K-Guy
    this repo's French lexicon and to a French text corpus, now "REDACTED-storage-location"). All other files match.
    K-Guy1780c.tsv, measure.py, calibrate.py, calibrate_result.txt, calibrate2.py and calibrate2_result.txt are byte for byte
    the hashed files.
+
+7. Integration note (12 Nov 2026, project; see NOTES.md "Integration check").
+   - Re-run by an independent verifier with the repository lexicon alone: S = 0.695 (82/118), best controls 0.559 / 0.636,
+     rank 1/401, 0 of 2,000 further controls as high (maximum 0.661). The small differences from section 4 come from the
+     training clears, whose words were added to the contributor's lexicon and which are not in the repository.
+   - What the test covers: 8 of the 118 held-out groups carry a context-only value, 6 values (26, 134, 138, 149, 453, 717) of
+     the 59 the key takes from context. With the pair-derived values alone S = 0.619. The other 53 context-only values are
+     not tested by it.
+   - frozen/AVENANT-C09.md says "written at 21 h 20 CET", but it was hashed at 21:18:04 and the measurement ran at 21:18:10
+     (the two stamped files). "21 h 20" is a rounded or mistaken time in the protocol's header; the frozen file is left as sent.
+   - The order of events (freeze at 14:07, portion fixed on 28 Oct, the diff incident) is by the contributor's record: one
+     commit, no outside timestamp.
+   - The two cipher/clear pairs and K-Guy1780b.tsv are not in the repository; the pair-derived values could not be verified here.
