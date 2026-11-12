@@ -63,3 +63,28 @@ run (text only) were tested on the first plate: 3 of 9 confirmed by the shapes, 
 unresolved words is OX (o), already in K4 (checked on the reserved part of the 1 April letter: o 42 times out of 44).
 Key K4 unchanged; only the transcription changed. Count on the same letter (ff. 67r-67v): 481 words 86.3% -> 478 words
 310 / 107 / 8 / 53 = 87.2%; still read in part. Details: `BLIND-REREADING.md`.
+
+## Integration check (12 Nov 2026)
+
+On integration of PR #416 the project recounted the files; an independent verifier's report is the basis of this section.
+
+- The counts reproduce from `reading.md` (segments weighted by their word numbers): 481 words = 313 / 102 / 8 / 58 = 86.3%
+  on `origin/main`, and 478 = 310 / 107 / 8 / 53 = 87.2% now; f. 67r 311 words, 89.7%, and f. 67v 167 words, 82.6%. Read in
+  part either way; the target stays in progress.
+- Key K4 is unchanged: no difference in `key_K4.tsv` or `validation.txt`. Only the transcription changed, 17 tokens at 16
+  places on ff. 67r-67v, and every change of `decryption.txt` follows from a token change. A second decoder written from
+  `key_K4.tsv` matches `decryption.txt` on 43 of 46 lines; the other 3 differ only in whether a sign without a value is
+  printed "?".
+- **Four, not three, TS -> LS changes.** `BLIND-REREADING.md` names three long s re-read from TS (t) to LS (m); the
+  transcription has four such changes. The other token changes are 3 TS -> OX, {ZR|ZO} -> NEW_ZB, 2 {LS|TS} -> LS,
+  2 {S1|B9} -> B9, {HASH|GG} -> GG, HASH -> GG, 2 OX -> INF, QB -> QH, and one "?" inserted; all fit the three plates.
+- A small discrepancy in the plate arithmetic: the plates account for 76 TS occurrences (69 confirmed, 2 hesitations, 5
+  other), which would leave 71 first-label TS; the transcription has 73. Two are unaccounted for; the count is not affected.
+- **Key hash.** `BLIND-REREADING.md` quotes SHA-256 b39635fe... for `key_K4.tsv`; the file in the repository hashes to
+  8cfd785b..., the same on main before this PR. The quoted hash is probably that of the contributor's working copy.
+- Support for the new words: {demande}, {s'offre}, {semblable}, {Lesdiguieres} and {n'obiectant} rest on re-read shapes;
+  {lassera} and {de} {me} {uoir} rest on a machine proposal and the key only, as the contributor declares.
+- Not checked: the images (DECODE R2253 serves only a thumbnail without a login), the plates, their rules and answers
+  (not in the repository), so "rule hashed before the answers" is by the contributor's record.
+- `_check_reading.py`: 21 of 40 sentences clean, 0.525. F. 67r reads as French sentences; f. 67v is patchy.
+

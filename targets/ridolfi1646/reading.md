@@ -60,11 +60,11 @@ Then in clear: "Di Roma li 8 Maggio 1646".
 
 431 words (each nomenclator group counts as one word; 26 nomenclator groups): 390 certain, 27 probable, 9 restored,
 5 unresolved (after the blind re-reading of 11 Nov 2026 below; before it: 378 / 27 / 21 / 5).
-- **certain + probable = 417/431 = 96.8%**: over the 95% bar, so **read** (was 405/431 = 94.0%, read in part);
+- **By this project's count: 396/431 = 91.9%, under the 95% a complete reading needs** (was 384/431 = 89.1%). The count leaves out the
+  unresolved codes, the restored words and the 21 nomenclator values given by the sense alone (integration check, NOTES.md);
+- certain + probable, the contributor's count, which takes those 21 code values as read: 417/431 = 96.8% (was 405/431 = 94.0%);
 - with the 9 restored words: 426/431 = 98.8% (unchanged);
-- certain alone: 90.5% (was 87.7%);
-- leaving out also the 21 nomenclator values given by the sense alone (the stricter count of the integration check, NOTES.md):
-  396/431 = 91.9% (was 384/431 = 89.1%).
+- certain alone: 90.5% (was 87.7%).
 Per page (certain / probable / restored / unresolved): p. 1 93/7/3/0; p. 2 97/7/2/1; p. 3 88/6/2/4; p. 4 88/4/1/0;
 p. 5 24/3/1/0 (frozen/v2/decompte_v2.out: the same counting script as frozen/scripts/decompte.py, run on frozen/v2/lecture-v2/,
 a copy of the readings where the 12 confirmed words have lost their restoration marks).
