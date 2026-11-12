@@ -4,7 +4,7 @@
 1. Scan 819: mechanical decryption of the cipher with the frozen key against the summary decipherment written in the
    margin at the time (gloss_819_margin.txt): word alignment and letter agreement.
 2. Scan 797: the two interlinear glosses against the frozen-key decryption of the groups under them.
-3. Documents not used to build the key (ps797, ps717, l819, and ../waldeck1655): units not in the frozen key."""
+3. Documents not used to build the key (ps797, ps717, l819, w787, w813): units not in the frozen key."""
 import difflib, re, sys, pathlib, unicodedata
 sys.stdout.reconfigure(encoding='utf-8')
 HERE = pathlib.Path(__file__).resolve().parent; ROOT = HERE.parent
@@ -36,7 +36,7 @@ for groups, g in (('9.1. 11.5.16.11.', 'so bald'), ('20.3.7.4.11.8.1.', 'zu dero
     r = difflib.SequenceMatcher(None, d.replace(' ', ''), g.replace(' ', '')).ratio()
     print(f'   {groups:18} -> {d!r:12} gloss {g!r:10} letter ratio {r:.2f}')
 print('3. units not in the frozen key, documents not used to build it')
-for f in ['transcription_ps797.txt', 'transcription_ps717.txt', 'transcription_l819.txt', '../waldeck1655/transcription_w787.txt', '../waldeck1655/transcription_w813.txt']:
+for f in ['transcription_ps797.txt', 'transcription_ps717.txt', 'transcription_l819.txt', 'transcription_w787.txt', 'transcription_w813.txt']:
     n = miss = 0; odd = []
     for l in (ROOT / f).read_text(encoding='utf-8').splitlines():
         if l.startswith('#'): continue

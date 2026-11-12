@@ -4798,6 +4798,30 @@
    "year": 1814,
    "found": 2026,
    "note": "A surviving sheet of the State Department's numerical code, NARA M97 roll 13 frames 1056-1057, printed by Weber (1979) as WE028; working transcription in targets/morris1813/beling/key/codebook_M97_13_transcription.csv (seven entries blank, eleven disputed). The same code as the table rebuilt in targets/jqa (k-jqa1385)."
+  },
+  {
+   "id": "k-friedrichwilhelm1655",
+   "label": "Elector Frederick William and Georg Friedrich of Waldeck, 1655: letters as numbers 1-23 and 33 (recovered by WAINUT from the clear words of the letter of 4 Sept 1655)",
+   "kind": "rebuilt here",
+   "by": "WAINUT",
+   "year": 1655,
+   "note": "22 values frozen from the Elector's letter of Cöslin, 4 Sept 1655 (the clear words around the runs and the name Krockow), 18 = x added from Waldeck's letter of 14 Sept; the margin note on scan 819 and two glosses on scan 797 were used only as a check. The Elector's four pieces and Waldeck's two letters of 7 and 14 Sept read with it; 51 (twice, in Waldeck's letter) has no value. targets/friedrichwilhelm1655/key.tsv."
+  },
+  {
+   "id": "k-fuerstenberg1659",
+   "label": "Fürstenberg to Brabeck, Vienna 1659: two alternating shifts (1 and 8) on a 24-letter alphabet (recovered by WAINUT)",
+   "kind": "rebuilt here",
+   "by": "WAINUT",
+   "year": 1659,
+   "note": "A Vigenère with the key bi on the alphabet a-z without j and v, the count restarting at each of the five cipher runs; found from the ciphertext alone (index of coincidence of the odd and even places, a frequency fit of each). targets/fuerstenberg1659/key.tsv."
+  },
+  {
+   "id": "k-fuerstenberg-sheet",
+   "label": "Schlüssel zur Ziffer-Schrift filed with W 004 Nr. 52 (A 10, B 12, C 16 ... Z 56)",
+   "kind": "archive key",
+   "by": "Landesarchiv NRW (filed leaf, image 86)",
+   "year": null,
+   "note": "A letter-to-number table filed with the letter of 10 July 1659; the letter itself is in letters, not numbers, and a search for a mapping from the table to its cipher found nothing, so it is another cipher of the same correspondence. Transcribed in targets/fuerstenberg1659/key_sheet_086.tsv."
   }
  ],
  "links": [
@@ -7734,6 +7758,18 @@
    "target": "morris1813",
    "how": "adapted",
    "note": "The block reversal was first found on frame 0039 by fitting this table (WAINUT, 27 Oct 2026): function-word share 0.353 against at most 0.297 for 20,000 random block orders; the later readings use the code sheet itself (k-we028)"
+  },
+  {
+   "key": "k-friedrichwilhelm1655",
+   "target": "friedrichwilhelm1655",
+   "how": "rebuilt from",
+   "note": "22 values recovered from the clear words of the letter of 4 Sept 1655 and frozen; applied unchanged to the other three pieces of the Elector and to Waldeck's two letters (18 = x added; 51 has no value)"
+  },
+  {
+   "key": "k-fuerstenberg1659",
+   "target": "fuerstenberg1659",
+   "how": "rebuilt from",
+   "note": "two shifts recovered from the ciphertext alone; all five runs read"
   }
  ],
  "sources": [
@@ -8998,6 +9034,14 @@
   {
    "source": "s-cyphersolver",
    "key": "k-wackerbarth-s1"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-friedrichwilhelm1655"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-fuerstenberg1659"
   }
  ],
  "unlinked": {
@@ -10296,6 +10340,11 @@
    "key": "k-we028",
    "target": "king1797",
    "note": "the WE028 sheet in both block orders against King's key: 757 and 752 numbers in common, none with the same value, no constant offset (targets/king1797/NOTES.md)"
+  },
+  {
+   "key": "k-fuerstenberg-sheet",
+   "target": "fuerstenberg1659",
+   "note": "the filed number table does not fit the letter cipher (the letter has no numbers; a search for a letter-to-digit mapping found nothing): another cipher (12 Nov 2026)"
   }
  ]
 }

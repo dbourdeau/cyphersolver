@@ -17,6 +17,7 @@ ATLAS = ROOT / 'docs' / 'atlas.json'
 NEW_PLACES = {
     'Beijing': [39.904, 116.407],  # army1901: Fukushima in Peking, 1901
     'Stralsund': [54.309, 13.082],  # wackerbarth1717: the Saxon camp before Stralsund, November 1715
+    'Münster': [51.962, 7.626],  # fuerstenberg1659: the dean Brabeck at Münster, July 1659
     'Taku': [38.970, 117.700], 'Hiroshima': [34.385, 132.455],  # army1901in: telegrams from Taku and Hiroshima, 1901
     'Białystok': [53.133, 23.164], 'Nieśwież': [53.222, 26.667], 'Kaunas': [54.899, 23.904],  # branicki1757 (Branicki's seat; the Radziwiłł seat; the Russian army's magazines, 1757)
     'Monzón': [41.910, 0.190], 'Palermo': [38.116, 13.361],  # gonzaga1542 (Charles V at Monzón, Ferrante Gonzaga viceroy of Sicily)

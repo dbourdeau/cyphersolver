@@ -75,7 +75,9 @@ slip); 0 from a gloss; 0 holes. Proper names and spellings are kept as the signs
 konditione beside conditione in P5, Lindenspur, reichsdalers, uberwexelen). `scripts/check_marks.py` rebuilds the
 decryption from transcription and frozen key and fails on any unmarked departure; it passes.
 
-State proposed: **read** (98.1% of words read as sense from the signs, no holes).
+State: **read**. Strict count (README read bar): 52 of 54 words verbatim from the signs (96.3%), because the word on
+an uncertain sign (wor{t?}) and the repaired word (quo{b/d}) are not counted as read signs. The contributor's own count
+was 53 of 54 (98.1%), with wor{t?} counted as verbatim; it is theirs and is not used for the headline.
 
 Dan's reading checker (docs/_check_reading.py, origin/main 54c4ecc65), recorded as it is:
 
@@ -116,6 +118,23 @@ then re-ran the scripts and Dan's reading checker and read the text as sentences
   spelling; the translation matches. State **read**, grade **A**.
 - Changes made from the review: 85.4 fourth sign written `c?` and marked {t?} in the reading; the P1 translation
   now brackets the supplied words ("[I have] understood [this]").
+
+## Integration check (12 Nov 2026)
+
+By a second AI language-model reader that is not the contributor; no human palaeographer.
+
+- `decrypt.py`, `check_marks.py`, `heldout.py` re-run (159/159 and 185/186 reproduce); an own decoder from the two shifts
+  gives the same text on all five runs.
+- Controls with the German model `de-1640s`, per letter: true shifts (1, 8) -3.90; best of the other 575 shift pairs
+  -7.62; mean of those pairs -9.53 (sd 0.51); 500 random substitution-alphabet pairs, mean -9.53, max -7.87; 300 within-run
+  shuffles of the ciphertext under the true key, max -8.09. The five runs are 38, 60, 88, 73 and 86 letters (345 in all,
+  54 words); the key has two parameters, so there is no room to overfit.
+- Image 085 (Landesarchiv NRW, public jpg): the ten cipher lines of the first page, read at reduced size, agree in line breaks and signs;
+  full-resolution crops of 85.4 (the fourth sign is an open c with a small tick, as `c?`) and of 85.9-85.10 agree. Image
+  086 (lines 86.1-86.5) not compared.
+- The filed key sheet (image 086, a letter-to-number table) is another system: the letter contains no numbers, so the
+  catalogue entry's wording "ciphered letter with its key" is misleading for this cipher; the entry is closed.
+- Strict read share: 52 of 54 words (96.3%), see Reading.
 
 ## Prior art (checked 12 Nov 2026)
 

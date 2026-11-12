@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "friedrichwilhelm1655",
- "title": "Elector Frederick William of Brandenburg to Count Georg Friedrich of Waldeck, Aug-Sept 1655 (catalogue 2539): letter-for-number substitution recovered from the ciphertext, held out against a summary decipherment of the time on scan 819",
+ "title": "Elector Frederick William of Brandenburg and Count Georg Friedrich of Waldeck, Aug-Sept 1655 (catalogue 2539): letter-for-number substitution recovered from the clear passages and the ciphertext, checked against a summary decipherment of the time on scan 819; the Elector's four pieces and Waldeck's two letters share the key",
  "documents": [
   {
    "id": "c793",
@@ -142,19 +142,89 @@
     "image_quality": "good",
     "notes": "Two passes from crops; the key became evident during pass 1 of scans 793/795, so pass 1 of the other scans and pass 2 were made with the key known. No blind second reader yet."
    }
+  },
+  {
+   "id": "w787",
+   "read": "read in part",
+   "shelfmark": "Gelders Archief (Arnhem), 0370 Heren en graven van Culemborg, inv. nr. 1257, scans 787-789",
+   "date": "7 Sept 1655",
+   "year": 1655,
+   "country": "Germany",
+   "route": "Georg Friedrich of Waldeck -> Elector Frederick William",
+   "places": {
+    "from": "unknown",
+    "to": "unknown"
+   },
+   "language": "German",
+   "cleartext_in_document": "interspersed",
+   "pages": 3,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment; register copy with marginal summaries of the clear text."
+   },
+   "length": {
+    "tokens": 238,
+    "distinct": 21,
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription_w787.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "archieven.nl viewer screenshots (headless Chromium, device scale 2, about 2490 x 3400 px)",
+    "image_quality": "good",
+    "notes": "Two passes from crops; the key became evident during pass 1 of scans 793/795, so pass 1 of the other scans and pass 2 were made with the key known. No blind second reader yet."
+   }
+  },
+  {
+   "id": "w813",
+   "read": "read in part",
+   "shelfmark": "Gelders Archief (Arnhem), 0370 Heren en graven van Culemborg, inv. nr. 1257, scans 813-814",
+   "date": "14 Sept 1655",
+   "year": 1655,
+   "country": "Germany",
+   "route": "Georg Friedrich of Waldeck -> Elector Frederick William",
+   "places": {
+    "from": "Königsberg",
+    "to": "unknown"
+   },
+   "language": "German",
+   "cleartext_in_document": "interspersed",
+   "pages": 2,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment."
+   },
+   "length": {
+    "tokens": 282,
+    "distinct": 24,
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription_w813.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "archieven.nl viewer screenshots (headless Chromium, device scale 2, about 2490 x 3400 px)",
+    "image_quality": "good",
+    "notes": "Two passes from crops; the key became evident during pass 1 of scans 793/795, so pass 1 of the other scans and pass 2 were made with the key known. No blind second reader yet."
+   }
   }
  ],
  "system": {
   "types": [
    "monoalphabetic"
   ],
-  "summary": "Simple substitution of single letters by the numbers 1-23 and 33, written dot-separated (\"5.7.\"), with clear German words between the runs and word division kept. a 5, b 10, c 12, d 11, e 4, f 13, g 14, h 17, i 2, k 15, l 16, m 6, n 7, o 1, p 22, r 8, s 9, t 23, u/v 3, w 33 (also written 3.3), x 18, y 19, z 20. A diaeresis over 3 or 1 gives ü or ö; a bar over a number doubles the letter.",
+  "summary": "Simple substitution of single letters by the numbers 1-23 and 33 (the Elector's pieces) with 18 = x and a code number 51 in Waldeck's letters, written dot-separated (\"5.7.\"), with clear German words between the runs and word division kept. a 5, b 10, c 12, d 11, e 4, f 13, g 14, h 17, i 2, k 15, l 16, m 6, n 7, o 1, p 22, r 8, s 9, t 23, u/v 3, w 33 (also written 3.3), x 18, y 19, z 20. A diaeresis over 3 or 1 gives ü or ö; a bar over a number doubles the letter.",
   "symbol_kind": "digits",
   "digit_groups": {
    "width": "1-2",
    "separation": "dots"
   },
-  "distinct_symbols": 22,
+  "distinct_symbols": 24,
   "diacritics": {
    "used": true
   },
@@ -162,19 +232,19 @@
    "used": false
   },
   "nomenclator": {
-   "present": false
+   "present": "unknown"
   },
   "nulls": {
    "present": false
   },
   "key_order": "random",
   "word_division": "kept",
-  "notes": "distinct_symbols is the 22 numbers of the four letters in this folder (18 = x occurs only in targets/waldeck1655). 33 and 3.3 are the same letter w (written vv). No nulls, homophones or code words were found in the Elector's pieces. The writer slips now and then (11 for 10 in 'bald', 15 for 16 in 'also', 19 for 14, 13 for 11, 12 for 11); each slip is marked in the readings. Scans 723-724 (17 Aug 1655) are in a different code of numbers up to four digits mixed with letters and are not treated."
+  "notes": "distinct_symbols is the 24 numbers of the six documents: the 22 letter values of the Elector's four pieces, 18 = x (only in Waldeck's w813, from 'Weixel') and 51 (twice, w813 813.a and 814.12), which is not a letter and from context stands for a person, perhaps the Elector; it is the one open code and is left as [51], so the nomenclator is recorded as unknown. 33 and 3.3 are the same letter w (written vv). No nulls or homophones. The writer of the Elector's pieces slips now and then (11 for 10 in 'bald', 15 for 16 in 'also', 19 for 14 in 'gestatten', 12 for 11 in 'landtag' (checked on the image at integration; the transcription had 13), 12 for 11 in 'würde'); each slip is marked in the readings. Scans 723-724 (17 Aug 1655) are in a different code of numbers up to four digits mixed with letters and are not treated."
  },
  "conditions": {
   "prior_solution": {
    "exists": "in archive",
-   "where": "Scan 819 carries a summary decipherment of its cipher in the left margin, in another hand of the time, and scan 797 two interlinear glosses (so bald, zu dero). Both were held out and not used to build the key. No edition or modern decipherment found: one web search (12 Nov 2026); catalogue vetting of 11 Nov 2026 (Urkunden und Actenstücke VII opened, the Cöslin letter is not printed; DECODE and Cryptiana have nothing). Erdmannsdörffer, Graf Georg Friedrich von Waldeck (1869), not opened; it may quote these letters.",
+   "where": "Scan 819 carries a summary decipherment of its cipher in the left margin, in another hand of the time, and scan 797 two interlinear glosses (so bald, zu dero). Both were held out and not used to build the key. No edition or modern decipherment found: one web search (12 Nov 2026); catalogue vetting of 11 Nov 2026 (Urkunden und Actenstücke VII opened, the Cöslin letter is not printed; DECODE and Cryptiana have nothing). Erdmannsdörffer, Graf Georg Friedrich von Waldeck (1869): not opened by the contributor; searched at integration in two online Fraktur OCR copies with no hit, but the OCR is too poor to exclude a quotation. The catalogue entry of 11 Nov 2026 already said that scan 819 'may be a contemporary decipherment (not read)', so the note was known to exist before the work; that it was not used for the key rests on the contributor's record (one commit per PR, no external timestamp). Waldeck's register copies carry marginal summaries of the clear text only.",
    "found": "before attempt",
    "used": false
   },
@@ -184,7 +254,7 @@
    "crib"
   ],
   "attack": "crib",
-  "human_role": "WAINUT set the task (catalogue 2539) and the rules; AI language-model agents transcribed, recovered and froze the key, ran the held-out test, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "human_role": "WAINUT set the task (catalogue 2539) and the rules; AI language-model agents transcribed, recovered and froze the key, applied it to Waldeck's two letters, ran the held-out test, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
   "tools": [
    "archieven.nl viewer screenshots (headless Chromium)",
    "scripts in this folder (viewer capture, crops, mechanical decryption, held-out test, mark check and word count)"
@@ -251,31 +321,132 @@
    "kind": "reading",
    "what": "Fixes after the review: 794.09-794.10 marked so the binding hole stays on its line (dr{[...]/ü}-); scripts/reading.py now also fails when a [...] or [nn] of the decryption is dropped from a reading without a mark; the sentence texts used for the clean share are shipped in work/. No count changed.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 2474 tokens, 26 types, de-1640s order 4: reading -2.245 per letter; random keys -6.617 (z 8.5); key annealed onto shuffled ciphertext best -4.169 (mean -4.226, z 61.3); annealer on the real text -2.245. Verdict: pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "Waldeck letters (w787, w813): Scans 787-789 and 813-814 captured from the archieven.nl viewer, as for targets/friedrichwilhelm1655.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "Waldeck letters (w787, w813): The cipher passages and the clear words next to them transcribed in two passes from crops and reconciled; pass 2 was made with the key known. The clear text between the passages is not transcribed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "sibling key",
+   "what": "Waldeck letters (w787, w813): The key frozen from the Elector's letter c793 (targets/friedrichwilhelm1655) applied unchanged. These letters were not used to build it: every number in them is in the frozen key except 18 (x, from 'Weixel', added after the freeze) and 51 (twice).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Waldeck letters (w787, w813): Both letters decrypted mechanically and read as German with every departure marked; scripts/check_marks.py passes.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Waldeck letters (w787, w813): Independent review by an AI language-model agent: blind spot-check of cipher lines 813.a, 813.b, 787.a, 787.b, 814.05 and 814.07 (with nine lines of the Elector's letters) against the scans, all agreeing; mark check reproduced; reading review grade B for both letters. It found four line ends of 814 where a binding hole was dropped from the reading without a mark.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Waldeck letters (w787, w813): Fixes after the review: 814.05, 814.07, 814.08 and 814.10 marked {[...]/} (nothing is lost; the word runs on); w813 verbatim falls from 67 to 64 words, repairs rise from 2 to 5. scripts/reading.py now fails on any unmarked dropped hole. Sentence texts shipped in work/.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Integration check (12 Nov 2026), by a second AI language-model reader, not the contributor: all scripts re-run (heldout.txt, check_marks, decryptions identical); own decoder from key.tsv agrees on ps717 and l819 letter for letter; scans 819, 717, 795 and 813 fetched from the viewer and 111 groups (558 numbers) compared: l819 lines 4-15, ps717 lines 8-14, 795.06-795.14 and 813.a-c: one number and one clear word wrong (see the next step).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Corrections from the image check: 819.11 last group is 16.5.7.12 (c), not 16.5.7.13 (f), so the slip is 'lanctag' (12 for 11), not 'lanftag'; the clear word at 795.06 is 'auß', not 'auch' ('durch vorspan auß Pommern'; translation 'from Pomerania'). Held-out score unchanged (196/209). Decryptions rebuilt, check_marks passes.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Waldeck's folder (targets/waldeck1655, PR #471) folded into this one: one key, one entry. Outcome recomputed over the six documents with the strict rule (verbatim words only count as read): 704 of 760 words (92.6%), read in part; documents ps717 (95.8%) and l819 (96.9%) reach the bar. Method set to key recovered based on adjacent plaintext (the clear words of the same letter and the name Krockow gave the key, not ciphertext alone).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "literature search",
+   "what": "Integration: Erdmannsdörffer, Graf Georg Friedrich von Waldeck (1869), fetched as text from archive.org (grafgeorgfriedri00erdmuoft and bub_gb_-E06AAAAcAAJ, Fraktur OCR with long-s errors) and searched with OCR-tolerant patterns for Krockow, Cöslin, Radziwill, Danzig, Marienwerder, Culemborg and Chiffre/Ziffer: no hit; the OCR is too poor to exclude a quotation of the letters.",
+   "result": "partial"
   }
  ],
  "outcome": {
+  "validation": {
+   "date": "2026-11-12",
+   "model": "de-1640s",
+   "file": "validation.tsv",
+   "tokens": 2474,
+   "types": 26,
+   "tokens_per_type": 95.15,
+   "score": -2.245,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -6.617,
+     "sd": 0.515,
+     "max": -5.221,
+     "z": 8.5,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -4.226,
+     "sd": 0.032,
+     "max": -4.169,
+     "z": 61.3,
+     "p": 0.1429
+    }
+   },
+   "power": -2.245,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.245; polyphony 0.0; 2 unread tokens left out; annealer on the real text from random keys reached -2.245"
+  },
   "class": "read in part",
-  "key": "recovered",
-  "method": "key recovered from ciphertext-only",
-  "method_basis": "Simple substitution of letters by numbers 1-33; solved from the clear words and the name Krockow in c793, frozen, then tested on the margin decipherment of scan 819 (196 of 209 letters in order, 0.938) and the two glosses of scan 797.",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Simple substitution of letters by numbers; the key was found in c793 from the clear words around the runs and the name Krockow (an outside guess), frozen, then tested on the margin decipherment of scan 819 (196 of 209 letters in order, 0.938) and the two glosses of scan 797, and applied unchanged to Waldeck's two letters (51 has no value).",
   "contribution": [
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.6,
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "Four of the six cipher pieces in the volume (the Elector's), not counting the large-number code of scans 723-724; Waldeck's two letters are in targets/waldeck1655.",
+  "fraction_read": 0.926,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Six documents, words as counted by scripts/reading.py (clear words included): 704 of 760 verbatim; repairs, context fills and holes count as not read (strict README rule). Scans 723-724 (another code) not treated. The clear text of Waldeck's letters, scan 819 lines 1-3 and the clear opening lines of 793 are not cipher and are not transcribed in full.",
   "verification": [
    "contemporary decipherment",
    "independent verification",
-   "historical consistency"
+   "historical consistency",
+   "statistical test"
   ],
   "provenance": "contributed",
   "credits": [
    {
     "who": "contemporary",
-    "role": "key or decipherment used",
-    "note": "the summary decipherment in the left margin of scan 819 and the two interlinear glosses on scan 797, used only as the held-out test of the frozen key",
+    "role": "prior solution",
+    "note": "the summary decipherment in the left margin of scan 819 and the two interlinear glosses on scan 797; not used for the key (by the contributor's record), only as the held-out check",
     "date": "1655",
     "source": "Gelders Archief 0370 inv. 1257, scans 797 and 819"
    },
@@ -296,6 +467,12 @@
     "role": "verification",
     "note": "independent AI language-model agent, blind to the solver's transcription: 15 cipher lines (about 190 numbers) copied from the scans, all agree; mark check, frozen key and held-out test reproduced; reading review per document. No human palaeographer.",
     "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "the frozen key applied to Waldeck's letters w787 and w813",
+    "date": "2026-11-12"
    }
   ],
   "texts": [
@@ -314,8 +491,9 @@
      "grade": "B",
      "by": "independent AI language-model agent (blind review)",
      "date": "2026-11-12",
-     "note": "The prose holds throughout; 21 context fills, mostly evident letters lost at the binding, and 4 holes. 'Nebro' is not identified, and the clear words 'durch vorspan auch Pommern' (795.06) may read 'aus' and should be checked on the scan."
-    }
+     "note": "The prose holds throughout; 21 context fills, mostly evident letters lost at the binding, and 4 holes. 'Nebro' is not identified, and the clear word at 795.06 was checked on the image at integration: 'auß', not 'auch'."
+    },
+    "read_share": 0.909
    },
    {
     "doc": "ps797",
@@ -333,7 +511,8 @@
      "by": "independent AI language-model agent (blind review)",
      "date": "2026-11-12",
      "note": "The orders for patrols and the entrenchment read cleanly. The last two sentences (798.06-08) have 3 holes and are thin, and one clear word (797.20) is not read."
-    }
+    },
+    "read_share": 0.938
    },
    {
     "doc": "ps717",
@@ -351,7 +530,8 @@
      "by": "independent AI language-model agent (blind review)",
      "date": "2026-11-12",
      "note": "95.8% verbatim, 3 marked writer's slips, no holes; the sentences hold."
-    }
+    },
+    "read_share": 0.958
    },
    {
     "doc": "l819",
@@ -363,13 +543,52 @@
     "language": "de",
     "state": "read",
     "summary": "Radziwill gives to understand that they see no course but to place themselves under the Elector's protection; a general Prussian diet should be called by the Bishop of Ermland and the Elector should bring it about.",
-    "note": "64 words, 62 verbatim (96.9%), 2 repairs, no holes; clean share 1.00. A summary decipherment of the time stands in the margin.",
+    "note": "64 words, 62 verbatim (96.9%), 2 repairs, no holes; clean share 1.00. A summary decipherment of the time stands in the margin. Integration check: the last group of 819.11 is 12 (c), not 13; the slip reads lanctag.",
     "reading_review": {
      "grade": "A",
      "by": "independent AI language-model agent (blind review)",
      "date": "2026-11-12",
      "note": "96.9% verbatim; the summary decipherment of the time in the margin confirms it independently."
-    }
+    },
+    "read_share": 0.969
+   },
+   {
+    "doc": "w787",
+    "label": "7 Sept 1655, six passages",
+    "transcription": "transcription_w787.txt",
+    "decryption": "decryption_w787.txt",
+    "reading": "reading_w787.md",
+    "translation": "translation_w787.md",
+    "language": "de",
+    "state": "read in part",
+    "summary": "Conditions with Sweden could hardly be worse; letters sent to Jacob Weiher, Elbing and Danzig; will speak to the Bishop of Ermland; Danzig offers ships; vivres against cartage money or security; news to General Sparr.",
+    "note": "Passages only. 106 words (about 63 clear), 99 verbatim (93.4%), 1 repair, 6 fills, 4 holes; clean share 0.889.",
+    "reading_review": {
+     "grade": "B",
+     "by": "independent AI language-model agent (blind review)",
+     "date": "2026-11-12",
+     "note": "Only the cipher passages are edited and the clear text between them is left out, so several passages are fragments; 788.20-24 has 4 holes."
+    },
+    "read_share": 0.934
+   },
+   {
+    "doc": "w813",
+    "label": "Königsberg, 14 Sept 1655",
+    "transcription": "transcription_w813.txt",
+    "decryption": "decryption_w813.txt",
+    "reading": "reading_w813.md",
+    "translation": "translation_w813.md",
+    "language": "de",
+    "state": "read in part",
+    "summary": "Weiher offers help; Vistula boats ordered at Marienwerder; Magnus reports that Thorn resolves to defend itself and plans a meeting with Danzig, Elbing and the three voivodes on the Vistula, and is not unwilling to help [51].",
+    "note": "72 words, 64 verbatim (88.9%), 5 marked repairs (four of them line ends in the binding where nothing is lost, marked {[...]/}), 3 fills, 2 holes ([51] twice); checker clean share 0.833 on the sentence text.",
+    "reading_review": {
+     "grade": "B",
+     "by": "independent AI language-model agent (blind review)",
+     "date": "2026-11-12",
+     "note": "The sentences hold. [51] (twice) is unresolved; reading it as the Elector is a guess."
+    },
+    "read_share": 0.889
    }
   ],
   "key_file": [
@@ -389,29 +608,44 @@
    },
    {
     "item": "'Nebro' (793.11), the meeting place on the Vistula",
-    "blocker": "not-attempted",
-    "detail": "Read from the signs; not identified."
+    "blocker": "too-short",
+    "detail": "One name with no context to identify it; read from the signs."
    },
    {
-    "item": "Clear words 'durch vorspan auch Pommern' (795.06)",
-    "blocker": "not-attempted",
-    "detail": "The reviewer suggests 'auch' may be 'aus' (or 'durch'); clear text, to be checked on the scan."
+    "item": "Erdmannsdörffer, Graf Georg Friedrich von Waldeck (1869)",
+    "blocker": "illegible",
+    "detail": "Named in the catalogue's verify field. Searched at integration in the two online Fraktur OCR copies (archive.org): no hit for Krockow, Cöslin, Radziwill, Danzig, Marienwerder, Culemborg or Chiffre, but the OCR is too poor to exclude a quotation; the book draws on the Arolsen archive."
    },
    {
-    "item": "Scan 819 lines 1-3 and the clear opening lines of 793",
-    "blocker": "not-attempted",
-    "detail": "Not transcribed in full."
+    "item": "Number 51 (813.a, 814.12)",
+    "blocker": "open-codes",
+    "detail": "Not a letter; from context a person, perhaps the Elector. Reading it as the Elector is a guess."
    },
    {
-    "item": "Blind second reading of the cipher",
-    "blocker": "not-attempted",
-    "detail": "Pass 2 was made with the key known; the independent review's 15-line blind spot-check agrees fully, which reduces the concern but does not remove it."
+    "item": "788.20-788.24 and the line ends of 788",
+    "blocker": "needs-physical-access",
+    "detail": "Four holes; letters lost in the binding."
    },
    {
-    "item": "Prior art: Erdmannsdörffer, Graf Georg Friedrich von Waldeck (1869)",
-    "blocker": "not-attempted",
-    "detail": "Named in the catalogue's verify field; draws on Prussian archives and the Arolsen archive and may quote or summarize these letters; no usable full text found (12 Nov 2026)."
+    "item": "787.a 'S{i/c}hweden'",
+    "blocker": "illegible",
+    "detail": "2 or 12 not settled on the image."
+   },
+   {
+    "item": "'Magnus' (814.01)",
+    "blocker": "too-short",
+    "detail": "One name in Waldeck's letter, not identified."
+   },
+   {
+    "item": "Scans 723-724 (letter of 17 Aug 1655)",
+    "blocker": "no-key-material",
+    "detail": "A different code (numbers up to four digits mixed with letters); no key of this code is known; not treated here, so catalogue item 2539 stays open for it."
    }
-  ]
+  ],
+  "codes_open": {
+   "open": 1,
+   "total": 1,
+   "tokens_open": 2
+  }
  }
 }

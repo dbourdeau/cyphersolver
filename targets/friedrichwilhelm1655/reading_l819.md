@@ -18,7 +18,7 @@ zu correspondiren und die consilia zu coniungiren. Absonderlich aber der itzt be
 819.08 | e sich unter unsere prote-
 819.09 | ction geben müsten. Es we-
 819.10 | re aber nötig, das ein alge-
-819.11 | meiner preüssischer lan{f/d}-
+819.11 | meiner preüssischer lan{c/d}-
 819.12 | tag durch den bischof von
 819.13 | Ermland ausgeschrieben w-
 819.14 | ür{c/d}e, und wir selbigen dazu

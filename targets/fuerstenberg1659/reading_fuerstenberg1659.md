@@ -1,7 +1,7 @@
 # Reading of W 004 Nr. 52 (Wilhelm von Fürstenberg to Jobst Edmund von Brabeck, Vienna, 10 July 1659)
 
-Status: **read** (53 of 54 cipher words read verbatim from the signs, 98.1%, one of them on an uncertain sign; one
-word with one marked repaired letter; no holes; see NOTES.md).
+Status: **read** (strict count: 52 of 54 cipher words read verbatim from the signs, 96.3%; one word on an uncertain sign,
+wor{t?}, and one with a marked repaired letter are not counted; the contributor's own count was 53 of 54, 98.1%; no holes; see NOTES.md).
 
 Images: Landesarchiv NRW Abt. Westfalen, W 004 (Msc. VI) Nr. 52, images 85-86
 (https://www.landesarchiv-nrw.de/data01/Abt_Westfalen/Msc_VI/00052/MSC_VI_00052_085.jpg and _086.jpg).

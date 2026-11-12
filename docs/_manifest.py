@@ -661,6 +661,16 @@ PAGES = [
          blurb='A short note in cipher, enclosed in a letter from the secretary of the Queen of Poland to the Paris astronomer Boulliau, on the Spanish marriage of Louis XIV and la Mancini. A contemporary hand, probably Boulliau&rsquo;s, wrote the clear word above every cipher group, so the note was deciphered at the time and is not a new decipherment. Brice Dudout transcribed the 24 groups and the gloss and rebuilt the two-digit nomenclator with marks from the other glossed passages of the volume; 12 of 12 cipher words are given by the gloss and 8 are supported by the rebuilt table.',
          quote='&ldquo;sans la Reine on n&rsquo;attendroit pas la mort du Prince despagne pour rompre le mariage&rdquo;',
          rights='Manuscript: Biblioth&egrave;que nationale de France, Fran&ccedil;ais 13020 f. 297, via Gallica; transcription and key by Brice Dudout (PR #263)'),
+    dict(slug='friedrichwilhelm1655', footer_date='November 2026', label='Elector and Waldeck 1655', year='1655', y=1655.72, place='C&ouml;slin &harr; Prussia', st='partial', stt='key from the clear words, read in part',
+         title='Elector Frederick William and Count Georg Friedrich of Waldeck, August&ndash;September 1655',
+         blurb='Four cipher pieces of the Great Elector and two letters of Count Waldeck to him, kept in Waldeck&rsquo;s register of acts, at the start of the march to the Vistula in 1655. Letters are enciphered as numbers, with clear words between the runs; the key came from the clear words of the letter of 4 September and was checked against the margin note of scan 819, a summary decipherment made at the time. 704 of 760 words read verbatim (92.6%): the army on the Vistula in ten days, ships, bread and forage, and Danzig refusing passage.',
+         quote='&ldquo;sie wusten keinen raht als das sie sich unter unsere protection geben m&uuml;sten&rdquo;',
+         rights='Gelders Archief (Arnhem), 0370 Heren en graven van Culemborg, inv. nr. 1257, via archieven.nl'),
+    dict(slug='fuerstenberg1659', footer_date='November 2026', label='F&uuml;rstenberg to Brabeck 1659', year='1659', y=1659.52, place='Vienna &rarr; M&uuml;nster', st='solved', stt='read',
+         title='Wilhelm von F&uuml;rstenberg to Jobst Edmund von Brabeck, Vienna, 10 July 1659',
+         blurb='Five cipher runs in a German letter from Vienna to the dean of M&uuml;nster, written in letters, not numbers: two alphabets used in turn, shifted by 1 and by 8. The key was recovered from the ciphertext alone and tested on runs it was not fitted to (159 of 159 letters). The runs report that the Prince-Bishop of M&uuml;nster will have the judgement in his favour without condition, and that 700 Reichstaler are promised to the referent. 52 of 54 words read verbatim (96.3%).',
+         quote='&ldquo;alles ist heut in consilio secreto in fauorem principis nulla adiecta conditione concludiret worden&rdquo;',
+         rights='Landesarchiv NRW Abt. Westfalen, W 004 (Manuskripte VI) Nr. 52, images 85&ndash;86'),
     dict(slug='asang1662', label='Anonymous letter, Sanguszko archive 1662', year='1662', y=1662.58, place='Poland (Royal Prussia?)', st='solved', stt='read',
          title='Anonymous letter in the Sanguszko archive, 31 July 1662',
          blurb='An unsigned Polish letter written wholly in a substitution of 23 composite sign groups, with no key and no contemporary decipherment (Archiwum Narodowe w Krakowie, Archiwum Sanguszk&oacute;w 134/8; DECODE R7513). Brice Dudout broke it from the ciphertext of the front, froze the key, tested it on the held-out reverse, and read all 71 words: the Swedes are arming and have ordered prayers and a fast for the third time.',
@@ -3438,3 +3448,5 @@ IMAGES['fiedmond1779'] = ('fiedmond1779_lead.jpg', 'The letter of 19 July 1779 o
 IMAGES['peking1912'] = None
 IMAGES['nanking1930'] = None
 IMAGES['vanhalen1840'] = None
+IMAGES['friedrichwilhelm1655'] = ('friedrichwilhelm1655_lead.jpg', 'Scan 819: the underlined cipher lines of the letter of September 1655, with the summary decipherment of the time in the left margin', 'Gelders Archief (Arnhem), 0370 Heren en graven van Culemborg, inv. nr. 1257, scan 819, via archieven.nl')
+IMAGES['fuerstenberg1659'] = ('fuerstenberg1659_lead.jpg', 'Image 85: the end of run P1 and runs P2 and P3, in a round script between lines of the German letter', 'Landesarchiv NRW Abt. Westfalen, W 004 (Manuskripte VI) Nr. 52, image 85')

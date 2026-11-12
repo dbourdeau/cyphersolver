@@ -1,4 +1,6 @@
 # Split the pass-1 files per document, write pass 2 (the second reading of fresh crops: only the lines where it
+# NOTE (12 Nov 2026): the Waldeck letters (w787, w813) were folded into this folder when the two targets were merged (one key);
+# the script ran once with the two folders apart and is kept as a record only.
 # differed are changed) and the reconciled transcription. Run once; prints every pass1/pass2 disagreement.
 import re, pathlib, sys
 sys.stdout.reconfigure(encoding='utf-8')
