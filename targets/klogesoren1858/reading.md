@@ -6,102 +6,105 @@ are not counted. Line-by-line evidence is in decryption.txt. Punctuation is adde
 held-out pages; elsewhere the text runs as written (the scribe hardly punctuates), and each charm ends with the
 trinitarian formula "I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen".
 
-Counts (Daniel Bourdeau's rule, restored and unresolved words are holes): held-out portion after the blind sheet K1
-**94.41%** (retained); whole grimoire after the targeted blind sheet K3 95.1% (indicative only, see NOTES.md). The six words changed by K3
+Counts (restored and unresolved words are holes): the contributor's classification of the held-out portion after the
+blind sheet K1 was 169 of 179 words (94.41%); the integration check of 12 Nov 2026 re-read images 030-031 at full size
+against the writer's table, found eight of those 169 words misread and corrected them below (172 of 176 words now
+read, a second reader's classification, not blind; see NOTES.md). The contributor's whole-book classification after
+the targeted blind sheet K3 is 95.1%, indicative only: 136 pages have no sign-level transcription. The six words changed by K3
 are marked here as in BLIND-REREADING.md (three probable words now certain, two now unresolved, one kept doubtful).
 
 Prior reading: an earlier, unpublished decipherment by Ferdinand Ohrt is recorded in the 1977 inventory of the
 collection ("Afskrevet og tydet af Ohrt. = kop 79.4", quoted at https://fynhistorie.dk/node/16123). It has not been
 consulted; this reading is independent of it (see NOTES.md, Prior art).
 
-## Part 1 - first session, low resolution (9 pages, 90.6%; to be re-read at full resolution)
-These texts are the readings by sense established on the low-resolution transcription in the first session. Here
-[...] marks a passage not carried into the first-session summary: partly unresolved words, partly words read but not
-copied out. The page counts (decryption.txt, Part 1) are those of the first-session word lists, and the mechanical
-decode of every line is given there. These nine pages are the first to re-read at full resolution.
+## Part 1 - first session (9 pages), re-read at full size at the integration check of 12 Nov 2026
+The contributor read these nine pages on 4,115 px images (385 of 425 words classed read, 90.6%) and gave them here as a
+summary with gaps. They were re-read on 12 Nov 2026 on the full-size KB images (8,230 px per opening) against the
+writer's table on 091 left, and the text below is that re-reading, complete. It is one reader's reading, made with the
+key in hand, not a blind test. [?word] = doubtful, counted as not read; [x] = letter or word supplied. The line-by-line
+mechanical decode of the low-resolution transcription stays in decryption.txt, Part 1.
 
 ### 003 right
 
+Første Begreb.
 #### [clear heading] At Dölge Blod, No 1
-Saa sandt som [?Venus] med sin Piil stak [?Jesus] Christus [i] Siden, saa sandt skal dette røde Blod ei mere flyde. I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen.
+3 gange. Saasandt som Venus med sin Piil stak Christus [i] Siden, saasandt skal dette røde Blod ei mere bløde. I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen.
 #### No 2
-Saa sandt som den [?] stak Christus i Siden, saa sandt skal dette Blod ei mere flyde [...]
+3 gange. Saasandt som denne Mand stak Christus i sin Side,
 
 ### 004 left
 
-[...] I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen.
+saasandt skal dette Blod ei mere flyde. I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen.
 #### No 3
-Gud sætter sin Stav for Flod, han stiller Vand, men jeg stiller Blod. I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Dette Blod forbyder jeg, saa at [...]
+3 gange. Gud sætter sin Stav for Flod, han stiller Vand, men jeg stiller Blod. I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Dette Blod forbyder jeg saa at rinde, saasandt som [?Aanmanden] reiste til Tinge, holdt op [?saa] [?Blodet] [?staar]. I Navnet Gud
 
 ### 004 right
 
-Og det saa sandt og saa vist som Jomfru Maria bar Jesus Christus under sit Bryst i fyrretyve Uger. I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen.
-#### [cipher heading] At Dølge [...]; first Begreb, at dølge et Saar for Blod og Bullenskab, No 1
-Aldrig skal dette bylne eller blode mere, førend Jomfru Maria føder en [?Søn] til Verden [...]
+Fader, Gud Søn og Gud den Hellige Aand, og det saasandt og saa vist som Jomfru Maria bar Jesus Christus under sit Bryst i fyrgetyve Uger. I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen.
+#### [cipher heading] At dølge et Saar for Blod og Byllenskab
+3 gange. Aldrig skal dette bylne eller bløde mere, førend Jomfru Maria een Søn til Verden føder; aldrig føder hun
 
 ### 005 left
 
-[...] ei heller skal dette bylne eller blode mere. I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen.
-#### No 2
-Naar du vil dølge Blod, da sæt dine Finger paa Hullet eller Saaret [...] [?siger Ordene] [...] 3 [?benævnte] Gange.
+Sønner flere, ei heller skal dette bylne ell[er] bløde mere. I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen.
+Naar du vil dølge Blod, da sæt di[n] Finger paa Hullet eller Saaret, medens du fremsiger Ordene de tre benævnte Gange.
 
 ### 005 right
 
 Andet Begreb.
 #### [clear heading] At Dölge et Saar for Svig og Bullenskab, No 1
-Christus fik et Saar; dette skal [?hverken] [...] [...]
+3 gange. Christus fik et Saar; dette skal [?vaadne] og ikke [?badne], dette skal [?kølne] og ikke svig[e]. I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen.
 #### No 2
-Dette skal hverken [?bølne] eller [?værke] [...]
+3 gange. Dette skal hverken borne [bolne] eller svige mere end
 
 ### 006 left
 
-[...] Adams Side, da Gud tog Ribbenet ud og byggede Eva af. I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen.
-Naar du dølger et Saar for Svig og Bullenskab, da stryg med din Finger omkring Saaret, medens du fremsiger Ordene.
+Adams Side, da Gud tog Ribbenet ud og byggede Eva af. I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen.
+Naar du dølger et Saar for Svig og Byllenskab, da stryg med din Finger omkring Saaret, medens du fremsiger Ordene.
 
 ### 006 right
 
 Tredie Begreb.
-#### [clear heading] for Brod og Hevelse, No 1
-Og Gud lad dette gaa af Jorden til [...] jeg alt med Guds Magt og Guds Kraft. I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen.
-#### No 2, for Hevelse
-Dette Saar skal jeg dølge [...]
+#### [clear heading] for Brod og Hevelse, No 1 (in cipher: for Brod)
+3 gange. O Gud, lad dette gaae af Jorden til; det gør jeg alt med Guds Magt og Guds Kraft. I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen.
+#### No 2 (in cipher: for Hevelse)
+3 gange. Dette Saar skal jeg dølge; dette skal [?blødne] og ikke svulne; det skal [?vaade] Gud
 
 ### 007 left
 
-[...] Gud hjælp, bort svinde [?som Dug for Solen] [...] I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen.
-#### No 3
-Naar du vil dølge Brod eller Hevelse, da stryg [...] med dine Hænder, medens du fremsiger Ordene 3 benævnte Gange [...] enten om Morgenen eller Aftenen [...]
+hjelp, bort svinde som Dug for Solen, næst Guds Hjelp. I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen.
+Naar du dølger Brod eller Hevelse, da stryg ned ad det daarlige med dine Hænder, medens du fremsiger Ordene de tre benævnte Gange. Dette skeer enten Morgen eller Aften, medens at Solen er neder i Jorden.
 
 ### 008 left
 
 Femte Begreb.
-#### [clear heading] for Kolik eller Bugvrid, No 1
-Eva var min Moder, som Slangen [?fræselig] bed, og det [?orv] over jeg at sønderknuse Slangens Hoved. I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen.
-#### No 2
-Naar du vil stille Kolik, da stryg med din Haand paa Maven, medens du fremsiger Ordene 3 benævnte Gange.
+#### [clear heading] for Kolik eller Bugvrid
+3 gange. Eva var min Moder, som Slangen træskelig bedrog; de[r]for vover jeg at sønderknuse Slangens Hoved. I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen.
+Naar du vil stille Kolik, da stryg med din Haand paa Maven, medens du fremsiger Ordene de 3 benævnte Gange.
 
-## Part 2 - held-out portion (images 030, 031), after the blind sheet K1 (result B)
+## Part 2 - held-out portion (images 030, 031), after the blind sheet K1 and the integration re-reading of 12 Nov 2026
 
 ### 030 (both pages)
 
 #### [clear heading] dölge en Bösse (3 gange)
-Enogtyvende Begreb. Bøsse, hold[t] dit Skud lige, saa reent som Jomfru Mari[a] holdt sin Jomfrudom i sig. I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen.
+Enogtyvende Begreb. Bøsse, beholdt dit Skud lige saa reent som Jomfru Maria beholdt sin Jomfrudom i sig. I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen.
 #### [clear heading] löse en Bösse (3 gange)
-Bøsse, forlad dit Skud lige, som Samson forlod sin Styrke med [?mere] [?ra]. I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen.
+Bøsse, forlad dit Skud lige som Samson[d] forlod sin Styrke med mere. I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen.
 #### [clear heading] at være Skudfrid
-Amal Asmal Artila. [?sia] dette skal bæres paa Legemet for Bøssen dig.
+Amal, Asmal, Artilasia, dette skal bæres paa Legemet for bestandig.
 
 ### 031 left
 
-#### [clear heading] at dölge Ild
-Toogtyvende Begreb. Jeg saae Ild optændes og i Luften høit at brænde. Jomfru Maria slog sin [?Kabbe] paa Verden. Jeg forbyder at brænde ind, til der findes een [?Jomfru] [?ssyon] som føder en Søn, som aldrig var og aldrig skal. I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen.
+#### [clear heading] at dölge Iild
+Toogtyvende Begreb. Jeg seer Iild optændes og i Luften høit at brænde. Jomfru Maria slog sin [?Kabbe] p[aa] Verden. Jeg forbyder at brænde ind, til der findes een[d] Jomfru skjøn som føder een Søn, som aldrig var og aldrig skeer. I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen.
 
 ### 031 right
 
 #### [clear heading] at faae een Tyv til at hensvinde som Duk for Solen og död inden Aaret er omme
-Treogtyvende Begreb. Den som stjæler fra [dig]: tag med dine første 3 Fingre paa den høire Haand af de Saugspaaner som ligger ved Stabben. I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Og bær dem til en [?Kirkegaard] og nedgrav dem i det nord øverste Hjørne paa den sidste [?karlegravet]. Foretages en [?søn] efter Torsdags Aften efter Solens Nedgang stiltiende.
+(in cipher, closing the heading) Dem som stjæler fra.
+Treogtyvende Begreb. Tag med dine første 3 Fingre paa den høire Haand af de Saugspaaner som ligger ved Stabben. I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Og bær dem til en Kirkegaard og nedgrav dem i det nord øverste Hjørne paa den sidste [?karlegravet]. Foretages en [?søn] efter Torsdags Aften efter Solens Nedgang stiltiende.
 
-## Part 3 - full resolution (136 pages, 95.4% after the targeted blind sheet K3)
+## Part 3 - full resolution (136 pages; the contributor's classification, 95.4% after the targeted blind sheet K3; not re-derivable, no sign-level transcription)
 
 ### 007 right (96.1%)
 

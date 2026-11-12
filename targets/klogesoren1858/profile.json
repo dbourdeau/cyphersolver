@@ -6,7 +6,7 @@
   {
    "id": "kb-dfs-1997-020-cyprianus",
    "read": "read in part",
-   "shelfmark": "Copenhagen, Det Kgl. Bibliotek, Dansk Folkemindesamling, DFS 1997/020 (Kloge Sørens samling); KB Digitale samlinger object392246, IIIF DFS_1997_020_4_000a to _107",
+   "shelfmark": "Copenhagen, Det Kgl. Bibliotek, Dansk Folkemindesamling, DFS 1997/020 (Kloge Sørens samling); KB Digitale samlinger object392246, IIIF DFS_1997_020_4_000a to _107 (each image in its own folder on kb-images.kb.dk; the URLs are in the viewer page HTML)",
    "date": "c. 1858 and after",
    "year": 1858,
    "country": "Denmark",
@@ -25,7 +25,7 @@
     "source": "Ferdinand Ohrt's copy and decipherment, recorded in the 1977 inventory of the collection (G. Henningsen; quoted by H. Nørgaard 2008, fynhistorie.dk/node/16123): 'Afskrevet og tydet af Ohrt. = kop 79.4'. Not consulted; not used. The writer's own table of the cipher alphabet is on image 091 left."
    },
    "length": {
-    "tokens": 8055,
+    "tokens": 8052,
     "unit": "mixed",
     "measured": true,
     "file": "decryption.txt"
@@ -34,7 +34,7 @@
     "by": "llm from images",
     "source": "KB Digitale samlinger / IIIF images, 4,115 px per opening (first session) and full size 4,115 x 6,804 px per page (second session); images not reproduced",
     "image_quality": "good",
-    "notes": "Claude Opus 5.5 agents, 11 Nov 2026. Training pages 003 R - 007 L and the held-out images 030-031 transcribed sign by sign (notation in transcription.txt; the held-out files frozen and hashed before decoding). The 136 full-resolution pages were read straight into letters with the validated key, unresolved words kept in sign shapes (decryption.txt, Part 3). Two blind sheets of sign shapes answered by Brice Dudout: K1 (image 031) and K3 (nine targeted signs of the rest of the book); K2 (a random draw) abandoned before it was shown. Length counted in cipher words by the reading rule (8,055); signs counted only for the training portion (1,591) and the held-out portion (790)."
+    "notes": "Claude Opus 5.5 agents, 11 Nov 2026. Training pages 003 R - 007 L and the held-out images 030-031 transcribed sign by sign (notation in transcription.txt; the held-out files frozen and hashed before decoding). The 136 full-resolution pages were read straight into letters with the validated key, unresolved words kept in sign shapes (decryption.txt, Part 3). Two blind sheets of sign shapes answered by Brice Dudout: K1 (image 031) and K3 (nine targeted signs of the rest of the book); K2 (a random draw) abandoned before it was shown. Length counted in cipher words by the reading rule (8,055); signs counted only for the training portion (1,591) and the held-out portion (790). Integration check, 12 Nov 2026: images 030-031 and 003-008 re-read at full size (8,230 px per opening) against the writer's table; corrected signs of the held-out words in transcription.txt Part 2b (the frozen files are unchanged). The frozen held-out transcription disagrees with the reading in roughly one sign in ten (verifier: 85% of characters agree, 93% with a and e merged). Word count after the corrections: 425 (first session, contributor's count) + 176 (held-out, was 179) + 7,451 = 8,052."
    }
   }
  ],
@@ -59,26 +59,26 @@
    "used": true
   },
   "key_order": "alphabetical",
-  "notes": "Homophony or confusion t/f (cross), o/ø, i/j. The writer's table on image 091 left gives the alphabet a to ø in order. A circular seal in the same signs (018 R, 019 R, 104) is not read."
+  "notes": "Homophony or confusion t/f (cross), o/ø, i/j. The writer's table on image 091 left gives the alphabet a to ø in order. A circular seal in the same signs (018 R, 019 R, 104) is not read. The key is in the volume: the table on 091 left has 26 signs in three rows (10 + 11 + 5), a-k, l-v, x y z æ ø (seen at full size at the integration check); by the contributor's record it was found after the key had been recovered and measured."
  },
  "conditions": {
   "prior_solution": {
    "exists": "unpublished",
-   "where": "Ferdinand Ohrt's copy and decipherment ('Afskrevet og tydet af Ohrt. = kop 79.4'), recorded in G. Henningsen's 1977 inventory of the collection, quoted by H. Nørgaard (2008) on fynhistorie.dk/node/16123; not consulted, publication not checked. Catalogue 2525 vetting (Daniel Bourdeau, 11 Nov 2026): DECODE, Tomokiyo, Lasry nothing; no edition found. Known: the book and its 'kodeskrift' (lex.dk, B. Rørbye; heuschkel.dk). Rørbye, Kloge folk og skidtfolk (1976) not seen.",
+   "where": "Ferdinand Ohrt's copy and decipherment ('Afskrevet og tydet af Ohrt. = kop 79.4'), recorded in G. Henningsen's 1977 inventory of the collection, quoted by H. Nørgaard (2008) on fynhistorie.dk/node/16123; not consulted, publication not checked. Catalogue 2525 vetting (Daniel Bourdeau, 11 Nov 2026): DECODE, Tomokiyo, Lasry nothing; no edition found. Known: the book and its 'kodeskrift' (lex.dk, B. Rørbye; heuschkel.dk). Rørbye, Kloge folk og skidtfolk (1976) not seen. The fynhistorie.dk page answered 403 to scripts on 11 and 12 Nov 2026: the quotation is the contributor's and was not seen by the project; whether Ohrt printed these charms in Danmarks Trylleformler is not checked.",
    "found": "after reading",
    "used": false
   },
   "inputs": [
    "images",
-   "known plaintext"
+   "cleartext context"
   ],
-  "attack": "crib",
+  "attack": "ciphertext-only",
   "human_role": "Brice Dudout chose the target and set the rules (every decipherment goes to Daniel; a partial reading may be published if explained; protocol hashed before one single measurement; blind re-reading by sign shapes), and answered the blind sheets K1 and K3. Claude Opus 5.5 agents transcribed, found and validated the key, read and wrote up.",
   "models": [
    "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout (transcription, key, annealing, protocol, measurement, reading by 16 sub-agents, write-up)"
   ],
   "first_date": "2026-11-11",
-  "last_date": "2026-11-11"
+  "last_date": "2026-11-12"
  },
  "solution": [
   {
@@ -95,7 +95,7 @@
     "simulated annealing",
     "language-model scoring"
    ],
-   "what": "Key from the cribs '3 gange', 'i Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen' and the cipher ordinals 'Andet / Tredie Begreb'; then a blind annealing (simple substitution, Danish quadrigrams with space, only the space fixed) found the plaintext by itself (6 of 10 restarts).",
+   "what": "Probable words guessed from the genre and the layout (no plaintext at hand): '3 gange' after the clear numeral, the trinitarian close 'i Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen', the cipher ordinals 'Andet / Tredie Begreb'; then a blind annealing (simple substitution, Danish quadrigrams with space, only the space fixed) found the plaintext by itself (6 of 10 restarts, contributor's figure; the annealing script is not in the PR).",
    "result": "worked"
   },
   {
@@ -104,7 +104,7 @@
    "technique": [
     "statistical test"
    ],
-   "what": "One pre-registered measurement on the held-out images 030-031 (790 signs, transcribed and hashed before decoding): COV 0.4025 vs best of 200 permuted keys 0.1089 and of 200 sign shuffles 0.1038; C1-C3 and S met (C1 narrowly).",
+   "what": "One pre-registered measurement on the held-out images 030-031 (790 signs, transcribed and hashed before decoding): COV 0.4025 vs best of 200 permuted keys 0.1089 and of 200 sign shuffles 0.1038; C1-C3 and S met (C1 narrowly). Contributor's run. The verifier's re-run with another lexicon gives 0.404 against 0.157 (permuted keys) and 0.117 (shuffles): the +0.25 margin over the permuted keys is then 0.247, a hair short.",
    "result": "worked"
   },
   {
@@ -136,20 +136,41 @@
    ],
    "what": "Targeted blind re-reading by sign shapes of the second session (sheet K3: 9 signs chosen for the words whose class depends on the answer + 2 controls passed; rule hashed before the sheet, SHA-256 0400d3cf...; answers 4fbf5ec1...). Three probable words became certain, two unresolved; one ('før', 033 L) gives 'fer' by the rule with Brice Dudout's remark (result B, retained, declared deviation) but 'før' by sense, kept doubtful. Whole book 95.16% -> 95.13% (B; A 95.12%), indicative only; held-out portion untouched. The random sheet K2 was abandoned before it was shown.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Independent verification of PR #419 before integration: the four frozen hashes match; an independent decoder reproduces the DECODE line; lexical cover 0.404 with the verifier's own lexicon (25,681 forms from the repository's da-gutenberg corpus) against 0.157 for the best of 200 permuted keys (margin 0.247, the protocol declared +0.25; the contributor's run has 0.294) and 0.117 for the best of 200 sign shuffles; training cover 0.555. A crude blind annealer on the training transcription reached 19 of 29 sign values (best of 6 restarts). The writer's table on image 091 left confirmed at full size: 26 signs in three rows. Only 49 of 182 held-out reading words equal a mechanically decoded word (85% of characters agree): the frozen transcription has roughly 10% sign errors, and the 94.41% is a reader's classification.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Integration re-reading of the held-out images 030-031 at full size against the writer's table: eight of the 169 words the contributor classed read were misread (beholdt twice, read 'holdt'; 'for bestandig', read 'for Bøssen dig'; seer, read 'saae'; skeer, read 'skal'; Dem, read 'Den'; 'paa' supplied for a single sign p), so 161 of 179 words stood as delivered (89.9%). Also Maria written in full, 'ra' not on the page, Artilasia one word, Jom-fru and Kir-kegaard plain across line breaks, skjøn for '[?ssyon]'. After correction 172 of 176 words read, 1 supplied, 3 doubtful (Kabbe, karlegravet, søn); one reader with the key, not blind.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "The nine first-session pages (003 R - 008 L; contributor 385 of 425 words at low resolution, 90.6%) re-read on the full-size images: complete text in reading.md Part 1; 437 of 447 words read (counted with cipher headings and each 'gange'), 1 supplied, 9 doubtful. Changed words include bløde (was flyde), denne Mand, svige (was [?værke]), træskelig bedrog, de[r]for vover. One reader with the key, not blind. The 136 pages of the second session were not re-read: no sign-level transcription exists for them.",
+   "result": "partial"
   }
  ],
  "outcome": {
   "class": "read in part",
   "key": "recovered",
   "method": "key recovered from ciphertext-only",
-  "method_basis": "The key was found from probable words (the trinitarian closing formula, the clear '3 gange', the cipher ordinals of the headings) and confirmed by a blind annealing that found the plaintext alone; it was validated once on held-out images transcribed and hashed beforehand, and is confirmed after the fact by the writer's own alphabet table on image 091 left.",
+  "method_basis": "The key was found from guessed probable words (the trinitarian closing formula, 'gange' after the clear numeral 3, the cipher ordinals of the headings) and a blind annealing; no plaintext was at hand and the clear headings give only the subject. It was measured once on held-out images transcribed and hashed beforehand, and the writer's own alphabet table on image 091 left (a key in the volume, found afterwards by the contributor's record) gives the same values. An independent re-solution: Ferdinand Ohrt's unpublished decipherment is prior work, not consulted.",
   "contribution": [
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.9441,
+  "fraction_read": 0.899,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Held-out portion (images 030-031) after the blind sheet K1, result B (retained): 133 certain + 36 probable = 169 of 179 words = 94.41%; result A (rule as written) 94.97%. Whole book after the targeted blind sheet K3, result B (retained): 6,866 + 797 = 7,663 of 8,055 = 95.1% (A 95.12%; 95.2% before K3): indicative only. Nine first-session pages (low resolution) 90.6%, still to re-read.",
+  "fraction_read_source": "Held-out images 030-031 checked word by word on the full-size image at the integration (12 Nov 2026): 161 of the contributor's 179 words stood as delivered = 89.9% (he classed 169 as read, 94.41%; eight of those were misread). After correction 172 of 176 words on these pages are read, and 437 of 447 on the nine first pages re-read at full size (one reader with the key, not blind). The other 136 pages (7,451 words) carry only the contributor's classification, 95.4% (whole book 95.1%), which cannot be re-derived: no sign-level transcription exists.",
   "verification": [
    "statistical test",
    "key confirms",
@@ -159,15 +180,16 @@
    "date": "2026-11-11",
    "verdict": "pass",
    "file": "frozen/MESURE.out",
-   "notes": "Contributor's pre-registered single measurement (not docs/_validate.py): PROTOCOLE.md SHA-256 106f10c69168ee2aa1c5a1390c040351b512f40bb461b426f3984fd2292a7329, KEY.json 40bf4b2d..., scorer 530a86e5..., word list 5c295d99... (frozen/FREEZE.sha256); held-out RESERVE-p030.txt d56aef4d..., RESERVE-p031.txt d2d93503...; COV 0.4025 (C1 >= 0.40), permuted keys max 0.1089 (C2 +0.25), sign shuffles max 0.1038 (C3 +0.25), S met. Bias declared: the held-out portion was transcribed by an agent who knew the key; C1 narrowly met. Confirmed after the fact by the writer's alphabet table (image 091 left)."
+   "notes": "Contributor's pre-registered single measurement (not docs/_validate.py): PROTOCOLE.md SHA-256 106f10c69168ee2aa1c5a1390c040351b512f40bb461b426f3984fd2292a7329, KEY.json 40bf4b2d..., scorer 530a86e5..., word list 5c295d99... (frozen/FREEZE.sha256); held-out RESERVE-p030.txt d56aef4d..., RESERVE-p031.txt d2d93503...; COV 0.4025 (C1 >= 0.40), permuted keys max 0.1089 (C2 +0.25), sign shuffles max 0.1038 (C3 +0.25), S met. Bias declared: the held-out portion was transcribed by an agent who knew the key; C1 narrowly met. Confirmed after the fact by the writer's alphabet table (image 091 left). Re-run by the verifier (12 Nov 2026) with an independent decoder and lexicon: cover 0.404, permuted keys max 0.157, sign shuffles max 0.117; the +0.25 margin over the permuted keys is 0.247 with that lexicon, a hair short, and 0.294 in the contributor's run. The table on 091 left was seen at full size and matches."
   },
   "provenance": "contributed",
   "credits": [
    {
     "who": "dudout",
     "role": "solution",
-    "note": "transcription, key found from probable words and a blind annealing, validated once on held-out images 030-031 (COV 0.4025 vs 0.1089); the writer's alphabet table found on 091 left; whole book read at full resolution except nine first-session pages; read in part (held-out portion 94.41% after a blind sheet); Claude Opus 5.5 agents for Brice Dudout",
-    "date": "2026-11-11"
+    "note": "transcription of the training and held-out pages, key found from guessed probable words and a blind annealing, measured once on held-out images 030-031 (cover 0.4025 against 0.1089); the writer's alphabet table found on 091 left; the book read at full resolution by his agents except nine first-session pages; two blind sheets of sign shapes answered by him",
+    "date": "2026-11-11",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/419"
    },
    {
     "who": "bourdeau",
@@ -184,30 +206,31 @@
    {
     "who": "ohrt",
     "role": "prior solution",
-    "note": "copied and deciphered the book ('Afskrevet og tydet af Ohrt. = kop 79.4', G. Henningsen's 1977 inventory, quoted on fynhistorie.dk/node/16123); found after our reading, not consulted, not used",
-    "date": "2026-11-11"
+    "note": "copied and deciphered the book ('Afskrevet og tydet af Ohrt. = kop 79.4', G. Henningsen's 1977 inventory, as quoted by the contributor from fynhistorie.dk/node/16123; the page was not reachable by script and the quotation was not seen by the project); found after the reading, not consulted, not used",
+    "date": "2026-11-11",
+    "published": false
    }
   ],
   "gaps": [
    {
-    "item": "nine first-session pages (003 R, 004 L-R, 005 L-R, 006 L-R, 007 L, 008 L): 425 words, 40 unresolved",
+    "item": "the 136 pages of the second session (007 R, 008 R - 079 R, 098): 266 words unresolved and 76 restored by the contributor's count, worst on 064 L and 010 R",
     "blocker": "illegible",
-    "detail": "read at 4,115 px, where the dots of e, b/h and the bars u/n are often lost; to re-read at full resolution"
-   },
-   {
-    "item": "266 unresolved and 76 restored words of the second session (after K3), worst on 064 L (61.4%) and 010 R (77.2%)",
-    "blocker": "illegible",
-    "detail": "doubtful shapes listed per page; the targeted blind sheet K3 checked nine of them"
+    "detail": "stained and faded passages by the contributor's account; no sign-level transcription exists, so neither the holes nor the words classed read can be checked from the files; not re-read at the integration"
    },
    {
     "item": "shapes flagged by the blind sheet K3 (chevron with a foot on 034 R, closed loop on 073 R, 074 L, 075 L, star-like sign of 064 L, dot confusions; 'fer / før' on 033 L)",
     "blocker": "illegible",
-    "detail": "a declared re-reading on the full-resolution images, its list hashed first; no further sheet on the same 11 signs"
+    "detail": "the contributor's rule forbids a further sheet on the same signs; a declared re-reading is his next step"
    },
    {
-    "item": "held-out words left unresolved by the sheet K1 (Kirkegaard, Jomfru, Kabbe, karlegravet, søn ...)",
+    "item": "held-out pages: Kabbe (031 left), karlegravet and søn (031 right)",
     "blocker": "illegible",
-    "detail": "the rule forbids a second sheet on the same signs"
+    "detail": "the signs are plain but the word or its division is not settled by them"
+   },
+   {
+    "item": "first nine pages: Aanmanden and 'saa Blodet staar' (004 left), vaadne, badne, kølne (005 right), blødne, vaade (006 right)",
+    "blocker": "illegible",
+    "detail": "dots and word division doubtful at full size; a comparison with Ohrt's copy would settle them"
    },
    {
     "item": "circular seals 018 R, 019 R, 104",
@@ -215,14 +238,9 @@
     "detail": "same signs written round a circle; not read"
    },
    {
-    "item": "sign-level transcription of the 136 full-resolution pages",
-    "blocker": "illegible",
-    "detail": "read straight into letters with the key; unresolved words kept in sign shapes"
-   },
-   {
-    "item": "prior art on paper: Ferdinand Ohrt's copy and decipherment ('kop 79.4', DFS); Rørbye, Kloge folk og skidtfolk (1976); DFS accession record 1997/020",
+    "item": "prior art on paper: Ohrt's copy and decipherment ('kop 79.4', DFS), whether he printed these charms in Danmarks Trylleformler, Rørbye, Kloge folk og skidtfolk (1976), items 3 and 47 of the 1977 inventory, the DFS accession record",
     "blocker": "needs-physical-access",
-    "detail": "not online; Ohrt's decipherment is known to exist (1977 inventory) but has not been seen: a comparison with our reading is still to do"
+    "detail": "not online; fynhistorie.dk answered 403 to scripts on 11 and 12 Nov 2026"
    }
   ],
   "texts": [
@@ -235,17 +253,17 @@
     "translation": "translation.md",
     "language": "da",
     "state": "read in part",
-    "read_share": 0.9441,
-    "summary": "The working book of a Danish cunning man of Funen: about a hundred charms and recipes against bleeding, wounds, colic, toothache, fever and other ills; protection of cattle, horses, poultry, butter and milk against witchcraft; pests summoned to the Thing; guns bound and men made proof against shot; fire conjured; winning at cards; and a long series against thieves. The directions for use were held by the cipher. An earlier decipherment by Ferdinand Ohrt is recorded in the archive (not consulted).",
+    "read_share": 0.899,
+    "summary": "The working book of a Danish cunning man of Funen: about a hundred charms and recipes against bleeding, wounds, colic, toothache, fever and other ills; protection of cattle, horses, poultry, butter and milk against witchcraft; pests summoned to the Thing; guns bound and men made proof against shot; fire conjured; winning at cards; and a long series against thieves. The translation file is a summary table with a few charms in full. An earlier decipherment by Ferdinand Ohrt is recorded in the archive (not consulted).",
     "reading_review": {
      "grade": "B",
-     "by": "Claude Opus 5.5 agent for Brice Dudout",
-     "date": "2026-11-11",
-     "note": "Read as Danish sentences of the mid-19th century against decryption.txt: the charms construe (sacred precedent, 'saa sandt som ... saa sandt skal ...', trinitarian close, directions for use) and the English summaries follow; but the held-out portion is at 94.41% after one blind sheet (Brice Dudout answered the shapes), nine pages were read at low resolution only (90.6%), and the second session (95.4%) has had only one targeted blind sheet (K3, nine signs; whole book 95.1%, indicative); so grade B, read in part. No human read the whole reading. An earlier, unpublished decipherment by Ferdinand Ohrt is recorded (1977 inventory) but was not consulted: this reading is independent of it, and the grade is unchanged (B)."
+     "by": "integration check (project), on the contributor's reading",
+     "date": "2026-11-12",
+     "note": "Read as sentences against the full-size images for twelve pages only: the held-out images 030-031 (eight misread words corrected; 172 of 176 words now read) and the nine first pages 003 R - 008 L (437 of 447). There the charms construe as Danish of the 1850s: a sacred precedent, 'saasandt som ... saasandt skal ...', the trinitarian close, then directions for use. The other 136 pages were read through as text but not against the images: they construe in the same frames, with holes concentrated on 064 L and 010 R, and no sign-level transcription exists to check them. Grade B: coherent but raw (unpunctuated, 1850s spelling), and unverified for most of the book. The contributor's own review (11 Nov 2026) also gave B."
     }
    }
   ],
   "key_file": "key.tsv",
-  "notes": "Independent reading: an earlier decipherment by Ferdinand Ohrt (1873-1938) is recorded in the archive ('Afskrevet og tydet af Ohrt. = kop 79.4', G. Henningsen's 1977 inventory, quoted by H. Nørgaard 2008, fynhistorie.dk/node/16123); it has not been consulted and was not used. What we add is the key (key.tsv, CC BY 4.0), its validation on a held-out portion and the probable text, published. No image or derivative of the KB scans is included. A private 20th-century piece, not part of the grimoire, is excluded."
+  "notes": "Independent re-solution: an earlier decipherment by Ferdinand Ohrt (1873-1938) is recorded in the archive by the contributor's quotation of the 1977 inventory; it has not been consulted and was not used. The key is also in the volume (the writer's table on 091 left); by the contributor's record it was found after the measurement. The contributor's folder holds no image; the site page carries two crops from the KB images, which the KB marks out of copyright. A private 20th-century piece, not part of the grimoire, is excluded."
  }
 }

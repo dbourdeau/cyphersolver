@@ -1,4 +1,7 @@
-# klogesoren1858 - English translation (summarised)
+# klogesoren1858 - English translation (a summary, not a full translation)
+
+This file is a summary table of every charm plus full translations of a few of them. Most of the book has no full English
+translation here.
 
 The book holds about a hundred charms and recipes, most in Kloge Søren's cipher under headings in clear Danish. A full
 translation of 8,055 words would repeat the same frames many times (a sacred precedent, "so surely as ... so surely shall ...",
@@ -7,6 +10,32 @@ the translation is given as: (1) a summary of every charm in the order of the bo
 charms. Holes as in reading.md: [?word] doubtful, [?] or [...] unresolved. Curses (against thieves and others) are summarised
 neutrally, without their formulas. "Begreb" (chapter) numbers are those written in cipher; "(7th)" = number inferred from the
 "No" series under the same heading; "-" = no number read.
+
+## 0. The first nine pages (003 right to 008 left), as re-read at full size on 12 Nov 2026
+
+The rows of the table below for these pages are the contributor's first-session summaries; this is the fuller text.
+
+- **003 R, First Begreb, to stanch blood.** No 1: "As surely as Venus [so written] with his arrow pierced Christ in the side, so surely
+  shall this red blood bleed no more. In the name of God the Father, God the Son and God the Holy Ghost. Amen." No 2: "As surely as
+  this man pierced Christ in his side, so surely shall this blood flow no more. In the name of ... Amen."
+- **004 L-R, No 3.** "God sets his staff before the flood; he stills water, but I still blood. In the name of ... This blood I forbid
+  to run, as surely as [?] rode to the Thing, stopped [...]. In the name of ..., and that as surely and as certainly as the Virgin Mary
+  bore Jesus Christ under her breast for forty weeks. In the name of ... Amen."
+- **004 R-005 L, to stanch a wound from blood and festering.** "Never shall this fester or bleed more until the Virgin Mary bears a
+  son into the world; never does she bear more sons, nor shall this fester or bleed more. In the name of ... Amen." Directions: "When
+  you want to stanch blood, set your finger on the hole or the wound while you say the words the three named times."
+- **005 R-006 L, Second Begreb, a wound against smarting and festering.** No 1: "Christ got a wound; this shall [?] and not [?], this
+  shall [?cool] and not smart. In the name of ... Amen." No 2: "This shall neither fester nor smart more than Adam's side when God took
+  out the rib and built Eve from it. In the name of ... Amen." Directions: "When you stanch a wound against smarting and festering,
+  stroke with your finger around the wound while you say the words."
+- **006 R-007 L, Third Begreb, sting and swelling.** No 1: "O God, let this go to the earth; that I do all with God's might and God's
+  power. In the name of ... Amen." No 2: "This wound shall I stanch; it shall [?soften] and not swell; [...] God help, vanish away like
+  dew before the sun, next to God's help. In the name of ... Amen." Directions: "When you stanch a sting or a swelling, stroke down
+  along the bad place with your hands while you say the words the three named times. This is done either morning or evening, while the
+  sun is down in the earth."
+- **008 L, Fifth Begreb, colic.** "Eve was my mother, whom the serpent treacherously deceived; therefore I dare to crush the serpent's
+  head. In the name of ... Amen." Directions: "When you want to still colic, stroke with your hand on the belly while you say the
+  words the 3 named times."
 
 ## 1. The charms, in the order of the book
 
@@ -102,17 +131,20 @@ castoreum 1 ounce, musk 1 ounce, black cumin 8 skilling, cumin 4 skilling, long 
 skilling; put it in 9 pægl of brandy and give it three Thursday evenings in a row after sunset, so that each [?head of cattle] gets
 half a pægl each of the three evenings, in silence.
 
-**030, 21st Begreb, the gun.** "Gun, hold your shot straight, as pure as the Virgin Mary kept her maidenhood in her. In the name of
-... Amen." To release it: "Gun, let go your shot straight, as Samson let go his strength [?]. In the name of ... Amen." To be proof
-against shot: the words "Amal Asmal Artila"; "this shall be borne on the body against the gun".
+**030, 21st Begreb, the gun.** "Gun, keep your shot just as pure as the Virgin Mary kept her maidenhood in her. In the name of
+... Amen." To release it: "Gun, let go your shot just as Samson let go his strength, and more. In the name of ... Amen." To be
+proof against shot: the words "Amal, Asmal, Artilasia"; "this shall be borne on the body for ever". (Corrected at the integration
+check of 12 Nov 2026: "beholdt", kept, twice; "Artilasia" one word; "for bestandig", for ever, where the first reading had "against
+the gun".)
 
-**031 L, 22nd Begreb, to conjure a fire.** "I saw fire kindled, burning high in the air. The Virgin Mary threw her [?cloak] over the
-world. I forbid it to burn in, until there is found a [?maid] [?] who bears a son who never was and never shall be. In the name of
-... Amen." (Three times.)
+**031 L, 22nd Begreb, to conjure a fire.** "I see fire kindled, burning high in the air. The Virgin Mary threw her [?cloak] on the
+world. I forbid it to burn in, until there is found a fair maid who bears a son who never was and never comes to be. In the name
+of ... Amen." (Three times. Corrected at the integration check: "seer", see; "skjøn", fair; "skeer", happens.)
 
-**031 R, 23rd Begreb.** A curse meant to make a thief waste away "like dew before the sun" within the year: sawdust from beside
-the chopping block is taken with three fingers of the right hand in the name of the Trinity, carried to a churchyard and buried in
-the north corner of the last grave, on a Thursday evening after sunset, in silence.
+**031 R, 23rd Begreb.** A curse meant to make a thief waste away "like dew before the sun" within the year (the heading ends, in
+cipher, "those who steal from"): sawdust from beside the chopping block is taken with three fingers of the right hand in the name
+of the Trinity, carried to a churchyard and buried in the north corner [?of the last grave], [?] on a Thursday evening after
+sunset, in silence.
 
 **045 L-046 L, No 3, the three nails.** A ritual to make a thief bring back stolen goods: before sunrise, at a pear tree, three
 unused nails (from a coffin or a horseshoe) are held towards the rising sun while a formula is spoken that drives each nail, in
