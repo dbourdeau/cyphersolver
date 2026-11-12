@@ -165,3 +165,15 @@ identify which K 259 images hold the 3 March 1765 letter and compare them with t
 ## Bryan Payne / Codex contribution, 28 October 2026
 
 Additional research is preserved in [payne2026/NOTES.md](payne2026/NOTES.md), with a concise [report](payne2026/REPORT.md). It adds the 870-group preliminary May transcription, preliminary tables 218–220, samples of the 162–168 vocabulary key, the public F474 page map and archival leads. Key 219 positively matches the separate printed February 1771 fragment cited on the sheet: [source and literal readings](payne2026/KEY219_PROVENANCE.md). This supplies a fragment decode only; neither the May letter nor the whole 1771 letter is claimed read. Existing research above is preserved; the contribution's provisional 126 pairing does not replace the positioned-gloss work above. Failed-control outputs remain unaccepted.
+
+## 12 Nov 2026 — system B key rebuilt and validated; 121-124L read in part (Brice Dudout, Claude Opus 5.5)
+
+Worked in `dudout/` (see `dudout/README.md`). The 120 clear is the decipherment of the 5 Oct 1764 cipher (118-119R):
+the cipher's repeats fall at the clear's repeats (155.453 = Votre Majesté at 0.36/0.52/0.90/0.97 vs 0.34/0.52/0.93/1.00;
+403.240.709 = dis-po-si- at 0.21/0.73 vs 0.21/0.74). System B is a fixed two-part syllabic nomenclator with homophones
+(614 n, 119 r, 354 e, 136 de, 453 majesté, 54 interet; 549 = apostrophe, 9 = j; not all groups under 100 are nulls).
+A key built by anchored EM alignment on 118.00-119L.06 only was measured once, as pre-registered, on the held-out
+119L.07-119R.05 (328 groups): 0.563 against 400 controls (max 0.083). With 25 values added afterwards from context,
+121-124L (to "mon cher Comte": Count Osterman, the Empress's support for the King at the coming Diet, Düben's failure
+"ce n'est assurément pas ma faute") is read in part, about 70% of word tokens sure or probable. This withdraws, for
+system B, "the clear pages do not decipher the ciphers" and the 5 Oct draft verdict above. The state is left to the maintainer.
