@@ -650,6 +650,11 @@ PAGES = [
          title='Fra Giovanni di Lucca to Ferdinand III, 1644',
          blurb='A 231-figure Italian cipher paragraph in a friar&rsquo;s letter to the Emperor (DECODE R2159), a substitution with two figures for each vowel. The key was recovered using the opening words Tomokiyo had published as a crib, and every figure was decrypted; checked against the manuscript, the apparent polyphony turned out to be ten misread 4s and three encipherment slips. The Grand Hetman Koniecpolski offers to keep the Turk from R&aacute;k&oacute;czi, raise Moldavia against him and give two thousand Cossacks.',
          quote='&ldquo;il principe di Bogdania, et li dar&ograve; dumilia Cosachi &hellip; che non faccia pace fin che non l&rsquo;habbi humiliato o vinto&rdquo;'),
+    dict(slug='sehested1657', footer_date='November 2026', label='Sehested in Vienna 1657', year='1657', y=1657.2, place='Vienna &rarr; Copenhagen', st='partial', stt='key from the contemporary gloss, in part',
+         title='Christoffer Sehested in Vienna, 1657: the cipher letters of a secret mission',
+         blurb='Denmark&rsquo;s incognito envoy to the Emperor wrote to Frederik III and to the chancellor in a number cipher with signs for persons and places. A clerk of the time wrote the letters over the numbers on one page; with that alphabet Brice Dudout transcribed and decoded 27 letters on the secret talks for an alliance against Sweden. By the strict count 6,267 of 6,573 tokens are certain (95.3%), and 12 letters stay under 95% because many sign values rest on the sense.',
+         quote='&ldquo;multa fiunt et cogitantur quae non dicuntur&rdquo;',
+         rights='Rigsarkivet, Copenhagen, TKUA Kejseren, Arkivalieronline unit 260651'),
     dict(slug='desnoyers1659', label='Des Noyers to Boulliau 1659', year='1659', y=1659.95, place='Danzig &rarr; Paris', st='solved', stt='existing decipherment',
          author='Brice Dudout',
          title='Pierre Des Noyers to Isma&euml;l Boulliau, Danzig, December 1659',
@@ -3391,6 +3396,7 @@ IMAGES['sega1591b'] = None
 IMAGES['bongars1597'] = ('bongars1597_lead.jpg', 'f. 360v: the second letter opens; the third line begins with the group that spells Brunswick', 'Burgerbibliothek Bern, Cod. B 149 (A) 452, f. 360v, via the Burgerbibliothek online catalogue (public domain)')
 IMAGES['ebers1664'] = ('ebers1664_lead.jpg', 'Image 138: code runs with the German gloss written above them', 'Riksarkivet, Stockholm, SE/RA/2113/2113.1/3/b/602, bildid R0003225_00138, via the Riksarkivet IIIF service')
 IMAGES['lilienthal1665'] = ('lilienthal1665_lead.jpg', 'Image 45, left page, lines 1&ndash;12: code with the gloss between the lines', 'Riksarkivet, Stockholm, SE/RA/2113/2113.1/1/36/82, bildid R0000814_00045, via the Riksarkivet IIIF service')
+IMAGES['sehested1657'] = ('sehested1657_lead.jpg', 'Image 132, right page, lines 1&ndash;10: the numbers with a clerk&rsquo;s letters written over them', 'Rigsarkivet, Copenhagen, TKUA, Kejseren, Relationer fra Christoffer Sehested 1657, Arkivalieronline unit 260651, image 132, via api.rigsarkivet.dk')
 IMAGES['lee1813'] = ('lee1813_lead.jpg', 'Lee to Monroe, 6 February 1813, head of page 2: numerals with the clerk&rsquo;s pencilled key letters and words', 'US National Archives, RG 59, Despatches from US Consuls in Bordeaux, microfilm T164 roll 3, frame 0109 (NAID 211586337), via the National Archives Catalog')
 IMAGES['fiedmond1779'] = ('fiedmond1779_lead.jpg', 'The letter of 19 July 1779 opens under its clear date; &ldquo;le 13 de ce mois avec&rdquo; is in clear among the numbers', 'Archives nationales d&rsquo;outre-mer, COL C14 51 f. 5 (view 009, right page), via the ANOM image server')
 IMAGES['peking1912'] = None
