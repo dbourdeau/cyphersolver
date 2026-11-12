@@ -85,20 +85,21 @@ THE CIPHER
     - Daisy series record: https://daisy.rigsarkivet.dk/arkivserie_detaljer?heid=11841122
 
 WHAT IS KNOWN
-  Status: Viewed 11 Nov 2026: unit sampled 1 image in 4, images 425-475 every image, six frames at full size. German letters in which names and key words are replaced by (a) numbers 12-596 standing alone (212, 319, 330, 381 for the place of writing, 425, 430, 431, 502, 503, 519, 565 ...), (b) words spelled in capital letters by a letter substitution (CVPRYTAAT, DCTNSL, NVCXLMP, FTMKPOPPTA, TZKTCPETE, EOPPTM, PRYVMTM, FZPNLC), and (c) signs (a heart for the king, a gamma-like sign, a figure-8 sign). The French letter of 7 Mar 1629 uses another system: runs of two-digit numbers with full stops (20.53.51.37.40.63.18.37.19.60; 64.65.51.71; 67.65.64.75.19.51) and three-digit codes (965, 836, 547, 628). No decipherment between the lines, in the margin or on a separate leaf on any frame viewed. Not on DECODE. Opel (1894) cites the letters without printing them.
+  Status: Viewed 11 Nov 2026: unit sampled 1 image in 4, images 425-475 every image, six frames at full size. German letters in which names and key words are replaced by (a) numbers 12-596 standing alone (212, 319, 330, 381 for the place of writing, 425, 430, 431, 502, 503, 519, 565 ...), (b) words spelled in capital letters by a letter substitution (CVPRYTAAT, DCTNSL, NVCXLMP, FTMKPOPPTA, TZKTCPETE, EOPPTM, PRYVMTM, FZPNLC), and (c) signs (a heart for the king, a gamma-like sign, a figure-8 sign). The French letter of 7 Mar 1629 uses another system: runs of two-digit numbers with full stops (20.53.51.37.40.63.18.37.19.60; 64.65.51.71; 67.65.64.75.19.51) and three-digit codes (965, 836, 547, 628). Correction 12 Nov 2026 (checked at full size on image 447): the right page of image 447 is a chancery decipherment sheet headed 'Scultetus 17 Novemb:' for the number code of Schultetus's letter of 17 Nov 1628 (left page), so that code has a contemporary decipherment; no other leaf viewed carries one. Image 443 (right page) is a different cipher, a letter signed 'Quem novit' in letter-signs, not in Schultetus's hand: read in part, see targets/quemnovit1627/. Not on DECODE. Opel (1894) cites the letters without printing them.
   Outcome so far: not yet attempted by the project
   Prior-art check: open (checked 11 Nov 2026: DECODE, Tomokiyo, Opel 1894, Fridericia 1876, web)
   Check first: Page images 426-475 at full size and list every letter; transcribe the capital-letter words first (a simple substitution: NVCXLM(P) recurs as a name after 'Mons.'), then place the numbers from context (381 = the Hague dateline). Compare with the letters of Vosbergen and Brandt 1627-28 in the same unit (images 249-425) for the same numbers.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/quemnovit1627/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/quemnovit1627/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/quemnovit1627/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -138,7 +139,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/quemnovit1627/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+2541&amp;target=catalogue+2541
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -155,11 +156,11 @@ If you cannot open issues or pull requests, write this report for your human to 
 <p class="frame confirmed"><b>Cipher located and confirmed.</b> Black-and-white microfilm. German letters to the king signed 'Johann Schultetus', with bare numbers, capital-letter cipher words and signs in the running text; one French letter to 'Monsieur' with dotted runs of two-digit numbers. Nothing is written over the groups, the margins are empty, and no decipherment leaf lies between the letters. (Arkivalieronline epid 19852699, unit 261377: images 425-475 each at 1000 px; 435, 451, 454, 460, 461, 462 as full-size crops (api.rigsarkivet.dk/ao/v1/images/48900919, 48900935, 48900944, 48900945); checked 2026-11-11 by claude cloud sweep 11 Nov tkua_paging_3)</p>
 <h2>What is known</h2>
 
-
-<p><b>Status and prior art.</b> Viewed 11 Nov 2026: unit sampled 1 image in 4, images 425-475 every image, six frames at full size. German letters in which names and key words are replaced by (a) numbers 12-596 standing alone (212, 319, 330, 381 for the place of writing, 425, 430, 431, 502, 503, 519, 565 ...), (b) words spelled in capital letters by a letter substitution (CVPRYTAAT, DCTNSL, NVCXLMP, FTMKPOPPTA, TZKTCPETE, EOPPTM, PRYVMTM, FZPNLC), and (c) signs (a heart for the king, a gamma-like sign, a figure-8 sign). The French letter of 7 Mar 1629 uses another system: runs of two-digit numbers with full stops (20.53.51.37.40.63.18.37.19.60; 64.65.51.71; 67.65.64.75.19.51) and three-digit codes (965, 836, 547, 628). No decipherment between the lines, in the margin or on a separate leaf on any frame viewed. Not on DECODE. Opel (1894) cites the letters without printing them.</p>
+<p><span class="ko"><i class="k">written up</i> <a href="quemnovit1627.html" title="'Quem novit' (writer unknown) → Christian IV, one German letter with about 100 cipher words, Rigsarkivet TKUA Nederlandene B.41, unit 261377, image 443">quemnovit1627</a></span></p>
+<p><b>Status and prior art.</b> Viewed 11 Nov 2026: unit sampled 1 image in 4, images 425-475 every image, six frames at full size. German letters in which names and key words are replaced by (a) numbers 12-596 standing alone (212, 319, 330, 381 for the place of writing, 425, 430, 431, 502, 503, 519, 565 ...), (b) words spelled in capital letters by a letter substitution (CVPRYTAAT, DCTNSL, NVCXLMP, FTMKPOPPTA, TZKTCPETE, EOPPTM, PRYVMTM, FZPNLC), and (c) signs (a heart for the king, a gamma-like sign, a figure-8 sign). The French letter of 7 Mar 1629 uses another system: runs of two-digit numbers with full stops (20.53.51.37.40.63.18.37.19.60; 64.65.51.71; 67.65.64.75.19.51) and three-digit codes (965, 836, 547, 628). Correction 12 Nov 2026 (checked at full size on image 447): the right page of image 447 is a chancery decipherment sheet headed 'Scultetus 17 Novemb:' for the number code of Schultetus's letter of 17 Nov 1628 (left page), so that code has a contemporary decipherment; no other leaf viewed carries one. Image 443 (right page) is a different cipher, a letter signed 'Quem novit' in letter-signs, not in Schultetus's hand: read in part, see targets/quemnovit1627/. Not on DECODE. Opel (1894) cites the letters without printing them.</p>
 <p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 11 Nov 2026: DECODE, Tomokiyo, Opel 1894, Fridericia 1876, web).</p>
 <p><b>Check first.</b> Page images 426-475 at full size and list every letter; transcribe the capital-letter words first (a simple substitution: NVCXLM(P) recurs as a name after 'Mons.'), then place the numbers from context (381 = the Hague dateline). Compare with the letters of Vosbergen and Brandt 1627-28 in the same unit (images 249-425) for the same numbers.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/quemnovit1627/NOTES.md" rel="noopener">targets/quemnovit1627/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/quemnovit1627" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>

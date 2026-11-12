@@ -11,7 +11,7 @@ All scores are judgments on a 1–5 scale, not measurements. The composite is a 
 are stated; change them and the order changes. Entries marked * carry an inference that the notes do not
 verify (see the last section).
 
-The composite table holds 402 rows (24 taken out after the reading audit of 22–23 Oct 2026), one per finished target or group, ordered by score. Rows marked † are provisional: scored by the assistant on the same axes when the target was written up, not yet checked by Daniel or worked out in the appendix. Unmarked rows are the thirteen reviewed on 16 Sept 2026. Placement notes written with the provisional rows are kept at the end of the page.
+The composite table holds 405 rows (24 taken out after the reading audit of 22–23 Oct 2026), one per finished target or group, ordered by score. Rows marked † are provisional: scored by the assistant on the same axes when the target was written up, not yet checked by Daniel or worked out in the appendix. Unmarked rows are the thirteen reviewed on 16 Sept 2026. Placement notes written with the provisional rows are kept at the end of the page.
 
 ## Axes and weights
 

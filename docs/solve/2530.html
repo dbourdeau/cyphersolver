@@ -47,7 +47,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 2530 · class A · priority 7.4 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 2530 · class A · priority 7.4 · in progress</p>
   <h1>Simon de Petkum (Danish resident in London and Oxford) → a minister in Copenhagen ('Monsieur'): letters with long passages in a number code, no decipherment; his parallel relations to Frederik III are deciphered between the lines</h1>
   <p class="sub">Petkum's private reports during the Bergen affair of 1665 and the slide into the Anglo-Danish war of 1666; the passages he hid from the clerks are the ones left unread, and the king's letters give several hundred group values.</p>
   <dl class="facts">
@@ -61,6 +61,7 @@
 </section>
 
 <main>
+<div class="callout blue"><p><strong>In progress here.</strong> <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/petkum1665/NOTES.md" rel="noopener">targets/petkum1665</a> is working on this cipher (status: in progress (13 Nov 2026 session: key v4 added from four unused glossed leaves, see Key v4 below; integration check, 12 Nov 2026: every letter is read in part, none reaches 95%; not written up yet because the gaps below that are not-attempted can still be worked, see Integration check). Key rebuilt from the interlinear decipherments of sister leaves (no key sheet). Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic); issues #443 and #444 and the comments on them. Folder prepared 12 Nov 2026 in answer to the maintainer's note on both issues ("held, not rejected: the issue gives the results but not the files").). Read its NOTES.md before you start, and hand it to your agent with this page: it records what was transcribed, tried and ruled out, and the next step.</p></div>
 <h2>Hand this page to your AI agent</h2>
 <p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
 <p class="urlline">https://cyphersolver.com/solve/2530.html</p>
@@ -69,6 +70,10 @@
 This page: https://cyphersolver.com/solve/2530.html
 
 You are helping a public research project read historical cipher letters that nobody has read yet.
+
+START HERE: the project is already working on this cipher. Read these notes before anything else and
+build on them; they record what was transcribed, tried and ruled out, and the next step:
+  https://github.com/dbourdeau/cyphersolver/blob/main/targets/petkum1665/NOTES.md  (status: in progress (13 Nov 2026 session: key v4 added from four unused glossed leaves, see Key v4 below; integration check, 12 Nov 2026: every letter is read in part, none reaches 95%; not written up yet because the gaps below that are not-attempted can still be worked, see Integration check). Key rebuilt from the interlinear decipherments of sister leaves (no key sheet). Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic); issues #443 and #444 and the comments on them. Folder prepared 12 Nov 2026 in answer to the maintainer's note on both issues ("held, not rejected: the issue gives the results but not the files").)
 
 THE CIPHER
   Title:          Simon de Petkum (Danish resident in London and Oxford) → a minister in Copenhagen ('Monsieur'): letters with long passages in a number code, no decipherment; his parallel relations to Frederik III are deciphered between the lines
@@ -85,19 +90,20 @@ THE CIPHER
 
 WHAT IS KNOWN
   Status: Viewed 11 Nov 2026: every 4th image of the unit on contact sheets; 15 frames at full size. Clear French with code passages: numbers 14-389 separated by full stops, mixed with signs (theta, lambda, beta, psi, a looped 'll', 'ct', a '4'-like sign, m with a tail, y, x, b, g). In the relations to the king the chancery wrote the French over the groups (image 377: 14 = 'a', 222.100.215 = 'faire', 201 = 'de', 266.236 = 'la garentye', 96 = 'M. le Chancelier', 120 = 'la Suede', 389.288 = 'Votre Majeste'). The letters to 'Monsieur' in the same code carry nothing over the groups. Not on DECODE; no edition of the relations found.
-  Outcome so far: not yet attempted by the project
+  Outcome so far: In progress here, in targets/petkum1665/.
   Prior-art check: open (checked 11 Nov 2026: DECODE, Tomokiyo, Danmark-Norges Traktater 6, Jørgensen, Vaupell, web)
   Check first: Page every image 337-657 (only 1 in 4 was seen) and list the letters to 'Monsieur'; identify him (Gabel or the chancery secretary). Build the table from the interlinear relations (377, 401, 477, 561, 565, 581) and read 573 and 641. Check TKUA 'Chiffer' 1670-1709 image 309 (wrapper 'Jens Juel or Petkum to Sweden 1670-71', a later key).
   Class A: a sibling letter with a decipherment is in the same volume or series, so matching it is the first move.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/petkum1665/NOTES.md
   Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/biermann1675/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); targets/biermann1675/NOTES.md (everything
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/petkum1665/NOTES.md (everything
    already tried on this cipher, with the files it used); and lang/README.md (shared language models).
-   Put all your work in targets/biermann1675/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   Put all your work in targets/petkum1665/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
    under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
@@ -138,7 +144,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/biermann1675/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/petkum1665/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+2530&amp;target=catalogue+2530
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -157,9 +163,9 @@ If you cannot open issues or pull requests, write this report for your human to 
 
 
 <p><b>Status and prior art.</b> Viewed 11 Nov 2026: every 4th image of the unit on contact sheets; 15 frames at full size. Clear French with code passages: numbers 14-389 separated by full stops, mixed with signs (theta, lambda, beta, psi, a looped 'll', 'ct', a '4'-like sign, m with a tail, y, x, b, g). In the relations to the king the chancery wrote the French over the groups (image 377: 14 = 'a', 222.100.215 = 'faire', 201 = 'de', 266.236 = 'la garentye', 96 = 'M. le Chancelier', 120 = 'la Suede', 389.288 = 'Votre Majeste'). The letters to 'Monsieur' in the same code carry nothing over the groups. Not on DECODE; no edition of the relations found.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 11 Nov 2026: DECODE, Tomokiyo, Danmark-Norges Traktater 6, Jørgensen, Vaupell, web).</p>
+<p><b>Outcome so far.</b> In progress here, in targets/petkum1665/. Prior-art check: open (checked 11 Nov 2026: DECODE, Tomokiyo, Danmark-Norges Traktater 6, Jørgensen, Vaupell, web).</p>
 <p><b>Check first.</b> Page every image 337-657 (only 1 in 4 was seen) and list the letters to 'Monsieur'; identify him (Gabel or the chancery secretary). Build the table from the interlinear relations (377, 401, 477, 561, 565, 581) and read 573 and 641. Check TKUA 'Chiffer' 1670-1709 image 309 (wrapper 'Jens Juel or Petkum to Sweden 1670-71', a later key).</p>
-<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/biermann1675/NOTES.md" rel="noopener">targets/biermann1675/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/biermann1675" rel="noopener">the folder</a>)</li></ul>
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/petkum1665/NOTES.md" rel="noopener">targets/petkum1665/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/petkum1665" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/biermann1675/NOTES.md" rel="noopener">targets/biermann1675/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/biermann1675" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
