@@ -1,0 +1,235 @@
+{
+ "schema_version": 1,
+ "target": "hofkriegsrat1629",
+ "title": "Imperial War Council (Hofkriegsrat), Vienna, to Johann Ludwig von Kuefstein, imperial orator, 27 Oct 1629 (catalogue 2236): read with Donath's printed alphabet of Kuefstein's cipher, tested on her three glossed specimens",
+ "documents": [
+  {
+   "id": "p1461_27oct1629",
+   "read": "read",
+   "shelfmark": "Budapest, ELTE Egyetemi Könyvtár, Kézirattár, G. 4 Fol. Tom. V, p. 1461 (Lang 2015, C.Kuf.16)",
+   "date": "27 Oct 1629 (clear dating line 'Wien den .27. Octobris A° 629')",
+   "year": 1629,
+   "country": "Austria",
+   "route": "Hofkriegsrat (President and Councillors), Vienna -> Johann Ludwig von Kuefstein, imperial orator to the Porte",
+   "places": {
+    "from": "Vienna",
+    "to": "unknown (Kuefstein on his embassy; the letter refers to his reception at Ofen)"
+   },
+   "language": "German",
+   "cleartext_in_document": "separate passages",
+   "pages": 1,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the page. Key: the alphabet printed by Donath 1964 p. 58, rebuilt from the glossed drafts of the same volume."
+   },
+   "length": {
+    "tokens": 602,
+    "distinct": 32,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_p1461.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Plate in Donath 1964, Magyar Könyvszemle 80/1, p. 57 (EPA PDF MKSZ_EPA00021_1964_80_01_047-073.pdf, page index 10)",
+    "image_quality": "fair",
+    "notes": "Image: a 1964 halftone plate. Two passes from different crops (2.4x halves, 3x thirds); 17 sign-level disagreements settled on 3-5x crops and listed in the file. Sign conventions brought into line with the tokens used after the blind review. Manuscript not seen. Length: 602 signs counted from the L lines without the word gaps (84) and punctuation (17); docs/_check_profile.py --measure --drop-first gives 703 tokens with them. Clear text (heading, dating line, subscription) is in separate passages outside the cipher."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Graphic signs for letters, words spaced, commas and points kept. Vowels have two signs each (a 5/oo, e 3/pi, i 8/c, u 7/III; o 6 in the text), other letters one; u and v share a sign. A q-shaped sign with crossed, curled tail is a null, written mostly between doubled letters, and a loop sign before one initial w is read as a null too. Code signs exist for the Emperor and the Sultan (Donath); one opening group here is not decrypted.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 32,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "titles"
+   ],
+   "unread_groups": 2
+  },
+  "nulls": {
+   "present": true,
+   "count": 2
+  },
+  "key_order": "random",
+  "word_division": "kept",
+  "notes": "The catalogue's 'Kuefstein to Ferdinand III' is corrected from the clear heading, dating line and subscription: the letter is from the Hofkriegsrat in Vienna to Kuefstein."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Donath 1964 p. 58 prints the letter alphabet and deciphers three other letters of the volume (Tom. V pp. 615, 755, 1069); no decipherment of p. 1461 printed. Lang 2015 marks it undeciphered. Checked 12 Nov 2026: one web search, Szabados 2024 (Acta Historica 148) text searched; catalogue vetting of 4 Nov 2026 (DECODE, Tomokiyo, Lasry).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published key",
+   "known plaintext",
+   "cleartext context"
+  ],
+  "attack": "published key",
+  "human_role": "WAINUT set the task (catalogue 2236) and the rules; AI language-model agents transcribed, mapped and froze the key, ran the held-out test, read and checked, and a separate AI language-model agent reviewed the result blind. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "EPA (OSZK) PDF of Magyar Könyvszemle 1964",
+   "scripts in this folder (decryption, mark check, held-out test)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-12",
+  "last_date": "2026-11-12"
+ },
+ "solution": [
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "Donath 1964 article PDF fetched once from EPA; the plate (p. 57) and the key and specimen pages (pp. 58-62) extracted at full scan size.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "literature search",
+   "what": "Catalogue vetting record, Donath 1964, Lang 2015 entry, one web search, Szabados 2024 text: no decipherment of p. 1461 found.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "Sign conventions written first; two passes from different crops, reconciled on close-ups.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "key from source",
+   "what": "Donath's p. 58 alphabet mapped to the plate's shapes and frozen (key_frozen.tsv) with two nulls fixed from the plate.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Held-out: Donath's three glossed specimens (pp. 615, 1069, 755), 373 of 377 signs (98.9%) give her gloss with the frozen key. Not independent of Donath's own key work.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Mechanical decryption read as German; check_marks.py passes (no changed or added letters). 99 of 102 cipher words taken verbatim, 3 holes (opening code group and a two-sign group). Reading checker: 0.50 in the writer's spelling (period spellings unknown to the word list), 0.90 normalised.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "technique": [
+    "other"
+   ],
+   "what": "Blind review by a separate AI language-model agent: four plate lines copied sign by sign before opening the transcription (4/4 agree), decryption, mark check and held-out test re-run, reading read as sentences. It agreed with the state read (grade B) and asked for four fixes.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Fixes from the review: L06 'dan' (signs q oo o-) marked doubtful as [?man], since the first sign may be d (m) not q (d) on the halftone; translation follows; sign conventions brought into line with the tokens used; the reading-file checker figure corrected. Now 98 of 102 words verbatim, 1 guess, 3 holes; check_marks.py passes.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "partial",
+  "method": "read with known key",
+  "method_basis": "Alphabet printed by Donath 1964 p. 58 for Kuefstein's cipher (rebuilt by her from glossed drafts in the same volume), mapped to the plate's sign shapes, frozen, tested on her three glossed specimens, and applied to the bare page p. 1461. The key is partial only in that the opening code group is not decrypted.",
+  "contribution": [
+   "transcription",
+   "sender or date identified",
+   "catalogue correction"
+  ],
+  "fraction_read": 0.96,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading_p1461.md: 98 of 102 cipher words read verbatim from the signs (1 guess, 3 holes).",
+  "verification": [
+   "matched control",
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "Donath's printed alphabet mapped to the plate, frozen, tested on her glossed specimens and applied to p. 1461; reading and translation; sender and recipient corrected from the clear text",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "p. 1461 from the plate in Donath 1964 (two passes), and Donath's three glossed specimens for the held-out test",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "donath",
+    "role": "key or decipherment used",
+    "note": "alphabet of Kuefstein's cipher (p. 58), the plate of p. 1461 (p. 57) and the glossed specimens of pp. 615, 755 and 1069 (pp. 60-62)",
+    "date": "1964",
+    "source": "Donath Regina, A diplomáciai titkosírás XVII. századi használatához, Magyar Könyvszemle 80 (1964) 55-62; https://epa.oszk.hu/00000/00021/00254/pdf/MKSZ_EPA00021_1964_80_01_047-073.pdf"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "p1461_27oct1629",
+    "label": "p. 1461, Hofkriegsrat to Kuefstein, Vienna, 27 Oct 1629",
+    "transcription": "transcription_p1461.txt",
+    "decryption": "decryption_p1461.txt",
+    "reading": "reading_p1461.md",
+    "translation": "translation_p1461.md",
+    "language": "de",
+    "state": "read",
+    "read_share": 0.96,
+    "summary": "The Emperor has learned from Kuefstein's letter how he was received at Ofen (Buda) by some 3,000 Turks; on his order the War Council asks Kuefstein to report what troops these were, whether they came from Ofen or from other Turkish places and borders, and whether they have dispersed or are still together.",
+    "note": "98 of 102 cipher words verbatim from the signs, 1 guess ([?man] in L06, where the signs give 'dan'), 3 holes (the opening code group [1] [2], most likely a code for the Emperor, and the two-sign group [3] before 'herrn'). The holes and the guess are all in the first sentence.",
+    "reading_review": {
+     "grade": "B",
+     "by": "independent AI language-model agent (blind review)",
+     "date": "2026-11-12",
+     "note": "Reads as continuous Hofkriegsrat chancery prose; about 98 of 102 words make sense from the signs, and four plate lines checked sign by sign agree with the transcription. Grade B because the opening code group is unread, 'dan' in L06 is doubtful (now marked [?man]), the only image is a 1964 halftone, and the held-out test does not cover the values fixed on the plate."
+    }
+   }
+  ],
+  "key_file": [
+   "key_frozen.tsv",
+   "key.tsv"
+  ],
+  "gaps": [
+   {
+    "item": "Opening code group [1] [2] (L01) and the two-sign group [3] before 'herrn' (L03)",
+    "blocker": "open-codes",
+    "detail": "Do not decrypt with the letter key; [1] [2] most likely stands for the Emperor. A code list for this cipher would settle them."
+   },
+   {
+    "item": "L06 [?man] (signs q oo o-, mechanically 'dan')",
+    "blocker": "needs-physical-access",
+    "detail": "The first sign may be d (m) rather than q (d); the 1964 halftone does not settle it."
+   },
+   {
+    "item": "The manuscript itself",
+    "blocker": "needs-physical-access",
+    "detail": "Only the Donath 1964 halftone plate was seen; the clear heading and subscription, and the doubtful signs, need ELTE's original or a better image."
+   }
+  ]
+ }
+}
