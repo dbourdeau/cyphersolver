@@ -1,11 +1,16 @@
 # wackerbarth1717 - reading of Relation XXII (French, spelling of the copy), Vienna 14-16 June 1717
 
-Status: read in part. **664 of 716 cipher words = 92.7%** under the one rule applied to the whole target at integration
-(12 Nov 2026, `integration_recount.py`): a word counts when every number under it has a value from a gloss of the time, in
-either volume. The contributor's own count below (641 of 716 = 89.5%) is stricter on one point: it leaves out the 23 words
-marked [restored] whose only missing value is 4 = x, 76 = st or 306 = Vienne, which the glosses of the 1715 volume supply
-(so "à ‹306›" in view 0090 reads "à Vienne"). It also counts {Czar} in view 0097, which rests on a number probably misread;
-the one rule does not. The marks in the text are the contributor's and are unchanged.
+**Project count (strict, 12 Nov 2026): 634 of 716 cipher words = 88.5%, read in part** (`integration_recount.py`: a word
+counts only when every letter of it as read is given by the gloss value of the number under it, in either volume). The
+share lines further down ("641 / 716 = 89.5%", "The share we report is 89.5%") are the contributor's own count, not the
+project's.
+
+Status: read in part. The contributor's count (641 of 716 = 89.5%) leaves out the 24 words marked [restored] or unresolved
+whose only missing value is 4 = x, 76 = st or 306 = Vienne, which the glosses of the 1715 volume supply (so "à ‹306›" in view
+0090 reads "à Vienne"); the project's count takes them in. It counts 31 words that the project's count does not: {Czar} in
+view 0097, which rests on a number probably misread, "de" in view 0094 D17 (its e is taken by 79 = la), and 29 words where the reading gives a gloss-valued number other
+letters, passes one over or supplies a letter (e.g. {garantir} on "xarentir", {se} on 78, {donner} on "donqer", du from "d"
+alone). The marks in the text are the contributor's and are unchanged.
 
 Relation XXII of August Christoph von Wackerbarth to King Augustus II ("Sire"), copy, Vienna, 14-16 June 1717. Dresden,
 Sächsisches Hauptstaatsarchiv, 10026 Geheimes Kabinett, Loc. 00713/01, ff. 71-80v (views 0089-0099). The letter mixes clear

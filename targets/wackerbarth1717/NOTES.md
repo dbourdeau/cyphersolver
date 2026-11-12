@@ -1,6 +1,6 @@
 # wackerbarth1717: Wackerbarth's cipher letters, 1715-1717 (Dresden, HStA 10026 Geheimes Kabinett, Loc. 00712/05 and 00713/01): one key rebuilt from the glosses of the time; Relation XXII to Augustus II (Vienna, 14-16 June 1717) and the letter of 20 November 1715 from the camp before Stralsund read in part; the letter to Flemming of 24 April 1717 read from its decipherment of the time
 
-Status: read in part (contributed by Brice Dudout, PR #418, 11 Nov 2026; verified and integrated 12 Nov 2026). Under one counting rule for the whole target, Relation XXII reads at 664 of 716 cipher words (92.7%) and the letter of 20 Nov. 1715 at 841 of 922 (91.2%), both under the 95% bar. The key was rebuilt from the interlinear glosses of the time in both volumes. Its declared ground-truth test (A') FAILED; a held-out language test passed, the 1715 letter's own pre-registered measurement passed, and at verification each volume's key was found to read the other volume's letter. Open: numbers that no gloss gives (79, 96, 1000, 72 and others), a few nomenclator codes, three probable misreadings. The letter of 24 April 1717 is read from its decipherment sheet of the time, not from the key.
+Status: read in part (contributed by Brice Dudout, PR #418, 11 Nov 2026; verified and integrated 12 Nov 2026). Under one strict counting rule for the whole target (a word counts only when every letter of it as read is given by the gloss value of the number under it), Relation XXII reads at 634 of 716 cipher words (88.5%) and the letter of 20 Nov. 1715 at 741 of 922 (80.4%), both under the 95% bar. The key was rebuilt from the interlinear glosses of the time in both volumes. Its declared ground-truth test (A') FAILED; a held-out language test passed, the 1715 letter's own pre-registered measurement passed, and at verification each volume's key was found to read the other volume's letter. Open: numbers that no interlinear gloss gives (79, 96, 1000 and others; 72 rests only on the non-blind alignment of the 24 April cipher on its sheet), a few nomenclator codes, three probable misreadings, and words whose letters the reading takes from the sense where the cipher gives other letters or none. The letter of 24 April 1717 is read from its decipherment sheet of the time, not from the key.
 
 > **Simultaneous work: Anne-Simone Rous.** Anne-Simone Rous (SBG Sachsen, Dresden) is working on this cipher correspondence
 > of Wackerbarth and Flemming ("The Keys of Diplomacy. The encrypted correspondence of Saxon-Polish Ministers Wackerbarth
@@ -49,7 +49,8 @@ Sächsisches Staatsarchiv, Hauptstaatsarchiv Dresden.
 **One key, "S1"**, in the letters of 1715 and of March-June 1717: a homophonic substitution of French letters in one- and
 two-digit numbers (e = 2/10, i = 9, o = 16/22/33, t = 28/52 ...). Three-digit numbers are polygrams and a nomenclator (154
 Votre Excellence, 177 le Czar, 187 le roi de Suède, 217 le roi d'Angleterre, 252 le roi de Prusse, 292 la Pologne, 306 Vienne,
-355 premier). Numbers of four digits, 50xx and others, are taken for nulls. Clear words are mixed in.
+355 premier). Most numbers of four digits, 50xx and others, are taken for nulls (1000 is proposed as "et"; 4527, 4008 and
+10009 are unresolved codes). Clear words are mixed in.
 
 The key was rebuilt twice, each time from interlinear glosses of the time only:
 - **key c** (`key.tsv` section A, frozen, SHA-256 3322ae87...c49c): from the glossed S1 views of Loc. 00713/01 (0017,
@@ -62,7 +63,8 @@ The key was rebuilt twice, each time from interlinear glosses of the time only:
 They are the same key: by the verifier's comparison they have 47 numbers in common and agree on 43 (the contributor counted
 47 of 50); they share 150, 168 and 700; and each reads the other volume's letter. The four that differ: 20 (ee / b; b is
 right), 71 (y / i: the training glosses have y in all 8 cases, so the "i" of `s15_key.tsv` is a slip), 77 (ss / s), 97 (m /
-la). Key c's 103 = "les" reads "le" in Relation XXII ("le comte de Sinzendorf"): 103 = le / les.
+la). Key c's 103 = "les" (view 0088, "V.E. les desire") also reads "le": a gloss of the time gives it, view 0080 L03,
+"deloger les russes" over 53 2 12 16 7 10 27 103 29 60 6 77 2 51 (103 29 = les, so 103 = le). 103 = le / les.
 
 `key.tsv` section B holds proposals from the reading, made after the measurement: corrections 20 = b and 78 = le; homophones
 seen at least three times (4 x, 38 h, 40 b, 73 z, 76 st, 79 la, 89 z, 92 t, 1000 et); nomenclator values taken from the sheet
@@ -107,32 +109,54 @@ Verdict recorded: "weak" (a failed declared test stays failed).
 
 The contributor counted the two letters by different rules: in Relation XXII a word containing a number absent from the key
 is "restored" and not counted; in the 1715 letter the same kind of word is "probable" and counted. At integration both were
-recounted from the files under **one rule**: every word of the reading is aligned on the cipher numbers under it, and
+recounted from the files under one rule, which was made strict after the claims review (below). Every word of the reading
+is aligned on the cipher numbers under it, and
 
-> a cipher word is counted when the contributor read it (certain or probable) and every number under it has a value in a
-> key built from glosses of the time (key c or K1715) or a value that a gloss of the time attests: 4 = x, 76 = st, 20 = b
-> and 306 = Vienne (glosses of Loc. 00712/05, views 0388-0390), 78 = le (gloss in view 0057). A word under which a number
-> has only a value deduced from the sense is not counted. Unresolved words are not counted.
+> a cipher word is counted only when the contributor read it (certain or probable) and **every letter of the word as read
+> is given by the gloss value of the number under it**. Gloss values: key c, K1715, or a value that a gloss of the time
+> attests: 4 = x, 76 = st, 20 = b and 306 = Vienne (glosses of Loc. 00712/05, views 0388-0390), 78 = le (gloss in view
+> 0057), 103 = le (gloss in view 0080). A word is not counted when a number under it has only a value from the sense, when
+> a number with a gloss value is read as other letters, when a number with a gloss value inside the word is passed over,
+> or when a letter of the word has no number under it. Unresolved words are not counted.
+
+Spelling equivalences allowed, and nothing else: u = v, i = j = y; a consonant written once in the cipher and doubled in
+the reading, or the reverse (tranquilité read tranquillité); "est" of the time read "ét" or "êt" (76 = st in estat, estre,
+estroite); "à" + 150 "le roy" read "au Roy". Ten counted words use one of them. Letters written in clear inside a cipher
+line are given by the manuscript. A number with a gloss value passed over between two words takes no letter from either
+word and is reported, not held against a word (18 such numbers in the three texts).
 
 | document | cipher words | counted | share | contributor's own count |
 |---|---|---|---|---|
-| Relation XXII, 14-16 June 1717 | 716 | 664 | **92.7%** | 641 = 89.5% (575 certain, 66 probable, 66 restored, 9 unresolved) |
-| Letter of 20 Nov. 1715 | 922 | 841 | **91.2%** | 892 = 96.75% (774 certain, 118 probable, 12 restored, 18 unresolved) |
-| both | 1,638 | 1,505 | 91.9% | |
-| 24 April 1717, key check on views 0037-0039 | 207 | 193 | 93.2% | 188 = 90.8% |
+| Relation XXII, 14-16 June 1717 | 716 | 634 | **88.5%** | 641 = 89.5% (575 certain, 66 probable, 66 restored, 9 unresolved) |
+| Letter of 20 Nov. 1715 | 922 | 741 | **80.4%** | 892 = 96.75% (774 certain, 118 probable, 12 restored, 18 unresolved) |
+| both | 1,638 | 1,375 | 83.9% | |
+| 24 April 1717, key check on views 0037-0039 | 207 | 180 | 87.0% | 188 = 90.8% |
 
 Both letters read with the key are under 95%: **read in part**, and so is the target.
-- Relation XXII: 23 words the contributor marked restored are counted, because their only missing value is 4 = x, 76 = st
-  or 20 = b from the 1715 glosses (aux, paix, exécution, loix, Laxenbourg, nouveaux, s'expliquer, expédition; majesté,
-  juste, circonstance, question, instructions), and "à ‹306›" reads "à Vienne". "le Czar" at 0097 G07 is not counted (the
-  number is transcribed 174, probably a misread 177). 52 words are not counted.
-- Letter of 20 Nov. 1715: 51 words the contributor counted are not, because a number under them has only a value deduced
-  in the letter or taken from the non-blind reading of 24 April: 96 = le (19 words; glossed nowhere), 72 = ch (8), 1000 = et
-  (6), 85 = st (4), 64 = c (3), 70 = x (3), 73 (3), 284 = comte (2), 40 = b (2), 609, 11. Two of them ("alliés", view 0381
-  right; "ministre", view 0386 right) were marked certain. With 72 = ch counted the letter would be at 92.0%; it stays
-  under the bar either way. 81 words are not counted.
+- Relation XXII: 82 words are not counted: 43 restored, 8 unresolved, and 31 that the contributor marked certain or
+  probable. Of those 31, 2 rest on a number with no gloss value ("le Czar" at 0097 G07, transcribed 174, probably a misread
+  177; "de" at 0094 D17, whose e is taken by 79 = la); 17 read a gloss-valued number as other letters (chez on "ches",
+  avoit, résolution, convaincre, pour, se on 78, faire, chancellerie, quelque, affaires, qui on "qri", concerter, cercles
+  on "eercles", garantir on "xarentir", raport on "rasort", part, vers on "ueri"); 4 pass over a gloss-valued number
+  inside the word (donner on "donqer", cour, de, mains); 8 have a letter with no number under it (du from "d" alone,
+  comte, concerts, qu'il, des, premiers, donné, ses). 24 words the contributor marked restored or unresolved are counted,
+  because their only missing value is 4 = x, 76 = st or 20 = b from the 1715 glosses (aux, paix, exécution, loix,
+  Laxenbourg, nouveaux, s'expliquer, expédition; majesté, juste, circonstance, question, instructions) or 306 = Vienne.
+- Letter of 20 Nov. 1715: 181 words are not counted: 12 restored, 18 unresolved, and 151 that the contributor counted. Of
+  those 151, 53 rest on a number with only a value deduced in the letter or taken from the non-blind reading of 24 April
+  (96 = le 19 times, glossed nowhere; 72 = ch 8; 1000 = et 6; 85 = st 4; 64 = c 3; 70 = x 3; 73 3; 284 = comte 2; 40 = b 2;
+  609, 11); 28 read a gloss-valued number as other letters (devant on "desant", assaut on "attaut", triste on "tuiste",
+  Wismar on 13 = m three times, pour on "four" ...); 9 pass over one (Poel on "poeh", puisque on "suque", prames on
+  "prahmes" ...); 61 have letters with no number under them. Of these 61, 36 are words whose cipher stops before the end
+  of the word after at least three letters (réellem, infailliblem, allem, Strals, extrém, génér ...): they may be the
+  clerk's abbreviations (the 1715 training glosses abbreviate "allem:"), but the transcription does not record an
+  abbreviation mark, so they are not counted. Counting them would give 777 of 922 = 84.3%, still under the bar; that is a
+  sensitivity figure, not the count.
+- 24 April key check: 27 words not counted (10 restored, 4 unresolved, 8 misread numbers, 5 supplied letters).
 - Values deduced in both letters independently that agree: 1000 = et, 40 = b, 11 = k (73 is z in Relation XXII and ends
   "alliés" in the 1715 letter, s or z). They are strong candidates but no gloss gives them.
+- By the files, the alignment was checked by hand on more than twenty words of each class against the transcription and
+  the decryption files (claims review, below).
 
 **Relation XXII** (`reading.md`, `translation.md`). The chancellor Count Sinzendorf, by order of Charles VI, makes
 Wackerbarth an overture. The Emperor proposes a concert with the King of Poland and the King of England to restore the
@@ -152,7 +176,7 @@ Sinzendorf is in Innsbruck.
 at ff. 33-33v, headed "Le C.te de Wackerbarth du 24. d'avril 1717", was transcribed (`frozen/releves/A-FEUILLE-0042-0043.txt`,
 399 words, one doubtful) and translated. By the transcriptions it starts where the cipher of f. 29 starts ("vues du Roy de
 Suede sur la Pologne") and ends where the cipher of view 0040 ends ("le traité qui est requis"). The rebuilt key reads the
-cipher of views 0037-0039 in agreement with it (193 of 207 cipher words under the one rule). **Not blind**: the sheet had
+cipher of views 0037-0039 in agreement with it (180 of 207 cipher words under the one rule). **Not blind**: the sheet had
 been transcribed, for test A, before the reading. The letter covers the King of Sweden's designs on Poland (a landing near
 Danzig), the fear that Sweden might detach the Czar from the Northern League, and the exchange of the county of Hanau, for
 which the Electors' consents must be won directly and not through the Emperor.
@@ -160,11 +184,11 @@ which the Electors' consents must be won directly and not through the Emperor.
 ## Letter of 20 November 1715: Wackerbarth (camp before Stralsund) to his wife in Vienna, copy (`s15_*`)
 
 Dresden, HStA 10026 Geheimes Kabinett, Loc. 00712/05, ff. 307-314 (views 0380-0387), French, clear and cipher mixed. Same
-key as the 1717 letters (above). Read in part: 841 of 922 cipher words (91.2%).
+key as the 1717 letters (above). Read in part: 741 of 922 cipher words (80.4%) under the one rule.
 
 **Title corrected by the contributor.** The volume is catalogued as Flemming-Wackerbarth correspondence, and his first
 working inventory (made from thumbnails) had "Flemming (camp before Stralsund) to Wackerbarth". The evidence points to
-**Wackerbarth writing to his wife, the Countess of Wackerbarth, in Vienna; the piece is a copy**:
+**Wackerbarth writing, probably to his wife, the Countess of Wackerbarth, in Vienna; the piece is a copy**:
 - heading of f. 307: "Reponse à la lettre de 306. au camp devant Stralsund le 20e 9bre 1715"; 306 = Vienna by a gloss of the
   time (view 0389);
 - it answers "celle du 5me du courant": f. 315 (view 0388) is the "Extrait d'une lettre de 306.66.857 ... en date du 5 de 9bre
@@ -263,24 +287,48 @@ Not checked: views 0096 and 0042 (downloaded, not compared); view 0388 (connecti
 misreadings on views 0097-0098; the coverage of the 24 April sheet on the images; Rous's paper and book.
 
 Corrections made at integration:
-1. **One counting rule** for both letters and the key check (`integration_recount.py`, read-only): Relation XXII 92.7%,
-   1715 letter 91.2%. The 1715 letter is "read in part", not "read"; the contributor's figures (89.5%, 96.75%) are given
+1. **One counting rule** for both letters and the key check (`integration_recount.py`, read-only); made strict after the
+   claims review: Relation XXII 88.5%, 1715 letter 80.4%. The 1715 letter is "read in part", not "read"; the contributor's figures (89.5%, 96.75%) are given
    once, as his.
 2. **The failed test is stated as failed** in this file, `validation.txt`, `profile.json` and on the page; the cross-volume
    check found at verification is recorded as separate evidence.
 3. **The key came from the interlinear glosses**, not from the sheet of 24 April (`outcome.method_basis`).
 4. **24 April 1717 is "read from existing decipherment"** (`outcome.parts`), with the sheet as the text.
 5. The 1715 document id in `profile.json` was `...-1715-10-20`; now `...-1715-11-20`.
-6. 71 = y (not i) and 103 = le / les noted in the key files' headers (frozen rows not edited); the "187 differs" remark
+6. 71 = y (not i) and 103 = le / les (gloss of view 0080) noted in the key files' headers (frozen rows not edited); the "187 differs" remark
    corrected (187 is not in key c section A).
 7. S2 (the Flemming key K0) is another key and is kept out of the entry.
 8. Statements about Rous's paper marked as the contributor's report; the possible original key recorded as a gap.
 9. `reading_review` recorded by the integration reviewer for the three texts (B, B, A for the sheet).
 
+## Claims review by a second reader (12 Nov 2026)
+
+An independent reader checked the page against these files. Findings and what was done:
+- **The counting rule was looser than the page said.** The page said a word counts when every number under it has a value
+  from a gloss of the time; `integration_recount.py` dropped a word only when a number under it had no value at all. A
+  number with a gloss value read as another letter (garantir on 4 = x, the same 4-for-7 slip as "le Czar"), a number
+  passed over, and a letter with no number under it did not drop the word. The script now counts a word only when every
+  letter of it as read is given by the gloss value of the number under it (equivalences listed above). New figures:
+  Relation XXII 664 → 634 of 716 (92.7% → 88.5%), letter of 1715 841 → 741 of 922 (91.2% → 80.4%), both 1,505 → 1,375 of
+  1,638 (91.9% → 83.9%), 24 April key check 193 → 180 of 207 (93.2% → 87.0%). The reviewer estimated about 25 such words
+  in Relation XXII (share near 89%); the script finds 29 (31 with the two no-value words) and 88.5%. For the 1715 letter
+  the drop is larger, mostly words whose cipher stops short of the word's end (see above).
+- Two alignment details fixed on the way: a catchword at the foot of view 0384 left (6 2 12) had been counted as a line,
+  and words running over a page break were split; the 1715 letter is now aligned as one stream.
+- **103 = le.** The reviewer noted that key c gives 103 = "les" only. A gloss of the time gives "le": view 0080 L03,
+  "deloger les russes" over 53 2 12 16 7 10 27 103 29 60 ..., where 103 29 = les. The eleven words that read 103 = le
+  (nine in Relation XXII, two in the 24 April check) stay counted; the citation is now in the script and in the key
+  files' notes.
+- Page wording corrected: 23 restored words rest on 4 = x or 76 = st (16 and 7), none on 20 = b; 72 and 1000 rest on the
+  non-blind alignment of the 24 April cipher on its sheet; "no DECODE record" is the repository's copy only; the letter is
+  probably to the countess; at view 0384 L11 the doubtful 28/25 looks like 28 while the reading uses 25; most (not all)
+  four-digit numbers are nulls; the 1715 test's declared deviations are given beside it; the contributor's own share
+  lines in `reading.md` and `s15_reading.md` are now headed by the project's strict count.
+
 ## Remaining gaps
 
-- Relation XXII: 52 of 716 cipher words not counted (numbers 79, 1000, 40, 73, 38, 92, 89, 93, 98, 11, 48, 118 with values deduced from the sense only; codes 4527, 289, 172, 169, 184, 1900205 with none) - blocker: open-codes; these numbers are glossed nowhere in either volume's training views; key.tsv section B proposes values that fit; 1000, 40 and 11 recur with the same value in the 1715 letter
-- letter of 20 Nov. 1715: 81 of 922 cipher words not counted (51 rest on numbers with values deduced in the letter: 96 = le 19 times, 72 = ch, 1000 = et, 85 = st, 64 = c, 70 = x, 73, 284 = comte, 40 = b; 12 restored; 18 unresolved: 183, 251, 270, 400, 357, 358, 365, 4008, 10009, 680, 68, 94 and five spelled words) - blocker: open-codes; 96 is glossed nowhere (in view 0386 right, L03, it may be a 46); 72 = ch rests on the non-blind alignment of the 24 April letter on its sheet
+- Relation XXII: 82 of 716 cipher words not counted (numbers 79, 1000, 40, 73, 38, 92, 89, 93, 98, 11, 48, 118 with values deduced from the sense only; codes 4527, 289, 172, 169, 184, 1900205 with none; 29 words where the reading gives a gloss-valued number other letters, passes one over or supplies a letter, listed in `integration_recount.py`) - blocker: open-codes; these numbers are glossed nowhere in either volume's training views; key.tsv section B proposes values that fit; 1000, 40 and 11 recur with the same value in the 1715 letter; the misread or skipped numbers need a blind re-reading of the images (not done)
+- letter of 20 Nov. 1715: 181 of 922 cipher words not counted (53 rest on numbers with values deduced in the letter: 96 = le 19 times, 72 = ch, 1000 = et, 85 = st, 64 = c, 70 = x, 73, 284 = comte, 40 = b; 98 where the reading gives a gloss-valued number other letters, passes one over or supplies letters, 36 of them possible abbreviations of the clerk; 12 restored; 18 unresolved: 183, 251, 270, 400, 357, 358, 365, 4008, 10009, 680, 68, 94 and five spelled words) - blocker: open-codes; 96 is glossed nowhere (in view 0386 right, L03, it may be a 46); 72 = ch rests on the non-blind alignment of the 24 April letter on its sheet; the misread, skipped and truncated words need the images re-read blind (not done; images In Copyright, not here)
 - three probable misreadings in Relation XXII (0097 G07, 0097 G15, 0098 G03) and the doubtful number 0089 M03 - blocker: illegible; a 7 with a hooked head read as 4; to be re-read blind on the images (not done; no plate made)
 - a ground-truth test of key c - blocker: no-key-material; test A' failed and no other glossed S1 letter of at least 300 groups is left in the volume (28 May and 24 April are used up); Rous's corpus may hold one
 - the original key, if one survives - blocker: no-key-material; the DECODE key records of Loc. 03233/02 (R5139 and others) were not tried on S1 and Rous's 2022 book was not opened (see Prior art); not checked
@@ -300,4 +348,4 @@ Corrections made at integration:
 - [x] known-keys: Flemming key K0 (Loc. 00675/10, view 0080) and its shifted variant, and Wackerbarth's 1703 key, compared: none is S1; K0 = S2. The DECODE keys of Loc. 03233/02 were not tried on S1 (recorded as a gap)
 - [x] print: quick web search, no edition of the 1717 Relations found; Rous's paper read by the contributor, not openable at integration; printed state papers not searched
 - [x] key-rebuild: key c rebuilt by alignment on all glossed S1 views, K1715 on the 1715 glosses; the two keys compared and the gloss-backed values of each carried to the other letter (4 = x, 76 = st, 20 = b, 306 = Vienne); extension from the sense kept apart (section B) and not counted
-- [x] retry: every word recounted on the numbers under it with both gloss-built keys (integration_recount.py lists every number without a value and the words it falls in); misreadings noted, not corrected in the frozen transcription
+- [x] retry: every word recounted letter by letter on the numbers under it with both gloss-built keys (integration_recount.py lists every number without a value, every misread or skipped number and every supplied letter, with the words they fall in); misreadings noted, not corrected in the frozen transcription

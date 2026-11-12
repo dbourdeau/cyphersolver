@@ -254,6 +254,12 @@
    "kind": "literature search",
    "what": "A.-S. Rous, The Keys of Diplomacy (HistoCrypt 2024; DOI 10.58009/aere-perennius0111): the DOI, the Tartu repository item and its PDF, and the Wayback copy were all tried and refused from this network; only the title and abstract were read (OpenAlex record). What the paper says about these volumes stays the contributor's report, not checked. Record pages of both volumes read on archiv.sachsen.de (titles: Flemming-Wackerbarth correspondence, Bd. 291, 1717, and Bd. 288, 1715). DECODE keys of Loc. 03233/02 and Rous's 2022 book not opened.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "what": "Claims review by a second reader: the page's rule (every number under a counted word has a gloss value) was looser in integration_recount.py, which dropped a word only for a number with no value. Script made strict: a word counts only if the contributor read it and every letter of it as read is given by the gloss value of the number under it (key c, K1715, or a value a gloss attests: 4 = x, 76 = st, 20 = b, 306 = Vienne from the 1715 glosses, 78 = le from view 0057, 103 = le from view 0080); spelling equivalences u/v, i/j/y, single/double consonant, est/ét, à + le roy = au Roy only; a gloss-valued number read as other letters, passed over inside the word, or a letter with no number under it now drops the word; catchword of view 0384 left no longer counted, the 1715 letter aligned as one stream, clear words inside cipher lines given by the manuscript. Hand-checked on more than twenty words of each class against the transcriptions and decryption files. Relation XXII 664 -> 634 of 716 (92.7% -> 88.5%); 1715 letter 841 -> 741 of 922 (91.2% -> 80.4%); both 1,505 -> 1,375 of 1,638 (91.9% -> 83.9%); 24 April key check 193 -> 180 of 207 (93.2% -> 87.0%). 103 = le kept: a gloss of the time gives it (view 0080 L03, 'deloger les russes', 103 29 = les).",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -265,9 +271,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.919,
+  "fraction_read": 0.839,
   "fraction_read_method": "measured",
-  "fraction_read_source": "integration_recount.py over reading files and frozen transcriptions, cipher words of the two letters read with the rebuilt key: Relation XXII 664 of 716 (92.7%) + letter of 20 Nov. 1715 841 of 922 (91.2%) = 1,505 of 1,638 = 91.9%. A word counts only if every number under it has a value from a gloss of the time. The contributor's own counts, under two different rules, were 89.5% and 96.75%.",
+  "fraction_read_source": "integration_recount.py over reading files and frozen transcriptions, cipher words of the two letters read with the rebuilt key: Relation XXII 634 of 716 (88.5%) + letter of 20 Nov. 1715 741 of 922 (80.4%) = 1,375 of 1,638 = 83.9%. Strict rule after the claims review of 12 Nov 2026: a word counts only if the contributor read it and every letter of it as read is given by the gloss value of the number under it (key c, K1715, or a value a gloss attests: 4 = x, 76 = st, 20 = b, 306 = Vienne from the 1715 glosses, 78 = le from view 0057, 103 = le from view 0080); spelling equivalences u/v, i/j/y, single/double consonant, est/ét, à + le roy = au Roy only. Before the review the script dropped a word only when a number under it had no gloss value (664, 841, 1,505 = 91.9%). The contributor's own counts, under two different rules, were 89.5% and 96.75%.",
   "verification": [
    "statistical test",
    "contemporary decipherment",
@@ -371,15 +377,15 @@
     "translation": "translation.md",
     "language": "fr",
     "state": "read in part",
-    "read_share": 0.927,
+    "read_share": 0.885,
     "summary": "Chancellor Sinzendorf, by order of Charles VI, proposes to Wackerbarth (and the day before to Saint-Saphorin) a concert of the Emperor, the King of Poland and the King of England to restore the tranquillity of the Empire and an entire peace in the North on a just balance; Saint-Saphorin, as Wackerbarth reports it ('Selon lui'), thinks it might go as far as a triple alliance (his opinion, not Sinzendorf's proposal); the stay of the Russians in the Empire is referred to the Diet of Ratisbon and the directors of the Circles; George I wants the same measures regarding Poland and nothing returned to the King of Sweden; strict secrecy.",
     "reading_review": {
      "grade": "B",
      "by": "integration review (PR #418)",
      "date": "2026-11-12",
-     "note": "reading.md read through as French against translation.md: coherent diplomatic prose from the first cipher word to the dating, the translation follows it; 'triple alliance' is Saint-Saphorin's opinion as the summary says. Raw: 52 words not counted, three numbers probably misread. Not compared with the images beyond the verifier's sample (view 0091 left). The contributor's own review, also B, was by an AI agent."
+     "note": "reading.md read through as French against translation.md: coherent diplomatic prose from the first cipher word to the dating, the translation follows it; 'triple alliance' is Saint-Saphorin's opinion as the summary says. Raw: 82 words not counted under the strict rule (52 under the looser rule this review saw), three numbers probably misread. Not compared with the images beyond the verifier's sample (view 0091 left). The contributor's own review, also B, was by an AI agent."
     },
-    "note": "664 of 716 cipher words counted under the target's one rule (integration_recount.py); the contributor's own count is 641 = 89.5%, which leaves out the 23 words whose only missing value (4 = x, 76 = st, 306 = Vienne) the 1715 glosses supply, and counts 'le Czar' at a number probably misread."
+    "note": "634 of 716 cipher words counted under the target's one strict rule (integration_recount.py); the contributor's own count is 641 = 89.5%, which leaves out the 24 restored or unresolved words whose only missing value (4 = x, 76 = st, 20 = b, 306 = Vienne) the 1715 glosses supply, and counts 31 words the strict rule does not: 'le Czar' at a number probably misread, 'de' at 0094 D17, and 29 words where the reading gives a gloss-valued number other letters, passes one over or supplies a letter (garantir on 'xarentir', se on 78, donner on 'donqer', du from 'd' alone ...)."
    },
    {
     "doc": "hstad-10026-loc00713-01-w-f-1717-04-24",
@@ -402,7 +408,7 @@
      "note": "The sheet of the time as transcribed (frozen/releves/A-FEUILLE-0042-0043.txt) reads as continuous French and a24_translation.md follows it; the key-based reading of views 0037-0039 agrees with it in sense. Sheet transcription not compared with the image (view 0042 downloaded by the verifier, not compared)."
     },
     "contemporary": "frozen/releves/A-FEUILLE-0042-0043.txt",
-    "note": "The text is the decipherment sheet of the time (399 words as transcribed, one doubtful: 'em:barasser'), shown as the reading and translated in a24_translation.md. a24_decryption.txt and a24_reading.md are the check with the rebuilt key on views 0037-0039: 193 of 207 cipher words under the target's one rule (188 by the contributor's count), not blind."
+    "note": "The text is the decipherment sheet of the time (399 words as transcribed, one doubtful: 'em:barasser'), shown as the reading and translated in a24_translation.md. a24_decryption.txt and a24_reading.md are the check with the rebuilt key on views 0037-0039: 180 of 207 cipher words under the target's one strict rule (188 by the contributor's count), not blind."
    },
    {
     "doc": "hstad-10026-loc00712-05-w-wife-1715-11-20",
@@ -413,15 +419,15 @@
     "translation": "s15_translation.md",
     "language": "fr",
     "state": "read in part",
-    "read_share": 0.912,
+    "read_share": 0.804,
     "summary": "Answering a 'reasoning' put to the countess at the imperial court, Wackerbarth says that Charles XII will be driven from the Empire (Stralsund closely besieged, Wismar blockaded since Poel was taken); Augustus II wants a general peace, not a separate one, and no total ruin of Sweden; the remnants that might carry Charles XII back to Poland should be destroyed now; he will write to General Dücker and ask Count Virmond to come, so that peace may be made under the Emperor's mediation.",
     "reading_review": {
      "grade": "B",
      "by": "integration review (PR #418)",
      "date": "2026-11-12",
-     "note": "s15_reading.md read through as French against s15_translation.md: the cipher words construe with the clear text around them and the translation follows; the argument holds from page to page. Raw: page-by-page fiche with marks, 18 unresolved words and 51 words on deduced values. Not compared with the images beyond the verifier's sample (view 0384 left). The contributor's own review, also B, was by an AI agent."
+     "note": "s15_reading.md read through as French against s15_translation.md: the cipher words construe with the clear text around them and the translation follows; the argument holds from page to page. Raw: page-by-page fiche with marks, 18 unresolved words, 53 words on deduced values and 98 on misread, skipped or supplied letters (strict rule; 51 and none under the looser rule this review saw). Not compared with the images beyond the verifier's sample (view 0384 left). The contributor's own review, also B, was by an AI agent."
     },
-    "note": "841 of 922 cipher words counted under the target's one rule (integration_recount.py); the contributor's own count, 892 = 96.75%, also counts 51 words that rest on values deduced in this letter. The file names inside frozen/ keep the first, wrong date (1715-10-20)."
+    "note": "741 of 922 cipher words counted under the target's one strict rule (integration_recount.py); the contributor's own count, 892 = 96.75%, also counts 53 words that rest on values deduced in this letter and 98 where the reading gives a gloss-valued number other letters, passes one over or supplies letters with no number under them (36 of these are words whose cipher stops short of the end, possibly the clerk's abbreviations; counting them would give 84.3%, a sensitivity figure only). The file names inside frozen/ keep the first, wrong date (1715-10-20)."
    }
   ],
   "key_file": "key.tsv",
@@ -432,14 +438,14 @@
     "records": "Loc. 00713/01 ff. 71-80v; Loc. 00712/05 ff. 307-314",
     "method": "key recovered based on adjacent plaintext",
     "extent": "partial",
-    "basis": "key rebuilt from the interlinear glosses of the time in both volumes; 664 of 716 and 841 of 922 cipher words read under one rule (92.7% and 91.2%)"
+    "basis": "key rebuilt from the interlinear glosses of the time in both volumes; 634 of 716 and 741 of 922 cipher words read under one strict rule (88.5% and 80.4%)"
    },
    {
     "label": "Letter to Flemming of 24 April 1717",
     "records": "Loc. 00713/01 ff. 29-32, sheet ff. 33-33v",
     "method": "read from existing decipherment",
     "extent": "complete",
-    "basis": "the decipherment sheet of the time, transcribed and translated; the rebuilt key reads 193 of 207 cipher words of views 0037-0039 in agreement with it (not blind)"
+    "basis": "the decipherment sheet of the time, transcribed and translated; the rebuilt key reads 180 of 207 cipher words of views 0037-0039 in agreement with it (not blind)"
    }
   ],
   "codes_open": {
