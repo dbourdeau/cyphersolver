@@ -437,6 +437,32 @@
    "kind": "verification",
    "what": "Split from legation1788, one key per entry: the Code No. 16 files (28 Aug 1793 reading, the M30 transcription, the six later letters, beling/, the Code No. 16 rows of key.tsv) moved here; Short (Code No. 10) and Carmichael (Code No. 13) stay in legation1788. Counts taken again from the files: 58 groups in the 1793 passage (H 39, E 17, O 2); 295, 224, 196, 562, 92 and 354 groups in the later letters (1,723, or 1,713 with the line shared by the two Pinckney files counted once); the seven reading files hold 1,384 words read and 51 holes (0.964). The bundle's comparison, decode and re-scoring scripts re-run from the new place give the same tables and scores.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "transcription",
+   "what": "Contributor (Andrew Beling, with AI agents), after PR #399: Pinckney 28 Jan 1794 (M30 roll 2 frame 0196, 247 groups) and 26 Feb 1794 postscript (frame 0208, 55 groups) transcribed blind by agents with no key, and aligned with the clerk's interlinear and Explication (frame 0195) (beling/round_2026-11-11/).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching",
+    "EM alignment"
+   ],
+   "what": "Contributor: key v5 built from v4 with the 1794 letters (549 groups; 13 added incl. 1160 = comma; 1366 g, 631 sixth, 598 es changed; 640 dropped), frozen by sha256 before testing (beling/round_2026-11-11/code16_key_v5.tsv, key_v5_changes.tsv). Readings in texts/ not rebuilt with it; no changed value occurs in the 28 Aug 1793 passage.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "plaintext matching"
+   ],
+   "what": "Contributor: declared test (PREREGISTRATION_0178.md) on frame 0178, Pinckney 25 Nov 1793, transcribed blind (353 groups; 290 agree with transcription/pinckney_m30.tsv): frozen key v1 minus Bourdeau's 35 values read partly from 0178, against ASP Foreign Relations 1:328: 0.724 (126/174), shuffled best 0.264, below the 0.85 bar. ASP omits the Explication's last paragraph (found after the run). Post hoc, against the clerk's full Explication on 0179: 0.948 (shuffled best 0.287), not the declared test.",
+   "result": "failed"
   }
  ],
  "outcome": {

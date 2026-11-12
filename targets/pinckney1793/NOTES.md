@@ -227,13 +227,27 @@ by line against this file, `profile.json`, the reading files and the bundle, wit
 unprinted); the hands of two interlinears are not named in the sources, so they are no longer called State Department
 clerks; "one group undeciphered" reworded. Not checkable here: the images, and the printed editions (not opened).
 
+## Follow-up from the contributor (11 Nov 2026, after PR #399)
+
+Andrew Beling, with AI agents. Everything is in `beling/round_2026-11-11/`.
+- Pinckney's coded letter of 28 Jan 1794 (M30 roll 2 frame 0196, Explication on 0195) and his postscript of 26 Feb 1794
+  (frame 0208) are transcribed blind and aligned with the clerk's interlinear.
+- Key v5 has 549 groups. It adds 1160 = comma and 12 other values, changes 1366, 631 and 598, and drops 640. Four of
+  these correct values in v4. The readings in `texts/` still rest on v4, and none of these values occurs in the
+  28 Aug 1793 passage.
+- **Test on frame 0178** (Pinckney, 25 Nov 1793), written down first: the frozen key v1, without the 35 values Bourdeau
+  read partly from 0178, scored against the ASP text (1:328). Result **0.724**, shuffled best 0.264: below the 0.85
+  bar. Afterwards it was found that ASP leaves out the Explication's last paragraph, about a third of the coded text.
+  Post hoc, against the clerk's full Explication on 0179, the score is 0.948, but that is not the declared test.
+- Group 447 does not occur in 0178, 0196 or 0208.
+
 ## Remaining gaps
 
 - Pinckney 28 Aug 1793, group 447 (first word of the passage, before "regiments") - blocker: too-short; single occurrence in all 15 coded Pinckney frames on M30 roll 2 and in none of the six other Code No. 16 letters, no decoding; Pinckney's own copy (PrC, Pinckney Family Papers, South Carolina Historical Society) not online
 - Pinckney 28 Aug 1793, ?55 668 800 (a general's name ending -at-s; the editors' [Dunda]s) - blocker: illegible; the first digits of ?55 are in the binding gutter, and 668 = at in Eaton 1801, Pinckney 1795 and the Bey's letter of 1802, so the groups do not spell Dundas (234 time and 501 secret are closed: attested in Lear 1813)
 - Pinckney 28 Oct and 18 Dec 1795 (M31 roll 7 frames 0111, 0177), line ends and several groups - blocker: illegible; binding gutter and a shadowed last line, the NARA JPEG is the only image
 - Eaton 22 Oct 1802 (T303 roll 2 frame 0320), six interlinear words - blocker: illegible; blotted on the film; the passage repeats the 9 Oct postscript, which reads
-- Code No. 16 groups without a value (about 1,600 elements; 537 in the key) - blocker: no-key-material; the original key (Lear family papers) is unprinted and was sold in 2010 to an unnamed buyer (contributor's notes)
+- Code No. 16 groups without a value (about 1,600 elements; 537 in key v4, 549 in v5) - blocker: no-key-material; the original key (Lear family papers) is unprinted and was sold in 2010 to an unnamed buyer (contributor's notes)
 
 ## Escalation
 

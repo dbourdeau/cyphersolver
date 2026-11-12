@@ -146,7 +146,11 @@ key.tsv values 29 = s and 561 = y), the king-s rec-over-y has not been … de-li
 The coded paragraph reads as English sentences. 119 groups (82 distinct). 108 have a value from the clerks' decipherments, the
 print checks or the alignments, and 107 of those fit. 11 tokens rest on eight grade-I values: indulged (717), predilection (389),
 majority (1279), Stockholm twice (1074, 1490), Swedish twice (507), esteem (1440) and "the" (269, a slip or a second number). The
-group 769 (the) stands where "and" is needed (line 15), and an encoder's slip is supposed. Read share over the page's reading
+group 769 (the) stands where "and" is needed (line 15), and an encoder's slip is supposed. (Checked 11 Nov 2026,
+after PR #398: the frame shows a clear 769; across the interlined batches 769 is never written over "and", and 710 is
+"and" 156 times and never "the". Only one copy of No. 29 is on the film, so whose slip it was cannot be told. 269 has a
+second occurrence, interlined "the", on M30 roll 6 frame 0013 left, 10 Jan 1799; see `key.tsv`. Neither changes the
+reading.) Read share over the page's reading
 (clear and decoded words, the project's rule, `research/reading_audit/v10_relabel.py`) is **0.994** over the whole despatch,
 now transcribed to frame 0096; on the decoded words alone it is 0.855 (65 of 76). The document is marked **read in part**
 because the coded part on its own is under the bar. Andrew Beling read it as sentences against frame 0092 on 11 Nov 2026 and

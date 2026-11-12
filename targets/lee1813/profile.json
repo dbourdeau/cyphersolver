@@ -269,6 +269,12 @@
       "kind": "verification",
       "what": "Integration check by the project on merging PR #397: a decoder written separately from decode.py gives English for the 32 stretches F6-43 to F6-74 (603 numerals; 27 with the key restarted at W, 5 with a changed or carried-on key position); the three readings read as sentences; frames 0108-0110 fetched from the NARA catalogue and F6-15, F6-21, F6-22, F6-25, F6-30, F6-51 numerals 20-33, F6-65 to F6-69, part of F6-70 and F6-73, and F6-74 compared with the transcription at full resolution: all agree, so the single wrong letters there are on the page. The clerk's pencil is seen to stop at F6-42. The claim 'never deciphered at the time' narrowed: the letter is a Second Copy and no other copy was looked for.",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "verification",
+      "what": "Andrew Beling contribution (follow-up to PR #397): blind second reading of the 6 Feb numerals F6-01 to F6-42 by a separate agent, frozen by sha256 before comparison (second_reading/). 837 of 853 numerals agree; of 17 differences, 15 keep our figure on a crop, 1 is taken (F6-40 numeral 11 = 8, not 3: 'have entered Berl[i]n'), 1 is left doubtful (F6-33 numeral 11, 10 or 13). 6 Feb supplied letters 60 -> 59; error_accounts.txt regenerated. 'Mr de Bassagne' (F6-62) probably identified as Desbassayns de Richemont from Coquelle 1904 pp. 267-69 (inference).",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -303,12 +309,12 @@
         "label": "6 Feb 1813 (74 stretches, 1,456 numerals), clerk's pencil to F6-42 only",
         "method": "key recovered based on adjacent plaintext",
         "extent": "partial",
-        "basis": "reading_1813-02-06.md: the 32 stretches with no decipherment on this copy (603 numerals) deciphered; F6-26 and F6-01/02 proposals, F6-47 tail unread; read_share 0.928 whole reading, 0.802 over cipher words with supplied letters as holes"
+        "basis": "reading_1813-02-06.md: the 32 stretches with no decipherment on this copy (603 numerals) deciphered; F6-26 and F6-01/02 proposals, F6-47 tail unread; read_share 0.928 whole reading, 0.805 over cipher words with supplied letters as holes"
       }
     ],
-    "fraction_read": 0.805,
+    "fraction_read": 0.807,
     "fraction_read_method": "measured",
-    "fraction_read_source": "Cipher words of the three readings (528): 425 with no supplied, dropped, guessed or unread letter. Every word in which a letter Lee mis-enciphered is supplied counts as a hole (README read bar).",
+    "fraction_read_source": "Cipher words of the three readings (528): 426 with no supplied, dropped, guessed or unread letter. Every word in which a letter Lee mis-enciphered is supplied counts as a hole (README read bar).",
     "fraction_coherent": 0.987,
     "verification": [
       "contemporary decipherment",
@@ -364,7 +370,7 @@
       {
         "item": "'Mr de Bassagne' (F6-62)",
         "blocker": "too-short",
-        "detail": "13 numerals, letters exact under the key run on from F6-61, but z 3.0 does not clear all controls at this length; the man is not identified"
+        "detail": "13 numerals, letters exact under the key run on from F6-61, but z 3.0 does not clear all controls at this length; the man is probably Philippe Panon Desbassayns de Richemont, sent to London on the exchange of prisoners in early 1813 (Coquelle 1904, pp. 267-69), an inference"
       },
       {
         "item": "2 Feb Q, the word before 'their policy'",
