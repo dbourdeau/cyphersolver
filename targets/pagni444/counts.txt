@@ -1,0 +1,84 @@
+pagni444: the arithmetic, every figure of issue 426 and the final count. Made by scripts/build.py from the stamped ledger.
+
+A. Pass 3 (11 Nov 2026), 1,521 units, classes of the stamped ledger (timestamps/stamped/LEDGER_444.tsv):
+   KEY          1275
+   KEY-P2ONLY     41
+   NULL-KEY       52
+   CODE           23
+   NULL-CTX       74
+   CTX-LETTER     15
+   CTX-UNC        13
+   CTX-MN         11
+   CTX-GH          7
+   CTX-P1          2
+   UNREAD          8
+   sum          1521
+
+B. The figures given at one time or another, all on those 1,521 units unless said:
+   89.7%   first reading (the 20:4x note of 11 Nov; pass 2 consensus): units inside a read word, context letters included, nulls and codes
+           left out of the numerator: 1,364/1,521 = 89.68%. On the pass-3 classes the same measure is KEY 1275 + KEY-P2ONLY 41 + context letters 48 = 1364/1521 = 89.68%.
+           It counts letters we supplied as read and does not count key nulls. Withdrawn as a measure.
+   91.5%   pass 3 "strict": KEY 1275 + KEY-P2ONLY 41 + NULL-KEY 52 + CODE 23 = 1391/1521 = 91.45%. It counts the 23 code signs as read.
+           Withdrawn: no code value is fixed.
+   89.94%  the same with the codes not read: 1391 - 23 = 1368/1521 = 89.94%. Not read: context letters 48 + context nulls 74 + codes 23 = 145; unread 8.
+           Check 1368 + 145 + 8 = 1521.
+   91.72%  NOT a share read. The blind third transcription (1515 sign tokens by our parser; 1,516 by its own note) has the same sign as pass 3 at 1395/1521 = 91.72% of the pass-3 units.
+   88.56%  the blind third transcription under the same key and rule: S 1347 + E 149 + N 25 = 1521; 1347/1521 = 88.56%.
+           The two differ in sign, or one has no partner, at 1,521 - 1,395 = 126 units. With 12 more where the sign is the same but the
+           class under the comparison differs, 138 units were adjudicated on the image (adjudication.tsv).
+   90.42%  after that adjudication (C below): 1369/1514 = 90.42%.
+   95.7%   letters only, before adjudication: 1,224/1,279 = 95.70% (single-letter signs; nulls, codes, word signs and the repeat sign left out).
+           Not a headline figure: it leaves out the classes where the reading is weakest.
+
+C. Adjudication of the 138 disputed units (adjudication.tsv), rule: a unit is read (S) only if every sign the image allows gives
+   the accepted value by the key. Changes of class:
+   E -> DROP   5
+   E -> S     24
+   S -> DROP   2
+   S -> E     21
+   units: 1,521 - 7 with no sign on the image = 1514
+   S: 1368 - 2 dropped - 21 (S to E) + 24 (E to S) = 1369
+   E: 145 - 5 dropped - 24 + 21 = 137
+   N: 8
+   dropped units (pass-3 line, unit, sign): R02 u7 1; R02 u19 5; R06 u31 5; R12 u26 7; R13 u40 1; R15 u34 1'; V02 u32 5"
+
+D. FINAL COUNT. Rule of the project: a code is not read unless its value is fixed by a clear duplicate. None is: no code value
+   is spelled out anywhere in cipher or in clear. Units 1514.
+   kind         S      E      N    all
+   letter     1219     52      0   1271
+   repeat       49      0      0     49
+   word sign    43      0      0     43
+   null         58     62      0    120
+   code          0     23      0     23
+   unread        0      0      8      8
+   all        1369    137      8   1514
+   READ (S)      1369/1514 = 90.42%
+   NOT READ (E)  137/1514 = 9.05%
+   UNREAD (N)    8/1514 = 0.53%
+   check 1369 + 137 + 8 = 1514
+   The 137 E units by reason:
+     56  null by context: the sign has a letter value in the key
+     28  letter, but the image allows a second sign with another value
+     24  letter by context: the key gives another value
+     23  code value from context
+      6  null, but the image allows a second sign that is a letter
+    137  sum
+
+E. Sensitivities on the final count:
+   L counted as read (five uses, all fitting "Duca"; the reviewer accepts it): 1369 + 5 = 1374/1514 = 90.75%. Not claimed: no clear duplicate.
+   the 37 units read by the key that only the second pass of the first reader had (no aligned sign in pass 1) taken out: 1369 - 37 = 1332/1514 = 87.98%.
+   the sign 0 (R07, once) is E in this ledger and is not among the 1369. The reviewer found 1,368 or 1,369 depending on that sign;
+   we cannot say from here which unit makes the difference of one.
+
+F. Signs dropped as nulls by context (dropped_signs.tsv), pass-3 labels, 1514 units: 69.
+   9'  dropped 16; read by the key 69, read by context 4
+   5'  dropped 13; read by the key 50, read by context 1
+   1'  dropped 13; read by the key  6, read by context 3
+   4'  dropped  1; read by the key  0, read by context 0
+   the other 26: 3' 5, 7' 4, 9" 3, 1 2, 5 2, 8' 2, l 2, x" 2, x' 2, 0 1, J 1
+   check 43 + 26 = 69
+   After adjudication those 69 are:
+     56  E: a letter sign on the image, dropped by sense
+      4  E: image allows a null sign and a letter sign
+      9  S: the image shows a two-dot null sign
+     69  sum
