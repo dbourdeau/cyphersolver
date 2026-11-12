@@ -5059,6 +5059,22 @@
    "by": "Brice Dudout (AI agents)",
    "year": 1911,
    "note": "Plain = cipher + 7 on a b c ch d e f g h i j k l ll m n ñ o p q r s t u v w x y z; the cipher ñ is typed n. Recovered from the 107 signs of CMXV.18.1777.1-6; not validated by a held-out test (too short), but the only one of 166 alphabet-and-shift candidates that gives Spanish. Not the shift of the sister telegram 1777.2-6 (28 signs, +10)."
+  },
+  {
+   "id": "k-bonde-gloss-1675",
+   "label": "Swedish chancery's interlinear decipherment of Bonde's despatch of 11/21 Nov 1675 (R0003797 images 102-106) and later glosses of 1676-1677",
+   "kind": "contemporary key",
+   "by": "the Swedish chancery",
+   "year": 1675,
+   "note": "Swedish plaintext written over the coded runs of Bonde's despatches; the source of the A, B, G and H rows of the number table."
+  },
+  {
+   "id": "k-bonde1676",
+   "label": "Carl Bonde's number table (numbers 19-178, word codes from about 240), keys v3 (1676) and v9 (1677), rebuilt from the glosses and from context",
+   "kind": "rebuilt here",
+   "by": "Malcolm McBratney, with AI agents",
+   "year": 1676,
+   "note": "Homophonic number table; v3 from the 1675 gloss and 14 training lines of image 324, frozen and applied to nine pages of the French memorial (546 of 764 word units strict); v9, the same table corrected and extended by 36 rows, applied to one Swedish despatch (24 of 30). 43.5% of the letter values on the memorial's held-out pages come from context, not the gloss."
   }
  ],
  "links": [
@@ -8169,6 +8185,18 @@
    "target": "duron1911",
    "how": "rebuilt from",
    "note": "found by a free substitution anneal and by a sweep of shifts on six alphabets from the ciphertext alone; 102 of 105 text signs give Spanish words; not validated, too short"
+  },
+  {
+   "key": "k-bonde-gloss-1675",
+   "target": "bonde1676",
+   "how": "rebuilt from",
+   "note": "the table was first read off the 1675 gloss of image 102R by EM alignment, then extended from glosses of 1676-1677"
+  },
+  {
+   "key": "k-bonde1676",
+   "target": "bonde1676",
+   "how": "rebuilt from",
+   "note": "key v3 applied unchanged to the memorial of 1676, key v9 to the despatch of 1677; read in part"
   }
  ],
  "sources": [
@@ -9513,6 +9541,10 @@
   {
    "source": "s-cyphersolver",
    "key": "k-duron1911-shift"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-bonde1676"
   }
  ],
  "unlinked": {

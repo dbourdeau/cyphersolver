@@ -1,0 +1,20 @@
+# Shuffled-key controls, 5,000 keys each, French 4-gram model (scripts/shuffle_control.py). Written by scripts/run_controls.py.
+# key v3 = key.tsv, tiers A B F P scored. Lines: page(s); runs; tokens; distinct numbers; true score; shuffled keys >= true; best; median; seed.
+f306r_321R: runs 23 tokens 193 types 56 true -2.1169 shuffles>=true 0 of 5000 best -4.0749 median -5.0376 seed 20261112
+f306v_322L: runs 65 tokens 502 types 81 true -2.2816 shuffles>=true 0 of 5000 best -4.4434 median -5.0686 seed 20261112
+f307r_322R: runs 50 tokens 481 types 79 true -2.0811 shuffles>=true 0 of 5000 best -4.2819 median -5.0656 seed 20261112
+f307v_323L: runs 52 tokens 473 types 81 true -2.1247 shuffles>=true 0 of 5000 best -4.4666 median -5.0824 seed 20261112
+f308r_323R: runs 51 tokens 476 types 77 true -2.1828 shuffles>=true 0 of 5000 best -4.3007 median -5.1158 seed 20261112
+f309v_325L: runs 41 tokens 368 types 76 true -2.0628 shuffles>=true 0 of 5000 best -4.4271 median -5.0457 seed 20261112
+f310r_325R: runs 42 tokens 365 types 79 true -2.0473 shuffles>=true 0 of 5000 best -4.4274 median -5.0610 seed 20261112
+f310v_326L: runs 37 tokens 345 types 73 true -2.2381 shuffles>=true 0 of 5000 best -4.4274 median -5.0773 seed 20261112
+f311r_326R: runs 22 tokens 204 types 69 true -2.2747 shuffles>=true 0 of 5000 best -4.1202 median -5.0055 seed 20261112
+f307v_323L+f308r_323R+f309v_325L+f310r_325R+f310v_326L+f311r_326R: runs 245 tokens 2231 types 103 true -2.1459 shuffles>=true 0 of 5000 best -4.6356 median -5.0519 seed 20261112
+f307v_323L+f308r_323R+f309v_325L+f310r_325R+f310v_326L+f311r_326R: runs 245 tokens 2231 types 103 true -2.1459 shuffles>=true 0 of 5000 best -4.6830 median -5.0531 seed 7
+f306r_321R+f306v_322L+f307r_322R: runs 138 tokens 1176 types 93 true -2.1681 shuffles>=true 0 of 5000 best -4.5716 median -5.0718 seed 20261112
+f306r_321R+f306v_322L+f307r_322R: runs 138 tokens 1176 types 93 true -2.1681 shuffles>=true 0 of 5000 best -4.5828 median -5.0743 seed 7
+f306r_321R+f306v_322L+f307r_322R+f307v_323L+f308r_323R+f309v_325L+f310r_325R+f310v_326L+f311r_326R: runs 383 tokens 3407 types 106 true -2.1534 shuffles>=true 0 of 5000 best -4.6480 median -5.0447 seed 20261112
+f306r_321R+f306v_322L+f307r_322R+f307v_323L+f308r_323R+f309v_325L+f310r_325R+f310v_326L+f311r_326R: runs 383 tokens 3407 types 106 true -2.1534 shuffles>=true 0 of 5000 best -4.5698 median -5.0443 seed 7
+[key v2] f308v-309r_324_heldout_v2: runs 85 tokens 419 types 65 true -2.2969 shuffles>=true 0 of 5000 best -4.3049 median -5.0987 seed 20261112
+[key v2] f308v-309r_324_heldout_v2: runs 85 tokens 419 types 65 true -2.2969 shuffles>=true 0 of 5000 best -4.2634 median -5.1020 seed 7
+[blind] blindR_f307v_323L+blindR_f309v_325L: runs 94 tokens 840 types 93 true -2.1213 shuffles>=true 0 of 5000 best -4.5915 median -5.0930 seed 20261112

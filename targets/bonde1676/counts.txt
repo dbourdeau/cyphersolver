@@ -1,0 +1,92 @@
+counts.txt: written by scripts/build.py. Strict count per word unit (rule in the header of scripts/build.py).
+S = every sign a frozen key-v3 letter value and the word spelt; E = holds a code, a sign with no value, a weak
+value or a gutter cut, or emended; N = the frozen key gives a wrong letter or no reading. Clear words outside the count.
+key.tsv md5 8e1d93d1188e698ad6dd14826e8ba168 (= the key v3 frozen 12 Nov 2026 02:55:22 UTC, before any of these pages was transcribed).
+
+## A. The memorial, pages decoded once with key v3 frozen (held out from the key)
+
+f306r_321R  transcription md5 0c5cfcfcc825f5a29affbcac896b67de
+  S 33 + E 12 + N 2 = 47 units; strict 33/47 = 70.21%; S+E 45/47 = 95.74%
+f306v_322L  transcription md5 e0c5535ed3c8a6afa30a1aaa6f71bc1a
+  S 73 + E 39 + N 8 = 120 units; strict 73/120 = 60.83%; S+E 112/120 = 93.33%
+f307r_322R  transcription md5 e983916a4cfb21654b024cdd95010602
+  S 94 + E 13 + N 4 = 111 units; strict 94/111 = 84.68%; S+E 107/111 = 96.40%
+f307v_323L  transcription md5 3b753689b3dc981bfd4e1dd67a1086a5
+  S 73 + E 26 + N 1 = 100 units; strict 73/100 = 73.00%; S+E 99/100 = 99.00%
+f308r_323R  transcription md5 45c12e38b07f3713e965c731b9570591
+  S 85 + E 18 + N 1 = 104 units; strict 85/104 = 81.73%; S+E 103/104 = 99.04%
+f309v_325L  transcription md5 0ac7c5d77ba886826feaba831880a1f9
+  S 50 + E 30 + N 2 = 82 units; strict 50/82 = 60.98%; S+E 80/82 = 97.56%
+f310r_325R  transcription md5 8e21b81715531042b9af20ba80d09b28
+  S 65 + E 16 + N 2 = 83 units; strict 65/83 = 78.31%; S+E 81/83 = 97.59%
+f310v_326L  transcription md5 20094f0de8053594b8e72d3c890c86dc
+  S 51 + E 20 + N 1 = 72 units; strict 51/72 = 70.83%; S+E 71/72 = 98.61%
+f311r_326R  transcription md5 9c161c46d344cf7c757ff6aad84f9334
+  S 34 + E 9 + N 2 = 45 units; strict 34/45 = 75.56%; S+E 43/45 = 95.56%
+
+Filed in #453 (b101: f.307v, 308r, 309v, 310r, 310v, 311r)
+  S 73 + 85 + 50 + 65 + 51 + 34 = 358
+  E 26 + 18 + 30 + 16 + 20 + 9 = 119
+  N 1 + 1 + 2 + 2 + 1 + 2 = 9
+  units 100 + 104 + 82 + 83 + 72 + 45 = 486
+  strict 358/486 = 73.66%; S+E 477/486 = 98.15%
+
+Filed in the 2nd comment on #453 (b104: f.306r, 306v, 307r)
+  S 33 + 73 + 94 = 200
+  E 12 + 39 + 13 = 64
+  N 2 + 8 + 4 = 14
+  units 47 + 120 + 111 = 278
+  strict 200/278 = 71.94%; S+E 264/278 = 94.96%
+
+Whole memorial, all nine held-out pages (not filed as one figure before)
+  S 33 + 73 + 94 + 73 + 85 + 50 + 65 + 51 + 34 = 558
+  E 12 + 39 + 13 + 26 + 18 + 30 + 16 + 20 + 9 = 183
+  N 2 + 8 + 4 + 1 + 1 + 2 + 2 + 1 + 2 = 23
+  units 47 + 120 + 111 + 100 + 104 + 82 + 83 + 72 + 45 = 764
+  strict 558/764 = 73.04%; S+E 741/764 = 96.99%
+
+## A2. After the corrections in overrides.tsv (12 units downgraded S -> N; see NOTES.md, Corrections)
+
+f306r_321R  S 33 + E 12 + N 2 = 47; strict 33/47 = 70.21%
+f306v_322L  S 73 + E 39 + N 8 = 120; strict 73/120 = 60.83%
+f307r_322R  S 94 + E 13 + N 4 = 111; strict 94/111 = 84.68%
+f307v_323L  S 71 + E 26 + N 3 = 100; strict 71/100 = 71.00%  (2 downgraded)
+f308r_323R  S 83 + E 18 + N 3 = 104; strict 83/104 = 79.81%  (2 downgraded)
+f309v_325L  S 50 + E 30 + N 2 = 82; strict 50/82 = 60.98%
+f310r_325R  S 62 + E 16 + N 5 = 83; strict 62/83 = 74.70%  (3 downgraded)
+f310v_326L  S 47 + E 20 + N 5 = 72; strict 47/72 = 65.28%  (4 downgraded)
+f311r_326R  S 33 + E 9 + N 3 = 45; strict 33/45 = 73.33%  (1 downgraded)
+
+Corrected, the six pages of #453
+  S 71 + 83 + 50 + 62 + 47 + 33 = 346
+  E 26 + 18 + 30 + 16 + 20 + 9 = 119
+  N 3 + 3 + 2 + 5 + 5 + 3 = 21
+  units 100 + 104 + 82 + 83 + 72 + 45 = 486
+  strict 346/486 = 71.19%; S+E 465/486 = 95.68%
+
+Corrected, the three opening pages (no change)
+  S 33 + 73 + 94 = 200
+  E 12 + 39 + 13 = 64
+  N 2 + 8 + 4 = 14
+  units 47 + 120 + 111 = 278
+  strict 200/278 = 71.94%; S+E 264/278 = 94.96%
+
+Corrected, whole memorial, nine pages: THE FIGURE
+  S 33 + 73 + 94 + 71 + 83 + 50 + 62 + 47 + 33 = 546
+  E 12 + 39 + 13 + 26 + 18 + 30 + 16 + 20 + 9 = 183
+  N 2 + 8 + 4 + 3 + 3 + 2 + 5 + 5 + 3 = 35
+  units 47 + 120 + 111 + 100 + 104 + 82 + 83 + 72 + 45 = 764
+  strict 546/764 = 71.47%; S+E 729/764 = 95.42%
+
+## B. Image 324 (f.308v-309r): the page the key was finished on. NOT held out from v3.
+
+First test, key v2 frozen 02:49:24 UTC, held-out lines frozen 02:50:10, decoded once (b99): units classed by hand in
+segmentation/units_f308v-309r_324_heldout_v2.tsv (counted here): S 44 + E 47 + N 12 = 103; strict 44/103 = 42.72%; S+E 91/103 = 88.35%
+v3 on image 324 is in-sample (its tier-P values were read off these lines after that test): no count is given.
+
+## C. Second transcription of f.307v and f.309v (b103), frozen 03:16:08 UTC before any b101 file was opened
+
+blind f307v_323L: S 72 + E 25 + N 3 = 100; strict 72/100 = 72.00%
+blind f309v_325L: S 50 + E 29 + N 3 = 82; strict 50/82 = 60.98%
+blind both: strict 122/182 = 67.03%; first transcription on the same two pages: strict 123/182 = 67.58%
+Numerals read in full, blind against first: see controls/compare_blind.txt (scripts/compare_blind.py).

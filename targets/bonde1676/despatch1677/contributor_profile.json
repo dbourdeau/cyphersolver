@@ -1,0 +1,266 @@
+{
+ "schema_version": 1,
+ "target": "bonde1677",
+ "title": "Carl Bonde (Paris) to Charles XI, 24 Nov/4 Dec 1677: the cipher passages of R0003797 image 489R (Riksarkivet, Diplomatica Gallica; catalogue 2317): read in part",
+ "documents": [
+  {
+   "id": "despatch_1677-11-24",
+   "read": "read in part",
+   "shelfmark": "Stockholm, Riksarkivet, Diplomatica Gallica, SE/RA/2105/I/A/24/54 (Envoyén Carl Bonde, Brev till Kungl. Maj:t 1674-1678; image series R0003797), despatch on images 488R-490L, cipher on 489R only (folio 474 by the hand number, as read by b127)",
+   "date": "Paris d. 24 Novemb./4 Decemb. 1677 (on image 490L)",
+   "year": 1677,
+   "country": "Sweden",
+   "route": "Carl Bonde, Swedish envoy (Paris) to Charles XI (Stockholm)",
+   "places": {
+    "from": "Paris",
+    "to": "Stockholm"
+   },
+   "language": "Swedish",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No gloss on this despatch. Chancery glossing in this volume appears to stop about Nov 1677 (b118 survey)."
+   },
+   "length": {
+    "tokens": 169,
+    "distinct": 73,
+    "unit": "code groups",
+    "measured": false,
+    "file": "transcriptions/despatch_1677-11-24_489R.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Riksarkivet IIIF, full-size image of 489 (5,558 x 4,356 px), strips",
+    "image_quality": "good",
+    "notes": "169 cipher numbers in 17 runs, frozen before one decode (b119). Clear text transcribed only next to the cipher runs. Truly blind second transcription by a separate session (b127): 168 of 169 numbers the same (61 against 67 in 'alarme'). Counted by our scripts, so measured is false."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "The same homophonic number table as targets/bonde1676 (numbers 19-178 for letters, several for each), with word codes from about 250 (335 E.K.M:t, 397 Konung, 418, 435) in Swedish text.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-3",
+   "separation": "dots"
+  },
+  "distinct_symbols": 73,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 7,
+   "max_per_consonant": 7
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 2,
+   "kinds": [
+    "common words",
+    "places"
+   ],
+   "unread_groups": 2
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none",
+  "doubled_letters": "written once or twice; one sign for ss, st, ff",
+  "sibling_key": "Key v9 is a later state of key v3 of targets/bonde1676 (the 1676 memorial): v3 + context values from the 1676 despatches and the memorial (v4-v7) + chancery-gloss values of 1676-77 (v8-v9). Used.",
+  "notes": "distinct_symbols counts the distinct numbers in this transcription. Two word codes occur (418 twice, 435 once); neither has a value in v9."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Not found as far as checked (12 Nov 2026): N. Wimarson, Sveriges krig i Tyskland 1675-1679 I-III (Lund 1897-1912), vols II and III read by KB OCR, vol. III through its register: he cites Bonde's despatches to the King up to 21/31 Jul 1677 and from 12/22 Jan 1678, in paraphrase, and not this one; archive.org full text: 0. Not reached: Magnus Höjer, Öfversigt af Sveriges yttre politik 1676-1680 (Uppsala 1875); Trolle-Bonde, Kongliga rådet ... Carl Bonde D.1 (Lund 1910); Grauers 1926. Priority not established.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "cleartext context"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Malcolm McBratney directed the work and set the rules (every attempt recorded, transcriptions frozen before decoding, shuffled-key controls, a truly blind second transcription, no claim without its check) and filed the issue; Claude sessions surveyed the volume, read the glosses, transcribed, decoded and checked. No reading by a person without AI.",
+  "tools": [
+   "own Python decoder and per-unit tally (scripts/build.py, standard library)",
+   "shuffled-key control, 5,000 keys, Swedish 4-gram model with a language-header guard (scripts/shuffle_control.py)",
+   "Riksarkivet IIIF images, strips (PIL)"
+  ],
+  "models": [
+   "Claude (Anthropic), sessions b117, b118, b119, b120, b127 of 12 Nov 2026 (model ids not recorded)",
+   "claude-opus-5-5 (b154, the session that prepared this folder)"
+  ],
+  "sessions": 6,
+  "first_date": "2026-11-12",
+  "last_date": "2026-11-12"
+ },
+ "solution": [
+  {
+   "date": "2026-11-12",
+   "kind": "key from source",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Key v3 of the 1676 memorial (targets/bonde1676) extended for Swedish text: v4-v7 add values read from context in the despatches of 6/16 and 13/23 Oct 1676 and the post-hoc values of the memorial (tiers Q, T); v8 and v9 add only values read off the chancery's interlinear glosses of 1676-1677 (images 331, 334, 336, 341, 346, 395, 429, 430; tiers G, H). v9 frozen 06:08:58 UTC, md5 af29e81f.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "Survey of images 379-557: glossing stops about Nov 1677; the bare despatches of late 1677 are the held-out pool. 489R carries cipher and no gloss.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "489R transcribed (169 numbers in 17 runs), frozen 06:24:26 UTC with a doubts file, then decoded once with v9 unchanged: strict 24/30 = 80.00%.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "5,000 shuffled keys, Swedish 4-gram model (Language header asserted): 0 reach the true score (true -3.1451; best -4.0151 seed 20261112, -3.9637 seed 7).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "literature search",
+   "what": "Wimarson I-III screened for this despatch: not cited. Höjer 1875, Trolle-Bonde D.1, Grauers 1926 not reached.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Truly blind second transcription (b127; nothing of b118-b120 or the key opened before its freeze at 09:35:28 UTC): 168 of 169 numbers the same; its decode with v9 23/30 = 76.67%, 0 of 5,000 shuffled keys.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Folder rebuild (b154): every filed figure reproduced; the source of each key value used in the read units counted (counts.txt): 22 of the 24 read units use at least one value read from context, not from a gloss.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Key v9 was rebuilt from the chancery's interlinear decipherments of other Bonde despatches in the same volume (1675-1677) together with values read from context in earlier, already decoded letters of the same table, frozen before this page was transcribed, and applied unchanged; this page carries no gloss.",
+  "contribution": [
+   "transcription",
+   "key extended or corrected"
+  ],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "units.tsv and counts.txt (scripts/build.py): 24 of 30 word units of the cipher of 489R are spelt by frozen key-v9 values; codes and emended units never count. Unit = a word of the plaintext.",
+  "fraction_read": 0.8,
+  "codes_open": {
+   "open": 2,
+   "total": 2,
+   "tokens_open": 3
+  },
+  "verification": [
+   "statistical test",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-11-12",
+   "file": "controls/shuffle.txt",
+   "verdict": "not applicable",
+   "notes": "Contributor's own shuffled-key control (not docs/_validate.py, which was not run): 5,000 shuffled keys, Swedish 4-gram model (Language header asserted): 0 reach the true score (true -3.1451; best -4.0151 seed 20261112, -3.9637 seed 7)."
+  },
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the Swedish chancery's interlinear decipherments of Bonde's despatches of 1675-1677 in R0003797 (images 102-106, 331-346, 395, 429-430), from which the key values were read",
+    "date": "1675-1677",
+    "source": "https://lbiiif.riksarkivet.se/arkis!R0003797/manifest"
+   },
+   {
+    "who": "mcbratney",
+    "role": "solution",
+    "note": "catalogue 2317: Bonde's despatch of 24 Nov/4 Dec 1677 read in part with key v9, with AI agents; issue #476",
+    "date": "2026-11-12",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/476"
+   },
+   {
+    "who": "mcbratney",
+    "role": "transcription",
+    "note": "489R from the Riksarkivet image, with a truly blind second transcription by a separate session, with AI agents",
+    "date": "2026-11-12"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Word codes 418 (twice, '-en') and 435 (once)",
+    "blocker": "open-codes",
+    "detail": "a later key state (v10, glosses) gives 418 = march and 435 = Preussen; not used here because v10 was made after this decode"
+   },
+   {
+    "item": "illa, inställa (spelt short by the key), Paez (46 a weak value)",
+    "blocker": "open-codes",
+    "detail": "counted not read; holes.md"
+   },
+   {
+    "item": "Clear text of 488R-490L transcribed only next to the cipher runs",
+    "blocker": "not-attempted",
+    "detail": "the reading has [...] for the untranscribed clear lines"
+   },
+   {
+    "item": "Short text: 30 word units, 169 numbers",
+    "blocker": "too-short",
+    "detail": "the shuffle test is weaker on a short text"
+   },
+   {
+    "item": "Höjer 1875, Trolle-Bonde D.1 (1910), Grauers 1926 not seen",
+    "blocker": "needs-physical-access",
+    "detail": "priority not established"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "despatch_1677-11-24",
+    "label": "Carl Bonde (Paris) to Charles XI, 24 Nov/4 Dec 1677, cipher on 489R",
+    "transcription": [
+     "transcriptions/despatch_1677-11-24_489R.txt"
+    ],
+    "decryption": [
+     "decryptions/despatch_1677-11-24_489R.txt"
+    ],
+    "reading": "readings/despatch_1677-11-24.md",
+    "translation": "translations/despatch_1677-11-24.md",
+    "language": "sv",
+    "state": "read in part",
+    "read_share": 0.8,
+    "summary": "Bonde reports that the French court is much displeased: someone coming to Livonia, learning of Pac's opposition, means to delay and hold back the [418] (march?) until the matter with Pac is settled, in the form of a vain negotiation, which has alarmed the court. The French want nothing more than the plans, with a prompt diversion into [435] (Prussia?), carried out, and the King's Field Marshal to bring the [418] to ripeness as soon as possible so that the suspicions are dropped. Context (our inference): French-backed plans of late 1677 for a Swedish diversion from Livonia, with the passage of Lithuanian troops, which the despatch of 3/13 Nov 1677 also concerns.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (sessions of the same project). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
+     "date": "2026-11-12",
+     "note": "The cipher runs read as Swedish words that fit the clear text around them; the clear text is transcribed only next to the cipher, so the passage cannot be read whole."
+    },
+    "note": "read_share is the strict share of word units read: 24 of 30 (80.0%). Short text; clear text only partly transcribed."
+   }
+  ],
+  "key_file": [
+   "key.tsv",
+   "gloss/gloss_pairs.tsv"
+  ],
+  "notes": "No docs/_validate.py run (repository scripts not run by the contributor). The shuffled-key control here is the contributor's own (controls/shuffle.txt)."
+ }
+}
