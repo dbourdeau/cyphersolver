@@ -1,0 +1,41 @@
+# christianv1673 - raw decryption of the closing cipher block (image 10 foot + image 11, lines T01-T15), order of 25 May 1673
+# Deterministic decode, group by group, of transcription.txt with key.tsv. No correction, no word division (that is reading.md).
+# Each line: the groups as group=value, then the run of values; plain Danish of the original in [CAPITALS]; <n> = group with no value.
+# Values: three-digit groups = KEY-v2 (frozen/working/KEY-v2.json, from the 1674 interlinear glosses) except the three marked *
+# (486 du, 534 fu, 590 huis: added after the measurement, see key.tsv); small numbers and signs = values of the 1673 hand given by
+# the chancery's decipherment leaf of the first block (image 9 right). "Q" covers two shapes in our transcription: q barred = i
+# (T01, T03, T02 probable), 4 hooked = r (T06), per frozen/working/notation/TABLE-SIGNES.tsv.
+# + 29 = x: value of the 1673 hand from the leaf (first block, 'e 29 te n' = extenderes), added to key.tsv section B at the integration
+#   check of 12 Nov 2026; the file as sent printed 29=i, the 1674 value, which gave 'eiempel'.
+# T04 841?: the group is overwritten on image 11 line 1. If it is 541 (for), the line runs '... en indulgence for en tid'; the
+#   value below follows the transcription as frozen (841 = si). See NOTES.md, Integration check.
+T01  5=e 384=? 18=r 14=o Q=i 611=jo 448=ce 811=ri m=s [LIGESOM] 878=wi 320=? lam=a Cn=l 4=t
+     -> e<384>roijoceris LIGESOM wi<320>alt
+T02  585=haffuer 384=? 450=co ff=n tb=r 5=e 348=? tb=r 4=t [UDEN] m=s 4=t 18=r Q=i 556=ge ff=n 882=woris m=s
+     -> haffuer<384>conre<348>rt UDEN strigenworiss
+T03  667=lo S=t 906=? lam=a S=t [PASSERE] 699=med 489=deris 646=? 648=krig 858=skibe [SAA] 585=haffuer Q=i
+     -> lot<906>at PASSERE medderis<646>krigskibe SAA haffueri
+T04  10=a 4=t 852=swar hb=e [AT DET ICKUN ER] hb=e ff=n q=i Z=n 486=du* Cn=l 556=ge Z=n 448=ce 841?=si 5=e Z=n
+     -> atsware AT DET ICKUN ER enindu*lgencesien
+T05  872=tid 848=som 699=med 664=la P=g 556=ge ff=n m=s 3=u 16=d m=s 861=ti tb=r 641=ke Cn=l 840=se 847=saaledes 870=til
+     -> tidsommedlaggensudstirkelsesaaledestil
+T06  [SIDES] 848=som 511=ellers [ANDRE] 877=ve 16=d [SAMMEN] 860=te 19=g Z=n 769=pe Q=r 686=mis
+     -> SIDES somellers ANDRE ved SAMMEN tegnpermis
+T07  860=te 811=ri m=s [OG AT DET ENDDA ICKE SKEER] 768=pa lam=a lam=a Cn=l th=d 810=re 878=wi 7=l
+     -> teris OG AT DET ENDDA ICKE SKEER paaaldrewil
+T08  640=ka lam=a tb=r [END PAA DET] 541=for 5=e 839=sa S=t 860=te 534=fu* Z=n 482=da 685=me ff=n S=t
+     -> kaar END PAA DET foresattefu*ndament
+T09  [AT DE] psi=a x=f lam=a Z=n 16=d 810=re m~=k 812=ro 718=ni 16=d 5=e 583=ho 877=ve 483=de 18=r [OG I SAER]
+     -> AT DE afandrekronidehoveder OG I SAER
+T10  m~=k 812=ro ff=n 284=sverig [SELF ,] 590=huis* 5=e 29=x+ hb=e y=m 769=pe Cn=l 483=de [ATSKILLIGE GANGE]
+     -> kronsverig SELF , huis*exempelde ATSKILLIGE GANGE
+T11  lam=a Cn=l 665=le 556=ge 810=re S=t 585=haffuer 32=? 810=re 418=be 878=wi 840=se m=s [AT AF DEM]
+     -> allegerethaffuer<32>rebewises AT AF DEM
+T12  616=ingen m=s 4=t 18=r q=i 556=ge ff=n 427=begiere Z=n [OG ER] 664=la Z=n P=g S=t 544=fra [AT WI NOGEN]
+     -> ingenstrigenbegieren OG ER langtfra AT WI NOGEN
+T13  872=tid 483=de Z=n 810=re 4=t [DE HAFDE] 884=uilde 544=fra 841=si 556=ge 848=som [WI OG] 882=woris [HØY]
+     -> tiddenret DE HAFDE uildefrasigesom WI OG woris HØY
+T14  667=lo x=f 666=li 556=ge 541=for 531=fe 16=d 810=re q=i 839=sa lam=a [MANGE] lam=a psi=a tb=r 3=u [PAA]
+     -> lofligeforfedreisaa MANGE aaru PAA
+T15  m~=k q=i 5=e 810=re S=t [HAFFT HAFDE. HVAD MYNTERNES REGLEMENT MELLEM BEGGE ...]
+     -> kieret HAFFT HAFDE. HVAD MYNTERNES REGLEMENT MELLEM BEGGE ...
