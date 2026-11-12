@@ -1,0 +1,74 @@
+counts.txt: every figure of issue 424 and its update, recomputed by scripts/count.py from the files in this folder (12 Nov 2026).
+Rule: a token is S only when it lies in a word whose groups decode, letter for letter, to the word the judge intends, under the map frozen before
+the letter was first decoded. Every code with no value in that map is E, with no exception: no code is counted on a value proposed from context.
+Tokens the judge could not gloss are E. The glosses were written after decoding by the same model that built the key: this is a limit of every figure here.
+
+A. THE COUNT OF RECORD: eleven letters, each decoded once with a map frozen before its transcription was decoded
+letter	images	map	tokens	S strict	E	lenient	open-code tokens	table+signs only
+1675-05-04	166L-168L	v3	729	551	178	606	54	221	75.58% strict
+1675-05-08	174R-175R	v3	87	55	32	70	4	33	63.22% strict
+1675-05-11	179L-181R	v3	863	728	135	761	46	241	84.36% strict
+1675-06-01	209R	v3	94	90	4	90	3	56	95.74% strict
+1675-06-05	211L-212R	v3	455	370	85	400	27	137	81.32% strict
+1675-06-08	228L-229L	v3	245	173	72	212	14	62	70.61% strict
+1675-06-12	238L-239L	v3	350	267	83	287	31	80	76.29% strict
+1675-06-24	255L-256R	v3	430	323	107	365	32	159	75.12% strict
+1675-06-28	267L-267R (drafts unit)	v4	259	200	59	233	14	74	77.22% strict
+1675-07-00b	271R-273R (drafts unit)	v4	720	533	187	664	31	165	74.03% strict
+1675-07-00c	279R-280R (drafts unit)	v4	477	358	119	425	22	106	75.05% strict
+
+4 May (held-out for v3, frozen text): 551/729 = 75.58% ; lenient 606/729 = 83.13%
+7 untouched copybook letters, first decode with v3: 55 + 728 + 90 + 370 + 173 + 267 + 323 = 2006 ; 87 + 863 + 94 + 455 + 245 + 350 + 430 = 2524 ; 2006/2524 = 79.48% ; lenient 2185/2524 = 86.57%
+3 drafts, first decode with v4: 200 + 533 + 358 = 1091 ; 259 + 720 + 477 = 1456 ; 1091/1456 = 74.93% ; lenient 233 + 664 + 425 = 1322 ; 1322/1456 = 90.80%
+ALL ELEVEN: 551 + 2006 + 1091 = 3648 ; 729 + 2524 + 1456 = 4709 ; 3648/4709 = 77.47% strict. E = 4709 - 3648 = 1061.
+No letter is dropped. Only 1 June reaches 95% (90/94, a short letter that the table and signs alone read to 56/94).
+
+B. 4 MAY IN DETAIL (729 tokens = 452 letter signs and table syllables + 277 word-code tokens)
+frozen text, map v3: S 551; E 178 = 82 tokens in words that decode wrongly + 96 tokens not glossed. 551 + 82 + 96 = 729.
+open-code tokens under v3: 54 = 42 outside any glossed word + 12 inside glossed words (236 x6, 94 x2, 429 x2, 110, 292).
+The issue said '42 tokens unmapped codes'. That was the 42 only; the reviewer's 54 is the right total. The issue's other classes: 63 + 19 = 82 (19 of them in the words holding those 12 codes) and 54 unglossed sign tokens (42 + 54 = 96).
+with the two numerals corrected on the image (line 44 511 -> 501, line 83 441 -> 447), map v3, same gloss: S 561/729 = 76.95% (gleichsam +3, declaration +7). Not the count of record: the corrections were made after decoding.
+map v4, same gloss, frozen text: 561/729 = 76.95%; corrected text: 571/729 = 78.33%; open-code tokens 25. Training status: v4 was built with this letter in view.
+
+C. FIGURES OF THE ISSUE AND ITS UPDATE, ONE BY ONE
+75.6% = 551/729 (4 May, v3): reproduced. 0/5,000 shuffled word maps: not re-run here (scripts/original/shuffle_words.py).
+65.0% = 284/437 (29 May, v1): reproduced only with the table as it stood then (446 = da) ; with the final table (446 = cu, learnt from this letter) it is 299/437 = 68.42%. Lenient 320/437 = 73.23%.
+69.0% = 165/239 (17 Apr, v2): reproduced with the sign map as it stood then (no PP, no inverted T); with the final signs 171/239 = 71.55%.
+22.9% = 36/157 (16 Mar, table only): b47's figure with table M1 and its sign map (K = o, V unread). With the final table and signs, no word map: 60/157 = 38.22%. Not reproduced to the token here.
+20 Mar 37/116: computed by b47 on a stream that had lost 7 tokens to a parser fault (lines beginning with the sign # were skipped); the gloss indices after line 8 are shifted. With the fixed parser the same gloss gives 22/123 = 17.89% , which is not a valid figure either. Withdrawn; the issue did not quote it.
+63.2% = 55/87 (8 May) and 84.4% = 728/863 (11 May): reproduced. 79.5% = 2,006/2,524: reproduced. 95.7% = 90/94: reproduced.
+84.5% (v4 on the seven, training status): 58 + 784 + 90 + 392 + 185 + 283 + 342 = 2134 ; 2134/2524 = 84.55%. Reproduced.
+74.9% = 1,091/1,456 and lenient 90.8% = 1,322/1,456 (three drafts, v4): reproduced. By draft: 200/259 = 77.22%, 533/720 = 74.03%, 358/477 = 75.05%.
+81.5% (drafts, if every # in a c-for-g word were H): a what-if made after decoding, not reproduced here and not to be quoted.
+92.4% = 304/329 (second gloss of 29 May against the first): from b61's log; the second gloss file is in timestamps/, not recomputed here.
+'17 letters' in the issue: 6, 23 Feb; 2, 6, 9, 13, 16, 20 Mar; 13, 17, 20, 24, 27 Apr; 1, 4, 29 May; 21 Jun = 17. With the 7 and the 3 drafts: 27. The reviewer's 'other 26' = 27 - 1.
+
+D. ALL LETTERS: tokens and transcription md5 (frozen files)
+1675-02-06	43R-44L	298	706d7bff424f5bfb82beebf6051f4929	training
+1675-02-23	72R	15	cd90ded952bcbc20bbae6425e56ddbcf	training
+1675-03-02	81R-82R	305	b3af45ea350e21b7c5e9b9f6076ba9bd	training
+1675-03-06	83L-83R	154	da6fc7dfa2c84ecc69ed3c9dd7885e34	training
+1675-03-09	87R-89R	518	13fbcafe462e0d1f182219a98ecbce61	training
+1675-03-13	93L-94R	475	c8f3a8d17ce08d2c78804fb64ff67ad1	training
+1675-03-16	97R-98R	157	e7686ab7f044fb5d6fc1be71da5d7f59	training (b47 held-out for the table only)
+1675-03-20	102R	123	fbc7a83b3fee50e2b749e85b62d4c16e	training (b47 held-out for the table only; first page only)
+1675-04-13	133L-133R	292	af52b8ba2c88fdf68f0f7e7ae14b3d20	training
+1675-04-17	138L-138R	239	74113e2ccf7e96c2f4c8685a3e7c0b48	held-out 2 for map v2
+1675-04-20	141R-142R	279	b49f490158091b0d6ea7f97eef234e22	training
+1675-04-24	151R-155L	1167	11055bfcda2f86de0be6c9a08437031c	training
+1675-04-27	160L-162L	779	003325c266a9725665df0184d57fa5a0	training
+1675-05-01	162R-164L	633	a87a1d4ac1ac61744964c26c68c484e0	training
+1675-05-04	166L-168L	729	c9a302b3de860e35bf73ded6884e7622	HELD-OUT 3 for map v3 (the letter of issue 424)
+1675-05-29	204L-205L	437	13dd9d852fb3231fc0c1b92181532c9e	held-out 1 for map v1
+1675-06-21	248L-250L	795	397238767682f56758a31d491157ffbe	training
+1675-05-08	174R-175R	87	14b2e1859f396a16d2e6f2c9c0243dda	first decode with v3 (untouched letter 1 of 7)
+1675-05-11	179L-181R	863	da7b079fe1905ea137853e6fc53da480	first decode with v3 (2 of 7)
+1675-06-01	209R	94	473518d724890405f9b113b537e0aab9	first decode with v3 (3 of 7)
+1675-06-05	211L-212R	455	526c4661be88c370f3599e8c091f3e0b	first decode with v3 (4 of 7)
+1675-06-08	228L-229L	245	968851ae8bb72ff31d5dbd8256071e42	first decode with v3 (5 of 7)
+1675-06-12	238L-239L	350	a243d8dae93a795778f10ce708e6d375	first decode with v3 (6 of 7)
+1675-06-24	255L-256R	430	1f01bd96dcc8fb49d57b765ad5eb38b0	first decode with v3 (7 of 7)
+1675-06-28	267L-267R (drafts unit)	259	94e5d722b17d66f16b737080ce39485c	TRUE HELD-OUT for map v4 (draft A)
+1675-07-00b	271R-273R (drafts unit)	720	bb760b01c0dae509efa62e55971776e7	TRUE HELD-OUT for map v4 (draft B, early July)
+1675-07-00c	279R-280R (drafts unit)	477	1e37ece93ad3351f0465e2c7905eb9ab	TRUE HELD-OUT for map v4 (draft C, after 8 July N.S.)
+total cipher tokens, 27 letters: 298 + 15 + 305 + 154 + 518 + 475 + 157 + 123 + 292 + 239 + 279 + 1167 + 779 + 633 + 729 + 437 + 795 + 87 + 863 + 94 + 455 + 245 + 350 + 430 + 259 + 720 + 477 = 11375
