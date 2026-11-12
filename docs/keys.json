@@ -1,6 +1,22 @@
 {
  "keys": [
   {
+   "id": "k-fiedmond1779",
+   "label": "Guiana code of 1779-1780 (Fiedmond): numerical nomenclator, key K-Guy1780c (rebuilt by Brice Dudout)",
+   "kind": "rebuilt here",
+   "by": "Brice Dudout",
+   "year": 1779,
+   "note": "Numbers 5-888 for letters, syllables and words, no alphabetical order; 454 entries: 394 from the alignment of two cipher/clear pairs of the same series (ANOM COL C14 51 ff. 98-111, C14 52 ff. 15-19v; the pairs are not in the repository), 59 from the context of the two letters, 1 withdrawn. Frozen, then measured once on 118 held-out groups: 0.703 against at most 0.644 for 400 control keys (weak). 70 of the 448 numbers in the letters have no value."
+  },
+  {
+   "id": "k-guiana1757",
+   "label": "Guiana Navy code of 1757-1762 (d'Orvilliers), key rebuilt by Brice Dudout",
+   "kind": "rebuilt here",
+   "by": "Brice Dudout",
+   "year": 1757,
+   "note": "Numerical nomenclator of about 500 numbers, rebuilt from the contemporary interlinear decipherments in ANOM COL C14 24 and C14 25 (targets/orvilliers1759/dudout/key.tsv)."
+  },
+  {
    "id": "k-king769",
    "label": "Rufus King's despatch code, London 1797-1803 (the = 769): partial key rebuilt by Andrew Beling",
    "kind": "rebuilt here",
@@ -4696,6 +4712,12 @@
  ],
  "links": [
   {
+   "key": "k-fiedmond1779",
+   "target": "fiedmond1779",
+   "how": "rebuilt from",
+   "note": "aligned by the contributor on two cipher/clear pairs of 1779 and 1780 and extended from the context of the two letters; 2,384 of 3,404 cipher words read with certain values"
+  },
+  {
    "key": "k-king769",
    "target": "king1797",
    "how": "rebuilt from",
@@ -7593,6 +7615,14 @@
  "source_links": [
   {
    "source": "s-cyphersolver",
+   "key": "k-fiedmond1779"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-guiana1757"
+  },
+  {
+   "source": "s-cyphersolver",
    "key": "k-king769"
   },
   {
@@ -8903,6 +8933,16 @@
   "urquhart": "No cipher key: a rule-based word puzzle, read by applying the stated rule (see the write-up)."
  },
  "tried": [
+  {
+   "key": "k-guiana1757",
+   "target": "fiedmond1779",
+   "note": "the Guiana code of 1757-62 scores under its own permuted controls on both letters (0.10 against 0.15): a different code (28 Oct and 11 Nov 2026)"
+  },
+  {
+   "key": "k-bouille1778-k6",
+   "target": "fiedmond1779",
+   "note": "Bouillé's Martinique keys (K1, K6, K8) tested against 200 permuted keys by the contributor: none applies (28 Oct 2026)"
+  },
   {
    "key": "k-r5314",
    "target": "it1583",

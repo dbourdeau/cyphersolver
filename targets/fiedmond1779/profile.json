@@ -1,0 +1,340 @@
+{
+ "schema_version": 1,
+ "target": "fiedmond1779",
+ "title": "Jacau de Fiedmond, governor of Guiana, to the Navy minister, Cayenne, 19 July and 29 August 1779 (ANOM COL C14 51 ff. 5-10 and 16-23, catalogue 1201): numerical nomenclator, key learned from two pairs of the time and extended from context, tested once on a held-out portion (weak); read in part",
+ "documents": [
+  {
+   "id": "anom-c14-51-f9-1779-07-19",
+   "read": "read in part",
+   "shelfmark": "Aix-en-Provence, Archives nationales d'outre-mer, COL C14 51 ff. 5-10 (IREL views 009-014)",
+   "date": "19 July 1779",
+   "year": 1779,
+   "country": "France / French Guiana",
+   "route": "Jacau de Fiedmond, governor of Guiana -> the Navy minister (duplicate, 'Dup.ta')",
+   "places": {
+    "from": "Cayenne",
+    "to": "Versailles"
+   },
+   "language": "French",
+   "pages": 10,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "none: no decipherment of the time in C14 51 or C14 52 (ANOM calendar: 'passage chiffré non traduit')",
+    "partial": false
+   },
+   "length": {
+    "tokens": 1556,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "ANOM IREL views of COL C14 51 (saved by Brice Dudout); images not reproduced (no reuse licence)",
+    "image_quality": "good",
+    "notes": "Transcribed group by group by a Claude Opus 5.5 agent on 28 Oct 2026 and frozen (SHA-256 4cd4a550...) before any statistics; the postscript (v014g l11-18) held out from then on. Doubtful groups noted a?/b. No human check, no blind re-reading yet. Verification, 11 Nov 2026: 336 groups of views 009 and 014 compared with the images, 336 agree."
+   }
+  },
+  {
+   "id": "anom-c14-51-f16-1779-08-29",
+   "read": "read in part",
+   "shelfmark": "Aix-en-Provence, Archives nationales d'outre-mer, COL C14 51 ff. 16-23 (IREL views 018-025)",
+   "date": "29 August 1779",
+   "year": 1779,
+   "country": "France / French Guiana",
+   "route": "Jacau de Fiedmond, governor of Guiana -> the Navy minister (signed)",
+   "places": {
+    "from": "Cayenne",
+    "to": "Versailles"
+   },
+   "language": "French",
+   "pages": 15,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "none: no decipherment of the time in C14 51 or C14 52 (ANOM calendar: 'pièce chiffrée non traduite')",
+    "partial": false
+   },
+   "length": {
+    "tokens": 5277,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "ANOM IREL views of COL C14 51 (saved by Brice Dudout); images not reproduced (no reuse licence)",
+    "image_quality": "good",
+    "notes": "Transcribed group by group by a Claude Opus 5.5 agent on 28 Oct 2026 and frozen (SHA-256 3b35bf27...); the last 5 cipher lines (v025d l27-31) held out from then on. Doubtful groups noted a?/b (182/183 in 182.633, 801?/301 ...). No human check. Integration, 12 Nov 2026: view 022 left page, lines 1-7 and 27-30, compared with the image at full resolution, 102 of 102 groups agree ('800?' is a clear 800; the clear words of l03 read 'on peut faire usage'); the other views of f16 not checked at full resolution."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator",
+   "syllabic",
+   "homophonic"
+  ],
+  "summary": "French numerical nomenclator with numbers from 5 to 888, mixed (no alphabetical order): letters (404 s, 505 r, 10 l, 30 e, 604 n, 785 t), syllables (734 ti, 347 on, 301 re, 333 te, 744 ment, 232 tion) and words (600 de, 72 la, 25 le/les, 575 pour, 233 colonie, 642 artillerie, 134 Monseigneur, 149 isle, 798 Cayenne); word endings often not enciphered (297 nécessaire/nécessité); clear words interspersed. Same code in 1779 and 1780; not the Guiana code of 1757-62.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 448,
+  "digit_groups": {
+   "separation": "dots"
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "syllables",
+    "common words",
+    "names",
+    "places",
+    "titles"
+   ]
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "word_division": "none",
+  "diacritics": {
+   "used": false
+  },
+  "key_order": "random",
+  "notes": "448 distinct numbers in f9 + f16 (6,832 groups). A few homophones are probable (558/140 établis). Spearman rho on the sure values: 0.23 (1-400), -0.07 (401-800): no order found."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment of the time found in C14 51 (376 views surveyed) or C14 52 (338 views); catalogue 1201 vetting (3 Nov 2026): no DECODE record, nothing on cryptiana, Lasry or HistoCrypt, no edition. The minister's answers (ANOM series B) were not seen.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "cleartext context"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Brice Dudout chose the target, saved the IREL views and set the rules (held-out portion fixed on 28 Oct 2026; every protocol hashed before its single measurement; a partial reading may be published if explained). Claude Opus 5.5 agents transcribed, aligned the two pairs of the time (key K-Guy1780b), wrote and ran the protocols, read word by word and wrote up; the extended key K-Guy1780c was proposed by Claude Fable 5.2 in one API run. No human read the reading against the images.",
+  "models": [
+   "Claude Fable 5.2 (Anthropic), one API run on f9/f16 with the held-out portion removed (key proposal K-Guy1780c, run 'guyane1779-fiedmond-f09-f16', 11 Nov 2026)",
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout (transcription, key K-Guy1780b, protocols, held-out measurement, word-by-word reading, translation, write-up)"
+  ],
+  "first_date": "2026-10-28",
+  "last_date": "2026-11-11"
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "transcription",
+   "what": "f9 and f16 transcribed group by group (6,833 groups) and frozen; held-out portion fixed (f9 postscript, f16 last 5 lines).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "sibling key",
+   "technique": [
+    "key matching",
+    "language-model scoring"
+   ],
+   "what": "Guiana 1757-62 key and Bouillé's Martinique codes (B: K1, K6, K8; minister's code M of 1777) tested against 200 permuted keys: none applies.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "contextual inference"
+   ],
+   "what": "Cribs from clear headings of neighbouring pieces: 183.633.600.72.233 = défense de la colonie; 90 = en, 600 = de, 25 = les ...; about 20% of the groups.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "key from source",
+   "technique": [
+    "EM alignment",
+    "plaintext matching"
+   ],
+   "what": "Two pairs of the time found and aligned: C14 51 ff. 102-111 with its clear copy ff. 98-101, and C14 52 ff. 15-16 (29 Apr 1780) with its 'Déchiffrement' ff. 17-19v; keys K-Guy1780 (296) and K-Guy1780b (401 values) frozen.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "K-Guy1780 on held-out V1 (end of f102): characters 0.758, words 0.647 vs controls 0.105 / 0.145; K-Guy1780b on held-out V2 (end of the 1780 pair): 0.805 / 0.707 vs 0.291 / 0.166; thresholds 0.85 / 0.75 not met. A third measurement on a paraphrase was null. Applicability on f9/f16: rank 1/201.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference",
+    "language-model scoring"
+   ],
+   "what": "Claude Fable 5.2 (one API run, held-out portion removed from the copies sent) proposed K-Guy1780c = K-Guy1780b plus corrections and context restorations (454 entries, each with a status); frozen at 14:07 CET.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One pre-registered measurement on the held-out portion (118 groups): strict lexical reading S = 0.703 vs max 0.576 (200 permuted keys) and 0.644 (200 length-shuffled keys), rank 1/401, threshold 0.656 calibrated on training windows -> pass; limits: 118 groups (< 150), margin +0.059, lexical reference, held-out groups displayed (not decoded) by a diff after the freeze. Only 8 of the 118 groups (6 values) are context-only values, so the test covers 6 of the 59 values the key takes from context.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "f9 and f16 read word by word (segmentation checked by script against the frozen transcription): f9 754 words 508 S + 159 P = 88.5%; f16 2,650 words 1,876 S + 477 P = 88.8%; 309 restored and 75 unresolved not counted. 398 = 'ils' contradicted three times (reads 'ap').",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Integration of PR #420 after an independent verification: counts, hashes and word tables reproduce; a second decoder gives the same values for all 6,832 groups; the held-out measure re-run with the repository lexicon gives S = 0.695 (82/118) against 0.559 / 0.636, rank 1/401, 0 of 2,000 further controls as high; with pair-derived values alone S = 0.619. 438 groups compared with the ANOM images (views 009, 014, part of 022): all agree. Read share restated by the README bar as certain words only (67.4% f9, 70.8% f16; the contributor's certain + probable count is 88.5% / 88.8%). Not verifiable from the repository: the two cipher/clear pairs and K-Guy1780b.tsv are not in the PR. Highest number corrected to 888.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Key aligned on two pairs of the time in the same series (a cipher letter of 1779 with its clear copy, and a cipher of 1780 with its decipherment), then extended from the context of f9/f16 by a language-model run of the contributor, frozen, and measured once on a portion of f9/f16 held out since 28 Oct 2026 (order of events by the contributor's record).",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction"
+  ],
+  "fraction_read": 0.7,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "words_f09.tsv / words_f16.tsv: certain words over all cipher words of both letters, (508 + 1,876) / (754 + 2,650) = 2,384/3,404 = 70.0% (f9 67.4%, f16 70.8%); probable (636), restored (309) and unresolved (75) words not counted, by the README read bar as applied at integration on 12 Nov 2026 (a probable word mostly rests on a 'prob' key value, about 55% reliable in the contributor's cross-validation). The contributor's count, certain + probable, is 3,020/3,404 = 88.7% (f9 88.5%, f16 88.8%).",
+  "verification": [
+   "statistical test",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-11-11",
+   "verdict": "weak",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py), protocol SHA-256 4307c904b9ff65c6b03d608161b327115f2810bcf9cde334be498578544aa442 hashed before the run: strict lexical reading S = 0.703 vs max 0.576 (200 permuted keys) / 0.644 (200 length-shuffled keys), rank 1/401, theta 0.656 calibrated on training only -> passed its rule. Recorded as weak: 118 groups (our rule asks 300 cipher characters or 150 groups; only the first met), margin +0.059 over the best control, lexical reference (no clear of the time), held-out groups displayed (not decoded) by a diff after the key freeze; the earlier key K-Guy1780b failed two held-out tests against clears of the time (0.758 and 0.805 < 0.85). Integration, 12 Nov 2026: re-run with the repository lexicon S = 0.695 (82/118), controls 0.559 / 0.636, rank 1/401. The test is weak as a check of the extension: 8 of the 118 groups carry a context-only value, 6 of the 59 such values in the key; with pair-derived values alone S = 0.619. The protocol's header says 'written at 21 h 20' but it was hashed at 21:18:04 and measured at 21:18:10. The order of events is by the contributor's record. The two pairs and K-Guy1780b.tsv are not in the repository, so the pair-derived values could not be verified here."
+  },
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "transcription of f9 and f16; key learned from the two pairs of the time (K-Guy1780b), extended key K-Guy1780c proposed by Claude Fable 5.2 (Anthropic) and validated by us once on a held-out portion (0.703 vs 0.644, recorded weak); both letters read in part word by word (88.5% and 88.8% by his count with probable words; 67.4% and 70.8% with certain words only) and translated; Claude Opus 5.5 agents for Brice Dudout",
+    "date": "2026-11-11",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/420"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the clear copy ANOM COL C14 51 ff. 98-101 of the cipher letter ff. 102-111 (1779) and the 'Déchiffrement' COL C14 52 ff. 17-19v of the cipher ff. 15-16 (29 Apr 1780), from which the key was aligned",
+    "date": "1779"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "catalogue entry 1201 (Calames/Biblissima/FranceArchives sweep; vetting of 3 Nov 2026)",
+    "date": "2026-11-03"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "75 unresolved words (24 in f9, 51 in f16): groups absent from the key and the river names 102, 515, 271, 720",
+    "blocker": "open-codes",
+    "detail": "most numbers occur once or twice in the corpus; no table of this code found"
+   },
+   {
+    "item": "636 probable words (159 in f9, 477 in f16), most resting on a 'prob' key value (usually a single aligned occurrence in the pairs, about 55% reliable)",
+    "blocker": "no-key-material",
+    "detail": "the two pairs give too few occurrences; a further text of the time in this code would confirm or correct them"
+   },
+   {
+    "item": "309 restored words (values from context only, groups read by the sense, values contradicted by the sense such as 398 = ils read 'ap', 461 = ef read 'fe')",
+    "blocker": "no-key-material",
+    "detail": "a third text of the time in this code (a decipherment of f9/f16, or the minister's answer in ANOM series B) would test them; not online"
+   },
+   {
+    "item": "doubtful groups of the transcription (182/183 in 182.633 on views 010, 012, 023, 024; 801?/301, 605, 695, 71, 189)",
+    "blocker": "illegible",
+    "detail": "overwritten or ambiguous figures, to be re-read blind on the images; 438 groups checked so far (views 009, 014, part of 022), the rest of f16 not checked at full resolution; the ANOM image route answered 403 on 12 Nov 2026"
+   },
+   {
+    "item": "the two cipher/clear pairs of 1779 and 1780 and the earlier key K-Guy1780b.tsv are not in the repository, so the pair-derived values of the key cannot be verified here",
+    "blocker": "no-key-material",
+    "detail": "held by the contributor, to be asked for (C14 51 ff. 98-111 and C14 52 ff. 15-19v transcriptions, K-Guy1780b.tsv)"
+   },
+   {
+    "item": "53 of the 59 context-only values of the key are untested by the held-out portion, which is now used up",
+    "blocker": "no-key-material",
+    "detail": "no other untouched text in this code is known"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "anom-c14-51-f9-1779-07-19",
+    "label": "f9, Fiedmond to the minister, Cayenne 19 July 1779, 'Approvisionnement et troupes', with postscript",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "fr",
+    "state": "read in part",
+    "read_share": 0.674,
+    "summary": "The convoy under the King's corvette l'Hirondelle has arrived with troops, victuals and munitions, but the Court's orders were carried out imperfectly (cartridge-pouches forgotten); the repair of the works (to restore their state of 1771) stopped by the abbé Terray and unfinished; no bomb-proof powder magazine; arsenal and port without workmen, timber or sailors; one gunboat sent instead of two and two bad apprentices instead of six good carpenters; gunboats like the one built in 1772 are best; La Serre given the coast service, Desprez and Mingy; the artillery company to be raised by 33 men. Postscript: ships bound for the colony should make a recognition signal off the island.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 agent for Brice Dudout",
+     "date": "2026-11-11",
+     "note": "Read word by word as French sentences of 1779 against decryption.txt; the cipher words construe with the clear passages around them over the whole letter and the postscript, and the translation follows; but 63 words are restored and 24 unresolved, so 88.5%: grade B, read in part. AI agents only; no human read the reading; not re-checked on the images. Integration, 12 Nov 2026: the whole letter re-read as French sentences against the translation; it construes with the clear passages, with marked holes; grade B stands. Strict read share (certain words only) 508/754 = 67.4%; the contributor's count with probable words is 88.5%."
+    }
+   },
+   {
+    "doc": "anom-c14-51-f16-1779-08-29",
+    "label": "f16, Fiedmond to the minister, Cayenne 29 August 1779, 'Deffence de la colonie'",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "fr",
+    "state": "read in part",
+    "read_share": 0.708,
+    "summary": "Report under ten heads on the defence of Cayenne island: gunboats and carpenters, the powder magazine, artillery and the gunners, the new recruits (drunkenness, desertion), a critique of the defence memoir of 'the author worthy of Monseigneur's confidence', the impossibility of guarding every cove (Remontabo, Remire, Mahury) with the troops at hand, the enemy's likely manoeuvres (landing far from the town, the Mahury islet, the Cabassou creek), fire precautions in a wooden town, a retrenchment on the port side and the retreat of the garrison, resistance to the last and then in the country after the project of 1762; orders asked of the minister.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 agents for Brice Dudout",
+     "date": "2026-11-11",
+     "note": "Read word by word as French sentences of 1779 (three agents, one part each, same rules, merged and recounted by script); the cipher words construe with the clear passages and the underlined headings repeat the ciphered summary; but 246 words are restored and 51 unresolved, so 88.8%: grade B, read in part. AI agents only; no human read the reading; not re-checked on the images. Integration, 12 Nov 2026: the whole letter re-read as French sentences against the translation; it construes with the clear passages, with marked holes; grade B stands. Strict read share (certain words only) 1,876/2,650 = 70.8%; the contributor's count with probable words is 88.8%."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "New partial decipherment: no decipherment of the time and no edition known. Key K-Guy1780c (key.tsv, CC BY 4.0) proposed by Claude Fable 5.2 (Anthropic) in one API run and frozen; the held-out validation, the word-by-word reading and the write-up are ours. Catalogue correction: entry 1201 dates f9 13 Jul 1779; the letter is dated 19 July 1779 in clear. No image or derivative of the ANOM views is included (no reuse licence). Integration (12 Nov 2026): read share restated as certain words only (70.0%); the contributor's certain + probable count is 88.7%. Related target: targets/orvilliers1759 (the Guiana code of 1757-62, a different code).",
+  "codes_open": {
+   "open": 70,
+   "total": 448,
+   "tokens_open": 83
+  }
+ }
+}

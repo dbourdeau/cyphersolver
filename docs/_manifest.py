@@ -2191,6 +2191,11 @@ PAGES = [
          blurb='Intercepted despatches of the Prussian envoy at The Hague, in numerical nomenclators. The DECODE transcriptions were audited and corrected; no key was recovered and no enciphered passage was decoded. Fagel 5206, catalogued as digitised decipherments of Hellen letters of 1752&ndash;53, was an untested lead; Brice Dudout reported on 27 October 2026 that it does not hold these letters, so the lead is closed for them.',
          quote='No verified plaintext; a concrete archival lead for 1752.',
          rights='Source manuscripts: KHA, Prins Willem V, inventory 196; one crop of R1953, via DECODE'),
+    dict(slug='fiedmond1779', footer_date='November 2026', label='Fiedmond to the Navy 1779', year='1779', y=1779.6, place='Cayenne &rarr; Versailles', st='partial', stt='read in part',
+         title='Fiedmond to the Navy minister, Cayenne, 1779: the defence of Guiana in cipher',
+         blurb='Two reports of the governor of French Guiana, of 19 July and 29 August 1779, lie in the archive with no decipherment. Brice Dudout aligned a key on two letters of the same series that survive with their clear text, and had it extended from context; the frozen key passed one weak held-out test (0.703 against 0.644). With certain values 2,384 of the 3,404 cipher words are read (70%). The governor reports a convoy badly fitted out and plans the defence of Cayenne island against a landing.',
+         quote='&ldquo;mais nous n&rsquo;auons pas de pareilles troupes&rdquo;',
+         rights='Letters: Archives nationales d&rsquo;outre-mer, COL C14 51; reading by Brice Dudout, Europe chiffr&eacute;e'),
     dict(slug='martinique1778', label='Bouill&eacute; to the Navy 1780-82', year='1780&ndash;82', y=1780.4, place='Martinique &rarr; Versailles', st='partial', stt='read in part',
          title='Bouill&eacute; to the Navy minister, Martinique, 1780&ndash;1782',
          blurb='Three cipher-only letters of the governor general of the Windward Islands: a troop return (24 May 1780), a provisions return (14 November 1780) and a long letter on the defence of the islands (24 November 1782). A key of 507 groups was read off the clerks&rsquo; glosses on five letters of 1779 and decodes them as French sentences, 93.6&ndash;95.9% of their groups; the same key reads the 1778 letters first read by Brice Dudout.',
@@ -3387,6 +3392,7 @@ IMAGES['bongars1597'] = ('bongars1597_lead.jpg', 'f. 360v: the second letter ope
 IMAGES['ebers1664'] = ('ebers1664_lead.jpg', 'Image 138: code runs with the German gloss written above them', 'Riksarkivet, Stockholm, SE/RA/2113/2113.1/3/b/602, bildid R0003225_00138, via the Riksarkivet IIIF service')
 IMAGES['lilienthal1665'] = ('lilienthal1665_lead.jpg', 'Image 45, left page, lines 1&ndash;12: code with the gloss between the lines', 'Riksarkivet, Stockholm, SE/RA/2113/2113.1/1/36/82, bildid R0000814_00045, via the Riksarkivet IIIF service')
 IMAGES['lee1813'] = ('lee1813_lead.jpg', 'Lee to Monroe, 6 February 1813, head of page 2: numerals with the clerk&rsquo;s pencilled key letters and words', 'US National Archives, RG 59, Despatches from US Consuls in Bordeaux, microfilm T164 roll 3, frame 0109 (NAID 211586337), via the National Archives Catalog')
+IMAGES['fiedmond1779'] = ('fiedmond1779_lead.jpg', 'The letter of 19 July 1779 opens under its clear date; &ldquo;le 13 de ce mois avec&rdquo; is in clear among the numbers', 'Archives nationales d&rsquo;outre-mer, COL C14 51 f. 5 (view 009, right page), via the ANOM image server')
 IMAGES['peking1912'] = None
 IMAGES['nanking1930'] = None
 IMAGES['vanhalen1840'] = None
