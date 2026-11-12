@@ -1,7 +1,7 @@
 # Reading of inv. 25071 (Spanish officer to Ottavio Piccolomini, "Del Campo a Ilenstatt [?]", 12 August 1646)
 
-Status: **read in part** (38 of 42 cipher words verbatim from the signs, 90.5%, counting the three code groups;
-35 of 39 = 89.7% without them; two words with a doubtful sign (one under an ink blot, one of doubtful shape), two
+Status: **read in part** (36 of 42 cipher words = 85.7% by the strict count of the integration check; the contributor's
+count was 38 of 42 = 90.5%, which also counts Giesen and ny, whose letter values no gloss attests; two words with a doubtful sign (one under an ink blot, one of doubtful shape), two
 with a marked repair; no guesses, no holes; see NOTES.md).
 
 Image: Vlnas 2017, appendix zip P_lohy_A_a_B.zip (theses.cz/id/p3p2kb), frame 25071.jpg. Dated in plain script

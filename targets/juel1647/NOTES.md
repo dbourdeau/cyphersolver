@@ -5,9 +5,10 @@ signs or the readings. An independent AI language-model agent that took no part 
 (it copied the cipher signs of pp. 5 and 115 from its own crops before opening the transcriptions); the changes made
 after that review are listed under "Changes after the independent review".
 
-Status: in progress (not yet written up). Read in part, 12 Nov 2026: the chancellor entry (p. 5) and the entry to Peder
-Vibe (p. 115) are read in part; the p. 5 run to the King is not prose (one short run, read); the p. 6 entry to Hannibal
-Sehested is not solved. No site page or README row.
+Read in part, 12 Nov 2026 (PR #457, integrated the same day; written up on the site as juel1647.html): the chancellor
+entry (p. 5) and the short run to the King above it are read in part with the 8-64 table; the p. 6 entry to Hannibal
+Sehested is not solved. **The p. 115 entry to Peder Vibe is not in this key**: it is in Peder Vibe's old cipher and was
+moved at the integration to `targets/vibejuel1649/register_p115/` (one key, one entry; see "Split" below).
 
 ## Documents
 
@@ -17,10 +18,10 @@ passages are copied in as dotted number runs with no decipherment.
 
 | doc | place | letter | system | state proposed |
 |---|---|---|---|---|
-| king | image 5, p. 5 top (3 lines) | to King Christian IV, 20 Nov 1647 | 8-64 table | not prose (one short run in clear text; all 3 cipher words read) |
+| king | image 5, p. 5 top (3 lines) | to King Christian IV, 20 Nov 1647 | 8-64 table | read in part (a short run: 3 cipher words and 4 codes inside clear Danish) |
 | chancellor | image 5, p. 5, entry No. 4 (13 lines) | to the chancellor Christen Thomesen Sehested, 20 Nov 1647 | 8-64 table | read in part |
 | hsehested | image 6, p. 6, entry No. 4 (3 lines) | to Hannibal Sehested, 20 Nov 1647 | 3-32 set, unknown | not solved |
-| vibe | image 61, p. 115 (10 lines) | to Peder Vibe, 2 Sep 1648 | Vibe's old cipher (Dudout, PR #410) | read in part |
+| vibe | image 61, p. 115 (10 lines) | to Peder Vibe, 2 Sep 1648 | Vibe's old cipher (Dudout, PR #410) | **moved to vibejuel1649** |
 
 Note: the catalogue gives the p. 5 top run to the chancellor; the register puts it in the entry to the King of the same
 day (the last entry on p. 4, "Till hans Kongl. Mtt. ... 20 9br 1647"). Image 7 (pp. 8-9) has no number runs; the p. 6
@@ -66,16 +67,11 @@ chancellor entry 63 and 64 also stand inside words ("wil.de", "gi.ern"). In the 
   what the frozen key records. The 00:37 save falls in the same minute as the translations (00:37:12-14), which fits a
   layout pass.
 
-## p. 115 (to Peder Vibe)
+## p. 115 (to Peder Vibe): moved
 
-Not the 8-64 table. Brice Dudout's PR #410 (vibejuel1651, open, 11 Nov 2026) published Peder Vibe's old cipher ("gamle
-Ciffres": opener 24-39 sets k = -(opener mod 3), body n -> letter n - k mod 23) and noted that register p. 115 is in it.
-We applied his published table unchanged (`scripts/decrypt.py vibeold`); credit to him. It reads at once ("sagde nogle dage
-til 212 at forrige 412 af 351 277 ... hende bort, nu skal 401 føre hende hid igien"). One word is a guess ("24 25" opener
-pair, [?dragit]) and one is left open ("fogte"). The two slips of the first reading (bor{p/t}, s{f/k}al) went away when
-the blind review read line 4 as "16 18 25" and "16 8 22" (probable; both passes had 14 and 4), so those words are now
-verbatim. The other holes in this passage are nine unidentified codes and clear text of the register that is not yet
-transcribed (see Remaining gaps), not failed decryption.
+Not the 8-64 table, and therefore no longer in this target (see "Split"). Its reading, counts and gaps are in
+`targets/vibejuel1649/` (NOTES, "Register p. 115"). The contributor applied Brice Dudout's published table (PR #410)
+unchanged with `scripts/decrypt.py vibeold`, which this folder keeps because the p. 6 trial uses it.
 
 ## p. 6 (to Hannibal Sehested): not solved
 
@@ -84,10 +80,20 @@ alphabet, the 8-64 table shifted by -40..+40, and plain rank ciphers over 23- an
 None gives Danish (best: 8-64 table +10, "ak?ndinetkesiosembotstclirmsan"). Too short for a ciphertext-only attack; no
 glossed sibling seen. Stop rule applied.
 
+## Split (12 Nov 2026)
+
+The register entry of p. 115 (to Peder Vibe, 2 Sep 1648) is in Peder Vibe's old cipher ("gamle Ciffres"), a different
+system from the 8-64 table. An own decoder written from the published rule reproduces `decryption_vibe.txt` exactly, and
+three of its nomenclator numbers (212, 351, 401) are also among the 22 of the old-cipher letters of 1649-51 in
+`targets/vibejuel1649/`. One key, one entry: the p. 115 files (transcription with both passes, decryption, reading,
+translation, plain text) moved with `git mv` to `targets/vibejuel1649/register_p115/`, with the reading, its counts and
+its gaps; this target keeps the 8-64 table (p. 5) and the unsolved p. 6. Catalogue 2553 itself lists three number sets
+(8-64; 3-32 with 86 and 208; 1-32 with 212, 277 ...), which is the same split.
+
 ## Reading
 
 Mechanical decryption with `scripts/decrypt.py`; every departure marked in `reading_<doc>.md`; `scripts/check_marks.py`
-passes on king, chancellor and vibe.
+passes on king and chancellor (and on vibe, now in vibejuel1649).
 
 Word counts (cipher words in letters; codes not counted as words):
 
@@ -95,14 +101,16 @@ Word counts (cipher words in letters; codes not counted as words):
 |---|---|---|---|---|---|
 | king | 3 | 0 | 0 | 0 | 0 |
 | chancellor | 14 | 4 | 0 | 3 | 5 |
-| vibe | 23 | 0 | 0 | 1 | 1 |
+
+**Strict read share of this target** (integration check; README rule, nomenclator codes counted as holes as in
+vibejuel1649): 17 cipher words verbatim (3 + 14) of 29 words plus 8 code tokens (83, 84, 124, 158 in the king run; 123,
+124, 129, 158 in the chancellor entry) = **17 of 37 = 45.9%**; on the 29 words alone 58.6%. The six signs TT, Θ, ∞, Ψ, Δ, Ш
+are not counted in either figure. The contributor's figure of 0.6 ("estimated", over all four passages, codes not
+counted) is theirs and covered p. 115 as well. Read in part.
 
 Dan's `docs/_check_reading.py` clean share (`--file` on the plain reading, `work/plain_<doc>.txt`; codes count as holes):
-king 0.0 (1 sentence, 20 words), chancellor 0.571 (7 sentences, 52 words), vibe 0.333 (6 sentences, 49 words). On the target (`python docs/_check_reading.py juel1647`): reading files king 0.5, chancellor 0.308, vibe 0.25; the raw
-decryption files 0.0 each; target 0.305 (with the p. 6 trial decode, 0.0).
-In the vibe passage the low share comes from the nine unidentified codes (13 occurrences) and from the clear text of the
-register that is not transcribed (the "..." stretches), not from failed decryption: of its 25 cipher words 23 read
-verbatim. The chancellor checker run picks German for some sentences; the profile gives `language: da` for every text.
+king 0.0 (1 sentence, 20 words), chancellor 0.571 (7 sentences, 52 words). On the target (`python docs/_check_reading.py juel1647`): reading files king 0.5 (marginal), chancellor 0.308 (below its 0.45 line: the first two sentences hold, the last two are mostly holes); the raw decryption files 0.0 each (one unbroken line). The vibe passage (0.25) moved with its files.
+The chancellor checker run picks German for some sentences; the profile gives `language: da` for every text.
 
 ## Prior art (12 Nov 2026)
 
@@ -148,14 +156,8 @@ advised against identifying the codes 124 and 158 without proof; they are left o
 - the chancellor entry's last two sentences - blocker: illegible; "trgese" (with `33|53`), "quartg[11]bb", "fyle" and
   "forlagrdit aggrop" do not read; copyist errors or unclear figures in the register; the original letter of
   20 Nov 1647 is not among images 115-135 of unit 261575.
-- the vibe words "fogte" (hole) and "[?dragit]" (guess, 25 dropped as an opener) - blocker: needs-physical-access; the
-  figures are clear but do not read under Vibe's old cipher; the original letter of 2 Sep 1648 would show a copyist slip.
-- the clear text of the register in the p. 115 entry - blocker: illegible; a secretary hand on black-and-white
-  microfilm. Only some words are made out ("och ... / ... da," and "gick hen aff / ... hos 446 som war dog ... af / 339");
-  a reading by a palaeographer of Danish secretary hands is needed. These stretches are most of the holes the checker
-  counts in the vibe passage.
-- the nomenclator - blocker: open-codes; 83, 84, 123, 124, 129, 158 on p. 5 and 212, 277, 339, 351, 401, 412, 426, 442,
-  446 on p. 115; no code list found. 124 (the man they would have as general) and 158 (where) are not identified; the context (winter 1647-48,
+- the nomenclator - blocker: open-codes; 83, 84, 123, 124, 129, 158 on p. 5 (the p. 115 codes moved to vibejuel1649);
+  no code list found. 124 (the man they would have as general) and 158 (where) are not identified; the context (winter 1647-48,
   Sweden seeking a generalissimo for the army in Germany) suggests candidates, but none is claimed.
 - the signs TT, Θ, ∞, Ψ, Δ, Ш on p. 5 - blocker: open-codes; no list of these signs found.
 - p. 6 (3-32 set, to Hannibal Sehested) - blocker: too-short; 30 numbers, no glossed sibling; the original letter to
@@ -172,7 +174,7 @@ advised against identifying the codes 124 and 158 without proof; they are left o
   checked for more runs
 - [x] clear-pages: the register has no decipherment; the interlinear glosses of the time on the originals are the clear
   text used
-- [x] known-keys: Peder Vibe's old and new ciphers (Dudout, PR #410) tried on p. 6 and the old cipher used for p. 115; the
+- [x] known-keys: Peder Vibe's old and new ciphers (Dudout, PR #410) tried on p. 6 (the old cipher also reads p. 115, moved to vibejuel1649); the
   8-64 table and its shifts (-40..+40) and plain rank ciphers tried on p. 6 (`scripts/test_332.py`)
 - [x] print: Fryxell, Handlingar rörande Sverges historia 1 (1836) prints an abstract without the cipher passages; DECODE,
   Tomokiyo and Lasry have nothing (catalogue vetting 11 Nov 2026); one web search on 12 Nov 2026 found nothing
@@ -180,3 +182,15 @@ advised against identifying the codes 124 and 158 without proof; they are left o
   pattern (marked `s`); 11, 12, 13 could not be rebuilt from what reads
 - [x] retry: the doubtful groups were re-read on the image in the blind review (three corrected, two marked doubtful) and
   the readings regraded; the remaining holes are listed under Remaining gaps
+
+## Integration check (12 Nov 2026)
+
+Done by the integrating session, not by the contributor. Reproduced: `heldout.py` gives 23 of 25 (misses 24 and 41), control
+mean 1.12, best 7 of 25; `check_marks.py` passes on king and chancellor; an own decoder written from `key_frozen.tsv`
+gives the same chancellor decryption. Images fetched from api.rigsarkivet.dk (no refusal): image 5, all 13 rows of the
+chancellor entry and the top run compared with the transcription, and the gloss letters over image 118 ("w i w e k e" over
+10.25.29.25.33.14.33, "c k a u", "a l e f e l") confirmed: no disagreement at that reading; image 61 (p. 115) likewise, see
+vibejuel1649. The held-out order rests on the contributor's record (image 118 was seen before the freeze; file times, one
+commit). One key, one entry: p. 115 is Vibe's old cipher, moved to vibejuel1649 (see Split). Strict read share of this
+target 17 of 37 = 45.9% (codes as holes), 58.6% on cipher words alone; the profile's earlier 0.6 ("estimated", all four
+passages) is replaced. Class read in part; the p. 6 entry stays not solved and no page text claims a reading of it.

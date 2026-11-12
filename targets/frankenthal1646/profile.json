@@ -135,7 +135,7 @@
   {
    "date": "2026-11-12",
    "kind": "transcription",
-   "what": "L09 group 61 marked doubtful (61?) after the review; 'desarmarse' now counted as a doubtful word: 38 of 42 verbatim (90.5%).",
+   "what": "L09 group 61 marked doubtful (61?) after the review; 'desarmarse' now counted as a doubtful word: 38 of 42 verbatim in the contributor's count (90.5%); the integration check counts 36 of 42 (85.7%).",
    "result": "worked"
   },
   {
@@ -146,6 +146,12 @@
     "language-model scoring"
    ],
    "what": "Statistical validation (docs/_validate.py): 216 tokens, 43 types, es-golden-age order 4: reading -2.258 per letter; random keys -4.687 (z 8.0); key annealed onto shuffled ciphertext best -2.731 (mean -2.779, z 8.8); annealer on the real text -2.442. Verdict: pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Integration check (12 Nov 2026): check_pairs.py and check_marks.py re-run (same results); own decoder written from key_frozen.tsv reproduces decryption_25071.txt; the key shares nothing with the piccolomini1646 or claudiamedici1646 tables. Strict count by the README rule: 36 of 42 cipher words (85.7%), because Giesen (34) and ny (56) rest on letter values no gloss attests (the contributor's 38 of 42 = 90.5% counted them); read in part confirmed. The transcription could not be compared with the photograph: theses.cz answered with a JavaScript proof-of-work page and no browser tool was available. Order of the freeze rests on the contributor's record.",
    "result": "worked"
   }
  ],
@@ -188,9 +194,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.905,
+  "fraction_read": 0.857,
   "fraction_read_method": "measured",
-  "fraction_read_source": "scripts/check_marks.py: 38 of 42 cipher words verbatim from the signs; the code groups are counted as words.",
+  "fraction_read_source": "Strict count by the README read bar (integration check, 12 Nov 2026): 42 cipher words with the three code groups counted as words; 36 read verbatim from the signs with values a gloss attests; Giesen (group 34) and ny (group 56) rest on a letter value that no gloss attests, the two doubtful and the two repaired words are not counted. The contributor's own figure was 38 of 42 = 0.905 (scripts/check_marks.py).",
   "verification": [
    "independent verification",
    "contemporary decipherment",
@@ -211,7 +217,8 @@
     "who": "lccompany",
     "role": "solution",
     "note": "key of the second table rebuilt from the glossed sibling, frozen and tested on held-out cipher; 25071 read in part",
-    "date": "2026-11-12"
+    "date": "2026-11-12",
+    "source": "PR #462"
    },
    {
     "who": "lccompany",
@@ -236,9 +243,9 @@
     "translation": "translation_25071.md",
     "language": "es",
     "state": "read in part",
-    "read_share": 0.905,
+    "read_share": 0.857,
     "summary": "The army has no intention of seeking out the enemy or risking battle unless the enemy attacks Giessen, which would have to be relieved: the Prince of Darmstadt must not be abandoned, if only for the common interest. Turenne has joined the Swedes, who on Queen Christina's orders demanded that the Prince declare himself and disarm or be attacked; he refused and said he would defend himself. The writer reports this today to the Archduke, who has promised to relieve the Prince in any case.",
-    "note": "Words 42: 38 verbatim from the signs (90.5%), 2 with a doubtful sign (aquel, a figure under an ink blot; desarmarse, group 61 of doubtful shape, possibly 51), 2 with a marked repair (cath{+e}gorica, o{u/y}), no guesses, no holes. Without the 3 code groups 35 of 39 (89.7%).",
+    "note": "Words 42 (code groups counted as words): 36 verbatim from the signs with a gloss-attested value (85.7%, strict); Giesen (34) and ny (56) rest on a letter value no gloss attests; 2 with a doubtful sign (aquel, a figure under an ink blot; desarmarse, group 61 of doubtful shape, possibly 51); 2 with a marked repair (cath{+e}gorica, o{u/y}); no guesses, no holes. The contributor counted 38 of 42 (90.5%), including Giesen and ny.",
     "reading_review": {
      "grade": "B",
      "by": "independent AI language-model agent (blind review)",
@@ -268,6 +275,11 @@
     "item": "Place and writer",
     "blocker": "needs-physical-access",
     "detail": "Date line reads 'Del Campo a Ilenstatt', probably Ilbenstadt (Wetterau), not Frankenthal as the catalogue has it; the signature 'Joh: Behr [?] von ...' is not read and needs a clean image. The slug frankenthal1646 follows the catalogue."
+   },
+   {
+    "item": "Transcription against the photograph at integration",
+    "blocker": "needs-physical-access",
+    "detail": "The photographs sit behind theses.cz's JavaScript proof-of-work page; the integrating session had no browser tool and did not get round the check. Only the contributor's blind review (68 of 69 groups) compares the signs with the photograph."
    }
   ]
  }

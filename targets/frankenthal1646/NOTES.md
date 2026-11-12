@@ -4,6 +4,9 @@ WAINUT, 12 Nov 2026. Work done with AI language-model agents viewing the photogr
 described below. No human palaeographer has checked the text. An independent AI language-model agent that took no part
 in the solution reviewed it blind on 12 Nov 2026 (see "Independent review" below).
 
+Read in part, 12 Nov 2026 (PR #462, integrated the same day; see "Integration check" below). Written up on the site
+(frankenthal1646.html).
+
 ## Result in one paragraph
 
 The cipher is a homophonic substitution in two-figure groups (two to four groups for most letters, in alphabetical
@@ -13,9 +16,10 @@ de = 12 15). The key of the second table was rebuilt from the contemporary inter
 words and phrases, `pairs.tsv`, all decrypting to their gloss with the frozen key), frozen, and tested on held-out
 glossed words of 25069: **10 words, 9 letter for letter with the gloss; the tenth (recolegida) has one group (93) not
 in the key, the other 9 of its groups agree; 62 of 63 held-out groups give the gloss letter.** The frozen key,
-unchanged, reads the bare letter 25071: **read in part, 38 of 42 cipher words verbatim from the signs (90.5%;
-35 of 39 = 89.7% without the 3 code groups); 2 words with a doubtful sign (one under an ink blot, one of doubtful
-shape), 2 with a marked repair; no guesses, no holes.** Dan's reading checker on the Spanish running text:
+unchanged, reads the bare letter 25071: **read in part, 36 of 42 cipher words (85.7%) verbatim from the signs with
+a value that a gloss attests** (the strict count of the integration check; the contributor's own figure was 38 of 42 =
+90.5%, which also counts the two words whose letter value rests on the sense alone, Giesen and ny); 2 words with a
+doubtful sign (one under an ink blot, one of doubtful shape), 2 with a marked repair; no guesses, no holes. Dan's reading checker on the Spanish running text:
 clean-sentence share 0.688 (11 of 16 sentences), coverage 0.827, hole rate 0.104; the "holes" are lexicon misses on
 17th-century spelling (havra, offrece, havia, aora, dexar, deve, socorer). On a human reading all 16 sentences hold.
 
@@ -23,7 +27,7 @@ clean-sentence share 0.688 (11 of 16 sentences), coverage 0.827, hole rate 0.104
 
 | inv. | date | cipher | status |
 |---|---|---|---|
-| 25071 | "Del Campo a Ilenstatt [?] y 12 de Agosto 1646" | 15 lines, 216 two-figure groups, 42 cipher words | **read in part**: 38 verbatim (90.5%), 2 doubtful signs, 2 marked repairs, no holes |
+| 25071 | "Del Campo a Ilenstatt [?] y 12 de Agosto 1646" | 15 lines, 216 two-figure groups, 42 cipher words | **read in part**: 36 of 42 (85.7%, strict; the contributor's 38 = 90.5% also counts two sense-only values), 2 doubtful signs, 2 marked repairs, no holes |
 
 Bare: no gloss over or beside the cipher. Original: SOA Zámrsk, Rodinný archiv Piccolominiů (Náchod), inv. č. 25071
 (microfilm label "31/2"). Image: photograph of the microfilm frame in the appendix of Václav Vlnas, *Počítačová
@@ -70,7 +74,8 @@ frozen; see the review below on what that means), `decryption_25071.txt`
 (mechanical), `reading_25071.md` (marked), `translation_25071.md`. `scripts/check_marks.py` rebuilds the decryption
 from transcription + key and fails on any unmarked departure: PASS (12 Nov 2026).
 
-Word counts (42 cipher words, code groups counted as words): 38 verbatim from the signs; 2 with a doubtful sign
+Word counts (42 cipher words, code groups counted as words; the contributor's count): 38 verbatim from the signs, of
+which 2 (Giesen, group 34; ny, group 56) rest on a letter value that no gloss attests, so the strict count is 36 (85.7%); 2 with a doubtful sign
 (aquel, a figure under an ink blot; desarmarse, group 61 of doubtful shape, possibly 51); 2 with a marked repair (cath{+e}gorica; o{u/y} "oy", the group read 50 or 56);
 0 from a gloss only; 0 holes. The writer's spellings socorer, socorerle and ny are kept as written.
 
@@ -113,6 +118,28 @@ now reads "seek the enemy". The review also noted that pass 2 was made after the
 re-segmented from 21 to 20 figures, confirmed blind by the reviewer; `30?`; `50/56`); the fourth, 51 to 61 in L09, does,
 and is the group now marked doubtful.
 
+## Integration check (12 Nov 2026)
+
+Done by the integrating session, not by the contributor. Reproduced: `check_pairs.py` (32 glossed words, 229 signs, all
+decrypt to their gloss; 45 of 47 letters attested, 34 and 56 not; held-out 25069 9 of 10 words, 62 of 63 groups),
+`check_marks.py` passes. An own decoder written from `key_frozen.tsv` gives the same decryption of 25071 as the
+contributor's. The key shares nothing with the Vlnas table of piccolomini1646 (odd digits = vowels) or with
+claudiamedici1646.
+**Strict read share by the README rule** (a word counts as read only if its letters are given by values that a gloss
+attests or that the sense does not alone supply; doubtful, repaired and sense-only words do not): 42 cipher words,
+38 verbatim in the contributor's count, minus Giesen (34, from table order and sense) and ny (56, a single group in
+the glossed sibling that is itself not glossed) = **36 of 42 = 85.7%**; the contributor's 38 of 42 (90.5%) is given once
+in the result paragraph as theirs. Class read in part either way. The letter is mostly plain script: 95 clear words
+that the reading takes from the page for context against 42 cipher words, so the sentences are carried by the clear
+text and the cipher words (mostly nouns and verbs) sit in that frame; the clear script was read from the same soft
+photograph and is not transcribed letter by letter.
+Images: the photographs are in the appendix zip of Vlnas 2017 on theses.cz, which answers every request from a script
+with a JavaScript proof-of-work page; the integrating session had no browser tool and did not get round the check, so
+the transcription was **not** compared with the photograph here (the blind review of 69 groups above is the contributor's
+report). Next time use Chrome (the sweep notes in research/sweep_2026-11_czech_chrome name the route).
+Order of events: the freezing of `key_frozen.tsv` before the held-out count and before the mechanical decryption rests
+on the contributor's record (file times, one commit).
+
 ## Remaining gaps
 
 - L05 "aquel" - blocker: illegible; the fourth group is under an ink blot (only "3" is clear); a clean scan
@@ -132,6 +159,9 @@ and is the group now marked doubtful.
 - Place and writer - blocker: needs-physical-access; the date line reads "Ilenstatt" (probably Ilbenstadt,
   Wetterau), not Frankenthal as the catalogue has it, and the signature "Joh: Behr [?] von ..." is not read. The slug
   `frankenthal1646` follows the catalogue; the reviewer agrees it should be raised or renamed (e.g. `ilbenstadt1646`).
+- The transcription against the photograph, by the integrating session - blocker: needs-physical-access; theses.cz
+  gives scripts a JavaScript proof-of-work page and no browser tool was available; the contributor's blind review of 69
+  groups stands alone.
 - Human check - blocker: needs-physical-access; no human palaeographer has checked any sign.
 
 Not part of this target: the writer's earlier table (25063, 25065) and the troop list 25026 were not worked.

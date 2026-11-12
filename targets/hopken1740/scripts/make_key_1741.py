@@ -1,6 +1,6 @@
-"""key.tsv = key_frozen.tsv (hopken1740 key as on origin/main) + values read from the gloss of hopken1741a (image R0003635_00147)
-+ two corrections of single values from the same gloss. Run from the folder: python scripts/make_key.py"""
-rows = [l.rstrip('\n').split('\t') for l in open('key_frozen.tsv', encoding='utf-8') if l.strip() and not l.startswith('#')]
+"""key_1741.tsv = key.tsv (the hopken1740 key, unchanged) + values read from the gloss of Lit. A (image R0003635_00147)
++ two corrections of single values from the same gloss. Run from this folder: python scripts/make_key_1741.py"""
+rows = [l.rstrip('\n').split('\t') for l in open('key.tsv', encoding='utf-8') if l.strip() and not l.startswith('#')]
 key = {r[0]: r for r in rows}
 CHANGED = {'1504': ('vo', 'voulu, savoir, pouvoir in the 1741a gloss (frozen: r, single)'),
            '1840': ('au', 'auparavant, auquel in the 1741a gloss; u = v (frozen: a, single)')}
@@ -10,7 +10,7 @@ for l in open('scripts/gloss_values.tsv', encoding='utf-8'):
     g, v, ev = l.rstrip('\n').split('\t')
     assert g not in key, g
     key[g] = [g, v, '', '', 'gloss_1741a', ev]
-with open('key.tsv', 'w', encoding='utf-8') as f:
+with open('key_1741.tsv', 'w', encoding='utf-8') as f:
     f.write('# group\tvalue\tseen\tagree\tstatus\tother\n')
     for g in sorted(key): f.write('\t'.join(key[g]) + '\n')
 print(len(key), 'groups;', sum(1 for r in key.values() if r[4] == 'gloss_1741a'), 'new from the 1741a gloss;', len(CHANGED), 'changed')

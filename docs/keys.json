@@ -4838,6 +4838,30 @@
    "by": "Secretaria Particular del Presidente (typed sheet addressed to Francisco L. de la Barra)",
    "year": null,
    "note": "A typed key sheet in the Francisco Leon de la Barra papers, tested both ways on the 1912 and 1913 telegrams of the same fonds: no Spanish. Date not established."
+  },
+  {
+   "id": "k-frankenthal1646",
+   "label": "Second number table of the Piccolomini writer of 1646 (inv. 25067, 25069, 25071), key rebuilt from the glosses of 25067",
+   "kind": "rebuilt here",
+   "by": "WAINUT",
+   "year": 1646,
+   "note": "Two-figure groups in alphabetical runs plus a second run, two code groups (67 Archiduque, 72 Principe de Darmstadt); built from 32 glossed words of 25067, frozen, 9 of 10 held-out words of 25069 right; groups 34 and 56 not attested by a gloss (key partial in those two)."
+  },
+  {
+   "id": "k-juel1647",
+   "label": "Peder Juel's 8-64 number table (letters to the chancellor, 1647-48), key rebuilt from glossed letters of 1648",
+   "kind": "rebuilt here",
+   "by": "WAINUT",
+   "year": 1647,
+   "note": "Four alphabetical runs of numbers, most letters with two numbers, six null numbers, a three-digit nomenclator; built from 82 gloss pairs of two letters of 1648, frozen, 23 of 25 numbers of a third glossed letter right; 11, 12 and 13 have no value."
+  },
+  {
+   "id": "k-hopken1740",
+   "label": "Second Höpken-Carlson code (four-digit groups, 1006-1915), code list rebuilt from the glossed despatch of 15/26 Jan 1740",
+   "kind": "rebuilt here",
+   "by": "Daniel Bourdeau's project, WAINUT",
+   "year": 1740,
+   "note": "A syllabary with word codes, 235 confirmed values, frozen and tested on a glossed French page of 1741 (222 of 282 groups); extended by 24 values and 2 corrections from that gloss to read two bare French documents."
   }
  ],
  "links": [
@@ -7798,6 +7822,24 @@
    "target": "nunez1899",
    "how": "rebuilt from",
    "note": "frozen from three other glossed telegrams; 28 of 65 code words of 9926 confirmed by its contemporary translation, 36 values from the translation only"
+  },
+  {
+   "key": "k-frankenthal1646",
+   "target": "frankenthal1646",
+   "how": "rebuilt from",
+   "note": "rebuilt from the glossed sibling letter 25067, frozen, tested on 25069 and applied to the bare 25071"
+  },
+  {
+   "key": "k-juel1647",
+   "target": "juel1647",
+   "how": "rebuilt from",
+   "note": "rebuilt from the glosses on Juel's letters of 1648 (images 117, 121), tested on image 118 and applied to register p. 5"
+  },
+  {
+   "key": "k-hopken1740",
+   "target": "hopken1740",
+   "how": "rebuilt from",
+   "note": "rebuilt from the Swedish gloss of the despatch of January 1740, tested on Lit. A (1741) and applied, extended, to the bare Castellane letter and reply"
   }
  ],
  "sources": [
@@ -9078,6 +9120,18 @@
   {
    "source": "s-cyphersolver",
    "key": "k-nunez1899code"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-frankenthal1646"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-juel1647"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-hopken1740"
   }
  ],
  "unlinked": {
@@ -10386,6 +10440,11 @@
    "key": "k-x15466",
    "target": "delabarra1913",
    "note": "tested in both directions (scripts/keysheet_test.py): no Spanish; a different key"
+  },
+  {
+   "key": "k-vibejuel1649",
+   "target": "juel1647",
+   "note": "Peder Vibe's old cipher tried on register p. 6 (3-32 set): no Danish; it does read register p. 115, which is on vibejuel1649"
   }
  ]
 }
