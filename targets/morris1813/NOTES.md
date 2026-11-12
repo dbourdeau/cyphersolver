@@ -1,16 +1,16 @@
 # Anthony Morris to James Monroe, Cadiz/Madrid 1813-15: the State Department code with its blocks reversed
 
-Status: in progress. Next step: a reading review and a second reader for the catalogue 650 letters of 11 Nov 2026; transcribe the coded frames still open (0111, 0115-0116, and the copies on 0036-0038 and 0050-0057); then the rest of the print search (Manning vol. 3 searched, Woolfley read in part and searched in full text, *Papers of James Monroe* vols. 6-7 and *American State Papers* not read).
-Contributed by WAINUT (27 Oct 2026). The code is identified: it is the State Department code already rebuilt
-in [`../jqa`](../jqa/NOTES.md) (the = 1385), and Morris's copy numbers its sixteen blocks of 100 in reverse order.
-One page (frame 0039, 554 of about 3,000 groups, some 18%) is transcribed and read in part (0.678 of its words read
-as sense); the other coded frames are not transcribed, so the catalogue item as a whole is about 12% read. In short:
-code identified, complete; text of frame 0039, partial; text of the other frames, not attempted (`outcome.parts`).
-The site page and the ledger rows are left to the maintainer.
+Status: written up 12 Nov 2026 (`docs/morris1813.html`).
 
-Merge order: the 364 = full stop argument (section 2) rests on the Ellis 1839 alignment of PR #107, so #107 goes in
-first. On merge, catalogue 650 (which says the signature groups do not match the JQA table) and `../jqa/NOTES.md`
-should record the reversed-block copy; a one-line pointer is added to `../jqa/NOTES.md` in this pull request.
+Thirteen coded texts of 1814-15 on NARA M31 roll 14 are read here with the State Department code (Weber's WE028,
+the = 1385), which Morris's copy numbers with its sixteen blocks of 100 in reverse order. Class: read in part.
+Method: read after matching with key from external sources. Provenance: contributed (WAINUT, PR #114: the block
+reversal and frame 0039; Andrew Beling, PR #200 and PR #415: the key sheet and ten letters). Two short pieces were
+added at the integration of 12 Nov 2026. The state of each text, the counts and the corrections are in
+"Integration check (12 Nov 2026)" below; that section is the latest word where it differs from the older ones.
+Sections 1 to 6 are the record of the first contribution (27 Oct 2026), which used the table rebuilt in
+[`../jqa`](../jqa/NOTES.md) and read frame 0039 at 0.678; the reading of frame 0039 was replaced on 31 Oct 2026
+(PR #200, 0.965 of the words).
 
 Catalogue 650. Contributed by WAINUT (https://github.com/WAINUTAI), a Dutch AI company. The work was done with AI
 language-model agents. The transcription of frame 0039 was made from the NARA image; a second agent re-read a quarter
@@ -179,8 +179,9 @@ letter; the method, scripts and tests are described in `beling/README.md`.
   Florida, and called on the Duke de San Carlos on the 13th. In code: the duke received him without cordiality and has
   not answered; the press is guarded against anything unfavourable to the government or to the British government,
   and the post office against the introduction of foreign papers.
-- **No. 24.** From a source he trusts: the Council of State is preparing a report to the king recommending a declaration
-  of war on the United States over its proceedings on Louisiana and Florida. 47,000 soldiers and 5,000 officers have
+- **No. 24.** Morris reports, from a source he trusts, that the Council of State is preparing a report to the king
+  recommending a declaration of war on the United States over its proceedings on Louisiana and Florida (a report in
+  preparation, as he was told; not a decision). 47,000 soldiers and 5,000 officers have
   come back from France as prisoners of war; Spain has at least 160,000 men under arms; two expeditions of ten thousand
   each are fitting out at Cadiz, under Field Marshal "Linan" for Mexico and General "Murillo" for Buenos Aires, to sail
   early in January. Manning vol. 3, p. 1604, names a Field Marshal Linan as commander-in-chief in Mexico at the time of
@@ -260,10 +261,97 @@ changed for sense.
 
 **Limits.**
 - One reader for all five letters; no second reading of the numerals or of the readings.
-- No `reading_review` yet: a person still has to read each `reading.txt` as sentences.
+- No `reading_review` when the pull request came in; one was recorded at integration (12 Nov 2026), a model reading, not a person's.
 - The two tests are not blind (above), and the other three letters have no contemporary decipherment to test against.
 - The unread and inferred lists behind the read shares are a judgment.
-- Not read: a wholly coded document on 0115-0116 (deciphered copies on 0169-0170 and 0201) and three coded lines on 0111.
+- Left unread by the pull request: a wholly coded document on 0115-0116 (deciphered copy on 0169-0170; a further copy on 0201) and three coded lines on 0111. Both were read at integration (see "Integration check").
+
+## Integration check (12 Nov 2026)
+
+PR #415 was verified independently before integration, then integrated; this section records both.
+
+**What reproduced.** The three scripts were read (standard library, no network, no writes) and run. The five
+line-by-line decodes are byte-identical; the key hash and `beling/SHA256SUMS.txt` match. A decoder written from the key
+CSV alone agrees on all 1,035 groups. The 1,600 rows of the reversal column agree with the block formula. The two
+clerk tests reproduce: No. 24 against frame 0196 0.904 (shuffled best 0.342, median 0.215), No. 25 against frame 0174
+0.945 (0.343, 0.201). Group counts 486, 156, 205, 98, 90. On the images: all 205 groups of No. 24 agree with frame 0220
+at full resolution (the last is 1551 or 1557, as flagged); 13 of 13 on the first line of No. 25; about 110 groups of
+No. 18 on frame 0112 and two lines of No. 19 on frame 0139 with no difference. Frames 0113, 0221, 0209, 0210 and the
+other copies were not viewed. The statement that the numerals were frozen before decoding is by the contributor's
+record: the pull request is a single commit.
+
+**Corrections made.**
+- *Unflagged inferences.* In No. 18, "liberal" and "liberality" are decoded li-er-al (780.400.35); in No. 19,
+  "approbation" is decoded ap-pro-bat-ad (975.1319.209.13). They are now marked `[?...]` in the readings, like the
+  supplied "delay[ed]" and "[going]" already were. `beling/SHA256SUMS.txt` carries the new hashes of the three reading
+  files changed (Nos. 18, 19, 24).
+- *One counting rule.* `word_share.py` (new, in this folder) counts the coded words of each letter reading and the
+  holes among them: an unread group, a guessed `[?word]` or a word with supplied letters is a hole. Output in
+  `word_share.txt`:
+
+  | Text | Coded words | Holes | Share | State |
+  |---|---|---|---|---|
+  | No. 12, 4 April 1814 | 181 | 5 | 0.972 | read |
+  | No. 13, 11 April 1814 | 74 | 4 | 0.946 | read in part |
+  | No. 14, 11 May 1814 | 157 | 6 | 0.962 | read |
+  | No. 17, 21 June 1814 (three lines) | 35 | 3 | 0.914 | read in part |
+  | No. 18, 20 September 1814 | 312 | 13 | 0.958 | read |
+  | No. 19, 27 October 1814 | 106 | 6 | 0.943 | read in part |
+  | Cevallos to Morris, 20 November 1814 | 312 | 12 | 0.962 | read |
+  | No. 24, 30 December 1814 | 131 | 3 | 0.977 | read |
+  | No. 25, 6 January 1815 | 74 | 0 | 1.000 | read |
+  | No. 26, 27 January 1815 | 46 | 2 | 0.957 | read |
+  | 24 March 1815 | 779 | 18 | 0.977 | read |
+  | No. 28, 12 May 1815 | 71 | 0 | 1.000 | read |
+
+  Frame 0039 stays at 0.965 (Andrew Beling's count by the same rule, PR #200; a recount here gives 353 words, 13
+  holes, 0.963). All thirteen texts: 2,631 coded words, 85 holes, 0.968. The contributor's figures for the five
+  PR #415 letters, 0.981, 0.955, 0.980, 1.000 and 1.000, are shares of groups (`beling/scripts/read_share.py`), not of
+  words. The verifier's word count before the three inferences were marked was 0.965, 0.953, 0.978, 1.000, 1.000.
+  The target as a whole is read in part: three texts are under 0.95 and the open places are listed under Remaining gaps.
+- *Which readings are new.* Nos. 24 and 25 have a clerk's decipherment on another copy, so there the reading confirms
+  an existing decipherment. Nos. 18, 19 and 28 have none on the frames. Woolfley (2013) quotes parts of Nos. 18, 19
+  and 24, so nothing is called unpublished.
+- *No. 24.* The decode gives: "a report is pre-par-ing by the council of state to H . M . re-com-end-ing a
+  dec-lar-ation of war against the [1569] four-nd upon the ground general-ly of our proceed-ing relat-[145] to
+  [lo]-is-i-an-a and Florida". Group 1569 is "December" in the key and in this letter's own heading; "United States"
+  rests on "our proceedings", on the clerk's words on frame 0196 ("against the U States", read by the verifier after a
+  contrast stretch) and on Woolfley's quotation. Morris reports, from a source he trusts, that a report recommending
+  war was being prepared: hearsay about a recommendation, not a decision.
+- *No. 24, opening.* 593.813 (shall, R) is what frame 0220 has. The letter of 24 March 1815 opens 598.813 (si, R),
+  "Sir", so 593 is probably a slip for 598. It stays `[?Sir]`.
+- *Profile.* The five PR #200 letters were missing from `documents` and `outcome.texts` and are added; a
+  `reading_review` is recorded on every letter text (a model reading at integration, not a person; frame 0039 keeps
+  Andrew Beling's); `fraction_read` and `codes_open`, which still described frame 0039 alone, are recomputed.
+
+**Two pieces added at integration** (one reader, the integrating agent; same key and decoder, unchanged):
+- *Frames 0115-0116* (`beling/letters/1814-11-20_Cevallos/`, 621 groups) are a copy, headed "Copia", of a note in
+  Spanish from Pedro de Cevallos to Morris, dated Palacio, 20 November 1814, spelled out with the syllables of the
+  English code. It answers Morris's paper of the 17th: the king resents the conduct of the United States; the
+  appointment of Erving does not repair the refusal to recognise the minister Spain sent in 1809; satisfaction must
+  begin with that recognition; Morris may still deal with Cevallos on matters between the two states. A clerk wrote
+  the Spanish between the lines of the copy on frames 0169-0170, and that copy was seen at reduced size before the
+  numerals were transcribed, so the transcription is not blind and the reading confirms a contemporary decipherment.
+  One group was corrected after decoding with 0169 in view (1301, particular, first read 1307). The clerk writes
+  "elev son" and "ep for" where the sense wants "elevado" and "época": those are slips in the coding. The copy on
+  0169 leaves out ten groups that 0115 has ("hecho ahora en ... con igual"). Word share 0.962, with a translation
+  (`translation.txt`).
+- *Frame 0111* (`beling/letters/1814-06-21_No17/`, 53 groups) is the end of No. 17, Seville, 21 June 1814, nine pages
+  in clear: "In the [?present] most unexpected state of things, therefore, I have thought it most [?prudent] to remain
+  quiet until I shall have the satisfaction of hearing from you." The coded heading on frame 0107 was read at reduced
+  size.
+
+**Print, 12 Nov 2026.** Two web searches found no printed text of the Cevallos note or of the No. 24 sentence. One
+result summarises an annotation in the *Papers of James Madison* (Founders Online, Madison/03-08-02-0355): Erving's
+letter to Monroe of 4 December 1814 enclosed a copy and translation of Cevallos's note of 20 November to Morris. The
+page could not be opened here, so this is not checked.
+
+**Related targets.** [`../jqa`](../jqa/NOTES.md) and `../ellis1839` use the same code in its usual numbering.
+[`../poinsett1813`](../poinsett1813/NOTES.md) and [`../king1797`](../king1797/NOTES.md) are other State Department
+codes; king1797 tested the WE028 sheet of this folder against its own code in both block orders: no value in common.
+
+**Catalogue.** Entry 650 had been narrowed on 3 Nov 2026 to No. 18, No. 28 and the despatch on frames 0220-0221. All
+three are read here, so the entry leaves the catalogue.
 
 ## Proposed table changes (for `../jqa/code_table.tsv`, not applied)
 
@@ -273,38 +361,63 @@ in the table (a slot inference); it fits here (democratic).
 
 ## Remaining gaps
 
-- Frames 0036-0038 and 0050-0057 - blocker: not-attempted. A survey of the coded frames on 11 Nov 2026 found them to be
-  further copies of the 4 January 1814 letter and its proposal, which have clear copies (section 1). Their numerals are
-  not in the repository: working numerals for 0050 and 0052-0057 still have misreads, and 0051 is not transcribed. The
-  other frames of this gap as first listed, 0124-0125 and 0191-0192, are the letter of 24 March 1815, read in part in
-  `beling/letters/1815-03-24/` (PR #200).
-- Frames 0115-0116 (a wholly coded document, with deciphered copies on 0169-0170 and 0201) and three coded lines on
-  0111 - blocker: not-attempted; not transcribed or read.
-- Catalogue 650 letters Nos. 18, 19, 24, 25 and 28 (`beling/letters/`) - blocker: open-codes; [370] after full stops
-  is unidentified; 593.813 opening No. 24 and 575.1060 in No. 19 are unread; 1457, 1040, 572.1101 and 1150 misfit their
-  key values and are read from context; 1569 is both December and United States. One reader only, and no
-  `reading_review` yet.
-- 36 distinct groups (48 tokens) on frame 0039 without a table value - blocker: open-codes; among them 670 (5x), 904,
-  1149, 1311, 163 and the figure groups 655, 657 and 659. More Morris text would test the context readings.
-- Frame 0039's reading of 31 Oct uses rereads made with the clear text in view (`beling/frame39/frame0039_rereads.md`), so a blind reread of those digits is still open - blocker: not-attempted.
-
+- [370], the sign after full stops (22 times in the thirteen texts) - blocker: open-codes; the cell of the code sheet
+  has a z-like sign and no value.
+- 575.1060 in No. 19, an adverb before "guards" - blocker: open-codes; se with two strokes + ti gives no word, and the
+  three copies agree.
+- Words read from context where Morris's group does not give the word (counted as holes) - blocker: open-codes;
+  1569 for United States (No. 24, No. 26), 593.813 for Sir (No. 24), 145 with a stroke for relative and
+  131 for re (No. 18), 1457, 1040 and 780.400.35 (No. 18), 209.13, 1150 and 572.1101 (No. 19), 1351, 681, 1450, 1037,
+  1167 and 1060.1046 (Cevallos note), 1159 (No. 17), and the inferred words of the PR #200 letters and frame 0039. The
+  key sheet is complete for these numbers: they are slips or private usages of the writer, and each needs another
+  occurrence or a clear copy to settle.
+- Despatch number of the letter of 24 March 1815; one blotted group on frame 0111 - blocker: illegible; the group is
+  1310 or 1320. Copy A's coded number reads seventeen, Copy B's is overwritten. The catalogue's vetting reports a copy on
+  frames 0206-0207 headed No. 27, not compared here.
 - Anthony Morris Family Papers, Historical Society of Pennsylvania, Collection 2018-A - blocker: needs-physical-access;
   HSP's catalogue lists a copybook of letters, 1813-1816, to Monroe and with Erving, and Woolfley cites the collection
-  for nearly every dispatch. It may hold clear copies, which would test the readings line by line. Not seen, and whether
-  the letters are in clear is unknown.
-- Print not checked for the catalogue 650 letters: *American State Papers*, Foreign Relations, and *Papers of James
-  Monroe* vol. 7 - blocker: not-attempted. (Woolfley was searched in full text on 11 Nov 2026; see the
-  catalogue 650 section.)
+  for nearly every dispatch. It may hold clear copies, which would test the readings of Nos. 18, 19 and 28 line by
+  line. Not seen, and whether the letters are in clear is unknown.
 
 ## Escalation
 
 - [x] siblings: the code is the JQA table (`../jqa`), also used by Crawford 1813, Appleton 1823, Everett 1825 and
-  Ellis 1839 (open PR #107), with the blocks reversed in Morris's copy
-- [x] clear-pages: frame 0039 has clear copies (M37 roll 2 frames 395-396; M31 roll 14 frames 0059-0060), used in the reading
-- [x] known-keys: 220 repository tables tried directly (none fits); the JQA table fits under the block reversal
-- [ ] print: Manning (1925) vol. 3 searched; Woolfley read in part (section 6) and searched in full text for the catalogue 650 letters (parts of Nos. 18, 19 and 24 found); *Papers of James Monroe* vols. 6-7 and *American State Papers* not read
-- [ ] key-rebuild: open slots (670, 1566 and others) need more Morris text
-- [ ] retry: Nos. 18, 19, 24, 25 and 28 read (11 Nov 2026, `beling/letters/`); not transcribed: 0036-0038 and 0050-0057 (copies with clear texts), 0111, 0115-0116
+  Ellis 1839, with the blocks reversed in Morris's copy; the copies of each letter on the roll were collated where
+  they exist
+- [x] clear-pages: frame 0039 has clear copies (M37 roll 2 frames 395-396; M31 roll 14 frames 0059-0060), used in the
+  reading; clerks' decipherments on other copies of Nos. 24 and 25 and of the Cevallos note were compared
+- [x] known-keys: 220 repository tables tried directly (none fits); the JQA table fits under the block reversal; from
+  PR #200 the surviving code sheet (M97 roll 13, WE028) is the key
+- [x] print: Manning (1925) vol. 3 searched (nothing); Woolfley (2013) searched in full text on Ebook Central (parts
+  of 4 and 11 April 1814 and of Nos. 18, 19 and 24 quoted); *Papers of James Monroe* vol. 7 by Google Books snippets
+  (nothing); two web searches on 12 Nov 2026 (one result reports an annotation in the *Papers of James Madison* that
+  Erving's letter of 4 December 1814 enclosed a copy and translation of the Cevallos note; the page could not be
+  opened). *American State Papers* not read
+- [n/a] key-rebuild: the key is a complete surviving sheet of the code, not a rebuilt table; the open places are
+  slips and private usages in the letters, which a rebuild from these texts cannot settle
+- [x] retry: 12 Nov 2026: the two pieces left unread (frames 0115-0116 and 0111) transcribed and decoded; every
+  doubtful word of Nos. 18 and 19 regraded against the key values (three more marked as inferred); 593.813 in No. 24
+  compared with 598.813 = Sir in the letter of 24 March 1815
+
+## Checks not made
+
+These are not gaps in the reading (12 Nov 2026):
+
+- Frames 0036-0038 and 0050-0057 are further coded copies of the letter of 4 January 1814 and its proposal, whose text
+  is known from the clear copies (section 1). Their numerals are not in the repository (working numerals for 0050 and
+  0052-0057 still have misreads; 0051 is not transcribed), so the proposal has not been decoded from the code beyond
+  frame 0039.
+- Other coded frames of the roll carry a clerk's words above the groups (the catalogue's vetting lists 0028, 0033,
+  0066, 0069-0070, 0077-0079, 0206-0207, 0293 and 0316). They were not worked here.
+- The digit rereads on frame 0039 were made with the clear text in view (`beling/frame39/frame0039_rereads.md`); no
+  blind reread has been made.
+- One reader only for Nos. 18, 19, 24, 25 and 28, for the letter of 24 March 1815, and for the two pieces added at
+  integration. Frames 0113, 0221, 0209 and 0210 and the second copies were not viewed by the verifier.
+- The order of the contributor's work on PR #415 (numerals frozen before decoding) is by the contributor's record:
+  the pull request is a single commit.
+- Print: Woolfley's page references (Ebook Central) were not checked at integration. *American State Papers*,
+  Foreign Relations, was not searched beyond two web searches. *Papers of James Monroe* vol. 7 was searched by Google
+  Books snippets only (catalogue vetting, 3 Nov 2026). So no passage here is called unpublished.
 
 ## Files
 
@@ -319,3 +432,6 @@ in the table (a slot inference); it fits here (democratic).
   `line_by_line_decode.txt` (output of `beling/scripts/decode650.py`), `reading.txt`; for Nos. 24 and 25 the clerk's
   decipherment and the test against it
 - `beling/scripts/`: `decode650.py`, `score_interlinear.py`, `read_share.py` (Python standard library)
+- `beling/letters/1814-11-20_Cevallos/` and `beling/letters/1814-06-21_No17/` (added at integration, 12 Nov 2026):
+  `transcription.txt`, `line_by_line_decode.txt`, `reading.txt`; the first also `translation.txt`
+- `word_share.py`, `word_share.txt`: the share of coded words read in each letter reading, by one rule

@@ -4716,6 +4716,15 @@
    "by": "",
    "year": 1912,
    "note": "The public four-digit code of the Chinese telegraphs, one number for each character, used here without encipherment. Table taken from the Unicode Unihan database (kTaiwanTelegraph and kMainlandTelegraph); the codes used are in targets/peking1912/key.tsv and targets/nanking1930/key.tsv. The same table reads the 20 plain telegrams of targets/ctcplain1913."
+  },
+  {
+   "id": "k-we028",
+   "label": "State Department code sheet WE028 (the = 1385), 1,600 groups",
+   "kind": "archive key",
+   "by": "Department of State; transcribed by Andrew Beling (PR #200)",
+   "year": 1814,
+   "found": 2026,
+   "note": "A surviving sheet of the State Department's numerical code, NARA M97 roll 13 frames 1056-1057, printed by Weber (1979) as WE028; working transcription in targets/morris1813/beling/key/codebook_M97_13_transcription.csv (seven entries blank, eleven disputed). The same code as the table rebuilt in targets/jqa (k-jqa1385)."
   }
  ],
  "links": [
@@ -7598,6 +7607,18 @@
    "target": "nanking1930",
    "how": "read unchanged",
    "note": "plain code in four-digit groups; 221 of 230 codes give the character as written, six emended by one digit, three unresolved"
+  },
+  {
+   "key": "k-we028",
+   "target": "morris1813",
+   "how": "adapted",
+   "note": "Morris's copy numbers the sixteen blocks of 100 in reverse order (the = 285); with that renumbering the sheet decodes thirteen coded texts of 1814-15, 96.8% of 2,631 coded words read"
+  },
+  {
+   "key": "k-jqa1385",
+   "target": "morris1813",
+   "how": "adapted",
+   "note": "The block reversal was first found on frame 0039 by fitting this table (WAINUT, 27 Oct 2026): function-word share 0.353 against at most 0.297 for 20,000 random block orders; the later readings use the code sheet itself (k-we028)"
   }
  ],
  "sources": [
@@ -10110,6 +10131,11 @@
    "key": "k-rakoczi1711",
    "target": "jablonski1705",
    "note": "R483's rebuilt syllabic key compared: of 81 groups valued in both keys, 2 agree (160, 280); a different system"
+  },
+  {
+   "key": "k-we028",
+   "target": "king1797",
+   "note": "the WE028 sheet in both block orders against King's key: 757 and 752 numbers in common, none with the same value, no constant offset (targets/king1797/NOTES.md)"
   }
  ]
 }
