@@ -420,7 +420,7 @@ Closed items (moved out of Remaining gaps):
 - R9635 four uncertain words of the decipherment ([?bastar], [?tenido], [?Menorami], [?Lucerna]) - blocker: illegible; cramped court hand at DECODE's resolution
 - R9613 and R9641: three and two uncertain words of their decipherments ([?nescia], [?nemora], [?sus pagos]; [?conversacion], [?vera]) - blocker: illegible; fast cursive at DECODE's resolution
 - R9593 (5 March 1522) f. 27r ll. 26-33, f. 27v ll. 11-13 and about twenty open code groups (xe, vub, lud, fug, la, lif, ni, fu, sag, nif, ram, tag, zom, fag, pil, dug, nad, mug, tem, nog, ca, ce) - blocker: no-key-material; read sign by sign 23 Oct 2026 (r2o), groups absent from the published key and mostly met once, no decipherment bound or imaged, not in CSP Spain 2
-- the other Sánchez records of 9/23-9/26, 47 records not read (R9607 read in part 12 Nov 2026; R9594, R9616, R9617, R9626, R9631, R9632, R9633, R9636, R9639, R9651 triaged only) (some duplicates: R9626/R9627, R9628/R9629; R9625 and R9638 mostly clear): R9594, R9595, R9596, R9597, R9598, R9599, R9600, R9601, R9602, R9603, R9604, R9606, R9608, R9609, R9610, R9611, R9612, R9614, R9615, R9616, R9617, R9618, R9619, R9620, R9621, R9622, R9623, R9624, R9625, R9626, R9627, R9628, R9629, R9630, R9631, R9632, R9633, R9636, R9637, R9638, R9639, R9640, R9643, R9647, R9651, R9655, R9657 - blocker: not-attempted; no decipherment imaged (r2i); R9594 is next in date order (5 pp., = CSP 396, whose decipherment is in the Gayangos papers); each readable sign by sign with the key as R9593 was
+- the other Sánchez records of 9/23-9/26, 48 records (some duplicates: R9626/R9627, R9628/R9629; R9625 and R9638 mostly clear): R9594, R9595, R9596, R9597, R9598, R9599, R9600, R9601, R9602, R9603, R9604, R9606, R9607, R9608, R9609, R9610, R9611, R9612, R9614, R9615, R9616, R9617, R9618, R9619, R9620, R9621, R9622, R9623, R9624, R9625, R9626, R9627, R9628, R9629, R9630, R9631, R9632, R9633, R9636, R9637, R9638, R9639, R9640, R9643, R9647, R9651, R9655, R9657 - blocker: not-attempted; no decipherment imaged (r2i); R9594 is next in date order (5 pp., = CSP 396, whose decipherment is in the Gayangos papers); each readable sign by sign with the key as R9593 was
 - Lope Hurtado records R9634, R9644-R9646, R9648-R9650, R9652, R9656 - blocker: no-key-material; a third cipher, finals p/z absent from Sánchez's key; groups not in Tomokiyo's Juan Manuel table (see the lopehurtado1522 target)
 
 ## Escalation
@@ -444,16 +444,59 @@ contemporary decipherment; only R9607 and R9633 are uncalendared. Before any dec
 with one measure on a held-out passage, R9632 f. 200r ll. 7-25 (386 tokens transcribed blind, R9632 used for no key
 adjustment): this folder's key, unchanged, scores 593 decoded characters at -2.471 per character (4-gram, Don Quijote)
 against 400 controls (permuted keys and token shuffles) with mean -3.106 and best -2.766, z = 5.68: PASS on the pre-set
-thresholds (`dudout/protocol/`; by the contributor's record the transcription was frozen before decoding; the score is a
-language-model score, so it shows the key turns the passage into Spanish, not that every word is right). R9607 (14 May 1522, 9/24 ff. 65r-67v, 146 cipher lines, no decipherment imaged) was then
+thresholds (`dudout/protocol/`). R9607 (14 May 1522, 9/24 ff. 65r-67v, 146 cipher lines, no decipherment imaged) was then
 transcribed blind by sign shape, frozen, decoded with the key unchanged and read by sense: 1,121 sure, 116 probable,
-2 restored, 316 unresolved of 1,555 words. By the README rule (a letter chosen by sense on a look-alike sign is not read on
-the signs) 1,121 sure = 72.1 %; the contributor's sure + probable is 79.5 %. Read in part either way (`dudout/R9607_reading.md`, `_text_es.md`, `_en.md`):
+2 restored, 316 unresolved of 1,555 words = 79.5 %, read in part (`dudout/R9607_reading.md`, `_text_es.md`, `_en.md`):
 Venice arming galleys after the French defeat, French soldiers from Milan at Padua, Cremona, Lautrec and Prospero
 Colonna, Sánchez's demand that the Signoria declare itself released from its French capitulation, the Turk's fleet
 reported from Corfu, the Hungarian ambassador's departure. Tomokiyo's printed opening line agrees. Most unresolved words
 are spelled runs mis-transcribed on look-alike signs; 63 code groups absent from the key are listed there, none added.
 For the gap list: R9607 moves from not-attempted to read in part; the other ten lot-1 records are triaged, not read.
+
+## Lot 2 triaged, R9610 read in part, R9607 re-checked, 12 Nov 2026 (Brice Dudout)
+
+DECODE lot 2 (17 records, 43 images) was triaged (`dudout/TRIAGE_lot2.md`): every Sánchez letter in it is uncalendared
+and carries no imaged decipherment, except R9624, marked "triplicada", a third copy of the 7 Aug letter (R9626/R9627,
+CSP 462); R9628 is a copy of R9629; R9612 is mixed with long clear passages; R9623 is dated in clear 7 [?] Aug (not
+19 July) and calls itself a triplicate, and its last paragraph, given by Tomokiyo as decrypted, is in clear in the
+letter; R9657 is not Sánchez but Lope Hurtado de Mendoza, in another cipher. R9606, R9637 and R9655 have no image
+online. A second PREREG (`dudout/protocol/PREREG_lot2.md`) was frozen before decoding: key unchanged, nothing added, so
+no new measure. R9610 (2 June 1522, 9/24 ff. 132r-134r, 130 cipher lines) was transcribed blind, frozen, decoded with
+the key unchanged and read by sense: 691 sure, 211 probable, 2 restored, 233 unresolved of 1,137 words, read in part
+(`dudout/R9610_reading.md`, `_text_es.md`, `_en.md`). By the README rule only the 691 sure words are read on the signs
+(a probable word is a look-alike sign settled by sense): **60.8 %**; the contributor's sure + probable is 79.3 %. 96 of
+the unresolved words read only after correcting a sign label after decoding and are counted as holes. Content: 24,000
+ducats sent by the Viceroy of Naples for Prospero Colonna through Venetian lands with an escort from Verona,
+safe-conducts for the Viceroy, the King of France's letters from Lyon (he blames Lautrec and sends the Admiral), Lautrec
+leaving for France, Cremona, the Turk's ambassador as a spy and the Turk arming a hundred sails, the Turks before Knin.
+R9607's unresolved runs were re-checked by a rule frozen in that PREREG: 5 words accepted as probable, so sure words
+stay 1,121 (**72.1 %**); the contributor's figure goes 79.5 % -> 79.9 % (`dudout/R9607_recheck.md`). Proposed codes,
+none added: dud = vino, sod = govierno, lud = presente, cid = xxii. For the gap list: R9610 moves from not-attempted to
+read in part.
+
+## Lot 3 and the second pass, 12 Nov 2026 (Brice Dudout, second commit of PR #479)
+
+Three more letters were transcribed blind and frozen before any was decoded (`dudout/protocol/SHA256SUMS`): R9614
+(18 June 1522, ff. 208r-210v), R9640 (22 Oct, ff. 139r-141r) and R9647 (7 Nov by its clear date, ff. 257r-258v). Then
+`dudout/protocol/PREREG_lot3.md` was frozen (by the contributor's record): **one measure of the four proposed code
+values** (dud = vino, sod = govierno, lud = presente, cid = xxii) on a fresh held-out portion, R9647 f. 257r (654
+tokens, 1,185 characters), 600 controls, adopted only if the gain over the key beats at least 190 of 200 random value
+sets. **Result: FAIL.** Only `dud` occurs (twice) and its gain beats 75 of 200; nothing is added to the key, and the sign
+label rules (q/g to l and others) were not adopted either. The key itself passes on this passage again (S -2.3308 per
+character, controls mean -2.9295, best -2.6051, z 6.18). A second, independent blind transcription of R9610 (by the
+contributor's record, an agent that had seen neither the first transcription nor the reading) was used by a rule frozen
+in that PREREG: a dagger word is confirmed if the sense-chosen word can be spelled by whole tokens of the second
+transcription on the lines around it, key unchanged; 33 of 96 confirmed, control on a shifted window 3 of 94 (3.2 %).
+The confirmed words are counted probable, not sure. The three new letters, read by sense with the key unchanged (sure
+words only, the README rule; the contributor's sure + probable in brackets): R9614 785 of 1,258 = **62.4 %** (77.3 %),
+R9640 702 of 1,203 = **58.4 %** (71.5 %), R9647 653 of 1,072 = **60.9 %** (75.6 %); R9610 after the second pass stays
+60.8 % sure (contributor's 82.2 %). All four letters are read in part. R9614 is a second copy ("treslado", sent by
+Genoa) of R9613, which this target already holds from its contemporary decipherment; aligned word by word with that
+decipherment, 674 of 785 sure words (85.9 %, 88.4 % with near spellings) agree: a check of the transcription and the key
+on a text whose plaintext is known, by the contributor's record not used to settle any word. R9640 (England's detention
+of Venetian goods, the French ambassador's threats, Geronimo Adorno's plan, Rhodes) and R9647 (the Signoria's answer to
+Sánchez and the English ambassador, no obligation left to France) are new text; their English files are summaries, not
+translations.
 
 ### Integration check (12 Nov 2026)
 
@@ -467,3 +510,17 @@ counted apart), the same band. Corrections: strict share 72.1 % (sure only) as t
 contributor's; the order of events is by the contributor's record. Not checked: the blind transcription of R9607 and of
 the held-out passage against the DECODE images (login). R9607 is read in part and the other ten lot-1 records are triaged,
 not read; no other Sánchez record is attempted by this PR.
+
+### Integration check of the second commit (12 Nov 2026, round 4)
+
+Reproduced: the 13 SHA-256 values of `dudout/protocol/SHA256SUMS` match; `decode_lot2.py` and `decode_lot3.py` give the
+committed decodes of R9610, R9614, R9640 and R9647 byte for byte, and my own decoder from the same table gives R9610's
+127 lines identically; `count_reading.py` gives 691/211/96/2/137 (R9610 first pass), 935 S+P after the second pass,
+785/187/131/0/155, 702/158/104/0/239, 653/157/119/0/143; `pass2_check.py` gives 33 of 96 confirmed, control 3/94;
+`recheck_r9607.py` gives the same 625 runs; `cmp9613.py` gives 674 of 785 sure words equal (85.9 %); `measure_lot3.py`
+on `R9647_signs.txt` f. 257r with a Gutenberg Don Quijote text gives the stated FAIL (G +0.00041, beats 75/200) and key
+S -2.3308, z 6.18. Corrections: the strict share (sure words only) is the figure of record for every letter (R9607 72.1 %,
+R9610 60.8 %, R9614 62.4 %, R9640 58.4 %, R9647 60.9 %); the contributor's figures are labelled as his; the FAILED lot-3
+measure is stated as failed; the profile of the PR carried no `texts` entries for R9614, R9640 and R9647 and no steps for
+the second commit, added. Not checked: every transcription against the DECODE images (the application page is a login
+shell); the second transcription's independence and the order of events rest on the contributor's record.

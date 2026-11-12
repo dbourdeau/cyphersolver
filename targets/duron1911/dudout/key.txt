@@ -1,0 +1,21 @@
+# duron1911 - key of CMXV.18.1777.1-6 (Durón, México, 20 May 1911)
+# Recovered from the ciphertext by Brice Dudout's project (12 Nov 2026). NOT validated: the text is too short
+# (107 signs, under the 300 letters our protocol requires for a held-out measure; declared in advance, PREREG-C06.md).
+
+Alphabet: 29 signs, Spanish order with ch, ll, ñ and w:
+  a b c ch d e f g h i j k l ll m n ñ o p q r s t u v w x y z
+
+Rule: cipher = plain + 22 (mod 29), i.e. plain = cipher + 7 (equivalently cipher = plain - 7).
+
+plain -> cipher
+  a t | b u | c v | ch w | d x | e y | f z | g a | h b | i c | j ch | k d | l e | ll f | m g
+  n h | ñ i | o j | p k  | q l | r ll | s m | t n | u ñ | v o | w p | x q | y r | z s
+
+Telegraph letters:
+- the cipher sign ñ (plain u) has no telegraph letter and is typed "n"; so a cipher "n" reads t or u, resolved by the
+  sense (four cases in this telegram);
+- the cipher sign ll (plain r) is typed as two letters "LL".
+
+Header: the first two signs (GM) are a header and decode to "m s". Observed after the reading and not counted as
+evidence: the shift equals the first header sign minus the second, G (7) - M (14) = -7 = +22 (mod 29). The sister
+telegram CMXV.18.1777.2-6 ("Elisa", same day) behaves the same way on its own 28-sign alphabet: P (17) - H (7) = +10.

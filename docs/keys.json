@@ -5051,6 +5051,14 @@
    "by": "Daniel Bourdeau's project, WAINUT",
    "year": 1740,
    "note": "A syllabary with word codes, 235 confirmed values, frozen and tested on a glossed French page of 1741 (222 of 282 groups); extended by 24 values and 2 corrections from that gloss to read two bare French documents."
+  },
+  {
+   "id": "k-duron1911-shift",
+   "label": "Shift of +22 on a 29-sign Spanish alphabet (ch, ll, ñ, w) of the Durón telegram, 20 May 1911",
+   "kind": "rebuilt here",
+   "by": "Brice Dudout (AI agents)",
+   "year": 1911,
+   "note": "Plain = cipher + 7 on a b c ch d e f g h i j k l ll m n ñ o p q r s t u v w x y z; the cipher ñ is typed n. Recovered from the 107 signs of CMXV.18.1777.1-6; not validated by a held-out test (too short), but the only one of 166 alphabet-and-shift candidates that gives Spanish. Not the shift of the sister telegram 1777.2-6 (28 signs, +10)."
   }
  ],
  "links": [
@@ -8155,6 +8163,12 @@
    "target": "hopken1740",
    "how": "rebuilt from",
    "note": "rebuilt from the Swedish gloss of the despatch of January 1740, tested on Lit. A (1741) and applied, extended, to the bare Castellane letter and reply"
+  },
+  {
+   "key": "k-duron1911-shift",
+   "target": "duron1911",
+   "how": "rebuilt from",
+   "note": "found by a free substitution anneal and by a sweep of shifts on six alphabets from the ciphertext alone; 102 of 105 text signs give Spanish words; not validated, too short"
   }
  ],
  "sources": [
@@ -9495,6 +9509,10 @@
   {
    "source": "s-cyphersolver",
    "key": "k-hopken1740"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-duron1911-shift"
   }
  ],
  "unlinked": {
