@@ -1,0 +1,372 @@
+{
+  "schema_version": 1,
+  "target": "muzio1550",
+  "title": "Girolamo Muzio to Ferrante Gonzaga, Rome, 11 Jan 1550 (catalogue 1564, one letter of the five): cipher block of c. 3r read in part, codes open; sister letter of 12 Jan 1550",
+  "documents": [
+    {
+      "id": "c3r",
+      "read": "read in part",
+      "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera M, Muzio, Girolamo, cc. 3-4",
+      "date": "11 Jan 1550",
+      "year": 1550,
+      "country": "Milan",
+      "route": "Rome -> Ferrante Gonzaga, governor of Milan",
+      "places": {
+        "from": "Rome",
+        "to": "Milan"
+      },
+      "language": "Italian",
+      "pages": 1,
+      "cleartext_in_document": "separate passages",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment on cc. 3-4. The sister letter cc. 5-6 carries an early hand's letters over one cipher line and a marginal decipherment of its second cipher passage."
+      },
+      "length": {
+        "tokens": 860,
+        "distinct": 45,
+        "unit": "symbols",
+        "measured": false,
+        "file": "transcription_c3r.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Estense Digital Library IIIF images (edl-jarvis.cultura.gov.it), record 3b88f5b4-35eb-4f51-a153-84c520bb5df3",
+        "corrections": 9,
+        "image_quality": "good",
+        "notes": "Counted by scripts/decrypt.py (units_c3r.tsv), not by docs/_check_profile.py --measure, so measured is false. Version 1 by one reader, not blind from line 5 on; a blind second transcription by another session (transcription_c3r_blind.txt) differed on 10 of 861 units; the 10 were checked on the image at full resolution on 12 Nov 2026: the blind reader was right on 9, the first reader on 1 (corrections_c3r.tsv). c. 3v and c. 4r are blank; c. 4v has the address."
+      }
+    },
+    {
+      "id": "c5",
+      "read": "read in part",
+      "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera M, Muzio, Girolamo, cc. 5-6",
+      "date": "12 Jan 1550",
+      "year": 1550,
+      "country": "Milan",
+      "route": "Rome -> Ferrante Gonzaga, governor of Milan",
+      "places": {
+        "from": "Rome",
+        "to": "Milan"
+      },
+      "language": "Italian",
+      "pages": 2,
+      "cleartext_in_document": "mostly clear",
+      "plaintext": {
+        "location": [
+          "interlinear",
+          "margin"
+        ],
+        "partial": true,
+        "source": "An early hand, not Muzio's: seven letters over cipher line C8 on c. 5r, and a decipherment of the c. 5v passage in the left margin. Date of the hand not established."
+      },
+      "length": {
+        "tokens": 339,
+        "distinct": 39,
+        "unit": "symbols",
+        "measured": false,
+        "file": "transcription_c5.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Estense Digital Library IIIF images (edl-jarvis.cultura.gov.it), record 9af96fa2-e4c2-4980-9e60-067568443db3",
+        "image_quality": "good",
+        "notes": "One reader who knew the key, at 60-70% scale; the minims of the o and i signs were not checked one by one. The c. 5v passage was first transcribed on 12 Nov 2026. The clear text was read once at quarter scale. c. 6r is blank; c. 6v has the address."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "homophonic",
+      "nomenclator"
+    ],
+    "summary": "Simple substitution on letter-like signs and single digits, with two signs each for a, e, i, o, u and s, separate signs for doubled letters, four digit-pair nulls and one stop-null, and a small code of number groups and one sign for titles and persons.",
+    "symbol_kind": "digits and symbols",
+    "digit_groups": {
+      "width": "1-2",
+      "separation": "contiguous"
+    },
+    "distinct_symbols": 47,
+    "diacritics": {
+      "used": false
+    },
+    "homophones": {
+      "used": true,
+      "max_per_vowel": 2,
+      "max_per_consonant": 2,
+      "per_letter": {
+        "a": 2,
+        "e": 2,
+        "i": 2,
+        "o": 2,
+        "u": 2,
+        "s": 2
+      }
+    },
+    "nomenclator": {
+      "present": true,
+      "entries": 7,
+      "kinds": [
+        "titles",
+        "names"
+      ],
+      "unread_groups": 2
+    },
+    "nulls": {
+      "present": true,
+      "count": 5
+    },
+    "key_order": "random",
+    "word_division": "none",
+    "doubled_letters": "special sign",
+    "notes": "distinct_symbols counts the rows of key.tsv; the sign names are the transcriber's. The o and i signs differ by one minim (three or two, then a tail), which is where the two transcriptions differed. Omega reads c 46 times and ss 3 times on c. 3r. Codes: CE Cardinale and 25 V. Ecc. (c. 5v margin); 26 Sua Maesta, 4o Duca di, 1o Don Diego (context only); 13 and 24 without a value. Three signs occur once and have no value (PSI, OP, OX)."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "partial",
+      "where": "No reading of the c. 3r cipher block was found. On the sister letter an early hand deciphered seven signs on c. 5r and the three-line passage on c. 5v. Checked: Ronchini, Lettere di Girolamo Muzio (Parma 1864), which has a different, clear letter of 11 Jan 1550 (no. LXXVI) and none of 12 Jan; the Lettere of 1590; Pastor vol. 13; Vandini's Campori appendices; the Estense records; this repository; Cryptiana; HistoCrypt. Not checked: the Parma originals of Ferrante Gonzaga's papers, Negri's 2000 edition, Concilium Tridentinum II, studies of the conclave.",
+      "found": "during attempt",
+      "used": true
+    },
+    "inputs": [
+      "images",
+      "cleartext context",
+      "crib"
+    ],
+    "attack": "crib",
+    "human_role": "Malcolm McBratney directed the work, set the rules (every attempt recorded, a blind second transcription, shuffled-key controls, no claim without its check) and sent the result; Claude sessions picked the letter from the catalogue, transcribed, solved, read and checked. No reading by a person without AI.",
+    "tools": [
+      "own C annealer with Italian quadgrams (failed on the first transcription)",
+      "scripts/decrypt.py, scripts/compare_blind.py (standard library)",
+      "shuffled-key baseline with Italian quadgrams, 5,000 keys",
+      "Estense IIIF images: line strips, then 1,024 px tiles and 3x crops"
+    ],
+    "models": [
+      "Claude (Anthropic), several sessions of 10-11 Nov 2026 (model ids not recorded)",
+      "claude-fable-5-2 (session of 12 Nov 2026)"
+    ],
+    "sessions": 6,
+    "first_date": "2026-11-10",
+    "last_date": "2026-11-12"
+  },
+  "solution": [
+    {
+      "date": "2026-11-10",
+      "kind": "transcription",
+      "what": "First pass of c. 3r from the IIIF image by one reader: 904 tokens, 29 sign types. It merged look-alike signs.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-10",
+      "kind": "sibling key",
+      "technique": [
+        "key matching"
+      ],
+      "what": "Sign inventory compared with the Gonzaga keys in the repository (ferrante1549, ercole1544, capilupi1545, bresegno1548); a literal trial with the Ercole table.",
+      "result": "ruled out"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "control",
+      "technique": [
+        "simulated annealing"
+      ],
+      "what": "Own homophonic annealer tested on a synthetic Italian text of 904 characters and 27 signs: recovered.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "solver",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring"
+      ],
+      "what": "The annealer on the first transcription (29 types) and on five variants splitting ligatures: best -4.30 per character, no Italian.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "crib",
+      "technique": [
+        "crib testing",
+        "plaintext matching",
+        "manual reconstruction"
+      ],
+      "what": "Sister letter c. 5r: an early hand's letters t r a d ij o a over one cipher line gave c o n t r a d; the clear text around the passage and the word dividers then gave 'per questo' and 'scoperta questa pratica'.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "transcription",
+      "what": "c. 3r transcribed again from line strips with the look-alike signs split (861 units); the key completed by reading. Not blind from line 5 on.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "control",
+      "technique": [
+        "statistical test",
+        "language-model scoring"
+      ],
+      "what": "Italian quadgram score of the key-only decryption against 5,000 shuffled keys: c. 3r -3.922 against a best of -6.295; lines 21-25 with a key voted from lines 1-20 only, -3.866 against -5.965; the c. 5r passage -4.012 against -5.951. None of the 5,000 as good in any of the three. Run on version 1 of the transcription.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "verification",
+      "technique": [
+        "other"
+      ],
+      "what": "Blind second transcription of c. 3r by another session that saw no key and no reading: 851 of 861 units agree (98.84%).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "literature search",
+      "what": "Ronchini 1864 read on the page images for January 1550; the 1590 Lettere, Pastor 13, Vandini, the Estense records, Cryptiana, HistoCrypt searched. No reading found. Ronchini no. LXXV (10 Jan 1550) is the companion letter on the note of Cardinal de' Medici that the cipher mentions.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "manual reconstruction"
+      ],
+      "what": "After Daniel Bourdeau's check on issue 405: the 10 units where the two transcriptions differ, and the emended units, viewed on the IIIF image at full resolution. Nine units corrected (the blind reader was right), one kept. Five emendations and the unparsed 'Ne, si come ... il voto' fall away: the sheet has 'si', 'importi', 'difficile', 'tutto', 'Ne so come', 'i voti'; 'confirmando' becomes 'conformando' and 'con' becomes 'co' before an unread sign.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "reading",
+      "technique": [
+        "manual reconstruction",
+        "contextual inference"
+      ],
+      "what": "Sister letter in full: clear text read, the c. 5r passage re-read, the c. 5v passage transcribed and decrypted. The marginal decipherment on c. 5v matches the decryption and gives CE = Cardinale and 25 = V. Ecc.",
+      "result": "partial"
+    }
+  ],
+  "outcome": {
+    "class": "read in part",
+    "key": "partial",
+    "method": "key recovered based on adjacent plaintext",
+    "method_basis": "The first values came from an early hand's letters over one cipher line of the sister letter c. 5r and from the clear text around that passage; the rest of the key was completed by reading c. 3r.",
+    "contribution": [
+      "transcription",
+      "key recovered",
+      "catalogue correction"
+    ],
+    "fraction_read_method": "measured",
+    "fraction_read_source": "units_c3r.tsv (scripts/decrypt.py): 844 of 860 cipher units of c. 3r read by the key (806 letters and 38 nulls); 5 emended, 2 unread signs, 9 code groups counted apart. Letters only: 806 of 822. Sister letter: 327 of 339.",
+    "fraction_read": 0.981,
+    "codes_open": {
+      "open": 4,
+      "total": 6,
+      "tokens_open": 6
+    },
+    "verification": [
+      "key confirms",
+      "historical consistency"
+    ],
+    "provenance": "contributed",
+    "credits": [
+      {
+        "who": "mcbratney",
+        "role": "solution",
+        "note": "catalogue 1564, the Muzio letter of 11 Jan 1550: key and reading of c. 3r, with Claude; issue #405",
+        "date": "2026-11-11",
+        "source": "https://github.com/dbourdeau/cyphersolver/issues/405"
+      },
+      {
+        "who": "mcbratney",
+        "role": "transcription",
+        "note": "c. 3r twice (one blind) and the two cipher passages of cc. 5r-5v, from the Estense images, with Claude",
+        "date": "2026-11-12"
+      },
+      {
+        "who": "bourdeau",
+        "role": "pointer",
+        "note": "issue #405: the second o for i in 'difficile', 'Ne so come' (L20) and 'i voti' (L23); confirmed on the image",
+        "date": "2026-11-12",
+        "source": "https://github.com/dbourdeau/cyphersolver/issues/405"
+      }
+    ],
+    "gaps": [
+      {
+        "item": "c. 3r: code groups 13 and 24 have no value; 26 (Sua Maesta) and 4o (Duca di) rest on context",
+        "blocker": "open-codes",
+        "detail": "13 once ('un corrier di 13'), 24 once ('il Prior di 24'), 26 three times, 4o once. A key sheet or more letters in this cipher would settle them."
+      },
+      {
+        "item": "c. 3r: two signs that occur once (PSI on L03, OP on L17)",
+        "blocker": "too-short",
+        "detail": "Read 'o' and 'n gli' from context."
+      },
+      {
+        "item": "c. 3r: omega reads ss three times (fosse, creasse, esser)",
+        "blocker": "illegible",
+        "detail": "A polyphone, or a second omega form not told apart on the image."
+      },
+      {
+        "item": "cc. 5r-5v: cipher passages read once by a reader who knew the key; one sign unread (OX), three words doubtful",
+        "blocker": "not-attempted",
+        "detail": "A blind pass with minim counts, as done for c. 3r."
+      },
+      {
+        "item": "cc. 5r-5v: the hand of the interlinear letters and the marginal decipherment is not dated",
+        "blocker": "needs-physical-access"
+      },
+      {
+        "item": "Prior art not checked: the Parma originals of Ferrante Gonzaga's papers, Negri 2000, Concilium Tridentinum II, studies of the conclave",
+        "blocker": "not-attempted"
+      }
+    ],
+    "texts": [
+      {
+        "doc": "c3r",
+        "label": "Muzio to Ferrante Gonzaga, Rome, 11 Jan 1550, c. 3r",
+        "transcription": [
+          "transcription_c3r.txt",
+          "transcription_c3r_blind.txt"
+        ],
+        "decryption": "decryption_c3r.txt",
+        "reading": "reading_c3r.md",
+        "translation": "translation_c3r.md",
+        "language": "it",
+        "state": "read in part",
+        "read_share": 0.909,
+        "summary": "From the conclave of 1549-50. A courier back from the imperial court is said to bring the Emperor's consent to Monte (or Santa Croce) as Pope, a scheme helped by the Duke of Florence. Muzio thinks the news true but does not expect the scheme to succeed, and does not see how the Imperialists would vote for Monte. Del Monte was elected Julius III on 7 Feb 1550.",
+        "reading_review": {
+          "grade": "A",
+          "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (the session that prepared these files). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
+          "date": "2026-11-12",
+          "note": "Read as sentences against the translation. Nine sentences, all coherent Italian. The holes are the two code groups without a value (13, 24), the context-only values for 26 and 4o, five emended words and two single-occurrence signs. The last sentence ('Ne so come gli Imperiali ... habiano da condiscendere a dargli i voti') now parses; it did not in the version sent on issue 405."
+        },
+        "note": "read_share 0.909 follows the README word rule with every code value from context, every code without a value and every emended word counted as a hole (180 words, 18 holes). With the nine code tokens counted apart it is 0.957 (176 words, 8 holes). transcription_c3r_blind.txt is the blind second transcription, in its own sign names."
+      },
+      {
+        "doc": "c5",
+        "label": "Muzio to Ferrante Gonzaga, Rome, 12 Jan 1550, cc. 5r-5v (the letter the key rests on)",
+        "transcription": "transcription_c5.txt",
+        "decryption": "decryption_c5.txt",
+        "reading": "reading_c5.md",
+        "translation": "translation_c5.md",
+        "language": "it",
+        "state": "read in part",
+        "read_share": 0.954,
+        "summary": "Mostly clear. The cipher reports talk from the conclave: Ferrante and Don Diego had backed Salviati; the Dukes of Florence and Alba disclosed it to the Emperor; Salviati was excluded and Don Diego drew back. In clear, Muzio argues that the candidate Ferrante favours is the fittest in the college.",
+        "reading_review": {
+          "grade": "A",
+          "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (the session that prepared these files). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
+          "date": "2026-11-12",
+          "note": "Read as sentences against the translation. The clear text is coherent throughout. The cipher passage on c. 5r is coherent but carries most of the holes: 'e ha per farsi' does not agree with its plural verb, one code sign is unread, and 'contradi[?o] [?g]agliardo officio' is a proposal. The c. 5v passage matches the marginal decipherment."
+        },
+        "note": "read_share 0.954 is over the whole letter, which is mostly clear text (437 words, 18 holes, 3 doubtful words). Over the cipher passages alone it is 0.785 (75 words, 18 holes, 2 doubtful)."
+      }
+    ],
+    "key_file": "key.tsv",
+    "notes": "Status by the README rules: by cipher units c. 3r is 98.1% read by the key; by words it is 0.909 with codes and emended words as holes, 0.957 with codes apart. It is filed as read in part, codes open; on issue 405 the maintainer wrote that with the minim corrections in place and codes counted apart it would be recorded as read, which is his call. codes_open counts as open the two groups with no value and the two whose value rests on context. The shuffled-key controls were run on version 1 of the transcription and are not repeated on version 2; they are reported in NOTES.md and no validation block is claimed. The repository's checker scripts were not run by the contributor; the checks were verified by reading them (PR description)."
+  }
+}

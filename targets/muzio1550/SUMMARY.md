@@ -1,0 +1,11 @@
+# Summary and context
+
+**Letter of 11 Jan 1550 (c. 3r).** Written from Rome during the conclave that followed the death of Paul III. All of the news is in cipher. Muzio tells Ferrante Gonzaga, governor of Milan, that a courier has come back from the imperial court, sent to ask the Emperor (code 26, our proposal) to accept either Santa Croce (Marcello Cervini) or Monte (Giovanni Maria del Monte) as Pope, a scheme helped by the Duke of Florence, and that the answer seems to be that the Emperor accepts Monte. His source is "the Prior of [24]", whose account squares with a note of the Cardinal de' Medici that Muzio reports in another letter sent with this one. Muzio thinks the news true but the scheme hard: given the authority of "our Cardinal", his bond with Ferrara, and Ferrara's standing with the French, he does not expect it to succeed, and he does not see how the Imperialists, who have no liking for Monte, would give him their votes when they know this is not the Emperor's real wish. In clear he adds that the cardinals are having the conclave opened on the Belvedere side to take the air, a sign that they mean to take their time.
+
+**Letter of 12 Jan 1550 (cc. 5r-5v).** Mostly clear. The cipher passage reports talk from the conclave: Ferrante and Don Diego had backed Salviati, to become Duke of Milan and master of Siena; the Dukes of Florence and Alba disclosed this to the Emperor; Salviati was excluded; Don Diego then drew back and worked against him, and "our Cardinal" cooled. In clear, Muzio argues that the candidate Ferrante favours is the fittest in the college and that the Emperor could not fairly take offence.
+
+**What happened.** Del Monte was elected on 7 Feb 1550 as Julius III.
+
+**Companion letter in print.** Ronchini, Lettere di Girolamo Muzio (Parma 1864), no. LXXV, pp. 132-133, 10 Jan 1550: "Per una cedula del Card.le di Medici ... s'intende che il Car.le Farnese ha preso a favorire Monte". This is the letter "che vien con questa" on the Medici note. Ronchini prints neither cipher text.
+
+The identifications of persons (the Emperor for 26, Ercole Gonzaga for "our Cardinal", Ippolito d'Este for "Ferrara", Diego Hurtado de Mendoza for Don Diego) are ours, from context, and are not checked against a study of the conclave.
