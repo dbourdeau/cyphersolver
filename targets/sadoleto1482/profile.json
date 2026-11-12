@@ -659,6 +659,13 @@
       "what": "Consistency pass (cl): outcome.gaps now mirrors the six NOTES Remaining gaps lines (R1106 and R1103 decoded-not-read lines added, both illegible); documents[].read R1106 read -> read in part (texts state decoded, not read). 'Read in part' stays unjustified: R1101's full collation is genuinely undone (not-attempted) and the known-keys and retry steps are not done; NOTES already Status: in progress.",
       "result": "partial",
       "technique": ["statistical test"]
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": ["key matching", "plaintext matching"],
+      "what": "Brice Dudout (Claude Opus 5.5): R1101 first original page (Vestigia 1284 photo 103) ll. 1-8 transcribed blind with key_working.md and frozen by SHA-256 before any look at 7a; held-out portion ll. 2-8 (79 words, 306 cipher letters) pre-registered. One measure against 7a (Vestigia 1283 photo 101): character agreement 0.764, word 0.608, 500 controls below (random keys max 0.178, shuffled 7a max 0.295); criterion >= 0.85 not met, so the key is not re-validated by this test. Collated word by word with 7a: 52 sure, 14 probable, 8 restored, 2 unresolved of 76 words (97.4% read by sense; blind alone 73.4%). Proposed, not added to the key: a tt sign, a c variant, a con/cum sign, one group for the royal title (dudout/).",
+      "result": "partial"
     }
   ],
   "outcome": {"validation": {"date": "2026-10-11", "verdict": "not applicable", "notes": "no sign-level transcription in the folder; only plaintext editions and anchor words"}, 
@@ -709,7 +716,8 @@
       }
     ],
     "credits": [
-      {"who": "contemporary", "role": "key or decipherment used", "note": "clear copy 7a of R1101 and decipherment 13a of R1104 (key built from them); clear copies 26a/26b of R1106"}
+      {"who": "contemporary", "role": "key or decipherment used", "note": "clear copy 7a of R1101 and decipherment 13a of R1104 (key built from them); clear copies 26a/26b of R1106"},
+      {"who": "dudout", "role": "verification", "note": "R1101 first page ll. 2-8: blind transcription with the target's key, one pre-registered measure against 7a (0.764, key not re-validated), then word-by-word collation with 7a: 97.4% of words read by sense (dudout/)", "date": "2026-11-12"}
     ],
     "texts": [
       {
@@ -718,14 +726,15 @@
         "decryption": [
           "r1101_final_parallel.md",
           "r1101_queen_parallel.md",
-          "alignment_r1101.md"
+          "alignment_r1101.md",
+          "dudout/r1101_p1_reading.md"
         ],
         "summary": "Nicolò Sadoleto, Ferrarese envoy to Matthias Corvinus, to Ercole I d'Este: urging the King to join the league and take up 'questa impresa', for love of the league and to humble [the Venetians] once for all. Read at the time: the contemporary clear copy 7a; the files are partial parallel readings of the cipher against it.",
         "reading_review": {
           "grade": "B",
           "by": "Claude (reading audit)",
           "date": "2026-10-22",
-          "note": "r1101_final_parallel.md: the seven lines build an Italian sentence (that he join and take up this enterprise and not let pass this opportunity ... to abase the Venetians once so that they learn to keep within their bounds), confirmed against the contemporary clear copy 7a; three words are M restorations and one code group (W01 = Venetiani by position). Covers this block only, not every cipher passage of the letter."
+          "note": "r1101_final_parallel.md: the seven lines build an Italian sentence (that he join and take up this enterprise and not let pass this opportunity ... to abase the Venetians once so that they learn to keep within their bounds), confirmed against the contemporary clear copy 7a; three words are M restorations and one code group (W01 = Venetiani by position). Covers this block only, not every cipher passage of the letter. 12 Nov 2026, Brice Dudout (Claude Opus 5.5): dudout/r1101_p1_reading.md, first page ll. 2-8, reads as Italian sentences (the King's terms: money for half of 10,000 horse and 10,000 foot for one year, then a third for two years), collated word by word with 7a; 52 sure, 14 probable, 8 restored, 2 unresolved of 76 words."
         },
         "state": "read",
         "language": "it",
