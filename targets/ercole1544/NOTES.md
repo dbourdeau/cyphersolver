@@ -259,3 +259,16 @@ The server rejects outputs above about 2 megapixels. Use `/full/,1900/0/default.
 - [ ] print: web searches only; Murphy, Furlotti, Solmi and the Mantua copialettere not opened
 - [x] key-rebuild: table rebuilt with no table as input, 19 of 20 signs agree; working key recounted on the third state
 - [ ] retry: third pass done for g against z, n/u after p, the superscripts and each repair site; not a fresh pass of c. 175r or G02-G07
+
+## Catalogue 1554, c. 114r: second transcription and reading in part (Brice Dudout, 12 Nov 2026)
+
+Brice Dudout, with Claude Opus 5.5, made a second transcription of c. 114r (letter 2) from the full-resolution
+tiles, without opening the transcription or decryption above; like WAINUT's transcribers he knew the table. A
+measure frozen in advance (`dudout/PREREG_0114r.md`) applied `key_frozen.tsv` unchanged to it: 0.605 of the
+decoded letters fall in Italian words, against at most 0.416 for 200 shuffled tables, so the key holds on new
+text and on another reader's signs. The two transcriptions agree on 72.8% of 470 aligned positions before
+settling, a first measure of the transcription error on a whole 1554 page. Read from both: 117 words, 50 sure,
+46 probable, 21 unread (42.7% sure, 82.1% sure + probable): **c. 114r is read in part**; the other six letters
+are unchanged. The letter concerns count Giovan Tommaso (Pico), don Diego and the Mirandola dispute: he is
+resolved to come to court and disturb the negotiation. Files and the open places: `dudout/README.md`. Key and
+first transcription: WAINUT.

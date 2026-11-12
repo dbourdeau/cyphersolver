@@ -636,6 +636,18 @@
     "role": "transcription",
     "note": "catalogue 1554: cc. 113r-120v from the Estense images, decoded, not read",
     "date": "2026-11-03"
+   },
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "note": "catalogue 1554, letter 2, c. 114r: second transcription, independent of WAINUT's (both knew the table); the two agree on 342 of 470 aligned positions (72.8%); dudout/",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "catalogue 1554, c. 114r: WAINUT's frozen key applied unchanged to the new transcription passes a pre-registered held-out measure (0.605 against 200 shuffled tables, max 0.416); c. 114r read in part (50 sure + 46 probable of 117 words) with WAINUT's key and first transcription; dudout/",
+    "date": "2026-11-12"
    }
   ],
   "gaps": [
@@ -777,11 +789,26 @@
    {
     "doc": "ercole-1554-c114",
     "label": "Catalogue 1554, Letter 2, c. 114r: the count of Mirandola and count Giovan Tommaso",
-    "transcription": "transcription_0114r.txt",
-    "decryption": "decryption_0114r.txt",
+    "transcription": [
+     "transcription_0114r.txt",
+     "dudout/transcription_0114r_dudout.txt"
+    ],
+    "decryption": [
+     "decryption_0114r.txt",
+     "dudout/decryption_0114r_dudout.txt"
+    ],
+    "reading": "dudout/reading_0114r.md",
+    "translation": "dudout/translation_0114r.md",
     "language": "it",
-    "state": "decoded, not read",
-    "summary": "Seems to concern count Giovan Tommaso, don Diego and the count of Mirandola going to court. Decoded, not read."
+    "state": "read in part",
+    "read_share": 0.427,
+    "summary": "The count of Mirandola reports that count Giovan Tommaso, working through don Diego to be taken into favour so as to make the count yield to his claims in Mirandola, is resolved to come to court and disturb the negotiation; the writer tells Vostra Excellentia so that he knows in what spirit the count comes. Read in part (Brice Dudout, 12 Nov 2026) from two transcriptions, WAINUT's and an independent second one.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Brice Dudout (Claude Opus 5.5)",
+     "date": "2026-11-12",
+     "note": "Read in part as Italian sentences from both transcriptions: 117 words, 50 sure (both transcriptions give the signs), 46 probable (transcriptions differ or a look-alike sign chosen by sense, not settled on crops), 21 unread; 42.7% sure, 82.1% sure + probable (dudout/count_0114r.txt). Sentences run in B01-B08 and B10; B09 has an eight-word hole."
+    }
    },
    {
     "doc": "ercole-1554-c115",
