@@ -153,7 +153,7 @@
     ],
     "sessions": 2,
     "first_date": "2026-09-21",
-    "last_date": "2026-09-30"
+    "last_date": "2026-11-12"
   },
   "solution": [
     {
@@ -272,7 +272,9 @@
       "result": "partial",
       "technique": ["statistical test"]
     },
-    {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 3 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+    {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 3 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
+    {"date": "2026-11-12", "kind": "reading", "technique": ["manual reconstruction", "contextual inference"], "what": "Fuller reading of R912 pp. 2-3 from the figures of tr/R912_p2-p3 with the corrected R639 table (the DECODE page images need a login and were not re-read): fifteen holes worked (texts/R912_fills_2026-11-12.tsv, each row checked against tr/ and decode_tr.py). Read directly: 'les motifs de vostre commerce' (no group stood in the hole), 'parlé', 'en escrivant', 'l'a en mesme temps', 'du retour de vostre amitié', p. 3 'suit dans son procédé, tant [?à] l'égard de Vostre Altesse que de Monsieur le Palatin de Belz, son attachement pour les intérêts de l'Empereur' (over p. 3 ll. 1-2 the 1707 interlinear gives these groups mechanically, 'son propos' and 'ce de tant st le garde', and does not read 'procédé', which rests on the analogy of 344 propos for pro- with 343 present for pre-); 559 at the head of p. 2 l. 5 dropped as a line-opening filler. Five look-alike alternates, listed in texts/R912-R922_corrections.tsv: 177 -> 197 est, 195 -> 175 de, 328 -> 326 po (twice, 'points', 'qu'on n'estoit point'), 267 -> 265 lettre. The earlier unmarked j' for group 93 is now shown as [93]. read_share (v10 share) 0.946 -> 0.957 (803 -> 831 words, 46 -> 37 holes). One web search for a printed text (12 Nov 2026): none found.", "result": "worked"},
+    {"date": "2026-11-12", "kind": "verification", "what": "Blind review of the 12 Nov reading by an independent AI language-model agent (grade B; the DECODE page images of pp. 2-3 need a login, so no sign was checked on the image): fills checked against tr/ and the R639 table, measures reproduced. Changes made after it: the five look-alike words marked [?est], [?de], [?points], [?point], [?lettre] in the reading and the translation; the procédé note corrected (the interlinear does not read it); the dropped group 129 (au) in 'Altesse, en escrivant' noted; the 'au premier ... au second' paragraphs joined. read_share 0.946 -> 0.952 (803 -> 826 words, 46 -> 42 holes). _check_reading on the whole file 0.707 -> 0.688 (the doubtful marks and the Notes section count); on the Reading section alone 0.500 -> 0.507. reading_review of R912 replaced (the 23 Oct review, grade B, described the earlier reading).", "result": "worked"}
   ],
   "outcome": {
     "method": "read after matching with key from external sources",
@@ -303,6 +305,12 @@
         "who": "contemporary",
         "role": "key or decipherment used",
         "note": "Bonac-Groffey key sheet (DECODE R639, G15 Fasc. 44/08); R852's clear copy; R912/R922 partial interlinears"
+      },
+      {
+        "who": "lccompany",
+        "role": "solution",
+        "note": "R912 pp. 2-3: fifteen holes of the reading worked from the figures (texts/R912_fills_2026-11-12.tsv, five look-alike alternates in texts/R912-R922_corrections.tsv); read_share 0.946 -> 0.952",
+        "date": "2026-11-12"
       }
     ],
     "key": "recovered",
@@ -341,17 +349,17 @@
         "decryption": "R912_image_read.txt",
         "summary": "A survey of Polish and Swedish politics for Rákóczi: King Stanisław, the Palatine of Belz and the Grand Hetman, the Muscovites, the King of Sweden's pacification and a new election, the Tsar, Rákóczi's letter to Rehnskiöld, Tököly; Charles XII will not enter Muscovy before the coming campaign. About half was deciphered between the lines at the time; the rest deciphered here with the corrected R639 key.",
         "language": "fr",
-        "state": "read in part",
+        "state": "read",
         "reading": "texts/R912_reading.md",
         "translation": "texts/R912_en.md",
         "reading_review": {
           "grade": "B",
-          "by": "Claude Opus 5.5",
-          "date": "2026-10-23",
-          "note": "Read 23 Oct 2026 (b22): p. 1 from the 1707 interlinear read on the image (texts/R912_interlinear_p1.txt) checked against the figures, seven figure corrections seen on the image (texts/R912-R922_corrections.tsv); ll. 16-18 and pp. 2-3 from the figures with the corrected R639 table, word division and normalisation by hand. 13 letters rest on a look-alike alternate (not re-read on the image). p. 1 and the end of p. 3 build fully; p. 2 keeps runs of holes (ll. 3-7, 14-22, 26-31). b17_score on the body 0.783 (54/69), explicit holes 0.899; the image read 0.25."
+          "by": "independent AI language-model agent (blind review)",
+          "date": "2026-11-12",
+          "note": "Read at 0.952 with five look-alike words doubtful; pp. 2-3 not checked on the image (DECODE login). The new places of pp. 2-3 read as sense, the p. 3 passage on the court's conduct most strongly, and 17 of 18 sentences hold at no more than about one hole in ten words (the weak one is the passage on Tekeli)."
         },
-        "read_share": 0.946,
-        "note": "24 Oct 2026: 94.6% of the words of texts/R912_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
+        "read_share": 0.952,
+        "note": "24 Oct 2026: 94.6% of the words of texts/R912_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part. 12 Nov 2026: fuller reading of pp. 2-3 (texts/R912_fills_2026-11-12.tsv): 95.2% (826 words, 42 holes, the five look-alike words marked [?word]); over the read bar, narrowly, so read."
       },
       {
         "doc": "R852",
@@ -377,9 +385,14 @@
     ],
     "gaps": [
       {
-        "item": "R912 p. 2 ll. 3-7, 14-22, 26-31 and p. 3 ll. 2-3: runs of holes in the reading",
+        "item": "R912 pp. 2-3: the holes left after the 12 Nov 2026 fuller reading (p. 2 ll. 3, 5, 7, 14, 18, 21, 26, 28-31; p. 3 l. 3) and the five look-alike alternates adopted then",
         "blocker": "not-attempted",
-        "detail": "the groups as transcribed on 21 Sept give no French under R639 there; re-read those lines on IMG_R912_I4878/I4879 (DECODE cookie) and test look-alike readings"
+        "detail": "worked from the 21 Sept transcription only; the DECODE page images IMG_R912_I4878/I4879 return a permissions placeholder without a DECODE login (12 Nov 2026); re-read those lines, the closing figures of p. 3 and the look-alike groups (177, 195, 267, 328 x2; 177 may be 175 de as well as 197 est), p. 3 l. 1 'procédé' (344 propos read for pro-) and the group 129 (au) left out of 'Altesse, en escrivant' (p. 2 ll. 9-10) on the images"
+      },
+      {
+        "item": "printed editions of Rákóczi's correspondence (e.g. Archivum Rákóczianum) not checked for these letters",
+        "blocker": "not-attempted",
+        "detail": "one web search only (12 Nov 2026)"
       },
       {
         "item": "a clear letter under the R922 sheet (fascicle p. 350): possibly a clear copy",
