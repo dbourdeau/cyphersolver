@@ -298,14 +298,14 @@ record: the pull request is a single commit.
   | No. 18, 20 September 1814 | 312 | 13 | 0.958 | read |
   | No. 19, 27 October 1814 | 106 | 6 | 0.943 | read in part |
   | Cevallos to Morris, 20 November 1814 | 312 | 12 | 0.962 | read |
-  | No. 24, 30 December 1814 | 131 | 3 | 0.977 | read |
+  | No. 24, 30 December 1814 | 131 | 4 | 0.969 | read |
   | No. 25, 6 January 1815 | 74 | 0 | 1.000 | read |
   | No. 26, 27 January 1815 | 46 | 2 | 0.957 | read |
   | 24 March 1815 | 779 | 18 | 0.977 | read |
   | No. 28, 12 May 1815 | 71 | 0 | 1.000 | read |
 
   Frame 0039 stays at 0.965 (Andrew Beling's count by the same rule, PR #200; a recount here gives 353 words, 13
-  holes, 0.963). All thirteen texts: 2,631 coded words, 85 holes, 0.968. The contributor's figures for the five
+  holes, 0.963). All thirteen texts: 2,631 coded words, 86 holes, 0.967. The contributor's figures for the five
   PR #415 letters, 0.981, 0.955, 0.980, 1.000 and 1.000, are shares of groups (`beling/scripts/read_share.py`), not of
   words. The verifier's word count before the three inferences were marked was 0.965, 0.953, 0.978, 1.000, 1.000.
   The target as a whole is read in part: three texts are under 0.95 and the open places are listed under Remaining gaps.
@@ -358,6 +358,15 @@ three are read here, so the entry leaves the catalogue.
 None is proposed from this page alone. Candidates to test on more Morris text: 670 Florida(s) (JQA 970), 1566
 colonies (JQA 66), 361 comma (JQA 1261, as in Ellis 1839), 652 the figure 1 (JQA 952). 721 (JQA 821) dem is grade I
 in the table (a slot inference); it fits here (democratic).
+
+### Claims review by a second reader (12 Nov 2026)
+
+- "relative" in No. 24 (145 with a stroke; the key value is "June") is now marked [?relative] and counted as a hole,
+  as the same group is in No. 18: No. 24 is 131 words, 4 holes, 0.969; all thirteen texts 2,631 words, 86 holes, 0.967.
+- Frame 0039: the recount used in the total is 353 words, 13 holes, 0.963; 0.965 is the contributor's count.
+- The mechanical decode of frame 0039 shown on the page is the first one, of 27 October, made with the rebuilt Adams
+  table; the letter decodes use the code sheet file.
+- The mark example on the page corrected: dispose with one stroke, then -it-ion (140 = it).
 
 ## Remaining gaps
 
