@@ -46,7 +46,7 @@ Before that, on 28 Oct 2026, a search without a crib (joint annealing of both ke
 
 On 3 June 1940, to protect army unloadings, seven Flak units of Flugabwehrkommando Schwarzwald moved into position at railway stations and towns of the Black Forest and reported ready to fire: II./2./942 from Immendingen station to Sankt Georgen station (19.45), II. 2./851 from Bodersweier to Triberg (20.30), II./4./251 from Hattingen to Peterzell (20.45), II./10./351 from Ettlingen to Haslach (20.45), I./Light Reserve Flak Battery 453 from Horb to Marbach (21.00), I./3./851 from Ichenheim to Hornberg station (21.00) and 4./321 (Eis) from Hüfingen to Villingen (4 June, 04.35). Signed "Flugabw.Kdo. Ic Nr. F 225/40 g.Kdos.". The radio text differs from the teleprinter copy only in spelling: Sankt for St., zehn for 10, ditto marks written out, and a file number that the teleprinter copy does not have.
 
-Count: 129 words, 124 certain, 5 probable (SEIT in part 4; NAQ, JUNI, NR, STRIQ in part 5), none restored or unresolved. The text was known from frame 0862; what is new is the key of 4 June 1940.
+Count: 129 words, 124 certain, 5 probable (SEIT in part 4; NAQ, JUNI, NR, STRIQ in part 5), none restored or unresolved. By the README rule (guessed words are holes) the read share is 124 of 129 = 96.1% (integration check, 12 Nov 2026); 129 of 129 is the contributor's own figure. The text was known from frame 0862; what is new is the key of 4 June 1940.
 
 ## Count
 

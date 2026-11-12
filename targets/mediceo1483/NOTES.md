@@ -79,6 +79,10 @@ before any decoding: Siena no. 11 96.4 %, MAP LXXII 183 65.3 %, Dieci 1414 49.4 
 So Lasry's key reads this sign family **in part, by our protocol**. The family is used by more than one Medici correspondent: Acciaiuoli in
 Rome in 1478, Rucellai in 1485, and the writer of 2309.
 
+### Integration check (12 Nov 2026)
+
+The figures of tests 2 and 3 agree between `validation.txt`, `validation/xlviii294_306r_H3_measure.txt`, NOTES and the profile; they were not re-run, because the clear copy (c. 276) is deliberately not published and the project holds no copy, so no one else can repeat the tests (a gap below). The gain of D1 on the whole-portion agreement is small (0.6519 with, 0.6390 without). The read share is kept as certain plus probable words only (about 35%); restored words are holes.
+
 ## Reading (`transcription/`, `decryption/`, `reading/`, `translation.md`)
 
 Read word by word on the decoding with K_SIENA11_D1 (10 Nov 2026), then again with K_SIENA11_D1_TRI (12 Nov 2026), Daniel's
@@ -103,6 +107,7 @@ XLVIII 294 test portion, and 672 letters for XLVIII 214 against the published 66
 
 - about 55-65 % of the letter (46 unresolved stretches and the 11 restored words) - blocker: open-codes; the text decodes with the key but long stretches do not read as words; 13 sign forms of 2309 are not in the key (TRI now is), and PIBAR = n and the nulls DIV, OO, ST are untested proposals
 - PLUS alone: aligned twice on "c" in test 3, an observation made after the measurement (the pre-registered "o" failed) - blocker: open-codes; needs another letter of the "##" family with a clear (XLVIII 294 is used up; XLVIII 158 is too short)
+- the clear copy c. 276 used for tests 2 and 3 is not published, so the tests cannot be repeated outside - blocker: needs-physical-access; the ASF filza is the only source
 - the key is partial (0.6419 and 0.6519 against 0.85) and the transcription was made at 1272 px - blocker: needs-physical-access; a higher-resolution image of XLVIII 214 from the ASF would settle doubtful forms
 - date, writer and addressee - blocker: open-codes; nothing on the leaf; the names read (conte Antonio, conte Carlo) do not settle the date
 

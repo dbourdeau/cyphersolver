@@ -256,7 +256,7 @@
    "technique": ["statistical test"]
   },
   {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
-  {"date": "2026-11-12", "kind": "verification", "technique": ["key matching", "contextual inference"], "what": "Brice Dudout (Claude Opus 5.5): f. 120 r c15-c19, c24-c31, v c03-c05 re-read sign by sign on Gallica views 246-247 (full resolution), transcription frozen by SHA-256 before decoding: 8 signs changed (w -> w2 'il m'est', 9 -> q+ 'spe[ci]alement', ls -> S 'au ser[v]ice', B -> 6b, two v-with-bar signs, an 8-shaped g), 13 doubtful signs listed. One pre-registered measure on the 16 lines (453 tokens, key unchanged): 0.903 vs 0.909 for the earlier transcription, every one of 400 controls below (permuted keys max 0.428, shuffled text max 0.695): corrections neutral for the measure. Reading counted with the 95% rule: 88.3% -> 90.0% of letters sure or probable (dudout/README.md).", "result": "partial"}
+  {"date": "2026-11-12", "kind": "verification", "technique": ["key matching", "contextual inference"], "what": "Brice Dudout (Claude Opus 5.5): f. 120 r c15-c19, c24-c31, v c03-c05 re-read sign by sign on Gallica views 246-247 (full resolution), transcription frozen by SHA-256 before decoding: 8 signs changed (w -> w2 'il m'est', 9 -> q+ 'spe[ci]alement', ls -> S 'au ser[v]ice', B -> 6b, two v-with-bar signs, an 8-shaped g), 13 doubtful signs listed. One pre-registered measure on the 16 lines (453 tokens, key unchanged): 0.903 vs 0.909 for the earlier transcription, every one of 400 controls below (permuted keys max 0.428, shuffled text max 0.695): the second pre-registered criterion (re-read >= earlier transcription) FAILED, the corrections rest on the sign forms and not on a score. Reading counted with the 95% rule: 88.3% -> 90.0% of letters sure or probable (89.4% sure only; both under 95%) (dudout/README.md). Integration check 12 Nov 2026: measure and counts reproduced; line r28 spot-checked on the Gallica image.", "result": "partial"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -301,9 +301,9 @@
     "detail": "No person has checked the transcription; the inferred values rest on context in this letter only."
    },
    {
-    "item": "fr. 15573 f. 120: decoded, not read",
-    "blocker": "not-attempted",
-    "detail": "re-read 23 Oct 2026 (b21): partial reading f120_harumi/f120_reading.md (checker 0.50, explicit holes 0.647); r c15-c19, c24-c31, v c03-c05 still to re-read sign by sign on Gallica btv1b90618780 view 246-247"
+    "item": "fr. 15573 f. 120: decoded, not read (90.0% of letters by the 95% rule after the 12 Nov 2026 image round; 89.4% sure only)",
+    "blocker": "illegible",
+    "detail": "r c24-c31 read in part; 13 signs still doubtful between forms the hand does not separate (dudout/README.md); re-read 23 Oct 2026 (b21) and 12 Nov 2026 (Dudout) sign by sign on Gallica btv1b90618780 views 246-247"
    },
    {
     "item": "fr. 15573 f. 385: decoded, not read",

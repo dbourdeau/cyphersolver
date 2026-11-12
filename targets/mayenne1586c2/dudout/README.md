@@ -57,8 +57,8 @@ Script `scripts/measure_reread.py`, output `measure_result.txt`.
 | 200 permuted keys | median 0.124, max 0.428 |
 | 200 shuffled texts | median 0.550, max 0.695 |
 
-(1) holds (0 of 400 controls reach 0.903, p = 1/401). (2) does not (three tokens fewer). By the pre-registration the
-eight corrections are reported as **neutral for the measure**: they rest on the sign forms, not on a score. The measure
+(1) holds (0 of 400 controls reach 0.903, p = 1/401). (2) does not (three tokens fewer): the pre-registered criterion
+**failed**. The eight corrections are reported as not shown by the measure: they rest on the sign forms, not on a score. The measure
 cannot see the gains below, which are word-level ("il m'est", "alement", "ser-ice"), not lexicon runs.
 
 ## The reading, counted with the 95% rule

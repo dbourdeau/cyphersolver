@@ -262,6 +262,15 @@
    "kind": "verification",
    "what": "Brice Dudout: six doubtful letters checked on the images (three n in part 1, two r and one o in part 5); the decryption reads 129 of 129 words as German sentences, 5 probable (g/q and m/n ambiguous, one letter not checked); compared letter by letter with Harumi-Matsuba's transcription: 7 differences in 953 letters.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Integration check (12 Nov 2026): an own decoder written from dudout/key_0604.txt gives the contributor's strings letter for letter on all five parts (928 letters); the frozen files' SHA-256 match; all 179 letters of frame 0863 (part 1) agree with the NARA image (parts 2-5 not compared). The read share is recounted by the README rule, which counts the 5 probable words as guessed: 124 of 129 = 0.961 (the contributor's figure, 129 of 129, is his own). The order of events (key public 11 Nov 08:28 UTC, test 23:24 CET the same day, comment found 12 Nov) rests on the contributor's record.",
+   "result": "worked",
+   "technique": [
+    "key matching"
+   ]
   }
  ],
  "outcome": {
@@ -407,13 +416,13 @@
     "translation": "dudout/translation.md",
     "language": "de",
     "state": "read",
-    "read_share": 1.0,
+    "read_share": 0.961,
     "summary": "A secret command message: to protect army unloadings, seven Flak units of Flugabwehrkommando Schwarzwald moved into position on 3-4 June 1940 at railway stations and towns of the Black Forest (Sankt Georgen, Triberg, Peterzell, Haslach, Marbach, Hornberg, Villingen) and report the hour from which each was ready to fire; signed Flugabw.Kdo. Ic Nr. F 225/40 g.Kdos. The text is that of the teleprinter copy on frame 0862; the key of the day is the new result.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5 agent of Brice Dudout (one reader)",
      "date": "2026-11-12",
-     "note": "Read the decryption as German sentences: all five parts divide into words with the 17 May conventions and agree with the teleprinter copy on frame 0862 entry by entry (places, units, hours), differing only in spelling (Sankt, zehn, ditto marks written out, a file number). 124 words certain, 5 probable on single doubtful letters (g/q, m/n, one c for e). Grade A: the text reads without holes; reservation: AI transcription, no human reader."
+     "note": "Read the decryption as German sentences: all five parts divide into words with the 17 May conventions and agree with the teleprinter copy on frame 0862 entry by entry (places, units, hours), differing only in spelling (Sankt, zehn, ditto marks written out, a file number). 124 words certain, 5 probable on single doubtful letters (g/q, m/n, one c for e); by the README rule the probable words count as guessed, so 124 of 129 words (0.961) read. Grade A: the text builds sentences with no hole; reservation: AI transcription, no human reader, and the text was known from the teleprinter copy on frame 0862."
     }
    }
   ]

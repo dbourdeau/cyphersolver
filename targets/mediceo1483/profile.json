@@ -134,6 +134,12 @@
    "kind": "reading",
    "what": "2309 decoded again with K_SIENA11_D1_TRI (Lasry's key + D1 + TRI = che) and re-read: 46 certain, 13 probable, 11 restored words, 46 unresolved stretches (was 39 / 13 / 11 / 45); about 35-45 % of the letter read.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Integration check: the figures of tests 2 and 3 agree between validation.txt, the measure file, NOTES and the profile; not re-run (the clear copy c. 276 is not published). Whole-portion agreement gain from D1 is small (0.6519 with, 0.6390 without). Read share kept as certain + probable words only.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -184,7 +190,7 @@
     "date": "2026-11-10"
    }
   ],
-  "key_file": "key/K_SIENA11.tsv",
+  "key_file": ["key/K_SIENA11.tsv", "key/K_SIENA11_D1_TRI.tsv"],
   "gaps": [
    {
     "item": "about 55-65 % of the letter (46 unresolved stretches, 11 restored words)",
@@ -195,6 +201,11 @@
     "item": "PLUS alone (aligned twice on 'c' in the 12 Nov test, after the pre-registered 'o' failed)",
     "blocker": "open-codes",
     "detail": "needs another letter of the '##' family with a clear; XLVIII 294 is used up and XLVIII 158 is too short"
+   },
+   {
+    "item": "the clear copy c. 276 of XLVIII 294, used for tests 2 and 3, is not published",
+    "blocker": "needs-physical-access",
+    "detail": "no one outside can repeat the tests; the ASF filza is the only source"
    },
    {
     "item": "key partial (0.6419 and 0.6519 against 0.85); transcription at 1272 px",

@@ -1,6 +1,6 @@
 # Sormano and de Vaulx to François I, Ferrara, February 1529
 
-Status: in progress (23 Oct 2026, consistency pass: no. 63 from f. 115r l. 28 and no. 65's doubtful words are still to re-read sign by sign, not-attempted). Read in part.
+Status: in progress (12 Nov 2026: no. 63 from f. 115r l. 28 and no. 65's doubtful words re-read sign by sign by Brice Dudout; no. 63 ff. 115-116 read in part, 94.5% of words in the re-read stretch, under the bar). Read in part.
 
 23 Oct 2026, re-read (batch b23, Claude Opus 5.5, REREAD_BRIEF): **no. 66 now reads** (`no66_reading.md`,
 `no66_en.md`, log `no66_reread_log.md`, `no66_corrections.tsv`). Every cipher stretch of ff. 121r-122r was re-read sign
@@ -161,8 +161,11 @@ Point to recheck: on f. 123r the crossbarred long-s behaves as a null three time
 not changed until the sign is compared on the two leaves.
 
 ## Remaining gaps
-- no. 63 f. 115r from line 28 to f. 116v, cipher runs not yet re-read sign by sign (f. 115r lines 1-27 re-read 23 Oct 2026, no63_reading.md) - blocker: not-attempted; the IIIF master is legible and the key with no. 66's values reads it (no63_reread_log.md)
-- no. 65, about a dozen words marked (?) or in braces (foot of f. 119r, foot of f. 119v, f. 120r) - blocker: not-attempted; no. 66's re-read shows these signs are legible (e.g. no. 65's {B} = rr), so "illegible" no longer holds
+- no. 63 f. 115r from line 28 to f. 116v, 25 unresolved groups (e.g. the reason of the duke of Calabria's claim, il marchese di Mantoa, mantener gli [?] oficio) and look-alike letters chosen by sense - blocker: illegible; the hand leaves T/b, pi/e, Y/y open (dudout/DOUTES.md)
+- the looped b-sign: z in no. 63 and once in no. 65, rr in no. 66 and twice in no. 65 - blocker: no-key-material; either two signs merged or two values, not settled
+- code signs R and I of no. 63 (probably Fiorentini and Imperatore) read from sense alone, not added to the key - blocker: open-codes
+- no. 63 f. 115r lines 1-27 read only in part (no63_reading.md) - blocker: not-attempted; the 12 Nov re-read began at line 28
+- no human has compared the sign files of the 12 Nov re-reads with the images - blocker: needs-physical-access
 - no. 63 f. 123r, three signs before "ricaduto" (V 7 4 = a e i, no word) - blocker: illegible; read as written they give no word, and context alone is not used to fill them
 
 Closed (taken out of the open list, 23 Oct 2026): no. 66's own cipher stretches - closed 23 Oct 2026: read (no66_reading.md); two code signs ([Papa], [?Imperatore]) identified from context only
@@ -177,6 +180,8 @@ Closed (taken out of the open list, 23 Oct 2026): no. 66's own cipher stretches 
 
 ## 12 Nov 2026 — no. 63 f. 115r (line 28)-116v re-read (Brice Dudout, Claude Opus 5.5)
 
+Integration check (12 Nov 2026): an English translation of the re-read stretch was added (`dudout/no63_reread_en.md`, ours, not the contributor's); the measures and counts in `dudout/` reproduce (0.919 and 0.990; shuffled-text controls 0.853 and 0.901, so the honest margin is against the shuffles); a decode of the first lines of the sign file gives Italian. By the README rule on words the stretch is 94.5% sure or probable (88.4% sure only), under the 95% bar: no. 63 ff. 115-116 is read in part, not read. The state recorded below as "left to the maintainer" is settled that way. The sign files were made line by line with the key in mind (declared) and were not compared with the images by the project.
+
 The first remaining gap was worked in `dudout/`. Every cipher sign from f. 115r line 28 to the foot of f. 116v was
 transcribed on Gallica views 119-121, and the transcription was frozen by SHA-256 before decoding with Lasry's key
 and no. 66's values. One pre-registered measure on the stretch (3787 cipher-sign tokens, the matignon1586c3 rule,
@@ -189,7 +194,7 @@ Points to check:
 - Я and Ф are probably *Fiorentini* and *Imperatore*, from sense only.
 - The looped b-sign reads z in this stretch (Abruzzo, importanza, sicurezza), against rr in no. 66.
 
-The no. 65 gap was not attempted in that pass. The state of no. 63 is left to the maintainer.
+The no. 65 gap was not attempted in that pass. The state of no. 63: read in part (see the integration check above).
 
 ## 12 Nov 2026 — no. 65 gaps re-read (Brice Dudout, Claude Opus 5.5)
 
@@ -197,4 +202,4 @@ The cipher runs left open in `n65_reading.md` (foot of f. 119r, foot of f. 119v,
 on Gallica views 123-124 in `dudout/`, frozen before decoding, and measured once (1904 cipher-sign tokens): 0.990
 against 0.874 for `n65_transcription.md`, all 400 controls below (shuffled text max 0.901). `dudout/no65_reading_reread.md`
 has 99.3% of the cipher words sure or probable and no unresolved word. The looped b-sign reads rr twice (Ferrara,
-arrivò) and z once (contenteza) in these lines. The state of no. 65 is left to the maintainer.
+arrivò) and z once (contenteza) in these lines. No. 65 was already read (0.993); it stays read.
