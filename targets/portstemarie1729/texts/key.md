@@ -1,6 +1,6 @@
 # Port Sainte-Marie code 1729: table rebuilt here
 
-From the glossed siblings (mssBLA 187-191; pairs_A.tsv, pairs_B.tsv) and, marked (inf), inferred for p. 5 from context and the alphabetical order (pairs_zinf.tsv). Count = attestations.
+From the glossed siblings (mssBLA 187-191; pairs_A.tsv, pairs_B.tsv); 364 values. Rows marked [?] were inferred for p. 5 from the sense and the alphabetical order (pairs_zinf.tsv): they have no attestation and count as holes (strict count, 12 Nov 2026). Count = attestations.
 
 | code | value | n |
 |---|---|---|
@@ -32,7 +32,7 @@ From the glossed siblings (mssBLA 187-191; pairs_A.tsv, pairs_B.tsv) and, marked
 | 78 | Ambassadeur | 1 |
 | 79 | angleterre | 2 |
 | 80 | anglois | 1 |
-| 84 | apres | 1 |
+| 84 | [?apres] (inferred, 0 attestations) | 0 |
 | 92 | asseure | 1 |
 | 96 | attire | 1 |
 | 100 | aucun | 2 |
@@ -67,7 +67,7 @@ From the glossed siblings (mssBLA 187-191; pairs_A.tsv, pairs_B.tsv) and, marked
 | 208 | comme / Comme | 3 |
 | 217 | concert | 2 |
 | 218 | conclure | 1 |
-| 222 | conduite | 1 |
+| 222 | [?conduite] (inferred, 0 attestations) | 0 |
 | 224 | confidence | 1 |
 | 238 | consideration | 1 |
 | 241 | contenu | 1 |
@@ -78,12 +78,12 @@ From the glossed siblings (mssBLA 187-191; pairs_A.tsv, pairs_B.tsv) and, marked
 | 263 | credit | 1 |
 | 270 | d | 1 |
 | 271 | d' | 1 |
-| 275 | dans | 1 |
+| 275 | [?dans] (inferred, 0 attestations) | 0 |
 | 278 | de | 30 |
 | 279 | dem | 1 |
 | 281 | der | 1 |
 | 282 | des / de | 4 |
-| 285 | di | 1 |
+| 285 | [?di] (inferred, 0 attestations) | 0 |
 | 289 | du / Don | 9 |
 | 290 | dur / d | 2 |
 | 291 | d' | 3 |
@@ -138,7 +138,7 @@ From the glossed siblings (mssBLA 187-191; pairs_A.tsv, pairs_B.tsv) and, marked
 | 451 | Empereur | 1 |
 | 454 | Espagne | 1 |
 | 456 | faut | 2 |
-| 460 | fe | 1 |
+| 460 | [?fe] (inferred, 0 attestations) | 0 |
 | 461 | fait | 4 |
 | 465 | fin | 1 |
 | 468 | fort | 1 |
@@ -172,7 +172,7 @@ From the glossed siblings (mssBLA 187-191; pairs_A.tsv, pairs_B.tsv) and, marked
 | 576 | i | 5 |
 | 580 | je / le | 13 |
 | 581 | ie / te? | 6 |
-| 585 | ig | 1 |
+| 585 | [?ig] (inferred, 0 attestations) | 0 |
 | 588 | il | 15 |
 | 589 | if | 1 |
 | 590 | Je | 1 |
@@ -202,11 +202,11 @@ From the glossed siblings (mssBLA 187-191; pairs_A.tsv, pairs_B.tsv) and, marked
 | 663 | li | 2 |
 | 664 | ll | 1 |
 | 665 | lo / lu | 4 |
-| 666 | lu | 1 |
+| 666 | [?lu] (inferred, 0 attestations) | 0 |
 | 668 | l | 1 |
 | 672 | lettre / lettres | 3 |
 | 674 | lieu | 1 |
-| 689 | m | 1 |
+| 689 | [?m] (inferred, 0 attestations) | 0 |
 | 690 | m' / m | 5 |
 | 691 | ma | 10 |
 | 692 | mais | 4 |
@@ -220,7 +220,7 @@ From the glossed siblings (mssBLA 187-191; pairs_A.tsv, pairs_B.tsv) and, marked
 | 703 | mois | 1 |
 | 704 | mon | 2 |
 | 709 | majeste | 3 |
-| 711 | maine | 1 |
+| 711 | [?maine] (inferred, 0 attestations) | 0 |
 | 719 | marque | 2 |
 | 731 | mettr | 1 |
 | 732 | mieux | 2 |
@@ -246,9 +246,9 @@ From the glossed siblings (mssBLA 187-191; pairs_A.tsv, pairs_B.tsv) and, marked
 | 797 | ont | 1 |
 | 799 | or | 1 |
 | 802 | ou | 4 |
-| 805 | obligation | 1 |
+| 805 | [?obligation] (inferred, 0 attestations) | 0 |
 | 807 | obstin | 1 |
-| 816 | ordre | 1 |
+| 816 | [?ordre] (inferred, 0 attestations) | 0 |
 | 821 | p | 1 |
 | 822 | Ra / Ba | 5 |
 | 823 | par | 8 |
@@ -351,7 +351,7 @@ From the glossed siblings (mssBLA 187-191; pairs_A.tsv, pairs_B.tsv) and, marked
 | 1112 | tou | 1 |
 | 1113 | tous | 2 |
 | 1114 | tout | 8 |
-| 1118 | trouver | 1 |
+| 1118 | [?trouver] (inferred, 0 attestations here); mssBLA 194 glosses "tain" (newcastle1729) | 0 |
 | 1121 | tache | 2 |
 | 1123 | tarde | 1 |
 | 1125 | temoigne | 1 |
@@ -363,7 +363,7 @@ From the glossed siblings (mssBLA 187-191; pairs_A.tsv, pairs_B.tsv) and, marked
 | 1149 | une | 8 |
 | 1150 | vo | 3 |
 | 1151 | tout a fait | 1 |
-| 1152 | vos | 1 |
+| 1152 | [?vos] (inferred, 0 attestations) | 0 |
 | 1153 | vous | 1 |
 | 1154 | vous | 14 |
 | 1155 | ut / travaille | 2 |
@@ -377,9 +377,9 @@ From the glossed siblings (mssBLA 187-191; pairs_A.tsv, pairs_B.tsv) and, marked
 | 1206 | deux | 1 |
 | 1207 | trois / Trois | 2 |
 | 1209 | cinq | 1 |
-| 1210 | six | 1 |
+| 1210 | [?six] (inferred, 0 attestations) | 0 |
 | 1211 | sept | 1 |
 | 1212 | huit | 1 |
 | 1213 | neuf | 1 |
-| 1250 | — | 1 |
+| 1250 | [?separator] (position only, 0 glossed here) | 0 |
 | 1255 | d | 1 |
