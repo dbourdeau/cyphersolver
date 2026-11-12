@@ -1,0 +1,179 @@
+# sande1660/beling: script runs and hashes, 2026-11-11T21:36:05Z, local folder output/repo_help_2026-11-11/sande1660/beling (not in a worktree; repo files read from origin/main 4337f026). Scripts run from beling/ with python3 -I.
+
+## Order of work
+PREREG.md written; key/key.txt, key/transcription_build.txt, lexicon/pt.json.gz copied from origin/main (sha256 equal to git show output);
+transcription/m0271.txt written; all five hashed into results/frozen_inputs.sha256 at 2026-11-11T21:33:03Z.
+Correction before any script existed: the comment line 2 of m0271.txt gave a wrong DigitArq fileId (22656985); fixed to 22657507
+(the id in images.txt) and re-hashed at 2026-11-11T21:33:14Z. No data line changed (diff showed only line 2).
+scripts/test_m0271.py written next; before the run, only its key parser and normaliser were called (26 numbers parsed, no scoring).
+Test run once at 2026-11-11T21:34:06Z; run again afterwards only to check the outputs are byte-identical.
+
+$ shasum -a 256 -c results/frozen_inputs.sha256
+PREREG.md: OK
+key/key.txt: OK
+key/transcription_build.txt: OK
+lexicon/pt.json.gz: OK
+transcription/m0271.txt: OK
+
+$ python3 -I scripts/test_m0271.py   (rewrites results/test_m0271_*; identical to the first run)
+{'key_numbers': 26, 'lexicon_skeletons': 6979, 'build_lines': 46, 'build_letters': 1262, 'S_build': 0.7393, 'held_lines': 37, 'held_tokens': 1225, 'held_letters': 1158, 'S_held': 0.7824, 'threshold_0.85xS_build': 0.6284, 'shuffled_n': 200, 'seed': 1660, 'mean_shuffled': 0.1578, 'best_shuffled': 0.3662, 'margin': 0.4162, 'too_small': False, 'pass': True, 'held_unread_signs': 4, 'held_code_group_tokens': 24, 'held_code_groups': [61, 62, 65, 69, 72, 79, 98, 102, 115, 117, 128, 132], 'held_unkeyed_numbers_below_60': [23, 25, 26, 31, 38, 42], 'held_unkeyed_tokens': 7, 'secondary_cedilla_to_c': {'S_build': 0.7393, 'S_held': 0.7824}}
+
+$ shasum -a 256 scripts/test_m0271.py results/test_m0271_result.json results/test_m0271_output.txt
+bd0efb45aba2e26dc0d9ad69cc6b3f083c3de35cde74d9d0ca6c2d0651dcdbdc  scripts/test_m0271.py
+ff9e2b12d6e43f92fdf9fdb15270c6171e85fe9f82ccf082def5045b5aa7881a  results/test_m0271_result.json
+e1b03dd176048697afbc2cc9a9751d2ac17aeeb611ec6d70d1b157fd3940604b  results/test_m0271_output.txt
+
+$ cmp against copies of the first run: identical
+
+# Round 2 (11-12 Nov 2026). Times UTC. Same folder, scripts run from beling/ with python3 -I.
+
+## Order of work
+2026-11-11T23:46:45Z  PREREG_round2.md written and hashed (results/prereg_round2_written.sha256, 763a19db...), before
+                      any round-2 transcription existed. The coordinator had seen these pages only as thumbnails and one
+                      2x crop of the top of m0272.
+then                  six AI agents, each in its own context, transcribed from the scans only (no key.txt,
+                      transcription.txt, NOTES, decryption, or first m0271 reading): m0271_r2, m0272, m0265_rest,
+                      m0266_rest, m0267 and m0273_top (one agent for both: PREREG_round2 says one agent per file;
+                      this is the one departure), m0269_rest. They wrote to the scratchpad.
+2026-11-12T00:16:35Z  the seven files copied into transcription/ byte for byte (cmp: identical; no layout change was
+                      needed, so no diff), and hashed with the reused inputs into results/frozen_inputs_round2.sha256.
+then                  scripts/test_round2.py written; py_compile only before the run.
+2026-11-12T00:17:11Z  test_round2.py run once. Pass (S_new 0.7088, margin 0.3169). The 6-token exclusion rule took
+                      72 of 168 lines; noted as a flaw in README section 3.
+then                  scripts/posthoc_round2.py (not pre-registered), collate_m0271.py (the coordinator opened
+                      m0271.txt only from here on), decode_all.py, cipherB_glosses.py written and run; cipherB/m0063_runs.txt
+                      read from the image before the cipher B script; cipherB/m0062_runs.txt read after the m0063 table
+                      existed. cipherB_glosses.py was edited twice before its final run (adding the m0062 check; v = u
+                      in glosses); the output below is from the final version.
+2026-11-12T00:34:06Z  hash checks and a second run of every script.
+
+$ shasum -a 256 -c results/frozen_inputs_round2.sha256
+PREREG_round2.md: OK
+PREREG.md: OK
+key/key.txt: OK
+key/transcription_build.txt: OK
+lexicon/pt.json.gz: OK
+transcription/m0272.txt: OK
+transcription/m0265_rest.txt: OK
+transcription/m0266_rest.txt: OK
+transcription/m0267.txt: OK
+transcription/m0269_rest.txt: OK
+transcription/m0273_top.txt: OK
+transcription/m0271_r2.txt: OK
+$ shasum -a 256 -c results/frozen_inputs.sha256      (round 1: all five OK)
+
+$ python3 -I scripts/test_round2.py      (first run's outputs kept aside; second run compared with cmp)
+{'S_build': 0.7393, 'new_lines': 96, 'new_letters': 2706, 'S_new': 0.7088, 'threshold_0.85xS_build': 0.6284,
+ 'shuffled_n': 200, 'seed': 1660, 'mean_shuffled': 0.1572, 'best_shuffled': 0.3919, 'margin': 0.3169, 'pass': True,
+ 'secondary_m0271_r2': {'lines': 37, 'letters': 1163, 'S': 0.7653}, ...}   (full: results/test_round2_result.json)
+$ python3 -I scripts/posthoc_round2.py
+{'all_new_but_m0269.12': {'lines': 167, 'letters': 4726, 'S': 0.7277, 'mean_shuffled': 0.1578, 'best_shuffled': 0.387,
+ 'margin': 0.3407}, 'only_the_lines_the_rule_left_out': {'lines': 71, 'letters': 2020, 'S': 0.753, 'best_shuffled': 0.3805,
+ 'margin': 0.3725}}
+$ python3 -I scripts/collate_m0271.py
+A tokens 1225, B tokens 1225, tokens identical and aligned 1202 (0.981 of A), disagreements 21
+$ python3 -I scripts/decode_all.py       lines 288
+$ python3 -I scripts/cipherB_glosses.py  (26 groups, no conflicts; leave-one-out 47/47 known groups right;
+                                          m0062 check 48/53 groups known, 48 agree with the glosses)
+$ python3 -I scripts/test_m0271.py       (re-run: result and output hashes equal to round 1, ff9e2b12... e1b03dd1...)
+
+second run, cmp against the first: identical for test_round2_result.json, test_round2_output.txt, posthoc_round2.json,
+posthoc_round2_maxrun.txt, collation_m0271.txt, decode_all.txt, cipherB_m0063.txt
+
+$ shasum -a 256 (after the second run)
+13b6282ee76d5d57462deec5f8f1e0faa3bb5c09db401801b4cd9f954e8d23e2  scripts/cipherB_glosses.py
+ff0d970ebcfe908bbc4e43a7e160e1212bb153aeeda4cc4c4594aa95939cfabe  scripts/collate_m0271.py
+3cc21bcfde99006db4ddb6c303029130958f274e63010a587f8e50753333e1f7  scripts/decode_all.py
+259c1da787b1d93852c7f7829b7a9753680e80c92c69bdcd622e5966681e6567  scripts/posthoc_round2.py
+6adfb39d362633330c9fd29b1ee7d6b547a4d3ac989fba3eaadf679b41234436  scripts/test_round2.py
+aa3ed9ceb97a07f4c789882938530d27382c5724daba1fbe7fa8dff289a69692  results/test_round2_result.json
+dfcd6e9f1bd10200e20712794022d952176f2b6775f2bb3584a9ca79e1131615  results/test_round2_output.txt
+4fcb1304faf1033000d0b87306077f89fabf056ebcf9fb4d3e07d12ca9a0ff8b  results/posthoc_round2.json
+1e7fc2b67104ae387734c01de65d573036edd7f4594ad3bed5d5bc356d7e37ee  results/posthoc_round2_maxrun.txt
+0d0cc48d7a7ead9f3579a915885bcd69dc76711dda5f6512516f7995b9c5072e  results/collation_m0271.txt
+b68a06e6a77e3f7882353144cb7faa70da5063cf2b46079c19b4f222b0abe02b  results/decode_all.txt
+a4295e360da236cc0b0fba07c99f2ba2ee0564997203e4f2a1a63ef7ade02dab  results/cipherB_m0063.txt
+f469a3c5b9ffcd957a7762a62246743acfff67f092b3f25b0365ff1692e5da14  cipherB/m0063_runs.txt
+f219a10d0958f2869152d93a19baf8f41aa399dbbb6341e6126f4f26d06a5862  cipherB/m0062_runs.txt
+
+No downloads in round 2: all scans were already in sources/raw/repo_help_2026-11-11/sande1660/ (images.txt).
+Two web searches (no printed text or clear copy found). Nothing posted, pushed or committed.
+
+# PR build checks, 2026-11-12T02:09:44Z, in a worktree of dbourdeau/cyphersolver on branch sande1660-beling, cut from origin/main 08f07fb7 (targets/sande1660 unchanged since 4337f026), plus this folder and the NOTES.md / profile.json edits (uncommitted). Scripts run from targets/sande1660/beling with python3 -I.
+
+$ shasum -a 256 -c results/frozen_inputs.sha256
+PREREG.md: OK
+key/key.txt: OK
+key/transcription_build.txt: OK
+lexicon/pt.json.gz: OK
+transcription/m0271.txt: OK
+(exit 0)
+
+$ shasum -a 256 -c results/frozen_inputs_round2.sha256
+PREREG_round2.md: OK
+PREREG.md: OK
+key/key.txt: OK
+key/transcription_build.txt: OK
+lexicon/pt.json.gz: OK
+transcription/m0272.txt: OK
+transcription/m0265_rest.txt: OK
+transcription/m0266_rest.txt: OK
+transcription/m0267.txt: OK
+transcription/m0269_rest.txt: OK
+transcription/m0273_top.txt: OK
+transcription/m0271_r2.txt: OK
+(exit 0)
+
+$ python3 -I scripts/test_m0271.py
+{'key_numbers': 26, 'lexicon_skeletons': 6979, 'build_lines': 46, 'build_letters': 1262, 'S_build': 0.7393, 'held_lines': 37, 'held_tokens': 1225, 'held_letters': 1158, 'S_held': 0.7824, 'threshold_0.85xS_build': 0.6284, 'shuffled_n': 200, 'seed': 1660, 'mean_shuffled': 0.1578, 'best_shuffled': 0.3662, 'margin': 0.4162, 'too_small': False, 'pass': True, 'held_unread_signs': 4, 'held_code_group_tokens': 24, 'held_code_groups': [61, 62, 65, 69, 72, 79, 98, 102, 115, 117, 128, 132], 'held_unkeyed_numbers_below_60': [23, 25, 26, 31, 38, 42], 'held_unkeyed_tokens': 7, 'secondary_cedilla_to_c': {'S_build': 0.7393, 'S_held': 0.7824}}
+
+$ python3 -I scripts/test_round2.py
+{"key_numbers": 26, "lexicon_skeletons": 6979, "build_lines": 46, "build_letters": 1262, "S_build": 0.7393, "new_lines": 96, "new_lines_excluded": ["@m0272.01", "@m0272.02", "@m0272.03", "@m0272.07", "@m0272.09", "@m0272.11", "@m0272.12", "@m0272.13", "@m0272.14", "@m0272.15", "@m0272.17", "@m0272.18", "@m0272.19", "@m0272.24", "@m0272.25", "@m0272.32", "@m0272.33", "@m0272.35", "@m0272.36", "@m0272.37", "@m0265.19", "@m0265.25", "@m0265.27", "@m0265.28", "@m0265.32", "@m0265.33", "@m0265.36", "@m0265.39", "@m0265.40", "@m0265.41", "@m0265.43", "@m0266.15", "@m0266.17", "@m0266.19", "@m0266.20", "@m0266.22", "@m0266.27", "@m0266.30", "@m0266.32", "@m0266.33", "@m0266.34", "@m0266.35", "@m0266.36", "@m0266.37", "@m0266.38", "@m0266.41", "@m0267.01", "@m0267.04", "@m0267.05", "@m0267.06", "@m0267.10", "@m0267.11", "@m0267.13", "@m0267.20", "@m0267.21", "@m0269.12", "@m0269.20", "@m0269.22", "@m0269.25", "@m0269.28", "@m0269.29", "@m0269.31", "@m0273.01", "@m0273.02", "@m0273.05", "@m0273.07", "@m0273.09", "@m0273.10", "@m0273.11", "@m0273.12", "@m0273.15", "@m0273.16"], "new_letters": 2706, "S_new": 0.7088, "threshold_0.85xS_build": 0.6284, "shuffled_n": 200, "seed": 1660, "mean_shuffled": 0.1572, "best_shuffled": 0.3919, "margin": 0.3169, "too_small": false, "pass": true, "per_file": {"m0272.txt": {"lines_kept": 17, "lines_excluded": 20, "tokens": 540, "unread": 18, "clear_spans": 0, "letters": 493, "S": 0.6876}, "m0265_rest.txt": {"lines_kept": 14, "lines_excluded": 11, "tokens": 430, "unread": 0, "clear_spans": 0, "letters": 397, "S": 0.6927}, "m0266_rest.txt": {"lines_kept": 23, "lines_excluded": 15, "tokens": 683, "unread": 23, "clear_spans": 0, "letters": 627, "S": 0.6699}, "m0267.txt": {"lines_kept": 13, "lines_excluded": 9, "tokens": 374, "unread": 0, "clear_spans": 0, "letters": 353, "S": 0.8017}, "m0269_rest.txt": {"lines_kept": 22, "lines_excluded": 7, "tokens": 661, "unread": 0, "clear_spans": 1, "letters": 632, "S": 0.6978}, "m0273_top.txt": {"lines_kept": 7, "lines_excluded": 10, "tokens": 213, "unread": 0, "clear_spans": 0, "letters": 204, "S": 0.7843}}, "new_code_group_tokens": 47, "new_code_groups": {"61": 7, "62": 9, "64": 1, "65": 2, "66": 1, "69": 1, "72": 5, "73": 1, "79": 3, "95": 1, "117": 2, "122": 2, "123": 1, "128": 1, "132": 6, "134": 1, "137": 2, "138": 1}, "new_unkeyed_below_60": {"17": 2, "23": 1, "28": 4, "31": 6, "34": 1, "38": 3, "46": 2, "47": 1, "48": 2, "49": 2}, "secondary_m0271_r2": {"lines": 37, "letters": 1163, "S": 0.7653}}
+
+$ python3 -I scripts/posthoc_round2.py
+{"S_build": 0.7393, "threshold_0.85xS_build": 0.6284, "all_new_but_m0269.12": {"lines": 167, "letters": 4726, "S": 0.7277, "mean_shuffled": 0.1578, "best_shuffled": 0.387, "margin": 0.3407}, "only_the_lines_the_rule_left_out": {"lines": 71, "letters": 2020, "S": 0.753, "mean_shuffled": 0.1587, "best_shuffled": 0.3805, "margin": 0.3725}}
+
+$ python3 -I scripts/collate_m0271.py
+A tokens 1225, B tokens 1225, tokens identical and aligned 1202 (0.981 of A), disagreements 21
+
+$ python3 -I scripts/decode_all.py
+lines 288
+
+$ python3 -I scripts/cipherB_glosses.py
+  H2   70.80.10.33.45.325.60.95.204.95          -> dep?ne?rar   gloss depenetrar   8/10 groups known, 8 agree with the gloss
+  H3   25.12.45.30.40.24.80.35.30               -> uanicheli    gloss uanicheli    9/9 groups known, 9 agree with the gloss
+  H4   10.95.14.60.330.40.60.405.95             -> pro?ec?or    gloss protector    7/9 groups known, 7 agree with the gloss
+  H5   13.80.25.330.45.70.325.37                -> seuendem     gloss seuendem     8/8 groups known, 8 agree with the gloss
+  H6   37.80.95.40.12.45.40.3.204               -> mercanc?a    gloss mercancia    8/9 groups known, 8 agree with the gloss
+  total: 53 groups, 48 in the m0063 table, 48 agree with the m0062 glosses (0.91 of all groups)
+
+$ diff -r <this folder before the runs above> <this folder after>   (each script rewrote its outputs)
+identical: every output byte-identical to the committed file
+
+$ python3 docs/_check_profile.py sande1660
+sande1660: profile.json
+  [gap ] documents[1].length.tokens = "unknown"
+  [gap ] system.nomenclator.entries = "unknown"
+  [gap ] system.nulls.present = "unknown"
+  result: valid, 3 unknown field(s)
+(exit 0)
+
+$ python3 docs/_check_writeup.py sande1660   (differences from the same run on origin/main's NOTES.md and profile.json)
+19c19
+<          - gap without a valid blocker type: - Cipher A, the untranscribed lines (about 245 of 290: most of m0265-m0267, m0269 lines 1-
+---
+>          - gap marked not-attempted: - Cipher A, the 168 lines transcribed in Nov 2026 (m0265.19-43, m0266.01 and 06-42, m0267,
+21c21
+<          - gap marked not-attempted: - Cipher B (Rome 1664) - blocker: not-attempted. The m0063 glosses are the way in.
+---
+>          - gap marked not-attempted: - Cipher B (Rome 1664): the table from the m0063 glosses reads the glossed runs on m0062; 
+25d24
+<          - escalation step "retry" not done (every unread group and doubtful reading retried with the extended key and regraded)
+
+$ python3 docs/_check_reading.py sande1660
+not a reading  0.0  0/26 sentences  holes 0.449  pt reading  tr=y  decryption.txt  [read in part]
+not a reading  0.0  0/207 sentences  holes 0.494  fr reading  tr=y  beling/results/decode_all.txt  [read in part]
+not a reading  0.423  11/26 sentences  holes 0.216  pt reading  tr=y  reading.md  [read in part]
+not a reading  0.31  18/58 sentences  holes 0.255  fr reading  tr=y  beling/results/m0271_reading.md  [read in part]
+marginal       0.535  53/99 sentences  holes 0.15  fr reading  tr=y  beling/results/round2_reading.md  [read in part]
+target: clean share 0.535, worst A 0.535, shapes {'reading': 1}, translated 1/1
