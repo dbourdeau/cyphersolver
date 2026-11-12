@@ -1,0 +1,8 @@
+LABEL: petkum_30nov1665_b94_folder
+Local UTC: 20261112T014326Z
+Files: 215
+Manifest SHA-256: 921615ef73a70d0192d7f4ab21c6de6bc7653aeb56e3f1b8ce77a83fed86131e
+RFC3161 TSA (Sectigo Public Time Stamping Signer): status=Granted. time=Nov 12 01:43:29 2026 GMT
+OpenTimestamps: submitted (pending Bitcoin; ots upgrade later)
+Verify RFC3161: openssl ts -reply -in MANIFEST.sha256.tsr -text ; openssl ts -verify -data MANIFEST.sha256 -in MANIFEST.sha256.tsr -CAfile <Sectigo chain>
+Verify OTS: ots verify MANIFEST.sha256.ots

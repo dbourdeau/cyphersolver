@@ -1,0 +1,8 @@
+LABEL: PAULMYER_1664
+Local UTC: 20261112T122423Z
+Files: 62
+Manifest SHA-256: 80f1d48d16b47f92afae16d0ab59024ab16b6c7d89f4b42f4a72864a1b0c37af
+RFC3161 TSA (Sectigo Public Time Stamping Signer): status=Granted. time=Nov 12 12:24:24 2026 GMT
+OpenTimestamps: submitted (pending Bitcoin; ots upgrade later)
+Verify RFC3161: openssl ts -reply -in MANIFEST.sha256.tsr -text ; openssl ts -verify -data MANIFEST.sha256 -in MANIFEST.sha256.tsr -CAfile <Sectigo chain>
+Verify OTS: ots verify MANIFEST.sha256.ots

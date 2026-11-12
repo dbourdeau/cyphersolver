@@ -1,0 +1,99 @@
+counts.txt: written by scripts/count.py (python3 -I). Do not edit by hand.
+Rule: strict = S/(S+E+N) per word unit; code words count E (not read) even when glossed; unknown, unsure (~), tier C or non-reading spellings count N. Full rule in the head of scripts/count.py.
+key.tsv md5 must be ddc02e4a9408e8ead7d51b5135a1ae82 (KEY_v3); checked below.
+
+key.tsv md5 ddc02e4a9408e8ead7d51b5135a1ae82 OK
+
+A. Petkum to Biermann, Oxford 30 Nov 1665 (issue #443)
+A1. First transcription R1, labels as made at the first decode (p2-3 under key v1, p1+p4 under key v2; gloss/), as filed in #443:
+  p2-3 (image 573)                 S 162 + E  26 + N  50 = 238 units; strict 162/238 = 68.07%; S+E 188/238 = 78.99%
+  p1+p4 (572R+574L, held out)      S  50 + E  11 + N  13 =  74 units; strict 50/74 = 67.57%; S+E 61/74 = 82.43%
+  POOL R1 (p2-3, p1+p4)
+    S = 162 + 50 = 212
+    E = 26 + 11 = 37
+    N = 50 + 13 = 63
+    units = 238 + 74 = 312; strict 212/312 = 67.95%; S+E 249/312 = 79.81%
+A2. Blind second transcription R2 adjudicated, KEY_v3 unchanged (23 relabels of R1, units/petkum_1665-11-30_R2.units.tsv), as commented on #443:
+  p2-3 (573)                       S 169 + E  40 + N  29 = 238 units; strict 169/238 = 71.01%; S+E 209/238 = 87.82%; relabels applied 21
+  p1+p4 (572R+574L)                S  51 + E  11 + N  12 =  74 units; strict 51/74 = 68.92%; S+E 62/74 = 83.78%; relabels applied 2
+  POOL R2 (p2-3 (573), p1+p4 (572R+574L))
+    S = 169 + 51 = 220
+    E = 40 + 11 = 51
+    N = 29 + 12 = 41
+    units = 238 + 74 = 312; strict 220/312 = 70.51%; S+E 271/312 = 86.86%
+
+B. Petkum, four letters (issue #444)
+  1665-03-24 (143 tokens)          S  40 + E   5 + N  13 =  58 units; strict 40/58 = 68.97%; S+E 45/58 = 77.59%
+  1665-11-23 (229 tokens)          S  68 + E  15 + N  13 =  96 units; strict 68/96 = 70.83%; S+E 83/96 = 86.46%
+  1665-12-10 (198 tokens)          S  51 + E  13 + N  11 =  75 units; strict 51/75 = 68.00%; S+E 64/75 = 85.33%
+  1666-04-13 (206 tokens)          S  59 + E  16 + N  19 =  94 units; strict 59/94 = 62.77%; S+E 75/94 = 79.79%
+  POOL B (1665-03-24, 1665-11-23, 1665-12-10, 1666-04-13)
+    S = 40 + 68 + 51 + 59 = 218
+    E = 5 + 15 + 13 + 16 = 49
+    N = 13 + 13 + 11 + 19 = 56
+    units = 58 + 96 + 75 + 94 = 323; strict 218/323 = 67.49%; S+E 267/323 = 82.66%
+
+C. Petkum, five letters, first reader (comment on #444)
+  1665-04-28 (70 tokens)           S  19 + E   3 + N   4 =  26 units; strict 19/26 = 73.08%; S+E 22/26 = 84.62%
+  1665-06-23 (70 tokens)           S  18 + E   3 + N   8 =  29 units; strict 18/29 = 62.07%; S+E 21/29 = 72.41%
+  1665-09-17 (59 tokens)           S  16 + E   5 + N   5 =  26 units; strict 16/26 = 61.54%; S+E 21/26 = 80.77%
+  1666-01-18 (128 tokens)          S  36 + E   5 + N   9 =  50 units; strict 36/50 = 72.00%; S+E 41/50 = 82.00%
+  1666-04-06 (60 tokens)           S  14 + E   5 + N   7 =  26 units; strict 14/26 = 53.85%; S+E 19/26 = 73.08%
+  POOL C (1665-04-28, 1665-06-23, 1665-09-17, 1666-01-18, 1666-04-06)
+    S = 19 + 18 + 16 + 36 + 14 = 103
+    E = 3 + 3 + 5 + 5 + 5 = 21
+    N = 4 + 8 + 5 + 9 + 7 = 33
+    units = 26 + 29 + 26 + 50 + 26 = 157; strict 103/157 = 65.61%; S+E 124/157 = 78.98%
+
+D. Petkum, the same five, blind second reader (comment on #444)
+  1665-04-28_blind (70 tokens)     S  18 + E   3 + N   5 =  26 units; strict 18/26 = 69.23%; S+E 21/26 = 80.77%
+  1665-06-23_blind (70 tokens)     S  18 + E   3 + N   8 =  29 units; strict 18/29 = 62.07%; S+E 21/29 = 72.41%
+  1665-09-17_blind (59 tokens)     S  17 + E   5 + N   4 =  26 units; strict 17/26 = 65.38%; S+E 22/26 = 84.62%
+  1666-01-18_blind (128 tokens)    S  33 + E   5 + N  12 =  50 units; strict 33/50 = 66.00%; S+E 38/50 = 76.00%
+  1666-04-06_blind (60 tokens)     S  14 + E   5 + N   7 =  26 units; strict 14/26 = 53.85%; S+E 19/26 = 73.08%
+  POOL D (1665-04-28, 1665-06-23, 1665-09-17, 1666-01-18, 1666-04-06)
+    S = 18 + 18 + 17 + 33 + 14 = 100
+    E = 3 + 3 + 5 + 5 + 5 = 21
+    N = 5 + 8 + 4 + 12 + 7 = 36
+    units = 26 + 29 + 26 + 50 + 26 = 157; strict 100/157 = 63.69%; S+E 121/157 = 77.07%
+  D-face. Same blind units with the unsure mark ~ ignored (face value; information only, not a count of record):
+    1665-04-28_blind face value    S  19 + E   3 + N   4 =  26 units; strict 19/26 = 73.08%; S+E 22/26 = 84.62%
+    1665-06-23_blind face value    S  18 + E   3 + N   8 =  29 units; strict 18/29 = 62.07%; S+E 21/29 = 72.41%
+    1665-09-17_blind face value    S  17 + E   5 + N   4 =  26 units; strict 17/26 = 65.38%; S+E 22/26 = 84.62%
+    1666-01-18_blind face value    S  36 + E   5 + N   9 =  50 units; strict 36/50 = 72.00%; S+E 41/50 = 82.00%
+    1666-04-06_blind face value    S  14 + E   5 + N   7 =  26 units; strict 14/26 = 53.85%; S+E 19/26 = 73.08%
+    POOL D-face (1665-04-28, 1665-06-23, 1665-09-17, 1666-01-18, 1666-04-06)
+      S = 19 + 18 + 17 + 36 + 14 = 104
+      E = 3 + 3 + 5 + 5 + 5 = 21
+      N = 4 + 8 + 4 + 9 + 7 = 32
+      units = 26 + 29 + 26 + 50 + 26 = 157; strict 104/157 = 66.24%; S+E 125/157 = 79.62%
+
+E. Jean de Paulmyer to Hannibal Sehested, Paris 1664 (comment on #444; same key, unchanged)
+  1664-04-25                       S  21 + E   2 + N   4 =  27 units; strict 21/27 = 77.78%; S+E 23/27 = 85.19%
+  1664-05-02                       S  23 + E   7 + N   6 =  36 units; strict 23/36 = 63.89%; S+E 30/36 = 83.33%
+  1664-05-16                       S  25 + E   4 + N  15 =  44 units; strict 25/44 = 56.82%; S+E 29/44 = 65.91%
+  1664-06-19                       S  25 + E   9 + N  10 =  44 units; strict 25/44 = 56.82%; S+E 34/44 = 77.27%
+  POOL E3 (the three sister letters) (1664-05-02, 1664-05-16, 1664-06-19)
+    S = 23 + 25 + 25 = 73
+    E = 7 + 4 + 9 = 20
+    N = 6 + 15 + 10 = 31
+    units = 36 + 44 + 44 = 124; strict 73/124 = 58.87%; S+E 93/124 = 75.00%
+  POOL E4 (all four Paulmyer letters) (1664-05-02, 1664-05-16, 1664-06-19, 1664-04-25)
+    S = 23 + 25 + 25 + 21 = 94
+    E = 7 + 4 + 9 + 2 = 22
+    N = 6 + 15 + 10 + 4 = 35
+    units = 36 + 44 + 44 + 27 = 151; strict 94/151 = 62.25%; S+E 116/151 = 76.82%
+  (E3 and E4 are below 65% and are offered as support for the key only, as in the comment on #444. The post-hoc pair 25 Apr + 2 May is not a pre-set pool and is not given.)
+
+POOL H (headline: the eleven letters filed as read in part, each at its count of record: 30 Nov R2, the four of #444, the five by the first reader, Paulmyer 25 Apr) (30 Nov R2, four, five, first reader, Paulmyer 25 Apr)
+  S = 220 + 218 + 103 + 21 = 562
+  E = 51 + 49 + 21 + 2 = 123
+  N = 41 + 56 + 33 + 4 = 134
+  units = 312 + 323 + 157 + 27 = 819; strict 562/819 = 68.62%; S+E 685/819 = 83.64%
+POOL H' (the same with the five by the blind reader, ~ as N) (30 Nov R2, four, five, blind, Paulmyer 25 Apr)
+  S = 220 + 218 + 100 + 21 = 559
+  E = 51 + 49 + 21 + 2 = 123
+  N = 41 + 56 + 36 + 4 = 137
+  units = 312 + 323 + 157 + 27 = 819; strict 559/819 = 68.25%; S+E 682/819 = 83.27%
+
+F. Not counted here: the twelve further bare Petkum letters decoded on 12 Nov 2026 (pooled 121/190 = 63.68% in our log), not filed and not in this folder.
