@@ -119,6 +119,24 @@ Context cribs:
    - `beling/transcription/repo/` holds unchanged copies of `lomenie1595.txt`, `duplessis1597.txt` and
      `ciphertext.txt`, frozen by sha256 for the tests.
 
+## Integration check (12 Nov 2026)
+
+- Re-run: hash lists check; the vol. 6 OCR from archive.org (`mmoiresetcorre06morn_djvu.txt`) has the sha256 stated in
+  `beling/results/external_inputs.sha256`; `test_folded.py` and `test_round2.py` give the committed results (T1
+  inconclusive: coverage 0.655 against a best of 0.616; T2 fits: coverage 0.78, language beats 197/200; T3 does not fit;
+  T4 not supported); `explore_system.py` reruns. No second decoder was written and no archive.org page image was
+  compared with the figure tables at the integration check.
+- Strictness: the T2 "fits" is a coverage and language statistic on 50 groups. Of the 39 groups that take a value,
+  only `10` = le roy (R10, R13, R15) and `11` = Madame (R12) read as sense without an inferred value; the single-figure
+  runs R3, R4, R6, R11, R14, R16, R17 and R18 give single letters that are name codes (the table says the letter values
+  do not apply), and R2, R7, R19 need the inferred 672, 134, 160, 38. The strict read share is therefore (93 + 4) /
+  534 = 0.182; the contributor's 0.247 (132/534) is every group that takes a value.
+- Order of events (tests pre-registered, inputs hashed first) is by the contributor's record.
+- Not a stopping point: the escalation steps print, key-rebuild and retry are open below, so no page. Dudout's 1593
+  reading predates this work and is unchanged.
+- Overlap: no other target holds vols. 7-12 figures; catalogue 365 (Mornay family, Archives nationales 402AP/13) and
+  371 (this target) are separate leads.
+
 ## Remaining gaps
 
 - Loménie 1595 (95 groups): unread; neither the Rohan 1594 key nor Dudout's folded 1593 key fits (steps 5, 7). Cribs from the editors' note and the king's cipher letter CVI (step 8) give "de Camor" and probably "de Bretagne" - blocker: no-key-material; the original of CVI or of Loménie's letter would give the key

@@ -492,6 +492,15 @@
       ],
       "what": "The cribs make 'du sieur 810 62 110 4' = 'du sieur de Camor' and '810 44 109 27 32 10' = 'de Bretagne' likely; not a key. Lomenie's x10 codes (23/95) are nearly absent from Duplessis's own letters (4/239): probably two systems (beling/results/explore_system.txt, README section 6.5) (Andrew Beling, beling/).",
       "result": "partial"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "statistical test"
+      ],
+      "what": "Integration check of PR #449: test_folded.py and test_round2.py re-run on the archive.org vol. 6 OCR (sha256 204906c7... matches): T1 folded 1593 key on Lomenie 1595 + Duplessis 1597 coverage 0.655 against best 0.616 (inconclusive; no words), T2 Rohan 1594 key on Rohan 1597 coverage 0.78 and language beats 197/200 (fits, 50 groups), T3 Rohan key on 1599-1612 does not fit, T4 inferred values not supported; all identical. Strictly, only 4 of the 50 Rohan 1597 groups read without an inferred value or a name-code letter; read share recounted 0.182, not 0.247. No second decoder and no image check at the integration check.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -531,7 +540,7 @@
         "detail": "44 occurs only at the end of P1 and P2; values probable."
       }
     ],
-    "notes": "1593 part read via Dudout's key; 1595-98 open. 11-12 Nov 2026 (Andrew Beling, beling/): vols. 7-12 searched and their figures transcribed (six new documents); the Rohan 1594 key fits Mme de Rohan's 1597 letters but not her 1611-12 ones; Dudout's folded key does not fit 1595-97; the 1595-99 Duplessis/Lomenie figures stay unread.",
+    "notes": "1593 part read via Dudout's key; 1595-98 open. 11-12 Nov 2026 (Andrew Beling, beling/): vols. 7-12 searched and their figures transcribed (six new documents); the Rohan 1594 key fits Mme de Rohan's 1597 letters but not her 1611-12 ones; Dudout's folded key does not fit 1595-97; the 1595-99 Duplessis/Lomenie figures stay unread. 12 Nov 2026 integration check: all tests re-run and reproduced (corpus hash matches); strict read share 0.182 (contributor's 0.247 counts name-code letters and inferred values); the Rohan 1594 key 'fits' Rohan 1597 on a small sample where only 'le roy' and 'Madame' read without inference.",
     "method_basis": "1593 Du Maurier/Serviez figures (93 groups) read with the key Brice Dudout published for them (27 Oct 2026), applied to this project's transcription; the 1595-98 figures, a different system, remain not read.",
     "credits": [
       {
@@ -548,7 +557,7 @@
         "note": "Pre-registered tests of the folded 1593 key (does not fit 1595-97) and of the Rohan 1594 key on Mme de Rohan's 1597 letters (fits) and 1611-12 letters (does not fit); vols. 7-12 figures transcribed; cribs for Lomenie 1595 (beling/)."
       }
     ],
-    "fraction_read": 0.247,
+    "fraction_read": 0.182,
     "texts": [
       {
         "doc": "DuMaurier-1593-06",
@@ -596,6 +605,6 @@
       }
     ],
     "fraction_read_method": "measured",
-    "fraction_read_source": "12 Nov 2026 (beling/): the documents' measured lengths, 534 code groups in all (1593: 93; Lomenie 1595: 95; Duplessis Jan 1597: 90; Rohan 1597: 50; Duplessis 1597-98: 79; Duplessis 1599: 30; Rohan 1599: 4; Rohan 1611-12: 84; unsigned 1612: 9). Given a value: the 93 groups of 1593 (Dudout's key) and 39 of the 50 Rohan 1597 groups (Rohan 1594 key, beling/results/test_result.json T2); 132/534. Before: 93/278 = 0.335, before vols. 7-12 were transcribed."
+    "fraction_read_source": "12 Nov 2026 integration recount, strict (README read bar: guessed, inferred and name-code letter values are holes): 534 code groups in all (1593: 93; Lomenie 1595: 95; Duplessis Jan 1597: 90; Rohan 1597: 50; Duplessis 1597-98: 79; Duplessis 1599: 30; Rohan 1599: 4; Rohan 1611-12: 84; unsigned 1612: 9). Read as sense: the 93 groups of 1593 (Dudout's key) and 4 of the 50 Rohan 1597 groups, the key's own values with no inference (10 = le roy in R10, R13, R15; 11 = Madame in R12); 97/534 = 0.182. The other Rohan 1597 groups that take a value are letters of names that read only with the inferred values 672, 134, 160, 38 (R2, R7, R19), the word-code half of 'le [672]' (R5, R8), or single figures that Beling's own table says are name codes (R3, R4, R6, R11, R14, R16, R17, R18). The contributor's own figure, 0.247 (132/534: every group that takes a value, 39 of the 50 Rohan 1597 groups), is not a read share. Before: 93/278 = 0.335, before vols. 7-12 were transcribed."
   }
 }
