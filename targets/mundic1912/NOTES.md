@@ -3,8 +3,8 @@
 WAINUT, 12 Nov 2026. Work done with AI language-model agents viewing the CEHM images; no human palaeographer has
 checked the text. An independent AI language-model agent reviewed the reading blind from the scans (below).
 
-Status: in progress (not yet written up). Read in part, 12 Nov 2026: both telegrams (X-1.3.207.1, X-1.3.239.1) are
-read in part. No site page or README row.
+Read in part, 12 Nov 2026: both telegrams (X-1.3.207.1, X-1.3.239.1) are read in part. Written up on the site
+(mundic1912.html) at the integration of PR #466, 12 Nov 2026.
 
 ## Documents
 
@@ -63,6 +63,19 @@ onto the shuffled ciphertext (z 6.7). Verdict: pass.
 
 `python scripts/check_marks.py` rebuilds both decryptions from transcription + key.tsv and fails on any unmarked
 departure; it passes.
+
+## Integration check (12 Nov 2026)
+
+Done by the integrating session, not by the contributor. Reproduced: check_marks.py passes; heldout.py gives 58 of 60 on
+lines 2-4 (line 1 counted by hand, 72 of 75 in all), 0 wrong. An own decoder written from key_frozen.tsv gives the same
+decryption of 239. Own control (lang es-modern, 4-grams, no spaces): the frozen-key decode of 239 scores -2.317 per
+letter against -6.91 for 2000 keys with the same plain values shuffled over the cipher letters (best -3.99, z 5.1), so
+the key is not an overfit of the short texts. Images X-1.3.207.1.0001 and X-1.3.239.1.0001 were fetched from the CEHM
+viewer (no host refused) and compared with the transcriptions: all groups agree at that reading.
+Order of events: the freezing of key_frozen.tsv before the 239 count rests on the contributor's record (one commit, no
+external timestamp); both telegrams had been solved together first, as the held-out section says. Strict read share by
+the README rule (a word with a marked repair or not read counts as not read): 207 7/10 = 70%, 239 11/12 = 91.7%,
+together 18/22 = 81.8%. The profile's earlier fraction_read of 1.0 was key coverage and is replaced by 0.818.
 
 ## Remaining gaps
 

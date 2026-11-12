@@ -3,8 +3,8 @@
 WAINUT, 12 Nov 2026. Work done with AI language-model agents viewing the CEHM images; no human palaeographer has
 checked the text. An independent AI language-model agent reviewed the reading from the scans (below).
 
-Status: in progress (not yet written up). Read in part, 12 Nov 2026: X-1.4.310.1 is read in part (strict count).
-No site page or README row.
+Read in part, 12 Nov 2026: X-1.4.310.1 is read in part (strict count). Written up on the site (delabarra1913.html) at the
+integration of PR #467, 12 Nov 2026.
 
 ## Document
 
@@ -57,6 +57,17 @@ flagged words are names (Wilson, Bryan, Delabarra) and modern words absent from 
 invitación, entrevista and the like), not unread cipher.
 
 `python scripts/check_marks.py` rebuilds the decryption and fails on any unmarked departure; it passes.
+
+## Integration check (12 Nov 2026)
+
+Done by the integrating session. Reproduced: check_marks.py passes (24 of 27 cipher words verbatim = 88.9%); heldout.py
+gives 110 of 112 on lines 7-13, 0 wrong. Own control (lang es-modern, 4-grams): the held-out lines score -2.238 per
+letter against -6.47 for 2000 shuffled-value keys (best -4.00, z 5.6); the full key -2.412 against best -4.87 (z 6.9).
+The clear words around the cipher words guided the key (stated above); the held-out lines have their own clear words.
+Image X-1.4.310.1.0001 (the pencil copy) was fetched from the CEHM viewer (no host refused) and compared line by line
+with transcription_310.txt: all groups agree; the typed copy was fetched and not re-compared letter by letter. The
+freezing of key_frozen.tsv before the held-out count rests on the contributor's record (one commit, no external
+timestamp). The profile's earlier fraction_read of 1.0 was key coverage; the strict word share is 0.889.
 
 ## Remaining gaps
 

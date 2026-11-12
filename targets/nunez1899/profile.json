@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "9926",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "CEHM-Carso, Fondo CDLIV (Colección José Y. Limantour), CDLIV.1a.1883.38.9926 (code telegram); translation CDLIV.1a.1883.38.9927 (draft) and 9928 (fair copy)",
    "date": "26 August 1899",
    "year": 1899,
@@ -123,10 +123,19 @@
    "kind": "reading",
    "what": "Remaining 37 code values set by aligning 9926 with 9928; reading with marks; check_marks.py passes (22 lines, 0 mismatches).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "what": "Integration check (12 Nov 2026): heldout.py reproduced (28 of 65 code tokens covered, 19 distinct code words, 28/28 agree with 9927/9928). The frozen key was built from 9922, 9929 and 9930, each with plain text on its own sheet, so the test does not use the translation of 9926; the freezing order rests on the contributor's record (file header, single commit). Image CDLIV...9926.0002 fetched from the CEHM viewer: L01-L03 agree with transcription_9926.txt. Strict recount: 111 of 119 = 0.933, class changed from read to read in part.",
+   "result": "worked",
+   "technique": [
+    "plaintext matching"
+   ]
   }
  ],
  "outcome": {
-  "class": "read",
+  "class": "read in part",
   "key": "partial",
   "method": "read from existing decipherment",
   "method_basis": "The telegram's own contemporary translation (9927/9928, filed separately), checked against a code key frozen from three other glossed telegrams of the same code (held-out 28/28).",
@@ -135,9 +144,9 @@
    "key recovered",
    "catalogue correction"
   ],
-  "fraction_read": 0.97,
+  "fraction_read": 0.933,
   "fraction_read_method": "measured",
-  "fraction_read_source": "111 of 114 telegraphed word units have sense (43 clear words, 4 numbers, 28 code words valued by the frozen key, 36 code words valued only from the contemporary translation); 1 hole (ampida) and 2 words not rendered (te se).",
+  "fraction_read_source": "Strict count by the README read bar: telegram units 114 plus the 5 words the contemporary translator supplied ({+de} x2, {+aquí}, {+empréstito}, {+en}) = 119; not read: 1 guess for ampida, 2 telegraphed words the translation does not render (te se), 5 supplied words = 8; 111 of 119 = 0.933. The contributor's figure, 111 of 114 units = 0.974 (0.97), leaves the supplied words out. 36 of the 65 code values rest only on the contemporary translation of this telegram (a decipherment); 28 are confirmed by the frozen key.",
   "verification": [
    "contemporary decipherment",
    "matched control",
@@ -156,7 +165,8 @@
     "who": "lccompany",
     "role": "solution",
     "note": "translation located for a record catalogued 'sin traducción'; code key frozen from three other glossed telegrams and tested on 9926 (28/28); reading with marks",
-    "date": "2026-11-12"
+    "date": "2026-11-12",
+    "source": "PR #464"
    },
    {
     "who": "lccompany",
@@ -174,17 +184,55 @@
     "reading": "reading_9926.md",
     "translation": "translation_9926.md",
     "language": "es",
-    "state": "read",
+    "state": "read in part",
     "summary": "The President has agreed a loan of 4 millions from the Banco de Londres, paying 2 1/4 on deposits once the Government can dispose of them freely; surplus funds, in an amount Limantour is to name, are to go in gold to the Bank of England (exchange today 23 13/16; at 24 or more cash could be converted here into gold and sent to Camacho to be kept at the English bank), Limantour to say how; Camacho asks authority to have the bonds of the new loan printed in the U.S.; the President asks whether unfinished, unsigned bonds in the U.S. might lead to something like an injunction against Morgan. Please decide.",
-    "note": "Read through the contemporary translation filed as 9927/9928, which the CEHM record does not mention. 36 code-word values come only from that translation; 28 are confirmed by the independent frozen key. Words: 43 clear verbatim, 4 numbers, 28 code (frozen key), 36 code (translation only), 1 hole (ampida, blank in the translation too, guess [?depositen]), 2 telegraphed words not rendered (te se). Reading checker clean share: running Spanish 0.50, translation 0.60; the checker counts the numbers and Ud./E.U. as holes.",
+    "note": "Read through the contemporary translation filed as 9927/9928, which the CEHM record does not mention. 36 code-word values come only from that translation; 28 are confirmed by the independent frozen key. Words: 43 clear verbatim, 4 numbers, 28 code (frozen key), 36 code (translation only), 1 hole (ampida, blank in the translation too, guess [?depositen]), 2 telegraphed words not rendered (te se). Reading checker clean share: running Spanish 0.50, translation 0.60; the checker counts the numbers and Ud./E.U. as holes. Strict recount (12 Nov 2026 integration): 111 of 119 words (units plus the five supplied words) = 0.933, read in part; the contributor's 0.97 counts the 114 telegram units only.",
     "reading_review": {
      "grade": "A",
      "by": "independent AI language-model agent (blind review)",
      "date": "2026-11-12",
      "note": "The contemporary translation 9928 matches the reading word for word and leaves a blank exactly where ampida stands; all 10 Spanish sentences read as coherent Spanish, one with a hole. Lines L01-L07 and L14-L22 were checked on the scans with no disagreement that affects the reading, and the held-out 28/28 was reproduced from key_frozen.tsv alone."
-    }
+    },
+    "read_share": 0.933
    }
   ],
-  "key_file": "key.tsv"
+  "key_file": "key.tsv",
+  "codes_open": {
+   "open": 2,
+   "total": 54,
+   "tokens_open": 3
+  },
+  "gaps": [
+   {
+    "item": "ampida (L06)",
+    "blocker": "no-key-material",
+    "detail": "Blank in the contemporary translation too; \"depositen\" or \"inviertan\" is a guess."
+   },
+   {
+    "item": "te se (L16)",
+    "blocker": "too-short",
+    "detail": "Two telegraphed words with no counterpart in the translation; possibly a transmission error."
+   },
+   {
+    "item": "curadela, pareciendo.., torrejones",
+    "blocker": "illegible",
+    "detail": "Last letters hidden under the pencil docket, the watermark or the edge; values from 9928."
+   },
+   {
+    "item": "serian (L17), rolliza (L19)",
+    "blocker": "illegible",
+    "detail": "May begin with v, may end in o; neither changes the reading."
+   },
+   {
+    "item": "pasado año (L02)",
+    "blocker": "too-short",
+    "detail": "Rendered literally; \"next year\" is possible."
+   },
+   {
+    "item": "36 code values from the translation only",
+    "blocker": "no-key-material",
+    "detail": "No codebook found in the file; no second source."
+   }
+  ]
  }
 }

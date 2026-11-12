@@ -1,5 +1,8 @@
 # reyes1886: Bernardo Reyes to Ignacio Revueltas, Monterrey, 1 April 1886 (catalogue 1447)
 
+Read in part (strict share 5 of 12 cipher words, 41.7%), 12 Nov 2026. Written up on the site (reyes1886.html) at the
+integration of PR #472.
+
 ## Document
 
 - CEHM-Carso, Fondo DLI (Archivo del General Bernardo Reyes), DLI.4.634.1, one page. Record:
@@ -92,31 +95,50 @@ correction to the signs or the reading. Grade B: the reading holds, but 7 of the
 letter each, and ranchero also has a restored a (the weakest word: two departures, 12 = ch from context and the
 dropped a). It set the text to not prose rather than read in part, on the ralamb1657 rule.
 
+## Integration check (12 Nov 2026)
+
+Done by the integrating session. Reproduced: FROZEN.sha256 matches key_frozen.tsv; check_marks.py passes; heldout.py gives
+99 of 114 on test 1 (0 wrong, 15 letters on groups the training half had not seen) and 60 of 68 groups covered on 634.1.
+Rows of transcription_524.txt checked against the contemporary translation by hand (row 1, particular =
+30 17 77 76 19 16 74 68 87 57). The image of DLI.4.634.1 was fetched from the CEHM viewer (no host refused); the
+transcription agrees with the page.
+**New test, not in the PR.** The two translated telegrams in this key that the contributor listed and did not use were
+fetched and read with key_frozen.tsv unchanged (my own transcription of the numbers, which carry overlines on the page):
+DLI.4.631.1 (24 Mar 1886, "Clave antigua", translation "Por correo de hoy escribo á Ud extensamente sobre asunto
+relativo á colocación del Sr. Lozano"): 47 letters right, 0 wrong, 14 on groups not in the key. DLI.3.416.1 (28 Oct 1885,
+"debe decir á la autoridad legal y legítimamente constituída"): 44 right, 0 wrong, 5 not in the key. Together 91 right,
+0 wrong, 19 unknown. They also give 23 = n (twice) and 65 = ñ, two of the seven context-only groups of 634.1, so five
+remain on context alone (12, 20, 40, 53, 82); the other new values (for example 24 = m, 28 = l, 95 = t) are not used here.
+Strict share: the read bar counts a group valued by the sense alone as not read, so the 7 words with one such letter
+each count as not read: 5 of 12 = 41.7%; the profile's earlier fraction_read of 1.0 is replaced by 0.417. The state
+"not prose" for the runs stands (the sentence is carried by the clear text), as for ralamb1657.
+Not checked: the full set of signs of 524.1 against its image (only the first rows); the order of events (the first
+context reading before the key) rests on the contributor's record.
+
 ## Remaining gaps
 
-- Groups 12, 20, 23, 40, 53, 65, 82 - blocker: open-codes; values from context only (no glossed occurrence seen).
-  More "cifrada y traducción" letters of the Reyes-Revueltas channel in Fondo DLI (Dec 1885 - Apr 1886) would
-  confirm them; only 524.1 was used. The 29 Oct 2026 note in the repository (research/dudout_2026-10-29) names two
-  more translated letters in the same key, DLI.3.416.1 (28 Nov 1885, gloss at foot) and DLI.4.631.1 (24 Mar 1886,
-  "Clave antigua" with "Traducción"); they were not used here. The fondo's other cipher items found in the sweep
-  list (Díaz letters) are in the President's key.
+- Groups 12, 20, 40, 53, 82 - blocker: open-codes; values from context only (ch, p, j, v, ch). 23 = n and 65 = ñ were
+  first on this list; the integration check confirmed them on DLI.4.631.1 and DLI.3.416.1 (above). More "cifrada y
+  traducción" letters of the channel (Dec 1885 - Apr 1886) in Fondo DLI would confirm the rest. The fondo's other
+  cipher items found in the sweep list (Díaz letters) are in the President's key.
 - "r{+a}nchero", the weakest word (raised by the reviewer) - blocker: open-codes; two departures, the writer's
   dropped a and 12 = ch from context. It fits the struck clear word and the "than a politician" contrast.
-- The struck clear word before R5 ("canalla"?) - blocker: not-attempted; not settled.
-- The closing formula after "Sabe Ud." - blocker: not-attempted; abbreviated and not expanded (clear text, not
-  cipher).
-- Independent blind transcription - blocker: not-attempted; the review checked 50 of 68 groups against the image,
-  but no full blind second transcription has been made, and no human palaeographer checked the text.
+- The struck clear word before R5 ("canalla"?) - blocker: illegible; struck through by the writer, nothing else
+  decides it.
 - 524.1, right edge of page 1 - blocker: needs-physical-access; cut by the scan, a few groups there and the last
   line are lost (rows tagged in `transcription_524.txt`).
+
+Not reading gaps (clear text or checks, not cipher): the closing formula after "Sabe Ud." is clear text and left
+abbreviated; no full blind second transcription has been made (the independent review checked 50 of 68 groups and the
+integration check compared the page) and no human palaeographer checked the text.
 
 ## Escalation
 
 - [x] siblings: DLI.3.455.1, 3.524.1, 3.525.1, 4.623.1 and 4.630.1 opened; 524.1 gave the key; 455.1 p. 2 and 525.1
   are in the President's four-digit code; 623.1 is the new table of 16 Mar 1886, which Reyes says he did not use.
 - [x] clear-pages: the "Traducción" on 524.1 p. 2 used for the key and the held-out test; 634.1 has no decipherment.
-- [ ] known-keys: DLI.3.416.1 and DLI.4.631.1 (same key, with contemporary translations) not opened yet.
-- [ ] print: two web searches and the catalogue's own check only; no printed edition of the Reyes papers searched.
+- [x] known-keys: DLI.3.416.1 and DLI.4.631.1 (same key, with contemporary translations) opened at the integration check and decrypted with the frozen key: 91 right, 0 wrong; they confirm 23 = n and 65 = ñ.
+- [x] print: four web searches in all (two by the contributor, two at the integration check, 12 Nov 2026: Reyes/Revueltas clave cifrada 1886 edition; Narváez on Mexican cryptography with Reyes, Garza Galán, Cervantes) and the catalogue's own check: only Narváez's 2019 SRE book and articles in general and Ríos Vázquez's thesis on Porfirian espionage turned up, none naming this letter. Narváez 2019 and the thesis were not opened; the Reyes papers' own printed edition, if any, was not found.
 - [x] key-rebuild: the seven groups not in the frozen key filled from the clear text around the runs; 82 = ch holds
   at both of its places.
 - [x] retry: every run decrypted again with the frozen key and the context values; `scripts/check_marks.py` passes.

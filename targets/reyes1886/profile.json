@@ -183,6 +183,27 @@
    ],
    "what": "Statistical validation (docs/_validate.py): 313 tokens, 48 types, es-modern order 4: reading -1.714 per letter; random keys -6.835 (z 9.0); key annealed onto shuffled ciphertext best -2.891 (mean -3.02, z 8.8); annealer on the real text -2.615. Verdict: pass.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "sibling key",
+   "what": "Integration check (12 Nov 2026): the two sibling translated telegrams the contributor had not used were fetched and decrypted with key_frozen.tsv without changing it. DLI.4.631.1 (Revueltas to Reyes, 24 Mar 1886, 'Clave antigua', translation 'Por correo de hoy escribo a Ud extensamente sobre asunto relativo a colocacion del Sr. Lozano'): 47 letters right, 0 wrong, 14 on groups not in the key. DLI.3.416.1 (28 Oct 1885, translation 'debe decir a la autoridad legal y legitimamente constituida'): 44 right, 0 wrong, 5 not in the key. Together 91 letters right, 0 wrong, 19 unknown. They confirm 23 = n (twice) and 65 = n-tilde, two of the seven groups of 634.1 that rested on context.",
+   "result": "worked",
+   "technique": [
+    "plaintext matching"
+   ]
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Integration check (12 Nov 2026): DLI.4.634.1 image compared with transcription_634.txt (R1, R2, R5, R6, R8 groups and the rest read against the page): agree. FROZEN.sha256 reproduced; key rebuilt from the first rows of transcription_524.txt by hand (row 1 particular = 30 17 77 76 19 16 74 68 87 57) agrees. Strict share recounted: 5 of 12 words = 0.417; fraction_read corrected from 1.0.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "literature search",
+   "what": "Integration check: two more web searches (Reyes/Revueltas clave cifrada 1886 edition; Narváez on Mexican cryptography with Reyes, Garza Galán, Cervantes). Nothing names this letter or key; Narváez 2019 (SRE) and the Ríos Vázquez thesis not opened.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -224,9 +245,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 1.0,
+  "fraction_read": 0.417,
   "fraction_read_method": "measured",
-  "fraction_read_source": "All 10 cipher runs (68 groups, 12 words) of the one-page letter are read; 7 of the 12 words rest on one context-filled letter each. The runs are short words inside a clear letter, marked not prose in the texts.",
+  "fraction_read_source": "Strict count by the README read bar: 5 of the 12 cipher words (su, miedo, conducta, dejar, eso) are read from the signs with the frozen key; the other 7 each rest on one letter given by the context alone (a group not in the key) and count as not read: 5/12 = 0.417. All 12 words are identified and none is a hole. The contributor's earlier field gave 1.0 (all runs given a value).",
   "verification": [
    "contemporary decipherment",
    "matched control",
@@ -246,7 +267,8 @@
     "who": "lccompany",
     "role": "solution",
     "note": "key rebuilt from DLI.3.524.1, frozen and tested on a held-out half; the cipher runs of DLI.4.634.1 deciphered and read",
-    "date": "2026-11-12"
+    "date": "2026-11-12",
+    "source": "PR #472"
    },
    {
     "who": "lccompany",
@@ -266,7 +288,8 @@
     "language": "es",
     "state": "not prose",
     "summary": "Garza Galán, since his arrival, is moving towards a reconciliation with General Cervantes, which shows Reyes how useful his journey to the capital was; but since Reyes fears a 'ranchero' more than a politician, he will keep watch on that gentleman's conduct, without ceasing to draw their relations closer.",
-    "note": "Not prose: 10 short cipher runs (one or two words each, 12 words) set into a letter written in clear Spanish; given with our decode with key_frozen.tsv and an English gloss. The runs form no sentence of their own; the sentence is carried by the clear text around them. Words: 5 verbatim from the signs (su, miedo, conducta, dejar, eso), 7 with one letter filled from context on a group not in the frozen key (provechoso, viaje, capital, ranchero, pendiente, dicho, señor; 82 = ch holds at both of its places), ranchero also with the writer's dropped a restored. No holes. The cipher words carry Reyes's distrust of Garza Galán; the clear text carries the reconciliation news. Independent blind review (12 Nov 2026): 50 of 68 groups checked against the image, all agree; check_marks and the held-out test reproduced; set to not prose (grade B) on the ralamb1657 rule for short runs inside clear letters."
+    "note": "Not prose: 10 short cipher runs (one or two words each, 12 words) set into a letter written in clear Spanish; given with our decode with key_frozen.tsv and an English gloss. The runs form no sentence of their own; the sentence is carried by the clear text around them. Words: 5 verbatim from the signs (su, miedo, conducta, dejar, eso), 7 with one letter filled from context on a group not in the frozen key (provechoso, viaje, capital, ranchero, pendiente, dicho, señor; 82 = ch holds at both of its places), ranchero also with the writer's dropped a restored. No holes. The cipher words carry Reyes's distrust of Garza Galán; the clear text carries the reconciliation news. Independent blind review (12 Nov 2026): 50 of 68 groups checked against the image, all agree; check_marks and the held-out test reproduced; set to not prose (grade B) on the ralamb1657 rule for short runs inside clear letters.",
+    "read_share": 0.417
    },
    {
     "doc": "dli_3_524_1",
@@ -284,9 +307,9 @@
   ],
   "gaps": [
    {
-    "item": "Groups 12, 20, 23, 40, 53, 65, 82",
+    "item": "Groups 12, 20, 40, 53, 82",
     "blocker": "open-codes",
-    "detail": "Values from context only (ch, p, n, j, v, ñ, ch); DLI.3.416.1 and DLI.4.631.1, translated letters in the same key, were not opened and could confirm them."
+    "detail": "Values from context only (ch, p, j, v, ch). Two of the seven first listed are now confirmed by two other translated telegrams in the same key (DLI.4.631.1 and DLI.3.416.1, integration check 12 Nov 2026): 23 = n and 65 = ñ. Neither letter has any of the five groups left."
    },
    {
     "item": "r{+a}nchero",
@@ -295,18 +318,8 @@
    },
    {
     "item": "Struck clear word before run R5",
-    "blocker": "not-attempted",
-    "detail": "Probably 'canalla'; not settled."
-   },
-   {
-    "item": "Closing formula after 'Sabe Ud.'",
-    "blocker": "not-attempted",
-    "detail": "Abbreviated, not expanded (clear text)."
-   },
-   {
-    "item": "Independent blind transcription",
-    "blocker": "not-attempted",
-    "detail": "The review checked 50 of the 68 groups against the image; no full blind second transcription, no human palaeographer."
+    "blocker": "illegible",
+    "detail": "Struck out by the writer, probably 'canalla'; the strike-through hides it and nothing else decides it."
    },
    {
     "item": "DLI.3.524.1, right edge of page 1",

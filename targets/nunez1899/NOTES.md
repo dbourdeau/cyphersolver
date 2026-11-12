@@ -1,6 +1,8 @@
 # Roberto Núñez to José Y. Limantour, Mexico 26 Aug 1899: word-code telegram (catalogue 1461, part)
 
-Status proposed: **read** (12 Nov 2026), through a contemporary translation filed under other numbers.
+Read in part by the strict count (111 of 119 words = 93.3%, 12 Nov 2026), through a contemporary translation filed under
+other numbers; the contributor's own figure was 97% of the 114 telegram units, class read. Written up on the site
+(nunez1899.html) at the integration of PR #464.
 
 ## Document
 
@@ -91,22 +93,53 @@ scans before opening the transcription, and found no disagreement that affects t
 `key_frozen.tsv` alone. It compared 9928 with the reading word for word. Agreed state: read, grade A
 (`reading_review` in `profile.json`). Its two sign doubts and its remark on "pasado año" are listed below.
 
+## Integration check (12 Nov 2026)
+
+Done by the integrating session. Reproduced: check_marks.py (22 lines, 0 mismatches); heldout.py: 28 of 65 code tokens
+covered (19 distinct code words), 28/28 agree with 9927/9928. The frozen key was built from 9922, 9929 and 9930, each
+with its own plain text on the same sheet, so the test does not use the translation of 9926 itself; that it was frozen
+before 9926 was compared with the translation rests on the contributor's record (the file header, one commit). Five of
+the 28 matches are by code root with another ending. Image CDLIV.1a.1883.38.9926.0002 was fetched from the CEHM viewer
+(no host refused): lines L01-L03 agree with the transcription.
+**Class changed from read to read in part.** The README read bar counts supplied words and guesses as not read. Counted
+over the 114 telegram units plus the 5 words the translator supplied ({+de} twice, {+aquí}, {+empréstito}, {+en}), the
+holes are the guess for ampida, the 2 words not rendered (te se) and the 5 supplied words: 111 of 119 = 93.3%, under 95%.
+The contributor's 97% (111 of 114 units) leaves the supplied words out. 36 of the 65 code values rest only on the
+contemporary translation of this very telegram, which is why the method is "read from existing decipherment".
+
 ## Remaining gaps
 
-- *ampida* (L06) - blocker: no-key; the contemporary translator left it blank; context and Limantour's answer
+- ampida (L06) - blocker: no-key-material; the contemporary translator left it blank; context and Limantour's answer
   ("asunto Depósito Banco Inglaterra") suggest "depositen" or "inviertan", marked as a guess.
-- *te se* (L16) - blocker: garble?; two telegraphed words with no counterpart in the translation, possibly a
-  transmission error.
-- Three code-word readings are not certain: *curadela* (L04, under the pencil docket), *pareciendo..* (L20, ending
-  under the watermark), *torrejones* (L05, last letters).
-- Two small sign doubts raised by the blind review (12 Nov 2026), left as transcribed: L17 *serian* may begin with
-  a v (*verian*); L19 *rolliza* may end in o. Neither changes the reading (*serían* is a clear word; *rolliza* is a
-  code word valued from 9928).
-- *pasado año* (L02) is rendered literally, "after a year" (a year having passed); "next year" is also possible.
-- 36 code values rest on the one contemporary translation (no second source); a codebook of this "clave" was not
-  found in the file.
-- Other telegrams of 1899 in file 38 may share the code (9906-9908 Núñez with translations, 9923 Limantour from
-  Karlsbad with a coded second part); images were fetched for 9906-9908 but not used.
+- te se (L16) - blocker: too-short; two telegraphed words with no counterpart in the translation, possibly a
+  transmission error; one occurrence, nothing to test them against.
+- curadela, pareciendo.., torrejones - blocker: illegible; last letters hidden under the pencil docket (L04), the
+  watermark (L20) or at the edge (L05); their values are still those of 9928.
+- serian (L17), rolliza (L19) - blocker: illegible; the blind review (12 Nov 2026) saw serian possibly beginning with
+  v and rolliza possibly ending in o; left as transcribed, neither changes the reading.
+- pasado año (L02) rendered literally, "after a year"; "next year" is also possible - blocker: too-short; two words
+  with no other occurrence.
+- 36 code values rest on the one contemporary translation, with no second source - blocker: no-key-material; no
+  codebook of this clave was found in the file.
+
+Not reading gaps: other telegrams of 1899 in file 38 may share the code (9906-9908 Núñez with translations, 9923
+Limantour from Karlsbad with a coded second part); images were fetched for 9906-9908 and not used, because they could
+only add values to words the translation already values. The five words the translator supplied are counted as not
+read in the strict share (above).
+
+## Escalation
+
+- [x] siblings: the other telegrams of the code opened: 9922, 9929 and 9930 (the frozen key), and the translation
+  9927/9928; 9906-9908 fetched and not used, 9923 not opened.
+- [x] clear-pages: the translation filed as 9927 (pencil draft) and 9928 (fair copy) is the decipherment; it was found
+  here although the record says "sin traducción".
+- [x] known-keys: the code of this series, frozen from 9922, 9929 and 9930, tested on 9926 (28 of 28); the Speyer code
+  of 1905 is a different one (not this key).
+- [x] print: one web search (12 Nov 2026) found work on the 1899 conversion loan (Weller, EHS working paper 13023; a
+  UNAM thesis on Limantour's Hacienda) and no edition of this telegram or its translation.
+- [n/a] key-rebuild: the 36 values not in the frozen key are set from the translation, which is the reading source
+  itself; no other text of the code is read here to extend it.
+- [x] retry: every code word decrypted again with key.tsv; check_marks.py passes (22 lines, 0 mismatches).
 
 ## Prior art (checked 12 Nov 2026)
 
