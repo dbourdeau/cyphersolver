@@ -1,0 +1,255 @@
+{
+ "schema_version": 1,
+ "target": "sosa1554",
+ "title": "Álvaro de Sosa, governor of Tierra Firme, to the officials at Seville, Nombre de Dios, 4 July 1554 (catalogue 2192, letter 1 of AGI Indiferente 737 N.171): key rebuilt from the clear copy in Panama 29 R.6 N.23 and tested on held-out paragraphs; decoded, not read",
+ "documents": [
+  {
+   "id": "ind737_letter1",
+   "read": "not read",
+   "shelfmark": "Archivo General de Indias, Indiferente General 737, N.171, images 1-2 (PARES 300401)",
+   "date": "4 July 1554 (from the clear copy)",
+   "year": 1554,
+   "country": "Panama",
+   "route": "Álvaro de Sosa, Nombre de Dios -> officials at Seville",
+   "places": {
+    "from": "Nombre de Dios",
+    "to": "Seville"
+   },
+   "language": "Spanish",
+   "pages": 2,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "separate collection"
+    ],
+    "source": "Clear copy of the same letter in AGI Panama 29 R.6 N.23 (PARES 381859), images 1-2, named in the PARES description of Indiferente 737 N.171 (transcribed in clear_panama29_R6_N23.txt). The same file holds a second clear copy (image 5) and a second cipher copy (images 8-9); neither was used."
+   },
+   "length": {
+    "tokens": 1651,
+    "distinct": 76,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_ind737_letter1.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "PARES JPEGs at 864 px (the largest served)",
+    "image_quality": "fair",
+    "notes": "Pass 1 of all 41 lines from half-line crops at 2.5x, made before the key; pass 2 of the held-out lines 1.29-2.06 from fresh crops at 2.8-3x (line starts of image 2 not re-read), differences settled on the image. Dots above and below are often hard to see at this size. Length: 1651 sign tokens, each sign with its marks one token, the word gaps and the paragraph marks + / // not counted (docs/_check_profile.py --measure counts 2097 with the word gaps); distinct counts each sign-and-mark combination separately; 7 tokens are unidentified. An independent blind spot-check of 4 lines agreed on roughly 85% of base shapes; the differences are listed in NOTES.md, Remaining gaps, and are not settled."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Letter substitution in Latin-looking signs, word gaps kept. A consonant sign takes a dot above for a following a and a dot below for a following e; other vowels have their own signs (e = s, i = a free dot, o = B/ah, u = o/w/3h, a = nh/g). D with a dot, above or below, is que. A few homophones (n = m/N, c = x/r, l = L/1). Numbers are written out in words.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 34,
+  "diacritics": {
+   "used": true,
+   "note": "dot above = following a, dot below = following e, two dots above = following a; D with a dot = que"
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "kept",
+  "notes": "distinct_symbols: the 34 identified base shapes in the transcription of letter 1 (marks not counted apart; ? and ?? left out). key_frozen.tsv has 36 entries plus the mark rules. Five shapes (2, b, d, e, p) have no value yet: 49 tokens, besides the 7 unidentified ones. No nulls or code words were found in letter 1; D' and D, = que is the only sign for a word. Letters 2-5 of the unit are in other hands; the second hand forms several signs differently."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The contemporary clear copy of letter 1 in AGI Panama 29 R.6 N.23 (named in the PARES description of Indiferente 737 N.171); it gives the text, not the key. No edition or decipherment of the cipher found: catalogue vetting of 4 Nov 2026 (not on DECODE, nothing in Tomokiyo, no study of Indiferente 737 N.171) and one web search on 12 Nov 2026. Lohmann Villena, Cifras y claves indianas (1954), not checked.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "human_role": "WAINUT set the task (catalogue 2192) and the rules; AI language-model agents transcribed, built and froze the key, decrypted and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "PARES images of Indiferente 737 N.171 and Panama 29 R.6 N.23 at 864 px",
+   "scripts in this folder (mechanical decryption, letter alignment and held-out score, marked reading and mark check)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-12",
+  "last_date": "2026-11-12"
+ },
+ "solution": [
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "Indiferente 737 N.171 (28 images) and Panama 29 R.6 N.23 (11 images) fetched from PARES at 864 px, the largest size served.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "literature search",
+   "what": "Catalogue vetting record of 4 Nov 2026 and one web search: no edition or decipherment of the cipher letters found. Lohmann Villena (1954) not checked.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "Sign conventions written first (SIGN_CONVENTIONS.md, shapes only); pass 1 of all 41 lines of letter 1 from half-line crops at 2.5x, before any key; the clear copy transcribed from Panama 29 images 1-2.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "key from source",
+   "technique": [
+    "manual reconstruction",
+    "EM alignment"
+   ],
+   "what": "Draft key from word pairs of paragraphs 1-2 against the clear copy, refined by letter-alignment tallies (scripts/em.py, Needleman-Wunsch); frozen as key_frozen.tsv (36 entries plus the two mark rules) before the held-out paragraphs were scored.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "Pass 2 of the held-out lines 1.29-2.06 from fresh crops at 2.8-3x, after the freeze; differences settled on the image. With pass 1 alone the held-out score is 443/587 (75.5%), so the second pass did not inflate the test.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Frozen key on held-out paragraphs 3-4: 447 of 587 copy letters matched (76.1%), with the copy's numerals written out; 400 of 535 (74.8%) against the copy as written. Training paragraphs 1-2: 1124 of 1408 (79.8%). The two-line heading, never used for the key, decrypts to the copy's title.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Marked reading: every cipher word written as its mechanical output, or as {mechanical/clear} where it departs from the copy; scripts/check_marks.py passes (39 lines, 0 unmarked departures). 409 cipher words: 161 verbatim from the signs, 248 gloss-only (form taken from the copy). docs/_check_reading.py on the mechanical decryption: clean share 0.0.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "Letter 2 (images 5-6, another hand): one pass of lines 1-8 of image 5, decrypted with the frozen key unchanged (work/letter2_attempt/). The heading decodes in part; lines 5-8 do not, because the second hand's sign values differ.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Independent blind review by an AI language-model agent that did not take part: 4 lines copied from the scans before the transcription was opened (roughly 85% of base shapes agree; differences in dots and a few sign identities); decryption and mark check re-run; held-out score re-measured; no key token occurs only in the held-out lines; the correct decryption against the wrong part of the copy scores 0.39-0.41 and 20 shuffled keys 0.384 on average (0.419 at most), against 0.761. State 'decoded, not read' confirmed; letter 2 judged an attempt, not a separate text.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Integration check (12 Nov 2026) by a reader who took no part: em.py re-run (training 1124/1408, held out 447/587 = 76.1%, P4 against the copy as written 400/535) and check_marks.py (39 lines, 0 failures) reproduce the figures; the transcription could not be compared with the PARES scans (HTTP 429 twice). No page written: escalation open, five gaps not-attempted.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "key": "partial",
+  "method": "key recovered based on plaintext from external sources",
+  "method_basis": "Key built from paragraphs 1-2 of letter 1 (Indiferente 737 N.171) against the contemporary clear copy of the same letter filed in another bundle (Panama 29 R.6 N.23), frozen, and tested on held-out paragraphs 3-4 and on the heading.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "verification": [
+   "independent verification",
+   "matched control",
+   "key confirms"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the clear copy of letter 1 in AGI Panama 29 R.6 N.23, images 1-2: paragraphs 1-2 gave the key, paragraphs 3-4 the held-out test",
+    "date": "1554",
+    "source": "PARES 381859, images 1-2"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "key rebuilt from letter 1 and its clear copy, frozen and tested on held-out paragraphs; letter 1 decoded, not read",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "letter 1 (images 1-2) of Indiferente 737 N.171 and its clear copy in Panama 29 R.6 N.23; lines 1-8 of letter 2",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "one independent AI reader, blind on 4 lines; no human palaeographer",
+    "date": "2026-11-12"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "ind737_letter1",
+    "label": "Letter 1, Indiferente 737 N.171 images 1-2, 4 July 1554",
+    "transcription": "transcription_ind737_letter1.txt",
+    "decryption": "decryption_ind737_letter1.txt",
+    "reading": "reading_ind737_letter1.md",
+    "translation": "translation_ind737_letter1.md",
+    "contemporary": "clear_panama29_R6_N23.txt",
+    "language": "es",
+    "state": "decoded, not read",
+    "summary": "The content is known from the clear copy: news of the Peru risings of Francisco Hernández (presumably Hernández Girón), a plot against the governor at Nombre de Dios that ended in executions, the merchants of the fleet who bought too dear, news of sixteen French ships, the general Cosme Rodríguez Farfán's haste to sail, and the money sent for the king. The cipher adds the key and its validation, not new content.",
+    "note": "Words 409: 161 verbatim from the signs, 248 gloss-only (the mechanical output departs from the copy and the form in the reading is the copy's; many differ by one letter or a shifted word boundary). The mechanical text is recognisable Spanish but has broken words in every sentence: docs/_check_reading.py gives 0 clean sentences (40 auto-detected, hole rate 0.599; forced to Spanish, 37 sentences, hole rate 0.611). The translation is of the clear copy."
+   }
+  ],
+  "key_file": "key_frozen.tsv",
+  "gaps": [
+   {
+    "item": "Sign readings at 864 px (dots above and below, o against s, N against m)",
+    "blocker": "illegible",
+    "detail": "About a quarter of the letters fail, mostly from sign readings, not the key. The blind reviewer read lines 1.06, 1.21 and 2.07 differently in places (listed in NOTES.md); both readings are kept open. Lines 1.01-1.28 and 2.07-2.10 had one pass only."
+   },
+   {
+    "item": "Second cipher copy of letter 1 (Panama 29 R.6 N.23, images 8-9)",
+    "blocker": "not-attempted",
+    "detail": "Not compared; the cheapest way to settle the doubtful dots."
+   },
+   {
+    "item": "Signs without a value: 2, b, d, e, p (49 tokens) and 7 unidentified tokens",
+    "blocker": "not-attempted",
+    "detail": "Rare in letter 1; the other letters would give more places."
+   },
+   {
+    "item": "Letter 2 (images 5-6, Relación de los navíos de la flota)",
+    "blocker": "not-attempted",
+    "detail": "Lines 1-8 of image 5 transcribed once; the heading decodes in part with the letter-1 key; the second hand's sign values are open. Not a decoded document."
+   },
+   {
+    "item": "Letters 3-5 (images 9-11, 13-15, 17-26)",
+    "blocker": "not-attempted",
+    "detail": "Not transcribed."
+   },
+   {
+    "item": "Prior art: Lohmann Villena, Cifras y claves indianas (1954)",
+    "blocker": "not-attempted",
+    "detail": "Not checked; may print this key or a related one."
+   }
+  ]
+ }
+}
