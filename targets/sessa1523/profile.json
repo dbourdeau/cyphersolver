@@ -240,7 +240,8 @@
    "what": "Consistency pass (cl): 'read in part' not justified because R9660 ff. 141v-146v still need the sign-by-sign re-transcription (not-attempted kept); NOTES Status changed from read in part to in progress.",
    "result": "partial",
    "technique": ["statistical test"]
-  }
+  },
+  {"date": "2026-11-12", "kind": "verification", "technique": ["manual reconstruction", "language-model scoring", "statistical test"], "what": "Brice Dudout (Claude Opus 5.5): R9660 ff. 141v-146v re-read sign by sign on DECODE R9660 at full size against b34 (a). Part 1's single sign written ꝍ is two signs (6 with a bar = r; z-hook over o = s), the flat-topped g is d, reversed c is q, the angle sign is ñ, part 2's 'ges' is qes (es) and its Ɉ resolved per occurrence; 124 lines changed, transcription and 25 doubtful signs frozen by SHA-256 before decoding. One pre-registered measure on those lines (one fixed key from b34's own values, 400 controls): -2.423 vs -2.453 per character for b34 (a), every control below (re-run with a quote-tracking bug fixed: -2.507 vs -2.518, controls below). 95% rule, ff. 141v-146v: 72.0% -> 78.7% of tokens sure or probable (re-read lines 70.5% -> 80.0%); still under the bar (dudout/README.md).", "result": "partial"}
  ],
  "outcome": {
   "validation": {
@@ -329,6 +330,12 @@
     "note": "CSP Spain 2 nos. 534, 540, 541, 544 calendar four of the letters from the contemporary decipherments",
     "date": "1866",
     "source": "G. A. Bergenroth, Calendar of State Papers, Spain, vol. 2 (1866), nos. 534, 540, 541, 544, 545"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "R9660 ff. 141v-146v re-read sign by sign on the DECODE images against b34 (two signs under ꝍ separated, d, q, ñ and qes signs named, transcription frozen before decoding, one pre-registered measure) and the changed words re-read: 72.0% -> 78.7% of tokens by the 95% rule (dudout/)",
+    "date": "2026-11-12"
    }
   ],
   "texts": [
@@ -345,6 +352,7 @@
     "summary": "The Duke of Sessa, imperial ambassador in Rome, to Charles V, from his duchy: no contemporary decipherment and not calendared by Bergenroth. Transcribed in full and deciphered in part (about 57%) with the 1524 Sessa key; the file gives each cipher line (a) with its reading (b), open groups in [ ]; it opens on letters sent 'por via de Francia' and 'la letra al duque de Bari'.",
     "language": "es",
     "state": "decoded, not read",
+    "reading_review": {"grade": "B", "by": "Brice Dudout (Claude Opus 5.5)", "date": "2026-11-12", "note": "12 Nov 2026, Brice Dudout (Claude Opus 5.5): ff. 141v-146v re-read sign by sign; phrases now build on most lines (pensar, Pascua, el restante, empresa, suspende, les dio tiempo, cardenal Petru[cci], asiento que, suspicion, pedir, engañados, sin au[d]oridad, conquistar, sin duda, restitucion, el auditor, es estrecho, escusa, escriva pidiendo, podra, sucediere, despedir), but about a fifth of the tokens are still open groups or letters without sense: 78.7% by the 95% rule (dudout/r9660_141v-146v_reading_reread.txt); state left to the maintainer"},
     "note": "Re-read 23 Oct 2026 (b34, R9660_reread_log.md): no decipherment, copy or print reachable (seven DECODE records in RAH 9/27, none with a decipherment; f. 141r is marked 'Dup.da', the first copy not imaged; not in CSP Spain 2). The sessa1524 key values of passes 16, 17 and b23 applied (reading_r9660_b34.txt): hole rate of the decode 0.28 -> 0.21 (472 open groups or queried letters in 2,225 words). Only the first cipher paragraph of f. 141r builds sentences (R9660_reading.md, partial reading: 0.273 plain, 0.727 explicit holes). Blockers: about 100 unattested code groups (no-key-material); the court's decipherment leaves in the RAH volume (needs-physical-access); garbled spelled runs on ff. 141v-146v (not-attempted, a sign-by-sign re-transcription)."
    },
    {

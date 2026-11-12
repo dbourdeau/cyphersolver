@@ -1,0 +1,26 @@
+# Pre-registered run (PREREG_measure.md; scripts/measure_reread.py, SHA-256 92e473a3...), 2026-11-12 12:19
+portion: 124 lines; decoded letters re-read 1658, b34 1648
+S re-read  = -2.4227
+S b34 (a)  = -2.4533
+permuted keys (200): max -2.7451 mean -3.0820
+shuffles (200):      max -2.7277 mean -2.7849
+empirical p = 0.0025
+criterion 1 (above all 400 controls): PASS
+criterion 2 (re-read > b34 under same key): PASS
+void (< 300 letters): False
+
+# Same script with one bug fixed (scripts/measure_reread_fix.py --per-line-quotes): the frozen script tracked clear-text quotes
+# across lines, but in b34 a quote left open at a line end closes there; about half the portion was skipped as clear text.
+# Same seed, controls and criteria; reported beside the frozen run, not instead of it.
+portion: 124 lines; decoded letters re-read 3734, b34 3685
+S re-read  = -2.5066
+S b34 (a)  = -2.5181
+permuted keys (200): max -2.8137 mean -3.1695
+shuffles (200):      max -2.7925 mean -2.8735
+empirical p = 0.0025
+criterion 1 (above all 400 controls): PASS
+criterion 2 (re-read > b34 under same key): PASS
+void (< 300 letters): False
+
+# Reference only: targets/sessa1524/measure_read.py on b34's own (b) reading of the same 124 lines
+b34_portion_b.txt: tokens 2509; read as sense 1770 (70.5%); open groups 655; letters without sense 84; tentative values counted as read 50
