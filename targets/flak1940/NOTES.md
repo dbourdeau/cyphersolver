@@ -50,3 +50,7 @@ Frame 0993: Flakgruppe Friedrichshafen hands over to Flugabwehrkommando Schwarzw
 | `contributor_*.md` | the contributor's reading, method, open points, prior-art search, README and sources |
 | `VERIFICATION.md` | what the project re-checked |
 | `profile.json` | the target profile |
+
+## Contribution: the message of 4 June 1940 (Brice Dudout, 12 Nov 2026)
+
+The five-part radio message of 4 June 1940 on frames 0863-0867 (179, 190, 194, 186 and 204 letters with indicator groups) decrypts in full with the key of that day, K1 (19) 9 14 17 1 12 6 18 3 16 10 4 8 19 13 7 2 11 15 5 and K2 (22) 19 22 9 17 1 12 7 16 21 13 10 20 4 18 2 15 6 3 8 11 5 14; its plaintext is the teleprinter message on frame 0862 (Flak units moved into position on 3-4 June 1940 to protect army unloadings in the Black Forest). Harumi-Matsuba published this key first, in a comment on issue #364 and in his repository (11 Nov 2026). Brice Dudout recovered the same keys independently the same day, from his own transcription of the images (28 Oct 2026, made before any key was known), by a known-plaintext search on parts 1 and 2, and tested them once on part 4, held out, under a pre-registered protocol (quadgrams -4.993 against -6.643 for the best of 400 controls; agreement with the predicted plaintext 0.989 against 0.227). Six doubtful letters were checked on the images; 129 of 129 words read as sense, 5 of them probable. Transcription, decryption, reading, translation, key, solver code and the frozen test are in `dudout/` (`dudout/README.md`).

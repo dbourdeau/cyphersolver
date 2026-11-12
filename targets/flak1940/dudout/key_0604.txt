@@ -1,0 +1,16 @@
+Key of 4 June 1940, Luftgau VII double columnar transposition (NARA RG 242, T405 roll 9, frames 0863-0867)
+The same key was published first by Harumi-Matsuba on 11 Nov 2026 (issue #364; repository Harumi-Matsuba/flak1940-public,
+commit de8efa9, data/key_0604.txt). Recovered independently the same day by Brice Dudout (Europe chiffrée) with Claude
+Opus agents, and validated once on part 4, held out (frozen/). This file: CC BY 4.0, credit Harumi-Matsuba and Brice Dudout.
+
+Key numbers per column, as on a key card (the column with number 1 is read first):
+K1 (19 columns, applied first to the plaintext): 9 14 17 1 12 6 18 3 16 10 4 8 19 13 7 2 11 15 5
+K2 (22 columns, applied second):                 19 22 9 17 1 12 7 16 21 13 10 20 4 18 2 15 6 3 8 11 5 14
+
+Encipherment: write the plaintext in rows of 19 under K1, read the columns off in key order (irregular grid,
+the last row short); write the result in rows of 22 under K2 and read the columns off the same way; put the
+indicator group in front and cut into five-letter groups. Each part of a multi-part message is enciphered on its own.
+Decryption: remove group 1, undo K2, then undo K1 (solver/decrypt.py).
+
+Indicator groups of this message (group 1 of parts 1-5): rlehs, jktqd, hyvxz, abexb, abhvy. How they relate to the
+key is not known.
