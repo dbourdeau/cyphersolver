@@ -1,0 +1,318 @@
+{
+ "schema_version": 1,
+ "target": "reyes1886",
+ "title": "Bernardo Reyes to Ignacio Revueltas, Monterrey, 1 April 1886 (catalogue 1447): War Ministry two-digit key rebuilt from the cipher letter and contemporary translation of 9 Dec 1885 (DLI.3.524.1), tested on a held-out half, and applied to the ten cipher runs of DLI.4.634.1",
+ "documents": [
+  {
+   "id": "dli_4_634_1",
+   "read": "read in part",
+   "shelfmark": "Mexico City, CEHM-Carso, Fondo DLI (Archivo del General Bernardo Reyes), DLI.4.634.1",
+   "date": "1 April 1886",
+   "year": 1886,
+   "country": "Mexico",
+   "route": "Gen. Bernardo Reyes, Monterrey -> Gen. Ignacio Revueltas, Mexico City",
+   "places": {
+    "from": "Monterrey",
+    "to": "Mexico City"
+   },
+   "language": "Spanish",
+   "cleartext_in_document": "interspersed",
+   "pages": 1,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the page. The key comes from DLI.3.524.1 (Revueltas to Reyes, 9 Dec 1885), a cipher letter with its contemporary translation."
+   },
+   "length": {
+    "tokens": 68,
+    "distinct": 33,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription_634.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "CEHM viewer image http://visor.cehm.org.mx/assets/docx/fondos/jzd/DLI/4/634/1/DLI.4.634.1.0001.jpg",
+    "image_quality": "good",
+    "notes": "Two passes (1x, then fresh 2x crops) agree on all 68 groups; one pass-1 doubt (13 or 10) settled on the crop as 13."
+   }
+  },
+  {
+   "id": "dli_3_524_1",
+   "read": "not read",
+   "shelfmark": "Mexico City, CEHM-Carso, Fondo DLI, DLI.3.524.1",
+   "date": "9 December 1885",
+   "year": 1885,
+   "country": "Mexico",
+   "route": "Ignacio Revueltas, Mexico City -> Bernardo Reyes, Monterrey",
+   "places": {
+    "from": "Mexico City",
+    "to": "Monterrey"
+   },
+   "language": "Spanish",
+   "cleartext_in_document": "interspersed",
+   "pages": 2,
+   "plaintext": {
+    "location": [
+     "separate paragraph"
+    ],
+    "source": "Contemporary translation ('Traducción') on page 2 of the same item, below the end of the cipher. Used as the key source, not as a reading of its own."
+   },
+   "length": {
+    "tokens": 290,
+    "distinct": 44,
+    "unit": "code groups",
+    "measured": false,
+    "file": "transcription_524.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "CEHM viewer images DLI/3/524/1/DLI.3.524.1.0001.jpg and .0002.jpg",
+    "image_quality": "good",
+    "notes": "One pass, aligned with the translation; rows that do not align one group to one letter are tagged and not used. The right edge of page 1 is cut by the scan; groups lost there are ??. Token count approximate."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Clear Spanish with key words in two-digit numbers joined by hyphens. Each group stands for one letter; letters have one to three groups (a 17 47 87; e 13 43 83; i 19 49 89; o 21 31 61; r 57 77 97; t 56 76 96). ch appears to have its own groups (12, 82, from context). The War Ministry key of the Reyes-Revueltas channel, not the President's four-digit code nor the new table of 16 Mar 1886.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "2",
+   "separation": "mixed"
+  },
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "random",
+  "word_division": "kept",
+  "notes": "Groups joined by hyphens within a run; runs separated by clear words. Key: 41 groups frozen from 245 pairs of DLI.3.524.1 (key_frozen.tsv). Seven groups of 634.1 (12, 20, 23, 40, 53, 65, 82) are not in it and are filled from context in the reading."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No edition or decipherment found: two web searches on 12 Nov 2026 (general work on Reyes and Porfirian espionage only); catalogue check of 28 Oct 2026 (known.py, Narváez articles) found none.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "cleartext context"
+  ],
+  "attack": "known plaintext",
+  "human_role": "WAINUT set the task (catalogue 1447) and the rules; AI language-model agents transcribed, built and froze the key, ran the held-out test, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "CEHM viewer images",
+   "scripts in this folder (key build, held-out test, decryption, mark check)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-12",
+  "last_date": "2026-11-12"
+ },
+ "solution": [
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "DLI.4.634.1 and siblings DLI.3.455.1, 3.524.1, 3.525.1, 4.623.1, 4.630.1 fetched from the CEHM image server, one at a time, 2 s apart.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "Sign conventions written first; the 68 groups of 634.1 transcribed in two passes (1x, then fresh 2x crops), 68/68 agree. The 634.1 runs were also read tentatively from the clear context before the sibling was fetched.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "key from source",
+   "what": "Key built from the cipher and contemporary translation of DLI.3.524.1 only (245 pairs, 41 groups, no conflicts) and frozen (key_frozen.tsv, FROZEN.sha256). DLI.3.455.1 p. 2 and DLI.3.525.1 checked and found to be in the President's four-digit code, not used.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Held-out: key from rows 1-15 of 524.1 applied to rows 16-31 and graded against the translation: 99 of 114 letters right, 0 wrong, 15 on unseen groups. On 634.1 the frozen key covers 60 of 68 groups and agrees with the earlier context reading on all 60 (agreement, not blind).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "634.1 decrypted mechanically with key_frozen.tsv and read with every departure marked; scripts/check_marks.py rebuilds the decryption and passes. 5 of 12 cipher words verbatim, 7 with one context-filled letter, 0 holes. The reading checker: reading 0.722, letter section 0.818, translation 0.765.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "literature search",
+   "what": "Two web searches: no edition or decipherment of this letter.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Independent blind review by a second AI language-model agent: 50 of the 68 groups of 634.1 and three lines plus one row of 524.1 checked against the images, all agree; check_marks.py, decrypt.py and the held-out test reproduced. The reviewer set the text to not prose (10 short runs inside a clear letter, as ralamb1657), grade B.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 313 tokens, 48 types, es-modern order 4: reading -1.714 per letter; random keys -6.835 (z 9.0); key annealed onto shuffled ciphertext best -2.891 (mean -3.02, z 8.8); annealer on the real text -2.615. Verdict: pass.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-12",
+   "model": "es-modern",
+   "file": "validation.tsv",
+   "tokens": 313,
+   "types": 48,
+   "tokens_per_type": 6.52,
+   "score": -1.714,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -6.835,
+     "sd": 0.567,
+     "max": -5.635,
+     "z": 9.0,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -3.02,
+     "sd": 0.148,
+     "max": -2.891,
+     "z": 8.8,
+     "p": 0.1429
+    }
+   },
+   "power": -2.615,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -1.714; polyphony 0.0; 35 unread tokens left out; annealer on the real text from random keys reached -2.615"
+  },
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Key rebuilt from the contemporary translation of the cipher letter DLI.3.524.1 (9 Dec 1885) in the same channel, frozen, tested on a held-out half of that letter, and applied to the bare cipher runs of DLI.4.634.1.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "All 10 cipher runs (68 groups, 12 words) of the one-page letter are read; 7 of the 12 words rest on one context-filled letter each. The runs are short words inside a clear letter, marked not prose in the texts.",
+  "verification": [
+   "contemporary decipherment",
+   "matched control",
+   "historical consistency",
+   "statistical test"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the translation written with the cipher letter of Revueltas to Reyes, 9 Dec 1885",
+    "date": "1885",
+    "source": "CEHM-Carso DLI.3.524.1"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "key rebuilt from DLI.3.524.1, frozen and tested on a held-out half; the cipher runs of DLI.4.634.1 deciphered and read",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "DLI.4.634.1 (two passes) and the key pairs of DLI.3.524.1, from CEHM images",
+    "date": "2026-11-12"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "dli_4_634_1",
+    "label": "DLI.4.634.1, Reyes to Revueltas, 1 Apr 1886: 10 cipher runs in a clear letter",
+    "transcription": "transcription_634.txt",
+    "decryption": "decryption_634.txt",
+    "reading": "reading_634.md",
+    "translation": "translation_634.md",
+    "language": "es",
+    "state": "not prose",
+    "summary": "Garza Galán, since his arrival, is moving towards a reconciliation with General Cervantes, which shows Reyes how useful his journey to the capital was; but since Reyes fears a 'ranchero' more than a politician, he will keep watch on that gentleman's conduct, without ceasing to draw their relations closer.",
+    "note": "Not prose: 10 short cipher runs (one or two words each, 12 words) set into a letter written in clear Spanish; given with our decode with key_frozen.tsv and an English gloss. The runs form no sentence of their own; the sentence is carried by the clear text around them. Words: 5 verbatim from the signs (su, miedo, conducta, dejar, eso), 7 with one letter filled from context on a group not in the frozen key (provechoso, viaje, capital, ranchero, pendiente, dicho, señor; 82 = ch holds at both of its places), ranchero also with the writer's dropped a restored. No holes. The cipher words carry Reyes's distrust of Garza Galán; the clear text carries the reconciliation news. Independent blind review (12 Nov 2026): 50 of 68 groups checked against the image, all agree; check_marks and the held-out test reproduced; set to not prose (grade B) on the ralamb1657 rule for short runs inside clear letters."
+   },
+   {
+    "doc": "dli_3_524_1",
+    "label": "DLI.3.524.1, Revueltas to Reyes, 9 Dec 1885 (key source and held-out test)",
+    "transcription": "transcription_524.txt",
+    "decryption": "decryption_524.txt",
+    "language": "es",
+    "state": "decoded, not read",
+    "note": "The key source: each cipher run of the letter decrypted with key_frozen.tsv beside the words of the contemporary translation on page 2 (scripts/decrypt_524.py). Rows tagged '!' (not one group to one letter) are shown but were not used to build the key. No reading of our own is claimed."
+   }
+  ],
+  "key_file": [
+   "key.tsv",
+   "key_frozen.tsv"
+  ],
+  "gaps": [
+   {
+    "item": "Groups 12, 20, 23, 40, 53, 65, 82",
+    "blocker": "open-codes",
+    "detail": "Values from context only (ch, p, n, j, v, ñ, ch); DLI.3.416.1 and DLI.4.631.1, translated letters in the same key, were not opened and could confirm them."
+   },
+   {
+    "item": "r{+a}nchero",
+    "blocker": "open-codes",
+    "detail": "The weakest word (raised by the reviewer): the writer's dropped a restored and 12 = ch from context."
+   },
+   {
+    "item": "Struck clear word before run R5",
+    "blocker": "not-attempted",
+    "detail": "Probably 'canalla'; not settled."
+   },
+   {
+    "item": "Closing formula after 'Sabe Ud.'",
+    "blocker": "not-attempted",
+    "detail": "Abbreviated, not expanded (clear text)."
+   },
+   {
+    "item": "Independent blind transcription",
+    "blocker": "not-attempted",
+    "detail": "The review checked 50 of the 68 groups against the image; no full blind second transcription, no human palaeographer."
+   },
+   {
+    "item": "DLI.3.524.1, right edge of page 1",
+    "blocker": "needs-physical-access",
+    "detail": "Cut by the scan; a few groups and the last line lost."
+   }
+  ]
+ }
+}
