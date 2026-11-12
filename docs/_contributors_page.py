@@ -146,10 +146,13 @@ def further(pages):
     return sorted(out, key=lambda pg: (workable(pg[1]) == 0, pg[0]['y']))
 
 
-# Progress over time: the targets solved, day by day, split between the project's own results and the contributors', against the targets taken on.
+# Progress over time: the results-table rows solved, day by day, split between the project's own results and those with outside
+# contributors, against every row taken on. The unit and the rule are the landing page's (_build_stats.py): a row of the README
+# results tables counts when its key was recovered or an existing key or decipherment was applied, so the totals here equal the
+# landing page's two headline figures added together.
 START = '2026-09-01'      # the work began in September 2026; an older date in a log is a document's or a source's, not the work's
 BREAK_KINDS = {'reading', 'sibling key', 'key from source', 'crib', 'solver'}
-SOLVING = M.KEY_METHODS | {M.DECIPH}
+SOLVED_CATS = ('ct', 'extpt', 'adjpt', 'extkey', 'known', 'deciph')     # _build_stats.py: keys recovered + existing key or decipherment
 # (band, label, .vchart colour slot), bottom of the stack first
 SERIES = [('prj', 'This project', 's1'), ('con', 'Contributors', 's4')]
 # Two layouts of the same chart: a wide one with the line-end labels, and a narrow one for a phone (the legend names the
@@ -158,11 +161,10 @@ PG = {'wide': dict(W=900, H=340, L=44, R=130, T=22, B=30, tick=7),
       'narrow': dict(W=420, H=300, L=34, R=12, T=16, B=28, tick=14)}
 
 
-def solve_group(p):
-    """The band a solved target goes in; None when no text was obtained (not solved, key only, not applicable)."""
-    m = (p.get('outcome') or {}).get('method')
-    if m not in SOLVING or M.extent(p) not in ('complete', 'partial'): return None
-    return 'con' if CR.provenance_of(p) == 'contributed' else 'prj'
+def solve_group(row):
+    """The band a results-table row goes in, by the landing page's rule; None when it is not solved."""
+    if row['cat'] not in SOLVED_CATS: return None
+    return 'con' if row['outside'] else 'prj'
 
 
 def day_of(p, first, today, solved):
@@ -189,14 +191,17 @@ def spread(labels, gap, lo, hi):
 def progress(real, pages_by_folder, dates, today):
     """Stat tiles, a running-total / per-day chart (inline SVG, with a small inline script for the hover read-out) and a table."""
     import itertools, json
+    import _build_stats as BS
     solved, taken = collections.defaultdict(collections.Counter), collections.Counter()
-    for f, p in real.items():
-        first = dates.get(pages_by_folder[f]['slug'], {}).get('first') if f in pages_by_folder else None
-        d = day_of(p, first, today, False)
-        if d: taken[d] += 1
-        g = solve_group(p)
-        d = g and day_of(p, first, today, True)
-        if d: solved[d][g] += 1
+    slugs = {p['slug'] for p in pages_by_folder.values()}
+    for row in BS.load():
+        ps = [real[f] for f in dict.fromkeys(x for f in row['folders'] for x in (f, f.lower())) if f in real]
+        slug = row['href'][:-5] if row['href'] else next((pages_by_folder[f]['slug'] for f in row['folders'] if f in pages_by_folder), None)
+        first = dates.get(slug, {}).get('first')
+        day = lambda done: min((d for d in (day_of(p, first, today, done) for p in ps) if d), default=None) or day_of({}, first, today, done) or today
+        taken[day(False)] += 1
+        g = solve_group(row)
+        if g: solved[max(day(True), day(False))][g] += 1
     if not solved: return ''
     d0, d1 = datetime.date.fromisoformat(min([*taken, *solved])), datetime.date.fromisoformat(today)
     iso = [(d0 + datetime.timedelta(i)).isoformat() for i in range((d1 - d0).days + 1)]
@@ -258,8 +263,8 @@ def progress(real, pages_by_folder, dates, today):
                 for y, lab, val, cls in spread(ends, 15, T + 6, T + ph))
         hit = f'<rect class="hit" x="{L}" y="{T}" width="{pw}" height="{ph}"/>'
         xh = f'<line class="xh" x1="0" x2="0" y1="{T}" y2="{T + ph}"/>'
-        svg_cum = (f'<svg class="vchart pg-cum pg-{v}" viewBox="0 0 {W} {H}" data-g=\'{geo}\' role="img" aria-label="Targets solved, running total by day, '
-                   f'split between this project and contributors: {tot[-1]} solved of {tk[-1]} taken on by {fd(today)}">'
+        svg_cum = (f'<svg class="vchart pg-cum pg-{v}" viewBox="0 0 {W} {H}" data-g=\'{geo}\' role="img" aria-label="Entries solved, running total by day, '
+                   f'split between this project and outside contributors: {tot[-1]} solved of {tk[-1]} taken on by {fd(today)}">'
                    f'{axes(ymax, step)}<g class="reveal">{taken_line}{"".join(areas)}{"".join(ms)}{end_lab}</g>'
                    f'{xh}<circle class="xdot" r="5" cx="0" cy="0"/>{hit}</svg>')
 
@@ -279,7 +284,7 @@ def progress(real, pages_by_folder, dates, today):
         anchor = ' text-anchor="end"' if left else ''
         best_lab = (f'<text class="lab" x="{X(best) + (-bw if left else bw):.1f}" y="{Y(dtot[best], dmax) + 4:.1f}"{anchor}>'
                     f'{dtot[best]} in one day, {fd(iso[best])}</text>')
-        svg_day = (f'<svg class="vchart pg-day pg-{v}" viewBox="0 0 {W} {H}" data-g=\'{geo}\' role="img" hidden aria-label="Targets solved per day, '
+        svg_day = (f'<svg class="vchart pg-day pg-{v}" viewBox="0 0 {W} {H}" data-g=\'{geo}\' role="img" hidden aria-label="Entries solved per day, '
                    f'split between this project and contributors; the best day was {fd(iso[best])} with {dtot[best]}">'
                    f'{axes(dmax, dstep)}<g class="reveal">{"".join(bars)}{best_lab}</g>{xh}{hit}</svg>')
         return svg_cum, svg_day
@@ -288,8 +293,8 @@ def progress(real, pages_by_folder, dates, today):
 
     # tiles, legend, table
     last7 = sum(dtot[-7:])
-    tiles = [(tot[-1], f'targets solved, of {tk[-1]} taken on'), (cum['prj'][-1], 'solved by this project'),
-             (cum['con'][-1], 'solved by contributors'), (last7, 'solved in the last seven days')]
+    tiles = [(tot[-1], f'entries solved, of {tk[-1]} taken on'), (cum['prj'][-1], 'solved by this project alone'),
+             (cum['con'][-1], 'solved with outside contributors'), (last7, 'solved in the last seven days')]
     tiles_html = ''.join(f'<div class="pg-stat"><b data-n="{v}">{v}</b><span>{t}</span></div>' for v, t in tiles)
     lv = lambda v: f' <b class="lv">{v}</b>'     # the values show in the legend on a phone, where the chart has no line-end labels
     legend = (''.join(f'<span><i class="pg-sw {cls}"></i>{lab}{lv(cum[k][-1])}</span>' for k, lab, cls in SERIES)
@@ -428,7 +433,7 @@ def page(pages, profiles, reg, dates, version, today):
 <main>
 
 <h2 id="progress"><span class="num">01</span> Progress</h2>
-<p>Every target solved since the work began, day by day. A target counts as solved when its text was obtained, in full or in part, however that was done; the bands say how. The day is the first step in the target&rsquo;s solution log that broke or read it, or the day its page went up when the log has no dates. The dashed line is every target taken on, solved or not. Hover or use the arrow keys to read a day; switch to <i>Per day</i> to see the bursts.</p>
+<p>Every entry solved since the work began, day by day. The count is the <a href="index.html#scoreboard">landing page&rsquo;s</a>: an entry is a row of the results tables, and it counts as solved when its key was recovered or an existing key or decipherment was applied, so the total equals the landing page&rsquo;s two headline figures added together. The bands say whether an outside contributor had a part in the result. The day is the first step in the solution log that broke or read it, or the day its page went up when the log has no dates. The dashed line is every entry taken on, solved or not. Hover or use the arrow keys to read a day; switch to <i>Per day</i> to see the bursts.</p>
 {pg}
 
 <h2 id="who"><span class="num">02</span> Who has contributed</h2>
