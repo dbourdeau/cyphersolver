@@ -1,0 +1,21 @@
+PART 1. 30 Nov 1665, R1 (first reader) against R2 (blind)
+  DIFF replace R1[L02] 220 | R2[573L.02] 270
+  DIFF replace R1[R09] HSH | R2[573R.09] PSI
+  DIFF replace R1[R13] 220 | R2[573R.13] 270
+573: R1 tokens 558, R2 tokens 558; equal 555, substituted 3, only-R1 0, only-R2 0; agreement on R1 = 555/558 = 99.46%
+  DIFF replace R1[A08] G | R2[572R.08] Q
+  DIFF replace R1[D01] 382 | R2[574L.01] 381
+572R+574L: R1 tokens 168, R2 tokens 168; equal 166, substituted 2, only-R1 0, only-R2 0; agreement on R1 = 166/168 = 98.81%
+POOLED: R1 726, R2 726, equal 721, substituted 5, indel 0; agreement 721/726 = 99.31%
+
+PART 2. Five letters, first reader against blind reader
+petkum_1665-04-28: first 70 tok, blind 70 tok; equal 70, subst 0, only-first 0, only-blind 0; agreement = equal/alignment cols = 70/70 = 100.00%
+petkum_1665-06-23: first 70 tok, blind 70 tok; equal 70, subst 0, only-first 0, only-blind 0; agreement = equal/alignment cols = 70/70 = 100.00%
+  1665-09-17 replace first[528R.08] G | blind[528R.06] Q~
+  1665-09-17 replace first[528R.18] 15 | blind[528R.10] BET
+petkum_1665-09-17: first 59 tok, blind 59 tok; equal 57, subst 2, only-first 0, only-blind 0; agreement = equal/alignment cols = 57/59 = 96.61%
+  1666-01-18 replace first[597R.26] G | blind[597R.13] Q
+petkum_1666-01-18: first 128 tok, blind 128 tok; equal 127, subst 1, only-first 0, only-blind 0; agreement = equal/alignment cols = 127/128 = 99.22%
+  1666-04-06 replace first[634R.08] FF | blind[634R.03] HSH
+petkum_1666-04-06: first 60 tok, blind 60 tok; equal 59, subst 1, only-first 0, only-blind 0; agreement = equal/alignment cols = 59/60 = 98.33%
+POOLED: first 387, blind 387, equal 383, subst 4, only-first 0, only-blind 0; agreement 383/387 = 98.97%
