@@ -1,0 +1,242 @@
+{
+ "schema_version": 1,
+ "target": "hopken1741a",
+ "title": "Höpken and Carlson, Constantinople, to the chancery president, enclosure 'Lit. A' to the despatch of 24 Feb / 4 Mar 1741: a French memorandum on the last Russo-Ottoman treaty in the hopken1740 code, transcribed with its contemporary gloss and used as a held-out test of the frozen hopken1740 key (222 of 282 groups)",
+ "documents": [
+  {
+   "id": "lita_1741",
+   "read": "read",
+   "shelfmark": "Stockholm, Riksarkivet, Diplomatica Turcica, SE/RA/2119/2119.1/I/9/26 (image series R0003635), image 147",
+   "date": "enclosure to the despatch of 24 Feb / 4 Mar 1741 (endorsement)",
+   "year": 1741,
+   "country": "Sweden",
+   "route": "Carl Fredrik Höpken and Edvard Carlson, Constantinople -> the chancery president (enclosure)",
+   "places": {
+    "from": "Constantinople",
+    "to": "Stockholm"
+   },
+   "language": "French",
+   "cleartext_in_document": "interspersed",
+   "pages": 1,
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Contemporary French decipherment written between the underlined cipher rows."
+   },
+   "length": {
+    "tokens": 282,
+    "distinct": 114,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription_lita_1741.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Riksarkivet IIIF images, full size (lbiiif.riksarkivet.se), R0003635",
+    "image_quality": "good",
+    "notes": "Two passes by one agent (bands at 0.7x, quadrants at 0.9x), digits only; the gloss was in view (it is written between the rows) but read separately, after the digits. No digit disagreement; two groups doubtful (1678?, 1442?)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code",
+   "syllabic"
+  ],
+  "summary": "The second Höpken-Carlson code (as in hopken1740): four-digit groups seen between 1006 and 1915, a syllabary built for Swedish (i/j, u/v/w, a/å/ä, o/ö not distinguished) with word codes for names and terms (1287 storviziren = Grand Vizir, 1713 grefwen = comte, 1516 ottporten = Porte, 1511 hof = Cour, 1448 fred = paix, 1360 tractat = traité). Used here for French; a stroke over a group marks an accent or an apostrophe (1006' = d', 1251' = dé, 1500' = à).",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "4",
+   "separation": "spaces"
+  },
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "syllables",
+    "names",
+    "places",
+    "titles",
+    "common words"
+   ]
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "none",
+  "notes": "Key: hopken1740 key.tsv as on origin/main 54c4ecc65, frozen unchanged (key_frozen.tsv); key.tsv adds 24 values read from the Lit. A gloss (hopken1741a) and corrects two frozen single values (1504 vo, 1840 au)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The contemporary French gloss over the groups on image 147. No edition or modern decipherment found (web searches 11-12 Nov 2026).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "cleartext context"
+  ],
+  "attack": "known plaintext",
+  "human_role": "WAINUT set the task (catalogue 2245-2248) and the rules; AI language-model agents paged the volumes, transcribed, froze and applied the hopken1740 key, ran the held-out test, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "Riksarkivet IIIF images",
+   "scripts in this folder (fetch, crops, contact sheets, decryption, held-out test, mark check)",
+   "docs/_check_reading.py"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-11",
+  "last_date": "2026-11-12"
+ },
+ "solution": [
+  {
+   "date": "2026-11-11",
+   "kind": "access",
+   "what": "Images named by catalogue 2245-2248 fetched at 1200 px from four volumes (R0003590, R0003628, R0003635, R0003636) for contact sheets; R0003636 images 49-51 and R0003635 image 147 at full size; one at a time, 1.6 s apart, no block.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "transcription",
+   "what": "Image 147: 18 cipher rows, two passes, digits only; gloss read onto gloss_lita_1741.tsv afterwards.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Held-out test of the hopken1740 key (frozen unchanged from origin/main; built on volume I/9/21 from a Swedish gloss) against the gloss of the French Lit. A page (R0003635_00147): 222 of 282 groups (79%) give exactly the letters of the gloss at their place, 92% of the 242 groups in the key; shuffled-key control mean 33.4, maximum 51 over 200 shuffles (scripts/heldout.py).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "key from source",
+   "what": "24 new values and 2 corrections read from the gloss (key.tsv, status gloss_1741a / changed_1741a).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Reading built from the cipher with key.tsv; four places where the cipher differs from the gloss noted (de paix, y couvre, auquel, les articles du dit). Marked form against the frozen key checked by scripts/check_marks.py: 84 of 122 words verbatim from the frozen key, 3 repaired, 35 resting on values read from the gloss. Dan's checker: clean share 0.909 (10 of 11 sentences).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Blind review by an independent AI language-model agent: 92 groups read from its own crops before opening the transcriptions (23 on image 147), no disagreement; key_frozen.tsv hash matches origin/main hopken1740 key.tsv; decrypt.py, check_marks.py and heldout.py rerun and reproduced. State read, grade A. One fix: the translation now notes that the cipher has 'couvre' for 'découvre'.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The contemporary interlinear decipherment on the page; the frozen hopken1740 key (rebuilt from the glossed despatch of 15/26 Jan 1740 in volume I/9/21) tested against it.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.975,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Words of Lit. A (image 147) read from the signs with key.tsv: 119 of 122 (84 with values of the frozen hopken1740 key, 35 with values the contemporary gloss gives over the same groups); the 3 words with a marked repair are not counted (scripts/check_marks.py). The continuation of Lit. A beyond image 147 was not looked for.",
+  "verification": [
+   "independent verification",
+   "contemporary decipherment",
+   "matched control"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the French gloss written between the cipher rows of image 147",
+    "date": "1741",
+    "source": "Riksarkivet image R0003635_00147"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "image 147, two passes, digits and gloss",
+    "date": "2026-11-11"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "held-out test of the frozen hopken1740 key on a French page of another volume; 24 values added from the gloss",
+    "date": "2026-11-11"
+   },
+   {
+    "who": "bourdeau",
+    "role": "key or decipherment used",
+    "note": "Daniel Bourdeau's hopken1740 target: its key.tsv (second Höpken-Carlson code, rebuilt from the glossed despatch of 15/26 Jan 1740), reused here frozen and unchanged as key_frozen.tsv",
+    "date": "2026-11-10",
+    "source": "targets/hopken1740/key.tsv (origin/main, sha256 c4e208fe...8f47)"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "catalogue entries 2245-2248 (Sweep D, Riksarkivet IIIF volume pass) and the images they name",
+    "date": "2026-11"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "lita_1741",
+    "label": "Lit. A, image 147: memorandum on the last Russo-Ottoman treaty",
+    "transcription": "transcription_lita_1741.txt",
+    "decryption": "decryption_lita_1741.txt",
+    "reading": "reading_lita_1741.md",
+    "translation": "translation_lita_1741.md",
+    "language": "fr",
+    "state": "read",
+    "summary": "The more one examines the last peace treaty between the Porte and the Muscovites, the more one finds conditions onerous and unbearable for the Sultan, manifest contradictions, and attempts to deceive the Porte, which the Muscovites treated as an inferior prince on whom they meant to impose laws; this is to be shown article by article, beginning with article 2 on the frontiers (breaks off).",
+    "note": "Read through the contemporary gloss, checked group by group against the frozen hopken1740 key (79% exact on the gloss, held out). Against the frozen key: 84 of 122 words verbatim, 3 with a marked repair, 35 resting on values read from this gloss. The cipher differs from the gloss in four places, followed in the reading. The page ends mid-sentence; the continuation was not looked for.",
+    "reading_review": {
+     "grade": "A",
+     "by": "independent AI language-model agent (blind review)",
+     "date": "2026-11-12",
+     "note": "Read as French sentences against the translation: the whole page reads; 84 of 122 words come from the frozen hopken1740 key and the rest from values the contemporary gloss gives over the same groups. 23 groups of this page (92 over the three pages) were spot-checked on the image with no disagreement."
+    }
+   }
+  ],
+  "key_file": [
+   "key.tsv",
+   "key_frozen.tsv"
+  ],
+  "gaps": [
+   {
+    "item": "Continuation of Lit. A",
+    "blocker": "not-attempted",
+    "detail": "Image 147 ends mid-sentence; the next leaves were not opened."
+   },
+   {
+    "item": "Doubtful digits 1678? (H11) and 1442? (H16)",
+    "blocker": "illegible",
+    "detail": "A blot, and a figure written below the group."
+   },
+   {
+    "item": "Other glossed runs in the second code in I/9/25-27 (images 8, 54, 100, 240, 286, 329, 135)",
+    "blocker": "not-attempted",
+    "detail": "Material to confirm more values."
+   },
+   {
+    "item": "Independent second reader",
+    "blocker": "not-attempted",
+    "detail": "Both passes by one agent. A blind reviewer spot-checked 92 groups on images 147, 49 and 50 (23 on 147) with no disagreement; the rest of the page has no second reader."
+   }
+  ]
+ }
+}
