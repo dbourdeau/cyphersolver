@@ -79,8 +79,8 @@ the cipher passages. The contributor's web search (11 Nov 2026) found no edition
 (NKS 1299 e fol.) and the Danish printed collections were not searched at length, so an edition remains possible. No prior-art
 search was repeated at verification or at integration: this section rests on the contributor's and the catalogue vetting's record.
 
-A pointer from the contributor, not checked here: p. 115 of Juel's register (2 Sep 1648, to Vibe; catalogue 2553, unit 261585)
-is in this old cipher. `key.tsv` could be tried on it.
+The pointer on p. 115 of Juel's register (2 Sep 1648, to Vibe; catalogue 2553, unit 261585) was followed by WAINUT (PR #457):
+it is in this old cipher and is read here, see "Register p. 115" below.
 
 ## Integration check (12 Nov 2026)
 
@@ -129,12 +129,46 @@ and 83 fetched from api.rigsarkivet.dk). What that found, and what was changed h
   this round; the figure with them is given once.
 - Wording corrected on the page from this review; see the commit of 12 Nov 2026.
 
+## Register p. 115 (added 12 Nov 2026, from PR #457)
+
+A text outside the ten letters: the entry "To Peder Vibe, Stockholm, 2 Sep 1648" in the extract register of Peder Juel's outgoing
+letters (Rigsarkivet, TKUA, Speciel del, Sverige, Ekstraktprotokol 1647-49, Arkivalieronline unit 261585, image 61, p. 115): ten
+lines of numbers broken by clear words of the register's secretary, no decipherment written on them. WAINUT (PR #457) applied this
+folder's rule unchanged and found it in the old cipher: an own decoder written from the rule reproduces `register_p115/decryption_vibe.txt`
+exactly, and three of its nine nomenclator numbers (212, 351, 401) are among the 22 of the letters of 1649-51 (the other six, 277,
+339, 412, 426, 442 and 446, are new). One key, one entry: the p. 115 files moved here from `targets/juel1647/` (which holds the
+unrelated 8-64 table of the same register). Files: `register_p115/` (transcription with both passes, decryption, reading with
+every departure marked, translation, plain text); the reading was checked with the contributor's `check_marks.py` (passes when run from `targets/juel1647/scripts/` on these files: the
+reading rebuilds the decryption except at marked places) and compared with image 61 at integration (all ten rows agree).
+
+- Reading: "442 sagde nogle dage til 212 at forrige 412 af 351 277 [fogte] hende bort, nu skal 401 føre hende hid igien. Dog blef
+  hand [?dragit]; dennem gang 412 af 339. Kiørde for 412 aff 426 och ..., da tre vogne imellom. Men 412 af 426 gick hen ... hos 446
+  ... 339 ... 442": "442 said some days ago to 212 that the former 412 of 351 277 [...] her away, and that 401 shall now bring her
+  back here again; yet he was [drawn?] ...; the 412 of 426 drove ... with three wagons between", with the codes open.
+- **Counts, by the rule used on this page (certain words only; codes as holes).** 25 cipher words: 23 verbatim in the contributor's
+  count, of which two (bort, skal) rest on digits that the blind review of the contributor's work read as 18 and 8 where both of the
+  contributor's passes had 14 and 4 (so those two are probable, not certain, here); 1 guess ([?dragit], "24 25 4 17 1 7 9 19": read with
+  25 as an opener it gives esbhku, with 24 as the opener and 25 left out d r a g i t); 1 hole (fogte, "31 5 13 6 18": clear figures that
+  do not read). So **21 of 25 words (84.0%)**; with the 15 code tokens (nine numbers) as holes **21 of 40 = 52.5%**; the contributor's
+  count was 23 of 25 (92.0%). Read in part (grade B, the contributor's blind reader). The clear Danish of the register between the
+  runs is not transcribed (a secretary hand on black-and-white microfilm), which is why the sentence checker gives only 0.25.
+- **What this is for the rule.** An application of the published rule, unchanged, to a text it was not built on, in another hand
+  (a secretary's copy of Juel's outgoing letter, where the letters of 1649-51 are Vibe's own): 21 certain words of 25 read as Danish that
+  construes with the clear words around it. It is **not a pre-registered test**: the transcription of p. 115 was made by the
+  contributor after the rule was public, and two digits were settled on the image by the contributor's blind reader, who by the contributor's record read them before knowing where the repairs were. It is
+  independent evidence that the rule is Vibe's old cipher and that it was in use in September 1648, before his letter of 11 Jan 1649 that names it.
+  The nine numbers of the nomenclator found here have no value.
+- Headline figures of this target (the 97.6% and the 66.7%, "ten letters or pages") are those of the letters of 1649-51 and were not
+  recomputed; p. 115 is counted apart, as above.
+
 ## Remaining gaps
 
 - the 68 nomenclator code tokens (22 numbers: 211, 228, 257, 261, 422, 423 ...) - blocker: no-key-material; no code list is in the unit and no letter in this cipher carries a gloss; Juel's replies, the rest of NKS 1299 e at the Royal Library or a code list in the Juel papers could give them
 - five unresolved cipher words (image 64: 24.1=7.5; image 69: 30.13.1.11.14 and 27.8.9.12; image 71: 31.?9.5.17.4.12.18; image 72: 32.9.3.6.11) - blocker: illegible; blots, a tear and confused ticks at the resolution served online; the original could settle some
 - the 32 probable words, of which only the last word of image 62 was checked against the image, at integration (the verification spot-checked one other corrected number, on image 74) - blocker: illegible; each correction rests on a single number at the limit of the microfilm scans served online (listed with its reason in reading.md)
-- no pre-registered held-out test of the old-cipher rule - blocker: no-key-material; every letter of the unit in this cipher has now been opened and read, so a blind test needs new material in the same cipher (p. 115 of Juel's register, catalogue 2553, is reported to be in it)
+- no pre-registered held-out test of the old-cipher rule - blocker: no-key-material; every letter of the unit in this cipher has been opened and read; p. 115 of Juel's register (above) is a read, not a pre-registered, application of the rule to new material, and a blind test needs another new text in the same cipher
+- register p. 115: "fogte" (hole), "[?dragit]" (guess) and the nine nomenclator numbers (277, 339, 412, 426, 442, 446, and 212, 351, 401 of the letters) - blocker: needs-physical-access for the two words (the figures are clear but do not read; the original letter of 2 Sep 1648 would show a copyist slip) and no-key-material for the codes
+- register p. 115: the clear text of the register between the runs - blocker: illegible; a secretary hand on black-and-white microfilm, made out only in part; a reading by a palaeographer of Danish secretary hands is needed
 - prior art outside the repository not searched again (no edition, DECODE or literature search at verification) - blocker: needs-physical-access; the Royal Library's NKS 1299 e fol. and the Danish printed collections are not online in full
 
 ## Escalation
@@ -155,3 +189,7 @@ their code numbers do not overlap, so they are two keys and two targets. Moved h
 `scripts/decode.py`. `frozen/` (both tests) stays in `targets/vibejuel1651/`, unchanged, so that its hashes keep matching.
 The three Krag letters of 1648 (another system, not solved) are a lead: `research/leads.json` id 2527, transcription in
 `research/sweep_2026-11-11_tkua_paging/krag1648_transcription.txt`.
+
+### Integration check of the p. 115 addition (12 Nov 2026)
+
+Own decoder from the rule reproduces `register_p115/decryption_vibe.txt`; the contributor's `check_marks.py` passes; image 61 (all ten rows of the entry) fetched from api.rigsarkivet.dk and compared with the transcription at that reading: no disagreement, with line 4 ("18" and "8") not settled by my crop. Claims review of the added section: line by line by the integrating session; an independent reader is owed.

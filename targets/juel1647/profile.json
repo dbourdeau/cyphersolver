@@ -1,0 +1,381 @@
+{
+ "schema_version": 1,
+ "target": "juel1647",
+ "title": "Peder Juel, Danish resident in Stockholm: register of outgoing letters 1647-48 (catalogue 2553): the 8-64 table rebuilt from Juel's glossed letters of 1648 and tested on a held-out glossed letter; the passages to the King and the chancellor of 20 Nov 1647 read in part; the passage to Hannibal Sehested not solved (the p. 115 entry to Peder Vibe is in another cipher, moved to vibejuel1649)",
+ "documents": [
+  {
+   "id": "king",
+   "read": "read",
+   "shelfmark": "Rigsarkivet (Copenhagen), TKUA, Speciel del, Sverige, Peder Juels og Mogens Høegs gesandtskabsarkiver, Ekstraktprotokol 1647-49 (C.195), Arkivalieronline unit 261585, image 5 (p. 5, top)",
+   "date": "20 Nov 1647",
+   "year": 1647,
+   "country": "Denmark",
+   "route": "Peder Juel, Stockholm -> King Christian IV",
+   "places": {
+    "from": "Stockholm",
+    "to": "Copenhagen"
+   },
+   "language": "Danish",
+   "cleartext_in_document": "interspersed",
+   "pages": 1,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment in the register. Key from the interlinear glosses of the time on Juel's original letters of 1648 (TKUA Sverige, unit 261575, images 117 and 121)."
+   },
+   "length": {
+    "tokens": 19,
+    "distinct": 18,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription_king.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Arkivalieronline full-size JPEGs (api.rigsarkivet.dk/ao/v1/images)",
+    "image_quality": "fair",
+    "notes": "Black-and-white microfilm. Two passes from fresh crops (about 1.2x and 2.6x); disagreements settled on the image and listed in the reconciled file."
+   }
+  },
+  {
+   "id": "chancellor",
+   "read": "read in part",
+   "shelfmark": "Rigsarkivet (Copenhagen), TKUA, Speciel del, Sverige, Peder Juels og Mogens Høegs gesandtskabsarkiver, Ekstraktprotokol 1647-49 (C.195), Arkivalieronline unit 261585, image 5 (p. 5, entry No. 4)",
+   "date": "20 Nov 1647",
+   "year": 1647,
+   "country": "Denmark",
+   "route": "Peder Juel, Stockholm -> chancellor Christen Thomesen Sehested",
+   "places": {
+    "from": "Stockholm",
+    "to": "Copenhagen"
+   },
+   "language": "Danish",
+   "cleartext_in_document": "interspersed",
+   "pages": 1,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment in the register. Key from the interlinear glosses of the time on Juel's original letters of 1648 (TKUA Sverige, unit 261575, images 117 and 121)."
+   },
+   "length": {
+    "tokens": 156,
+    "distinct": 56,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription_chancellor.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Arkivalieronline full-size JPEGs (api.rigsarkivet.dk/ao/v1/images)",
+    "image_quality": "fair",
+    "notes": "Black-and-white microfilm. Two passes from fresh crops (about 1.2x and 2.6x); disagreements settled on the image and listed in the reconciled file."
+   }
+  },
+  {
+   "id": "hsehested",
+   "read": "not read",
+   "shelfmark": "Rigsarkivet (Copenhagen), TKUA, Speciel del, Sverige, Peder Juels og Mogens Høegs gesandtskabsarkiver, Ekstraktprotokol 1647-49 (C.195), Arkivalieronline unit 261585, image 6 (p. 6, entry No. 4)",
+   "date": "20 Nov 1647",
+   "year": 1647,
+   "country": "Denmark",
+   "route": "Peder Juel, Stockholm -> statholder Hannibal Sehested",
+   "places": {
+    "from": "Stockholm",
+    "to": "Norway"
+   },
+   "language": "Danish",
+   "cleartext_in_document": "interspersed",
+   "pages": 1,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment; no glossed sibling in the 3-32 set was found."
+   },
+   "length": {
+    "tokens": 31,
+    "distinct": 20,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription_hsehested.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Arkivalieronline full-size JPEGs (api.rigsarkivet.dk/ao/v1/images)",
+    "image_quality": "fair",
+    "notes": "Black-and-white microfilm. Two passes from fresh crops (about 1.2x and 2.6x); disagreements settled on the image and listed in the reconciled file."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Danish. 8-64 set: a homophonic table in four runs (14-27 k..y up, 28-37 k..a down, 38-49 a..m up, 50-61 z..n down), so most letters have two numbers; 8, 9, 10, 62, 63, 64 are nulls, mostly between words (63 and 64 also inside words); three-digit numbers are a nomenclator. The p. 6 set (3-32, with 86 and 208) is unidentified. (The p. 115 entry is in another system, Peder Vibe's old cipher, and moved to vibejuel1649.)",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-3",
+   "separation": "dots"
+  },
+  "distinct_symbols": 59,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "separator symbol",
+  "notes": "Open in the 8-64 table: 11, 12, 13 (no gloss); 50 stands where s is needed once, in a doubtful group (50|56) where the run gives z; in the build glosses 19 = t, 20 = s, 24 = o where the run would give p, q, u. The four runs are alphabetical, two upward and two downward. distinct_symbols counts the 59 different numbers of the king and chancellor transcriptions (53 of them 8-64, 6 three-digit codes), not the six unidentified signs."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Fryxell, Handlingar rörande Sverges historia 1 (1836) prints a Swedish abstract of this register without the cipher passages; DECODE, Tomokiyo and Lasry have nothing (catalogue vetting 11 Nov 2026); a web search of 12 Nov 2026 found nothing on these passages. Brice Dudout's PR #410 (vibejuel1651) publishes Vibe's old cipher and notes that p. 115 is in it, without reading it.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "cleartext context"
+  ],
+  "attack": "known plaintext",
+  "human_role": "WAINUT set the task (catalogue 2553) and the rules; AI language-model agents transcribed, built and froze the key, ran the held-out test, read and checked. No human palaeographer checked the text.",
+  "tools": [
+   "Arkivalieronline images",
+   "scripts in this folder (fetch, crops, decryption, held-out test, system tests, mark check)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-12",
+  "last_date": "2026-11-12"
+ },
+ "solution": [
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "Register images 5, 6, 7, 61 (unit 261585) and letters 115-135 (unit 261575) fetched at full size from api.rigsarkivet.dk, one at a time, 1.6 s apart.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "Sign conventions written before any key; the register runs transcribed in two passes from fresh crops and reconciled on the image.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "key from source",
+   "what": "82 gloss pairs of images 117 and 121 (pairs_build.tsv); key frozen (key_frozen.tsv), unglossed values filled from the run pattern and marked.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Held-out image 118 (letter of 11 March 1648): 23 of 25 glossed numbers agree with the frozen key (0.92); 2000 permuted keys: mean 1.1, best 7 of 25. Image 118 had been looked at before the freeze.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Mechanical decryption and marked readings; scripts/check_marks.py passes on king, chancellor and vibe. [The p. 115 part of this step moved with its files to vibejuel1649 at integration.]",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "hypothesis",
+   "what": "p. 6 (3-32 set): Vibe's old and new ciphers, the 8-64 table shifted by -40..+40, and plain rank ciphers tested; none gives Danish. [The p. 115 part of this step moved with its files to vibejuel1649 at integration.]",
+   "result": "failed",
+   "technique": [
+    "key matching",
+    "exhaustive search"
+   ]
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "literature search",
+   "what": "Collision check (open PRs, issues, targets and research on origin/main) and one web search; no prior decipherment found.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Blind review by an independent AI language-model agent: all cipher lines of pp. 5 and 115 copied from its own crops before the transcriptions were opened (about 153 of 156 and 147 of 150 numbers agree), decryptions, mark check and held-out test re-run, readings read as Danish. Grades B and B.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "Fixes from the review's image readings: p. 115 line 4 14 -> 18 and 4 -> 8 (probable; 'bort', 'skal' now verbatim); p. 5 line 11 50 -> 56 ('holsten' verbatim); p. 5 line 2 marked 50|56 and line 10 33|53. Decryptions re-run; check_marks passes. [The p. 115 part of this step moved with its files to vibejuel1649 at integration.]",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 111 tokens, 39 types, da-modern order 4: reading -2.975 per letter; Verdict: too short.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Integration check (12 Nov 2026): heldout.py reproduced (23 of 25; control mean 1.12, best 7); own decoder from key_frozen.tsv gives the same chancellor decryption; images 5 (all 13 rows of the chancellor entry and the top run) and 118 (gloss letters of the held-out set) fetched from api.rigsarkivet.dk and compared, no disagreement at that reading. p. 115 is Vibe's old cipher (own decoder from the published rule reproduces decryption_vibe.txt; nomenclator numbers 212, 351, 401 also occur in the 1649-51 letters of vibejuel1649): moved there (one key, one entry). Strict read share of p. 5: 17 of 37 (45.9%, codes as holes), 17 of 29 on words alone; the contributor's 0.6 covered p. 115 and was estimated. Held-out order rests on the contributor's record.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-12",
+   "model": "da-modern",
+   "file": "validation.tsv",
+   "tokens": 111,
+   "types": 39,
+   "tokens_per_type": 2.85,
+   "score": -2.975,
+   "nulls": {},
+   "verdict": "too short",
+   "notes": "claimed per-occurrence score -2.975; polyphony 0.0; 64 unread tokens left out; annealer on the real text from random keys reached n/a"
+  },
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Table rebuilt from the interlinear glosses of the time on Juel's own letters of 1648 (unit 261575, images 117, 121), frozen and tested on the glossed letter of image 118, then applied to the p. 5 passages of the 1647 register.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.459,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Strict count by the README read bar (integration check, 12 Nov 2026), p. 5 only: 17 cipher words read verbatim (king 3, chancellor 14) of 29 words plus 8 nomenclator code tokens counted as holes = 17 of 37. On the 29 cipher words alone 0.586. The contributor's 0.6 ('estimated', all four passages including p. 115, codes not counted) is theirs.",
+  "verification": [
+   "contemporary decipherment",
+   "matched control"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "interlinear glosses on Juel's letters to the chancellor of 1648 (unit 261575, images 117, 118, 121)",
+    "date": "1648",
+    "source": "Arkivalieronline unit 261575"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "8-64 table rebuilt, frozen and tested on held-out image 118; register p. 5 read in part",
+    "date": "2026-11-12",
+    "source": "PR #457"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "register pp. 5 and 6 and the gloss pairs of images 117, 118, 121 (p. 115 moved to vibejuel1649)",
+    "date": "2026-11-12"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "king",
+    "label": "p. 5 top, to the King, 20 Nov 1647",
+    "transcription": "transcription_king.txt",
+    "decryption": "decryption_king.txt",
+    "reading": "reading_king.md",
+    "translation": "translation_king.md",
+    "language": "da",
+    "state": "read in part",
+    "summary": "Among them 83 and 84 would gladly have 124 as general in 158 again, but he cannot be persuaded.",
+    "note": "One short run inside clear Danish: 3 cipher words, all verbatim ('til general i'), and four open codes (83, 84, 124, 158); 3 of 7 tokens read (codes counted as holes).",
+    "read_share": 0.429,
+    "reading_review": {
+     "grade": "B",
+     "by": "integrating session (AI), reading the decryption as sentences against the translation",
+     "date": "2026-11-12",
+     "note": "The run reads as one Danish sentence with the four codes open ('til general i'); only three cipher words, so it is a short fragment, not a text of its own."
+    }
+   },
+   {
+    "doc": "chancellor",
+    "label": "p. 5 entry No. 4, to the chancellor, 20 Nov 1647",
+    "transcription": "transcription_chancellor.txt",
+    "decryption": "decryption_chancellor.txt",
+    "reading": "reading_chancellor.md",
+    "translation": "translation_chancellor.md",
+    "language": "da",
+    "state": "read in part",
+    "summary": "A strong [war] council is held; they would gladly have 124 as general in 158; he could [...] become General of the Realm (Rigens Feltherre); something with Sparre and [quarters] in Holstein.",
+    "note": "26 cipher words: 14 verbatim (53.8%), 4 with a marked repair, 3 guesses, 5 holes; four codes (123, 124, 129, 158) and six signs open. The first two sentences hold; the last two are mostly holes. Checker clean share 0.571 on the plain reading, 0.308 on the reading file (below its 0.45 line).",
+    "reading_review": {
+     "grade": "B",
+     "by": "independent AI language-model agent (blind review)",
+     "date": "2026-11-12",
+     "note": "Two of the four sentences hold as Danish (a strong war council is held and they would gladly have 124 as general in 158; he could become Rigens Feltherre); the last two cipher stretches are holes. Read in part is defensible here, not more."
+    },
+    "read_share": 0.538
+   },
+   {
+    "doc": "hsehested",
+    "label": "p. 6 entry No. 4, to Hannibal Sehested, 20 Nov 1647",
+    "transcription": "transcription_hsehested.txt",
+    "decryption": "decryption_hsehested_vibeold.txt",
+    "language": "da",
+    "state": "decoded, not read",
+    "summary": "Not solved: 30 numbers in a 3-32 set; no tested system gives Danish. The file shown is a failed trial, not a decryption.",
+    "note": "The decryption file is the trial with Vibe's old cipher, which gives no Danish; the other tests are in scripts/test_332.py and work/test_332.out."
+   }
+  ],
+  "key_file": [
+   "key.tsv",
+   "key_frozen.tsv"
+  ],
+  "gaps": [
+   {
+    "item": "11, 12, 13 in the 8-64 table",
+    "blocker": "no-key-material",
+    "detail": "No gloss in images 117-121; they stand in two p. 5 runs that do not read and in the repair giern{[11]c/e}."
+   },
+   {
+    "item": "50 in 'sterk' (p. 5, line 2, 50|56)",
+    "blocker": "illegible",
+    "detail": "A flourish crosses the digit; read as 56 the word is verbatim, as 50 it decodes z."
+   },
+   {
+    "item": "The last two sentences of the chancellor entry ('trgese', 'quartg[11]bb', 'fyle', 'forlagrdit aggrop')",
+    "blocker": "illegible",
+    "detail": "Copyist errors or unclear figures; the original letter of 20 Nov 1647 is not among images 115-135 of unit 261575."
+   },
+   {
+    "item": "Nomenclator codes (83, 84, 123, 124, 129, 158)",
+    "blocker": "open-codes",
+    "detail": "No code list found; none identified."
+   },
+   {
+    "item": "Signs TT, Θ, ∞, Ψ, Δ, Ш on p. 5",
+    "blocker": "open-codes",
+    "detail": "No list of these signs found."
+   },
+   {
+    "item": "p. 6, to Hannibal Sehested (3-32 set)",
+    "blocker": "too-short",
+    "detail": "30 numbers, no glossed sibling; tests in scripts/test_332.py."
+   }
+  ]
+ }
+}

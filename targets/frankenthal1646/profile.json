@@ -1,0 +1,286 @@
+{
+ "schema_version": 1,
+ "target": "frankenthal1646",
+ "title": "Spanish officer to Ottavio Piccolomini, camp in the Wetterau, 12 August 1646 (catalogue 2356): key rebuilt from the contemporary glosses of a sibling letter and tested on held-out cipher; inv. 25071 read in part",
+ "documents": [
+  {
+   "id": "25071",
+   "read": "read in part",
+   "shelfmark": "SOA Zámrsk, Rodinný archiv Piccolominiů (Náchod), inv. č. 25071 (microfilm frame labelled \"31/2\")",
+   "date": "12 August 1646 (\"Del Campo a Ilenstatt [?] y 12 de Agosto 1646\")",
+   "year": 1646,
+   "country": "Germany",
+   "route": "Spanish-speaking officer signing \"Joh: Behr [?] von ...\", imperial camp in the Wetterau -> Ottavio Piccolomini",
+   "places": {
+    "from": "Ilenstatt [?Ilbenstadt, Wetterau]",
+    "to": "Spanish Netherlands"
+   },
+   "language": "Spanish",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Bare cipher: no gloss on the photograph. The same writer's letters inv. 25067 and 25069 (1646, same number table) carry a contemporary interlinear decipherment; they gave the key and the held-out test."
+   },
+   "length": {
+    "tokens": 216,
+    "distinct": 43,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_25071.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Vlnas 2017, appendix zip P_lohy_A_a_B.zip (theses.cz/id/p3p2kb), frame 25071.jpg: a photograph of the microfilm frame, rotated and soft",
+    "image_quality": "poor",
+    "notes": "Two passes from separate crops, reconciled on the image; pass 1 before the key was built, pass 2 after it was frozen. Independent blind check of 69 groups on 6 runs: 68 agree, 1 doubtful on the image (L09, 61 or 51), now marked doubtful."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Homophonic substitution in two-figure groups, letters in alphabetical runs (20-64) plus a second run (10-24); code groups written apart: 67 Archiduque, 72 Principe de Darmstadt. No word division inside a run. The writer used an earlier, different table on inv. 25063 and 25065.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 49,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 2,
+   "kinds": [
+    "names",
+    "titles"
+   ],
+   "unread_groups": 0
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "alphabetical",
+  "word_division": "none",
+  "notes": "distinct_symbols counts the 49 tokens of key_frozen.tsv (47 letter groups, 2 code groups). Groups 34 and 56 are not attested by a gloss. length counts the 216 two-figure groups of the cipher lines (code groups included, plain script and gaps not counted); distinct 43, a doubtful group (30?, 61?, 50/56, 26/20) counted by its first reading."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "The contemporary interlinear decipherments of the sibling letters inv. 25067 and 25069 on the same microfilm. Vlnas 2017 (theses.cz/id/p3p2kb) lists 25071 in appendix B as not deciphered. No edition found (catalogue checks 6 Nov 2026; repo checked 12 Nov 2026).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "human_role": "WAINUT set the task (catalogue 2356) and the rules; AI language-model agents transcribed, built and froze the key, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "photographs in the appendix of Vlnas 2017",
+   "scripts in this folder (crops, mechanical decryption, mark check and word count, glossed-pair and held-out check)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-12",
+  "last_date": "2026-11-12"
+ },
+ "solution": [
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "Appendix zip of Vlnas 2017 fetched once in Chrome; frames 25026, 25063-25071 (and 24852-24854) extracted.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "key from source",
+   "what": "Two tables found: 25063/25065 use an earlier one; 25067, 25069 and 25071 share a second one. Key of the second built from 32 glossed words and phrases of 25067 (pairs.tsv) and frozen in key_frozen.tsv.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Frozen key applied to 10 glossed words of the held-out sibling 25069: 9 letter for letter; one word has a group (93) not in the key. 62 of 63 groups agree. Small; the gloss was visible on the crops.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "25071 transcribed twice from separate crops (pass 1 before the key) and reconciled on the image.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "25071 decrypted with the frozen key and read with every departure marked; scripts/check_marks.py passes. Dan's reading checker on the Spanish running text: clean share 0.688 (11 of 16 sentences; the misses are period spellings).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "what": "Independent blind review by a separate AI language-model agent: own crops, 69 groups on 6 runs copied before the transcription was opened (68 agree, 1 doubtful: L09 61/51); decryption rebuilt; reading checked as sentences against the translation (16 of 16 hold). State read in part agreed, grade B.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "L09 group 61 marked doubtful (61?) after the review; 'desarmarse' now counted as a doubtful word: 38 of 42 verbatim in the contributor's count (90.5%); the integration check counts 36 of 42 (85.7%).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 216 tokens, 43 types, es-golden-age order 4: reading -2.258 per letter; random keys -4.687 (z 8.0); key annealed onto shuffled ciphertext best -2.731 (mean -2.779, z 8.8); annealer on the real text -2.442. Verdict: pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Integration check (12 Nov 2026): check_pairs.py and check_marks.py re-run (same results); own decoder written from key_frozen.tsv reproduces decryption_25071.txt; the key shares nothing with the piccolomini1646 or claudiamedici1646 tables. Strict count by the README rule: 36 of 42 cipher words (85.7%), because Giesen (34) and ny (56) rest on letter values no gloss attests (the contributor's 38 of 42 = 90.5% counted them); read in part confirmed. The transcription could not be compared with the photograph: theses.cz answered with a JavaScript proof-of-work page and no browser tool was available. Order of the freeze rests on the contributor's record.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-12",
+   "model": "es-golden-age",
+   "file": "validation.tsv",
+   "tokens": 216,
+   "types": 43,
+   "tokens_per_type": 5.02,
+   "score": -2.258,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -4.687,
+     "sd": 0.303,
+     "max": -3.916,
+     "z": 8.0,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -2.779,
+     "sd": 0.059,
+     "max": -2.731,
+     "z": 8.8,
+     "p": 0.1429
+    }
+   },
+   "power": -2.442,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.258; polyphony 0.0; 0 unread tokens left out; annealer on the real text from random keys reached -2.442"
+  },
+  "class": "read in part",
+  "key": "recovered",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Key built from the contemporary interlinear decipherment of the sibling letter 25067 (same writer, same table, 1646), frozen and tested on the held-out glossed sibling 25069, then applied unchanged to the bare letter 25071.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.857,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Strict count by the README read bar (integration check, 12 Nov 2026): 42 cipher words with the three code groups counted as words; 36 read verbatim from the signs with values a gloss attests; Giesen (group 34) and ny (group 56) rest on a letter value that no gloss attests, the two doubtful and the two repaired words are not counted. The contributor's own figure was 38 of 42 = 0.905 (scripts/check_marks.py).",
+  "verification": [
+   "independent verification",
+   "contemporary decipherment",
+   "matched control",
+   "historical consistency",
+   "statistical test"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the interlinear decipherment of 25067 gave the key (pairs.tsv); that of 25069 the held-out test",
+    "date": "1646",
+    "source": "Vlnas 2017 appendix photographs, frames 25067.jpg, 25067_1.jpg, 25069.jpg"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "key of the second table rebuilt from the glossed sibling, frozen and tested on held-out cipher; 25071 read in part",
+    "date": "2026-11-12",
+    "source": "PR #462"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "25071 in full, 32 glossed words of 25067 and 10 held-out words of 25069, from the Vlnas 2017 photographs",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "one independent AI reader: blind sign check of 69 groups on 6 runs and a reading of the text as sentences against the translation; no human palaeographer",
+    "date": "2026-11-12"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "25071",
+    "label": "inv. 25071, camp at Ilenstatt [?], 12 August 1646",
+    "transcription": "transcription_25071.txt",
+    "decryption": "decryption_25071.txt",
+    "reading": "reading_25071.md",
+    "translation": "translation_25071.md",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.857,
+    "summary": "The army has no intention of seeking out the enemy or risking battle unless the enemy attacks Giessen, which would have to be relieved: the Prince of Darmstadt must not be abandoned, if only for the common interest. Turenne has joined the Swedes, who on Queen Christina's orders demanded that the Prince declare himself and disarm or be attacked; he refused and said he would defend himself. The writer reports this today to the Archduke, who has promised to relieve the Prince in any case.",
+    "note": "Words 42 (code groups counted as words): 36 verbatim from the signs with a gloss-attested value (85.7%, strict); Giesen (34) and ny (56) rest on a letter value no gloss attests; 2 with a doubtful sign (aquel, a figure under an ink blot; desarmarse, group 61 of doubtful shape, possibly 51); 2 with a marked repair (cath{+e}gorica, o{u/y}); no guesses, no holes. The contributor counted 38 of 42 (90.5%), including Giesen and ny.",
+    "reading_review": {
+     "grade": "B",
+     "by": "independent AI language-model agent (blind review)",
+     "date": "2026-11-12",
+     "note": "Read as Spanish sentences against the English translation: all 16 sentences of the running text hold, and the 42 cipher words follow mechanically from transcription and frozen key, with two marked repairs (cathegorica, oy) and one doubtful sign under a blot (aquel). A blind sign check of 69 groups on 6 runs agreed on 68, with one doubtful group (L09 61/51, desarmarse, now marked doubtful); grade B, not A, because three words rest on a doubtful sign or an inferred value and the held-out test is small."
+    }
+   }
+  ],
+  "key_file": "key_frozen.tsv",
+  "gaps": [
+   {
+    "item": "25071 L05 'aquel', L09 'desarmarse' and L13 'oy'",
+    "blocker": "illegible",
+    "detail": "One figure under an ink blot; one group 61 or 51 (s or u); one figure 0 or 6. A clean scan from SOA Zámrsk would settle all three."
+   },
+   {
+    "item": "Groups 34 and 56 not glossed",
+    "blocker": "too-short",
+    "detail": "34 (g, 'Giesen') from the table order and the sense; 56 (y) from context on 25067_1. The worked glossed text has no gloss for them; the further glossed pages 25067_2 and 25069_1 were not worked."
+   },
+   {
+    "item": "Held-out test",
+    "blocker": "too-short",
+    "detail": "10 words of 25069 with the gloss visible; group 93 there is not in the key."
+   },
+   {
+    "item": "Place and writer",
+    "blocker": "needs-physical-access",
+    "detail": "Date line reads 'Del Campo a Ilenstatt', probably Ilbenstadt (Wetterau), not Frankenthal as the catalogue has it; the signature 'Joh: Behr [?] von ...' is not read and needs a clean image. The slug frankenthal1646 follows the catalogue."
+   },
+   {
+    "item": "Transcription against the photograph at integration",
+    "blocker": "needs-physical-access",
+    "detail": "The photographs sit behind theses.cz's JavaScript proof-of-work page; the integrating session had no browser tool and did not get round the check. Only the contributor's blind review (68 of 69 groups) compares the signs with the photograph."
+   }
+  ]
+ }
+}

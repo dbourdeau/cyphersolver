@@ -37,6 +37,41 @@
     "image_quality": "fair",
     "notes": "318 units = 250 cipher words in letters (split words joined) + 68 nomenclator code tokens (22 different numbers), counted at integration from transcription.txt and reading.md. Transcribed number by number by the contributor's AI agents (11 Nov 2026) and re-read at native zoom; image 74 was in the held-out set of test 1 and was transcribed and hashed before any decryption (targets/vibejuel1651/frozen/working/transcr/). At verification about 110 numbers of image 74 and the five cipher lines of image 62 agreed with the images; at integration the last word of image 62 was re-divided on the image. No human re-reading."
    }
+  },
+  {
+   "id": "register_p115",
+   "read": "read in part",
+   "shelfmark": "Copenhagen, Rigsarkivet, TKUA, Speciel del, Sverige, Peder Juels og Mogens Hoegs gesandtskabsarkiver, Ekstraktprotokol 1647-49 (film C.195), Arkivalieronline epid 19852819, unit 261585, image 61 (p. 115)",
+   "date": "2 Sep 1648",
+   "year": 1648,
+   "country": "Denmark",
+   "route": "Peder Juel, Stockholm -> Peder Vibe",
+   "places": {
+    "from": "Stockholm",
+    "to": "Copenhagen"
+   },
+   "language": "Danish",
+   "cleartext_in_document": "interspersed",
+   "pages": 1,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment in the register. Read with Peder Vibe's old cipher as published by Brice Dudout (PR #410, vibejuel1651)."
+   },
+   "length": {
+    "tokens": 151,
+    "distinct": 39,
+    "unit": "code groups",
+    "measured": true,
+    "file": "register_p115/transcription_vibe.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Arkivalieronline full-size JPEGs (api.rigsarkivet.dk/ao/v1/images)",
+    "image_quality": "fair",
+    "notes": "Black-and-white microfilm. Two passes from fresh crops (about 1.2x and 2.6x); disagreements settled on the image and listed in the reconciled file."
+   }
   }
  ],
  "system": {
@@ -148,6 +183,12 @@
    "kind": "verification",
    "what": "Integration: target split by key out of vibejuel1651 (old cipher here, new alphabet there, Krag letters to a lead); eval() replaced by ast.literal_eval in scripts/decode.py with byte-identical output; counts taken again (250 words, 68 codes, as in the PR); last cipher word of image 62 re-divided on the image as 27.12.1.11.3.14.13.19.1.13.19 = malcontant (probable), so 244 of 250 words have a value; outcome.key set to partial, fraction_read 0.976, codes_open 68, read_share 0.667; reading read as sentences against the translation (grade B).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Register p. 115 (Juel to Vibe, 2 Sep 1648; PR #457) added from juel1647: the rule applied unchanged reads 21 certain words of 25 (23 in the contributor's count), 15 code tokens open; an own decoder reproduces the decryption; image 61 compared at integration, no disagreement; three nomenclator numbers (212, 351, 401) also occur in the letters of 1649-51. Not a pre-registered test; counted apart from the headline of the ten letters.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -192,6 +233,19 @@
     "role": "pointer",
     "note": "catalogue entry 2527: TKUA paging pass and vetting of 11 Nov 2026, pointing to the interlinear letters on image 78 as the crib",
     "date": "2026-11-11"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "found the register entry p. 115 (Juel to Vibe, 2 Sep 1648) to be in this cipher and read it in part with the rule unchanged",
+    "date": "2026-11-12",
+    "source": "PR #457"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "register p. 115, image 61, two passes",
+    "date": "2026-11-12"
    }
   ],
   "gaps": [
@@ -219,6 +273,16 @@
     "item": "prior art outside the repository not searched again at verification",
     "blocker": "needs-physical-access",
     "detail": "the Royal Library's NKS 1299 e fol. and the Danish printed collections are not online in full"
+   },
+   {
+    "item": "Register p. 115: 'fogte' (hole), '[?dragit]' (guess), nine nomenclator numbers",
+    "blocker": "needs-physical-access",
+    "detail": "The figures are clear but do not read; the original letter of 2 Sep 1648 would show a copyist slip. The codes (277, 339, 412, 426, 442, 446 and 212, 351, 401) have no list."
+   },
+   {
+    "item": "Register p. 115: the clear text of the register between the runs",
+    "blocker": "illegible",
+    "detail": "Secretary hand on black-and-white microfilm, made out only in part."
    }
   ],
   "texts": [
@@ -239,10 +303,29 @@
      "date": "2026-11-12",
      "note": "Contributor: read as Danish sentences by AI agents only; no human read it. Integration (PR #410): reading.md read letter by letter against decryption.txt and translation.md; the cipher words construe with the clear words around them and the translation follows; but 68 code tokens stand for the persons and places, so who does what is mostly open, 32 words are only probable and 5 unresolved: grade B, read in part. Image 62 and part of image 74 were compared with the images."
     }
+   },
+   {
+    "doc": "register_p115",
+    "label": "p. 115 of Juel's register, to Peder Vibe, 2 Sep 1648",
+    "transcription": "register_p115/transcription_vibe.txt",
+    "decryption": "register_p115/decryption_vibe.txt",
+    "reading": "register_p115/reading_vibe.md",
+    "translation": "register_p115/translation_vibe.md",
+    "language": "da",
+    "state": "read in part",
+    "summary": "442 said some days ago to 212 that the former 412 of 351 277 [...] her away, and that 401 shall now bring her back here again; the 412 of 426 drove with three wagons between. The codes name the people; none is identified.",
+    "note": "25 cipher words: 21 certain verbatim (84.0%; two more, bort and skal, rest on digits settled by the blind review and count as probable here), 1 guess, 1 hole; 15 code tokens (nine numbers, 212, 351 and 401 also in the letters of 1649-51) counted as holes: 21 of 40 = 52.5%. The contributor counted 23 of 25 (92.0%). The clear text of the register between the runs is not transcribed.",
+    "reading_review": {
+     "grade": "B",
+     "by": "independent AI language-model agent (blind review)",
+     "date": "2026-11-12",
+     "note": "The cipher words read almost fully as Danish and the sense of the first sentence is clear: 442 said that the former 412 of 351 277 [...] her away and that 401 shall now bring her back. The holes are codes and untranscribed clear text, not failed decryption; the reviewer asked for that clear text to be transcribed."
+    },
+    "read_share": 0.525
    }
   ],
   "key_file": "key.tsv",
-  "notes": "Split out of vibejuel1651 on 12 Nov 2026 (one key, one entry): the new alphabet of 1651-1655 is targets/vibejuel1651, with the frozen test files of both tests. The key (key.tsv, CC BY 4.0) could be tried on p. 115 of Juel's register (catalogue 2553), which the contributor reports to be in this cipher. Prior art was not searched again at verification or integration.",
+  "notes": "Split out of vibejuel1651 on 12 Nov 2026 (one key, one entry): the new alphabet of 1651-1655 is targets/vibejuel1651, with the frozen test files of both tests. The key (key.tsv, CC BY 4.0) was applied to p. 115 of Juel's register (catalogue 2553). Prior art was not searched again at verification or integration. Register p. 115 (Juel to Vibe, 2 Sep 1648) added 12 Nov 2026 from PR #457; the headline figures are those of the ten letters of 1649-51 and p. 115 is counted apart.",
   "codes_open": {
    "open": 22,
    "total": 22,
