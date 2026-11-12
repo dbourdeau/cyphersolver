@@ -1,0 +1,29 @@
+# Letter cipher of W 004 Nr. 52 (fuerstenberg1659): two alternating Caesar shifts on the 24-letter alphabet
+# a b c d e f g h i k l m n o p q r s t u w x y z (no j, no v). Odd places of each run (1st, 3rd, ...): plain =
+# cipher moved back 1; even places: plain = cipher moved back 8. The count restarts at each cipher run.
+# Equivalent to a Vigenere with key "bi" on this alphabet. Recovered ciphertext-only (no gloss, no key on the leaf).
+cipher	plain_odd	plain_even
+a	z	r
+b	a	s
+c	b	t
+d	c	u
+e	d	w
+f	e	x
+g	f	y
+h	g	z
+i	h	a
+k	i	b
+l	k	c
+m	l	d
+n	m	e
+o	n	f
+p	o	g
+q	p	h
+r	q	i
+s	r	k
+t	s	l
+u	t	m
+w	u	n
+x	w	o
+y	x	p
+z	y	q
