@@ -1,10 +1,10 @@
 # Girolamo Muzio to Ferrante Gonzaga, Rome, 11 Jan 1550 (Biblioteca Estense, Autografoteca Campori, Muzio c. 3r)
 
-Status: read in part, codes open (contributed, issue #405). Key recovered from the sister letter of 12 Jan 1550 and completed on c. 3r. By cipher units 98.1% of c. 3r is read by the key; by words 0.909 with codes and emended words counted as holes, 0.957 with the codes counted apart.
+Status: read in part, codes open (contributed, PR #445, issue #405). Key recovered from the sister letter of 12 Jan 1550 and completed on c. 3r. By the README word rule 0.909 of c. 3r is read (198 words, 18 holes: codes and context-only values, emended words and single signs); by cipher units 98.1% is read by the key (the contributor's unit count).
 
-Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic). Sent as issue #405 on 11 Nov 2026; checked by Daniel Bourdeau on 12 Nov 2026 ("the reading holds"), who asked for these files and raised the points answered under "Corrections of 12 Nov 2026". Not yet written up on the site.
+Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic). Sent as issue #405 on 11 Nov 2026; checked by Daniel Bourdeau on 12 Nov 2026 ("the reading holds"), who asked for these files and raised the points answered under "Corrections of 12 Nov 2026". Integrated on 12 Nov 2026 (see "Integration check").
 
-Catalogue entry 1564 lists five letters of Gonzaga clients to Ferrante Gonzaga. This folder is one of the five, the Muzio letter of 11 Jan 1550, with the Muzio letter of the next day that the key rests on. The Rossi letters of the same entry are not treated here.
+Catalogue entry 1564 lists five letters of Gonzaga clients to Ferrante Gonzaga. This folder is one of the five, the Muzio letter of 11 Jan 1550, with the Muzio letter of the next day that the key rests on. The Rossi letters of the same entry are in `targets/rossi1537/`: a different cipher, with its own page. Entry 1564 now keeps only the Gosellini letter of 1555.
 
 ## The documents
 
@@ -63,6 +63,18 @@ So the method is "key recovered based on adjacent plaintext": the first values c
 
 The crops made for these checks are not in the repository; each row of `corrections_c3r.tsv` gives the IIIF region to fetch.
 
+## Integration check (12 Nov 2026)
+
+Verification of the pull request files, before the write-up (full report in the maintainer's review, not in this folder).
+
+- **Decoder and reading.** A decoder written separately from `key.tsv` and the two transcriptions reproduces `decryption_c3r.txt` (25 lines) and `decryption_c5.txt` (12 lines) exactly. The Italian reading of c. 3r, stripped of spaces and marks, equals the decryption letter for letter except u/v and the five declared emendations.
+- **Word figure recounted.** `reading_c3r.md` has 198 words when "Sua Maestà", "Duca di", "n gli" and "V. Ecc." are counted as two words each, and 18 hole words (code groups 13 and 24, "Sua Maestà" three times, "Duca di", the five emended words, "o" for the single sign PSI, "n gli" for OP): 0.909. The two codes that the c. 5v margin confirms (CE = Cardinale, 25 = V. Ecc.) are counted as read; counted as holes too (Cardinale twice, V. Ecc. as two words) the share is 22 of 198 holes, 0.889. Either way it is under the 95% bar, so the class is read in part. The contributor's 0.957 (nine code tokens counted apart) is his figure and is not used for the class.
+- **Hashes.** The SHA-256 of `timestamps/MANIFEST.sha256` equals the message imprint of the RFC 3161 token (stamped 11 Nov 2026 21:08:03 GMT); the six stamped files that were sent hash-match the manifest (12 of its 18 entries are not in the folder). The signature chain of the token and the OpenTimestamps proof were not verified. The letter rows of the stamped `KEY.tsv` equal `key.tsv`; the code rows were added on 12 Nov (declared above).
+- **Image.** About 70 signs of lines L05-L07 were compared with the Estense image for order and shape: they agree (the minim count of the o and i signs was not judged at that size). The earlier verification of the issue compared about 150 signs of lines 6, 7, 14-16, 19-20 and 22-24 and found two better readings (L20 "so", L23 "voti") and one undeclared emendation ("difficile"); all three are corrected in version 2 of the transcription (above).
+- **Catalogue.** Entry 1564 held five letters. The Muzio pair (cc. 3-4 and 5-6) is read here and the Rossi pair in `rossi1537`, a different cipher; entry 1564 now holds the Gosellini letter of 1555 only, and its vetting note about "shorter blocks on c. 4r" was wrong (c. 4r is blank).
+- **Not repeated.** The shuffled-key controls on version 2 of the transcription were not run by the contributor; `docs/_validate.py` (`validation.tsv`, c. 3r, 849 read tokens) gives the statistical test: pass (reading -1.882 per letter, random keys -4.679, key annealed onto shuffled ciphertext at best -3.187).
+- **Order of events.** That the key was frozen before the c. 5v test and before the blind transcription rests on the contributor's record (one commit, his timestamps and manifests); the token imprint and the stamped files agree with that record.
+
 ## Prior art
 
 No reading of the c. 3r cipher was found. Checked on 11 Nov 2026: Ronchini, Lettere di Girolamo Muzio (Parma 1864), read on the page images for January 1550: it has a different, clear letter of 11 Jan 1550 (no. LXXVI), none of 12 Jan, and none of this content; the Lettere of 1590 (poor OCR); Pastor vol. 13 (cites Muzio through Ronchini); Vandini's appendices to the Campori catalogue (no Muzio entry); the Estense records ("Lettera cifrata", "parzialmente cifrata", no notes); this repository; Cryptiana; HistoCrypt.
@@ -83,6 +95,37 @@ Not checked: the Parma originals of Ferrante Gonzaga's papers (the main risk: a 
 ## Tools
 
 Claude (Anthropic) models for the transcriptions, the solving, the scripts and the checks. Own Python and C: an annealer with Italian quadgrams, a per-unit counter, a shuffled-key baseline, a transcription comparer. Images: Estense Digital Library IIIF. The repository's checker scripts were read, not run (the contributor does not run downloaded code); the checks they make were verified by hand and are listed in the pull request.
+
+## Files
+
+- `transcription_c3r.txt`: c. 3r, version 2. `corrections_c3r.tsv`: the nine units changed, with the IIIF region for each. `emendations_c3r.tsv`: the five emendations and two unread signs.
+- `key.tsv`: the key, with a status for every row.
+- `decryption_c3r.txt`: line by line, cipher then key decryption, unrepaired. `units_c3r.tsv`, `counts_c3r.txt`: every unit with its class; the counts.
+- `reading_c3r.md`, `translation_c3r.md`: Italian and English, every correction, emendation and hole marked in place. `editorial.md`: marks and notes. `clear_c3r.md`: the clear heading and closing lines of c. 3r, cc. 3v-4v.
+- `transcription_c5.txt`, `decryption_c5.txt`, `units_c5.tsv`, `counts_c5.txt`, `reading_c5.md`, `translation_c5.md`: the sister letter of 12 Jan 1550 in full.
+- `SUMMARY.md`: what the letters say, and the context.
+- `transcription_c3r_blind.txt`, `transcription_c3r_blind_NOTES.md`, `blind_agreement.txt`: the blind second transcription and the agreement figures.
+- `timestamps/`: the manifest, the RFC 3161 token, the OpenTimestamps proof, the stamped files, how to verify.
+- `scripts/decrypt.py`, `scripts/compare_blind.py`: standard library; they write the decryption, unit and count files and print the agreement.
+- `profile.json`.
+
+## Remaining gaps
+
+- code groups 13 and 24 (c. 3r, one occurrence each) and the context-only values of 26, 4o and 1o - blocker: open-codes; no key sheet and no other letter in this cipher; the values 26 = Sua Maesta and 4o = Duca di rest on "fosse contenta" and "4o Firenze"
+- the two single signs PSI (L03) and OP (L17), and OX on c. 5r - blocker: too-short; each occurs once and only context gives a value
+- omega read ss three times (fosse, creasse, esser) - blocker: illegible; a polyphone or a second omega form, not told apart on the image
+- doubtful words of the c. 5r-5v cipher passages (one unread sign, three proposed words) and the uncollated clear text of the sister letter - blocker: illegible; read once at 60-70% scale with the key known; a blind pass with minim counts on the original images would settle the o/i signs
+- the date of the early hand that wrote letters and a marginal decipherment on cc. 5r-5v - blocker: needs-physical-access; only the archive can date the hand
+- the Parma originals of Ferrante Gonzaga's papers (any key or deciphered copy of the letters of January 1550), Negri's 2000 edition of Muzio's Lettere, the Concilium Tridentinum and the conclave literature - blocker: needs-physical-access; not online as far as searched, no scan or text reached
+
+## Escalation
+
+- [x] siblings: cc. 5-6 of the same file (the sister letter of 12 Jan) opened and read; the other items of the Muzio folder were not searched beyond the catalogue entry
+- [x] clear-pages: c. 3v and c. 4r are blank, c. 4v has the address and docket; no decipherment of c. 3r anywhere; the early hand's letters and margin on cc. 5r-5v gave the first values and two code values
+- [x] known-keys: the Gonzaga keys in the repository (ferrante1549, ercole1544, capilupi1545, bresegno1548) compared by sign set: none fits
+- [x] print: Ronchini 1864 (the clear letters of 10 and 11 Jan 1550), the Lettere of 1590, Pastor 13, Vandini's Campori appendices, Cryptiana, HistoCrypt searched; no reading; Negri 2000 and the Parma originals not reached
+- [x] key-rebuild: the annealer failed on the first transcription; the key was rebuilt from the sister letter's crib and the clear text, and completed by reading, then checked by the c. 5v margin
+- [x] retry: every unit where the two transcriptions differ was looked at again on the image on 12 Nov 2026, nine units corrected, the reading re-formed; what stays open is listed above
 
 ## Files
 

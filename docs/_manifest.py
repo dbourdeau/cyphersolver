@@ -2186,6 +2186,24 @@ PAGES = [
          quote='&ldquo;se abocase conmigo en dicha Ciudad el once&rdquo;',
          author='Brice Dudout',
          rights='Archivo Hist&oacute;rico Nacional, Madrid, DIVERSOS-COLECCIONES,195,N.14 (PARES); no image reproduced'),
+    dict(slug='rossi1537', footer_date='November 2026', label='Rossi to Ferrante Gonzaga 1537', year='1537', y=1537.85, place='San Secondo &rarr; Ferrante Gonzaga', st='partial', stt='key from the ciphertext',
+         title='Pier Maria Rossi di San Secondo to Ferrante Gonzaga, 4 and 8 November 1537',
+         blurb='Two jocular letters of a count, written almost wholly in a symbol cipher, mocking an Imperial commander&rsquo;s retreat before the French in Piedmont. Malcolm McBratney recovered the key from the ciphertext alone with an annealer and a transcription frozen before decoding. 0.934 of the words read by the site&rsquo;s rule, under the 95% bar: one sign stands for both d and t, 73 units are unread, and the persons are not identified.',
+         quote='&ldquo;Pinarolo et Turino sono socorsi&rdquo;',
+         author='Malcolm McBratney',
+         rights='Biblioteca Estense Universitaria, Modena, Autografoteca Campori (Lodovico Media Library, CC BY-NC-SA)'),
+    dict(slug='muzio1550', footer_date='November 2026', label='Muzio to Ferrante Gonzaga 1550', year='1550', y=1550.03, place='Rome &rarr; Ferrante Gonzaga', st='partial', stt='key from adjacent plaintext',
+         title='Girolamo Muzio to Ferrante Gonzaga, Rome, 11 January 1550',
+         blurb='An agent&rsquo;s conclave news in one block of 860 cipher units, written in the days after the death of Paul III. Malcolm McBratney recovered the key from a sister letter of the next day, where an early hand had written letters over one cipher line and a decipherment in the margin. 0.909 of the words read by the site&rsquo;s rule, under the 95% bar; two code groups have no value and the order of events rests on his record.',
+         quote='&ldquo;mi persuado che la cosa non habia a riuscire&rdquo;',
+         author='Malcolm McBratney',
+         rights='Biblioteca Estense Universitaria, Modena, Autografoteca Campori (Lodovico Media Library, CC BY-NC-SA)'),
+    dict(slug='augustoni1612', footer_date='November 2026', label='Augustoni letter 1612', year='1612', y=1612.77, place='Italy &rarr; a correspondent not named', st='partial', stt='key from the ciphertext',
+         title='A letter catalogued as Girolamo Augustoni&rsquo;s, 9 October 1612',
+         blurb='A clear Italian letter on a dispute over fiefs, with 112 words or signs in cipher that hide names and key words. Malcolm McBratney recovered the key from the cipher alone; the unit count of his issue (94.0%) was withdrawn and 0.849 of the words read by the site&rsquo;s rule, under the 95% bar. The codes for persons, the parties and the fiefs are not identified.',
+         quote='&ldquo;non vi scoprite senza bisogno&rdquo;',
+         author='Malcolm McBratney',
+         rights='Biblioteca Estense Universitaria, Modena, Autografoteca Campori (Lodovico Media Library, CC BY-NC-SA)'),
     dict(slug='zeschau1841', label='Zeschau 1841&ndash;43', year='1841&ndash;1843', y=1841.5, place='Dresden &rarr; St Petersburg', st='stuck', stt='key not found',
          title='Zeschau to Seebach, Dresden to St Petersburg, 1841&ndash;1843',
          blurb='Four Saxon despatches (DECODE R5005&ndash;R5008); the 1841 one was transcribed in full, 3,764 unseparated digits. Traces of an erased contemporary pencil decipherment show a table of letters and syllables, and Brice Dudout found that its groups are two, three or four digits long. No key survives on DECODE, and the solvers run so far, on pairs, produced no French; not solved.',
@@ -3438,3 +3456,6 @@ IMAGES['fiedmond1779'] = ('fiedmond1779_lead.jpg', 'The letter of 19 July 1779 o
 IMAGES['peking1912'] = None
 IMAGES['nanking1930'] = None
 IMAGES['vanhalen1840'] = None
+IMAGES['rossi1537'] = ('rossi1537_lead.jpg', 'Letter B, 8 November 1537: the first four of the 17 cipher lines of c. 33r', 'Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera R, Rossi (conte di San Secondo), c. 33r, via the Lodovico Media Library (CC BY-NC-SA)')
+IMAGES['muzio1550'] = ('muzio1550_lead.jpg', 'Muzio to Ferrante Gonzaga, 11 January 1550: the first four cipher lines of c. 3r', 'Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera M, Muzio, Girolamo, c. 3r, via the Lodovico Media Library (CC BY-NC-SA)')
+IMAGES['augustoni1612'] = ('augustoni1612_lead.jpg', 'The first lines of c. 1r: cipher words among the clear text, 9 October 1612', 'Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera A, Augustoni, Girolamo, c. 1r, via the Lodovico Media Library (CC BY-NC-SA)')

@@ -185,9 +185,58 @@
       "kind": "literature search",
       "what": "Web searches for an edition or decipherment; the repository; the Modena inventory of the Milan ambassadors' series. Nothing found. Correggio, the Milan state archive and the printed Campori catalogue were not searched.",
       "result": "partial"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "other"
+      ],
+      "what": "Integration check: a decoder written separately (key, aliases R=K, D=z, x=g, rounded u=n) reproduces the K lines of decryption.txt for all 30 cipher lines (112 words); word figure recounted (355 words, 53 holes, 0.851; the contributor's 0.849 kept); unit tallies reconciled; stamped-file hashes and RFC 3161 imprints checked.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "statistical test",
+        "language-model scoring"
+      ],
+      "what": "Statistical validation (docs/_validate.py): 583 tokens, 27 types, it-cinquecento order 4: reading -2.179 per letter; random keys -4.981 (z 5.6); key annealed onto shuffled ciphertext best -2.979 (mean -3.005, z 32.5); annealer on the real text -2.179. Verdict: pass.",
+      "result": "worked"
     }
   ],
   "outcome": {
+    "validation": {
+      "date": "2026-11-12",
+      "model": "it-cinquecento",
+      "file": "validation.tsv",
+      "tokens": 583,
+      "types": 27,
+      "tokens_per_type": 21.59,
+      "score": -2.179,
+      "nulls": {
+        "random keys": {
+          "n": 200,
+          "mean": -4.981,
+          "sd": 0.498,
+          "max": -3.654,
+          "z": 5.6,
+          "p": 0.005
+        },
+        "shuffled refit": {
+          "n": 6,
+          "mean": -3.005,
+          "sd": 0.025,
+          "max": -2.979,
+          "z": 32.5,
+          "p": 0.1429
+        }
+      },
+      "power": -2.179,
+      "verdict": "pass",
+      "notes": "claimed per-occurrence score -2.15; polyphony 0.009; 1 unread tokens left out; annealer on the real text from random keys reached -2.179"
+    },
     "class": "read in part",
     "key": "partial",
     "method": "key recovered from ciphertext-only",
@@ -197,10 +246,11 @@
       "key recovered"
     ],
     "fraction_read_method": "measured",
-    "fraction_read_source": "units.tsv and counts.txt (scripts/build.py), on the transcription frozen 11 Nov 2026. The reviewer's count: 537 of 587 cipher units give the letter read by the key and the label aliases (91.5%), 35 emended, 15 unread; ours by his rule, 538. With the 8 units of a sign split made after decoding also counted emended, 530 (90.3%). The blind transcription by the same rule, 517 (88.1%). After the image review of 12 Nov (not blind), 1 unit of 588 is unread.",
-    "fraction_read": 0.915,
+    "fraction_read_source": "reading.md, README word rule: 314 words read and 56 holes (370 in all), 0.849; clear text and cipher counted together, doubtful clear words, codes and every word with a supplied or emended letter are holes; recounted at integration: 355 words, 53 hole groups, 0.851. By cipher units, the reviewer's strict rule on the transcription frozen on 11 Nov 2026: 537 of 587 = 91.5% (the contributor's count 538); with the 8 rounded-u units also emended 530 (90.3%); the blind transcription 517 (88.1%). The issue's 94.0% is withdrawn.",
+    "fraction_read": 0.849,
     "verification": [
-      "key confirms"
+      "key confirms",
+      "statistical test"
     ],
     "provenance": "contributed",
     "credits": [
@@ -244,26 +294,22 @@
       {
         "item": "Signs under blots (L14, L19) and one sign emended against its shape (L19 sign 2)",
         "blocker": "illegible",
-        "detail": "Values from the word. On L19 the reviewer and we read the blots differently."
+        "detail": "Values from the word. On L19 the reviewer and the contributor read the blots differently."
       },
       {
         "item": "The rounded u-form read as n: a split of one blind label made after decoding (8 units)",
-        "blocker": "not-attempted",
-        "detail": "A blind re-transcription that separates the two forms without knowing the words would settle it."
+        "blocker": "illegible",
+        "detail": "The two forms are told apart only by a reader who knows the word; a blind re-transcription is the test."
       },
       {
         "item": "Clear text: doubtful words in the body; the postscript read in part; signature, place and names not established",
         "blocker": "illegible",
-        "detail": "One reader, with the key known. A person who reads the hand should go over transcription.txt."
-      },
-      {
-        "item": "Who the parties are and which fiefs",
-        "blocker": "not-attempted",
-        "detail": "Rochetta is named; the Gran Canceliero, the Governor of Milan and the Spanish ambassador point to the State of Milan. Not verified."
+        "detail": "One reader with the key known, in a fast hand. A person who reads the hand should go over transcription.txt."
       },
       {
         "item": "Prior art not checked at Correggio, in the Milan state archive or in the printed Campori catalogue",
-        "blocker": "not-attempted"
+        "blocker": "needs-physical-access",
+        "detail": "Not online as far as searched."
       }
     ],
     "texts": [
@@ -283,11 +329,11 @@
         "summary": "Part of a report to a correspondent addressed as 'Sig.r mio', on a negotiation over fiefs; Rochetta is named. A person hidden as 50 said nothing and referred the matter to the Provost, and it was settled through a person hidden as I. The writer doubts this: the other side wanted something else and lost their nerve. The ministers pressed harder than I. for the fiefs not to be excluded from the 'compromesso', and the Grand Chancellor and the Provost were agreed. By cunning the writer's side has got a letter of the Provost saying that a certain addition can only mean the total exclusion of the fiefs. I. was very low and tried in vain to visit PP. The reader is to keep informed, not show his hand without need, and take care in writing to the Provost. Postscript: the Governor of Milan has offered to write to the King and has written to the Spanish ambassador.",
         "reading_review": {
           "grade": "B",
-          "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (the session that prepared these files). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
+          "by": "the integration reader (a Claude model, 12 Nov 2026): a model reading, not a person; it replaces the contributor's own entry and is not independent of the model-assisted work",
           "date": "2026-11-12",
           "note": "Read as sentences against the translation. The body runs as connected Italian and its argument can be followed. Holes: four unidentified codes for persons in most sentences, an abbreviation sign read 'per' from context or not at all, one unread cipher sign, eleven words with a supplied or emended letter, and about a dozen doubtful clear words. The end of the postscript is read only in part and is set apart."
         },
-        "note": "read_share 0.849 is our count of the README word rule on reading.md (314 words, 56 holes): codes, doubtful words and every word with a supplied or emended letter count as holes, and the clear text is counted with the cipher. By cipher units the reviewer's figure is 91.5%. transcription_blind.txt is the blind second transcription in its own sign names."
+        "note": "read_share 0.849 is our count of the README word rule on reading.md (314 words read and 56 holes, 370 in all): codes, doubtful words and every word with a supplied or emended letter count as holes, and the clear text is counted with the cipher. By cipher units the reviewer's figure is 91.5%. transcription_blind.txt is the blind second transcription in its own sign names."
       }
     ],
     "key_file": [
@@ -295,6 +341,6 @@
       "aliases.tsv",
       "overrides.tsv"
     ],
-    "notes": "Filed as read in part. The 94.0% of issue 427 is withdrawn: it left 4 clear-script letters out of the total and kept 10 units of two emended words as read. The reviewer's 537 of 587 (91.5%) is the stated figure. The decode rests on 25 key values, on two renamed labels, on one split of a blind label made after decoding (8 units) and on 13 overrides by coordinate, all in the key files; NOTES.md says which is which. The shuffled-key controls are from our own scripts; docs/_validate.py was not run and no validation block is claimed. The reviewer's check on issue 427 (his decoder, his shuffled-key control, his comparison with the image) is his to record; it is not claimed in verification here. The repository's checker scripts were not run by the contributor; the checks were verified by reading them (pull request text). The contributor id mcbratney is added to contributors.json by pull request 445 (muzio1550), not by this one."
+    "notes": "Filed as read in part: 0.849 of the page by the README word rule (clear text and cipher together), under the 95% bar; by cipher units the reviewer's strict 537 of 587 = 91.5%. The 94.0% of issue 427 is withdrawn: it left 4 clear-script letters out of the total and kept 10 units of two emended words as read. The decode rests on 25 key values, two renamed labels, one split of a blind label made after decoding (8 units) and 13 overrides by coordinate, all in the key files. Order of events (key frozen on 11 Nov, blind transcription before the key was opened) is by the contributor's record; the RFC 3161 imprints and stamped files agree with it. Statistical test (docs/_validate.py): pass. The repository's checker scripts were not run by the contributor."
   }
 }

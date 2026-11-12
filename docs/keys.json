@@ -4798,6 +4798,33 @@
    "year": 1814,
    "found": 2026,
    "note": "A surviving sheet of the State Department's numerical code, NARA M97 roll 13 frames 1056-1057, printed by Weber (1979) as WE028; working transcription in targets/morris1813/beling/key/codebook_M97_13_transcription.csv (seven entries blank, eleven disputed). The same code as the table rebuilt in targets/jqa (k-jqa1385)."
+  },
+  {
+   "id": "k-muzio1550",
+   "label": "Muzio 1550 letter-and-digit substitution with a small code (47 signs, two for each vowel and s, doubled-letter signs, digit-pair nulls)",
+   "kind": "scholar's key",
+   "by": "Malcolm McBratney, with Claude; the first values from an early hand's letters on the sister letter cc. 5r-5v",
+   "year": 1550,
+   "found": 2026,
+   "note": "Recovered from the c. 5r passage of the sister letter (letters t r a d ij o a over one cipher line, clear text round it) and completed by reading c. 3r; the c. 5v passage then decrypted to a marginal decipherment on the sheet (CE = Cardinale, 25 = V. Ecc.). Codes 13 and 24 have no value; 26, 4o and 1o rest on context. targets/muzio1550/key.tsv."
+  },
+  {
+   "id": "k-rossi1537",
+   "label": "Rossi di San Secondo 1537 symbol alphabet (20 letters, homophones for a, i, c, g, u; one sign for d and t)",
+   "kind": "scholar's key",
+   "by": "Malcolm McBratney, with Claude (annealer with Italian quadgrams, key completed by reading)",
+   "year": 1537,
+   "found": 2026,
+   "note": "Recovered from the ciphertext alone on a transcription frozen before decoding; the rare letters were completed by reading. The sign P stands for both d and t, told apart from context (a blind shape test agrees with a second look on 82.8%). Three signs have no value. targets/rossi1537/key.tsv."
+  },
+  {
+   "id": "k-augustoni1612",
+   "label": "Augustoni 1612 letter-like substitution (25 signs for 19 letters, inside a clear letter)",
+   "kind": "scholar's key",
+   "by": "Malcolm McBratney, with Claude (annealer with Italian quadgrams, key completed by reading)",
+   "year": 1612,
+   "found": 2026,
+   "note": "Recovered from the ciphertext alone and frozen on 11 Nov 2026; the decode also uses two renamed labels, a split of the rounded u made after decoding and 13 overrides by coordinate. The codes I., PP., 25. and .50. and the sign & have no value. targets/augustoni1612/key.tsv, aliases.tsv, overrides.tsv."
   }
  ],
  "links": [
@@ -7734,6 +7761,24 @@
    "target": "morris1813",
    "how": "adapted",
    "note": "The block reversal was first found on frame 0039 by fitting this table (WAINUT, 27 Oct 2026): function-word share 0.353 against at most 0.297 for 20,000 random block orders; the later readings use the code sheet itself (k-we028)"
+  },
+  {
+   "key": "k-muzio1550",
+   "target": "muzio1550",
+   "how": "rebuilt from",
+   "note": "values from the sister letter's early-hand letters and the clear text round its passage, completed on c. 3r; the c. 5v passage then matched a marginal decipherment"
+  },
+  {
+   "key": "k-rossi1537",
+   "target": "rossi1537",
+   "how": "rebuilt from",
+   "note": "annealed from the ciphertext of the frozen transcription and completed by reading; d and t share one sign"
+  },
+  {
+   "key": "k-augustoni1612",
+   "target": "augustoni1612",
+   "how": "rebuilt from",
+   "note": "annealed from the ciphertext of the first transcription and completed by reading, with aliases and overrides listed in the folder"
   }
  ],
  "sources": [

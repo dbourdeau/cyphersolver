@@ -240,9 +240,58 @@
       "kind": "literature search",
       "what": "Six web searches for an edition or decipherment of the letters; the repository and the Estense records. Nothing found. The Mantua and Parma archives and the printed Gonzaga literature were not searched in full text.",
       "result": "partial"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "other"
+      ],
+      "what": "Integration check: a decoder written separately reproduces the K lines of decryption_A.txt and decryption_B.txt (53 of 53 lines, A recto and verso, B); blind against non-blind shape verdicts recomputed from dt_ledger.tsv (178 of 215 = 82.8%, as stated); agreement with the reading corrected to 187 of 241 (blind) and 214 of 241 (non-blind) where the contributor's 195 and 231 counted unclear and unseen signs; word counts checked against the readings; stamped-file hashes and RFC 3161 imprints checked; about 70 signs of the first part of V01-V03 compared with the image.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "statistical test",
+        "language-model scoring"
+      ],
+      "what": "Statistical validation (docs/_validate.py): 2295 tokens, 26 types, it-cinquecento order 4: reading -2.33 per letter; random keys -4.835 (z 4.7); key annealed onto shuffled ciphertext best -2.958 (mean -2.966, z 95.3); annealer on the real text -2.323. Verdict: underdetermined.",
+      "result": "partial"
     }
   ],
   "outcome": {
+    "validation": {
+      "date": "2026-11-12",
+      "model": "it-cinquecento",
+      "file": "validation.tsv",
+      "tokens": 2295,
+      "types": 26,
+      "tokens_per_type": 88.27,
+      "score": -2.33,
+      "nulls": {
+        "random keys": {
+          "n": 200,
+          "mean": -4.835,
+          "sd": 0.53,
+          "max": -3.705,
+          "z": 4.7,
+          "p": 0.005
+        },
+        "shuffled refit": {
+          "n": 6,
+          "mean": -2.966,
+          "sd": 0.007,
+          "max": -2.958,
+          "z": 95.3,
+          "p": 0.1429
+        }
+      },
+      "power": -2.323,
+      "verdict": "underdetermined",
+      "notes": "claimed per-occurrence score -2.147; polyphony 0.058; 73 unread tokens left out; annealer on the real text from random keys reached -2.323"
+    },
     "class": "read in part",
     "key": "partial",
     "method": "key recovered from ciphertext-only",
@@ -252,8 +301,8 @@
       "key recovered"
     ],
     "fraction_read_method": "measured",
-    "fraction_read_source": "units.tsv and counts.txt (scripts/build.py): 2,368 cipher units. With d and t taken from the blind shape test, 2,204 units give the letter the reading takes (93.07%); with the non-blind second look, 2,247 (94.89%); with the key alone and P printed t, 2,161 (91.26%). 73 units are unread.",
-    "fraction_read": 0.931,
+    "fraction_read_source": "reading_A.md and reading_B.md, README word rule: letter A 344 words read and 23 holes (0.937), letter B 154 read and 12 holes (0.928), both 498 of 533 = 0.934; holes recounted at integration (A 363 words, B 166). The contributor's unit figures, given once: 2,204 of 2,368 = 93.07% with d and t from the blind shape test, 2,247 = 94.89% with the non-blind second look, 2,161 = 91.26% with the key alone (P printed t); 73 units unread.",
+    "fraction_read": 0.934,
     "verification": [
       "key confirms",
       "historical consistency"
@@ -272,31 +321,40 @@
         "role": "transcription",
         "note": "cc. 31r, 31v and 33r twice (one blind), from the Estense images, with Claude",
         "date": "2026-11-11"
+      },
+      {
+        "who": "bourdeau",
+        "role": "pointer",
+        "note": "issue #428: asked for letter A verso, the d/t ledger and the second transcription, and recounted letter B (about 95.9%) and letter A recto (about 93.6%)",
+        "date": "2026-11-12",
+        "source": "https://github.com/dbourdeau/cyphersolver/issues/428"
       }
     ],
     "gaps": [
       {
-        "item": "d and t: one transcription code (P) for two shapes; a blind shape test agrees with the non-blind look on 82.8% of them",
+        "item": "d and t: one transcription code (P) for two shapes, 256 units; a blind shape test agrees with the non-blind look on 82.8%",
         "blocker": "illegible",
-        "detail": "256 units. In the reading d or t is taken from context. A person reading the heads on the original, or a re-transcription that splits the two shapes blind, would settle it."
+        "detail": "The shapes are not reliably told apart on the image, so d or t is chosen from context. A person reading the heads on the original, or a blind re-transcription that splits the two shapes, would settle it."
       },
       {
-        "item": "73 units unread in 16 places",
+        "item": "73 unread units in 16 places: L05, L08, L17 (a name), L21, V03, B12 (a place near Piadena), B16-B17",
         "blocker": "illegible",
-        "detail": "holes.md lists them: L05 (4), L08 (9), L17 (11, a name before 'veneciano'), L21 (8), V03 (6), B12 (11, a place after 'Castel'), B16-B17 (14) and single signs."
+        "detail": "holes.md lists them; looked at again on the image on 12 Nov 2026 and left unread."
       },
       {
-        "item": "Three signs without a value: A (4 with a top bar, twice), the apostrophe mark (twice), the bare tick (twice)",
-        "blocker": "too-short"
+        "item": "Three signs without a value: A (4 with a top bar), the apostrophe mark, the bare tick",
+        "blocker": "too-short",
+        "detail": "Two occurrences each."
       },
       {
-        "item": "Who Astolfo, Zopo, the marchese, the gran Meo and Vicencio veneciano are",
-        "blocker": "not-attempted",
-        "detail": "Astolfo = Alfonso d'Avalos, marchese del Vasto, is our inference from the retreat and from Pinerolo and Turin; unverified."
+        "item": "The l shape (sign D) has no blind confirmation; the second look at d and t was not blind",
+        "blocker": "illegible",
+        "detail": "The blind classifier put most l signs in the d class."
       },
       {
-        "item": "Prior art not checked in the Mantua and Parma archives or the printed Gonzaga literature",
-        "blocker": "not-attempted"
+        "item": "Prior art in the Archivio Gonzaga (Mantua), the Archivio di Stato di Parma (Famiglia Rossi), the Rossi di San Secondo archive and the printed Gonzaga correspondence",
+        "blocker": "needs-physical-access",
+        "detail": "Not online as far as searched."
       }
     ],
     "texts": [
@@ -316,11 +374,11 @@
         "summary": "Written after supper and, the count says, a good deal of wine. He mocks an Imperial commander he calls Astolfo, who had announced all over Italy that he would fight the French and has instead retreated twenty miles, with forty to follow. Cesare Pallavicino has ridden to the Marquis to see the retreat. He recalls a departure from Genoa the December before, and excuses his free speech by the wine and by not having to deal with Covos.",
         "reading_review": {
           "grade": "B",
-          "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (the session that prepared these files). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
+          "by": "the integration reader (a Claude model, 12 Nov 2026): a model reading, not a person; it replaces the contributor's own entry and is not independent of the model-assisted work",
           "date": "2026-11-12",
           "note": "Read as sentences against the translation. The letter runs as connected, jocular Italian in the writer's north-Italian spelling; the verso is close to clean. The recto has the holes: two unread groups in one sentence (L08), an unread name (L17), an unread phrase (L21), and several words whose letters are read but whose sense is doubtful ('verna fra', 'com a vano', 'tale voche')."
         },
-        "note": "read_share 0.937 is our count of the README word rule on reading_A.md (344 words, 23 holes): unread groups, doubtful words and every word with a supplied letter count as holes. By cipher units letter A is 92.19% (blind d/t) to 94.42% (non-blind d/t). transcription_blind.txt is the blind second transcription of both letters, in its own sign names (transcription_blind_signs.tsv)."
+        "note": "read_share 0.937 is our count of the README word rule on reading_A.md (344 words read and 23 holes, 367 in all): unread groups, doubtful words and every word with a supplied letter count as holes. By cipher units letter A is 92.19% (blind d/t) to 94.42% (non-blind d/t). transcription_blind.txt is the blind second transcription of both letters, in its own sign names (transcription_blind_signs.tsv)."
       },
       {
         "doc": "B",
@@ -338,14 +396,14 @@
         "summary": "Four days later. The second retreat of 'this coward Astolfo' was forty miles as foretold, with twelve guns lost; Pinerolo and Turin are relieved; there is no money. Men from Mirandola have raided the Cremonese and sacked Piadena and another place. He breaks off to keep company with 'your prince of Luzara', who must be put to bed after supper.",
         "reading_review": {
           "grade": "A",
-          "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (the session that prepared these files). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
+          "by": "the integration reader (a Claude model, 12 Nov 2026): a model reading, not a person; it replaces the contributor's own entry and is not independent of the model-assisted work",
           "date": "2026-11-12",
           "note": "Read as sentences against the translation. Coherent throughout. Holes: a place-name after 'Castel', the end of the last sentence but one ('non mi lassa ... com[...]gie'), one clause whose words are doubtful ('per le valli meglio la comodita'), and three supplied letters."
         },
-        "note": "read_share 0.928 is our count of the README word rule on reading_B.md (154 words, 12 holes). By cipher units letter B is 94.97% (blind d/t) to 95.89% (non-blind d/t)."
+        "note": "read_share 0.928 is our count of the README word rule on reading_B.md (154 words read and 12 holes, 166 in all). By cipher units letter B is 94.97% (blind d/t) to 95.89% (non-blind d/t)."
       }
     ],
     "key_file": "key.tsv",
-    "notes": "Filed as read in part. By cipher units the two letters are 93.07% read with d and t taken from the blind shape test and 94.89% with the non-blind second look; by words 0.937 and 0.928. The d/t point is the main limit: the first transcription has one code for both shapes, and the blind test shows the shapes can be told apart only about four times in five, so the reading chooses d or t from context. The shuffled-key and null controls are reported in NOTES.md from our own scripts; docs/_validate.py was not run and no validation block is claimed. The repository's checker scripts were not run by the contributor; the checks were verified by reading them (PR description). The contributor id mcbratney is added to contributors.json by pull request 445 (muzio1550), not by this one."
+    "notes": "Filed as read in part: 0.934 of the two letters by the README word rule (A 0.937, B 0.928), under the 95% bar; by cipher units 93.07% with d and t from the blind shape test and 94.89% with the non-blind look (the contributor's). The d/t point is the main limit: one code for two shapes, the blind test tells them apart about four times in five, so the reading chooses d or t from context. The statistical test (docs/_validate.py) is 'underdetermined': an annealer started from a random key on the real ciphertext reaches -2.323 per letter against -2.330 for the reading, so the letter model cannot tell the reading from a fitted key; shuffled-key and null controls are the contributor's own. Order of events (first transcription frozen before decoding) is by the contributor's record; the RFC 3161 imprints and stamped files agree with it. The repository's checker scripts were not run by the contributor."
   }
 }

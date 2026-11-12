@@ -1,10 +1,10 @@
 # Pier Maria Rossi di San Secondo to Ferrante Gonzaga, San Secondo, 4 and 8 Nov 1537 (Biblioteca Estense, Autografoteca Campori, Rossi cc. 31-34)
 
-Status: read in part (contributed, issue #428). Key recovered from the ciphertext alone. By cipher units 93.07% of the two letters is read with d and t taken from a blind shape test, 94.89% with a second look that was not blind. By words 0.937 (letter A) and 0.928 (letter B).
+Status: read in part (contributed, PR #451, issue #428). Key recovered from the ciphertext alone. By the README word rule 0.934 of the two letters is read (letter A 0.937, letter B 0.928; holes marked in the readings); by cipher units 93.07% with d and t taken from a blind shape test, 94.89% with a second look that was not blind.
 
-Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic). Sent as issue #428; checked by Daniel Bourdeau on 11-12 Nov 2026, who asked for these files and raised the points answered under "Answers to the check on issue #428". Not yet written up on the site.
+Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic). Sent as issue #428; checked by Daniel Bourdeau on 11-12 Nov 2026, who asked for these files and raised the points answered under "Answers to the check on issue #428". Integrated on 12 Nov 2026 (see "Integration check").
 
-Catalogue entry 1564 lists five letters of Gonzaga clients to Ferrante Gonzaga. This folder holds the two Rossi letters. The Muzio letter of the same entry is in `muzio1550` (pull request 445).
+Catalogue entry 1564 lists five letters of Gonzaga clients to Ferrante Gonzaga. This folder holds the two Rossi letters. The Muzio letters of the same entry are in `muzio1550` (pull request 445): a different cipher, with its own page. Entry 1564 now keeps only the Gosellini letter of 1555.
 
 ## The documents
 
@@ -35,7 +35,7 @@ How well can the two shapes be told apart without knowing the word?
 
 - A second look at every P sign, by a reader who knew the hypothesis (not blind), found the d shape on 79 of the 89 signs read d, leaned to d on 3, found the t shape on 4 (one of them a leaning) and could not decide 3.
 - A blind test put each of the 256 P signs, cut out and under a random id, before a reader who saw only the crop. Where both that reader and the second look gave d or t, they agree on 178 of 215 signs: **82.8%**.
-- Measured against the reading, the blind classes give the reading's letter on 195 of the 241 P signs read d or t (80.9%); the non-blind look on 231 (95.9%).
+- Measured against the reading (recounted from `dt_ledger.tsv` at integration): of the 241 P signs read d or t, the blind classes A and B give the reading's letter on 187 (77.6%); the non-blind look gives it on 214 (88.8%). The contributor's 195 (80.9%) and 231 (95.9%) also count as agreeing 8 signs the blind reader called unclear and 17 signs the second look never saw, where the printed t happens to be the reading.
 
 So the shape rule is real but not safe sign by sign, and **in practice d or t is chosen from context**. That is why the count with the blind classes (93.07%) is below the count with the non-blind look (94.89%): the non-blind reader could be led by the word. `dt_ledger.tsv` lists all 358 tall signs with both verdicts.
 
@@ -64,7 +64,7 @@ Method: key recovered from the ciphertext alone.
 | Both | 2,368 | 2,161 = 91.26% | 2,247 = 94.89% | 2,204 = 93.07% |
 
   With the leaning verdicts of the non-blind look counted as well: A recto 852 = 93.63%, A verso 673 = 95.73%, both letters 2,249 = 94.97%. Unread in every column: 73 units (A recto 40, A verso 7, B 26).
-- **Count by words** (README read bar; our own count after `research/reading_audit/v2_score.py` and `v10_relabel.py`, which we read and did not run): letter A 344 words and 23 holes, 0.937; letter B 154 words and 12 holes, 0.928. Every unread group, every doubtful word and every word with a supplied letter is a hole.
+- **Count by words** (README read bar; our own count after `research/reading_audit/v2_score.py` and `v10_relabel.py`, which we read and did not run): letter A 344 words read and 23 holes (367 in all), 0.937; letter B 154 words read and 12 holes (166 in all), 0.928; both letters 498 of 533 = 0.934. Every unread group, every doubtful word and every word with a supplied letter is a hole.
 - **Shuffled keys** (11 Nov; Italian quadgram score of the key-only decryption, 5,000 shuffled keys): whole text -4.319 against a best of -5.713; letter A -4.328 against -5.745; letter B -4.295 against -5.561. None of the 5,000 as good in any of the three. Letter B with a key voted from letter A's reading only: -4.314 against a best of -5.644, none as good; that key reads 698 of B's 755 units (the reading of B was made with the key in hand).
 - **Solver on letter A only, applied to letter B**: score -4.258 against a best shuffle of -5.038, none as good; but only 622 of 755 units (82.38%), because the solver merges rare letters. A variant with a letter-frequency penalty did worse (62.78%) and was dropped.
 - **Null controls** (11 Nov): the same annealer on five frequency-preserving permutations of the cipher stream ends at -4.610 each time (a degenerate key that prints i throughout), against -4.227 for the real stream. With each letter limited to its number of signs plus one: real -4.230; three controls -4.971, -4.983, -4.972.
@@ -105,6 +105,19 @@ The unit ledger is the one stamped on 11 Nov 2026 and is unchanged, so the figur
 - In October and November 1537 the French under Montmorency forced the pass of Susa and relieved Turin and Pinerolo, del Vasto raised the sieges and withdrew, and a truce followed in November. Galeotto Pico of Mirandola was under French protection. This fits both letters. Sources for this paragraph are general reference works (Wikipedia, "Anne de Montmorency" and the Italian pages), not checked against a history of the campaign.
 - **Zopo** ("our Lame One", whose consent Astolfo had), **Vicencio veneciano**, **Monfalconeto** and the **gran Meo** are not identified. "Your prince of Luzara" points to the Gonzaga of Luzzara; "principe" is mocking. **Covos** is Francisco de los Cobos, the Emperor's secretary.
 
+## Integration check (12 Nov 2026)
+
+Verification of the pull request files, before the write-up.
+
+- **Decoder.** A decoder written separately from `key.tsv` and the first transcriptions (P printed t, the sign # read q before 8 and a elsewhere) reproduces the K lines of `decryption_A.txt` and `decryption_B.txt`: 53 of 53 lines, letter A recto and verso and letter B.
+- **The ledger.** `units.tsv` has 2,368 rows, as stated; letter A verso (703 units) is now in it. From `dt_ledger.tsv`: blind against non-blind shape verdicts 178 of 215 = 82.8% (firm verdicts only 172 of 208), as stated. The two agreement figures against the reading are corrected under "The system" (187 of 241 and 214 of 241, not 195 and 231).
+- **Words.** The word counts of the readings were recounted from `reading_A.md` (363 words, 21 bracketed holes plus the words inside multi-word brackets) and `reading_B.md` (166 words, 12 holes): they agree with 0.937 and 0.928. In `NOTES.md` the "344 words" and "154 words" are the words read, not the totals. No word of the readings is counted as a hole because of d/t alone; where the P signs were taken d or t from context, the unit count with the blind classes (93.07%) shows the effect.
+- **Hashes.** The SHA-256 of each `MANIFEST.sha256` equals the message imprint of its RFC 3161 token (first timestamp 11 Nov 2026 21:08:07 GMT, blind shape test 21:10:37 GMT); the 14 stamped files that were sent hash-match their manifests. The first manifest also lists Gosellini files that are not in the folder and not part of this target. The signature chain of the tokens and the OpenTimestamps proofs were not verified. The frozen key differs from `key.tsv` only by the d value of P, the u/v and q readings of # and 8, and rows for signs without a value (declared above).
+- **Image.** About 70 signs of the first part of V01-V03 (letter A verso, new in this folder) were compared with the Estense image of c. 31v and agree; the earlier verification of the issue compared about 95 signs of letter B lines 1-2. The d and t shapes cannot be told apart reliably at that size, as the shape test says.
+- **Statistical test.** `docs/_validate.py` on `validation.tsv` (2,295 read tokens): verdict "underdetermined": the reading scores -2.330 per letter against -4.835 for random keys, but an annealer started from a random key on the real ciphertext reaches -2.323, so the letter model cannot tell the reading from a key fitted to the text. That is what the recovery by annealing predicts; it is not a pass.
+- **Order of events.** That the first transcription was frozen before decoding rests on the contributor's record (one commit, his manifests); the token imprints and stamped files agree with it.
+- **Catalogue.** Entry 1564 held five letters; the Rossi letters leave it here and the Muzio letters in `muzio1550`, a different cipher. The Gosellini letter of 1555 stays; the contributor's first manifest lists a file with Gosellini in its name (`gosellini_c12v_c13r_digits.txt`), which was not sent and was not looked at.
+
 ## Prior art
 
 No edition or decipherment of these letters was found, and priority is not established. Checked on 11 Nov 2026: this repository (entry 1564 open, no target); the leaves (no decipherment); the Estense records; six web searches. Not checked: Archivio Gonzaga, Mantua, b. 1911; Archivio di Stato di Parma, Famiglia Rossi bb. 8-12; the Rossi di San Secondo archive (Lincei/Corsiniana), series I cart. 26; the Olschki volumes on the Gonzaga papers; the Guicciardini and Aretino correspondence editions.
@@ -121,11 +134,20 @@ No edition or decipherment of these letters was found, and priority is not estab
 
 ## Remaining gaps
 
-- A blind re-transcription that splits the d and t shapes, or a person's reading of the heads on the original.
-- The unread places: L05, L08, L17, L21, V02-V03, B12 (a place near Piadena), B16-B17.
-- The three signs without a value (A, the apostrophe mark, the bare tick).
-- Who Astolfo, Zopo, the marchese, Vicencio and the gran Meo are.
-- The archives and editions listed under Prior art.
+- d and t: one transcription code (P) for two shapes, 256 units; the blind shape test agrees with the second look on 82.8% - blocker: illegible; the shapes are not reliably told apart on the image, so d or t is chosen from context; a person reading the heads on the original or a blind re-transcription that splits them would settle it
+- the unread places L05, L08, L17 (a name), L21, V02-V03, B12 (a place near Piadena), B16-B17 (73 units in all) - blocker: illegible; looked at again on the image on 12 Nov 2026 and left unread
+- the three signs without a value (A, the apostrophe mark, the bare tick) - blocker: too-short; two occurrences each
+- the l shape (sign D) has no blind confirmation, and the second look was not blind - blocker: illegible; the blind classifier put most l signs in the d class
+- prior art in the Archivio Gonzaga (Mantua, b. 1911), the Archivio di Stato di Parma (Famiglia Rossi bb. 8-12), the Rossi di San Secondo archive and the printed Gonzaga correspondence - blocker: needs-physical-access; not online as far as searched
+
+## Escalation
+
+- [x] siblings: letters A and B of the same file, and their address leaves, opened and read; the Gosellini letter of the same catalogue entry (a different cipher) was not part of this work
+- [x] clear-pages: the clear closes of letters A and B read on 12 Nov 2026; no decipherment on any leaf
+- [x] known-keys: the repository's Gonzaga keys belong to other systems and decades (Charles V chancery ciphers, the Nevers figure cipher, the Guastalla digit cipher); none was tried sign by sign
+- [x] print: no edition or decipherment found (six web searches, the repository, the Estense records); the archives and editions listed under Prior art not reached
+- [x] key-rebuild: annealer with Italian quadgrams on the frozen first transcription gave continuous Italian; rare letters completed by reading; the shuffled-key and null controls run
+- [x] retry: every unread place looked at again on the image on 12 Nov 2026; the new doubtful words of that day are in `holes.md`
 
 ## Files
 

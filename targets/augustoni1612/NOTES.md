@@ -1,8 +1,8 @@
 # Girolamo Augustoni (as catalogued), 9 Oct 1612 (Biblioteca Estense, Autografoteca Campori, Lettera A, Augustoni c. 1; catalogue row 1569)
 
-Status: read in part (contributed, issue #427). Key recovered from the ciphertext alone. By cipher units, on the transcription frozen on 11 Nov 2026: **537 of 587 = 91.5%** by the reviewer's count (538 by ours, one unit apart; see "Counts"). The 94.0% of the issue is withdrawn. By words 0.849 (clear text and cipher together, our count of the README rule on `reading.md`).
+Status: read in part (contributed, PR #452, issue #427). Key recovered from the ciphertext alone. By the README word rule 0.849 of the page is read (clear text and cipher together, 56 hole words); by cipher units 537 of 587 = 91.5% by the reviewer's strict rule on the transcription frozen on 11 Nov 2026. The 94.0% of the issue is withdrawn.
 
-Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic). Sent as issue #427; checked by Daniel Bourdeau on 12 Nov 2026, who asked for these files and raised the points answered under "Answers to the check on issue #427". Not yet written up on the site.
+Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic). Sent as issue #427; checked by Daniel Bourdeau on 12 Nov 2026, who asked for these files and raised the points answered under "Answers to the check on issue #427". Integrated on 12 Nov 2026 (see "Integration check").
 
 ## The document
 
@@ -96,6 +96,19 @@ Part of a report, in the first person plural, to a correspondent addressed as "S
 
 Not established. I., PP., 25 and 50 are not identified. "Gran Canceliero", "Governor of Milan", "the King" and "Ambassador of Spain" suggest the Spanish State of Milan, and "Di Carp." may be Carpi; neither is verified, and which fiefs and which house are meant we do not know. The attribution to Girolamo Augustoni is the library's. `[?A.V.]` on L14 is doubtful (see `holes.md`). No claim is made about the dispute beyond what the text says.
 
+## Integration check (12 Nov 2026)
+
+Verification of the pull request files, before the write-up.
+
+- **Decoder.** A decoder written separately from `key.tsv` and the label aliases (R = K, D = z, x = g, the rounded u = n) reproduces the K lines of `decryption.txt` for all 30 lines that carry cipher (112 cipher words); the 11 clear-only lines have no K line.
+- **Words.** `reading.md` has 355 words with the bracketed groups counted as one, 53 of them holes: 0.851. The contributor's 0.849 (314 words read and 56 holes, 370 in all) is the figure kept; the clear text and the cipher are counted together, doubtful clear words are holes, the codes I., PP., 25. and .50. are holes.
+- **Units.** The tallies in `counts.txt` are internally consistent (A, B, C, D reconcile unit by unit). The strict figure for the class is not the unit count: it is the word figure above; the unit figure is the reviewer's rule, and 94.0% is withdrawn.
+- **Hashes.** The SHA-256 of each `MANIFEST.sha256` equals the message imprint of its RFC 3161 token (first 11 Nov 2026 21:08:13 GMT, repair 21:22:32 GMT); the 26 stamped files that were sent hash-match their manifests. The signature chain and the OpenTimestamps proofs were not verified. The consensus transcription is not blind, and the rounded-u split was made after decoding (declared above).
+- **Image.** Not re-imaged at integration. The earlier verification of the issue compared about 35 cipher words (about 200 signs) of c. 1r with the image and found the three readings now adopted (INGANO, ASTUTIA, SCR[I]TURA), CONSCENSO and "sia". The clear text and the postscript were read once by one reader and have no second reader.
+- **Statistical test.** `docs/_validate.py` on `validation.tsv` (583 cipher tokens after the review, 27 types): pass (reading -2.179 per letter, random keys -4.981, key annealed onto shuffled ciphertext at best -2.979).
+- **Order of events.** That the first key was frozen on 11 Nov and the blind transcription made before the key was opened rests on the contributor's record (his manifests and md5 values); the token imprints and stamped files agree with it.
+- **Catalogue.** Entry 1569 held Augustoni (1612) and Olivazzi (1725), unrelated; Augustoni leaves it and Olivazzi stays. The vetting note called the cipher "Greek-letter-like", "about 20 lines": it is 112 cipher words inside a clear letter on 29 lines and a postscript.
+
 ## Prior art
 
 None found; priority not established. Checked on 11 Nov 2026: this repository (row 1569 open, no target, no pull request), the catalogue vetting, web searches for the letter and its matter, and the Archivio di Stato di Modena inventory of the Cancelleria ducale, Ambasciatori, Milano (no Augustoni between 1600 and 1620). Not checked: Biblioteca comunale di Correggio, "Notizie sparse della famiglia Augustoni"; Archivio di Stato di Milano, Carteggio delle cancellerie dello Stato; the printed Campori catalogue; the Este agents' series in Modena page by page.
@@ -109,6 +122,25 @@ None found; priority not established. Checked on 11 Nov 2026: this repository (r
 - `&` has no key value; four "per" are from context and two places are unread.
 - The repository's checker scripts were not run by us (see the pull request text).
 - The RFC 3161 tokens' hash and time were read; the signature chain and the OpenTimestamps proofs were not verified.
+
+## Remaining gaps
+
+- codes for persons: I. (five times), PP., 25. and .50. (twice, in the clear text) - blocker: open-codes; not identified, and no other letter of the correspondence has been looked for
+- the abbreviation sign & (6 units): "per" from context at four places, unread at L13 and L16 - blocker: too-short; no key value, no other occurrence to test it
+- one cipher unit unread: the sign in the gutter at the start of L10 - blocker: illegible; the bowl is lost in the fold; the original or a better image of the fold is needed
+- signs under blots (L14, L19) and one sign emended against its shape (L19 sign 2); the reviewer and the contributor read the blots differently - blocker: illegible; values come from the word
+- the rounded u-form read as n (8 units), a split made after decoding - blocker: illegible; the two forms of u are told apart only by a reader who knows the word; a blind re-transcription is the test
+- the clear text: doubtful words in the body, the postscript read in part, signature, place and names not established - blocker: illegible; one reader with the key known, in a fast hand; a person who reads the hand should go over `transcription.txt`
+- prior art at Correggio (Biblioteca comunale, "Notizie sparse della famiglia Augustoni"), in the Archivio di Stato di Milano and the printed Campori catalogue - blocker: needs-physical-access; not online as far as searched
+
+## Escalation
+
+- [x] siblings: no other record of Augustoni in the catalogue entry; Olivazzi (1725), the other item of entry 1569, is a different cipher and was not part of this work
+- [x] clear-pages: the verso has no cipher and the leaf no decipherment; the clear text of the letter itself was read in full on 12 Nov 2026 and used to settle doubtful words
+- [x] known-keys: none known for Augustoni or this correspondence (the catalogue vetting found no key in the repository)
+- [x] print: no edition or reading found (the repository, the catalogue vetting, web searches, the Modena Cancelleria ducale inventory for Milan 1600-1620); Correggio, Milan and the printed Campori catalogue not reached
+- [x] key-rebuild: annealer with Italian quadgrams on the first transcription gave Italian without a crib; the key was completed by reading and frozen
+- [x] retry: the image review of 12 Nov 2026 re-read the unread and doubtful words with the key; three words closed (INGANO, ASTUTIA, SCR[I]TURA); what stays open is listed above
 
 ## Files
 

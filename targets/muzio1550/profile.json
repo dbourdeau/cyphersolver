@@ -246,9 +246,58 @@
       ],
       "what": "Sister letter in full: clear text read, the c. 5r passage re-read, the c. 5v passage transcribed and decrypted. The marginal decipherment on c. 5v matches the decryption and gives CE = Cardinale and 25 = V. Ecc.",
       "result": "partial"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "other"
+      ],
+      "what": "Integration check: a decoder written separately reproduces decryption_c3r.txt (25 lines) and decryption_c5.txt (12 lines) from key.tsv and the transcriptions; the reading equals the decryption letter for letter apart from u/v and the declared emendations; word figure recounted (198 words, 18 holes, 0.909; 0.889 (22 holes) if the margin-confirmed code groups are holes too); stamped-file hashes and RFC 3161 imprint checked; about 70 signs of L05-L07 compared with the image.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "statistical test",
+        "language-model scoring"
+      ],
+      "what": "Statistical validation (docs/_validate.py): 849 tokens, 37 types, it-cinquecento order 4: reading -1.882 per letter; random keys -4.679 (z 8.8); key annealed onto shuffled ciphertext best -3.187 (mean -3.194, z 203.7); annealer on the real text -1.882. Verdict: pass.",
+      "result": "worked"
     }
   ],
   "outcome": {
+    "validation": {
+      "date": "2026-11-12",
+      "model": "it-cinquecento",
+      "file": "validation.tsv",
+      "tokens": 849,
+      "types": 37,
+      "tokens_per_type": 22.95,
+      "score": -1.882,
+      "nulls": {
+        "random keys": {
+          "n": 200,
+          "mean": -4.679,
+          "sd": 0.317,
+          "max": -4.022,
+          "z": 8.8,
+          "p": 0.005
+        },
+        "shuffled refit": {
+          "n": 6,
+          "mean": -3.194,
+          "sd": 0.006,
+          "max": -3.187,
+          "z": 203.7,
+          "p": 0.1429
+        }
+      },
+      "power": -1.882,
+      "verdict": "pass",
+      "notes": "claimed per-occurrence score -1.857; polyphony 0.006; 11 unread tokens left out; annealer on the real text from random keys reached -1.882"
+    },
     "class": "read in part",
     "key": "partial",
     "method": "key recovered based on adjacent plaintext",
@@ -259,8 +308,8 @@
       "catalogue correction"
     ],
     "fraction_read_method": "measured",
-    "fraction_read_source": "units_c3r.tsv (scripts/decrypt.py): 844 of 860 cipher units of c. 3r read by the key (806 letters and 38 nulls); 5 emended, 2 unread signs, 9 code groups counted apart. Letters only: 806 of 822. Sister letter: 327 of 339.",
-    "fraction_read": 0.981,
+    "fraction_read_source": "reading_c3r.md, README word rule recounted at integration: 198 words, 18 hole words (codes 13 and 24, 26 and 4o from context, five emended words, the single signs PSI and OP), 0.909. The contributor's other figures, given once: 844 of 860 cipher units read by the key (98.1%; letters only 806 of 822), and 0.957 with the nine code tokens counted apart. Sister letter: 327 of 339 units by the key.",
+    "fraction_read": 0.909,
     "codes_open": {
       "open": 4,
       "total": 6,
@@ -268,7 +317,8 @@
     },
     "verification": [
       "key confirms",
-      "historical consistency"
+      "historical consistency",
+      "statistical test"
     ],
     "provenance": "contributed",
     "credits": [
@@ -295,32 +345,34 @@
     ],
     "gaps": [
       {
-        "item": "c. 3r: code groups 13 and 24 have no value; 26 (Sua Maesta) and 4o (Duca di) rest on context",
+        "item": "c. 3r: code groups 13 and 24 have no value; 26 (Sua Maesta), 4o (Duca di) and 1o (Don Diego) rest on context",
         "blocker": "open-codes",
         "detail": "13 once ('un corrier di 13'), 24 once ('il Prior di 24'), 26 three times, 4o once. A key sheet or more letters in this cipher would settle them."
       },
       {
-        "item": "c. 3r: two signs that occur once (PSI on L03, OP on L17)",
+        "item": "The single signs PSI (L03), OP (L17) and OX (c. 5r)",
         "blocker": "too-short",
-        "detail": "Read 'o' and 'n gli' from context."
+        "detail": "Each occurs once; read 'o', 'n gli' from context, OX unread."
       },
       {
-        "item": "c. 3r: omega reads ss three times (fosse, creasse, esser)",
+        "item": "Omega reads ss three times on c. 3r (fosse, creasse, esser)",
         "blocker": "illegible",
         "detail": "A polyphone, or a second omega form not told apart on the image."
       },
       {
-        "item": "cc. 5r-5v: cipher passages read once by a reader who knew the key; one sign unread (OX), three words doubtful",
-        "blocker": "not-attempted",
-        "detail": "A blind pass with minim counts, as done for c. 3r."
+        "item": "cc. 5r-5v: cipher passages read once at 60-70% scale by a reader who knew the key; one sign unread, three words doubtful; the clear text uncollated",
+        "blocker": "illegible",
+        "detail": "A blind pass with minim counts on the original images would settle the o and i signs."
       },
       {
         "item": "cc. 5r-5v: the hand of the interlinear letters and the marginal decipherment is not dated",
-        "blocker": "needs-physical-access"
+        "blocker": "needs-physical-access",
+        "detail": "Only the archive can date the hand."
       },
       {
-        "item": "Prior art not checked: the Parma originals of Ferrante Gonzaga's papers, Negri 2000, Concilium Tridentinum II, studies of the conclave",
-        "blocker": "not-attempted"
+        "item": "Parma originals of Ferrante Gonzaga's papers, Negri 2000, Concilium Tridentinum II, studies of the conclave",
+        "blocker": "needs-physical-access",
+        "detail": "Not online as far as searched."
       }
     ],
     "texts": [
@@ -340,11 +392,11 @@
         "summary": "From the conclave of 1549-50. A courier back from the imperial court is said to bring the Emperor's consent to Monte (or Santa Croce) as Pope, a scheme helped by the Duke of Florence. Muzio thinks the news true but does not expect the scheme to succeed, and does not see how the Imperialists would vote for Monte. Del Monte was elected Julius III on 7 Feb 1550.",
         "reading_review": {
           "grade": "A",
-          "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (the session that prepared these files). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
+          "by": "the integration reader (a Claude model, 12 Nov 2026): a model reading, not a person; it replaces the contributor's own entry and is not independent of the model-assisted work",
           "date": "2026-11-12",
-          "note": "Read as sentences against the translation. Nine sentences, all coherent Italian. The holes are the two code groups without a value (13, 24), the context-only values for 26 and 4o, five emended words and two single-occurrence signs. The last sentence ('Ne so come gli Imperiali ... habiano da condiscendere a dargli i voti') now parses; it did not in the version sent on issue 405."
+          "note": "Read as sentences against the translation. Nine coherent Italian sentences; the holes are the codes 13 and 24, the context-only values (26, 4o), five emended words and two single signs. 'Ne so come gli Imperiali ... habiano da condiscendere a dargli i voti' parses after the two minim corrections. Checker: 17 of 19 sentences clean."
         },
-        "note": "read_share 0.909 follows the README word rule with every code value from context, every code without a value and every emended word counted as a hole (180 words, 18 holes). With the nine code tokens counted apart it is 0.957 (176 words, 8 holes). transcription_c3r_blind.txt is the blind second transcription, in its own sign names."
+        "note": "read_share 0.909 follows the README word rule recounted at integration: 198 words, 18 holes (every code value from context, every code without a value, every emended word and every single sign). The contributor's 0.957, with the nine code tokens counted apart, and his unit figure 98.1% are not used for the class. transcription_c3r_blind.txt is the blind second transcription, in its own sign names."
       },
       {
         "doc": "c5",
@@ -359,14 +411,14 @@
         "summary": "Mostly clear. The cipher reports talk from the conclave: Ferrante and Don Diego had backed Salviati; the Dukes of Florence and Alba disclosed it to the Emperor; Salviati was excluded and Don Diego drew back. In clear, Muzio argues that the candidate Ferrante favours is the fittest in the college.",
         "reading_review": {
           "grade": "A",
-          "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (the session that prepared these files). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
+          "by": "the integration reader (a Claude model, 12 Nov 2026): a model reading, not a person; it replaces the contributor's own entry and is not independent of the model-assisted work",
           "date": "2026-11-12",
-          "note": "Read as sentences against the translation. The clear text is coherent throughout. The cipher passage on c. 5r is coherent but carries most of the holes: 'e ha per farsi' does not agree with its plural verb, one code sign is unread, and 'contradi[?o] [?g]agliardo officio' is a proposal. The c. 5v passage matches the marginal decipherment."
+          "note": "Clear text coherent throughout; the cipher passages carry the holes (one unread sign, 'e ha per farsi' disagrees with its plural verb, 'contradi[?o] [?g]agliardo' is a proposal). The c. 5v passage matches the marginal decipherment. Checker: 28 of 37 sentences clean."
         },
         "note": "read_share 0.954 is over the whole letter, which is mostly clear text (437 words, 18 holes, 3 doubtful words). Over the cipher passages alone it is 0.785 (75 words, 18 holes, 2 doubtful)."
       }
     ],
     "key_file": "key.tsv",
-    "notes": "Status by the README rules: by cipher units c. 3r is 98.1% read by the key; by words it is 0.909 with codes and emended words as holes, 0.957 with codes apart. It is filed as read in part, codes open; on issue 405 the maintainer wrote that with the minim corrections in place and codes counted apart it would be recorded as read, which is his call. codes_open counts as open the two groups with no value and the two whose value rests on context. The shuffled-key controls were run on version 1 of the transcription and are not repeated on version 2; they are reported in NOTES.md and no validation block is claimed. The repository's checker scripts were not run by the contributor; the checks were verified by reading them (PR description)."
+    "notes": "Filed as read in part: 0.909 of c. 3r by the README word rule (198 words, 18 holes), under the 95% bar; the contributor's unit figure (98.1%) and his figure with the codes counted apart (0.957) are his. Key partial: groups 13 and 24 have no value, 26, 4o and 1o rest on context. Order of events (key frozen before the c. 5v test and the blind transcription) is by the contributor's record; the RFC 3161 token imprint and the stamped files agree with it. The shuffled-key controls were run on version 1 of the transcription; docs/_validate.py on version 2 gives a pass. The repository's checker scripts were not run by the contributor."
   }
 }
