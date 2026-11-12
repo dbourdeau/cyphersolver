@@ -1,0 +1,34 @@
+# duron1911 - CMXV.18.1777.1-6, decryption line by line
+# Key: shift on the 29-sign Spanish alphabet a b c ch d e f g h i j k l ll m n ñ o p q r s t u v w x y z;
+# cipher = plain + 22 (mod 29), so plain = cipher + 7. 'll' in the cipher is one sign (plain r).
+# The cipher sign ñ (plain u) has no telegraph letter and is typed 'n': cipher n reads t or u (marked t/u).
+# Columns: cipher group as typed | cipher signs | plain signs. The first two signs (GM -> m s) are the header.
+# 'VJLLL LYJXY': the space falls inside 'll ll'; the two groups are joined before cutting into signs.
+# 107 signs in all (2 header + 105 text).
+
+GMVNC       | g m v n c         | m s c t/u i
+XYMYG       | x y m y g         | d e s e m
+NWCMC       | n w c m c         | t/u ch i s i
+GJGTX       | g j g t x         | m o m a d
+YLLJX       | y ll j x          | e r o d
+YECVY       | y e c v y         | e l i c e
+HVCTX       | h v c t x         | n c i a d
+JXTHE       | j x t h e         | o d a n l
+YELL        | y e ll            | e l r
+Y           | y                 | e
+RYMLL       | r y m ll          | y e s r
+YNTHT       | y n t h t         | e t/u a n a
+RVJGK       | r v j g k         | y c o m p
+TIYLL       | t i y ll          | a ñ e r
+JMMTE       | j m m t e         | o s s a l
+CYLLJ       | c y ll j          | i e r o
+HTYMT       | h t y m t         | n a e s a
+KTLLN       | k t ll n          | p a r t/u
+CVCKT       | c v c k t         | i c i p a
+GYEJT       | g y e j t         | m e l o a
+ETXTD       | e t x t d         | l a d a k
+VJLLL LYJXY | v j ll ll y j x y | c o r r e o d e
+NTFYM       | n t f y m         | t/u a ll e s
+
+# Plain signs run together (header in brackets; t/u resolved by the sense):
+[m s] cuidese muchisimo madero de licenciado danlel reyes retana y compañeros salieron a esa participamelo a la dak correo detalles
