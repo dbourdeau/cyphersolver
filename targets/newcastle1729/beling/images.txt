@@ -1,0 +1,25 @@
+# Huntington Library HDL IIIF images used, fetched 11 Nov 2026 with curl (no images are committed).
+# Whole pages: https://hdl.huntington.org/iiif/2/p15150coll7:<page>/full/2000,/0/default.jpg
+#   60915 60916 60921 60922 (mssBLA 188, object 60924)
+#   60903 60904 60905 60906 60910 60911 60912 (4 Aug 1729, object 60914)
+#   60961 60962 60963 60964 (mssBLA 187, object 60966)
+#   60917 (mssBLA 188 code p. 3), 61005 (the report)
+# Page lists: https://hdl.huntington.org/digital/bl/dmwebservices/index.php?q=dmGetCompoundObjectInfo/p15150coll7/<object>/json
+#   objects 60924, 60914, 60966
+# Region crops of the report (61005), full resolution:
+#   .../p15150coll7:61005/pct:28,22,64,5/1800,/0/default.jpg      L03 (974 ... 1210 278 689 ...)
+#   .../p15150coll7:61005/pct:28,40,64,5/1800,/0/default.jpg      L07-L08 (711, 1118)
+#   .../p15150coll7:61005/pct:28,46,64,5/1800,/0/default.jpg      L09
+#   .../p15150coll7:61005/pct:58,46.5,34,4/1600,/0/default.jpg    L09 right end (726)
+# Crops of 60917 (lines L02, L14, L16-L18) were cut locally from the 2000 px image.
+
+# Round 2 (11 Nov 2026, evening), fetched with curl into sources/raw/.../newcastle1729/round2_2026-11-11/ (SHA256SUMS there).
+# Item metadata and page lists: .../dmwebservices/index.php?q=dmQuery/p15150coll7/callid^mssBLA^all^and/title!date!callid!placre!notes/callid/200/<start>/0/0/0/0/json
+# Whole pages at 2000 px: 60907 60908 60909 60913 (190); 60893-60896 (194); 61001-61004 61006 61007 (191);
+#   61049-61053 (193 wrapper); 61085-61089 (192). At 1000 px: 61077-61082 (185), 61117-61124 (179), 60836-60841 (184),
+#   61204-61209 (186), 61059-61060 (174), 60973-60976 (182), 61009-61012 (180), 61127-61132 (178), 61212-61215 (195),
+#   60885-60890 (189).
+# Crops: 60893 pct:12,3,80,22 / 12,24,80,22 / 12,45,80,22 / 12,66,80,24 (2400 px); 60893 pct:15,84,75,9 and
+#   pct:58,84.5,32,5 (L14, 1118); 60894 pct:12,5,75,25; 61001 pct:12,57,78,18 (Marchmont's note); 60887 pct:18,61.5,50,5.5 (L15).
+# 60917 at full resolution (8708 x 11608 px, info.json): regions 3700,1150,2700,650 (L02); 4300,8700,3900,1150
+#   (L16-L18); 4800,9080,2300,260 (L17 numbers); 2600,8650,4400,260 (L16 numbers), all /full/0/default.jpg.
