@@ -94,7 +94,7 @@
   "models": "unknown",
   "sessions": 1,
   "first_date": "2026-10-28",
-  "last_date": "2026-10-28"
+  "last_date": "2026-11-11"
  },
  "solution": [
   {
@@ -196,6 +196,62 @@
    "kind": "sibling key",
    "what": "Issue #189 (Michael Brackx) taken in: glossed groups of mssBLA 185, 194, 179 added (transcription/sibbrackx189.txt); 188 gloss digits 737->937, 383->387, 1017->1019 corrected. Table rebuilt (420 groups); report decode 121 firm, 3 doubtful, 16 tokens open; reading.py consistent; _check_reading 2/9 clean sentences, hole rate 0.22.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "transcription",
+   "what": "The sibling pages not yet read (60915-60916, 60921-60922, 60903-60906, 60910-60912, 60961-60962, 60964) surveyed: no new glossed code; 60903-60904 is the clear copy of the coded 4 Aug letter, its bracketed passages transcribed and paired with the code lines of 60907-60908 (Andrew Beling, beling/).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "what": "Pre-registered held-out check (beling/PREREG.md): the code table rebuilt without the 4 Aug glosses, aligned to the 4 Aug clear copy, matches 158 of 170 tokens (0.929); 200 shuffled tables best 0.171, margin 0.759; pass. Eight table values confirmed or corrected from the clear copy (701 mo, 791 ois, 869 perdu, 880 plustot, 829 pl, 169 com, 900 pris, 191 c'est); none is in the report (Andrew Beling, beling/).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Value-finding for the 15 open groups from table order, homophone patterns and context (no held-out material): proposals 585 ig, 1152 vos, 285 do, 1210 six, 222 conduite, 805 obligation, 689 m, 1052 servi, 836 pr, 214 comte; 726, 460, 1118 weak; 711 and 6 open. Kept as [?word], not promoted (beling/results/open_group_values.md) (Andrew Beling, beling/).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "transcription",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "what": "mssBLA 194 (HDL 60893-60894), a letter wholly in the same code with interlinear decipherment, transcribed in full (beling/transcription/sib194_*.txt); pre-registered (beling/PREREG_round2.md): the table rebuilt without any 194 gloss matches 89 of 93 firm glosses (0.957; 200 shuffled tables best 0.065; pass). 1118, one of the report's open groups, is glossed 'tain' there (retouched); it does not yet give sense in the report (Andrew Beling, beling/).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "what": "60917 L02 and L17 re-read at full resolution: 369 (e), not 869; L16 830 (plus), not 880. 60909 placed as the code part of a later letter of 3 Nov 1729. Full construction: beling/results/full_table.tsv, one row per group (439) with every gloss and clear-copy attestation, 20 conflict rows; codetable.tsv not changed (Andrew Beling, beling/).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "literature search",
+   "what": "Print search for a clear text of the report: HMC Polwarth I-V (vol. V searched inside on HathiTrust: no 'Port St. Mary', 'cipher' or 'Cadiz'; 3 hits for 'Pareti'), Coxe's Kings of Spain and Walpole, TNA and BL catalogues: nothing. Marchmont's note of 8 Aug 1729 (61001) says the two letters he forwarded were of 14 and 21 July; the report is probably the coded part of the 21 July letter (inference) (Andrew Beling, beling/).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Integration check of PR #448: check_4aug.py 158/170 (margin 0.7588), check_194.py 89/93 (margin 0.8925), full_table.py and open_groups.py reproduce byte for byte; own re-implementation of the 194 check 91/97. Duplicate found: targets/portstemarie1729 (page, catalogue 826) is the same document and code; this folder keeps Status in progress and gets no page.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -216,7 +272,7 @@
    "tokens_open": 16
   },
   "verification": [
-   "none"
+   "key confirms"
   ],
   "provenance": "contributed",
   "credits": [
@@ -236,13 +292,19 @@
     "role": "key or decipherment used",
     "note": "Issue #189: glossed groups from mssBLA 185, 194 and 179 in the same code (84, 65, 816, 666) and two digit corrections in the 188 glosses (937, 387, 1019); gist be7b2e6b, CC BY 4.0.",
     "date": "2026-10-29"
+   },
+   {
+    "who": "ajbeling",
+    "role": "verification",
+    "note": "Read the unread sibling pages, found the clear copy of the 4 Aug code (60903-60904) and ran a pre-registered held-out check of the code table against it (158/170, pass); transcribed mssBLA 194 in full and checked the table on it (89/93, pass; 1118 glossed 'tain'); proposals for the open groups; settled 60917 869/369; placed 60909; print search; full table with attestations (beling/).",
+    "date": "2026-11-11"
    }
   ],
   "gaps": [
    {
     "item": "15 code groups (16 tokens) of the report: 805, 6, 1210, 689, 460, 285, 214, 711, 1118, 1052, 726, 836, 585, 1152, 222",
     "blocker": "open-codes",
-    "detail": "each occurs once or twice, no parallel text; only the alphabetical bracket (decryption/open_groups_slots.txt) narrows them"
+    "detail": "only 1118 occurs elsewhere (mssBLA 194, glossed 'tain', no sense yet in the report); no new code on the unread pages and no printed clear text found (11 Nov 2026); slot-and-context proposals in beling/results/open_group_values.md, all [?]"
    }
   ],
   "texts": [
@@ -261,6 +323,6 @@
    }
   ],
   "key_file": "codetable.tsv",
-  "notes": "Key partly recovered, text not read (README Conventions: a key can be obtained while the text is not read). Unfinished: see NOTES.md."
+  "notes": "Key partly recovered, text not read (README Conventions: a key can be obtained while the text is not read). Unfinished: see NOTES.md. 11 Nov 2026 (Andrew Beling, beling/): the code table passed two pre-registered held-out checks (4 Aug clear copy 158/170; mssBLA 194 glosses 89/93); no printed clear text of the report found; the open groups stay open. 12 Nov 2026 integration check: both held-out checks re-run and reproduced (own re-implementation of the 194 check 91/97); the target is a duplicate of portstemarie1729 (same document, same code, page and ledger row exist there): no page here, findings to be folded into that target; 1118 = tain (194 gloss) contradicts that page's 'trouver'."
  }
 }

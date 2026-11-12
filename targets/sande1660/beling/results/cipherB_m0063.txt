@@ -1,0 +1,49 @@
+# Cipher B, m0063: letter table from the glosses (see scripts/cipherB_glosses.py)
+
+Aligned runs (gloss letters = groups): R2, R3, R5, R5b, R6, R7, R8
+Not aligned: R1 (no gloss), R4 (ninguem), R9 (clausura)
+
+Table, letter: groups
+  a: 12, 204
+  b: 20
+  c: 40
+  d: 70
+  e: 80, 325, 330
+  f: 15
+  g: 18
+  h: 24
+  i: 30, 120
+  l: 35
+  m: 37
+  n: 45
+  o: 14, 400, 405
+  p: 10
+  q: 90
+  r: 95
+  s: 13
+  u: 25, 28, 570
+Groups: 26; conflicts (one group, two letters): none
+
+Leave-one-out (table from the other aligned runs):
+  R2   dopapa                       -> dopapa               6/6 groups known, 6 right
+  R3   docardeal                    -> docardeal            9/9 groups known, 9 right
+  R5   enemigo                      -> enem??o              5/7 groups known, 5 right
+  R5b  noso                         -> no?o                 3/4 groups known, 3 right
+  R6   publico                      -> p??lico              5/7 groups known, 5 right
+  R7   aoquehe                      -> ao??ehe              5/7 groups known, 5 right
+  R8   filhodehumfereiro            -> ?ilhodeh?m?ereiro    14/17 groups known, 14 right
+  total: 57 groups, 47 known from the other runs, 47 of those right (0.82 of all groups)
+
+Runs not aligned, decoded with the full table:
+  R1   37.30.45.120.13.60.95.14.13              -> minis?ros   (gloss: None)
+  R4   45.30.45.18.25.80.45.13                  -> ninguens   (gloss: ninguem)
+  R9   12.25.65.570.95.200                      -> au?ur?   (gloss: clausura)
+
+Check on m0062 (cipherB/m0062_runs.txt; glossed runs read after the table was built; not used to build it):
+  H1   10.80.95.70.30.40.12.37                  -> perdicam     gloss perdicam     8/8 groups known, 8 agree with the gloss
+  H2   70.80.10.33.45.325.60.95.204.95          -> dep?ne?rar   gloss depenetrar   8/10 groups known, 8 agree with the gloss
+  H3   25.12.45.30.40.24.80.35.30               -> uanicheli    gloss uanicheli    9/9 groups known, 9 agree with the gloss
+  H4   10.95.14.60.330.40.60.405.95             -> pro?ec?or    gloss protector    7/9 groups known, 7 agree with the gloss
+  H5   13.80.25.330.45.70.325.37                -> seuendem     gloss seuendem     8/8 groups known, 8 agree with the gloss
+  H6   37.80.95.40.12.45.40.3.204               -> mercanc?a    gloss mercancia    8/9 groups known, 8 agree with the gloss
+  total: 53 groups, 48 in the m0063 table, 48 agree with the m0062 glosses (0.91 of all groups)

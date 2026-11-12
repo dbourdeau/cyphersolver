@@ -4970,6 +4970,14 @@
    "year": 1629,
    "found": 1964,
    "note": "Rebuilt by Donath from the glossed drafts in ELTE G. 4 Fol. Tom. V and printed in Magyar Könyvszemle 80 (1964) no. 1; targets/hofkriegsrat1629/key_frozen.tsv maps it to the shapes of the plate and adds two nulls fixed from the plate."
+  },
+  {
+   "id": "k-maisse2-beling",
+   "label": "Maisse's Cipher (1592-1593), key rebuilt against the Brienne 13 copies (Andrew Beling)",
+   "kind": "rebuilt here",
+   "by": "Andrew Beling",
+   "year": 1593,
+   "note": "Tomokiyo's Cipher 2 table corrected (the pi-shaped sign is o, the zeta-shaped sign is et) and extended by 13 signs, rebuilt from 6,238 transcribed signs of ff. 406 and 410-411 against the clear copies; key v2 (round-1 lines only) scored 0.894 on 84 held-out lines, the full key gives 0.908 of letters (in-sample); 72 signs have no value and about 200 are not reliably told apart."
   }
  ],
  "links": [
@@ -8008,6 +8016,18 @@
    "target": "hofkriegsrat1629",
    "how": "adapted",
    "note": "Donath's printed alphabet mapped to the plate shapes and frozen; two nulls and the shape of k fixed from the plate; 98 of 102 words read"
+  },
+  {
+   "key": "k-tomokiyo-maisse",
+   "target": "maisse1593",
+   "how": "adapted",
+   "note": "Cipher 2 table (henryiv_Maisse2.png) failed the pre-registered test unchanged (0.818 against 0.85); 43 of its signs confirmed, two corrected, 13 added"
+  },
+  {
+   "key": "k-maisse2-beling",
+   "target": "maisse1593",
+   "how": "rebuilt from",
+   "note": "rebuilt by the contributor against the Brienne 13 copies; held-out score 0.894 by the contributor's record"
   }
  ],
  "sources": [
@@ -9316,6 +9336,10 @@
   {
    "source": "s-cyphersolver",
    "key": "k-fuerstenberg1659"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-maisse2-beling"
   }
  ],
  "unlinked": {
@@ -9342,7 +9366,6 @@
   "beatrice1486": "read from the 1878 printed decipherment; neither the old cipher nor the new one it encloses is identified",
   "beatrice1486b": "read from the contemporary slips and the 1877 print; no key identified or rebuilt",
   "beatrice1505": "not a cipher",
-  "maisse1593": "read from the contemporary clear copies in Brienne 13; Tomokiyo's key for Maisse's Cipher (1592-93) (henryiv_Maisse2.png) was not applied to the leaves",
   "r9586": "not solved: a second code with no key; the pencil glosses have not been aligned",
   "dedem1799": "not solved: a marked code with no key on DECODE or known",
   "affry1757c": "not solved: a code of its own; no key or decipherment found",

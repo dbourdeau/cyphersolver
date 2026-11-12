@@ -1,9 +1,10 @@
 # Marquês de Sande's papers, ANTT Luís de Miranda Pereira liv. 1: cipher A (Dutch Republic, c. 1657) and cipher B (Rome, 1664)
 
-Status: in progress (27 Oct 2026, merge review of PR #124). Next step: transcribe the rest of cipher A (most of
-m0265-m0267, m0269 lines 1-2 and 13 on, m0271-m0273) and decode it with key.txt; then test Fernando Teles de Faro
-(catalogue 385) as the writer, and work cipher B from the m0063 glosses. Not "read in part" yet: about 245 of ~290
-lines are untranscribed with no outside blocker.
+Status: in progress (27 Oct 2026, merge review of PR #124; updated 12 Nov 2026, Andrew Beling, `beling/`). All 250
+lines of cipher A are transcribed at least once (`beling/`); the 168 lines added in Nov 2026 have one reader each.
+Next step: a second reading of the round-2 pages (`beling/`, one blind reader each); settle code groups 128, 73 and
+72/7.2; transcribe the other cipher B pages and decode them with the table from the m0063 glosses (`beling/`); then
+test Fernando Teles de Faro (catalogue 385) as the writer.
 
 Contributed by WAINUT (27 Oct 2026). Cipher A: key recovered from the ciphertext alone; about 45 of ~290 lines
 transcribed and read, but most of the cipher lines are not yet transcribed. Cipher B: located, not solved.
@@ -184,6 +185,8 @@ The second reader's run on its own m0269 transcription alone (52 words) gave 17 
   70.14.10.12.10.204.907, "ninguem" by 45.30.45.18.25.80.45.13.912, "nosso" over 405.
 - The groups do not line up one-to-one with letters (nine groups for "ninguem"), so the system is probably syllabic or
   homophonic with nulls. Not attacked. This part was not re-checked by the second reader.
+- 12 Nov 2026 (`beling/`): the groups line up one to one with letters ("ninguem" is spelled "ninguens"): a
+  homophonic letter substitution with 9xx end marks. Table from the m0063 glosses in `beling/results/cipherB_m0063.txt`.
 
 ## 9. Prior work
 
@@ -198,17 +201,71 @@ The second reader's run on its own m0269 transcription alone (52 words) gave 17 
   (Coimbra 1928), and the published Sande correspondence. **No earlier solution was found, but the search was not
   exhaustive.**
 
+## Cipher A transcribed in full; two held-out tests; cipher B key from its glosses (Andrew Beling, 11-12 Nov 2026, `beling/`)
+
+Contributed by Andrew Beling with AI agents. Details in `beling/README.md`; each test was written down first
+(`beling/PREREG.md`, `beling/PREREG_round2.md`).
+
+- Cipher A has 250 cipher lines (m0265 43, m0266 42, m0267 22, m0268 1, m0269 39, m0271 37, m0272 37, m0273 29),
+  not ~290. All are now transcribed: 7,630 tokens; 0.966 take a letter from key.txt, 134 are code groups, 40 are
+  numbers below 60 the key lacks, 82 unread.
+- m0271 (round 1): one reader who knew the key table; pre-registered test 0.782 against 0.739 on the build lines
+  (threshold 0.628), 200 shuffled keys best 0.366, margin 0.416. Pass. A blind second reading (AI agent; no key, no
+  first reading) agrees on 1,202 of 1,225 tokens (0.981); the 21 differences were looked at on the image: 6 settled
+  there, 11 by context, 4 open; the first reading had one clear error (61 for 6.1).
+- Round 2 (`beling/PREREG_round2.md`, written before any transcription): the 168 lines never transcribed, each page
+  by a separate AI agent given only its scan (no key table, no decryption). Pre-registered score 0.709 on 96 lines
+  against threshold 0.628; shuffled best 0.392; margin 0.317. Pass. The pre-registered exclusion rule left out 72
+  lines for sharing common phrases with the build lines (only one, m0269.12, is a physical overlap); a post-hoc
+  score on all 167 new lines is 0.728, margin 0.341 (not pre-registered).
+- 31 = o is a homophone missing from key.txt (8 places, 4 pages); 38 = m probably (6 places, one reader each on the
+  new pages). 23, 26, 28, 17, 34 are misreadings of keyed numbers. key.txt not changed.
+- Code groups with more than one fitting place: 132 embaixador (11), 72 Majestade after "Sua" (13; group 72 or
+  "7.2" not settled), 79 the Dutch / the States (9), 102 Brasil (3), 115 paz (3), 137 ministros (3); fair: 117
+  Inglaterra, 122 armada, 131 naus; 73 a country (France or England). 61, 62, 69 are separators or nulls.
+- The m0268 line ("Vossa Excelência não firme suas cartas", "30 Nov 165?") is a marginal note on m0269; the
+  m0268 scan shows the edge of that leaf.
+- Reading [inference]: an agent near The Hague, held suspect by the States, writes to a minister in England
+  ("essa república", the Protector, Bordeaux); Francisco de Melo in London fits. A Dutch armada on the Portuguese
+  coast and France's offer of mediation point to autumn-winter 1657. He reports that the Dutch "têm cifras que
+  andam decifrando". Names: Francisco Mendes, Jacob Aba[?], António Correia Br[avo?], Duarte da Silva.
+- Cipher B: every run on m0063 read with its gloss. It is a homophonic letter substitution, not syllabic: 26
+  groups for 18 letters, 9xx end marks, no conflicts. Leave-one-out 47/47 known groups right; six glossed runs on
+  m0062, read afterwards, 48 of 53 groups known and all 48 agree with the glosses. Other cipher B pages not
+  transcribed.
+- `beling/key/key.txt` and `beling/key/transcription_build.txt` are unchanged copies of `key.txt` and
+  `transcription.txt`, and `beling/lexicon/pt.json.gz` of `lang/lexicons/pt.json.gz`, frozen by sha256 for the tests.
+
+## Integration check (12 Nov 2026)
+
+- Re-run: hash lists (`frozen_inputs.sha256`, `frozen_inputs_round2.sha256`, `prereg_round2_written.sha256`) all check;
+  `test_m0271.py`, `test_round2.py`, `posthoc_round2.py`, `decode_all.py`, `cipherB_glosses.py` and `collate_m0271.py`
+  give the committed outputs: m0271 0.7824 against 0.6284 (margin 0.4162), round 2 on 96 lines 0.709 (margin 0.317, bar
+  0.30), post hoc on 167 lines 0.728 (margin 0.341), 1,202 of 1,225 tokens identical between the two m0271 readings,
+  cipher B 48 of 53 groups on m0062. The round-2 exclusion rule is a flaw its author states; 0.317 is the
+  pre-registered result and is only just above the bar.
+- Own decoder written from `key.txt`: `m0272.txt` reads as Portuguese ("cousa de grande ... isto digo a vossa
+  excelencia"). DigitArq m0272 fetched (sha256 equals `beling/images.txt`); lines 2-5, about 150 numbers, compared with
+  the transcription: all agree, one doubtful reading (28*) is marked as doubtful.
+- The test score is the share of letters inside Portuguese words of three or more letters (a language score), not a
+  read share. Strict recount: 7,374 tokens take a letter, at least 127 of them doubtful (counted as holes): 0.950; the
+  contributor's 0.966 counts every token that takes a letter. Neither is a measure of words read as sense, so the class
+  stays read in part.
+- Order of events (round-2 pages transcribed by agents given only the scan, files hashed before the scoring script)
+  is by the contributor's record.
+- No page yet: the key (ciphertext-only) holds on three held-out passes and part of the text reads, but the open items
+  (second reading of the six round-2 pages, the doubtful signs, the m0271 disagreements) are not-attempted, not
+  blocked from outside, so this is not a stopping point (CLAUDE.md). A page is warranted once they are done.
+- Overlap: ANTT LMP liv. 1 appears only here (`vilaflor1663` is liv. 2); catalogue 385 (Teles de Faro) stays the
+  sibling to test.
+
 ## Remaining gaps
 
-- Cipher A, the untranscribed lines (about 245 of 290: most of m0265-m0267, m0269 lines 1-2 and 13 onwards, m0271,
-  m0272 and m0273 above the last 12 lines) - blocker: not-attempted. The scans are online and legible.
-- Cipher A, code groups 61, 62, 63, 64, 65, 79, 102, 128, 132, 341 - blocker: open-codes. No key sheet; the rest of
-  the text should repeat some of them.
-- Cipher A, writer, addressee and exact date - blocker: not-attempted. Ulhoa / Teles de Meneses and Francisco de Melo
-  are untested; the m0268 date line needs a second reading.
-  Lead (merge review, 27 Oct 2026): Fernando Teles de Faro, Portuguese envoy at The Hague 1657-59; catalogue 385
-  (Teles de Faro to Francisco de Melo, 1658-59) is the sibling to test for the writer and for shared code groups.
-- Cipher B (Rome 1664) - blocker: not-attempted. The m0063 glosses are the way in.
+- Cipher A, the 168 lines transcribed in Nov 2026 (m0265.19-43, m0266.01 and 06-42, m0267, m0269.01-02 and 13-38, m0272, m0273.01-17) have one blind reader each (180 doubtful, 76 unread signs, most unread at the binding) - blocker: not-attempted (second reading). m0271 has two readings; 4 differences open.
+- Cipher A, code groups 128, 64, 134, 63, 65, 66, 98, 123, 138, 341 and the choice for 73 (France or England) and 72 (group or "7.2") - blocker: open-codes. Proposed with 2+ places (`beling/`): 132 embaixador, 72 Majestade, 79 the Dutch, 102 Brasil, 115 paz, 137 ministros; fair: 117 Inglaterra, 122 armada, 131 naus.
+- Cipher A, numbers below 60 not in key.txt: 31 = o shown (8 places); 38 = m probable; 25 and 42 open - blocker: open-codes (key.txt not yet amended).
+- Cipher A, writer, addressee and exact date - blocker: not-attempted. Ulhoa / Teles de Meneses and Francisco de Melo are untested; the m0268 date line needs a second reading. Lead (merge review, 27 Oct 2026): Fernando Teles de Faro, Portuguese envoy at The Hague 1657-59; catalogue 385 (Teles de Faro to Francisco de Melo, 1658-59) is the sibling to test for the writer and for shared code groups. 12 Nov 2026 (`beling/results/round2_reading.md`, inference): addressee probably in England (Francisco de Melo, London); date autumn-winter 1657 from the content; the writer is an unaccredited agent near The Hague. Leads not checked: J.A.K. Haas on the Teles de Faro embassy 1658-59 (BMGN); Bodleian MS. Rawl. A. 61/2.
+- Cipher B (Rome 1664): the table from the m0063 glosses reads the glossed runs on m0062; the other pages (m0055-m0062, m0065, m0069-75, m0098, m0113, m0116-117, m0170) are not transcribed - blocker: not-attempted.
 
 ## Escalation
 
@@ -217,9 +274,11 @@ The second reader's run on its own m0269 transcription alone (52 words) gave 17 
 - [x] clear-pages: the clear letters around m0264 were looked at; none is shown to be a clear copy
 - [ ] known-keys: not tested against the repository's Portuguese keys (joao1642) or the 3L keys (not imaged); cipher A
   did not need them
-- [ ] print: Prestage (1928) and the Sande correspondence not checked
+- [ ] print: Prestage (1928) and the Sande correspondence not checked; two web searches, Nov 2026: no printed text or clear copy found
 - [x] key-rebuild: the letter table is complete for the transcribed lines; the code groups are open
-- [ ] retry: transcribe the remaining lines, then return to the code groups
+- [x] retry: all cipher A lines transcribed and decoded (`beling/`, Nov 2026); code groups revisited (6 good, 3 fair)
+- [ ] second-reader: the 168 round-2 lines have one blind reader each
+- [x] glosses (cipher B): table built from the m0063 glosses and checked on m0062 (`beling/`)
 
 ## Files
 

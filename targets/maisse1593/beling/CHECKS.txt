@@ -1,0 +1,188 @@
+# maisse1593/beling: checks, 2026-11-11T21:52:47Z. Local draft folder (not in a repo checkout). Scripts run from beling/ with python3 -I.
+
+$ shasum -a 256 -c results/frozen_inputs.sha256
+PREREG.md: OK
+key/tomokiyo_maisse2.tsv: OK
+transcription/f410r_cipher.tsv: OK
+transcription/f410r_legend.md: OK
+transcription/f406v_cipher.tsv: OK
+transcription/f406v_legend.md: OK
+transcription/f406r_cipher.tsv: OK
+transcription/f406r_legend.md: OK
+scripts/test_key.py: OK
+transcription/brienne_173r_173v.txt: OK
+transcription/brienne_194v_196r.txt: OK
+transcription/copy_406_from_cipher_start.txt: OK
+transcription/copy_410_from_cipher_start.txt: OK
+
+$ python3 -I scripts/test_key.py   (second run)
+{"score": 0.8184, "best_shuffled": 0.2299, "mean_shuffled": 0.1424, "margin": 0.5885, "pass": false, "signs_scored": 2501}
+results/test_key_result.json identical to the first run
+
+$ python3 -I scripts/explore_rescore.py   (exploratory)
+frozen key                          0.8184
+frozen key, unknown signs left out  0.852
+pi = o                              0.8404
+pi = o, unknown signs left out      0.8749
+
+# Round 2 checks, 2026-11-12T00:45:48Z.
+
+$ shasum -a 256 -c results/frozen_inputs.sha256   (round 1)
+PREREG.md: OK
+key/tomokiyo_maisse2.tsv: OK
+transcription/f410r_cipher.tsv: OK
+transcription/f410r_legend.md: OK
+transcription/f406v_cipher.tsv: OK
+transcription/f406v_legend.md: OK
+transcription/f406r_cipher.tsv: OK
+transcription/f406r_legend.md: OK
+scripts/test_key.py: OK
+transcription/brienne_173r_173v.txt: OK
+transcription/brienne_194v_196r.txt: OK
+transcription/copy_406_from_cipher_start.txt: OK
+transcription/copy_410_from_cipher_start.txt: OK
+
+$ shasum -a 256 -c results/frozen_inputs_round2.sha256
+PREREG_round2.md: OK
+scripts/build_key_v2.py: OK
+scripts/test_key_v2.py: OK
+scripts/make_copy_round2.py: OK
+transcription/second_reading/collation.tsv: OK
+transcription/copy_round2_406.txt: OK
+transcription/copy_round2_410.txt: OK
+catalogue/catalogue.md: OK
+catalogue/README.md: OK
+transcription/round1_catalogue/changes.tsv: OK
+transcription/round1_catalogue/f406r_cipher.tsv: OK
+transcription/round1_catalogue/f406v_cipher.tsv: OK
+transcription/round1_catalogue/f410r_cipher.tsv: OK
+key/key_v2.tsv: OK
+results/build_key_v2.txt: OK
+transcription/round2/f406v_411v_cipher.tsv: OK
+transcription/round2/f406v_411v_legend.md: OK
+transcription/round2/f410v_cipher.tsv: OK
+transcription/round2/f410v_legend.md: OK
+transcription/round2/f411r_cipher.tsv: OK
+transcription/round2/f411r_legend.md: OK
+
+$ python3 -I scripts/test_key_v2.py   (second run; the first, at 2026-11-12T00:42:26Z, was the one pre-registered run)
+{"score": 0.8939, "best_shuffled": 0.1492, "mean_shuffled": 0.0893, "margin": 0.7448, "pass": true, "tokens_scored": 3543, "per_reader": {"d": 0.8914, "e": 0.8905, "f": 0.8981}, "tomokiyo_round1_key_same_lines": 0.8009}
+
+# Second runs of make_copy_round2.py, build_key_v2.py, build_key_v2.py --all and full_decrypt.py: outputs compared with the first runs (cmp):
+identical: key/key_v2.tsv
+identical: results/build_key_v2.txt
+identical: results/test_key_v2_result.json
+identical: results/test_key_v2_output.txt
+identical: transcription/copy_round2_406.txt
+identical: transcription/copy_round2_410.txt
+identical: key/key_full.tsv
+identical: results/build_key_full.txt
+identical: results/full_decryption.txt
+identical: results/full_variants.tsv
+
+# PR build checks, 2026-11-12T02:09:42Z, in a worktree of dbourdeau/cyphersolver on branch maisse1593-beling, cut from origin/main 08f07fb7 (targets/maisse1593 unchanged since 4337f026), plus this folder and the NOTES.md / profile.json edits (uncommitted). Scripts run from targets/maisse1593/beling with python3 -I.
+
+$ shasum -a 256 -c results/frozen_inputs.sha256
+PREREG.md: OK
+key/tomokiyo_maisse2.tsv: OK
+transcription/f410r_cipher.tsv: OK
+transcription/f410r_legend.md: OK
+transcription/f406v_cipher.tsv: OK
+transcription/f406v_legend.md: OK
+transcription/f406r_cipher.tsv: OK
+transcription/f406r_legend.md: OK
+scripts/test_key.py: OK
+transcription/brienne_173r_173v.txt: OK
+transcription/brienne_194v_196r.txt: OK
+transcription/copy_406_from_cipher_start.txt: OK
+transcription/copy_410_from_cipher_start.txt: OK
+(exit 0)
+
+$ shasum -a 256 -c results/frozen_inputs_round2.sha256
+PREREG_round2.md: OK
+scripts/build_key_v2.py: OK
+scripts/test_key_v2.py: OK
+scripts/make_copy_round2.py: OK
+transcription/second_reading/collation.tsv: OK
+transcription/copy_round2_406.txt: OK
+transcription/copy_round2_410.txt: OK
+catalogue/catalogue.md: OK
+catalogue/README.md: OK
+transcription/round1_catalogue/changes.tsv: OK
+transcription/round1_catalogue/f406r_cipher.tsv: OK
+transcription/round1_catalogue/f406v_cipher.tsv: OK
+transcription/round1_catalogue/f410r_cipher.tsv: OK
+key/key_v2.tsv: OK
+results/build_key_v2.txt: OK
+transcription/round2/f406v_411v_cipher.tsv: OK
+transcription/round2/f406v_411v_legend.md: OK
+transcription/round2/f410v_cipher.tsv: OK
+transcription/round2/f410v_legend.md: OK
+transcription/round2/f411r_cipher.tsv: OK
+transcription/round2/f411r_legend.md: OK
+(exit 0)
+
+$ python3 -I scripts/make_copy_round2.py   (rewrites transcription/copy_round2_*.txt)
+
+$ python3 -I scripts/build_key_v2.py
+round 1: in-sample score {'406': 0.8853, '410': 0.9105}; changed 11: ['2~', '6b', '6~', '9', 'La', 'arch', 'k', 'pi', 'va', 'xd', 'yy']
+round 2: in-sample score {'406': 0.8855, '410': 0.905}; changed 1: ['Cm']
+round 3: in-sample score {'406': 0.8855, '410': 0.905}; changed 0: []
+
+$ python3 -I scripts/build_key_v2.py --all
+round 1: in-sample score {'406': 0.8852, '410': 0.8946}; changed 9: ['Cloop', 'La', 'Z3', 'arch', 'k', 'pi', 'va', 'xd', 'yy']
+round 2: in-sample score {'406': 0.8907, '410': 0.9029}; changed 6: ['2~', '6~', 'Sr', 'c', 'curl', 'qm']
+round 3: in-sample score {'406': 0.8907, '410': 0.9029}; changed 0: []
+
+$ python3 -I scripts/test_key_v2.py
+{"score": 0.8939, "best_shuffled": 0.1492, "mean_shuffled": 0.0893, "margin": 0.7448, "pass": true, "tokens_scored": 3543, "per_reader": {"d": 0.8914, "e": 0.8905, "f": 0.8981}, "tomokiyo_round1_key_same_lines": 0.8009}
+
+$ python3 -I scripts/test_key.py
+{"score": 0.8184, "best_shuffled": 0.2299, "mean_shuffled": 0.1424, "margin": 0.5885, "pass": false, "signs_scored": 2501}
+
+$ python3 -I scripts/full_decrypt.py   (its WAINUT path now reads ../wainut, the repo layout; not a frozen input; output unchanged)
+# Full decryption with key_full.tsv + construction_overrides.tsv. Both letters: 7035/7751 = 0.908 of decrypted letters match the copy (exploratory; built on these same lines).
+== letter 406: 2238 signs, 2768 letters decrypted, 2509 matched the copy (0.906)
+== letter 410: 3991 signs, 4983 letters decrypted, 4526 matched the copy (0.908)
+149 variant stretches of 4+ letters
+
+$ diff -r <this folder before the runs above> <this folder after>   (each script rewrote its outputs)
+identical: every output byte-identical to the committed file
+
+$ python3 docs/_check_profile.py maisse1593
+maisse1593: profile.json
+  [gap ] system.distinct_symbols = "unknown"
+  [gap ] system.diacritics.used = "unknown"
+  [gap ] system.nomenclator.entries = "unknown"
+  [gap ] system.nomenclator.unread_groups = "unknown"
+  [gap ] system.nulls.present = "unknown"
+  [gap ] system.key_order = "unknown"
+  [gap ] system.word_division = "unknown"
+  [gap ] system.doubled_letters = "unknown"
+  result: valid, 8 unknown field(s)
+(exit 0)
+
+$ python3 docs/_check_writeup.py maisse1593   (differences from the same run on origin/main's NOTES.md and profile.json)
+9c9
+<   [ok  ] the page was reviewed against the current NOTES.md and profile.json (review ledger)
+---
+>   [MISS] NOTES.md or profile.json changed since the page was last reviewed (2026-11-07): re-read the page against them, fix what is stale (head, glance box, counts, Still open, credits), then run python docs/_check_writeup.py --reviewed maisse1593
+16d15
+<   [ok  ] figure file docs/maisse1593_f404.jpg exists
+17a17
+>   [ok  ] figure file docs/maisse1593_f404.jpg exists
+34,36c34
+<          - gap marked not-attempted: - Brienne 13 fol. 173r (end of the 8 Feb letter, f. 406) and most of fol. 194v (f. 410), n
+<          - gap marked not-attempted: - the cipher blocks: about 18 cipher lines on f. 406 (and the verso, canvas 458, if it car
+<          - escalation step "retry" not done (every unread group and doubtful reading retried with the extended key and regraded)
+---
+>          - gap marked not-attempted: - the cipher lines of ff. 406 and 410-411 have one blind reading each - blocker: not-attem
+
+$ python3 docs/_check_reading.py maisse1593
+marginal       0.5  17/34 sentences  holes 0.212  fr reading  tr=y  wainut/f406_decryption.md  [read in part]
+marginal       0.502  150/299 sentences  holes 0.087  fr unspaced  tr=y  beling/results/full_decryption.txt  [read in part]
+readable       0.937  59/63 sentences  holes 0.027  fr reading  tr=y  wainut/f406_reading.md  [read in part]
+marginal       0.526  20/38 sentences  holes 0.227  fr reading  tr=y  wainut/f410_decryption.md  [read in part]
+marginal       0.502  150/299 sentences  holes 0.087  fr unspaced  tr=y  beling/results/full_decryption.txt  [read in part]
+readable       0.911  41/45 sentences  holes 0.032  fr reading  tr=y  wainut/f410_reading.md  [read in part]
+target: clean share 0.926, worst f410 0.911, shapes {'reading': 2}, translated 2/2

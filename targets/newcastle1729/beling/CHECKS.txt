@@ -1,0 +1,148 @@
+# newcastle1729/beling: script runs, 2026-11-11T21:38Z, against targets/newcastle1729 at origin/main 4337f026 (extracted with git archive; the repo-file hashes in results/frozen_inputs.sha256 are checked from that copy). Scripts run from beling/ with python3 -I.
+
+$ shasum -a 256 -c results/frozen_inputs.sha256
+../codetable.tsv: OK
+../transcription/report_61005.txt: OK
+../transcription/report_61005_tokens.txt: OK
+../transcription/sib187_60963.txt: OK
+../transcription/sib188_60917.txt: OK
+../transcription/sib188_60918.txt: OK
+../transcription/sib188_60919.txt: OK
+../transcription/sib188_60920.txt: OK
+../transcription/sib4aug_60907.txt: OK
+../transcription/sib4aug_60908.txt: OK
+../transcription/sib4aug_60909.txt: OK
+../transcription/sibbrackx189.txt: OK
+../transcription/sibjul14_60887.txt: OK
+PREREG.md: OK
+transcription/clear_4aug_brackets.tsv: OK
+transcription/pages_survey.tsv: OK
+scripts/check_4aug.py: OK
+
+$ python3 -I scripts/check_4aug.py   (rewrites results/check_4aug_*; identical to the first run)
+{'tokens_with_value': 170, 'matched': 158, 'score': 0.9294, 'best_shuffled': 0.1706, 'mean_shuffled': 0.1106, 'margin': 0.7588, 'pass': True, 'too_small': False}
+full table: {'tokens_with_value': 214, 'matched': 205, 'score': 0.9579}
+
+$ python3 -I scripts/open_groups.py | diff - results/open_groups_context.txt
+identical
+
+docs/_check_profile.py and the other docs/ checkers were not run: nothing in profile.json or NOTES.md is changed here (the edits are drafted in proposed_edits.md, outside this folder).
+
+# Round 2, 2026-11-12T00:07Z, same layout (git archive of origin/main 4337f026 with beling/ copied in). PREREG_round2.md and the frozen hashes were written before scripts/check_194.py and scripts/full_table.py existed.
+
+$ shasum -a 256 -c results/frozen_inputs.sha256   (round 1, unchanged)
+OK lines: 17
+
+$ shasum -a 256 -c results/frozen_inputs_round2.sha256
+../codetable.tsv: OK
+../transcription/sib187_60963.txt: OK
+../transcription/sib188_60917.txt: OK
+../transcription/sib188_60918.txt: OK
+../transcription/sib188_60919.txt: OK
+../transcription/sib188_60920.txt: OK
+../transcription/sib4aug_60907.txt: OK
+../transcription/sib4aug_60908.txt: OK
+../transcription/sib4aug_60909.txt: OK
+../transcription/sibbrackx189.txt: OK
+../transcription/sibjul14_60887.txt: OK
+transcription/clear_4aug_brackets.tsv: OK
+transcription/sib194_60893.txt: OK
+transcription/sib194_60894.txt: OK
+results/open_group_values.md: OK
+PREREG_round2.md: OK
+
+$ python3 -I scripts/check_194.py   (second run; results/check_194_* byte-identical to the first run)
+{'tokens_with_table_value': 93, 'matched': 89, 'score': 0.957, 'best_shuffled': 0.0645, 'mean_shuffled': 0.0048, 'margin': 0.8925, 'pass': True, 'too_small': False}
+not in table: [60, 65, 74, 98, 135, 258, 295, 351, 482, 555, 827, 840, 871, 939, 1118, 1120, 1159]
+results/check_194_result.json: identical to first run
+results/check_194_output.txt: identical to first run
+
+$ python3 -I scripts/full_table.py   (second run)
+groups: 439 {'context only': 14, 'gloss': 277, 'gloss (null)': 12, 'gloss+clear': 136} rows with a conflict: 20
+groups attested only in the 194 transcription: [840, 939, 1118, 1159, 1260]
+open groups: {6: None, 214: None, 222: None, 285: None, 460: None, 585: None, 689: None, 711: None, 726: None, 805: None, 836: None, 1052: None, 1118: 'tain', 1152: None, 1210: None}
+results/full_table.tsv: identical to first run
+
+$ python3 -I scripts/check_4aug.py; python3 -I scripts/open_groups.py | diff - results/open_groups_context.txt   (round 1 scripts, re-run)
+{'tokens_with_value': 170, 'matched': 158, 'score': 0.9294, 'best_shuffled': 0.1706, 'mean_shuffled': 0.1106, 'margin': 0.7588, 'pass': True, 'too_small': False}
+full table: {'tokens_with_value': 214, 'matched': 205, 'score': 0.9579}
+identical
+
+Images of round 2: sources/raw/repo_help_2026-11-11/newcastle1729/round2_2026-11-11/SHA256SUMS (92 files). docs/ checkers not run: no repo file is changed.
+
+# PR build checks, 2026-11-12T02:09:44Z, in a worktree of dbourdeau/cyphersolver on branch newcastle1729-beling, cut from origin/main 08f07fb7 (targets/newcastle1729 unchanged since 4337f026), plus this folder and the NOTES.md / profile.json edits (uncommitted). Scripts run from targets/newcastle1729/beling with python3 -I.
+
+$ shasum -a 256 -c results/frozen_inputs.sha256
+../codetable.tsv: OK
+../transcription/report_61005.txt: OK
+../transcription/report_61005_tokens.txt: OK
+../transcription/sib187_60963.txt: OK
+../transcription/sib188_60917.txt: OK
+../transcription/sib188_60918.txt: OK
+../transcription/sib188_60919.txt: OK
+../transcription/sib188_60920.txt: OK
+../transcription/sib4aug_60907.txt: OK
+../transcription/sib4aug_60908.txt: OK
+../transcription/sib4aug_60909.txt: OK
+../transcription/sibbrackx189.txt: OK
+../transcription/sibjul14_60887.txt: OK
+PREREG.md: OK
+transcription/clear_4aug_brackets.tsv: OK
+transcription/pages_survey.tsv: OK
+scripts/check_4aug.py: OK
+(exit 0)
+
+$ shasum -a 256 -c results/frozen_inputs_round2.sha256
+../codetable.tsv: OK
+../transcription/sib187_60963.txt: OK
+../transcription/sib188_60917.txt: OK
+../transcription/sib188_60918.txt: OK
+../transcription/sib188_60919.txt: OK
+../transcription/sib188_60920.txt: OK
+../transcription/sib4aug_60907.txt: OK
+../transcription/sib4aug_60908.txt: OK
+../transcription/sib4aug_60909.txt: OK
+../transcription/sibbrackx189.txt: OK
+../transcription/sibjul14_60887.txt: OK
+transcription/clear_4aug_brackets.tsv: OK
+transcription/sib194_60893.txt: OK
+transcription/sib194_60894.txt: OK
+results/open_group_values.md: OK
+PREREG_round2.md: OK
+(exit 0)
+
+$ python3 -I scripts/check_4aug.py
+{'tokens_with_value': 170, 'matched': 158, 'score': 0.9294, 'best_shuffled': 0.1706, 'mean_shuffled': 0.1106, 'margin': 0.7588, 'pass': True, 'too_small': False}
+full table: {'tokens_with_value': 214, 'matched': 205, 'score': 0.9579}
+
+$ python3 -I scripts/open_groups.py | diff - results/open_groups_context.txt && echo identical
+identical
+
+$ python3 -I scripts/check_194.py
+{'tokens_with_table_value': 93, 'matched': 89, 'score': 0.957, 'best_shuffled': 0.0645, 'mean_shuffled': 0.0048, 'margin': 0.8925, 'pass': True, 'too_small': False}
+not in table: [60, 65, 74, 98, 135, 258, 295, 351, 482, 555, 827, 840, 871, 939, 1118, 1120, 1159]
+
+$ python3 -I scripts/full_table.py
+groups: 439 {'context only': 14, 'gloss': 277, 'gloss (null)': 12, 'gloss+clear': 136} rows with a conflict: 20
+groups attested only in the 194 transcription: [840, 939, 1118, 1159, 1260]
+open groups: {6: None, 214: None, 222: None, 285: None, 460: None, 585: None, 689: None, 711: None, 726: None, 805: None, 836: None, 1052: None, 1118: 'tain', 1152: None, 1210: None}
+
+$ diff -r <this folder before the runs above> <this folder after>   (each script rewrote its outputs)
+identical: every output byte-identical to the committed file
+
+$ python3 docs/_check_profile.py newcastle1729
+newcastle1729: profile.json
+  [gap ] system.distinct_symbols = "unknown"
+  [gap ] system.homophones.max_per_vowel = "unknown"
+  [gap ] system.homophones.max_per_consonant = "unknown"
+  [gap ] system.nomenclator.entries = "unknown"
+  [gap ] system.nulls.count = "unknown"
+  [gap ] conditions.models = "unknown"
+  result: valid, 6 unknown field(s)
+(exit 0)
+
+$ python3 docs/_check_writeup.py newcastle1729   (differences from the same run on origin/main's NOTES.md and profile.json)
+
+$ python3 docs/_check_reading.py newcastle1729
+not a reading  0.222  2/9 sentences  holes 0.218  fr reading  tr=n  decryption/report_61005_reading.txt  [decoded, not read]
+target: clean share 0.222, worst report 0.222, shapes {'reading': 1}, translated 0/1, plus 1 decoded, not read

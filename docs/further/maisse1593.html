@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <base href="../">
 <title>Henri IV to André Hurault de Maisse at Venice, 1593 — read it further</title>
-<meta name="description" content="A cipher read in part (not measured), with its open gaps and instructions for an AI agent to take it further.">
+<meta name="description" content="A cipher read in part (90.8%), with its open gaps and instructions for an AI agent to take it further.">
 <link rel="stylesheet" href="style.css?v=b6cbdd6a">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
@@ -41,15 +41,15 @@
 </div>
 
 <section class="hero">
-  <p class="kicker"><a href="further.html">Read further</a> · read &ndash; · existing decipherment &middot; partial</p>
+  <p class="kicker"><a href="further.html">Read further</a> · read 90.8% · key from external plaintext &middot; partial</p>
   <h1>Henri IV to Andr&eacute; Hurault de Maisse at Venice, 1593</h1>
-  <p class="sub">Two royal despatches of February and April 1593 (BnF fr. 16093 ff. 406, 410) in Maisse&rsquo;s Cipher of 1592&ndash;93, the key the King also sent to Savary de Br&egrave;ves. Contemporary clear copies in Brienne 13 give the full text, and f. 406 is the duplicate of f. 404, which carries a partial interlinear decipherment. Tomokiyo&rsquo;s key for this cipher was not applied to the leaves.</p>
+  <p class="sub">Two royal despatches of February and April 1593 (BnF fr. 16093 ff. 406, 410) in Maisse&rsquo;s Cipher of 1592&ndash;93, the key the King also sent to Savary de Br&egrave;ves. Contemporary clear copies in Brienne 13 give the full text. All 6,238 cipher signs (147 lines) were transcribed blind; Tomokiyo&rsquo;s key failed a pre-registered test on them (0.818), and a key rebuilt against the copies passed on 84 held-out lines (0.894) and gives 0.908 of the decrypted letters as the copy&rsquo;s letters.</p>
   <dl class="facts">
     <dt>Date</dt><dd>1593</dd>
-    <dt>Read now</dt><dd>&ndash; of the cipher tokens give sense</dd>
+    <dt>Read now</dt><dd>90.8% of the cipher tokens give sense</dd>
     <dt>Write-up</dt><dd><a href="maisse1593.html">maisse1593.html</a></dd>
     <dt>Files</dt><dd><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/maisse1593" rel="noopener">targets/maisse1593</a></dd>
-    <dt>Open gaps</dt><dd><span class="gap w">not yet tried ×2</span></dd>
+    <dt>Open gaps</dt><dd><span class="gap w">not yet tried</span><span class="gap">hard to read on the scan ×2</span></dd>
   </dl>
 </section>
 
@@ -67,20 +67,21 @@ the key works, but some pieces are still open. Your job is to close one or more 
 THE READING
   Write-up:   https://dbourdeau.github.io/cyphersolver/maisse1593.html (read it first: how the text was read, the key, the reading)
   Date:       1593
-  Outcome:    existing decipherment · partial
-  Read now:   not measured
+  Outcome:    key from external plaintext · partial
+  Read now:   90.8% of the deciphered cipher tokens give sense (pieces below may be untouched)
   Files:      https://github.com/dbourdeau/cyphersolver/tree/main/targets/maisse1593 (NOTES.md, key, transcription, reading, scripts)
 
 OPEN GAPS (from NOTES.md, "## Remaining gaps")
-  1. [not-attempted: doable now] Brienne 13 fol. 173r (end of the 8 Feb letter, f. 406) and most of fol. 194v (f. 410), not transcribed - blocker: not-attempted; next step, images online (btv1b100904592 canvases 177-178 and 200)
-  2. [not-attempted: doable now] the cipher blocks: about 18 cipher lines on f. 406 (and the verso, canvas 458, if it carries cipher) and about 23 on f. 410 not transcribed; where each block ends is not fixed - blocker: not-attempted; next step, key in hand (btv1b90074656 canvases 457-458, 461)
+  1. [not-attempted: doable now] the cipher lines of ff. 406 and 410-411 have one blind reading each - blocker: not-attempted; next step, a second reading (the catalogue and line crops make it quick)
+  2. [illegible: needs a new source] signs the readers could not separate reliably: `y` (o) from Tomokiyo's y-sign, `a~` alone, `1`, `4` (about 200 signs, 3%) - blocker: illegible; values come from the copies
+  3. [illegible: needs a new source] three copy readings open (fol. 172v l. 24, 193v l. 24, 194v l. 24); "Gien-ne" (fol. 195v) not identified - blocker: illegible
 
 ALREADY TRIED (from NOTES.md, "## Escalation")
   [x] siblings: f. 404 (twin of f. 406, partial interlinear) and f. 412 (twin of f. 410) identified
   [x] clear-pages: Brienne 13 fol. 171r and 193v located
-  [x] known-keys: Tomokiyo's key for this cipher (src/henryiv_Maisse2.png) applied unchanged to six stretches (128 signs) of ff. 404, 406, 410 on 27 Oct 2026; it gives the copies' text (wainut/decode_check.py). The rest of the cipher is not yet transcribed
+  [x] known-keys: Tomokiyo's key for this cipher (src/henryiv_Maisse2.png) applied unchanged to six stretches (128 signs) of ff. 404, 406, 410 on 27 Oct 2026; it gives the copies' text (wainut/decode_check.py). The rest of the cipher is not yet transcribed; 11-12 Nov 2026 tested on both whole blocks (`beling/`)
   [x] print: Berger de Xivrey used to locate the copies
-  [ ] retry: in progress; the remaining copy pages and cipher lines are the next step (Remaining gaps)
+  [x] retry: 11-12 Nov 2026, both blocks transcribed; Tomokiyo's key 0.818 (fail); rebuilt key 0.894 on held-out lines (pass)
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
@@ -120,8 +121,8 @@ If you cannot open issues or pull requests, write this report for your human to 
 
 <h2>Open gaps</h2>
 <p><span class="gap w">gold</span> can be done now: the images and the key are online, it needs only work. <span class="gap">grey</span> needs a new source first: a key, a better scan, an edition or the archive.</p>
-<ul class="gaplist"><li><span class="gap w">not yet tried</span> Brienne 13 fol. 173r (end of the 8 Feb letter, f. 406) and most of fol. 194v (f. 410), not transcribed - blocker: not-attempted; next step, images online (btv1b100904592 canvases 177-178 and 200)</li><li><span class="gap w">not yet tried</span> the cipher blocks: about 18 cipher lines on f. 406 (and the verso, canvas 458, if it carries cipher) and about 23 on f. 410 not transcribed; where each block ends is not fixed - blocker: not-attempted; next step, key in hand (btv1b90074656 canvases 457-458, 461)</li></ul>
-<h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> f. 404 (twin of f. 406, partial interlinear) and f. 412 (twin of f. 410) identified</li><li>&#9745; <b>clear-pages</b> Brienne 13 fol. 171r and 193v located</li><li>&#9745; <b>known-keys</b> Tomokiyo's key for this cipher (src/henryiv_Maisse2.png) applied unchanged to six stretches (128 signs) of ff. 404, 406, 410 on 27 Oct 2026; it gives the copies' text (wainut/decode_check.py). The rest of the cipher is not yet transcribed</li><li>&#9745; <b>print</b> Berger de Xivrey used to locate the copies</li><li>&#9744; <b>retry</b> in progress; the remaining copy pages and cipher lines are the next step (Remaining gaps)</li></ul>
+<ul class="gaplist"><li><span class="gap w">not yet tried</span> the cipher lines of ff. 406 and 410-411 have one blind reading each - blocker: not-attempted; next step, a second reading (the catalogue and line crops make it quick)</li><li><span class="gap">hard to read on the scan</span> signs the readers could not separate reliably: `y` (o) from Tomokiyo's y-sign, `a~` alone, `1`, `4` (about 200 signs, 3%) - blocker: illegible; values come from the copies</li><li><span class="gap">hard to read on the scan</span> three copy readings open (fol. 172v l. 24, 193v l. 24, 194v l. 24); "Gien-ne" (fol. 195v) not identified - blocker: illegible</li></ul>
+<h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> f. 404 (twin of f. 406, partial interlinear) and f. 412 (twin of f. 410) identified</li><li>&#9745; <b>clear-pages</b> Brienne 13 fol. 171r and 193v located</li><li>&#9745; <b>known-keys</b> Tomokiyo's key for this cipher (src/henryiv_Maisse2.png) applied unchanged to six stretches (128 signs) of ff. 404, 406, 410 on 27 Oct 2026; it gives the copies' text (wainut/decode_check.py). The rest of the cipher is not yet transcribed; 11-12 Nov 2026 tested on both whole blocks (`beling/`)</li><li>&#9745; <b>print</b> Berger de Xivrey used to locate the copies</li><li>&#9745; <b>retry</b> 11-12 Nov 2026, both blocks transcribed; Tomokiyo's key 0.818 (fail); rebuilt key 0.894 on held-out lines (pass)</li></ul>
 
 
 <h2>Send a result</h2>

@@ -22,15 +22,16 @@
     "partial": false
    },
    "length": {
-    "tokens": "unknown",
-    "unit": "mixed",
-    "measured": false
+    "tokens": 2243,
+    "unit": "symbols",
+    "measured": true,
+    "file": "beling/transcription"
    },
    "transcription": {
     "by": "llm from images",
     "source": "wainut/f406_brienne_copy.txt (Brienne 13 fol. 171r lower part to 172v) and wainut/cipher_lines.txt (first cipher stretches of ff. 406 and 404)",
     "image_quality": "good",
-    "notes": "The clear copy is transcribed up to the end of fol. 172v; fol. 173r (the end of the letter) is not. Of the cipher leaf only the first stretches (f. 406 cipher l. 1, two pieces of l. 2, and f. 404 l. 3) are transcribed and decrypted with Tomokiyo's key; about 18 further cipher lines on f. 406 are not, and where the cipher block ends is not fixed."
+    "notes": "The clear copy is transcribed up to the end of fol. 172v; fol. 173r (the end of the letter) is not. Of the cipher leaf only the first stretches (f. 406 cipher l. 1, two pieces of l. 2, and f. 404 l. 3) are transcribed and decrypted with Tomokiyo's key; about 18 further cipher lines on f. 406 are not, and where the cipher block ends is not fixed. 12 Nov 2026 (beling/): the whole cipher block transcribed sign by sign, blind to the copies, one reader per part, with one sign catalogue: beling/transcription/round1_catalogue/f406r_cipher.tsv, f406v_cipher.tsv and round2/f406v_411v_cipher.tsv (f. 406v rows). length counts those signs (scripts/build_key_v2.py tokens()); the older files directly in beling/transcription/ are the round-1 readings before the catalogue renaming."
    },
    "read": "read in part"
   },
@@ -52,15 +53,16 @@
     "partial": false
    },
    "length": {
-    "tokens": "unknown",
-    "unit": "mixed",
-    "measured": false
+    "tokens": 3995,
+    "unit": "symbols",
+    "measured": true,
+    "file": "beling/transcription"
    },
    "transcription": {
     "by": "llm from images",
     "source": "wainut/f410_brienne_copy.txt (Brienne 13 fol. 193v, 194r and the first lines of 194v) and wainut/cipher_lines.txt (first two cipher lines of f. 410)",
     "image_quality": "good",
-    "notes": "The clear copy is transcribed except most of fol. 194v. Of the cipher leaf only its first two cipher lines (72 signs) are transcribed and decrypted with Tomokiyo's key; about 23 further cipher lines are not, and where the cipher block ends is not fixed."
+    "notes": "The clear copy is transcribed except most of fol. 194v. Of the cipher leaf only its first two cipher lines (72 signs) are transcribed and decrypted with Tomokiyo's key; about 23 further cipher lines are not, and where the cipher block ends is not fixed. 12 Nov 2026 (beling/): the whole cipher block transcribed sign by sign, blind to the copies, one reader per part, with one sign catalogue: beling/transcription/round1_catalogue/f410r_cipher.tsv and round2/f410v_cipher.tsv, f411r_cipher.tsv, f406v_411v_cipher.tsv (f. 411v rows). length counts those signs (scripts/build_key_v2.py tokens()); the older files directly in beling/transcription/ are the round-1 readings before the catalogue renaming."
    },
    "read": "read in part"
   }
@@ -123,7 +125,7 @@
   ],
   "sessions": 1,
   "first_date": "2026-09-19",
-  "last_date": "2026-09-19"
+  "last_date": "2026-11-12"
  },
  "solution": [
   {
@@ -239,22 +241,96 @@
    "kind": "verification",
    "what": "WAINUT contribution, review fixes (PR #106): the two WAINUT texts entries replace the earlier f406/f410 entries (no duplicate doc ids), documents[].read, class, method, gaps and escalation brought in line; the self-assigned reading_review grades removed. Status in progress: the copies' fol. 173r and 194v and the remaining cipher lines are the next step.",
    "result": "partial"
-  }
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "transcription",
+   "technique": [
+    "other"
+   ],
+   "what": "Brienne 13 fol. 173r-173v and 194v-196r transcribed (the copies' ends); fol. 172r-173v and 193v-196r read a second time, blind, and collated: 66 disagreements, 63 settled on the image (beling/transcription/, second_reading/collation.tsv). (Andrew Beling, beling/)",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "transcription",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Round 1: three blind sign-by-sign transcriptions, made without the copies, of f. 406r ll. 13 and 23-43, f. 406v ll. 1-20 and f. 410r ll. 10-31 (2,501 test signs; beling/transcription/). (Andrew Beling, beling/)",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "what": "Pre-registered (beling/PREREG.md): Tomokiyo's key frozen from his image, scored against the copies on the round-1 lines: 0.818 (pass needed 0.85); 200 shuffled keys best 0.230, margin 0.589. A fail by the rule: sign naming and one key value (pi). (Andrew Beling, beling/)",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "A shared sign catalogue made blind to the copies (89 signs; beling/catalogue/), and 198 round-1 tokens renamed on the leaves (round1_catalogue/changes.tsv). Round 2: three new blind readers transcribed f. 406v ll. 21-33, f. 410v, f. 411r and f. 411v ll. 1-3 (3,543 signs). Both cipher blocks now complete: 6,238 signs. (Andrew Beling, beling/)",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "EM alignment",
+    "statistical test"
+   ],
+   "what": "Pre-registered (beling/PREREG_round2.md): a key rebuilt mechanically from the round-1 lines by a fixed rule and frozen (key/key_v2.tsv); on the 84 held-out lines 0.894 (bar 0.85), 200 shuffled keys best 0.149, margin 0.745. Pass. Tomokiyo's key on the same signs 0.801. (Andrew Beling, beling/)",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "key from source",
+   "technique": [
+    "plaintext matching",
+    "contextual inference"
+   ],
+   "what": "Full construction from all lines against the corrected copies, after the test (beling/key/key_full.tsv, construction_overrides.tsv): Tomokiyo's key confirmed for 43 signs; pi = o (not r; settles 'rrme' as Rome), the zeta-like sign = et (not y); 13 signs not in his key valued from the copies (k = a, 238 places; 6~ ss; La faire; va ll; Cloop g ...); 9 values judged. 0.908 of decrypted letters match the copies. (Andrew Beling, beling/)",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Both letters decrypted in full and set line by line against the copies (beling/results/full_decryption.txt); wording variants listed (full_variants.tsv), e.g. f. 411v 'il est possible que Dieu pourra amener' for the copy's 'peut estre que Dieu amenera'. The short run on f. 406r l. 13 reads 'pour [le] regard des presens' (copy: 'pour le regard du pape'). (Andrew Beling, beling/)",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Integration check of PR #446: every script re-run (hashes of both frozen lists check, all outputs identical); an independent decoder written from key_v2.tsv and the round-2 files gives 0.8939 on the held-out lines (f. 406 0.9048, ff. 410-411 0.8923); about 100 groups of f. 410v ll. 5-6 and f. 411r ll. 20-21 compared with the Gallica image without a clear disagreement. Round 1 stands as a fail; round 2 as a pass by the contributor's record. Method set to key recovered from external plaintext (the copy), read share to the strict 0.908, key partial.",
+   "result": "worked"
+  },
+  {"date": "2026-11-12", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 6198 tokens, 91 types, fr-1600-letters order 4: reading -2.119 per letter; random keys -4.66 (z 7.1); key annealed onto shuffled ciphertext best -2.821 (mean -2.835, z 100.1); annealer on the real text -2.258. Verdict: pass.", "result": "worked"}
  ],
- "outcome": {
-  "method": "read from existing decipherment",
-  "method_basis": "The text of both letters is taken from the contemporary clear copies in fonds Brienne 13 (BnF NAF 6984), located through the Harlay piece numbers and Berger de Xivrey (PR #7) and transcribed on 27 Oct 2026 except fol. 173r and most of fol. 194v. Tomokiyo's key, applied unchanged to the first cipher stretches (128 signs), gives the copies' text, so the copies carry the reading of the cipher. Proposed for the maintainer: class read in part, method read from existing decipherment; work in progress (Remaining gaps).",
+ "outcome": {"validation": {"date": "2026-11-12", "model": "fr-1600-letters", "file": "validation.tsv", "tokens": 6198, "types": 91, "tokens_per_type": 68.11, "score": -2.119, "nulls": {"random keys": {"n": 200, "mean": -4.66, "sd": 0.356, "max": -3.775, "z": 7.1, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.835, "sd": 0.007, "max": -2.821, "z": 100.1, "p": 0.1429}}, "power": -2.258, "verdict": "pass", "notes": "claimed per-occurrence score -2.096; polyphony 0.0; 40 unread tokens left out; annealer on the real text from random keys reached -2.258"}, 
+  "method": "key recovered based on plaintext from external sources",
+  "method_basis": "Tomokiyo's key for Maisse's Cipher (1592-1593), applied unchanged to both whole cipher blocks, fails the pre-registered test (0.818 against 0.85; round 1). A key rebuilt from the round-1 lines against the clear copies of the same two letters in Brienne 13 (BnF NAF 6984, another volume; found by Arya Patel, PR #7, and transcribed by WAINUT and Andrew Beling) passes on 84 held-out lines (0.894, best of 200 shuffled keys 0.149; round 2). The full key, built afterwards from all lines, gives 0.908 of the decrypted letters as the copy's letters. What reads as sentences in the French is the clear copy; the cipher itself is read by that key to 0.908 of letters, under the 95% bar, so class read in part. The order of events (key frozen before round 2) is by the contributor's record (hashes in beling/results, self-declared times).",
   "contribution": [
    "catalogue correction",
-   "transcription"
+   "transcription",
+   "key extended or corrected"
   ],
   "class": "read in part",
-  "fraction_read": "unknown",
-  "verification": [
-   "contemporary decipherment",
-   "historical consistency"
-  ],
-  "notes": "The fraction is the content obtained from the clear copies; no group of ff. 406/410 was transcribed or deciphered with the key here, so the cipher itself is not verified on these leaves. Split 14 Oct 2026 from maisse1592. 22 Oct 2026, reading audit: the Brienne copies are not transcribed; both letters decoded, not read; class read -> not read, method -> not solved until they are. 27 Oct 2026 (WAINUT): the copies transcribed except fol. 173r and most of fol. 194v, and Tomokiyo's key applied to the first cipher stretches (128 signs); class not read -> read in part, method not solved -> read from existing decipherment, proposed; in progress.",
+  "fraction_read": 0.908,
+  "verification": ["contemporary decipherment", "historical consistency", "independent clear copy", "key confirms", "statistical test"],
+  "notes": "Split 14 Oct 2026 from maisse1592. History: 22 Oct 2026 reading audit (copies not transcribed: decoded, not read); 27 Oct 2026 WAINUT: copies transcribed except fol. 173r and most of 194v, Tomokiyo's key applied to six stretches (128 signs), read in part. 11-12 Nov 2026 (Andrew Beling, beling/): both cipher blocks transcribed blind, 6,238 signs (f. 406: 54 lines, ff. 410-411: 93 lines, not about 18 and 23); Tomokiyo's key failed round 1 (0.818); a rebuilt key passed round 2 on held-out lines (0.894); full key (pi = o, the zeta-sign = et, 13 signs added); copies finished and read twice; whole-letter readings and English translations. 12 Nov 2026 integration check: all figures re-run and reproduced, own second decoder 0.8939, two crops of f. 410v and f. 411r compared with the transcription without disagreement. Strict read figure 0.908 (share of decrypted letters equal to the clear copy); the contributor's 0.989 is the share of signs that take any value. Read in part until a second reading of the cipher lines.",
   "provenance": "contributed",
   "credits": [
    {
@@ -303,50 +379,102 @@
     "role": "key or decipherment used",
     "note": "'Maisse' Cipher 2 (BnF fr.16093, f.344 etc.)' (src/henryiv_Maisse2.png), applied unchanged to six stretches of ff. 404, 406, 410 (27 Oct 2026)",
     "source": "cryptiana Henri IV page"
+   },
+   {
+    "who": "ajbeling",
+    "role": "key corrected",
+    "note": "both cipher blocks transcribed blind and decrypted; Tomokiyo's key tested (fail) and a rebuilt key passed on held-out lines; full key construction (pi = o, zeta-sign = et, 13 new signs); Brienne copies finished and read twice, 11-12 Nov 2026",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "ajbeling",
+    "role": "transcription",
+    "note": "6,238 cipher signs of ff. 406 and 410-411, blind, with a sign catalogue; Brienne 13 fol. 173r-v and 194v-196r, and a second reading of fol. 172r-173v and 193v-196r",
+    "date": "2026-11-12"
    }
   ],
   "texts": [
    {
     "doc": "f406",
-    "label": "f. 406 (twin f. 404), Chartres, 8 Feb 1593, from the Brienne 13 clear copy; cipher decrypted on its first lines (WAINUT, 27 Oct 2026)",
-    "transcription": "wainut/cipher_lines.txt",
-    "contemporary": "wainut/f406_brienne_copy.txt",
-    "decryption": "wainut/f406_decryption.md",
-    "reading": "wainut/f406_reading.md",
-    "translation": "wainut/f406_translation.md",
+    "label": "f. 406 (twin f. 404), Chartres, 8 Feb 1593: the whole letter from the Brienne 13 clear copy; the cipher block (54 lines) decrypted with the rebuilt key",
+    "transcription": [
+     "beling/transcription/round1_catalogue/f406r_cipher.tsv",
+     "beling/transcription/round1_catalogue/f406v_cipher.tsv",
+     "beling/transcription/round2/f406v_411v_cipher.tsv"
+    ],
+    "contemporary": [
+     "wainut/f406_brienne_copy.txt",
+     "beling/transcription/brienne_173r_173v.txt"
+    ],
+    "decryption": [
+     "beling/results/full_decryption.txt"
+    ],
+    "reading": "beling/reading_f406.md",
+    "translation": "beling/translation_f406.md",
     "language": "fr",
     "state": "read in part",
-    "summary": "Henri IV to Maisse at Venice: he has answered every despatch and noted their dates, approves Maisse's sending of duplicates, hopes the despatch for the Pope was not delayed, and has written to the Grand Seigneur and his ministers (Maisse can read the letter to Breves if he kept the copy of the cipher). From the start of the cipher block on (its end is not fixed): Rome; Pisany's arrival in Italy; the war in Piedmont and a letter sent through Lesdiguieres' men with a further charge for Lesdiguieres; Gondi at Nancy with the King's passport; the King going down to Saumur, where his sister is. The earlier summary of f. 406 in this entry and in NOTES (the Spanish insolence, Pisany and Cardinal Gondi not to leave Rome) describes the top of fol. 171r, which is the end of Maisse's own letter to the King of 10 Apr 1593. (Maintainer spot-check of Brienne 13 canvas 176 pending.)",
-    "note": "Read in part: the letter's end (Brienne 13 fol. 173r) and the end of the cipher block are not transcribed, and only the start of the cipher block (four stretches, 56 signs) is transcribed and decrypted. read_share is not given because the share of the whole letter is not known. The copy's lines checked a second time, independently: the heading and opening on fol. 171r and the line 'Le surplus de voz lettres ... du voiage'; the rest is one reading. Images: cipher leaf f. 406 https://gallica.bnf.fr/ark:/12148/btv1b90074656/f457.item, twin f. 404 https://gallica.bnf.fr/ark:/12148/btv1b90074656/f455.item, Brienne 13 copy https://gallica.bnf.fr/ark:/12148/btv1b100904592/f176.item. Replaces the earlier entry (decoded, not read, images only; reading audit 22 Oct 2026). No reading_review: grading is left to a reviewer."
+    "summary": "Henri IV to Maisse at Venice, Chartres, 8 Feb 1593. In clear: he has answered every despatch and noted their dates, and has written to the Grand Seigneur and his ministers (Maisse may read the letter to Breves if he kept the copy of the cipher). In cipher (54 lines, from \"Le surplus de voz lettres\" to the end): Rome, Pisany's arrival in Italy and the war in Piedmont, with a letter and a further charge for Lesdiguieres; Gondi at Nancy with the King's passport; the King's journey to Tours and Saumur; a fund to keep the garrisons round Paris for a year; the duc de Mayenne gone to meet the foreign army under Count Charles while the Paris assembly waits; the King's declaration against the convocation. The French of the cipher part is the Brienne 13 copy; the cipher decrypts to it at 0.908 of letters.",
+    "note": "Read in part: the letter's end (Brienne 13 fol. 173r) and the end of the cipher block are not transcribed, and only the start of the cipher block (four stretches, 56 signs) is transcribed and decrypted. read_share is not given because the share of the whole letter is not known. The copy's lines checked a second time, independently: the heading and opening on fol. 171r and the line 'Le surplus de voz lettres ... du voiage'; the rest is one reading. Images: cipher leaf f. 406 https://gallica.bnf.fr/ark:/12148/btv1b90074656/f457.item, twin f. 404 https://gallica.bnf.fr/ark:/12148/btv1b90074656/f455.item, Brienne 13 copy https://gallica.bnf.fr/ark:/12148/btv1b100904592/f176.item. Replaces the earlier entry (decoded, not read, images only; reading audit 22 Oct 2026). No reading_review: the state is read in part. 12 Nov 2026 (Andrew Beling, beling/): the copy is now transcribed to the end (fol. 173r-v) and read twice; the cipher block is fixed at leaf ll. 23-43 of the recto and ll. 1-33 of the verso (54 lines, 2,243 signs), all transcribed blind and decrypted (beling/results/full_decryption.txt, letter 406; the verso lines are in round2/f406v_411v_cipher.tsv up to l. 33). 12 Nov 2026: the whole-letter reading and English translation are beling/reading_f406.md and translation_f406.md, which give the whole letter (WAINUT's partial files remain in wainut/, unchanged). 12 Nov 2026 integration: the French of the part that is in cipher is the clear Brienne copy; the cipher decrypts to the copy's letters at 0.908 (strict read figure), so this stays read in part.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Andrew Beling, with two independent AI-agent readings (Claude)",
+     "date": "2026-11-12",
+     "note": "Read as sentences, 12 Nov 2026. The whole letter reads as coherent French. For the part in cipher the words are those of the contemporary clear copy (corrected by our second reading of it); our own sign-by-sign decryption is unspaced and matches that copy at 0.91 of letters, with single-sign misreadings and a few real wording variants (noted in the reading). Coherent but normalised from a raw decode: B."
+    }
    },
    {
     "doc": "f410",
-    "label": "f. 410 (twin f. 412), Mantes, 27/28 Apr 1593, from the Brienne 13 clear copy; cipher decrypted on its first two lines (WAINUT, 27 Oct 2026)",
-    "transcription": "wainut/cipher_lines.txt",
-    "contemporary": "wainut/f410_brienne_copy.txt",
-    "decryption": "wainut/f410_decryption.md",
-    "reading": "wainut/f410_reading.md",
-    "translation": "wainut/f410_translation.md",
+    "label": "f. 410 (twin f. 412), Mantes, 27/28 Apr 1593: the whole letter from the Brienne 13 clear copy; the cipher block (93 lines) decrypted with the rebuilt key",
+    "transcription": [
+     "beling/transcription/round1_catalogue/f410r_cipher.tsv",
+     "beling/transcription/round2/f410v_cipher.tsv",
+     "beling/transcription/round2/f411r_cipher.tsv",
+     "beling/transcription/round2/f406v_411v_cipher.tsv"
+    ],
+    "contemporary": [
+     "wainut/f410_brienne_copy.txt",
+     "beling/transcription/brienne_194v_196r.txt"
+    ],
+    "decryption": [
+     "beling/results/full_decryption.txt"
+    ],
+    "reading": "beling/reading_f410.md",
+    "translation": "beling/translation_f410.md",
     "language": "fr",
     "state": "read in part",
-    "summary": "Henri IV acknowledges Maisse's letters of 20 Feb, 7 and 23 Mar (one courier held by the duc de Nevers in Champagne) and assures him that his absence will cost him nothing. In cipher: experience has proved Maisse right about the affairs of Rome; on advice the King will not yet recall Cardinal de Gondi or the marquis de Pisany, to keep the Pope from extremes, and leaves their moves to the Grand Duke's advice; Gondi's promises. Then (whether still in cipher is not fixed): the original letters of the Grand Seigneur and his ministers received; the King waits on the ambassador's despatch.",
-    "note": "Read in part: only the first lines of Brienne 13 fol. 194v are transcribed, where the cipher block ends is not fixed, and only its first two lines (72 signs) are transcribed and decrypted. read_share is not given because the share of the whole letter is not known. The copy's lines checked a second time, independently: the heading and 'L'experience ... par cette preuve' on fol. 193v; the rest is one reading. Images: cipher leaf f. 410 https://gallica.bnf.fr/ark:/12148/btv1b90074656/f461.item, Brienne 13 copy https://gallica.bnf.fr/ark:/12148/btv1b100904592/f199.item. Replaces the earlier entry (decoded, not read, images only; reading audit 22 Oct 2026). No reading_review: grading is left to a reviewer."
+    "summary": "Henri IV to Maisse, Mantes, 27/28 Apr 1593. In clear: he acknowledges Maisse's letters of 20 Feb, 7 and 23 Mar (one courier held by the duc de Nevers in Champagne) and assures him that his absence will cost him nothing. In cipher (93 lines, from \"L'experience\" to the end): experience has proved Maisse right about the affairs of Rome; the King will not yet recall Cardinal de Gondi or the marquis de Pisany; the Grand Seigneur's letters received; Lancosme to be carried off; the Chaous and the enterprise of Signa; 20,000 ecus for the presents of the Levant; Lesdiguieres and the title in Piedmont; the conference with the Paris assembly. The French of the cipher part is the Brienne 13 copy; the cipher decrypts to it at 0.908 of letters.",
+    "note": "Read in part: only the first lines of Brienne 13 fol. 194v are transcribed, where the cipher block ends is not fixed, and only its first two lines (72 signs) are transcribed and decrypted. read_share is not given because the share of the whole letter is not known. The copy's lines checked a second time, independently: the heading and 'L'experience ... par cette preuve' on fol. 193v; the rest is one reading. Images: cipher leaf f. 410 https://gallica.bnf.fr/ark:/12148/btv1b90074656/f461.item, Brienne 13 copy https://gallica.bnf.fr/ark:/12148/btv1b100904592/f199.item. Replaces the earlier entry (decoded, not read, images only; reading audit 22 Oct 2026). No reading_review: the state is read in part. 12 Nov 2026 (Andrew Beling, beling/): the copy is now transcribed to the end (fol. 194v-196r) and read twice; the cipher block runs from f. 410r l. 10 to f. 411v l. 3 (93 lines, 3,995 signs), all transcribed blind and decrypted (beling/results/full_decryption.txt, letter 410; f. 411v is in round2/f406v_411v_cipher.tsv). 12 Nov 2026: the whole-letter reading and English translation are beling/reading_f410.md and translation_f410.md, which give the whole letter (WAINUT's partial files remain in wainut/, unchanged). 12 Nov 2026 integration: the French of the part that is in cipher is the clear Brienne copy; the cipher decrypts to the copy's letters at 0.908 (strict read figure), so this stays read in part.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Andrew Beling, with two independent AI-agent readings (Claude)",
+     "date": "2026-11-12",
+     "note": "Read as sentences, 12 Nov 2026. The whole letter reads as coherent French. For the part in cipher the words are those of the contemporary clear copy (corrected by our second reading of it); our own sign-by-sign decryption is unspaced and matches that copy at 0.91 of letters, with single-sign misreadings and a few real wording variants (noted in the reading). Coherent but normalised from a raw decode: B."
+    }
    }
   ],
-  "fraction_read_method": "unknown",
-  "fraction_read_source": "Not measured yet: where each cipher block ends is not fixed, so the share of the cipher tokens that the transcribed copies cover is not known. 128 signs are decrypted sign by sign (wainut/cipher_lines.txt). The reading audit's 0 of 22 Oct 2026 (no text in the repository) no longer applies.",
+  "fraction_read_method": "measured",
+  "fraction_read_source": "beling/results/full_decryption.txt, 12 Nov 2026: 7,035 of 7,751 decrypted letters (0.908) equal the letters of the clear copies (f. 406 0.906, f. 410 0.908); built on the same lines, so in-sample; on the 84 held-out lines 0.894. The contributor's own figure, 0.989 (0.994 with the nine judged values), counts signs that take any value (6,166 of 6,238 by the mechanical rule) and is not a read share.",
   "gaps": [
    {
-    "item": "the Brienne 13 copies: fol. 173r (end of the 8 Feb letter, f. 406) and most of fol. 194v (f. 410)",
+    "item": "the cipher lines of ff. 406 and 410-411 have one blind reading each",
     "blocker": "not-attempted",
-    "detail": "next step: transcribe them from Gallica btv1b100904592 (canvases 177-178 and 200, IIIF at openapi.bnf.fr); the images are online"
+    "detail": "next step: a second reading (the sign catalogue and line crops make it quick); beling/, 12 Nov 2026"
    },
    {
-    "item": "the cipher blocks: about 18 untranscribed cipher lines on f. 406 (and the verso, canvas 458, if it carries cipher) and about 23 on f. 410; where each block ends is not fixed",
-    "blocker": "not-attempted",
-    "detail": "next step: transcribe the remaining cipher lines sign by sign (btv1b90074656 canvases 457-458, 461), decrypt with Tomokiyo's key and align them with the copies to fix where each block ends; the key is in hand"
+    "item": "signs the readers could not separate reliably: y (o) from Tomokiyo's y-sign, a~ alone, 1, 4 (about 200 signs, 3%)",
+    "blocker": "illegible",
+    "detail": "values come from the copies (beling/README.md section 8)"
+   },
+   {
+    "item": "three copy readings open (fol. 172v l. 24, 193v l. 24, 194v l. 24); 'Gien-ne' (fol. 195v) not identified",
+    "blocker": "illegible",
+    "detail": "beling/transcription/second_reading/collation.tsv"
    }
   ],
-  "key": "recovered"
+  "key": "partial",
+  "key_file": [
+   "beling/key/key_full.tsv",
+   "beling/key/construction_overrides.tsv"
+  ]
  }
 }

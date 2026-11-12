@@ -1,6 +1,8 @@
 # Henri IV to Maisse (Venice), 8 February and 27 April 1593, in Maisse's Cipher (1592-1593) — BnF fr. 16093 ff. 406, 410
 
-Status: in progress. Both letters read in part (27 Oct 2026, WAINUT): the Brienne 13 clear copies are transcribed except fol. 173r and most of fol. 194v, and Tomokiyo's key gives the copies' text on the first cipher stretches (128 signs). Next step: transcribe fol. 173r and the rest of fol. 194v, and the remaining cipher lines (about 18 on f. 406, about 23 on f. 410), and fix where each cipher block ends. Proposed: class read in part, method read from existing decipherment. Before that: both letters decoded, not read (reading audit, 22 Oct 2026).
+Status: in progress. Partial, 0.908 of the cipher (12 Nov 2026): both cipher blocks transcribed sign by sign (6,238 signs, Andrew Beling, `beling/`) and decrypted with a key rebuilt from the clear Brienne 13 copies of the same letters; it gives 0.908 of the decrypted letters as the copy's letters (the strict figure, under the 95% of the cipher that gives sense), 0.894 on 84 lines held out from the rebuild. Tomokiyo's own key failed the same kind of test (0.818 against 0.85, round 1). Method: key recovered from external plaintext (the copy). Next step: a second reading of the cipher lines (one blind reading each).
+
+History: 22 Oct 2026 reading audit, both letters decoded, not read (no text in the repository). 27 Oct 2026 (WAINUT): the Brienne copies transcribed except fol. 173r and most of fol. 194v, Tomokiyo's key applied to six stretches (128 signs), read in part.
 
 **22 Oct 2026, reading audit** (George Lasry's test): no text of f. 406 or f. 410 is in the repository, only links to the cipher leaves and to the Brienne 13 copies. Both are *decoded, not read*; class read -> not read, method read from existing decipherment -> not solved until the copies are transcribed; fraction_read 1.0 -> 0.
 
@@ -50,33 +52,88 @@ text of f. 404 itself, which is why Tomokiyo finds the same cipher in the Savary
 
 ## What is not done
 
-The key is in hand but not applied: neither leaf is transcribed group by group, so nothing here verifies the cipher
-on ff. 406/410. The text comes from the Brienne copies (and, for f. 406, the interlinear decipherment on f. 404).
+Both cipher blocks are transcribed sign by sign (one blind reader per part) and decrypted (`beling/`). Not done: a
+second reading of the cipher lines; the twins f. 404 and f. 412 (duplicates) are not transcribed past WAINUT's lines;
+the doubtful signs listed under Remaining gaps.
 
 ## Log
 
 - 2026-09-19: Brienne copies located through the pièce numbers (PR #7, as part of maisse1592); f. 406 = f. 404.
 - 2026-10-14: split from `maisse1592`.
+- 2026-11-11/12: both cipher blocks transcribed and tested; copies finished and read twice (Andrew Beling, `beling/`).
 
 ## Assumptions for George's review
 
-- The outcome is "read from existing decipherment", class read, with `fraction_read` 1.0 carried from the parent entry
-  as the share of content obtained from the clear copies; no token of the cipher was deciphered with Tomokiyo's key
-  here. If the read bar should require a sign-level decipherment, this entry is "read in part" or "not applicable".
+- 12 Nov 2026 (`beling/`): the cipher itself is now deciphered sign by sign, so the read bar can be judged on the
+  leaves: 99% of the 6,238 cipher signs take a value (0.989 by the mechanical rule alone), and the decrypted text
+  matches the clear copies (0.908 of letters; most of the rest are single-sign misreadings and real wording variants).
+  Decided at the integration check (12 Nov 2026): class partial (profile: read in part), by the README rule as written. The contributor
+  proposed class read, counting 0.989 (signs that take a value); the strict figure is 0.908 (letters equal to the
+  copy). The whole-letter readings and translations exist (`beling/reading_f406.md`, `reading_f410.md`,
+  `translation_f406.md`, `translation_f410.md`); the French of the part that is in cipher is the clear copy, not a
+  reading made from the cipher alone.
+
+## 11-12 Nov 2026: both cipher blocks transcribed, Tomokiyo's key tested, a key rebuilt and passed, the copies read twice (Andrew Beling, `beling/`)
+
+- The cipher is far longer than this file says: f. 406 has 54 cipher lines (leaf ll. 23-43 of the recto and ll. 1-33
+  of the verso), ff. 410-411 have 93 (410r ll. 10-31, all of 410v and 411r, 411v ll. 1-3). WAINUT's f. 406 line
+  numbers are 7 lower than the leaf's. Both blocks run from the copy's "Le surplus" / "L'experience" to the end of the
+  letter; the clear closes follow. All 6,238 cipher signs are transcribed, blind to the copies, by six readers (one per
+  part), with one shared sign catalogue (`beling/catalogue/`).
+- Round 1 (`beling/PREREG.md`): Tomokiyo's key, frozen from his image, on 58 lines (2,501 signs): 0.818 against a bar
+  of 0.85, margin 0.589 over 200 shuffled keys. A fail by the rule; the cause was sign naming and one key value.
+- Round 2 (`beling/PREREG_round2.md`): a key rebuilt mechanically from the round-1 lines by a fixed rule, frozen, then
+  tested on the 84 lines nobody had transcribed (3,543 signs, three new blind readers): 0.894, best of 200 shuffled
+  keys 0.149, margin 0.745. Pass. Tomokiyo's key on the same signs: 0.801.
+- Full construction (after the test): `beling/key/key_full.tsv`. Tomokiyo's key is right for 43 signs; `pi` is o
+  (not r, 269 places), which settles the "rrme" hole (Rome); the ζ-sign is "et" (not y); 13 signs not in his key get
+  values from the copies (`k` a, 238 places; `6~` ss; `La` faire; `va` ll; `Cloop` g; and others), and nine
+  judged values [I] (`III a~` rr, `III` moy, `H` bien, `tt` grand ...). 99% of signs get a value; 0.908 of the decrypted
+  letters match the copies (`beling/results/full_decryption.txt`, line by line).
+- The cipher is not word for word the copy: e.g. f. 411v "il est possible que Dieu pourra amener" against the copy's
+  "peut estre que Dieu amenera". The short run on f. 406r l. 13 reads "pour [le] regard des presens", where the copy
+  has "pour le regard du pape" [I].
+- Brienne 13 fol. 173r-v and 194v-196r transcribed; fol. 172r-173v and 193v-196r read a second time, blind
+  (`beling/transcription/second_reading/`): 66 disagreements, 63 settled on the image. Corrections that change the
+  sense: fol. 195r "aux presens de Leuant" (not "pensions de Pisani") and "secours" (not "service"); fol. 194v "Je
+  croy ... d'en faire enleuer Lancosme"; fol. 195v "Gien-ne" (not "bien-tost"); fol. 194r "luy veullent persuader",
+  "le grand duc luy enuoiera", "Au moings"; fol. 172v "Aiant neantm."; fol. 173r "le terme", "Orez que"; fol. 173v
+  "Apres l'ouuerture". WAINUT's `f406_brienne_copy.txt` and `f410_brienne_copy.txt` are not edited; the settled
+  readings are in `beling/transcription/second_reading/collation.tsv`.
+
+## Integration check (12 Nov 2026)
+
+- Re-run: both hash lists check; `test_key.py` 0.8184 (fail), `test_key_v2.py` 0.8939 (best shuffled 0.1492, margin
+  0.7448), `build_key_v2.py` (with and without `--all`), `make_copy_round2.py` and `full_decrypt.py` give the
+  committed outputs byte for byte. An independent decoder written from `key/key_v2.tsv` and the round-2 transcription
+  files gives 0.8939 (f. 406 0.9048, ff. 410-411 0.8923, 63 unknown tokens).
+- Images (Gallica `openapi.bnf.fr` IIIF, canvas 462): f. 410v ll. 5-6 and f. 411r ll. 20-21, about 100 groups, compared
+  with the transcription: no clear disagreement (the doubtful `4?` is marked as such). The sign names were not
+  re-derived from the catalogue exemplars (not committed).
+- Round 1 is a failed pre-registered test and stays published as failed. That key v2 was frozen before round 2 was
+  transcribed is by the contributor's record (hashes and self-declared times in `beling/CHECKS.txt`).
+- Corrections made here: the Status line (it mixed three states) and the Assumptions item that still carried
+  `fraction_read` 1.0; class stays partial with the strict figure 0.908; method changed from "read from existing
+  decipherment" to key recovered from external plaintext (the key was rebuilt against the copy in another volume);
+  `beling/README.md` section 7 says 6,223 signs where 6,238 is right (`build_key_v2.tokens`); the PR text's "no
+  translation of the whole letters" is out of date (the translations were added in its second commit).
+- `validation.tsv` (written here from `key/key_full.tsv` plus the overrides applied to the 6,238 signs) and `python docs/_validate.py maisse1593 --write`: reading score -2.119 against random keys -4.660 (max -3.775, z 7.1) and the shuffled-text refit -2.835: verdict pass. The key was fitted to these same signs, so this shows that the letters read as French, not that the key is held-out.
+- Overlap: no other target holds ff. 406 or 410; `mayenne1586*` and `matignon1586*` are different ciphers.
 
 ## Remaining gaps
 
-- Brienne 13 fol. 173r (end of the 8 Feb letter, f. 406) and most of fol. 194v (f. 410), not transcribed - blocker: not-attempted; next step, images online (btv1b100904592 canvases 177-178 and 200)
-- the cipher blocks: about 18 cipher lines on f. 406 (and the verso, canvas 458, if it carries cipher) and about 23 on f. 410 not transcribed; where each block ends is not fixed - blocker: not-attempted; next step, key in hand (btv1b90074656 canvases 457-458, 461)
+- the cipher lines of ff. 406 and 410-411 have one blind reading each - blocker: not-attempted; next step, a second reading (the catalogue and line crops make it quick)
+- signs the readers could not separate reliably: `y` (o) from Tomokiyo's y-sign, `a~` alone, `1`, `4` (about 200 signs, 3%) - blocker: illegible; values come from the copies
+- three copy readings open (fol. 172v l. 24, 193v l. 24, 194v l. 24); "Gien-ne" (fol. 195v) not identified - blocker: illegible
 
 ## Escalation
 
 - [x] siblings: f. 404 (twin of f. 406, partial interlinear) and f. 412 (twin of f. 410) identified
 - [x] clear-pages: Brienne 13 fol. 171r and 193v located
-- [x] known-keys: Tomokiyo's key for this cipher (src/henryiv_Maisse2.png) applied unchanged to six stretches (128 signs) of ff. 404, 406, 410 on 27 Oct 2026; it gives the copies' text (wainut/decode_check.py). The rest of the cipher is not yet transcribed
+- [x] known-keys: Tomokiyo's key for this cipher (src/henryiv_Maisse2.png) applied unchanged to six stretches (128 signs) of ff. 404, 406, 410 on 27 Oct 2026; it gives the copies' text (wainut/decode_check.py). The rest of the cipher is not yet transcribed; 11-12 Nov 2026 tested on both whole blocks (`beling/`)
 - [x] print: Berger de Xivrey used to locate the copies
-- [n/a] key-rebuild: the key exists (Tomokiyo)
-- [ ] retry: in progress; the remaining copy pages and cipher lines are the next step (Remaining gaps)
+- [n/a] key-rebuild: the key exists (Tomokiyo); corrected and extended from the leaves (`beling/key/key_full.tsv`, 12 Nov 2026)
+- [x] retry: 11-12 Nov 2026, both blocks transcribed; Tomokiyo's key 0.818 (fail); rebuilt key 0.894 on held-out lines (pass)
 
 ## Contribution by WAINUT (27 Oct 2026)
 

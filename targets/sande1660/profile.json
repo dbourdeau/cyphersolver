@@ -15,23 +15,25 @@
    "pages": 7,
    "cleartext_in_document": "separate passages",
    "plaintext": {
-    "location": ["none"],
+    "location": [
+     "none"
+    ],
     "source": "No gloss, clear copy or printed decipherment found. The only clear words seen are the date on m0268, a few words on m0269 ('de Fran[cis]co Mendes en Casado') and 'Ds gde' at the end of m0269.",
     "partial": false
    },
    "length": {
-    "tokens": 1336,
-    "distinct": 36,
+    "tokens": 7630,
+    "distinct": 67,
     "unit": "mixed",
     "measured": true,
-    "file": "transcription.txt"
+    "file": "beling/transcription"
    },
    "transcription": {
     "by": "llm from images",
     "source": "DigitArq JPEGs of PT/TT/LMP/0001, scans m0265, m0266, m0268, m0269, m0273",
     "corrections": 7,
     "image_quality": "fair",
-    "notes": "Partial: about 45 of roughly 290 cipher lines (m0265 lines 1-18, m0266 lines 2-5, the m0268 line, m0269 lines 2-12 and its last line, m0273 last 12 lines). m0269 lines 3-12 were transcribed by a second reader who never saw the first reading; seven tokens of the first reading were corrected against the scan (listed in transcription.txt). The m0268 line, the end of m0269.02 and the last line of m0269 were read once; the second group of that last line (1.2.7.27.13.7.2, 'e o mesmo') was filled in at review. Counts are of the transcribed lines only, made by splitting transcription.txt on '.' and '|' (not with --measure, which counts dot-joined words): 1,338 tokens, of them 1,336 numbers and 2 blotted signs; 23 code-group tokens. Re-measured at the merge review (27 Oct 2026): `python docs/_check_profile.py --measure <file> --digits` on a copy of transcription.txt with the line labels dropped and '.' and '|' turned into spaces gives 1,336 tokens, 36 distinct (1,338 without --digits, the 2 blots counted)."
+    "notes": "Partial: about 45 of roughly 290 cipher lines (m0265 lines 1-18, m0266 lines 2-5, the m0268 line, m0269 lines 2-12 and its last line, m0273 last 12 lines). m0269 lines 3-12 were transcribed by a second reader who never saw the first reading; seven tokens of the first reading were corrected against the scan (listed in transcription.txt). The m0268 line, the end of m0269.02 and the last line of m0269 were read once; the second group of that last line (1.2.7.27.13.7.2, 'e o mesmo') was filled in at review. Counts are of the transcribed lines only, made by splitting transcription.txt on '.' and '|' (not with --measure, which counts dot-joined words): 1,338 tokens, of them 1,336 numbers and 2 blotted signs; 23 code-group tokens. Re-measured at the merge review (27 Oct 2026): `python docs/_check_profile.py --measure <file> --digits` on a copy of transcription.txt with the line labels dropped and '.' and '|' turned into spaces gives 1,336 tokens, 36 distinct (1,338 without --digits, the 2 blots counted). 12 Nov 2026 (Andrew Beling, beling/): all 250 lines transcribed (beling/transcription/ plus transcription.txt): m0271 twice (first reader knew the key; second blind, 0.981 agreement); 168 further lines once each by blind AI readers given only the scans. length counts transcription.txt and beling/transcription/ (m0271 once, m0269.12 once, clear words left out); 27 distinct code groups."
    }
   },
   {
@@ -45,7 +47,10 @@
    "language": "Portuguese",
    "cleartext_in_document": "interspersed",
    "plaintext": {
-    "location": ["interlinear", "margin"],
+    "location": [
+     "interlinear",
+     "margin"
+    ],
     "source": "Interlinear and marginal glosses of the time on m0063 over some groups ('do Cardeal', 'da Casa', 'ninguem', 'nosso' ...).",
     "partial": true
    },
@@ -57,25 +62,40 @@
    "transcription": {
     "by": "llm from images",
     "image_quality": "fair",
-    "notes": "Not transcribed. Located and described from the scans only; the glossed groups were noted, not counted."
+    "notes": "Not transcribed. Located and described from the scans only; the glossed groups were noted, not counted. 12 Nov 2026 (Andrew Beling, beling/cipherB/): the glossed runs of m0063 and six glossed runs of m0062 transcribed; they give a homophonic letter table (beling/results/cipherB_m0063.txt). The other pages not transcribed."
    }
   }
  ],
  "system": {
-  "types": ["monoalphabetic", "homophonic", "nomenclator"],
+  "types": [
+   "monoalphabetic",
+   "homophonic",
+   "nomenclator"
+  ],
   "summary": "Cipher A: numbers 1-41 for letters, with homophones for a (3, 24), e (1, 27), l (21, 36), r (20, 30) and s (13, 41); word division kept; numbers of 60 and up are code groups (61, 62, 63, 64, 65, 79, 102, 128, 132, 341 seen), none with a value. Cipher B (Rome 1664) is a different numerical system, not worked out.",
   "symbol_kind": "digits",
-  "digit_groups": {"width": "1-3", "separation": "dots"},
+  "digit_groups": {
+   "width": "1-3",
+   "separation": "dots"
+  },
   "distinct_symbols": 36,
-  "diacritics": {"used": false},
-  "homophones": {"used": true},
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
   "nomenclator": {
    "present": true,
    "entries": "unknown",
-   "kinds": ["titles"],
+   "kinds": [
+    "titles"
+   ],
    "unread_groups": 10
   },
-  "nulls": {"present": "unknown"},
+  "nulls": {
+   "present": "unknown"
+  },
   "key_order": "random",
   "word_division": "kept",
   "doubled_letters": "written twice",
@@ -88,7 +108,10 @@
    "found": "not found",
    "used": false
   },
-  "inputs": ["images", "cleartext context"],
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
   "attack": "ciphertext-only",
   "human_role": "WAINUT set the task (catalogue 390) and the rules; the AI agents found the cipher pages in the 592 scans, transcribed, recovered the key, read and verified. No target-specific human intervention.",
   "tools": [
@@ -96,67 +119,339 @@
    "decrypt.py (decryption and controls, standard library)",
    "the second reader's independent decoder (not included; same results)"
   ],
-  "models": ["AI language-model agents (WAINUT); a vision-capable language model for the transcription"],
+  "models": [
+   "AI language-model agents (WAINUT); a vision-capable language model for the transcription"
+  ],
   "sessions": 2,
   "first_date": "2026-10-27",
-  "last_date": "2026-10-27"
+  "last_date": "2026-11-12"
  },
  "solution": [
-  {"date": "2026-10-27", "kind": "access", "what": "Fetched the DigitArq file list (592 scans) of PT/TT/LMP/0001 and viewed every scan as thumbnail sheets. Cipher found on m0265-m0273 (cipher A), m0059-m0063 and neighbours (cipher B, Rome 1664) and m0170 (cipher B tokens). m0580 is French clear text in a phonetic spelling, not a cipher.", "result": "worked"},
-  {"date": "2026-10-27", "kind": "transcription", "what": "Cipher A transcribed in part from the scans: m0265 lines 1-18, m0273 last 12 lines, m0266 lines 2-5.", "result": "partial"},
-  {"date": "2026-10-27", "kind": "statistics", "technique": ["frequency analysis", "repeat/pattern analysis"], "what": "Numbers 1-41 with word gaps kept: a letter substitution with a few homophones; numbers of 60 and up stand alone as code groups. Frequent short words (16.4.27, 6.27, 11.2.20) taken as que, de, por.", "result": "worked"},
-  {"date": "2026-10-27", "kind": "solver", "technique": ["manual reconstruction", "language-model scoring"], "what": "Letter values built out from the short-word guesses and checked on the whole transcription: the opening 'com grande desgosto fico ao presente', Portugal, França, Monsiur de Cominges, Monsiur de Bordeus and the close 'a quem peço me diga largamente seu parecer sobre tudo' come out without forcing.", "result": "worked"},
-  {"date": "2026-10-27", "kind": "verification", "technique": ["statistical test"], "what": "Second reader, separately: re-read m0265, m0266, m0273 and m0269 on the scans at 2x zoom; transcribed m0269 lines 3-12, which the first reader never saw, and decrypted them with an own implementation of the key: fluent Portuguese with no tuning. Corrections: m0265.07 19.4 (Tu, i.e. de Thou), not 13.4; 2.9, not 29; 20, not 28; 12, not 17; 8, not 3 in diga. 'Unassigned 17, 28, 29' were misreadings. 62 as a full stop not proven; 132 = embaixador proposed.", "result": "worked"},
-  {"date": "2026-10-27", "kind": "control", "technique": ["statistical test"], "what": "Function-word controls (decrypt.py --controls, 2,000 trials each, on the corrected transcription, 300 words): real key 115 words in a fixed list of about 50 common Portuguese words; letter values permuted mean 5.0, max 27; groups shuffled under the real key mean 17.6, max 29.", "result": "worked"},
-  {"date": "2026-10-27", "kind": "reading", "technique": ["contextual inference", "manual reconstruction"], "what": "Preparation check for this contribution: m0265.09 19.3.21 (tal) and m0265.10 18.3.2 (não) read on the scan; with them the sentence reads 'porque tal afecto no mo[d]o com que ele fala nas cousas do nosso reino não o vi'. Word joins across line ends: 'nada pode moderar esta fúria' (m0273.e08-09), 'hum perso/nagem confidente nosso' (m0269.02-03).", "result": "worked"},
-  {"date": "2026-10-27", "kind": "access", "what": "Preparation check of the page layout: m0267 ends half-way down with a dash; m0268 is blank but for a line along the top edge, '[...] 30 Nov[embr]o 165[?7]' in clear and in cipher 'Vossa [62] Excelência não firme [61] suas cartas'; m0269 is one page ending in clear 'Ds gde', its last cipher words 'em sua mão, e o mesmo para Duarte da Silva'; m0270 and m0274 are blank versos. So the cipher pages hold at least three units, not one nine-page letter. Read once, not verified by a second reader.", "result": "worked"},
-  {"date": "2026-10-27", "kind": "hypothesis", "technique": ["contextual inference"], "what": "Date and people: de Thou (French ambassador at The Hague 1657-62), Comminges (French envoy in Lisbon), Bordeaux (French ambassador in London) and a Dutch Republic 'inflamed against Portugal' fit the Dutch-Portuguese war of 1657-61; the m0268 date (30 Nov 165?, last digit 7 or 2) does not settle the year. Writer and addressee not identified: the catalogue's lead (Diogo Lopes de Ulhoa at The Hague to Rui Teles de Meneses in Paris) and Francisco de Melo (owner of the papers) are both untested.", "result": "partial"},
-  {"date": "2026-10-27", "kind": "hypothesis", "technique": ["contextual inference"], "what": "Code groups: 132 = embaixador fits four places (o [132] de França; Comminges [132] [64] de França; o dito [132] escreveu a Monsiur de Bordeus) but is not proven; 61, 62, 63, 64, 65, 79, 102, 128 and 341 stay open.", "result": "partial"},
-  {"date": "2026-10-27", "kind": "hypothesis", "technique": ["repeat/pattern analysis"], "what": "Cipher B (Rome 1664): numerical, two-digit multiples of 5, small numbers, three-digit groups and 9xx groups closing each passage; glosses of the time over some groups on m0063. The groups do not line up one-to-one with the glossed letters (nine groups for 'ninguem'). Not attacked.", "result": "failed"},
-  {"date": "2026-10-27", "kind": "literature search", "what": "Repository history (400 commits on origin/main) has nothing on catalogue 390, LMP/0001 or Sande's LMP papers; the nearest is miranda1660 (catalogue 389, CPN/0019 and the MMCG 3L keys, not digitised). One web search found no edition or decipherment. Prestage and the published Sande correspondence not checked.", "result": "failed"},
-  {"date": "2026-10-27", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Maintainer review on merge (PR #124, Claude Opus 5.5): key.txt re-implemented independently decodes all 46 transcribed lines, every sign below 60 valued, output identical to decryption.txt but for q/que on a lone 16. A ciphertext-only anneal on the transcription (lang pt-modern, order 5, values free) converged in 2 of 3 runs to 24 of the 26 values; the other two (10 = i, 22 = m) are spelling preferences of the model. m0265.02 15.14.27.8.2 is 'chego' (first person), not 'chegou': reading.md and translation.md corrected. Reading graded A (passage 2 B). Length re-measured with --measure (1,336 numbers, 36 distinct). Status set to in progress: about 245 of ~290 lines untranscribed with no outside blocker. Lead for the writer: Fernando Teles de Faro (catalogue 385).", "result": "worked"}
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "Fetched the DigitArq file list (592 scans) of PT/TT/LMP/0001 and viewed every scan as thumbnail sheets. Cipher found on m0265-m0273 (cipher A), m0059-m0063 and neighbours (cipher B, Rome 1664) and m0170 (cipher B tokens). m0580 is French clear text in a phonetic spelling, not a cipher.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "Cipher A transcribed in part from the scans: m0265 lines 1-18, m0273 last 12 lines, m0266 lines 2-5.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis",
+    "repeat/pattern analysis"
+   ],
+   "what": "Numbers 1-41 with word gaps kept: a letter substitution with a few homophones; numbers of 60 and up stand alone as code groups. Frequent short words (16.4.27, 6.27, 11.2.20) taken as que, de, por.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "solver",
+   "technique": [
+    "manual reconstruction",
+    "language-model scoring"
+   ],
+   "what": "Letter values built out from the short-word guesses and checked on the whole transcription: the opening 'com grande desgosto fico ao presente', Portugal, França, Monsiur de Cominges, Monsiur de Bordeus and the close 'a quem peço me diga largamente seu parecer sobre tudo' come out without forcing.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Second reader, separately: re-read m0265, m0266, m0273 and m0269 on the scans at 2x zoom; transcribed m0269 lines 3-12, which the first reader never saw, and decrypted them with an own implementation of the key: fluent Portuguese with no tuning. Corrections: m0265.07 19.4 (Tu, i.e. de Thou), not 13.4; 2.9, not 29; 20, not 28; 12, not 17; 8, not 3 in diga. 'Unassigned 17, 28, 29' were misreadings. 62 as a full stop not proven; 132 = embaixador proposed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Function-word controls (decrypt.py --controls, 2,000 trials each, on the corrected transcription, 300 words): real key 115 words in a fixed list of about 50 common Portuguese words; letter values permuted mean 5.0, max 27; groups shuffled under the real key mean 17.6, max 29.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "reading",
+   "technique": [
+    "contextual inference",
+    "manual reconstruction"
+   ],
+   "what": "Preparation check for this contribution: m0265.09 19.3.21 (tal) and m0265.10 18.3.2 (não) read on the scan; with them the sentence reads 'porque tal afecto no mo[d]o com que ele fala nas cousas do nosso reino não o vi'. Word joins across line ends: 'nada pode moderar esta fúria' (m0273.e08-09), 'hum perso/nagem confidente nosso' (m0269.02-03).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "Preparation check of the page layout: m0267 ends half-way down with a dash; m0268 is blank but for a line along the top edge, '[...] 30 Nov[embr]o 165[?7]' in clear and in cipher 'Vossa [62] Excelência não firme [61] suas cartas'; m0269 is one page ending in clear 'Ds gde', its last cipher words 'em sua mão, e o mesmo para Duarte da Silva'; m0270 and m0274 are blank versos. So the cipher pages hold at least three units, not one nine-page letter. Read once, not verified by a second reader.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Date and people: de Thou (French ambassador at The Hague 1657-62), Comminges (French envoy in Lisbon), Bordeaux (French ambassador in London) and a Dutch Republic 'inflamed against Portugal' fit the Dutch-Portuguese war of 1657-61; the m0268 date (30 Nov 165?, last digit 7 or 2) does not settle the year. Writer and addressee not identified: the catalogue's lead (Diogo Lopes de Ulhoa at The Hague to Rui Teles de Meneses in Paris) and Francisco de Melo (owner of the papers) are both untested.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Code groups: 132 = embaixador fits four places (o [132] de França; Comminges [132] [64] de França; o dito [132] escreveu a Monsiur de Bordeus) but is not proven; 61, 62, 63, 64, 65, 79, 102, 128 and 341 stay open.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "hypothesis",
+   "technique": [
+    "repeat/pattern analysis"
+   ],
+   "what": "Cipher B (Rome 1664): numerical, two-digit multiples of 5, small numbers, three-digit groups and 9xx groups closing each passage; glosses of the time over some groups on m0063. The groups do not line up one-to-one with the glossed letters (nine groups for 'ninguem'). Not attacked.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Repository history (400 commits on origin/main) has nothing on catalogue 390, LMP/0001 or Sande's LMP papers; the nearest is miranda1660 (catalogue 389, CPN/0019 and the MMCG 3L keys, not digitised). One web search found no edition or decipherment. Prestage and the published Sande correspondence not checked.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Maintainer review on merge (PR #124, Claude Opus 5.5): key.txt re-implemented independently decodes all 46 transcribed lines, every sign below 60 valued, output identical to decryption.txt but for q/que on a lone 16. A ciphertext-only anneal on the transcription (lang pt-modern, order 5, values free) converged in 2 of 3 runs to 24 of the 26 values; the other two (10 = i, 22 = m) are spelling preferences of the model. m0265.02 15.14.27.8.2 is 'chego' (first person), not 'chegou': reading.md and translation.md corrected. Reading graded A (passage 2 B). Length re-measured with --measure (1,336 numbers, 36 distinct). Status set to in progress: about 245 of ~290 lines untranscribed with no outside blocker. Lead for the writer: Fernando Teles de Faro (catalogue 385).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "transcription",
+   "what": "m0271, all 37 cipher lines (1,225 tokens), transcribed from the DigitArq scan for the first time; one reader, who knew the key table; hashed before any decryption (beling/transcription/m0271.txt). 16 readings doubtful, 4 signs not read. (Andrew Beling, beling/)",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "what": "Pre-registered held-out test of key.txt on m0271 (beling/PREREG.md): share of decrypted letters inside Portuguese words of 3+ letters (lang/lexicons/pt, spelling-normalised, word gaps ignored) 0.782, against 0.739 on the build lines (threshold 0.85 x 0.739 = 0.628); 200 shuffled keys (seed 1660) mean 0.158, best 0.366; margin 0.416. Pass. (Andrew Beling, beling/)",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "200 keys made by permuting key.txt's letter values over its 26 numbers, scored on m0271 with the same rule: mean 0.158, best 0.366. (Andrew Beling, beling/)",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "m0271 read as sentences (beling/results/m0271_reading.md). Code groups proposed from context: 115 = paz (3 places), 102 = Brasil ('tornar as terras do [102]'), 72 = Majestade after 'Sua' (or 7.2 'mo'), 79 = Estados; 132 = embaixador fits again. Numbers 23, 25, 26, 31, 38, 42 are not in key.txt (second look: beling/results/unkeyed_numbers.md). (Andrew Beling, beling/)",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "m0271 read a second time, blind to the first reading, the key and any decryption (beling/transcription/m0271_r2.txt): 1,202 of 1,225 tokens agree; the 21 differences looked at on the image, 6 settled there, 11 by context, 4 open (beling/results/collation_m0271_settled.md). (Andrew Beling, beling/)",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "The 168 cipher A lines never transcribed (m0265.19-43, m0266.01 and 06-42, m0267, m0269.01-02 and 13-38, m0272, m0273.01-17), each page by a separate AI agent given only the scan; 5,094 tokens, 180 doubtful, 76 unread. Cipher A has 250 lines in all (7,630 tokens), now all transcribed. (Andrew Beling, beling/)",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "what": "Pre-registered held-out test of key.txt on the round-2 lines (beling/PREREG_round2.md): coverage by Portuguese words of 3+ letters 0.709 on 96 lines against threshold 0.628; 200 shuffled keys best 0.392; margin 0.317. Pass. The exclusion rule left out 72 lines for common phrases; post-hoc on all 167 lines 0.728, margin 0.341 (not pre-registered). (Andrew Beling, beling/)",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Code groups with 2+ fitting places: 132 embaixador, 72 Majestade after Sua, 79 the Dutch, 102 Brasil, 115 paz, 137 ministros; 31 = o and probably 38 = m are homophones missing from key.txt. Reading of all pages (beling/results/round2_reading.md, decode_all.txt): addressee probably in England, date autumn-winter 1657 (inference). (Andrew Beling, beling/)",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "key from source",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Cipher B: every run on m0063 read with its gloss; aligned one group per letter they give a homophonic substitution table (26 groups, 18 letters, 9xx end marks, no conflicts; beling/results/cipherB_m0063.txt). Leave-one-out 47/47 known groups right; six glossed runs on m0062 read afterwards: 48 of 53 groups in the table, all 48 agree with the glosses. (Andrew Beling, beling/)",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Integration check of PR #447: all six scripts re-run, hash lists check, outputs identical (m0271 0.7824 against threshold 0.6284, margin 0.4162; round 2 on 96 lines 0.709, margin 0.317; post hoc on 167 lines 0.728, margin 0.341; collation 1,202 of 1,225 tokens; cipher B 48 of 53 groups on m0062). Own decoder written from key.txt: m0272 reads as Portuguese. About 150 numbers of m0272 ll. 2-5 compared with the DigitArq image: all agree, one doubtful (28*) marked as such. Read share recounted strictly (doubtful signs as holes): 0.950, not the contributor's 0.966. Round 2's exclusion rule is a flaw its author states; the pre-registered figure stands as the test.",
+   "result": "worked"
+  }
  ],
  "outcome": {
   "class": "read in part",
   "key": "partial",
   "method": "key recovered from ciphertext-only",
   "method_basis": "The letter values of cipher A were recovered from the transcribed cipher alone, with no gloss, clear copy or key sheet; they decrypt the second reader's m0269 lines, which were not used to build them, unchanged.",
-  "contribution": ["transcription", "key recovered", "catalogue correction"],
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction"
+  ],
   "first_break": true,
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "transcription.txt with decrypt.py: in the transcribed lines 1,313 of 1,338 tokens get a value (23 code-group tokens and 2 blotted signs open), 0.98. Those lines are about 45 of roughly 290 cipher lines, so the share of the whole of cipher A given a value is put at about 0.15. reading.md: hole rate 0.127 on research/reading_audit/v2_score.py (read_share 0.873 of the transcribed passages).",
-  "fraction_read": 0.15,
-  "codes_open": {"open": 10, "total": 10, "tokens_open": 23},
-  "verification": ["independent verification", "matched control", "historical consistency"],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "12 Nov 2026 integration recount from the transcription files (transcription.txt for the build lines, beling/transcription/ for the rest): 7,630 tokens; 7,374 take a letter from key.txt; of these at least 127 carry a doubtful mark (*) in the blind files and count as holes, so 7,247 of 7,630 = 0.950 (0.9498). The other holes: 134 code-group tokens, 40 numbers below 60 the key lacks and 82 unread signs. This counts tokens that take a letter, not words read as sense (the writer's spelling, gutter losses and one blind reader per new page are not measured); the sentence check gives a clean share of 0.535 (beling/results/round2_reading.md). The contributor's own figure, 0.966, counts every token that takes a letter. Before: 1,313 of 1,338 tokens on about 45 lines, put at 0.15 of the whole.",
+  "fraction_read": 0.95,
+  "codes_open": {
+   "open": 27,
+   "total": 27,
+   "tokens_open": 134
+  },
+  "verification": [
+   "independent verification",
+   "matched control",
+   "historical consistency"
+  ],
   "provenance": "contributed",
   "credits": [
-   {"who": "lccompany", "role": "solution", "note": "cipher A located in the 592 scans of LMP liv. 1; key recovered from the ciphertext; transcribed passages read in part", "date": "2026-10-27"},
-   {"who": "lccompany", "role": "transcription", "note": "about 45 lines of cipher A from DigitArq scans m0265-m0273", "date": "2026-10-27"},
-   {"who": "lccompany", "role": "verification", "note": "independent re-reading of the scans and an unseen page (m0269) decrypted with an own implementation of the key; controls", "date": "2026-10-27"}
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "cipher A located in the 592 scans of LMP liv. 1; key recovered from the ciphertext; transcribed passages read in part",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "about 45 lines of cipher A from DigitArq scans m0265-m0273",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "independent re-reading of the scans and an unseen page (m0269) decrypted with an own implementation of the key; controls",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "ajbeling",
+    "role": "transcription",
+    "note": "cipher A completed: m0271 twice, 168 further lines by blind AI readers from the DigitArq scans",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "ajbeling",
+    "role": "verification",
+    "note": "two pre-registered held-out tests of key.txt (m0271: margin 0.416; rest of cipher A: margin 0.317)",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "ajbeling",
+    "role": "key corrected",
+    "note": "cipher B letter table from the m0063 glosses, checked on m0062; 31 = o and 38 = m shown missing from the cipher A key",
+    "date": "2026-11-12"
+   }
   ],
   "gaps": [
-   {"item": "cipher A: the untranscribed lines (most of m0265-m0267, m0269 lines 1-2 and 13 to the end, m0271, m0272, m0273 above the last 12 lines)", "blocker": "not-attempted", "detail": "about 245 of roughly 290 cipher lines; the scans are online and good enough to read"},
-   {"item": "cipher A: code groups 61, 62, 63, 64, 65, 79, 102, 128, 132, 341", "blocker": "open-codes", "detail": "no key sheet found; the rest of the text should repeat some of them; 132 = embaixador proposed, not proven"},
-   {"item": "cipher A: writer, addressee and exact date", "blocker": "not-attempted", "detail": "candidates (Ulhoa; Francisco de Melo; the 30 Nov 165? line on m0268, last digit 7 or 2) untested against clear letters of the codex and the catalogue 389 / MMCG 3L material; reviewer's lead (27 Oct 2026): Fernando Teles de Faro, Portuguese envoy at The Hague 1657-59, catalogue 385"},
-   {"item": "cipher B (Rome 1664, m0059-m0063 and neighbours, m0170)", "blocker": "not-attempted", "detail": "located and described; the interlinear glosses on m0063 are the way in"}
+   {
+    "item": "cipher A: the 168 lines transcribed in Nov 2026 (m0265.19-43, m0266.01 and 06-42, m0267, m0269.01-02 and 13-38, m0272, m0273.01-17) have one blind reader each",
+    "blocker": "not-attempted",
+    "detail": "second reading not done; 180 doubtful and 76 unread signs, most unread at the binding. m0271 has two readings; 4 differences open (beling/, 12 Nov 2026)"
+   },
+   {
+    "item": "cipher A: code groups 128, 64, 134, 63, 65, 66, 98, 123, 138, 341, and the choice for 73 (France or England) and 72 (group or '7.2')",
+    "blocker": "open-codes",
+    "detail": "no key sheet found. Proposed with 2+ places (beling/results/code_groups_round2.md): 132 embaixador, 72 Majestade, 79 the Dutch, 102 Brasil, 115 paz, 137 ministros; fair: 117 Inglaterra, 122 armada, 131 naus; 61, 62, 69 separators or nulls. None promoted into key.txt"
+   },
+   {
+    "item": "cipher A: numbers below 60 not in key.txt",
+    "blocker": "open-codes",
+    "detail": "31 = o shown (8 places); 38 = m probable; 25 and 42 open (beling/results/unkeyed_numbers.md); key.txt not yet amended"
+   },
+   {
+    "item": "cipher A: writer, addressee and exact date",
+    "blocker": "not-attempted",
+    "detail": "candidates (Ulhoa; Francisco de Melo; the 30 Nov 165? line on m0268, last digit 7 or 2) untested against clear letters of the codex and the catalogue 389 / MMCG 3L material; reviewer's lead (27 Oct 2026): Fernando Teles de Faro, Portuguese envoy at The Hague 1657-59, catalogue 385 12 Nov 2026 (beling/results/round2_reading.md, inference): addressee probably in England (Francisco de Melo, London); date autumn-winter 1657 from the content; the writer an unaccredited agent near The Hague. Leads not checked: J.A.K. Haas on the Teles de Faro embassy 1658-59 (BMGN); Bodleian MS. Rawl. A. 61/2."
+   },
+   {
+    "item": "cipher B (Rome 1664): the pages other than the glossed runs of m0063 and m0062 (m0055-m0062, m0065, m0069-75, m0098, m0113, m0116-117, m0170)",
+    "blocker": "not-attempted",
+    "detail": "the table from the m0063 glosses reads the glossed runs on m0062 (beling/results/cipherB_m0063.txt); the other pages are not transcribed"
+   }
   ],
   "texts": [
    {
     "doc": "A",
     "label": "Cipher A, LMP liv. 1 scans m0265-m0273: the transcribed passages",
-    "transcription": "transcription.txt",
-    "decryption": "decryption.txt",
-    "reading": "reading.md",
+    "transcription": [
+     "transcription.txt",
+     "beling/transcription/m0265_rest.txt",
+     "beling/transcription/m0266_rest.txt",
+     "beling/transcription/m0267.txt",
+     "beling/transcription/m0269_rest.txt",
+     "beling/transcription/m0271.txt",
+     "beling/transcription/m0271_r2.txt",
+     "beling/transcription/m0272.txt",
+     "beling/transcription/m0273_top.txt"
+    ],
+    "decryption": [
+     "decryption.txt",
+     "beling/results/decode_all.txt"
+    ],
+    "reading": [
+     "reading.md",
+     "beling/results/m0271_reading.md",
+     "beling/results/round2_reading.md"
+    ],
     "translation": "translation.md",
     "language": "pt",
     "state": "read in part",
     "read_share": 0.873,
     "summary": "A Portuguese agent in the Dutch Republic, probably in 1657-59, reports that the Dutch are inflamed against Portugal and that the French ambassador de Thou is friendly and is working for a French mediation, with Comminges in Lisbon and Bordeaux in London; a confidant says the Dutch regret the war but must keep it up for reputation; the writer asks Your Excellency for advice and says only an envoy from the King, to treat of a settlement, can calm this fury. A cipher line on m0268 tells the addressee not to sign his letters. Ten code groups are open.",
-    "reading_review": {"grade": "A", "by": "Claude Opus 5.5 (PR review on merge)", "date": "2026-10-27", "note": "Read as sentences against an independent decode of transcription.txt. Passages 1 (m0265.01-18, after the chego fix), 3 (m0268 line), 4 (m0269.02-12), 5 (m0269 last line) and 6 (m0273 last 12 lines) A; passage 2 (m0266.02-05, four lines, two fragments, a cut word) B. Covers only the ~45 transcribed lines (about 15% of cipher A)."},
-    "note": "Only about 45 of some 290 cipher lines are transcribed; the reading covers those lines. read_share is 1 - hole rate of research/reading_audit/v2_score.py on reading.md. The sentence check (docs/_check_reading.py) is low because the open code groups and names (Thou, Comminges, Bordeaux) and words outside the period Portuguese word list count as holes. m0265.02 'chego' (first person: the writer has come from The Hague) corrected from 'chegou' at the merge review, 27 Oct 2026."
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5 (PR review on merge)",
+     "date": "2026-10-27",
+     "note": "Read as sentences against an independent decode of transcription.txt. Passages 1 (m0265.01-18, after the chego fix), 3 (m0268 line), 4 (m0269.02-12), 5 (m0269 last line) and 6 (m0273 last 12 lines) A; passage 2 (m0266.02-05, four lines, two fragments, a cut word) B. Covers only the ~45 transcribed lines (about 15% of cipher A)."
+    },
+    "note": "Only about 45 of some 290 cipher lines are transcribed; the reading covers those lines. read_share is 1 - hole rate of research/reading_audit/v2_score.py on reading.md. The sentence check (docs/_check_reading.py) is low because the open code groups and names (Thou, Comminges, Bordeaux) and words outside the period Portuguese word list count as holes. m0265.02 'chego' (first person: the writer has come from The Hague) corrected from 'chegou' at the merge review, 27 Oct 2026. 12 Nov 2026 (Andrew Beling, beling/): all 250 lines now transcribed and decoded (beling/results/decode_all.txt); m0271 and the round-2 pages read in beling/results/m0271_reading.md and round2_reading.md, without a translation or a reading_review. read_share 0.873 is still that of reading.md."
    }
   ],
-  "key_file": "key.txt",
-  "notes": "Contributed by WAINUT (catalogue 390). Cipher A's key was recovered here from the ciphertext; the letters are read in part, and most of their lines are not yet transcribed. No earlier decipherment was found, but the search was light (Prestage and the published Sande correspondence not checked), so first_break = true stands until those are checked. If cipher A turns out to share a key with the MMCG 3L keys of catalogue 389 (miranda1660), that would bear on that target."
+  "key_file": [
+   "key.txt",
+   "beling/results/cipherB_m0063.txt"
+  ],
+  "notes": "Contributed by WAINUT (catalogue 390). Cipher A's key was recovered here from the ciphertext; the letters are read in part, and most of their lines are not yet transcribed. No earlier decipherment was found, but the search was light (Prestage and the published Sande correspondence not checked), so first_break = true stands until those are checked. If cipher A turns out to share a key with the MMCG 3L keys of catalogue 389 (miranda1660), that would bear on that target. 11-12 Nov 2026 (Andrew Beling, beling/): all 250 lines of cipher A transcribed (7,630 tokens) and two pre-registered held-out tests of key.txt passed (margins 0.416 and 0.317); cipher B is a homophonic letter substitution, its table built from the m0063 glosses and checked on m0062."
  }
 }
