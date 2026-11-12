@@ -27,7 +27,9 @@ syllable groups (409 1175 1179 765 pro-te-ti-on; 1314 413 1166 per-ma-nent). Val
 adds -s (971 country, 971° countries; 1116° in "sloops"); a cross under a group and a caret also occur (1115+,
 694+, 264^, 961^), meaning not yet established.
 
-It is **not** any US code table in the repo: the Department code of 1803-40 (`targets/jqa`, the = 1385), Armstrong's
+It is **WE025**, which Weber, *United States Diplomatic Codes and Ciphers* (1979), prints in full (pp. 470-480; 1,592
+elements); no copy of that table was in the repo (corrected 11 Nov 2026: see "WE025 (Beling, 11 Nov 2026)" below).
+It is not any of the US code tables that were in the repo: the Department code of 1803-40 (`targets/jqa`, the = 1385), Armstrong's
 THE=972, Pinckney's legation code, the 1788 legation code, Jefferson 1787, Mountflorence 1801, nor Sumter's Rio code
 of 1813 (M121 vol. 1A frames 0035-0039: the = 798, of = 1399, and = 1242). `shift_test.py` also tried every constant
 shift (and mod 1600/1700) of the first five against the 1813 groups: best z = 4.3 among ~9,000 settings for the JQA
@@ -74,16 +76,19 @@ Copy differences: the Duplicate drops 337 *never* and 1506 *sloo-*, and writes 1
 sentences, e.g. P1 "No dependance can be placed on the [1436] of the people the [486][1095] and li[218][1095] of
 this country ..."; P4 "... of this govern-ment [901] the ..."; P6 "... re-[12]-pro-te-ti-on ..."; P7 "... in the
 [428] of ... the govern-ment". No sentence reads yet, so nothing is claimed as read.
+(Superseded 11 Nov 2026: with Weber's WE025 the letter reads in part; see the section "WE025 (Beling, 11 Nov 2026)".)
 
 ## Remaining gaps
 - P0, f. 37r (frame 0092), about three lines of groups - blocker: illegible; the microfilm frame is nearly black;
   needs a new scan of the original (NARA RG 59) or the 1813 duplicate if one survives
-- 276 of 437 groups in P1-P9 (210 of 256 distinct values) - blocker: no-key-material for most; the only decoded
-  sibling found covers 95 values (48 of the 256 distinct 1813 groups after the 27 Oct corrections); Poinsett's own papers with his other ciphered reports (HSP, Poinsett Papers
-  vol. 4, Gilpin collection) are not online
-- the same groups - blocker: open-codes until the context pass below has been made
-- 14 June 1814 (no. 651): group 39 in "a ship [39] should draw" - blocker: too-short; one occurrence in both letters,
-  left blank by the clerk and by Manning
+- 20 Feb 1813, 7 groups with no sense under WE025 (holes in `beling/reading_1813-02-20.md`) - blocker: open-codes;
+  the WE025 value gives no sense there (see the reading for each)
+- 20 Feb 1813, 20 groups read only by assuming a digit misread - not blocked: still to be checked on the frames
+  (`beling/groups_1813-02-20.tsv` lists them)
+- 1315, three times where "a" is wanted; Weber prints "hu" - blocker: open-codes; not explained
+- no second reader of the 1813 numerals and no `reading_review` yet
+- (closed 11 Nov 2026) 276 of 437 groups without a value: WE025 gives every group a value
+- (closed 11 Nov 2026) 14 June 1814 group 39: "should" in WE025 (beling/README.md)
 
 ## Escalation
 - [x] siblings: M37 roll 2 frames 0091-0102 opened; 14 June 1814 (0098, duplicate 0100) is in the same code with a
@@ -93,7 +98,9 @@ this country ..."; P4 "... of this govern-ment [901] the ..."; P6 "... re-[12]-p
   Mountflorence 1801, Sumter 1813 tried directly and under shifts; none fits
 - [x] print (1814): Manning vol. 1 doc. 201 (1925) prints the 14 June 1814 letter decoded (the clerk's text); vol. 1
   has no other Poinsett letter with code (the rest were returned to him in 1818), vol. 2 only the 1813 letter undecoded
-- [ ] print: Manning checked (no decode of 1813); Weber 1979 not online; HSP calendar (1941) full view on HathiTrust
+- [x] known-keys (2), 11 Nov 2026: Weber 1979 WE025 is this code (Beling; beling/README.md); 406 of 437 groups of
+  1813 read as transcribed
+- [ ] print: Manning checked (no decode of 1813); Weber 1979 consulted 11 Nov 2026 (table only, no decode of 1813); HSP calendar (1941) full view on HathiTrust
   mdp.39015034759822 but behind a bot check, to be searched by hand for 'cipher'
 - [x] key-rebuild: context pass made 27 Oct; only 'Lima' (249 413, twice in P4) cross-checks; no new values, the
   unknown groups occur once or twice in contexts that do not fix them
@@ -125,3 +132,27 @@ Poinsett's despatch of 29 June 1811 (HSP, Poinsett Papers vol. 1, folder 10) has
 text written over them: four values of `key_1814.tsv` are confirmed and 13 are new (`dudout/key_1811_additions.tsv`).
 With them, 170 of the 437 groups of the 1813 letter have a value (was 161); no sentence reads yet. The despatches of
 20 March and 11 April 1811 are in a second code, with a "decyphered" sheet for 11 April. Details in `dudout/README.md`.
+
+## WE025 (Beling, 11 Nov 2026)
+
+Contribution by Andrew Beling, with AI agents; details, files and scripts in `beling/README.md`. Daniel's files and
+`dudout/` are unchanged.
+
+- **The code is WE025** (Weber 1979, pp. 470-480). Our transcription of Weber's table was frozen by sha256 at
+  2026-11-11T10:37:23Z, before any decoding with it (`beling/key/we025_SHA256.txt`); one correction after the freeze,
+  668 = fect. Only the 341 rows for numbers that occur in these letters are in the repo (`beling/key/we025_poinsett.tsv`).
+- **14 June 1814** (not a blind test: the agent had seen the clerk's values): WE025 alone matches 0.935 of the clerk's
+  letters (376 of 401); 200 shuffled keys mean 0.184, best 0.306. With two image rereads (337 = 338 never, 435 = 485
+  dom) 0.954. Of the 27 values where WE025 and `key_1814.tsv` differ, 21 are syllable splits of the clerk's words; group
+  39 is "should" (462 1495 = dra-w). 1315, written three times where "a" is wanted, is "hu" in Weber: not explained.
+- **20 Feb 1813, read in part**: from our own frozen transcription of the numerals (1 Nov 2026), 406 of 437 groups read
+  as frozen (92.9%), 4 more after an image reread, 20 rest on an assumed digit misread, 7 are holes. All nine coded
+  passages P1-P9 join Manning's clear text (`beling/reading_1813-02-20.md`; line by line against `transcription.tsv`
+  in `beling/decryption_1813-02-20.txt`). Poinsett admits taking "a part in the revolution of this country" beyond his
+  instructions; "a small naval force with five thousand stand of arms would insure the fall of Lima"; the journey to
+  Arauco is to leave the militia "in the hands of patriots", and independence is to be declared.
+- **Open points**: 1215 = a in WE025 (1413 = at), so the "at" of 1811 is the decoder's word; 708 = i, the letter, so
+  "disposition" is dispose-i-tion and 708 is the pronoun "I" in 1813 ("I have"). Of Dudout's 13 values 12 are WE025's;
+  210 (form) is "cur" in WE025, which has form at 216: left to him.
+- **Still open**: P0 (frame 0092); the 7 holes; the 20 assumed misreads; 1315; the marks (meaning inferred from use);
+  no second reader. Reading review pending.
