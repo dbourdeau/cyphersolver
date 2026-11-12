@@ -1,17 +1,17 @@
 # sehested1657 - English summary translation, letter by letter
 
 Summaries of reading.md (Brice Dudout, with Claude Opus 5.5 agents, 11 Nov 2026); not a word-for-word translation. Identifications of
-nomenclator symbols are those of key.tsv (certain / probable); persons: Kurz = Ferdinand Sigmund Kurz, imperial vice-chancellor;
+nomenclator symbols are those of key.tsv (certain / probable); persons: Auersperg = Ferdinand Sigmund Auersperg, imperial vice-chancellor;
 La Fuente = Gaspar de Teves, marqués de La Fuente, Spanish ambassador in Vienna; Rebolledo = Bernardino de Rebolledo, Spanish envoy in
 Copenhagen; the chancellor = Christen Thomesen Sehested; the Reichshofmeister = Joachim Gersdorf.
 
 ## L01 — to the chancellor, Vienna 17/27 Jan. 1657 (with P.S.)
 
-Sehested refers to his letter to the king; Kurz, at first surprised that no one came with full powers, took the matter up seriously on 14/24 Jan after conferring with La Fuente and gave the enclosed answer; Sehested asks the chancellor for the promised papers. P.S.: a breach between the Emperor and France is expected; forced levies; the French army put at 50,000; Rákóczi already in Poland, for himself rather than for Sweden; rumour of a Saxon marriage for the young king; Kurz flatters Sehested and has attached Windischgrätz to him to sound him out.
+Sehested refers to his letter to the king; Auersperg, at first surprised that no one came with full powers, took the matter up seriously on 14/24 Jan after conferring with La Fuente and gave the enclosed answer; Sehested asks the chancellor for the promised papers. P.S.: a breach between the Emperor and France is expected; forced levies; the French army put at 50,000; Rákóczi already in Poland, for himself rather than for Sweden; rumour of a Saxon marriage for the young king; Auersperg flatters Sehested and has attached Windischgrätz to him to sound him out.
 
 ## L02 — to the king, Vienna 17/27 Jan. 1657
 
-To the king: Sehested greeted Kurz on the alliance and the 'secret'; Kurz took it ad referendum, then reported that the Emperor is not averse to the defensive alliance proposed by the king but expects the draft and conditions from Denmark; the 'secret' once mentioned to Castel Rodrigo no longer matters. On 14/24 Jan Kurz asked for haste and for the inclusion of the States General.
+To the king: Sehested greeted Auersperg on the alliance and the 'secret'; Auersperg took it ad referendum, then reported that the Emperor is not averse to the defensive alliance proposed by the king but expects the draft and conditions from Denmark; the 'secret' once mentioned to Castel Rodrigo no longer matters. On 14/24 Jan Auersperg asked for haste and for the inclusion of the States General.
 
 ## L03 — to the king, Vienna 7/17 Feb. 1657 (date read 28/7; Gigas: 17 Feb.)
 
@@ -19,7 +19,7 @@ To the king: nothing new; spirits in Vienna raised by Rebolledo's favourable rep
 
 ## L04 — to the chancellor, Vienna 7/17 Feb. 1657 (with P.S.)
 
-To the chancellor: the ministers await the resolution and full powers; ciphering has worn out his eyes, so no duplicates; news as in the letter to the king; his reports to Kurz confirmed by Rebolledo. P.S.: talks in Paris with the cardinal; a Franco-Swedish offensive and defensive alliance is believed concluded.
+To the chancellor: the ministers await the resolution and full powers; ciphering has worn out his eyes, so no duplicates; news as in the letter to the king; his reports to Auersperg confirmed by Rebolledo. P.S.: talks in Paris with the cardinal; a Franco-Swedish offensive and defensive alliance is believed concluded.
 
 ## L05 — to the king, Vienna 14/24 Feb. 1657
 
@@ -27,7 +27,7 @@ To the king: the Emperor has consented orally to the cession of Bremen; should S
 
 ## L06 — to the chancellor, Vienna 14/24 Feb. 1657 (glossed original; two cipher copies)
 
-To the chancellor: Kurz would discuss Bremen only after the alliance; Sehested argues that Danish preparations are ready and that general peace is impossible while Sweden holds Pomerania, Mecklenburg and Bremen. On 11/21 Feb the Emperor, Kurz and La Fuente conferred: the king will be satisfied; the Danish minister at The Hague should block ratification of the Swedish-Dutch treaty and bring the States General into the alliance. Kurz then announced the Emperor's consent to the transfer of Bremen. P.S. at nine o'clock: the Emperor resolves on an offensive alliance and awaits the full powers urgently.
+To the chancellor: Auersperg would discuss Bremen only after the alliance; Sehested argues that Danish preparations are ready and that general peace is impossible while Sweden holds Pomerania, Mecklenburg and Bremen. On 11/21 Feb the Emperor, Auersperg and La Fuente conferred: the king will be satisfied; the Danish minister at The Hague should block ratification of the Swedish-Dutch treaty and bring the States General into the alliance. Auersperg then announced the Emperor's consent to the transfer of Bremen. P.S. at nine o'clock: the Emperor resolves on an offensive alliance and awaits the full powers urgently.
 
 ## L07 — proposition to Emperor Ferdinand III (audience of 18/28 Feb. 1657), copy
 
@@ -47,19 +47,19 @@ To the chancellor: the Emperor has resolved to conclude the offensive and defens
 
 ## L11 — to the chancellor, Vienna 7/17 Mar. 1657
 
-To the chancellor: Kurz says the Emperor now wants a general offensive and defensive alliance binding both sides; Sehested took it ad referendum. The States General should come later as an accessory. Questions: should Denmark insist on 'Königliche Majestät' instead of 'Königliche Würden', on a recredential, and on a written promise for Bremen?
+To the chancellor: Auersperg says the Emperor now wants a general offensive and defensive alliance binding both sides; Sehested took it ad referendum. The States General should come later as an accessory. Questions: should Denmark insist on 'Königliche Majestät' instead of 'Königliche Würden', on a recredential, and on a written promise for Bremen?
 
 ## L12 — to the king, March 1657 (pencil 7/3)
 
 To the king: the Emperor stands by his first answer: nothing further before the king sends absolute full powers and an instruction for an offensive and defensive alliance; Bremen preferred in the king's hands; renewed advice on the States General, Poland, Danzig and other princes.
 
-## L13 — memorial handed to Kurz, ?/9 Mar. 1657
+## L13 — memorial handed to Auersperg, ?/9 Mar. 1657
 
-Memorial handed to Kurz (?/9 March): Denmark can hold the Baltic and act on land; the Emperor is asked to declare himself on general peace while Sweden holds Pomerania and Bremen, on transferring Bremen to the king after its occupation, and on effective cooperation. If Sweden made peace in Poland it would recoup itself from Pomerania and Bremen 'mit den spoliis des armen Teutschlandes'. Sweden's attack on the city of Bremen against the imperial avocatoria has nearly forfeited the fief.
+Memorial handed to Auersperg (?/9 March): Denmark can hold the Baltic and act on land; the Emperor is asked to declare himself on general peace while Sweden holds Pomerania and Bremen, on transferring Bremen to the king after its occupation, and on effective cooperation. If Sweden made peace in Poland it would recoup itself from Pomerania and Bremen 'mit den spoliis des armen Teutschlandes'. Sweden's attack on the city of Bremen against the imperial avocatoria has nearly forfeited the fief.
 
 ## L14 — to the chancellor, Vienna 11/21 Mar. 1657 (with P.S.)
 
-To the chancellor: under the new order he handed Kurz a detailed memorial yesterday; an answer is promised by the next post. P.S.: should he ask Kurz for written full powers, and is it enough that both sides show theirs and keep the originals?
+To the chancellor: under the new order he handed Auersperg a detailed memorial yesterday; an answer is promised by the next post. P.S.: should he ask Auersperg for written full powers, and is it enough that both sides show theirs and keep the originals?
 
 ## L15 — "Monsieur", March 1657 (pencil 14/3)
 
@@ -75,7 +75,7 @@ Mostly in clear; cipher: on his last instance the Emperor will send the king of 
 
 ## L18 — to the chancellor, Vienna 21/31 Mar. 1657
 
-To the chancellor (cipher copy and clear of the time in the volume): Kurz explains that the Emperor renewed the family pacts with Poland and promised troops, solely to second Denmark against Sweden, and calls this a sufficient diversion; on Bremen he advises the king to attack Sweden itself first so that Sweden opens hostilities from Bremen; Sehested answers 'praeuenire melius als das praeueniri'; Kurz: 'multa fiunt et cogitantur quae non dicuntur'. The Emperor is gravely ill; the privy council asked to see Sehested's full powers.
+To the chancellor (cipher copy and clear of the time in the volume): Auersperg explains that the Emperor renewed the family pacts with Poland and promised troops, solely to second Denmark against Sweden, and calls this a sufficient diversion; on Bremen he advises the king to attack Sweden itself first so that Sweden opens hostilities from Bremen; Sehested answers 'praeuenire melius als das praeueniri'; Auersperg: 'multa fiunt et cogitantur quae non dicuntur'. The Emperor is gravely ill; the privy council asked to see Sehested's full powers.
 
 ## L19 — to the chancellor, Vienna 25 Mar./4 Apr. 1657 (death of the Emperor)
 
@@ -83,11 +83,11 @@ To the chancellor: his hopes ended on Sunday with the Emperor's unexpected death
 
 ## L20 — to the king, Vienna 28 Mar./7 Apr. 1657
 
-To the king: his instructions and full powers expire with the Emperor's death; should he continue if Kurz, as a well-disposed imperial councillor told him, makes important proposals in the name of the new government?
+To the king: his instructions and full powers expire with the Emperor's death; should he continue if Auersperg, as a well-disposed imperial councillor told him, makes important proposals in the name of the new government?
 
 ## L21 — copy of a letter to the chancellor, Vienna 28 Mar./7 Apr. 1657
 
-Copy to the chancellor: Kurz intends to make him an important overture once the new government is set up; he will take it ad referendum.
+Copy to the chancellor: Auersperg intends to make him an important overture once the new government is set up; he will take it ad referendum.
 
 ## L22 — to the chancellor, Vienna 4/14 Apr. 1657 (with P.S.)
 
@@ -121,7 +121,7 @@ integration, to judge the reading; square brackets mark nomenclator values that 
 
 ### L03, to the king, Vienna 7/17 Feb. 1657
 
-Since I have already several times given Your Royal Majesty a full and [most humble] report of my business here, I now rightly refrain from troubling Your Royal Majesty with repeating it once more, the more so as nothing particular has happened in it since and His Imperial Majesty only awaits your resolution with the greatest longing. Otherwise I find spirits here not a little raised, because by the last [post] [Rebolledo] sent [La Fuente] a wholly favourable report of Your Royal Majesty's armament and great preparations, and the said [La Fuente] at once laid it before His Imperial Majesty on the 2/12 of this month, whereby my news, which I had shortly before given to Kurz, was in good part confirmed. Passage through Friuli has indeed been refused to the Turk, but it is feared that he may all the same use the sabre instead of the keys and seek the passage by force. The Swiss have answered [France]'s threefold proposal (namely that they should not press so hard for payment, should submit without any excuse to the [symbol L] he would set them, and thirdly should take upon themselves the protection of Alsace) with a refusal; hence the talk is that the old alliance has been denounced to them by [France]. Her Majesty the Roman Empress was delivered of a young prince on the 1/11 of this month, at which there was great joy at [court], and the carnival ended the merrier. From Poland nothing has come in this time except that Rákóczi has already advanced a good way into it and that the city of [Danzig] is minded to seek neutrality. Whereupon I will detain Your Royal Majesty no longer, but in closing [most humbly] assure you that I am, from deepest duty, ...
+Since I have already several times given Your Royal Majesty a full and [most humble] report of my business here, I now rightly refrain from troubling Your Royal Majesty with repeating it once more, the more so as nothing particular has happened in it since and His Imperial Majesty only awaits your resolution with the greatest longing. Otherwise I find spirits here not a little raised, because by the last [post] [Rebolledo] sent [La Fuente] a wholly favourable report of Your Royal Majesty's armament and great preparations, and the said [La Fuente] at once laid it before His Imperial Majesty on the 2/12 of this month, whereby my news, which I had shortly before given to Auersperg, was in good part confirmed. Passage through Friuli has indeed been refused to the Turk, but it is feared that he may all the same use the sabre instead of the keys and seek the passage by force. The Swiss have answered [France]'s threefold proposal (namely that they should not press so hard for payment, should submit without any excuse to the [symbol L] he would set them, and thirdly should take upon themselves the protection of Alsace) with a refusal; hence the talk is that the old alliance has been denounced to them by [France]. Her Majesty the Roman Empress was delivered of a young prince on the 1/11 of this month, at which there was great joy at [court], and the carnival ended the merrier. From Poland nothing has come in this time except that Rákóczi has already advanced a good way into it and that the city of [Danzig] is minded to seek neutrality. Whereupon I will detain Your Royal Majesty no longer, but in closing [most humbly] assure you that I am, from deepest duty, ...
 
 (Symbol L is given as "Staaten", the States General, in key.tsv by the sense of another letter; that value does not fit this sentence, where the Swiss are to submit to something France "would set them".)
 

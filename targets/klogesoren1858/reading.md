@@ -8,8 +8,8 @@ trinitarian formula "I Navnet Gud Fader, Gud Søn og Gud den Hellige Aand. Amen"
 
 Counts (restored and unresolved words are holes): the contributor's classification of the held-out portion after the
 blind sheet K1 was 169 of 179 words (94.41%); the integration check of 12 Nov 2026 re-read images 030-031 at full size
-against the writer's table, found eight of those 169 words misread and corrected them below (172 of 176 words now
-read, a second reader's classification, not blind; see NOTES.md). The contributor's whole-book classification after
+against the writer's table, found eight of those 169 words misread and corrected them below (176 words now: 130 certain,
+42 probable, 1 supplied, 3 doubtful; certain only 73.9%; a second reader's classification, not blind; see NOTES.md). The contributor's whole-book classification after
 the targeted blind sheet K3 is 95.1%, indicative only: 136 pages have no sign-level transcription. The six words changed by K3
 are marked here as in BLIND-REREADING.md (three probable words now certain, two now unresolved, one kept doubtful).
 
@@ -21,7 +21,9 @@ consulted; this reading is independent of it (see NOTES.md, Prior art).
 The contributor read these nine pages on 4,115 px images (385 of 425 words classed read, 90.6%) and gave them here as a
 summary with gaps. They were re-read on 12 Nov 2026 on the full-size KB images (8,230 px per opening) against the
 writer's table on 091 left, and the text below is that re-reading, complete. It is one reader's reading, made with the
-key in hand, not a blind test. [?word] = doubtful, counted as not read; [x] = letter or word supplied. The line-by-line
+key in hand, not a blind test. [?word] = doubtful, counted as not read; [x] = letter or word supplied. 459 words (each cipher
+word singly, "I" and "Navnet" two, each cipher "gange" one, numerals and clear headings not counted): 9 doubtful, 1 supplied,
+449 without a doubt mark. Not graded certain or probable. The line-by-line
 mechanical decode of the low-resolution transcription stays in decryption.txt, Part 1.
 
 ### 003 right

@@ -104,7 +104,7 @@
    "technique": [
     "statistical test"
    ],
-   "what": "One pre-registered measurement on the held-out images 030-031 (790 signs, transcribed and hashed before decoding): COV 0.4025 vs best of 200 permuted keys 0.1089 and of 200 sign shuffles 0.1038; C1-C3 and S met (C1 narrowly). Contributor's run. The verifier's re-run with another lexicon gives 0.404 against 0.157 (permuted keys) and 0.117 (shuffles): the +0.25 margin over the permuted keys is then 0.247, a hair short.",
+   "what": "One pre-registered measurement on the held-out images 030-031 (790 signs, transcribed and hashed before decoding): COV 0.4025 vs best of 200 permuted keys 0.1089 and of 200 sign shuffles 0.1038; C1-C3 and S met (C1 narrowly). Contributor's run. The verifier's re-run with another lexicon gives 0.404 against 0.157 (permuted keys) and 0.117 (shuffles): the +0.25 margin over the permuted keys is then 0.247, so the declared margin of 0.25 is not met in the re-run (it is met, at 0.294, in the contributor's pre-registered run).",
    "result": "worked"
   },
   {
@@ -149,28 +149,34 @@
   {
    "date": "2026-11-12",
    "kind": "reading",
-   "what": "Integration re-reading of the held-out images 030-031 at full size against the writer's table: eight of the 169 words the contributor classed read were misread (beholdt twice, read 'holdt'; 'for bestandig', read 'for Bøssen dig'; seer, read 'saae'; skeer, read 'skal'; Dem, read 'Den'; 'paa' supplied for a single sign p), so 161 of 179 words stood as delivered (89.9%). Also Maria written in full, 'ra' not on the page, Artilasia one word, Jom-fru and Kir-kegaard plain across line breaks, skjøn for '[?ssyon]'. After correction 172 of 176 words read, 1 supplied, 3 doubtful (Kabbe, karlegravet, søn); one reader with the key, not blind.",
+   "what": "Integration re-reading of the held-out images 030-031 at full size against the writer's table: eight of the 169 words the contributor classed read were misread (beholdt twice, read 'holdt'; 'for bestandig', read 'for Bøssen dig'; seer, read 'saae'; skeer, read 'skal'; Dem, read 'Den'; 'paa' supplied for a single sign p), so 161 of 179 words stood as delivered (89.9%). Also Maria written in full, 'ra' not on the page, Artilasia one word, Jom-fru and Kir-kegaard plain across line breaks, skjøn for '[?ssyon]'. After correction the pages hold 176 words: 130 certain, 42 probable, 1 supplied, 3 doubtful (Kabbe, karlegravet, søn). Strict share (certain only) 130 of 176 = 73.9%; with the probable words 172 of 176. One reader with the key, not blind.",
    "result": "partial"
   },
   {
    "date": "2026-11-12",
    "kind": "reading",
-   "what": "The nine first-session pages (003 R - 008 L; contributor 385 of 425 words at low resolution, 90.6%) re-read on the full-size images: complete text in reading.md Part 1; 437 of 447 words read (counted with cipher headings and each 'gange'), 1 supplied, 9 doubtful. Changed words include bløde (was flyde), denne Mand, svige (was [?værke]), træskelig bedrog, de[r]for vover. One reader with the key, not blind. The 136 pages of the second session were not re-read: no sign-level transcription exists for them.",
+   "what": "The nine first-session pages (003 R - 008 L; contributor 385 of 425 words at low resolution, 90.6%) re-read on the full-size images: complete text in reading.md Part 1; 459 words by the rule of the held-out pages (every cipher word singly, 'I' and 'Navnet' two words, each cipher 'gange' one; the first count, 447, did not follow it): 9 doubtful, 1 supplied, 449 without a doubt mark, 4 of them with one letter supplied. The re-reading was not graded certain or probable, so it gives no certain-only figure. Changed words include bløde (was flyde), denne Mand, svige (was [?værke]), træskelig bedrog, de[r]for vover. One reader with the key, not blind. The 136 pages of the second session were not re-read: no sign-level transcription exists for them.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Claims review by a second reader applied. The headline share is now certain words only on the held-out images: 130 of 176 = 73.9% (was 161 of 179 = 89.9%, which counted probable words; with probable words 172 of 176). outcome.fraction_read set to unknown so that no sample figure is shown as a share of the whole book. The nine first pages recounted by the rule of the held-out pages: 459 words (was 447), 449 without a doubt mark (was 437), 1 supplied, 9 doubtful; not graded certain or probable. The verifier's re-run margin of 0.247 is stated as not meeting the declared 0.25. The order of events of the held-out test is given as by the contributor's record.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "class": "read in part",
   "key": "recovered",
   "method": "key recovered from ciphertext-only",
-  "method_basis": "The key was found from guessed probable words (the trinitarian closing formula, 'gange' after the clear numeral 3, the cipher ordinals of the headings) and a blind annealing; no plaintext was at hand and the clear headings give only the subject. It was measured once on held-out images transcribed and hashed beforehand, and the writer's own alphabet table on image 091 left (a key in the volume, found afterwards by the contributor's record) gives the same values. An independent re-solution: Ferdinand Ohrt's unpublished decipherment is prior work, not consulted.",
+  "method_basis": "The key was found from guessed probable words (the trinitarian closing formula, 'gange' after the clear numeral 3, the cipher ordinals of the headings) and a blind annealing; no plaintext was at hand and the clear headings give only the subject. It was measured once on held-out images which, by the contributor's record, were transcribed and hashed beforehand, and the writer's own alphabet table on image 091 left (a key in the volume, found afterwards by the contributor's record) gives the same values. An independent re-solution: Ferdinand Ohrt's unpublished decipherment is prior work, not consulted.",
   "contribution": [
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.899,
+  "fraction_read": "unknown",
   "fraction_read_method": "measured",
-  "fraction_read_source": "Held-out images 030-031 checked word by word on the full-size image at the integration (12 Nov 2026): 161 of the contributor's 179 words stood as delivered = 89.9% (he classed 169 as read, 94.41%; eight of those were misread). After correction 172 of 176 words on these pages are read, and 437 of 447 on the nine first pages re-read at full size (one reader with the key, not blind). The other 136 pages (7,451 words) carry only the contributor's classification, 95.4% (whole book 95.1%), which cannot be re-derived: no sign-level transcription exists.",
+  "fraction_read_source": "No whole-book share is given (fraction_read unknown): 136 of the 148 pages have no sign-level transcription and carry only the contributor's classification (95.4%; whole book 95.1%, read = certain + probable), which cannot be re-derived. The measured sample is the two held-out images 030-031 (176 words after correction, about 2% of the book), checked word by word on the full-size image at the integration (12 Nov 2026): 130 certain, 42 probable, 1 supplied, 3 doubtful, so the strict share, certain words only, is 130 of 176 = 73.9% (the text entry's read_share). With the probable words: 172 of 176 (97.7%). Of the 179 words the contributor delivered for these pages, 169 classed certain or probable (94.41%), 161 stood on the image (89.9%). Probable here means a word whose signs give a period or irregular spelling, or whose word spacing or one sign is in doubt, read by the sense. Counting rule, the same for every figure of this target: each cipher word is one word ('I' and 'Navnet' are two; each cipher 'gange' is one); numerals and clear headings are not counted; cipher headings are. The nine first pages re-read at full size hold 459 words by that rule: 9 doubtful, 1 supplied, 449 without a doubt mark; that re-reading was not graded certain or probable.",
   "verification": [
    "statistical test",
    "key confirms",
@@ -180,7 +186,7 @@
    "date": "2026-11-11",
    "verdict": "pass",
    "file": "frozen/MESURE.out",
-   "notes": "Contributor's pre-registered single measurement (not docs/_validate.py): PROTOCOLE.md SHA-256 106f10c69168ee2aa1c5a1390c040351b512f40bb461b426f3984fd2292a7329, KEY.json 40bf4b2d..., scorer 530a86e5..., word list 5c295d99... (frozen/FREEZE.sha256); held-out RESERVE-p030.txt d56aef4d..., RESERVE-p031.txt d2d93503...; COV 0.4025 (C1 >= 0.40), permuted keys max 0.1089 (C2 +0.25), sign shuffles max 0.1038 (C3 +0.25), S met. Bias declared: the held-out portion was transcribed by an agent who knew the key; C1 narrowly met. Confirmed after the fact by the writer's alphabet table (image 091 left). Re-run by the verifier (12 Nov 2026) with an independent decoder and lexicon: cover 0.404, permuted keys max 0.157, sign shuffles max 0.117; the +0.25 margin over the permuted keys is 0.247 with that lexicon, a hair short, and 0.294 in the contributor's run. The table on 091 left was seen at full size and matches."
+   "notes": "Contributor's pre-registered single measurement (not docs/_validate.py): PROTOCOLE.md SHA-256 106f10c69168ee2aa1c5a1390c040351b512f40bb461b426f3984fd2292a7329, KEY.json 40bf4b2d..., scorer 530a86e5..., word list 5c295d99... (frozen/FREEZE.sha256); held-out RESERVE-p030.txt d56aef4d..., RESERVE-p031.txt d2d93503...; COV 0.4025 (C1 >= 0.40), permuted keys max 0.1089 (C2 +0.25), sign shuffles max 0.1038 (C3 +0.25), S met. Bias declared: the held-out portion was transcribed by an agent who knew the key; C1 narrowly met. Confirmed after the fact by the writer's alphabet table (image 091 left). Re-run by the verifier (12 Nov 2026) with an independent decoder and lexicon: cover 0.404, permuted keys max 0.157, sign shuffles max 0.117; the margin over the permuted keys is 0.247 with that lexicon, so the declared margin of 0.25 is not met in the re-run (it is met, at 0.294, in the contributor's pre-registered run). The table on 091 left was seen at full size and matches."
   },
   "provenance": "contributed",
   "credits": [
@@ -253,13 +259,13 @@
     "translation": "translation.md",
     "language": "da",
     "state": "read in part",
-    "read_share": 0.899,
-    "summary": "The working book of a Danish cunning man of Funen: about a hundred charms and recipes against bleeding, wounds, colic, toothache, fever and other ills; protection of cattle, horses, poultry, butter and milk against witchcraft; pests summoned to the Thing; guns bound and men made proof against shot; fire conjured; winning at cards; and a long series against thieves. The translation file is a summary table with a few charms in full. An earlier decipherment by Ferdinand Ohrt is recorded in the archive (not consulted).",
+    "read_share": 0.739,
+    "summary": "The working book of a Danish cunning man of Funen: about a hundred charms and recipes against bleeding, wounds, colic, toothache, fever and other ills; protection of cattle, horses, poultry, butter and milk against witchcraft; pests summoned to the Thing; guns bound and men made proof against shot; fire conjured; winning at cards; and a long series against thieves. The translation file is a summary table with a few charms in full. An earlier decipherment by Ferdinand Ohrt is recorded in the archive (not consulted). The share given below (74%) is for the two held-out images only, the one sample graded word by word on the page: 130 of their 176 words are certain. It is about 2% of the book and is not a figure for the whole book, which has none.",
     "reading_review": {
      "grade": "B",
      "by": "integration check (project), on the contributor's reading",
      "date": "2026-11-12",
-     "note": "Read as sentences against the full-size images for twelve pages only: the held-out images 030-031 (eight misread words corrected; 172 of 176 words now read) and the nine first pages 003 R - 008 L (437 of 447). There the charms construe as Danish of the 1850s: a sacred precedent, 'saasandt som ... saasandt skal ...', the trinitarian close, then directions for use. The other 136 pages were read through as text but not against the images: they construe in the same frames, with holes concentrated on 064 L and 010 R, and no sign-level transcription exists to check them. Grade B: coherent but raw (unpunctuated, 1850s spelling), and unverified for most of the book. The contributor's own review (11 Nov 2026) also gave B."
+     "note": "Read as sentences against the full-size images for twelve pages only: the held-out images 030-031 (eight misread words corrected; 130 of 176 words certain, 172 with the probable words) and the nine first pages 003 R - 008 L (449 of 459 words without a doubt mark, not graded certain or probable). There the charms construe as Danish of the 1850s: a sacred precedent, 'saasandt som ... saasandt skal ...', the trinitarian close, then directions for use. The other 136 pages were read through as text but not against the images: they construe in the same frames, with holes concentrated on 064 L and 010 R, and no sign-level transcription exists to check them. Grade B: coherent but raw (unpunctuated, 1850s spelling), and unverified for most of the book. The contributor's own review (11 Nov 2026) also gave B."
     }
    }
   ],

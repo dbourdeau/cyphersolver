@@ -1,7 +1,7 @@
 # sehested1657: Christoffer Sehested's cipher letters from Vienna, January-May 1657 (catalogue 2520, Rigsarkivet TKUA Kejseren, unit 260651)
 
 Status: read in part (integration check, 12 Nov 2026): 27 original letters deciphered with the key of the contemporary gloss; by the
-strict count 6,267 of 6,573 tokens (cipher words and nomenclator symbols) = **95.3%**, and 12 letters are under 95%, so the target is read in part
+strict count 6,268 of 6,574 tokens (cipher words and nomenclator symbols) = **95.3%**, and 12 letters are under 95%, so the target is read in part
 and the key is partial (see "Integration check" below). The contributor's figure (Brice Dudout, 11 Nov 2026) was 99.7%: 5,903 certain + 90 probable
 of 6,013 cipher words, nomenclator symbols not counted. Key: simple substitution of German in numbers, read on the interlinear
 decipherment of the time over img 132, checked on the clear of the time img 112 and tested once on held-out lines (img 145).
@@ -14,11 +14,14 @@ reading, write-up). Catalogue entry **2520** (TKUA sweep of 11 Nov 2026), whose 
 
 Copenhagen, Rigsarkivet, TKUA Kejseren (Østrig 46 b in Gigas's citation), unit 260651, img 108-172 of the online viewer:
 "Relationer fra Christoffer Sehested 1657". Christoffer Sehested of Ravnholt left Copenhagen in secret on 12 Dec. 1656 and kept his
-incognito ("baron van Hasselt") ten weeks in Vienna, negotiating a Danish-imperial alliance against Sweden with Kurz, Auersperg and
-the Spanish ambassador La Fuente. The unit holds his letters to Frederik III ("Sire") and to the chancellor Christen Thomesen Sehested
-("Monseigneur"), copies of his proposition to the Emperor and of a memorial to Kurz, cipher copies of five letters, clears of the time
-(img 112-113, 157 right-158 left, 169 right), interlinear decipherments (img 132, 136, 138, 140, 171) and 19th-century notes in Danish
-(img 124-125, 137, 138). The images were used for study only; none is included here.
+incognito ("baron van Hasselt") ten weeks in Vienna, negotiating a Danish-imperial alliance against Sweden with the prince of Auersperg and
+the Spanish ambassador La Fuente (the contributor's notes also named Kurz; no leaf seen here names him). The unit holds his letters to Frederik III ("Sire") and to the chancellor Christen Thomesen Sehested
+("Monseigneur"), copies of his proposition to the Emperor and of a memorial to Auersperg (sign X), cipher copies of five letters, clears of the time
+(img 112-113, 157 right-158 left, 169 right), a further clear leaf of the time on img 114-115 (a letter to the king, "Sire, es werden
+Ewer K. Mayst auss meinem von 17/27 dieses allergnedigst ersehen haben", written after 17/27 Jan.; per the sweep note, not matched to a
+cipher letter of the unit and not used here), interlinear decipherments (img 132, 136, 138, 140, 171) and 19th-century slips
+(img 124-125, which per the sweep note give the German text of L04 and its postscript with the signs left as signs; img 137, 138, not
+matched to a letter). The slips of img 124-125 were not compared with our L04. The images were used for study only; none is included here.
 
 ## System and key (`key.tsv`)
 
@@ -26,7 +29,10 @@ Numbers 2-96 for letters, separated by colons; a cross between words; 90 and 96 
 of capitals, Greek and doubled letters for persons, places and formulae, sometimes with a suffix in figures ([Ψ]:5:72 = allergnädigsten).
 The same key enciphers French in L27 (Prague, Oct. 1657). Nomenclator values: certain when a gloss or a clear of the time gives them
 (Λ, Φ, Σ, XX, ZZ, YY, X, aa, gg, E, G, W, m), probable when given by the sense or by one attestation (about 30), open otherwise (about 15).
-X is the vice-chancellor Kurz when masculine (the clear of the time img 157 right writes "H: von Kurtz" where L18 has [X]; Fridericia, from the Vienna protocols, gives the talk of 17 March to Auersperg) and "diversion" when feminine (gloss of img 171); perhaps two similar symbols.
+X is the prince of Auersperg when masculine: the clears of the time write "Fürst von Aursberg" at the three X of L01 (img 112 l. 5, img 113 ll. 4
+and 9-10) and "der F: von Auersp:" at the X of L18 (img 157 right l. 2); seen on the images, 12 Nov 2026 (the contributor read that place as
+"H: von Kurtz"). Fridericia, from the Vienna protocols, also gives the talk of 17 March to Auersperg. X is "diversion" when feminine (gloss of
+img 171; the clear img 157 right has "Diversion" at that place of L18); perhaps two similar symbols.
 
 ## Letters and count (reading.md, one line per letter; the contributor's count, cipher words only. The strict count is in the Integration check)
 
@@ -44,7 +50,7 @@ X is the vice-chancellor Kurz when masculine (the clear of the time img 157 righ
 | L10 | to the chancellor, Vienna 4/14 Mar. 1657 | img 139 d | 136 | 129 | 6 | 1 | 0 | 99.3% |
 | L11 | to the chancellor, Vienna 7/17 Mar. 1657 | img 140 d, 141 g | 166 | 165 | 1 | 0 | 0 | 100.0% |
 | L12 | to the king, March 1657 (pencil 7/3) | img 142 d, 143 g l. 1-2 | 136 | 135 | 0 | 1 | 0 | 99.3% |
-| L13 | memorial handed to Kurz, ?/9 Mar. 1657 | img 144 d, 145, 146 g | 764 | 754 | 8 | 2 | 0 | 99.7% |
+| L13 | memorial handed to Auersperg, ?/9 Mar. 1657 | img 144 d, 145, 146 g | 764 | 754 | 8 | 2 | 0 | 99.7% |
 | L14 | to the chancellor, Vienna 11/21 Mar. 1657 (with P.S.) | img 146 d | 110 | 107 | 2 | 0 | 1 | 99.1% |
 | L15 | "Monsieur", March 1657 (pencil 14/3) | img 149 d | 59 | 59 | 0 | 0 | 0 | 100.0% |
 | L16 | memoir to a prince ("Ewere fürstliche Gnaden"), 16/26 Mar. 1657 | img 152, 153 g | 326 | 319 | 6 | 1 | 0 | 99.7% |
@@ -87,11 +93,11 @@ Corrections made here:
 1. **Φ, not Ψ, on img 145 line 3** (`L13.145_g.03`): corrected in `transcription.txt` and `decryption.txt`; in `reading.md` the value
    "[Königl. Mt.]" there is no longer marked "prob.". The frozen held-out file `frozen/working/transcr/reserve_145.txt` keeps `[Ψ]`,
    because it is hashed.
-2. **The count.** The 99.7% is over spelled cipher words only. The letters also hold 560 nomenclator-symbol tokens: 364 whose value
+2. **The count.** The 99.7% is over spelled cipher words only. The letters also hold 561 nomenclator-symbol tokens (figures as recounted in the claims review below; first count 560, 364, 6,267 of 6,573): 365 whose value
    a gloss or a clear of the time gives, 152 whose value rests on the sense or on one attestation, 44 open. By the read bar as applied
    in this round (a word or group is read only if it is not a hole, not a guessed or restored word, and not a nomenclator value given
    by the sense alone), the count is the table below (`python strict_count.py reading.md`, which only prints). Overall
-   **6,267 of 6,573 tokens = 95.3%**; 12 letters are under 95% (lowest L05, 90.1%), so those 12 are read in part, the other 15 are
+   **6,268 of 6,574 tokens = 95.3%**; 12 letters are under 95% (lowest L05, 90.1%), so those 12 are read in part, the other 15 are
    read, and the target is **read in part**. `outcome.key` is partial; `outcome.codes_open` is filled (about 26 open symbol forms of
    about 64, 44 tokens).
 3. **Where the key came from.** The project's own sweep note of 11 Nov 2026
@@ -126,12 +132,12 @@ Corrections made here:
 | L05 | 153 | 147 | 4 | 2 | 8 | 6 | 5 | 172 | 90.1% | read in part |
 | L06 | 738 | 720 | 10 | 8 | 51 | 16 | 8 | 813 | 94.8% | read in part |
 | L07 | 542 | 527 | 13 | 2 | 19 | 6 | 3 | 570 | 95.8% | read |
-| L08 | 146 | 142 | 3 | 1 | 11 | 6 | 1 | 164 | 93.3% | read in part |
+| L08 | 146 | 142 | 3 | 1 | 10 | 7 | 1 | 164 | 92.7% | read in part |
 | L09 | 31 | 29 | 2 | 0 | 16 | 1 | 1 | 49 | 91.8% | read in part |
 | L10 | 136 | 129 | 6 | 1 | 14 | 3 | 0 | 153 | 93.5% | read in part |
 | L11 | 166 | 165 | 1 | 0 | 20 | 7 | 1 | 194 | 95.4% | read |
 | L12 | 136 | 135 | 0 | 1 | 12 | 5 | 5 | 158 | 93.0% | read in part |
-| L13 | 764 | 754 | 8 | 2 | 25 | 13 | 3 | 805 | 96.8% | read |
+| L13 | 764 | 754 | 8 | 2 | 26 | 13 | 3 | 806 | 96.8% | read |
 | L14 | 110 | 107 | 2 | 1 | 11 | 2 | 2 | 125 | 94.4% | read in part |
 | L15 | 59 | 59 | 0 | 0 | 4 | 2 | 0 | 65 | 96.9% | read |
 | L16 | 326 | 319 | 6 | 1 | 14 | 7 | 2 | 349 | 95.4% | read |
@@ -139,20 +145,60 @@ Corrections made here:
 | L18 | 708 | 703 | 5 | 0 | 41 | 7 | 2 | 758 | 98.2% | read |
 | L19 | 106 | 103 | 3 | 0 | 4 | 2 | 0 | 112 | 95.5% | read |
 | L20 | 57 | 56 | 1 | 0 | 4 | 4 | 0 | 65 | 92.3% | read in part |
-| L21 | 58 | 57 | 1 | 0 | 0 | 1 | 0 | 59 | 96.6% | read |
+| L21 | 58 | 57 | 1 | 0 | 1 | 0 | 0 | 59 | 98.3% | read |
 | L22 | 317 | 313 | 4 | 0 | 10 | 8 | 0 | 335 | 96.4% | read |
 | L23 | 68 | 67 | 1 | 0 | 9 | 3 | 2 | 82 | 92.7% | read in part |
 | L24 | 92 | 92 | 0 | 0 | 5 | 0 | 1 | 98 | 99.0% | read |
 | L25 | 106 | 106 | 0 | 0 | 15 | 5 | 0 | 126 | 96.0% | read |
 | L26 | 41 | 40 | 1 | 0 | 6 | 0 | 0 | 47 | 97.9% | read |
 | L27 | 40 | 40 | 0 | 0 | 1 | 1 | 0 | 42 | 97.6% | read |
-| all | 6013 | 5903 | 90 | 20 | 364 | 152 | 44 | 6573 | 95.3% | read in part |
+| all | 6013 | 5903 | 90 | 20 | 365 | 152 | 44 | 6574 | 95.3% | read in part |
+
+## Claims review by a second reader (12 Nov 2026)
+
+An independent reader checked the page against these notes, the profile and the images. What changed:
+
+1. **X is Auersperg, not Kurz.** The contributor read the clear copy of L18 (img 157 right) as "H: von Kurtz". The images were fetched again
+   (api.rigsarkivet.dk, ids 48703448, 48703403, 48703404, 48703423, 48703449, 48703460) and read here:
+   - img 157 right, lines 1-3: "Auff Ihrer Königl: May: allergnädigsten befehl vom 11. Februarii hatt mihr der F: von Auersp: eine weitlaufftige
+     deduction von Ihrer Keis: May: gegen affection, im vbrigen aber in substantia dieses angedeutet". The name does not begin with the K of
+     "Königl:" and "Keis:" on the same lines; it begins "Au" with the u-hook, as "auffbrechen" lower on the page, and ends "sp:". The letter
+     before "von" is the F of "Feldt Marschalck" lower on the page, not the H of "Hatsfeldt".
+   - img 112 line 5 and img 113 lines 4 and 9-10 (clear of L01, the names written into gaps): "zuerinneren das Fürst von Aursberg ob er sich zwar
+     in der erste sehr befrembdet", "doch meinet Furst von Aursberg das es ihme von der porten", "der Fürst von Aursberg tuht mir anitzo grosse
+     caressen". These are the three X of L01.
+   - img 132 right, over the X of line 1: "Hertzog von S..." (a ducal title; the last word was not read with certainty, Schlesien or Sachsen).
+     The sweep note of 11 Nov 2026 had said "X glossed with a name of a prince" and had read img 157 as "der F. von Auersp."
+   - "Kurtz" was looked for on img 112-113, 157 right-158 left and 169 right and not found.
+   `key.tsv`, `reading.md`, `letters/*`, `translation.md`, the headings of `transcription.txt` and `decryption.txt`, and the profile now have
+   Auersperg wherever they had Kurz for X. X stays a certain value; only the name changed. Fridericia and the clear copies now agree, so the
+   gap "Kurz or Auersperg" is closed.
+2. **Two X were in the wrong sense.** L08 "wegen der [X] und wurklicher cooperirung" is feminine: now `[diversion, prob.]` (it had been given
+   the person's name and counted as attested). L21 "als were der [X] intentioniret so balt ehr ..." is a person: now `[Auersperg]` (it had been
+   `[diversion, prob.]`).
+3. **`[befehls]` in L13** is `[gg]:96` in the transcription, the attested sign gg (Befehl) with a suffix s. `strict_count.py` counted it neither
+   as a symbol nor as a restored word. It is now written `[befehl]s` and counted as an attested symbol.
+4. **Recount** (`python strict_count.py reading.md`): 6,013 words, 365 attested symbol tokens, 152 by the sense or one attestation, 44 open:
+   **6,268 of 6,574 tokens = 95.3%** (was 6,267 of 6,573). L08 92.7% (was 93.3%), L13 780 of 806 = 96.8% (was 779 of 805), L21 98.3% (was
+   96.6%). The same 12 letters are under 95%. Class, key state and `codes_open` are unchanged.
+5. **Leaves not used.** A further clear leaf of the time on img 114-115 (a letter to the king) is not matched to a cipher letter, and the
+   19th-century slips on img 124-125 give German text of L04 (both per the sweep note). "The other letters have no plaintext with them" was
+   wrong for L04 and is corrected on the page; both are in Remaining gaps.
+6. **Wording.** The 152 tokens have a value "from the sense or a single attestation", not "from the sense only". The profile's `method_basis`
+   says plainly that the key was extended, not recovered; the method category is unchanged.
+
+Seen on the same images and **not** applied to the count: the clear img 112 writes values at several signs that the key lists as probable
+("H. Jochim Gerstorff" over the sign a, "Marches de fuente" for Y, "schreiben" for ii, "Keiser" for A), and it has "Die armee ins gesamt" where our
+L01 reads "die [Frankreich, prob.] ins gesamt"; the clear img 169 has "alliance, interesse vnd maximen" where our L25 reads "[alliance] [befehl] und
+maximen". These were read at reduced size only. A pass of the three clears against L01, L18 and L25, sign by sign, would move several
+values from probable to attested and correct a few; it is the next step for the signs.
 
 ## Remaining gaps
 - 152 nomenclator tokens whose value rests on the sense or one attestation (about 25 symbols) and 44 tokens of open symbols (b, H, bb, cc, Γ, EE, O, R, M, N, Q, F, J, ∂, ww, yy ...) - blocker: no-key-material; no nomenclator table in the unit, on DECODE or in print, and the glosses and clears of the time give only 13 values
 - "Christoffer Sehested keys 1650-70" (Rigsarkivet, Daisy heid 1449582), possibly the nomenclator table, not tested - blocker: needs-physical-access; listed by the archive, not scanned on Arkivalieronline
 - 90 probable words, 19 restored words, 1 unresolved word (copeilig, L14) - blocker: illegible; blots, binding and figures that give a non-word; three seen on img 110 stand as transcribed, the rest not rechecked on the film
-- L03 date (read 28/7, probably 7/17 Feb.), and Kurz or Auersperg for the talk of 17 March - blocker: illegible; the clear of the time and Fridericia's Vienna protocols disagree, not settled from the film
+- L03 date (read 28/7, probably 7/17 Feb.) - blocker: illegible; the figures on the page and Gigas's date disagree, not settled from the film
+- the clear leaf of the time img 114-115 (a letter to the king) is not matched to a cipher letter, and the 19th-century slips img 124-125 (German text of L04, per the sweep note) are not compared with our L04 - blocker: no-key-material; neither was transcribed by the contributor, and the sweep found no cipher original for img 114-115 in the unit
 - the contributor's exact C1/C2 figures of the held-out test are not re-run - blocker: no-key-material; the model pickle and the Merian corpus were not sent, only their hashes
 
 Also owed, and not a gap in the text: a full English translation of 25 letters, and a check of the transcription against the images by a person.
@@ -173,7 +219,7 @@ Also owed, and not a gap in the text: a full English translation of 25 letters, 
   decipherment of Sehested's letters "i sin Tid meddelt", i.e. private and never printed. Gigas quotes one German phrase of the cipher
   ("die Gemüther alhie nicht wenig ermunteret", L03) and one of a letter to Gersdorf that is not in this unit.
 - DECODE, Tomokiyo, Lasry: nothing (11 Nov 2026). What is new here: the German text of the cipher passages, the key, and details
-  not in the summaries (e.g. L13: Rákóczi, Pomerania and Bremen as Swedish bases, "spoliis des armen Teutschlandes"; L18: Kurz's
+  not in the summaries (e.g. L13: Rákóczi, Pomerania and Bremen as Swedish bases, "spoliis des armen Teutschlandes"; L18: Auersperg's
   "multa fiunt et cogitantur quae non dicuntur"; L22: the plan to send an imperial councillor, Cridel or Lützow, secretly to Denmark).
 
 ## Validation (`validation.txt`)
@@ -195,8 +241,8 @@ transcription are in `frozen/` (the letter model pickle and its Wikisource corpu
 
 - About 20 nomenclator symbols (b, H, bb, cc, Γ, EE, O, R, M, N, Q, F, J, ∂, ww ...).
 - 19 restored words (blots, binding, numbers outside the key) and the doubtful date of L03 (read 28/7, probably 7/17 Feb.).
-- Kurz or Auersperg: Fridericia (1894), from the Vienna protocols, gives the talk of 17 March to Auersperg; the clear of the
-  time (img 157 right) and our reading of L18 give Kurz ("H: von Kurtz"). Not settled here.
+- Kurz or Auersperg: settled on 12 Nov 2026, see "Claims review by a second reader". The clears of the time write Auersperg, as
+  Fridericia (1894) has it from the Vienna protocols.
 - No human has checked the transcription or the reading against the images.
 
 ## Credits
