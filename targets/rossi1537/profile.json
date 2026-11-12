@@ -1,0 +1,351 @@
+{
+  "schema_version": 1,
+  "target": "rossi1537",
+  "title": "Pier Maria Rossi di San Secondo to Ferrante Gonzaga, San Secondo, 4 and 8 Nov 1537 (Biblioteca Estense, Campori R cc. 31-34; catalogue 1564, the Rossi letters): read in part",
+  "documents": [
+    {
+      "id": "A",
+      "read": "read in part",
+      "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera R, Rossi (conte di San Secondo), cc. 31-32",
+      "date": "4 Nov 1537",
+      "year": 1537,
+      "country": "Italy",
+      "route": "Pier Maria Rossi, count of San Secondo (San Secondo) to Ferrante Gonzaga, viceroy of Sicily",
+      "places": {
+        "from": "San Secondo",
+        "to": "Messina"
+      },
+      "language": "Italian",
+      "pages": 2,
+      "cleartext_in_document": "separate passages",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment on any leaf of cc. 31-34 (seen on the images)."
+      },
+      "length": {
+        "tokens": 1613,
+        "distinct": 29,
+        "unit": "symbols",
+        "measured": false,
+        "file": "transcription_A.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Estense Digital Library IIIF images (edl-jarvis.cultura.gov.it), record 2d0df6d1-9d12-4da0-90ed-8de7d910b63e",
+        "image_quality": "good",
+        "notes": "Counted by scripts/build.py (units.tsv), not by docs/_check_profile.py --measure, so measured is false. 36 cipher lines: c. 31r L01-L22 (910 units), c. 31v V01-V14 (703 units); a clear close follows on c. 31v. First transcription by one reader, frozen before any decoding; it codes two tall-sign shapes (d and t) as one sign P. A blind second transcription by another session (transcription_blind.txt) agrees on 2,247 of 2,363 aligned units over both letters. The address leaf is to Ferrante Gonzaga, viceroy of Sicily, 'in Messina o dove sera'."
+      }
+    },
+    {
+      "id": "B",
+      "read": "read in part",
+      "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera R, Rossi (conte di San Secondo), cc. 33-34",
+      "date": "8 Nov 1537",
+      "year": 1537,
+      "country": "Italy",
+      "route": "Pier Maria Rossi, count of San Secondo (San Secondo) to Ferrante Gonzaga, viceroy of Sicily",
+      "places": {
+        "from": "San Secondo",
+        "to": "Messina"
+      },
+      "language": "Italian",
+      "pages": 1,
+      "cleartext_in_document": "separate passages",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment on any leaf of cc. 31-34 (seen on the images)."
+      },
+      "length": {
+        "tokens": 755,
+        "distinct": 23,
+        "unit": "symbols",
+        "measured": false,
+        "file": "transcription_B.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Estense Digital Library IIIF images (edl-jarvis.cultura.gov.it), record 4a838739-0cb9-409f-93e5-c1076143ddb3",
+        "image_quality": "good",
+        "notes": "Counted by scripts/build.py (units.tsv); measured is false. 17 cipher lines on c. 33r (755 units), then a clear close. Same readers and method as letter A."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "homophonic"
+    ],
+    "summary": "Simple substitution on a symbol alphabet of 25 signs for 20 letters, with homophones for a, i, c, g and u, no nulls and no code groups seen. Roman numerals and one Latin word are left in clear inside the cipher. Two of the letters, d and t, are tall signs that differ only in the head: a hook closed onto the stem for d, an open hat over a separate tick for t.",
+    "symbol_kind": "symbols",
+    "distinct_symbols": 28,
+    "diacritics": {
+      "used": false
+    },
+    "homophones": {
+      "used": true,
+      "max_per_vowel": 3,
+      "max_per_consonant": 2,
+      "per_letter": {
+        "a": 3,
+        "i": 3,
+        "u": 2,
+        "c": 2,
+        "g": 2
+      }
+    },
+    "nomenclator": {
+      "present": false
+    },
+    "nulls": {
+      "present": false
+    },
+    "key_order": "random",
+    "word_division": "partial",
+    "doubled_letters": "written once in most words (the writer's spelling); tt as two ticks under one hat",
+    "notes": "distinct_symbols counts the sign codes of the first transcription without the blot mark: 25 with a value, 3 without (A, the apostrophe mark, the bare tick). The first transcription gives the d and t shapes one code, P (256 units), so the transcription as it stands is polyphonic at that sign; the cipher is not. Told apart by shape, a second look that knew the hypothesis and a blind test on crops agree on 178 of 215 P signs (82.8%). In practice d or t is chosen from context. The sign # is a for the small form and q for the tall form before u. Gaps on the sheet often, not always, fall at word ends."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "no",
+      "where": "None found; priority not established. Checked: this repository (catalogue row 1564 open, no target folder), the leaves themselves (no decipherment), the Estense records, and six web searches of 11 Nov 2026. Not checked: Archivio Gonzaga, Mantua, b. 1911; Archivio di Stato di Parma, Famiglia Rossi bb. 8-12; the Rossi di San Secondo archive (Lincei/Corsiniana) series I cart. 26; the Olschki volumes on the Gonzaga papers; the Guicciardini and Aretino correspondence editions.",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": [
+      "images"
+    ],
+    "attack": "ciphertext-only",
+    "human_role": "Malcolm McBratney directed the work, set the rules (every attempt recorded, a transcription frozen before decoding, a blind second transcription, shuffled-key and null controls, a blind shape test, no claim without its check) and sent the result; Claude sessions picked the letters from the catalogue, transcribed, solved, read and checked. No reading by a person without AI.",
+    "tools": [
+      "own Python annealer with Italian quadgrams (homophonic substitution)",
+      "shuffled-key baseline, 5,000 keys; frequency-preserving permutation controls",
+      "per-unit counter (scripts/build.py, standard library)",
+      "Estense IIIF images: 1,024 px tiles stitched at full resolution, line strips and crops"
+    ],
+    "models": [
+      "Claude (Anthropic), several sessions of 11-12 Nov 2026 (model ids not recorded)",
+      "claude-fable-5-2 (session of 12 Nov 2026 that prepared this folder)"
+    ],
+    "sessions": 6,
+    "first_date": "2026-11-11",
+    "last_date": "2026-11-12"
+  },
+  "solution": [
+    {
+      "date": "2026-11-11",
+      "kind": "transcription",
+      "what": "First transcription of cc. 31r, 31v and 33r from the IIIF images by one reader, frozen (hashes recorded) before any decoding: 53 lines, 2,368 cipher units, 28 sign codes. It codes the d and t shapes as one sign.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "control",
+      "technique": [
+        "simulated annealing"
+      ],
+      "what": "Own annealer tested on a synthetic Italian text of 904 characters with d and t merged and homophones: 86.5% of letters recovered.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "solver",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring"
+      ],
+      "what": "Annealer with Italian quadgrams on the frozen transcription, six restarts of 50,000 steps: -4.227 per character and continuous Italian ('che Pinarolo et Turino sono socorsi et dodici pezi de artiglieria'). No crib, no gloss.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "reading",
+      "technique": [
+        "manual reconstruction",
+        "contextual inference"
+      ],
+      "what": "Key table completed by reading, the reading aligned unit by unit to the frozen transcription. The sign P read d 89 times and t 152 times: two shapes under one code.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "control",
+      "technique": [
+        "statistical test",
+        "language-model scoring"
+      ],
+      "what": "Key-only decryption against 5,000 shuffled keys: whole text -4.319 against a best of -5.713; letter A -4.328 (best -5.745); letter B -4.295 (best -5.561); none of the 5,000 as good. Letter B with a key voted from letter A's reading only: -4.314 against a best of -5.644.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "solver",
+      "technique": [
+        "simulated annealing"
+      ],
+      "what": "Held-out variants: an annealer key fitted on letter A alone reads 82.4% of letter B's units (it merges rare letters); the same with a letter-frequency penalty reads 62.8% and was dropped.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "verification",
+      "technique": [
+        "other"
+      ],
+      "what": "Blind second transcription of all 53 lines by another session that opened only the page images: 2,247 of 2,363 aligned units agree with the first (95.09%). It did not split d from t either.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "verification",
+      "technique": [
+        "manual reconstruction"
+      ],
+      "what": "Second look at every tall sign read d (89): 79 have the closed hook, 4 the t shape, 6 undecided or leaning. Not blind: the reader knew the hypothesis. Consensus count 2,247 of 2,368 units (94.89%).",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "control",
+      "technique": [
+        "simulated annealing",
+        "statistical test"
+      ],
+      "what": "The annealer on five frequency-preserving permutations of the cipher stream: all five end at -4.610 per character (a degenerate key), against -4.227 for the real stream. With the letter budget limited: real -4.230, three controls -4.971 to -4.983.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "other"
+      ],
+      "what": "Blind shape test: the 358 tall signs cut out under random ids and classed by a reader who saw only the crops. Against the second look it agrees on 178 of 215 P signs (82.8%). With the blind classes in place of the second look the count is 2,204 of 2,368 units (93.07%).",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "reading",
+      "technique": [
+        "manual reconstruction",
+        "contextual inference"
+      ],
+      "what": "For this folder: both letters written out in full as sentences with every hole in place, the clear closes read from the image, five unread places looked at again on the image (three new doubtful words, no hole closed).",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "literature search",
+      "what": "Six web searches for an edition or decipherment of the letters; the repository and the Estense records. Nothing found. The Mantua and Parma archives and the printed Gonzaga literature were not searched in full text.",
+      "result": "partial"
+    }
+  ],
+  "outcome": {
+    "class": "read in part",
+    "key": "partial",
+    "method": "key recovered from ciphertext-only",
+    "method_basis": "An annealer with Italian quadgrams on the frozen first transcription gave continuous Italian without any crib; the leaves carry no decipherment. The key was then completed by reading.",
+    "contribution": [
+      "transcription",
+      "key recovered"
+    ],
+    "fraction_read_method": "measured",
+    "fraction_read_source": "units.tsv and counts.txt (scripts/build.py): 2,368 cipher units. With d and t taken from the blind shape test, 2,204 units give the letter the reading takes (93.07%); with the non-blind second look, 2,247 (94.89%); with the key alone and P printed t, 2,161 (91.26%). 73 units are unread.",
+    "fraction_read": 0.931,
+    "verification": [
+      "key confirms",
+      "historical consistency"
+    ],
+    "provenance": "contributed",
+    "credits": [
+      {
+        "who": "mcbratney",
+        "role": "solution",
+        "note": "catalogue 1564, the Rossi letters of 4 and 8 Nov 1537: key and reading, with Claude; issue #428",
+        "date": "2026-11-11",
+        "source": "https://github.com/dbourdeau/cyphersolver/issues/428"
+      },
+      {
+        "who": "mcbratney",
+        "role": "transcription",
+        "note": "cc. 31r, 31v and 33r twice (one blind), from the Estense images, with Claude",
+        "date": "2026-11-11"
+      }
+    ],
+    "gaps": [
+      {
+        "item": "d and t: one transcription code (P) for two shapes; a blind shape test agrees with the non-blind look on 82.8% of them",
+        "blocker": "illegible",
+        "detail": "256 units. In the reading d or t is taken from context. A person reading the heads on the original, or a re-transcription that splits the two shapes blind, would settle it."
+      },
+      {
+        "item": "73 units unread in 16 places",
+        "blocker": "illegible",
+        "detail": "holes.md lists them: L05 (4), L08 (9), L17 (11, a name before 'veneciano'), L21 (8), V03 (6), B12 (11, a place after 'Castel'), B16-B17 (14) and single signs."
+      },
+      {
+        "item": "Three signs without a value: A (4 with a top bar, twice), the apostrophe mark (twice), the bare tick (twice)",
+        "blocker": "too-short"
+      },
+      {
+        "item": "Who Astolfo, Zopo, the marchese, the gran Meo and Vicencio veneciano are",
+        "blocker": "not-attempted",
+        "detail": "Astolfo = Alfonso d'Avalos, marchese del Vasto, is our inference from the retreat and from Pinerolo and Turin; unverified."
+      },
+      {
+        "item": "Prior art not checked in the Mantua and Parma archives or the printed Gonzaga literature",
+        "blocker": "not-attempted"
+      }
+    ],
+    "texts": [
+      {
+        "doc": "A",
+        "label": "Rossi to Ferrante Gonzaga, San Secondo, 4 Nov 1537, cc. 31r-31v",
+        "transcription": [
+          "transcription_A.txt",
+          "transcription_blind.txt"
+        ],
+        "decryption": "decryption_A.txt",
+        "reading": "reading_A.md",
+        "translation": "translation_A.md",
+        "language": "it",
+        "state": "read in part",
+        "read_share": 0.937,
+        "summary": "Written after supper and, the count says, a good deal of wine. He mocks an Imperial commander he calls Astolfo, who had announced all over Italy that he would fight the French and has instead retreated twenty miles, with forty to follow. Cesare Pallavicino has ridden to the Marquis to see the retreat. He recalls a departure from Genoa the December before, and excuses his free speech by the wine and by not having to deal with Covos.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (the session that prepared these files). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
+          "date": "2026-11-12",
+          "note": "Read as sentences against the translation. The letter runs as connected, jocular Italian in the writer's north-Italian spelling; the verso is close to clean. The recto has the holes: two unread groups in one sentence (L08), an unread name (L17), an unread phrase (L21), and several words whose letters are read but whose sense is doubtful ('verna fra', 'com a vano', 'tale voche')."
+        },
+        "note": "read_share 0.937 is our count of the README word rule on reading_A.md (344 words, 23 holes): unread groups, doubtful words and every word with a supplied letter count as holes. By cipher units letter A is 92.19% (blind d/t) to 94.42% (non-blind d/t). transcription_blind.txt is the blind second transcription of both letters, in its own sign names (transcription_blind_signs.tsv)."
+      },
+      {
+        "doc": "B",
+        "label": "Rossi to Ferrante Gonzaga, San Secondo, 8 Nov 1537, c. 33r",
+        "transcription": [
+          "transcription_B.txt",
+          "transcription_blind.txt"
+        ],
+        "decryption": "decryption_B.txt",
+        "reading": "reading_B.md",
+        "translation": "translation_B.md",
+        "language": "it",
+        "state": "read in part",
+        "read_share": 0.928,
+        "summary": "Four days later. The second retreat of 'this coward Astolfo' was forty miles as foretold, with twelve guns lost; Pinerolo and Turin are relieved; there is no money. Men from Mirandola have raided the Cremonese and sacked Piadena and another place. He breaks off to keep company with 'your prince of Luzara', who must be put to bed after supper.",
+        "reading_review": {
+          "grade": "A",
+          "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (the session that prepared these files). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
+          "date": "2026-11-12",
+          "note": "Read as sentences against the translation. Coherent throughout. Holes: a place-name after 'Castel', the end of the last sentence but one ('non mi lassa ... com[...]gie'), one clause whose words are doubtful ('per le valli meglio la comodita'), and three supplied letters."
+        },
+        "note": "read_share 0.928 is our count of the README word rule on reading_B.md (154 words, 12 holes). By cipher units letter B is 94.97% (blind d/t) to 95.89% (non-blind d/t)."
+      }
+    ],
+    "key_file": "key.tsv",
+    "notes": "Filed as read in part. By cipher units the two letters are 93.07% read with d and t taken from the blind shape test and 94.89% with the non-blind second look; by words 0.937 and 0.928. The d/t point is the main limit: the first transcription has one code for both shapes, and the blind test shows the shapes can be told apart only about four times in five, so the reading chooses d or t from context. The shuffled-key and null controls are reported in NOTES.md from our own scripts; docs/_validate.py was not run and no validation block is claimed. The repository's checker scripts were not run by the contributor; the checks were verified by reading them (PR description). The contributor id mcbratney is added to contributors.json by pull request 445 (muzio1550), not by this one."
+  }
+}
