@@ -4724,6 +4724,21 @@
    "by": "",
    "year": 1912,
    "note": "The public four-digit code of the Chinese telegraphs, one number for each character, used here without encipherment. Table taken from the Unicode Unihan database (kTaiwanTelegraph and kMainlandTelegraph); the codes used are in targets/peking1912/key.tsv and targets/nanking1930/key.tsv. The same table reads the 20 plain telegrams of targets/ctcplain1913."
+  },
+  {
+   "id": "k-dudout-klogesoren1858",
+   "label": "Kloge Søren's sign alphabet (his Cyprianus, c. 1858), recovered by Brice Dudout and matching the writer's own table",
+   "kind": "scholar's key",
+   "by": "Brice Dudout (with AI agents)",
+   "year": 1858,
+   "found": 2026,
+   "note": "One sign per Danish letter, word spaces kept; t and f share the cross, o and ø the dots, i and j the hook. Recovered from the cipher text of the first pages and measured once on held-out images 030-031; the writer's own table of 26 signs on image 091 left of the same volume gives the same values (targets/klogesoren1858/key.tsv).",
+   "image": {
+    "src": "klogesoren1858_table.jpg",
+    "credit": "Det Kgl. Bibliotek, Dansk Folkemindesamling, DFS 1997/020, image 091 left, via KB Digitale samlinger",
+    "caption": "The writer's own table of the alphabet, a to ø in three rows",
+    "page": "klogesoren1858.html"
+   }
   }
  ],
  "links": [
@@ -7612,6 +7627,12 @@
    "target": "nanking1930",
    "how": "read unchanged",
    "note": "plain code in four-digit groups; 221 of 230 codes give the character as written, six emended by one digit, three unresolved"
+  },
+  {
+   "key": "k-dudout-klogesoren1858",
+   "target": "klogesoren1858",
+   "how": "rebuilt from",
+   "note": "recovered from the cipher text of images 003-007 by guessed probable words and a blind annealing, frozen and measured on held-out images 030-031; confirmed by the writer's table on image 091 left"
   }
  ],
  "sources": [
