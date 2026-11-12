@@ -35,7 +35,7 @@
     "by": "llm from images",
     "source": "PARES images of OSUNA,C.3456,D.107 (description 6449375); images not reproduced",
     "image_quality": "good",
-    "notes": "Transcription v1: sign by sign by AI agents on enlarged strips (four passes, 28 Oct 2026), with doubtful groups noted a/b; frozen before any key existed. No human palaeographer checked it. Most of the 19 restorations of pp. 1-4 are one-digit confusions of this hand (2/3/7 in the tens, 1/2, 3/4, 6/8 in the units)."
+    "notes": "Transcription v1: sign by sign by AI agents on enlarged strips (four passes, 28 Oct 2026), with doubtful groups noted a/b; frozen before any key existed. No human palaeographer checked it. Most of the 19 restorations of pp. 1-4 are one-digit confusions of this hand (2/3/7 in the tens, 1/2, 3/4, 6/8 in the units). A blind re-reading on the images by Brice Dudout (11 Nov 2026) confirmed 12 of the corrected digits; for 6 others the image shows the digit of transcription v1 (probable cipher-clerk error). transcription.txt stays v1."
    }
   }
  ],
@@ -75,13 +75,13 @@
    "images"
   ],
   "attack": "ciphertext-only",
-  "human_role": "Brice Dudout chose the target and set the rules (page 5 held out from the start; protocol, calibration and thresholds hashed before page 5 was decoded; one measurement). AI agents transcribed; an earlier series of agent attempts (homophonic and nomenclator solvers, cribs) failed; the key was then proposed by Claude Fable 5.2 in one API run on pages 1-4; Claude Opus 5.5 agents measured, read page 5 and wrote up. No human palaeographer checked the transcription or the reading.",
+  "human_role": "Brice Dudout chose the target and set the rules (page 5 held out from the start; protocol, calibration and thresholds hashed before page 5 was decoded; one measurement). AI agents transcribed; an earlier series of agent attempts (homophonic and nomenclator solvers, cribs) failed; the key was then proposed by Claude Fable 5.2 in one API run on pages 1-4; Claude Opus 5.5 agents measured, read page 5 and wrote up. On 11 Nov 2026 Brice Dudout re-read on the images, blind, the doubtful digit of 19 corrected groups (reference shapes in random order, two controls, integration rule hashed before); otherwise no human checked the transcription or the reading, and no palaeographer.",
   "models": [
    "Claude Fable 5.2 (Anthropic), one API run on pages 1-4 (key proposal and reading of pp. 1-4)",
-   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout (transcription, validation, reading of p. 5, write-up)"
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout (transcription, validation, reading of p. 5, write-up, the blind re-reading sheet and its integration)"
   ],
   "first_date": "2026-10-27",
-  "last_date": "2026-11-11"
+  "last_date": "2026-11-12"
  },
  "solution": [
   {
@@ -149,23 +149,45 @@
    "kind": "verification",
    "what": "Retry at integration, on the texts only (the PARES images answered HTTP 429 to the integrating session): each of the 21 restored words checked against the frozen transcription and key. The 19 of pp. 1-4 are those of frozen/EMENDATIONS.tsv, hashed before page 5 was decoded; 3 of them take the transcription's own second reading (1.17 22/27, 3.20 243/23, 4.19 68/67), 1 supplies an omitted group, 15 change one digit (74 for 34 three times, 24 for 34 twice); on p. 5, 47 lies outside the key and 26 is read as 76. None contradicts a certain letter; none can be confirmed without the images, so all 21 stay restored.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Blind re-reading on the PARES images by Brice Dudout of the doubtful digit of 19 corrected groups (each shown with two reference shapes taken from certain words of the letter, in random order, no value or gloss; 2 control questions with known answers, both answered as expected; integration rule hashed before the sheet was opened, SHA-256 b61a4fd7446559b170195e52c46cb8a83b4834f01e17565350137fba5dfe3adf; answers SHA-256 c692c679177bdabd9cd9b80d22018233ade6b89b80eedd90b395aa94f0c46ee6; frozen/BLIND-REREADING.md). 12 corrections confirmed, so 12 words pass from restored to certain (il 1.01, atacatto 1.16, lontano and miglia 1.21, perche 2.13, risolutione 3.19, al and Signor 4.02, al 4.04, mandero 4.11, termini 4.17, oferte 5.05); 6 images match transcription v1 (still restored, probable cipher-clerk error); 1 undecided (quando 1.12); di 1.06 and lunghezza 5.02 not on the sheet. Recount (frozen/v2/decompte_v2.out): 390 certain, 27 probable, 9 restored, 5 unresolved of 431 = 417/431 = 96.8%. One reader only.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Integration of PR #406: frozen/v2/decompte_v2.py re-run (same output as decompte_v2.out, 390 / 27 / 9 / 5 of 431; the script differs from frozen/scripts/decompte.py by one path line); frozen/v2/lecture-v2/ differs from the frozen readings by the 12 restoration marks only; frozen/v2/SHA256SUMS 4 of 4; a second decoder written from key.tsv reproduces decryption.txt on 93 of 93 lines. Class set back from 'read' to 'read in part': the README read bar does not count the 21 nomenclator values given by the sense alone (107 x6, 121 x5, 126 x3, 114 x3, 101 x2, 100, 108), so 396/431 = 91.9%; 417/431 = 96.8% is the contributor's count. Not checkable: the hashes of the rule and the answers (files not in the repository) and the images (PARES HTTP 429).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Comparison with the independent recovery reported by Malcolm McBratney in issue #421 (own transcription, key, decryption and reading; texts in the issue, not copied). Key: all 71 two-digit letter and syllable values identical to key.tsv (47 = z, 64 = 97 = che, 98 = chi and the unattested 28, 30, 35 included); codes agree on 100, 101, 108, 114, 121, 126 and on the guesses 116 and 136; 107 differs (his Duca di Modena?, here Gran Duca). Transcription: 93 lines and 1,412 tokens in both, 1,393 agree with the first reading here (98.65%); of the 19 that differ 5 equal the b-alternative here and in 6 he emends back to the value here. A decoder written from his key reproduces his 93 decryption lines. At 7 of the 12 places confirmed by the blind sheet his transcription has the corrected digit; at 5 (atacatto 1.17, miglia 2.01, perche 2.13, al 4.04, Signor 4.04) it has the v1 digit. None of the 9 restored words or 5 open codes is settled; he reads confine (66) where the transcription here has confino (68) at 1.22. The independence timeline rests on his own file clocks and is not checkable from the repository.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "class": "read in part",
-  "key": "recovered",
+  "key": "partial",
   "method": "key recovered from ciphertext-only",
   "method_basis": "Key proposed by Claude Fable 5.2 from pages 1-4 alone (no clear of the time, no parallel text), frozen, and validated once on page 5, held out from the start and never seen by the model.",
   "contribution": [
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.94,
+  "fraction_read": 0.919,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading.md, words (each nomenclator group one word): 378 certain + 27 probable = 405 of 431 = 94.0%; the 21 restored words and the 5 unresolved codes are not counted (426/431 = 98.8% with the restored words). Recounted at integration. 21 of the 27 probable words are nomenclator values given by the sense only; with those also left out, as the README formula for read_share would have every guessed word, the share is 384/431 = 89.1%. Under the 95% bar on either count.",
+  "fraction_read_source": "reading.md, words (each nomenclator group one word), after the blind re-reading of 11 Nov 2026: 390 certain, 27 probable, 9 restored, 5 unresolved of 431 (frozen/v2/decompte_v2.out, re-run at integration). By the README read bar the 5 unresolved codes, the 9 restored words and the 21 nomenclator values given by the sense alone (21 of the 27 probable words) are not counted: 396/431 = 91.9% (384/431 = 89.1% before the re-reading). The contributor's count takes the 21 code values as read: 417/431 = 96.8% (405/431 = 94.0% before); with the restored words 426/431 = 98.8%.",
   "verification": [
    "statistical test",
-   "historical consistency"
+   "historical consistency",
+   "independent verification"
   ],
   "validation": {
    "date": "2026-11-11",
@@ -173,14 +195,28 @@
    "file": "validation.txt",
    "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): PREREG SHA-256 ce607b24705b4ed2b6106e5a77395f3832429bdcae8c2eae902a42a8f9c2691d; single measurement on p. 5: lexical cover 0.817 vs 0.487 (200 shuffled keys) and 0.600 (200 group shuffles); thresholds calibrated on 51 in-sample windows of 99 groups before the measure. Reservations: small held-out part (99 groups); the reference is a lexical cover, not a clear of the time; nomenclator values not tested. Re-run at integration (PR #403) with identical output. By the contributor's usual rule (>= 0.85 and >= best control + 0.30) page 5 would not pass (0.817; +0.217 over the best group shuffle); the rule applied was calibrated for 99 groups on pp. 1-4 before the measure."
   },
+  "human_check": {
+   "date": "2026-11-11",
+   "by": "Brice Dudout",
+   "passage": "osuna-c3456-d107, the doubtful digit of 19 corrected groups on pp. 1-5 (reading lines 1.01-5.05), plus 2 controls",
+   "result": "corrected",
+   "note": "Blind choice of the digit shape on the PARES images, between two reference shapes from certain words of the letter, in random order, without values or glosses; the sheet (crops and reference thumbnails) was prepared by AI agents, the choices are his alone. Both controls passed; 12 corrections of transcription v1 confirmed (12 words restored -> certain), 6 images show the v1 digit (probable cipher-clerk error, words stay restored), 1 undecided. Rule and answers hashed (frozen/BLIND-REREADING.md). Integration (12 Nov 2026): the rule and answer files are not in the repository, so the order 'rule first, then sheet' is by the contributor's record; an independent transcription (issue #421) has the corrected digit at 7 of the 12 places and the v1 digit at the other 5."
+  },
   "provenance": "contributed",
   "credits": [
    {
     "who": "dudout",
     "role": "solution",
-    "note": "transcription; key proposed by Claude Fable 5.2 (Anthropic) on pp. 1-4 and validated by us once on held-out p. 5 (0.817 vs 0.487 / 0.600, thresholds fixed in advance); letter read in part (94.0%, 98.8% with restorations) and translated",
+    "note": "transcription; key proposed by Claude Fable 5.2 (Anthropic) on pp. 1-4 and validated by us once on held-out p. 5 (0.817 vs 0.487 / 0.600, thresholds fixed in advance); letter read in part and translated (PR #403); blind re-reading of the cipher digits on the images by Brice Dudout, 12 corrections confirmed (PR #406, https://github.com/dbourdeau/cyphersolver/pull/406). By the project's read bar 396/431 = 91.9%; 417/431 = 96.8% on his count",
     "date": "2026-11-11",
     "source": "https://github.com/dbourdeau/cyphersolver/pull/403"
+   },
+   {
+    "who": "mcbratney",
+    "role": "verification",
+    "note": "independent recovery of the same letter, working with Claude (Anthropic): own transcription of the six images and own key from the ciphertext alone, by his record on 11 Nov 2026 without knowledge of PR #403. Compared here: all 71 letter and syllable values identical to key.tsv; 1,393 of 1,412 tokens agree. Open points: 107 (his Duca di Modena?, here Gran Duca) and confino / confine at 1.22. The independence timeline is not checkable from the repository",
+    "date": "2026-11-12",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/421"
    },
    {
     "who": "bourdeau",
@@ -191,14 +227,19 @@
   ],
   "gaps": [
    {
-    "item": "21 restored words (19 on pp. 1-4: 15 one-digit changes, 3 second readings of the transcription, 1 omitted group; 47 = z and 26 for 76 on p. 5)",
+    "item": "9 restored words (1 omitted group, 1.12 quando undecided on the images, 6 groups whose image matches transcription v1, 47 = z on p. 5)",
     "blocker": "open-codes",
-    "detail": "not nomenclator codes but doubtful figures of transcription v1; retried on the texts at integration (11 Nov 2026), none contradicted, none confirmed; a blind re-reading on the PARES images would settle each (PARES answered HTTP 429 to the integrating session, and no image is in the repository); still workable"
+    "detail": "blind re-reading on the PARES images by Brice Dudout, 11 Nov 2026: 12 of the 21 restored words confirmed and now certain; for il 1.16, Bologna and Milano 2.03, quando and al 3.08 and loro 4.01 the image shows the digit of transcription v1 (probable cipher-clerk error, nothing left to read on the image); quando 1.12 undecided; di 1.06 is a group the encipherer left out (normal space on the image) and lunghezza 5.02 is a value, not a shape (a second use of 47 would settle it); the independent transcription of issue #421 settles none of them (it has the v1 digit at il 1.17, Bologna, Milano, quando 3.08 and loro 4.02, a third reading 74 at al 3.12, and no group at di 1.08)"
    },
    {
     "item": "nomenclator: 5 codes open (103, 110, 115, 116, 136) and 21 values given by the sense only",
     "blocker": "open-codes",
-    "detail": "single or rare codes; no nomenclator of Ridolfi known; another letter of his in this cipher (AGS Estado, ASFi Mediceo) would test them"
+    "detail": "single or rare codes; no nomenclator of Ridolfi known; another letter of his in this cipher (AGS Estado, ASFi Mediceo) would test them; 107 is Gran Duca here and 'Duca di Modena?' in issue #421"
+   },
+   {
+    "item": "images not seen by the project: the blind sheet, its rule and answers, and the digit at 1.22 (confino 68 / confine 66)",
+    "blocker": "needs-physical-access",
+    "detail": "PARES answered HTTP 429 to the integrating sessions of 11 and 12 Nov 2026; no image, sheet, rule or answer file is in the repository, so that the rule was hashed before the sheet was opened is the contributor's statement; 5 of the 12 confirmed corrections (atacatto 1.17, miglia 2.01, perche 2.13, al 4.04, Signor 4.04) rest on the single blind reader, the other 7 are also in the transcription of issue #421"
    }
   ],
   "texts": [
@@ -211,18 +252,18 @@
     "translation": "translation.md",
     "language": "it",
     "state": "read in part",
-    "read_share": 0.94,
+    "read_share": 0.919,
     "summary": "The Pope has refused Don Antonio Ronquillo passage for 500 horse sent by the viceroy to help the Grand Duke of Tuscany, but would grant it towards Milan; Ridolfi advises accepting, since from Forlì the cavalry can turn into Tuscany if the French attack. News of the French fleet near La Spezia; a landing towards the Val di Taro and the Parmesan is more likely; Souvré's talks with 'that Duke'; Vendôme and the Huguenots' plan to rise; the Almirante would pay Vendôme 12,000 ducats; the Bouillon negotiation is stuck and Ridolfi fears Bouillon will come to terms with the French, Mazarin always doubling his offers.",
     "reading_review": {
      "grade": "B",
      "by": "Brice Dudout's AI agents (pp. 1-4 the key proposer, p. 5 a Claude Opus 5.5 agent); re-read at integration by Claude for the project",
-     "date": "2026-11-11",
-     "note": "Contributor: read as Italian sentences by AI agents only; the reading of pp. 1-4 was not redone word by word by a second reader, and no human read it. Integration (PR #403): reading.md read clause by clause against decryption.txt and translation.md; every clause construes and the translation follows it, p. 5 continues p. 4; 21 words are restored and 26 nomenclator groups rest on the sense or are open, so grade B. Not checked against the images."
+     "date": "2026-11-12",
+     "note": "Contributor: read as Italian sentences by AI agents only; the reading of pp. 1-4 was not redone word by word by a second reader, and no human read it. Integration (PR #403): reading.md read clause by clause against decryption.txt and translation.md; every clause construes and the translation follows it, p. 5 continues p. 4; 21 words are restored and 26 nomenclator groups rest on the sense or are open, so grade B. Not checked against the images. Blind re-reading of the cipher digits on the images by Brice Dudout (11 Nov 2026, one reader, controls passed, rule hashed before): 12 restored words confirmed and now certain, 9 restored words left; grade kept at B (the decryption is raw and the reading normalises it; 26 nomenclator groups still rest on the sense or are open). Integration of PR #406 (12 Nov 2026): reading.md read clause by clause again against decryption.txt and translation.md, it construes and the translation follows; compared word by word with the independent reading of issue #421, identical except 107 (Duca di Modena? there), confine for confino at 1.21, spiaggie for {spiagge} and a gloss on stano. By the read bar 396/431 = 91.9%, read in part."
     }
    }
   ],
   "key_file": "key.tsv",
-  "notes": "New decipherment: no decipherment of the time and no edition known. The key is reusable (key.tsv, CC BY 4.0). Model credit: the key was proposed by Claude Fable 5.2 (Anthropic) in one API run; the held-out validation, the reading of p. 5 and the write-up are ours. No image is included.",
+  "notes": "New decipherment: no decipherment of the time and no edition known. The key is reusable (key.tsv, CC BY 4.0). Model credit: the key was proposed by Claude Fable 5.2 (Anthropic) in one API run; the held-out validation, the reading of p. 5 and the write-up are ours. No image is included. Key state: partial, because 5 of the 12 nomenclator codes that occur have no value and 7 rest on the sense; every letter and syllable group has a value. An independent recovery of the same letter (issue #421, Malcolm McBratney) gives the same 71 letter and syllable values.",
   "codes_open": {
    "open": 5,
    "total": 12,

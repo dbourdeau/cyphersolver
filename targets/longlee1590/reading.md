@@ -5,25 +5,25 @@ n = number of words the segment is ESTIMATED to cover (counted as n words, not o
 Passages grouped by sentence, not by manuscript line.
 
 ## f. 67r
-Auec ocasion que m'est {uenue} de ‹tuoier|1› a {Baionne} le {dupplicata} de ma derniere despeche i'ai {uoulu} entendre a Vre Mate ce qui ‹sorre|1› ici {depuis} {que} i'en ‹afia|2› {acheminé} l'original
+Auec ocasion que m'est {uenue} de ‹tuoier|1› a {Baionne} le {dupplicata} de ma derniere despeche i'ai {uoulu} entendre a Vre Mate ce qui {s'offre} ici {depuis} {que} i'en ‹afia|2› {acheminé} l'original
 confirmant ‹e|1› bonne {sante} du roi {catholique} et {que} ie n'i uoi pas d'aultres {mouuements} ne preparatifs de {guerre} {que} {ceulx} {que} ‹idrcts|2› par mes precedents {d'armee} [de] soixante ou quatre uingt {uaisseaulx}
 pour {s'opposser} {aux} {anglois} {s'ils} {auroient} {quelque} deseing de molester ces costes de deca comme ils ont acoustume {deuers} Flandres ‹teles|2› le reste de toute ceste armee et aux ‹parestatcntlaisabl?|4›
 le {uingtuniesme} de ce mois arriua ici le sieur Tornasoni gentilhome {florentin} ung {neueu} du sieur Pietro Paule {Tousinet} de {deux} {ou} trois aultres {qui} {l'accompaignent}
 Tornasoni {enuoie} deuers le roi {catholique} de la part du duc de Mercure les coniectures de sa {commission} sont [de] demander {que} le dict roi {se} declare ouuertement contre Vre Mate
 {et} interdisse le commerce {aux} francois qui ne seront de la ligue et leur face arester leurs {personnes} biens marchandises et nauires a {ceux} qui ne ‹auuront|2› et ‹pouerle|2›
-{afin} il ne {fault} doubter {qu'il} ne demande de l'argent {et} {l'on} dict que {ce} {semble} ‹sle|1› doit {estre} demande par Roisieu le quel s'attend ici chacun iour de la {part} du duc de Maienne
+{afin} il ne {fault} doubter {qu'il} ne demande de l'argent {et} {l'on} dict que {ce} {semblable} doit {estre} demande par Roisieu le quel s'attend ici chacun iour de la {part} du duc de Maienne
 ie ne ueulx pas {asseurer} que ce soit ‹leeurcharse|2› car ie n'ai pas {ces} {aduis} de tel lieu que ‹iossassea?aermar|3› {qu'ils} {fussent} trescertains et bien {qu'ils} {feissent} ces demandes
 ie ne uoi point qu'il i eust de raison de les accorder quant a l'argent ie croie {qu'il} ‹leer|1› en sera {tousiours} donne {pour} entretenir la {guerre} {etc} du {reste} ie metrai peine de m'en {esclarcir}
-‹sledoc|2› de Portugal ‹mectnltinoera|2› encor quelque {temps} ‹austuoernee|2› ‹tent|1› des {pais} {bas} celui de {Sauoie} de {tant} de secours ‹ptuii|1›
+‹sledoc|2› de Portugal ‹meconltinlera|2› encor quelque {temps} ‹augoulernee|2› ‹ment|1› des {pais} {bas} celui de {Sauoie} {demande} secours ‹pouii|1›
 ## f. 67v
-les [affaires] {qui} lui uiennent sur les {bras} a cause de ceste ‹ace|1› que lui a este {pris} ‹suacetuon|2› dict par les ‹disuieres|1› {du} duc de {Sesse} {qui} ua a Rome apres {auoir} {propose} les {causes}
-‹salegathonidemorera|3› {pour} {ambassadeur} {ordinaire} ‹ct|1› roi et le conte d'Oliuares {qui} i reside {se} retirera {et} [c'est] {presse} {du} ‹partitent|2› de ce {courrier} et n'ai ‹aotaulci|1› une [depesche] de Vre Mate
+les [affaires] {qui} lui uiennent sur les {bras} a cause de ceste ‹ace|1› que lui a este {pris} ‹suacetuon|2› dict par {Lesdiguieres} ‹?e|1› duc de {Sesse} {qui} ua a Rome apres {auoir} {propose} les {causes}
+‹salegathonidemorera|3› {pour} {ambassadeur} {ordinaire} ‹ct|1› roi et le conte d'Oliuares {qui} i reside {se} retirera {et} [c'est] {presse} {du} ‹partiment|2› de ce {courrier} et n'ai ‹aotaulch|1› une [depesche] de Vre Mate
 {depuis} le {troisiesme} de nouembre ie ne [m'estendrai] pas d'auantaige sur ce {qui} touche ‹aecpargeouiesut|3› dirai {seulement} a Vre Mate que ie ne uoi pas qu'on soit ‹mi|1› {dispose} par deca en son droit
-que ce que ie n'ai represente par {auant} ‹nosiectant|2› a quelque proposition ou discours que ‹c|2› aultre chose que la defence de l'eglise {catholique} {et} {uoi} {qu'on} cela {sera} {bientost} que la {deffence} de l'eglise [catholique]
-‹demeuoir|1› ici si [affaires] ‹ptinueot|1› en l'estat ‹quelesson|2› quoi i'attends tous les iours les {commandements} de Vre {Mate} ‹alaqualdee?parg|3›
+que ce que ie n'ai represente par {auant} {n'obiectant} a quelque proposition ou discours que ‹c|2› aultre chose que la defence de l'eglise {catholique} {et} {uoi} {qu'on} ce {lassera} {bientost} que la {deffence} de l'eglise [catholique]
+{de} {me} {uoir} ici si [affaires] ‹ptinueot|1› en l'estat ‹quelesson|2› quoi i'attends tous les iours les {commandements} de Vre {Mate} ‹alaqualdee?parg|3›
 
 | | words | certain | probable | restored | unresolved | certain + probable |
 |---|---|---|---|---|---|---|
-| f. 67r | 314 | 211 | 69 | 2 | 32 | 89.2% |
-| f. 67v | 167 | 102 | 33 | 6 | 26 | 80.8% |
-| L2 | 481 | 313 | 102 | 8 | 58 | 86.3% |
+| f. 67r | 311 | 209 | 70 | 2 | 30 | 89.7% |
+| f. 67v | 167 | 101 | 37 | 6 | 23 | 82.6% |
+| L2 | 478 | 310 | 107 | 8 | 53 | 87.2% |
