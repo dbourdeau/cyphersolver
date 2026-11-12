@@ -386,7 +386,7 @@
   "conditions": {
     "prior_solution": {
       "exists": "no",
-      "where": "None found; priority not established. Checked 11-12 Nov 2026: this repository (targets/biermann1675 lists the Klingenberg family as key unknown, not attempted; its key-volume sweep found no sheet that reads it, sheet 94/95 only in part); Dudout, L'Europe chiffrée (Klingenberg named only); web searches. Not checked: Rigsarkivet guide nos. 278 and 327 (Klingenberg's legation archive, journal and letterbook of 1675, where the received letters may stand deciphered); Klingenberg's embassy journals of 1665-67; NLA Oldenburg Best. 20-44 Nr. 8; Wegener, Aarsberetninger VI.",
+      "where": "None found; priority not established. Checked 11-12 Nov 2026: this repository (targets/biermann1675 lists the Klingenberg family as key unknown, not attempted; its key-volume sweep found no sheet that reads it, sheet 94/95 only in part); Dudout, L'Europe chiffrée (Klingenberg named only); web searches. Not checked: Rigsarkivet guide nos. 278 and 327 (Klingenberg's legation archive, journal and letterbook of 1675, where the received letters may stand deciphered); Klingenberg's embassy journals of 1665-67; NLA Oldenburg Best. 20-44 Nr. 8; Wegener, Aarsberetninger VI. Checked 13 Nov 2026 on archive.org: Wegener, Aarsberetninger fra det Kongelige Geheimearchiv VI (1882), pp. 117-126, the printed Privy Council protocol of 1675, and Historisk Tidsskrift 5. R. IV pp. 446-450: they print the policy the letters carry (fleet subsidies, the declaration against Sweden, Lüneburg troops, Bremen, the state before Brömsebro), not a letter to Klingenberg and no cipher; the content of 13 of the 22 further drafts is already in print in summary (RISK), the deciphered wording is not.",
       "found": "not found",
       "used": false
     },
@@ -408,7 +408,7 @@
     ],
     "sessions": 7,
     "first_date": "2026-11-11",
-    "last_date": "2026-11-12"
+    "last_date": "2026-11-13"
   },
   "solution": [
     {
@@ -513,6 +513,67 @@
       ],
       "what": "Independent verification before the write-up: scripts/count.py re-run in a copy (all lines of counts.txt reproduce); own decoder from key.tsv reproduces the 4 May decryption token for token; frozen-transcription hashes and the three Sectigo tokens checked; Rigsarkivet images fetched and 62 groups of 1 June and 63 of the 28 June draft compared (all agree), 331 of 333 for 4 May by the first verifier; sheet 94/95 compared with the map (117, 140, 200, 224 differ).",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "transcription",
+      "technique": [
+        "manual reconstruction"
+      ],
+      "what": "PR #490: 22 further passages of the drafts units (260195, 260196) transcribed once each by the first reader (the model that built the key, not blind) from the Rigsarkivet images, decoded once under map v4 (md5 e9698159, table M3 38c7c1e5, unchanged), judged by word units after decoding. First transcriptions and decodes are lines of nine RFC 3161 manifests (Sectigo, 12 Nov 2026 13:21 to 16:26 GMT).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "reading",
+      "technique": [
+        "contextual inference",
+        "manual reconstruction"
+      ],
+      "what": "First-reader strict share of the 22 passages: 2,561 of 3,386 word units (75.63%); 6,103 of 8,587 tokens (71.07%, the rule of the count of record); tokens in words with no word code 2,032 of 8,587 (23.66%). No passage reaches 95%. Not added to the count of record (3,648 of 4,709, 77.47%): single not-blind judge, intended words written after decoding.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "technique": [
+        "manual reconstruction"
+      ],
+      "what": "Blind second transcriptions of all 22 passages by separate model sessions (b158, b161, b166, b172, b176), each decoded once under v4 and judged by word units, '?' units as holes: 16 passages 1,976 of 2,567 (76.98%), last six 579 of 693 (83.55%), all 22 2,555 of 3,260 (78.37%). The readers knew the key; breaches logged (the H/# chart with H = g and # = c seen by b161 and b176; the sign map seen by b172 after freezing 136R; the first reader's file names seen by b166). At six sites the first reader's # is a single-barred H; on 247R a margin cipher insert was missed by both readers; 235L has a margin block in a different cipher outside this key.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "control",
+      "technique": [
+        "statistical test"
+      ],
+      "what": "Contributor: German 4-gram score of each filed decode against 5,000 shuffles of the word map, two seeds, 0/5,000 for all 22 (script not in the folder; three passages have no output file). One parked passage (134R-136L body) 1/5,000 at one seed, not filed.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "reading",
+      "technique": [
+        "manual reconstruction"
+      ],
+      "what": "Corrected H/# pass on the three July drafts (run b116): hash-like signs re-classified by form against a chart of 12 H and 12 # from the copybook hand, frozen 12 Nov 05:43:43 UTC (md5 acd67760), mapped to 70 positions, decoded once with v4: 1,181 of 1,456 tokens (81.11%). The classifier had read the integration note quoting the 81.5% what-if; no ledger or gloss was written. Not the count of record (74.93%).",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-13",
+      "kind": "literature search",
+      "what": "Prior art: the printed Privy Council protocol of 1675 (Aarsberetninger fra det Kongelige Geheimearchiv VI, pp. 117-126) and Historisk Tidsskrift 5. R. IV pp. 446-450 checked on archive.org (text of aarsberetninger02wegegoog and historisktidsskriftdk5s4): every quotation of the contributor's evidence file found under the stated printed page. They print the policy of 1675 (fleet subsidies, declaration against Sweden, Lüneburg troops, Bremen, the state before Brömsebro), not a letter to Klingenberg and no cipher. The content of 13 of the 22 drafts is already in print in summary (RISK); for nine nothing found. The matching of drafts to protocol entries is the contributor's, by hand.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-13",
+      "kind": "verification",
+      "technique": [
+        "manual reconstruction"
+      ],
+      "what": "Integration check of PR #490 (round 5): ledgers re-parsed (2,561/3,386 and 6,103/8,587 reproduce, per passage); an own decoder from key.tsv, the table and v4 reproduces the decode column of all 22 ledgers (3,386 units, 0 differences); count.py reproduces counts.txt; nine tokens' imprints equal their manifests; 46 of 56 frozen md5 values match files (the other ten are parked passages); images fetched: 136R 79 groups and 214R-216R 124 groups all agree (digits). Own control (de-modern order 4, v4 word values shuffled, 1,000 shuffles): 0 of 1,000 for 13 passages, 1 to 29 of 1,000 for nine.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -593,7 +654,7 @@
       {
         "item": "The sign for c against the sign for g in the three drafts",
         "blocker": "illegible",
-        "detail": "The reader wrote every hash-like sign as # (c). 96 failed tokens sit in words that differ from the intended word only by c for g. A blind re-reading of those glyphs is not done; no figure that assumes it is quoted."
+        "detail": "The reader wrote every hash-like sign as # (c). 96 failed tokens sit in words that differ from the intended word only by c for g. A corrected H/# pass (run b116) gives 1,181 of 1,456 (81.11%), but the classifier had read the 81.5% what-if and wrote no ledger or gloss, so the count of record stays 74.93%; a blind re-reading with a ledger is still owed."
       },
       {
         "item": "Sixteen further letters (6 February to 21 June) used to build the key",
@@ -609,6 +670,16 @@
         "item": "Prior decipherment in Klingenberg's own papers",
         "blocker": "needs-physical-access",
         "detail": "Rigsarkivet guide nos. 278 and 327 not checked; priority is not established."
+      },
+      {
+        "item": "The 22 further passages (PR #490): 335 of 733 E units hold a code with no value in v4",
+        "blocker": "open-codes",
+        "detail": "329 occurrences of 111 distinct codes (most often 211, 110, 250, 5, 139, 143, 354; '0' is the O-as-0 slip of 287R-289L). More letters or Klingenberg's deciphered letterbook would fix them."
+      },
+      {
+        "item": "Ten passages parked by the first reader (59R-60L, 70R, 254R, 263L, 274R, 72L-72R P.S., 112R-113, 134R-136L body, 151R P.S., 152L; 253R-254L not transcribed)",
+        "blocker": "illegible",
+        "detail": "112R-113 and 253R-254L are illegible (bleed-through, overwriting). For the others the transcriptions were not sent, only md5 values and logged figures (322 of 455 word units, 70.77%)."
       }
     ],
     "texts": [
@@ -852,6 +923,6 @@
       "maps/words_v4.json",
       "emendations.tsv"
     ],
-    "notes": "Filed as read in part. One count of record: 3,648 of 4,709 tokens (77.5%) over eleven letters, by letter in counts.txt; no letter but the short 1 June one reaches 95%. Checked at integration (12 Nov 2026): count.py reproduces every line of counts.txt; an independent decoder reproduces the decryption of the 4 May letter token for token; the transcription hashes and the three stamps match their files (map v3 is in the first stamp, before the seven letters appear in any stamp; map v4 is first stamped before the three drafts; the order of the transcriptions is by the contributor's record); 62 groups of 1 June and 63 of the 28 June draft were compared with the images by the verifier, all agree, and 331 of 333 groups of 4 May; docs/_validate.py on the tokens read under the maps of record gives pass (with a partial German corpus). The 77.5% is the contributor's strict count; counting only tokens in words built from signs and syllables with no word code gives 28.3%. The image-55 key (K55) and its letters to Høeg and Meyercron in targets/biermann1675 are the work of the repository and of Brice Dudout; nothing in this folder uses K55 and nothing here claims those letters. The contributor id mcbratney is in contributors.json."
+    "notes": "Filed as read in part. One count of record: 3,648 of 4,709 tokens (77.5%) over eleven letters, by letter in counts.txt; no letter but the short 1 June one reaches 95%. Checked at integration (12 Nov 2026): count.py reproduces every line of counts.txt; an independent decoder reproduces the decryption of the 4 May letter token for token; the transcription hashes and the three stamps match their files (map v3 is in the first stamp, before the seven letters appear in any stamp; map v4 is first stamped before the three drafts; the order of the transcriptions is by the contributor's record); 62 groups of 1 June and 63 of the 28 June draft were compared with the images by the verifier, all agree, and 331 of 333 groups of 4 May; docs/_validate.py on the tokens read under the maps of record gives pass (with a partial German corpus). The 77.5% is the contributor's strict count; counting only tokens in words built from signs and syllables with no word code gives 28.3%. The image-55 key (K55) and its letters to Høeg and Meyercron in targets/biermann1675 are the work of the repository and of Brice Dudout; nothing in this folder uses K55 and nothing here claims those letters. The contributor id mcbratney is in contributors.json. Further passages (PR #490, checked 13 Nov 2026, round 5): 22 passages of the drafts units, first reader strict 6,103 of 8,587 tokens (71.07%) and 2,561 of 3,386 word units (75.63%), blind second readers 78.37% of word units with unread units as holes; none reaches 95%; they are a separate section of NOTES.md and the page, not in the count of record (3,648 of 4,709), because the judge is single and not blind and the intended words were written after decoding. Filing was selective (ten passages parked, logged 70.77%); prior art: 13 of the 22 drafts carry content already printed in summary (RISK)."
   }
 }
