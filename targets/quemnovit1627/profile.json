@@ -1,285 +1,295 @@
 {
-  "schema_version": 1,
-  "target": "quemnovit1627",
-  "title": "'Quem novit': a cipher letter to Christian IV, 20 July [1627 or 1628] (Rigsarkivet, TKUA Nederlandene B.41, unit 261377, image 443; with catalogue 2541): code broken, read in part",
-  "documents": [
-    {
-      "id": "quemnovit_1627-07-20",
-      "read": "read in part",
-      "shelfmark": "Copenhagen, Rigsarkivet, TKUA, Speciel del, Nederlandene B.41 (1608-34), Arkivalieronline unit 261377, image 443 (right page)",
-      "date": "'den 20 Iulii anno currentis', no year; 1627 if the writer is Christian Wilhelm of Brandenburg (proposed, not proved), 1628 from the filing order",
-      "year": 1627,
-      "country": "Denmark",
-      "route": "unnamed writer signing 'Quem novit', at a place coded 118 (Venice likely, not proved), to King Christian IV",
-      "places": {
-        "from": "[118] (Venice likely, not proved)",
-        "to": "Copenhagen"
-      },
-      "language": "German",
-      "pages": 1,
-      "cleartext_in_document": "interspersed",
-      "plaintext": {
-        "location": [
-          "none"
-        ],
-        "source": "No decipherment on the leaf or beside it (images 442-449 seen). The chancery decipherment sheet at image 447 is for a different code (Schultetus's number code)."
-      },
-      "length": {
-        "tokens": 557,
-        "distinct": 24,
-        "unit": "symbols",
-        "measured": false,
-        "file": "transcriptions/reader1_frozen.txt"
-      },
-      "transcription": {
-        "by": "llm from images",
-        "source": "Rigsarkivet Arkivalieronline, full-size image 443 (api.rigsarkivet.dk), crops",
-        "image_quality": "fair",
-        "notes": "Three transcriptions by separate Claude sessions: reader 1 (the breaker, frozen 02:18:36 UTC 12 Nov 2026, md5 836d644f), reader 2 (blind, frozen 09:49:43 UTC, md5 de87c01d), reader 3 (blind, frozen 11:22:40 UTC, md5 6d642c8b). Counted by scripts/counts.py, not by the repository's measure, so measured is false. 557 sign tokens in 103 cipher units (reader 1), plus 3 code numbers."
-      }
-    }
-  ],
-  "system": {
-    "types": [
-      "monoalphabetic",
-      "nomenclator"
+ "schema_version": 1,
+ "target": "quemnovit1627",
+ "title": "'Quem novit': a cipher letter to Christian IV, 20 July [1627 or 1628] (Rigsarkivet, TKUA Nederlandene B.41, unit 261377, image 443; with catalogue 2541): code broken, read in part",
+ "documents": [
+  {
+   "id": "quemnovit_1627-07-20",
+   "read": "read in part",
+   "shelfmark": "Copenhagen, Rigsarkivet, TKUA, Speciel del, Nederlandene B.41 (1608-34), Arkivalieronline unit 261377, image 443 (right page)",
+   "date": "'den 20 Iulii anno currentis', no year; 1627 if the writer is Christian Wilhelm of Brandenburg (proposed, not proved), 1628 from the filing order",
+   "year": 1627,
+   "country": "Denmark",
+   "route": "unnamed writer signing 'Quem novit', at a place coded 118 (Venice likely, not proved), to King Christian IV",
+   "places": {
+    "from": "[118] (Venice likely, not proved)",
+    "to": "Copenhagen"
+   },
+   "language": "German",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
     ],
-    "summary": "Simple substitution of letter-like signs and a few special signs (pi, theta, long s, omega-like) for the letters of German words, written word by word among clear German. 23 signs carry 21 plain letters: s has two signs (tall and small l), k has two (a tall S-like sign and h); i stands for i, u and v. One sign (an n-form, once) has no value. Three code numbers (117 twice, 118) stand for names or places. The abbreviations H., E., W. are in clear.",
-    "symbol_kind": "letters and symbols",
-    "distinct_symbols": 24,
-    "diacritics": {
-      "used": false
-    },
-    "homophones": {
-      "used": true,
-      "max_per_vowel": 1,
-      "max_per_consonant": 2
-    },
-    "nomenclator": {
-      "present": true,
-      "entries": 2,
-      "kinds": [
-        "names",
-        "places"
-      ],
-      "unread_groups": 3
-    },
-    "nulls": {
-      "present": false
-    },
-    "key_order": "partly alphabetical",
-    "word_division": "kept",
-    "notes": "key_order: plain l m n o are cipher a b c d (derived from the key; the rest shows no order). distinct_symbols counts reader 1's 24 sign labels, n included. homophones: L/l (s) and S/h (k) may be variant forms of one sign each rather than true homophones."
-  },
-  "conditions": {
-    "prior_solution": {
-      "exists": "no",
-      "where": "None found in what was checked (b97 and b126, 12 Nov 2026): Danske Magazin, Kong Christian IV's egenhaendige Breve, Danske Samlinger, Historisk Tidsskrift, Swedish Handlingar, DECODE, Cryptiana, archive.org full text ('Quem novit', the Administrator of Magdeburg at Venice). Thin: an anonymous letter cannot be searched by name; Christian Wilhelm's 1627 correspondence and Venetian state papers not checked. 'Not printed' cannot be proved.",
-      "found": "not found"
-    },
-    "inputs": [
-      "images",
-      "crib",
-      "cleartext context"
-    ],
-    "attack": "crib",
-    "human_role": "Malcolm McBratney directed the work, set the rules (every attempt recorded, transcriptions frozen before decoding, blind second and third transcriptions by separate sessions, shuffled-key controls, no claim without its check) and sent the result; Claude sessions found the letter, transcribed, built the key, read and checked. No reading by a person without AI.",
-    "tools": [
-      "own Python, standard library (scripts/: dec_B.py, align.py, adjudicate.py, decode_adjudicated.py, counts.py, holes.py, shuffle_control.py, decrypt_readers.py)",
-      "shuffled-key baseline, 5,000 keys, seeds 20261112 and 7, German character 4-grams",
-      "Rigsarkivet images, crops (PIL)"
-    ],
-    "models": [
-      "Claude (Anthropic), several sessions of 12 Nov 2026 (model ids not recorded)"
-    ],
-    "sessions": 4,
-    "first_date": "2026-11-12",
-    "last_date": "2026-11-12"
-  },
-  "solution": [
-    {
-      "date": "2026-11-12",
-      "kind": "access",
-      "what": "Sweep of TKUA Nederlandene B.41 (unit 261377) images 426-475 by plain download; image 443 right page found to hold a sign cipher signed 'Quem novit', no decipherment beside it.",
-      "result": "worked"
-    },
-    {
-      "date": "2026-11-12",
-      "kind": "transcription",
-      "what": "Reader 1 (the breaker) transcribed the page line by line from 2x crops; frozen 02:18:36 UTC, md5 836d644f. Disclosure: the letter values took shape while transcribing, so 'frozen before decoding' means before any scripted decode, not before any guess.",
-      "result": "worked"
-    },
-    {
-      "date": "2026-11-12",
-      "kind": "crib",
-      "technique": [
-        "crib testing",
-        "repeat/pattern analysis",
-        "manual reconstruction"
-      ],
-      "what": "The clear text continues '... lasset E. unverhalten sein', so the first two cipher words were taken as 'Gnadigster Konig'; the rest of the key followed from word patterns, by hand. 23 signs with a value, one (n) without.",
-      "result": "worked"
-    },
-    {
-      "date": "2026-11-12",
-      "kind": "control",
-      "technique": [
-        "language-model scoring",
-        "statistical test"
-      ],
-      "what": "dec_B.py run once on the frozen text: 93 of 103 units S (90.29%), 0 of 5,000 shuffled keys and 0 of 5,000 random-value keys as good (German 4-grams). Filed on #450 with this figure; the figure is now withdrawn as the headline (see below).",
-      "result": "worked"
-    },
-    {
-      "date": "2026-11-12",
-      "kind": "verification",
-      "technique": [
-        "other"
-      ],
-      "what": "Held-out: with only the key signs seen in lines 01-10, 65 of 66 cipher words of lines 11-19 decode in full (63/68 S). Not blind: the key was not fitted on 01-10 alone.",
-      "result": "partial"
-    },
-    {
-      "date": "2026-11-12",
-      "kind": "literature search",
-      "what": "Prior art: CLEAR in what was checked, thin (anonymous letter). Writer proposed as Christian Wilhelm of Brandenburg, Administrator of Magdeburg, at Venice in July 1627 (one article, read through a summariser): derived, not proved.",
-      "result": "partial"
-    },
-    {
-      "date": "2026-11-12",
-      "kind": "verification",
-      "technique": [
-        "other"
-      ],
-      "what": "Reader 2, blind (b129; key and reading not seen before freezing at 09:49:43 UTC): sign agreement with reader 1 511/565 (90.44%); under the key 62 of 104 units S (59.62%), 0 of 5,000 shuffled keys. 13 of its E units differ from reader 1 only by the g/q or pi/Z sign class.",
-      "result": "partial"
-    },
-    {
-      "date": "2026-11-12",
-      "kind": "verification",
-      "technique": [
-        "other"
-      ],
-      "what": "Reader 3, blind (b137; frozen 11:22:40 UTC with its own sign chart, mapped to the key by shape before decoding): sign agreement with reader 1 497/564 (88.12%), with reader 2 484/564 (85.82%); 49 of 110 units S (44.55%), 0 of 5,000. Two of its shape mappings were wrong (its Z is reader 1's S; its n is reader 1's Z or P).",
-      "result": "partial"
-    },
-    {
-      "date": "2026-11-12",
-      "kind": "verification",
-      "technique": [
-        "other",
-        "statistical test"
-      ],
-      "what": "Adjudication for this folder: each reader-1 sign takes the value at least two of three readers give (frozen 13:17:09 UTC, decoded once 13:17:19 UTC): 70 of 103 units S (67.96%); all three agreeing: 47 of 103 (45.63%). 0 of 5,000 shuffled keys for every reading, seeds 20261112 and 7. The filed 90.29% is withdrawn as the headline; the key stands.",
-      "result": "partial"
-    },
-    {
-      "date": "2026-11-12",
-      "kind": "reading",
-      "technique": [
-        "contextual inference",
-        "manual reconstruction"
-      ],
-      "what": "German reading and English translation from the adjudicated decode, 33 holes marked in place (13 g/q class, 7 one-sign emendations, 4 pi/Z/n, 3 c/e, 3 codes, 3 other signs).",
-      "result": "partial"
-    }
-  ],
-  "outcome": {
-    "class": "read in part",
-    "key": "partial",
-    "method": "key recovered from ciphertext-only",
-    "method_basis": "Crib 'Gnadigster Konig' for the first two cipher words, guessed from the clear continuation ('... lasset E. unverhalten sein') and the addressee's rank, then word patterns, by hand. No decipherment of this letter exists.",
-    "contribution": [
-      "transcription",
-      "key recovered",
-      "catalogue correction"
-    ],
-    "fraction_read_method": "measured",
-    "fraction_read_source": "decryptions/adjudicated.txt and counts.txt: 70 of 103 cipher units (reader 1's division) decode to a German word as written when each sign takes the value at least two of the three readers give; the three codes, reader 1's seven emendations and every unit with a disputed sign are counted not read. Reader figures beside it: 93/103 (reader 1, withdrawn as headline), 62/104 and 49/110 (blind readers).",
-    "fraction_read": 0.68,
-    "codes_open": {
-      "open": 2,
-      "total": 2,
-      "tokens_open": 3
-    },
-    "verification": [
-      "statistical test",
-      "key confirms"
-    ],
-    "validation": {
-      "date": "2026-11-12",
-      "file": "checks/shuffle_control.out",
-      "verdict": "not applicable",
-      "notes": "Contributor's own shuffled-key control (not docs/_validate.py, which was not run): Adjudication for this folder: each reader-1 sign takes the value at least two of three readers give (frozen 13:17:09 UTC, decoded once 13:17:19 UTC): 70 of 103 units S (67.96%); all three agreeing: 47 of 103 (45.63%). 0 of 5,000 shuffled keys for every reading, seeds 20261112 and 7. The filed 90.29% is withdrawn as the headline; the key stands."
-    },
-    "provenance": "contributed",
-    "credits": [
-      {
-        "who": "mcbratney",
-        "role": "solution",
-        "note": "'Quem novit' letter: key from the ciphertext with a crib, read in part, with three readings by separate AI sessions; issue #450",
-        "date": "2026-11-12",
-        "source": "https://github.com/dbourdeau/cyphersolver/issues/450"
-      },
-      {
-        "who": "mcbratney",
-        "role": "transcription",
-        "note": "three transcriptions of image 443 (one by the breaker, two blind) by separate Claude sessions",
-        "date": "2026-11-12"
-      }
-    ],
-    "gaps": [
-      {
-        "item": "Codes 117 (twice) and 118: no value",
-        "blocker": "open-codes",
-        "detail": "118 is the place of writing; Venice likely, not proved. The 1628 chancery sheet at image 447 is for another code."
-      },
-      {
-        "item": "g/q sign class (13 units) and pi/Z/n, c/e classes (7 units) disputed between readers",
-        "blocker": "not-attempted",
-        "detail": "A person comparing the tails at full size, or a fourth reader given one reference crop per key label."
-      },
-      {
-        "item": "Writer and year not proved",
-        "blocker": "not-attempted",
-        "detail": "Christian Wilhelm of Brandenburg at Venice, July 1627, is proposed from one article read through a summariser; not tested against any dated source."
-      },
-      {
-        "item": "Clear text read by one reader only; no person has compared any transcription with the image",
-        "blocker": "not-attempted"
-      },
-      {
-        "item": "Prior art thin: Christian Wilhelm's 1627 correspondence and Venetian state papers not checked",
-        "blocker": "not-attempted"
-      }
-    ],
-    "texts": [
-      {
-        "doc": "quemnovit_1627-07-20",
-        "label": "'Quem novit' to Christian IV, [118], 20 July [1627 or 1628]",
-        "transcription": [
-          "transcriptions/reader1_frozen.txt",
-          "transcriptions/reader2_blind.txt",
-          "transcriptions/reader3_blind.txt",
-          "transcriptions/adjudicated.tsv"
-        ],
-        "decryption": "decryptions/adjudicated.txt",
-        "reading": "readings/reading_de.md",
-        "translation": "readings/translation_en.md",
-        "language": "de",
-        "state": "read in part",
-        "read_share": 0.68,
-        "summary": "The writer (H.) tells the King he has waited at [118] into a third week for a galley, at cost and to his vexation; small galleys were there but nobody, [117] least of all, would advise risking them; the Signoria has now assigned a large one, which came yesterday, and he leaves today. He has borrowed another 3,000 thalers and asks the King to have them paid, to be deducted later. [117] has resolved nothing on his proposal, but he hopes W. will declare themselves better. Context: probably a Danish agent's journey through Venice in the Thirty Years' War (1627 or 1628).",
-        "reading_review": {
-          "grade": "B",
-          "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (the session that prepared these files). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
-          "date": "2026-11-12",
-          "note": "Read as sentences against the translation. Connected German whose sense can be followed; 33 holes marked in place."
-        },
-        "note": "read_share is the adjudicated strict share 70/103 = 67.96%."
-      }
-    ],
-    "key_file": "key.tsv",
-    "notes": "The filed figure (93/103 = 90.29%, reader 1 alone) is withdrawn as the headline because two blind readers did not reproduce it (59.62%, 44.55%). Repository scripts (docs/_check_reading.py, docs/_validate.py, docs/_check_profile.py) were not run; checks verified by hand."
+    "source": "No decipherment on the leaf or beside it (images 442-449 seen). The chancery decipherment sheet at image 447 is for a different code (Schultetus's number code)."
+   },
+   "length": {
+    "tokens": 557,
+    "distinct": 24,
+    "unit": "symbols",
+    "measured": false,
+    "file": "transcriptions/reader1_frozen.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Rigsarkivet Arkivalieronline, full-size image 443 (api.rigsarkivet.dk), crops",
+    "image_quality": "fair",
+    "notes": "Three transcriptions by separate Claude sessions: reader 1 (the breaker, frozen 02:18:36 UTC 12 Nov 2026, md5 836d644f), reader 2 (blind, frozen 09:49:43 UTC, md5 de87c01d), reader 3 (blind, frozen 11:22:40 UTC, md5 6d642c8b). Counted by scripts/counts.py, not by the repository's measure, so measured is false. 557 sign tokens in 103 cipher units (reader 1), plus 3 code numbers."
+   }
   }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "nomenclator"
+  ],
+  "summary": "Simple substitution of letter-like signs and a few special signs (pi, theta, long s, omega-like) for the letters of German words, written word by word among clear German. 23 signs carry 21 plain letters: s has two signs (tall and small l), k has two (a tall S-like sign and h); i stands for i, u and v. One sign (an n-form, once) has no value. Three code numbers (117 twice, 118) stand for names or places. The abbreviations H., E., W. are in clear.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 24,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 1,
+   "max_per_consonant": 2
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 2,
+   "kinds": [
+    "names",
+    "places"
+   ],
+   "unread_groups": 3
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "kept",
+  "notes": "key_order: plain l m n o are cipher a b c d (derived from the key; the rest shows no order). distinct_symbols counts reader 1's 24 sign labels, n included. homophones: L/l (s) and S/h (k) may be variant forms of one sign each rather than true homophones."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "None found in what was checked (b97 and b126, 12 Nov 2026): Danske Magazin, Kong Christian IV's egenhaendige Breve, Danske Samlinger, Historisk Tidsskrift, Swedish Handlingar, DECODE, Cryptiana, archive.org full text ('Quem novit', the Administrator of Magdeburg at Venice). Thin: an anonymous letter cannot be searched by name; Christian Wilhelm's 1627 correspondence and Venetian state papers not checked. 'Not printed' cannot be proved.",
+   "found": "not found"
+  },
+  "inputs": [
+   "images",
+   "crib",
+   "cleartext context"
+  ],
+  "attack": "crib",
+  "human_role": "Malcolm McBratney directed the work, set the rules (every attempt recorded, transcriptions frozen before decoding, blind second and third transcriptions by separate sessions, shuffled-key controls, no claim without its check) and sent the result; Claude sessions found the letter, transcribed, built the key, read and checked. No reading by a person without AI.",
+  "tools": [
+   "own Python, standard library (scripts/: dec_B.py, align.py, adjudicate.py, decode_adjudicated.py, counts.py, holes.py, shuffle_control.py, decrypt_readers.py)",
+   "shuffled-key baseline, 5,000 keys, seeds 20261112 and 7, German character 4-grams",
+   "Rigsarkivet images, crops (PIL)"
+  ],
+  "models": [
+   "Claude (Anthropic), several sessions of 12 Nov 2026 (model ids not recorded)"
+  ],
+  "sessions": 4,
+  "first_date": "2026-11-12",
+  "last_date": "2026-11-12"
+ },
+ "solution": [
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "Sweep of TKUA Nederlandene B.41 (unit 261377) images 426-475 by plain download; image 443 right page found to hold a sign cipher signed 'Quem novit', no decipherment beside it.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "Reader 1 (the breaker) transcribed the page line by line from 2x crops; frozen 02:18:36 UTC, md5 836d644f. Disclosure: the letter values took shape while transcribing, so 'frozen before decoding' means before any scripted decode, not before any guess.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "repeat/pattern analysis",
+    "manual reconstruction"
+   ],
+   "what": "The clear text continues '... lasset E. unverhalten sein', so the first two cipher words were taken as 'Gnadigster Konig'; the rest of the key followed from word patterns, by hand. 23 signs with a value, one (n) without.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ],
+   "what": "dec_B.py run once on the frozen text: 93 of 103 units S (90.29%), 0 of 5,000 shuffled keys and 0 of 5,000 random-value keys as good (German 4-grams). Filed on #450 with this figure; the figure is now withdrawn as the headline (see below).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Held-out: with only the key signs seen in lines 01-10, 65 of 66 cipher words of lines 11-19 decode in full (63/68 S). Not blind: the key was not fitted on 01-10 alone.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "literature search",
+   "what": "Prior art: CLEAR in what was checked, thin (anonymous letter). Writer proposed as Christian Wilhelm of Brandenburg, Administrator of Magdeburg, at Venice in July 1627 (one article, read through a summariser): derived, not proved.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Reader 2, blind (b129; key and reading not seen before freezing at 09:49:43 UTC): sign agreement with reader 1 511/565 (90.44%); under the key 62 of 104 units S (59.62%), 0 of 5,000 shuffled keys. 13 of its E units differ from reader 1 only by the g/q or pi/Z sign class.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Reader 3, blind (b137; frozen 11:22:40 UTC with its own sign chart, mapped to the key by shape before decoding): sign agreement with reader 1 497/564 (88.12%), with reader 2 484/564 (85.82%); 49 of 110 units S (44.55%), 0 of 5,000. Two of its shape mappings were wrong (its Z is reader 1's S; its n is reader 1's Z or P).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "other",
+    "statistical test"
+   ],
+   "what": "Adjudication for this folder: each reader-1 sign takes the value at least two of three readers give (frozen 13:17:09 UTC, decoded once 13:17:19 UTC): 70 of 103 units S (67.96%); all three agreeing: 47 of 103 (45.63%). 0 of 5,000 shuffled keys for every reading, seeds 20261112 and 7. The filed 90.29% is withdrawn as the headline; the key stands.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "technique": [
+    "contextual inference",
+    "manual reconstruction"
+   ],
+   "what": "German reading and English translation from the adjudicated decode, 33 holes marked in place (13 g/q class, 7 one-sign emendations, 4 pi/Z/n, 3 c/e, 3 codes, 3 other signs).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "other",
+    "statistical test"
+   ],
+   "what": "Integration check (R4): independent decoder from key_B.txt and reader 1's transcription reproduces the decode; 100 cipher words, 60 are words of a German vocabulary built from the repository's German corpora (len 3+), 0 of 3,000 shuffled keys reach 60 (best 6). adjudicated.tsv decoded with my own code: 88 units decode fully, 70 equal a form in s_forms.txt = 70/103. Image 443 and 447 fetched from the archive API and compared; the g/q tail distinction could not be settled at this resolution.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Crib 'Gnadigster Konig' for the first two cipher words, guessed from the clear continuation ('... lasset E. unverhalten sein') and the addressee's rank, then word patterns, by hand. No decipherment of this letter exists.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction"
+  ],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "decryptions/adjudicated.txt and counts.txt: 70 of 103 cipher units (reader 1's division) decode to a German word as written when each sign takes the value at least two of the three readers give; the three codes, reader 1's seven emendations and every unit with a disputed sign are counted not read. Reader figures beside it: 93/103 (reader 1, withdrawn as headline), 62/104 and 49/110 (blind readers).",
+  "fraction_read": 0.68,
+  "codes_open": {
+   "open": 2,
+   "total": 2,
+   "tokens_open": 3
+  },
+  "verification": [
+   "statistical test",
+   "key confirms"
+  ],
+  "validation": {
+   "date": "2026-11-12",
+   "file": "checks/shuffle_control.out",
+   "verdict": "not applicable",
+   "notes": "Contributor's own shuffled-key control (not docs/_validate.py, which was not run): Adjudication for this folder: each reader-1 sign takes the value at least two of three readers give (frozen 13:17:09 UTC, decoded once 13:17:19 UTC): 70 of 103 units S (67.96%); all three agreeing: 47 of 103 (45.63%). 0 of 5,000 shuffled keys for every reading, seeds 20261112 and 7. The filed 90.29% is withdrawn as the headline; the key stands."
+  },
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "mcbratney",
+    "role": "solution",
+    "note": "'Quem novit' letter: key from the ciphertext with a crib, read in part, with three readings by separate AI sessions; issue #450",
+    "date": "2026-11-12",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/450"
+   },
+   {
+    "who": "mcbratney",
+    "role": "transcription",
+    "note": "three transcriptions of image 443 (one by the breaker, two blind) by separate Claude sessions",
+    "date": "2026-11-12"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Codes 117 (twice) and 118: no value",
+    "blocker": "open-codes",
+    "detail": "118 is the place of writing; Venice likely, not proved. The 1628 chancery sheet at image 447 is for another code."
+   },
+   {
+    "item": "g/q sign class (13 units) and pi/Z/n, c/e classes (7 units) disputed between readers",
+    "blocker": "not-attempted",
+    "detail": "A person comparing the tails at full size, or a fourth reader given one reference crop per key label."
+   },
+   {
+    "item": "Writer and year not proved",
+    "blocker": "not-attempted",
+    "detail": "Christian Wilhelm of Brandenburg at Venice, July 1627, is proposed from one article read through a summariser; not tested against any dated source."
+   },
+   {
+    "item": "Clear text read by one reader only; no person has compared any transcription with the image",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "Prior art thin: Christian Wilhelm's 1627 correspondence and Venetian state papers not checked",
+    "blocker": "not-attempted"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "quemnovit_1627-07-20",
+    "label": "'Quem novit' to Christian IV, [118], 20 July [1627 or 1628]",
+    "transcription": [
+     "transcriptions/reader1_frozen.txt",
+     "transcriptions/reader2_blind.txt",
+     "transcriptions/reader3_blind.txt",
+     "transcriptions/adjudicated.tsv"
+    ],
+    "decryption": "decryptions/adjudicated.txt",
+    "reading": "readings/reading_de.md",
+    "translation": "readings/translation_en.md",
+    "language": "de",
+    "state": "read in part",
+    "read_share": 0.68,
+    "summary": "The writer (H.) tells the King he has waited at [118] into a third week for a galley, at cost and to his vexation; small galleys were there but nobody, [117] least of all, would advise risking them; the Signoria has now assigned a large one, which came yesterday, and he leaves today. He has borrowed another 3,000 thalers and asks the King to have them paid, to be deducted later. [117] has resolved nothing on his proposal, but he hopes W. will declare themselves better. Context: probably a Danish agent's journey through Venice in the Thirty Years' War (1627 or 1628).",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (the session that prepared these files). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
+     "date": "2026-11-12",
+     "note": "Read as sentences against the translation. Connected German whose sense can be followed; 33 holes marked in place."
+    },
+    "note": "read_share is the adjudicated strict share 70/103 = 67.96%."
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "The filed figure (93/103 = 90.29%, reader 1 alone) is withdrawn as the headline because two blind readers did not reproduce it (59.62%, 44.55%). Repository scripts (docs/_check_reading.py, docs/_validate.py, docs/_check_profile.py) were not run; checks verified by hand."
+ }
 }

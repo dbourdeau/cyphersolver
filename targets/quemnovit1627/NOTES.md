@@ -98,6 +98,31 @@ Venetian state papers.
 - Schultetus's capital-letter words are a simple substitution, read in the main (not part of this folder).
 - The folder holds this second, different cipher (443), not in Schultetus's hand.
 
+## Integration check (12 Nov 2026)
+
+- Reproduced: key_B.txt, reader 1's transcription, the stamped files (SHA-256 equal to the manifest), the adjudication
+  hashes and the counts 93/103, 62/104, 49/110, 70/103, 47/103. An independent decoder gives the same German. A
+  vocabulary control of my own (words of 3+ letters found in the repository's German corpora): 60 of 100 cipher words
+  for the true key, best of 3,000 shuffled keys 6.
+- What the German fit shows: the key is the right key for this letter's signs. It does not test the key blind: the key
+  was fitted to the whole letter by hand with the transcription (the contributor says so), so the lines 11-19 "held-out"
+  figure (63/68) is not a held-out test, and the method stays "key recovered from ciphertext-only" on the strength of a
+  crib and word patterns, with the language fit as confirmation.
+- Order of events is by the contributor's record. The RFC 3161 reply (12 Nov 2026 02:25:10 GMT, imprint equals the
+  manifest SHA-256) covers reader 1's folder only. The two blind transcriptions and the adjudication (frozen 13:17:09,
+  decoded once 13:17:19 UTC, a ten-second gap) are not stamped: that the adjudication was frozen before it was decoded
+  rests on the contributor's record.
+- Images: image 443 (api.rigsarkivet.dk/ao/v1/images/48900927, 4473 x 3436) is a spread; the right page is the
+  letter, signed "Quem novit" with a flourish, with 117, 118, 3000 and 20 as the contributor transcribes. The g/q
+  signs (g before theta in "sich", "noch", "machen"; q elsewhere) look alike at the resolution used here; reader 1's
+  sign list has g before theta 14 times and q never before theta, and the two word-initial c (commendiret, currentis)
+  are g, which supports two signs. Not settled by eye.
+- Catalogue 2541: image 447 (48900931) checked at full size: the right page is a chancery decipherment sheet headed
+  "Scultetus 17 Novemb:" for the number code of the letter of 17 Nov 1628 on the left. The 2541 entry's statement that no
+  decipherment was seen on any frame is corrected in catalogue.json.
+- One key, one entry: no other target uses this letter-sign key (zobel1629, same collection series, uses figures).
+- Write-up (page, manifest, ledgers, portraits, claims review) is not part of this commit; the writer is proposed, not proved.
+
 ## Remaining gaps
 
 - Codes 117, 118. The g/q, pi/Z/n and c/e sign classes (a person at full size, or a fourth reader with reference crops).
