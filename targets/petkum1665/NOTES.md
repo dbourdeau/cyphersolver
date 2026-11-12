@@ -1,6 +1,6 @@
 # Petkum 1665-66 and Paulmyer 1664: unglossed letters in the Danish chancery's French syllabary, read with a key rebuilt from the chancery's own glosses (catalogue 2530; issues #443, #444)
 
-Status: in progress (integration check, 12 Nov 2026: every letter is read in part, none reaches 95%; not written up yet because the gaps below that are not-attempted can still be worked, see Integration check). Key rebuilt from the interlinear decipherments of sister leaves (no key sheet). Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic); issues #443 and #444 and the comments on them. Folder prepared 12 Nov 2026 in answer to the maintainer's note on both issues ("held, not rejected: the issue gives the results but not the files").
+Status: in progress (13 Nov 2026 session: key v4 added from four unused glossed leaves, see Key v4 below; integration check, 12 Nov 2026: every letter is read in part, none reaches 95%; not written up yet because the gaps below that are not-attempted can still be worked, see Integration check). Key rebuilt from the interlinear decipherments of sister leaves (no key sheet). Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic); issues #443 and #444 and the comments on them. Folder prepared 12 Nov 2026 in answer to the maintainer's note on both issues ("held, not rejected: the issue gives the results but not the files").
 
 ## What this folder is, and why one folder
 
@@ -152,3 +152,26 @@ Verified from the files by the integrating reader (an AI reader, not a person); 
 - Not checked: the certificate chains of the stamps, the OpenTimestamps proofs, `scripts/shuffle_control.py` (needs four Gutenberg files), the images of the other ten letters.
 
 Why the status is "in progress": the repository allows "read in part" as a stopping point only when each unread piece has an outside blocker. These do not: (1) the glossed Petkum leaves 477, 561, 565 left and 581, and Sehested's own Paris relations in unit 261294 (images 5-141, same code, glossed between the lines throughout, per the 11 Nov TKUA sweep) were not used to extend the key, and would settle most of the 35 open code numbers; (2) the twelve unfiled letters, and the blind second readings of the four letters of #444 and the four Paulmyer letters, were not made. When these are done, or each has a real blocker, the status line goes and `/writeup petkum1665` is run (page, ledgers, catalogue 2530 narrowed to the unread leaves, key web entry for the Petkum/Paulmyer key, atlas places, portraits of Petkum and Biermann if any exist).
+
+## Key v4 (13 Nov 2026): values read from the glosses on four unused sibling leaves
+
+Done in a follow-up session (an AI reader, working from Rigsarkivet images fetched with `api.rigsarkivet.dk/ao/v1/images/<id>`, id = 48872547 + image number in unit 261267: 477, 561, 565 left, 581). The chancery wrote its decipherment between the lines; a value is taken only where the gloss word sits over a cipher number whose neighbouring tokens all have values and read as the gloss. `key_v4.tsv` = `key.tsv` + these rows (tier G = code word, counts E, never S; tier A3 = spelled value), each with the gloss quoted in its source column. md5 of key_v4.tsv is not fixed by any stamp.
+
+| value | gloss and place |
+|---|---|
+| 313 = on | 561 left "auquel on pouvoit parler" (x.313.319.u.383.b.q); 561 right "la mediation de tout autre" (366.313.201 = ti-on-de) |
+| 180 = bon | 561 right "bon Traitte" over x.335.180.373 |
+| 373 = traitte | 561 left "un traitte" (...conclu un 373, mais je); 561 right "bon Traitte"; 477 "dans le Traitte", "traitte de paix" |
+| 321 = paix | 561 right "faire la paix laquelle se fera"; 477 "de paix" (373.201.321.337.n = traitte de paix quo-n) |
+| 118 = Espagne | 561 left "que l'Espagne et" (335.118.100); "Amb. d'Espagne" (x.165.u.30.17.118) |
+| 348 = Roy | 561 right "Roy disant que" (348.202.352.n.32.335) |
+| 117 = l'Empire, 329 = Princesse, 285 = mariage, 328 = Prince | 561 left "l'Empire"; 581 "Princesse Douairiere d'Orange" (266.329.203.u.a.341.18.340); 581 "ces mariages" (183.285.31); 561 right "tout autre Prince" (one gloss each) |
+| PF = f | 561 left "la Flandre" (266.PF.266.n.17.340), 581 "la flotte" (266.PF.269.32.365) |
+| Q (plain q, straight tail) = b | 477 "veritable" twice (381.341.364.Q.267); the looped G stays p ("pretexte") |
+| 242 = he (was tier C) | 565 left "cher" (y.242.beta) |
+
+Hold-out discipline: these values were found after every count of record above (by the record of this folder; no stamp). They are not part of the held-out tests and are not used to claim the earlier shares. The context guesses of `holes.md` 2 for 313 (on), 180 (bon), 373 (traite), 348 (Roy), PF (f) and Q (b) agree with the glosses; 310 (nous), 390 (vous), 369, 370, 281, 248, 181 were not found glossed on these leaves and stay open. 285 = mariage agrees with the context reading of Paulmyer 25 Apr (the "[match] of Savoy"), guessed before. Open after v4: 29 of the 35 code numbers (list in `profile.json` gaps).
+
+Recount (`python3 -I scripts/count_v4.py`, `counts_v4.txt`): code words stay E, so only words with PF, Q or 242 turn N into S. First reader: 24 Mar 1665 68.97% to 72.41%, 23 Nov 70.83% to 71.88%, 10 Dec 68.00% to 72.00%, 6 Apr 1666 53.85% to 57.69% (blind copy the same), the other five unchanged (28 Apr 73.08%, 23 Jun 62.07%, 17 Sep 61.54%, 18 Jan 72.00%, 13 Apr 62.77%). No letter is near 95%. The 30 Nov letter and the Paulmyer letters carry the reader's own unit labels and were not relabelled; their figures stay as filed (a floor).
+
+Still not done, and why the status stays "in progress": (1) Sehested's glossed Paris relations in unit 261294 (images 5-141) were not read, so values for 310, 390, 369, 370, 281, 248, 181 and the rest of the 29 were not looked for there; (2) the twelve unfiled bare Petkum letters exist in this folder only as a pooled figure (121/190), with no transcriptions or per-letter labels, so they cannot be filed per letter without transcribing the 13 pages again from the images; (3) no blind second reading was made of the four letters of #444 or the Paulmyer letters. All three are doable, none has an outside blocker.
