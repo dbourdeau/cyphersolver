@@ -88,7 +88,7 @@ this country ..."; P4 "... of this govern-ment [901] the ..."; P6 "... re-[12]-p
 ### Claims review by a second reader (12 Nov 2026)
 
 - The committed key file has 341 lines, 339 of them rows of the table (1800 and 1885 are out of range).
-- 293 word places: "B. Ayres" is one place, and the "the" of "[?to the]" has no group and is not a place.
+- 293 word places: "B. Ayres" is one place, and the "the" of "[?to the]" has no group and was not counted as a place. (Superseded 12 Nov 2026, later the same day: the contributor's follow-up commit marks it as a supplied "[the]", like "[be]"; both supplied words are counted, so 294 places.)
 - The separate decoder used the contributor's table rows on the project's earlier transcription: it shows the reading
   does not depend on his transcription, not that the table is confirmed apart from him.
 - The Full-texts decryption of the 1814 letter is the earlier alignment file (462 = should, group 39 blank); the
@@ -219,15 +219,15 @@ Weber's own list of users of WE025 does not name Poinsett is the contributor's s
 table was identified, and no threshold was set. It shows that the table reproduces the clerk's decipherment.
 
 **Counting, by the read bar as written** (a word is read only if it is not a hole, a guessed `[?word]`, a supplied
-word, or a value fixed by the sense). The coded passages of the reading have 293 word places (292 words and the
-supplied "[be]"; Manning's clear words are not counted). Words whose every group is a first frozen reading, used as
-the table gives it: **248 of 293 = 0.846**. The other 45: 16 words holding one of the 21 choice groups (mass, no
+word, or a value fixed by the sense). The coded passages of the reading have 294 word places (292 words and the
+supplied "[be]" and "[the]"; Manning's clear words are not counted). Words whose every group is a first frozen reading, used as
+the table gives it: **248 of 294 = 0.844**. The other 46: 16 words holding one of the 21 choice groups (mass, no
 twice, situation, acts, want, cutting, deemed, object, leave, declared, preponderance, paralises, America, me, my),
 4 holding a reread group (number, means, the, seas), 19 holding an assumed misread, 5 with a hole (in-struct[55],
-mar-ke-[12], dis[502][774], [487], [122][1261]-sion), and "[be]". Counting the choice words as read gives 264
-(0.901; the verification pass counted 264 of 295, 0.895). The contributor's 0.916 is `share()` on his reading file
+mar-ke-[12], dis[502][774], [487], [122][1261]-sion), and the two supplied words "[be]" and "[the]". Counting the choice words as read gives 264
+(0.898; the verification pass counted 264 of 295, 0.895). The contributor's 0.916 is `share()` on his reading file
 and also counts the clear words from Manning that open each passage. By groups: 385 of 437 = 0.881 are first frozen
-readings; 406 (0.929) with the choices; 410 with the rereads. `read_share` in the profile is 0.846 and
+readings; 406 (0.929) with the choices; 410 with the rereads. `read_share` in the profile is 0.844 and
 `fraction_read` 0.881; both are under the 95% bar, so the letter is read in part.
 
 **A look at the frames (12 Nov 2026, NARA catalogue JPEGs of frames 0093-0094, one pass).** The film is
@@ -244,7 +244,7 @@ these is settled; the statuses in `beling/groups_1813-02-20.tsv` stand.
 **Corrections made in the folder.**
 - `profile.json`: `outcome.key` was "recovered"; it is now "partial" (a printed table was matched, nothing was
   recovered by cryptanalysis, and seven groups have no usable value). `contribution` no longer lists "key extended or
-  corrected". `read_share` 0.916 becomes 0.846 and `fraction_read` 0.929 becomes 0.881 (above). `codes_open.total`
+  corrected". `read_share` 0.916 becomes 0.844 and `fraction_read` 0.929 becomes 0.881 (above). `codes_open.total`
   is 245, the distinct numbers of the contributor's transcription; the 256 of section 1 is the distinct count of
   Daniel Bourdeau's transcription (`ciphertext_1813.txt`). Gaps, a text entry for the 1814 letter, the reading
   reviews and the integration step added.
@@ -257,3 +257,16 @@ these is settled; the statuses in `beling/groups_1813-02-20.tsv` stand.
   no inputs in the repository. They are the contributor's pointers, not results of this target, and are not published
   as results.
 
+
+## Follow-up commit of the contributor (12 Nov 2026, c0538294 of PR 414)
+
+After the integration above Andrew Beling pushed one more commit: a reading review of the 1813 reading (grade A, with
+two independent AI-agent readings, his own review, recorded in `profile.json` next to the integration reader's) and
+marks in `beling/reading_1813-02-20.md`: "marke[12]" (the letters the groups give, then the unexplained group 12;
+was "[?market] [12]"), "[?to] [the]" (the "the" has no group and is supplied), "[?the]" in "on [?the] part" and
+"[?seas]" (the two reread groups), and "[?political] [?engine]" in the summary. The write-up already marked the rereads
+and the summary words. Effect on the count: the supplied "[the]" is now a word place counted like "[be]", so 294 word
+places and **248 of 294 = 0.844** (was 293 and 0.846); the groups do not move (385 of 437, 0.881). His review sentence
+that the holes are "five unexplained groups and about twenty marked guesses" agrees with the gaps above (7 groups
+with no usable value of which five unexplained here, 20 assumed misreads). His SHA256SUMS line for the reading is
+updated in the same commit.
