@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "peking1912",
- "title": "Peking to the Tibet frontier, October 1912: the telegram on the restoration of the Dalai Lama's title that the Government of India 'could not properly decypher' (lead 2465, NAI Deposit Cypher 1912 Nos. 86-87): plain Chinese standard telegraph code read by rows, read (already translated in English by the General Staff in 1912)",
+ "title": "An official at Peking to an unnamed addressee, October 1912: the telegram on the restoration of the Dalai Lama's title that the Government of India 'could not properly decypher' (lead 2465, NAI Deposit Cypher 1912 Nos. 86-87): plain Chinese standard telegraph code read by rows, 30 of 31 codes read with the public table (an approximate English translation was made by the General Staff in 1912)",
  "documents": [
   {
    "id": "nai-deposit-cypher-1912-86-87",
@@ -10,11 +10,7 @@
    "date": "before 3 October 1912",
    "year": 1912,
    "country": "China",
-   "route": "Peking (record title: 'Yaoshikinan, Peking') to a Chinese addressee reached over the Indian lines (a duplicate came through Kalimpong); intercepted and copied by the Government of India",
-   "places": {
-    "from": "Peking",
-    "to": "unknown (Tibet frontier, via India)"
-   },
+   "route": "Peking (an official; the record title has 'Yaoshikinan, Peking', and the telegram names the President in the third person) to an unnamed Chinese addressee reached over the Indian lines (a duplicate came through Kalimpong); intercepted and copied by the Government of India",
    "language": "Chinese",
    "pages": 1,
    "cleartext_in_document": "none",
@@ -34,7 +30,7 @@
     "by": "llm from images",
     "source": "Abhilekh Patal online reader, screen captures (images not reproduced)",
     "image_quality": "good",
-    "notes": "Claude Opus 5.5 agent, 11 Nov 2026: 25 groups of five digits in four columns (7, 6, 6, 6); every digit clear."
+    "notes": "Claude Opus 5.5 agent, 11 Nov 2026: 25 groups of five digits in four columns (7, 6, 6, 6); every digit clear. Not checked against the image by anyone but the contributor: Abhilekh Patal shows a human check to scripts, and the pull request carries no image (integration, 12 Nov 2026)."
    }
   }
  ],
@@ -67,7 +63,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "in archive",
-   "where": "General Staff, Simla, 8 Oct 1912: approximate English translation with two alternative readings, in the same file (p. 9); Chinese text not given. Lead 2465 (Daniel Bourdeau, research/leads.json): open as checked 11 Nov 2026; web search 11 Nov 2026: nothing printed.",
+   "where": "General Staff, Simla, 8 Oct 1912: approximate English translation with two alternative readings, in the same file (p. 9); Chinese text not given. Lead 2465 (Daniel Bourdeau, research/leads.json): open as checked 11 Nov 2026; web search 11 Nov 2026: nothing printed; one more web search on the Chinese phrases at verification (12 Nov 2026): nothing. Chinese printed document collections were not searched.",
    "found": "before attempt",
    "used": true
   },
@@ -76,12 +72,12 @@
    "crib"
   ],
   "attack": "crib",
-  "human_role": "Brice Dudout chose the target, logged in to Abhilekh Patal and captured the pages, and set the rules (protocol written and hashed before the attack; every decipherment goes to Daniel). A Claude Opus 5.5 agent checked the transcription, wrote the protocol, read the telegram and wrote up.",
+  "human_role": "Brice Dudout chose the target, logged in to Abhilekh Patal and captured the pages, and set the rules (protocol written and hashed before the attack; every decipherment goes to Daniel). A Claude Opus 5.5 agent checked the transcription, wrote the protocol, read the telegram and wrote up. Integration (12 Nov 2026): the decoding and the controls were re-run for the project with an independent decoder and Unihan table; the images were not seen (the archive shows a human check to scripts).",
   "models": [
    "Claude Opus 5.5 (Anthropic), agent run by Brice Dudout (protocol, reading, controls, write-up)"
   ],
   "first_date": "2026-11-11",
-  "last_date": "2026-11-11"
+  "last_date": "2026-11-12"
  },
  "solution": [
   {
@@ -103,7 +99,7 @@
     "key-structure hypothesis",
     "crib testing"
    ],
-   "what": "Protocol hashed before the attack (frozen/PREREG.md, SHA-256 46310551...): H0 plain standard telegraph code in four reading orders and cuts; H1-H4 additives (5- and 4-digit), Campbell's 'transparency' relation, the General Staff's column formula. H0 by rows worked at once: 電悉大總統...; H1-H4 not needed.",
+   "what": "Protocol hashed before the attack, by the contributor's record (frozen/PREREG.md, SHA-256 46310551...): H0 plain standard telegraph code in four reading orders and cuts; H1-H4 additives (5- and 4-digit), Campbell's 'transparency' relation, the General Staff's column formula. H0 by rows worked at once: 電悉大總統...; H1-H4 not needed.",
    "result": "worked"
   },
   {
@@ -118,29 +114,47 @@
   {
    "date": "2026-11-11",
    "kind": "reading",
-   "what": "31 codes, 31 characters; 30 certain, 1 doubtful (1770 徇, read 1769 待).",
+   "what": "31 codes, 31 characters; 30 give the character as written, 1 emended (1770 徇, read 1769 待) and not counted as read.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Integration of PR #431 after an independent verification: a separate decoder with a code table built from Unihan.zip (same SHA-256) gives 31 codes + 1 filler digit, 31 of 31 matching decryption.txt; frozen/controles.py rerun gives controles.out byte for byte (rows 19, columns 0, random orders max 6, additives max 1, halves 14 and 5); row offsets 1-3, columns at four offsets and drop-one-digit cuts give gibberish; of the 36 one-digit neighbours of 1770 only 1769 待 gives a word with 優. PREREG hash matches. Corrections: class 'already solved' -> 'read' (as targets/ctcplain1913), provenance 'mixed' -> 'contributed', the 1770 gap is an emendation not an illegible sign, 是否通過 left ambiguous in the translation, sender is an official (the President is in the third person), not Yuan Shikai. Not done: no image was seen (Abhilekh Patal shows a human check to scripts; not gone round).",
    "result": "worked"
   }
  ],
  "outcome": {
-  "class": "already solved",
+  "class": "read",
   "key": "not applicable",
   "method": "read with known key",
-  "method_basis": "The key is the public Chinese standard telegraph code (table from Unicode Unihan, kTaiwanTelegraph / kMainlandTelegraph); what had to be found was the reading order (rows) and the cut into four-digit codes across the five-digit groups.",
+  "method_basis": "The key is the public Chinese standard telegraph code (table from Unicode Unihan, kTaiwanTelegraph / kMainlandTelegraph); what had to be found was the reading order (rows) and the cut into four-digit codes across the five-digit groups. No Chinese text existed: the General Staff's file of 1912 holds an approximate English translation only.",
   "contribution": [
    "transcription",
    "catalogue correction"
   ],
   "fraction_read": 0.968,
   "fraction_read_method": "measured",
-  "fraction_read_source": "30 of 31 characters certain by code and sense; 1 doubtful (code 1770, read 1769); 31/31 codes give a character.",
+  "fraction_read_source": "30 of 31 codes give the character as written and read as sense; 1 emended (code 1770 徇, read 1769 待) and not counted, by the read bar; recounted at integration.",
   "first_break": false,
   "verification": [
    "contemporary decipherment",
-   "historical consistency"
+   "historical consistency",
+   "independent verification"
   ],
-  "provenance": "mixed",
+  "provenance": "contributed",
   "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "reading order found (rows, four-digit standard telegraph code across the five-digit groups) and the Chinese text recovered, with transcription, decryption, translation, hashed protocol and controls; sent as a pull request",
+    "date": "2026-11-11",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/431",
+    "published": true
+   },
    {
     "who": "dudout",
     "role": "verification",
@@ -151,12 +165,6 @@
     "who": "dudout",
     "role": "transcription",
     "note": "25 groups of NAI Deposit Cypher 1912 Nos. 86-87, p. 6, from the Abhilekh Patal reader",
-    "date": "2026-11-11"
-   },
-   {
-    "who": "bourdeau",
-    "role": "pointer",
-    "note": "lead 2465 (Abhilekh Patal sweep): the record 'Message in Chinese Cypher from Yaoshikinan, Peking which cannot be properly decyphered', with the suggestion to try the standard code and Campbell's 1907 key (lead 2466)",
     "date": "2026-11-11"
    },
    {
@@ -174,14 +182,24 @@
   ],
   "gaps": [
    {
-    "item": "code 1770 (徇) in 優徇",
-    "blocker": "illegible",
-    "detail": "read 1769 (待), a one-digit slip in transmission or copying; the copy itself is clear"
+    "item": "code 1770 (徇) in 優徇, read 待 (1769) by emendation",
+    "blocker": "needs-physical-access",
+    "detail": "the copy as transcribed reads 71770; whether the slip is in the transmission, the Simla copy or the transcription can only be told on the image (behind the archive's login and human check) or the original telegraph form"
+   },
+   {
+    "item": "image check of the 25 groups of p. 6 by a second reader",
+    "blocker": "needs-physical-access",
+    "detail": "Abhilekh Patal shows a human check to scripts and the pull request carries no image; only the contributor's agent has read the groups, from his logged-in screen captures"
    },
    {
     "item": "sender and addressee; 'Yaoshikinan' of the record title",
     "blocker": "needs-physical-access",
-    "detail": "the telegram names neither; pp. 3-5 and 7 of the file and the Kalimpong duplicate may help"
+    "detail": "the telegram names neither and speaks of the President in the third person; pp. 3-5 and 7 of the file and the Kalimpong duplicate may help. 'Yaoshikinan' may be 姚錫光 (Yao Xiguang): a suggestion made at verification, not checked"
+   },
+   {
+    "item": "prior art in Chinese printed document collections",
+    "blocker": "needs-physical-access",
+    "detail": "printed volumes, none opened by the contributor, at verification or at integration; web searches found nothing"
    }
   ],
   "texts": [
@@ -195,16 +213,16 @@
     "language": "zh",
     "state": "read",
     "read_share": 0.968,
-    "summary": "Telegram received. The President has long since approved restoring the Dalai Lama's title and allows him to come to the capital, where he will be welcomed with exceptional favour and generous treatment. Reply quickly whether this has got through. The General Staff's reading A of 1912 (restoration of the title) is confirmed.",
+    "summary": "Telegram received. The President has long since approved restoring the Dalai Lama's title and allows him to come to the capital, where he will be specially welcomed and generously treated (優待 by emendation of one code). Reply quickly whether it has passed (是否通過, ambiguous). The General Staff's reading A of 1912 (restoration of the title) is confirmed.",
     "reading_review": {
      "grade": "A",
-     "by": "Claude Opus 5.5 agent for Brice Dudout",
-     "date": "2026-11-11",
-     "note": "Read as Chinese telegram style (wenyan): 電悉 opening, 大總統早經允准..., 是否通過，速覆 closing; every one of the 31 codes gives the expected character in order, against the 1912 English translation used as a crib; one doubtful code (1770 徇 for 1769 待) declared. No human sinologist has re-read it."
+     "by": "integration review for the project (independent verification, then the integrator)",
+     "date": "2026-11-12",
+     "note": "Read as one sentence group of telegraphic Chinese: 電悉 opening, 大總統早經允准復回達賴名號，並允到京，格外歡迎優待, closing 是否通過，速覆. Coherent from end to end; one emended code (1770 徇 for 1769 待); 是否通過 is ambiguous. First read by the contributor's agent on 11 Nov 2026. No sinologist has re-read it, and the transcription was not checked against the image."
     }
    }
   ],
   "key_file": "key.tsv",
-  "notes": "No image of the NAI file is included (Abhilekh Patal images, no reuse licence). Not a first break: the General Staff translated the telegram in 1912. What is new here is the Chinese text, the way the copy must be read, and the choice between the General Staff's readings A and B."
+  "notes": "No image of the NAI file is included (Abhilekh Patal images, no reuse licence shown; the site shows a human check to scripts). Not a first break: the General Staff translated the telegram approximately in 1912. What is new here is the Chinese text, the way the copy must be read, and the choice between the General Staff's readings A and B. outcome.key is 'not applicable', as in targets/ctcplain1913: the key is a public table and nothing was recovered."
  }
 }

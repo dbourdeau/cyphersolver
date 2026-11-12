@@ -4675,6 +4675,14 @@
    "year": 1646,
    "found": 2026,
    "note": "Proposed from the cipher of pages 1-4 of AHNOB OSUNA,C.3456,D.107 alone and frozen; tested once on held-out page 5 (lexical cover 0.817 against 0.487 for the best of 200 shuffled keys and 0.600 for the best of 200 group shuffles). Nomenclator values by the sense only, five codes open. targets/ridolfi1646/key.tsv."
+  },
+  {
+   "id": "k-ctc-standard",
+   "label": "Chinese standard telegraph code (four-digit codes), public code book",
+   "kind": "contemporary key",
+   "by": "",
+   "year": 1912,
+   "note": "The public four-digit code of the Chinese telegraphs, one number for each character, used here without encipherment. Table taken from the Unicode Unihan database (kTaiwanTelegraph and kMainlandTelegraph); the codes used are in targets/peking1912/key.tsv and targets/nanking1930/key.tsv. The same table reads the 20 plain telegrams of targets/ctcplain1913."
   }
  ],
  "links": [
@@ -7527,6 +7535,18 @@
    "target": "ridolfi1646",
    "how": "rebuilt from",
    "note": "proposed from pages 1-4 of the letter and tested once on its held-out page 5; reads 405 of 431 words without restorations"
+  },
+  {
+   "key": "k-ctc-standard",
+   "target": "peking1912",
+   "how": "read unchanged",
+   "note": "plain code in five-digit groups read by rows; 30 of 31 codes give the character as written, one emended by one digit"
+  },
+  {
+   "key": "k-ctc-standard",
+   "target": "nanking1930",
+   "how": "read unchanged",
+   "note": "plain code in four-digit groups; 221 of 230 codes give the character as written, six emended by one digit, three unresolved"
   }
  ],
  "sources": [

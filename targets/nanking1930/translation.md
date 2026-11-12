@@ -22,3 +22,12 @@ respectful good wishes. Ma Fuxiang. [8th.]
 
 Note: 棍堪布 is Kun Kanpu (Könchok Jungné, the Dalai Lama's representative, also written 貢覺仲尼); 國師 "State Preceptor" is
 the Dalai Lama.
+
+Notes added at integration (12 Nov 2026)
+- "wise [?]": the code as transcribed (4156) gives no sense; 4158 目 "eye", one digit away, is a candidate (慧目明心).
+- "both [served]": the code as transcribed (5129) gives no sense; the set phrase 公私兩便 would need 0189, two digits away.
+- Six words rest on codes emended by one digit: "all noted" (均), "correspondence" (音), "earnestly" (切), "Chiang" in "Chairman
+  Chiang" (蔣), "praise" (許) and the second "devotion" (竭). See decryption.txt.
+- Order of the two telegrams: Ma Fuxiang's, dated the 8th, says the Chairman has already answered by telegram; Chiang's is
+  dated the 13th. Open.
+- The identification of 棍堪布 (Kun Kanpu) with Könchok Jungné (貢覺仲尼) is the contributor's and was not checked here.
