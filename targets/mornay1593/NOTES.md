@@ -1,6 +1,6 @@
 # Duplessis-Mornay circle: undeciphered figures printed in the 1824 *Mémoires et correspondance*
 
-Status: in progress (1593 figures read with Brice Dudout's key, 27 Oct 2026; 1595-98 figures open)
+Status: in progress (1593 figures read with Brice Dudout's key, 27 Oct 2026; 1595-98 figures open; vols. 7-12 searched and two more keys tested, 11-12 Nov 2026, Andrew Beling, `beling/`)
 
 Opened 25 Oct 2026. Found while checking whether Archives nationales 402AP/13 (catalogue 365, "lettres chiffrées"
 of the Mornay family) was already in print. It is not, but the printed edition itself carries unread cipher.
@@ -27,10 +27,17 @@ figures were unread in 1824.
 | 6, CIX | Duplessis → his wife, 1595 | short bare run |
 | 7, LXVI-LXVII, CXLI and others | Duplessis, Jan-Oct 1597 | bare figures |
 | 8, p. ~507 | Duplessis, 14 Apr 1598 | short run |
-| 11, CXCVII | 2 Dec 1611 | name codes only |
+| 7, LXXXII p. 169 and CXLI pp. 306-307 | Mme de Rohan → Mme Duplessis, 27 Feb and 4 Aug 1597 | bare figures, 50 groups; Rohan 1594 key fits (11 Nov 2026) |
+| 7, pp. 335, 347; 8, pp. 197, 261, 307 | Duplessis → his wife, Sep 1597-Apr 1598 | bare figures, 79 groups, transcribed 11 Nov 2026 |
+| 8, pp. 193-306 | Duplessis → his wife, Mar-Apr 1598 | name code 81 63, twelve places (12 Nov 2026) |
+| 9, pp. 209-251 | Duplessis → his wife, Jan-Mar 1599 | 153 63, 33, three runs; 30 groups (12 Nov 2026) |
+| 9, CLXIX p. 297 | Mme de Rohan → Duplessis, 30 Oct 1599 | 4 groups (12 Nov 2026) |
+| 11, CXCII, CXCVII, CC, CCXXXII | Mme de Rohan → Duplessis, Nov 1611-Mar 1612 | 84 groups, another table (12 Nov 2026); CXCVII is dated 19 Nov 1611 by the OCR date line and has a ten-figure run (this row replaces "11, CXCVII, 2 Dec 1611, name codes only") |
+| 11, CCXLII | unsigned → Duplessis, 25 Jul 1612 | 9 groups (12 Nov 2026) |
 
 Not yet transcribed: everything after vol. 5. The Rohan 1594 key should be tested on the 1595-98 figures first: same
-household, and the editors expected readers to do exactly that.
+household, and the editors expected readers to do exactly that. (11-12 Nov 2026: vols. 7-12 searched and their figures
+transcribed, `beling/`; steps 7-8.)
 
 ## The 1593 system (vols. 5)
 
@@ -78,17 +85,52 @@ Context cribs:
    are the normalised spelling of the established text. He will say so on the page. He also dates Du Maurier's letter Tuesday 20 July 1593 (the
    edition prints "mardi .. juin"; the letter anticipates the abjuration of Sunday 25 July).
 
+7. **11 Nov 2026, Andrew Beling (`beling/`).** Pre-registered (`beling/PREREG.md`), one run, inputs frozen by sha256.
+   - Dudout's folded 1593 key on Loménie 1595 and Duplessis Jan 1597 (203 groups): coverage 0.655 against a best of
+     0.616 for 200 random number sets (pass needed 0.85 and margin 0.30); language score −3.43 per letter, beating
+     193/200 permuted keys, against −2.24 for the 1593 control. Verdict by the rule: inconclusive. The output has no
+     words; the key does not fit these letters. Shifting the key numbers by 1-100 gives nothing (best −3.00).
+   - Transcribed the rest of the bare figures in vols. 7-8 (`beling/transcription/v7v8_figures.tsv`, context in a
+     separate file): Duplessis to his wife Sep 1597-Apr 1598 (15 passages, 79 groups; also not fitted by either key)
+     and **two letters of Mme de Rohan to Mme Duplessis**, vol. 7 LXXXII (27 Feb 1597, p. 169) and CXLI
+     (4 Aug 1597, pp. 306-307), 19 passages, 50 groups.
+   - The Rohan 1594 key on the Rohan 1597 figures: coverage 0.78, −2.26 per letter, beating 197/200 permuted keys.
+     Verdict: fits (small sample). Mechanical output "M. de vi l le [672] et de [134] me ni e", "M. de ca r [38] [160] i s",
+     "M. de c la s ti l [134] n"; with 672 = roy, 134 = lo, 38 = g, 160 = ro these read M. de Villeroy et de Loménie,
+     M. de Cargrois, M. de Chastillon (one sign off: 111 is printed "la" in 1594). The new values are inferences.
+
+8. **11-12 Nov 2026, Andrew Beling (`beling/`, round 2).** Pre-registered (`beling/PREREG_round2.md`), one run.
+   - Vols. 9-12 searched (OCR of both scans, then the page images): Duplessis to his wife Jan-Mar 1599 (name code
+     153 63, 33 alone, three short runs; 30 groups), **Mme de Rohan to Duplessis** 30 Oct 1599 (vol. 9 CLXIX,
+     "M. de 121 174 38 143") and Nov 1611 - Mar 1612 (vol. 11 CXCII, CXCVII, CC, CCXXXII; 84 groups), an unsigned
+     letter of 25 Jul 1612 (vol. 11 CCXLII, 9 groups). None in vols. 10 and 12 (OCR search only).
+     `beling/transcription/v9v12_figures.tsv`, context in a separate file. The twelve places of 81 63 in vol. 8 are in
+     `beling/transcription/v8_namecode.tsv`.
+   - The 1594 Rohan key on the new Rohan figures: coverage 0.57, −2.69 per letter, beats 85/200 permuted keys.
+     **Does not fit**: by 1611 Mme de Rohan used another table with Duplessis. The four values inferred in step 7: only
+     38 recurs ("M. de la vi [38] ne", 1599); extended key beats 130/200 random-value controls, **not supported** (one
+     group, almost no power). Rohan 1597 runs R1 and R18 still unread.
+   - 1595 Loménie: no clear copy found (archive.org, the 1625 edition, web). Cribs found: the editors' note under the
+     letter (vol. 6 p. 181: the affair is the sieur de Camor's plan to seize Mercœur, "Pour la dame de Querveno") and
+     the king's cipher letter of the same day printed in clear (vol. 6 CVI). They make "du sieur 810 62 110 4" =
+     "du sieur de Camor" and "810 44 109 27 32 10" = "de Bretagne" likely; not a key. Loménie's x10 word codes (23 of
+     95 groups) hardly occur in Duplessis's own letters (4 of 239): probably two systems.
+   - `beling/transcription/repo/` holds unchanged copies of `lomenie1595.txt`, `duplessis1597.txt` and
+     `ciphertext.txt`, frozen by sha256 for the tests.
+
 ## Remaining gaps
 
-- 1593 sign 44 (x/y, end of P1 and P2) and the two possible dropped groups in P1 ("larest") and S1 ("lenteprinse") - blocker: too-short; 44 occurs twice, b never; the dropped groups need the page images rechecked
-- Loménie 1595 (95 groups) and Duplessis Jan 1597 (90 groups): transcribed, a different system; the Rohan key does not fit - blocker: not-attempted; the folded 1593 key and its variants not yet tried
-- Later 1597 letters in vol. 7 (pp. ~169, 305, 335, 347) and vol. 8 (1598) - blocker: not-attempted; not yet transcribed
+- Loménie 1595 (95 groups): unread; neither the Rohan 1594 key nor Dudout's folded 1593 key fits (steps 5, 7). Cribs from the editors' note and the king's cipher letter CVI (step 8) give "de Camor" and probably "de Bretagne" - blocker: no-key-material; the original of CVI or of Loménie's letter would give the key
+- Duplessis's own figures, 1595-99 (to his wife and to Cargroy; about 240 groups incl. the name codes 81 63, 153 63, 33): unread, few x10 codes, probably a different table from Loménie's - blocker: no-key-material
+- Rohan 1597 (vol. 7 LXXXII, CXLI; 50 groups): the 1594 key fits; 672, 134, 160 inferred and not seen again; 38 seen once more (1599) and not supported by the pre-registered test; runs R1 and R18 not read - blocker: too-short
+- Rohan 1611-12 (vol. 11; 84 groups) and the unsigned 1612 letter (9 groups): a different table, unread - blocker: no-key-material
+- 1593 sign 44 (x/y, end of P1 and P2) - blocker: too-short; 44 occurs twice, b never (the two possible dropped groups in P1 and S1 were settled by step 6)
 
 ## Escalation
 
-- [ ] siblings: transcribe every bare-figure passage in vols. 5-8 and pool by system (vols. 5-6 and Jan 1597 done).
-- [n/a] clear-pages: printed edition; the editors printed decipherments only where they had them (vol. 6 Rohan 1594).
-- [x] known-keys: Rohan 1594 key tried on 1595-97, no fit (step 5); Dudout's 1593 key reads 1593 (step 6). Still to try on 1595-97.
-- [ ] print: originals possibly AN 402AP/13 (requested 25 Oct 2026) and the Mornay papers at the Institut / BnF.
-- [ ] key-rebuild: 1595-97 system not yet attacked beyond the Rohan key.
-- [ ] retry: after the 1595-97 attack.
+- [x] siblings: bare figures in vols. 5-12 transcribed (vols. 7-8 by step 7, vols. 9-12 and the vol. 8 name code by step 8; vols. 10 and 12 have none in the OCR).
+- [n/a] clear-pages: printed edition; the editors printed decipherments only where they had them (vol. 6 Rohan 1594). The king's cipher letter of 24 Feb 1595 (vol. 6 CVI) is printed in clear and covers the same affair as Loménie's (step 8).
+- [x] known-keys: Rohan 1594 key fits Rohan 1597 (step 7), not Rohan 1611-12 (step 8); on 1595-98 Duplessis/Loménie neither the Rohan key (step 5) nor the folded 1593 key (step 7) fits.
+- [ ] print: originals possibly AN 402AP/13 (requested 25 Oct 2026) and the Mornay papers (Nantes BM Dugast-Matifeux DM2/92-94, Institut / BnF); in particular Loménie's letter and the king's cipher letter CVI of 24 Feb 1595.
+- [ ] key-rebuild: structural look at the 1595-99 figures and two cribs (step 8); no key.
+- [ ] retry: after the print step.
