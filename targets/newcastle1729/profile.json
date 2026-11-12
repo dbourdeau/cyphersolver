@@ -243,6 +243,15 @@
    "kind": "literature search",
    "what": "Print search for a clear text of the report: HMC Polwarth I-V (vol. V searched inside on HathiTrust: no 'Port St. Mary', 'cipher' or 'Cadiz'; 3 hits for 'Pareti'), Coxe's Kings of Spain and Walpole, TNA and BL catalogues: nothing. Marchmont's note of 8 Aug 1729 (61001) says the two letters he forwarded were of 14 and 21 July; the report is probably the coded part of the 21 July letter (inference) (Andrew Beling, beling/).",
    "result": "failed"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Integration check of PR #448: check_4aug.py 158/170 (margin 0.7588), check_194.py 89/93 (margin 0.8925), full_table.py and open_groups.py reproduce byte for byte; own re-implementation of the 194 check 91/97. Duplicate found: targets/portstemarie1729 (page, catalogue 826) is the same document and code; this folder keeps Status in progress and gets no page.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -314,6 +323,6 @@
    }
   ],
   "key_file": "codetable.tsv",
-  "notes": "Key partly recovered, text not read (README Conventions: a key can be obtained while the text is not read). Unfinished: see NOTES.md. 11 Nov 2026 (Andrew Beling, beling/): the code table passed two pre-registered held-out checks (4 Aug clear copy 158/170; mssBLA 194 glosses 89/93); no printed clear text of the report found; the open groups stay open."
+  "notes": "Key partly recovered, text not read (README Conventions: a key can be obtained while the text is not read). Unfinished: see NOTES.md. 11 Nov 2026 (Andrew Beling, beling/): the code table passed two pre-registered held-out checks (4 Aug clear copy 158/170; mssBLA 194 glosses 89/93); no printed clear text of the report found; the open groups stay open. 12 Nov 2026 integration check: both held-out checks re-run and reproduced (own re-implementation of the 194 check 91/97); the target is a duplicate of portstemarie1729 (same document, same code, page and ledger row exist there): no page here, findings to be folded into that target; 1118 = tain (194 gloss) contradicts that page's 'trouver'."
  }
 }

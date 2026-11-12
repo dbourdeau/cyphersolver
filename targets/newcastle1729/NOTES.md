@@ -2,6 +2,8 @@
 
 Status: in progress
 
+**Duplicate, found at the integration check (12 Nov 2026).** This target and [`../portstemarie1729/`](../portstemarie1729/) (page docs/portstemarie1729.html, catalogue 826, README row "complete", 134 of 141 groups) are the same document: Huntington mssBLA 191 p. 5 (HDL 61005), the report enclosed to Newcastle on 8 Aug 1729, in the same code, rebuilt from the same glossed sibling letters. One key, one entry: this folder must not get a page or a ledger row of its own; the checks below (the 4 Aug clear copy, mssBLA 194, the print search, the open-group proposals) belong to the portstemarie1729 target and are to be folded into it by the maintainer, with two consequences for its page. (a) Its 134 of 141 includes 15 groups filled from context and alphabetical order; by the strict read bar those are holes (116 groups valued directly = 0.823), so that page would read "read in part", not "complete". (b) It fills 1118 as "trouver" ("je lui ai fait trouver bon"); the mssBLA 194 gloss reads 1118 as "tain" (60893 L14, "reponse cer-tain", retouched ink), which this folder records and which contradicts that value. portstemarie1729 was not edited here (its page review is owed). Until then this folder stays `Status: in progress`; its own count here (121 of 141 firm, 0.858) is the strict one.
+
 Catalogue #826. Huntington Library, William Blathwayt papers addenda, mssBLA 191 (HDL p15150coll7 id 61008), p. 5
 (HDL page 61005): an undated report of about 140 dotted code groups from an unnamed British agent at Port
 Sainte-Marie (El Puerto de Santa María), forwarded to the Duke of Newcastle on 8 Aug 1729. It has no decipherment on
@@ -160,6 +162,20 @@ Contributed by Andrew Beling with AI agents. Details in `beling/README.md`; the 
     No letter of that date is in the Huntington file [V].
   - `beling/results/full_table.tsv`: the full construction, one row per group (439) with every gloss and
     clear-copy attestation and a conflict flag (20 rows); `codetable.tsv` is not changed.
+
+## Integration check (12 Nov 2026)
+
+- Re-run: both hash lists check; `check_4aug.py` 158 of 170 (0.9294, best shuffled 0.1706, margin 0.7588), `check_194.py`
+  89 of 93 (0.957, best shuffled 0.0645), `full_table.py` (439 groups, 20 conflicts) and `open_groups.py` give the
+  committed outputs. My own re-implementation of the 194 check (table built from every `sib*.txt` except the
+  L194h60893 gloss lines, compared with the 194 transcription) gives 91 of 97 (0.938, 17 groups not in the table):
+  same picture.
+- These two checks show that the table agrees with a clear copy and with glosses on a letter it was not built from;
+  they do not read the report. Huntington images were not fetched at the integration check: the transcriptions were not
+  compared with the images.
+- Order of events (checks pre-registered, inputs hashed first) is by the contributor's record. The 1118 = "tain" gloss is
+  an observation, not a test (the gloss was seen before the round-2 plan was written).
+- See the Duplicate note at the top: portstemarie1729 is the same document.
 
 ## Remaining gaps
 
