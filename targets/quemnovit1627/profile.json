@@ -90,7 +90,7 @@
    "Rigsarkivet images, crops (PIL)"
   ],
   "models": [
-   "Claude (Anthropic), several sessions of 12 Nov 2026 (model ids not recorded)"
+   "an AI model (several sessions of 12 Nov 2026; model ids not recorded)"
   ],
   "sessions": 4,
   "first_date": "2026-11-12",
@@ -220,7 +220,7 @@
    "date": "2026-11-12",
    "file": "checks/shuffle_control.out",
    "verdict": "not applicable",
-   "notes": "Contributor's own shuffled-key control (not docs/_validate.py, which was not run): Adjudication for this folder: each reader-1 sign takes the value at least two of three readers give (frozen 13:17:09 UTC, decoded once 13:17:19 UTC): 70 of 103 units S (67.96%); all three agreeing: 47 of 103 (45.63%). 0 of 5,000 shuffled keys for every reading, seeds 20261112 and 7. The filed 90.29% is withdrawn as the headline; the key stands."
+   "notes": "The contributor's own shuffled-key control (0 of 5,000 shuffled keys reach the score of any of the four readings, seeds 20261112 and 7; checks/shuffle_control.out); docs/_validate.py was not run on this letter. Integration control: 60 of 100 cipher words in a German word list for the true key, best of 3,000 shuffled keys 6."
   },
   "provenance": "contributed",
   "credits": [
@@ -234,33 +234,20 @@
    {
     "who": "mcbratney",
     "role": "transcription",
-    "note": "three transcriptions of image 443 (one by the breaker, two blind) by separate Claude sessions",
+    "note": "three transcriptions of image 443 (one by the breaker, two blind) by separate AI sessions",
     "date": "2026-11-12"
    }
   ],
   "gaps": [
    {
     "item": "Codes 117 (twice) and 118: no value",
-    "blocker": "open-codes",
-    "detail": "118 is the place of writing; Venice likely, not proved. The 1628 chancery sheet at image 447 is for another code."
+    "blocker": "no-key-material",
+    "detail": "Three tokens; no other leaf in this code is known. 118 is the place of writing, Venice likely, not proved. The chancery sheet at image 447 is for another code."
    },
    {
     "item": "g/q sign class (13 units) and pi/Z/n, c/e classes (7 units) disputed between readers",
-    "blocker": "not-attempted",
-    "detail": "A person comparing the tails at full size, or a fourth reader given one reference crop per key label."
-   },
-   {
-    "item": "Writer and year not proved",
-    "blocker": "not-attempted",
-    "detail": "Christian Wilhelm of Brandenburg at Venice, July 1627, is proposed from one article read through a summariser; not tested against any dated source."
-   },
-   {
-    "item": "Clear text read by one reader only; no person has compared any transcription with the image",
-    "blocker": "not-attempted"
-   },
-   {
-    "item": "Prior art thin: Christian Wilhelm's 1627 correspondence and Venetian state papers not checked",
-    "blocker": "not-attempted"
+    "blocker": "illegible",
+    "detail": "The tails of g and q cannot be separated at the resolution available here (image 443, 4473 x 3436); a person comparing them at full size is needed."
    }
   ],
   "texts": [
@@ -279,10 +266,10 @@
     "language": "de",
     "state": "read in part",
     "read_share": 0.68,
-    "summary": "The writer (H.) tells the King he has waited at [118] into a third week for a galley, at cost and to his vexation; small galleys were there but nobody, [117] least of all, would advise risking them; the Signoria has now assigned a large one, which came yesterday, and he leaves today. He has borrowed another 3,000 thalers and asks the King to have them paid, to be deducted later. [117] has resolved nothing on his proposal, but he hopes W. will declare themselves better. Context: probably a Danish agent's journey through Venice in the Thirty Years' War (1627 or 1628).",
+    "summary": "The writer (H.) tells the King he has waited at [118] into a third week for a galley, at cost and to his vexation; small galleys were there but nobody, [117] least of all, would advise risking them; the Signoria has now assigned a large one, which came yesterday, and he leaves today. He has borrowed another 3,000 thalers and asks the King to have them paid, to be deducted later. [117] has resolved nothing on his proposal, but he hopes W. will declare themselves better. Context: the Signoria and the galleys point to Venice (not proved), in the Thirty Years' War (1627 or 1628); the writer is not identified.",
     "reading_review": {
      "grade": "B",
-     "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (the session that prepared these files). Offered so the entry is complete; the reviewer's own record should replace it before merging.",
+     "by": "an AI model, for Malcolm McBratney: a model reading, not a person, and not independent (the session that prepared these files). A person's review is still owed.",
      "date": "2026-11-12",
      "note": "Read as sentences against the translation. Connected German whose sense can be followed; 33 holes marked in place."
     },

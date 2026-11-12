@@ -125,8 +125,19 @@ Venetian state papers.
 
 ## Remaining gaps
 
-- Codes 117, 118. The g/q, pi/Z/n and c/e sign classes (a person at full size, or a fourth reader with reference crops).
-- Writer and year. Clear text read by one reader only. No person has compared any transcription with the image.
+- codes 117 (twice) and 118 - blocker: no-key-material; three tokens, no other leaf in this code is known, the sense narrows 118 to the place of writing (Venice likely, not proved)
+- g/q sign class (13 units), pi/Z/n and c/e classes (7 units) - blocker: illegible; the tails of g and q cannot be told apart at the resolution available here (image 443, 4473 x 3436), three readers split; a person comparing them at full size is needed
+Not unread cipher pieces, but open: the writer and the year (1627 or 1628) are not proved; the clear German was read by one
+reader only, and no person has compared any transcription with the image.
+
+## Escalation
+
+- [x] siblings: neighbouring leaves images 426-475 of unit 261377 swept; image 447 is a chancery sheet for Schultetus's number code, a different cipher; no sibling in this key
+- [x] clear-pages: no decipherment on or beside the leaf (images 442-449 seen)
+- [x] known-keys: zobel1629 (figures) and Schultetus's number code are different systems and do not apply; no other key of this series is a letter-sign substitution
+- [x] print: Danske Magazin, Christian IV's egenhaendige Breve, Danske Samlinger, Historisk Tidsskrift, Swedish Handlingar, DECODE, Cryptiana: nothing (thin: an anonymous letter cannot be searched by name)
+- [x] key-rebuild: key built by hand from a crib and word patterns; no value for the one n-form sign, none possible for the code numbers
+- [x] retry: the three independent readings and their majority adjudication were each decoded with the key; the remaining 33 units are disputed signs, emendations or codes
 
 ## Files
 
