@@ -1,0 +1,71 @@
+wackerbarth1717 - validation of key c (Saxon system S1, Wackerbarth's Vienna mission, March-June 1717)
+
+Not docs/_validate.py: these are the contributor's own pre-registered tests. Every protocol and amendment was hashed (SHA-256)
+before the run it governs. Each measurement was run ONCE. All files are in frozen/ (French originals, hashes alongside).
+Summary: two tests failed, then one held-out language test passed. The condition for reading was then changed AFTER the
+results were known (post hoc). Verdict recorded in profile.json: "weak".
+
+1. PROTOCOLE.md (SHA-256 bcd3da003a37dae063425741a2c3e41b8acd042a093d78dc66a9f7d0de69ee99) + Avenant 1 (fb4bbd7e...c922b6db)
+   Key KEY-W1717 (frozen, f2b68ad6...207a) built on the glossed views only (TRAIN). One run, scripts/mesure.py -> MESURE.json.
+   - Test A (cipher of view 0040 against the decipherment sheet of the time 0042-0043): 0.2036 vs max of 200 permuted keys
+     0.0855, margin 0.118 -> FAILED. Diagnosed afterwards (DIAGNOSTIC-POSTHOC.txt, ESSAI-OPUS.md, not decisive): the score
+     was divided by the whole sheet (about 1,812 letters), while the test had been cut down to view 0040 alone (about 424
+     letters), so the 0.85 threshold could not be reached.
+   - Test B (lexical cover of the first 360 groups of Relation XXII): 0.9375 vs max 0.9231 -> FAILED. The lexicon covers too
+     much: a permutation already reaches 77-92%. The measure did not discriminate.
+   Both portions (view 0040 and the first 360 groups of Rel. XXII) were used up by this run.
+   NB: frozen/PROTOCOLE.md has one storage location removed for publication (line 4), so it no longer matches this hash.
+   All other frozen files match their hashes.
+
+2. PROTOCOLE-AVENANT-2.md (2013135791a52eaf0261fd363c0c460027592eeb094d547eb036c7177c7ae2e1) + Avenant 2-bis
+   (191e0bbf083ea910d22d4df87e8aaf95de47ad1aecc31c3d0280c625c73c36b2). Keys b and c frozen beforehand (KEY-W1717bc.sha256).
+   One run, scripts/mesure2.py -> MESURE2.json (hashed with the script in MESURE2-AVANT.sha256).
+   - A' ground truth: the letter of 28 May 1717 (views 0057-0061), glossed at the time, held out of key b. Score = gloss words
+     recovered exactly. 0.3385 (195 words, 709 groups) vs max of 200 permuted keys 0.1282 (mean 0.0585), margin 0.210.
+     Thresholds fixed beforehand: >= 0.60 and margin >= 0.30 -> FAILED. Afterwards we saw why: without the 28 May letter, key b
+     had only 476 French glossed groups and wrong or missing values on frequent numbers. The 0.60 threshold had not been
+     calibrated. The glosses also abbreviate words that the cipher spells out (S. M., Mr., St., Angl.).
+   - B' held-out language test: view 0091 of Relation XXII (353 groups, never decoded before), key c. Criterion L7 = 4-gram
+     character model of French minus unigram log-likelihood, with values of three or more letters neutralised. L7 was chosen
+     by calibration on the training set only. Avenant 2-bis declares that the list of candidate criteria was extended after
+     the first calibration failed (z < 4), on the training set only and before the measurement.
+     Score 0.6453, z = 11.54 against 200 permuted keys (mean -0.3065, sd 0.0825, max -0.0971), gap 0.742. Thresholds: z >= 5.16,
+     gap >= 0.314, score >= 0.070 -> PASSED (3/3).
+   - Avenant 2 §5 allowed a reading only if A' passed (or was partial) AND B' passed. Under that rule: no reading.
+
+3. AVENANT-3.md (7b0ee565b69ce7848713c991b8f9be33bf25d58583681b5b4fd2ad2dd216c151, hashed 11 Nov 2026 18:04 CET), POST HOC.
+   Decision of Brice Dudout on the evening of 11 Nov 2026 ("wackerbarth, vas y ton conseil": go ahead with your advice).
+   B' alone is accepted as the condition for reading Relation XXII, on two conditions:
+   (a) Daniel's 95% rule is the final check;
+   (b) A' failed and the decision was taken after the measurement; both facts are declared everywhere.
+   The amendment was hashed before any new transcription (views 0094-0099 and the end of 0090) and before any decoding of
+   views 0092-0099. Those transcriptions were then frozen before decoding (releves/R22b.sha256, R22-0090-fin.sha256).
+   Result of the final check: 89.5% (< 95%) -> read in part.
+
+What this does and does not show
+- Shown: on a portion that had never been decoded, with a criterion calibrated beforehand, key c turns the Relation XXII
+  cipher into sequential French far beyond 200 permuted keys (z = 11.5). The decoding of view 0040 also reproduces the end of
+  the sheet of the time (seen after test A, not decisive).
+- Not shown: a ground-truth pass. A' failed, and no other glossed S1 letter of at least 300 groups is left in the volume to
+  redo it.
+- Seen beforehand (declared in each protocol §0): low-resolution thumbnails of views 0040, 0057, 0058 and 0089 before the
+  first protocol; the 28 May letter and its glosses before it was chosen as A' ground truth (key b was therefore built by a
+  mechanical rule).
+- Letter of 24 April 1717: its reading is a check against the sheet of the time, not blind. The sheet had been transcribed
+  (for test A) before the reading.
+
+Integration check, 12 Nov 2026 (PR #418; independent verification, then integration)
+- Stated plainly: the declared ground-truth test A' FAILED (0.339 against a bar of 0.60, margin 0.21 against 0.30). The
+  protocol required A' and B' both. Reading on B' alone (Avenant 3) is a rule changed after the result. The verdict stays
+  "weak". A' could not be re-run (lexicon and corpora are not in the folder); its figures match MESURE2.json.
+- Reproduced: frozen hashes (PROTOCOLE.md excepted, as declared); keys b and c rebuild byte for byte from the glossed views;
+  a second decoder gives the same Relation XXII; view 0091 with an own scorer and the project's French model: z = 7.3,
+  above all 200 permuted keys (the PR's own criterion gave 11.5).
+- New evidence, separate from the failed test and not claimed in the PR: the cross-volume check. K1715, learnt only from
+  the 1715 glosses of Loc. 00712/05, turns Relation XXII (Loc. 00713/01) into French: 90% coverage, z = 8.8 over all 2,939
+  groups. Key c likewise decodes the 1715 letter (z = 5.6). Every permuted-key control is beaten on every document with
+  either key. K1715's glosses confirm three section-B proposals (4 = x, 76 = st, 20 = b) and give 306 = Vienne.
+- The order of events (hash before run, amendment before the remaining transcriptions) rests on the contributor's record:
+  all commits and timestamps are of 11 Nov 2026.
+- Counts: one rule for the whole target, integration_recount.py (Relation XXII 664/716 = 92.7%; 24 April key check
+  193/207 = 93.2%; 20 Nov. 1715 841/922 = 91.2%).
