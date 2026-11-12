@@ -4771,6 +4771,15 @@
    "by": "",
    "year": 1717,
    "note": "By Brice Dudout's check it decodes the glossed Nov.-Dec. 1717 letters of Loc. 00713/01 as glossed; a different key from Wackerbarth's S1."
+  },
+  {
+   "id": "k-weber-we025",
+   "label": "US State Department code WE025 (1,592 elements), as printed by Ralph E. Weber",
+   "kind": "scholar's key",
+   "by": "Ralph E. Weber (table); transcribed by Andrew Beling",
+   "year": 1811,
+   "found": 1979,
+   "note": "The table Weber prints as WE025 in United States Diplomatic Codes and Ciphers, 1775-1938 (1979), in Andrew Beling's transcription of the book's text layer; the 341 rows for numbers in Poinsett's letters of 1811-1814 are in targets/poinsett1813/beling/key/we025_poinsett.tsv. The book was not seen by the project; year is the earliest Poinsett letter known in the code."
   }
  ],
  "links": [
@@ -7169,12 +7178,6 @@
    "note": "its handwritten list gives be-he = 600-605, the meaning of the addition; its own numbers do not fit the line"
   },
   {
-   "key": "k-poinsett1814",
-   "target": "poinsett1813",
-   "how": "partial",
-   "note": "95 values cover 161 of 437 groups of the 20 Feb 1813 letter; no sentence reads"
-  },
-  {
    "key": "k-ferdinand1473",
    "target": "ferdinand1473",
    "how": "rebuilt from",
@@ -7683,6 +7686,18 @@
    "target": "wackerbarth1717",
    "how": "rebuilt from",
    "note": "rebuilt by the contributor from the interlinear glosses of the time in both volumes; Relation XXII and the letter of 20 Nov. 1715 read in part with it"
+  },
+  {
+   "key": "k-poinsett1814",
+   "target": "poinsett1813",
+   "how": "partial",
+   "note": "95 values cover 161 of 437 groups of the 20 Feb 1813 letter; no sentence formed with them (superseded 11 Nov 2026 by the printed table)"
+  },
+  {
+   "key": "k-weber-we025",
+   "target": "poinsett1813",
+   "how": "read unchanged",
+   "note": "identified by Andrew Beling; reproduces the clerk's decipherment of 14 June 1814 (0.935 of letters) and reads the 20 Feb 1813 passages in part: 385 of 437 groups from the first reading of the number, seven groups give no sense"
   }
  ],
  "sources": [
@@ -10221,6 +10236,26 @@
    "key": "k-flemming-k0",
    "target": "wackerbarth1717",
    "note": "compared by the contributor with S1, with its shifted variant: not the key of the 1715 and spring 1717 letters (NOTES)"
+  },
+  {
+   "key": "k-jqa1385",
+   "target": "poinsett1813",
+   "note": "applied directly and under every constant shift to the 1813 groups: best z 4.3 among about 9,000 settings, junk decodes (shift_test.py)"
+  },
+  {
+   "key": "k-armstrong972",
+   "target": "poinsett1813",
+   "note": "applied directly and under shifts to the 1813 groups: no fit (NOTES section 2)"
+  },
+  {
+   "key": "k-pinckney-legation",
+   "target": "poinsett1813",
+   "note": "applied directly and under shifts to the 1813 groups: no fit (NOTES section 2)"
+  },
+  {
+   "key": "k-mountflorence1801",
+   "target": "poinsett1813",
+   "note": "applied directly and under shifts to the 1813 groups: no fit (NOTES section 2)"
   }
  ]
 }

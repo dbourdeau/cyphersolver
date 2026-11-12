@@ -1,0 +1,63 @@
+# poinsett1813/beling: checker output and script runs, 2026-11-11 10:55 EST, in a worktree of dbourdeau/cyphersolver on branch poinsett1813-beling, cut from origin/main a760c7d2 (origin/main was 84eb800e at the time of the run, with no change to targets/poinsett1813, contributors.json, profile.schema.json or the two checkers between them), plus this folder and the NOTES.md / profile.json edits (uncommitted).
+# Scripts run from targets/poinsett1813/beling with python3 -I. PATH/we025_table.tsv is our full transcription of Weber's table (not in the repository).
+
+$ python3 docs/_check_profile.py poinsett1813
+poinsett1813: profile.json
+  [gap ] system.nulls = "unknown"
+  [gap ] system.doubled_letters = "unknown"
+  result: valid, 2 unknown field(s)
+(exit 0)
+
+$ python3 docs/_check_reading.py poinsett1813
+not a reading  0.164  11/67 sentences  holes 0.307  fr reading  tr=y  beling/decryption_1813-02-20.txt  [read in part]
+marginal       0.693  61/88 sentences  holes 0.098  en reading  tr=y  beling/reading_1813-02-20.md  [read in part]
+target: clean share 0.693, worst 1813-02-20 0.693, shapes {'reading': 1}, translated 1/1
+(exit 0)
+
+$ research/reading_audit/v10_relabel.py share() on the reading (read_share = 1 - (holes + doubtful) / (words + holes))
+reading_1813-02-20.md: words 360, holes 33, doubtful 0, read_share 0.916 (profile: 0.916)
+
+$ python3 -I scripts/reading_1813.py > tests/reading_1813_lines.txt; head -6 tests/reading_1813_lines.txt
+(exit 0)
+437 {'A': 21, 'D': 385, 'R': 4, 'H': 7, 'I': 20}
+D 385 88.1%
+A 21 4.8%
+R 4 0.9%
+I 20 4.6%
+H 7 1.6%
+compared with our results of 11 Nov 2026 (reading_1813_lines.txt, reading_1813_groups.tsv): identical, identical
+
+$ python3 -I scripts/make_decryption.py | head -2
+transcriptions: first 420, second 5, differ 5, unread 7
+vs number used: same 402, differ 31, Bourdeau digit unread 4
+
+$ python3 -I scripts/heldout_1814.py | head -6
+as transcribed (Daniel ciphertext_1814.txt, RC + Duplicate ends): groups=123 clerk_letters=401 decode_letters=403
+  WE025: matched letters 376, ratio 0.935
+  shuffled keys: not run (needs --full-table)
+with image rereads 337->338, 435->485: groups=123 clerk_letters=401 decode_letters=402
+  WE025: matched letters 383, ratio 0.954
+  shuffled keys: not run (needs --full-table)
+
+$ python3 -I scripts/heldout_1814.py --full-table PATH/we025_table.tsv | head -6
+as transcribed (Daniel ciphertext_1814.txt, RC + Duplicate ends): groups=123 clerk_letters=401 decode_letters=403
+  WE025: matched letters 376, ratio 0.935
+  shuffled x200: matched letters median 85, best 140; ratio mean 0.184 sd 0.046 best 0.306; z(ratio) = 16.3
+with image rereads 337->338, 435->485: groups=123 clerk_letters=401 decode_letters=402
+  WE025: matched letters 383, ratio 0.954
+  shuffled x200: matched letters median 85, best 138; ratio mean 0.185 sd 0.045 best 0.302; z(ratio) = 17.0
+tests/heldout_1814_result.txt compared with our result of 11 Nov 2026 (heldout_1814_result.txt): identical
+
+$ python3 -I key/extract_key.py PATH/we025_table.tsv --check
+sha256 of the full table given: 26dad03e814111e1ae9b52e995882b02f3933465efa0c5ed4189c55f5510bbee
+frozen hash (we025_SHA256.txt):   26dad03e814111e1ae9b52e995882b02f3933465efa0c5ed4189c55f5510bbee
+we025_poinsett.tsv matches a rebuild from the full table
+(exit 0)
+
+$ shasum -a 256 key/we025_corrections.tsv key/we025_postfreeze_corrections.tsv  (frozen values in key/we025_SHA256.txt)
+2e1a9a066f25efe599119aa89bfd048f89eec62eb17fbf78009f1f0e52e99962  key/we025_corrections.tsv
+fe638748dacb78dd9cb184921c2ba6313d1bb9c205af4f6203b1974f80b102cf  key/we025_postfreeze_corrections.tsv
+
+$ shasum -a 256 transcription/*  (as recorded on 1 Nov 2026: numerals d31b3043..., corrections 465e1b05...)
+465e1b05cd2a697aa9ccec8645ff47ba5f855918e9948a7d7173cf63181e707a  transcription/corrections_after_freeze.txt
+d31b304356b1ce8b2579f141889d383faf151ec70866a3e856c85b7550d05961  transcription/numerals_1813_frozen.txt
