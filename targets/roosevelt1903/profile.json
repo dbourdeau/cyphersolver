@@ -96,7 +96,8 @@
    "kind": "verification",
    "what": "Project check: 23 groups (22 distinct) each have an entry in key_excerpt.tsv and the replaced text is a coherent English telegram (VERIFICATION.md). No scan or codebook page compared.",
    "result": "worked"
-  }
+  },
+  {"kind": "verification", "date": "2026-11-14", "technique": ["key matching", "plaintext matching"], "what": "Brice Dudout (Claude Opus 5.5): all 22 distinct codebook groups of the telegram looked up on the NARA page images of microfilm T1171 roll 1 (catalog id 417267710, catalog.archives.gov/medialz, fetched one image every 5 s): every entry in key_excerpt.tsv is the printed 'Message or true reading' of that page and number (e.g. 561 69 What is the, 412 76 Object, 184 27 British government, 473 72 Request, 339 00 I, 528 44 Do not think, 253 61 Desirable, 536 64 Trip, 384 01 Should be made, 531 49 To, 368 85 Judgment). Film image = printed page - 3 up to about p. 370, page - 2 above. The roll's NARA target sheet (image 0004) reads 'Cipher and Key, July 1, 1867'; the book's title page (image 0006) reads 'Cipher and Key.' without a date, so the '1876 Red Cipher' name was not confirmed. Not checked: the spelling table for KIEL (U a w c) and the telegram scan.", "result": "worked"}
  ],
  "outcome": {
   "validation": {
@@ -105,9 +106,7 @@
    "notes": "A codebook lookup with 22 distinct groups; the coherence of the decoded sentences is the evidence, and no n-gram test applies."
   },
   "class": "read",
-  "verification": [
-   "none"
-  ],
+  "verification": ["independent verification"],
   "method": "read after matching with key from external sources",
   "key": "not applicable",
   "method_basis": "The key is an existing codebook (the 1876 State Department Red Cipher) that had not been connected with this telegram; the contributor identified it and applied it. The project did not see the codebook pages and checked only that the result is coherent.",
@@ -132,7 +131,8 @@
     "role": "pointer",
     "note": "study of the State Department codes that supplied the clue for the group 10000 and the pointer to the digitized codebook",
     "source": "https://hdl.handle.net/10062/109746"
-   }
+   },
+   {"who": "dudout", "role": "verification", "note": "all 22 codebook entries checked on the NARA T1171 roll 1 page images: all agree; the roll's target sheet is dated 1867; VERIFY_dudout_20261114.md", "date": "2026-11-14"}
   ],
   "gaps": [
    {
