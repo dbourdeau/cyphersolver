@@ -1,6 +1,6 @@
 # Biermann to Klingenberg, 1675: the Klingenberg cipher of the Biermann copybook (Unsolved Catalogue no. 465)
 
-Status: read in part. Key rebuilt from the ciphertext (no key sheet, no decipherment). Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic); issue #424. Folder prepared 12 Nov 2026; 22 further passages added 13 Nov 2026 (PR #490, see "The 22 further passages" below; they are not in the count of record).
+Status: read in part. Key rebuilt from the ciphertext (no key sheet, no decipherment). Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic); issue #424. Folder prepared 12 Nov 2026; 22 further passages added 13 Nov 2026 (PR #490, see "The 22 further passages" below; they are not in the count of record); their German readings and English translations added 13 Nov 2026 (PR #496, "Integration check of PR #496" below).
 
 ## What this folder is, and what it is not
 
@@ -36,6 +36,7 @@ Limits of these figures: the intended words (the gloss files) were written after
 - 4 May 1675 and the three drafts: transcription, decryption, gloss, German reading with every hole in place, full English with the same holes. State: read in part.
 - The seven copybook letters of 8 May to 24 June: transcription, decryption, glosses (v3 and v4), rule-built German reading with a punctuated copy, full English with the same holes. State: read in part. The English was added on 12 Nov 2026 at the reviewer's request; it adds no read token, and every count in this file is unchanged.
 - Sixteen further letters (6 February to 21 June) on which the key was built: transcription and decryption only, as evidence for the key. No count of record.
+- The 22 further passages (PR #490, readings added by PR #496, 13 Nov 2026): transcription, decryption, ledger, word units, blind second transcription, and for each a rule-built German reading (holes in place; an E unit printed `decode[?word]` only where it passes the contributor's similarity test) and an English translation line for line with the holes in the same order, by an AI model and not checked by a German reader. State: read in part, no passage reaches 95%; not in the count of record.
 
 The German readings are built by rule (`[?word]`, `[n]`, `[...]`; see the head of each file), not polished: no punctuation or capitals of ours in the cipher passages. The readings of the seven copybook letters also carry a second section, `Punctuated reading`: the punctuation there is ours; the word division is the rule-built one from the gloss, also ours, since the cipher marks none; no decoded letter, capital or hole is changed (checked by stripping our marks and comparing token for token).
 
@@ -122,7 +123,7 @@ Prior art (checked on archive.org, 13 Nov 2026): the printed protocol of the Pri
 
 Controls: the contributor reports 0/5,000 shuffles per passage (German 4-gram, two seeds) for every filed passage; the script is not in the folder (only `shuffle_words.py`) and three passages have no output file. A control of our own (`de-modern`, order 4, no spaces; v4 word values shuffled over the word codes, signs and table fixed; 1,000 shuffles; seed 1675) gives 0 of 1,000 at or above the real score for 13 passages and 1 to 29 of 1,000 for nine (09-06, 09-23, 136R, 149R, 177R, 193R, 10R, 235R, 251R); z 1.6 to 4.5. As for the eleven letters, the word layer is weakly separated by a character model.
 
-Not done, with no outside blocker (open to anyone): a German reader's judgment of the intended words (written by the model that built the key after decoding; the blind readers knew the key); a script for the contributor's 4-gram control; and a reading file and English translation for each passage. What the passages are not: no reading file and no English translation (a decode with a German word-unit gloss); not read to the README bar (no passage reaches 95%); the class stays "read in part".
+Not done, with no outside blocker (open to anyone): a German reader's judgment of the intended words (written by the model that built the key after decoding; the blind readers knew the key); a script for the contributor's 4-gram control. (The reading file and English translation of each passage were added by PR #496, 13 Nov 2026, see the last section.) What the passages are not: not read to the README bar (no passage reaches 95%); the class stays "read in part".
 
 ## Integration check of PR #490 (13 Nov 2026, round 5)
 
@@ -131,6 +132,12 @@ Not done, with no outside blocker (open to anyone): a German reader's judgment o
 - Images (api.rigsarkivet.dk answered): 136R, 79 groups, all agree; 214R-216R (image 215), 124 groups, all agree; 203 groups, no disagreement on digits; sign identity (F, K, H against #) is a judgment on glyph forms. The other 20 passages were not compared with the images here.
 - Own control and own filing arithmetic as above. The prior-art file was checked against archive.org text.
 - Nothing already in the folder (NOTES.md before this section, profile.json, counts.txt, the page) was changed by the PR; the count of record is unchanged.
+
+## Integration check of PR #496 (13 Nov 2026, round 6): readings and translations of the 22 passages
+
+Verified by own scripts over all 22 passages (not a sample): stripping our punctuation from the punctuated reading gives the reading back line for line; the table of E units at the end of each reading has exactly as many rows as the ledger has E units (733 in all) and as many printed emendations as the reading has `[?word]` (210); the English has every `[n]` and `[blot]` in the same order as the German (21 of 22; 27 March differs only by the six `[0]`, the O sign written as the digit 0, which the contributor discloses); the reading equals the ledger's decode column word for word on 3,384 of 3,386 units (the other two are one unit with two blots shown as one `[blot]`, 68R-72L). Five passages (214R-216R, 10R-11L, 287R-289L, 50R-51R, 136R) were read as German sentences against their English: they build clauses with holes; the English follows.
+
+What this changes and does not: no key value, ledger or figure changed; every passage stays read in part (best 214R-216R, 93 of 102 word units = 91.18%; 87.9% by tokens). The emendations `decode[?word]` are the first reader's intended words (written after decoding) and are not read words; 523 of 733 E units stay as decoded. The English is by an AI model, not checked by a German reader (stated in each file): that check is open to anyone. The 16 short cipher lines in 10 passages that the contributor lists are word for word only. The profile now lists the 22 passages as documents and `read in part` texts (reading_review grade B by the integration pass, not independent of the contributor's AI translation). The claims review of the changed page sentences is by line-by-line fallback; an independent reader is still owed.
 
 ## Files
 
