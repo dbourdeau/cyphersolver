@@ -100,9 +100,10 @@ Narváez 2019 and 2025 and M. W. González, *Con Carranza*, were not read (see `
 
 ## Remaining gaps
 
-- M01, the three groups before A REUNIRSE ("eln") - blocker: illegible. No word; a clerk's slip or a misread, with no
-  second occurrence.
-- The day of the month (2[?]) - blocker: illegible.
+- M01, the three groups before A REUNIRSE ("eln") - blocker: too-short. The three typed groups are legible (45-55-52) and
+  decrypt to "eln", which is no word; a clerk's slip or a name the key cannot give, with no second occurrence to test
+  either on. They count as not read.
+- The day of the month (2[?]) - blocker: illegible. The integration check read the typed date as 22 on the scan, the second figure partly worn; not relied on.
 - The key rests on one sheet; 42, 43, 57, 58 and 79 occur once - blocker: too-short. The split-half test does not
   recover the key.
 
@@ -130,3 +131,23 @@ ciphertext-only in this round. 8.957.1-2 returned 404 on the image route.
 (`validation_pairs.py`, `hillclimb.py`, `decrypt.py`, `check_marks.py`, `count_words.py`, `coded_only.py`, `reading_debug.py`; standard
 library only; run from this folder, `hillclimb.py` needs the repository root for the lexicon); `work/`
 (`fit_7890_full.txt`, `heldout_7890.txt`, `heldout_7890_b.txt`: the fits on all runs, on M01-M08 and on M01-M12).
+
+## Integration check (13 Nov 2026)
+
+Done by the integrating session, not by the contributor. Reproduced: `scripts/check_marks.py` passes (16 runs, 2 marks);
+`scripts/decrypt.py` gives the same decryption (the file differs only by line endings); `scripts/count_words.py` gives 61
+coded words, 59 verbatim, 1 repaired, 1 open; `docs/_validate.py` gives the same figures (z 7.4, pass). `scripts/hillclimb.py`,
+run unchanged (python3 -I, 14 s), gives the same fit: 20 of the 23 cells as in the final key, and the same three misfits that
+were set by reading (57 j for ll, 77 f for v, 79 v for x). An own decoder written from `key.tsv` (nothing of the contributor's
+scripts imported) gives the same sixteen lines. The CEHM image LXVIII-1.7.890.1.0001 was fetched (plain http, no refusal) and
+M01 to M12 (about 190 groups, typed and clear) were compared with the transcription: every group agrees. The split-half test is
+a failed test and is published as one: fitted on M01-M08 alone the same program does not find the key (20 symbols, no Spanish),
+and on M01-M12 alone it gives 10 of 22 cells (the contributor's figures, not re-run); the key is not validated by a held-out passage. What makes it credible instead is
+that 23 symbols were fitted on 290 letters of one monoalphabetic text, far above what a fit needs, that the result is clean
+Spanish with place names and surnames the trigram model does not know (Cerralvo, Lampazos, Villaldama, Laredo, San Ygnacio;
+Castro, Dávila Sánchez, Santoscoy), that the clear words typed before and after each run fit the decrypted runs ("Hoy salió
+... con sus fuerzas", "plaza que ... cuando más ... próximos", "Pasado mañana ... donde ... a fin de mandarles ... a que me
+refiero"), and that the key has internal order. Three cells (ll, v, x) were set by reading and 42 h, 43 g, 58 q occur in
+one place each. Strict share by the README rule: 59 of 61 coded words (96.7%; the repaired word and the open word count as not
+read), over 95%, so the class stays read; key recovered from ciphertext-only. The identification of the writer as Pablo
+González is the contributor's inference (the papers, the letterhead and a letter of Murguía), not a name on the sheet.

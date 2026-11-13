@@ -5092,6 +5092,14 @@
    "by": "WAINUT",
    "year": 1914,
    "note": "Two-figure groups 10-99; the tens figure picks one of two homophones of each letter, 7x-9x are word groups (96 de, 99 que, 82 enemigo, 87 para). 60 values rebuilt from the contemporary pencil decipherment on the typed copy of LXVIII-1.14.1943.1 (targets/murguia1914) and applied unchanged to the sheets LXVIII-1.17.2435.1 (fuentes1914) and LXVIII-1.23.3165.1 (carranza1914); key partial."
+  },
+  {
+   "id": "k-gonzalez1913",
+   "label": "Number substitution of the order to Col. Saucedo, Matamoros, December 1913 (key recovered from the ciphertext)",
+   "kind": "rebuilt here",
+   "by": "WAINUT",
+   "year": 1913,
+   "note": "23 two-figure numbers (41-79), one per letter, in LXVIII-1.7.890.1; fitted by hill-climbing on Spanish letter trigrams over the 290 groups and three cells (ll, v, x) set by reading; the split-half test failed, so the key rests on the reading."
   }
  ],
  "links": [
@@ -8232,6 +8240,12 @@
    "target": "carranza1914",
    "how": "read unchanged",
    "note": "frozen key applied unchanged to the eight coded runs; every fully read group of the sheet has a value"
+  },
+  {
+   "key": "k-gonzalez1913",
+   "target": "gonzalez1913",
+   "how": "rebuilt from",
+   "note": "recovered from the ciphertext of the one sheet by hill-climbing; split-half test failed"
   }
  ],
  "sources": [
@@ -9584,6 +9598,10 @@
   {
    "source": "s-cyphersolver",
    "key": "k-extra3-murguia1914"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-gonzalez1913"
   }
  ],
  "unlinked": {
@@ -10926,6 +10944,11 @@
    "key": "k-vibejuel1649",
    "target": "juel1647",
    "note": "Peder Vibe's old cipher tried on register p. 6 (3-32 set): no Danish; it does read register p. 115, which is on vibejuel1649"
+  },
+  {
+   "key": "k-extra3-murguia1914",
+   "target": "gonzalez1913",
+   "note": "the Clave Extra 3 key applied to the runs gives no Spanish; a different system"
   }
  ]
 }

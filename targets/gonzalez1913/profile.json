@@ -153,6 +153,23 @@
    ],
    "what": "Statistical validation (docs/_validate.py on validation.tsv, the mechanical values of the frozen key per group; scripts/validation_pairs.py): 290 read tokens, 23 types, es-modern order 4: reading -2.216 per letter; random keys mean -7.613, max -5.222 (z 7.4); key annealed onto shuffled ciphertext best -4.004 (mean -4.103, z 22.6); annealer on the real text -2.918. Verdict: pass.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "control",
+   "what": "Integration check (13 Nov 2026): scripts/hillclimb.py re-run unchanged (python3 -I) reproduces the fit (20 of 23 cells as in the key; the three misfits 57 j, 77 f, 79 v set by reading as stated); own decoder from key.tsv (nothing imported) gives the same sixteen lines; scripts and docs/_validate.py re-run with the same figures (59 of 61 verbatim; z 7.4, pass). The split-half test stays published as failed.",
+   "result": "worked",
+   "technique": [
+    "hill climbing",
+    "statistical test",
+    "language-model scoring"
+   ]
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Integration check (13 Nov 2026): CEHM image LXVIII-1.7.890.1.0001 fetched over plain http (no refusal); M01-M12 (about 190 groups, typed and clear) compared at full resolution: every group agrees; the typed date reads 22 on the scan. Strict share confirmed: 59 of 61 coded words verbatim (96.7%), read.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -218,8 +235,8 @@
   "gaps": [
    {
     "item": "M01, the three groups before A REUNIRSE ('eln')",
-    "blocker": "illegible",
-    "detail": "No word; a clerk's slip or a misread, with no second occurrence."
+    "blocker": "too-short",
+    "detail": "Legible typed groups (45-55-52) that decrypt to 'eln', no word; a clerk's slip or a name the key cannot give, with no second occurrence. Counted as not read."
    },
    {
     "item": "Key validation",
@@ -228,7 +245,8 @@
    },
    {
     "item": "Day of the month (2[?])",
-    "blocker": "illegible"
+    "blocker": "illegible",
+    "detail": "The typed day is 2 and a worn figure; the integration check read 22 on the scan; not relied on."
    }
   ],
   "validation": {
@@ -260,6 +278,11 @@
    "power": -2.918,
    "verdict": "pass",
    "notes": "claimed per-occurrence score -2.216; polyphony 0.0; 0 unread tokens left out; annealer on the real text from random keys reached -2.918"
+  },
+  "codes_open": {
+   "open": 0,
+   "total": 0,
+   "tokens_open": 0
   }
  }
 }
