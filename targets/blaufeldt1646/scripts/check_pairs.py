@@ -1,0 +1,114 @@
+"""Recheck the key against the glossed pairs, and grade the held-out test. Standard library only.
+
+    python scripts/check_pairs.py
+
+1. pairs.tsv: every row (signs of one cipher word on 24852, and the contemporary gloss over it) is
+   decrypted with key_frozen.tsv and must give the gloss letter for letter (case, accents, spaces, apostrophes and
+   points ignored; v = u). Prints which key tokens the pairs attest. Exit 1 on any row that differs.
+2. heldout_24853.tsv: the held-out words of 24853 are decrypted the same way and compared with the gloss;
+   the words that differ are listed (not a failure: they are graded by hand as spelling variants or errors).
+"""
+import pathlib
+import re
+import sys
+import unicodedata
+
+sys.stdout.reconfigure(encoding='utf-8')
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.dont_write_bytecode = True
+sys.path.insert(0, str(ROOT / 'scripts'))
+from decrypt import load_key  # noqa: E402
+
+
+def norm(s):
+    s = unicodedata.normalize('NFD', s)
+    s = ''.join(c for c in s if not unicodedata.combining(c)).lower().replace('v', 'u')
+    return re.sub(r'[^a-z]', '', s)
+
+
+def dec(signs, key):
+    out, used = [], []
+    for t in signs.split():
+        if t in ('=', '.', '|'):
+            continue
+        n = 1
+        if t.endswith('^'):
+            t, n = t[:-1], 2
+        used.append(t)
+        v = key.get(t, '[?' + t + ']')
+        out.append(v * n if not v.startswith('[') else v)
+    return ''.join(out), used
+
+
+def rows(path):
+    for line in open(path, encoding='utf-8'):
+        if line.startswith('#') or not line.strip():
+            continue
+        yield line.rstrip('\n').split('\t')
+
+
+full = load_key(ROOT / 'key_frozen.tsv')
+# the held-out test and the pair check use only the rows built from 24852 (source column not '24853: ...')
+late = {l.split('	')[0] for l in open(ROOT / 'key_frozen.tsv', encoding='utf-8')
+        if l.count('	') >= 2 and l.split('	')[2].startswith('24853')}
+key = {t: v for t, v in full.items() if t not in late}
+ok = True
+n = signs = 0
+seen = set()
+for r in rows(ROOT / 'pairs.tsv'):
+    if r[0] == 'frame':
+        continue
+    frame, s, gloss = r[:3]
+    got, used = dec(s, key)
+    n += 1
+    signs += len(used)
+    seen.update(used)
+    if norm(got) != norm(gloss):
+        print(f'FAIL pairs.tsv {frame} {s!r}: key gives {got!r}, gloss {gloss!r}')
+        ok = False
+codes = [t for t in key if key[t].startswith('[')]
+letters = [t for t in key if t not in codes]
+print(f'pairs.tsv: {n} glossed words, {signs} signs and groups, all decrypt to the gloss: {ok}')
+print(f'  letter signs attested: {len([t for t in letters if t in seen])} of {len(letters)}'
+      f'{"; not attested: " + " ".join(t for t in letters if t not in seen) if any(t not in seen for t in letters) else ""}')
+print(f'  code groups attested: {" ".join(t for t in codes if t in seen)}'
+      f'{"; not attested: " + " ".join(t for t in codes if t not in seen) if any(t not in seen for t in codes) else ""}')
+
+same, diff, code = 0, [], []
+g_ok = g_bad = g_unk = 0
+unk = set()
+for r in rows(ROOT / 'heldout_24853.tsv'):
+    if r[0] == 'line':
+        continue
+    lid, s, gloss = r[:3]
+    got, used = dec(s, key)
+    exp = norm(gloss)
+    # group-level grade, only where the word has as many letters as groups (doubling bars counted)
+    letters = []
+    for t in s.split():
+        if t in ('=', '.', '|'):
+            continue
+        letters.append((t.rstrip('^'), 2 if t.endswith('^') else 1))
+    if sum(n for _, n in letters) == len(exp):
+        i = 0
+        for t, n in letters:
+            want = exp[i:i + n]; i += n
+            if t not in key:
+                g_unk += 1; unk.add(t)
+            elif norm(key[t] * n) == want:
+                g_ok += 1
+            else:
+                g_bad += 1
+    if all(key.get(t, '').startswith('[') for t in used):
+        code.append(f'{s} = {got} (gloss {gloss!r})')
+        continue
+    if norm(got) == norm(gloss):
+        same += 1
+    else:
+        diff.append(f'{lid} {got!r} vs gloss {gloss!r}')
+print(f'held-out 24853: {same + len(diff)} words, {same} letter for letter with the gloss; differ: '
+      f'{"; ".join(diff) if diff else "none"}; code groups: {"; ".join(code)}')
+print(f'held-out 24853, groups: {g_ok} give the gloss letter, {g_bad} give a wrong letter, {g_unk} have no value in '
+      f'the key built from 24852 ({" ".join(sorted(unk))}); groups with a value: {g_ok}/{g_ok + g_bad} = '
+      f'{100 * g_ok / max(1, g_ok + g_bad):.1f}%')
+sys.exit(0 if ok else 1)
