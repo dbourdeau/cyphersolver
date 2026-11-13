@@ -239,7 +239,7 @@ All re-run for this folder with `python3 -I` (standard library):
 - Despatches 1676-1678 (`despatches/`): word codes with no value in the key state used (331, 348, 358, 418, 435, 441 under v9; 174, 175, 179, 355, 400, 470 and others under v10) - blocker: open-codes
 - Despatch of 12/22 Feb 1676: line ends of the left pages lost in the gutter - blocker: illegible; a decode-blind second transcription recovered 17 numerals, the rest are lost in the binding
 - Despatches of 3/13 Nov, 17/27 Nov and 1/11 Dec 1677 and the French copy of 24 Nov/4 Dec 1677: 131, 100, 104 and 70 word units - blocker: too-short; shuffle tests failed on pages 165L, 493L and 515L
-- Despatches of 6/16 and 13/23 Oct 1676: holes in most sentences under keys v4-v8 - blocker: no-key-material; every bare page of the volume has been decoded once and the sister volumes are not digitised
+- Despatches of 6/16 and 13/23 Oct 1676: holes in most sentences under keys v4-v8 - blocker: no-key-material; every bare page of the volume has been decoded once and the sister volumes are not digitised (integration note, 13 Nov 2026: the volume's chancery glosses of Sep 1676-Jan 1678 were harvested only in part for v8-v10, about twenty glossed images; more gloss values could be taken, but any new decode of these pages would be a re-score, not a held-out test, so the frozen first pass stays the figure)
 - Höjer 1875, Trolle-Bonde D.1, Grauers 1926 and AAE Correspondance politique Suède 1676-78 for the despatches - blocker: needs-physical-access; the 12/22 Aug 1676 despatch is NOT FIRST (Wimarson II)
 
 Not gaps in the unread cipher, but limits of the evidence: no person has compared any transcription with the images (the
@@ -282,12 +282,47 @@ in-sample for v3 and carries no count. The result of v3 is the nine held-out pag
 Catalogue 2317 narrowed (not removed): images 327-330 (the Swedish letter with Lillieroot), 114 left (a different code) and
 other bare leaves remain unread.
 
+## Integration check of PR #525 (13 Nov 2026): the ten despatches
+
+By an AI agent for the maintainer, not a person. PR #525 adds `despatches/` (134 files), `timestamps/pr_folder/` and the section
+"Key states v4 to v10" above; nothing outside this folder.
+
+- Reproduced: `despatches/scripts/build.py` and `compare_second.py`, run with `python3 -I` from this folder, pass every md5,
+  decode and tally assertion and rewrite `counts.txt`, `units.tsv`, `decryptions/`, `readings/` and `controls/alignment.txt`
+  byte-identically (no change in git). Every per-despatch figure in the table above is the script's. `run_controls.py` was
+  read, not re-run (it needs the contributor's Gutenberg corpus folders, not in the PR).
+- Own decoder: written here from `despatches/keys/KEY_v10.tsv` alone (not importing theirs), on the first-pass transcriptions of
+  12/22 Feb 1676 (8 pages) and 12/22 Aug 1676 (9 pages): all 17 pages decode letter for letter as the contributor's decryptions.
+- Images: Riksarkivet IIIF `full/max` (curl; crops made locally). Image 279R lines 1-13, 20 and 28: 222 of 222 groups as
+  transcribed. Image 163L lines 1-9 (a gutter page): 153 groups, 151 as transcribed; R2 group 12 is 89 on the image (first
+  transcription 59), R7 group 15 is 136 (first transcription 130, flagged in `doubts.md`); the decode-blind second transcription
+  b125 has both as read here. The numerals marked `~` run into the binding on the image, as stated. 375 groups in all, 373 agree.
+  Not sampled: the other 17 pages of these two despatches and all pages of the other eight.
+- Strict rule: the class S of `build.py` is the README read bar (any unvalued number, cut numeral, weak value or flagged
+  emendation makes a hole); the contributor counted strictly, so the figures stand. The reading of 12/22 Aug 1676 was read here as
+  Swedish sentences against the translation (subsidy talks with Pomponne, the Feuquières orders, peace terms): it reads, with holes
+  in place. 494 of 705 = 70.07%: read in part. The other nine are under the contributor's 65% line: decoded, not read.
+- Key timing: by the manifest, v10 (07:22:14 UTC) precedes every first-pass transcription freeze of Feb and Aug 1676 (07:27:55 on);
+  v7 and v8 precede their 6 Oct pages; v9 precedes the Nov 1677-Jan 1678 freezes. The freeze times of 327R and 328L lines 1-13 equal
+  the freeze times of v4 and v5 to the second (the session logged one time for both). All by the contributor's record; the two
+  stamps in `despatches/STAMPS.md` and the PR-folder stamp (13 Nov 2026 10:28:57 GMT) came after the decodes.
+- Selective filing: every page of each of the ten despatches is filed, including the nine under 65%; the earlier unfiled despatches
+  (17/27 Nov and 3/13 Nov 1677) are now in. That no other bare passage of this table remains in R0003797 is the contributor's survey
+  (b118, b124, b128), not re-checked here; image 112L is the 1675 tail (glossed context), 114L another code.
+- Prior art: Wimarson, Sveriges krig i Tyskland, is not on archive.org; HathiTrust answered 403 (bot check, not bypassed) and
+  Google Books returned nothing. The NOT FIRST verdict for 12/22 Aug 1676 and the negative result for the other nine are the
+  contributor's (KB OCR), not re-checked here.
+- Weight: in every despatch most read units use at least one context value (counts above); for 12/22 Feb and 12/22 Aug 1676 key
+  v10's word codes were read off glosses of January 1678 and applied eighteen months earlier, and 144 = b (1678 gloss) fits Aug 1676
+  badly ("ansenbig"). Three page tests failed (165L, 493L, 515L), published as failed.
+- No change to the memorial's figure or to `fraction_read` (0.718); the despatches are not pooled with it.
+
 ## Escalation
 - [x] siblings: the neighbouring leaves of R0003797 opened; 107-109 are the cipher tail of the 1675 despatch (glossed on 105-106); the 1677 despatch of 17/27 Nov (479R-481R) decoded at 62%, and 327-330 (the Swedish letter with Lillieroot, 13/23 Oct 1676) decoded under keys v4-v6: both now in `despatches/` (13 Nov 2026), below our 65% line
 - [x] clear-pages: the clear Swedish and French between the cipher runs read and used as context
 - [x] known-keys: no other Swedish 1670s table is known to this repository; the glosses of the volume are the key source
 - [x] print: LIBRIS, archive.org full text, Runeberg, Wimarson I-III, Varenius, Recueil des instructions: nothing on these two texts; Trolle-Bonde D.1, Hojer 1875, Grauers 1926 not seen
-- [x] key-rebuild: key v3 from the 1675 gloss, v4-v9 from glosses and context; further values proposed after the decodes are not counted
+- [x] key-rebuild: key v3 from the 1675 gloss, v4-v10 from glosses and context (v10 for the 1676 and 1677-78 despatches in `despatches/`); further values proposed after the decodes are not counted
 - [n/a] retry: a rerun of the memorial with v9 was not made; v3 is the frozen test, and values proposed after it are listed in holes.md
 
 ## Files
