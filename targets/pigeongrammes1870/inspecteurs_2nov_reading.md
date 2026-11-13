@@ -1,6 +1,6 @@
 # Inspectors' telegram, Tours 2 Nov 1870: working reading in French (13 Nov 2026)
 
-Status (third pass, 65% of groups valued, 23% marker groups with a working function): partial and unverified by a second source. Made by Claude from Pillon's transcription (`inspecteurs_2nov_partial.txt`),
+Status (third pass, 62% of groups valued as written, 65% with the assumed digit slips; 23% marker groups with a working function): partial and unverified by a second source. Made by Claude from Pillon's transcription (`inspecteurs_2nov_partial.txt`),
 the values in `anchors_inspecteurs.json` and the machine gloss `inspecteurs_2nov_gloss.txt` (`interval_cands.py text`).
 Plain words are clear in the original. Words in *italics* are read from code groups. `[1234]` is a group not read,
 `[?word]` a guess, `(...)` a grammatical marker group not understood. Spelled names are in CAPITALS. English: `inspecteurs_2nov_translation.md`.

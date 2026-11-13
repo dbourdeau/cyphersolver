@@ -1,7 +1,7 @@
 # Pigeongrammes and telegraph ciphers, France 1870-71 (Pillon / Debove collection)
 
 
-Write-up: `docs/pigeongrammes1870.html`, about the inspectors' code only (outcome since 13 Nov 2026: key recovered based on adjacent plaintext, read in part, 65% of groups valued; profile.json). The Favre / delegation code (Chaudordy letter, 18 Dec 1870) is a different cipher, still in progress, with no page of its own yet; its sections below are working notes.
+Write-up: `docs/pigeongrammes1870.html`, about the inspectors' code only (outcome since 13 Nov 2026: key recovered based on adjacent plaintext, read in part, 62% of groups valued as written, strict count of record; 65% with the assumed digit slips; profile.json). The Favre / delegation code (Chaudordy letter, 18 Dec 1870) is a different cipher, still in progress, with no page of its own yet; its sections below are working notes.
 
 ## Source
 Alexandre Pillon (collector) and Bruno Debove, via the forwarded email of 7 Nov 2026.
@@ -400,6 +400,12 @@ Dan asked to keep going after the Pillon test. Method: read the telegram by cont
   before succes 9011, = succeder, 5215 = m ("charge de me succeder"). Not adopted: 5308 -> 5508 (mere; maison also fits unslipped), 2329 / 2705 as second forms of depeche /
   donner, 2704 (dont / donnee), 6005 between nos and notre (notaire / notable), 4125 after hardi, 8517 before secret. No fit: about 150 other one-digit neighbours.
   Now: 238 values, no inversion; 491 of 754 valued (65%), 172 markers (23%), 91 unread (12%, 80 distinct); SEVENTEEN assumed slips, 20 occurrences, none checked on the scan.
+- Strict count (13 Nov, figure of record; README read bar: guessed, assumed or restored values are holes; `python3 -I coverage.py`): 469 of 754 valued as written (62.2%),
+  172 markers (22.8%, counted apart), 113 holes (15.0%) = 89 groups unread as written + the 20 assumed-slip occurrences + 4 occurrences these notes call a guess or unread
+  (5219 mademoiselle "guess only"; 9802 vin x2, which exists only as the unsupported VIN-OY, and Remaining gaps lists 9802 6124 as an unread name; 3927 in L-[3927]-E).
+  Rule: a value counts when the group as written has it in anchors_inspecteurs.json and these notes do not call that value a guess or that occurrence unread. Values marked
+  "hypothesis" with a stated position test (5218 madame, 0919 bal in BAL-L-ON) stay counted, as do 9010 succeder and 5215 m (adopted from the book order). The 491 / 65% above
+  is the looser count with the assumed slips.
 - Automatic ranking test (13 Nov): for 38 unread groups with known neighbours on both sides, every word in the book interval (wordfreq, 30,000 words) was scored in its
   sentence with the fr-modern character model (order 5, with spaces) plus word frequency and position. Result: negative. The top choices are frequent words with no sense in
   place (pourquoi, longtemps, france, influence); the intended word, where one is guessed, is rarely first (mesures and claire are; dont is). A character model cannot choose
@@ -437,7 +443,7 @@ At the collector's request 12 untranscribed page scans (about 14,000 groups) wer
 ## Remaining gaps
 - names and places (third addressee LE-V..-E, first addressee P..-ET, 9802 6124 at Nantes, the aide-de-camp 1114 5911 0131, 0402 4712, 1002 5825 9924 T, 7708 5825 9511 D, 3920 8914 3005 5824, 0312 9516 / 2722 7802, place 9620 3328 3824, prefecture 0903 2719) - blocker: no-key-material; spelled once or twice, no second text in this code, no source naming them found
 - about 30 single groups with several candidates (list in the third-pass note above) - blocker: open-codes; each occurs once or twice and the interval between known neighbours still holds several words
-- seventeen assumed digit slips (20 occurrences) and the doubtful 0617 - blocker: needs-physical-access; the full scan is with the collector and on the owner's machine, not in the repository
+- seventeen assumed digit slips (20 occurrences, counted as holes) and the doubtful 0617 - blocker: needs-physical-access; the full scan is with the collector and on the owner's machine, not in the repository
 - exact meaning of the marker groups on pages 01-03 and 05 - blocker: no-key-material; working functions only
 
 ## Escalation

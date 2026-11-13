@@ -444,6 +444,12 @@
    ],
    "what": "Automatic ranking of the unread groups: for 38 groups with known neighbours, every word in the book interval (30,000-word list) scored in its sentence with a character 5-gram model of modern French plus word frequency and position. The top choices are frequent words without sense in place; nothing adopted. A word-level model of the period's administrative French would be needed.",
    "result": "failed"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "control",
+   "what": "Strict recount under the README read bar (assumed values are holes), with coverage.py: the seventeen assumed digit slips (20 occurrences) and 4 occurrences that NOTES.md calls a guess or unread (5219 mademoiselle, 9802 vin x2, 3927 in L-[3927]-E) no longer count as valued. 469 of 754 group occurrences valued as written (0.622), 172 marker groups, 113 holes; the earlier 491 of 754 (0.651) included the assumed slips.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -480,17 +486,17 @@
   "method": "key recovered based on adjacent plaintext",
   "key": "partial",
   "class": "read in part",
-  "method_basis": "The telegram mixes clear words with code groups. The values were rebuilt from those clear words and from the book's own order: a group is page (01-99) and line (01-30) of an alphabetical book, so each group is boxed between its neighbours and the clear context picks the word. 238 values stand in book order with no inversion; 491 of 754 group occurrences (65%) have a value. No key and no second text in this code was available.",
+  "method_basis": "The telegram mixes clear words with code groups. The values were rebuilt from those clear words and from the book's own order: a group is page (01-99) and line (01-30) of an alphabetical book, so each group is boxed between its neighbours and the clear context picks the word. 238 values stand in book order with no inversion; 469 of 754 group occurrences (62%) have a value as written (491, 65%, with the assumed digit slips). No key and no second text in this code was available.",
   "contribution": [
    "key recovered"
   ],
-  "fraction_read": 0.651,
+  "fraction_read": 0.622,
   "fraction_read_method": "measured",
-  "fraction_read_source": "13 Nov 2026: 491 of the 754 four-digit groups in inspecteurs_2nov_partial.txt have a value in anchors_inspecteurs.json after the seventeen assumed digit slips (20 occurrences) (counted by the script in NOTES.md, third pass); 172 further groups are marker groups with a working function and 91 are unread. The clear words are not counted.",
+  "fraction_read_source": "13 Nov 2026, strict count (figure of record, README read bar: assumed values are holes), python3 -I coverage.py: 469 of the 754 four-digit groups in inspecteurs_2nov_partial.txt have a value in anchors_inspecteurs.json as written. Holes, 113 (15%): 89 groups unread as written, the 20 occurrences of the seventeen assumed digit slips (not checked on the scan), and 4 occurrences NOTES.md itself calls a guess or unread (5219 mademoiselle, 'guess only'; 9802 vin twice, only as the unsupported VIN-OY; 3927 in L-[3927]-E). 172 further groups are marker groups with a working function, counted apart. With the assumed slips the third-pass count was 491 of 754 (0.651), 91 unread; that looser figure is not the figure of record. The clear words are not counted.",
   "verification": [
    "historical consistency"
   ],
-  "notes": "Read in part (13 Nov 2026). The code is a paged alphabetical book; 238 values were rebuilt from the clear words and the book order, and the telegram reads as sentences with holes (65% of group occurrences valued, 23% marker groups, 12% unread). Limits: one transcription, no second text in this code, seventeen assumed digit slips not checked on the scan, the order check partly circular, and the n-gram validation is underdetermined. Earlier state (8 Nov): 20 supported entries, 12.5%. Pillon's scans and the transcriptions of them are published with his permission (8 Nov 2026; DATA_NOT_INCLUDED.md); his repertoires R1-R3 and Excel files are not. The work on the Favre / delegation code is a different cipher, still in progress, with no page of its own yet.",
+  "notes": "Read in part (13 Nov 2026). The code is a paged alphabetical book; 238 values were rebuilt from the clear words and the book order, and the telegram reads as sentences with holes (62% of group occurrences valued as written, 23% marker groups, 15% holes; 65% with the seventeen assumed digit slips). Limits: one transcription, no second text in this code, seventeen assumed digit slips not checked on the scan, the order check partly circular, and the n-gram validation is underdetermined. Earlier state (8 Nov): 20 supported entries, 12.5%. Pillon's scans and the transcriptions of them are published with his permission (8 Nov 2026; DATA_NOT_INCLUDED.md); his repertoires R1-R3 and Excel files are not. The work on the Favre / delegation code is a different cipher, still in progress, with no page of its own yet.",
   "credits": [
    {
     "who": "pillon",
@@ -501,9 +507,9 @@
   ],
   "key_file": "anchors_inspecteurs.json",
   "codes_open": {
-   "open": 80,
-   "total": 322,
-   "tokens_open": 91
+   "open": 99,
+   "total": 335,
+   "tokens_open": 113
   },
   "gaps": [
    {
@@ -517,7 +523,7 @@
     "detail": "Each occurs once or twice; the interval between known neighbours still holds several words."
    },
    {
-    "item": "Seventeen assumed digit slips (8312, 3304, 3227, 0816, 1017, 6519, 2534, 5005, 3121, 0129, 6180, 4913, 4915, 8626; 20 occurrences) and the doubtful 0617",
+    "item": "Seventeen assumed digit slips (8312, 3304, 3227, 0816, 1017, 6519, 2534, 5005, 3121, 0129, 6180, 4913, 4915, 8319, 3019, 3021, 8626; 20 occurrences, counted as holes) and the doubtful 0617",
     "blocker": "needs-physical-access",
     "detail": "The full scan of the telegram is in the collector's hands and on the project owner's machine, not in the repository; only two crops of this telegram are published."
    },
@@ -537,7 +543,7 @@
     "translation": "inspecteurs_2nov_translation.md",
     "language": "fr",
     "state": "read in part",
-    "read_share": 0.651,
+    "read_share": 0.622,
     "reading_review": {
      "grade": "B",
      "by": "Claude (the model that made the reading; no second reader yet)",
