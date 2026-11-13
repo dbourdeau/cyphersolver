@@ -12,6 +12,7 @@ for t in terms:
             rows += rasearch.search(t, online, page=p).get('searchResults', []); p += 1; time.sleep(1)
         print(t, online, tot, len(rows), flush=True)
         for r in rows:
+            if 'daisyId' not in r: continue
             e = seen.setdefault(r['daisyId'], dict(id=r['daisyId'], type=r['documentType'], titel=r['titel'], f=(r.get('dateFrom') or '')[:4], t=(r.get('dateTo') or '')[:4], desc=r.get('beskrivelse') or '', creator=r.get('visBedsteArkivskaberNavn'), online=False, terms=[]))
             e['terms'].append(t)
             if online: e['online'] = True
