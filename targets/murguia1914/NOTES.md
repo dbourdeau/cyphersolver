@@ -3,7 +3,7 @@
 WAINUT, 12-13 Nov 2026. Work done with AI language-model agents viewing the CEHM images; no human palaeographer has
 checked the text. An independent AI language-model agent reviewed the work blind from the scans (below).
 
-Status: read, 12 Nov 2026. The letter's coded runs carry a contemporary pencil decipherment on the typed copy, so the
+Status: read, 12 Nov 2026 (strict share 95.2% at the integration, 13 Nov 2026; written up on the site, murguia1914.html, PR #513). The letter's coded runs carry a contemporary pencil decipherment on the typed copy, so the
 reading is an existing decipherment; this folder adds the figure transcription, the key rebuilt from it, a held-out
 test of that key, and a marked reading made from the figures. The key is then applied to two bare sheets of the same
 fondo: `targets/fuentes1914/` and `targets/carranza1914/`.
@@ -81,7 +81,7 @@ Lamadrid. His ammunition is spent, and he is sending a commission to Ciudad Juá
 200,000 cartridges.
 
 Coded words (from `scripts/count_words.py`): 103 in 23 runs; 99 verbatim from the signs (96.1%), 2 with a marked
-added letter (NACI{+O}NAL, MOLIN{+O}), 2 guessed ([?no:97], [?plaza:88]). "[por]" before SER is a word the sense needs
+added letter (NACI{+O}NAL, MOLIN{+O}), 2 guessed ([?no:97], [?plaza:88]). By the README read bar the supplied "[por]" counts too, and a word with a restored letter or a guess is not read: 99 of 104 words = **95.2%** (the contributor's 96.1% leaves "[por]" out). "[por]" before SER is a word the sense needs
 and the figures do not give; it is supplied in brackets and not counted. All 23 runs read as words.
 
 Where the figures and the pencil gloss differ (the reading follows the figures, with marks): NACINAL (gloss
@@ -154,3 +154,20 @@ the translation and graded it A, noting that it is an existing decipherment and 
   `work/key_all.tsv`), `heldout.py`, `decrypt.py`, `check_marks.py`, `count_words.py`, `coded_only.py`,
   `reading_debug.py`. Standard library only; run from this folder.
 - `work/`: `key_all.tsv` (pairs over all segments), `key_train_p3.tsv` (pairs over S01-S15), `heldout_out.txt`.
+
+## Integration check (13 Nov 2026)
+
+Done by the integrating session. Reproduced: `heldout.py` gives 0.842 letter agreement on page 4 (240 gloss letters, 217
+groups), shuffled-key control max 0.154; `check_marks.py` passes (23 runs, 4 marks). Own decoder (written from
+`key_frozen.tsv`, not their script) gives the same 23 decryptions (8 differ only in capitals that mark word groups).
+Image LXVIII-1.14.1943.1.0004 (the typed copy with the pencil layer) fetched from the CEHM viewer (plain http, no host
+refused): all 217 groups of S16-S23 compared by eye with the transcription, all agree; the pencil gloss of S16-S23 is
+visible and matches `gloss_LXVIII-1.14.1943.1.txt` where legible; page 3 and the original pp. 1-2 were not compared by the
+integrating session. The test uses the contemporary pencil gloss as the truth and the key was rebuilt from the same gloss,
+so it is a key recovered from external plaintext in effect; the reading is the gloss's text confirmed by the figures. The
+order of freezing is by the contributor's record (one commit, no outside timestamp). Own statistical check
+(`docs/_validate.py`, es-modern, 486 groups): reading -2.104 per letter against -6.186 for random keys (z 9.3) and -3.566
+for keys annealed onto shuffled text (z 17.5): pass. Strict word count by the README rule: 99 of 104 = 95.2%, at the bar,
+so the class stays read; key partial (groups 88 and 97 have no value; ten cells are filled from the table layout, none of
+them occurs in this letter). The same key is applied to two bare sheets of the same fondo (targets fuentes1914 and
+carranza1914, other pull requests); it belongs to this entry.

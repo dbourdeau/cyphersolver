@@ -144,9 +144,55 @@
    "kind": "verification",
    "what": "Independent blind review by a second AI language-model agent (13 Nov 2026): 59 of 59 groups of p. 4 agree on its own crops; check_marks.py, decrypt.py and heldout.py reproduced; build_key.py confirmed to read only training segments in the held-out run; reading graded A.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 486 tokens, 50 types, es-modern order 4: reading -2.104 per letter; random keys -6.186 (z 9.3); key annealed onto shuffled ciphertext best -3.469 (mean -3.566, z 17.5); annealer on the real text -2.307. Verdict: pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Integration check by the repository: heldout.py (0.842 on page 4, shuffled max 0.154) and check_marks.py reproduced; own decoder from key_frozen.tsv gives the same 23 decryptions; all 217 groups of S16-S23 compared with the CEHM image .0004 (typed copy, pencil layer visible): all agree. Own statistical check (es-modern): -2.104 per letter against -6.186 for random keys (z 9.3), pass. Strict word share 99 of 104 = 95.2% (the supplied [por] counts as a hole); class read, key partial.",
+   "result": "worked"
   }
  ],
  "outcome": {
+  "validation": {
+   "date": "2026-11-13",
+   "model": "es-modern",
+   "file": "validation.tsv",
+   "tokens": 486,
+   "types": 50,
+   "tokens_per_type": 9.72,
+   "score": -2.104,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -6.186,
+     "sd": 0.439,
+     "max": -4.748,
+     "z": 9.3,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -3.566,
+     "sd": 0.084,
+     "max": -3.469,
+     "z": 17.5,
+     "p": 0.1429
+    }
+   },
+   "power": -2.307,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.104; polyphony 0.0; 2 unread tokens left out; annealer on the real text from random keys reached -2.307"
+  },
   "class": "read",
   "key": "partial",
   "method": "read from existing decipherment",
@@ -156,14 +202,15 @@
    "key recovered"
   ],
   "first_break": false,
-  "fraction_read": 0.961,
+  "fraction_read": 0.952,
   "fraction_read_method": "measured",
-  "fraction_read_source": "scripts/count_words.py on the coded runs: 99 of 103 coded words verbatim from the signs; 2 with a marked added letter (NACI{+O}NAL, MOLIN{+O}), 2 guessed (groups 97 and 88). The clear text (most of the letter) reads in full.",
+  "fraction_read_source": "Strict README rule on the coded runs (scripts/count_words.py counts plus the supplied word): 99 of 104 words read as typed (95.2%); 2 with a marked added letter (NACI{+O}NAL, MOLIN{+O}), 2 guessed (groups 97 and 88) and the supplied '[por]' are not counted as read. The contributor's figure is 99 of 103 (96.1%), which leaves '[por]' out. The clear text (most of the letter) reads in full.",
   "verification": [
    "contemporary decipherment",
    "matched control",
    "independent verification",
-   "historical consistency"
+   "historical consistency",
+   "statistical test"
   ],
   "provenance": "contributed",
   "credits": [
@@ -178,19 +225,22 @@
     "who": "lccompany",
     "role": "solution",
     "note": "Clave Extra 3 key rebuilt from the figures and the pencil decipherment, frozen and tested on held-out page 4 (0.842); reading made from the figures with the departures from the pencil marked",
-    "date": "2026-11-12"
+    "date": "2026-11-12",
+    "source": "PR #513 (dbourdeau/cyphersolver)"
    },
    {
     "who": "lccompany",
     "role": "transcription",
     "note": "two passes from the CEHM images, without the key; see the transcription files",
-    "date": "2026-11-12"
+    "date": "2026-11-12",
+    "source": "PR #513 (dbourdeau/cyphersolver)"
    },
    {
     "who": "lccompany",
     "role": "verification",
     "note": "one independent AI language-model agent, blind from the scans: sign check, scripts re-run, reading read as sentences against the translation; no human palaeographer",
-    "date": "2026-11-13"
+    "date": "2026-11-13",
+    "source": "PR #513 (dbourdeau/cyphersolver)"
    }
   ],
   "texts": [
@@ -204,9 +254,9 @@
     "contemporary": "gloss_LXVIII-1.14.1943.1.txt",
     "language": "es",
     "state": "read",
-    "read_share": 0.961,
+    "read_share": 0.952,
     "summary": "Murguía reports his campaign of 4-15 March 1914: the Nacional railway cut between Golondrinas and Huisachito, Monclova taken with Castro on the 10th and lost on the 11th to more than a thousand men from Monterrey, a fall-back to San Buenaventura and the Molino del Águila, a failed attack on the 15th and a retreat to Lamadrid; his ammunition is spent and he is sending a commission to Ciudad Juárez by way of Sierra Mojada for 200,000 cartridges.",
-    "note": "103 coded words in 23 runs: 99 verbatim from the signs (96.1%), 2 with a marked added letter, 2 guessed ([?no:97], [?plaza:88]); '[por]' supplied and not counted. The contemporary pencil decipherment on pp. 3-4 gives the same text, with five differences listed in the reading.",
+    "note": "103 coded words in 23 runs: 99 verbatim from the signs (96.1%, the contributor's figure; 99 of 104 = 95.2% when the supplied [por] counts, the share used here), 2 with a marked added letter, 2 guessed ([?no:97], [?plaza:88]); '[por]' supplied and not counted. The contemporary pencil decipherment on pp. 3-4 gives the same text, with five differences listed in the reading.",
     "reading_review": {
      "grade": "A",
      "by": "independent AI language-model agent (blind review)",
@@ -227,6 +277,11 @@
     "blocker": "illegible",
     "detail": "Over-struck in both exemplars (58 or 68); both are u, so the reading does not depend on it."
    }
-  ]
+  ],
+  "codes_open": {
+   "open": 2,
+   "total": 62,
+   "tokens_open": 2
+  }
  }
 }
