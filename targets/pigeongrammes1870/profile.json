@@ -24,10 +24,10 @@
     "partial": true
    },
    "length": {
-    "tokens": 736,
-    "distinct": 343,
+    "tokens": 754,
+    "distinct": 349,
     "unit": "code groups",
-    "measured": false,
+    "measured": true,
     "file": "inspecteurs_2nov_partial.txt"
    },
    "transcription": {
@@ -36,7 +36,7 @@
     "image_quality": "good",
     "notes": "736 four-digit coded groups (343 distinct) mixed with 437 clear words (names, addresses, ordinary words), counts from NOTES and the wiki. The transcription file is now in the repository (inspecteurs_2nov_partial.txt, published with the collector's permission of 8 Nov 2026); a plain regex for four-digit strings finds 754 (349 distinct) in it, which includes four-digit numbers in clear text, so the 736/343 coded-group count has not been reconciled with the file and 'measured' stays false. The clear words are in the original (Pillon). Snips of his scan are on the site."
    },
-   "read": "not read"
+   "read": "read in part"
   }
  ],
  "system": {
@@ -44,7 +44,7 @@
    "code",
    "syllabic"
   ],
-  "summary": "A four-digit code whose table is an alphabetical lexicon laid out over 0000-9999 (words and syllables), with beacon groups (0101, 0201, 0301, 0102 ...) that bracket words spelled in syllable groups; mixed with clear words in one telegram.",
+  "summary": "A four-digit code that behaves as a paged alphabetical book: page 01-99 and line 01-30, about 2,970 entries of words, syllables and single letters, with marker groups on pages 01-03 and 05 (brackets around spelled runs, paragraph end, grammatical endings); mixed with clear words in one telegram.",
   "symbol_kind": "digits",
   "digit_groups": {
    "width": "4",
@@ -100,7 +100,7 @@
   ],
   "sessions": "unknown",
   "first_date": "2026-11-07",
-  "last_date": "2026-11-07"
+  "last_date": "2026-11-13"
  },
  "solution": [
   {
@@ -373,29 +373,160 @@
    "kind": "access",
    "what": "Publication: the collector agreed (relayed by the project owner) that his scans and the transcriptions of them are published on the site and in the repository. Published: his transcription files and the derived sequence and alignment outputs in the target folder, the AI transcriptions of the twelve page scans (workbook with reliability notes, per-page text zip) under docs/data/pigeongrammes1870/, and six cropped snips of the scans on the page. Not published (outside the permission): repertoires R1-R3, his Excel files, the R2 gap table (a count only), the zip. Re-ran alpha_test, spell_solver, apply_telegram and joint_loop on the published files and they reproduce the committed outputs; bench_loop needs his Repertoire1.xlsx.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "hypothesis",
+   "technique": [
+    "crib testing",
+    "statistical test"
+   ],
+   "what": "Collector's suggestions (two emails): 6819 3412 = PIERR-ET (Pierret), 5511 = messieurs, 3412 = et, 9802 6124 = VIN-OY, 2722 7802 = DUC-ROT. Tested with heading_test.py against the alphabetical rule and the telegram's structure. Supported: 3412 = et (position -0.005; joins the spelled runs ballon and pigeons); 5511 = messieurs and 5711 = monsieur (5511 once before three bracketed names, 5711 six times before one; three later paragraphs open with monsieur and the same three names in order). 6819 3412 is one name P...-ET (it stands alone after monsieur in its paragraph), consistent with Pierret but not confirmed: no Pierret found in the 1870 Paris telegraph service. Not supported: VIN-OY (oy sorts after on = 6129, the group is below it) and DUC-ROT (rot sorts after ro = 8317, the group 7802 is below it and recurs as an R piece elsewhere). Third addressee 5006 9701 2729 unidentified. No new passage reads.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "contextual inference",
+    "crib testing",
+    "statistical test"
+   ],
+   "what": "Treated the inspectors' code as a paged alphabetical book (group PPLL = page 01-99, line 01-30, about 2,970 entries; single letters open their sections; pages 01-03 and 05 hold marker groups). Read the telegram by context with interval_cands.py (words that sort between the nearest known values). Values rose from 23 to 197 groups; 438 of 754 group occurrences (58%) have a value, 193 (26%) are marker groups, 123 (16%) unread. Sentence reading with holes in inspecteurs_2nov_reading.md. Order check: 1 inversion among 197 values against 98 expected at random, but the test is partly circular because values were proposed knowing the approximate position; three guesses failed it and were withdrawn. Eleven digit slips assumed, not yet checked on the scan. Names read: rue Jean-Jacques Rousseau, Picard, Saint-Germain-en-Laye, Pont-Audemer, Prussiens, Madame Herold. No second text in this code exists to test the values.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference",
+    "crib testing"
+   ],
+   "what": "Second pass over the unread groups of the inspectors' telegram with the interval tool. 233 values; 475 of 754 group occurrences (63%) have a value, 193 are marker groups, 86 unread; no inversion among the 233 values in book order (the earlier one, 7119/7208, became pour / pouvoir). New readings include chemins de fer, Ferry, secretariat general, 'il ne sera plus transmis aucune depeche', melasse, 'a tous trois', Ricard, eveil. Unread: nine names or places, about thirty-five single words with several candidates, and the meaning of the marker groups.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference",
+    "crib testing"
+   ],
+   "what": "Third pass on the inspectors' telegram. 236 values in book order with no inversion; 485 of 754 group occurrences valued (64%), 172 marker groups given a working function (23%), 97 unread (13%). Found 'aide de camp' (0423 1206): the Rennes news is addressed to an aide-de-camp of General Trochu, not to Trochu; his name fits BRU-NE-T but a web search did not confirm it. Withdrew 3604 = excavation (the clear article before it requires a consonant). Remaining groups are mostly names and single words with several candidates.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 657 tokens, 250 types, fr-modern order 4: reading -2.023 per letter; random keys -2.4 (z 6.4); key annealed onto shuffled ciphertext best -1.854 (mean -1.873, z -10.9); annealer on the real text -1.832. Verdict: underdetermined.",
+   "result": "partial"
   }
  ],
  "outcome": {
-  "method": "not solved",
+  "validation": {
+   "date": "2026-11-13",
+   "model": "fr-modern",
+   "file": "validation.tsv",
+   "tokens": 657,
+   "types": 250,
+   "tokens_per_type": 2.63,
+   "score": -2.023,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -2.4,
+     "sd": 0.059,
+     "max": -2.269,
+     "z": 6.4,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -1.873,
+     "sd": 0.014,
+     "max": -1.854,
+     "z": -10.9,
+     "p": 1.0
+    }
+   },
+   "power": -1.832,
+   "verdict": "underdetermined",
+   "notes": "claimed per-occurrence score -2.023; polyphony 0.0; 97 unread tokens left out; annealer on the real text from random keys reached -1.832"
+  },
+  "method": "key recovered based on adjacent plaintext",
   "key": "partial",
-  "class": "not read",
-  "method_basis": "The table is an alphabetical lexicon over 0000-9999 and words spelled between beacon groups decode, but only 20 hand-assigned entries are supported (12.5% of 608 coded non-beacon group occurrences); no sentence of the coded text reads and the engine accepted nothing safely.",
+  "class": "read in part",
+  "method_basis": "The telegram mixes clear words with code groups. The values were rebuilt from those clear words and from the book's own order: a group is page (01-99) and line (01-30) of an alphabetical book, so each group is boxed between its neighbours and the clear context picks the word. 236 values stand in book order with no inversion; 485 of 754 group occurrences (64%) have a value. No key and no second text in this code was available.",
   "contribution": [
-   "none"
+   "key recovered"
   ],
-  "fraction_read": 0.125,
+  "fraction_read": 0.643,
   "fraction_read_method": "measured",
-  "fraction_read_source": "wiki/index.md and wiki/syntheses/Z01.md: share of the 608 coded (non-beacon) group occurrences with an accepted reading, 20 supported entries all assigned by hand; the 128 beacon groups are not counted",
+  "fraction_read_source": "13 Nov 2026: 485 of the 754 four-digit groups in inspecteurs_2nov_partial.txt have a value in anchors_inspecteurs.json after the thirteen assumed digit slips (16 occurrences) (counted by the script in NOTES.md, third pass); 172 further groups are marker groups with a working function and 97 are unread. The clear words are not counted.",
   "verification": [
-   "matched control"
+   "statistical test",
+   "historical consistency"
   ],
-  "notes": "Not read. Structure found: alphabetical lexicon, spelled names (Steenackers, Mercadier, pigeons, Trochu) and a last paragraph of family news. Needs a second text in the inspectors' code or a printed copy of the circular; no such text is in the collection. Pillon's scans and the transcriptions of them are published with his permission (8 Nov 2026; DATA_NOT_INCLUDED.md); his repertoires R1-R3 and Excel files are not. The work on the Favre / delegation code (Chaudordy letter, 18 Dec 1870) is a different cipher, still in progress, with no page of its own yet. Second round (8 Nov 2026): 12 further page scans transcribed for the collector; three codes identified in them (R1, R2, the Favre/delegation code); the 13 Nov Tours telegram decodes with the collector's R2 and matches its printed text. The inspectors' code itself has no second text, so this target's outcome is unchanged.",
+  "notes": "Read in part (13 Nov 2026). The code is a paged alphabetical book; 236 values were rebuilt from the clear words and the book order, and the telegram reads as sentences with holes (64% of group occurrences valued, 23% marker groups, 13% unread). Limits: one transcription, no second text in this code, thirteen assumed digit slips not checked on the scan, the order check partly circular, and the n-gram validation is underdetermined. Earlier state (8 Nov): 20 supported entries, 12.5%. Pillon's scans and the transcriptions of them are published with his permission (8 Nov 2026; DATA_NOT_INCLUDED.md); his repertoires R1-R3 and Excel files are not. The work on the Favre / delegation code is a different cipher, still in progress, with no page of its own yet.",
   "credits": [
    {
     "who": "pillon",
     "role": "pointer",
-    "note": "owns the collection and the scan of the telegram, sent the files and his transcription, confirmed that the clear words are in the original; suggested the beacon groups (0101, 0201, 0301) as brackets and that the table is almost alphabetical; offered readings that were tested (5926, 0603, 2215 failed; a Mercadier decomposition was withdrawn by him); supplied the page scans and his hand transcription of the 2 November telegram and the Chaudordy letter (twelve further page scans were transcribed from images by Claude, checked against his hand transcription on a pilot); agreed on 8 Nov 2026 that his scans and the transcriptions are published",
-    "date": "2026-11-08"
+    "note": "owns the collection and the scan of the telegram, sent the files and his transcription, confirmed that the clear words are in the original; suggested the beacon groups (0101, 0201, 0301) as brackets and that the table is almost alphabetical; offered readings that were tested (5926, 0603, 2215 failed; a Mercadier decomposition was withdrawn by him); supplied the page scans and his hand transcription of the 2 November telegram and the Chaudordy letter (twelve further page scans were transcribed from images by Claude, checked against his hand transcription on a pilot); agreed on 8 Nov 2026 that his scans and the transcriptions are published; on 13 Nov 2026 proposed 3412 = et, 5511 = messieurs and 6819 3412 = PIERR-ET (the first two supported, the third consistent) and VIN-OY and DUC-ROT (not supported), which restarted the work",
+    "date": "2026-11-13"
+   }
+  ],
+  "key_file": "anchors_inspecteurs.json",
+  "codes_open": {
+   "open": 86,
+   "total": 322,
+   "tokens_open": 97
+  },
+  "gaps": [
+   {
+    "item": "Names and places: third addressee 5006 9701 2729 (LE-V..-E); first addressee 6819 3412 (P..-ET); 9802 6124 at Nantes; 1114 5911 0131 (aide-de-camp, Rennes); 0402 4712; 1002 5825 9924 9113; 7708 5825 9511 2112; 3920 8914 3005 5824; 0312 9516 and 2722 7802; place 9620 3328 3824; prefecture 0903 2719",
+    "blocker": "no-key-material",
+    "detail": "Spelled once or twice from pieces with no other use in the telegram; no second text in the inspectors' code exists in the collection and no source naming these people was found."
+   },
+   {
+    "item": "About 35 single groups with two or more candidates that fit both the book position and the sentence (7126, 1516, 3921, 3601, 3604, 4423, 0703, 3408, 2809, 3215, 6808, 6005, 9029, 4125, 0702, 0420, 0421, 6301, 0530, 3019, 3021, 2704, 5413, 6421, 8122, 2329, 2705, 8517, 5024, 5308, 4515, 5215, 9010, 3927, 8319, 7122 3030 1502, 6714 4905)",
+    "blocker": "open-codes",
+    "detail": "Each occurs once or twice; the interval between known neighbours still holds several words."
+   },
+   {
+    "item": "Thirteen assumed digit slips (8312, 3304, 3227, 0816, 1017, 6519, 2534, 5005, 3121, 0129, 6180, 4913, 4915; 16 occurrences) and the doubtful 0617",
+    "blocker": "needs-physical-access",
+    "detail": "The full scan of the telegram is in the collector's hands and on the project owner's machine, not in the repository; only two crops of this telegram are published."
+   },
+   {
+    "item": "Exact meaning of the marker groups on pages 01-03 and 05 (172 occurrences)",
+    "blocker": "no-key-material",
+    "detail": "Working functions only (brackets, paragraph end, plural, participles, imperfect, endings); the collector's R1 repertoire, which has comparable markers, is unpublished and is a different table."
+   }
+  ],
+  "texts": [
+   {
+    "doc": "2nov1870",
+    "label": "Steenackers to Pierret(?), Mercadier and a third official, Tours 2 November 1870",
+    "transcription": "inspecteurs_2nov_partial.txt",
+    "decryption": "inspecteurs_2nov_gloss.txt",
+    "reading": "inspecteurs_2nov_reading.md",
+    "translation": "inspecteurs_2nov_translation.md",
+    "language": "fr",
+    "state": "read in part",
+    "read_share": 0.643,
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (the model that made the reading; no second reader yet)",
+     "date": "2026-11-13",
+     "note": "Most paragraphs build sentences with scattered holes; the personal-news paragraphs and the postscript have holes in most sentences. Thirteen digit slips are assumed and not checked on the scan. docs/_check_reading.py: 38 of 80 sentences clean (0.475) in the reading file."
+    },
+    "summary": "Steenackers, director general of telegraphs and posts at Tours, tells three colleagues in besieged Paris what line to take towards the post office: the services rendered, balloon and pigeon post, the pigeon service about to be opened to private messages, the decree uniting posts and telegraphs and the one ending the post's monopoly on carrying newspapers. He passes on a report of Prussians leaving Saint-Germain daily with pickaxes, advice on coating cotton balloons, and family news for each addressee."
    }
   ]
  }

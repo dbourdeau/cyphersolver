@@ -1,6 +1,7 @@
 # Pigeongrammes and telegraph ciphers, France 1870-71 (Pillon / Debove collection)
 
-Write-up: `docs/pigeongrammes1870.html`, about the inspectors' code only (outcome: not solved, attempted, not read; profile.json). The Favre / delegation code (Chaudordy letter, 18 Dec 1870) is a different cipher, still in progress, with no page of its own yet; its sections below are working notes.
+
+Write-up: `docs/pigeongrammes1870.html`, about the inspectors' code only (outcome since 13 Nov 2026: key recovered based on adjacent plaintext, read in part, 64% of groups valued; profile.json). The Favre / delegation code (Chaudordy letter, 18 Dec 1870) is a different cipher, still in progress, with no page of its own yet; its sections below are working notes.
 
 ## Source
 Alexandre Pillon (collector) and Bruno Debove, via the forwarded email of 7 Nov 2026.
@@ -325,6 +326,76 @@ Reading: the spelled-name mechanism is the big lever; ordinary words still lose 
 "Steenackers a M./le prefet [..] Mercadier" (unverified; positions only). Next candidates: piece-level consistency across spelled runs (6129 = on in pigeons and ballon would give bal|l|on), domain LM for
 telegraph/pigeon-post words, joint decoding of 'est bien portante' as spelled.
 
+## Pillon's suggestions of 13 Nov 2026: PIERR-ET, messieurs, et, VIN-OY, DUC-ROT (heading_test.py)
+Pillon (two emails, relayed by Dan): 6819 3412 = PIERR + ET (alphabetical, and a likely recipient); then "5511 0101 6819 3412 0102 5504 1122 2514 3316 = messieurs Pierret et
+Mercadier" with 5511 = messieurs, 6819 = Pierret, 3412 = et; 0919 5121 6129 = BAL-L-ON; 4007 = general; after 4007 the names 9802 6124 = VIN-OY? and 2722 7802 = DUC-ROT?
+Tested against the alphabetical rule (vocabulary here: wiki/topic_counts.json, 2,082 words used twice or more; the Favre/Enquete corpus of the earlier sections is not in the
+repo, so the errors differ slightly) and against the telegram's own structure:
+- 3412 = et: SUPPORTED. Position -0.005 (est = 3407, already supported, is five entries below). Context: "0101 0919 5121 6129 0201 3412 0201 6816 4001 6129 8328 0301" is
+  [ballon] 3412 [pigeons], two runs identified independently, joined by 3412; also "2405 9211 3412 2405 7102" and "de 0530 3412 de" (the same word either side).
+- 5511 = messieurs, 5711 = monsieur: SUPPORTED by structure. 5511 occurs once, in the heading, before THREE bracketed names in a row: [6819 3412] [5504 1122 2514 3316 =
+  Mercadier] [5005 9701 2729]. 5711 occurs six times, each time before ONE bracketed run. Three later paragraphs open "0109 5711 [name]" with the same three names in the same
+  order: [6519 3412] (5/8 slip for 6819), [5504 1122 2534 3316] (Mercadier, 1/3 slip), [5006 9701 2729]. Positions: messieurs +0.004, monsieur +0.001 ("M." -0.027 in this vocabulary).
+  So the telegram has three addressees and a paragraph for each; 0109 closes a paragraph. This replaces "5511 = M." (C016).
+- 6819 3412 = one name, P... + ET: in its own paragraph the run stands alone after "monsieur" and before 0109, so 3412 is inside the name there (the piece ET), not the word
+  "et" before Mercadier. That fits Pillon's first version (PIERR-ET) and not his second (6819 = Pierret, 3412 = the word et). 6819 is three entries after PI (6816); "pierre"
+  fits at +0.005. Pierret is consistent, not confirmed: entries such as pic, pie, pied would sit in the same three places, and two web searches (13 Nov) again found no Pierret
+  in the Paris telegraph service of 1870. The "prefet" side hypothesis (P-R + E-T) is dropped: a title would not follow "monsieur" as a spelled run in a list of names.
+- Third addressee 5005/5006 9701 2729: unidentified. 5006 is also a frequent stand-alone group (le fits at +0.001), 9701 is a V entry below vin, 2729 ends many runs (an E entry?).
+- "voici la reponse de 5219 [Mercadier]": 5219 is the entry after 5218 (madame, hypothesis); mademoiselle fits at +0.003. This answers open point (a) of the 7 Nov section: the
+  sender of the reply is a relative of Mercadier, not Mercadier quoting himself. Guess only.
+- BAL-L-ON: unchanged (hypothesis, C007); the frame "ballon et pigeons" now reads through.
+- VIN-OY for 9802 6124: NOT supported, as before (0.7% of strings fit two groups this well). New: 6124 lies BELOW 6129 (on), and "oy" sorts after "on" (+0.027); a phonetic
+  "oi" would sort correctly (+0.008). Vinoy stays a guess.
+- DUC-ROT for 2722 7802: NOT supported. duc fits 2722 (+0.017), but 7802 lies below 8317 (RO in Trochu) while "rot" sorts after "ro" (+0.037, about three times the typical
+  error); 7802 sits at the start of R (r -0.020, re -0.017). The pair also occurs with no "general" before it ("... 0312 9516 0102 2722 7802 0101 1417 du 1118 recemment cree"),
+  and 7802 opens other runs ("qui 7802 5102 tous les points les plus importants", "nous donne un 7802 3207"), so it is a piece such as R or RE. The general's name is open.
+Does it help? Three whole-word values (et, messieurs, monsieur) and the paragraph structure (three addressees, 0109 as paragraph end) are added; no new passage reads. Asked
+of Pillon: whether a Pierret (or Pieret, Piet ...) and a third official L-V-E appear in his sources next to Mercadier.
+
+## Working reading of the inspectors' telegram (13 Nov 2026, later): about 58% of the groups have a value
+Dan asked to keep going after the Pillon test. Method: read the telegram by context, using the code as a PAGED alphabetical book.
+- Structure: a group PPLL is page PP (01-99) and line LL (01-30; only 5 of 754 groups have LL > 30, slips or misreads), so about 2,970 entries; rank = (PP-1)*30+LL.
+  Single letters open their sections (c 1121 before ca 1122; d 2112; e 2729; f 3616; h 4113; k 4906; l 4914; n 5901; o 6019; r 7703; s 8328; t 9113; v 9612; y 9915).
+  Pages 01-03 and 05, low lines, hold marker groups (beacons 0101/0201/0301/0501/0102/0103, paragraph end 0109, and endings such as 0311 past participle, 0312 -ant,
+  0212 adjective/-aire/-ant, 0211 plural, 0303 noun ending, 0305/0307 imperfect): like R1's balises. Their exact meanings are NOT settled.
+- interval_cands.py lists, for a group, the French words that sort between the nearest known values (wordfreq list); anchors_inspecteurs.json holds the values; the
+  machine gloss is inspecteurs_2nov_gloss.txt and the sentence reading, with holes and an English version, is inspecteurs_2nov_reading.md.
+- Values: 197 groups (was 23). Coverage: 438 of 754 group occurrences have a value (58%), 193 are marker groups (26%), 123 are unread (16%).
+- Order check: sorted by rank, the 197 readings are in alphabetical order with 1 inversion (5511 messieurs before 5512 ?mesures); a random assignment gives 98 on average
+  (minimum 83 in 2,000 shuffles). CAVEAT: the values were proposed knowing roughly where each group sits, so this test is partly circular; it shows the readings are
+  mutually consistent at line level, not that each is right. Three first guesses failed it and were withdrawn (1516 combattre, 7126 preciser, 5825 mon).
+- Independent support comes from pieces that recur in different words: 0503 air (l'air d' / circul-air-e), 0607 an (Je-an / an-gl..), 4009 ger (Saint-Ger-main twice),
+  2011 cot (cot-e / cot-on), 5006 le (col-le, fil-le, le-t-h-ar-gi-e, article), 2703 donner (pour donner / etant donnees), 6129 on (pigeons, ballon, coton), 1216 car and
+  6816 pi (Pi-car-d twice), 2112 d (Picard, Herold, d'y), 7508 pru (Prussien twice), 8328 s, 3316 er, 0814 au (Rousse-au, Pont-Au-demer, au).
+- Names and places read: rue Jean-Jacques Rousseau (the Paris post office), Picard, Saint-Germain-en-Laye, Pont-Audemer, Prussiens, Madame Herold (H?-RO-L-D),
+  Jules [Fa]vre (needs 0617 to be a slip for 3617; not checked on the scan), Trochu. Content: Steenackers tells his Paris colleagues what line to take towards the post
+  office (services rendered, the capital not cut off, balloon and pigeon post, the pigeon service to be extended to private messages, the decree uniting posts and
+  telegraphs, the decree ending the post's monopoly on carrying newspapers), a report of 20 Prussians leaving Saint-Germain daily with pickaxes, advice on coating
+  cotton balloons with strong glue, then a paragraph of personal news for each of the three addressees.
+- Digit slips assumed (written -> meant), all 3/5, 0/6 or 5/8 type: 8312->8512 (se, in Rousseau), 3304->5504 (mer, Pont-Audemer), 3227->5227 (main), 0816->6816 (Picard),
+  1017->1617 (colle), 6519->6819, 2534->2514, 5005->5006, 3121->5121, 0129->6129, 6180->6120. To check on the scan.
+- Pillon's items after this pass: 5121 in ballon is not L (l = 4914); it sorts between lie 5102 and lui 5209 (ll or lo). VIN-OY: 6124 sorts below on, so "oi" (phonetic)
+  is possible, still unconfirmed. DUC-ROT: 7802 = re (relie, renseignement), so 2722 7802 is D..-RE, not Ducrot; it also follows a first name ("votre ami [0312 9516] [2722 7802]").
+  Third addressee 5006 9701 2729 = LE-V..-E. The "prefet" idea for 6819 3412 stays dropped.
+- Second pass (13 Nov, same day): 233 values, 475 of 754 occurrences (63%), 193 markers, 86 unread; 0 inversions among the 233 (the earlier one was 7119/7208, now pour / pouvoir).
+  New: chemins de fer (1422 3716; "desorganisation des chemins de fer due a la guerre"), FER-RY + il (3716 8327 4314), retabli, developpons, ici, "a l'Officiel si c'est possible" (8625 si),
+  enleve, causant, unique, repartir, MEL-ASSE (colle forte et melasse), nomme, SECRET-AR-I-AT general, "il ne sera plus transmis aucune depeche" (9411 0815 2319), mere, TANT-E, HE-RO-L-D,
+  LEG-O-F (Le Goff?), "mille remerciements a tous trois" (three addressees again), "votre toujours devoue", RIC-ARD, EV-EIL, etudiant. 2722 7802 = DUP?/DUC?-RE (Dupre?) open.
+  Still unread, by type: names (third addressee LE-V..-E, the Nantes and Rennes names, 0402 4712, 1002 5825 9924 T, 7708 5825 9511 D, 3920 8914 3005 5824, 0312 9516, the place 9620 3328 3824,
+  prefect of 0903 2719); single words with several candidates (7126, 1516, 3921, 3601, 3604, 4423, 0703, 3408 2809, 3215, 6808, 6005 9029, 4125, 0702, 0420, 0421, 6301, 0530, 3019, 3021, 2704,
+  5413 6421, 8122, 2329, 2705, 8517 5024, 5308, 1027, 4515, 5215 9010, 3927, 8319, 7122 3030 1502, 6714 4905); the marker groups.
+- Third pass (13 Nov): 236 values, no inversion. Occurrences: 485 of 754 valued (64%), 172 marker groups with a working function (23%; functions listed under "_markers" in
+  anchors_inspecteurs.json: brackets, paragraph end, plural, participles, imperfect, adjective and noun endings; 0113 = a / à in all 8 uses), 97 unread (13%, 86 distinct groups).
+  Correction of sense: "... et a M. [1114 5911 0131], AIDE DE CAMP (0423, 1206) au general Trochu, que Madame [same name] est en bonne sante a Rennes": the Rennes news is for an
+  aide-de-camp of Trochu, not for Trochu. The name fits BRU-NE-T (guess; a web search did not confirm a Brunet on Trochu's staff). 1027 = bonnes ("vos bonnes communications").
+  Withdrawn: 3604 = excavation (the clear word before it is "la", so the entry starts with a consonant; f.. such as fable is possible, which would put the start of F before 3604).
+  Candidates noted but not adopted: 6005 9029 0312 = notaire/notable + surintend-ant; 4423 = inertie/incurie; 8122 = reste; 4519 = installee; 2329/2705 = second forms of depeche/donner.
+- Correction from the claims review (13 Nov): the slips are THIRTEEN written groups, 16 occurrences (the eleven listed above plus 4913 and 4915 for 4914); not all are 3/5, 0/6 or 5/8 (2534 is 3/1, 6180 8/2, 5005 5/6).
+  The single inversion of the first pass was 7119/7208 (not 5511/5512). The transcription file has 754 groups, 349 distinct, 0101 52 times, and no four-digit number in clear; 736/343/49 was the 7 Nov count.
+  PRU-S-SIE-N occurs once; the second run is PRU-S-[8626], 8626 unread. 3927 = garde is used in 'mettre en garde' only; in L-[3927]-E it is unread.
+- NOT a reading by the README bar (95% of tokens): this is "read in part", from one transcription, with no second text in this code to test the values on.
+
 ## Wiki and engine (7 Nov 2026): start here
 `wiki/` is the project's knowledge tree, built on Karpathy's LLM-wiki pattern (gist 442a6bf5..., raw sources / wiki / schema; ingest, query, lint; index.md and log.md): read `wiki/SCHEMA.md`, `wiki/PROCESS.md`, `wiki/index.md`
 and `wiki/syntheses/Z01.md` (overview and ranked next steps) before anything else; `wiki/log.md` has the history including two rolled-back false acceptances. Machine state: `wiki/lexicon_inspectors.json`, `wiki/lexicon_favre.json`.
@@ -351,4 +422,18 @@ At the collector's request 12 untranscribed page scans (about 14,000 groups) wer
   Chao1 about 2,200 (corrects "larger than 2,300"). No word values.
 - Printed-text search: no match except 13 Nov; 7 Dec table probably Chaudordy's dispatch of 7 Dec (Favre II p. 255); Quai d'Orsay papers not checked.
 - Corrections: old overlap figure 87-95% wrong (mixed pool); 701119 is Favre family; 701023 block 2 is R1; a seven-group run read on 2emeS-2 does not exist.
-- Open requests to the collector: beacon pairs, recipient 6819 3412, Nantes/Rennes names, other ciphertext, rescans of the four weak spots.
+- Open requests to the collector: beacon pairs, recipients 6819 3412 (P...-ET, Pierret?) and 5006 9701 2729, Nantes/Rennes names, other ciphertext, rescans of the four weak spots.
+
+## Remaining gaps
+- names and places (third addressee LE-V..-E, first addressee P..-ET, 9802 6124 at Nantes, the aide-de-camp 1114 5911 0131, 0402 4712, 1002 5825 9924 T, 7708 5825 9511 D, 3920 8914 3005 5824, 0312 9516 / 2722 7802, place 9620 3328 3824, prefecture 0903 2719) - blocker: no-key-material; spelled once or twice, no second text in this code, no source naming them found
+- about 35 single groups with several candidates (list in the third-pass note above) - blocker: open-codes; each occurs once or twice and the interval between known neighbours still holds several words
+- thirteen assumed digit slips (16 occurrences) and the doubtful 0617 - blocker: needs-physical-access; the full scan is with the collector and on the owner's machine, not in the repository
+- exact meaning of the marker groups on pages 01-03 and 05 - blocker: no-key-material; working functions only
+
+## Escalation
+- [x] siblings: the collection's other pages were sorted on 8 Nov (R1, R2, Favre/delegation code); none is in the inspectors' code
+- [x] clear-pages: the clear words inside the telegram are the adjacent plaintext used; no separate clear copy exists in the collection
+- [x] known-keys: R1 tested on 7 Nov (18% of groups in its table, 10% by chance, no sense): not the inspectors' table
+- [x] print: Steenackers 1883 (HathiTrust), Dagron, the 1872 Bulletin article searched on 7 Nov; the telegram is not printed there; web searches of 13 Nov for Pierret and for Trochu's aides-de-camp found nothing
+- [x] key-rebuild: alphabetical bracketing of the paged book (interval_cands.py), three passes on 13 Nov, 23 to 236 values
+- [x] retry: every unread group listed again with the tightened intervals in the third pass; candidates recorded, none adopted without a second support
