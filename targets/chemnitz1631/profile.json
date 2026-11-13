@@ -121,6 +121,15 @@
   {
    "date": "2026-11-13",
    "kind": "crib",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Earlier attempt (before PREREG-3, by the contributor's record): a 23-value table tried on images 55 and 56 gave 59% coverage and no reading; 55-56 were therefore not used as the test.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "crib",
    "what": "Key = majority letter per group from the 57 pairs only (79 values); frozen with the protocol (PREREG-3) before any group of 55, 56 or 58 was transcribed by eye. An earlier test of a 23-value table on 55+56 (coverage 59 %) had failed; 55 and 56 were therefore not reused for testing.",
    "result": "worked",
    "technique": [
@@ -140,6 +149,15 @@
    "date": "2026-11-13",
    "kind": "reading",
    "what": "Images 55 and 56 transcribed by eye (452 groups) and decoded with the frozen key; read by sense; values not in the glosses restored from the sense (46=w, 29=b, 51=r, ligatures Sd=w, Sf=t) and marked.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Integration check: key rebuilt from gloss57_pairs.txt (598 pairs, 79 values) agrees with key.tsv except the restored values and 45/47; decryption of 55-56 reproduced; 58: 140/144 groups valued. Riksarkivet IIIF images 55 and 57 fetched: 68 groups of image 55 compared, 67 agree (one S2/Sf doubt); glosses of image 57 lines 1-2 agree. Strict count 68/89 = 76.4%; gaps workable, target in progress.",
    "result": "partial"
   }
  ],
@@ -161,15 +179,16 @@
    "date": "2026-11-13",
    "verdict": "pass",
    "file": "validation.txt",
-   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py); protocol, pairs, key and the 58 transcription hashed before the run; the frequency test is indicative (144 < 150 groups), the gloss test passes."
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py). Measure A did not meet its own declared condition (144 < 150 groups) and is not counted. Measure B (95.6% of 91 letters vs 34.1%) passes by the contributor's record: the page-58 gloss alignment and the PREREG-3 hashes are not in the PR, so it could not be re-run (integration check, 13 Nov 2026)."
   },
   "provenance": "contributed",
   "credits": [
    {
     "who": "dudout",
     "role": "solution",
-    "note": "transcription of images 55-58, key rebuilt from the glosses of image 57, pre-registered held-out measurement on 58, reading of 55-56 (88.8 % sure or probable) and summaries: Brice Dudout with Claude Opus 5.5 agents",
-    "date": "2026-11-13"
+    "note": "transcription of images 55-58, key rebuilt from the glosses of image 57, pre-registered held-out measurement on 58, reading of 55-56 (68 of 89 words sure; 88.8 % sure or probable by his count) and summaries: Brice Dudout with Claude Opus 5.5 agents",
+    "date": "2026-11-13",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/539"
    },
    {
     "who": "contemporary",
@@ -186,8 +205,19 @@
   ],
   "gaps": [
    {
-    "item": "89 cipher words of 55-56: 68 sure, 11 probable (one group read against the key or a doubtful 4/7, 24/27 figure), 10 on values restored from the sense; 88.8 % sure+probable, under the 95 % bar.",
-    "blocker": "not-attempted"
+    "item": "image 55: 6 cipher words (3 probable, 3 restored)",
+    "blocker": "not-attempted",
+    "detail": "re-read the doubtful figures on the image; test the restored values on their other occurrences"
+   },
+   {
+    "item": "image 56: 15 cipher words (8 probable, 7 restored)",
+    "blocker": "not-attempted",
+    "detail": "same"
+   },
+   {
+    "item": "further Chemnitz letters in Riksarkivet SE/RA/2106/F/XI/1392",
+    "blocker": "needs-physical-access",
+    "detail": "not digitised"
    }
   ],
   "texts": [
@@ -204,7 +234,7 @@
     "language": "de",
     "state": "read in part",
     "summary": "Chemnitz advises the king that the new troops at Nuremberg could harass the enemy's quarters but are too green to risk, and that the arms and guns stored at Ansbach should be seized by force before the enemy takes them, since asking the margrave's government would betray the plan to the enemy.",
-    "read_share": 0.888,
+    "read_share": 0.764,
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 (model), agent run by Brice Dudout",
@@ -214,6 +244,9 @@
    }
   ],
   "key_file": "key.tsv",
-  "notes": "Writer identified from the signature ('M. Chemnitz') and the literature: Martin Chemnitz (1596-1645), sent by Gustav II Adolf to Nuremberg in October 1631. The glossed letter of image 57 is itself already read (the gloss), so it is not claimed."
+  "notes": "Writer identified from the signature ('M. Chemnitz') and the literature: Martin Chemnitz (1596-1645), sent by Gustav II Adolf to Nuremberg in October 1631. The glossed letter of image 57 is itself already read (the gloss), so it is not claimed.",
+  "fraction_read": 0.764,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Integration check, 13 Nov 2026, README rule (probable and restored words are holes): image 55 34/40, image 56 34/49, 68/89 = 76.4%. The contributor's figure, counting probable words, is 79/89 = 88.8%."
  }
 }
