@@ -1,0 +1,7 @@
+# Reading (existing, from the period clear texts)
+
+The four telegrams K1, K2, K4 and K5 are read word by word against the clear texts typed by the State Department's clerks on the same file (decryption.txt); K3 (5 groups) is read in part.
+
+**Translation / sense.** On 30 Jan 1918 the Department asks the consul at Kobe, Robert Frazer Jr., to have the Japan Chronicle name the source of an article, attributed to a German merchant "August Thyseen" (Thyssen), printed on 11 Dec 1917. Frazer replies on 7 Feb that the first three words of the telegram were mutilated and that the paper says the assertion rests on Japanese press statements of some years before; the Department repeats the question on 8 Feb; on 9 Feb Frazer answers that the Chronicle copied the article from a Hong Kong paper, which had it from the Glasgow Post (Scotland, date unknown).
+
+**Count** (Daniel's rule, words of the clear text lined up against groups): K1 28 tokens (27 groups and one date-time word), K2 31 (29 groups and two date-time words), K4 28, K5 19; 69 group-to-word pairs frozen in key.tsv. Sure 69 pairs; probable 0 (K1 53303 is a clerk's slip for 53033 "Thy", counted as one sure pair of 53033); restored 0; groups read only from the clear text, without a key.tsv value: K2 57010, 43000, 36715, 24336, 50552; K4 52356; K5 57571 (= 57371?), 25027 ("copied" where the order wants a D word), 51685, 41596; unresolved: K3 LILUM, EO. Share read by sense of the 4 telegrams with a clear text: 100 % (they are given); of all 5: 109 of 111 tokens (0.982), so the group is read in part (K3).
