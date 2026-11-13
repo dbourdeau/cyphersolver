@@ -325,6 +325,33 @@ Reading: the spelled-name mechanism is the big lever; ordinary words still lose 
 "Steenackers a M./le prefet [..] Mercadier" (unverified; positions only). Next candidates: piece-level consistency across spelled runs (6129 = on in pigeons and ballon would give bal|l|on), domain LM for
 telegraph/pigeon-post words, joint decoding of 'est bien portante' as spelled.
 
+## Pillon's suggestions of 13 Nov 2026: PIERR-ET, messieurs, et, VIN-OY, DUC-ROT (heading_test.py)
+Pillon (two emails, relayed by Dan): 6819 3412 = PIERR + ET (alphabetical, and a likely recipient); then "5511 0101 6819 3412 0102 5504 1122 2514 3316 = messieurs Pierret et
+Mercadier" with 5511 = messieurs, 6819 = Pierret, 3412 = et; 0919 5121 6129 = BAL-L-ON; 4007 = general; after 4007 the names 9802 6124 = VIN-OY? and 2722 7802 = DUC-ROT?
+Tested against the alphabetical rule (vocabulary here: wiki/topic_counts.json, 2,082 words used twice or more; the Favre/Enquete corpus of the earlier sections is not in the
+repo, so the errors differ slightly) and against the telegram's own structure:
+- 3412 = et: SUPPORTED. Position -0.005 (est = 3407, already supported, is five entries below). Context: "0101 0919 5121 6129 0201 3412 0201 6816 4001 6129 8328 0301" is
+  [ballon] 3412 [pigeons], two runs identified independently, joined by 3412; also "2405 9211 3412 2405 7102" and "de 0530 3412 de" (the same word either side).
+- 5511 = messieurs, 5711 = monsieur: SUPPORTED by structure. 5511 occurs once, in the heading, before THREE bracketed names in a row: [6819 3412] [5504 1122 2514 3316 =
+  Mercadier] [5005 9701 2729]. 5711 occurs six times, each time before ONE bracketed run. Three later paragraphs open "0109 5711 [name]" with the same three names in the same
+  order: [6519 3412] (5/8 slip for 6819), [5504 1122 2534 3316] (Mercadier, 1/3 slip), [5006 9701 2729]. Positions: messieurs +0.004, monsieur +0.001 ("M." -0.027 in this vocabulary).
+  So the telegram has three addressees and a paragraph for each; 0109 closes a paragraph. This replaces "5511 = M." (C016).
+- 6819 3412 = one name, P... + ET: in its own paragraph the run stands alone after "monsieur" and before 0109, so 3412 is inside the name there (the piece ET), not the word
+  "et" before Mercadier. That fits Pillon's first version (PIERR-ET) and not his second (6819 = Pierret, 3412 = the word et). 6819 is three entries after PI (6816); "pierre"
+  fits at +0.005. Pierret is consistent, not confirmed: entries such as pic, pie, pied would sit in the same three places, and two web searches (13 Nov) again found no Pierret
+  in the Paris telegraph service of 1870. The "prefet" side hypothesis (P-R + E-T) is dropped: a title would not follow "monsieur" as a spelled run in a list of names.
+- Third addressee 5005/5006 9701 2729: unidentified. 5006 is also a frequent stand-alone group (le fits at +0.001), 9701 is a V entry below vin, 2729 ends many runs (an E entry?).
+- "voici la reponse de 5219 [Mercadier]": 5219 is the entry after 5218 (madame, hypothesis); mademoiselle fits at +0.003. This answers open point (a) of the 7 Nov section: the
+  sender of the reply is a relative of Mercadier, not Mercadier quoting himself. Guess only.
+- BAL-L-ON: unchanged (hypothesis, C007); the frame "ballon et pigeons" now reads through.
+- VIN-OY for 9802 6124: NOT supported, as before (0.7% of strings fit two groups this well). New: 6124 lies BELOW 6129 (on), and "oy" sorts after "on" (+0.027); a phonetic
+  "oi" would sort correctly (+0.008). Vinoy stays a guess.
+- DUC-ROT for 2722 7802: NOT supported. duc fits 2722 (+0.017), but 7802 lies below 8317 (RO in Trochu) while "rot" sorts after "ro" (+0.037, about three times the typical
+  error); 7802 sits at the start of R (r -0.020, re -0.017). The pair also occurs with no "general" before it ("... 0312 9516 0102 2722 7802 0101 1417 du 1118 recemment cree"),
+  and 7802 opens other runs ("qui 7802 5102 tous les points les plus importants", "nous donne un 7802 3207"), so it is a piece such as R or RE. The general's name is open.
+Does it help? Three whole-word values (et, messieurs, monsieur) and the paragraph structure (three addressees, 0109 as paragraph end) are added; no new passage reads. Asked
+of Pillon: whether a Pierret (or Pieret, Piet ...) and a third official L-V-E appear in his sources next to Mercadier.
+
 ## Wiki and engine (7 Nov 2026): start here
 `wiki/` is the project's knowledge tree, built on Karpathy's LLM-wiki pattern (gist 442a6bf5..., raw sources / wiki / schema; ingest, query, lint; index.md and log.md): read `wiki/SCHEMA.md`, `wiki/PROCESS.md`, `wiki/index.md`
 and `wiki/syntheses/Z01.md` (overview and ranked next steps) before anything else; `wiki/log.md` has the history including two rolled-back false acceptances. Machine state: `wiki/lexicon_inspectors.json`, `wiki/lexicon_favre.json`.
@@ -351,4 +378,4 @@ At the collector's request 12 untranscribed page scans (about 14,000 groups) wer
   Chao1 about 2,200 (corrects "larger than 2,300"). No word values.
 - Printed-text search: no match except 13 Nov; 7 Dec table probably Chaudordy's dispatch of 7 Dec (Favre II p. 255); Quai d'Orsay papers not checked.
 - Corrections: old overlap figure 87-95% wrong (mixed pool); 701119 is Favre family; 701023 block 2 is R1; a seven-group run read on 2emeS-2 does not exist.
-- Open requests to the collector: beacon pairs, recipient 6819 3412, Nantes/Rennes names, other ciphertext, rescans of the four weak spots.
+- Open requests to the collector: beacon pairs, recipients 6819 3412 (P...-ET, Pierret?) and 5006 9701 2729, Nantes/Rennes names, other ciphertext, rescans of the four weak spots.

@@ -373,6 +373,16 @@
    "kind": "access",
    "what": "Publication: the collector agreed (relayed by the project owner) that his scans and the transcriptions of them are published on the site and in the repository. Published: his transcription files and the derived sequence and alignment outputs in the target folder, the AI transcriptions of the twelve page scans (workbook with reliability notes, per-page text zip) under docs/data/pigeongrammes1870/, and six cropped snips of the scans on the page. Not published (outside the permission): repertoires R1-R3, his Excel files, the R2 gap table (a count only), the zip. Re-ran alpha_test, spell_solver, apply_telegram and joint_loop on the published files and they reproduce the committed outputs; bench_loop needs his Repertoire1.xlsx.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "hypothesis",
+   "technique": [
+    "crib testing",
+    "statistical test"
+   ],
+   "what": "Collector's suggestions (two emails): 6819 3412 = PIERR-ET (Pierret), 5511 = messieurs, 3412 = et, 9802 6124 = VIN-OY, 2722 7802 = DUC-ROT. Tested with heading_test.py against the alphabetical rule and the telegram's structure. Supported: 3412 = et (position -0.005; joins the spelled runs ballon and pigeons); 5511 = messieurs and 5711 = monsieur (5511 once before three bracketed names, 5711 six times before one; three later paragraphs open with monsieur and the same three names in order). 6819 3412 is one name P...-ET (it stands alone after monsieur in its paragraph), consistent with Pierret but not confirmed: no Pierret found in the 1870 Paris telegraph service. Not supported: VIN-OY (oy sorts after on = 6129, the group is below it) and DUC-ROT (rot sorts after ro = 8317, the group 7802 is below it and recurs as an R piece elsewhere). Third addressee 5006 9701 2729 unidentified. No new passage reads.",
+   "result": "partial"
   }
  ],
  "outcome": {
