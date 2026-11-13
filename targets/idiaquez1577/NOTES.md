@@ -1,5 +1,7 @@
 # idiaquez1577: Juan de Idiáquez and Pedro de Mendoza to Philip II, Genoa, 24 November 1577 (catalogue 754, AGS Estado 1410,115), cipher of images 1-2 read in part
 
+Status: in progress. Folder integrated 13 Nov 2026 without a page: images 3-6 (about 105 cipher lines) are not transcribed (workable gap); the contributor's state for images 1-2 is read in part.
+
 ## Document
 
 - Archivo General de Simancas, Estado, leg. 1410, no. 115 (PARES 3577720): "Carta cifrada de Juan de Idiáquez y Pedro
@@ -154,3 +156,16 @@ cookie jar, User-Agent WAINUT-research, one request at a time 6-9 s apart (`../s
 16 requests in all (1410,115: show + 8 images + description page; 1414,4: show + 4 images), no 429.
 
 Work by AI language-model agents for WAINUT (credit lccompany), from the images.
+
+## Integration check (13 Nov 2026)
+
+- Reproduced exactly: `decrypt.py` (own decoder from `key_frozen.tsv` gives the same text; the file has CRLF line ends), `check_marks.py` (187 words, 173
+  verbatim = 92.5%), `heldout.py` (0.970 characters, 0.910 of 122 words; 200 controls at most 0.922 and 0.746), `docs/_check_reading.py` (0.727, 16 of 22
+  sentences), `docs/_check_profile.py` (valid). `key_frozen.sha256` matches. The frozen key agrees with `targets/perez1578/key.tsv` (K_P2) except the changes
+  the notes name (8 = b, 13 j, 26 fi); perez1578's NOTES confirm 8 = b in the Genoa table.
+- The held-out score compares the decryption with the contributor's own reading, so it is not independent of the key; the evidence that counts is that
+  the mechanical decryption of 26 lines is fluent Spanish with a key made on other letters.
+- Figure: 92.5% verbatim of the transcribed part (the 4 code-group occurrences, 3 distinct groups, are counted verbatim by the contributor; without
+  them 169 of 183). Of the whole cipher about 26 of 130 lines are transcribed (fraction 0.19). No page until images 3-6 are read.
+- Images not compared: PARES returned 429 to the checking session. The reviewer's 64 of 68 signs is the contributor's.
+- One key, one entry: K_P2 is `targets/perez1578`'s key; this is a different document, cross-referenced, no second key page.

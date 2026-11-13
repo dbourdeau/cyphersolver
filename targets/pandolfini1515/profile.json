@@ -141,6 +141,12 @@
    "kind": "verification",
    "what": "Independent blind review by an AI language-model agent that took no part in the solution: sign spot-check of about 150 signs in four lines on the images (base shapes agree in about 95%), mechanical checks re-run, reading read against the translation. Read in part, grade B. Of five signs the reviewer read differently, two were marked doubtful after a second look at the strips and three were kept (NOTES.md).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Integration check (round 7): reran decrypt/check_marks/heldout (0.820 vs 0.629-0.685, 592 of 771 verbatim), _check_reading (0.681) and _check_profile; own second decoder from key.tsv gives an identical decryption; frozen-key and transcription hashes match. ASF images unreachable from the checking session (connection reset), so no image comparison. Strict share 76.8% kept as the figure (94.6% with marked repairs is the contributor's looser figure). Known keys v3/v4 of pandolfini1514 differ from v6 only by token additions. Status set to in progress: no independent blind transcription is a workable gap.",
+   "result": "worked"
   }
  ],
  "outcome": {

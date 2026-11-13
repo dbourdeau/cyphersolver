@@ -1,6 +1,6 @@
 # pandolfini1515: Francesco Pandolfini to the Otto di Pratica, Vercelli, 6 and 8 Sept 1515 (ASF MAP CXXXVII doc. 666), read in part with Brice Dudout's key v6
 
-Status: **read in part** (12 Nov 2026; independent blind review 12 Nov 2026: read in part, grade B). Catalogue **2393** (lead and vetting by Daniel Bourdeau, 6 Nov 2026). The key is
+Status: in progress. Folder integrated 13 Nov 2026 without a page (workable gaps: no independent blind transcription, escalation steps open; see Integration check). Contributor's state: **read in part** (12 Nov 2026; independent blind review 12 Nov 2026: read in part, grade B). Catalogue **2393** (lead and vetting by Daniel Bourdeau, 6 Nov 2026). The key is
 **Brice Dudout's key v6** of `targets/pandolfini1514` (Pandolfini's 1514-15 French embassy cipher, rebuilt from the
 MAP LXXII pairs), applied here unchanged to a letter of September 1515: the same system and the same key. This target
 is proposed as its own folder because the letter is in a different filza and year; the credit for the key is Dudout's.
@@ -154,3 +154,20 @@ Collision check 12 Nov 2026 (origin/main, live repository, open and recent PRs, 
 - [ ] print: Desjardins-Canestrini II, Tomokiyo and Lasry (Dan's vetting) and one web search; Usteri, Marignano (1974) not opened
 - [ ] key-rebuild: one sign added (Φ = x); .15., .22. and the signs with other values not rebuilt
 - [ ] retry: the holes were not retried with an extended key
+
+## Integration check (13 Nov 2026)
+
+- Reproduced exactly: `decrypt.py`/`check_marks.py` (771 words = 592 verbatim + 137 marked repair + 15 conjectural + 27 holes),
+  `heldout.py` (frozen 0.820, five controls 0.629-0.685), `docs/_check_reading.py` (reading 0.681 with the marks), `docs/_check_profile.py` (valid).
+  `key_frozen.tsv` (SHA-256 8cdd0da0...) and `transcription_666.txt` (2eb2358f...) match the hashes stated above. An own decoder written
+  from `key.tsv` and the transcription gives a decryption identical to `decryption_666.txt` (its three context rules are taken from
+  `decrypt.py`, so that check is not independent of them).
+- Figure used: **76.8% verbatim** (592 of 771 words; the owner's strict rule: words resting on a marked repair, a conjecture or a
+  hole are not counted). The contributor's looser figure, 94.6%, counts the 137 words with a marked repair as read. Either way
+  under the 95% bar: read in part.
+- One key, one entry: the key is Dudout's v6 of `targets/pandolfini1514`, applied unchanged (plus one sign, Phi = x). This letter is the first
+  test of v6 on a fresh document (the 1514 notes call v6 declared, not measured). When a page is written, either fold this letter into
+  the pandolfini1514 page as a section or give both pages a reciprocal cross-reference; the key does not get two independent write-ups.
+  Dudout's v3 and v4 differ from v6 only by token additions (v6 is a superset), so no other known key of the series is left to try.
+- Images not compared: the ASF server reset every connection from the checking session. The reviewer's 150-sign spot check is the
+  contributor's. No independent blind transcription exists (workable once the images are reachable): the target stays in progress.
