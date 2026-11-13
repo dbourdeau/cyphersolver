@@ -1,0 +1,8 @@
+LABEL: b106_zobel1629_pentz1636
+Local UTC: 20261112T041403Z
+Files: 40
+Manifest SHA-256: 3eec360077380e34b7976920511aadf087f8ae4086f6bc81960457b219427815
+RFC3161 TSA (Sectigo Public Time Stamping Signer): status=Granted. time=Nov 12 04:14:03 2026 GMT
+OpenTimestamps: submitted (pending Bitcoin; ots upgrade later)
+Verify RFC3161: openssl ts -reply -in MANIFEST.sha256.tsr -text ; openssl ts -verify -data MANIFEST.sha256 -in MANIFEST.sha256.tsr -CAfile <Sectigo chain>
+Verify OTS: ots verify MANIFEST.sha256.ots

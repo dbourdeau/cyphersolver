@@ -1,0 +1,48 @@
+# key.tsv: Pentz family, key v1 (b106, frozen 12 Nov 2026 before the Vienna run at 04:11 UTC; RFC 3161 04:14:03 GMT).
+# 24-letter alphabet abcdefghiklmnopqrstuwxyz (i=j, u=v). The decoder uses exactly these rows (scripts/build.py checks them against key_history/KEY_pentz1636_T1T2.py).
+# Built from the ciphertext of the Vienna letter while transcribing it (before the freeze): einige reale dienste, sache, Fridericus showed the two tables and the switch.
+# basis: rule = value given by the run of the table only; seen = the value occurs in a Vienna word unit (words listed; E words in the list are not read).
+# Index numbers (not letters): 62 = table 1 follows; 13 = table 2 follows. How often each occurs: counts.txt.
+# Codes with no value: 168, 226, 85, 63, 64, 12, 11, 8, 9 (Vienna); 165 (Vienna, missed in the transcription); 182, 220, 232, 260, 280, 730, 767 (Glückstadt). Not in this key.
+# Not in the decoder: table 2 p=59 q=58 t=55 (implied by the run n=61 o=60 ... u=54, written in key_history/KEY_pentz_v1_b106.txt but never used); table 2 k l m w x y z (no value).
+table	figure	letter	basis	seen_in_vienna_words
+T1	14	k	seen	1: eingangk
+T1	15	l	seen	2: reale, zuerhalten
+T1	16	m	seen	2: ?erpetuum, disem
+T1	17	n	seen	11: berhuren, den, dienste, eingangk, einige, in, sein, wowen, zuerhalten
+T1	18	o	seen	1: wowen
+T1	19	p	seen	1: ?erpetuum
+T1	20	q	rule	0
+T1	21	r	seen	6: ?erpetuum, berhuren, reale, swer, zuerhalten
+T1	22	s	seen	5: dienste, disem, sein, swer
+T1	23	t	seen	4: ?erpetuum, dienste, zuerhalten
+T1	24	u	seen	4: ?erpetuum, berhuren, zuerhalten
+T1	25	w	seen	3: swer, wowen
+T1	26	x	rule	0
+T1	27	y	rule	0
+T1	28	z	seen	1: zuerhalten
+T1	29	i	seen	9: die, dienste, disem, eingangk, einige, in, sein
+T1	30	h	seen	2: berhuren, zuerhalten
+T1	31	g	seen	3: eingangk, einige
+T1	32	f	rule	0
+T1	33	e	seen	21: ?erpetuum, berhuren, den, die, dienste, disem, eingangk, einige, reale, sein, swer, wowen, zuerhalten
+T1	34	d	seen	5: den, die, dienste, disem
+T1	35	c	rule	0
+T1	36	b	seen	1: berhuren
+T1	37	a	seen	3: eingangk, reale, zuerhalten
+T2	38	a	seen	1: sache
+T2	39	b	rule	0
+T2	40	c	seen	2: fridericus, sache
+T2	41	d	seen	3: deruon, die, fridericus
+T2	42	e	seen	4: deruon, die, fridericus, sache
+T2	43	f	seen	1: fridericus
+T2	44	g	rule	0
+T2	45	h	seen	1: sache
+T2	46	i	seen	3: die, fridericus
+T2	54	u	seen	2: deruon, fridericus
+T2	56	s	seen	2: fridericus, sache
+T2	57	r	seen	3: deruon, fridericus
+T2	60	o	seen	1: deruon
+T2	61	n	seen	1: deruon
+index	62	(table 1 follows)	seen	before every table-1 word run
+index	13	(table 2 follows)	seen	before every table-2 word run

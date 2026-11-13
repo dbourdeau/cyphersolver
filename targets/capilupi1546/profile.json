@@ -315,7 +315,7 @@
   {
    "date": "2026-11-13",
    "kind": "control",
-   "what": "Integration check: own decoder written from dudout/key.txt (23 simple codes, longest code first, no composite entries) decodes the arbitrated transcriptions to the same Italian (letter-sequence similarity to decryption.txt 0.93-0.98 per folio; differences are the parse of ambiguous strings that the unpublished ~2,000 composite entries fix). Own coverage measure on held-out 05r with a lexicon of Italian 16th-century words of frequency >= 30 (length >= 3): M = 0.83 against 200 permuted-value controls max 0.34, mean 0.16. KEY-1555.json and the contributor's lexicon are not in the repository, so M = 0.7962 and the frozen hashes could not be reproduced exactly.",
+   "what": "Integration check: own decoder written from dudout/key.txt (23 simple codes, longest code first, no composite entries) decodes the arbitrated transcriptions to the same Italian (letter-sequence similarity to decryption.txt 0.93-0.98 per folio; differences are the parse of ambiguous strings that the unpublished ~2,000 composite entries fix). Own coverage measure on held-out 05r with a lexicon of Italian 16th-century words of frequency >= 30 (length >= 3): M = 0.83 against 200 permuted-value controls max 0.34, mean 0.16. KEY-1555.json and the contributor's lexicon are not in the repository, so M = 0.7962 and the frozen hashes could not be reproduced exactly at this point (settled by the PR #521 check below).",
    "result": "worked"
   },
   {
@@ -329,13 +329,19 @@
    "kind": "reading",
    "what": "Integration check, sibling test (not a claim): the simple key.txt applied to the first-pass digits of capilupi1545 c. 48 and c. 49r (Camillo Capilupi, Feb 1546) gives Italian runs ('mi ha deto hor basta trata', 'lambasciador di Francia ha deto a Ferar', 'tre di sono', 'il tene da due hore ragionando', 'suo figliuolo piglila figlia de ... re', 'lo scriuessa al re ... conditioni'), with gaps where the first-pass digits are doubtful. Those two pages were part of the build set, so this is not an independent test and no reading of them is claimed. It shows that the digit system of c. 48 and c. 49r is the same as system Y.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "control",
+   "what": "Second integration check (PR #521, which adds KEY-1555.json, lexicon_1555.txt and HASHES-1555.md): SHA-256 of KEY-1555.json = 76ab7684...955e and of lexicon_1555.txt = 328049d3...d533, as stated in HASHES-1555.md (the PR text's e59da4f9... is the hash of the uncommitted source corpus). The lexicon yields 6,463 words after the script's filter, as stated. measure_1555.py re-run with python3 -I on transcription_05r.txt: M 0.7962, controls max 0.175 mean 0.0181, PASS, byte-identical to MESURE-1555-H.txt. Own longest-code-first decoder from KEY-1555.json reproduces decryption.txt exactly on all seven Y folios (0 differing characters); the 1-2 digit entries equal key.txt. Freeze order and corpus-to-lexicon derivation remain by the contributor's record (no external timestamp; corpus not committed).",
+   "result": "worked"
   }
  ],
  "outcome": {
   "validation": {
    "date": "2026-11-12",
    "verdict": "pass",
-   "notes": "Contributor's own protocol (PREREG-1555.md, frozen before any key-building), not docs/_validate.py. One run of measure_1555.py on the held-out folio 05r: M 0.7962 against 200 permuted controls (max 0.175). The measure is lexical coverage; it validates the key as a system, not each word. The reading of 05r itself stays under the 95 % bar."
+   "notes": "Contributor's own protocol (PREREG-1555.md, frozen before any key-building), not docs/_validate.py. One run of measure_1555.py on the held-out folio 05r: M 0.7962 against 200 permuted controls (max 0.175). The measure is lexical coverage; it validates the key as a system, not each word. The reading of 05r itself stays under the 95 % bar. Re-run at integration on 13 Nov 2026 after PR #521 added the frozen key and the lexicon: hashes match, M 0.7962 and controls max 0.175 reproduced exactly; the freeze order is by the contributor's record."
   },
   "class": "read in part",
   "verification": [
