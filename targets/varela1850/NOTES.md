@@ -1,5 +1,7 @@
 # varela1850: Benito Varela to the Consul General of Paraguay in Rio de Janeiro, Asunción, 13 February 1850 (catalogue 1500)
 
+Status: in progress (read in part; the sibling letters of the file are not yet paged, so no write-up yet).
+
 ## Document
 
 - Archivo Nacional de Asunción, Colección Rio Branco, ANA-AHRP-PY-558-1-31, item 13 (ex Biblioteca Nacional, Rio de
@@ -168,3 +170,19 @@ the text.
 the comment line and the header. Of the 27 entries, 7 come from the crib, 1 from the vowel gap (e 5) and 19 from
 the order rule. 16 of the 27 values occur in the letter runs. `key_candidates.tsv` holds the three candidate orders
 A, B and C side by side: 27 entries, 28 lines with the header.
+
+## Integration check (13 Nov 2026)
+
+Checked by the integrator: `scripts/check_marks.py` passes; `scripts/heldout.py` run with the repo lexicon gives
+candidate A 49 of 76 groups (64.5%), B 46, C 24; 1,000 shuffles of the non-crib values: mean 9.1%, max 44.7%, none
+at or above A. The ANA PDF downloads with plain curl; images were not re-transcribed (the contributor's blind
+reviewer checked 64 group occurrences).
+
+- Strict share: 9 of 21 items (42.9%): the 14 letter-table words, 9 verbatim, plus 7 lone numbers or signs counted
+  as holes. 64.3% is the share of the 14 letter-table words only (the contributor's figure). `profile.json` text
+  read_share was 0.643 and is now 0.429, so the profile uses one rule. Class: read in part.
+- Evidence for the table: one context crib (ocupacion before "de Grande"), an odd-number alphabetical order chosen by
+  the solver, three orders frozen, 76 held-out groups with the clear context in view. Credible but small.
+- Not done and workable (so in progress, no page): the other letters of 558-1-31 (98 images) were not paged for
+  more cipher in the same table, which could settle 25, 1, 116 and 98.
+
