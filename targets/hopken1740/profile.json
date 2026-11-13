@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "hopken1740",
- "title": "Höpken and Carlson, Constantinople, 1740-1741: the second code, rebuilt from the glossed despatch of 15/26 January 1740 and tested held-out on a glossed French page of 1741; a letter of the comte de Castellane and the start of the reply read in part",
+ "title": "Höpken and Carlson, Constantinople, 1740-1741: the second code, rebuilt from the glossed despatch of 15/26 January 1740 and tested held-out on a glossed French page of 1741; a letter of the comte de Castellane and the start of the reply read in part; a bare Latin letter signed Ibrahim Effendi (vol. I/9/29) read in part",
  "documents": [
   {
    "id": "despatch_jan1740",
@@ -139,6 +139,41 @@
     "image_quality": "good",
     "notes": "Two passes by one agent (bands at 0.6-0.75x; halves or quadrants at 0.9-1.0x); disagreements settled on 2x crops; doubtful digits marked ?."
    }
+  },
+  {
+   "id": "litB_ibrahim",
+   "read": "read in part",
+   "shelfmark": "Stockholm, Riksarkivet, Diplomatica Turcica, SE/RA/2119/2119.1/I/9/29 (R0003653), image 81 right page and image 82 left page (its verso)",
+   "date": "undated on these pages; volume 1736-1746; the year 1740 is an estimate from the subject (boundaries and islands disputed with the 'legatus Germaniae', probably the Imperial envoy; inferred to be the frontier settlement after the Treaty of Belgrade, 1739, not checked)",
+   "year": 1740,
+   "country": "Sweden",
+   "route": "Ibrahim Effendi (signature in the cipher) -> an Excellency (address 'Domino Domino A[h]me[t] [1909]', partly guessed and unread); cipher copy marked 'Doupplette', 'Lit. B', kept in the papers of the Swedish legation at Constantinople",
+   "places": {
+    "from": "Constantinople",
+    "to": "Constantinople"
+   },
+   "language": "Latin",
+   "cleartext_in_document": "none",
+   "pages": 2,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the pages (no interlinear writing, no gloss). The key is this folder's key_1741.tsv (the hopken1740 key rebuilt from the Swedish decipherment of the despatch of 15/26 Jan 1740, vol. I/9/21, plus 24 values and 2 corrections from the French gloss of Lit. A, 1741, vol. I/9/26), unchanged."
+   },
+   "length": {
+    "tokens": 494,
+    "distinct": 152,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription_litB_all.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Riksarkivet IIIF images, full size (lbiiif.riksarkivet.se, R0003653_00081 and _00082)",
+    "image_quality": "good",
+    "notes": "Two passes per page by one agent on different crop grids (about 1x and 1.25x), digits only; 2 disagreements in 494 groups, settled on 2.5x crops as 1353? and 1135?. One group (B09 g18, 178?) has its last digit in a torn edge. A blind review copied about 115 groups from the image and found 2 misreadings, both corrected (C10 g4 1624 -> 1024; B15 g16 1496 -> 1495?). For image 82 the decryption of image 81 had already been seen."
+   }
   }
  ],
  "system": {
@@ -173,7 +208,7 @@
   },
   "key_order": "random",
   "word_division": "none",
-  "notes": "Seed values read by eye only in the first build; the key was then rebuilt from the glossed despatch (235 confirmed values) and extended by 24 values from Lit. A's gloss. Key: key.tsv of this folder (as on origin/main 54c4ecc65), applied frozen and unchanged; key_1741.tsv adds 24 values read from the Lit. A gloss and corrects two single values of it (1504 vo, 1840 au)."
+  "notes": "Seed values read by eye only in the first build; the key was then rebuilt from the glossed despatch (235 confirmed values) and extended by 24 values from Lit. A's gloss. Key: key.tsv of this folder (as on origin/main 54c4ecc65), applied frozen and unchanged; key_1741.tsv adds 24 values read from the Lit. A gloss and corrects two single values of it (1504 vo, 1840 au). Lit. B (vol. I/9/29, catalogue 2242) is read with key_1741.tsv unchanged; it is Latin. 31 groups that are in neither key take a value guessed from sense there (46 places, each group with one value throughout; listed in NOTES.md); 1461 (fi) stands for ni twice and 1471 (ga) for Latin ia twice."
  },
  "conditions": {
   "prior_solution": {
@@ -188,7 +223,7 @@
    "cleartext context"
   ],
   "attack": "archive decipherment",
-  "human_role": "Daniel Bourdeau set the task for the despatch of 1740; WAINUT set the task for the 1741 pages (catalogue 2245-2248) and the rules; AI language-model agents transcribed, froze and applied the key, ran the held-out test, read and checked. No human palaeographer checked the text.",
+  "human_role": "Daniel Bourdeau set the task for the despatch of 1740; WAINUT set the task for the 1741 pages (catalogue 2245-2248) and the rules; AI language-model agents transcribed, froze and applied the key, ran the held-out test, read and checked. No human palaeographer checked the text. WAINUT set the task for Lit. B of vol. I/9/29 (catalogue 2242); AI language-model agents transcribed, read and checked it; no human Latinist checked the text.",
   "tools": [
    "Riksarkivet IIIF images",
    "scripts/build_key.py (hard-EM segmentation)",
@@ -200,7 +235,7 @@
    "AI language-model agents (WAINUT), viewing the images"
   ],
   "first_date": "2026-11-10",
-  "last_date": "2026-11-12"
+  "last_date": "2026-11-13"
  },
  "solution": [
   {
@@ -372,6 +407,45 @@
    ],
    "what": "Statistical validation (docs/_validate.py) of the two bare documents of 1741 with key_1741.tsv (scripts/validation_pairs_1741.py): 449 read tokens, 125 types, 828 letters, fr-1600-letters order 4: reading -1.952 per letter; random keys -3.483 (z 12.2); key annealed onto shuffled ciphertext best -2.328 (mean -2.357, z 18.0); annealer on the real text -2.285. Verdict: pass. The key was not fitted to these pages (frozen despatch key plus Lit. A's gloss values).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "Lit. B (catalogue 2242): Manifest of R0003653 and images 78-86 at 1600 px, images 81 and 82 at full size, from the Riksarkivet IIIF service, one at a time, 1.6 s apart.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "Lit. B: sign conventions written first (SIGN_CONVENTIONS_litB.md); images 81 right and 82 left transcribed twice on different crop grids, digits only; 2 disagreements in 494 groups settled on 2.5x crops.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Lit. B: the frozen key (key.tsv, sha256 c4e208fe...) applied unchanged (scripts/heldout_litB.py): 434 of 494 groups are in it; at 419 of them (96.5% of the known groups, 84.8% of all) its value is the one the reading uses; image 81 269 of 322, image 82 150 of 172; shuffled-key control mean 2.0, max 28 (500 shuffles). Not blind: the reading was made with the key in view.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Lit. B: decrypted mechanically with key_1741.tsv and read as Latin with every departure marked; scripts/check_marks_litB.py rebuilds the decryption and passes; an unmarked change fails it. Checker clean share 0.348 (8 of 23 sentences).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "literature search",
+   "what": "Lit. B: two web searches on 12 Nov 2026 (Ibrahim Efendi, Latin letter, Swedish envoy, Danube islands, Belgrade 1739; Ibrahim Efendi, Höpken, Carlson, boundary commission): background only, no edition of this letter.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Lit. B: blind review by an independent AI language-model agent: about 115 groups copied from the image before the transcription was opened, 2 disagreements (C10 g4 1624 -> 1024; B15 g16 1496 -> 1495?), both corrected; {ryska/rna} reclassed as a guess; scripts rerun: 169 words, 113 verbatim, 13 with a marked change, 40 guessed, 3 holes.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -423,9 +497,9 @@
    "historical consistency",
    "statistical test"
   ],
-  "fraction_read": 0.866,
+  "fraction_read": 0.78,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Strict count by the README read bar over the two bare documents of 1741 (scripts/check_marks.py with key_1741.tsv): words read verbatim from the signs, 79 of 94 (the Castellane letter) and 109 of 123 (the reply to the foot of image 50 left), 188 of 217 = 0.866; guesses, repairs and the one hole are not counted. The glossed documents are the key source and are not counted: the despatch of 1740 (3,411 of 3,450 groups, 98.9%, in confident words) and Lit. A (84 of 122 words from the frozen key, 35 from its gloss, 3 repaired).",
+  "fraction_read_source": "Strict count by the README read bar over the three bare documents (scripts/check_marks.py with key_1741.tsv; scripts/check_marks_litB.py for Lit. B): words read verbatim from the signs, 79 of 94 (the Castellane letter), 109 of 123 (the reply to the foot of image 50 left) and 113 of 169 (Lit. B of vol. I/9/29), 301 of 386 = 0.780; guesses, repairs and holes are not counted. The glossed documents are the key source and are not counted: the despatch of 1740 (3,411 of 3,450 groups, 98.9%, in confident words) and Lit. A (84 of 122 words from the frozen key, 35 from its gloss, 3 repaired).",
   "credits": [
    {
     "who": "contemporary",
@@ -483,6 +557,30 @@
     "role": "verification",
     "note": "one independent AI language-model agent: blind sign check of 92 groups on images 147, 49 and 50 and a reading of each text as sentences; no human palaeographer",
     "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "Lit. B of vol. I/9/29, images R0003653_00081 (right page) and _00082 (left page), two passes",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "Lit. B of vol. I/9/29 decrypted with key_1741.tsv unchanged and read in part as Latin",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "one independent AI language-model agent: blind sign check of about 115 groups on images 81 and 82 of I/9/29 (2 corrections made) and a reading of Lit. B as sentences; no human palaeographer",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "catalogue entry 2242 (Sweep D, Riksarkivet IIIF volume pass; vetting of 6 Nov 2026 naming the Lit. B pages 79-85)",
+    "date": "2026-11"
    }
   ],
   "key_file": [
@@ -541,6 +639,26 @@
     "item": "A human second reader",
     "blocker": "needs-physical-access",
     "detail": "Both passes of the 1741 transcription were by one AI agent and every reader so far was an AI agent; a blind AI review spot-checked 92 groups, the integration about 300, with no disagreement."
+   },
+   {
+    "item": "Lit. B: B09 pair 1673 1128 and groups 1463, 1909 unread",
+    "blocker": "open-codes",
+    "detail": "1673 (sla) and 1128 (ce) give no sense in B09 (perhaps 'nec', not adopted); [1463] in B17 and [1909] after the addressee's name in C10; one place each."
+   },
+   {
+    "item": "Lit. B: 40 words resting on guessed values",
+    "blocker": "open-codes",
+    "detail": "31 groups guessed from sense at 46 places (10 recur and hold at every place, 21 occur once), plus {ryska/?rna} in 'hesterna'. Dan's checker gives 0.348, under its 0.45 line, because each [?x] counts as a hole; the reviewer reads the letter as Latin sentences and grades it read in part (B). To be checked on a glossed page of this code before they enter a key."
+   },
+   {
+    "item": "Lit. B: the addressee 'A[h]me[t] [1909]' and the writer",
+    "blocker": "open-codes",
+    "detail": "Two letters of the name rest on guessed values (1640 h, 1632 t) and 1909 is unread; neither the writer nor the addressee is identified."
+   },
+   {
+    "item": "Lit. B: doubtful digits 1353?, 1495?, 1135?, 178?",
+    "blocker": "illegible",
+    "detail": "B15 g6, B15 g16 (corrected from 1496 after the review), C02 g15; B09 g18 has its last digit in a tear."
    }
   ],
   "texts": [
@@ -611,6 +729,24 @@
      "by": "independent AI language-model agent (blind review)",
      "date": "2026-11-12",
      "note": "Read as French sentences against the translation: the four sentences hold to the break at the foot of the page; one group is unread and 10 words rest on marked context values."
+    }
+   },
+   {
+    "doc": "litB_ibrahim",
+    "label": "Lit. B (duplicate copy), Latin letter signed Ibrahim Effendi, vol. I/9/29 images 81-82",
+    "transcription": "transcription_litB_all.txt",
+    "decryption": "decryption_litB.txt",
+    "reading": "reading_litB.md",
+    "translation": "translation_litB.md",
+    "language": "la",
+    "state": "read in part",
+    "summary": "Latin letter signed Ibrahim Effendi to an Excellency: he has explained again and again the boundaries to be marked and the law and custom for dividing the islands; the 'legatus Germaniae' (probably the Imperial envoy) was astonished and did not know what to answer; he expects him to stop disputing about the islands and to accept everything today or tomorrow; he was given leave to call on the addressee but was kept at the Porte all day and asks to be excused.",
+    "note": "169 cipher words: 113 verbatim from the signs (66.9%), 13 with a marked change of a key value (74.6% together), 40 resting on values guessed from sense, 3 holes ([1463], [1909], and one two-group word in B09). Two digits were corrected after the blind review (C10 g4 1024, B15 g16 1495?). Dan's checker: clean share 0.348 (8 of 23 sentences); its Latin word list lacks several ordinary words of this letter, see NOTES.md.",
+    "reading_review": {
+     "grade": "B",
+     "by": "independent AI language-model agent (blind review)",
+     "date": "2026-11-12",
+     "note": "Read as Latin sentences against the translation: real Latin chancery prose that follows through from the greeting to the address, with 3 true holes; many words rest on marked guessed values. About 115 groups were copied from the image blind; the 2 disagreements were corrected before sending."
     }
    }
   ],
