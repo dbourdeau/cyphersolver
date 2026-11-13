@@ -2,6 +2,9 @@
 
 Contributed by WAINUT (lccompany). Work of 12 Nov 2026 by AI language-model agents, from the archive's images.
 
+Status: in progress. Not written up: the core of the report (run 120.5 and the block of image 121) was only transcribed in fragments and
+several gaps are not-attempted (see Remaining gaps); the key (Porta table, keyword constantinopolitanus) works, so these are workable.
+
 ## Documents
 
 HStAD (Hessisches Staatsarchiv Darmstadt), D 4 Nr. 487/4, "Chiffrierte Briefe", letters of Hofrat Jähring to Georg Karl
@@ -173,3 +176,25 @@ Lasry. The only decipherment work on the leaves is the contemporary second hand'
 7dcbe3f). Issue #207 (closed) concerns other Hesse-Darmstadt keys of 1652/1658. Re-checked 13 Nov 2026 on main
 65cdcd9d5, after the PRs merged on 12 Nov: still no target folder, open PR or issue on these names, the shelfmark or
 catalogue 2030; targets hesse1603, hesse1672 and hesse1824 are other documents.
+
+## Integration check (13 Nov 2026)
+
+Done by the integrating session after an independent verification (report R7_north). Contributed by WAINUT (PR #518). The folder
+is merged as it came, with `Status: in progress` and no page, ledger row or catalogue change (catalogue 2030 stays an open lead).
+
+- `scripts/check_marks.py` re-run: all 16 runs "OK", all marks accounted for. An own Porta decoder (keyword
+  constantinopolitanus, key letter restarted per run, signs ð = f and dot = o) written from `runs.json` reproduces the
+  mechanical decryption of every one of the 16 runs; the runs read as German chancery prose with marked one-letter changes
+  (mechanical output of 120.1: "wirdiemesseglorreichgeendigt...", of 120.2: "hauptoper?tionhabeich...", of 120.3: "...einecassevonsiebe...").
+- Held-out figures not re-run in full (the scripts were read; the working-key Porta result 330 of 348 = 0.948 against 0 of 348
+  and 3 of 348 for Vigenère and Beaufort is what heldout_result.txt prints). Not independent of the reading: the reading was made
+  with the key in view, and the two sign values (ð = f, dot = o) were set after the freeze from the held-out runs; the frozen
+  key as frozen gives 303 of 346 = 0.876.
+- **Image check.** The arcinsys image 120 (`https://digitalisate-he.arcinsys.de/hstad/d_4/487--4/hstad_d_4_nr_487--4_120.jpg`,
+  3500 x 2618, HTTP 200 for a plain GET) was compared with transcription_120.txt for runs 120.1-120.4 (about 160 letters): they
+  agree except for one q/g-shape place at the end of 120.3. The other runs were not compared.
+- The catalogue entry calls the addressee "Landgrave Georg Karl"; he was a prince of the house of Hesse-Darmstadt (the clear
+  text says "Ew. Hochfürstliche Durchlaucht"). Not a page, so this correction stays here until the target is written up.
+- Why no page: five gaps are `not-attempted` and three escalation boxes are open; the work that would close them is open to
+  the session (a careful transcription of 120.5 and 121 using the keyword the second hand wrote over them, a second reading of
+  nine runs, the other images of 487/4 and 487/6).
