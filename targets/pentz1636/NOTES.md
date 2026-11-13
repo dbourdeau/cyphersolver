@@ -1,6 +1,8 @@
 # Christian Pentz to Christian IV: Vienna 1636 (catalogue 2543) and Glückstadt c.1629-30, in the Zobel-family number cipher
 
-Status: **key family recovered; read in part; both documents below our own 65% line.** Contributed. No claim of a first reading (see Prior art).
+Status: in progress (integration check 13 Nov 2026: folder only, no page; the gaps are workable: second transcription, Glückstadt verso, codes, Vienna clear text).
+
+Contributor's status line: **key family recovered; read in part; both documents below our own 65% line.** Contributed. No claim of a first reading (see Prior art).
 
 Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic). Not filed before as an issue. The same-family key of Johan Zobel (Paris, 1629) is `targets/zobel1629`; nothing of it is repeated here.
 
@@ -78,12 +80,36 @@ Repository scripts not run. With `python3 -I` (standard library):
 - `profile.json` passes our static re-implementation of the profile check (b168): 0 errors.
 - Timestamps: `timestamps/README.md`. The Glückstadt files are in no stamp.
 
+## Integration check (13 Nov 2026, PR #522)
+
+Done on the files as submitted; no human reader. Folder only, no page: both letters are below the contributor's own 65% line and the gaps can be worked.
+
+- **Scripts.** `scripts/build.py`, `scripts/make_key.py` and `scripts/shuffle_control.py` read first (standard library, no network, writes inside the folder only). `python3 -I scripts/build.py` reproduces every figure in `counts.txt` and leaves the files unchanged. The shuffle control could not be re-run: its Gutenberg corpora are not in git.
+- **Own decoder.** Written from the table rules stated above (not from the contributor's key file): the Vienna letters equal `decryptions/vienna_1636-03-26.txt`, and the Glückstadt letters (288) equal the unit list.
+- **Own control.** Repository German model (`lang`, de-modern), letter values permuted as in the contributor's controls (within each table for Vienna, over the 23 figure types for Glückstadt): 0 of 1,000 each (Vienna true -3.14 per character, best shuffle -6.46; Glückstadt -6.07 against -7.47).
+- **Images.** Rigsarkivet `api.rigsarkivet.dk/ao/v1/images/48703328`, `48703329` (Vienna) and `52788770` (Glückstadt) load with curl. Vienna lines 1-13 and 15-18 (about 130 figures) and Glückstadt lines L01-L09 (131 figures) agree with the frozen transcriptions, with one doubt: Vienna line 4, eighth figure, transcribed 25 (giving `wowen`), is written like the 15 of `reale` on line 6; read as 15 the word is `wolen` (wollen). Not settled; left for the second transcription, and the frozen file is not changed. Code 165 stands on image 38 left, line 1, as the contributor says.
+- **Strict share (README read bar).** Vienna **16/33 = 48.48 %**: `berhuren` is a decode with u and h transposed, which the reading corrects to BERUHREN, so it is a hole. Glückstadt **23/68 = 33.82 %**: the two units with a doubtful figure (`nUr`, `Prouiant`) are holes. The contributor's first-pass figures, 17/33 = 51.52 % and 25/68 = 36.76 %, are theirs. Classes: Vienna read in part, Glückstadt decoded, not read.
+- **One key, one entry.** Pentz's key (letters 14-37 and 38-61, index 62 and 13) is not Zobel's (letters 4-27, index 28-39, four tables): same family, separate targets, as filed.
+- **Prior art.** Fridericia II (1881), archive.org `danmarksydrepoli02frid` (OCR): p. 17 n. 1 reads as quoted ("Pentz og V. Hagen til Kejseren, 13. Marts, og til Christ. IV, 26. og 30. Marts (Bremen Nr. 29, 30 a)"). These are joint letters with Hagen in the Bremen series; the private Vienna letter here is filed in TKUA Kejseren. No cipher or decipherment is mentioned in the volume. Risk on content only, as the contributor says. The right page of image 38 is the joint relation of 30 March 1636 (pencil date '1636 30/3'), not looked at further.
+- **Catalogue.** Entry 2543 (the Vienna letter) matches the leaves: autograph, 26 Mar / 5 Apr 1636, cipher on image 37 right and image 38 left, codes 85, 165, 168, 226. It stays in the catalogue while the target is in progress. The Glückstadt letter is not in the catalogue but is `research/leads.json` lead **2565** (sweep b169 backfill, unit 274999): close it into this target at write-up.
+- **Order of events.** The RFC 3161 stamps of 12 Nov 04:14 GMT cover the b106 key and the Vienna transcription and run; that the key was found while transcribing is declared. The Glückstadt files are in no stamp before the PR folder stamp of 13 Nov.
+
 ## Remaining gaps
 
-- Codes: Vienna 168, 226, 85, 64, 63, 12, 11, 8, 9 (and 165); Glückstadt 182, 220, 232, 260, 280, 730, 767 (open-codes). Some of the Vienna low numbers may be index numbers (key v2), not codes.
-- Suspected homophone 28 = o in the Glückstadt letter: not applied (no-key-material).
-- Glückstadt verso (image 3): not transcribed (not-attempted).
-- No second transcription of either document; neither reader was blind (not-attempted).
-- Vienna clear text transcribed only next to the cipher runs (not-attempted).
-- Ny kgl. Saml. Fol. 616c, Fridericia's Bremen Nr. 29, 30 a, and Kejseren 14 not seen (needs-physical-access).
-- Short texts (too-short).
+- Codes: Vienna 168 (3x), 226 (2x), 85, 64, 63, 12 (2x), 11, 8, 9, and 165; Glückstadt 182, 220 (2x), 232, 260 (2x), 280 (2x), 730, 767 - blocker: open-codes; no code list found; some Vienna low numbers may be index numbers (key v2).
+- Suspected homophone 28 = o in the Glückstadt letter (andwzrt, bekzme, anherkzmen) - blocker: no-key-material; not applied to any decode or count.
+- Glückstadt verso (image 3) - blocker: not-attempted; the letter runs on there and is not transcribed.
+- Second, blind transcription of both letters (including Vienna line 4 figure 8, 25 or 15, wowen / wolen, seen on the image at integration, and code 165) - blocker: not-attempted; one reader each, neither blind.
+- Vienna clear text - blocker: not-attempted; transcribed only next to the cipher runs.
+- Ny kgl. Saml. Fol. 616c, Fridericia's Bremen Nr. 29, 30 a, TKUA Kejseren 14 - blocker: needs-physical-access; may hold copies or decipherments.
+- Short texts (Vienna 20 letter words) - blocker: too-short; the shuffle test is weak on its own.
+- The Glückstadt letter is `research/leads.json` lead 2565 - blocker: not-attempted; close it into this target at write-up.
+
+## Escalation
+
+- [x] siblings: the Glückstadt letter by the same writer found and decoded with table 1; the Günther letter of 1636 (same unit, image 48) gave the v2 gloss, not applied.
+- [ ] clear-pages: the Vienna clear text is transcribed only next to the runs; transcribe it whole (codes 168, 226 may be named in it).
+- [x] known-keys: Zobel 1629 and the Haxthausen cipher (Cryptiana) compared: same family, different keys.
+- [ ] print: Ny kgl. Saml. Fol. 616c, Fridericia's Bremen Nr. 29, 30 a and Kejseren 14 not seen; Fridericia II p. 17 checked.
+- [x] key-rebuild: tables 1 and 2 rebuilt from the Vienna runs; table 2 k l m w x y z and the codes have no material yet.
+- [ ] retry: a second, blind transcription of both letters (Vienna line 4 figure 8, code 165), the Glückstadt verso (image 3), and the suspected homophone 28 = o.
