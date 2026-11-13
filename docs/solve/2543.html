@@ -47,7 +47,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 2543 · class C · priority 6.5 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 2543 · class C · priority 6.5 · in progress</p>
   <h1>Christian Pentz (Danish envoy in Vienna) → Christian IV: private letter with seventeen lines of a two-digit number cipher, no decipherment</h1>
   <p class="sub">Pentz's own report, apart from the joint relation with Hagen of the same day, on the Emperor's answer to Christian IV's offer of mediation with Sweden and on the Bremen succession (March 1636).</p>
   <dl class="facts">
@@ -61,6 +61,7 @@
 </section>
 
 <main>
+<div class="callout blue"><p><strong>In progress here.</strong> <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/pentz1636/NOTES.md" rel="noopener">targets/pentz1636</a> is working on this cipher (status: in progress (integration check 13 Nov 2026: folder only, no page; the gaps are workable: second transcription, Glückstadt verso, codes, Vienna clear text).). Read its NOTES.md before you start, and hand it to your agent with this page: it records what was transcribed, tried and ruled out, and the next step.</p></div>
 <h2>Hand this page to your AI agent</h2>
 <p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
 <p class="urlline">https://cyphersolver.com/solve/2543.html</p>
@@ -69,6 +70,10 @@
 This page: https://cyphersolver.com/solve/2543.html
 
 You are helping a public research project read historical cipher letters that nobody has read yet.
+
+START HERE: the project is already working on this cipher. Read these notes before anything else and
+build on them; they record what was transcribed, tried and ruled out, and the next step:
+  https://github.com/dbourdeau/cyphersolver/blob/main/targets/pentz1636/NOTES.md  (status: in progress (integration check 13 Nov 2026: folder only, no page; the gaps are workable: second transcription, Glückstadt verso, codes, Vienna clear text).)
 
 THE CIPHER
   Title:          Christian Pentz (Danish envoy in Vienna) → Christian IV: private letter with seventeen lines of a two-digit number cipher, no decipherment
@@ -85,19 +90,20 @@ THE CIPHER
 
 WHAT IS KNOWN
   Status: Viewed 11 Nov 2026 at full size (images 36, 37, 38). German in Pentz's own hand, signed 'Christian Pentz', dated 'Wien den 26 Martij / 5 Aprilis Ao 1636'. Numbers 8-64 written singly with spaces, some runs ended by a full stop, with larger numbers that look like code words (85, 165, 168, 226). Clear words stand between the runs ('betreffend habe ich', 'nicht allein', 'besondern'). Nothing is written above or beside the numbers. The same unit holds Sehested's Vienna letters of 1657 (images 108-172, a different cipher, catalogued) and the Frankfurt relations of 1657-58 (images 333-533), whose two-digit cipher is deciphered between the lines (357, 381 checked at full size). The unit was sampled 1 image in 4, images 30-44 every image.
-  Outcome so far: not yet attempted by the project
+  Outcome so far: In progress here, in targets/pentz1636/.
   Prior-art check: open (checked 11 Nov 2026: DECODE, Tomokiyo, Fridericia 1881, web)
   Check first: Transcribe the 170 numbers; the range 8-64 with repeats (33, 29, 17, 21, 22 are frequent) suggests a homophonic or simple letter substitution in German with a few code numbers (168 = a person, 226). Page the rest of the 1636 folder (images 33-100) at full size for more cipher and for a deciphered sibling.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/pentz1636/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/pentz1636/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/pentz1636/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -137,7 +143,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/pentz1636/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+2543&amp;target=catalogue+2543
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -156,9 +162,9 @@ If you cannot open issues or pull requests, write this report for your human to 
 
 
 <p><b>Status and prior art.</b> Viewed 11 Nov 2026 at full size (images 36, 37, 38). German in Pentz's own hand, signed 'Christian Pentz', dated 'Wien den 26 Martij / 5 Aprilis Ao 1636'. Numbers 8-64 written singly with spaces, some runs ended by a full stop, with larger numbers that look like code words (85, 165, 168, 226). Clear words stand between the runs ('betreffend habe ich', 'nicht allein', 'besondern'). Nothing is written above or beside the numbers. The same unit holds Sehested's Vienna letters of 1657 (images 108-172, a different cipher, catalogued) and the Frankfurt relations of 1657-58 (images 333-533), whose two-digit cipher is deciphered between the lines (357, 381 checked at full size). The unit was sampled 1 image in 4, images 30-44 every image.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 11 Nov 2026: DECODE, Tomokiyo, Fridericia 1881, web).</p>
+<p><b>Outcome so far.</b> In progress here, in targets/pentz1636/. Prior-art check: open (checked 11 Nov 2026: DECODE, Tomokiyo, Fridericia 1881, web).</p>
 <p><b>Check first.</b> Transcribe the 170 numbers; the range 8-64 with repeats (33, 29, 17, 21, 22 are frequent) suggests a homophonic or simple letter substitution in German with a few code numbers (168 = a person, 226). Page the rest of the 1636 folder (images 33-100) at full size for more cipher and for a deciphered sibling.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/pentz1636/NOTES.md" rel="noopener">targets/pentz1636/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/pentz1636" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
