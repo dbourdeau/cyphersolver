@@ -1,0 +1,281 @@
+{
+ "schema_version": 1,
+ "target": "malen1615",
+ "title": "J. van Malen, drost of Steenbergen, to his brother Van Malen de Bautersem, two letters (catalogue 2532): symbol substitution solved ciphertext-only; letter 1 (French, 28 December) read in part, letter 2 decoded in part",
+ "documents": [
+  {
+   "id": "malen1",
+   "read": "read in part",
+   "shelfmark": "Gelders Archief (Arnhem), 0372 Huis Ammerzoden, inv. nr. 52, scans 1-3",
+   "date": "28 December, year not given (inventory: 1615-1619)",
+   "year": 1615,
+   "country": "Low Countries",
+   "route": "J. van Malen -> Van Malen de Bautersem (his brother)",
+   "places": {
+    "from": "London (place name in cipher, decrypts 'londres')",
+    "to": "unknown"
+   },
+   "language": "French",
+   "cleartext_in_document": "interspersed",
+   "pages": 3,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment, gloss or key on or with the leaves."
+   },
+   "length": {
+    "tokens": 781,
+    "distinct": 23,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_malen1.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "archieven.nl viewer (Gelders Archief), Zoomify tiles stitched at full size",
+    "image_quality": "good",
+    "notes": "Pass 1 of p. 2 before any value (merged X/C, Y/R, O/M); pass 2 after the first key hypothesis separates them by shape, so it is not blind. Pages 1 and 3 one pass. No independent blind check yet. Length: one token per cipher sign outside the clear script (scripts/signs.py); the 5 unread signs and the 2 '&' signs count as one token each; distinct counts the 23 sign codes. The code numbers (60 once, 59 twice, 68 once) are not counted."
+   }
+  },
+  {
+   "id": "malen2",
+   "read": "not read",
+   "shelfmark": "Gelders Archief (Arnhem), 0372 Huis Ammerzoden, inv. nr. 52, scans 5-8",
+   "date": "21 October, year not given (inventory: 1615-1619)",
+   "year": 1615,
+   "country": "Low Countries",
+   "route": "J. van Malen -> Van Malen de Bautersem (his brother)",
+   "places": {
+    "from": "unknown",
+    "to": "unknown"
+   },
+   "language": "French and Dutch",
+   "cleartext_in_document": "interspersed",
+   "pages": 4,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment, gloss or key on or with the leaves."
+   },
+   "length": {
+    "tokens": 179,
+    "distinct": 19,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_malen2.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "archieven.nl viewer (Gelders Archief)",
+    "image_quality": "good",
+    "notes": "Only the first eight cipher lines (French opening, scan 5) transcribed, one pass. Dutch passages not transcribed. Length (scripts/signs.py) covers these eight lines only: 179 signs, 19 distinct codes; the code number 59 occurs once."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Invented signs (Greek-like letters, figure-like signs) for letters; 23 signs; two signs each for e, r and b; g is a joined oo; i/j and u/v one sign each; word breaks mostly kept; code numbers in figures (59, 60, 68) inside the cipher.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 23,
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 3,
+   "unread_groups": 3
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "random",
+  "word_division": "kept",
+  "notes": "Key found ciphertext-only and frozen after letter 1 p. 2. Nomenclator: three code numbers written as figures (60, 59, 68); in letter 1, 4 occurrences of these 3 distinct numbers (60 once, 59 twice, 68 once); in letter 2 so far 59 once. None is identified.",
+  "diacritics": {
+   "used": false,
+   "note": "A small cross over the delta-shaped sign (D) appears in some words and not in the same word elsewhere; it is not treated as a mark (SIGN_CONVENTIONS.md)."
+  }
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Two web searches (12 Nov 2026) and the catalogue vetting of 11 Nov 2026 (DECODE, Cryptiana, HistoCrypt) found nothing on these letters.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "WAINUT set the task (catalogue 2532) and the rules; AI language-model agents transcribed, found and froze the key, ran the held-out test and read. No human palaeographer or historian checked the text.",
+  "tools": [
+   "archieven.nl viewer (headless Chromium)",
+   "scripts in this folder (fetch, crop, decryption, mark check)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-12",
+  "last_date": "2026-11-12"
+ },
+ "solution": [
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "8 scans fetched at full size through the archieven.nl viewer (Zoomify tiles, one request at a time).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "Sign conventions written before any value; letter 1 p. 2 pass 1 from 1.5x crops; pass 2 after the key hypothesis (not blind).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "crib",
+   "what": "Crib 'Monsieur l'ambassadeur' from the pattern of the 12-sign word after the clear 'Monsieur', then common words; key frozen after p. 2.",
+   "result": "worked",
+   "technique": [
+    "repeat/pattern analysis",
+    "crib testing"
+   ]
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Letter 1 pp. 1 and 3 and the first eight cipher lines of letter 2 decrypted with the frozen key: 54 of 58 words French in context, 1 wrong, 3 holes.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Letter 1 read with every departure marked; check_marks.py PASS; 154 of 165 cipher words verbatim (93.3%); Dan's checker 13 of 17 sentences clean on the running text.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "control",
+   "what": "Integration check (round 7, 13 Nov 2026): check_marks.py, signs.py and the checkers re-run (154 of 165 = 93.3% verbatim reproduced); own second decoder from key_frozen.tsv matches decryption_malen1.txt on all 33 lines; scan 2 fetched from the archive viewer's Zoomify tiles, and the line layout and word counts of L07-L10 agree (not a sign-by-sign blind transcription). Strict share stays 154 of 165 = 93.3%; with the 4 unresolved code-number occurrences (60, 59 twice, 68) as holes 154 of 169 = 91.1%. Letter 2 Dutch passages and a blind transcription are workable, so the target stays in progress.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "No key or gloss. The key was found from a crib suggested by the clear 'Monsieur' and by word patterns, frozen, and tested on held-out passages of both letters. All 23 signs that occur have a value; the three code numbers (60, 59, 68) are not identified, so the key is recorded as partial.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.6,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "Letter 1 (about 30 of the about 49 cipher lines) read in part; of letter 2, the first 8 lines decoded only.",
+  "verification": [
+   "key confirms",
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "key found ciphertext-only, frozen and tested on held-out passages; letter 1 read in part",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "letter 1 and the first lines of letter 2, from the Gelders Archief scans",
+    "date": "2026-11-12"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "malen1",
+    "label": "Letter 1, 28 December (French)",
+    "transcription": "transcription_malen1.txt",
+    "decryption": "decryption_malen1.txt",
+    "reading": "reading_malen1.md",
+    "translation": "translation_malen1.md",
+    "language": "fr",
+    "state": "read in part",
+    "summary": "The Jülich dispute will be settled only by arms; it is a mistake to think 60 or 59 will let themselves be crowned by 68; threats to break the truce do not frighten 'us', and 'our camp waits for nothing else'; the restitution of [Rees]; the embassies of the baron [Anholt] called inventions of 'those gentlemen of Holland'; the league of the marquis of Brandenburg; errands with the Spanish ambassador; a safe-conduct and letters of recommendation. Dated in cipher 'De Londres'.",
+    "note": "165 cipher words: 154 verbatim from the signs, 3 with a marked repair, 3 guesses, 5 holes (93.3%). The clear script was read only to place the cipher.",
+    "reading_review": {
+     "grade": "B",
+     "by": "independent AI language-model agent (blind review)",
+     "date": "2026-11-13",
+     "note": "The cipher passages form coherent French throughout, with holes and guesses marked and carried into the English; signs spot-checked on the scans for seven lines (about 200 signs, no value-changing disagreement), and check_marks.py, the held-out test and _check_reading.py (13 of 17 sentences clean on the running text) reproduced. Read in part: three names are guesses (Rees, Anholt, sieges), five words are holes, the clear script is provisional, and a second blind transcription is still open."
+    }
+   },
+   {
+    "doc": "malen2",
+    "label": "Letter 2, 21 October (French and Dutch): first cipher lines only",
+    "transcription": "transcription_malen2.txt",
+    "decryption": "decryption_malen2.txt",
+    "language": "fr",
+    "state": "decoded, not read",
+    "summary": "Opening: news passed to 'monsieur l'ambassadeur de 59', who will pay 12 florins a month to a person, provided he sends news every week. The Dutch passages are not yet transcribed.",
+    "note": "Only 8 of about 19 cipher lines transcribed (one pass); 36 of 37 words French in context with the frozen key."
+   }
+  ],
+  "key_file": [
+   "key.tsv",
+   "key_frozen.tsv"
+  ],
+  "gaps": [
+   {
+    "item": "Letter 2 Dutch cipher passages (scans 5-6)",
+    "blocker": "not-attempted",
+    "detail": "Not transcribed; the same key applies."
+   },
+   {
+    "item": "Independent blind transcription of letter 1",
+    "blocker": "not-attempted",
+    "detail": "X/C, Y/R and O/M splits made after the key hypothesis."
+   },
+   {
+    "item": "Faint signs at the right edge of letter 1 p. 1 (L02-L04)",
+    "blocker": "illegible",
+    "detail": "Faint on the image at full size; 3 holes."
+   },
+   {
+    "item": "The two heavy '&' signs of letter 1 (L22, L29)",
+    "blocker": "open-codes",
+    "detail": "Not in the alphabet; may be code signs; 2 holes."
+   },
+   {
+    "item": "Guessed names in letter 1: reses (Rees?), aneot (Anholt?), ciieges (sieges?)",
+    "blocker": "not-attempted",
+    "detail": "Not checked against other sources."
+   },
+   {
+    "item": "Code numbers 59, 60, 68",
+    "blocker": "open-codes",
+    "detail": "Not identified (letter 1: 4 occurrences of 3 distinct numbers; letter 2 so far: 59 once)."
+   },
+   {
+    "item": "Year of either letter",
+    "blocker": "not-attempted",
+    "detail": "The inventory gives 1615-1619."
+   },
+   {
+    "item": "Clear script of letter 1",
+    "blocker": "not-attempted",
+    "detail": "Read only to place the cipher; three points raised at the independent review (n'aurat de la difficulte; m'a faictes; practiques des de ces) not yet checked on the image."
+   }
+  ]
+ }
+}
