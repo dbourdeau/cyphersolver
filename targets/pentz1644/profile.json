@@ -1,0 +1,294 @@
+{
+ "schema_version": 1,
+ "target": "pentz1644",
+ "title": "Christian Pentz, Glückstadt 1644-45: the Pentz-family index cipher (key of targets/pentz1636) completed from a contemporary interlinear decipherment; letter of 29 Apr 1644 read, letter of 1645 read in part",
+ "documents": [
+  {
+   "id": "pentz_1644-04-29",
+   "read": "read",
+   "shelfmark": "Copenhagen, Rigsarkivet, Tyske Kancelli, SHLK A IV 89, Relationer fra guvernør i Glückstadt Christian Pentz 1629-45, unit 274999, images 321 (recto) and 322/323 (verso, two shots of one page)",
+   "date": "29 Apr 1644",
+   "year": 1644,
+   "country": "Denmark",
+   "route": "Christian Pentz, governor of Glückstadt -> Christian IV",
+   "places": {
+    "from": "Glückstadt",
+    "to": "Copenhagen"
+   },
+   "language": "German",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Contemporary interlinear decipherment over every cipher figure on the recto (image 321) and over line 1 of the verso (image 322); the rest of the verso has none.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 205,
+    "distinct": "unknown",
+    "unit": "mixed",
+    "measured": false,
+    "file": "transcriptions/HELDOUT-322-A.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Rigsarkivet Arkivalieronline images 52789089, 52789090, 52789091 (curl), crops 2.5-5x",
+    "image_quality": "fair",
+    "notes": "Recto: figures and glosses in key_history/GLOSES-1644.tsv (one reader, glosses read with the figures). Verso lines 2-11: two passes (A, then B on re-made crops without looking at A), identical, frozen by SHA-256 before any decode. Counts not measured. Length: 89 figure groups on verso lines 2-11 (docs/_check_profile.py --measure --digits --drop-first on the file) + 116 on the recto and verso line 1 (key_history/GLOSES-1644.tsv, counted by us; the 21 at the head of verso line 2 counted once), so measured is false."
+   }
+  },
+  {
+   "id": "pentz_1645_img425",
+   "read": "read in part",
+   "shelfmark": "Copenhagen, Rigsarkivet, Tyske Kancelli, SHLK A IV 89, unit 274999, image 425",
+   "date": "1645 (pencil '1645 5/6'; dated in the clear at foot, place read as 'in der Cremper(?) Schantz', uncertain)",
+   "year": 1645,
+   "country": "Denmark",
+   "route": "Christian Pentz -> 'Herr Cantzler' (the Danish chancellor)",
+   "places": {
+    "from": "Krempe",
+    "to": "Copenhagen"
+   },
+   "language": "German",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "margin",
+     "interlinear"
+    ],
+    "source": "Contemporary marginal decipherment of the cipher of lines 1-9 (another hand, insertion mark); later word glosses over lines 6, 10-12. Both read only after the measurement.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 197,
+    "distinct": 50,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcriptions/HELDOUT-425-A.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Rigsarkivet Arkivalieronline image 52789193 (curl), crops 3x",
+    "image_quality": "fair",
+    "notes": "Two passes (A, then B on re-made crops), identical, frozen by SHA-256 before any decode; 4 doubtful figures marked."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "polyalphabetic",
+   "nomenclator"
+  ],
+  "summary": "Index numbers select the number alphabet for the run that follows (62/64: table 1, a-i = 37..29, k-z = 14..28; 13/11: table 2, a-i = 38..46, n 61 ... u 54; 10/8: table 3, a-i = 29..37 and k-z = 28..14 with g 33, e 35, r 39), a null 251 and three-digit codes; the key of targets/pentz1636 (McBratney) with table 3 completed.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-3",
+   "separation": "dots"
+  },
+  "distinct_symbols": 72,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 1,
+   "kinds": [
+    "names"
+   ],
+   "unread_groups": 2
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "partial",
+  "sibling_key": "targets/pentz1636 (same writer, same key family; tables 1-2 identical)",
+  "notes": "distinct_symbols = letter values in key v3 (24 per table) not signs seen. nomenclator: 301 = Archbishop (of Bremen) from a marginal decipherment; 560 and 756 open."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Contemporary interlinear decipherment on image 321 (and line 1 of image 322) and a contemporary marginal decipherment on image 425, on the leaves themselves. Modern: targets/pentz1636 (McBratney, PR #522) holds the key family (tables 1-2, index numbers, partial table 3) but not these letters. Printed editions not searched beyond pentz1636's checks.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "sibling key",
+   "known plaintext"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Brice Dudout set the rules (pre-registration frozen before the key and the held-out, two blind transcription passes, one measurement, Daniel Bourdeau's read bar); a Claude session did the transcription, key, measurement, reading and this folder. No reading by a person without AI.",
+  "tools": [
+   "own Python decoder and pre-registered measure (scripts/measure2.py; German 4-gram, repository corpus de-gutenberg)",
+   "Pillow crops"
+  ],
+  "models": [
+   "claude-opus-5-5 (13 Nov 2026)"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-13",
+  "last_date": "2026-11-13"
+ },
+ "solution": [
+  {
+   "date": "2026-11-13",
+   "kind": "access",
+   "what": "Unit 274999 (503 images) fetched with curl from api.rigsarkivet.dk; thumbnails 137-502 swept: number-cipher pages at images 321-323, 402-405, 408, 411, 412, 420, 425 (1644-45).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Image 321 carries a contemporary letter-by-letter decipherment over every figure: 41 figure-letter pairs; they fit pentz1636 tables 1-2 and index numbers, and give table 3 as a mirror of table 1 with g 33, e 35, r 39; 251 is a null. Pre-registration and measure frozen (21:35 CET), key v3 frozen (21:36).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Held-out (image 322 lines 2-11 + image 425, 286 figures, two identical passes, frozen 21:41) decoded once: coverage 99.6%, N = 0.760 against bar 0.75, best of 200 within-table permutations 0.145 (bar +0.30): PASS. Readings: 1644 letter 27/28, 1645 letter 38/41.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Table 3, the null and the index numbers 10, 8, 11, 64 were fixed from the contemporary interlinear decipherment on image 321; tables 1-2 are pentz1636's (McBratney). The frozen key then read the unglossed verso (image 322) and a second letter (image 425) under a pre-registered test.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.964,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Per document, never pooled: 29 Apr 1644 27/28 = 96.4% (verso alone 13/14); 1645 38/41 = 92.7%. fraction_read is the 1644 letter. readings/*.md list the units.",
+  "codes_open": {
+   "open": 2,
+   "total": 3,
+   "tokens_open": 2
+  },
+  "verification": [
+   "statistical test",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-11-13",
+   "file": "controls/MESURE-2.txt",
+   "verdict": "not applicable",
+   "notes": "Own pre-registered test (scripts/PREREG-2.md, scripts/measure2.py), not docs/_validate.py: German 4-gram, true -2.338 per char, 200 within-table permutations mean -4.046, best -3.719, German reference -1.797; N 0.760 vs best control 0.145; PASS (bar 0.75 and +0.30)."
+  },
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "mcbratney",
+    "role": "key or decipherment used",
+    "note": "targets/pentz1636: the Pentz key family (tables 1-2, index numbers, key v2) applied unchanged and extended",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "interlinear decipherment on image 321 and marginal decipherment on image 425 (unit 274999)",
+    "date": "1644"
+   },
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "table 3 completed from the gloss, held-out test, both 1644-45 letters read",
+    "date": "2026-11-13"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Codes 560 and 756 (image 425)",
+    "blocker": "open-codes",
+    "detail": "no gloss on either"
+   },
+   {
+    "item": "Image 425, figures 29 33 28 20 (T1 i e z q)",
+    "blocker": "not-attempted",
+    "detail": "perhaps a misread 23 (ietzt); the margin has 'sich'"
+   },
+   {
+    "item": "Image 322 'Revellin': second figure transcribed 39 in both passes",
+    "blocker": "not-attempted",
+    "detail": "probably 35 (e); counted probable"
+   },
+   {
+    "item": "Other 1644-45 cipher letters in unit 274999 (images 402-405, 408, 411, 412, 420)",
+    "blocker": "not-attempted",
+    "detail": "not transcribed; key v3 should read them"
+   },
+   {
+    "item": "Printed editions of the 1644-45 letters",
+    "blocker": "not-attempted",
+    "detail": "not searched beyond pentz1636's checks"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "pentz_1644-04-29",
+    "label": "Christian Pentz to Christian IV, Glückstadt, 29 Apr 1644",
+    "transcription": [
+     "key_history/GLOSES-1644.tsv",
+     "transcriptions/HELDOUT-322-A.txt"
+    ],
+    "decryption": [
+     "decryptions/pentz_1644-04-29_img322.txt"
+    ],
+    "reading": "readings/pentz_1644-04-29.md",
+    "translation": "translations/pentz_1644-04-29.md",
+    "language": "de",
+    "state": "read",
+    "read_share": 0.964,
+    "summary": "Pentz tells the King he can no longer harass the Swedes from Glückstadt as his raiding parties did, because the garrison was cut and the troops sent to Dithmarschen; at times only four men hold the ravelin before the Krempe gate, and the troops in Dithmarschen have done nothing against the enemy.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (Anthropic), for Brice Dudout: a model reading, not a person, and not independent (same session).",
+     "date": "2026-11-13",
+     "note": "Every cipher word sits in its clear clause; recto glossed by the contemporary decipherer and matched by the key; verso read by the frozen key alone, one word probable."
+    }
+   },
+   {
+    "doc": "pentz_1645_img425",
+    "label": "Christian Pentz to the Chancellor, 1645",
+    "transcription": [
+     "transcriptions/HELDOUT-425-A.txt"
+    ],
+    "decryption": [
+     "decryptions/pentz_1645_img425.txt"
+    ],
+    "reading": "readings/pentz_1645_img425.md",
+    "translation": "translations/pentz_1645_img425.md",
+    "language": "de",
+    "state": "read in part",
+    "read_share": 0.927,
+    "summary": "With the Archbishop of Bremen's consent Pentz sent a strong party to fall on Wrangel's quarters; the men could move hidden in the wood by a separate road as far as Rendsburg.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (Anthropic), for Brice Dudout: a model reading, not a person, and not independent (same session).",
+     "date": "2026-11-13",
+     "note": "Running German read by the frozen key alone, confirmed after the measure by a contemporary marginal decipherment; two codes and one four-figure group open."
+    }
+   }
+  ],
+  "key_file": [
+   "key.tsv"
+  ],
+  "notes": "Figures per document, not pooled. Same key as targets/pentz1636; could be merged there as key v3 and documents 3-4."
+ }
+}
