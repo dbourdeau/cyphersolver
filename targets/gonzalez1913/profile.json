@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "gonzalez1913",
- "title": "El General en Jefe (identified by the contributor as Pablo González) to Col. Andrés Saucedo, Matamoros, December 1913 (catalogue 1465): simple substitution recovered from the ciphertext alone, 59 of 61 coded words verbatim; split-half test weak",
+ "title": "El General en Jefe (identified by the contributor as Pablo González) to Col. Andrés Saucedo, Matamoros, December 1913 (catalogue 1465): simple substitution recovered from the ciphertext alone, 59 of 61 coded words verbatim; split-half test failed",
  "documents": [
   {
    "id": "LXVIII-1.7.890.1",
@@ -64,7 +64,7 @@
   },
   "key_order": "partly alphabetical",
   "word_division": "none",
-  "notes": "Numbers partly in alphabetical order (a b c = 47 48 49; i h g = 41 42 43). key.tsv and key_frozen.tsv are the same file, 23 entries. 42, 43, 57, 58 and 79 occur once each. Groups are joined by hyphens; runs are separated by clear words."
+  "notes": "Numbers partly in alphabetical order (a b c = 47 48 49; i h g = 41 42 43). key.tsv and key_frozen.tsv are the same file, 23 entries. 42, 57, 58 and 79 occur once each (43 occurs 4 times). Groups are joined by hyphens; runs are separated by clear words."
  },
  "conditions": {
   "prior_solution": {
@@ -141,7 +141,7 @@
   {
    "date": "2026-11-13",
    "kind": "verification",
-   "what": "Independent blind review by a second AI language-model agent (13 Nov 2026): 36 of 36 groups agree on its own crops; scripts reproduced; key accepted on the reading (simple substitution of 23 numbers, far past the unicity distance, with internal order); held-out test marked weak; reading graded A.",
+   "what": "Independent blind review by a second AI language-model agent (13 Nov 2026): 36 of 36 groups agree on its own crops; scripts reproduced; key accepted on the reading (simple substitution of 23 numbers, far past the unicity distance, with internal order); held-out test marked weak by the contributor (published here as failed); reading graded A.",
    "result": "worked"
   },
   {
@@ -176,7 +176,7 @@
   "class": "read",
   "key": "recovered",
   "method": "key recovered from ciphertext-only",
-  "method_basis": "One-to-one substitution fitted by hill-climbing on Spanish letter trigrams (scripts/hillclimb.py, 40 restarts), three cells set by reading. The split-half test is weak; the key rests on the reading (places Cerralvo, Lampazos, Villaldama, Laredo, San Ygnacio; surnames Castro, Dávila Sánchez, Santoscoy).",
+  "method_basis": "One-to-one substitution fitted by hill-climbing on Spanish letter trigrams (scripts/hillclimb.py, 40 restarts), three cells set by reading. The split-half test failed; the key rests on the reading (places Cerralvo, Lampazos, Villaldama, Laredo, San Ygnacio; surnames Castro, Dávila Sánchez, Santoscoy).",
   "contribution": [
    "transcription",
    "key recovered"
@@ -194,7 +194,7 @@
    {
     "who": "lccompany",
     "role": "solution",
-    "note": "simple substitution recovered from the ciphertext alone (hill-climbing on Spanish trigrams), three cells set by reading; split-half test weak; 59 of 61 coded words verbatim",
+    "note": "simple substitution recovered from the ciphertext alone (hill-climbing on Spanish trigrams), three cells set by reading; split-half test failed; 59 of 61 coded words verbatim",
     "date": "2026-11-12"
    },
    {
@@ -227,7 +227,7 @@
      "grade": "A",
      "by": "independent AI language-model agent (blind review)",
      "date": "2026-11-13",
-     "note": "Three clean paragraphs and the translation matches; one open run ('eln' before A REUNIRSE) and one repair (l{o/a}s). The held-out test is weak; the key is accepted on the reading."
+     "note": "Three clean paragraphs and the translation matches; one open run ('eln' before A REUNIRSE) and one repair (l{o/a}s). The held-out test failed (weak, in the reviewer's words); the key is accepted on the reading."
     }
    }
   ],
@@ -241,7 +241,7 @@
    {
     "item": "Key validation",
     "blocker": "too-short",
-    "detail": "One sheet; 42, 43, 57, 58 and 79 occur once; the split-half test does not recover the key."
+    "detail": "One sheet; 42, 57, 58 and 79 occur once; the split-half test does not recover the key."
    },
    {
     "item": "Day of the month (2[?])",

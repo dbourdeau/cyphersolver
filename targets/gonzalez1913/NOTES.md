@@ -4,7 +4,7 @@ WAINUT, 12-13 Nov 2026. Work done with AI language-model agents viewing the CEHM
 checked the text. An independent AI language-model agent reviewed the work blind from the scans (below).
 
 Status: read, 12 Nov 2026. The sixteen coded runs of this typed sheet are read with a simple substitution recovered
-from the sheet's ciphertext alone. No key or decipherment was found. The split-half test of the key is weak (below);
+from the sheet's ciphertext alone. No key or decipherment was found. The split-half test of the key failed (below);
 the evidence for the key is the reading itself, and the repository's statistical validation (`docs/_validate.py`) passes.
 
 ## Document
@@ -43,9 +43,9 @@ line each, after a header line).
 Spanish letter trigrams taken from the repository's lexicon (`lang/lexicons/es.json.gz`), with 40 random restarts
 (seed 7). Its best fit reads at once (`work/fit_7890_full.txt`). Three cells were then set by reading: 57 ll in Villaldama
 (the fit gave j), 77 v (the fit gave f) and 79 x in próximo (the fit gave v). 42 h comes from the fit and stands in
-one place, Sánchez. Groups 42, 43, 57, 58 and 79 each occur once in the sheet.
+one place, Sánchez. Groups 42, 57, 58 and 79 each occur once in the sheet (43 occurs 4 times).
 
-**Split-half test, weak.** Fitted on M01-M08 alone, the same program does not find the key (`work/heldout_7890.txt`).
+**Split-half test, failed** (no bar was declared in advance in these notes; the key is not recovered from the first eight runs and agrees in only 10 of 22 cells from twelve). Fitted on M01-M08 alone, the same program does not find the key (`work/heldout_7890.txt`).
 Fitted on M01-M12 alone, it agrees with the final key in 10 of the 22 cells it fits, and M13-M16 read only in part
 ("tardeeilabadoodosunzo" for TARDE EL SÁBADO O DOMINGO; `work/heldout_7890_b.txt`). So the key is not validated by a
 held-out passage. The evidence for it is the reading: it gives places of Nuevo León and Tamaulipas (Cerralvo,
@@ -87,7 +87,7 @@ An AI language-model agent that did not make this work cut its own crops and com
 start of M09, M14 and the end of M16: 36 of 36 groups agree. It re-ran the scripts with the same output. It noted
 that the key is a simple substitution of 23 numbers fitted on far more ciphertext than the unicity distance, that
 it gives the places and names above in clean Spanish, and that the key has internal order; it accepted the key on
-the reading and graded the reading A, with the held-out test marked weak.
+the reading and graded the reading A, with the held-out test marked weak by the contributor (published here as failed).
 
 ## Prior art (checked 12-13 Nov 2026)
 
@@ -104,7 +104,7 @@ Narváez 2019 and 2025 and M. W. González, *Con Carranza*, were not read (see `
   decrypt to "eln", which is no word; a clerk's slip or a name the key cannot give, with no second occurrence to test
   either on. They count as not read.
 - The day of the month (2[?]) - blocker: illegible. The integration check read the typed date as 22 on the scan, the second figure partly worn; not relied on.
-- The key rests on one sheet; 42, 43, 57, 58 and 79 occur once - blocker: too-short. The split-half test does not
+- The key rests on one sheet; 42, 57, 58 and 79 occur once - blocker: too-short. The split-half test does not
   recover the key.
 
 Outside this folder: the other cipher items of catalogue 1465 are not read. LXVIII-1.2.56.1 and 2.75.1 do
@@ -147,7 +147,7 @@ that 23 symbols were fitted on 290 letters of one monoalphabetic text, far above
 Spanish with place names and surnames the trigram model does not know (Cerralvo, Lampazos, Villaldama, Laredo, San Ygnacio;
 Castro, Dávila Sánchez, Santoscoy), that the clear words typed before and after each run fit the decrypted runs ("Hoy salió
 ... con sus fuerzas", "plaza que ... cuando más ... próximos", "Pasado mañana ... donde ... a fin de mandarles ... a que me
-refiero"), and that the key has internal order. Three cells (ll, v, x) were set by reading and 42 h, 43 g, 58 q occur in
+refiero"), and that the key has internal order. Three cells (ll, v, x) were set by reading and 42 h, 57 ll, 58 q, 79 x occur in
 one place each. Strict share by the README rule: 59 of 61 coded words (96.7%; the repaired word and the open word count as not
 read), over 95%, so the class stays read; key recovered from ciphertext-only. The identification of the writer as Pablo
 González is the contributor's inference (the papers, the letterhead and a letter of Murguía), not a name on the sheet.
