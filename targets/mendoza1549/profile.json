@@ -1,0 +1,288 @@
+{
+ "schema_version": 1,
+ "target": "mendoza1549",
+ "title": "Diego Hurtado de Mendoza to Ferrante Gonzaga, Siena, 3 April 1549 (catalogue 2161): cipher enclosure c. 44r read in part, key rebuilt from the contemporary decipherment on c. 42r and tested on held-out lines",
+ "documents": [
+  {
+   "id": "c44r",
+   "read": "read in part",
+   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera H, Hurtado de Mendoza, Diego, sfasc. I, cc. 40-46 (cipher c. 44r; decipherment c. 42r)",
+   "date": "3 Apr 1549",
+   "year": 1549,
+   "country": "Italy",
+   "route": "Diego Hurtado de Mendoza, Siena -> Ferrante Gonzaga, Milan",
+   "places": {
+    "from": "Siena",
+    "to": "Milan"
+   },
+   "language": "Spanish",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "c. 42r, a contemporary decipherment of c. 44r laid over it in the binding (identified by Brice Dudout, issue #254). It departs from the cipher in four places (NOTES.md)."
+   },
+   "length": {
+    "tokens": 378,
+    "distinct": 95,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_44r.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Estense Digital Library IIIF region tiles, c. 44r stitched at full resolution (5426 px)",
+    "image_quality": "good",
+    "notes": "Two passes from different crops (four bands 1:1, five bands 1.2x), reconciled on the image; 378 signs, 95 distinct sign names; the 30 points are not counted in tokens. Some near shapes not yet split (NOTES.md, Remaining gaps)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Spanish chancery syllabary of the mendoza1548 family: consonant shapes with vowel marks, single letters, joined forms, a doubling dash, points, and code groups chu (tiempo), dis (emperador), qre (vuestra).",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 95,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 3,
+   "kinds": [
+    "common words",
+    "titles"
+   ],
+   "unread_groups": 0
+  },
+  "nulls": {
+   "present": true,
+   "count": 1
+  },
+  "word_division": "kept",
+  "notes": "One null sign, the point, in 30 places (a null or word mark); nulls.count is the number of null signs. distinct_symbols counts our 95 sign names, points aside (key.tsv has 96 entries: the 95 names and the point); some names probably merge two near shapes. Code groups: 3 distinct, 4 occurrences.",
+  "key_order": "unknown"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "c. 42r of the same file, the contemporary decipherment. Dudout's alignment of 340/376 signs (issue #254, PR #265 closed) is not in the repository. No print found (web search 12 Nov 2026; Vazquez and Rose, Yale 1935, which the catalogue status line dates 1945, and Varo Zafra 2016 not opened).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "human_role": "WAINUT set the task (catalogue 2161) and the rules; AI language-model agents transcribed, aligned, froze the key, read and checked; one further AI language-model agent reviewed the reading blind (13 Nov 2026). No human palaeographer checked the text.",
+  "tools": [
+   "Estense IIIF region tiles",
+   "scripts in this folder (tile fetch, line crops, key build, mechanical decryption, held-out test, mark check)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-12",
+  "last_date": "2026-11-13"
+ },
+ "solution": [
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "cc. 42r and 44r stitched from IIIF region tiles (whole-image requests refused with 422).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "literature search",
+   "what": "Repository, issues and PRs for 2161, Mendoza, Gonzaga, Campori; one web search: no edition, no prior decipherment beyond c. 42r itself.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "c. 44r transcribed twice from different crops by shape names written before any key; differences settled on the image.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "key from source",
+   "what": "Every sign aligned with c. 42r (align_44r.txt); key_frozen.tsv from lines L01-L10.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Frozen key on held-out lines L11-L17 (147 signs): 91/147 (61.9%) give the value read; 91/115 (79.1%) of the signs the frozen key knows; 99/115 (86.1%) same consonant. The held-out plaintext was in view during transcription.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Decrypted with key.tsv and read with every departure marked; scripts/check_marks.py passes. 154 words: 122 verbatim, 4 code, 28 repaired, 0 holes.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Independent blind review: sign spot-check of 4 lines (92 signs and 8 points) against the image, same segmentation, name differences only in marks and near shapes; key_frozen.tsv rebuilt from L01-L10 with the same 74 entries; reading read as sentences against the translation, grade B. The marked block moved out of reading_44r.md into reading_44r_marked.md.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 405 tokens, 96 types, es-golden-age order 4: reading -2.078 per letter; random keys -3.587 (z 8.9); key annealed onto shuffled ciphertext best -2.218 (mean -2.264, z 5.2); annealer on the real text -2.13. Verdict: pass.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-13",
+   "model": "es-golden-age",
+   "file": "validation.tsv",
+   "tokens": 405,
+   "types": 96,
+   "tokens_per_type": 4.22,
+   "score": -2.078,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -3.587,
+     "sd": 0.17,
+     "max": -3.154,
+     "z": 8.9,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -2.264,
+     "sd": 0.035,
+     "max": -2.218,
+     "z": 5.2,
+     "p": 0.1429
+    }
+   },
+   "power": -2.13,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -1.905; polyphony 0.086; 3 unread tokens left out; annealer on the real text from random keys reached -2.13"
+  },
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Key rebuilt by aligning c. 44r with its contemporary decipherment on c. 42r, frozen on lines 1-10 and tested on lines 11-17.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.79,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading_44r_marked.md: 122 of 154 words verbatim from the signs (scripts/reading.py check). 22 of those 122 hold a sign whose value rests on that one place, taken from the alignment with c. 42r alone; without them 100 of 154 (64.9%).",
+  "verification": [
+   "contemporary decipherment",
+   "matched control",
+   "statistical test"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the decipherment of c. 44r on c. 42r",
+    "date": "1549",
+    "source": "Estense Digital Library, uuid e02077fa-33a9-4749-b581-f88f2d45e9be"
+   },
+   {
+    "who": "dudout",
+    "role": "identification",
+    "note": "identified c. 42r as the decipherment of c. 44r and c. 43 as a summary, issue #254",
+    "date": "2026-11-05"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "independent transcription and alignment, key frozen and tested on held-out lines, reading with marks",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "c. 44r, two passes from IIIF tiles",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "one independent AI language-model agent, blind review of the reading and a 4-line sign spot-check; no human palaeographer",
+    "date": "2026-11-13"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "c44r",
+    "label": "c. 44r, cipher enclosure on the government of Siena",
+    "transcription": "transcription_44r.txt",
+    "decryption": "decryption_44r.txt",
+    "reading": "reading_44r.md",
+    "translation": "translation_44r.md",
+    "language": "es",
+    "state": "read in part",
+    "summary": "Mendoza explains how the voting rules for the Eight and a Captain of the People decide whether Siena stays a republic, becomes a principate of the few or a duchy like Florence; he made the captain for four months the first time to test how the brigata (probably the faction) would bear it, asks Ferrante to keep this from the court lest they say one of them wants to make himself tyrant, and says he has deceived Juan Gallego so that the Emperor is left with the door open to enter with an appearance of reason.",
+    "read_share": 0.792,
+    "note": "Words 154: 122 verbatim from the signs (79.2%), 4 code-group words, 28 with a marked single-sign repair, 0 holes. 22 of the 122 verbatim words hold a sign whose value rests on that one place (from c. 42r alone); without them 100 of 154 (64.9%). Marked reading line by line in reading_44r_marked.md.",
+    "reading_review": {
+     "grade": "B",
+     "by": "independent AI language-model agent (blind review)",
+     "date": "2026-11-13",
+     "note": "Read as sentences against translation_44r.md: all 12 sentences build, with no holes; a sign spot-check of 4 lines (92 signs and 8 points) against the image gave the same segmentation, with name differences only in marks. 28 words carry a single-sign repair from the contemporary decipherment on c. 42r, and several sign values rest on that crib alone, so the state is read in part."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "gaps": [
+   {
+    "item": "Shape splits: x (de/no), o' (ga/ta), n (a/co/c/f), lo (mo/tro), q' (ha/a), 9 (do/u), e (lo/le)",
+    "blocker": "not-attempted",
+    "detail": "Probably two near shapes merged in each name; most of the 28 repairs sit here. A third look at 3x crops should split them."
+   },
+   {
+    "item": "Three signs unexplained in place: o in Florencia, p in vez, S in Juan",
+    "blocker": "too-short",
+    "detail": "Each name occurs once or twice on the page."
+   },
+   {
+    "item": "Single-place sign values",
+    "blocker": "too-short",
+    "detail": "22 of the 122 verbatim words hold a sign whose value is attested in one place only and comes from c. 42r alone; without them 100 of 154 words (64.9%)."
+   },
+   {
+    "item": "Cipher passages on cc. 40v, 41r and 46v",
+    "blocker": "not-attempted",
+    "detail": "Not transcribed; the natural second held-out test."
+   },
+   {
+    "item": "Sign names left open after the review (L03, L08, L13, L16)",
+    "blocker": "not-attempted",
+    "detail": "Name differences in marks and near shapes only; not settled on the image."
+   }
+  ]
+ }
+}
