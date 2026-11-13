@@ -99,7 +99,7 @@
   },
   {
    "id": "K259-chiffer2-121-124",
-   "read": "not read",
+   "read": "read",
    "shelfmark": "Riksarkivet, Kungliga arkiv, Drottning Lovisa Ulrika, Utgångna skrivelser, SE/RA/710003/02/008/b/K 259, images A0073297_00121-00124 (left)",
    "date": "1764-12-31",
    "year": 1764,
@@ -110,9 +110,9 @@
    "cleartext_in_document": "separate passages",
    "plaintext": {
     "location": [
-     "none"
+     "separate folio"
     ],
-    "source": "No decipherment; one clear passage on 122R."
+    "source": "Contemporary clear text on images 127-128 ('Tillhör brev av den 31/12 1764'), identified 13 Nov 2026 (dudout/c04/); the cipher follows it group by group (pages in the order 121, 122L, 123R, 124L, 122R)."
    },
    "length": {
     "tokens": 1247,
@@ -246,7 +246,7 @@
   ],
   "sessions": 1,
   "first_date": "2026-10-26",
-  "last_date": "2026-10-28"
+  "last_date": "2026-11-13"
  },
  "solution": [
   {
@@ -526,8 +526,48 @@
    "what": "Payne/Codex: Inspected public F474 portfolio samples, Chifferklaver202/8–10, Muscovitica71 and recipient-side metadata; no accepted May key.",
    "result": "partial"
   },
-  {"date": "2026-11-12", "kind": "solver", "technique": ["EM alignment", "plaintext matching", "repeat/pattern analysis", "statistical test", "contextual inference"], "what": "Brice Dudout (Claude Opus 5.5): system B (Chiffer n:o 2). The 120 clear is the plaintext of 118-119R (a draft with struck and rewritten phrases, not certainly a clerk's decipherment; cipher repeats fall at the clear's repeats). Key rebuilt by anchored EM alignment (10 checkpoints, 26 anchors, method of key_c01) on 118.00-119L.06 only: fixed two-part syllabic nomenclator with homophones (614 n, 119 r, 136 de, 453 majeste, 54 interet; 549 apostrophe, 9 j). One pre-registered measure on the held-out 119L.07-119R.05 (328 groups; PREREG frozen by SHA-256): 0.563 vs 400 controls (permuted keys max 0.083, shuffled text max 0.076). 121-124L decoded (82.8% of groups with the measured key, 90.6% with 25 values added afterwards from context) and read in part: 59.4% of word tokens sure by the README rule (442 of 744; about 70% in the contributor's sure + probable count). The order of events is by the contributor's record (dudout/README.md).", "result": "worked"},
-  {"date": "2026-11-12", "kind": "verification", "technique": ["statistical test", "plaintext matching"], "what": "Integration check: the held-out measure re-run unchanged (M 0.5633, 255 of 328 groups known, controls max 0.0833 and 0.0756) and a second decoder written from the key file gives the same decoded string; all ten frozen SHA-256 values match; no held-out group uses a value absent from the build part. Issue #437 (system A key_c01, 217 values) could not be checked: key, 101 d transcription and scripts are not in the repository. Key-free test on tx/g1765-11-15.txt: of 450 (cipher group, gloss word) pairs by position, the two best are 540 = que and 218 = de, the issue's values (0.0103 and 0.0114 against a best of 0.0122 in 100 shuffles); system A stays open.", "result": "partial"}
+  {
+   "date": "2026-11-12",
+   "kind": "solver",
+   "technique": [
+    "EM alignment",
+    "plaintext matching",
+    "repeat/pattern analysis",
+    "statistical test",
+    "contextual inference"
+   ],
+   "what": "Brice Dudout (Claude Opus 5.5): system B (Chiffer n:o 2). The 120 clear is the plaintext of 118-119R (a draft with struck and rewritten phrases, not certainly a clerk's decipherment; cipher repeats fall at the clear's repeats). Key rebuilt by anchored EM alignment (10 checkpoints, 26 anchors, method of key_c01) on 118.00-119L.06 only: fixed two-part syllabic nomenclator with homophones (614 n, 119 r, 136 de, 453 majeste, 54 interet; 549 apostrophe, 9 j). One pre-registered measure on the held-out 119L.07-119R.05 (328 groups; PREREG frozen by SHA-256): 0.563 vs 400 controls (permuted keys max 0.083, shuffled text max 0.076). 121-124L decoded (82.8% of groups with the measured key, 90.6% with 25 values added afterwards from context) and read in part: 59.4% of word tokens sure by the README rule (442 of 744; about 70% in the contributor's sure + probable count). The order of events is by the contributor's record (dudout/README.md).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "plaintext matching"
+   ],
+   "what": "Integration check: the held-out measure re-run unchanged (M 0.5633, 255 of 328 groups known, controls max 0.0833 and 0.0756) and a second decoder written from the key file gives the same decoded string; all ten frozen SHA-256 values match; no held-out group uses a value absent from the build part. Issue #437 (system A key_c01, 217 values) could not be checked: key, 101 d transcription and scripts are not in the repository. Key-free test on tx/g1765-11-15.txt: of 450 (cipher group, gloss word) pairs by position, the two best are 540 = que and 218 = de, the issue's values (0.0103 and 0.0114 against a best of 0.0122 in 100 shuffles); system A stays open.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching",
+    "statistical test"
+   ],
+   "what": "Brice Dudout (Claude Opus 5.5): images 127-128 are the contemporary clear of 121-124L ('Tillhör brev av den 31/12 1764'). One pre-registered re-test of the frozen 12 Nov key (key_systemB_c03.json, built on 118.00-119L.06 only) against this new clear (transcribed twice, hashed first): M 0.5353 vs 400 controls max 0.0593 (permuted keys, shuffled orders; thresholds of the 12 Nov measure). Of 15 values read from context before the clear was seen (N_draft.json), 14 are confirmed. dudout/c04/README.md.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "reading",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Key completed by alignment to the 127-128 clear (key_systemB_c04.json: 1,236 of 1,247 groups; corrections such as 3 ne, 12 con, 320 fi, 437 ri, 523 ar, 118 vi; code words Fersen, Stachieff, Diete, million, Princesse); the 5 Oct letter, not used for these changes, rises from 0.699 to 0.825 against its clear on 120. 121-124L read from the contemporary clear.",
+   "result": "worked"
+  }
  ],
  "outcome": {
   "class": "read in part",
@@ -574,6 +614,12 @@
     "role": "solution",
     "date": "2026-11-12",
     "note": "System B key rebuilt from the contemporary clear of 5 Oct 1764 (image 120) and passed a pre-registered held-out test on 328 groups (0.563 vs 400 controls max 0.083); 121-124L, which have no contemporary clear, read in part (59.4% of word tokens sure; about 70% in his count); issue #437 (system A key) reported, not verifiable from the repository; dudout/"
+   },
+   {
+    "who": "dudout",
+    "role": "identification",
+    "date": "2026-11-13",
+    "note": "Images 127-128 identified as the clear of the 31 Dec 1764 cipher letter (121-124L); key B re-tested on it and completed; dudout/c04/"
    }
   ],
   "method_basis": "Main target remains unsolved; separately, an existing archival key219 was applied to the printed1771 fragments, yielding a literal decode with uncertain expansions.",
@@ -597,15 +643,52 @@
     "summary": "Printed letter discusses Breteuil and relations between courts; only numeric fragments transcribed/decoded.",
     "note": "Two names already identified by Schück; expansions at end tentative. No fraction of full-letter coherent reading claimed."
    },
-   {"doc": "K259-1764-10-05", "label": "System B, 5 Oct 1764, Düben to the King (118-119R): contemporary decipherment on image 120, confirmed by the rebuilt key", "transcription": "tx/c1764-10-05.txt", "decryption": "dudout/decode_1764-10-05.txt", "reading": "tx/p1764-10-05.final.txt", "state": "read", "language": "fr", "summary": "Düben reports to Adolf Fredrik from St Petersburg that the Empress, absorbed by Polish affairs and by news from Sweden, promises to support the King's interests at the coming Diet and will send Stachieff back to Sweden to explain her intentions.", "note": "The clear on 120 is the contemporary plaintext of the letter, a draft with struck and rewritten phrases (NOTES' 'not a decipherment' verdict withdrawn: its words are the cipher's plaintext); the cipher also carries the closing formula that the clear omits.", "reading_review": {"grade": "A", "by": "Brice Dudout (Claude Opus 5.5)", "date": "2026-11-12", "note": "120 read as French sentences (Daniel's transcription); the key decode of 118-119R follows it group by group (dudout/decode_1764-10-05.txt), 96% of groups known."}},
-   {"doc": "K259-chiffer2-121-124L", "label": "System B, 121 (31 Dec 1764 v.st.), 122L, 122R, 123R, 124L, Düben to 'mon cher Comte': no contemporary clear", "transcription": "tx/c-chiffer2-121-124.txt", "decryption": ["dudout/decode_121-124L_frozen_key.txt", "dudout/decode_121-124L_extended_key.txt"], "reading": "dudout/reading_121-124L_fr.md", "translation": "dudout/reading_121-124L_en.md", "state": "read in part", "language": "fr", "summary": "On the King's orders about Count Osterman and the Empress's favour sought for him, the Empress's support for the King's interests and the Diet, Düben's failure to obtain more and the little confidence shown him; he asks for his letters to be returned on his return.", "reading_review": {"grade": "B", "by": "Brice Dudout (Claude Opus 5.5)", "date": "2026-11-12", "note": "Read in part as French sentences: 442 sure, 77 probable of 744 word tokens (mechanical count): 59.4% sure by the README rule, about 70% sure + probable in the contributor's count; about 105 values (215 groups) unresolved; 25 values added after the measure from context, whose words are holes here."}, "read_share": 0.594}
+   {
+    "doc": "K259-1764-10-05",
+    "label": "System B, 5 Oct 1764, Düben to the King (118-119R): contemporary decipherment on image 120, confirmed by the rebuilt key",
+    "transcription": "tx/c1764-10-05.txt",
+    "decryption": "dudout/decode_1764-10-05.txt",
+    "reading": "tx/p1764-10-05.final.txt",
+    "state": "read",
+    "language": "fr",
+    "summary": "Düben reports to Adolf Fredrik from St Petersburg that the Empress, absorbed by Polish affairs and by news from Sweden, promises to support the King's interests at the coming Diet and will send Stachieff back to Sweden to explain her intentions.",
+    "note": "The clear on 120 is the contemporary plaintext of the letter, a draft with struck and rewritten phrases (NOTES' 'not a decipherment' verdict withdrawn: its words are the cipher's plaintext); the cipher also carries the closing formula that the clear omits.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Brice Dudout (Claude Opus 5.5)",
+     "date": "2026-11-12",
+     "note": "120 read as French sentences (Daniel's transcription); the key decode of 118-119R follows it group by group (dudout/decode_1764-10-05.txt), 96% of groups known."
+    }
+   },
+   {
+    "doc": "K259-chiffer2-121-124",
+    "label": "System B, Düben to 'mon cher Comte', 31 Dec 1764 v.st. (121, 122L, 123R, 124L, 122R): contemporary clear on images 127-128, confirmed by the key",
+    "transcription": "tx/c-chiffer2-121-124.txt",
+    "decryption": [
+     "dudout/c04/decode_121-124L_key_c04.txt",
+     "dudout/decode_121-124L_frozen_key.txt",
+     "dudout/decode_121-124L_extended_key.txt"
+    ],
+    "reading": "dudout/c04/frozen/127-128_final.txt",
+    "translation": "dudout/c04/reading_121-124L_en.md",
+    "state": "read",
+    "language": "fr",
+    "summary": "Düben reports the steps taken for Count Osterman, his failure to obtain money from the Empress (distrust of the King's aims, suspicions of a move to sovereignty), the coolness shown him over the King's supposed preference for Fersen and the French party, the money to be distributed by Osterman at the Diet, and asks for his cipher letters to be returned.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Brice Dudout (Claude Opus 5.5)",
+     "date": "2026-11-13",
+     "note": "The clear on 127-128 read as French sentences (two transcription passes); key c04 decodes 1,236 of 1,247 groups and follows it group by group; the frozen 12 Nov key alone gives M 0.535 against it (controls max 0.059)."
+    }
+   }
   ],
   "key_file": [
    "payne2026/key218.txt",
    "payne2026/key219.txt",
    "payne2026/key220.txt",
    "dudout/key_systemB_c03.json",
-   "dudout/key_systemB_c03b_extended.json"
+   "dudout/key_systemB_c03b_extended.json",
+   "dudout/c04/key_systemB_c04.json"
   ]
  }
 }

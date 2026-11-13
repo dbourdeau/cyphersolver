@@ -212,3 +212,13 @@ line in `dudout/README.md` was reworded; the target status stays **in progress**
 without an outside blocker. Not checked: the held-out and build transcriptions against the Riksarkivet images; the 121-124L
 reading beyond the sample read. No write-up page is written until system A or the escalation steps are done (a system-B page
 is owed if the maintainer wants one). The 25 post-measure values are not validated by a second held-out text.
+
+## 13 Nov 2026 — the clear of 121-124L is on images 127-128 (Brice Dudout, Claude Opus 5.5)
+
+Images 127-128 ("Tillhör brev av den 31/12 1764") are the clear of the 31 Dec 1764 Chiffer n:o 2 letter (121, 122L, 123R,
+124L, then 122R). This withdraws "No decipherment" for that document. One pre-registered re-test of the frozen 12 Nov
+system B key (built on 118.00-119L.06 only) against this new clear, transcribed twice and hashed first: M 0.5353 vs
+400 controls max 0.0593 (same metric and thresholds as on 12 Nov). Fourteen of 15 values read from context before the clear
+was seen are confirmed. Key completed by alignment (dudout/c04/key_systemB_c04.json, 1,236 of 1,247 groups); the 5 Oct letter,
+not used for those changes, rises from 0.699 to 0.825 against its clear. The letter is read from its contemporary clear;
+system B now has no text without a clear in this volume. System A (6 Mar 1764, 15 Nov 1765) unchanged. See dudout/c04/README.md.
