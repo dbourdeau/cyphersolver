@@ -893,6 +893,8 @@ write-ups to one contributor. `docs/contribute.html` and [CONTRIBUTING.md](CONTR
 forms are in `.github/ISSUE_TEMPLATE/`. Credits for work before 13 Oct 2026 were backfilled by
 [`tools/backfill_credits.py`](tools/backfill_credits.py) from the key web, page bylines, merged pull requests and issues, and the notes.
 
+A write-up's lead figure (`IMAGES` in the manifest) also lies faintly under the right of its hero, and as a band across the top on a phone. [`docs/_hero_backdrops.py`](docs/_hero_backdrops.py) measures each figure and writes how strongly it shows to `docs/_hero_backdrops.json`; run it after adding or replacing a lead figure, and set `"skip": true` or `"pos"` there by hand for a figure that makes a poor backdrop.
+
 The sender and recipient portraits under a write-up's title come from [`docs/_portraits.json`](docs/_portraits.json)
 (slug &rarr; role, name, image, what the picture is, and its Wikimedia Commons file). Only public-domain portraits
 are used, cropped to a 192-px square as `docs/portrait_<name>.jpg`. Leave a side out when the correspondent is

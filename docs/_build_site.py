@@ -156,6 +156,8 @@ def stamp_finding(li):
 
 # The manifest (PAGES, one entry per write-up; IMAGES, the lead figures) is data and lives in _manifest.py.
 from _manifest import PAGES, IMAGES
+try: BACKDROPS = json.loads((HERE / '_hero_backdrops.json').read_text(encoding='utf-8'))
+except FileNotFoundError: BACKDROPS = {}
 
 SURVEYS = ('solved', 'highlights', 'top25')
 # Outcome method (George Lasry's categories, _methods.py): a page whose target has a profile with outcome.method
@@ -1124,6 +1126,13 @@ def process(path):
     if cl and '<section class="hero">' in s:
         anchor = r'(<section class="hero">.*?<p class="meta">.*?</p>(?:\n<p class="outcome">.*?</p><!-- /outcome -->)?)'
         s = re.sub(anchor, lambda m: m.group(1) + '\n' + cl, s, count=1, flags=re.S)
+    # the lead figure lies faintly under the right of the hero, as the home page's manuscript lies under its own
+    # (style.css .hero-ms); pages with no lead figure keep the plain hero
+    s = re.sub(r'\n?<div class="hero-ms"[^>]*>.*?</div><!-- /hero-ms -->', '', s, flags=re.S)
+    lead, tone = IMAGES.get(slug), BACKDROPS.get(slug, {})      # tone: _hero_backdrops.py, how strongly this figure shows
+    if lead and lead[0].lower().endswith(('.jpg', '.jpeg', '.png', '.webp')) and '<section class="hero">' in s and not tone.get('skip'):
+        css = f'--fl:{tone.get("l", 1)};--fd:{tone.get("d", 1)}' + (f';--pos:{tone["pos"]}' if tone.get('pos') else '')
+        s = s.replace('<section class="hero">', f'<section class="hero">\n<div class="hero-ms" aria-hidden="true" style="{css}"><img src="{lead[0]}" alt=""></div><!-- /hero-ms -->', 1)
     # the kicker's last segment names the outcome in older pages; it follows the profile's method now
     if page and page.get('method'):
         s = re.sub(r'(<p class="kicker">.*?)(?:&middot;|·)\s*(?:solved|read|read in part|solved in part|partly read|partly solved|attempted|attempted, open|'
