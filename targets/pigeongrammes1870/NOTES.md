@@ -379,6 +379,13 @@ Dan asked to keep going after the Pillon test. Method: read the telegram by cont
 - Pillon's items after this pass: 5121 in ballon is not L (l = 4914); it sorts between lie 5102 and lui 5209 (ll or lo). VIN-OY: 6124 sorts below on, so "oi" (phonetic)
   is possible, still unconfirmed. DUC-ROT: 7802 = re (relie, renseignement), so 2722 7802 is D..-RE, not Ducrot; it also follows a first name ("votre ami [0312 9516] [2722 7802]").
   Third addressee 5006 9701 2729 = LE-V..-E. The "prefet" idea for 6819 3412 stays dropped.
+- Second pass (13 Nov, same day): 233 values, 475 of 754 occurrences (63%), 193 markers, 86 unread; 0 inversions among the 233 (the earlier one was 7119/7208, now pour / pouvoir).
+  New: chemins de fer (1422 3716; "desorganisation des chemins de fer due a la guerre"), FER-RY + il (3716 8327 4314), retabli, developpons, ici, "a l'Officiel si c'est possible" (8625 si),
+  enleve, causant, unique, repartir, MEL-ASSE (colle forte et melasse), nomme, SECRET-AR-I-AT general, "il ne sera plus transmis aucune depeche" (9411 0815 2319), mere, TANT-E, HE-RO-L-D,
+  LEG-O-F (Le Goff?), "mille remerciements a tous trois" (three addressees again), "votre toujours devoue", RIC-ARD, EV-EIL, etudiant. 2722 7802 = DUP?/DUC?-RE (Dupre?) open.
+  Still unread, by type: names (third addressee LE-V..-E, the Nantes and Rennes names, 0402 4712, 1002 5825 9924 T, 7708 5825 9511 D, 3920 8914 3005 5824, 0312 9516, the place 9620 3328 3824,
+  prefect of 0903 2719); single words with several candidates (7126, 1516, 3921, 3601, 3604, 4423, 0703, 3408 2809, 3215, 6808, 6005 9029, 4125, 0702, 0420, 0421, 6301, 0530, 3019, 3021, 2704,
+  5413 6421, 8122, 2329, 2705, 8517 5024, 5308, 1027, 4515, 5215 9010, 3927, 8319, 7122 3030 1502, 6714 4905); the marker groups.
 - NOT a reading by the README bar (95% of tokens): this is "read in part", from one transcription, with no second text in this code to test the values on.
 
 ## Wiki and engine (7 Nov 2026): start here
