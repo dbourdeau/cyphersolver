@@ -130,6 +130,12 @@
    "kind": "verification",
    "what": "Outside check of issue 492 (prabal-rje): their own keys for R5464 and R5465, found from the ciphertext alone on our sign tokens, were re-applied to the tokens; the shown-letter shares (86.4% of 3,249 signs; 68.0% of 5,828 signs) reproduce, and their R5464 letters equal our refined key's letters on 89.7% of the shown signs (they state 86.6% of all signs). The sense-reading by two blind language models (65-70% of shown letters for R5464) was not re-run; it is the contributor's figure and is not counted here.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "PR 494 (prabal-rje): their keys and decodes for R5463, R5464 and R5465, in our sign labels, were re-applied to our tokens with own scripts. Shown shares reproduce (R5463 1,070 of 1,372 = 78.0%; R5464 2,808 of 3,249 = 86.4%; R5465 3,961 of 5,828 = 68.0%); R5464 shown letters equal our refined key's on 89.7% and their main key equals it on 86.6% of signs. For R5463 their key equals our refined key on only 48.8% of signs (55.7% of shown signs); their decode builds Italian words by eye where ours does not. The blind-reader sense figures, simulation accuracies and rival-hill figures are the contributor's and were not re-run. Not a reading by the read bar.",
+   "result": "partial"
   }
  ],
  "outcome": {
