@@ -1,5 +1,7 @@
 # mendoza1549: Diego Hurtado de Mendoza to Ferrante Gonzaga, Siena, 3 April 1549 (catalogue 2161)
 
+Status: in progress (read in part; the gaps below are workable, so no write-up yet).
+
 Contributed by WAINUT (lccompany). Work of 12 Nov 2026 by AI language-model agents; no human palaeographer.
 
 ## Documents
@@ -145,3 +147,25 @@ not a test independent of the crib.
 - before 13 Nov the marked block sat inside reading_44r.md and folder mode scored that file 0.524. It is now in
   `reading_44r_marked.md`, which profile.json does not name as the reading. Folder mode after the split (13 Nov
   2026): reading_44r.md, es, 12 sentences, 10 clean, clean share 0.833, hole rate 0.067, "readable".
+
+## Integration check (13 Nov 2026)
+
+Checked by the integrator against the contributor's files: `scripts/check_marks.py` passes (154 words: 122
+verbatim, 4 code words, 28 repaired, 0 holes); `scripts/heldout.py` gives 91 of 147 held-out signs (61.9%), 91 of
+the 115 known (79.1%). c. 44r was fetched again from the IIIF tiles at half size: 17 lines of symbol cipher; lines
+1-3 compared with the transcription, and line structure, word breaks and about 35 signs agree (not a sign-by-sign
+check of the whole page, and the sign names are the contributor's own shape codes).
+
+- Strict share: 79.2% (122 of 154 words verbatim). The four code words (3 groups, one or two places each) carry
+  values from c. 42r alone and are counted as holes here; the contributor's 81.8% counts them. Words resting on a
+  sign seen in one place only: 22; without them 64.9%. Class: read in part.
+- The key is the alignment with the contemporary decipherment on c. 42r, so this is a reading from an existing
+  decipherment with the key rebuilt from it. The frozen-key test (L01-L10 to L11-L17) is a consistency test inside
+  one page that was transcribed with c. 42r in view; it is not a test on a second text.
+- One key, one entry: the same chancery syllabary as targets/mendoza1548 (Bucure's cifra of Naples 1547), but the
+  tables were built separately from each page and not compared beyond 8 values. If either target is finished,
+  apply its table to the other as a test; nothing here merges them.
+- Not done and workable (so the target stays in progress, no page): the 28 repairs and the shape splits on 3x
+  crops, the struck cipher passages on cc. 40v, 41r and 46v as a second test, the table of mendoza1548 applied to
+  c. 44r, and Vazquez and Rose / Varo Zafra opened.
+
