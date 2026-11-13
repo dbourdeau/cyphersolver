@@ -1,0 +1,38 @@
+# mirabel1622 - key tests (contributor's protocol; not docs/_validate.py). All files, hashes and scripts are in the contributor's
+# working folder (Europe chiffrée, mirabel-gondomar-1621/), not in this repository.
+
+Protocol (PROTOCOLE 3fdbd4ec..., 9 Nov 2026; then one pre-registration per measurement): pre-registration frozen by SHA-256 before
+any key search or decoding of the held-out passage; the key frozen before the measurement; ONE run; thresholds written in advance;
+a measured passage is burned. There is no contemporary clear for this letter, so both measurements are lexical (Spanish lexicon of
+this repository, lang/lexicons/es.json.gz), against 200 controls (permutations of the key values among the tokens present, seed 1622).
+
+Earlier, 9 Nov 2026 (AVENANT-1, 600c8793...): the planned held-out passage H6 (image 38 right) was burned before any computation,
+because its contemporary clear copy (image 39 right) had already been seen. No measurement.
+
+M01, 13 Nov 2026 - part B (image 15 left, 192 tokens; held-out passage H4 of coloma1622, never decoded before)
+  pre-registration PREREG-M01 011f842f...; script measure_m01.py 761098fb...; key CLE_M01 4f09539f... (C04 + 23 values of contemporary clears)
+  metric: unigram log-probability per decoded letter, cipher runs segmented alone
+  thresholds: VALIDATED if score >= -2.35 AND score >= best control + 0.60 AND coverage >= 0.90
+  result: score -2.381; controls max -2.880, median -4.029; gap 0.499; coverage 177/192 = 0.922  ->  FAILED
+  after the run (no effect on the decision): the decode reads largely as Spanish; the 16 short cipher runs cut by the clear were
+  segmented alone, which penalises words split between clear and cipher.
+
+M02, 14 Nov 2026 - part A (images 13 right - 14 right, 349 tokens; never transcribed nor decoded before)
+  metric recalibrated on burned passages only (coloma1622 H2, H3, H5, the Coloma letter; part B): "whole text" lexical score (clear and
+  decoded cipher segmented together, contribution of the decoded letters); a character model on Don Quijote was tried and rejected
+  (it did not separate the reference passages).
+  pre-registration PREREG-M02 6d4121d8...; script measure_m02.py 396766ce...; key CLE_M02 cf863ec2... (= CLE_M01 + 5 values of
+  contemporary clears: 4‡ g, 308 NUESTRO, _113_ DUQUE DE FERIA, _0_ REBELDE, 319 OTRO); transcription ba946962... (two passes, arbitrated)
+  thresholds: VALIDATED if score >= -2.25 AND score >= best control + 0.30 AND coverage >= 0.90 (>= 150 groups);
+              PARTIAL if gap >= 0.30 only; FAILED otherwise
+  result: score -2.383; controls max -3.413, median -4.276; gap 1.029; coverage 324/349 = 0.928  ->  PARTIAL
+  (strong separation from the controls; absolute score under the threshold, which had been fixed on two reference passages only)
+
+After M02 no unseen cipher passage of this system is left in BNE MSS/18428: the key can only be validated on another letter of the
+same system (Gondomar papers in the Real Biblioteca, Coloma's papers).
+
+Consistency on the contemporary clears (learning data, NOT a test: these clears are where the added values come from)
+  39 aligned segments of the six ciphered letters of MSS/18428 that carry a contemporary decipherment, 243 cipher tokens
+  (6 without a value): CLE_M02 decodes them to 515 of the 559 normalised characters of the clears (0.921). Table: CONTEMPORARY-CLEARS.md.
+
+Verdict for the profile: weak (two measurements, one failed, one partial; no independent clear for this letter).
