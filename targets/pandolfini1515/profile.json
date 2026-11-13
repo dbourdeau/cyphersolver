@@ -1,0 +1,249 @@
+{
+ "schema_version": 1,
+ "target": "pandolfini1515",
+ "title": "Francesco Pandolfini to the Otto di Pratica, Vercelli, 6 and 8 Sept 1515 (catalogue 2393, ASF MAP CXXXVII doc. 666): read in part with Brice Dudout's key v6 of pandolfini1514, applied unchanged",
+ "documents": [
+  {
+   "id": "666",
+   "read": "read in part",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza CXXXVII, doc. 666 (cc. 674r-674 bis v)",
+   "date": "6 Sept 1515, postscripts of 8 Sept 1515 (clear dates in the letter)",
+   "year": 1515,
+   "country": "Italy",
+   "route": "Francesco Pandolfini, Florentine orator, Vercelli -> the Otto di Pratica, Florence (contemporary copy, for the Medici)",
+   "places": {
+    "from": "Vercelli",
+    "to": "Florence"
+   },
+   "language": "Italian",
+   "pages": 4,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Bare cipher: no decipherment on the leaves; neighbours 665 and 667 are not a decipherment (catalogue vetting, 6 Nov 2026). The original in the Otto di Pratica (Responsive filza 12 fol. 274b, cited by Usteri 1974) not checked."
+   },
+   "length": {
+    "tokens": 1974,
+    "distinct": 45,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_666.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "ASF MAP IIIF images at the server maximum (1392 px c. 674r, 1272 px the others)",
+    "image_quality": "fair",
+    "notes": "Two passes from strips of different framing (2x, then 2.5x). Pass 1 of c. 674r made before any decoding; the rest after an early key test, so not blind. Pass 2 changed 19 places, each settled on the strip (NOTES.md). After the independent review two signs were marked doubtful (r08 2^3?, r13 p? for J; NOTES.md, Independent review). Superscripts are often written one sign off; the transcription keeps them where seen. Length counts every token, nomenclator groups included, block-end marks excluded. SHA-256 of transcription_666.txt: 2eb2358f31489a977e0a05cd39f6969a8ca2fb275ba4a34a1d3e3f3c1e867655."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Pandolfini's 1514-15 embassy cipher (Dudout, pandolfini1514): consonant signs carry the vowel as a superscript figure 1-5 = u o i e a; bare vowel signs; homophones (n = y, t; l = x, c; r = 7, d; t = 8, Z); doubling by a double bar; word signs F et, M non, α per, D che, D^n con, B ancora, T^m Sua Maestà; numbers between points for names: 22 occurrences of 5 distinct groups in this letter (.4. Cristianissimo 10, .20. Svizeri 7, .2. papa 3; .15. 1 and .22. 1, unread).",
+  "symbol_kind": "digits and letters",
+  "distinct_symbols": 45,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 5,
+   "kinds": [
+    "names",
+    "titles",
+    "places"
+   ],
+   "unread_groups": 2
+  },
+  "nulls": {
+   "present": true,
+   "count": 1
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none",
+  "notes": "distinct_symbols counts distinct base shapes (superscripts stripped). key_frozen.tsv = Dudout's key_v6.json unchanged plus three shape aliases (92 lines: 2 comment lines and 90 entries); key.tsv adds only Φ = x (92 lines: 1 comment line and 91 entries). nomenclator.entries counts the distinct number groups used in this letter."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No edition or decipherment of this letter found: Dan's vetting of 6 Nov 2026 (Desjardins-Canestrini II, Tomokiyo, Lasry, DECODE) and one web search on 12 Nov 2026. The key comes from Dudout's pandolfini1514 (MAP LXXII pairs of the same system).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "sibling key",
+   "cleartext context"
+  ],
+  "attack": "sibling key",
+  "human_role": "WAINUT set the task (catalogue 2393) and the rules; AI language-model agents transcribed, applied the frozen key, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "ASF MAP IIIF images",
+   "scripts in this folder (strips, mechanical decryption, mark check and word count, held-out test with shuffled keys)",
+   "Dan's docs/_check_reading.py"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-12",
+  "last_date": "2026-11-12"
+ },
+ "solution": [
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "cc. 674r-674 bis v fetched from the ASF MAP IIIF service at full size (A0001463-A0001466).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "literature search",
+   "what": "Catalogue vetting record of 6 Nov 2026 and one web search: no edition or decipherment of the letter.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "Pass 1 from 2x strips (674r before any decoding); pass 2 from 2.5x strips with other framing; 19 places changed and settled on the strip.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "key from source",
+   "what": "Dudout's key v6 (targets/pandolfini1514/key_v6.json) imported unchanged and frozen (key_frozen.tsv) with three shape aliases; one sign (Φ = x) added from context in key.tsv.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Whole letter held out from v6: Dan's checker on the unspaced frozen-key decryption, re-run on the final files, gives coverage 0.820 against 0.629-0.685 for five keys with shuffled consonant values (clean share 0.925 against 0.702-0.848; that measure is lenient). Two passages compared with the clear parts of the letter: the Swiss terms of the Gallarate agreement in the cipher of 674v against the clear summary on 674 bis r (the sum, [?novecento] mila against the clear 'un milione d'oro', stays doubtful), and 'lo accordo era concluso' in the cipher of 674 bis v against the clear postscript on 674v.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Reading with every departure marked; scripts/check_marks.py passes. 771 words: 592 verbatim, 137 with a marked repair, 15 conjectural, 27 holes. Dan's checker: clean share 0.681 (64 of 94 sentences) on the marked reading, 0.734 (47 of 64) with the marks resolved and conjectures left out.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Independent blind review by an AI language-model agent that took no part in the solution: sign spot-check of about 150 signs in four lines on the images (base shapes agree in about 95%), mechanical checks re-run, reading read against the translation. Read in part, grade B. Of five signs the reviewer read differently, two were marked doubtful after a second look at the strips and three were kept (NOTES.md).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "read after matching with key from external sources",
+  "method_basis": "The key is Dudout's v6, rebuilt from contemporary cipher/decipherment pairs of the same writer's system in MAP LXXII (pandolfini1514); applied unchanged to this bare letter of Sept 1515.",
+  "contribution": [
+   "transcription",
+   "key extended or corrected"
+  ],
+  "fraction_read": 0.77,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "scripts/check_marks.py: 592 of 771 words verbatim from the signs (76.8%); 94.6% read as sense with marked repairs.",
+  "verification": [
+   "matched control",
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "key or decipherment used",
+    "note": "key v6 of pandolfini1514 (MAP LXXII pairs), applied unchanged",
+    "date": "2026-11-09"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "catalogue 2393: lead, images and vetting (MAP paging pass 2, 6 Nov 2026)",
+    "date": "2026-11-06"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "key test on a new letter of Sept 1515; read in part",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "cc. 674r-674 bis v from the ASF images, two passes",
+    "date": "2026-11-12"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "666",
+    "label": "6 and 8 Sept 1515, MAP CXXXVII 666, cc. 674r-674 bis v",
+    "transcription": "transcription_666.txt",
+    "decryption": "decryption_666.txt",
+    "reading": "reading_666.md",
+    "translation": "translation_666.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.768,
+    "summary": "Pandolfini at Vercelli, the week before Marignano (inferred from the dates): he follows the pope's orator, who will not go on to the King until the pope changes course. The French camp near Bufalora moves towards Biagrasso (Abbiategrasso); envoys of Milan offer victuals, but the hoped-for goodwill of Milan does not show and the King is angry. The Duke of Savoy, the Bastard of Savoy, Lautrec and 'the general who was of Milan' (identified by the contributor as Sebastiano Ferrier) go to the Swiss camp near Gallarate for the answer. The terms of the agreement: a state, a pension, a hundred lances and a wife of the King's blood for the Duke of Milan; money in instalments over six years and a yearly pension for the Swiss, Swiss kept in the King's pay. Milan is as good as won and the King may try Naples this year; the Duke of Milan will not accept the offer and may end a prisoner. Postscript: the Duke of Guelders has arrived; the agreement is reported concluded, the Spaniards have left, the French camp moves towards Lodi.",
+    "note": "Words 771: 592 verbatim (76.8%), 137 with a marked repair, 15 conjectural, 27 holes (about 41 words by length). Codes .15. and .22. unread. Transcription not blind after pass 1 of 674r.",
+    "reading_review": {
+     "grade": "B",
+     "by": "independent AI language-model agent (blind review)",
+     "date": "2026-11-12",
+     "note": "The text reads as sentences and holds against the clear parts and the history; 21 of about 24 sentences are coherent, with many marked repairs, some conjectures and three broken passages (v01-v02, v08-v09, b03-b06). Read in part is right; read is not."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "gaps": [
+   {
+    "item": "27 holes (about 41 words): r08, r09, v02-v03, v08-v09, b04, b06, b08, bv05, bv07",
+    "blocker": "illegible",
+    "detail": "Decoded but no sense found; the images are at the server maximum."
+   },
+   {
+    "item": "Codes .15. and .22.",
+    "blocker": "open-codes",
+    "detail": ".15. is an ally named with the Swiss (Venetians?); .22. kept in pay six months (lanzichenech in Dudout's 1514 guess)."
+   },
+   {
+    "item": "Signs with values other than v6 (J s/f, 2 b/c, bare 5 h, F^0, E, B^0, the number group in v07)",
+    "blocker": "open-codes",
+    "detail": "Marked as repairs, not added to the key."
+   },
+   {
+    "item": "Independent blind check",
+    "blocker": "not-attempted",
+    "detail": "Transcription not blind after pass 1 of 674r; the reviewer's spot-check covered about 150 signs in four lines. Five signs read differently by the reviewer remain open points (NOTES.md)."
+   },
+   {
+    "item": "Original in the Otto di Pratica (Responsive filza 12 fol. 274b)",
+    "blocker": "needs-physical-access",
+    "detail": "Not known to be digitised; may carry the chancery's decipherment."
+   },
+   {
+    "item": "Five signs read differently by the independent reviewer (r08 twice, r13, b08 twice)",
+    "blocker": "illegible",
+    "detail": "Two marked doubtful, three kept after a second look at the strips; to be settled by a human reader on the images."
+   },
+   {
+    "item": "Heavy context repairs: {cidi/Bia}gras{+so} (r08), [?Francia] (r17), [?novecento] (v07)",
+    "blocker": "illegible",
+    "detail": "The decoded signs give no sense as they stand; [?novecento] stands against the clear 'un milione d'oro'."
+   }
+  ]
+ }
+}
