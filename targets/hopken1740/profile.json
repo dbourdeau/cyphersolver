@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "hopken1740",
- "title": "Höpken and Carlson, Constantinople, 1740-1741: the second code, rebuilt from the glossed despatch of 15/26 January 1740 and tested held-out on a glossed French page of 1741; a letter of the comte de Castellane and the start of the reply read in part",
+ "title": "Höpken and Carlson, Constantinople, 1740-1741: the second code, rebuilt from the glossed despatch of 15/26 January 1740 and tested held-out on a glossed French page of 1741; a letter of the comte de Castellane and the start of the reply read in part; a bare Latin letter signed Ibrahim Effendi (vol. I/9/29) read in part; the Khan of Crimea's glossed letter to the King of Sweden (vol. I/9/28, 1742) read from its gloss",
  "documents": [
   {
    "id": "despatch_jan1740",
@@ -139,6 +139,76 @@
     "image_quality": "good",
     "notes": "Two passes by one agent (bands at 0.6-0.75x; halves or quadrants at 0.9-1.0x); disagreements settled on 2x crops; doubtful digits marked ?."
    }
+  },
+  {
+   "id": "litB_ibrahim",
+   "read": "read in part",
+   "shelfmark": "Stockholm, Riksarkivet, Diplomatica Turcica, SE/RA/2119/2119.1/I/9/29 (R0003653), image 81 right page and image 82 left page (its verso)",
+   "date": "undated on these pages; volume 1736-1746; the year 1740 is an estimate from the subject (boundaries and islands disputed with the 'legatus Germaniae', probably the Imperial envoy; inferred to be the frontier settlement after the Treaty of Belgrade, 1739, not checked)",
+   "year": 1740,
+   "country": "Sweden",
+   "route": "Ibrahim Effendi (signature in the cipher) -> an Excellency (address 'Domino Domino A[h]me[t] [1909]', partly guessed and unread); cipher copy marked 'Doupplette', 'Lit. B', kept in the papers of the Swedish legation at Constantinople",
+   "places": {
+    "from": "Constantinople",
+    "to": "Constantinople"
+   },
+   "language": "Latin",
+   "cleartext_in_document": "none",
+   "pages": 2,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the pages (no interlinear writing, no gloss). The key is this folder's key_1741.tsv (the hopken1740 key rebuilt from the Swedish decipherment of the despatch of 15/26 Jan 1740, vol. I/9/21, plus 24 values and 2 corrections from the French gloss of Lit. A, 1741, vol. I/9/26), unchanged."
+   },
+   "length": {
+    "tokens": 494,
+    "distinct": 152,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription_litB_all.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Riksarkivet IIIF images, full size (lbiiif.riksarkivet.se, R0003653_00081 and _00082)",
+    "image_quality": "good",
+    "notes": "Two passes per page by one agent on different crop grids (about 1x and 1.25x), digits only; 2 disagreements in 494 groups, settled on 2.5x crops as 1353? and 1135?. One group (B09 g18, 178?) has its last digit in a torn edge. A blind review copied about 115 groups from the image and found 2 misreadings, both corrected (C10 g4 1624 -> 1024; B15 g16 1496 -> 1495?). For image 82 the decryption of image 81 had already been seen."
+   }
+  },
+  {
+   "id": "khan1742",
+   "read": "read",
+   "shelfmark": "Stockholm, Riksarkivet, Diplomatica Turcica, SE/RA/2119/2119.1/I/9/28 (image series R0003637), images 227, 228 (two pages) and 229",
+   "date": "enclosure to Carlson's despatch of 10/21 May 1742 (endorsement); the extract ends 'au commencement du mois de mai 1742'",
+   "year": 1742,
+   "country": "Sweden",
+   "route": "the Khan of Crimea -> the King of Sweden (French translation, as headed); enclosure to Carlson's despatch to the chancery president (endorsement)",
+   "places": {
+    "from": "Constantinople",
+    "to": "Stockholm"
+   },
+   "language": "French",
+   "cleartext_in_document": "interspersed",
+   "pages": 4,
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Contemporary French decipherment written over the struck cipher groups; one row (B07, 12 groups) and a few stretches where the glossing hand drew only a line have none."
+   },
+   "length": {
+    "tokens": 614,
+    "distinct": 161,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription_khan1742.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Riksarkivet IIIF images, full size (lbiiif.riksarkivet.se), R0003637",
+    "image_quality": "good",
+    "notes": "Two passes by one agent (bands at 0.72-0.8x, half-width crops at 1.4-1.5x), digits only; the gloss was in view but read separately, after the digits. A third pass after the first decryption re-read 23 groups on images 227 and 229 as 8 (this hand's looped 8 looks like a 2); the key-blind file is kept. 14 cipher words contain a doubtful digit. 614 groups (161 distinct, strokes and ? marks set aside) in 60 rows; the clear date 1742 is not counted."
+   }
   }
  ],
  "system": {
@@ -173,7 +243,7 @@
   },
   "key_order": "random",
   "word_division": "none",
-  "notes": "Seed values read by eye only in the first build; the key was then rebuilt from the glossed despatch (235 confirmed values) and extended by 24 values from Lit. A's gloss. Key: key.tsv of this folder (as on origin/main 54c4ecc65), applied frozen and unchanged; key_1741.tsv adds 24 values read from the Lit. A gloss and corrects two single values of it (1504 vo, 1840 au)."
+  "notes": "Seed values read by eye only in the first build; the key was then rebuilt from the glossed despatch (235 confirmed values) and extended by 24 values from Lit. A's gloss. Key: key.tsv of this folder (as on origin/main 54c4ecc65), applied frozen and unchanged; key_1741.tsv adds 24 values read from the Lit. A gloss and corrects two single values of it (1504 vo, 1840 au). Lit. B (vol. I/9/29, catalogue 2242) is read with key_1741.tsv unchanged; it is Latin. 31 groups that are in neither key take a value guessed from sense there (46 places, each group with one value throughout; listed in NOTES.md); 1461 (fi) stands for ni twice and 1471 (ga) for Latin ia twice."
  },
  "conditions": {
   "prior_solution": {
@@ -188,7 +258,7 @@
    "cleartext context"
   ],
   "attack": "archive decipherment",
-  "human_role": "Daniel Bourdeau set the task for the despatch of 1740; WAINUT set the task for the 1741 pages (catalogue 2245-2248) and the rules; AI language-model agents transcribed, froze and applied the key, ran the held-out test, read and checked. No human palaeographer checked the text.",
+  "human_role": "Daniel Bourdeau set the task for the despatch of 1740; WAINUT set the task for the 1741 pages (catalogue 2245-2248) and the rules; AI language-model agents transcribed, froze and applied the key, ran the held-out test, read and checked. No human palaeographer checked the text. WAINUT set the task for Lit. B of vol. I/9/29 (catalogue 2242); AI language-model agents transcribed, read and checked it; no human Latinist checked the text.",
   "tools": [
    "Riksarkivet IIIF images",
    "scripts/build_key.py (hard-EM segmentation)",
@@ -200,7 +270,7 @@
    "AI language-model agents (WAINUT), viewing the images"
   ],
   "first_date": "2026-11-10",
-  "last_date": "2026-11-12"
+  "last_date": "2026-11-13"
  },
  "solution": [
   {
@@ -372,6 +442,134 @@
    ],
    "what": "Statistical validation (docs/_validate.py) of the two bare documents of 1741 with key_1741.tsv (scripts/validation_pairs_1741.py): 449 read tokens, 125 types, 828 letters, fr-1600-letters order 4: reading -1.952 per letter; random keys -3.483 (z 12.2); key annealed onto shuffled ciphertext best -2.328 (mean -2.357, z 18.0); annealer on the real text -2.285. Verdict: pass. The key was not fitted to these pages (frozen despatch key plus Lit. A's gloss values).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "Lit. B (catalogue 2242): Manifest of R0003653 and images 78-86 at 1600 px, images 81 and 82 at full size, from the Riksarkivet IIIF service, one at a time, 1.6 s apart.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "Lit. B: sign conventions written first (SIGN_CONVENTIONS_litB.md); images 81 right and 82 left transcribed twice on different crop grids, digits only; 2 disagreements in 494 groups settled on 2.5x crops.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Lit. B: the frozen key (key.tsv, sha256 c4e208fe...) applied unchanged (scripts/heldout_litB.py): 434 of 494 groups are in it; at 419 of them (96.5% of the known groups, 84.8% of all) its value is the one the reading uses; image 81 269 of 322, image 82 150 of 172; shuffled-key control mean 2.0, max 28 (500 shuffles). Not blind: the reading was made with the key in view.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Lit. B: decrypted mechanically with key_1741.tsv and read as Latin with every departure marked; scripts/check_marks_litB.py rebuilds the decryption and passes; an unmarked change fails it. Checker clean share 0.348 (8 of 23 sentences).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "literature search",
+   "what": "Lit. B: two web searches on 12 Nov 2026 (Ibrahim Efendi, Latin letter, Swedish envoy, Danube islands, Belgrade 1739; Ibrahim Efendi, Höpken, Carlson, boundary commission): background only, no edition of this letter.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Lit. B: blind review by an independent AI language-model agent: about 115 groups copied from the image before the transcription was opened, 2 disagreements (C10 g4 1624 -> 1024; B15 g16 1496 -> 1495?), both corrected; {ryska/rna} reclassed as a guess; scripts rerun: 169 words, 113 verbatim, 13 with a marked change, 40 guessed, 3 holes.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "Images 226-229 of R0003637 fetched from the Riksarkivet IIIF service at full size.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "Two passes, digits only, then the gloss read into gloss_khan1742.tsv before any decryption; disagreements settled on 1.4-1.5x crops and 3x zooms (transcription_khan1742_blind.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "key from source",
+   "what": "The frozen hopken1740 key (key_frozen.tsv, byte for byte targets/hopken1740/key_1741.tsv, 352 entries) applied unchanged; frozen before any group of these pages was decrypted (FROZEN.sha256).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Held-out test (scripts/heldout.py) of the frozen key against the contemporary gloss on the key-blind transcription: 487 of the 602 glossed groups give exactly the gloss letters at their place (81%; 88% of the 554 in the key); with the key's values shuffled, mean 63.2 and maximum 103 over 300 shuffles. Images 227 and 229 alone: 214 of 282 (shuffled maximum 50).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "Pass 3 after the first decryption: 23 groups on images 227 and 229 re-read as 8 (22 of them 2 -> 8, one 7 -> 8) on 1.6x row crops; the rule was added to SIGN_CONVENTIONS.md before image 228 was transcribed. 22 of the 256 cipher words rest on these re-reads.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Mechanical decryption, marked reading (scripts/check_marks.py passes, and fails on a tampered file), French reading and English translation. 256 cipher words: 205 verbatim from the frozen key, 23 repaired, 28 from the gloss only, 0 holes. docs/_check_reading.py: clean share 0.900 (27 of 30 sentences).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "key from source",
+   "what": "key.tsv = the frozen key plus 21 values read from this gloss (status gloss_1742) and one correction (1324 pp -> et, at four places).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "sibling key",
+   "what": "Image 482 (Carlson's despatch of 22 Sept 1742, three Swedish-glossed blocks and a Lit. A) looked at: groups run to 2959 and 'Castellane' is 1531 1733 1442 1034 1182, which the hopken1740 key does not give; a different code, not worked.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "literature search",
+   "what": "One web search (the Khan of Crimea's letter to the King of Sweden, 1742, Porte, secours, défensive): no edition or decipherment of this extract. A 2002 study of Crimean Tatar letters to Sweden (Pis'mennye pamyatniki Vostoka 8) was found and not opened; the Khan's original letter may survive among Riksarkivet's Turcica, not checked.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Blind review by an independent AI language-model agent that took no part in the solve: 96 groups in 8 rows (A05, A06, A09, A13 on image 227; C13, D11 on 228; B06, B12 on 229) copied from its own crops before it opened the transcription, with no disagreement beyond the documented 8/2 shape; FROZEN.sha256, decrypt.py, check_marks.py and heldout.py reproduced (100 shuffles: mean 62.8, maximum 103); the reading read as French sentences against the translation, grade A.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py) of the mechanical text with the frozen key (scripts/validation_pairs_1742.py; the 30 groups not in the frozen key left out): 584 tokens, 135 types, fr-1600-letters order 4: reading -2.075 per letter; random keys -3.633 (z 13.0); key annealed onto shuffled ciphertext best -2.453 (mean -2.467, z 47.8); annealer on the real text -2.388. Verdict: pass. The key was not fitted to these pages.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical check of the Khan's letter with the frozen key (docs/_validate.py on validation_khan1742.tsv, 30 groups not in the key left out): 584 read tokens, 135 types, fr-1600-letters, reading -2.075 per letter; random keys -3.633 (z 13.0); best key annealed onto shuffled text -2.453; verdict pass. A check of the reading, since the key was not built from these pages.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Integration check (13 Nov 2026) of PRs #503 and #506: the Khan's letter folded into this folder (key_frozen.tsv of hopken1742 = key_1741.tsv byte for byte; one key, one entry); check_marks (Khan: 256 words, 205 verbatim, 23 repaired, 28 gloss only; Lit. B: 169 words, 113 verbatim, 13 repaired, 40 guessed, 3 holes), held-out counts (487 of 602 against shuffled max 103; 419 of 494 against shuffled max 28) and the Khan validation re-run; own decoders written from the key reproduce the decryptions of both (60 rows and 30 rows). Images fetched from Riksarkivet IIIF: about 40 groups of rows on image 227 agree (looped 8 against looped 2 as noted) and 44 of 44 groups of B00, B01 and part of B02 on image 81 agree. Headline share unchanged by the strict rule: 301 of 386 words (78.0%) in the three bare documents; the Khan's letter is glossed and not counted. The 21 values of its gloss tried on the 1741 pages and Lit. B: three guessed places confirmed, four contradicted by 1286 Sa, not counted.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -423,9 +621,9 @@
    "historical consistency",
    "statistical test"
   ],
-  "fraction_read": 0.866,
+  "fraction_read": 0.78,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Strict count by the README read bar over the two bare documents of 1741 (scripts/check_marks.py with key_1741.tsv): words read verbatim from the signs, 79 of 94 (the Castellane letter) and 109 of 123 (the reply to the foot of image 50 left), 188 of 217 = 0.866; guesses, repairs and the one hole are not counted. The glossed documents are the key source and are not counted: the despatch of 1740 (3,411 of 3,450 groups, 98.9%, in confident words) and Lit. A (84 of 122 words from the frozen key, 35 from its gloss, 3 repaired).",
+  "fraction_read_source": "Strict count by the README read bar over the three bare documents (scripts/check_marks.py with key_1741.tsv; scripts/check_marks_litB.py for Lit. B): words read verbatim from the signs, 79 of 94 (the Castellane letter), 109 of 123 (the reply to the foot of image 50 left) and 113 of 169 (Lit. B of vol. I/9/29), 301 of 386 = 0.780; guesses, repairs and holes are not counted. The glossed documents are the key source and are not counted: the despatch of 1740 (3,411 of 3,450 groups, 98.9%, in confident words) and Lit. A (84 of 122 words from the frozen key, 35 from its gloss, 3 repaired).",
   "credits": [
    {
     "who": "contemporary",
@@ -483,11 +681,73 @@
     "role": "verification",
     "note": "one independent AI language-model agent: blind sign check of 92 groups on images 147, 49 and 50 and a reading of each text as sentences; no human palaeographer",
     "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "Lit. B of vol. I/9/29, images R0003653_00081 (right page) and _00082 (left page), two passes",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "Lit. B of vol. I/9/29 decrypted with key_1741.tsv unchanged and read in part as Latin",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "one independent AI language-model agent: blind sign check of about 115 groups on images 81 and 82 of I/9/29 (2 corrections made) and a reading of Lit. B as sentences; no human palaeographer",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "catalogue entry 2242 (Sweep D, Riksarkivet IIIF volume pass; vetting of 6 Nov 2026 naming the Lit. B pages 79-85)",
+    "date": "2026-11"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the French gloss written over the groups of images 227-229",
+    "date": "1742",
+    "source": "Riksarkivet R0003637_00227-00229"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the Swedish gloss of the despatch of 15/26 Jan 1740 and the French gloss of Lit. A 1741, through the hopken1740 key",
+    "source": "targets/hopken1740"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "images 227-229, two passes and a pass-3 re-read, digits and gloss",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "held-out test of the frozen hopken1740 key in a third volume; reading and translation; 21 values added from the gloss",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "one independent AI language-model agent: blind sign check of 96 groups in 8 rows on images 227-229, scripts re-run, and a reading of the text as sentences; no human palaeographer",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "catalogue entry 2244 (Sweep D, Riksarkivet IIIF volume pass) and the images it names",
+    "date": "2026-11"
    }
   ],
   "key_file": [
    "key.tsv",
-   "key_1741.tsv"
+   "key_1741.tsv",
+   "key_1742.tsv"
   ],
   "codes_open": {
    "open": 4,
@@ -541,6 +801,51 @@
     "item": "A human second reader",
     "blocker": "needs-physical-access",
     "detail": "Both passes of the 1741 transcription were by one AI agent and every reader so far was an AI agent; a blind AI review spot-checked 92 groups, the integration about 300, with no disagreement."
+   },
+   {
+    "item": "Lit. B: B09 pair 1673 1128 and groups 1463, 1909 unread",
+    "blocker": "open-codes",
+    "detail": "1673 (sla) and 1128 (ce) give no sense in B09 (perhaps 'nec', not adopted); [1463] in B17 and [1909] after the addressee's name in C10; one place each."
+   },
+   {
+    "item": "Lit. B: 40 words resting on guessed values",
+    "blocker": "open-codes",
+    "detail": "31 groups guessed from sense at 46 places (10 recur and hold at every place, 21 occur once), plus {ryska/?rna} in 'hesterna'. Dan's checker gives 0.348, under its 0.45 line, because each [?x] counts as a hole; the reviewer reads the letter as Latin sentences and grades it read in part (B). To be checked on a glossed page of this code before they enter a key."
+   },
+   {
+    "item": "Lit. B: the addressee 'A[h]me[t] [1909]' and the writer",
+    "blocker": "open-codes",
+    "detail": "Two letters of the name rest on guessed values (1640 h, 1632 t) and 1909 is unread; neither the writer nor the addressee is identified."
+   },
+   {
+    "item": "Lit. B: doubtful digits 1353?, 1495?, 1135?, 178?",
+    "blocker": "illegible",
+    "detail": "B15 g6, B15 g16 (corrected from 1496 after the review), C02 g15; B09 g18 has its last digit in a tear."
+   },
+   {
+    "item": "14 repairs against confirmed key values",
+    "blocker": "open-codes",
+    "detail": "some probably misread digits (1270, 1233, 1248, 1732, 1759, the five groups of 'frontières'), some possibly the encipherer's slips (1526, 1156, 1500 1500 1757); a blind second transcription would settle them"
+   },
+   {
+    "item": "1226 and 1224 read with two values each",
+    "blocker": "open-codes",
+    "detail": "2 occurrences each; one reading of each is probably a misread digit; not added to the key"
+   },
+   {
+    "item": "22 verbatim words rest on pass-3 re-reads (looped 8 or 2)",
+    "blocker": "illegible",
+    "detail": "the reviewer could not always tell this hand's looped 8 from a looped 2 on shape alone; the re-reads are plausible but key-assisted"
+   },
+   {
+    "item": "one agent made both transcription passes; no human second reader",
+    "blocker": "needs-physical-access",
+    "detail": "the blind review spot-checked 96 groups in 8 rows with no disagreement beyond the 8/2 shape"
+   },
+   {
+    "item": "Group 1286 (gloss Sa, Khan's letter) against the guesses V[otre] (reply, three places) and ig (Lit. B)",
+    "blocker": "open-codes",
+    "detail": "the guesses stay guesses; not confirmed by the new gloss value"
    }
   ],
   "texts": [
@@ -612,8 +917,44 @@
      "date": "2026-11-12",
      "note": "Read as French sentences against the translation: the four sentences hold to the break at the foot of the page; one group is unread and 10 words rest on marked context values."
     }
+   },
+   {
+    "doc": "litB_ibrahim",
+    "label": "Lit. B (duplicate copy), Latin letter signed Ibrahim Effendi, vol. I/9/29 images 81-82",
+    "transcription": "transcription_litB_all.txt",
+    "decryption": "decryption_litB.txt",
+    "reading": "reading_litB.md",
+    "translation": "translation_litB.md",
+    "language": "la",
+    "state": "read in part",
+    "summary": "Latin letter signed Ibrahim Effendi to an Excellency: he has explained again and again the boundaries to be marked and the law and custom for dividing the islands; the 'legatus Germaniae' (probably the Imperial envoy) was astonished and did not know what to answer; he expects him to stop disputing about the islands and to accept everything today or tomorrow; he was given leave to call on the addressee but was kept at the Porte all day and asks to be excused.",
+    "note": "169 cipher words: 113 verbatim from the signs (66.9%), 13 with a marked change of a key value (74.6% together), 40 resting on values guessed from sense, 3 holes ([1463], [1909], and one two-group word in B09). Two digits were corrected after the blind review (C10 g4 1024, B15 g16 1495?). Dan's checker: clean share 0.348 (8 of 23 sentences); its Latin word list lacks several ordinary words of this letter, see NOTES.md.",
+    "reading_review": {
+     "grade": "B",
+     "by": "independent AI language-model agent (blind review)",
+     "date": "2026-11-12",
+     "note": "Read as Latin sentences against the translation: real Latin chancery prose that follows through from the greeting to the address, with 3 true holes; many words rest on marked guessed values. About 115 groups were copied from the image blind; the 2 disagreements were corrected before sending."
+    }
+   },
+   {
+    "doc": "khan1742",
+    "label": "Lit. A: extract of the translation of the Khan of Crimea's letter to the King of Sweden, May 1742",
+    "transcription": "transcription_khan1742.txt",
+    "decryption": "decryption_khan1742.txt",
+    "reading": "reading_khan1742.md",
+    "translation": "translation_khan1742.md",
+    "language": "fr",
+    "state": "read",
+    "summary": "The Khan, after reaching the Porte, tells the King of Sweden that the delay in executing the Swedish-Ottoman defensive alliance comes only from the Porte's need to fortify its frontier with Persia; aid promised to friends is conditional, so aid to Sweden is difficult, but the Ottoman Empire values Sweden's friendship and will give all the aid it can in the present circumstances.",
+    "note": "256 cipher words: 205 verbatim from the frozen key (80.1%), 23 repaired, 28 from the gloss only, 0 holes; 22 of the verbatim words rest on a pass-3 digit re-read. Held-out: 487 of the 602 glossed groups match the gloss (81%; 88% of the 554 in the key; shuffled maximum 103 over 300 shuffles). Checker clean share 0.900 (reading, 27 of 30 sentences), 0.912 (translation). A contemporary decipherment checked against the key; the bare runs of the volume remain open.",
+    "reading_review": {
+     "grade": "A",
+     "by": "independent AI language-model agent (blind review)",
+     "date": "2026-11-12",
+     "note": "Read as French sentences against the translation: the whole extract reads, with no holes; 205 of 256 cipher words come verbatim from the frozen hopken1740 key, 23 with marked repairs and 28 from the contemporary gloss over groups the key lacks. 96 groups in 8 rows on all three images were spot-checked on the scans with no disagreement beyond the documented 8/2 shape."
+    }
    }
   ],
-  "notes": "Not part of this target and not worked: the rest of the Castellane exchange (right page of image 50, images 51-52, about 1,500 groups), other glossed or first-code pages of the volumes, a three-digit code, catalogue 2241, 2242, 2244 (see NOTES)."
+  "notes": "Not part of this target and not worked: the rest of the Castellane exchange (right page of image 50, images 51-52, about 1,500 groups), other glossed or first-code pages of the volumes, a three-digit code, catalogue 2241 and the rest of 2244 (volume I/9/28 beyond images 227-229; image 482 is in another code) (see NOTES). The Khan of Crimea's letter (images 227-229 of I/9/28) is a glossed page read from its contemporary gloss and tested on the frozen key (487 of 602 groups); like Lit. A it is not counted in fraction_read."
  }
 }

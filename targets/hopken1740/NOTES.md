@@ -1,4 +1,4 @@
-# Höpken and Carlson, Constantinople, 1740-1741: the second code, a despatch of 15/26 January 1740 and the French pages of 1741 (catalogue 1771 split, 2247, 2248)
+# Höpken and Carlson, Constantinople, 1740-1741: the second code, a despatch of 15/26 January 1740, the French pages of 1741 and a Latin letter signed Ibrahim Effendi (catalogue 1771 split, 2247, 2248, 2242, 2244)
 
 Read in part, 12 Nov 2026: the despatch of 1740 and Lit. A of 1741 are read from the contemporary glosses; the two bare French
 documents of 1741 are read in part with the key built from them. Written up on the site as hopken1740.html at the integration
@@ -11,8 +11,14 @@ because both apply this folder's `key.tsv` byte for byte (one key, one entry; se
 volume I/9/26 image 147 (a French memorandum of 1741 with a French gloss): the held-out test of this key in another volume,
 year and language, then read from its gloss. (3) A letter of the comte de Castellane and the start of Höpken and Carlson's reply,
 volume I/9/27 images 49 and 50 left (bare, no gloss), read in part with the key extended by 24 values and 2 corrections from
-Lit. A's gloss (`key_1741.tsv`). **Headline share: the two bare documents only, 188 of 217 words (86.6%)**; the glossed pages
-are where the key comes from and are not counted in it.
+Lit. A's gloss (`key_1741.tsv`). (4) Lit. B, volume I/9/29 images 81 right and 82 left (catalogue 2242, WAINUT, added
+12-13 Nov 2026): a bare cipher copy of a Latin letter signed "Ibrahim Effendi", read in part with `key_1741.tsv` unchanged
+(section "Lit. B of volume I/9/29" below). (5) The Khan of Crimea's letter to the King of Sweden, volume I/9/28 images 227-229
+(catalogue 2244, WAINUT, PR #503, filed first as `hopken1742` and folded in here at the integration of 13 Nov 2026: it applies
+`key_1741.tsv` byte for byte): a glossed French extract, read from its contemporary gloss and tested against the frozen key
+(section "The Khan of Crimea's letter" below); like Lit. A it is a glossed document and is not counted in the headline. **Headline share: the three bare documents only, 301 of 386 words (78.0%)**:
+188 of 217 (86.6%) for the two French documents of 1741 and 113 of 169 (66.9%) for Lit. B; the glossed pages are where
+the key comes from and are not counted in it.
 
 Riksarkivet, Diplomatica Turcica, SE/RA/2119/2119.1/I/9/21 (R0003582). Two copies of the same despatch, both marked
 duplicate, in the same encipherment: images 321-331 (the chancery decipherer struck the groups through and wrote the
@@ -118,7 +124,8 @@ original letter, and the reply as received, may survive in clear in the Nantes s
 - **I/9/27 (R0003636, Jul-Dec 1741, catalogue 2248).** Image 8: glossed Swedish runs. Images 49-52: the bare French
   copy of the exchange with Castellane, about 2,000 groups over seven pages; 49 and the left page of 50 worked
   (the Castellane exchange, below). Image 93: bare pages. Image 135: partly glossed.
-- Catalogue 2241, 2242, 2244 (volumes I/9/23, I/9/29, I/9/28) were not opened.
+- Catalogue 2241 and 2244 (volumes I/9/23, I/9/28) were not opened in this survey; 2242 (I/9/29) was opened later
+  for Lit. B (section "Lit. B of volume I/9/29" below).
 
 ## Method
 
@@ -198,6 +205,273 @@ generous conduct toward the interests of the Swedish court, announces a visit ne
 les intérêts présents de la Suède relatives à la Russie", and begins: in the critical situation of Sweden with Russia
 (Sweden had declared war in summer 1741), any accommodation between the Porte and Russia is ... (breaks off).
 
+## Lit. B of volume I/9/29 (catalogue 2242, WAINUT, 12 Nov 2026)
+
+Work of 12 Nov 2026 by AI language-model agents for WAINUT (no human palaeographer or Latinist). It uses this folder's
+keys unchanged, so it is filed here (one key, one entry). File names carry the suffix `_litB`.
+
+**Result: read in part.** A bare cipher copy of two pages (494 groups, 169 cipher words), decrypted with `key_1741.tsv`
+and read as Latin from the salutation to the address: 113 words verbatim from the signs (66.9%), 13 with a marked change
+(74.6% together), 40 resting on values guessed from sense, 3 holes. The other texts of this folder are Swedish and
+French; this one is Latin.
+
+### Document
+
+Riksarkivet, Diplomatica Turcica, SE/RA/2119/2119.1/I/9/29 (Beskickningshandlingar 1736-1746), image series R0003653.
+
+- Image 81, right page: headed "Doupplette" and "Lit. B"; a heading row (B00) and 18 rows of four-digit groups (B01-B18),
+  no gloss, no clear words. https://sok.riksarkivet.se/bildvisning/R0003653_00081
+- Image 82, left page: the verso of 81 right (the heading at its top is show-through of 81, mirrored); 11 rows (C01-C11),
+  ending with a flourish. https://sok.riksarkivet.se/bildvisning/R0003653_00082
+- IIIF: `https://lbiiif.riksarkivet.se/v3/arkis!R0003653_00081/full/max/0/default.jpg` (and `_00082`); manifest
+  `https://lbiiif.riksarkivet.se/arkis!R0003653/manifest`. Fetched one at a time, 1.6 s apart, User-Agent
+  WAINUT-research; no 429, no bot check. Scans are not in git.
+
+The cipher gives the signature "Ibrahim Effendi" (C08) and the address "Excellentissimo Domino Domino A[h]me[t] [1909],
+Domino nobis observantissimo" (C09-C11; two letters of the name rest on guessed values and group 1909 is unread). The
+pages carry no date; the volume runs 1736-1746, and the profile's year 1740 is an estimate from the subject (inferred). The catalogue entry (vetting of 6 Nov 2026) describes images 79-85 as French cipher; the text of
+81-82 is Latin.
+
+Content (translation_litB.md): the writer has explained again and again what the addressee told him about the boundaries
+to be marked and about the law and custom for dividing the islands; the "legatus Germaniae" (probably the Imperial
+envoy; inferred, the text gives only the title) was astonished and did not know what to answer; the writer expects him
+to stop disputing about the islands and to accept everything today or tomorrow, "because it cannot be otherwise"; he
+was given leave to call on the addressee but was summoned early and kept at the Porte until evening, and asks to be
+excused. If the islands are those of the Danube and Sava, this is the frontier settlement after the Treaty of Belgrade
+(1739); that is an inference and was not checked.
+
+### Key
+
+Both keys of this folder, unchanged: `key.tsv` (the frozen key: 328 entries, 329 lines with the header; sha256
+c4e208fe...8ef1ac, as in FROZEN.sha256) and `key_1741.tsv` (the work key: 352 entries, 353 lines; key.tsv plus 24 values
+and 2 corrections from the Lit. A gloss; sha256 865cbb5e...036d2d7e). No value was added to either file from Lit. B.
+
+Values proposed from sense for groups that are in neither key are written `[?x]` in the reading. 31 distinct groups
+are guessed, at 46 places; none of them is given two different values. Ten groups recur: 1773 qua (5 places: quae x2,
+qualis, quasi, quamprimum), 1186 quo (3: quod x3), 1103 um (3: iterum, desiderium, vacuum), 1452 io (2: responsio,
+responsionem), 1152 pt (2: acceptaverit, acceptare), 1462 spu (2: disputatio, disputabit), 1401 ip (2: ipsi, ipse),
+1306 o (2: debeo, maneo), 1632 t (2: dederant, A[h]met), 1056 mu (2: communicabo, quamprimum). 21 occur once: 1866 ne,
+1539 sue, 1547 stri, 1238 super, 1724 sci, 1261 de, 1530 ld, 178? tra (the last digit is in the torn edge; 1789 = tra in
+key_1741.tsv), 1307 ul, 1038 aver, 1406 se, 1885 no, 1353? me, 1619 jus, 1682 t, 1567 venia, 1286 ig, 1336 sca, 1468 gnu,
+1656 pri, 1640 h. One group that is in the key, 1067 (the word code ryska), is read as the syllable rna in "hesterna";
+the sense is sure but the value is a guess, marked `{ryska/?rna}` and counted as a guess.
+
+Marked changes of key values (13 words): 1461 fi read ni twice (Germaniae, omnia; fi is right in confiniis x2 and
+fieri; 1451 = ni, a 5/6 slip is possible); 1471 ga read ia twice (jam, licentiam; key_1741.tsv already records ja once
+for 1471); 1602 wa read ut; 1825 att read at (respondeat); 1128 ce read l (vel; 1128 = ce in every ex+ce+l+en+ti of this
+letter, so probably a slip of the encipherer); 1802 up read op (opus); 1834 ba read pe (vesperas); 1561 ge read to (toto); and three
+letters added with no group: {+di}xit, soe{+p}issime, {+i}d est. Two further changes sit in words counted under other
+headings: 1013 ma read ac in acceptaverit (counted as guessed; 1031 = ac, a transposition?), and the B09 pair
+`{sla/...} {ce/...}` (counted as a hole). The word code 1516 ottporten is
+rendered Porta and counted as verbatim, as in the 1741 pages.
+
+### Transcription
+
+SIGN_CONVENTIONS_litB.md was written before any digit was read. Each page was transcribed twice on different crop grids
+(pass 1: 4 bands x 2 halves at about 1x; pass 2: 3 bands x 3 columns at 1.25x), digits only, without the key.
+Disagreements: 2 in 494 groups (B15 g6 1353/1383 -> 1353?; C02 g15 1135/1136 -> 1135?), settled as far as possible on
+2.5x crops. B09 g18 is 178? (last digit in a tear). Caveats: one agent did both passes, so they are not fully
+independent; image 82 was transcribed after the decryption of image 81 had been seen.
+
+**Two groups corrected after the blind review** (both passes had the first reading; the reviewer read the image):
+
+- C10 g4: 1624 -> 1024. At 4x the second digit is a 0 with a short tail, without the tall looped ascender this hand
+  gives every 6 (1632 and 1764 in the same row). 1024 = mi, so "Domino" is now verbatim (it was the repair
+  `Do{puissance/mi}no`).
+- B15 g16: 1496 -> 1495?, kept doubtful. The last digit has the closed bowl and top flag of this hand's 5 (as in 1655'
+  of the same row). 1495 = ho (as in B13 "hodie"), so the word is now verbatim (it was the repair `{ha/ho}die`).
+
+Both corrections are noted in transcription_litB.txt and transcription_litB2.txt; the pass files are left as written.
+
+### Held-out figure
+
+There is no gloss on these pages, so no blind test is possible. What can be measured: the frozen key (`key.tsv`) was
+built from another volume and another language (the Swedish despatch, vol. I/9/21) and never saw these pages. Applied
+unchanged (`scripts/heldout_litB.py key.tsv transcription_litB_all.txt marked_litB.txt`), it knows 434 of the 494 groups,
+and at **419 of them its value is the one the Latin reading uses (96.5% of the groups it knows, 84.8% of all groups)**;
+with its values shuffled among its groups (500 shuffles) the same count has mean 2.0 and maximum 28. Per page: image 81,
+269 of 322 groups (83.5%; 95.7% of the 281 it knows; shuffled mean 1.3, maximum 21); image 82, 150 of 172 (87.2%; 98.0%
+of the 153 it knows; shuffled mean 0.7, maximum 8). This is a consistency figure, not a blind test: the reading was made
+with the key in view. In addition, five values that `key_1741.tsv` took from the Lit. A gloss (1175 qui, 1702 us, 1703 va,
+1283 lu, 1504 vo) occur 13 times here, and at 13 of the 13 places they give the value the Latin reading uses;
+`scripts/check_marks_litB.py` run against `key.tsv` instead of `key_1741.tsv` fails at exactly these 13 places.
+
+### Reading and word counts
+
+decryption_litB.txt is the mechanical decryption with key_1741.tsv (`scripts/decrypt_litB.py`). marked_litB.txt is the
+reading piece by piece; `scripts/check_marks_litB.py` rebuilds the decryption from transcription_litB_all.txt +
+key_1741.tsv and passes ("OK: no unmarked departure"); an unmarked change fails it (tested). reading_litB.md gives the
+Latin sentences with the marks, translation_litB.md the English with the same holes. The `_litB` scripts are copies of
+this folder's decrypt.py and check_marks.py with three additions, so that the existing scripts are left unchanged: a
+group with a lost digit (178?), `{x/...}` (key value gives no sense, counted as a hole) and `{x/?y}` (key value replaced
+by a guess, counted as a guess).
+
+| Page | Cipher words | Verbatim from key | Marked change | Guessed (context) | Holes |
+|---|---|---|---|---|---|
+| Image 81 right (B00-B18) | 112 | 69 (61.6%) | 11 | 30 | 2 |
+| Image 82 left (C01-C11) | 58 | 45 (77.6%) | 2 | 10 | 1 |
+| Lit. B, whole | 169 | 113 (66.9%) | 13 | 40 | 3 |
+
+One word ("Excellentiam", B18-C01) runs across the two pages and is counted on both in the per-page rows. 4 words contain
+a doubtful digit (1353?, 1135?, 178?, 1495?). The 3 holes are [1463] (B17), [1909] (C10) and one two-group word in B09.
+
+Dan's reading checker (`docs/_check_reading.py --file`, origin/main 65cdcd9d5, in a throwaway worktree removed after):
+reading_litB.md, language detected Latin, 23 sentences, 8 clean, **clean share 0.348**; translation_litB.md 25 sentences,
+22 clean, 0.88. This is below the checker's 0.45 line. Two diagnostics, not the submitted reading:
+`work/litB_reading_recurring_unmarked.txt` (the `[?]` mark dropped on the ten recurring guessed values, which hold at
+every place, and kept on the 21 single ones, as CONTRIBUTING.md allows) scores 0.391 (9 of 23); `work/litB_reading_unmarked.txt`
+(every mark dropped) scores 0.538. The submitted reading keeps all marks, because the recurring values are not confirmed
+by a contemporary text. The checker's Latin word list lacks several ordinary words of this letter (among them
+excellentiam, maneo, explicavi, respondebit, vesperas, obsequia), so it understates the reading; the state rests on the
+reviewer reading the sentences (below). We propose "read in part" because the verbatim share (66.9%) is far below 95%
+and 40 words rest on guessed values; the true holes are 3.
+
+### Independent review (12 Nov 2026)
+
+An AI language-model agent that took no part in the solve reviewed Lit. B blind. It copied seven rows from the image
+before opening the transcription (B05, B08, B12 and B15 on image 81; C06, C09 and the first part of C10 on image 82;
+about 115 groups): 2 disagreements, both corrected above (C10 g4, B15 g16); the other doubtful groups it met (B12 g18
+1401, B15 g6 1353?) agree. It reran decrypt, check_marks and heldout with the solver's results, confirmed that both
+keys are byte-identical to this folder's `key.tsv` and `key_1741.tsv`, and read reading_litB.md as Latin sentences
+against translation_litB.md: "real Latin chancery prose" that follows through from the greeting to the address; grade
+B, read in part. Of 10 units (greeting, 7 sentences, signature, address) it counts 9 clean if only true holes count,
+1 if every `[?x]` counts as a hole, and about 4 if the consistently recurring guesses are taken as read. Fixes made on
+its findings: the two digits above; `{ryska/rna}` reclassed as a guess (`{ryska/?rna}`); counts and the checker figure
+updated. Its other doubts are listed in the gaps below.
+
+### Prior art (checked 12 Nov 2026)
+
+Catalogue entry: known.py, DECODE (Nordic dump), Tomokiyo and Lasry, 4-6 Nov 2026, nothing found. Two web searches on
+12 Nov 2026 ("Ibrahim Efendi" Latin letter, Swedish envoy, Constantinople 1740, Danube islands, Belgrade treaty;
+"Ibrahim Efendi", Höpken, Carlson, boundary commission): background only, on the delimitation of the frontier across the
+Danube islands after the Treaty of Belgrade. No edition, printing or decipherment of this letter found.
+
+### Collision check
+
+12 Nov 2026 at the start and before finishing, and again on 13 Nov 2026 when packaging: origin/main and GitHub main
+65cdcd9d5 (12 Nov 21:56 UTC). targets/ has hopken1739 and hopken1740 only for this legation; no target, note or PR names
+catalogue 2242, Ibrahim Effendi or the Lit. B pages; R0003653 and I/9/29 occur only in the sweep and vetting files of
+research/ (sweep D, vetting n05). Open PRs (#391, #494-#500): none on Höpken or Diplomatica Turcica. No collision.
+
+### Files added for Lit. B
+
+SIGN_CONVENTIONS_litB.md; transcription_litB.txt (image 81, with _pass1 and _pass2), transcription_litB2.txt (image 82,
+with _pass1 and _pass2), transcription_litB_all.txt (both pages, the file the scripts use); decryption_litB.txt,
+marked_litB.txt, reading_litB.md, translation_litB.md; scripts/decrypt_litB.py, check_marks_litB.py, heldout_litB.py,
+pairs_litB.py; work/litB_reading_unmarked.txt and work/litB_reading_recurring_unmarked.txt (checker diagnostics).
+Rebuild from this folder (standard library only):
+
+    python scripts/decrypt_litB.py key_1741.tsv transcription_litB_all.txt decryption_litB.txt
+    python scripts/check_marks_litB.py key_1741.tsv transcription_litB_all.txt marked_litB.txt
+    python scripts/heldout_litB.py key.tsv transcription_litB_all.txt marked_litB.txt
+
+## The Khan of Crimea's letter, volume I/9/28 (catalogue 2244, WAINUT, PR #503)
+
+Work of 12 Nov 2026 by AI language-model agents for WAINUT (no human palaeographer). It was filed as `hopken1742` and folded
+into this folder at the integration of 13 Nov 2026, because its frozen key is `key_1741.tsv` of this folder byte for byte
+(sha256 865cbb5e...036d2d7e, recorded in FROZEN.sha256; one key, one entry). File names carry the suffix `_khan1742`; its
+working key is `key_1742.tsv`.
+In the moved files (decryption_khan1742.txt, marked_khan1742.txt, about_reading_khan1742.txt) the name `key_frozen.tsv` means
+`key_1741.tsv`; they are the contributor's files and are left as written.
+
+**Result: read from its contemporary gloss; not read from the key alone.** The document carries a French decipherment of the
+time over its groups, like Lit. A of 1741, so it is the key's test and a glossed page, not a bare document, and is not in the
+headline share. Against the frozen key alone: 256 cipher words, 205 verbatim (80.1%), 23 with a marked repair, 28 whose groups
+the frozen key lacks and which read only from the gloss, 0 holes (verbatim plus repaired 228, 89.1%).
+
+### Document
+
+Riksarkivet, Diplomatica Turcica, SE/RA/2119/2119.1/I/9/28, "Brev till kanslipresidenten, 1742" (R0003637), images 227, 228
+(an opened leaf, two pages on one image) and 229. Headed "Lit: A. Extrait de la Traduction de la Lettre du Chan de Crimée
+à Sa Majesté le Roy de Suede", endorsed "Bil. till Carlsons desp. till Kanslipr. d. 10/21 Maj 1742". 614 code groups (161
+distinct) in 60 cipher rows with clear French phrases between them; 602 groups stand under the gloss (row B07, 12 groups,
+has none). A contemporary hand struck the groups through and wrote the French over them. The extract ends "au commencement
+du mois de mai 1742". The Khan writes to the King of Sweden after his arrival at the Porte: the Swedish-Ottoman defensive
+alliance has not been carried out only because the Porte has to fortify its frontier with Persia; aid promised to friends
+depends on circumstances, so aid to Sweden is difficult; but the Empire values Sweden's friendship and will give "tout le
+secours qui peut dépendre d'elle dans les circonstances présentes". The war with Russia of 1741-43 is the probable
+background (inferred from the date; the letter names no war). Images:
+https://sok.riksarkivet.se/bildvisning/R0003637_00227 (_00228, _00229); IIIF
+`https://lbiiif.riksarkivet.se/v3/arkis!R0003637_00227/full/max/0/default.jpg`. No scans in git.
+
+### Key
+
+`key_1741.tsv` unchanged (352 entries); two groups above 1900 occur here, 1903 (Perse) and 1913 (Chan), word codes like 1902
+Tessin and 1915 Reis Effendi. Of the 161 distinct groups 135 are in the key (584 of 614 occurrences). `key_1742.tsv` is the
+working key (373 entries): the 352 plus 21 values from this gloss (1913 Chan, 1903 Perse, 1121 cri, 1428 mée, 1628 roy, 1126
+quo, 1286 Sa, 1336 sçau, 1239 vra, 1029 gu, 1564 ance, 1638 ns, 1727 ap, 1605 où, 1816 vent, 1522 t, 1407 faire, 1762 pa, 1174
+mo, 1261 de, 1281 de) and one correction (1324 pp to et, at four places). No value of `key_1741.tsv` changed.
+
+### Transcription
+
+SIGN_CONVENTIONS_khan1742.md first. Pass 1 on bands at 0.72-0.8x, pass 2 on half-width crops at 1.4-1.5x with 3x zooms, digits
+only, one agent for both (not fully independent); the gloss was in view but read afterwards (gloss_khan1742.tsv), before any
+decryption. `transcription_khan1742_blind.txt` is the key-blind reconciled text. **Pass 3 (after the first decryption, key-
+assisted):** this hand writes 8 with an open z-like top and a looped foot, so it looks like a looped 2; 23 groups on images 227
+and 229 whose value broke the sense were re-read as 8 (22 as 2 to 8, one 7 to 8; list in the header of
+transcription_khan1742.txt); the rule was added to the conventions before image 228 was transcribed. 22 of the 256 cipher
+words rest on one of these re-reads. 14 cipher words contain a doubtful digit.
+
+### Test (scripts/heldout.py, on the key-blind transcription)
+
+Each run is aligned to its gloss by dynamic programming. **487 of 602 glossed groups (81%) give exactly the letters of the
+gloss; 554 of them are in the key, so 88% of those known.** Shuffled keys (300): mean 63.2, maximum 103 (the integration, 100
+shuffles: mean 62.8, maximum 103). Images 227 and 229 only (before the 8 rule): 214 of 282 (76%), shuffled mean 29.0, maximum
+50. On the pass-3 text 507 of 602 (84%), not held out. This is the second test of the frozen key outside volume I/9/21, after
+Lit. A (222 of 282). Statistical check (docs/_validate.py on validation_khan1742.tsv, scripts/validation_pairs_khan1742.py;
+the 30 groups not in the frozen key left out): 584 read tokens, 135 types, fr-1600-letters, reading -2.075 per letter,
+random keys -3.633 (z 13.0), best key annealed onto shuffled text -2.453; verdict pass (reproduced at the integration).
+
+### Reading and counts
+
+decryption_khan1742.txt (scripts/decrypt.py), marked_khan1742.txt (scripts/check_marks.py with key_1741.tsv: no unmarked
+departure), reading_khan1742.md (French), translation_khan1742.md, about_reading_khan1742.txt (where the cipher and the gloss
+differ). Strict counts: 256 cipher words; 205 verbatim from the key (80.1%); 23 repaired; 28 gloss only; 0 holes. Clear words
+between the groups are not counted. Dan's checker: reading_khan1742.md clean share 0.900 (27 of 30 sentences; the misses are
+period spellings), translation 0.912. An AI reader graded the reading A (all five paragraphs hold) on the contemporary gloss.
+
+Independent review (12 Nov 2026, AI agent): copied 96 groups of 8 rows (A05, A06, A09, A13, C13, D11, B06, B12) from its own
+crops before opening the transcription: every group agrees; the ambiguity it met is the looped 8 against the looped 2, whose
+pass-3 re-reads it judged plausible but key-assisted. It re-ran decrypt.py, check_marks.py, heldout.py and found no reference
+to R0003637 or Crimea elsewhere in this folder.
+
+### Open pieces of this document
+
+- 14 repairs against confirmed key values are not settled (some probably misread digits: 1270 el for "fâ", 1233 i for "pe"
+  and "pi", 1248 m for "té", 1732 gli for "f", 1759 ga for "nt", the five groups of "frontières"; others the encipherer's
+  slips: 1526 negociation for "sion", 1156 re for "im", 1500 1500 1757 for "avons") - blocker: open-codes.
+- Group 1226 (2 places) is read with two values ("V" of "V. M." from the gloss, "comm" in the last lines); 1224 is "is" in one
+  place and "x" in another; neither is in the key - blocker: open-codes.
+- 22 verbatim words rest on pass-3 re-reads of the looped 8 - blocker: illegible.
+- One agent made both passes and every reader was an AI agent - blocker: needs-physical-access.
+
+### Not part of this document
+
+The rest of catalogue 2244 (the bare runs at images 198, 246, 342 and others in the catalogue's sample, glossed passages at
+29, 86, 114, 397, 539) was not opened in this round. Image 482 (Carlson's despatch of 22 Sept 1742, three Swedish-glossed
+blocks, and a "Lit. A" on Lanmary's letter to Castellane) is in another code: its groups run to 2959 and "Castellane" is 1531
+1733 1442 1034 1182, which this key does not give. The Khan's original letter, in Turkish or Tatar, may survive among the
+Turcica in Riksarkivet (a possible crib for the sense; not checked); a 2002 study of Crimean Tatar letters to Sweden (Pis'mennye
+pamyatniki Vostoka 8) was noted and not opened.
+
+### Prior art and collision (12-13 Nov 2026)
+
+Catalogue entry of 4 Nov: known.py, DECODE (Nordic dump), Tomokiyo and web searches, nothing. One web search of 12 Nov (the
+Khan's letter to the King of Sweden, 1742, Porte, secours, défensive): no edition or decipherment. targets/ had only
+hopken1739 and hopken1740 for Höpken (13 Nov, origin/main 65cdcd9d5); no PR or issue on Höpken, Crimea, Khan, Carlson,
+R0003637 or 2244 except the merged #236, #300, #458, #459 and Dan's #379.
+
+### Files added for the Khan's letter
+
+SIGN_CONVENTIONS_khan1742.md; transcription_khan1742.txt (pass 3), _pass1, _pass2, _blind; gloss_khan1742.tsv;
+decryption_khan1742.txt; marked_khan1742.txt; reading_khan1742.md; translation_khan1742.md; about_reading_khan1742.txt;
+key_1742.tsv; validation_khan1742.tsv; scripts/validation_pairs_khan1742.py (the decrypt, check_marks and heldout scripts
+were identical to this folder's). Rebuild from this folder (standard library only):
+
+    python scripts/decrypt.py key_1741.tsv transcription_khan1742.txt decryption_khan1742.txt
+    python scripts/check_marks.py key_1741.tsv transcription_khan1742.txt marked_khan1742.txt
+    python scripts/heldout.py key_1741.tsv transcription_khan1742_blind.txt gloss_khan1742.tsv 300
+
 ## Remaining gaps
 
 - 7 words with a value conflict (322 r15 i, 324 l01 Ryska gränsen, 325 l14 bewijs, 326 l01 slutande, 328 r08 försäkra, 328 l09 aldrahögstes, 328 l18 allernådigst) - blocker: open-codes; both copies agree on the digits, the word reads from the gloss, probably slips of the encipherer or a homophone not separated
@@ -218,19 +492,30 @@ les intérêts présents de la Suède relatives à la Russie", and begins: in th
   1613 or 1633); 147 H11 1678?, H16 1442? (a figure written below). Kept doubtful on 2x crops.
 - Castellane's side of the exchange in the French archives (Nantes, Constantinople embassy series: his correspondence of 1740-47 is listed in the inventory) - blocker: needs-physical-access; the clear originals, if they survive, would be a crib; not searched beyond the inventory entry.
 - A human second reader of the digits and the French - blocker: needs-physical-access; both passes of the 1741 transcription were by one agent and every reader so far was an AI agent; the blind review spot-checked 92 groups on images 147, 49 and 50 and the integration about 300, with no disagreement.
+- Lit. B, B09: two groups, 1673 (sla, a single value in the key) and 1128 (ce), give no sense ("..., [...] de confiniis"); perhaps "nec", not adopted - blocker: open-codes
+- Lit. B, [1463] (B17, "licentiam [1463] hesterna die") and [1909] (C10, after the addressee's name, perhaps a title or a name code) unread - blocker: open-codes; one place each
+- Lit. B, the 40 words resting on guessed values - blocker: open-codes; 31 groups guessed from sense at 46 places (10 groups recur and hold at every place, 21 occur once); single guesses carry content ([?super], [?de], [?me] [?jus]sit, [?venia]m, [?aver]); `{ryska/?rna}` in "hesterna" (sense sure, value guessed); they should be checked against a glossed page of this code before they enter a key. Dan's checker gives 0.348, under its 0.45 line, because each `[?x]` counts as a hole; the reviewer reads the letter as Latin sentences and grades it read in part (B)
+- Lit. B, `ve{ce/l}` (B13) goes against a firm key value (1128 = ce in every ex+ce+l+en+ti of the letter) - blocker: open-codes; probably a slip of the encipherer, marked
+- Lit. B, the addressee "A[h]me[t] [1909]" - blocker: open-codes; two letters rest on guessed values (1640 h; 1632 t, which also gives "dederant") and 1909 is unread. Who the writer and the addressee are is not established, and no identification is proposed
+- Lit. B, doubtful digits - blocker: illegible; B15 g6 1353? (3 or 8), B15 g16 1495? (5 or 6, corrected from 1496 after the review), C02 g15 1135? (5 or 6), B09 g18 178? (last digit in a tear)
+- Khan's letter (I/9/28 images 227-229): 14 repairs against confirmed key values are not settled (probably misread digits: 1270, 1233, 1248, 1732, 1759 and the five groups of "frontières"; or the encipherer's slips: 1526, 1156, 1500 1500 1757) - blocker: open-codes
+- Khan's letter: group 1226 is read with two values ("V" of "V. M." from the gloss, "comm" in the last lines) and 1224 as "is" and "x"; neither is in the key - blocker: open-codes
+- Khan's letter: 22 verbatim words rest on pass-3 re-reads of the looped 8 (key-assisted), which a reader could not always tell from a looped 2 - blocker: illegible
+- Khan's letter: one agent made both passes, every reader so far was an AI agent - blocker: needs-physical-access
+- Group 1286 (gloss Sa in the Khan's letter, one place) disagrees with the sense guess V[otre] at three places of the reply (M02, M08, M15, each before a point and 1465) and with the Lit. B guess [?ig] (C04): the guesses stay guesses and the 1286 of the reply is not confirmed - blocker: open-codes
 
 ## Not part of this target (not worked)
 
-The following were surveyed or left aside and are not unread pieces of the documents above: the rest of the Castellane exchange (the right page of image 50, images 51 and 52, about 1,500 bare groups in the same code; the reply read here breaks off at the foot of the left page, and the remainder is a document of its own that is not transcribed); the first-code pages of I/9/24 (images 40, 106 glossed, 139 bare; image 40 would be a held-out page for the hopken1739 key) and the glossed second-code runs of I/9/25-27 (images 8, 54, 100, 240, 286, 329, 135), which are the material that would confirm the context values above; the three-digit number code of I/9/25 image 99 (a different system); the continuation of Lit. A beyond image 147; catalogue 2241, 2242 and 2244 (volumes not opened).
+The following were surveyed or left aside and are not unread pieces of the documents above: the rest of the Castellane exchange (the right page of image 50, images 51 and 52, about 1,500 bare groups in the same code; the reply read here breaks off at the foot of the left page, and the remainder is a document of its own that is not transcribed); the first-code pages of I/9/24 (images 40, 106 glossed, 139 bare; image 40 would be a held-out page for the hopken1739 key) and the glossed second-code runs of I/9/25-27 (images 8, 54, 100, 240, 286, 329, 135), which are the material that would confirm the context values above; the three-digit number code of I/9/25 image 99 (a different system); the continuation of Lit. A beyond image 147; catalogue 2241 (volume I/9/23, not opened) and the rest of 2244 (volume I/9/28 beyond images 227-229: bare runs at 198, 246, 342 and others, glossed passages at 29, 86, 114, 397, 539, not opened; image 482 is in another code); in I/9/29 (catalogue 2242), the pages around Lit. B: images 78-80 (French cipher with clear words; image 79 right headed "2. Lit. [?]"), 82 right (headed "Doublette") and 83-85 (further bare pages), none transcribed, and image 56 (a small-number cipher with a Swedish gloss, another system), not worked. The original (non-duplicate) copy of Lit. B, and any Lit. A beside it, was not looked for beyond images 78-86 of I/9/29; a second copy would be a separate witness that could settle the doubtful digits of Lit. B.
 
 ## Escalation
 
-- [x] siblings: the leaves before and after the despatch opened, its second copy (332-342) used as a control; the four volumes named by catalogue 2245-2248 paged at 1200 px, and the glossed Lit. A page of I/9/26 used as held-out test and key extension for the bare pages of I/9/27
-- [x] clear-pages: the gloss is the decipherment on the despatch and on Lit. A; images 49-50 checked for a gloss or a clear copy (none)
-- [x] known-keys: not the hopken1739 code (values clash; recognised on I/9/24 but not applied); the stade1710 key does not fit; this folder's key applied frozen to the 1741 pages
-- [x] print: web searches of 10-12 Nov 2026, repeated at the integration (Castellane, Höpken, Carlson, the congress): no edition or decipherment; the Nantes inventory lists Castellane's correspondence of 1740-47, which was not opened
+- [x] siblings: images 78-86 of I/9/29 paged at 1600 px around Lit. B (listed under "Not part of this target"); the leaves before and after the despatch opened, its second copy (332-342) used as a control; the four volumes named by catalogue 2245-2248 paged at 1200 px, and the glossed Lit. A page of I/9/26 used as held-out test and key extension for the bare pages of I/9/27
+- [x] clear-pages: the gloss is the decipherment on the despatch, on Lit. A and on the Khan's letter (images 227-229 of I/9/28); images 49-50 checked for a gloss or a clear copy (none)
+- [x] known-keys: Lit. B read with this folder's key_1741.tsv unchanged, frozen key.tsv held out (419 of 494 groups); not the hopken1739 code (values clash; recognised on I/9/24 but not applied); the stade1710 key does not fit; this folder's key applied frozen to the 1741 pages
+- [x] print: two web searches of 12 Nov 2026 for Lit. B (Ibrahim Efendi, the islands, the Belgrade frontier): no edition; web searches of 10-12 Nov 2026, repeated at the integration (Castellane, Höpken, Carlson, the congress): no edition or decipherment; the Nantes inventory lists Castellane's correspondence of 1740-47, which was not opened
 - [x] key-rebuild: the despatch's key frozen and tested (235 confirmed values) and extended by 26 values from Lit. A's gloss; for the 1741 bare pages the remaining context values rest on the sense (listed in the gaps, open-codes); the glossed runs that could confirm them are outside this target (above)
-- [x] retry: the despatch's doubtful lines rechecked twice (11 remain); 1515 and the doubtful digits of the 1741 pages retried on 2x crops (kept doubtful), and about 300 groups of images 49 and 147 compared again at the integration
+- [x] retry: the despatch's doubtful lines rechecked twice (11 remain); 1515 and the doubtful digits of the 1741 pages retried on 2x crops (kept doubtful), and about 300 groups of images 49 and 147 compared again at the integration; 13 Nov 2026: the 21 values of the Khan's letter gloss (key_1742.tsv) tried on the guessed groups of the 1741 pages and Lit. B: 1605 où (two places: the Castellane letter and the reply) and 1261 de (Lit. B B08) agree with the guesses, 1336 sçau does not fix Lit. B's guess sca, 1286 Sa disagrees with the guesses V and ig (see the gaps); none of this was counted, the figures keep the frozen key_1741.tsv
 
 
 ## Image sources
@@ -295,3 +580,28 @@ Done by the integrating session, not by the contributor.
   Swedish despatch and of Lit. A, then applied to bare pages). Outcome.key is partial (16 context-only groups in the letter and reply).
 - The two independent-review paragraphs above are the contributor's. The claims review of the page was done line by line by the
   integrating session; an independent reader is owed.
+
+## Integration check (13 Nov 2026, PRs #503 and #506)
+
+Done by the integrating session after an independent verification (report R7_north). Contributed by WAINUT.
+
+- **Khan's letter folded in.** `hopken1742` (PR #503) used `key_1741.tsv` byte for byte (cmp, sha256 865cbb5e...): one key, one
+  entry, so its files were moved here (suffix `_khan1742`, working key `key_1742.tsv`) and its folder removed. Reproduced:
+  check_marks (256 cipher words, 205 verbatim, 23 repaired, 28 gloss only, 0 holes), the held-out count (487 of 602 groups,
+  shuffled mean 62.8, maximum 103 over 100 shuffles), the statistical check (584 tokens, z 13.0, pass). An own decoder written
+  from the key and the transcription gives the decryption of all 60 rows. About 40 groups of rows on image 227 compared with
+  the image (Riksarkivet IIIF, no bot check): agree, with the looped 8 against the looped 2 ambiguity as noted (e.g. 1402 or
+  1408 at the end of the first run of A04: the image alone does not settle it).
+- **Lit. B (PR #506).** Reproduced: check_marks_litB (169 cipher words, 113 verbatim, 13 repaired, 40 guessed, 3 holes), the
+  consistency figure (419 of 494, shuffled mean 2.0, maximum 28), own decoder identical on all 30 rows. 44 groups of rows B00,
+  B01 and the start of B02 of image 81 compared with the image: 44 of 44 agree. Not compared: the rest of image 81 and image 82.
+- **Counts.** Headline share (strict, the contributor's own): the three bare documents, 301 of 386 words (78.0%): the Castellane
+  letter 79 of 94 (84.0%), the reply 109 of 123 (88.6%), Lit. B 113 of 169 (66.9%). The pooled figure mixes French and Latin and
+  three documents of different quality: the page gives the three figures. The Khan's letter and Lit. A are glossed pages and
+  are not counted in it. Class read in part (all three below 95%).
+- **Gaps.** Several gaps are `open-codes` (guessed values that a glossed page of this code could confirm), which keeps this
+  target on the audit's list of workable partials; a retry with the 21 values of the Khan's gloss confirmed three guessed
+  places and contradicted four (see Remaining gaps), not counted. The page existed before this round and stays; the
+  blockers are the same kind as before, so `Status: in progress` was not set.
+- **Stale sentences** of docs/hopken1740.html fixed: headline share and extent, "two bare documents", "four documents",
+  "catalogue 2241, 2242 and 2244 were not opened", the glance box, the counts section and the sources.

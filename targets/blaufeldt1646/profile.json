@@ -1,0 +1,304 @@
+{
+ "schema_version": 1,
+ "target": "blaufeldt1646",
+ "title": "Writer signing in cipher \"Blaufeldt\" to Ottavio Piccolomini, Giessen, [February?] 1646 (catalogue 2355): key rebuilt from the glosses of a sibling letter, tested on held-out cipher; inv. 24854 read in part and the cipher signature read",
+ "documents": [
+  {
+   "id": "24854",
+   "read": "read in part",
+   "shelfmark": "SOA Zámrsk, Rodinný archiv Piccolominiů (Náchod), inv. č. 24854 (microfilm frame labelled \"31/2\")",
+   "date": "[February?] 1646 (siblings dated 5 and 9 February 1646; the date line of 24854 is in cipher and only partly read)",
+   "year": 1646,
+   "country": "Germany",
+   "route": "writer signing \"Devotissimo Servidore\" + cipher signature (read Blaufeldt), Giessen -> Ottavio Piccolomini",
+   "places": {
+    "from": "Giessen",
+    "to": "not stated"
+   },
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Bare cipher: no gloss on the photograph. The same writer's letters inv. 24852 and 24853 (same cipher signature, February 1646) carry a contemporary interlinear decipherment; they gave the key and the held-out test."
+   },
+   "length": {
+    "tokens": 123,
+    "distinct": 26,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_24854.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Vlnas 2017, appendix zip P_lohy_A_a_B.zip (theses.cz/id/p3p2kb), frame 24854.jpg: a photograph of the microfilm frame, rotated and soft",
+    "image_quality": "poor",
+    "notes": "Two passes by shape from separate crops before the key was applied to this frame, reconciled on 3x-4x crops; not blind to the alphabet, which was being built from 24852 at the same time. Unsettled groups are '?'. Independent blind check of 68 groups on 7 runs: 63 agree, 1 differs (L4, 30? or 80, already marked doubtful), 4 not settled by the reviewer. After the review the plain words 'ogni fatica' (L5) are marked [?ogni] [?fatica]."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Substitution in two-figure groups, one letter each, main alphabet 10-33 (a30 b31 c32 d33 e15 f16 g17 h18 i25 l27 m28 n29 o20 p21 q22 r23 s24 t19 u10 z14), homophones in the 40-80 range (40 a, 44 n, 46 f, 52 c, 63 l, 64 m, 74 s attested), a bar over a group doubles the letter; code groups written apart (77 gente, 88 S.A.). The signature is in the same cipher.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 29,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 2,
+   "kinds": [
+    "titles",
+    "common words"
+   ],
+   "unread_groups": 6
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "alphabetical",
+  "word_division": "none",
+  "notes": "distinct_symbols counts the 29 tokens of key_frozen.tsv (27 letter groups, 2 code groups). unread_groups: six groups on 24854 (50, 60, 70, 73, 80, 86) have no glossed value; the reading gives them values from sense as marked repairs. length counts the two-figure groups of the cipher lines ('?' included, plain script not counted)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "The contemporary interlinear decipherments of the sibling letters inv. 24852 and 24853 on the same microfilm. Vlnas 2017 lists 24854 as B20 in appendix B (not deciphered). No edition found (catalogue checks 6 Nov 2026; web and repo checked 12 Nov 2026).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "human_role": "WAINUT set the task (catalogue 2355) and the rules; AI language-model agents transcribed, built and froze the key, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "photographs in the appendix of Vlnas 2017",
+   "scripts in this folder (crops, mechanical decryption, mark check and word count, glossed-pair and held-out check)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-12",
+  "last_date": "2026-11-12"
+ },
+ "solution": [
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "Frames 24852, 24852_1, 24853, 24853_1, 24853_2, 24854 taken from the appendix zip of Vlnas 2017, already extracted on 12 Nov 2026 for catalogue 2356.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "key from source",
+   "what": "Key built from 20 glossed words of 24852 (pairs.tsv, 131 groups) and frozen in key_frozen.tsv.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Frozen key applied to 11 glossed words of the held-out sibling 24853: 72 of 72 groups with a value give the gloss letter, 0 wrong; 7 groups are homophones not in the 24852 key; 6 of 11 words letter for letter. Small; the gloss was visible on the crops.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "24854 transcribed twice by shape from separate crops and reconciled on the image.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "24854 decrypted with the frozen key and read with every departure marked; scripts/check_marks.py passes. 24 cipher words: 15 verbatim, 6 repaired (unglossed groups given the value the sense needs), 3 holes. Dan's reading checker on the Italian running text: clean share 0.714 (5 of 7 sentences) before the review. The cipher signature reads Blaufeldt with glossed values; the person is not identified.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "what": "Independent blind review by a separate AI language-model agent: own crops, 68 groups on 7 runs copied before the transcription was opened (63 agree, 1 differs: L4 30? or 80, already marked doubtful; 4 not settled by the reviewer); own decryptor from key_frozen.tsv gives the same text; held-out 72 of 72 reproduced; reading checked as sentences against the translation. State read in part agreed, grade B.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "After the review the plain words 'ogni fatica' in L5 are marked doubtful ([?ogni] [?fatica]); cipher-word count unchanged (24 words, 15 verbatim). Dan's reading checker on the Italian running text: clean share 0.571 (4 of 7 sentences).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 109 tokens, 30 types, it-cinquecento order 4: reading -2.082 per letter; random keys -4.386 (z 4.9); key annealed onto shuffled ciphertext best -2.361 (mean -2.463, z 5.9); annealer on the real text -2.264. Verdict: weak.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Integration check (13 Nov 2026): check_marks.py (decryption rebuilt identical; 24 cipher words, 15 verbatim, 6 repaired, 3 holes) and check_pairs.py (72 of 72 held-out groups) re-run; own decoder written from key_frozen.tsv reproduces decryption_24854.txt line by line. Strict count confirmed: 15 of 24 cipher words (62.5%), the contributor's own figure; read in part. The key shares no value with frankenthal1646 (1 of 23 shared group numbers agree), piccolomini1646 or claudiamedici1646. Transcription compared with the photograph for the first time by the integrating session: the appendix zip of Vlnas 2017 was fetched from theses.cz with a cookie jar (first request, wait, second request passes the proof-of-work page); about 45 groups of lines 1-5 agree, the end of difficolta (30?/80/15) and one 86/56 look-alike stay unsettled; the date line and the foot line were not compared. Order of the freeze rests on the contributor's record (one commit).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-13",
+   "model": "it-cinquecento",
+   "file": "validation.tsv",
+   "tokens": 109,
+   "types": 30,
+   "tokens_per_type": 3.63,
+   "score": -2.082,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -4.386,
+     "sd": 0.474,
+     "max": -3.327,
+     "z": 4.9,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -2.463,
+     "sd": 0.065,
+     "max": -2.361,
+     "z": 5.9,
+     "p": 0.1429
+    }
+   },
+   "power": -2.264,
+   "verdict": "weak",
+   "notes": "claimed per-occurrence score -2.014; polyphony 0.009; 14 unread tokens left out; annealer on the real text from random keys reached -2.264"
+  },
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Key built from the contemporary interlinear decipherment of the sibling letter 24852 (same writer and cipher signature, February 1646), frozen and tested on the held-out glossed sibling 24853, then applied unchanged to the bare letter 24854. The key is partial for this letter: six groups (50, 60, 70, 73, 80, 86) have no value in the glosses and carry the letter the sense needs.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.625,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "scripts/reading.py check: 15 of 24 cipher words read verbatim from the signs with glossed values; repaired words and holes not counted.",
+  "verification": [
+   "independent verification",
+   "contemporary decipherment",
+   "matched control",
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the interlinear decipherment of 24852 gave the key (pairs.tsv); that of 24853 the held-out test",
+    "date": "1646",
+    "source": "Vlnas 2017 appendix photographs, frames 24852.jpg, 24852_1.jpg, 24853.jpg, 24853_1.jpg"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "key rebuilt from the glossed sibling, frozen and tested on held-out cipher; 24854 read in part, cipher signature read",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "24854 in full, 20 glossed words of 24852 and 11 held-out words of 24853, from the Vlnas 2017 photographs",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "one independent AI reader: blind sign check of 68 groups on 7 runs and a reading of the text as sentences against the translation; no human palaeographer",
+    "date": "2026-11-12"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "24854",
+    "label": "inv. 24854, Giessen, [February?] 1646",
+    "state": "read in part",
+    "language": "it",
+    "summary": "The writer reports that he [?left] Giessen that night (the verb is a guess over unsettled signs) with a good resolution; he was delayed by high waters and by the difficulty of settling the business, and hopes to see the addressee (Piccolomini, by the archive) soon. Signed in cipher: Blaufeldt.",
+    "transcription": "transcription_24854.txt",
+    "decryption": "decryption_24854.txt",
+    "reading": "reading_24854.md",
+    "translation": "translation_24854.md",
+    "read_share": 0.625,
+    "note": "Cipher words 24 (no code groups on this letter): 15 verbatim from the signs with glossed values (62.5%); 6 with a marked repair (six unglossed groups 50, 60, 70, 73, 80, 86 given the value the sense needs, one word also with 23 read where c is needed); 0 doubtful only; 3 holes ([?partito], the day and [?febraro] of the date line). The plain words 'ogni fatica' (L5) are doubtful and marked; plain script is not counted.",
+    "reading_review": {
+     "grade": "B",
+     "by": "independent AI language-model agent (blind review)",
+     "date": "2026-11-12",
+     "note": "Read as Italian sentences against the English translation; a blind sign check of 68 groups on 7 runs agreed on 63, differed on 1 already marked doubtful (L4, 30? or 80) and left 4 unsettled, and check_marks.py passes. Grade B, not A: six unglossed groups carry values from sense, one 23 (r) stands where 'difficolta' needs c, there are three holes, and the plain words 'ogni fatica' (L5) are doubtful, now marked, which lowers the clean share from 0.714 to 0.571 (4 of 7 sentences)."
+    }
+   }
+  ],
+  "key_file": "key_frozen.tsv",
+  "gaps": [
+   {
+    "item": "24854 L1 group 50 ('notte') and '[?partito]'",
+    "blocker": "illegible",
+    "detail": "50 is unglossed (read e from sense); of the seven groups of the verb only a, r and the final o are settled; 'partito' is a guess counted as a hole."
+   },
+   {
+    "item": "Unglossed groups 50, 60, 70, 73, 80, 86",
+    "blocker": "too-short",
+    "detail": "No gloss on 24852 or 24853 attests them; the reading gives each the value the sense needs (marked repairs). Further homophones of the 40-80 range or misread figures of a soft photograph."
+   },
+   {
+    "item": "24854 L4 'difficolta'",
+    "blocker": "illegible",
+    "detail": "The 5th group reads 23 (r) where c is needed (slip or misread figure, marked repair); the last group is 30? (a) in the transcription and 80 to the reviewer."
+   },
+   {
+    "item": "24854 L5 plain words 'ogni fatica'",
+    "blocker": "illegible",
+    "detail": "Not certain on the photograph; the reviewer saw perhaps '[d]ifficolta'. Marked [?ogni] [?fatica]."
+   },
+   {
+    "item": "24854 L8 date line",
+    "blocker": "illegible",
+    "detail": "First group under an ink blot; the groups after 'feb' not settled; 'febraro' a guess from the siblings."
+   },
+   {
+    "item": "Key rows from 24853",
+    "blocker": "too-short",
+    "detail": "10 rows (q, seven homophones, two codes) added after the held-out test; 22, 44 and 74 occur on 24854 and are not covered by the test."
+   },
+   {
+    "item": "The writer",
+    "blocker": "no-key-material",
+    "detail": "The signature reads Blaufeldt with glossed values; no gloss spells the name and quick searches (12 Nov 2026) found no such person at Giessen or near Piccolomini in 1646; possibly a cover name."
+   },
+   {
+    "item": "Human check and a clean image",
+    "blocker": "needs-physical-access",
+    "detail": "One blind AI reviewer compared 68 of the 123 groups; no human palaeographer checked any sign. A clean scan of inv. 24852-24854 from SOA Zámrsk (not ordered) would settle most holes."
+   }
+  ],
+  "codes_open": {
+   "open": 0,
+   "total": 0,
+   "tokens_open": 0
+  }
+ }
+}

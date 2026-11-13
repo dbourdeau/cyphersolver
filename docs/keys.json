@@ -5045,14 +5045,6 @@
    "note": "Four alphabetical runs of numbers, most letters with two numbers, six null numbers, a three-digit nomenclator; built from 82 gloss pairs of two letters of 1648, frozen, 23 of 25 numbers of a third glossed letter right; 11, 12 and 13 have no value."
   },
   {
-   "id": "k-hopken1740",
-   "label": "Second Höpken-Carlson code (four-digit groups, 1006-1915), code list rebuilt from the glossed despatch of 15/26 Jan 1740",
-   "kind": "rebuilt here",
-   "by": "Daniel Bourdeau's project, WAINUT",
-   "year": 1740,
-   "note": "A syllabary with word codes, 235 confirmed values, frozen and tested on a glossed French page of 1741 (222 of 282 groups); extended by 24 values and 2 corrections from that gloss to read two bare French documents."
-  },
-  {
    "id": "k-duron1911-shift",
    "label": "Shift of +22 on a 29-sign Spanish alphabet (ch, ll, ñ, w) of the Durón telegram, 20 May 1911",
    "kind": "rebuilt here",
@@ -5133,6 +5125,22 @@
    "by": "WAINUT",
    "year": 1914,
    "note": "A table of two-figure groups read by the units figure (tens 1-2 a0..j1, 3-4 l0..rr1, 5-6 s0..z3) with word groups (51 -mente, 78 por, 82 enemigo, 87 para, 90 parque, 91 la, 96 de, 99 que). 62 cells: 45 from aligning figures and pencil, 5 set by hand, 10 from the table layout, 2 open (88, 97). Frozen; a key built from page 3 agreed with the pencil on 84.2% of the letters of page 4. Also applied to two bare sheets of the same fondo in other pull requests."
+  },
+  {
+   "id": "k-hopken1740",
+   "label": "Second Höpken-Carlson code (four-digit groups, 1006-1915), code list rebuilt from the glossed despatch of 15/26 Jan 1740",
+   "kind": "rebuilt here",
+   "by": "Daniel Bourdeau's project, WAINUT",
+   "year": 1740,
+   "note": "A syllabary with word codes, 235 confirmed values, frozen and tested on a glossed French page of 1741 (222 of 282 groups); extended by 24 values and 2 corrections from that gloss to read two bare French documents; applied unchanged to a Latin letter (Lit. B) and, with 21 further gloss values in key_1742.tsv, tested on the glossed letter of the Khan of Crimea (487 of 602 groups)."
+  },
+  {
+   "id": "k-blaufeldt1646",
+   "label": "Number table of the writer who signs Blaufeldt (inv. 24852, 24853, 24854), key rebuilt from the glosses of 24852",
+   "kind": "rebuilt here",
+   "by": "WAINUT",
+   "year": 1646,
+   "note": "Two-figure groups, one letter each, a few homophones in the 40-80 range, a bar to double; built from 20 glossed words of 24852, frozen, 72 of 72 held-out groups of 24853 right; six groups of 24854 (50 60 70 73 80 86) have no gloss (key partial for this letter)."
   }
  ],
  "links": [
@@ -8303,6 +8311,12 @@
    "target": "murguia1914",
    "how": "rebuilt from",
    "note": "rebuilt from the figures and the contemporary pencil decipherment on pp. 3-4, frozen, tested on page 4"
+  },
+  {
+   "key": "k-blaufeldt1646",
+   "target": "blaufeldt1646",
+   "how": "rebuilt from",
+   "note": "rebuilt from the glossed sibling letter 24852, frozen, tested on 24853 and applied to the bare 24854"
   }
  ],
  "sources": [
@@ -9667,6 +9681,10 @@
   {
    "source": "s-cyphersolver",
    "key": "k-clave-extra3"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-blaufeldt1646"
   }
  ],
  "unlinked": {
